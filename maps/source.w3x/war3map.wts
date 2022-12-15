@@ -7063,6 +7063,12 @@ STRING 1177
 Q
 }
 
+STRING 1178
+// Abilities: AHad (Devotion Aura), Ubertip (Tooltip - Normal - Extended)
+{
+Gives <AHad,DataA4,.> additional armor to nearby friendly units in 450 range.
+}
+
 STRING 1179
 // Units: Usyl (Dark Ranger), Propernames (Proper Names)
 {
@@ -36398,12 +36404,6 @@ STRING 6067
 Devotion Aura - [|cffffcc00Level 4|r]
 }
 
-STRING 6068
-// Abilities: AHad (Devotion Aura), Ubertip (Tooltip - Normal - Extended)
-{
-Gives <AHad,DataA4,.> additional armor to nearby friendly units.
-}
-
 STRING 6069
 // Units: n0B5 (Scavenger), EditorSuffix (Name - Editor Suffix)
 {
@@ -57317,7 +57317,7 @@ Sends a gigantic wave which deals <A0G0,DataA1> damage to each enemy land unit i
 }
 
 STRING 9551
-// Abilities: A0FZ (Tornado), EditorSuffix (Editor Suffix)
+// Abilities: A0FU (Cloud), EditorSuffix (Editor Suffix)
 {
 (Kul'tiras - Storm Sorcerer)
 }
@@ -57494,12 +57494,6 @@ STRING 9580
 // Abilities: A0FV (Board), Ubertip (Tooltip - Normal - Extended)
 {
 The ship orders grappling hooks to be attached to an enemy vessel. Soldiers then board the vessel, this disables the ship temporarily and deals damage to it. |nLasts 20 seconds.
-}
-
-STRING 9581
-// Abilities: A0FU (Cloud), EditorSuffix (Editor Suffix)
-{
-(Kul'tiras - Storm Sorcerer)
 }
 
 STRING 9582
@@ -59162,18 +59156,6 @@ STRING 9858
 // Units: u025 (Elementalist), Ubertip (Tooltip - Extended)
 {
 Mage warrior of the Draconians.|n|cfff5962dAbilities:|R Blizzard, Frost Armor, Mana Shield|n|n|cff99b4d1Can only train 12.|r|n|cffffcc00Attacks land units.|r
-}
-
-STRING 9859
-// Abilities: A0E9 (Slow), Ubertip (Tooltip - Normal - Extended)
-{
-Slows a target enemy air unit's attack rate by <A0E9,DataB1,%>% and movement speed by <A0E9,DataA1,%>%. |nLasts <A0E9,Dur1> seconds.
-}
-
-STRING 9860
-// Abilities: A0E9 (Slow), Ubertip (Tooltip - Normal - Extended)
-{
-Slows a target enemy air unit's attack rate by <A0E9,DataB2,%>% and movement speed by <A0E9,DataA2,%>%. |nLasts <A0E9,Dur2> seconds.
 }
 
 STRING 9861
@@ -64137,6 +64119,12 @@ STRING 10687
 // Units: h07D (Shipyard), Ubertip (Tooltip - Extended)
 {
 Boat construction facility for the Alliance.|n|cfff5962dTrains:|R Alliance Transport Ship, Destroyer, Battleship|R|n|n|cff00c4c4Cannot be built near small inland water areas.
+}
+
+STRING 10688
+// Abilities: AHad (Devotion Aura), Researchubertip (Tooltip - Learn - Extended)
+{
+Gives additional armor to nearby friendly units in 450 range. |n|n|cffffcc00Level 1|r - Increases armor by <AHad,DataA1,.>. |n|cffffcc00Level 2|r - Increases armor by <AHad,DataA2,.>. |n|cffffcc00Level 3|r - Increases armor by <AHad,DataA3,.>.|n|cffffcc00Level 4|r - Increases armor by <AHad,DataA4,.>.
 }
 
 STRING 10689
@@ -82701,12 +82689,6 @@ STRING 13781
 Concussive shot
 }
 
-STRING 13782
-// Abilities: AHad (Devotion Aura), Researchubertip (Tooltip - Learn - Extended)
-{
-Gives additional armor to nearby friendly units. |n|n|cffffcc00Level 1|r - Increases armor by <AHad,DataA1,.>. |n|cffffcc00Level 2|r - Increases armor by <AHad,DataA2,.>. |n|cffffcc00Level 3|r - Increases armor by <AHad,DataA3,.>.|n|cffffcc00Level 4|r - Increases armor by <AHad,DataA4,.>.
-}
-
 STRING 13783
 // Upgrades: R02L (Chaos), Name (Name)
 {
@@ -90966,6 +90948,12 @@ STRING 15167
 Reduces nearby enemy units' movement speed by 10% and attack rate by 15%.
 }
 
+STRING 15168
+// Abilities: AHad (Devotion Aura), Ubertip (Tooltip - Normal - Extended)
+{
+Gives <AHad,DataA1,.> additional armor to nearby friendly units in 450 range.
+}
+
 STRING 15169
 // Buffs/Effects: B09C (), Bufftip (Tooltip)
 {
@@ -91036,6 +91024,12 @@ STRING 15180
 // Upgrades: R000 (Priest Adept Training,Priest Master Training), Tip (Tooltip)
 {
 Research Tidesage Master Training
+}
+
+STRING 15181
+// Abilities: AHad (Devotion Aura), Ubertip (Tooltip - Normal - Extended)
+{
+Gives <AHad,DataA2,.> additional armor to nearby friendly units in 450 range.
 }
 
 STRING 15182
@@ -91893,7 +91887,7 @@ Cycle of Rebirth
 }
 
 STRING 15324
-// Abilities: A0AR (Shadow Infusion), Untip (Tooltip - Turn Off)
+// Abilities: A0E9 (Slow), Untip (Tooltip - Turn Off)
 {
 |cffc3dbffRight-click to activate auto-casting.|r
 }
@@ -92903,7 +92897,7 @@ This unit attacks slow enemy units on contact
 }
 
 STRING 15491
-// Abilities: A0AR (Shadow Infusion), Unubertip (Tooltip - Turn Off - Extended)
+// Abilities: A0E9 (Slow), Unubertip (Tooltip - Turn Off - Extended)
 {
 |cffc3dbffRight-click to deactivate auto-casting.|r
 }
@@ -94022,12 +94016,6 @@ STRING 15677
 // Abilities: A0EZ (Mind Flay), Ubertip (Tooltip - Normal - Extended)
 {
 Inflicts a curse upon the target unit, causing it to lose 10 hit points and 50 mana per second for the next <A0EZ,Dur1> seconds.
-}
-
-STRING 15678
-// Abilities: A0B2 (Devotion Aura), Ubertip (Tooltip - Normal - Extended)
-{
-Gives <A0B2,DataA1,.> additional armor to nearby friendly units.
 }
 
 STRING 15679
@@ -96625,6 +96613,12 @@ STRING 16110
 Q
 }
 
+STRING 16111
+// Abilities: AHad (Devotion Aura), Ubertip (Tooltip - Normal - Extended)
+{
+Gives <AHad,DataA3,.> additional armor to nearby friendly units in 450 range.
+}
+
 STRING 16112
 // Upgrades: R03K (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
@@ -96653,6 +96647,18 @@ STRING 16116
 // Abilities: A0SV (White Wolf's Fury), Hotkey (Hotkey - Normal)
 {
 Q
+}
+
+STRING 16117
+// Abilities: ACav (Devotion Aura), Ubertip (Tooltip - Normal - Extended)
+{
+Gives 2 additional armor to nearby friendly units in 1200 range.
+}
+
+STRING 16118
+// Abilities: A0FZ (Tornado), EditorSuffix (Editor Suffix)
+{
+(Kul'tiras - Storm Sorcerer, Illidan - Sea Witch)
 }
 
 STRING 16119
@@ -96707,6 +96713,12 @@ STRING 16127
 // Units: o043 (Spirit Spire), EditorSuffix (Name - Editor Suffix)
 {
 (Zandalar)
+}
+
+STRING 16128
+// Abilities: A0E9 (Slow), Ubertip (Tooltip - Normal - Extended)
+{
+Slows a target enemy AIR unit's attack rate by <A0E9,DataB1,%>% and movement speed by <A0E9,DataA1,%>%. |nLasts <A0E9,Dur1> seconds.
 }
 
 STRING 16129
@@ -96982,6 +96994,12 @@ Persistent Soul - [|cffffcc00Level 2|r]
 STRING 16174
 {
 Warsong
+}
+
+STRING 16175
+// Abilities: A0E9 (Slow), Ubertip (Tooltip - Normal - Extended)
+{
+Slows a target enemy AIR unit's attack rate by <A0E9,DataB2,%>% and movement speed by <A0E9,DataA2,%>%. |nLasts <A0E9,Dur2> seconds.
 }
 
 STRING 16176
@@ -98649,6 +98667,12 @@ STRING 16453
 // Units: n08T (Dragonmaw Port (10gold/min)), Name (Name)
 {
 Dragonmaw Port (10gold/min)
+}
+
+STRING 16454
+// Abilities: A0B2 (Devotion Aura), Ubertip (Tooltip - Normal - Extended)
+{
+Gives <A0B2,DataA1,.> additional armor to nearby friendly units in 600 range.
 }
 
 STRING 16455
@@ -103049,12 +103073,6 @@ STRING 17187
 Research Improved Slow
 }
 
-STRING 17188
-// Upgrades: R06J (Defend), Ubertip (Tooltip - Extended)
-{
-Improves Initiate Mage's slow by increasing its attack rate reduction to <A0E9,DataB1,%>% and movement speed reduction to <A0E9,DataA1,%>%.
-}
-
 STRING 17189
 // Units: O01J (The Dark Prophet), Ubertip (Tooltip - Extended)
 {
@@ -103980,6 +103998,12 @@ STRING 17342
 (herald)
 }
 
+STRING 17343
+// Abilities: A0MJ (Parasite), Untip (Tooltip - Turn Off)
+{
+|cffc3dbffRight-click to activate auto-casting.|r
+}
+
 STRING 17344
 // Abilities: A0HS (Gunner Pilot), Name (Name)
 {
@@ -104761,7 +104785,7 @@ STRING 17473
 }
 
 STRING 17474
-// Abilities: A0RZ (Arcane Bomb), Unubertip (Tooltip - Turn Off - Extended)
+// Abilities: A0AR (Shadow Infusion), Unubertip (Tooltip - Turn Off - Extended)
 {
 |cffc3dbffRight-click to deactivate auto-casting.|r
 }
@@ -107664,6 +107688,12 @@ STRING 17956
 Increases Strength, Agility and Intelligence and can cast Crown Heal.
 }
 
+STRING 17957
+// Abilities: A0MJ (Parasite), Unubertip (Tooltip - Turn Off - Extended)
+{
+|cffc3dbffRight-click to deactivate auto-casting.|r
+}
+
 STRING 17958
 // Items: I011 (Crown of the Triumvirate), Name (Name)
 {
@@ -109765,6 +109795,12 @@ STRING 18307
 Agile, deadly and skilled Rangers of the Forsaken.|n|cfff5962dAbilities:|R Knife Throw, Blink, Dark Arrow|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land and air units.|r
 }
 
+STRING 18308
+// Upgrades: R06J (Defend), Ubertip (Tooltip - Extended)
+{
+Improves Initiate Mage's slow by increasing its attack rate reduction to <A0E9,DataB2,%>% and movement speed reduction to <A0E9,DataA2,%>%.
+}
+
 STRING 18309
 // Upgrades: R08Q (Iron Plating,Steel Plating,Mithril Plating), Name (Name)
 {
@@ -110354,7 +110390,7 @@ Titanforge Artifact
 }
 
 STRING 18408
-// Abilities: A0MJ (Parasite), Untip (Tooltip - Turn Off)
+// Abilities: A0AR (Shadow Infusion), Untip (Tooltip - Turn Off)
 {
 |cffc3dbffRight-click to activate auto-casting.|r
 }
@@ -110372,7 +110408,7 @@ Reduces nearby enemy units' attack damage by <A0WP,DataA4,%>% for <A0WP,Dur4> se
 }
 
 STRING 18411
-// Abilities: A0MJ (Parasite), Unubertip (Tooltip - Turn Off - Extended)
+// Abilities: A0RZ (Arcane Bomb), Unubertip (Tooltip - Turn Off - Extended)
 {
 |cffc3dbffRight-click to deactivate auto-casting.|r
 }
