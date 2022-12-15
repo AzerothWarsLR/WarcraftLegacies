@@ -6,6 +6,7 @@ using WarcraftLegacies.Source.ArtifactBehaviour;
 using WarcraftLegacies.Source.GameLogic;
 using WarcraftLegacies.Source.GameLogic.GameEnd;
 using WarcraftLegacies.Source.Hints;
+using WarcraftLegacies.Source.Mechanics.Neutral;
 using WarcraftLegacies.Source.Mechanics.Quelthalas;
 using WarcraftLegacies.Source.Mechanics.Scourge;
 using WarcraftLegacies.Source.Mechanics.Scourge.Blight;
@@ -109,6 +110,7 @@ namespace WarcraftLegacies.Source.Setup
       EyeOfSargerasCooldowns.Setup();
       EventKelthuzadDeath.Setup();
       CapturableUnitSetup.Setup(preplacedUnitSystem);
+      GilneasGateTowers.Setup(preplacedUnitSystem);
     }
   }
 }
