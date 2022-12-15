@@ -7063,12 +7063,6 @@ STRING 1177
 Q
 }
 
-STRING 1178
-// Items: stwp (Town Portal Scroll), Ubertip (Tooltip - Extended)
-{
-Teleports the Hero and any of its nearby troops to a target owned structure.|n|n|cffe8e800Has a 9 second cast time.|r
-}
-
 STRING 1179
 // Units: Usyl (Dark Ranger), Propernames (Proper Names)
 {
@@ -49028,6 +49022,12 @@ STRING 8168
 // Abilities: A0Z4 (Breath of Frost), Researchhotkey (Hotkey - Learn)
 {
 Q
+}
+
+STRING 8169
+// Items: stwp (Town Portal Scroll), Ubertip (Tooltip - Extended)
+{
+Teleports the Hero and any of its nearby troops to a target owned structure.|n|n|cffe8e800Has a <A002,DataB1> second cast time.|r
 }
 
 STRING 8170
