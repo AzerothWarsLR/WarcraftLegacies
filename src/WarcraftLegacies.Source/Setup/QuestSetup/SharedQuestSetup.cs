@@ -5,6 +5,7 @@ using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using WarcraftLegacies.Source.Quests;
 using WarcraftLegacies.Source.Setup.FactionSetup;
+using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Setup.QuestSetup
 {
@@ -18,14 +19,23 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
     /// </summary>
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem, ArtifactSetup artifactSetup)
     {
-      // var tombOfSargerasQuest =
-      //   new QuestTombOfSargeras(
-      //     preplacedUnitSystem.GetUnit(Constants.UNIT_N032_TOMB_OF_SARGERAS, Regions.Broken_Isles.Center),
-      //     Regions.Sargeras_Exit, preplacedUnitSystem.GetUnit(Constants.UNIT_O01U_GUL_DAN_S_REMAINS));
-      
+      var tombOfSargerasQuest =
+        new QuestTombOfSargeras(
+          new List<Rectangle>
+          {
+            Regions.TombOfSargerasInteriorA,
+            Regions.TombOfSargerasInteriorB,
+            Regions.TombOfSargerasInteriorC,
+            Regions.TombOfSargerasInteriorD,
+            Regions.TombOfSargerasInteriorE,
+            Regions.TombOfSargerasInteriorF,
+            Regions.TombOfSargerasInteriorG,
+            Regions.TombOfSargerasInteriorH
+          }, Regions.Sargeras_Entrance, preplacedUnitSystem.GetUnit(Constants.UNIT_O01U_GUL_DAN_S_REMAINS));
+
       foreach (var faction in FactionManager.GetAllFactions())
       {
-        //faction.AddQuest(tombOfSargerasQuest);
+        faction.AddQuest(tombOfSargerasQuest);
         faction.AddQuest(new QuestZinrokhAssembly(new List<Artifact>()
         {
           artifactSetup.AzureFragment,
@@ -36,7 +46,8 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
         }));
         faction.AddQuest(new QuestBookOfMedivh(preplacedUnitSystem.GetUnit(Constants.UNIT_NBSM_BOOK_OF_MEDIVH),
           faction == LegionSetup.Legion, artifactSetup.BookOfMedivh));
-        faction.AddQuest(new QuestSkullOfGuldan(preplacedUnitSystem.GetUnit(Constants.UNIT_N0DK_SKULL_OF_GUL_DAN_PEDESTAL),
+        faction.AddQuest(new QuestSkullOfGuldan(
+          preplacedUnitSystem.GetUnit(Constants.UNIT_N0DK_SKULL_OF_GUL_DAN_PEDESTAL),
           faction == LegionSetup.Legion || faction == IllidanSetup.Illidan, artifactSetup.SkullOfGuldan));
       }
     }
