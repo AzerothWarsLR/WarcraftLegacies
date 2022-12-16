@@ -540,6 +540,14 @@ gg_snd_DoorOpenRemix = nil
 gg_snd_NuclearLaunchDetected = nil
 gg_snd_IllidansTheme = ""
 gg_trg_Dummy = nil
+gg_rct_TombOfSargerasInteriorA = nil
+gg_rct_TombOfSargerasInteriorB = nil
+gg_rct_TombOfSargerasInteriorC = nil
+gg_rct_TombOfSargerasInteriorD = nil
+gg_rct_TombOfSargerasInteriorE = nil
+gg_rct_TombOfSargerasInteriorF = nil
+gg_rct_TombOfSargerasInteriorG = nil
+gg_rct_TombOfSargerasInteriorH = nil
 function InitGlobals()
 end
 
@@ -4168,7 +4176,7 @@ SetUnitAcquireRange(u, 200.0)
 IssueImmediateOrder(u, "flamingarrows")
 u = BlzCreateUnitWithSkin(p, FourCC("ncea"), -12861.5, -4257.4, 321.018, FourCC("ncea"))
 SetUnitAcquireRange(u, 200.0)
-u = BlzCreateUnitWithSkin(p, FourCC("nlpd"), 2045.1, -3052.0, -84.657, FourCC("nlpd"))
+u = BlzCreateUnitWithSkin(p, FourCC("nlpd"), 2045.1, -3052.0, 275.343, FourCC("nlpd"))
 u = BlzCreateUnitWithSkin(p, FourCC("nogr"), -1921.7, -20799.8, 257.616, FourCC("nogr"))
 SetUnitAcquireRange(u, 200.0)
 u = BlzCreateUnitWithSkin(p, FourCC("nmyr"), 12358.7, -21477.7, 96.001, FourCC("nmyr"))
@@ -4377,7 +4385,7 @@ u = BlzCreateUnitWithSkin(p, FourCC("nsnp"), -5583.6, 5147.2, 330.000, FourCC("n
 SetUnitAcquireRange(u, 200.0)
 u = BlzCreateUnitWithSkin(p, FourCC("nass"), 13074.8, 3679.1, 269.553, FourCC("nass"))
 SetUnitAcquireRange(u, 200.0)
-u = BlzCreateUnitWithSkin(p, FourCC("nvdl"), -4897.1, -30481.8, -9.233, FourCC("nvdl"))
+u = BlzCreateUnitWithSkin(p, FourCC("nvdl"), -4897.1, -30481.8, 350.767, FourCC("nvdl"))
 SetUnitAcquireRange(u, 200.0)
 u = BlzCreateUnitWithSkin(p, FourCC("nfgb"), -675.2, -31070.8, 197.397, FourCC("nfgb"))
 SetUnitAcquireRange(u, 200.0)
@@ -4736,9 +4744,9 @@ SetUnitAcquireRange(u, 200.0)
 u = BlzCreateUnitWithSkin(p, FourCC("nrwm"), 17506.8, -3691.1, 121.471, FourCC("nrwm"))
 SetUnitAcquireRange(u, 200.0)
 IssueImmediateOrder(u, "")
-u = BlzCreateUnitWithSkin(p, FourCC("nrdr"), 17471.1, -3257.1, -43.834, FourCC("nrdr"))
+u = BlzCreateUnitWithSkin(p, FourCC("nrdr"), 17471.1, -3257.1, 316.166, FourCC("nrdr"))
 SetUnitAcquireRange(u, 200.0)
-u = BlzCreateUnitWithSkin(p, FourCC("nrdr"), 17101.5, -3446.4, -81.911, FourCC("nrdr"))
+u = BlzCreateUnitWithSkin(p, FourCC("nrdr"), 17101.5, -3446.4, 278.089, FourCC("nrdr"))
 SetUnitAcquireRange(u, 200.0)
 u = BlzCreateUnitWithSkin(p, FourCC("nogm"), 20224.3, -1701.1, 209.723, FourCC("nogm"))
 SetUnitAcquireRange(u, 200.0)
@@ -7073,7 +7081,7 @@ u = BlzCreateUnitWithSkin(p, FourCC("n0CS"), 20598.2, -4643.1, 282.203, FourCC("
 u = BlzCreateUnitWithSkin(p, FourCC("hcth"), 8995.5, 8794.4, 91.121, FourCC("hcth"))
 u = BlzCreateUnitWithSkin(p, FourCC("hcth"), 9165.3, 8793.9, 91.121, FourCC("hcth"))
 u = BlzCreateUnitWithSkin(p, FourCC("h01C"), 15477.3, 12218.4, 247.046, FourCC("h01C"))
-u = BlzCreateUnitWithSkin(p, FourCC("n08P"), 19828.4, -391.8, -48.541, FourCC("n08P"))
+u = BlzCreateUnitWithSkin(p, FourCC("n08P"), 19828.4, -391.8, 311.459, FourCC("n08P"))
 u = BlzCreateUnitWithSkin(p, FourCC("n08P"), 20051.3, -144.4, 164.277, FourCC("n08P"))
 u = BlzCreateUnitWithSkin(p, FourCC("hrif"), 11229.7, -5546.1, 205.460, FourCC("hrif"))
 u = BlzCreateUnitWithSkin(p, FourCC("hkni"), 14126.1, 12325.3, 353.163, FourCC("hkni"))
@@ -7828,6 +7836,14 @@ gg_rct_Exodar_North_Interior = Rect(-9792.0, -25024.0, -9312.0, -24512.0)
 gg_rct_Exodar_Interior_All = Rect(-11616.0, -26848.0, -9280.0, -24480.0)
 gg_rct_BloodElfSecondChanceSpawn = Rect(10432.0, 3520.0, 10816.0, 3936.0)
 gg_rct_CaerDarrow = Rect(14240.0, 6528.0, 15520.0, 8064.0)
+gg_rct_TombOfSargerasInteriorA = Rect(-832.0, 10144.0, 704.0, 11168.0)
+gg_rct_TombOfSargerasInteriorB = Rect(-1632.0, 9152.0, 64.0, 10176.0)
+gg_rct_TombOfSargerasInteriorC = Rect(-1536.0, 8960.0, 0.0, 9184.0)
+gg_rct_TombOfSargerasInteriorD = Rect(-1824.0, 9536.0, -1600.0, 10304.0)
+gg_rct_TombOfSargerasInteriorE = Rect(32.0, 9728.0, 384.0, 10176.0)
+gg_rct_TombOfSargerasInteriorF = Rect(-1376.0, 10144.0, -800.0, 10592.0)
+gg_rct_TombOfSargerasInteriorG = Rect(352.0, 9920.0, 608.0, 10176.0)
+gg_rct_TombOfSargerasInteriorH = Rect(-1216.0, 8768.0, -288.0, 8992.0)
 end
 
 function CreateCameras()
