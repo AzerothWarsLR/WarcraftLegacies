@@ -27,26 +27,29 @@ namespace WarcraftLegacies.Source.Quests
     /// <param name="entrance">The area just outside of the gate.</param>
     /// <param name="entranceDoor">The gate blocking the way in.</param>
     /// <param name="guldanRemains">Gul'dan's corpse within the Tomb.</param>
-    public QuestTombOfSargeras(IReadOnlyCollection<Rectangle> interiorRects, Rectangle entrance, unit entranceDoor, unit guldanRemains) : base("Tomb of Sargeras",
+    public QuestTombOfSargeras(IReadOnlyCollection<Rectangle> interiorRects, Rectangle entrance, unit entranceDoor,
+      unit guldanRemains) : base("Tomb of Sargeras",
       "When the Guardian Aegwynn defeated the fallen Titan Sargeras, she sealed his corpse within the temple that would come to be known as the Tomb of Sargeras. It lies still there, tempting those with the ambition to seize the power that remains within.",
       @"ReplaceableTextures\CommandButtons\BTNEyeOfSargeras.blp")
     {
       CreateRegion();
       _entrance = entrance;
-      guldanRemains.SetAnimation("decay flesh").SetInvulnerable(true);
+      guldanRemains.SetAnimation("death").SetInvulnerable(true);
       AddObjective(new ObjectiveTime(900));
-      _enterTombOfSargerasRegion = new ObjectiveAnyHeroWithLevelReachRect(10, Regions.Sargeras_Entrance, "the Tomb of Sargeras' entrance");
+      _enterTombOfSargerasRegion =
+        new ObjectiveAnyHeroWithLevelReachRect(10, Regions.Sargeras_Entrance, "the Tomb of Sargeras' entrance");
       AddObjective(_enterTombOfSargerasRegion);
       _preventAccessTriggers = CreatePreventAccessTriggers(interiorRects);
       HideUnitsInsideTomb(interiorRects);
       _entranceDoor = entranceDoor.SetInvulnerable(true);
     }
-    
+
     /// <inheritdoc />
     protected override string RewardDescription => "The Tomb of Sargeras opens";
 
     /// <inheritdoc />
-    protected override string CompletionPopup => $"The Tomb of Sargeras has been opened by {_enterTombOfSargerasRegion.CompletingUnitName}.";
+    protected override string CompletionPopup =>
+      $"The Tomb of Sargeras has been opened by {_enterTombOfSargerasRegion.CompletingUnitName}.";
 
     /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)
@@ -74,18 +77,16 @@ namespace WarcraftLegacies.Source.Quests
           .Show(false);
       }
     }
-    
+
     private IEnumerable<trigger> CreatePreventAccessTriggers(IEnumerable<Rectangle> rectangles)
     {
+      List<trigger> triggers = new();
       foreach (var rect in rectangles)
-      {
-        yield return CreateTrigger()
+        triggers.Add(CreateTrigger()
           .RegisterEnterRegion(rect)
-          .AddAction(() =>
-          {
-            GetTriggerUnit().SetPosition(_entrance.Center);
-          });
-      }
+          .AddAction(() => GetEnteringUnit().SetPosition(_entrance.Center))
+        );
+      return triggers;
     }
   }
 }
