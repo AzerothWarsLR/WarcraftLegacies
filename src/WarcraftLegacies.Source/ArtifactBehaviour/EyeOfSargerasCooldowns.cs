@@ -27,6 +27,6 @@ namespace WarcraftLegacies.Source.ArtifactBehaviour
     /// Sets up <see cref="EyeOfSargerasCooldowns"/>.
     /// </summary>
     public static void Setup() =>
-      PlayerUnitEvents.Register(UnitTypeEvent.PicksUpItem, ItemPickup, Constants.ITEM_I003_EYE_OF_SARGERAS);
+      PlayerUnitEvents.Register(ItemTypeEvent.IsPickedUp, ItemPickup, Constants.ITEM_I003_EYE_OF_SARGERAS);
   }
 }
