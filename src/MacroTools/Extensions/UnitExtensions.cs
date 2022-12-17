@@ -639,5 +639,15 @@ namespace MacroTools.Extensions
         });
       return whichUnit;
     }
+
+    /// <summary>
+    /// Activates an ability's full cooldown for a unit.
+    /// </summary>
+    public static unit StartUnitAbilityCooldownFull(this unit whichUnit, int abilCode)
+    {
+      var fullCooldown = BlzGetUnitAbilityCooldown(whichUnit, abilCode, 0);
+      BlzStartUnitAbilityCooldown(whichUnit, abilCode, fullCooldown);
+      return whichUnit;
+    }
   }
 }
