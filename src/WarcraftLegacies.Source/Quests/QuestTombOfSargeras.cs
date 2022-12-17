@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
@@ -17,26 +18,28 @@ namespace WarcraftLegacies.Source.Quests
     private readonly ObjectiveAnyHeroWithLevelReachRect _enterTombOfSargerasRegion;
     private IEnumerable<trigger>? _preventAccessTriggers;
     private readonly List<unit> _rescueUnits = new();
+    private readonly unit _entranceDoor;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestTombOfSargeras"/> class.
     /// </summary>
     /// <param name="interiorRects">All of the <see cref="Rectangle"/>s that makes up the Tomb's interior.</param>
     /// <param name="entrance">The area just outside of the gate.</param>
+    /// <param name="entranceDoor">The gate blocking the way in.</param>
     /// <param name="guldanRemains">Gul'dan's corpse within the Tomb.</param>
-    public QuestTombOfSargeras(List<Rectangle> interiorRects, Rectangle entrance, unit guldanRemains) : base("Tomb of Sargeras",
+    public QuestTombOfSargeras(IReadOnlyCollection<Rectangle> interiorRects, Rectangle entrance, unit entranceDoor, unit guldanRemains) : base("Tomb of Sargeras",
       "When the Guardian Aegwynn defeated the fallen Titan Sargeras, she sealed his corpse within the temple that would come to be known as the Tomb of Sargeras. It lies still there, tempting those with the ambition to seize the power that remains within.",
-      @"ReplaceableTextures\CommandButtons\BTNUnholyFrenzy.blp")
+      @"ReplaceableTextures\CommandButtons\BTNEyeOfSargeras.blp")
     {
       CreateRegion();
       _entrance = entrance;
-      guldanRemains.SetAnimation("decay flesh");
+      guldanRemains.SetAnimation("decay flesh").SetInvulnerable(true);
       AddObjective(new ObjectiveTime(900));
       _enterTombOfSargerasRegion = new ObjectiveAnyHeroWithLevelReachRect(10, Regions.Sargeras_Entrance, "the Tomb of Sargeras' entrance");
       AddObjective(_enterTombOfSargerasRegion);
       _preventAccessTriggers = CreatePreventAccessTriggers(interiorRects);
-      foreach (var rect in interiorRects)
-        _rescueUnits.AddRange(rect.PrepareUnitsForRescue(RescuePreparationMode.HideAll));
+      HideUnitsInsideTomb(interiorRects);
+      _entranceDoor = entranceDoor.SetInvulnerable(true);
     }
     
     /// <inheritdoc />
@@ -55,8 +58,23 @@ namespace WarcraftLegacies.Source.Quests
           preventAccessTrigger.Destroy();
 
       _preventAccessTriggers = null;
+      _entranceDoor
+        .SetInvulnerable(false)
+        .TakeDamage(_enterTombOfSargerasRegion.CompletingUnit, 10000);
     }
 
+    private void HideUnitsInsideTomb(IEnumerable<Rectangle> rectangles)
+    {
+      foreach (var rect in rectangles)
+      foreach (var unit in CreateGroup().EnumUnitsInRect(rect.Rect).EmptyToList().Where(x => !BlzIsUnitInvulnerable(x)))
+      {
+        _rescueUnits.Add(unit);
+        unit
+          .SetInvulnerable(true)
+          .Show(false);
+      }
+    }
+    
     private IEnumerable<trigger> CreatePreventAccessTriggers(IEnumerable<Rectangle> rectangles)
     {
       foreach (var rect in rectangles)

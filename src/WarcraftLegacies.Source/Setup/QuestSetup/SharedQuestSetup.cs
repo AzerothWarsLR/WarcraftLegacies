@@ -31,7 +31,8 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
             Regions.TombOfSargerasInteriorF,
             Regions.TombOfSargerasInteriorG,
             Regions.TombOfSargerasInteriorH
-          }, Regions.Sargeras_Entrance, preplacedUnitSystem.GetUnit(Constants.UNIT_O01U_GUL_DAN_S_REMAINS));
+          }, Regions.Sargeras_Entrance, preplacedUnitSystem.GetUnit(Constants.UNIT_H00K_HORIZONTAL_WOODEN_GATE_CLOSED, Regions.Sargeras_Entrance.Center)
+          ,preplacedUnitSystem.GetUnit(Constants.UNIT_O01U_GUL_DAN_S_REMAINS));
 
       foreach (var faction in FactionManager.GetAllFactions())
       {

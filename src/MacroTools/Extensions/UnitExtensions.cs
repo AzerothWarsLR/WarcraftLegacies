@@ -178,9 +178,10 @@ namespace MacroTools.Extensions
     /// <summary>
     /// If true, the unit cannot be targeted by attacks or hostile abilities and cannot be damaged.
     /// </summary>
-    public static void SetInvulnerable(this unit unit, bool value)
+    public static unit SetInvulnerable(this unit unit, bool value)
     {
       SetUnitInvulnerable(unit, value);
+      return unit;
     }
     
     /// <summary>
