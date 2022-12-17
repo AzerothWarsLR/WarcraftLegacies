@@ -111,6 +111,7 @@ namespace WarcraftLegacies.Source.Setup
       EventKelthuzadDeath.Setup();
       CapturableUnitSetup.Setup(preplacedUnitSystem);
       GilneasGateTowers.Setup(preplacedUnitSystem);
+      EyeOfSargerasPickup.Setup();
     }
   }
 }

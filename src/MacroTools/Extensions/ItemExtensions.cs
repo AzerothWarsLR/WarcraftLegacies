@@ -28,9 +28,10 @@ namespace MacroTools.Extensions
       whichItem.SetPosition(shore.Position);
     }
 
-    public static void SetPosition(this item whichItem, Point position)
+    public static item SetPosition(this item whichItem, Point position)
     {
       SetItemPosition(whichItem, position.X, position.Y);
+      return whichItem;
     }
 
     public static Point GetPosition(this item whichItem)

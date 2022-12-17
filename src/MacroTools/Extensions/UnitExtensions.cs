@@ -470,10 +470,11 @@ namespace MacroTools.Extensions
     /// <summary>
     ///   Add an item to a unit. If the unit's inventory is full, drop it on the ground near them instead.
     /// </summary>
-    public static void AddItemSafe(this unit whichUnit, item whichItem)
+    public static unit AddItemSafe(this unit whichUnit, item whichItem)
     {
       SetItemPosition(whichItem, GetUnitX(whichUnit), GetUnitY(whichUnit));
       UnitAddItem(whichUnit, whichItem);
+      return whichUnit;
     }
 
     /// <summary>
