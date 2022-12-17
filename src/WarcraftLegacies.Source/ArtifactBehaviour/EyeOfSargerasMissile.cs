@@ -24,6 +24,8 @@ namespace WarcraftLegacies.Source.ArtifactBehaviour
       _eyeOfSargeras = eyeOfSargeras.SetPosition(new Point(20229f, 24244));
       CollisionRadius = 100;
       Active = true;
+      CasterLaunchZ = 50;
+      TargetImpactZ = 50;
     }
 
     /// <inheritdoc />
