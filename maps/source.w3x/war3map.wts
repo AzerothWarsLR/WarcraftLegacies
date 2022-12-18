@@ -26663,18 +26663,6 @@ STRING 4447
 Northrend tree down
 }
 
-STRING 4448
-// Destructibles: B00E (Backwards summer tree 3), Name (Name)
-{
-Backwards summer tree 3
-}
-
-STRING 4449
-// Destructibles: B00D (Backwards summer tree 2), Name (Name)
-{
-Backwards summer tree 2
-}
-
 STRING 4450
 // Destructibles: B00C (Ashenvale Tree backwards), Name (Name)
 {
