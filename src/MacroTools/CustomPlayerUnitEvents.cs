@@ -17,6 +17,11 @@ namespace MacroTools
     /// A specific player deals damage with any of their units.
     /// </summary>
     public static string PlayerDealsDamage => nameof(PlayerDealsDamage);
+    
+    /// <summary>
+    /// A specific player takes damage with any of their units.
+    /// </summary>
+    public static string PlayerTakesDamage => nameof(PlayerTakesDamage);
 
     /// <summary>
     /// A unit owned by a specific player dies.
@@ -28,6 +33,8 @@ namespace MacroTools
       PlayerUnitEvents.AddCustomEvent(PlayerFinishesTraining, () => GetPlayerId(GetOwningPlayer(GetTrainedUnit())),
         EVENT_PLAYER_UNIT_TRAIN_FINISH);
       PlayerUnitEvents.AddCustomEvent(PlayerDealsDamage, () => GetPlayerId(GetOwningPlayer(GetEventDamageSource())),
+        EVENT_PLAYER_UNIT_DAMAGED);
+      PlayerUnitEvents.AddCustomEvent(PlayerTakesDamage, () => GetPlayerId(GetOwningPlayer(GetTriggerUnit())),
         EVENT_PLAYER_UNIT_DAMAGED);
       PlayerUnitEvents.AddCustomEvent(PlayerUnitDies, () => GetPlayerId(GetOwningPlayer(GetTriggerUnit())),
         EVENT_PLAYER_UNIT_DEATH);

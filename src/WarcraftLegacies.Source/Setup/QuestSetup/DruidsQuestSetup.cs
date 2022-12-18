@@ -21,6 +21,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       druids.AddQuest(new QuestDruidsKillFrostwolf());
       druids.AddQuest(new QuestDruidsKillWarsong());
       druids.AddQuest(new QuestAndrassil());
+      druids.AddQuest(new QuestShaladrassil());
       druids.AddQuest(new QuestTortolla());
     }
   }
