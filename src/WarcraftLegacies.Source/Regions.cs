@@ -48,7 +48,7 @@ public static class Regions
 	public static Rectangle Kultiras { get; set; } = new Rectangle(864f, -10304f, 5856f, -3744f);
 	public static Rectangle LichKing { get; set; } = new Rectangle(-3520f, 20224f, -3136f, 20704f);
 	public static Rectangle Loch_Modan_Ships { get; set; } = new Rectangle(14720f, -7552f, 17952f, -1536f);
-	public static Rectangle Lordaeron_East { get; set; } = new Rectangle(12896f, 7456f, 18240f, 13984f);
+	public static Rectangle Lordaeron_East { get; set; } = new Rectangle(12896f, 7456f, 18240f, 14112f);
 	public static Rectangle Moonglade { get; set; } = new Rectangle(-12992f, 10176f, -12416f, 10656f);
 	public static Rectangle Northern_Kali_Ships { get; set; } = new Rectangle(-17344f, -1376f, -8704f, 8800f);
 	public static Rectangle Northrend_ships { get; set; } = new Rectangle(-9216f, 19680f, 6048f, 24992f);
@@ -134,7 +134,7 @@ public static class Regions
 	public static Rectangle RanazjarAmbient { get; set; } = new Rectangle(-21344f, -3040f, -19488f, -1248f);
 	public static Rectangle AshenvaleAmbient4 { get; set; } = new Rectangle(-19072f, 2080f, -17856f, 7584f);
 	public static Rectangle Queltalas_2 { get; set; } = new Rectangle(16256f, 11936f, 20224f, 14016f);
-	public static Rectangle StratholmeAmbient { get; set; } = new Rectangle(13056f, 11136f, 16288f, 13888f);
+	public static Rectangle StratholmeAmbient { get; set; } = new Rectangle(13056f, 11136f, 16288f, 14112f);
 	public static Rectangle LordaeronAmbient1 { get; set; } = new Rectangle(15968f, 7264f, 19008f, 11712f);
 	public static Rectangle TyrHandAmbient { get; set; } = new Rectangle(19008f, 6592f, 22048f, 9952f);
 	public static Rectangle LordaeronAmbient2 { get; set; } = new Rectangle(12928f, 8448f, 16128f, 11040f);
@@ -203,7 +203,7 @@ public static class Regions
 	public static Rectangle StormwindUnlock { get; set; } = new Rectangle(6816f, -12704f, 11680f, -8544f);
 	public static Rectangle LakeshireUnlock { get; set; } = new Rectangle(13568f, -13696f, 15456f, -12864f);
 	public static Rectangle NethergardeUnlock { get; set; } = new Rectangle(17472f, -18400f, 18880f, -16960f);
-	public static Rectangle StratholmeUnlock { get; set; } = new Rectangle(13248f, 11168f, 16224f, 13952f);
+	public static Rectangle StratholmeUnlock { get; set; } = new Rectangle(13248f, 11168f, 16224f, 14144f);
 	public static Rectangle TyrUnlock { get; set; } = new Rectangle(18912f, 6560f, 22592f, 9696f);
 	public static Rectangle ShadowfangUnlock { get; set; } = new Rectangle(5440f, 3104f, 6592f, 4768f);
 	public static Rectangle TrollAttackSpawn { get; set; } = new Rectangle(20928f, 12224f, 21248f, 12480f);
