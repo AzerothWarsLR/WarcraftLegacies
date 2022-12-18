@@ -90,6 +90,7 @@ Your allies cannot reach you on Outland, you are alone.",
       FelHorde.ModObjectLimit(FourCC("R034"), Faction.UNLIMITED); //Enhanced Breath
       FelHorde.ModObjectLimit(FourCC("R035"), Faction.UNLIMITED); //Improved Firebolt
       FelHorde.ModObjectLimit(FourCC("R01Z"), Faction.UNLIMITED); //Battle Stations
+      FelHorde.ModObjectLimit(Constants.UPGRADE_R098_FEL_INFUSED_SKELETON_FEL_HORDE, Faction.UNLIMITED);
       FelHorde.SetObjectLevel(FourCC("R01Z"), 1); //Battle Stations
       
       FelHorde.ModObjectLimit(FourCC("n05R"), 1); //Felguard
@@ -102,7 +103,7 @@ Your allies cannot reach you on Outland, you are alone.",
       FelHorde.ModAbilityAvailability(Constants.ABILITY_A0MZ_DEMONIC_CONSTRUCTION_TEAL_DEMOLISHERS, -1);
       FelHorde.ModAbilityAvailability(Constants.ABILITY_A0GM_FOR_THE_HORDE_PINK_GREY_MAIN_BUILDINGS, -1);
 
-      FelHorde.AddGoldMine(preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(5804, -29242)));
+      FelHorde.AddGoldMine(preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-2735, -30242)));
       
       FactionManager.Register(FelHorde);
 

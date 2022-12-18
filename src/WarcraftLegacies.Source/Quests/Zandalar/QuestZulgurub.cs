@@ -1,4 +1,5 @@
-﻿using MacroTools.FactionSystem;
+﻿using MacroTools.Extensions;
+using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using MacroTools.QuestSystem.UtilityStructs;
 using WarcraftLegacies.Source.Setup.Legends;
@@ -22,7 +23,7 @@ namespace WarcraftLegacies.Source.Quests.Zandalar
       "The Gurubashi trolls of Zul'Gurub follow the sacred Heart of Hakkar, hidden within their shrine. Capture it to gain their loyalty.",
       "ReplaceableTextures\\CommandButtons\\BTNTrollRavager.blp")
     {
-      AddObjective(new ObjectiveControlLegend(LegendNeutral.Zulgurub, false));
+      AddObjective(new ObjectiveControlCapital(LegendNeutral.Zulgurub, false));
     }
 
 

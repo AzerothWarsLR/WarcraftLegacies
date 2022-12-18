@@ -14,8 +14,8 @@ namespace WarcraftLegacies.Source.Quests.Naga
       AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n03O"))));
       AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n05Y"))));
       AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n04Y"))));
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n0DJ"))));
-      ResearchId = FourCC("R093");
+      //AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n0DJ"))));
+      ResearchId = Constants.UPGRADE_R093_QUEST_COMPLETED_SPLINTERED_PEOPLE;
     }
 
     protected override string CompletionPopup => "All the Naga have been reunited!";

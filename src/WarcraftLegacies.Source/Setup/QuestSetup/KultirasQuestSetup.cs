@@ -1,4 +1,4 @@
-using MacroTools;
+﻿using MacroTools;
 using WarcraftLegacies.Source.Quests.KulTiras;
 using WarcraftLegacies.Source.Setup.FactionSetup;
 
@@ -16,7 +16,6 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       kultiras.AddQuest(new QuestSafeSea());
       kultiras.AddQuest(new QuestTheramore(Regions.Theramore));
       kultiras.AddQuest(new QuestBeyondPortal());
-      kultiras.AddQuest(new QuestJoinCrusade());
     }
   }
 }

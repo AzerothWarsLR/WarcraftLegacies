@@ -30,7 +30,6 @@ namespace TestMap.Source.Setup
       DialogueSetup.Setup();
       AugmentSetup.Setup();
       PassiveAbilityManager.InitializePreplacedUnits();
-      LegendSetup.Kael.AddProtector(hars);
     }
   }
 }

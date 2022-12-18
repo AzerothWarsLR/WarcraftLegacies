@@ -1,91 +1,92 @@
 using MacroTools;
 using MacroTools.FactionSystem;
+using MacroTools.LegendSystem;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup.Legends
 {
   public static class LegendFelHorde
   {
-    public static Legend LegendMagtheridon { get; private set; }
-    public static Legend LegendZuluhed { get; private set; }
-    public static Legend LegendChogall { get; private set; }
-    public static Legend LegendNekrosh { get; private set; }
-    public static Legend LegendRend { get; private set; }
-    public static Legend LegendTeron { get; private set; }
-    public static Legend LegendKargath { get; private set; }
-    public static Legend LegendBlackrockspire { get; private set; }
-    public static Legend LegendBlacktemple { get; private set; }
-    public static Legend LegendHellfirecitadel { get; private set; }
+    public static LegendaryHero LegendMagtheridon { get; private set; }
+    public static LegendaryHero LegendZuluhed { get; private set; }
+    public static LegendaryHero LegendChogall { get; private set; }
+    public static LegendaryHero LegendNekrosh { get; private set; }
+    public static LegendaryHero LegendRend { get; private set; }
+    public static LegendaryHero LegendTeron { get; private set; }
+    public static LegendaryHero LegendKargath { get; private set; }
+    public static Capital LegendBlackrockspire { get; private set; }
+    public static Capital LegendBlacktemple { get; private set; }
+    public static Capital LegendHellfirecitadel { get; private set; }
 
 
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
-      LegendMagtheridon = new Legend
+      LegendMagtheridon = new LegendaryHero("Magtheridon")
       {
         UnitType = Constants.UNIT_NMAG_LORD_OF_OUTLAND_FEL_HORDE,
         DeathMessage = "Magtheridon’s eternal demon soul has been consumed, and his life permanently extinguished. The Lord of Outland has fallen."
       };
-      Legend.Register(LegendMagtheridon);
+      LegendaryHeroManager.Register(LegendMagtheridon);
 
-      LegendRend = new Legend
+      LegendRend = new LegendaryHero("Rend Blackhand")
       {
         UnitType = FourCC("Nbbc"),
         StartingXp = 2800
       };
-      Legend.Register(LegendRend);
+      LegendaryHeroManager.Register(LegendRend);
 
-      LegendKargath = new Legend
+      LegendKargath = new LegendaryHero("Kargath Bladefist")
       {
         UnitType = FourCC("N03D"),
         StartingXp = 2800
       };
-      Legend.Register(LegendKargath);
+      LegendaryHeroManager.Register(LegendKargath);
 
-      LegendZuluhed = new Legend
+      LegendZuluhed = new LegendaryHero("Zuluhed the Whacked")
       {
         UnitType = FourCC("O00Y")
       };
-      Legend.Register(LegendZuluhed);
+      LegendaryHeroManager.Register(LegendZuluhed);
 
-      LegendNekrosh = new Legend
+      LegendNekrosh = new LegendaryHero("Nek'rosh Sullcrusher")
       {
         UnitType = FourCC("O01Q")
       };
-      Legend.Register(LegendNekrosh);
+      LegendaryHeroManager.Register(LegendNekrosh);
 
-      LegendChogall = new Legend
+      LegendChogall = new LegendaryHero("Cho'gall")
       {
         UnitType = FourCC("O01P")
       };
-      Legend.Register(LegendChogall);
+      LegendaryHeroManager.Register(LegendChogall);
 
-      LegendTeron = new Legend
+      LegendTeron = new LegendaryHero("Teron Gorefiend")
       {
         UnitType = FourCC("U02D"),
         StartingXp = 5400,
         PlayerColor = PLAYER_COLOR_MAROON
       };
-      Legend.Register(LegendTeron);
+      LegendaryHeroManager.Register(LegendTeron);
 
-      LegendBlackrockspire = new Legend
+      LegendBlackrockspire = new Capital
       {
         Unit = preplacedUnitSystem.GetUnit(FourCC("o013")),
         DeathMessage = "Blackrock Spire has been razed."
       };
-      Legend.Register(LegendBlackrockspire);
+      CapitalManager.Register(LegendBlackrockspire);
 
-      LegendBlacktemple = new Legend
+      LegendBlacktemple = new Capital
       {
         Unit = preplacedUnitSystem.GetUnit(FourCC("o00F")),
         Capturable = true
       };
-      Legend.Register(LegendBlacktemple);
+      CapitalManager.Register(LegendBlacktemple);
 
-      LegendHellfirecitadel = new Legend
+      LegendHellfirecitadel = new Capital
       {
         Unit = preplacedUnitSystem.GetUnit(FourCC("o008"))
       };
-      Legend.Register(LegendHellfirecitadel);
+      CapitalManager.Register(LegendHellfirecitadel);
     }
   }
 }

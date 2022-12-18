@@ -10,12 +10,10 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
     {
       var frostwolf = FrostwolfSetup.Frostwolf;
 
-      var newQuest = frostwolf.AddQuest(new QuestSeaWitch(Regions.EchoUnlock));
-      frostwolf.StartingQuest = newQuest;
-      frostwolf.AddQuest(new QuestThunderBluff(Regions.ThunderBluff.Rect));
+      frostwolf.AddQuest(new QuestThunderBluff(preplacedUnitSystem, Regions.ThunderBluff.Rect));
       frostwolf.AddQuest(new QuestRexxar(preplacedUnitSystem));
       frostwolf.AddQuest(new QuestDrektharsSpellbook());
-      frostwolf.AddQuest(new QuestRoyalPlunder(Regions.HighBourne, artifactSetup.ScepterOfTheQueen));
+      //frostwolf.AddQuest(new QuestRoyalPlunder(Regions.HighBourne, artifactSetup.ScepterOfTheQueen));
       frostwolf.AddQuest(new QuestFreeNerzhul());
       frostwolf.AddQuest(new QuestWorldShaman());
     }

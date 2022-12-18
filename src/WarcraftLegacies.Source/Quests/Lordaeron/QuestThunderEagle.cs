@@ -1,4 +1,5 @@
 ﻿using MacroTools.ControlPointSystem;
+using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using MacroTools.QuestSystem.UtilityStructs;
@@ -22,7 +23,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
       "The Thunder Eagles of the Storm Peaks live in fear of the Legion. Wipe out the Legion Nexus to bring these great birds out into the open.",
       "ReplaceableTextures\\CommandButtons\\BTNWarEagle.blp")
     {
-      AddObjective(new ObjectiveControlLegend(LegendNeutral.DraktharonKeep, false));
+      AddObjective(new ObjectiveControlCapital(LegendNeutral.DraktharonKeep, false));
       AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(Constants.UNIT_N02S_STORM_PEAKS_15GOLD_MIN)));
     }
 
@@ -37,7 +38,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
     protected override void OnComplete(Faction completingFaction)
     {
       SetPlayerTechResearched(completingFaction.Player, ResearchId, 1);
-      completingFaction.Player.DisplayUnitTypeAcquired(ThunderEagleId,
+      completingFaction.Player?.DisplayUnitTypeAcquired(ThunderEagleId,
         "You can now train Thunder Eagles from upgraded Town Halls and from your capitals.");
     }
   }

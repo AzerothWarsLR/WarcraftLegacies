@@ -4,7 +4,6 @@ using MacroTools.QuestSystem;
 using MacroTools.QuestSystem.UtilityStructs;
 using System.Collections.Generic;
 using MacroTools.ArtifactSystem;
-using WarcraftLegacies.Source.Setup;
 using WarcraftLegacies.Source.Setup.Legends;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -29,9 +28,9 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
       _scepterOfTheQueen = scepterOfTheQueen;
       _highBourneAreaUnits = _highBourneArea.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
       ResearchId = Constants.UPGRADE_R02O_QUEST_COMPLETED_RETURN_TO_THE_FOLD_SENTINELS;
-      AddObjective(new ObjectiveLegendNotPermanentlyDead(LegendSentinels.Feathermoon));
-      AddObjective(new ObjectiveLegendDead(LegendWarsong.StonemaulKeep));
-      AddObjective(new ObjectiveAnyUnitInRect(Regions.HighBourne, "Dire Maul", true));
+      AddObjective(new ObjectiveUnitAlive(LegendSentinels.Feathermoon.Unit));
+      AddObjective(new ObjectiveCapitalDead(LegendWarsong.StonemaulKeep));
+      //AddObjective(new ObjectiveAnyUnitInRect(Regions.HighBourne, "Dire Maul", true));
     }
 
     private readonly List<unit> _highBourneAreaUnits;

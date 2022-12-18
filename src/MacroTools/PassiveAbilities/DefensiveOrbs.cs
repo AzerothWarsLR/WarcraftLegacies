@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Missiles;
 using MacroTools.PassiveAbilitySystem;
-using Microsoft.VisualBasic;
 using WCSharp.Missiles;
 using static War3Api.Common;
 
@@ -54,9 +53,9 @@ namespace MacroTools.PassiveAbilities
     {
       _abilityTypeId = abilityTypeId;
     }
-
+    
     /// <inheritdoc />
-    public override void OnSpellFinish()
+    public override void OnSpellEffect()
     {
       var caster = GetTriggerUnit();
       var abilityLevel = GetUnitAbilityLevel(caster, _abilityTypeId);

@@ -1,3 +1,4 @@
+using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using MacroTools.QuestSystem.UtilityStructs;
@@ -22,7 +23,7 @@ namespace WarcraftLegacies.Source.Quests.Goblin
       "The World Tree would provide enough lumber to completely crash the lumber market, forcing our Shredders to specialise more on war.",
       "ReplaceableTextures\\CommandButtons\\BTNJunkGolem.blp")
     {
-      AddObjective(new ObjectiveControlLegend(LegendDruids.LegendNordrassil, false));
+      AddObjective(new ObjectiveControlCapital(LegendDruids.LegendNordrassil, false));
       ResearchId = FourCC("R07Z");
     }
   }

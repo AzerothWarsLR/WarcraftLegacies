@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using MacroTools.ControlPointSystem;
+using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using static War3Api.Common;
 
@@ -71,8 +72,7 @@ namespace MacroTools.UserInterface
 
       _initialized = true;
     }
-
-    //Run when a detail about a Faction has changed
+    
     private void UpdateFactionRow(Faction faction)
     {
       if (!_rowsByFaction.ContainsKey(faction))
@@ -87,7 +87,7 @@ namespace MacroTools.UserInterface
       MultiboardSetItemValue(cpMbi, faction.Player?.GetControlPointCount().ToString());
       var income = R2I(faction.Player?.GetTotalIncome() ?? 0);
       var incomePrefix = faction.Player?.GetBonusIncome() > 0 ? "|cffffcc00" : "";
-      MultiboardSetItemValue(incomeMbi, $"{incomePrefix}{I2S(income)}");
+      MultiboardSetItemValue(incomeMbi, income <= 999 ? $"{incomePrefix}{income}" : $"{incomePrefix}BIG");
       MultiboardSetItemWidth(factionMbi, WidthFaction);
       MultiboardSetItemWidth(cpMbi, WidthCp);
       MultiboardSetItemWidth(incomeMbi, WidthIncome);
@@ -95,8 +95,7 @@ namespace MacroTools.UserInterface
       MultiboardSetItemStyle(cpMbi, true, false);
       MultiboardSetItemStyle(incomeMbi, true, false);
     }
-
-    //Run when a detail about a Team has changed
+    
     private void UpdateTeamRow(Team team)
     {
       var row = _rowsByTeam[team];

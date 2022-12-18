@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using MacroTools.Wrappers;
+using MacroTools.Extensions;
 using WCSharp.Events;
 using static War3Api.Common;
 
@@ -21,8 +21,8 @@ namespace MacroTools.PassiveAbilitySystem
     /// </summary>
     public static void InitializePreplacedUnits()
     {
-      using var group = new GroupWrapper().EnumUnitsInRect(WCSharp.Shared.Data.Rectangle.WorldBounds);
-      foreach (var unit in group.EmptyToList())
+      var group = CreateGroup().EnumUnitsInRect(WCSharp.Shared.Data.Rectangle.WorldBounds).EmptyToList();
+      foreach (var unit in group)
       {
         if (PassiveAbilitiesByUnitTypeId.TryGetValue(GetUnitTypeId(unit), out var passiveAbilities))
           foreach (var passiveAbility in passiveAbilities)
@@ -75,6 +75,7 @@ namespace MacroTools.PassiveAbilitySystem
         PlayerUnitEvents.Register(UnitTypeEvent.FinishesBeingConstructed, passiveAbility.OnConstruction, unitTypeId);
         PlayerUnitEvents.Register(UnitTypeEvent.FinishesConstruction, passiveAbility.OnUpgrade, unitTypeId);
         PlayerUnitEvents.Register(UnitTypeEvent.Dies, passiveAbility.OnDeath, unitTypeId);
+        PlayerUnitEvents.Register(UnitTypeEvent.SpellEffect, passiveAbility.OnSpellEffect, unitTypeId);
         PlayerUnitEvents.Register(UnitTypeEvent.SpellFinish, passiveAbility.OnSpellFinish, unitTypeId);
         PlayerUnitEvents.Register(HeroTypeEvent.FinishesRevive, UnitCreated, unitTypeId);
         PlayerUnitEvents.Register(UnitTypeEvent.ReceivesPointOrder, passiveAbility.OnOrderIssued, unitTypeId);

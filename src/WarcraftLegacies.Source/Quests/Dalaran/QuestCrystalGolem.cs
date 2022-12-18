@@ -1,4 +1,5 @@
 using MacroTools.ControlPointSystem;
+using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using MacroTools.QuestSystem.UtilityStructs;
@@ -14,7 +15,7 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
       , "ReplaceableTextures\\CommandButtons\\BTNRockGolem.blp")
     {
       AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n02R"))));
-      AddObjective(new ObjectiveControlLegend(LegendNeutral.DraktharonKeep, false));
+      AddObjective(new ObjectiveControlCapital(LegendNeutral.DraktharonKeep, false));
       ResearchId = FourCC("R045");
     }
 

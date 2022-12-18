@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Diagnostics;
+using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using WCSharp.Shared.Data;
 using static War3Api.Common;

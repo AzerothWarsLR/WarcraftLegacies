@@ -1,4 +1,4 @@
-﻿using MacroTools.FactionSystem;
+﻿using MacroTools.LegendSystem;
 using WCSharp.Events;
 using static War3Api.Common;
 
@@ -21,11 +21,7 @@ namespace MacroTools.QuestSystem.UtilityStructs
     public ObjectiveStartSpell(int spellId, bool holderOnly, Legend? requiredLegend = null)
     {
       PlayerUnitEvents.Register(UnitTypeEvent.SpellCast, OnCast, spellId);
-      if (holderOnly)
-        Description = "Start casting " + GetObjectName(spellId);
-      else
-        Description = "Anyone starts casting " + GetObjectName(spellId);
-
+      Description = holderOnly ? $"Start casting {GetObjectName(spellId)}" : $"Anyone starts casting {GetObjectName(spellId)}";
       _holderOnly = holderOnly;
       _requiredLegend = requiredLegend;
     }
@@ -37,13 +33,12 @@ namespace MacroTools.QuestSystem.UtilityStructs
 
     private void OnCast()
     {
-      if (Progress != QuestProgress.Complete &&
-          (_requiredLegend == null || Legend.GetFromUnit(GetTriggerUnit()) == _requiredLegend) &&
-          (!_holderOnly || EligibleFactions.Contains(GetOwningPlayer(GetTriggerUnit()))))
-      {
-        Caster = GetTriggerUnit();
-        Progress = QuestProgress.Complete;
-      }
+      if (Progress == QuestProgress.Complete ||
+          (_requiredLegend != null && LegendaryHeroManager.GetFromUnit(GetTriggerUnit()) != _requiredLegend) ||
+          (_holderOnly && !EligibleFactions.Contains(GetOwningPlayer(GetTriggerUnit())))) 
+        return;
+      Caster = GetTriggerUnit();
+      Progress = QuestProgress.Complete;
     }
   }
 }

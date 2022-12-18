@@ -11,7 +11,7 @@ namespace WarcraftLegacies.Source.Setup
       LegendDraenei.Setup(preplacedUnitSystem);
       LegendDruids.Setup(preplacedUnitSystem);
       LegendFelHorde.Setup(preplacedUnitSystem);
-      LegendForsaken.Setup(preplacedUnitSystem);
+      LegendForsaken.Setup();
       LegendFrostwolf.Setup(preplacedUnitSystem);
       LegendGilneas.Setup();
       LegendGoblin.Setup(preplacedUnitSystem);
@@ -19,7 +19,7 @@ namespace WarcraftLegacies.Source.Setup
       LegendKultiras.Setup(preplacedUnitSystem);
       LegendLegion.Setup(preplacedUnitSystem);
       LegendLordaeron.Setup(preplacedUnitSystem, artifactSetup);
-      LegendNaga.Setup(preplacedUnitSystem);
+      LegendNaga.Setup();
       LegendNeutral.Setup(preplacedUnitSystem);
       LegendQuelthalas.Setup(preplacedUnitSystem);
       LegendScarlet.Setup();

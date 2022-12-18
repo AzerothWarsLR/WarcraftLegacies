@@ -20,7 +20,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       if (dragonmaw == null)
         return;
       var waygateDragonmawPort = preplacedUnitSystem.GetUnit(Constants.UNIT_N07E_PORTAL_GREEN_NAZJATAR, Regions.DragonmawPortal.Center);
-      var dragonmawPortQuest = dragonmaw.AddQuest(new QuestDragonmawPort(Regions.DragonmawUnlock, waygateDragonmawPort));
+      var dragonmawPortQuest = dragonmaw.AddQuest(new QuestDragonmawPort(preplacedUnitSystem, Regions.DragonmawUnlock, waygateDragonmawPort));
       dragonmaw.StartingQuest = dragonmaw.AddQuest(new QuestOrgrimmarPortal(dragonmawPortQuest, waygateDragonmawPort));
       dragonmaw.AddQuest(new QuestWetlandOffensive());
       dragonmaw.AddQuest(new QuestDunAlgazSiege());

@@ -1,5 +1,6 @@
 ﻿using System;
 using MacroTools.FactionSystem;
+using MacroTools.LegendSystem;
 using MacroTools.Libraries;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -177,9 +178,10 @@ namespace MacroTools.Extensions
     /// <summary>
     /// If true, the unit cannot be targeted by attacks or hostile abilities and cannot be damaged.
     /// </summary>
-    public static void SetInvulnerable(this unit unit, bool value)
+    public static unit SetInvulnerable(this unit unit, bool value)
     {
       SetUnitInvulnerable(unit, value);
+      return unit;
     }
     
     /// <summary>
@@ -196,6 +198,15 @@ namespace MacroTools.Extensions
     public static unit IssueOrder(this unit unit, string order, Point target)
     {
       IssuePointOrder(unit, order, target.X, target.Y);
+      return unit;
+    }
+    
+    /// <summary>
+    /// Orders a unit to perform a specified order on the specified target.
+    /// </summary>
+    public static unit IssueOrder(this unit unit, string order, widget target)
+    {
+      IssueTargetOrder(unit, order, target);
       return unit;
     }
     
@@ -228,9 +239,10 @@ namespace MacroTools.Extensions
     /// <summary>
     /// Changess the unit's owner to the specified player.
     /// </summary>
-    public static void SetOwner(this unit unit, player whichPlayer)
+    public static unit SetOwner(this unit unit, player whichPlayer)
     {
       SetUnitOwner(unit, whichPlayer, true);
+      return unit;
     }
     
     /// <summary>
@@ -362,8 +374,8 @@ namespace MacroTools.Extensions
       SetUnitOwner(whichUnit, GetUnitFoodUsed(whichUnit) == 10 ? Player(PLAYER_NEUTRAL_PASSIVE) : whichPlayer, true);
       ShowUnit(whichUnit, true);
 
-      var asLegend = Legend.GetFromUnit(whichUnit);
-      if (asLegend == null || asLegend.ProtectorCount == 0) 
+      var asCapital = CapitalManager.GetFromUnit(whichUnit);
+      if (asCapital == null || asCapital.ProtectorCount == 0) 
         whichUnit.SetInvulnerable(false);
     }
 
@@ -458,10 +470,11 @@ namespace MacroTools.Extensions
     /// <summary>
     ///   Add an item to a unit. If the unit's inventory is full, drop it on the ground near them instead.
     /// </summary>
-    public static void AddItemSafe(this unit whichUnit, item whichItem)
+    public static unit AddItemSafe(this unit whichUnit, item whichItem)
     {
       SetItemPosition(whichItem, GetUnitX(whichUnit), GetUnitY(whichUnit));
       UnitAddItem(whichUnit, whichItem);
+      return whichUnit;
     }
 
     /// <summary>
@@ -556,6 +569,16 @@ namespace MacroTools.Extensions
       UnitMakeAbilityPermanent(whichUnit, true, abilityTypeId);
       return whichUnit;
     }
+
+    /// <summary>
+    /// Sets a specific ability of a unit to the specified level.
+    /// </summary>
+    /// <returns></returns>
+    public static unit SetAbilityLevel(this unit whichUnit, int abilityTypeId, int level)
+    {
+      SetUnitAbilityLevel(whichUnit, abilityTypeId, level);
+      return whichUnit;
+    }
     
     /// <summary>
     /// Removes an ability from a unit.
@@ -586,6 +609,44 @@ namespace MacroTools.Extensions
     public static unit SetArmorType(this unit whichUnit, int armorType)
     {
       BlzSetUnitIntegerField(whichUnit, UNIT_IF_DEFENSE_TYPE, armorType);
+      return whichUnit;
+    }
+
+    /// <summary>
+    /// Adds an additional unit type to the unit.
+    /// </summary>
+    /// <returns>The same unit that was passed in.</returns>
+    public static unit AddType(this unit whichUnit, unittype whichUnitType)
+    {
+      UnitAddType(whichUnit, whichUnitType);
+      return whichUnit;
+    }
+
+    /// <summary>
+    /// Causes the specified unit to become capturable,
+    /// such that it changes ownership to the attacker when reduced below 0 hit points.
+    /// </summary>
+    public static unit MakeCapturable(this unit whichUnit)
+    {
+      CreateTrigger()
+        .RegisterUnitEvent(whichUnit, EVENT_UNIT_DAMAGED)
+        .AddAction(() =>
+        {
+          if (!(GetEventDamage() + 1 >= GetUnitState(whichUnit, UNIT_STATE_LIFE))) return;
+          SetUnitOwner(whichUnit, GetOwningPlayer(GetEventDamageSource()), true);
+          BlzSetEventDamage(0);
+          SetUnitState(whichUnit, UNIT_STATE_LIFE, GetUnitState(whichUnit, UNIT_STATE_MAX_LIFE));
+        });
+      return whichUnit;
+    }
+
+    /// <summary>
+    /// Activates an ability's full cooldown for a unit.
+    /// </summary>
+    public static unit StartUnitAbilityCooldownFull(this unit whichUnit, int abilCode)
+    {
+      var fullCooldown = BlzGetUnitAbilityCooldown(whichUnit, abilCode, 0);
+      BlzStartUnitAbilityCooldown(whichUnit, abilCode, fullCooldown);
       return whichUnit;
     }
   }

@@ -2,10 +2,13 @@ using MacroTools;
 using MacroTools.Mechanics;
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.UserInterface;
+using WarcraftLegacies.Source.ArtifactBehaviour;
 using WarcraftLegacies.Source.GameLogic;
 using WarcraftLegacies.Source.GameLogic.GameEnd;
 using WarcraftLegacies.Source.Hints;
+using WarcraftLegacies.Source.Mechanics.Neutral;
 using WarcraftLegacies.Source.Mechanics.Quelthalas;
+using WarcraftLegacies.Source.Mechanics.Scourge;
 using WarcraftLegacies.Source.Mechanics.Scourge.Blight;
 using WarcraftLegacies.Source.Rocks;
 using WarcraftLegacies.Source.Setup.FactionSetup;
@@ -65,7 +68,6 @@ namespace WarcraftLegacies.Source.Setup
       ShipyardBanZones.Setup(new[]
       {
         Regions.CaerDarrowShipyard,
-        Regions.InstanceNazjatar,
         Regions.Arathi_Ships,
         Regions.Auberdine_Ships,
         Regions.Kali_Ships,
@@ -75,8 +77,6 @@ namespace WarcraftLegacies.Source.Setup
         Regions.Auberdine_Ships_2,
         Regions.Outland_Ships,
         Regions.Northern_Kali_Ships,
-        Regions.Scholo_Ships,
-        Regions.DalaranDungeon,
         Regions.Stromwind_antiship,
         Regions.StratholmeShipyard,
         Regions.Gilneas_Canals,
@@ -87,7 +87,6 @@ namespace WarcraftLegacies.Source.Setup
         Regions.South_EK_Ships,
         Regions.IcecrownShipyard,
         Regions.Loch_Modan_Ships,
-        Regions.Tomb_Of_Sargeras_Ships,
         Regions.Quel_Ships_1,
         Regions.Quel_Ships_2,
         Regions.Quel_Ships_3
@@ -108,6 +107,11 @@ namespace WarcraftLegacies.Source.Setup
       DemonGateSetup.Setup();
       SummonRallyPoints.Setup();
       RemoveUnusedAreas.Run();
+      EyeOfSargerasCooldowns.Setup();
+      EventKelthuzadDeath.Setup();
+      CapturableUnitSetup.Setup(preplacedUnitSystem);
+      GilneasGateTowers.Setup(preplacedUnitSystem);
+      EyeOfSargerasPickup.Setup();
     }
   }
 }

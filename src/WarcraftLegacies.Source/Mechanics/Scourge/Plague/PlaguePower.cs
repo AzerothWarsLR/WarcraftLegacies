@@ -4,7 +4,6 @@ using System.Linq;
 using MacroTools.Buffs;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
-using MacroTools.Wrappers;
 using WCSharp.Buffs;
 using WCSharp.Events;
 using static War3Api.Common;
@@ -75,7 +74,7 @@ namespace WarcraftLegacies.Source.Mechanics.Scourge.Plague
 
       var darkConversionBuffOwner = _holders.First();
       
-      var villagers = new GroupWrapper().EnumUnitsOfPlayer(Player(PLAYER_NEUTRAL_PASSIVE))
+      var villagers = CreateGroup().EnumUnitsOfPlayer(Player(PLAYER_NEUTRAL_PASSIVE))
         .EmptyToList()
         .Where(x => _villagerUnitTypeIds.Contains(GetUnitTypeId(x)) && x.IsAlive() && !BlzIsUnitInvulnerable(x));
       foreach (var villager in villagers) 

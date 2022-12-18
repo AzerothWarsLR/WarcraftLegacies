@@ -18,18 +18,15 @@ namespace WarcraftLegacies.Source.Quests.Fel_Horde
     private readonly List<unit> _rescueUnits;
 
     /// <summary>
-    /// 
+    /// Initializes a new instance of the <see cref="QuestHellfireCitadel"/> class.
     /// </summary>
-    /// <param name="rescueRect"></param>
-    /// <param name="demonGates"></param>
-    /// <param name="prerequisites"></param>
-    public QuestHellfireCitadel(Rectangle rescueRect, List<unit> demonGates, IEnumerable<QuestData> prerequisites) : base("The Citadel",
+    /// <param name="rescueRect">Units in this area start invulnerable then get rescued when the quest is complete.</param>
+    /// <param name="demonGates">These units start invulnerable then get rescued when the quest is complete.</param>
+    public QuestHellfireCitadel(Rectangle rescueRect, List<unit> demonGates) : base("The Citadel",
       "The clans holding Hellfire Citadel do not respect Magtheridon's authority yet, capture a large part of Outland to finally establish Magtheridon as the undisputable king of Outland",
       "ReplaceableTextures\\CommandButtons\\BTNFelOrcFortress.blp")
     {
       _demonGates = demonGates;
-      foreach (var prerequisite in prerequisites) 
-        AddObjective(new ObjectiveCompleteQuest(prerequisite));
       AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(Constants.UNIT_N01J_ZANGARMARSH_15GOLD_MIN)));
       AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(Constants.UNIT_N02N_BLADE_S_EDGE_MOUNTAINS_15GOLD_MIN)));
       AddObjective(new ObjectiveUpgrade(Constants.UNIT_O030_FORTRESS_FEL_HORDE, Constants.UNIT_O02Y_GREAT_HALL_FEL_HORDE));

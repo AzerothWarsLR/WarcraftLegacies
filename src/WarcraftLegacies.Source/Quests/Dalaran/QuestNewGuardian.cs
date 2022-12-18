@@ -3,7 +3,6 @@ using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using MacroTools.QuestSystem.UtilityStructs;
-using WarcraftLegacies.Source.Setup;
 using WarcraftLegacies.Source.Setup.Legends;
 using static War3Api.Common;
 
@@ -21,14 +20,14 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
     }
 
     protected override string CompletionPopup =>
-      "Dalaran has empowered Jaina to be the new Guardian of Tirisfal, endowing her with a portion of the Council of TirisfalFourCC(s power.";
+      "Dalaran has empowered Jaina to be the new Guardian of Tirisfal, endowing her with a portion of the Council of Tirisfal's power.";
 
     protected override string RewardDescription =>
       "Grant Jaina Chaos Damage, 20 additional Intelligence, Teleport, and Mana Shield";
 
     protected override void OnComplete(Faction completingFaction)
     {
-      unit whichUnit = LegendDalaran.LegendJaina.Unit;
+      var whichUnit = LegendDalaran.LegendJaina.Unit;
       UnitRemoveAbility(LegendDalaran.LegendJaina.Unit, FourCC("A0RB"));
       AddSpecialEffectTarget("war3mapImported\\Soul Armor Cosmic.mdx", whichUnit, "chest");
       BlzSetUnitName(whichUnit, "Guardian of Tirisfal");

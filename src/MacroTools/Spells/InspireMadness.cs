@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
+using MacroTools.Extensions;
 using MacroTools.SpellSystem;
-using MacroTools.Wrappers;
 using WCSharp.Effects;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -28,7 +28,7 @@ namespace MacroTools.Spells
       try
       {
         var maxTargets = CountBase * CountLevel * GetAbilityLevel(caster);
-        foreach (var unit in new GroupWrapper()
+        foreach (var unit in CreateGroup()
                    .EnumUnitsInRange(targetPoint, Radius)
                    .EmptyToList()
                    .Take(maxTargets)

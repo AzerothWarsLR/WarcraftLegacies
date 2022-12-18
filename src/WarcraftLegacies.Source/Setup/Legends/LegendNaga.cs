@@ -1,94 +1,58 @@
-﻿using MacroTools;
-using MacroTools.FactionSystem;
+﻿using MacroTools.LegendSystem;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup.Legends
 {
   public static class LegendNaga
   {
-    public static Legend LegendIllidan { get; private set; }
-    public static Legend LegendVashj { get; private set; }
-    public static Legend LegendNajentus { get; private set; }
-    public static Legend LegendAzshara { get; private set; }
-    public static Legend LegendNzoth { get; private set; }
-    public static Legend LegendAltruis { get; private set; }
-    public static Legend LegendAkama { get; private set; }
-    public static Legend LegendNazjatar { get; private set; }
-    public static Legend LegendVault { get; private set; }
+    public static LegendaryHero LegendIllidan { get; private set; }
+    public static LegendaryHero LegendVashj { get; private set; }
+    public static LegendaryHero LegendNajentus { get; private set; }
+    public static LegendaryHero LegendAzshara { get; private set; }
+    public static LegendaryHero LegendAltruis { get; private set; }
+    public static LegendaryHero LegendAkama { get; private set; }
 
-    public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
+    public static void Setup()
     {
-      LegendIllidan = new Legend
+      LegendIllidan = new LegendaryHero("Illidan")
       {
         UnitType = FourCC("Eill"),
-        PlayerColor = PLAYER_COLOR_PURPLE,
-        Name = "Illidan"
+        PlayerColor = PLAYER_COLOR_PURPLE
       };
-      Legend.Register(LegendIllidan);
+      LegendaryHeroManager.Register(LegendIllidan);
 
-      LegendVashj = new Legend
+      LegendVashj = new LegendaryHero("Lady Vashj")
       {
         UnitType = FourCC("Hvsh"),
         StartingXp = 2800,
-        Name = "Lady Vashj"
       };
-      Legend.Register(LegendVashj);
+      LegendaryHeroManager.Register(LegendVashj);
 
-      LegendAzshara = new Legend
+      LegendAzshara = new LegendaryHero("Azshara")
       {
-        UnitType = FourCC("H08U"),
-        Name = "Azshara"
+        UnitType = FourCC("H08U")
       };
-      Legend.Register(LegendAzshara);
+      LegendaryHeroManager.Register(LegendAzshara);
 
-      LegendNajentus = new Legend
+      LegendNajentus = new LegendaryHero("Warlord Najentus")
       {
         UnitType = FourCC("U00S"),
-        StartingXp = 2800,
-        Name = "Warlord Najentus"
+        StartingXp = 2800
       };
-      Legend.Register(LegendNajentus);
+      LegendaryHeroManager.Register(LegendNajentus);
 
-      LegendAltruis = new Legend
+      LegendAltruis = new LegendaryHero("Altruis")
       {
-        UnitType = FourCC("E015"),
-        Name = "Altruis"
+        UnitType = FourCC("E015")
       };
-      Legend.Register(LegendAltruis);
+      LegendaryHeroManager.Register(LegendAltruis);
 
-      LegendAkama = new Legend
+      LegendAkama = new LegendaryHero("Akama")
       {
         UnitType = FourCC("Naka"),
-        StartingXp = 4000,
-        Name = "Akama"
+        StartingXp = 4000
       };
-      Legend.Register(LegendAkama);
-
-      LegendNzoth = new Legend
-      {
-        Unit = preplacedUnitSystem.GetUnit(FourCC("U01Z")),
-        DeathMessage =
-          "N'zoth the Corruptor lay in wait for millenia before enacting final ploy. In the end, it was all for naught;Legend.Register(LegendNzoth); N'zoth lies dead, and he will never witness the true floatization of his Black Empire.",
-        PermaDies = true,
-        Name = "N'zoth"
-      };
-
-      LegendNazjatar = new Legend
-      {
-        Unit = preplacedUnitSystem.GetUnit(FourCC("n045")),
-        DeathMessage =
-          "The Eternal Palace, the royal seat of Queen Azshara and the Nazjatar Empire, has been destroyed.",
-        Hivemind = true,
-      };
-      Legend.Register(LegendNazjatar);
-      LegendNazjatar.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_N0BQ_THE_FIRST_GUARDIAN_NZOTH));
-
-      LegendVault = new Legend
-      {
-        Unit = preplacedUnitSystem.GetUnit(FourCC("n05A")),
-        DeathMessage = "The Aetheneum vault has been destroyed, and with it, ages of knowledge is lost."
-      };
-      Legend.Register(LegendVault);
+      LegendaryHeroManager.Register(LegendAkama);
     }
   }
 }

@@ -22,17 +22,6 @@ namespace WarcraftLegacies.Source.Setup
       };
       SpellSystem.Register(warStompImmoltar);
 
-      var warStompKazzak = new Stomp(Constants.ABILITY_A0AW_WAR_STOMP_BLUE_DOOM_GUARD_TEAL_KAZZAK)
-      {
-        Radius = 300,
-        DamageBase = 25,
-        DurationBase = 3,
-        StunAbilityId = FourCC("A0WN"),
-        StunOrderString = "thunderbolt",
-        SpecialEffect = @"Abilities\Spells\Orc\WarStomp\WarStompCaster.mdl"
-      };
-      SpellSystem.Register(warStompKazzak);
-
       var thunderClap = new Stomp(FourCC("A0QC"))
       {
         Radius = 225,
@@ -130,9 +119,9 @@ namespace WarcraftLegacies.Source.Setup
       };
       SpellSystem.Register(massSimulacrum);
 
-      var bombingRun = new ChannelAnySpell(Constants.ABILITY_A0S1_BOMBING_RUN_DARK_GREEN)
+      var bombingRun = new ChannelAnySpell(Constants.ABILITY_A0S5_BOMBING_RUN_ARATHOR_DUMMY_SPELL)
       {
-        DummyAbilityId = FourCC("A0S1"),
+        DummyAbilityId = Constants.ABILITY_A0S1_BOMBING_RUN_DARK_GREEN,
         DummyAbilityOrderString = "locustswarm"
       };
       SpellSystem.Register(bombingRun);
@@ -194,23 +183,6 @@ namespace WarcraftLegacies.Source.Setup
       var overclock = new CooldownReset(Constants.ABILITY_A0RA_OVERCLOCK_GAZLOWEE);
       SpellSystem.Register(overclock);
 
-      var ascendance = new Ascendance(Constants.ABILITY_AEME_ASCENDANCE_TEAL_ZULUHED)
-      {
-        DurationBase = 15,
-        DurationLevel = 15,
-        HealBase = 50,
-        HealLevel = 100,
-        Radius = 600,
-        AbilitiesToRemove = new[]
-        {
-          Constants.ABILITY_HEAL_HEALING_WAVE_TEAL_ZULUHED,
-          Constants.ABILITY_A0B4_BLOODLUST_TOTEM_TEAL_ZULUHED,
-          Constants.ABILITY_AHAB_BRILLIANCE_AURA_ZULUHED_JAINA_MALFURION_VOL_JIN_JERGOSH,
-          Constants.ABILITY_AEME_ASCENDANCE_TEAL_ZULUHED
-        }
-      };
-      SpellSystem.Register(ascendance);
-
       var unholyArmor = new UnholyArmor(Constants.ABILITY_A0F8_UNHOLY_ARMOR_FEL_HORDE_FEL_WARLOCK)
       {
         PercentageDamage = 0.06f
@@ -257,6 +229,7 @@ namespace WarcraftLegacies.Source.Setup
       ForsakenSpellSetup.Setup();
       DragonmawSpellSetup.Setup();
       IllidariSpellSetup.Setup();
+      FelHordeSpellSetup.Setup();
     }
   }
 }

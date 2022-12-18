@@ -5,7 +5,6 @@ using MacroTools.FactionSystem;
 using MacroTools.Libraries;
 using MacroTools.QuestSystem;
 using MacroTools.QuestSystem.UtilityStructs;
-using MacroTools.Wrappers;
 using WarcraftLegacies.Source.Setup.Legends;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -30,7 +29,7 @@ namespace WarcraftLegacies.Source.Quests.Scarlet
       AddObjective(new ObjectiveSelfExists());
       ResearchId = FourCC("R07P");
 
-      foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())
+      foreach (var unit in CreateGroup().EnumUnitsInRect(rescueRect).EmptyToList())
         if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))
         {
           SetUnitInvulnerable(unit, true);

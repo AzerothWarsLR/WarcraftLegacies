@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using MacroTools;
 using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
@@ -14,13 +15,13 @@ namespace WarcraftLegacies.Source.Quests.Dragonmaw
   {
     private readonly List<unit> _rescueUnits = new();
 
-    public QuestDragonmawPort(Rectangle rescueRect, unit waygateDragonmawPort) : base("Dragonmaw Port",
+    public QuestDragonmawPort(PreplacedUnitSystem preplacedUnitSystem, Rectangle rescueRect, unit waygateDragonmawPort) : base("Dragonmaw Port",
       "The Dragonmaw Port will be the site of the portal summoning to escape to kalimdor! The Tyrant Mor'ghor and his followers have taken control of the Port, kill him to reunite the clan. ",
       "ReplaceableTextures\\CommandButtons\\BTNIronHordeSummoningCircle.blp")
     {
       AddObjective(
         new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(Constants.UNIT_N08T_DRAGONMAW_PORT_10GOLD_MIN)));
-      AddObjective(new ObjectiveLegendDead(LegendNeutral.Morghor));
+      AddObjective(new ObjectiveUnitIsDead(preplacedUnitSystem.GetUnit(Constants.UNIT_N0DA_OVERLORD_DRAGONMAW_QUEST)));
       AddObjective(new ObjectiveControlLegend(LegendDragonmaw.Zaela, false));
       AddObjective(new ObjectiveExpire(480));
       AddObjective(new ObjectiveSelfExists());

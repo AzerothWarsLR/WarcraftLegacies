@@ -1,4 +1,5 @@
 ﻿using MacroTools.FactionSystem;
+using MacroTools.LegendSystem;
 using static War3Api.Common;
 
 namespace MacroTools.Augments
@@ -14,15 +15,15 @@ namespace MacroTools.Augments
       /// <summary>
       /// Initializes an instance of the <see cref="HeroExperienceAugment"/> class.
       /// </summary>
-      /// <param name="legend">Thhe <see cref="Legend"/> to give experience to when this is selected.</param>
+      /// <param name="legendaryHero"></param>
       /// <param name="experience">The amount of experience to give to the <see cref="Legend"/> when this is selected.</param>
-      public HeroExperienceAugment(Legend legend, int experience)
+      public HeroExperienceAugment(LegendaryHero legendaryHero, int experience)
       {
-         _legend = legend;
+         _legend = legendaryHero;
          _experience = experience;
-         Name = $"Leadership: {legend.Name}";
-         Description = $"{legend.Name} immediately gains {experience} experience.";
-         IconPath = BlzGetAbilityIcon(legend.UnitType);
+         Name = $"Leadership: {legendaryHero.Name}";
+         Description = $"{legendaryHero.Name} immediately gains {experience} experience.";
+         IconPath = BlzGetAbilityIcon(legendaryHero.UnitType);
       }
 
       /// <inheritdoc />

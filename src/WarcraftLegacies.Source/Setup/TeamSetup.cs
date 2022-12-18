@@ -5,9 +5,11 @@ namespace WarcraftLegacies.Source.Setup
   public static class TeamSetup{
     public static Team Legion { get; private set; }
     public static Team Alliance { get; private set; }
+    public static Team NorthAlliance { get; private set; }
+    public static Team SouthAlliance { get; private set; }
     public static Team Horde { get; private set; }
     public static Team NightElves { get; private set; }
-    public static Team Naga { get; private set; }
+    public static Team Illidari { get; private set; }
     public static Team Gilneas { get; private set; }
     public static Team ScarletCrusade { get; private set; }
     public static Team Forsaken { get; private set; }
@@ -22,7 +24,19 @@ namespace WarcraftLegacies.Source.Setup
         VictoryMusic = "HeroicVictory"
       };
       FactionManager.Register(Alliance);
-      
+
+      NorthAlliance = new Team("North Alliance")
+      {
+        VictoryMusic = "HeroicVictory"
+      };
+      FactionManager.Register(NorthAlliance);
+
+      SouthAlliance = new Team("South Alliance")
+      {
+        VictoryMusic = "HeroicVictory"
+      };
+      FactionManager.Register(SouthAlliance);
+
       Legion = new Team("Burning Legion")
       {
         VictoryMusic = "DarkVictory"
@@ -41,11 +55,11 @@ namespace WarcraftLegacies.Source.Setup
       };
       FactionManager.Register(NightElves);
 
-      Naga = new Team("Illidari")
+      Illidari = new Team("Illidari")
       {
         VictoryMusic = "DarkVictory"
       };
-      FactionManager.Register(Naga);
+      FactionManager.Register(Illidari);
       
       Gilneas = new Team("Gilneas")
       {

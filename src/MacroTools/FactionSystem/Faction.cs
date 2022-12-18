@@ -2,9 +2,9 @@ using System;
 using System.Collections.Generic;
 using MacroTools.Augments;
 using MacroTools.Extensions;
+using MacroTools.LegendSystem;
 using MacroTools.QuestSystem;
 using MacroTools.QuestSystem.UtilityStructs;
-using MacroTools.Wrappers;
 using WCSharp.Events;
 using static War3Api.Common;
 
@@ -502,7 +502,7 @@ namespace MacroTools.FactionSystem
       SetPlayerState(Player, PLAYER_STATE_RESOURCE_LUMBER, 0);
 
       //Give all units to Neutral Victim
-      foreach (var unit in new GroupWrapper().EnumUnitsOfPlayer(Player).EmptyToList())
+      foreach (var unit in CreateGroup().EnumUnitsOfPlayer(Player).EmptyToList())
       {
         var tempUnitType = UnitType.GetFromHandle(unit);
         if (!UnitAlive(unit))
@@ -526,7 +526,7 @@ namespace MacroTools.FactionSystem
       if (Player?.GetTeam() == null) return;
       foreach (var ally in playersToDistributeTo)
       {
-        var allyHeroes = new GroupWrapper().EnumUnitsOfPlayer(ally).EmptyToList()
+        var allyHeroes = CreateGroup().EnumUnitsOfPlayer(ally).EmptyToList()
           .FindAll(unit => IsUnitType(unit, UNIT_TYPE_HERO));
         foreach (var hero in allyHeroes)
           AddHeroXP(hero, R2I(_xp / (Player.GetTeam().Size - 1) / allyHeroes.Count * ExperienceTransferMultiplier), true);
@@ -550,22 +550,19 @@ namespace MacroTools.FactionSystem
     private void DistributeUnits(IReadOnlyList<player> playersToDistributeTo)
     {
       if (Player?.GetTeam() == null) return;
-      var playerUnits = new GroupWrapper().EnumUnitsOfPlayer(Player).EmptyToList();
+      var playerUnits = CreateGroup().EnumUnitsOfPlayer(Player).EmptyToList();
 
       foreach (var unit in playerUnits)
       {
         var loopUnitType = UnitType.GetFromHandle(unit);
-        //Refund gold and experience of heroes
         if (IsUnitType(unit, UNIT_TYPE_HERO))
         {
           Player?.AddGold(HeroCost);
           _xp += GetHeroXP(unit);
-          //Subtract hero's starting XP from refunded XP
-          if (Legend.GetFromUnit(unit) != null) _xp -= Legend.GetFromUnit(unit)!.StartingXp;
-
+          if (LegendaryHeroManager.GetFromUnit(unit) != null) 
+            _xp -= LegendaryHeroManager.GetFromUnit(unit)!.StartingXp;
           unit.DropAllItems();
           RemoveUnit(unit);
-          //Refund gold and lumber of refundable units
         }
         else if (!IsUnitType(unit, UNIT_TYPE_STRUCTURE))
         {
@@ -574,7 +571,6 @@ namespace MacroTools.FactionSystem
           unit.DropAllItems();
           RemoveUnit(unit);
         }
-        //Transfer the ownership of everything else
         else if (loopUnitType.Meta == false)
         {
           SetUnitOwner(unit,
@@ -598,6 +594,7 @@ namespace MacroTools.FactionSystem
         DistributeUnits(eligiblePlayers);
         DistributeResources(eligiblePlayers);
         DistributeExperience(eligiblePlayers);
+        RemoveGoldMines();
       }
       else
       {

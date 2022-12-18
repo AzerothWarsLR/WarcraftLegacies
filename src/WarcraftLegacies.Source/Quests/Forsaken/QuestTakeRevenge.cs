@@ -16,7 +16,7 @@ namespace WarcraftLegacies.Source.Quests.Forsaken
     {
       AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n0BC"))));
       AddObjective(new ObjectiveLegendNotPermanentlyDead(LegendForsaken.SylvanasUndead));
-      AddObjective(new ObjectiveLegendDead(LegendScourge.LegendLichking));
+      AddObjective(new ObjectiveCapitalDead(LegendScourge.LegendLichking));
     }
 
     protected override string CompletionPopup =>
@@ -26,7 +26,7 @@ namespace WarcraftLegacies.Source.Quests.Forsaken
 
     protected override void OnComplete(Faction completingFaction)
     {
-      unit whichUnit = LegendForsaken.SylvanasUndead.Unit;
+      var whichUnit = LegendForsaken.SylvanasUndead.Unit;
       BlzSetUnitName(whichUnit, "Banshee Queen");
       AddSpecialEffectTarget("war3mapImported\\SoulArmor.mdx", whichUnit, "chest");
       BlzSetUnitWeaponIntegerField(whichUnit, UNIT_WEAPON_IF_ATTACK_ATTACK_TYPE, 0, 5); //Chaos

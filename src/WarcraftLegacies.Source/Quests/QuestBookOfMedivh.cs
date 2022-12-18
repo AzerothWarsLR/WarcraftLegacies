@@ -3,7 +3,6 @@ using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using MacroTools.QuestSystem.UtilityStructs;
-using WarcraftLegacies.Source.Setup;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests
@@ -30,9 +29,9 @@ namespace WarcraftLegacies.Source.Quests
     {
       _isLegion = isLegion;
       _bookOfMedivh = bookOfMedivh;
-      _objectiveWithCompletingUnit = isLegion
-        ? new ObjectiveAnyUnitInRect(Regions.Book_Retrieval, "the Book of Medivh's pedestal", true)
-        : new ObjectiveHeroWithLevelInRect(12, Regions.Book_Retrieval, "the Book of Medivh's pedestal");
+      // _objectiveWithCompletingUnit = isLegion
+      //   ? new ObjectiveAnyUnitInRect(Regions.Book_Retrieval, "the Book of Medivh's pedestal", true)
+      //   : new ObjectiveHeroWithLevelInRect(12, Regions.Book_Retrieval, "the Book of Medivh's pedestal");
       if (_objectiveWithCompletingUnit is Objective objective) 
         AddObjective(objective);
       AddObjective(new ObjectiveNoOtherPlayerGetsArtifact(bookOfMedivh));

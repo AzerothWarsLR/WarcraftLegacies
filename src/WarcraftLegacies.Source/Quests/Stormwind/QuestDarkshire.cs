@@ -27,11 +27,11 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
 
     private static void GrantDarkshire(player whichPlayer)
     {
-      group tempGroup = CreateGroup();
+      var tempGroup = CreateGroup();
 
       //Transfer all Neutral Passive units in Darkshire
       GroupEnumUnitsInRect(tempGroup, Regions.DarkshireUnlock.Rect, null);
-      unit u = FirstOfGroup(tempGroup);
+      var u = FirstOfGroup(tempGroup);
       while (true)
       {
         if (u == null) break;

@@ -4,7 +4,6 @@ using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using MacroTools.QuestSystem.UtilityStructs;
-using MacroTools.Wrappers;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
@@ -22,12 +21,14 @@ namespace WarcraftLegacies.Source.Quests.Goblin
       AddObjective(new ObjectiveExpire(1522));
       AddObjective(new ObjectiveSelfExists());
       ResearchId = FourCC("R07E");
-      foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())
+      foreach (var unit in CreateGroup().EnumUnitsInRect(rescueRect).EmptyToList())
         if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))
         {
           SetUnitInvulnerable(unit, true);
           _rescueUnits.Add(unit);
         }
+
+      Required = true;
     }
 
     protected override string CompletionPopup =>

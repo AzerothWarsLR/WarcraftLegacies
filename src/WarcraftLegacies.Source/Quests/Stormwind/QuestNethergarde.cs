@@ -14,7 +14,7 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
       "The nethergarde fort is holding down the Dark Portal, they will need to be reinforced soon!",
       "ReplaceableTextures\\CommandButtons\\BTNNobbyMansionBarracks.blp")
     {
-      AddObjective(new ObjectiveLegendInRect(LegendStormwind.LegendVarian, Regions.NethergardeUnlock, "Nethergarde"));
+      AddObjective(new ObjectiveLegendInRect(LegendStormwind.Varian, Regions.NethergardeUnlock, "Nethergarde"));
       AddObjective(new ObjectiveExpire(1440));
       AddObjective(new ObjectiveSelfExists());
     }
@@ -25,11 +25,11 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
 
     private static void GrantNethergarde(player whichPlayer)
     {
-      group tempGroup = CreateGroup();
+      var tempGroup = CreateGroup();
 
       //Transfer all Neutral Passive units in Nethergarde
       GroupEnumUnitsInRect(tempGroup, Regions.NethergardeUnlock.Rect, null);
-      unit u = FirstOfGroup(tempGroup);
+      var u = FirstOfGroup(tempGroup);
       while (true)
       {
         if (u == null) break;

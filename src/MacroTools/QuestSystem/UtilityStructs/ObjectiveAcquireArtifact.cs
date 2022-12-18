@@ -17,16 +17,12 @@ namespace MacroTools.QuestSystem.UtilityStructs
     /// <param name="target">The objective is completed when this artifact is acquired.</param>
     public ObjectiveAcquireArtifact(Artifact target)
     {
-      Description = "Acquire " + GetItemName(target.Item);
+      Description = $"Acquire {GetItemName(target.Item)}";
       _target = target;
       target.PickedUp += (_, _) =>
-      {
         Progress = EligibleFactions.Contains(_target.OwningPlayer) ? QuestProgress.Complete : QuestProgress.Incomplete;
-      };
-      target.Disposed += (_, _) =>
-      {
-        Progress = QuestProgress.Failed;
-      };
+      target.Dropped += (_, _) => Progress = QuestProgress.Incomplete;
+      target.Disposed += (_, _) => Progress = QuestProgress.Failed;
     }
 
     internal override void OnAdd(Faction whichFaction)

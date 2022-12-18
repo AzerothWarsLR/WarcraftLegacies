@@ -4,7 +4,6 @@ using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using MacroTools.QuestSystem.UtilityStructs;
-using MacroTools.Wrappers;
 using WarcraftLegacies.Source.Setup.Legends;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -19,10 +18,10 @@ namespace WarcraftLegacies.Source.Quests.Ironforge
       "A vile group of Murloc is terrorizing Thelsamar. Destroy them!",
       "ReplaceableTextures\\CommandButtons\\BTNMurlocNightCrawler.blp")
     {
-      AddObjective(new ObjectiveLegendDead(LegendNeutral.MurlocSorc));
+      AddObjective(new ObjectiveUnitIsDead(preplacedUnitSystem.GetUnit(FourCC("N089"))));
       AddObjective(new ObjectiveExpire(420));
       AddObjective(new ObjectiveSelfExists());
-      foreach (var unit in new GroupWrapper().EnumUnitsInRect(rescueRect).EmptyToList())
+      foreach (var unit in CreateGroup().EnumUnitsInRect(rescueRect).EmptyToList())
         if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))
         {
           SetUnitInvulnerable(unit, true);

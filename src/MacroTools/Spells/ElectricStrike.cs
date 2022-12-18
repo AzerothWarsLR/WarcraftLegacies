@@ -1,6 +1,6 @@
 using System;
+using MacroTools.Extensions;
 using MacroTools.SpellSystem;
-using MacroTools.Wrappers;
 using WCSharp.Effects;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -53,12 +53,12 @@ namespace MacroTools.Spells
       try
       {
         EffectSystem.Add(AddSpecialEffect(Effect, targetPoint.X, targetPoint.Y));
-        foreach (var unit in new GroupWrapper().EnumUnitsInRange(targetPoint, Radius).EmptyToList())
+        foreach (var unit in CreateGroup().EnumUnitsInRange(targetPoint, Radius).EmptyToList())
         {
           if (IsUnitType(unit, UNIT_TYPE_STRUCTURE) || !UnitAlive(unit)) 
             continue;
-          DummyCast.DummyCastUnit(GetOwningPlayer(caster), StunId, StunOrder, 1, unit);
-          DummyCast.DummyCastUnit(GetOwningPlayer(caster), PurgeId, PurgeOrder, 1, unit);
+          DummyCast.DummyCastUnit(caster, StunId, StunOrder, 1, unit);
+          DummyCast.DummyCastUnit(caster, PurgeId, PurgeOrder, 1, unit);
         }
       }
       catch (Exception ex)

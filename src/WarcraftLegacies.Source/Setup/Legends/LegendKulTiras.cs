@@ -1,48 +1,48 @@
-using MacroTools;
+﻿using MacroTools;
 using MacroTools.Extensions;
-using MacroTools.FactionSystem;
+using MacroTools.LegendSystem;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup.Legends
 {
   public static class LegendKultiras
   {
-    public static Legend LegendAdmiral { get; private set; }
-    public static Legend LegendLucille { get; private set; }
-    public static Legend LegendKatherine { get; private set; }
-    public static Legend LegendBoralus { get; private set; }
-    public static Legend Flagship { get; private set; }
+    public static LegendaryHero LegendAdmiral { get; private set; }
+    public static LegendaryHero LegendLucille { get; private set; }
+    public static LegendaryHero LegendKatherine { get; private set; }
+    public static Capital LegendBoralus { get; private set; }
+    public static LegendaryHero Flagship { get; private set; }
 
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
-      LegendAdmiral = new Legend
+      LegendAdmiral = new LegendaryHero("Daelin Proudmoore")
       {
         UnitType = FourCC("Hapm")
       };
-      Legend.Register(LegendAdmiral);
+      LegendaryHeroManager.Register(LegendAdmiral);
 
-      LegendLucille = new Legend
+      LegendLucille = new LegendaryHero("Lucille Waycrest")
       {
         UnitType = FourCC("E016"),
         StartingXp = 2800
       };
-      Legend.Register(LegendLucille);
+      LegendaryHeroManager.Register(LegendLucille);
 
-      LegendKatherine = new Legend
+      LegendKatherine = new LegendaryHero("Katherine Proudmoore")
       {
         UnitType = FourCC("H05L"),
         StartingXp = 1200
       };
-      Legend.Register(LegendKatherine);
+      LegendaryHeroManager.Register(LegendKatherine);
 
-      LegendBoralus = new Legend
+      LegendBoralus = new Capital
       {
         Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_H046_BORALUS_KEEP_KUL_TIRAS),
         DeathMessage = "Boralus Keep has fallen" //Todo: pointless flavour
       };
-      Legend.Register(LegendBoralus);
+      CapitalManager.Register(LegendBoralus);
 
-      Flagship = new Legend
+      Flagship = new LegendaryHero("Flagship")
       {
         Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_H05V_PROUDMOORE_FLAGSHIP_KUL_TIRAS)
       };

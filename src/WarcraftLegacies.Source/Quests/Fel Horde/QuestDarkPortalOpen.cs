@@ -2,16 +2,11 @@
 using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using MacroTools.QuestSystem.UtilityStructs;
-using WarcraftLegacies.Source.Quests.Forsaken;
-using WarcraftLegacies.Source.Setup.Legends;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Fel_Horde
 {
-  /// <summary>
-  /// Destroy <see cref="LegendDraenei.LegendExodarship"/> to be able to use the dark portal
-  /// </summary>
-  public class QuestDarkPortalOpen : QuestData
+  public sealed class QuestDarkPortalOpen : QuestData
   {
     private readonly unit _portalController;
     private readonly unit _innerWaygate1;
@@ -22,7 +17,7 @@ namespace WarcraftLegacies.Source.Quests.Fel_Horde
     private readonly unit _outerWaygate3;
 
     /// <summary>
-    /// Initializes a new instance of the class <see cref="QuestUndercity"/>.
+    /// Initializes a new instance of the class <see cref="QuestDarkPortalOpen"/>.
     /// </summary>
     /// <param name="portalController"></param>
     /// <param name="innerWaygate1">A Waygate inside outland, next to the Dark Portal.</param>
@@ -32,7 +27,7 @@ namespace WarcraftLegacies.Source.Quests.Fel_Horde
     /// <param name="outerWaygate2">A Waygate outside outland, next to the Dark Portal.</param>
     /// <param name="outerWaygate3">A Waygate outside outland, next to the Dark Portal.</param>
     public QuestDarkPortalOpen(unit portalController, unit innerWaygate1, unit innerWaygate2, unit innerWaygate3, unit outerWaygate1, unit outerWaygate2, unit outerWaygate3)
-      : base("The Dark Portal Opens", "The Dark Portal has been opened", "ReplaceableTextures\\CommandButtons\\BTNDarkPortal.blp")
+      : base("The Dark Portal Opens", "The Dark Portal has been opened.", "ReplaceableTextures\\CommandButtons\\BTNDarkPortal.blp")
     {
       _portalController = portalController;
       _innerWaygate1 = innerWaygate1;
@@ -41,9 +36,9 @@ namespace WarcraftLegacies.Source.Quests.Fel_Horde
       _outerWaygate1 = outerWaygate1.Show(false);
       _outerWaygate2 = outerWaygate2.Show(false);
       _outerWaygate3 = outerWaygate3.Show(false);
-      AddObjective(new ObjectiveTime(6));
+      AddObjective(new ObjectiveTime(600));
       AddObjective(new ObjectiveExpire(785));
-      AddObjective(new ObjectiveLegendDead(LegendDraenei.LegendExodarship));
+      AddObjective(new ObjectiveSelfExists());
       Global = true;
     }
     

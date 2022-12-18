@@ -1,3 +1,4 @@
+using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using MacroTools.QuestSystem.UtilityStructs;
@@ -34,7 +35,7 @@ namespace WarcraftLegacies.Source.Quests.Druids
       "ReplaceableTextures\\CommandButtons\\BTNHeroTaurenChieftain.blp")
     {
       if (LegendFrostwolf.LegendThunderbluff != null)
-        AddObjective(new ObjectiveLegendDead(LegendFrostwolf.LegendThunderbluff));
+        AddObjective(new ObjectiveCapitalDead(LegendFrostwolf.LegendThunderbluff));
     }
   }
 }

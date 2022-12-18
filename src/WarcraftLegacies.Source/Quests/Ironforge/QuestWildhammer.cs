@@ -15,8 +15,8 @@ namespace WarcraftLegacies.Source.Quests.Ironforge
       "The Wildhammer dwarves roam freely over the peaks of the Hinterlands. Defeating their mortal enemy, the Dragonmaw clan, might earn their cooperation.",
       "ReplaceableTextures\\CommandButtons\\BTNHeroGriffonWarrior.blp")
     {
-      AddObjective(new ObjectiveLegendDead(LegendDragonmaw.DragonmawPort));
-      AddObjective(new ObjectiveControlLegend(LegendNeutral.GrimBatol, false));
+      AddObjective(new ObjectiveCapitalDead(LegendDragonmaw.DragonmawPort));
+      AddObjective(new ObjectiveControlCapital(LegendNeutral.GrimBatol, false));
       ResearchId = FourCC("R01C");
     }
 
@@ -29,13 +29,13 @@ namespace WarcraftLegacies.Source.Quests.Ironforge
 
     protected override void OnComplete(Faction completingFaction)
     {
-      group tempGroup = CreateGroup();
+      var tempGroup = CreateGroup();
 
       //Transfer all Neutral Passive units in region to Ironforge
       GroupEnumUnitsInRect(tempGroup, Regions.Aerie_Peak.Rect, null);
       while (true)
       {
-        unit u = FirstOfGroup(tempGroup);
+        var u = FirstOfGroup(tempGroup);
         if (u == null) break;
         if (GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_PASSIVE)) u.Rescue(completingFaction.Player);
         GroupRemoveUnit(tempGroup, u);

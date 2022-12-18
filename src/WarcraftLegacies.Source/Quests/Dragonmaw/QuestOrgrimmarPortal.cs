@@ -30,7 +30,7 @@ namespace WarcraftLegacies.Source.Quests.Dragonmaw
       _waygateDragonmawPort = waygateDragonmawPort;
 
       AddObjective(new ObjectiveCompleteQuest(prequel));
-      AddObjective(new ObjectiveControlLegend(LegendNeutral.GrimBatol, false));
+      AddObjective(new ObjectiveControlCapital(LegendNeutral.GrimBatol, false));
       waygateDragonmawPort.Show(false);
       Required = true;
     }

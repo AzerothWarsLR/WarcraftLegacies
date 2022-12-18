@@ -1,4 +1,4 @@
-using MacroTools.FactionSystem;
+﻿using MacroTools.FactionSystem;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup.FactionSetup
@@ -13,9 +13,8 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
         "ReplaceableTextures\\CommandButtons\\BTNEvilIllidan.blp")
       {
         UndefeatedResearch = FourCC("R02L"),
-        StartingGold = 0,
-        StartingLumber = 2500,
-        CinematicMusic = @"war3mapImported\Illidancinematic3.mp3",
+        StartingGold = 150,
+        StartingLumber = 500,
         IntroText = @"You are playing as the banished Empire of Nazjatar|r|r.
 
 You start weak in the middle of the map.
@@ -37,8 +36,9 @@ Once you have collected enough, you can rebuild the great Nazjatar empire and st
       Illidari.ModObjectLimit(FourCC("nntg"), Faction.UNLIMITED); //Tidal Guardian
       Illidari.ModObjectLimit(FourCC("n005"), Faction.UNLIMITED); //Improved Tidal Guardian
       Illidari.ModObjectLimit(FourCC("nmrb"), Faction.UNLIMITED); //Deep Sea Vault
+      Illidari.ModObjectLimit(FourCC("n08W"), Faction.UNLIMITED); //Deep Sea Vault
 
-      Illidari.ModObjectLimit(FourCC("nmpe"), Faction.UNLIMITED); //Mur)gul Slave
+      Illidari.ModObjectLimit(FourCC("nmpe"), Faction.UNLIMITED); //Murgul Slave
       Illidari.ModObjectLimit(FourCC("nmyr"), Faction.UNLIMITED); //Myrmidon
       Illidari.ModObjectLimit(FourCC("nsnp"), Faction.UNLIMITED); //Snap Dragon
       Illidari.ModObjectLimit(FourCC("nnsw"), Faction.UNLIMITED); //Siren
@@ -52,12 +52,14 @@ Once you have collected enough, you can rebuild the great Nazjatar empire and st
       Illidari.ModObjectLimit(FourCC("Hvsh"), 1); //Vashj
       Illidari.ModObjectLimit(FourCC("U00S"), 1); //Najentus
       Illidari.ModObjectLimit(FourCC("Naka"), 1); //Akama
-      Illidari.ModObjectLimit(FourCC("E015"), 1); //Akama
       Illidari.ModObjectLimit(FourCC("Eevi"), 1); //Illidan
 
       Illidari.ModObjectLimit(FourCC("R062"), Faction.UNLIMITED); //Redemption path
       Illidari.ModObjectLimit(FourCC("R063"), Faction.UNLIMITED); //Exile Path
       Illidari.ModObjectLimit(FourCC("R065"), Faction.UNLIMITED); //Madness Path
+
+      Illidari.ModObjectLimit(FourCC("Rnsw"), Faction.UNLIMITED); //Siren Adept Training
+      Illidari.ModObjectLimit(FourCC("R02V"), Faction.UNLIMITED); //Shadowcaster Adept Training
 
       FactionManager.Register(Illidari);
     }

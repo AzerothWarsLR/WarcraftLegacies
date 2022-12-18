@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using MacroTools.Extensions;
 using MacroTools.Libraries;
-using MacroTools.Wrappers;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
@@ -118,7 +118,7 @@ namespace MacroTools
 
     private void ReadAllUnits()
     {
-      foreach (var unit in new GroupWrapper().EnumUnitsInRect(Rectangle.WorldBounds.Rect).EmptyToList())
+      foreach (var unit in CreateGroup().EnumUnitsInRect(Rectangle.WorldBounds.Rect).EmptyToList())
       {
         var unitTypeId = GetUnitTypeId(unit);
         if (!_unitsByTypeId.ContainsKey(unitTypeId)) _unitsByTypeId[unitTypeId] = new List<unit>();

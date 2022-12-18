@@ -1,28 +1,32 @@
-using MacroTools.SpellSystem;
+using MacroTools.Extensions;
 using WCSharp.Events;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.ArtifactBehaviour
 {
-  public class EyeOfSargerasCooldowns
+  /// <summary>
+  /// Eye of Sargeras' abilities go on cooldown when transferring the item between heroes to avoid abuse.
+  /// </summary>
+  public static class EyeOfSargerasCooldowns
   {
-    private static readonly int SpellA = FourCC("A04G");
-    private static readonly int SpellB = FourCC("ACrg");
-    private static readonly int SpellC = FourCC("ACde");
-    private static readonly int SpellD = FourCC("A04B");
+    private const int SpellA = Constants.ABILITY_A04G_INVISIBILITY_EYE_OF_SARGERAS_NEUTRAL_HOSTILE;
+    private const int SpellB = Constants.ABILITY_ACRG_RAIN_OF_FIRE_SPELLBOOK;
+    private const int SpellC = Constants.ABILITY_ACDE_DEVOUR_MAGIC_RAVAGER;
+    private const int SpellD = Constants.ABILITY_A04B_DEMON_CALL_EYE_OF_SARGERAS;
 
     private static void ItemPickup()
     {
-      unit triggerUnit = GetTriggerUnit();
-      SpellHelpers.StartUnitAbilityCooldownFull(triggerUnit, SpellA);
-      SpellHelpers.StartUnitAbilityCooldownFull(triggerUnit, SpellB);
-      SpellHelpers.StartUnitAbilityCooldownFull(triggerUnit, SpellC);
-      SpellHelpers.StartUnitAbilityCooldownFull(triggerUnit, SpellD);
+      GetTriggerUnit()
+        .StartUnitAbilityCooldownFull(SpellA)
+        .StartUnitAbilityCooldownFull(SpellB)
+        .StartUnitAbilityCooldownFull(SpellC)
+        .StartUnitAbilityCooldownFull(SpellD);
     }
 
-    public static void Setup()
-    {
-      PlayerUnitEvents.Register(UnitTypeEvent.PicksUpItem, ItemPickup, FourCC("I003"));
-    }
+    /// <summary>
+    /// Sets up <see cref="EyeOfSargerasCooldowns"/>.
+    /// </summary>
+    public static void Setup() =>
+      PlayerUnitEvents.Register(ItemTypeEvent.IsPickedUp, ItemPickup, Constants.ITEM_I003_EYE_OF_SARGERAS);
   }
 }

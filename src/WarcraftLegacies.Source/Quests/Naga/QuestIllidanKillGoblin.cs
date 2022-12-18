@@ -12,8 +12,8 @@ namespace WarcraftLegacies.Source.Quests.Naga
       "The Goblins have been expanding aggressively on the sea. Destroying their trade hub would please the Deep Sea Lord, Naj'entus",
       "ReplaceableTextures\\CommandButtons\\BTNLordNaj.blp")
     {
-      AddObjective(new ObjectiveLegendDead(LegendGoblin.KezanTradingCenter));
-      ResearchId = FourCC("R08W");
+      AddObjective(new ObjectiveCapitalDead(LegendGoblin.KezanTradingCenter));
+      ResearchId = Constants.UPGRADE_R08W_QUEST_COMPLETED_CLEAN_SEA;
     }
 
     protected override string CompletionPopup =>

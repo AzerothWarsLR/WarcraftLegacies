@@ -1,4 +1,4 @@
-using MacroTools.Extensions;
+﻿using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using MacroTools.QuestSystem.UtilityStructs;
@@ -18,16 +18,14 @@ namespace WarcraftLegacies.Source.Quests.Draenei
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestShipArgus"/> class.
     /// </summary>
-    /// <param name="prerequisite">This quest has to be completed first.</param>
     /// <param name="outlandToArgusWaygate">Starts hidden, and gets enabled as a waygate when the quest is complete.</param>
     /// <param name="argusToOutlandWaygate">Starts hidden, and gets enabled as a waygate when the quest is complete.</param>
-    public QuestShipArgus(QuestData prerequisite, unit outlandToArgusWaygate, unit argusToOutlandWaygate) : base("Reconquering Tempest Keep",
+    public QuestShipArgus(unit outlandToArgusWaygate, unit argusToOutlandWaygate) : base("Reconquering Tempest Keep",
       "Tempest Keep still has the power to open a portal Argus, but Velen needs to channel it",
       "ReplaceableTextures\\CommandButtons\\BTNArcaneCastle.blp")
     {
       _outlandToArgusWaygate = outlandToArgusWaygate.Show(false);
       _argusToOutlandWaygate = argusToOutlandWaygate.Show(false);
-      AddObjective(new ObjectiveCompleteQuest(prerequisite));
       AddObjective(new ObjectiveChannelRect(Regions.TempestKeepSpawn, "Tempest Keep", LegendDraenei.LegendVelen, 180, 0));
       Global = true;
       Progress = QuestProgress.Undiscovered;

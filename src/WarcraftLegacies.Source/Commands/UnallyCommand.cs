@@ -1,3 +1,4 @@
+using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using static War3Api.Common;
 
@@ -19,7 +20,7 @@ namespace WarcraftLegacies.Source.Commands
 
     public static void Setup()
     {
-      trigger trig = CreateTrigger();
+      var trig = CreateTrigger();
       foreach (var player in WCSharp.Shared.Util.EnumeratePlayers()) TriggerRegisterPlayerChatEvent(trig, player, COMMAND, true);
 
       TriggerAddAction(trig, Actions);

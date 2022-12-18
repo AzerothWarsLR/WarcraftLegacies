@@ -1,4 +1,4 @@
-using MacroTools.FactionSystem;
+﻿using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using MacroTools.QuestSystem.UtilityStructs;
 using WarcraftLegacies.Source.Setup;
@@ -26,15 +26,7 @@ namespace WarcraftLegacies.Source.Quests.Naga
     
     protected override void OnComplete(Faction completingFaction)
     {
-      if (completingFaction.Player?.GetTeam() == TeamSetup.Naga)
-      {
-        completingFaction.Player.SetTeam(TeamSetup.Legion);
-        UnitAddAbility(LegendQuelthalas.LegendKael.Unit, Constants.ABILITY_A0R7_INSTILL_RAGE_YOGG);
-      }
-
-      if (FelHordeSetup.FelHorde.Player?.GetTeam() == TeamSetup.Naga)
-        FelHordeSetup.FelHorde.Player?.SetTeam(TeamSetup.Legion);
-      IllidariSetup.Illidari.Player?.SetTeam(TeamSetup.Legion);
+     
     }
   }
 }

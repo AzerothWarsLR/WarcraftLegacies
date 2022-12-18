@@ -19,14 +19,14 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
           {
             StartingGold = 150,
             StartingLumber = 500,
-            IntroText = @"You are playing as the hardy island |cff008000Kingdom of Kul'tiras|r.
+            IntroText = @"You are playing as the maritime human kingdom |cff008000Kingdom of Kul'tiras|r.
 
-You start in the Balor islands, but you must move quickly to gain control your capital and the Gold Mines on Kul'tiras island. 
+You start on Balor island, but you must move quickly. Viscious foes are threatening the islands.
 
-The Zandalari Trolls mounting an attack from the South so be ready, the fight will be bloody.
+Unite the Admiralty of Kul'Tiras by eliminating these foes and seizing control of your territory.
 
-Once you have conquered the Zandalari Empire, set sail to help your allies."
-          };
+Once you have established your kingdom, set sail to help your allies on the main land in the south."
+        };
 
       //Structures
       Kultiras.ModObjectLimit(FourCC("h062"), Faction.UNLIMITED); //Town Hall

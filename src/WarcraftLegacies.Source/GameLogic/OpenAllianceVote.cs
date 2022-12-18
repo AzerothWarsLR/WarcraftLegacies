@@ -68,10 +68,10 @@ namespace WarcraftLegacies.Source.GameLogic
 
       var yesTrigger = CreateTrigger();
       var noTrigger = CreateTrigger();
-      TriggerRegisterDialogButtonEvent(yesTrigger, YesButton);
       TriggerRegisterDialogButtonEvent(noTrigger, NoButton);
-      TriggerAddAction(yesTrigger, () => { _voteCount++; });
+      TriggerRegisterDialogButtonEvent(yesTrigger, YesButton);
       TriggerAddAction(noTrigger, () => { _voteCount--; });
+      TriggerAddAction(yesTrigger, () => { _voteCount++; });
       DestroyTimer(GetExpiredTimer());
     }
   }

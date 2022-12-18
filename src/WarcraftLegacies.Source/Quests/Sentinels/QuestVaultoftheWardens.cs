@@ -1,41 +1,47 @@
-using MacroTools.ControlPointSystem;
+using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using MacroTools.QuestSystem.UtilityStructs;
+using WarcraftLegacies.Source.Setup.Legends;
 using static MacroTools.Libraries.GeneralHelpers;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Sentinels
 {
+  /// <summary>
+  /// Capture the Vault of the Wardens to learn to train Wardens.
+  /// </summary>
   public sealed class QuestVaultoftheWardens : QuestData
   {
-    private static readonly int WardenId = FourCC("h045");
+    private const int WardenId = Constants.UNIT_H045_WARDEN_SENTINELS;
 
+    /// <inheritdoc />
     public QuestVaultoftheWardens() : base("Vault of the Wardens",
-      "In millenia past, the most vile entities of Azeroth were imprisoned in a facility near Zin-Ashari. The Broken Isles, now raised from the sea floor, would be a strategic location for a newer edition of such a prison.",
+      "In millenia past, the most vile entities of Azeroth were imprisoned in a facility near Zin-Ashari, but it was abandoned when the Broken Isles were shattered. In troubling times such as these, the Wardens could make great use of such a facility.",
       "ReplaceableTextures\\CommandButtons\\BTNReincarnationWarden.blp")
     {
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n05Y"))));
-      AddObjective(new ObjectiveSelfExists());
-      ResearchId = FourCC("R06H");
+      AddObjective(new ObjectiveControlLegend(LegendSentinels.Maiev, false));
+      AddObjective(new ObjectiveControlCapital(LegendSentinels.VaultOfTheWardens, false));
+      ResearchId = Constants.UPGRADE_R06H_QUEST_COMPLETED_VAULT_OF_THE_WARDENS_SENTINELS_JAROD;
     }
 
+    /// <inheritdoc />
     protected override string CompletionPopup =>
-      "With the Broken Isles and the Tomb of Sargeras secured, work has begun on a maximum security prison named the Vault of the Wardens.";
+      "The ancient Vault of the Wardens has been secured. Maiev and her Wardens take up residence within its ancient halls.";
 
+    /// <inheritdoc />
     protected override string RewardDescription =>
-      "The Vault of the Wardens and 4 free Wardens appear at the Broken Isles, and you learn to train Wardens";
+      "4 free Wardens appear at the Broken Isles, and you learn to train Wardens";
 
+    /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)
     {
-      CreateUnit(completingFaction.Player, FourCC("n04G"), Regions.VaultoftheWardens.Center.X,
-        Regions.VaultoftheWardens.Center.Y, 220);
       CreateUnits(completingFaction.Player, WardenId, Regions.VaultoftheWardens.Center.X,
         Regions.VaultoftheWardens.Center.Y, 270, 4);
       completingFaction.Player.DisplayUnitTypeAcquired(WardenId,
         "You can now train Wardens from the Vault of the Wardens, Sentinel Enclaves, and your capitals.");
     }
 
+    /// <inheritdoc />
     protected override void OnAdd(Faction whichFaction)
     {
       whichFaction.ModObjectLimit(WardenId, 8);
