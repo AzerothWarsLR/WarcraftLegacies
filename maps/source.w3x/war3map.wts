@@ -13445,7 +13445,7 @@ Infernal Juggernaut
 }
 
 STRING 2242
-// Units: e019 (Ancient of Wonders), EditorSuffix (Name - Editor Suffix)
+// Units: n04F (Andrassil), EditorSuffix (Name - Editor Suffix)
 {
 (Druids)
 }
@@ -13931,7 +13931,7 @@ Blood Rune - [|cffffcc00Level 3|r]
 }
 
 STRING 2323
-// Units: e010 (Ancient of Creation), EditorSuffix (Name - Editor Suffix)
+// Units: n002 (Nordrassil), EditorSuffix (Name - Editor Suffix)
 {
 (Druids)
 }
@@ -19243,7 +19243,7 @@ Z
 }
 
 STRING 3208
-// Units: H04U (Demigod), EditorSuffix (Name - Editor Suffix)
+// Units: e019 (Ancient of Wonders), EditorSuffix (Name - Editor Suffix)
 {
 (Druids)
 }
@@ -21475,7 +21475,7 @@ Capital Palace
 }
 
 STRING 3580
-// Units: E00K (Archdruid of Darnassus), EditorSuffix (Name - Editor Suffix)
+// Units: e010 (Ancient of Creation), EditorSuffix (Name - Editor Suffix)
 {
 (Druids)
 }
@@ -21595,7 +21595,7 @@ Boat construction facility of the Kaldorei.|n|cfff5962dTrains: |RNight Elf Trans
 }
 
 STRING 3600
-// Units: E00A (Ancient Guardian), EditorSuffix (Name - Editor Suffix)
+// Units: H04U (Demigod), EditorSuffix (Name - Editor Suffix)
 {
 (Druids)
 }
@@ -22477,7 +22477,7 @@ STRING 3746
 }
 
 STRING 3747
-// Units: e01W (Shaladrassil), EditorSuffix (Name - Editor Suffix)
+// Abilities: ANr2 (Reincarnation), EditorSuffix (Editor Suffix)
 {
 (Creep)
 }
@@ -23041,7 +23041,7 @@ Revive Lich King
 }
 
 STRING 3841
-// Abilities: ANr2 (Reincarnation), EditorSuffix (Editor Suffix)
+// Abilities: ACs7 (Feral Spirit), EditorSuffix (Editor Suffix)
 {
 (Creep)
 }
@@ -23977,7 +23977,7 @@ Revive Archdruid
 }
 
 STRING 3997
-// Units: E01I (Ageless One), EditorSuffix (Name - Editor Suffix)
+// Units: E00K (Archdruid of Darnassus), EditorSuffix (Name - Editor Suffix)
 {
 (Druids)
 }
@@ -24061,7 +24061,7 @@ Revive Ancient Guardian
 }
 
 STRING 4011
-// Units: E01J (High Shaman), EditorSuffix (Name - Editor Suffix)
+// Units: E00A (Ancient Guardian), EditorSuffix (Name - Editor Suffix)
 {
 (Druids)
 }
@@ -24415,7 +24415,7 @@ F
 }
 
 STRING 4070
-// Abilities: A00N (Emerald Flames), EditorSuffix (Editor Suffix)
+// Units: E01I (Ageless One), EditorSuffix (Name - Editor Suffix)
 {
 (Druids)
 }
@@ -24667,7 +24667,7 @@ A
 }
 
 STRING 4112
-// Upgrades: Redt (Druid of the Talon Adept Training,Druid of the Talon Master Training), EditorSuffix (Editor Suffix)
+// Units: E01J (High Shaman), EditorSuffix (Name - Editor Suffix)
 {
 (Druids)
 }
@@ -26517,6 +26517,24 @@ STRING 4420
 // Destructibles: B015 (Stone Ramp Zul), Name (Name)
 {
 Stone Ramp Zul
+}
+
+STRING 4421
+// Upgrades: R047 (Marksmanship), EditorSuffix (Editor Suffix)
+{
+(Druids)
+}
+
+STRING 4422
+// Upgrades: R048 (Marksmanship), EditorSuffix (Editor Suffix)
+{
+(Druids)
+}
+
+STRING 4423
+// Upgrades: R015 (Marksmanship), EditorSuffix (Editor Suffix)
+{
+(Druids)
 }
 
 STRING 4424
@@ -30830,7 +30848,7 @@ W
 }
 
 STRING 5144
-// Upgrades: Redc (Druid of the Claw Adept Training,Druid of the Claw Master Training), EditorSuffix (Editor Suffix)
+// Units: e01W (Shaladrassil), EditorSuffix (Name - Editor Suffix)
 {
 (Druids)
 }
@@ -36363,7 +36381,7 @@ E
 }
 
 STRING 6066
-// Upgrades: R05X (Mark of the Claw), EditorSuffix (Editor Suffix)
+// Abilities: A00N (Emerald Flames), EditorSuffix (Editor Suffix)
 {
 (Druids)
 }
@@ -44129,7 +44147,7 @@ Q
 }
 
 STRING 7358
-// Upgrades: R04E (Well Spring), EditorSuffix (Editor Suffix)
+// Upgrades: Redt (Druid of the Talon Adept Training,Druid of the Talon Master Training), EditorSuffix (Editor Suffix)
 {
 (Druids)
 }
@@ -55817,7 +55835,7 @@ Auberdine Navy
 }
 
 STRING 9306
-// Upgrades: R044 (Chaos), EditorSuffix (Editor Suffix)
+// Upgrades: Redc (Druid of the Claw Adept Training,Druid of the Claw Master Training), EditorSuffix (Editor Suffix)
 {
 (Druids)
 }
@@ -66351,12 +66369,6 @@ STRING 11064
 // Abilities: A05V (Toggle Summoning), Untip (Tooltip - Turn Off)
 {
 Deactivate Summoning
-}
-
-STRING 11065
-// Abilities: ACs7 (Feral Spirit), EditorSuffix (Editor Suffix)
-{
-(Creep)
 }
 
 STRING 11066
@@ -77374,7 +77386,7 @@ Consumes the Pack Kodo to build a Great Hall.
 }
 
 STRING 12901
-// Upgrades: R02G (Corrosive Breath), EditorSuffix (Editor Suffix)
+// Upgrades: R05X (Mark of the Claw), EditorSuffix (Editor Suffix)
 {
 (Druids)
 }
@@ -84916,7 +84928,7 @@ Increases the attack range of Archers and Hippogryph Rider by an additional 100.
 }
 
 STRING 14159
-// Upgrades: R01H (Animal War Training), EditorSuffix (Editor Suffix)
+// Upgrades: R04E (Well Spring), EditorSuffix (Editor Suffix)
 {
 (Druids)
 }
@@ -84952,7 +84964,7 @@ Increases Druids of the Talons' mana capacity, mana regeneration rate, hit point
 }
 
 STRING 14165
-// Upgrades: R013 (Mark of the Claw), EditorSuffix (Editor Suffix)
+// Upgrades: R044 (Chaos), EditorSuffix (Editor Suffix)
 {
 (Druids)
 }
@@ -85534,7 +85546,7 @@ Sentinel exists
 }
 
 STRING 14262
-// Upgrades: R00A (Mark of the Claw), EditorSuffix (Editor Suffix)
+// Upgrades: R02G (Corrosive Breath), EditorSuffix (Editor Suffix)
 {
 (Druids)
 }
@@ -86127,7 +86139,7 @@ Summon Azshara
 }
 
 STRING 14361
-// Upgrades: R002 (Chaos), EditorSuffix (Editor Suffix)
+// Upgrades: R01H (Animal War Training), EditorSuffix (Editor Suffix)
 {
 (Druids)
 }
@@ -86301,7 +86313,7 @@ Transforms Earth Golems into Crystal Golems, increasing their hit points by 500 
 }
 
 STRING 14390
-// Upgrades: R02T (Well Spring), EditorSuffix (Editor Suffix)
+// Upgrades: R013 (Mark of the Claw), EditorSuffix (Editor Suffix)
 {
 (Druids)
 }
@@ -87778,7 +87790,7 @@ Quest Completed: Drak'tharon Keep
 }
 
 STRING 14636
-// Upgrades: R046 (Marksmanship), EditorSuffix (Editor Suffix)
+// Upgrades: R00A (Mark of the Claw), EditorSuffix (Editor Suffix)
 {
 (Druids)
 }
@@ -88834,7 +88846,7 @@ STRING 14811
 }
 
 STRING 14812
-// Upgrades: R047 (Marksmanship), EditorSuffix (Editor Suffix)
+// Upgrades: R002 (Chaos), EditorSuffix (Editor Suffix)
 {
 (Druids)
 }
@@ -89182,7 +89194,7 @@ Constructs the Deeprun Tram, which connects Ironforge and Stormwind.
 }
 
 STRING 14870
-// Upgrades: R048 (Marksmanship), EditorSuffix (Editor Suffix)
+// Upgrades: R02T (Well Spring), EditorSuffix (Editor Suffix)
 {
 (Druids)
 }
@@ -107041,7 +107053,7 @@ Q
 }
 
 STRING 17854
-// Upgrades: R015 (Marksmanship), EditorSuffix (Editor Suffix)
+// Upgrades: R046 (Marksmanship), EditorSuffix (Editor Suffix)
 {
 (Druids)
 }

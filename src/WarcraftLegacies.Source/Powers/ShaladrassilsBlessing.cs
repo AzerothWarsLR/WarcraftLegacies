@@ -36,7 +36,7 @@ namespace WarcraftLegacies.Source.Powers
       _summonedUnitCount = summonedUnitCount;
       _manaCost = manaCost;
       Description =
-        $"When an undamaged Control Point you control takes damage and you control Shaladrassil, consume {_manaCost} mana from {GetUnitName(shaladrassil)} to summon {_summonedUnitCount} {GetObjectName(summonedUnitTypeId)}s to defend the Control Point for {_duration} seconds.";
+        $"When an undamaged Control Point you control takes damage and you control {shaladrassil.GetName()}, consume {_manaCost} mana from {GetUnitName(shaladrassil)} to summon {_summonedUnitCount} {GetObjectName(summonedUnitTypeId)}s to defend the Control Point for {_duration} seconds.";
       Name = $"{GetUnitName(shaladrassil)}'s Blessing";
     }
 
