@@ -26,6 +26,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
     public static Capital FountainOfBlood { get; private set; }
     public static LegendaryHero Vaelastrasz { get; private set; }
     public static Capital Caerdarrow { get; private set; }
+    public static Capital Shaladrassil { get; private set; }
     
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
@@ -160,6 +161,13 @@ namespace WarcraftLegacies.Source.Setup.Legends
         Capturable = true
       };
       CapitalManager.Register(Caerdarrow);
+
+      Shaladrassil = new Capital
+      {
+        Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_E01W_SHALADRASSIL_CREEP),
+        Capturable = true
+      };
+      CapitalManager.Register(Shaladrassil);
     }
   }
 }
