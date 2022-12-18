@@ -26520,19 +26520,19 @@ Stone Ramp Zul
 }
 
 STRING 4421
-// Upgrades: R047 (Marksmanship), EditorSuffix (Editor Suffix)
+// Units: e01W (Shaladrassil), EditorSuffix (Name - Editor Suffix)
 {
 (Druids)
 }
 
 STRING 4422
-// Upgrades: R048 (Marksmanship), EditorSuffix (Editor Suffix)
+// Abilities: A00N (Emerald Flames), EditorSuffix (Editor Suffix)
 {
 (Druids)
 }
 
 STRING 4423
-// Upgrades: R015 (Marksmanship), EditorSuffix (Editor Suffix)
+// Upgrades: Redt (Druid of the Talon Adept Training,Druid of the Talon Master Training), EditorSuffix (Editor Suffix)
 {
 (Druids)
 }
@@ -26679,6 +26679,18 @@ STRING 4447
 // Destructibles: B00F (Northrend tree down), Name (Name)
 {
 Northrend tree down
+}
+
+STRING 4448
+// Doodads: D05X (Dark Iron Aviary), Name (Name)
+{
+Dark Iron Aviary
+}
+
+STRING 4449
+// Doodads: D05Y (Dark Iron Forge), Name (Name)
+{
+Dark Iron Forge
 }
 
 STRING 4450
@@ -30848,7 +30860,7 @@ W
 }
 
 STRING 5144
-// Units: e01W (Shaladrassil), EditorSuffix (Name - Editor Suffix)
+// Upgrades: Redc (Druid of the Claw Adept Training,Druid of the Claw Master Training), EditorSuffix (Editor Suffix)
 {
 (Druids)
 }
@@ -36381,7 +36393,7 @@ E
 }
 
 STRING 6066
-// Abilities: A00N (Emerald Flames), EditorSuffix (Editor Suffix)
+// Upgrades: R05X (Mark of the Claw), EditorSuffix (Editor Suffix)
 {
 (Druids)
 }
@@ -36390,6 +36402,12 @@ STRING 6067
 // Abilities: AHad (Devotion Aura), Tip (Tooltip - Normal)
 {
 Devotion Aura - [|cffffcc00Level 4|r]
+}
+
+STRING 6068
+// Doodads: D05Z (Dark Iron Mystic Forge), Name (Name)
+{
+Dark Iron Mystic Forge
 }
 
 STRING 6069
@@ -44147,7 +44165,7 @@ Q
 }
 
 STRING 7358
-// Upgrades: Redt (Druid of the Talon Adept Training,Druid of the Talon Master Training), EditorSuffix (Editor Suffix)
+// Upgrades: R04E (Well Spring), EditorSuffix (Editor Suffix)
 {
 (Druids)
 }
@@ -55835,7 +55853,7 @@ Auberdine Navy
 }
 
 STRING 9306
-// Upgrades: Redc (Druid of the Claw Adept Training,Druid of the Claw Master Training), EditorSuffix (Editor Suffix)
+// Upgrades: R044 (Chaos), EditorSuffix (Editor Suffix)
 {
 (Druids)
 }
@@ -57482,6 +57500,12 @@ STRING 9580
 // Abilities: A0FV (Board), Ubertip (Tooltip - Normal - Extended)
 {
 The ship orders grappling hooks to be attached to an enemy vessel. Soldiers then board the vessel, this disables the ship temporarily and deals damage to it. |nLasts 20 seconds.
+}
+
+STRING 9581
+// Doodads: D060 (Dark Iron Tavern), Name (Name)
+{
+Dark Iron Tavern
 }
 
 STRING 9582
@@ -59144,6 +59168,18 @@ STRING 9858
 // Units: u025 (Elementalist), Ubertip (Tooltip - Extended)
 {
 Mage warrior of the Draconians.|n|cfff5962dAbilities:|R Blizzard, Frost Armor, Mana Shield|n|n|cff99b4d1Can only train 12.|r|n|cffffcc00Attacks land units.|r
+}
+
+STRING 9859
+// Doodads: D061 (Dark Iron Workshop), Name (Name)
+{
+Dark Iron Workshop
+}
+
+STRING 9860
+// Doodads: D062 (Dark Iron Turret), Name (Name)
+{
+Dark Iron Turret
 }
 
 STRING 9861
@@ -66369,6 +66405,12 @@ STRING 11064
 // Abilities: A05V (Toggle Summoning), Untip (Tooltip - Turn Off)
 {
 Deactivate Summoning
+}
+
+STRING 11065
+// Doodads: D063 (Dark Iron Round Tower), Name (Name)
+{
+Dark Iron Round Tower
 }
 
 STRING 11066
@@ -77386,7 +77428,7 @@ Consumes the Pack Kodo to build a Great Hall.
 }
 
 STRING 12901
-// Upgrades: R05X (Mark of the Claw), EditorSuffix (Editor Suffix)
+// Upgrades: R02G (Corrosive Breath), EditorSuffix (Editor Suffix)
 {
 (Druids)
 }
@@ -82671,6 +82713,12 @@ STRING 13781
 Concussive shot
 }
 
+STRING 13782
+// Doodads: D065 (Dark Iron Square Tower), Name (Name)
+{
+Dark Iron Square Tower
+}
+
 STRING 13783
 // Upgrades: R02L (Chaos), Name (Name)
 {
@@ -84928,7 +84976,7 @@ Increases the attack range of Archers and Hippogryph Rider by an additional 100.
 }
 
 STRING 14159
-// Upgrades: R04E (Well Spring), EditorSuffix (Editor Suffix)
+// Upgrades: R01H (Animal War Training), EditorSuffix (Editor Suffix)
 {
 (Druids)
 }
@@ -84964,7 +85012,7 @@ Increases Druids of the Talons' mana capacity, mana regeneration rate, hit point
 }
 
 STRING 14165
-// Upgrades: R044 (Chaos), EditorSuffix (Editor Suffix)
+// Upgrades: R013 (Mark of the Claw), EditorSuffix (Editor Suffix)
 {
 (Druids)
 }
@@ -85546,7 +85594,7 @@ Sentinel exists
 }
 
 STRING 14262
-// Upgrades: R02G (Corrosive Breath), EditorSuffix (Editor Suffix)
+// Upgrades: R00A (Mark of the Claw), EditorSuffix (Editor Suffix)
 {
 (Druids)
 }
@@ -86139,7 +86187,7 @@ Summon Azshara
 }
 
 STRING 14361
-// Upgrades: R01H (Animal War Training), EditorSuffix (Editor Suffix)
+// Upgrades: R002 (Chaos), EditorSuffix (Editor Suffix)
 {
 (Druids)
 }
@@ -86313,7 +86361,7 @@ Transforms Earth Golems into Crystal Golems, increasing their hit points by 500 
 }
 
 STRING 14390
-// Upgrades: R013 (Mark of the Claw), EditorSuffix (Editor Suffix)
+// Upgrades: R02T (Well Spring), EditorSuffix (Editor Suffix)
 {
 (Druids)
 }
@@ -87790,7 +87838,7 @@ Quest Completed: Drak'tharon Keep
 }
 
 STRING 14636
-// Upgrades: R00A (Mark of the Claw), EditorSuffix (Editor Suffix)
+// Upgrades: R046 (Marksmanship), EditorSuffix (Editor Suffix)
 {
 (Druids)
 }
@@ -88846,7 +88894,7 @@ STRING 14811
 }
 
 STRING 14812
-// Upgrades: R002 (Chaos), EditorSuffix (Editor Suffix)
+// Upgrades: R047 (Marksmanship), EditorSuffix (Editor Suffix)
 {
 (Druids)
 }
@@ -89194,7 +89242,7 @@ Constructs the Deeprun Tram, which connects Ironforge and Stormwind.
 }
 
 STRING 14870
-// Upgrades: R02T (Well Spring), EditorSuffix (Editor Suffix)
+// Upgrades: R048 (Marksmanship), EditorSuffix (Editor Suffix)
 {
 (Druids)
 }
@@ -93998,6 +94046,12 @@ STRING 15677
 // Abilities: A0EZ (Mind Flay), Ubertip (Tooltip - Normal - Extended)
 {
 Inflicts a curse upon the target unit, causing it to lose 10 hit points and 50 mana per second for the next <A0EZ,Dur1> seconds.
+}
+
+STRING 15678
+// Doodads: D066 (Chains Bent), Name (Name)
+{
+Chains Bent
 }
 
 STRING 15679
@@ -103055,6 +103109,12 @@ STRING 17187
 Research Improved Slow
 }
 
+STRING 17188
+// Doodads: D067 (Dark Iron Building 1), Name (Name)
+{
+Dark Iron Building 1
+}
+
 STRING 17189
 // Units: O01J (The Dark Prophet), Ubertip (Tooltip - Extended)
 {
@@ -107053,7 +107113,7 @@ Q
 }
 
 STRING 17854
-// Upgrades: R046 (Marksmanship), EditorSuffix (Editor Suffix)
+// Upgrades: R015 (Marksmanship), EditorSuffix (Editor Suffix)
 {
 (Druids)
 }
@@ -110293,6 +110353,12 @@ STRING 18393
 Learn Viral Plague - [|cffffcc00Level %d|r]
 }
 
+STRING 18394
+// Doodads: D069 (Dark Iron Building 2), Name (Name)
+{
+Dark Iron Building 2
+}
+
 STRING 18395
 // Abilities: A0VC (Viral Plague), Tip (Tooltip - Normal)
 {
@@ -110687,6 +110753,12 @@ STRING 18460
 // Upgrades: R08P (Naga Siren Adept Training,Naga Siren Master Training), Name (Name)
 {
 Deepseer Master Training
+}
+
+STRING 18461
+// Doodads: D06A (Dark Iron Building 3), Name (Name)
+{
+Dark Iron Building 3
 }
 
 STRING 18462
@@ -112586,6 +112658,12 @@ STRING 18777
 W
 }
 
+STRING 18778
+// Doodads: D06E (Dark Iron Building 4), Name (Name)
+{
+Dark Iron Building 4
+}
+
 STRING 18779
 // Abilities: A0WZ (Incinerate), EditorSuffix (Editor Suffix)
 {
@@ -114434,6 +114512,12 @@ STRING 19086
 Throws a smoke bomb in the midst of the enemy causing them to have a 100% chance to miss on attacks. Their movement speed is reduced by 5%.Lasts 4 seconds on units, and 2 seconds on heroes.
 }
 
+STRING 19087
+// Doodads: D06F (Dark Iron Building 5), Name (Name)
+{
+Dark Iron Building 5
+}
+
 STRING 19088
 // Upgrades: R08Y (Chaos), Name (Name)
 {
@@ -114594,6 +114678,12 @@ STRING 19114
 // Upgrades: R097 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 C
+}
+
+STRING 19115
+// Doodads: D06G (Dark Iron Building 6), Name (Name)
+{
+Dark Iron Building 6
 }
 
 STRING 19116
@@ -115026,6 +115116,18 @@ STRING 19187
 // Upgrades: R00K (Animal War Training), Hotkey (Hotkey)
 {
 D
+}
+
+STRING 19188
+// Doodads: D06H (Needle Dark), Name (Name)
+{
+Needle Dark
+}
+
+STRING 19189
+// Doodads: D06I (Statue Dwarf 45), Name (Name)
+{
+Statue Dwarf 45
 }
 
 STRING 19190
