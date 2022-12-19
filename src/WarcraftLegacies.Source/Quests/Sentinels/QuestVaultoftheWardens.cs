@@ -21,6 +21,7 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
     {
       AddObjective(new ObjectiveChannelRect(Regions.VaultoftheWardens, "Vault of the Wardens", LegendSentinels.Maiev,
         120, 90));
+      AddObjective(new ObjectiveSelfExists());
       ResearchId = Constants.UPGRADE_R06H_QUEST_COMPLETED_VAULT_OF_THE_WARDENS_SENTINELS_JAROD;
     }
 
