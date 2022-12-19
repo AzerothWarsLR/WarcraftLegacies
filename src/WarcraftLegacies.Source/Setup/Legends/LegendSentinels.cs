@@ -90,8 +90,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
 
       VaultOfTheWardens = new Capital
       {
-        Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_N04G_VAULT_OF_THE_WARDENS_SENTINELS),
-        Capturable = true
+        Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_N04G_VAULT_OF_THE_WARDENS_SENTINELS)
       };
     }
   }
