@@ -15,6 +15,12 @@ namespace MacroTools.Extensions
     private const float HeroDropDist = 50; //The radius in which heroes spread out items when they drop them
 
     /// <summary>
+    /// Returns the unit's maximum hit points.
+    /// </summary>
+    public static int GetMaximumHitPoints(this unit whichUnit) => BlzGetUnitMaxHP(whichUnit);
+
+
+    /// <summary>
     /// Sets the unit's scaling value.
     /// </summary>
     public static unit SetScale(this unit whichUnit, float scale)

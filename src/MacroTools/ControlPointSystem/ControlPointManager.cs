@@ -68,11 +68,18 @@ namespace MacroTools.ControlPointSystem
       init
       {
         _increaseControlLevelAbilityTypeId = value;
-        PlayerUnitEvents.Register(SpellEvent.Finish, () =>
+        PlayerUnitEvents.Register(SpellEvent.Effect, () =>
         {
-          var controlPoint = _byUnit[GetTriggerUnit()];
-          controlPoint.ControlLevel++;
-        });
+          try
+          {
+            var controlPoint = _byUnit[GetTriggerUnit()];
+            controlPoint.ControlLevel++;
+          }
+          catch (Exception ex)
+          {
+            Console.WriteLine($"Failed to execute {GetObjectName(IncreaseControlLevelAbilityTypeId)}: {ex}.");
+          }
+        }, _increaseControlLevelAbilityTypeId);
       }
     }
     
@@ -219,8 +226,8 @@ namespace MacroTools.ControlPointSystem
           if (defenderUnitTypeId != null)
             controlPoint.Defender.SetSkin(defenderUnitTypeId.Value);
           controlPoint.Unit
-            .SetMaximumHitpoints(MaxHitpoints + controlPoint.ControlLevel * 500)
             .SetScale(2);
+          ScaleHitpointsToControlLevel(controlPoint);
           CreateTrigger()
             .RegisterUnitEvent(controlPoint.Unit, EVENT_UNIT_CHANGE_OWNER)
             .AddAction(() =>
@@ -255,6 +262,15 @@ namespace MacroTools.ControlPointSystem
             controlPoint.ControlLevel < ControlLevelMaximum)
           controlPoint.ControlLevel++;
       };
+    }
+
+    private void ScaleHitpointsToControlLevel(ControlPoint controlPoint)
+    {
+      var maxHitPoints = MaxHitpoints + controlPoint.ControlLevel * 500;
+      var lifePercent = controlPoint.Unit.GetLifePercent();
+      controlPoint.Unit
+        .SetMaximumHitpoints(maxHitPoints)
+        .SetLifePercent(lifePercent);
     }
   }
 }
