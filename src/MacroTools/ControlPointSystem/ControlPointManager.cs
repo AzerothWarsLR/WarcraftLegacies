@@ -224,7 +224,7 @@ namespace MacroTools.ControlPointSystem
           if (defenderUnitTypeId != null && defenderUnitTypeId != 0)
             controlPoint.Defender.SetSkin(defenderUnitTypeId.Value);
           controlPoint.Unit
-            .SetScale(2);
+            .SetScale(1.2f);
           ScaleHitpointsToControlLevel(controlPoint);
           CreateTrigger()
             .RegisterUnitEvent(controlPoint.Unit, EVENT_UNIT_CHANGE_OWNER)
