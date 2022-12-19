@@ -44,6 +44,8 @@ namespace WarcraftLegacies.Source.Setup.Legends
     /// </summary>
     public static Capital? VaultOfTheWardens { get; private set; }
     
+    public static Capital? BlackrookHold { get; private set; }
+    
     /// <summary>
     /// Sets up all Sentinel <see cref="Legend"/>s.
     /// </summary>
@@ -91,6 +93,11 @@ namespace WarcraftLegacies.Source.Setup.Legends
       VaultOfTheWardens = new Capital
       {
         Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_N04G_VAULT_OF_THE_WARDENS_SENTINELS)
+      };
+      
+      BlackrookHold = new Capital
+      {
+        Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_H03C_BLACK_ROOK_HOLD_NEUTRAL_HOSTILE)
       };
     }
   }

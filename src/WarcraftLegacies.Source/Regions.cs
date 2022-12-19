@@ -11,7 +11,7 @@ public static class Regions
 	public static Rectangle Auberdine_Ships_2 { get; set; } = new Rectangle(-16640f, 7424f, -9504f, 11072f);
 	public static Rectangle Borean_Tundra { get; set; } = new Rectangle(-9152f, 13664f, -4768f, 19008f);
 	public static Rectangle Brill { get; set; } = new Rectangle(8064f, 10144f, 9792f, 11648f);
-	public static Rectangle Broken_Isles { get; set; } = new Rectangle(-2560f, 5088f, 2208f, 8992f);
+	public static Rectangle BrokenIslesA { get; set; } = new Rectangle(-3904f, 2368f, 3648f, 8992f);
 	public static Rectangle CaerDarrowShipyard { get; set; } = new Rectangle(8608f, 2016f, 18720f, 11424f);
 	public static Rectangle Central_Northrend { get; set; } = new Rectangle(-4160f, 15104f, 1952f, 20320f);
 	public static Rectangle Coldarra { get; set; } = new Rectangle(-10656f, 16896f, -8704f, 18272f);
@@ -333,5 +333,6 @@ public static class Regions
 	public static Rectangle TombOfSargerasInteriorF { get; set; } = new Rectangle(-1376f, 10144f, -800f, 10592f);
 	public static Rectangle TombOfSargerasInteriorG { get; set; } = new Rectangle(352f, 9920f, 608f, 10176f);
 	public static Rectangle TombOfSargerasInteriorH { get; set; } = new Rectangle(-1216f, 8768f, -288f, 8992f);
+	public static Rectangle BrokenIslesB { get; set; } = new Rectangle(544f, 8960f, 2144f, 9984f);
 
 }

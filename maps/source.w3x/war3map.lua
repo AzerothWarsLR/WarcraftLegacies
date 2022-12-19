@@ -4,7 +4,7 @@ gg_rct_Auberdine_Ships = nil
 gg_rct_Auberdine_Ships_2 = nil
 gg_rct_Borean_Tundra = nil
 gg_rct_Brill = nil
-gg_rct_Broken_Isles = nil
+gg_rct_BrokenIslesA = nil
 gg_rct_CaerDarrowShipyard = nil
 gg_rct_Central_Northrend = nil
 gg_rct_Coldarra = nil
@@ -548,6 +548,7 @@ gg_snd_DoorOpenRemix = nil
 gg_snd_NuclearLaunchDetected = nil
 gg_snd_IllidansTheme = ""
 gg_trg_Dummy = nil
+gg_rct_BrokenIslesB = nil
 function InitGlobals()
 end
 
@@ -3354,7 +3355,6 @@ u = BlzCreateUnitWithSkin(p, FourCC("nct1"), -13024.0, -4256.0, 270.000, FourCC(
 u = BlzCreateUnitWithSkin(p, FourCC("n08M"), 11072.0, 1920.0, 270.000, FourCC("n08M"))
 u = BlzCreateUnitWithSkin(p, FourCC("n053"), -2432.0, 7936.0, 270.000, FourCC("n053"))
 u = BlzCreateUnitWithSkin(p, FourCC("n05Z"), 2752.0, 8128.0, 270.000, FourCC("n05Z"))
-u = BlzCreateUnitWithSkin(p, FourCC("h03C"), -3424.0, 8480.0, 270.000, FourCC("h03C"))
 u = BlzCreateUnitWithSkin(p, FourCC("n00J"), -64.0, 10560.0, 270.000, FourCC("n00J"))
 u = BlzCreateUnitWithSkin(p, FourCC("h01F"), 9600.0, -15744.0, 270.000, FourCC("h01F"))
 u = BlzCreateUnitWithSkin(p, FourCC("n0AF"), -9152.0, -7296.0, 270.000, FourCC("n0AF"))
@@ -6372,6 +6372,7 @@ u = BlzCreateUnitWithSkin(p, FourCC("h025"), 7104.0, -10176.0, 270.000, FourCC("
 u = BlzCreateUnitWithSkin(p, FourCC("h025"), 7104.0, -9280.0, 270.000, FourCC("h025"))
 u = BlzCreateUnitWithSkin(p, FourCC("h06G"), 20320.0, 9632.0, 270.000, FourCC("h06G"))
 u = BlzCreateUnitWithSkin(p, FourCC("h09D"), 9216.0, -29184.0, 270.000, FourCC("h09D"))
+u = BlzCreateUnitWithSkin(p, FourCC("h03C"), -3424.0, 8480.0, 270.000, FourCC("h03C"))
 u = BlzCreateUnitWithSkin(p, FourCC("h006"), 14080.0, 12608.0, 270.000, FourCC("h006"))
 u = BlzCreateUnitWithSkin(p, FourCC("h03A"), 6528.0, -384.0, 270.000, FourCC("h03A"))
 u = BlzCreateUnitWithSkin(p, FourCC("o06B"), -10944.0, -8320.0, 270.000, FourCC("o06B"))
@@ -7537,7 +7538,7 @@ gg_rct_Auberdine_Ships = Rect(-18272.0, 2848.0, -15936.0, 5312.0)
 gg_rct_Auberdine_Ships_2 = Rect(-16640.0, 7424.0, -9504.0, 11072.0)
 gg_rct_Borean_Tundra = Rect(-9152.0, 13664.0, -4768.0, 19008.0)
 gg_rct_Brill = Rect(8064.0, 10144.0, 9792.0, 11648.0)
-gg_rct_Broken_Isles = Rect(-2560.0, 5088.0, 2208.0, 8992.0)
+gg_rct_BrokenIslesA = Rect(-3904.0, 2368.0, 3648.0, 8992.0)
 gg_rct_CaerDarrowShipyard = Rect(8608.0, 2016.0, 18720.0, 11424.0)
 gg_rct_Central_Northrend = Rect(-4160.0, 15104.0, 1952.0, 20320.0)
 we = AddWeatherEffect(gg_rct_Central_Northrend, FourCC("SNls"))
@@ -7873,6 +7874,7 @@ gg_rct_TombOfSargerasInteriorE = Rect(32.0, 9728.0, 384.0, 10176.0)
 gg_rct_TombOfSargerasInteriorF = Rect(-1376.0, 10144.0, -800.0, 10592.0)
 gg_rct_TombOfSargerasInteriorG = Rect(352.0, 9920.0, 608.0, 10176.0)
 gg_rct_TombOfSargerasInteriorH = Rect(-1216.0, 8768.0, -288.0, 8992.0)
+gg_rct_BrokenIslesB = Rect(544.0, 8960.0, 2144.0, 9984.0)
 end
 
 function CreateCameras()
