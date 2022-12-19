@@ -4894,7 +4894,7 @@ Peasants who support Dalaran war effort in exchange for protection.|n|cfff5962dA
 }
 
 STRING 817
-// Upgrades: R00K (Animal War Training), EditorSuffix (Editor Suffix)
+// Units: h03F (Control Point Defender), EditorSuffix (Name - Editor Suffix)
 {
 (Shared)
 }
@@ -23610,12 +23610,6 @@ STRING 3936
 Thunder Fists - [|cffffcc00Level 3|r]
 }
 
-STRING 3937
-// Abilities: A0A8 (Fortify), Ubertip (Tooltip - Normal - Extended)
-{
-Increases this Control Point's Control Level, granting it increased hit points and attack damage.|n|n|cffffcc00Control Level:|r 0
-}
-
 STRING 3938
 // Units: H017 (Highlord of the Alliance), EditorSuffix (Name - Editor Suffix)
 {
@@ -23638,6 +23632,12 @@ STRING 3941
 // Units: H017 (Highlord of the Alliance), Propernames (Proper Names)
 {
 Bolvar Fordragon
+}
+
+STRING 3942
+// Abilities: A0A8 (Fortify), Ubertip (Tooltip - Normal - Extended)
+{
+Increases this Control Point's Control Level, granting it increased hit points and attack damage.
 }
 
 STRING 3943
@@ -89830,7 +89830,7 @@ Quest Completed: City at Sea
 }
 
 STRING 14974
-// Units: h03F (Control Point Defender), EditorSuffix (Name - Editor Suffix)
+// Abilities: ANms (Mana Shield), EditorSuffix (Editor Suffix)
 {
 (Shared)
 }
@@ -92471,7 +92471,7 @@ Summons 1 immobile deep sea serpent to attack enemies. The ward has 2400 hit poi
 }
 
 STRING 15422
-// Abilities: ANms (Mana Shield), EditorSuffix (Editor Suffix)
+// Upgrades: R00K (Animal War Training), EditorSuffix (Editor Suffix)
 {
 (Shared)
 }
