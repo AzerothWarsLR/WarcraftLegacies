@@ -21,6 +21,7 @@ namespace WarcraftLegacies.Source.Quests
         Regions.BrokenIslesA,
         Regions.BrokenIslesB
       }, "on the Broken Isles"));
+      AddObjective(new NoOtherPlayerGetsCapital(LegendSentinels.BlackrookHold));
     }
 
     /// <inheritdoc />
