@@ -17,11 +17,11 @@ namespace WarcraftLegacies.Source.Setup.Spells
     {
       var illidanVariations = new[]
       {
-        Constants.UNIT_EILL_THE_BETRAYER_NAGA,
+        Constants.UNIT_EILL_THE_BETRAYER_ILLIDARI,
         FourCC("Eidm"),
         Constants.UNIT_EEVM_DEMON_HUNTER_EVIL_MORPHED,
         Constants.UNIT_EILM_DEMON_HUNTER,
-        Constants.UNIT_EEVI_BETRAYER_NAGA,
+        Constants.UNIT_EEVI_BETRAYER_ILLIDARI,
         Constants.UNIT_E00F_DEMON_HUNTER_EVIL_MORPHED_LEVEL_2,
         Constants.UNIT_E00G_DEMON_HUNTER_EVIL_MORPHED_LEVEL_3,
         Constants.UNIT_E00E_DEMON_HUNTER_MORPHED_LEVEL_2,

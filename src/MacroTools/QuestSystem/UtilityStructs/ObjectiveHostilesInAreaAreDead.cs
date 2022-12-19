@@ -22,6 +22,8 @@ namespace MacroTools.QuestSystem.UtilityStructs
       {
         _currentKillCount = value;
         Description = $"All creeps {_areaName} are dead ({_currentKillCount}/{_maxKillCount})";
+        if (_currentKillCount == _maxKillCount) 
+          Progress = QuestProgress.Complete;
       }
     }
     
@@ -39,9 +41,14 @@ namespace MacroTools.QuestSystem.UtilityStructs
           _maxKillCount++;
           CreateTrigger()
             .RegisterUnitEvent(unit, EVENT_UNIT_DEATH)
-            .AddAction(() => CurrentKillCount--);
+            .AddAction(() =>
+            {
+              CurrentKillCount++;
+              DestroyTrigger(GetTriggeringTrigger());
+            });
         }
       }
+      CurrentKillCount = 0;
     }
   }
 }

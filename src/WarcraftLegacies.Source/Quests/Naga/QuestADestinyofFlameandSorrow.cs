@@ -34,7 +34,7 @@ namespace WarcraftLegacies.Source.Quests.Naga
     /// <inheritdoc />
     protected override void OnComplete(Faction whichFaction)
     {
-      LegendNaga.LegendIllidan.Unit?.SetSkin(Constants.UNIT_EEVI_BETRAYER_NAGA);
+      LegendNaga.LegendIllidan.Unit?.SetSkin(Constants.UNIT_EEVI_BETRAYER_ILLIDARI);
     }
   }
 }
