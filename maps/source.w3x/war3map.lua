@@ -2555,6 +2555,16 @@ local life
 u = BlzCreateUnitWithSkin(p, FourCC("e01X"), -20928.0, 10560.0, 270.000, FourCC("e01X"))
 end
 
+function CreateUnitsForPlayer13()
+local p = Player(13)
+local u
+local unitID
+local t
+local life
+
+u = BlzCreateUnitWithSkin(p, FourCC("h05M"), 22273.9, 23737.4, 357.230, FourCC("h05M"))
+end
+
 function CreateBuildingsForPlayer15()
 local p = Player(15)
 local u
@@ -3162,16 +3172,6 @@ u = BlzCreateUnitWithSkin(p, FourCC("o02J"), 5554.5, 2500.4, 292.764, FourCC("o0
 SetUnitAcquireRange(u, 200.0)
 end
 
-function CreateBuildingsForPlayer17()
-local p = Player(17)
-local u
-local unitID
-local t
-local life
-
-u = BlzCreateUnitWithSkin(p, FourCC("o049"), -5024.0, -11744.0, 270.000, FourCC("o049"))
-end
-
 function CreateBuildingsForPlayer18()
 local p = Player(18)
 local u
@@ -3339,11 +3339,7 @@ u = BlzCreateUnitWithSkin(p, FourCC("n05Y"), -2240.0, 5056.0, 270.000, FourCC("n
 u = BlzCreateUnitWithSkin(p, FourCC("n0AJ"), 10752.0, -22720.0, 270.000, FourCC("n0AJ"))
 SetUnitAcquireRange(u, 200.0)
 u = BlzCreateUnitWithSkin(p, FourCC("h00L"), 17216.0, -17216.0, 270.000, FourCC("h00L"))
-u = BlzCreateUnitWithSkin(p, FourCC("h03V"), -11424.0, -26592.0, 270.000, FourCC("h03V"))
-SetUnitAcquireRange(u, 200.0)
 u = BlzCreateUnitWithSkin(p, FourCC("hctw"), 14912.0, -1024.0, 70.000, FourCC("hctw"))
-u = BlzCreateUnitWithSkin(p, FourCC("h03V"), -9504.0, -24736.0, 270.000, FourCC("h03V"))
-SetUnitAcquireRange(u, 200.0)
 u = BlzCreateUnitWithSkin(p, FourCC("o00Q"), 22592.0, 12480.0, 200.000, FourCC("o00Q"))
 u = BlzCreateUnitWithSkin(p, FourCC("h004"), 22144.0, 11968.0, 270.000, FourCC("h004"))
 u = BlzCreateUnitWithSkin(p, FourCC("nfh1"), 21504.0, 12416.0, 270.000, FourCC("nfh1"))
@@ -7530,7 +7526,6 @@ CreateBuildingsForPlayer10()
 CreateBuildingsForPlayer11()
 CreateBuildingsForPlayer13()
 CreateBuildingsForPlayer15()
-CreateBuildingsForPlayer17()
 CreateBuildingsForPlayer18()
 CreateBuildingsForPlayer22()
 CreateBuildingsForPlayer23()
@@ -7548,6 +7543,7 @@ CreateUnitsForPlayer7()
 CreateUnitsForPlayer8()
 CreateUnitsForPlayer10()
 CreateUnitsForPlayer11()
+CreateUnitsForPlayer13()
 CreateUnitsForPlayer15()
 CreateUnitsForPlayer18()
 CreateUnitsForPlayer22()
