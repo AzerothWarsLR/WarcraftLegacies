@@ -1,6 +1,5 @@
 ﻿using MacroTools;
 using MacroTools.FactionSystem;
-using WarcraftLegacies.Source.Mechanics.Frostwolf;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
@@ -19,6 +18,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
         StartingGold = 150,
         StartingLumber = 500,
         CinematicMusic = "SadMystery",
+        ControlPointDefenderTemplateUnitTypeId = Constants.UNIT_OWTW_WATCH_TOWER_FROSTWOLF,
         IntroText = @"You are playing as the honorable |cffff0000Frostwolf Clan|r.
 
 You have been shipwrecked. Gather enough resources to sail South-West to Kalimdor. Until you reach Kalimdor, you will be unable to train any more peons or research new tech. 
@@ -83,9 +83,6 @@ Escort the kodo to Thunderbluff, where you will find a goldmine waiting for you.
       
       Frostwolf.AddGoldMine(preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-1789, -1697)));
       Frostwolf.AddGoldMine(preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-14466, -4703)));
-
-      FrostwolftructurePackingConfig.Setup();
-      FrostwolfStructurePackingInit.Setup();
       
       FactionManager.Register(Frostwolf);
     }

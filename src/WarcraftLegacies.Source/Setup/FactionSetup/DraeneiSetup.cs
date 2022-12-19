@@ -15,6 +15,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
         UndefeatedResearch = FourCC("R06E"),
         StartingGold = 150,
         StartingLumber = 500,
+        ControlPointDefenderTemplateUnitTypeId = Constants.UNIT_U00U_CRYSTAL_PROTECTOR_DRAENEI,
         IntroText = @"You are playing as the exiled |cff000080Draenei|r.
 
 You must evacuate your people from Shattrah and migrate North to Tempest Keep, there you will find a valuable goldmine.

@@ -15574,12 +15574,6 @@ STRING 2596
 Strahnbrad (10gold/min)
 }
 
-STRING 2597
-// Units: n01B (Dalaran (30gold/min)), Name (Name)
-{
-Dalaran (30gold/min)
-}
-
 STRING 2598
 // Units: n01A (Hinterlands (20gold/min)), Name (Name)
 {
@@ -17497,6 +17491,12 @@ STRING 2917
 // Units: h05N (Marksman), Ubertip (Tooltip - Extended)
 {
 One of the few elves to return from Outland, ready again to defend Mankind's gates.|n|cfff5962dAbilities:|R Fire Arrows, Critical strike, Feedback|n|cfff5962dCan Learn:|R Runic Strength|n|n|cffffcc00Attacks land and air units.|r
+}
+
+STRING 2918
+// Units: n01B (Dalaran (50gold/min)), Name (Name)
+{
+Dalaran (50gold/min)
 }
 
 STRING 2919
@@ -42290,12 +42290,6 @@ STRING 7047
 // Abilities: ANhx (Polymorph), Hotkey (Hotkey - Normal)
 {
 W
-}
-
-STRING 7048
-// Abilities: A0OC (Harvest), EditorSuffix (Editor Suffix)
-{
-(goblin Traders)
 }
 
 STRING 7049
@@ -68297,12 +68291,6 @@ STRING 11383
 Causes Saplings to slow the movement speed of nearby enemies by 15%.
 }
 
-STRING 11384
-// Upgrades: R05H (Chaos), Name (Name)
-{
-Quest Completed: Riders on the Storm
-}
-
 STRING 11385
 // Abilities: A04P (Doom), Researchhotkey (Hotkey - Learn)
 {
@@ -86037,12 +86025,6 @@ STRING 14341
 Quest Completed: To the Skies!
 }
 
-STRING 14342
-// Abilities: A0OC (Harvest), Ubertip (Tooltip - Normal - Extended)
-{
-Gather Gold from a Trade Port
-}
-
 STRING 14343
 // Upgrades: R03D (Defend), effect3 (Effect 3)
 {
@@ -92765,7 +92747,7 @@ Play as the fierce |cffd45e19Warsong|r clan. Your role is critical in the foundi
 }
 
 STRING 15471
-// Abilities: A0OC (Harvest), Tip (Tooltip - Normal)
+// Abilities: A03A (Harvest), Tip (Tooltip - Normal)
 {
 Gather
 }
@@ -92807,7 +92789,7 @@ Burning Fists
 }
 
 STRING 15478
-// Abilities: A0OC (Harvest), Untip (Tooltip - Turn Off)
+// Abilities: A03A (Harvest), Untip (Tooltip - Turn Off)
 {
 Return Resources
 }
@@ -93221,15 +93203,9 @@ Return the carried resources.
 }
 
 STRING 15547
-// Abilities: A0OC (Harvest), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A03A (Harvest), Ubertip (Tooltip - Normal - Extended)
 {
 Harvests lumber from trees.
-}
-
-STRING 15548
-// Abilities: A0OC (Harvest), Unubertip (Tooltip - Turn Off - Extended)
-{
-Return the carried resources.
 }
 
 STRING 15549
@@ -96042,7 +96018,7 @@ C
 }
 
 STRING 16020
-// Abilities: A0OC (Harvest), Hotkey (Hotkey - Normal)
+// Abilities: A03A (Harvest), Hotkey (Hotkey - Normal)
 {
 F
 }
@@ -97859,12 +97835,6 @@ STRING 16325
 (troll)
 }
 
-STRING 16326
-// Abilities: A0OC (Harvest), Unubertip (Tooltip - Turn Off - Extended)
-{
-Return the carried resources.
-}
-
 STRING 16327
 // Units: h021 (Watcher), Name (Name)
 {
@@ -97884,7 +97854,7 @@ STRING 16329
 }
 
 STRING 16330
-// Abilities: A0OC (Harvest), Unhotkey (Hotkey - Turn Off)
+// Abilities: A03A (Harvest), Unhotkey (Hotkey - Turn Off)
 {
 F
 }
@@ -97992,7 +97962,7 @@ Build Loa Shrine
 }
 
 STRING 16348
-// Abilities: A03A (Harvest), Hotkey (Hotkey - Normal)
+// Abilities: A0TN (Harvest), Hotkey (Hotkey - Normal)
 {
 F
 }
@@ -98832,19 +98802,19 @@ Returns carried lumber.
 }
 
 STRING 16488
-// Abilities: A03A (Harvest), Tip (Tooltip - Normal)
+// Abilities: A0TN (Harvest), Tip (Tooltip - Normal)
 {
 Gather
 }
 
 STRING 16489
-// Abilities: A03A (Harvest), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A0TN (Harvest), Ubertip (Tooltip - Normal - Extended)
 {
 Harvests lumber from trees.
 }
 
 STRING 16490
-// Abilities: A03A (Harvest), Untip (Tooltip - Turn Off)
+// Abilities: A0TN (Harvest), Untip (Tooltip - Turn Off)
 {
 Return Resources
 }
@@ -98868,7 +98838,7 @@ Returns carried Gold
 }
 
 STRING 16494
-// Abilities: A03A (Harvest), Unhotkey (Hotkey - Turn Off)
+// Abilities: A0TN (Harvest), Unhotkey (Hotkey - Turn Off)
 {
 F
 }
@@ -107737,7 +107707,7 @@ STRING 17974
 }
 
 STRING 17975
-// Abilities: A0TN (Harvest), Hotkey (Hotkey - Normal)
+// Abilities: A0UM (Fishing Net), Hotkey (Hotkey - Normal)
 {
 F
 }
@@ -107766,34 +107736,16 @@ STRING 17979
 Returns carried lumber.
 }
 
-STRING 17980
-// Abilities: A0TN (Harvest), Tip (Tooltip - Normal)
-{
-Gather
-}
-
 STRING 17981
 // Abilities: A0TN (Harvest), Ubertip (Tooltip - Normal - Extended)
 {
 Harvests lumber from trees.
 }
 
-STRING 17982
-// Abilities: A0TN (Harvest), Untip (Tooltip - Turn Off)
-{
-Return Resources
-}
-
 STRING 17983
 // Abilities: A0TN (Harvest), Unubertip (Tooltip - Turn Off - Extended)
 {
 Returns carried lumber.
-}
-
-STRING 17984
-// Abilities: A0TN (Harvest), Ubertip (Tooltip - Normal - Extended)
-{
-Harvests lumber from trees.
 }
 
 STRING 17985
@@ -107803,7 +107755,7 @@ Returns carried lumber.
 }
 
 STRING 17986
-// Abilities: A0TN (Harvest), Unhotkey (Hotkey - Turn Off)
+// Abilities: A0WV (Attribute Bonus), Researchhotkey (Hotkey - Learn)
 {
 F
 }
@@ -108475,7 +108427,7 @@ Gives the War Station the ability to fire multiple arrows at its enemies.
 }
 
 STRING 18098
-// Abilities: A0UM (Fishing Net), Hotkey (Hotkey - Normal)
+// Upgrades: Rorb (Reinforced Defenses), Hotkey (Hotkey)
 {
 F
 }
@@ -108598,12 +108550,6 @@ STRING 18118
 // Buffs/Effects: B02W (), Bufftip (Tooltip)
 {
 Board
-}
-
-STRING 18119
-// Abilities: A0WV (Attribute Bonus), Researchhotkey (Hotkey - Learn)
-{
-F
 }
 
 STRING 18120
@@ -114282,12 +114228,6 @@ STRING 19078
 // Abilities: A0WV (Attribute Bonus), Ubertip (Tooltip - Normal - Extended)
 {
 Gives a total of <Aamk,DataA4> points to Intelligence, and Strength
-}
-
-STRING 19079
-// Upgrades: Rorb (Reinforced Defenses), Hotkey (Hotkey)
-{
-F
 }
 
 STRING 19080

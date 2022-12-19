@@ -11,8 +11,6 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       var ironforge = IronforgeSetup.Ironforge;
       var newQuest = ironforge.AddQuest(new QuestThelsamar(preplacedUnitSystem, Regions.ThelUnlock));
       ironforge.StartingQuest = newQuest;
-      ironforge.AddQuest(new QuestGrimBatolOffensive());
-      ironforge.AddQuest(new QuestTheAccursedCoast());
       ironforge.AddQuest(new QuestDunMorogh(preplacedUnitSystem));
       ironforge.AddQuest(new QuestDominion(Regions.IronforgeAmbient));
       ironforge.AddQuest(new QuestGnomeregan(Regions.Gnomergan, preplacedUnitSystem));

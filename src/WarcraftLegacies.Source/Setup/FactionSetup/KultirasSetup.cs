@@ -19,7 +19,8 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
           {
             StartingGold = 150,
             StartingLumber = 500,
-            IntroText = @"You are playing as the maritime human kingdom |cff008000Kingdom of Kul'tiras|r.
+          ControlPointDefenderTemplateUnitTypeId = Constants.UNIT_H07S_GUARD_TOWER_KUL_TIRAS,
+          IntroText = @"You are playing as the maritime human kingdom |cff008000Kingdom of Kul'tiras|r.
 
 You start on Balor island, but you must move quickly. Viscious foes are threatening the islands.
 

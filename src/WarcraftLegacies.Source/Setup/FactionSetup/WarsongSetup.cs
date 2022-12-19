@@ -18,6 +18,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
         StartingGold = 150,
         StartingLumber = 500,
         CinematicMusic = "DarkAgents",
+        ControlPointDefenderTemplateUnitTypeId = Constants.UNIT_N03E_IRON_KEEP_WARSONG,
         IntroText = @"You are playing as the proud |cffd45e19Warsong clan|r.
 
 You start isolated in the woods of Ashenvale. The Warchief expects a large amount of lumber from you, begin harvesting with your Peons.
