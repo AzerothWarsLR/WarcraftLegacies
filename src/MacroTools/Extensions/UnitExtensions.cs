@@ -35,7 +35,7 @@ namespace MacroTools.Extensions
       return whichUnit;
     }
 
-    public static unit SetDamageBase(this unit whichUnit, int value, int weaponSlot = 0)
+    public static unit SetDamageBase(this unit whichUnit, int value, int weaponSlot = 1)
     {
       BlzSetUnitWeaponIntegerField(whichUnit, UNIT_WEAPON_IF_ATTACK_DAMAGE_BASE, weaponSlot, value);
       return whichUnit;
