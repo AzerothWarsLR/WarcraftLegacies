@@ -4,7 +4,6 @@ using MacroTools.FactionSystem;
 using MacroTools.Wrappers;
 using static War3Api.Common;
 
-
 namespace MacroTools.ControlPointSystem
 {
   /// <summary>
@@ -14,19 +13,6 @@ namespace MacroTools.ControlPointSystem
   /// </summary>
   public sealed class ControlPoint
   {
-    /// <summary>
-    /// The percentage of maximum hitpoints below which the <see cref="ControlPoint"/> will be transferred to the attacker.
-    /// </summary>
-    private const float CaptureThreshold = 0.8f;
-
-    /// <summary>
-    /// All <see cref="ControlPoint"/>s are given this many hitpoints.
-    /// </summary>
-    private const int MaxHitpoints = 10000;
-
-    private static readonly int RegenerationAbility = FourCC("A0UT");
-    private readonly TriggerWrapper _damageTrigger = new();
-    private readonly TriggerWrapper _changeOwnerTrigger = new();
     private int _controlLevel;
 
     /// <summary>
@@ -43,14 +29,6 @@ namespace MacroTools.ControlPointSystem
     {
       Unit = representingUnit;
       Value = value;
-
-      TriggerRegisterUnitEvent(_damageTrigger.Trigger, Unit, EVENT_UNIT_DAMAGED);
-      TriggerRegisterUnitEvent(_changeOwnerTrigger.Trigger, Unit, EVENT_UNIT_CHANGE_OWNER);
-
-      TriggerAddAction(_damageTrigger.Trigger, OnDamaged);
-      TriggerAddAction(_changeOwnerTrigger.Trigger, ChangeOwner);
-      BlzSetUnitMaxHP(Unit, MaxHitpoints);
-      ControlLevel = 20;
     }
 
     /// <summary>
@@ -79,15 +57,18 @@ namespace MacroTools.ControlPointSystem
     public unit Unit { get; }
 
     /// <summary>
-    ///   Fires when the <see cref="ControlPoint" /> changes its owner.
+    ///   Invoked when the <see cref="ControlPoint" /> changes its owner.
     /// </summary>
     public event EventHandler<ControlPointOwnerChangeEventArgs>? ChangedOwner;
 
     /// <summary>
-    /// Invoked when the <see cref="ControlPoint"/> changes owner.
+    /// Invokes the <see cref="ChangedOwner"/> event with the provided arguments..
     /// </summary>
-    public static event EventHandler<ControlPointOwnerChangeEventArgs>? OnControlPointOwnerChange;
-
+    public void SignalOwnershipChange(ControlPointOwnerChangeEventArgs args)
+    {
+      ChangedOwner?.Invoke(this, args);
+    }
+    
     /// <summary>
     /// When <see cref="ControlLevel"/> is higher than 0, the <see cref="ControlPoint"/> becomes a tower with
     /// attack damage and hit points based on its <see cref="ControlLevel"/>.
@@ -127,54 +108,6 @@ namespace MacroTools.ControlPointSystem
             .SetInvulnerable(false)
             .SetMaximumHitpoints(MaxHitpoints);
         }
-      }
-    }
-
-    private void OnDamaged()
-    {
-      try
-      {
-        var attacker = GetEventDamageSource();
-
-        var hitPoints = (GetUnitState(Unit, UNIT_STATE_LIFE) - GetEventDamage()) /
-                        GetUnitState(Unit, UNIT_STATE_MAX_LIFE);
-        if (!(hitPoints < CaptureThreshold)) return;
-        BlzSetEventDamage(0);
-        SetUnitOwner(Unit, GetOwningPlayer(attacker), true);
-        Unit.SetLifePercent(85);
-      }
-      catch (Exception ex)
-      {
-        Console.WriteLine(ex);
-      }
-    }
-
-    private void ChangeOwner()
-    {
-      try
-      {
-        var formerOwner = GetChangingUnitPrevOwner();
-        var newOwner = GetTriggerUnit().OwningPlayer();
-
-        var playerData = PlayerData.ByHandle(formerOwner);
-
-        playerData.ControlPointCount -= 1;
-        playerData.BaseIncome -= Value;
-
-        playerData = PlayerData.ByHandle(newOwner);
-
-        playerData.ControlPointCount += 1;
-        playerData.BaseIncome += Value;
-
-        UnitAddAbility(Unit, RegenerationAbility);
-        SetUnitState(Unit, UNIT_STATE_LIFE, GetUnitState(Unit, UNIT_STATE_MAX_LIFE));
-
-        OnControlPointOwnerChange?.Invoke(this, new ControlPointOwnerChangeEventArgs(this, formerOwner));
-        ChangedOwner?.Invoke(this, new ControlPointOwnerChangeEventArgs(this, formerOwner));
-      }
-      catch (Exception ex)
-      {
-        Console.WriteLine(ex);
       }
     }
   }

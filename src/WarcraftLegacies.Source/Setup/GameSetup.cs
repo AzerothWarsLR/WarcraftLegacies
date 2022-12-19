@@ -27,7 +27,13 @@ namespace WarcraftLegacies.Source.Setup
     /// </summary>
     public static void Setup()
     {
-      ControlPointManager.Instance = new ControlPointManager(Constants.UNIT_H006_IMPROVED_GUARD_TOWER);
+      ControlPointManager.Instance = new ControlPointManager
+      {
+        DefenderUnitTypeId = Constants.UNIT_H006_IMPROVED_GUARD_TOWER,
+        CaptureThreshold = 0.8f,
+        MaxHitpoints = 10000,
+        RegenerationAbility = Constants.ABILITY_A0UT_CP_LIFE_REGEN
+      };
       var preplacedUnitSystem = new PreplacedUnitSystem();
       SoundLibrary.Setup();
       var artifactSetup = new ArtifactSetup(preplacedUnitSystem);

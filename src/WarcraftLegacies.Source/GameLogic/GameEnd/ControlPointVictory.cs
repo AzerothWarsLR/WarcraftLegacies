@@ -59,7 +59,7 @@ namespace WarcraftLegacies.Source.GameLogic.GameEnd
 
     public static void Setup()
     {
-      ControlPoint.OnControlPointOwnerChange += ControlPointOwnerChanges;
+      //ControlPoint.OnControlPointOwnerChange += ControlPointOwnerChanges;
     }
   }
 }

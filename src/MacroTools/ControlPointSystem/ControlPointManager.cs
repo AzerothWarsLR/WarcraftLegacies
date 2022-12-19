@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.Libraries;
 using static War3Api.Common;
@@ -34,16 +35,22 @@ namespace MacroTools.ControlPointSystem
     /// When <see cref="ControlPoint"/>s have a <see cref="ControlPoint.ControlLevel"/> greater than 0, they spawn a
     /// unit with this ID to defend them.
     /// </summary>
-    public int DefenderUnitTypeId { get; }
+    public int DefenderUnitTypeId { get; init; }
 
     /// <summary>
-    /// Initializes a new instance of the <see cref="ControlPointManager"/> class.
-    /// <param name="defenderUnitTypeId">The unit type ID that gets used to defend <see cref="ControlPoint"/>s.</param>
+    /// The percentage of maximum hitpoints below which <see cref="ControlPoint"/>s will be transferred to the attacker.
     /// </summary>
-    public ControlPointManager(int defenderUnitTypeId)
-    {
-      DefenderUnitTypeId = defenderUnitTypeId;
-    }
+    public float CaptureThreshold { get; init; }
+
+    /// <summary>
+    /// All <see cref="ControlPoint"/>s are given this many hitpoints.
+    /// </summary>
+    public int MaxHitpoints { get; init; }
+
+    /// <summary>
+    /// All <see cref="ControlPoint"/>s are given this ability.
+    /// </summary>
+    public int RegenerationAbility { get; init; }
 
     /// <summary>
     ///   How often players receive income.
@@ -87,7 +94,16 @@ namespace MacroTools.ControlPointSystem
       else
         _byUnitType.Add(controlPoint.UnitType, controlPoint);
       
-      controlPoint.Unit.SetLifePercent(80);
+      controlPoint.Unit
+        .SetMaximumHitpoints(MaxHitpoints)
+        .SetLifePercent(80);
+      RegisterIncomeGeneration(controlPoint);
+      RegisterDamageTrigger(controlPoint);
+      RegisterOwnershipChangeTrigger(controlPoint);
+    }
+
+    private static void RegisterIncomeGeneration(ControlPoint controlPoint)
+    {
       controlPoint.Owner.SetBaseIncome(controlPoint.Owner.GetBaseIncome() + controlPoint.Value);
       controlPoint.Owner.SetControlPointCount(controlPoint.Owner.GetControlPointCount() + 1);
       var incomeTimer = CreateTimer();
@@ -102,6 +118,62 @@ namespace MacroTools.ControlPointSystem
             player.AddLumber(lumberPerSecond);
           }
       });
+    }
+    
+    private void RegisterDamageTrigger(ControlPoint controlPoint)
+    {
+      CreateTrigger()
+        .RegisterUnitEvent(controlPoint.Unit, EVENT_UNIT_DEATH)
+        .AddAction(() =>
+        {
+          try
+          {
+            var attacker = GetEventDamageSource();
+
+            var hitPoints = (GetUnitState(controlPoint.Unit, UNIT_STATE_LIFE) - GetEventDamage()) /
+                            GetUnitState(controlPoint.Unit, UNIT_STATE_MAX_LIFE);
+            if (!(hitPoints < CaptureThreshold)) return;
+            BlzSetEventDamage(0);
+            SetUnitOwner(controlPoint.Unit, GetOwningPlayer(attacker), true);
+            controlPoint.Unit.SetLifePercent(85);
+          }
+          catch (Exception ex)
+          {
+            Console.WriteLine(ex);
+          }
+        });
+    }
+    
+    private void RegisterOwnershipChangeTrigger(ControlPoint controlPoint)
+    {
+      CreateTrigger()
+        .RegisterUnitEvent(controlPoint.Unit, EVENT_UNIT_CHANGE_OWNER)
+        .AddAction(() =>
+        {
+          try
+          {
+            var formerOwner = GetChangingUnitPrevOwner();
+            var newOwner = GetTriggerUnit().OwningPlayer();
+
+            var playerData = PlayerData.ByHandle(formerOwner);
+
+            playerData.ControlPointCount -= 1;
+            playerData.BaseIncome -= controlPoint.Value;
+
+            playerData = PlayerData.ByHandle(newOwner);
+
+            playerData.ControlPointCount += 1;
+            playerData.BaseIncome += controlPoint.Value;
+
+            UnitAddAbility(controlPoint.Unit, RegenerationAbility);
+            SetUnitState(controlPoint.Unit, UNIT_STATE_LIFE, GetUnitState(controlPoint.Unit, UNIT_STATE_MAX_LIFE));
+            controlPoint.SignalOwnershipChange(new ControlPointOwnerChangeEventArgs(controlPoint, GetChangingUnitPrevOwner()));
+          }
+          catch (Exception ex)
+          {
+            Console.WriteLine(ex);
+          }
+        });
     }
   }
 }
