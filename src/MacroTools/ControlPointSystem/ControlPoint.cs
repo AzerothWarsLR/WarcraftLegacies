@@ -14,15 +14,23 @@ namespace MacroTools.ControlPointSystem
   /// </summary>
   public sealed class ControlPoint
   {
-    private const float CaptureThreshold = 0.8f; //Percentage of maximum HP; below this, the CP will go to the damager
+    /// <summary>
+    /// The percentage of maximum hitpoints below which the <see cref="ControlPoint"/> will be transferred to the attacker.
+    /// </summary>
+    private const float CaptureThreshold = 0.8f;
     private static readonly int RegenerationAbility = FourCC("A0UT");
 
     private readonly TriggerWrapper _damageTrigger = new();
     private readonly TriggerWrapper _changeOwnerTrigger = new();
 
-    public ControlPoint(unit u, float value)
+    /// <summary>
+    /// Initializes a new instance of the <see cref="ControlPoint"/> class.
+    /// </summary>
+    /// <param name="representingUnit">The unit representing the <see cref="ControlPoint"/>.</param>
+    /// <param name="value">The gold income granted by the <see cref="ControlPoint"/>.</param>
+    public ControlPoint(unit representingUnit, float value)
     {
-      Unit = u;
+      Unit = representingUnit;
       Value = value;
 
       TriggerRegisterUnitEvent(_damageTrigger.Trigger, Unit, EVENT_UNIT_DAMAGED);
@@ -32,6 +40,9 @@ namespace MacroTools.ControlPointSystem
       TriggerAddAction(_changeOwnerTrigger.Trigger, ChangeOwner);
     }
 
+    /// <summary>
+    /// The owner of the <see cref="ControlPoint"/>.
+    /// </summary>
     public player Owner => GetOwningPlayer(Unit);
     
     /// <summary>
@@ -39,10 +50,19 @@ namespace MacroTools.ControlPointSystem
     /// </summary>
     public float Value { get; }
 
+    /// <summary>
+    /// The unit type ID of the <see cref="ControlPoint"/>.
+    /// </summary>
     public int UnitType => GetUnitTypeId(Unit);
 
+    /// <summary>
+    /// A user-friendly name for the <see cref="ControlPoint"/>.
+    /// </summary>
     public string Name => GetUnitName(Unit);
 
+    /// <summary>
+    /// The unit representing the <see cref="ControlPoint"/>.
+    /// </summary>
     public unit Unit { get; }
     
     /// <summary>
@@ -50,22 +70,23 @@ namespace MacroTools.ControlPointSystem
     /// </summary>
     public event EventHandler<ControlPointOwnerChangeEventArgs>? ChangedOwner;
     
+    /// <summary>
+    /// Invoked when the <see cref="ControlPoint"/> changes owner.
+    /// </summary>
     public static event EventHandler<ControlPointOwnerChangeEventArgs>? OnControlPointOwnerChange;
 
     private void OnDamaged()
     {
       try
       {
-        unit attacker = GetEventDamageSource();
+        var attacker = GetEventDamageSource();
 
-        var hp = (GetUnitState(Unit, UNIT_STATE_LIFE) - GetEventDamage()) /
+        var hitPoints = (GetUnitState(Unit, UNIT_STATE_LIFE) - GetEventDamage()) /
                  GetUnitState(Unit, UNIT_STATE_MAX_LIFE);
-        if (hp < CaptureThreshold)
-        {
-          BlzSetEventDamage(0);
-          SetUnitOwner(Unit, GetOwningPlayer(attacker), true);
-          Unit.SetLifePercent(85);
-        }
+        if (!(hitPoints < CaptureThreshold)) return;
+        BlzSetEventDamage(0);
+        SetUnitOwner(Unit, GetOwningPlayer(attacker), true);
+        Unit.SetLifePercent(85);
       }
       catch (Exception ex)
       {
