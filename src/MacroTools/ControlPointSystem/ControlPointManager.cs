@@ -245,8 +245,8 @@ namespace MacroTools.ControlPointSystem
           controlPoint.Defender = null;
           controlPoint.Unit
             .SetInvulnerable(false)
-            .SetMaximumHitpoints(MaxHitpoints)
             .AddAbility(IncreaseControlLevelAbilityTypeId);
+          ScaleHitpointsToControlLevel(controlPoint);
         }
       };
     }
