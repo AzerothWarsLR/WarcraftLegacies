@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.Libraries;
 using static War3Api.Common;
+using static War3Api.Blizzard;
 
 namespace MacroTools.ControlPointSystem
 {
@@ -51,6 +52,11 @@ namespace MacroTools.ControlPointSystem
     /// All <see cref="ControlPoint"/>s are given this ability.
     /// </summary>
     public int RegenerationAbility { get; init; }
+    
+    /// <summary>
+    /// The maximum <see cref="ControlPoint.ControlLevel"/> a <see cref="ControlPoint"/> can have.
+    /// </summary>
+    public int ControlLevelMaximum { get; init; }
 
     /// <summary>
     ///   How often players receive income.
@@ -98,6 +104,7 @@ namespace MacroTools.ControlPointSystem
       RegisterDamageTrigger(controlPoint);
       RegisterOwnershipChangeTrigger(controlPoint);
       RegisterControlLevelChangeTrigger(controlPoint);
+      RegisterControlLevelGrowthOverTime(controlPoint);
     }
 
     private static void RegisterIncomeGeneration(ControlPoint controlPoint)
@@ -212,6 +219,18 @@ namespace MacroTools.ControlPointSystem
             .SetInvulnerable(false)
             .SetMaximumHitpoints(MaxHitpoints);
         }
+      };
+    }
+
+    private void RegisterControlLevelGrowthOverTime(ControlPoint controlPoint)
+    {
+      GameTime.TurnEnded += (_, _) =>
+      {
+        if (controlPoint.Owner != Player(PLAYER_NEUTRAL_AGGRESSIVE) &&
+            controlPoint.Owner != Player(PLAYER_NEUTRAL_PASSIVE) &&
+            controlPoint.Owner != Player(bj_PLAYER_NEUTRAL_VICTIM) && 
+            controlPoint.ControlLevel < ControlLevelMaximum)
+          controlPoint.ControlLevel++;
       };
     }
   }
