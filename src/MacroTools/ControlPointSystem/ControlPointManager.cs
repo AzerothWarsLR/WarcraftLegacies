@@ -153,7 +153,7 @@ namespace MacroTools.ControlPointSystem
     private void RegisterDamageTrigger(ControlPoint controlPoint)
     {
       CreateTrigger()
-        .RegisterUnitEvent(controlPoint.Unit, EVENT_UNIT_DEATH)
+        .RegisterUnitEvent(controlPoint.Unit, EVENT_UNIT_DAMAGED)
         .AddAction(() =>
         {
           try
@@ -215,7 +215,7 @@ namespace MacroTools.ControlPointSystem
           controlPoint.Defender ??= CreateUnit(controlPoint.Owner, DefenderSettings.DefenderUnitTypeId, GetUnitX(controlPoint.Unit), GetUnitY(controlPoint.Unit), 0);
           controlPoint.Defender
             .SetDamageBase(DefenderSettings.DamageBase + controlPoint.ControlLevel * DefenderSettings.DamagePerControlLevel)
-            .AddAbility(FourCC("Aloc"))
+            //.AddAbility(FourCC("Aloc"))
             .SetInvulnerable(true);
           var defenderUnitTypeId = controlPoint.Owner.GetFaction()?.ControlPointDefenderTemplateUnitTypeId;
           if (defenderUnitTypeId != null && defenderUnitTypeId != 0)
@@ -277,6 +277,8 @@ namespace MacroTools.ControlPointSystem
       BlzSetAbilityStringLevelField(BlzGetUnitAbility(controlPoint.Unit, _increaseControlLevelAbilityTypeId),
         ABILITY_SLF_TOOLTIP_NORMAL_EXTENDED,
         controlPoint.ControlLevel, $"Increases this Control Point's Control Level, granting it increased hit points and attack damage.|n|n|cffffcc00Control Level:|r {controlPoint.ControlLevel}");
+      SetUnitAbilityLevel(controlPoint.Unit, _increaseControlLevelAbilityTypeId, 2);
+      SetUnitAbilityLevel(controlPoint.Unit, _increaseControlLevelAbilityTypeId, 1);
     }
   }
 }
