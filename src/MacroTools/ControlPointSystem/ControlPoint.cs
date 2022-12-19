@@ -100,7 +100,7 @@ namespace MacroTools.ControlPointSystem
         _controlLevel = value;
         if (ControlLevel > 0)
         {
-          Defender ??= CreateUnit(Owner, ControlPointManager.DefenderUnitTypeId, GetUnitX(Unit), GetUnitY(Unit), 0);
+          Defender ??= CreateUnit(Owner, ControlPointManager.Instance.DefenderUnitTypeId, GetUnitX(Unit), GetUnitY(Unit), 0);
           Defender
             .SetDamageBase(100 + ControlLevel * 50)
             .SetDamageNumberOfDice(6)

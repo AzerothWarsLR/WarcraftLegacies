@@ -16,7 +16,7 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
       "ReplaceableTextures\\CommandButtons\\BTNMedivh.blp")
     {
       AddObjective(new ObjectiveControlCapital(LegendNeutral.Karazhan, false));
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n00J"))));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(FourCC("n00J"))));
       ResearchId = FourCC("R04K");
     }
 

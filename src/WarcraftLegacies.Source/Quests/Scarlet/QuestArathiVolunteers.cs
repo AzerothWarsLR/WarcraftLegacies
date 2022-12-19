@@ -11,10 +11,10 @@ namespace WarcraftLegacies.Source.Quests.Scarlet
       "ReplaceableTextures\\CommandButtons\\BTNNobbyMansionCastle.blp")
     {
       AddObjective(
-        new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(Constants.UNIT_N01K_STROMGARDE_25GOLD_MIN)));
+        new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N01K_STROMGARDE_25GOLD_MIN)));
       AddObjective(
         new ObjectiveControlPoint(
-          ControlPointManager.GetFromUnitType(Constants.UNIT_N01Z_ARATHI_HIGHLANDS_15GOLD_MIN)));
+          ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N01Z_ARATHI_HIGHLANDS_15GOLD_MIN)));
       ResearchId = FourCC("R089");
     }
 

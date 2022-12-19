@@ -26,8 +26,8 @@ namespace WarcraftLegacies.Source.Quests.Dragonmaw
       _waygateA = waygateA;
       _waygateB = waygateB;
       AddObjective(new ObjectiveLegendDead(LegendNeutral.Vaelastrasz));
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n03X"))));
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n09F"))));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(FourCC("n03X"))));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(FourCC("n09F"))));
       AddObjective(new ObjectiveExpire(480));
       AddObjective(new ObjectiveSelfExists());
       ResearchId = Constants.UPGRADE_R06Y_QUEST_COMPLETED_THE_CURSED_FORTRESS;

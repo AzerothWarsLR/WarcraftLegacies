@@ -17,9 +17,9 @@ namespace WarcraftLegacies.Source.Quests.Legion
       "The planet of Argus is not fully under the control of the Legion. Bring it under control!",
       "ReplaceableTextures\\CommandButtons\\BTNMastersLodge.blp")
     {
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n0BF"))));
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n0BH"))));
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n0BG"))));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(FourCC("n0BF"))));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(FourCC("n0BH"))));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(FourCC("n0BG"))));
       AddObjective(new ObjectiveSelfExists());
       ResearchId = FourCC("R055");
       Required = true;

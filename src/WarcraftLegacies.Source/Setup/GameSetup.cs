@@ -1,4 +1,5 @@
 using MacroTools;
+using MacroTools.ControlPointSystem;
 using MacroTools.Mechanics;
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.UserInterface;
@@ -26,6 +27,7 @@ namespace WarcraftLegacies.Source.Setup
     /// </summary>
     public static void Setup()
     {
+      ControlPointManager.Instance = new ControlPointManager(Constants.UNIT_H006_IMPROVED_GUARD_TOWER);
       var preplacedUnitSystem = new PreplacedUnitSystem();
       SoundLibrary.Setup();
       var artifactSetup = new ArtifactSetup(preplacedUnitSystem);

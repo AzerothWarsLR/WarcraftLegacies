@@ -14,7 +14,7 @@ namespace WarcraftLegacies.Source.Quests.Draenei
       "ReplaceableTextures\\CommandButtons\\BTNAkamanew.blp")
     {
       AddObjective(new ObjectiveTime(660));
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(Constants.UNIT_N02O_NETHERSTORM_10GOLD_MIN)));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N02O_NETHERSTORM_10GOLD_MIN)));
       ResearchId = QuestResearchId;
     }
 

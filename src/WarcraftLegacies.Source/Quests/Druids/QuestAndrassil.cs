@@ -17,7 +17,7 @@ namespace WarcraftLegacies.Source.Quests.Druids
       "ReplaceableTextures\\CommandButtons\\BTNTreant.blp")
     {
       AddObjective(new ObjectiveCapitalDead(LegendScourge.LegendLichking));
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n03U"))));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(FourCC("n03U"))));
       AddObjective(new ObjectiveAnyUnitInRect(Regions.GrizzlyHills, "Grizzly Hills", true));
     }
 

@@ -14,7 +14,7 @@ namespace WarcraftLegacies.Source.Quests.Forsaken
       "Sylvanas longs to take revenge on the Lich King. Killing him and absorbing his power would maybe satisfy the emptiness inside her",
       "ReplaceableTextures\\CommandButtons\\BTNHelmofdomination.blp")
     {
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n0BC"))));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(FourCC("n0BC"))));
       AddObjective(new ObjectiveLegendNotPermanentlyDead(LegendForsaken.SylvanasUndead));
       AddObjective(new ObjectiveCapitalDead(LegendScourge.LegendLichking));
     }

@@ -19,7 +19,7 @@ namespace WarcraftLegacies.Source.Quests.Dragonmaw
       "The deserted base of Stonemaul is right next to a lair of Black Drakes. A perfect emplacement to lay the new foundations of the Dragonmaw Clan",
       "ReplaceableTextures\\CommandButtons\\BTNMercenaryCamp.blp")
     {
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(Constants.UNIT_N022_STONEMAUL_20GOLD_MIN)));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N022_STONEMAUL_20GOLD_MIN)));
       AddObjective(new ObjectiveUnitIsDead(preplacedUnitSystem.GetUnit(Constants.UNIT_NOGA_STONEMAUL_WARCHIEF_KOR_GALL)));
       AddObjective(new ObjectiveLegendInRect(LegendDragonmaw.Zaela, Regions.StonemaulKeep, "Stonemaul"));
       AddObjective(new ObjectiveExpire(1327));

@@ -17,7 +17,7 @@ namespace WarcraftLegacies.Source.Quests.Goblin
       "The city of Gadgetzan is a perfect foothold into Kalimdor.",
       "ReplaceableTextures\\CommandButtons\\BTNHeroAlchemist.blp")
     {
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n05C"))));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(FourCC("n05C"))));
       AddObjective(new ObjectiveExpire(1522));
       AddObjective(new ObjectiveSelfExists());
       ResearchId = FourCC("R07E");
