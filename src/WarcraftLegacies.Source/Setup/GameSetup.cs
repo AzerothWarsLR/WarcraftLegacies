@@ -29,12 +29,17 @@ namespace WarcraftLegacies.Source.Setup
     {
       ControlPointManager.Instance = new ControlPointManager
       {
-        DefenderUnitTypeId = Constants.UNIT_H03F_CONTROL_POINT_DEFENDER_SHARED,
         CaptureThreshold = 0.8f,
         MaxHitpoints = 10000,
         RegenerationAbility = Constants.ABILITY_A0UT_CP_LIFE_REGEN,
         ControlLevelMaximum = 15,
-        IncreaseControlLevelAbilityTypeId = Constants.ABILITY_A0A8_FORTIFY_CONTROL_POINTS_SHARED
+        IncreaseControlLevelAbilityTypeId = Constants.ABILITY_A0A8_FORTIFY_CONTROL_POINTS_SHARED,
+        DefenderSettings = new DefenderSettings
+        {
+          DefenderUnitTypeId = Constants.UNIT_H03F_CONTROL_POINT_DEFENDER_SHARED,
+          DamageBase = 60,
+          DamagePerControlLevel = 20
+        }
       };
       var preplacedUnitSystem = new PreplacedUnitSystem();
       SoundLibrary.Setup();

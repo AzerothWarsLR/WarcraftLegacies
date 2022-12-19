@@ -33,12 +33,6 @@ namespace MacroTools.ControlPointSystem
     }
 
     /// <summary>
-    /// When <see cref="ControlPoint"/>s have a <see cref="ControlPoint.ControlLevel"/> greater than 0, they spawn a
-    /// unit with this ID to defend them.
-    /// </summary>
-    public int DefenderUnitTypeId { get; init; }
-
-    /// <summary>
     /// The percentage of maximum hitpoints below which <see cref="ControlPoint"/>s will be transferred to the attacker.
     /// </summary>
     public float CaptureThreshold { get; init; }
@@ -57,6 +51,11 @@ namespace MacroTools.ControlPointSystem
     /// The maximum <see cref="ControlPoint.ControlLevel"/> a <see cref="ControlPoint"/> can have.
     /// </summary>
     public int ControlLevelMaximum { get; init; }
+
+    /// <summary>
+    /// Determines the settings for the <see cref="ControlPoint.Defender"/> units that defend <see cref="ControlPoint"/>s.
+    /// </summary>
+    public DefenderSettings DefenderSettings { get; init; } = new();
 
     /// <summary>
     /// This ability can be used to increase a <see cref="ControlPoint"/>'s <see cref="ControlPoint.ControlLevel"/>.
@@ -213,12 +212,9 @@ namespace MacroTools.ControlPointSystem
       {
         if (controlPoint.ControlLevel > 0)
         {
-          controlPoint.Defender ??= CreateUnit(controlPoint.Owner, DefenderUnitTypeId, GetUnitX(controlPoint.Unit), GetUnitY(controlPoint.Unit), 0);
+          controlPoint.Defender ??= CreateUnit(controlPoint.Owner, DefenderSettings.DefenderUnitTypeId, GetUnitX(controlPoint.Unit), GetUnitY(controlPoint.Unit), 0);
           controlPoint.Defender
-            .SetDamageBase(100 + controlPoint.ControlLevel * 50)
-            .SetDamageNumberOfDice(6)
-            .SetDamageSidesPerDie(6)
-            .SetSkin(FourCC("hfoo"))
+            .SetDamageBase(DefenderSettings.DamageBase + controlPoint.ControlLevel * DefenderSettings.DamagePerControlLevel)
             .AddAbility(FourCC("Aloc"))
             .SetInvulnerable(true);
           var defenderUnitTypeId = controlPoint.Owner.GetFaction()?.ControlPointDefenderTemplateUnitTypeId;
