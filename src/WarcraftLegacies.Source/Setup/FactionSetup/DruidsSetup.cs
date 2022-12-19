@@ -18,6 +18,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
         StartingGold = 150,
         StartingLumber = 500,
         CinematicMusic = "DarkAgents",
+        ControlPointDefenderTemplateUnitTypeId = Constants.UNIT_NCAP_CORRUPTED_ANCIENT_PROTECTOR,
         IntroText = @"You are playing as the venerable Druids of the Cenarion Circle.
 
 Without a Hero, you are perilously weak in the beginning. 

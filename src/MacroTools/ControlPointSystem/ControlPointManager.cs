@@ -188,6 +188,9 @@ namespace MacroTools.ControlPointSystem
             .SetSkin(FourCC("hfoo"))
             .AddAbility(FourCC("Aloc"))
             .SetInvulnerable(true);
+          var defenderUnitTypeId = controlPoint.Owner.GetFaction()?.ControlPointDefenderTemplateUnitTypeId;
+          if (defenderUnitTypeId != null)
+            controlPoint.Defender.SetSkin(defenderUnitTypeId.Value);
           controlPoint.Unit
             .SetMaximumHitpoints(MaxHitpoints + controlPoint.ControlLevel * 500)
             .SetScale(2);
