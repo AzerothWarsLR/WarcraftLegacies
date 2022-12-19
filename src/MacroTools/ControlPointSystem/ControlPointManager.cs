@@ -66,18 +66,15 @@ namespace MacroTools.ControlPointSystem
     /// <summary>
     ///   Whether or not the given unit is a <see cref="ControlPoint" />.
     /// </summary>
-    public bool UnitIsControlPoint(unit unit)
-    {
-      return _byUnit.ContainsKey(unit);
-    }
+    public bool UnitIsControlPoint(unit unit) => _byUnit.ContainsKey(unit);
 
     /// <summary>
     ///   Returns the <see cref="ControlPoint" /> with the given unit type ID.
     /// </summary>
     public ControlPoint GetFromUnitType(int unitType)
     {
-      if (_byUnitType.TryGetValue(unitType, out var controlPoint)) return controlPoint;
-
+      if (_byUnitType.TryGetValue(unitType, out var controlPoint)) 
+        return controlPoint;
       throw new KeyNotFoundException(
         $"There is no {nameof(ControlPoint)} with unit type ID {GeneralHelpers.DebugIdInteger2IdString(unitType)}");
     }
