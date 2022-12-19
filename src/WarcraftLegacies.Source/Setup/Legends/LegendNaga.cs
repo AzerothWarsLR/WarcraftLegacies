@@ -24,7 +24,6 @@ namespace WarcraftLegacies.Source.Setup.Legends
       LegendVashj = new LegendaryHero("Lady Vashj")
       {
         UnitType = FourCC("Hvsh"),
-        StartingXp = 2800,
       };
       LegendaryHeroManager.Register(LegendVashj);
 

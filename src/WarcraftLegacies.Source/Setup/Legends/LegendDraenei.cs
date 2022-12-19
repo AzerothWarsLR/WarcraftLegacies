@@ -28,7 +28,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
 
       LegendExodar = new Capital
       {
-        Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_O05E_EXODAR_REGALIS_DRAENEI)
+        Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_E01X_EXODAR_REGALIS_DRAENEI)
       };
       CapitalManager.Register(LegendExodar);
 

@@ -18,8 +18,8 @@ public static class Regions
 	public static Rectangle Corins_Crossing { get; set; } = new Rectangle(16192f, 8896f, 18080f, 10944f);
 	public static Rectangle Crossroads { get; set; } = new Rectangle(-12480f, -2592f, -11424f, -1568f);
 	public static Rectangle Dalaran { get; set; } = new Rectangle(8608f, 3872f, 10336f, 5600f);
-	public static Rectangle Dark_Portal_Entrance_1 { get; set; } = new Rectangle(16288f, -19008f, 16704f, -18688f);
-	public static Rectangle Dark_Portal_Exit_1 { get; set; } = new Rectangle(4224f, -25792f, 4576f, -25344f);
+	public static Rectangle Dark_Portal_Entrance_1 { get; set; } = new Rectangle(15264f, -19392f, 15680f, -19072f);
+	public static Rectangle Dark_Portal_Exit_1 { get; set; } = new Rectangle(4096f, -25120f, 4448f, -24672f);
 	public static Rectangle Darrowshire { get; set; } = new Rectangle(16096f, 7168f, 17600f, 8480f);
 	public static Rectangle Demongate_1 { get; set; } = new Rectangle(-1248f, -22400f, -864f, -22016f);
 	public static Rectangle DemonGate3 { get; set; } = new Rectangle(352f, -25472f, 864f, -25024f);
@@ -89,10 +89,10 @@ public static class Regions
 	public static Rectangle Aerie_Peak { get; set; } = new Rectangle(13600f, 4096f, 14752f, 5184f);
 	public static Rectangle TempestKeep { get; set; } = new Rectangle(1408f, -22432f, 5024f, -17952f);
 	public static Rectangle Sunwell { get; set; } = new Rectangle(18144f, 21248f, 18976f, 22048f);
-	public static Rectangle Dark_Portal_Exit_2 { get; set; } = new Rectangle(4032f, -25088f, 4416f, -24704f);
-	public static Rectangle Dark_Portal_Exit_3 { get; set; } = new Rectangle(4864f, -26304f, 5248f, -25920f);
-	public static Rectangle Dark_Portal_Entrance_2 { get; set; } = new Rectangle(17600f, -19232f, 18016f, -18912f);
-	public static Rectangle Dark_Portal_Entrance_3 { get; set; } = new Rectangle(15232f, -19392f, 15648f, -19072f);
+	public static Rectangle Dark_Portal_Exit_2 { get; set; } = new Rectangle(4160f, -25696f, 4544f, -25312f);
+	public static Rectangle Dark_Portal_Exit_3 { get; set; } = new Rectangle(4768f, -26272f, 5152f, -25888f);
+	public static Rectangle Dark_Portal_Entrance_2 { get; set; } = new Rectangle(16288f, -19040f, 16704f, -18720f);
+	public static Rectangle Dark_Portal_Entrance_3 { get; set; } = new Rectangle(17376f, -19136f, 17792f, -18816f);
 	public static Rectangle Chen { get; set; } = new Rectangle(-9536f, -2848f, -9088f, -2176f);
 	public static Rectangle QuelDanil_Lodge { get; set; } = new Rectangle(15360f, 4352f, 16160f, 5152f);
 	public static Rectangle Andrassil { get; set; } = new Rectangle(4992f, 18400f, 5440f, 18816f);

@@ -7,7 +7,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
 {
   public static class NagaQuestSetup
   {
-    public static void Setup(ArtifactSetup artifactSetup, PreplacedUnitSystem preplacedUnitSystem)
+    public static void Setup(PreplacedUnitSystem preplacedUnitSystem, ArtifactSetup artifactSetup)
     {
       var illidari = IllidariSetup.Illidari;
       illidari.StartingQuest = illidari.AddQuest(new QuestLostOnes(Regions.AkamaUnlock));
