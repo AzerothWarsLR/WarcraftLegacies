@@ -3763,6 +3763,12 @@ STRING 628
 Slams the ground, stunning and damaging nearby enemy land units. |n|n|cffffcc00Level 1|r - <AOw2,DataA1> damage, <AOw2,Dur1> second stun. |n|cffffcc00Level 2|r - <AOw2,DataA2> damage, <AOw2,Dur2> second stun. |n|cffffcc00Level 3|r - <AOw2,DataA3> damage, <AOw2,Dur3> second stun. |n|cffffcc00Level 4|r - <AOw2,DataA4> damage, <AOw2,Dur4> second stun.
 }
 
+STRING 629
+// Units: h03F (Control Point Defender), Name (Name)
+{
+Control Point Defender
+}
+
 STRING 630
 // Units: n005 (Improved Tidal Watcher), Name (Name)
 {
@@ -4885,6 +4891,12 @@ STRING 816
 // Units: h022 (Farmer), Ubertip (Tooltip - Extended)
 {
 Peasants who support Dalaran war effort in exchange for protection.|n|cfff5962dAbilities:|r Repair, Gather|n|cfff5962d|n|n|cffffcc00Attacks land units and trees.|r
+}
+
+STRING 817
+// Upgrades: R00K (Animal War Training), EditorSuffix (Editor Suffix)
+{
+(Shared)
 }
 
 STRING 818
@@ -89794,7 +89806,7 @@ Quest Completed: City at Sea
 }
 
 STRING 14974
-// Abilities: ANms (Mana Shield), EditorSuffix (Editor Suffix)
+// Units: h03F (Control Point Defender), EditorSuffix (Name - Editor Suffix)
 {
 (Shared)
 }
@@ -92435,7 +92447,7 @@ Summons 1 immobile deep sea serpent to attack enemies. The ward has 2400 hit poi
 }
 
 STRING 15422
-// Upgrades: R00K (Animal War Training), EditorSuffix (Editor Suffix)
+// Abilities: ANms (Mana Shield), EditorSuffix (Editor Suffix)
 {
 (Shared)
 }

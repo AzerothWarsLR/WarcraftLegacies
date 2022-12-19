@@ -29,7 +29,7 @@ namespace WarcraftLegacies.Source.Setup
     {
       ControlPointManager.Instance = new ControlPointManager
       {
-        DefenderUnitTypeId = Constants.UNIT_H006_IMPROVED_GUARD_TOWER,
+        DefenderUnitTypeId = Constants.UNIT_H03F_CONTROL_POINT_DEFENDER_SHARED,
         CaptureThreshold = 0.8f,
         MaxHitpoints = 10000,
         RegenerationAbility = Constants.ABILITY_A0UT_CP_LIFE_REGEN

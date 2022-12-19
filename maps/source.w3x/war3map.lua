@@ -326,6 +326,8 @@ gg_rct_TombOfSargerasInteriorE = nil
 gg_rct_TombOfSargerasInteriorF = nil
 gg_rct_TombOfSargerasInteriorG = nil
 gg_rct_TombOfSargerasInteriorH = nil
+gg_rct_BrokenIslesB = nil
+gg_rct_GuldansCorpse = nil
 gg_cam_Naga1 = nil
 gg_cam_Naga2 = nil
 gg_cam_Naga3 = nil
@@ -548,8 +550,6 @@ gg_snd_DoorOpenRemix = nil
 gg_snd_NuclearLaunchDetected = nil
 gg_snd_IllidansTheme = ""
 gg_trg_Dummy = nil
-gg_rct_BrokenIslesB = nil
-gg_rct_GuldansCorpse = nil
 function InitGlobals()
 end
 
