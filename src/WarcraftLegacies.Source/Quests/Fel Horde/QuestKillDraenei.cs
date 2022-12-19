@@ -16,7 +16,7 @@ namespace WarcraftLegacies.Source.Quests.Fel_Horde
       "The Draenei race existence insults the Fel Horde demon masters, slaughter them all ",
       "ReplaceableTextures\\CommandButtons\\BTNChaosWolfRider.blp")
     {
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n09X"))));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(FourCC("n09X"))));
       AddObjective(new ObjectiveSelfExists());
       Required = true;
     }

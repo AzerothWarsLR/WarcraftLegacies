@@ -1,4 +1,5 @@
 using MacroTools;
+using MacroTools.ControlPointSystem;
 using MacroTools.Mechanics;
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.UserInterface;
@@ -26,6 +27,20 @@ namespace WarcraftLegacies.Source.Setup
     /// </summary>
     public static void Setup()
     {
+      ControlPointManager.Instance = new ControlPointManager
+      {
+        CaptureThreshold = 0.8f,
+        MaxHitpoints = 10000,
+        RegenerationAbility = Constants.ABILITY_A0UT_CP_LIFE_REGEN,
+        ControlLevelMaximum = 15,
+        IncreaseControlLevelAbilityTypeId = Constants.ABILITY_A0A8_FORTIFY_CONTROL_POINTS_SHARED,
+        DefenderSettings = new DefenderSettings
+        {
+          DefenderUnitTypeId = Constants.UNIT_H03F_CONTROL_POINT_DEFENDER_SHARED,
+          DamageBase = 60,
+          DamagePerControlLevel = 20
+        }
+      };
       var preplacedUnitSystem = new PreplacedUnitSystem();
       SoundLibrary.Setup();
       var artifactSetup = new ArtifactSetup(preplacedUnitSystem);

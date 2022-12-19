@@ -15,6 +15,45 @@ namespace MacroTools.Extensions
     private const float HeroDropDist = 50; //The radius in which heroes spread out items when they drop them
 
     /// <summary>
+    /// Returns the unit's maximum hit points.
+    /// </summary>
+    public static int GetMaximumHitPoints(this unit whichUnit) => BlzGetUnitMaxHP(whichUnit);
+
+
+    /// <summary>
+    /// Sets the unit's scaling value.
+    /// </summary>
+    public static unit SetScale(this unit whichUnit, float scale)
+    {
+      SetUnitScale(whichUnit, scale, scale, scale);
+      return whichUnit;
+    }
+    
+    public static unit SetMaximumHitpoints(this unit whichUnit, int value)
+    {
+      BlzSetUnitMaxHP(whichUnit, value);
+      return whichUnit;
+    }
+
+    public static unit SetDamageBase(this unit whichUnit, int value, int weaponSlot = 1)
+    {
+      BlzSetUnitWeaponIntegerField(whichUnit, UNIT_WEAPON_IF_ATTACK_DAMAGE_BASE, weaponSlot, value);
+      return whichUnit;
+    }
+    
+    public static unit SetDamageNumberOfDice(this unit whichUnit, int value, int weaponSlot = 0)
+    {
+      BlzSetUnitWeaponIntegerField(whichUnit, UNIT_WEAPON_IF_ATTACK_DAMAGE_NUMBER_OF_DICE, weaponSlot, value);
+      return whichUnit;
+    }
+    
+    public static unit SetDamageSidesPerDie(this unit whichUnit, int value, int weaponSlot = 0)
+    {
+      BlzSetUnitWeaponIntegerField(whichUnit, UNIT_WEAPON_IF_ATTACK_DAMAGE_SIDES_PER_DIE, weaponSlot, value);
+      return whichUnit;
+    }
+
+    /// <summary>
     /// Changes the unit's skin to match that of another unit type.
     /// </summary>
     public static unit SetSkin(this unit whichUnit, int skinUnitTypeId)
@@ -296,10 +335,11 @@ namespace MacroTools.Extensions
     /// <summary>
     /// Sets the units hit points to a specified percentage value.
     /// </summary>
-    public static void SetLifePercent(this unit whichUnit, float percent)
+    public static unit SetLifePercent(this unit whichUnit, float percent)
     {
       SetUnitState(whichUnit, UNIT_STATE_LIFE,
         GetUnitState(whichUnit, UNIT_STATE_MAX_LIFE) * MathEx.Max(0, percent) * 0.01f);
+      return whichUnit;
     }
 
     /// <summary>

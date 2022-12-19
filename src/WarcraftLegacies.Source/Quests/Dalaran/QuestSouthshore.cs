@@ -26,7 +26,7 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
       "ReplaceableTextures\\CommandButtons\\BTNMurloc.blp")
     {
       AddObjective(new ObjectiveKillUnit(murlocToKill));
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(Constants.UNIT_N08M_SOUTHSHORE_15GOLD_MIN)));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N08M_SOUTHSHORE_15GOLD_MIN)));
       AddObjective(new ObjectiveExpire(1135));
       AddObjective(new ObjectiveSelfExists());
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);

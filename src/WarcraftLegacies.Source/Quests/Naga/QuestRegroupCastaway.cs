@@ -11,10 +11,10 @@ namespace WarcraftLegacies.Source.Quests.Naga
       "The Naga's have been splintered throughout the world, if Illidan could reunite them, he could gain powerful allies",
       "ReplaceableTextures\\CommandButtons\\BTNNagaSeaWitch.blp")
     {
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n03O"))));
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n05Y"))));
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n04Y"))));
-      //AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n0DJ"))));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(FourCC("n03O"))));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(FourCC("n05Y"))));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(FourCC("n04Y"))));
+      //AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(FourCC("n0DJ"))));
       ResearchId = Constants.UPGRADE_R093_QUEST_COMPLETED_SPLINTERED_PEOPLE;
     }
 

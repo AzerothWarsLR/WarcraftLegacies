@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using MacroTools.Augments;
+using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
 using MacroTools.LegendSystem;
 using MacroTools.QuestSystem;
@@ -69,6 +70,9 @@ namespace MacroTools.FactionSystem
     /// </summary>
     public EventHandler<FactionPowerEventArgs>? PowerRemoved;
 
+    /// <summary>
+    /// Invoked when <see cref="ScoreStatus"/> changes.
+    /// </summary>
     public EventHandler<Faction>? ScoreStatusChanged;
 
     static Faction()
@@ -94,6 +98,12 @@ namespace MacroTools.FactionSystem
     /// </summary>
     public string? IntroText { get; init; }
 
+    /// <summary>
+    /// All of the <see cref="Faction"/>'s <see cref="ControlPoint"/> <see cref="ControlPoint.Defender"/>s
+    /// will look like this unit type ID.
+    /// </summary>
+    public int ControlPointDefenderTemplateUnitTypeId { get; init; }
+    
     public int StartingGold { get; set; }
 
     public int StartingLumber { get; set; }

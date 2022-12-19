@@ -3763,6 +3763,12 @@ STRING 628
 Slams the ground, stunning and damaging nearby enemy land units. |n|n|cffffcc00Level 1|r - <AOw2,DataA1> damage, <AOw2,Dur1> second stun. |n|cffffcc00Level 2|r - <AOw2,DataA2> damage, <AOw2,Dur2> second stun. |n|cffffcc00Level 3|r - <AOw2,DataA3> damage, <AOw2,Dur3> second stun. |n|cffffcc00Level 4|r - <AOw2,DataA4> damage, <AOw2,Dur4> second stun.
 }
 
+STRING 629
+// Units: h03F (Control Point Defender), Name (Name)
+{
+Control Point Defender
+}
+
 STRING 630
 // Units: n005 (Improved Tidal Watcher), Name (Name)
 {
@@ -4885,6 +4891,12 @@ STRING 816
 // Units: h022 (Farmer), Ubertip (Tooltip - Extended)
 {
 Peasants who support Dalaran war effort in exchange for protection.|n|cfff5962dAbilities:|r Repair, Gather|n|cfff5962d|n|n|cffffcc00Attacks land units and trees.|r
+}
+
+STRING 817
+// Upgrades: R00K (Animal War Training), EditorSuffix (Editor Suffix)
+{
+(Shared)
 }
 
 STRING 818
@@ -15836,6 +15848,12 @@ STRING 2642
 Train Farstrider
 }
 
+STRING 2643
+// Abilities: A0A8 (Fortify), Tip (Tooltip - Normal)
+{
+Fortify
+}
+
 STRING 2644
 // Units: h04W (Siege Tank), EditorSuffix (Name - Editor Suffix)
 {
@@ -17307,6 +17325,12 @@ STRING 2888
 (stormwind)
 }
 
+STRING 2889
+// Abilities: A0A8 (Fortify), Name (Name)
+{
+Fortify
+}
+
 STRING 2890
 // Units: h02R (Northshire Abbey), EditorSuffix (Name - Editor Suffix)
 {
@@ -17317,6 +17341,12 @@ STRING 2891
 // Units: u01A (Haunted Harbor), Hotkey (Hotkey)
 {
 R
+}
+
+STRING 2892
+// Abilities: A0A8 (Fortify), EditorSuffix (Editor Suffix)
+{
+(Control Points) (Shared)
 }
 
 STRING 2893
@@ -23578,6 +23608,12 @@ STRING 3936
 // Abilities: A0LN (Thunder Fists), Tip (Tooltip - Normal)
 {
 Thunder Fists - [|cffffcc00Level 3|r]
+}
+
+STRING 3937
+// Abilities: A0A8 (Fortify), Ubertip (Tooltip - Normal - Extended)
+{
+Increases this Control Point's Control Level, granting it increased hit points and attack damage.|n|n|cffffcc00Control Level:|r 0
 }
 
 STRING 3938
@@ -89794,7 +89830,7 @@ Quest Completed: City at Sea
 }
 
 STRING 14974
-// Abilities: ANms (Mana Shield), EditorSuffix (Editor Suffix)
+// Units: h03F (Control Point Defender), EditorSuffix (Name - Editor Suffix)
 {
 (Shared)
 }
@@ -92435,7 +92471,7 @@ Summons 1 immobile deep sea serpent to attack enemies. The ward has 2400 hit poi
 }
 
 STRING 15422
-// Upgrades: R00K (Animal War Training), EditorSuffix (Editor Suffix)
+// Abilities: ANms (Mana Shield), EditorSuffix (Editor Suffix)
 {
 (Shared)
 }

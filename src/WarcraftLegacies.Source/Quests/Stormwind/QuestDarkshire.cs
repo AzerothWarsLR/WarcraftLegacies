@@ -14,7 +14,7 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
       "ReplaceableTextures\\CommandButtons\\BTNGnollArcher.blp")
     {
       AddObjective(new ObjectiveKillUnit(gnollToKill));
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n00V"))));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(FourCC("n00V"))));
       AddObjective(new ObjectiveExpire(1425));
       AddObjective(new ObjectiveSelfExists());
       Required = true;

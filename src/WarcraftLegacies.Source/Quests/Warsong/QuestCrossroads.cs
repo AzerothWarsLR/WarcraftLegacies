@@ -21,7 +21,7 @@ namespace WarcraftLegacies.Source.Quests.Warsong
     {
       AddObjective(
         new ObjectiveKillUnit(preplacedUnitSystem.GetUnit(FourCC("nrzm"), rescueRect.Center))); //Razorman Medicine Man
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n01T"))));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(FourCC("n01T"))));
       AddObjective(new ObjectiveExpire(1460));
       AddObjective(new ObjectiveSelfExists());
 

@@ -29,7 +29,7 @@ namespace WarcraftLegacies.Source.Quests.Warsong
 
     protected override void OnComplete(Faction completingFaction)
     {
-      var boreanTundra = ControlPointManager.GetFromUnitType(FourCC("n00G")).Unit;
+      var boreanTundra = ControlPointManager.Instance.GetFromUnitType(FourCC("n00G")).Unit;
       KillNeutralHostileUnitsInRadius(GetUnitX(boreanTundra), GetUnitY(boreanTundra), 2300);
       //Spawn the base
       SetUnitOwner(boreanTundra, completingFaction.Player, true);
