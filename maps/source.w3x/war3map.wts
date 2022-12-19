@@ -1621,7 +1621,7 @@ Build Dreadnought
 }
 
 STRING 272
-// Units: h06S (Steamforge), Tip (Tooltip - Basic)
+// Units: h0A4 (Coral Forge), Tip (Tooltip - Basic)
 {
 Build - Coral Forge
 }
@@ -2239,7 +2239,7 @@ STRING 374
 }
 
 STRING 375
-// Units: nntt (Steamwork Reservoir), Hotkey (Hotkey)
+// Units: nntt (Betrayer's Reservoir), Hotkey (Hotkey)
 {
 Q
 }
@@ -2665,7 +2665,7 @@ STRING 445
 }
 
 STRING 446
-// Units: nnsu (Summoner), Hotkey (Hotkey)
+// Units: nnsu (Coilfang Summoner), Hotkey (Hotkey)
 {
 E
 }
@@ -3386,7 +3386,7 @@ STRING 565
 }
 
 STRING 566
-// Units: ndrs (Draenei Seer), Hotkey (Hotkey)
+// Units: ndrs (Ashtongue Mystic), Hotkey (Hotkey)
 {
 W
 }
@@ -3698,7 +3698,7 @@ War Stomp
 }
 
 STRING 618
-// Units: nntt (Steamwork Reservoir), Ubertip (Tooltip - Extended)
+// Units: n05A (Vault of the Eternal Palace), Ubertip (Tooltip - Extended)
 {
 Primary structure, used to train Mur'gul Slaves, Royal Guards and receive gathered resources. Also contains the Submerge upgrade.
 }
@@ -3740,7 +3740,7 @@ Learn War Stomp - [|cffffcc00Level %d|r].
 }
 
 STRING 625
-// Units: nnsu (Summoner), Ubertip (Tooltip - Extended)
+// Units: nnsu (Coilfang Summoner), Ubertip (Tooltip - Extended)
 {
 Powerful caster. Can cast Monsoon, Tidal Serpent and Wise Council.|n |n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land and air units.|r
 }
@@ -3752,7 +3752,7 @@ Tidal Watcher
 }
 
 STRING 627
-// Units: nnsa (Serpentshrine), Hotkey (Hotkey)
+// Units: nnsa (Bloodscale Clutchery), Hotkey (Hotkey)
 {
 D
 }
@@ -3761,12 +3761,6 @@ STRING 628
 // Abilities: A0WM (War Stomp), Researchubertip (Tooltip - Learn - Extended)
 {
 Slams the ground, stunning and damaging nearby enemy land units. |n|n|cffffcc00Level 1|r - <AOw2,DataA1> damage, <AOw2,Dur1> second stun. |n|cffffcc00Level 2|r - <AOw2,DataA2> damage, <AOw2,Dur2> second stun. |n|cffffcc00Level 3|r - <AOw2,DataA3> damage, <AOw2,Dur3> second stun. |n|cffffcc00Level 4|r - <AOw2,DataA4> damage, <AOw2,Dur4> second stun.
-}
-
-STRING 629
-// Units: nnsg (Spawning Pit), Ubertip (Tooltip - Extended)
-{
-Trains Naga Myrmidons, Snap Dragons, and Dragon Turtles.
 }
 
 STRING 630
@@ -4071,7 +4065,7 @@ Tamed elemental of the Firelands.|n|cfff5962dAbilities:|R Incinerate|n|n|cffffcc
 }
 
 STRING 680
-// Units: ndrn (Draenei Vindicator), Hotkey (Hotkey)
+// Units: ndrn (Ashtongue Deathsworn), Hotkey (Hotkey)
 {
 Q
 }
@@ -4101,7 +4095,7 @@ STRING 684
 }
 
 STRING 685
-// Units: nnsg (Spawning Pit), Hotkey (Hotkey)
+// Units: nnsg (Wrathfin Spawnery), Hotkey (Hotkey)
 {
 A
 }
@@ -4893,12 +4887,6 @@ STRING 816
 Peasants who support Dalaran war effort in exchange for protection.|n|cfff5962dAbilities:|r Repair, Gather|n|cfff5962d|n|n|cffffcc00Attacks land units and trees.|r
 }
 
-STRING 817
-// Units: ndrs (Draenei Seer), Ubertip (Tooltip - Extended)
-{
-Heavy ranged unit. Can cast Slow Lightning shield and Healing Wave. |n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land and air units.|r
-}
-
 STRING 818
 // Units: n00A (Farstrider), EditorSuffix (Name - Editor Suffix)
 {
@@ -4918,7 +4906,7 @@ Farmer
 }
 
 STRING 821
-// Units: ndrn (Draenei Vindicator), Ubertip (Tooltip - Extended)
+// Units: ndrn (Ashtongue Deathsworn), Ubertip (Tooltip - Extended)
 {
 Heavy melee unit. Has Vindication and War Plating.|n |n|n|cffffcc00Attacks land units.|r
 }
@@ -8137,7 +8125,7 @@ STRING 1356
 }
 
 STRING 1357
-// Units: Eill (The Betrayer), EditorSuffix (Name - Editor Suffix)
+// Units: U00S (High Warlord), EditorSuffix (Name - Editor Suffix)
 {
 (Naga)
 }
@@ -9391,7 +9379,7 @@ STRING 1565
 }
 
 STRING 1566
-// Units: h06A (Smitty), Hotkey (Hotkey)
+// Units: h06A (Smithy), Hotkey (Hotkey)
 {
 D
 }
@@ -12403,7 +12391,7 @@ Adds <A03S,DataA3> bonus damage to the unit and causes its attacks to heal it fo
 }
 
 STRING 2068
-// Units: n04T (Steamwork Spire), Ubertip (Tooltip - Extended)
+// Units: n0C2 (Pillar of Waves), Ubertip (Tooltip - Extended)
 {
 Primary structure, used to train Mur'gul Slaves, Royal Guards and receive gathered resources. Also contains the Submerge upgrade.
 }
@@ -14496,7 +14484,7 @@ STRING 2416
 }
 
 STRING 2417
-// Units: h06S (Steamforge), Hotkey (Hotkey)
+// Units: h06S (Coilskar Forgeworks), Hotkey (Hotkey)
 {
 E
 }
@@ -15848,12 +15836,6 @@ STRING 2642
 Train Farstrider
 }
 
-STRING 2643
-// Units: n0A3 (Coilfang Archive), Ubertip (Tooltip - Extended)
-{
-Trains Naga Siren, Mur'gul Shadowcaster and Summoner
-}
-
 STRING 2644
 // Units: h04W (Siege Tank), EditorSuffix (Name - Editor Suffix)
 {
@@ -16707,7 +16689,7 @@ STRING 2785
 }
 
 STRING 2786
-// Units: h06S (Steamforge), Ubertip (Tooltip - Extended)
+// Units: h06U (Siphoning Crystal), Ubertip (Tooltip - Extended)
 {
 Provides attack and defense upgrades. Serves as a drop-off point for harvested lumber. 
 }
@@ -16737,7 +16719,7 @@ Effect
 }
 
 STRING 2791
-// Units: h06T (Altar of Kings), EditorSuffix (Name - Editor Suffix)
+// Units: h06M (Keep), EditorSuffix (Name - Editor Suffix)
 {
 (stormwind)
 }
@@ -16755,7 +16737,7 @@ Sacrifice
 }
 
 STRING 2794
-// Units: h06M (Keep), EditorSuffix (Name - Editor Suffix)
+// Units: h06K (Town Hall), EditorSuffix (Name - Editor Suffix)
 {
 (stormwind)
 }
@@ -16785,7 +16767,7 @@ Improved Missile Tower
 }
 
 STRING 2799
-// Units: h06K (Town Hall), EditorSuffix (Name - Editor Suffix)
+// Units: h06E (Barracks), EditorSuffix (Name - Editor Suffix)
 {
 (stormwind)
 }
@@ -16821,13 +16803,13 @@ Upgrade to Improved Missile Tower
 }
 
 STRING 2805
-// Units: h06F (Blacksmith), EditorSuffix (Name - Editor Suffix)
+// Units: h06A (Smithy), EditorSuffix (Name - Editor Suffix)
 {
 (stormwind)
 }
 
 STRING 2806
-// Units: n08W (Lost One Den), Hotkey (Hotkey)
+// Units: n08W (Ashtongue Lair), Hotkey (Hotkey)
 {
 F
 }
@@ -16839,7 +16821,7 @@ STRING 2807
 }
 
 STRING 2808
-// Units: h06E (Barracks), EditorSuffix (Name - Editor Suffix)
+// Units: h01B (Outrider), EditorSuffix (Name - Editor Suffix)
 {
 (stormwind)
 }
@@ -16857,7 +16839,7 @@ Forges iron and steel for the war effort.|n|cfff5962dResearches: |RForged Weapon
 }
 
 STRING 2811
-// Units: h06D (Royal Harbour), EditorSuffix (Name - Editor Suffix)
+// Units: h00J (Clergyman), EditorSuffix (Name - Editor Suffix)
 {
 (stormwind)
 }
@@ -17320,19 +17302,13 @@ Z
 }
 
 STRING 2888
-// Units: h06A (Smitty), EditorSuffix (Name - Editor Suffix)
-{
-(stormwind)
-}
-
-STRING 2889
-// Units: h01B (Outrider), EditorSuffix (Name - Editor Suffix)
+// Units: h00A (Spearman), EditorSuffix (Name - Editor Suffix)
 {
 (stormwind)
 }
 
 STRING 2890
-// Units: h03X (Sentinel Tower), EditorSuffix (Name - Editor Suffix)
+// Units: h02R (Northshire Abbey), EditorSuffix (Name - Editor Suffix)
 {
 (Arathor)
 }
@@ -17341,12 +17317,6 @@ STRING 2891
 // Units: u01A (Haunted Harbor), Hotkey (Hotkey)
 {
 R
-}
-
-STRING 2892
-// Units: h00J (Clergyman), EditorSuffix (Name - Editor Suffix)
-{
-(stormwind)
 }
 
 STRING 2893
@@ -17362,7 +17332,7 @@ W
 }
 
 STRING 2895
-// Units: h02R (Northshire Abbey), EditorSuffix (Name - Editor Suffix)
+// Upgrades: R02B (Control Magic), EditorSuffix (Editor Suffix)
 {
 (Arathor)
 }
@@ -17470,7 +17440,7 @@ Dalaran Building
 }
 
 STRING 2913
-// Upgrades: R02B (Control Magic), EditorSuffix (Editor Suffix)
+// Upgrades: R005 (Priest Adept Training,Priest Master Training), EditorSuffix (Editor Suffix)
 {
 (Arathor)
 }
@@ -17497,12 +17467,6 @@ STRING 2917
 // Units: h05N (Marksman), Ubertip (Tooltip - Extended)
 {
 One of the few elves to return from Outland, ready again to defend Mankind's gates.|n|cfff5962dAbilities:|R Fire Arrows, Critical strike, Feedback|n|cfff5962dCan Learn:|R Runic Strength|n|n|cffffcc00Attacks land and air units.|r
-}
-
-STRING 2918
-// Upgrades: R005 (Priest Adept Training,Priest Master Training), EditorSuffix (Editor Suffix)
-{
-(Arathor)
 }
 
 STRING 2919
@@ -22585,7 +22549,7 @@ STRING 3764
 }
 
 STRING 3765
-// Units: n04T (Steamwork Spire), Hotkey (Hotkey)
+// Units: n04T (Betrayer's Spire), Hotkey (Hotkey)
 {
 C
 }
@@ -22849,7 +22813,7 @@ STRING 3808
 }
 
 STRING 3809
-// Units: n055 (Steamwork Citadel), Hotkey (Hotkey)
+// Units: n055 (Betrayer's Citadel), Hotkey (Hotkey)
 {
 C
 }
@@ -23616,12 +23580,6 @@ STRING 3936
 Thunder Fists - [|cffffcc00Level 3|r]
 }
 
-STRING 3937
-// Units: h06A (Smitty), Ubertip (Tooltip - Extended)
-{
-Technological shop of engineering prowless.|n|cfff5962dTrains:|R Gunship, Saboteurs, Marshal
-}
-
 STRING 3938
 // Units: H017 (Highlord of the Alliance), EditorSuffix (Name - Editor Suffix)
 {
@@ -23644,12 +23602,6 @@ STRING 3941
 // Units: H017 (Highlord of the Alliance), Propernames (Proper Names)
 {
 Bolvar Fordragon
-}
-
-STRING 3942
-// Units: h06A (Smitty), Name (Name)
-{
-Smitty
 }
 
 STRING 3943
@@ -27674,7 +27626,7 @@ Dalaran Dungeon Statue
 }
 
 STRING 4613
-// Units: n055 (Steamwork Citadel), Ubertip (Tooltip - Extended)
+// Units: n0C8 (Monument of Currents), Ubertip (Tooltip - Extended)
 {
 Primary structure, used to train Mur'gul Slaves, Royal Guards and receive gathered resources. Also contains the Submerge upgrade.
 }
@@ -29276,7 +29228,7 @@ Improves Dryads' Slow Poison by increasing its damage dealt per second to <A0JL,
 }
 
 STRING 4880
-// Units: nntt (Steamwork Reservoir), Tip (Tooltip - Basic)
+// Units: nntt (Betrayer's Reservoir), Tip (Tooltip - Basic)
 {
 Build - Steamwork Reservoir
 }
@@ -34664,7 +34616,7 @@ E
 }
 
 STRING 5778
-// Units: Eevi (Betrayer), EditorSuffix (Name - Editor Suffix)
+// Units: E015 (Demon Hunter), EditorSuffix (Name - Editor Suffix)
 {
 (Naga)
 }
@@ -43853,7 +43805,7 @@ Stun Unit
 }
 
 STRING 7306
-// Units: nwgs (Couatl), EditorSuffix (Name - Editor Suffix)
+// Units: n045 (Temple of Azshara), EditorSuffix (Name - Editor Suffix)
 {
  (Nzoth)
 }
@@ -51064,12 +51016,6 @@ STRING 8507
 A Close
 }
 
-STRING 8508
-// Units: n08W (Lost One Den), Ubertip (Tooltip - Extended)
-{
-Trains Draenei Vindicator and Draenei Seer
-}
-
 STRING 8509
 // Abilities: A0NZ (A Close), Ubertip (Tooltip - Normal - Extended)
 {
@@ -51143,7 +51089,7 @@ Opens the gate.
 }
 
 STRING 8521
-// Units: h09L (Crimson Cathedral), EditorSuffix (Name - Editor Suffix)
+// Abilities: A0NX (A Close), EditorSuffix (Editor Suffix)
 {
 (Stormwind)
 }
@@ -51527,7 +51473,7 @@ This unit strikes with such force that <A0NE,DataA1,%>% of their damage strikes 
 }
 
 STRING 8585
-// Abilities: A0NX (A Close), EditorSuffix (Editor Suffix)
+// Abilities: A0NC (Reveal), EditorSuffix (Editor Suffix)
 {
 (Stormwind)
 }
@@ -51611,7 +51557,7 @@ Build - Monument of Currents
 }
 
 STRING 8599
-// Units: n05A (Vault of the Eternal Palace), Ubertip (Tooltip - Extended)
+// Units: n0C9 (Temple of Tides), Ubertip (Tooltip - Extended)
 {
 Primary structure, used to train Mur'gul Slaves, Royal Guards and receive gathered resources. Also contains the Submerge upgrade.
 }
@@ -51632,12 +51578,6 @@ STRING 8602
 // Units: n05A (Vault of the Eternal Palace), Tip (Tooltip - Basic)
 {
 Build - Temple of Tides
-}
-
-STRING 8603
-// Units: n0C2 (Pillar of Waves), Ubertip (Tooltip - Extended)
-{
-Primary structure, used to train Mur'gul Slaves, Royal Guards and receive gathered resources. Also contains the Submerge upgrade.
 }
 
 STRING 8604
@@ -60665,7 +60605,7 @@ Q
 }
 
 STRING 10108
-// Units: h0AC (Naga Sea Witch), EditorSuffix (Name - Editor Suffix)
+// Units: e01P (Coral of Life), EditorSuffix (Name - Editor Suffix)
 {
 (illidan)
 }
@@ -70422,7 +70362,7 @@ E
 }
 
 STRING 11734
-// Units: h06U (Siphoning Crystal), Ubertip (Tooltip - Extended)
+// Units: h0A4 (Coral Forge), Ubertip (Tooltip - Extended)
 {
 Provides attack and defense upgrades. Serves as a drop-off point for harvested lumber. 
 }
@@ -70716,7 +70656,7 @@ Holy Aura - [|cffffcc00Level 4|r]
 }
 
 STRING 11783
-// Units: U00S (High Warlord), EditorSuffix (Name - Editor Suffix)
+// Units: U02M (Grimscale Chieftain), EditorSuffix (Name - Editor Suffix)
 {
 (Naga)
 }
@@ -75146,12 +75086,6 @@ STRING 12520
 W
 }
 
-STRING 12521
-// Units: nwgs (Couatl), Tip (Tooltip - Basic)
-{
-Train - Couatl
-}
-
 STRING 12522
 // Units: n0C9 (Temple of Tides), Tip (Tooltip - Basic)
 {
@@ -75162,12 +75096,6 @@ STRING 12523
 // Units: n0D5 (Tidal Guardian), Tip (Tooltip - Basic)
 {
 Build - Tidal Guardian
-}
-
-STRING 12524
-// Units: nnsu (Summoner), Tip (Tooltip - Basic)
-{
-Train - Summoner
 }
 
 STRING 12525
@@ -76762,7 +76690,7 @@ Train Inquisitor
 }
 
 STRING 12790
-// Abilities: A0NC (Reveal), EditorSuffix (Editor Suffix)
+// Abilities: A0GD (Summon Garrison), EditorSuffix (Editor Suffix)
 {
 (Stormwind)
 }
@@ -79852,7 +79780,7 @@ Defensive Orbs - [|cffffcc00Level 1|r]
 }
 
 STRING 13305
-// Units: E015 (Demon Hunter), EditorSuffix (Name - Editor Suffix)
+// Abilities: ANen (Ensnare), EditorSuffix (Editor Suffix)
 {
 (Naga)
 }
@@ -88330,7 +88258,7 @@ Increases the maximum hit points of all casters by 100 and increases armor by 2.
 }
 
 STRING 14718
-// Abilities: A0GD (Summon Garrison), EditorSuffix (Editor Suffix)
+// Upgrades: R022 (Chaos), EditorSuffix (Editor Suffix)
 {
 (Stormwind)
 }
@@ -88762,7 +88690,7 @@ Improves all non-Hero units by increasing their damage number of dice by 1, hit 
 }
 
 STRING 14790
-// Upgrades: R022 (Chaos), EditorSuffix (Editor Suffix)
+// Upgrades: R01M (Chaos), EditorSuffix (Editor Suffix)
 {
 (Stormwind)
 }
@@ -89854,7 +89782,7 @@ Increases Fel Warlocks' mana capacity, mana regeneration rate, attack damage and
 }
 
 STRING 14972
-// Upgrades: R01M (Chaos), EditorSuffix (Editor Suffix)
+// Upgrades: R016 (Chaos), EditorSuffix (Editor Suffix)
 {
 (Stormwind)
 }
@@ -91246,12 +91174,6 @@ STRING 15212
 // Abilities: A0GP (Scattershot), Ubertip (Tooltip - Normal - Extended)
 {
 Fires a cannonball at every enemy unit in the target area, dealing <A0GL,DataA4> damage and stunning each target for <A0GL,Dur4> seconds.
-}
-
-STRING 15213
-// Units: U02M (Grimscale Chieftain), EditorSuffix (Name - Editor Suffix)
-{
-(Naga)
 }
 
 STRING 15214
@@ -93760,12 +93682,6 @@ STRING 15629
 (Fel Horde)
 }
 
-STRING 15630
-// Upgrades: R016 (Chaos), EditorSuffix (Editor Suffix)
-{
-(Stormwind)
-}
-
 STRING 15631
 // Upgrades: R05O (Iron Plating,Steel Plating,Mithril Plating), EditorSuffix (Editor Suffix)
 {
@@ -94355,12 +94271,6 @@ STRING 15728
 Heal all friendly units in the target area for 100 hit points.
 }
 
-STRING 15729
-// Units: h00A (Spearman), EditorSuffix (Name - Editor Suffix)
-{
-(stormwind)
-}
-
 STRING 15730
 // Abilities: A0M1 (Tidal Serpent), Ubertip (Tooltip - Normal - Extended)
 {
@@ -94563,12 +94473,6 @@ STRING 15763
 // Units: n0CD (Bloodkin), Casterupgradetip (Caster Upgrade Tips)
 {
 - Shadow Mend,- Shadow Mend|n- Dispel Magic,- Shadow Mend|n- Dispel Magic|n - Bloodlust
-}
-
-STRING 15764
-// Units: n0C8 (Monument of Currents), Ubertip (Tooltip - Extended)
-{
-Primary structure, used to train Mur'gul Slaves, Royal Guards and receive gathered resources. Also contains the Submerge upgrade.
 }
 
 STRING 15765
@@ -95772,7 +95676,7 @@ Goldrinn's Might - [|cffffcc00Level 3|r]
 }
 
 STRING 15965
-// Units: e01P (Coral of Life), EditorSuffix (Name - Editor Suffix)
+// Units: e01Q (Coral of Ages), EditorSuffix (Name - Editor Suffix)
 {
 (illidan)
 }
@@ -96979,12 +96883,6 @@ STRING 16165
 Golden Vessel
 }
 
-STRING 16166
-// Units: h06A (Smitty), Tip (Tooltip - Basic)
-{
-Build Smitty
-}
-
 STRING 16167
 // Units: n07W (Plague Revenant), Ubertip (Tooltip - Extended)
 {
@@ -97521,18 +97419,6 @@ STRING 16256
 // Units: O05S (Warlord Maiden), Revivetip (Tooltip - Revive)
 {
 Revive Warlord Maiden
-}
-
-STRING 16257
-// Units: ndrs (Draenei Seer), Tip (Tooltip - Basic)
-{
-Train Draenei Seer
-}
-
-STRING 16258
-// Units: ndrn (Draenei Vindicator), Tip (Tooltip - Basic)
-{
-Train Draenei Vindicator
 }
 
 STRING 16259
@@ -99069,18 +98955,6 @@ STRING 16514
 // Abilities: A0VW (Wrath of Ragnaros), Tip (Tooltip - Normal)
 {
 Wrath of Ragnaros - [|cffffcc00Level 3|r]
-}
-
-STRING 16515
-// Units: n08W (Lost One Den), Name (Name)
-{
-Lost One Den
-}
-
-STRING 16516
-// Units: n08W (Lost One Den), Tip (Tooltip - Basic)
-{
-Build - Lost One Den
 }
 
 STRING 16517
@@ -105865,12 +105739,6 @@ STRING 17646
 Flame Shield
 }
 
-STRING 17647
-// Units: nntt (Steamwork Reservoir), Name (Name)
-{
-Steamwork Reservoir
-}
-
 STRING 17648
 // Abilities: A0TH (Dispel Magic), Hotkey (Hotkey - Normal)
 {
@@ -107434,12 +107302,6 @@ STRING 17907
 // Buffs/Effects: B024 (), Bufftip (Tooltip)
 {
 Moving Earth
-}
-
-STRING 17908
-// Units: nnsg (Spawning Pit), Tip (Tooltip - Basic)
-{
-Build - Spawning Pit
 }
 
 STRING 17909
@@ -110731,12 +110593,6 @@ STRING 18456
 Increases Deepseer's mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Parasite.
 }
 
-STRING 18457
-// Units: n0C9 (Temple of Tides), Ubertip (Tooltip - Extended)
-{
-Primary structure, used to train Mur'gul Slaves, Royal Guards and receive gathered resources. Also contains the Submerge upgrade.
-}
-
 STRING 18458
 // Upgrades: R08P (Naga Siren Adept Training,Naga Siren Master Training), Name (Name)
 {
@@ -110768,13 +110624,13 @@ Research Deepseer Adept Training
 }
 
 STRING 18463
-// Units: h0A4 (Coral Forge), Tip (Tooltip - Basic)
+// Units: h0AD (Coral Forge), Tip (Tooltip - Basic)
 {
 Build - Coral Forge
 }
 
 STRING 18464
-// Units: h0A4 (Coral Forge), Ubertip (Tooltip - Extended)
+// Units: h0AD (Coral Forge), Ubertip (Tooltip - Extended)
 {
 Provides attack and defense upgrades. Serves as a drop-off point for harvested lumber. 
 }
@@ -110879,12 +110735,6 @@ STRING 18481
 // Units: n0CA (Naga Incursor), Tip (Tooltip - Basic)
 {
 Train Naga Incursor
-}
-
-STRING 18482
-// Units: nnsg (Spawning Pit), Name (Name)
-{
-Spawning Pit
 }
 
 STRING 18483
@@ -111043,12 +110893,6 @@ STRING 18508
 The Pit Lord lets loose a terrifying howl that reduces nearby enemy units' attack damage by <ANht,DataA6,%>% for <ANht,Dur6> seconds.
 }
 
-STRING 18509
-// Units: nnsa (Serpentshrine), Tip (Tooltip - Basic)
-{
-Build - Serpentshrine
-}
-
 STRING 18510
 // Units: h0AC (Naga Sea Witch), Name (Name)
 {
@@ -111131,12 +110975,6 @@ STRING 18523
 // Units: h0AB (Shadowcaster), Name (Name)
 {
 Shadowcaster
-}
-
-STRING 18524
-// Units: nnsa (Serpentshrine), Ubertip (Tooltip - Extended)
-{
-Trains Arcane Drakes and the mighty Scylla. Also contains spell upgrades for Naga Sirens, Summoners and Mur'gul Shadowcasters.
 }
 
 STRING 18525
@@ -111409,12 +111247,6 @@ STRING 18569
 (Ironforge)
 }
 
-STRING 18570
-// Units: nnsa (Serpentshrine), Name (Name)
-{
-Serpentshrine
-}
-
 STRING 18571
 // Units: U02K (Lord of the Firelands), Propernames (Proper Names)
 {
@@ -111648,12 +111480,6 @@ STRING 18609
 // Abilities: A0VU (Magma Blast), EditorSuffix (Editor Suffix)
 {
  (Ragnaros)
-}
-
-STRING 18610
-// Units: nnfm (Incubation Pool), Tip (Tooltip - Basic)
-{
-Build - Incubation Pool
 }
 
 STRING 18611
@@ -112176,12 +112002,6 @@ STRING 18697
 // Abilities: A0XE (Goblin Flare), Name (Name)
 {
 Goblin Flare
-}
-
-STRING 18698
-// Units: nmrb (Steamvault), Tip (Tooltip - Basic)
-{
-Build - Steamvault
 }
 
 STRING 18699
@@ -112772,12 +112592,6 @@ STRING 18796
 Throws a gobule of magma at a target enemy unit, dealing substantial damage and stunning it.|n|n|cffffcc00Level 1|r - Deals <A0VU,DataA1> damage, stuns heroes for <A0VU,HeroDur1> second and normal units for <A0VU,Dur1> second.|n|cffffcc00Level 2|r - Deals <A0VU,DataA2> damage, stuns heroes for <A0VU,HeroDur2> seconds and normal units for <A0VU,Dur2> seconds.|n|cffffcc00Level 3|r - Deals <A0VU,DataA3> damage, stuns heroes for <A0VU,HeroDur3> seconds and normal units for <A0VU,Dur3> seconds.|n|cffffcc00Level 4|r - Deals <A0VU,DataA4> damage, stuns heroes for <A0VU,HeroDur4> seconds and normal units for <A0VU,Dur4> seconds.
 }
 
-STRING 18797
-// Units: h06S (Steamforge), Name (Name)
-{
-Steamforge
-}
-
 STRING 18798
 // Buffs/Effects: B03E (Flame Shield (Ragnaros)), Bufftip (Tooltip)
 {
@@ -112818,12 +112632,6 @@ STRING 18804
 // Upgrades: R036 (Pillage), Name (Name)
 {
 Incinerate
-}
-
-STRING 18805
-// Units: n04T (Steamwork Spire), Tip (Tooltip - Basic)
-{
-Build - Steamwork Spire
 }
 
 STRING 18806
@@ -112893,61 +112701,61 @@ Breath of Life
 }
 
 STRING 18817
-// Units: n045 (Temple of Azshara), EditorSuffix (Name - Editor Suffix)
+// Units: h01Q (Immortal Guardian), EditorSuffix (Name - Editor Suffix)
 {
  (Nzoth)
 }
 
 STRING 18818
-// Units: nntt (Steamwork Reservoir), EditorSuffix (Name - Editor Suffix)
-{
- (Illidari)
-}
-
-STRING 18819
 // Units: nntg (Tidal Watcher), EditorSuffix (Name - Editor Suffix)
 {
  (Illidari)
 }
 
+STRING 18819
+// Units: nnsu (Coilfang Summoner), EditorSuffix (Name - Editor Suffix)
+{
+ (Illidari)
+}
+
 STRING 18820
-// Units: nnsu (Summoner), EditorSuffix (Name - Editor Suffix)
+// Units: nnsg (Wrathfin Spawnery), EditorSuffix (Name - Editor Suffix)
 {
  (Illidari)
 }
 
 STRING 18821
-// Units: nnsg (Spawning Pit), EditorSuffix (Name - Editor Suffix)
+// Units: nnsa (Bloodscale Clutchery), EditorSuffix (Name - Editor Suffix)
 {
  (Illidari)
 }
 
 STRING 18822
-// Units: nnsa (Serpentshrine), EditorSuffix (Name - Editor Suffix)
-{
- (Illidari)
-}
-
-STRING 18823
 // Units: nnrg (Naga Royal Guard), EditorSuffix (Name - Editor Suffix)
 {
  (Illidari)
 }
 
-STRING 18824
+STRING 18823
 // Units: nnfm (Incubation Pool), EditorSuffix (Name - Editor Suffix)
 {
  (Illidari)
 }
 
-STRING 18825
+STRING 18824
 // Units: nnad (Altar of the Betrayer), EditorSuffix (Name - Editor Suffix)
 {
  (Illidari)
 }
 
-STRING 18826
+STRING 18825
 // Units: nmyr (Naga Myrmidon), EditorSuffix (Name - Editor Suffix)
+{
+ (Illidari)
+}
+
+STRING 18826
+// Units: nmsc (Mur'gul Shadowcaster), EditorSuffix (Name - Editor Suffix)
 {
  (Illidari)
 }
@@ -112965,198 +112773,192 @@ V
 }
 
 STRING 18829
-// Units: nmsc (Mur'gul Shadowcaster), EditorSuffix (Name - Editor Suffix)
-{
- (Illidari)
-}
-
-STRING 18830
 // Units: nhyc (Dragon Turtle), EditorSuffix (Name - Editor Suffix)
 {
  (Illidari)
 }
 
+STRING 18830
+// Units: ndrs (Ashtongue Mystic), EditorSuffix (Name - Editor Suffix)
+{
+ (Illidari)
+}
+
 STRING 18831
-// Units: ndrs (Draenei Seer), EditorSuffix (Name - Editor Suffix)
+// Units: ndrn (Ashtongue Deathsworn), EditorSuffix (Name - Editor Suffix)
 {
  (Illidari)
 }
 
 STRING 18832
-// Units: ndrn (Draenei Vindicator), EditorSuffix (Name - Editor Suffix)
+// Units: Eill (The Betrayer), EditorSuffix (Name - Editor Suffix)
 {
  (Illidari)
 }
 
 STRING 18833
-// Units: h01Q (Immortal Guardian), EditorSuffix (Name - Editor Suffix)
-{
- (Nzoth)
-}
-
-STRING 18834
-// Units: nnsw (Naga Siren), EditorSuffix (Name - Editor Suffix)
-{
- (Illidari)
-}
-
-STRING 18835
-// Units: nsnp (Snap Dragon), EditorSuffix (Name - Editor Suffix)
-{
- (Illidari)
-}
-
-STRING 18836
 // Units: U01Z (Old God), EditorSuffix (Name - Editor Suffix)
 {
  (Nzoth)
 }
 
-STRING 18837
-// Units: n0A3 (Coilfang Archive), EditorSuffix (Name - Editor Suffix)
+STRING 18834
+// Units: Eevi (Betrayer), EditorSuffix (Name - Editor Suffix)
 {
  (Illidari)
 }
 
-STRING 18838
-// Units: n005 (Improved Tidal Watcher), EditorSuffix (Name - Editor Suffix)
+STRING 18835
+// Units: nnsw (Naga Siren), EditorSuffix (Name - Editor Suffix)
 {
  (Illidari)
 }
 
-STRING 18839
-// Units: h06S (Steamforge), EditorSuffix (Name - Editor Suffix)
-{
- (Illidari)
-}
-
-STRING 18840
-// Units: e00Y (Scylla), EditorSuffix (Name - Editor Suffix)
-{
- (Illidari)
-}
-
-STRING 18841
+STRING 18836
 // Units: H08U (Empress of Nazjatar), EditorSuffix (Name - Editor Suffix)
 {
  (Nzoth)
 }
 
-STRING 18842
+STRING 18837
+// Units: nsnp (Snap Dragon), EditorSuffix (Name - Editor Suffix)
+{
+ (Illidari)
+}
+
+STRING 18838
+// Units: Hvsh (Sea Witch), EditorSuffix (Name - Editor Suffix)
+{
+ (Illidari)
+}
+
+STRING 18839
+// Units: n0A3 (Coilfang Archive), EditorSuffix (Name - Editor Suffix)
+{
+ (Illidari)
+}
+
+STRING 18840
+// Units: n005 (Improved Tidal Watcher), EditorSuffix (Name - Editor Suffix)
+{
+ (Illidari)
+}
+
+STRING 18841
 // Units: n08V (Depth Void Portal), EditorSuffix (Name - Editor Suffix)
 {
  (Nzoth)
 }
 
-STRING 18843
-// Units: n04T (Steamwork Spire), EditorSuffix (Name - Editor Suffix)
-{
- (Illidari)
-}
-
-STRING 18844
+STRING 18842
 // Units: n0BQ (The First Guardian), EditorSuffix (Name - Editor Suffix)
 {
  (Nzoth)
 }
 
-STRING 18845
-// Units: n055 (Steamwork Citadel), EditorSuffix (Name - Editor Suffix)
+STRING 18843
+// Units: h06S (Coilskar Forgeworks), EditorSuffix (Name - Editor Suffix)
 {
  (Illidari)
 }
 
-STRING 18846
+STRING 18844
 // Units: n0C0 (Altar of the Queen), EditorSuffix (Name - Editor Suffix)
 {
  (Nzoth)
 }
 
-STRING 18847
+STRING 18845
+// Units: e00Y (Scylla), EditorSuffix (Name - Editor Suffix)
+{
+ (Illidari)
+}
+
+STRING 18846
 // Units: n0C1 (Arcane Well), EditorSuffix (Name - Editor Suffix)
 {
  (Nzoth)
 }
 
-STRING 18848
+STRING 18847
 // Units: n0C2 (Pillar of Waves), EditorSuffix (Name - Editor Suffix)
 {
  (Nzoth)
 }
 
-STRING 18849
+STRING 18848
 // Units: n0C3 (Shrine of Azshara), EditorSuffix (Name - Editor Suffix)
 {
  (Nzoth)
 }
 
-STRING 18850
+STRING 18849
 // Units: n0C4 (Spawning Grounds), EditorSuffix (Name - Editor Suffix)
 {
  (Nzoth)
 }
 
-STRING 18851
+STRING 18850
 // Units: n0C5 (Temple Protector), EditorSuffix (Name - Editor Suffix)
 {
  (Nzoth)
 }
 
-STRING 18852
+STRING 18851
 // Units: n0C6 (Improved Temple Protector), EditorSuffix (Name - Editor Suffix)
 {
  (Nzoth)
 }
 
-STRING 18853
+STRING 18852
 // Units: n0C7 (Royal Temple), EditorSuffix (Name - Editor Suffix)
 {
  (Nzoth)
 }
 
-STRING 18854
+STRING 18853
 // Units: n0C8 (Monument of Currents), EditorSuffix (Name - Editor Suffix)
 {
  (Nzoth)
 }
 
-STRING 18855
+STRING 18854
 // Units: n0C9 (Temple of Tides), EditorSuffix (Name - Editor Suffix)
 {
  (Nzoth)
 }
 
-STRING 18856
+STRING 18855
 // Units: H0A5 (Sea Witch), EditorSuffix (Name - Editor Suffix)
 {
  (Nzoth)
 }
 
-STRING 18857
+STRING 18856
 // Units: n0CB (Deepseer), EditorSuffix (Name - Editor Suffix)
 {
  (Nzoth)
 }
 
-STRING 18858
+STRING 18857
 // Units: n0CD (Bloodkin), EditorSuffix (Name - Editor Suffix)
 {
  (Nzoth)
 }
 
-STRING 18859
+STRING 18858
 // Units: n0CE (Hatchling), EditorSuffix (Name - Editor Suffix)
 {
  (Nzoth)
 }
 
-STRING 18860
+STRING 18859
 // Units: u02J (Tidal Terror), EditorSuffix (Name - Editor Suffix)
 {
  (Nzoth)
 }
 
-STRING 18861
+STRING 18860
 // Units: n0CL (Gargantuan Sea Turtle), EditorSuffix (Name - Editor Suffix)
 {
  (Nzoth)
@@ -113202,12 +113004,6 @@ STRING 18868
 // Abilities: ANrc (Rain of Chaos), EditorSuffix (Editor Suffix)
 {
 (Legion, Archimonde, Mannoroth)
-}
-
-STRING 18869
-// Units: n04T (Steamwork Spire), Name (Name)
-{
-Steamwork Spire
 }
 
 STRING 18870
@@ -113376,12 +113172,6 @@ STRING 18897
 // Upgrades: Resm (Strength of the Moon,Improved Strength of the Moon,Advanced Strength of the Moo), Hotkey (Hotkey)
 {
 Q
-}
-
-STRING 18898
-// Units: n055 (Steamwork Citadel), Tip (Tooltip - Basic)
-{
-Steamwork Citadel
 }
 
 STRING 18899
@@ -113678,14 +113468,8 @@ STRING 18947
 The hero burns with a withering heat, searing and slowing nearby enemies.|n|n|cffffcc00Level 1|r - Deals <A0VR,DataB1> periodic damage to nearby enemy units and reduces their movement speed by <A0VR,DataA1,%>%|n|cffffcc00Level 2|r - Deals <A0VR,DataB2> periodic damage to nearby enemy units and reduces their movement speed by <A0VR,DataA2,%>%|n|cffffcc00Level 3|r - Deals <A0VR,DataB3> periodic damage to nearby enemy units and reduces their movement speed by <A0VR,DataA3,%>%|n|cffffcc00Level 4|r - Deals <A0VR,DataB4> periodic damage to nearby enemy units and reduces their movement speed by <A0VR,DataA4,%>%
 }
 
-STRING 18948
-// Units: n055 (Steamwork Citadel), Name (Name)
-{
-Steamwork Citadel
-}
-
 STRING 18949
-// Units: n08W (Lost One Den), EditorSuffix (Name - Editor Suffix)
+// Units: n08W (Ashtongue Lair), EditorSuffix (Name - Editor Suffix)
 {
  (Illidari)
 }
@@ -115040,12 +114824,6 @@ STRING 19174
 Summon Mmmrrrggglll
 }
 
-STRING 19175
-// Abilities: ANen (Ensnare), EditorSuffix (Editor Suffix)
-{
-(Naga)
-}
-
 STRING 19176
 // Abilities: A06L (Mana Shield), Ubertip (Tooltip - Normal - Extended)
 {
@@ -115256,6 +115034,12 @@ STRING 19210
 Build a Murloc Gathering at target location, has a 300 seconds cooldown.
 }
 
+STRING 19211
+// Units: nwgs (Couatl), EditorSuffix (Name - Editor Suffix)
+{
+ (Nzoth, Illidari)
+}
+
 STRING 19212
 // Abilities: A0YN (Build Gnoll Kennel), Tip (Tooltip - Normal)
 {
@@ -115346,6 +115130,12 @@ STRING 19226
 Cliffrunner
 }
 
+STRING 19227
+// Units: nntt (Betrayer's Reservoir), EditorSuffix (Name - Editor Suffix)
+{
+ (Illidari T1)
+}
+
 STRING 19228
 // Upgrades: R02V (Naga Siren Adept Training,Naga Siren Master Training), Hotkey (Hotkey)
 {
@@ -115364,10 +115154,28 @@ STRING 19230
 R
 }
 
+STRING 19231
+// Units: nntt (Betrayer's Reservoir), Ubertip (Tooltip - Extended)
+{
+Primary structure.|n|cff6480ff|cfff5962dTrains:|R Mur'gul Slave|n|cfff5962dUpgrades to:|R Steamwork Spire
+}
+
+STRING 19232
+// Units: nntt (Betrayer's Reservoir), Name (Name)
+{
+Betrayer's Reservoir
+}
+
 STRING 19233
 // Upgrades: R08K (Priest Adept Training,Priest Master Training), EditorSuffix (Editor Suffix)
 {
 (Ironforge)
+}
+
+STRING 19234
+// Units: nnsu (Coilfang Summoner), Tip (Tooltip - Basic)
+{
+Train Coilfang Summoner
 }
 
 STRING 19235
@@ -115536,6 +115344,12 @@ STRING 19262
 // Abilities: A02C (Summon Fire Elemental), Tip (Tooltip - Normal)
 {
 Summon Fire Elemental
+}
+
+STRING 19263
+// Units: nnsu (Coilfang Summoner), Name (Name)
+{
+Coilfang Summoner
 }
 
 STRING 19264
@@ -115747,6 +115561,12 @@ STRING 19298
 // Units: h0AJ (Gnoll Overseer), Ubertip (Tooltip - Extended)
 {
 Powerful Gnoll Leader.|n|cfff5962dAbilities:|R Earth Healing, Taunt, Bash|n|cff99b4d1Can only train 4.|r|n|cffffcc00Attacks land units.|r
+}
+
+STRING 19299
+// Units: nnsg (Wrathfin Spawnery), Tip (Tooltip - Basic)
+{
+Build Wrathfin Spawnery
 }
 
 STRING 19300
@@ -116104,7 +115924,7 @@ Coral of Life
 }
 
 STRING 19359
-// Units: e01Q (Coral of Ages), EditorSuffix (Name - Editor Suffix)
+// Units: n0D5 (Tidal Guardian), EditorSuffix (Name - Editor Suffix)
 {
 (illidan)
 }
@@ -116149,6 +115969,12 @@ STRING 19366
 // Units: e01S (Altar of the Depth), Tip (Tooltip - Basic)
 {
 Build Altar of the Depth
+}
+
+STRING 19367
+// Units: nnsg (Wrathfin Spawnery), Ubertip (Tooltip - Extended)
+{
+A writhing spawning ground for the Illidari Naga.|n|n|r|cfff5962dTrains:|R Naga Myrmidon, Snap Dragon, Dragon Turtle
 }
 
 STRING 19368
@@ -116254,12 +116080,6 @@ STRING 19384
 }
 
 STRING 19385
-// Units: n0D5 (Tidal Guardian), EditorSuffix (Name - Editor Suffix)
-{
-(illidan)
-}
-
-STRING 19386
 // Units: h0AD (Coral Forge), EditorSuffix (Name - Editor Suffix)
 {
 (illidan)
@@ -116269,18 +116089,6 @@ STRING 19387
 // Units: h0AD (Coral Forge), Name (Name)
 {
 Coral Forge
-}
-
-STRING 19388
-// Units: h0AD (Coral Forge), Tip (Tooltip - Basic)
-{
-Build - Coral Forge
-}
-
-STRING 19389
-// Units: h0AD (Coral Forge), Ubertip (Tooltip - Extended)
-{
-Provides attack and defense upgrades. Serves as a drop-off point for harvested lumber. 
 }
 
 STRING 19390
@@ -116293,6 +116101,12 @@ STRING 19391
 // Abilities: A10I (Demon Rage), EditorSuffix (Editor Suffix)
 {
 (Illidan)
+}
+
+STRING 19392
+// Units: nnsg (Wrathfin Spawnery), Name (Name)
+{
+Wrathfin Spawnery
 }
 
 STRING 19393
@@ -116509,6 +116323,12 @@ STRING 19428
 // Upgrades: Rosp (Spiked Barricades,Improved Spiked Barricades,Advanced Spiked Barricades), Hotkey (Hotkey)
 {
 R
+}
+
+STRING 19429
+// Units: nnsa (Bloodscale Clutchery), Tip (Tooltip - Basic)
+{
+Build Bloodscale Clutchery
 }
 
 STRING 19430
@@ -116775,6 +116595,12 @@ STRING 19473
 (farawell)
 }
 
+STRING 19474
+// Units: nnsa (Bloodscale Clutchery), Ubertip (Tooltip - Extended)
+{
+The reeking clutchery of the Illidari, from which come it's dreadful beasts of the sky.|n|n|r|cfff5962dTrains:|R Couatl, Scylla
+}
+
 STRING 19475
 // Upgrades: R094 (Chaos), Name (Name)
 {
@@ -116823,6 +116649,18 @@ STRING 19482
 Opens a two-way portal to Nagrand at the target location within a range of <A00D,Rng1>. The portal becomes useable after 5 seconds, and closes 10 seconds after the caster stops channeling.
 }
 
+STRING 19483
+// Units: nnsa (Bloodscale Clutchery), Name (Name)
+{
+Bloodscale Clutchery
+}
+
+STRING 19484
+// Units: nnfm (Incubation Pool), Tip (Tooltip - Basic)
+{
+Build Incubation Pool
+}
+
 STRING 19485
 // Upgrades: R00N (Storm Hammers), Hotkey (Hotkey)
 {
@@ -116833,6 +116671,12 @@ STRING 19486
 // Items: I017 (Portal to Nagrand), Description (Description)
 {
 Transports troops to Nagrand.
+}
+
+STRING 19487
+// Units: nnfm (Incubation Pool), Ubertip (Tooltip - Extended)
+{
+A pool filled with swarming tadpoles and luminescent red eggs.|nProvides 8 food, which increases the maximum number of units that can be trained.
 }
 
 STRING 19488
@@ -116857,6 +116701,12 @@ STRING 19491
 // Abilities: A0ZJ (Portal to Nagrand), Tip (Tooltip - Normal)
 {
 Portal to Nagrand
+}
+
+STRING 19492
+// Units: nmrb (Steamvault), Tip (Tooltip - Basic)
+{
+Build Steamvault
 }
 
 STRING 19493
@@ -116899,5 +116749,191 @@ STRING 19499
 // Units: h06T (Altar of Kings), Ubertip (Tooltip - Extended)
 {
 Summons Heroes and revives slain Heroes.
+}
+
+STRING 19500
+// Units: nmrb (Steamvault), Ubertip (Tooltip - Extended)
+{
+The mechanical vault of the Illidari, housing many stolen treasures and artifacts.
+}
+
+STRING 19501
+// Units: ndrs (Ashtongue Mystic), Tip (Tooltip - Basic)
+{
+Train Ashtongue Mystic
+}
+
+STRING 19502
+// Units: ndrs (Ashtongue Mystic), Ubertip (Tooltip - Extended)
+{
+Heavy ranged unit. Can cast Lightning Shield and Healing Wave. |n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land and air units.|r
+}
+
+STRING 19503
+// Units: ndrs (Ashtongue Mystic), Name (Name)
+{
+Ashtongue Mystic
+}
+
+STRING 19504
+// Units: ndrn (Ashtongue Deathsworn), Tip (Tooltip - Basic)
+{
+Train Ashtongue Deathsworn
+}
+
+STRING 19505
+// Units: ndrn (Ashtongue Deathsworn), Name (Name)
+{
+Ashtongue Deathsworn
+}
+
+STRING 19506
+// Units: n0A3 (Coilfang Archive), Ubertip (Tooltip - Extended)
+{
+The drowned halls of knowledge, kept by the Coilfang and Mur'gul intelligent enough to read.|n|n|r|cfff5962dTrains:|R Naga Siren, Mur'gul Shadowcaster, Coilfang Summoner|n|cfff5962dResearches:|r Power Infusion, Shadowcaster Adept Training, Naga Siren Adept Training
+}
+
+STRING 19507
+// Units: h06T (Altar of Kings), EditorSuffix (Name - Editor Suffix)
+{
+ (Stormwind)
+}
+
+STRING 19508
+// Units: h06S (Coilskar Forgeworks), Name (Name)
+{
+Coilskar Forgeworks
+}
+
+STRING 19509
+// Units: h06S (Coilskar Forgeworks), Tip (Tooltip - Basic)
+{
+Build Coilskar Forgeworks
+}
+
+STRING 19510
+// Units: h06S (Coilskar Forgeworks), Ubertip (Tooltip - Extended)
+{
+Mur'gul slaves toil to provide the Illidari with ever-improving weapons and armour.|n|n|cfff5962dResearches: |RForged Weaponry, Armour Plating, Power Infusion|n
+}
+
+STRING 19511
+// Units: h06F (Blacksmith), EditorSuffix (Name - Editor Suffix)
+{
+ (Stormwind)
+}
+
+STRING 19512
+// Units: h06D (Royal Harbour), EditorSuffix (Name - Editor Suffix)
+{
+ (Stormwind)
+}
+
+STRING 19513
+// Units: h06A (Smithy), Ubertip (Tooltip - Extended)
+{
+The mechanical heart of Stormwind's war machine.|n|cfff5962dTrains:|R Gunship, Saboteur, Marshal
+}
+
+STRING 19514
+// Units: h06A (Smithy), Name (Name)
+{
+Smithy
+}
+
+STRING 19515
+// Units: h06A (Smithy), Tip (Tooltip - Basic)
+{
+Build Smithy
+}
+
+STRING 19516
+// Units: h03X (Sentinel Tower), EditorSuffix (Name - Editor Suffix)
+{
+ (Stormwind)
+}
+
+STRING 19517
+// Units: n04T (Betrayer's Spire), EditorSuffix (Name - Editor Suffix)
+{
+ (Illidari T2)
+}
+
+STRING 19518
+// Units: n04T (Betrayer's Spire), Tip (Tooltip - Basic)
+{
+Upgrade to Betrayer's Spire
+}
+
+STRING 19519
+// Units: n04T (Betrayer's Spire), Ubertip (Tooltip - Extended)
+{
+Primary structure.|n|cff6480ff|cfff5962dTrains:|R Mur'gul Slave|n|cfff5962dUpgrades to:|R Steamwork Citadel
+}
+
+STRING 19520
+// Units: n04T (Betrayer's Spire), Name (Name)
+{
+Betrayer's Spire
+}
+
+STRING 19521
+// Units: n055 (Betrayer's Citadel), EditorSuffix (Name - Editor Suffix)
+{
+ (Illidari T3)
+}
+
+STRING 19522
+// Units: n055 (Betrayer's Citadel), Tip (Tooltip - Basic)
+{
+Upgrade to Betrayer's Citadel
+}
+
+STRING 19523
+// Units: n055 (Betrayer's Citadel), Ubertip (Tooltip - Extended)
+{
+Primary structure.|n|cff6480ff|cfff5962dTrains:|R Mur'gul Slave, Naga Royal Guard, Naga Sea Witch|n|cfff5962dResearches:|R Full Scale Escalation
+}
+
+STRING 19524
+// Units: n055 (Betrayer's Citadel), Name (Name)
+{
+Betrayer's Citadel
+}
+
+STRING 19525
+// Units: n08W (Ashtongue Lair), Name (Name)
+{
+Ashtongue Lair
+}
+
+STRING 19526
+// Units: n08W (Ashtongue Lair), Tip (Tooltip - Basic)
+{
+Build Ashtongue Lair
+}
+
+STRING 19527
+// Units: n08W (Ashtongue Lair), Ubertip (Tooltip - Extended)
+{
+A mustering hall to the most vicious and bloodthirsty Broken, handpicked by Akama himself for their loyalty to Illidan. |n|n|r|cfff5962dTrains:|R Ashtongue Deathsworn, Ashtongue Mystic
+}
+
+STRING 19528
+// Units: h09L (Crimson Cathedral), EditorSuffix (Name - Editor Suffix)
+{
+ (Scarlet)
+}
+
+STRING 19529
+// Units: h0AC (Naga Sea Witch), EditorSuffix (Name - Editor Suffix)
+{
+ (Illidari Elite)
+}
+
+STRING 19530
+// Destructibles: B00D (Wyrmrest), Name (Name)
+{
+Wyrmrest
 }
 
