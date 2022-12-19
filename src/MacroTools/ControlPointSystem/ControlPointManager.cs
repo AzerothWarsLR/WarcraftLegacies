@@ -266,7 +266,7 @@ namespace MacroTools.ControlPointSystem
     private void ScaleHitpointsToControlLevel(ControlPoint controlPoint)
     {
       var maxHitPoints = MaxHitpoints + controlPoint.ControlLevel * 500;
-      var lifePercent = controlPoint.Unit.GetLifePercent();
+      var lifePercent = Math.Max(controlPoint.Unit.GetLifePercent(), 1);
       controlPoint.Unit
         .SetMaximumHitpoints(maxHitPoints)
         .SetLifePercent(lifePercent);
