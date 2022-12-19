@@ -97,6 +97,7 @@ namespace MacroTools.ControlPointSystem
       RegisterIncomeGeneration(controlPoint);
       RegisterDamageTrigger(controlPoint);
       RegisterOwnershipChangeTrigger(controlPoint);
+      RegisterControlLevelChangeTrigger(controlPoint);
     }
 
     private static void RegisterIncomeGeneration(ControlPoint controlPoint)
@@ -171,6 +172,42 @@ namespace MacroTools.ControlPointSystem
             Console.WriteLine(ex);
           }
         });
+    }
+    
+    private void RegisterControlLevelChangeTrigger(ControlPoint controlPoint)
+    {
+      controlPoint.ControlLevelChanged += (_, _) =>
+      {
+        if (controlPoint.ControlLevel > 0)
+        {
+          controlPoint.Defender ??= CreateUnit(controlPoint.Owner, DefenderUnitTypeId, GetUnitX(controlPoint.Unit), GetUnitY(controlPoint.Unit), 0);
+          controlPoint.Defender
+            .SetDamageBase(100 + controlPoint.ControlLevel * 50)
+            .SetDamageNumberOfDice(6)
+            .SetDamageSidesPerDie(6)
+            .SetSkin(FourCC("hfoo"))
+            .AddAbility(FourCC("Aloc"))
+            .SetInvulnerable(true);
+          controlPoint.Unit
+            .SetMaximumHitpoints(MaxHitpoints + controlPoint.ControlLevel * 500);
+          CreateTrigger()
+            .RegisterUnitEvent(controlPoint.Unit, EVENT_UNIT_CHANGE_OWNER)
+            .AddAction(() =>
+            {
+              controlPoint.ControlLevel = 0;
+              controlPoint.Defender?.Kill();
+              DestroyTrigger(GetTriggeringTrigger());
+            });
+        }
+        else
+        {
+          controlPoint.Defender?.Kill();
+          controlPoint.Defender = null;
+          controlPoint.Unit
+            .SetInvulnerable(false)
+            .SetMaximumHitpoints(MaxHitpoints);
+        }
+      };
     }
   }
 }
