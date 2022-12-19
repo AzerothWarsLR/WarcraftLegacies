@@ -79,7 +79,7 @@ namespace MacroTools.ControlPointSystem
     }
 
     /// <summary>
-    /// Invokes the <see cref="ChangedOwner"/> event with the provided arguments..
+    /// Invokes the <see cref="ChangedOwner"/> event with the provided arguments.
     /// </summary>
     public void SignalOwnershipChange(ControlPointOwnerChangeEventArgs args) => ChangedOwner?.Invoke(this, args);
   }
