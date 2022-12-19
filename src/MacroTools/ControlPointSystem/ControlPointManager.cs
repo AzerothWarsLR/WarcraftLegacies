@@ -189,13 +189,15 @@ namespace MacroTools.ControlPointSystem
             .AddAbility(FourCC("Aloc"))
             .SetInvulnerable(true);
           controlPoint.Unit
-            .SetMaximumHitpoints(MaxHitpoints + controlPoint.ControlLevel * 500);
+            .SetMaximumHitpoints(MaxHitpoints + controlPoint.ControlLevel * 500)
+            .SetScale(2);
           CreateTrigger()
             .RegisterUnitEvent(controlPoint.Unit, EVENT_UNIT_CHANGE_OWNER)
             .AddAction(() =>
             {
               controlPoint.ControlLevel = 0;
               controlPoint.Defender?.Kill();
+              controlPoint.Unit.SetScale(1);
               DestroyTrigger(GetTriggeringTrigger());
             });
         }
