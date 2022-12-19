@@ -35,8 +35,10 @@ namespace MacroTools.QuestSystem.UtilityStructs
       _areaName = areaName;
       foreach (var rectangle in rectangles)
       {
-        foreach (var unit in CreateGroup().EnumUnitsInRect(rectangle).EmptyToList()
-                   .Where(x => x.OwningPlayer() == Player(PLAYER_NEUTRAL_AGGRESSIVE) && !x.IsType(UNIT_TYPE_ANCIENT)))
+        var unitsInAreas = CreateGroup().EnumUnitsInRect(rectangle).EmptyToList()
+          .Where(x => x.OwningPlayer() == Player(PLAYER_NEUTRAL_AGGRESSIVE) && !x.IsType(UNIT_TYPE_ANCIENT) &&
+                      !x.IsType(UNIT_TYPE_SAPPER));
+        foreach (var unit in unitsInAreas)
         {
           _maxKillCount++;
           CreateTrigger()
