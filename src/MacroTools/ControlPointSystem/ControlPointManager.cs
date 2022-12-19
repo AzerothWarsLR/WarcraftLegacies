@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Extensions;
-using MacroTools.FactionSystem;
 using MacroTools.Libraries;
 using static War3Api.Common;
 
@@ -9,34 +8,51 @@ namespace MacroTools.ControlPointSystem
   /// <summary>
   /// Responsible for managing all <see cref="ControlPoint"/>s.
   /// </summary>
-  public static class ControlPointManager
+  public sealed class ControlPointManager
   {
+    public ControlPointManager Instance
+    {
+      get
+      {
+        if (_instance == null)
+          throw new SystemNotInitializedException($"{nameof(ControlPointManager)} has not been initialized.");
+        return _instance;
+      }
+      set
+      {
+        if (_instance != null)
+
+          throw new SystemAlreadyInitializedException($"{nameof(ControlPointManager)} has already been initialized.");
+        _instance = value;
+      }
+    }
+
     /// <summary>
     /// When <see cref="ControlPoint"/>s have a <see cref="ControlPoint.ControlLevel"/> greater than 0, they spawn a
     /// unit with this ID to defend them.
     /// </summary>
     public static int DefenderUnitTypeId { get; private set; }
-    
+
+    /// <summary>
+    /// Initializes a new instance of the <see cref="ControlPointManager"/> class.
+    /// <param name="defenderUnitTypeId">The unit type ID that gets used to defend <see cref="ControlPoint"/>s.</param>
+    /// </summary>
+    public ControlPointManager(int defenderUnitTypeId)
+    {
+      DefenderUnitTypeId = defenderUnitTypeId;
+    }
+
     /// <summary>
     ///   How often players receive income.
     ///   Changing this will not affect the total amount of income they receive.
     /// </summary>
     private const float Period = 1;
 
-    private static bool _initialized;
+    private ControlPointManager? _instance;
 
     private static readonly Dictionary<int, ControlPoint> ByUnitType = new();
     private static readonly Dictionary<unit, ControlPoint> ByUnit = new();
 
-    /// <summary>
-    /// Sets up the <see cref="ControlPointManager"/>.
-    /// </summary>
-    /// <param name="defenderUnitTypeId">The unit type ID that gets used to defend <see cref="ControlPoint"/>s.</param>
-    public static void Setup(int defenderUnitTypeId)
-    {
-      DefenderUnitTypeId = defenderUnitTypeId;
-    }
-    
     /// <summary>
     ///   Whether or not the given unit is a <see cref="ControlPoint" />.
     /// </summary>
@@ -69,13 +85,8 @@ namespace MacroTools.ControlPointSystem
         ByUnitType.Add(controlPoint.UnitType, controlPoint);
       
       controlPoint.Unit.SetLifePercent(80);
-
       controlPoint.Owner.SetBaseIncome(controlPoint.Owner.GetBaseIncome() + controlPoint.Value);
       controlPoint.Owner.SetControlPointCount(controlPoint.Owner.GetControlPointCount() + 1);
-
-      if (_initialized) 
-        return;
-      _initialized = true;
       var incomeTimer = CreateTimer();
       TimerStart(incomeTimer, Period, true, () =>
       {
