@@ -1,23 +1,25 @@
-﻿using MacroTools.FactionSystem;
+﻿using MacroTools;
+using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using MacroTools.QuestSystem.UtilityStructs;
-using WarcraftLegacies.Source.Setup.Legends;
+
+using WCSharp.Shared.Data;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Naga
 {
-  public sealed class QuestIllidanKillGoblin : QuestData
+  public sealed class QuestMurmur : QuestData
   {
-    public QuestIllidanKillGoblin() : base("Clean Sea",
-      "The Goblins have been expanding aggressively on the sea. Destroying their trade hub would please the Deep Sea Lord, Naj'entus",
+    public QuestMurmur(PreplacedUnitSystem preplacedUnitSystem) : base("The Shadow Labyrinth",
+      "The Void Lord Murmur is guarding the Shadow Labyrinth, if we defeat him, the Naga Lord Naj'entus will join us",
       "ReplaceableTextures\\CommandButtons\\BTNLordNaj.blp")
     {
-      AddObjective(new ObjectiveCapitalDead(LegendGoblin.KezanTradingCenter));
-      ResearchId = Constants.UPGRADE_R08W_QUEST_COMPLETED_CLEAN_SEA;
+      AddObjective(new ObjectiveUnitIsDead(preplacedUnitSystem.GetUnit(Constants.UNIT_N03T_MURMUR_MINIBOSS)));
+      ResearchId = Constants.UPGRADE_R08W_QUEST_COMPLETED_THE_SHADOW_LABYRINTH;
     }
 
     protected override string CompletionPopup =>
-      "The Goblins trade center has been destroyed! Without it, the goblin naval power will disperse";
+      "Murmur has been defeated";
 
     protected override string RewardDescription => "The hero Naj'entus will join you!";
 

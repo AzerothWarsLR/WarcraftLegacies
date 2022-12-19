@@ -1,4 +1,5 @@
-﻿using WarcraftLegacies.Source.Quests;
+﻿using MacroTools;
+using WarcraftLegacies.Source.Quests;
 using WarcraftLegacies.Source.Quests.Naga;
 using WarcraftLegacies.Source.Setup.FactionSetup;
 
@@ -6,12 +7,12 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
 {
   public static class NagaQuestSetup
   {
-    public static void Setup(ArtifactSetup artifactSetup)
+    public static void Setup(ArtifactSetup artifactSetup, PreplacedUnitSystem preplacedUnitSystem)
     {
       var illidari = IllidariSetup.Illidari;
-      illidari.AddQuest(new QuestFrozenThrone());
+      illidari.StartingQuest = illidari.AddQuest(new QuestLostOnes(Regions.AkamaUnlock));
       illidari.AddQuest(new QuestEyeofSargeras(artifactSetup.EyeOfSargeras));
-      illidari.AddQuest(new QuestIllidanKillGoblin());
+      illidari.AddQuest(new QuestMurmur(preplacedUnitSystem));
       illidari.AddQuest(new QuestRegroupCastaway());
       illidari.AddQuest(new QuestBlackrookHold());
     }

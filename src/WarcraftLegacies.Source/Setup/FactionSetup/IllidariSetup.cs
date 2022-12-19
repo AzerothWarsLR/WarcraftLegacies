@@ -50,6 +50,9 @@ Once you have collected enough, you can rebuild the great Nazjatar empire and st
       Illidari.ModObjectLimit(FourCC("nwgs"), 8); //Couatl
       Illidari.ModObjectLimit(FourCC("e00Y"), 4); //Scylla
 
+      Illidari.ModObjectLimit(FourCC("ndrn"), Faction.UNLIMITED); //AshtongueMelee
+      Illidari.ModObjectLimit(FourCC("ndrs"), 6); //Ashtonguecaster
+
       Illidari.ModObjectLimit(FourCC("Hvsh"), 1); //Vashj
       Illidari.ModObjectLimit(FourCC("U00S"), 1); //Najentus
       Illidari.ModObjectLimit(FourCC("Naka"), 1); //Akama
