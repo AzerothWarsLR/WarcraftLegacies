@@ -27,7 +27,6 @@ namespace MacroTools.ControlPointSystem
       set
       {
         if (_instance != null)
-
           throw new SystemAlreadyInitializedException($"{nameof(ControlPointManager)} has already been initialized.");
         _instance = value;
       }
