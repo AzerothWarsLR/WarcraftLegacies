@@ -222,7 +222,7 @@ namespace MacroTools.ControlPointSystem
             .AddAbility(FourCC("Aloc"))
             .SetInvulnerable(true);
           var defenderUnitTypeId = controlPoint.Owner.GetFaction()?.ControlPointDefenderTemplateUnitTypeId;
-          if (defenderUnitTypeId != null)
+          if (defenderUnitTypeId != null && defenderUnitTypeId != 0)
             controlPoint.Defender.SetSkin(defenderUnitTypeId.Value);
           controlPoint.Unit
             .SetScale(2);
