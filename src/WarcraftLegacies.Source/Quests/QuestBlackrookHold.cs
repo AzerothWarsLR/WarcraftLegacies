@@ -1,4 +1,5 @@
-﻿using MacroTools.Extensions;
+﻿using MacroTools.ControlPointSystem;
+using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using MacroTools.QuestSystem.UtilityStructs;
@@ -23,6 +24,7 @@ namespace WarcraftLegacies.Source.Quests
         Regions.BrokenIslesB
       }, "on the Broken Isles"));
       AddObjective(new NoOtherPlayerGetsCapital(LegendSentinels.BlackrookHold));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N053_VAL_SHARAH_15GOLD_MIN)));
     }
 
     /// <inheritdoc />
