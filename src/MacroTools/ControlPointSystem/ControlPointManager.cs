@@ -72,6 +72,9 @@ namespace MacroTools.ControlPointSystem
           {
             var controlPoint = _byUnit[GetTriggerUnit()];
             controlPoint.ControlLevel++;
+            BlzSetAbilityStringLevelField(BlzGetUnitAbility(GetTriggerUnit(), _increaseControlLevelAbilityTypeId),
+              ABILITY_SLF_TOOLTIP_NORMAL_EXTENDED,
+              controlPoint.ControlLevel, $"Increases this Control Point's Control Level, granting it increased hit points and attack damage.|n|n|cffffcc00Control Level:|r {controlPoint.ControlLevel}");
           }
           catch (Exception ex)
           {
