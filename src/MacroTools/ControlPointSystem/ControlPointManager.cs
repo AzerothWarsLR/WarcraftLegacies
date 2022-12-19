@@ -12,18 +12,31 @@ namespace MacroTools.ControlPointSystem
   public static class ControlPointManager
   {
     /// <summary>
+    /// When <see cref="ControlPoint"/>s have a <see cref="ControlPoint.ControlLevel"/> greater than 0, they spawn a
+    /// unit with this ID to defend them.
+    /// </summary>
+    public static int DefenderUnitTypeId { get; private set; }
+    
+    /// <summary>
     ///   How often players receive income.
     ///   Changing this will not affect the total amount of income they receive.
     /// </summary>
     private const float Period = 1;
-
-    private const int MaxHitpoints = 10000; //All Control Points get given this many hitpoints
 
     private static bool _initialized;
 
     private static readonly Dictionary<int, ControlPoint> ByUnitType = new();
     private static readonly Dictionary<unit, ControlPoint> ByUnit = new();
 
+    /// <summary>
+    /// Sets up the <see cref="ControlPointManager"/>.
+    /// </summary>
+    /// <param name="defenderUnitTypeId">The unit type ID that gets used to defend <see cref="ControlPoint"/>s.</param>
+    public static void Setup(int defenderUnitTypeId)
+    {
+      DefenderUnitTypeId = defenderUnitTypeId;
+    }
+    
     /// <summary>
     ///   Whether or not the given unit is a <see cref="ControlPoint" />.
     /// </summary>
@@ -54,7 +67,7 @@ namespace MacroTools.ControlPointSystem
           $"There are two Control Points with the same ID of {GeneralHelpers.DebugIdInteger2IdString(controlPoint.UnitType)}.");
       else
         ByUnitType.Add(controlPoint.UnitType, controlPoint);
-      BlzSetUnitMaxHP(controlPoint.Unit, MaxHitpoints);
+      
       controlPoint.Unit.SetLifePercent(80);
 
       controlPoint.Owner.SetBaseIncome(controlPoint.Owner.GetBaseIncome() + controlPoint.Value);

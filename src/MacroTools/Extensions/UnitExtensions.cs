@@ -14,6 +14,30 @@ namespace MacroTools.Extensions
   {
     private const float HeroDropDist = 50; //The radius in which heroes spread out items when they drop them
 
+    public static unit SetMaximumHitpoints(this unit whichUnit, int value)
+    {
+      BlzSetUnitMaxHP(whichUnit, value);
+      return whichUnit;
+    }
+
+    public static unit SetDamageBase(this unit whichUnit, int value, int weaponSlot = 0)
+    {
+      BlzSetUnitWeaponIntegerField(whichUnit, UNIT_WEAPON_IF_ATTACK_DAMAGE_BASE, weaponSlot, value);
+      return whichUnit;
+    }
+    
+    public static unit SetDamageNumberOfDice(this unit whichUnit, int value, int weaponSlot = 0)
+    {
+      BlzSetUnitWeaponIntegerField(whichUnit, UNIT_WEAPON_IF_ATTACK_DAMAGE_NUMBER_OF_DICE, weaponSlot, value);
+      return whichUnit;
+    }
+    
+    public static unit SetDamageSidesPerDie(this unit whichUnit, int value, int weaponSlot = 0)
+    {
+      BlzSetUnitWeaponIntegerField(whichUnit, UNIT_WEAPON_IF_ATTACK_DAMAGE_SIDES_PER_DIE, weaponSlot, value);
+      return whichUnit;
+    }
+
     /// <summary>
     /// Changes the unit's skin to match that of another unit type.
     /// </summary>
