@@ -549,6 +549,7 @@ gg_snd_NuclearLaunchDetected = nil
 gg_snd_IllidansTheme = ""
 gg_trg_Dummy = nil
 gg_rct_BrokenIslesB = nil
+gg_rct_GuldansCorpse = nil
 function InitGlobals()
 end
 
@@ -7875,6 +7876,7 @@ gg_rct_TombOfSargerasInteriorF = Rect(-1376.0, 10144.0, -800.0, 10592.0)
 gg_rct_TombOfSargerasInteriorG = Rect(352.0, 9920.0, 608.0, 10176.0)
 gg_rct_TombOfSargerasInteriorH = Rect(-1216.0, 8768.0, -288.0, 8992.0)
 gg_rct_BrokenIslesB = Rect(544.0, 8960.0, 2144.0, 9984.0)
+gg_rct_GuldansCorpse = Rect(-800.0, 9792.0, -544.0, 10080.0)
 end
 
 function CreateCameras()

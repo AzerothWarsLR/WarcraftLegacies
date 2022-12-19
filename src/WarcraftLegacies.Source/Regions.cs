@@ -334,5 +334,6 @@ public static class Regions
 	public static Rectangle TombOfSargerasInteriorG { get; set; } = new Rectangle(352f, 9920f, 608f, 10176f);
 	public static Rectangle TombOfSargerasInteriorH { get; set; } = new Rectangle(-1216f, 8768f, -288f, 8992f);
 	public static Rectangle BrokenIslesB { get; set; } = new Rectangle(544f, 8960f, 2144f, 9984f);
+	public static Rectangle GuldansCorpse { get; set; } = new Rectangle(-800f, 9792f, -544f, 10080f);
 
 }
