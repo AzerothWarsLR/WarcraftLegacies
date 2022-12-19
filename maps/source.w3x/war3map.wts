@@ -17499,12 +17499,6 @@ STRING 2917
 One of the few elves to return from Outland, ready again to defend Mankind's gates.|n|cfff5962dAbilities:|R Fire Arrows, Critical strike, Feedback|n|cfff5962dCan Learn:|R Runic Strength|n|n|cffffcc00Attacks land and air units.|r
 }
 
-STRING 2918
-// Abilities: A0A8 (Fortify), Ubertip (Tooltip - Normal - Extended)
-{
-Increases this Control Point's Control Level, granting it increased hit points and attack damage.
-}
-
 STRING 2919
 // Units: h041 (Marine), Hotkey (Hotkey)
 {
@@ -23614,6 +23608,12 @@ STRING 3936
 // Abilities: A0LN (Thunder Fists), Tip (Tooltip - Normal)
 {
 Thunder Fists - [|cffffcc00Level 3|r]
+}
+
+STRING 3937
+// Abilities: A0A8 (Fortify), Ubertip (Tooltip - Normal - Extended)
+{
+Increases this Control Point's Control Level, granting it increased hit points and attack damage.|n|n|cffffcc00Control Level:|r 0
 }
 
 STRING 3938

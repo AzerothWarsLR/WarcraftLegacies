@@ -72,9 +72,6 @@ namespace MacroTools.ControlPointSystem
           {
             var controlPoint = _byUnit[GetTriggerUnit()];
             controlPoint.ControlLevel++;
-            BlzSetAbilityStringLevelField(BlzGetUnitAbility(GetTriggerUnit(), _increaseControlLevelAbilityTypeId),
-              ABILITY_SLF_TOOLTIP_NORMAL_EXTENDED,
-              controlPoint.ControlLevel, $"Increases this Control Point's Control Level, granting it increased hit points and attack damage.|n|n|cffffcc00Control Level:|r {controlPoint.ControlLevel}");
           }
           catch (Exception ex)
           {
@@ -226,6 +223,7 @@ namespace MacroTools.ControlPointSystem
           controlPoint.Unit
             .SetScale(1.2f);
           ScaleHitpointsToControlLevel(controlPoint);
+          RefreshAbilityTooltip(controlPoint);
           CreateTrigger()
             .RegisterUnitEvent(controlPoint.Unit, EVENT_UNIT_CHANGE_OWNER)
             .AddAction(() =>
@@ -237,6 +235,8 @@ namespace MacroTools.ControlPointSystem
                 controlPoint.Unit.RemoveAbility(IncreaseControlLevelAbilityTypeId);
               DestroyTrigger(GetTriggeringTrigger());
             });
+          if (controlPoint.ControlLevel == ControlLevelMaximum)
+            controlPoint.Unit.RemoveAbility(IncreaseControlLevelAbilityTypeId);
         }
         else
         {
@@ -246,6 +246,7 @@ namespace MacroTools.ControlPointSystem
             .SetInvulnerable(false)
             .AddAbility(IncreaseControlLevelAbilityTypeId);
           ScaleHitpointsToControlLevel(controlPoint);
+          RefreshAbilityTooltip(controlPoint);
         }
       };
     }
@@ -269,6 +270,13 @@ namespace MacroTools.ControlPointSystem
       controlPoint.Unit
         .SetMaximumHitpoints(maxHitPoints)
         .SetLifePercent(lifePercent);
+    }
+
+    private void RefreshAbilityTooltip(ControlPoint controlPoint)
+    {
+      BlzSetAbilityStringLevelField(BlzGetUnitAbility(controlPoint.Unit, _increaseControlLevelAbilityTypeId),
+        ABILITY_SLF_TOOLTIP_NORMAL_EXTENDED,
+        controlPoint.ControlLevel, $"Increases this Control Point's Control Level, granting it increased hit points and attack damage.|n|n|cffffcc00Control Level:|r {controlPoint.ControlLevel}");
     }
   }
 }
