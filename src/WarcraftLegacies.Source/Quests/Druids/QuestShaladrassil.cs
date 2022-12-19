@@ -1,4 +1,5 @@
-﻿using MacroTools.FactionSystem;
+﻿using MacroTools.Extensions;
+using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using MacroTools.QuestSystem.UtilityStructs;
 using WarcraftLegacies.Source.Powers;
@@ -28,11 +29,13 @@ namespace WarcraftLegacies.Source.Quests.Druids
     /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)
     {
-      completingFaction.AddPower(new ShaladrassilsBlessing(LegendNeutral.Shaladrassil.Unit,
+      var power = new ShaladrassilsBlessing(LegendNeutral.Shaladrassil.Unit,
         Constants.UNIT_EFON_TREANT_DRUIDS_SUMMONED, 60, 12, 50)
       {
         IconName = "TreeOfEternity"
-      });
+      };
+      completingFaction.AddPower(power);
+      completingFaction.Player?.DisplayPowerAcquired(power);
     }
   }
 }
