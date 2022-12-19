@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.Libraries;
+using WCSharp.Events;
 using static War3Api.Common;
 using static War3Api.Blizzard;
 
@@ -59,6 +60,23 @@ namespace MacroTools.ControlPointSystem
     public int ControlLevelMaximum { get; init; }
 
     /// <summary>
+    /// This ability can be used to increase a <see cref="ControlPoint"/>'s <see cref="ControlPoint.ControlLevel"/>.
+    /// </summary>
+    public int IncreaseControlLevelAbilityTypeId
+    {
+      get => _increaseControlLevelAbilityTypeId;
+      init
+      {
+        _increaseControlLevelAbilityTypeId = value;
+        PlayerUnitEvents.Register(SpellEvent.Finish, () =>
+        {
+          var controlPoint = _byUnit[GetTriggerUnit()];
+          controlPoint.ControlLevel++;
+        });
+      }
+    }
+    
+    /// <summary>
     ///   How often players receive income.
     ///   Changing this will not affect the total amount of income they receive.
     /// </summary>
@@ -68,6 +86,7 @@ namespace MacroTools.ControlPointSystem
 
     private readonly Dictionary<int, ControlPoint> _byUnitType = new();
     private readonly Dictionary<unit, ControlPoint> _byUnit = new();
+    private readonly int _increaseControlLevelAbilityTypeId;
 
     /// <summary>
     ///   Whether or not the given unit is a <see cref="ControlPoint" />.
@@ -99,7 +118,8 @@ namespace MacroTools.ControlPointSystem
       
       controlPoint.Unit
         .SetMaximumHitpoints(MaxHitpoints)
-        .SetLifePercent(80);
+        .SetLifePercent(80)
+        .AddAbility(IncreaseControlLevelAbilityTypeId);
       RegisterIncomeGeneration(controlPoint);
       RegisterDamageTrigger(controlPoint);
       RegisterOwnershipChangeTrigger(controlPoint);
@@ -208,6 +228,8 @@ namespace MacroTools.ControlPointSystem
               controlPoint.ControlLevel = 0;
               controlPoint.Defender?.Kill();
               controlPoint.Unit.SetScale(1);
+              if (controlPoint.ControlLevel >= IncreaseControlLevelAbilityTypeId)
+                controlPoint.Unit.RemoveAbility(IncreaseControlLevelAbilityTypeId);
               DestroyTrigger(GetTriggeringTrigger());
             });
         }
@@ -217,7 +239,8 @@ namespace MacroTools.ControlPointSystem
           controlPoint.Defender = null;
           controlPoint.Unit
             .SetInvulnerable(false)
-            .SetMaximumHitpoints(MaxHitpoints);
+            .SetMaximumHitpoints(MaxHitpoints)
+            .AddAbility(IncreaseControlLevelAbilityTypeId);
         }
       };
     }

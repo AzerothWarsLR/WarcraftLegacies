@@ -33,7 +33,8 @@ namespace WarcraftLegacies.Source.Setup
         CaptureThreshold = 0.8f,
         MaxHitpoints = 10000,
         RegenerationAbility = Constants.ABILITY_A0UT_CP_LIFE_REGEN,
-        ControlLevelMaximum = 15
+        ControlLevelMaximum = 15,
+        IncreaseControlLevelAbilityTypeId = Constants.ABILITY_A0A8_FORTIFY_CONTROL_POINTS_SHARED
       };
       var preplacedUnitSystem = new PreplacedUnitSystem();
       SoundLibrary.Setup();

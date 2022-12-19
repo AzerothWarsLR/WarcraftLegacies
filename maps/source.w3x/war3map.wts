@@ -15848,6 +15848,12 @@ STRING 2642
 Train Farstrider
 }
 
+STRING 2643
+// Abilities: A0A8 (Fortify), Tip (Tooltip - Normal)
+{
+Fortify
+}
+
 STRING 2644
 // Units: h04W (Siege Tank), EditorSuffix (Name - Editor Suffix)
 {
@@ -17319,6 +17325,12 @@ STRING 2888
 (stormwind)
 }
 
+STRING 2889
+// Abilities: A0A8 (Fortify), Name (Name)
+{
+Fortify
+}
+
 STRING 2890
 // Units: h02R (Northshire Abbey), EditorSuffix (Name - Editor Suffix)
 {
@@ -17329,6 +17341,12 @@ STRING 2891
 // Units: u01A (Haunted Harbor), Hotkey (Hotkey)
 {
 R
+}
+
+STRING 2892
+// Abilities: A0A8 (Fortify), EditorSuffix (Editor Suffix)
+{
+(Control Points) (Shared)
 }
 
 STRING 2893
@@ -17479,6 +17497,12 @@ STRING 2917
 // Units: h05N (Marksman), Ubertip (Tooltip - Extended)
 {
 One of the few elves to return from Outland, ready again to defend Mankind's gates.|n|cfff5962dAbilities:|R Fire Arrows, Critical strike, Feedback|n|cfff5962dCan Learn:|R Runic Strength|n|n|cffffcc00Attacks land and air units.|r
+}
+
+STRING 2918
+// Abilities: A0A8 (Fortify), Ubertip (Tooltip - Normal - Extended)
+{
+Increases this Control Point's Control Level, granting it increased hit points and attack damage.
 }
 
 STRING 2919

@@ -329,10 +329,11 @@ namespace MacroTools.Extensions
     /// <summary>
     /// Sets the units hit points to a specified percentage value.
     /// </summary>
-    public static void SetLifePercent(this unit whichUnit, float percent)
+    public static unit SetLifePercent(this unit whichUnit, float percent)
     {
       SetUnitState(whichUnit, UNIT_STATE_LIFE,
         GetUnitState(whichUnit, UNIT_STATE_MAX_LIFE) * MathEx.Max(0, percent) * 0.01f);
+      return whichUnit;
     }
 
     /// <summary>
