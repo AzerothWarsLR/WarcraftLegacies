@@ -276,7 +276,8 @@ namespace MacroTools.ControlPointSystem
         .SetDamageDiceNumber(1)
         .SetDamageDiceSides(1)
         .SetAttackType(2)
-        .SetArmor(DefenderSettings.ArmorPerControlLevel * controlLevel);
+        .SetArmor(DefenderSettings.ArmorPerControlLevel * controlLevel)
+        .SetUnitLevel(controlLevel);
     }
   }
 }

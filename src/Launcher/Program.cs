@@ -197,7 +197,9 @@ namespace Launcher
         unit.CombatAttack1Range = 600;
         unit.CombatAcquisitionRange = 600;
         unit.CombatAttack1TargetsAllowed = new[] { Target.Bridge };
-        unit.TextName = "Beans";
+        unit.EditorDisplayAsNeutralHostile = true;
+        unit.StatsLevel = 0;
+        unit.StatsRace = UnitRace.Creeps;
       }
       map.UnitObjectData = objectDatabase.GetAllData().UnitData;
     }

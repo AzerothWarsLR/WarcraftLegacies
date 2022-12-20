@@ -13,6 +13,12 @@ namespace MacroTools.Extensions
   {
     private const float HeroDropDist = 50; //The radius in which heroes spread out items when they drop them
 
+    public static unit SetUnitLevel(this unit whichUnit, int level)
+    {
+      BlzSetUnitIntegerField(whichUnit, UNIT_IF_LEVEL, level);
+      return whichUnit;
+    }
+    
     /// <summary>
     /// Sets a unit's armor.
     /// </summary>
