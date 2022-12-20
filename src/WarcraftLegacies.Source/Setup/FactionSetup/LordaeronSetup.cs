@@ -18,6 +18,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
         StartingLumber = 500,
         UndefeatedResearch = FourCC("R05M"),
         CinematicMusic = "Comradeship",
+        ControlPointDefenderUnitTypeId = Constants.UNIT_H03F_CONTROL_POINT_DEFENDER_SHARED,
         IntroText = @"You are playing as the royal |cff4242ebKingdom of Lordaeron|r.
 
 You start the game with the largest territory, but the Plague of Undeath is coming.
