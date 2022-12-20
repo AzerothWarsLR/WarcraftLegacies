@@ -209,8 +209,8 @@ namespace MacroTools.ControlPointSystem
       {
         if (controlPoint.ControlLevel > 0)
         {
-          ConfigureDefender(controlPoint);
-          ScaleHitpointsToControlLevel(controlPoint);
+          CreateOrUpdateDefender(controlPoint);
+          ConfigureControlPointStats(controlPoint);
           controlPoint.Unit.SetScale(1.2f);
           if (controlPoint.ControlLevel == ControlLevelMaximum)
             controlPoint.Unit.RemoveAbility(IncreaseControlLevelAbilityTypeId);
@@ -218,7 +218,7 @@ namespace MacroTools.ControlPointSystem
         else
         {
           RemoveDefender(controlPoint);
-          ScaleHitpointsToControlLevel(controlPoint);
+          ConfigureControlPointStats(controlPoint);
         }
       };
     }
@@ -235,23 +235,28 @@ namespace MacroTools.ControlPointSystem
       };
     }
 
-    private void ScaleHitpointsToControlLevel(ControlPoint controlPoint)
+    private void ConfigureControlPointStats(ControlPoint controlPoint)
     {
       var maxHitPoints = MaxHitpoints + controlPoint.ControlLevel * 500;
       var lifePercent = Math.Max(controlPoint.Unit.GetLifePercent(), 1);
       controlPoint.Unit
         .SetMaximumHitpoints(maxHitPoints)
-        .SetLifePercent(lifePercent);
+        .SetLifePercent(lifePercent)
+        .SetArmor(DefenderSettings.ArmorPerControlLevel * DefenderSettings.ArmorPerControlLevel)
+        .SetDamageBase(DefenderSettings.DamageBase + controlPoint.ControlLevel * DefenderSettings.DamagePerControlLevel)
+        .SetDamageNumberOfDice(2)
+        .SetDamageSidesPerDie(6);
     }
 
-    private void ConfigureDefender(ControlPoint controlPoint)
+    private void CreateOrUpdateDefender(ControlPoint controlPoint)
     {
       controlPoint.Defender ??= CreateUnit(controlPoint.Owner, DefenderSettings.DefenderUnitTypeId, GetUnitX(controlPoint.Unit), GetUnitY(controlPoint.Unit), 0);
       controlPoint.Defender
         .SetDamageBase(DefenderSettings.DamageBase + controlPoint.ControlLevel * DefenderSettings.DamagePerControlLevel)
-        .SetArmor(DefenderSettings.ArmorPerControlLevel * DefenderSettings.ArmorPerControlLevel)
         .AddAbility(FourCC("Aloc"))
-        .SetInvulnerable(true);
+        .SetInvulnerable(true)
+        .SetDamageNumberOfDice(2)
+        .SetDamageSidesPerDie(6);
       var defenderUnitTypeId = controlPoint.Owner.GetFaction()?.ControlPointDefenderTemplateUnitTypeId;
       if (defenderUnitTypeId != null && defenderUnitTypeId != 0)
         controlPoint.Defender.SetSkin(defenderUnitTypeId.Value);
