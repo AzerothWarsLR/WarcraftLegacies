@@ -272,7 +272,7 @@ namespace MacroTools.ControlPointSystem
       whichUnit
         .SetDamageBase(controlLevel == 0
           ? -1
-          : DefenderSettings.DamageBase + controlLevel * DefenderSettings.DamagePerControlLevel)
+          : DefenderSettings.DamageBase-1 + controlLevel * DefenderSettings.DamagePerControlLevel)
         .SetDamageDiceNumber(1)
         .SetDamageDiceSides(1)
         .SetAttackType(2)
