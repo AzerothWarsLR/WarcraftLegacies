@@ -46,16 +46,11 @@ namespace MacroTools.ControlPointSystem
     /// All <see cref="ControlPoint"/>s are given this ability.
     /// </summary>
     public int RegenerationAbility { get; init; }
-    
-    /// <summary>
-    /// The maximum <see cref="ControlPoint.ControlLevel"/> a <see cref="ControlPoint"/> can have.
-    /// </summary>
-    public int ControlLevelMaximum { get; init; }
 
     /// <summary>
     /// Determines the settings for the <see cref="ControlPoint.Defender"/> units that defend <see cref="ControlPoint"/>s.
     /// </summary>
-    public DefenderSettings DefenderSettings { get; init; } = new();
+    public ControlLevelSettings ControlLevelSettings { get; init; } = new();
 
     /// <summary>
     /// This ability can be used to increase a <see cref="ControlPoint"/>'s <see cref="ControlPoint.ControlLevel"/>.
@@ -123,8 +118,8 @@ namespace MacroTools.ControlPointSystem
       
       controlPoint.Unit
         .SetMaximumHitpoints(MaxHitpoints)
-        .SetLifePercent(80)
-        .AddAbility(IncreaseControlLevelAbilityTypeId);
+        .AddAbility(IncreaseControlLevelAbilityTypeId)
+        .SetLifePercent(100);
       RegisterIncomeGeneration(controlPoint);
       RegisterDamageTrigger(controlPoint);
       RegisterOwnershipChangeTrigger(controlPoint);
@@ -165,7 +160,7 @@ namespace MacroTools.ControlPointSystem
             if (!(hitPoints < CaptureThreshold)) return;
             BlzSetEventDamage(0);
             SetUnitOwner(controlPoint.Unit, GetOwningPlayer(attacker), true);
-            controlPoint.Unit.SetLifePercent(85);
+            controlPoint.Unit.SetLifePercent(100);
           }
           catch (Exception ex)
           {
@@ -182,21 +177,18 @@ namespace MacroTools.ControlPointSystem
         {
           try
           {
-            var formerOwner = GetChangingUnitPrevOwner();
-            var newOwner = GetTriggerUnit().OwningPlayer();
+            var previousOwner = PlayerData.ByHandle(GetChangingUnitPrevOwner());
+            previousOwner.ControlPointCount -= 1;
+            previousOwner.BaseIncome -= controlPoint.Value;
 
-            var playerData = PlayerData.ByHandle(formerOwner);
+            var newOwner = PlayerData.ByHandle(GetTriggerUnit().OwningPlayer());
+            newOwner.ControlPointCount += 1;
+            newOwner.BaseIncome += controlPoint.Value;
 
-            playerData.ControlPointCount -= 1;
-            playerData.BaseIncome -= controlPoint.Value;
-
-            playerData = PlayerData.ByHandle(newOwner);
-
-            playerData.ControlPointCount += 1;
-            playerData.BaseIncome += controlPoint.Value;
-
-            UnitAddAbility(controlPoint.Unit, RegenerationAbility);
-            SetUnitState(controlPoint.Unit, UNIT_STATE_LIFE, GetUnitState(controlPoint.Unit, UNIT_STATE_MAX_LIFE));
+            controlPoint.Unit
+              .AddAbility(RegenerationAbility)
+              .SetLifePercent(100);
+            controlPoint.ControlLevel = 0;
             controlPoint.SignalOwnershipChange(new ControlPointOwnerChangeEventArgs(controlPoint, GetChangingUnitPrevOwner()));
           }
           catch (Exception ex)
@@ -212,40 +204,16 @@ namespace MacroTools.ControlPointSystem
       {
         if (controlPoint.ControlLevel > 0)
         {
-          controlPoint.Defender ??= CreateUnit(controlPoint.Owner, DefenderSettings.DefenderUnitTypeId, GetUnitX(controlPoint.Unit), GetUnitY(controlPoint.Unit), 0);
-          controlPoint.Defender
-            .SetDamageBase(DefenderSettings.DamageBase + controlPoint.ControlLevel * DefenderSettings.DamagePerControlLevel)
-            .SetArmor(DefenderSettings.ArmorPerControlLevel * DefenderSettings.ArmorPerControlLevel)
-            .AddAbility(FourCC("Aloc"))
-            .SetInvulnerable(true);
-          var defenderUnitTypeId = controlPoint.Owner.GetFaction()?.ControlPointDefenderTemplateUnitTypeId;
-          if (defenderUnitTypeId != null && defenderUnitTypeId != 0)
-            controlPoint.Defender.SetSkin(defenderUnitTypeId.Value);
-          controlPoint.Unit
-            .SetScale(1.2f);
-          ScaleHitpointsToControlLevel(controlPoint);
-          CreateTrigger()
-            .RegisterUnitEvent(controlPoint.Unit, EVENT_UNIT_CHANGE_OWNER)
-            .AddAction(() =>
-            {
-              controlPoint.ControlLevel = 0;
-              controlPoint.Defender?.Kill();
-              controlPoint.Unit.SetScale(1);
-              if (controlPoint.ControlLevel >= IncreaseControlLevelAbilityTypeId)
-                controlPoint.Unit.RemoveAbility(IncreaseControlLevelAbilityTypeId);
-              DestroyTrigger(GetTriggeringTrigger());
-            });
-          if (controlPoint.ControlLevel == ControlLevelMaximum)
+          CreateOrUpdateDefender(controlPoint);
+          ConfigureControlPointStats(controlPoint);
+          controlPoint.Unit.SetScale(1.2f);
+          if (controlPoint.ControlLevel == ControlLevelSettings.ControlLevelMaximum)
             controlPoint.Unit.RemoveAbility(IncreaseControlLevelAbilityTypeId);
         }
         else
         {
-          controlPoint.Defender?.Kill();
-          controlPoint.Defender = null;
-          controlPoint.Unit
-            .SetInvulnerable(false)
-            .AddAbility(IncreaseControlLevelAbilityTypeId);
-          ScaleHitpointsToControlLevel(controlPoint);
+          RemoveDefender(controlPoint);
+          ConfigureControlPointStats(controlPoint);
         }
       };
     }
@@ -257,18 +225,55 @@ namespace MacroTools.ControlPointSystem
         if (controlPoint.Owner != Player(PLAYER_NEUTRAL_AGGRESSIVE) &&
             controlPoint.Owner != Player(PLAYER_NEUTRAL_PASSIVE) &&
             controlPoint.Owner != Player(bj_PLAYER_NEUTRAL_VICTIM) && 
-            controlPoint.ControlLevel < ControlLevelMaximum)
+            controlPoint.ControlLevel < ControlLevelSettings.ControlLevelMaximum)
           controlPoint.ControlLevel++;
       };
     }
 
-    private void ScaleHitpointsToControlLevel(ControlPoint controlPoint)
+    private void ConfigureControlPointStats(ControlPoint controlPoint)
     {
-      var maxHitPoints = MaxHitpoints + controlPoint.ControlLevel * 500;
+      var maxHitPoints = MaxHitpoints + controlPoint.ControlLevel * ControlLevelSettings.HitPointsPerControlLevel;
       var lifePercent = Math.Max(controlPoint.Unit.GetLifePercent(), 1);
       controlPoint.Unit
         .SetMaximumHitpoints(maxHitPoints)
-        .SetLifePercent(lifePercent);
+        .SetLifePercent(lifePercent)
+        .SetArmor(ControlLevelSettings.ArmorPerControlLevel * ControlLevelSettings.ArmorPerControlLevel)
+        .SetUnitLevel(controlPoint.ControlLevel)
+        .SetArmor(ControlLevelSettings.ArmorPerControlLevel * controlPoint.ControlLevel)
+        .ShowAttackUi(false);
+      ConfigureControlPointOrDefenderAttack(controlPoint.Unit, controlPoint.ControlLevel);
+    }
+
+    private void CreateOrUpdateDefender(ControlPoint controlPoint)
+    {
+      var defenderUnitTypeId = controlPoint.Owner.GetFaction()?.ControlPointDefenderUnitTypeId ??
+                               ControlLevelSettings.DefaultDefenderUnitTypeId;
+      controlPoint.Defender ??= CreateUnit(controlPoint.Owner, defenderUnitTypeId, GetUnitX(controlPoint.Unit), GetUnitY(controlPoint.Unit), 0);
+      controlPoint.Defender
+        .AddAbility(FourCC("Aloc"))
+        .SetInvulnerable(true);
+      ConfigureControlPointOrDefenderAttack(controlPoint.Defender, controlPoint.ControlLevel);
+      ConfigureControlPointOrDefenderAttack(controlPoint.Unit, controlPoint.ControlLevel);
+    }
+
+    private void RemoveDefender(ControlPoint controlPoint)
+    {
+      controlPoint.Defender?.Kill();
+      controlPoint.Defender = null;
+      controlPoint.Unit
+        .SetInvulnerable(false)
+        .AddAbility(IncreaseControlLevelAbilityTypeId);
+    }
+
+    private void ConfigureControlPointOrDefenderAttack(unit whichUnit, int controlLevel)
+    {
+      whichUnit
+        .SetDamageBase(controlLevel == 0
+          ? -1
+          : ControlLevelSettings.DamageBase-1 + controlLevel * ControlLevelSettings.DamagePerControlLevel)
+        .SetDamageDiceNumber(1)
+        .SetDamageDiceSides(1)
+        .SetAttackType(2);
     }
   }
 }

@@ -18,7 +18,6 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
         StartingGold = 150,
         StartingLumber = 500,
         CinematicMusic = "Comradeship",
-        ControlPointDefenderTemplateUnitTypeId = Constants.UNIT_H03M_HUNTER_TOWER_SENTINELS,
         IntroText = @"You are playing as the vigilant Sentinel Army.
 
 The Druids are slowly waking from their slumber, it falls to you, the Sentinels, to drive back the invaders from Kalimdor until then.

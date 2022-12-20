@@ -30,16 +30,17 @@ namespace WarcraftLegacies.Source.Setup
       ControlPointManager.Instance = new ControlPointManager
       {
         CaptureThreshold = 0.8f,
-        MaxHitpoints = 10000,
+        MaxHitpoints = 8000,
         RegenerationAbility = Constants.ABILITY_A0UT_CP_LIFE_REGEN,
-        ControlLevelMaximum = 15,
         IncreaseControlLevelAbilityTypeId = Constants.ABILITY_A0A8_FORTIFY_CONTROL_POINTS_SHARED,
-        DefenderSettings = new DefenderSettings
+        ControlLevelSettings = new ControlLevelSettings
         {
-          DefenderUnitTypeId = Constants.UNIT_H03F_CONTROL_POINT_DEFENDER_SHARED,
+          DefaultDefenderUnitTypeId = Constants.UNIT_H03F_CONTROL_POINT_DEFENDER_SHARED,
           DamageBase = 60,
           DamagePerControlLevel = 20,
-          ArmorPerControlLevel = 1
+          ArmorPerControlLevel = 1,
+          HitPointsPerControlLevel = 500,
+          ControlLevelMaximum = 15
         }
       };
       var preplacedUnitSystem = new PreplacedUnitSystem();

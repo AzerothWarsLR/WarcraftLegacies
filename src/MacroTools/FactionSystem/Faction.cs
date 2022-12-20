@@ -84,15 +84,6 @@ namespace MacroTools.FactionSystem
       });
     }
 
-    public Faction(string name, playercolor playerColor, string prefixCol, string icon)
-    {
-      _name = name;
-      PlayerColor = playerColor;
-      PrefixCol = prefixCol;
-      _icon = icon;
-      FoodMaximum = FoodMaximumDefault;
-    }
-
     /// <summary>
     ///   Displayed to the <see cref="Faction" /> when the game starts.
     /// </summary>
@@ -100,9 +91,9 @@ namespace MacroTools.FactionSystem
 
     /// <summary>
     /// All of the <see cref="Faction"/>'s <see cref="ControlPoint"/> <see cref="ControlPoint.Defender"/>s
-    /// will look like this unit type ID.
+    /// will be represented by this unit type.
     /// </summary>
-    public int ControlPointDefenderTemplateUnitTypeId { get; init; }
+    public int? ControlPointDefenderUnitTypeId { get; init; }
     
     public int StartingGold { get; set; }
 
@@ -257,20 +248,15 @@ namespace MacroTools.FactionSystem
       }
     }
 
-    private void ApplyPowers()
+    public Faction(string name, playercolor playerColor, string prefixCol, string icon)
     {
-      if (Player == null) return;
-      foreach (var power in _powers)
-        power.OnAdd(Player);
+      _name = name;
+      PlayerColor = playerColor;
+      PrefixCol = prefixCol;
+      _icon = icon;
+      FoodMaximum = FoodMaximumDefault;
     }
-
-    private void UnapplyPowers()
-    {
-      if (Player == null) return;
-      foreach (var power in _powers)
-        power.OnRemove(Player);
-    }
-
+    
     /// <summary>
     ///   Fires when the <see cref="Faction" /> joins a new <see cref="Team" />.
     /// </summary>
@@ -295,7 +281,7 @@ namespace MacroTools.FactionSystem
     /// Fired after the <see cref="Faction"/>'s status has changed.
     /// </summary>
     public event EventHandler<Faction>? StatusChanged;
-
+    
     /// <summary>
     ///   Returns all unit types which this <see cref="Faction" /> can only train a limited number of.
     /// </summary>
@@ -312,33 +298,7 @@ namespace MacroTools.FactionSystem
     {
       return _objectLimits[whichObject];
     }
-
-    //Adds this Faction's object limits and levels to its active Person
-    private void ApplyObjects()
-    {
-      foreach (var (key, value) in _objectLimits)
-        Player?.ModObjectLimit(key, value);
-
-      foreach (var (key, value) in _objectLevels)
-        Player?.SetObjectLevel(key, value);
-
-      foreach (var (key, value) in _abilityAvailabilities)
-        Player?.SetAbilityAvailability(key, value > 0);
-    }
-
-    //Removes this Faction's object limits and levels from its active Person
-    private void UnapplyObjects()
-    {
-      foreach (var (key, value) in _objectLimits)
-        Player?.ModObjectLimit(key, -value);
-
-      foreach (var (key, _) in _objectLevels)
-        Player?.SetObjectLevel(key, 0);
-
-      foreach (var (key, value) in _abilityAvailabilities)
-        Player?.SetAbilityAvailability(key, true);
-    }
-
+    
     /// <summary>
     ///   Registers a gold mine as belonging to this <see cref="Faction" />.
     ///   When the Faction leaves the game, all of their goldmines are removed.
@@ -408,44 +368,7 @@ namespace MacroTools.FactionSystem
       FactionManager.Register(newTeam);
       Player.SetTeam(newTeam);
     }
-
-    /// <summary>
-    ///   Shows all of the Faction's quest, rendering them in the quest log,
-    ///   showing them on the minimap, and showing them on the map.
-    /// </summary>
-    private void ShowAllQuests()
-    {
-      foreach (var quest in _questsByName.Values)
-      {
-        if (GetLocalPlayer() == Player) quest.ShowLocal();
-
-        quest.ShowSync();
-      }
-    }
-
-    //Hides all of the Faction)s quests.
-    private void HideAllQuests()
-    {
-      foreach (var quest in _questsByName.Values)
-      {
-        if (GetLocalPlayer() == Player) quest.HideLocal();
-
-        quest.HideSync();
-      }
-    }
-
-    private void OnQuestProgressChanged(object? sender, QuestProgressChangedEventArgs args)
-    {
-      try
-      {
-        args.Quest.ApplyFactionProgress(this, args.Quest.Progress, args.FormerProgress);
-      }
-      catch (Exception ex)
-      {
-        Console.WriteLine(ex);
-      }
-    }
-
+    
     public QuestData AddQuest(QuestData questData)
     {
       questData.Add(this);
@@ -456,7 +379,18 @@ namespace MacroTools.FactionSystem
       questData.ProgressChanged += OnQuestProgressChanged;
       return questData;
     }
+    
+    public int GetObjectLevel(int obj)
+    {
+      return _objectLevels[obj];
+    }
 
+    public void SetObjectLevel(int obj, int level)
+    {
+      _objectLevels[obj] = level;
+      Player?.SetObjectLevel(obj, level);
+    }
+    
     /// <summary>
     ///   Changes the ability's availability by the provided amount.
     ///   If the availability is higher than 0, the <see cref="player" /> with this <see cref="Faction" />
@@ -469,17 +403,6 @@ namespace MacroTools.FactionSystem
       else
         _abilityAvailabilities[ability] = value;
       Player?.SetAbilityAvailability(ability, value > 0);
-    }
-
-    public int GetObjectLevel(int obj)
-    {
-      return _objectLevels[obj];
-    }
-
-    public void SetObjectLevel(int obj, int level)
-    {
-      _objectLevels[obj] = level;
-      Player?.SetObjectLevel(obj, level);
     }
 
     /// <summary>
@@ -529,6 +452,88 @@ namespace MacroTools.FactionSystem
     public IEnumerable<Power> GetAllPowers()
     {
       foreach (var power in _powers) yield return power;
+    }
+    
+    /// <summary>
+    ///   Attempts to retrieve a <see cref="QuestData" /> belonging to this <see cref="Faction" /> with the given title.
+    /// </summary>
+    public QuestData GetQuestByTitle(string parameter) => _questsByName[parameter];
+
+    private void ApplyPowers()
+    {
+      if (Player == null) return;
+      foreach (var power in _powers)
+        power.OnAdd(Player);
+    }
+
+    private void UnapplyPowers()
+    {
+      if (Player == null) return;
+      foreach (var power in _powers)
+        power.OnRemove(Player);
+    }
+
+    //Adds this Faction's object limits and levels to its active Person
+    private void ApplyObjects()
+    {
+      foreach (var (key, value) in _objectLimits)
+        Player?.ModObjectLimit(key, value);
+
+      foreach (var (key, value) in _objectLevels)
+        Player?.SetObjectLevel(key, value);
+
+      foreach (var (key, value) in _abilityAvailabilities)
+        Player?.SetAbilityAvailability(key, value > 0);
+    }
+
+    //Removes this Faction's object limits and levels from its active Person
+    private void UnapplyObjects()
+    {
+      foreach (var (key, value) in _objectLimits)
+        Player?.ModObjectLimit(key, -value);
+
+      foreach (var (key, _) in _objectLevels)
+        Player?.SetObjectLevel(key, 0);
+
+      foreach (var (key, value) in _abilityAvailabilities)
+        Player?.SetAbilityAvailability(key, true);
+    }
+
+    /// <summary>
+    ///   Shows all of the Faction's quest, rendering them in the quest log,
+    ///   showing them on the minimap, and showing them on the map.
+    /// </summary>
+    private void ShowAllQuests()
+    {
+      foreach (var quest in _questsByName.Values)
+      {
+        if (GetLocalPlayer() == Player) quest.ShowLocal();
+
+        quest.ShowSync();
+      }
+    }
+
+    //Hides all of the Faction)s quests.
+    private void HideAllQuests()
+    {
+      foreach (var quest in _questsByName.Values)
+      {
+        if (GetLocalPlayer() == Player) quest.HideLocal();
+
+        quest.HideSync();
+      }
+    }
+
+    private void OnQuestProgressChanged(object? sender, QuestProgressChangedEventArgs args)
+    {
+      try
+      {
+        args.Quest.ApplyFactionProgress(this, args.Quest.Progress, args.FormerProgress);
+      }
+      catch (Exception ex)
+      {
+        Console.WriteLine(ex);
+      }
     }
 
     private void DistributeExperience(IEnumerable<player> playersToDistributeTo)
@@ -619,14 +624,6 @@ namespace MacroTools.FactionSystem
     {
       foreach (var unit in _goldMines) KillUnit(unit);
       _goldMines.Clear();
-    }
-
-    /// <summary>
-    ///   Attempts to retrieve a <see cref="QuestData" /> belonging to this <see cref="Faction" /> with the given title.
-    /// </summary>
-    public QuestData GetQuestByTitle(string parameter)
-    {
-      return _questsByName[parameter];
     }
   }
 }

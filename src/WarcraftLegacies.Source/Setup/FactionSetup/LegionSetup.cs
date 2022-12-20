@@ -18,7 +18,6 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
         StartingGold = 150,
         StartingLumber = 500,
         CinematicMusic = "DarkAgents",
-        ControlPointDefenderTemplateUnitTypeId = Constants.UNIT_U00H_SOUL_TOWER_LEGION,
         IntroText = @"You are playing as the destructive |cffa2722dBurning Legion|r.
 
 You begin isolated on Argus. Use Astral Walk and Diamonds of Summoning to move your units to Azeroth.

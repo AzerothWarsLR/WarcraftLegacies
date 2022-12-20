@@ -21,7 +21,6 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
         StartingGold = 150,
         StartingLumber = 500,
         CinematicMusic = "ArthasTheme",
-        ControlPointDefenderTemplateUnitTypeId = Constants.UNIT_UZG1_SPIRIT_TOWER,
         IntroText = @"You are playing as the the terrifying Undead Scourge.
 
 Northrend is vast and isolated, a perfect place to raise an army of undying warriors to destroy your enemies.
