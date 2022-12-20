@@ -46,16 +46,11 @@ namespace MacroTools.ControlPointSystem
     /// All <see cref="ControlPoint"/>s are given this ability.
     /// </summary>
     public int RegenerationAbility { get; init; }
-    
-    /// <summary>
-    /// The maximum <see cref="ControlPoint.ControlLevel"/> a <see cref="ControlPoint"/> can have.
-    /// </summary>
-    public int ControlLevelMaximum { get; init; }
 
     /// <summary>
     /// Determines the settings for the <see cref="ControlPoint.Defender"/> units that defend <see cref="ControlPoint"/>s.
     /// </summary>
-    public DefenderSettings DefenderSettings { get; init; } = new();
+    public ControlLevelSettings ControlLevelSettings { get; init; } = new();
 
     /// <summary>
     /// This ability can be used to increase a <see cref="ControlPoint"/>'s <see cref="ControlPoint.ControlLevel"/>.
@@ -123,7 +118,6 @@ namespace MacroTools.ControlPointSystem
       
       controlPoint.Unit
         .SetMaximumHitpoints(MaxHitpoints)
-        .SetLifePercent(80)
         .AddAbility(IncreaseControlLevelAbilityTypeId);
       RegisterIncomeGeneration(controlPoint);
       RegisterDamageTrigger(controlPoint);
@@ -165,7 +159,7 @@ namespace MacroTools.ControlPointSystem
             if (!(hitPoints < CaptureThreshold)) return;
             BlzSetEventDamage(0);
             SetUnitOwner(controlPoint.Unit, GetOwningPlayer(attacker), true);
-            controlPoint.Unit.SetLifePercent(85);
+            controlPoint.Unit.SetLifePercent(100);
           }
           catch (Exception ex)
           {
@@ -212,7 +206,7 @@ namespace MacroTools.ControlPointSystem
           CreateOrUpdateDefender(controlPoint);
           ConfigureControlPointStats(controlPoint);
           controlPoint.Unit.SetScale(1.2f);
-          if (controlPoint.ControlLevel == ControlLevelMaximum)
+          if (controlPoint.ControlLevel == ControlLevelSettings.ControlLevelMaximum)
             controlPoint.Unit.RemoveAbility(IncreaseControlLevelAbilityTypeId);
         }
         else
@@ -230,21 +224,21 @@ namespace MacroTools.ControlPointSystem
         if (controlPoint.Owner != Player(PLAYER_NEUTRAL_AGGRESSIVE) &&
             controlPoint.Owner != Player(PLAYER_NEUTRAL_PASSIVE) &&
             controlPoint.Owner != Player(bj_PLAYER_NEUTRAL_VICTIM) && 
-            controlPoint.ControlLevel < ControlLevelMaximum)
+            controlPoint.ControlLevel < ControlLevelSettings.ControlLevelMaximum)
           controlPoint.ControlLevel++;
       };
     }
 
     private void ConfigureControlPointStats(ControlPoint controlPoint)
     {
-      var maxHitPoints = MaxHitpoints + controlPoint.ControlLevel * 500;
+      var maxHitPoints = MaxHitpoints + controlPoint.ControlLevel * ControlLevelSettings.HitPointsPerControlLevel;
       var lifePercent = Math.Max(controlPoint.Unit.GetLifePercent(), 1);
       controlPoint.Unit
         .SetMaximumHitpoints(maxHitPoints)
         .SetLifePercent(lifePercent)
-        .SetArmor(DefenderSettings.ArmorPerControlLevel * DefenderSettings.ArmorPerControlLevel)
+        .SetArmor(ControlLevelSettings.ArmorPerControlLevel * ControlLevelSettings.ArmorPerControlLevel)
         .SetUnitLevel(controlPoint.ControlLevel)
-        .SetArmor(DefenderSettings.ArmorPerControlLevel * controlPoint.ControlLevel)
+        .SetArmor(ControlLevelSettings.ArmorPerControlLevel * controlPoint.ControlLevel)
         .ShowAttackUi(false);
       ConfigureControlPointOrDefenderAttack(controlPoint.Unit, controlPoint.ControlLevel);
     }
@@ -252,7 +246,7 @@ namespace MacroTools.ControlPointSystem
     private void CreateOrUpdateDefender(ControlPoint controlPoint)
     {
       var defenderUnitTypeId = controlPoint.Owner.GetFaction()?.ControlPointDefenderUnitTypeId ??
-                               DefenderSettings.DefaultDefenderUnitTypeId;
+                               ControlLevelSettings.DefaultDefenderUnitTypeId;
       controlPoint.Defender ??= CreateUnit(controlPoint.Owner, defenderUnitTypeId, GetUnitX(controlPoint.Unit), GetUnitY(controlPoint.Unit), 0);
       controlPoint.Defender
         .AddAbility(FourCC("Aloc"))
@@ -275,7 +269,7 @@ namespace MacroTools.ControlPointSystem
       whichUnit
         .SetDamageBase(controlLevel == 0
           ? -1
-          : DefenderSettings.DamageBase-1 + controlLevel * DefenderSettings.DamagePerControlLevel)
+          : ControlLevelSettings.DamageBase-1 + controlLevel * ControlLevelSettings.DamagePerControlLevel)
         .SetDamageDiceNumber(1)
         .SetDamageDiceSides(1)
         .SetAttackType(2);
