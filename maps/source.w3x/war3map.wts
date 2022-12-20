@@ -18919,6 +18919,12 @@ STRING 3153
 (Draenei)
 }
 
+STRING 3154
+// Abilities: A0A8 (Fortify), Ubertip (Tooltip - Normal - Extended)
+{
+Increases this Control Point's Control Level, granting it increased hit points, attack damage, and armor.
+}
+
 STRING 3155
 // Units: h03N (Improved Hunter Tower), Ubertip (Tooltip - Extended)
 {
@@ -23626,12 +23632,6 @@ STRING 3941
 // Units: H017 (Highlord of the Alliance), Propernames (Proper Names)
 {
 Bolvar Fordragon
-}
-
-STRING 3942
-// Abilities: A0A8 (Fortify), Ubertip (Tooltip - Normal - Extended)
-{
-Increases this Control Point's Control Level, granting it increased hit points and attack damage.
 }
 
 STRING 3943
