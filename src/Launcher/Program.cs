@@ -110,8 +110,6 @@ namespace Launcher
       builder.AddFiles(baseMapPath, "*", SearchOption.AllDirectories);
       builder.AddFiles(launchSettings.AssetsFolderPath, "*", SearchOption.AllDirectories);
 
-      //ObjectEditor.SupplmentMapWithObjectData(map);
-
       // Set debug options if necessary, configure compiler
       const string csc = Debug ? "-debug -define:DEBUG" : null;
       var csproj = Directory.EnumerateFiles(projectFolderPath, "*.csproj", SearchOption.TopDirectoryOnly).Single();
@@ -168,14 +166,13 @@ namespace Launcher
 
     private static void FixDoodadData(Map map)
     {
-      if (map.Doodads != null)
+      if (map.Doodads == null) 
+        return;
+      var i = 0;
+      foreach (var doodad in map.Doodads.Doodads)
       {
-        var i = 0;
-        foreach (var doodad in map.Doodads.Doodads)
-        {
-          doodad.CreationNumber = i;
-          i++;
-        }
+        doodad.CreationNumber = i;
+        i++;
       }
     }
 
