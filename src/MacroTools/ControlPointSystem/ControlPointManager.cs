@@ -276,7 +276,7 @@ namespace MacroTools.ControlPointSystem
         .SetDamageSidesPerDie(6)
         .SetAttackType(2)
         .SetArmor(DefenderSettings.ArmorPerControlLevel * controlLevel)
-        .ShowAttackUI(controlLevel != 0);
+        .ShowAttackUi(controlLevel != 0);
     }
   }
 }

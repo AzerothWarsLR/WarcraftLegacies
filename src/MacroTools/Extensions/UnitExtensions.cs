@@ -17,7 +17,7 @@ namespace MacroTools.Extensions
     /// <summary>
     /// Determines whether or not the unit's attack can be seen in the UI window.
     /// </summary>
-    public static unit ShowAttackUI(this unit whichUnit, bool show, int weaponSlot = 0)
+    public static unit ShowAttackUi(this unit whichUnit, bool show, int weaponSlot = 0)
     {
       BlzSetUnitWeaponBooleanField(whichUnit, UNIT_WEAPON_BF_ATTACK_SHOW_UI, weaponSlot, show);
       return whichUnit;
