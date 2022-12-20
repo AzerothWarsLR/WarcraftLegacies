@@ -118,7 +118,8 @@ namespace MacroTools.ControlPointSystem
       
       controlPoint.Unit
         .SetMaximumHitpoints(MaxHitpoints)
-        .AddAbility(IncreaseControlLevelAbilityTypeId);
+        .AddAbility(IncreaseControlLevelAbilityTypeId)
+        .SetLifePercent(100);
       RegisterIncomeGeneration(controlPoint);
       RegisterDamageTrigger(controlPoint);
       RegisterOwnershipChangeTrigger(controlPoint);
