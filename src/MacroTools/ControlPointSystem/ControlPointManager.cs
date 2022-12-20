@@ -242,7 +242,10 @@ namespace MacroTools.ControlPointSystem
       controlPoint.Unit
         .SetMaximumHitpoints(maxHitPoints)
         .SetLifePercent(lifePercent)
-        .SetArmor(DefenderSettings.ArmorPerControlLevel * DefenderSettings.ArmorPerControlLevel);
+        .SetArmor(DefenderSettings.ArmorPerControlLevel * DefenderSettings.ArmorPerControlLevel)
+        .SetUnitLevel(controlPoint.ControlLevel)
+        .SetArmor(DefenderSettings.ArmorPerControlLevel * controlPoint.ControlLevel)
+        .ShowAttackUi(false);
       ConfigureControlPointOrDefenderAttack(controlPoint.Unit, controlPoint.ControlLevel);
     }
 
@@ -275,9 +278,7 @@ namespace MacroTools.ControlPointSystem
           : DefenderSettings.DamageBase-1 + controlLevel * DefenderSettings.DamagePerControlLevel)
         .SetDamageDiceNumber(1)
         .SetDamageDiceSides(1)
-        .SetAttackType(2)
-        .SetArmor(DefenderSettings.ArmorPerControlLevel * controlLevel)
-        .SetUnitLevel(controlLevel);
+        .SetAttackType(2);
     }
   }
 }

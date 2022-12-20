@@ -13,6 +13,15 @@ namespace MacroTools.Extensions
   {
     private const float HeroDropDist = 50; //The radius in which heroes spread out items when they drop them
 
+    /// <summary>
+    /// Determines whether or not the unit's attack can be seen in the UI window.
+    /// </summary>
+    public static unit ShowAttackUi(this unit whichUnit, bool show, int weaponSlot = 0)
+    {
+      BlzSetUnitWeaponBooleanField(whichUnit, UNIT_WEAPON_BF_ATTACK_SHOW_UI, weaponSlot, show);
+      return whichUnit;
+    }
+    
     public static unit SetUnitLevel(this unit whichUnit, int level)
     {
       BlzSetUnitIntegerField(whichUnit, UNIT_IF_LEVEL, level);
