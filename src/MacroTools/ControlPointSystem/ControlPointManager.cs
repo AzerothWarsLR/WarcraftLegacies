@@ -140,6 +140,7 @@ namespace MacroTools.ControlPointSystem
       RegisterOwnershipChangeTrigger(controlPoint);
       RegisterControlLevelChangeTrigger(controlPoint);
       RegisterControlLevelGrowthOverTime(controlPoint);
+      ConfigureControlPointStats(controlPoint);
     }
 
     private static void RegisterIncome(ControlPoint controlPoint)
