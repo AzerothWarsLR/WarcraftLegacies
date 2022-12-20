@@ -242,21 +242,18 @@ namespace MacroTools.ControlPointSystem
       controlPoint.Unit
         .SetMaximumHitpoints(maxHitPoints)
         .SetLifePercent(lifePercent)
-        .SetArmor(DefenderSettings.ArmorPerControlLevel * DefenderSettings.ArmorPerControlLevel)
-        .SetDamageBase(DefenderSettings.DamageBase + controlPoint.ControlLevel * DefenderSettings.DamagePerControlLevel)
-        .SetDamageNumberOfDice(2)
-        .SetDamageSidesPerDie(6);
+        .SetArmor(DefenderSettings.ArmorPerControlLevel * DefenderSettings.ArmorPerControlLevel);
+      ConfigureControlPointOrDefenderAttack(controlPoint.Unit, controlPoint.ControlLevel);
     }
 
     private void CreateOrUpdateDefender(ControlPoint controlPoint)
     {
       controlPoint.Defender ??= CreateUnit(controlPoint.Owner, DefenderSettings.DefenderUnitTypeId, GetUnitX(controlPoint.Unit), GetUnitY(controlPoint.Unit), 0);
       controlPoint.Defender
-        .SetDamageBase(DefenderSettings.DamageBase + controlPoint.ControlLevel * DefenderSettings.DamagePerControlLevel)
         .AddAbility(FourCC("Aloc"))
-        .SetInvulnerable(true)
-        .SetDamageNumberOfDice(2)
-        .SetDamageSidesPerDie(6);
+        .SetInvulnerable(true);
+      ConfigureControlPointOrDefenderAttack(controlPoint.Defender, controlPoint.ControlLevel);
+      ConfigureControlPointOrDefenderAttack(controlPoint.Unit, controlPoint.ControlLevel);
       var defenderUnitTypeId = controlPoint.Owner.GetFaction()?.ControlPointDefenderTemplateUnitTypeId;
       if (defenderUnitTypeId != null && defenderUnitTypeId != 0)
         controlPoint.Defender.SetSkin(defenderUnitTypeId.Value);
@@ -269,6 +266,17 @@ namespace MacroTools.ControlPointSystem
       controlPoint.Unit
         .SetInvulnerable(false)
         .AddAbility(IncreaseControlLevelAbilityTypeId);
+    }
+
+    private void ConfigureControlPointOrDefenderAttack(unit whichUnit, int controlLevel)
+    {
+      whichUnit
+        .SetDamageBase(DefenderSettings.DamageBase + controlLevel * DefenderSettings.DamagePerControlLevel)
+        .SetDamageNumberOfDice(2)
+        .SetDamageSidesPerDie(6)
+        .SetAttackType(2)
+        .SetArmor(DefenderSettings.ArmorPerControlLevel * controlLevel)
+        .ShowAttackUI(controlLevel != 0);
     }
   }
 }
