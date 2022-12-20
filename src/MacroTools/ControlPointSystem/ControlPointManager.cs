@@ -13,6 +13,21 @@ namespace MacroTools.ControlPointSystem
   /// </summary>
   public sealed class ControlPointManager
   {
+    static ControlPointManager()
+    {
+      CreateTimer().Start(Period, true, () =>
+      {
+        foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
+          if (player.GetFaction() != null)
+          {
+            var goldPerSecond = player.GetTotalIncome() * Period / 60;
+            player.AddGold(goldPerSecond);
+            var lumberPerSecond = player.GetLumberIncome() * Period / 60;
+            player.AddLumber(lumberPerSecond);
+          }
+      });
+    }
+    
     /// <summary>
     /// The singleton instance of the <see cref="ControlPointManager"/> class.
     /// </summary>
@@ -120,29 +135,17 @@ namespace MacroTools.ControlPointSystem
         .SetMaximumHitpoints(MaxHitpoints)
         .AddAbility(IncreaseControlLevelAbilityTypeId)
         .SetLifePercent(100);
-      RegisterIncomeGeneration(controlPoint);
+      RegisterIncome(controlPoint);
       RegisterDamageTrigger(controlPoint);
       RegisterOwnershipChangeTrigger(controlPoint);
       RegisterControlLevelChangeTrigger(controlPoint);
       RegisterControlLevelGrowthOverTime(controlPoint);
     }
 
-    private static void RegisterIncomeGeneration(ControlPoint controlPoint)
+    private static void RegisterIncome(ControlPoint controlPoint)
     {
       controlPoint.Owner.SetBaseIncome(controlPoint.Owner.GetBaseIncome() + controlPoint.Value);
       controlPoint.Owner.SetControlPointCount(controlPoint.Owner.GetControlPointCount() + 1);
-      var incomeTimer = CreateTimer();
-      TimerStart(incomeTimer, Period, true, () =>
-      {
-        foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
-          if (player.GetFaction() != null)
-          {
-            var goldPerSecond = player.GetTotalIncome() * Period / 60;
-            player.AddGold(goldPerSecond);
-            var lumberPerSecond = player.GetLumberIncome() * Period / 60;
-            player.AddLumber(lumberPerSecond);
-          }
-      });
     }
     
     private void RegisterDamageTrigger(ControlPoint controlPoint)
