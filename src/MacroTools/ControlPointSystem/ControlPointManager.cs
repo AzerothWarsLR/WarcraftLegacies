@@ -271,12 +271,13 @@ namespace MacroTools.ControlPointSystem
     private void ConfigureControlPointOrDefenderAttack(unit whichUnit, int controlLevel)
     {
       whichUnit
-        .SetDamageBase(DefenderSettings.DamageBase + controlLevel * DefenderSettings.DamagePerControlLevel)
-        .SetDamageNumberOfDice(2)
-        .SetDamageSidesPerDie(6)
+        .SetDamageBase(controlLevel == 0
+          ? 0
+          : DefenderSettings.DamageBase + controlLevel * DefenderSettings.DamagePerControlLevel)
+        .SetDamageDiceNumber(1)
+        .SetDamageDiceSides(1)
         .SetAttackType(2)
-        .SetArmor(DefenderSettings.ArmorPerControlLevel * controlLevel)
-        .ShowAttackUi(controlLevel != 0);
+        .SetArmor(DefenderSettings.ArmorPerControlLevel * controlLevel);
     }
   }
 }

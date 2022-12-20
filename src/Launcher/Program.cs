@@ -192,9 +192,9 @@ namespace Launcher
       var objectDatabase = map.GetObjectDatabaseFromMap();
       foreach (var unit in objectDatabase.GetUnits().Where(IsControlPoint))
       {
-        unit.CombatAttack1DamageBase = 1;
-        unit.CombatAttack1DamageNumberOfDice = 2;
-        unit.CombatAttack1DamageSidesPerDie = 6;
+        unit.CombatAttack1DamageBase = 0;
+        unit.CombatAttack1DamageNumberOfDice = 1;
+        unit.CombatAttack1DamageSidesPerDie = 1;
         unit.CombatAttacksEnabled = AttackBits.Attack1Only;
         unit.CombatAttack1Range = 600;
         unit.CombatAcquisitionRange = 600;
