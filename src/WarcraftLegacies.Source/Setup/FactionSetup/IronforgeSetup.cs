@@ -21,7 +21,6 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
         StartingGold = 250,
         StartingLumber = 500,
         CinematicMusic = "PursuitTheme",
-        ControlPointDefenderTemplateUnitTypeId = Constants.UNIT_H07J_CANNON_TOWER_IRONFORGE,
         IntroText = @"You are playing as the long- enduring |cffe4bc00Kingdom of Ironforge.
                     |r
 Re-establish your stronghold by capturing the surrounding lands.

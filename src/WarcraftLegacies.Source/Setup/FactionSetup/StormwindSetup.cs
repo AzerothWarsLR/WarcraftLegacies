@@ -20,7 +20,6 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
         UndefeatedResearch = FourCC("R060"),
         StartingGold = 150,
         StartingLumber = 500,
-        ControlPointDefenderTemplateUnitTypeId = Constants.UNIT_H06Y_ARCANE_TOWER_STORMWIND,
         IntroText = @"You are playing as the steadfast |cff005800Kingdom of Stormwind|r.
 
 You are the first line of defense against the onslaught of the Fel Horde. 
