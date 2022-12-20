@@ -182,21 +182,18 @@ namespace MacroTools.ControlPointSystem
         {
           try
           {
-            var formerOwner = GetChangingUnitPrevOwner();
-            var newOwner = GetTriggerUnit().OwningPlayer();
+            var previousOwner = PlayerData.ByHandle(GetChangingUnitPrevOwner());
+            previousOwner.ControlPointCount -= 1;
+            previousOwner.BaseIncome -= controlPoint.Value;
 
-            var playerData = PlayerData.ByHandle(formerOwner);
+            var newOwner = PlayerData.ByHandle(GetTriggerUnit().OwningPlayer());
+            newOwner.ControlPointCount += 1;
+            newOwner.BaseIncome += controlPoint.Value;
 
-            playerData.ControlPointCount -= 1;
-            playerData.BaseIncome -= controlPoint.Value;
-
-            playerData = PlayerData.ByHandle(newOwner);
-
-            playerData.ControlPointCount += 1;
-            playerData.BaseIncome += controlPoint.Value;
-
-            UnitAddAbility(controlPoint.Unit, RegenerationAbility);
-            SetUnitState(controlPoint.Unit, UNIT_STATE_LIFE, GetUnitState(controlPoint.Unit, UNIT_STATE_MAX_LIFE));
+            controlPoint.Unit
+              .AddAbility(RegenerationAbility)
+              .SetLifePercent(100);
+            controlPoint.ControlLevel = 0;
             controlPoint.SignalOwnershipChange(new ControlPointOwnerChangeEventArgs(controlPoint, GetChangingUnitPrevOwner()));
           }
           catch (Exception ex)
@@ -212,39 +209,15 @@ namespace MacroTools.ControlPointSystem
       {
         if (controlPoint.ControlLevel > 0)
         {
-          controlPoint.Defender ??= CreateUnit(controlPoint.Owner, DefenderSettings.DefenderUnitTypeId, GetUnitX(controlPoint.Unit), GetUnitY(controlPoint.Unit), 0);
-          controlPoint.Defender
-            .SetDamageBase(DefenderSettings.DamageBase + controlPoint.ControlLevel * DefenderSettings.DamagePerControlLevel)
-            .SetArmor(DefenderSettings.ArmorPerControlLevel * DefenderSettings.ArmorPerControlLevel)
-            .AddAbility(FourCC("Aloc"))
-            .SetInvulnerable(true);
-          var defenderUnitTypeId = controlPoint.Owner.GetFaction()?.ControlPointDefenderTemplateUnitTypeId;
-          if (defenderUnitTypeId != null && defenderUnitTypeId != 0)
-            controlPoint.Defender.SetSkin(defenderUnitTypeId.Value);
-          controlPoint.Unit
-            .SetScale(1.2f);
+          ConfigureDefender(controlPoint);
           ScaleHitpointsToControlLevel(controlPoint);
-          CreateTrigger()
-            .RegisterUnitEvent(controlPoint.Unit, EVENT_UNIT_CHANGE_OWNER)
-            .AddAction(() =>
-            {
-              controlPoint.ControlLevel = 0;
-              controlPoint.Defender?.Kill();
-              controlPoint.Unit.SetScale(1);
-              if (controlPoint.ControlLevel >= IncreaseControlLevelAbilityTypeId)
-                controlPoint.Unit.RemoveAbility(IncreaseControlLevelAbilityTypeId);
-              DestroyTrigger(GetTriggeringTrigger());
-            });
+          controlPoint.Unit.SetScale(1.2f);
           if (controlPoint.ControlLevel == ControlLevelMaximum)
             controlPoint.Unit.RemoveAbility(IncreaseControlLevelAbilityTypeId);
         }
         else
         {
-          controlPoint.Defender?.Kill();
-          controlPoint.Defender = null;
-          controlPoint.Unit
-            .SetInvulnerable(false)
-            .AddAbility(IncreaseControlLevelAbilityTypeId);
+          RemoveDefender(controlPoint);
           ScaleHitpointsToControlLevel(controlPoint);
         }
       };
@@ -269,6 +242,28 @@ namespace MacroTools.ControlPointSystem
       controlPoint.Unit
         .SetMaximumHitpoints(maxHitPoints)
         .SetLifePercent(lifePercent);
+    }
+
+    private void ConfigureDefender(ControlPoint controlPoint)
+    {
+      controlPoint.Defender ??= CreateUnit(controlPoint.Owner, DefenderSettings.DefenderUnitTypeId, GetUnitX(controlPoint.Unit), GetUnitY(controlPoint.Unit), 0);
+      controlPoint.Defender
+        .SetDamageBase(DefenderSettings.DamageBase + controlPoint.ControlLevel * DefenderSettings.DamagePerControlLevel)
+        .SetArmor(DefenderSettings.ArmorPerControlLevel * DefenderSettings.ArmorPerControlLevel)
+        .AddAbility(FourCC("Aloc"))
+        .SetInvulnerable(true);
+      var defenderUnitTypeId = controlPoint.Owner.GetFaction()?.ControlPointDefenderTemplateUnitTypeId;
+      if (defenderUnitTypeId != null && defenderUnitTypeId != 0)
+        controlPoint.Defender.SetSkin(defenderUnitTypeId.Value);
+    }
+
+    private void RemoveDefender(ControlPoint controlPoint)
+    {
+      controlPoint.Defender?.Kill();
+      controlPoint.Defender = null;
+      controlPoint.Unit
+        .SetInvulnerable(false)
+        .AddAbility(IncreaseControlLevelAbilityTypeId);
     }
   }
 }
