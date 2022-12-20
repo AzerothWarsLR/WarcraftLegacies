@@ -91,9 +91,9 @@ namespace MacroTools.FactionSystem
 
     /// <summary>
     /// All of the <see cref="Faction"/>'s <see cref="ControlPoint"/> <see cref="ControlPoint.Defender"/>s
-    /// will look like this unit type ID.
+    /// will be represented by this unit type.
     /// </summary>
-    public int ControlPointDefenderTemplateUnitTypeId { get; init; }
+    public int? ControlPointDefenderUnitTypeId { get; init; }
     
     public int StartingGold { get; set; }
 

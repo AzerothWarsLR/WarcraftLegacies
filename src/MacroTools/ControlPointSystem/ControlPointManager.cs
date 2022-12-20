@@ -248,15 +248,14 @@ namespace MacroTools.ControlPointSystem
 
     private void CreateOrUpdateDefender(ControlPoint controlPoint)
     {
-      controlPoint.Defender ??= CreateUnit(controlPoint.Owner, DefenderSettings.DefenderUnitTypeId, GetUnitX(controlPoint.Unit), GetUnitY(controlPoint.Unit), 0);
+      var defenderUnitTypeId = controlPoint.Owner.GetFaction()?.ControlPointDefenderUnitTypeId ??
+                               DefenderSettings.DefaultDefenderUnitTypeId;
+      controlPoint.Defender ??= CreateUnit(controlPoint.Owner, defenderUnitTypeId, GetUnitX(controlPoint.Unit), GetUnitY(controlPoint.Unit), 0);
       controlPoint.Defender
         .AddAbility(FourCC("Aloc"))
         .SetInvulnerable(true);
       ConfigureControlPointOrDefenderAttack(controlPoint.Defender, controlPoint.ControlLevel);
       ConfigureControlPointOrDefenderAttack(controlPoint.Unit, controlPoint.ControlLevel);
-      var defenderUnitTypeId = controlPoint.Owner.GetFaction()?.ControlPointDefenderTemplateUnitTypeId;
-      if (defenderUnitTypeId != null && defenderUnitTypeId != 0)
-        controlPoint.Defender.SetSkin(defenderUnitTypeId.Value);
     }
 
     private void RemoveDefender(ControlPoint controlPoint)
@@ -272,7 +271,7 @@ namespace MacroTools.ControlPointSystem
     {
       whichUnit
         .SetDamageBase(controlLevel == 0
-          ? 0
+          ? -1
           : DefenderSettings.DamageBase + controlLevel * DefenderSettings.DamagePerControlLevel)
         .SetDamageDiceNumber(1)
         .SetDamageDiceSides(1)

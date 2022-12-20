@@ -6,10 +6,9 @@
   public sealed class DefenderSettings
   {
     /// <summary>
-    /// When <see cref="ControlPoint"/>s have a <see cref="ControlPoint.ControlLevel"/> greater than 0, they spawn a
-    /// unit with this ID to defend them.
+    /// The default unit type ID to be used for <see cref="ControlPoint"/> <see cref="ControlPoint.Defender"/>s.
     /// </summary>
-    public int DefenderUnitTypeId { get; init; }
+    public int DefaultDefenderUnitTypeId { get; init; }
     
     /// <summary>
     /// The base damage for <see cref="ControlPoint.Defender"/>s.

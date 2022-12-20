@@ -36,7 +36,7 @@ namespace WarcraftLegacies.Source.Setup
         IncreaseControlLevelAbilityTypeId = Constants.ABILITY_A0A8_FORTIFY_CONTROL_POINTS_SHARED,
         DefenderSettings = new DefenderSettings
         {
-          DefenderUnitTypeId = Constants.UNIT_H03F_CONTROL_POINT_DEFENDER_SHARED,
+          DefaultDefenderUnitTypeId = Constants.UNIT_H03F_CONTROL_POINT_DEFENDER_SHARED,
           DamageBase = 60,
           DamagePerControlLevel = 20,
           ArmorPerControlLevel = 1

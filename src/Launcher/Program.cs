@@ -12,8 +12,6 @@ using War3Api.Object.Enums;
 using War3Net.Build;
 using War3Net.Build.Extensions;
 using War3Net.Build.Info;
-using War3Net.Build.Object;
-using War3Net.Build.Widget;
 using War3Net.IO.Mpq;
 using WCSharp.ConstantGenerator;
 using CoreSystemProvider = CSharpLua.CoreSystem.CoreSystemProvider;
@@ -192,7 +190,7 @@ namespace Launcher
       var objectDatabase = map.GetObjectDatabaseFromMap();
       foreach (var unit in objectDatabase.GetUnits().Where(IsControlPoint))
       {
-        unit.CombatAttack1DamageBase = 0;
+        unit.CombatAttack1DamageBase = -1;
         unit.CombatAttack1DamageNumberOfDice = 1;
         unit.CombatAttack1DamageSidesPerDie = 1;
         unit.CombatAttacksEnabled = AttackBits.Attack1Only;
