@@ -38,7 +38,8 @@ namespace WarcraftLegacies.Source.Setup
         {
           DefenderUnitTypeId = Constants.UNIT_H03F_CONTROL_POINT_DEFENDER_SHARED,
           DamageBase = 60,
-          DamagePerControlLevel = 20
+          DamagePerControlLevel = 20,
+          ArmorPerControlLevel = 1
         }
       };
       var preplacedUnitSystem = new PreplacedUnitSystem();

@@ -20,5 +20,10 @@
     /// The amount of damage <see cref="ControlPoint.Defender"/>s get per <see cref="ControlPoint.ControlLevel"/> they have.
     /// </summary>
     public int DamagePerControlLevel { get; init; }
+    
+    /// <summary>
+    /// The amount of armor given to <see cref="ControlPoint"/>s per <see cref="ControlPoint.ControlLevel"/>.
+    /// </summary>
+    public int ArmorPerControlLevel { get; init; }
   }
 }
