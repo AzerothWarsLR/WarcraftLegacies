@@ -19,14 +19,14 @@ namespace WarcraftLegacies.Source.Objectives
     /// <summary>
     /// Initializes a new instance of the <see cref="ObjectivePowerSource"/> class.
     /// </summary>
-    public ObjectivePowerSource(unit dimensionalGenerator, IEnumerable<item> powerSources)
+    public ObjectivePowerSource(unit dimensionalGenerator, IEnumerable<int> validItemTypeIds)
     {
       Description = $"Place a valid power source in the {GetUnitName(dimensionalGenerator)}";
       CreateTrigger()
         .RegisterUnitEvent(dimensionalGenerator, EVENT_UNIT_PICKUP_ITEM)
         .AddAction(() =>
         {
-          if (powerSources.Contains(GetManipulatedItem()))
+          if (validItemTypeIds.Contains(GetItemTypeId(GetManipulatedItem())))
           {
             UsedPowerSource = GetManipulatedItem();
             Progress = QuestProgress.Complete;
