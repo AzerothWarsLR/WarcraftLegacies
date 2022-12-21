@@ -224,11 +224,12 @@ namespace MacroTools.ControlPointSystem
     {
       GameTime.TurnEnded += (_, _) =>
       {
-        if (controlPoint.Owner != Player(PLAYER_NEUTRAL_AGGRESSIVE) &&
-            controlPoint.Owner != Player(PLAYER_NEUTRAL_PASSIVE) &&
-            controlPoint.Owner != Player(bj_PLAYER_NEUTRAL_VICTIM) && 
-            controlPoint.ControlLevel < ControlLevelSettings.ControlLevelMaximum)
-          controlPoint.ControlLevel++;
+        if (controlPoint.Owner == Player(PLAYER_NEUTRAL_AGGRESSIVE) ||
+            controlPoint.Owner == Player(PLAYER_NEUTRAL_PASSIVE) ||
+            controlPoint.Owner == Player(bj_PLAYER_NEUTRAL_VICTIM) ||
+            controlPoint.ControlLevel >= ControlLevelSettings.ControlLevelMaximum) 
+          return;
+        controlPoint.ControlLevel++;
         AddSpecialEffect(@"Abilities\Spells\Items\AIlm\AIlmTarget.mdl", GetUnitX(controlPoint.Unit),
             GetUnitY(controlPoint.Unit))
           .SetScale(1.5f)

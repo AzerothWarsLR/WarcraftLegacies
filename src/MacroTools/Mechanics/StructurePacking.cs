@@ -10,20 +10,10 @@ namespace MacroTools.Mechanics
   /// </summary>
   public sealed class PackableStructure
   {
-    /// <summary>
-    /// A "Build Tiny X" ability used to reconstruct the building.
-    /// </summary>
-    public int BuildAbility { get; init; }
-    
-    /// <summary>
-    /// The structure model that appears above the Kodo's head.
-    /// </summary>
-    public string StructureModel { get; init; } = string.Empty;
-    
-    /// <summary>
-    /// The structure that the Kodo can rebuild.
-    /// </summary>
-    public int StructureId { get; init; }
+    private int _buildAbility;
+    private string _structureModel = string.Empty;
+    private int _structureId;
+    private int _packedUnitId;
     
     /// <summary>
     /// Register a new <see cref="PackableStructure"/>.
@@ -32,9 +22,10 @@ namespace MacroTools.Mechanics
     {
       var packable = new PackableStructure
       {
-        BuildAbility = buildAbility,
-        StructureModel = structureModel,
-        StructureId = structureId
+        _buildAbility = buildAbility,
+        _structureModel = structureModel,
+        _structureId = structureId,
+        _packedUnitId = packedUnitId
       };
 
       PlayerUnitEvents.Register(UnitTypeEvent.FinishesTraining, () => packable.OnTrainUnitType(), structureId);
@@ -46,15 +37,15 @@ namespace MacroTools.Mechanics
     /// </summary>
     public void PackUnitSetup(unit packedUnit)
     {
-      var effect = AddSpecialEffectTarget(StructureModel, packedUnit, "overhead");
+      var effect = AddSpecialEffectTarget(_structureModel, packedUnit, "overhead");
       BlzSetSpecialEffectScale(effect, (float)0.25);
       BlzSetSpecialEffectTime(effect, 100);
-      UnitAddAbility(packedUnit, BuildAbility);
+      UnitAddAbility(packedUnit, _buildAbility);
     }
 
     private void PackBuilding(unit building, unit packedUnit)
     {
-      if (StructureId != GetUnitTypeId(building))
+      if (_structureId != GetUnitTypeId(building))
       {
         Console.WriteLine($"ERROR: there is no PackableStructure setup for building: {GetUnitName(building)}");
         return;
@@ -66,6 +57,8 @@ namespace MacroTools.Mechanics
 
     private void OnTrainUnitType()
     {
+      if (GetTrainedUnit().GetTypeId() != _packedUnitId)
+        return;
       PackBuilding(GetTriggerUnit(), GetTrainedUnit());
       RemoveUnit(GetTriggerUnit());
     }
