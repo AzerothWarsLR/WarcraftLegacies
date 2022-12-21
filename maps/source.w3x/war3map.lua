@@ -5897,6 +5897,8 @@ u = BlzCreateUnitWithSkin(p, FourCC("h071"), 10176.0, -11904.0, 270.000, FourCC(
 u = BlzCreateUnitWithSkin(p, FourCC("ncb4"), 10880.0, -12096.0, 270.000, FourCC("ncb4"))
 u = BlzCreateUnitWithSkin(p, FourCC("ncb1"), 11008.0, -12032.0, 270.000, FourCC("ncb1"))
 u = BlzCreateUnitWithSkin(p, FourCC("n00E"), -10432.0, -25664.0, 270.000, FourCC("n00E"))
+life = GetUnitState(u, UNIT_STATE_LIFE)
+SetUnitState(u, UNIT_STATE_LIFE, 0.10 * life)
 u = BlzCreateUnitWithSkin(p, FourCC("ncb4"), 11072.0, -11200.0, 270.000, FourCC("ncb4"))
 u = BlzCreateUnitWithSkin(p, FourCC("ncb4"), 11072.0, -11456.0, 270.000, FourCC("ncb4"))
 u = BlzCreateUnitWithSkin(p, FourCC("ncb5"), 10688.0, -9984.0, 270.000, FourCC("ncb5"))
