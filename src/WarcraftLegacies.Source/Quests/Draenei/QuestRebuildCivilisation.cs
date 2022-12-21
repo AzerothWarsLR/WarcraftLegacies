@@ -1,7 +1,6 @@
 ﻿using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
-using System.Collections.Generic;
 using MacroTools.ObjectiveSystem.Objectives;
 using WCSharp.Shared.Data;
 
