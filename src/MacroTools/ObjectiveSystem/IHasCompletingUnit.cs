@@ -1,7 +1,6 @@
-﻿using MacroTools.QuestSystem;
-using static War3Api.Common;
+﻿using static War3Api.Common;
 
-namespace MacroTools.ObjectiveSystem.Objectives
+namespace MacroTools.ObjectiveSystem
 {
   /// <summary>
   /// An <see cref="Objective"/> that has a unit which can be identified as having completed it.
