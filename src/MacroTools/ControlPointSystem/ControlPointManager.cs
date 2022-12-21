@@ -254,7 +254,7 @@ namespace MacroTools.ControlPointSystem
                                ControlLevelSettings.DefaultDefenderUnitTypeId;
       controlPoint.Defender ??= CreateUnit(controlPoint.Owner, defenderUnitTypeId, GetUnitX(controlPoint.Unit), GetUnitY(controlPoint.Unit), 0);
       controlPoint.Defender
-        //.AddAbility(FourCC("Aloc"))
+        .AddAbility(FourCC("Aloc"))
         .SetInvulnerable(true);
       ConfigureControlPointOrDefenderAttack(controlPoint.Defender, controlPoint.ControlLevel);
       ConfigureControlPointOrDefenderAttack(controlPoint.Unit, controlPoint.ControlLevel);
