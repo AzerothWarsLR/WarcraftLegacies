@@ -28,9 +28,10 @@ namespace MacroTools.ObjectiveSystem.Objectives
       _requiredLevel = requiredLevel;
       target.ControlLevelChanged += (_, _) =>
       {
+        RefreshDescription();
         Progress = target.ControlLevel >= requiredLevel ? QuestProgress.Complete : QuestProgress.Incomplete;
       };
-      Description = $"{target.Name} is Control Level {requiredLevel} or higher";
+      RefreshDescription();
     }
     
     internal override void OnAdd(Faction whichFaction)
@@ -39,5 +40,8 @@ namespace MacroTools.ObjectiveSystem.Objectives
         ? QuestProgress.Complete
         : QuestProgress.Incomplete;
     }
+
+    private void RefreshDescription() => Description =
+      $"{_target.Name} is Control Level {_requiredLevel} or higher ({_target.ControlLevel}/{_requiredLevel})";
   }
 }
