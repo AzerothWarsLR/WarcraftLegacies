@@ -20,13 +20,9 @@ namespace WarcraftLegacies.Source.Quests.Draenei
     {
       Required = true;
       AddObjective(new ObjectiveBuildInRect(questRect, "on Azuremyst Isle", Constants.UNIT_U00U_CRYSTAL_PROTECTOR_DRAENEI, 4));
-      AddObjective(new ObjectiveBuildInRect(questRect, "on Azuremyst Isle", Constants.UNIT_O058_ALTAR_OF_LIGHT_DRAENEI, 1));
-      AddObjective(new ObjectiveBuildInRect(questRect, "on Azuremyst Isle", Constants.UNIT_O052_CEREMONIAL_ALTAR_DRAENEI, 1));
-      AddObjective(new ObjectiveBuildInRect(questRect, "on Azuremyst Isle", Constants.UNIT_O054_ASTRAL_SANCTUM_DRAENEI, 1));
-      AddObjective(new ObjectiveBuildInRect(questRect, "on Azuremyst Isle", Constants.UNIT_O055_CRYSTAL_SPIRE_DRAENEI, 1));
+      AddObjective(new ObjectiveBuildInRect(questRect, "on Azuremyst Isle", Constants.UNIT_O058_ALTAR_OF_LIGHT_DRAENEI));
       AddObjective(new ObjectiveBuildInRect(questRect, "on Azuremyst Isle", Constants.UNIT_O056_ARCANE_WELL_DRAENEI, 10));
       AddObjective(new ObjectiveUpgrade(Constants.UNIT_O051_DIVINE_CITADEL_DRAENEI, Constants.UNIT_O02P_CRYSTAL_HALL_DRAENEI));
-      AddObjective(new ObjectiveKillAllInArea(new List<Rectangle> { questRect }, "on Azuremyst Isle"));
 
       ResearchId = Constants.UPGRADE_R082_QUEST_COMPLETED_THE_WAY_FORWARD;// Change this to current quest;
     }
