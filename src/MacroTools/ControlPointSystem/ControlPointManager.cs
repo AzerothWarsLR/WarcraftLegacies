@@ -48,11 +48,6 @@ namespace MacroTools.ControlPointSystem
     }
 
     /// <summary>
-    /// The percentage of maximum hitpoints below which <see cref="ControlPoint"/>s will be transferred to the attacker.
-    /// </summary>
-    public float CaptureThreshold { get; init; }
-
-    /// <summary>
     /// All <see cref="ControlPoint"/>s are given this many hitpoints.
     /// </summary>
     public int MaxHitpoints { get; init; }
@@ -153,7 +148,7 @@ namespace MacroTools.ControlPointSystem
       controlPoint.Owner.SetControlPointCount(controlPoint.Owner.GetControlPointCount() + 1);
     }
     
-    private void RegisterDamageTrigger(ControlPoint controlPoint)
+    private static void RegisterDamageTrigger(ControlPoint controlPoint)
     {
       CreateTrigger()
         .RegisterUnitEvent(controlPoint.Unit, EVENT_UNIT_DAMAGED)
@@ -162,10 +157,9 @@ namespace MacroTools.ControlPointSystem
           try
           {
             var attacker = GetEventDamageSource();
-
-            var hitPoints = (GetUnitState(controlPoint.Unit, UNIT_STATE_LIFE) - GetEventDamage()) /
-                            GetUnitState(controlPoint.Unit, UNIT_STATE_MAX_LIFE);
-            if (!(hitPoints < CaptureThreshold)) return;
+            var hitPoints = GetUnitState(controlPoint.Unit, UNIT_STATE_LIFE) - GetEventDamage();
+            if (hitPoints > 0) 
+              return;
             BlzSetEventDamage(0);
             SetUnitOwner(controlPoint.Unit, GetOwningPlayer(attacker), true);
             controlPoint.Unit.SetLifePercent(100);

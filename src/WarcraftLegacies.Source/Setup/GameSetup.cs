@@ -29,8 +29,7 @@ namespace WarcraftLegacies.Source.Setup
     {
       ControlPointManager.Instance = new ControlPointManager
       {
-        CaptureThreshold = 0.8f,
-        MaxHitpoints = 8000,
+        MaxHitpoints = 1600,
         RegenerationAbility = Constants.ABILITY_A0UT_CP_LIFE_REGEN,
         IncreaseControlLevelAbilityTypeId = Constants.ABILITY_A0A8_FORTIFY_CONTROL_POINTS_SHARED,
         ControlLevelSettings = new ControlLevelSettings
@@ -39,7 +38,7 @@ namespace WarcraftLegacies.Source.Setup
           DamageBase = 40,
           DamagePerControlLevel = 15,
           ArmorPerControlLevel = 1,
-          HitPointsPerControlLevel = 500,
+          HitPointsPerControlLevel = 100,
           ControlLevelMaximum = 20
         }
       };
