@@ -19,7 +19,7 @@ namespace WarcraftLegacies.Source.Quests.Draenei
     /// </summary>
     /// <param name="rescueRect"></param>
     public QuestRepairExodarHull(Rectangle rescueRect) : base("A New Home",
-      "After the disastrous voyage through the Twisting Nether, the exodar crash-landed on the Azuremyst Isles. Its hull must be repaired in order to get inside.",
+      "After the disastrous voyage through the Twisting Nether, the Exodar crash-landed on Azuremyst Isle. Its hull must be repaired in order to get inside.",
       "")
     {
       Required = true;
