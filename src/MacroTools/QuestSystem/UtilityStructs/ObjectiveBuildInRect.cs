@@ -1,5 +1,4 @@
 ﻿using MacroTools.Extensions;
-using System;
 using WCSharp.Events;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -15,27 +14,23 @@ namespace MacroTools.QuestSystem.UtilityStructs
     private readonly Rectangle _targetRect;
     private int _currentBuildCount;
     private readonly int _targetBuildCount;
-    private string _rectName;
+    private readonly string _areaName;
 
     private int CurrentBuildCount
     {
       set
       {
         _currentBuildCount = value;
-        Description = $"Build {GetObjectName(_objectId)} ( {I2S(_currentBuildCount)} / {I2S(_targetBuildCount)} ) at {_rectName}";
+        Description = $"Build {_targetBuildCount} {GetObjectName(_objectId)}s {_areaName} ({_currentBuildCount} / {_targetBuildCount})";
       }
     }
 
     /// <summary>
-    /// Initializes a new instance of the <see cref="ObjectiveBuildInRect"/> class.  /// 
+    /// Initializes a new instance of the <see cref="ObjectiveBuildInRect"/> class.
     /// </summary>
-    /// <param name="targetRect"></param>
-    /// <param name="rectName"></param>
-    /// <param name="objectId"></param>
-    /// <param name="count"></param>
-    public ObjectiveBuildInRect(Rectangle targetRect, string rectName, int objectId, int count = 1)
+    public ObjectiveBuildInRect(Rectangle targetRect, string areaName, int objectId, int count = 1)
     {
-      _rectName = rectName;
+      _areaName = areaName;
       _targetBuildCount = count;
       _targetRect = targetRect;
       _objectId = objectId;
@@ -78,7 +73,6 @@ namespace MacroTools.QuestSystem.UtilityStructs
     public override Point Position => new(GetRectCenterX(_targetRect.Rect), GetRectCenterY(_targetRect.Rect));
 
     private bool IsUnitValid(unit whichUnit) =>
-      EligibleFactions.Contains(whichUnit.OwningPlayer()) &&
-      (IsUnitType(whichUnit, UNIT_TYPE_STRUCTURE) && whichUnit.GetTypeId() == _objectId);
+      EligibleFactions.Contains(whichUnit.OwningPlayer()) && IsUnitType(whichUnit, UNIT_TYPE_STRUCTURE) && whichUnit.GetTypeId() == _objectId;
   }
 }
