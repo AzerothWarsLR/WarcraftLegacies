@@ -11700,10 +11700,34 @@ STRING 1950
 Doomfire Abyssal
 }
 
+STRING 1951
+// Units: n00E (Dimensional Generator), Name (Name)
+{
+Dimensional Generator
+}
+
+STRING 1952
+// Items: I018 (Vial of the Sunwell), Description (Description)
+{
+Increases Intelligence
+}
+
 STRING 1953
 // Units: h02Z (Oshu'gun), Name (Name)
 {
 Oshu'gun
+}
+
+STRING 1954
+// Items: I018 (Vial of the Sunwell), Name (Name)
+{
+Vial of the Sunwell
+}
+
+STRING 1955
+// Items: I018 (Vial of the Sunwell), Ubertip (Tooltip - Extended)
+{
+|cffff8c00Artifact|r|nIncreases Intelligence by <A0F6,DataB1>.|n|cffffcc00Lore|r|n|cffffdeadA drop of the Sunwell
 }
 
 STRING 1956
@@ -11722,6 +11746,12 @@ STRING 1958
 // Units: h00N (Goldshire), Name (Name)
 {
 Goldshire
+}
+
+STRING 1959
+// Abilities: A0TG (Renewal), EditorSuffix (Editor Suffix)
+{
+(draenei)
 }
 
 STRING 1960
@@ -107065,7 +107095,7 @@ Train Elementalist
 }
 
 STRING 17879
-// Abilities: A0SD (Consecrated Slam), EditorSuffix (Editor Suffix)
+// Units: n00E (Dimensional Generator), EditorSuffix (Name - Editor Suffix)
 {
 (draenei)
 }
@@ -107083,7 +107113,7 @@ STRING 17881
 }
 
 STRING 17882
-// Abilities: A0TG (Renewal), EditorSuffix (Editor Suffix)
+// Abilities: A0SD (Consecrated Slam), EditorSuffix (Editor Suffix)
 {
 (draenei)
 }
