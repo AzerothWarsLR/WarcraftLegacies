@@ -82,6 +82,10 @@ namespace MacroTools.ControlPointSystem
           {
             var controlPoint = _byUnit[GetTriggerUnit()];
             controlPoint.ControlLevel++;
+            AddSpecialEffect(@"Abilities\Spells\Items\AIlm\AIlmTarget.mdl", GetUnitX(controlPoint.Unit),
+                GetUnitY(controlPoint.Unit))
+              .SetScale(1.5f)
+              .SetLifespan();
           }
           catch (Exception ex)
           {
@@ -231,6 +235,10 @@ namespace MacroTools.ControlPointSystem
             controlPoint.Owner != Player(bj_PLAYER_NEUTRAL_VICTIM) && 
             controlPoint.ControlLevel < ControlLevelSettings.ControlLevelMaximum)
           controlPoint.ControlLevel++;
+        AddSpecialEffect(@"Abilities\Spells\Items\AIlm\AIlmTarget.mdl", GetUnitX(controlPoint.Unit),
+            GetUnitY(controlPoint.Unit))
+          .SetScale(1.5f)
+          .SetLifespan();
       };
     }
 
