@@ -1,4 +1,5 @@
-﻿using MacroTools.Extensions;
+﻿using System;
+using MacroTools.Extensions;
 using MacroTools.QuestSystem;
 using WCSharp.Events;
 using WCSharp.Shared.Data;
@@ -22,7 +23,9 @@ namespace MacroTools.ObjectiveSystem.Objectives
       set
       {
         _currentBuildCount = value;
-        Description = $"Build {_targetBuildCount} {GetObjectName(_objectId)}s {_areaName} ({_currentBuildCount}/{_targetBuildCount})";
+        Description = _targetBuildCount > 1
+          ? $"Build {_targetBuildCount} {GetObjectName(_objectId)}s {_areaName} ({_currentBuildCount}/{_targetBuildCount})"
+          : $"Build a {GetObjectName(_objectId)}s {_areaName})";
       }
     }
 
@@ -31,6 +34,9 @@ namespace MacroTools.ObjectiveSystem.Objectives
     /// </summary>
     public ObjectiveBuildInRect(Rectangle targetRect, string areaName, int objectId, int count = 1)
     {
+      if (count < 1)
+        throw new ArgumentOutOfRangeException(nameof(count), $"{nameof(count)} must be at least 1.");
+      
       _areaName = areaName;
       _targetBuildCount = count;
       _targetRect = targetRect;
