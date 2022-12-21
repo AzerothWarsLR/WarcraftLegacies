@@ -25,9 +25,9 @@ namespace WarcraftLegacies.Source.Quests.Draenei
     {
       Required = true;
       AddObjective(new ObjectiveUnitReachesFullHealth(LegendDraenei.LegendExodar.Unit));
-      AddObjective(new ObjectiveResearch(Constants.UPGRADE_R04R_FORTIFIED_HULLS_UNIVERSAL_UPGRADE, Constants.UNIT_O051_DIVINE_CITADEL_DRAENEI));
       AddObjective(new ObjectiveSelfExists());
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
+      ResearchId = Constants.UPGRADE_R099_QUEST_COMPLETED_A_NEW_HOME;// Change this to current quest;
     }
 
     private List<unit> _rescueUnits { get; }
@@ -47,6 +47,7 @@ namespace WarcraftLegacies.Source.Quests.Draenei
         whichFaction.Player.RescueGroup(_rescueUnits);
       else
         Player(PLAYER_NEUTRAL_AGGRESSIVE).RescueGroup(_rescueUnits);
+     // SetUnitInvulnerable(LegendDraenei.LegendExodar.Unit, false);
 
       //Open Portals to exodar inside
     }
@@ -58,9 +59,9 @@ namespace WarcraftLegacies.Source.Quests.Draenei
     }
 
     /// <inheritdoc/>
-    protected override void OnAdd(Faction whichFaction)
-    {
-      SetUnitState(LegendDraenei.LegendExodar.Unit, UNIT_STATE_LIFE, GetUnitState(LegendDraenei.LegendExodar.Unit, UNIT_STATE_MAX_LIFE) * 0.1f);
-    }
+  //  protected override void OnAdd(Faction whichFaction)
+  //  {
+  //    SetUnitInvulnerable(LegendDraenei.LegendExodar.Unit, true);
+  //  }
   }
 }
