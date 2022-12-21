@@ -1,3 +1,4 @@
+using System;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using static War3Api.Common;
@@ -11,16 +12,23 @@ namespace WarcraftLegacies.Source.GameLogic.GameEnd
   {
     private static void PlayerLeavesGame()
     {
-      var triggerPlayer = GetTriggerPlayer();
-      
-      var playerFaction = triggerPlayer.GetFaction();
-      DisplayTextToPlayer(GetLocalPlayer(), 0, 0,
-        playerFaction != null
-          ? $"{playerFaction.ColoredName} has left the game."
-          : $"{GetPlayerName(triggerPlayer)} has left the game.");
-      
-      if (playerFaction != null && playerFaction.ScoreStatus != ScoreStatus.Defeated)
-        playerFaction.ScoreStatus = ScoreStatus.Defeated;
+      try
+      {
+        var triggerPlayer = GetTriggerPlayer();
+
+        var playerFaction = triggerPlayer.GetFaction();
+        DisplayTextToPlayer(GetLocalPlayer(), 0, 0,
+          playerFaction != null
+            ? $"{playerFaction.ColoredName} has left the game."
+            : $"{GetPlayerName(triggerPlayer)} has left the game.");
+
+        if (playerFaction != null && playerFaction.ScoreStatus != ScoreStatus.Defeated)
+          playerFaction.ScoreStatus = ScoreStatus.Defeated;
+      }
+      catch (Exception ex)
+      {
+        Console.WriteLine($"Failed to execute {nameof(PlayerLeaves)}: {ex}");
+      }
     }
 
     /// <summary>
