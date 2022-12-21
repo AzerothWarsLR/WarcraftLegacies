@@ -16,27 +16,21 @@ namespace WarcraftLegacies.Source.Quests.Scourge
   public sealed class QuestPlague : QuestData
   {
     private readonly float _duration;
-    private readonly unit _lordBarov;
 
     private readonly List<PlagueCauldronSummonParameter> _plagueCauldronSummonParameters;
     private readonly int _plagueCauldronUnitTypeId;
     private readonly List<Rectangle> _plagueRects;
-    private readonly Faction _preferredPlagueFaction;
 
     /// <summary>
     /// When completed, the quest holder initiates the Plague, creating Plague Cauldrons around Lordaeron
     /// and converting villagers into Zombies.
     /// </summary>
-    /// <param name="preferredPlagueFaction">If this Faction is still in the game, it gets control of the Plague Cauldrons instead of the quest holder.</param>
-    /// <param name="lordBarov">Gets killed when the quest is completed.</param>
     /// <param name="plagueParameters">Provides information about how the Plague should work.</param>
-    public QuestPlague(Faction preferredPlagueFaction, unit lordBarov, PlagueParameters plagueParameters) : base(
+    public QuestPlague(PlagueParameters plagueParameters) : base(
       "Plague of Undeath",
       "The Cult of the Damned is prepared to unleash a devastating zombifying plague across the lands of Lordaeron.",
       "ReplaceableTextures\\CommandButtons\\BTNPlagueBarrel.blp")
     {
-      _preferredPlagueFaction = preferredPlagueFaction;
-      _lordBarov = lordBarov;
       _plagueRects = plagueParameters.PlagueRects;
       _plagueCauldronUnitTypeId = plagueParameters.PlagueCauldronUnitTypeId;
       _plagueCauldronSummonParameters = plagueParameters.PlagueCauldronSummonParameters;
@@ -49,9 +43,11 @@ namespace WarcraftLegacies.Source.Quests.Scourge
       Required = true;
     }
 
+    /// <inheritdoc />
     protected override string CompletionPopup =>
       "The plague has been unleashed! The citizens of Lordaeron are quickly transforming into mindless zombies.";
 
+    /// <inheritdoc />
     protected override string RewardDescription =>
       "All villagers in Lordaeron are transformed into Zombies, and several Plague Cauldrons spawn throughout Lordaeron, which periodically spawn Zombies.";
 
@@ -73,29 +69,18 @@ namespace WarcraftLegacies.Source.Quests.Scourge
       }
     }
 
+    /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)
     {
       completingFaction.ModObjectLimit(Constants.UPGRADE_R06I_PLAGUE_OF_UNDEATH_SCOURGE, -Faction.UNLIMITED);
-
-      KillUnit(_lordBarov);
-
       var plaguePower = new PlaguePower();
-      if (_preferredPlagueFaction.ScoreStatus == ScoreStatus.Undefeated)
-      {
-        _preferredPlagueFaction.AddPower(plaguePower);
-        CreatePlagueCauldrons(_preferredPlagueFaction.Player);
-      }
-      else
-      {
+      if (completingFaction.Player != null) 
         CreatePlagueCauldrons(completingFaction.Player);
-      }
-
       completingFaction.AddPower(plaguePower);
     }
 
-    protected override void OnAdd(Faction whichFaction)
-    {
+    /// <inheritdoc />
+    protected override void OnAdd(Faction whichFaction) => 
       whichFaction.ModObjectLimit(Constants.UPGRADE_R06I_PLAGUE_OF_UNDEATH_SCOURGE, Faction.UNLIMITED);
-    }
   }
 }
