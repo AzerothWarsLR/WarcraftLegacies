@@ -22,7 +22,7 @@ namespace MacroTools.ObjectiveSystem.Objectives
       set
       {
         _currentBuildCount = value;
-        Description = $"Build {_targetBuildCount} {GetObjectName(_objectId)}s {_areaName} ({_currentBuildCount} / {_targetBuildCount})";
+        Description = $"Build {_targetBuildCount} {GetObjectName(_objectId)}s {_areaName} ({_currentBuildCount}/{_targetBuildCount})";
       }
     }
 
