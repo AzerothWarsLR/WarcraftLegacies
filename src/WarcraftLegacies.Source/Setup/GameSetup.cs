@@ -1,4 +1,4 @@
-using MacroTools;
+﻿using MacroTools;
 using MacroTools.ControlPointSystem;
 using MacroTools.Mechanics;
 using MacroTools.PassiveAbilitySystem;
@@ -35,12 +35,12 @@ namespace WarcraftLegacies.Source.Setup
         IncreaseControlLevelAbilityTypeId = Constants.ABILITY_A0A8_FORTIFY_CONTROL_POINTS_SHARED,
         ControlLevelSettings = new ControlLevelSettings
         {
-          DefaultDefenderUnitTypeId = Constants.UNIT_H03F_CONTROL_POINT_DEFENDER_SHARED,
-          DamageBase = 60,
-          DamagePerControlLevel = 20,
+          DefaultDefenderUnitTypeId = Constants.UNIT_H03W_CONTROL_POINT_DEFENDER_LORDAERON,
+          DamageBase = 40,
+          DamagePerControlLevel = 15,
           ArmorPerControlLevel = 1,
           HitPointsPerControlLevel = 500,
-          ControlLevelMaximum = 15
+          ControlLevelMaximum = 20
         }
       };
       var preplacedUnitSystem = new PreplacedUnitSystem();

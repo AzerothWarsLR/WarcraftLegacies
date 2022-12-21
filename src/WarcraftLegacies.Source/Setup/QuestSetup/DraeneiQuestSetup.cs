@@ -1,8 +1,6 @@
-﻿using System.Collections.Generic;
-using MacroTools;
+﻿using MacroTools;
 using WarcraftLegacies.Source.Quests.Draenei;
 using WarcraftLegacies.Source.Setup.FactionSetup;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup.QuestSetup
 {
@@ -11,14 +9,18 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
       var draenei = DraeneiSetup.Draenei;
-
-      draenei.AddQuest(new QuestSurvivorsShattrah());
-      draenei.AddQuest(new QuestBrokenOne());
-      draenei.AddQuest(new QuestShipArgus(
-        preplacedUnitSystem.GetUnit(Constants.UNIT_H03V_ENTRANCE_PORTAL, Regions.OutlandToArgus.Center),
-        preplacedUnitSystem.GetUnit(Constants.UNIT_H03V_ENTRANCE_PORTAL, Regions.TempestKeepSpawn.Center)
-        ));
-      draenei.AddQuest(new QuestTriumvirate());
+      if (draenei != null)
+      {
+        var questRepairHull = new QuestRepairExodarHull(Regions.Exodar_Interior_All);
+        draenei.StartingQuest = questRepairHull;
+        draenei.AddQuest(questRepairHull);
+        draenei.AddQuest(new QuestRebuildCivilisation(Regions.AzuremystAmbient));
+        draenei.AddQuest(new QuestShipArgus(
+          preplacedUnitSystem.GetUnit(Constants.UNIT_H03V_ENTRANCE_PORTAL, Regions.OutlandToArgus.Center),
+          preplacedUnitSystem.GetUnit(Constants.UNIT_H03V_ENTRANCE_PORTAL, Regions.TempestKeepSpawn.Center)
+          ));
+        draenei.AddQuest(new QuestTriumvirate());
+      }
     }
   }
 }
