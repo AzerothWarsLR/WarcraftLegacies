@@ -2,7 +2,6 @@
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
-using MacroTools.QuestSystem.UtilityStructs;
 using WarcraftLegacies.Source.Setup.Legends;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -10,6 +9,7 @@ using static War3Api.Blizzard;
 using WarcraftLegacies.Source.Setup.FactionSetup;
 using WarcraftLegacies.Source.Setup;
 using MacroTools.ControlPointSystem;
+using MacroTools.ObjectiveSystem.Objectives;
 
 namespace WarcraftLegacies.Source.Quests.KulTiras
 {

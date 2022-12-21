@@ -3,8 +3,8 @@ using MacroTools.QuestSystem;
 using System.Collections.Generic;
 using static War3Api.Common;
 using MacroTools.Extensions;
-using MacroTools.QuestSystem.UtilityStructs;
 using MacroTools.ControlPointSystem;
+using MacroTools.ObjectiveSystem.Objectives;
 
 namespace WarcraftLegacies.Source.Quests.Gilneas
 {

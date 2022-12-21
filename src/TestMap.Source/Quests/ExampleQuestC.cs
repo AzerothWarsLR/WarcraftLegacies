@@ -1,8 +1,8 @@
 ﻿using MacroTools.ArtifactSystem;
 using MacroTools.FactionSystem;
+using MacroTools.ObjectiveSystem.Objectives;
 using MacroTools.Powers;
 using MacroTools.QuestSystem;
-using MacroTools.QuestSystem.UtilityStructs;
 using TestMap.Source.Setup;
 using static War3Api.Common;
 

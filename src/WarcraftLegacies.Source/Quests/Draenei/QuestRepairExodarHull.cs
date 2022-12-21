@@ -1,8 +1,8 @@
 ﻿using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
-using MacroTools.QuestSystem.UtilityStructs;
 using System.Collections.Generic;
+using MacroTools.ObjectiveSystem.Objectives;
 using WarcraftLegacies.Source.Setup.Legends;
 using WCSharp.Shared.Data;
 using static War3Api.Common;

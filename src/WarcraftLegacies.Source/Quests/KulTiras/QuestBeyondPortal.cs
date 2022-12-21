@@ -1,5 +1,5 @@
-﻿using MacroTools.QuestSystem;
-using MacroTools.QuestSystem.UtilityStructs;
+﻿using MacroTools.ObjectiveSystem.Objectives;
+using MacroTools.QuestSystem;
 using WarcraftLegacies.Source.Setup.Legends;
 
 namespace WarcraftLegacies.Source.Quests.KulTiras

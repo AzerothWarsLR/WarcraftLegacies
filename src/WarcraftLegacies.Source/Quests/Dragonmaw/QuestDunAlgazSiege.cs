@@ -2,10 +2,10 @@
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
-using MacroTools.QuestSystem.UtilityStructs;
 using static War3Api.Common;
 using WarcraftLegacies.Source.Setup.Legends;
 using MacroTools;
+using MacroTools.ObjectiveSystem.Objectives;
 
 namespace WarcraftLegacies.Source.Quests.Dragonmaw
 {

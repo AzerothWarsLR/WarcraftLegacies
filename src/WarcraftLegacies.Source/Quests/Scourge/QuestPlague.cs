@@ -1,8 +1,8 @@
 using System.Collections.Generic;
 using MacroTools.FactionSystem;
 using MacroTools.Libraries;
+using MacroTools.ObjectiveSystem.Objectives;
 using MacroTools.QuestSystem;
-using MacroTools.QuestSystem.UtilityStructs;
 using WarcraftLegacies.Source.Mechanics.Scourge.Plague;
 using WCSharp.Buffs;
 using WCSharp.Shared.Data;

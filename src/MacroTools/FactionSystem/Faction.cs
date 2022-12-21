@@ -4,8 +4,8 @@ using MacroTools.Augments;
 using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
 using MacroTools.LegendSystem;
+using MacroTools.ObjectiveSystem.Objectives;
 using MacroTools.QuestSystem;
-using MacroTools.QuestSystem.UtilityStructs;
 using WCSharp.Events;
 using static War3Api.Common;
 

@@ -1,5 +1,5 @@
+using MacroTools.ObjectiveSystem.Objectives;
 using MacroTools.QuestSystem;
-using MacroTools.QuestSystem.UtilityStructs;
 
 namespace WarcraftLegacies.Source.Quests.Goblin
 {

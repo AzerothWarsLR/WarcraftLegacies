@@ -1,8 +1,8 @@
 ﻿using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
-using MacroTools.QuestSystem.UtilityStructs;
 using System.Collections.Generic;
+using MacroTools.ObjectiveSystem.Objectives;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Quests.Draenei
