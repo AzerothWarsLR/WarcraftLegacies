@@ -25,7 +25,7 @@ namespace MacroTools.QuestSystem.UtilityStructs
         : $"{GetUnitName(objectiveUnit)} brought to full health";
       DisplaysPosition = IsUnitType(objectiveUnit, UNIT_TYPE_STRUCTURE);
       CreateTrigger()
-        .RegisterUnitEvent(objectiveUnit, EVENT_UNIT_SELECTED)
+        .RegisterUnitEvent(objectiveUnit, EVENT_UNIT_STATE_LIMIT)
         .AddAction(() =>
         {
           if (GetUnitState(_objectiveUnit, UNIT_STATE_LIFE) == GetUnitState(_objectiveUnit, UNIT_STATE_MAX_LIFE))
