@@ -200,6 +200,8 @@ namespace Launcher
         unit.EditorDisplayAsNeutralHostile = true;
         unit.StatsLevel = 0;
         unit.StatsRace = UnitRace.Creeps;
+        unit.StatsCanBeBuiltOn = false;
+        unit.PathingPathingMap = @"PathTextures\4x4SimpleSolid.tga";
       }
       map.UnitObjectData = objectDatabase.GetAllData().UnitData;
     }
