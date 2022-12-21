@@ -14,23 +14,23 @@ namespace WarcraftLegacies.Source.Quests.Draenei
   /// </summary>
   public class QuestRepairExodarHull : QuestData
   {
-
-
     /// <summary>
     /// 
     /// </summary>
     /// <param name="rescueRect"></param>
-
-    public QuestRepairExodarHull(Rectangle rescueRect) : base("A New Home", "After the disastrous voyage through the Twisting Nether, the exodar crash-landed on the Azuremyst Isles. Its hull must be repaired in order to get inside.", "")
+    public QuestRepairExodarHull(Rectangle rescueRect) : base("A New Home",
+      "After the disastrous voyage through the Twisting Nether, the exodar crash-landed on the Azuremyst Isles. Its hull must be repaired in order to get inside.",
+      "")
     {
       Required = true;
       AddObjective(new ObjectiveUnitReachesFullHealth(LegendDraenei.LegendExodar.Unit));
       AddObjective(new ObjectiveSelfExists());
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
-      ResearchId = Constants.UPGRADE_R099_QUEST_COMPLETED_A_NEW_HOME;// Change this to current quest;
+      ResearchId = Constants.UPGRADE_R099_QUEST_COMPLETED_A_NEW_HOME; // Change this to current quest;
     }
 
     private List<unit> _rescueUnits { get; }
+
     /// <inheritdoc/>
     protected override string CompletionPopup => "The Exodar's hull is repaired. It can now be entered again";
 
@@ -38,7 +38,8 @@ namespace WarcraftLegacies.Source.Quests.Draenei
     protected override string FailurePopup => "The Exodar is destroyed. It can never be repaired again.";
 
     /// <inheritdoc/>
-    protected override string RewardDescription => "You are now able to enter the Exodar and gain access to everything inside.";
+    protected override string RewardDescription =>
+      "You are now able to enter the Exodar and gain access to everything inside.";
 
     /// <inheritdoc/>
     protected override void OnComplete(Faction whichFaction)
@@ -47,7 +48,7 @@ namespace WarcraftLegacies.Source.Quests.Draenei
         whichFaction.Player.RescueGroup(_rescueUnits);
       else
         Player(PLAYER_NEUTRAL_AGGRESSIVE).RescueGroup(_rescueUnits);
-     // SetUnitInvulnerable(LegendDraenei.LegendExodar.Unit, false);
+      // SetUnitInvulnerable(LegendDraenei.LegendExodar.Unit, false);
 
       //Open Portals to exodar inside
     }
@@ -58,10 +59,9 @@ namespace WarcraftLegacies.Source.Quests.Draenei
       // Quest to repair the Exodar inside should be failed here too.
     }
 
-    /// <inheritdoc/>
-  //  protected override void OnAdd(Faction whichFaction)
-  //  {
-  //    SetUnitInvulnerable(LegendDraenei.LegendExodar.Unit, true);
-  //  }
+    //  protected override void OnAdd(Faction whichFaction)
+    //  {
+    //    SetUnitInvulnerable(LegendDraenei.LegendExodar.Unit, true);
+    //  }
   }
 }
