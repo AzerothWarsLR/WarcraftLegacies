@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using MacroTools.ArtifactSystem;
 using MacroTools.Extensions;
 using MacroTools.QuestSystem;
 using static War3Api.Common;
@@ -8,23 +7,31 @@ using static War3Api.Common;
 namespace WarcraftLegacies.Source.Objectives
 {
   /// <summary>
-  /// Acquire one of several Artifacts and put them inside the Dimensional Generator.
+  /// Acquire one of several items and put them inside the Dimensional Generator.
   /// </summary>
   public sealed class ObjectivePowerSource : Objective
   {
     /// <summary>
+    /// The power source that was used to complete the <see cref="Objective"/>.
+    /// </summary>
+    public item? UsedPowerSource { get; private set; }
+    
+    /// <summary>
     /// Initializes a new instance of the <see cref="ObjectivePowerSource"/> class.
     /// </summary>
-    public ObjectivePowerSource(unit dimensionalGenerator, IEnumerable<Artifact> powerSources)
+    public ObjectivePowerSource(unit dimensionalGenerator, IEnumerable<item> powerSources)
     {
       Description = $"Place a valid power source in the {GetUnitName(dimensionalGenerator)}";
       CreateTrigger()
         .RegisterUnitEvent(dimensionalGenerator, EVENT_UNIT_PICKUP_ITEM)
         .AddAction(() =>
         {
-          var manipulatedArtifact = ArtifactManager.GetFromTypeId(GetItemTypeId(GetManipulatedItem()));
-          if (manipulatedArtifact != null && powerSources.Contains(manipulatedArtifact))
+          if (powerSources.Contains(GetManipulatedItem()))
+          {
+            UsedPowerSource = GetManipulatedItem();
             Progress = QuestProgress.Complete;
+          }
+            
           else
             GetManipulatedItem().SetPosition(GetTriggerUnit().GetPosition());
         });
