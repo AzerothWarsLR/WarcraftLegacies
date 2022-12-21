@@ -545,9 +545,9 @@ A store for purchasing items
 }
 
 STRING 91
-// Units: n0BP (Un'gol Ruins (25gold/min)), Name (Name)
+// Abilities: A0KY (Land), Ubertip (Tooltip - Normal - Extended)
 {
-Un'gol Ruins (25gold/min)
+Land Exodar|n
 }
 
 STRING 92
@@ -5699,6 +5699,12 @@ STRING 950
 Q
 }
 
+STRING 951
+// Abilities: A0KY (Land), Unubertip (Tooltip - Turn Off - Extended)
+{
+Lift Exodar
+}
+
 STRING 952
 // Units: hsor (Sorceress), EditorSuffix (Name - Editor Suffix)
 {
@@ -9144,6 +9150,12 @@ STRING 1525
 E
 }
 
+STRING 1526
+// Upgrades: R082 (Chaos), Name (Name)
+{
+Quest Completed: The Way Forward
+}
+
 STRING 1527
 // Units: o030 (Fortress), EditorSuffix (Name - Editor Suffix)
 {
@@ -9958,6 +9970,12 @@ STRING 1662
 // Upgrades: R034 (Improved Bows), Tip (Tooltip)
 {
 Reaserch Enhanced Breath
+}
+
+STRING 1663
+// Upgrades: R099 (Chaos), Name (Name)
+{
+Quest Completed: A New Home
 }
 
 STRING 1664
@@ -11346,9 +11364,9 @@ Ranged caster unit with Firebolt, Dispel Magic and Fire Elemental. |n|n|cffffcc0
 }
 
 STRING 1895
-// Units: n09Z (Maelstrom's Rift (10gold/min)), Name (Name)
+// Upgrades: R09A (Chaos), Name (Name)
 {
-Maelstrom's Rift (10gold/min)
+Quest Completed: The Dimensional Ship
 }
 
 STRING 1896
@@ -11683,37 +11701,37 @@ Doomfire Abyssal
 }
 
 STRING 1951
-// Units: n090 (Oshu'gun), Description (Description)
+// Units: n00E (Dimensional Generator), Name (Name)
 {
-The diamond complex of Oshu'gun.
+Dimensional Generator
 }
 
 STRING 1952
-// Units: n090 (Oshu'gun), EditorSuffix (Name - Editor Suffix)
+// Items: I018 (Vial of the Sunwell), Description (Description)
 {
-(AoS)
+Increases Intelligence
 }
 
 STRING 1953
-// Units: n090 (Oshu'gun), Name (Name)
+// Units: h02Z (Oshu'gun), Name (Name)
 {
 Oshu'gun
 }
 
 STRING 1954
-// Units: n08Z (Auchindoun), Description (Description)
+// Items: I018 (Vial of the Sunwell), Name (Name)
 {
-The dark city of Aunchindoun.
+Vial of the Sunwell
 }
 
 STRING 1955
-// Units: n08Z (Auchindoun), EditorSuffix (Name - Editor Suffix)
+// Items: I018 (Vial of the Sunwell), Ubertip (Tooltip - Extended)
 {
-(AoS)
+|cffff8c00Artifact|r|nIncreases Intelligence by <A0F6,DataB1>.|n|cffffcc00Lore|r|n|cffffdeadA drop of the Sunwell
 }
 
 STRING 1956
-// Units: n08Z (Auchindoun), Name (Name)
+// Units: h026 (Auchindoun), Name (Name)
 {
 Auchindoun
 }
@@ -11731,9 +11749,9 @@ Goldshire
 }
 
 STRING 1959
-// Units: n08S (Northern Silverpine Forest (20gold/min)), Name (Name)
+// Abilities: A0TG (Renewal), EditorSuffix (Editor Suffix)
 {
-Northern Silverpine Forest (20gold/min)
+(draenei)
 }
 
 STRING 1960
@@ -11754,28 +11772,10 @@ STRING 1962
 E
 }
 
-STRING 1963
-// Units: n08O (Western Hillsbrad (15gold/min)), Name (Name)
-{
-Western Hillsbrad (15gold/min)
-}
-
-STRING 1964
-// Units: n08N (Steamwheedle Port (20gold/min)), Name (Name)
-{
-Steamwheedle Port (20gold/min)
-}
-
 STRING 1965
 // Units: n08M (Southshore (15gold/min)), Name (Name)
 {
 Southshore (15gold/min)
-}
-
-STRING 1966
-// Units: n08L (Lordamere Lake (10gold/min)), Name (Name)
-{
-Lordamere Lake (10gold/min)
 }
 
 STRING 1967
@@ -11950,12 +11950,6 @@ STRING 1995
 // Units: n08C (Voidcrusher), Ubertip (Tooltip - Extended)
 {
 Immense collection of fel void essence and hulking destroyer of the Burning Crusade.|n|cfff5962dAbilities:|R Devour Magic, Frost Attack |n|n|cffffcc00Attacks land and air units.|r
-}
-
-STRING 1996
-// Units: n08B (Tempest Keep (30gold/min)), Name (Name)
-{
-Tempest Keep (30gold/min)
 }
 
 STRING 1997
@@ -12486,12 +12480,6 @@ STRING 2084
 Teldrassil
 }
 
-STRING 2085
-// Units: n07J (Frozen Throne (20gold/min)), Name (Name)
-{
-Frozen Throne (20gold/min)
-}
-
 STRING 2086
 // Units: n07I (Residence), EditorSuffix (Name - Editor Suffix)
 {
@@ -12658,12 +12646,6 @@ STRING 2113
 // Units: n079 (Ahn'Qiraj), Name (Name)
 {
 Ahn'Qiraj
-}
-
-STRING 2114
-// Units: n078 (Temple of Ahn'Qiraj (25 gold/min)), Name (Name)
-{
-Temple of Ahn'Qiraj (25 gold/min)
 }
 
 STRING 2115
@@ -13822,12 +13804,6 @@ STRING 2307
 Land Mine
 }
 
-STRING 2308
-// Units: n05O (Mount Hyjal (20gold/min)), Name (Name)
-{
-Mount Hyjal (20gold/min)
-}
-
 STRING 2309
 // Units: n05N (Windshear Crossing (10gold/min)), Name (Name)
 {
@@ -14152,12 +14128,6 @@ STRING 2362
 Summon Garrison
 }
 
-STRING 2363
-// Units: n054 (Shadowforge Exterior (15gold/min)), Name (Name)
-{
-Shadowforge Exterior (15gold/min)
-}
-
 STRING 2364
 // Units: n0CC (Shadowforge Titan), Name (Name)
 {
@@ -14222,12 +14192,6 @@ STRING 2374
 // Units: n05Y (Azsuna (15gold/min)), Name (Name)
 {
 Azsuna (15gold/min)
-}
-
-STRING 2375
-// Units: n04X (Plunder Isle/Balor (15gold/min)), Name (Name)
-{
-Plunder Isle/Balor (15gold/min)
 }
 
 STRING 2376
@@ -14753,12 +14717,6 @@ STRING 2462
 Grim Batol (10gold/min)
 }
 
-STRING 2463
-// Units: n03W (Aerie Peak (15gold/min)), Name (Name)
-{
-Aerie Peak (15gold/min)
-}
-
 STRING 2464
 // Units: n03V (Sea Elemental), EditorSuffix (Name - Editor Suffix)
 {
@@ -14931,12 +14889,6 @@ STRING 2492
 // Units: Harf (High King), Name (Name)
 {
 High King
-}
-
-STRING 2493
-// Units: n03J (Eldre'thalas (10gold/min)), Name (Name)
-{
-Eldre'thalas (10gold/min)
 }
 
 STRING 2494
@@ -15328,12 +15280,6 @@ STRING 2558
  (Level 1)
 }
 
-STRING 2559
-// Units: n02B (Eastern Rockland (15gold/min)), Name (Name)
-{
-Eastern Rockland (15gold/min)
-}
-
 STRING 2560
 // Units: n02A (Southern Barrens (15gold/min)), Name (Name)
 {
@@ -15386,12 +15332,6 @@ STRING 2568
 // Units: n025 (Un'Goro Crater (10gold/min)), Name (Name)
 {
 Un'Goro Crater (10gold/min)
-}
-
-STRING 2569
-// Units: n024 (Kul Tiras (10gold/min)), Name (Name)
-{
-Kul Tiras (10gold/min)
 }
 
 STRING 2570
@@ -15682,12 +15622,6 @@ STRING 2617
 Black Temple (30gold/min)
 }
 
-STRING 2618
-// Units: n00Q (Twisting Nether (50gold/min)), Name (Name)
-{
-Twisting Nether (50gold/min)
-}
-
 STRING 2619
 {
 Ironforge, Stormwind, Kultiras
@@ -15702,12 +15636,6 @@ STRING 2621
 // Units: n00R (Nazjatar Depths (15gold/min)), Name (Name)
 {
 Nazjatar Depths (15gold/min)
-}
-
-STRING 2622
-// Units: n00M (Theramore (30gold/min)), Name (Name)
-{
-Theramore (30gold/min)
 }
 
 STRING 2623
@@ -15750,12 +15678,6 @@ STRING 2629
 // Units: n00F (Sholazar Basin (15gold/min)), Name (Name)
 {
 Sholazar Basin (15gold/min)
-}
-
-STRING 2630
-// Units: n00E (Icecrown Citadel (30gold/min)), Name (Name)
-{
-Icecrown Citadel (30gold/min)
 }
 
 STRING 2631
@@ -17533,12 +17455,6 @@ STRING 2926
 // Units: Hapm (Lord Admiral of Kul Tiras), Name (Name)
 {
 Lord Admiral of Kul Tiras
-}
-
-STRING 2927
-// Units: n06R (Northgate Woods (10gold/min)), Name (Name)
-{
-Northgate Woods (10gold/min)
 }
 
 STRING 2928
@@ -19464,12 +19380,6 @@ STRING 3247
 (Creep)
 }
 
-STRING 3248
-// Units: h02Z (Oshu'gun), Name (Name)
-{
-Oshu'gun
-}
-
 STRING 3249
 // Units: h02Y (Artisan's Hall), EditorSuffix (Name - Editor Suffix)
 {
@@ -20032,12 +19942,6 @@ STRING 3342
 // Units: h00G (Karazhan), EditorSuffix (Name - Editor Suffix)
 {
 (Creep)
-}
-
-STRING 3343
-// Units: h026 (Auchindoun), Name (Name)
-{
-Auchindoun
 }
 
 STRING 3344
@@ -92452,12 +92356,6 @@ STRING 15419
 Q
 }
 
-STRING 15420
-// Units: n05Q (Nazjatar (25gold/min)), Name (Name)
-{
-Nazjatar (25gold/min)
-}
-
 STRING 15421
 // Abilities: A0M1 (Tidal Serpent), Ubertip (Tooltip - Normal - Extended)
 {
@@ -94461,12 +94359,6 @@ STRING 15754
 // Abilities: A0M9 (Void Exile), Tip (Tooltip - Normal)
 {
 Void Exile
-}
-
-STRING 15755
-// Units: n05W (Lightless Cavern (15gold/min)), Name (Name)
-{
-Lightless Cavern (15gold/min)
 }
 
 STRING 15756
@@ -97481,12 +97373,6 @@ STRING 16257
 Lift
 }
 
-STRING 16258
-// Abilities: A0KY (Land), Ubertip (Tooltip - Normal - Extended)
-{
-Land Exodar|n|n|cffff0000Warning|r Has a 1 min cooldown before you can fly again
-}
-
 STRING 16259
 // Abilities: A0VR (Blazing Aura), Ubertip (Tooltip - Normal - Extended)
 {
@@ -97887,12 +97773,6 @@ STRING 16325
 // Units: h05D (Raptor Rider), EditorSuffix (Name - Editor Suffix)
 {
 (troll)
-}
-
-STRING 16326
-// Abilities: A0KY (Land), Unubertip (Tooltip - Turn Off - Extended)
-{
-Lift Exodar |n|n|cffff0000Warning|r Has a 1 min cooldown before you can land again
 }
 
 STRING 16327
@@ -107215,7 +107095,7 @@ Train Elementalist
 }
 
 STRING 17879
-// Abilities: A0SD (Consecrated Slam), EditorSuffix (Editor Suffix)
+// Units: n00E (Dimensional Generator), EditorSuffix (Name - Editor Suffix)
 {
 (draenei)
 }
@@ -107233,7 +107113,7 @@ STRING 17881
 }
 
 STRING 17882
-// Abilities: A0TG (Renewal), EditorSuffix (Editor Suffix)
+// Abilities: A0SD (Consecrated Slam), EditorSuffix (Editor Suffix)
 {
 (draenei)
 }
@@ -107728,12 +107608,6 @@ STRING 17964
 // Abilities: A0FR (Transfusion), Ubertip (Tooltip - Normal - Extended)
 {
 Calls forth a wave of healing Blood that bounces up to <ANhw,DataB1> times, healing <ANhw,DataA1> damage on the primary target. Each jump heals less damage.
-}
-
-STRING 17965
-// Upgrades: R082 (Chaos), Name (Name)
-{
-Quest Completed: The Survivors of Shattrah
 }
 
 STRING 17966
@@ -115881,12 +115755,6 @@ STRING 19325
 Train - Murloc Mutant
 }
 
-STRING 19326
-// Units: n04E (Gishan Cavern (10gold/min)), Name (Name)
-{
-Gishan Cavern (10gold/min)
-}
-
 STRING 19327
 // Units: n0DE (Murloc Mutant), Name (Name)
 {
@@ -116029,12 +115897,6 @@ STRING 19350
 // Abilities: A0MU (Build Oil Rig), EditorSuffix (Editor Suffix)
 {
 (Goblin - Oil Rig Constructor)
-}
-
-STRING 19351
-// Units: n0A0 (Heart of Azeroth (15gold/min)), Name (Name)
-{
-Heart of Azeroth (15gold/min)
 }
 
 STRING 19352
