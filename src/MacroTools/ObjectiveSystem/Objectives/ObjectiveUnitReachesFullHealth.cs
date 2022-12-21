@@ -26,7 +26,7 @@ namespace MacroTools.ObjectiveSystem.Objectives
         : $"{GetUnitName(objectiveUnit)} brought to full health";
       DisplaysPosition = IsUnitType(objectiveUnit, UNIT_TYPE_STRUCTURE);
       CreateTrigger()
-        .RegisterUnitEvent(objectiveUnit, EVENT_UNIT_STATE_LIMIT)
+        .RegisterUnitEvent(objectiveUnit, EVENT_UNIT_SELECTED)
         .AddAction(() =>
         {
           if (GetUnitState(_objectiveUnit, UNIT_STATE_LIFE) == GetUnitState(_objectiveUnit, UNIT_STATE_MAX_LIFE))
