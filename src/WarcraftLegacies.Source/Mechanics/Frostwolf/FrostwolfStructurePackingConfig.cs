@@ -22,7 +22,6 @@ namespace WarcraftLegacies.Source.Mechanics.Frostwolf
       PackableStructure.Register(Constants.UNIT_OSLD_SPIRIT_LODGE_FROSTWOLF, Constants.UNIT_OOSC_PACK_KODO_FROSTWOLF, Constants.ABILITY_A09H_UNPACK_SPIRIT_LODGE_PACK_KODO, "buildings\\Orc\\SpiritLodge\\SpiritLodge.mdx");
       PackableStructure.Register(Constants.UNIT_OTRB_BURROW_FROSTWOLF, Constants.UNIT_OOSC_PACK_KODO_FROSTWOLF, Constants.ABILITY_A0EV_UNPACK_BURROW_PACK_KODO, "buildings\\Orc\\TrollBurrow\\TrollBurrow.mdx");
       PackableStructure.Register(Constants.UNIT_OSHY_HORDE_PIER_FROSTWOLF, Constants.UNIT_OOSC_PACK_KODO_FROSTWOLF, Constants.ABILITY_A0EX_UNPACK_HORDE_PIER_PACK_KODO, "buildings\\other\\GoblinShipyard\\GoblinShipyard.mdx");
-      PackableStructure.Register(Constants.UNIT_O01M_ENGINEER_S_GUILD_GOBLIN, Constants.UNIT_OOSC_PACK_KODO_FROSTWOLF, Constants.ABILITY_A07D_UNPACK_GOBLIN_LABORATORY_PACK_KODO, "war3mapImported\\Building_GoblinOutpost.mdl");
     }
   }
 }
