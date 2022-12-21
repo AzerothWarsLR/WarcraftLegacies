@@ -20,6 +20,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
           preplacedUnitSystem.GetUnit(Constants.UNIT_H03V_ENTRANCE_PORTAL, Regions.TempestKeepSpawn.Center)
           ));
         draenei.AddQuest(new QuestTriumvirate());
+        draenei.AddQuest(new QuestDimensionalShip(Regions.Exodar_Interior_All, preplacedUnitSystem));
       }
     }
   }

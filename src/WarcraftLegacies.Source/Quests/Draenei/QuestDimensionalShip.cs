@@ -1,8 +1,9 @@
-﻿using MacroTools.Extensions;
+﻿using MacroTools;
+using MacroTools.ControlPointSystem;
+using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using MacroTools.QuestSystem.UtilityStructs;
-using System.Collections.Generic;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Quests.Draenei
@@ -16,10 +17,12 @@ namespace WarcraftLegacies.Source.Quests.Draenei
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestDimensionalShip"/> class.
     /// </summary>
-    public QuestDimensionalShip(Rectangle questRect) : base("The Dimensional Ship", "The broken Exodar could be rebuild, unlocking a powerful asset for the Draenei.", "")
+    public QuestDimensionalShip(Rectangle questRect, PreplacedUnitSystem preplacedUnitSystem) : base("The Dimensional Ship", "The broken Exodar could be rebuild, unlocking a powerful asset for the Draenei.", "")
     {
-      Required = true;
+      Required = true;  
       AddObjective(new ObjectiveBuildInRect(questRect, "Inside the ship", Constants.UNIT_O056_ARCANE_WELL_DRAENEI, 10));
+      AddObjective(new ObjectiveControlLevel(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N0BL_EXODAR_REGALIS_25GOLD_MIN), 20));
+      AddObjective(new ObjectiveUnitReachesFullHealth(preplacedUnitSystem.GetUnit(Constants.UNIT_N00E_DIMENSIONAL_GENERATOR_DRAENEI)));
 
       ResearchId = Constants.UPGRADE_R09A_QUEST_COMPLETED_THE_DIMENSIONAL_SHIP;
     }

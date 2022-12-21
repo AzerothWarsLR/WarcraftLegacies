@@ -11749,7 +11749,7 @@ Goldshire
 }
 
 STRING 1959
-// Abilities: A0TG (Renewal), EditorSuffix (Editor Suffix)
+// Units: nmdr (Brown Elekk), EditorSuffix (Name - Editor Suffix)
 {
 (draenei)
 }
@@ -35997,7 +35997,7 @@ Resource harvesting center and producer of Horde enhancements. |n|cfff5962dResea
 }
 
 STRING 6019
-// Units: nmdr (Brown Elekk), EditorSuffix (Name - Editor Suffix)
+// Units: h09R (Vindicator), EditorSuffix (Name - Editor Suffix)
 {
 (draenei)
 }
@@ -74205,7 +74205,7 @@ Tornado Unit Damage
 }
 
 STRING 12387
-// Units: h09R (Vindicator), EditorSuffix (Name - Editor Suffix)
+// Units: h09T (Rangari), EditorSuffix (Name - Editor Suffix)
 {
 (draenei)
 }
@@ -106783,7 +106783,7 @@ Increases a target friendly unit's damage by 20 %, armor by 5 and hp regen by 1.
 }
 
 STRING 17827
-// Units: h09T (Rangari), EditorSuffix (Name - Editor Suffix)
+// Units: e01K (Polybolos), EditorSuffix (Name - Editor Suffix)
 {
 (draenei)
 }
@@ -106849,7 +106849,7 @@ Q
 }
 
 STRING 17838
-// Units: e01K (Polybolos), EditorSuffix (Name - Editor Suffix)
+// Units: h09U (Elekk Knight), EditorSuffix (Name - Editor Suffix)
 {
 (draenei)
 }
@@ -106879,7 +106879,7 @@ Arcane Generators.|nProvides 10 food, which increases the maximum number of unit
 }
 
 STRING 17843
-// Units: h09U (Elekk Knight), EditorSuffix (Name - Editor Suffix)
+// Units: o05D (Elementalist), EditorSuffix (Name - Editor Suffix)
 {
 (draenei)
 }
@@ -107047,7 +107047,7 @@ W
 }
 
 STRING 17871
-// Units: o05D (Elementalist), EditorSuffix (Name - Editor Suffix)
+// Units: n00E (Dimensional Generator), EditorSuffix (Name - Editor Suffix)
 {
 (draenei)
 }
@@ -107095,7 +107095,7 @@ Train Elementalist
 }
 
 STRING 17879
-// Units: n00E (Dimensional Generator), EditorSuffix (Name - Editor Suffix)
+// Abilities: A0SD (Consecrated Slam), EditorSuffix (Editor Suffix)
 {
 (draenei)
 }
@@ -107113,7 +107113,7 @@ STRING 17881
 }
 
 STRING 17882
-// Abilities: A0SD (Consecrated Slam), EditorSuffix (Editor Suffix)
+// Abilities: A0TG (Renewal), EditorSuffix (Editor Suffix)
 {
 (draenei)
 }

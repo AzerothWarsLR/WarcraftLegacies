@@ -80,7 +80,7 @@ public static class Regions
 	public static Rectangle Vandermar_Village { get; set; } = new Rectangle(6592f, 6656f, 7840f, 8864f);
 	public static Rectangle West_Thandol { get; set; } = new Rectangle(14880f, 192f, 15072f, 416f);
 	public static Rectangle Zulfarrak { get; set; } = new Rectangle(-12352f, -14272f, -10592f, -12064f);
-	public static Rectangle East_of_Azeroth { get; set; } = new Rectangle(21664f, -8544f, 22112f, -8032f);
+	public static Rectangle East_of_Azeroth { get; set; } = new Rectangle(22144f, -9888f, 22592f, -9376f);
 	public static Rectangle West_of_Kalimdor { get; set; } = new Rectangle(-20864f, 4576f, -20256f, 5216f);
 	public static Rectangle FTSummon { get; set; } = new Rectangle(-3392f, 20384f, -3232f, 20512f);
 	public static Rectangle King_Arthas_crown { get; set; } = new Rectangle(8896f, 8320f, 9280f, 8512f);
