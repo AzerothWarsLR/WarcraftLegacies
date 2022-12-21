@@ -10,16 +10,19 @@ namespace MacroTools.QuestSystem.UtilityStructs
   /// </summary>
   public class ObjectiveUnitReachesFullHealth : Objective
   {
-    private unit _objectiveUnit { get; }
+    private readonly unit _objectiveUnit;
+    
     /// <summary>
     /// Initializes a new instance of the <see cref="ObjectiveUnitReachesFullHealth"/> class.
     /// </summary>
-    /// <param name="objectiveUnit">The unit that must be brought to full hp for this objective to complete</param>
+    /// <param name="objectiveUnit">The unit that must be brought to full hit points.</param>
     public ObjectiveUnitReachesFullHealth(unit objectiveUnit)
     {
       _objectiveUnit = objectiveUnit;
       TargetWidget = objectiveUnit;
-      Description = $"{GetUnitName(objectiveUnit)} brought to full health";
+      Description = objectiveUnit.IsType(UNIT_TYPE_STRUCTURE)
+        ? $"Fully repair {GetUnitName(objectiveUnit)}"
+        : $"{GetUnitName(objectiveUnit)} brought to full health";
       DisplaysPosition = IsUnitType(objectiveUnit, UNIT_TYPE_STRUCTURE);
       CreateTrigger()
         .RegisterUnitEvent(objectiveUnit, EVENT_UNIT_SELECTED)
