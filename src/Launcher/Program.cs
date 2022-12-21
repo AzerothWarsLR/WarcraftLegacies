@@ -182,7 +182,8 @@ namespace Launcher
     {
       return unit.IsStatsUnitClassificationModified &&
              unit.StatsUnitClassification.Contains(UnitClassification.Sapper) &&
-             unit.StatsUnitClassification.Contains(UnitClassification.Ancient);
+             unit.StatsUnitClassification.Contains(UnitClassification.Ancient) && 
+             !unit.StatsUnitClassification.Contains(UnitClassification.Mechanical);
     }
     
     private static void ConfigureControlPointData(Map map)
