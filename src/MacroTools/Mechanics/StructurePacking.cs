@@ -1,4 +1,5 @@
 ﻿using System;
+using MacroTools.Extensions;
 using WCSharp.Events;
 using static War3Api.Common;
 
@@ -9,11 +10,6 @@ namespace MacroTools.Mechanics
   /// </summary>
   public sealed class PackableStructure
   {
-    /// <summary>
-    /// The unit type ID for the Kodo carrying the structure.
-    /// </summary>
-    public int PackedUnitId { get; init; }
-    
     /// <summary>
     /// A "Build Tiny X" ability used to reconstruct the building.
     /// </summary>
@@ -36,14 +32,13 @@ namespace MacroTools.Mechanics
     {
       var packable = new PackableStructure
       {
-        PackedUnitId = packedUnitId,
         BuildAbility = buildAbility,
         StructureModel = structureModel,
         StructureId = structureId
       };
 
       PlayerUnitEvents.Register(UnitTypeEvent.FinishesTraining, () => packable.OnTrainUnitType(), structureId);
-      PlayerUnitEvents.Register(UnitTypeEvent.SpellFinish, () => packable.OnUnitTypeCastSpell(), packedUnitId);
+      PlayerUnitEvents.Register(UnitTypeEvent.SpellEffect, OnUnitTypeCastSpell, packedUnitId);
     }
 
     /// <summary>
@@ -71,16 +66,18 @@ namespace MacroTools.Mechanics
 
     private void OnTrainUnitType()
     {
-      if (GetUnitTypeId(GetTrainedUnit()) != PackedUnitId) return;
       PackBuilding(GetTriggerUnit(), GetTrainedUnit());
       RemoveUnit(GetTriggerUnit());
     }
 
-    private void OnUnitTypeCastSpell()
+    private static void OnUnitTypeCastSpell()
     {
-      if (GetUnitTypeId(GetTriggerUnit()) != PackedUnitId) return;
-      KillUnit(GetTriggerUnit());
-      RemoveUnit(GetTriggerUnit());
+      GetTriggerUnit().SetTimedLife(0.01f);
+      CreateTrigger().RegisterUnitEvent(GetTriggerUnit(), EVENT_UNIT_DEATH).AddAction(() =>
+      {
+        RemoveUnit(GetTriggerUnit());
+        DestroyTrigger(GetTriggeringTrigger());
+      });
     }
   }
 }

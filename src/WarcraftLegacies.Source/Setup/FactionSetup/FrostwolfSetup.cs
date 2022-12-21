@@ -86,7 +86,6 @@ Escort the kodo to Thunderbluff, where you will find a goldmine waiting for you.
       Frostwolf.AddGoldMine(preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-14466, -4703)));
       
       FrostwolfStructurePackingConfig.Setup();
-      FrostwolfStructurePackingInit.Setup();
       FactionManager.Register(Frostwolf);
     }
   }
