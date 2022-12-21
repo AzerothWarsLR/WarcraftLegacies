@@ -1,5 +1,6 @@
 ﻿using MacroTools;
 using MacroTools.FactionSystem;
+using WarcraftLegacies.Source.Mechanics.Frostwolf;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
@@ -84,6 +85,7 @@ Escort the kodo to Thunderbluff, where you will find a goldmine waiting for you.
       Frostwolf.AddGoldMine(preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-1789, -1697)));
       Frostwolf.AddGoldMine(preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-14466, -4703)));
       
+      FrostwolfStructurePackingConfig.Setup();
       FactionManager.Register(Frostwolf);
     }
   }
