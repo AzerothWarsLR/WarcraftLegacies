@@ -22,20 +22,23 @@ namespace WarcraftLegacies.Source.Quests.Warsong
     /// <param name="area">Units in this area will be made invulnerable, then made hostile when the quest is completed.</param>
     /// <param name="scepterOfTheQueen">Reward for completing the quest.</param>
     public QuestScepterOfTheQueenWarsong(Rectangle area, Artifact scepterOfTheQueen) : base("Royal Plunder",
-      "Remnants of the ancient Highborne survive within the ruins of Dire Maul. If Feathermoon Stronghold falls, it would become a simple matter to slaughter the Highborne and plunder their artifacts.",
+      "Remnants of the ancient Highborne survive within the ruins of the Athenaeum. If Feathermoon Stronghold falls, it would become a simple matter to slaughter the Highborne and plunder their artifacts.",
       "ReplaceableTextures\\CommandButtons\\BTNNagaWeaponUp2.blp")
     {
       _highBourneArea = area;
       _scepterOfTheQueen = scepterOfTheQueen;
       _highBourneAreaUnits = _highBourneArea.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
-      AddObjective(new ObjectiveUnitAlive(LegendWarsong.StonemaulKeep.Unit));
       AddObjective(new ObjectiveCapitalDead(LegendSentinels.Feathermoon));
-      AddObjective(new ObjectiveAnyUnitInRect(_highBourneArea, "Dire Maul", true));
+      AddObjective(new ObjectiveKillAllInArea(new[]{area}, "outside the Athenaeum"));
+      _anyUnitInRect = new ObjectiveAnyUnitInRect(_highBourneArea, "Dire Maul", true);
+      AddObjective(_anyUnitInRect);
+      AddObjective(new ObjectiveNoOtherPlayerGetsArtifact(scepterOfTheQueen));
     }
 
     private readonly List<unit> _highBourneAreaUnits;
     private readonly Rectangle _highBourneArea;
     private readonly Artifact _scepterOfTheQueen;
+    private readonly ObjectiveAnyUnitInRect _anyUnitInRect;
 
     /// <inheritdoc/>
     protected override string CompletionPopup =>
@@ -43,12 +46,12 @@ namespace WarcraftLegacies.Source.Quests.Warsong
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
-      "Gain the Scepter of the Queen and turn all units in Dire Maul hostile";
+      $"Gain the Scepter of the Queen and reveal 4 hostile {GetObjectName(Constants.UNIT_NNMG_REDEEMED_HIGHBORNE_SENTINELS)} outside the Athenaeum";
 
     /// <inheritdoc/>
     protected override void OnComplete(Faction whichFaction)
     {
-      _scepterOfTheQueen.Item.SetPosition(_highBourneArea.Center);
+      _anyUnitInRect.CompletingUnit.AddItemSafe(_scepterOfTheQueen.Item);
       Player(GetPlayerNeutralAggressive()).RescueGroup(_highBourneAreaUnits);
     }
   }

@@ -24,7 +24,7 @@ public static class Regions
 	public static Rectangle Demongate_1 { get; set; } = new Rectangle(-1248f, -22400f, -864f, -22016f);
 	public static Rectangle DemonGate3 { get; set; } = new Rectangle(352f, -25472f, 864f, -25024f);
 	public static Rectangle Desolace_Ships { get; set; } = new Rectangle(-18720f, -7584f, -16192f, -3488f);
-	public static Rectangle Dire_Maul_Entrance { get; set; } = new Rectangle(-17216f, -8736f, -16800f, -8544f);
+	public static Rectangle TheAthenaeum { get; set; } = new Rectangle(-17408f, -8768f, -16576f, -7968f);
 	public static Rectangle Dun_Morogh_Ships { get; set; } = new Rectangle(7296f, -7872f, 14240f, -4992f);
 	public static Rectangle Dustwallow_Ships { get; set; } = new Rectangle(-12416f, -8736f, -8768f, -6144f);
 	public static Rectangle East_Thandol { get; set; } = new Rectangle(17120f, 288f, 17312f, 448f);

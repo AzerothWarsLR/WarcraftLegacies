@@ -21,8 +21,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       sentinels.AddQuest(new QuestFeathermoon(Regions.FeathermoonUnlock));
       sentinels.AddQuest(new QuestSentinelsKillWarsong());
       sentinels.AddQuest(new QuestSentinelsKillFrostwolf());
-      //sentinels.AddQuest(new QuestMaievOutland(Regions.MaievStartUnlock));
-      //sentinels.AddQuest(new QuestScepterOfTheQueenSentinels(Regions.HighBourne, artifactSetup.ScepterOfTheQueen));
+      sentinels.AddQuest(new QuestScepterOfTheQueenSentinels(Regions.TheAthenaeum, artifactSetup.ScepterOfTheQueen));
       sentinels.AddQuest(new QuestVaultoftheWardens());
       sentinels.AddQuest(new QuestBlackrookHold());
     }
