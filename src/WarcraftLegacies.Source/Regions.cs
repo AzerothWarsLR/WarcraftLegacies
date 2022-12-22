@@ -310,7 +310,7 @@ public static class Regions
 	public static Rectangle ArtifactDummyInstance { get; set; } = new Rectangle(19584f, 23232f, 22688f, 24800f);
 	public static Rectangle Shadowforge_City { get; set; } = new Rectangle(11680f, -9728f, 13248f, -8544f);
 	public static Rectangle BlackrockUnlock { get; set; } = new Rectangle(11840f, -12224f, 13632f, -10208f);
-	public static Rectangle Exodar_South_Interior { get; set; } = new Rectangle(-11648f, -26816f, -11168f, -26304f);
+	public static Rectangle Exodar_South_Interior { get; set; } = new Rectangle(-11648f, -26816f, -11168f, -26368f);
 	public static Rectangle Exodar_North_Interior { get; set; } = new Rectangle(-9792f, -25024f, -9312f, -24512f);
 	public static Rectangle Exodar_Interior_All { get; set; } = new Rectangle(-11616f, -26848f, -9280f, -24480f);
 	public static Rectangle BloodElfSecondChanceSpawn { get; set; } = new Rectangle(10432f, 3520f, 10816f, 3936f);

@@ -72,7 +72,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
       });
       
       //Todo: create an "Extract Vial" spell for the Sunwell and assign it below
-      SpellSystem.Register(new ExtractSunwellVial(0, Constants.ITEM_I018_VIAL_OF_THE_SUNWELL));
+      SpellSystem.Register(new ExtractSunwellVial(Constants.ABILITY_A0OC_EXTRACT_VIAL_ALL, Constants.ITEM_I018_VIAL_OF_THE_SUNWELL));
     }
   }
 }
