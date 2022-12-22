@@ -186,7 +186,6 @@ namespace MacroTools.FactionSystem
       }
     }
 
-
     /// <summary>
     ///   The <see cref="player" /> currently occupying this <see cref="Faction" />.
     /// </summary>

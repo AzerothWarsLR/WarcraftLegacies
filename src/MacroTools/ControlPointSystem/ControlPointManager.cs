@@ -229,7 +229,7 @@ namespace MacroTools.ControlPointSystem
             controlPoint.Owner == Player(bj_PLAYER_NEUTRAL_VICTIM) ||
             controlPoint.ControlLevel >= ControlLevelSettings.ControlLevelMaximum) 
           return;
-        controlPoint.ControlLevel++;
+        controlPoint.ControlLevel += 1 + controlPoint.Owner.GetControlLevelPerTurnBonus();
         AddSpecialEffect(@"Abilities\Spells\Items\AIlm\AIlmTarget.mdl", GetUnitX(controlPoint.Unit),
             GetUnitY(controlPoint.Unit))
           .SetScale(1.5f)

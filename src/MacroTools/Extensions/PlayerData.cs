@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using MacroTools.ControlPointSystem;
 using MacroTools.FactionSystem;
 using static War3Api.Common;
 
@@ -158,6 +159,11 @@ namespace MacroTools.Extensions
         _controlPointCount = value;
       }
     }
+
+    /// <summary>
+    /// The number of extra <see cref="ControlPoint.ControlLevel"/>s the player gets each turn.
+    /// </summary>
+    public int ControlLevelPerTurnBonus { get; set; }
 
     /// <summary>
     /// Fired when the player's income changes.
