@@ -6,6 +6,7 @@ using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Naga
 {
+  //todo: fix incorrect grammar
   public sealed class QuestEyeofSargeras : QuestData
   {
     public QuestEyeofSargeras(Artifact eyeOfSargeras) : base("The Eye of Sargeras",

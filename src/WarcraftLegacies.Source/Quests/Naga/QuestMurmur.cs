@@ -7,6 +7,7 @@ using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Naga
 {
+  //todo: flavour doesn't make any sense
   public sealed class QuestMurmur : QuestData
   {
     public QuestMurmur(PreplacedUnitSystem preplacedUnitSystem) : base("The Shadow Labyrinth",

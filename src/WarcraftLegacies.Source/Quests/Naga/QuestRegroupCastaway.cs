@@ -5,6 +5,7 @@ using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Naga
 {
+  //todo: fix incorrect grammar
   public sealed class QuestRegroupCastaway : QuestData
   {
     public QuestRegroupCastaway() : base("The Splintered People",
