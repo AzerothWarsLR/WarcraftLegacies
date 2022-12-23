@@ -52,7 +52,6 @@ namespace WarcraftLegacies.Source.Setup.Spells
         OilHarvestedPerSecond = 5,
         Radius = 400
       });
-      PassiveAbilityManager.Register(new OilUser(Constants.UNIT_H04Z_KEZAN_OIL_SUPPLY_GOBLIN));
       PassiveAbilityManager.Register(new OilUser(Constants.UNIT_NTIN_CHIEF_ENGINEER_GOBLIN));
 
       SpellSystem.Register(new PingOilDeposits(Constants.ABILITY_A0PJ_LOCATE_OIL_GOBLIN_OIL_RIG_CONSTRUCTOR)

@@ -53349,12 +53349,6 @@ STRING 8888
 (Fel Horde - Executioner)
 }
 
-STRING 8889
-// Upgrades: R097 (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
-{
-Unlock the Oil Rigs Constructors
-}
-
 STRING 8890
 // Abilities: A0KI (Spawn Beetles), EditorSuffix (Editor Suffix)
 {
@@ -96624,6 +96618,12 @@ STRING 16106
 Defensive structure.  |n|n|cffffcc00Attacks land and air units.|r
 }
 
+STRING 16107
+// Upgrades: R097 (Iron Plating,Steel Plating,Mithril Plating), EditorSuffix (Editor Suffix)
+{
+(Goblin)
+}
+
 STRING 16108
 // Units: o03X (Voodoo Lounge), Ubertip (Tooltip - Extended)
 {
@@ -105089,12 +105089,6 @@ STRING 17518
 Calls down 3 waves of fire that damage units in an area. Each wave deals 25 damage.
 }
 
-STRING 17519
-// Upgrades: R097 (Iron Plating,Steel Plating,Mithril Plating), EditorSuffix (Editor Suffix)
-{
-(goblin)
-}
-
 STRING 17520
 // Abilities: A02R (Mage Armor), Name (Name)
 {
@@ -108539,6 +108533,12 @@ STRING 18092
 Learn Rays of the New Dawn - [|cffffcc00Level %d|r]
 }
 
+STRING 18093
+// Upgrades: R097 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+{
+Z
+}
+
 STRING 18094
 // Abilities: A02K (Multi Shot), Researchtip (Tooltip - Learn)
 {
@@ -108549,6 +108549,12 @@ STRING 18095
 // Abilities: A02K (Multi Shot), Researchubertip (Tooltip - Learn - Extended)
 {
 Sylvanas' skill with the bow allows her to fire multiple arrows at the same time. |n|n|cffffcc00Level 1|r - Sylvanas is able to fire 3 arrows at once. |n|cffffcc00Level 2|r - Sylvanas is able to fire 5 arrows at once.|n|cffffcc00Level 3|r - Sylvanas is able to fire 7 arrows at once.
+}
+
+STRING 18096
+// Upgrades: R097 (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
+{
+Allows Oil Rig Constructors to be trained from the Goblin Dock.
 }
 
 STRING 18097
@@ -116364,12 +116370,6 @@ STRING 19398
 // Abilities: A0ZA (Dragonmaw Battle Standard), Researchtip (Tooltip - Learn)
 {
 Learn Dragonmaw Battle Standard - [|cffffcc00Level %d|r]
-}
-
-STRING 19399
-// Upgrades: R097 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
-{
-S
 }
 
 STRING 19400
