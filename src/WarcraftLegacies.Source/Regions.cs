@@ -235,7 +235,7 @@ public static class Regions
 	public static Rectangle Silithus_Bug_Exterior { get; set; } = new Rectangle(-16352f, -17504f, -16096f, -17120f);
 	public static Rectangle EchoUnlock { get; set; } = new Rectangle(-8608f, -6816f, -6208f, -3968f);
 	public static Rectangle StrahnbradUnlock { get; set; } = new Rectangle(12544f, 4992f, 13408f, 5824f);
-	public static Rectangle ZeppelinReturn { get; set; } = new Rectangle(-960f, -5856f, -352f, -5216f);
+	public static Rectangle ZeppelinReturn { get; set; } = new Rectangle(-960f, -5824f, -320f, -5216f);
 	public static Rectangle Trade1 { get; set; } = new Rectangle(10240f, -23200f, 10624f, -22816f);
 	public static Rectangle Trade2 { get; set; } = new Rectangle(-10432f, 9856f, -10048f, 10240f);
 	public static Rectangle Trade3 { get; set; } = new Rectangle(-11008f, -3808f, -10592f, -3392f);
@@ -328,5 +328,6 @@ public static class Regions
 	public static Rectangle KaliRock7 { get; set; } = new Rectangle(-13088f, 608f, -12448f, 1312f);
 	public static Rectangle BookRetrieval { get; set; } = new Rectangle(9728f, 5248f, 10016f, 5472f);
 	public static Rectangle SkullRetrieval { get; set; } = new Rectangle(8576f, 4672f, 8832f, 4928f);
+	public static Rectangle KezanUnlock { get; set; } = new Rectangle(-1024f, -6112f, -32f, -5184f);
 
 }

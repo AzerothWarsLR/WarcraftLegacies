@@ -15,7 +15,7 @@ namespace WarcraftLegacies.Source.Quests.Draenei
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestRebuildCivilisation"/> class.
     /// </summary>
-    public QuestRebuildCivilisation(Rectangle questRect) : base("The Way Forward", "Establish a base around the Exodar in order to secure it.", "")
+    public QuestRebuildCivilisation(Rectangle questRect) : base("The Way Forward", "Establish a base around the Exodar in order to secure it.", "ReplaceableTextures\\CommandButtons\\BTNDraeneiDivineCitadel.blp")
     {
       Required = true;
       AddObjective(new ObjectiveBuildInRect(questRect, "on Azuremyst Isle", Constants.UNIT_U00U_CRYSTAL_PROTECTOR_DRAENEI, 4));

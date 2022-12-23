@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
@@ -60,34 +60,6 @@ namespace WarcraftLegacies.Source.Quests.Druids
       if (GetLocalPlayer() == completingFaction.Player) 
         PlayThematicMusic("war3mapImported\\DruidTheme.mp3");
       
-      EnumDestructablesInRect(_ashenvaleRect.Rect, null, () =>
-      {
-        var enumDestructable = GetEnumDestructable();
-        DestructableRestoreLife(enumDestructable, GetDestructableMaxLife(enumDestructable), true);
-      });
-      foreach (var rectAncient in new[]
-               {
-                 (Regions.ForestSpirits1, Constants.UNIT_N0CY_ENRAGED_ANCIENT_OF_LORE_EVENT),
-                 (Regions.ForestSpirits2, Constants.UNIT_N0CX_ENRAGED_ANCIENT_OF_WAR_EVENT),
-                 (Regions.ForestSpirits3, Constants.UNIT_N0CZ_ENRAGED_ANCIENT_OF_WIND_EVENT),
-                 (Regions.ForestSpirits4, Constants.UNIT_N0D0_ENRAGED_ANCIENT_OF_WONDER_EVENT),
-                 (Regions.ForestSpirits5, Constants.UNIT_N0D1_ENRAGED_TREE_OF_LIFE_EVENT),
-                 (Regions.ForestSpirits6, 0)
-               })
-      {
-        CreateUnit(completingFaction.Player, Constants.UNIT_H05B_FORESTSPIRIT_DUMMY, rectAncient.Item1.Center.X, rectAncient.Item1.Center.Y, 270)
-          .SetTimedLife(4)
-          .IssueOrder("forceofnature", rectAncient.Item1.Center);
-        if (rectAncient.Item2 != 0)
-        {
-          CreateTimer()
-            .Start(3, false, () =>
-            {
-              CreateUnit(completingFaction.Player, rectAncient.Item2, rectAncient.Item1.Center.X, rectAncient.Item1.Center.Y, 270)
-                .SetTimedLife(90);
-            });
-        }
-      }
     }
   }
 }
