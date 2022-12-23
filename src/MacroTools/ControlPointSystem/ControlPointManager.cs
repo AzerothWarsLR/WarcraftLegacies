@@ -280,7 +280,7 @@ namespace MacroTools.ControlPointSystem
           : ControlLevelSettings.DamageBase-1 + controlLevel * ControlLevelSettings.DamagePerControlLevel)
         .SetDamageDiceNumber(1)
         .SetDamageDiceSides(1)
-        .SetAttackType(2);
+        .SetAttackType(5);
     }
   }
 }

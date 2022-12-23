@@ -92397,7 +92397,7 @@ Further increases the armor of all Naval Units.
 
 STRING 15405
 {
-Warcraft Legacies 2.0 BETA
+Warcraft Legacies 2.0 BETA2
 }
 
 STRING 15406
@@ -96619,7 +96619,7 @@ Defensive structure.  |n|n|cffffcc00Attacks land and air units.|r
 }
 
 STRING 16107
-// Upgrades: R097 (Iron Plating,Steel Plating,Mithril Plating), EditorSuffix (Editor Suffix)
+// Units: o01C (Control Point Defender), EditorSuffix (Name - Editor Suffix)
 {
 (Goblin)
 }
@@ -96997,7 +96997,7 @@ Persistent Soul - [|cffffcc00Level 1|r]
 }
 
 STRING 16170
-// Units: o01C (Control Point Defender), EditorSuffix (Name - Editor Suffix)
+// Abilities: A0MN (Oil Consumer), EditorSuffix (Editor Suffix)
 {
 (Goblin)
 }
@@ -97505,7 +97505,7 @@ E
 }
 
 STRING 16255
-// Abilities: A0MN (Oil Consumer), EditorSuffix (Editor Suffix)
+// Abilities: A07A (Dispel Magic), EditorSuffix (Editor Suffix)
 {
 (Goblin)
 }
@@ -104892,7 +104892,7 @@ W
 }
 
 STRING 17486
-// Abilities: A07A (Dispel Magic), EditorSuffix (Editor Suffix)
+// Abilities: A0SJ (Rain of Fire), EditorSuffix (Editor Suffix)
 {
 (Goblin)
 }
@@ -105072,7 +105072,7 @@ STRING 17515
 }
 
 STRING 17516
-// Abilities: A0SJ (Rain of Fire), EditorSuffix (Editor Suffix)
+// Abilities: A0TA (Mech Kit), EditorSuffix (Editor Suffix)
 {
 (Goblin)
 }
@@ -108534,7 +108534,7 @@ Learn Rays of the New Dawn - [|cffffcc00Level %d|r]
 }
 
 STRING 18093
-// Upgrades: R097 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R07L (Shaman Adept Training,Shaman Master Training), Hotkey (Hotkey)
 {
 Z
 }
@@ -110989,7 +110989,7 @@ Research Deepseer Adept Training
 }
 
 STRING 18502
-// Upgrades: R07L (Shaman Adept Training,Shaman Master Training), Hotkey (Hotkey)
+// Upgrades: R07O (Witch Doctor Adept Training,Witch Doctor Master Training), Hotkey (Hotkey)
 {
 Z
 }
@@ -117237,7 +117237,7 @@ Fires massive boulders upon its foes.|n|cfff5962dUpgrades Into:|R Improved Iron 
 }
 
 STRING 19544
-// Abilities: A0TA (Mech Kit), EditorSuffix (Editor Suffix)
+// Upgrades: R097 (Iron Plating,Steel Plating,Mithril Plating), EditorSuffix (Editor Suffix)
 {
 (Goblin)
 }
@@ -117285,13 +117285,13 @@ STRING 19551
 }
 
 STRING 19552
-// Upgrades: R07O (Witch Doctor Adept Training,Witch Doctor Master Training), Hotkey (Hotkey)
+// Upgrades: R07V (Control Magic), Hotkey (Hotkey)
 {
 Z
 }
 
 STRING 19553
-// Upgrades: R07V (Control Magic), Hotkey (Hotkey)
+// Upgrades: R07C (Spirit Walker Adept Training,Spirit Walker Master Training), Hotkey (Hotkey)
 {
 Z
 }
@@ -117303,7 +117303,7 @@ Z
 }
 
 STRING 19555
-// Upgrades: R07C (Spirit Walker Adept Training,Spirit Walker Master Training), Hotkey (Hotkey)
+// Upgrades: R08E (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 Z
 }
@@ -117321,13 +117321,13 @@ STRING 19557
 }
 
 STRING 19558
-// Upgrades: R08E (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R08H (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 Z
 }
 
 STRING 19559
-// Upgrades: R08H (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R08P (Naga Siren Adept Training,Naga Siren Master Training), Hotkey (Hotkey)
 {
 Z
 }
@@ -117345,7 +117345,7 @@ Z
 }
 
 STRING 19562
-// Upgrades: R08P (Naga Siren Adept Training,Naga Siren Master Training), Hotkey (Hotkey)
+// Upgrades: R08S (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 Z
 }
@@ -117357,7 +117357,7 @@ X
 }
 
 STRING 19564
-// Upgrades: R08S (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R097 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 Z
 }
