@@ -26,6 +26,7 @@ namespace MacroTools.Instances
       foreach (var rectangle in _rectangles)
         RegionAddRect(Region, rectangle.Rect);
       _name = name;
+      _dependencyDiesTrigger.AddAction(Destroy);
     }
 
     public Instance(string name, Rectangle area) : this(name, new[] {area})
@@ -65,6 +66,9 @@ namespace MacroTools.Instances
     {
       foreach (var rect in _rectangles)
       {
+        foreach (var unit in CreateGroup().EnumUnitsInRect(rect).EmptyToList()) 
+          KillUnit(unit);
+        
         EnumItemsInRect(rect.Rect, null, () =>
         {
           var filterItem = GetFilterItem();
@@ -72,26 +76,17 @@ namespace MacroTools.Instances
           if (exteriorPosition is not null)
             filterItem.SetPosition(exteriorPosition);
         });
-
-        foreach (var unit in CreateGroup().EnumUnitsInRect(rect).EmptyToList()) KillUnit(unit);
       }
 
-      foreach (var gate in _gates) gate.Destroy();
+      foreach (var gate in _gates) 
+        gate.Destroy();
     }
 
     /// <summary>
     ///   Makes the <see cref="Instance" /> dependent on the given <see cref="unit" /> being alive.
     ///   When any of the dependent <see cref="unit" />s die, every unit in the <see cref="Instance" /> is killed.
     /// </summary>
-    public void AddDependency(unit dependency)
-    {
+    public void AddDependency(unit dependency) => 
       _dependencyDiesTrigger.RegisterUnitEvent(dependency, EVENT_UNIT_DEATH);
-      _dependencyDiesTrigger.AddAction(Destroy);
-    }
-
-    public void AddGate(Gate gate)
-    {
-      _gates.Add(gate);
-    }
   }
 }
