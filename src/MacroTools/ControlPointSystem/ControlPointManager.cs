@@ -158,7 +158,7 @@ namespace MacroTools.ControlPointSystem
           {
             var attacker = GetEventDamageSource();
             var hitPoints = GetUnitState(controlPoint.Unit, UNIT_STATE_LIFE) - GetEventDamage();
-            if (hitPoints > 0) 
+            if (hitPoints > 1) 
               return;
             BlzSetEventDamage(0);
             SetUnitOwner(controlPoint.Unit, GetOwningPlayer(attacker), true);
