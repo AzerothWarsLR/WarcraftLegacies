@@ -25,7 +25,7 @@ namespace MacroTools.ObjectiveSystem.Objectives
         _currentBuildCount = value;
         Description = _targetBuildCount > 1
           ? $"Build {_targetBuildCount} {GetObjectName(_objectId)}s {_areaName} ({_currentBuildCount}/{_targetBuildCount}"
-          : $"Build a {GetObjectName(_objectId)}s {_areaName})";
+          : $"Build {GetObjectName(_objectId)} {_areaName}";
       }
     }
 

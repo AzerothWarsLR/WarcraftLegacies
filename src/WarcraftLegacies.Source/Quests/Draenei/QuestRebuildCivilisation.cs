@@ -3,11 +3,12 @@ using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using MacroTools.ObjectiveSystem.Objectives;
 using WCSharp.Shared.Data;
+using MacroTools.ControlPointSystem;
 
 namespace WarcraftLegacies.Source.Quests.Draenei
 {
   /// <summary>
-  /// 
+  /// Build various structures inside <see cref="Regions.AzuremystAmbient"/>
   /// </summary>
   public class QuestRebuildCivilisation : QuestData
   {
@@ -21,9 +22,8 @@ namespace WarcraftLegacies.Source.Quests.Draenei
       AddObjective(new ObjectiveBuildInRect(questRect, "on Azuremyst Isle", Constants.UNIT_U00U_CRYSTAL_PROTECTOR_DRAENEI, 4));
       AddObjective(new ObjectiveBuildInRect(questRect, "on Azuremyst Isle", Constants.UNIT_O058_ALTAR_OF_LIGHT_DRAENEI));
       AddObjective(new ObjectiveBuildInRect(questRect, "on Azuremyst Isle", Constants.UNIT_O056_ARCANE_WELL_DRAENEI, 10));
-      AddObjective(new ObjectiveUpgrade(Constants.UNIT_O051_DIVINE_CITADEL_DRAENEI, Constants.UNIT_O02P_CRYSTAL_HALL_DRAENEI));
-
-      ResearchId = Constants.UPGRADE_R082_QUEST_COMPLETED_THE_WAY_FORWARD;// Change this to current quest;
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N02Z_AZUREMYST_ISLE_15GOLD_MIN)));
+      ResearchId = Constants.UPGRADE_R082_QUEST_COMPLETED_THE_WAY_FORWARD;
     }
 
     /// <inheritdoc/>
