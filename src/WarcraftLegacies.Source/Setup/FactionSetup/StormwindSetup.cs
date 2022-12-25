@@ -23,11 +23,11 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
         ControlPointDefenderUnitTypeId = Constants.UNIT_H05X_CONTROL_POINT_DEFENDER_STORMWIND, 
         IntroText = @"You are playing as the steadfast |cff005800Kingdom of Stormwind|r.
 
-You are the first line of defense against the onslaught of the Fel Horde. 
+You are the first line of defense against the onslaught of the forces of Outland. 
 
-Reunite your Kingdom, beginning with Darkshire, Lakeshire, and finally Stormwind City. Then race East to the Stronghold of Nethergarde near the Dark Portal and prepare for the Fel Horde's invasion.
+Reunite your Kingdom, beginning with Darkshire, Lakeshire, and finally Stormwind City. Then race East to the Stronghold of Nethergarde near the Dark Portal and prepare for the invasion of the forces in Outland.
 
-Make sure to communicate with your Dwarven and Kul'tiran allies, they will be the ones to help you early on, as the rest of the Alliance will be too far to reach you in time."
+Make sure to communicate with your Dwarven and Kul'tiran allies, as they will be the ones to help you defend against the evil coming from beyond the portal."
       };
 
       //Structures
