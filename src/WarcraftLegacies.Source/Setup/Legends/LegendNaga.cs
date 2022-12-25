@@ -14,9 +14,10 @@ namespace WarcraftLegacies.Source.Setup.Legends
 
     public static void Setup()
     {
+
       LegendIllidan = new LegendaryHero("Illidan")
       {
-        UnitType = FourCC("Eill"),
+        UnitType = Constants.UNIT_EEVI_BETRAYER_ILLIDARI,
         PlayerColor = PLAYER_COLOR_PURPLE
       };
       LegendaryHeroManager.Register(LegendIllidan);

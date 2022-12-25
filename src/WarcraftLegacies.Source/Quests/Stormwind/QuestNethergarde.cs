@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives;
@@ -14,7 +14,7 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
 
     public QuestNethergarde() : base("Nethergarde Relief",
       "Nethergarde Keep fort is holding down the Dark Portal, they will need to be reinforced soon!",
-      "ReplaceableTextures\\CommandButtons\\BTNNobbyMansionBarracks.blp")
+      "ReplaceableTextures\\CommandButtons\\BTNStormwindGuardTower.blp")
     {
       AddObjective(new ObjectiveLegendInRect(LegendStormwind.Varian, Regions.NethergardeUnlock, "Nethergarde"));
       AddObjective(new ObjectiveExpire(1440));

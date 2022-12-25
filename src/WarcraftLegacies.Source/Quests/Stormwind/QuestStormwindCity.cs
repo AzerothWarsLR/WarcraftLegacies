@@ -24,7 +24,7 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
     /// <param name="rescueRect">Units in this area will be made invulnerable, then rescued when the quest is completed.</param>
     public QuestStormwindCity(Rectangle rescueRect) : base("Clear the Outskirts",
       "The outskirts of Stormwind are infested by evil creatures. Kill their leaders and regain control of the Towns.",
-      "ReplaceableTextures\\CommandButtons\\BTNNobbyMansionCastle.blp")
+      "ReplaceableTextures\\CommandButtons\\BTNStormwindCastle.blp")
     {
       AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N00V_DUSKWOOD_10GOLD_MIN)));
       AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N00Z_ELWYNN_FOREST_20GOLD_MIN)));
