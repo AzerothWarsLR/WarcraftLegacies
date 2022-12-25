@@ -14,20 +14,25 @@ namespace WarcraftLegacies.Source.Quests.Draenei
   /// </summary>
   public class QuestRepairExodarHull : QuestData
   {
+    private QuestData _questToFailOnFail { get; }
+
     /// <summary>
     /// 
     /// </summary>
     /// <param name="rescueRect"></param>
-    public QuestRepairExodarHull(Rectangle rescueRect) : base("A New Home",
+    /// <param name="questToFailOnFail">This quest will fail upon failing <see cref="QuestRepairExodarHull"/></param>
+    public QuestRepairExodarHull(Rectangle rescueRect, QuestData questToFailOnFail) : base("A New Home",
       "After the disastrous voyage through the Twisting Nether, the Exodar crash-landed on Azuremyst Isle. Its hull must be repaired in order to get inside.",
       "ReplaceableTextures\\CommandButtons\\BTNDraeneiVaultOfRelics.blp")
     {
       Required = true;
+      AddObjective(new ObjectiveUnitAlive(LegendDraenei.LegendExodar.Unit));
       AddObjective(new ObjectiveUnitReachesFullHealth(LegendDraenei.LegendExodar.Unit));
       AddObjective(new ObjectiveKillAllInArea(new List<Rectangle> { Regions.AzuremystAmbient }, "on Azuremyst Isle"));
       AddObjective(new ObjectiveSelfExists());
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
       ResearchId = Constants.UPGRADE_R099_QUEST_COMPLETED_A_NEW_HOME; // Change this to current quest;
+      _questToFailOnFail = questToFailOnFail;
     }
 
     private List<unit> _rescueUnits { get; }
@@ -49,20 +54,12 @@ namespace WarcraftLegacies.Source.Quests.Draenei
         whichFaction.Player.RescueGroup(_rescueUnits);
       else
         Player(PLAYER_NEUTRAL_AGGRESSIVE).RescueGroup(_rescueUnits);
-      // SetUnitInvulnerable(LegendDraenei.LegendExodar.Unit, false);
-
-      //Open Portals to exodar inside
     }
 
     /// <inheritdoc/>
     protected override void OnFail(Faction whichFaction)
     {
-      // Quest to repair the Exodar inside should be failed here too.
+      _questToFailOnFail.Progress = QuestProgress.Failed;
     }
-
-    //  protected override void OnAdd(Faction whichFaction)
-    //  {
-    //    SetUnitInvulnerable(LegendDraenei.LegendExodar.Unit, true);
-    //  }
   }
 }
