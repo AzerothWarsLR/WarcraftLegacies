@@ -4876,7 +4876,7 @@ Summon Hawk
 }
 
 STRING 814
-// Units: n0BA (Ny'alotha Obelisk), EditorSuffix (Name - Editor Suffix)
+// Units: n045 (Temple of Azshara), EditorSuffix (Name - Editor Suffix)
 {
  (Nzoth Other)
 }
@@ -8425,7 +8425,7 @@ Soul of Frostmourne
 }
 
 STRING 1405
-// Units: n0C3 (Shrine of Azshara), EditorSuffix (Name - Editor Suffix)
+// Units: n08V (Depth Void Portal), EditorSuffix (Name - Editor Suffix)
 {
  (Nzoth Specialist)
 }
@@ -8881,7 +8881,7 @@ The deep fissure out of which the main soldiery of the Naga emerge.|n|r|cfff5962
 }
 
 STRING 1481
-// Units: n0C5 (Temple Protector), EditorSuffix (Name - Editor Suffix)
+// Units: n0BQ (The First Guardian), EditorSuffix (Name - Editor Suffix)
 {
  (Nzoth Tower)
 }
@@ -9127,7 +9127,7 @@ Build Temple Protector
 }
 
 STRING 1522
-// Units: n0C6 (Improved Temple Protector), EditorSuffix (Name - Editor Suffix)
+// Units: n0C5 (Temple Protector), EditorSuffix (Name - Editor Suffix)
 {
  (Nzoth Tower)
 }
@@ -9228,6 +9228,12 @@ STRING 1538
 Beast stables for the Horde.|n|cfff5962dTrains:|R Fel Raider, Bonebreaker, Obsidian Drake |n|cfff5962dResearches:|R Incinerate
 }
 
+STRING 1539
+// Units: u01X (Heart of Naxxramas), EditorSuffix (Name - Editor Suffix)
+{
+ (Scourge Naxxramas Interior)
+}
+
 STRING 1540
 // Units: h07C (Mustering Hall), Hotkey (Hotkey)
 {
@@ -9250,6 +9256,12 @@ STRING 1543
 // Abilities: Aro2 (Root), Unhotkey (Hotkey - Turn Off)
 {
 V
+}
+
+STRING 1544
+// Units: E01G (Gronn Overlord), Ubertip (Tooltip - Extended)
+{
+Warrior hero, adept at melee combat and bolstering nearby allies.|n|cfff5962dCan Learn:|R War Stomp, Shockwave, Unholy Aura, Reincarnation|n|n|cffffcc00Attacks land units.|R
 }
 
 STRING 1545
@@ -9804,6 +9816,12 @@ STRING 1636
 Creates a shop with purchasable items.
 }
 
+STRING 1637
+// Destructibles: B00E (Wrecked Ship), Name (Name)
+{
+Wrecked Ship
+}
+
 STRING 1638
 // Units: h069 (Military Quarter), Hotkey (Hotkey)
 {
@@ -9904,6 +9922,18 @@ STRING 1654
 // Units: n0A2 (Arcanist's Consortium), Hotkey (Hotkey)
 {
 F
+}
+
+STRING 1655
+// Abilities: A0S1 (Bombing Run), EditorSuffix (Editor Suffix)
+{
+ (Stormwind)
+}
+
+STRING 1656
+// Abilities: A072 (Acid Bomb), EditorSuffix (Editor Suffix)
+{
+ (Faranell)
 }
 
 STRING 1657
@@ -20401,7 +20431,7 @@ Jaina's Sanctum
 }
 
 STRING 3487
-// Abilities: A0S1 (Bombing Run), EditorSuffix (Editor Suffix)
+// Abilities: A0RD (Electric Strike mini Stun), EditorSuffix (Editor Suffix)
 {
 (Dark Green)
 }
@@ -23070,7 +23100,7 @@ Quest Completed: The Shadow Labyrinth
 }
 
 STRING 3938
-// Abilities: A0RD (Electric Strike mini Stun), EditorSuffix (Editor Suffix)
+// Buffs/Effects: B060 (Dragon's Fury), EditorSuffix (Editor Suffix)
 {
 (Dark Green)
 }
@@ -23112,7 +23142,7 @@ Revive Crown Prince of Stromgarde
 }
 
 STRING 3945
-// Buffs/Effects: B060 (Dragon's Fury), EditorSuffix (Editor Suffix)
+// Buffs/Effects: B05W (Holy fire (Bishop)), EditorSuffix (Editor Suffix)
 {
 (Dark Green)
 }
@@ -23241,12 +23271,6 @@ STRING 3966
 // Units: n07G (Musketeers), Hotkey (Hotkey)
 {
 W
-}
-
-STRING 3967
-// Buffs/Effects: B05W (Holy fire (Bishop)), EditorSuffix (Editor Suffix)
-{
-(Dark Green)
 }
 
 STRING 3968
@@ -112050,12 +112074,6 @@ STRING 19149
 Self-Bloodlust - [|cffffcc00Level 2|r]
 }
 
-STRING 19150
-// Units: E01G (Gronn Overlord), Ubertip (Tooltip - Extended)
-{
-Warrior hero, adept at melee combat and bolstering nearby allies.|n|cfff5962dAbilities:|r Critical Strike|n|cfff5962dCan Learn:|R White Wolf's Fury, Goldrinn's Howl, Vampiric Aura, Reincarnation|n|n|cffffcc00Attacks land units.|R
-}
-
 STRING 19151
 // Abilities: A0YK (Oil Lubrification), Ubertip (Tooltip - Normal - Extended)
 {
@@ -113879,12 +113897,6 @@ STRING 19472
 // Abilities: A072 (Acid Bomb), Researchubertip (Tooltip - Learn - Extended)
 {
 Hurls a flask of plague at a target.  The flask breaks upon impact, splashing a powerful plague on nearby hostile units.|nDecreases armor; deals high damage over time to the primary target; deals slightly less damage over time to nearby targets.|nLasts 15 seconds.|n|n|cffffcc00Level 1|r - 15 max damage per second, reduces armor by 3 .|n|cffffcc00Level 2|r - 20 max damage per second, reduces armor by 4.|n|cffffcc00Level 3|r - 25 max damage per second, reduces armor by 5. |n|cffffcc00Level 4|r - 30 max damage per second, reduces armor by 6.
-}
-
-STRING 19473
-// Abilities: A072 (Acid Bomb), EditorSuffix (Editor Suffix)
-{
-(farawell)
 }
 
 STRING 19474
@@ -117122,7 +117134,7 @@ Summon Naxxramas
 }
 
 STRING 20025
-// Units: u01X (Heart of Naxxramas), EditorSuffix (Name - Editor Suffix)
+// Units: h00O (Utgarde Keep), EditorSuffix (Name - Editor Suffix)
 {
  (Scourge Other)
 }
@@ -117134,7 +117146,7 @@ STRING 20026
 }
 
 STRING 20027
-// Units: n08V (Depth Void Portal), EditorSuffix (Name - Editor Suffix)
+// Units: n0C3 (Shrine of Azshara), EditorSuffix (Name - Editor Suffix)
 {
  (Nzoth Specialist)
 }
@@ -117173,12 +117185,6 @@ STRING 20033
 // Units: h097 (Guard-house), Tip (Tooltip - Basic)
 {
 Build Guard-house
-}
-
-STRING 20034
-// Units: h00O (Utgarde Keep), EditorSuffix (Name - Editor Suffix)
-{
- (Scourge Other)
 }
 
 STRING 20035
@@ -117428,7 +117434,7 @@ Train Faceless Marauder
 }
 
 STRING 20076
-// Units: n045 (Temple of Azshara), EditorSuffix (Name - Editor Suffix)
+// Units: n0BA (Ny'alotha Obelisk), EditorSuffix (Name - Editor Suffix)
 {
  (Nzoth Other)
 }
@@ -117638,7 +117644,7 @@ Build Pillar of the Waves
 }
 
 STRING 20111
-// Units: n0BQ (The First Guardian), EditorSuffix (Name - Editor Suffix)
+// Units: n0C6 (Improved Temple Protector), EditorSuffix (Name - Editor Suffix)
 {
  (Nzoth Tower)
 }
