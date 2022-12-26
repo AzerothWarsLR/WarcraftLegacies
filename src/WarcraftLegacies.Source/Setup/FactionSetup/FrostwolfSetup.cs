@@ -22,10 +22,10 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
         ControlPointDefenderUnitTypeId = Constants.UNIT_N0B6_CONTROL_POINT_DEFENDER_FROSTWOLF,
         IntroText = @"You are playing as the honorable |cffff0000Frostwolf Clan|r.
 
-You have been shipwrecked. Gather enough resources to sail South-West to Kalimdor. Until you reach Kalimdor, you will be unable to train any more peons or research new tech. 
+Following Medihvs call to sail west and find his destiny, Thrall and his forces were shipwrecked on the coast of Kalimdor. 
 
-Once you land, you will find a Tauren caravan with a Great Hall packed in it's inventory. 
-Escort the kodo to Thunderbluff, where you will find a goldmine waiting for you."
+Establish a base and gather your troops - but make haste and move inland, for the lands are rugged and harsh and resources are scarce."
+
       };
 
       Frostwolf.ModObjectLimit(Constants.UNIT_OGRE_GREAT_HALL_FROSTWOLF, Faction.UNLIMITED);
