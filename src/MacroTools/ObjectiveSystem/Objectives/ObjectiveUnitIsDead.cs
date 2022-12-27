@@ -31,7 +31,7 @@ namespace MacroTools.ObjectiveSystem.Objectives
         return;
       }
 
-      Description = GetUnitName(Target) + "is dead.";
+      Description = GetUnitName(Target) + " is dead.";
     }
   }
 }
