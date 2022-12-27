@@ -1,4 +1,4 @@
-using MacroTools.QuestSystem;
+﻿using MacroTools.QuestSystem;
 using WCSharp.Events;
 using static War3Api.Common;
 
@@ -18,7 +18,7 @@ namespace MacroTools.ObjectiveSystem.Objectives
     /// <param name="holderOnly">If true, the quest holder must cast the spell themselves.</param>
     public ObjectiveCastSpell(int spellId, bool holderOnly)
     {
-      PlayerUnitEvents.Register(UnitTypeEvent.SpellFinish, OnCast, spellId);
+      PlayerUnitEvents.Register(SpellEvent.Finish, OnCast, spellId);
       if (holderOnly)
         Description = "Cast " + GetObjectName(spellId);
       else
