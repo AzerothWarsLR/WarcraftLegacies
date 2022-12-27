@@ -9925,7 +9925,7 @@ F
 }
 
 STRING 1655
-// Abilities: A0S1 (Bombing Run), EditorSuffix (Editor Suffix)
+// Units: n093 (Chaplain), EditorSuffix (Name - Editor Suffix)
 {
  (Stormwind)
 }
@@ -114098,7 +114098,7 @@ The drowned halls of knowledge, kept by the Coilfang and Mur'gul intelligent eno
 }
 
 STRING 19507
-// Units: n093 (Chaplain), EditorSuffix (Name - Editor Suffix)
+// Units: h05N (Marksman), EditorSuffix (Name - Editor Suffix)
 {
  (Stormwind)
 }
@@ -114122,13 +114122,13 @@ Mur'gul slaves toil to provide the Illidari with ever-improving weapons and armo
 }
 
 STRING 19511
-// Units: h05N (Marksman), EditorSuffix (Name - Editor Suffix)
+// Units: h054 (Stormwind Knight), EditorSuffix (Name - Editor Suffix)
 {
  (Stormwind)
 }
 
 STRING 19512
-// Units: h054 (Stormwind Knight), EditorSuffix (Name - Editor Suffix)
+// Units: h03Z (Saboteur), EditorSuffix (Name - Editor Suffix)
 {
  (Stormwind)
 }
@@ -114152,7 +114152,7 @@ Build Smithy
 }
 
 STRING 19516
-// Units: h03Z (Saboteur), EditorSuffix (Name - Editor Suffix)
+// Abilities: A0S1 (Bombing Run), EditorSuffix (Editor Suffix)
 {
  (Stormwind)
 }
