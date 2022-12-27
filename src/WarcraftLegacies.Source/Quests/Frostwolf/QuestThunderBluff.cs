@@ -16,7 +16,7 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
   /// </summary>
   public sealed class QuestThunderBluff : QuestData
   {
-    private readonly List<unit> _rescueUnits = new();
+    private readonly List<unit> _rescueUnits;
 
     /// <inheritdoc />
     public QuestThunderBluff(PreplacedUnitSystem preplacedUnitSystem, Rectangle rescueRect) : base("The Long March",
@@ -24,7 +24,7 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
       "ReplaceableTextures\\CommandButtons\\BTNCentaurKhan.blp")
     {
       AddObjective(new ObjectiveUnitIsDead(preplacedUnitSystem.GetUnit(FourCC("ncnk"), rescueRect.Center)));
-      AddObjective(new ObjectiveLegendInRect(LegendFrostwolf.LegendCairne, rescueRect, "Thunder Bluff"));
+      AddObjective(new ObjectiveAnyUnitInRect(rescueRect, "Thunder Bluff", true));
       AddObjective(new ObjectiveExpire(1455));
       AddObjective(new ObjectiveSelfExists());
       ResearchId = Constants.UPGRADE_R05I_QUEST_COMPLETED_THE_LONG_MARCH; 

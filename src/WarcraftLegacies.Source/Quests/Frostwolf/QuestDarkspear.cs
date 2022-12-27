@@ -13,7 +13,7 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
   /// </summary>
   public sealed class QuestDarkspear : QuestData
   {
-    private readonly List<unit> _rescueUnits = new();
+    private readonly List<unit> _rescueUnits;
 
     /// <inheritdoc />
     public QuestDarkspear() : base("The Darkspear Trolls",
@@ -22,8 +22,8 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
     {
       _rescueUnits = Regions.EchoUnlock.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
       AddObjective(new ObjectiveSelfExists());
-      AddObjective(new ObjectiveExpire(900));
-      AddObjective(new ObjectiveLegendInRect(LegendFrostwolf.LegendVolJin, Regions.EchoUnlock, "Echo Isles"));
+      AddObjective(new ObjectiveExpire(1455));
+      AddObjective(new ObjectiveAnyUnitInRect(Regions.EchoUnlock, "Echo Isles", true));
       Required = true;
     }
 
@@ -42,8 +42,7 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
     /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)
     {
-      if (completingFaction.Player != null)
-        completingFaction.Player.RescueGroup(_rescueUnits);
+        completingFaction.Player?.RescueGroup(_rescueUnits);
     }
   }
 }
