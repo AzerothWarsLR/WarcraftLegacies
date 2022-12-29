@@ -1,6 +1,6 @@
 ﻿using System;
 using MacroTools.DialogueSystem;
-using MacroTools.QuestSystem.UtilityStructs;
+using MacroTools.ObjectiveSystem.Objectives;
 using WarcraftLegacies.Source.Setup.FactionSetup;
 using WarcraftLegacies.Source.Setup.Legends;
 

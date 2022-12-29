@@ -2,8 +2,8 @@ using System.Collections.Generic;
 using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
+using MacroTools.ObjectiveSystem.Objectives;
 using MacroTools.QuestSystem;
-using MacroTools.QuestSystem.UtilityStructs;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
@@ -18,7 +18,7 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
       "ReplaceableTextures\\CommandButtons\\BTNOgreLord.blp")
     {
       AddObjective(new ObjectiveKillUnit(ogreLordToKill));
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n011"))));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(FourCC("n011"))));
       AddObjective(new ObjectiveExpire(1427));
       AddObjective(new ObjectiveSelfExists());
       foreach (var unit in CreateGroup().EnumUnitsInRect(rescueRect).EmptyToList())

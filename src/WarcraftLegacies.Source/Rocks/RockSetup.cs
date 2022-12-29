@@ -12,16 +12,9 @@ namespace WarcraftLegacies.Source.Rocks
     public static void Setup()
     {
       RockSystem.Register(new RockGroup(Regions.KaliRock1, RockChunkId, 600));
-      RockSystem.Register(new RockGroup(Regions.KaliRock2, RockChunkId, 600));
-      RockSystem.Register(new RockGroup(Regions.KaliRock3, RockChunkId, 600));
       RockSystem.Register(new RockGroup(Regions.KaliRock4, RockChunkId, 600));
-      RockSystem.Register(new RockGroup(Regions.KaliRock6, RockChunkId, 600));
-      
-      //RockSystem.Register(new RockGroup(Regions.NRRock1, _rockChunkId, 600)); //Todo: uncomment these
-      //RockSystem.Register(new RockGroup(Regions.NRRock2, _rockChunkId, 600));
-      //RockSystem.Register(new RockGroup(Regions.NRRock3, _rockChunkId, 600));
+      RockSystem.Register(new RockGroup(Regions.KaliRock7, RockChunkId, 600));
 
-      RockSystem.Register(new RockGroup(Regions.KaliRock5, RockChunkId, 840));
     }
   }
 }

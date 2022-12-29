@@ -230,6 +230,7 @@ namespace WarcraftLegacies.Source.Setup
       DragonmawSpellSetup.Setup();
       IllidariSpellSetup.Setup();
       FelHordeSpellSetup.Setup();
+      DraeneiSpellSetup.Setup();
     }
   }
 }

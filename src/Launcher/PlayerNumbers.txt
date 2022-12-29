@@ -7,18 +7,18 @@
 //  6	Fel Horde
 //  7	Dalaran
 //  8	Goblin
-//  9	Forsaken
+//  9	Empty
 //  10	Stormwind
 //  11	Druids
-//  12	Scarlet
+//  12	Empty
 //  13	Draenei
 //  14	Empty
 //  15	Illidan
-//  16	Dragonmaw
-//  17  Zandalar
+//  16	Empty
+//  17  Empty
 //  18	Sentinels
 //  19  Empty
-//  20  Gilneas
-//  21  Empty
+//  20  Empty
+//  21  Observer
 //  22  Kultiras
 //  23  Legion

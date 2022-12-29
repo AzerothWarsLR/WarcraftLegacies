@@ -1,8 +1,8 @@
 using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
+using MacroTools.ObjectiveSystem.Objectives;
 using MacroTools.QuestSystem;
-using MacroTools.QuestSystem.UtilityStructs;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Stormwind
@@ -14,7 +14,7 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
       "ReplaceableTextures\\CommandButtons\\BTNGnollArcher.blp")
     {
       AddObjective(new ObjectiveKillUnit(gnollToKill));
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n00V"))));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(FourCC("n00V"))));
       AddObjective(new ObjectiveExpire(1425));
       AddObjective(new ObjectiveSelfExists());
       Required = true;

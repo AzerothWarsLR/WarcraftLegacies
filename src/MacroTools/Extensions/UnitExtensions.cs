@@ -1,5 +1,4 @@
 ﻿using System;
-using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using MacroTools.Libraries;
 using WCSharp.Shared.Data;
@@ -13,6 +12,80 @@ namespace MacroTools.Extensions
   public static class UnitExtensions
   {
     private const float HeroDropDist = 50; //The radius in which heroes spread out items when they drop them
+
+    /// <summary>
+    /// Determines whether or not the unit's attack can be seen in the UI window.
+    /// </summary>
+    public static unit ShowAttackUi(this unit whichUnit, bool show, int weaponSlot = 0)
+    {
+      BlzSetUnitWeaponBooleanField(whichUnit, UNIT_WEAPON_BF_ATTACK_SHOW_UI, weaponSlot, show);
+      return whichUnit;
+    }
+    
+    public static unit SetUnitLevel(this unit whichUnit, int level)
+    {
+      BlzSetUnitIntegerField(whichUnit, UNIT_IF_LEVEL, level);
+      return whichUnit;
+    }
+    
+    /// <summary>
+    /// Sets a unit's armor.
+    /// </summary>
+    public static unit SetArmor(this unit whichUnit, int armor)
+    {
+      BlzSetUnitArmor(whichUnit, armor);
+      return whichUnit;
+    }
+    
+    /// <summary>
+    /// Returns the unit's maximum hit points.
+    /// </summary>
+    public static int GetMaximumHitPoints(this unit whichUnit) => BlzGetUnitMaxHP(whichUnit);
+    
+    /// <summary>
+    /// Sets the unit's scaling value.
+    /// </summary>
+    public static unit SetScale(this unit whichUnit, float scale)
+    {
+      SetUnitScale(whichUnit, scale, scale, scale);
+      return whichUnit;
+    }
+    
+    /// <summary>
+    /// Sets the unit's maximum hit points.
+    /// </summary>
+    public static unit SetMaximumHitpoints(this unit whichUnit, int value)
+    {
+      BlzSetUnitMaxHP(whichUnit, value);
+      return whichUnit;
+    }
+
+    /// <summary>
+    /// Sets the unit's base damage.
+    /// </summary>
+    public static unit SetDamageBase(this unit whichUnit, int value, int weaponSlot = 0)
+    {
+      BlzSetUnitBaseDamage(whichUnit, value, weaponSlot);
+      return whichUnit;
+    }
+    
+    /// <summary>
+    /// Sets the unit's number of damage dice.
+    /// </summary>
+    public static unit SetDamageDiceNumber(this unit whichUnit, int value, int weaponSlot = 0)
+    {
+      BlzSetUnitDiceNumber(whichUnit, value, weaponSlot);
+      return whichUnit;
+    }
+    
+    /// <summary>
+    /// Sets the number of sides on the unit's damage dice.
+    /// </summary>
+    public static unit SetDamageDiceSides(this unit whichUnit, int value, int weaponSlot = 0)
+    {
+      BlzSetUnitDiceSides(whichUnit, value, weaponSlot);
+      return whichUnit;
+    }
 
     /// <summary>
     /// Changes the unit's skin to match that of another unit type.
@@ -296,10 +369,11 @@ namespace MacroTools.Extensions
     /// <summary>
     /// Sets the units hit points to a specified percentage value.
     /// </summary>
-    public static void SetLifePercent(this unit whichUnit, float percent)
+    public static unit SetLifePercent(this unit whichUnit, float percent)
     {
       SetUnitState(whichUnit, UNIT_STATE_LIFE,
         GetUnitState(whichUnit, UNIT_STATE_MAX_LIFE) * MathEx.Max(0, percent) * 0.01f);
+      return whichUnit;
     }
 
     /// <summary>
@@ -515,9 +589,15 @@ namespace MacroTools.Extensions
       return whichUnit;
     }
 
+    /// <summary>
+    /// Gets the percentage of mana that a unit has remaining.
+    /// </summary>
     public static float GetManaPercent(this unit whichUnit) => GetUnitState(whichUnit, UNIT_STATE_MANA) /
       GetUnitState(whichUnit, UNIT_STATE_MAX_MANA) * 100;
 
+    /// <summary>
+    /// Sets the percentage of mana a unit has remaining.
+    /// </summary>
     public static unit SetManaPercent(this unit whichUnit, float percent)
     {
       SetUnitState(whichUnit, UNIT_STATE_MANA,

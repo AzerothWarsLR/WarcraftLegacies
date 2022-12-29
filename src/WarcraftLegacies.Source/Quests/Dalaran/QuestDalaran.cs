@@ -1,9 +1,9 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
+using MacroTools.ObjectiveSystem.Objectives;
 using MacroTools.QuestSystem;
-using MacroTools.QuestSystem.UtilityStructs;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
@@ -27,8 +27,8 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
     {
       foreach (var prerequisite in prerequisites) 
         AddObjective(new ObjectiveCompleteQuest(prerequisite));
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(Constants.UNIT_N018_DURNHOLDE_15GOLD_MIN)));
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(Constants.UNIT_N01I_CAER_DARROW_15GOLD_MIN)));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N018_DURNHOLDE_15GOLD_MIN)));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N01I_CAER_DARROW_15GOLD_MIN)));
       AddObjective(new ObjectiveUpgrade(Constants.UNIT_H068_OBSERVATORY_DALARAN, Constants.UNIT_H065_REFUGE_DALARAN));
       AddObjective(new ObjectiveExpire(1445));
       AddObjective(new ObjectiveSelfExists());
@@ -36,7 +36,7 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
 
       foreach (var rectangle in rescueRects)
         _rescueUnits.AddRange(rectangle.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures,
-          unit => unit.GetTypeId() != Constants.UNIT_N0DK_SKULL_OF_GUL_DAN_PEDESTAL));
+          unit => unit.GetTypeId() != Constants.UNIT_N0DK_SKULL_OF_GUL_DAN_PEDESTAL && unit.GetTypeId() != Constants.UNIT_NBSM_BOOK_OF_MEDIVH));
       Required = true;
     }
 

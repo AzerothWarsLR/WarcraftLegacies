@@ -8,7 +8,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
 {
   public static class StormwindQuestSetup
   {
-    public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
+    public static void Setup(PreplacedUnitSystem preplacedUnitSystem, ArtifactSetup artifactSetup)
     {
       var stormwind = StormwindSetup.Stormwind;
       var newQuest =
@@ -29,6 +29,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
         preplacedUnitSystem.GetUnit(Constants.UNIT_H053_CONSTRUCTION_SITE_STORMWIND_WIZARD_S_SANCTUM),
         preplacedUnitSystem.GetUnit(Constants.UNIT_H055_CONSTRUCTION_SITE_STORMWIND_CHAMPION_S_HALL)
       }));
+      stormwind.AddQuest(new QuestKingdomOfManStormwind(artifactSetup.CrownOfLordaeron, artifactSetup.CrownOfStormwind));
     }
   }
 }

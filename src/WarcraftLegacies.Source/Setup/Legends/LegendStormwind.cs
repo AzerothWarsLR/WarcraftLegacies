@@ -9,7 +9,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
 {
   public static class LegendStormwind
   {
-    public static LegendaryHero Varian { get; private set; }
+    public static LegendaryHero? Varian { get; private set; }
     public static LegendaryHero khadgar { get; private set; }
     public static LegendaryHero Galen { get; private set; }
     public static LegendaryHero Bolvar { get; private set; }
@@ -26,7 +26,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
       {
         UnitType = FourCC("H00R")
       };
-      Varian.AddUnitDependency(preplacedUnitSystem.GetUnit(FourCC("h00X")));
+      Varian.AddUnitDependency(preplacedUnitSystem.GetUnit(Constants.UNIT_H00X_STORMWIND_KEEP_DARK_GREEN));
       Varian.DeathMessage =
         "The King of Stormwind dies a warrior’s death, defending hearth and family. The Wrynn Dynasty crumbles with his passing.";
       Varian.StartingXp = 1800;

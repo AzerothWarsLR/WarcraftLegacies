@@ -1,8 +1,8 @@
 ﻿using MacroTools.ArtifactSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
+using MacroTools.ObjectiveSystem.Objectives;
 using MacroTools.QuestSystem;
-using MacroTools.QuestSystem.UtilityStructs;
 using WarcraftLegacies.Source.Setup.Legends;
 
 namespace WarcraftLegacies.Source.Quests.Naga
@@ -34,7 +34,7 @@ namespace WarcraftLegacies.Source.Quests.Naga
     /// <inheritdoc />
     protected override void OnComplete(Faction whichFaction)
     {
-      LegendNaga.LegendIllidan.Unit?.SetSkin(Constants.UNIT_EEVI_BETRAYER_NAGA);
+      LegendNaga.LegendIllidan.Unit?.SetSkin(Constants.UNIT_EEVI_BETRAYER_ILLIDARI);
     }
   }
 }

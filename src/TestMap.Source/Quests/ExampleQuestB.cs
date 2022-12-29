@@ -1,5 +1,5 @@
-﻿using MacroTools.QuestSystem;
-using MacroTools.QuestSystem.UtilityStructs;
+﻿using MacroTools.ObjectiveSystem.Objectives;
+using MacroTools.QuestSystem;
 using static War3Api.Common;
 
 namespace TestMap.Source.Quests

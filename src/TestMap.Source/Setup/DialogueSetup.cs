@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using MacroTools.DialogueSystem;
 using MacroTools.FactionSystem;
+using MacroTools.ObjectiveSystem;
+using MacroTools.ObjectiveSystem.Objectives;
 using MacroTools.QuestSystem;
-using MacroTools.QuestSystem.UtilityStructs;
 using TestMap.Source.Setup.FactionSetup.FactionSetup;
 using static War3Api.Common;
 

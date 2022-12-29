@@ -1,7 +1,7 @@
 using MacroTools.ControlPointSystem;
 using MacroTools.FactionSystem;
+using MacroTools.ObjectiveSystem.Objectives;
 using MacroTools.QuestSystem;
-using MacroTools.QuestSystem.UtilityStructs;
 using WarcraftLegacies.Source.Setup.Legends;
 using static War3Api.Common;
 
@@ -17,7 +17,7 @@ namespace WarcraftLegacies.Source.Quests.Druids
       "ReplaceableTextures\\CommandButtons\\BTNTreant.blp")
     {
       AddObjective(new ObjectiveCapitalDead(LegendScourge.LegendLichking));
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n03U"))));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(FourCC("n03U"))));
       AddObjective(new ObjectiveAnyUnitInRect(Regions.GrizzlyHills, "Grizzly Hills", true));
     }
 

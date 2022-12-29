@@ -1,0 +1,36 @@
+﻿using System;
+using MacroTools.Extensions;
+using MacroTools.FactionSystem;
+using static War3Api.Common;
+
+namespace MacroTools.Powers
+{
+  /// <summary>
+  /// The holder gains extra Control Levels for their Control Points each turn.
+  /// </summary>
+  public sealed class ControlLevelPerTurnBonus : Power
+  {
+    private readonly int _bonus;
+
+    /// <summary>
+    /// Initializes a new instance of the <see cref="ControlLevelPerTurnBonus"/> class.
+    /// </summary>
+    public ControlLevelPerTurnBonus(int bonus)
+    {
+      if (bonus < 1)
+        throw new ArgumentOutOfRangeException(nameof(bonus), $"{nameof(bonus)} must be at least 1.");
+      _bonus = bonus;
+      Description = bonus > 1
+        ? $"Your Control Points gain {bonus} additional Control Levels each turn."
+        : "Your Control Points gain an additional Control Level each turn.";
+    }
+    
+    /// <inheritdoc />
+    public override void OnAdd(player whichPlayer) =>
+      whichPlayer.SetControlLevelPerTurnBonus(whichPlayer.GetControlLevelPerTurnBonus() + _bonus);
+
+    /// <inheritdoc />
+    public override void OnRemove(player whichPlayer) =>
+      whichPlayer.SetControlLevelPerTurnBonus(whichPlayer.GetControlLevelPerTurnBonus() - _bonus);
+  }
+}

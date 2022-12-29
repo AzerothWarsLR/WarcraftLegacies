@@ -2,7 +2,8 @@ using System;
 using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
-using MacroTools.QuestSystem.UtilityStructs;
+using MacroTools.ObjectiveSystem;
+using MacroTools.ObjectiveSystem.Objectives;
 using static War3Api.Common;
 
 namespace MacroTools.QuestSystem

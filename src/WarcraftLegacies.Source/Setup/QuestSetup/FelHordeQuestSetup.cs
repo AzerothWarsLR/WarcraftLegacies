@@ -18,14 +18,14 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
         preplacedUnitSystem.GetUnit(Constants.UNIT_N081_UNFOCUSED_DEMON_GATE_T0, Regions.Demongate_1.Center)
       } ));
      
-      FelHorde.AddQuest(new QuestDarkPortalOpen(
-        preplacedUnitSystem.GetUnit(Constants.UNIT_N05J_DARK_PORTAL_AURA_CONTROL_NEXUS, new Point(3703, -26045)),
-        preplacedUnitSystem.GetUnit(Constants.UNIT_N036_DARK_PORTAL, Regions.Dark_Portal_Entrance_1.Center),
-        preplacedUnitSystem.GetUnit(Constants.UNIT_N036_DARK_PORTAL, Regions.Dark_Portal_Entrance_2.Center),
-        preplacedUnitSystem.GetUnit(Constants.UNIT_N036_DARK_PORTAL, Regions.Dark_Portal_Entrance_3.Center),
-        preplacedUnitSystem.GetUnit(Constants.UNIT_N036_DARK_PORTAL, Regions.Dark_Portal_Exit_1.Center),
-        preplacedUnitSystem.GetUnit(Constants.UNIT_N036_DARK_PORTAL, Regions.Dark_Portal_Exit_2.Center),
-        preplacedUnitSystem.GetUnit(Constants.UNIT_N036_DARK_PORTAL, Regions.Dark_Portal_Exit_3.Center)));
+      //FelHorde.AddQuest(new QuestDarkPortalOpen(
+      //  preplacedUnitSystem.GetUnit(Constants.UNIT_N05J_DARK_PORTAL_AURA_CONTROL_NEXUS, new Point(3703, -26045)),
+      //  preplacedUnitSystem.GetUnit(Constants.UNIT_N036_DARK_PORTAL, Regions.Dark_Portal_Entrance_1.Center),
+      //  preplacedUnitSystem.GetUnit(Constants.UNIT_N036_DARK_PORTAL, Regions.Dark_Portal_Entrance_2.Center),
+      //  preplacedUnitSystem.GetUnit(Constants.UNIT_N036_DARK_PORTAL, Regions.Dark_Portal_Entrance_3.Center),
+      //  preplacedUnitSystem.GetUnit(Constants.UNIT_N036_DARK_PORTAL, Regions.Dark_Portal_Exit_1.Center),
+      //  preplacedUnitSystem.GetUnit(Constants.UNIT_N036_DARK_PORTAL, Regions.Dark_Portal_Exit_2.Center),
+      //  preplacedUnitSystem.GetUnit(Constants.UNIT_N036_DARK_PORTAL, Regions.Dark_Portal_Exit_3.Center)));
       
     
       FelHorde.AddQuest(new QuestBlackrock(Regions.BlackrockUnlock, new[] { questHellfireCitadel }));

@@ -1,6 +1,6 @@
 ﻿using MacroTools.ControlPointSystem;
+using MacroTools.ObjectiveSystem.Objectives;
 using MacroTools.QuestSystem;
-using MacroTools.QuestSystem.UtilityStructs;
 
 namespace WarcraftLegacies.Source.Quests.KulTiras
 {
@@ -17,10 +17,10 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
     {
       AddObjective(new ObjectiveTrain(Constants.UNIT_HDES_DESTROYER_ALLIANCE, Constants.UNIT_HSHY_ALLIANCE_SHIPYARD_LORDAERON, 2));
       AddObjective(new ObjectiveTrain(Constants.UNIT_H04J_WARSHIP_KUL_TIRAS, Constants.UNIT_HSHY_ALLIANCE_SHIPYARD_LORDAERON, 1));
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(Constants.UNIT_N01W_BORALUS_25GOLD_MIN)));
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(Constants.UNIT_N07L_BALOR_15GOLD_MIN)));
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(Constants.UNIT_N08Q_TOL_BARAD_20GOLD_MIN)));
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(Constants.UNIT_N09K_CRESTFALL_10GOLD_MIN)));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N01W_BORALUS_25GOLD_MIN)));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N07L_BALOR_15GOLD_MIN)));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N08Q_TOL_BARAD_20GOLD_MIN)));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N09K_CRESTFALL_10GOLD_MIN)));
       ResearchId = Constants.UPGRADE_R06T_QUEST_COMPLETED_SAFE_SEA_DECREE;
     }
 

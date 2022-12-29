@@ -16,9 +16,10 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
         "ReplaceableTextures\\CommandButtons\\BTNPitLord.blp")
       {
         UndefeatedResearch = FourCC("R05L"),
-        StartingGold = 300,
-        StartingLumber = 600,
+        StartingGold = 150,
+        StartingLumber = 500,
         CinematicMusic = "Doom",
+        ControlPointDefenderUnitTypeId = Constants.UNIT_N0AA_CONTROL_POINT_DEFENDER_FEL_HORDE,
         IntroText = @"You are playing as the bloodthirsty Fel Horde.
 
 The Draenei survivors are fleeing Shattrath for Tempest Keep. At the bidding of your demon-masters, you must slay them all before they can escape Outland.
@@ -67,10 +68,10 @@ Your allies cannot reach you on Outland, you are alone.",
       FelHorde.ModObjectLimit(FourCC("n05T"), 1); //Kazzak
       FelHorde.ModObjectLimit(FourCC("n064"), 1); //Voone
       FelHorde.ModObjectLimit(FourCC("n08A"), 1); //neltharaktu
-      FelHorde.ModObjectLimit(FourCC("Nmag"), 1); //Magtheridon
       FelHorde.ModObjectLimit(FourCC("N03D"), 1); //Kargath
       FelHorde.ModObjectLimit(FourCC("Nbbc"), 1); //Rend
       FelHorde.ModObjectLimit(FourCC("U02D"), 1); //Teron
+      FelHorde.ModObjectLimit(FourCC("E01G"), 1); //Gruul
 
       FelHorde.ModObjectLimit(FourCC("Robf"), Faction.UNLIMITED); //Demonic Flux
       FelHorde.ModObjectLimit(FourCC("R066"), Faction.UNLIMITED); //Burning Oil

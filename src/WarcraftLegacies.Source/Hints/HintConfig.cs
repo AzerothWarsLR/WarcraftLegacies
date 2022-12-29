@@ -26,6 +26,7 @@ namespace WarcraftLegacies.Source.Hints
       Hint.Register(new Hint("The best way to travel between continent is to use Town portal scrolls!"));
       Hint.Register(
         new Hint("If you want to support the team, support our Patreon at: https:;//www.patreon.com/lordsebas"));
+      Hint.Register(new Hint("Control Points have towers which get stronger every turn, or when you research Fortify."));
     }
   }
 }

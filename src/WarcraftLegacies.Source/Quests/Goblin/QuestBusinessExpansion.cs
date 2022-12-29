@@ -1,7 +1,8 @@
-﻿using MacroTools.Extensions;
+﻿using MacroTools.ControlPointSystem;
+using MacroTools.Extensions;
 using MacroTools.FactionSystem;
+using MacroTools.ObjectiveSystem.Objectives;
 using MacroTools.QuestSystem;
-using MacroTools.QuestSystem.UtilityStructs;
 using static War3Api.Common;
 
 
@@ -12,25 +13,32 @@ namespace WarcraftLegacies.Source.Quests.Goblin
     private static readonly int QuestResearchId = FourCC("R07G");
 
     public QuestBusinessExpansion() : base("Business Expansion",
-      "Trade Prince Gallywix will need a great amount of wealth to rule the future Goblin Empire; he needs to expand his business all over the world quickly.",
+      "Trade Prince Gallywix will need a great amount of wealth to join the Goblin Empire; he needs to expand his business all over the world quickly.",
       "ReplaceableTextures\\CommandButtons\\BTNGoblinPrince.blp")
     {
-      AddObjective(new ObjectiveTrain(FourCC("nzep"), FourCC("o04M"), 16));
-      AddObjective(new ObjectiveTrain(FourCC("o04S"), FourCC("o04M"), 10));
+      AddObjective(new ObjectiveControlLevel(
+        ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N05C_GADGETZAN_10GOLD_MIN), 10));
+      AddObjective(new ObjectiveControlLevel(
+        ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N0A6_RATCHET_10GOLD_MIN), 10));
+      AddObjective(new ObjectiveControlLevel(
+        ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N09D_AUBERDINE_25GOLD_MIN), 10));
+      AddObjective(new ObjectiveControlLevel(
+        ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N05U_FEATHERMOON_STRONGHOLD_20GOLD_MIN), 10));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N05U_FEATHERMOON_STRONGHOLD_20GOLD_MIN)));
       ResearchId = QuestResearchId;
       Required = true;
     }
 
-    protected override string RewardDescription => "The shipyard will be buildable";
+    protected override string RewardDescription => "You unlock Kezan and can now train Gallywix";
 
-    protected override string CompletionPopup => "You can now build shipyards and ships";
+    protected override string CompletionPopup => "You unlock Kezan and can now train Gallywix";
 
-    private static void GrantGadetzan(player whichPlayer)
+    private static void GrantKezan(player whichPlayer)
     {
       var tempGroup = CreateGroup();
 
       //Transfer all Neutral Passive units in Gadetzan
-      GroupEnumUnitsInRect(tempGroup, Regions.GadgetUnlock.Rect, null);
+      GroupEnumUnitsInRect(tempGroup, Regions.KezanUnlock.Rect, null);
       var u = FirstOfGroup(tempGroup);
       while (true)
       {
@@ -47,12 +55,12 @@ namespace WarcraftLegacies.Source.Quests.Goblin
 
     protected override void OnFail(Faction completingFaction)
     {
-      GrantGadetzan(Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      GrantKezan(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
     protected override void OnComplete(Faction completingFaction)
     {
-      GrantGadetzan(completingFaction.Player);
+      GrantKezan(completingFaction.Player);
       if (GetLocalPlayer() == completingFaction.Player) PlayThematicMusic("war3mapImported\\GoblinTheme.mp3");
     }
   }

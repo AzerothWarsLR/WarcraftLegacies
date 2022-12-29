@@ -71,8 +71,6 @@ namespace WarcraftLegacies.Source.GameLogic
       
       FogEnable(false);
       FogMaskEnable(false);
-      
-      ForsakenSetup.Forsaken?.Player?.SetupCamera(Cameras.Forsaken1, true, 0);
 
       Player(21).ApplyCameraField(CAMERA_FIELD_TARGET_DISTANCE, 2400, 1.00f);
       Player(19).ApplyCameraField(CAMERA_FIELD_TARGET_DISTANCE, 2400, 1.00f);

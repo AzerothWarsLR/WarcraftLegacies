@@ -2,8 +2,8 @@ using System.Collections.Generic;
 using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
+using MacroTools.ObjectiveSystem.Objectives;
 using MacroTools.QuestSystem;
-using MacroTools.QuestSystem.UtilityStructs;
 using WarcraftLegacies.Source.Setup.Legends;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -20,7 +20,7 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
     {
       AddObjective(new ObjectiveLegendReachRect(LegendSentinels.Tyrande, Regions.AstranaarUnlock,
         "Astranaar Outpost"));
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(Constants.UNIT_N02U_DARKSHORE_10GOLD_MIN)));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N02U_DARKSHORE_10GOLD_MIN)));
       AddObjective(new ObjectiveExpire(1430));
       AddObjective(new ObjectiveSelfExists());
 

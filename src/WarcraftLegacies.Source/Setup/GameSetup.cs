@@ -1,4 +1,5 @@
-using MacroTools;
+﻿using MacroTools;
+using MacroTools.ControlPointSystem;
 using MacroTools.Mechanics;
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.UserInterface;
@@ -26,6 +27,21 @@ namespace WarcraftLegacies.Source.Setup
     /// </summary>
     public static void Setup()
     {
+      ControlPointManager.Instance = new ControlPointManager
+      {
+        MaxHitpoints = 1600,
+        RegenerationAbility = Constants.ABILITY_A0UT_CP_LIFE_REGEN,
+        IncreaseControlLevelAbilityTypeId = Constants.ABILITY_A0A8_FORTIFY_CONTROL_POINTS_SHARED,
+        ControlLevelSettings = new ControlLevelSettings
+        {
+          DefaultDefenderUnitTypeId = Constants.UNIT_H03W_CONTROL_POINT_DEFENDER_LORDAERON,
+          DamageBase = 8,
+          DamagePerControlLevel = 2,
+          ArmorPerControlLevel = 1,
+          HitPointsPerControlLevel = 100,
+          ControlLevelMaximum = 20
+        }
+      };
       var preplacedUnitSystem = new PreplacedUnitSystem();
       SoundLibrary.Setup();
       var artifactSetup = new ArtifactSetup(preplacedUnitSystem);
@@ -112,6 +128,7 @@ namespace WarcraftLegacies.Source.Setup
       CapturableUnitSetup.Setup(preplacedUnitSystem);
       GilneasGateTowers.Setup(preplacedUnitSystem);
       EyeOfSargerasPickup.Setup();
+      SacrificeAcolyte.Setup();
     }
   }
 }

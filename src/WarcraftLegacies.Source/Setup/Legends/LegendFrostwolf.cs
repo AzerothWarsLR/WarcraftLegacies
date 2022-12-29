@@ -1,6 +1,7 @@
-using MacroTools;
+﻿using MacroTools;
 using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
+using System;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup.Legends
@@ -10,7 +11,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
     public static LegendaryHero? LegendCairne { get; private set; }
     public static LegendaryHero? LegendThrall { get; private set; }
     public static LegendaryHero? LegendRexxar { get; private set; }
-
+    public static LegendaryHero? LegendVolJin { get; private set; }
     public static Capital? LegendThunderbluff { get; private set; }
     public static Capital? LegendDarkspearhold { get; private set; }
     public static Capital? LegendOrgrimmar { get; private set; }
@@ -52,6 +53,12 @@ namespace WarcraftLegacies.Source.Setup.Legends
         StartingXp = 1800
       };
       LegendaryHeroManager.Register(LegendRexxar);
+
+      LegendVolJin = new LegendaryHero("Vol'jin")
+      {
+        UnitType = Constants.UNIT_ORKN_CHIEFTAIN_OF_THE_DARKSPEAR_TRIBE_FROSTWOLF,
+      };
+      LegendaryHeroManager.Register(LegendVolJin);
 
       LegendOrgrimmar = new Capital
       {

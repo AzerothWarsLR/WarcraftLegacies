@@ -12,11 +12,11 @@ namespace MacroTools.ControlPointSystem
     /// </summary>
     /// <returns></returns>
     public static ControlPoint AsControlPoint(this unit whichUnit) =>
-      ControlPointManager.GetFromUnitType(GetUnitTypeId(whichUnit));
+      ControlPointManager.Instance.GetFromUnitType(GetUnitTypeId(whichUnit));
 
     /// <summary>
     /// Returns true if the unit is a <see cref="ControlPoint"/>.
     /// </summary>
-    public static bool IsControlPoint(this unit whichUnit) => ControlPointManager.UnitIsControlPoint(whichUnit);
+    public static bool IsControlPoint(this unit whichUnit) => ControlPointManager.Instance.UnitIsControlPoint(whichUnit);
   }
 }

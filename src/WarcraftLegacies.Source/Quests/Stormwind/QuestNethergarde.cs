@@ -1,8 +1,8 @@
+﻿using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
+using MacroTools.ObjectiveSystem.Objectives;
 using MacroTools.QuestSystem;
-using MacroTools.QuestSystem.UtilityStructs;
-using WarcraftLegacies.Source.Setup.FactionSetup;
 using WarcraftLegacies.Source.Setup.Legends;
 using static War3Api.Common;
 
@@ -10,46 +10,34 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
 {
   public sealed class QuestNethergarde : QuestData
   {
-    public QuestNethergarde() : base("Nethergarde relief",
-      "The nethergarde fort is holding down the Dark Portal, they will need to be reinforced soon!",
-      "ReplaceableTextures\\CommandButtons\\BTNNobbyMansionBarracks.blp")
+    private readonly List<unit> _rescueUnits;
+
+    public QuestNethergarde() : base("Nethergarde Relief",
+      "Nethergarde Keep fort is holding down the Dark Portal, they will need to be reinforced soon!",
+      "ReplaceableTextures\\CommandButtons\\BTNStormwindGuardTower.blp")
     {
       AddObjective(new ObjectiveLegendInRect(LegendStormwind.Varian, Regions.NethergardeUnlock, "Nethergarde"));
       AddObjective(new ObjectiveExpire(1440));
       AddObjective(new ObjectiveSelfExists());
+      _rescueUnits = Regions.NethergardeUnlock.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
     }
 
+    /// <inheritdoc />
     protected override string CompletionPopup => "Varian has come to relieve the Nethergarde garrison.";
 
-    protected override string RewardDescription => "You gain control of the Nethergarde base";
+    /// <inheritdoc />
+    protected override string RewardDescription => "You gain control of Nethergarde";
 
-    private static void GrantNethergarde(player whichPlayer)
-    {
-      var tempGroup = CreateGroup();
-
-      //Transfer all Neutral Passive units in Nethergarde
-      GroupEnumUnitsInRect(tempGroup, Regions.NethergardeUnlock.Rect, null);
-      var u = FirstOfGroup(tempGroup);
-      while (true)
-      {
-        if (u == null) break;
-        if (GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_PASSIVE)) u.Rescue(whichPlayer);
-        GroupRemoveUnit(tempGroup, u);
-        u = FirstOfGroup(tempGroup);
-      }
-
-      DestroyGroup(tempGroup);
-    }
-
+    /// <inheritdoc />
     protected override void OnFail(Faction completingFaction)
     {
-      GrantNethergarde(Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      Player(PLAYER_NEUTRAL_AGGRESSIVE).RescueGroup(_rescueUnits);
     }
 
+    /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)
     {
-      GrantNethergarde(completingFaction.Player);
-      StormwindSetup.Stormwind.ModObjectLimit(FourCC("h03F"), 1); //Reginald windsor
+      completingFaction.Player.RescueGroup(_rescueUnits);
     }
   }
 }

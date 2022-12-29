@@ -3,8 +3,8 @@ using MacroTools.ArtifactSystem;
 using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
+using MacroTools.ObjectiveSystem.Objectives;
 using MacroTools.QuestSystem;
-using MacroTools.QuestSystem.UtilityStructs;
 using WarcraftLegacies.Source.Setup.Legends;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -25,7 +25,7 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
       AddObjective(new ObjectiveCapitalDead(LegendSentinels.Feathermoon));
       AddObjective(new ObjectiveAnyUnitInRect(rescueRect, "Dire Maul", true));
       foreach (var unit in CreateGroup().EnumUnitsInRect(rescueRect.Rect).EmptyToList())
-        if (!ControlPointManager.UnitIsControlPoint(unit))
+        if (!ControlPointManager.Instance.UnitIsControlPoint(unit))
         {
           SetUnitInvulnerable(unit, true);
           _unitsToRescue.Add(unit);

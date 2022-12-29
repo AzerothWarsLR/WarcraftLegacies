@@ -2,8 +2,8 @@ using MacroTools;
 using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
+using MacroTools.ObjectiveSystem.Objectives;
 using MacroTools.QuestSystem;
-using MacroTools.QuestSystem.UtilityStructs;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Ironforge
@@ -15,7 +15,7 @@ namespace WarcraftLegacies.Source.Quests.Ironforge
       "ReplaceableTextures\\CommandButtons\\BTNIceTrollShadowPriest.blp")
     {
       AddObjective(new ObjectiveKillUnit(preplacedUnitSystem.GetUnit(FourCC("nith"), Regions.DunmoroghAmbient2.Center))); //Troll
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n014"))));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(FourCC("n014"))));
       AddObjective(new ObjectiveExpire(1435));
       AddObjective(new ObjectiveSelfExists());
       Required = true;

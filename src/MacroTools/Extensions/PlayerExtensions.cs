@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using MacroTools.ControlPointSystem;
 using MacroTools.FactionSystem;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -11,6 +12,25 @@ namespace MacroTools.Extensions
   /// </summary>
   public static class PlayerExtensions
   {
+    /// <summary>
+    /// Set the number of extra <see cref="ControlPoint.ControlLevel"/>s the player gets each turn.
+    /// </summary>
+    /// <returns></returns>
+    public static player SetControlLevelPerTurnBonus(this player whichPlayer, int value)
+    {
+      PlayerData.ByHandle(whichPlayer).ControlLevelPerTurnBonus = value;
+      return whichPlayer;
+    }
+    
+    /// <summary>
+    /// Returns the number of extra <see cref="ControlPoint.ControlLevel"/>s the player gets each turn.
+    /// </summary>
+    /// <returns></returns>
+    public static int GetControlLevelPerTurnBonus(this player whichPlayer)
+    {
+      return PlayerData.ByHandle(whichPlayer).ControlLevelPerTurnBonus;
+    }
+    
     /// <summary>
     /// Pings the minimap for the player.
     /// </summary>

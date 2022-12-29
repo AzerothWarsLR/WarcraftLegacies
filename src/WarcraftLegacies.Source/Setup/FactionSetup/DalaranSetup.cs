@@ -18,6 +18,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
         StartingGold = 150,
         StartingLumber = 500,
         CinematicMusic = "SadMystery",
+        ControlPointDefenderUnitTypeId = Constants.UNIT_N00N_CONTROL_POINT_DEFENDER_DALARAN,
         IntroText = @"You are playing as the wise |cffff8080Mages of Dalaran|r.
 
 Your first order of business is to reclaim Dalaran and Shadowfang Keep, which have been encircled by monsters.

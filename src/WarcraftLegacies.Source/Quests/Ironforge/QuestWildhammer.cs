@@ -1,49 +1,54 @@
-﻿using MacroTools.Extensions;
+﻿using System.Collections.Generic;
+using MacroTools.Extensions;
 using MacroTools.FactionSystem;
+using MacroTools.ObjectiveSystem.Objectives;
 using MacroTools.QuestSystem;
-using MacroTools.QuestSystem.UtilityStructs;
 using WarcraftLegacies.Source.Setup.Legends;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Ironforge
 {
+  /// <summary>
+  /// A quest for Ironforge to acquire Aerie Peak.
+  /// </summary>
   public sealed class QuestWildhammer : QuestData
   {
-    private static readonly int HeroId = FourCC("H028");
+    private readonly List<unit> _rescueUnits;
+    private const int HeroId = Constants.UNIT_H028_THANE_OF_AERIE_PEAK_IRONFORGE;
 
+    /// <summary>
+    /// Initializes a new instance of the <see cref="QuestWildhammer"/> class.
+    /// </summary>
     public QuestWildhammer() : base("Wildhammer Alliance",
-      "The Wildhammer dwarves roam freely over the peaks of the Hinterlands. Defeating their mortal enemy, the Dragonmaw clan, might earn their cooperation.",
+      "The Wildhammer dwarves roam freely over the peaks of the Hinterlands. An audience with Magni himself might earn their cooperation.",
       "ReplaceableTextures\\CommandButtons\\BTNHeroGriffonWarrior.blp")
     {
-      AddObjective(new ObjectiveCapitalDead(LegendDragonmaw.DragonmawPort));
-      AddObjective(new ObjectiveControlCapital(LegendNeutral.GrimBatol, false));
-      ResearchId = FourCC("R01C");
+      AddObjective(new ObjectiveLegendInRect(LegendIronforge.LegendMagni, Regions.Aerie_Peak, "Aerie Peak"));
+      ResearchId = Constants.UPGRADE_R01C_QUEST_COMPLETED_WILDHAMMER_ALLIANCE;
+      _rescueUnits = Regions.Aerie_Peak.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
     }
-
-
+    
+    /// <inheritdoc />
     protected override string CompletionPopup =>
       "Magni has spoken with Falstad Wildhammer and secured an alliance with the Wildhammer Clan.";
 
+    /// <inheritdoc />
     protected override string RewardDescription =>
-      "You gain control of Aerie Peak and you can train the hero Falstad Wildhammer from the Altar of Fortitude. You can also now research Gryphon Superior breed at the Gryphon Aviary.";
+      $"Gain control of Aerie Peak, learn to train Falstad Wildhammer from the {GetObjectName(Constants.UNIT_H07B_ALTAR_OF_FORTITUDE_IRONFORGE)}, and gain the ability to research {GetObjectName(Constants.UPGRADE_R02K_GRYPHON_SUPERIOR_BREED_KHAZ_MODAN)} at the {Constants.UNIT_HGRA_GRYPHON_AVIARY_IRONFORGE}.";
 
+    /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)
     {
-      var tempGroup = CreateGroup();
-
-      //Transfer all Neutral Passive units in region to Ironforge
-      GroupEnumUnitsInRect(tempGroup, Regions.Aerie_Peak.Rect, null);
-      while (true)
-      {
-        var u = FirstOfGroup(tempGroup);
-        if (u == null) break;
-        if (GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_PASSIVE)) u.Rescue(completingFaction.Player);
-        GroupRemoveUnit(tempGroup, u);
-      }
-
-      DestroyGroup(tempGroup);
+      completingFaction.Player?.RescueGroup(_rescueUnits);
+    }
+    
+    /// <inheritdoc />
+    protected override void OnFail(Faction completingFaction)
+    {
+      Player(PLAYER_NEUTRAL_AGGRESSIVE).RescueGroup(_rescueUnits);
     }
 
+    /// <inheritdoc />
     protected override void OnAdd(Faction whichFaction)
     {
       whichFaction.ModObjectLimit(ResearchId, Faction.UNLIMITED);

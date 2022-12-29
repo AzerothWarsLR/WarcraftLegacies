@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using MacroTools;
 using MacroTools.QuestSystem;
 using WarcraftLegacies.Source.Mechanics.Scourge.Plague;
@@ -30,19 +30,15 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       };
       plagueParameters.PlagueCauldronSummonParameters = new List<PlagueCauldronSummonParameter>
       {
-        new(1, Constants.UNIT_U01R_APOTHECARY_FORSAKEN_CULT),
+        new(2, Constants.UNIT_UNEC_NECROMANCER_SCOURGE),
         new(2, Constants.UNIT_UACO_ACOLYTE_SCOURGE_WORKER, ScourgeSetup.Scourge),
-        new(2, Constants.UNIT_U01K_ACOLYTE_FORSAKEN_CULT_WORKER),
-        new(4, Constants.UNIT_N07S_DEADEYE_FORSAKEN_CULT),
-        new(4, Constants.UNIT_H08O_ROTGUARD_FORSAKEN),
+        new(4, Constants.UNIT_UGHO_GHOUL_SCOURGE),
+        new(4, Constants.UNIT_UCRY_CRYPT_FIEND_SCOURGE),
       };
       plagueParameters.PlagueCauldronUnitTypeId = Constants.UNIT_H02W_PLAGUE_CAULDRON;
       plagueParameters.Duration = 360;
 
-      QuestPlague questPlague = new(ForsakenSetup.Forsaken,
-        preplacedUnitSystem.GetUnit(Constants.UNIT_N0AG_LORD_BAROV),
-        plagueParameters
-      );
+      QuestPlague questPlague = new(plagueParameters);
 
       QuestSapphiron questSapphiron = new(preplacedUnitSystem.GetUnit(Constants.UNIT_UBDR_SAPPHIRON_CREEP));
       QuestCorruptArthas questCorruptArthas = new();

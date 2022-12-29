@@ -44,7 +44,8 @@ namespace MacroTools.LegendSystem
     {
       if (args.PreviousUnit != null) 
         ByUnit.Remove(args.PreviousUnit);
-      AllLegendaryHeroes.Add(args.Legend as LegendaryHero);
+      if (args.Legend is LegendaryHero hero && hero.Unit != null) 
+        ByUnit.Add(hero.Unit, hero);
     }
   }
 }

@@ -3,8 +3,8 @@ using MacroTools;
 using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
+using MacroTools.ObjectiveSystem.Objectives;
 using MacroTools.QuestSystem;
-using MacroTools.QuestSystem.UtilityStructs;
 using WarcraftLegacies.Source.Setup.Legends;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -20,7 +20,7 @@ namespace WarcraftLegacies.Source.Quests.Dragonmaw
       "ReplaceableTextures\\CommandButtons\\BTNIronHordeSummoningCircle.blp")
     {
       AddObjective(
-        new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(Constants.UNIT_N08T_DRAGONMAW_PORT_10GOLD_MIN)));
+        new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N08T_DRAGONMAW_PORT_10GOLD_MIN)));
       AddObjective(new ObjectiveUnitIsDead(preplacedUnitSystem.GetUnit(Constants.UNIT_N0DA_OVERLORD_DRAGONMAW_QUEST)));
       AddObjective(new ObjectiveControlLegend(LegendDragonmaw.Zaela, false));
       AddObjective(new ObjectiveExpire(480));

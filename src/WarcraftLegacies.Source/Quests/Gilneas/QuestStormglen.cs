@@ -3,8 +3,8 @@ using MacroTools.QuestSystem;
 using System.Collections.Generic;
 using static War3Api.Common;
 using MacroTools.Extensions;
-using MacroTools.QuestSystem.UtilityStructs;
 using MacroTools.ControlPointSystem;
+using MacroTools.ObjectiveSystem.Objectives;
 
 namespace WarcraftLegacies.Source.Quests.Gilneas
 {
@@ -20,8 +20,8 @@ namespace WarcraftLegacies.Source.Quests.Gilneas
     /// </summary>
     public QuestStormglen() : base("Stormglen", "The next village is right next to the Blackwald, south west of Tempest Reach. We will need to purify the forest too.", "ReplaceableTextures\\CommandButtons\\BTNGilneasWizardTower.blp")
     {
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(Constants.UNIT_N06V_BLACKWALD_10GOLD_MIN)));
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(Constants.UNIT_N084_TEMPEST_REACH_10GOLD_MIN)));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N06V_BLACKWALD_10GOLD_MIN)));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N084_TEMPEST_REACH_10GOLD_MIN)));
       AddObjective(new ObjectiveExpire(950));
       AddObjective(new ObjectiveSelfExists());
       _rescueUnits = Regions.GilneasUnlock2.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);

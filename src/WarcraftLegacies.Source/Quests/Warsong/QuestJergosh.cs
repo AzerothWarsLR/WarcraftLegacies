@@ -1,6 +1,6 @@
 ﻿using MacroTools.ControlPointSystem;
+using MacroTools.ObjectiveSystem.Objectives;
 using MacroTools.QuestSystem;
-using MacroTools.QuestSystem.UtilityStructs;
 using WarcraftLegacies.Source.Setup.Legends;
 using static War3Api.Common;
 
@@ -18,8 +18,8 @@ namespace WarcraftLegacies.Source.Quests.Warsong
       "The legendary warlock Gul'dan is said to have perished in his quest to find the eye of Sargeras. His body should contain secrets of unfathomable power for our Warlocks",
       "ReplaceableTextures\\CommandButtons\\BTNGuldan.blp")
     {
-      //AddObjective(new ObjectiveLegendInRect(LegendWarsong.GromHellscream, Regions.InstanceSargerasTomb, "Gul'dan's remains"));
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(Constants.UNIT_N00J_TOMB_OF_SARGERAS_20GOLD_MIN)));
+      AddObjective(new ObjectiveLegendInRect(LegendWarsong.GromHellscream, Regions.GuldansCorpse, "Gul'dan's remains"));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N00J_TOMB_OF_SARGERAS_20GOLD_MIN)));
       ResearchId = Constants.UPGRADE_R08N_QUEST_COMPLETED_GUL_DAN_S_REMAINS;
     }
 

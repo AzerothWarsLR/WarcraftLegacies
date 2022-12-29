@@ -15,6 +15,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
       {
         StartingGold = 150,
         StartingLumber = 500,
+        ControlPointDefenderUnitTypeId = Constants.UNIT_O01C_CONTROL_POINT_DEFENDER_GOBLIN,
         IntroText = @"You are playing as the industrious |cff808080Bilgewater Cartel|r.
 
 Early on you must rely on Traders for resources. 

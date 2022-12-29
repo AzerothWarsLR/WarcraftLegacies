@@ -1,27 +1,30 @@
-using MacroTools.ControlPointSystem;
+﻿using MacroTools.ObjectiveSystem.Objectives;
 using MacroTools.QuestSystem;
-using MacroTools.QuestSystem.UtilityStructs;
-using static War3Api.Common;
+using WarcraftLegacies.Source.Setup.Legends;
 
 namespace WarcraftLegacies.Source.Quests.Draenei
 {
+  /// <summary>
+  /// Bring Velen to the Maelstrom to unlock Nobundo as a hero
+  /// </summary>
   public sealed class QuestBrokenOne : QuestData
   {
-    private static readonly int QuestResearchId = FourCC("R083"); //This research is given when the quest is completed
 
+    /// <summary>
+    /// 
+    /// </summary>
     public QuestBrokenOne() : base("The Broken One",
-      "The great shaman Nobundo is fighting to enable Velen and most of the Draenei to escape. If the Draenei hold out long enough, he might have time to join the survivors aboard the Exodar",
+      "The great shaman Nobundo lent his services to the Earthen Ring to help calm the raging elements of Azeroth. But now the Draenai require his aid once again. Velen must travel to the Maelstrom to reunite with his old friend.",
       "ReplaceableTextures\\CommandButtons\\BTNAkamanew.blp")
     {
-      AddObjective(new ObjectiveTime(660));
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(Constants.UNIT_N02O_NETHERSTORM_10GOLD_MIN)));
-      ResearchId = QuestResearchId;
+      AddObjective(new ObjectiveLegendInRect(LegendDraenei.LegendVelen, Regions.MaelstromAmbient, "Maelstrom"));
+      ResearchId = Constants.UPGRADE_R083_QUEST_COMPLETED_THE_BROKEN_ONE;
     }
 
     /// <inheritdoc />
-    protected override string CompletionPopup => "The hero Nobundo is now trainable at the Altar";
+    protected override string CompletionPopup => "Nobundo acts in service of the Draenai once again.";
 
     /// <inheritdoc />
-    protected override string RewardDescription => "Nobundo will join the survivors on the Exodar";
+    protected override string RewardDescription => "The hero Nobundo is now trainable at the altar.";
   }
 }

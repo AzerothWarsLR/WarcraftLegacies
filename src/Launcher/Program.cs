@@ -8,6 +8,7 @@ using System.Text.Json.Serialization;
 using CSharpLua;
 using Microsoft.CodeAnalysis;
 using Microsoft.Extensions.Configuration;
+using War3Api.Object.Enums;
 using War3Net.Build;
 using War3Net.Build.Extensions;
 using War3Net.Build.Info;
@@ -104,13 +105,12 @@ namespace Launcher
       var map = Map.Open(baseMapPath);
 
       FixDoodadData(map);
+      ConfigureControlPointData(map);
       if (launch)
         SetTestPlayerSlot(map, launchSettings.TestingPlayerSlot);
       var builder = new MapBuilder(map);
       builder.AddFiles(baseMapPath, "*", SearchOption.AllDirectories);
       builder.AddFiles(launchSettings.AssetsFolderPath, "*", SearchOption.AllDirectories);
-
-      //ObjectEditor.SupplmentMapWithObjectData(map);
 
       // Set debug options if necessary, configure compiler
       const string csc = Debug ? "-debug -define:DEBUG" : null;
@@ -168,15 +168,43 @@ namespace Launcher
 
     private static void FixDoodadData(Map map)
     {
-      if (map.Doodads != null)
+      if (map.Doodads == null) 
+        return;
+      var i = 0;
+      foreach (var doodad in map.Doodads.Doodads)
       {
-        var i = 0;
-        foreach (var doodad in map.Doodads.Doodads)
-        {
-          doodad.CreationNumber = i;
-          i++;
-        }
+        doodad.CreationNumber = i;
+        i++;
       }
+    }
+
+    private static bool IsControlPoint(War3Api.Object.Unit unit)
+    {
+      return unit.IsStatsUnitClassificationModified &&
+             unit.StatsUnitClassification.Contains(UnitClassification.Sapper) &&
+             unit.StatsUnitClassification.Contains(UnitClassification.Ancient) && 
+             !unit.StatsUnitClassification.Contains(UnitClassification.Mechanical);
+    }
+    
+    private static void ConfigureControlPointData(Map map)
+    {
+      var objectDatabase = map.GetObjectDatabaseFromMap();
+      foreach (var unit in objectDatabase.GetUnits().Where(IsControlPoint))
+      {
+        unit.CombatAttack1DamageBase = -1;
+        unit.CombatAttack1DamageNumberOfDice = 1;
+        unit.CombatAttack1DamageSidesPerDie = 1;
+        unit.CombatAttacksEnabled = AttackBits.Attack1Only;
+        unit.CombatAttack1Range = 600;
+        unit.CombatAcquisitionRange = 600;
+        unit.CombatAttack1TargetsAllowed = new[] { Target.Bridge };
+        unit.EditorDisplayAsNeutralHostile = true;
+        unit.StatsLevel = 0;
+        unit.StatsRace = UnitRace.Creeps;
+        unit.StatsCanBeBuiltOn = false;
+        unit.PathingPathingMap = @"PathTextures\4x4SimpleSolid.tga";
+      }
+      map.UnitObjectData = objectDatabase.GetAllData().UnitData;
     }
 
     private static void LaunchGame(LaunchSettings launchSettings)

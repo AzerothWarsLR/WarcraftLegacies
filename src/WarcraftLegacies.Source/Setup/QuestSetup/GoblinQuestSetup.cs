@@ -1,4 +1,4 @@
-using WarcraftLegacies.Source.Quests.Goblin;
+﻿using WarcraftLegacies.Source.Quests.Goblin;
 using WarcraftLegacies.Source.Setup.FactionSetup;
 
 namespace WarcraftLegacies.Source.Setup.QuestSetup
@@ -9,7 +9,6 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
     {
       var goblin = GoblinSetup.Goblin;
       goblin.StartingQuest = goblin.AddQuest(new QuestBusinessExpansion());
-      goblin.AddQuest(new QuestGadgetzan(Regions.GadgetUnlock));
       goblin.AddQuest(new QuestExplosiveEngineering());
       goblin.AddQuest(new QuestWesternExpansion());
       goblin.AddQuest(new QuestLumberMarket());

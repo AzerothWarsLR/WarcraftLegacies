@@ -1,7 +1,6 @@
 ﻿using System;
 using MacroTools.Buffs;
 using MacroTools.Extensions;
-using MacroTools.FactionSystem;
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.Powers;
 using WCSharp.Buffs;
@@ -25,7 +24,7 @@ namespace WarcraftLegacies.Source.Mechanics.Goblins
       if (oilPower == null)
       {
         throw new Exception(
-          $"Oil user {GetUnitName(GetTriggerUnit())} was created but owning faction {owningFaction?.Name} doesn't have a power that stores oil.");
+          $"Oil user {GetUnitName(createdUnit)} was created but owning faction {owningFaction?.Name} doesn't have a power that stores oil.");
       }
 
       var oilBuff = new OilUserBuff(createdUnit, oilPower);

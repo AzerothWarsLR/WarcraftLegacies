@@ -2,7 +2,6 @@
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
-using MacroTools.QuestSystem.UtilityStructs;
 using WarcraftLegacies.Source.Setup.Legends;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -10,6 +9,7 @@ using static War3Api.Blizzard;
 using WarcraftLegacies.Source.Setup.FactionSetup;
 using WarcraftLegacies.Source.Setup;
 using MacroTools.ControlPointSystem;
+using MacroTools.ObjectiveSystem.Objectives;
 
 namespace WarcraftLegacies.Source.Quests.KulTiras
 {
@@ -31,9 +31,9 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
     {
       AddObjective(new ObjectiveControlCapital(LegendKultiras.LegendBoralus, false));
       AddObjective(new ObjectiveControlLegend(LegendKultiras.LegendAdmiral, false));
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(Constants.UNIT_N0BX_TIRAGARDE_SOUND_10GOLD_MIN)));
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(Constants.UNIT_N0BW_STORMSONG_VALLEY_10GOLD_MIN)));
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(Constants.UNIT_N0BV_DRUSTVAR_10GOLD_MIN)));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N0BX_TIRAGARDE_SOUND_10GOLD_MIN)));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N0BW_STORMSONG_VALLEY_10GOLD_MIN)));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N0BV_DRUSTVAR_10GOLD_MIN)));
       AddObjective(new ObjectiveExpire(900));
       AddObjective(new ObjectiveSelfExists());
       _proudmooreCapitalShip = proudmooreCapitalShip;

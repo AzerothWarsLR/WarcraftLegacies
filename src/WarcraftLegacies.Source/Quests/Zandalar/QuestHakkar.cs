@@ -1,8 +1,8 @@
 using MacroTools.ArtifactSystem;
 using MacroTools.ControlPointSystem;
 using MacroTools.FactionSystem;
+using MacroTools.ObjectiveSystem.Objectives;
 using MacroTools.QuestSystem;
-using MacroTools.QuestSystem.UtilityStructs;
 using WarcraftLegacies.Source.Setup.Legends;
 using static War3Api.Common;
 
@@ -23,7 +23,7 @@ namespace WarcraftLegacies.Source.Quests.Zandalar
       AddObjective(new ObjectiveAcquireArtifact(zinrokh));
       AddObjective(new ObjectiveArtifactInRect(zinrokh, Regions.DrownedTemple,
         "The Drowned Temple"));
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(Constants.UNIT_N00U_SWAMP_OF_SORROWS_10GOLD_MIN)));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N00U_SWAMP_OF_SORROWS_10GOLD_MIN)));
       Global = true;
     }
 

@@ -3,8 +3,8 @@ using MacroTools;
 using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
+using MacroTools.ObjectiveSystem.Objectives;
 using MacroTools.QuestSystem;
-using MacroTools.QuestSystem.UtilityStructs;
 using WarcraftLegacies.Source.Setup.Legends;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -28,7 +28,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
       "ReplaceableTextures\\CommandButtons\\BTNChaosBlademaster.blp")
     {
       AddObjective(new ObjectiveKillUnit(preplacedUnitSystem.GetUnit(Constants.UNIT_O00B_JUBEI_THOS_LEGION_DEMI)));
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(Constants.UNIT_N019_ALTERAC_MOUNTAINS_20GOLD_MIN)));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N019_ALTERAC_MOUNTAINS_20GOLD_MIN)));
       AddObjective(new ObjectiveUpgrade(Constants.UNIT_HCAS_CASTLE, Constants.UNIT_HTOW_TOWN_HALL));
       AddObjective(new ObjectiveExpire(1470));
       AddObjective(new ObjectiveSelfExists());

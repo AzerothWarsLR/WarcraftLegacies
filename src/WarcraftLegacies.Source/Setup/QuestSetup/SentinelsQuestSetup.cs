@@ -1,4 +1,6 @@
 ﻿using System.Collections.Generic;
+using WarcraftLegacies.Source.Quests;
+using WarcraftLegacies.Source.Quests.Fel_Horde;
 using WarcraftLegacies.Source.Quests.Sentinels;
 using WarcraftLegacies.Source.Setup.FactionSetup;
 using WCSharp.Shared.Data;
@@ -19,9 +21,9 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       sentinels.AddQuest(new QuestFeathermoon(Regions.FeathermoonUnlock));
       sentinels.AddQuest(new QuestSentinelsKillWarsong());
       sentinels.AddQuest(new QuestSentinelsKillFrostwolf());
-      //sentinels.AddQuest(new QuestMaievOutland(Regions.MaievStartUnlock));
-      //sentinels.AddQuest(new QuestScepterOfTheQueenSentinels(Regions.HighBourne, artifactSetup.ScepterOfTheQueen));
+      sentinels.AddQuest(new QuestScepterOfTheQueenSentinels(Regions.TheAthenaeum, artifactSetup.ScepterOfTheQueen));
       sentinels.AddQuest(new QuestVaultoftheWardens());
+      sentinels.AddQuest(new QuestBlackrookHold());
     }
   }
 }

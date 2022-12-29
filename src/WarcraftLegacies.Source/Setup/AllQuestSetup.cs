@@ -15,11 +15,11 @@ namespace WarcraftLegacies.Source.Setup
       IronforgeQuestSetup.Setup(preplacedUnitSystem);
       LegionQuestSetup.Setup(preplacedUnitSystem);
       LordaeronQuestSetup.Setup(preplacedUnitSystem, artifactSetup);
-      var questPlague = ScourgeQuestSetup.Setup(preplacedUnitSystem, artifactSetup);
+      ScourgeQuestSetup.Setup(preplacedUnitSystem, artifactSetup);
       SentinelsQuestSetup.Setup(artifactSetup);
-      StormwindQuestSetup.Setup(preplacedUnitSystem);
+      StormwindQuestSetup.Setup(preplacedUnitSystem, artifactSetup);
       WarsongQuestSetup.Setup(preplacedUnitSystem, artifactSetup);
-      NagaQuestSetup.Setup(artifactSetup);
+      NagaQuestSetup.Setup(preplacedUnitSystem, artifactSetup);
       GilneasQuestSetup.Setup(artifactSetup);
       KultirasQuestSetup.Setup(preplacedUnitSystem);
       ScarletQuestSetup.Setup(preplacedUnitSystem);

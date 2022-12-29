@@ -117,7 +117,8 @@ namespace WarcraftLegacies.Source.Setup
       Regions.UngoroAmbient.AddSound(WetlandsNight);
       Regions.ZulfarrakAmbient.AddSound(Wetlandsday);
       Regions.KezanAmbient.AddSound(Wetlandsday);
-      Regions.Broken_Isles.AddSound(Wetlandsday);
+      Regions.BrokenIslesA.AddSound(Wetlandsday);
+      Regions.BrokenIslesB.AddSound(Wetlandsday);
       Regions.WinterspringAmbient1.AddSound(IceCrownDay);
       Regions.WinterspringAmbient2.AddSound(IceCrownDay);
     }

@@ -15,6 +15,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
         UndefeatedResearch = FourCC("R02L"),
         StartingGold = 150,
         StartingLumber = 500,
+        ControlPointDefenderUnitTypeId = Constants.UNIT_N0BB_CONTROL_POINT_DEFENDER_ILLIDARI,
         IntroText = @"You are playing as the banished Empire of Nazjatar|r|r.
 
 You start weak in the middle of the map.
@@ -48,6 +49,9 @@ Once you have collected enough, you can rebuild the great Nazjatar empire and st
       Illidari.ModObjectLimit(FourCC("nhyc"), 8); //Dragon Turtle
       Illidari.ModObjectLimit(FourCC("nwgs"), 8); //Couatl
       Illidari.ModObjectLimit(FourCC("e00Y"), 4); //Scylla
+      Illidari.ModObjectLimit(FourCC("h0AC"), 6); //Sea Witch
+      Illidari.ModObjectLimit(FourCC("ndrn"), Faction.UNLIMITED); //AshtongueMelee
+      Illidari.ModObjectLimit(FourCC("ndrs"), 6); //Ashtonguecaster
 
       Illidari.ModObjectLimit(FourCC("Hvsh"), 1); //Vashj
       Illidari.ModObjectLimit(FourCC("U00S"), 1); //Najentus

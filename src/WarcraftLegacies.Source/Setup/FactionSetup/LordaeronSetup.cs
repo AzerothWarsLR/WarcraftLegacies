@@ -1,5 +1,6 @@
 ﻿using MacroTools;
 using MacroTools.FactionSystem;
+using MacroTools.Powers;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
@@ -18,6 +19,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
         StartingLumber = 500,
         UndefeatedResearch = FourCC("R05M"),
         CinematicMusic = "Comradeship",
+        ControlPointDefenderUnitTypeId = Constants.UNIT_H03W_CONTROL_POINT_DEFENDER_LORDAERON,
         IntroText = @"You are playing as the royal |cff4242ebKingdom of Lordaeron|r.
 
 You start the game with the largest territory, but the Plague of Undeath is coming.
@@ -102,6 +104,12 @@ Burn these infected buildings to weaken the Cult's power."
       Lordaeron.ModAbilityAvailability(Constants.ABILITY_A0K5_DWARVEN_MASONRY_CASTLES_YELLOW, -1);
       
       Lordaeron.AddGoldMine(preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(13617, 8741)));
+
+      Lordaeron.AddPower(new ControlLevelPerTurnBonus(1)
+      {
+        IconName = @"ShieldOfUnification",
+        Name = "Dominion"
+      });
       
       FactionManager.Register(Lordaeron);
     }

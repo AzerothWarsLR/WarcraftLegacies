@@ -1,8 +1,8 @@
 ﻿using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
+using MacroTools.ObjectiveSystem.Objectives;
 using MacroTools.QuestSystem;
-using MacroTools.QuestSystem.UtilityStructs;
 using WarcraftLegacies.Source.Setup.Legends;
 using static War3Api.Common;
 
@@ -24,7 +24,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
       "ReplaceableTextures\\CommandButtons\\BTNWarEagle.blp")
     {
       AddObjective(new ObjectiveControlCapital(LegendNeutral.DraktharonKeep, false));
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(Constants.UNIT_N02S_STORM_PEAKS_15GOLD_MIN)));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N02S_STORM_PEAKS_15GOLD_MIN)));
     }
 
     //Todo: bad flavour

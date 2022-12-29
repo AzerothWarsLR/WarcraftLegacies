@@ -33,7 +33,7 @@ namespace MacroTools.SpellSystem
     {
       PlayerUnitEvents.Register(SpellEvent.Cast, OnStartCast, spell.Id);
       PlayerUnitEvents.Register(SpellEvent.Effect, OnCast, spell.Id);
-      PlayerUnitEvents.Register(UnitTypeEvent.SpellEndCast, OnStop, spell.Id);
+      PlayerUnitEvents.Register(SpellEvent.EndCast, OnStop, spell.Id);
       PlayerUnitEvents.Register(SpellEvent.Learned, OnLearn, spell.Id);
       SpellsByAbilityId.Add(spell.Id, spell);
     }

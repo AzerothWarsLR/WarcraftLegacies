@@ -1,7 +1,7 @@
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
+using MacroTools.ObjectiveSystem.Objectives;
 using MacroTools.QuestSystem;
-using MacroTools.QuestSystem.UtilityStructs;
 using WarcraftLegacies.Source.Setup.Legends;
 using static MacroTools.Libraries.GeneralHelpers;
 
@@ -19,8 +19,9 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
       "In millenia past, the most vile entities of Azeroth were imprisoned in a facility near Zin-Ashari, but it was abandoned when the Broken Isles were shattered. In troubling times such as these, the Wardens could make great use of such a facility.",
       "ReplaceableTextures\\CommandButtons\\BTNReincarnationWarden.blp")
     {
-      AddObjective(new ObjectiveControlLegend(LegendSentinels.Maiev, false));
-      AddObjective(new ObjectiveControlCapital(LegendSentinels.VaultOfTheWardens, false));
+      AddObjective(new ObjectiveChannelRect(Regions.VaultoftheWardens, "Vault of the Wardens", LegendSentinels.Maiev,
+        120, 90));
+      AddObjective(new ObjectiveSelfExists());
       ResearchId = Constants.UPGRADE_R06H_QUEST_COMPLETED_VAULT_OF_THE_WARDENS_SENTINELS_JAROD;
     }
 
@@ -39,12 +40,20 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
         Regions.VaultoftheWardens.Center.Y, 270, 4);
       completingFaction.Player.DisplayUnitTypeAcquired(WardenId,
         "You can now train Wardens from the Vault of the Wardens, Sentinel Enclaves, and your capitals.");
+      LegendSentinels.VaultOfTheWardens?.Unit?.Rescue(completingFaction.Player);
+    }
+
+    /// <inheritdoc />
+    protected override void OnFail(Faction completingFaction)
+    {
+      LegendSentinels.VaultOfTheWardens?.Unit?.Kill();
     }
 
     /// <inheritdoc />
     protected override void OnAdd(Faction whichFaction)
     {
       whichFaction.ModObjectLimit(WardenId, 8);
+      LegendSentinels.VaultOfTheWardens?.Unit?.SetInvulnerable(true);
     }
   }
 }

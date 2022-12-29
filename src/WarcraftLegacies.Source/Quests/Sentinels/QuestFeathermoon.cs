@@ -2,8 +2,8 @@ using System.Collections.Generic;
 using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
+using MacroTools.ObjectiveSystem.Objectives;
 using MacroTools.QuestSystem;
-using MacroTools.QuestSystem.UtilityStructs;
 using WarcraftLegacies.Source.Setup.Legends;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -20,7 +20,7 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
     {
       AddObjective(new ObjectiveLegendReachRect(LegendSentinels.Tyrande, Regions.FeathermoonUnlock,
         "Feathermoon Stronghold"));
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(Constants.UNIT_N01R_ASTRANAAR_15GOLD_MIN)));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N01R_ASTRANAAR_15GOLD_MIN)));
       AddObjective(new ObjectiveUpgrade(Constants.UNIT_N06P_SENTINEL_ENCLAVE_SENTINELS, Constants.UNIT_N06J_SENTINEL_OUTPOST_SENTINELS));
       AddObjective(new ObjectiveExpire(1485));
       AddObjective(new ObjectiveSelfExists());

@@ -2,8 +2,8 @@ using System.Collections.Generic;
 using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
+using MacroTools.ObjectiveSystem.Objectives;
 using MacroTools.QuestSystem;
-using MacroTools.QuestSystem.UtilityStructs;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
@@ -18,7 +18,7 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
       "ReplaceableTextures\\CommandButtons\\BTNGnoll.blp")
     {
       AddObjective(new ObjectiveKillUnit(hogger)); //Hogger
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(FourCC("n00Z"))));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(FourCC("n00Z"))));
       AddObjective(new ObjectiveExpire(1335));
       AddObjective(new ObjectiveSelfExists());
       foreach (var unit in CreateGroup().EnumUnitsInRect(rescueRect).EmptyToList())

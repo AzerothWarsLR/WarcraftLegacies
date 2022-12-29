@@ -1,7 +1,7 @@
 ﻿using MacroTools.Extensions;
 using MacroTools.FactionSystem;
+using MacroTools.ObjectiveSystem.Objectives;
 using MacroTools.QuestSystem;
-using MacroTools.QuestSystem.UtilityStructs;
 using static MacroTools.Libraries.GeneralHelpers;
 using WarcraftLegacies.Source.Setup;
 using WarcraftLegacies.Source.Setup.Legends;

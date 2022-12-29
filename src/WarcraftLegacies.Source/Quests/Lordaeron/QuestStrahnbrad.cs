@@ -2,8 +2,8 @@
 using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
+using MacroTools.ObjectiveSystem.Objectives;
 using MacroTools.QuestSystem;
-using MacroTools.QuestSystem.UtilityStructs;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
@@ -23,7 +23,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
       "The Strahnbrad is under attack by some brigands, clear them out",
       "ReplaceableTextures\\CommandButtons\\BTNFarm.blp")
     {
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.GetFromUnitType(Constants.UNIT_N01C_STRAHNBRAD_10GOLD_MIN)));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N01C_STRAHNBRAD_10GOLD_MIN)));
       AddObjective(new ObjectiveExpire(1170));
       AddObjective(new ObjectiveSelfExists());
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
