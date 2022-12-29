@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives;
@@ -25,6 +25,7 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
           _rescueUnits.Add(unit);
         }
       AddObjective(new ObjectiveCapitalDead(LegendFelHorde.LegendHellfirecitadel));
+      ResearchId = FourCC("R039");
     }
 
     protected override string CompletionPopup =>

@@ -1,4 +1,4 @@
-using MacroTools;
+﻿using MacroTools;
 using MacroTools.QuestSystem;
 using WarcraftLegacies.Source.Quests.Legion;
 using WarcraftLegacies.Source.Setup.FactionSetup;
@@ -12,7 +12,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       //Early duel
       var newQuest = LegionSetup.Legion.AddQuest(new QuestArgusControl(preplacedUnitSystem));
       LegionSetup.Legion.StartingQuest = newQuest;
-      LegionSetup.Legion.AddQuest(new QuestEmbassy());
+      LegionSetup.Legion.AddQuest(new QuestEmbassy(Regions.Northrend_Ambiance, Regions.AlteracAmbient));
       LegionSetup.Legion.AddQuest(new QuestLegionCaptureSunwell());
       LegionSetup.Legion.AddQuest(new QuestLegionKillLordaeron());
       //Misc

@@ -29,9 +29,9 @@ namespace WarcraftLegacies.Source.Quests.Goblin
       Required = true;
     }
 
-    protected override string RewardDescription => "You unlock Kezan and can now train Gallywix";
+    protected override string RewardDescription => "You unlock Kezan and can now train Traders";
 
-    protected override string CompletionPopup => "You unlock Kezan and can now train Gallywix";
+    protected override string CompletionPopup => "You unlock Kezan and can now train Traders";
 
     private static void GrantKezan(player whichPlayer)
     {

@@ -10573,6 +10573,12 @@ STRING 1762
 Black Temple
 }
 
+STRING 1763
+// Abilities: A0ZY (Multi Shot), EditorSuffix (Editor Suffix)
+{
+(Black Rook)
+}
+
 STRING 1764
 // Units: o02Y (Great Hall), Hotkey (Hotkey)
 {
@@ -10619,6 +10625,12 @@ STRING 1771
 // Units: o00D (Pyramid), Ubertip (Tooltip - Extended)
 {
 Spellcaster production building. |rTrains Silithid Tunneler, Faceless Shadow Weaver and Tol'vir Statue. Contains caster health upgrade.
+}
+
+STRING 1772
+// Abilities: A0ZY (Multi Shot), Name (Name)
+{
+Multi Shot
 }
 
 STRING 1773
@@ -10691,6 +10703,12 @@ STRING 1784
 // Units: o00A (Far Seer), Ubertip (Tooltip - Extended)
 {
 Old and wise shaman.|n|cfff5962dAbilities:|R Healing Wave, Chain Lightning, Hex, Far Sight, Resistant Skin, Spell Resistance|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land and air units.|r
+}
+
+STRING 1785
+// Abilities: A0ZY (Multi Shot), Researchtip (Tooltip - Learn)
+{
+Learn Multi Shot - [|cffffcc00Level %d|r]
 }
 
 STRING 1786
@@ -10793,6 +10811,18 @@ STRING 1802
 // Units: o004 (Stonemaul Keep), Tip (Tooltip - Basic)
 {
 Stonemaul Keep
+}
+
+STRING 1803
+// Abilities: A0ZY (Multi Shot), Researchubertip (Tooltip - Learn - Extended)
+{
+The hero's bow expertise allows them to shoot multiple arrows at once. |n|n|cffffcc00Level 1|r - Enables the release of 2 arrows at once.|n|cffffcc00Level 2|r - Enables the release of 3 arrows at once.|n|cffffcc00Level 3|r - Enables the release of 4 arrows at once.
+}
+
+STRING 1804
+// Abilities: A0ZY (Multi Shot), Tip (Tooltip - Normal)
+{
+Multi Shot
 }
 
 STRING 1805
@@ -10974,6 +11004,12 @@ STRING 1834
 Launch even larger boulders.|n|n|cffffcc00Attacks land units.|r
 }
 
+STRING 1835
+// Abilities: A0ZY (Multi Shot), Tip (Tooltip - Normal)
+{
+Multi Shot - [|cffffcc00Level 2|r]
+}
+
 STRING 1836
 // Units: h06T (Altar of Kings), Hotkey (Hotkey)
 {
@@ -11056,6 +11092,12 @@ STRING 1849
 // Units: h07H (Scout Tower), Hotkey (Hotkey)
 {
 Z
+}
+
+STRING 1850
+// Abilities: A0ZY (Multi Shot), Tip (Tooltip - Normal)
+{
+Multi Shot - [|cffffcc00Level 3|r]
 }
 
 STRING 1851
@@ -11291,6 +11333,12 @@ STRING 1889
 F
 }
 
+STRING 1890
+// Abilities: A0ZY (Multi Shot), Ubertip (Tooltip - Normal - Extended)
+{
+The building fires multiple arrows at targets. A total of <A047,DataC1> arrows are shot.
+}
+
 STRING 1891
 // Units: n0A2 (Arcanist's Consortium), Tip (Tooltip - Basic)
 {
@@ -11445,6 +11493,12 @@ STRING 1916
 // Abilities: A0JT (Drop the Anchor), Tip (Tooltip - Normal)
 {
 Drop the Anchor
+}
+
+STRING 1917
+// Abilities: A0ZY (Multi Shot), Ubertip (Tooltip - Normal - Extended)
+{
+The hero fires multiple arrows at targets. A total of <A047,DataC2> arrows are shot.
 }
 
 STRING 1918
@@ -11607,6 +11661,12 @@ STRING 1944
 // Units: n093 (Chaplain), Casterupgradetip (Caster Upgrade Tips)
 {
 -Smite,- Smite |n- Renewal,- Smite|n- Renewal|n- Light Burst
+}
+
+STRING 1945
+// Abilities: A0ZY (Multi Shot), Ubertip (Tooltip - Normal - Extended)
+{
+The hero fires multiple arrows at targets. A total of <A047,DataC3> arrows are shot.
 }
 
 STRING 1946
@@ -11944,6 +12004,12 @@ STRING 2001
 // Units: n08A (Neltharaku), Ubertip (Tooltip - Extended)
 {
 Patriarch of the Netherwing Flight, Naltharaku struggles to survive in a harsh world that is not of his origin. Enslaved by the remnants of the Dragonmaw Clan, he fights those that his masters deem a threat.
+}
+
+STRING 2002
+// Upgrades: R00N (Storm Hammers), Hotkey (Hotkey)
+{
+R
 }
 
 STRING 2003
@@ -113636,7 +113702,7 @@ R
 }
 
 STRING 19428
-// Upgrades: Rosp (Spiked Barricades,Improved Spiked Barricades,Advanced Spiked Barricades), Hotkey (Hotkey)
+// Abilities: A0ZY (Multi Shot), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -113864,13 +113930,13 @@ R
 }
 
 STRING 19467
-// Upgrades: Ropg (Pillage), Hotkey (Hotkey)
+// Upgrades: Rosp (Spiked Barricades,Improved Spiked Barricades,Advanced Spiked Barricades), Hotkey (Hotkey)
 {
 R
 }
 
 STRING 19468
-// Upgrades: Rews (Well Spring), Hotkey (Hotkey)
+// Upgrades: Ropg (Pillage), Hotkey (Hotkey)
 {
 R
 }
@@ -113966,7 +114032,7 @@ Build Incubation Pool
 }
 
 STRING 19485
-// Upgrades: R00N (Storm Hammers), Hotkey (Hotkey)
+// Upgrades: Rews (Well Spring), Hotkey (Hotkey)
 {
 R
 }

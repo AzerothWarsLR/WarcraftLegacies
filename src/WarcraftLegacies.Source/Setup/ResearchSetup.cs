@@ -1,4 +1,4 @@
-using MacroTools;
+﻿using MacroTools;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.Powers;
@@ -40,7 +40,7 @@ namespace WarcraftLegacies.Source.Setup
       {
         GetTriggerPlayer()
           .GetFaction()?
-          .AddPower(new Rematerialization(0.15f, new Point(-25562.9f, 8536.6f), "Argus", Regions.MonolithNoBuild)
+          .AddPower(new Rematerialization(0.15f, new Point(20454.9f, -28873.6f), "Argus", Regions.MonolithNoBuild)
           {
             IconName = "achievement_raid_argusraid",
             Name = "Rematerialization",

@@ -1,4 +1,4 @@
-using MacroTools.ObjectiveSystem.Objectives;
+﻿using MacroTools.ObjectiveSystem.Objectives;
 using MacroTools.QuestSystem;
 
 namespace WarcraftLegacies.Source.Quests.Goblin
@@ -13,7 +13,7 @@ namespace WarcraftLegacies.Source.Quests.Goblin
       "The Goblin chief engineer, Gazlowee, is overseeing the construction of the overseas oil platforms.",
       "ReplaceableTextures\\CommandButtons\\BTNHeroTinker.blp")
     {
-      AddObjective(new ObjectiveBuild(Constants.UNIT_O04R_OIL_RIG_GOBLIN, 4));
+      AddObjective(new ObjectiveBuild(Constants.UNIT_O04R_OIL_RIG_GOBLIN, 2));
       ResearchId = Constants.UPGRADE_R01F_QUEST_COMPLETED_EXPLOSIVE_ENGINEERING_FROSTWOLF;
       Required = true;
     }

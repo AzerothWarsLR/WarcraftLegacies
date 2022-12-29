@@ -19,7 +19,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
       {
         InteriorWaygateUnitTypeId = Constants.UNIT_H03V_ENTRANCE_PORTAL,
         ExteriorWaygateUnitTypeId = Constants.UNIT_H05T_INSTANCE_ENTRANCE_PORTAL,
-        GetExteriorWaygatePosition = () => new Point(GetUnitX(GetTriggerUnit()) - 10, GetUnitY(GetTriggerUnit()) - 10),
+        GetExteriorWaygatePosition = () => new Point(GetUnitX(GetTriggerUnit()) - 200, GetUnitY(GetTriggerUnit()) - 200),
         GetInteriorWaygatePosition = () => Regions.Exodar_South_Interior.Center
       });
   //    SpellSystem.Register(new WaygateOpen(Constants.ABILITY_A0N8_OPEN_EXODAR)

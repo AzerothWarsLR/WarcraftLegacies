@@ -18,7 +18,7 @@ namespace WarcraftLegacies.Source.Quests.Fel_Horde
     {
       foreach (var prequisite in prequisites) 
         AddObjective(new ObjectiveCompleteQuest(prequisite));
-      AddObjective(new ObjectiveResearch(FourCC("R090"), FourCC("o00F")));
+      AddObjective(new ObjectiveResearch(FourCC("R090"), FourCC("o008")));
       AddObjective(new ObjectiveExpire(1451));
       AddObjective(new ObjectiveSelfExists());
       ResearchId = Constants.UPGRADE_R03C_QUEST_COMPLETED_BLACKROCK_UNIFICATION;
