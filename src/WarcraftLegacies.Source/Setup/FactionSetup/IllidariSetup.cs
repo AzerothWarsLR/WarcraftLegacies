@@ -15,7 +15,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
         UndefeatedResearch = FourCC("R02L"),
         StartingGold = 150,
         StartingLumber = 500,
-        ControlPointDefenderUnitTypeId = Constants.UNIT_N0BB_CONTROL_POINT_DEFENDER_ILLIDARI,
+        ControlPointDefenderUnitTypeId = Constants.UNIT_N0BB_CONTROL_POINT_DEFENDER_ILLIDARI_TOWER,
         IntroText = @"You are playing as the banished Empire of Nazjatar|r|r.
 
 You start weak in the middle of the map.

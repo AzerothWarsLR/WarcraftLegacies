@@ -21,7 +21,7 @@ namespace WarcraftLegacies.Source.Quests.Gilneas
     {
       AddObjective(new ObjectiveKillXUnit(Constants.UNIT_O02J_WORGEN_GILNEAS, 11));
       AddObjective(new ObjectiveKillXUnit(Constants.UNIT_O038_WORGEN_BLOOD_SHAMAN_WORGEN_HERO, 4));
-      AddObjective(new ObjectiveUpgrade(Constants.UNIT_H02C_CASTLE_GILNEAS, Constants.UNIT_H01R_TOWN_HALL_GILNEAS));
+      AddObjective(new ObjectiveUpgrade(Constants.UNIT_H02C_CASTLE_GILNEAS_T3, Constants.UNIT_H01R_TOWN_HALL_GILNEAS_T1));
       AddObjective(new ObjectiveExpire(1300));
       AddObjective(new ObjectiveSelfExists());
       _rescueUnits = Regions.GilneasUnlock5.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);

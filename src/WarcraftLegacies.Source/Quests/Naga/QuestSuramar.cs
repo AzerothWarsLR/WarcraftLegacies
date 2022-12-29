@@ -16,11 +16,10 @@ namespace WarcraftLegacies.Source.Quests.Naga
   {
     private readonly List<unit> _rescueUnits;
 
-    public QuestSuramar(Rectangle rescueRect, unit murlocToKill) : base("The Ruins of Suramar",
+    public QuestSuramar(Rectangle rescueRect) : base("The Ruins of Suramar",
       "A small remnant of Illidan's Naga have held on in the Broken Isles, we need to make contact with them",
       "ReplaceableTextures\\CommandButtons\\BTNMurloc.blp")
     {
-      AddObjective(new ObjectiveKillUnit(murlocToKill));
       AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N08M_SOUTHSHORE_15GOLD_MIN)));
       AddObjective(new ObjectiveExpire(1135));
       AddObjective(new ObjectiveSelfExists());

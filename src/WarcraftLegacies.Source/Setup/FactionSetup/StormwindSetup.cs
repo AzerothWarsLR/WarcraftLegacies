@@ -50,8 +50,8 @@ Make sure to communicate with your Dwarven and Kul'tiran allies, as they will be
       Stormwind.ModObjectLimit(FourCC("h06Y"), Faction.UNLIMITED); //Arcane Tower
       Stormwind.ModObjectLimit(FourCC("h06Z"), Faction.UNLIMITED); //Arcane Tower (Improved)
       Stormwind.ModObjectLimit(FourCC("h024"), Faction.UNLIMITED); //Light House
-      Stormwind.ModObjectLimit(Constants.UNIT_H05J_CHAMPION_S_HALL_STORMWIND, 1);
-      Stormwind.ModObjectLimit(Constants.UNIT_H05A_WIZARD_S_SANCTUM_DARK_GREEN, 1);
+      Stormwind.ModObjectLimit(Constants.UNIT_H05J_CHAMPION_S_HALL_STORMWIND_SPECIALIST, 1);
+      Stormwind.ModObjectLimit(Constants.UNIT_H05A_WIZARD_S_SANCTUM_STORMWIND_OTHER, 1);
 
       //Units
       Stormwind.ModObjectLimit(FourCC("hpea"), Faction.UNLIMITED); //Peasant
