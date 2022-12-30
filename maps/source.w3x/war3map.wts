@@ -2244,12 +2244,6 @@ STRING 375
 Q
 }
 
-STRING 376
-// Units: o031 (Blood Furnace), Ubertip (Tooltip - Extended)
-{
-Resource harvesting center and producer of Horde enhancements. |n|cfff5962dResearches:|R Weapon Upgdrades, Armor Upgrades, Reinforced Defenses, Spiked Barricades, Spiritual Infusion
-}
-
 STRING 377
 // Units: otto (Tauren Totem), EditorSuffix (Name - Editor Suffix)
 {
@@ -3752,7 +3746,7 @@ Tidal Watcher
 }
 
 STRING 627
-// Units: nnsa (Bloodscale Clutchery), Hotkey (Hotkey)
+// Units: nnsa (Clutchery), Hotkey (Hotkey)
 {
 D
 }
@@ -4101,7 +4095,7 @@ STRING 684
 }
 
 STRING 685
-// Units: nnsg (Wrathfin Spawnery), Hotkey (Hotkey)
+// Units: nnsg (Spawnery), Hotkey (Hotkey)
 {
 A
 }
@@ -4252,7 +4246,7 @@ A powerful Turtle. Good at destroying enemy buildings. Has Hardened Skin, which 
 }
 
 STRING 710
-// Units: nheb (Cantonment), EditorSuffix (Name - Editor Suffix)
+// Units: nggr (Granite Golem), EditorSuffix (Name - Editor Suffix)
 {
 (Quel'thalas)
 }
@@ -4408,7 +4402,7 @@ Hire Goblin Shredder
 }
 
 STRING 736
-// Units: nggr (Granite Golem), EditorSuffix (Name - Editor Suffix)
+// Units: Hkal (Prince of Quel'thalas), EditorSuffix (Name - Editor Suffix)
 {
 (Quel'thalas)
 }
@@ -4684,7 +4678,7 @@ STRING 781
 }
 
 STRING 782
-// Units: u009 (Accursed Harbor), Hotkey (Hotkey)
+// Units: u009 (Shipyard), Hotkey (Hotkey)
 {
 R
 }
@@ -4762,7 +4756,7 @@ Mass Polymorph - [|cffffcc00Level 2|r]
 }
 
 STRING 795
-// Units: nefm (Residence), Description (Description)
+// Units: nnfm (Incubation Pool), Ubertip (Tooltip - Extended)
 {
 Provides 8 food, which increases the maximum number of units that can be trained.
 }
@@ -4882,7 +4876,7 @@ STRING 814
 }
 
 STRING 815
-// Units: o032 (Fel-iron Harbor), Hotkey (Hotkey)
+// Units: o032 (Shipyard), Hotkey (Hotkey)
 {
 R
 }
@@ -5044,7 +5038,7 @@ STRING 841
 }
 
 STRING 842
-// Units: o02T (War Port), Hotkey (Hotkey)
+// Units: o02T (Shipyard), Hotkey (Hotkey)
 {
 R
 }
@@ -5446,7 +5440,7 @@ Q
 }
 
 STRING 909
-// Units: o06D (Dragonmaw Port), Name (Name)
+// Units: o06E (Dragonmaw Port), Name (Name)
 {
 Dragonmaw Port
 }
@@ -5766,7 +5760,7 @@ Build Alliance Shipyard
 }
 
 STRING 962
-// Units: h077 (Greenwood Shipyard), Ubertip (Tooltip - Extended)
+// Units: h077 (Shipyard), Ubertip (Tooltip - Extended)
 {
 Boat construction facility for the Alliance.|n|cfff5962dTrains:|R Alliance Transport Ships, Destroyers, Battleships, |cff556b2fArathor|r-Carrier Flagship|R|n|n|cff00c4c4Cannot be built near small inland water areas.|
 }
@@ -7250,7 +7244,7 @@ STRING 1208
 }
 
 STRING 1209
-// Units: o02W (Bonechewer Barracks), Hotkey (Hotkey)
+// Units: o02W (Barracks), Hotkey (Hotkey)
 {
 A
 }
@@ -7772,7 +7766,7 @@ Revive Prince of Quel'thalas
 }
 
 STRING 1296
-// Units: Hkal (Prince of Quel'thalas), EditorSuffix (Name - Editor Suffix)
+// Units: n048 (Blood Mage), EditorSuffix (Name - Editor Suffix)
 {
 (Quel'thalas)
 }
@@ -8425,7 +8419,7 @@ Soul of Frostmourne
 }
 
 STRING 1405
-// Units: n08V (Depth Void Portal), EditorSuffix (Name - Editor Suffix)
+// Units: n08V (Portal of the Deep), EditorSuffix (Name - Editor Suffix)
 {
  (Nzoth Specialist)
 }
@@ -8587,7 +8581,7 @@ STRING 1431
 }
 
 STRING 1432
-// Units: u00Q (Fel-iron Treasury), EditorSuffix (Name - Editor Suffix)
+// Units: u00Q (Treasury), EditorSuffix (Name - Editor Suffix)
 {
 (Fel Horde)
 }
@@ -8652,14 +8646,8 @@ STRING 1442
 A shrine to attract the nightmarish flying monsters of the Naga.|n|r|cfff5962dTrains:|R Couatl, Tidal Terror
 }
 
-STRING 1443
-// Units: u00Q (Fel-iron Treasury), Tip (Tooltip - Basic)
-{
-Summon Voodoo Lounge
-}
-
 STRING 1444
-// Units: u00Q (Fel-iron Treasury), Ubertip (Tooltip - Extended)
+// Units: u00Q (Treasury), Ubertip (Tooltip - Extended)
 {
 Creates a shop with purchasable items.
 }
@@ -8808,18 +8796,6 @@ STRING 1468
 W
 }
 
-STRING 1469
-// Units: u011 (Ossuary), Name (Name)
-{
-Ossuary
-}
-
-STRING 1470
-// Units: u011 (Ossuary), Tip (Tooltip - Basic)
-{
-Summon Ossuary
-}
-
 STRING 1471
 // Abilities: A05F (Mass Polymorph), Ubertip (Tooltip - Normal - Extended)
 {
@@ -8869,7 +8845,7 @@ STRING 1478
 }
 
 STRING 1479
-// Units: h077 (Greenwood Shipyard), Hotkey (Hotkey)
+// Units: h077 (Shipyard), Hotkey (Hotkey)
 {
 R
 }
@@ -9102,12 +9078,6 @@ STRING 1517
 (fel horde)
 }
 
-STRING 1518
-// Units: o033 (Spirit Lodge), Ubertip (Tooltip - Extended)
-{
-Spiritual Hut for the casters of the Horde.Shamans, Witch Doctors, Spirit Walkers|n|cfff5962dTrains:|R Necrolyte, Fel Warlock, Eredar Occultist|n|cfff5962dResearches:|R Adept Training, Mastery Training
-}
-
 STRING 1519
 // Upgrades: R035 (Chaos), EditorSuffix (Editor Suffix)
 {
@@ -9115,7 +9085,7 @@ STRING 1519
 }
 
 STRING 1520
-// Units: h076 (Arcane Shipyard), Hotkey (Hotkey)
+// Units: h076 (Shipyard), Hotkey (Hotkey)
 {
 R
 }
@@ -9133,7 +9103,7 @@ STRING 1522
 }
 
 STRING 1523
-// Units: o032 (Fel-iron Harbor), Ubertip (Tooltip - Extended)
+// Units: o04M (Kezan Trading Center), Ubertip (Tooltip - Extended)
 {
 Boat construction facility for the Horde.|n|cfff5962dBuilds:|R Horde Transport Ships, Frigates, Juggernauts |n|n|cff00c4c4Cannot be built near small inland water areas.|r
 }
@@ -9163,7 +9133,7 @@ STRING 1527
 }
 
 STRING 1528
-// Units: u00Q (Fel-iron Treasury), Hotkey (Hotkey)
+// Units: u00Q (Treasury), Hotkey (Hotkey)
 {
 C
 }
@@ -9340,12 +9310,6 @@ STRING 1557
 // Upgrades: R05J (Chaos), effect1 (Effect 1)
 {
 renw
-}
-
-STRING 1558
-// Units: o02T (War Port), Ubertip (Tooltip - Extended)
-{
-Boat construction facility for the Horde.|n|cfff5962dTrains:|R Horde Transport Ships, Frigates, Juggernauts |n|n|cff00c4c4Cannot be built near small inland water areas.|r
 }
 
 STRING 1559
@@ -9571,7 +9535,7 @@ Reduces the damage taken from Magic attacks and Spells by 5%.
 }
 
 STRING 1596
-// Units: h067 (Laboratory), Hotkey (Hotkey)
+// Units: h067 (Manaforge), Hotkey (Hotkey)
 {
 D
 }
@@ -9811,7 +9775,7 @@ STRING 1635
 }
 
 STRING 1636
-// Units: o01T (Pillager's Hoard), Ubertip (Tooltip - Extended)
+// Units: o01T (Treasure Hoard), Ubertip (Tooltip - Extended)
 {
 Creates a shop with purchasable items.
 }
@@ -9883,7 +9847,7 @@ STRING 1647
 }
 
 STRING 1648
-// Units: o031 (Blood Furnace), Hotkey (Hotkey)
+// Units: o031 (War Mill), Hotkey (Hotkey)
 {
 E
 }
@@ -9919,7 +9883,7 @@ STRING 1653
 }
 
 STRING 1654
-// Units: n0A2 (Arcanist's Consortium), Hotkey (Hotkey)
+// Units: n0A2 (Consortium), Hotkey (Hotkey)
 {
 F
 }
@@ -11029,7 +10993,7 @@ Upgrade to Flame Pillar
 }
 
 STRING 1839
-// Units: n0AM (Flame Pillar), Ubertip (Tooltip - Extended)
+// Units: n0AA (Control Point Defender), Ubertip (Tooltip - Extended)
 {
 Fires massive boulders upon its foes.|n|cfff5962dUpgrades Into:|R Improved Flame Pillar|n|n|cffffcc00Attacks land units.|r
 }
@@ -11322,7 +11286,7 @@ Quest Completed: Safe Sea Decree
 }
 
 STRING 1888
-// Units: n048 (Blood Mage), EditorSuffix (Name - Editor Suffix)
+// Units: n02F (Felblood Warlock), EditorSuffix (Name - Editor Suffix)
 {
 (Quel'thalas)
 }
@@ -11340,13 +11304,13 @@ The building fires multiple arrows at targets. A total of <A047,DataC1> arrows a
 }
 
 STRING 1891
-// Units: n0A2 (Arcanist's Consortium), Tip (Tooltip - Basic)
+// Units: n0A2 (Consortium), Tip (Tooltip - Basic)
 {
 Build Consortium
 }
 
 STRING 1892
-// Units: n0A2 (Arcanist's Consortium), Ubertip (Tooltip - Extended)
+// Units: n0A2 (Consortium), Ubertip (Tooltip - Extended)
 {
 Gathering place for Quel'thalas' most prestigious spellcasters.|n|cfff5962dTrains:|R Magus, Blood Mage|n|cfff5962dResearches:|R Magus Training
 }
@@ -12157,7 +12121,7 @@ STRING 2026
 }
 
 STRING 2027
-// Units: h03E (Military Academy), Hotkey (Hotkey)
+// Units: h03E (Academy), Hotkey (Hotkey)
 {
 D
 }
@@ -12301,15 +12265,21 @@ STRING 2050
 }
 
 STRING 2051
-// Units: o01T (Pillager's Hoard), Hotkey (Hotkey)
+// Units: o01T (Treasure Hoard), Hotkey (Hotkey)
 {
 C
 }
 
 STRING 2052
-// Upgrades: R007 (Chaos), EditorSuffix (Editor Suffix)
+// Units: e006 (Priestess), EditorSuffix (Name - Editor Suffix)
 {
 (Sentinels)
+}
+
+STRING 2053
+// Units: n0A2 (Consortium), Name (Name)
+{
+Consortium
 }
 
 STRING 2054
@@ -12328,6 +12298,18 @@ STRING 2056
 // Units: n07U (Explorer's Vault), Hotkey (Hotkey)
 {
 C
+}
+
+STRING 2057
+// Units: h06S (Steamworks), Name (Name)
+{
+Steamworks
+}
+
+STRING 2058
+// Units: h06S (Steamworks), Tip (Tooltip - Basic)
+{
+Build Steamworks
 }
 
 STRING 2059
@@ -12492,6 +12474,12 @@ STRING 2085
 (Draenei)
 }
 
+STRING 2086
+// Units: h048 (Forgeworks), EditorSuffix (Name - Editor Suffix)
+{
+(Ironforge Research)
+}
+
 STRING 2087
 // Units: n03K (Pastor), Hotkey (Hotkey)
 {
@@ -12511,7 +12499,7 @@ Build Residence
 }
 
 STRING 2090
-// Units: n07I (Residence), Ubertip (Tooltip - Extended)
+// Units: nefm (Residence), Description (Description)
 {
 Provides 8 food, which increases the maximum number of units that can be trained.
 }
@@ -12541,7 +12529,7 @@ STRING 2094
 }
 
 STRING 2095
-// Units: n04N (Infernal Machine Factory), Hotkey (Hotkey)
+// Units: n04N (Infernal Siegeworks), Hotkey (Hotkey)
 {
 D
 }
@@ -12604,12 +12592,6 @@ STRING 2105
 // Units: n07D (Maiden of Dominance Demon Gate), Tip (Tooltip - Basic)
 {
 Upgrade to Maiden of Dominance Demon Gate
-}
-
-STRING 2106
-// Units: n04N (Infernal Machine Factory), Tip (Tooltip - Basic)
-{
-Summon Infernal Machine Factory
 }
 
 STRING 2107
@@ -12820,12 +12802,6 @@ STRING 2141
 Captured drake of from Outland.|n|cfff5962dAbilities:|R Soul Burn, Spell Resistance.|n|n|cff99b4d1Can only summon 6. |r|n|cffffcc00Attacks land and air units.|r
 }
 
-STRING 2142
-// Units: n04N (Infernal Machine Factory), Name (Name)
-{
-Infernal Machine Factory
-}
-
 STRING 2143
 // Units: n07S (Deadeye), Ubertip (Tooltip - Extended)
 {
@@ -12995,7 +12971,7 @@ Z
 }
 
 STRING 2171
-// Units: e006 (Priestess), EditorSuffix (Name - Editor Suffix)
+// Units: E002 (General of the Sentinel Army), EditorSuffix (Name - Editor Suffix)
 {
 (Sentinels)
 }
@@ -13025,7 +13001,7 @@ Primary structure, used to train workers and gather resources.|n|cfff5962dTrains
 }
 
 STRING 2176
-// Units: E002 (General of the Sentinel Army), EditorSuffix (Name - Editor Suffix)
+// Units: h03F (Control Point Defender), EditorSuffix (Name - Editor Suffix)
 {
 (Sentinels)
 }
@@ -13054,6 +13030,12 @@ STRING 2180
 Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Wisp|n|cfff5962dAbilities:|R Ancestral Spirits |n|cfff5962dUpgrades to:|R Sentinel Enclave
 }
 
+STRING 2181
+// Units: h03T (Palace), Name (Name)
+{
+Palace
+}
+
 STRING 2182
 // Units: n06I (Silithid Warrior), Hotkey (Hotkey)
 {
@@ -13078,6 +13060,12 @@ STRING 2185
 Dwarven engineering in the hands of ingenuic humans.|n|cfff5962dAbilities:|r Cloud, Rocket Barrage, Repair Crew, Spyglass|n|n|cff99b4d1Can only build 6.|n|r|cffffd700Attacks land units.|r
 }
 
+STRING 2186
+// Units: h03T (Palace), Tip (Tooltip - Basic)
+{
+Upgrade to Palace
+}
+
 STRING 2187
 // Units: n00C (Rune Priest), Hotkey (Hotkey)
 {
@@ -13097,13 +13085,13 @@ Build Residence
 }
 
 STRING 2190
-// Units: n06M (Residence), Ubertip (Tooltip - Extended)
+// Units: n07I (Residence), Ubertip (Tooltip - Extended)
 {
 Provides 8 food, which increases the maximum number of units that can be trained.
 }
 
 STRING 2191
-// Units: h03F (Control Point Defender), EditorSuffix (Name - Editor Suffix)
+// Abilities: ANwk (Wind Walk), EditorSuffix (Editor Suffix)
 {
 (Sentinels)
 }
@@ -13301,7 +13289,7 @@ Small fort for the Alliance Nations.|n|cfff5962dAbilities:|R Summon Garrison |n|
 }
 
 STRING 2224
-// Abilities: ANwk (Wind Walk), EditorSuffix (Editor Suffix)
+// Abilities: A0VX (Elune's Gaze), EditorSuffix (Editor Suffix)
 {
 (Sentinels)
 }
@@ -13636,6 +13624,12 @@ STRING 2280
 Shadow Infusion - [|cffffcc00Level 1|r]
 }
 
+STRING 2281
+// Units: h03S (Mansion), Tip (Tooltip - Basic)
+{
+Upgrade to Sanctuary
+}
+
 STRING 2282
 // Units: n04P (Eredar Summoner), Casterupgradename (Caster Upgrade Names)
 {
@@ -13804,10 +13798,22 @@ STRING 2309
 Windshear Crossing (10gold/min)
 }
 
+STRING 2310
+// Units: h033 (Steading), Name (Name)
+{
+Steading
+}
+
 STRING 2311
 // Units: n05M (Scorpion), Name (Name)
 {
 Scorpion
+}
+
+STRING 2312
+// Units: h033 (Steading), Tip (Tooltip - Basic)
+{
+Build Steading
 }
 
 STRING 2313
@@ -14322,7 +14328,7 @@ STRING 2397
 }
 
 STRING 2398
-// Units: h06S (Coilskar Forgeworks), Hotkey (Hotkey)
+// Units: h06S (Steamworks), Hotkey (Hotkey)
 {
 E
 }
@@ -14460,7 +14466,7 @@ Mainstay soldier of the Legion.|n|cfff5962dAbilities:|R Combat Experience, Heavy
 }
 
 STRING 2421
-// Abilities: A0VX (Elune's Gaze), EditorSuffix (Editor Suffix)
+// Upgrades: Roen (Ensnare), EditorSuffix (Editor Suffix)
 {
 (Sentinels)
 }
@@ -14526,7 +14532,7 @@ STRING 2431
 }
 
 STRING 2432
-// Units: u011 (Ossuary), Hotkey (Hotkey)
+// Units: u011 (Mausoleum), Hotkey (Hotkey)
 {
 A
 }
@@ -14550,7 +14556,7 @@ Versatile air unit.|n|n|cffffcc00Attacks land and air units.|r
 }
 
 STRING 2436
-// Units: h033 (Quel'dorei Steading), EditorSuffix (Name - Editor Suffix)
+// Upgrades: Rhss (Control Magic), EditorSuffix (Editor Suffix)
 {
 (Quel'thalas)
 }
@@ -14652,7 +14658,7 @@ STRING 2452
 }
 
 STRING 2453
-// Units: h09A (Draconian Spire), Hotkey (Hotkey)
+// Units: h09A (Draconic Spire), Hotkey (Hotkey)
 {
 A
 }
@@ -14673,6 +14679,18 @@ STRING 2456
 // Units: h054 (Stormwind Knight), Hotkey (Hotkey)
 {
 E
+}
+
+STRING 2457
+// Units: e01B (Arcane Annihilator), EditorSuffix (Name - Editor Suffix)
+{
+ (Quel'thalas)
+}
+
+STRING 2458
+// Units: nntt (Betrayer's Reservoir), Tip (Tooltip - Basic)
+{
+Build Betrayer's Reservoir
 }
 
 STRING 2459
@@ -14754,7 +14772,7 @@ STRING 2471
 }
 
 STRING 2472
-// Units: n0AW (Slithering Hive), Hotkey (Hotkey)
+// Units: n0AW (Incubation Pool), Hotkey (Hotkey)
 {
 A
 }
@@ -14933,6 +14951,12 @@ STRING 2501
 Q
 }
 
+STRING 2502
+// Units: nntt (Betrayer's Reservoir), Ubertip (Tooltip - Extended)
+{
+Primary structure.|n|cff6480ff|cfff5962dTrains:|R Mur'gul Slave|n|cfff5962dUpgrades to:|R Spire
+}
+
 STRING 2503
 // Units: h03M (Hunter Tower), Hotkey (Hotkey)
 {
@@ -14994,7 +15018,7 @@ STRING 2512
 }
 
 STRING 2513
-// Units: n08V (Depth Void Portal), Hotkey (Hotkey)
+// Units: n08V (Portal of the Deep), Hotkey (Hotkey)
 {
 F
 }
@@ -16077,7 +16101,7 @@ Thunder Fists
 }
 
 STRING 2694
-// Units: h048 (Forgeworks), EditorSuffix (Name - Editor Suffix)
+// Units: h03R (Tinkerer), EditorSuffix (Name - Editor Suffix)
 {
 (Ironforge)
 }
@@ -16149,7 +16173,7 @@ STRING 2705
 }
 
 STRING 2706
-// Units: h03R (Tinkerer), EditorSuffix (Name - Editor Suffix)
+// Units: h037 (Engineer), EditorSuffix (Name - Editor Suffix)
 {
 (Ironforge)
 }
@@ -16161,13 +16185,13 @@ R
 }
 
 STRING 2708
-// Units: h07D (Shipyard), Name (Name)
+// Units: u009 (Shipyard), Name (Name)
 {
 Shipyard
 }
 
 STRING 2709
-// Units: h07D (Shipyard), Tip (Tooltip - Basic)
+// Units: o032 (Shipyard), Tip (Tooltip - Basic)
 {
 Build Shipyard
 }
@@ -16250,6 +16274,12 @@ STRING 2722
 Upgrade to (|cffffcc00Z|r) Improved Arcane Tower
 }
 
+STRING 2723
+// Units: nnsg (Spawnery), EditorSuffix (Name - Editor Suffix)
+{
+ (Illidari Barracks)
+}
+
 STRING 2724
 // Units: h07F (Dwarf Hold), Hotkey (Hotkey)
 {
@@ -16260,6 +16290,12 @@ STRING 2725
 // Units: h079 (Arcane Tower), Ubertip (Tooltip - Extended)
 {
 Mage filled defense tower. |n|cfff5962dAbilities:|R Feedback|n|cfff5962dCan Learn:|R Reveal, Magic Sentry|n|cfff5962dUpgrades Into:|R Improved Arcane Tower |n|n|cffffcc00Attacks land and air units.|r
+}
+
+STRING 2726
+// Units: nnsg (Spawnery), Tip (Tooltip - Basic)
+{
+Build Spawnery
 }
 
 STRING 2727
@@ -16274,10 +16310,28 @@ STRING 2728
 Observation tower.|n|r|cfff5962dUpgrades into:|R Kirin Tor Tower, Arcane Tower
 }
 
+STRING 2729
+// Units: nnsg (Spawnery), Ubertip (Tooltip - Extended)
+{
+Primary troop production building.|n|r|cfff5962dTrains:|R Naga Myrmidon, Snap Dragon, Dragon Turtle
+}
+
 STRING 2730
-// Units: o03I (Voidwater Dock), Hotkey (Hotkey)
+// Units: o03I (Shipyard), Hotkey (Hotkey)
 {
 R
+}
+
+STRING 2731
+// Units: nnsg (Spawnery), Name (Name)
+{
+Spawnery
+}
+
+STRING 2732
+// Units: nnsa (Clutchery), Tip (Tooltip - Basic)
+{
+Build Clutchery
 }
 
 STRING 2733
@@ -16286,16 +16340,40 @@ STRING 2733
 Plant a seed of hatred onto a friendly building. The afflicted unit cannot train units or uproot and  and will take damage until it dies. Upon its death, a mighty Ancient will emerge from the host corpse permanently. The growth of the seed, once planted, cannot be stopped, dispelled, or cancelled.|n|n|cffffcc00Level 1|r - 240 seconds cooldown.|n|cffffcc00Level 2|r - 120 seconds cooldown.|n|cffffcc00Level 3|r - 60 seconds cooldown.
 }
 
+STRING 2734
+// Units: nnsa (Clutchery), Ubertip (Tooltip - Extended)
+{
+Primary flying production building.|n|r|cfff5962dTrains:|R Couatl, Scylla
+}
+
 STRING 2735
 // Units: o03V (Bilgewater Harbor), Hotkey (Hotkey)
 {
 R
 }
 
+STRING 2736
+// Units: nnsa (Clutchery), Name (Name)
+{
+Clutchery
+}
+
+STRING 2737
+// Units: nnfm (Incubation Pool), EditorSuffix (Name - Editor Suffix)
+{
+ (Illidari Farm)
+}
+
 STRING 2738
-// Units: h076 (Arcane Shipyard), Ubertip (Tooltip - Extended)
+// Units: h03H (Shipyard), Ubertip (Tooltip - Extended)
 {
 Boat construction facility for the Alliance.|n|cfff5962dTrains:|R Alliance Transport Ship, Destroyer, Battleship|n|n|cff00c4c4Cannot be built near small inland water areas.
+}
+
+STRING 2739
+// Units: nnad (Altar of the Betrayer), EditorSuffix (Name - Editor Suffix)
+{
+ (Illidari Altar)
 }
 
 STRING 2740
@@ -16316,6 +16394,12 @@ STRING 2742
 Upgrade to (|cffffcc00Z|r) Improved Arcane Tower
 }
 
+STRING 2743
+// Units: nheb (Cantonment), EditorSuffix (Name - Editor Suffix)
+{
+(Quel'thalas Barracks)
+}
+
 STRING 2744
 // Units: h079 (Arcane Tower), Hotkey (Hotkey)
 {
@@ -16326,6 +16410,12 @@ STRING 2745
 // Units: h074 (Arcane Tower), Ubertip (Tooltip - Extended)
 {
 Mage filled defense tower. |n|cfff5962dAbilities:|R Feedback|n|cfff5962dCan Learn:|R Reveal, Magic Sentry|n|cfff5962dUpgrades Into:|R Improved Arcane Tower |n|n|cffffcc00Attacks land and air units.|r
+}
+
+STRING 2746
+// Units: u00Q (Treasury), Name (Name)
+{
+Treasury
 }
 
 STRING 2747
@@ -16353,7 +16443,7 @@ W
 }
 
 STRING 2751
-// Units: h072 (Homestead), Ubertip (Tooltip - Extended)
+// Units: n06M (Residence), Ubertip (Tooltip - Extended)
 {
 Provides 8 food, which increases the maximum number of units that can be trained.
 }
@@ -16454,6 +16544,12 @@ STRING 2767
 Mage filled defense tower. |n|cfff5962dAbilities:|R Feedback|n|cfff5962dCan Learn:|R Reveal, Magic Sentry|n|cfff5962dUpgrades Into:|R Improved Arcane Tower |n|n|cffffcc00Attacks land and air units.|r
 }
 
+STRING 2768
+// Units: u00Q (Treasury), Tip (Tooltip - Basic)
+{
+Build Treasury
+}
+
 STRING 2769
 // Units: h07M (Altar of Admirals), Hotkey (Hotkey)
 {
@@ -16464,6 +16560,12 @@ STRING 2770
 // Abilities: A0G3 (Dispel Magic), EditorSuffix (Editor Suffix)
 {
 (thornspeaker)
+}
+
+STRING 2771
+// Units: u009 (Shipyard), Tip (Tooltip - Basic)
+{
+Summon Shipyard
 }
 
 STRING 2772
@@ -16478,6 +16580,12 @@ STRING 2773
 Backbone worker and builder.|n|cfff5962dAbilities:|r Repair, Gather|n|cfff5962dCan Learn:|R Improved Lumber Harvesting|n|n|cffffcc00Attacks land units and trees.
 }
 
+STRING 2774
+// Units: u009 (Shipyard), Ubertip (Tooltip - Extended)
+{
+Boat construction facility for the Legion.|n|cfff5962dTrains:|R Transport Ship, Corsair, Dreadnought|R|n|n|cff00c4c4Cannot be built near small inland water areas.|r
+}
+
 STRING 2775
 // Units: h07S (Guard Tower), Hotkey (Hotkey)
 {
@@ -16490,10 +16598,22 @@ STRING 2776
 Observation tower.|n|r|cfff5962dUpgrades into:|R Guard Tower, Cannon Tower, Arcane Tower
 }
 
+STRING 2777
+// Units: o033 (Dark Enclave), Ubertip (Tooltip - Extended)
+{
+Shadowy gathering place for the Fel Horde's casters.|n|cfff5962dTrains:|R Necrolyte, Fel Warlock, Eredar Occultist|n|cfff5962dResearches:|R Adept Training, Mastery Training
+}
+
 STRING 2778
 // Units: h06H (Dummy), Name (Name)
 {
 Dummy
+}
+
+STRING 2779
+// Units: o033 (Dark Enclave), Name (Name)
+{
+Dark Enclave
 }
 
 STRING 2780
@@ -16562,6 +16682,12 @@ STRING 2790
 Effect
 }
 
+STRING 2791
+// Units: o033 (Dark Enclave), Tip (Tooltip - Basic)
+{
+Build Dark Enclave
+}
+
 STRING 2792
 // Units: h06Y (Arcane Tower), Hotkey (Hotkey)
 {
@@ -16572,6 +16698,12 @@ STRING 2793
 // Abilities: A0LR (Sacrifice), Name (Name)
 {
 Sacrifice
+}
+
+STRING 2794
+// Units: o032 (Shipyard), Ubertip (Tooltip - Extended)
+{
+Boat construction facility for the Fel Horde.|n|cfff5962dBuilds:|R Transport Ship, Frigate, Juggernaut |n|n|cff00c4c4Cannot be built near small inland water areas.|r
 }
 
 STRING 2795
@@ -16590,6 +16722,18 @@ STRING 2797
 // Units: o01C (Control Point Defender), Tip (Tooltip - Basic)
 {
 Build Missile Tower
+}
+
+STRING 2798
+// Units: o031 (War Mill), Ubertip (Tooltip - Extended)
+{
+Resource harvesting center and producer of Fel Horde enhancements. |n|cfff5962dResearches:|R Weapon Upgdrades, Armor Upgrades, Reinforced Defenses, Spiked Barricades, Spiritual Infusion
+}
+
+STRING 2799
+// Units: o02T (Shipyard), Ubertip (Tooltip - Extended)
+{
+Boat construction facility for the Orcish Horde.|n|cfff5962dTrains:|R Horde Transport Ship, Frigate, Juggernaut |n|n|cff00c4c4Cannot be built near small inland water areas.|r
 }
 
 STRING 2800
@@ -16622,6 +16766,12 @@ STRING 2804
 Upgrade to Improved Missile Tower
 }
 
+STRING 2805
+// Units: o01T (Treasure Hoard), Name (Name)
+{
+Treasure Hoard
+}
+
 STRING 2806
 // Units: n08W (Ashtongue Lair), Hotkey (Hotkey)
 {
@@ -16634,6 +16784,12 @@ STRING 2807
 (goblin)
 }
 
+STRING 2808
+// Units: o01T (Treasure Hoard), Tip (Tooltip - Basic)
+{
+Build Treasure Hoard
+}
+
 STRING 2809
 // Units: h045 (Warden), Hotkey (Hotkey)
 {
@@ -16644,6 +16800,12 @@ STRING 2810
 // Units: h06F (Blacksmith), Ubertip (Tooltip - Extended)
 {
 Forges iron and steel for the war effort.|n|cfff5962dResearches: |RForged Weaponry, Armor Plating, Power Infusion|n
+}
+
+STRING 2811
+// Units: n0AM (Flame Pillar), Ubertip (Tooltip - Extended)
+{
+Fires massive boulders at enemy targets.|n|cfff5962dUpgrades Into:|R Improved Flame Pillar|n|n|cffffcc00Attacks land units.|r
 }
 
 STRING 2812
@@ -16832,6 +16994,12 @@ STRING 2842
 Upgrade to Observatory
 }
 
+STRING 2843
+// Units: n0A3 (Archive), Name (Name)
+{
+Archive
+}
+
 STRING 2844
 // Units: n00N (Control Point Defender), EditorSuffix (Name - Editor Suffix)
 {
@@ -16845,13 +17013,13 @@ D
 }
 
 STRING 2846
-// Units: h067 (Laboratory), Name (Name)
+// Units: o03S (Laboratory), Name (Name)
 {
 Laboratory
 }
 
 STRING 2847
-// Units: h067 (Laboratory), Tip (Tooltip - Basic)
+// Units: o03S (Laboratory), Tip (Tooltip - Basic)
 {
 Build Laboratory
 }
@@ -16970,6 +17138,12 @@ STRING 2866
 (Creep - Gilneas)
 }
 
+STRING 2867
+// Units: n0A3 (Archive), Tip (Tooltip - Basic)
+{
+Build Archive
+}
+
 STRING 2868
 // Abilities: A0NX (A Close), EditorSuffix (Editor Suffix)
 {
@@ -16977,7 +17151,7 @@ STRING 2868
 }
 
 STRING 2869
-// Units: u01A (Ghostly Harbor), Hotkey (Hotkey)
+// Units: u01A (Shipyard), Hotkey (Hotkey)
 {
 R
 }
@@ -16999,6 +17173,12 @@ STRING 2872
 {
 Powerful flagship built from the combined genius of dwarven engineering and Stormwind ship building.|n|cfff5962dAbilities:|R Bombing Run, True Sight, Build Light House|n|n|cff00ffffCan transport 10 units.|R|n|cff99b4d1Can only build 3.|r|n|cffffcc00Attacks land units.|R
 
+}
+
+STRING 2873
+// Units: n0A3 (Archive), Ubertip (Tooltip - Extended)
+{
+Primary caster production building.|n|r|cfff5962dTrains:|R Naga Siren, Mur'gul Shadowcaster, Coilfang Summoner|n|cfff5962dResearches:|r Power Infusion, Shadowcaster Adept Training, Naga Siren Adept Training
 }
 
 STRING 2874
@@ -17085,10 +17265,22 @@ STRING 2887
 Z
 }
 
+STRING 2888
+// Units: n04L (Infernal Juggernaut), Ubertip (Tooltip - Extended)
+{
+Hellforged engine of doom.|n|cfff5962dCan learn:|R Inferno|n|n|cff99b4d1Can only build 6.|r|n|cffffcc00Attacks land units.|r
+}
+
 STRING 2889
 // Abilities: A0A8 (Fortify), Name (Name)
 {
 Fortify
+}
+
+STRING 2890
+// Units: n005 (Improved Tidal Watcher), EditorSuffix (Name - Editor Suffix)
+{
+ (Illidari Tower)
 }
 
 STRING 2891
@@ -17115,6 +17307,12 @@ STRING 2894
 W
 }
 
+STRING 2895
+// Units: h07D (Shipyard), Name (Name)
+{
+Shipyard
+}
+
 STRING 2896
 // Units: o04M (Kezan Trading Center), Hotkey (Hotkey)
 {
@@ -17137,6 +17335,12 @@ STRING 2899
 // Units: H08H (High Inquisitor), EditorSuffix (Name - Editor Suffix)
 {
 (Scarlet)
+}
+
+STRING 2900
+// Units: h077 (Shipyard), Name (Name)
+{
+Shipyard
 }
 
 STRING 2901
@@ -17175,10 +17379,22 @@ STRING 2906
 Effect
 }
 
+STRING 2907
+// Units: h076 (Shipyard), Name (Name)
+{
+Shipyard
+}
+
 STRING 2908
 // Units: h05Q (Dalaran Building), Name (Name)
 {
 Dalaran Building
+}
+
+STRING 2909
+// Units: h076 (Shipyard), Tip (Tooltip - Basic)
+{
+Build Shipyard
 }
 
 STRING 2910
@@ -17197,6 +17413,12 @@ STRING 2912
 // Units: h05O (Dalaran Building), Name (Name)
 {
 Dalaran Building
+}
+
+STRING 2913
+// Units: h076 (Shipyard), Ubertip (Tooltip - Extended)
+{
+Boat construction facility for Dalaran.|n|cfff5962dTrains:|R Transport Ship, Destroyer, Battleship|n|n|cff00c4c4Cannot be built near small inland water areas.
 }
 
 STRING 2914
@@ -17385,6 +17607,12 @@ STRING 2944
 Nethergarde Barracks
 }
 
+STRING 2945
+// Units: h067 (Manaforge), Ubertip (Tooltip - Extended)
+{
+An arcane golemworks and library for experimentation and dragon taming.|n|cfff5962dTrains:|R Earth Golem, Crystal Artillery, Blue Dragon
+}
+
 STRING 2946
 // Units: Hjai (Archmage of Dalaran), Tip (Tooltip - Basic)
 {
@@ -17481,6 +17709,12 @@ STRING 2961
 Q
 }
 
+STRING 2962
+// Units: h03S (Mansion), Name (Name)
+{
+Mansion
+}
+
 STRING 2963
 // Abilities: A0N2 (Grasping Vines), EditorSuffix (Editor Suffix)
 {
@@ -17494,7 +17728,7 @@ Research Improved Firebolt
 }
 
 STRING 2965
-// Units: h037 (Engineer), EditorSuffix (Name - Editor Suffix)
+// Units: h01P (Steam Tank), EditorSuffix (Name - Editor Suffix)
 {
 (Ironforge)
 }
@@ -17670,7 +17904,7 @@ Loyal phoenix of the Sunstrider Dynasty.|n|cfff5962dAbilities:|R Sun Ray, Spell 
 }
 
 STRING 2994
-// Upgrades: Roen (Ensnare), EditorSuffix (Editor Suffix)
+// Upgrades: R064 (Nature's Blessing), EditorSuffix (Editor Suffix)
 {
 (Sentinels)
 }
@@ -17706,7 +17940,7 @@ STRING 2999
 }
 
 STRING 3000
-// Units: h033 (Quel'dorei Steading), Hotkey (Hotkey)
+// Units: h033 (Steading), Hotkey (Hotkey)
 {
 Q
 }
@@ -17727,6 +17961,12 @@ STRING 3003
 // Units: h04W (Siege Tank), Ubertip (Tooltip - Extended)
 {
 Heavily armored vehicle, adept at shooting down air units.|n|cfff5962dAbilities:|R Barrage|n|n|cff99b4d1Can only build 3.|r|n|cffffcc00Attacks land and air units.|r
+}
+
+STRING 3004
+// Units: h03H (Shipyard), Name (Name)
+{
+Shipyard
 }
 
 STRING 3005
@@ -17934,7 +18174,7 @@ STRING 3038
 }
 
 STRING 3039
-// Units: h02N (Manaforge), Hotkey (Hotkey)
+// Units: h02N (Lumber Mill), Hotkey (Hotkey)
 {
 E
 }
@@ -18109,6 +18349,12 @@ STRING 3067
 Dalaran Shield
 }
 
+STRING 3068
+// Units: h03H (Shipyard), Tip (Tooltip - Basic)
+{
+Build Shipyard
+}
+
 STRING 3069
 // Units: h04B (Rock), Name (Name)
 {
@@ -18116,7 +18362,7 @@ Rock
 }
 
 STRING 3070
-// Units: h01P (Steam Tank), EditorSuffix (Name - Editor Suffix)
+// Units: h018 (Defender), EditorSuffix (Name - Editor Suffix)
 {
 (Ironforge)
 }
@@ -18125,6 +18371,18 @@ STRING 3071
 // Units: h02D (Geomancer), Hotkey (Hotkey)
 {
 E
+}
+
+STRING 3072
+// Units: h03E (Academy), Ubertip (Tooltip - Extended)
+{
+Training house for the finest soldiers in the Gilnean Army.|n|cfff5962dTrains:|r Armored Wolves, Royal Guard, Gunship
+}
+
+STRING 3073
+// Units: h03E (Academy), Name (Name)
+{
+Academy
 }
 
 STRING 3074
@@ -18146,7 +18404,7 @@ Boralus Keep
 }
 
 STRING 3077
-// Upgrades: R064 (Nature's Blessing), EditorSuffix (Editor Suffix)
+// Upgrades: R052 (Chaos), EditorSuffix (Editor Suffix)
 {
 (Sentinels)
 }
@@ -18218,7 +18476,7 @@ Q
 }
 
 STRING 3089
-// Units: o03S (Kaja'Cola Laboratory), Hotkey (Hotkey)
+// Units: o03S (Laboratory), Hotkey (Hotkey)
 {
 S
 }
@@ -18229,8 +18487,14 @@ STRING 3090
 rlev
 }
 
+STRING 3091
+// Units: h03E (Academy), Tip (Tooltip - Basic)
+{
+Build Academy
+}
+
 STRING 3092
-// Units: h018 (Defender), EditorSuffix (Name - Editor Suffix)
+// Units: H03G (Emperor of Blackrock), EditorSuffix (Name - Editor Suffix)
 {
 (Ironforge)
 }
@@ -18397,6 +18661,12 @@ STRING 3119
 (worgen blood shaman)
 }
 
+STRING 3120
+// Units: h033 (Steading), EditorSuffix (Name - Editor Suffix)
+{
+(Quel'thalas T1)
+}
+
 STRING 3121
 // Units: n0C4 (Spawning Grounds), Hotkey (Hotkey)
 {
@@ -18422,37 +18692,61 @@ Defensive commander of the humans of the South.|n|cfff5962dAbilities:|R On Guard
 }
 
 STRING 3125
-// Units: n02F (Felblood Warlock), EditorSuffix (Name - Editor Suffix)
+// Upgrades: Rhcd (Cloud), EditorSuffix (Editor Suffix)
 {
 (Quel'thalas)
 }
 
 STRING 3126
-// Units: h03T (Quel'dorei Palace), Hotkey (Hotkey)
+// Units: h03T (Palace), Hotkey (Hotkey)
 {
 C
 }
 
+STRING 3127
+// Units: h02N (Lumber Mill), Ubertip (Tooltip - Extended)
+{
+Lumber processing mill and research center.|n|cfff5962dResearches:|R Forged Weaponry, Armor Plating, Power Infusion|n|n|cffffcc00Can receive Lumber.|R
+}
+
+STRING 3128
+// Units: h004 (Troll Hut), Name (Name)
+{
+Troll Hut
+}
+
 STRING 3129
-// Units: h03T (Quel'dorei Palace), Ubertip (Tooltip - Extended)
+// Units: h03T (Palace), Ubertip (Tooltip - Extended)
 {
 Main gathering structure.|n|cfff5962dTrains:|R Architect, Farstrider
 }
 
 STRING 3130
-// Upgrades: Rhss (Control Magic), EditorSuffix (Editor Suffix)
+// Upgrades: R04Q (Chaos), EditorSuffix (Editor Suffix)
 {
 (Quel'thalas)
 }
 
 STRING 3131
-// Units: h03S (Quel'dorei Sanctuary), Hotkey (Hotkey)
+// Units: h03S (Mansion), Hotkey (Hotkey)
 {
 C
 }
 
+STRING 3132
+// Units: h004 (Troll Hut), Tip (Tooltip - Basic)
+{
+Build Troll Hut
+}
+
+STRING 3133
+// Units: n04N (Infernal Siegeworks), Tip (Tooltip - Basic)
+{
+Summon Infernal Siegeworks
+}
+
 STRING 3134
-// Units: h03S (Quel'dorei Sanctuary), Ubertip (Tooltip - Extended)
+// Units: h03S (Mansion), Ubertip (Tooltip - Extended)
 {
 Main gathering structure.|n|cfff5962dTrains:|R Architect
 }
@@ -18470,7 +18764,7 @@ STRING 3136
 }
 
 STRING 3137
-// Units: H03G (Emperor of Blackrock), EditorSuffix (Name - Editor Suffix)
+// Units: H028 (Thane of Aerie Peak), EditorSuffix (Name - Editor Suffix)
 {
 (Ironforge)
 }
@@ -18529,6 +18823,12 @@ STRING 3146
 Revive Tess
 }
 
+STRING 3147
+// Units: n04N (Infernal Siegeworks), Ubertip (Tooltip - Extended)
+{
+Workshop for the Legion's engines of war.|n|cfff5962dTrains:|R Infernal Juggernaut, Sky Barge|n|cfff5962dResearches:|R Flying Horrors
+}
+
 STRING 3148
 // Upgrades: R04O (Priest Adept Training,Priest Master Training), EditorSuffix (Editor Suffix)
 {
@@ -18548,7 +18848,7 @@ General research building.|n|cfff5962dResearches: |RForged Weaponry, Armor Plati
 }
 
 STRING 3151
-// Upgrades: R052 (Chaos), EditorSuffix (Editor Suffix)
+// Upgrades: R03J (Magic Sentry), EditorSuffix (Editor Suffix)
 {
 (Sentinels)
 }
@@ -18578,7 +18878,7 @@ Primary defensive structure. |n|n|cffffcc00Attacks land and air units.|r
 }
 
 STRING 3156
-// Upgrades: R03J (Magic Sentry), EditorSuffix (Editor Suffix)
+// Upgrades: R02O (Chaos), EditorSuffix (Editor Suffix)
 {
 (Sentinels)
 }
@@ -18668,13 +18968,13 @@ Military commander of the humans of the South.|n|cfff5962dCan Learn:|R Runic Str
 }
 
 STRING 3171
-// Upgrades: Rhcd (Cloud), EditorSuffix (Editor Suffix)
+// Upgrades: R02H (Chaos), EditorSuffix (Editor Suffix)
 {
 (Quel'thalas)
 }
 
 STRING 3172
-// Units: h082 (Onslaught Gunnery), Hotkey (Hotkey)
+// Units: h082 (Gunnery), Hotkey (Hotkey)
 {
 D
 }
@@ -18734,19 +19034,25 @@ Powerful Orc warrior that serves the Shattered Hand.|n|cfff5962dAbilities:|R Cha
 }
 
 STRING 3182
-// Units: o059 (Draenei Shipyard), Hotkey (Hotkey)
+// Units: o059 (Shipyard), Hotkey (Hotkey)
 {
 R
 }
 
 STRING 3183
-// Units: h03H (Shipyard), Name (Name)
+// Units: o032 (Shipyard), Name (Name)
 {
 Shipyard
 }
 
+STRING 3184
+// Units: n04N (Infernal Siegeworks), Name (Name)
+{
+Infernal Siegeworks
+}
+
 STRING 3185
-// Units: h03H (Shipyard), Ubertip (Tooltip - Extended)
+// Units: h07W (Shipyard), Ubertip (Tooltip - Extended)
 {
 Boat construction facility for the Alliance.|n|cfff5962dTrains:|R Alliance Transport Ship, Destroyer, Battleship|n|n|cff00c4c4Cannot be built near small inland water areas.
 }
@@ -18907,7 +19213,7 @@ STRING 3211
 }
 
 STRING 3212
-// Units: H028 (Thane of Aerie Peak), EditorSuffix (Name - Editor Suffix)
+// Units: n0CC (Shadowforge Titan), EditorSuffix (Name - Editor Suffix)
 {
 (Ironforge)
 }
@@ -18996,12 +19302,6 @@ STRING 3226
 Powerful Orc warrior that serves the Shattered Hand.|n|cfff5962dAbilities:|R Charge, Thunder Clap, Self-Bloodlust, Rampage, Cleaving Attack|n|cfff5962dCan learn:|R Blood Runes, Felsteel Plating|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land units.|r
 }
 
-STRING 3227
-// Upgrades: R04Q (Chaos), EditorSuffix (Editor Suffix)
-{
-(Quel'thalas)
-}
-
 STRING 3228
 // Units: e01U (Coral of Lore), Hotkey (Hotkey)
 {
@@ -19014,20 +19314,26 @@ STRING 3229
 Sanctum for the spellcasters of Quel'thalas.|n|cfff5962dTrains:|R Priest, Sorceress, Arcane Wagon|n|cfff5962dResearches:|R Priest Training, Sorceress Training, Magic Sentry
 }
 
-STRING 3230
-// Upgrades: R02H (Chaos), EditorSuffix (Editor Suffix)
-{
-(Quel'thalas)
-}
-
 STRING 3231
 // Units: h01R (Town Hall), Hotkey (Hotkey)
 {
 Q
 }
 
+STRING 3232
+// Units: h07W (Shipyard), Name (Name)
+{
+Shipyard
+}
+
+STRING 3233
+// Units: h07W (Shipyard), Tip (Tooltip - Basic)
+{
+Build Shipyard
+}
+
 STRING 3234
-// Units: h033 (Quel'dorei Steading), Ubertip (Tooltip - Extended)
+// Units: h033 (Steading), Ubertip (Tooltip - Extended)
 {
 Main gathering structure.|n|cfff5962dTrains:|R Architect
 }
@@ -19114,6 +19420,12 @@ STRING 3248
 // Abilities: A0S0 (Multishot), Tip (Tooltip - Normal)
 {
 Multishot
+}
+
+STRING 3249
+// Units: o03I (Shipyard), Name (Name)
+{
+Shipyard
 }
 
 STRING 3250
@@ -19350,6 +19662,18 @@ STRING 3288
 E
 }
 
+STRING 3289
+// Units: o03I (Shipyard), Tip (Tooltip - Basic)
+{
+Build Shipyard
+}
+
+STRING 3290
+// Units: o03I (Shipyard), Ubertip (Tooltip - Extended)
+{
+Boat construction facility for Twilight's Hammer Cult.|n|cfff5962dBuilds:|R Transport Ship, Frigate, Juggernaut |n|n|cff00c4c4Cannot be built near small inland water areas.|r
+}
+
 STRING 3291
 // Buffs/Effects: B09J (), Bufftip (Tooltip)
 {
@@ -19531,7 +19855,7 @@ W
 }
 
 STRING 3321
-// Units: h02F (Household), Ubertip (Tooltip - Extended)
+// Units: h072 (Homestead), Ubertip (Tooltip - Extended)
 {
 Provides 8 food, which increases the maximum number of units that can be trained.
 }
@@ -19890,6 +20214,12 @@ STRING 3380
 Aerie Peak
 }
 
+STRING 3381
+// Units: o03J (Voidforge), Ubertip (Tooltip - Extended)
+{
+Resource harvesting center and producer of Twilight's Hammer enhancements. |n|cfff5962dResearches:|R Weapon Upgdrades, Armor Upgrades, Spiked Barricades, Spiritual Infusion
+}
+
 STRING 3382
 // Units: h01T (Inn), Name (Name)
 {
@@ -19897,7 +20227,7 @@ Inn
 }
 
 STRING 3383
-// Units: n0CC (Shadowforge Titan), EditorSuffix (Name - Editor Suffix)
+// Units: h00B (Irondrake), EditorSuffix (Name - Editor Suffix)
 {
 (Ironforge)
 }
@@ -19975,7 +20305,7 @@ Mind Destruction - [|cffffcc00Level 3|r]
 }
 
 STRING 3396
-// Units: h00B (Irondrake), EditorSuffix (Name - Editor Suffix)
+// Units: h0A6 (Anvilrage Guardsman), EditorSuffix (Name - Editor Suffix)
 {
 (Ironforge)
 }
@@ -19996,6 +20326,12 @@ STRING 3399
 // Units: h01P (Steam Tank), Ubertip (Tooltip - Extended)
 {
 Extremely heavily armored vehicle.|n|cfff5962dAbilities:|R Flamethrower, Lockdown, Barrage|n|cfff5962dCan Learn:|R Overclock|n|n|cff00ffffCan transport 4 units.|n|cff99b4d1Can only build 3.|r|n|cffffcc00Attacks land and air units.|r
+}
+
+STRING 3400
+// Units: o03J (Voidforge), Name (Name)
+{
+Voidforge
 }
 
 STRING 3401
@@ -20155,9 +20491,15 @@ Train Arcanist
 }
 
 STRING 3427
-// Units: h0A6 (Anvilrage Guardsman), EditorSuffix (Name - Editor Suffix)
+// Units: h0AA (Magma Tank), EditorSuffix (Name - Editor Suffix)
 {
 (Ironforge)
+}
+
+STRING 3428
+// Units: o03J (Voidforge), Tip (Tooltip - Basic)
+{
+Build Voidforge
 }
 
 STRING 3429
@@ -20335,7 +20677,7 @@ Summon Mur'gul
 }
 
 STRING 3458
-// Units: h0AA (Magma Tank), EditorSuffix (Name - Editor Suffix)
+// Units: h0AB (Shadowcaster), EditorSuffix (Name - Editor Suffix)
 {
 (Ironforge)
 }
@@ -20365,7 +20707,7 @@ Skilled craftsman and designer of dwarven wonders.|n|cfff5962dAbilities:|r Repai
 }
 
 STRING 3463
-// Units: h0AB (Shadowcaster), EditorSuffix (Name - Editor Suffix)
+// Units: n0CH (Flame Keeper), EditorSuffix (Name - Editor Suffix)
 {
 (Ironforge)
 }
@@ -20392,6 +20734,12 @@ STRING 3467
 // Units: h018 (Defender), Ubertip (Tooltip - Extended)
 {
 Hardy stout defender of Dun Morogh.|n|cfff5962dAbilities:|R Charge, Defend|n|cfff5962dCan Learn:|R Mithril Plated Armor|n|n|cffffcc00Attacks land units.|r
+}
+
+STRING 3468
+// Units: o03Q (Scrapyard), Ubertip (Tooltip - Extended)
+{
+Resource harvesting center and producer of Goblin enhancements. |n|cfff5962dResearches:|R Weapon Upgdrades, Armor Upgrades, Reinforced Defenses, Spiked Barricades, Spiritual Infusion|n
 }
 
 STRING 3469
@@ -20610,6 +20958,12 @@ STRING 3504
 Grim gathering of the Twilight Hammer occultist.|n|cfff5962dTrains:|R Herald, Magi, Death Knight|n|cfff5962dResearches:|R Magi Training, Herald Training
 }
 
+STRING 3505
+// Units: o03Q (Scrapyard), Name (Name)
+{
+Scrapyard
+}
+
 STRING 3506
 // Units: u01N (Altar of Destruction), Name (Name)
 {
@@ -20698,6 +21052,12 @@ STRING 3520
 // Units: h00J (Clergyman), Ubertip (Tooltip - Extended)
 {
 Missionary of Quel'Thalas to the Southern Kingdoms.|n|cfff5962dAbilities:|R Heal|n|cfff5962dCan Learn:|R Dispel Magic, Inner Fire|n|n|cffffcc00Attacks land and air units.|R
+}
+
+STRING 3521
+// Units: o03Q (Scrapyard), Tip (Tooltip - Basic)
+{
+Build Scrapyard
 }
 
 STRING 3522
@@ -20839,7 +21199,7 @@ The first among the redeemed shaman of the Frostwolf Clan, Drek'thar is a blind,
 }
 
 STRING 3545
-// Units: n0CH (Flame Keeper), EditorSuffix (Name - Editor Suffix)
+// Abilities: A0F4 (Armor Penetration Rounds), EditorSuffix (Editor Suffix)
 {
 (Ironforge)
 }
@@ -20993,12 +21353,6 @@ STRING 3570
 Barricades
 }
 
-STRING 3571
-// Units: h004 (Troll House), Name (Name)
-{
-Troll House
-}
-
 STRING 3572
 // Units: H04F (Archmage), EditorSuffix (Name - Editor Suffix)
 {
@@ -21135,6 +21489,12 @@ STRING 3594
 // Units: n0CP (Enslaved Dragon), EditorSuffix (Name - Editor Suffix)
 {
 (Dragonmaw) (Base)
+}
+
+STRING 3595
+// Units: o03S (Laboratory), Ubertip (Tooltip - Extended)
+{
+Place for Kaja'Cola fueled experimenting.|n|cfff5962dTrains:|R Alchemist, Wizard|n|cfff5962dResearches:|R Wizard Training, Alchemist Training
 }
 
 STRING 3596
@@ -21294,7 +21654,7 @@ Broll Bearmantle
 }
 
 STRING 3622
-// Upgrades: R02O (Chaos), EditorSuffix (Editor Suffix)
+// Upgrades: R026 (Animal War Training), EditorSuffix (Editor Suffix)
 {
 (Sentinels)
 }
@@ -21348,7 +21708,7 @@ Basic Wooden warrior |n|n|cffffcc00Attacks land units.|r
 }
 
 STRING 3631
-// Upgrades: R026 (Animal War Training), EditorSuffix (Editor Suffix)
+// Upgrades: R01W (Druid of the Talon Adept Training,Druid of the Talon Master Training), EditorSuffix (Editor Suffix)
 {
 (Sentinels)
 }
@@ -21450,7 +21810,7 @@ STRING 3647
 }
 
 STRING 3648
-// Upgrades: R01W (Druid of the Talon Adept Training,Druid of the Talon Master Training), EditorSuffix (Editor Suffix)
+// Upgrades: R018 (Magic Sentry), EditorSuffix (Editor Suffix)
 {
 (Sentinels)
 }
@@ -21479,6 +21839,12 @@ STRING 3652
 Stronghold of Sentinel General Shandris Feathermoon
 }
 
+STRING 3653
+// Units: o047 (Bazaar), Name (Name)
+{
+Bazaar
+}
+
 STRING 3654
 // Abilities: A0K2 (Raise Dead Auto-Cast), Hotkey (Hotkey - Normal)
 {
@@ -21504,7 +21870,7 @@ Training hall for the warrior Sentinels.|n|cfff5962dTrains:|R Archer, Huntress, 
 }
 
 STRING 3658
-// Upgrades: R018 (Magic Sentry), EditorSuffix (Editor Suffix)
+// Upgrades: R00S (Spirit Walker Adept Training,Spirit Walker Master Training), EditorSuffix (Editor Suffix)
 {
 (Sentinels)
 }
@@ -21684,7 +22050,7 @@ STRING 3687
 }
 
 STRING 3688
-// Upgrades: R00S (Spirit Walker Adept Training,Spirit Walker Master Training), EditorSuffix (Editor Suffix)
+// Upgrades: R007 (Chaos), EditorSuffix (Editor Suffix)
 {
 (Sentinels)
 }
@@ -21912,7 +22278,7 @@ STRING 3725
 }
 
 STRING 3726
-// Units: o03J (Voidfire Armory), Hotkey (Hotkey)
+// Units: o03J (Voidforge), Hotkey (Hotkey)
 {
 E
 }
@@ -22068,7 +22434,7 @@ STRING 3751
 }
 
 STRING 3752
-// Units: o03Q (Hobgoblin Mill), Hotkey (Hotkey)
+// Units: o03Q (Scrapyard), Hotkey (Hotkey)
 {
 E
 }
@@ -22601,6 +22967,12 @@ STRING 3840
 Revive Lich King
 }
 
+STRING 3841
+// Units: o047 (Bazaar), Tip (Tooltip - Basic)
+{
+Build Bazaar
+}
+
 STRING 3842
 // Units: N00D (Primary Firelord), Name (Name)
 {
@@ -22823,6 +23195,12 @@ STRING 3878
 Revive Archmage
 }
 
+STRING 3879
+// Units: h082 (Gunnery), Ubertip (Tooltip - Extended)
+{
+Workshop used to produce the machines of war.|n|cfff5962dTrains:|r Mounted Archer, Bombard, Airship
+}
+
 STRING 3880
 // Upgrades: R06Q (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
 {
@@ -22944,7 +23322,7 @@ Revive Emperor of Blackrock
 }
 
 STRING 3900
-// Abilities: A0F4 (Armor Penetration Rounds), EditorSuffix (Editor Suffix)
+// Abilities: A0D5 (Keep Commander Aura), EditorSuffix (Editor Suffix)
 {
 (Ironforge)
 }
@@ -23076,7 +23454,7 @@ Revive Thane of Aerie Peak
 }
 
 STRING 3922
-// Abilities: A0D5 (Keep Commander Aura), EditorSuffix (Editor Suffix)
+// Abilities: A0D4 (Ironforge Aura), EditorSuffix (Editor Suffix)
 {
 (Ironforge)
 }
@@ -23268,7 +23646,7 @@ STRING 3953
 }
 
 STRING 3954
-// Units: n0AX (Prison of Unspeakable Horrors), Hotkey (Hotkey)
+// Units: n0AX (Pit of Torment), Hotkey (Hotkey)
 {
 D
 }
@@ -23343,6 +23721,12 @@ STRING 3966
 // Units: n07G (Musketeers), Hotkey (Hotkey)
 {
 W
+}
+
+STRING 3967
+// Units: h082 (Gunnery), Name (Name)
+{
+Gunnery
 }
 
 STRING 3968
@@ -23423,6 +23807,12 @@ STRING 3980
 Train Trade Prince Guard
 }
 
+STRING 3981
+// Units: h082 (Gunnery), Tip (Tooltip - Basic)
+{
+Build Gunnery
+}
+
 STRING 3982
 // Upgrades: Robs (Brute Strength), Hotkey (Hotkey)
 {
@@ -23457,6 +23847,12 @@ STRING 3987
 // Units: E00P (Keeper of the Grove), Propernames (Proper Names)
 {
 Horn Guardian
+}
+
+STRING 3988
+// Units: u011 (Mausoleum), Ubertip (Tooltip - Extended)
+{
+Ghastly raising hall for the Forsaken's warriors.|n|cfff5962dTrains:|R Ghoul, Crypt Fiend, Gargoyles|n|cfff5962dResearches:|R Ghoul Frenzy, Web, Piercing Screech
 }
 
 STRING 3989
@@ -23673,6 +24069,12 @@ STRING 4024
 // Units: E002 (General of the Sentinel Army), Awakentip (Tooltip - Awaken)
 {
 Revive Sentinel General
+}
+
+STRING 4025
+// Units: u011 (Mausoleum), Name (Name)
+{
+Mausoleum
 }
 
 STRING 4026
@@ -23976,7 +24378,7 @@ Teleports a target friendly unit to its highest level town hall. Has a 2 second 
 }
 
 STRING 4076
-// Units: o06D (Dragonmaw Port), Hotkey (Hotkey)
+// Units: o06D (Shipyard), Hotkey (Hotkey)
 {
 R
 }
@@ -25338,7 +25740,7 @@ Summons workers.
 }
 
 STRING 4303
-// Units: o047 (Grand Bazaar), Hotkey (Hotkey)
+// Units: o047 (Bazaar), Hotkey (Hotkey)
 {
 C
 }
@@ -25889,6 +26291,12 @@ STRING 4394
 Ashenvale Tree backwards
 }
 
+STRING 4395
+// Units: u011 (Mausoleum), Tip (Tooltip - Basic)
+{
+Summon Mausoleum
+}
+
 STRING 4396
 // Destructibles: B01R (Silithid Egg Sack), Name (Name)
 {
@@ -25982,6 +26390,12 @@ STRING 4411
 // Destructibles: B01E (Dark Iron Bridge), Name (Name)
 {
 Dark Iron Bridge
+}
+
+STRING 4412
+// Units: u01A (Shipyard), Name (Name)
+{
+Shipyard
 }
 
 STRING 4413
@@ -26632,6 +27046,12 @@ STRING 4520
 // Doodads: D06B (Column Ruined Dark with Cap), Name (Name)
 {
 Column Ruined Dark with Cap
+}
+
+STRING 4521
+// Units: u01A (Shipyard), Tip (Tooltip - Basic)
+{
+Summon Shipyard
 }
 
 STRING 4522
@@ -28027,7 +28447,7 @@ STRING 4753
 }
 
 STRING 4754
-// Units: h0AG (Scarlet Harbor), Hotkey (Hotkey)
+// Units: h0AG (Shipyard), Hotkey (Hotkey)
 {
 R
 }
@@ -28746,6 +29166,12 @@ STRING 4873
 W
 }
 
+STRING 4874
+// Units: u01A (Shipyard), Ubertip (Tooltip - Extended)
+{
+Boat construction facility for the Forsaken.|n|cfff5962dTrains:|R Transport Ship, Corsair, Dreadnought|R|n|n|cff00c4c4Cannot be built near small inland water areas.|r
+}
+
 STRING 4875
 // Abilities: ANbr (General's Order), EditorSuffix (Editor Suffix)
 {
@@ -28776,16 +29202,22 @@ STRING 4879
 Improves Dryads' Slow Poison by increasing its damage dealt per second to <A0JL,DataA3> and duration to <A0JL,Dur3> seconds.
 }
 
-STRING 4880
-// Units: nntt (Betrayer's Reservoir), Tip (Tooltip - Basic)
-{
-Build - Steamwork Reservoir
-}
-
 STRING 4881
 // Units: e012 (Siege Ancient), Ubertip (Tooltip - Extended)
 {
 Siege melee unit that can transform into an immobile ranged siege unit.|n|cfff5962dAbilities:|r Siege Form|n|cff99b4d1Can only train 6|n|cffffcc00Attacks land units.|r
+}
+
+STRING 4882
+// Units: h08E (Plague Tower), Tip (Tooltip - Basic)
+{
+Upgrade to Death Tower
+}
+
+STRING 4883
+// Units: u01W (Royal Sepulcrum), Ubertip (Tooltip - Extended)
+{
+Royal Quarters of Undercity's Elite. |n|cfff5962dTrains:|R Undercity Guardians, Valkyrs, Elder Banshees
 }
 
 STRING 4884
@@ -29406,6 +29838,12 @@ STRING 4986
 Q
 }
 
+STRING 4987
+// Units: n08V (Portal of the Deep), Name (Name)
+{
+Portal of the Deep
+}
+
 STRING 4988
 // Units: o06B (High Watchtower), Hotkey (Hotkey)
 {
@@ -29734,6 +30172,12 @@ STRING 5042
 // Abilities: Ahpe (Phoenix), EditorSuffix (Editor Suffix)
 {
 (A'lar) (Icon)
+}
+
+STRING 5043
+// Units: n08V (Portal of the Deep), Tip (Tooltip - Basic)
+{
+Build Portal of the Deep
 }
 
 STRING 5044
@@ -31860,6 +32304,12 @@ STRING 5397
 Nearby friendly melee units gain <AUav,DataA4,%>% of their attack damage when they hit enemy units.
 }
 
+STRING 5398
+// Units: n08V (Portal of the Deep), Ubertip (Tooltip - Extended)
+{
+Primary Elite monster training building.|n|cfff5962dTrains:|R Immortal Guardian and Trench Hydra
+}
+
 STRING 5399
 // Abilities: AUau (Invigoration), Name (Name)
 {
@@ -32628,6 +33078,12 @@ STRING 5526
 Transforms an enemy unit into a random critter for <AOhx,Dur6> seconds.
 }
 
+STRING 5527
+// Units: n08W (Ashtongue Lair), EditorSuffix (Name - Editor Suffix)
+{
+ (Illidari Specialist)
+}
+
 STRING 5528
 // Units: E01G (Gronn Overlord), Hotkey (Hotkey)
 {
@@ -32830,6 +33286,12 @@ STRING 5561
 // Abilities: AOae (Endurance Aura), Ubertip (Tooltip - Normal - Extended)
 {
 Increases nearby friendly units' movement speed by <AOae,DataA4,%>% and attack rate by <AOae,DataB4,%>%.
+}
+
+STRING 5562
+// Units: n08W (Ashtongue Lair), Ubertip (Tooltip - Extended)
+{
+Primary specialist production building.|n|r|cfff5962dTrains:|R Ashtongue Deathsworn, Ashtongue Mystic
 }
 
 STRING 5563
@@ -33046,6 +33508,12 @@ STRING 5598
 // Units: H09Z (Supreme Commander), Hotkey (Hotkey)
 {
 E
+}
+
+STRING 5599
+// Units: h09A (Draconic Spire), Name (Name)
+{
+Draconic Spire
 }
 
 STRING 5600
@@ -34369,6 +34837,18 @@ Small post for Militia Guards.|n|n|r|cfff5962dTrains:|R Men-at-arms
 |cfff5962dUpgrades Into:|R Training Camp|n|n|cffff000CCan only be built on the following control points:|r|n-Heartglen|n-Tirisfal Glade|n-Corin's Crossing|n-Andhoral|n-Havenshire|n-Strahnbrad|r
 }
 
+STRING 5820
+// Units: h09A (Draconic Spire), Tip (Tooltip - Basic)
+{
+Build Draconic Spire
+}
+
+STRING 5821
+// Units: n0AS (Whispering Labyrinth), Tip (Tooltip - Basic)
+{
+Upgrade to Whispering Labyrinth
+}
+
 STRING 5822
 // Abilities: ANcr (Chemical Rage), Ubertip (Tooltip - Normal - Extended)
 {
@@ -35018,7 +35498,7 @@ Summon Water Elemental - [|cffffcc00Level 4|r]
 }
 
 STRING 5930
-// Units: n0AS (Whispering Chambers), Hotkey (Hotkey)
+// Units: n0AS (Whispering Labyrinth), Hotkey (Hotkey)
 {
 C
 }
@@ -35027,6 +35507,12 @@ STRING 5931
 // Units: n0AT (Cathedral of Madness), Hotkey (Hotkey)
 {
 C
+}
+
+STRING 5932
+// Units: n0AS (Whispering Labyrinth), Name (Name)
+{
+Whispering Labyrinth
 }
 
 STRING 5933
@@ -35540,7 +36026,7 @@ STRING 6017
 }
 
 STRING 6018
-// Units: o03J (Voidfire Armory), Ubertip (Tooltip - Extended)
+// Units: o068 (Drakebone Armory), Ubertip (Tooltip - Extended)
 {
 Resource harvesting center and producer of Horde enhancements. |n|cfff5962dResearches:|R Weapon Upgdrades, Armor Upgrades, Spiked Barricades, Spiritual Infusion
 }
@@ -36223,6 +36709,12 @@ STRING 6131
 Calls down waves of Hinterland magic that damages nearby enemy units for <AEsb,DataA1> damage per wave. |n|cffffcc00Lasts for <AEsb,Dur1> seconds.
 }
 
+STRING 6132
+// Units: n0AW (Incubation Pool), Tip (Tooltip - Basic)
+{
+Build Incubation Pool
+}
+
 STRING 6133
 // Abilities: Anh2 (Heal), Unhotkey (Hotkey - Turn Off)
 {
@@ -36895,6 +37387,12 @@ STRING 6244
 Transforms the Demon Hunter into a powerful Demon with a ranged attack. Gives 525 bonus hit points and lasts 70 seconds. Got a 180 seconds cooldown.
 }
 
+STRING 6245
+// Units: n0AW (Incubation Pool), Ubertip (Tooltip - Extended)
+{
+Primary troop production building.|n|r|cfff5962dTrains:|R Faceless Marauder, Soul Hunter, Stygian Hulk
+}
+
 STRING 6246
 // Abilities: Afak (Orb of Annihilation), Unhotkey (Hotkey - Turn Off)
 {
@@ -37481,6 +37979,12 @@ STRING 6343
 // Abilities: AChx (Hex), Ubertip (Tooltip - Normal - Extended)
 {
 Transforms an enemy unit into a random critter for <AChx,Dur2> seconds. Lasts 2 seconds on heroes.
+}
+
+STRING 6344
+// Units: n0AW (Incubation Pool), Name (Name)
+{
+Incubation Pool
 }
 
 STRING 6345
@@ -38309,6 +38813,12 @@ STRING 6482
 // Abilities: S017 (Atrophy), Name (Name)
 {
 Atrophy
+}
+
+STRING 6483
+// Units: n0AX (Pit of Torment), Tip (Tooltip - Basic)
+{
+Build Pit of Torment
 }
 
 STRING 6484
@@ -39443,6 +39953,12 @@ STRING 6672
 // Abilities: A118 (Tidal Wave), Ubertip (Tooltip - Normal - Extended)
 {
 Sends a gigantic wave which deals 300 damage to each enemy land unit in a line, up to 1200 max damage.
+}
+
+STRING 6673
+// Units: n0AX (Pit of Torment), Ubertip (Tooltip - Extended)
+{
+Groaning pit of the most terrifying eldritch horrors.|n|r|cfff5962dTrains:|R Flying Horror, Deformed Chimera, Gladiator
 }
 
 STRING 6674
@@ -41056,6 +41572,12 @@ STRING 6942
 // Units: o03K (Burrow), Tip (Tooltip - Basic)
 {
 Build Twilight Burrow
+}
+
+STRING 6943
+// Units: n0AX (Pit of Torment), Name (Name)
+{
+Pit of Torment
 }
 
 STRING 6944
@@ -43568,6 +44090,12 @@ STRING 7358
 (Druids)
 }
 
+STRING 7359
+// Units: n0B3 (Shadow Lair), Name (Name)
+{
+Shadow Lair
+}
+
 STRING 7360
 // Abilities: A0WE (Consecration), Tip (Tooltip - Normal)
 {
@@ -44054,6 +44582,12 @@ STRING 7440
 Invisibility(LB)
 }
 
+STRING 7441
+// Units: n0B3 (Shadow Lair), Tip (Tooltip - Basic)
+{
+Build Shadow Lair
+}
+
 STRING 7442
 // Abilities: A0WO (Robo-Goblin), Hotkey (Hotkey - Normal)
 {
@@ -44112,6 +44646,12 @@ STRING 7451
 // Buffs/Effects: B06Z (), Bufftip (Tooltip)
 {
 Demon Heart
+}
+
+STRING 7452
+// Units: n0B3 (Shadow Lair), Ubertip (Tooltip - Extended)
+{
+Primary spellcaster production building.|n|r|cfff5962dTrains:|R Sorcerer, Fateweaver, Forgotten One|n|cfff5962dResearches:|R Sorcerer Adept Training, Fateweaver Adept Training
 }
 
 STRING 7453
@@ -44384,6 +44924,12 @@ STRING 7497
 Summons undead creatures from the ground to aid the necromancer in his battles. These summons are permanent.
 }
 
+STRING 7498
+// Units: o055 (Crystal Spire), EditorSuffix (Name - Editor Suffix)
+{
+(Draenei Specialist)
+}
+
 STRING 7499
 // Abilities: A0VF (Focused Will), Name (Name)
 {
@@ -44574,12 +45120,6 @@ STRING 7530
 // Abilities: A0V8 (Ancient Combat Expertise), Tip (Tooltip - Normal)
 {
 Ancient Combat Expertise
-}
-
-STRING 7531
-// Units: o03S (Kaja'Cola Laboratory), Ubertip (Tooltip - Extended)
-{
-Place for mad experimenting.|n|cfff5962dTrains:|R Alchemist, Wizard|n|cfff5962dResearches:|R Wizard Training, Alchemist Training
 }
 
 STRING 7532
@@ -44994,6 +45534,12 @@ STRING 7600
 // Abilities: A0UK (Fel Rift), Ubertip (Tooltip - Normal - Extended)
 {
 Sends forth a wave of fel energy in a line, dealing <A0UK,DataC3> damage and hurling enemy ground units into the air. Stuns units for <A0UK,Dur3> seconds and heroes for <A0UK,HeroDur3> seconds.
+}
+
+STRING 7601
+// Units: o059 (Shipyard), Name (Name)
+{
+Shipyard
 }
 
 STRING 7602
@@ -47240,6 +47786,12 @@ STRING 7975
 W
 }
 
+STRING 7976
+// Units: o059 (Shipyard), Tip (Tooltip - Basic)
+{
+Build Shipyard
+}
+
 STRING 7977
 // Abilities: A0S6 (Crow's Nest Lookout), Name (Name)
 {
@@ -47250,6 +47802,12 @@ STRING 7978
 // Abilities: A0S6 (Crow's Nest Lookout), Ubertip (Tooltip - Normal - Extended)
 {
 This ship has increased sight radius and can detect invisible units.
+}
+
+STRING 7979
+// Units: o059 (Shipyard), Ubertip (Tooltip - Extended)
+{
+Boat construction facility for the Draenei.|n|cfff5962dTrains:|R Transport Ship, Corvette, Cruiser |n|n|cff00c4c4Cannot be built near small inland water areas.|r
 }
 
 STRING 7980
@@ -47286,6 +47844,12 @@ STRING 7985
 // Abilities: A0S2 (Bombing Run), Name (Name)
 {
 Bombing Run
+}
+
+STRING 7986
+// Units: n0C7 (Royal Temple), Ubertip (Tooltip - Extended)
+{
+Primary production building for Spellcasters.|n|r|cfff5962dTrains:|R Bloodkin, Deepseer|n|cfff5962dResearches:|R Bloodkin Adept Training, Deepseer Adept Training
 }
 
 STRING 7987
@@ -47328,6 +47892,12 @@ STRING 7993
 // Abilities: ACd2 (Abolish Magic), Hotkey (Hotkey - Normal)
 {
 W
+}
+
+STRING 7994
+// Units: h0A9 (Manor), Ubertip (Tooltip - Extended)
+{
+Provides 8 food, which increases the maximum number of units that can be trained.
 }
 
 STRING 7995
@@ -48068,6 +48638,12 @@ STRING 8117
 W
 }
 
+STRING 8118
+// Units: u02N (Treasure Hoard), Name (Name)
+{
+Treasure Hoard
+}
+
 STRING 8119
 // Abilities: A11D (Dark Burst), Researchhotkey (Hotkey - Learn)
 {
@@ -48150,6 +48726,12 @@ STRING 8132
 // Abilities: A0RE (Solar Flare), Ubertip (Tooltip - Normal - Extended)
 {
 Stops all enemies in a target area from attacking and casting spells for 6(3) seconds.
+}
+
+STRING 8133
+// Units: u02N (Treasure Hoard), Tip (Tooltip - Basic)
+{
+Build Treasure Hoard
 }
 
 STRING 8134
@@ -49712,6 +50294,12 @@ STRING 8393
 Attacks combust <A0PB,DataA1>(<A0PB,DataC1> for Heros) mana on hit, dealing damage equal to the amount combusted.
 }
 
+STRING 8394
+// Units: o06D (Shipyard), Name (Name)
+{
+Shipyard
+}
+
 STRING 8395
 // Abilities: A0L3 (Animate Dead), Researchhotkey (Hotkey - Learn)
 {
@@ -50468,6 +51056,12 @@ STRING 8520
 Opens the gate.
 }
 
+STRING 8521
+// Units: o06D (Shipyard), Ubertip (Tooltip - Extended)
+{
+Boat construction facility for the Horde.|n|cfff5962dBuilds:|R Transport Ship, Frigate, Juggernaut |n|n|cff00c4c4Cannot be built near small inland water areas.|r
+}
+
 STRING 8522
 // Abilities: A0UA (Summon Ysondre), Researchhotkey (Hotkey - Learn)
 {
@@ -50846,6 +51440,12 @@ STRING 8584
 This unit strikes with such force that <A0NE,DataA1,%>% of their damage strikes through to enemies near the primary attacked unit.
 }
 
+STRING 8585
+// Units: o06D (Shipyard), Tip (Tooltip - Basic)
+{
+Build Shipyard
+}
+
 STRING 8586
 // Abilities: A0T7 (Greater Holy Light), Hotkey (Hotkey - Normal)
 {
@@ -50912,10 +51512,40 @@ STRING 8596
 Pillar of Waves
 }
 
+STRING 8597
+// Units: h0AG (Shipyard), Name (Name)
+{
+Shipyard
+}
+
+STRING 8598
+// Units: h0AG (Shipyard), Tip (Tooltip - Basic)
+{
+Build Shipyard
+}
+
 STRING 8599
 // Units: n0C9 (Temple of Tides), Ubertip (Tooltip - Extended)
 {
 Primary structure, used to train Mur'gul Slaves, Royal Guards and receive gathered resources. Also contains the Submerge upgrade.
+}
+
+STRING 8600
+// Units: h0AG (Shipyard), Ubertip (Tooltip - Extended)
+{
+Boat construction facility for the Scarlet Crusade.|n|cfff5962dTrains:|R Transport Ship, Destroyer, Battleship|R|n|n|cff00c4c4Cannot be built near small inland water areas.
+}
+
+STRING 8601
+// Units: h0AK (Menethil Harbor), Tip (Tooltip - Basic)
+{
+Build Shipyard
+}
+
+STRING 8602
+// Destructibles: B012 (Tent), Name (Name)
+{
+Tent
 }
 
 STRING 8603
@@ -51201,7 +51831,7 @@ Build Kezan Trading Center
 }
 
 STRING 8651
-// Units: o03I (Voidwater Dock), Ubertip (Tooltip - Extended)
+// Units: o05F (Naval Battery), Ubertip (Tooltip - Extended)
 {
 Boat construction facility for the Horde.|n|cfff5962dBuilds:|R Horde Transport Ships, Frigates, Juggernauts |n|n|cff00c4c4Cannot be built near small inland water areas.|r
 }
@@ -57579,7 +58209,7 @@ Causes this unit to attack <A0F5,DataB1,%>% faster, but take <A0F5,DataC1,%>% mo
 }
 
 STRING 9719
-// Abilities: A0D4 (Ironforge Aura), EditorSuffix (Editor Suffix)
+// Upgrades: Rhri (Long Rifles), EditorSuffix (Editor Suffix)
 {
 (Ironforge)
 }
@@ -59936,12 +60566,6 @@ STRING 10113
 Worgen Fury
 }
 
-STRING 10114
-// Units: u02N (Pillager's Hoard), Tip (Tooltip - Basic)
-{
-Summon Voodoo Lounge
-}
-
 STRING 10115
 // Units: n04B (Gishan Caverns (10gold/min)), Name (Name)
 {
@@ -60141,7 +60765,7 @@ Hurls a bolt of lightning that bounces up to 6 times, dealing 75 damage to the p
 }
 
 STRING 10148
-// Upgrades: Rhri (Long Rifles), EditorSuffix (Editor Suffix)
+// Upgrades: Rhfl (Flare), EditorSuffix (Editor Suffix)
 {
 (Ironforge)
 }
@@ -60165,7 +60789,7 @@ Gives 5% extra damage to the attacks of nearby friendly units.
 }
 
 STRING 10152
-// Upgrades: Rhfl (Flare), EditorSuffix (Editor Suffix)
+// Upgrades: R05Q (Chaos), EditorSuffix (Editor Suffix)
 {
 (Ironforge)
 }
@@ -64534,7 +65158,7 @@ C
 }
 
 STRING 10884
-// Units: u02N (Pillager's Hoard), Hotkey (Hotkey)
+// Units: u02N (Treasure Hoard), Hotkey (Hotkey)
 {
 C
 }
@@ -74964,12 +75588,6 @@ STRING 12637
 Open the Gates of Ahn'Qiraj
 }
 
-STRING 12638
-// Units: e01B (Arcane Annihilator), EditorSuffix (Name - Editor Suffix)
-{
-(quelthalas)
-}
-
 STRING 12639
 // Abilities: A01Q (Shadow Aura), Tip (Tooltip - Normal)
 {
@@ -83024,7 +83642,7 @@ Summons 2 Fel Hounds with Mana Burn to attack the heroes enemies. |n|n|cffffcc00
 }
 
 STRING 13988
-// Upgrades: R05Q (Chaos), EditorSuffix (Editor Suffix)
+// Upgrades: R05P (Priest Adept Training,Priest Master Training), EditorSuffix (Editor Suffix)
 {
 (Ironforge)
 }
@@ -83402,7 +84020,7 @@ C
 }
 
 STRING 14051
-// Upgrades: R05P (Priest Adept Training,Priest Master Training), EditorSuffix (Editor Suffix)
+// Upgrades: R014 (Priest Adept Training,Priest Master Training), EditorSuffix (Editor Suffix)
 {
 (Ironforge)
 }
@@ -84698,7 +85316,7 @@ Summons 4 Fel Hounds with Mana Burn to attack the heroes enemies. |n|n|cffffcc00
 }
 
 STRING 14276
-// Upgrades: R014 (Priest Adept Training,Priest Master Training), EditorSuffix (Editor Suffix)
+// Upgrades: R010 (Control Magic), EditorSuffix (Editor Suffix)
 {
 (Ironforge)
 }
@@ -84710,7 +85328,7 @@ Quest Completed: Gnomeregan
 }
 
 STRING 14278
-// Upgrades: R010 (Control Magic), EditorSuffix (Editor Suffix)
+// Upgrades: R00Z (Defend), EditorSuffix (Editor Suffix)
 {
 (Ironforge)
 }
@@ -86557,12 +87175,6 @@ STRING 14590
 W
 }
 
-STRING 14591
-// Units: o06E (Dragonmaw Port), Name (Name)
-{
-Dragonmaw Port
-}
-
 STRING 14592
 // Upgrades: R06K (Defend), Hotkey (Hotkey)
 {
@@ -87302,7 +87914,7 @@ Enslaved Dragon
 }
 
 STRING 14721
-// Units: o02W (Bonechewer Barracks), Ubertip (Tooltip - Extended)
+// Units: o02W (Barracks), Ubertip (Tooltip - Extended)
 {
 Home to the warriors of the Fel Horde.|n|cfff5962dTrains:|R Fel Grunt, Crossbowman, Demolisher|n|cfff5962dResearches:|R Fel Infused Skeleton, Demonic Flux, Improved Self-Bloodlust, Burning Oil
 }
@@ -88112,7 +88724,7 @@ Purchase Summon Workers
 }
 
 STRING 14865
-// Upgrades: R00Z (Defend), EditorSuffix (Editor Suffix)
+// Upgrades: R00V (Priest Adept Training,Priest Master Training), EditorSuffix (Editor Suffix)
 {
 (Ironforge)
 }
@@ -88190,7 +88802,7 @@ Quest Completed: Felsteel Refining
 }
 
 STRING 14880
-// Upgrades: R00V (Priest Adept Training,Priest Master Training), EditorSuffix (Editor Suffix)
+// Upgrades: R00F (Control Magic), EditorSuffix (Editor Suffix)
 {
 (Ironforge)
 }
@@ -88226,7 +88838,7 @@ Improves War Golems' Spell Resistance by causing it to reduce the damage taken f
 }
 
 STRING 14886
-// Upgrades: R00F (Control Magic), EditorSuffix (Editor Suffix)
+// Upgrades: R08K (Priest Adept Training,Priest Master Training), EditorSuffix (Editor Suffix)
 {
 (Ironforge)
 }
@@ -91406,12 +92018,6 @@ STRING 15430
 (faction select)
 }
 
-STRING 15431
-// Units: h067 (Laboratory), Ubertip (Tooltip - Extended)
-{
-Place of magical experimentation and research.|n|cfff5962dTrains:|R Earth Golem, Crystal Artillery, Blue Dragon
-}
-
 STRING 15432
 // Units: h063 (Arcane Well), Name (Name)
 {
@@ -91772,12 +92378,6 @@ STRING 15491
 |cffc3dbffRight-click to deactivate auto-casting.|r
 }
 
-STRING 15492
-// Units: n08V (Depth Void Portal), Name (Name)
-{
-Depth Void Portal
-}
-
 STRING 15493
 // Units: e01N (Azerite Siege Engine), Name (Name)
 {
@@ -91794,12 +92394,6 @@ STRING 15495
 // Abilities: A0DA (Summon Mur'gul), Tip (Tooltip - Normal)
 {
 Summon Mur'gul - [|cffffcc00Level 3|r]
-}
-
-STRING 15496
-// Units: n04L (Infernal Juggernaut), Ubertip (Tooltip - Extended)
-{
-Hellforged contraption of doom.|n|cfff5962dCan learn:|R Inferno|n|n|cff99b4d1Can only build 6.|r|n|cffffcc00Attacks land units.|r
 }
 
 STRING 15497
@@ -93057,12 +93651,6 @@ STRING 15709
 Basic worker. Can summon and restore structures.|n|cfff5962dAbilities:|R Shadow Infusion|n|n|cffffcc00Attacks land units.|r
 }
 
-STRING 15710
-// Units: u009 (Accursed Harbor), Ubertip (Tooltip - Extended)
-{
-Boat construction facility for the legion.|n|cfff5962dTrains:|R Haunted Transport Ship, Corsair, Dreadnought|R|n|n|cff00c4c4Cannot be built near small inland water areas.|r
-}
-
 STRING 15711
 // Units: o035 (Improved Watch Tower), Ubertip (Tooltip - Extended)
 {
@@ -93109,12 +93697,6 @@ STRING 15718
 // Units: h02Q (Pegasus Knight), Ubertip (Tooltip - Extended)
 {
 Swift flying unit. |n|cfff5962dAbilities:|R Cloud, Shackles|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks air units.|r
-}
-
-STRING 15719
-// Units: n04N (Infernal Machine Factory), Ubertip (Tooltip - Extended)
-{
-Gore filled structure of bodily desecration.|n|cfff5962dTrains:|R Infernal Juggernaut, Sky Barge
 }
 
 STRING 15720
@@ -93199,12 +93781,6 @@ STRING 15733
 // Abilities: A0M1 (Tidal Serpent), Name (Name)
 {
 Tidal Serpent
-}
-
-STRING 15734
-// Units: o06D (Dragonmaw Port), Tip (Tooltip - Basic)
-{
-Build Dragonmaw Port
 }
 
 STRING 15735
@@ -93292,7 +93868,7 @@ Anti Portal Blocking
 }
 
 STRING 15749
-// Units: o04M (Kezan Trading Center), Ubertip (Tooltip - Extended)
+// Units: o05I (Missile Battery), Ubertip (Tooltip - Extended)
 {
 Boat construction facility for the Horde.|n|cfff5962dBuilds:|R Horde Transport Ships, Frigates, Juggernauts |n|n|cff00c4c4Cannot be built near small inland water areas.|r
 }
@@ -94528,7 +95104,7 @@ Build Altar of Admirals
 }
 
 STRING 15985
-// Units: h07N (Homestead), Ubertip (Tooltip - Extended)
+// Units: h02F (Household), Ubertip (Tooltip - Extended)
 {
 Provides 8 food, which increases the maximum number of units that can be trained.
 }
@@ -94636,15 +95212,9 @@ Q
 }
 
 STRING 16007
-// Units: h07W (Shipyard), Name (Name)
+// Units: o02T (Shipyard), Name (Name)
 {
 Shipyard
-}
-
-STRING 16009
-// Units: h07W (Shipyard), Ubertip (Tooltip - Extended)
-{
-Boat construction facility for the Alliance.|n|cfff5962dTrains:|R Alliance Transport Ship, Destroyer, Battleship|n|n|cff00c4c4Cannot be built near small inland water areas.
 }
 
 STRING 16010
@@ -94901,12 +95471,6 @@ STRING 16055
 Corrupt Blood - [|cffffcc00Level 1|r]
 }
 
-STRING 16056
-// Units: o05F (Naval Battery), Ubertip (Tooltip - Extended)
-{
-Boat construction facility for the Horde.|n|cfff5962dBuilds:|R Horde Transport Ships, Frigates, Juggernauts |n|n|cff00c4c4Cannot be built near small inland water areas.|r
-}
-
 STRING 16058
 // Abilities: A0OK (Corrupt Blood), Tip (Tooltip - Normal)
 {
@@ -95064,7 +95628,7 @@ Q
 }
 
 STRING 16093
-// Units: o03Q (Hobgoblin Mill), Ubertip (Tooltip - Extended)
+// Units: o042 (War Mill), Ubertip (Tooltip - Extended)
 {
 Resource harvesting center and producer of Horde enhancements. |n|cfff5962dResearches:|R Weapon Upgdrades, Armor Upgrades, Reinforced Defenses, Spiked Barricades, Spiritual Infusion|n
 }
@@ -95097,12 +95661,6 @@ STRING 16101
 // Items: kysn (Trading Gold), Tip (Tooltip - Basic)
 {
 Trading Gold
-}
-
-STRING 16102
-// Units: o05I (Missile Battery), Ubertip (Tooltip - Extended)
-{
-Boat construction facility for the Horde.|n|cfff5962dBuilds:|R Horde Transport Ships, Frigates, Juggernauts |n|n|cff00c4c4Cannot be built near small inland water areas.|r
 }
 
 STRING 16104
@@ -95235,12 +95793,6 @@ STRING 16134
 // Units: n07W (Plague Revenant), Tip (Tooltip - Basic)
 {
 Train Plague Revenant
-}
-
-STRING 16136
-// Units: o042 (War Mill), Ubertip (Tooltip - Extended)
-{
-Resource harvesting center and producer of Horde enhancements. |n|cfff5962dResearches:|R Weapon Upgdrades, Armor Upgrades, Reinforced Defenses, Spiked Barricades, Spiritual Infusion|n
 }
 
 STRING 16138
@@ -95512,7 +96064,7 @@ STRING 16189
 }
 
 STRING 16191
-// Units: o047 (Grand Bazaar), Ubertip (Tooltip - Extended)
+// Units: o047 (Bazaar), Ubertip (Tooltip - Extended)
 {
 Creates a shop with purchasable items.
 }
@@ -95695,12 +96247,6 @@ STRING 16227
 // Units: h086 (Field Stockpile), Ubertip (Tooltip - Extended)
 {
 Creates a shop with purchasable items.
-}
-
-STRING 16231
-// Units: u01A (Ghostly Harbor), Ubertip (Tooltip - Extended)
-{
-Boat construction facility for the Evil factions.|n|cfff5962dTrains:|R Haunted Transport Ships, Corsairs, Dreadnoughts|R|n|n|cff00c4c4Cannot be built near small inland water areas.|r
 }
 
 STRING 16235
@@ -95907,12 +96453,6 @@ STRING 16273
 Summon Altar of the Queen
 }
 
-STRING 16274
-// Units: u011 (Ossuary), Ubertip (Tooltip - Extended)
-{
-Grim Training Hall for the Forsaken.|n|cfff5962dTrains:|R Ghoul, Crypt Fiend, Gargoyles|n|cfff5962dResearches:|R Ghoul Frenzy, Web, Piercing Screech
-}
-
 STRING 16277
 // Abilities: A066 (Toughness), Researchubertip (Tooltip - Learn - Extended)
 {
@@ -95941,12 +96481,6 @@ STRING 16285
 // Units: h08E (Plague Tower), Name (Name)
 {
 Plague Tower
-}
-
-STRING 16286
-// Units: h08E (Plague Tower), Tip (Tooltip - Basic)
-{
-Upgrade to Plague Tower
 }
 
 STRING 16287
@@ -97185,12 +97719,6 @@ STRING 16511
 Quest Completed: The Brothers Stormrage
 }
 
-STRING 16512
-// Units: n08V (Depth Void Portal), Tip (Tooltip - Basic)
-{
-Build - Depth Void Portal
-}
-
 STRING 16513
 // Items: I00G (Summon Farmers), Description (Description)
 {
@@ -98389,12 +98917,6 @@ STRING 16724
 // Units: o06A (Improved High Watchtower), Ubertip (Tooltip - Extended)
 {
 Defensive structure.|n|cfff5962dCan learn:|R Spiked Barricades |n|n|cffffcc00Attacks land and air units.|r
-}
-
-STRING 16727
-// Units: o068 (Drakebone Armory), Ubertip (Tooltip - Extended)
-{
-Resource harvesting center and producer of Horde enhancements. |n|cfff5962dResearches:|R Weapon Upgdrades, Armor Upgrades, Spiked Barricades, Spiritual Infusion
 }
 
 STRING 16728
@@ -100905,18 +101427,6 @@ STRING 17151
 (Pink - Farseer)
 }
 
-STRING 17153
-// Units: h09A (Draconian Spire), Name (Name)
-{
-Draconian Spire
-}
-
-STRING 17154
-// Units: h09A (Draconian Spire), Tip (Tooltip - Basic)
-{
-Build Draconian Spire
-}
-
 STRING 17155
 // Units: h09B (Blue Dragon Roost), Name (Name)
 {
@@ -101080,7 +101590,7 @@ Strongest breed of Draconian warriors.|n|cfff5962dAbilities:|R  Devour Magic, Br
 }
 
 STRING 17183
-// Units: h09A (Draconian Spire), Ubertip (Tooltip - Extended)
+// Units: h09A (Draconic Spire), Ubertip (Tooltip - Extended)
 {
 Primary production building for the Nexus.|n|cfff5962dTrains:|R Zealot, Initiate Mage, Dragonspawn|n|cfff5962dResearches:|R Improved Slow
 }
@@ -101728,12 +102238,6 @@ STRING 17292
 Altar of Visions
 }
 
-STRING 17296
-// Units: n0AS (Whispering Chambers), Name (Name)
-{
-Whispering Chambers
-}
-
 STRING 17298
 // Units: n0AT (Cathedral of Madness), Name (Name)
 {
@@ -101744,18 +102248,6 @@ STRING 17300
 // Units: n0AU (Pulsating Portal), Name (Name)
 {
 Pulsating Portal
-}
-
-STRING 17304
-// Units: n0AX (Prison of Unspeakable Horrors), Tip (Tooltip - Basic)
-{
-Build - Prison of Unspeakable Horrors
-}
-
-STRING 17305
-// Units: n0AX (Prison of Unspeakable Horrors), Name (Name)
-{
-Prison of Unspeakable Horrors
 }
 
 STRING 17306
@@ -102521,7 +103013,7 @@ Primary structure, used to train Scavengers and receive gathered resources.
 }
 
 STRING 17445
-// Units: n0AS (Whispering Chambers), Ubertip (Tooltip - Extended)
+// Units: n0AS (Whispering Labyrinth), Ubertip (Tooltip - Extended)
 {
 Primary structure, used to train Scavenger and receive gathered resources.
 }
@@ -104692,18 +105184,6 @@ STRING 17822
 Build Crystal Protector
 }
 
-STRING 17824
-// Units: o059 (Draenei Shipyard), Name (Name)
-{
-Draenei Shipyard
-}
-
-STRING 17825
-// Units: o059 (Draenei Shipyard), Tip (Tooltip - Basic)
-{
-Build Draenei Shipyard
-}
-
 STRING 17826
 // Abilities: A0YJ (Inner Fire), Ubertip (Tooltip - Normal - Extended)
 {
@@ -104996,12 +105476,6 @@ STRING 17879
 // Abilities: A0SD (Consecrated Slam), EditorSuffix (Editor Suffix)
 {
 (draenei)
-}
-
-STRING 17880
-// Units: o059 (Draenei Shipyard), Ubertip (Tooltip - Extended)
-{
-Boat construction facility for the Draenei.|n|cfff5962dTrains:|R Horde Transport Ships, Corvette, Cruiser |n|n|cff00c4c4Cannot be built near small inland water areas.|r
 }
 
 STRING 17882
@@ -105626,12 +106100,6 @@ STRING 17991
 // Units: o05F (Naval Battery), Tip (Tooltip - Basic)
 {
 Build Kezan Trading Center
-}
-
-STRING 17992
-// Units: o06D (Dragonmaw Port), Ubertip (Tooltip - Extended)
-{
-Boat construction facility for the Horde.|n|cfff5962dBuilds:|R Horde Transport Ships, Frigates, Juggernauts |n|n|cff00c4c4Cannot be built near small inland water areas.|r
 }
 
 STRING 17993
@@ -106672,12 +107140,6 @@ STRING 18171
 Summon Forbidden Archive
 }
 
-STRING 18172
-// Units: u01W (Royal Sepulcrum), Ubertip (Tooltip - Extended)
-{
-Royal Quarters of Undercity. |n|cfff5962dTrains:|R Undercity Guardians, Valkyrs, Elder Banshees
-}
-
 STRING 18173
 // Upgrades: R088 (Iron Plating,Steel Plating,Mithril Plating), EditorSuffix (Editor Suffix)
 {
@@ -107316,7 +107778,7 @@ STRING 18279
 }
 
 STRING 18280
-// Units: h0AG (Scarlet Harbor), Ubertip (Tooltip - Extended)
+// Units: h0AK (Menethil Harbor), Ubertip (Tooltip - Extended)
 {
 Boat construction facility for the Alliance.|n|cfff5962dTrains:|R Alliance Transport Ship, Destroyer, Battleship|R|n|n|cff00c4c4Cannot be built near small inland water areas.
 }
@@ -108197,12 +108659,6 @@ STRING 18427
 (Ironforge)
 }
 
-STRING 18428
-// Upgrades: R08K (Priest Adept Training,Priest Master Training), EditorSuffix (Editor Suffix)
-{
-(Ironforge)
-}
-
 STRING 18430
 // Units: n0CG (Core Hound), EditorSuffix (Name - Editor Suffix)
 {
@@ -108671,12 +109127,6 @@ STRING 18508
 The Pit Lord lets loose a terrifying howl that reduces nearby enemy units' attack damage by <ANht,DataA6,%>% for <ANht,Dur6> seconds.
 }
 
-STRING 18509
-// Units: n0AA (Control Point Defender), Ubertip (Tooltip - Extended)
-{
-Fires massive boulders upon its foes.|n|cfff5962dUpgrades Into:|R Improved Flame Pillar|n|n|cffffcc00Attacks land units.|r
-}
-
 STRING 18510
 // Units: h0AC (Naga Sea Witch), Name (Name)
 {
@@ -108918,7 +109368,7 @@ Q
 }
 
 STRING 18559
-// Units: h0A9 (Manor), Ubertip (Tooltip - Extended)
+// Units: h07N (Homestead), Ubertip (Tooltip - Extended)
 {
 Provides 8 food, which increases the maximum number of units that can be trained.
 }
@@ -109462,12 +109912,6 @@ STRING 18664
 // Abilities: A0WQ (Locust Swarm), Hotkey (Hotkey - Normal)
 {
 R
-}
-
-STRING 18665
-// Units: n08V (Depth Void Portal), Ubertip (Tooltip - Extended)
-{
-Trains Immortal Guardian and Trench Hydra
 }
 
 STRING 18666
@@ -110160,12 +110604,6 @@ STRING 18782
 Cremate
 }
 
-STRING 18783
-// Units: n0A3 (Coilfang Archive), Name (Name)
-{
-Coilfang Archive
-}
-
 STRING 18784
 // Abilities: A0X0 (Cremate), Ubertip (Tooltip - Normal - Extended)
 {
@@ -110353,55 +110791,55 @@ STRING 18817
 }
 
 STRING 18818
-// Units: nntg (Tidal Watcher), EditorSuffix (Name - Editor Suffix)
-{
- (Illidari)
-}
-
-STRING 18819
 // Units: nnsu (Coilfang Summoner), EditorSuffix (Name - Editor Suffix)
 {
  (Illidari)
 }
 
-STRING 18820
-// Units: nnsg (Wrathfin Spawnery), EditorSuffix (Name - Editor Suffix)
-{
- (Illidari)
-}
-
-STRING 18821
-// Units: nnsa (Bloodscale Clutchery), EditorSuffix (Name - Editor Suffix)
-{
- (Illidari)
-}
-
-STRING 18822
+STRING 18819
 // Units: nnrg (Naga Royal Guard), EditorSuffix (Name - Editor Suffix)
 {
  (Illidari)
 }
 
-STRING 18823
-// Units: nnfm (Incubation Pool), EditorSuffix (Name - Editor Suffix)
-{
- (Illidari)
-}
-
-STRING 18824
-// Units: nnad (Altar of the Betrayer), EditorSuffix (Name - Editor Suffix)
-{
- (Illidari)
-}
-
-STRING 18825
+STRING 18820
 // Units: nmyr (Naga Myrmidon), EditorSuffix (Name - Editor Suffix)
 {
  (Illidari)
 }
 
-STRING 18826
+STRING 18821
 // Units: nmsc (Mur'gul Shadowcaster), EditorSuffix (Name - Editor Suffix)
+{
+ (Illidari)
+}
+
+STRING 18822
+// Units: nhyc (Dragon Turtle), EditorSuffix (Name - Editor Suffix)
+{
+ (Illidari)
+}
+
+STRING 18823
+// Units: ndrs (Ashtongue Mystic), EditorSuffix (Name - Editor Suffix)
+{
+ (Illidari)
+}
+
+STRING 18824
+// Units: ndrn (Ashtongue Deathsworn), EditorSuffix (Name - Editor Suffix)
+{
+ (Illidari)
+}
+
+STRING 18825
+// Units: Eill (The Betrayer), EditorSuffix (Name - Editor Suffix)
+{
+ (Illidari)
+}
+
+STRING 18826
+// Units: Eevi (Betrayer), EditorSuffix (Name - Editor Suffix)
 {
  (Illidari)
 }
@@ -110419,25 +110857,25 @@ V
 }
 
 STRING 18829
-// Units: nhyc (Dragon Turtle), EditorSuffix (Name - Editor Suffix)
+// Units: nnsw (Naga Siren), EditorSuffix (Name - Editor Suffix)
 {
  (Illidari)
 }
 
 STRING 18830
-// Units: ndrs (Ashtongue Mystic), EditorSuffix (Name - Editor Suffix)
+// Units: nsnp (Snap Dragon), EditorSuffix (Name - Editor Suffix)
 {
  (Illidari)
 }
 
 STRING 18831
-// Units: ndrn (Ashtongue Deathsworn), EditorSuffix (Name - Editor Suffix)
+// Units: Hvsh (Sea Witch), EditorSuffix (Name - Editor Suffix)
 {
  (Illidari)
 }
 
 STRING 18832
-// Units: Eill (The Betrayer), EditorSuffix (Name - Editor Suffix)
+// Units: e00Y (Scylla), EditorSuffix (Name - Editor Suffix)
 {
  (Illidari)
 }
@@ -110448,40 +110886,10 @@ STRING 18833
  (Nzoth)
 }
 
-STRING 18834
-// Units: Eevi (Betrayer), EditorSuffix (Name - Editor Suffix)
-{
- (Illidari)
-}
-
-STRING 18835
-// Units: nnsw (Naga Siren), EditorSuffix (Name - Editor Suffix)
-{
- (Illidari)
-}
-
 STRING 18836
 // Units: H0A5 (Sea Witch), EditorSuffix (Name - Editor Suffix)
 {
  (Nzoth)
-}
-
-STRING 18837
-// Units: nsnp (Snap Dragon), EditorSuffix (Name - Editor Suffix)
-{
- (Illidari)
-}
-
-STRING 18838
-// Units: Hvsh (Sea Witch), EditorSuffix (Name - Editor Suffix)
-{
- (Illidari)
-}
-
-STRING 18839
-// Units: e00Y (Scylla), EditorSuffix (Name - Editor Suffix)
-{
- (Illidari)
 }
 
 STRING 18841
@@ -110548,12 +110956,6 @@ STRING 18868
 // Abilities: ANrc (Rain of Chaos), EditorSuffix (Editor Suffix)
 {
 (Legion, Archimonde, Mannoroth)
-}
-
-STRING 18869
-// Units: n0BB (Control Point Defender), Tip (Tooltip - Basic)
-{
-Build - Tidal Watcher
 }
 
 STRING 18870
@@ -112543,7 +112945,7 @@ Menethil Harbor
 }
 
 STRING 19224
-// Units: h03H (Shipyard), Tip (Tooltip - Basic)
+// Units: o02T (Shipyard), Tip (Tooltip - Basic)
 {
 Build Shipyard
 }
@@ -112572,22 +112974,10 @@ STRING 19228
 X
 }
 
-STRING 19229
-// Units: h0AK (Menethil Harbor), Ubertip (Tooltip - Extended)
-{
-Boat construction facility for the Alliance.|n|cfff5962dTrains:|R Alliance Transport Ship, Destroyer, Battleship|R|n|n|cff00c4c4Cannot be built near small inland water areas.
-}
-
 STRING 19230
 // Abilities: A0XB (Decapitate), Researchhotkey (Hotkey - Learn)
 {
 R
-}
-
-STRING 19231
-// Units: nntt (Betrayer's Reservoir), Ubertip (Tooltip - Extended)
-{
-Primary structure.|n|cff6480ff|cfff5962dTrains:|R Mur'gul Slave|n|cfff5962dUpgrades to:|R Steamwork Spire
 }
 
 STRING 19232
@@ -112949,12 +113339,6 @@ STRING 19298
 // Units: h0AJ (Gnoll Overseer), Ubertip (Tooltip - Extended)
 {
 Powerful Gnoll Leader.|n|cfff5962dAbilities:|R Earth Healing, Taunt, Bash|n|cff99b4d1Can only train 4.|r|n|cffffcc00Attacks land units.|r
-}
-
-STRING 19299
-// Units: nnsg (Wrathfin Spawnery), Tip (Tooltip - Basic)
-{
-Build Wrathfin Spawnery
 }
 
 STRING 19300
@@ -113359,12 +113743,6 @@ STRING 19366
 Build Altar of the Depth
 }
 
-STRING 19367
-// Units: nnsg (Wrathfin Spawnery), Ubertip (Tooltip - Extended)
-{
-A writhing spawning ground for the Illidari Naga.|n|n|r|cfff5962dTrains:|R Naga Myrmidon, Snap Dragon, Dragon Turtle
-}
-
 STRING 19368
 // Units: e01S (Altar of the Depth), Name (Name)
 {
@@ -113489,12 +113867,6 @@ STRING 19391
 // Abilities: A10I (Demon Rage), EditorSuffix (Editor Suffix)
 {
 (Illidan)
-}
-
-STRING 19392
-// Units: nnsg (Wrathfin Spawnery), Name (Name)
-{
-Wrathfin Spawnery
 }
 
 STRING 19393
@@ -113711,12 +114083,6 @@ STRING 19428
 // Upgrades: Rosp (Spiked Barricades,Improved Spiked Barricades,Advanced Spiked Barricades), Hotkey (Hotkey)
 {
 R
-}
-
-STRING 19429
-// Units: nnsa (Bloodscale Clutchery), Tip (Tooltip - Basic)
-{
-Build Bloodscale Clutchery
 }
 
 STRING 19430
@@ -113971,12 +114337,6 @@ STRING 19472
 Hurls a flask of plague at a target.  The flask breaks upon impact, splashing a powerful plague on nearby hostile units.|nDecreases armor; deals high damage over time to the primary target; deals slightly less damage over time to nearby targets.|nLasts 15 seconds.|n|n|cffffcc00Level 1|r - 15 max damage per second, reduces armor by 3 .|n|cffffcc00Level 2|r - 20 max damage per second, reduces armor by 4.|n|cffffcc00Level 3|r - 25 max damage per second, reduces armor by 5. |n|cffffcc00Level 4|r - 30 max damage per second, reduces armor by 6.
 }
 
-STRING 19474
-// Units: nnsa (Bloodscale Clutchery), Ubertip (Tooltip - Extended)
-{
-The reeking clutchery of the Illidari, from which come it's dreadful beasts of the sky.|n|n|r|cfff5962dTrains:|R Couatl, Scylla
-}
-
 STRING 19475
 // Upgrades: R094 (Chaos), Name (Name)
 {
@@ -114025,12 +114385,6 @@ STRING 19482
 Opens a two-way portal to Nagrand at the target location within a range of <A00D,Rng1>. The portal becomes useable after 5 seconds, and closes 10 seconds after the caster stops channeling.
 }
 
-STRING 19483
-// Units: nnsa (Bloodscale Clutchery), Name (Name)
-{
-Bloodscale Clutchery
-}
-
 STRING 19484
 // Units: nnfm (Incubation Pool), Tip (Tooltip - Basic)
 {
@@ -114047,12 +114401,6 @@ STRING 19486
 // Items: I017 (Portal to Nagrand), Description (Description)
 {
 Transports troops to Nagrand.
-}
-
-STRING 19487
-// Units: nnfm (Incubation Pool), Ubertip (Tooltip - Extended)
-{
-A pool filled with swarming tadpoles and luminescent red eggs.|nProvides 8 food, which increases the maximum number of units that can be trained.
 }
 
 STRING 19488
@@ -114163,32 +114511,14 @@ STRING 19505
 Ashtongue Deathsworn
 }
 
-STRING 19506
-// Units: n0A3 (Coilfang Archive), Ubertip (Tooltip - Extended)
-{
-The drowned halls of knowledge, kept by the Coilfang and Mur'gul intelligent enough to read.|n|n|r|cfff5962dTrains:|R Naga Siren, Mur'gul Shadowcaster, Coilfang Summoner|n|cfff5962dResearches:|r Power Infusion, Shadowcaster Adept Training, Naga Siren Adept Training
-}
-
 STRING 19507
 // Units: h05N (Marksman), EditorSuffix (Name - Editor Suffix)
 {
  (Stormwind)
 }
 
-STRING 19508
-// Units: h06S (Coilskar Forgeworks), Name (Name)
-{
-Coilskar Forgeworks
-}
-
-STRING 19509
-// Units: h06S (Coilskar Forgeworks), Tip (Tooltip - Basic)
-{
-Build Coilskar Forgeworks
-}
-
 STRING 19510
-// Units: h06S (Coilskar Forgeworks), Ubertip (Tooltip - Extended)
+// Units: h06S (Steamworks), Ubertip (Tooltip - Extended)
 {
 Mur'gul slaves toil to provide the Illidari with ever-improving weapons and armour.|n|n|cfff5962dResearches: |RForged Weaponry, Armour Plating, Power Infusion|n
 }
@@ -114287,12 +114617,6 @@ STRING 19526
 // Units: n08W (Ashtongue Lair), Tip (Tooltip - Basic)
 {
 Build Ashtongue Lair
-}
-
-STRING 19527
-// Units: n08W (Ashtongue Lair), Ubertip (Tooltip - Extended)
-{
-A mustering hall to the most vicious and bloodthirsty Broken, handpicked by Akama himself for their loyalty to Illidan. |n|n|r|cfff5962dTrains:|R Ashtongue Deathsworn, Ashtongue Mystic
 }
 
 STRING 19528
@@ -114793,12 +115117,6 @@ STRING 19622
  (Scourge Other)
 }
 
-STRING 19623
-// Units: u00Q (Fel-iron Treasury), Name (Name)
-{
-Fel-iron Treasury
-}
-
 STRING 19624
 // Units: u00I (Improved Soul Tower), EditorSuffix (Name - Editor Suffix)
 {
@@ -114842,21 +115160,9 @@ Summon Soul Prison
 }
 
 STRING 19631
-// Units: u009 (Accursed Harbor), EditorSuffix (Name - Editor Suffix)
+// Units: u009 (Shipyard), EditorSuffix (Name - Editor Suffix)
 {
 (Legion Shipyard)
-}
-
-STRING 19632
-// Units: u009 (Accursed Harbor), Name (Name)
-{
-Accursed Harbor
-}
-
-STRING 19633
-// Units: u009 (Accursed Harbor), Tip (Tooltip - Basic)
-{
-Summon Accursed Harbor
 }
 
 STRING 19634
@@ -114896,45 +115202,21 @@ STRING 19639
 }
 
 STRING 19640
-// Units: o033 (Spirit Lodge), EditorSuffix (Name - Editor Suffix)
+// Units: o033 (Dark Enclave), EditorSuffix (Name - Editor Suffix)
 {
  (Fel Horde Magic)
 }
 
 STRING 19641
-// Units: o032 (Fel-iron Harbor), EditorSuffix (Name - Editor Suffix)
+// Units: o032 (Shipyard), EditorSuffix (Name - Editor Suffix)
 {
  (Fel Horde Shipyard)
 }
 
-STRING 19642
-// Units: o032 (Fel-iron Harbor), Name (Name)
-{
-Fel-iron Harbor
-}
-
-STRING 19643
-// Units: o032 (Fel-iron Harbor), Tip (Tooltip - Basic)
-{
-Build Fel-iron Harbor
-}
-
 STRING 19644
-// Units: o031 (Blood Furnace), EditorSuffix (Name - Editor Suffix)
+// Units: o031 (War Mill), EditorSuffix (Name - Editor Suffix)
 {
  (Fel Horde Research)
-}
-
-STRING 19645
-// Units: o031 (Blood Furnace), Name (Name)
-{
-Blood Furnace
-}
-
-STRING 19646
-// Units: o031 (Blood Furnace), Tip (Tooltip - Basic)
-{
-Build Blood Furnace
 }
 
 STRING 19647
@@ -114962,21 +115244,9 @@ STRING 19650
 }
 
 STRING 19651
-// Units: o02W (Bonechewer Barracks), EditorSuffix (Name - Editor Suffix)
+// Units: o02W (Barracks), EditorSuffix (Name - Editor Suffix)
 {
  (Fel Horde Barracks)
-}
-
-STRING 19652
-// Units: o02W (Bonechewer Barracks), Name (Name)
-{
-Bonechewer Barracks
-}
-
-STRING 19653
-// Units: o02W (Bonechewer Barracks), Tip (Tooltip - Basic)
-{
-Build Bonechewer Barracks
 }
 
 STRING 19654
@@ -114986,21 +115256,9 @@ STRING 19654
 }
 
 STRING 19655
-// Units: o02T (War Port), EditorSuffix (Name - Editor Suffix)
+// Units: o02T (Shipyard), EditorSuffix (Name - Editor Suffix)
 {
  (Warsong Shipyard)
-}
-
-STRING 19656
-// Units: o02T (War Port), Name (Name)
-{
-War Port
-}
-
-STRING 19657
-// Units: o02T (War Port), Tip (Tooltip - Basic)
-{
-Build War Port
 }
 
 STRING 19658
@@ -115057,20 +115315,8 @@ STRING 19666
  (Warsong Altar)
 }
 
-STRING 19667
-// Units: o01T (Pillager's Hoard), Name (Name)
-{
-Pillager's Hoard
-}
-
-STRING 19668
-// Units: o01T (Pillager's Hoard), Tip (Tooltip - Basic)
-{
-Build Pillager's Hoard
-}
-
 STRING 19669
-// Units: o01T (Pillager's Hoard), EditorSuffix (Name - Editor Suffix)
+// Units: o01T (Treasure Hoard), EditorSuffix (Name - Editor Suffix)
 {
  (Warsong Shop)
 }
@@ -115190,27 +115436,15 @@ STRING 19688
 }
 
 STRING 19689
-// Units: n0A3 (Coilfang Archive), EditorSuffix (Name - Editor Suffix)
+// Units: n0A3 (Archive), EditorSuffix (Name - Editor Suffix)
 {
  (Illidari Magic)
 }
 
-STRING 19690
-// Units: n0A3 (Coilfang Archive), Tip (Tooltip - Basic)
-{
-Build Coilfang Archive
-}
-
 STRING 19691
-// Units: n0A2 (Arcanist's Consortium), EditorSuffix (Name - Editor Suffix)
+// Units: n0A2 (Consortium), EditorSuffix (Name - Editor Suffix)
 {
 (Quel'thalas Magic)
-}
-
-STRING 19692
-// Units: n0A2 (Arcanist's Consortium), Name (Name)
-{
-Arcanist's Consortium
 }
 
 STRING 19693
@@ -115364,7 +115598,7 @@ Trade-house
 }
 
 STRING 19718
-// Units: n005 (Improved Tidal Watcher), EditorSuffix (Name - Editor Suffix)
+// Units: nntg (Tidal Watcher), EditorSuffix (Name - Editor Suffix)
 {
  (Illidari Tower)
 }
@@ -115532,39 +115766,15 @@ STRING 19745
 }
 
 STRING 19746
-// Units: h077 (Greenwood Shipyard), EditorSuffix (Name - Editor Suffix)
+// Units: h077 (Shipyard), EditorSuffix (Name - Editor Suffix)
 {
  (Quel'thalas Shipyard)
 }
 
-STRING 19747
-// Units: h077 (Greenwood Shipyard), Name (Name)
-{
-Greenwood Shipyard
-}
-
-STRING 19748
-// Units: h077 (Greenwood Shipyard), Tip (Tooltip - Basic)
-{
-Build Greenwood Shipyard
-}
-
 STRING 19749
-// Units: h076 (Arcane Shipyard), EditorSuffix (Name - Editor Suffix)
+// Units: h076 (Shipyard), EditorSuffix (Name - Editor Suffix)
 {
  (Dalaran Shipyard)
-}
-
-STRING 19750
-// Units: h076 (Arcane Shipyard), Name (Name)
-{
-Arcane Shipyard
-}
-
-STRING 19751
-// Units: h076 (Arcane Shipyard), Tip (Tooltip - Basic)
-{
-Build Arcane Shipyard
 }
 
 STRING 19752
@@ -115652,7 +115862,7 @@ STRING 19765
 }
 
 STRING 19766
-// Units: h06S (Coilskar Forgeworks), EditorSuffix (Name - Editor Suffix)
+// Units: h06S (Steamworks), EditorSuffix (Name - Editor Suffix)
 {
  (Illidari Research)
 }
@@ -115718,7 +115928,7 @@ STRING 19776
 }
 
 STRING 19777
-// Units: h067 (Laboratory), EditorSuffix (Name - Editor Suffix)
+// Units: h067 (Manaforge), EditorSuffix (Name - Editor Suffix)
 {
 (Dalaran Specialist)
 }
@@ -115886,39 +116096,15 @@ STRING 19804
 }
 
 STRING 19805
-// Units: h03T (Quel'dorei Palace), EditorSuffix (Name - Editor Suffix)
+// Units: h03T (Palace), EditorSuffix (Name - Editor Suffix)
 {
 (Quel'thalas T3)
 }
 
-STRING 19806
-// Units: h03T (Quel'dorei Palace), Name (Name)
-{
-Quel'dorei Palace
-}
-
-STRING 19807
-// Units: h03T (Quel'dorei Palace), Tip (Tooltip - Basic)
-{
-Upgrade to Quel'dorei Palace
-}
-
 STRING 19808
-// Units: h03S (Quel'dorei Sanctuary), EditorSuffix (Name - Editor Suffix)
+// Units: h03S (Mansion), EditorSuffix (Name - Editor Suffix)
 {
 (Quel'thalas T2)
-}
-
-STRING 19809
-// Units: h03S (Quel'dorei Sanctuary), Name (Name)
-{
-Quel'dorei Sanctuary
-}
-
-STRING 19810
-// Units: h03S (Quel'dorei Sanctuary), Tip (Tooltip - Basic)
-{
-Upgrade to Quel'dorei Sanctuary
 }
 
 STRING 19811
@@ -115970,27 +116156,9 @@ STRING 19818
 }
 
 STRING 19819
-// Units: h03E (Military Academy), EditorSuffix (Name - Editor Suffix)
+// Units: h03E (Academy), EditorSuffix (Name - Editor Suffix)
 {
 (Gilneas Specialist)
-}
-
-STRING 19820
-// Units: h03E (Military Academy), Ubertip (Tooltip - Extended)
-{
-Facility for the production of the finest soldiers in the Gilnean Army.|n|cfff5962dTrains:|r Armored Wolves, Royal Guard, Gunship
-}
-
-STRING 19821
-// Units: h03E (Military Academy), Name (Name)
-{
-Military Academy
-}
-
-STRING 19822
-// Units: h03E (Military Academy), Tip (Tooltip - Basic)
-{
-Build Military Academy
 }
 
 STRING 19823
@@ -116035,18 +116203,6 @@ STRING 19829
 (Quel'thalas Magic)
 }
 
-STRING 19830
-// Units: h033 (Quel'dorei Steading), Name (Name)
-{
-Quel'dorei Steading
-}
-
-STRING 19831
-// Units: h033 (Quel'dorei Steading), Tip (Tooltip - Basic)
-{
-Build Quel'dorei Steading
-}
-
 STRING 19832
 // Units: h030 (Tyr's Hand Citadel), EditorSuffix (Name - Editor Suffix)
 {
@@ -116084,27 +116240,21 @@ STRING 19837
 }
 
 STRING 19838
-// Units: h02N (Manaforge), EditorSuffix (Name - Editor Suffix)
+// Units: h02N (Lumber Mill), EditorSuffix (Name - Editor Suffix)
 {
  (Dalaran Research)
 }
 
 STRING 19839
-// Units: h02N (Manaforge), Name (Name)
+// Units: h067 (Manaforge), Name (Name)
 {
 Manaforge
 }
 
 STRING 19840
-// Units: h02N (Manaforge), Tip (Tooltip - Basic)
+// Units: h067 (Manaforge), Tip (Tooltip - Basic)
 {
 Build Manaforge
-}
-
-STRING 19841
-// Units: h02N (Manaforge), Ubertip (Tooltip - Extended)
-{
-A forge glowing with Arcane energy, hotter than any dragon fire.|n|cfff5962dResearches: |RForged Weaponry, Armor Plating, Power Infusion
 }
 
 STRING 19842
@@ -116246,7 +116396,7 @@ STRING 19864
 }
 
 STRING 19865
-// Units: h004 (Troll House), EditorSuffix (Name - Editor Suffix)
+// Units: h004 (Troll Hut), EditorSuffix (Name - Editor Suffix)
 {
  (Frostwolf Farm)
 }
@@ -116336,7 +116486,7 @@ STRING 19879
 }
 
 STRING 19880
-// Units: n04N (Infernal Machine Factory), EditorSuffix (Name - Editor Suffix)
+// Units: n04N (Infernal Siegeworks), EditorSuffix (Name - Editor Suffix)
 {
 (Legion Siege)
 }
@@ -116480,7 +116630,7 @@ STRING 19903
 }
 
 STRING 19904
-// Units: h07W (Shipyard), Tip (Tooltip - Basic)
+// Units: h07D (Shipyard), Tip (Tooltip - Basic)
 {
 Build Shipyard
 }
@@ -116582,39 +116732,15 @@ STRING 19920
 }
 
 STRING 19921
-// Units: o03I (Voidwater Dock), EditorSuffix (Name - Editor Suffix)
+// Units: o03I (Shipyard), EditorSuffix (Name - Editor Suffix)
 {
  (Twilight Dock)
 }
 
-STRING 19922
-// Units: o03I (Voidwater Dock), Name (Name)
-{
-Voidwater Dock
-}
-
-STRING 19923
-// Units: o03I (Voidwater Dock), Tip (Tooltip - Basic)
-{
-Build Voidwater Dock
-}
-
 STRING 19924
-// Units: o03J (Voidfire Armory), EditorSuffix (Name - Editor Suffix)
+// Units: o03J (Voidforge), EditorSuffix (Name - Editor Suffix)
 {
  (Twilight Research)
-}
-
-STRING 19925
-// Units: o03J (Voidfire Armory), Name (Name)
-{
-Voidfire Armory
-}
-
-STRING 19926
-// Units: o03J (Voidfire Armory), Tip (Tooltip - Basic)
-{
-Build Voidfire Armory
 }
 
 STRING 19927
@@ -116690,39 +116816,15 @@ Build Mercenary Den
 }
 
 STRING 19939
-// Units: o03Q (Hobgoblin Mill), EditorSuffix (Name - Editor Suffix)
+// Units: o03Q (Scrapyard), EditorSuffix (Name - Editor Suffix)
 {
 (Goblin Research)
 }
 
-STRING 19940
-// Units: o03Q (Hobgoblin Mill), Name (Name)
-{
-Hobgoblin Mill
-}
-
-STRING 19941
-// Units: o03Q (Hobgoblin Mill), Tip (Tooltip - Basic)
-{
-Build Hobgoblin Mill
-}
-
 STRING 19942
-// Units: o03S (Kaja'Cola Laboratory), EditorSuffix (Name - Editor Suffix)
+// Units: o03S (Laboratory), EditorSuffix (Name - Editor Suffix)
 {
 (Goblin Magic)
-}
-
-STRING 19943
-// Units: o03S (Kaja'Cola Laboratory), Name (Name)
-{
-Kaja'Cola Laboratory
-}
-
-STRING 19944
-// Units: o03S (Kaja'Cola Laboratory), Tip (Tooltip - Basic)
-{
-Build Kaja'Cola Laboratory
 }
 
 STRING 19945
@@ -116876,21 +116978,9 @@ STRING 19969
 }
 
 STRING 19970
-// Units: o047 (Grand Bazaar), EditorSuffix (Name - Editor Suffix)
+// Units: o047 (Bazaar), EditorSuffix (Name - Editor Suffix)
 {
 (Zandalari Shop)
-}
-
-STRING 19971
-// Units: o047 (Grand Bazaar), Name (Name)
-{
-Grand Bazaar
-}
-
-STRING 19972
-// Units: o047 (Grand Bazaar), Tip (Tooltip - Basic)
-{
-Build Grand Bazaar
 }
 
 STRING 19973
@@ -116978,27 +117068,9 @@ STRING 19986
 }
 
 STRING 19987
-// Units: h082 (Onslaught Gunnery), EditorSuffix (Name - Editor Suffix)
+// Units: h082 (Gunnery), EditorSuffix (Name - Editor Suffix)
 {
 (Scarlet Siege)
-}
-
-STRING 19988
-// Units: h082 (Onslaught Gunnery), Ubertip (Tooltip - Extended)
-{
-Artisan workshop to produce machines of war.|n|cfff5962dTrains:|r Mounted Archer, Bombard, Airship
-}
-
-STRING 19989
-// Units: h082 (Onslaught Gunnery), Name (Name)
-{
-Onslaught Gunnery
-}
-
-STRING 19990
-// Units: h082 (Onslaught Gunnery), Tip (Tooltip - Basic)
-{
-Build Onslaught Gunnery
 }
 
 STRING 19991
@@ -117068,7 +117140,7 @@ STRING 20001
 }
 
 STRING 20002
-// Units: u011 (Ossuary), EditorSuffix (Name - Editor Suffix)
+// Units: u011 (Mausoleum), EditorSuffix (Name - Editor Suffix)
 {
 (Forsaken Barracks)
 }
@@ -117127,20 +117199,8 @@ STRING 20011
 Summon Undertaker's Vault
 }
 
-STRING 20012
-// Units: u01A (Ghostly Harbor), Name (Name)
-{
-Ghostly Harbor
-}
-
-STRING 20013
-// Units: u01A (Ghostly Harbor), Tip (Tooltip - Basic)
-{
-Summon Ghostly Harbor
-}
-
 STRING 20014
-// Units: u01A (Ghostly Harbor), EditorSuffix (Name - Editor Suffix)
+// Units: u01A (Shipyard), EditorSuffix (Name - Editor Suffix)
 {
 (Forsaken Shipyard)
 }
@@ -117224,7 +117284,7 @@ STRING 20027
 }
 
 STRING 20028
-// Units: n08W (Ashtongue Lair), EditorSuffix (Name - Editor Suffix)
+// Units: nnsa (Clutchery), EditorSuffix (Name - Editor Suffix)
 {
  (Illidari Specialist)
 }
@@ -117260,7 +117320,7 @@ Build Guard-house
 }
 
 STRING 20035
-// Units: h09A (Draconian Spire), EditorSuffix (Name - Editor Suffix)
+// Units: h09A (Draconic Spire), EditorSuffix (Name - Editor Suffix)
 {
 (Dalaran Specialist)
 }
@@ -117308,15 +117368,9 @@ Twisting Halls
 }
 
 STRING 20043
-// Units: n0AS (Whispering Chambers), EditorSuffix (Name - Editor Suffix)
+// Units: n0AS (Whispering Labyrinth), EditorSuffix (Name - Editor Suffix)
 {
 (Yogg T2)
-}
-
-STRING 20044
-// Units: n0AS (Whispering Chambers), Tip (Tooltip - Basic)
-{
-Build Whispering Chambers
 }
 
 STRING 20045
@@ -117356,39 +117410,15 @@ Build Altar of Madness
 }
 
 STRING 20051
-// Units: n0AW (Slithering Hive), EditorSuffix (Name - Editor Suffix)
+// Units: n0AW (Incubation Pool), EditorSuffix (Name - Editor Suffix)
 {
 (Yogg Barracks)
 }
 
-STRING 20052
-// Units: n0AW (Slithering Hive), Tip (Tooltip - Basic)
-{
-Build Slithering Hive
-}
-
-STRING 20053
-// Units: n0AW (Slithering Hive), Ubertip (Tooltip - Extended)
-{
-A groaning pit of weapons and tentacles for the soldiery of the Black Empire.|n|r|cfff5962dTrains:|R Faceless Marauder, Soul Hunter, Stygian Hulk
-}
-
-STRING 20054
-// Units: n0AW (Slithering Hive), Name (Name)
-{
-Slithering Hive
-}
-
 STRING 20055
-// Units: n0AX (Prison of Unspeakable Horrors), EditorSuffix (Name - Editor Suffix)
+// Units: n0AX (Pit of Torment), EditorSuffix (Name - Editor Suffix)
 {
 (Yogg Specialist)
-}
-
-STRING 20056
-// Units: n0AX (Prison of Unspeakable Horrors), Ubertip (Tooltip - Extended)
-{
-A place for the most terrifying of eldritch horrors.|n|r|cfff5962dTrains:|R Flying Horror, Deformed Chimera, Gladiator
 }
 
 STRING 20057
@@ -117464,27 +117494,9 @@ Build Ominous Vault
 }
 
 STRING 20069
-// Units: n0B3 (Library of Forbidden Knowledge), EditorSuffix (Name - Editor Suffix)
+// Units: n0B3 (Shadow Lair), EditorSuffix (Name - Editor Suffix)
 {
 (Yogg Magic)
-}
-
-STRING 20070
-// Units: n0B3 (Library of Forbidden Knowledge), Name (Name)
-{
-Library of Forbidden Knowledge
-}
-
-STRING 20071
-// Units: n0B3 (Library of Forbidden Knowledge), Tip (Tooltip - Basic)
-{
-Build Library of Forbidden Knowledge
-}
-
-STRING 20072
-// Units: n0B3 (Library of Forbidden Knowledge), Ubertip (Tooltip - Extended)
-{
-A twisted library in which only the most desparate spellcasters would dare to go.|n|r|cfff5962dTrains:|R Sorcerer, Fateweaver
 }
 
 STRING 20073
@@ -117565,12 +117577,6 @@ STRING 20085
 (Draenei T3)
 }
 
-STRING 20086
-// Units: o052 (Ceremonial Altar), EditorSuffix (Name - Editor Suffix)
-{
-(Draenei Barracks)
-}
-
 STRING 20087
 // Units: o053 (Smithery), EditorSuffix (Name - Editor Suffix)
 {
@@ -117584,7 +117590,7 @@ STRING 20088
 }
 
 STRING 20089
-// Units: o055 (Crystal Spire), EditorSuffix (Name - Editor Suffix)
+// Units: o052 (Ceremonial Altar), EditorSuffix (Name - Editor Suffix)
 {
 (Draenei Specialist)
 }
@@ -117614,7 +117620,7 @@ STRING 20093
 }
 
 STRING 20094
-// Units: o059 (Draenei Shipyard), EditorSuffix (Name - Editor Suffix)
+// Units: o059 (Shipyard), EditorSuffix (Name - Editor Suffix)
 {
 (Draenei Shipyard)
 }
@@ -117737,12 +117743,6 @@ STRING 20114
 // Units: n0C7 (Royal Temple), Tip (Tooltip - Basic)
 {
 Build Royal Temple
-}
-
-STRING 20115
-// Units: n0C7 (Royal Temple), Ubertip (Tooltip - Extended)
-{
-A flooded archive of long-lost knowledge for the use of Spellcasters.|n|r|cfff5962dTrains:|R Bloodkin, Deepseer
 }
 
 STRING 20116
@@ -117890,25 +117890,19 @@ STRING 20139
 }
 
 STRING 20140
-// Units: u02N (Pillager's Hoard), EditorSuffix (Name - Editor Suffix)
+// Units: u02N (Treasure Hoard), EditorSuffix (Name - Editor Suffix)
 {
 (Dragonmaw Shop)
 }
 
-STRING 20141
-// Units: u02N (Pillager's Hoard), Name (Name)
-{
-Pillager's Hoard
-}
-
 STRING 20142
-// Units: u02N (Pillager's Hoard), Ubertip (Tooltip - Extended)
+// Units: u02N (Treasure Hoard), Ubertip (Tooltip - Extended)
 {
 Creates a shop with purchasable items.
 }
 
 STRING 20143
-// Units: o06D (Dragonmaw Port), EditorSuffix (Name - Editor Suffix)
+// Units: o06D (Shipyard), EditorSuffix (Name - Editor Suffix)
 {
 (Dragonmaw Shipyard)
 }
@@ -117919,20 +117913,8 @@ STRING 20144
  (Dragonmaw)
 }
 
-STRING 20145
-// Units: h0AG (Scarlet Harbor), Name (Name)
-{
-Scarlet Harbor
-}
-
-STRING 20146
-// Units: h0AG (Scarlet Harbor), Tip (Tooltip - Basic)
-{
-Build Scarlet Shipyard
-}
-
 STRING 20147
-// Units: h0AG (Scarlet Harbor), EditorSuffix (Name - Editor Suffix)
+// Units: h0AG (Shipyard), EditorSuffix (Name - Editor Suffix)
 {
  (Scarlet Shipyard)
 }
@@ -117944,7 +117926,7 @@ STRING 20148
 }
 
 STRING 20149
-// Units: h0AK (Menethil Harbor), Tip (Tooltip - Basic)
+// Units: h077 (Shipyard), Tip (Tooltip - Basic)
 {
 Build Shipyard
 }
