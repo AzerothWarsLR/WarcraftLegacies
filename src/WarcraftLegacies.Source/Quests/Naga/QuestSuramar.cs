@@ -4,6 +4,7 @@ using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives;
 using MacroTools.QuestSystem;
+using WarcraftLegacies.Source.Setup.Legends;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
@@ -20,15 +21,15 @@ namespace WarcraftLegacies.Source.Quests.Naga
       "A small remnant of Illidan's Naga have held on in the Broken Isles, we need to make contact with them",
       "ReplaceableTextures\\CommandButtons\\BTNMurloc.blp")
     {
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N08M_SOUTHSHORE_15GOLD_MIN)));
-      AddObjective(new ObjectiveExpire(1135));
+      AddObjective(new ObjectiveControlCapital(LegendNeutral.Oshugun, false));
+      AddObjective(new ObjectiveExpire(635));
       AddObjective(new ObjectiveSelfExists());
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
       Required = true;
     }
 
     /// <inheritdoc />
-    protected override string CompletionPopup => "TO BE DONE";
+    protected override string CompletionPopup => "Using the powerful magic inside Oshugunm, the remaining Naga in the Broken Isles have joined us again!";
 
     /// <inheritdoc />
     protected override string RewardDescription => "Control of all units in Suramar";
