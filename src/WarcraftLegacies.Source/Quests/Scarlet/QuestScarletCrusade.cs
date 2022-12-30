@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives;
@@ -32,7 +32,7 @@ namespace WarcraftLegacies.Source.Quests.Scarlet
       "ReplaceableTextures\\CommandButtons\\BTNDivine_Reckoning_Icon.blp")
     {
       _scarletMonasteryEntrance = scarletMonasteryEntrance.Show(false);
-      AddObjective(new ObjectiveResearch(UnleashTheCrusadeResearchId, Constants.UNIT_H00T_SCARLET_MONASTERY_LORDAERON));
+      AddObjective(new ObjectiveResearch(UnleashTheCrusadeResearchId, Constants.UNIT_H00T_SCARLET_MONASTERY_SCARLET_LORDAERON));
       AddObjective(new ObjectiveSelfExists());
       ResearchId = Constants.UPGRADE_R03F_QUEST_COMPLETED_UNLEASH_THE_CRUSADE;
       Global = true;

@@ -1,4 +1,4 @@
-using MacroTools;
+﻿using MacroTools;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
@@ -76,7 +76,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
 
       Naxxramas = new Capital
       {
-        Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_U01X_HEART_OF_NAXXRAMAS)
+        Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_U01X_HEART_OF_NAXXRAMAS_SCOURGE_NAXXRAMAS_INTERIOR)
       };
       CapitalManager.Register(Naxxramas);
       SetUnitInvulnerable(Naxxramas.Unit, true);

@@ -323,6 +323,7 @@ gg_rct_BookRetrieval = nil
 gg_rct_SkullRetrieval = nil
 gg_rct_KezanUnlock = nil
 gg_rct_SuramarUnlock = nil
+gg_rct_HighbankUnlock_UNUSED = nil
 gg_snd_ArcaneObservatoryWhat1 = nil
 gg_snd_ArrangedTeamInvitation = nil
 gg_snd_ClanInvitation = nil
@@ -512,7 +513,6 @@ gg_snd_DoorOpenRemix = nil
 gg_snd_NuclearLaunchDetected = nil
 gg_snd_IllidansTheme = ""
 gg_trg_Dummy = nil
-gg_rct_HighbankUnlock_UNUSED = nil
 function InitGlobals()
 end
 
@@ -6565,7 +6565,6 @@ function CreateNeutralPassiveBuildings()
     u = BlzCreateUnitWithSkin(p, FourCC("uzg1"), -12672.0, 21632.0, 270.000, FourCC("uzg1"))
     u = BlzCreateUnitWithSkin(p, FourCC("uzg1"), -12416.0, 21888.0, 270.000, FourCC("uzg1"))
     u = BlzCreateUnitWithSkin(p, FourCC("h06M"), 22944.0, -7520.0, 270.000, FourCC("h06M"))
-    SetUnitState(u, UNIT_STATE_MANA, 0)
     u = BlzCreateUnitWithSkin(p, FourCC("h02F"), 9088.0, -960.0, 270.000, FourCC("h02F"))
     u = BlzCreateUnitWithSkin(p, FourCC("uzg2"), -13120.0, 23616.0, 270.000, FourCC("uzg2"))
     u = BlzCreateUnitWithSkin(p, FourCC("ugrv"), -12480.0, 22144.0, 270.000, FourCC("ugrv"))
@@ -7693,8 +7692,8 @@ function CreateRegions()
     gg_rct_StormwindAmbient2 = Rect(6624.0, -10528.0, 8160.0, -8544.0)
     gg_rct_SentinelTowerAmbient = Rect(5696.0, -17664.0, 8672.0, -14304.0)
     gg_rct_StranglethornAmbient1 = Rect(7680.0, -19136.0, 13536.0, -17472.0)
-    gg_rct_StranglethornAmbient2 = Rect(11808.0, -22016.0, 14880.0, -18272.0)
-    gg_rct_StranglethornAmbient3 = Rect(8768.0, -23808.0, 12736.0, -19168.0)
+    gg_rct_StranglethornAmbient2 = Rect(11808.0, -23744.0, 14880.0, -18272.0)
+    gg_rct_StranglethornAmbient3 = Rect(8768.0, -23808.0, 11968.0, -19168.0)
     gg_rct_ElwinForestAmbient = Rect(8704.0, -14816.0, 13376.0, -12672.0)
     gg_rct_DarkshireAmbient1 = Rect(8672.0, -17440.0, 13600.0, -14816.0)
     gg_rct_DarkshireAmbient2 = Rect(13600.0, -18208.0, 14912.0, -14720.0)

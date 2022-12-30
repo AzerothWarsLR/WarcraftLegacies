@@ -26,7 +26,7 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
       "The distant lands of Kalimdor remain untouched by human civilization. If the Third War proceeds poorly, it may become necessary to establish a forward base there.",
       "ReplaceableTextures\\CommandButtons\\BTNHumanArcaneTower.blp")
     {
-      AddObjective(new ObjectiveResearch(RequiredResearch, Constants.UNIT_H076_ALLIANCE_SHIPYARD_DALARAN));
+      AddObjective(new ObjectiveResearch(RequiredResearch, Constants.UNIT_H076_SHIPYARD_DALARAN_SHIPYARD));
       AddObjective(new ObjectiveSelfExists());
       _rescueUnits = theramoreRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
     }

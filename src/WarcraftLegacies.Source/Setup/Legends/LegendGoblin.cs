@@ -35,10 +35,10 @@ namespace WarcraftLegacies.Source.Setup.Legends
 
       KezanTradingCenter = new Capital
       {
-        Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_O04M_KEZAN_TRADING_CENTER_GOBLIN),
+        Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_O04M_KEZAN_TRADING_CENTER_GOBLIN_SHIPYARD_2),
         DeathMessage = "The Trade center for the Goblin Empire has fallen."
       };
-      KezanTradingCenter.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_O05I_MISSILE_BATTERY_GOBLIN));
+      KezanTradingCenter.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_O05I_MISSILE_BATTERY_GOBLIN_TOWER));
     }
   }
 }

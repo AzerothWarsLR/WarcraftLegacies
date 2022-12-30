@@ -49,7 +49,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
 
       completingFaction.ModObjectLimit(Constants.UNIT_H009_DARK_KNIGHT_GARITHOS, 6);
       completingFaction.ModObjectLimit(Constants.UNIT_HLGR_GRAND_MARSHAL_SCARLET, 1);
-      completingFaction.ModObjectLimit(Constants.UNIT_E000_IMPROVED_ANCIENT_PROTECTOR_DRUIDS, 1);
+      completingFaction.ModObjectLimit(Constants.UNIT_E000_IMPROVED_ANCIENT_PROTECTOR_DRUID_TOWER, 1);
 
       completingFaction.Player?.SetTeam(TeamSetup.ScarletCrusade);
       completingFaction.Name = "Garithos";

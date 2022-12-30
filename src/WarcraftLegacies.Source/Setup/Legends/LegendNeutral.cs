@@ -164,7 +164,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
 
       Shaladrassil = new Capital
       {
-        Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_E01W_SHALADRASSIL_DRUIDS),
+        Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_E01W_SHALADRASSIL_DRUID_OTHER),
         Capturable = true
       };
       CapitalManager.Register(Shaladrassil);

@@ -17278,7 +17278,7 @@ Fortify
 }
 
 STRING 2890
-// Units: n005 (Improved Tidal Watcher), EditorSuffix (Name - Editor Suffix)
+// Units: nntg (Tidal Watcher), EditorSuffix (Name - Editor Suffix)
 {
  (Illidari Tower)
 }
@@ -17308,7 +17308,7 @@ W
 }
 
 STRING 2895
-// Units: h07D (Shipyard), Name (Name)
+// Units: o032 (Shipyard), Name (Name)
 {
 Shipyard
 }
@@ -17338,7 +17338,7 @@ STRING 2899
 }
 
 STRING 2900
-// Units: h077 (Shipyard), Name (Name)
+// Units: o02T (Shipyard), Name (Name)
 {
 Shipyard
 }
@@ -17380,7 +17380,7 @@ Effect
 }
 
 STRING 2907
-// Units: h076 (Shipyard), Name (Name)
+// Units: h07D (Shipyard), Name (Name)
 {
 Shipyard
 }
@@ -17392,7 +17392,7 @@ Dalaran Building
 }
 
 STRING 2909
-// Units: h076 (Shipyard), Tip (Tooltip - Basic)
+// Units: o02T (Shipyard), Tip (Tooltip - Basic)
 {
 Build Shipyard
 }
@@ -17964,7 +17964,7 @@ Heavily armored vehicle, adept at shooting down air units.|n|cfff5962dAbilities:
 }
 
 STRING 3004
-// Units: h03H (Shipyard), Name (Name)
+// Units: h077 (Shipyard), Name (Name)
 {
 Shipyard
 }
@@ -18350,7 +18350,7 @@ Dalaran Shield
 }
 
 STRING 3068
-// Units: h03H (Shipyard), Tip (Tooltip - Basic)
+// Units: h07D (Shipyard), Tip (Tooltip - Basic)
 {
 Build Shipyard
 }
@@ -18380,7 +18380,7 @@ Training house for the finest soldiers in the Gilnean Army.|n|cfff5962dTrains:|r
 }
 
 STRING 3073
-// Units: h03E (Academy), Name (Name)
+// Units: h03J (Academy), Name (Name)
 {
 Academy
 }
@@ -18488,7 +18488,7 @@ rlev
 }
 
 STRING 3091
-// Units: h03E (Academy), Tip (Tooltip - Basic)
+// Units: h03J (Academy), Tip (Tooltip - Basic)
 {
 Build Academy
 }
@@ -18980,13 +18980,13 @@ D
 }
 
 STRING 3173
-// Units: h03J (Academy), Name (Name)
+// Units: h03E (Academy), Name (Name)
 {
 Academy
 }
 
 STRING 3174
-// Units: h03J (Academy), Tip (Tooltip - Basic)
+// Units: h03E (Academy), Tip (Tooltip - Basic)
 {
 Build Academy
 }
@@ -19040,7 +19040,7 @@ R
 }
 
 STRING 3183
-// Units: o032 (Shipyard), Name (Name)
+// Units: h076 (Shipyard), Name (Name)
 {
 Shipyard
 }
@@ -19321,13 +19321,13 @@ Q
 }
 
 STRING 3232
-// Units: h07W (Shipyard), Name (Name)
+// Units: h03H (Shipyard), Name (Name)
 {
 Shipyard
 }
 
 STRING 3233
-// Units: h07W (Shipyard), Tip (Tooltip - Basic)
+// Units: h077 (Shipyard), Tip (Tooltip - Basic)
 {
 Build Shipyard
 }
@@ -19423,7 +19423,7 @@ Multishot
 }
 
 STRING 3249
-// Units: o03I (Shipyard), Name (Name)
+// Units: h07W (Shipyard), Name (Name)
 {
 Shipyard
 }
@@ -19663,7 +19663,7 @@ E
 }
 
 STRING 3289
-// Units: o03I (Shipyard), Tip (Tooltip - Basic)
+// Units: h076 (Shipyard), Tip (Tooltip - Basic)
 {
 Build Shipyard
 }
@@ -26393,7 +26393,7 @@ Dark Iron Bridge
 }
 
 STRING 4412
-// Units: u01A (Shipyard), Name (Name)
+// Units: o03I (Shipyard), Name (Name)
 {
 Shipyard
 }
@@ -33079,7 +33079,7 @@ Transforms an enemy unit into a random critter for <AOhx,Dur6> seconds.
 }
 
 STRING 5527
-// Units: n08W (Ashtongue Lair), EditorSuffix (Name - Editor Suffix)
+// Units: nnsa (Clutchery), EditorSuffix (Name - Editor Suffix)
 {
  (Illidari Specialist)
 }
@@ -36710,7 +36710,7 @@ Calls down waves of Hinterland magic that damages nearby enemy units for <AEsb,D
 }
 
 STRING 6132
-// Units: n0AW (Incubation Pool), Tip (Tooltip - Basic)
+// Units: nnfm (Incubation Pool), Tip (Tooltip - Basic)
 {
 Build Incubation Pool
 }
@@ -37982,7 +37982,7 @@ Transforms an enemy unit into a random critter for <AChx,Dur2> seconds. Lasts 2 
 }
 
 STRING 6344
-// Units: n0AW (Incubation Pool), Name (Name)
+// Units: nnfm (Incubation Pool), Name (Name)
 {
 Incubation Pool
 }
@@ -44925,7 +44925,7 @@ Summons undead creatures from the ground to aid the necromancer in his battles. 
 }
 
 STRING 7498
-// Units: o055 (Crystal Spire), EditorSuffix (Name - Editor Suffix)
+// Units: o052 (Ceremonial Altar), EditorSuffix (Name - Editor Suffix)
 {
 (Draenei Specialist)
 }
@@ -45537,7 +45537,7 @@ Sends forth a wave of fel energy in a line, dealing <A0UK,DataC3> damage and hur
 }
 
 STRING 7601
-// Units: o059 (Shipyard), Name (Name)
+// Units: u01A (Shipyard), Name (Name)
 {
 Shipyard
 }
@@ -47787,7 +47787,7 @@ W
 }
 
 STRING 7976
-// Units: o059 (Shipyard), Tip (Tooltip - Basic)
+// Units: h03H (Shipyard), Tip (Tooltip - Basic)
 {
 Build Shipyard
 }
@@ -47895,7 +47895,7 @@ W
 }
 
 STRING 7994
-// Units: h0A9 (Manor), Ubertip (Tooltip - Extended)
+// Units: h02F (Household), Ubertip (Tooltip - Extended)
 {
 Provides 8 food, which increases the maximum number of units that can be trained.
 }
@@ -50295,7 +50295,7 @@ Attacks combust <A0PB,DataA1>(<A0PB,DataC1> for Heros) mana on hit, dealing dama
 }
 
 STRING 8394
-// Units: o06D (Shipyard), Name (Name)
+// Units: o059 (Shipyard), Name (Name)
 {
 Shipyard
 }
@@ -51441,7 +51441,7 @@ This unit strikes with such force that <A0NE,DataA1,%>% of their damage strikes 
 }
 
 STRING 8585
-// Units: o06D (Shipyard), Tip (Tooltip - Basic)
+// Units: h07W (Shipyard), Tip (Tooltip - Basic)
 {
 Build Shipyard
 }
@@ -51513,13 +51513,13 @@ Pillar of Waves
 }
 
 STRING 8597
-// Units: h0AG (Shipyard), Name (Name)
+// Units: o06D (Shipyard), Name (Name)
 {
 Shipyard
 }
 
 STRING 8598
-// Units: h0AG (Shipyard), Tip (Tooltip - Basic)
+// Units: o03I (Shipyard), Tip (Tooltip - Basic)
 {
 Build Shipyard
 }
@@ -51537,7 +51537,7 @@ Boat construction facility for the Scarlet Crusade.|n|cfff5962dTrains:|R Transpo
 }
 
 STRING 8601
-// Units: h0AK (Menethil Harbor), Tip (Tooltip - Basic)
+// Units: o059 (Shipyard), Tip (Tooltip - Basic)
 {
 Build Shipyard
 }
@@ -95104,7 +95104,7 @@ Build Altar of Admirals
 }
 
 STRING 15985
-// Units: h02F (Household), Ubertip (Tooltip - Extended)
+// Units: h07N (Homestead), Ubertip (Tooltip - Extended)
 {
 Provides 8 food, which increases the maximum number of units that can be trained.
 }
@@ -95212,7 +95212,7 @@ Q
 }
 
 STRING 16007
-// Units: o02T (Shipyard), Name (Name)
+// Units: h0AG (Shipyard), Name (Name)
 {
 Shipyard
 }
@@ -109368,7 +109368,7 @@ Q
 }
 
 STRING 18559
-// Units: h07N (Homestead), Ubertip (Tooltip - Extended)
+// Units: h0A9 (Manor), Ubertip (Tooltip - Extended)
 {
 Provides 8 food, which increases the maximum number of units that can be trained.
 }
@@ -109621,7 +109621,7 @@ Learn Aegis of Ragnaros - [|cffffcc00Level %d|r]
 }
 
 STRING 18615
-// Units: nnfm (Incubation Pool), Name (Name)
+// Units: n0AW (Incubation Pool), Name (Name)
 {
 Incubation Pool
 }
@@ -112945,7 +112945,7 @@ Menethil Harbor
 }
 
 STRING 19224
-// Units: o02T (Shipyard), Tip (Tooltip - Basic)
+// Units: o06D (Shipyard), Tip (Tooltip - Basic)
 {
 Build Shipyard
 }
@@ -114386,7 +114386,7 @@ Opens a two-way portal to Nagrand at the target location within a range of <A00D
 }
 
 STRING 19484
-// Units: nnfm (Incubation Pool), Tip (Tooltip - Basic)
+// Units: n0AW (Incubation Pool), Tip (Tooltip - Basic)
 {
 Build Incubation Pool
 }
@@ -115598,7 +115598,7 @@ Trade-house
 }
 
 STRING 19718
-// Units: nntg (Tidal Watcher), EditorSuffix (Name - Editor Suffix)
+// Units: n005 (Improved Tidal Watcher), EditorSuffix (Name - Editor Suffix)
 {
  (Illidari Tower)
 }
@@ -116630,7 +116630,7 @@ STRING 19903
 }
 
 STRING 19904
-// Units: h07D (Shipyard), Tip (Tooltip - Basic)
+// Units: h0AG (Shipyard), Tip (Tooltip - Basic)
 {
 Build Shipyard
 }
@@ -117284,7 +117284,7 @@ STRING 20027
 }
 
 STRING 20028
-// Units: nnsa (Clutchery), EditorSuffix (Name - Editor Suffix)
+// Units: n08W (Ashtongue Lair), EditorSuffix (Name - Editor Suffix)
 {
  (Illidari Specialist)
 }
@@ -117590,7 +117590,7 @@ STRING 20088
 }
 
 STRING 20089
-// Units: o052 (Ceremonial Altar), EditorSuffix (Name - Editor Suffix)
+// Units: o055 (Crystal Spire), EditorSuffix (Name - Editor Suffix)
 {
 (Draenei Specialist)
 }
@@ -117926,7 +117926,7 @@ STRING 20148
 }
 
 STRING 20149
-// Units: h077 (Shipyard), Tip (Tooltip - Basic)
+// Units: h0AK (Menethil Harbor), Tip (Tooltip - Basic)
 {
 Build Shipyard
 }

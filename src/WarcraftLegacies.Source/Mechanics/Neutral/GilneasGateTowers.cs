@@ -23,8 +23,8 @@ namespace WarcraftLegacies.Source.Mechanics.Neutral
                  Constants.UNIT_H02K_GREYMANE_S_GATE_CLOSED
                })
       {
-        var greymaneGateTowerA = preplaced.GetUnit(Constants.UNIT_O05Q_GREYMANETOWER_REAL_TOWER, new Point(6580, 2677));
-        var greymaneGateTowerB = preplaced.GetUnit(Constants.UNIT_O05Q_GREYMANETOWER_REAL_TOWER, new Point(7206, 2697));
+        var greymaneGateTowerA = preplaced.GetUnit(Constants.UNIT_O05Q_GREYMANETOWER_GILNEAS_REAL_TOWER, new Point(6580, 2677));
+        var greymaneGateTowerB = preplaced.GetUnit(Constants.UNIT_O05Q_GREYMANETOWER_GILNEAS_REAL_TOWER, new Point(7206, 2697));
         PlayerUnitEvents.Register(UnitTypeEvent.Dies, () =>
         {
           greymaneGateTowerA.SetOwner(GetTriggerUnit().OwningPlayer());

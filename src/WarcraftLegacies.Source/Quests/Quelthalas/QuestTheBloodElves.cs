@@ -1,4 +1,4 @@
-using MacroTools.Extensions;
+﻿using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.Libraries;
 using MacroTools.ObjectiveSystem.Objectives;
@@ -18,7 +18,7 @@ namespace WarcraftLegacies.Source.Quests.Quelthalas
     private readonly Rectangle _secondChanceRect;
     private const int QuestResearchId = Constants.UPGRADE_R04Q_QUEST_COMPLETED_THE_BLOOD_ELVES_QUEL_THALAS;
     private const int UnittypeId = Constants.UNIT_N048_BLOOD_MAGE_QUEL_THALAS;
-    private const int BuildingId = Constants.UNIT_N0A2_CONSORTIUM_QUEL_THALAS;
+    private const int BuildingId = Constants.UNIT_N0A2_CONSORTIUM_QUEL_THALAS_MAGIC;
     private const int HeroId = Constants.UNIT_HKAL_PRINCE_OF_QUEL_THALAS_QUEL_THALAS;
 
     /// <summary>

@@ -42,7 +42,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
         Effect = "Abilities\\Spells\\Undead\\ReplenishMana\\SpiritTouchTarget.mdl"
       });
 
-      PassiveAbilityManager.Register(new LocationBasedFlavourAbility(Constants.UNIT_O05J_DRAGON_HATCHERY_DRAGONMAW)
+      PassiveAbilityManager.Register(new LocationBasedFlavourAbility(Constants.UNIT_O05J_DRAGON_HATCHERY_DRAGONMAW_SPECIALIST)
       {
         LocationBasedFlavourSettings = new List<LocationBasedFlavourSetting>
         {

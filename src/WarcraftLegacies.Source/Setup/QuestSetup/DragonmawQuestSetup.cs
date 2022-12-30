@@ -25,7 +25,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       dragonmaw.AddQuest(new QuestWetlandOffensive());
       dragonmaw.AddQuest(new QuestDunAlgazSiege());
       dragonmaw.AddQuest(new QuestGrimBatol(Regions.Grim_Batol,
-        preplacedUnitSystem.GetUnit(Constants.UNIT_H01Z_GRIM_BATOL_CREEP),
+        preplacedUnitSystem.GetUnit(Constants.UNIT_H01Z_GRIM_BATOL_CREEP_TWILIGHT),
         preplacedUnitSystem.GetUnit(Constants.UNIT_N08R_GRIM_BATOL_TUNNELS, new Point(16562, -2766)),
         preplacedUnitSystem.GetUnit(Constants.UNIT_N08R_GRIM_BATOL_TUNNELS, new Point(16756, -2473))
       ));

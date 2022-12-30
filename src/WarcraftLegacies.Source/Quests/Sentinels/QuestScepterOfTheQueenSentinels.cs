@@ -46,7 +46,7 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
-      $"Gain the Scepter of the Queen, the Athenaeum, 4 {GetObjectName(Constants.UNIT_NNMG_REDEEMED_HIGHBORNE_SENTINELS)}, and the ability to train {GetObjectName(Constants.UNIT_NNMG_REDEEMED_HIGHBORNE_SENTINELS)} from the {GetObjectName(Constants.UNIT_E00V_TEMPLE_OF_ELUNE_SENTINELS)}";
+      $"Gain the Scepter of the Queen, the Athenaeum, 4 {GetObjectName(Constants.UNIT_NNMG_REDEEMED_HIGHBORNE_SENTINELS)}, and the ability to train {GetObjectName(Constants.UNIT_NNMG_REDEEMED_HIGHBORNE_SENTINELS)} from the {GetObjectName(Constants.UNIT_E00V_TEMPLE_OF_ELUNE_SENTINEL_MAGIC)}";
 
     /// <inheritdoc/>
     protected override void OnComplete(Faction whichFaction)

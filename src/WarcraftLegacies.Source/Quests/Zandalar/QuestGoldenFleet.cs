@@ -17,7 +17,7 @@ namespace WarcraftLegacies.Source.Quests.Zandalar
       "The King has ordered for the greatest armada in the world. The construction of the Golden Fleet has begun!",
       "ReplaceableTextures\\CommandButtons\\BTNTrollConjurer.blp")
     {
-      AddObjective(new ObjectiveTrain(Constants.UNIT_O04W_GOLDEN_VESSEL_ZANDALAR, Constants.UNIT_O049_GOLDEN_DOCK_ZANDALAR, 5));
+      AddObjective(new ObjectiveTrain(Constants.UNIT_O04W_GOLDEN_VESSEL_ZANDALAR, Constants.UNIT_O049_GOLDEN_DOCK_ZANDALARI_SHIPYARD, 5));
       ResearchId = Constants.UPGRADE_R06W_QUEST_COMPLETED_THE_GOLDEN_FLEET;
       Required = true;
       

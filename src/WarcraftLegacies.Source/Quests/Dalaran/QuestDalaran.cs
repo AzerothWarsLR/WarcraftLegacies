@@ -29,7 +29,7 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
         AddObjective(new ObjectiveCompleteQuest(prerequisite));
       AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N018_DURNHOLDE_15GOLD_MIN)));
       AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N01I_CAER_DARROW_15GOLD_MIN)));
-      AddObjective(new ObjectiveUpgrade(Constants.UNIT_H068_OBSERVATORY_DALARAN, Constants.UNIT_H065_REFUGE_DALARAN));
+      AddObjective(new ObjectiveUpgrade(Constants.UNIT_H068_OBSERVATORY_DALARAN_T3, Constants.UNIT_H065_REFUGE_DALARAN_T1));
       AddObjective(new ObjectiveExpire(1445));
       AddObjective(new ObjectiveSelfExists());
       ResearchId = Constants.UPGRADE_R038_QUEST_COMPLETED_OUTSKIRTS;

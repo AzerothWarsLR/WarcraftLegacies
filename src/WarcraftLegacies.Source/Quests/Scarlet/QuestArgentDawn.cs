@@ -1,4 +1,4 @@
-using MacroTools.FactionSystem;
+﻿using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives;
 using MacroTools.QuestSystem;
 using WarcraftLegacies.Source.Setup.FactionSetup;
@@ -14,7 +14,7 @@ namespace WarcraftLegacies.Source.Quests.Scarlet
       "The Militia of Lordaeron has been solidified into the Argent Dawn, a strong military force lead by Tirion Fording.",
       "ReplaceableTextures\\CommandButtons\\BTNResurrection.blp")
     {
-      AddObjective(new ObjectiveResearch(REQUIRED_RESEARCH_ID, Constants.UNIT_H00T_SCARLET_MONASTERY_LORDAERON));
+      AddObjective(new ObjectiveResearch(REQUIRED_RESEARCH_ID, Constants.UNIT_H00T_SCARLET_MONASTERY_SCARLET_LORDAERON));
       AddObjective(new ObjectiveSelfExists());
       ResearchId = Constants.UPGRADE_R087_QUEST_COMPLETED_THE_ARGENT_DAWN;
       Global = true;

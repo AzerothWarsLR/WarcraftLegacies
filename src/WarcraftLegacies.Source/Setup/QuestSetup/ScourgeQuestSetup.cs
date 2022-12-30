@@ -35,7 +35,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
         new(4, Constants.UNIT_UGHO_GHOUL_SCOURGE),
         new(4, Constants.UNIT_UCRY_CRYPT_FIEND_SCOURGE),
       };
-      plagueParameters.PlagueCauldronUnitTypeId = Constants.UNIT_H02W_PLAGUE_CAULDRON;
+      plagueParameters.PlagueCauldronUnitTypeId = Constants.UNIT_H02W_PLAGUE_CAULDRON_SCOURGE_OTHER;
       plagueParameters.Duration = 360;
 
       QuestPlague questPlague = new(plagueParameters);
@@ -43,10 +43,10 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       QuestSapphiron questSapphiron = new(preplacedUnitSystem.GetUnit(Constants.UNIT_UBDR_SAPPHIRON_CREEP));
       QuestCorruptArthas questCorruptArthas = new();
       QuestNaxxramas questNaxxramas = new(Regions.NaxAmbient,
-        preplacedUnitSystem.GetUnit(Constants.UNIT_E013_NAXXRAMAS_SCOURGE));
+        preplacedUnitSystem.GetUnit(Constants.UNIT_E013_NAXXRAMAS_SCOURGE_OTHER));
       QuestCivilWar questCivilWar = new();
       QuestLichKingArthas questLichKingArthas =
-        new(preplacedUnitSystem.GetUnit(Constants.UNIT_H00O_UTGARDE_KEEP_SCOURGE), artifactSetup.HelmOfDomination);
+        new(preplacedUnitSystem.GetUnit(Constants.UNIT_H00O_UTGARDE_KEEP_SCOURGE_OTHER), artifactSetup.HelmOfDomination);
 
       //Setup
       ScourgeSetup.Scourge.AddQuest(questSpiderWar);

@@ -84,7 +84,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
 
       Goodchild = new LegendaryHero("High Commander Goodchilde")
       {
-        UnitType = Constants.UNIT_E000_IMPROVED_ANCIENT_PROTECTOR_DRUIDS,
+        UnitType = Constants.UNIT_E000_IMPROVED_ANCIENT_PROTECTOR_DRUID_TOWER,
         StartingXp = 2800
       };
       LegendaryHeroManager.Register(Goodchild);
@@ -117,7 +117,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
 
       Stratholme = new Capital
       {
-        Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_H01G_STRATHOLME_CASTLE_LORDAERON),
+        Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_H01G_STRATHOLME_CASTLE_LORDAERON_OTHER),
         DeathMessage = "The majestic city of Stratholme has been destroyed."
       };
       CapitalManager.Register(Stratholme);
@@ -127,7 +127,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
 
       TyrsHand = new Capital
       {
-        Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_H030_TYR_S_HAND_CITADEL_LORDAERON),
+        Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_H030_TYR_S_HAND_CITADEL_LORDAERON_OTHER),
         DeathMessage = "Tyr's Hand, the bastion of human power in Lordaeron, has fallen."
       };
       CapitalManager.Register(TyrsHand);

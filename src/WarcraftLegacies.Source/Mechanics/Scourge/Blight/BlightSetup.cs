@@ -16,7 +16,7 @@ namespace WarcraftLegacies.Source.Mechanics.Scourge.Blight
           RandomBlightRectangle = Regions.Andorhal
         });
 
-      BlightSystem.Register(preplacedUnitSystem.GetUnit(Constants.UNIT_H030_TYR_S_HAND_CITADEL_LORDAERON),
+      BlightSystem.Register(preplacedUnitSystem.GetUnit(Constants.UNIT_H030_TYR_S_HAND_CITADEL_LORDAERON_OTHER),
         new BlightParameters
         {
           PrimaryBlightRadius = 512,
@@ -162,7 +162,7 @@ namespace WarcraftLegacies.Source.Mechanics.Scourge.Blight
         });
 
       BlightSystem.Register(
-        preplacedUnitSystem.GetUnit(Constants.UNIT_N003_IMPROVED_SUN_TOWER, Regions.Dreadscar_2.Center),
+        preplacedUnitSystem.GetUnit(Constants.UNIT_N003_IMPROVED_SUN_TOWER_QUEL_THALAS_TOWER, Regions.Dreadscar_2.Center),
         new BlightParameters
         {
           PrimaryBlightRadius = 200,
@@ -172,7 +172,7 @@ namespace WarcraftLegacies.Source.Mechanics.Scourge.Blight
         });
 
       BlightSystem.Register(
-        preplacedUnitSystem.GetUnit(Constants.UNIT_H074_ARCANE_TOWER_HIGH_ELVES, Regions.Dreadscar_3.Center),
+        preplacedUnitSystem.GetUnit(Constants.UNIT_H074_ARCANE_TOWER_QUEL_THALAS_TOWER, Regions.Dreadscar_3.Center),
         new BlightParameters
         {
           PrimaryBlightRadius = 200,

@@ -29,6 +29,6 @@ namespace WarcraftLegacies.Source.Quests.Warsong
 
     /// <inheritdoc />
     protected override string RewardDescription =>
-      $"Jergosh the Invoker can be trained from the {GetObjectName(Constants.UNIT_O020_ALTAR_OF_CONQUERORS_WARSONG)}";
+      $"Jergosh the Invoker can be trained from the {GetObjectName(Constants.UNIT_O020_ALTAR_OF_CONQUERORS_WARSONG_ALTAR)}";
   }
 }

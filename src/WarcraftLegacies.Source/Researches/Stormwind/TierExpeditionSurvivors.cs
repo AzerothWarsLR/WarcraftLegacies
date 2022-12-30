@@ -1,4 +1,4 @@
-using MacroTools.FactionSystem;
+﻿using MacroTools.FactionSystem;
 using WarcraftLegacies.Source.Setup.FactionSetup;
 using WCSharp.Events;
 
@@ -9,7 +9,7 @@ namespace WarcraftLegacies.Source.Researches.Stormwind
     private static void Research()
     {
       StormwindSetup.Stormwind.ModObjectLimit(Constants.UNIT_H00A_SPEARMAN_STORMWIND, -Faction.UNLIMITED);
-      StormwindSetup.Stormwind.ModObjectLimit(Constants.UNIT_H05N_MARKSMAN_ARATHOR, Faction.UNLIMITED);
+      StormwindSetup.Stormwind.ModObjectLimit(Constants.UNIT_H05N_MARKSMAN_STORMWIND, Faction.UNLIMITED);
     }
 
     public static void Setup()

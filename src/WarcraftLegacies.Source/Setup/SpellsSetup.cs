@@ -119,9 +119,9 @@ namespace WarcraftLegacies.Source.Setup
       };
       SpellSystem.Register(massSimulacrum);
 
-      var bombingRun = new ChannelAnySpell(Constants.ABILITY_A0S5_BOMBING_RUN_ARATHOR_DUMMY_SPELL)
+      var bombingRun = new ChannelAnySpell(Constants.ABILITY_A0S5_BOMBING_RUN_STORMWIND_DUMMY)
       {
-        DummyAbilityId = Constants.ABILITY_A0S1_BOMBING_RUN_DARK_GREEN,
+        DummyAbilityId = Constants.ABILITY_A0S1_BOMBING_RUN_STORMWIND,
         DummyAbilityOrderString = "locustswarm"
       };
       SpellSystem.Register(bombingRun);
@@ -171,7 +171,7 @@ namespace WarcraftLegacies.Source.Setup
       };
       SpellSystem.Register(stormEarthandFire);
       //Todo: inappropriately named
-      var manaSyphon = new GrantMana(Constants.ABILITY_A0RG_MANA_SYPHON_ARATHOR_MAGE_TOWER)
+      var manaSyphon = new GrantMana(Constants.ABILITY_A0RG_MANA_SYPHON_STORMWIND_MAGE_TOWER)
       {
         ManaToGrant = 250
       };
@@ -189,7 +189,7 @@ namespace WarcraftLegacies.Source.Setup
       };
       SpellSystem.Register(unholyArmor);
 
-      PassiveAbilityManager.Register(new RegionRestricted(Constants.UNIT_H097_GUARD_POST_SCARLET,
+      PassiveAbilityManager.Register(new RegionRestricted(Constants.UNIT_H097_GUARD_HOUSE_SCARLET_OTHER,
         new[]
         {
           Regions.HeartglenTaxe,
@@ -200,10 +200,10 @@ namespace WarcraftLegacies.Source.Setup
           Regions.CorinTaxe
         }));
 
-      PassiveAbilityManager.Register(new ProvidesIncome(Constants.UNIT_H09N_PALISADE_FORT_SCARLET, 15));
+      PassiveAbilityManager.Register(new ProvidesIncome(Constants.UNIT_H09N_PALISADE_FORT_SCARLET_TOWER, 15));
       PassiveAbilityManager.Register(new ProvidesIncome(Constants.UNIT_H09P_SCARLET_KEEP_SCARLET, 60));
       PassiveAbilityManager.Register(new ProvidesIncome(Constants.UNIT_H09O_CRIMSON_CASTLE_SCARLET, 80));
-      PassiveAbilityManager.Register(new ProvidesIncome(Constants.UNIT_H09Q_ROYAL_FORTRESS_SCARLET, 100));
+      PassiveAbilityManager.Register(new ProvidesIncome(Constants.UNIT_H09Q_ROYAL_FORTRESS_SCARLET_BARRACKS, 100));
 
       var electricStrike = new ElectricStrike(Constants.ABILITY_A0RC_ELECTRIC_STRIKE_DARK_GREEN_WIZARD_S_SANCTUM)
       {

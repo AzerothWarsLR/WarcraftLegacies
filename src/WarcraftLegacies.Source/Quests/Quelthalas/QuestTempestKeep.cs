@@ -51,7 +51,7 @@ namespace WarcraftLegacies.Source.Quests.Quelthalas
         Faction.UNLIMITED);
       completingFaction.ModObjectLimit(Constants.UNIT_N09S_BLOOD_ELVEN_RANGER_QUEL_THALAS, 6);
       completingFaction.ModObjectLimit(Constants.UNIT_N02F_FELBLOOD_WARLOCK_QUEL_THALAS, 6);
-      completingFaction.ModObjectLimit(Constants.UNIT_E01B_ARCANE_ANNIHILATOR_QUELTHALAS, 6);
+      completingFaction.ModObjectLimit(Constants.UNIT_E01B_ARCANE_ANNIHILATOR_QUEL_THALAS, 6);
       completingFaction.ModObjectLimit(Constants.UNIT_H00Q_KING_OF_QUEL_THALAS_QUEL_THALAS,
         -Faction.UNLIMITED);
       completingFaction.ModObjectLimit(Constants.UNIT_HVWD_RANGER_GENERAL_OF_SILVERMOON_QUEL_THALAS,

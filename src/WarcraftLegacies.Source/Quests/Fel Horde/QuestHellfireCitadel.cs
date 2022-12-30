@@ -31,7 +31,7 @@ namespace WarcraftLegacies.Source.Quests.Fel_Horde
       AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N02N_BLADE_S_EDGE_MOUNTAINS_15GOLD_MIN)));
       AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N00B_NAGRAND_15GOLD_MIN)));
       AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N0CV_HALAAR_10GOLD_MIN)));
-      AddObjective(new ObjectiveUpgrade(Constants.UNIT_O030_FORTRESS_FEL_HORDE, Constants.UNIT_O02Y_GREAT_HALL_FEL_HORDE));
+      AddObjective(new ObjectiveUpgrade(Constants.UNIT_O030_FORTRESS_FEL_HORDE_T3, Constants.UNIT_O02Y_GREAT_HALL_FEL_HORDE_T1));
       AddObjective(new ObjectiveExpire(1450));
       AddObjective(new ObjectiveSelfExists());
       ResearchId = Constants.UPGRADE_R00P_QUEST_COMPLETED_THE_CITADEL;

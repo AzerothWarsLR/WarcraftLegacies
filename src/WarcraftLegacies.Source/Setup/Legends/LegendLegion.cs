@@ -1,4 +1,4 @@
-using MacroTools;
+﻿using MacroTools;
 using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using WCSharp.Shared.Data;
@@ -59,14 +59,14 @@ namespace WarcraftLegacies.Source.Setup.Legends
 
       LEGION_NEXUS_OUTLAND = new Capital
       {
-        Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_N0BE_LEGION_NEXUS_LEGION, new Point(-3483, -21662))
+        Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_N0BE_LEGION_NEXUS_LEGION_OTHER, new Point(-3483, -21662))
       };
       CapitalManager.Register(LEGION_NEXUS_OUTLAND);
       SetUnitInvulnerable(LEGION_NEXUS_OUTLAND.Unit, true);
       
       LEGION_NEXUS_NORTHREND = new Capital
       {
-        Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_N0BE_LEGION_NEXUS_LEGION, new Point(-3501, 20951))
+        Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_N0BE_LEGION_NEXUS_LEGION_OTHER, new Point(-3501, 20951))
       };
       CapitalManager.Register(LEGION_NEXUS_NORTHREND);
       SetUnitInvulnerable(LEGION_NEXUS_NORTHREND.Unit, true);

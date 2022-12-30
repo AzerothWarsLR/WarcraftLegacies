@@ -15,7 +15,7 @@ namespace WarcraftLegacies.Source.Quests.Naga
       "ReplaceableTextures\\CommandButtons\\BTNMetamorphosis.blp")
     {
       AddObjective(new ObjectiveKillUnit(LegendScourge.LegendLichking.Unit));
-      AddObjective(new ObjectiveResearch(Constants.UPGRADE_R063_PATH_OF_EXILE_NAGA, Constants.UNIT_N0C9_TEMPLE_OF_TIDES_NZOTH));
+      AddObjective(new ObjectiveResearch(Constants.UPGRADE_R063_PATH_OF_EXILE_NAGA, Constants.UNIT_N0C9_TEMPLE_OF_TIDES_NZOTH_T3));
       Global = true;
     }
 

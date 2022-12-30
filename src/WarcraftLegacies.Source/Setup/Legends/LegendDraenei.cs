@@ -28,7 +28,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
 
       LegendExodar = new Capital
       {
-        Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_E01X_EXODAR_REGALIS_DRAENEI)
+        Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_E01X_EXODAR_REGALIS_DRAENEI_SPACESHIP)
       };
       CapitalManager.Register(LegendExodar);
 
@@ -46,19 +46,19 @@ namespace WarcraftLegacies.Source.Setup.Legends
 
       Shattrah = new Capital
       {
-        Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_H0AH_SHATTRAH_DRAENEI)
+        Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_H0AH_SHATTRAH_DRAENEI_OTHER)
       };
       CapitalManager.Register(Shattrah);
       
       Farahlon = new Capital
       {
-        Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_H0AF_FARAHLON_DRAENEI)
+        Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_H0AF_FARAHLON_DRAENEI_OTHER)
       };
       CapitalManager.Register(Farahlon);
       
       Halaar = new Capital
       {
-        Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_H0AE_HALAAR_DRAENEI)
+        Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_H0AE_HALAAR_DRAENEI_OTHER)
       };
       CapitalManager.Register(Halaar);
     }
