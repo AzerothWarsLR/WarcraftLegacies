@@ -4964,7 +4964,7 @@ u = BlzCreateUnitWithSkin(p, FourCC("nwlg"), 5815.8, 6529.4, 80.778, FourCC("nwl
 SetUnitAcquireRange(u, 200.0)
 u = BlzCreateUnitWithSkin(p, FourCC("nwlt"), -13615.0, 592.8, 301.870, FourCC("nwlt"))
 SetUnitAcquireRange(u, 200.0)
-u = BlzCreateUnitWithSkin(p, FourCC("nwen"), 6087.8, 17248.1, -77.591, FourCC("nwen"))
+u = BlzCreateUnitWithSkin(p, FourCC("nwen"), 6087.8, 17248.1, 282.409, FourCC("nwen"))
 SetUnitAcquireRange(u, 200.0)
 u = BlzCreateUnitWithSkin(p, FourCC("nthl"), -15510.6, -2034.6, 285.650, FourCC("nthl"))
 SetUnitAcquireRange(u, 200.0)
