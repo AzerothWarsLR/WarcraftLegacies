@@ -74634,6 +74634,12 @@ STRING 12435
 Spike Aura (Warsong)
 }
 
+STRING 12436
+// Units: n00M (Highbank (10gold/min)), Name (Name)
+{
+Highbank (10gold/min)
+}
+
 STRING 12437
 // Abilities: A05X (Thorns), Researchhotkey (Hotkey - Learn)
 {
