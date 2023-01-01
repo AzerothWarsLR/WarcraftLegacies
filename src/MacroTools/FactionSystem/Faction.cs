@@ -569,6 +569,11 @@ namespace MacroTools.FactionSystem
       foreach (var unit in playerUnits)
       {
         var loopUnitType = UnitType.GetFromHandle(unit);
+        if (IsUnitType(unit, UNIT_TYPE_SUMMONED))
+        {
+          RemoveUnit(unit);
+          return;
+        }
         if (IsUnitType(unit, UNIT_TYPE_HERO))
         {
           Player?.AddGold(HeroCost);
@@ -577,20 +582,23 @@ namespace MacroTools.FactionSystem
             _xp -= LegendaryHeroManager.GetFromUnit(unit)!.StartingXp;
           unit.DropAllItems();
           RemoveUnit(unit);
+          return;
         }
-        else if (!IsUnitType(unit, UNIT_TYPE_STRUCTURE))
+        if (!IsUnitType(unit, UNIT_TYPE_STRUCTURE))
         {
           Gold += loopUnitType.GoldCost * RefundMultiplier;
           Lumber += loopUnitType.LumberCost * RefundMultiplier;
           unit.DropAllItems();
           RemoveUnit(unit);
+          return;
         }
-        else if (loopUnitType.Meta == false)
+        if (loopUnitType.Meta == false)
         {
-          SetUnitOwner(unit,
+          unit.SetOwner(
             Player?.GetTeam()?.Size > 1
               ? playersToDistributeTo[GetRandomInt(0, playersToDistributeTo.Count-1)]
               : Player(GetBJPlayerNeutralVictim()), false);
+          return;
         }
       }
     }

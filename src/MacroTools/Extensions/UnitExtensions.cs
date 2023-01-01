@@ -312,9 +312,9 @@ namespace MacroTools.Extensions
     /// <summary>
     /// Changess the unit's owner to the specified player.
     /// </summary>
-    public static unit SetOwner(this unit unit, player whichPlayer)
+    public static unit SetOwner(this unit unit, player whichPlayer, bool changeColor = true)
     {
-      SetUnitOwner(unit, whichPlayer, true);
+      SetUnitOwner(unit, whichPlayer, changeColor);
       return unit;
     }
     
