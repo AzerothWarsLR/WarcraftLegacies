@@ -36,7 +36,9 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
     /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)
     {
-      foreach (var constructionSite in _constructionSites) 
+      if (completingFaction.Player != GetLocalPlayer()) 
+        return;
+      foreach (var constructionSite in _constructionSites)
         constructionSite.Ping(5);
     }
   }
