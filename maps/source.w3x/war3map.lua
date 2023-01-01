@@ -513,6 +513,7 @@ gg_snd_DoorOpenRemix = nil
 gg_snd_NuclearLaunchDetected = nil
 gg_snd_IllidansTheme = ""
 gg_trg_ExodarShipJump = nil
+gg_rct_NaxxramasInstance = nil
 function InitGlobals()
 end
 
@@ -7956,6 +7957,7 @@ gg_rct_SkullRetrieval = Rect(8576.0, 4672.0, 8832.0, 4928.0)
 gg_rct_KezanUnlock = Rect(-2400.0, -8000.0, 608.0, -5184.0)
 gg_rct_SuramarUnlock = Rect(-416.0, 5184.0, 1632.0, 6688.0)
 gg_rct_HighbankUnlock_UNUSED = Rect(21664.0, -8128.0, 23200.0, -6848.0)
+gg_rct_NaxxramasInstance = Rect(-14944.0, 21536.0, -12352.0, 24256.0)
 end
 
 function Trig_ExodarShipJump_Conditions()

@@ -14,14 +14,14 @@ namespace WarcraftLegacies.Source.Setup
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
       InstanceSystem.Register(
-        new Instance("Twisting Nether", Regions.TwistingNether)
+        new Instance("Argus", Regions.MonolithNoBuild)
       );
 
       InstanceSystem.Register(
         new Instance("Outland", Regions.InstanceOutland)
       );
 
-      var naxxramas = new Instance("Naxxramas", Regions.NaxxramasInside);
+      var naxxramas = new Instance("Naxxramas", Regions.NaxxramasInstance);
       naxxramas.AddDependency(preplacedUnitSystem.GetUnit(Constants.UNIT_U01X_HEART_OF_NAXXRAMAS_SCOURGE_NAXXRAMAS_INTERIOR));
       naxxramas.AddDependency(preplacedUnitSystem.GetUnit(Constants.UNIT_E013_NAXXRAMAS_SCOURGE_OTHER));
       InstanceSystem.Register(naxxramas);
