@@ -572,7 +572,7 @@ namespace MacroTools.FactionSystem
         if (IsUnitType(unit, UNIT_TYPE_SUMMONED))
         {
           RemoveUnit(unit);
-          return;
+          continue;
         }
         if (IsUnitType(unit, UNIT_TYPE_HERO))
         {
@@ -582,7 +582,7 @@ namespace MacroTools.FactionSystem
             _xp -= LegendaryHeroManager.GetFromUnit(unit)!.StartingXp;
           unit.DropAllItems();
           RemoveUnit(unit);
-          return;
+          continue;
         }
         if (!IsUnitType(unit, UNIT_TYPE_STRUCTURE))
         {
@@ -590,7 +590,7 @@ namespace MacroTools.FactionSystem
           Lumber += loopUnitType.LumberCost * RefundMultiplier;
           unit.DropAllItems();
           RemoveUnit(unit);
-          return;
+          continue;
         }
         if (loopUnitType.Meta == false)
         {
@@ -598,7 +598,6 @@ namespace MacroTools.FactionSystem
             Player?.GetTeam()?.Size > 1
               ? playersToDistributeTo[GetRandomInt(0, playersToDistributeTo.Count-1)]
               : Player(GetBJPlayerNeutralVictim()), false);
-          return;
         }
       }
     }
