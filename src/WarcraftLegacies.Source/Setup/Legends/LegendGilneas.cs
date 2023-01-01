@@ -12,7 +12,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
     public static LegendaryHero Genn { get; private set; }
     public static LegendaryHero Darius { get; private set; }
     public static LegendaryHero Goldrinn { get; private set; }
-    public static Capital LightDawn { get; private set; }
+    public static Capital NorthshireAbbey { get; private set; }
     public static Capital GilneasCastle { get; private set; }
 
     /// <summary>
@@ -46,12 +46,11 @@ namespace WarcraftLegacies.Source.Setup.Legends
       };
       LegendaryHeroManager.Register(Darius);
 
-      LightDawn = new Capital
+      NorthshireAbbey = new Capital
       {
-        UnitType = Constants.UNIT_H057_LIGHT_S_DAWN_CATHEDRAL_GILNEAS_OTHER,
-        DeathMessage = "The Light's Dawn Capital has been destroyed.",
+        UnitType = Constants.UNIT_H02R_NORTHSHIRE_ABBEY_STORMWIND_OTHER
       };
-      CapitalManager.Register(LightDawn);
+      CapitalManager.Register(NorthshireAbbey);
 
       GilneasCastle = new Capital
       {

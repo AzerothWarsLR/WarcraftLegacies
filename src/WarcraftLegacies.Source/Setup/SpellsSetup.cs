@@ -200,7 +200,7 @@ namespace WarcraftLegacies.Source.Setup
           Regions.CorinTaxe
         }));
 
-      PassiveAbilityManager.Register(new ProvidesIncome(Constants.UNIT_H09N_PALISADE_FORT_SCARLET_TOWER, 15));
+      PassiveAbilityManager.Register(new ProvidesIncome(Constants.UNIT_H09N_PALISADE_FORT_SCARLET_BARRACKS, 15));
       PassiveAbilityManager.Register(new ProvidesIncome(Constants.UNIT_H09P_SCARLET_KEEP_SCARLET, 60));
       PassiveAbilityManager.Register(new ProvidesIncome(Constants.UNIT_H09O_CRIMSON_CASTLE_SCARLET, 80));
       PassiveAbilityManager.Register(new ProvidesIncome(Constants.UNIT_H09Q_ROYAL_FORTRESS_SCARLET_BARRACKS, 100));
