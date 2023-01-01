@@ -24,7 +24,7 @@ namespace MacroTools.ObjectiveSystem.Objectives
     {
       _target = target;
       if (target.Capturable)
-        WarningLogger.Log(
+        Logger.LogWarning(
           $"{target.Unit.GetName()} should not be a target of {nameof(ObjectiveCapitalDead)} because it is capturable.");
 
       TargetWidget = target.Unit;

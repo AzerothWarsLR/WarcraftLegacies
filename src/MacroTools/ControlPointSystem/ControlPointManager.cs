@@ -125,7 +125,7 @@ namespace MacroTools.ControlPointSystem
     {
       _byUnit.Add(controlPoint.Unit, controlPoint);
       if (_byUnitType.ContainsKey(controlPoint.UnitType))
-        WarningLogger.Log(
+        Logger.LogWarning(
           $"There are two Control Points with the same ID of {GeneralHelpers.DebugIdInteger2IdString(controlPoint.UnitType)}.");
       else
         _byUnitType.Add(controlPoint.UnitType, controlPoint);
