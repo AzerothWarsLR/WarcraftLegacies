@@ -38,22 +38,23 @@ namespace WarcraftLegacies.Source.Quests.Fel_Horde
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable);
       Required = true;
     }
-
-    /// <summary>
+    
     /// <inheritdoc/>
-    /// </summary>
     protected override string CompletionPopup =>
       "Hellfire Citadel has been subjugated, and its military is now free to assist the Fel Horde.";
-
-    /// <summary>
+    
     /// <inheritdoc/>
-    /// </summary>
     protected override string RewardDescription =>
       "Control of all units in Hellfire Citadel and enable Kargath to be trained at the altar";
 
-    /// <summary>
+    /// <inheritdoc />
+    protected override void OnAdd(Faction whichFaction)
+    {
+      foreach (var unit in _demonGates) 
+        unit.SetInvulnerable(true);
+    }
+    
     /// <inheritdoc/>
-    /// </summary>
     protected override void OnComplete(Faction completingFaction)
     {
       if(completingFaction.Player != null)
@@ -63,16 +64,15 @@ namespace WarcraftLegacies.Source.Quests.Fel_Horde
       }
       if (GetLocalPlayer() == completingFaction.Player) PlayThematicMusic("war3mapImported\\FelTheme.mp3");
     }
-
-    /// <summary>
+    
     /// <inheritdoc/>
-    /// </summary>
     protected override void OnFail(Faction completingFaction)
     {
-      if (completingFaction.Player != null)
-      {
+      if (completingFaction.Player != null) 
         Player(PLAYER_NEUTRAL_AGGRESSIVE).RescueGroup(_rescueUnits);
-      }      
+
+      foreach (var unit in _demonGates)
+        unit.Kill();
     }
   }
 }
