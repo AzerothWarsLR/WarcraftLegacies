@@ -22,6 +22,7 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
       AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N08Q_TOL_BARAD_20GOLD_MIN)));
       AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N09K_CRESTFALL_10GOLD_MIN)));
       ResearchId = Constants.UPGRADE_R06T_QUEST_COMPLETED_SAFE_SEA_DECREE;
+      Required = true;
     }
 
     /// <inheritdoc/>
