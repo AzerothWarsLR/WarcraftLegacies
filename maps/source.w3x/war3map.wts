@@ -81794,7 +81794,7 @@ This unit is Paralysed
 }
 
 STRING 13637
-// Buffs/Effects: B069 (), Bufftip (Tooltip)
+// Abilities: A05L (Persistent Soul), Name (Name)
 {
 Persistent Soul
 }
@@ -83870,7 +83870,7 @@ Increases Sorceresses' mana capacity, mana regeneration rate, attack damage and 
 }
 
 STRING 13983
-// Upgrades: R07X (Defend), EditorSuffix (Editor Suffix)
+// Upgrades: R07I (Necromancer Adept Training,Necromancer Master Training), EditorSuffix (Editor Suffix)
 {
 (Scourge)
 }
@@ -84290,7 +84290,7 @@ D
 }
 
 STRING 14053
-// Upgrades: R08T (Cannibalize), EditorSuffix (Editor Suffix)
+// Upgrades: R07W (Defend), EditorSuffix (Editor Suffix)
 {
 (Scourge)
 }
@@ -85100,7 +85100,7 @@ Improves Phase Blade by increasing its damage to <A057,DataA2>.
 }
 
 STRING 14188
-// Upgrades: R07I (Necromancer Adept Training,Necromancer Master Training), EditorSuffix (Editor Suffix)
+// Upgrades: R07X (Defend), EditorSuffix (Editor Suffix)
 {
 (Scourge)
 }
@@ -85136,7 +85136,7 @@ Improves Orb of Annihilation by increasing its damage dealt to <Afak,DataA2>.
 }
 
 STRING 14194
-// Upgrades: R07W (Defend), EditorSuffix (Editor Suffix)
+// Upgrades: R08T (Cannibalize), EditorSuffix (Editor Suffix)
 {
 (Scourge)
 }
@@ -85190,7 +85190,7 @@ Allows Obsidian Statues to use Mana Flare, which causes them to channel negative
 }
 
 STRING 14204
-// Upgrades: R098 (Burning Oil), Hotkey (Hotkey)
+// Upgrades: R080 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 A
 }
@@ -92925,7 +92925,7 @@ Creates a barrier that stops 800 points of spell damage from affecting a target 
 }
 
 STRING 15534
-// Upgrades: R080 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R08K (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
 {
 A
 }
@@ -96240,7 +96240,7 @@ Dimensional Jump
 }
 
 STRING 16168
-// Abilities: A05L (Persistent Soul), Name (Name)
+// Abilities: A05L (Persistent Soul), Tip (Tooltip - Normal)
 {
 Persistent Soul
 }
@@ -99004,7 +99004,7 @@ Pure strength and dominance of the Horde.|n|cfff5962dAbilities:|R Repair|n|n|cff
 }
 
 STRING 16691
-// Abilities: A05L (Persistent Soul), Tip (Tooltip - Normal)
+// Buffs/Effects: B069 (), Bufftip (Tooltip)
 {
 Persistent Soul
 }
@@ -104899,19 +104899,19 @@ A
 }
 
 STRING 17728
-// Upgrades: R08K (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
-{
-A
-}
-
-STRING 17729
 // Upgrades: R090 (Defend), Hotkey (Hotkey)
 {
 A
 }
 
-STRING 17730
+STRING 17729
 // Upgrades: R091 (Defend), Hotkey (Hotkey)
+{
+A
+}
+
+STRING 17730
+// Upgrades: R092 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 A
 }
@@ -108798,7 +108798,7 @@ STRING 18408
 }
 
 STRING 18409
-// Upgrades: R092 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R02K (Storm Hammers), Hotkey (Hotkey)
 {
 A
 }
@@ -108882,19 +108882,19 @@ Titanforge Artifact
 }
 
 STRING 18423
-// Upgrades: R02K (Storm Hammers), Hotkey (Hotkey)
-{
-A
-}
-
-STRING 18424
 // Upgrades: R08T (Cannibalize), Hotkey (Hotkey)
 {
 A
 }
 
-STRING 18425
+STRING 18424
 // Upgrades: R096 (Defend), Hotkey (Hotkey)
+{
+A
+}
+
+STRING 18425
+// Upgrades: R098 (Burning Oil), Hotkey (Hotkey)
 {
 A
 }

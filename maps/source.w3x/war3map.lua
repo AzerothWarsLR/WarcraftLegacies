@@ -324,6 +324,7 @@ gg_rct_SkullRetrieval = nil
 gg_rct_KezanUnlock = nil
 gg_rct_SuramarUnlock = nil
 gg_rct_HighbankUnlock_UNUSED = nil
+gg_rct_NaxxramasInstance = nil
 gg_snd_ArcaneObservatoryWhat1 = nil
 gg_snd_ArrangedTeamInvitation = nil
 gg_snd_ClanInvitation = nil
@@ -513,7 +514,6 @@ gg_snd_DoorOpenRemix = nil
 gg_snd_NuclearLaunchDetected = nil
 gg_snd_IllidansTheme = ""
 gg_trg_ExodarShipJump = nil
-gg_rct_NaxxramasInstance = nil
 function InitGlobals()
 end
 
