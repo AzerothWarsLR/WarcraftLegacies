@@ -85225,6 +85225,12 @@ STRING 14208
 Otherworldly Rampage
 }
 
+STRING 14209
+// Abilities: S001 (Chaos), EditorSuffix (Editor Suffix)
+{
+(Scourge - Revenants)
+}
+
 STRING 14210
 // Upgrades: R06B (Chaos), effect1 (Effect 1)
 {
@@ -85253,6 +85259,12 @@ STRING 14214
 // Units: H028 (Thane of Aerie Peak), Ubertip (Tooltip - Extended)
 {
 Wild cunning Hero, adept at supporting armies.|n|cfff5962dCan Learn:|R Hamer Time!, Battleshout, Stoneform, Gryphon Sky|n|n|cffffcc00Attacks land and air units.|R
+}
+
+STRING 14215
+// Abilities: S001 (Chaos), Name (Name)
+{
+Chaos
 }
 
 STRING 14216
@@ -85427,6 +85439,12 @@ STRING 14244
 // Upgrades: R066 (Burning Oil), Tip (Tooltip)
 {
 Research Burning Oil
+}
+
+STRING 14245
+// Units: n07W (Plague Revenant), Ubertip (Tooltip - Extended)
+{
+Heavy melee unit. |n|cfff5962dAbilities:|R Acid Blob, Smoke Bomb |n|n|cff99b4d1Can only train 12.|r|n|cffffcc00Attacks land units.|r
 }
 
 STRING 14246
@@ -96213,12 +96231,6 @@ STRING 16166
 // Abilities: A07D (Dimensional Jump), Name (Name)
 {
 Dimensional Jump
-}
-
-STRING 16167
-// Units: n07W (Plague Revenant), Ubertip (Tooltip - Extended)
-{
-Heavy melee unit. |n|cfff5962dAbilities:|R Acid Blob, Smoke Bomb, Persistent Soul |n|n|cff99b4d1Can only train 12.|r|n|cffffcc00Attacks land units.|r
 }
 
 STRING 16168
