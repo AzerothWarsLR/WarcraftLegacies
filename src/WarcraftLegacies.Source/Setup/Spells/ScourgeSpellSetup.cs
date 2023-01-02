@@ -1,4 +1,6 @@
-﻿using MacroTools.Spells;
+﻿using MacroTools.PassiveAbilities;
+using MacroTools.PassiveAbilitySystem;
+using MacroTools.Spells;
 using MacroTools.SpellSystem;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -22,6 +24,14 @@ namespace WarcraftLegacies.Source.Setup.Spells
         ExteriorWaygateUnitTypeId = Constants.UNIT_H05T_INSTANCE_ENTRANCE_PORTAL,
         GetExteriorWaygatePosition = () => new Point(GetUnitX(GetTriggerUnit()) - 100, GetUnitY(GetTriggerUnit()) - 100),
         GetInteriorWaygatePosition = () => Regions.NaxxramasInside.Center
+      });
+      PassiveAbilityManager.Register(new PersistentSoul(Constants.UNIT_N009_REVENANT_SCOURGE,
+        Constants.ABILITY_A05L_PERSISTENT_SOUL_SCOURGE_REVENANT)
+      {
+        ReanimationCountLevel = 1,
+        Duration = 40,
+        BuffId = Constants.BUFF_B069_PERSISTENT_SOUL_FORSAKEN_PLAGUE_REVENANT,
+        Radius = 700
       });
     }
   }

@@ -226,7 +226,6 @@ namespace WarcraftLegacies.Source.Setup
       QuelthalasSpellSetup.Setup();
       KulTirasSpellSetup.Setup();
       StormwindSpellSetup.Setup();
-      ForsakenSpellSetup.Setup();
       DragonmawSpellSetup.Setup();
       IllidariSpellSetup.Setup();
       FelHordeSpellSetup.Setup();

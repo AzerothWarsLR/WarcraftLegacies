@@ -48,7 +48,7 @@ namespace MacroTools.PassiveAbilities
       var caster = GetTriggerUnit();
       foreach (var unit in CreateGroup().EnumUnitsInRange(caster.GetPosition(), Radius)
                  .EmptyToList()
-                 .Where(IsReanimationCandidate)
+                 .Where(x => IsReanimationCandidate(caster, x))
                  .OrderByDescending(x => x.GetLevel())
                  .Take(ReanimationCountLevel * GetUnitAbilityLevel(caster, _abilityTypeId)))
       {
@@ -56,13 +56,14 @@ namespace MacroTools.PassiveAbilities
       }
     }
 
-    private static bool IsReanimationCandidate(unit target)
+    private static bool IsReanimationCandidate(unit caster, unit target)
     {
       return !UnitAlive(target) 
              && !IsUnitType(target, UNIT_TYPE_MECHANICAL) 
              && !IsUnitType(target, UNIT_TYPE_STRUCTURE) 
              && !IsUnitType(target, UNIT_TYPE_HERO) 
-             && !IsUnitType(target, UNIT_TYPE_SUMMONED);
+             && !IsUnitType(target, UNIT_TYPE_SUMMONED)
+             && caster != target;
     }
     
     private void Reanimate(unit whichUnit)

@@ -41,6 +41,9 @@ namespace WarcraftLegacies.Source.Setup
       
       IncompatibleResearchSystem.Register(Constants.UPGRADE_ROBF_DEMONIC_FLUX_FEL_HORDE, 
         Constants.UPGRADE_R098_FEL_INFUSED_SKELETON_FEL_HORDE);
+      
+      IncompatibleResearchSystem.Register(Constants.UPGRADE_R01X_EPIDEMIC_SCOURGE,
+        Constants.UPGRADE_R08T_REVENANTS_SCOURGE);
     }
   }
 }
