@@ -4,6 +4,7 @@ using MacroTools.FactionSystem;
 using MacroTools.Powers;
 using WarcraftLegacies.Source.Researches.Lordaeron;
 using WarcraftLegacies.Source.Researches.Ironforge;
+using WarcraftLegacies.Source.Researches.Scourge;
 using WarcraftLegacies.Source.Researches.Stormwind;
 using WCSharp.Events;
 using WCSharp.Shared.Data;
@@ -22,6 +23,7 @@ namespace WarcraftLegacies.Source.Setup
     /// <param name="preplacedUnitSystem">A system that can find preplaced units.</param>
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
+      Revenants.Setup();
       VeteranFootmen.Setup();
       TitanForgeArtifact.Setup();
       DeeprunTram.Setup(preplacedUnitSystem);
