@@ -26,7 +26,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
         GetInteriorWaygatePosition = () => Regions.NaxxramasInside.Center
       });
       PassiveAbilityManager.Register(new PersistentSoul(Constants.UNIT_N009_REVENANT_SCOURGE,
-        Constants.ABILITY_A05L_PERSISTENT_SOUL_FORSAKEN_PLAGUE_REVENANT)
+        Constants.ABILITY_A05L_PERSISTENT_SOUL_SCOURGE_REVENANT)
       {
         ReanimationCountLevel = 1,
         Duration = 40,
