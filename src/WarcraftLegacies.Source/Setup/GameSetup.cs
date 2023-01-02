@@ -129,6 +129,7 @@ namespace WarcraftLegacies.Source.Setup
       GilneasGateTowers.Setup(preplacedUnitSystem);
       EyeOfSargerasPickup.Setup();
       SacrificeAcolyte.Setup();
+      IntegrityChecker.Setup();
     }
   }
 }

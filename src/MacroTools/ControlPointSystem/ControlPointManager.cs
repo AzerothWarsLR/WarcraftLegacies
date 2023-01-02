@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using MacroTools.Extensions;
 using MacroTools.Libraries;
 using WCSharp.Events;
@@ -27,7 +28,7 @@ namespace MacroTools.ControlPointSystem
           }
       });
     }
-    
+
     /// <summary>
     /// The singleton instance of the <see cref="ControlPointManager"/> class.
     /// </summary>
@@ -102,6 +103,11 @@ namespace MacroTools.ControlPointSystem
     private readonly Dictionary<unit, ControlPoint> _byUnit = new();
     private readonly int _increaseControlLevelAbilityTypeId;
 
+    /// <summary>
+    /// Returns all registered <see cref="ControlPoint"/>s.
+    /// </summary>
+    public List<ControlPoint> GetAllControlPoints() => _byUnit.Values.ToList();
+    
     /// <summary>
     ///   Whether or not the given unit is a <see cref="ControlPoint" />.
     /// </summary>
