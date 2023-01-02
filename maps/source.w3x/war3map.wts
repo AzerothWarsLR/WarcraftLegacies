@@ -85165,12 +85165,6 @@ STRING 14198
 W
 }
 
-STRING 14199
-// Upgrades: R08T (Cannibalize), Ubertip (Tooltip - Extended)
-{
-Replaces Abominations with Revenants, which have the Persistent Soul ability but are slightly weaker.|n|n|cfff5962dPersistent Soul:|R When this unit dies, it reanimates the highest level nearby corpse for 40 seconds.|n|n|cffffcc00Cannot be researched with Epidemic.|r
-}
-
 STRING 14200
 // Abilities: A0L3 (Animate Dead), Hotkey (Hotkey - Normal)
 {
@@ -85481,6 +85475,12 @@ STRING 14251
 // Abilities: AHwe (Summon Fel Hounds), Ubertip (Tooltip - Normal - Extended)
 {
 Summons 3 Fel Hounds with Mana Burn to attack the heroes enemies. |n|n|cffffcc00Attacks land units.|r
+}
+
+STRING 14252
+// Upgrades: R08T (Cannibalize), Ubertip (Tooltip - Extended)
+{
+Replaces Abominations with Revenants, which have the Persistent Soul ability and attack slightly faster.|n|n|cfff5962dPersistent Soul:|R When this unit dies, it reanimates the highest level nearby corpse for 40 seconds.|n|n|cffffcc00Cannot be researched with Epidemic.|r
 }
 
 STRING 14253
@@ -85883,6 +85883,12 @@ STRING 14319
 // Upgrades: R053 (Chaos), Name (Name)
 {
 Quest Completed: Legitimate Necromancy
+}
+
+STRING 14320
+// Abilities: A05L (Persistent Soul), EditorSuffix (Editor Suffix)
+{
+(Scourge - Revenant)
 }
 
 STRING 14321
@@ -96240,7 +96246,7 @@ Persistent Soul
 }
 
 STRING 16171
-// Abilities: A05L (Persistent Soul), EditorSuffix (Editor Suffix)
+// Buffs/Effects: B069 (), EditorSuffix (Editor Suffix)
 {
 (Forsaken - Plague Revenant)
 }
@@ -99007,12 +99013,6 @@ STRING 16692
 // Abilities: A06L (Mana Shield), Tip (Tooltip - Normal)
 {
 Activate Mana Shield - [|cffffcc00Level 4|r]
-}
-
-STRING 16693
-// Buffs/Effects: B069 (), EditorSuffix (Editor Suffix)
-{
-(Forsaken - Plague Revenant)
 }
 
 STRING 16694
