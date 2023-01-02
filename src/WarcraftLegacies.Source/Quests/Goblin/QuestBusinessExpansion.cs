@@ -28,7 +28,7 @@ namespace WarcraftLegacies.Source.Quests.Goblin
       Required = true;
     }
 
-    protected override string RewardDescription => "You unlock Kezan and can now train Traders";
+    protected override string RewardDescription => "Our Trade Empire is now large enough to get the attention of the Trade Princes of Kezan. They will surely join our growing association";
 
     protected override string CompletionPopup => "You unlock Kezan and can now train Traders";
 

@@ -26,9 +26,9 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
 
     /// <inheritdoc/>
     protected override string CompletionPopup =>
-      "With the seas now secure, the Ember Order can be reformed and Lucille Waycrest is trainable";
+      "With the seas now secure, the Ember Order can be reformed and Lucille Waycrest has joined the Proudmoor";
 
     /// <inheritdoc/>
-    protected override string RewardDescription => "The Order of Embers is reborn and Lucille Waycrest is trainable";
+    protected override string RewardDescription => "You can now build Order Chapter House and Lucille Waycrest is trainable";
   }
 }
