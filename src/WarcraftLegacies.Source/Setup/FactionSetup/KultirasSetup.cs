@@ -38,7 +38,7 @@ Once you have established your kingdom, set sail to help your allies on the main
       Kultiras.ModObjectLimit(FourCC("h07R"), Faction.UNLIMITED); //Scout Tower
       Kultiras.ModObjectLimit(FourCC("h07S"), Faction.UNLIMITED); //Guard Tower
       Kultiras.ModObjectLimit(FourCC("h07T"), Faction.UNLIMITED); //Improved Guard Tower
-      Kultiras.ModObjectLimit(FourCC("h04U"), Faction.UNLIMITED); //Cannon Tower
+      Kultiras.ModObjectLimit(FourCC("h07U"), Faction.UNLIMITED); //Cannon Tower
       Kultiras.ModObjectLimit(FourCC("h07V"), Faction.UNLIMITED); //Improved Cannon Tower
       Kultiras.ModObjectLimit(FourCC("h07O"), Faction.UNLIMITED); //Blacksmith
       Kultiras.ModObjectLimit(FourCC("h07Q"), Faction.UNLIMITED); //Arcane Sanctum
