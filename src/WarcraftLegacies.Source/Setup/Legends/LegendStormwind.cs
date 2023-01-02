@@ -1,6 +1,5 @@
 ﻿using MacroTools;
 using MacroTools.Extensions;
-using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -24,18 +23,22 @@ namespace WarcraftLegacies.Source.Setup.Legends
     {
       Varian = new LegendaryHero("Varian Wrynn")
       {
-        UnitType = FourCC("H00R")
+        UnitType = FourCC("H00R"),
+        DeathMessage = "The King of Stormwind dies a warrior’s death, defending hearth and family. The Wrynn Dynasty crumbles with his passing.",
+        StartingXp = 1800,
+        StartingArtifactItemTypeIds = new[]
+        {
+          Constants.ITEM_I00D_SHALAMAYNE
+        }
       };
       Varian.AddUnitDependency(preplacedUnitSystem.GetUnit(Constants.UNIT_H00X_STORMWIND_KEEP_STORMWIND_OTHER));
-      Varian.DeathMessage =
-        "The King of Stormwind dies a warrior’s death, defending hearth and family. The Wrynn Dynasty crumbles with his passing.";
-      Varian.StartingXp = 1800;
       LegendaryHeroManager.Register(Varian);
 
       Galen = new LegendaryHero("Galen Trollbane")
       {
         UnitType = FourCC("H00Z"),
-        StartingXp = 1000
+        StartingXp = 1000,
+        StartingArtifactItemTypeIds = new[] { Constants.ITEM_I01O_TROL_KALAR }
       };
       LegendaryHeroManager.Register(Galen);
 

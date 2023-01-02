@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using MacroTools.ArtifactSystem;
 using MacroTools.Extensions;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -89,6 +92,11 @@ namespace MacroTools.LegendSystem
     /// </summary>
     public string DeathSfx { private get; init; } = "Abilities\\Spells\\Demon\\DarkPortal\\DarkPortalTarget.mdl";
 
+    /// <summary>
+    /// The <see cref="LegendaryHero"/> will spawn with <see cref="Artifact"/>s with these IDs the first time they are created.
+    /// </summary>
+    public IEnumerable<int> StartingArtifactItemTypeIds { get; init; } = Array.Empty<int>();
+    
     /// <summary>
     /// Initializes a new instance of the <see cref="LegendaryHero"/> class.
     /// </summary>
@@ -184,26 +192,35 @@ namespace MacroTools.LegendSystem
     protected override void OnChangeUnit()
     {
       _deathTrig?.Destroy();
+      _castTrig?.Destroy();
+      _ownerTrig?.Destroy();
+
+      if (Unit == null) 
+        return;
+      
       _deathTrig = CreateTrigger()
         .RegisterUnitEvent(Unit, EVENT_UNIT_DEATH)
         .AddAction(OnDeath);
-
-      _castTrig?.Destroy();
       _castTrig = CreateTrigger()
         .RegisterUnitEvent(Unit, EVENT_UNIT_SPELL_FINISH)
         .AddAction(OnCast);
-
-      _ownerTrig?.Destroy();
       _ownerTrig = CreateTrigger()
         .RegisterUnitEvent(Unit, EVENT_UNIT_CHANGE_OWNER)
         .AddAction(() =>
         {
           OnChangeOwner(new LegendChangeOwnerEventArgs(this, GetChangingUnitPrevOwner()));
         });
-
       SetUnitColor(Unit, HasCustomColor ? _playerColor : GetPlayerColor(GetOwningPlayer(Unit)));
-      if (GetHeroXP(Unit) < StartingXp) SetHeroXP(Unit, StartingXp, true);
-      
+      if (GetHeroXP(Unit) < StartingXp) 
+        SetHeroXP(Unit, StartingXp, true);
+      if (StartingArtifactItemTypeIds.Any())
+        foreach (var artifactItemTypeId in StartingArtifactItemTypeIds)
+        {
+          var artifact = new Artifact(CreateItem(artifactItemTypeId, 0, 0));
+          ArtifactManager.Register(artifact);
+          Unit.AddItemSafe(artifact.Item);
+        }
+        
       RefreshDummy();
     }
     

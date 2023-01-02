@@ -1,5 +1,4 @@
 using MacroTools;
-using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using static War3Api.Common;
 
@@ -31,7 +30,11 @@ namespace WarcraftLegacies.Source.Setup.Legends
 
       LegendaryHeroManager.Register(LegendMalfurion = new LegendaryHero("Malfurion")
       {
-        UnitType = FourCC("Efur")
+        UnitType = FourCC("Efur"),
+        StartingArtifactItemTypeIds = new[]
+        {
+          Constants.ITEM_I00C_G_HANIR_THE_MOTHER_TREE
+        }
       });
 
       LegendaryHeroManager.Register(LegendFandral = new LegendaryHero("Fandral")

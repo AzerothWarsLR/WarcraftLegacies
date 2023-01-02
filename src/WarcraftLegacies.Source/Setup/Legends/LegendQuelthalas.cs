@@ -1,5 +1,4 @@
 ﻿using MacroTools;
-using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -42,10 +41,14 @@ namespace WarcraftLegacies.Source.Setup.Legends
       LegendAnasterian = new LegendaryHero("Anasterian Sunstrider")
       {
         UnitType = Constants.UNIT_H00Q_KING_OF_QUEL_THALAS_QUEL_THALAS,
-        PlayerColor = PLAYER_COLOR_MAROON
+        PlayerColor = PLAYER_COLOR_MAROON,
+        StartingXp = 1000,
+        StartingArtifactItemTypeIds = new[]
+        {
+          Constants.ITEM_I00J_FELO_MELORN
+        }
       };
       LegendAnasterian.AddUnitDependency(LegendSunwell.Unit);
-      LegendAnasterian.StartingXp = 1000;
       LegendaryHeroManager.Register(LegendAnasterian);
 
       LegendRommath = new LegendaryHero("Grand Magister Rommath")

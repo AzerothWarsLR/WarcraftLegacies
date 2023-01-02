@@ -1,7 +1,5 @@
 ﻿using MacroTools;
-using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
-using System;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup.Legends
@@ -30,6 +28,10 @@ namespace WarcraftLegacies.Source.Setup.Legends
       LegendThrall = new LegendaryHero("Thrall")
       {
         UnitType = Constants.UNIT_OTHR_WARCHIEF_OF_THE_HORDE_FROSTWOLF,
+        StartingArtifactItemTypeIds = new[]
+        {
+          Constants.ITEM_I004_THE_DOOMHAMMER
+        }
       };
       LegendaryHeroManager.Register(LegendThrall);
 
