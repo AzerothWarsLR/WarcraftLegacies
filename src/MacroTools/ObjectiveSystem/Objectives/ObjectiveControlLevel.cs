@@ -1,4 +1,5 @@
 ﻿using MacroTools.ControlPointSystem;
+using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using WCSharp.Shared.Data;
@@ -26,22 +27,35 @@ namespace MacroTools.ObjectiveSystem.Objectives
     {
       _target = target;
       _requiredLevel = requiredLevel;
-      target.ControlLevelChanged += (_, _) =>
-      {
-        RefreshDescription();
-        Progress = target.ControlLevel >= requiredLevel ? QuestProgress.Complete : QuestProgress.Incomplete;
-      };
-      RefreshDescription();
+      target.ChangedOwner += (_, _) => Refresh();
+      target.Owner.GetPlayerData().PlayerJoinedTeam += (_, _) => Refresh();
+      _target.ControlLevelChanged += (_, _) => Refresh();
+      TargetWidget = target.Unit;
+      DisplaysPosition = true;
     }
     
     internal override void OnAdd(Faction whichFaction)
     {
-      Progress = _target.ControlLevel >= _requiredLevel
-        ? QuestProgress.Complete
-        : QuestProgress.Incomplete;
+      RefreshDescription();
+      RefreshProgress();
     }
 
+    private void Refresh()
+    {
+      RefreshDescription();
+      RefreshProgress();
+    }
+    
     private void RefreshDescription() => Description =
-      $"{_target.Name} is Control Level {_requiredLevel} or higher ({_target.ControlLevel}/{_requiredLevel})";
+      IsPlayerOnSameTeamAsAnyEligibleFaction(_target.Owner)
+        ? $"{_target.Name} is Control Level {_requiredLevel} or higher ({_target.ControlLevel}/{_requiredLevel})"
+        : $"{_target.Name} is Control Level {_requiredLevel} or higher";
+
+    private void RefreshProgress()
+    {
+      Progress = _target.ControlLevel >= _requiredLevel && IsPlayerOnSameTeamAsAnyEligibleFaction(_target.Owner)
+        ? QuestProgress.Complete 
+        : QuestProgress.Incomplete;
+    }
   }
 }
