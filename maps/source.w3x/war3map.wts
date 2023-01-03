@@ -3267,7 +3267,7 @@ STRING 545
 }
 
 STRING 546
-// Units: hshy (Alliance Shipyard), Hotkey (Hotkey)
+// Units: hshy (Shipyard), Hotkey (Hotkey)
 {
 R
 }
@@ -3531,7 +3531,7 @@ Vaelastrasz
 }
 
 STRING 590
-// Units: hars (Arcane Sanctum), EditorSuffix (Name - Editor Suffix)
+// Units: n09P (Portal), EditorSuffix (Name - Editor Suffix)
 {
 (Stormwind)
 }
@@ -3939,7 +3939,7 @@ STRING 657
 }
 
 STRING 658
-// Units: nmrk (Marketplace), EditorSuffix (Name - Editor Suffix)
+// Units: nemi (King Terenas Menethil), EditorSuffix (Name - Editor Suffix)
 {
 (Lordaeron)
 }
@@ -4727,7 +4727,7 @@ Train Ere|cffffcc00d|rar Diabolist
 }
 
 STRING 789
-// Units: nemi (King Terenas Menethil), EditorSuffix (Name - Editor Suffix)
+// Units: nchp (Mage), EditorSuffix (Name - Editor Suffix)
 {
 (Lordaeron)
 }
@@ -5075,7 +5075,7 @@ Build Galley
 }
 
 STRING 847
-// Units: ndgt (Kirin Tor Tower), EditorSuffix (Name - Editor Suffix)
+// Units: Hjai (Archmage of Dalaran), EditorSuffix (Name - Editor Suffix)
 {
 (Dalaran)
 }
@@ -5255,7 +5255,7 @@ Transports troops to a owned unit or structure.
 }
 
 STRING 877
-// Units: nchp (Mage), EditorSuffix (Name - Editor Suffix)
+// Units: hmil (Militia), EditorSuffix (Name - Editor Suffix)
 {
 (Lordaeron)
 }
@@ -5677,7 +5677,7 @@ Jaina's personal elemental.|n|cfff5962dAbilities:|R Bash|n|n|cffffcc00Attacks la
 }
 
 STRING 947
-// Units: hvlt (Arcane Vault), EditorSuffix (Name - Editor Suffix)
+// Units: Hant (Grand Magus of the Kirin Tor), EditorSuffix (Name - Editor Suffix)
 {
 (Dalaran)
 }
@@ -5755,15 +5755,9 @@ R
 }
 
 STRING 960
-// Units: hshy (Alliance Shipyard), Name (Name)
+// Units: n00Q (Spinebark Grove (10gold/min)), Name (Name)
 {
-Alliance Shipyard
-}
-
-STRING 961
-// Units: hshy (Alliance Shipyard), Tip (Tooltip - Basic)
-{
-Build Alliance Shipyard
+Spinebark Grove (10gold/min)
 }
 
 STRING 962
@@ -5907,7 +5901,7 @@ Lumber processing mill for your harvesting needs.|n|cfff5962dResearches:|R Impro
 }
 
 STRING 985
-// Units: hwtw (Scout Tower), EditorSuffix (Name - Editor Suffix)
+// Units: hkni (Knight), EditorSuffix (Name - Editor Suffix)
 {
 (Lordaeron)
 }
@@ -6039,7 +6033,7 @@ Build Juggernaut
 }
 
 STRING 1007
-// Units: hshy (Alliance Shipyard), EditorSuffix (Name - Editor Suffix)
+// Units: hfoo (Footman), EditorSuffix (Name - Editor Suffix)
 {
 (Lordaeron)
 }
@@ -6117,7 +6111,7 @@ Cannon topped tower defense.|n|cfff5962dUpgrades Into:|R Improved Cannon Tower|n
 }
 
 STRING 1020
-// Units: hmil (Militia), EditorSuffix (Name - Editor Suffix)
+// Units: hcth (Silver Hand Squire), EditorSuffix (Name - Editor Suffix)
 {
 (Lordaeron)
 }
@@ -6201,7 +6195,7 @@ Q
 }
 
 STRING 1034
-// Units: hshy (Alliance Shipyard), Ubertip (Tooltip - Extended)
+// Units: hshy (Shipyard), Ubertip (Tooltip - Extended)
 {
 Boat construction facility.|n|cfff5962dTrains:|R Transport, Scout, Frigate, Fireship, Galley, Boarding Vessel, Juggernaut, Bombard|R|n|n|cff00c4c4Cannot be built near small inland water areas.
 }
@@ -6219,7 +6213,7 @@ Gives a 25% chance for an attack to be absorbed reducing damage taken by 40 dama
 }
 
 STRING 1037
-// Units: hkni (Knight), EditorSuffix (Name - Editor Suffix)
+// Units: Huth (Leader of the Silver Hand), EditorSuffix (Name - Editor Suffix)
 {
 (Lordaeron)
 }
@@ -6261,7 +6255,7 @@ Mage filled defense tower. |n|cfff5962dAbilities:|R Feedback|n|cfff5962dCan Lear
 }
 
 STRING 1044
-// Units: n09P (Portal), EditorSuffix (Name - Editor Suffix)
+// Units: h060 (Carrier Flagship), EditorSuffix (Name - Editor Suffix)
 {
 (Stormwind)
 }
@@ -6450,6 +6444,12 @@ STRING 1075
 // Units: eshy (Kaldorei Docks), Tip (Tooltip - Basic)
 {
 Build Kaldorei Docks
+}
+
+STRING 1076
+// Units: nmrk (Marketplace), EditorSuffix (Name - Editor Suffix)
+{
+(Lordaeron Shop)
 }
 
 STRING 1077
@@ -7665,7 +7665,7 @@ Revive Ranger-General
 }
 
 STRING 1279
-// Units: hgtw (Guard Tower), EditorSuffix (Name - Editor Suffix)
+// Units: Hart (Crown Prince of Lordaeron), EditorSuffix (Name - Editor Suffix)
 {
 (Lordaeron)
 }
@@ -7725,7 +7725,7 @@ Revive Grand Marshal
 }
 
 STRING 1289
-// Units: hfoo (Footman), EditorSuffix (Name - Editor Suffix)
+// Units: n03K (Pastor), EditorSuffix (Name - Editor Suffix)
 {
 (Lordaeron)
 }
@@ -7809,7 +7809,7 @@ Open Dragonmaw Gate
 }
 
 STRING 1303
-// Units: Hjai (Archmage of Dalaran), EditorSuffix (Name - Editor Suffix)
+// Units: Haah (The Fallen Guardian), EditorSuffix (Name - Editor Suffix)
 {
 (Dalaran)
 }
@@ -7833,7 +7833,7 @@ Revive Crown Prince
 }
 
 STRING 1307
-// Units: hcth (Silver Hand Squire), EditorSuffix (Name - Editor Suffix)
+// Units: h06B (Templar), EditorSuffix (Name - Editor Suffix)
 {
 (Lordaeron)
 }
@@ -7899,7 +7899,7 @@ Revive Grand Magus
 }
 
 STRING 1318
-// Units: Hant (Grand Magus of the Kirin Tor), EditorSuffix (Name - Editor Suffix)
+// Units: o02U (Crystal Artillery), EditorSuffix (Name - Editor Suffix)
 {
 (Dalaran)
 }
@@ -7935,7 +7935,7 @@ Quest Completed: The Spirits of Ashenvale
 }
 
 STRING 1324
-// Units: Haah (The Fallen Guardian), EditorSuffix (Name - Editor Suffix)
+// Units: n0AK (Initiate Mage), EditorSuffix (Name - Editor Suffix)
 {
 (Dalaran)
 }
@@ -8240,7 +8240,7 @@ STRING 1374
 }
 
 STRING 1375
-// Units: h035 (Chapel), Hotkey (Hotkey)
+// Units: h035 (Arcane Study), Hotkey (Hotkey)
 {
 S
 }
@@ -9284,7 +9284,7 @@ Revives slain Heroes and Demi-heros.
 }
 
 STRING 1549
-// Units: o02U (Crystal Artillery), EditorSuffix (Name - Editor Suffix)
+// Units: n0AC (Blue Dragon), EditorSuffix (Name - Editor Suffix)
 {
 (Dalaran)
 }
@@ -10124,7 +10124,7 @@ Gateway attuned to the Queens of Suffering of the Burning Crusade, summoning 1 e
 }
 
 STRING 1689
-// Units: h060 (Carrier Flagship), EditorSuffix (Name - Editor Suffix)
+// Units: h04C (Pikeman), EditorSuffix (Name - Editor Suffix)
 {
 (Stormwind)
 }
@@ -10958,7 +10958,7 @@ Unique gateway that causes units spawned from ordinary Demon Gates to appear at 
 }
 
 STRING 1828
-// Units: n0AK (Initiate Mage), EditorSuffix (Name - Editor Suffix)
+// Units: n096 (Earth Golem), EditorSuffix (Name - Editor Suffix)
 {
 (Dalaran)
 }
@@ -11054,7 +11054,7 @@ Launch even larger boulders.|n|n|cffffcc00Attacks land units.|r
 }
 
 STRING 1844
-// Units: n0AC (Blue Dragon), EditorSuffix (Name - Editor Suffix)
+// Units: h032 (Battlemage), EditorSuffix (Name - Editor Suffix)
 {
 (Dalaran)
 }
@@ -11192,7 +11192,7 @@ Robust summon made from living crystal.|n|cfff5962dAbilities:|R Hurl Boulder, Li
 }
 
 STRING 1867
-// Units: n096 (Earth Golem), EditorSuffix (Name - Editor Suffix)
+// Units: h02D (Geomancer), EditorSuffix (Name - Editor Suffix)
 {
 (Dalaran)
 }
@@ -11449,7 +11449,7 @@ Tunnel
 }
 
 STRING 1910
-// Units: h04C (Pikeman), EditorSuffix (Name - Editor Suffix)
+// Units: h03K (Marshal), EditorSuffix (Name - Editor Suffix)
 {
 (Stormwind)
 }
@@ -11593,7 +11593,7 @@ Spawn of the Earth Golem's death. Immune to spells. |n|n|cffffcc00Attacks land u
 }
 
 STRING 1934
-// Units: h032 (Battlemage), EditorSuffix (Name - Editor Suffix)
+// Units: h01I (Arcanist), EditorSuffix (Name - Editor Suffix)
 {
 (Dalaran)
 }
@@ -11894,7 +11894,7 @@ Zombie thrumming with disease, ready to burst at any moment.|n|cfff5962dAbilitie
 }
 
 STRING 1984
-// Units: h02D (Geomancer), EditorSuffix (Name - Editor Suffix)
+// Units: h09C (Whelp), EditorSuffix (Name - Editor Suffix)
 {
 (Dalaran)
 }
@@ -12062,7 +12062,7 @@ Adds <ACsa,DataA1> bonus fire damage to an attack against enemies
 }
 
 STRING 2012
-// Units: h03K (Marshal), EditorSuffix (Name - Editor Suffix)
+// Units: h02O (Bladesman), EditorSuffix (Name - Editor Suffix)
 {
 (Stormwind)
 }
@@ -12320,7 +12320,7 @@ Creates a shop with purchasable items.
 }
 
 STRING 2055
-// Units: h02O (Bladesman), EditorSuffix (Name - Editor Suffix)
+// Units: H05Y (Lord Wizard), EditorSuffix (Name - Editor Suffix)
 {
 (Stormwind)
 }
@@ -14917,7 +14917,7 @@ STRING 2487
 }
 
 STRING 2488
-// Units: hbla (Blacksmith), EditorSuffix (Name - Editor Suffix)
+// Units: h02Q (Pegasus Knight), EditorSuffix (Name - Editor Suffix)
 {
 (Lordaeron)
 }
@@ -15940,7 +15940,7 @@ The product of a very insidious druid spell.|n|n|cffffcc00Attacks land units.|r
 }
 
 STRING 2659
-// Units: H05Y (Lord Wizard), EditorSuffix (Name - Editor Suffix)
+// Units: H00Z (Crown Prince of Stromgarde), EditorSuffix (Name - Editor Suffix)
 {
 (Stormwind)
 }
@@ -16234,13 +16234,13 @@ R
 }
 
 STRING 2708
-// Units: u009 (Shipyard), Name (Name)
+// Units: hshy (Shipyard), Name (Name)
 {
 Shipyard
 }
 
 STRING 2709
-// Units: o032 (Shipyard), Tip (Tooltip - Basic)
+// Units: hshy (Shipyard), Tip (Tooltip - Basic)
 {
 Build Shipyard
 }
@@ -16678,7 +16678,7 @@ Revives slain Heroes and Demi-heroes.
 }
 
 STRING 2782
-// Units: H00Z (Crown Prince of Stromgarde), EditorSuffix (Name - Editor Suffix)
+// Units: h00N (Goldshire), EditorSuffix (Name - Editor Suffix)
 {
 (Stormwind)
 }
@@ -16690,7 +16690,7 @@ E
 }
 
 STRING 2784
-// Units: h00N (Goldshire), EditorSuffix (Name - Editor Suffix)
+// Abilities: A0NX (A Close), EditorSuffix (Editor Suffix)
 {
 (Stormwind)
 }
@@ -16900,7 +16900,7 @@ Boat construction facility.|n|cfff5962dTrains:|R Transport, Scout, Frigate, Fire
 }
 
 STRING 2819
-// Units: Huth (Leader of the Silver Hand), EditorSuffix (Name - Editor Suffix)
+// Units: h029 (Veteran Footman), EditorSuffix (Name - Editor Suffix)
 {
 (Lordaeron)
 }
@@ -16942,7 +16942,7 @@ STRING 2825
 }
 
 STRING 2826
-// Units: Hart (Crown Prince of Lordaeron), EditorSuffix (Name - Editor Suffix)
+// Units: h01C (Huntsman), EditorSuffix (Name - Editor Suffix)
 {
 (Lordaeron)
 }
@@ -16990,7 +16990,7 @@ STRING 2833
 }
 
 STRING 2834
-// Units: h01I (Arcanist), EditorSuffix (Name - Editor Suffix)
+// Units: n00N (Control Point Defender), EditorSuffix (Name - Editor Suffix)
 {
 (Dalaran)
 }
@@ -17020,7 +17020,7 @@ Z
 }
 
 STRING 2839
-// Units: h09C (Whelp), EditorSuffix (Name - Editor Suffix)
+// Destructibles: B01D (Rock Chunks), EditorSuffix (Editor Suffix)
 {
 (Dalaran)
 }
@@ -17050,7 +17050,7 @@ Archive
 }
 
 STRING 2844
-// Units: n00N (Control Point Defender), EditorSuffix (Name - Editor Suffix)
+// Abilities: A0JV (Summon Initiate Mage), EditorSuffix (Editor Suffix)
 {
 (Dalaran)
 }
@@ -17080,7 +17080,7 @@ The hero utters mystical words, increasing the magical powers of nearby allies.|
 }
 
 STRING 2849
-// Destructibles: B01D (Rock Chunks), EditorSuffix (Editor Suffix)
+// Abilities: A02T (Reveal), EditorSuffix (Editor Suffix)
 {
 (Dalaran)
 }
@@ -17110,7 +17110,7 @@ STRING 2853
 }
 
 STRING 2854
-// Abilities: A0JV (Summon Initiate Mage), EditorSuffix (Editor Suffix)
+// Upgrades: R06O (Magic Sentry), EditorSuffix (Editor Suffix)
 {
 (Dalaran)
 }
@@ -17152,7 +17152,7 @@ Maelstrom Pass
 }
 
 STRING 2861
-// Abilities: A02T (Reveal), EditorSuffix (Editor Suffix)
+// Upgrades: R06K (Defend), EditorSuffix (Editor Suffix)
 {
 (Dalaran)
 }
@@ -17194,7 +17194,7 @@ Build Archive
 }
 
 STRING 2868
-// Abilities: A0NX (A Close), EditorSuffix (Editor Suffix)
+// Abilities: A0NC (Reveal), EditorSuffix (Editor Suffix)
 {
 (Stormwind)
 }
@@ -17357,7 +17357,7 @@ W
 }
 
 STRING 2895
-// Units: o032 (Shipyard), Name (Name)
+// Units: u009 (Shipyard), Name (Name)
 {
 Shipyard
 }
@@ -17387,7 +17387,7 @@ STRING 2899
 }
 
 STRING 2900
-// Units: o02T (Shipyard), Name (Name)
+// Units: o032 (Shipyard), Name (Name)
 {
 Shipyard
 }
@@ -17429,7 +17429,7 @@ Effect
 }
 
 STRING 2907
-// Units: h07D (Shipyard), Name (Name)
+// Units: o02T (Shipyard), Name (Name)
 {
 Shipyard
 }
@@ -17441,7 +17441,7 @@ Dalaran Building
 }
 
 STRING 2909
-// Units: o02T (Shipyard), Tip (Tooltip - Basic)
+// Units: o032 (Shipyard), Tip (Tooltip - Basic)
 {
 Build Shipyard
 }
@@ -17453,7 +17453,7 @@ Dalaran Building
 }
 
 STRING 2911
-// Upgrades: R06O (Magic Sentry), EditorSuffix (Editor Suffix)
+// Upgrades: R06J (Defend), EditorSuffix (Editor Suffix)
 {
 (Dalaran)
 }
@@ -17723,7 +17723,7 @@ Build [|cffffcc00W|r] - Farm
 }
 
 STRING 2956
-// Upgrades: R06K (Defend), EditorSuffix (Editor Suffix)
+// Upgrades: R061 (Magic Sentry), EditorSuffix (Editor Suffix)
 {
 (Dalaran)
 }
@@ -18013,7 +18013,7 @@ Heavily armored vehicle, adept at shooting down air units.|n|cfff5962dAbilities:
 }
 
 STRING 3004
-// Units: h077 (Shipyard), Name (Name)
+// Units: h07D (Shipyard), Name (Name)
 {
 Shipyard
 }
@@ -18369,7 +18369,7 @@ Loyal phoenix of the Sunstrider Dynasty.|n|cfff5962dAbilities:|R Sun Ray, Spell 
 }
 
 STRING 3063
-// Abilities: A0NC (Reveal), EditorSuffix (Editor Suffix)
+// Abilities: A0GD (Summon Garrison), EditorSuffix (Editor Suffix)
 {
 (Stormwind)
 }
@@ -18399,7 +18399,7 @@ Dalaran Shield
 }
 
 STRING 3068
-// Units: h07D (Shipyard), Tip (Tooltip - Basic)
+// Units: o02T (Shipyard), Tip (Tooltip - Basic)
 {
 Build Shipyard
 }
@@ -18441,7 +18441,7 @@ C
 }
 
 STRING 3075
-// Abilities: A0GD (Summon Garrison), EditorSuffix (Editor Suffix)
+// Upgrades: R022 (Chaos), EditorSuffix (Editor Suffix)
 {
 (Stormwind)
 }
@@ -18483,7 +18483,7 @@ Plant a seed of hatred onto a friendly building. The afflicted unit cannot uproo
 }
 
 STRING 3082
-// Upgrades: R06J (Defend), EditorSuffix (Editor Suffix)
+// Upgrades: R01V (Sorceress Adept Training,Sorceress Master Training), EditorSuffix (Editor Suffix)
 {
 (Dalaran)
 }
@@ -18651,7 +18651,7 @@ Darkshire
 }
 
 STRING 3110
-// Upgrades: R061 (Magic Sentry), EditorSuffix (Editor Suffix)
+// Upgrades: R01L (Magic Sentry), EditorSuffix (Editor Suffix)
 {
 (Dalaran)
 }
@@ -18987,7 +18987,7 @@ Summon Minion
 }
 
 STRING 3166
-// Upgrades: R022 (Chaos), EditorSuffix (Editor Suffix)
+// Upgrades: R01M (Chaos), EditorSuffix (Editor Suffix)
 {
 (Stormwind)
 }
@@ -19089,7 +19089,7 @@ R
 }
 
 STRING 3183
-// Units: h076 (Shipyard), Name (Name)
+// Units: h077 (Shipyard), Name (Name)
 {
 Shipyard
 }
@@ -19173,7 +19173,7 @@ Carrion Swarm - [|cffffcc00Level 4|r]
 }
 
 STRING 3197
-// Units: n03K (Pastor), EditorSuffix (Name - Editor Suffix)
+// Units: h00F (Paladin), EditorSuffix (Name - Editor Suffix)
 {
 (Lordaeron)
 }
@@ -19292,7 +19292,7 @@ Master of technomechanical tools.|n|cfff5962dAbilities:|R Mech Kit|n|cfff5962dCa
 }
 
 STRING 3217
-// Upgrades: R01V (Sorceress Adept Training,Sorceress Master Training), EditorSuffix (Editor Suffix)
+// Upgrades: R01I (Priest Adept Training,Priest Master Training), EditorSuffix (Editor Suffix)
 {
 (Dalaran)
 }
@@ -19322,7 +19322,7 @@ STRING 3221
 }
 
 STRING 3222
-// Units: h06B (Templar), EditorSuffix (Name - Editor Suffix)
+// Units: h000 (Capital Palace), EditorSuffix (Name - Editor Suffix)
 {
 (Lordaeron)
 }
@@ -19331,18 +19331,6 @@ STRING 3223
 // Units: h0AI (Defias Assassin), Hotkey (Hotkey)
 {
 S
-}
-
-STRING 3224
-// Units: h035 (Chapel), Name (Name)
-{
-Chapel
-}
-
-STRING 3225
-// Units: h035 (Chapel), Tip (Tooltip - Basic)
-{
-Build Chapel
 }
 
 STRING 3226
@@ -19382,13 +19370,13 @@ Q
 }
 
 STRING 3232
-// Units: h03H (Shipyard), Name (Name)
+// Units: h076 (Shipyard), Name (Name)
 {
 Shipyard
 }
 
 STRING 3233
-// Units: h077 (Shipyard), Tip (Tooltip - Basic)
+// Units: h07D (Shipyard), Tip (Tooltip - Basic)
 {
 Build Shipyard
 }
@@ -19400,7 +19388,7 @@ Main gathering structure.|n|cfff5962dTrains:|R Architect
 }
 
 STRING 3235
-// Upgrades: R01L (Magic Sentry), EditorSuffix (Editor Suffix)
+// Upgrades: R012 (Chaos), EditorSuffix (Editor Suffix)
 {
 (Dalaran)
 }
@@ -19460,7 +19448,7 @@ Elite Guardrian of the Lordaeron Royal Family.|n|n|cffffcc00Attacks land units.|
 }
 
 STRING 3245
-// Units: h02Q (Pegasus Knight), EditorSuffix (Name - Editor Suffix)
+// Units: H01J (The Ashbringer), EditorSuffix (Name - Editor Suffix)
 {
 (Lordaeron)
 }
@@ -19484,7 +19472,7 @@ Multishot
 }
 
 STRING 3249
-// Units: h07W (Shipyard), Name (Name)
+// Units: h03H (Shipyard), Name (Name)
 {
 Shipyard
 }
@@ -19628,7 +19616,7 @@ Northshire Abbey
 }
 
 STRING 3273
-// Units: h029 (Veteran Footman), EditorSuffix (Name - Editor Suffix)
+// Units: h092 (Order Inquisitor), EditorSuffix (Name - Editor Suffix)
 {
 (Lordaeron)
 }
@@ -19682,7 +19670,7 @@ STRING 3281
 }
 
 STRING 3282
-// Upgrades: R01M (Chaos), EditorSuffix (Editor Suffix)
+// Upgrades: R016 (Chaos), EditorSuffix (Editor Suffix)
 {
 (Stormwind)
 }
@@ -19712,7 +19700,7 @@ Suramar (20gold/min)
 }
 
 STRING 3287
-// Upgrades: R01I (Priest Adept Training,Priest Master Training), EditorSuffix (Editor Suffix)
+// Upgrades: R00U (Chaos), EditorSuffix (Editor Suffix)
 {
 (Dalaran)
 }
@@ -19724,7 +19712,7 @@ E
 }
 
 STRING 3289
-// Units: h076 (Shipyard), Tip (Tooltip - Basic)
+// Units: h077 (Shipyard), Tip (Tooltip - Basic)
 {
 Build Shipyard
 }
@@ -19928,7 +19916,7 @@ STRING 3322
 }
 
 STRING 3323
-// Upgrades: R012 (Chaos), EditorSuffix (Editor Suffix)
+// Upgrades: R00J (Magic Sentry), EditorSuffix (Editor Suffix)
 {
 (Dalaran)
 }
@@ -20006,7 +19994,7 @@ Scout Ship
 }
 
 STRING 3336
-// Units: h01C (Huntsman), EditorSuffix (Name - Editor Suffix)
+// Units: n068 (Inquisitor), EditorSuffix (Name - Editor Suffix)
 {
 (Lordaeron)
 }
@@ -20071,12 +20059,6 @@ STRING 3346
 Heavy defensive structure. Particularly effective against clusters of troops.|n|cffffcc00Attacks land units and trees.|r
 }
 
-STRING 3347
-// Upgrades: R016 (Chaos), EditorSuffix (Editor Suffix)
-{
-(Stormwind)
-}
-
 STRING 3348
 // Units: H00R (King of Stormwind), Hotkey (Hotkey)
 {
@@ -20120,7 +20102,7 @@ Primary structure, used to train workers and gather resources.|n|cfff5962dTrains
 }
 
 STRING 3355
-// Upgrades: R00U (Chaos), EditorSuffix (Editor Suffix)
+// Upgrades: R00E (Sorceress Adept Training,Sorceress Master Training), EditorSuffix (Editor Suffix)
 {
 (Dalaran)
 }
@@ -20528,7 +20510,7 @@ STRING 3422
 }
 
 STRING 3423
-// Upgrades: R00J (Magic Sentry), EditorSuffix (Editor Suffix)
+// Upgrades: R04K (Chaos), EditorSuffix (Editor Suffix)
 {
 (Dalaran)
 }
@@ -20588,7 +20570,7 @@ Revives slain Heroes and Demi-heroes.
 }
 
 STRING 3433
-// Units: h00F (Paladin), EditorSuffix (Name - Editor Suffix)
+// Units: h09Y (Throne Guard), EditorSuffix (Name - Editor Suffix)
 {
 (Lordaeron)
 }
@@ -20666,7 +20648,7 @@ STRING 3445
 }
 
 STRING 3446
-// Units: h000 (Capital Palace), EditorSuffix (Name - Editor Suffix)
+// Units: h03W (Control Point Defender), EditorSuffix (Name - Editor Suffix)
 {
 (Lordaeron)
 }
@@ -20899,12 +20881,6 @@ STRING 3484
 Kezan Trading Center
 }
 
-STRING 3485
-// Upgrades: R00E (Sorceress Adept Training,Sorceress Master Training), EditorSuffix (Editor Suffix)
-{
-(Dalaran)
-}
-
 STRING 3486
 // Units: h010 (Jaina's Sanctum), Name (Name)
 {
@@ -20942,7 +20918,7 @@ STRING 3491
 }
 
 STRING 3492
-// Units: H01J (The Ashbringer), EditorSuffix (Name - Editor Suffix)
+// Abilities: A0GA (Summon Garrison), EditorSuffix (Editor Suffix)
 {
 (Lordaeron)
 }
@@ -21182,7 +21158,7 @@ STRING 3531
 }
 
 STRING 3532
-// Units: h092 (Order Inquisitor), EditorSuffix (Name - Editor Suffix)
+// Upgrades: R06Q (Priest Adept Training,Priest Master Training), EditorSuffix (Editor Suffix)
 {
 (Lordaeron)
 }
@@ -21432,12 +21408,6 @@ STRING 3573
 Silvermoon Palace
 }
 
-STRING 3574
-// Upgrades: R04K (Chaos), EditorSuffix (Editor Suffix)
-{
-(Dalaran)
-}
-
 STRING 3575
 // Units: h002 (The Violet Citadel), Name (Name)
 {
@@ -21457,7 +21427,7 @@ The Great Forge
 }
 
 STRING 3578
-// Units: n068 (Inquisitor), EditorSuffix (Name - Editor Suffix)
+// Upgrades: R06P (Chaos), EditorSuffix (Editor Suffix)
 {
 (Lordaeron)
 }
@@ -21580,6 +21550,12 @@ STRING 3598
 // Units: e011 (Kaldorei Docks), Tip (Tooltip - Basic)
 {
 Build Kaldorei Docks
+}
+
+STRING 3599
+// Units: hwtw (Scout Tower), EditorSuffix (Name - Editor Suffix)
+{
+(Lordaeron Tower)
 }
 
 STRING 3600
@@ -23047,7 +23023,7 @@ Ragnaros
 }
 
 STRING 3844
-// Units: h09Y (Throne Guard), EditorSuffix (Name - Editor Suffix)
+// Upgrades: R06F (Defend), EditorSuffix (Editor Suffix)
 {
 (Lordaeron)
 }
@@ -23563,7 +23539,7 @@ Revive Ashbringer
 }
 
 STRING 3930
-// Units: h03W (Control Point Defender), EditorSuffix (Name - Editor Suffix)
+// Upgrades: R04L (Chaos), EditorSuffix (Editor Suffix)
 {
 (Lordaeron)
 }
@@ -25410,12 +25386,6 @@ STRING 4237
 Summon Wisps
 }
 
-STRING 4238
-// Units: h035 (Chapel), Ubertip (Tooltip - Extended)
-{
-Place of divine worship.|n|cfff5962dTrains:|R Inquisitor, Pastor, Silver Hand Squire|n|cfff5962dResearches:|R Cleric Adept Training, Light's Praise Adept Training, Seal of Righteousness, Magic Sentry
-}
-
 STRING 4239
 // Items: I01G (Summon Wisps), Ubertip (Tooltip - Extended)
 {
@@ -26454,7 +26424,7 @@ Dark Iron Bridge
 }
 
 STRING 4412
-// Units: o03I (Shipyard), Name (Name)
+// Units: h07W (Shipyard), Name (Name)
 {
 Shipyard
 }
@@ -45610,7 +45580,7 @@ Sends forth a wave of fel energy in a line, dealing <A0UK,DataC3> damage and hur
 }
 
 STRING 7601
-// Units: u01A (Shipyard), Name (Name)
+// Units: o03I (Shipyard), Name (Name)
 {
 Shipyard
 }
@@ -47860,7 +47830,7 @@ W
 }
 
 STRING 7976
-// Units: h03H (Shipyard), Tip (Tooltip - Basic)
+// Units: h076 (Shipyard), Tip (Tooltip - Basic)
 {
 Build Shipyard
 }
@@ -47875,6 +47845,12 @@ STRING 7978
 // Abilities: A0S6 (Crow's Nest Lookout), Ubertip (Tooltip - Normal - Extended)
 {
 This ship has increased sight radius and can detect invisible units.
+}
+
+STRING 7979
+// Units: hvlt (Arcane Vault), EditorSuffix (Name - Editor Suffix)
+{
+(Dalaran Shop)
 }
 
 STRING 7980
@@ -48382,7 +48358,7 @@ Q
 }
 
 STRING 8064
-// Abilities: A0GA (Summon Garrison), EditorSuffix (Editor Suffix)
+// Upgrades: R04D (Magic Sentry), EditorSuffix (Editor Suffix)
 {
 (Lordaeron)
 }
@@ -50362,7 +50338,7 @@ Attacks combust <A0PB,DataA1>(<A0PB,DataC1> for Heros) mana on hit, dealing dama
 }
 
 STRING 8394
-// Units: o059 (Shipyard), Name (Name)
+// Units: u01A (Shipyard), Name (Name)
 {
 Shipyard
 }
@@ -51508,7 +51484,7 @@ This unit strikes with such force that <A0NE,DataA1,%>% of their damage strikes 
 }
 
 STRING 8585
-// Units: h07W (Shipyard), Tip (Tooltip - Basic)
+// Units: h03H (Shipyard), Tip (Tooltip - Basic)
 {
 Build Shipyard
 }
@@ -51580,13 +51556,13 @@ Pillar of Waves
 }
 
 STRING 8597
-// Units: o06D (Shipyard), Name (Name)
+// Units: o059 (Shipyard), Name (Name)
 {
 Shipyard
 }
 
 STRING 8598
-// Units: o03I (Shipyard), Tip (Tooltip - Basic)
+// Units: h07W (Shipyard), Tip (Tooltip - Basic)
 {
 Build Shipyard
 }
@@ -51604,7 +51580,7 @@ Boat construction facility.|n|cfff5962dTrains:|R Transport, Scout, Frigate, Fire
 }
 
 STRING 8601
-// Units: o059 (Shipyard), Tip (Tooltip - Basic)
+// Units: o03I (Shipyard), Tip (Tooltip - Basic)
 {
 Build Shipyard
 }
@@ -58378,7 +58354,7 @@ Self-Destroy
 }
 
 STRING 9730
-// Upgrades: R06Q (Priest Adept Training,Priest Master Training), EditorSuffix (Editor Suffix)
+// Upgrades: R04A (Magic Sentry), EditorSuffix (Editor Suffix)
 {
 (Lordaeron)
 }
@@ -64414,6 +64390,12 @@ STRING 10735
 Otherworldly Rampage
 }
 
+STRING 10736
+// Units: htow (Town Hall), EditorSuffix (Name - Editor Suffix)
+{
+ (Lordaeron T1)
+}
+
 STRING 10737
 // Abilities: A0F8 (Unholy Armor), Hotkey (Hotkey - Normal)
 {
@@ -64481,7 +64463,7 @@ To The Wind!
 }
 
 STRING 10748
-// Upgrades: R06P (Chaos), EditorSuffix (Editor Suffix)
+// Upgrades: R01Q (Magic Sentry), EditorSuffix (Editor Suffix)
 {
 (Lordaeron)
 }
@@ -65255,7 +65237,7 @@ W
 }
 
 STRING 10877
-// Upgrades: R06F (Defend), EditorSuffix (Editor Suffix)
+// Upgrades: R01P (Ensnare), EditorSuffix (Editor Suffix)
 {
 (Lordaeron)
 }
@@ -76755,7 +76737,7 @@ Q
 }
 
 STRING 12793
-// Upgrades: R04L (Chaos), EditorSuffix (Editor Suffix)
+// Upgrades: R01K (Chaos), EditorSuffix (Editor Suffix)
 {
 (Lordaeron)
 }
@@ -85023,7 +85005,7 @@ No allies
 }
 
 STRING 14171
-// Upgrades: R04D (Magic Sentry), EditorSuffix (Editor Suffix)
+// Upgrades: R01G (Chaos), EditorSuffix (Editor Suffix)
 {
 (Lordaeron)
 }
@@ -85077,7 +85059,7 @@ Increases Paladins' mana capacity and regeneration rate and gives them the abili
 }
 
 STRING 14180
-// Upgrades: R04A (Magic Sentry), EditorSuffix (Editor Suffix)
+// Upgrades: R01E (Chaos), EditorSuffix (Editor Suffix)
 {
 (Lordaeron)
 }
@@ -85353,7 +85335,7 @@ Provides the Warsong with the resources required to launch an incursion into Nor
 }
 
 STRING 14226
-// Upgrades: R01Q (Magic Sentry), EditorSuffix (Editor Suffix)
+// Upgrades: R00I (Priest Adept Training,Priest Master Training), EditorSuffix (Editor Suffix)
 {
 (Lordaeron)
 }
@@ -86037,7 +86019,7 @@ Sunwell destroyed
 }
 
 STRING 14340
-// Upgrades: R01P (Ensnare), EditorSuffix (Editor Suffix)
+// Upgrades: R00B (Magic Sentry), EditorSuffix (Editor Suffix)
 {
 (Lordaeron)
 }
@@ -86186,7 +86168,7 @@ Allows World Trees to use Begin Anew and Regrow Trees.
 }
 
 STRING 14365
-// Upgrades: R01K (Chaos), EditorSuffix (Editor Suffix)
+// Upgrades: R08E (Iron Plating,Steel Plating,Mithril Plating), EditorSuffix (Editor Suffix)
 {
 (Lordaeron)
 }
@@ -86282,7 +86264,7 @@ Learn Demon Rage - [|cffffcc00Level %d|r]
 }
 
 STRING 14381
-// Upgrades: R01G (Chaos), EditorSuffix (Editor Suffix)
+// Upgrades: R08F (Iron Plating,Steel Plating,Mithril Plating), EditorSuffix (Editor Suffix)
 {
 (Lordaeron)
 }
@@ -88641,12 +88623,6 @@ STRING 14773
 Improves Rangers, Farstriders, Ballistas, Vereesa, and Sylvanas by increasing their attack range by 150 and attack speed by 5%.
 }
 
-STRING 14774
-// Upgrades: R01E (Chaos), EditorSuffix (Editor Suffix)
-{
-(Lordaeron)
-}
-
 STRING 14775
 // Upgrades: R03H (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
 {
@@ -88669,12 +88645,6 @@ STRING 14778
 // Upgrades: R01Q (Magic Sentry), Ubertip (Tooltip - Extended)
 {
 Allows the training of Pegasus Knights from the Aviary.
-}
-
-STRING 14779
-// Upgrades: R00I (Priest Adept Training,Priest Master Training), EditorSuffix (Editor Suffix)
-{
-(Lordaeron)
 }
 
 STRING 14780
@@ -88765,12 +88735,6 @@ STRING 14794
 // Upgrades: R01L (Magic Sentry), Ubertip (Tooltip - Extended)
 {
 Provides towers with the ability to detect invisible units, excluding Cannon Towers.
-}
-
-STRING 14795
-// Upgrades: R00B (Magic Sentry), EditorSuffix (Editor Suffix)
-{
-(Lordaeron)
 }
 
 STRING 14796
@@ -88905,12 +88869,6 @@ STRING 14817
 Increases the maximum hit points of all casters by 100 and increases armor by 2.|n|n|cffffd700Affects Druids of the Talon, Druids of the Branch, Druids of the Claw and Wisps.|r
 }
 
-STRING 14818
-// Upgrades: R08E (Iron Plating,Steel Plating,Mithril Plating), EditorSuffix (Editor Suffix)
-{
-(Lordaeron)
-}
-
 STRING 14819
 // Upgrades: R01G (Chaos), Name (Name)
 {
@@ -88933,12 +88891,6 @@ STRING 14822
 // Upgrades: R01F (Chaos), Name (Name)
 {
 Quest Completed: Explosive Engineering
-}
-
-STRING 14823
-// Upgrades: R08F (Iron Plating,Steel Plating,Mithril Plating), EditorSuffix (Editor Suffix)
-{
-(Lordaeron)
 }
 
 STRING 14824
@@ -94450,6 +94402,12 @@ STRING 15748
 Anti Portal Blocking
 }
 
+STRING 15749
+// Units: hshy (Shipyard), EditorSuffix (Name - Editor Suffix)
+{
+(Lordaeron Shipyard)
+}
+
 STRING 15750
 // Units: e01S (Altar of the Depth), EditorSuffix (Name - Editor Suffix)
 {
@@ -97666,6 +97624,12 @@ STRING 16285
 Plague Tower
 }
 
+STRING 16286
+// Units: hlum (Lumber Mill), EditorSuffix (Name - Editor Suffix)
+{
+ (Lordaeron Research)
+}
+
 STRING 16287
 // Units: h08F (Improved Plague Tower), Name (Name)
 {
@@ -97712,6 +97676,12 @@ STRING 16294
 // Abilities: A0RX (Raise Plaguelings), Name (Name)
 {
 Raise Plaguelings
+}
+
+STRING 16295
+// Units: hkee (Keep), EditorSuffix (Name - Editor Suffix)
+{
+ (Lordaeron T2)
 }
 
 STRING 16296
@@ -97936,6 +97906,12 @@ STRING 16332
 (troll)
 }
 
+STRING 16333
+// Units: hhou (Farm), EditorSuffix (Name - Editor Suffix)
+{
+ (Lordaeron Farm)
+}
+
 STRING 16334
 // Units: h05D (Raptor Rider), Name (Name)
 {
@@ -98152,6 +98128,12 @@ STRING 16369
 Train Haruspex
 }
 
+STRING 16370
+// Units: hgtw (Guard Tower), EditorSuffix (Name - Editor Suffix)
+{
+(Lordaeron Tower)
+}
+
 STRING 16371
 // Abilities: A0VR (Blazing Aura), Ubertip (Tooltip - Normal - Extended)
 {
@@ -98218,6 +98200,12 @@ STRING 16381
 Zaela
 }
 
+STRING 16382
+// Units: hctw (Cannon Tower), EditorSuffix (Name - Editor Suffix)
+{
+ (Lordaeron Tower)
+}
+
 STRING 16383
 // Upgrades: R08K (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
 {
@@ -98272,6 +98260,12 @@ STRING 16391
 Fortified Hulls
 }
 
+STRING 16392
+// Units: hcas (Castle), EditorSuffix (Name - Editor Suffix)
+{
+(Lordaeron T3)
+}
+
 STRING 16393
 // Units: n07V (Elder Banshee), Name (Name)
 {
@@ -98288,6 +98282,12 @@ STRING 16395
 // Upgrades: R065 (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
 {
 Path of Madness
+}
+
+STRING 16396
+// Units: hbla (Blacksmith), EditorSuffix (Name - Editor Suffix)
+{
+(Lordaeron Research)
 }
 
 STRING 16397
@@ -98314,6 +98314,12 @@ STRING 16400
 Research Fortified Hulls
 }
 
+STRING 16401
+// Units: hbar (Barracks), EditorSuffix (Name - Editor Suffix)
+{
+ (Lordaeron Barracks)
+}
+
 STRING 16402
 // Upgrades: R080 (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
 {
@@ -98330,6 +98336,12 @@ STRING 16404
 // Units: O06F (Blood Warrior), Name (Name)
 {
 Blood Warrior
+}
+
+STRING 16405
+// Units: hatw (Arcane Tower), EditorSuffix (Name - Editor Suffix)
+{
+ (Lordaeron Tower)
 }
 
 STRING 16406
@@ -98386,6 +98398,12 @@ STRING 16414
 (Twilight)
 }
 
+STRING 16415
+// Units: hars (Arcane Sanctum), EditorSuffix (Name - Editor Suffix)
+{
+(Stormwind Magic)
+}
+
 STRING 16416
 // Units: U01Z (Old God), Name (Name)
 {
@@ -98408,6 +98426,12 @@ STRING 16419
 // Abilities: A0OQ (Bone Totem), Ubertip (Tooltip - Normal - Extended)
 {
 Summons <Arsw,DataA2> immobile serpentine wards to attack enemies. The ward has <osp2,realHP> hit points, is magic immune, and deals <osp2,mindmg1> - <osp2,maxdmg1> damage. |nLasts <Arsw,Dur2> seconds. |n|n|cffffcc00Attacks land and air units.|r
+}
+
+STRING 16420
+// Units: halt (Altar of Kings), EditorSuffix (Name - Editor Suffix)
+{
+ (Lordaeron Altar)
 }
 
 STRING 16421
@@ -98452,6 +98476,12 @@ STRING 16427
 Howling Oak
 }
 
+STRING 16428
+// Units: ndgt (Kirin Tor Tower), EditorSuffix (Name - Editor Suffix)
+{
+(Dalaran Tower)
+}
+
 STRING 16429
 // Units: n087 (Phase Grenadier), EditorSuffix (Name - Editor Suffix)
 {
@@ -98474,6 +98504,12 @@ STRING 16432
 // Abilities: A0OK (Corrupt Blood), Name (Name)
 {
 Corrupt Blood
+}
+
+STRING 16433
+// Units: h007 (Improved Cannon Tower), EditorSuffix (Name - Editor Suffix)
+{
+ (Lordaeron Tower)
 }
 
 STRING 16434
@@ -98512,6 +98548,12 @@ STRING 16439
 Revive Gorfax
 }
 
+STRING 16440
+// Units: h006 (Improved Guard Tower), EditorSuffix (Name - Editor Suffix)
+{
+ (Lordaeron Tower)
+}
+
 STRING 16441
 // Units: u01T (Herald), Name (Name)
 {
@@ -98522,6 +98564,24 @@ STRING 16442
 // Units: u01T (Herald), Tip (Tooltip - Basic)
 {
 Train Herald
+}
+
+STRING 16443
+// Units: h086 (Field Stockpile), EditorSuffix (Name - Editor Suffix)
+{
+(Scarlet Shop)
+}
+
+STRING 16444
+// Units: h094 (Siege Workshop), EditorSuffix (Name - Editor Suffix)
+{
+ (Lordaeron Siege)
+}
+
+STRING 16445
+// Units: o06D (Shipyard), Name (Name)
+{
+Shipyard
 }
 
 STRING 16446
@@ -98626,6 +98686,12 @@ STRING 16462
 Seat of power of the Scarlet Crusade.|n|cff6480ff|cfff5962dTrains:|R Peasants, Crusaders
 }
 
+STRING 16463
+// Units: o059 (Shipyard), Tip (Tooltip - Basic)
+{
+Build Shipyard
+}
+
 STRING 16464
 // Units: h08R (Scarlet Halls), Name (Name)
 {
@@ -98662,6 +98728,12 @@ STRING 16469
 Build Undercity
 }
 
+STRING 16470
+// Doodads: D06L (Tower - Lordaeron Top), Name (Name)
+{
+Tower - Lordaeron Top
+}
+
 STRING 16471
 // Abilities: A02G (Stoneform), Hotkey (Hotkey - Normal)
 {
@@ -98692,6 +98764,18 @@ STRING 16475
 Illidan is in Outland
 }
 
+STRING 16476
+// Units: h035 (Arcane Study), Ubertip (Tooltip - Extended)
+{
+Towering college of Magic.|n|cfff5962dTrains:|R Inquisitor, Pastor, Silver Hand Squire|n|cfff5962dResearches:|R Cleric Adept Training, Light's Praise Adept Training, Seal of Righteousness, Magic Sentry
+}
+
+STRING 16477
+// Units: h035 (Arcane Study), Tip (Tooltip - Basic)
+{
+Build Arcane Study
+}
+
 STRING 16478
 // Units: h011 (Intercontinental Artillery), Name (Name)
 {
@@ -98714,6 +98798,12 @@ STRING 16481
 // Abilities: A0RP (Cluster Rockets), Tip (Tooltip - Normal)
 {
 Cluster Rockets - [|cffffcc00Level 4|r]
+}
+
+STRING 16482
+// Units: h035 (Arcane Study), Name (Name)
+{
+Arcane Study
 }
 
 STRING 16483
@@ -114416,7 +114506,7 @@ The hero unleashes a mortal axe strike, dealing 750 damage after a short delay.
 }
 
 STRING 19316
-// Abilities: A0ZH (Unstable Transformation), Hotkey (Hotkey - Normal)
+// Abilities: A0ZJ (Portal to Nagrand), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -114428,7 +114518,7 @@ The hero unleashes a mortal axe strike, dealing 1250 damage after a short delay.
 }
 
 STRING 19318
-// Abilities: A0ZH (Unstable Transformation), Unhotkey (Hotkey - Turn Off)
+// Abilities: A0ZY (Multi Shot), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -114518,7 +114608,7 @@ Build Oil Rig
 }
 
 STRING 19333
-// Abilities: A0ZJ (Portal to Nagrand), Researchhotkey (Hotkey - Learn)
+// Upgrades: Rosp (Spiked Barricades,Improved Spiked Barricades,Advanced Spiked Barricades), Hotkey (Hotkey)
 {
 R
 }
@@ -114776,7 +114866,7 @@ Build Coral of Wind
 }
 
 STRING 19378
-// Abilities: A0ZY (Multi Shot), Researchhotkey (Hotkey - Learn)
+// Upgrades: Rosp (Spiked Barricades,Improved Spiked Barricades,Advanced Spiked Barricades), Hotkey (Hotkey)
 {
 R
 }
@@ -114860,7 +114950,7 @@ STRING 19394
 }
 
 STRING 19395
-// Upgrades: Rosp (Spiked Barricades,Improved Spiked Barricades,Advanced Spiked Barricades), Hotkey (Hotkey)
+// Upgrades: Ropg (Pillage), Hotkey (Hotkey)
 {
 R
 }
@@ -115052,13 +115142,13 @@ Vitality Aura
 }
 
 STRING 19427
-// Upgrades: Rosp (Spiked Barricades,Improved Spiked Barricades,Advanced Spiked Barricades), Hotkey (Hotkey)
+// Upgrades: Rews (Well Spring), Hotkey (Hotkey)
 {
 R
 }
 
 STRING 19428
-// Upgrades: Ropg (Pillage), Hotkey (Hotkey)
+// Upgrades: R00N (Storm Hammers), Hotkey (Hotkey)
 {
 R
 }
@@ -115235,54 +115325,6 @@ STRING 19459
 // Abilities: A0XF (Aura of Durability), Ubertip (Tooltip - Normal - Extended)
 {
 Increases nearby friendly Mechanical units' hit point regeneration by 6 per second.
-}
-
-STRING 19460
-// Abilities: A0ZH (Unstable Transformation), EditorSuffix (Editor Suffix)
-{
-(Peanut - Legion)
-}
-
-STRING 19461
-// Abilities: A0ZH (Unstable Transformation), Ubertip (Tooltip - Normal - Extended)
-{
-Transforms the Legion Herald into a chaos-twisted Demon. The Demon is a capable fighter, but will rapidly lose health |n|cfff5962dAbilities:|R Critical Strike|n|n|cffffcc00Attacks land units.|r
-}
-
-STRING 19462
-// Abilities: A0ZH (Unstable Transformation), Name (Name)
-{
-Unstable Transformation
-}
-
-STRING 19463
-// Abilities: A0ZH (Unstable Transformation), Tip (Tooltip - Normal)
-{
-Unstable Transformation
-}
-
-STRING 19464
-// Abilities: A0ZH (Unstable Transformation), Untip (Tooltip - Turn Off)
-{
-Stabilize
-}
-
-STRING 19465
-// Abilities: A0ZH (Unstable Transformation), Unubertip (Tooltip - Turn Off - Extended)
-{
-The Demon's blood haze ends, and it turns back into a Legion Herald.
-}
-
-STRING 19466
-// Upgrades: Rews (Well Spring), Hotkey (Hotkey)
-{
-R
-}
-
-STRING 19467
-// Upgrades: R00N (Storm Hammers), Hotkey (Hotkey)
-{
-R
 }
 
 STRING 19469
@@ -117128,7 +117170,7 @@ STRING 19827
 }
 
 STRING 19828
-// Units: h035 (Chapel), EditorSuffix (Name - Editor Suffix)
+// Units: h035 (Arcane Study), EditorSuffix (Name - Editor Suffix)
 {
 (Lordaeron Magic)
 }
@@ -118016,7 +118058,7 @@ STRING 19993
 }
 
 STRING 19994
-// Units: h086 (Field Stockpile), EditorSuffix (Name - Editor Suffix)
+// Units: h097 (Guard-house), EditorSuffix (Name - Editor Suffix)
 {
 (Scarlet Other)
 }
@@ -118213,22 +118255,10 @@ STRING 20028
  (Illidari Specialist)
 }
 
-STRING 20029
-// Units: h094 (Siege Workshop), EditorSuffix (Name - Editor Suffix)
-{
- (Lordaeron)
-}
-
 STRING 20030
 // Units: o04X (Loa Shrine), EditorSuffix (Name - Editor Suffix)
 {
 (Zandalari Specialist)
-}
-
-STRING 20031
-// Units: h097 (Guard-house), EditorSuffix (Name - Editor Suffix)
-{
-(Scarlet Other)
 }
 
 STRING 20032
