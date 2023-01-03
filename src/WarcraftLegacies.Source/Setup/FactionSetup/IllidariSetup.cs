@@ -16,13 +16,13 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
         StartingGold = 150,
         StartingLumber = 500,
         ControlPointDefenderUnitTypeId = Constants.UNIT_N0BB_CONTROL_POINT_DEFENDER_ILLIDARI_TOWER,
-        IntroText = @"You are playing as the banished Empire of Nazjatar|r|r.
+        IntroText = @"You are playing as the traitor Illidan|r|r.
 
-You start weak in the middle of the map.
+Your first order of business is to contact your forces in the Broken Isles. This will enable you to open a second front versus Kul'tiras.
 
-Take control of the deap sea before moving on to raiding coastal settlements and islands all around you, slowly gaining ressources along the way.
+Be careful though, your isolated Naga will have a difficult time versus the full strenght of the Kul'tiran, avoid direct confrontation while creeping the Islands
 
-Once you have collected enough, you can rebuild the great Nazjatar empire and start conquering the world."
+Support the Fel Horde with your main force pushing out of the Dark Portal."
       };
 
       Illidari.ModObjectLimit(FourCC("nntt"), Faction.UNLIMITED); //Pillar of Waves

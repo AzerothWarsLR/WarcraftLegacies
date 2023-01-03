@@ -18,11 +18,11 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
         ControlPointDefenderUnitTypeId = Constants.UNIT_U008_CONTROL_POINT_DEFENDER_DRAENEI,
         IntroText = @"You are playing as the exiled |cff000080Draenei|r.
 
-You must evacuate your people from Shattrah and migrate North to Tempest Keep, there you will find a valuable goldmine.
+You start on Azuremyst Island, recently crashed from escaping from the Legion.
 
-The Fel Horde is mobilizing to wipe out your people, this is a fight you cannot win.
+Your Elves allies will need your help against the Horde, quickly rebuild your civilisation and access your crashed ship.
 
-Escape as soon as you can and  try to save as many Draenei as you can. If you are trapped in Outland by turn 15, it may be too late to save your people."
+Prepare to restore the Exodar to it's former glory, it will be a long process, but worth the effort"
       };
 
       Draenei.ModObjectLimit(FourCC("o02P"), Faction.UNLIMITED); //Crystal Hall

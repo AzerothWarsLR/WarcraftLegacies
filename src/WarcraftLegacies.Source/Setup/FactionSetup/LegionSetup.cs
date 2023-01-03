@@ -23,7 +23,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
 
 You begin isolated on Argus. Use Astral Walk and Diamonds of Summoning to move your units to Azeroth.
 
-Hurry to Outland to help your Fel ally defeat the Draenei as soon as possible.
+Help Scourge to destroy the North Alliance.
 
 Your primary objective is to summon the Burning Legion. Invade the city of Dalaran, where the book of Medivh is kept, and use it to open a Demon-gate to Argus."
       };

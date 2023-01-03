@@ -18,13 +18,11 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
         ControlPointDefenderUnitTypeId = Constants.UNIT_O01C_CONTROL_POINT_DEFENDER_GOBLIN,
         IntroText = @"You are playing as the industrious |cff808080Bilgewater Cartel|r.
 
-Early on you must rely on Traders for resources. 
-Build Trading Zeppelins for Lumber and Traders for Gold.
+You start in Tanaris with a very small business venture. Expand onto Kalimdor to grow your trade empire.
 
-Some of your more advanced units and buildings require Fuel. Use the Kezan Oil Supply to discover and build new Oil Platforms and start accumulating it. Your global supply is indicated by the mana of the Kezan Oil Supply.
+Your more advanced units require Oil to function, use oil ships to find oil deposits and build platforms on them.
 
-The Cataclysm is coming, and when it does your Trading Center and Traders will be destroyed. 
-Use your resources to raise an army strong enough to take land elsewhere."
+The Trading Center in Kezan will unlock the ability to train Traders, as soon as you unlock it, defend it and norture a trading dominion!"
       };
 
       Goblin.ModObjectLimit(FourCC("o03L"), Faction.UNLIMITED); //Great Hall
