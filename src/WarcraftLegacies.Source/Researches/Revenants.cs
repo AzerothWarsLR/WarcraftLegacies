@@ -21,6 +21,7 @@ namespace WarcraftLegacies.Source.Researches
     {
       GetTriggerPlayer().GetFaction()?.ModObjectLimit(Constants.UNIT_UABO_ABOMINATION_SCOURGE, -Faction.UNLIMITED);
       GetTriggerPlayer().GetFaction()?.ModObjectLimit(Constants.UNIT_N009_REVENANT_SCOURGE, Faction.UNLIMITED);
+      SetPlayerAbilityAvailable(GetTriggerPlayer(), Constants.ABILITY_S006_CHAOS_SCOURGE_ABOMINATION, false);
     }
 
     /// <inheritdoc />
@@ -28,6 +29,7 @@ namespace WarcraftLegacies.Source.Researches
     {
       GetTriggerPlayer().GetFaction()?.ModObjectLimit(Constants.UNIT_UABO_ABOMINATION_SCOURGE, Faction.UNLIMITED);
       GetTriggerPlayer().GetFaction()?.ModObjectLimit(Constants.UNIT_N009_REVENANT_SCOURGE, -Faction.UNLIMITED);
+      SetPlayerAbilityAvailable(GetTriggerPlayer(), Constants.ABILITY_S006_CHAOS_SCOURGE_ABOMINATION, true);
     }
   }
 }

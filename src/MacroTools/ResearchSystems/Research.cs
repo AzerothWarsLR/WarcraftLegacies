@@ -16,11 +16,8 @@ namespace MacroTools.ResearchSystems
     /// Initializes a new instance of the <see cref="Research"/> class.
     /// </summary>
     /// <param name="researchTypeId"></param>
-    protected Research(int researchTypeId)
-    {
-      ResearchTypeId = researchTypeId;
-    }
-    
+    protected Research(int researchTypeId) => ResearchTypeId = researchTypeId;
+
     /// <summary>
     /// Invoked when a player gains the research
     /// </summary>

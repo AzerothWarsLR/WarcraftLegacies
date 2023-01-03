@@ -1162,6 +1162,12 @@ STRING 193
 E
 }
 
+STRING 194
+// Abilities: S006 (Chaos), EditorSuffix (Editor Suffix)
+{
+(Scourge - Abomination)
+}
+
 STRING 195
 // Abilities: ACfn (Frost Nova), EditorSuffix (Editor Suffix)
 {
@@ -3564,6 +3570,12 @@ STRING 596
 // Units: ncap (Corrupted Ancient Protector), Hotkey (Hotkey)
 {
 W
+}
+
+STRING 597
+// Abilities: S006 (Chaos), Name (Name)
+{
+Chaos
 }
 
 STRING 598
@@ -94992,7 +95004,7 @@ Sea-dragon of the crushing depths.|n|cfff5962dAbilities:|R Squall, Tsunami|n|n|c
 }
 
 STRING 15878
-// Units: h001 (The Great Forge), EditorSuffix (Name - Editor Suffix)
+// Units: h05H (Thelsamar), EditorSuffix (Name - Editor Suffix)
 {
  (Ironforge Other)
 }
@@ -95676,7 +95688,7 @@ Wielder of destructive elemental magic. |n|cfff5962dAbilities:|R Incinerate |n|c
 }
 
 STRING 15993
-// Units: o066 (Altar of Dragons), Ubertip (Tooltip - Extended)
+// Units: o03C (Altar of Visions), Ubertip (Tooltip - Extended)
 {
 Revives slain Heroes and Demi-heros.
 }
@@ -95904,7 +95916,7 @@ C'thun presence makes all units around him terribly frightened which decreases t
 }
 
 STRING 16038
-// Units: o03C (Altar of Visions), Ubertip (Tooltip - Extended)
+// Units: o03O (Altar of Industry), Ubertip (Tooltip - Extended)
 {
 Revives slain Heroes and Demi-heros.
 }
@@ -96128,7 +96140,7 @@ Blood Fury - [|cffffcc00Level %d|r]
 }
 
 STRING 16087
-// Units: o03O (Altar of Industry), Ubertip (Tooltip - Extended)
+// Units: o040 (Altar of Loa), Ubertip (Tooltip - Extended)
 {
 Revives slain Heroes and Demi-heros.
 }
@@ -96290,7 +96302,7 @@ Slows a target enemy AIR unit's attack rate by <A0E9,DataB1,%>% and movement spe
 }
 
 STRING 16130
-// Units: o040 (Altar of Loa), Ubertip (Tooltip - Extended)
+// Units: o058 (Altar of Light), Ubertip (Tooltip - Extended)
 {
 Revives slain Heroes and Demi-heros.
 }
@@ -105372,7 +105384,7 @@ STRING 17785
 }
 
 STRING 17786
-// Units: o058 (Altar of Light), Ubertip (Tooltip - Extended)
+// Units: o066 (Altar of Dragons), Ubertip (Tooltip - Extended)
 {
 Revives slain Heroes and Demi-heros.
 }
@@ -116295,7 +116307,7 @@ STRING 19786
 }
 
 STRING 19787
-// Units: h05H (Thelsamar), EditorSuffix (Name - Editor Suffix)
+// Units: h03P (Gnome Dwelling), EditorSuffix (Name - Editor Suffix)
 {
  (Ironforge Other)
 }
@@ -116637,7 +116649,7 @@ STRING 19854
 }
 
 STRING 19855
-// Units: h03P (Gnome Dwelling), EditorSuffix (Name - Editor Suffix)
+// Units: h01O (Shadowforge City), EditorSuffix (Name - Editor Suffix)
 {
  (Ironforge Other)
 }
@@ -116661,7 +116673,7 @@ STRING 19858
 }
 
 STRING 19859
-// Units: h01O (Shadowforge City), EditorSuffix (Name - Editor Suffix)
+// Units: h013 (Gnomeregan), EditorSuffix (Name - Editor Suffix)
 {
  (Ironforge Other)
 }
@@ -116715,7 +116727,7 @@ STRING 19867
 }
 
 STRING 19868
-// Units: h013 (Gnomeregan), EditorSuffix (Name - Editor Suffix)
+// Units: h001 (The Great Forge), EditorSuffix (Name - Editor Suffix)
 {
  (Ironforge Other)
 }
