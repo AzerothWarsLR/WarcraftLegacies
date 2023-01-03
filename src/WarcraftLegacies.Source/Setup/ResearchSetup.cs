@@ -1,6 +1,5 @@
 ﻿using MacroTools;
 using MacroTools.Extensions;
-using MacroTools.FactionSystem;
 using MacroTools.Powers;
 using MacroTools.ResearchSystems;
 using WarcraftLegacies.Source.Researches;
@@ -37,7 +36,10 @@ namespace WarcraftLegacies.Source.Setup
       TierVeteranGuard.Setup();
 
       ResearchManager.Register(new VeteranFootmen(Constants.UPGRADE_R00B_VETERAN_FOOTMEN_LORDAERON));
-      ResearchManager.Register(new Revenants(Constants.UPGRADE_R08T_REVENANTS_SCOURGE));
+
+      var revenants = new Revenants(Constants.UPGRADE_R08T_REVENANTS_SCOURGE);
+      ResearchManager.Register(revenants);
+      IncompatibleResearchSystem.Register(new BasicResearch(Constants.UPGRADE_R01X_EPIDEMIC_SCOURGE), revenants);
       
       PlayerUnitEvents.Register(ResearchEvent.IsFinished, () =>
       {

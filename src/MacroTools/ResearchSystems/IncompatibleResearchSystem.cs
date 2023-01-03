@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using MacroTools.Extensions;
 using WCSharp.Events;
 using static War3Api.Common;
@@ -37,26 +38,47 @@ namespace MacroTools.ResearchSystems
       {
         PlayerUnitEvents.Register(ResearchEvent.IsStarted, () =>
         {
-          foreach (var innerResearch in researches)
-            if (innerResearch.ResearchTypeId != GetResearched())
-              GetTriggerPlayer().ModObjectLimit(innerResearch.ResearchTypeId, -BigNumber);
+          try
+          {
+            foreach (var innerResearch in researches)
+              if (innerResearch.ResearchTypeId != GetResearched())
+                GetTriggerPlayer().ModObjectLimit(innerResearch.ResearchTypeId, -BigNumber);
+          }
+          catch (Exception ex)
+          {
+            Logger.LogWarning(ex.ToString());
+          }
         }, outerResearch.ResearchTypeId);
 
         PlayerUnitEvents.Register(ResearchEvent.IsCancelled, () =>
         {
-          foreach (var innerResearch in researches)
-            if (innerResearch.ResearchTypeId != GetResearched())
-              GetTriggerPlayer().ModObjectLimit(innerResearch.ResearchTypeId, BigNumber);
+          try
+          {
+            foreach (var innerResearch in researches)
+              if (innerResearch.ResearchTypeId != GetResearched())
+                GetTriggerPlayer().ModObjectLimit(innerResearch.ResearchTypeId, BigNumber);
+          }
+          catch (Exception ex)
+          {
+            Logger.LogWarning(ex.ToString());
+          }
         }, outerResearch.ResearchTypeId);
 
         PlayerUnitEvents.Register(ResearchEvent.IsFinished, () =>
         {
-          foreach (var innerResearch in researches)
-            if (innerResearch.ResearchTypeId != GetResearched())
-            {
-              innerResearch.OnUnresearch(GetTriggerPlayer());
-              GetTriggerPlayer().SetObjectLevel(innerResearch.ResearchTypeId, 0);
-            }
+          try
+          {
+            foreach (var innerResearch in researches)
+              if (innerResearch.ResearchTypeId != GetResearched())
+              {
+                innerResearch.OnUnresearch(GetTriggerPlayer());
+                GetTriggerPlayer().SetObjectLevel(innerResearch.ResearchTypeId, 0);
+              }
+          }
+          catch (Exception ex)
+          {
+            Logger.LogWarning(ex.ToString());
+          }
         }, outerResearch.ResearchTypeId);
       }
     }

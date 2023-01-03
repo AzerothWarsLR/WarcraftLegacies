@@ -1,3 +1,4 @@
+using System;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.ResearchSystems;
@@ -21,7 +22,7 @@ namespace WarcraftLegacies.Source.Researches
     {
       GetTriggerPlayer().GetFaction()?.ModObjectLimit(Constants.UNIT_UABO_ABOMINATION_SCOURGE, -Faction.UNLIMITED);
       GetTriggerPlayer().GetFaction()?.ModObjectLimit(Constants.UNIT_N009_REVENANT_SCOURGE, Faction.UNLIMITED);
-      SetPlayerAbilityAvailable(GetTriggerPlayer(), Constants.ABILITY_S006_CHAOS_SCOURGE_ABOMINATION, false);
+      SetPlayerAbilityAvailable(researchingPlayer, Constants.ABILITY_S006_CHAOS_SCOURGE_ABOMINATION, false);
     }
 
     /// <inheritdoc />
@@ -29,7 +30,8 @@ namespace WarcraftLegacies.Source.Researches
     {
       GetTriggerPlayer().GetFaction()?.ModObjectLimit(Constants.UNIT_UABO_ABOMINATION_SCOURGE, Faction.UNLIMITED);
       GetTriggerPlayer().GetFaction()?.ModObjectLimit(Constants.UNIT_N009_REVENANT_SCOURGE, -Faction.UNLIMITED);
-      SetPlayerAbilityAvailable(GetTriggerPlayer(), Constants.ABILITY_S006_CHAOS_SCOURGE_ABOMINATION, true);
+      SetPlayerAbilityAvailable(researchingPlayer, Constants.ABILITY_S006_CHAOS_SCOURGE_ABOMINATION, true);
+      Console.WriteLine($"Unresearching {GetObjectName(ResearchTypeId)}");
     }
   }
 }
