@@ -82,10 +82,17 @@ namespace MacroTools.ResearchSystems
       {
         try
         {
-          if (GetTriggerPlayer().GetObjectLimit(research.ResearchTypeId) != 0) 
+          var triggerPlayer = GetTriggerPlayer();
+          if (triggerPlayer.GetObjectLimit(research.ResearchTypeId) > 0) 
             return;
-          research.OnUnresearch(GetTriggerPlayer());
-          GetTriggerPlayer().SetObjectLevel(research.ResearchTypeId, 0);
+          research.OnUnresearch(triggerPlayer);
+          triggerPlayer.AddGold(research.GoldCost);
+          triggerPlayer.AddLumber(research.LumberCost);
+          CreateTimer().Start(0.3f, false, () =>
+          {
+            triggerPlayer.SetObjectLevel(research.ResearchTypeId, 0);
+            DestroyTimer(GetExpiredTimer());
+          });
         }
         catch (Exception ex)
         {

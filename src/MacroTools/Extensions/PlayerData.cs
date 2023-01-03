@@ -184,7 +184,21 @@ namespace MacroTools.Extensions
     public void SetObjectLevel(int obj, int level)
     {
       _objectLevels[obj] = level;
-      SetPlayerTechResearched(Player, obj, level);
+      //Object levels cannot be changed for objects with a limit of 0.
+      //This works around it by increasing the limit to 1 before making the change, then reverting it back.
+      var revertAfter = false;
+      
+      if (GetPlayerTechCount(Player, obj, false) < 1)
+      {
+        SetPlayerTechMaxAllowed(Player, obj, 1);
+        revertAfter = true;
+      }
+      SetPlayerTechResearched(Player, obj, 0);
+      if (revertAfter)
+        SetPlayerTechMaxAllowed(Player, obj, 0);
+
+      if (GetPlayerTechCount(Player, obj, false) != level)
+        throw new InvalidOperationException($"Failed to set the object limit of {GetObjectName(obj)} to {level}.");
     }
 
     public int GetObjectLimit(int id)
