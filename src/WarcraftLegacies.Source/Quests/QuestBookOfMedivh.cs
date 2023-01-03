@@ -54,7 +54,7 @@ namespace WarcraftLegacies.Source.Quests
 
     /// <inheritdoc/>
     protected override string FailurePopup => 
-      "Another faction has has retrieved the Book of Medivh from its pedestal. Hopefully they do not turn its nefarious power against us.";
+      "Another faction has retrieved the Book of Medivh from its pedestal. Hopefully they do not turn its nefarious power against us.";
 
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
