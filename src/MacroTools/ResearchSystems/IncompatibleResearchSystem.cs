@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using MacroTools.Extensions;
 using WCSharp.Events;
@@ -38,7 +39,7 @@ namespace MacroTools.ResearchSystems
       {
         SetupStartedTrigger(outerResearch, researches);
         SetupCancelledTrigger(outerResearch, researches);
-        SetupFinishedTrigger(outerResearch);
+        SetupFinishedTrigger(outerResearch, researches);
       }
     }
 
@@ -49,7 +50,7 @@ namespace MacroTools.ResearchSystems
         try
         {
           foreach (var otherResearch in researches)
-            if (otherResearch.ResearchTypeId != GetResearched())
+            if (otherResearch.ResearchTypeId != outerResearch.ResearchTypeId)
               GetTriggerPlayer().ModObjectLimit(otherResearch.ResearchTypeId, -BigNumber);
         }
         catch (Exception ex)
@@ -66,7 +67,7 @@ namespace MacroTools.ResearchSystems
         try
         {
           foreach (var otherResearch in researches)
-            if (otherResearch.ResearchTypeId != GetResearched())
+            if (otherResearch.ResearchTypeId != outerResearch.ResearchTypeId)
               GetTriggerPlayer().ModObjectLimit(otherResearch.ResearchTypeId, BigNumber);
         }
         catch (Exception ex)
@@ -76,20 +77,25 @@ namespace MacroTools.ResearchSystems
       }, outerResearch.ResearchTypeId);
     }
 
-    private static void SetupFinishedTrigger(Research research)
+    private static void SetupFinishedTrigger(Research research, Research[] otherResearches)
     {
       PlayerUnitEvents.Register(ResearchEvent.IsFinished, () =>
       {
         try
         {
           var triggerPlayer = GetTriggerPlayer();
-          if (triggerPlayer.GetObjectLimit(research.ResearchTypeId) > 0) 
+          Console.WriteLine($"Processing {GetObjectName(research.ResearchTypeId)}");
+          if (!ShouldRefund(triggerPlayer, research, otherResearches))
+          {
+            Console.WriteLine($"Don't refund {GetObjectName(research.ResearchTypeId)}");
             return;
+          }
           research.OnUnresearch(triggerPlayer);
           triggerPlayer.AddGold(research.GoldCost);
           triggerPlayer.AddLumber(research.LumberCost);
           CreateTimer().Start(0.3f, false, () =>
           {
+            Console.WriteLine($"Refund {GetObjectName(research.ResearchTypeId)}");
             triggerPlayer.SetObjectLevel(research.ResearchTypeId, 0);
             DestroyTimer(GetExpiredTimer());
           });
@@ -100,5 +106,11 @@ namespace MacroTools.ResearchSystems
         }
       }, research.ResearchTypeId);
     }
+
+    /// <summary>
+    /// Returns true if any other research in the group has already been researched.
+    /// </summary>
+    private static bool ShouldRefund(player researchingPlayer, Research primaryResearch, IEnumerable<Research> otherResearches) => 
+      otherResearches.Any(x => GetPlayerTechCount(researchingPlayer, x.ResearchTypeId, true) > 0 && x != primaryResearch);
   }
 }
