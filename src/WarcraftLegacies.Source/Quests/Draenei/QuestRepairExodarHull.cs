@@ -34,6 +34,7 @@ namespace WarcraftLegacies.Source.Quests.Draenei
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
       ResearchId = Constants.UPGRADE_R099_QUEST_COMPLETED_A_NEW_HOME; // Change this to current quest;
       _questToFailOnFail = questToFailOnFail;
+      SetUnitTimeScale(LegendDraenei.LegendExodar.Unit, 0);
     }
 
     /// <inheritdoc/>
@@ -53,6 +54,7 @@ namespace WarcraftLegacies.Source.Quests.Draenei
         whichFaction.Player.RescueGroup(_rescueUnits);
       else
         Player(PLAYER_NEUTRAL_AGGRESSIVE).RescueGroup(_rescueUnits);
+      SetUnitTimeScale(LegendDraenei.LegendExodar.Unit, 100);
     }
 
     /// <inheritdoc/>

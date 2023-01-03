@@ -3,6 +3,7 @@ using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives;
 using MacroTools.QuestSystem;
+using WarcraftLegacies.Source.Setup.Legends;
 using static War3Api.Common;
 
 
@@ -26,6 +27,7 @@ namespace WarcraftLegacies.Source.Quests.Goblin
         ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N05U_FEATHERMOON_STRONGHOLD_20GOLD_MIN), 10));
       ResearchId = QuestResearchId;
       Required = true;
+      SetUnitInvulnerable(LegendGoblin.KezanTradingCenter.Unit, true);
     }
 
     protected override string RewardDescription => "Our Trade Empire is now large enough to get the attention of the Trade Princes of Kezan. They will surely join our growing association";
@@ -59,6 +61,7 @@ namespace WarcraftLegacies.Source.Quests.Goblin
 
     protected override void OnComplete(Faction completingFaction)
     {
+      SetUnitInvulnerable(LegendGoblin.KezanTradingCenter.Unit, false);
       GrantKezan(completingFaction.Player);
       if (GetLocalPlayer() == completingFaction.Player) PlayThematicMusic("war3mapImported\\GoblinTheme.mp3");
     }
