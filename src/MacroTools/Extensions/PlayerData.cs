@@ -188,17 +188,17 @@ namespace MacroTools.Extensions
       //This works around it by increasing the limit to 1 before making the change, then reverting it back.
       var revertAfter = false;
       
-      if (GetPlayerTechCount(Player, obj, false) < 1)
+      if (GetPlayerTechCount(Player, obj, true) < 1)
       {
         SetPlayerTechMaxAllowed(Player, obj, 1);
         revertAfter = true;
       }
-      SetPlayerTechResearched(Player, obj, 0);
+      SetPlayerTechResearched(Player, obj, level);
       if (revertAfter)
         SetPlayerTechMaxAllowed(Player, obj, 0);
 
-      if (GetPlayerTechCount(Player, obj, false) != level)
-        throw new InvalidOperationException($"Failed to set the object limit of {GetObjectName(obj)} to {level}.");
+      if (GetPlayerTechCount(Player, obj, true) != Math.Max(level, 0))
+        throw new InvalidOperationException($"Failed to set the object limit of {GetObjectName(obj)} to {level}; it is {GetPlayerTechCount(Player, obj, false)} instead.");
     }
 
     public int GetObjectLimit(int id)
