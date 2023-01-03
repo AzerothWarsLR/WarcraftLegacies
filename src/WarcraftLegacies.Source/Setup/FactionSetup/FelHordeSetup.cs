@@ -60,9 +60,16 @@ The Alliance is gathering outside the Dark Portal to stop you, so prepare to for
       FelHorde.ModObjectLimit(FourCC("u00V"), Faction.UNLIMITED); //Necrolyte
       FelHorde.ModObjectLimit(FourCC("n057"), -Faction.UNLIMITED); //Nether Dragon Hatchling
       FelHorde.ModObjectLimit(FourCC("n058"), Faction.UNLIMITED); //Troll Axethrowers
+
+      //Ship
       FelHorde.ModObjectLimit(FourCC("obot"), Faction.UNLIMITED); //Transport Ship
-      FelHorde.ModObjectLimit(FourCC("odes"), Faction.UNLIMITED); //Orc Frigate
-      FelHorde.ModObjectLimit(FourCC("ojgn"), 6); //Juggernaught
+      FelHorde.ModObjectLimit(FourCC("h0AS"), Faction.UNLIMITED); //Scout
+      FelHorde.ModObjectLimit(FourCC("h0AP"), Faction.UNLIMITED); //Frigate
+      FelHorde.ModObjectLimit(FourCC("h0B2"), Faction.UNLIMITED); //Fireship
+      FelHorde.ModObjectLimit(FourCC("h0AY"), Faction.UNLIMITED); //Galley
+      FelHorde.ModObjectLimit(FourCC("h0B5"), Faction.UNLIMITED); //Boarding
+      FelHorde.ModObjectLimit(FourCC("h0BC"), Faction.UNLIMITED); //Juggernaut
+      FelHorde.ModObjectLimit(FourCC("h0AO"), Faction.UNLIMITED); //Bombard
 
       FelHorde.ModObjectLimit(FourCC("n05T"), 1); //Kazzak
       FelHorde.ModObjectLimit(FourCC("n064"), 1); //Voone

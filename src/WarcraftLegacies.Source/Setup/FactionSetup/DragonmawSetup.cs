@@ -59,13 +59,20 @@ Until then, plunder as much as you can from the surrounding lands."
       Dragonmaw.ModObjectLimit(FourCC("n09O"), 6); //DK
       Dragonmaw.ModObjectLimit(FourCC("u01T"), Faction.UNLIMITED); //Necrolyte
       Dragonmaw.ModObjectLimit(FourCC("o05L"), Faction.UNLIMITED); //Phase Grenadier
-      Dragonmaw.ModObjectLimit(FourCC("obot"), Faction.UNLIMITED); //Transport Ship
-      Dragonmaw.ModObjectLimit(FourCC("odes"), Faction.UNLIMITED); //Orc Frigate
-      Dragonmaw.ModObjectLimit(FourCC("ojgn"), 6); //Juggernaught
 
       Dragonmaw.ModObjectLimit(FourCC("O01Q"), 1); //Nekrosh
       Dragonmaw.ModObjectLimit(FourCC("O05S"), 1); //Zaela
       Dragonmaw.ModObjectLimit(FourCC("O06F"), 1); //Gorfax
+
+      //Ship
+      Dragonmaw.ModObjectLimit(FourCC("obot"), Faction.UNLIMITED); //Transport Ship
+      Dragonmaw.ModObjectLimit(FourCC("h0AS"), Faction.UNLIMITED); //Scout
+      Dragonmaw.ModObjectLimit(FourCC("h0AP"), Faction.UNLIMITED); //Frigate
+      Dragonmaw.ModObjectLimit(FourCC("h0B2"), Faction.UNLIMITED); //Fireship
+      Dragonmaw.ModObjectLimit(FourCC("h0AY"), Faction.UNLIMITED); //Galley
+      Dragonmaw.ModObjectLimit(FourCC("h0B5"), Faction.UNLIMITED); //Boarding
+      Dragonmaw.ModObjectLimit(FourCC("h0BC"), Faction.UNLIMITED); //Juggernaut
+      Dragonmaw.ModObjectLimit(FourCC("h0AO"), Faction.UNLIMITED); //Bombard
 
       Dragonmaw.ModObjectLimit(FourCC("R023"), Faction.UNLIMITED); //Spiritual Infusion
       Dragonmaw.ModObjectLimit(FourCC("Rosp"), Faction.UNLIMITED); //Spiked Barricades

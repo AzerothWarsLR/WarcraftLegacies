@@ -2546,7 +2546,7 @@ Build Horde Pier
 }
 
 STRING 426
-// Units: oshy (Horde Pier), Ubertip (Tooltip - Extended)
+// Units: o04M (Kezan Trading Center), Ubertip (Tooltip - Extended)
 {
 Boat construction facility for the Horde.|n|cfff5962dBuilds:|R Horde Transport Ships, Frigates, Juggernauts |n|n|cff00c4c4Cannot be built near small inland water areas.|r
 }
@@ -5766,6 +5766,12 @@ STRING 961
 Build Alliance Shipyard
 }
 
+STRING 962
+// Units: h076 (Shipyard), Ubertip (Tooltip - Extended)
+{
+Boat construction facility.|n|cfff5962dTrains:|R Transport, Scout, Frigate, Fireship, Galley, Boarding Vessel, Juggernaut, Bombard|R|n|n|cff00c4c4Cannot be built near small inland water areas.
+}
+
 STRING 963
 // Units: hrif (Rifleman), EditorSuffix (Name - Editor Suffix)
 {
@@ -6195,13 +6201,13 @@ Q
 }
 
 STRING 1034
-// Units: hshy (Alliance Shipyard), Ubertip (Tooltip - Extended)
+// Units: oshy (Horde Pier), Ubertip (Tooltip - Extended)
 {
 Boat construction facility.|n|cfff5962dTrains:|R Transport, Scout, Frigate, Fireship, Galley, Boarding Vessel, Juggernaut, Bombard|R|n|n|cff00c4c4Cannot be built near small inland water areas.
 }
 
 STRING 1035
-// Units: h07D (Shipyard), Ubertip (Tooltip - Extended)
+// Units: hshy (Alliance Shipyard), Ubertip (Tooltip - Extended)
 {
 Boat construction facility.|n|cfff5962dTrains:|R Transport, Scout, Frigate, Fireship, Galley, Boarding Vessel, Juggernaut, Bombard|R|n|n|cff00c4c4Cannot be built near small inland water areas.
 }
@@ -9128,7 +9134,7 @@ STRING 1522
 }
 
 STRING 1523
-// Units: o04M (Kezan Trading Center), Ubertip (Tooltip - Extended)
+// Units: o05F (Naval Battery), Ubertip (Tooltip - Extended)
 {
 Boat construction facility for the Horde.|n|cfff5962dBuilds:|R Horde Transport Ships, Frigates, Juggernauts |n|n|cff00c4c4Cannot be built near small inland water areas.|r
 }
@@ -11792,7 +11798,7 @@ Multishot
 }
 
 STRING 1967
-// Units: h077 (Shipyard), Ubertip (Tooltip - Extended)
+// Units: o032 (Shipyard), Ubertip (Tooltip - Extended)
 {
 Boat construction facility.|n|cfff5962dTrains:|R Transport, Scout, Frigate, Fireship, Galley, Boarding Vessel, Juggernaut, Bombard|R|n|n|cff00c4c4Cannot be built near small inland water areas.
 }
@@ -16413,6 +16419,12 @@ STRING 2737
  (Illidari Farm)
 }
 
+STRING 2738
+// Units: h03H (Shipyard), Ubertip (Tooltip - Extended)
+{
+Boat construction facility.|n|cfff5962dTrains:|R Transport, Scout, Frigate, Fireship, Galley, Boarding Vessel, Juggernaut, Bombard|R|n|n|cff00c4c4Cannot be built near small inland water areas.
+}
+
 STRING 2739
 // Units: nnad (Altar of the Betrayer), EditorSuffix (Name - Editor Suffix)
 {
@@ -16743,12 +16755,6 @@ STRING 2793
 Sacrifice
 }
 
-STRING 2794
-// Units: o032 (Shipyard), Ubertip (Tooltip - Extended)
-{
-Boat construction facility for the Fel Horde.|n|cfff5962dBuilds:|R Transport Ship, Frigate, Juggernaut |n|n|cff00c4c4Cannot be built near small inland water areas.|r
-}
-
 STRING 2795
 // Units: h06N (Castle), Hotkey (Hotkey)
 {
@@ -16771,12 +16777,6 @@ STRING 2798
 // Units: o031 (War Mill), Ubertip (Tooltip - Extended)
 {
 Resource harvesting center and producer of Fel Horde enhancements. |n|cfff5962dResearches:|R Weapon Upgdrades, Armor Upgrades, Reinforced Defenses, Spiked Barricades, Spiritual Infusion
-}
-
-STRING 2799
-// Units: o02T (Shipyard), Ubertip (Tooltip - Extended)
-{
-Boat construction facility for the Orcish Horde.|n|cfff5962dTrains:|R Horde Transport Ship, Frigate, Juggernaut |n|n|cff00c4c4Cannot be built near small inland water areas.|r
 }
 
 STRING 2800
@@ -16885,6 +16885,12 @@ STRING 2817
 // Units: h06D (Royal Harbour), Tip (Tooltip - Basic)
 {
 Build Royal Harbour
+}
+
+STRING 2818
+// Units: h07W (Shipyard), Ubertip (Tooltip - Extended)
+{
+Boat construction facility.|n|cfff5962dTrains:|R Transport, Scout, Frigate, Fireship, Galley, Boarding Vessel, Juggernaut, Bombard|R|n|n|cff00c4c4Cannot be built near small inland water areas.
 }
 
 STRING 2819
@@ -17450,6 +17456,12 @@ STRING 2912
 // Units: h05O (Dalaran Building), Name (Name)
 {
 Dalaran Building
+}
+
+STRING 2913
+// Units: o03I (Shipyard), Ubertip (Tooltip - Extended)
+{
+Boat construction facility.|n|cfff5962dTrains:|R Transport, Scout, Frigate, Fireship, Galley, Boarding Vessel, Juggernaut, Bombard|R|n|n|cff00c4c4Cannot be built near small inland water areas.
 }
 
 STRING 2914
@@ -19082,6 +19094,12 @@ STRING 3184
 Infernal Siegeworks
 }
 
+STRING 3185
+// Units: o03V (Bilgewater Harbor), Ubertip (Tooltip - Extended)
+{
+Boat construction facility.|n|cfff5962dTrains:|R Oil Rigs Constructor, Scout, Frigate, Fireship, Galley, Boarding Vessel, Juggernaut, Bombard|R|n|n|cff00c4c4Cannot be built near small inland water areas.
+}
+
 STRING 3186
 // Upgrades: R07P (Chaos), Name (Name)
 {
@@ -19703,12 +19721,6 @@ STRING 3289
 // Units: h076 (Shipyard), Tip (Tooltip - Basic)
 {
 Build Shipyard
-}
-
-STRING 3290
-// Units: o03I (Shipyard), Ubertip (Tooltip - Extended)
-{
-Boat construction facility for Twilight's Hammer Cult.|n|cfff5962dBuilds:|R Transport Ship, Frigate, Juggernaut |n|n|cff00c4c4Cannot be built near small inland water areas.|r
 }
 
 STRING 3291
@@ -51111,12 +51123,6 @@ STRING 8520
 Opens the gate.
 }
 
-STRING 8521
-// Units: o06D (Shipyard), Ubertip (Tooltip - Extended)
-{
-Boat construction facility for the Horde.|n|cfff5962dBuilds:|R Transport Ship, Frigate, Juggernaut |n|n|cff00c4c4Cannot be built near small inland water areas.|r
-}
-
 STRING 8522
 // Abilities: A0UA (Summon Ysondre), Researchhotkey (Hotkey - Learn)
 {
@@ -51585,6 +51591,12 @@ STRING 8599
 Primary structure, used to train Mur'gul Slaves, Royal Guards and receive gathered resources. Also contains the Submerge upgrade.
 }
 
+STRING 8600
+// Units: o049 (Golden Dock), Ubertip (Tooltip - Extended)
+{
+Boat construction facility.|n|cfff5962dTrains:|R Transport, Scout, Frigate, Fireship, Galley, Boarding Vessel, Juggernaut, Bombard|R|n|n|cff00c4c4Cannot be built near small inland water areas.
+}
+
 STRING 8601
 // Units: o059 (Shipyard), Tip (Tooltip - Basic)
 {
@@ -51886,7 +51898,7 @@ Build Kezan Trading Center
 }
 
 STRING 8651
-// Units: o05F (Naval Battery), Ubertip (Tooltip - Extended)
+// Units: o05I (Missile Battery), Ubertip (Tooltip - Extended)
 {
 Boat construction facility for the Horde.|n|cfff5962dBuilds:|R Horde Transport Ships, Frigates, Juggernauts |n|n|cff00c4c4Cannot be built near small inland water areas.|r
 }
@@ -64102,6 +64114,12 @@ STRING 10686
 Housing for the defenders of Stormwind.|n|r|cfff5962dTrains:|R Bladesman, Spearman, Outrider
 }
 
+STRING 10687
+// Units: o04M (Kezan Trading Center), EditorSuffix (Name - Editor Suffix)
+{
+(Goblin Special)
+}
+
 STRING 10688
 // Abilities: AHad (Devotion Aura), Researchubertip (Tooltip - Learn - Extended)
 {
@@ -64388,13 +64406,6 @@ STRING 10735
 // Abilities: A041 (Otherworldly Rampage), Tip (Tooltip - Normal)
 {
 Otherworldly Rampage
-}
-
-STRING 10736
-// Units: o03V (Bilgewater Harbor), Ubertip (Tooltip - Extended)
-{
-Boat construction facility for the Horde.|n|cfff5962dBuilds:|R Oil Rig Constructor, Frigate, Juggernaut|n|cfff5962dResearches:|r Oil Prospecting, Fortified Hulls, Improved Cannons
- |n|n|cff00c4c4Cannot be built near small inland water areas.|r
 }
 
 STRING 10737
@@ -68172,7 +68183,7 @@ Reduces movement speed by 75%, attack rate by 50%, and damage by 50% of a target
 }
 
 STRING 11366
-// Units: h076 (Shipyard), Ubertip (Tooltip - Extended)
+// Units: o02T (Shipyard), Ubertip (Tooltip - Extended)
 {
 Boat construction facility.|n|cfff5962dTrains:|R Transport, Scout, Frigate, Fireship, Galley, Boarding Vessel, Juggernaut, Bombard|R|n|n|cff00c4c4Cannot be built near small inland water areas.
 }
@@ -88000,7 +88011,7 @@ Z
 }
 
 STRING 14670
-// Upgrades: R06G (Defend), Hotkey (Hotkey)
+// Upgrades: R04V (Magic Sentry), Hotkey (Hotkey)
 {
 Z
 }
@@ -88102,7 +88113,7 @@ Train Treant
 }
 
 STRING 14687
-// Upgrades: R04V (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: R04F (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
 {
 Z
 }
@@ -88204,13 +88215,13 @@ STRING 14703
 }
 
 STRING 14704
-// Upgrades: R04F (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
+// Upgrades: R03X (Magic Sentry), Hotkey (Hotkey)
 {
 Z
 }
 
 STRING 14705
-// Upgrades: R03X (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: R03V (Magic Sentry), Hotkey (Hotkey)
 {
 Z
 }
@@ -88420,7 +88431,7 @@ rmvx
 }
 
 STRING 14740
-// Upgrades: R03V (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: R03T (Magic Sentry), Hotkey (Hotkey)
 {
 Z
 }
@@ -88451,7 +88462,7 @@ Goblin talented with magic.|n|cfff5962dAbilities:|R Ice Bolt|n|cfff5962dCan Lear
 }
 
 STRING 14745
-// Upgrades: R03T (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: R03Q (Shaman Adept Training,Shaman Master Training), Hotkey (Hotkey)
 {
 Z
 }
@@ -88631,7 +88642,7 @@ STRING 14774
 }
 
 STRING 14775
-// Upgrades: R03Q (Shaman Adept Training,Shaman Master Training), Hotkey (Hotkey)
+// Upgrades: R03H (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
 {
 Z
 }
@@ -89273,7 +89284,7 @@ rlev
 }
 
 STRING 14882
-// Upgrades: R03H (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
+// Upgrades: R032 (Defend), Hotkey (Hotkey)
 {
 Z
 }
@@ -89681,7 +89692,7 @@ Altruis the Sufferer
 }
 
 STRING 14950
-// Upgrades: R032 (Defend), Hotkey (Hotkey)
+// Upgrades: R030 (Defend), Hotkey (Hotkey)
 {
 Z
 }
@@ -89939,13 +89950,13 @@ ratx
 }
 
 STRING 14993
-// Upgrades: R030 (Defend), Hotkey (Hotkey)
+// Upgrades: R02Z (Defend), Hotkey (Hotkey)
 {
 Z
 }
 
 STRING 14994
-// Upgrades: R02Z (Defend), Hotkey (Hotkey)
+// Upgrades: R02Y (Defend), Hotkey (Hotkey)
 {
 Z
 }
@@ -90053,7 +90064,7 @@ STRING 15011
 }
 
 STRING 15012
-// Upgrades: R02Y (Defend), Hotkey (Hotkey)
+// Upgrades: R02W (Defend), Hotkey (Hotkey)
 {
 Z
 }
@@ -90083,7 +90094,7 @@ Fast moving flying machine. Excellent at scouting, and effective against air uni
 }
 
 STRING 15017
-// Upgrades: R02W (Defend), Hotkey (Hotkey)
+// Upgrades: R029 (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
 {
 Z
 }
@@ -90263,7 +90274,7 @@ Research Blood Runes
 }
 
 STRING 15047
-// Upgrades: R029 (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
+// Upgrades: R027 (Necromancer Adept Training,Necromancer Master Training), Hotkey (Hotkey)
 {
 Z
 }
@@ -90461,7 +90472,7 @@ Train Enslaved Dragon
 }
 
 STRING 15080
-// Upgrades: R027 (Necromancer Adept Training,Necromancer Master Training), Hotkey (Hotkey)
+// Upgrades: R024 (Necromancer Adept Training,Necromancer Master Training), Hotkey (Hotkey)
 {
 Z
 }
@@ -90878,7 +90889,7 @@ Revive Demigod
 }
 
 STRING 15158
-// Upgrades: R024 (Necromancer Adept Training,Necromancer Master Training), Hotkey (Hotkey)
+// Upgrades: R01X (Disease Cloud), Hotkey (Hotkey)
 {
 Z
 }
@@ -90962,7 +90973,7 @@ STRING 15171
 }
 
 STRING 15172
-// Upgrades: R01X (Disease Cloud), Hotkey (Hotkey)
+// Upgrades: R01W (Druid of the Talon Adept Training,Druid of the Talon Master Training), Hotkey (Hotkey)
 {
 Z
 }
@@ -92934,7 +92945,7 @@ Power Infusion 1
 }
 
 STRING 15499
-// Upgrades: R01W (Druid of the Talon Adept Training,Druid of the Talon Master Training), Hotkey (Hotkey)
+// Upgrades: R01Q (Magic Sentry), Hotkey (Hotkey)
 {
 Z
 }
@@ -92946,7 +92957,7 @@ Research Power Infusion 1
 }
 
 STRING 15501
-// Upgrades: R01Q (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: R01J (Ensnare), Hotkey (Hotkey)
 {
 Z
 }
@@ -94433,12 +94444,6 @@ STRING 15748
 Anti Portal Blocking
 }
 
-STRING 15749
-// Units: o05I (Missile Battery), Ubertip (Tooltip - Extended)
-{
-Boat construction facility for the Horde.|n|cfff5962dBuilds:|R Horde Transport Ships, Frigates, Juggernauts |n|n|cff00c4c4Cannot be built near small inland water areas.|r
-}
-
 STRING 15750
 // Units: e01S (Altar of the Depth), EditorSuffix (Name - Editor Suffix)
 {
@@ -95058,13 +95063,13 @@ Q
 }
 
 STRING 15853
-// Upgrades: R01J (Ensnare), Hotkey (Hotkey)
+// Upgrades: R017 (Magic Sentry), Hotkey (Hotkey)
 {
 Z
 }
 
 STRING 15854
-// Upgrades: R017 (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: R010 (Control Magic), Hotkey (Hotkey)
 {
 Z
 }
@@ -95334,13 +95339,13 @@ Absord Nexus
 }
 
 STRING 15899
-// Upgrades: R010 (Control Magic), Hotkey (Hotkey)
+// Upgrades: R00O (Ensnare), Hotkey (Hotkey)
 {
 Z
 }
 
 STRING 15900
-// Upgrades: R00O (Ensnare), Hotkey (Hotkey)
+// Upgrades: R00I (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
 {
 Z
 }
@@ -95981,6 +95986,12 @@ STRING 16006
 Q
 }
 
+STRING 16007
+// Units: o06D (Shipyard), Ubertip (Tooltip - Extended)
+{
+Boat construction facility.|n|cfff5962dTrains:|R Transport, Scout, Frigate, Fireship, Galley, Boarding Vessel, Juggernaut, Bombard|R|n|n|cff00c4c4Cannot be built near small inland water areas.
+}
+
 STRING 16008
 // Units: h0AV (Frigate), EditorSuffix (Name - Editor Suffix)
 {
@@ -96036,7 +96047,7 @@ Z
 }
 
 STRING 16017
-// Upgrades: R00I (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
+// Upgrades: R00F (Control Magic), Hotkey (Hotkey)
 {
 Z
 }
@@ -96072,7 +96083,7 @@ Short range medium ship.|n|r|n|cffffcc00Attacks land units.|r|nStrong versus Fri
 }
 
 STRING 16023
-// Upgrades: R00F (Control Magic), Hotkey (Hotkey)
+// Upgrades: R00E (Sorceress Adept Training,Sorceress Master Training), Hotkey (Hotkey)
 {
 Z
 }
@@ -96380,7 +96391,7 @@ Open the Scholomance
 }
 
 STRING 16074
-// Upgrades: R00E (Sorceress Adept Training,Sorceress Master Training), Hotkey (Hotkey)
+// Upgrades: R00B (Magic Sentry), Hotkey (Hotkey)
 {
 Z
 }
@@ -97116,7 +97127,7 @@ Train Initiate Mage
 }
 
 STRING 16197
-// Units: h03H (Shipyard), Ubertip (Tooltip - Extended)
+// Units: h07D (Shipyard), Ubertip (Tooltip - Extended)
 {
 Boat construction facility.|n|cfff5962dTrains:|R Transport, Scout, Frigate, Fireship, Galley, Boarding Vessel, Juggernaut, Bombard|R|n|n|cff00c4c4Cannot be built near small inland water areas.
 }
@@ -97302,7 +97313,7 @@ Creates a shop with purchasable items.
 }
 
 STRING 16228
-// Units: h07W (Shipyard), Ubertip (Tooltip - Extended)
+// Units: h077 (Shipyard), Ubertip (Tooltip - Extended)
 {
 Boat construction facility.|n|cfff5962dTrains:|R Transport, Scout, Frigate, Fireship, Galley, Boarding Vessel, Juggernaut, Bombard|R|n|n|cff00c4c4Cannot be built near small inland water areas.
 }
@@ -97320,13 +97331,13 @@ X
 }
 
 STRING 16231
-// Upgrades: R00B (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: R00A (Mark of the Claw), Hotkey (Hotkey)
 {
 Z
 }
 
 STRING 16232
-// Upgrades: R00A (Mark of the Claw), Hotkey (Hotkey)
+// Upgrades: R005 (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
 {
 Z
 }
@@ -97464,7 +97475,7 @@ E
 }
 
 STRING 16255
-// Upgrades: R005 (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
+// Upgrades: R000 (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
 {
 Z
 }
@@ -97627,6 +97638,12 @@ Aerial scientist of the Forsaken. Has a small aoe attack.|n|cfff5962dAbilities:|
 
 STRING 16282
 // Abilities: A0O8 (Devour Magic), Hotkey (Hotkey - Normal)
+{
+E
+}
+
+STRING 16283
+// Upgrades: R03O (Animal War Training), Hotkey (Hotkey)
 {
 E
 }
@@ -98916,7 +98933,7 @@ Glaive Warrior
 }
 
 STRING 16521
-// Upgrades: R000 (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
+// Upgrades: R01U (Magic Sentry), Hotkey (Hotkey)
 {
 Z
 }
@@ -99324,7 +99341,7 @@ STRING 16589
 }
 
 STRING 16590
-// Upgrades: R01U (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: R03Z (Magic Sentry), Hotkey (Hotkey)
 {
 Z
 }
@@ -99582,7 +99599,7 @@ Train Witch Hunter
 }
 
 STRING 16639
-// Upgrades: R03Z (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: R04O (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
 {
 Z
 }
@@ -99753,12 +99770,6 @@ STRING 16670
 // Units: n09O (Orcish Death Knight), Tip (Tooltip - Basic)
 {
 Train Orcish Death Knight
-}
-
-STRING 16671
-// Units: o049 (Golden Dock), Ubertip (Tooltip - Extended)
-{
-Boat construction facility for the Horde.|n|cfff5962dBuilds:|R Golden Fleet, Juggernauts |n|n|cff00c4c4Cannot be built near small inland water areas.|r
 }
 
 STRING 16672
@@ -100416,7 +100427,7 @@ Foreman Glibbs
 }
 
 STRING 16797
-// Upgrades: R04O (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
+// Upgrades: R051 (Necromancer Adept Training,Necromancer Master Training), Hotkey (Hotkey)
 {
 Z
 }
@@ -100644,7 +100655,7 @@ STRING 16834
 }
 
 STRING 16835
-// Upgrades: R051 (Necromancer Adept Training,Necromancer Master Training), Hotkey (Hotkey)
+// Upgrades: R06Z (Necromancer Adept Training,Necromancer Master Training), Hotkey (Hotkey)
 {
 Z
 }
@@ -104634,7 +104645,7 @@ Z
 }
 
 STRING 17538
-// Upgrades: R06Z (Necromancer Adept Training,Necromancer Master Training), Hotkey (Hotkey)
+// Upgrades: R070 (Druid of the Talon Adept Training,Druid of the Talon Master Training), Hotkey (Hotkey)
 {
 Z
 }
@@ -104905,7 +104916,7 @@ Z
 }
 
 STRING 17583
-// Upgrades: R070 (Druid of the Talon Adept Training,Druid of the Talon Master Training), Hotkey (Hotkey)
+// Upgrades: R07J (Banshee Adept Training,Banshee Master Training), Hotkey (Hotkey)
 {
 Z
 }
@@ -106128,7 +106139,7 @@ STRING 17798
 }
 
 STRING 17800
-// Upgrades: R07J (Banshee Adept Training,Banshee Master Training), Hotkey (Hotkey)
+// Upgrades: R07L (Shaman Adept Training,Shaman Master Training), Hotkey (Hotkey)
 {
 Z
 }
@@ -106878,7 +106889,7 @@ Increases Elementalist' mana capacity, mana regeneration rate, attack damage and
 }
 
 STRING 17941
-// Upgrades: R07L (Shaman Adept Training,Shaman Master Training), Hotkey (Hotkey)
+// Upgrades: R07O (Witch Doctor Adept Training,Witch Doctor Master Training), Hotkey (Hotkey)
 {
 Z
 }
@@ -109951,7 +109962,7 @@ X
 }
 
 STRING 18472
-// Upgrades: R07O (Witch Doctor Adept Training,Witch Doctor Master Training), Hotkey (Hotkey)
+// Upgrades: R07V (Control Magic), Hotkey (Hotkey)
 {
 Z
 }
@@ -110131,7 +110142,7 @@ Research Deepseer Adept Training
 }
 
 STRING 18502
-// Upgrades: R07V (Control Magic), Hotkey (Hotkey)
+// Upgrades: R07C (Spirit Walker Adept Training,Spirit Walker Master Training), Hotkey (Hotkey)
 {
 Z
 }
@@ -112568,13 +112579,13 @@ E
 }
 
 STRING 18978
-// Upgrades: R06F (Defend), Hotkey (Hotkey)
+// Upgrades: R06G (Defend), Hotkey (Hotkey)
 {
 E
 }
 
 STRING 18979
-// Upgrades: R064 (Nature's Blessing), Hotkey (Hotkey)
+// Upgrades: R06F (Defend), Hotkey (Hotkey)
 {
 E
 }
@@ -112880,7 +112891,7 @@ Gives a total of <Aamk,DataA1> points to Intelligence, and Strength
 }
 
 STRING 19035
-// Upgrades: R03M (Defend), Hotkey (Hotkey)
+// Upgrades: R064 (Nature's Blessing), Hotkey (Hotkey)
 {
 E
 }
@@ -113702,7 +113713,7 @@ Medium dragon of the Dragonmaw Clan.|n|r|n|cffffcc00Attacks land and air units.|
 }
 
 STRING 19183
-// Upgrades: R02P (Backpack), Hotkey (Hotkey)
+// Upgrades: R03M (Defend), Hotkey (Hotkey)
 {
 E
 }
@@ -113714,7 +113725,7 @@ Mighty warriors of the Burning Legion.|n|cfff5962dAbilities:|R Pulverize|n|n|cff
 }
 
 STRING 19185
-// Upgrades: R03O (Animal War Training), Hotkey (Hotkey)
+// Upgrades: R02P (Backpack), Hotkey (Hotkey)
 {
 E
 }
@@ -115659,19 +115670,19 @@ Fires massive boulders upon its foes.|n|cfff5962dUpgrades Into:|R Improved Iron 
 }
 
 STRING 19552
-// Upgrades: R07C (Spirit Walker Adept Training,Spirit Walker Master Training), Hotkey (Hotkey)
-{
-Z
-}
-
-STRING 19553
 // Upgrades: R08E (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 Z
 }
 
-STRING 19554
+STRING 19553
 // Upgrades: R08H (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+{
+Z
+}
+
+STRING 19554
+// Upgrades: R08P (Naga Siren Adept Training,Naga Siren Master Training), Hotkey (Hotkey)
 {
 Z
 }
@@ -115683,13 +115694,13 @@ Z
 }
 
 STRING 19558
-// Upgrades: R08P (Naga Siren Adept Training,Naga Siren Master Training), Hotkey (Hotkey)
+// Upgrades: R08S (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 Z
 }
 
 STRING 19559
-// Upgrades: R08S (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R097 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 Z
 }
@@ -115698,12 +115709,6 @@ STRING 19560
 // Upgrades: R02V (Naga Siren Adept Training,Naga Siren Master Training), Hotkey (Hotkey)
 {
 X
-}
-
-STRING 19561
-// Upgrades: R097 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
-{
-Z
 }
 
 STRING 19563
@@ -118248,12 +118253,6 @@ STRING 20037
 // Units: h09D (Fleetmaster's Table), EditorSuffix (Name - Editor Suffix)
 {
  (Kul Tiras Other)
-}
-
-STRING 20038
-// Units: o04M (Kezan Trading Center), EditorSuffix (Name - Editor Suffix)
-{
-(Goblin Shipyard 2)
 }
 
 STRING 20039

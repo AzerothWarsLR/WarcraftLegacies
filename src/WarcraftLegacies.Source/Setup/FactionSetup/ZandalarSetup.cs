@@ -49,11 +49,19 @@ Once the human menace has been dealt with, sail West and help the Horde in Kalim
       Zandalar.ModObjectLimit(FourCC("o04G"), Faction.UNLIMITED); //Haruspex
       Zandalar.ModObjectLimit(FourCC("o04E"), 6); //Boneseer
       Zandalar.ModObjectLimit(FourCC("h05D"), Faction.UNLIMITED); //Raptor Rider
-      Zandalar.ModObjectLimit(FourCC("o04W"), Faction.UNLIMITED); //Golden Vessel
-      Zandalar.ModObjectLimit(FourCC("ojgn"), 6); //Juggernaught
       Zandalar.ModObjectLimit(FourCC("o021"), 12); //Ravager
       Zandalar.ModObjectLimit(FourCC("nftk"), 12); //Warlord
       Zandalar.ModObjectLimit(FourCC("o02K"), 6); //Bear Rider
+
+      //Ship
+      Zandalar.ModObjectLimit(FourCC("obot"), Faction.UNLIMITED); //Transport Ship
+      Zandalar.ModObjectLimit(FourCC("h0AS"), Faction.UNLIMITED); //Scout
+      Zandalar.ModObjectLimit(FourCC("h0AP"), Faction.UNLIMITED); //Frigate
+      Zandalar.ModObjectLimit(FourCC("h0B2"), Faction.UNLIMITED); //Fireship
+      Zandalar.ModObjectLimit(FourCC("h0AY"), Faction.UNLIMITED); //Galley
+      Zandalar.ModObjectLimit(FourCC("h0B5"), Faction.UNLIMITED); //Boarding
+      Zandalar.ModObjectLimit(FourCC("h0BC"), Faction.UNLIMITED); //Juggernaut
+      Zandalar.ModObjectLimit(FourCC("h0AO"), Faction.UNLIMITED); //Bombard
 
       Zandalar.ModObjectLimit(FourCC("O026"), 1); //Rasthakan
       Zandalar.ModObjectLimit(FourCC("O01J"), 1); //Zul

@@ -53,12 +53,19 @@ The Night Elves are aware of your presence and are gathering against you. Unlock
       WarsongClan.ModObjectLimit(FourCC("o00I"), 6); //Horde War Machine
       WarsongClan.ModObjectLimit(FourCC("e01M"), 4); //Azerite Siege Engine
       WarsongClan.ModObjectLimit(FourCC("okod"), 4); //Kodo Beast
-      WarsongClan.ModObjectLimit(FourCC("obot"), Faction.UNLIMITED); //Transport Ship
-      WarsongClan.ModObjectLimit(FourCC("odes"), Faction.UNLIMITED); //Orc Frigate
-      WarsongClan.ModObjectLimit(FourCC("ojgn"), 6); //Juggernaught
       WarsongClan.ModObjectLimit(FourCC("o00G"), 6); //Blademaster
       WarsongClan.ModObjectLimit(FourCC("n03F"), 6); //Korkron elite
       WarsongClan.ModObjectLimit(FourCC("owyv"), 8); //Wind Rider
+
+      //Ship
+      WarsongClan.ModObjectLimit(FourCC("obot"), Faction.UNLIMITED); //Transport Ship
+      WarsongClan.ModObjectLimit(FourCC("h0AS"), Faction.UNLIMITED); //Scout
+      WarsongClan.ModObjectLimit(FourCC("h0AP"), Faction.UNLIMITED); //Frigate
+      WarsongClan.ModObjectLimit(FourCC("h0B2"), Faction.UNLIMITED); //Fireship
+      WarsongClan.ModObjectLimit(FourCC("h0AY"), Faction.UNLIMITED); //Galley
+      WarsongClan.ModObjectLimit(FourCC("h0B5"), Faction.UNLIMITED); //Boarding
+      WarsongClan.ModObjectLimit(FourCC("h0BC"), Faction.UNLIMITED); //Juggernaut
+      WarsongClan.ModObjectLimit(FourCC("h0AO"), Faction.UNLIMITED); //Bombard
 
       WarsongClan.ModObjectLimit(FourCC("Ogrh"), 1); //Grom
       WarsongClan.ModObjectLimit(FourCC("Obla"), 1); //Varok

@@ -38,8 +38,17 @@ The Trading Center in Kezan will unlock the ability to train Traders, as soon as
       Goblin.ModObjectLimit(FourCC("o03W"), Faction.UNLIMITED); //Improved Watch Tower
       Goblin.ModObjectLimit(FourCC("o03X"), Faction.UNLIMITED); //Voodoo Lounge
       Goblin.ModObjectLimit(FourCC("o03V"), Faction.UNLIMITED); //Shipyard
-      Goblin.ModObjectLimit(Constants.UNIT_O06G_OIL_RIG_CONSTRUCTOR_GOBLIN, Faction.UNLIMITED);
       Goblin.ModObjectLimit(FourCC("h011"), 1); //Artillery
+
+      //Ship
+      Goblin.ModObjectLimit(Constants.UNIT_O06G_OIL_RIG_CONSTRUCTOR_GOBLIN, Faction.UNLIMITED);
+      Goblin.ModObjectLimit(FourCC("h0AS"), Faction.UNLIMITED); //Scout
+      Goblin.ModObjectLimit(FourCC("h0AP"), Faction.UNLIMITED); //Frigate
+      Goblin.ModObjectLimit(FourCC("h0B2"), Faction.UNLIMITED); //Fireship
+      Goblin.ModObjectLimit(FourCC("h0AY"), Faction.UNLIMITED); //Galley
+      Goblin.ModObjectLimit(FourCC("h0B5"), Faction.UNLIMITED); //Boarding
+      Goblin.ModObjectLimit(FourCC("h0BC"), Faction.UNLIMITED); //Juggernaut
+      Goblin.ModObjectLimit(FourCC("h0AO"), Faction.UNLIMITED); //Bombard
 
       Goblin.ModObjectLimit(Constants.UNIT_O02I_BUILDER_GOBLIN_WORKER, Faction.UNLIMITED);
       Goblin.ModObjectLimit(Constants.UNIT_N099_OGRE_MERCENARY_GOBLIN, Faction.UNLIMITED);

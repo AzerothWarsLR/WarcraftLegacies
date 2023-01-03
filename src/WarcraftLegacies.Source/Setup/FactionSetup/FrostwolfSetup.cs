@@ -53,9 +53,16 @@ Establish a base and gather your troops - but make haste and move inland, for th
       Frostwolf.ModObjectLimit(FourCC("ospw"), Faction.UNLIMITED); //Spirit Walker
       Frostwolf.ModObjectLimit(FourCC("o00A"), 6); //Far Seer
       Frostwolf.ModObjectLimit(FourCC("obot"), Faction.UNLIMITED); //Transport Ship
-      Frostwolf.ModObjectLimit(FourCC("odes"), Faction.UNLIMITED); //Orc Frigate
-      Frostwolf.ModObjectLimit(FourCC("oosc"), Faction.UNLIMITED); //Pack Kodo
-      Frostwolf.ModObjectLimit(FourCC("ojgn"), 6); //Juggernaught
+
+      //Ship
+      Frostwolf.ModObjectLimit(FourCC("obot"), Faction.UNLIMITED); //Transport Ship
+      Frostwolf.ModObjectLimit(FourCC("h0AS"), Faction.UNLIMITED); //Scout
+      Frostwolf.ModObjectLimit(FourCC("h0AP"), Faction.UNLIMITED); //Frigate
+      Frostwolf.ModObjectLimit(FourCC("h0B2"), Faction.UNLIMITED); //Fireship
+      Frostwolf.ModObjectLimit(FourCC("h0AY"), Faction.UNLIMITED); //Galley
+      Frostwolf.ModObjectLimit(FourCC("h0B5"), Faction.UNLIMITED); //Boarding
+      Frostwolf.ModObjectLimit(FourCC("h0BC"), Faction.UNLIMITED); //Juggernaut
+      Frostwolf.ModObjectLimit(FourCC("h0AO"), Faction.UNLIMITED); //Bombard
 
       Frostwolf.ModObjectLimit(FourCC("h00C"), 1); //Drek)thar
       Frostwolf.ModObjectLimit(FourCC("Othr"), 1); //Thrall
