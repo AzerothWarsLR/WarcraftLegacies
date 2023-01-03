@@ -1,10 +1,9 @@
 ﻿using MacroTools;
 using MacroTools.Extensions;
-using MacroTools.FactionSystem;
 using MacroTools.Powers;
-using WarcraftLegacies.Source.Researches.Lordaeron;
+using MacroTools.ResearchSystems;
+using WarcraftLegacies.Source.Researches;
 using WarcraftLegacies.Source.Researches.Ironforge;
-using WarcraftLegacies.Source.Researches.Scourge;
 using WarcraftLegacies.Source.Researches.Stormwind;
 using WCSharp.Events;
 using WCSharp.Shared.Data;
@@ -23,8 +22,6 @@ namespace WarcraftLegacies.Source.Setup
     /// <param name="preplacedUnitSystem">A system that can find preplaced units.</param>
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
-      Revenants.Setup();
-      VeteranFootmen.Setup();
       TitanForgeArtifact.Setup();
       DeeprunTram.Setup(preplacedUnitSystem);
       TierBattleTactics.Setup();
@@ -38,6 +35,12 @@ namespace WarcraftLegacies.Source.Setup
       TierSolarFlareRitual.Setup();
       TierVeteranGuard.Setup();
 
+      ResearchManager.Register(new VeteranFootmen(Constants.UPGRADE_R00B_VETERAN_FOOTMEN_LORDAERON));
+
+      var revenants = new Revenants(Constants.UPGRADE_R08T_REVENANTS_SCOURGE);
+      ResearchManager.Register(revenants);
+      IncompatibleResearchSystem.Register(new BasicResearch(Constants.UPGRADE_R01X_EPIDEMIC_SCOURGE), revenants);
+      
       PlayerUnitEvents.Register(ResearchEvent.IsFinished, () =>
       {
         GetTriggerPlayer()
