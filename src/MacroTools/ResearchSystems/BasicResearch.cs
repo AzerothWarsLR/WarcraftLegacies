@@ -8,7 +8,7 @@ namespace MacroTools.ResearchSystems
   public sealed class BasicResearch : Research
   {
     /// <inheritdoc />
-    public BasicResearch(int researchTypeId) : base(researchTypeId)
+    public BasicResearch(int researchTypeId, int goldCost, int lumberCost) : base(researchTypeId, goldCost, lumberCost)
     {
     }
 

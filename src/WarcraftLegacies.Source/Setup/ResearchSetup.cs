@@ -35,11 +35,12 @@ namespace WarcraftLegacies.Source.Setup
       TierSolarFlareRitual.Setup();
       TierVeteranGuard.Setup();
 
-      ResearchManager.Register(new VeteranFootmen(Constants.UPGRADE_R00B_VETERAN_FOOTMEN_LORDAERON));
+      ResearchManager.Register(new VeteranFootmen(Constants.UPGRADE_R00B_VETERAN_FOOTMEN_LORDAERON, 220, 120));
 
-      var revenants = new Revenants(Constants.UPGRADE_R08T_REVENANTS_SCOURGE);
+      var revenants = new Revenants(Constants.UPGRADE_R08T_REVENANTS_SCOURGE, 250, 200);
       ResearchManager.Register(revenants);
-      IncompatibleResearchSystem.Register(new BasicResearch(Constants.UPGRADE_R01X_EPIDEMIC_SCOURGE), revenants);
+      IncompatibleResearchSystem.Register(new BasicResearch(Constants.UPGRADE_R01X_EPIDEMIC_SCOURGE, 250, 200),
+        revenants);
       
       PlayerUnitEvents.Register(ResearchEvent.IsFinished, () =>
       {

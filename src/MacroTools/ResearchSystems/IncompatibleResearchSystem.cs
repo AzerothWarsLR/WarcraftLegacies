@@ -24,7 +24,7 @@ namespace MacroTools.ResearchSystems
     /// </summary>
     public static void Register(params int[] researchTypeIds)
     {
-      var researches = researchTypeIds.Select(x => new BasicResearch(x) as Research).ToArray();
+      var researches = researchTypeIds.Select(x => new BasicResearch(x, 0, 0) as Research).ToArray();
       Register(researches);
     }
     
@@ -36,51 +36,62 @@ namespace MacroTools.ResearchSystems
     {
       foreach (var outerResearch in researches)
       {
-        PlayerUnitEvents.Register(ResearchEvent.IsStarted, () =>
-        {
-          try
-          {
-            foreach (var innerResearch in researches)
-              if (innerResearch.ResearchTypeId != GetResearched())
-                GetTriggerPlayer().ModObjectLimit(innerResearch.ResearchTypeId, -BigNumber);
-          }
-          catch (Exception ex)
-          {
-            Logger.LogWarning(ex.ToString());
-          }
-        }, outerResearch.ResearchTypeId);
-
-        PlayerUnitEvents.Register(ResearchEvent.IsCancelled, () =>
-        {
-          try
-          {
-            foreach (var innerResearch in researches)
-              if (innerResearch.ResearchTypeId != GetResearched())
-                GetTriggerPlayer().ModObjectLimit(innerResearch.ResearchTypeId, BigNumber);
-          }
-          catch (Exception ex)
-          {
-            Logger.LogWarning(ex.ToString());
-          }
-        }, outerResearch.ResearchTypeId);
-
-        PlayerUnitEvents.Register(ResearchEvent.IsFinished, () =>
-        {
-          try
-          {
-            foreach (var innerResearch in researches)
-              if (innerResearch.ResearchTypeId != GetResearched())
-              {
-                innerResearch.OnUnresearch(GetTriggerPlayer());
-                GetTriggerPlayer().SetObjectLevel(innerResearch.ResearchTypeId, 0);
-              }
-          }
-          catch (Exception ex)
-          {
-            Logger.LogWarning(ex.ToString());
-          }
-        }, outerResearch.ResearchTypeId);
+        SetupStartedTrigger(outerResearch, researches);
+        SetupCancelledTrigger(outerResearch, researches);
+        SetupFinishedTrigger(outerResearch);
       }
+    }
+
+    private static void SetupStartedTrigger(Research outerResearch, Research[] researches)
+    {
+      PlayerUnitEvents.Register(ResearchEvent.IsStarted, () =>
+      {
+        try
+        {
+          foreach (var otherResearch in researches)
+            if (otherResearch.ResearchTypeId != GetResearched())
+              GetTriggerPlayer().ModObjectLimit(otherResearch.ResearchTypeId, -BigNumber);
+        }
+        catch (Exception ex)
+        {
+          Logger.LogWarning(ex.ToString());
+        }
+      }, outerResearch.ResearchTypeId);
+    }
+
+    private static void SetupCancelledTrigger(Research outerResearch, Research[] researches)
+    {
+      PlayerUnitEvents.Register(ResearchEvent.IsCancelled, () =>
+      {
+        try
+        {
+          foreach (var otherResearch in researches)
+            if (otherResearch.ResearchTypeId != GetResearched())
+              GetTriggerPlayer().ModObjectLimit(otherResearch.ResearchTypeId, BigNumber);
+        }
+        catch (Exception ex)
+        {
+          Logger.LogWarning(ex.ToString());
+        }
+      }, outerResearch.ResearchTypeId);
+    }
+
+    private static void SetupFinishedTrigger(Research research)
+    {
+      PlayerUnitEvents.Register(ResearchEvent.IsFinished, () =>
+      {
+        try
+        {
+          if (GetTriggerPlayer().GetObjectLimit(research.ResearchTypeId) != 0) 
+            return;
+          research.OnUnresearch(GetTriggerPlayer());
+          GetTriggerPlayer().SetObjectLevel(research.ResearchTypeId, 0);
+        }
+        catch (Exception ex)
+        {
+          Logger.LogWarning(ex.ToString());
+        }
+      }, research.ResearchTypeId);
     }
   }
 }

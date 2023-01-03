@@ -1,4 +1,3 @@
-using System;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.ResearchSystems;
@@ -13,7 +12,7 @@ namespace WarcraftLegacies.Source.Researches
   public sealed class Revenants : Research
   {
     /// <inheritdoc />
-    public Revenants(int researchTypeId) : base(researchTypeId)
+    public Revenants(int researchTypeId, int goldCost, int lumberCost) : base(researchTypeId, goldCost, lumberCost)
     {
     }
     
@@ -31,7 +30,6 @@ namespace WarcraftLegacies.Source.Researches
       GetTriggerPlayer().GetFaction()?.ModObjectLimit(Constants.UNIT_UABO_ABOMINATION_SCOURGE, Faction.UNLIMITED);
       GetTriggerPlayer().GetFaction()?.ModObjectLimit(Constants.UNIT_N009_REVENANT_SCOURGE, -Faction.UNLIMITED);
       SetPlayerAbilityAvailable(researchingPlayer, Constants.ABILITY_S006_CHAOS_SCOURGE_ABOMINATION, true);
-      Console.WriteLine($"Unresearching {GetObjectName(ResearchTypeId)}");
     }
   }
 }
