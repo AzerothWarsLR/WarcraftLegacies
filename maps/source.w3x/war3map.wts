@@ -5068,6 +5068,12 @@ STRING 845
 Produces Draenei units as well as offering upgrades for Draenei units.
 }
 
+STRING 846
+// Units: h057 (Galley), Tip (Tooltip - Basic)
+{
+Build Galley
+}
+
 STRING 847
 // Units: ndgt (Kirin Tor Tower), EditorSuffix (Name - Editor Suffix)
 {
@@ -5936,6 +5942,12 @@ STRING 990
 W
 }
 
+STRING 991
+// Units: h057 (Galley), Ubertip (Tooltip - Extended)
+{
+Long range medium ship.|n|r|n|cffffcc00Attacks land and air units.|r |nStrong versus Fireships, Weak versus Frigates.|n
+}
+
 STRING 992
 // Units: hdhw (Dragonhawk Rider), EditorSuffix (Name - Editor Suffix)
 {
@@ -5978,6 +5990,12 @@ STRING 998
 Train Gyrocopter
 }
 
+STRING 999
+// Units: h0AM (Fireship), Tip (Tooltip - Basic)
+{
+Build Fireship
+}
+
 STRING 1000
 // Units: o035 (Improved Watch Tower), Hotkey (Hotkey)
 {
@@ -6002,10 +6020,22 @@ STRING 1003
 Q
 }
 
+STRING 1004
+// Units: h0AM (Fireship), Ubertip (Tooltip - Extended)
+{
+Short range medium ship.|n|r|n|cffffcc00Attacks land units.|r|nStrong versus Frigates, Weak to Galleys.
+}
+
 STRING 1005
 // Units: n0AO (Way Gate), Hotkey (Hotkey)
 {
 F
+}
+
+STRING 1006
+// Units: h0AN (Juggernaut), Tip (Tooltip - Basic)
+{
+Build Juggernaut
 }
 
 STRING 1007
@@ -6470,6 +6500,12 @@ STRING 1083
 Lieutenant of the Watchers, Naisha is a strong leader and close confidant to Maeiv. She is the shield of the underside of the Sentinels and the rest of the Kaldorei
 }
 
+STRING 1084
+// Units: h0AN (Juggernaut), Ubertip (Tooltip - Extended)
+{
+Dominating heavy ship.|n|r|n|cffffcc00Attacks land units.|r |nStrong versus every Ship, Weak versus Frigates on equal ressources.|n
+}
+
 STRING 1085
 // Units: Huth (Leader of the Silver Hand), Hotkey (Hotkey)
 {
@@ -6530,6 +6566,12 @@ STRING 1094
 Airborne archer of the Sentinels who strikes multiple foes.|n|cfff5962dAbilities:|R Multi Shot|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land and air units.|r
 }
 
+STRING 1095
+// Units: h0AO (Bombard), Tip (Tooltip - Basic)
+{
+Build Bombard
+}
+
 STRING 1096
 // Units: efon (Treant), Tip (Tooltip - Basic)
 {
@@ -6540,6 +6582,12 @@ STRING 1097
 // Units: efon (Treant), Ubertip (Tooltip - Extended)
 {
 Basic Wooden warrior |n|n|cffffcc00Attacks land units.|r
+}
+
+STRING 1098
+// Units: h0AO (Bombard), Ubertip (Tooltip - Extended)
+{
+Long range siege heavy ship.|n|r|n|cffffcc00Attacks land units and Control Points.|r |nStrong versus Buildings, Weak versus Ships.|n
 }
 
 STRING 1099
@@ -6576,6 +6624,12 @@ STRING 1104
 // Units: edtm (Druid of the Talon), Ubertip (Tooltip - Extended)
 {
 Maneuverable spellcaster. Casts Faerie Fire and Night Elf Form.|n|n|cffffcc00Attacks air units.|r
+}
+
+STRING 1105
+// Units: h0AP (Frigate), Ubertip (Tooltip - Extended)
+{
+Standard medium ship.|n|r|n|cffffcc00Attacks land units.|r |nStrong versus Galleys, Weak versus Fire Ships.|n
 }
 
 STRING 1106
@@ -8755,12 +8809,6 @@ STRING 1468
 W
 }
 
-STRING 1469
-// Units: h057 (Galley), Tip (Tooltip - Basic)
-{
-Build Destroyer
-}
-
 STRING 1470
 // Units: hdes (Destroyer), Ubertip (Tooltip - Extended)
 {
@@ -9289,12 +9337,6 @@ STRING 1557
 renw
 }
 
-STRING 1558
-// Units: h0AM (Fireship), Tip (Tooltip - Basic)
-{
-Build Destroyer
-}
-
 STRING 1559
 // Units: okod (Kodo Beast), EditorSuffix (Name - Editor Suffix)
 {
@@ -9599,6 +9641,12 @@ STRING 1609
 // Units: o000 (Silithid Colossus), Hotkey (Hotkey)
 {
 W
+}
+
+STRING 1610
+// Units: h0AQ (Boarding Vessel), Tip (Tooltip - Basic)
+{
+Build Boarding Vessel
 }
 
 STRING 1611
@@ -11737,10 +11785,22 @@ STRING 1966
 Multishot
 }
 
+STRING 1967
+// Units: h0AQ (Boarding Vessel), Ubertip (Tooltip - Extended)
+{
+Specialized medium ship.|n|cfff5962dAbilities:|R Load and unlock units, Boarding|n|r|n|cffffcc00Attacks land units.|r|nStrong versus heavy ships, Weak to Scout Ships.
+}
+
 STRING 1968
 // Units: n08K (Feral Wolf), Name (Name)
 {
 Feral Wolf
+}
+
+STRING 1969
+// Units: h0AR (Scout Ship), Ubertip (Tooltip - Extended)
+{
+Small scout ship.|n|cfff5962dAbilities:|R Incendiary Arrows|n|r|n|cffffcc00Attacks land and air units.|r |nStrong versus Boarding Ships, Weak versus every other Ship.
 }
 
 STRING 1970
@@ -12151,6 +12211,12 @@ STRING 2037
 A
 }
 
+STRING 2038
+// Abilities: A0ZZ (Incendiary Arrows), Tip (Tooltip - Normal)
+{
+Incendiary Arrows
+}
+
 STRING 2039
 // Abilities: A07Z (Lightbringer's Strength), Researchubertip (Tooltip - Learn - Extended)
 {
@@ -12551,12 +12617,6 @@ STRING 2105
 // Units: n07D (Maiden of Dominance Demon Gate), Tip (Tooltip - Basic)
 {
 Upgrade to Maiden of Dominance Demon Gate
-}
-
-STRING 2106
-// Units: h057 (Galley), Ubertip (Tooltip - Extended)
-{
-Pride of the Alliance Navy, and defender of the seas.|n|cfff5962dAbilities:|R Board, Fishing Nets|n|r|n|cffffcc00Attacks land and air units.|r
 }
 
 STRING 2107
@@ -13563,12 +13623,6 @@ STRING 2274
 // Units: n0CC (Shadowforge Titan), Tip (Tooltip - Basic)
 {
 Train Shadowforge Titan
-}
-
-STRING 2275
-// Units: h0AN (Juggernaut), Tip (Tooltip - Basic)
-{
-Build Alliance Battleship
 }
 
 STRING 2276
@@ -15733,6 +15787,12 @@ STRING 2636
 // Units: n00C (Rune Priest), Tip (Tooltip - Basic)
 {
 Train Rune Priest
+}
+
+STRING 2637
+// Abilities: A0ZZ (Incendiary Arrows), Name (Name)
+{
+Incendiary Arrows
 }
 
 STRING 2638
@@ -22428,12 +22488,6 @@ STRING 3767
 Zuluhed The Whacked
 }
 
-STRING 3768
-// Units: h0AM (Fireship), Ubertip (Tooltip - Extended)
-{
-Pride of the Alliance Navy, and defender of the seas.|n|cfff5962dAbilities:|R Board, Fishing Nets|n|r|n|cffffcc00Attacks land and air units.|r
-}
-
 STRING 3769
 // Units: hbot (Alliance Transport Ship), Ubertip (Tooltip - Extended)
 {
@@ -29099,12 +29153,6 @@ STRING 4879
 // Upgrades: R048 (Marksmanship), Ubertip (Tooltip - Extended)
 {
 Improves Dryads' Slow Poison by increasing its damage dealt per second to <A0JL,DataA3> and duration to <A0JL,Dur3> seconds.
-}
-
-STRING 4880
-// Units: h0AO (Bombard), Tip (Tooltip - Basic)
-{
-Build Alliance Battleship
 }
 
 STRING 4881
@@ -45027,12 +45075,6 @@ STRING 7530
 Ancient Combat Expertise
 }
 
-STRING 7531
-// Units: h0AN (Juggernaut), Ubertip (Tooltip - Extended)
-{
-Massive vessel of naval domination for the Alliance.|n|cfff5962dAbilities:|R Repair|n|n|cff99b4d1Can only build 6.|r|n|cffffcc00Attacks land units.|r
-}
-
 STRING 7532
 // Abilities: A0UY (Bash), EditorSuffix (Editor Suffix)
 {
@@ -54783,12 +54825,6 @@ STRING 9160
 Q
 }
 
-STRING 9161
-// Units: h0AP (Frigate), Ubertip (Tooltip - Extended)
-{
-Pride of the Alliance Navy, and defender of the seas.|n|cfff5962dAbilities:|R Board, Fishing Nets|n|r|n|cffffcc00Attacks land and air units.|r
-}
-
 STRING 9162
 // Abilities: A0PW (Entangling Roots), Hotkey (Hotkey - Normal)
 {
@@ -58431,12 +58467,6 @@ STRING 9769
 (Fel Horde/FW/Warso- Bonebreaker, Grunts, Raiders)
 }
 
-STRING 9770
-// Units: h0AQ (Boarding Vessel), Tip (Tooltip - Basic)
-{
-Build Destroyer
-}
-
 STRING 9771
 // Abilities: A02Y (War Plating), Name (Name)
 {
@@ -60445,12 +60475,6 @@ STRING 10105
 // Abilities: A0G4 (Flame Burst), Researchhotkey (Hotkey - Learn)
 {
 Q
-}
-
-STRING 10106
-// Units: h0AQ (Boarding Vessel), Ubertip (Tooltip - Extended)
-{
-Pride of the Alliance Navy, and defender of the seas.|n|cfff5962dAbilities:|R Board, Fishing Nets|n|r|n|cffffcc00Attacks land and air units.|r
 }
 
 STRING 10107
@@ -63482,12 +63506,6 @@ STRING 10612
 // Abilities: A0B0 (Permanent Immolation), Ubertip (Tooltip - Normal - Extended)
 {
 Burns nearby enemy units for 20 points of damage per second.
-}
-
-STRING 10613
-// Units: h0AR (Scout Ship), Ubertip (Tooltip - Extended)
-{
-Pride of the Alliance Navy, and defender of the seas.|n|cfff5962dAbilities:|R Board, Fishing Nets|n|r|n|cffffcc00Attacks land and air units.|r
 }
 
 STRING 10614
@@ -72658,7 +72676,7 @@ D
 }
 
 STRING 12142
-// Abilities: A0ZZ (Fire Arrows), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A0ZZ (Incendiary Arrows), Ubertip (Tooltip - Normal - Extended)
 {
 Increases damage dealt to enemy Boarding Vessels
 }
@@ -72964,7 +72982,7 @@ Send emissaries to rally the Blackrock Clan to the Fel Horde.|n|n|cffffcc00Requi
 }
 
 STRING 12193
-// Abilities: A0ZZ (Fire Arrows), Tip (Tooltip - Normal)
+// Buffs/Effects: B04F (Fire Arrows), EditorName (Name (Editor Only))
 {
 Fire Arrows
 }
@@ -73417,12 +73435,6 @@ STRING 12268
 // Abilities: A039 (Regeneration), Tip (Tooltip - Normal)
 {
 Regeneration
-}
-
-STRING 12269
-// Abilities: A0ZZ (Fire Arrows), Name (Name)
-{
-Fire Arrows
 }
 
 STRING 12270
@@ -80425,12 +80437,6 @@ STRING 13436
 // Buffs/Effects: B04F (Fire Arrows), Buffubertip (Tooltip - Extended)
 {
 This unit is burning
-}
-
-STRING 13437
-// Buffs/Effects: B04F (Fire Arrows), EditorName (Name (Editor Only))
-{
-Fire Arrows
 }
 
 STRING 13438
@@ -99201,12 +99207,6 @@ STRING 16692
 // Abilities: A06L (Mana Shield), Tip (Tooltip - Normal)
 {
 Activate Mana Shield - [|cffffcc00Level 4|r]
-}
-
-STRING 16694
-// Units: h0AO (Bombard), Ubertip (Tooltip - Extended)
-{
-Massive vessel of naval domination for the Alliance.|n|cfff5962dAbilities:|R Repair|n|n|cff99b4d1Can only build 6.|r|n|cffffcc00Attacks land units.|r
 }
 
 STRING 16695
