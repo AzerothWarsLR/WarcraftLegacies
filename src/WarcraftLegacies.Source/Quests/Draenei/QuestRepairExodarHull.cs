@@ -54,7 +54,7 @@ namespace WarcraftLegacies.Source.Quests.Draenei
         whichFaction.Player.RescueGroup(_rescueUnits);
       else
         Player(PLAYER_NEUTRAL_AGGRESSIVE).RescueGroup(_rescueUnits);
-      SetUnitTimeScale(LegendDraenei.LegendExodar.Unit, 100);
+      SetUnitTimeScale(LegendDraenei.LegendExodar.Unit, 1);
     }
 
     /// <inheritdoc/>
