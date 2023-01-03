@@ -43,9 +43,6 @@ Once you have reclaimed Gilneas, open Greymane's Gate and march North to assist 
 
       //Units
       Gilneas.ModObjectLimit(FourCC("hpea"), Faction.UNLIMITED); //Peasant
-      Gilneas.ModObjectLimit(FourCC("hbot"), Faction.UNLIMITED); //Alliance Transport Ship
-      Gilneas.ModObjectLimit(FourCC("hdes"), Faction.UNLIMITED); //Alliance Frigate
-      Gilneas.ModObjectLimit(FourCC("hbsh"), 6); //Alliance Battle Ship
       Gilneas.ModObjectLimit(FourCC("n06K"), Faction.UNLIMITED); //Wildsoul
       Gilneas.ModObjectLimit(FourCC("h04M"), Faction.UNLIMITED); //Cleric
       Gilneas.ModObjectLimit(FourCC("h04E"), Faction.UNLIMITED); //Protector
@@ -63,6 +60,16 @@ Once you have reclaimed Gilneas, open Greymane's Gate and march North to assist 
       Gilneas.ModObjectLimit(FourCC("Ewar"), 1); //Tess
       Gilneas.ModObjectLimit(FourCC("Hhkl"), 1); //Genn
       Gilneas.ModObjectLimit(FourCC("Hpb2"), 1); //Darius
+
+      //Ships
+      Gilneas.ModObjectLimit(FourCC("hbot"), Faction.UNLIMITED); //Alliance Transport Ship
+      Gilneas.ModObjectLimit(FourCC("h0AR"), Faction.UNLIMITED); //Alliance Scout
+      Gilneas.ModObjectLimit(FourCC("h0AX"), Faction.UNLIMITED); //Alliance Frigate
+      Gilneas.ModObjectLimit(FourCC("h0B3"), Faction.UNLIMITED); //Alliance Fireship
+      Gilneas.ModObjectLimit(FourCC("h0B0"), Faction.UNLIMITED); //Alliance Galley
+      Gilneas.ModObjectLimit(FourCC("h0B6"), Faction.UNLIMITED); //Alliance Boarding
+      Gilneas.ModObjectLimit(FourCC("h0AN"), Faction.UNLIMITED); //Alliance Juggernaut
+      Gilneas.ModObjectLimit(FourCC("h0B7"), Faction.UNLIMITED); //Alliance Bombard
 
       //Upgrades
       Gilneas.ModObjectLimit(FourCC("R04O"), Faction.UNLIMITED); //Cleric Training

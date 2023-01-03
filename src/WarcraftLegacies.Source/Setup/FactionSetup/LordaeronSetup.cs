@@ -51,9 +51,6 @@ Burn these infected buildings to weaken the Cult's power."
 
       //Units
       Lordaeron.ModObjectLimit(FourCC("hpea"), Faction.UNLIMITED); //Peasant
-      Lordaeron.ModObjectLimit(FourCC("hbot"), Faction.UNLIMITED); //Alliance Transport Ship
-      Lordaeron.ModObjectLimit(FourCC("hdes"), Faction.UNLIMITED); //Alliance Frigate
-      Lordaeron.ModObjectLimit(FourCC("hbsh"), 6); //Alliance Battle Ship
       Lordaeron.ModObjectLimit(FourCC("hfoo"), Faction.UNLIMITED); //Footman
       Lordaeron.ModObjectLimit(FourCC("hkni"), Faction.UNLIMITED); //Knight
       Lordaeron.ModObjectLimit(FourCC("nchp"), Faction.UNLIMITED); //Cleric
@@ -66,6 +63,16 @@ Burn these infected buildings to weaken the Cult's power."
       Lordaeron.ModObjectLimit(FourCC("e017"), 8); //Scorpion
       Lordaeron.ModObjectLimit(FourCC("o02F"), 6); //Mangonel
       Lordaeron.ModObjectLimit(FourCC("h09Y"), 2); //Throne Guard
+
+      //Ships
+      Lordaeron.ModObjectLimit(FourCC("hbot"), Faction.UNLIMITED); //Alliance Transport Ship
+      Lordaeron.ModObjectLimit(FourCC("h0AR"), Faction.UNLIMITED); //Alliance Scout
+      Lordaeron.ModObjectLimit(FourCC("h0AX"), Faction.UNLIMITED); //Alliance Frigate
+      Lordaeron.ModObjectLimit(FourCC("h0B3"), Faction.UNLIMITED); //Alliance Fireship
+      Lordaeron.ModObjectLimit(FourCC("h0B0"), Faction.UNLIMITED); //Alliance Galley
+      Lordaeron.ModObjectLimit(FourCC("h0B6"), Faction.UNLIMITED); //Alliance Boarding
+      Lordaeron.ModObjectLimit(FourCC("h0AN"), Faction.UNLIMITED); //Alliance Juggernaut
+      Lordaeron.ModObjectLimit(FourCC("h0B7"), Faction.UNLIMITED); //Alliance Bombard
 
       //Demis
       Lordaeron.ModObjectLimit(FourCC("h012"), 1); //Falric

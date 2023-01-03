@@ -50,9 +50,6 @@ The Plague of Undeath is coming, and your allies to the South will need your hel
 
       //Units
       Quelthalas.ModObjectLimit(FourCC("nbee"), Faction.UNLIMITED); //Elven Worker
-      Quelthalas.ModObjectLimit(FourCC("hbot"), Faction.UNLIMITED); //Alliance Transport Ship
-      Quelthalas.ModObjectLimit(FourCC("hdes"), Faction.UNLIMITED); //Alliance Frigate
-      Quelthalas.ModObjectLimit(FourCC("hbsh"), 6); //Alliance Battle Ship
       Quelthalas.ModObjectLimit(FourCC("hhes"), Faction.UNLIMITED); //Elven Warrior
       Quelthalas.ModObjectLimit(FourCC("hmpr"), Faction.UNLIMITED); //Priest
       Quelthalas.ModObjectLimit(FourCC("hsor"), Faction.UNLIMITED); //Sorceress
@@ -63,6 +60,16 @@ The Plague of Undeath is coming, and your allies to the South will need your hel
       Quelthalas.ModObjectLimit(FourCC("n063"), 12); //Magus
       Quelthalas.ModObjectLimit(FourCC("hspt"), Faction.UNLIMITED); //Spell Breaker
       Quelthalas.ModObjectLimit(FourCC("u00J"), 2); //Arcane Wagon
+
+      //Ships
+      Quelthalas.ModObjectLimit(FourCC("hbot"), Faction.UNLIMITED); //Alliance Transport Ship
+      Quelthalas.ModObjectLimit(FourCC("h0AR"), Faction.UNLIMITED); //Alliance Scout
+      Quelthalas.ModObjectLimit(FourCC("h0AX"), Faction.UNLIMITED); //Alliance Frigate
+      Quelthalas.ModObjectLimit(FourCC("h0B3"), Faction.UNLIMITED); //Alliance Fireship
+      Quelthalas.ModObjectLimit(FourCC("h0B0"), Faction.UNLIMITED); //Alliance Galley
+      Quelthalas.ModObjectLimit(FourCC("h0B6"), Faction.UNLIMITED); //Alliance Boarding
+      Quelthalas.ModObjectLimit(FourCC("h0AN"), Faction.UNLIMITED); //Alliance Juggernaut
+      Quelthalas.ModObjectLimit(FourCC("h0B7"), Faction.UNLIMITED); //Alliance Bombard
 
       //Demi-heroes
       Quelthalas.ModObjectLimit(FourCC("n075"), 1); //Vareesa

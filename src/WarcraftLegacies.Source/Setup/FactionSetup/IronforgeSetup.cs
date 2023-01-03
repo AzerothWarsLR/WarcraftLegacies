@@ -54,9 +54,6 @@ Stormwind is preparing for the Fel Horde invasion in the South, muster the thron
 
       //Units
       Ironforge.ModObjectLimit(FourCC("h019"), Faction.UNLIMITED); //Dwarven Worker
-      Ironforge.ModObjectLimit(FourCC("hbot"), Faction.UNLIMITED); //Alliance Transport Ship
-      Ironforge.ModObjectLimit(FourCC("hdes"), Faction.UNLIMITED); //Alliance Frigate
-      Ironforge.ModObjectLimit(FourCC("hbsh"), 6); //Alliance Battle Ship
       Ironforge.ModObjectLimit(FourCC("hrif"), Faction.UNLIMITED); //Rifleman
       Ironforge.ModObjectLimit(FourCC("hmtm"), 9); //Mortar Team
       Ironforge.ModObjectLimit(FourCC("hgyr"), 12); //Flying Machine
@@ -71,6 +68,16 @@ Stormwind is preparing for the Fel Horde invasion in the South, muster the thron
       Ironforge.ModObjectLimit(FourCC("h01M"), 1); //Baelgun
       Ironforge.ModObjectLimit(FourCC("H00S"), 1); //Magni
       Ironforge.ModObjectLimit(FourCC("Hmbr"), 1); //Muradin
+
+      //Ships
+      Ironforge.ModObjectLimit(FourCC("hbot"), Faction.UNLIMITED); //Alliance Transport Ship
+      Ironforge.ModObjectLimit(FourCC("h0AR"), Faction.UNLIMITED); //Alliance Scout
+      Ironforge.ModObjectLimit(FourCC("h0AX"), Faction.UNLIMITED); //Alliance Frigate
+      Ironforge.ModObjectLimit(FourCC("h0B3"), Faction.UNLIMITED); //Alliance Fireship
+      Ironforge.ModObjectLimit(FourCC("h0B0"), Faction.UNLIMITED); //Alliance Galley
+      Ironforge.ModObjectLimit(FourCC("h0B6"), Faction.UNLIMITED); //Alliance Boarding
+      Ironforge.ModObjectLimit(FourCC("h0AN"), Faction.UNLIMITED); //Alliance Juggernaut
+      Ironforge.ModObjectLimit(FourCC("h0B7"), Faction.UNLIMITED); //Alliance Bombard
 
       //Upgrades
       Ironforge.ModObjectLimit(FourCC("R03H"), Faction.UNLIMITED); //Engineering Adept Training

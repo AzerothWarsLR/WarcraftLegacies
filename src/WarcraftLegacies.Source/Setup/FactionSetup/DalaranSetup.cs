@@ -49,9 +49,6 @@ Your mages are the finest in Azeroth, be sure to utilize them alongside your her
 
       //Units
       Dalaran.ModObjectLimit(FourCC("h022"), Faction.UNLIMITED); //Shaper
-      Dalaran.ModObjectLimit(FourCC("hbot"), Faction.UNLIMITED); //Alliance Transport Ship
-      Dalaran.ModObjectLimit(FourCC("hdes"), Faction.UNLIMITED); //Alliance Frigate
-      Dalaran.ModObjectLimit(FourCC("hbsh"), 6); //Alliance Battle Ship
       Dalaran.ModObjectLimit(FourCC("nhym"), Faction.UNLIMITED); //Hydromancer
       Dalaran.ModObjectLimit(FourCC("h032"), Faction.UNLIMITED); //Battlemage
       Dalaran.ModObjectLimit(FourCC("h02D"), Faction.UNLIMITED); //Geomancer
@@ -61,6 +58,16 @@ Your mages are the finest in Azeroth, be sure to utilize them alongside your her
       Dalaran.ModObjectLimit(FourCC("n03E"), Faction.UNLIMITED); //Pyromancer
       Dalaran.ModObjectLimit(FourCC("n0AK"), Faction.UNLIMITED); //Sludge Flinger
       Dalaran.ModObjectLimit(FourCC("o02U"), 6); //Crystal Artillery
+
+      //Ships
+      Dalaran.ModObjectLimit(FourCC("hbot"), Faction.UNLIMITED); //Alliance Transport Ship
+      Dalaran.ModObjectLimit(FourCC("h0AR"), Faction.UNLIMITED); //Alliance Scout
+      Dalaran.ModObjectLimit(FourCC("h0AX"), Faction.UNLIMITED); //Alliance Frigate
+      Dalaran.ModObjectLimit(FourCC("h0B3"), Faction.UNLIMITED); //Alliance Fireship
+      Dalaran.ModObjectLimit(FourCC("h0B0"), Faction.UNLIMITED); //Alliance Galley
+      Dalaran.ModObjectLimit(FourCC("h0B6"), Faction.UNLIMITED); //Alliance Boarding
+      Dalaran.ModObjectLimit(FourCC("h0AN"), Faction.UNLIMITED); //Alliance Juggernaut
+      Dalaran.ModObjectLimit(FourCC("h0B7"), Faction.UNLIMITED); //Alliance Bombard
 
 
       //Demi-heroes

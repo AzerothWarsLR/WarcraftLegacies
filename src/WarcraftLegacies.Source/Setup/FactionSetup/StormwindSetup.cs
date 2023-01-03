@@ -65,9 +65,16 @@ Make sure to communicate with your Dwarven and Kul'tiran allies, as they will be
       Stormwind.ModObjectLimit(FourCC("h00J"), Faction.UNLIMITED); //Clergyman
       Stormwind.ModObjectLimit(FourCC("n06N"), 6); //Gyrobomber
       Stormwind.ModObjectLimit(FourCC("n093"), Faction.UNLIMITED); //Chaplain
+
+      //Ships
       Stormwind.ModObjectLimit(FourCC("hbot"), Faction.UNLIMITED); //Alliance Transport Ship
-      Stormwind.ModObjectLimit(FourCC("hdes"), Faction.UNLIMITED); //Alliance Frigate
-      Stormwind.ModObjectLimit(FourCC("hbsh"), 6); //Alliance Battle Ship
+      Stormwind.ModObjectLimit(FourCC("h0AR"), Faction.UNLIMITED); //Alliance Scout
+      Stormwind.ModObjectLimit(FourCC("h0AX"), Faction.UNLIMITED); //Alliance Frigate
+      Stormwind.ModObjectLimit(FourCC("h0B3"), Faction.UNLIMITED); //Alliance Fireship
+      Stormwind.ModObjectLimit(FourCC("h0B0"), Faction.UNLIMITED); //Alliance Galley
+      Stormwind.ModObjectLimit(FourCC("h0B6"), Faction.UNLIMITED); //Alliance Boarding
+      Stormwind.ModObjectLimit(FourCC("h0AN"), Faction.UNLIMITED); //Alliance Juggernaut
+      Stormwind.ModObjectLimit(FourCC("h0B7"), Faction.UNLIMITED); //Alliance Bombard
       Stormwind.ModObjectLimit(FourCC("h060"), 3); //Arathor Flagship
 
 

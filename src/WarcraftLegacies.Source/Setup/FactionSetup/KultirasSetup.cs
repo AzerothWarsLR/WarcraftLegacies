@@ -50,9 +50,6 @@ Once you have established your kingdom, set sail to help your allies on the main
 
       //Units
       Kultiras.ModObjectLimit(FourCC("h01E"), Faction.UNLIMITED); //Deckhand
-      Kultiras.ModObjectLimit(FourCC("hbot"), Faction.UNLIMITED); //Alliance Transport Ship
-      Kultiras.ModObjectLimit(FourCC("hdes"), Faction.UNLIMITED); //Alliance Frigate
-      Kultiras.ModObjectLimit(FourCC("h04J"), 5); //Warship
       Kultiras.ModObjectLimit(FourCC("e007"), Faction.UNLIMITED); //Thornspeaker
       Kultiras.ModObjectLimit(FourCC("n09A"), 12); //Ember Cleric
       Kultiras.ModObjectLimit(FourCC("n09B"), 8); //Witch Hunter
@@ -68,6 +65,16 @@ Once you have established your kingdom, set sail to help your allies on the main
       Kultiras.ModObjectLimit(FourCC("h04O"), 12); //Bomber
       Kultiras.ModObjectLimit(FourCC("h04W"), 3); //Siege Tank
       Kultiras.ModObjectLimit(FourCC("h0A0"), 8); //Fusillier
+
+      //Ships
+      Kultiras.ModObjectLimit(FourCC("hbot"), Faction.UNLIMITED); //Alliance Transport Ship
+      Kultiras.ModObjectLimit(FourCC("h0AR"), Faction.UNLIMITED); //Alliance Scout
+      Kultiras.ModObjectLimit(FourCC("h0AX"), Faction.UNLIMITED); //Alliance Frigate
+      Kultiras.ModObjectLimit(FourCC("h0B3"), Faction.UNLIMITED); //Alliance Fireship
+      Kultiras.ModObjectLimit(FourCC("h0B0"), Faction.UNLIMITED); //Alliance Galley
+      Kultiras.ModObjectLimit(FourCC("h0B6"), Faction.UNLIMITED); //Alliance Boarding
+      Kultiras.ModObjectLimit(FourCC("h0AN"), Faction.UNLIMITED); //Alliance Juggernaut
+      Kultiras.ModObjectLimit(FourCC("h0B7"), Faction.UNLIMITED); //Alliance Bombard
 
       //Upgrades
       Kultiras.ModObjectLimit(FourCC("R001"), Faction.UNLIMITED); //Rising Tides
