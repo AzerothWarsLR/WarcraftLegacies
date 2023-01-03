@@ -53,9 +53,16 @@ The Horde is gathering to burn Ashenvale forest and all within, gather your forc
       Druids.ModObjectLimit(FourCC("e00N"), 6); //Keeper of the Grove
       Druids.ModObjectLimit(FourCC("n05H"), Faction.UNLIMITED); //Furbolg
       Druids.ModObjectLimit(FourCC("n065"), 6); //Green Dragon
+
+      //Ships
       Druids.ModObjectLimit(FourCC("etrs"), Faction.UNLIMITED); //Night Elf Transport Ship
-      Druids.ModObjectLimit(FourCC("edes"), Faction.UNLIMITED); //Night Elf Frigate
-      Druids.ModObjectLimit(FourCC("ebsh"), 6); //Night Elf Battleship
+      Druids.ModObjectLimit(FourCC("h0AU"), Faction.UNLIMITED); // Scout
+      Druids.ModObjectLimit(FourCC("h0AV"), Faction.UNLIMITED); // Frigate
+      Druids.ModObjectLimit(FourCC("h0B1"), Faction.UNLIMITED); // Fireship
+      Druids.ModObjectLimit(FourCC("h057"), Faction.UNLIMITED); // Galley
+      Druids.ModObjectLimit(FourCC("h0B4"), Faction.UNLIMITED); // Boarding
+      Druids.ModObjectLimit(FourCC("h0BA"), Faction.UNLIMITED); // Juggernaut
+      Druids.ModObjectLimit(FourCC("h0B8"), Faction.UNLIMITED); // Bombard
 
       Druids.ModObjectLimit(FourCC("Ecen"), 1); //Cenarius
       Druids.ModObjectLimit(FourCC("E00H"), 1); //Cenarius

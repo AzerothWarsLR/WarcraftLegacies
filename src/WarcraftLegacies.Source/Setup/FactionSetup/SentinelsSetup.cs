@@ -54,10 +54,17 @@ Once you have secured your holdings, gather your army and destroy the orc invade
       Sentinels.ModObjectLimit(FourCC("ehpr"), 6); //Hippogryph Rider
       Sentinels.ModObjectLimit(FourCC("n034"), 12); //Guild Ranger
       Sentinels.ModObjectLimit(FourCC("nwat"), Faction.UNLIMITED); //Nightblade
-      Sentinels.ModObjectLimit(FourCC("etrs"), Faction.UNLIMITED); //Night Elf Transport Ship
-      Sentinels.ModObjectLimit(FourCC("edes"), Faction.UNLIMITED); //Night Elf Frigate
-      Sentinels.ModObjectLimit(FourCC("ebsh"), 6); //Night Elf Battleship
       Sentinels.ModObjectLimit(FourCC("nnmg"), 12); //Redeemed Highborne
+
+      //Ships
+      Sentinels.ModObjectLimit(FourCC("etrs"), Faction.UNLIMITED); //Night Elf Transport Ship
+      Sentinels.ModObjectLimit(FourCC("h0AU"), Faction.UNLIMITED); // Scout
+      Sentinels.ModObjectLimit(FourCC("h0AV"), Faction.UNLIMITED); // Frigate
+      Sentinels.ModObjectLimit(FourCC("h0B1"), Faction.UNLIMITED); // Fireship
+      Sentinels.ModObjectLimit(FourCC("h057"), Faction.UNLIMITED); // Galley
+      Sentinels.ModObjectLimit(FourCC("h0B4"), Faction.UNLIMITED); // Boarding
+      Sentinels.ModObjectLimit(FourCC("h0BA"), Faction.UNLIMITED); // Juggernaut
+      Sentinels.ModObjectLimit(FourCC("h0B8"), Faction.UNLIMITED); // Bombard
 
       Sentinels.ModObjectLimit(FourCC("e009"), 1); //Naisha
       Sentinels.ModObjectLimit(FourCC("Etyr"), 1); //Tyrande

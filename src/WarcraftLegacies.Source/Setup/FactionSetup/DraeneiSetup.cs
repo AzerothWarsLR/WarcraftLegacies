@@ -50,9 +50,15 @@ Prepare to restore the Exodar to it's former glory, it will be a long process, b
       Draenei.ModObjectLimit(FourCC("h09U"), 4); //Elekk Knight
       Draenei.ModObjectLimit(FourCC("u02H"), 6); //Nether Ray
 
+      //Ships
       Draenei.ModObjectLimit(FourCC("etrs"), Faction.UNLIMITED); //Night Elf Transport Ship
-      Draenei.ModObjectLimit(FourCC("edes"), Faction.UNLIMITED); //Night Elf Frigate
-      Draenei.ModObjectLimit(FourCC("ebsh"), 6); //Night Elf Battleship
+      Draenei.ModObjectLimit(FourCC("h0AU"), Faction.UNLIMITED); // Scout
+      Draenei.ModObjectLimit(FourCC("h0AV"), Faction.UNLIMITED); // Frigate
+      Draenei.ModObjectLimit(FourCC("h0B1"), Faction.UNLIMITED); // Fireship
+      Draenei.ModObjectLimit(FourCC("h057"), Faction.UNLIMITED); // Galley
+      Draenei.ModObjectLimit(FourCC("h0B4"), Faction.UNLIMITED); // Boarding
+      Draenei.ModObjectLimit(FourCC("h0BA"), Faction.UNLIMITED); // Juggernaut
+      Draenei.ModObjectLimit(FourCC("h0B8"), Faction.UNLIMITED); // Bombard
 
       Draenei.ModObjectLimit(FourCC("H09S"), 1); //Maraad
       Draenei.ModObjectLimit(FourCC("E01I"), 1); //Velen

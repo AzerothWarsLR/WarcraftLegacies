@@ -1753,6 +1753,12 @@ STRING 293
 Summon Haunted Harbor
 }
 
+STRING 294
+// Units: u01A (Shipyard), Ubertip (Tooltip - Extended)
+{
+Boat construction facility.|n|cfff5962dTrains:|R Transport, Scout, Frigate, Fireship, Galley, Boarding Vessel, Juggernaut, Bombard|R|n|n|cff00c4c4Cannot be built near small inland water areas.
+}
+
 STRING 295
 // Units: unec (Necromancer), EditorSuffix (Name - Editor Suffix)
 {
@@ -6444,12 +6450,6 @@ STRING 1075
 // Units: eshy (Kaldorei Docks), Tip (Tooltip - Basic)
 {
 Build Kaldorei Docks
-}
-
-STRING 1076
-// Units: eshy (Kaldorei Docks), Ubertip (Tooltip - Extended)
-{
-Boat construction facility of the Kaldorei.|n|cfff5962dTrains: |RNight Elf Transport Ships, Night Elf Frigates, Night Elf Battleships|n|cfff5962dResearches:|R Improved Sails, Improved Cannons, Fortified Hulls|n|n|cff00c4c4Cannot be built near small inland water areas.|r
 }
 
 STRING 1077
@@ -11792,7 +11792,7 @@ Multishot
 }
 
 STRING 1967
-// Units: u009 (Shipyard), Ubertip (Tooltip - Extended)
+// Units: eshy (Kaldorei Docks), Ubertip (Tooltip - Extended)
 {
 Boat construction facility.|n|cfff5962dTrains:|R Transport, Scout, Frigate, Fireship, Galley, Boarding Vessel, Juggernaut, Bombard|R|n|n|cff00c4c4Cannot be built near small inland water areas.
 }
@@ -16414,7 +16414,7 @@ STRING 2737
 }
 
 STRING 2738
-// Units: o032 (Shipyard), Ubertip (Tooltip - Extended)
+// Units: u009 (Shipyard), Ubertip (Tooltip - Extended)
 {
 Boat construction facility.|n|cfff5962dTrains:|R Transport, Scout, Frigate, Fireship, Galley, Boarding Vessel, Juggernaut, Bombard|R|n|n|cff00c4c4Cannot be built near small inland water areas.
 }
@@ -16629,6 +16629,12 @@ STRING 2773
 Backbone worker and builder.|n|cfff5962dAbilities:|r Repair, Gather|n|cfff5962dCan Learn:|R Improved Lumber Harvesting|n|n|cffffcc00Attacks land units and trees.
 }
 
+STRING 2774
+// Units: o059 (Shipyard), Ubertip (Tooltip - Extended)
+{
+Boat construction facility.|n|cfff5962dTrains:|R Transport, Scout, Frigate, Fireship, Galley, Boarding Vessel, Juggernaut, Bombard|R|n|n|cff00c4c4Cannot be built near small inland water areas.
+}
+
 STRING 2775
 // Units: h07S (Guard Tower), Hotkey (Hotkey)
 {
@@ -16744,7 +16750,7 @@ Sacrifice
 }
 
 STRING 2794
-// Units: o049 (Golden Dock), Ubertip (Tooltip - Extended)
+// Units: o032 (Shipyard), Ubertip (Tooltip - Extended)
 {
 Boat construction facility.|n|cfff5962dTrains:|R Transport, Scout, Frigate, Fireship, Galley, Boarding Vessel, Juggernaut, Bombard|R|n|n|cff00c4c4Cannot be built near small inland water areas.
 }
@@ -16774,7 +16780,7 @@ Resource harvesting center and producer of Fel Horde enhancements. |n|cfff5962dR
 }
 
 STRING 2799
-// Units: u01A (Shipyard), Ubertip (Tooltip - Extended)
+// Units: o02T (Shipyard), Ubertip (Tooltip - Extended)
 {
 Boat construction facility.|n|cfff5962dTrains:|R Transport, Scout, Frigate, Fireship, Galley, Boarding Vessel, Juggernaut, Bombard|R|n|n|cff00c4c4Cannot be built near small inland water areas.
 }
@@ -16888,7 +16894,7 @@ Build Royal Harbour
 }
 
 STRING 2818
-// Units: o02T (Shipyard), Ubertip (Tooltip - Extended)
+// Units: h07D (Shipyard), Ubertip (Tooltip - Extended)
 {
 Boat construction facility.|n|cfff5962dTrains:|R Transport, Scout, Frigate, Fireship, Galley, Boarding Vessel, Juggernaut, Bombard|R|n|n|cff00c4c4Cannot be built near small inland water areas.
 }
@@ -17459,7 +17465,7 @@ Dalaran Building
 }
 
 STRING 2913
-// Units: h07D (Shipyard), Ubertip (Tooltip - Extended)
+// Units: h077 (Shipyard), Ubertip (Tooltip - Extended)
 {
 Boat construction facility.|n|cfff5962dTrains:|R Transport, Scout, Frigate, Fireship, Galley, Boarding Vessel, Juggernaut, Bombard|R|n|n|cff00c4c4Cannot be built near small inland water areas.
 }
@@ -19724,7 +19730,7 @@ Build Shipyard
 }
 
 STRING 3290
-// Units: o06D (Shipyard), Ubertip (Tooltip - Extended)
+// Units: h076 (Shipyard), Ubertip (Tooltip - Extended)
 {
 Boat construction facility.|n|cfff5962dTrains:|R Transport, Scout, Frigate, Fireship, Galley, Boarding Vessel, Juggernaut, Bombard|R|n|n|cff00c4c4Cannot be built near small inland water areas.
 }
@@ -21574,12 +21580,6 @@ STRING 3598
 // Units: e011 (Kaldorei Docks), Tip (Tooltip - Basic)
 {
 Build Kaldorei Docks
-}
-
-STRING 3599
-// Units: e011 (Kaldorei Docks), Ubertip (Tooltip - Extended)
-{
-Boat construction facility of the Kaldorei.|n|cfff5962dTrains: |RNight Elf Transport Ship, Night Elf Frigate, Night Elf Battleship|n|cfff5962dResearches:|R Improved Sails, Improved Cannons, Fortified Hulls|n|n|cff00c4c4Cannot be built near small inland water areas.|r
 }
 
 STRING 3600
@@ -29225,6 +29225,12 @@ STRING 4873
 // Units: o04S (Trader), Hotkey (Hotkey)
 {
 W
+}
+
+STRING 4874
+// Units: o06D (Shipyard), Ubertip (Tooltip - Extended)
+{
+Boat construction facility.|n|cfff5962dTrains:|R Transport, Scout, Frigate, Fireship, Galley, Boarding Vessel, Juggernaut, Bombard|R|n|n|cff00c4c4Cannot be built near small inland water areas.
 }
 
 STRING 4875
@@ -47871,12 +47877,6 @@ STRING 7978
 This ship has increased sight radius and can detect invisible units.
 }
 
-STRING 7979
-// Units: o059 (Shipyard), Ubertip (Tooltip - Extended)
-{
-Boat construction facility for the Draenei.|n|cfff5962dTrains:|R Transport Ship, Corvette, Cruiser |n|n|cff00c4c4Cannot be built near small inland water areas.|r
-}
-
 STRING 7980
 // Abilities: A11G (Ice Fall), Hotkey (Hotkey - Normal)
 {
@@ -51124,7 +51124,7 @@ Opens the gate.
 }
 
 STRING 8521
-// Upgrades: R08T (Cannibalize), EditorSuffix (Editor Suffix)
+// Upgrades: R025 (Chaos), EditorSuffix (Editor Suffix)
 {
 (Scourge)
 }
@@ -51598,7 +51598,7 @@ Primary structure, used to train Mur'gul Slaves, Royal Guards and receive gather
 }
 
 STRING 8600
-// Units: h077 (Shipyard), Ubertip (Tooltip - Extended)
+// Units: h03H (Shipyard), Ubertip (Tooltip - Extended)
 {
 Boat construction facility.|n|cfff5962dTrains:|R Transport, Scout, Frigate, Fireship, Galley, Boarding Vessel, Juggernaut, Bombard|R|n|n|cff00c4c4Cannot be built near small inland water areas.
 }
@@ -68189,7 +68189,7 @@ Reduces movement speed by 75%, attack rate by 50%, and damage by 50% of a target
 }
 
 STRING 11366
-// Units: h076 (Shipyard), Ubertip (Tooltip - Extended)
+// Units: e011 (Kaldorei Docks), Ubertip (Tooltip - Extended)
 {
 Boat construction facility.|n|cfff5962dTrains:|R Transport, Scout, Frigate, Fireship, Galley, Boarding Vessel, Juggernaut, Bombard|R|n|n|cff00c4c4Cannot be built near small inland water areas.
 }
@@ -82809,7 +82809,7 @@ Research [|cffffcc00C|r] - Stone Form
 }
 
 STRING 13802
-// Upgrades: R025 (Chaos), EditorSuffix (Editor Suffix)
+// Upgrades: R01X (Disease Cloud), EditorSuffix (Editor Suffix)
 {
 (Scourge)
 }
@@ -82917,13 +82917,13 @@ Further increases the attack damage of Ghouls, Crypt Fiends, Zombies, Skeletal A
 }
 
 STRING 13820
-// Upgrades: R01X (Disease Cloud), EditorSuffix (Editor Suffix)
+// Upgrades: R01D (Freezing Breath), EditorSuffix (Editor Suffix)
 {
 (Scourge)
 }
 
 STRING 13821
-// Upgrades: R01D (Freezing Breath), EditorSuffix (Editor Suffix)
+// Upgrades: R00Q (Magic Sentry), EditorSuffix (Editor Suffix)
 {
 (Scourge)
 }
@@ -82941,7 +82941,7 @@ Causes Frost Wyrm attacks to temporarily stop production.
 }
 
 STRING 13824
-// Upgrades: R00Q (Magic Sentry), EditorSuffix (Editor Suffix)
+// Upgrades: R02X (Defend), EditorSuffix (Editor Suffix)
 {
 (Scourge)
 }
@@ -83001,7 +83001,7 @@ STRING 13833
 }
 
 STRING 13834
-// Upgrades: R02X (Defend), EditorSuffix (Editor Suffix)
+// Upgrades: R051 (Necromancer Adept Training,Necromancer Master Training), EditorSuffix (Editor Suffix)
 {
 (Scourge)
 }
@@ -83895,7 +83895,7 @@ Increases Sorceresses' mana capacity, mana regeneration rate, attack damage and 
 }
 
 STRING 13983
-// Upgrades: R051 (Necromancer Adept Training,Necromancer Master Training), EditorSuffix (Editor Suffix)
+// Upgrades: R07I (Necromancer Adept Training,Necromancer Master Training), EditorSuffix (Editor Suffix)
 {
 (Scourge)
 }
@@ -84315,7 +84315,7 @@ D
 }
 
 STRING 14053
-// Upgrades: R07I (Necromancer Adept Training,Necromancer Master Training), EditorSuffix (Editor Suffix)
+// Upgrades: R07W (Defend), EditorSuffix (Editor Suffix)
 {
 (Scourge)
 }
@@ -85125,7 +85125,7 @@ Improves Phase Blade by increasing its damage to <A057,DataA2>.
 }
 
 STRING 14188
-// Upgrades: R07W (Defend), EditorSuffix (Editor Suffix)
+// Upgrades: R07X (Defend), EditorSuffix (Editor Suffix)
 {
 (Scourge)
 }
@@ -85161,7 +85161,7 @@ Improves Orb of Annihilation by increasing its damage dealt to <Afak,DataA2>.
 }
 
 STRING 14194
-// Upgrades: R07X (Defend), EditorSuffix (Editor Suffix)
+// Upgrades: R08T (Cannibalize), EditorSuffix (Editor Suffix)
 {
 (Scourge)
 }
@@ -95993,7 +95993,7 @@ Q
 }
 
 STRING 16007
-// Units: h03H (Shipyard), Ubertip (Tooltip - Extended)
+// Units: h07W (Shipyard), Ubertip (Tooltip - Extended)
 {
 Boat construction facility.|n|cfff5962dTrains:|R Transport, Scout, Frigate, Fireship, Galley, Boarding Vessel, Juggernaut, Bombard|R|n|n|cff00c4c4Cannot be built near small inland water areas.
 }
@@ -97133,7 +97133,7 @@ Train Initiate Mage
 }
 
 STRING 16197
-// Units: h07W (Shipyard), Ubertip (Tooltip - Extended)
+// Units: o03I (Shipyard), Ubertip (Tooltip - Extended)
 {
 Boat construction facility.|n|cfff5962dTrains:|R Transport, Scout, Frigate, Fireship, Galley, Boarding Vessel, Juggernaut, Bombard|R|n|n|cff00c4c4Cannot be built near small inland water areas.
 }
@@ -97319,7 +97319,7 @@ Creates a shop with purchasable items.
 }
 
 STRING 16228
-// Units: o03I (Shipyard), Ubertip (Tooltip - Extended)
+// Units: o049 (Golden Dock), Ubertip (Tooltip - Extended)
 {
 Boat construction facility.|n|cfff5962dTrains:|R Transport, Scout, Frigate, Fireship, Galley, Boarding Vessel, Juggernaut, Bombard|R|n|n|cff00c4c4Cannot be built near small inland water areas.
 }
