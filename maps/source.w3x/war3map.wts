@@ -1162,12 +1162,6 @@ STRING 193
 E
 }
 
-STRING 194
-// Units: h07C (Mustering Hall), Ubertip (Tooltip - Extended)
-{
-Housing for the defenders of the Alliance.|n|cfff5962dTrains:|R Defender, Rifleman, Mortar Team|n|cfff5962dResearches:|R Mithril Plated Armor, Long Rifles, Flare, Fragmentation Shards
-}
-
 STRING 195
 // Abilities: ACfn (Frost Nova), EditorSuffix (Editor Suffix)
 {
@@ -3572,12 +3566,6 @@ STRING 596
 W
 }
 
-STRING 597
-// Units: npgf (Pig Farm), Ubertip (Tooltip - Extended)
-{
-Protein producer for hungry grunts.|nProvides 8 food, which increases the maximum number of units that can be trained.
-}
-
 STRING 598
 // Units: npfm (Fel Ravager), EditorSuffix (Name - Editor Suffix)
 {
@@ -4366,12 +4354,6 @@ STRING 728
 Hire Goblin Sapper
 }
 
-STRING 729
-// Units: ngrd (Ysondre), EditorSuffix (Name - Editor Suffix)
-{
-(Brown - Cenarius Summon)
-}
-
 STRING 730
 // Units: ngrd (Ysondre), Name (Name)
 {
@@ -4532,12 +4514,6 @@ STRING 756
 // Units: Eilm (Demon Hunter), Propernames (Proper Names)
 {
 Altruis
-}
-
-STRING 757
-// Units: nfre (Furbolg Elder Shaman), EditorSuffix (Name - Editor Suffix)
-{
-(Brown - Cenarius Summon)
 }
 
 STRING 758
@@ -4763,7 +4739,7 @@ Mass Polymorph - [|cffffcc00Level 2|r]
 }
 
 STRING 795
-// Units: nnfm (Incubation Pool), Ubertip (Tooltip - Extended)
+// Units: nefm (Residence), Description (Description)
 {
 Provides 8 food, which increases the maximum number of units that can be trained.
 }
@@ -5066,12 +5042,6 @@ STRING 845
 // Units: ndh4 (Draenei Haven), Ubertip (Tooltip - Extended)
 {
 Produces Draenei units as well as offering upgrades for Draenei units.
-}
-
-STRING 846
-// Units: ndh3 (Draenei Barracks), Ubertip (Tooltip - Extended)
-{
-Produces Draenei Vindicators, Stalkers, and Demolishers.
 }
 
 STRING 847
@@ -5785,7 +5755,7 @@ W
 }
 
 STRING 965
-// Units: hrif (Rifleman), Ubertip (Tooltip - Extended)
+// Units: h00B (Irondrake), Ubertip (Tooltip - Extended)
 {
 Highly skilled sharpshooter, and fan of the boomstick. |cfff5962dAbilities:|R Ensnare|n|cfff5962dCan Learn:|R Armor Penetration Rounds|n|n|cffffcc00Attacks land and air units.|nCan be loaded into Keep Towers.|r
 }
@@ -5919,7 +5889,7 @@ E
 }
 
 STRING 987
-// Units: hkni (Knight), Ubertip (Tooltip - Extended)
+// Units: h0A7 (Bear Rider), Ubertip (Tooltip - Extended)
 {
 Armored knight of Lordaeron.|n|cfff5962dAbilities:|R Charge, War Plating|n|n|cffffcc00Attacks land units.|r
 }
@@ -5940,12 +5910,6 @@ STRING 990
 // Units: echm (Chimaera), Hotkey (Hotkey)
 {
 W
-}
-
-STRING 991
-// Units: hhou (Farm), Ubertip (Tooltip - Extended)
-{
-Civilian farmstead supplying food for your nation.|nProvides 8 food, which increases the maximum number of units that can be trained.
 }
 
 STRING 992
@@ -5990,12 +5954,6 @@ STRING 998
 Train Gyrocopter
 }
 
-STRING 999
-// Units: hgyr (Gyrocopter), Ubertip (Tooltip - Extended)
-{
-Fine Gnomish engineering with a deadshot pilot.|n|cfff5962dAbilities:|R Truesight, Flak Cannons, Flying Machine Bombs|n|n|cff99b4d1Can only build 12.|r|n|cffffcc00Attacks land and air units.|r
-}
-
 STRING 1000
 // Units: o035 (Improved Watch Tower), Hotkey (Hotkey)
 {
@@ -6020,22 +5978,10 @@ STRING 1003
 Q
 }
 
-STRING 1004
-// Units: hgry (Gryphon Rider), Ubertip (Tooltip - Extended)
-{
-Wildhammer trained, Bronzebeard tough.|n|cfff5962dAbilities:|R Shock, Chain Lightning|n|cfff5962dCan Learn:|R Storm Hammers|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land and air units.|r
-}
-
 STRING 1005
 // Units: n0AO (Way Gate), Hotkey (Hotkey)
 {
 F
-}
-
-STRING 1006
-// Units: hgra (Gryphon Aviary), Ubertip (Tooltip - Extended)
-{
-Resting roost for the gryphons.|n|cfff5962dTrains:|R Gryphon Riders|n|cfff5962dResearches:|R Storm Hammers
 }
 
 STRING 1007
@@ -6150,6 +6096,12 @@ STRING 1025
 // Units: hkee (Keep), Hotkey (Hotkey)
 {
 C
+}
+
+STRING 1026
+// Units: npgf (Pig Farm), Ubertip (Tooltip - Extended)
+{
+A fel-boar farm for the Fel Horde's bonechewers.|nProvides 8 food, which increases the maximum number of units that can be trained.
 }
 
 STRING 1027
@@ -6273,7 +6225,7 @@ Sanctum for the spellcasters of Stormwind.|n|cfff5962dTrains:|R Clergyman, Chapl
 }
 
 STRING 1047
-// Units: harm (Workshop), EditorSuffix (Name - Editor Suffix)
+// Units: n02D (War Golem), EditorSuffix (Name - Editor Suffix)
 {
 (Ironforge)
 }
@@ -6494,12 +6446,6 @@ STRING 1083
 Lieutenant of the Watchers, Naisha is a strong leader and close confidant to Maeiv. She is the shield of the underside of the Sentinels and the rest of the Kaldorei
 }
 
-STRING 1084
-// Units: emtg (Mountain Giant), EditorSuffix (Name - Editor Suffix)
-{
-(Brown)
-}
-
 STRING 1085
 // Units: Huth (Leader of the Silver Hand), Hotkey (Hotkey)
 {
@@ -6560,12 +6506,6 @@ STRING 1094
 Airborne archer of the Sentinels who strikes multiple foes.|n|cfff5962dAbilities:|R Multi Shot|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land and air units.|r
 }
 
-STRING 1095
-// Units: h048 (Forgeworks), Ubertip (Tooltip - Extended)
-{
-Place for dwarven craftsmen to gather and work their trades.|n|cfff5962dResearches: |RForged Weaponry, Armor Plating, Power Infusion
-}
-
 STRING 1096
 // Units: efon (Treant), Tip (Tooltip - Basic)
 {
@@ -6576,12 +6516,6 @@ STRING 1097
 // Units: efon (Treant), Ubertip (Tooltip - Extended)
 {
 Basic Wooden warrior |n|n|cffffcc00Attacks land units.|r
-}
-
-STRING 1098
-// Units: efdr (Faerie Dragon), EditorSuffix (Name - Editor Suffix)
-{
-(Brown)
 }
 
 STRING 1099
@@ -6618,12 +6552,6 @@ STRING 1104
 // Units: edtm (Druid of the Talon), Ubertip (Tooltip - Extended)
 {
 Maneuverable spellcaster. Casts Faerie Fire and Night Elf Form.|n|n|cffffcc00Attacks air units.|r
-}
-
-STRING 1105
-// Units: edry (Dryad), EditorSuffix (Name - Editor Suffix)
-{
-(Brown)
 }
 
 STRING 1106
@@ -9649,12 +9577,6 @@ STRING 1609
 W
 }
 
-STRING 1610
-// Units: o028 (Burrow), Ubertip (Tooltip - Extended)
-{
-Defensive hovel for peons to defend the territory.|nProvides 10 food, which increases the maximum number of units that can be trained.|n|cfff5962dAbilities:|R Battle Stations|n|n|cffffcc00Attacks land and air units.|r
-}
-
 STRING 1611
 // Units: o02R (Stronghold), Hotkey (Hotkey)
 {
@@ -11791,22 +11713,10 @@ STRING 1966
 Multishot
 }
 
-STRING 1967
-// Units: n08K (Feral Wolf), EditorSuffix (Name - Editor Suffix)
-{
-(Brown - Cenarius Summon)
-}
-
 STRING 1968
 // Units: n08K (Feral Wolf), Name (Name)
 {
 Feral Wolf
-}
-
-STRING 1969
-// Units: n08J (Black Widow), EditorSuffix (Name - Editor Suffix)
-{
-(Brown - Cenarius Summon)
 }
 
 STRING 1970
@@ -12217,12 +12127,6 @@ STRING 2037
 A
 }
 
-STRING 2038
-// Units: h019 (Mason), EditorSuffix (Name - Editor Suffix)
-{
-(Ironforge, Worker)
-}
-
 STRING 2039
 // Abilities: A07Z (Lightbringer's Strength), Researchubertip (Tooltip - Learn - Extended)
 {
@@ -12530,7 +12434,7 @@ Build Residence
 }
 
 STRING 2090
-// Units: nefm (Residence), Description (Description)
+// Units: h004 (Troll Hut), Ubertip (Tooltip - Extended)
 {
 Provides 8 food, which increases the maximum number of units that can be trained.
 }
@@ -13128,7 +13032,7 @@ Build Residence
 }
 
 STRING 2190
-// Units: n07I (Residence), Ubertip (Tooltip - Extended)
+// Units: h0A9 (Manor), Ubertip (Tooltip - Extended)
 {
 Provides 8 food, which increases the maximum number of units that can be trained.
 }
@@ -15061,7 +14965,7 @@ Dalaran Dungeons
 }
 
 STRING 2512
-// Units: n039 (Big Tree), EditorSuffix (Name - Editor Suffix)
+// Abilities: A0H7 (Hurricane), EditorSuffix (Editor Suffix)
 {
 (Brown - Malfurion)
 }
@@ -15312,7 +15216,7 @@ Moonglade (20gold/min)
 }
 
 STRING 2554
-// Units: n02D (War Golem), EditorSuffix (Name - Editor Suffix)
+// Units: n00C (Rune Priest), EditorSuffix (Name - Editor Suffix)
 {
 (Ironforge)
 }
@@ -15784,7 +15688,7 @@ STRING 2632
 }
 
 STRING 2633
-// Units: n00C (Rune Priest), EditorSuffix (Name - Editor Suffix)
+// Units: h03R (Tinkerer), EditorSuffix (Name - Editor Suffix)
 {
 (Ironforge)
 }
@@ -15805,12 +15709,6 @@ STRING 2636
 // Units: n00C (Rune Priest), Tip (Tooltip - Basic)
 {
 Train Rune Priest
-}
-
-STRING 2637
-// Units: n00C (Rune Priest), Ubertip (Tooltip - Extended)
-{
-Follower of the ancient techniques of old. |n|cfff5962dAbilities:|R Rune of Wrath |n|cfff5962dCan learn:|R Healing Shield, Rune of Shielding|n|r|n|cffffcc00Attacks land and air units.|r
 }
 
 STRING 2638
@@ -15913,12 +15811,6 @@ STRING 2654
 // Units: Harf (High King), Revivetip (Tooltip - Revive)
 {
 Revive High King
-}
-
-STRING 2655
-// Units: n006 (Charred Ancient), EditorSuffix (Name - Editor Suffix)
-{
-(Brown - Fandral Summon)
 }
 
 STRING 2656
@@ -16150,7 +16042,7 @@ Thunder Fists
 }
 
 STRING 2694
-// Units: h03R (Tinkerer), EditorSuffix (Name - Editor Suffix)
+// Units: h037 (Engineer), EditorSuffix (Name - Editor Suffix)
 {
 (Ironforge)
 }
@@ -16222,7 +16114,7 @@ STRING 2705
 }
 
 STRING 2706
-// Units: h037 (Engineer), EditorSuffix (Name - Editor Suffix)
+// Units: h01P (Steam Tank), EditorSuffix (Name - Editor Suffix)
 {
 (Ironforge)
 }
@@ -16249,12 +16141,6 @@ STRING 2710
 // Units: hshy (Alliance Shipyard), Ubertip (Tooltip - Extended)
 {
 Boat construction facility for the Alliance.|n|cfff5962dTrains:|R Alliance Transport Ship, Destroyer, Battleship|R|n|n|cff00c4c4Cannot be built near small inland water areas.
-}
-
-STRING 2711
-// Units: hgra (Gryphon Aviary), EditorSuffix (Name - Editor Suffix)
-{
-(ironforge)
 }
 
 STRING 2712
@@ -16294,7 +16180,7 @@ Build Altar of Fortitude
 }
 
 STRING 2718
-// Units: h07B (Altar of Fortitude), Ubertip (Tooltip - Extended)
+// Units: h044 (Altar of Knowledge), Ubertip (Tooltip - Extended)
 {
 Revives slain Heroes and Demi-heroes.
 }
@@ -16491,12 +16377,6 @@ STRING 2750
 W
 }
 
-STRING 2751
-// Units: n06M (Residence), Ubertip (Tooltip - Extended)
-{
-Provides 8 food, which increases the maximum number of units that can be trained.
-}
-
 STRING 2752
 // Units: h01B (Outrider), EditorSuffix (Name - Editor Suffix)
 {
@@ -16672,7 +16552,7 @@ X
 }
 
 STRING 2781
-// Units: h044 (Altar of Knowledge), Ubertip (Tooltip - Extended)
+// Units: h02X (Altar of Kings), Ubertip (Tooltip - Extended)
 {
 Revives slain Heroes and Demi-heroes.
 }
@@ -16983,12 +16863,6 @@ STRING 2832
 D
 }
 
-STRING 2833
-// Units: hmtm (Mortar Team), Ubertip (Tooltip - Extended)
-{
-Exceptional duo in the art of demolitions.|n|cfff5962dCan Learn:|R Flare, Fragmentation Shards|n|n|cff99b4d1Can only train 9.|r|n|cffffcc00Attacks land units and trees. |r
-}
-
 STRING 2834
 // Units: h01I (Arcanist), EditorSuffix (Name - Editor Suffix)
 {
@@ -17173,12 +17047,6 @@ STRING 2864
 // Units: n0A1 (Crystal Lord), EditorSuffix (Name - Editor Suffix)
 {
 (nexus)
-}
-
-STRING 2865
-// Units: h088 (Farm), Ubertip (Tooltip - Extended)
-{
-Civilian farmstead supplying food for your nation.|nProvides 8 food, which increases the maximum number of units that can be trained.
 }
 
 STRING 2866
@@ -17777,7 +17645,7 @@ Research Improved Firebolt
 }
 
 STRING 2965
-// Units: h01P (Steam Tank), EditorSuffix (Name - Editor Suffix)
+// Units: h018 (Defender), EditorSuffix (Name - Editor Suffix)
 {
 (Ironforge)
 }
@@ -18411,7 +18279,7 @@ Rock
 }
 
 STRING 3070
-// Units: h018 (Defender), EditorSuffix (Name - Editor Suffix)
+// Units: H03G (Emperor of Blackrock), EditorSuffix (Name - Editor Suffix)
 {
 (Ironforge)
 }
@@ -18507,7 +18375,7 @@ Build Altar of Knowledge
 }
 
 STRING 3086
-// Units: h02X (Altar of Kings), Ubertip (Tooltip - Extended)
+// Units: h01H (Altar of Prowess), Ubertip (Tooltip - Extended)
 {
 Revives slain Heroes and Demi-heroes.
 }
@@ -18543,7 +18411,7 @@ Build Academy
 }
 
 STRING 3092
-// Units: H03G (Emperor of Blackrock), EditorSuffix (Name - Editor Suffix)
+// Units: H028 (Thane of Aerie Peak), EditorSuffix (Name - Editor Suffix)
 {
 (Ironforge)
 }
@@ -18564,12 +18432,6 @@ STRING 3095
 // Units: h042 (Pinnacle), Tip (Tooltip - Basic)
 {
 Pinnacle
-}
-
-STRING 3096
-// Units: h042 (Pinnacle), Ubertip (Tooltip - Extended)
-{
-Center of technological innovation and runecrafting expertise.|n|cfff5962dTrains:|R Engineer, Rune Priest|n|cfff5962dResearches:|R Engineer Training, Rune Priest Training
 }
 
 STRING 3097
@@ -18813,7 +18675,7 @@ STRING 3136
 }
 
 STRING 3137
-// Units: H028 (Thane of Aerie Peak), EditorSuffix (Name - Editor Suffix)
+// Units: n0CC (Shadowforge Titan), EditorSuffix (Name - Editor Suffix)
 {
 (Ironforge)
 }
@@ -18834,12 +18696,6 @@ STRING 3140
 // Units: h03R (Tinkerer), Tip (Tooltip - Basic)
 {
 Train Tinkerer
-}
-
-STRING 3141
-// Units: h03R (Tinkerer), Ubertip (Tooltip - Extended)
-{
-A cunning gnomish engineer with lots of gadgets.|n|cfff5962dAbilities:|R Deploy Barricades|n|cfff5962dCan Learn:|R Mech Kit, Overclock|n|n|cffffcc00Attacks land and air units.|r
 }
 
 STRING 3142
@@ -19262,7 +19118,7 @@ STRING 3211
 }
 
 STRING 3212
-// Units: n0CC (Shadowforge Titan), EditorSuffix (Name - Editor Suffix)
+// Units: h00B (Irondrake), EditorSuffix (Name - Editor Suffix)
 {
 (Ironforge)
 }
@@ -19526,7 +19382,7 @@ X
 }
 
 STRING 3256
-// Units: h01H (Altar of Prowess), Ubertip (Tooltip - Extended)
+// Units: e00R (Altar of Watchers), Ubertip (Tooltip - Extended)
 {
 Revives slain Heroes and Demi-heroes.
 }
@@ -19915,12 +19771,6 @@ STRING 3320
 W
 }
 
-STRING 3321
-// Units: h072 (Homestead), Ubertip (Tooltip - Extended)
-{
-Provides 8 food, which increases the maximum number of units that can be trained.
-}
-
 STRING 3322
 // Abilities: A0GL (Scattershot), EditorSuffix (Editor Suffix)
 {
@@ -19997,12 +19847,6 @@ STRING 3334
 // Units: h02A (Mountaineer), Tip (Tooltip - Basic)
 {
 Train Defender
-}
-
-STRING 3335
-// Units: h02A (Mountaineer), Ubertip (Tooltip - Extended)
-{
-Hardy stout defender of Dun Morogh.|n|cfff5962dAbilities:|R Charge, Defend|n|cfff5962dCan Learn:|R Mithril Armor, Thunder Ale|n|n|cffffcc00Attacks land units.|r
 }
 
 STRING 3336
@@ -20288,7 +20132,7 @@ Inn
 }
 
 STRING 3383
-// Units: h00B (Irondrake), EditorSuffix (Name - Editor Suffix)
+// Units: h0A6 (Anvilrage Guardsman), EditorSuffix (Name - Editor Suffix)
 {
 (Ironforge)
 }
@@ -20309,12 +20153,6 @@ STRING 3386
 // Units: h01S (Tavern), Tip (Tooltip - Basic)
 {
 Build Tavern
-}
-
-STRING 3387
-// Units: h01S (Tavern), Ubertip (Tooltip - Extended)
-{
-Provides food, which increases the maximum number of units that can be trained, and can heal nearby friendly units.|n|cfff5962dAbilities:|r Swig
 }
 
 STRING 3388
@@ -20366,7 +20204,7 @@ Mind Destruction - [|cffffcc00Level 3|r]
 }
 
 STRING 3396
-// Units: h0A6 (Anvilrage Guardsman), EditorSuffix (Name - Editor Suffix)
+// Units: h0AA (Magma Tank), EditorSuffix (Name - Editor Suffix)
 {
 (Ironforge)
 }
@@ -20461,12 +20299,6 @@ STRING 3411
 Second in command of Muradin's expedition force, Baelgun is a stout scout of bristling fire and wily leadership.
 }
 
-STRING 3412
-// Units: h01L (Thane), EditorSuffix (Name - Editor Suffix)
-{
-(Ironforge-Elite)
-}
-
 STRING 3413
 // Units: E00K (Archdruid of Darnassus), Hotkey (Hotkey)
 {
@@ -20483,12 +20315,6 @@ STRING 3415
 // Units: h01L (Thane), Tip (Tooltip - Basic)
 {
 Train Thane
-}
-
-STRING 3416
-// Units: h01L (Thane), Ubertip (Tooltip - Extended)
-{
-Powerful leader of a dwarven clan.|n|cfff5962dAbilities:|R Taunt, Storming Brew, Bash, Avatar|n|cfff5962dCan learn:|R Mithril Plated Armor |n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land units.|r
 }
 
 STRING 3417
@@ -20552,7 +20378,7 @@ Train Arcanist
 }
 
 STRING 3427
-// Units: h0AA (Magma Tank), EditorSuffix (Name - Editor Suffix)
+// Units: h0AB (Shadowcaster), EditorSuffix (Name - Editor Suffix)
 {
 (Ironforge)
 }
@@ -20582,7 +20408,7 @@ Build Altar of Prowess
 }
 
 STRING 3432
-// Units: e00R (Altar of Watchers), Ubertip (Tooltip - Extended)
+// Units: h07M (Altar of Admirals), Ubertip (Tooltip - Extended)
 {
 Revives slain Heroes and Demi-heroes.
 }
@@ -20738,7 +20564,7 @@ Summon Mur'gul
 }
 
 STRING 3458
-// Units: h0AB (Shadowcaster), EditorSuffix (Name - Editor Suffix)
+// Units: n0CH (Flame Keeper), EditorSuffix (Name - Editor Suffix)
 {
 (Ironforge)
 }
@@ -20768,7 +20594,7 @@ Skilled craftsman and designer of dwarven wonders.|n|cfff5962dAbilities:|r Repai
 }
 
 STRING 3463
-// Units: n0CH (Flame Keeper), EditorSuffix (Name - Editor Suffix)
+// Abilities: A0F4 (Armor Penetration Rounds), EditorSuffix (Editor Suffix)
 {
 (Ironforge)
 }
@@ -20789,12 +20615,6 @@ STRING 3466
 // Units: h018 (Defender), Tip (Tooltip - Basic)
 {
 Train Defender
-}
-
-STRING 3467
-// Units: h018 (Defender), Ubertip (Tooltip - Extended)
-{
-Hardy stout defender of Dun Morogh.|n|cfff5962dAbilities:|R Charge, Defend|n|cfff5962dCan Learn:|R Mithril Plated Armor|n|n|cffffcc00Attacks land units.|r
 }
 
 STRING 3468
@@ -21260,7 +21080,7 @@ The first among the redeemed shaman of the Frostwolf Clan, Drek'thar is a blind,
 }
 
 STRING 3545
-// Abilities: A0F4 (Armor Penetration Rounds), EditorSuffix (Editor Suffix)
+// Abilities: A0D5 (Keep Commander Aura), EditorSuffix (Editor Suffix)
 {
 (Ironforge)
 }
@@ -21487,7 +21307,7 @@ Creates a shop with purchasable items. |n|n|cffffcc00Attacks land units.|r
 }
 
 STRING 3583
-// Units: e018 (Siege Ancient), EditorSuffix (Name - Editor Suffix)
+// Units: e01C (Arcane Annihilator), EditorSuffix (Name - Editor Suffix)
 {
 (Druid Sentinel form)
 }
@@ -21708,12 +21528,6 @@ STRING 3619
 A powerful guardian of nature who specializes in spellcasting.
 }
 
-STRING 3620
-// Units: e00W (Broll Bearmantle), EditorSuffix (Name - Editor Suffix)
-{
-(Brown)(Bear Form)
-}
-
 STRING 3621
 // Units: e00W (Broll Bearmantle), Name (Name)
 {
@@ -21748,12 +21562,6 @@ STRING 3626
 // Units: e00V (Temple of Elune), Ubertip (Tooltip - Extended)
 {
 Temple dedicated to the worship of Elune.|n|cfff5962dTrains:|R Priestess, Moonhunter, Redeemed Highborne|n|cfff5962dResearches:|R Priestess Training, Moonhunter Training
-}
-
-STRING 3627
-// Units: e00U (Poison Treant), EditorSuffix (Name - Editor Suffix)
-{
-(Brown - Malfurion Summon)
 }
 
 STRING 3628
@@ -21823,7 +21631,7 @@ Build Altar of Watchers
 }
 
 STRING 3639
-// Units: h07M (Altar of Admirals), Ubertip (Tooltip - Extended)
+// Units: h080 (Altar of Harvest), Ubertip (Tooltip - Extended)
 {
 Revives slain Heroes and Demi-heroes.
 }
@@ -23389,7 +23197,7 @@ Revive Emperor of Blackrock
 }
 
 STRING 3900
-// Abilities: A0D5 (Keep Commander Aura), EditorSuffix (Editor Suffix)
+// Abilities: A0D4 (Ironforge Aura), EditorSuffix (Editor Suffix)
 {
 (Ironforge)
 }
@@ -23521,7 +23329,7 @@ Revive Thane of Aerie Peak
 }
 
 STRING 3922
-// Abilities: A0D4 (Ironforge Aura), EditorSuffix (Editor Suffix)
+// Upgrades: Rhri (Long Rifles), EditorSuffix (Editor Suffix)
 {
 (Ironforge)
 }
@@ -23557,7 +23365,7 @@ Summon Falstad Wildhammer
 }
 
 STRING 3928
-// Units: o03C (Altar of Visions), Ubertip (Tooltip - Extended)
+// Units: h07B (Altar of Fortitude), Ubertip (Tooltip - Extended)
 {
 Revives slain Heroes and Demi-heros.
 }
@@ -47973,12 +47781,6 @@ STRING 7993
 W
 }
 
-STRING 7994
-// Units: h02F (Household), Ubertip (Tooltip - Extended)
-{
-Provides 8 food, which increases the maximum number of units that can be trained.
-}
-
 STRING 7995
 // Abilities: ACcb (Greater Frost Bolt), Hotkey (Hotkey - Normal)
 {
@@ -50491,12 +50293,6 @@ STRING 8413
 // Abilities: A0XG (Spiked Carapace), Researchhotkey (Hotkey - Learn)
 {
 W
-}
-
-STRING 8414
-// Units: e01C (Arcane Annihilator), EditorSuffix (Name - Editor Suffix)
-{
-(Druid Sentinel form)
 }
 
 STRING 8415
@@ -53017,12 +52813,6 @@ STRING 8834
 // Units: o06C (Dragon Fodder Farm), Tip (Tooltip - Basic)
 {
 Build Dragon Fodder Farm
-}
-
-STRING 8835
-// Units: o03K (Burrow), Ubertip (Tooltip - Extended)
-{
-Provides 10 food, which increases the maximum number of units that can be trained. Has a weak ranged attack|n|n|cffffcc00Attacks land and air units.|r
 }
 
 STRING 8836
@@ -55983,12 +55773,6 @@ STRING 9328
 Battle Roar (|cffffcc00Q|r) - [|cffffcc00Level 1|r]
 }
 
-STRING 9329
-// Units: o06C (Dragon Fodder Farm), Ubertip (Tooltip - Extended)
-{
-Provides 10 food, which increases the maximum number of units that can be trained. Has a weak ranged attack|n|n|cffffcc00Attacks land and air units.|r
-}
-
 STRING 9330
 // Abilities: A0UQ (Curse of the Woods), Hotkey (Hotkey - Normal)
 {
@@ -56110,7 +55894,7 @@ Tornado Unit Damage
 }
 
 STRING 9350
-// Abilities: A0H7 (Hurricane), EditorSuffix (Editor Suffix)
+// Abilities: A0DC (Call Treants), EditorSuffix (Editor Suffix)
 {
 (Brown - Malfurion)
 }
@@ -58324,7 +58108,7 @@ Causes this unit to attack <A0F5,DataB1,%>% faster, but take <A0F5,DataC1,%>% mo
 }
 
 STRING 9719
-// Upgrades: Rhri (Long Rifles), EditorSuffix (Editor Suffix)
+// Upgrades: Rhfl (Flare), EditorSuffix (Editor Suffix)
 {
 (Ironforge)
 }
@@ -60508,7 +60292,7 @@ Heals a target friendly unit for 1250 hit points over 10 seconds. Also Restores 
 }
 
 STRING 10083
-// Abilities: A0DC (Call Treants), EditorSuffix (Editor Suffix)
+// Abilities: A0CE (Just Grow a Tree), EditorSuffix (Editor Suffix)
 {
 (Brown - Malfurion)
 }
@@ -60898,7 +60682,7 @@ Hurls a bolt of lightning that bounces up to 6 times, dealing 75 damage to the p
 }
 
 STRING 10148
-// Upgrades: Rhfl (Flare), EditorSuffix (Editor Suffix)
+// Upgrades: R05Q (Chaos), EditorSuffix (Editor Suffix)
 {
 (Ironforge)
 }
@@ -60922,7 +60706,7 @@ Gives 5% extra damage to the attacks of nearby friendly units.
 }
 
 STRING 10152
-// Upgrades: R05Q (Chaos), EditorSuffix (Editor Suffix)
+// Upgrades: R05P (Priest Adept Training,Priest Master Training), EditorSuffix (Editor Suffix)
 {
 (Ironforge)
 }
@@ -61729,12 +61513,6 @@ STRING 10286
 // Abilities: A0CF (Structure Spiked Barricade), Ubertip (Tooltip - Normal - Extended)
 {
 Enhances the structures defenses with spikes and barricades. Gives 6 bonus armor and returning 40% of melee attack damage to enemies.
-}
-
-STRING 10287
-// Abilities: A0CE (Just Grow a Tree), EditorSuffix (Editor Suffix)
-{
-(Brown - Malfurion)
 }
 
 STRING 10288
@@ -67611,12 +67389,6 @@ STRING 11266
 // Abilities: A07P (Fiery Aura), Ubertip (Tooltip - Normal - Extended)
 {
 Increases nearby friendly units' movement speed by 4% and life regeneration rate 1.
-}
-
-STRING 11267
-// Units: nchp (Mage), Ubertip (Tooltip - Extended)
-{
-Apprentice spellcaster from Lordaeron.|n|cfff5962dAbilities:|r Frost Bolt|n|cfff5962dCan learn:|R Dispel, Ice Fall|n|n|cffffcc00Attacks land and air units.|R
 }
 
 STRING 11268
@@ -83944,7 +83716,7 @@ Summons 2 Fel Hounds with Mana Burn to attack the heroes enemies. |n|n|cffffcc00
 }
 
 STRING 13988
-// Upgrades: R05P (Priest Adept Training,Priest Master Training), EditorSuffix (Editor Suffix)
+// Upgrades: R014 (Priest Adept Training,Priest Master Training), EditorSuffix (Editor Suffix)
 {
 (Ironforge)
 }
@@ -84322,7 +84094,7 @@ C
 }
 
 STRING 14051
-// Upgrades: R014 (Priest Adept Training,Priest Master Training), EditorSuffix (Editor Suffix)
+// Upgrades: R010 (Control Magic), EditorSuffix (Editor Suffix)
 {
 (Ironforge)
 }
@@ -85672,7 +85444,7 @@ Summons 4 Fel Hounds with Mana Burn to attack the heroes enemies. |n|n|cffffcc00
 }
 
 STRING 14276
-// Upgrades: R010 (Control Magic), EditorSuffix (Editor Suffix)
+// Upgrades: R00Z (Defend), EditorSuffix (Editor Suffix)
 {
 (Ironforge)
 }
@@ -85684,7 +85456,7 @@ Quest Completed: Gnomeregan
 }
 
 STRING 14278
-// Upgrades: R00Z (Defend), EditorSuffix (Editor Suffix)
+// Upgrades: R00V (Priest Adept Training,Priest Master Training), EditorSuffix (Editor Suffix)
 {
 (Ironforge)
 }
@@ -89020,6 +88792,12 @@ STRING 14833
 rmnx
 }
 
+STRING 14834
+// Units: nnfm (Incubation Pool), Ubertip (Tooltip - Extended)
+{
+Pool filled with luminescent red eggs and murloc tadpoles.|nProvides 10 food, which increases the maximum number of units that can be trained.
+}
+
 STRING 14835
 // Upgrades: R01B (Defend), Name (Name)
 {
@@ -89078,6 +88856,12 @@ STRING 14844
 // Units: npn4 (Fire), EditorSuffix (Name - Editor Suffix)
 {
 (Chen)
+}
+
+STRING 14845
+// Units: ngrd (Ysondre), EditorSuffix (Name - Editor Suffix)
+{
+(Druids - Cenarius Summon)
 }
 
 STRING 14846
@@ -89195,7 +88979,7 @@ Purchase Summon Workers
 }
 
 STRING 14865
-// Upgrades: R00V (Priest Adept Training,Priest Master Training), EditorSuffix (Editor Suffix)
+// Upgrades: R00F (Control Magic), EditorSuffix (Editor Suffix)
 {
 (Ironforge)
 }
@@ -89222,6 +89006,12 @@ STRING 14869
 // Upgrades: R014 (Priest Adept Training,Priest Master Training), Ubertip (Tooltip - Extended)
 {
 Constructs the Deeprun Tram, which connects Ironforge and Stormwind.
+}
+
+STRING 14870
+// Units: nfre (Furbolg Elder Shaman), EditorSuffix (Name - Editor Suffix)
+{
+(Druids - Cenarius Summon)
 }
 
 STRING 14871
@@ -89254,6 +89044,12 @@ STRING 14875
 Allows Priestesses of the Moon to use Elune's Blessing, which temporarily increases the movement speed of nearby friendly units.
 }
 
+STRING 14876
+// Units: ndh3 (Draenei Barracks), Ubertip (Tooltip - Extended)
+{
+Primary troop production building.|nTrains: Draenei Deathsworn, Draenei Stalkers and Demolishers
+}
+
 STRING 14877
 // Upgrades: R012 (Chaos), Name (Name)
 {
@@ -89273,7 +89069,7 @@ Quest Completed: Felsteel Refining
 }
 
 STRING 14880
-// Upgrades: R00F (Control Magic), EditorSuffix (Editor Suffix)
+// Upgrades: R08K (Priest Adept Training,Priest Master Training), EditorSuffix (Editor Suffix)
 {
 (Ironforge)
 }
@@ -89398,12 +89194,6 @@ STRING 14900
 Research Bloodfury
 }
 
-STRING 14901
-// Units: n0CC (Shadowforge Titan), Ubertip (Tooltip - Extended)
-{
-Heavy magic-resistant melee unit.|n|cfff5962dAbilities:|R Spell Resistance, Resistant Skin|n|n|cff99b4d1Can only build 4.|r|n|cffffcc00Attacks land units.|r
-}
-
 STRING 14902
 // Upgrades: R040 (Magic Sentry), Tip (Tooltip)
 {
@@ -89480,6 +89270,12 @@ STRING 14914
 // Upgrades: R00V (Priest Adept Training,Priest Master Training), Ubertip (Tooltip - Extended)
 {
 Increases Rune Priests' mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Rune of Shielding.
+}
+
+STRING 14915
+// Units: nchp (Mage), Ubertip (Tooltip - Extended)
+{
+Damage dealing spellcaster.|n|cfff5962dAbilities:|r Frost Bolt|n|cfff5962dCan learn:|R Dispel, Ice Fall|n|n|cffffcc00Attacks land and air units.|R
 }
 
 STRING 14916
@@ -89818,6 +89614,12 @@ STRING 14971
 Increases Fel Warlocks' mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Life Drain.
 }
 
+STRING 14972
+// Units: hrif (Rifleman), Ubertip (Tooltip - Extended)
+{
+Highly skilled sharpshooter and fan of the boomstick. |cfff5962dAbilities:|R Ensnare|n|cfff5962dCan Learn:|R Armor Penetration Rounds|n|n|cffffcc00Attacks land and air units.|nCan be loaded into Keep Towers.|r
+}
+
 STRING 14973
 // Upgrades: R00L (Chaos), Name (Name)
 {
@@ -89878,6 +89680,12 @@ STRING 14982
 Causes the caster to generate an arcane orb whenever they cast a spell. The orb orbits around the caster for 45 seconds, dealing 75 damage to enemy units it strikes.
 }
 
+STRING 14983
+// Units: hmtm (Mortar Team), Ubertip (Tooltip - Extended)
+{
+Long-range siege weaponry. Exceptional damage versus buildings, but slow and vulnerable. |n|cfff5962dCan Learn:|R Flare, Fragmentation Shards|n|n|cff99b4d1Can only train 9.|r|n|cffffcc00Attacks land units and trees. |r
+}
+
 STRING 14984
 // Upgrades: R00J (Magic Sentry), effect1 (Effect 1)
 {
@@ -89918,6 +89726,12 @@ STRING 14990
 // Upgrades: R00J (Magic Sentry), Ubertip (Tooltip - Extended)
 {
 Improves Arcanists, Geomancers, Hydromancers, and Kirin Tor by increasing their damage by 10, hit points by 15%, and attack range by 75.
+}
+
+STRING 14991
+// Units: hhou (Farm), Ubertip (Tooltip - Extended)
+{
+Civilian farmstead supplying food for the Kingdom.|nProvides 8 food, which increases the maximum number of units that can be trained.
 }
 
 STRING 14992
@@ -90062,6 +89876,12 @@ STRING 15015
 // Upgrades: R00F (Control Magic), Ubertip (Tooltip - Extended)
 {
 Gives Dwarven Warriors and Thanes a <A02O,DataA1>% chance to reduce incoming damage by <A02O,DataC1>.
+}
+
+STRING 15016
+// Units: hgyr (Gyrocopter), Ubertip (Tooltip - Extended)
+{
+Fast moving flying machine. Excellent at scouting, and effective against air units. |n|cfff5962dAbilities:|R Truesight, Flak Cannons, Flying Machine Bombs|n|n|cff99b4d1Can only build 12.|r|n|cffffcc00Attacks land and air units.|r
 }
 
 STRING 15017
@@ -90266,6 +90086,12 @@ STRING 15050
 // Upgrades: R00B (Magic Sentry), Ubertip (Tooltip - Extended)
 {
 Replace Footmen with Veteran Footmen, which have Perfect Defend and improved stats.
+}
+
+STRING 15051
+// Units: hgry (Gryphon Rider), Ubertip (Tooltip - Extended)
+{
+Powerful flying creature, mounted by a Wildhammer thrower. |n|cfff5962dAbilities:|R Shock, Chain Lightning|n|cfff5962dCan Learn:|R Storm Hammers|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land and air units.|r
 }
 
 STRING 15052
@@ -91051,6 +90877,12 @@ STRING 15190
 Slow melee unit capable of devastating area of effect attacks.|n|cfff5962dAbilities:|R Pulverize|n|cfff5962dCan learn:|R Crushing Wave|n|n|cff99b4d1Can only train 12.|r|n|cffffcc00Attacks land units.|r
 }
 
+STRING 15191
+// Units: hgra (Gryphon Aviary), Ubertip (Tooltip - Extended)
+{
+Fortified rookery for the gryphons of Ironforge.|n|cfff5962dTrains:|R Gryphon Rider|n|cfff5962dResearches:|R Storm Hammers
+}
+
 STRING 15192
 // Upgrades: R001 (Defend), EditorSuffix (Editor Suffix)
 {
@@ -91445,6 +91277,12 @@ STRING 15257
 // Units: H0A5 (Sea Witch), Ubertip (Tooltip - Extended)
 {
 Mystical Hero, adept at ranged combat and dealing magical damage. |n|cfff5962dCan learn:|R Tidal Wave, Forked Lightning, Healing Bulbs, Tidal Storm|n|n|cffffcc00Attacks land and air units.|R
+}
+
+STRING 15258
+// Units: hgra (Gryphon Aviary), EditorSuffix (Name - Editor Suffix)
+{
+ (Ironforge Specialist)
 }
 
 STRING 15259
@@ -91917,6 +91755,12 @@ STRING 15336
 Learn Frozen Solid - [|cffffcc00Level %d|r]
 }
 
+STRING 15337
+// Units: hbar (Barracks), Ubertip (Tooltip - Extended)
+{
+Housing for the defenders of the Alliance|n|n|r|cfff5962dTrains:|R Footman, Knight, Huntsman|n|cfff5962dResearches:|r Improved Ensnare, Veteran Footman, Animal War Training
+}
+
 STRING 15338
 // Abilities: A0T9 (Unload), EditorSuffix (Editor Suffix)
 {
@@ -92149,6 +91993,12 @@ STRING 15376
 // Abilities: A0HV (Ignore Pain), EditorSuffix (Editor Suffix)
 {
 (Warsong - Grunt)
+}
+
+STRING 15377
+// Units: harm (Workshop), EditorSuffix (Name - Editor Suffix)
+{
+ (Ironforge Siege)
 }
 
 STRING 15378
@@ -92477,6 +92327,12 @@ STRING 15430
 (faction select)
 }
 
+STRING 15431
+// Units: emtg (Mountain Giant), EditorSuffix (Name - Editor Suffix)
+{
+ (Druids)
+}
+
 STRING 15432
 // Units: h063 (Arcane Well), Name (Name)
 {
@@ -92547,12 +92403,6 @@ STRING 15443
 // Abilities: A0J0 (Stormwind selection), EditorSuffix (Editor Suffix)
 {
 (faction select)
-}
-
-STRING 15444
-// Units: h063 (Arcane Well), Ubertip (Tooltip - Extended)
-{
-Dalaran generator of arcane power.|nProvides 8 food, which increases the maximum number of units that can be trained.
 }
 
 STRING 15445
@@ -92837,6 +92687,12 @@ STRING 15491
 |cffc3dbffRight-click to deactivate auto-casting.|r
 }
 
+STRING 15492
+// Units: efdr (Faerie Dragon), EditorSuffix (Name - Editor Suffix)
+{
+ (Druids)
+}
+
 STRING 15493
 // Units: e01N (Azerite Siege Engine), Name (Name)
 {
@@ -92853,6 +92709,12 @@ STRING 15495
 // Abilities: A0DA (Summon Mur'gul), Tip (Tooltip - Normal)
 {
 Summon Mur'gul - [|cffffcc00Level 3|r]
+}
+
+STRING 15496
+// Units: edry (Dryad), EditorSuffix (Name - Editor Suffix)
+{
+ (Druids)
 }
 
 STRING 15497
@@ -93159,6 +93021,12 @@ STRING 15547
 // Abilities: A03A (Harvest), Ubertip (Tooltip - Normal - Extended)
 {
 Harvests lumber from trees.
+}
+
+STRING 15548
+// Units: u00E (Soul Prison), Ubertip (Tooltip - Extended)
+{
+Cruel housing for a soul used as fuel for the Legion.|nProvides 8 food, which increases the maximum number of units that can be trained.|n|cfff5962dUpgrades to:|R Soul Tower
 }
 
 STRING 15549
@@ -93557,6 +93425,12 @@ STRING 15614
 Research Ultravision
 }
 
+STRING 15615
+// Units: o028 (Burrow), Ubertip (Tooltip - Extended)
+{
+Defensive hovel for peons to defend the Horde's territory.|nProvides 10 food, which increases the maximum number of units that can be trained.|n|cfff5962dAbilities:|R Battle Stations|n|n|cffffcc00Attacks land and air units.|r
+}
+
 STRING 15616
 // Units: hwtw (Scout Tower), Ubertip (Tooltip - Extended)
 {
@@ -93647,6 +93521,12 @@ STRING 15630
 Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Wisp |n|cfff5962dUpgrades to:|R Tree of Ages
 }
 
+STRING 15631
+// Units: n08K (Feral Wolf), EditorSuffix (Name - Editor Suffix)
+{
+(Druids - Cenarius Summon)
+}
+
 STRING 15632
 // Upgrades: R00G (Flare), Hotkey (Hotkey)
 {
@@ -93717,6 +93597,12 @@ STRING 15643
 // Abilities: A0GV (Deadeye), Researchhotkey (Hotkey - Learn)
 {
 E
+}
+
+STRING 15644
+// Units: n08J (Black Widow), EditorSuffix (Name - Editor Suffix)
+{
+(Druids - Cenarius Summon)
 }
 
 STRING 15645
@@ -93819,6 +93705,12 @@ STRING 15661
 // Abilities: A0DK (Shadow Missile), Researchtip (Tooltip - Learn)
 {
 Learn Shadow Missile - [|cffffcc00Level %d|r]
+}
+
+STRING 15662
+// Units: n07U (Explorer's Vault), EditorSuffix (Name - Editor Suffix)
+{
+(Ironforge Shop)
 }
 
 STRING 15663
@@ -94073,13 +93965,6 @@ STRING 15704
 Cleric
 }
 
-STRING 15705
-// Units: hbar (Barracks), Ubertip (Tooltip - Extended)
-{
-Housing for the defenders of the Alliance|n|n|r|cfff5962dTrains:|R Footman, Knight, Huntsman|n|cfff5962dResearches:|r Improved Ensnare, Veteran Footman, Animal War Training
-
-}
-
 STRING 15706
 // Units: Orex (Beastmaster), Tip (Tooltip - Basic)
 {
@@ -94092,16 +93977,16 @@ STRING 15707
 Bleeding Hallow Clan's contribution to the war, used to scout the lands of its enemies.|n|cfff5962dAbilities:|R True Sight, Shade|n|n|cff99b4d1Can only train 10.|r
 }
 
-STRING 15708
-// Units: u00E (Soul Prison), Ubertip (Tooltip - Extended)
-{
-Provides 8 food, which increases the maximum number of units that can be trained.|n|cfff5962dUpgrades to:|R Soul Tower
-}
-
 STRING 15709
 // Units: u00D (Legion Herald), Ubertip (Tooltip - Extended)
 {
 Basic worker. Can summon and restore structures.|n|cfff5962dAbilities:|R Shadow Infusion|n|n|cffffcc00Attacks land units.|r
+}
+
+STRING 15710
+// Units: n07I (Residence), Ubertip (Tooltip - Extended)
+{
+Moonlit home of the Night Elves.|nProvides 8 food, which increases the maximum number of units that can be trained.
 }
 
 STRING 15711
@@ -94150,6 +94035,12 @@ STRING 15718
 // Units: h02Q (Pegasus Knight), Ubertip (Tooltip - Extended)
 {
 Swift flying unit. |n|cfff5962dAbilities:|R Cloud, Shackles|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks air units.|r
+}
+
+STRING 15719
+// Units: n06M (Residence), Ubertip (Tooltip - Extended)
+{
+Moonlit home of the Night Elves.|nProvides 8 food, which increases the maximum number of units that can be trained.
 }
 
 STRING 15720
@@ -94234,6 +94125,12 @@ STRING 15733
 // Abilities: A0M1 (Tidal Serpent), Name (Name)
 {
 Tidal Serpent
+}
+
+STRING 15734
+// Units: n039 (Big Tree), EditorSuffix (Name - Editor Suffix)
+{
+(Druids - Malfurion)
 }
 
 STRING 15735
@@ -94596,6 +94493,12 @@ STRING 15794
 Q
 }
 
+STRING 15795
+// Units: n00C (Rune Priest), Ubertip (Tooltip - Extended)
+{
+Learned war-priest and runecrafter. |n|cfff5962dAbilities:|R Rune of Wrath |n|cfff5962dCan learn:|R Healing Shield, Rune of Shielding|n|r|n|cffffcc00Attacks land and air units.|r
+}
+
 STRING 15796
 // Units: h04M (Cleric), Tip (Tooltip - Basic)
 {
@@ -94752,6 +94655,18 @@ STRING 15821
 (Gilneas)
 }
 
+STRING 15822
+// Units: n006 (Charred Ancient), EditorSuffix (Name - Editor Suffix)
+{
+(Druids - Fandral Summon)
+}
+
+STRING 15823
+// Units: h07C (Mustering Hall), Ubertip (Tooltip - Extended)
+{
+Primary troop production building.|n|cfff5962dTrains:|R Defender, Rifleman, Mortar Team|n|cfff5962dResearches:|R Mithril Plated Armor, Long Rifles, Flare, Fragmentation Shards
+}
+
 STRING 15824
 // Units: o04U (Cyclone Cannon), EditorSuffix (Name - Editor Suffix)
 {
@@ -94806,6 +94721,60 @@ STRING 15832
 (Gilneas)
 }
 
+STRING 15833
+// Units: h072 (Homestead), Ubertip (Tooltip - Extended)
+{
+Civilian farmstead supplying food for the Kingdom.|nProvides 8 food, which increases the maximum number of units that can be trained.
+}
+
+STRING 15834
+// Units: h063 (Arcane Well), Ubertip (Tooltip - Extended)
+{
+Font of arcane power.|nProvides 8 food, which increases the maximum number of units that can be trained.
+}
+
+STRING 15835
+// Units: h056 (Khaz Modan Tower), EditorSuffix (Name - Editor Suffix)
+{
+(Ironforge Other)
+}
+
+STRING 15836
+// Units: h048 (Forgeworks), Ubertip (Tooltip - Extended)
+{
+Contains upgrades for improved armor, weaponry and increased health.|n|cfff5962dResearches: |RForged Weaponry, Armor Plating, Power Infusion
+}
+
+STRING 15837
+// Units: h042 (Pinnacle), Ubertip (Tooltip - Extended)
+{
+Center of technological innovation and runecrafting.|n|cfff5962dTrains:|R Engineer, Rune Priest|n|cfff5962dResearches:|R Engineer Training, Rune Priest Training
+}
+
+STRING 15838
+// Units: h03R (Tinkerer), Ubertip (Tooltip - Extended)
+{
+Gnomish engineer equipped with brilliant gadgetry.|n|cfff5962dAbilities:|R Deploy Barricades|n|cfff5962dCan Learn:|R Mech Kit, Overclock|n|n|cffffcc00Attacks land and air units.|r
+}
+
+STRING 15839
+// Units: h02F (Household), Ubertip (Tooltip - Extended)
+{
+Civilian farmstead supplying food for the Kingdom.|nProvides 8 food, which increases the maximum number of units that can be trained.
+}
+
+STRING 15840
+// Units: h02A (Mountaineer), Ubertip (Tooltip - Extended)
+{
+Stout defender of Dun Morogh.|n|cfff5962dAbilities:|R Charge, Defend|n|cfff5962dCan Learn:|R Mithril Armor|n|n|cffffcc00Attacks land units.|r
+}
+
+STRING 15841
+// Units: h01S (Tavern), Ubertip (Tooltip - Extended)
+{
+Provides 8 food, which increases the maximum number of units that can be trained and can heal nearby friendly units.|n|n|cfff5962dAbilities:|r Swig
+}
+
 STRING 15842
 // Units: h04N (Improved Cannon Tower), Name (Name)
 {
@@ -94824,6 +94793,12 @@ STRING 15844
 Heavy defensive structure. Particularly effective against clusters of troops.|n|n|cffffcc00Attacks land units and trees.|r
 }
 
+STRING 15845
+// Units: h01L (Thane), EditorSuffix (Name - Editor Suffix)
+{
+(Ironforge Elite)
+}
+
 STRING 15846
 // Units: h052 (Improved Guard Tower), Name (Name)
 {
@@ -94840,6 +94815,12 @@ STRING 15848
 // Units: h052 (Improved Guard Tower), Ubertip (Tooltip - Extended)
 {
 Primary defensive structure. |n|cfff5962dCan learn:|R Magic Sentry |n|n|cffffcc00Attacks land and air units.|r
+}
+
+STRING 15849
+// Units: h01L (Thane), Ubertip (Tooltip - Extended)
+{
+Mighty head of a dwarven clan.|n|cfff5962dAbilities:|R Taunt, Storming Brew, Bash, Avatar|n|cfff5962dCan learn:|R Mithril Plated Armor |n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land units.|r
 }
 
 STRING 15850
@@ -94870,6 +94851,24 @@ STRING 15854
 // Upgrades: R00O (Ensnare), Hotkey (Hotkey)
 {
 Z
+}
+
+STRING 15855
+// Units: h019 (Mason), EditorSuffix (Name - Editor Suffix)
+{
+(Ironforge Worker)
+}
+
+STRING 15856
+// Units: h018 (Defender), Ubertip (Tooltip - Extended)
+{
+Stout defender of Dun Morogh.|n|cfff5962dAbilities:|R Charge, Defend|n|cfff5962dCan Learn:|R Mithril Plated Armor|n|n|cffffcc00Attacks land units.|r
+}
+
+STRING 15857
+// Units: h00I (Windmill), Ubertip (Tooltip - Extended)
+{
+A creaking mill that grinds flour for the Kingdom.|nProvides 8 food, which increases the maximum number of units that can be trained.
 }
 
 STRING 15858
@@ -94990,6 +94989,12 @@ STRING 15877
 // Units: u02J (Tidal Terror), Ubertip (Tooltip - Extended)
 {
 Sea-dragon of the crushing depths.|n|cfff5962dAbilities:|R Squall, Tsunami|n|n|cff99b4d1Can only train 4.|r|n|cffffcc00Attacks land and air units.|r
+}
+
+STRING 15878
+// Units: h001 (The Great Forge), EditorSuffix (Name - Editor Suffix)
+{
+ (Ironforge Other)
 }
 
 STRING 15879
@@ -95208,6 +95213,12 @@ STRING 15914
 |cff7777aaHoly Light|r |cff7777aa[E]|r
 }
 
+STRING 15915
+// Units: e018 (Siege Ancient), EditorSuffix (Name - Editor Suffix)
+{
+(Druids, Sentinel Form)
+}
+
 STRING 15916
 // Units: h04E (Protector), Ubertip (Tooltip - Extended)
 {
@@ -95250,6 +95261,12 @@ STRING 15922
 Strongest soldiers of Gilneas.|n|cfff5962dAbilities:|R Combat Experience, Heavy Plating, Cleaving Attack, Charge|n|n|cff99b4d1Can only train 12.|r|n|cffffcc00Attacks land units.|r
 }
 
+STRING 15923
+// Units: e00W (Broll Bearmantle), EditorSuffix (Name - Editor Suffix)
+{
+(Druids, Bear Form)
+}
+
 STRING 15924
 // Units: h093 (Order Chapter House), EditorSuffix (Name - Editor Suffix)
 {
@@ -95280,6 +95297,24 @@ STRING 15928
 Dwarven engineering in the hands of ingenuic humans.|n|cfff5962dAbilities:|r Cloud, Rocket Barrage, Repair Crew, Spyglass|n|n|cff99b4d1Can only build 6.|n|r|cffffd700Attacks land units.|r
 }
 
+STRING 15929
+// Units: e00U (Poison Treant), EditorSuffix (Name - Editor Suffix)
+{
+(Druids - Malfurion Summon)
+}
+
+STRING 15930
+// Units: h07N (Homestead), Ubertip (Tooltip - Extended)
+{
+Fisherman's house strung with nets and harpoons.|nProvides 8 food, which increases the maximum number of units that can be trained.
+}
+
+STRING 15931
+// Units: o03K (Burrow), Ubertip (Tooltip - Extended)
+{
+Shady den for the Twilight Cult.|nProvides 10 food, which increases the maximum number of units that can be trained. Has a weak ranged attack|n|n|cffffcc00Attacks land and air units.|r
+}
+
 STRING 15932
 // Abilities: A0N0 (Water Elemental), Name (Name)
 {
@@ -95290,6 +95325,12 @@ STRING 15933
 // Abilities: A0N0 (Water Elemental), Ubertip (Tooltip - Normal - Extended)
 {
 Summons a water elemental to attack the Wizard's enemies. Has 600 hit points and lasts 90 seconds. |n|n|cffffcc00Attacks land and air units.|r
+}
+
+STRING 15934
+// Units: o045 (Dwelling), Ubertip (Tooltip - Extended)
+{
+Defensive hold for the Zandalari workers.|nProvides 10 food, which increases the maximum number of units that can be trained.
 }
 
 STRING 15935
@@ -95352,10 +95393,22 @@ STRING 15944
 C
 }
 
+STRING 15945
+// Units: h088 (Farm), Ubertip (Tooltip - Extended)
+{
+A humble farmhouse.|nProvides 8 food, which increases the maximum number of units that can be trained.
+}
+
 STRING 15946
 // Upgrades: R04P (Priest Adept Training,Priest Master Training), effect4 (Effect 4)
 {
 ratx
+}
+
+STRING 15947
+// Units: h08C (Grave), Ubertip (Tooltip - Extended)
+{
+A forgotten grave remembered by ony the Forsaken.|nProvides 8 food, which increases the maximum number of units that can be trained.
 }
 
 STRING 15948
@@ -95532,14 +95585,32 @@ STRING 15976
 (Kul Tiras)
 }
 
+STRING 15977
+// Units: n0AU (Pulsating Portal), Ubertip (Tooltip - Extended)
+{
+A nauseating tear in reality.|nProvides food, which increases the maximum number of units that can be trained.
+}
+
+STRING 15978
+// Units: o056 (Arcane Well), Ubertip (Tooltip - Extended)
+{
+Font of Arcane energy.|nProvides 10 food, which increases the maximum number of units that can be trained.
+}
+
 STRING 15979
 // Abilities: AOcl (Chain Lightning), Tip (Tooltip - Normal)
 {
 Chain Lightning - [|cffffcc00Level 4|r]
 }
 
+STRING 15980
+// Units: n0C1 (Coral Bed), Ubertip (Tooltip - Extended)
+{
+Provides 10 food, which increases the maximum number of units that can be trained.
+}
+
 STRING 15981
-// Units: h080 (Altar of Harvest), Ubertip (Tooltip - Extended)
+// Units: e01S (Altar of the Depth), Ubertip (Tooltip - Extended)
 {
 Revives slain Heroes and Demi-heroes.
 }
@@ -95556,16 +95627,22 @@ STRING 15983
 Build Altar of Admirals
 }
 
-STRING 15985
-// Units: h07N (Homestead), Ubertip (Tooltip - Extended)
+STRING 15984
+// Units: n0CC (Shadowforge Titan), Ubertip (Tooltip - Extended)
 {
-Provides 8 food, which increases the maximum number of units that can be trained.
+The unstoppable golem colossus of the Dark-iron Kingdom.|nHeavy magic-resistant melee unit.|n|cfff5962dAbilities:|R Heavy Bash, Spell Resistance, Resistant Skin|n|n|cff99b4d1Can only build 4.|r|n|cffffcc00Attacks land units.|r
 }
 
 STRING 15986
 // Units: h09W (Control Point Defender), EditorSuffix (Name - Editor Suffix)
 {
 (kul tiras)
+}
+
+STRING 15987
+// Units: n0CF (Fire Wyrm), Ubertip (Tooltip - Extended)
+{
+Mighty wyrm from Blackrock's depths.  |n|cfff5962dAbilities:|R Breath of Fire|n|cff99b4d1Can only train 2.|r|n|cffffcc00Attacks land units.|r
 }
 
 STRING 15988
@@ -95580,10 +95657,40 @@ STRING 15989
 W
 }
 
+STRING 15990
+// Units: h0A8 (Chieftain), EditorSuffix (Name - Editor Suffix)
+{
+(Ironforge Elite)
+}
+
 STRING 15991
 // Abilities: AOcl (Chain Lightning), Ubertip (Tooltip - Normal - Extended)
 {
 Calls forth a bolt of lightning that bounces up to <AOcl,DataB4> times, dealing <AOcl,DataA4> damage on the primary target. Each jump deals less damage.
+}
+
+STRING 15992
+// Units: n0CH (Flame Keeper), Ubertip (Tooltip - Extended)
+{
+Wielder of destructive elemental magic. |n|cfff5962dAbilities:|R Incinerate |n|cfff5962dCan learn:|R Cremate, Flame Shield|n|r|n|cffffcc00Attacks land and air units.|r
+}
+
+STRING 15993
+// Units: o066 (Altar of Dragons), Ubertip (Tooltip - Extended)
+{
+Revives slain Heroes and Demi-heros.
+}
+
+STRING 15994
+// Units: o06C (Dragon Fodder Farm), Ubertip (Tooltip - Extended)
+{
+A pig farm to keep the dragons sated.|nProvides 10 food, which increases the maximum number of units that can be trained. Has a weak ranged attack|n|n|cffffcc00Attacks land and air units.|r
+}
+
+STRING 15995
+// Units: h0AK (Menethil Harbor), EditorSuffix (Name - Editor Suffix)
+{
+(Ironforge Other)
 }
 
 STRING 15997
@@ -95766,12 +95873,6 @@ STRING 16031
 (Scarlet)
 }
 
-STRING 16032
-// Units: e01S (Altar of the Depth), Ubertip (Tooltip - Extended)
-{
-Revives slain Heroes and Demi-heroes.
-}
-
 STRING 16033
 // Abilities: ANlm (Summon Lava Spawn), EditorSuffix (Editor Suffix)
 {
@@ -95803,7 +95904,7 @@ C'thun presence makes all units around him terribly frightened which decreases t
 }
 
 STRING 16038
-// Units: o03O (Altar of Industry), Ubertip (Tooltip - Extended)
+// Units: o03C (Altar of Visions), Ubertip (Tooltip - Extended)
 {
 Revives slain Heroes and Demi-heros.
 }
@@ -96027,7 +96128,7 @@ Blood Fury - [|cffffcc00Level %d|r]
 }
 
 STRING 16087
-// Units: o040 (Altar of Loa), Ubertip (Tooltip - Extended)
+// Units: o03O (Altar of Industry), Ubertip (Tooltip - Extended)
 {
 Revives slain Heroes and Demi-heros.
 }
@@ -96189,7 +96290,7 @@ Slows a target enemy AIR unit's attack rate by <A0E9,DataB1,%>% and movement spe
 }
 
 STRING 16130
-// Units: o058 (Altar of Light), Ubertip (Tooltip - Extended)
+// Units: o040 (Altar of Loa), Ubertip (Tooltip - Extended)
 {
 Revives slain Heroes and Demi-heros.
 }
@@ -96802,12 +96903,6 @@ STRING 16268
 // Units: h086 (Field Stockpile), Tip (Tooltip - Basic)
 {
 Build Field Stockpile
-}
-
-STRING 16269
-// Units: h08C (Grave), Ubertip (Tooltip - Extended)
-{
-A forgotten grave, the forsaken remember.|nProvides 8 food, which increases the maximum number of units that can be trained.
 }
 
 STRING 16270
@@ -105277,7 +105372,7 @@ STRING 17785
 }
 
 STRING 17786
-// Units: o066 (Altar of Dragons), Ubertip (Tooltip - Extended)
+// Units: o058 (Altar of Light), Ubertip (Tooltip - Extended)
 {
 Revives slain Heroes and Demi-heros.
 }
@@ -105568,12 +105663,6 @@ STRING 17841
 // Units: o055 (Crystal Spire), Ubertip (Tooltip - Extended)
 {
 Beast taming tower of the Draenei.|n|cfff5962dTrains:|R Brown Elekk, Elekk Knight, Nether Ray
-}
-
-STRING 17842
-// Units: o056 (Arcane Well), Ubertip (Tooltip - Extended)
-{
-Arcane Generators.|nProvides 10 food, which increases the maximum number of units that can be trained.
 }
 
 STRING 17843
@@ -108943,12 +109032,6 @@ STRING 18426
 Control Point Defender
 }
 
-STRING 18427
-// Upgrades: R08K (Priest Adept Training,Priest Master Training), EditorSuffix (Editor Suffix)
-{
-(Ironforge)
-}
-
 STRING 18430
 // Units: n0CG (Core Hound), EditorSuffix (Name - Editor Suffix)
 {
@@ -109543,12 +109626,6 @@ STRING 18531
 Maker of incredible engines and weapons of mass dysfunction, Foreman Glibbs 'Long-nose' Dizzywig is the mastermind behind the Horde's industry.
 }
 
-STRING 18532
-// Units: h00B (Irondrake), Ubertip (Tooltip - Extended)
-{
-Highly skilled sharpshooter, and fan of the boomstick. |cfff5962dAbilities:|R Ensnare|n|cfff5962dCan Learn:|R Armor Penetration Rounds|n|n|cffffcc00Attacks land and air units.|nCan be loaded into Keep Towers.|r
-}
-
 STRING 18533
 // Units: h00B (Irondrake), Name (Name)
 {
@@ -109585,12 +109662,6 @@ STRING 18538
 Flame Keeper
 }
 
-STRING 18539
-// Units: h0A7 (Bear Rider), Ubertip (Tooltip - Extended)
-{
-Armored knight of Lordaeron.|n|cfff5962dAbilities:|R Charge, War Plating|n|n|cffffcc00Attacks land units.|r
-}
-
 STRING 18540
 // Units: h0A7 (Bear Rider), Name (Name)
 {
@@ -109603,12 +109674,6 @@ STRING 18541
 Train Bear Rider
 }
 
-STRING 18542
-// Units: h0A8 (Chieftain), EditorSuffix (Name - Editor Suffix)
-{
-(Ironforge-Elite)
-}
-
 STRING 18543
 // Units: h0A8 (Chieftain), Name (Name)
 {
@@ -109619,12 +109684,6 @@ STRING 18544
 // Units: n0CH (Flame Keeper), Tip (Tooltip - Basic)
 {
 Train Flame Keeper
-}
-
-STRING 18545
-// Units: n0CH (Flame Keeper), Ubertip (Tooltip - Extended)
-{
-Follower of the ancient techniques of old. |n|cfff5962dAbilities:|R Rune of Wrath |n|cfff5962dCan learn:|R Healing Shield, Rune of Shielding|n|r|n|cffffcc00Attacks land and air units.|r
 }
 
 STRING 18546
@@ -109655,12 +109714,6 @@ STRING 18551
 // Upgrades: Rhme (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Hotkey (Hotkey)
 {
 Q
-}
-
-STRING 18559
-// Units: h0A9 (Manor), Ubertip (Tooltip - Extended)
-{
-Provides 8 food, which increases the maximum number of units that can be trained.
 }
 
 STRING 18560
@@ -110070,12 +110123,6 @@ STRING 18643
 // Abilities: A0WP (Curse of Executus), EditorSuffix (Editor Suffix)
 {
  (Majordomo Executus, Yellow)
-}
-
-STRING 18644
-// Units: n0CF (Fire Wyrm), Ubertip (Tooltip - Extended)
-{
-Heavy ranged unit that hurls balls of fire. Can cast Chain Lightning and Lightning Shield.|n|cff99b4d1Can only train 2.|r|n|cffffcc00Attacks land units.|r
 }
 
 STRING 18645
@@ -115719,12 +115766,6 @@ STRING 19693
 (Sentinel Other)
 }
 
-STRING 19694
-// Units: n07U (Explorer's Vault), EditorSuffix (Name - Editor Suffix)
-{
-(Khaz Modan Shop)
-}
-
 STRING 19695
 // Units: n07U (Explorer's Vault), Name (Name)
 {
@@ -116289,12 +116330,6 @@ STRING 19792
 (Dalaran Other)
 }
 
-STRING 19793
-// Units: h056 (Khaz Modan Tower), EditorSuffix (Name - Editor Suffix)
-{
-(Ironforge Tower)
-}
-
 STRING 19794
 // Units: h04X (Darkshore Runestone), EditorSuffix (Name - Editor Suffix)
 {
@@ -116602,7 +116637,7 @@ STRING 19854
 }
 
 STRING 19855
-// Units: h01O (Shadowforge City), EditorSuffix (Name - Editor Suffix)
+// Units: h03P (Gnome Dwelling), EditorSuffix (Name - Editor Suffix)
 {
  (Ironforge Other)
 }
@@ -116626,7 +116661,7 @@ STRING 19858
 }
 
 STRING 19859
-// Units: h013 (Gnomeregan), EditorSuffix (Name - Editor Suffix)
+// Units: h01O (Shadowforge City), EditorSuffix (Name - Editor Suffix)
 {
  (Ironforge Other)
 }
@@ -116680,7 +116715,7 @@ STRING 19867
 }
 
 STRING 19868
-// Units: h001 (The Great Forge), EditorSuffix (Name - Editor Suffix)
+// Units: h013 (Gnomeregan), EditorSuffix (Name - Editor Suffix)
 {
  (Ironforge Other)
 }
@@ -117253,12 +117288,6 @@ STRING 19974
 // Units: o045 (Dwelling), EditorSuffix (Name - Editor Suffix)
 {
  (Zandalari Farm)
-}
-
-STRING 19975
-// Units: o045 (Dwelling), Ubertip (Tooltip - Extended)
-{
-Defensive hovel.|nProvides 10 food, which increases the maximum number of units that can be trained.
 }
 
 STRING 19976
@@ -118177,12 +118206,6 @@ STRING 20147
 // Units: h0AG (Shipyard), EditorSuffix (Name - Editor Suffix)
 {
  (Scarlet Shipyard)
-}
-
-STRING 20148
-// Units: h0AK (Menethil Harbor), EditorSuffix (Name - Editor Suffix)
-{
-(Ironforge Shipyard)
 }
 
 STRING 20149
