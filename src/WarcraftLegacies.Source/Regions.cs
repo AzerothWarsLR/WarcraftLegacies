@@ -215,8 +215,8 @@ public static class Regions
 	public static Rectangle KulTarget { get; set; } = new Rectangle(3904f, -13440f, 3936f, -13408f);
 	public static Rectangle BlademasterUnlock { get; set; } = new Rectangle(4352f, -10496f, 5024f, -10112f);
 	public static Rectangle ZandalarUnlock { get; set; } = new Rectangle(-5440f, -17088f, -2400f, -14656f);
-	public static Rectangle NaxxramasInside { get; set; } = new Rectangle(-12224f, 23808f, -11712f, 24096f);
-	public static Rectangle NaxAmbient { get; set; } = new Rectangle(-13408f, 21248f, -10496f, 24256f);
+	public static Rectangle NaxxramasInside { get; set; } = new Rectangle(-13856f, 23936f, -13344f, 24224f);
+	public static Rectangle NaxAmbient { get; set; } = new Rectangle(-15104f, 21312f, -12192f, 24320f);
 	public static Rectangle NaxUnlock { get; set; } = new Rectangle(128f, 18464f, 256f, 18592f);
 	public static Rectangle TwilightOutside { get; set; } = new Rectangle(17984f, -8224f, 21696f, -4896f);
 	public static Rectangle ShipInside { get; set; } = new Rectangle(8928f, -31168f, 9472f, -30720f);
