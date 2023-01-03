@@ -215,7 +215,7 @@ STRING 35
 }
 
 STRING 36
-// Units: ushd (Shade), EditorSuffix (Name - Editor Suffix)
+// Units: ushp (Haunted Harbor), EditorSuffix (Name - Editor Suffix)
 {
 (Scourge)
 }
@@ -245,7 +245,7 @@ Research Apothecary Adept Training
 }
 
 STRING 41
-// Units: uobs (Obsidian Statue), EditorSuffix (Name - Editor Suffix)
+// Units: ushd (Shade), EditorSuffix (Name - Editor Suffix)
 {
 (Scourge)
 }
@@ -1055,7 +1055,7 @@ STRING 175
 }
 
 STRING 176
-// Units: unec (Necromancer), EditorSuffix (Name - Editor Suffix)
+// Units: uobs (Obsidian Statue), EditorSuffix (Name - Editor Suffix)
 {
 (Scourge)
 }
@@ -1753,14 +1753,8 @@ STRING 293
 Summon Haunted Harbor
 }
 
-STRING 294
-// Units: ushp (Haunted Harbor), Ubertip (Tooltip - Extended)
-{
-Boat construction facility for the Evil factions.|n|cfff5962dTrains:|R Haunted Transport Ships, Corsairs, Dreadnoughts|R|n|n|cff00c4c4Cannot be built near small inland water areas.|r
-}
-
 STRING 295
-// Units: umtw (Meat Wagon), EditorSuffix (Name - Editor Suffix)
+// Units: unec (Necromancer), EditorSuffix (Name - Editor Suffix)
 {
 (Scourge)
 }
@@ -1796,7 +1790,7 @@ Mass Polymorph
 }
 
 STRING 301
-// Units: ugho (Ghoul), EditorSuffix (Name - Editor Suffix)
+// Units: umtw (Meat Wagon), EditorSuffix (Name - Editor Suffix)
 {
 (Scourge)
 }
@@ -1856,7 +1850,7 @@ Turns all enemy units in a target area into a sheep. The targeted unit retains i
 }
 
 STRING 311
-// Units: ugar (Gargoyle), EditorSuffix (Name - Editor Suffix)
+// Units: ugho (Ghoul), EditorSuffix (Name - Editor Suffix)
 {
 (Scourge)
 }
@@ -1874,7 +1868,7 @@ Revive Majordomo of Ragnaros
 }
 
 STRING 314
-// Units: ufro (Frost Wyrm), EditorSuffix (Name - Editor Suffix)
+// Units: ugar (Gargoyle), EditorSuffix (Name - Editor Suffix)
 {
 (Scourge)
 }
@@ -1922,7 +1916,7 @@ STRING 321
 }
 
 STRING 322
-// Units: ucry (Crypt Fiend), EditorSuffix (Name - Editor Suffix)
+// Units: ufro (Frost Wyrm), EditorSuffix (Name - Editor Suffix)
 {
 (Scourge)
 }
@@ -1940,7 +1934,7 @@ Summon Majordomo Executus
 }
 
 STRING 325
-// Units: ubsp (Obsidian Destroyer), EditorSuffix (Name - Editor Suffix)
+// Units: ucry (Crypt Fiend), EditorSuffix (Name - Editor Suffix)
 {
 (Scourge)
 }
@@ -1958,7 +1952,7 @@ Ny'alotha Obelisk
 }
 
 STRING 328
-// Units: uban (Banshee), EditorSuffix (Name - Editor Suffix)
+// Units: ubsp (Obsidian Destroyer), EditorSuffix (Name - Editor Suffix)
 {
 (Scourge)
 }
@@ -2042,7 +2036,7 @@ STRING 341
 }
 
 STRING 342
-// Units: uabo (Abomination), EditorSuffix (Name - Editor Suffix)
+// Units: uban (Banshee), EditorSuffix (Name - Editor Suffix)
 {
 (Scourge)
 }
@@ -2066,7 +2060,7 @@ STRING 345
 }
 
 STRING 346
-// Units: nzom (Zombie), EditorSuffix (Name - Editor Suffix)
+// Units: uabo (Abomination), EditorSuffix (Name - Editor Suffix)
 {
 (Scourge)
 }
@@ -2168,7 +2162,7 @@ Flying demi-hero, has the following abilities: Freazing Breath, Breat of Frost a
 }
 
 STRING 363
-// Units: nska (Skeleton Archer), EditorSuffix (Name - Editor Suffix)
+// Units: nzom (Zombie), EditorSuffix (Name - Editor Suffix)
 {
 (Scourge)
 }
@@ -2198,7 +2192,7 @@ Revives slain Heroes and demi-heroes.
 }
 
 STRING 368
-// Units: nfgl (Plague Titan), EditorSuffix (Name - Editor Suffix)
+// Units: nska (Skeleton Archer), EditorSuffix (Name - Editor Suffix)
 {
 (Scourge)
 }
@@ -2216,7 +2210,7 @@ Worshipper and structure summoner of the Scourge.|n|cfff5962dAbilities:|R Unsumm
 }
 
 STRING 371
-// Units: Uear (Champion of the Scourge), EditorSuffix (Name - Editor Suffix)
+// Units: nfgl (Plague Titan), EditorSuffix (Name - Editor Suffix)
 {
 (Scourge)
 }
@@ -3057,7 +3051,7 @@ Revives slain Heroes and Demi-heros.
 }
 
 STRING 511
-// Units: Uanb (King of Azjol-Nerub), EditorSuffix (Name - Editor Suffix)
+// Units: Uear (Champion of the Scourge), EditorSuffix (Name - Editor Suffix)
 {
 (Scourge)
 }
@@ -3465,7 +3459,7 @@ STRING 578
 }
 
 STRING 579
-// Units: n08G (Plagueling), EditorSuffix (Name - Editor Suffix)
+// Units: Uanb (King of Azjol-Nerub), EditorSuffix (Name - Editor Suffix)
 {
 (Scourge)
 }
@@ -4571,7 +4565,7 @@ STRING 762
 }
 
 STRING 763
-// Units: n009 (Revenant), EditorSuffix (Name - Editor Suffix)
+// Units: n08G (Plagueling), EditorSuffix (Name - Editor Suffix)
 {
 (Scourge)
 }
@@ -5767,7 +5761,7 @@ Build Alliance Shipyard
 }
 
 STRING 962
-// Units: h076 (Shipyard), Ubertip (Tooltip - Extended)
+// Units: ushp (Haunted Harbor), Ubertip (Tooltip - Extended)
 {
 Boat construction facility.|n|cfff5962dTrains:|R Transport, Scout, Frigate, Fireship, Galley, Boarding Vessel, Juggernaut, Bombard|R|n|n|cff00c4c4Cannot be built near small inland water areas.
 }
@@ -7131,7 +7125,7 @@ Archlich of the Scourge
 }
 
 STRING 1189
-// Units: U00A (Scourge Commander), EditorSuffix (Name - Editor Suffix)
+// Units: n009 (Revenant), EditorSuffix (Name - Editor Suffix)
 {
 (Scourge)
 }
@@ -7191,7 +7185,7 @@ Grand Inquisitor Isilien
 }
 
 STRING 1199
-// Units: N023 (Lord of the Scourge), EditorSuffix (Name - Editor Suffix)
+// Units: U00A (Scourge Commander), EditorSuffix (Name - Editor Suffix)
 {
 (Scourge)
 }
@@ -8240,7 +8234,7 @@ Revives slain Heroes and demi-heroes.
 }
 
 STRING 1374
-// Units: u028 (Control Point Defender), EditorSuffix (Name - Editor Suffix)
+// Units: N023 (Lord of the Scourge), EditorSuffix (Name - Editor Suffix)
 {
 (Scourge)
 }
@@ -8966,7 +8960,7 @@ Totemic Spirits
 }
 
 STRING 1495
-// Upgrades: Rune (Necromancer Adept Training,Necromancer Master Training), EditorSuffix (Editor Suffix)
+// Units: u028 (Control Point Defender), EditorSuffix (Name - Editor Suffix)
 {
 (Scourge)
 }
@@ -8990,7 +8984,7 @@ Upgrade to Improved Nerubian Tower
 }
 
 STRING 1499
-// Upgrades: Rugf (Ghoul Frenzy), EditorSuffix (Editor Suffix)
+// Upgrades: Rune (Necromancer Adept Training,Necromancer Master Training), EditorSuffix (Editor Suffix)
 {
 (Scourge)
 }
@@ -11798,7 +11792,7 @@ Multishot
 }
 
 STRING 1967
-// Units: o032 (Shipyard), Ubertip (Tooltip - Extended)
+// Units: u009 (Shipyard), Ubertip (Tooltip - Extended)
 {
 Boat construction facility.|n|cfff5962dTrains:|R Transport, Scout, Frigate, Fireship, Galley, Boarding Vessel, Juggernaut, Bombard|R|n|n|cff00c4c4Cannot be built near small inland water areas.
 }
@@ -11870,7 +11864,7 @@ W
 }
 
 STRING 1979
-// Upgrades: Rufb (Freezing Breath), EditorSuffix (Editor Suffix)
+// Upgrades: Rugf (Ghoul Frenzy), EditorSuffix (Editor Suffix)
 {
 (Scourge)
 }
@@ -11906,7 +11900,7 @@ STRING 1984
 }
 
 STRING 1985
-// Upgrades: Ruex (Exhume Corpses), EditorSuffix (Editor Suffix)
+// Upgrades: Rufb (Freezing Breath), EditorSuffix (Editor Suffix)
 {
 (Scourge)
 }
@@ -12464,7 +12458,7 @@ Z
 }
 
 STRING 2078
-// Upgrades: Ruar (Unholy Armor,Improved Unholy Armor,Advanced Unholy Armor), EditorSuffix (Editor Suffix)
+// Upgrades: Ruex (Exhume Corpses), EditorSuffix (Editor Suffix)
 {
 (Scourge)
 }
@@ -16420,7 +16414,7 @@ STRING 2737
 }
 
 STRING 2738
-// Units: h03H (Shipyard), Ubertip (Tooltip - Extended)
+// Units: o032 (Shipyard), Ubertip (Tooltip - Extended)
 {
 Boat construction facility.|n|cfff5962dTrains:|R Transport, Scout, Frigate, Fireship, Galley, Boarding Vessel, Juggernaut, Bombard|R|n|n|cff00c4c4Cannot be built near small inland water areas.
 }
@@ -16635,12 +16629,6 @@ STRING 2773
 Backbone worker and builder.|n|cfff5962dAbilities:|r Repair, Gather|n|cfff5962dCan Learn:|R Improved Lumber Harvesting|n|n|cffffcc00Attacks land units and trees.
 }
 
-STRING 2774
-// Units: u009 (Shipyard), Ubertip (Tooltip - Extended)
-{
-Boat construction facility for the Legion.|n|cfff5962dTrains:|R Transport Ship, Corsair, Dreadnought|R|n|n|cff00c4c4Cannot be built near small inland water areas.|r
-}
-
 STRING 2775
 // Units: h07S (Guard Tower), Hotkey (Hotkey)
 {
@@ -16755,6 +16743,12 @@ STRING 2793
 Sacrifice
 }
 
+STRING 2794
+// Units: o049 (Golden Dock), Ubertip (Tooltip - Extended)
+{
+Boat construction facility.|n|cfff5962dTrains:|R Transport, Scout, Frigate, Fireship, Galley, Boarding Vessel, Juggernaut, Bombard|R|n|n|cff00c4c4Cannot be built near small inland water areas.
+}
+
 STRING 2795
 // Units: h06N (Castle), Hotkey (Hotkey)
 {
@@ -16777,6 +16771,12 @@ STRING 2798
 // Units: o031 (War Mill), Ubertip (Tooltip - Extended)
 {
 Resource harvesting center and producer of Fel Horde enhancements. |n|cfff5962dResearches:|R Weapon Upgdrades, Armor Upgrades, Reinforced Defenses, Spiked Barricades, Spiritual Infusion
+}
+
+STRING 2799
+// Units: u01A (Shipyard), Ubertip (Tooltip - Extended)
+{
+Boat construction facility.|n|cfff5962dTrains:|R Transport, Scout, Frigate, Fireship, Galley, Boarding Vessel, Juggernaut, Bombard|R|n|n|cff00c4c4Cannot be built near small inland water areas.
 }
 
 STRING 2800
@@ -16888,7 +16888,7 @@ Build Royal Harbour
 }
 
 STRING 2818
-// Units: h07W (Shipyard), Ubertip (Tooltip - Extended)
+// Units: o02T (Shipyard), Ubertip (Tooltip - Extended)
 {
 Boat construction facility.|n|cfff5962dTrains:|R Transport, Scout, Frigate, Fireship, Galley, Boarding Vessel, Juggernaut, Bombard|R|n|n|cff00c4c4Cannot be built near small inland water areas.
 }
@@ -17459,7 +17459,7 @@ Dalaran Building
 }
 
 STRING 2913
-// Units: o03I (Shipyard), Ubertip (Tooltip - Extended)
+// Units: h07D (Shipyard), Ubertip (Tooltip - Extended)
 {
 Boat construction facility.|n|cfff5962dTrains:|R Transport, Scout, Frigate, Fireship, Galley, Boarding Vessel, Juggernaut, Bombard|R|n|n|cff00c4c4Cannot be built near small inland water areas.
 }
@@ -19721,6 +19721,12 @@ STRING 3289
 // Units: h076 (Shipyard), Tip (Tooltip - Basic)
 {
 Build Shipyard
+}
+
+STRING 3290
+// Units: o06D (Shipyard), Ubertip (Tooltip - Extended)
+{
+Boat construction facility.|n|cfff5962dTrains:|R Transport, Scout, Frigate, Fireship, Galley, Boarding Vessel, Juggernaut, Bombard|R|n|n|cff00c4c4Cannot be built near small inland water areas.
 }
 
 STRING 3291
@@ -22327,7 +22333,7 @@ Revive Scourge Commander
 }
 
 STRING 3725
-// Upgrades: R06N (Freezing Breath), EditorSuffix (Editor Suffix)
+// Upgrades: Ruar (Unholy Armor,Improved Unholy Armor,Advanced Unholy Armor), EditorSuffix (Editor Suffix)
 {
 (Scourge)
 }
@@ -22933,7 +22939,7 @@ STRING 3825
 }
 
 STRING 3826
-// Upgrades: R06L (Magic Sentry), EditorSuffix (Editor Suffix)
+// Upgrades: R06N (Freezing Breath), EditorSuffix (Editor Suffix)
 {
 (Scourge)
 }
@@ -22999,7 +23005,7 @@ Revive Lich King
 }
 
 STRING 3837
-// Upgrades: R06I (Defend), EditorSuffix (Editor Suffix)
+// Upgrades: R06L (Magic Sentry), EditorSuffix (Editor Suffix)
 {
 (Scourge)
 }
@@ -29219,12 +29225,6 @@ STRING 4873
 // Units: o04S (Trader), Hotkey (Hotkey)
 {
 W
-}
-
-STRING 4874
-// Units: u01A (Shipyard), Ubertip (Tooltip - Extended)
-{
-Boat construction facility for the Forsaken.|n|cfff5962dTrains:|R Transport Ship, Corsair, Dreadnought|R|n|n|cff00c4c4Cannot be built near small inland water areas.|r
 }
 
 STRING 4875
@@ -40509,7 +40509,7 @@ Z
 }
 
 STRING 6755
-// Upgrades: R04V (Magic Sentry), EditorSuffix (Editor Suffix)
+// Upgrades: R06I (Defend), EditorSuffix (Editor Suffix)
 {
 (Scourge)
 }
@@ -43390,7 +43390,7 @@ F
 }
 
 STRING 7232
-// Upgrades: R025 (Chaos), EditorSuffix (Editor Suffix)
+// Upgrades: R04V (Magic Sentry), EditorSuffix (Editor Suffix)
 {
 (Scourge)
 }
@@ -51123,6 +51123,12 @@ STRING 8520
 Opens the gate.
 }
 
+STRING 8521
+// Upgrades: R08T (Cannibalize), EditorSuffix (Editor Suffix)
+{
+(Scourge)
+}
+
 STRING 8522
 // Abilities: A0UA (Summon Ysondre), Researchhotkey (Hotkey - Learn)
 {
@@ -51592,7 +51598,7 @@ Primary structure, used to train Mur'gul Slaves, Royal Guards and receive gather
 }
 
 STRING 8600
-// Units: o049 (Golden Dock), Ubertip (Tooltip - Extended)
+// Units: h077 (Shipyard), Ubertip (Tooltip - Extended)
 {
 Boat construction facility.|n|cfff5962dTrains:|R Transport, Scout, Frigate, Fireship, Galley, Boarding Vessel, Juggernaut, Bombard|R|n|n|cff00c4c4Cannot be built near small inland water areas.
 }
@@ -68183,7 +68189,7 @@ Reduces movement speed by 75%, attack rate by 50%, and damage by 50% of a target
 }
 
 STRING 11366
-// Units: o02T (Shipyard), Ubertip (Tooltip - Extended)
+// Units: h076 (Shipyard), Ubertip (Tooltip - Extended)
 {
 Boat construction facility.|n|cfff5962dTrains:|R Transport, Scout, Frigate, Fireship, Galley, Boarding Vessel, Juggernaut, Bombard|R|n|n|cff00c4c4Cannot be built near small inland water areas.
 }
@@ -82803,7 +82809,7 @@ Research [|cffffcc00C|r] - Stone Form
 }
 
 STRING 13802
-// Upgrades: R01X (Disease Cloud), EditorSuffix (Editor Suffix)
+// Upgrades: R025 (Chaos), EditorSuffix (Editor Suffix)
 {
 (Scourge)
 }
@@ -82911,13 +82917,13 @@ Further increases the attack damage of Ghouls, Crypt Fiends, Zombies, Skeletal A
 }
 
 STRING 13820
-// Upgrades: R01D (Freezing Breath), EditorSuffix (Editor Suffix)
+// Upgrades: R01X (Disease Cloud), EditorSuffix (Editor Suffix)
 {
 (Scourge)
 }
 
 STRING 13821
-// Upgrades: R00Q (Magic Sentry), EditorSuffix (Editor Suffix)
+// Upgrades: R01D (Freezing Breath), EditorSuffix (Editor Suffix)
 {
 (Scourge)
 }
@@ -82935,7 +82941,7 @@ Causes Frost Wyrm attacks to temporarily stop production.
 }
 
 STRING 13824
-// Upgrades: R02X (Defend), EditorSuffix (Editor Suffix)
+// Upgrades: R00Q (Magic Sentry), EditorSuffix (Editor Suffix)
 {
 (Scourge)
 }
@@ -82995,7 +83001,7 @@ STRING 13833
 }
 
 STRING 13834
-// Upgrades: R051 (Necromancer Adept Training,Necromancer Master Training), EditorSuffix (Editor Suffix)
+// Upgrades: R02X (Defend), EditorSuffix (Editor Suffix)
 {
 (Scourge)
 }
@@ -83889,7 +83895,7 @@ Increases Sorceresses' mana capacity, mana regeneration rate, attack damage and 
 }
 
 STRING 13983
-// Upgrades: R07I (Necromancer Adept Training,Necromancer Master Training), EditorSuffix (Editor Suffix)
+// Upgrades: R051 (Necromancer Adept Training,Necromancer Master Training), EditorSuffix (Editor Suffix)
 {
 (Scourge)
 }
@@ -84309,7 +84315,7 @@ D
 }
 
 STRING 14053
-// Upgrades: R07W (Defend), EditorSuffix (Editor Suffix)
+// Upgrades: R07I (Necromancer Adept Training,Necromancer Master Training), EditorSuffix (Editor Suffix)
 {
 (Scourge)
 }
@@ -85119,7 +85125,7 @@ Improves Phase Blade by increasing its damage to <A057,DataA2>.
 }
 
 STRING 14188
-// Upgrades: R07X (Defend), EditorSuffix (Editor Suffix)
+// Upgrades: R07W (Defend), EditorSuffix (Editor Suffix)
 {
 (Scourge)
 }
@@ -85155,7 +85161,7 @@ Improves Orb of Annihilation by increasing its damage dealt to <Afak,DataA2>.
 }
 
 STRING 14194
-// Upgrades: R08T (Cannibalize), EditorSuffix (Editor Suffix)
+// Upgrades: R07X (Defend), EditorSuffix (Editor Suffix)
 {
 (Scourge)
 }
@@ -95987,7 +95993,7 @@ Q
 }
 
 STRING 16007
-// Units: o06D (Shipyard), Ubertip (Tooltip - Extended)
+// Units: h03H (Shipyard), Ubertip (Tooltip - Extended)
 {
 Boat construction facility.|n|cfff5962dTrains:|R Transport, Scout, Frigate, Fireship, Galley, Boarding Vessel, Juggernaut, Bombard|R|n|n|cff00c4c4Cannot be built near small inland water areas.
 }
@@ -97127,7 +97133,7 @@ Train Initiate Mage
 }
 
 STRING 16197
-// Units: h07D (Shipyard), Ubertip (Tooltip - Extended)
+// Units: h07W (Shipyard), Ubertip (Tooltip - Extended)
 {
 Boat construction facility.|n|cfff5962dTrains:|R Transport, Scout, Frigate, Fireship, Galley, Boarding Vessel, Juggernaut, Bombard|R|n|n|cff00c4c4Cannot be built near small inland water areas.
 }
@@ -97313,7 +97319,7 @@ Creates a shop with purchasable items.
 }
 
 STRING 16228
-// Units: h077 (Shipyard), Ubertip (Tooltip - Extended)
+// Units: o03I (Shipyard), Ubertip (Tooltip - Extended)
 {
 Boat construction facility.|n|cfff5962dTrains:|R Transport, Scout, Frigate, Fireship, Galley, Boarding Vessel, Juggernaut, Bombard|R|n|n|cff00c4c4Cannot be built near small inland water areas.
 }
@@ -97643,7 +97649,7 @@ E
 }
 
 STRING 16283
-// Upgrades: R03O (Animal War Training), Hotkey (Hotkey)
+// Abilities: A0O8 (Devour Magic), Researchhotkey (Hotkey - Learn)
 {
 E
 }
@@ -98609,7 +98615,7 @@ Siege troop production building.|n|cfff5962dTrains:|R Scorpion, Mangonel
 }
 
 STRING 16461
-// Abilities: A0O8 (Devour Magic), Researchhotkey (Hotkey - Learn)
+// Abilities: A0RO (Summon Succubus), Hotkey (Hotkey - Normal)
 {
 E
 }
@@ -99041,7 +99047,7 @@ Learn Overclock - [|cffffcc00Level %d|r]
 }
 
 STRING 16539
-// Abilities: A0RO (Summon Succubus), Hotkey (Hotkey - Normal)
+// Abilities: A0RT (Stone Armor), Hotkey (Hotkey - Normal)
 {
 E
 }
@@ -99059,7 +99065,7 @@ Jastor Gallywix
 }
 
 STRING 16542
-// Abilities: A0RT (Stone Armor), Hotkey (Hotkey - Normal)
+// Abilities: A0RT (Stone Armor), Unhotkey (Hotkey - Turn Off)
 {
 E
 }
@@ -99221,7 +99227,7 @@ STRING 16569
 }
 
 STRING 16570
-// Abilities: A0RT (Stone Armor), Unhotkey (Hotkey - Turn Off)
+// Abilities: A0RX (Raise Plaguelings), Hotkey (Hotkey - Normal)
 {
 E
 }
@@ -99329,7 +99335,7 @@ Disorienting Howl
 }
 
 STRING 16588
-// Abilities: A0RX (Raise Plaguelings), Hotkey (Hotkey - Normal)
+// Abilities: A0RX (Raise Plaguelings), Researchhotkey (Hotkey - Learn)
 {
 E
 }
@@ -99503,7 +99509,7 @@ Summon Lucille
 }
 
 STRING 16622
-// Abilities: A0RX (Raise Plaguelings), Researchhotkey (Hotkey - Learn)
+// Abilities: A0RZ (Arcane Bomb), Hotkey (Hotkey - Normal)
 {
 E
 }
@@ -99641,7 +99647,7 @@ Versatile foot soldier of Lordaeron.|n|cfff5962dAbilities:|R Charge, Defend, Com
 }
 
 STRING 16646
-// Abilities: A0RZ (Arcane Bomb), Hotkey (Hotkey - Normal)
+// Abilities: A0RZ (Arcane Bomb), Unhotkey (Hotkey - Turn Off)
 {
 E
 }
@@ -99719,7 +99725,7 @@ Mor'ghor
 }
 
 STRING 16661
-// Abilities: A0RZ (Arcane Bomb), Unhotkey (Hotkey - Turn Off)
+// Abilities: A0RZ (Arcane Bomb), Researchhotkey (Hotkey - Learn)
 {
 E
 }
@@ -99959,13 +99965,13 @@ Warrior hero, adept at melee combat and bolstering nearby allies.|n|cfff5962dAbi
 }
 
 STRING 16710
-// Abilities: A0RZ (Arcane Bomb), Researchhotkey (Hotkey - Learn)
+// Abilities: A0SJ (Rain of Fire), Hotkey (Hotkey - Normal)
 {
 E
 }
 
 STRING 16711
-// Abilities: A0SJ (Rain of Fire), Hotkey (Hotkey - Normal)
+// Abilities: A0FS (Arcane Barrage), Hotkey (Hotkey - Normal)
 {
 E
 }
@@ -101987,7 +101993,7 @@ Summon Kel'tuzad
 }
 
 STRING 17058
-// Abilities: A0FS (Arcane Barrage), Hotkey (Hotkey - Normal)
+// Abilities: A0S7 (Rain of Light), Hotkey (Hotkey - Normal)
 {
 E
 }
@@ -102599,7 +102605,7 @@ Mystical Hero, adept at healing and supporting magic.|n|cfff5962dCan Learn:|R He
 }
 
 STRING 17164
-// Abilities: A0S7 (Rain of Light), Hotkey (Hotkey - Normal)
+// Abilities: A0S7 (Rain of Light), Researchhotkey (Hotkey - Learn)
 {
 E
 }
@@ -102917,7 +102923,7 @@ Q
 }
 
 STRING 17219
-// Abilities: A0S7 (Rain of Light), Researchhotkey (Hotkey - Learn)
+// Abilities: A0TM (Spirit Orb), Hotkey (Hotkey - Normal)
 {
 E
 }
@@ -103013,7 +103019,7 @@ Learn Devour Magic - [|cffffcc00Level %d|r]
 }
 
 STRING 17236
-// Abilities: A0TM (Spirit Orb), Hotkey (Hotkey - Normal)
+// Abilities: A0TM (Spirit Orb), Researchhotkey (Hotkey - Learn)
 {
 E
 }
@@ -103031,7 +103037,7 @@ STRING 17238
 }
 
 STRING 17239
-// Abilities: A0TM (Spirit Orb), Researchhotkey (Hotkey - Learn)
+// Abilities: A0TM (Spirit Orb), Unhotkey (Hotkey - Turn Off)
 {
 E
 }
@@ -103199,13 +103205,13 @@ Q
 }
 
 STRING 17267
-// Abilities: A0TM (Spirit Orb), Unhotkey (Hotkey - Turn Off)
+// Abilities: A0UF (Spike Aura), Researchhotkey (Hotkey - Learn)
 {
 E
 }
 
 STRING 17268
-// Abilities: A0UF (Spike Aura), Researchhotkey (Hotkey - Learn)
+// Abilities: A0US (Protector of King's), Researchhotkey (Hotkey - Learn)
 {
 E
 }
@@ -103331,7 +103337,7 @@ STRING 17289
 }
 
 STRING 17290
-// Abilities: A0US (Protector of King's), Researchhotkey (Hotkey - Learn)
+// Abilities: A0UX (Summon Zombie), Hotkey (Hotkey - Normal)
 {
 E
 }
@@ -103559,7 +103565,7 @@ Reincarnation
 }
 
 STRING 17350
-// Abilities: A0UX (Summon Zombie), Hotkey (Hotkey - Normal)
+// Abilities: A0V4 (Black Arrow), Hotkey (Hotkey - Normal)
 {
 E
 }
@@ -105909,7 +105915,7 @@ Teleports <AUds,DataA1> of the player's non-hero units within the targeted area 
 }
 
 STRING 17760
-// Abilities: A0V4 (Black Arrow), Hotkey (Hotkey - Normal)
+// Abilities: A0VE (Flame Shield), Hotkey (Hotkey - Normal)
 {
 E
 }
@@ -106085,7 +106091,7 @@ Q
 }
 
 STRING 17790
-// Abilities: A0VE (Flame Shield), Hotkey (Hotkey - Normal)
+// Abilities: A0VW (Wrath of Ragnaros), Researchhotkey (Hotkey - Learn)
 {
 E
 }
@@ -106571,7 +106577,7 @@ Q
 }
 
 STRING 17884
-// Abilities: A0VW (Wrath of Ragnaros), Researchhotkey (Hotkey - Learn)
+// Abilities: A0VW (Wrath of Ragnaros), Hotkey (Hotkey - Normal)
 {
 E
 }
@@ -106631,7 +106637,7 @@ Q
 }
 
 STRING 17894
-// Abilities: A0VW (Wrath of Ragnaros), Hotkey (Hotkey - Normal)
+// Abilities: A0WP (Curse of Executus), Researchhotkey (Hotkey - Learn)
 {
 E
 }
@@ -106829,7 +106835,7 @@ Q
 }
 
 STRING 17929
-// Abilities: A0WP (Curse of Executus), Researchhotkey (Hotkey - Learn)
+// Abilities: A0WP (Curse of Executus), Hotkey (Hotkey - Normal)
 {
 E
 }
@@ -106949,7 +106955,7 @@ Adds <A0WH,DataA4> bonus damage to the caster's attack.
 }
 
 STRING 17952
-// Abilities: A0WP (Curse of Executus), Hotkey (Hotkey - Normal)
+// Abilities: A0X1 (Flame Shield), Hotkey (Hotkey - Normal)
 {
 E
 }
@@ -107849,7 +107855,7 @@ Q
 }
 
 STRING 18109
-// Abilities: A0X1 (Flame Shield), Hotkey (Hotkey - Normal)
+// Abilities: A0X8 (Summon Shadowspawn), Hotkey (Hotkey - Normal)
 {
 E
 }
@@ -107879,7 +107885,7 @@ STRING 18114
 }
 
 STRING 18115
-// Abilities: A0X8 (Summon Shadowspawn), Hotkey (Hotkey - Normal)
+// Abilities: A0XE (Goblin Flare), Hotkey (Hotkey - Normal)
 {
 E
 }
@@ -107975,7 +107981,7 @@ An aura that gives friendly nearby units a damage shield, which deals 25% of an 
 }
 
 STRING 18131
-// Abilities: A0XE (Goblin Flare), Hotkey (Hotkey - Normal)
+// Abilities: A0XC (Bloodlust), Hotkey (Hotkey - Normal)
 {
 E
 }
@@ -108023,7 +108029,7 @@ Path Chosen
 }
 
 STRING 18139
-// Abilities: A0XC (Bloodlust), Hotkey (Hotkey - Normal)
+// Abilities: A0XC (Bloodlust), Unhotkey (Hotkey - Turn Off)
 {
 E
 }
@@ -108065,7 +108071,7 @@ Protector of King's
 }
 
 STRING 18146
-// Abilities: A0XC (Bloodlust), Unhotkey (Hotkey - Turn Off)
+// Abilities: A0XJ (Tsunami), Hotkey (Hotkey - Normal)
 {
 E
 }
@@ -108095,7 +108101,7 @@ Lilian Voss
 }
 
 STRING 18151
-// Abilities: A0XJ (Tsunami), Hotkey (Hotkey - Normal)
+// Abilities: A0MJ (Parasite), Hotkey (Hotkey - Normal)
 {
 E
 }
@@ -108179,7 +108185,7 @@ Pulverize - [|cffffcc00Level 3|r]
 }
 
 STRING 18165
-// Abilities: A0MJ (Parasite), Hotkey (Hotkey - Normal)
+// Abilities: A0MJ (Parasite), Unhotkey (Hotkey - Turn Off)
 {
 E
 }
@@ -108329,7 +108335,7 @@ Summon Zombie
 }
 
 STRING 18191
-// Abilities: A0MJ (Parasite), Unhotkey (Hotkey - Turn Off)
+// Abilities: A0YQ (Bloodlust), Hotkey (Hotkey - Normal)
 {
 E
 }
@@ -108431,7 +108437,7 @@ Train Fusillier
 }
 
 STRING 18209
-// Abilities: A0YQ (Bloodlust), Hotkey (Hotkey - Normal)
+// Abilities: A0YQ (Bloodlust), Unhotkey (Hotkey - Turn Off)
 {
 E
 }
@@ -108996,7 +109002,7 @@ Adds <ACbk,DataA1> bonus damage to attacks. Units killed while under the effect 
 }
 
 STRING 18306
-// Abilities: A0YQ (Bloodlust), Unhotkey (Hotkey - Turn Off)
+// Abilities: A0HG (Unholy Armor), Hotkey (Hotkey - Normal)
 {
 E
 }
@@ -109284,7 +109290,7 @@ STRING 18354
 }
 
 STRING 18355
-// Abilities: A0HG (Unholy Armor), Hotkey (Hotkey - Normal)
+// Abilities: A0HG (Unholy Armor), Unhotkey (Hotkey - Turn Off)
 {
 E
 }
@@ -109386,7 +109392,7 @@ Q
 }
 
 STRING 18372
-// Abilities: A0HG (Unholy Armor), Unhotkey (Hotkey - Turn Off)
+// Abilities: A0MU (Build Oil Rig), Hotkey (Hotkey - Normal)
 {
 E
 }
@@ -109740,7 +109746,7 @@ Titanforged
 }
 
 STRING 18434
-// Abilities: A0MU (Build Oil Rig), Hotkey (Hotkey - Normal)
+// Abilities: A0ZB (Devotion Aura), Researchhotkey (Hotkey - Learn)
 {
 E
 }
@@ -109818,7 +109824,7 @@ Learn Curse of Executus - [|cffffcc00Level %d|r]
 }
 
 STRING 18447
-// Abilities: A0ZB (Devotion Aura), Researchhotkey (Hotkey - Learn)
+// Abilities: A0ZG (Blood Absorption), Researchhotkey (Hotkey - Learn)
 {
 E
 }
@@ -109938,7 +109944,7 @@ Q
 }
 
 STRING 18468
-// Abilities: A0ZG (Blood Absorption), Researchhotkey (Hotkey - Learn)
+// Abilities: A07D (Dimensional Jump), Hotkey (Hotkey - Normal)
 {
 E
 }
@@ -110280,7 +110286,7 @@ Summon Fire Wyrm
 }
 
 STRING 18527
-// Abilities: A07D (Dimensional Jump), Hotkey (Hotkey - Normal)
+// Upgrades: Rhlh (Improved Lumber Harvesting,Advanced Lumber Harvesting), Hotkey (Hotkey)
 {
 E
 }
@@ -110785,7 +110791,7 @@ Q
 }
 
 STRING 18640
-// Upgrades: Rhlh (Improved Lumber Harvesting,Advanced Lumber Harvesting), Hotkey (Hotkey)
+// Upgrades: Renb (Nature's Blessing), Hotkey (Hotkey)
 {
 E
 }
@@ -112009,7 +112015,7 @@ Q
 }
 
 STRING 18877
-// Upgrades: Renb (Nature's Blessing), Hotkey (Hotkey)
+// Upgrades: R06K (Defend), Hotkey (Hotkey)
 {
 E
 }
@@ -112573,19 +112579,19 @@ Multishot
 }
 
 STRING 18977
-// Upgrades: R06K (Defend), Hotkey (Hotkey)
-{
-E
-}
-
-STRING 18978
 // Upgrades: R06G (Defend), Hotkey (Hotkey)
 {
 E
 }
 
-STRING 18979
+STRING 18978
 // Upgrades: R06F (Defend), Hotkey (Hotkey)
+{
+E
+}
+
+STRING 18979
+// Upgrades: R064 (Nature's Blessing), Hotkey (Hotkey)
 {
 E
 }
@@ -112891,7 +112897,7 @@ Gives a total of <Aamk,DataA1> points to Intelligence, and Strength
 }
 
 STRING 19035
-// Upgrades: R064 (Nature's Blessing), Hotkey (Hotkey)
+// Upgrades: R03M (Defend), Hotkey (Hotkey)
 {
 E
 }
@@ -113713,7 +113719,7 @@ Medium dragon of the Dragonmaw Clan.|n|r|n|cffffcc00Attacks land and air units.|
 }
 
 STRING 19183
-// Upgrades: R03M (Defend), Hotkey (Hotkey)
+// Upgrades: R02P (Backpack), Hotkey (Hotkey)
 {
 E
 }
@@ -113725,7 +113731,7 @@ Mighty warriors of the Burning Legion.|n|cfff5962dAbilities:|R Pulverize|n|n|cff
 }
 
 STRING 19185
-// Upgrades: R02P (Backpack), Hotkey (Hotkey)
+// Upgrades: R03O (Animal War Training), Hotkey (Hotkey)
 {
 E
 }

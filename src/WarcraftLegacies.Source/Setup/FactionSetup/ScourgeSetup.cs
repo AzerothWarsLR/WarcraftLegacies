@@ -67,11 +67,18 @@ The Necropolis of Naxxramas is become the perfect weapon for the Scourge, but yo
       Scourge.ModObjectLimit(FourCC("uobs"), 4); //Obsidian Statue
       Scourge.ModObjectLimit(FourCC("ufro"), 4); //Frost Wyrm
       Scourge.ModObjectLimit(FourCC("h00H"), 6); //Death Knight
-      Scourge.ModObjectLimit(FourCC("ubot"), Faction.UNLIMITED); //Undead Transport Ship
-      Scourge.ModObjectLimit(FourCC("udes"), Faction.UNLIMITED); //Undead Frigate
-      Scourge.ModObjectLimit(FourCC("uubs"), 6); //Undead Battleship
       Scourge.ModObjectLimit(FourCC("ubsp"), 6); //Destroyer
       Scourge.ModObjectLimit(FourCC("nfgl"), 2); //Plague Titan
+
+      //Ship
+      Scourge.ModObjectLimit(FourCC("ubot"), Faction.UNLIMITED); //Undead Transport Ship
+      Scourge.ModObjectLimit(FourCC("h0AT"), Faction.UNLIMITED); //Scout
+      Scourge.ModObjectLimit(FourCC("h0AW"), Faction.UNLIMITED); //Frigate
+      Scourge.ModObjectLimit(FourCC("h0BM"), Faction.UNLIMITED); //Fireship
+      Scourge.ModObjectLimit(FourCC("h0AZ"), Faction.UNLIMITED); //Galley
+      Scourge.ModObjectLimit(FourCC("h0AQ"), Faction.UNLIMITED); //Boarding
+      Scourge.ModObjectLimit(FourCC("h0BB"), Faction.UNLIMITED); //Juggernaut
+      Scourge.ModObjectLimit(FourCC("h0B9"), Faction.UNLIMITED); //Bombard
 
       //Demi-Heroes
       Scourge.ModObjectLimit(FourCC("ubdd"), 1); //Sapphiron

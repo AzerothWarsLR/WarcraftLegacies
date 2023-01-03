@@ -54,15 +54,22 @@ Your primary objective is to summon the Burning Legion. Invade the city of Dalar
       Legion.ModObjectLimit(FourCC("ninc"), Faction.UNLIMITED); //Burning archer
       Legion.ModObjectLimit(FourCC("n04K"), Faction.UNLIMITED); //Succubus
       Legion.ModObjectLimit(FourCC("n04J"), Faction.UNLIMITED); //Felstalker
-      Legion.ModObjectLimit(FourCC("ubot"), Faction.UNLIMITED); //Undead Transport SHip
-      Legion.ModObjectLimit(FourCC("udes"), Faction.UNLIMITED); //Undead Frigate
-      Legion.ModObjectLimit(FourCC("uubs"), 6); //Undead Battleship
       Legion.ModObjectLimit(FourCC("n04O"), 6); //Doomguard
       Legion.ModObjectLimit(FourCC("n04L"), 6); //Infernal Juggernaut
       Legion.ModObjectLimit(FourCC("ninf"), 12); //Infernal
       Legion.ModObjectLimit(FourCC("n04H"), Faction.UNLIMITED); //Fel Guard
       Legion.ModObjectLimit(FourCC("n04U"), 4); //Dragon
       Legion.ModObjectLimit(FourCC("n03L"), 4); //Barge
+
+      //Ship
+      Legion.ModObjectLimit(FourCC("ubot"), Faction.UNLIMITED); //Undead Transport Ship
+      Legion.ModObjectLimit(FourCC("h0AT"), Faction.UNLIMITED); //Scout
+      Legion.ModObjectLimit(FourCC("h0AW"), Faction.UNLIMITED); //Frigate
+      Legion.ModObjectLimit(FourCC("h0BM"), Faction.UNLIMITED); //Fireship
+      Legion.ModObjectLimit(FourCC("h0AZ"), Faction.UNLIMITED); //Galley
+      Legion.ModObjectLimit(FourCC("h0AQ"), Faction.UNLIMITED); //Boarding
+      Legion.ModObjectLimit(FourCC("h0BB"), Faction.UNLIMITED); //Juggernaut
+      Legion.ModObjectLimit(FourCC("h0B9"), Faction.UNLIMITED); //Bombard
 
       Legion.ModObjectLimit(FourCC("n05R"), 1); //Felguard
       Legion.ModObjectLimit(FourCC("n06H"), 1); //Pit Fiend

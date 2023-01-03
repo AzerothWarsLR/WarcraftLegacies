@@ -48,16 +48,23 @@ To do so, march North to Quel'thalas and capture the Sunwell. This will unlock S
       Forsaken.ModObjectLimit(FourCC("n07S"), Faction.UNLIMITED); //Deadeye
       Forsaken.ModObjectLimit(FourCC("h08P"), Faction.UNLIMITED); //Sorceress
       Forsaken.ModObjectLimit(FourCC("u01R"), Faction.UNLIMITED); //Apothecary
-
       Forsaken.ModObjectLimit(FourCC("u02G"), 12); //Undercity Guardian
       Forsaken.ModObjectLimit(FourCC("n07V"), 6); //Elder Banshee
       Forsaken.ModObjectLimit(FourCC("o05H"), 8); //PlagueFlyer
       Forsaken.ModObjectLimit(FourCC("n0BY"), 6); //dread knight
       Forsaken.ModObjectLimit(FourCC("u01V"), 2); //Valyr
       Forsaken.ModObjectLimit(FourCC("ubot"), Faction.UNLIMITED); //Undead Transport Ship
-      Forsaken.ModObjectLimit(FourCC("udes"), Faction.UNLIMITED); //Undead Frigate
-      Forsaken.ModObjectLimit(FourCC("uubs"), 6); //Undead Battleship
       Forsaken.ModObjectLimit(Constants.UNIT_N07W_PLAGUE_REVENANT_FORSAKEN, 12);
+
+      //Ship
+      Forsaken.ModObjectLimit(FourCC("ubot"), Faction.UNLIMITED); //Undead Transport Ship
+      Forsaken.ModObjectLimit(FourCC("h0AT"), Faction.UNLIMITED); //Scout
+      Forsaken.ModObjectLimit(FourCC("h0AW"), Faction.UNLIMITED); //Frigate
+      Forsaken.ModObjectLimit(FourCC("h0BM"), Faction.UNLIMITED); //Fireship
+      Forsaken.ModObjectLimit(FourCC("h0AZ"), Faction.UNLIMITED); //Galley
+      Forsaken.ModObjectLimit(FourCC("h0AQ"), Faction.UNLIMITED); //Boarding
+      Forsaken.ModObjectLimit(FourCC("h0BB"), Faction.UNLIMITED); //Juggernaut
+      Forsaken.ModObjectLimit(FourCC("h0B9"), Faction.UNLIMITED); //Bombard
 
       Forsaken.ModObjectLimit(FourCC("U01O"), 1); //Putress
       Forsaken.ModObjectLimit(FourCC("Usyl"), 1); //Sylvanas
