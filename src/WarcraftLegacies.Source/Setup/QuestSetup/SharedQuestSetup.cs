@@ -50,6 +50,8 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
         faction.AddQuest(new QuestSkullOfGuldan(
           preplacedUnitSystem.GetUnit(Constants.UNIT_N0DK_SKULL_OF_GUL_DAN_PEDESTAL),
           faction == LegionSetup.Legion || faction == IllidanSetup.Illidan, artifactSetup.SkullOfGuldan));
+        faction.AddQuest(new QuestRagnaros(
+          preplacedUnitSystem.GetUnit(Constants.UNIT_N02B_ALTAR_OF_FLAMES_PEDESTAL)));
       }
     }
   }

@@ -24,9 +24,9 @@ namespace WarcraftLegacies.Source.Quests
       "Ragnaros is hiding in the Firelands, summoning him would enable us to claim Sulfuras, his mighty weapon.",
       "ReplaceableTextures\\CommandButtons\\BTNGuldanSkull.blp")
     {
-        AddObjective(new ObjectiveHeroWithLevelInRect(12, Regions.SkullRetrieval, "The Portal to the Firelands"));  //TODO change region
+        AddObjective(new ObjectiveHeroWithLevelInRect(12, Regions.RagnarosSummon, "The Portal to the Firelands")); 
         AddObjective(new ObjectiveControlLevel(
-          ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N0BL_EXODAR_REGALIS_25GOLD_MIN), 20));        //TODO add new cp to blackrock
+          ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N024_BLACKROCK_DEPTHS_20GOLD_MIN), 15));    
       _RagPedestal = RagPedestal;
     }
 
@@ -34,7 +34,7 @@ namespace WarcraftLegacies.Source.Quests
     protected override string RewardDescription => "Summoning Ragnaros to Blackrock";
 
     /// <inheritdoc/>
-    protected override string CompletionPopup => $" Player has summoned Ragnaros to Blackrock"; //TODO change this to the summoning player
+    protected override string CompletionPopup => $" Player has summoned Ragnaros to Blackrock";                 //TODO change this to the summoning player
 
     /// <inheritdoc/>
     protected override string FailurePopup => 
@@ -44,7 +44,7 @@ namespace WarcraftLegacies.Source.Quests
     protected override void OnComplete(Faction completingFaction)
     {
       LegendNeutral.Ragnaros.ForceCreate(Player(PLAYER_NEUTRAL_AGGRESSIVE), new Point(12332, -10597), 110);
-      //TODO remove pedestal
+                                                                                                                    //TODO remove pedestal
     }
   }
 }

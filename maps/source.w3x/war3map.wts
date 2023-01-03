@@ -5760,6 +5760,12 @@ STRING 960
 Spinebark Grove (10gold/min)
 }
 
+STRING 961
+// Units: n024 (Blackrock Depths (20gold/min)), Name (Name)
+{
+Blackrock Depths (20gold/min)
+}
+
 STRING 962
 // Units: oshy (Horde Pier), Ubertip (Tooltip - Extended)
 {
@@ -9212,7 +9218,7 @@ STRING 1536
 }
 
 STRING 1537
-// Units: h06C (Aviary), Hotkey (Hotkey)
+// Units: h06C (High Tower), Hotkey (Hotkey)
 {
 D
 }
@@ -14280,7 +14286,7 @@ STRING 2381
 }
 
 STRING 2382
-// Units: n04S (Azjol-Nerub), Name (Name)
+// Units: n038 (Azjol-Nerub), Name (Name)
 {
 Azjol-Nerub
 }
@@ -14959,15 +14965,15 @@ Ruins of Eldre'thalas
 }
 
 STRING 2495
-// Units: n03H (Dalaran Dungeons), EditorSuffix (Name - Editor Suffix)
+// Units: h06C (High Tower), Name (Name)
 {
-(Inside)
+High Tower
 }
 
 STRING 2496
-// Units: n03H (Dalaran Dungeons), Name (Name)
+// Units: h06C (High Tower), Tip (Tooltip - Basic)
 {
-Dalaran Dungeons
+Build High Tower
 }
 
 STRING 2497
@@ -15055,9 +15061,9 @@ Deeprun Tram
 }
 
 STRING 2511
-// Units: n03A (Dalaran Dungeons), Name (Name)
+// Units: h06C (High Tower), Ubertip (Tooltip - Extended)
 {
-Dalaran Dungeons
+Flying unit production building.|n|cfff5962dTrains:|r Pegasus Knight, Thunder Eagle, Throne Guard|n|cfff5962dResearches:|r Pegasus Taming
 }
 
 STRING 2512
@@ -15082,12 +15088,6 @@ STRING 2515
 // Units: n039 (Big Tree), Tip (Tooltip - Basic)
 {
 Big Tree
-}
-
-STRING 2516
-// Units: n038 (Azjol-Nerub), Name (Name)
-{
-Azjol-Nerub
 }
 
 STRING 2517
@@ -15136,12 +15136,6 @@ STRING 2524
 // Units: n00A (Farstrider), Ubertip (Tooltip - Extended)
 {
 Agile, deadly and skilled Rangers of Quel'Thalas.|n|cfff5962dAbilities:|R Splintering Arrows, Smoke Bomb|n|cfff5962dCan Learn:|R Feint, Aimed Shot, Improved Bows|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land and air units.|r
-}
-
-STRING 2525
-// Units: n033 (Blackrock Entrance), Name (Name)
-{
-Blackrock Entrance
 }
 
 STRING 2526
@@ -16909,18 +16903,6 @@ STRING 2820
 // Units: h07P (Workshop), Hotkey (Hotkey)
 {
 D
-}
-
-STRING 2821
-// Units: h06C (Aviary), Name (Name)
-{
-Aviary
-}
-
-STRING 2822
-// Units: h06C (Aviary), Tip (Tooltip - Basic)
-{
-Build Aviary
 }
 
 STRING 2823
@@ -19333,6 +19315,18 @@ STRING 3223
 S
 }
 
+STRING 3224
+// Units: n02B (Altar of Flames), Name (Name)
+{
+Altar of Flames
+}
+
+STRING 3225
+// Units: n02B (Altar of Flames), EditorSuffix (Name - Editor Suffix)
+{
+(pedestal)
+}
+
 STRING 3226
 // Units: o02J (Worgen), Ubertip (Tooltip - Extended)
 {
@@ -20057,6 +20051,12 @@ STRING 3346
 // Units: h025 (Stormwind Cannon), Ubertip (Tooltip - Extended)
 {
 Heavy defensive structure. Particularly effective against clusters of troops.|n|cffffcc00Attacks land units and trees.|r
+}
+
+STRING 3347
+// Abilities: A0J5 (Chase Illidan to Outland), EditorSuffix (Editor Suffix)
+{
+(Sentinel)
 }
 
 STRING 3348
@@ -20881,6 +20881,12 @@ STRING 3484
 Kezan Trading Center
 }
 
+STRING 3485
+// Abilities: A0OC (Extract Vial), EditorSuffix (Editor Suffix)
+{
+(All)
+}
+
 STRING 3486
 // Units: h010 (Jaina's Sanctum), Name (Name)
 {
@@ -21406,6 +21412,12 @@ STRING 3573
 // Units: h003 (Silvermoon Palace), Name (Name)
 {
 Silvermoon Palace
+}
+
+STRING 3574
+// Units: U02K (Lord of the Firelands), Tip (Tooltip - Basic)
+{
+Summon Ragnaros
 }
 
 STRING 3575
@@ -25384,6 +25396,12 @@ STRING 4237
 // Items: I01G (Summon Wisps), Name (Name)
 {
 Summon Wisps
+}
+
+STRING 4238
+// Abilities: A0PY (Summon Ragnaros), Name (Name)
+{
+Summon Ragnaros
 }
 
 STRING 4239
@@ -74246,7 +74264,7 @@ Galen has always been an adept commander and his skills give his armies increase
 }
 
 STRING 12378
-// Abilities: A0OC (Extract Vial), EditorSuffix (Editor Suffix)
+// Abilities: A0PY (Summon Ragnaros), EditorSuffix (Editor Suffix)
 {
 (All)
 }
@@ -86402,7 +86420,7 @@ ratx
 }
 
 STRING 14404
-// Upgrades: Ruwb (Web), Hotkey (Hotkey)
+// Abilities: A0PY (Summon Ragnaros), Hotkey (Hotkey - Normal)
 {
 X
 }
@@ -86468,7 +86486,7 @@ STRING 14414
 }
 
 STRING 14415
-// Upgrades: Ruex (Exhume Corpses), Hotkey (Hotkey)
+// Upgrades: Ruwb (Web), Hotkey (Hotkey)
 {
 X
 }
@@ -86534,7 +86552,7 @@ STRING 14425
 }
 
 STRING 14426
-// Upgrades: Ruba (Banshee Adept Training,Banshee Master Training), Hotkey (Hotkey)
+// Upgrades: Ruex (Exhume Corpses), Hotkey (Hotkey)
 {
 X
 }
@@ -86570,7 +86588,7 @@ X
 }
 
 STRING 14432
-// Upgrades: Rowd (Witch Doctor Adept Training,Witch Doctor Master Training), Hotkey (Hotkey)
+// Upgrades: Ruba (Banshee Adept Training,Banshee Master Training), Hotkey (Hotkey)
 {
 X
 }
@@ -86960,7 +86978,7 @@ STRING 14496
 }
 
 STRING 14497
-// Upgrades: Rovs (Envenomed Spears), Hotkey (Hotkey)
+// Upgrades: Rowd (Witch Doctor Adept Training,Witch Doctor Master Training), Hotkey (Hotkey)
 {
 X
 }
@@ -87014,7 +87032,7 @@ rlev
 }
 
 STRING 14506
-// Upgrades: Rhst (Sorceress Adept Training,Sorceress Master Training), Hotkey (Hotkey)
+// Upgrades: Rovs (Envenomed Spears), Hotkey (Hotkey)
 {
 X
 }
@@ -87098,7 +87116,7 @@ rtma
 }
 
 STRING 14520
-// Upgrades: Rhri (Long Rifles), Hotkey (Hotkey)
+// Upgrades: Rhst (Sorceress Adept Training,Sorceress Master Training), Hotkey (Hotkey)
 {
 X
 }
@@ -87140,7 +87158,7 @@ rlev
 }
 
 STRING 14527
-// Upgrades: Rhcd (Cloud), Hotkey (Hotkey)
+// Upgrades: Rhri (Long Rifles), Hotkey (Hotkey)
 {
 X
 }
@@ -87290,7 +87308,7 @@ Summon Saiden
 }
 
 STRING 14552
-// Upgrades: Reib (Improved Bows), Hotkey (Hotkey)
+// Upgrades: Rhcd (Cloud), Hotkey (Hotkey)
 {
 X
 }
@@ -87735,13 +87753,13 @@ STRING 14625
 }
 
 STRING 14626
-// Upgrades: R06N (Freezing Breath), Hotkey (Hotkey)
+// Upgrades: Reib (Improved Bows), Hotkey (Hotkey)
 {
 X
 }
 
 STRING 14627
-// Upgrades: R06J (Defend), Hotkey (Hotkey)
+// Upgrades: R06N (Freezing Breath), Hotkey (Hotkey)
 {
 X
 }
@@ -87831,13 +87849,13 @@ STRING 14641
 }
 
 STRING 14642
-// Upgrades: R061 (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: R06J (Defend), Hotkey (Hotkey)
 {
 X
 }
 
 STRING 14643
-// Upgrades: R05P (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
+// Upgrades: R061 (Magic Sentry), Hotkey (Hotkey)
 {
 X
 }
@@ -88053,7 +88071,7 @@ X
 }
 
 STRING 14679
-// Upgrades: R04G (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: R05P (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
 {
 X
 }
@@ -88623,6 +88641,12 @@ STRING 14773
 Improves Rangers, Farstriders, Ballistas, Vereesa, and Sylvanas by increasing their attack range by 150 and attack speed by 5%.
 }
 
+STRING 14774
+// Abilities: A0PY (Summon Ragnaros), Ubertip (Tooltip - Normal - Extended)
+{
+Summon Ragnaros if you have a level 12 hero at the Altar of Fire
+}
+
 STRING 14775
 // Upgrades: R03H (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
 {
@@ -88645,6 +88669,12 @@ STRING 14778
 // Upgrades: R01Q (Magic Sentry), Ubertip (Tooltip - Extended)
 {
 Allows the training of Pegasus Knights from the Aviary.
+}
+
+STRING 14779
+// Upgrades: R04G (Magic Sentry), Hotkey (Hotkey)
+{
+X
 }
 
 STRING 14780
@@ -92591,7 +92621,7 @@ Summon Jaina Proudmoore
 }
 
 STRING 15447
-// Abilities: A0J5 (Chase Illidan to Outland), EditorSuffix (Editor Suffix)
+// Abilities: A0J9 (Quel'thalas selection), EditorSuffix (Editor Suffix)
 {
 (faction select)
 }
@@ -92615,7 +92645,7 @@ F
 }
 
 STRING 15451
-// Abilities: A0J9 (Quel'thalas selection), EditorSuffix (Editor Suffix)
+// Abilities: A0JC (Warsong selection), EditorSuffix (Editor Suffix)
 {
 (faction select)
 }
@@ -92639,7 +92669,7 @@ Play as the champions of |cff005000Stormwind|r. Your newly rebuilt kindgdom is o
 }
 
 STRING 15455
-// Abilities: A0JC (Warsong selection), EditorSuffix (Editor Suffix)
+// Abilities: A0JE (Fel Horde selection), EditorSuffix (Editor Suffix)
 {
 (faction select)
 }
@@ -92660,12 +92690,6 @@ STRING 15458
 // Units: Orkn (Chieftain of the Darkspear Tribe), Awakentip (Tooltip - Awaken)
 {
 Revive Vol'jin
-}
-
-STRING 15459
-// Abilities: A0JE (Fel Horde selection), EditorSuffix (Editor Suffix)
-{
-(faction select)
 }
 
 STRING 15460
@@ -93620,12 +93644,6 @@ STRING 15618
 // Units: H017 (Highlord of the Alliance), Ubertip (Tooltip - Extended)
 {
 Warrior Hero, exceptional at augmenting nearby troops.|n|cfff5962dAbilities:|r Divine Shield|n|cfff5962dCan Learn:|R Holy Light, Rally to the Highlord, Retribution Aura, Resurrection|n|n|cffffcc00Attacks land units.|R
-}
-
-STRING 15619
-// Units: h06C (Aviary), Ubertip (Tooltip - Extended)
-{
-Flying unit production building.|n|cfff5962dTrains:|r Pegasus Knight, Thunder Eagle|n|cfff5962dResearches:|r Pegasus Taming
 }
 
 STRING 15620
@@ -110550,7 +110568,7 @@ Revive Ragnaros
 }
 
 STRING 18573
-// Units: U02K (Lord of the Firelands), Tip (Tooltip - Basic)
+// Abilities: A0PY (Summon Ragnaros), Tip (Tooltip - Normal)
 {
 Summon Ragnaros
 }
@@ -116888,7 +116906,7 @@ STRING 19772
 }
 
 STRING 19773
-// Units: h06C (Aviary), EditorSuffix (Name - Editor Suffix)
+// Units: h06C (High Tower), EditorSuffix (Name - Editor Suffix)
 {
 (Lordaeron Specialist)
 }
