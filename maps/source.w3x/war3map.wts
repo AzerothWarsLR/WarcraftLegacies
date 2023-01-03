@@ -1754,7 +1754,7 @@ Summon Haunted Harbor
 }
 
 STRING 294
-// Units: u01A (Shipyard), Ubertip (Tooltip - Extended)
+// Units: ushp (Haunted Harbor), Ubertip (Tooltip - Extended)
 {
 Boat construction facility.|n|cfff5962dTrains:|R Transport, Scout, Frigate, Fireship, Galley, Boarding Vessel, Juggernaut, Bombard|R|n|n|cff00c4c4Cannot be built near small inland water areas.
 }
@@ -5767,7 +5767,7 @@ Build Alliance Shipyard
 }
 
 STRING 962
-// Units: ushp (Haunted Harbor), Ubertip (Tooltip - Extended)
+// Units: oshy (Horde Pier), Ubertip (Tooltip - Extended)
 {
 Boat construction facility.|n|cfff5962dTrains:|R Transport, Scout, Frigate, Fireship, Galley, Boarding Vessel, Juggernaut, Bombard|R|n|n|cff00c4c4Cannot be built near small inland water areas.
 }
@@ -6201,13 +6201,13 @@ Q
 }
 
 STRING 1034
-// Units: oshy (Horde Pier), Ubertip (Tooltip - Extended)
+// Units: hshy (Alliance Shipyard), Ubertip (Tooltip - Extended)
 {
 Boat construction facility.|n|cfff5962dTrains:|R Transport, Scout, Frigate, Fireship, Galley, Boarding Vessel, Juggernaut, Bombard|R|n|n|cff00c4c4Cannot be built near small inland water areas.
 }
 
 STRING 1035
-// Units: hshy (Alliance Shipyard), Ubertip (Tooltip - Extended)
+// Units: eshy (Kaldorei Docks), Ubertip (Tooltip - Extended)
 {
 Boat construction facility.|n|cfff5962dTrains:|R Transport, Scout, Frigate, Fireship, Galley, Boarding Vessel, Juggernaut, Bombard|R|n|n|cff00c4c4Cannot be built near small inland water areas.
 }
@@ -11792,7 +11792,7 @@ Multishot
 }
 
 STRING 1967
-// Units: eshy (Kaldorei Docks), Ubertip (Tooltip - Extended)
+// Units: u009 (Shipyard), Ubertip (Tooltip - Extended)
 {
 Boat construction facility.|n|cfff5962dTrains:|R Transport, Scout, Frigate, Fireship, Galley, Boarding Vessel, Juggernaut, Bombard|R|n|n|cff00c4c4Cannot be built near small inland water areas.
 }
@@ -16414,7 +16414,7 @@ STRING 2737
 }
 
 STRING 2738
-// Units: u009 (Shipyard), Ubertip (Tooltip - Extended)
+// Units: o032 (Shipyard), Ubertip (Tooltip - Extended)
 {
 Boat construction facility.|n|cfff5962dTrains:|R Transport, Scout, Frigate, Fireship, Galley, Boarding Vessel, Juggernaut, Bombard|R|n|n|cff00c4c4Cannot be built near small inland water areas.
 }
@@ -16630,7 +16630,7 @@ Backbone worker and builder.|n|cfff5962dAbilities:|r Repair, Gather|n|cfff5962dC
 }
 
 STRING 2774
-// Units: o059 (Shipyard), Ubertip (Tooltip - Extended)
+// Units: o02T (Shipyard), Ubertip (Tooltip - Extended)
 {
 Boat construction facility.|n|cfff5962dTrains:|R Transport, Scout, Frigate, Fireship, Galley, Boarding Vessel, Juggernaut, Bombard|R|n|n|cff00c4c4Cannot be built near small inland water areas.
 }
@@ -16750,7 +16750,7 @@ Sacrifice
 }
 
 STRING 2794
-// Units: o032 (Shipyard), Ubertip (Tooltip - Extended)
+// Units: h07D (Shipyard), Ubertip (Tooltip - Extended)
 {
 Boat construction facility.|n|cfff5962dTrains:|R Transport, Scout, Frigate, Fireship, Galley, Boarding Vessel, Juggernaut, Bombard|R|n|n|cff00c4c4Cannot be built near small inland water areas.
 }
@@ -16780,7 +16780,7 @@ Resource harvesting center and producer of Fel Horde enhancements. |n|cfff5962dR
 }
 
 STRING 2799
-// Units: o02T (Shipyard), Ubertip (Tooltip - Extended)
+// Units: h077 (Shipyard), Ubertip (Tooltip - Extended)
 {
 Boat construction facility.|n|cfff5962dTrains:|R Transport, Scout, Frigate, Fireship, Galley, Boarding Vessel, Juggernaut, Bombard|R|n|n|cff00c4c4Cannot be built near small inland water areas.
 }
@@ -16894,7 +16894,7 @@ Build Royal Harbour
 }
 
 STRING 2818
-// Units: h07D (Shipyard), Ubertip (Tooltip - Extended)
+// Units: h076 (Shipyard), Ubertip (Tooltip - Extended)
 {
 Boat construction facility.|n|cfff5962dTrains:|R Transport, Scout, Frigate, Fireship, Galley, Boarding Vessel, Juggernaut, Bombard|R|n|n|cff00c4c4Cannot be built near small inland water areas.
 }
@@ -17465,7 +17465,7 @@ Dalaran Building
 }
 
 STRING 2913
-// Units: h077 (Shipyard), Ubertip (Tooltip - Extended)
+// Units: h03H (Shipyard), Ubertip (Tooltip - Extended)
 {
 Boat construction facility.|n|cfff5962dTrains:|R Transport, Scout, Frigate, Fireship, Galley, Boarding Vessel, Juggernaut, Bombard|R|n|n|cff00c4c4Cannot be built near small inland water areas.
 }
@@ -19730,7 +19730,7 @@ Build Shipyard
 }
 
 STRING 3290
-// Units: h076 (Shipyard), Ubertip (Tooltip - Extended)
+// Units: e011 (Kaldorei Docks), Ubertip (Tooltip - Extended)
 {
 Boat construction facility.|n|cfff5962dTrains:|R Transport, Scout, Frigate, Fireship, Galley, Boarding Vessel, Juggernaut, Bombard|R|n|n|cff00c4c4Cannot be built near small inland water areas.
 }
@@ -29228,7 +29228,7 @@ W
 }
 
 STRING 4874
-// Units: o06D (Shipyard), Ubertip (Tooltip - Extended)
+// Units: h07W (Shipyard), Ubertip (Tooltip - Extended)
 {
 Boat construction facility.|n|cfff5962dTrains:|R Transport, Scout, Frigate, Fireship, Galley, Boarding Vessel, Juggernaut, Bombard|R|n|n|cff00c4c4Cannot be built near small inland water areas.
 }
@@ -51598,7 +51598,7 @@ Primary structure, used to train Mur'gul Slaves, Royal Guards and receive gather
 }
 
 STRING 8600
-// Units: h03H (Shipyard), Ubertip (Tooltip - Extended)
+// Units: o03I (Shipyard), Ubertip (Tooltip - Extended)
 {
 Boat construction facility.|n|cfff5962dTrains:|R Transport, Scout, Frigate, Fireship, Galley, Boarding Vessel, Juggernaut, Bombard|R|n|n|cff00c4c4Cannot be built near small inland water areas.
 }
@@ -68189,7 +68189,7 @@ Reduces movement speed by 75%, attack rate by 50%, and damage by 50% of a target
 }
 
 STRING 11366
-// Units: e011 (Kaldorei Docks), Ubertip (Tooltip - Extended)
+// Units: o049 (Golden Dock), Ubertip (Tooltip - Extended)
 {
 Boat construction facility.|n|cfff5962dTrains:|R Transport, Scout, Frigate, Fireship, Galley, Boarding Vessel, Juggernaut, Bombard|R|n|n|cff00c4c4Cannot be built near small inland water areas.
 }
@@ -95993,7 +95993,7 @@ Q
 }
 
 STRING 16007
-// Units: h07W (Shipyard), Ubertip (Tooltip - Extended)
+// Units: u01A (Shipyard), Ubertip (Tooltip - Extended)
 {
 Boat construction facility.|n|cfff5962dTrains:|R Transport, Scout, Frigate, Fireship, Galley, Boarding Vessel, Juggernaut, Bombard|R|n|n|cff00c4c4Cannot be built near small inland water areas.
 }
@@ -97133,7 +97133,7 @@ Train Initiate Mage
 }
 
 STRING 16197
-// Units: o03I (Shipyard), Ubertip (Tooltip - Extended)
+// Units: o059 (Shipyard), Ubertip (Tooltip - Extended)
 {
 Boat construction facility.|n|cfff5962dTrains:|R Transport, Scout, Frigate, Fireship, Galley, Boarding Vessel, Juggernaut, Bombard|R|n|n|cff00c4c4Cannot be built near small inland water areas.
 }
@@ -97319,7 +97319,7 @@ Creates a shop with purchasable items.
 }
 
 STRING 16228
-// Units: o049 (Golden Dock), Ubertip (Tooltip - Extended)
+// Units: o06D (Shipyard), Ubertip (Tooltip - Extended)
 {
 Boat construction facility.|n|cfff5962dTrains:|R Transport, Scout, Frigate, Fireship, Galley, Boarding Vessel, Juggernaut, Bombard|R|n|n|cff00c4c4Cannot be built near small inland water areas.
 }
