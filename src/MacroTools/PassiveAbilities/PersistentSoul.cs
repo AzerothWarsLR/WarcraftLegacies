@@ -46,6 +46,8 @@ namespace MacroTools.PassiveAbilities
     public override void OnDeath()
     {
       var caster = GetTriggerUnit();
+      if (IsUnitType(caster, UNIT_TYPE_SUMMONED))
+        return;
       foreach (var unit in CreateGroup().EnumUnitsInRange(caster.GetPosition(), Radius)
                  .EmptyToList()
                  .Where(x => IsReanimationCandidate(caster, x))
@@ -78,7 +80,9 @@ namespace MacroTools.PassiveAbilities
           whichUnitPosition.Y, whichUnit.GetFacing())
         .SetTimedLife(Duration, BuffId)
         .SetColor(200, 50, 50, 255)
-        .SetExplodeOnDeath(true);
+        .SetExplodeOnDeath(true)
+        .AddType(UNIT_TYPE_UNDEAD)
+        .AddType(UNIT_TYPE_SUMMONED);
       
       whichUnit.Remove();
       
