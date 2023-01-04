@@ -16,6 +16,7 @@ namespace TestMap.Source.Setup.FactionSetup.FactionSetup
         StartingLumber = 500,
       };
       Dalaran.ModObjectLimit(FourCC("Rhan"), 1);
+      Dalaran.ModObjectLimit(FourCC("Rhri"), 1);
       Dalaran.ModObjectLimit(FourCC("Rhde"), 1);
       FactionManager.Register(Dalaran);
     }
