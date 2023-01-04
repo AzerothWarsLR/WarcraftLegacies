@@ -445,8 +445,10 @@ namespace MacroTools.Extensions
     public static void Rescue(this unit whichUnit, player whichPlayer)
     {
       //If the unit costs 10 food, that means it should be owned by neutral passive instead of the rescuing player.
-      SetUnitOwner(whichUnit, GetUnitFoodUsed(whichUnit) == 10 ? Player(PLAYER_NEUTRAL_PASSIVE) : whichPlayer, true);
-      ShowUnit(whichUnit, true);
+      whichUnit
+        .SetOwner(GetUnitFoodUsed(whichUnit) == 10 ? Player(PLAYER_NEUTRAL_PASSIVE) : whichPlayer, false)
+        .Show(true)
+        .Pause(false);
 
       var asCapital = CapitalManager.GetFromUnit(whichUnit);
       if (asCapital == null || asCapital.ProtectorCount == 0) 
