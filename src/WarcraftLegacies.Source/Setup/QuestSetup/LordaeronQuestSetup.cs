@@ -21,6 +21,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       {
         var questStrahnbrad = new QuestStrahnbrad(Regions.StrahnbradUnlock);
         var questStratholme = new QuestStratholme(Regions.StratholmeUnlock, preplacedUnitSystem);
+        lordaeron.AddQuest(new QuestHearthglen(Regions.Hearthglen));
         lordaeron.AddQuest(questStratholme);
         lordaeron.StartingQuest = questStratholme;
         lordaeron.AddQuest(questStrahnbrad);
@@ -30,6 +31,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
           questStrahnbrad,
           questStratholme
           }));
+        lordaeron.AddQuest(new QuestTyrHand(Regions.TyrUnlock));
         lordaeron.AddQuest(new QuestMograine());
         lordaeron.AddQuest(new QuestShoresOfNorthrend());
         lordaeron.AddQuest(new QuestThunderEagle());
