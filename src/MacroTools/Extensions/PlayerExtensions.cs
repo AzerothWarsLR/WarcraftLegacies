@@ -124,7 +124,10 @@ namespace MacroTools.Extensions
     /// <param name="objectId">The unit type ID or research ID we want to know about.</param>
     public static int GetObjectLimit(this player player, int objectId) => PlayerData.ByHandle(player).GetObjectLimit(objectId);
 
-    public static int GetObjectLevel(this player player, int objectId) => PlayerData.ByHandle(player).GetObjectLevel(objectId);
+    public static int GetObjectLevel(this player player, int objectId)
+    {
+      return PlayerData.ByHandle(player).GetObjectLevel(objectId);
+    }
 
     public static int GetControlPointCount(this player player)
     {

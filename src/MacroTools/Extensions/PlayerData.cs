@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using MacroTools.ControlPointSystem;
 using MacroTools.FactionSystem;
 using static War3Api.Common;
@@ -176,10 +177,7 @@ namespace MacroTools.Extensions
     /// </summary>
     public static event EventHandler<PlayerFactionChangeEventArgs>? FactionChange;
 
-    public int GetObjectLevel(int obj)
-    {
-      return _objectLevels[obj];
-    }
+    public int GetObjectLevel(int obj) => _objectLevels.ContainsKey(obj) ? _objectLevels[obj] : 0;
 
     public void SetObjectLevel(int obj, int level)
     {
