@@ -15,6 +15,8 @@ namespace TestMap.Source.Setup.FactionSetup.FactionSetup
         StartingGold = 150,
         StartingLumber = 500,
       };
+      Dalaran.ModObjectLimit(FourCC("Rhan"), 1);
+      Dalaran.ModObjectLimit(FourCC("Rhde"), 1);
       FactionManager.Register(Dalaran);
     }
   }
