@@ -21,11 +21,12 @@ namespace WarcraftLegacies.Source.Quests.Draenei
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestDimensionalShip"/> class.
     /// </summary>
-    public QuestDimensionalShip(Rectangle questRect, PreplacedUnitSystem preplacedUnitSystem) : base(
+    public QuestDimensionalShip(Rectangle questRect, QuestData prerequisite, PreplacedUnitSystem preplacedUnitSystem) : base(
       "The Dimensional Ship", "The broken Exodar could be rebuild, unlocking a powerful asset for the Draenei.", "ReplaceableTextures\\CommandButtons\\BTNArcaneEnergy.blp")
     {
       _dimensionalGenerator = preplacedUnitSystem.GetUnit(Constants.UNIT_N00E_DIMENSIONAL_GENERATOR_DRAENEI);
       Required = true;
+      AddObjective(new ObjectiveCompleteQuest(prerequisite));
       AddObjective(
         new ObjectiveBuildInRect(questRect, "inside the Exodar", Constants.UNIT_O056_ARCANE_WELL_DRAENEI_FARM, 10));
       AddObjective(new ObjectiveControlLevel(

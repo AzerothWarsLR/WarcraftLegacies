@@ -14,15 +14,13 @@ namespace WarcraftLegacies.Source.Quests.Draenei
   /// </summary>
   public class QuestRepairExodarHull : QuestData
   {
-    private readonly QuestData _questToFailOnFail;
     private readonly List<unit> _rescueUnits;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestRepairExodarHull"/> class.
     /// </summary>
     /// <param name="rescueRect">Units in this area start invulnerable and are rescued when the quest is completed.</param>
-    /// <param name="questToFailOnFail">This quest will fail upon failing <see cref="QuestRepairExodarHull"/>.</param>
-    public QuestRepairExodarHull(Rectangle rescueRect, QuestData questToFailOnFail) : base("A New Home",
+    public QuestRepairExodarHull(Rectangle rescueRect) : base("A New Home",
       "After the disastrous voyage through the Twisting Nether, the Exodar crash-landed on Azuremyst Isle. Its hull must be repaired in order to get inside.",
       "ReplaceableTextures\\CommandButtons\\BTNDraeneiVaultOfRelics.blp")
     {
@@ -32,8 +30,7 @@ namespace WarcraftLegacies.Source.Quests.Draenei
       AddObjective(new ObjectiveKillAllInArea(new List<Rectangle> { Regions.AzuremystAmbient }, "on Azuremyst Isle"));
       AddObjective(new ObjectiveSelfExists());
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
-      ResearchId = Constants.UPGRADE_R099_QUEST_COMPLETED_A_NEW_HOME; // Change this to current quest;
-      _questToFailOnFail = questToFailOnFail;
+      ResearchId = Constants.UPGRADE_R099_QUEST_COMPLETED_A_NEW_HOME;
       SetUnitTimeScale(LegendDraenei.LegendExodar.Unit, 0);
     }
 
@@ -56,8 +53,5 @@ namespace WarcraftLegacies.Source.Quests.Draenei
         Player(PLAYER_NEUTRAL_AGGRESSIVE).RescueGroup(_rescueUnits);
       SetUnitTimeScale(LegendDraenei.LegendExodar.Unit, 1);
     }
-
-    /// <inheritdoc/>
-    protected override void OnFail(Faction whichFaction) => _questToFailOnFail.Progress = QuestProgress.Failed;
   }
 }
