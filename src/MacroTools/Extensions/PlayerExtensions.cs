@@ -236,14 +236,14 @@ namespace MacroTools.Extensions
       SetPlayerAbilityAvailable(player, ability, value);
     }
 
-    internal static void SetObjectLevel(this player player, int objectId, int level, bool isResearch = false)
+    internal static void SetObjectLevel(this player player, int objectId, int level)
     {
-      PlayerData.ByHandle(player).SetObjectLevel(objectId, level, isResearch);
+      PlayerData.ByHandle(player).SetObjectLevel(objectId, level);
     }
 
-    internal static void ModObjectLimit(this player player, int objectId, int limit)
+    internal static void ModObjectLimit(this player player, int objectId, int limit, bool isResearch)
     {
-      PlayerData.ByHandle(player).ModObjectLimit(objectId, limit);
+      PlayerData.ByHandle(player).ModObjectLimit(objectId, limit, isResearch);
     }
     
     internal static void SetColor(this player whichPlayer, playercolor color, bool changeExisting)

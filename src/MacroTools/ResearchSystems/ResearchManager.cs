@@ -32,7 +32,7 @@ namespace MacroTools.ResearchSystems
           research.OnResearch(triggerPlayer);
           triggerPlayer.AddGold(research.GoldCost);
           triggerPlayer.AddLumber(research.LumberCost);
-          triggerPlayer.SetObjectLevel(research.ResearchTypeId, 0, true);
+          triggerPlayer.SetObjectLevel(research.ResearchTypeId, 0);
         }
         catch (Exception ex)
         {
@@ -73,7 +73,7 @@ namespace MacroTools.ResearchSystems
         {
           foreach (var otherResearch in researches)
             if (otherResearch.ResearchTypeId != outerResearch.ResearchTypeId)
-              GetTriggerPlayer().ModObjectLimit(otherResearch.ResearchTypeId, -BigNumber);
+              GetTriggerPlayer().ModObjectLimit(otherResearch.ResearchTypeId, -BigNumber, true);
         }
         catch (Exception ex)
         {
@@ -90,7 +90,7 @@ namespace MacroTools.ResearchSystems
         {
           foreach (var otherResearch in researches)
             if (otherResearch.ResearchTypeId != outerResearch.ResearchTypeId)
-              GetTriggerPlayer().ModObjectLimit(otherResearch.ResearchTypeId, BigNumber);
+              GetTriggerPlayer().ModObjectLimit(otherResearch.ResearchTypeId, BigNumber, true);
         }
         catch (Exception ex)
         {
