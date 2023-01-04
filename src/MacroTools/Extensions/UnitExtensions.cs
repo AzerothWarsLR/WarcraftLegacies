@@ -446,7 +446,7 @@ namespace MacroTools.Extensions
     {
       //If the unit costs 10 food, that means it should be owned by neutral passive instead of the rescuing player.
       whichUnit
-        .SetOwner(GetUnitFoodUsed(whichUnit) == 10 ? Player(PLAYER_NEUTRAL_PASSIVE) : whichPlayer, false)
+        .SetOwner(GetUnitFoodUsed(whichUnit) == 10 ? Player(PLAYER_NEUTRAL_PASSIVE) : whichPlayer)
         .Show(true)
         .Pause(false);
 
