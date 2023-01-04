@@ -180,16 +180,18 @@ namespace MacroTools.Extensions
 
     public void SetObjectLevel(int obj, int level)
     {
-      if (level > GetPlayerTechMaxAllowed(Player, obj))
+      var objectLimit = Player.GetObjectLimit(obj);
+      
+      if (level > objectLimit)
         throw new ArgumentException(
-          $"{nameof(level)} cannot be higher than the object limit for {GetObjectName(obj)}, which is {level}.",
+          $"{nameof(level)} of {level} cannot be higher than the object limit for {GetObjectName(obj)}, which is {objectLimit}.",
           $"{nameof(level)}");
       
       //Object levels cannot be changed for objects with a limit of 0.
       //This works around it by increasing the limit to 1 before making the change, then reverting it back.
       var revertAfter = false;
 
-      if (Player.GetObjectLimit(obj) < 1)
+      if (objectLimit < 1)
       {
         Console.WriteLine(
           $"using workaround for {GetObjectName(obj)} because it has a limit of {Player.GetObjectLimit(obj)}");
@@ -197,11 +199,11 @@ namespace MacroTools.Extensions
         revertAfter = true;
       }
 
-      SetPlayerTechResearched(Player, obj, level);
-      if (revertAfter)
-        SetPlayerTechMaxAllowed(Player, obj, 0);
+      SetPlayerTechResearched(Player, obj, Math.Max(level, 0));
 
       _objectLevels[obj] = level;
+      if (revertAfter)
+        SetPlayerTechMaxAllowed(Player, obj, 0);
       
       if (GetPlayerTechCount(Player, obj, false) != Math.Max(level, 0))
         throw new InvalidOperationException(

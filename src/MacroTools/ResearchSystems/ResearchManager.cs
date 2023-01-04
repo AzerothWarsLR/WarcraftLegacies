@@ -38,6 +38,8 @@ namespace MacroTools.ResearchSystems
             research.OnResearch(triggerPlayer);
             return;
           }
+
+          Console.WriteLine($"Refunding {GetObjectName(research.ResearchTypeId)}");
           triggerPlayer.AddGold(research.GoldCost);
           triggerPlayer.AddLumber(research.LumberCost);
           triggerPlayer.SetObjectLevel(research.ResearchTypeId, 0);
