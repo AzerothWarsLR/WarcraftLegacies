@@ -94,7 +94,10 @@ namespace MacroTools.FactionSystem
             research?.OnResearch(GetTriggerPlayer());
           }
           else
+          {
+            faction.SetObjectLimit(researchId, -UNLIMITED, true);
             research.Refund(GetTriggerPlayer());
+          }
         }
         catch (Exception ex)
         {
@@ -438,6 +441,26 @@ namespace MacroTools.FactionSystem
 
       //If a player has this Faction, adjust their techtree as well
       Player?.ModObjectLimit(objectId, limit, isResearch);
+
+      if (_objectLimits[objectId] == 0)
+        _objectLimits.Remove(objectId);
+    }
+    
+    /// <summary>
+    ///   Sets the limit of the given object that the <see cref="Faction" /> can train, build, or research.
+    /// </summary>
+    /// <param name="objectId">The object ID to modify the limit of.</param>
+    /// <param name="limit">The amount to set the limit to.</param>
+    /// <param name="isResearch">Should be true if the input ID is a research.</param>
+    public void SetObjectLimit(int objectId, int limit, bool isResearch = false)
+    {
+      if (_objectLimits.ContainsKey(objectId))
+        _objectLimits[objectId] = limit;
+      else
+        _objectLimits.Add(objectId, limit);
+
+      //If a player has this Faction, adjust their techtree as well
+      Player?.SetObjectLimit(objectId, limit, isResearch);
 
       if (_objectLimits[objectId] == 0)
         _objectLimits.Remove(objectId);

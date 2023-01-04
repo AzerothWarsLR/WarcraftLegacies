@@ -181,7 +181,12 @@ namespace MacroTools.Extensions
     public void SetObjectLevel(int obj, int level)
     {
       var objectLimit = Player.GetObjectLimit(obj);
-
+      
+      if (level > objectLimit)
+        throw new ArgumentException(
+          $"{nameof(level)} ({level}) cannot be higher than the object limit for {GetObjectName(obj)} ({objectLimit}).",
+          $"{nameof(level)}");
+      
       //Object levels cannot be changed for objects with a limit of 0.
       //This works around it by increasing the limit to 1 before making the change, then reverting it back.
       var revertAfter = false;
@@ -205,7 +210,7 @@ namespace MacroTools.Extensions
 
     public int GetObjectLimit(int id) => _objectLimits.TryGetValue(id, out var limit) ? limit : 0;
 
-    private void SetObjectLimit(int id, int limit)
+    public void SetObjectLimit(int id, int limit)
     {
       _objectLimits[id] = limit;
 
