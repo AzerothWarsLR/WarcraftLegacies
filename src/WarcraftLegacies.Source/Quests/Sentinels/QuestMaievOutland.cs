@@ -18,6 +18,7 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
       "ReplaceableTextures\\CommandButtons\\BTNMaievArmor.blp")
     {
       AddObjective(new ObjectiveCastSpell(FourCC("A0J5"), true));
+      AddObjective(new ObjectiveControlLegend(LegendSentinels.Maiev, true));
       AddObjective(new ObjectiveControlCapital(LegendSentinels.VaultOfTheWardens, true));
 
       foreach (var unit in CreateGroup().EnumUnitsInRect(rescueRect).EmptyToList())
@@ -34,7 +35,7 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
     protected override void OnComplete(Faction completingFaction)
     {
       SetUnitPosition(LegendSentinels.Maiev.Unit, -5252, -27597);
-      UnitRemoveAbility(LegendSentinels.Maiev.Unit, FourCC("A0J5"));
+      UnitRemoveAbility(LegendSentinels.VaultOfTheWardens.Unit, FourCC("A0J5"));
       foreach (var unit in _rescueUnits) unit.Rescue(completingFaction.Player);
     }
   }
