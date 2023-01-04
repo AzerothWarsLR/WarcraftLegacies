@@ -100,7 +100,8 @@ The Necropolis of Naxxramas is become the perfect weapon for the Scourge, but yo
       Scourge.ModObjectLimit(FourCC("R02A"), Faction.UNLIMITED); //Chaos Infusion
       Scourge.ModObjectLimit(FourCC("R00Q"), Faction.UNLIMITED); //Chilling Aura
       Scourge.ModObjectLimit(FourCC("R04V"), Faction.UNLIMITED); //Improved Hypothermic Breath
-      Scourge.ModObjectLimit(FourCC("R01X"), Faction.UNLIMITED); //Epidemic
+      Scourge.ModObjectLimit(Constants.UPGRADE_R01X_EPIDEMIC_SCOURGE, Faction.UNLIMITED);
+      Scourge.ModObjectLimit(Constants.UPGRADE_R08T_REVENANTS_SCOURGE, Faction.UNLIMITED);
       Scourge.ModObjectLimit(FourCC("R01D"), Faction.UNLIMITED); //Piercing Screech
       Scourge.ModObjectLimit(FourCC("R06N"), Faction.UNLIMITED); //Improved Orb of Annihilation
       Scourge.ModObjectLimit(FourCC("Rusl"), Faction.UNLIMITED); //Skeletal Mastery
