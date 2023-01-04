@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using MacroTools.Extensions;
 using static War3Api.Common;
 
@@ -9,6 +10,11 @@ namespace MacroTools.ResearchSystems
   /// </summary>
   public abstract class Research
   {
+    /// <summary>
+    /// A collection of <see cref="Research"/>es this <see cref="Research"/> is incompatible with.
+    /// </summary>
+    public IEnumerable<Research> IncompatibleWith = Array.Empty<Research>();
+    
     /// <summary>
     /// The amount of gold the research costs. Unfortunately this is hard-coded.
     /// </summary>

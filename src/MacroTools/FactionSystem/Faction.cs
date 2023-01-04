@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using MacroTools.Augments;
 using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
@@ -87,18 +88,13 @@ namespace MacroTools.FactionSystem
             return;
           var researchId = GetResearched();
           var research = ResearchManager.GetFromTypeId(researchId);
-          if (faction.GetObjectLimit(researchId) >= GetPlayerTechCount(GetTriggerPlayer(), researchId, true))
+          if (research == null || !research.IncompatibleWith.Any(x => faction.GetObjectLevel(x.ResearchTypeId) > 0))
           {
             faction.SetObjectLevel(researchId, GetPlayerTechCount(GetTriggerPlayer(), researchId, true));
             research?.OnResearch(GetTriggerPlayer());
           }
           else
-          {
-            if (research == null)
-              Logger.LogWarning($"Attempted to refund {GetResearched()} but it does not have a registered {nameof(Research)} object.");
-            else
-              research.Refund(GetTriggerPlayer());
-          }
+            research.Refund(GetTriggerPlayer());
         }
         catch (Exception ex)
         {
@@ -402,10 +398,7 @@ namespace MacroTools.FactionSystem
       return questData;
     }
     
-    public int GetObjectLevel(int obj)
-    {
-      return _objectLevels[obj];
-    }
+    public int GetObjectLevel(int obj) => _objectLevels.ContainsKey(obj) ? _objectLevels[obj] : 0;
 
     /// <summary>
     /// Sets the current level of a particular research for the <see cref="Faction"/>.

@@ -47,6 +47,7 @@ namespace MacroTools.ResearchSystems
     {
       foreach (var outerResearch in researches)
       {
+        outerResearch.IncompatibleWith = researches.Where(x => x != outerResearch);
         SetupStartedTrigger(outerResearch, researches);
         SetupCancelledTrigger(outerResearch, researches);
         Register(outerResearch);
