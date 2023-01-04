@@ -1,18 +1,24 @@
-﻿using MacroTools.ControlPointSystem;
+﻿using System.Collections.Generic;
+using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives;
 using MacroTools.QuestSystem;
-using WarcraftLegacies.Source.Setup.Legends;
 using static War3Api.Common;
 
 
 namespace WarcraftLegacies.Source.Quests.Goblin
 {
+  /// <summary>
+  /// The Goblins can acquire Kezan.
+  /// </summary>
   public sealed class QuestBusinessExpansion : QuestData
   {
-    private static readonly int QuestResearchId = FourCC("R07G");
+    private readonly List<unit> _rescueUnits;
 
+    /// <summary>
+    /// Initializes a new instance of the <see cref="QuestBusinessExpansion"/>.
+    /// </summary>
     public QuestBusinessExpansion() : base("Business Expansion",
       "Trade Prince Gallywix will need a great amount of wealth to join the Goblin Empire; he needs to expand his business all over the world quickly.",
       "ReplaceableTextures\\CommandButtons\\BTNGoblinPrince.blp")
@@ -25,45 +31,29 @@ namespace WarcraftLegacies.Source.Quests.Goblin
         ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N09D_AUBERDINE_25GOLD_MIN), 10));
       AddObjective(new ObjectiveControlLevel(
         ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N05U_FEATHERMOON_STRONGHOLD_20GOLD_MIN), 10));
-      ResearchId = QuestResearchId;
+      ResearchId = Constants.UPGRADE_R07G_QUEST_COMPLETED_BUSINESS_EXPANSION;
       Required = true;
-      SetUnitInvulnerable(LegendGoblin.KezanTradingCenter.Unit, true);
+      _rescueUnits = Regions.KezanUnlock.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
     }
 
-    protected override string RewardDescription => "Our Trade Empire is now large enough to get the attention of the Trade Princes of Kezan. They will surely join our growing association";
+    /// <inheritdoc />
+    protected override string CompletionPopup => "Our trade empire has grown large enough to earn the attention of the Trade Princes of Kezan. Their investments are already flowing in, and the isle of Kezan is now under Bilgewater control.";
 
-    protected override string CompletionPopup => "You unlock Kezan and can now train Traders";
+    /// <inheritdoc />
+    protected override string RewardDescription => "You unlock Kezan and can now train Traders";
 
-    private static void GrantKezan(player whichPlayer)
-    {
-      var tempGroup = CreateGroup();
-
-      //Transfer all Neutral Passive units in Gadetzan
-      GroupEnumUnitsInRect(tempGroup, Regions.KezanUnlock.Rect, null);
-      var u = FirstOfGroup(tempGroup);
-      while (true)
-      {
-        if (u == null) break;
-
-        if (GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_PASSIVE)) u.Rescue(whichPlayer);
-
-        GroupRemoveUnit(tempGroup, u);
-        u = FirstOfGroup(tempGroup);
-      }
-
-      DestroyGroup(tempGroup);
-    }
-
+    /// <inheritdoc />
     protected override void OnFail(Faction completingFaction)
     {
-      GrantKezan(Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      Player(PLAYER_NEUTRAL_AGGRESSIVE).RescueGroup(_rescueUnits);
     }
 
+    /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)
     {
-      SetUnitInvulnerable(LegendGoblin.KezanTradingCenter.Unit, false);
-      GrantKezan(completingFaction.Player);
-      if (GetLocalPlayer() == completingFaction.Player) PlayThematicMusic("war3mapImported\\GoblinTheme.mp3");
+      completingFaction.Player?.RescueGroup(_rescueUnits);
+      if (GetLocalPlayer() == completingFaction.Player) 
+        PlayThematicMusic("war3mapImported\\GoblinTheme.mp3");
     }
   }
 }
