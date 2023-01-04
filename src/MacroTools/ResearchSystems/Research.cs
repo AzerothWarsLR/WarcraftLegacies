@@ -1,4 +1,6 @@
-﻿using static War3Api.Common;
+﻿using System;
+using MacroTools.Extensions;
+using static War3Api.Common;
 
 namespace MacroTools.ResearchSystems
 {
@@ -38,8 +40,14 @@ namespace MacroTools.ResearchSystems
     public abstract void OnResearch(player researchingPlayer);
 
     /// <summary>
-    /// Invoked when a player loses the research.
+    /// Unresearches the research and returns all gold and lumber spent on it.
     /// </summary>
-    public abstract void OnUnresearch(player researchingPlayer);
+    /// <param name="researchingPlayer"></param>
+    public void Refund(player researchingPlayer)
+    {
+      researchingPlayer.AddGold(GoldCost);
+      researchingPlayer.AddLumber(LumberCost);
+      researchingPlayer.SetObjectLevel(ResearchTypeId, Math.Min(0, researchingPlayer.GetObjectLimit(ResearchTypeId)));
+    }
   }
 }

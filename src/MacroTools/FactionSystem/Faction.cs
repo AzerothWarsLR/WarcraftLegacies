@@ -6,6 +6,7 @@ using MacroTools.Extensions;
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives;
 using MacroTools.QuestSystem;
+using MacroTools.ResearchSystems;
 using WCSharp.Events;
 using static War3Api.Common;
 
@@ -82,7 +83,22 @@ namespace MacroTools.FactionSystem
         try
         {
           var faction = FactionManager.GetFromPlayer(GetTriggerPlayer());
-          faction?.SetObjectLevel(GetResearched(), GetPlayerTechCount(GetTriggerPlayer(), GetResearched(), false));
+          if (faction == null)
+            return;
+          var researchId = GetResearched();
+          var research = ResearchManager.GetFromTypeId(researchId);
+          if (faction.GetObjectLimit(researchId) >= GetPlayerTechCount(GetTriggerPlayer(), researchId, true))
+          {
+            faction.SetObjectLevel(researchId, GetPlayerTechCount(GetTriggerPlayer(), researchId, true));
+            research?.OnResearch(GetTriggerPlayer());
+          }
+          else
+          {
+            if (research == null)
+              Logger.LogWarning($"Attempted to refund {GetResearched()} but it does not have a registered {nameof(Research)} object.");
+            else
+              research.Refund(GetTriggerPlayer());
+          }
         }
         catch (Exception ex)
         {
@@ -391,6 +407,9 @@ namespace MacroTools.FactionSystem
       return _objectLevels[obj];
     }
 
+    /// <summary>
+    /// Sets the current level of a particular research for the <see cref="Faction"/>.
+    /// </summary>
     public void SetObjectLevel(int obj, int level)
     {
       _objectLevels[obj] = level;

@@ -12,8 +12,8 @@ namespace MacroTools.ResearchSystems
   /// </summary>
   public static class ResearchManager
   {
-    private static readonly List<Research> RegisteredResearches = new();
-    
+    private static readonly Dictionary<int, Research> ByTypeId = new();
+
     /// <summary>
     /// Used to disable and enable techs via addition and subtraction.
     /// </summary>
@@ -22,29 +22,11 @@ namespace MacroTools.ResearchSystems
     /// <summary>
     /// Registers a <see cref="Research"/>, causing its <see cref="Research.OnResearch"/> function to be executed when researched.
     /// </summary>
-    public static void Register(Research research, Research[]? otherResearches = null)
+    public static void Register(Research research)
     {
-      if (RegisteredResearches.Contains(research))
+      if (ByTypeId.ContainsKey(research.ResearchTypeId))
         throw new InvalidOperationException($"{GetObjectName(research.ResearchTypeId)} has already been registered.");
-      RegisteredResearches.Add(research);
-
-      Console.WriteLine($"Registering {GetObjectName(research.ResearchTypeId)}");
-      PlayerUnitEvents.Register(ResearchEvent.IsFinished, () =>
-      {
-        Console.WriteLine("Hello");
-          var triggerPlayer = GetTriggerPlayer();
-          if (otherResearches == null || !ShouldRefund(triggerPlayer, research, otherResearches))
-          {
-            Console.WriteLine($"Not refunding {GetObjectName(research.ResearchTypeId)}");
-            research.OnResearch(triggerPlayer);
-            return;
-          }
-
-          Console.WriteLine($"Refunding {GetObjectName(research.ResearchTypeId)}");
-          triggerPlayer.AddGold(research.GoldCost);
-          triggerPlayer.AddLumber(research.LumberCost);
-          triggerPlayer.SetObjectLevel(research.ResearchTypeId, 0);
-      }, research.ResearchTypeId);
+      ByTypeId.Add(research.ResearchTypeId, research);
     }
     
     /// <summary>
@@ -65,11 +47,17 @@ namespace MacroTools.ResearchSystems
     {
       foreach (var outerResearch in researches)
       {
-        Register(outerResearch, researches);
         SetupStartedTrigger(outerResearch, researches);
         SetupCancelledTrigger(outerResearch, researches);
+        Register(outerResearch);
       }
     }
+
+    /// <summary>
+    /// Returns the <see cref="Research"/> with the matching type ID.
+    /// </summary>
+    public static Research? GetFromTypeId(int researchTypeId) =>
+      ByTypeId.ContainsKey(researchTypeId) ? ByTypeId[researchTypeId] : null;
 
     private static void SetupStartedTrigger(Research outerResearch, Research[] researches)
     {
@@ -79,7 +67,7 @@ namespace MacroTools.ResearchSystems
         {
           foreach (var otherResearch in researches)
             if (otherResearch.ResearchTypeId != outerResearch.ResearchTypeId && GetTriggerPlayer().GetObjectLevel(otherResearch.ResearchTypeId) < 1)
-              GetTriggerPlayer().ModObjectLimit(otherResearch.ResearchTypeId, -BigNumber, true);
+              GetTriggerPlayer().GetFaction()?.ModObjectLimit(otherResearch.ResearchTypeId, -BigNumber, true);
         }
         catch (Exception ex)
         {
@@ -96,7 +84,7 @@ namespace MacroTools.ResearchSystems
         {
           foreach (var otherResearch in researches)
             if (otherResearch.ResearchTypeId != outerResearch.ResearchTypeId && GetTriggerPlayer().GetObjectLevel(otherResearch.ResearchTypeId) < 1)
-              GetTriggerPlayer().ModObjectLimit(otherResearch.ResearchTypeId, BigNumber, true);
+              GetTriggerPlayer().GetFaction()?.ModObjectLimit(otherResearch.ResearchTypeId, BigNumber, true);
         }
         catch (Exception ex)
         {
@@ -104,11 +92,5 @@ namespace MacroTools.ResearchSystems
         }
       }, outerResearch.ResearchTypeId);
     }
-
-    /// <summary>
-    /// Returns true if any other research in the group has already been researched.
-    /// </summary>
-    private static bool ShouldRefund(player researchingPlayer, Research primaryResearch, IEnumerable<Research> otherResearches) => 
-      otherResearches.Any(x => GetPlayerTechCount(researchingPlayer, x.ResearchTypeId, true) > 0 && x != primaryResearch);
   }
 }

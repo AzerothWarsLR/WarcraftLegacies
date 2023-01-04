@@ -184,7 +184,7 @@ namespace MacroTools.Extensions
       
       if (level > objectLimit)
         throw new ArgumentException(
-          $"{nameof(level)} of {level} cannot be higher than the object limit for {GetObjectName(obj)}, which is {objectLimit}.",
+          $"{nameof(level)} ({level}) cannot be higher than the object limit for {GetObjectName(obj)} ({objectLimit}).",
           $"{nameof(level)}");
       
       //Object levels cannot be changed for objects with a limit of 0.
