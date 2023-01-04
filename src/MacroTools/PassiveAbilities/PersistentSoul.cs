@@ -54,7 +54,7 @@ namespace MacroTools.PassiveAbilities
                  .OrderByDescending(x => x.GetLevel())
                  .Take(ReanimationCountLevel * GetUnitAbilityLevel(caster, _abilityTypeId)))
       {
-        Reanimate(unit);
+        Reanimate(caster.OwningPlayer(), unit);
       }
     }
 
@@ -68,7 +68,7 @@ namespace MacroTools.PassiveAbilities
              && caster != target;
     }
     
-    private void Reanimate(unit whichUnit)
+    private void Reanimate(player castingPlayer, unit whichUnit)
     {
       var whichUnitPosition = whichUnit.GetPosition();
 
@@ -76,7 +76,7 @@ namespace MacroTools.PassiveAbilities
           GetUnitY(whichUnit))
         .SetLifespan();
 
-      var reanimatedUnit = CreateUnit(whichUnit.OwningPlayer(), whichUnit.GetTypeId(), whichUnitPosition.X,
+      var reanimatedUnit = CreateUnit(castingPlayer, whichUnit.GetTypeId(), whichUnitPosition.X,
           whichUnitPosition.Y, whichUnit.GetFacing())
         .SetTimedLife(Duration, BuffId)
         .SetColor(200, 50, 50, 255)
