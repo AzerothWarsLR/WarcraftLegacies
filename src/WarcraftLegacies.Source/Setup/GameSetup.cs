@@ -51,6 +51,7 @@ namespace WarcraftLegacies.Source.Setup
       InstanceSetup.Setup(preplacedUnitSystem);
       TeamSetup.Setup();
       AllFactionSetup.Setup(preplacedUnitSystem, artifactSetup);
+      SharedFactionConfigSetup.Setup();
       PlayerSetup.Setup();
       NeutralHostileSetup.Setup();
       AllQuestSetup.Setup(preplacedUnitSystem, artifactSetup);
