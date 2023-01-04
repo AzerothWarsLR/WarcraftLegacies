@@ -80,7 +80,7 @@ namespace MacroTools.ResearchSystems
         try
         {
           foreach (var otherResearch in researches)
-            if (otherResearch.ResearchTypeId != outerResearch.ResearchTypeId)
+            if (otherResearch.ResearchTypeId != outerResearch.ResearchTypeId && GetTriggerPlayer().GetObjectLevel(otherResearch.ResearchTypeId) < 1)
               GetTriggerPlayer().ModObjectLimit(otherResearch.ResearchTypeId, -BigNumber, true);
         }
         catch (Exception ex)
@@ -97,7 +97,7 @@ namespace MacroTools.ResearchSystems
         try
         {
           foreach (var otherResearch in researches)
-            if (otherResearch.ResearchTypeId != outerResearch.ResearchTypeId)
+            if (otherResearch.ResearchTypeId != outerResearch.ResearchTypeId && GetTriggerPlayer().GetObjectLevel(otherResearch.ResearchTypeId) < 1)
               GetTriggerPlayer().ModObjectLimit(otherResearch.ResearchTypeId, BigNumber, true);
         }
         catch (Exception ex)
