@@ -41,11 +41,11 @@ namespace WarcraftLegacies.Source.Quests.Druids
     }
 
     /// <inheritdoc />
-    protected override string CompletionPopup => "Ashenvale is under control, and the forest has been awakened.";
+    protected override string CompletionPopup => "Ashenvale has awakened!";
 
     /// <inheritdoc />
     protected override string RewardDescription =>
-      "Control of all units in Ashenvale and summon Saplings all around the Warsong Lumber Camp";
+      "Control of all units in Ashenvale";
 
     /// <inheritdoc />
     protected override void OnFail(Faction completingFaction)

@@ -22,7 +22,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
     /// </summary>
     /// <param name="rescueRect">Units in this area will start invulnerable and be rescued when the quest is complete.</param>
     public QuestHearthglen(Rectangle rescueRect) : base("Hearthglen",
-      "The village of Hearthglen is just nearby. A legendary warrior like Uther would be enough for them to join us",
+      "The village of Hearthglen is just nearby. A legendary warrior like Arthas would be enough for them to join us",
       "ReplaceableTextures\\CommandButtons\\BTNutherAlt.blp")
     {
       AddObjective(new ObjectiveLegendInRect(LegendLordaeron.Arthas, Regions.Hearthglen, "Hearthglen"));
@@ -33,7 +33,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
     }
 
     /// <inheritdoc />
-    protected override string CompletionPopup => "The village of Hearthglen has decided to join Uther";
+    protected override string CompletionPopup => "The village of Hearthglen has decided to join Arthas";
 
     /// <inheritdoc />
     protected override string RewardDescription => "Control of all units in Hearthglen";

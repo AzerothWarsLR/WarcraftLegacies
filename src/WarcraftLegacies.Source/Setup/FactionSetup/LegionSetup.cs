@@ -54,6 +54,7 @@ Your primary objective is to summon the Burning Legion. Invade the city of Dalar
       Legion.ModObjectLimit(FourCC("ninc"), Faction.UNLIMITED); //Burning archer
       Legion.ModObjectLimit(FourCC("n04K"), Faction.UNLIMITED); //Succubus
       Legion.ModObjectLimit(FourCC("n04J"), Faction.UNLIMITED); //Felstalker
+      Legion.ModObjectLimit(FourCC("o060"), Faction.UNLIMITED); //Annihilan GUard
       Legion.ModObjectLimit(FourCC("n04O"), 6); //Doomguard
       Legion.ModObjectLimit(FourCC("n04L"), 6); //Infernal Juggernaut
       Legion.ModObjectLimit(FourCC("ninf"), 12); //Infernal
