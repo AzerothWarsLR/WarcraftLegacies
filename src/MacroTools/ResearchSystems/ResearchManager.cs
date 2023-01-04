@@ -31,9 +31,7 @@ namespace MacroTools.ResearchSystems
       Console.WriteLine($"Registering {GetObjectName(research.ResearchTypeId)}");
       PlayerUnitEvents.Register(ResearchEvent.IsFinished, () =>
       {
-        try
-        {
-          Console.WriteLine("Hello");
+        Console.WriteLine("Hello");
           var triggerPlayer = GetTriggerPlayer();
           if (otherResearches == null || !ShouldRefund(triggerPlayer, research, otherResearches))
           {
@@ -46,11 +44,6 @@ namespace MacroTools.ResearchSystems
           triggerPlayer.AddGold(research.GoldCost);
           triggerPlayer.AddLumber(research.LumberCost);
           triggerPlayer.SetObjectLevel(research.ResearchTypeId, 0);
-        }
-        catch (Exception ex)
-        {
-          Logger.LogWarning(ex.ToString());
-        }
       }, research.ResearchTypeId);
     }
     

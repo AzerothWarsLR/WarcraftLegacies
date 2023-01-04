@@ -72,9 +72,7 @@ namespace TestMap.Source.Setup
 
         var taxGuardTower = new ProvidesIncome(FourCC("hgtw"), 20);
         PassiveAbilityManager.Register(taxGuardTower);
-        
-        ParentChildResearchSystem.Register(FourCC("Rhde"), FourCC("Rhan"));
-        
+
         var electricStrike = new ElectricStrike(FourCC("AHbz"))
         {
           StunId = FourCC("ANsb"),
