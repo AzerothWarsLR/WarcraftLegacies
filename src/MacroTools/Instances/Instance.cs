@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using MacroTools.Extensions;
@@ -38,6 +39,14 @@ namespace MacroTools.Instances
     public int GateCount => _gates.Count;
 
     /// <summary>
+    /// Adds a <see cref="Gate"/> to the <see cref="Instance"/>, indicating where it can be entered and exited.
+    /// </summary>
+    public void AddGate(Gate gate)
+    {
+      _gates.Add(gate);
+    }
+    
+    /// <summary>
     ///   Gets the <see cref="Gate" /> nearest the given position, if any.
     /// </summary>
     public Gate? GetNearestGate(Point position)
@@ -64,22 +73,37 @@ namespace MacroTools.Instances
     /// </summary>
     private void Destroy()
     {
-      foreach (var rect in _rectangles)
+      try
       {
-        foreach (var unit in CreateGroup().EnumUnitsInRect(rect).EmptyToList()) 
-          KillUnit(unit);
-        
-        EnumItemsInRect(rect.Rect, null, () =>
+        foreach (var rect in _rectangles)
         {
-          var filterItem = GetFilterItem();
-          var exteriorPosition = GetNearestGate(filterItem.GetPosition())?.ExteriorPosition;
-          if (exteriorPosition is not null)
-            filterItem.SetPosition(exteriorPosition);
-        });
-      }
+          foreach (var unit in CreateGroup().EnumUnitsInRect(rect).EmptyToList())
+            KillUnit(unit);
 
-      foreach (var gate in _gates) 
-        gate.Destroy();
+          EnumItemsInRect(rect.Rect, null, () =>
+          {
+            try
+            {
+              var enumItem = GetEnumItem();
+              var exteriorPosition = GetNearestGate(enumItem.GetPosition())?.ExteriorPosition;
+
+              if (exteriorPosition == null)
+                throw new InvalidOperationException(
+                  $"Tried to move {GetItemName(enumItem)} out of the destroyed instance {_name}, but it has no exterior gates registered.");
+
+              enumItem.SetPosition(exteriorPosition);
+            }
+            catch (Exception ex)
+            {
+              Logger.LogError(ex.ToString());
+            }
+          });
+        }
+      }
+      catch (Exception ex)
+      {
+        Logger.LogError(ex.ToString());
+      }
     }
 
     /// <summary>
