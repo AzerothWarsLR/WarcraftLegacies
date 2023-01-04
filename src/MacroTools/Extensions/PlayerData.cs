@@ -181,7 +181,7 @@ namespace MacroTools.Extensions
       return _objectLevels[obj];
     }
 
-    public void SetObjectLevel(int obj, int level)
+    public void SetObjectLevel(int obj, int level, bool isResearch)
     {
       _objectLevels[obj] = level;
       //Object levels cannot be changed for objects with a limit of 0.
@@ -197,19 +197,16 @@ namespace MacroTools.Extensions
       if (revertAfter)
         SetPlayerTechMaxAllowed(Player, obj, 0);
 
-      if (GetPlayerTechCount(Player, obj, true) != Math.Max(level, 0))
+      if (isResearch && GetPlayerTechCount(Player, obj, true) != Math.Max(level, 0))
         throw new InvalidOperationException($"Failed to set the object limit of {GetObjectName(obj)} to {level}; it is {GetPlayerTechCount(Player, obj, false)} instead.");
     }
 
-    public int GetObjectLimit(int id)
-    {
-      return _objectLimits.TryGetValue(id, out var limit) ? limit : 0;
-    }
+    public int GetObjectLimit(int id) => _objectLimits.TryGetValue(id, out var limit) ? limit : 0;
 
     private void SetObjectLimit(int id, int limit)
     {
       _objectLimits[id] = limit;
-      SetObjectLevel(id, Math.Min(GetPlayerTechCount(Player, id, true), limit));
+      SetObjectLevel(id, Math.Min(GetPlayerTechCount(Player, id, true), limit), false);
       if (limit >= Faction.UNLIMITED)
         SetPlayerTechMaxAllowed(Player, id, -1);
       else if (limit <= 0)

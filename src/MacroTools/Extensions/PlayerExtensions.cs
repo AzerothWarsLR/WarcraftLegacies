@@ -236,9 +236,9 @@ namespace MacroTools.Extensions
       SetPlayerAbilityAvailable(player, ability, value);
     }
 
-    internal static void SetObjectLevel(this player player, int objectId, int level)
+    internal static void SetObjectLevel(this player player, int objectId, int level, bool isResearch = false)
     {
-      PlayerData.ByHandle(player).SetObjectLevel(objectId, level);
+      PlayerData.ByHandle(player).SetObjectLevel(objectId, level, isResearch);
     }
 
     internal static void ModObjectLimit(this player player, int objectId, int limit)
