@@ -39,6 +39,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
         DeathMessage = "The Trade center for the Goblin Empire has fallen."
       };
       KezanTradingCenter.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_O05I_MISSILE_BATTERY_GOBLIN_TOWER));
+      CapitalManager.Register(KezanTradingCenter);
     }
   }
 }
