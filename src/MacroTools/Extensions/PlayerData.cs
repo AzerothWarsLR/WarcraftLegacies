@@ -193,9 +193,7 @@ namespace MacroTools.Extensions
 
       if (objectLimit < 1)
       {
-        Console.WriteLine(
-          $"using workaround for {GetObjectName(obj)} because it has a limit of {Player.GetObjectLimit(obj)}");
-        SetPlayerTechMaxAllowed(Player, obj, 1);
+        SetPlayerTechMaxAllowed(Player, obj, 100);
         revertAfter = true;
       }
 
