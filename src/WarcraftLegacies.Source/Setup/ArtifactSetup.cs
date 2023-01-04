@@ -97,10 +97,7 @@ namespace WarcraftLegacies.Source.Setup
       UnitAddItem(preplacedUnitSystem.GetUnit(FourCC("n021")), CrownOfStormwind.Item); //Hogger
       ArtifactManager.Register(CrownOfStormwind);
 
-      EyeOfSargeras = new Artifact(CreateItem(FourCC("I003"), DummyX, DummyY));
-      var doomguard = preplacedUnitSystem.GetUnit(FourCC("n04O"), new Point(-10028.1f, -23598.7f));
-      UnitAddAbility(doomguard, Artifact.ArtifactHolderAbilId);
-      UnitAddItem(doomguard, EyeOfSargeras.Item);
+      EyeOfSargeras = new Artifact(CreateItem(Constants.ITEM_I003_EYE_OF_SARGERAS, -77.9f, 10910.4f));
       ArtifactManager.Register(EyeOfSargeras);
 
       var tempArtifact = new Artifact(CreateItem(FourCC("I00H"), DummyX, DummyY));
