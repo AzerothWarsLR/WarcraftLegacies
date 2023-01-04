@@ -15,8 +15,7 @@ namespace MacroTools.ObjectiveSystem.Objectives
       set
       {
         _currentBuildCount = value;
-        Description = "Build " + GetObjectName(_objectId) + "s (" + I2S(_currentBuildCount) + "/" +
-                      I2S(_targetBuildCount) + ")";
+        Description = $"Build {GetObjectName(_objectId)}s ({_currentBuildCount}/{_targetBuildCount})";
       }
     }
 

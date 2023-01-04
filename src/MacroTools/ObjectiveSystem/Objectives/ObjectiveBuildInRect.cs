@@ -18,6 +18,9 @@ namespace MacroTools.ObjectiveSystem.Objectives
     private readonly int _targetBuildCount;
     private readonly string _areaName;
 
+    /// <inheritdoc />
+    public override Point Position => new(GetRectCenterX(_targetRect.Rect), GetRectCenterY(_targetRect.Rect));
+    
     private int CurrentBuildCount
     {
       set
@@ -44,42 +47,15 @@ namespace MacroTools.ObjectiveSystem.Objectives
       DisplaysPosition = true;
       CurrentBuildCount = 0;
       PingPath = "MinimapQuestTurnIn";
-      PlayerUnitEvents.Register(UnitTypeEvent.Dies, OnDeath, objectId);
-      CreateTrigger()
-        .RegisterEnterRegion(targetRect)
-        .AddAction(() =>
-        {
-          var triggerUnit = GetTriggerUnit();
-          if (!IsUnitValid(triggerUnit))
-            return;
-          CurrentBuildCount = _currentBuildCount + 1;
-          if (_currentBuildCount == _targetBuildCount)
-          {
-            Progress = QuestProgress.Complete;
-          }
-        });
-    }
 
-    private void OnDeath()
-    {
-      if (Progress == QuestProgress.Complete)
-        return;
-
-      var triggerUnit = GetTriggerUnit();
-      if (!IsUnitValid(triggerUnit))
-        return;
-      var point = triggerUnit.GetPosition();
-      if (point.X > _targetRect.Left && point.X < _targetRect.Right && point.Y > _targetRect.Bottom && point.Y < _targetRect.Top)
+      PlayerUnitEvents.Register(UnitTypeEvent.FinishesConstruction, () =>
       {
-        CurrentBuildCount = _currentBuildCount - 1;
-        Progress = QuestProgress.Incomplete;
-      }
+        if (!targetRect.Contains(GetTriggerUnit().GetPosition()))
+          return;
+        CurrentBuildCount = _currentBuildCount + 1;
+        if (_currentBuildCount == _targetBuildCount) 
+          Progress = QuestProgress.Complete;
+      }, objectId);
     }
-
-    /// <inheritdoc />
-    public override Point Position => new(GetRectCenterX(_targetRect.Rect), GetRectCenterY(_targetRect.Rect));
-
-    private bool IsUnitValid(unit whichUnit) =>
-      EligibleFactions.Contains(whichUnit.OwningPlayer()) && IsUnitType(whichUnit, UNIT_TYPE_STRUCTURE) && whichUnit.GetTypeId() == _objectId;
   }
 }
