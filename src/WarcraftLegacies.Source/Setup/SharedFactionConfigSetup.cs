@@ -20,6 +20,7 @@ namespace WarcraftLegacies.Source.Setup
         faction.ModObjectLimit(Constants.UPGRADE_R01H_MALORNE_S_INFUSION_DRUIDS, Faction.UNLIMITED);
         faction.ModObjectLimit(Constants.UPGRADE_R026_ELUNE_S_INFUSION_SENTINELS, Faction.UNLIMITED);
         faction.ModObjectLimit(Constants.UPGRADE_R02A_CHAOS_INFUSION_SCOURGE_LEGION, Faction.UNLIMITED);
+        faction.ModObjectLimit(Constants.UPGRADE_R023_SPIRITUAL_INFUSION_WARSONG_FROSTWOLF_FEL_HORDE, Faction.UNLIMITED);
         faction.ModObjectLimit(Constants.UPGRADE_R04R_FORTIFIED_HULLS_UNIVERSAL_UPGRADE, Faction.UNLIMITED); //Actually Full Scale Escalation
         faction.ModObjectLimit(Constants.UPGRADE_R00C_IMPROVED_CANNONS_ALL_TEAMS, Faction.UNLIMITED);
         faction.ModObjectLimit(Constants.UPGRADE_R006_FORTIFIED_HULLS_UNIVERSAL_UPGRADE, Faction.UNLIMITED);
