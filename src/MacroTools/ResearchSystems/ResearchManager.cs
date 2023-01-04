@@ -12,6 +12,8 @@ namespace MacroTools.ResearchSystems
   /// </summary>
   public static class ResearchManager
   {
+    private static readonly List<Research> RegisteredResearches = new();
+    
     /// <summary>
     /// Used to disable and enable techs via addition and subtraction.
     /// </summary>
@@ -22,14 +24,20 @@ namespace MacroTools.ResearchSystems
     /// </summary>
     public static void Register(Research research, Research[]? otherResearches = null)
     {
+      if (RegisteredResearches.Contains(research))
+        throw new InvalidOperationException($"{GetObjectName(research.ResearchTypeId)} has already been registered.");
+      RegisteredResearches.Add(research);
+      
       PlayerUnitEvents.Register(ResearchEvent.IsFinished, () =>
       {
         try
         {
           var triggerPlayer = GetTriggerPlayer();
           if (otherResearches == null || !ShouldRefund(triggerPlayer, research, otherResearches))
+          {
+            research.OnResearch(triggerPlayer);
             return;
-          research.OnResearch(triggerPlayer);
+          }
           triggerPlayer.AddGold(research.GoldCost);
           triggerPlayer.AddLumber(research.LumberCost);
           triggerPlayer.SetObjectLevel(research.ResearchTypeId, 0);

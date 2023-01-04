@@ -193,10 +193,10 @@ namespace MacroTools.Extensions
       //This works around it by increasing the limit to 1 before making the change, then reverting it back.
       var revertAfter = false;
 
-      if (GetPlayerTechMaxAllowed(Player, obj) == 0)
+      if (Player.GetObjectLimit(obj) < 1)
       {
         Console.WriteLine(
-          $"using workaround for {GetObjectName(obj)} because it has a limit of {GetPlayerTechMaxAllowed(Player, obj)}");
+          $"using workaround for {GetObjectName(obj)} because it has a limit of {Player.GetObjectLimit(obj)}");
         SetPlayerTechMaxAllowed(Player, obj, 1);
         revertAfter = true;
       }
