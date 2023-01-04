@@ -14,7 +14,6 @@ namespace WarcraftLegacies.Source.Quests.Fel_Horde
   /// </summary>
   public sealed class QuestHellfireCitadel : QuestData
   {
-    private readonly List<unit> _demonGates;
     private readonly List<unit> _rescueUnits;
 
     /// <summary>
@@ -44,13 +43,6 @@ namespace WarcraftLegacies.Source.Quests.Fel_Horde
     /// <inheritdoc/>
     protected override string RewardDescription =>
       "Control of all units in Hellfire Citadel and enable Kargath to be trained at the altar";
-
-    /// <inheritdoc />
-    protected override void OnAdd(Faction whichFaction)
-    {
-      foreach (var unit in _demonGates) 
-        unit.SetInvulnerable(true);
-    }
     
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
@@ -58,7 +50,6 @@ namespace WarcraftLegacies.Source.Quests.Fel_Horde
       if(completingFaction.Player != null)
       {
         completingFaction.Player.RescueGroup(_rescueUnits);
-        completingFaction.Player.RescueGroup(_demonGates);
       }
       if (GetLocalPlayer() == completingFaction.Player) PlayThematicMusic("war3mapImported\\FelTheme.mp3");
     }
@@ -68,9 +59,6 @@ namespace WarcraftLegacies.Source.Quests.Fel_Horde
     {
       if (completingFaction.Player != null) 
         Player(PLAYER_NEUTRAL_AGGRESSIVE).RescueGroup(_rescueUnits);
-
-      foreach (var unit in _demonGates)
-        unit.Kill();
     }
   }
 }
