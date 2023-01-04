@@ -1,27 +1,21 @@
-﻿using WCSharp.Shared.Data;
-using static War3Api.Common;
+﻿using System;
+using WCSharp.Shared.Data;
 
 namespace MacroTools.Instances
 {
   public sealed class Gate
   {
-    private readonly unit _exteriorWaygate;
-    private readonly unit _interiorWaygate;
+    private readonly Func<Point> _exteriorPosition;
+    private readonly Func<Point> _interiorPosition;
 
-    private Gate(unit interiorWaygate, unit exteriorWaygate)
+    public Gate(Func<Point> interiorPosition, Func<Point> exteriorPosition)
     {
-      _interiorWaygate = interiorWaygate;
-      _exteriorWaygate = exteriorWaygate;
+      _interiorPosition = interiorPosition;
+      _exteriorPosition = exteriorPosition;
     }
 
-    public Point InteriorPosition => new(GetUnitX(_interiorWaygate), GetUnitY(_interiorWaygate));
+    public Point InteriorPosition => _interiorPosition();
 
-    public Point ExteriorPosition => new(GetUnitX(_exteriorWaygate), GetUnitY(_exteriorWaygate));
-
-    public void Destroy()
-    {
-      KillUnit(_interiorWaygate);
-      KillUnit(_exteriorWaygate);
-    }
+    public Point ExteriorPosition => _exteriorPosition();
   }
 }
