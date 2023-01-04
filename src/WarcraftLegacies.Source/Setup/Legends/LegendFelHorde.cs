@@ -1,6 +1,7 @@
-using MacroTools;
+﻿using MacroTools;
 using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
+using WCSharp.Shared.Data;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup.Legends
@@ -78,9 +79,11 @@ namespace WarcraftLegacies.Source.Setup.Legends
       LegendBlacktemple = new Capital
       {
         Unit = preplacedUnitSystem.GetUnit(FourCC("o00F")),
-        Capturable = true
+        Hivemind = true
       };
       CapitalManager.Register(LegendBlacktemple);
+      LegendBlacktemple.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_NPGR_POWER_GENERATOR_TEAL, new Point(5511.9f, -29688.2f)));
+      LegendBlacktemple.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_NPGR_POWER_GENERATOR_TEAL, new Point(5513.1f, -30467.4f)));
 
       LegendHellfirecitadel = new Capital
       {

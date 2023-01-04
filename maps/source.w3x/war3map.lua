@@ -2615,6 +2615,7 @@ local life
 u = BlzCreateUnitWithSkin(p, FourCC("e01X"), -20928.0, 10560.0, 270.000, FourCC("e01X"))
 life = GetUnitState(u, UNIT_STATE_LIFE)
 SetUnitState(u, UNIT_STATE_LIFE, 0.30 * life)
+SetUnitState(u, UNIT_STATE_MANA, 400)
 IssueImmediateOrder(u, "")
 u = BlzCreateUnitWithSkin(p, FourCC("o02P"), -21536.0, 7968.0, 270.000, FourCC("o02P"))
 u = BlzCreateUnitWithSkin(p, FourCC("n06F"), -20672.0, 7936.0, 270.000, FourCC("n06F"))
@@ -8075,7 +8076,7 @@ end
 
 function InitTrig_ExodarShipJump()
 gg_trg_ExodarShipJump = CreateTrigger()
-TriggerRegisterAnyUnitEventBJ(gg_trg_ExodarShipJump, EVENT_PLAYER_UNIT_SPELL_CAST)
+TriggerRegisterAnyUnitEventBJ(gg_trg_ExodarShipJump, EVENT_PLAYER_UNIT_SPELL_EFFECT)
 TriggerAddCondition(gg_trg_ExodarShipJump, Condition(Trig_ExodarShipJump_Conditions))
 TriggerAddAction(gg_trg_ExodarShipJump, Trig_ExodarShipJump_Actions)
 end
