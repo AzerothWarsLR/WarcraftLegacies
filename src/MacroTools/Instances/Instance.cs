@@ -54,14 +54,17 @@ namespace MacroTools.Instances
       float distanceToNearestGate = 0;
       Gate? nearestGate = null;
 
+      if (_gates.Count == 0)
+        throw new InvalidOperationException(
+          $"Could not find the nearest {nameof(Gate)} for {nameof(Instance)} {_name} at position {position}.");
+
       foreach (var gate in _gates)
       {
         var distance = MathEx.GetDistanceBetweenPoints(position, gate.InteriorPosition);
-        if (distance > distanceToNearestGate)
-        {
-          nearestGate = gate;
-          distanceToNearestGate = distance;
-        }
+        if (!(distance > distanceToNearestGate)) 
+          continue;
+        nearestGate = gate;
+        distanceToNearestGate = distance;
       }
 
       return nearestGate;
@@ -86,11 +89,6 @@ namespace MacroTools.Instances
             {
               var enumItem = GetEnumItem();
               var exteriorPosition = GetNearestGate(enumItem.GetPosition())?.ExteriorPosition;
-
-              if (exteriorPosition == null)
-                throw new InvalidOperationException(
-                  $"Tried to move {GetItemName(enumItem)} out of the destroyed instance {_name}, but it has no exterior gates registered.");
-
               enumItem.SetPosition(exteriorPosition);
             }
             catch (Exception ex)
