@@ -2344,6 +2344,7 @@ u = BlzCreateUnitWithSkin(p, FourCC("hpea"), 13182.5, 8719.0, 11.547, FourCC("hp
 u = BlzCreateUnitWithSkin(p, FourCC("hpea"), 13268.3, 8611.5, 109.104, FourCC("hpea"))
 u = BlzCreateUnitWithSkin(p, FourCC("hpea"), 13298.5, 8752.3, 213.526, FourCC("hpea"))
 u = BlzCreateUnitWithSkin(p, FourCC("nvlw"), 10347.6, 10158.3, 271.274, FourCC("nvlw"))
+u = BlzCreateUnitWithSkin(p, FourCC("h02Q"), 12547.8, 8731.5, 333.910, FourCC("h02Q"))
 end
 
 function CreateBuildingsForPlayer2()

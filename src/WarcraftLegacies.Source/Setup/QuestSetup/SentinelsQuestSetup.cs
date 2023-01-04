@@ -24,6 +24,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       sentinels.AddQuest(new QuestScepterOfTheQueenSentinels(Regions.TheAthenaeum, artifactSetup.ScepterOfTheQueen));
       sentinels.AddQuest(new QuestVaultoftheWardens());
       sentinels.AddQuest(new QuestBlackrookHold());
+      sentinels.AddQuest(new QuestMaievOutland(Regions.MaievStartUnlock));
     }
   }
 }

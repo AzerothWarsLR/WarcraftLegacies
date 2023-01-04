@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives;
@@ -18,7 +18,7 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
       "ReplaceableTextures\\CommandButtons\\BTNMaievArmor.blp")
     {
       AddObjective(new ObjectiveCastSpell(FourCC("A0J5"), true));
-      AddObjective(new ObjectiveControlLegend(LegendSentinels.Maiev, true));
+      AddObjective(new ObjectiveControlCapital(LegendSentinels.VaultOfTheWardens, true));
 
       foreach (var unit in CreateGroup().EnumUnitsInRect(rescueRect).EmptyToList())
       {
