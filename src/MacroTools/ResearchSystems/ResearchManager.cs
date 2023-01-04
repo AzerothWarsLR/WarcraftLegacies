@@ -20,7 +20,7 @@ namespace MacroTools.ResearchSystems
     private const int BigNumber = 5000;
 
     /// <summary>
-    /// Registers a  <see cref="Research"/>, causing its <see cref="Research.OnResearch"/> function to be executed when researched.
+    /// Registers a <see cref="Research"/>, causing its <see cref="Research.OnResearch"/> function to be executed when researched.
     /// </summary>
     public static void Register(Research research, Research[]? otherResearches = null)
     {
@@ -32,9 +32,11 @@ namespace MacroTools.ResearchSystems
       {
         try
         {
+          Console.WriteLine("Hello");
           var triggerPlayer = GetTriggerPlayer();
           if (otherResearches == null || !ShouldRefund(triggerPlayer, research, otherResearches))
           {
+            Console.WriteLine($"Not refunding {GetObjectName(research.ResearchTypeId)}");
             research.OnResearch(triggerPlayer);
             return;
           }

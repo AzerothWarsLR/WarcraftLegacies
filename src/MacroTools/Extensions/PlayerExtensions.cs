@@ -248,7 +248,7 @@ namespace MacroTools.Extensions
 
     internal static void ModObjectLimit(this player player, int objectId, int limit, bool isResearch)
     {
-      PlayerData.ByHandle(player).ModObjectLimit(objectId, limit, isResearch);
+      PlayerData.ByHandle(player).ModObjectLimit(objectId, limit);
     }
     
     internal static void SetColor(this player whichPlayer, playercolor color, bool changeExisting)

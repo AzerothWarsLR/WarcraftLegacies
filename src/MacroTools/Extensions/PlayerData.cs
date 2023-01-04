@@ -212,12 +212,10 @@ namespace MacroTools.Extensions
 
     public int GetObjectLimit(int id) => _objectLimits.TryGetValue(id, out var limit) ? limit : 0;
 
-    private void SetObjectLimit(int id, int limit, bool isResearch = false)
+    private void SetObjectLimit(int id, int limit)
     {
       _objectLimits[id] = limit;
-      if (isResearch)
-        SetObjectLevel(id, limit);
-      
+
       if (limit >= Faction.UNLIMITED)
         SetPlayerTechMaxAllowed(Player, id, -1);
       else if (limit <= 0)
@@ -226,8 +224,8 @@ namespace MacroTools.Extensions
         SetPlayerTechMaxAllowed(Player, id, limit);
     }
 
-    public void ModObjectLimit(int id, int limit, bool isResearch) =>
-      SetObjectLimit(id, GetObjectLimit(id) + limit, isResearch);
+    public void ModObjectLimit(int id, int limit) =>
+      SetObjectLimit(id, GetObjectLimit(id) + limit);
 
     public void AddGold(float x)
     {
