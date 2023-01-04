@@ -8076,7 +8076,7 @@ end
 
 function InitTrig_ExodarShipJump()
 gg_trg_ExodarShipJump = CreateTrigger()
-TriggerRegisterAnyUnitEventBJ(gg_trg_ExodarShipJump, EVENT_PLAYER_UNIT_SPELL_EFFECT)
+TriggerRegisterAnyUnitEventBJ(gg_trg_ExodarShipJump, EVENT_PLAYER_UNIT_SPELL_CHANNEL)
 TriggerAddCondition(gg_trg_ExodarShipJump, Condition(Trig_ExodarShipJump_Conditions))
 TriggerAddAction(gg_trg_ExodarShipJump, Trig_ExodarShipJump_Actions)
 end
