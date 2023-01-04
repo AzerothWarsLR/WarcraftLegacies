@@ -91,7 +91,11 @@ namespace MacroTools.FactionSystem
           if (research == null || !research.IncompatibleWith.Any(x => faction.GetObjectLevel(x.ResearchTypeId) > 0))
           {
             faction.SetObjectLevel(researchId, GetPlayerTechCount(GetTriggerPlayer(), researchId, true));
-            research?.OnResearch(GetTriggerPlayer());
+            if (research == null) 
+              return;
+            research.OnResearch(GetTriggerPlayer());
+            foreach (var otherResearch in research.IncompatibleWith)
+              faction.SetObjectLimit(otherResearch.ResearchTypeId, -UNLIMITED, true);
           }
           else
           {
