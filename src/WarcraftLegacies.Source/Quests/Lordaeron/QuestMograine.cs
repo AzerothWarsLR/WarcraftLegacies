@@ -9,7 +9,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
   /// </summary>
   public sealed class QuestMograine : QuestData
   {
-    private const int AltarId = Constants.UNIT_HALT_ALTAR_OF_KINGS;
+    private const int AltarId = Constants.UNIT_HALT_ALTAR_OF_KINGS_LORDAERON_ALTAR;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestMograine"/> class.

@@ -12,7 +12,7 @@ namespace WarcraftLegacies.Source.UnitTypes
         Meta = true
       });
       
-      UnitType.Register(new UnitType(Constants.UNIT_HSHY_ALLIANCE_SHIPYARD_LORDAERON)
+      UnitType.Register(new UnitType(Constants.UNIT_HSHY_SHIPYARD_LORDAERON_SHIPYARD)
       {
         Category = UnitCategory.Shipyard
       });
@@ -77,7 +77,7 @@ namespace WarcraftLegacies.Source.UnitTypes
         Category = UnitCategory.Shipyard
       });
       
-      UnitType.Register(new UnitType(Constants.UNIT_USHP_HAUNTED_HARBOR)
+      UnitType.Register(new UnitType(Constants.UNIT_USHP_HAUNTED_HARBOR_SCOURGE)
       {
         Category = UnitCategory.Shipyard
       });

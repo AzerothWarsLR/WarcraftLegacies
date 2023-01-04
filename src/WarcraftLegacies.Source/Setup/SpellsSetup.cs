@@ -189,22 +189,6 @@ namespace WarcraftLegacies.Source.Setup
       };
       SpellSystem.Register(unholyArmor);
 
-      PassiveAbilityManager.Register(new RegionRestricted(Constants.UNIT_H097_GUARD_HOUSE_SCARLET_OTHER,
-        new[]
-        {
-          Regions.HeartglenTaxe,
-          Regions.StrahnbradTaxe,
-          Regions.AndhoralTaxe,
-          Regions.TirisfalTaxe,
-          Regions.HavenshireTaxe,
-          Regions.CorinTaxe
-        }));
-
-      PassiveAbilityManager.Register(new ProvidesIncome(Constants.UNIT_H09N_PALISADE_FORT_SCARLET_BARRACKS, 15));
-      PassiveAbilityManager.Register(new ProvidesIncome(Constants.UNIT_H09P_SCARLET_KEEP_SCARLET, 60));
-      PassiveAbilityManager.Register(new ProvidesIncome(Constants.UNIT_H09O_CRIMSON_CASTLE_SCARLET, 80));
-      PassiveAbilityManager.Register(new ProvidesIncome(Constants.UNIT_H09Q_ROYAL_FORTRESS_SCARLET_BARRACKS, 100));
-
       var electricStrike = new ElectricStrike(Constants.ABILITY_A0RC_ELECTRIC_STRIKE_DARK_GREEN_WIZARD_S_SANCTUM)
       {
         StunId = Constants.ABILITY_A0RD_ELECTRIC_STRIKE_MINI_STUN_DARK_GREEN,

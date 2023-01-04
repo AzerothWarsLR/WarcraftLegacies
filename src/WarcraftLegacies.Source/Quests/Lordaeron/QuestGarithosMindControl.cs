@@ -24,7 +24,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
       "Garithos has always had a distrust of other races, he might be tempted to join the Scarlet MindControl.",
       "ReplaceableTextures\\CommandButtons\\BTNGarithos.blp")
     {
-      AddObjective(new ObjectiveResearch(Constants.UPGRADE_R08F_GARITHOS_MIND_CONTROL_LORDAERON, Constants.UNIT_HBLA_BLACKSMITH_LORDAERON));
+      AddObjective(new ObjectiveResearch(Constants.UPGRADE_R08F_GARITHOS_MIND_CONTROL_LORDAERON, Constants.UNIT_HBLA_BLACKSMITH_LORDAERON_RESEARCH));
     }
 
     /// <inheritdoc/>

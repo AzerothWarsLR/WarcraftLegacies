@@ -29,7 +29,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
     {
       AddObjective(new ObjectiveKillUnit(preplacedUnitSystem.GetUnit(Constants.UNIT_O00B_JUBEI_THOS_LEGION_DEMI)));
       AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N019_ALTERAC_MOUNTAINS_20GOLD_MIN)));
-      AddObjective(new ObjectiveUpgrade(Constants.UNIT_HCAS_CASTLE, Constants.UNIT_HTOW_TOWN_HALL));
+      AddObjective(new ObjectiveUpgrade(Constants.UNIT_HCAS_CASTLE_LORDAERON_T3, Constants.UNIT_HTOW_TOWN_HALL_LORDAERON_T1));
       AddObjective(new ObjectiveExpire(1470));
       AddObjective(new ObjectiveSelfExists());
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);

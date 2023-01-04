@@ -4777,4 +4777,5 @@ public static class Constants
 	public const int ORDER_INSTANT2 = 851987;
 	public const int ORDER_INSTANT3 = 851975;
 	public const int ORDER_INSTANT4 = 852019;
+  internal static readonly int UNIT_O04M_KEZAN_TRADING_CENTER_GOBLIN_SHIPYARD_2;
 }

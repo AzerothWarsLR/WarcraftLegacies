@@ -1,4 +1,4 @@
-using MacroTools;
+﻿using MacroTools;
 using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives;
 using MacroTools.QuestSystem;
@@ -31,7 +31,7 @@ namespace WarcraftLegacies.Source.Quests.Legion
     {
       CreateUnit(completingFaction.Player, DemongateId, GetUnitX(_objectiveKillMonastery.Target),
         GetUnitY(_objectiveKillMonastery.Target), 270);
-      var monastery = Regions.ScarletMonastery.Rect;
+      var monastery = Regions.Hearthglen.Rect;
       SetDoodadAnimationRect(monastery, FourCC("YObb"), "hide", false);
       SetDoodadAnimationRect(monastery, FourCC("ZSab"), "hide", false);
       SetDoodadAnimationRect(monastery, FourCC("YOsw"), "hide", false);

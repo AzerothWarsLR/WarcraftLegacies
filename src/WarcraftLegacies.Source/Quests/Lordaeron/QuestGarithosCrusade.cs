@@ -25,7 +25,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
       "Garithos has always had a distrust of other races, he might be tempted to join the Scarlet Crusade.",
       "ReplaceableTextures\\CommandButtons\\BTNGarithos.blp")
     {
-      AddObjective(new ObjectiveResearch(Constants.UPGRADE_R08E_JOIN_THE_CRUSADE_LORDAERON, Constants.UNIT_HBLA_BLACKSMITH_LORDAERON));
+      AddObjective(new ObjectiveResearch(Constants.UPGRADE_R08E_JOIN_THE_CRUSADE_LORDAERON, Constants.UNIT_HBLA_BLACKSMITH_LORDAERON_RESEARCH));
     }
 
     /// <inheritdoc/>

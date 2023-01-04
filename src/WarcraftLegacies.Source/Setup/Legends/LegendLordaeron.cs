@@ -95,10 +95,10 @@ namespace WarcraftLegacies.Source.Setup.Legends
         DeathMessage = "The capital city of Lordaeron has been razed, and King Terenas is dead."
       };
       CapitalManager.Register(CapitalPalace);
-      CapitalPalace.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_H006_IMPROVED_GUARD_TOWER, new Point(8686, 8862)));
-      CapitalPalace.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_H006_IMPROVED_GUARD_TOWER, new Point(9476, 8843)));
-      CapitalPalace.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_H007_IMPROVED_CANNON_TOWER, new Point(8638, 9342)));
-      CapitalPalace.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_H007_IMPROVED_CANNON_TOWER, new Point(9545, 9372)));
+      CapitalPalace.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_H006_IMPROVED_GUARD_TOWER_LORDAERON_TOWER, new Point(8686, 8862)));
+      CapitalPalace.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_H006_IMPROVED_GUARD_TOWER_LORDAERON_TOWER, new Point(9476, 8843)));
+      CapitalPalace.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_H007_IMPROVED_CANNON_TOWER_LORDAERON_TOWER, new Point(8638, 9342)));
+      CapitalPalace.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_H007_IMPROVED_CANNON_TOWER_LORDAERON_TOWER, new Point(9545, 9372)));
       CreateTrigger()
         .RegisterUnitEvent(CapitalPalace.Unit, EVENT_UNIT_DEATH)
         .AddAction(() =>
@@ -121,9 +121,9 @@ namespace WarcraftLegacies.Source.Setup.Legends
         DeathMessage = "The majestic city of Stratholme has been destroyed."
       };
       CapitalManager.Register(Stratholme);
-      Stratholme.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_H006_IMPROVED_GUARD_TOWER, new Point(14067, 12242)));
-      Stratholme.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_H006_IMPROVED_GUARD_TOWER, new Point(14553, 11593)));
-      Stratholme.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_H006_IMPROVED_GUARD_TOWER, new Point(15359, 11612)));
+      Stratholme.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_H006_IMPROVED_GUARD_TOWER_LORDAERON_TOWER, new Point(14067, 12242)));
+      Stratholme.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_H006_IMPROVED_GUARD_TOWER_LORDAERON_TOWER, new Point(14553, 11593)));
+      Stratholme.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_H006_IMPROVED_GUARD_TOWER_LORDAERON_TOWER, new Point(15359, 11612)));
 
       TyrsHand = new Capital
       {
@@ -131,9 +131,9 @@ namespace WarcraftLegacies.Source.Setup.Legends
         DeathMessage = "Tyr's Hand, the bastion of human power in Lordaeron, has fallen."
       };
       CapitalManager.Register(TyrsHand);
-      TyrsHand.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_HCTW_CANNON_TOWER, new Point(20652, 8057)));
-      TyrsHand.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_H007_IMPROVED_CANNON_TOWER, new Point(20024, 8123)));
-      TyrsHand.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_H007_IMPROVED_CANNON_TOWER, new Point(20042, 7420)));
+      TyrsHand.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_HCTW_CANNON_TOWER_LORDAERON_TOWER, new Point(20652, 8057)));
+      TyrsHand.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_H007_IMPROVED_CANNON_TOWER_LORDAERON_TOWER, new Point(20024, 8123)));
+      TyrsHand.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_H007_IMPROVED_CANNON_TOWER_LORDAERON_TOWER, new Point(20042, 7420)));
 
       Uther = new LegendaryHero("Uther the Lightbringer")
       {
