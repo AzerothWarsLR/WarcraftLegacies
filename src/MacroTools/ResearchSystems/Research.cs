@@ -45,6 +45,7 @@ namespace MacroTools.ResearchSystems
     /// <param name="researchingPlayer"></param>
     public void Refund(player researchingPlayer)
     {
+      researchingPlayer.DisplayRefundedResearch(ResearchTypeId);
       researchingPlayer.AddGold(GoldCost);
       researchingPlayer.AddLumber(LumberCost);
       researchingPlayer.SetObjectLevel(ResearchTypeId, Math.Min(0, researchingPlayer.GetObjectLimit(ResearchTypeId)));

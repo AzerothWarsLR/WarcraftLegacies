@@ -340,6 +340,14 @@ namespace MacroTools.Extensions
     }
     
     /// <summary>
+    /// Alerts the player that one of their researches has been refunded.
+    /// </summary>
+    public static void DisplayRefundedResearch(this player whichPlayer, int researchTypeId){
+      DisplayTextToPlayer(whichPlayer, 0, 0,
+        $"\n|cff008000REFUND|r - You cannot research {GetObjectName(researchTypeId)}. All resources spent on it have been refunded.");
+    }
+    
+    /// <summary>
     /// Indicates to the player that they have acquired a new <see cref="Power"/>.
     /// </summary>
     public static void DisplayPowerAcquired(this player whichPlayer, Power power){
