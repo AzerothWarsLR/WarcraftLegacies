@@ -33,7 +33,11 @@ namespace TestMap.Source.Setup
       DialogueSetup.Setup();
       AugmentSetup.Setup();
       PassiveAbilityManager.InitializePreplacedUnits();
-      ResearchManager.RegisterIncompatibleSet(FourCC("Rhde"), FourCC("Rhan"));
+      ResearchManager.RegisterIncompatibleSet(
+        new BasicResearch(FourCC("Rhan"), 30, 30),
+        new BasicResearch(FourCC("Rhde"), 30, 30), 
+        new BasicResearch(FourCC("Rhri"), 30, 30)
+      );
     }
   }
 }

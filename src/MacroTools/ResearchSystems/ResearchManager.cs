@@ -27,7 +27,8 @@ namespace MacroTools.ResearchSystems
       if (RegisteredResearches.Contains(research))
         throw new InvalidOperationException($"{GetObjectName(research.ResearchTypeId)} has already been registered.");
       RegisteredResearches.Add(research);
-      
+
+      Console.WriteLine($"Registering {GetObjectName(research.ResearchTypeId)}");
       PlayerUnitEvents.Register(ResearchEvent.IsFinished, () =>
       {
         try
@@ -71,9 +72,9 @@ namespace MacroTools.ResearchSystems
     {
       foreach (var outerResearch in researches)
       {
+        Register(outerResearch, researches);
         SetupStartedTrigger(outerResearch, researches);
         SetupCancelledTrigger(outerResearch, researches);
-        Register(outerResearch, researches);
       }
     }
 
