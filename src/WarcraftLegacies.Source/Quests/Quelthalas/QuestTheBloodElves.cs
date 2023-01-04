@@ -1,4 +1,5 @@
-﻿using MacroTools.Extensions;
+﻿using MacroTools;
+using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.Libraries;
 using MacroTools.ObjectiveSystem.Objectives;
@@ -25,12 +26,13 @@ namespace WarcraftLegacies.Source.Quests.Quelthalas
     /// Initializes a new instance of the <see cref="QuestTheBloodElves"/> class.
     /// </summary>
     /// <param name="secondChanceRect">Units in this area start invulnerable and become rescued when the quest is failed.</param>
-    public QuestTheBloodElves(Rectangle secondChanceRect) : base("The Blood Elves",
+    /// <param name="preplacedUnitSystem">A system that can be used to find preplaced units.</param>
+    public QuestTheBloodElves(Rectangle secondChanceRect, PreplacedUnitSystem preplacedUnitSystem) : base("The Blood Elves",
       "The Elves of Quel'thalas have a deep reliance on the Sunwell's magic. Without it, they would have to turn to darker magicks to sate themselves.",
       "ReplaceableTextures\\CommandButtons\\BTNHeroBloodElfPrince.blp")
     {
       _secondChanceRect = secondChanceRect;
-      AddObjective(new ObjectiveControlCapital(LegendNeutral.DraktharonKeep, false));
+      AddObjective(new ObjectiveKillUnit(preplacedUnitSystem.GetUnit(Constants.UNIT_N0BE_LEGION_NEXUS_LEGION_OTHER, Regions.DrakUnlock.Center)));
       AddObjective(new ObjectiveControlLegend(LegendQuelthalas.LegendAnasterian, true));
       AddObjective(new ObjectiveControlCapital(LegendQuelthalas.LegendSunwell, true));
       Required = true;
