@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using MacroTools.ControlPointSystem;
 using MacroTools.FactionSystem;
 using static War3Api.Common;
@@ -185,8 +184,7 @@ namespace MacroTools.Extensions
         throw new ArgumentException(
           $"{nameof(level)} cannot be higher than the object limit for {GetObjectName(obj)}, which is {level}.",
           $"{nameof(level)}");
-
-      _objectLevels[obj] = level;
+      
       //Object levels cannot be changed for objects with a limit of 0.
       //This works around it by increasing the limit to 1 before making the change, then reverting it back.
       var revertAfter = false;
@@ -203,6 +201,8 @@ namespace MacroTools.Extensions
       if (revertAfter)
         SetPlayerTechMaxAllowed(Player, obj, 0);
 
+      _objectLevels[obj] = level;
+      
       if (GetPlayerTechCount(Player, obj, false) != Math.Max(level, 0))
         throw new InvalidOperationException(
           $"Failed to set the object level of {GetObjectName(obj)} to {level}; it is {GetPlayerTechCount(Player, obj, false)} instead.");
@@ -214,7 +214,7 @@ namespace MacroTools.Extensions
     {
       _objectLimits[id] = limit;
       if (isResearch)
-        SetObjectLevel(id, Math.Min(GetPlayerTechCount(Player, id, true), limit));
+        SetObjectLevel(id, limit);
       
       if (limit >= Faction.UNLIMITED)
         SetPlayerTechMaxAllowed(Player, id, -1);
