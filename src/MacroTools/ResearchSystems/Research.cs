@@ -1,4 +1,7 @@
-﻿using static War3Api.Common;
+﻿using System;
+using System.Collections.Generic;
+using MacroTools.Extensions;
+using static War3Api.Common;
 
 namespace MacroTools.ResearchSystems
 {
@@ -7,6 +10,11 @@ namespace MacroTools.ResearchSystems
   /// </summary>
   public abstract class Research
   {
+    /// <summary>
+    /// A collection of <see cref="Research"/>es this <see cref="Research"/> is incompatible with.
+    /// </summary>
+    public IEnumerable<Research> IncompatibleWith = Array.Empty<Research>();
+    
     /// <summary>
     /// The amount of gold the research costs. Unfortunately this is hard-coded.
     /// </summary>
@@ -38,8 +46,15 @@ namespace MacroTools.ResearchSystems
     public abstract void OnResearch(player researchingPlayer);
 
     /// <summary>
-    /// Invoked when a player loses the research.
+    /// Unresearches the research and returns all gold and lumber spent on it.
     /// </summary>
-    public abstract void OnUnresearch(player researchingPlayer);
+    /// <param name="researchingPlayer"></param>
+    public void Refund(player researchingPlayer)
+    {
+      researchingPlayer.DisplayRefundedResearch(ResearchTypeId);
+      researchingPlayer.AddGold(GoldCost);
+      researchingPlayer.AddLumber(LumberCost);
+      researchingPlayer.SetObjectLevel(ResearchTypeId, Math.Min(0, researchingPlayer.GetObjectLimit(ResearchTypeId)));
+    }
   }
 }

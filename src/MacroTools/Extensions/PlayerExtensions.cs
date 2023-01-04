@@ -122,7 +122,12 @@ namespace MacroTools.Extensions
     /// </summary>
     /// <param name="player">The player in question.</param>
     /// <param name="objectId">The unit type ID or research ID we want to know about.</param>
-    public static int GetObjectLimit(this player player, int objectId) => GetPlayerTechMaxAllowed(player, objectId);
+    public static int GetObjectLimit(this player player, int objectId) => PlayerData.ByHandle(player).GetObjectLimit(objectId);
+
+    public static int GetObjectLevel(this player player, int objectId)
+    {
+      return PlayerData.ByHandle(player).GetObjectLevel(objectId);
+    }
 
     public static int GetControlPointCount(this player player)
     {
@@ -241,9 +246,14 @@ namespace MacroTools.Extensions
       PlayerData.ByHandle(player).SetObjectLevel(objectId, level);
     }
 
-    internal static void ModObjectLimit(this player player, int objectId, int limit)
+    internal static void ModObjectLimit(this player player, int objectId, int limit, bool isResearch)
     {
       PlayerData.ByHandle(player).ModObjectLimit(objectId, limit);
+    }
+    
+    internal static void SetObjectLimit(this player player, int objectId, int limit, bool isResearch)
+    {
+      PlayerData.ByHandle(player).SetObjectLimit(objectId, limit);
     }
     
     internal static void SetColor(this player whichPlayer, playercolor color, bool changeExisting)
@@ -332,6 +342,14 @@ namespace MacroTools.Extensions
       if (GetLocalPlayer() == whichPlayer){
         StartSound(SoundLibrary.Hint);
       }
+    }
+    
+    /// <summary>
+    /// Alerts the player that one of their researches has been refunded.
+    /// </summary>
+    public static void DisplayRefundedResearch(this player whichPlayer, int researchTypeId){
+      DisplayTextToPlayer(whichPlayer, 0, 0,
+        $"\n|cff008000REFUND|r - You cannot research {GetObjectName(researchTypeId)}. All resources spent on it have been refunded.");
     }
     
     /// <summary>

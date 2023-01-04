@@ -1,6 +1,7 @@
-﻿using MacroTools;
+﻿using MacroTools.ControlPointSystem;
 using MacroTools.Mechanics;
 using MacroTools.PassiveAbilitySystem;
+using MacroTools.ResearchSystems;
 using MacroTools.UserInterface;
 using static War3Api.Common;
 
@@ -10,9 +11,11 @@ namespace TestMap.Source.Setup
   {
     public static void Setup()
     {
-      var hars = CreateUnit(Player(0), FourCC("hars"), 0, 0, 0);
       SetPlayerState(Player(0), PLAYER_STATE_RESOURCE_FOOD_CAP, 100);
-      
+      SetPlayerState(Player(0), PLAYER_STATE_RESOURCE_GOLD, 10000);
+      SetPlayerState(Player(0), PLAYER_STATE_RESOURCE_LUMBER, 10000);
+
+      ControlPointManager.Instance = new ControlPointManager();
       LegendSetup.Setup();
       TeamSetup.Setup();
       AllFactionSetup.Setup();
@@ -30,6 +33,11 @@ namespace TestMap.Source.Setup
       DialogueSetup.Setup();
       AugmentSetup.Setup();
       PassiveAbilityManager.InitializePreplacedUnits();
+      ResearchManager.RegisterIncompatibleSet(
+        new BasicResearch(FourCC("Rhan"), 30, 30),
+        new BasicResearch(FourCC("Rhri"), 30, 30),
+        new BasicResearch(FourCC("Rhde"), 30, 30)
+      );
     }
   }
 }

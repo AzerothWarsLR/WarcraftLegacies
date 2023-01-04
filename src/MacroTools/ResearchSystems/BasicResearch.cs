@@ -16,10 +16,5 @@ namespace MacroTools.ResearchSystems
     public override void OnResearch(player researchingPlayer)
     {
     }
-
-    /// <inheritdoc />
-    public override void OnUnresearch(player researchingPlayer)
-    {
-    }
   }
 }

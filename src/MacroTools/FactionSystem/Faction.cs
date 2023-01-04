@@ -1,11 +1,13 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using MacroTools.Augments;
 using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives;
 using MacroTools.QuestSystem;
+using MacroTools.ResearchSystems;
 using WCSharp.Events;
 using static War3Api.Common;
 
@@ -79,8 +81,32 @@ namespace MacroTools.FactionSystem
     {
       PlayerUnitEvents.Register(ResearchEvent.IsFinished, () =>
       {
-        var faction = FactionManager.GetFromPlayer(GetTriggerPlayer());
-        faction?.SetObjectLevel(GetResearched(), GetPlayerTechCount(GetTriggerPlayer(), GetResearched(), false));
+        try
+        {
+          var faction = FactionManager.GetFromPlayer(GetTriggerPlayer());
+          if (faction == null)
+            return;
+          var researchId = GetResearched();
+          var research = ResearchManager.GetFromTypeId(researchId);
+          if (research == null || !research.IncompatibleWith.Any(x => faction.GetObjectLevel(x.ResearchTypeId) > 0))
+          {
+            faction.SetObjectLevel(researchId, GetPlayerTechCount(GetTriggerPlayer(), researchId, true));
+            if (research == null) 
+              return;
+            research.OnResearch(GetTriggerPlayer());
+            foreach (var otherResearch in research.IncompatibleWith)
+              faction.SetObjectLimit(otherResearch.ResearchTypeId, -UNLIMITED, true);
+          }
+          else
+          {
+            faction.SetObjectLimit(researchId, -UNLIMITED, true);
+            research.Refund(GetTriggerPlayer());
+          }
+        }
+        catch (Exception ex)
+        {
+          Logger.LogError(ex.ToString());
+        }
       });
     }
 
@@ -379,11 +405,11 @@ namespace MacroTools.FactionSystem
       return questData;
     }
     
-    public int GetObjectLevel(int obj)
-    {
-      return _objectLevels[obj];
-    }
+    public int GetObjectLevel(int obj) => _objectLevels.ContainsKey(obj) ? _objectLevels[obj] : 0;
 
+    /// <summary>
+    /// Sets the current level of a particular research for the <see cref="Faction"/>.
+    /// </summary>
     public void SetObjectLevel(int obj, int level)
     {
       _objectLevels[obj] = level;
@@ -409,7 +435,8 @@ namespace MacroTools.FactionSystem
     /// </summary>
     /// <param name="objectId">The object ID to modify the limit of.</param>
     /// <param name="limit">The amount to adjust the limit by.</param>
-    public void ModObjectLimit(int objectId, int limit)
+    /// <param name="isResearch">Should be true if the input ID is a research.</param>
+    public void ModObjectLimit(int objectId, int limit, bool isResearch = false)
     {
       if (_objectLimits.ContainsKey(objectId))
         _objectLimits[objectId] += limit;
@@ -417,7 +444,27 @@ namespace MacroTools.FactionSystem
         _objectLimits.Add(objectId, limit);
 
       //If a player has this Faction, adjust their techtree as well
-      Player?.ModObjectLimit(objectId, limit);
+      Player?.ModObjectLimit(objectId, limit, isResearch);
+
+      if (_objectLimits[objectId] == 0)
+        _objectLimits.Remove(objectId);
+    }
+    
+    /// <summary>
+    ///   Sets the limit of the given object that the <see cref="Faction" /> can train, build, or research.
+    /// </summary>
+    /// <param name="objectId">The object ID to modify the limit of.</param>
+    /// <param name="limit">The amount to set the limit to.</param>
+    /// <param name="isResearch">Should be true if the input ID is a research.</param>
+    public void SetObjectLimit(int objectId, int limit, bool isResearch = false)
+    {
+      if (_objectLimits.ContainsKey(objectId))
+        _objectLimits[objectId] = limit;
+      else
+        _objectLimits.Add(objectId, limit);
+
+      //If a player has this Faction, adjust their techtree as well
+      Player?.SetObjectLimit(objectId, limit, isResearch);
 
       if (_objectLimits[objectId] == 0)
         _objectLimits.Remove(objectId);
@@ -476,7 +523,7 @@ namespace MacroTools.FactionSystem
     private void ApplyObjects()
     {
       foreach (var (key, value) in _objectLimits)
-        Player?.ModObjectLimit(key, value);
+        Player?.ModObjectLimit(key, value, false);
 
       foreach (var (key, value) in _objectLevels)
         Player?.SetObjectLevel(key, value);
@@ -489,7 +536,7 @@ namespace MacroTools.FactionSystem
     private void UnapplyObjects()
     {
       foreach (var (key, value) in _objectLimits)
-        Player?.ModObjectLimit(key, -value);
+        Player?.ModObjectLimit(key, -value, false);
 
       foreach (var (key, _) in _objectLevels)
         Player?.SetObjectLevel(key, 0);

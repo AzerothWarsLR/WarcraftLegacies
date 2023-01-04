@@ -23,13 +23,5 @@ namespace WarcraftLegacies.Source.Researches
       faction?.ModObjectLimit(Constants.UNIT_HFOO_FOOTMAN_LORDAERON, -Faction.UNLIMITED);
       faction?.ModObjectLimit(Constants.UNIT_H029_VETERAN_FOOTMAN_LORDAERON, Faction.UNLIMITED);
     }
-
-    /// <inheritdoc />
-    public override void OnUnresearch(player researchingPlayer)
-    {
-      var faction = researchingPlayer.GetFaction();
-      faction?.ModObjectLimit(Constants.UNIT_HFOO_FOOTMAN_LORDAERON, Faction.UNLIMITED);
-      faction?.ModObjectLimit(Constants.UNIT_H029_VETERAN_FOOTMAN_LORDAERON, -Faction.UNLIMITED);
-    }
   }
 }
