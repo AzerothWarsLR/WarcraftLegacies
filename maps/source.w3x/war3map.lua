@@ -506,7 +506,6 @@ gg_snd_DoorCloseRemix = nil
 gg_snd_DoorOpenRemix = nil
 gg_snd_NuclearLaunchDetected = nil
 gg_snd_IllidansTheme = ""
-gg_trg_ExodarShipJump = nil
 function InitGlobals()
 end
 
@@ -2202,18 +2201,12 @@ local life
 u = BlzCreateUnitWithSkin(p, FourCC("opeo"), -9087.0, -11200.4, 267.384, FourCC("opeo"))
 u = BlzCreateUnitWithSkin(p, FourCC("opeo"), -8973.2, -11133.8, 273.156, FourCC("opeo"))
 u = BlzCreateUnitWithSkin(p, FourCC("opeo"), -9082.9, -11070.7, 267.812, FourCC("opeo"))
-u = BlzCreateUnitWithSkin(p, FourCC("h0B8"), 2908.9, -15196.3, 200.000, FourCC("h0B8"))
-u = BlzCreateUnitWithSkin(p, FourCC("h0B7"), 3177.4, -15446.8, 200.000, FourCC("h0B7"))
-u = BlzCreateUnitWithSkin(p, FourCC("h0B5"), 3788.7, -15318.1, 284.060, FourCC("h0B5"))
-u = BlzCreateUnitWithSkin(p, FourCC("n0CA"), 3590.0, -15617.7, 21.710, FourCC("n0CA"))
 u = BlzCreateUnitWithSkin(p, FourCC("h0B8"), -974.5, -16318.8, 200.000, FourCC("h0B8"))
 u = BlzCreateUnitWithSkin(p, FourCC("h0B7"), -966.8, -15739.0, 200.000, FourCC("h0B7"))
 u = BlzCreateUnitWithSkin(p, FourCC("h0B9"), -989.8, -16696.2, 200.000, FourCC("h0B9"))
 u = BlzCreateUnitWithSkin(p, FourCC("h0AO"), -985.4, -16030.8, 200.000, FourCC("h0AO"))
 u = BlzCreateUnitWithSkin(p, FourCC("opeo"), -8761.7, -10712.7, 104.990, FourCC("opeo"))
 u = BlzCreateUnitWithSkin(p, FourCC("opeo"), -8623.5, -10824.6, 0.828, FourCC("opeo"))
-u = BlzCreateUnitWithSkin(p, FourCC("h0B9"), 2893.7, -15573.7, 200.000, FourCC("h0B9"))
-u = BlzCreateUnitWithSkin(p, FourCC("h0AO"), 3210.2, -15169.6, 200.000, FourCC("h0AO"))
 end
 
 function CreateBuildingsForPlayer1()
@@ -7967,71 +7960,6 @@ gg_rct_SuramarUnlock = Rect(-416.0, 5184.0, 1632.0, 6688.0)
 gg_rct_HighbankUnlock_UNUSED = Rect(21664.0, -8128.0, 23200.0, -6848.0)
 gg_rct_NaxxramasInstance = Rect(-14944.0, 21536.0, -12352.0, 24256.0)
 gg_rct_RagnarosSummon = Rect(12192.0, -10784.0, 12512.0, -10464.0)
-end
-
-function Trig_ExodarShipJump_Conditions()
-if (not (GetSpellAbilityId() == FourCC("A07D"))) then
-return false
-end
-return true
-end
-
-function Trig_ExodarShipJump_Func001Func001Func001Func001C()
-if (not (RectContainsLoc(gg_rct_ArtifactDummyInstance, GetSpellTargetLoc()) == true)) then
-return false
-end
-return true
-end
-
-function Trig_ExodarShipJump_Func001Func001Func001C()
-if (not (RectContainsLoc(gg_rct_ShipInside, GetSpellTargetLoc()) == true)) then
-return false
-end
-return true
-end
-
-function Trig_ExodarShipJump_Func001Func001C()
-if (not (RectContainsLoc(gg_rct_Exodar_Interior_All, GetSpellTargetLoc()) == true)) then
-return false
-end
-return true
-end
-
-function Trig_ExodarShipJump_Func001C()
-if (not (RectContainsLoc(gg_rct_NaxxramasInside, GetSpellTargetLoc()) == true)) then
-return false
-end
-return true
-end
-
-function Trig_ExodarShipJump_Actions()
-if (Trig_ExodarShipJump_Func001C()) then
-IssueImmediateOrderBJ(GetSpellAbilityUnit(), "stop")
-else
-if (Trig_ExodarShipJump_Func001Func001C()) then
-IssueImmediateOrderBJ(GetSpellAbilityUnit(), "stop")
-else
-if (Trig_ExodarShipJump_Func001Func001Func001C()) then
-IssueImmediateOrderBJ(GetSpellAbilityUnit(), "stop")
-else
-if (Trig_ExodarShipJump_Func001Func001Func001Func001C()) then
-IssueImmediateOrderBJ(GetSpellAbilityUnit(), "stop")
-else
-end
-end
-end
-end
-end
-
-function InitTrig_ExodarShipJump()
-gg_trg_ExodarShipJump = CreateTrigger()
-TriggerRegisterAnyUnitEventBJ(gg_trg_ExodarShipJump, EVENT_PLAYER_UNIT_SPELL_CHANNEL)
-TriggerAddCondition(gg_trg_ExodarShipJump, Condition(Trig_ExodarShipJump_Conditions))
-TriggerAddAction(gg_trg_ExodarShipJump, Trig_ExodarShipJump_Actions)
-end
-
-function InitCustomTriggers()
-InitTrig_ExodarShipJump()
 end
 
 function InitUpgrades_Player0()
@@ -28852,7 +28780,6 @@ CreateAllItems()
 CreateAllUnits()
 InitBlizzard()
 InitGlobals()
-InitCustomTriggers()
 end
 
 function config()
