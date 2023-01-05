@@ -32,7 +32,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
     {
       Ragnaros = new LegendaryHero("Ragnaros")
       {
-        Unit = preplacedUnitSystem.GetUnit(FourCC("N00D")),
+        UnitType = Constants.UNIT_N00D_PRIMARY_FIRELORD_CREEP,
         DeathMessage = "Ragnaros, the King of Fire and Lord of the Firelands, has been extinguished.",
         StartingArtifactItemTypeIds = new[]
         {
