@@ -1,15 +1,13 @@
 ﻿using System;
 using System.Linq;
-using MacroTools.Buffs;
 using MacroTools.Extensions;
-using MacroTools.FactionSystem;
 using MacroTools.Hazards;
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.Powers;
 using WCSharp.Buffs;
 using static War3Api.Common;
 
-namespace MacroTools.PassiveAbilities
+namespace WarcraftLegacies.Source.Mechanics.Goblins
 {
   /// <summary>
   /// Oil harvesters consume oil from <see cref="OilPool"/>s around them.

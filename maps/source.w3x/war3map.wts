@@ -184,6 +184,12 @@ STRING 30
 Goblin Pilot
 }
 
+STRING 31
+// Abilities: A0IU (Oil Producer), Ubertip (Tooltip - Normal - Extended)
+{
+This unit produces 20 Oil per second.
+}
+
 STRING 32
 // Upgrades: R04R (Iron Plating,Steel Plating,Mithril Plating), Name (Name)
 {
@@ -7022,6 +7028,12 @@ STRING 1171
 S
 }
 
+STRING 1172
+// Abilities: A0IU (Oil Producer), Ubertip (Tooltip - Normal - Extended)
+{
+Increases the rate at which this unit gathers lumber.
+}
+
 STRING 1173
 // Units: Utic (The Darkener), EditorSuffix (Name - Editor Suffix)
 {
@@ -7997,6 +8009,12 @@ STRING 1335
 // Units: Ewrd (Leader of the Watchers ), Propernames (Proper Names)
 {
 Maiev Shadowsong
+}
+
+STRING 1336
+// Abilities: A0IU (Oil Producer), Name (Name)
+{
+Oil Producer
 }
 
 STRING 1337
@@ -9343,6 +9361,12 @@ STRING 1560
 C
 }
 
+STRING 1561
+// Abilities: A0IU (Oil Producer), Tip (Tooltip - Normal)
+{
+Oil Producer
+}
+
 STRING 1562
 // Units: o02K (Bear Rider), EditorSuffix (Name - Editor Suffix)
 {
@@ -10121,6 +10145,12 @@ STRING 1691
 // Units: n07I (Residence), Hotkey (Hotkey)
 {
 W
+}
+
+STRING 1692
+// Upgrades: R097 (Iron Plating,Steel Plating,Mithril Plating), EditorSuffix (Editor Suffix)
+{
+(Goblin)
 }
 
 STRING 1693
@@ -20804,7 +20834,7 @@ Workshop to build the War Machines of the Warsong Clan.|n|cfff5962dTrains:|R Cat
 }
 
 STRING 3475
-// Units: o064 (Stronghold), Ubertip (Tooltip - Extended)
+// Units: o00C (Great Hall), Ubertip (Tooltip - Extended)
 {
 Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Peon
 }
@@ -20918,7 +20948,7 @@ Scarlet Monastery
 }
 
 STRING 3494
-// Units: o00C (Great Hall), Ubertip (Tooltip - Extended)
+// Units: o063 (Great Hall), Ubertip (Tooltip - Extended)
 {
 Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Peon
 }
@@ -21032,7 +21062,7 @@ Primary structure, used to train workers and gather resources.|n|cfff5962dTrains
 }
 
 STRING 3513
-// Units: o063 (Great Hall), Ubertip (Tooltip - Extended)
+// Units: o064 (Stronghold), Ubertip (Tooltip - Extended)
 {
 Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Peon
 }
@@ -96150,7 +96180,7 @@ Boarding Vessel
 }
 
 STRING 16084
-// Upgrades: R097 (Iron Plating,Steel Plating,Mithril Plating), EditorSuffix (Editor Suffix)
+// Abilities: A0IU (Oil Producer), EditorSuffix (Editor Suffix)
 {
 (Goblin)
 }

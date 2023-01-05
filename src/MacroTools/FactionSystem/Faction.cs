@@ -366,13 +366,13 @@ namespace MacroTools.FactionSystem
     /// <summary>
     ///   Gets the first <see cref="Power" /> this <see cref="Faction" /> has with the provided type.
     /// </summary>
-    public T GetPowerByType<T>() where T : Power
+    public T? GetPowerByType<T>() where T : Power
     {
       foreach (var power in _powers)
         if (power.GetType() == typeof(T))
           return (T)power;
 
-      throw new Exception($"{_name} doesn't have a Power with the type {typeof(T).Name}.");
+      return null;
     }
 
     /// <summary>

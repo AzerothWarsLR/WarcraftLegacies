@@ -3,7 +3,7 @@ using MacroTools.Hazards;
 using WCSharp.Buffs;
 using static War3Api.Common;
 
-namespace MacroTools.Buffs
+namespace WarcraftLegacies.Source.Mechanics.Goblins
 {
   /// <summary>
   /// Units with this buff harvest oil from <see cref="OilPool"/>s around them.
