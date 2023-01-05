@@ -4276,12 +4276,6 @@ STRING 713
 Build Cantonment
 }
 
-STRING 714
-// Units: o009 (Refinery), Ubertip (Tooltip - Extended)
-{
-Resource harvesting center and producer of Horde enhancements. |n|cfff5962dResearches:|R Forged Weaponry, Armor Plating, Reinforced Defenses, Spiked Barricades, Spiritual Infusion
-}
-
 STRING 715
 // Units: nhea (Ranger), EditorSuffix (Name - Editor Suffix)
 {
@@ -6228,12 +6222,6 @@ STRING 1038
 // Units: Hkal (Prince of Quel'thalas), Hotkey (Hotkey)
 {
 E
-}
-
-STRING 1039
-// Units: hbla (Blacksmith), Ubertip (Tooltip - Extended)
-{
-Forges iron and steel for the war effort.|n|cfff5962dResearches: |RForged Weaponry, Armor Plating, Power Infusion|n
 }
 
 STRING 1040
@@ -9019,12 +9007,6 @@ STRING 1503
 (Red)
 }
 
-STRING 1504
-// Units: h02Y (Artisan's Hall), Ubertip (Tooltip - Extended)
-{
-An exclusive place of ingenuity for those clever enough to work there.|n|cfff5962dResearches: |RForged Weaponry, Armor Plating, Power Infusion
-}
-
 STRING 1505
 // Units: o037 (Moon Beam), EditorSuffix (Name - Editor Suffix)
 {
@@ -10785,7 +10767,7 @@ STRING 1797
 }
 
 STRING 1798
-// Units: e00L (War Academy), Hotkey (Hotkey)
+// Units: h012 (Captain Falric), Hotkey (Hotkey)
 {
 A
 }
@@ -11299,7 +11281,7 @@ STRING 1883
 }
 
 STRING 1884
-// Units: e009 (Naisha), Hotkey (Hotkey)
+// Units: e00L (War Academy), Hotkey (Hotkey)
 {
 A
 }
@@ -11676,13 +11658,6 @@ STRING 1946
 W
 }
 
-STRING 1947
-// Units: n093 (Chaplain), Ubertip (Tooltip - Extended)
-{
-Holy man of the South.|n|cfff5962dAbilities:|R Smite|n|cfff5962dCan Learn:|R Renewal, Light Burst|n|n|cffffcc00Attacks land and air units.|R
-
-}
-
 STRING 1948
 // Units: n092 (Zul'Farrak (10gold/min)), Name (Name)
 {
@@ -11723,6 +11698,12 @@ STRING 1954
 // Items: I018 (Vial of the Sunwell), Name (Name)
 {
 Vial of the Sunwell
+}
+
+STRING 1955
+// Units: hkni (Knight), Ubertip (Tooltip - Extended)
+{
+Powerful mounted warrior.|n|cfff5962dAbilities:|R Charge, War Plating|n|cfff5962dCan Learn:|R Animal War Training|n|n|cffffcc00Attacks land units.|r
 }
 
 STRING 1956
@@ -12212,7 +12193,7 @@ Boulderfist Mauler
 }
 
 STRING 2037
-// Units: H02E (Regent of Quel'Thalas), Hotkey (Hotkey)
+// Units: e009 (Naisha), Hotkey (Hotkey)
 {
 A
 }
@@ -12722,13 +12703,13 @@ C
 }
 
 STRING 2122
-// Units: n04Q (Nether Pit), Hotkey (Hotkey)
+// Units: H02E (Regent of Quel'Thalas), Hotkey (Hotkey)
 {
 A
 }
 
 STRING 2123
-// Units: h06R (Garrison), Hotkey (Hotkey)
+// Units: n04Q (Nether Pit), Hotkey (Hotkey)
 {
 A
 }
@@ -12978,7 +12959,7 @@ Upgrade to Burning Citadel
 }
 
 STRING 2165
-// Units: o03D (Cult Gathering), Hotkey (Hotkey)
+// Units: h06R (Garrison), Hotkey (Hotkey)
 {
 A
 }
@@ -13278,7 +13259,7 @@ STRING 2214
 }
 
 STRING 2215
-// Units: o03P (Mercenary Den), Hotkey (Hotkey)
+// Units: o03D (Cult Gathering), Hotkey (Hotkey)
 {
 A
 }
@@ -13734,7 +13715,7 @@ STRING 2290
 }
 
 STRING 2291
-// Units: o041 (Training Ground), Hotkey (Hotkey)
+// Units: o03P (Mercenary Den), Hotkey (Hotkey)
 {
 A
 }
@@ -14142,7 +14123,7 @@ Summon Water Elemental
 }
 
 STRING 2359
-// Units: u011 (Mausoleum), Hotkey (Hotkey)
+// Units: o041 (Training Ground), Hotkey (Hotkey)
 {
 A
 }
@@ -14184,7 +14165,7 @@ Azerite Siege Engine
 }
 
 STRING 2366
-// Units: h09A (Draconic Spire), Hotkey (Hotkey)
+// Units: u011 (Mausoleum), Hotkey (Hotkey)
 {
 A
 }
@@ -14341,7 +14322,7 @@ Summon Dormant Spire
 }
 
 STRING 2392
-// Units: n0AW (Incubation Pool), Hotkey (Hotkey)
+// Units: h09A (Draconic Spire), Hotkey (Hotkey)
 {
 A
 }
@@ -14581,7 +14562,7 @@ STRING 2431
 }
 
 STRING 2432
-// Units: E01E (Ancient Guardian), Hotkey (Hotkey)
+// Units: n0AW (Incubation Pool), Hotkey (Hotkey)
 {
 A
 }
@@ -14707,7 +14688,7 @@ STRING 2452
 }
 
 STRING 2453
-// Units: o052 (Ceremonial Altar), Hotkey (Hotkey)
+// Units: E01E (Ancient Guardian), Hotkey (Hotkey)
 {
 A
 }
@@ -14740,12 +14721,6 @@ STRING 2458
 // Units: nntt (Betrayer's Reservoir), Tip (Tooltip - Basic)
 {
 Build Betrayer's Reservoir
-}
-
-STRING 2459
-// Units: n040 (Soul Forge), Ubertip (Tooltip - Extended)
-{
-Demonic Forge that produces upgrades for the Legions army. Also is a lumber drop site.|n|cfff5962dResearches:|R Copper Forged Weaponry, Copper Armor Plating, Chaos Infusion
 }
 
 STRING 2460
@@ -14821,7 +14796,7 @@ STRING 2471
 }
 
 STRING 2472
-// Units: n0C4 (Spawning Grounds), Hotkey (Hotkey)
+// Units: o052 (Ceremonial Altar), Hotkey (Hotkey)
 {
 A
 }
@@ -15115,7 +15090,7 @@ R
 }
 
 STRING 2521
-// Units: O05O (Ragefire Warlock), Hotkey (Hotkey)
+// Units: n0C4 (Spawning Grounds), Hotkey (Hotkey)
 {
 A
 }
@@ -16258,7 +16233,7 @@ STRING 2711
 }
 
 STRING 2712
-// Units: o067 (War Camp), Hotkey (Hotkey)
+// Units: O05O (Ragefire Warlock), Hotkey (Hotkey)
 {
 A
 }
@@ -16498,7 +16473,7 @@ Specialized medium ship.|n|cfff5962dAbilities:|R Boarding|n|r|n|cffffcc00Attacks
 }
 
 STRING 2752
-// Units: h01B (Outrider), EditorSuffix (Name - Editor Suffix)
+// Units: h00J (Clergyman), EditorSuffix (Name - Editor Suffix)
 {
 (stormwind)
 }
@@ -16528,7 +16503,7 @@ Heavy defensive structure. Particularly effective against clusters of troops.|n|
 }
 
 STRING 2757
-// Units: h00J (Clergyman), EditorSuffix (Name - Editor Suffix)
+// Units: h00A (Spearman), EditorSuffix (Name - Editor Suffix)
 {
 (stormwind)
 }
@@ -16552,7 +16527,7 @@ Kodo-mounted drummer which inspires the soldiers of the Horde.|n|cfff5962dAbilit
 }
 
 STRING 2761
-// Units: h00A (Spearman), EditorSuffix (Name - Editor Suffix)
+// Units: h05X (Control Point Defender), EditorSuffix (Name - Editor Suffix)
 {
 (stormwind)
 }
@@ -16573,12 +16548,6 @@ STRING 2764
 // Units: h06Z (Improved Arcane Tower), Tip (Tooltip - Basic)
 {
 Upgrade to (|cffffcc00Z|r) Improved Arcane Tower
-}
-
-STRING 2765
-// Units: h05X (Control Point Defender), EditorSuffix (Name - Editor Suffix)
-{
-(stormwind)
 }
 
 STRING 2766
@@ -16702,7 +16671,7 @@ STRING 2785
 }
 
 STRING 2786
-// Units: h06U (Siphoning Crystal), Ubertip (Tooltip - Extended)
+// Units: h0AD (Coral Forge), Ubertip (Tooltip - Extended)
 {
 Provides attack and defense upgrades. Serves as a drop-off point for harvested lumber. 
 }
@@ -16773,12 +16742,6 @@ STRING 2797
 Build Missile Tower
 }
 
-STRING 2798
-// Units: o031 (War Mill), Ubertip (Tooltip - Extended)
-{
-Resource harvesting center and producer of Fel Horde enhancements. |n|cfff5962dResearches:|R Weapon Upgdrades, Armor Upgrades, Reinforced Defenses, Spiked Barricades, Spiritual Infusion
-}
-
 STRING 2799
 // Units: h077 (Shipyard), Ubertip (Tooltip - Extended)
 {
@@ -16845,12 +16808,6 @@ STRING 2809
 E
 }
 
-STRING 2810
-// Units: h06F (Blacksmith), Ubertip (Tooltip - Extended)
-{
-Forges iron and steel for the war effort.|n|cfff5962dResearches: |RForged Weaponry, Armor Plating, Power Infusion|n
-}
-
 STRING 2811
 // Units: n0AM (Flame Pillar), Ubertip (Tooltip - Extended)
 {
@@ -16858,7 +16815,7 @@ Fires massive boulders at enemy targets.|n|cfff5962dUpgrades Into:|R Improved Fl
 }
 
 STRING 2812
-// Units: e01T (Coral of War), Hotkey (Hotkey)
+// Units: o067 (War Camp), Hotkey (Hotkey)
 {
 A
 }
@@ -16996,7 +16953,7 @@ STRING 2834
 }
 
 STRING 2835
-// Units: h0AP (Frigate), Hotkey (Hotkey)
+// Units: e01T (Coral of War), Hotkey (Hotkey)
 {
 A
 }
@@ -17273,7 +17230,7 @@ Rematerialization
 }
 
 STRING 2881
-// Units: h0AV (Frigate), Hotkey (Hotkey)
+// Units: h0AP (Frigate), Hotkey (Hotkey)
 {
 A
 }
@@ -17488,12 +17445,6 @@ STRING 2916
 Train Marksman
 }
 
-STRING 2917
-// Units: h05N (Marksman), Ubertip (Tooltip - Extended)
-{
-One of the few elves to return from Outland, ready again to defend Mankind's gates.|n|cfff5962dAbilities:|R Fire Arrows, Critical strike, Feedback|n|cfff5962dCan Learn:|R Runic Strength|n|n|cffffcc00Attacks land and air units.|r
-}
-
 STRING 2918
 // Units: n01B (Dalaran (50gold/min)), Name (Name)
 {
@@ -17531,7 +17482,7 @@ STRING 2923
 }
 
 STRING 2924
-// Units: h0AW (Frigate), Hotkey (Hotkey)
+// Units: h0AV (Frigate), Hotkey (Hotkey)
 {
 A
 }
@@ -17834,12 +17785,6 @@ STRING 2974
 // Units: h054 (Stormwind Knight), Tip (Tooltip - Basic)
 {
 Train Stormwind Knight 
-}
-
-STRING 2975
-// Units: h054 (Stormwind Knight), Ubertip (Tooltip - Extended)
-{
-Freshly knighted Outrider of Arathor.|n|cfff5962dAbilities:|R Charge, War Plating, Trample |n|n|cffffcc00Attacks land units.|r
 }
 
 STRING 2976
@@ -18632,12 +18577,6 @@ STRING 3106
 Train Saboteur
 }
 
-STRING 3107
-// Units: h03Z (Saboteur), Ubertip (Tooltip - Extended)
-{
-A veteran from the Second War adept at sabotage and demolition operations.|n|cfff5962dAbilities:|R Bash, Infiltrate, Incendiary Cocktail|n|cfff5962dCan Learn:|R Runic Strength|n|n|cff99b4d1Can only train 12.|r|n|cffffcc00Attacks land units.|r
-}
-
 STRING 3108
 // Units: e010 (Ancient of Creation), Hotkey (Hotkey)
 {
@@ -18687,7 +18626,7 @@ Ship Gold Trader. Once trained, it cannot be controlled and will automatically t
 }
 
 STRING 3116
-// Units: h0AX (Frigate), Hotkey (Hotkey)
+// Units: h0AW (Frigate), Hotkey (Hotkey)
 {
 A
 }
@@ -18717,7 +18656,7 @@ STRING 3120
 }
 
 STRING 3121
-// Items: phea (Potion of Healing), Hotkey (Hotkey)
+// Units: h0AX (Frigate), Hotkey (Hotkey)
 {
 A
 }
@@ -18750,12 +18689,6 @@ STRING 3126
 // Units: h03S (Mansion), Hotkey (Hotkey)
 {
 C
-}
-
-STRING 3127
-// Units: h02N (Lumber Mill), Ubertip (Tooltip - Extended)
-{
-Lumber processing mill and research center.|n|cfff5962dResearches:|R Forged Weaponry, Armor Plating, Power Infusion|n|n|cffffcc00Can receive Lumber.|R
 }
 
 STRING 3128
@@ -18849,7 +18782,7 @@ STRING 3142
 }
 
 STRING 3143
-// Items: pghe (Potion of Greater Healing), Hotkey (Hotkey)
+// Items: phea (Potion of Healing), Hotkey (Hotkey)
 {
 A
 }
@@ -18888,12 +18821,6 @@ STRING 3149
 // Units: e00B (Wickerbeast), Hotkey (Hotkey)
 {
 E
-}
-
-STRING 3150
-// Units: h03O (Blacksmith), Ubertip (Tooltip - Extended)
-{
-General research building.|n|cfff5962dResearches: |RForged Weaponry, Armor Plating, Power Infusion
 }
 
 STRING 3151
@@ -18993,7 +18920,7 @@ STRING 3166
 }
 
 STRING 3167
-// Items: hlst (Health Stone), Hotkey (Hotkey)
+// Items: pghe (Potion of Greater Healing), Hotkey (Hotkey)
 {
 A
 }
@@ -19113,7 +19040,7 @@ Quest Completed: Liberation of Lordaeron
 }
 
 STRING 3187
-// Items: gemt (Gem of True Seeing), Hotkey (Hotkey)
+// Items: hlst (Health Stone), Hotkey (Hotkey)
 {
 A
 }
@@ -19331,6 +19258,12 @@ STRING 3223
 // Units: h0B3 (Fireship), Hotkey (Hotkey)
 {
 S
+}
+
+STRING 3224
+// Units: hbla (Blacksmith), Ubertip (Tooltip - Extended)
+{
+Forges iron and steel for the war effort.|n|cfff5962dResearches: |RForged Weaponry, Armor Plating, Power Infusion, Improved Cannons, Fortified Hulls
 }
 
 STRING 3225
@@ -19874,7 +19807,7 @@ Summons a water elemental to attack the Hydromancer's enemies. Has <hwat,realHP>
 }
 
 STRING 3315
-// Abilities: A0UH (Phase Blade Auto-Cast), Hotkey (Hotkey - Normal)
+// Items: gemt (Gem of True Seeing), Hotkey (Hotkey)
 {
 A
 }
@@ -20126,7 +20059,7 @@ Q
 }
 
 STRING 3357
-// Abilities: A0UG (Phase Blade Auto-Cast), Hotkey (Hotkey - Normal)
+// Abilities: A0UH (Phase Blade Auto-Cast), Hotkey (Hotkey - Normal)
 {
 A
 }
@@ -20267,12 +20200,6 @@ STRING 3380
 // Units: h01U (Aerie Peak), Name (Name)
 {
 Aerie Peak
-}
-
-STRING 3381
-// Units: o03J (Voidforge), Ubertip (Tooltip - Extended)
-{
-Resource harvesting center and producer of Twilight's Hammer enhancements. |n|cfff5962dResearches:|R Weapon Upgdrades, Armor Upgrades, Spiked Barricades, Spiritual Infusion
 }
 
 STRING 3382
@@ -20432,7 +20359,7 @@ STRING 3407
 }
 
 STRING 3408
-// Abilities: A0K2 (Raise Dead Auto-Cast), Hotkey (Hotkey - Normal)
+// Abilities: A0UG (Phase Blade Auto-Cast), Hotkey (Hotkey - Normal)
 {
 A
 }
@@ -20713,12 +20640,6 @@ STRING 3454
 Train Outrider
 }
 
-STRING 3455
-// Units: h01B (Outrider), Ubertip (Tooltip - Extended)
-{
-Simple rider warrior of the Southern lands.|n|cfff5962dAbilities:|R Charge, Trample|n|n|cffffcc00Attacks land units.|r
-}
-
 STRING 3456
 // Units: h03V (Entrance), EditorSuffix (Name - Editor Suffix)
 {
@@ -20791,12 +20712,6 @@ STRING 3467
 Scout Ship
 }
 
-STRING 3468
-// Units: o03Q (Scrapyard), Ubertip (Tooltip - Extended)
-{
-Resource harvesting center and producer of Goblin enhancements. |n|cfff5962dResearches:|R Weapon Upgdrades, Armor Upgrades, Reinforced Defenses, Spiked Barricades, Spiritual Infusion|n
-}
-
 STRING 3469
 // Abilities: ACat (Trueshot Aura), Tip (Tooltip - Normal)
 {
@@ -20822,7 +20737,7 @@ Primary Caster building.|n|cfff5962dTrains:|r Shadow Priest, Warlock|n|cfff5962d
 }
 
 STRING 3473
-// Abilities: A0JY (Raise Dead Auto-Cast), Hotkey (Hotkey - Normal)
+// Abilities: A0K2 (Raise Dead Auto-Cast), Hotkey (Hotkey - Normal)
 {
 A
 }
@@ -21230,7 +21145,7 @@ STRING 3540
 }
 
 STRING 3541
-// Upgrades: Rusm (Skeletal Mastery), Hotkey (Hotkey)
+// Abilities: A0JY (Raise Dead Auto-Cast), Hotkey (Hotkey - Normal)
 {
 A
 }
@@ -21606,12 +21521,6 @@ STRING 3603
 Build Ancient of Creation
 }
 
-STRING 3604
-// Units: e010 (Ancient of Creation), Ubertip (Tooltip - Extended)
-{
-Kaldorei hall of enhancements, where the defenders of Kalimdor grow in strength.|n|cfff5962dResearches: |RWeapon Upgrades, Armor Upgrades, Ultravision, Wellspring, Malorne's Infusion
-}
-
 STRING 3605
 // Units: h08V (Nightsaber Knight), EditorSuffix (Name - Editor Suffix)
 {
@@ -21631,7 +21540,7 @@ STRING 3607
 }
 
 STRING 3608
-// Upgrades: Rufb (Freezing Breath), Hotkey (Hotkey)
+// Upgrades: Rusm (Skeletal Mastery), Hotkey (Hotkey)
 {
 A
 }
@@ -21907,7 +21816,7 @@ Bazaar
 }
 
 STRING 3654
-// Upgrades: Ruar (Unholy Armor,Improved Unholy Armor,Advanced Unholy Armor), Hotkey (Hotkey)
+// Upgrades: Rufb (Freezing Breath), Hotkey (Hotkey)
 {
 A
 }
@@ -22747,7 +22656,7 @@ Summon Water Elemental
 }
 
 STRING 3794
-// Upgrades: Robs (Brute Strength), Hotkey (Hotkey)
+// Upgrades: Ruar (Unholy Armor,Improved Unholy Armor,Advanced Unholy Armor), Hotkey (Hotkey)
 {
 A
 }
@@ -23485,7 +23394,7 @@ STRING 3916
 }
 
 STRING 3917
-// Upgrades: Rhar (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: Robs (Brute Strength), Hotkey (Hotkey)
 {
 A
 }
@@ -36091,12 +36000,6 @@ STRING 6017
 (Dragonmaw)
 }
 
-STRING 6018
-// Units: o068 (Drakebone Armory), Ubertip (Tooltip - Extended)
-{
-Resource harvesting center and producer of Horde enhancements. |n|cfff5962dResearches:|R Weapon Upgdrades, Armor Upgrades, Spiked Barricades, Spiritual Infusion
-}
-
 STRING 6019
 // Units: h09R (Vindicator), EditorSuffix (Name - Editor Suffix)
 {
@@ -40712,7 +40615,7 @@ Fires and arrow that stuns the target and does significant damage.|n|n|cffffcc00
 }
 
 STRING 6788
-// Upgrades: Rerh (Reinforced Hides,Improved Reinforced Hides,Advanced Reinforced Hides), Hotkey (Hotkey)
+// Upgrades: Rhar (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 A
 }
@@ -45657,7 +45560,7 @@ STRING 7608
 }
 
 STRING 7609
-// Upgrades: Remg (Upgrade Moon Glaive), Hotkey (Hotkey)
+// Upgrades: Rerh (Reinforced Hides,Improved Reinforced Hides,Advanced Reinforced Hides), Hotkey (Hotkey)
 {
 A
 }
@@ -46206,6 +46109,12 @@ STRING 7700
 // Abilities: A0TY (Ion_Canon(dummy height trick)), Name (Name)
 {
 Ion_Canon(dummy height trick)
+}
+
+STRING 7701
+// Units: hbar (Barracks), Ubertip (Tooltip - Extended)
+{
+Housing for the defenders of Lordaeron.|n|n|r|cfff5962dTrains:|R Footman, Huntsman, Knight|n|cfff5962dResearches:|r Improved Ensnare, Veteran Footman, Animal War Training
 }
 
 STRING 7702
@@ -47190,6 +47099,12 @@ STRING 7865
 // Abilities: A0T4 (Bishop of Silver Hand), Name (Name)
 {
 Bishop of Silver Hand
+}
+
+STRING 7866
+// Units: o031 (War Mill), Ubertip (Tooltip - Extended)
+{
+Resource harvesting center and producer of Fel Horde enhancements. |n|cfff5962dResearches:|R Forged Weaponry, Armor Plating, Reinforced Defenses, Spiked Barricades, Spiritual Infusion, Blood Runes, Improved Cannons, Fortified Hulls
 }
 
 STRING 7867
@@ -52340,12 +52255,6 @@ STRING 8724
 Summons 2 Spirit Wolf companions. Each wolf has <osw1,realHP> hit points and deals 21-22 damage. |nLasts <AOsf,Dur1> seconds. |n|n|cffffcc00Attacks land units.|r
 }
 
-STRING 8725
-// Abilities: A0LQ (Demolish), EditorSuffix (Editor Suffix)
-{
-(Warsong-Raiders)
-}
-
 STRING 8726
 // Abilities: A0LQ (Demolish), Ubertip (Tooltip - Normal - Extended)
 {
@@ -53118,6 +53027,19 @@ STRING 8854
 // Buffs/Effects: B05S (), Bufftip (Tooltip)
 {
 Sunder Armor
+}
+
+STRING 8855
+// Units: o009 (Refinery), Ubertip (Tooltip - Extended)
+{
+Resource harvesting center and producer of Horde enhancements. |n|cfff5962dResearches:|R Forged Weaponry, Armor Plating, Reinforced Defenses, Spiked Barricades, Spiritual Infusion, Improved Cannons, Fortified Hulls
+}
+
+STRING 8856
+// Units: n093 (Chaplain), Ubertip (Tooltip - Extended)
+{
+Holy man of the South Kingdom.|n|cfff5962dAbilities:|R Smite|n|cfff5962dCan Learn:|R Renewal, Rain of Light|n|n|cffffcc00Attacks land and air units.|R
+
 }
 
 STRING 8857
@@ -54003,7 +53925,7 @@ STRING 9003
 }
 
 STRING 9004
-// Upgrades: R06I (Defend), Hotkey (Hotkey)
+// Upgrades: Remg (Upgrade Moon Glaive), Hotkey (Hotkey)
 {
 A
 }
@@ -54123,7 +54045,7 @@ STRING 9023
 }
 
 STRING 9024
-// Upgrades: R03U (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: R06I (Defend), Hotkey (Hotkey)
 {
 A
 }
@@ -54372,6 +54294,18 @@ STRING 9065
 // Abilities: A0JO (Spiked Barricades), Ubertip (Tooltip - Normal - Extended)
 {
 The Dwarven Keep Tower returns 60-80 damage to a meele unit that attacked the tower.
+}
+
+STRING 9066
+// Units: n040 (Soul Forge), Ubertip (Tooltip - Extended)
+{
+Demonic Forge that produces upgrades for the Legions army. Also is a lumber drop site.|n|cfff5962dResearches:|R Forged Weaponry, Armor Plating, Chaos Infusion, Improved Cannons, Fortified Hulls
+}
+
+STRING 9067
+// Units: n007 (Kirin Tor), Ubertip (Tooltip - Extended)
+{
+A powerful mage of Dalaran.|n|cfff5962dAbilities:|R Forked Lightning, Mana Shield, Arcane Combustion, Teleport, Counterspell, Spell Shield, Resistant Skin|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land and air units.
 }
 
 STRING 9068
@@ -54894,6 +54828,18 @@ STRING 9154
 // Buffs/Effects: B03X (), Bufftip (Tooltip)
 {
 Offensive Formation
+}
+
+STRING 9155
+// Units: h06F (Blacksmith), Ubertip (Tooltip - Extended)
+{
+Forges iron and steel for the war effort.|n|cfff5962dResearches: |RForged Weaponry, Armor Plating, Power Infusion, Improved Lumber Harvesting, Improved Masonry, Improved Cannons, Fortified Hulls
+}
+
+STRING 9156
+// Units: h06E (Barracks), Ubertip (Tooltip - Extended)
+{
+Housing for the defenders of Stormwind.|n|r|cfff5962dTrains:|R Bladesman, Spearman, Outrider|n|cfff5962dResearches:|R Animal War Training
 }
 
 STRING 9157
@@ -58923,7 +58869,7 @@ STRING 9827
 }
 
 STRING 9828
-// Upgrades: R03D (Defend), Hotkey (Hotkey)
+// Upgrades: R03U (Magic Sentry), Hotkey (Hotkey)
 {
 A
 }
@@ -63850,7 +63796,7 @@ Forms a shield of flames around a target unit, dealing 15 damage per second to u
 }
 
 STRING 10649
-// Upgrades: R01L (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: R03D (Defend), Hotkey (Hotkey)
 {
 A
 }
@@ -64069,12 +64015,6 @@ STRING 10685
 // Abilities: A0N5 (Worgen Fury), Ubertip (Tooltip - Normal - Extended)
 {
 Causes this unit to attack 70% faster, but take 15% more damage.|n|nLasts 12 seconds|n30 second cooldown.
-}
-
-STRING 10686
-// Units: h06E (Barracks), Ubertip (Tooltip - Extended)
-{
-Housing for the defenders of Stormwind.|n|r|cfff5962dTrains:|R Bladesman, Spearman, Outrider
 }
 
 STRING 10687
@@ -64315,6 +64255,12 @@ STRING 10726
 // Abilities: A0OA (Emergency Repairs), Tip (Tooltip - Normal)
 {
 Emergency Repairs
+}
+
+STRING 10727
+// Units: h06A (Smithy), Ubertip (Tooltip - Extended)
+{
+The industrial heart of Stormwind's war machine.|n|cfff5962dTrains:|R Gunship, Saboteur, Marshal|n|cfff5962dResearches:|R Chainmail Layering
 }
 
 STRING 10728
@@ -65242,7 +65188,7 @@ STRING 10881
 }
 
 STRING 10882
-// Upgrades: R00W (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: R01L (Magic Sentry), Hotkey (Hotkey)
 {
 A
 }
@@ -65685,6 +65631,12 @@ STRING 10955
 Increases nearby friendly units' movement speed by 16% and life regeneration rate 4.
 }
 
+STRING 10956
+// Units: h05N (Marksman), Ubertip (Tooltip - Extended)
+{
+One of the few Elves to return from Outland, ready again to defend Azeroth.|n|cfff5962dAbilities:|R Fire Arrows, Critical strike, Feedback|n|n|cffffcc00Attacks land and air units.|r
+}
+
 STRING 10957
 // Units: n08I (Lord Falconrest), Name (Name)
 {
@@ -65881,12 +65833,6 @@ STRING 10989
 // Abilities: A08T (Call for Reinforcements), Researchtip (Tooltip - Learn)
 {
 Learn Call for Reinforcements - [|cffffcc00Level %d|r]
-}
-
-STRING 10990
-// Units: h01I (Arcanist), Ubertip (Tooltip - Extended)
-{
-Well-versed sorceress in the arts of magic domination. |cfff5962dAbilities:|R Magic Missile|n|cfff5962dCan Learn:|R Dispel Magic, Flame Shield|n|n|cffffcc00Attacks land and air units.|R
 }
 
 STRING 10991
@@ -67792,7 +67738,7 @@ Q
 }
 
 STRING 11308
-// Upgrades: R001 (Defend), Hotkey (Hotkey)
+// Upgrades: R00W (Magic Sentry), Hotkey (Hotkey)
 {
 A
 }
@@ -68359,6 +68305,12 @@ STRING 11402
 // Abilities: A0A7 (Faerie Fire), Hotkey (Hotkey - Normal)
 {
 E
+}
+
+STRING 11403
+// Units: h05F (Stormwind Champion), Ubertip (Tooltip - Extended)
+{
+Elite melee champion of the Stormwind Army.|n|cfff5962dAbilities:|R Charge, Safeguard, Cleaving Attack, Resistant Skin, Heavy Armor, Combat Experience, Staggering Shout|n|cfff5962dCan Learn:|R Animal War Training |n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land units.|r
 }
 
 STRING 11404
@@ -69519,6 +69471,12 @@ STRING 11596
 Ashbringer Wings
 }
 
+STRING 11597
+// Units: h054 (Stormwind Knight), Ubertip (Tooltip - Extended)
+{
+Strong melee Knight of Arathor.|n|cfff5962dAbilities:|R Charge, War Plating, Trample, Demolish, Bolster|n|cfff5962dCan Learn:|R Animal War Training, Code of Chivalry|n|n|cffffcc00Attacks land units.|r
+}
+
 STRING 11598
 // Abilities: A06Y (Mana Burn), Hotkey (Hotkey - Normal)
 {
@@ -70333,12 +70291,6 @@ STRING 11733
 // Abilities: A09G (Goblin Land Mine), Hotkey (Hotkey - Normal)
 {
 E
-}
-
-STRING 11734
-// Units: h0A4 (Coral Forge), Ubertip (Tooltip - Extended)
-{
-Provides attack and defense upgrades. Serves as a drop-off point for harvested lumber. 
 }
 
 STRING 11735
@@ -72787,12 +72739,6 @@ STRING 12141
 D
 }
 
-STRING 12142
-// Abilities: A0ZZ (Incendiary Arrows), Ubertip (Tooltip - Normal - Extended)
-{
-Increases damage dealt to enemy Boarding Vessels
-}
-
 STRING 12143
 // Abilities: A04I (Call of the Void), Hotkey (Hotkey - Normal)
 {
@@ -74563,7 +74509,7 @@ W
 }
 
 STRING 12438
-// Upgrades: R03L (Chaos), Hotkey (Hotkey)
+// Upgrades: R001 (Defend), Hotkey (Hotkey)
 {
 A
 }
@@ -74935,7 +74881,7 @@ STRING 12499
 }
 
 STRING 12500
-// Upgrades: R046 (Marksmanship), Hotkey (Hotkey)
+// Upgrades: R03L (Chaos), Hotkey (Hotkey)
 {
 A
 }
@@ -79879,6 +79825,12 @@ STRING 13323
 This unit has Bolster; its Armor has been increased.
 }
 
+STRING 13324
+// Units: h04C (Pikeman), Ubertip (Tooltip - Extended)
+{
+Veteran warrior ready to risk his life and blood for humanity. |n|cfff5962dAbilities:|R Defend, Combat Experience|n|cfff5962dOr|R|n|cfff5962dAbilities:|R First Strike, Sunder Armor|n|n|cffffcc00Attacks land units.|r
+}
+
 STRING 13325
 // Buffs/Effects: B05S (), Buffubertip (Tooltip - Extended)
 {
@@ -80795,6 +80747,12 @@ STRING 13477
 // Buffs/Effects: B03Y (), Bufftip (Tooltip)
 {
 Summon Scorpion
+}
+
+STRING 13478
+// Units: h048 (Forgeworks), Ubertip (Tooltip - Extended)
+{
+Contains upgrades for improved armor, weaponry and increased health.|n|cfff5962dResearches: |RForged Weaponry, Armor Plating, Power Infusion, Improved Lumber Harvesting, Improved Masonry, Improved Cannons, Fortified Hulls, Magic Sentry
 }
 
 STRING 13479
@@ -81830,7 +81788,7 @@ Mind Shield
 }
 
 STRING 13651
-// Upgrades: R02X (Defend), Hotkey (Hotkey)
+// Upgrades: R046 (Marksmanship), Hotkey (Hotkey)
 {
 A
 }
@@ -82856,7 +82814,7 @@ STRING 13821
 }
 
 STRING 13822
-// Upgrades: R062 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R02X (Defend), Hotkey (Hotkey)
 {
 A
 }
@@ -82934,13 +82892,13 @@ STRING 13834
 }
 
 STRING 13835
-// Upgrades: R080 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R062 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 A
 }
 
 STRING 13836
-// Upgrades: R08K (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
+// Upgrades: R080 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 A
 }
@@ -85213,6 +85171,12 @@ STRING 14214
 Wild cunning Hero, adept at supporting armies.|n|cfff5962dCan Learn:|R Hamer Time!, Battleshout, Stoneform, Gryphon Sky|n|n|cffffcc00Attacks land and air units.|R
 }
 
+STRING 14215
+// Units: h03Z (Saboteur), Ubertip (Tooltip - Extended)
+{
+A veteran from the Second War adept at sabotage and demolition operations.|n|cfff5962dAbilities:|R Bash, Infiltrate, Incendiary Cocktail|n|n|cff99b4d1Can only train 12.|r|n|cffffcc00Attacks land units.|r
+}
+
 STRING 14216
 // Upgrades: R06I (Defend), Name (Name)
 {
@@ -86202,6 +86166,12 @@ STRING 14380
 Learn Demon Rage - [|cffffcc00Level %d|r]
 }
 
+STRING 14381
+// Units: h03O (Blacksmith), Ubertip (Tooltip - Extended)
+{
+General research building.|n|cfff5962dResearches: |RForged Weaponry, Armor Plating, Power Infusion, Improved Lumber Harvesting, Improved Masonry, Improved Cannons, Fortified Hulls
+}
+
 STRING 14382
 // Upgrades: R006 (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
 {
@@ -86274,6 +86244,24 @@ STRING 14393
 X
 }
 
+STRING 14394
+// Units: h02Y (Artisan's Hall), Ubertip (Tooltip - Extended)
+{
+An exclusive place of ingenuity for those clever enough to work there.|n|cfff5962dResearches: |RForged Weaponry, Armor Plating, Power Infusion, Improved Cannons, Fortified Hulls
+}
+
+STRING 14395
+// Units: h02N (Lumber Mill), Ubertip (Tooltip - Extended)
+{
+Lumber processing mill and research center.|n|cfff5962dResearches:|R Forged Weaponry, Armor Plating, Power Infusion, Fortified Hulls, Improved Cannons|n|n|cffffcc00Can receive Lumber.|R
+}
+
+STRING 14396
+// Units: h01I (Arcanist), Ubertip (Tooltip - Extended)
+{
+Well-versed sorceress in the arcane arts.|n|cfff5962dAbilities:|R Magic Missile|n|cfff5962dCan Learn:|R Dispel Magic, Flame Shield|n|n|cffffcc00Attacks land and air units.|R
+}
+
 STRING 14397
 // Upgrades: R031 (Defend), EditorSuffix (Editor Suffix)
 {
@@ -86334,6 +86322,12 @@ STRING 14406
 Research Knowledge of Honor Hold
 }
 
+STRING 14407
+// Units: h01B (Outrider), Ubertip (Tooltip - Extended)
+{
+Melee horseman of the Southern lands. |n|cfff5962dAbilities:|R Charge, Trample, Demolish|n|cfff5962dCan Learn:|R Animal War Training|n|n|cffffcc00Attacks land units.|r
+}
+
 STRING 14408
 // Upgrades: R03V (Magic Sentry), EditorSuffix (Editor Suffix)
 {
@@ -86362,6 +86356,12 @@ STRING 14412
 // Upgrades: R03V (Magic Sentry), Tip (Tooltip)
 {
 Research Mages of Stromgarde
+}
+
+STRING 14413
+// Units: e010 (Ancient of Creation), Ubertip (Tooltip - Extended)
+{
+Kaldorei hall of enhancements, where the defenders of Kalimdor grow in strength.|n|cfff5962dResearches: |RForged Weaponry, Armor Plating, Ultravision, Wellspring, Malorne's Infusion, Ultravision, Improved Cannons, Fortified Hulls
 }
 
 STRING 14414
@@ -86512,6 +86512,12 @@ STRING 14438
 // Abilities: A10I (Demon Rage), Tip (Tooltip - Normal)
 {
 Demon Rage - [|cffffcc00Level 1|r]
+}
+
+STRING 14439
+// Units: h07O (Blacksmith), Ubertip (Tooltip - Extended)
+{
+General research building.|n|cfff5962dResearches: |RForged Weaponry, Armor Plating, Power Infusion, Improved Lumber Harvesting, Improved Masonry, Improved Cannons, Fortified Hulls
 }
 
 STRING 14440
@@ -86814,6 +86820,12 @@ STRING 14489
 Purchase Summon Workers
 }
 
+STRING 14490
+// Units: o03J (Voidforge), Ubertip (Tooltip - Extended)
+{
+Resource harvesting center and producer of Twilight's Hammer enhancements. |n|cfff5962dResearches:|R Forged Weaponry, Armor Plating, Spiked Barricades, Spiritual Infusion, Improved Cannons, Fortified Hulls
+}
+
 STRING 14491
 // Upgrades: R02W (Defend), effect2 (Effect 2)
 {
@@ -86994,6 +87006,30 @@ STRING 14520
 X
 }
 
+STRING 14521
+// Units: o03Q (Scrapyard), Ubertip (Tooltip - Extended)
+{
+Resource harvesting center and producer of Goblin enhancements. |n|cfff5962dResearches:|R Forged Weaponry, Armor Plating, Reinforced Defenses, Spiked Barricades, Spiritual Infusion, Improved Cannons, Fortified Hulls
+}
+
+STRING 14522
+// Units: o042 (War Mill), Ubertip (Tooltip - Extended)
+{
+Resource harvesting center and producer of Horde enhancements. |n|cfff5962dResearches:|R Forged Weaponry, Armor Plating, Spiritual Infusion, Improved Cannons, Fortified Hulls|n
+}
+
+STRING 14523
+// Units: u01J (Graveyard), Ubertip (Tooltip - Extended)
+{
+Resource collection and infuser of combat enhancements.|n|cfff5962dAbilities:|R Spawn Corpses |n|cfff5962dResearches:|R Forged Weaponry, Armor Plating, Chaos Infusion, Improved Cannons, Fortified Hulls
+}
+
+STRING 14524
+// Units: n0A4 (Blue Dragonspawn), Ubertip (Tooltip - Extended)
+{
+Monstrous melee unit.|n|cfff5962dAbilities:|R Charge, Cleaving Attack, Hardened Scales|n|n|cffffcc00Attacks land units.|r
+}
+
 STRING 14525
 // Upgrades: R01B (Defend), effect1 (Effect 1)
 {
@@ -87060,6 +87096,12 @@ STRING 14535
 D
 }
 
+STRING 14536
+// Units: h06U (Siphoning Crystal), Ubertip (Tooltip - Extended)
+{
+Primary research center. |n|cfff5962dResearches:|R Forged Weaponry, Armor Plating, Chaos Infusion, Improved Cannons, Fortified Hulls
+}
+
 STRING 14537
 // Doodads: D06K (Tower - Stromgarde), Name (Name)
 {
@@ -87114,10 +87156,34 @@ STRING 14545
 Improves Obsidian Drakes by causing their attacks to deal <A0DS,DataA1> additional damage on the first attack, twice as much on the second attack, three times as much on the third attack, etc.|n|nIf a unit dies while under this effect, it is incinerated, causing up to <A0DS,DataB1> damage to all nearby hostile units.
 }
 
+STRING 14546
+// Units: o053 (Smithery), Ubertip (Tooltip - Extended)
+{
+Resource harvesting center and producer of Draenei enhancements. |n|cfff5962dResearches:|R Forged Weaponry, Armor Plating, Spiritual Infusion, Improved Cannons, Fortified Hulls
+}
+
 STRING 14547
 // Upgrades: Redt (Druid of the Talon Adept Training,Druid of the Talon Master Training), Hotkey (Hotkey)
 {
 Z
+}
+
+STRING 14548
+// Units: h0A4 (Coral Forge), Ubertip (Tooltip - Extended)
+{
+Primary research center. |n|cfff5962dResearches:|R Forged Weaponry, Armor Plating, Power Infusion, Improved Cannons, Fortified Hulls
+}
+
+STRING 14549
+// Units: o068 (Drakebone Armory), Ubertip (Tooltip - Extended)
+{
+Resource harvesting center and producer of Horde enhancements. |n|cfff5962dResearches:|R Forged Weaponry, Armor Plating, Spiked Barricades, Spiritual Infusion, Improved Cannons, Fortified Hulls
+}
+
+STRING 14550
+// Abilities: A0S1 (Bombing Run), EditorSuffix (Editor Suffix)
+{
+ (Stormwind)
 }
 
 STRING 14551
@@ -87192,6 +87258,12 @@ STRING 14562
 rlev
 }
 
+STRING 14563
+// Abilities: A0LQ (Demolish), EditorSuffix (Editor Suffix)
+{
+(Raider, Outrider)
+}
+
 STRING 14564
 // Upgrades: Redc (Druid of the Claw Adept Training,Druid of the Claw Master Training), Hotkey (Hotkey)
 {
@@ -87222,6 +87294,12 @@ STRING 14568
 Powerful portable artillery.|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land units and trees.|r
 }
 
+STRING 14569
+// Abilities: A0ZZ (Incendiary Arrows), Ubertip (Tooltip - Normal - Extended)
+{
+Increases damage dealt to enemy Boarding Vessels by 20.
+}
+
 STRING 14570
 // Upgrades: R010 (Control Magic), effect1 (Effect 1)
 {
@@ -87238,6 +87316,12 @@ STRING 14572
 // Upgrades: Redc (Druid of the Claw Adept Training,Druid of the Claw Master Training), Hotkey (Hotkey)
 {
 Z
+}
+
+STRING 14573
+// Upgrades: R098 (Burning Oil), Hotkey (Hotkey)
+{
+A
 }
 
 STRING 14576
@@ -87329,12 +87413,6 @@ STRING 14590
 // Abilities: A0KJ (Blink), Hotkey (Hotkey - Normal)
 {
 W
-}
-
-STRING 14591
-// Units: h07O (Blacksmith), Ubertip (Tooltip - Extended)
-{
-General research building.|n|cfff5962dResearches: |RForged Weaponry, Armor Plating, Power Infusion, Improved Lumber Harvesting, Improved Masonry
 }
 
 STRING 14592
@@ -87683,12 +87761,6 @@ STRING 14649
 // Upgrades: R02E (Priest Adept Training,Priest Master Training), Ubertip (Tooltip - Extended)
 {
 Increases Chaplains' or Pastors' mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Rain of Light.
-}
-
-STRING 14650
-// Units: n007 (Kirin Tor), Ubertip (Tooltip - Extended)
-{
-A powerful mage of Dalaran.|n|cfff5962dAbilities:|R Forked Lightning, Mana Shield, Arcane Combustion, Teleport|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land and air units.|r
 }
 
 STRING 14651
@@ -91453,12 +91525,6 @@ STRING 15292
 (Stormwind - Elite)
 }
 
-STRING 15293
-// Units: h05F (Stormwind Champion), Ubertip (Tooltip - Extended)
-{
-Knighted champion of the Stormwind Army.|n|cfff5962dAbilities:|R Charge, Safeguard, Cleaving Attack, Resistant Skin, Heavy Armor, Combat Experience, Staggering Shout|n |n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land units.|r
-}
-
 STRING 15294
 // Abilities: A0H3 (Mass Ice Armor), Ubertip (Tooltip - Normal - Extended)
 {
@@ -91715,12 +91781,6 @@ STRING 15336
 // Abilities: A0HC (Frozen Solid), Researchtip (Tooltip - Learn)
 {
 Learn Frozen Solid - [|cffffcc00Level %d|r]
-}
-
-STRING 15337
-// Units: hbar (Barracks), Ubertip (Tooltip - Extended)
-{
-Housing for the defenders of the Alliance|n|n|r|cfff5962dTrains:|R Footman, Knight, Huntsman|n|cfff5962dResearches:|r Improved Ensnare, Veteran Footman, Animal War Training
 }
 
 STRING 15338
@@ -94695,12 +94755,6 @@ STRING 15835
 (Ironforge Other)
 }
 
-STRING 15836
-// Units: h048 (Forgeworks), Ubertip (Tooltip - Extended)
-{
-Contains upgrades for improved armor, weaponry and increased health.|n|cfff5962dResearches: |RForged Weaponry, Armor Plating, Power Infusion
-}
-
 STRING 15837
 // Units: h042 (Pinnacle), Ubertip (Tooltip - Extended)
 {
@@ -96227,12 +96281,6 @@ STRING 16092
 Specialized medium ship.|n|cfff5962dAbilities:|R Boarding|n|r|n|cffffcc00Attacks land units.|r|nStrong versus heavy ships, Weak to Scout Ships.
 }
 
-STRING 16093
-// Units: o042 (War Mill), Ubertip (Tooltip - Extended)
-{
-Resource harvesting center and producer of Horde enhancements. |n|cfff5962dResearches:|R Weapon Upgdrades, Armor Upgrades, Reinforced Defenses, Spiked Barricades, Spiritual Infusion|n
-}
-
 STRING 16094
 // Units: h0B7 (Bombard), Name (Name)
 {
@@ -97060,7 +97108,7 @@ C
 }
 
 STRING 16247
-// Upgrades: R090 (Defend), Hotkey (Hotkey)
+// Upgrades: R08K (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
 {
 A
 }
@@ -97180,7 +97228,7 @@ Build Field Stockpile
 }
 
 STRING 16269
-// Upgrades: R091 (Defend), Hotkey (Hotkey)
+// Upgrades: R090 (Defend), Hotkey (Hotkey)
 {
 A
 }
@@ -97834,7 +97882,7 @@ STRING 16382
 }
 
 STRING 16383
-// Upgrades: R092 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R091 (Defend), Hotkey (Hotkey)
 {
 A
 }
@@ -102574,7 +102622,7 @@ E
 }
 
 STRING 17220
-// Upgrades: R02K (Storm Hammers), Hotkey (Hotkey)
+// Upgrades: R092 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 A
 }
@@ -104662,12 +104710,6 @@ STRING 17604
 Heavy melee unit with Charge, Cleaving Attack and Hardened Scale.|n|n|cffffcc00Attacks land units.|r
 }
 
-STRING 17605
-// Units: n0A4 (Blue Dragonspawn), Ubertip (Tooltip - Extended)
-{
-Heavy melee unit with Charge, Cleaving Attack and Hardened Scale.|n|n|cffffcc00Attacks land units.|r
-}
-
 STRING 17606
 // Units: n0BD (Uldum (10gold/min)), Name (Name)
 {
@@ -105287,19 +105329,19 @@ Consumes an enemy in holy flames, slowing them for 40% and dealing 20 initial da
 }
 
 STRING 17726
-// Upgrades: R08T (Cannibalize), Hotkey (Hotkey)
+// Upgrades: R02K (Storm Hammers), Hotkey (Hotkey)
 {
 A
 }
 
 STRING 17727
-// Upgrades: R096 (Defend), Hotkey (Hotkey)
+// Upgrades: R08T (Cannibalize), Hotkey (Hotkey)
 {
 A
 }
 
 STRING 17728
-// Upgrades: R098 (Burning Oil), Hotkey (Hotkey)
+// Upgrades: R096 (Defend), Hotkey (Hotkey)
 {
 A
 }
@@ -105466,12 +105508,6 @@ STRING 17774
 // Units: o05D (Elementalist), Casterupgradetip (Caster Upgrade Tips)
 {
 - Frost Bolt,- Frost Bolt|n- Summon Earth Elemental,- Frost Bolt|n- Summon Earth Elemental|n- Frost Armor
-}
-
-STRING 17775
-// Units: o053 (Smithery), Ubertip (Tooltip - Extended)
-{
-Resource harvesting center and producer of Draenei enhancements. |n|cfff5962dResearches:|R Weapon Upgdrades, Armor Upgrades, Reinforced Defenses, Spiritual Infusion|n
 }
 
 STRING 17776
@@ -109127,12 +109163,6 @@ STRING 18462
 // Upgrades: R08P (Naga Siren Adept Training,Naga Siren Master Training), Tip (Tooltip)
 {
 Research Deepseer Adept Training
-}
-
-STRING 18464
-// Units: h0AD (Coral Forge), Ubertip (Tooltip - Extended)
-{
-Provides attack and defense upgrades. Serves as a drop-off point for harvested lumber. 
 }
 
 STRING 18465
@@ -114447,12 +114477,6 @@ STRING 19512
  (Stormwind)
 }
 
-STRING 19513
-// Units: h06A (Smithy), Ubertip (Tooltip - Extended)
-{
-The mechanical heart of Stormwind's war machine.|n|cfff5962dTrains:|R Gunship, Saboteur, Marshal
-}
-
 STRING 19514
 // Units: h06A (Smithy), Name (Name)
 {
@@ -114466,7 +114490,7 @@ Build Smithy
 }
 
 STRING 19516
-// Abilities: A0S1 (Bombing Run), EditorSuffix (Editor Suffix)
+// Units: h01B (Outrider), EditorSuffix (Name - Editor Suffix)
 {
  (Stormwind)
 }
@@ -115869,12 +115893,6 @@ STRING 19795
  (Quel'thalas Shop)
 }
 
-STRING 19796
-// Units: h04C (Pikeman), Ubertip (Tooltip - Extended)
-{
-Veteran warrior ready to risk his life and blood for humanity. |n|cfff5962dAbilities:|R Defend, Combat Experience|n|cfff5962dAbilities:|R First Strike, Sunder Armor|n|n|cffffcc00Attacks land units.|r
-}
-
 STRING 19797
 // Units: h04B (Rock), EditorSuffix (Name - Editor Suffix)
 {
@@ -116923,12 +116941,6 @@ STRING 20014
 // Units: u01A (Shipyard), EditorSuffix (Name - Editor Suffix)
 {
 (Forsaken Shipyard)
-}
-
-STRING 20015
-// Units: u01J (Graveyard), Ubertip (Tooltip - Extended)
-{
-Resource collection and infuser of combat enhancements.|n|cfff5962dAbilities:|R Spawn Corpses |n|cfff5962dResearches:|R Weapon Upgrades, Armor Upgrades, Chaos Infusion
 }
 
 STRING 20016
