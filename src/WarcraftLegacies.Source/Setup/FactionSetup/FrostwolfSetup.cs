@@ -41,6 +41,7 @@ Establish a base and gather your troops - but make haste and move inland, for th
       Frostwolf.ModObjectLimit(Constants.UNIT_O002_IMPROVED_WATCH_TOWER_FROSTWOLF_TOWER_2, Faction.UNLIMITED);
       Frostwolf.ModObjectLimit(Constants.UNIT_OVLN_VOODOO_LOUNGE_FROSTWOLF, Faction.UNLIMITED);
       Frostwolf.ModObjectLimit(Constants.UNIT_OSHY_HORDE_PIER_FROSTWOLF, Faction.UNLIMITED);
+      Frostwolf.ModObjectLimit(Constants.UNIT_OOSC_PACK_KODO_FROSTWOLF, Faction.UNLIMITED);
 
       Frostwolf.ModObjectLimit(FourCC("opeo"), Faction.UNLIMITED); //Peon
       Frostwolf.ModObjectLimit(FourCC("ogru"), Faction.UNLIMITED); //Grunt
