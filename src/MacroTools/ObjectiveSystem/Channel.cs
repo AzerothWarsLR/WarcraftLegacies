@@ -60,7 +60,8 @@ namespace MacroTools.ObjectiveSystem
       caster.SetPosition(_position)
         .Pause(true)
         .SetAnimation("channel")
-        .SetFacingEx(facing);
+        .SetFacingEx(facing)
+        .SetInvulnerable(false);
       _sfxProgress = AddSpecialEffect(ProgressEffect, GetUnitX(caster), GetUnitY(caster))
         .SetTimeScale(10 / (float)duration)
         .SetColor(caster.OwningPlayer())
