@@ -16,6 +16,12 @@ namespace WarcraftLegacies.Source.Mechanics.Neutral
     /// </summary>
     public static void Setup(PreplacedUnitSystem preplaced)
     {
+      var greymaneGateTowerA = preplaced.GetUnit(Constants.UNIT_O05Q_GREYMANETOWER_GILNEAS_REAL_TOWER, new Point(6580, 2677));
+      var greymaneGateTowerB = preplaced.GetUnit(Constants.UNIT_O05Q_GREYMANETOWER_GILNEAS_REAL_TOWER, new Point(7206, 2697));
+
+      greymaneGateTowerA.SetInvulnerable(true);
+      greymaneGateTowerB.SetInvulnerable(true);
+      
       foreach (var gilneasGateUnitTypeId in new[]
                {
                  Constants.UNIT_H02L_GREYMANE_S_GATE_DEAD,
@@ -23,14 +29,18 @@ namespace WarcraftLegacies.Source.Mechanics.Neutral
                  Constants.UNIT_H02K_GREYMANE_S_GATE_CLOSED
                })
       {
-        var greymaneGateTowerA = preplaced.GetUnit(Constants.UNIT_O05Q_GREYMANETOWER_GILNEAS_REAL_TOWER, new Point(6580, 2677));
-        var greymaneGateTowerB = preplaced.GetUnit(Constants.UNIT_O05Q_GREYMANETOWER_GILNEAS_REAL_TOWER, new Point(7206, 2697));
         PlayerUnitEvents.Register(UnitTypeEvent.Dies, () =>
         {
-          greymaneGateTowerA.SetOwner(GetTriggerUnit().OwningPlayer());
-          greymaneGateTowerB.SetOwner(GetTriggerUnit().OwningPlayer());
+          greymaneGateTowerA.SetOwner(Player(PLAYER_NEUTRAL_PASSIVE));
+          greymaneGateTowerB.SetOwner(Player(PLAYER_NEUTRAL_PASSIVE));
         }, gilneasGateUnitTypeId);
       }
+      
+      PlayerUnitEvents.Register(UnitTypeEvent.FinishesUpgrade, () =>
+      {
+        greymaneGateTowerA.SetOwner(GetTriggerUnit().OwningPlayer());
+        greymaneGateTowerB.SetOwner(GetTriggerUnit().OwningPlayer());
+      }, Constants.UNIT_H02K_GREYMANE_S_GATE_CLOSED);
     }
   }
 }
