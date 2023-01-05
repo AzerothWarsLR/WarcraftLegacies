@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using MacroTools.ControlPointSystem;
 using MacroTools.FactionSystem;
+using MacroTools.LegendSystem;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
@@ -361,6 +362,16 @@ namespace MacroTools.Extensions
       if (GetLocalPlayer() == whichPlayer){
         StartSound(SoundLibrary.Hint);
       }
+    }
+
+    /// <summary>
+    /// Indicates to the player that a <see cref="LegendaryHero"/> has been summoned.
+    /// </summary>
+    public static void DisplayLegendaryHeroSummoned(this player whichPlayer, LegendaryHero legendaryHero, string message)
+    {
+      DisplayTextToPlayer(whichPlayer, 0, 0,
+        $"\n|cffd45e19LEGENDARY FOE SUMMONED - {legendaryHero.Name}\n|r{message}");
+      StartSound(SoundLibrary.Warning);
     }
   }
 }

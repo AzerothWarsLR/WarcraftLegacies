@@ -3,6 +3,7 @@ using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives;
 using MacroTools.QuestSystem;
 using WarcraftLegacies.Source.Setup.Legends;
+using WCSharp.Events;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
@@ -14,6 +15,7 @@ namespace WarcraftLegacies.Source.Quests
   public sealed class QuestRagnaros : QuestData
   {
     private readonly unit _ragnarosSummoningPedestal;
+    private readonly ObjectiveHeroWithLevelInRect _heroInRectObjective;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestRagnaros"/> class.
@@ -22,27 +24,43 @@ namespace WarcraftLegacies.Source.Quests
       "Ragnaros hides within the Elemental Plane known as the Firelands. Outside Shadowforge City, the Dark Iron dwarves have been trying to summon him forth into Azeroth. Their efforts until now have proved ineffective, but we could succeed where they have not.",
       @"ReplaceableTextures\CommandButtons\BTNHeroAvatarOfFlame.blp")
     {
-      AddObjective(new ObjectiveCastSpellFromUnit(Constants.ABILITY_A0PY_SUMMON_RAGNAROS_ALL, ragnarosSummmoningPedestal));
-      _ragnarosSummoningPedestal = ragnarosSummmoningPedestal.MakeCapturable();
-      AddObjective(new ObjectiveHeroWithLevelInRect(12, Regions.RagnarosSummon, "The Portal to the Firelands"));
+      _ragnarosSummoningPedestal = ragnarosSummmoningPedestal
+        .MakeCapturable()
+        .SetOwner(Player(PLAYER_NEUTRAL_PASSIVE))
+        .SetInvulnerable(true);
+
+      _heroInRectObjective =
+        new ObjectiveHeroWithLevelInRect(12, Regions.RagnarosSummon, "the Portal to the Firelands");
+      AddObjective(_heroInRectObjective);
+      PlayerUnitEvents.Register(UnitEvent.SpellEffect, OnCastSummonSpell, _ragnarosSummoningPedestal);
     }
 
     /// <inheritdoc/>
     protected override string RewardDescription => "Ragnaros is summoned near the Blackrock Depths, and can be slain to acquire Sulfuras";
 
     /// <inheritdoc/>
-    protected override string CompletionPopup => "Ragnaros, the Elemental Lord of Fire, has been forcibly called forth into Azeroth. The air smolders with his arrival, and Blackrock Mountain erupts in raging infernos that can be seen for miles.";
+    protected override string CompletionPopup => $"{_heroInRectObjective.CompletingUnitName} has seized control of the portal to the Firelands, and can now summon Ragnaros.";
 
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
     {
+      _ragnarosSummoningPedestal
+        .SetOwner(_heroInRectObjective.CompletingUnit?.OwningPlayer() ?? Player(PLAYER_NEUTRAL_AGGRESSIVE))
+        .SetInvulnerable(false);
+    }
+
+    private void OnCastSummonSpell()
+    {
       var ragnarosSummonPoint = new Point(12332, -10597);
       LegendNeutral.Ragnaros.ForceCreate(Player(PLAYER_NEUTRAL_AGGRESSIVE), ragnarosSummonPoint, 320);
       AddSpecialEffect(@"Abilities\Spells\Other\BreathOfFire\BreathOfFireMissile.mdl", ragnarosSummonPoint.X,
-        ragnarosSummonPoint.Y)
+          ragnarosSummonPoint.Y)
         .SetScale(2)
         .SetLifespan(1);
       _ragnarosSummoningPedestal.Kill();
+      GetLocalPlayer()
+        .DisplayLegendaryHeroSummoned(LegendNeutral.Ragnaros, 
+          "Ragnaros, the Elemental Lord of Fire, has been forcibly called forth into Azeroth. The air smolders with his arrival, and Blackrock Mountain erupts in raging infernos that can be seen for miles.");
     }
   }
 }
