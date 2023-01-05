@@ -25,28 +25,34 @@ namespace WarcraftLegacies.Source.Setup.Spells
         GetInteriorWaygatePosition = () => Regions.Exodar_South_Interior.Center
       });
 
-      SpellSystem.Register(new SlipstreamSpell(Constants.ABILITY_A00D_SLIPSTREAM_STORMWIND_KHADGAR)
+      //Azuremyst
+      SpellSystem.Register(new SlipstreamSpellSpecificLocation(Constants.ABILITY_A0ZJ_PORTAL_TO_NAGRAND_ITEM)
       {
         PortalUnitTypeId = Constants.UNIT_N0D9_SLIPSTREAM_PORTAL_STORMWIND_KHADGAR,
-        OpeningDelay = 5,
+        OpeningDelay = 20,
         ClosingDelay = 10,
-        Color = new Color(40, 255, 40, 255)
+        TargetLocation = new Point(-3169, -29714),
+        Color = new Color(155, 250, 50, 255)
       });
 
-      SpellSystem.Register(new SlipstreamSpell(Constants.ABILITY_A00D_SLIPSTREAM_STORMWIND_KHADGAR)
+      //Argus
+      SpellSystem.Register(new SlipstreamSpellSpecificLocation(Constants.ABILITY_A0ZJ_PORTAL_TO_NAGRAND_ITEM)
       {
         PortalUnitTypeId = Constants.UNIT_N0D9_SLIPSTREAM_PORTAL_STORMWIND_KHADGAR,
-        OpeningDelay = 5,
+        OpeningDelay = 20,
         ClosingDelay = 10,
-        Color = new Color(40, 255, 40, 255)
+        TargetLocation = new Point(-3169, -29714),
+        Color = new Color(255, 50, 50, 255)
       });
 
-      SpellSystem.Register(new SlipstreamSpell(Constants.ABILITY_A00D_SLIPSTREAM_STORMWIND_KHADGAR)
+      //Outland
+      SpellSystem.Register(new SlipstreamSpellSpecificLocation(Constants.ABILITY_A0ZJ_PORTAL_TO_NAGRAND_ITEM)
       {
         PortalUnitTypeId = Constants.UNIT_N0D9_SLIPSTREAM_PORTAL_STORMWIND_KHADGAR,
-        OpeningDelay = 5,
+        OpeningDelay = 20,
         ClosingDelay = 10,
-        Color = new Color(40, 255, 40, 255)
+        TargetLocation = new Point(-3169, -29714),
+        Color = new Color(55, 50, 250, 255)
       });
     }
   }
