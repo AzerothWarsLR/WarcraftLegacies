@@ -11725,12 +11725,6 @@ STRING 1954
 Vial of the Sunwell
 }
 
-STRING 1955
-// Items: I018 (Vial of the Sunwell), Ubertip (Tooltip - Extended)
-{
-|cffff8c00Artifact|r|nIncreases Intelligence by <A0F6,DataB1>.|n|cffffcc00Lore|r|n|cffffdeadA drop of the Sunwell
-}
-
 STRING 1956
 // Units: h026 (Auchindoun), Name (Name)
 {
@@ -26016,6 +26010,18 @@ STRING 4337
 C
 }
 
+STRING 4338
+// Items: I018 (Vial of the Sunwell), Ubertip (Tooltip - Extended)
+{
+|cffff8c00Artifact|r|nIncreases Intelligence by <A0F6,DataB1>. Can be activated to fully restore the drinker's hit points and mana.|n|cffffcc00Lore|r|n|cffffdeadThe Sunwell was originally created from a stolen vial of water from the Well of Eternity, and has since grown into an immeasurably deep font of power. Even this small vial holds enough power to keep its imbiber alive indefinitely.
+}
+
+STRING 4339
+// Abilities: A0OC (Extract Vial), Ubertip (Tooltip - Normal - Extended)
+{
+Extracts a single vial containing a small portion of the Sunwell's power.
+}
+
 STRING 4340
 // Items: I00A (Summon Dwarven Workers), Ubertip (Tooltip - Extended)
 {
@@ -38675,6 +38681,12 @@ STRING 6449
 // Abilities: ACbh (Bash), Ubertip (Tooltip - Normal - Extended)
 {
 Gives a 15% chance that an attack will do 60 bonus damage and stun an opponent for 2 seconds. (0.2 for heroes)
+}
+
+STRING 6450
+// Abilities: A0JJ (Item Heal/Mana Regain), EditorSuffix (Editor Suffix)
+{
+(Vial of the Sunwell)
 }
 
 STRING 6451
@@ -94045,12 +94057,6 @@ STRING 15728
 // Abilities: A0JQ (Rain of Light), Ubertip (Tooltip - Normal - Extended)
 {
 Heal all friendly units in the target area for 100 hit points.
-}
-
-STRING 15729
-// Abilities: A0OC (Extract Vial), Ubertip (Tooltip - Normal - Extended)
-{
-Extract a Vial containing the Sunwell's energy
 }
 
 STRING 15730
