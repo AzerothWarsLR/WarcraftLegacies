@@ -4276,6 +4276,12 @@ STRING 713
 Build Cantonment
 }
 
+STRING 714
+// Upgrades: R097 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+{
+E
+}
+
 STRING 715
 // Units: nhea (Ranger), EditorSuffix (Name - Editor Suffix)
 {
@@ -106390,12 +106396,6 @@ STRING 17939
 // Upgrades: R078 (Spirit Walker Adept Training,Spirit Walker Master Training), Ubertip (Tooltip - Extended)
 {
 Increases Elementalist' mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Frost Armor.
-}
-
-STRING 17941
-// Upgrades: R097 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
-{
-Z
 }
 
 STRING 17942

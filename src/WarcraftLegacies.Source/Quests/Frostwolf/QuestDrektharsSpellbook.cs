@@ -1,4 +1,4 @@
-using MacroTools.ArtifactSystem;
+﻿using MacroTools.ArtifactSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives;
@@ -12,7 +12,7 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
   {
     public QuestDrektharsSpellbook() : base("Drekthar's Spellbook",
       "The savage Night Elves threaten the safety of the entire Horde. Capture their World Tree and bring Thrall to its roots.",
-      "ReplaceableTextures\\CommandButtons\\BTNSorceressMaster.blp")
+      "ReplaceableTextures\\CommandButtons\\BTNNecromancerMaster.blp")
     {
       AddObjective(new ObjectiveControlCapital(LegendDruids.LegendNordrassil, false));
       AddObjective(new ObjectiveLegendInRect(LegendFrostwolf.LegendThrall, Regions.Drekthars_Spellbook,
