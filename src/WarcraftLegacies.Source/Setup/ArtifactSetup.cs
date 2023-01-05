@@ -100,12 +100,6 @@ namespace WarcraftLegacies.Source.Setup
       EyeOfSargeras = new Artifact(CreateItem(Constants.ITEM_I003_EYE_OF_SARGERAS, -77.9f, 10910.4f));
       ArtifactManager.Register(EyeOfSargeras);
 
-      var tempArtifact = new Artifact(CreateItem(FourCC("I00H"), DummyX, DummyY));
-      UnitAddAbility(preplacedUnitSystem.GetUnit(FourCC("N00D_1457")), Artifact.ArtifactHolderAbilId); //Ragnaros
-      UnitAddItem(preplacedUnitSystem.GetUnit(FourCC("N00D")), tempArtifact.Item);
-      tempArtifact.TitanforgedAbility = FourCC("A0VN");
-      ArtifactManager.Register(tempArtifact);
-
       HelmOfDomination = new Artifact(CreateItem(FourCC("I01Y"), DummyX, DummyY)); //Helm of Domination
       UnitAddAbility(preplacedUnitSystem.GetUnit(FourCC("u000_0649")), Artifact.ArtifactHolderAbilId); //Frozen Throne
       UnitAddItem(preplacedUnitSystem.GetUnit(FourCC("u000")), HelmOfDomination.Item);
@@ -116,7 +110,7 @@ namespace WarcraftLegacies.Source.Setup
       UnitAddItem(preplacedUnitSystem.GetUnit(FourCC("nemi")), CrownOfLordaeron.Item);
       ArtifactManager.Register(CrownOfLordaeron);
 
-      tempArtifact = new Artifact(CreateItem(FourCC("klmm"), DummyX, DummyY)); //Killmaim
+      var tempArtifact = new Artifact(CreateItem(FourCC("klmm"), DummyX, DummyY)); //Killmaim
       UnitAddAbility(preplacedUnitSystem.GetUnit(FourCC("H00E_1728")),
         Artifact.ArtifactHolderAbilId); //Ramzes the Horror
       UnitAddItem(preplacedUnitSystem.GetUnit(FourCC("H00E")), tempArtifact.Item);

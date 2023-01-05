@@ -1,4 +1,4 @@
-﻿using MacroTools.ControlPointSystem;
+﻿using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives;
 using MacroTools.QuestSystem;
@@ -13,38 +13,35 @@ namespace WarcraftLegacies.Source.Quests
   /// </summary>
   public sealed class QuestRagnaros : QuestData
   {
-    private readonly unit _RagPedestal;
+    private readonly unit _ragnarosSummoningPedestal;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestRagnaros"/> class.
     /// </summary>
-    /// <param name="RagPedestal">The pedestal with the Skull.</param>
-    /// 
-    public QuestRagnaros(unit RagPedestal) : base("Lord of the Firelands",
-      "Ragnaros is hiding in the Firelands, summoning him would enable us to claim Sulfuras, his mighty weapon.",
-      "ReplaceableTextures\\CommandButtons\\BTNGuldanSkull.blp")
+    public QuestRagnaros(unit ragnarosSummmoningPedestal) : base("Lord of the Firelands",
+      "Ragnaros hides within the Elemental Plane known as the Firelands. Outside Shadowforge City, the Dark Iron dwarves have been trying to summon him forth into Azeroth. Their efforts until now have proved ineffective, but we could succeed where they have not.",
+      @"ReplaceableTextures\CommandButtons\BTNHeroAvatarOfFlame.blp")
     {
-        AddObjective(new ObjectiveHeroWithLevelInRect(12, Regions.RagnarosSummon, "The Portal to the Firelands")); 
-        AddObjective(new ObjectiveControlLevel(
-          ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N024_BLACKROCK_DEPTHS_20GOLD_MIN), 15));    
-      _RagPedestal = RagPedestal;
+      AddObjective(new ObjectiveCastSpellFromUnit(Constants.ABILITY_A0PY_SUMMON_RAGNAROS_ALL, ragnarosSummmoningPedestal));
+      _ragnarosSummoningPedestal = ragnarosSummmoningPedestal.MakeCapturable();
     }
 
     /// <inheritdoc/>
-    protected override string RewardDescription => "Summoning Ragnaros to Blackrock";
+    protected override string RewardDescription => "Ragnaros is summoned near the Blackrock Depths, and can be slain to acquire Sulfuras";
 
     /// <inheritdoc/>
-    protected override string CompletionPopup => $" Player has summoned Ragnaros to Blackrock";                 //TODO change this to the summoning player
-
-    /// <inheritdoc/>
-    protected override string FailurePopup => 
-      "Another faction has summoned Ragnaros";
+    protected override string CompletionPopup => "Ragnaros, the Elemental Lord of Fire, has been forcibly called forth into Azeroth. The air smolders with his arrival, and Blackrock Mountain erupts in raging infernos that can be seen for miles.";
 
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
     {
-      LegendNeutral.Ragnaros.ForceCreate(Player(PLAYER_NEUTRAL_AGGRESSIVE), new Point(12332, -10597), 110);
-                                                                                                                    //TODO remove pedestal
+      var ragnarosSummonPoint = new Point(12332, -10597);
+      LegendNeutral.Ragnaros.ForceCreate(Player(PLAYER_NEUTRAL_AGGRESSIVE), ragnarosSummonPoint, 320);
+      AddSpecialEffect(@"Abilities\Spells\Other\BreathOfFire\BreathOfFireMissile.mdl", ragnarosSummonPoint.X,
+        ragnarosSummonPoint.Y)
+        .SetScale(2)
+        .SetLifespan(1);
+      _ragnarosSummoningPedestal.Kill();
     }
   }
 }
