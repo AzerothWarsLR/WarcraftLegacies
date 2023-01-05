@@ -29,8 +29,7 @@ namespace WarcraftLegacies.Source.GameLogic
       SetCameraField(CAMERA_FIELD_TARGET_DISTANCE, 2400f, 1f);
       foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
         player.GetFaction()?.SetObjectLevel(Constants.UPGRADE_R068_INTRO_FINISHED, 1);
-
-      VolumeGroupReset();
+      
       VolumeGroupSetVolume(SOUND_VOLUMEGROUP_AMBIENTSOUNDS, 0.4f);
 
       DestroyTimer(_timer);
