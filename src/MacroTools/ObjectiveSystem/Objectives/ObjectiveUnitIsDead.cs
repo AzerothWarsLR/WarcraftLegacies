@@ -27,11 +27,11 @@ namespace MacroTools.ObjectiveSystem.Objectives
     {
       if (IsUnitType(Target, UNIT_TYPE_STRUCTURE) || IsUnitType(Target, UNIT_TYPE_ANCIENT))
       {
-        Description = GetUnitName(Target) + "has been destroyed.";
+        Description = $"{GetUnitName(Target)}has been destroyed";
         return;
       }
 
-      Description = GetUnitName(Target) + " is dead.";
+      Description = $"{GetUnitName(Target)} is dead";
     }
   }
 }
