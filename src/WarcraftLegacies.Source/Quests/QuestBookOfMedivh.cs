@@ -16,39 +16,41 @@ namespace WarcraftLegacies.Source.Quests
   {
     private readonly IHasCompletingUnit _objectiveWithCompletingUnit;
     private readonly unit _bookOfMedivhPedestal;
-    private readonly bool _isLegion;
+    private readonly bool _bypassLevelRequirement;
     private readonly Artifact _bookOfMedivh;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestBookOfMedivh"/> class.
     /// </summary>
     /// <param name="bookOfMedivhPedestal">The pedestal which has the Book on it.</param>
-    /// <param name="isLegion">If set to true, any hero of any level can complete the objective.</param>
     /// <param name="bookOfMedivh">Reward for completing the quest.</param>
-    public QuestBookOfMedivh(unit bookOfMedivhPedestal, bool isLegion, Artifact bookOfMedivh) : base("Book of Medivh",
+    /// <param name="bypassLevelRequirement">If set to true, any hero of any level can complete the objective.</param>
+    /// <param name="bypassDestructionRequirement">If true, Dalaran does not need to be destroyed to complete the quest.</param>
+    public QuestBookOfMedivh(unit bookOfMedivhPedestal, Artifact bookOfMedivh, bool bypassLevelRequirement = false, bool bypassDestructionRequirement = false) : base("Book of Medivh",
       "The last remaining spellbook written by Medivh, the Last Guardian, is held securely within the dungeons of Dalaran. The spells within its pages could bring us great power.",
       @"ReplaceableTextures\CommandButtons\BTNBookOfTheDead.blp")
     {
-      _isLegion = isLegion;
+      _bypassLevelRequirement = bypassLevelRequirement;
       _bookOfMedivh = bookOfMedivh;
-       _objectiveWithCompletingUnit = isLegion
+       _objectiveWithCompletingUnit = bypassLevelRequirement
          ? new ObjectiveAnyUnitInRect(Regions.BookRetrieval, "the Book of Medivh's pedestal", true)
          : new ObjectiveHeroWithLevelInRect(12, Regions.BookRetrieval, "the Book of Medivh's pedestal");
       if (_objectiveWithCompletingUnit is Objective objective) 
         AddObjective(objective);
       AddObjective(new ObjectiveNoOtherPlayerGetsArtifact(bookOfMedivh));
-      AddObjective(new ObjectiveCapitalDead(LegendDalaran.LegendDalaranCapital));
+      if (!bypassDestructionRequirement)
+        AddObjective(new ObjectiveCapitalDead(LegendDalaran.LegendDalaranCapital));
       _bookOfMedivhPedestal = bookOfMedivhPedestal;
-      Required = isLegion;
+      Required = bypassLevelRequirement;
     }
 
     /// <inheritdoc/>
-    protected override string RewardDescription => _isLegion
+    protected override string RewardDescription => _bypassLevelRequirement
       ? "The Book of Medivh, which can be used to summon the full might of the Burning Legion"
       : "The Book of Medivh";
 
     /// <inheritdoc/>
-    protected override string CompletionPopup => _isLegion
+    protected override string CompletionPopup => _bypassLevelRequirement
       ? $"{_objectiveWithCompletingUnit.CompletingUnitName} has retrieved the Book of Medivh from its pedestal. With its power, we can summon the full might of the Burning Legion from the depths of the Twisting Nether."
       : $"{_objectiveWithCompletingUnit.CompletingUnitName} has retrieved the Book of Medivh from its pedestal, and now prepares to harness its untold power.";
 
