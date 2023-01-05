@@ -87181,7 +87181,7 @@ Resource harvesting center and producer of Horde enhancements. |n|cfff5962dResea
 }
 
 STRING 14550
-// Abilities: A0S1 (Bombing Run), EditorSuffix (Editor Suffix)
+// Units: h05N (Marksman), EditorSuffix (Name - Editor Suffix)
 {
  (Stormwind)
 }
@@ -87319,7 +87319,7 @@ Z
 }
 
 STRING 14573
-// Upgrades: R098 (Burning Oil), Hotkey (Hotkey)
+// Upgrades: R08K (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
 {
 A
 }
@@ -97108,7 +97108,7 @@ C
 }
 
 STRING 16247
-// Upgrades: R08K (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
+// Upgrades: R090 (Defend), Hotkey (Hotkey)
 {
 A
 }
@@ -97228,7 +97228,7 @@ Build Field Stockpile
 }
 
 STRING 16269
-// Upgrades: R090 (Defend), Hotkey (Hotkey)
+// Upgrades: R091 (Defend), Hotkey (Hotkey)
 {
 A
 }
@@ -97882,7 +97882,7 @@ STRING 16382
 }
 
 STRING 16383
-// Upgrades: R091 (Defend), Hotkey (Hotkey)
+// Upgrades: R092 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 A
 }
@@ -102622,7 +102622,7 @@ E
 }
 
 STRING 17220
-// Upgrades: R092 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R02K (Storm Hammers), Hotkey (Hotkey)
 {
 A
 }
@@ -105329,19 +105329,19 @@ Consumes an enemy in holy flames, slowing them for 40% and dealing 20 initial da
 }
 
 STRING 17726
-// Upgrades: R02K (Storm Hammers), Hotkey (Hotkey)
-{
-A
-}
-
-STRING 17727
 // Upgrades: R08T (Cannibalize), Hotkey (Hotkey)
 {
 A
 }
 
-STRING 17728
+STRING 17727
 // Upgrades: R096 (Defend), Hotkey (Hotkey)
+{
+A
+}
+
+STRING 17728
+// Upgrades: R098 (Burning Oil), Hotkey (Hotkey)
 {
 A
 }
@@ -114454,7 +114454,7 @@ Ashtongue Deathsworn
 }
 
 STRING 19507
-// Units: h05N (Marksman), EditorSuffix (Name - Editor Suffix)
+// Units: h054 (Stormwind Knight), EditorSuffix (Name - Editor Suffix)
 {
  (Stormwind)
 }
@@ -114466,13 +114466,13 @@ Mur'gul slaves toil to provide the Illidari with ever-improving weapons and armo
 }
 
 STRING 19511
-// Units: h054 (Stormwind Knight), EditorSuffix (Name - Editor Suffix)
+// Units: h03Z (Saboteur), EditorSuffix (Name - Editor Suffix)
 {
  (Stormwind)
 }
 
 STRING 19512
-// Units: h03Z (Saboteur), EditorSuffix (Name - Editor Suffix)
+// Units: h01B (Outrider), EditorSuffix (Name - Editor Suffix)
 {
  (Stormwind)
 }
@@ -114490,7 +114490,7 @@ Build Smithy
 }
 
 STRING 19516
-// Units: h01B (Outrider), EditorSuffix (Name - Editor Suffix)
+// Abilities: A0S1 (Bombing Run), EditorSuffix (Editor Suffix)
 {
  (Stormwind)
 }
