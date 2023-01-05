@@ -15,8 +15,8 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
     public QuestSafeSea() : base("Safe Sea Decree",
       "The seas must be secured and the Kul'tiras navy must be returned to its former glory!", @"ReplaceableTextures\CommandButtons\BTNKulTirasDreadnought.blp")
     {
-      AddObjective(new ObjectiveTrain(Constants.UNIT_HDES_DESTROYER_UNUSED, Constants.UNIT_HSHY_SHIPYARD_LORDAERON_SHIPYARD, 2));
-      AddObjective(new ObjectiveTrain(Constants.UNIT_H04J_WARSHIP_KUL_TIRAS, Constants.UNIT_HSHY_SHIPYARD_LORDAERON_SHIPYARD, 1));
+      AddObjective(new ObjectiveTrain(Constants.UNIT_H0AX_FRIGATE_ALLIANCE, Constants.UNIT_HSHY_SHIPYARD_LORDAERON_SHIPYARD, 2));
+      AddObjective(new ObjectiveTrain(Constants.UNIT_H0AN_JUGGERNAUT_ALLIANCE, Constants.UNIT_HSHY_SHIPYARD_LORDAERON_SHIPYARD, 1));
       AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N01W_BORALUS_25GOLD_MIN)));
       AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N07L_BALOR_15GOLD_MIN)));
       AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N08Q_TOL_BARAD_20GOLD_MIN)));

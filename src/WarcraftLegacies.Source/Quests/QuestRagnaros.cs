@@ -24,6 +24,7 @@ namespace WarcraftLegacies.Source.Quests
     {
       AddObjective(new ObjectiveCastSpellFromUnit(Constants.ABILITY_A0PY_SUMMON_RAGNAROS_ALL, ragnarosSummmoningPedestal));
       _ragnarosSummoningPedestal = ragnarosSummmoningPedestal.MakeCapturable();
+      AddObjective(new ObjectiveHeroWithLevelInRect(12, Regions.RagnarosSummon, "The Portal to the Firelands"));
     }
 
     /// <inheritdoc/>

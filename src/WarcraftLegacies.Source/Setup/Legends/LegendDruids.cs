@@ -1,4 +1,4 @@
-using MacroTools;
+﻿using MacroTools;
 using MacroTools.LegendSystem;
 using static War3Api.Common;
 
@@ -25,7 +25,6 @@ namespace WarcraftLegacies.Source.Setup.Legends
           "The Lord of the Forest, Cenarius, has fallen. The druids of the Kaldorei have lost their greatest mentor.",
         DeathSfx = "Objects\\Spawnmodels\\NightElf\\EntBirthTarget\\EntBirthTarget.mdl",
         PlayerColor = PLAYER_COLOR_CYAN,
-        StartingXp = 1000
       });
 
       LegendaryHeroManager.Register(LegendMalfurion = new LegendaryHero("Malfurion")

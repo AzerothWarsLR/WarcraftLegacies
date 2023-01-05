@@ -86,7 +86,7 @@ Once you have secured your holdings, gather your army and destroy the orc invade
       Sentinels.ModObjectLimit(FourCC("R03J"), Faction.UNLIMITED); //Wind Walk
       Sentinels.ModObjectLimit(FourCC("R013"), Faction.UNLIMITED); //Elune's Blessing
 
-      Sentinels.AddGoldMine(preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-16016, 10113)));
+      Sentinels.AddGoldMine(preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-16516, 10513)));
       
       FactionManager.Register(Sentinels);
     }

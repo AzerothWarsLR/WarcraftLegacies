@@ -1,4 +1,4 @@
-using MacroTools.FactionSystem;
+﻿using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives;
 using MacroTools.QuestSystem;
 using WarcraftLegacies.Source.Setup.Legends;
@@ -17,7 +17,7 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
       "At the end of the Second War, Khadgar remained in Draenor to seal the Dark Portal, effectively ending the conflict. He has been stranded deep in Outland ever since.",
       "ReplaceableTextures\\CommandButtons\\BTNMageWC2.blp")
     {
-      AddObjective(new ObjectiveControlCapital(LegendFelHorde.LegendBlacktemple, false));
+      AddObjective(new ObjectiveCapitalDead(LegendFelHorde.LegendBlacktemple));
       ResearchId = FourCC("R016");
     }
     

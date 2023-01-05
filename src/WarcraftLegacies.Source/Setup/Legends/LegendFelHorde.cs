@@ -39,7 +39,6 @@ namespace WarcraftLegacies.Source.Setup.Legends
       LegendKargath = new LegendaryHero("Kargath Bladefist")
       {
         UnitType = FourCC("N03D"),
-        StartingXp = 2800
       };
       LegendaryHeroManager.Register(LegendKargath);
 

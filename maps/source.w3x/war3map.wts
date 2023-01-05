@@ -94564,7 +94564,7 @@ STRING 15763
 }
 
 STRING 15764
-// Upgrades: R08S (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R00A (Mark of the Claw), Hotkey (Hotkey)
 {
 Z
 }
@@ -95092,7 +95092,7 @@ Q
 }
 
 STRING 15853
-// Upgrades: R00A (Mark of the Claw), Hotkey (Hotkey)
+// Upgrades: R005 (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
 {
 Z
 }
@@ -95368,7 +95368,7 @@ Absord Nexus
 }
 
 STRING 15899
-// Upgrades: R005 (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
+// Upgrades: R000 (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
 {
 Z
 }
@@ -96058,13 +96058,13 @@ W
 }
 
 STRING 16016
-// Upgrades: R000 (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
+// Upgrades: R01U (Magic Sentry), Hotkey (Hotkey)
 {
 Z
 }
 
 STRING 16017
-// Upgrades: R01U (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: R03Z (Magic Sentry), Hotkey (Hotkey)
 {
 Z
 }
@@ -96100,7 +96100,7 @@ Short range medium ship.|n|r|n|cffffcc00Attacks land units.|r|nStrong versus Fri
 }
 
 STRING 16023
-// Upgrades: R03Z (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: R04O (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
 {
 Z
 }
@@ -96408,7 +96408,7 @@ Open the Scholomance
 }
 
 STRING 16074
-// Upgrades: R04O (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
+// Upgrades: R051 (Necromancer Adept Training,Necromancer Master Training), Hotkey (Hotkey)
 {
 Z
 }
@@ -97258,7 +97258,7 @@ Z
 }
 
 STRING 16232
-// Upgrades: R051 (Necromancer Adept Training,Necromancer Master Training), Hotkey (Hotkey)
+// Upgrades: R06Z (Necromancer Adept Training,Necromancer Master Training), Hotkey (Hotkey)
 {
 Z
 }
@@ -97390,7 +97390,7 @@ E
 }
 
 STRING 16255
-// Upgrades: R06Z (Necromancer Adept Training,Necromancer Master Training), Hotkey (Hotkey)
+// Upgrades: R070 (Druid of the Talon Adept Training,Druid of the Talon Master Training), Hotkey (Hotkey)
 {
 Z
 }
@@ -98896,7 +98896,7 @@ Glaive Warrior
 }
 
 STRING 16521
-// Upgrades: R070 (Druid of the Talon Adept Training,Druid of the Talon Master Training), Hotkey (Hotkey)
+// Upgrades: R07J (Banshee Adept Training,Banshee Master Training), Hotkey (Hotkey)
 {
 Z
 }
@@ -99562,7 +99562,7 @@ Train Witch Hunter
 }
 
 STRING 16639
-// Upgrades: R07J (Banshee Adept Training,Banshee Master Training), Hotkey (Hotkey)
+// Upgrades: R07L (Shaman Adept Training,Shaman Master Training), Hotkey (Hotkey)
 {
 Z
 }
@@ -100390,7 +100390,7 @@ Foreman Glibbs
 }
 
 STRING 16797
-// Upgrades: R07L (Shaman Adept Training,Shaman Master Training), Hotkey (Hotkey)
+// Upgrades: R07O (Witch Doctor Adept Training,Witch Doctor Master Training), Hotkey (Hotkey)
 {
 Z
 }
@@ -100618,7 +100618,7 @@ STRING 16834
 }
 
 STRING 16835
-// Upgrades: R07O (Witch Doctor Adept Training,Witch Doctor Master Training), Hotkey (Hotkey)
+// Upgrades: R07V (Control Magic), Hotkey (Hotkey)
 {
 Z
 }
@@ -104560,7 +104560,7 @@ The Goblin pilot makes emergency repairs to his machine. Restores 500 hitpoints.
 }
 
 STRING 17537
-// Upgrades: R07V (Control Magic), Hotkey (Hotkey)
+// Upgrades: R07C (Spirit Walker Adept Training,Spirit Walker Master Training), Hotkey (Hotkey)
 {
 Z
 }
@@ -104831,13 +104831,13 @@ Elemental Fire - [|cffffcc00Level 3|r]
 }
 
 STRING 17582
-// Upgrades: R07C (Spirit Walker Adept Training,Spirit Walker Master Training), Hotkey (Hotkey)
+// Upgrades: R08E (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 Z
 }
 
 STRING 17583
-// Upgrades: R08E (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R08H (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 Z
 }
@@ -104915,7 +104915,7 @@ X
 }
 
 STRING 17600
-// Upgrades: R08H (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R08P (Naga Siren Adept Training,Naga Siren Master Training), Hotkey (Hotkey)
 {
 Z
 }
@@ -106039,7 +106039,7 @@ R
 }
 
 STRING 17832
-// Upgrades: R08P (Naga Siren Adept Training,Naga Siren Master Training), Hotkey (Hotkey)
+// Upgrades: R08S (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 Z
 }
