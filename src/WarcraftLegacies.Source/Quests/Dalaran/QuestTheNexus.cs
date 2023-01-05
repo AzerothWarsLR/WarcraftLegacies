@@ -1,4 +1,4 @@
-using MacroTools.Extensions;
+﻿using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives;
 using MacroTools.QuestSystem;
@@ -41,6 +41,8 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
       completingFaction.ModObjectLimit(FourCC("njks"), -Faction.UNLIMITED); //Kasan
       completingFaction.ModObjectLimit(FourCC("R06O"), -Faction.UNLIMITED); //Phase Blade
       completingFaction.ModObjectLimit(FourCC("R061"), -Faction.UNLIMITED); //Forked Lightning
+      completingFaction.ModObjectLimit(FourCC("Haah"), -Faction.UNLIMITED); //maiev
+      completingFaction.ModObjectLimit(FourCC("Hant"), -Faction.UNLIMITED); //antonidas
       RemoveUnit(LegendDalaran.LegendAntonidas.Unit);
       RemoveUnit(LegendDalaran.LegendMedivh.Unit);
 
