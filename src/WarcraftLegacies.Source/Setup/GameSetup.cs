@@ -7,6 +7,7 @@ using WarcraftLegacies.Source.ArtifactBehaviour;
 using WarcraftLegacies.Source.GameLogic;
 using WarcraftLegacies.Source.GameLogic.GameEnd;
 using WarcraftLegacies.Source.Hints;
+using WarcraftLegacies.Source.Mechanics.Frostwolf;
 using WarcraftLegacies.Source.Mechanics.Neutral;
 using WarcraftLegacies.Source.Mechanics.Quelthalas;
 using WarcraftLegacies.Source.Mechanics.Scourge;
@@ -131,6 +132,7 @@ namespace WarcraftLegacies.Source.Setup
       EyeOfSargerasPickup.Setup();
       SacrificeAcolyte.Setup();
       IntegrityChecker.Setup();
+      PeonsStartHarvestingShips.Setup(preplacedUnitSystem);
     }
   }
 }
