@@ -1,4 +1,5 @@
 ﻿using MacroTools;
+using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.Libraries;
@@ -32,8 +33,8 @@ namespace WarcraftLegacies.Source.Quests.Quelthalas
       "ReplaceableTextures\\CommandButtons\\BTNHeroBloodElfPrince.blp")
     {
       _secondChanceRect = secondChanceRect;
-      AddObjective(new ObjectiveUnitIsDead(preplacedUnitSystem.GetUnit(Constants.UNIT_N0BE_LEGION_NEXUS_LEGION_OTHER, Regions.DrakUnlock.Center)));
-      AddObjective(new ObjectiveControlLegend(LegendQuelthalas.LegendAnasterian, true));
+      AddObjective(new ObjectiveControlCapital(LegendNeutral.DraktharonKeep, false));
+      AddObjective(new ObjectiveControlLevel(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N030_DRAK_THARON_KEEP_30GOLD_MIN), 15));
       AddObjective(new ObjectiveControlCapital(LegendQuelthalas.LegendSunwell, true));
       Required = true;
     }
