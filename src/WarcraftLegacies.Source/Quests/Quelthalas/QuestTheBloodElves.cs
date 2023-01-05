@@ -32,7 +32,7 @@ namespace WarcraftLegacies.Source.Quests.Quelthalas
       "ReplaceableTextures\\CommandButtons\\BTNHeroBloodElfPrince.blp")
     {
       _secondChanceRect = secondChanceRect;
-      AddObjective(new ObjectiveKillUnit(preplacedUnitSystem.GetUnit(Constants.UNIT_N0BE_LEGION_NEXUS_LEGION_OTHER, Regions.DrakUnlock.Center)));
+      AddObjective(new ObjectiveUnitIsDead(preplacedUnitSystem.GetUnit(Constants.UNIT_N0BE_LEGION_NEXUS_LEGION_OTHER, Regions.DrakUnlock.Center)));
       AddObjective(new ObjectiveControlLegend(LegendQuelthalas.LegendAnasterian, true));
       AddObjective(new ObjectiveControlCapital(LegendQuelthalas.LegendSunwell, true));
       Required = true;
