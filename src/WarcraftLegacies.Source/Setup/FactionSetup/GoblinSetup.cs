@@ -79,9 +79,10 @@ The Trading Center in Kezan will unlock the ability to train Traders, as soon as
       {
         Name = "Oil Tycoon",
         IconName = "OilStation",
-        OilPoolCount = 10,
+        StartingOilPoolCount = 4,
+        MaximumOilPoolCount = 10,
         OilPoolMinimumValue = 1000,
-        OilPoolMaximumValue = 5000
+        OilPoolMaximumValue = 5000,
       };
       Goblin.AddPower(oilPower);
 

@@ -65,9 +65,14 @@ namespace MacroTools.Powers
     }
 
     /// <summary>
-    /// The number of oil pools that will generate on the map.
+    /// The maximum number of oil pools that will generate on the map.
     /// </summary>
-    public int OilPoolCount { get; init; }
+    public int MaximumOilPoolCount { get; init; }
+
+    /// <summary>
+    /// The number of oil pools that are spawned at the start of the game.
+    /// </summary>
+    public int StartingOilPoolCount { get; init; } = 1;
 
     /// <summary>
     /// The maximum amount of oil that a given <see cref="OilPool"/> can start with.
@@ -91,8 +96,9 @@ namespace MacroTools.Powers
       _oilIncomePeriodicAction = new OilIncomePeriodicAction(this);
       OilIncomePeriodicTrigger.Add(_oilIncomePeriodicAction);
 
-      _oilTimer = CreateTimer().Start(300, true, GenerateOilPools);
-      GenerateOilPools();
+      _oilTimer = CreateTimer().Start(300, true, GenerateOilPool);
+      for (var i = 0; i < StartingOilPoolCount; i++)
+        GenerateOilPool();
     }
 
     /// <inheritdoc/>
@@ -105,7 +111,7 @@ namespace MacroTools.Powers
       _oilTimer?.Destroy();
     }
 
-    private void GenerateOilPools()
+    private void GenerateOilPool()
     {
       if (_oilPools.Count > 0)
       {
@@ -116,7 +122,7 @@ namespace MacroTools.Powers
         }
       }
 
-      if (_oilPools.Count >= OilPoolCount)
+      if (_oilPools.Count >= MaximumOilPoolCount)
         return;
       var randomPoint = GetRandomPointAtSea();
       var oilPool = new OilPool(_owners.First(), randomPoint, "Tar Pool.mdx", this)
