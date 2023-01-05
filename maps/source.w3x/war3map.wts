@@ -7029,7 +7029,7 @@ S
 }
 
 STRING 1172
-// Abilities: A0IU (Oil Producer), Ubertip (Tooltip - Normal - Extended)
+// Abilities: Ahlh (Improved Lumber Harvesting), Ubertip (Tooltip - Normal - Extended)
 {
 Increases the rate at which this unit gathers lumber.
 }
@@ -10148,7 +10148,7 @@ W
 }
 
 STRING 1692
-// Upgrades: R097 (Iron Plating,Steel Plating,Mithril Plating), EditorSuffix (Editor Suffix)
+// Units: o04R (Oil Rig), EditorSuffix (Name - Editor Suffix)
 {
 (Goblin)
 }
@@ -10638,6 +10638,12 @@ STRING 1773
 // Units: o014 (Terrorguard), Hotkey (Hotkey)
 {
 Q
+}
+
+STRING 1774
+// Units: n02B (Ragnaros Summoning Pedestal), Name (Name)
+{
+Ragnaros Summoning Pedestal
 }
 
 STRING 1775
@@ -18336,6 +18342,12 @@ STRING 3057
 When this hero attacks, it has a  chance to summon an illusion at his target. |n|n|cffffcc00Level 1|r - 10% chance. |n|cffffcc00Level 2|r - 20% chance.|n|cffffcc00Level 3|r - 30% chance
 }
 
+STRING 3058
+// Abilities: A0PY (Summon Ragnaros), Ubertip (Tooltip - Normal - Extended)
+{
+Call forth Ragnaros from the Firelands.
+}
+
 STRING 3059
 // Abilities: A0HP (Purging Attack), Name (Name)
 {
@@ -19327,14 +19339,8 @@ STRING 3223
 S
 }
 
-STRING 3224
-// Units: n02B (Altar of Flames), Name (Name)
-{
-Altar of Flames
-}
-
 STRING 3225
-// Units: n02B (Altar of Flames), EditorSuffix (Name - Editor Suffix)
+// Units: n02B (Ragnaros Summoning Pedestal), EditorSuffix (Name - Editor Suffix)
 {
 (pedestal)
 }
@@ -20414,7 +20420,7 @@ Activate Battle Trance - [|cffffcc00Level 2|r]
 }
 
 STRING 3405
-// Units: o04R (Oil Rig), EditorSuffix (Name - Editor Suffix)
+// Units: o06G (Oil Rig Constructor), EditorSuffix (Name - Editor Suffix)
 {
 (Goblin)
 }
@@ -20882,7 +20888,7 @@ Loyal Captain of Arthas, and his acting right hand. Falric has been with the pri
 }
 
 STRING 3483
-// Units: o06G (Oil Rig Constructor), EditorSuffix (Name - Editor Suffix)
+// Units: o01C (Control Point Defender), EditorSuffix (Name - Editor Suffix)
 {
 (Goblin)
 }
@@ -51861,7 +51867,7 @@ When an enemy strikes Broll they have a 20% chance to be caught by entangling ro
 }
 
 STRING 8648
-// Units: o01C (Control Point Defender), EditorSuffix (Name - Editor Suffix)
+// Abilities: A0MN (Oil Consumer), EditorSuffix (Editor Suffix)
 {
 (Goblin)
 }
@@ -76093,7 +76099,7 @@ R
 }
 
 STRING 12696
-// Abilities: A0MN (Oil Consumer), EditorSuffix (Editor Suffix)
+// Abilities: A07A (Dispel Magic), EditorSuffix (Editor Suffix)
 {
 (Goblin)
 }
@@ -88412,12 +88418,6 @@ STRING 14773
 Improves Rangers, Farstriders, Ballistas, Vereesa, and Sylvanas by increasing their attack range by 150 and attack speed by 5%.
 }
 
-STRING 14774
-// Abilities: A0PY (Summon Ragnaros), Ubertip (Tooltip - Normal - Extended)
-{
-Summon Ragnaros if you have a level 12 hero at the Altar of Fire
-}
-
 STRING 14775
 // Upgrades: R027 (Necromancer Adept Training,Necromancer Master Training), Hotkey (Hotkey)
 {
@@ -90270,18 +90270,6 @@ STRING 15087
 // Upgrades: R005 (Priest Adept Training,Priest Master Training), Ubertip (Tooltip - Extended)
 {
 Increases Clergymans' mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Inner Fire.
-}
-
-STRING 15088
-// Upgrades: R004 (Chaos), EditorSuffix (Editor Suffix)
-{
-(Frostwolf, Warsong)
-}
-
-STRING 15089
-// Upgrades: R004 (Chaos), Name (Name)
-{
-Bloodpact
 }
 
 STRING 15090
@@ -92986,13 +92974,13 @@ Cruel housing for a soul used as fuel for the Legion.|nProvides 8 food, which in
 }
 
 STRING 15549
-// Abilities: Ahlh (Improved Lumber Harvesting), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A0MN (Oil Consumer), Ubertip (Tooltip - Normal - Extended)
 {
 Increases the rate at which this unit gathers lumber.
 }
 
 STRING 15550
-// Abilities: A0MN (Oil Consumer), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A0O2 (Goblin Pilot), Ubertip (Tooltip - Normal - Extended)
 {
 Increases the rate at which this unit gathers lumber.
 }
@@ -96150,13 +96138,13 @@ Corrupt Blood - [|cffffcc00Level 3|r]
 }
 
 STRING 16079
-// Abilities: A07A (Dispel Magic), EditorSuffix (Editor Suffix)
+// Abilities: A0SJ (Rain of Fire), EditorSuffix (Editor Suffix)
 {
 (Goblin)
 }
 
 STRING 16080
-// Abilities: A0SJ (Rain of Fire), EditorSuffix (Editor Suffix)
+// Abilities: A0TA (Mech Kit), EditorSuffix (Editor Suffix)
 {
 (Goblin)
 }
@@ -96168,7 +96156,7 @@ STRING 16081
 }
 
 STRING 16082
-// Abilities: A0TA (Mech Kit), EditorSuffix (Editor Suffix)
+// Abilities: A0IU (Oil Producer), EditorSuffix (Editor Suffix)
 {
 (Goblin)
 }
@@ -96180,7 +96168,7 @@ Boarding Vessel
 }
 
 STRING 16084
-// Abilities: A0IU (Oil Producer), EditorSuffix (Editor Suffix)
+// Upgrades: R097 (Iron Plating,Steel Plating,Mithril Plating), EditorSuffix (Editor Suffix)
 {
 (Goblin)
 }
@@ -98355,18 +98343,6 @@ STRING 16473
 Drone
 }
 
-STRING 16474
-// Upgrades: R06D (Chaos), EditorSuffix (Editor Suffix)
-{
-(Highelves)
-}
-
-STRING 16475
-// Upgrades: R06D (Chaos), Name (Name)
-{
-Illidan is in Outland
-}
-
 STRING 16476
 // Units: h035 (Arcane Study), Ubertip (Tooltip - Extended)
 {
@@ -98974,7 +98950,7 @@ STRING 16578
 }
 
 STRING 16579
-// Abilities: A0O2 (Goblin Pilot), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A0YG (Goblin Pilot), Ubertip (Tooltip - Normal - Extended)
 {
 Increases the rate at which this unit gathers lumber.
 }
@@ -107005,7 +106981,7 @@ Zin'rokh, Destroyer of Worlds
 }
 
 STRING 18054
-// Abilities: A0YG (Goblin Pilot), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A0KY (Power Sources), Ubertip (Tooltip - Normal - Extended)
 {
 Increases the rate at which this unit gathers lumber.
 }
@@ -107053,7 +107029,7 @@ Gazlowee burns some extra fuel, resetting the cooldown of all his abilities.|n|n
 }
 
 STRING 18065
-// Abilities: A0KY (Power Sources), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A0IU (Oil Producer), Ubertip (Tooltip - Normal - Extended)
 {
 Increases the rate at which this unit gathers lumber.
 }
@@ -113671,18 +113647,6 @@ STRING 19353
 // Upgrades: R02C (Chaos), Name (Name)
 {
 Defias has not already been picked
-}
-
-STRING 19354
-// Upgrades: R04H (Chaos), Name (Name)
-{
-Grimscale has not already been picked
-}
-
-STRING 19355
-// Upgrades: R076 (Chaos), Name (Name)
-{
-Blackmane has not already been picked
 }
 
 STRING 19356

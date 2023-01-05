@@ -20,7 +20,7 @@ namespace WarcraftLegacies.Source.Quests
     /// </summary>
     public QuestRagnaros(unit ragnarosSummmoningPedestal) : base("Lord of the Firelands",
       "Ragnaros hides within the Elemental Plane known as the Firelands. Outside Shadowforge City, the Dark Iron dwarves have been trying to summon him forth into Azeroth. Their efforts until now have proved ineffective, but we could succeed where they have not.",
-      "ReplaceableTextures\\CommandButtons\\BTNGuldanSkull.blp")
+      @"ReplaceableTextures\CommandButtons\BTNHeroAvatarOfFlame.blp")
     {
       AddObjective(new ObjectiveCastSpellFromUnit(Constants.ABILITY_A0PY_SUMMON_RAGNAROS_ALL, ragnarosSummmoningPedestal));
       _ragnarosSummoningPedestal = ragnarosSummmoningPedestal.MakeCapturable();
@@ -36,7 +36,7 @@ namespace WarcraftLegacies.Source.Quests
     protected override void OnComplete(Faction completingFaction)
     {
       var ragnarosSummonPoint = new Point(12332, -10597);
-      LegendNeutral.Ragnaros.ForceCreate(Player(PLAYER_NEUTRAL_AGGRESSIVE), ragnarosSummonPoint, 110);
+      LegendNeutral.Ragnaros.ForceCreate(Player(PLAYER_NEUTRAL_AGGRESSIVE), ragnarosSummonPoint, 320);
       AddSpecialEffect(@"Abilities\Spells\Other\BreathOfFire\BreathOfFireMissile.mdl", ragnarosSummonPoint.X,
         ragnarosSummonPoint.Y)
         .SetScale(2)

@@ -1,6 +1,7 @@
 ﻿using MacroTools.Extensions;
 using MacroTools.QuestSystem;
 using WCSharp.Events;
+using WCSharp.Shared.Data;
 using static War3Api.Common;
 
 namespace MacroTools.ObjectiveSystem.Objectives
@@ -10,6 +11,8 @@ namespace MacroTools.ObjectiveSystem.Objectives
   /// </summary>
   public sealed class ObjectiveCastSpellFromUnit : Objective
   {
+    private readonly unit _caster;
+
     /// <summary>
     /// Initializes a new instance of the <see cref="ObjectiveCastSpellFromUnit"/> class.
     /// </summary>
@@ -23,6 +26,12 @@ namespace MacroTools.ObjectiveSystem.Objectives
           Progress = QuestProgress.Complete;
       }, caster);
       Description = $"Cast {GetObjectName(spellId)} from {caster.GetName()}";
+      TargetWidget = caster;
+      DisplaysPosition = true;
+      _caster = caster;
     }
+
+    /// <inheritdoc />
+    public override Point Position => _caster.GetPosition();
   }
 }
