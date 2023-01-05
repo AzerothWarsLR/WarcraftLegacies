@@ -41,8 +41,8 @@ namespace WarcraftLegacies.Source.Quests.Quelthalas
         -Faction.UNLIMITED);
       completingFaction.ModObjectLimit(Constants.UNIT_HVWD_RANGER_GENERAL_OF_SILVERMOON_QUEL_THALAS,
         -Faction.UNLIMITED);
-      completingFaction.ModObjectLimit(Constants.UNIT_N075_VEREESA_WINDRUNNER_QUEL_THALAS_DEMI,
-        -Faction.UNLIMITED);
+      //completingFaction.ModObjectLimit(Constants.UNIT_N075_VEREESA_WINDRUNNER_QUEL_THALAS_DEMI,
+      //  -Faction.UNLIMITED);
       completingFaction.ModObjectLimit(Constants.UNIT_N00A_FARSTRIDER_QUEL_THALAS_ELITE,
         -Faction.UNLIMITED);
       completingFaction.ModObjectLimit(Constants.UNIT_HHES_SWORDSMAN_QUEL_THALAS,

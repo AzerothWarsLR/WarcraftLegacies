@@ -24,11 +24,9 @@ namespace WarcraftLegacies.Source.Setup
     {
       TitanForgeArtifact.Setup();
       DeeprunTram.Setup(preplacedUnitSystem);
-      TierBattleTactics.Setup();
       TierCodeOfChivalry.Setup();
       TierElectricStrikeRitual.Setup();
       TierExpeditionSurvivors.Setup();
-      TierExploitWeakness.Setup();
       TierKnowledgeOfHonorHold.Setup(preplacedUnitSystem);
       TierMagesOfStromgarde.Setup(preplacedUnitSystem);
       TierReflectivePlating.Setup();
