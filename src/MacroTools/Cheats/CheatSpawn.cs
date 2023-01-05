@@ -1,3 +1,4 @@
+using System.Linq;
 using MacroTools.Extensions;
 using static War3Api.Common;
 
@@ -30,12 +31,10 @@ namespace MacroTools.Cheats
 
       if (FourCC(typeIdParameter) <= 0) 
         return;
-      
-      foreach (var unit in CreateGroup().EnumSelectedUnits(triggerPlayer).EmptyToList())
-      {
-        SpawnUnitsOrItems(unit, FourCC(typeIdParameter), S2I(countParameter));
-      }
 
+      var firstSelectedUnit = CreateGroup().EnumSelectedUnits(triggerPlayer).EmptyToList().First();
+      SpawnUnitsOrItems(firstSelectedUnit, FourCC(typeIdParameter), S2I(countParameter));
+      
       DisplayTextToPlayer(triggerPlayer, 0, 0,
         $"|cffD27575CHEAT:|r Attempted to spawn {countParameter} of object {GetObjectName(FourCC(typeIdParameter))}.");
     }
