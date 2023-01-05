@@ -14,6 +14,20 @@ namespace MacroTools.Extensions
     private const float HeroDropDist = 50; //The radius in which heroes spread out items when they drop them
 
     /// <summary>
+    /// Sets the unit's level to a particular value.
+    /// </summary>
+    public static unit SetLevel(this unit whichUnit, int newLevel, bool showEyeCandy = true)
+    {
+      var oldLevel = GetHeroLevel(whichUnit);
+      if (newLevel > oldLevel)
+        SetHeroLevel(whichUnit, newLevel, showEyeCandy);
+      else if (newLevel < oldLevel) 
+        UnitStripHeroLevel(whichUnit, oldLevel - newLevel);
+
+      return whichUnit;
+    }
+    
+    /// <summary>
     /// Determines whether or not the unit's attack can be seen in the UI window.
     /// </summary>
     public static unit ShowAttackUi(this unit whichUnit, bool show, int weaponSlot = 0)
