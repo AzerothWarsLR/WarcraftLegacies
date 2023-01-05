@@ -2173,10 +2173,9 @@ end
 function CreateAllItems()
 local itemID
 
-BlzCreateItemWithSkin(FourCC("I003"), -78.2, 10860.5, FourCC("I003"))
+BlzCreateItemWithSkin(FourCC("amrc"), 23213.4, -29635.3, FourCC("amrc"))
 BlzCreateItemWithSkin(FourCC("amrc"), 22927.7, -29573.2, FourCC("amrc"))
 BlzCreateItemWithSkin(FourCC("amrc"), 23470.4, -29993.9, FourCC("amrc"))
-BlzCreateItemWithSkin(FourCC("amrc"), 23213.4, -29635.3, FourCC("amrc"))
 BlzCreateItemWithSkin(FourCC("amrc"), 23022.2, -29419.5, FourCC("amrc"))
 BlzCreateItemWithSkin(FourCC("amrc"), 22736.6, -29412.1, FourCC("amrc"))
 BlzCreateItemWithSkin(FourCC("amrc"), 23261.7, -29884.0, FourCC("amrc"))
