@@ -25,12 +25,8 @@ namespace WarcraftLegacies.Source.Setup
       TitanForgeArtifact.Setup();
       DeeprunTram.Setup(preplacedUnitSystem);
       TierCodeOfChivalry.Setup();
-      TierElectricStrikeRitual.Setup();
       TierExpeditionSurvivors.Setup();
-      TierKnowledgeOfHonorHold.Setup(preplacedUnitSystem);
-      TierMagesOfStromgarde.Setup(preplacedUnitSystem);
       TierReflectivePlating.Setup();
-      TierSolarFlareRitual.Setup();
       TierVeteranGuard.Setup();
 
       ResearchManager.Register(new VeteranFootmen(Constants.UPGRADE_R00B_VETERAN_FOOTMEN_LORDAERON, 220, 120));
