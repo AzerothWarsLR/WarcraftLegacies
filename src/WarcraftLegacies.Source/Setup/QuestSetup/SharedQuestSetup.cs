@@ -34,6 +34,8 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
           }, Regions.Sargeras_Entrance, preplacedUnitSystem.GetUnit(Constants.UNIT_H00K_HORIZONTAL_WOODEN_GATE_CLOSED, Regions.Sargeras_Entrance.Center)
           ,preplacedUnitSystem.GetUnit(Constants.UNIT_O01U_GUL_DAN_S_REMAINS));
 
+      var ragnarosQuest = new QuestRagnaros(preplacedUnitSystem.GetUnit(Constants.UNIT_N02B_ALTAR_OF_FLAMES_PEDESTAL));
+
       foreach (var faction in FactionManager.GetAllFactions())
       {
         faction.AddQuest(tombOfSargerasQuest);
@@ -50,8 +52,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
         faction.AddQuest(new QuestSkullOfGuldan(
           preplacedUnitSystem.GetUnit(Constants.UNIT_N0DK_SKULL_OF_GUL_DAN_PEDESTAL),
           faction == LegionSetup.Legion || faction == IllidanSetup.Illidan, artifactSetup.SkullOfGuldan));
-        faction.AddQuest(new QuestRagnaros(
-          preplacedUnitSystem.GetUnit(Constants.UNIT_N02B_ALTAR_OF_FLAMES_PEDESTAL)));
+        faction.AddQuest(ragnarosQuest);
       }
     }
   }
