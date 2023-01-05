@@ -17,6 +17,7 @@ namespace MacroTools
   {
     private readonly Dictionary<int, List<unit>> _unitsByTypeId = new();
     private readonly Dictionary<int, List<destructable>> _destructablesByTypeId = new();
+    private const float MaximumDistanceToFind = 500;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="PreplacedUnitSystem"/> class.
@@ -128,7 +129,7 @@ namespace MacroTools
       EnumDestructablesInRect(Rectangle.WorldBounds.Rect, null, ReadDestructable);
     }
 
-    private destructable GetClosestDestructableToPoint(List<destructable> destructables, Point location)
+    private static destructable GetClosestDestructableToPoint(List<destructable> destructables, Point location)
     {
       var closestDistance = float.MaxValue;
       var closestDestructable = destructables.First();
@@ -146,7 +147,7 @@ namespace MacroTools
       return closestDestructable;
     }
 
-    private unit GetClosestUnitToPoint(List<unit> units, Point location)
+    private static unit GetClosestUnitToPoint(List<unit> units, Point location)
     {
       var closestDistance = float.MaxValue;
       var closestUnit = units.First();
@@ -159,6 +160,9 @@ namespace MacroTools
           closestUnit = unit;
         }
       }
+
+      if (closestDistance > MaximumDistanceToFind)
+        throw new Exception($"Could not find a {units.FirstOrDefault()?.GetName()} within {MaximumDistanceToFind} of Point {location.X}, {location.Y}.");
 
       return closestUnit;
     }
