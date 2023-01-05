@@ -37,7 +37,8 @@ namespace WarcraftLegacies.Source.Setup.Legends
         StartingArtifactItemTypeIds = new[]
         {
           Constants.ITEM_I00H_SULFURAS_HAND_OF_RAGNAROS
-        }
+        },
+        StartingXp = 15404
       };
       LegendaryHeroManager.Register(Ragnaros);
 
