@@ -34,7 +34,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
           }, Regions.Sargeras_Entrance, preplacedUnitSystem.GetUnit(Constants.UNIT_H00K_HORIZONTAL_WOODEN_GATE_CLOSED, Regions.Sargeras_Entrance.Center)
           ,preplacedUnitSystem.GetUnit(Constants.UNIT_O01U_GUL_DAN_S_REMAINS));
 
-      var ragnarosQuest = new QuestRagnaros(preplacedUnitSystem.GetUnit(Constants.UNIT_N02B_ALTAR_OF_FLAMES_PEDESTAL));
+      var ragnarosQuest = new QuestRagnaros(preplacedUnitSystem.GetUnit(Constants.UNIT_N02B_RAGNAROS_SUMMONING_PEDESTAL_PEDESTAL));
 
       foreach (var faction in FactionManager.GetAllFactions())
       {

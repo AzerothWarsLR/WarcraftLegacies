@@ -198,7 +198,7 @@ public static class Regions
 	public static Rectangle Undercity_Exterior_2 { get; set; } = new Rectangle(8576f, 7808f, 8928f, 8192f);
 	public static Rectangle Undercity_Escape { get; set; } = new Rectangle(6048f, 8288f, 6400f, 8672f);
 	public static Rectangle DarkshireUnlock { get; set; } = new Rectangle(11904f, -16320f, 13408f, -15072f);
-	public static Rectangle StormwindUnlock { get; set; } = new Rectangle(6816f, -12640f, 11712f, -8544f);
+	public static Rectangle StormwindUnlock { get; set; } = new Rectangle(6816f, -12640f, 11264f, -8576f);
 	public static Rectangle LakeshireUnlock { get; set; } = new Rectangle(13568f, -13696f, 15456f, -12864f);
 	public static Rectangle NethergardeUnlock { get; set; } = new Rectangle(17472f, -18400f, 18880f, -16960f);
 	public static Rectangle StratholmeUnlock { get; set; } = new Rectangle(13248f, 11168f, 16224f, 14144f);

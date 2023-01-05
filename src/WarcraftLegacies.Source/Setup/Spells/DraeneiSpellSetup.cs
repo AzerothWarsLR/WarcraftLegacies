@@ -26,7 +26,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
       });
 
       //Azuremyst
-      SpellSystem.Register(new SlipstreamSpellSpecificLocation(Constants.ABILITY_A0ZJ_PORTAL_TO_NAGRAND_ITEM)
+      SpellSystem.Register(new SlipstreamSpellSpecificLocation(Constants.ABILITY_A0P9_DIMENSIONAL_JUMP_TO_AZUREMYST_DRAENEI_AZUREMYST)
       {
         PortalUnitTypeId = Constants.UNIT_N0D9_SLIPSTREAM_PORTAL_STORMWIND_KHADGAR,
         OpeningDelay = 20,
@@ -36,7 +36,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
       });
 
       //Argus
-      SpellSystem.Register(new SlipstreamSpellSpecificLocation(Constants.ABILITY_A0ZJ_PORTAL_TO_NAGRAND_ITEM)
+      SpellSystem.Register(new SlipstreamSpellSpecificLocation(Constants.ABILITY_A0RB_DIMENSIONAL_JUMP_TO_ARGUS_DRAENEI_ARGUS)
       {
         PortalUnitTypeId = Constants.UNIT_N0D9_SLIPSTREAM_PORTAL_STORMWIND_KHADGAR,
         OpeningDelay = 20,
@@ -46,7 +46,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
       });
 
       //Outland
-      SpellSystem.Register(new SlipstreamSpellSpecificLocation(Constants.ABILITY_A0ZJ_PORTAL_TO_NAGRAND_ITEM)
+      SpellSystem.Register(new SlipstreamSpellSpecificLocation(Constants.ABILITY_A0SR_DIMENSIONAL_JUMP_TO_TEMPEST_KEEP_DRAENEI_TEMPEST_KEEP)
       {
         PortalUnitTypeId = Constants.UNIT_N0D9_SLIPSTREAM_PORTAL_STORMWIND_KHADGAR,
         OpeningDelay = 20,
