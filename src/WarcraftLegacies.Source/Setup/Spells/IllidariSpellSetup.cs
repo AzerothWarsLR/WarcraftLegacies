@@ -39,15 +39,14 @@ namespace WarcraftLegacies.Source.Setup.Spells
       {
         DamageMultiplier = 3
       });
-
-      //Outland
+      
       SpellSystem.Register(new SlipstreamSpellSpecificLocation(Constants.ABILITY_A07D_PORTAL_TO_BLACK_TEMPLE_ILLIDAN)
       {
         PortalUnitTypeId = Constants.UNIT_N0D9_SLIPSTREAM_PORTAL_STORMWIND_KHADGAR,
         OpeningDelay = 20,
         ClosingDelay = 10,
         TargetLocation = new Point(5030, -30000),
-        Color = new Color(55, 50, 250, 255)
+        Color = new Color(255, 255, 250, 255)
       });
     }
   }
