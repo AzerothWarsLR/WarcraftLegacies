@@ -79,6 +79,16 @@ namespace WarcraftLegacies.Source.Researches.Ironforge
       var stormwindLocation = new Point(11126, -9970);
       _tramToIronforge = preplacedUnitSystem.GetUnit(Constants.UNIT_N03B_DEEPRUN_TRAM, stormwindLocation);
       _tramToStormwind = preplacedUnitSystem.GetUnit(Constants.UNIT_N03B_DEEPRUN_TRAM, ironforgeLocation);
+
+      PlayerUnitEvents.Register(UnitEvent.Dies, () =>
+      {
+        _tramToStormwind.Kill();
+      }, _tramToIronforge);
+      
+      PlayerUnitEvents.Register(UnitEvent.Dies, () =>
+      {
+        _tramToIronforge.Kill();
+      }, _tramToStormwind);
     }
   }
 }
