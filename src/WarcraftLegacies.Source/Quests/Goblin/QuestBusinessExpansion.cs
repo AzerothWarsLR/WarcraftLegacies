@@ -33,7 +33,8 @@ namespace WarcraftLegacies.Source.Quests.Goblin
         ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N05U_FEATHERMOON_STRONGHOLD_20GOLD_MIN), 10));
       ResearchId = Constants.UPGRADE_R07G_QUEST_COMPLETED_BUSINESS_EXPANSION;
       Required = true;
-      _rescueUnits = Regions.KezanUnlock.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
+      _rescueUnits = Regions.KezanUnlock.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures,
+        filterUnit => filterUnit.GetTypeId() != FourCC("ngme"));
     }
 
     /// <inheritdoc />
