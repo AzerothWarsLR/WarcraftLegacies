@@ -21,12 +21,14 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
           StartingLumber = 500,
           CinematicMusic = "BloodElfTheme",
           ControlPointDefenderUnitTypeId = Constants.UNIT_N0BC_CONTROL_POINT_DEFENDER_QUELTHALAS,
-          IntroText = @"You are playing as the mystical |cff32e1e1Kingdom of Quel'thalas|r.
+          IntroText = @"You are playing as the proud |cff32e1e1Kingdom of Quel'thalas|r.
 
-The Trolls of Zul'Aman have cut you off from Silvermoon City, and are preparing attacks on your base,
-Train soldiers to repel the attack, then gather enough strength to besiege Zul'Aman and take the head of Zul'jin.
+You begin in Tranquilien, separated from Silvermoon.
+The Trolls of Zul'Aman have laid siege to the city, and are preparing attacks on your base.
 
-The Plague of Undeath is coming, and your allies to the South will need your help with the Undead soon, be ready to join them as once you have secured Silvermoon and dealt with the Troll threat."
+Train soldiers to repel the attacks, then gather enough strength to besiege Zul'Aman and take the head of Zul'jin.
+
+The Plague of Undeath is coming and Lordaeron will need your help with the Scourge soon. Be ready to join them as once you have secured Silvermoon and dealt with the Amani invasion."
         };
 
       //Structures

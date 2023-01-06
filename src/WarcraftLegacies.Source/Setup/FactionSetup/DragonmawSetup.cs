@@ -23,15 +23,15 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
       {
         StartingGold = 250,
         StartingLumber = 500,
-        IntroText = @"You are playing as the Fragmented |cffe4bc00Dragonmaw Clan.
+        IntroText = @"You are playing as the fragmented |cffe4bc00Dragonmaw Clan.
                     |r
-Your current situation is dire, the Dwarves of Ironforge will soon attack whatever is left of your clan.
+Your situation is dire, you have been pushed into the Twilight Highlands and the Dwarves will soon attack whatever is left of your clan.
 
-Your best chance of survival is escaping to Kalimdor, Warlord Zaela has heard of a new horde forming there. 
+Your best chance of survival is escaping to Kalimdor, where Warlord Zaela has heard of a New Horde forming. 
 
-The portal to Kalimdor will take 9 mins to summon and will only last for 60 seconds, be ready to escape when it is.
+The portal to Kalimdor will take 9 minutes to open and will only last for 60 seconds, be ready to escape the Highlands when it does.
 
-Until then, plunder as much as you can from the surrounding lands."
+Plunder as much as you can from the surrounding lands in preparation for your migration."
       };
 
       Dragonmaw.ModObjectLimit(FourCC("o063"), Faction.UNLIMITED); //Great Hall

@@ -19,13 +19,13 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
         StartingLumber = 500,
         CinematicMusic = "DarkAgents",
         ControlPointDefenderUnitTypeId = Constants.UNIT_N0D6_CONTROL_POINT_DEFENDER_WARSONG,
-        IntroText = @"You are playing as the proud |cffd45e19Warsong clan|r.
+        IntroText = @"You are playing as the brutal |cffd45e19Warsong clan|r.
 
-You start isolated in the woods of Ashenvale. The Warchief expects a large amount of lumber from you, begin harvesting with your Peons.
+You begin in the eaves of Ashenvale, isolated from your ally, the Frostwolf Clan in the South. 
 
-Travel South into the Barren to creep and colonise.
+The Warchief expects a large amount of lumber from you. Begin by harvesting with your Peons, and expanding into the Barrens and Durotar.
 
-The Night Elves are aware of your presence and are gathering against you. Unlock Orgrimmar as soon as possible to defend against the Night Elf attacks."
+The Night Elves are aware of your presence and are gathering a mighty host against you. Unlock Orgrimmar as soon as possible to defend against the Night Elf assault."
       };
 
       WarsongClan.ModObjectLimit(FourCC("o00C"), Faction.UNLIMITED); //Great Hall

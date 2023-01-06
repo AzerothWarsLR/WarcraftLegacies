@@ -20,14 +20,13 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
         UndefeatedResearch = FourCC("R05M"),
         CinematicMusic = "Comradeship",
         ControlPointDefenderUnitTypeId = Constants.UNIT_H03W_CONTROL_POINT_DEFENDER_LORDAERON,
-        IntroText = @"You are playing as the royal |cff4242ebKingdom of Lordaeron|r.
+        IntroText = @"You are playing as the great |cff4242ebKingdom of Lordaeron|r.
 
-You start the game with the largest territory, but the Plague of Undeath is coming.
+You begin in Andorhal, isolated from your forces in the rest of the Kingdom, and the Plague of Undeadh is coming.
 
-Secure your major cities by clearing out clusters of enemies and fortify your Kingdom as much as possible.
+Secure your major settlements by clearing out clusters of enemies and fortify your Kingdom as much as possible.
 
-Keep an eye out for the Cult of the Damned, they have several agents in your lands that will infect your buidings. 
-Burn these infected buildings to weaken the Cult's power."
+If you survive the Plague, sail to the frozen wasteland of Northrend and take the fight to the Lich King."
       };
 
       //Structures

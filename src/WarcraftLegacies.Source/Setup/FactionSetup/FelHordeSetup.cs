@@ -22,9 +22,9 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
         ControlPointDefenderUnitTypeId = Constants.UNIT_N0AA_CONTROL_POINT_DEFENDER_FEL_HORDE,
         IntroText = @"You are playing as the bloodthirsty Fel Horde.
 
-Hurry to creep Outland and assemble your armies. Make haste before the South Alliance has the time to prepare.
+You begin in Nagrand, cut off from your forces in Hellfire Citadel. You must raise an army and quickly conquer Outland.
 
-Once Outland is under your and your ally control, gather the hordes and prepare to invade Azeroth through the Dark Portal.
+Once Outland is under your control, gather your hordes and prepare to invade Azeroth through the Dark Portal.
 
 The Alliance is gathering outside the Dark Portal to stop you, so prepare to for a very hard breakout.",
         FoodMaximum = 250

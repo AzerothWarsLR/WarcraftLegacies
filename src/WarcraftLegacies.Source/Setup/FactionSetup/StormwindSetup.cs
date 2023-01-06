@@ -23,11 +23,11 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
         ControlPointDefenderUnitTypeId = Constants.UNIT_H05X_CONTROL_POINT_DEFENDER_STORMWIND, 
         IntroText = @"You are playing as the steadfast |cff005800Kingdom of Stormwind|r.
 
-You are the first line of defense against the onslaught of the forces of Outland. 
+You begin in Westfall, separated from the rest of the kingdom. Reunite your lands by liberating Darkshire, Lakeshire and finally Stormwind City. 
 
-Reunite your Kingdom, beginning with Darkshire, Lakeshire, and finally Stormwind City. Then race East to the Stronghold of Nethergarde near the Dark Portal and prepare for the invasion of the forces in Outland.
+Once you have unified Stormwind's forces, race East to the Nethergarde Stronghold and prepare for the invasion of the Fel Horde.
 
-Make sure to communicate with your Dwarven and Kul'tiran allies, as they will be the ones to help you defend against the evil coming from beyond the portal."
+Make sure to communicate with your Dwarven and Kul'tiran allies, as they will be key in helping you defeat the evil from beyond the Dark Portal."
       };
 
       //Structures

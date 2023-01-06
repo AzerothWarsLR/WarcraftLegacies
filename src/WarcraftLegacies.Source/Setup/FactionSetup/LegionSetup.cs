@@ -19,13 +19,13 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
         StartingLumber = 500,
         CinematicMusic = "DarkAgents",
         ControlPointDefenderUnitTypeId = Constants.UNIT_U01U_CONTROL_POINT_DEFENDER_LEGION,
-        IntroText = @"You are playing as the destructive |cffa2722dBurning Legion|r.
+        IntroText = @"You are playing as the mighty |cffa2722dBurning Legion|r.
 
-You begin isolated on Argus. Use Astral Walk and Diamonds of Summoning to move your units to Azeroth.
+You begin isolated on Argus. Use Astral Walk and Diamonds of Summoning plundered from the Draenei ruins to move your units to Azeroth.
 
-Help Scourge to destroy the North Alliance.
+On Azeroth, the Scourge will need your assistance to destroy the Kingdoms of Lordaeron, Dalaran and Quel'thalas.
 
-Your primary objective is to summon the Burning Legion. Invade the city of Dalaran, where the book of Medivh is kept, and use it to open a Demon-gate to Argus."
+Your primary objective is to summon the great host of the Burning Legion. Invade the city of Dalaran, where the book of Medivh is kept, and use it to open the Demon-gate to Argus."
       };
       
       //Structures

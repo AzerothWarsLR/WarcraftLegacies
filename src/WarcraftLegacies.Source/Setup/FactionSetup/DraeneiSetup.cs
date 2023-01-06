@@ -18,11 +18,11 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
         ControlPointDefenderUnitTypeId = Constants.UNIT_U008_CONTROL_POINT_DEFENDER_DRAENEI,
         IntroText = @"You are playing as the exiled |cff000080Draenei|r.
 
-You start on Azuremyst Island, recently crashed from escaping from the Legion.
+You begin on Azuremyst Island, amid the wreckage of your flight from the Burning Legion.
 
-Your Elves allies will need your help against the Horde, quickly rebuild your civilisation and access your crashed ship.
+Further inland your Night-elf allies will need your help against the Orcish Horde, quickly build your base and gain entry to the Exodar.
 
-Prepare to restore the Exodar to it's former glory, it will be a long process, but worth the effort"
+The Exodar is a mighty fortress-base with the ability to move around the map, but it will take a long time to repair."
       };
 
       Draenei.ModObjectLimit(FourCC("o02P"), Faction.UNLIMITED); //Crystal Hall

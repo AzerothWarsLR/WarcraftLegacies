@@ -22,9 +22,9 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
         ControlPointDefenderUnitTypeId = Constants.UNIT_N0B6_CONTROL_POINT_DEFENDER_FROSTWOLF,
         IntroText = @"You are playing as the honorable |cffff0000Frostwolf Clan|r.
 
-Following Medihvs call to sail west and find his destiny, Thrall and his forces were shipwrecked on the coast of Kalimdor. 
+You begin in the Salt Flats, separated from your ally, the Warsong Clan in the North.
 
-Establish a base and gather your troops - but make haste and move inland, for the lands are rugged and harsh and resources are scarce."
+Salvage the wrecked ships, establish a base and gather your troops to move inland and assist your ally against the Night Elf threat."
 
       };
 

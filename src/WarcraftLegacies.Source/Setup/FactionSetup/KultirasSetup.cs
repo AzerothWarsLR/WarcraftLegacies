@@ -20,13 +20,13 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
             StartingGold = 150,
             StartingLumber = 500,
             ControlPointDefenderUnitTypeId = Constants.UNIT_H09W_CONTROL_POINT_DEFENDER_KUL_TIRAS,
-            IntroText = @"You are playing as the maritime human kingdom |cff008000Kingdom of Kul'tiras|r.
+            IntroText = @"You are playing as the maritime |cff008000Kingdom of Kul'tiras|r.
 
-You start on Balor island, but you must move quickly. Viscious foes are threatening the islands.
+You begin on Balor island, separated from your main forces in Kul Tiras. Unite your forces by eliminating your enemies in Tiragarde, Drustvar and Stormsong Valley.
 
-Unite the Admiralty of Kul'Tiras by eliminating these foes and seizing control of your territory.
+Illidan's Naga have established a base in the Broken Isles, and are preparing to invade your islands from the North.
 
-Once you have established your kingdom, set sail to help your allies on the main land in the south."
+Stormwind is preparing for an invasion through the Dark Portal in the South. Muster the Admiralty and help them, or you may lose your strongest ally."
         };
 
       //Structures

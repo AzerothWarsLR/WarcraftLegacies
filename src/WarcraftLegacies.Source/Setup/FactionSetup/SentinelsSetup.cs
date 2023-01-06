@@ -19,13 +19,13 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
         StartingLumber = 500,
         CinematicMusic = "Comradeship",
         ControlPointDefenderUnitTypeId = Constants.UNIT_H03F_CONTROL_POINT_DEFENDER_SENTINELS,
-        IntroText = @"You are playing as the vigilant Sentinel Army.
+        IntroText = @"You are playing as the ever-watchful Sentinels.
 
-The Druids are slowly waking from their slumber, it falls to you, the Sentinels, to drive back the invaders from Kalimdor until then.
+The Druids are slowly waking from their slumber, and it falls to you to drive back the Orcish invaders from Kalimdor until then.
 
-Your first mission is to race down the coast all the way to Feathermoon Stronghold, an extremely robust fortress on the southern part of the continent. 
+Your first mission is to race down the coast to Feathermoon Stronghold, a powerful Sentinel stronghold on the southern half of the continent. 
 
-Once you have secured your holdings, gather your army and destroy the orc invaders. Be careful, they will outnumber you if you give them time to rally their allies."
+Once you have secured your holdings, gather your army and destroy the Orcish Horde. Be careful, they will outnumber you if given time to unite the clans."
       };
 
       Sentinels.ModObjectLimit(FourCC("e00V"), Faction.UNLIMITED); //Temple of Elune

@@ -18,11 +18,11 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
         ControlPointDefenderUnitTypeId = Constants.UNIT_O01C_CONTROL_POINT_DEFENDER_GOBLIN,
         IntroText = @"You are playing as the industrious |cff808080Bilgewater Cartel|r.
 
-You start in Tanaris with a very small business venture. Expand onto Kalimdor to grow your trade empire.
+You begin in Tanaris with a very small business venture. Expand onto Kalimdor to grow your trade empire.
 
-Your more advanced units require Oil to function, use oil ships to find oil deposits and build platforms on them.
+Your advanced units require Oil to function. Use oil ships to find oil deposits in the Great Sea and build platforms on them.
 
-The Trading Center in Kezan will unlock the ability to train Traders, as soon as you unlock it, defend it and norture a trading dominion!"
+The Trading Center in Kezan will unlock the ability to train Traders. Be sure to protect the Trading Center once you unlock it, as it will form the backbone of your Goblin Empire."
       };
 
       Goblin.ModObjectLimit(FourCC("o03L"), Faction.UNLIMITED); //Great Hall
