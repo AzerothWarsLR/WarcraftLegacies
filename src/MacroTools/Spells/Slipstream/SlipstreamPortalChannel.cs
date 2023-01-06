@@ -35,6 +35,11 @@ namespace MacroTools.Spells.Slipstream
     /// The color of the created portals.
     /// </summary>
     public Color Color { get; init; } = new(255, 255, 255, 255);
+
+    /// <summary>
+    /// How far away from the caster the portal should be placed.
+    /// </summary>
+    public int PortalOffset { get; init; } = 200;
     
     private unit? _portalOrigin;
     private unit? _portalDestination;
@@ -55,7 +60,7 @@ namespace MacroTools.Spells.Slipstream
     /// <inheritdoc />
     public override void OnCreate()
     {
-      var casterPosition = WCSharp.Shared.Util.PositionWithPolarOffset(GetUnitX(Caster), GetUnitY(Caster), 200, Caster.GetFacing());
+      var casterPosition = WCSharp.Shared.Util.PositionWithPolarOffset(GetUnitX(Caster), GetUnitY(Caster), PortalOffset, Caster.GetFacing());
       _portalOrigin = CreateUnit(Caster.OwningPlayer(), PortalUnitTypeId, casterPosition.x, casterPosition.y, Caster.GetFacing() - 180)
         .SetWaygateDestination(_target)
         .SetColor(Color.Red, Color.Green, Color.Blue, Color.Alpha);
