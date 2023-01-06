@@ -505,6 +505,12 @@ namespace MacroTools.FactionSystem
     /// </summary>
     public QuestData GetQuestByTitle(string parameter) => _questsByName[parameter];
 
+    /// <summary>
+    /// Returns all <see cref="QuestData"/>s the <see cref="Faction"/> can complete.
+    /// </summary>
+    /// <returns></returns>
+    public List<QuestData> GetAllQuests() => _questsByName.Values.ToList();
+    
     private void ApplyPowers()
     {
       if (Player == null) return;

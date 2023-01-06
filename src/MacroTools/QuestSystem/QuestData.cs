@@ -86,7 +86,7 @@ namespace MacroTools.QuestSystem
     /// <summary>
     ///   The research given to the faction when it completes its quest.
     /// </summary>
-    protected int ResearchId { get; init; }
+    public int ResearchId { get; protected init; }
 
     private quest Quest { get; }
 
