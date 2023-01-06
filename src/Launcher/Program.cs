@@ -203,6 +203,7 @@ namespace Launcher
         unit.StatsRace = UnitRace.Creeps;
         unit.StatsCanBeBuiltOn = false;
         unit.PathingPathingMap = @"PathTextures\4x4SimpleSolid.tga";
+        unit.StatsHitPointsRegenerationRate = 0;
       }
       map.UnitObjectData = objectDatabase.GetAllData().UnitData;
     }
