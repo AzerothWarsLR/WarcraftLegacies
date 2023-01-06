@@ -22,7 +22,7 @@ namespace WarcraftLegacies.Source.Setup
       NagaQuestSetup.Setup(preplacedUnitSystem, artifactSetup);
       GilneasQuestSetup.Setup(artifactSetup);
       KultirasQuestSetup.Setup(preplacedUnitSystem);
-      ScarletQuestSetup.Setup(preplacedUnitSystem);
+      ScarletQuestSetup.Setup();
       TrollQuestSetup.Setup(artifactSetup);
       ForsakenQuestSetup.Setup();
       GoblinQuestSetup.Setup();
