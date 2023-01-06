@@ -509,7 +509,7 @@ namespace MacroTools.FactionSystem
     /// Returns all <see cref="QuestData"/>s the <see cref="Faction"/> can complete.
     /// </summary>
     /// <returns></returns>
-    public List<QuestData> GetAllQuests() => _questsByName.Values.ToList();
+    //public List<QuestData> GetAllQuests() => _questsByName.Values.ToList();
     
     private void ApplyPowers()
     {

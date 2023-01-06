@@ -23615,6 +23615,12 @@ STRING 3936
 Thunder Fists - [|cffffcc00Level 3|r]
 }
 
+STRING 3937
+// Upgrades: Rorb (Reinforced Defenses), Hotkey (Hotkey)
+{
+F
+}
+
 STRING 3938
 // Buffs/Effects: B060 (Dragon's Fury), EditorSuffix (Editor Suffix)
 {
@@ -88196,7 +88202,7 @@ rarm
 }
 
 STRING 14697
-// Abilities: A07D (Portal to Black Temple), Hotkey (Hotkey - Normal)
+// Upgrades: Rhfl (Flare), Hotkey (Hotkey)
 {
 D
 }
@@ -88298,7 +88304,7 @@ rarm
 }
 
 STRING 14714
-// Upgrades: Rhfl (Flare), Hotkey (Hotkey)
+// Upgrades: Rehs (Hardened Skin), Hotkey (Hotkey)
 {
 D
 }
@@ -88899,7 +88905,7 @@ Barbaric boulder tossing siege weaponry.|n|n|cff99b4d1Can only build 6. |r|n|cff
 }
 
 STRING 14814
-// Upgrades: Rehs (Hardened Skin), Hotkey (Hotkey)
+// Upgrades: Rusl (Skeletal Longevity), Hotkey (Hotkey)
 {
 D
 }
@@ -89391,7 +89397,7 @@ Research Improved Self-Bloodlust
 }
 
 STRING 14896
-// Upgrades: Rusl (Skeletal Longevity), Hotkey (Hotkey)
+// Upgrades: R02A (Animal War Training), Hotkey (Hotkey)
 {
 D
 }
@@ -91020,7 +91026,7 @@ X
 }
 
 STRING 15176
-// Upgrades: R02A (Animal War Training), Hotkey (Hotkey)
+// Upgrades: R026 (Animal War Training), Hotkey (Hotkey)
 {
 D
 }
@@ -95638,7 +95644,7 @@ C
 }
 
 STRING 15945
-// Abilities: A07D (Portal to Black Temple), EditorSuffix (Editor Suffix)
+// Units: e01T (Coral of War), EditorSuffix (Name - Editor Suffix)
 {
 (Illidan)
 }
@@ -96528,7 +96534,7 @@ Specialized medium ship.|n|cfff5962dAbilities:|R Boarding|n|r|n|cffffcc00Attacks
 }
 
 STRING 16093
-// Abilities: A07D (Portal to Black Temple), Researchtip (Tooltip - Learn)
+// Abilities: A0SR (Dimensional Jump to Tempest Keep), Researchtip (Tooltip - Learn)
 {
 Learn Slipstream - [|cffffcc00Level %d|r]
 }
@@ -96798,7 +96804,7 @@ Build Juggernaut
 }
 
 STRING 16138
-// Abilities: A07D (Portal to Black Temple), Researchubertip (Tooltip - Learn - Extended)
+// Abilities: A0SR (Dimensional Jump to Tempest Keep), Researchubertip (Tooltip - Learn - Extended)
 {
 Opens a two-way portal to the target location. The portal becomes useable after 5 seconds, and closes 10 seconds after the caster stops channeling.|n|n|cffffcc00Level 1|r - <A00D,Rng1> range. |n|cffffcc00Level 2|r - <A00D,Rng2> range. |n|cffffcc00Level 3|r - <A00D,Rng3> range.
 }
@@ -96966,7 +96972,7 @@ Golden Vessel
 }
 
 STRING 16166
-// Abilities: A07D (Portal to Black Temple), Tip (Tooltip - Normal)
+// Abilities: A0SR (Dimensional Jump to Tempest Keep), Tip (Tooltip - Normal)
 {
 Slipstream - [|cffffcc00Level 2|r]
 }
@@ -97030,7 +97036,7 @@ Legion
 }
 
 STRING 16177
-// Abilities: A07D (Portal to Black Temple), Tip (Tooltip - Normal)
+// Abilities: A0SR (Dimensional Jump to Tempest Keep), Tip (Tooltip - Normal)
 {
 Slipstream - [|cffffcc00Level 3|r]
 }
@@ -97060,7 +97066,7 @@ Opens a two-way portal to the target location within a range of <A00D,Rng3>. The
 }
 
 STRING 16182
-// Upgrades: R00N (Storm Hammers), Hotkey (Hotkey)
+// Abilities: A0TR (Soul Voodoo), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -97072,7 +97078,7 @@ Scarlet Crusader Lord
 }
 
 STRING 16184
-// Upgrades: R065 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R026 (Animal War Training), Hotkey (Hotkey)
 {
 D
 }
@@ -97258,13 +97264,13 @@ Revives slain Heroes and demi-heroes.
 }
 
 STRING 16220
-// Upgrades: R026 (Animal War Training), Hotkey (Hotkey)
+// Upgrades: R023 (Animal War Training), Hotkey (Hotkey)
 {
 D
 }
 
 STRING 16221
-// Upgrades: R026 (Animal War Training), Hotkey (Hotkey)
+// Upgrades: R023 (Animal War Training), Hotkey (Hotkey)
 {
 D
 }
@@ -99658,7 +99664,7 @@ Warrior Hero, excels at augmenting nearby friendly troops.|n|cfff5962dCan learn:
 }
 
 STRING 16643
-// Abilities: A0TR (Soul Voodoo), Researchhotkey (Hotkey - Learn)
+// Abilities: A02K (Multi Shot), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -102934,7 +102940,7 @@ A
 }
 
 STRING 17221
-// Upgrades: R023 (Animal War Training), Hotkey (Hotkey)
+// Upgrades: R01H (Animal War Training), Hotkey (Hotkey)
 {
 D
 }
@@ -102964,7 +102970,7 @@ Q
 }
 
 STRING 17226
-// Units: e01T (Coral of War), EditorSuffix (Name - Editor Suffix)
+// Units: e01U (Coral of Lore), EditorSuffix (Name - Editor Suffix)
 {
 (Illidan)
 }
@@ -104296,7 +104302,7 @@ STRING 17477
 }
 
 STRING 17478
-// Upgrades: R023 (Animal War Training), Hotkey (Hotkey)
+// Upgrades: R01H (Animal War Training), Hotkey (Hotkey)
 {
 D
 }
@@ -105227,7 +105233,7 @@ Crimson Cathedral
 }
 
 STRING 17641
-// Abilities: A02K (Multi Shot), Researchhotkey (Hotkey - Learn)
+// Abilities: A0V0 (Snipe), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -106105,7 +106111,7 @@ Upgrade to Improved Crystal Protector
 }
 
 STRING 17831
-// Abilities: A0V0 (Snipe), Researchhotkey (Hotkey - Learn)
+// Abilities: A0VC (Viral Plague), Hotkey (Hotkey - Normal)
 {
 R
 }
@@ -106945,7 +106951,7 @@ Returns carried lumber.
 }
 
 STRING 17986
-// Upgrades: Rorb (Reinforced Defenses), Hotkey (Hotkey)
+// Abilities: A07D (Portal to Black Temple), Hotkey (Hotkey - Normal)
 {
 F
 }
@@ -107005,7 +107011,7 @@ V
 }
 
 STRING 18001
-// Abilities: A0VC (Viral Plague), Hotkey (Hotkey - Normal)
+// Abilities: A0VC (Viral Plague), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -107083,7 +107089,7 @@ Q
 }
 
 STRING 18014
-// Abilities: A0VC (Viral Plague), Researchhotkey (Hotkey - Learn)
+// Abilities: A0WF (Herald of Destruction), Hotkey (Hotkey - Normal)
 {
 R
 }
@@ -107491,7 +107497,7 @@ Gives the War Station the ability to fire multiple arrows at its enemies.
 }
 
 STRING 18099
-// Abilities: A0WF (Herald of Destruction), Hotkey (Hotkey - Normal)
+// Abilities: A0WF (Herald of Destruction), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -108151,7 +108157,7 @@ Q
 }
 
 STRING 18222
-// Abilities: A0WF (Herald of Destruction), Researchhotkey (Hotkey - Learn)
+// Abilities: A0WQ (Locust Swarm), Hotkey (Hotkey - Normal)
 {
 R
 }
@@ -108512,7 +108518,7 @@ Q
 }
 
 STRING 18284
-// Upgrades: R01H (Animal War Training), Hotkey (Hotkey)
+// Upgrades: R00Q (Magic Sentry), Hotkey (Hotkey)
 {
 D
 }
@@ -109136,25 +109142,25 @@ Viral Plague
 }
 
 STRING 18402
-// Abilities: A0WQ (Locust Swarm), Hotkey (Hotkey - Normal)
-{
-R
-}
-
-STRING 18403
 // Abilities: A0WQ (Locust Swarm), Researchhotkey (Hotkey - Learn)
 {
 R
 }
 
-STRING 18404
+STRING 18403
 // Abilities: A0WS (Aegis of Ragaros), Hotkey (Hotkey - Normal)
 {
 R
 }
 
-STRING 18405
+STRING 18404
 // Abilities: A0WS (Aegis of Ragaros), Researchhotkey (Hotkey - Learn)
+{
+R
+}
+
+STRING 18405
+// Abilities: A0WW (Summon Zelemar), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -109484,7 +109490,7 @@ E
 }
 
 STRING 18469
-// Upgrades: R01H (Animal War Training), Hotkey (Hotkey)
+// Upgrades: R00K (Animal War Training), Hotkey (Hotkey)
 {
 D
 }
@@ -109982,7 +109988,7 @@ Revive Ragnaros
 }
 
 STRING 18575
-// Abilities: A0WW (Summon Zelemar), Researchhotkey (Hotkey - Learn)
+// Abilities: A0WW (Summon Zelemar), Hotkey (Hotkey - Normal)
 {
 R
 }
@@ -110403,7 +110409,7 @@ Elemental Fire
 }
 
 STRING 18660
-// Abilities: A0WW (Summon Zelemar), Hotkey (Hotkey - Normal)
+// Abilities: A00D (Slipstream), Hotkey (Hotkey - Normal)
 {
 R
 }
@@ -110415,7 +110421,7 @@ Q
 }
 
 STRING 18664
-// Abilities: A00D (Slipstream), Hotkey (Hotkey - Normal)
+// Abilities: A00D (Slipstream), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -110691,7 +110697,7 @@ Curse of Executus
 }
 
 STRING 18712
-// Abilities: A00D (Slipstream), Researchhotkey (Hotkey - Learn)
+// Abilities: A0XB (Decapitate), Hotkey (Hotkey - Normal)
 {
 R
 }
@@ -110703,7 +110709,7 @@ W
 }
 
 STRING 18716
-// Abilities: A0XB (Decapitate), Hotkey (Hotkey - Normal)
+// Abilities: A0XB (Decapitate), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -110937,13 +110943,13 @@ This unit was hit by a Serrated Bite; its armor is temporarily reduced.
 }
 
 STRING 18756
-// Abilities: A0XB (Decapitate), Researchhotkey (Hotkey - Learn)
+// Abilities: A0ZA (Dragonmaw Battle Standard), Hotkey (Hotkey - Normal)
 {
 R
 }
 
 STRING 18757
-// Abilities: A0ZA (Dragonmaw Battle Standard), Hotkey (Hotkey - Normal)
+// Abilities: A0ZA (Dragonmaw Battle Standard), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -111009,13 +111015,13 @@ Curse of Flame (|cffffcc00Q|r)
 }
 
 STRING 18769
-// Abilities: A0ZA (Dragonmaw Battle Standard), Researchhotkey (Hotkey - Learn)
+// Abilities: A0ZJ (Portal to Nagrand), Researchhotkey (Hotkey - Learn)
 {
 R
 }
 
 STRING 18770
-// Upgrades: R00Q (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: R00K (Animal War Training), Hotkey (Hotkey)
 {
 D
 }
@@ -111183,7 +111189,7 @@ STRING 18800
 }
 
 STRING 18803
-// Abilities: A0ZJ (Portal to Nagrand), Researchhotkey (Hotkey - Learn)
+// Abilities: A0ZY (Multi Shot), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -112347,7 +112353,7 @@ An impenetrable shield surrounds this unit, protecting it from all damage and sp
 }
 
 STRING 19042
-// Abilities: A0ZY (Multi Shot), Researchhotkey (Hotkey - Learn)
+// Abilities: A0KT (Arcane Recall), Hotkey (Hotkey - Normal)
 {
 R
 }
@@ -112677,7 +112683,7 @@ Farahlon (10gold/min)
 }
 
 STRING 19103
-// Abilities: A0KT (Arcane Recall), Hotkey (Hotkey - Normal)
+// Abilities: A0P9 (Dimensional Jump to Azuremyst), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -113235,7 +113241,7 @@ Increases a friendly unit's attack rate by 30% and movement speed by 30%. |nLast
 }
 
 STRING 19222
-// Upgrades: R00K (Animal War Training), Hotkey (Hotkey)
+// Upgrades: R034 (Improved Bows), Hotkey (Hotkey)
 {
 D
 }
@@ -113253,7 +113259,7 @@ Build Shipyard
 }
 
 STRING 19225
-// Upgrades: R00K (Animal War Training), Hotkey (Hotkey)
+// Upgrades: R065 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 D
 }
@@ -113271,7 +113277,7 @@ STRING 19227
 }
 
 STRING 19230
-// Abilities: A0P9 (Dimensional Jump to Azuremyst), Researchhotkey (Hotkey - Learn)
+// Abilities: A0RB (Dimensional Jump to Argus), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -113734,7 +113740,7 @@ The hero unleashes a mortal axe strike, dealing 750 damage after a short delay.
 }
 
 STRING 19316
-// Abilities: A0RB (Dimensional Jump to Argus), Researchhotkey (Hotkey - Learn)
+// Abilities: A0SR (Dimensional Jump to Tempest Keep), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -113746,7 +113752,7 @@ The hero unleashes a mortal axe strike, dealing 1250 damage after a short delay.
 }
 
 STRING 19318
-// Abilities: A0SR (Dimensional Jump to Tempest Keep), Researchhotkey (Hotkey - Learn)
+// Abilities: A07D (Portal to Black Temple), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -113836,7 +113842,7 @@ Build Oil Rig
 }
 
 STRING 19333
-// Abilities: A07D (Portal to Black Temple), Researchhotkey (Hotkey - Learn)
+// Upgrades: Rosp (Spiked Barricades,Improved Spiked Barricades,Advanced Spiked Barricades), Hotkey (Hotkey)
 {
 R
 }
@@ -114046,7 +114052,7 @@ Coral of War
 }
 
 STRING 19372
-// Units: e01U (Coral of Lore), EditorSuffix (Name - Editor Suffix)
+// Units: e01V (Coral of Wind), EditorSuffix (Name - Editor Suffix)
 {
 (Illidan)
 }
@@ -114070,7 +114076,7 @@ Coral of Lore
 }
 
 STRING 19376
-// Units: e01V (Coral of Wind), EditorSuffix (Name - Editor Suffix)
+// Units: n0CU (Deep Sea Vault), EditorSuffix (Name - Editor Suffix)
 {
 (Illidan)
 }
@@ -114100,13 +114106,13 @@ A store for purchasing items
 }
 
 STRING 19381
-// Units: n0CU (Deep Sea Vault), EditorSuffix (Name - Editor Suffix)
+// Units: n0D4 (Improved Tidal Guardian), EditorSuffix (Name - Editor Suffix)
 {
 (Illidan)
 }
 
 STRING 19384
-// Units: n0D4 (Improved Tidal Guardian), EditorSuffix (Name - Editor Suffix)
+// Abilities: AHds (Demonic Shield), EditorSuffix (Editor Suffix)
 {
 (Illidan)
 }
@@ -114142,31 +114148,31 @@ Build Sun Tower
 }
 
 STRING 19390
-// Abilities: AHds (Demonic Shield), EditorSuffix (Editor Suffix)
-{
-(Illidan)
-}
-
-STRING 19391
 // Abilities: A10I (Demon Rage), EditorSuffix (Editor Suffix)
 {
 (Illidan)
 }
 
-STRING 19393
+STRING 19391
 // Abilities: A0M9 (Void Exile), EditorSuffix (Editor Suffix)
 {
 (Illidan)
 }
 
-STRING 19394
+STRING 19393
 // Abilities: A07K (Reincarnation), EditorSuffix (Editor Suffix)
 {
 (Illidan)
 }
 
+STRING 19394
+// Abilities: A07D (Portal to Black Temple), EditorSuffix (Editor Suffix)
+{
+(Illidan)
+}
+
 STRING 19395
-// Upgrades: Rosp (Spiked Barricades,Improved Spiked Barricades,Advanced Spiked Barricades), Hotkey (Hotkey)
+// Upgrades: Ropg (Pillage), Hotkey (Hotkey)
 {
 R
 }
@@ -114175,12 +114181,6 @@ STRING 19396
 // Abilities: A0ZA (Dragonmaw Battle Standard), Name (Name)
 {
 Dragonmaw Battle Standard
-}
-
-STRING 19397
-// Upgrades: R034 (Improved Bows), Hotkey (Hotkey)
-{
-D
 }
 
 STRING 19398
@@ -114358,13 +114358,13 @@ Vitality Aura
 }
 
 STRING 19427
-// Upgrades: Ropg (Pillage), Hotkey (Hotkey)
+// Upgrades: Rews (Well Spring), Hotkey (Hotkey)
 {
 R
 }
 
 STRING 19428
-// Upgrades: Rews (Well Spring), Hotkey (Hotkey)
+// Upgrades: R00N (Storm Hammers), Hotkey (Hotkey)
 {
 R
 }
@@ -114580,13 +114580,13 @@ Portal to Nagrand
 }
 
 STRING 19477
-// Abilities: A0SR (Dimensional Jump to Tempest Keep), Researchtip (Tooltip - Learn)
+// Abilities: A07D (Portal to Black Temple), Researchtip (Tooltip - Learn)
 {
 Learn Slipstream - [|cffffcc00Level %d|r]
 }
 
 STRING 19478
-// Abilities: A0SR (Dimensional Jump to Tempest Keep), Researchubertip (Tooltip - Learn - Extended)
+// Abilities: A07D (Portal to Black Temple), Researchubertip (Tooltip - Learn - Extended)
 {
 Opens a two-way portal to the target location. The portal becomes useable after 5 seconds, and closes 10 seconds after the caster stops channeling.|n|n|cffffcc00Level 1|r - <A00D,Rng1> range. |n|cffffcc00Level 2|r - <A00D,Rng2> range. |n|cffffcc00Level 3|r - <A00D,Rng3> range.
 }
@@ -114598,13 +114598,13 @@ Portal to Nagrand
 }
 
 STRING 19480
-// Abilities: A0SR (Dimensional Jump to Tempest Keep), Tip (Tooltip - Normal)
+// Abilities: A07D (Portal to Black Temple), Tip (Tooltip - Normal)
 {
 Slipstream - [|cffffcc00Level 2|r]
 }
 
 STRING 19481
-// Abilities: A0SR (Dimensional Jump to Tempest Keep), Tip (Tooltip - Normal)
+// Abilities: A07D (Portal to Black Temple), Tip (Tooltip - Normal)
 {
 Slipstream - [|cffffcc00Level 3|r]
 }
