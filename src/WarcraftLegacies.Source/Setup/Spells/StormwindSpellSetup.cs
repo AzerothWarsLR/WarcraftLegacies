@@ -19,7 +19,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
         PortalUnitTypeId = Constants.UNIT_N0D9_SLIPSTREAM_PORTAL_STORMWIND_KHADGAR,
         OpeningDelay = 5,
         ClosingDelay = 10,
-        Color = new Color(40, 255, 40, 255)
+        Color = new Color(40, 40, 255, 255)
       });
     }
   }
