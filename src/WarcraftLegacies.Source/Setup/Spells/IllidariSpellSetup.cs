@@ -1,6 +1,9 @@
-﻿using MacroTools.PassiveAbilities;
+﻿using MacroTools;
+using MacroTools.PassiveAbilities;
 using MacroTools.PassiveAbilitySystem;
+using MacroTools.Spells.Slipstream;
 using MacroTools.SpellSystem;
+using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Setup.Spells
 {
@@ -35,6 +38,16 @@ namespace WarcraftLegacies.Source.Setup.Spells
       }, Constants.ABILITY_A01G_AMPHIBIAN_NAGA_ABILITY)
       {
         DamageMultiplier = 3
+      });
+
+      //Outland
+      SpellSystem.Register(new SlipstreamSpellSpecificLocation(Constants.ABILITY_A07D_PORTAL_TO_BLACK_TEMPLE_ILLIDAN)
+      {
+        PortalUnitTypeId = Constants.UNIT_N0D9_SLIPSTREAM_PORTAL_STORMWIND_KHADGAR,
+        OpeningDelay = 20,
+        ClosingDelay = 10,
+        TargetLocation = new Point(5030, -30000),
+        Color = new Color(55, 50, 250, 255)
       });
     }
   }

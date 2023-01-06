@@ -10,29 +10,25 @@ using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Naga
 {
-  /// <summary>
-  /// Kill some Murlocs to take control of Southshore.
-  /// </summary>
-  public sealed class QuestSuramar : QuestData
+  public sealed class QuestBlackTemple : QuestData
   {
     private readonly List<unit> _rescueUnits;
 
-    public QuestSuramar(Rectangle rescueRect) : base("The Ruins of Suramar",
+    public QuestBlackTemple(Rectangle rescueRect) : base("Seat of Power",
       "A small remnant of Illidan's Naga have held on in the Broken Isles, we need to make contact with them",
-      "ReplaceableTextures\\CommandButtons\\BTNMurloc.blp")
+      "ReplaceableTextures\\CommandButtons\\BTNWarpPortal.blp")
     {
-      AddObjective(new ObjectiveControlCapital(LegendNeutral.Oshugun, false));
-      AddObjective(new ObjectiveExpire(635));
+      AddObjective(new ObjectiveLegendInRect(LegendNaga.LegendIllidan, Regions.IllidanBlackTempleUnlock, "Black Temple"));
       AddObjective(new ObjectiveSelfExists());
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
       Required = true;
     }
 
     /// <inheritdoc />
-    protected override string CompletionPopup => "Using the powerful magic inside Oshugunm, the remaining Naga in the Broken Isles have joined us again!";
+    protected override string CompletionPopup => "The Black Temple is waiting for it's rightfull owner.";
 
     /// <inheritdoc />
-    protected override string RewardDescription => "Control of all units in Suramar";
+    protected override string RewardDescription => "Control of all buildings in Black Temple";
 
     /// <inheritdoc />
     protected override void OnFail(Faction completingFaction) => 

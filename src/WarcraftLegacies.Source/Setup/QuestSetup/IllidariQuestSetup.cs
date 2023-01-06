@@ -11,9 +11,9 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
     {
       var illidari = IllidariSetup.Illidari;
       illidari.StartingQuest = illidari.AddQuest(new QuestLostOnes(Regions.AkamaUnlock));
-      illidari.AddQuest(new QuestSuramar(Regions.SuramarUnlock));
+      illidari.AddQuest(new QuestBlackTemple(Regions.IllidanBlackTempleUnlock));
       illidari.AddQuest(new QuestEyeofSargeras(artifactSetup.EyeOfSargeras));
-      illidari.AddQuest(new QuestMurmur(preplacedUnitSystem));
+      illidari.AddQuest(new QuestNajentus());
       illidari.AddQuest(new QuestRegroupCastaway());
       illidari.AddQuest(new QuestBlackrookHold());
     }

@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
@@ -27,9 +27,9 @@ namespace WarcraftLegacies.Source.Quests.Legion
       _rescueUnits.Add(LegendLegion.LegionNexusNorthrend.Unit);
     }
 
-    protected override string RewardDescription => "Enable to research Astral Walk and build a shop";
+    protected override string RewardDescription => "With Argus finally under the Legion's control, the invasion of Azeroth can begin!";
     
-    protected override string CompletionPopup => "Enable to research Astral Walk and build a shop";
+    protected override string CompletionPopup => "Enable to research Astral Walk from the Burning Citadel and build the Unholy Reliquary";
 
     protected override void OnComplete(Faction completingFaction)
     {

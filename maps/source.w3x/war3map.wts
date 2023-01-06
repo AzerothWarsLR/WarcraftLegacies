@@ -23615,12 +23615,6 @@ STRING 3936
 Thunder Fists - [|cffffcc00Level 3|r]
 }
 
-STRING 3937
-// Upgrades: R08W (Chaos), Name (Name)
-{
-Quest Completed: The Shadow Labyrinth
-}
-
 STRING 3938
 // Buffs/Effects: B060 (Dragon's Fury), EditorSuffix (Editor Suffix)
 {
@@ -88202,7 +88196,7 @@ rarm
 }
 
 STRING 14697
-// Upgrades: Rhfl (Flare), Hotkey (Hotkey)
+// Abilities: A07D (Portal to Black Temple), Hotkey (Hotkey - Normal)
 {
 D
 }
@@ -88304,7 +88298,7 @@ rarm
 }
 
 STRING 14714
-// Upgrades: Rehs (Hardened Skin), Hotkey (Hotkey)
+// Upgrades: Rhfl (Flare), Hotkey (Hotkey)
 {
 D
 }
@@ -88905,7 +88899,7 @@ Barbaric boulder tossing siege weaponry.|n|n|cff99b4d1Can only build 6. |r|n|cff
 }
 
 STRING 14814
-// Upgrades: Rusl (Skeletal Longevity), Hotkey (Hotkey)
+// Upgrades: Rehs (Hardened Skin), Hotkey (Hotkey)
 {
 D
 }
@@ -89397,7 +89391,7 @@ Research Improved Self-Bloodlust
 }
 
 STRING 14896
-// Upgrades: R02A (Animal War Training), Hotkey (Hotkey)
+// Upgrades: Rusl (Skeletal Longevity), Hotkey (Hotkey)
 {
 D
 }
@@ -91026,7 +91020,7 @@ X
 }
 
 STRING 15176
-// Upgrades: R026 (Animal War Training), Hotkey (Hotkey)
+// Upgrades: R02A (Animal War Training), Hotkey (Hotkey)
 {
 D
 }
@@ -94287,12 +94281,6 @@ STRING 15717
 Yak
 }
 
-STRING 15718
-// Units: h02Q (Pegasus Knight), Ubertip (Tooltip - Extended)
-{
-Swift flying unit. |n|cfff5962dAbilities:|R Cloud, Shackles|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks air units.|r
-}
-
 STRING 15719
 // Units: n06M (Residence), Ubertip (Tooltip - Extended)
 {
@@ -94995,6 +94983,12 @@ STRING 15835
 (Ironforge Other)
 }
 
+STRING 15836
+// Units: h02Q (Pegasus Knight), Ubertip (Tooltip - Extended)
+{
+Swift flying unit. |n|cfff5962dAbilities:|R Cloud, Shackles|n|cfff5962dCan Learn:|R Animal War Training|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land and air units.|r
+}
+
 STRING 15837
 // Units: h042 (Pinnacle), Ubertip (Tooltip - Extended)
 {
@@ -95643,6 +95637,12 @@ STRING 15944
 C
 }
 
+STRING 15945
+// Abilities: A07D (Portal to Black Temple), EditorSuffix (Editor Suffix)
+{
+(Illidan)
+}
+
 STRING 15946
 // Upgrades: R04P (Priest Adept Training,Priest Master Training), effect4 (Effect 4)
 {
@@ -95851,6 +95851,12 @@ STRING 15980
 // Units: n0C1 (Coral Bed), Ubertip (Tooltip - Extended)
 {
 Provides 10 food, which increases the maximum number of units that can be trained.
+}
+
+STRING 15981
+// Abilities: A07D (Portal to Black Temple), Name (Name)
+{
+Portal to Black Temple
 }
 
 STRING 15982
@@ -96521,6 +96527,12 @@ STRING 16092
 Specialized medium ship.|n|cfff5962dAbilities:|R Boarding|n|r|n|cffffcc00Attacks land units.|r|nStrong versus heavy ships, Weak to Scout Ships.
 }
 
+STRING 16093
+// Abilities: A07D (Portal to Black Temple), Researchtip (Tooltip - Learn)
+{
+Learn Slipstream - [|cffffcc00Level %d|r]
+}
+
 STRING 16094
 // Units: h0B7 (Bombard), Name (Name)
 {
@@ -96785,6 +96797,12 @@ STRING 16137
 Build Juggernaut
 }
 
+STRING 16138
+// Abilities: A07D (Portal to Black Temple), Researchubertip (Tooltip - Learn - Extended)
+{
+Opens a two-way portal to the target location. The portal becomes useable after 5 seconds, and closes 10 seconds after the caster stops channeling.|n|n|cffffcc00Level 1|r - <A00D,Rng1> range. |n|cffffcc00Level 2|r - <A00D,Rng2> range. |n|cffffcc00Level 3|r - <A00D,Rng3> range.
+}
+
 STRING 16139
 // Units: h0BB (Juggernaut), Ubertip (Tooltip - Extended)
 {
@@ -96801,6 +96819,12 @@ STRING 16141
 // Units: h0BC (Juggernaut), EditorSuffix (Name - Editor Suffix)
 {
 (Horde)
+}
+
+STRING 16142
+// Abilities: A07D (Portal to Black Temple), Tip (Tooltip - Normal)
+{
+Portal to Black Temple
 }
 
 STRING 16143
@@ -96941,6 +96965,12 @@ STRING 16165
 Golden Vessel
 }
 
+STRING 16166
+// Abilities: A07D (Portal to Black Temple), Tip (Tooltip - Normal)
+{
+Slipstream - [|cffffcc00Level 2|r]
+}
+
 STRING 16167
 // Abilities: A0QK (Mass Enrage), Hotkey (Hotkey - Normal)
 {
@@ -96999,10 +97029,40 @@ STRING 16176
 Legion
 }
 
+STRING 16177
+// Abilities: A07D (Portal to Black Temple), Tip (Tooltip - Normal)
+{
+Slipstream - [|cffffcc00Level 3|r]
+}
+
 STRING 16178
 // Abilities: A0IA (Blood Fury), Tip (Tooltip - Normal)
 {
 Blood Fury - [|cffffcc00Level 1|r]
+}
+
+STRING 16179
+// Abilities: A07D (Portal to Black Temple), Ubertip (Tooltip - Normal - Extended)
+{
+Opens a two-way portal to Black Temple at the target location within a range of <A00D,Rng1>. The portal becomes useable after 5 seconds, and closes 10 seconds after the caster stops channeling.
+}
+
+STRING 16180
+// Abilities: A07D (Portal to Black Temple), Ubertip (Tooltip - Normal - Extended)
+{
+Opens a two-way portal to the target location within a range of <A00D,Rng2>. The portal becomes useable after 5 seconds, and closes 20 seconds after the caster stops channeling.
+}
+
+STRING 16181
+// Abilities: A07D (Portal to Black Temple), Ubertip (Tooltip - Normal - Extended)
+{
+Opens a two-way portal to the target location within a range of <A00D,Rng3>. The portal becomes useable after 5 seconds, and closes 30 seconds after the caster stops channeling.
+}
+
+STRING 16182
+// Upgrades: R00N (Storm Hammers), Hotkey (Hotkey)
+{
+R
 }
 
 STRING 16183
@@ -97011,10 +97071,22 @@ STRING 16183
 Scarlet Crusader Lord
 }
 
+STRING 16184
+// Upgrades: R065 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+{
+D
+}
+
 STRING 16185
 // Units: H08G (Scarlet Crusader Lord), Propernames (Proper Names)
 {
 Saiden Dathrohan
+}
+
+STRING 16186
+// Upgrades: R08W (Chaos), Name (Name)
+{
+Quest Completed: Lord of the Depths
 }
 
 STRING 16188
@@ -97192,7 +97264,7 @@ D
 }
 
 STRING 16221
-// Upgrades: R023 (Animal War Training), Hotkey (Hotkey)
+// Upgrades: R026 (Animal War Training), Hotkey (Hotkey)
 {
 D
 }
@@ -104224,7 +104296,7 @@ STRING 17477
 }
 
 STRING 17478
-// Upgrades: R01H (Animal War Training), Hotkey (Hotkey)
+// Upgrades: R023 (Animal War Training), Hotkey (Hotkey)
 {
 D
 }
@@ -109412,7 +109484,7 @@ E
 }
 
 STRING 18469
-// Upgrades: R00Q (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: R01H (Animal War Training), Hotkey (Hotkey)
 {
 D
 }
@@ -110943,7 +111015,7 @@ R
 }
 
 STRING 18770
-// Upgrades: R00K (Animal War Training), Hotkey (Hotkey)
+// Upgrades: R00Q (Magic Sentry), Hotkey (Hotkey)
 {
 D
 }
@@ -113181,7 +113253,7 @@ Build Shipyard
 }
 
 STRING 19225
-// Upgrades: R034 (Improved Bows), Hotkey (Hotkey)
+// Upgrades: R00K (Animal War Training), Hotkey (Hotkey)
 {
 D
 }
@@ -113764,7 +113836,7 @@ Build Oil Rig
 }
 
 STRING 19333
-// Upgrades: Rosp (Spiked Barricades,Improved Spiked Barricades,Advanced Spiked Barricades), Hotkey (Hotkey)
+// Abilities: A07D (Portal to Black Temple), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -114094,7 +114166,7 @@ STRING 19394
 }
 
 STRING 19395
-// Upgrades: Ropg (Pillage), Hotkey (Hotkey)
+// Upgrades: Rosp (Spiked Barricades,Improved Spiked Barricades,Advanced Spiked Barricades), Hotkey (Hotkey)
 {
 R
 }
@@ -114106,7 +114178,7 @@ Dragonmaw Battle Standard
 }
 
 STRING 19397
-// Upgrades: R065 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R034 (Improved Bows), Hotkey (Hotkey)
 {
 D
 }
@@ -114286,13 +114358,13 @@ Vitality Aura
 }
 
 STRING 19427
-// Upgrades: Rews (Well Spring), Hotkey (Hotkey)
+// Upgrades: Ropg (Pillage), Hotkey (Hotkey)
 {
 R
 }
 
 STRING 19428
-// Upgrades: R00N (Storm Hammers), Hotkey (Hotkey)
+// Upgrades: Rews (Well Spring), Hotkey (Hotkey)
 {
 R
 }

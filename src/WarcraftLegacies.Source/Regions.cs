@@ -6,7 +6,7 @@ using WCSharp.Shared.Data;
 public static class Regions
 {
 	public static Rectangle Solliden_Farmstead { get; set; } = new Rectangle(6400f, 8992f, 7808f, 10592f);
-	public static Rectangle Arathi_Ships { get; set; } = new Rectangle(16256f, 768f, 17024f, 1632f);
+	public static Rectangle Arathi_Ships { get; set; } = new Rectangle(17888f, 544f, 18656f, 1408f);
 	public static Rectangle Auberdine_Ships { get; set; } = new Rectangle(-18272f, 2848f, -15936f, 5312f);
 	public static Rectangle Auberdine_Ships_2 { get; set; } = new Rectangle(-16640f, 7424f, -9504f, 11072f);
 	public static Rectangle Borean_Tundra { get; set; } = new Rectangle(-9152f, 13664f, -4768f, 19008f);
@@ -45,7 +45,7 @@ public static class Regions
 	public static Rectangle IcecrownShipyard { get; set; } = new Rectangle(-6976f, 22304f, -1248f, 24992f);
 	public static Rectangle Ironforge { get; set; } = new Rectangle(9792f, -5728f, 10016f, -5536f);
 	public static Rectangle Kali_Ships { get; set; } = new Rectangle(-17600f, -15296f, -10816f, 5600f);
-	public static Rectangle Kultiras { get; set; } = new Rectangle(704f, -10304f, 5856f, -5120f);
+	public static Rectangle Kultiras { get; set; } = new Rectangle(704f, -10304f, 5856f, -4672f);
 	public static Rectangle LichKing { get; set; } = new Rectangle(-3520f, 20224f, -3136f, 20704f);
 	public static Rectangle Loch_Modan_Ships { get; set; } = new Rectangle(14432f, -7552f, 17952f, -1536f);
 	public static Rectangle Lordaeron_East { get; set; } = new Rectangle(12896f, 7456f, 18240f, 14112f);
@@ -60,7 +60,7 @@ public static class Regions
 	public static Rectangle Plague_5 { get; set; } = new Rectangle(7136f, 10272f, 9280f, 11840f);
 	public static Rectangle Plague_6 { get; set; } = new Rectangle(6560f, 3104f, 7232f, 5728f);
 	public static Rectangle Plague_7 { get; set; } = new Rectangle(9216f, 2048f, 12736f, 3424f);
-	public static Rectangle Quel_Ships_1 { get; set; } = new Rectangle(16384f, 16608f, 20096f, 17568f);
+	public static Rectangle Quel_Ships_1 { get; set; } = new Rectangle(16384f, 16288f, 20096f, 17568f);
 	public static Rectangle Quel_Ships_2 { get; set; } = new Rectangle(17216f, 13984f, 20512f, 17568f);
 	public static Rectangle Quel_Ships_3 { get; set; } = new Rectangle(16288f, 11744f, 21920f, 15584f);
 	public static Rectangle Quelthalas { get; set; } = new Rectangle(15136f, 13536f, 21408f, 23168f);
@@ -70,7 +70,7 @@ public static class Regions
 	public static Rectangle Storm_Peaks { get; set; } = new Rectangle(-1088f, 21088f, 4640f, 25088f);
 	public static Rectangle Stormwind { get; set; } = new Rectangle(10880f, -10176f, 11040f, -10016f);
 	public static Rectangle StratholmeShipyard { get; set; } = new Rectangle(13696f, 7232f, 20128f, 11712f);
-	public static Rectangle Stromgarde { get; set; } = new Rectangle(12896f, 448f, 15264f, 2048f);
+	public static Rectangle Stromgarde { get; set; } = new Rectangle(12896f, 32f, 15264f, 1632f);
 	public static Rectangle Stromwind_antiship { get; set; } = new Rectangle(7968f, -12768f, 11520f, -9344f);
 	public static Rectangle STV_Ships { get; set; } = new Rectangle(10112f, -20032f, 14048f, -17600f);
 	public static Rectangle Terenas { get; set; } = new Rectangle(8096f, 7648f, 10048f, 9536f);
@@ -151,7 +151,7 @@ public static class Regions
 	public static Rectangle ScholomanceAmbient1 { get; set; } = new Rectangle(13728f, 7072f, 16096f, 8416f);
 	public static Rectangle SouthshoreAmbient2 { get; set; } = new Rectangle(10336f, 3936f, 13568f, 4608f);
 	public static Rectangle SouthshoreAmbient3 { get; set; } = new Rectangle(12128f, 4608f, 13600f, 5472f);
-	public static Rectangle SouthshoreAmbient4 { get; set; } = new Rectangle(13504f, 1920f, 18336f, 2976f);
+	public static Rectangle SouthshoreAmbient4 { get; set; } = new Rectangle(13504f, 1632f, 18336f, 2976f);
 	public static Rectangle SouthshoreAmbient5 { get; set; } = new Rectangle(15296f, 736f, 17856f, 1920f);
 	public static Rectangle BridgeAmbient { get; set; } = new Rectangle(15232f, -288f, 17504f, 736f);
 	public static Rectangle ScholomanceAmbient3 { get; set; } = new Rectangle(11200f, 7072f, 13728f, 7840f);
@@ -298,7 +298,7 @@ public static class Regions
 	public static Rectangle TempestKeepHide2 { get; set; } = new Rectangle(1216f, -19552f, 3040f, -18368f);
 	public static Rectangle InstanceOutland { get; set; } = new Rectangle(-7104f, -32256f, 6016f, -18208f);
 	public static Rectangle Outland_Ships { get; set; } = new Rectangle(-7104f, -32256f, 6016f, -18208f);
-	public static Rectangle IllidanStartingPosition { get; set; } = new Rectangle(4032f, -31712f, 6592f, -29152f);
+	public static Rectangle IllidanStartingPosition { get; set; } = new Rectangle(-640f, 5152f, 1536f, 6720f);
 	public static Rectangle ArtifactDummyInstance { get; set; } = new Rectangle(19584f, 23232f, 22688f, 24800f);
 	public static Rectangle Shadowforge_City { get; set; } = new Rectangle(11680f, -9728f, 13248f, -8544f);
 	public static Rectangle BlackrockUnlock { get; set; } = new Rectangle(11840f, -12224f, 13632f, -10208f);
@@ -321,9 +321,10 @@ public static class Regions
 	public static Rectangle BookRetrieval { get; set; } = new Rectangle(9728f, 5248f, 10016f, 5472f);
 	public static Rectangle SkullRetrieval { get; set; } = new Rectangle(8576f, 4672f, 8832f, 4928f);
 	public static Rectangle KezanUnlock { get; set; } = new Rectangle(-2400f, -8000f, 608f, -5184f);
-	public static Rectangle SuramarUnlock { get; set; } = new Rectangle(-416f, 5184f, 1632f, 6688f);
 	public static Rectangle HighbankUnlock_UNUSED { get; set; } = new Rectangle(21664f, -8128f, 23200f, -6848f);
 	public static Rectangle NaxxramasInstance { get; set; } = new Rectangle(-14944f, 21536f, -12352f, 24256f);
 	public static Rectangle RagnarosSummon { get; set; } = new Rectangle(12192f, -10784f, 12512f, -10464f);
+	public static Rectangle IllidanBlackTempleUnlock { get; set; } = new Rectangle(3744f, -31680f, 6720f, -29152f);
+	public static Rectangle BlackTempleBase { get; set; } = new Rectangle(2112f, -31584f, 6496f, -28288f);
 
 }
