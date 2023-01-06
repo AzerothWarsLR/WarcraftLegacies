@@ -23616,7 +23616,7 @@ Thunder Fists - [|cffffcc00Level 3|r]
 }
 
 STRING 3937
-// Upgrades: Rorb (Reinforced Defenses), Hotkey (Hotkey)
+// Units: h094 (Siege Workshop), Hotkey (Hotkey)
 {
 F
 }
@@ -24408,7 +24408,7 @@ Restores 125 hit points and 50 mana of friendly non-mechanical units in an area 
 }
 
 STRING 4069
-// Units: h094 (Siege Workshop), Hotkey (Hotkey)
+// Units: o04X (Loa Shrine), Hotkey (Hotkey)
 {
 F
 }
@@ -24480,7 +24480,7 @@ This powerful Orc artifact channels Shamanic powers through its user, allowing t
 }
 
 STRING 4081
-// Units: o04X (Loa Shrine), Hotkey (Hotkey)
+// Units: h011 (Intercontinental Artillery), Hotkey (Hotkey)
 {
 F
 }
@@ -24546,7 +24546,7 @@ STRING 4091
 }
 
 STRING 4092
-// Units: h011 (Intercontinental Artillery), Hotkey (Hotkey)
+// Units: o05G (Siege Workshop), Hotkey (Hotkey)
 {
 F
 }
@@ -24618,7 +24618,7 @@ Fires a huge shard of stone at every enemy unit in the target area, dealing dama
 }
 
 STRING 4104
-// Units: o05G (Siege Workshop), Hotkey (Hotkey)
+// Items: sreg (Scroll of Regeneration), Hotkey (Hotkey)
 {
 F
 }
@@ -25608,7 +25608,7 @@ W
 }
 
 STRING 4269
-// Items: sreg (Scroll of Regeneration), Hotkey (Hotkey)
+// Items: rnec (Rod of Necromancy), Hotkey (Hotkey)
 {
 F
 }
@@ -28609,7 +28609,7 @@ STRING 4768
 }
 
 STRING 4769
-// Items: rnec (Rod of Necromancy), Hotkey (Hotkey)
+// Items: pomn (Potion of Omniscience), Hotkey (Hotkey)
 {
 F
 }
@@ -30217,13 +30217,13 @@ STRING 5036
 }
 
 STRING 5037
-// Items: pomn (Potion of Omniscience), Hotkey (Hotkey)
+// Abilities: Awha (Gather), Hotkey (Hotkey - Normal)
 {
 F
 }
 
 STRING 5038
-// Abilities: Awha (Gather), Hotkey (Hotkey - Normal)
+// Abilities: Ahrl (Harvest), Hotkey (Hotkey - Normal)
 {
 F
 }
@@ -30235,13 +30235,13 @@ STRING 5039
 }
 
 STRING 5040
-// Abilities: Ahrl (Harvest), Hotkey (Hotkey - Normal)
+// Abilities: Ahrl (Harvest), Unhotkey (Hotkey - Turn Off)
 {
 F
 }
 
 STRING 5041
-// Abilities: Ahrl (Harvest), Unhotkey (Hotkey - Turn Off)
+// Abilities: Ahr3 (Harvest), Hotkey (Hotkey - Normal)
 {
 F
 }
@@ -30319,13 +30319,13 @@ STRING 5053
 }
 
 STRING 5054
-// Abilities: Ahr3 (Harvest), Hotkey (Hotkey - Normal)
+// Abilities: Ahr3 (Harvest), Unhotkey (Hotkey - Turn Off)
 {
 F
 }
 
 STRING 5055
-// Abilities: Ahr3 (Harvest), Unhotkey (Hotkey - Turn Off)
+// Abilities: Ahar (Harvest), Hotkey (Hotkey - Normal)
 {
 F
 }
@@ -31537,7 +31537,7 @@ STRING 5256
 }
 
 STRING 5257
-// Abilities: Ahar (Harvest), Hotkey (Hotkey - Normal)
+// Abilities: Ahar (Harvest), Unhotkey (Hotkey - Turn Off)
 {
 F
 }
@@ -34453,13 +34453,13 @@ STRING 5742
 }
 
 STRING 5743
-// Abilities: Ahar (Harvest), Unhotkey (Hotkey - Turn Off)
+// Abilities: Aamk (Attribute Bonus), Researchhotkey (Hotkey - Learn)
 {
 F
 }
 
 STRING 5744
-// Abilities: Aamk (Attribute Bonus), Researchhotkey (Hotkey - Learn)
+// Abilities: ANha (Harvest), Hotkey (Hotkey - Normal)
 {
 F
 }
@@ -37741,7 +37741,7 @@ STRING 6290
 }
 
 STRING 6291
-// Abilities: ANha (Harvest), Hotkey (Hotkey - Normal)
+// Abilities: ANha (Harvest), Unhotkey (Hotkey - Turn Off)
 {
 F
 }
@@ -41630,7 +41630,7 @@ STRING 6938
 
 STRING 6939
 {
-Warcraft Legacies 2.00
+Warcraft Legacies 2.00Beta5
 }
 
 STRING 6940
@@ -42308,7 +42308,7 @@ Quest Completed: The Lost Ones
 }
 
 STRING 7049
-// Abilities: ANha (Harvest), Unhotkey (Hotkey - Turn Off)
+// Abilities: ACsa (Searing Arrows), Hotkey (Hotkey - Normal)
 {
 F
 }
@@ -43400,7 +43400,7 @@ Q
 }
 
 STRING 7231
-// Abilities: ACsa (Searing Arrows), Hotkey (Hotkey - Normal)
+// Abilities: ACsa (Searing Arrows), Unhotkey (Hotkey - Turn Off)
 {
 F
 }
@@ -49862,7 +49862,7 @@ Incredibly powerful melee unit. Has the Submerge ability, which allows this unit
 }
 
 STRING 8308
-// Abilities: ACsa (Searing Arrows), Unhotkey (Hotkey - Turn Off)
+// Abilities: A0RK (Stand Down), Hotkey (Hotkey - Normal)
 {
 F
 }
@@ -50450,7 +50450,7 @@ Animates 200 nearby corpses to fight for the Lich King. Lasts 60 seconds. Got 12
 }
 
 STRING 8406
-// Abilities: A0RK (Stand Down), Hotkey (Hotkey - Normal)
+// Abilities: A0O4 (Harvest), Hotkey (Hotkey - Normal)
 {
 F
 }
@@ -50480,7 +50480,7 @@ STRING 8410
 }
 
 STRING 8411
-// Abilities: A0O4 (Harvest), Hotkey (Hotkey - Normal)
+// Abilities: A0O4 (Harvest), Unhotkey (Hotkey - Turn Off)
 {
 F
 }
@@ -51110,7 +51110,7 @@ A Close
 }
 
 STRING 8516
-// Abilities: A0O4 (Harvest), Unhotkey (Hotkey - Turn Off)
+// Abilities: A03A (Harvest), Hotkey (Hotkey - Normal)
 {
 F
 }
@@ -51248,7 +51248,7 @@ Q
 }
 
 STRING 8539
-// Abilities: A03A (Harvest), Hotkey (Hotkey - Normal)
+// Abilities: A03A (Harvest), Unhotkey (Hotkey - Turn Off)
 {
 F
 }
@@ -92403,7 +92403,7 @@ Further increases the armor of all Naval Units.
 
 STRING 15405
 {
-Warcraft Legacies 2.00
+Warcraft Legacies 2.00Beta5
 }
 
 STRING 15406
@@ -92680,7 +92680,7 @@ STRING 15449
 }
 
 STRING 15450
-// Abilities: A03A (Harvest), Unhotkey (Hotkey - Turn Off)
+// Abilities: A0TN (Harvest), Hotkey (Hotkey - Normal)
 {
 F
 }
@@ -96094,7 +96094,7 @@ C
 }
 
 STRING 16020
-// Abilities: A0TN (Harvest), Hotkey (Hotkey - Normal)
+// Abilities: A0TN (Harvest), Unhotkey (Hotkey - Turn Off)
 {
 F
 }
@@ -97876,7 +97876,7 @@ STRING 16329
 }
 
 STRING 16330
-// Abilities: A0TN (Harvest), Unhotkey (Hotkey - Turn Off)
+// Abilities: A0UM (Fishing Net), Hotkey (Hotkey - Normal)
 {
 F
 }
@@ -97984,7 +97984,7 @@ Build Loa Shrine
 }
 
 STRING 16348
-// Abilities: A0UM (Fishing Net), Hotkey (Hotkey - Normal)
+// Abilities: A0WV (Attribute Bonus), Researchhotkey (Hotkey - Learn)
 {
 F
 }
@@ -98818,7 +98818,7 @@ Returns carried Gold
 }
 
 STRING 16494
-// Abilities: A0WV (Attribute Bonus), Researchhotkey (Hotkey - Learn)
+// Abilities: A0SR (Dimensional Jump to Tempest Keep), Hotkey (Hotkey - Normal)
 {
 F
 }
@@ -106885,7 +106885,7 @@ STRING 17974
 }
 
 STRING 17975
-// Abilities: A0SR (Dimensional Jump to Tempest Keep), Hotkey (Hotkey - Normal)
+// Abilities: A07D (Portal to Black Temple), Hotkey (Hotkey - Normal)
 {
 F
 }
@@ -106951,7 +106951,7 @@ Returns carried lumber.
 }
 
 STRING 17986
-// Abilities: A07D (Portal to Black Temple), Hotkey (Hotkey - Normal)
+// Upgrades: Rorb (Reinforced Defenses), Hotkey (Hotkey)
 {
 F
 }
