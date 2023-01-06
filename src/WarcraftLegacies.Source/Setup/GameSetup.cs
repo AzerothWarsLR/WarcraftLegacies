@@ -132,6 +132,7 @@ namespace WarcraftLegacies.Source.Setup
       SacrificeAcolyte.Setup();
       IntegrityChecker.Setup();
       PeonsStartHarvestingShips.Setup(preplacedUnitSystem);
+      DarkPortalControlNexusSetup.Setup(preplacedUnitSystem);
     }
   }
 }
