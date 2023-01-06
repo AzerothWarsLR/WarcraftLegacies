@@ -148,7 +148,8 @@ namespace MacroTools.Powers
       {
         randomPoint = Rectangle.WorldBounds.GetRandomPoint();
       } while (IsTerrainPathable(randomPoint.X, randomPoint.Y, PATHING_TYPE_FLOATABILITY) ||
-               !IsTerrainPathable(randomPoint.X, randomPoint.Y, PATHING_TYPE_WALKABILITY));
+               !IsTerrainPathable(randomPoint.X, randomPoint.Y, PATHING_TYPE_WALKABILITY) || 
+               GetTerrainType(randomPoint.X, randomPoint.Y) != FourCC("Gsqd"));
 
       return randomPoint;
     }
