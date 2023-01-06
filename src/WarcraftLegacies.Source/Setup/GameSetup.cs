@@ -35,10 +35,10 @@ namespace WarcraftLegacies.Source.Setup
         ControlLevelSettings = new ControlLevelSettings
         {
           DefaultDefenderUnitTypeId = Constants.UNIT_H03W_CONTROL_POINT_DEFENDER_LORDAERON,
-          DamageBase = 8,
-          DamagePerControlLevel = 2,
+          DamageBase = 12,
+          DamagePerControlLevel = 1,
           ArmorPerControlLevel = 1,
-          HitPointsPerControlLevel = 100,
+          HitPointsPerControlLevel = 80,
           ControlLevelMaximum = 20
         }
       };
