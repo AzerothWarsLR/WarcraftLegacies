@@ -40,7 +40,7 @@ namespace MacroTools.Spells.Slipstream
     /// <summary>
     /// How far away the caster the portal should be placed.
     /// </summary>
-    public float PortalOffset { get; init; }
+    public int PortalOffset { get; init; }
     
     /// <summary>
     /// Initializes a new instance of the <see cref="SlipstreamSpell"/> class.
@@ -60,7 +60,7 @@ namespace MacroTools.Spells.Slipstream
         OpeningDelay = OpeningDelay,
         ClosingDelay = ClosingDelay,
         Color = Color,
-        PortalOffset = 200
+        PortalOffset = PortalOffset
       });
     }
 
