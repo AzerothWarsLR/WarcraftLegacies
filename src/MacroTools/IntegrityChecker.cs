@@ -12,8 +12,10 @@ namespace MacroTools
     /// <summary>
     /// Runs the <see cref="IntegrityChecker"/>.
     /// </summary>
-    public static void Setup()
+    public static void Setup(bool isReleaseVersion)
     {
+      if (isReleaseVersion)
+        return;
       NoNeutralPassiveVulnerableControlPoints();
       CheckUndefeatedResearchNames();
       CheckQuestResearchNames();

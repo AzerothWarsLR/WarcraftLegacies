@@ -130,7 +130,7 @@ namespace WarcraftLegacies.Source.Setup
       GilneasGateTowers.Setup(preplacedUnitSystem);
       EyeOfSargerasPickup.Setup();
       SacrificeAcolyte.Setup();
-      IntegrityChecker.Setup();
+      IntegrityChecker.Setup(true);
       PeonsStartHarvestingShips.Setup(preplacedUnitSystem);
       DarkPortalControlNexusSetup.Setup(preplacedUnitSystem);
     }
