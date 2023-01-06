@@ -57,10 +57,10 @@ namespace WarcraftLegacies.Source.Quests.Draenei
 
     /// <inheritdoc/>
     protected override string CompletionPopup =>
-      "With the acquisition of a replacement power source, the Exodar's gemcrafters set to work reigniting the ship's dimensional engines. The Exodar can now travel the planes once more.";
+      "With the acquisition of a replacement power source, the Exodar's gemcrafters set to work reigniting the ship's planar engines. The Dimensional Generator can now now be used to travel the planes once more.";
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
-      "The Exodar gains the ability to move, but the power source used is locked within the Dimensional Generator";
+      "The Exodar gains the ability to move and the Dimensional Generator gains the ability to channel portals to Argus, Azuremyst, and Outland, but the power source used is locked within the Dimensional Generator";
   }
 }
