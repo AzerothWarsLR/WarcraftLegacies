@@ -655,10 +655,15 @@ namespace MacroTools.FactionSystem
     /// </summary>
     private void Leave()
     {
-      if (Player?.GetTeam()?.Size > 1 && GameTime.GetGameTime() > 60)
+      var eligiblePlayers = Player?
+        .GetTeam()?
+        .GetAllFactions()
+        .Where(x => x.ScoreStatus == ScoreStatus.Undefeated && x.Player != Player && Player != null)
+        .Select(x => x.Player)
+        .ToList();
+      
+      if (eligiblePlayers != null && eligiblePlayers.Count > 1 && GameTime.GetGameTime() > 60)
       {
-        var eligiblePlayers = Player.GetTeam()?.GetAllPlayers();
-        eligiblePlayers?.Remove(Player);
         DistributeUnits(eligiblePlayers);
         DistributeResources(eligiblePlayers);
         DistributeExperience(eligiblePlayers);
