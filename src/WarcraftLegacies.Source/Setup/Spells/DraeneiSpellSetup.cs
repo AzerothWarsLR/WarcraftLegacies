@@ -32,8 +32,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
         OpeningDelay = 20,
         ClosingDelay = 10,
         TargetLocation = new Point(-20940, 10412),
-        Color = new Color(155, 250, 50, 255),
-        PortalOffset = 500
+        Color = new Color(155, 250, 50, 255)
       });
 
       //Argus
@@ -43,8 +42,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
         OpeningDelay = 20,
         ClosingDelay = 10,
         TargetLocation = new Point(22573, -26856),
-        Color = new Color(255, 50, 50, 255),
-        PortalOffset = 500
+        Color = new Color(255, 50, 50, 255)
       });
 
       //Outland
@@ -54,8 +52,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
         OpeningDelay = 20,
         ClosingDelay = 10,
         TargetLocation = new Point(2649, -22845),
-        Color = new Color(55, 50, 250, 255),
-        PortalOffset = 500
+        Color = new Color(55, 50, 250, 255)
       });
     }
   }

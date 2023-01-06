@@ -31,6 +31,11 @@ namespace MacroTools.Spells.Slipstream
     /// The color of the created portals.
     /// </summary>
     public Color Color { get; init; } = new(255, 255, 255, 255);
+
+    /// <summary>
+    /// How far away the caster the portal should be placed.
+    /// </summary>
+    public int PortalOffset { get; init; } = 200;
     
     /// <summary>
     /// Initializes a new instance of the <see cref="SlipstreamSpell"/> class.
@@ -43,7 +48,8 @@ namespace MacroTools.Spells.Slipstream
     /// <inheritdoc/>
     public override void OnCast(unit caster, unit target, Point targetPoint)
     {
-      ChannelManager.Add(new SlipstreamPortalChannel(caster, Id, targetPoint)
+      var portalOrigin = WCSharp.Shared.Util.PositionWithPolarOffset(GetUnitX(caster), GetUnitY(caster), PortalOffset, caster.GetFacing());
+      ChannelManager.Add(new SlipstreamPortalChannel(caster, Id, new Point(portalOrigin.x, portalOrigin.y), targetPoint)
       {
         Active = true,
         PortalUnitTypeId = PortalUnitTypeId,

@@ -36,12 +36,7 @@ namespace MacroTools.Spells.Slipstream
     /// The color of the created portals.
     /// </summary>
     public Color Color { get; init; } = new(255, 255, 255, 255);
-    
-    /// <summary>
-    /// How far away the caster the portal should be placed.
-    /// </summary>
-    public int PortalOffset { get; init; }
-    
+
     /// <summary>
     /// Initializes a new instance of the <see cref="SlipstreamSpell"/> class.
     /// </summary>
@@ -53,14 +48,14 @@ namespace MacroTools.Spells.Slipstream
     /// <inheritdoc/>
     public override void OnCast(unit caster, unit target, Point targetPoint)
     {
-      ChannelManager.Add(new SlipstreamPortalChannel(caster, Id, TargetLocation)
+      var spellTarget = new Point(GetSpellTargetX(), GetSpellTargetY());
+      ChannelManager.Add(new SlipstreamPortalChannel(caster, Id, spellTarget, TargetLocation)
       {
         Active = true,
         PortalUnitTypeId = PortalUnitTypeId,
         OpeningDelay = OpeningDelay,
         ClosingDelay = ClosingDelay,
-        Color = Color,
-        PortalOffset = PortalOffset
+        Color = Color
       });
     }
 
