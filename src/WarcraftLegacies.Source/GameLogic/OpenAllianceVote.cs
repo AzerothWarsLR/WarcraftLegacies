@@ -9,8 +9,8 @@ namespace WarcraftLegacies.Source.GameLogic
   public static class OpenAllianceVote
   {
     private static readonly dialog? VoteDialogue = DialogCreate();
-    private static readonly button? YesButton = DialogAddButton(VoteDialogue, "Yes", 0);
     private static readonly button? NoButton = DialogAddButton(VoteDialogue, "No", 0);
+    private static readonly button? YesButton = DialogAddButton(VoteDialogue, "Yes", 0);
     private static readonly trigger? YesTrigger = CreateTrigger();
     private static readonly trigger? NoTrigger = CreateTrigger();
     private static int _voteCount;
