@@ -31,7 +31,6 @@ namespace WarcraftLegacies.Source.Setup
       ControlPointManager.Instance = new ControlPointManager
       {
         MaxHitpoints = 1600,
-        RegenerationAbility = Constants.ABILITY_A0UT_CP_LIFE_REGEN,
         IncreaseControlLevelAbilityTypeId = Constants.ABILITY_A0A8_FORTIFY_CONTROL_POINTS_SHARED,
         ControlLevelSettings = new ControlLevelSettings
         {

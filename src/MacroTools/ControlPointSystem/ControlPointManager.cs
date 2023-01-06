@@ -54,11 +54,6 @@ namespace MacroTools.ControlPointSystem
     public int MaxHitpoints { get; init; }
 
     /// <summary>
-    /// All <see cref="ControlPoint"/>s are given this ability.
-    /// </summary>
-    public int RegenerationAbility { get; init; }
-
-    /// <summary>
     /// Determines the settings for the <see cref="ControlPoint.Defender"/> units that defend <see cref="ControlPoint"/>s.
     /// </summary>
     public ControlLevelSettings ControlLevelSettings { get; init; } = new();
@@ -194,7 +189,6 @@ namespace MacroTools.ControlPointSystem
             newOwner.BaseIncome += controlPoint.Value;
 
             controlPoint.Unit
-              .AddAbility(RegenerationAbility)
               .SetLifePercent(100);
             controlPoint.ControlLevel = 0;
             controlPoint.SignalOwnershipChange(new ControlPointOwnerChangeEventArgs(controlPoint, GetChangingUnitPrevOwner()));
