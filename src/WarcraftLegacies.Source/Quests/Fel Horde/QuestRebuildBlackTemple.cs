@@ -11,7 +11,7 @@ namespace WarcraftLegacies.Source.Quests.Fel_Horde
   {
 
     /// <summary>
-    /// Initializes a new instance of the <see cref="QuestRebuilBlackTemple"/> class.
+    /// Initializes a new instance of the <see cref="QuestRebuildBlackTemple"/> class.
     /// </summary>
     public QuestRebuildBlackTemple(Rectangle questRect) : base("Ash and Smoke", "Rebuild Black Temple for the glory of the Illidari", "ReplaceableTextures\\CommandButtons\\BTNFelOrcAltarOfStorms.blp")
     {
