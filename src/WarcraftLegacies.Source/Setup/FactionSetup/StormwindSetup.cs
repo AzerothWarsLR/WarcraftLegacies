@@ -97,6 +97,7 @@ Make sure to communicate with your Dwarven and Kul'tiran allies, as they will be
       Stormwind.ModObjectLimit(FourCC("R031"), Faction.UNLIMITED); //Elven Refugees
       Stormwind.ModObjectLimit(Constants.UPGRADE_R03V_MAGES_OF_STROMGARDE_ARATHOR_T2, Faction.UNLIMITED);
       Stormwind.ModObjectLimit(Constants.UPGRADE_R03W_KNOWLEDGE_OF_HONOR_HOLD_ARATHOR_T2, Faction.UNLIMITED);
+      Stormwind.ModObjectLimit(Constants.ABILITY_A0F2_SELF_DESTROY_DEEPRUN_TRAM, Faction.UNLIMITED);
 
       //Tier researches
       Stormwind.ModObjectLimit(FourCC("R038"), Faction.UNLIMITED); //Enforcer Training

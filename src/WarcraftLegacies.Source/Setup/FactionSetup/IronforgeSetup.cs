@@ -100,6 +100,7 @@ Stormwind is preparing for the Fel Horde invasion in the South, muster the thron
       Ironforge.ModObjectLimit(Constants.UPGRADE_R00T_OVERCLOCK_IRONFORGE_STEAM_TANK, Faction.UNLIMITED);
       Ironforge.ModObjectLimit(Constants.UPGRADE_R00N_IMPROVED_SWIG_IRONFORGE_TAVERN, Faction.UNLIMITED);
       Ironforge.ModObjectLimit(Constants.UPGRADE_R08K_TITANFORGE_ARTIFACT_IRONFORGE, Faction.UNLIMITED);
+      Ironforge.ModObjectLimit(Constants.ABILITY_A0F2_SELF_DESTROY_DEEPRUN_TRAM, Faction.UNLIMITED);
 
       Ironforge.ModAbilityAvailability(Constants.ABILITY_A0IH_SPIKED_BARRICADES_DWARF_KEEP, -1);
       Ironforge.ModAbilityAvailability(Constants.ABILITY_A0GA_SUMMON_GARRISON_LORDAERON, -1);
