@@ -4,6 +4,7 @@ using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives;
 using MacroTools.QuestSystem;
+using WCSharp.Shared.Data;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Ironforge
@@ -14,8 +15,8 @@ namespace WarcraftLegacies.Source.Quests.Ironforge
       "A small troll skirmish is attacking Dun Morogh. Push them back!",
       "ReplaceableTextures\\CommandButtons\\BTNIceTrollShadowPriest.blp")
     {
-      AddObjective(new ObjectiveKillUnit(preplacedUnitSystem.GetUnit(FourCC("nith"), Regions.DunmoroghAmbient2.Center))); //Troll
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(FourCC("n014"))));
+      AddObjective(new ObjectiveKillUnit(preplacedUnitSystem.GetUnit(FourCC("nith"), new Point(10673, -7188)))); //Troll High Priest
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N014_DUN_MOROGH_15GOLD_MIN)));
       AddObjective(new ObjectiveExpire(1435));
       AddObjective(new ObjectiveSelfExists());
       Required = true;

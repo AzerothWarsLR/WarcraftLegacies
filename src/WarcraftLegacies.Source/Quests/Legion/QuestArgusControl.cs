@@ -1,10 +1,10 @@
 using System.Collections.Generic;
-using MacroTools;
 using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives;
 using MacroTools.QuestSystem;
+using WarcraftLegacies.Source.Setup.Legends;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Legion
@@ -13,7 +13,7 @@ namespace WarcraftLegacies.Source.Quests.Legion
   {
     private readonly List<unit> _rescueUnits = new();
 
-    public QuestArgusControl(PreplacedUnitSystem preplacedUnitSystem) : base("Argus Incursion",
+    public QuestArgusControl() : base("Argus Incursion",
       "The planet of Argus is not fully under the control of the Legion. Bring it under control!",
       "ReplaceableTextures\\CommandButtons\\BTNMastersLodge.blp")
     {
@@ -21,10 +21,10 @@ namespace WarcraftLegacies.Source.Quests.Legion
       AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(FourCC("n0BH"))));
       AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(FourCC("n0BG"))));
       AddObjective(new ObjectiveSelfExists());
-      ResearchId = FourCC("R055");
+      ResearchId = Constants.UPGRADE_R055_QUEST_COMPLETED_ARGUS_INCURSION;
       Required = true;
-      _rescueUnits.Add(preplacedUnitSystem.GetUnit(FourCC("n0BE"), Regions.Eastern_Northrend.Center));
-      _rescueUnits.Add(preplacedUnitSystem.GetUnit(FourCC("n0BE"), Regions.InstanceOutland.Center));
+      _rescueUnits.Add(LegendLegion.LegionNexusAlterac.Unit);
+      _rescueUnits.Add(LegendLegion.LegionNexusNorthrend.Unit);
     }
 
     protected override string RewardDescription => "Enable to research Astral Walk and build a shop";

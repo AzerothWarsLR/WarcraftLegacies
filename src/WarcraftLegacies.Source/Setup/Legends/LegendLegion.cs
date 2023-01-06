@@ -1,5 +1,4 @@
 ﻿using MacroTools;
-using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -13,8 +12,8 @@ namespace WarcraftLegacies.Source.Setup.Legends
     public static LegendaryHero LEGEND_TICHONDRIUS { get; private set; }
     public static LegendaryHero LEGEND_MALGANIS { get; private set; }
     public static LegendaryHero LEGEND_LILIAN { get; private set; }
-    public static Capital LEGION_NEXUS_NORTHREND { get; private set; }
-    public static Capital LEGION_NEXUS_OUTLAND { get; private set; }
+    public static Capital LegionNexusNorthrend { get; private set; }
+    public static Capital LegionNexusAlterac { get; private set; }
 
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
@@ -57,19 +56,19 @@ namespace WarcraftLegacies.Source.Setup.Legends
       };
       LegendaryHeroManager.Register(LEGEND_MALGANIS);
 
-      LEGION_NEXUS_OUTLAND = new Capital
+      LegionNexusAlterac = new Capital
       {
-        Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_N0BE_LEGION_NEXUS_LEGION_OTHER, new Point(-3483, -21662))
+        Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_N0BE_LEGION_NEXUS_LEGION_OTHER, new Point(11035f, 5348f))
       };
-      CapitalManager.Register(LEGION_NEXUS_OUTLAND);
-      SetUnitInvulnerable(LEGION_NEXUS_OUTLAND.Unit, true);
+      CapitalManager.Register(LegionNexusAlterac);
+      SetUnitInvulnerable(LegionNexusAlterac.Unit, true);
       
-      LEGION_NEXUS_NORTHREND = new Capital
+      LegionNexusNorthrend = new Capital
       {
-        Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_N0BE_LEGION_NEXUS_LEGION_OTHER, new Point(-3501, 20951))
+        Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_N0BE_LEGION_NEXUS_LEGION_OTHER, new Point(3544, 20780))
       };
-      CapitalManager.Register(LEGION_NEXUS_NORTHREND);
-      SetUnitInvulnerable(LEGION_NEXUS_NORTHREND.Unit, true);
+      CapitalManager.Register(LegionNexusNorthrend);
+      SetUnitInvulnerable(LegionNexusNorthrend.Unit, true);
     }
   }
 }

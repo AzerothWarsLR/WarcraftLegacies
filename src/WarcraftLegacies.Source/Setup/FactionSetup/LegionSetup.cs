@@ -97,7 +97,7 @@ Your primary objective is to summon the Burning Legion. Invade the city of Dalar
       Legion.ModObjectLimit(Constants.UNIT_UMAL_THE_CUNNING_LEGION, 1);
       Legion.ModObjectLimit(Constants.UNIT_UTIC_THE_DARKENER_LEGION, 1);
 
-      Legion.AddGoldMine(preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-23179, 6865)));
+      Legion.AddGoldMine(preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(19331f, -30663)));
       
       FactionManager.Register(Legion);
     }

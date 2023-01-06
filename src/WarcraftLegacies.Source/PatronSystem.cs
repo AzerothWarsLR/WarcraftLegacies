@@ -30,10 +30,10 @@ namespace WarcraftLegacies.Source
     /// </summary>
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
-      SetupPatron("bredbrodak", PatronTier.Two, Regions.Quelthalas.Center, preplacedUnitSystem);
-      SetupPatron("Dromoka", PatronTier.Two, Regions.AlteracAmbient.Center, preplacedUnitSystem);
-      SetupPatron("Bocelot", PatronTier.Two, Regions.TyrsFall.Center, preplacedUnitSystem);
-      SetupPatron("Eagleman", PatronTier.Two, Regions.Stromgarde.Center, preplacedUnitSystem);
+      SetupPatron("bredbrodak", PatronTier.Two, new Point(16925, 14799), preplacedUnitSystem);
+      SetupPatron("Dromoka", PatronTier.Two, new Point(13245, 5359), preplacedUnitSystem);
+      SetupPatron("Bocelot", PatronTier.Two, new Point(5403, 9746), preplacedUnitSystem);
+      SetupPatron("Eagleman", PatronTier.Two, new Point(15276, 2550), preplacedUnitSystem);
     }
   }
 }

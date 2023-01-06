@@ -2,6 +2,7 @@ using MacroTools;
 using MacroTools.QuestSystem;
 using WarcraftLegacies.Source.Quests.Stormwind;
 using WarcraftLegacies.Source.Setup.FactionSetup;
+using WCSharp.Shared.Data;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup.QuestSetup
@@ -15,7 +16,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
         stormwind.AddQuest(new QuestDarkshire(preplacedUnitSystem.GetUnit(FourCC("ngnv"), Regions.DarkshireUnlock.Center)));
       stormwind.StartingQuest = newQuest;
       stormwind.AddQuest(new QuestLakeshire(Regions.LakeshireUnlock,
-        preplacedUnitSystem.GetUnit(FourCC("nogl"), Regions.LakeshireUnlock.Center)));
+        preplacedUnitSystem.GetUnit(FourCC("nogl"), new Point(15879, -12867))));
       stormwind.AddQuest(new QuestGoldshire(Regions.ElwinForestAmbient,
         preplacedUnitSystem.GetUnit(Constants.UNIT_N021_HOGGER)));
       stormwind.AddQuest(new QuestStormwindCity(Regions.StormwindUnlock));

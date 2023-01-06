@@ -162,7 +162,7 @@ namespace WarcraftLegacies.Source.Mechanics.Scourge.Blight
         });
 
       BlightSystem.Register(
-        preplacedUnitSystem.GetUnit(Constants.UNIT_N003_IMPROVED_SUN_TOWER_QUEL_THALAS_TOWER, Regions.Dreadscar_2.Center),
+        preplacedUnitSystem.GetUnit(Constants.UNIT_N003_IMPROVED_SUN_TOWER_QUEL_THALAS_TOWER, new Point(20679, 17143)),
         new BlightParameters
         {
           PrimaryBlightRadius = 200,

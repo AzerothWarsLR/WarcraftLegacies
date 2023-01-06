@@ -92,7 +92,7 @@ Once you have established your kingdom, set sail to help your allies on the main
       Kultiras.ModObjectLimit(FourCC("H05L"), 1); //Lady Ashvane
       Kultiras.ModObjectLimit(FourCC("E016"), 1); //Lucille
 
-      Kultiras.AddGoldMine(preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(2619, -4946)));
+      Kultiras.AddGoldMine(preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(4585, -13038)));
       
       Kultiras.AddPower(new CityOfHeroes(0.125f, 1.5f, "Ships")
       {
