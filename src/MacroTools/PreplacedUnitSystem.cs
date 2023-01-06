@@ -17,7 +17,7 @@ namespace MacroTools
   {
     private readonly Dictionary<int, List<unit>> _unitsByTypeId = new();
     private readonly Dictionary<int, List<destructable>> _destructablesByTypeId = new();
-    private const float MaximumDistanceToFind = 500;
+    private const float MaximumDistanceToFind = 1000;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="PreplacedUnitSystem"/> class.
@@ -162,7 +162,11 @@ namespace MacroTools
       }
 
       if (closestDistance > MaximumDistanceToFind)
-        throw new Exception($"Could not find a {units.FirstOrDefault()?.GetName()} within {MaximumDistanceToFind} of Point {location.X}, {location.Y}.");
+      {
+        var unit = units.FirstOrDefault();
+        Logger.LogWarning($"Could not find a {unit?.GetName()}({GeneralHelpers.DebugIdInteger2IdString(unit.GetTypeId())}) within {MaximumDistanceToFind} of Point {location.X}, {location.Y}.");
+      }
+        
 
       return closestUnit;
     }
