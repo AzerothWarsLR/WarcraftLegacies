@@ -72,7 +72,8 @@ namespace WarcraftLegacies.Source.Mechanics.Goblins
     {
       if (CreateGroup().EnumUnitsInRange(createdUnit.GetPosition(), 900)
           .EmptyToList()
-          .All(x => x.GetTypeId() != createdUnit.GetTypeId() || x == createdUnit)) return true;
+          .All(x => x.GetTypeId() != createdUnit.GetTypeId() || x == createdUnit || !UnitAlive(x)))
+        return true;
       createdUnit.Kill().Remove();
       return false;
     }
