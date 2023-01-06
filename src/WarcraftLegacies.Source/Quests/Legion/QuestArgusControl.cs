@@ -17,9 +17,9 @@ namespace WarcraftLegacies.Source.Quests.Legion
       "The planet of Argus is not fully under the control of the Legion. Bring it under control!",
       "ReplaceableTextures\\CommandButtons\\BTNMastersLodge.blp")
     {
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(FourCC("n0BF"))));
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(FourCC("n0BH"))));
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(FourCC("n0BG"))));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N0BF_ANTORAN_WASTES_10GOLD_MIN)));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N0BH_EREDATH_25GOLD_MIN)));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N0BG_KROKUUN_10GOLD_MIN)));
       AddObjective(new ObjectiveSelfExists());
       ResearchId = Constants.UPGRADE_R055_QUEST_COMPLETED_ARGUS_INCURSION;
       Required = true;
@@ -28,11 +28,12 @@ namespace WarcraftLegacies.Source.Quests.Legion
     }
 
     protected override string RewardDescription => "Enable to research Astral Walk and build a shop";
+    
     protected override string CompletionPopup => "Enable to research Astral Walk and build a shop";
 
     protected override void OnComplete(Faction completingFaction)
     {
-      foreach (var unit in _rescueUnits) unit.Rescue(completingFaction.Player);
+      completingFaction.Player?.RescueGroup(_rescueUnits);
     }
   }
 }
