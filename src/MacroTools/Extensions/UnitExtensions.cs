@@ -465,7 +465,8 @@ namespace MacroTools.Extensions
         .Pause(false);
 
       var asCapital = CapitalManager.GetFromUnit(whichUnit);
-      if (GetUnitAbilityLevel(whichUnit, FourCC("Avul")) == 0 && (asCapital == null || asCapital.ProtectorCount == 0)) 
+      Console.WriteLine(GetUnitAbilityLevel(whichUnit, FourCC("Avul")));
+      if (asCapital == null || asCapital.ProtectorCount == 0) 
         whichUnit.SetInvulnerable(false);
     }
 
