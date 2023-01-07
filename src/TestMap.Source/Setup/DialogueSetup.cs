@@ -3,10 +3,7 @@ using System.Collections.Generic;
 using MacroTools.DialogueSystem;
 using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem;
-using MacroTools.ObjectiveSystem.Objectives;
 using MacroTools.QuestSystem;
-using TestMap.Source.Setup.FactionSetup.FactionSetup;
-using static War3Api.Common;
 
 namespace TestMap.Source.Setup
 {
@@ -16,25 +13,11 @@ namespace TestMap.Source.Setup
     {
       try
       {
-        DialogueManager.Add(new Dialogue(
-          objectives: new[]
-          {
-            new ObjectiveLegendDead(LegendSetup.Kael)
-          },
-          soundFile: @"Sound\Dialogue\OrcCampaign\Orc05\O05Cenarius01",
+        TriggeredDialogueManager.Add(new Dialogue(soundFile: @"Sound\Dialogue\OrcCampaign\Orc05\O05Cenarius01",
           caption: "Who dares defile this ancient land? Who dares the wrath of Cenarius and the Night Elves?",
-          speaker: "Cenarius",
-          audience: new[]
-          {
-            DalaranSetup.Dalaran
-          }
+          speaker: "Cenarius"
         ));
-        DialogueManager.Add(new Dialogue(
-          objectives: new[]
-          {
-            new ObjectiveStartSpell(FourCC("AHfs"), false, LegendSetup.Kael)
-          }
-          , @"Sound\Dialogue\UndeadCampaign\Undead08\U08Kelthuzad18.flac",
+        TriggeredDialogueManager.Add(new Dialogue(@"Sound\Dialogue\UndeadCampaign\Undead08\U08Kelthuzad18.flac",
           "Come forth, Lord Archimonde! Enter this world, and let us bask in your power!",
           "Kel'thuzad"
         ));

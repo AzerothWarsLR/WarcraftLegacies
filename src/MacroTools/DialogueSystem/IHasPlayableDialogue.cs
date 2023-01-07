@@ -11,6 +11,6 @@ namespace MacroTools.DialogueSystem
     /// <summary>
     /// Plays one or more pieces of dialogue to the specified players.
     /// </summary>
-    public void Play(IEnumerable<player>? players);
+    public void Play(List<player>? players);
   }
 }

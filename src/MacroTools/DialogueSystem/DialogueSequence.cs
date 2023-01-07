@@ -12,7 +12,7 @@ namespace MacroTools.DialogueSystem
     /// <summary>
     /// Plays the entire <see cref="Dialogue"/> sequence in order.
     /// </summary>
-    public void Play(IEnumerable<player>? players)
+    public void Play(List<player>? players)
     {
       throw new NotImplementedException();
     }

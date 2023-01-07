@@ -31,16 +31,10 @@ namespace WarcraftLegacies.Source.Dialogue
             WarsongSetup.WarsongClan
           }
         });
-        DialogueManager.Add(new MacroTools.DialogueSystem.Dialogue(
-          objectives: gromObjectives,
-          soundFile: @"Sound\Dialogue\OrcCampaign\Orc05\O05Grom26.flac",
+        TriggeredDialogueManager.Add(new MacroTools.DialogueSystem.Dialogue(soundFile: @"Sound\Dialogue\OrcCampaign\Orc05\O05Grom26.flac",
           caption:
           "Yes! I feel the power once again! Come, my warriors; drink from the dark waters, and you will be reborn!",
-          speaker: "Grom Hellscream",
-          audience: new[]
-          {
-            WarsongSetup.WarsongClan
-          }
+          speaker: "Grom Hellscream"
         ));
       }
       catch (Exception ex)

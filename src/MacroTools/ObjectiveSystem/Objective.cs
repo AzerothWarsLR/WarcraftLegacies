@@ -127,7 +127,7 @@ namespace MacroTools.ObjectiveSystem
     public event EventHandler<Objective>? ProgressChanged;
 
     /// <summary>
-    ///   Runs when this <see cref="Objective"/> is registered to a <see cref="QuestData"/> or the <see cref="DialogueManager"/>.
+    ///   Runs when this <see cref="Objective"/> is registered to a <see cref="QuestData"/> or the <see cref="TriggeredDialogueManager"/>.
     /// </summary>
     internal virtual void OnAdd(Faction faction)
     {
