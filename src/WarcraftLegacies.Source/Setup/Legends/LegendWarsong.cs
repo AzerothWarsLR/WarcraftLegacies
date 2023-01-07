@@ -1,4 +1,4 @@
-using MacroTools;
+﻿using MacroTools;
 using MacroTools.LegendSystem;
 
 namespace WarcraftLegacies.Source.Setup.Legends
@@ -7,7 +7,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
   {
     public static LegendaryHero? GromHellscream { get; private set; }
     public static Capital? StonemaulKeep { get; private set; }
-    public static Capital? WarsongEncampment { get; private set; }
+    public static Capital? Orgrimmar { get; private set; }
     public static LegendaryHero? ChenStormstout { get; private set; }
     public static LegendaryHero? Saurfang { get; private set; }
     
@@ -34,8 +34,12 @@ namespace WarcraftLegacies.Source.Setup.Legends
       };
       CapitalManager.Register(StonemaulKeep);
 
-      WarsongEncampment = new Capital();
-      CapitalManager.Register(WarsongEncampment);
+      Orgrimmar = new Capital
+      {
+        Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_O01B_ORGRIMMAR_WARSONG),
+        DeathMessage = "Orgrimmar has been demolished and with it die the hopes and dreams of a wartorn race seeking refuge in a new world."
+      };
+      CapitalManager.Register(Orgrimmar);
 
       GromHellscream = new LegendaryHero("Grom Hellscream")
       {

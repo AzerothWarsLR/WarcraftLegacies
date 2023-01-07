@@ -1,4 +1,4 @@
-using MacroTools.Extensions;
+﻿using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives;
 using MacroTools.QuestSystem;
@@ -23,6 +23,7 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
         120, 90));
       AddObjective(new ObjectiveSelfExists());
       ResearchId = Constants.UPGRADE_R06H_QUEST_COMPLETED_VAULT_OF_THE_WARDENS_SENTINELS_JAROD;
+      Required = true;
     }
 
     /// <inheritdoc />
