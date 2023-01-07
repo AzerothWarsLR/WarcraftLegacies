@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using MacroTools.DialogueSystem;
 using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives;
@@ -18,35 +17,26 @@ namespace WarcraftLegacies.Source.Dialogue
     /// </summary>
     public static void Setup()
     {
-      try
-      {
-        DialogueManager.Add(new MacroTools.DialogueSystem.Dialogue(
-          objectives: new[]
+      TriggeredDialogueManager.Add(
+        new TriggeredDialogue(new MacroTools.DialogueSystem.Dialogue(
+          @"Sound\Dialogue\OrcCampaign\Orc05\O05Cenarius01",
+          "Who dares defile this ancient land? Who dares the wrath of Cenarius and the Night Elves?",
+          "Cenarius"), new[]
+        {
+          SentinelsSetup.Sentinels,
+          DruidsSetup.Druids,
+          FrostwolfSetup.Frostwolf,
+          WarsongSetup.WarsongClan
+        }, new[]
+        {
+          new ObjectiveControlLegend(LegendDruids.LegendCenarius, false)
           {
-            new ObjectiveControlLegend(LegendDruids.LegendCenarius, false)
+            EligibleFactions = new List<Faction>
             {
-              EligibleFactions = new List<Faction>
-              {
-                DruidsSetup.Druids
-              }
+              DruidsSetup.Druids
             }
-          },
-          soundFile: @"Sound\Dialogue\OrcCampaign\Orc05\O05Cenarius01",
-          caption: "Who dares defile this ancient land? Who dares the wrath of Cenarius and the Night Elves?",
-          speaker: "Cenarius",
-          audience: new[]
-          {
-            SentinelsSetup.Sentinels,
-            DruidsSetup.Druids,
-            FrostwolfSetup.Frostwolf,
-            WarsongSetup.WarsongClan
           }
-        ));
-      }
-      catch (Exception ex)
-      {
-        Console.WriteLine($"Failed to run DialogueSetup: {ex}");
-      }
+        }));
     }
   }
 }

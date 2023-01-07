@@ -30,7 +30,6 @@ namespace TestMap.Source.Setup
       TestSetup.Setup();
       WaygateManager.Setup(FourCC("nwgt"));
       HintSetup.Setup();
-      DialogueSetup.Setup();
       AugmentSetup.Setup();
       PassiveAbilityManager.InitializePreplacedUnits();
       ResearchManager.RegisterIncompatibleSet(
