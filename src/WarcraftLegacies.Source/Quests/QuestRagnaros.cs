@@ -30,7 +30,7 @@ namespace WarcraftLegacies.Source.Quests
         .SetInvulnerable(true);
 
       _heroInRectObjective =
-        new ObjectiveHeroWithLevelInRect(12, Regions.RagnarosSummon, "the Portal to the Firelands");
+        new ObjectiveHeroWithLevelInRect(10, Regions.RagnarosSummon, "the Portal to the Firelands");
       AddObjective(_heroInRectObjective);
       PlayerUnitEvents.Register(UnitEvent.SpellEffect, OnCastSummonSpell, _ragnarosSummoningPedestal);
     }
