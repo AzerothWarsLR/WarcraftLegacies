@@ -17,57 +17,60 @@ namespace WarcraftLegacies.Source.Dialogue
     /// </summary>
     public static void Setup()
     {
-      DialogueManager.Add(new MacroTools.DialogueSystem.Dialogue(
-        new[]
+      TriggeredDialogueManager.Add(
+        new TriggeredDialogue(new MacroTools.DialogueSystem.Dialogue(
+          @"Sound\Dialogue\NightElfExpCamp\NightElf05x\S05Illidan31",
+          "Tyrande, what are you doing here? This battle does not concern you.",
+          "Illidan Stormrage"), new[]
+        {
+          IllidariSetup.Illidari,
+          SentinelsSetup.Sentinels
+        }, new[]
         {
           new ObjectiveLegendMeetsLegend(LegendNaga.LegendIllidan, LegendSentinels.Tyrande)
-        }, @"Sound\Dialogue\NightElfExpCamp\NightElf05x\S05Illidan31",
-        "Tyrande, what are you doing here? This battle does not concern you.",
-        "Illidan Stormrage",
-        new[]
-        {
-          IllidariSetup.Illidari,
-          SentinelsSetup.Sentinels
         }));
-      
-      DialogueManager.Add(new MacroTools.DialogueSystem.Dialogue(
-        new[]
-        {
-          new ObjectiveLegendMeetsLegend(LegendNaga.LegendIllidan, LegendDruids.LegendMalfurion)
-        }, @"Sound\Dialogue\NightElfExpCamp\NightElf05x\S05Illidan38",
-        "Brother? What are you doing here?",
-        "Illidan Stormrage",
-        new[]
-        {
-          IllidariSetup.Illidari,
-          DruidsSetup.Druids
-        }));
-      
-      DialogueManager.Add(new MacroTools.DialogueSystem.Dialogue(
-        new[]
-        {
-          new ObjectiveEitherOf(new ObjectiveDamagePlayer(SentinelsSetup.Sentinels.Player)
+
+      TriggeredDialogueManager.Add(
+        new TriggeredDialogue(new MacroTools.DialogueSystem.Dialogue(
+            @"Sound\Dialogue\NightElfExpCamp\NightElf05x\S05Illidan38",
+            "Brother? What are you doing here?",
+            "Illidan Stormrage"),
+          new[]
           {
-            EligibleFactions = new List<Faction>
-            {
-              IllidariSetup.Illidari
-            }
-          }, new ObjectiveDamagePlayer(DruidsSetup.Druids.Player)
+            IllidariSetup.Illidari,
+            DruidsSetup.Druids
+          }, new[]
           {
-            EligibleFactions = new List<Faction>
+            new ObjectiveLegendMeetsLegend(LegendNaga.LegendIllidan, LegendDruids.LegendMalfurion)
+          }));
+
+      TriggeredDialogueManager.Add(
+        new TriggeredDialogue(new MacroTools.DialogueSystem.Dialogue(
+            @"Sound\Dialogue\NightElfExpCamp\NightElf05x\S05Naga08",
+            "Wretched Night Elves. We are the Naga! We are the future!",
+            "Myrmidon"),
+          new[]
+          {
+            IllidariSetup.Illidari,
+            DruidsSetup.Druids
+          }, new[]
+          {
+            new ObjectiveEitherOf(new ObjectiveDamagePlayer(SentinelsSetup.Sentinels.Player)
             {
-              IllidariSetup.Illidari
-            }
-          })
-        }, @"Sound\Dialogue\NightElfExpCamp\NightElf05x\S05Naga08",
-        "Wretched Night Elves. We are the Naga! We are the future!",
-        "Myrmidon",
-        new[]
-        {
-          IllidariSetup.Illidari,
-          DruidsSetup.Druids,
-          SentinelsSetup.Sentinels
-        }));
+              EligibleFactions = new List<Faction>
+              {
+                IllidariSetup.Illidari
+              }
+            }, new ObjectiveDamagePlayer(DruidsSetup.Druids.Player)
+            {
+              EligibleFactions = new List<Faction>
+              {
+                IllidariSetup.Illidari,
+                DruidsSetup.Druids,
+                SentinelsSetup.Sentinels
+              }
+            })
+          }));
     }
   }
 }

@@ -50,7 +50,7 @@ namespace MacroTools.DialogueSystem
     /// <param name="playableDialogue">The dialogue that will be played when the conditions are met.</param>
     /// <param name="objectives">When these are completed, the dialogue plays.</param>
     /// <param name="audience">A list of factions that can hear the dialogue being played.</param>
-    public TriggeredDialogue(IHasPlayableDialogue playableDialogue, IEnumerable<Faction> audience, IEnumerable<Objective> objectives)
+    public TriggeredDialogue(IHasPlayableDialogue playableDialogue, Faction?[] audience, IEnumerable<Objective> objectives)
     {
       _playableDialogue = playableDialogue;
       _audience = audience;
