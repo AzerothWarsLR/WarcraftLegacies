@@ -21,12 +21,14 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
         ControlPointDefenderUnitTypeId = Constants.UNIT_E01Y_CONTROL_POINT_DEFENDER_DRUIDS,
         IntroText = @"You are playing as the ancient Druids of the Cenarion Circle.
 
-You begin without a Hero, and are perilously vulnerable. 
-Awaken Malfurion from his slumber as soon as possible. 
+You begin isolated in the deepest parts of Mount Hyjal near the World Tree.
 
-Once awakened, use his Force of Nature to clear a path through the trees in Ashenvale and summon Cenarius to aid you. 
+The Horde is gathering to burn Ashenvale forest and the World Tree. Cenarius has emerged from his seclusion to stop them. 
+Use him to awaken Malfurion from his slumber as soon as possible. 
 
-The Horde is gathering to burn Ashenvale forest and the World Tree. Gather your forces and strike before they can organize their efforts."
+Once awakened, use his Force of Nature to clear a path through the trees in Ashenvale.
+
+Gather your forces and strike before the Horde can organize their efforts."
       };
 
       Druids.ModObjectLimit(FourCC("etol"), Faction.UNLIMITED); //Tree of Life
