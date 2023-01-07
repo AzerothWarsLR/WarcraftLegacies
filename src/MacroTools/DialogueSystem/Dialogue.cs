@@ -13,7 +13,7 @@ namespace MacroTools.DialogueSystem
   /// <summary>
   /// Can play a piece of dialogue from the Warcraft 3 campaign.
   /// </summary>
-  public sealed class Dialogue
+  public sealed class Dialogue : IHasPlayableDialogue
   {
     /// <summary>
     /// Fired when the <see cref="Dialogue"/> plays.
@@ -35,22 +35,7 @@ namespace MacroTools.DialogueSystem
         switch (value)
         {
           case QuestProgress.Complete:
-            if (_audience != null)
-            {
-              _sound.Play(x => _audience.Contains(x.GetFaction()), true);
-              foreach (var faction in _audience)
-              {
-                var player = faction.Player;
-                if (player != null) 
-                  DisplayTextToPlayer(player, 0, 0, $"|cffffcc00{_speaker}:|r {_caption}");
-              }
-            }
-            else
-            {
-              DisplayTextToPlayer(GetLocalPlayer(), 0, 0, $"|cffffcc00{_speaker}:|r {_caption}");
-              _sound.Play(true);
-            }
-
+            Play(_audience?.Select(x => x.Player));
             _completed = true;
             Completed?.Invoke(this, this);
             break;
@@ -103,6 +88,28 @@ namespace MacroTools.DialogueSystem
         Progress = QuestProgress.Complete;
       else if (anyFailed)
         Progress = QuestProgress.Failed;
+    }
+
+    /// <summary>
+    /// Plays the <see cref="Dialogue"/> to eligible audience members.
+    /// </summary>
+    public void Play(IEnumerable<player>? players)
+    {
+      if (_audience != null)
+      {
+        _sound.Play(x => _audience.Contains(x.GetFaction()), true);
+        foreach (var faction in _audience)
+        {
+          var player = faction.Player;
+          if (player != null) 
+            DisplayTextToPlayer(player, 0, 0, $"|cffffcc00{_speaker}:|r {_caption}");
+        }
+      }
+      else
+      {
+        DisplayTextToPlayer(GetLocalPlayer(), 0, 0, $"|cffffcc00{_speaker}:|r {_caption}");
+        _sound.Play(true);
+      }
     }
   }
 }
