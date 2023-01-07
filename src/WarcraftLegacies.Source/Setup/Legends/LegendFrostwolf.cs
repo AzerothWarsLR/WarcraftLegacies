@@ -12,7 +12,6 @@ namespace WarcraftLegacies.Source.Setup.Legends
     public static LegendaryHero? LegendVolJin { get; private set; }
     public static Capital? LegendThunderbluff { get; private set; }
     public static Capital? LegendDarkspearhold { get; private set; }
-    public static Capital? LegendOrgrimmar { get; private set; }
 
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
@@ -61,13 +60,6 @@ namespace WarcraftLegacies.Source.Setup.Legends
         UnitType = Constants.UNIT_ORKN_CHIEFTAIN_OF_THE_DARKSPEAR_TRIBE_FROSTWOLF,
       };
       LegendaryHeroManager.Register(LegendVolJin);
-
-      LegendOrgrimmar = new Capital
-      {
-        DeathMessage =
-          "Orgrimmar has been demolished. With it dies the hopes and dreams of a wartorn race seeking refuge in a new world."
-      };
-      CapitalManager.Register(LegendOrgrimmar);
     }
   }
 }
