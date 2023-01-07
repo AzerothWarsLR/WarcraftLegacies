@@ -21,7 +21,7 @@ namespace WarcraftLegacies.Source.Quests.Naga
     /// </summary>
     /// <param name="rescueRect">Units in this area start invulnerable then get rescued when the quest is complete.</param>
     public QuestLostOnes(Rectangle rescueRect) : base("The Lost Ones",
-      "The lost tribe of Draenei, forgotten on Outland, have need of a new master, and that master is Illidan",
+      "A tribe of Draenei known as the Ashtongue are struggling to survive in the harsh environment of Outland. If Illidan helps them, they would plead loyalty to him.",
       "ReplaceableTextures\\CommandButtons\\BTNDranaiAkama.blp")
     {
       AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N01J_ZANGARMARSH_15GOLD_MIN)));
@@ -39,13 +39,14 @@ namespace WarcraftLegacies.Source.Quests.Naga
     /// <inheritdoc/>
     /// </summary>
     protected override string CompletionPopup =>
-      "The Lost Ones tribe has joined our cause";
+      "The Draenai of the Ashtongue tribe have joined our cause.";
 
     /// <summary>
     /// <inheritdoc/>
     /// </summary>
     protected override string RewardDescription =>
-      "Control of all units in the Draenei camp, Enable to Build the Draenei Hut and train Akama";
+      $"Gain control of the Draenei camp in Outland, allows construction of the Draenei Hut and Akama can be trained from the {GetObjectName(Constants.UNIT_NNAD_ALTAR_OF_THE_BETRAYER_ILLIDARI_ALTAR)}";
+
 
     /// <summary>
     /// <inheritdoc/>

@@ -43,7 +43,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
       SpellSystem.Register(new SlipstreamSpellSpecificLocation(Constants.ABILITY_A07D_PORTAL_TO_BLACK_TEMPLE_ILLIDAN)
       {
         PortalUnitTypeId = Constants.UNIT_N0D9_SLIPSTREAM_PORTAL_STORMWIND_KHADGAR,
-        OpeningDelay = 20,
+        OpeningDelay = 5,
         ClosingDelay = 10,
         TargetLocation = new Point(5030, -30000),
         Color = new Color(255, 255, 250, 255)

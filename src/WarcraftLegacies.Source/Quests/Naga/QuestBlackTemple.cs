@@ -10,7 +10,7 @@ using static War3Api.Common;
 namespace WarcraftLegacies.Source.Quests.Naga
 {
   /// <summary>
-  /// Illidan acquires the Black Temple.
+  /// Bring <see cref="LegendNaga.LegendIllidan"/> to <see cref="LegendFelHorde.LegendBlacktemple"/> to gain control of it.
   /// </summary>
   public sealed class QuestBlackTemple : QuestData
   {
@@ -21,7 +21,7 @@ namespace WarcraftLegacies.Source.Quests.Naga
     /// </summary>
     /// <param name="rescueRect"></param>
     public QuestBlackTemple(Rectangle rescueRect) : base("Seat of Power",
-      "A small remnant of Illidan's Naga have held on in the Broken Isles, we need to make contact with them",
+      $"Illidan requires the aid of his servants in Outland for the upcoming war. He must travel to the Black Temple to muster them. His incredible power allows him to move between worlds with ease.",
       "ReplaceableTextures\\CommandButtons\\BTNWarpPortal.blp")
     {
       AddObjective(new ObjectiveLegendInRect(LegendNaga.LegendIllidan, Regions.IllidanBlackTempleUnlock, "Black Temple"));
@@ -32,10 +32,10 @@ namespace WarcraftLegacies.Source.Quests.Naga
     }
 
     /// <inheritdoc />
-    protected override string CompletionPopup => "The Black Temple is waiting for it's rightfull owner.";
+    protected override string CompletionPopup => "The forces of Outland are now under Illidan's command.";
 
     /// <inheritdoc />
-    protected override string RewardDescription => "Control of all buildings in Black Temple";
+    protected override string RewardDescription => $"Gain control of the Black Temple";
 
     /// <inheritdoc />
     protected override void OnFail(Faction completingFaction)
