@@ -15,23 +15,18 @@ namespace MacroTools.DialogueSystem
   /// </summary>
   public sealed class Dialogue
   {
+    /// <summary>
+    /// Fired when the <see cref="Dialogue"/> plays.
+    /// </summary>
+    public event EventHandler<Dialogue>? Completed;
+    
+    internal List<Objective> Objectives { get; }
+    
     private readonly IEnumerable<Faction>? _audience;
     private readonly string _caption;
     private readonly SoundWrapper _sound;
     private readonly string _speaker;
     private bool _completed;
-
-    public Dialogue(IEnumerable<Objective> objectives, string soundFile, string caption, string speaker,
-      IEnumerable<Faction>? audience = null)
-    {
-      _caption = caption;
-      _speaker = speaker;
-      _audience = audience;
-      Objectives = objectives.ToList();
-      _sound = new SoundWrapper(soundFile, soundEax: SoundEax.HeroAcks);
-    }
-
-    internal List<Objective> Objectives { get; }
 
     private QuestProgress Progress
     {
@@ -46,10 +41,8 @@ namespace MacroTools.DialogueSystem
               foreach (var faction in _audience)
               {
                 var player = faction.Player;
-                if (player != null)
-                {
+                if (player != null) 
                   DisplayTextToPlayer(player, 0, 0, $"|cffffcc00{_speaker}:|r {_caption}");
-                }
               }
             }
             else
@@ -70,30 +63,40 @@ namespace MacroTools.DialogueSystem
         }
       }
     }
-
+    
     /// <summary>
-    /// Fired when the <see cref="Dialogue"/> plays.
+    /// Initializes a new instance of the <see cref="Dialogue"/> class.
     /// </summary>
-    public event EventHandler<Dialogue>? Completed;
+    /// <param name="objectives">When these are completed, the dialogue plays.</param>
+    /// <param name="soundFile">A path to the sound file which the dialogue will play.</param>
+    /// <param name="caption">Gets displayed to the user when the dialogue is played.</param>
+    /// <param name="speaker">The character that is saying the dialogue.</param>
+    /// <param name="audience">A list of factions that can hear the dialogue being played.</param>
+    public Dialogue(IEnumerable<Objective> objectives, string soundFile, string caption, string speaker,
+      IEnumerable<Faction>? audience = null)
+    {
+      _caption = caption;
+      _speaker = speaker;
+      _audience = audience;
+      Objectives = objectives.ToList();
+      _sound = new SoundWrapper(soundFile, soundEax: SoundEax.HeroAcks);
+    }
 
     internal void OnObjectiveCompleted(object? sender, Objective completedObjective)
     {
       if (_completed)
-      {
         return;
-      }
 
       var allComplete = true;
       var anyFailed = false;
 
       foreach (var objective in Objectives)
       {
-        if (objective.Progress != QuestProgress.Complete)
-        {
-          allComplete = false;
-          if (objective.Progress == QuestProgress.Failed)
-            anyFailed = true;
-        }
+        if (objective.Progress == QuestProgress.Complete) 
+          continue;
+        allComplete = false;
+        if (objective.Progress == QuestProgress.Failed)
+          anyFailed = true;
       }
 
       if (allComplete)
