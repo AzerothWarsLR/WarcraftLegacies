@@ -2,6 +2,7 @@
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.Spells;
 using MacroTools.SpellSystem;
+using WarcraftLegacies.Source.Mechanics.Scourge;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
@@ -33,6 +34,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
         BuffId = Constants.BUFF_B069_PERSISTENT_SOUL_FORSAKEN_PLAGUE_REVENANT,
         Radius = 700
       });
+      Plagueling.Setup(); //Todo: convert this into being a proper passive ability
     }
   }
 }
