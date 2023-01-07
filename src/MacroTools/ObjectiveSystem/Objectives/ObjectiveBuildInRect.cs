@@ -19,7 +19,7 @@ namespace MacroTools.ObjectiveSystem.Objectives
     private readonly string _areaName;
 
     /// <inheritdoc />
-    public override Point Position => new(GetRectCenterX(_targetRect.Rect), GetRectCenterY(_targetRect.Rect));
+    public override Point Position => _targetRect.Center;
     
     private int CurrentBuildCount
     {
