@@ -29,16 +29,7 @@ namespace WarcraftLegacies.Source.Quests.Ironforge
         "Shadowforge"));
       AddObjective(new ObjectiveSelfExists());
       ResearchId = Constants.UPGRADE_R01A_QUEST_COMPLETED_DARK_IRON_ALLIANCE;
-      foreach (var unit in CreateGroup().EnumUnitsInRect(shadowforgeCity).EmptyToList())
-        if (unit.OwningPlayer() == Player(PLAYER_NEUTRAL_PASSIVE))
-        {
-          unit.SetInvulnerable(true);
-          _rescueUnits.Add(unit);
-          if (!IsUnitType(unit, UNIT_TYPE_STRUCTURE))
-          {
-            unit.Show(false);
-          }
-        }
+      _rescueUnits = shadowforgeCity.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
     }
 
     /// <inheritdoc />
@@ -52,15 +43,13 @@ namespace WarcraftLegacies.Source.Quests.Ironforge
     /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)
     {
-      foreach (var unit in _rescueUnits) 
-        unit.Rescue(completingFaction.Player ?? Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      completingFaction.Player?.RescueGroup(_rescueUnits);
     }
     
     /// <inheritdoc />
     protected override void OnFail(Faction failingFaction)
     {
-      foreach (var unit in _rescueUnits) 
-        unit.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      Player(PLAYER_NEUTRAL_AGGRESSIVE).RescueGroup(_rescueUnits);
     }
 
     /// <inheritdoc />

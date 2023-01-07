@@ -15,6 +15,8 @@ namespace WarcraftLegacies.Source.Setup.Legends
     public static LegendaryHero LegendRend { get; private set; }
     public static LegendaryHero LegendTeron { get; private set; }
     public static LegendaryHero LegendKargath { get; private set; }
+    public static LegendaryHero Gruul { get; private set; }
+
     public static Capital LegendBlackrockspire { get; private set; }
     public static Capital LegendBlacktemple { get; private set; }
     public static Capital LegendHellfirecitadel { get; private set; }
@@ -67,6 +69,13 @@ namespace WarcraftLegacies.Source.Setup.Legends
         PlayerColor = PLAYER_COLOR_MAROON
       };
       LegendaryHeroManager.Register(LegendTeron);
+
+      Gruul = new LegendaryHero("Gruul")
+      {
+        UnitType = Constants.UNIT_E01G_GRONN_OVERLORD_FEL,
+        StartingXp = 1400,
+      };
+      LegendaryHeroManager.Register(Gruul);
 
       LegendBlackrockspire = new Capital
       {

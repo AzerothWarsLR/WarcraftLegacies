@@ -9,10 +9,14 @@ using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Sentinels
 {
+ 
   public sealed class QuestMaievOutland : QuestData
   {
     private readonly List<unit> _rescueUnits = new();
-
+    /// <summary>
+    /// Initializes a new instance of the <see cref="QuestMaievOutland"/> class
+    /// </summary>
+    /// <param name="rescueRect"></param>
     public QuestMaievOutland(Rectangle rescueRect) : base("Driven by Vengeance",
       "Maiev drive for vengeance leads her to chase Illidan all the way to other worlds.",
       "ReplaceableTextures\\CommandButtons\\BTNMaievArmor.blp")
@@ -27,11 +31,15 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
         ShowUnit(unit, false);
         _rescueUnits.Add(unit);
       }
+      Required = true;
     }
 
+    /// <inheritdoc/>
     protected override string RewardDescription => "Control of Maiev's Outland outpost and moves Maiev to Outland";
-    protected override string CompletionPopup => "Maiev's Outland outpost have been constructed.";
 
+    /// <inheritdoc/>
+    protected override string CompletionPopup => "Maiev's Outland outpost have been constructed.";
+    /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
     {
       SetUnitPosition(LegendSentinels.Maiev.Unit, -5252, -27597);
