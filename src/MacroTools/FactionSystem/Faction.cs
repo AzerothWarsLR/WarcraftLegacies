@@ -668,7 +668,7 @@ namespace MacroTools.FactionSystem
         .Select(x => x.Player)
         .ToList();
       
-      if (eligiblePlayers != null && eligiblePlayers.Count > 1 && GameTime.GetGameTime() > 60)
+      if (eligiblePlayers != null && eligiblePlayers.Any() && GameTime.GetGameTime() > 60)
       {
         DistributeUnits(eligiblePlayers);
         DistributeResources(eligiblePlayers);
