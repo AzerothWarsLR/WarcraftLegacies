@@ -13,6 +13,8 @@ namespace WarcraftLegacies.Source.Setup
         WarsongDialogueSetup.Setup();
         DruidsDialogueSetup.Setup();
         LordaeronDialogueSetup.Setup();
+        IllidariDialogueSetup.Setup();
+        SentinelsDialogueSetup.Setup();
       }
       catch (Exception ex)
       {

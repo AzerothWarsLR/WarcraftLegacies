@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using MacroTools.ArtifactSystem;
 using MacroTools.Extensions;
+using WCSharp.Events;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
@@ -38,6 +39,11 @@ namespace MacroTools.LegendSystem
     ///   Fired when the <see cref="Legend" /> permanently dies.
     /// </summary>
     public event EventHandler<LegendaryHero>? PermanentlyDied;
+
+    /// <summary>
+    /// Invoked when the <see cref="LegendaryHero"/> deals damage.
+    /// </summary>
+    public event EventHandler? DealtDamage;
     
     /// <summary>
     ///   If true, the Legend is permanently removed from the game upon death.
@@ -210,6 +216,10 @@ namespace MacroTools.LegendSystem
         {
           OnChangeOwner(new LegendChangeOwnerEventArgs(this, GetChangingUnitPrevOwner()));
         });
+      PlayerUnitEvents.Register(UnitEvent.Damaging, () =>
+      {
+        DealtDamage?.Invoke(this, EventArgs.Empty);
+      }, Unit);
       SetUnitColor(Unit, HasCustomColor ? _playerColor : GetPlayerColor(GetOwningPlayer(Unit)));
       if (GetHeroXP(Unit) < StartingXp) 
         SetHeroXP(Unit, StartingXp, true);
