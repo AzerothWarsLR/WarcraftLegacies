@@ -10,9 +10,13 @@ namespace MacroTools.DialogueSystem
   public sealed class Dialogue : IHasPlayableDialogue
   {
     private readonly string _caption;
-    private readonly SoundWrapper _sound;
     private readonly string _speaker;
-
+    
+    /// <summary>
+    /// The <see cref="SoundWrapper"/> played by this <see cref="Dialogue"/>.
+    /// </summary>
+    public SoundWrapper Sound { get; }
+    
     /// <summary>
     /// Initializes a new instance of the <see cref="Dialogue"/> class.
     /// </summary>
@@ -23,7 +27,7 @@ namespace MacroTools.DialogueSystem
     {
       _caption = caption;
       _speaker = speaker;
-      _sound = new SoundWrapper(soundFile, soundEax: SoundEax.HeroAcks);
+      Sound = new SoundWrapper(soundFile, soundEax: SoundEax.HeroAcks);
     }
 
     /// <summary>
@@ -33,14 +37,14 @@ namespace MacroTools.DialogueSystem
     {
       if (players != null)
       {
-        _sound.Play(players.Contains, true);
+        Sound.Play(players.Contains, true);
         foreach (var player in players) 
           DisplayTextToPlayer(player, 0, 0, $"|cffffcc00{_speaker}:|r {_caption}");
       }
       else
       {
         DisplayTextToPlayer(GetLocalPlayer(), 0, 0, $"|cffffcc00{_speaker}:|r {_caption}");
-        _sound.Play(true);
+        Sound.Play(true);
       }
     }
   }

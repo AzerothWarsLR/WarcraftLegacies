@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using MacroTools.Extensions;
 using static War3Api.Common;
 
 namespace MacroTools.DialogueSystem
@@ -23,8 +24,14 @@ namespace MacroTools.DialogueSystem
     /// </summary>
     public void Play(List<player>? players)
     {
-      foreach (var dialogue in _dialogues)
-        dialogue.Play(players);
+      CreateTrigger().AddAction(() =>
+      {
+        foreach (var dialogue in _dialogues)
+        {
+          dialogue.Play(players);
+          TriggerWaitForSound(dialogue.Sound.Sound, 0.75f);
+        }
+      }).Execute();
     }
   }
 }
