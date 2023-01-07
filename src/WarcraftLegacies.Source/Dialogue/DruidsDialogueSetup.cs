@@ -1,5 +1,10 @@
 ﻿using System;
+using System.Collections.Generic;
 using MacroTools.DialogueSystem;
+using MacroTools.FactionSystem;
+using MacroTools.ObjectiveSystem.Objectives;
+using WarcraftLegacies.Source.Setup.FactionSetup;
+using WarcraftLegacies.Source.Setup.Legends;
 
 namespace WarcraftLegacies.Source.Dialogue
 {
@@ -15,9 +20,27 @@ namespace WarcraftLegacies.Source.Dialogue
     {
       try
       {
-        TriggeredDialogueManager.Add(new MacroTools.DialogueSystem.Dialogue(soundFile: @"Sound\Dialogue\OrcCampaign\Orc05\O05Cenarius01",
+        DialogueManager.Add(new MacroTools.DialogueSystem.Dialogue(
+          objectives: new[]
+          {
+            new ObjectiveControlLegend(LegendDruids.LegendCenarius, false)
+            {
+              EligibleFactions = new List<Faction>
+              {
+                DruidsSetup.Druids
+              }
+            }
+          },
+          soundFile: @"Sound\Dialogue\OrcCampaign\Orc05\O05Cenarius01",
           caption: "Who dares defile this ancient land? Who dares the wrath of Cenarius and the Night Elves?",
-          speaker: "Cenarius"
+          speaker: "Cenarius",
+          audience: new[]
+          {
+            SentinelsSetup.Sentinels,
+            DruidsSetup.Druids,
+            FrostwolfSetup.Frostwolf,
+            WarsongSetup.WarsongClan
+          }
         ));
       }
       catch (Exception ex)
