@@ -6,7 +6,7 @@ using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Naga
 {
-  //todo: flavour doesn't make any sense
+  
   /// <summary>
   /// Capture control points in Nazjatar to unlock a hero
   /// </summary>
@@ -29,10 +29,10 @@ namespace WarcraftLegacies.Source.Quests.Naga
 
     /// <inheritdoc/>
     protected override string CompletionPopup =>
-      "Now that Nazjatar is under Illidan's control, Lady Vashj's champion Lord Naj'entus has joined Illidan's forces!";
+      "Now that the sea floor is under Illidan's control, Lady Vashj's champion Lord Naj'entus has joined Illidan's forces.";
 
     /// <inheritdoc/>
-    protected override string RewardDescription => "The hero Naj'entus is now trainable at the altar.";
+    protected override string RewardDescription => $" Naj'entus can be trained from the {GetObjectName(Constants.UNIT_NNAD_ALTAR_OF_THE_BETRAYER_ILLIDARI_ALTAR)}";
 
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)

@@ -1,10 +1,10 @@
 ﻿using MacroTools.ControlPointSystem;
 using MacroTools.ObjectiveSystem.Objectives;
 using MacroTools.QuestSystem;
-
+using static War3Api.Common;
 namespace WarcraftLegacies.Source.Quests.Naga
 {
-  //todo: fix incorrect grammar
+
   /// <summary>
   /// Caputre various control points to unlock Sea Witches
   /// </summary>
@@ -23,9 +23,9 @@ namespace WarcraftLegacies.Source.Quests.Naga
     }
 
     /// <inheritdoc/>
-    protected override string CompletionPopup => "The Naga are serving their Master once again!";
+    protected override string CompletionPopup => "The powerful Sea Witches are serving their Master once again.";
 
     /// <inheritdoc/>
-    protected override string RewardDescription => "The powerful Sea Witches are now trainable at the Betrayer's Citadel.";
+    protected override string RewardDescription => $"Sea Witches can be trained from the {GetObjectName(Constants.UNIT_N055_BETRAYER_S_CITADEL_ILLIDARI_T3)}";
   }
 }

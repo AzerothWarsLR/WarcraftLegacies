@@ -39,15 +39,14 @@ namespace WarcraftLegacies.Source.Quests.Naga
     /// <inheritdoc/>
     /// </summary>
     protected override string CompletionPopup =>
-      "The Draenai of the Ashtongue tribe have joined our cause!";
+      "The Draenai of the Ashtongue tribe have joined our cause.";
 
     /// <summary>
     /// <inheritdoc/>
     /// </summary>
     protected override string RewardDescription =>
-      "Gain control of the Draenei camp.\n" +
-      "Allows construction of the Draenei Hut.\n" +
-      "The hero Akama is now trainable at the altar.";
+      $"Gain control of the Draenei camp in Outland, allows construction of the Draenei Hut and Akama can be trained from the {GetObjectName(Constants.UNIT_NNAD_ALTAR_OF_THE_BETRAYER_ILLIDARI_ALTAR)}";
+
 
     /// <summary>
     /// <inheritdoc/>

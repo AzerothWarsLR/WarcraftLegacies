@@ -21,7 +21,7 @@ namespace WarcraftLegacies.Source.Quests.Naga
     /// </summary>
     /// <param name="rescueRect"></param>
     public QuestBlackTemple(Rectangle rescueRect) : base("Seat of Power",
-      "Illidan requires the aid of his servants in outland for the upcoming war. He must travel to outland to muster them. His incredible power allows him to move between worlds with ease.",
+      $"Illidan requires the aid of his servants in Outland for the upcoming war. He must travel to the Black Temple to muster them. His incredible power allows him to move between worlds with ease.",
       "ReplaceableTextures\\CommandButtons\\BTNWarpPortal.blp")
     {
       AddObjective(new ObjectiveLegendInRect(LegendNaga.LegendIllidan, Regions.IllidanBlackTempleUnlock, "Black Temple"));
@@ -32,10 +32,10 @@ namespace WarcraftLegacies.Source.Quests.Naga
     }
 
     /// <inheritdoc />
-    protected override string CompletionPopup => "The forces of Outland are now under Illidan's Command!";
+    protected override string CompletionPopup => "The forces of Outland are now under Illidan's command.";
 
     /// <inheritdoc />
-    protected override string RewardDescription => "Gain control of the Black Temple.";
+    protected override string RewardDescription => $"Gain control of the Black Temple";
 
     /// <inheritdoc />
     protected override void OnFail(Faction completingFaction)
