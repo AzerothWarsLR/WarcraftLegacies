@@ -19,7 +19,6 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       LegionSetup.Legion.AddQuest(new QuestSummonLegion(Regions.TwistingNether,
         preplacedUnitSystem.GetUnit(Constants.UNIT_N03C_DEMON_PORTAL_NETHER)));
       LegionSetup.Legion.AddQuest(new QuestConsumeTree());
-      LegionSetup.Legion.AddQuest(new QuestDreadlordInsurgent());
     }
   }
 }
