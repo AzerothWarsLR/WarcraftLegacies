@@ -25,9 +25,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
         IntroText = @"You are playing as the long-enduring |cffe4bc00Kingdom of Ironforge.
                     |r
 You begin in the Wetlands, separated from the rest of your forces. Conquer Loch Modan and Dun Morough to gain access to Ironforge.
-
-The Dragonmaw Clan is gathering in the Twilight Highlands to raid your lands in preparation to flee via Portal. Pepare your defenses or bring the fight to them.
-
+ 
 Stormwind is preparing for an invasion through the Dark Portal in the South. Muster the throng and help them, or you may lose your strongest ally."
       };
 
