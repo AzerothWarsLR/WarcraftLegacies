@@ -33,6 +33,7 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
       _anyUnitInRect = new ObjectiveAnyUnitInRect(_highBourneArea, "the Athenaeum", true);
       AddObjective(_anyUnitInRect);
       AddObjective(new ObjectiveNoOtherPlayerGetsArtifact(scepterOfTheQueen));
+      Required = true;
     }
 
     private readonly List<unit> _highBourneAreaUnits;
@@ -51,7 +52,7 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
     /// <inheritdoc/>
     protected override void OnComplete(Faction whichFaction)
     {
-      _anyUnitInRect.CompletingUnit.AddItemSafe(_scepterOfTheQueen.Item);
+      _anyUnitInRect.CompletingUnit?.AddItemSafe(_scepterOfTheQueen.Item);
       whichFaction.Player?.RescueGroup(_highBourneAreaUnits);
     }
     

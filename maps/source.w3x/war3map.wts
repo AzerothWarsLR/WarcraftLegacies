@@ -94287,6 +94287,12 @@ STRING 15717
 Yak
 }
 
+STRING 15718
+// Units: Eevi (Betrayer), Ubertip (Tooltip - Extended)
+{
+Deadly Hero, adept at wading into the fray and cutting down key targets. |n|cfff5962dAbilities:|r Metamorphosis, Portal to Black Temple |n|cfff5962dCan learn:|R Fel Rift, Demon Rage, Demonic Sheld, Warglaives of Azzinoth|n|n|cffffcc00Attacks land units.|R
+}
+
 STRING 15719
 // Units: n06M (Residence), Ubertip (Tooltip - Extended)
 {
@@ -97093,6 +97099,12 @@ STRING 16186
 // Upgrades: R08W (Chaos), Name (Name)
 {
 Quest Completed: Lord of the Depths
+}
+
+STRING 16187
+// Upgrades: R097 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+{
+E
 }
 
 STRING 16188
@@ -106885,7 +106897,7 @@ STRING 17974
 }
 
 STRING 17975
-// Abilities: A07D (Portal to Black Temple), Hotkey (Hotkey - Normal)
+// Upgrades: Rorb (Reinforced Defenses), Hotkey (Hotkey)
 {
 F
 }
@@ -106948,12 +106960,6 @@ STRING 17985
 // Abilities: A0TN (Harvest), Unubertip (Tooltip - Turn Off - Extended)
 {
 Returns carried lumber.
-}
-
-STRING 17986
-// Upgrades: Rorb (Reinforced Defenses), Hotkey (Hotkey)
-{
-F
 }
 
 STRING 17987
@@ -108650,7 +108656,7 @@ Adds <ACbk,DataA1> bonus damage to attacks. Units killed while under the effect 
 }
 
 STRING 18306
-// Upgrades: Rhlh (Improved Lumber Harvesting,Advanced Lumber Harvesting), Hotkey (Hotkey)
+// Abilities: A07D (Portal to Black Temple), Hotkey (Hotkey - Normal)
 {
 E
 }
@@ -108968,7 +108974,7 @@ Q
 }
 
 STRING 18372
-// Upgrades: Renb (Nature's Blessing), Hotkey (Hotkey)
+// Upgrades: Rhlh (Improved Lumber Harvesting,Advanced Lumber Harvesting), Hotkey (Hotkey)
 {
 E
 }
@@ -109484,7 +109490,7 @@ Q
 }
 
 STRING 18468
-// Upgrades: R06K (Defend), Hotkey (Hotkey)
+// Upgrades: Renb (Nature's Blessing), Hotkey (Hotkey)
 {
 E
 }
@@ -109802,7 +109808,7 @@ Summon Fire Wyrm
 }
 
 STRING 18527
-// Upgrades: R06G (Defend), Hotkey (Hotkey)
+// Upgrades: R06K (Defend), Hotkey (Hotkey)
 {
 E
 }
@@ -109898,7 +109904,7 @@ Q
 }
 
 STRING 18547
-// Upgrades: R06F (Defend), Hotkey (Hotkey)
+// Upgrades: R06G (Defend), Hotkey (Hotkey)
 {
 E
 }
@@ -110301,7 +110307,7 @@ Q
 }
 
 STRING 18640
-// Upgrades: R064 (Nature's Blessing), Hotkey (Hotkey)
+// Upgrades: R06F (Defend), Hotkey (Hotkey)
 {
 E
 }
@@ -111039,7 +111045,7 @@ STRING 18772
 }
 
 STRING 18773
-// Upgrades: R03M (Defend), Hotkey (Hotkey)
+// Upgrades: R064 (Nature's Blessing), Hotkey (Hotkey)
 {
 E
 }
@@ -111231,7 +111237,7 @@ Deactivate Aegis of Ragnaros
 }
 
 STRING 18812
-// Upgrades: R02P (Backpack), Hotkey (Hotkey)
+// Upgrades: R03M (Defend), Hotkey (Hotkey)
 {
 E
 }
@@ -111465,7 +111471,7 @@ STRING 18875
 }
 
 STRING 18877
-// Upgrades: R03O (Animal War Training), Hotkey (Hotkey)
+// Upgrades: R02P (Backpack), Hotkey (Hotkey)
 {
 E
 }
@@ -112035,7 +112041,7 @@ E
 }
 
 STRING 18979
-// Upgrades: R097 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R03O (Animal War Training), Hotkey (Hotkey)
 {
 E
 }
@@ -114487,12 +114493,6 @@ STRING 19450
 // Units: Eill (The Betrayer), Tip (Tooltip - Basic)
 {
 Summon The Betrayer
-}
-
-STRING 19451
-// Units: Eevi (Betrayer), Ubertip (Tooltip - Extended)
-{
-Deadly Hero, adept at wading into the fray and cutting down key targets. |n|cfff5962dAbilities:|r Metamorphosis |n|cfff5962dCan learn:|R Fel Rift, Demon Rage, Demonic Sheld, Warglaives of Azzinoth|n|n|cffffcc00Attacks land units.|R
 }
 
 STRING 19452
