@@ -50,9 +50,9 @@ namespace WarcraftLegacies.Source.Dialogue
             "Brother? What are you doing here?",
             "Illidan Stormrage"), 
             new MacroTools.DialogueSystem.Dialogue(
-              @"Sound\Dialogue\NightElfExpCamp\NightElf05x\S05Illidan38",
-              "Brother? What are you doing here?",
-              "Illidan Stormrage")),
+              @"Sound\Dialogue\NightElfExpCamp\NightElf05x\S05Furion39",
+              "I've come to stop you, Illidan. Instead of banishing you, I should have returned you to your cage when I had the chance! I was weak then--but no longer.",
+              "Malfurion Stormrage")),
           new[]
           {
             IllidariSetup.Illidari,
