@@ -55,7 +55,8 @@ namespace WarcraftLegacies.Source.Researches.Ironforge
     {
       foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
       {
-        player.GetFaction()?.ModObjectLimit(ResearchId, -1);
+        if (player != GetTriggerPlayer())
+          player.GetFaction()?.ModObjectLimit(ResearchId, -1);
       }
     }
 
@@ -63,7 +64,8 @@ namespace WarcraftLegacies.Source.Researches.Ironforge
     {
       foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
       {
-        player.GetFaction()?.ModObjectLimit(ResearchId, 1);
+        if (player != GetTriggerPlayer())
+          player.GetFaction()?.ModObjectLimit(ResearchId, 1);
       }
     }
 
