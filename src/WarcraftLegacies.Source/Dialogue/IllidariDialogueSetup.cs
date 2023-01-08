@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using MacroTools.DialogueSystem;
 using MacroTools.FactionSystem;
+using MacroTools.ObjectiveSystem;
 using MacroTools.ObjectiveSystem.Objectives;
 using WarcraftLegacies.Source.Setup.FactionSetup;
 using WarcraftLegacies.Source.Setup.Legends;
@@ -46,9 +47,9 @@ namespace WarcraftLegacies.Source.Dialogue
       TriggeredDialogueManager.Add(
         new TriggeredDialogue(
           new DialogueSequence(new MacroTools.DialogueSystem.Dialogue(
-            @"Sound\Dialogue\NightElfExpCamp\NightElf05x\S05Illidan38",
-            "Brother? What are you doing here?",
-            "Illidan Stormrage"), 
+              @"Sound\Dialogue\NightElfExpCamp\NightElf05x\S05Illidan38",
+              "Brother? What are you doing here?",
+              "Illidan Stormrage"),
             new MacroTools.DialogueSystem.Dialogue(
               @"Sound\Dialogue\NightElfExpCamp\NightElf05x\S05Furion39",
               "I've come to stop you, Illidan. Instead of banishing you, I should have returned you to your cage when I had the chance! I was weak then--but no longer.",
@@ -96,6 +97,20 @@ namespace WarcraftLegacies.Source.Dialogue
                 }
               })
           }));
+
+      TriggeredDialogueManager.Add(new TriggeredDialogue(
+        new MacroTools.DialogueSystem.Dialogue(@"Sound\Dialogue\NightElfExpCamp\NightElf02x\S02Illidan45.flac",
+          "At last! The Tomb of Sargeras is found!",
+          "Illidan Stormrage")
+        , new[]
+        {
+          IllidariSetup.Illidari
+        }, new List<Objective>
+        {
+          new ObjectiveLegendReachRect(LegendNaga.LegendIllidan, Regions.Sargeras_Entrance,
+            "the Tomb of Sargeras' entrance")
+        }
+      ));
     }
   }
 }

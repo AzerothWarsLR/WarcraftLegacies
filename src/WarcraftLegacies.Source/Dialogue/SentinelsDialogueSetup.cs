@@ -73,6 +73,30 @@ namespace WarcraftLegacies.Source.Dialogue
           new ObjectiveLegendMeetsLegend(LegendSentinels.Tyrande, LegendLegion.LEGEND_ARCHIMONDE)
         }
       ));
+      
+      TriggeredDialogueManager.Add(new TriggeredDialogue(
+        new DialogueSequence(
+          new MacroTools.DialogueSystem.Dialogue(@"Sound\Dialogue\NightElfExpCamp\NightElf02x\S02Maiev02.flac",
+            "I suspected as much. These islands must have been formed only recently.",
+            "Maiev Shadowsong"),
+          new MacroTools.DialogueSystem.Dialogue(@"Sound\Dialogue\NightElfExpCamp\NightElf02x\S02Naisha03.flac",
+            "What makes you say that?",
+            "Naisha"),
+          new MacroTools.DialogueSystem.Dialogue(@"Sound\Dialogue\NightElfExpCamp\NightElf02x\S02Maiev04.flac",
+            "The ruins all around us, Naisha... I recognize them.",
+            "Maiev Shadowsong"),
+          new MacroTools.DialogueSystem.Dialogue(@"Sound\Dialogue\NightElfExpCamp\NightElf02x\S02Maiev05.flac",
+            "This was once the great city of Suramar, built before our civilization was blasted beneath the sea ten thousand years ago.",
+            "Maiev Shadowsong")
+        )
+        , new[]
+        {
+          SentinelsSetup.Sentinels
+        }, new List<Objective>
+        {
+          new ObjectiveLegendReachRect(LegendSentinels.Maiev, Regions.BrokenIslesA, "the Broken Isles")
+        }
+      ));
     }
   }
 }
