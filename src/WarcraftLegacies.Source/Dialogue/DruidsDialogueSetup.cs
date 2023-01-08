@@ -73,6 +73,23 @@ namespace WarcraftLegacies.Source.Dialogue
           new ObjectiveUnitAlive(preplacedUnitSystem.GetUnit(Constants.UNIT_NSTH_SATYR_HELLCALLER, Regions.SatyrCamp.Center)),
           new ObjectiveLegendInRect(LegendDruids.LegendMalfurion, Regions.SatyrCamp, "Satyr camp")
         }));
+      
+      TriggeredDialogueManager.Add(new TriggeredDialogue(
+          new MacroTools.DialogueSystem.Dialogue(
+            @"Sound\Dialogue\NightElfCampaign\NightElf03\N03Furion22",
+            "The horn has sounded, and I have come as promised! I smell the stench of decay and corruption in our land. That angers me greatly.",
+            "Malfurion Stormrage"),
+          new[] { DruidsSetup.Druids },
+        new Objective[]
+        {
+          new ObjectiveControlLegend(LegendDruids.LegendMalfurion, false)
+          {
+            EligibleFactions = new List<Faction>
+            {
+              DruidsSetup.Druids
+            }
+          }
+        }));
     }
   }
 }
