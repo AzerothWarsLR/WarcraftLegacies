@@ -92,9 +92,7 @@ namespace WarcraftLegacies.Source.Dialogue
               {
                 EligibleFactions = new List<Faction>
                 {
-                  IllidariSetup.Illidari,
-                  DruidsSetup.Druids,
-                  SentinelsSetup.Sentinels
+                  IllidariSetup.Illidari
                 }
               })
           }));
