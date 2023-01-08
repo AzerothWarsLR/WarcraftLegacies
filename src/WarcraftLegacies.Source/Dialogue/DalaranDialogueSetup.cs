@@ -48,7 +48,18 @@ namespace WarcraftLegacies.Source.Dialogue
             }
           }));
       
-      
+      TriggeredDialogueManager.Add(
+        new TriggeredDialogue(new MacroTools.DialogueSystem.Dialogue(
+          soundFile: @"Sound\Dialogue\HumanCampaign\Human05\H05Jaina01.flac",
+          caption:
+          "Hearthglen, finally! I could use some rest!",
+          speaker: "Jaina Proudmoore"), new[]
+        {
+          DalaranSetup.Dalaran,
+        }, new[]
+        {
+          new ObjectiveLegendInRect(LegendDalaran.LegendJaina, Regions.Hearthglen, "Hearthglen")
+        }));
     }
   }
 }
