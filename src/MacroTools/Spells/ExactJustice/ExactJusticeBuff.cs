@@ -33,5 +33,12 @@ namespace MacroTools.Spells.ExactJustice
     {
       DestroyTrigger(_noDamageTrigger);
     }
+    
+    /// <inheritdoc />
+    public override StackResult OnStack(Buff newStack)
+    {
+      Stacks++;
+      return StackResult.Stack;
+    }
   }
 }

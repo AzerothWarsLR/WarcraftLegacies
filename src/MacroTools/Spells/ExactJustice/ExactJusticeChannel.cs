@@ -75,7 +75,9 @@ namespace MacroTools.Spells.ExactJustice
       _aura = new ExactJusticeAura(Caster)
       {
         Radius = Radius,
-        Duration = float.MaxValue,
+        Active = true,
+        Duration = 1.1f,
+        SearchInterval = 1
       };
       AuraSystem.Add(_aura);
     }
