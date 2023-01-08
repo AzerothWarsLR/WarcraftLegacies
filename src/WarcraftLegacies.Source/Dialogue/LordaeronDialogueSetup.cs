@@ -73,10 +73,24 @@ namespace WarcraftLegacies.Source.Dialogue
           }));
       
       TriggeredDialogueManager.Add(
-        new TriggeredDialogue(new MacroTools.DialogueSystem.Dialogue(
+        new TriggeredDialogue(new DialogueSequence(
+          new MacroTools.DialogueSystem.Dialogue(
           @"Sound\Dialogue\HumanCampaign\Human07\H07Captain01",
           "This is a Light-forsaken land, isn't it? You can barely even see the sun! This howling wind cuts to the bone and you're not even shaking. Mi'lord, are you alright?",
-          "Captain Falric"), new[]
+          "Captain Falric"),
+          new MacroTools.DialogueSystem.Dialogue(
+            @"Sound\Dialogue\HumanCampaign\Human07\H07Arthas02",
+            "Captain, are all my forces accounted for?",
+            "Arthas Menethil"),
+          new MacroTools.DialogueSystem.Dialogue(
+            @"Sound\Dialogue\HumanCampaign\Human07\H07Captain03",
+            "Nearly. There are only a few ships that--",
+            "Captain Falric"),
+          new MacroTools.DialogueSystem.Dialogue(
+            @"Sound\Dialogue\HumanCampaign\Human07\H07Arthas04",
+            "Very well. Our first priority is to set up a base camp with proper defenses. There's no telling what's waiting for us out there in the shadows.",
+            "Arthas Menethil")
+          ), new[]
         {
           LordaeronSetup.Lordaeron
         }, new Objective[]
@@ -164,6 +178,25 @@ namespace WarcraftLegacies.Source.Dialogue
           }, new Objective[]
           {
             new ObjectiveCompleteQuest(ScourgeSetup.Scourge.GetQuestByType(typeof(QuestCorruptArthas)))
+          }));
+      
+      TriggeredDialogueManager.Add(
+        new TriggeredDialogue(
+          new MacroTools.DialogueSystem.Dialogue(
+              @"Sound\Dialogue\HumanCampaign\Human07\H07Arthas26",
+              "That has to be where Mal'Ganis is hiding! I want that base leveled!",
+              "Arthas Menethil"),
+            new[]
+          {
+            LordaeronSetup.Lordaeron,
+            LegionSetup.Legion
+          }, new Objective[]
+          {
+            new ObjectiveLegendInRect(LegendLordaeron.Arthas, Regions.DrakUnlock, ""),
+            new ObjectiveControlLegend(LegendLordaeron.Arthas, false)
+            {
+              EligibleFactions = new List<Faction> { LordaeronSetup.Lordaeron }
+            }
           }));
     }
   }
