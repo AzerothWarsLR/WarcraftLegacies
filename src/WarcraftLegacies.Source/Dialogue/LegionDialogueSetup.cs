@@ -32,6 +32,44 @@ namespace WarcraftLegacies.Source.Dialogue
           new ObjectiveLegendMeetsLegend(LegendLegion.LEGEND_TICHONDRIUS, LegendNaga.LegendIllidan)
         }
       ));
+      
+      TriggeredDialogueManager.Add(new TriggeredDialogue(
+        new DialogueSequence(
+          new MacroTools.DialogueSystem.Dialogue(@"Sound\Dialogue\NightElfCampaign\NightElf07\N07Archimonde14.flac",
+            "You orcs are weak, and hardly worth the effort. I wonder why Mannoroth even bothered with you.",
+            "Archimonde"),
+          new MacroTools.DialogueSystem.Dialogue(@"Sound\Dialogue\NightElfCampaign\NightElf07\N07Thrall15.flac",
+            "Our spirit is stronger than you know, demon! If we are to fall, then so be it! At least now... we are free!",
+            "Thrall")
+        )
+        , new[]
+        {
+          LegionSetup.Legion,
+          FrostwolfSetup.Frostwolf
+        }, new List<Objective>
+        {
+          new ObjectiveLegendMeetsLegend(LegendLegion.LEGEND_ARCHIMONDE, LegendFrostwolf.LegendThrall)
+        }
+      ));
+      
+      TriggeredDialogueManager.Add(new TriggeredDialogue(
+        new DialogueSequence(
+          new MacroTools.DialogueSystem.Dialogue(@"Sound\Dialogue\NightElfCampaign\NightElf07\N07Archimonde21.flac",
+            "You are very brave to stand against me, little human. If only your countrymen had been as bold, I would have had more fun scouring your wretched nations from the world!",
+            "Archimonde"),
+          new MacroTools.DialogueSystem.Dialogue(@"Sound\Dialogue\NightElfCampaign\NightElf07\N07Jaina22.flac",
+            "Is talking all you demons do?",
+            "Jaina Proudmoore")
+        )
+        , new[]
+        {
+          LegionSetup.Legion,
+          DalaranSetup.Dalaran
+        }, new List<Objective>
+        {
+          new ObjectiveLegendMeetsLegend(LegendLegion.LEGEND_ARCHIMONDE, LegendDalaran.LegendJaina)
+        }
+      ));
     }
   }
 }
