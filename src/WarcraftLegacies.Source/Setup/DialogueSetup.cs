@@ -13,7 +13,7 @@ namespace WarcraftLegacies.Source.Setup
         ScourgeDialogueSetup.Setup();
         WarsongDialogueSetup.Setup();
         DruidsDialogueSetup.Setup(preplacedUnitSystem);
-        LordaeronDialogueSetup.Setup();
+        LordaeronDialogueSetup.Setup(preplacedUnitSystem);
         IllidariDialogueSetup.Setup();
         SentinelsDialogueSetup.Setup();
         FrostwolfDialogueSetup.Setup();
