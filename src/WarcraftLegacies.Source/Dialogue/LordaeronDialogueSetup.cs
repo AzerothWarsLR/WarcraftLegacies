@@ -19,7 +19,7 @@ namespace WarcraftLegacies.Source.Dialogue
         new TriggeredDialogue(
           new DialogueSequence(
             new MacroTools.DialogueSystem.Dialogue(
-            @"Sound\Dialogue\HumanCampaign\Human07\H01Uther01",
+            @"Sound\Dialogue\HumanCampaign\Human01\H01Uther01",
             "Welcome, Prince Arthas. The men and I are honored by your presence.",
             "Uther the Lightbringer"), 
             new MacroTools.DialogueSystem.Dialogue(
@@ -28,7 +28,7 @@ namespace WarcraftLegacies.Source.Dialogue
               "Arthas Menethil"),
             new MacroTools.DialogueSystem.Dialogue(
               @"Sound\Dialogue\HumanCampaign\Human01\H01Uther03",
-              "Welcome, Prince Arthas. The men and I are honored by your presence.",
+              "You too, lad. I'm pleased that King Terenas sent you to help me.",
               "Uther the Lightbringer"),
             new MacroTools.DialogueSystem.Dialogue(
               @"Sound\Dialogue\HumanCampaign\Human01\H01Arthas04",
@@ -57,7 +57,7 @@ namespace WarcraftLegacies.Source.Dialogue
             new MacroTools.DialogueSystem.Dialogue(
               @"Sound\Dialogue\HumanCampaign\Human02\H02Blademaster11",
               "Paladin fool! The warlocks of the Blackrock clan have spoken! Soon, demons will rain from the sky, and this wretched world will burn!",
-              "Jubei'this"), 
+              "Jubei'thos"), 
             new MacroTools.DialogueSystem.Dialogue(
               @"Sound\Dialogue\HumanCampaign\Human02\H02Uther12",
               "Yes, I've heard this rhetoric before. You orcs will never learn!",
@@ -69,7 +69,7 @@ namespace WarcraftLegacies.Source.Dialogue
           }, new Objective[]
           {
             new ObjectiveLegendInRect(LegendLordaeron.Uther, Regions.AlteracAmbient, "Alterac"),
-            new ObjectiveUnitIsDead(preplacedUnitSystem.GetUnit(Constants.UNIT_O00B_JUBEI_THOS_LEGION_DEMI, new Point(11066, 6291)))
+            new ObjectiveUnitAlive(preplacedUnitSystem.GetUnit(Constants.UNIT_O00B_JUBEI_THOS_LEGION_DEMI, new Point(11066, 6291)))
           }));
       
       TriggeredDialogueManager.Add(
