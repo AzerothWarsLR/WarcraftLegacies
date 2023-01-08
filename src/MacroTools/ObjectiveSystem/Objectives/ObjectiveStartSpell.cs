@@ -21,7 +21,7 @@ namespace MacroTools.ObjectiveSystem.Objectives
     /// <param name="requiredLegend">The <see cref="Legend"/> that must cast the spell. If null, anyone can cast the spell.</param>
     public ObjectiveStartSpell(int spellId, bool holderOnly, Legend? requiredLegend = null)
     {
-      PlayerUnitEvents.Register(UnitTypeEvent.SpellCast, OnCast, spellId);
+      PlayerUnitEvents.Register(SpellEvent.Cast, OnCast, spellId);
       Description = holderOnly ? $"Start casting {GetObjectName(spellId)}" : $"Anyone starts casting {GetObjectName(spellId)}";
       _holderOnly = holderOnly;
       _requiredLegend = requiredLegend;
