@@ -41628,6 +41628,12 @@ STRING 6938
 - Arcane Missile,- Arcane Missile|n- Suppression,- Arcane Missile|n- Suppression|n- Summon Zombie
 }
 
+STRING 6939
+// Units: n033 (Shadowforge City (20gold/min)), Name (Name)
+{
+Shadowforge City (20gold/min)
+}
+
 STRING 6940
 // Units: n0AV (Altar of Madness), Name (Name)
 {
