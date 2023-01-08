@@ -64,6 +64,7 @@ Support your ally in Outland by defeating Kul'tiras and invading Stormwind to dr
 
       Illidari.ModObjectLimit(FourCC("Rnsw"), Faction.UNLIMITED); //Siren Adept Training
       Illidari.ModObjectLimit(FourCC("R02V"), Faction.UNLIMITED); //Shadowcaster Adept Training
+      Illidari.ModObjectLimit(FourCC("R00K"), Faction.UNLIMITED); //Power Infusion
 
       FactionManager.Register(Illidari);
     }
