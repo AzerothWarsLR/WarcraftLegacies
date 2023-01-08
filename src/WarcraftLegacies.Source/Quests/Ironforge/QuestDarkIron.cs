@@ -15,7 +15,7 @@ namespace WarcraftLegacies.Source.Quests.Ironforge
   public sealed class QuestDarkIron : QuestData
   {
     private const int HeroId = Constants.UNIT_H03G_EMPEROR_OF_BLACKROCK_IRONFORGE;
-    private readonly List<unit> _rescueUnits = new();
+    private readonly List<unit> _rescueUnits;
     
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestDarkIron"/> class.
@@ -25,8 +25,8 @@ namespace WarcraftLegacies.Source.Quests.Ironforge
       "ReplaceableTextures\\CommandButtons\\BTNRPGDarkIron.blp")
     {
       AddObjective(new ObjectiveCapitalDead(LegendFelHorde.LegendBlacktemple));
-      AddObjective(new ObjectiveLegendInRect(LegendIronforge.LegendMagni, Regions.Shadowforge_City,
-        "Shadowforge"));
+      AddObjective(new ObjectiveLegendInRect(LegendIronforge.LegendMagni, shadowforgeCity,
+        "Shadowforge City"));
       AddObjective(new ObjectiveSelfExists());
       ResearchId = Constants.UPGRADE_R01A_QUEST_COMPLETED_DARK_IRON_ALLIANCE;
       _rescueUnits = shadowforgeCity.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
