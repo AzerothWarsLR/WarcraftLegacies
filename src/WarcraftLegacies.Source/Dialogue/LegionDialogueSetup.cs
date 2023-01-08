@@ -2,6 +2,7 @@
 using MacroTools.DialogueSystem;
 using MacroTools.ObjectiveSystem;
 using MacroTools.ObjectiveSystem.Objectives;
+using WarcraftLegacies.Source.Quests.Legion;
 using WarcraftLegacies.Source.Setup.FactionSetup;
 using WarcraftLegacies.Source.Setup.Legends;
 
@@ -32,7 +33,7 @@ namespace WarcraftLegacies.Source.Dialogue
           new ObjectiveLegendMeetsLegend(LegendLegion.LEGEND_TICHONDRIUS, LegendNaga.LegendIllidan)
         }
       ));
-      
+
       TriggeredDialogueManager.Add(new TriggeredDialogue(
         new DialogueSequence(
           new MacroTools.DialogueSystem.Dialogue(@"Sound\Dialogue\NightElfCampaign\NightElf07\N07Archimonde14.flac",
@@ -51,7 +52,7 @@ namespace WarcraftLegacies.Source.Dialogue
           new ObjectiveLegendMeetsLegend(LegendLegion.LEGEND_ARCHIMONDE, LegendFrostwolf.LegendThrall)
         }
       ));
-      
+
       TriggeredDialogueManager.Add(new TriggeredDialogue(
         new DialogueSequence(
           new MacroTools.DialogueSystem.Dialogue(@"Sound\Dialogue\NightElfCampaign\NightElf07\N07Archimonde21.flac",
@@ -68,6 +69,16 @@ namespace WarcraftLegacies.Source.Dialogue
         }, new List<Objective>
         {
           new ObjectiveLegendMeetsLegend(LegendLegion.LEGEND_ARCHIMONDE, LegendDalaran.LegendJaina)
+        }
+      ));
+
+      TriggeredDialogueManager.Add(new TriggeredDialogue(
+        new MacroTools.DialogueSystem.Dialogue(@"Sound\Dialogue\NightElfCampaign\NightElf07\N07Archimonde28.flac",
+          "At last, the way to the World Tree is clear! Witness the end, you mortals! The final hour has come.",
+          "Archimonde")
+        , null, new List<Objective>
+        {
+          new ObjectiveCompleteQuest(LegionSetup.Legion.GetQuestByType(typeof(QuestConsumeTree)))
         }
       ));
     }
