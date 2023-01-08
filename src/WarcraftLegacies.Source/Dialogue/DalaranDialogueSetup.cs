@@ -47,6 +47,8 @@ namespace WarcraftLegacies.Source.Dialogue
               }
             }
           }));
+      
+      
     }
   }
 }

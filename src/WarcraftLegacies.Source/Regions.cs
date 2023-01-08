@@ -321,5 +321,6 @@ public static class Regions
 	public static Rectangle IllidanBlackTempleUnlock { get; set; } = new Rectangle(3744f, -31680f, 6720f, -29152f);
 	public static Rectangle BlackTempleBase { get; set; } = new Rectangle(2112f, -31584f, 6496f, -28288f);
 	public static Rectangle SatyrCamp { get; set; } = new Rectangle(-16288f, 5664f, -15360f, 6496f);
+	public static Rectangle FountainOfHealthAlterac { get; set; } = new Rectangle(10656f, 5536f, 11104f, 6016f);
 
 }

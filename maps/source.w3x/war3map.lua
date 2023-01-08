@@ -313,6 +313,7 @@ gg_rct_NaxxramasInstance = nil
 gg_rct_RagnarosSummon = nil
 gg_rct_IllidanBlackTempleUnlock = nil
 gg_rct_BlackTempleBase = nil
+gg_rct_SatyrCamp = nil
 gg_snd_ArcaneObservatoryWhat1 = nil
 gg_snd_ArrangedTeamInvitation = nil
 gg_snd_ClanInvitation = nil
@@ -501,7 +502,7 @@ gg_snd_DoorCloseRemix = nil
 gg_snd_DoorOpenRemix = nil
 gg_snd_NuclearLaunchDetected = nil
 gg_snd_IllidansTheme = ""
-gg_rct_SatyrCamp = nil
+gg_rct_FountainOfHealthAlterac = nil
 function InitGlobals()
 end
 
@@ -7933,6 +7934,7 @@ gg_rct_RagnarosSummon = Rect(12192.0, -10784.0, 12512.0, -10464.0)
 gg_rct_IllidanBlackTempleUnlock = Rect(3744.0, -31680.0, 6720.0, -29152.0)
 gg_rct_BlackTempleBase = Rect(2112.0, -31584.0, 6496.0, -28288.0)
 gg_rct_SatyrCamp = Rect(-16288.0, 5664.0, -15360.0, 6496.0)
+gg_rct_FountainOfHealthAlterac = Rect(10656.0, 5536.0, 11104.0, 6016.0)
 end
 
 function InitUpgrades_Player0()
