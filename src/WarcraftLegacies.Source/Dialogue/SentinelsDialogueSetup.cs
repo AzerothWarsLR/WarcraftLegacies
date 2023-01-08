@@ -1,4 +1,6 @@
-﻿using MacroTools.DialogueSystem;
+﻿using System.Collections.Generic;
+using MacroTools.DialogueSystem;
+using MacroTools.ObjectiveSystem;
 using MacroTools.ObjectiveSystem.Objectives;
 using WarcraftLegacies.Source.Setup.FactionSetup;
 using WarcraftLegacies.Source.Setup.Legends;
@@ -52,6 +54,25 @@ namespace WarcraftLegacies.Source.Dialogue
         {
           new ObjectiveLegendMeetsLegend(LegendSentinels.Maiev, LegendNaga.LegendIllidan)
         }));
+      
+      TriggeredDialogueManager.Add(new TriggeredDialogue(
+        new DialogueSequence(
+          new MacroTools.DialogueSystem.Dialogue(@"Sound\Dialogue\NightElfCampaign\NightElf02\N02Tyrande03.flac",
+            "Archimonde... After ten thousand years, how is it possible?",
+            "Tyrande Whisperwind"),
+          new MacroTools.DialogueSystem.Dialogue(@"Sound\Dialogue\NightElfCampaign\NightElf02\N02Archimonde04.flac",
+            "The Legion has returned to consume this world, woman. And this time, your troublesome race will not stop us.",
+            "Archimonde")
+        )
+        , new[]
+        {
+          LegionSetup.Legion,
+          SentinelsSetup.Sentinels
+        }, new List<Objective>
+        {
+          new ObjectiveLegendMeetsLegend(LegendSentinels.Tyrande, LegendLegion.LEGEND_ARCHIMONDE)
+        }
+      ));
     }
   }
 }
