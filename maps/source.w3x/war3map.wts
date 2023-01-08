@@ -41628,11 +41628,6 @@ STRING 6938
 - Arcane Missile,- Arcane Missile|n- Suppression,- Arcane Missile|n- Suppression|n- Summon Zombie
 }
 
-STRING 6939
-{
-Warcraft Legacies 2.00
-}
-
 STRING 6940
 // Units: n0AV (Altar of Madness), Name (Name)
 {
@@ -92403,7 +92398,7 @@ Further increases the armor of all Naval Units.
 
 STRING 15405
 {
-Warcraft Legacies 2.00
+Warcraft Legacies 2.01
 }
 
 STRING 15406
@@ -92421,28 +92416,6 @@ Check out the Azeroth Wars Discord server to download the map and chat about the
 STRING 15408
 {
 Lordsebas, HerrDave,YakaryBovine
-}
-
-STRING 15409
-{
-Rise of Illidan
-}
-
-STRING 15410
-{
-Support the team! https://www.patreon.com/lordsebas
-Thank you so much to all our patrons for supporting us!
-
-Fight over the control of Azeroth as one of over 16 factions from the Warcraft III campaign and more!
-
-Credits:
-
-Lead Designers: Lord Sebas, YakaryBovine
-
-Artist and Modeler: HerrDave
-Coders: Tracy, Savantic, Naowsx, Headhunter
-Designers: Richardik, Hellborne
-Discord link: https://discord.gg/4eGZnR5
 }
 
 STRING 15411
