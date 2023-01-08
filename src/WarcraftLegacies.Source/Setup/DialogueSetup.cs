@@ -1,17 +1,18 @@
 ﻿using System;
+using MacroTools;
 using WarcraftLegacies.Source.Dialogue;
 
 namespace WarcraftLegacies.Source.Setup
 {
   public static class DialogueSetup
   {
-    public static void Setup()
+    public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
       try
       {
         ScourgeDialogueSetup.Setup();
         WarsongDialogueSetup.Setup();
-        DruidsDialogueSetup.Setup();
+        DruidsDialogueSetup.Setup(preplacedUnitSystem);
         LordaeronDialogueSetup.Setup();
         IllidariDialogueSetup.Setup();
         SentinelsDialogueSetup.Setup();

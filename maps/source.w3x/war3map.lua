@@ -501,6 +501,7 @@ gg_snd_DoorCloseRemix = nil
 gg_snd_DoorOpenRemix = nil
 gg_snd_NuclearLaunchDetected = nil
 gg_snd_IllidansTheme = ""
+gg_rct_SatyrCamp = nil
 function InitGlobals()
 end
 
@@ -7931,6 +7932,7 @@ gg_rct_NaxxramasInstance = Rect(-14944.0, 21536.0, -12352.0, 24256.0)
 gg_rct_RagnarosSummon = Rect(12192.0, -10784.0, 12512.0, -10464.0)
 gg_rct_IllidanBlackTempleUnlock = Rect(3744.0, -31680.0, 6720.0, -29152.0)
 gg_rct_BlackTempleBase = Rect(2112.0, -31584.0, 6496.0, -28288.0)
+gg_rct_SatyrCamp = Rect(-16288.0, 5664.0, -15360.0, 6496.0)
 end
 
 function InitUpgrades_Player0()

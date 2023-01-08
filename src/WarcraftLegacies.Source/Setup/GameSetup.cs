@@ -70,7 +70,7 @@ namespace WarcraftLegacies.Source.Setup
       BlightSetup.Setup(preplacedUnitSystem);
       QuestMenuSetup.Setup();
       CinematicMode.Start(59);
-      DialogueSetup.Setup();
+      DialogueSetup.Setup(preplacedUnitSystem);
       DisplayIntroText.Setup(10);
       GameSettings.Setup();
       InfoQuests.Setup();
