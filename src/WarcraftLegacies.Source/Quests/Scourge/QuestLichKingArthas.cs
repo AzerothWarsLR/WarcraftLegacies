@@ -1,4 +1,4 @@
-using MacroTools.ArtifactSystem;
+﻿using MacroTools.ArtifactSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives;
@@ -14,13 +14,15 @@ namespace WarcraftLegacies.Source.Quests.Scourge
   {
     private readonly unit _utgardeKeep;
     private readonly Artifact _helmOfDomination;
+    private readonly QuestData _questToCompleteUponCompletion;
 
-    public QuestLichKingArthas(unit utgardeKeep, Artifact helmOfDomination) : base("The Ascension",
+    public QuestLichKingArthas(unit utgardeKeep, Artifact helmOfDomination, QuestData questToCompleteUponCompletion) : base("The Ascension",
       "From within the depths of the Frozen Throne, the Lich King Ner'zhul cries out for his champion. Release the Helm of Domination from its confines and merge its power with that of the Scourge's greatest Death Knight.",
       "ReplaceableTextures\\CommandButtons\\BTNRevenant.blp")
     {
       _utgardeKeep = utgardeKeep;
       _helmOfDomination = helmOfDomination;
+      _questToCompleteUponCompletion = questToCompleteUponCompletion;
       AddObjective(new ObjectiveControlLegend(LegendLordaeron.Arthas, false));
       AddObjective(new ObjectiveLegendLevel(LegendLordaeron.Arthas, 12));
       AddObjective(new ObjectiveResearch(FourCC("R07X"), FourCC("u000")));
@@ -37,6 +39,8 @@ namespace WarcraftLegacies.Source.Quests.Scourge
 
     protected override void OnComplete(Faction completingFaction)
     {
+      SetPlayerTechResearched(completingFaction.Player, Constants.UPGRADE_R07W_REBEL_AGAINST_THE_LEGION_SCOURGE, 1);
+      _questToCompleteUponCompletion.Progress = QuestProgress.Complete;
       PlayThematicMusic("Sound\\Music\\mp3Music\\LichKingTheme.mp3");
       LegendScourge.LegendLichking.DeathMessage =
         "Icecrown Citadel been razed. Unfortunately, the Lich King has already vacated his unholy throne.";
