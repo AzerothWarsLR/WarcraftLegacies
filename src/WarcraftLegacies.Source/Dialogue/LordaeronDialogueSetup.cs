@@ -154,20 +154,20 @@ namespace WarcraftLegacies.Source.Dialogue
         new TriggeredDialogue(
           new DialogueSequence(
             new MacroTools.DialogueSystem.Dialogue(
-              @"Sound\Dialogue\HumanCampaign\Human06\H06Arthas43",
-              "We're going to finish this right now, Mal'Ganis. Just you and me.",
+              @"Sound\Dialogue\HumanCampaign\Human09\H09MalGanis23",
+              "So, you've taken up Frostmourne at the expense of your comrades' lives, just as the Dark Lord said you would. You're stronger than I thought.",
+              "Mal'ganis"),
+            new MacroTools.DialogueSystem.Dialogue(
+              @"Sound\Dialogue\HumanCampaign\Human09\H09Arthas24",
+              "You waste your breath, Mal'Ganis. I heed only the voice of Frostmourne now.",
               "Arthas Menethil"),
             new MacroTools.DialogueSystem.Dialogue(
-              @"Sound\Dialogue\HumanCampaign\Human06\H06MalGanis44",
-              "Brave words. Unfortunately for you, it won't end here. Your journey has just begun, young prince.",
+              @"Sound\Dialogue\HumanCampaign\Human09\H09MalGanis25",
+              "You hear the voice of the Dark Lord. He whispers to you through the blade you wield. What does he say, young human? What does the Dark Lord of the Dead tell you now?",
               "Mal'ganis"),
             new MacroTools.DialogueSystem.Dialogue(
-              @"Sound\Dialogue\HumanCampaign\Human06\H06MalGanis45",
-              "Gather your forces and meet me in the arctic land of Northrend. It is there that we shall settle the score between us. It is there that your true destiny will unfold.",
-              "Mal'ganis"),
-            new MacroTools.DialogueSystem.Dialogue(
-              @"Sound\Dialogue\HumanCampaign\Human06\H06Arthas46",
-              "I'll hunt you to the ends of the earth if I have to! Do you hear me? To the ends of the earth!",
+              @"Sound\Dialogue\HumanCampaign\Human09\H09Arthas26",
+              "He tells me that the time for my vengeance has come.",
               "Arthas Menethil")
           ), 
           new[]
@@ -193,6 +193,27 @@ namespace WarcraftLegacies.Source.Dialogue
           }, new Objective[]
           {
             new ObjectiveLegendInRect(LegendLordaeron.Arthas, Regions.DrakUnlock, ""),
+            new ObjectiveControlLegend(LegendLordaeron.Arthas, false)
+            {
+              EligibleFactions = new List<Faction> { LordaeronSetup.Lordaeron }
+            }
+          }));
+      
+      TriggeredDialogueManager.Add(
+        new TriggeredDialogue(
+          new MacroTools.DialogueSystem.Dialogue(
+            @"Sound\Dialogue\HumanCampaign\Human09\H09MalGanis03",
+            "The Dark Lord said you would come. This is where your journey ends, boy. Trapped and freezing at the roof of the world, with only death to sing the tale of your doom.",
+            "Mal'ganis"),
+          new[]
+          {
+            LordaeronSetup.Lordaeron,
+            LegionSetup.Legion
+          }, new Objective[]
+          {
+            new ObjectiveLegendMeetsLegend(LegendLegion.LEGEND_MALGANIS, LegendLordaeron.Arthas),
+            new ObjectiveLegendInRect(LegendLordaeron.Arthas, Regions.Central_Northrend, ""), //Todo: make this work in any region of Northrend
+            new ObjectiveLegendInRect(LegendLegion.LEGEND_MALGANIS, Regions.Central_Northrend, ""),
             new ObjectiveControlLegend(LegendLordaeron.Arthas, false)
             {
               EligibleFactions = new List<Faction> { LordaeronSetup.Lordaeron }
