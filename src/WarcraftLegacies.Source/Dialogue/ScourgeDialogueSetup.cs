@@ -27,10 +27,9 @@ namespace WarcraftLegacies.Source.Dialogue
         new TriggeredDialogue(new MacroTools.DialogueSystem.Dialogue(
           soundFile: @"Sound\Dialogue\UndeadCampaign\Undead08\U08Kelthuzad18.flac",
           caption: "Come forth, Lord Archimonde! Enter this world, and let us bask in your power!",
-          speaker: "Kel'thuzad"), new[]
-        {
-          LordaeronSetup.Lordaeron
-        }, new[]
+          speaker: "Kel'thuzad"), 
+          null, 
+          new[]
         {
           new ObjectiveStartSpell(Constants.ABILITY_A00J_SUMMON_THE_BURNING_LEGION_ALL_FACTIONS, false,
             LegendScourge.LegendKelthuzad)

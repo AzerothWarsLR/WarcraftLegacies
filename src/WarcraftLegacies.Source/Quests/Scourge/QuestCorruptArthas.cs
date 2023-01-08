@@ -14,7 +14,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
     private static readonly int ResearchId = FourCC("R01K");
 
     public QuestCorruptArthas() : base("The Culling",
-      "When the city of Stratholme, Prince Arthas will abandon his people and join the Scourge as their champion.",
+      "When the city of Stratholme falls, Prince Arthas will abandon his people and join the Scourge as their champion.",
       "ReplaceableTextures\\CommandButtons\\BTNHeroDeathKnight.blp")
     {
       AddObjective(new ObjectiveCapitalDead(LegendLordaeron.Stratholme));
