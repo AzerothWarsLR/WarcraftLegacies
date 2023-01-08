@@ -15,6 +15,7 @@ namespace WarcraftLegacies.Source.Setup
         LordaeronDialogueSetup.Setup();
         IllidariDialogueSetup.Setup();
         SentinelsDialogueSetup.Setup();
+        FrostwolfDialogueSetup.Setup();
       }
       catch (Exception ex)
       {

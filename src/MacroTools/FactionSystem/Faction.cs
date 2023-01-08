@@ -506,6 +506,19 @@ namespace MacroTools.FactionSystem
     public QuestData GetQuestByTitle(string parameter) => _questsByName[parameter];
 
     /// <summary>
+    /// Returns the first <see cref="QuestData"/> the <see cref="Faction"/> has with the given <see cref="Type"/>.
+    /// </summary>
+    /// <param name="type"></param>
+    /// <returns></returns>
+    public QuestData GetQuestByType(Type type)
+    {
+      var quest = _questsByName.Values.FirstOrDefault(x => x.GetType() == type);
+      if (quest == null)
+        throw new Exception($"{Name} does not have a {nameof(QuestData)} of type {type.Name}");
+      return quest;
+    }
+    
+    /// <summary>
     /// Returns all <see cref="QuestData"/>s the <see cref="Faction"/> can complete.
     /// </summary>
     /// <returns></returns>
