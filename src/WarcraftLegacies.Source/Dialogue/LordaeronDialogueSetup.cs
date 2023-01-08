@@ -4,6 +4,7 @@ using MacroTools.DialogueSystem;
 using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem;
 using MacroTools.ObjectiveSystem.Objectives;
+using WarcraftLegacies.Source.Quests.Scourge;
 using WarcraftLegacies.Source.Setup.FactionSetup;
 using WarcraftLegacies.Source.Setup.Legends;
 using WCSharp.Shared.Data;
@@ -133,6 +134,36 @@ namespace WarcraftLegacies.Source.Dialogue
             {
               EligibleFactions = new List<Faction> { LordaeronSetup.Lordaeron, DalaranSetup.Dalaran }
             }
+          }));
+      
+      TriggeredDialogueManager.Add(
+        new TriggeredDialogue(
+          new DialogueSequence(
+            new MacroTools.DialogueSystem.Dialogue(
+              @"Sound\Dialogue\HumanCampaign\Human06\H06Arthas43",
+              "We're going to finish this right now, Mal'Ganis. Just you and me.",
+              "Arthas Menethil"),
+            new MacroTools.DialogueSystem.Dialogue(
+              @"Sound\Dialogue\HumanCampaign\Human06\H06MalGanis44",
+              "Brave words. Unfortunately for you, it won't end here. Your journey has just begun, young prince.",
+              "Mal'ganis"),
+            new MacroTools.DialogueSystem.Dialogue(
+              @"Sound\Dialogue\HumanCampaign\Human06\H06MalGanis45",
+              "Gather your forces and meet me in the arctic land of Northrend. It is there that we shall settle the score between us. It is there that your true destiny will unfold.",
+              "Mal'ganis"),
+            new MacroTools.DialogueSystem.Dialogue(
+              @"Sound\Dialogue\HumanCampaign\Human06\H06Arthas46",
+              "I'll hunt you to the ends of the earth if I have to! Do you hear me? To the ends of the earth!",
+              "Arthas Menethil")
+          ), 
+          new[]
+          {
+            LordaeronSetup.Lordaeron,
+            ScourgeSetup.Scourge,
+            LegionSetup.Legion
+          }, new Objective[]
+          {
+            new ObjectiveCompleteQuest(ScourgeSetup.Scourge.GetQuestByType(typeof(QuestCorruptArthas)))
           }));
     }
   }
