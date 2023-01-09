@@ -1,4 +1,3 @@
-using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using WarcraftLegacies.Source.Quests.Scourge;
 using WarcraftLegacies.Source.Setup.FactionSetup;

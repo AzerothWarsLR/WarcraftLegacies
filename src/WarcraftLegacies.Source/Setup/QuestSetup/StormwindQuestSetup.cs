@@ -1,5 +1,4 @@
 using MacroTools;
-using MacroTools.QuestSystem;
 using WarcraftLegacies.Source.Quests.Stormwind;
 using WarcraftLegacies.Source.Setup.FactionSetup;
 using WCSharp.Shared.Data;

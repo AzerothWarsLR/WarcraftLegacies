@@ -1,5 +1,4 @@
 ﻿using MacroTools.Extensions;
-using MacroTools.FactionSystem;
 using WarcraftLegacies.Source.Setup.FactionSetup;
 using static War3Api.Common;
 

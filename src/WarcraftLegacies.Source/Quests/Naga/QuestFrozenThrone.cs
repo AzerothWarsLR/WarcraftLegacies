@@ -1,10 +1,7 @@
 ﻿using MacroTools.FactionSystem;
-using MacroTools.ObjectiveSystem.Objectives;
+using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
-using WarcraftLegacies.Source.Setup;
-using WarcraftLegacies.Source.Setup.FactionSetup;
 using WarcraftLegacies.Source.Setup.Legends;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Naga
 {

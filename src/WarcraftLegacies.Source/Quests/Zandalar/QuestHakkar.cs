@@ -1,7 +1,8 @@
 using MacroTools.ArtifactSystem;
 using MacroTools.ControlPointSystem;
 using MacroTools.FactionSystem;
-using MacroTools.ObjectiveSystem.Objectives;
+using MacroTools.ObjectiveSystem.Objectives.ArtifactBased;
+using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
 using MacroTools.QuestSystem;
 using WarcraftLegacies.Source.Setup.Legends;
 using static War3Api.Common;

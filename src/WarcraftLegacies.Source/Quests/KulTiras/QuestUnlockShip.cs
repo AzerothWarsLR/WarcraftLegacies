@@ -6,10 +6,11 @@ using WarcraftLegacies.Source.Setup.Legends;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 using static War3Api.Blizzard;
-using WarcraftLegacies.Source.Setup.FactionSetup;
-using WarcraftLegacies.Source.Setup;
 using MacroTools.ControlPointSystem;
-using MacroTools.ObjectiveSystem.Objectives;
+using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
+using MacroTools.ObjectiveSystem.Objectives.FactionBased;
+using MacroTools.ObjectiveSystem.Objectives.LegendBased;
+using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 
 namespace WarcraftLegacies.Source.Quests.KulTiras
 {
