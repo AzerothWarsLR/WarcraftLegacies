@@ -6,6 +6,9 @@ using WarcraftLegacies.Source.Setup.Legends;
 using MacroTools;
 using System;
 using MacroTools.ObjectiveSystem.Objectives;
+using MacroTools.ObjectiveSystem.Objectives.LegendBased;
+using MacroTools.ObjectiveSystem.Objectives.TimeBased;
+using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 
 namespace WarcraftLegacies.Source.Quests.Dragonmaw
 {

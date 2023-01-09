@@ -1,5 +1,6 @@
 ﻿using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives;
+using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
 using WarcraftLegacies.Source.Setup;
 using WarcraftLegacies.Source.Setup.FactionSetup;

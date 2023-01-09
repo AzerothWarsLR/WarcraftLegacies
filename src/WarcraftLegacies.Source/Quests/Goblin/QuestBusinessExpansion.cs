@@ -3,6 +3,7 @@ using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives;
+using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
 using MacroTools.QuestSystem;
 using static War3Api.Common;
 

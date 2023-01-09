@@ -5,6 +5,9 @@ using static War3Api.Common;
 using MacroTools.Extensions;
 using MacroTools.ControlPointSystem;
 using MacroTools.ObjectiveSystem.Objectives;
+using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
+using MacroTools.ObjectiveSystem.Objectives.FactionBased;
+using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 
 namespace WarcraftLegacies.Source.Quests.Gilneas
 {

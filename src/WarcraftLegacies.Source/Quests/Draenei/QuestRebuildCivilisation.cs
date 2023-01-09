@@ -4,6 +4,8 @@ using MacroTools.QuestSystem;
 using MacroTools.ObjectiveSystem.Objectives;
 using WCSharp.Shared.Data;
 using MacroTools.ControlPointSystem;
+using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
+using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 
 namespace WarcraftLegacies.Source.Quests.Draenei
 {

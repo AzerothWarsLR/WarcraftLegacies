@@ -2,6 +2,7 @@
 using MacroTools.DialogueSystem;
 using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives;
+using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using WarcraftLegacies.Source.Setup.FactionSetup;
 using WarcraftLegacies.Source.Setup.Legends;
 

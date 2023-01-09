@@ -3,6 +3,9 @@ using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives;
 using MacroTools.QuestSystem;
 using System.Collections.Generic;
+using MacroTools.ObjectiveSystem.Objectives.FactionBased;
+using MacroTools.ObjectiveSystem.Objectives.TimeBased;
+using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using WarcraftLegacies.Source.Setup.Legends;
 using static War3Api.Common;
 

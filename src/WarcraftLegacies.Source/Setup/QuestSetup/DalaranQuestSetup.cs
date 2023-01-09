@@ -1,5 +1,6 @@
 ﻿using MacroTools;
 using MacroTools.ObjectiveSystem.Objectives;
+using MacroTools.ObjectiveSystem.Objectives.QuestBased;
 using MacroTools.QuestSystem;
 using WarcraftLegacies.Source.Quests.Dalaran;
 using WarcraftLegacies.Source.Setup.FactionSetup;
