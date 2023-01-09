@@ -59,6 +59,7 @@ The Plague of Undeath is coming and Lordaeron will need your help with the Scour
       Quelthalas.ModObjectLimit(FourCC("nhea"), Faction.UNLIMITED); //Archer
       Quelthalas.ModObjectLimit(FourCC("e008"), 6); //Elven Ballista
       Quelthalas.ModObjectLimit(FourCC("n00A"), 6); //Farstrider
+      Quelthalas.ModObjectLimit(FourCC("e01B"), 6); //Arcane Annihilator
       Quelthalas.ModObjectLimit(FourCC("n063"), 12); //Magus
       Quelthalas.ModObjectLimit(FourCC("hspt"), Faction.UNLIMITED); //Spell Breaker
       Quelthalas.ModObjectLimit(FourCC("u00J"), 2); //Arcane Wagon

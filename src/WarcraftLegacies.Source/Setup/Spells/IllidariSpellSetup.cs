@@ -24,7 +24,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
         Constants.UNIT_NMSC_MUR_GUL_SHADOWCASTER_ILLIDARI,
         Constants.UNIT_NNSU_COILFANG_SUMMONER_ILLIDARI,
         Constants.UNIT_NSNP_SNAP_DRAGON_ILLIDARI,
-        Constants.UNIT_NNRG_NAGA_ROYAL_GUARD_ILLIDARI,
+        Constants.UNIT_NNRG_ROYAL_GUARD_ILLIDARI,
         Constants.UNIT_NHYC_DRAGON_TURTLE_ILLIDARI,
         Constants.UNIT_EILL_THE_BETRAYER_ILLIDARI,
         Constants.UNIT_HVSH_SEA_WITCH_ILLIDARI,
