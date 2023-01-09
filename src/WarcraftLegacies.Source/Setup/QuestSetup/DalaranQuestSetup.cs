@@ -21,7 +21,6 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
 
       newGuardian.AddObjective(new ObjectiveDontCompleteQuest(theNexus));
       crystalGolem.AddObjective(new ObjectiveDontCompleteQuest(theNexus));
-      fallenGuardian.AddObjective(new ObjectiveDontCompleteQuest(theNexus));
       theNexus.AddObjective(new ObjectiveDontCompleteQuest(newGuardian));
 
       var questSouthshore = dalaran.AddQuest(new QuestSouthshore(Regions.SouthshoreUnlock,
