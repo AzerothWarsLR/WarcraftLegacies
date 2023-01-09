@@ -8,10 +8,6 @@ namespace MacroTools.ObjectiveSystem.Objectives.QuestBased
     {
       Description = "Do not complete the quest " + target.Title;
       target.ProgressChanged += OnQuestProgressChanged;
-    }
-
-    internal override void OnAdd(FactionSystem.Faction whichFaction)
-    {
       Progress = QuestProgress.Complete;
     }
 
