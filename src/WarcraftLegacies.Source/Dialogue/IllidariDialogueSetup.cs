@@ -111,6 +111,38 @@ namespace WarcraftLegacies.Source.Dialogue
             "the Tomb of Sargeras' entrance")
         }
       ));
+      
+      TriggeredDialogueManager.Add(new TriggeredDialogue(
+        new MacroTools.DialogueSystem.Dialogue(@"Sound\Dialogue\UndeadExpCamp\Undead08x\L08Illidan33.flac",
+          "You're out of your league, old king. You should have stayed hidden underground.",
+          "Illidan Stormrage")
+        , new[]
+        {
+          IllidariSetup.Illidari,
+          ScourgeSetup.Scourge
+        }, new List<Objective>
+        {
+          new ObjectiveLegendMeetsLegend(LegendNaga.LegendIllidan, LegendScourge.LegendAnubarak)
+        }
+      ));
+      
+      TriggeredDialogueManager.Add(
+        new TriggeredDialogue(new DialogueSequence(new MacroTools.DialogueSystem.Dialogue(
+              @"Sound\Dialogue\UndeadExpCamp\Undead08x\L08Illidan27",
+              "Hello, Arthas.",
+              "Illidan Stormrage"),
+            new MacroTools.DialogueSystem.Dialogue(
+              @"Sound\Dialogue\UndeadExpCamp\Undead08x\L08Arthas28",
+              "You look different, Illidan. I guess the Skull of Gul'dan didn't agree with you.",
+              "Arthas Menethil")),
+          new[]
+          {
+            IllidariSetup.Illidari,
+            ScourgeSetup.Scourge
+          }, new[]
+          {
+            new ObjectiveLegendMeetsLegend(LegendNaga.LegendIllidan, LegendLordaeron.Arthas)
+          }));
     }
   }
 }

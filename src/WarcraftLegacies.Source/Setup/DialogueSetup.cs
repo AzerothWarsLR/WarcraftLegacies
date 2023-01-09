@@ -19,6 +19,7 @@ namespace WarcraftLegacies.Source.Setup
         FrostwolfDialogueSetup.Setup();
         LegionDialogueSeup.Setup();
         DalaranDialogueSetup.Setup();
+        QuelthalasDialogueSetup.Setup();
       }
       catch (Exception ex)
       {
