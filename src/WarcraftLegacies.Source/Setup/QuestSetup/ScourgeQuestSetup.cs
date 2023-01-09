@@ -44,7 +44,6 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       QuestCorruptArthas questCorruptArthas = new();
       QuestNaxxramas questNaxxramas = new(Regions.NaxAmbient,
         preplacedUnitSystem.GetUnit(Constants.UNIT_E013_NAXXRAMAS_SCOURGE_OTHER));
-      QuestCivilWar questCivilWar = new();
       QuestLichKingArthas questLichKingArthas =
         new(preplacedUnitSystem.GetUnit(Constants.UNIT_H00O_UTGARDE_KEEP_SCOURGE_OTHER), artifactSetup.HelmOfDomination);
 
@@ -58,7 +57,6 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       ScourgeSetup.Scourge.AddQuest(questCorruptArthas);
       ScourgeSetup.Scourge.AddQuest(questKelthuzad);
       ScourgeSetup.Scourge.AddQuest(questNaxxramas);
-      ScourgeSetup.Scourge.AddQuest(questCivilWar);
       //Misc
       ScourgeSetup.Scourge.AddQuest(questLichKingArthas);
 
