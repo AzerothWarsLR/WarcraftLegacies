@@ -186,7 +186,9 @@ namespace WarcraftLegacies.Source.Dialogue
         }, new List<Objective>
         {
           new ObjectiveLegendInRect(LegendDalaran.LegendAntonidas, Regions.Dalaran, "Dalaran"),
-          new ObjectiveLegendInRect(LegendScourge.Arthas, Regions.Dalaran, "Dalaran")
+          new ObjectiveLegendInRect(LegendScourge.Arthas, Regions.Dalaran, "Dalaran"),
+          new ObjectiveCompleteQuest(ScourgeSetup.Scourge.GetQuestByType(typeof(QuestKelthuzadDies))),
+          new ObjectiveDontCompleteQuest(ScourgeSetup.Scourge.GetQuestByType(typeof(QuestKelthuzadLich)))
         }
       ));
     }
