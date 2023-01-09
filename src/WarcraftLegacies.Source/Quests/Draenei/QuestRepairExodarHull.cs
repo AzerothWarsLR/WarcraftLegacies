@@ -53,6 +53,8 @@ namespace WarcraftLegacies.Source.Quests.Draenei
       else
         Player(PLAYER_NEUTRAL_AGGRESSIVE).RescueGroup(_rescueUnits);
       SetUnitTimeScale(LegendDraenei.LegendExodar.Unit, 1);
+      LegendDraenei.LegendExodar.Unit?.SetInvulnerable(true);
+      LegendDraenei.LegendExodarGenerator.Unit?.SetInvulnerable(false);
     }
   }
 }

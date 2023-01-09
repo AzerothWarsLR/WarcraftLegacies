@@ -28,7 +28,7 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
       "The woods of Silverspine are unsafe for travellers, they need to be investigated",
       "ReplaceableTextures\\CommandButtons\\BTNworgen.blp")
     {
-      AddObjective(new ObjectiveKillUnit(direwolfToKill));
+      AddObjective(new ObjectiveUnitIsDead(direwolfToKill));
       AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N01D_SILVERPINE_FOREST_15GOLD_MIN)));
       AddObjective(new ObjectiveExpire(1444));
       AddObjective(new ObjectiveSelfExists());
