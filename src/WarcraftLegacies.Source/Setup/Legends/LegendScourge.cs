@@ -58,8 +58,6 @@ namespace WarcraftLegacies.Source.Setup.Legends
       {
         UnitType = FourCC("U001"),
         PermaDies = true,
-        DeathMessage =
-          "Kel'thuzad has been slain. He lives on in spectral form, and may yet return if he is brought to the Sunwell.",
         DeathSfx = "Abilities\\Spells\\Undead\\DeathCoil\\DeathCoilSpecialArt.mdl",
         StartingXp = 1000
       };

@@ -125,7 +125,6 @@ namespace WarcraftLegacies.Source.Setup
       SummonRallyPoints.Setup();
       RemoveUnusedAreas.Run();
       EyeOfSargerasCooldowns.Setup();
-      EventKelthuzadDeath.Setup();
       CapturableUnitSetup.Setup(preplacedUnitSystem);
       GilneasGateTowers.Setup(preplacedUnitSystem);
       EyeOfSargerasPickup.Setup();
