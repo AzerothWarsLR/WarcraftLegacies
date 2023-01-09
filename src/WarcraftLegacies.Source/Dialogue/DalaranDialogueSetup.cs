@@ -1,6 +1,8 @@
 ﻿using System.Collections.Generic;
 using MacroTools.DialogueSystem;
+using MacroTools.Extensions;
 using MacroTools.FactionSystem;
+using MacroTools.Libraries;
 using MacroTools.ObjectiveSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using WarcraftLegacies.Source.Setup.FactionSetup;
@@ -76,8 +78,11 @@ namespace WarcraftLegacies.Source.Dialogue
           DalaranSetup.Dalaran
         }, new List<Objective>
         {
-          new ObjectiveLegendDead(LegendDalaran.LegendAntonidas),
-          new ObjectiveLegendMeetsLegend(LegendLordaeron.Arthas, LegendDalaran.LegendAntonidas)
+          new ObjectiveLegendDead(LegendDalaran.LegendAntonidas)
+          {
+            DeathFilter = dyingLegend => MathEx.GetDistanceBetweenPoints(LegendScourge.Arthas.Unit.GetPosition(),
+              dyingLegend.Unit.GetPosition()) < 500
+          }
         }
       ));
     }
