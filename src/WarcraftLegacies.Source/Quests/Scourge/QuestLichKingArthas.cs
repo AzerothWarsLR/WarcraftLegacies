@@ -3,7 +3,6 @@ using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives;
 using MacroTools.QuestSystem;
-using WarcraftLegacies.Source.Setup;
 using WarcraftLegacies.Source.Setup.FactionSetup;
 using WarcraftLegacies.Source.Setup.Legends;
 using static War3Api.Common;
@@ -14,15 +13,13 @@ namespace WarcraftLegacies.Source.Quests.Scourge
   {
     private readonly unit _utgardeKeep;
     private readonly Artifact _helmOfDomination;
-    private readonly QuestData _questToCompleteUponCompletion;
 
-    public QuestLichKingArthas(unit utgardeKeep, Artifact helmOfDomination, QuestData questToCompleteUponCompletion) : base("The Ascension",
+    public QuestLichKingArthas(unit utgardeKeep, Artifact helmOfDomination) : base("The Ascension",
       "From within the depths of the Frozen Throne, the Lich King Ner'zhul cries out for his champion. Release the Helm of Domination from its confines and merge its power with that of the Scourge's greatest Death Knight.",
       "ReplaceableTextures\\CommandButtons\\BTNRevenant.blp")
     {
       _utgardeKeep = utgardeKeep;
       _helmOfDomination = helmOfDomination;
-      _questToCompleteUponCompletion = questToCompleteUponCompletion;
       AddObjective(new ObjectiveControlLegend(LegendLordaeron.Arthas, false));
       AddObjective(new ObjectiveLegendLevel(LegendLordaeron.Arthas, 12));
       AddObjective(new ObjectiveResearch(FourCC("R07X"), FourCC("u000")));
@@ -39,8 +36,6 @@ namespace WarcraftLegacies.Source.Quests.Scourge
 
     protected override void OnComplete(Faction completingFaction)
     {
-      SetPlayerTechResearched(completingFaction.Player, Constants.UPGRADE_R07W_REBEL_AGAINST_THE_LEGION_SCOURGE, 1);
-      _questToCompleteUponCompletion.Progress = QuestProgress.Complete;
       PlayThematicMusic("Sound\\Music\\mp3Music\\LichKingTheme.mp3");
       LegendScourge.LegendLichking.DeathMessage =
         "Icecrown Citadel been razed. Unfortunately, the Lich King has already vacated his unholy throne.";
@@ -61,7 +56,6 @@ namespace WarcraftLegacies.Source.Quests.Scourge
       SetUnitState(LegendLordaeron.Arthas.Unit, UNIT_STATE_MANA,
         GetUnitState(LegendLordaeron.Arthas.Unit, UNIT_STATE_MAX_MANA));
       LegendLordaeron.Arthas.Unit?.AddItemSafe(_helmOfDomination.Item);
-      completingFaction.Player?.SetTeam(TeamSetup.Scourge);
       _utgardeKeep.Rescue(ScourgeSetup.Scourge.Player);
       SetPlayerState(completingFaction.Player, PLAYER_STATE_FOOD_CAP_CEILING, 300);
     }
