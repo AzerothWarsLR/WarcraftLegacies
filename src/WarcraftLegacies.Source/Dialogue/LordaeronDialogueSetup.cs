@@ -219,6 +219,23 @@ namespace WarcraftLegacies.Source.Dialogue
               EligibleFactions = new List<Faction> { LordaeronSetup.Lordaeron }
             }
           }));
+      
+      TriggeredDialogueManager.Add(new TriggeredDialogue(
+        new DialogueSequence(
+          new MacroTools.DialogueSystem.Dialogue(@"Sound\Dialogue\UndeadCampaign\Undead02\U02Uther21.flac",
+            "Your father ruled this land for seventy years, and you've ground it to dust in a matter of days.",
+            "Uther the Lightbringer")
+        )
+        , new[]
+        {
+          ScourgeSetup.Scourge,
+          LordaeronSetup.Lordaeron
+        }, new List<Objective>
+        {
+          new ObjectiveLegendMeetsLegend(LegendLordaeron.Uther, LegendLordaeron.Arthas),
+          new ObjectiveCompleteQuest(ScourgeSetup.Scourge.GetQuestByType(typeof(QuestCorruptArthas)))
+        }
+      ));
     }
   }
 }
