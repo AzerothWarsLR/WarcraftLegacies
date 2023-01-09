@@ -143,7 +143,7 @@ namespace WarcraftLegacies.Source.Dialogue
             ScourgeSetup.Scourge
           }, new[]
           {
-            new ObjectiveLegendMeetsLegend(LegendNaga.LegendIllidan, LegendLordaeron.Arthas)
+            new ObjectiveLegendMeetsLegend(LegendNaga.LegendIllidan, LegendScourge.Arthas)
           }));
     }
   }

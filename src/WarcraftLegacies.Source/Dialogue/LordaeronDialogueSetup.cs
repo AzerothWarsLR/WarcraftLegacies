@@ -209,7 +209,7 @@ namespace WarcraftLegacies.Source.Dialogue
           LordaeronSetup.Lordaeron
         }, new List<Objective>
         {
-          new ObjectiveLegendMeetsLegend(LegendLordaeron.Uther, LegendLordaeron.Arthas)
+          new ObjectiveLegendMeetsLegend(LegendLordaeron.Uther, LegendScourge.Arthas)
         }
       ));
     }
