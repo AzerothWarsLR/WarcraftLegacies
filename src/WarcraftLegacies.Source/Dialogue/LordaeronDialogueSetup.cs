@@ -212,6 +212,22 @@ namespace WarcraftLegacies.Source.Dialogue
           new ObjectiveLegendMeetsLegend(LegendLordaeron.Uther, LegendScourge.Arthas)
         }
       ));
+      
+      TriggeredDialogueManager.Add(new TriggeredDialogue(
+        new DialogueSequence(
+          new MacroTools.DialogueSystem.Dialogue(@"Sound\Dialogue\UndeadCampaign\Undead02\U02PaladinD10.flac",
+            "Vile betrayer! You are not fit enough to even carry your father's name! Why Uther ever vouched for you is beyond me. You've stripped him of his honor by casting yours to the winds! You deserve a gruesome death, boy!",
+            "Alexandros Mograine")
+        )
+        , new[]
+        {
+          ScourgeSetup.Scourge,
+          LordaeronSetup.Lordaeron
+        }, new List<Objective>
+        {
+          new ObjectiveLegendMeetsLegend(LegendLordaeron.Mograine, LegendScourge.Arthas)
+        }
+      ));
     }
   }
 }
