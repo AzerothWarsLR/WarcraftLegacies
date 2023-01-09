@@ -1,5 +1,4 @@
 ﻿using MacroTools.DialogueSystem;
-using MacroTools.ObjectiveSystem.Objectives;
 using MacroTools.ObjectiveSystem.Objectives.QuestBased;
 using WarcraftLegacies.Source.Quests.Warsong;
 using WarcraftLegacies.Source.Setup.FactionSetup;

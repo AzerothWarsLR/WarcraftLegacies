@@ -6,7 +6,6 @@ using WCSharp.Shared.Data;
 using static War3Api.Common;
 using static War3Api.Blizzard;
 using MacroTools;
-using MacroTools.ObjectiveSystem.Objectives;
 using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;

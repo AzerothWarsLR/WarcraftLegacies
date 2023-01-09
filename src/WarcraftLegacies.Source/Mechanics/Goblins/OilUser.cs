@@ -1,5 +1,4 @@
 ﻿using System;
-using MacroTools.Buffs;
 using MacroTools.Extensions;
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.Powers;

@@ -5,7 +5,6 @@ using MacroTools.QuestSystem;
 using static War3Api.Common;
 using WarcraftLegacies.Source.Setup.Legends;
 using MacroTools;
-using MacroTools.ObjectiveSystem.Objectives;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 

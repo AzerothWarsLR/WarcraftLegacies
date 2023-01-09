@@ -1,7 +1,6 @@
 ﻿using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
-using MacroTools.ObjectiveSystem.Objectives;
 using WCSharp.Shared.Data;
 using MacroTools.ControlPointSystem;
 using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;

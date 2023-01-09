@@ -1,12 +1,10 @@
 using System;
 using MacroTools;
 using MacroTools.Extensions;
-using MacroTools.FactionSystem;
 using static War3Api.Common;
 using WarcraftLegacies.Source.Setup.FactionSetup;
 using WCSharp.Events;
 using WCSharp.Shared.Data;
-using WarcraftLegacies.Source.Setup.Legends;
 
 namespace WarcraftLegacies.Source.Researches.Ironforge
 {

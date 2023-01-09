@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using WarcraftLegacies.Source.Quests;
-using WarcraftLegacies.Source.Quests.Fel_Horde;
 using WarcraftLegacies.Source.Quests.Sentinels;
 using WarcraftLegacies.Source.Setup.FactionSetup;
 using WCSharp.Shared.Data;

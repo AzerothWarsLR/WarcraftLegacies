@@ -1,7 +1,6 @@
 ﻿using MacroTools;
 using MacroTools.DialogueSystem;
 using MacroTools.ObjectiveSystem;
-using MacroTools.ObjectiveSystem.Objectives;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.QuestBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;

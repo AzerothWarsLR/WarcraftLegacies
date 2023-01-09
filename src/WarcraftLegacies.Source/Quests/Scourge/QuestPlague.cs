@@ -1,7 +1,6 @@
 using System.Collections.Generic;
 using MacroTools.FactionSystem;
 using MacroTools.Libraries;
-using MacroTools.ObjectiveSystem.Objectives;
 using MacroTools.ObjectiveSystem.Objectives.MetaBased;
 using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
