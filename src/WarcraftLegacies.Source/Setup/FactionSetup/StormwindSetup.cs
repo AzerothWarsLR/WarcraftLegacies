@@ -119,7 +119,7 @@ Make sure to communicate with your Dwarven and Kul'tiran allies, as they will be
         IconName = "Angel",
         Name = "City of Heroes",
         HeroGlowAbilityTypeId = Constants.ABILITY_A0GK_HERO_GLOW_ORIGIN,
-        Filter = unit => !unit.IsType(UNIT_TYPE_MECHANICAL) || unit.GetTypeId() != Constants.UNIT_H05F_STORMWIND_CHAMPION_STORMWIND_ELITE,
+        Filter = unit => !unit.IsType(UNIT_TYPE_MECHANICAL) && unit.GetTypeId() != Constants.UNIT_H05F_STORMWIND_CHAMPION_STORMWIND_ELITE,
       });
       
       FactionManager.Register(Stormwind);
