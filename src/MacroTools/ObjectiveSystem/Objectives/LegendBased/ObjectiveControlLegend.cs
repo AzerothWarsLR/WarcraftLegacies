@@ -10,7 +10,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.LegendBased
   public sealed class ObjectiveControlLegend : Objective
   {
     private readonly bool _canFail;
-    private readonly LegendSystem.Legend _target;
+    private readonly Legend _target;
 
     public ObjectiveControlLegend(LegendaryHero target, bool canFail)
     {
@@ -27,7 +27,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.LegendBased
 
     public override Point Position => new(GetUnitX(_target.Unit), GetUnitY(_target.Unit));
 
-    internal override void OnAdd(FactionSystem.Faction whichFaction)
+    internal override void OnAdd(Faction whichFaction)
     {
       if (_target.Unit != null && IsPlayerOnSameTeamAsAnyEligibleFaction(_target.Unit.OwningPlayer()))
         Progress = QuestProgress.Complete;
@@ -49,7 +49,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.LegendBased
         Progress = _canFail ? QuestProgress.Failed : QuestProgress.Incomplete;
     }
 
-    private void OnTargetDeath(object? sender, LegendSystem.Legend legend)
+    private void OnTargetDeath(object? sender, Legend legend)
     {
       if (_canFail) Progress = QuestProgress.Failed;
     }

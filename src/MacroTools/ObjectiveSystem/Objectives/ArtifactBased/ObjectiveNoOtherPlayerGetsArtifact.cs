@@ -17,7 +17,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.ArtifactBased
     /// Initializes a new instance of the <see cref="ObjectiveNoOtherPlayerGetsArtifact"/> class.
     /// </summary>
     /// <param name="target">The objective fails when this Artifact is acquired by anyone but the objective holder.</param>
-    public ObjectiveNoOtherPlayerGetsArtifact(ArtifactSystem.Artifact target)
+    public ObjectiveNoOtherPlayerGetsArtifact(Artifact target)
     {
       _target = target;
       Description = $"No other player has acquired {GetItemName(target.Item)}";

@@ -10,7 +10,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.LegendBased
   {
     private readonly TriggerWrapper _entersRect = new();
 
-    private readonly LegendSystem.Legend _legend;
+    private readonly Legend _legend;
     private readonly region _target;
     private readonly rect _targetRect;
 

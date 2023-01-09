@@ -13,7 +13,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.LegendBased
   public sealed class ObjectiveControlCapital : Objective
   {
     private readonly bool _canFail;
-    private readonly LegendSystem.Legend _target;
+    private readonly Legend _target;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="ObjectiveControlCapital"/> class.
@@ -36,7 +36,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.LegendBased
     /// <inheritdoc />
     public override Point Position => new(GetUnitX(_target.Unit), GetUnitY(_target.Unit));
 
-    internal override void OnAdd(FactionSystem.Faction whichFaction)
+    internal override void OnAdd(Faction whichFaction)
     {
       if (_target.Unit != null && IsPlayerOnSameTeamAsAnyEligibleFaction(_target.Unit.OwningPlayer()))
         Progress = QuestProgress.Complete;

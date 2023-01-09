@@ -11,7 +11,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.LegendBased
   public sealed class ObjectiveLegendHasArtifact : Objective
   {
     private readonly Artifact _targetArtifact;
-    private readonly LegendSystem.Legend _targetLegend;
+    private readonly Legend _targetLegend;
  
     /// <summary>
     /// Initializes a new instance of the <see cref="ObjectiveLegendHasArtifact"/> class.

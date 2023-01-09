@@ -11,7 +11,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.LegendBased
     private readonly TriggerWrapper _entersRect = new();
     private readonly TriggerWrapper _exitsRect = new();
 
-    private readonly LegendSystem.Legend _legendaryHero;
+    private readonly Legend _legendaryHero;
     private readonly region _target;
     private readonly rect _targetRect;
 

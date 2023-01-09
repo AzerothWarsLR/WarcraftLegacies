@@ -11,7 +11,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.ControlPointBased
   /// </summary>
   public sealed class ObjectiveControlLevel : Objective
   {
-    private readonly ControlPointSystem.ControlPoint _target;
+    private readonly ControlPoint _target;
     private readonly int _requiredLevel;
     
     /// <inheritdoc/>
@@ -22,7 +22,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.ControlPointBased
     /// </summary>
     /// <param name="target">The <see cref="ControlPoint"/> that must reach the specified level.</param>
     /// <param name="requiredLevel">The level the <see cref="ControlPoint"/> must reach.</param>
-    public ObjectiveControlLevel(ControlPointSystem.ControlPoint target, int requiredLevel)
+    public ObjectiveControlLevel(ControlPoint target, int requiredLevel)
     {
       _target = target;
       _requiredLevel = requiredLevel;

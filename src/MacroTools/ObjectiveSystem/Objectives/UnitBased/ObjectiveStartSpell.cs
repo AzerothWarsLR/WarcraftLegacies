@@ -11,7 +11,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
   public sealed class ObjectiveStartSpell : Objective
   {
     private readonly bool _holderOnly;
-    private readonly LegendSystem.Legend? _requiredLegend;
+    private readonly Legend? _requiredLegend;
 
     /// <summary>
     ///   Completes when a unit casts a specific spell.
@@ -19,7 +19,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
     /// <param name="spellId">The spell that needs to be casted for completion.</param>
     /// <param name="holderOnly">If true, the quest holder must cast the spell themselves.</param>
     /// <param name="requiredLegend">The <see cref="Legend"/> that must cast the spell. If null, anyone can cast the spell.</param>
-    public ObjectiveStartSpell(int spellId, bool holderOnly, LegendSystem.Legend? requiredLegend = null)
+    public ObjectiveStartSpell(int spellId, bool holderOnly, Legend? requiredLegend = null)
     {
       PlayerUnitEvents.Register(SpellEvent.Cast, OnCast, spellId);
       Description = holderOnly ? $"Start casting {GetObjectName(spellId)}" : $"Anyone starts casting {GetObjectName(spellId)}";

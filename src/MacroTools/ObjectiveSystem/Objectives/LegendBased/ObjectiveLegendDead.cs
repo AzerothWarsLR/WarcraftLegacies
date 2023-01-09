@@ -10,7 +10,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.LegendBased
   /// </summary>
   public sealed class ObjectiveLegendDead : Objective
   {
-    private readonly LegendSystem.Legend _target;
+    private readonly Legend _target;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="ObjectiveLegendDead"/> class.
@@ -31,7 +31,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.LegendBased
     /// <inheritdoc/>
     public override Point Position => new(GetUnitX(_target.Unit), GetUnitY(_target.Unit));
 
-    private void OnDeath(object? sender, LegendSystem.Legend legend)
+    private void OnDeath(object? sender, Legend legend)
     {
       Progress = QuestProgress.Complete;
     }

@@ -18,7 +18,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.LegendBased
     private readonly int _duration;
     private readonly TriggerWrapper _entersRectTrig = new();
     private readonly float _facing;
-    private readonly LegendSystem.Legend _targetLegend;
+    private readonly Legend _targetLegend;
 
     private readonly rect _targetRect;
     private Channel? _channel;
