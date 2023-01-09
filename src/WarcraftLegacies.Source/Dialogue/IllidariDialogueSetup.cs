@@ -122,7 +122,7 @@ namespace WarcraftLegacies.Source.Dialogue
           ScourgeSetup.Scourge
         }, new List<Objective>
         {
-          new ObjectiveLegendMeetsLegend(LegendNaga.LegendIllidan, LegendScourge.LegendAnubarak)
+          new ObjectiveLegendMeetsLegend(LegendNaga.LegendIllidan, LegendScourge.Anubarak)
         }
       ));
       

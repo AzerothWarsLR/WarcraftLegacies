@@ -96,7 +96,7 @@ namespace WarcraftLegacies.Source.Dialogue
           ScourgeSetup.Scourge
         }, new List<Objective>
         {
-          new ObjectiveLegendMeetsLegend(LegendLegion.LEGEND_ARCHIMONDE, LegendScourge.LegendKelthuzad)
+          new ObjectiveLegendMeetsLegend(LegendLegion.LEGEND_ARCHIMONDE, LegendScourge.Kelthuzad)
         }
       ));
     }

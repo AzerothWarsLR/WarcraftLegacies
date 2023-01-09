@@ -56,7 +56,7 @@ namespace WarcraftLegacies.Source.Dialogue
           new[] { ScourgeSetup.Scourge },
           new Objective[]
           {
-            new ObjectiveLegendMeetsLegend(LegendLordaeron.Arthas, LegendScourge.LegendKelthuzad)
+            new ObjectiveLegendMeetsLegend(LegendScourge.Arthas, LegendScourge.Kelthuzad)
           }));
       
       TriggeredDialogueManager.Add(
@@ -85,8 +85,8 @@ namespace WarcraftLegacies.Source.Dialogue
           },
           new[]
           {
-            new ObjectiveLegendInRect(LegendLordaeron.Arthas, Regions.QuelthalasAmbient, "Quel'thalas"),
-            new ObjectiveLegendInRect(LegendScourge.LegendKelthuzad, Regions.QuelthalasAmbient, "Quel'thalas")
+            new ObjectiveLegendInRect(LegendScourge.Arthas, Regions.QuelthalasAmbient, "Quel'thalas"),
+            new ObjectiveLegendInRect(LegendScourge.Kelthuzad, Regions.QuelthalasAmbient, "Quel'thalas")
           }));
       
       TriggeredDialogueManager.Add(
@@ -107,8 +107,8 @@ namespace WarcraftLegacies.Source.Dialogue
           },
           new[]
           {
-            new ObjectiveLegendInRect(LegendLordaeron.Arthas, Regions.QuelthalasAmbient, "Quel'thalas"),
-            new ObjectiveLegendInRect(LegendScourge.LegendKelthuzad, Regions.QuelthalasAmbient, "Quel'thalas")
+            new ObjectiveLegendInRect(LegendScourge.Arthas, Regions.QuelthalasAmbient, "Quel'thalas"),
+            new ObjectiveLegendInRect(LegendScourge.Kelthuzad, Regions.QuelthalasAmbient, "Quel'thalas")
           }));
       
       TriggeredDialogueManager.Add(
@@ -129,7 +129,7 @@ namespace WarcraftLegacies.Source.Dialogue
           },
           new[]
           {
-            new ObjectiveLegendMeetsLegend(LegendLordaeron.Arthas, LegendLegion.LEGEND_TICHONDRIUS)
+            new ObjectiveLegendMeetsLegend(LegendScourge.Arthas, LegendLegion.LEGEND_TICHONDRIUS)
           }));
       
       TriggeredDialogueManager.Add(
@@ -155,7 +155,7 @@ namespace WarcraftLegacies.Source.Dialogue
           },
           new[]
           {
-            new ObjectiveLegendMeetsLegend(LegendLordaeron.Arthas, LegendLegion.LEGEND_TICHONDRIUS)
+            new ObjectiveLegendMeetsLegend(LegendScourge.Arthas, LegendLegion.LEGEND_TICHONDRIUS)
           }));
       
       TriggeredDialogueManager.Add(new TriggeredDialogue(
@@ -185,7 +185,7 @@ namespace WarcraftLegacies.Source.Dialogue
         }, new List<Objective>
         {
           new ObjectiveLegendInRect(LegendDalaran.LegendAntonidas, Regions.Dalaran, "Dalaran"),
-          new ObjectiveLegendInRect(LegendLordaeron.Arthas, Regions.Dalaran, "Dalaran")
+          new ObjectiveLegendInRect(LegendScourge.Arthas, Regions.Dalaran, "Dalaran")
         }
       ));
     }
