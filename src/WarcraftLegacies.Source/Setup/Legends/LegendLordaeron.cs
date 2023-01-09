@@ -1,6 +1,5 @@
 ﻿using MacroTools;
 using MacroTools.Extensions;
-using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -152,8 +151,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
 
       Arthas = new LegendaryHero("Arthas Menethil")
       {
-        UnitType = Constants.UNIT_HART_CROWN_PRINCE_OF_LORDAERON_LORDAERON,
-        PlayerColor = PLAYER_COLOR_BLUE
+        UnitType = Constants.UNIT_HART_CROWN_PRINCE_OF_LORDAERON_LORDAERON
       };
       LegendaryHeroManager.Register(Arthas);
     }

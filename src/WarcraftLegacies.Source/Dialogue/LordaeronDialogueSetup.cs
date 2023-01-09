@@ -1,7 +1,5 @@
-﻿using System.Collections.Generic;
-using MacroTools;
+﻿using MacroTools;
 using MacroTools.DialogueSystem;
-using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem;
 using MacroTools.ObjectiveSystem.Objectives;
 using WarcraftLegacies.Source.Quests.Scourge;
@@ -44,11 +42,7 @@ namespace WarcraftLegacies.Source.Dialogue
           LordaeronSetup.Lordaeron
         }, new Objective[]
         {
-          new ObjectiveLegendMeetsLegend(LegendLordaeron.Arthas, LegendLordaeron.Uther),
-          new ObjectiveControlLegend(LegendLordaeron.Arthas, false)
-          {
-            EligibleFactions = new List<Faction> { LordaeronSetup.Lordaeron }
-          }
+          new ObjectiveLegendMeetsLegend(LegendLordaeron.Arthas, LegendLordaeron.Uther)
         }));
       
       TriggeredDialogueManager.Add(
@@ -95,11 +89,7 @@ namespace WarcraftLegacies.Source.Dialogue
           LordaeronSetup.Lordaeron
         }, new Objective[]
         {
-          new ObjectiveLegendReachRect(LegendLordaeron.Arthas, Regions.Central_Northrend, "central Northrend"),
-          new ObjectiveControlLegend(LegendLordaeron.Arthas, false)
-          {
-            EligibleFactions = new List<Faction> { LordaeronSetup.Lordaeron }
-          }
+          new ObjectiveLegendReachRect(LegendLordaeron.Arthas, Regions.Central_Northrend, "central Northrend")
         }));
       
       TriggeredDialogueManager.Add(
@@ -123,11 +113,7 @@ namespace WarcraftLegacies.Source.Dialogue
             LordaeronSetup.Lordaeron
           }, new Objective[]
           {
-            new ObjectiveLegendMeetsLegend(LegendLordaeron.Arthas, LegendDalaran.LegendJaina),
-            new ObjectiveControlLegend(LegendLordaeron.Arthas, false)
-            {
-              EligibleFactions = new List<Faction> { LordaeronSetup.Lordaeron, DalaranSetup.Dalaran }
-            }
+            new ObjectiveLegendMeetsLegend(LegendLordaeron.Arthas, LegendDalaran.LegendJaina)
           }));
       
       TriggeredDialogueManager.Add(
@@ -143,11 +129,7 @@ namespace WarcraftLegacies.Source.Dialogue
             LordaeronSetup.Lordaeron
           }, new Objective[]
           {
-            new ObjectiveLegendInRect(LegendLordaeron.Arthas, Regions.FountainOfHealthAlterac, "Fountain of Health in Alterac"),
-            new ObjectiveControlLegend(LegendLordaeron.Arthas, false)
-            {
-              EligibleFactions = new List<Faction> { LordaeronSetup.Lordaeron, DalaranSetup.Dalaran }
-            }
+            new ObjectiveLegendInRect(LegendLordaeron.Arthas, Regions.FountainOfHealthAlterac, "Fountain of Health in Alterac")
           }));
       
       TriggeredDialogueManager.Add(
@@ -193,10 +175,6 @@ namespace WarcraftLegacies.Source.Dialogue
           }, new Objective[]
           {
             new ObjectiveLegendInRect(LegendLordaeron.Arthas, Regions.DrakUnlock, ""),
-            new ObjectiveControlLegend(LegendLordaeron.Arthas, false)
-            {
-              EligibleFactions = new List<Faction> { LordaeronSetup.Lordaeron }
-            }
           }));
       
       TriggeredDialogueManager.Add(
@@ -213,11 +191,7 @@ namespace WarcraftLegacies.Source.Dialogue
           {
             new ObjectiveLegendMeetsLegend(LegendLegion.LEGEND_MALGANIS, LegendLordaeron.Arthas),
             new ObjectiveLegendInRect(LegendLordaeron.Arthas, Regions.Central_Northrend, ""), //Todo: make this work in any region of Northrend
-            new ObjectiveLegendInRect(LegendLegion.LEGEND_MALGANIS, Regions.Central_Northrend, ""),
-            new ObjectiveControlLegend(LegendLordaeron.Arthas, false)
-            {
-              EligibleFactions = new List<Faction> { LordaeronSetup.Lordaeron }
-            }
+            new ObjectiveLegendInRect(LegendLegion.LEGEND_MALGANIS, Regions.Central_Northrend, "")
           }));
     }
   }

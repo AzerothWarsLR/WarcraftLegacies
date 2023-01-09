@@ -527,7 +527,7 @@ namespace MacroTools.Extensions
     /// <summary>
     ///   Drops a units entire inventory on the ground.
     /// </summary>
-    public static void DropAllItems(this unit whichUnit)
+    public static unit DropAllItems(this unit whichUnit)
     {
       if (IsUnitType(whichUnit, UNIT_TYPE_SUMMONED))
         throw new InvalidOperationException($"Tried to call {nameof(DropAllItems)} on a summoned hero.");
@@ -547,6 +547,8 @@ namespace MacroTools.Extensions
         whichUnit.DropItem(itemToDrop);
         itemToDrop.SetPositionSafe(new Point(x, y));
       }
+
+      return whichUnit;
     }
 
     /// <summary>

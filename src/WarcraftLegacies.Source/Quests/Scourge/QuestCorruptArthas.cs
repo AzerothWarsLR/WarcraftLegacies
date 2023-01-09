@@ -8,11 +8,14 @@ using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Scourge
 {
+  /// <summary>
+  /// The Scourge can corrupt Arthas, turning him into a Death Knight in their service.
+  /// </summary>
   public sealed class QuestCorruptArthas : QuestData
   {
-    private static readonly int HeroId = FourCC("Uear");
-    private static readonly int ResearchId = FourCC("R01K");
-
+    /// <summary>
+    /// Initializes a new instance of the <see cref="QuestCorruptArthas"/> class.
+    /// </summary>
     public QuestCorruptArthas() : base("The Culling",
       "When the city of Stratholme falls, Prince Arthas will abandon his people and join the Scourge as their champion.",
       "ReplaceableTextures\\CommandButtons\\BTNHeroDeathKnight.blp")
@@ -22,30 +25,26 @@ namespace WarcraftLegacies.Source.Quests.Scourge
         new ObjectiveFactionDefeated(LordaeronSetup.Lordaeron)));
       AddObjective(new ObjectiveSelfExists());
       Required = true;
+      ResearchId = Constants.UPGRADE_R01K_QUEST_COMPLETED_THE_CULLING_LORDAERON;
     }
 
-
+    /// <inheritdoc />
     protected override string CompletionPopup =>
       "Having failed to protect his people, Arthas seizes the cursed runeblade Frostmourne as the instrument of his vengeance. The malevolence of the blade overwhelms him. Arthas is now a loyal Death Knight of the Scourge, and will soon become its greatest champion.";
 
-    protected override string RewardDescription => "You can train Arthas Menethil from the Altar of Darkness";
+    /// <inheritdoc />
+    protected override string RewardDescription => $"Learn to train {LegendScourge.Arthas?.Name} from the {GetObjectName(Constants.UNIT_UAOD_ALTAR_OF_DARKNESS)}";
 
+    /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)
     {
-      LegendLordaeron.Arthas.Unit.DropAllItems();
-      RemoveUnit(LegendLordaeron.Arthas.Unit);
-      LegendLordaeron.Arthas.Unit = null;
-      LegendLordaeron.Arthas.PlayerColor = PLAYER_COLOR_PURPLE;
-      LegendLordaeron.Arthas.StartingXp = 7000;
-      LegendLordaeron.Arthas.UnitType = Constants.UNIT_UEAR_CHAMPION_OF_THE_SCOURGE_SCOURGE;
-      LegendLordaeron.Arthas.ClearUnitDependencies();
-      SetPlayerTechResearched(completingFaction.Player, ResearchId, 1);
-    }
-
-    protected override void OnAdd(Faction whichFaction)
-    {
-      whichFaction.ModObjectLimit(ResearchId, Faction.UNLIMITED);
-      whichFaction.ModObjectLimit(HeroId, 1);
+      var arthas = LegendLordaeron.Arthas?.Unit;
+      if (arthas != null && UnitAlive(arthas))
+      {
+        arthas
+          .Kill()
+          .Remove();
+      }
     }
   }
 }

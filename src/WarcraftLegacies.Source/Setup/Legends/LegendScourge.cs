@@ -29,6 +29,11 @@ namespace WarcraftLegacies.Source.Setup.Legends
     public static LegendaryHero? Rivendare { get; private set; }
     
     /// <summary>
+    /// The first human Death Knight, and Ner'zhul's champion.
+    /// </summary>
+    public static LegendaryHero? Arthas { get; private set; }
+    
+    /// <summary>
     /// Psychic ruler of the Scourge.
     /// </summary>
     public static Capital? LegendLichking { get; private set; }
@@ -73,6 +78,13 @@ namespace WarcraftLegacies.Source.Setup.Legends
       };
       LegendaryHeroManager.Register(Rivendare);
 
+      Arthas = new LegendaryHero("Arthas Menethil")
+      {
+        UnitType = Constants.UNIT_UEAR_CHAMPION_OF_THE_SCOURGE_SCOURGE,
+        StartingXp = 7000
+      };
+      LegendaryHeroManager.Register(Arthas);
+      
       LegendUtgarde = new Capital
       {
         Unit = preplacedUnitSystem.GetUnit(FourCC("h00O")),
