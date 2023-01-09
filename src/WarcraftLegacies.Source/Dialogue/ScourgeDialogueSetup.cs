@@ -23,7 +23,7 @@ namespace WarcraftLegacies.Source.Dialogue
           LordaeronSetup.Lordaeron,
         }, new[]
         {
-          new ObjectiveLegendDead(LegendScourge.LegendKelthuzad)
+          new ObjectiveLegendDead(LegendScourge.Kelthuzad)
         }));
 
       TriggeredDialogueManager.Add(
@@ -35,7 +35,7 @@ namespace WarcraftLegacies.Source.Dialogue
           new[]
           {
             new ObjectiveStartSpell(Constants.ABILITY_A00J_SUMMON_THE_BURNING_LEGION_ALL_FACTIONS, false,
-              LegendScourge.LegendKelthuzad)
+              LegendScourge.Kelthuzad)
           }));
 
       TriggeredDialogueManager.Add(

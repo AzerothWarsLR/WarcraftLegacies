@@ -26,7 +26,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
     {
       _naxxramas = naxxramas;
       ObjectiveChannelRect objectiveChannelRect =
-        new(Regions.NaxUnlock, "Naxxramas", LegendScourge.LegendKelthuzad, 180, 270);
+        new(Regions.NaxUnlock, "Naxxramas", LegendScourge.Kelthuzad, 180, 270);
       AddObjective(objectiveChannelRect);
       SetUnitInvulnerable(naxxramas, true);
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideAll);

@@ -1,29 +1,60 @@
 ﻿using MacroTools;
 using MacroTools.Extensions;
-using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
+using WarcraftLegacies.Source.Setup.FactionSetup;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 using static War3Api.Blizzard;
 
 namespace WarcraftLegacies.Source.Setup.Legends
 {
+  /// <summary>
+  /// Responsible for setting up and managing all <see cref="ScourgeSetup.Scourge"/> <see cref="Legend"/>s.
+  /// </summary>
   public static class LegendScourge
   {
-    public static LegendaryHero? LegendKelthuzad { get; private set; }
-    public static LegendaryHero? LegendAnubarak { get; private set; }
-    public static LegendaryHero? LegendRivendare { get; private set; }
+    /// <summary>
+    /// Leader of the Cult of the Damned.
+    /// </summary>
+    public static LegendaryHero? Kelthuzad { get; private set; }
+    
+    /// <summary>
+    /// Fallen king of the Nerubians.
+    /// </summary>
+    public static LegendaryHero? Anubarak { get; private set; }
+    
+    /// <summary>
+    /// Ruler of Stratholme after it's taken over by the Scourge.
+    /// </summary>
+    public static LegendaryHero? Rivendare { get; private set; }
+    
+    /// <summary>
+    /// The first human Death Knight, and Ner'zhul's champion.
+    /// </summary>
+    public static LegendaryHero? Arthas { get; private set; }
+    
+    /// <summary>
+    /// Psychic ruler of the Scourge.
+    /// </summary>
     public static Capital? LegendLichking { get; private set; }
+    
+    /// <summary>
+    /// A Vrykul stronghold.
+    /// </summary>
     public static Capital? LegendUtgarde { get; private set; }
+    
+    /// <summary>
+    /// Mobile Scourge Necropolis.
+    /// </summary>
     public static Capital? Naxxramas { get; private set; }
 
-    public static int UnittypeKelthuzadNecromancer { get; } = FourCC("U001");
-    public static int UnittypeKelthuzadGhost { get; } = FourCC("U00M");
-    public static int UnittypeKelthuzadLich { get; } = FourCC("Uktl");
-
+    /// <summary>
+    /// Sets up <see cref="LegendScourge"/>.
+    /// </summary>
+    /// <param name="preplacedUnitSystem">A system for finding preplaced units on the map.</param>
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
-      LegendKelthuzad = new LegendaryHero("Kel'thuzad")
+      Kelthuzad = new LegendaryHero("Kel'thuzad")
       {
         UnitType = FourCC("U001"),
         PermaDies = true,
@@ -32,21 +63,28 @@ namespace WarcraftLegacies.Source.Setup.Legends
         DeathSfx = "Abilities\\Spells\\Undead\\DeathCoil\\DeathCoilSpecialArt.mdl",
         StartingXp = 1000
       };
-      LegendaryHeroManager.Register(LegendKelthuzad);
+      LegendaryHeroManager.Register(Kelthuzad);
 
-      LegendAnubarak = new LegendaryHero("Anub'arak")
+      Anubarak = new LegendaryHero("Anub'arak")
       {
         UnitType = FourCC("Uanb")
       };
-      LegendaryHeroManager.Register(LegendAnubarak);
+      LegendaryHeroManager.Register(Anubarak);
 
-      LegendRivendare = new LegendaryHero("Baron Rivendare")
+      Rivendare = new LegendaryHero("Baron Rivendare")
       {
         UnitType = FourCC("U00A"),
         StartingXp = 1000
       };
-      LegendaryHeroManager.Register(LegendRivendare);
+      LegendaryHeroManager.Register(Rivendare);
 
+      Arthas = new LegendaryHero("Arthas Menethil")
+      {
+        UnitType = Constants.UNIT_UEAR_CHAMPION_OF_THE_SCOURGE_SCOURGE,
+        StartingXp = 7000
+      };
+      LegendaryHeroManager.Register(Arthas);
+      
       LegendUtgarde = new Capital
       {
         Unit = preplacedUnitSystem.GetUnit(FourCC("h00O")),

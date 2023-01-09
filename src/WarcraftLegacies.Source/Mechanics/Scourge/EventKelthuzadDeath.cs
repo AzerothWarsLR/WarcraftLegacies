@@ -14,14 +14,17 @@ namespace WarcraftLegacies.Source.Mechanics.Scourge
   /// </summary>
   public static class EventKelthuzadDeath
   {
+    private static readonly int UnittypeKelthuzadNecromancer = FourCC("U001");
+    private static readonly int UnittypeKelthuzadGhost = FourCC("U00M");
+
     public static int KelthuzadExp { get; private set; }
 
     private static void Dies(object? sender, LegendaryHero legendaryHero)
     {
-      if (legendaryHero != LegendScourge.LegendKelthuzad ||
-          legendaryHero.UnitType != LegendScourge.UnittypeKelthuzadNecromancer) return;
+      if (legendaryHero != LegendScourge.Kelthuzad ||
+          legendaryHero.UnitType != UnittypeKelthuzadNecromancer) return;
       KelthuzadExp = GetHeroXP(legendaryHero.Unit);
-      legendaryHero.UnitType = LegendScourge.UnittypeKelthuzadGhost;
+      legendaryHero.UnitType = UnittypeKelthuzadGhost;
       legendaryHero.PermaDies = false;
       legendaryHero.ForceCreate(ScourgeSetup.Scourge.Player, Regions.FTSummon.Center,
         270);
@@ -30,7 +33,7 @@ namespace WarcraftLegacies.Source.Mechanics.Scourge
 
     public static void Setup()
     {
-      LegendScourge.LegendKelthuzad.OnLegendPermaDeath += Dies;
+      LegendScourge.Kelthuzad.OnLegendPermaDeath += Dies;
     }
   }
 }

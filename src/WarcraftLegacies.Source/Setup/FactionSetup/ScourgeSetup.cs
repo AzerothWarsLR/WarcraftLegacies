@@ -88,6 +88,7 @@ Naxxramas looms over Dragonblight, but requires a powerful necromancer to awaken
       Scourge.ModObjectLimit(FourCC("U00M"), 1); //Kel'thuzad (Ghost)
       Scourge.ModObjectLimit(FourCC("U00A"), 1); //Rivendare
       Scourge.ModObjectLimit(FourCC("Uktl"), 1); //Kel'thuzad (Lich)
+      Scourge.ModObjectLimit(Constants.UNIT_UEAR_CHAMPION_OF_THE_SCOURGE_SCOURGE, 1);
 
       //Upgrades
       Scourge.ModObjectLimit(FourCC("Ruba"), Faction.UNLIMITED); //Banshee Adept Training

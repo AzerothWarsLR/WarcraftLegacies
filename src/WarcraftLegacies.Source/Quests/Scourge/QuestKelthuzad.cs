@@ -9,12 +9,14 @@ namespace WarcraftLegacies.Source.Quests.Scourge
 {
   public sealed class QuestKelthuzad : QuestData
   {
+    private static readonly int UnittypeKelthuzadLich = FourCC("Uktl");
+    
     public QuestKelthuzad() : base("Life Beyond Death",
       "Kel'thuzad is the leader of the Cult of the Damned and an extraordinarily powerful necromancer. If he were to be brought to the Sunwell and submerged in its waters, he would be reanimated as an immortal Lich.",
       "ReplaceableTextures\\CommandButtons\\BTNLichVersion2.blp")
     {
       AddObjective(new ObjectiveControlCapital(LegendQuelthalas.LegendSunwell, false));
-      AddObjective(new ObjectiveLegendInRect(LegendScourge.LegendKelthuzad, Regions.Sunwell, "The Sunwell"));
+      AddObjective(new ObjectiveLegendInRect(LegendScourge.Kelthuzad, Regions.Sunwell, "The Sunwell"));
       Required = true;
     }
 
@@ -34,17 +36,17 @@ namespace WarcraftLegacies.Source.Quests.Scourge
 
     protected override void OnComplete(Faction completingFaction)
     {
-      LegendScourge.LegendKelthuzad.UnitType = LegendScourge.UnittypeKelthuzadLich;
-      LegendScourge.LegendKelthuzad.PermaDies = false;
-      SetUnitState(LegendScourge.LegendKelthuzad.Unit, UNIT_STATE_LIFE,
-        GetUnitState(LegendScourge.LegendKelthuzad.Unit, UNIT_STATE_MAX_LIFE));
-      SetUnitState(LegendScourge.LegendKelthuzad.Unit, UNIT_STATE_MANA,
-        GetUnitState(LegendScourge.LegendKelthuzad.Unit, UNIT_STATE_MAX_MANA));
+      LegendScourge.Kelthuzad.UnitType = UnittypeKelthuzadLich;
+      LegendScourge.Kelthuzad.PermaDies = false;
+      SetUnitState(LegendScourge.Kelthuzad.Unit, UNIT_STATE_LIFE,
+        GetUnitState(LegendScourge.Kelthuzad.Unit, UNIT_STATE_MAX_LIFE));
+      SetUnitState(LegendScourge.Kelthuzad.Unit, UNIT_STATE_MANA,
+        GetUnitState(LegendScourge.Kelthuzad.Unit, UNIT_STATE_MAX_MANA));
       DestroyEffect(AddSpecialEffect("war3mapImported\\Soul Beam Blue.mdx",
-        GetUnitX(LegendScourge.LegendKelthuzad.Unit),
-        GetUnitY(LegendScourge.LegendKelthuzad.Unit)));
+        GetUnitX(LegendScourge.Kelthuzad.Unit),
+        GetUnitY(LegendScourge.Kelthuzad.Unit)));
       DestroyEffect(AddSpecialEffect("Abilities\\Spells\\Undead\\FrostNova\\FrostNovaTarget.mdl",
-        GetUnitX(LegendScourge.LegendKelthuzad.Unit), GetUnitY(LegendScourge.LegendKelthuzad.Unit)));
+        GetUnitX(LegendScourge.Kelthuzad.Unit), GetUnitY(LegendScourge.Kelthuzad.Unit)));
     }
   }
 }

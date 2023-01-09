@@ -1,6 +1,5 @@
 ﻿using MacroTools;
 using MacroTools.Extensions;
-using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -67,7 +66,13 @@ namespace WarcraftLegacies.Source.Setup.Legends
         Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_NEMI_KING_TERENAS_MENETHIL_LORDAERON)
       };
       LegendaryHeroManager.Register(Terenas);
-      
+      CreateTrigger()
+       .RegisterUnitEvent(Terenas.Unit, EVENT_UNIT_DEATH)
+       .AddAction(() =>
+       {
+         artifactSetup.CrownOfLordaeron.Item.SetPosition(Regions.King_Arthas_crown.Center);
+       });
+
       Mograine = new LegendaryHero("Alexandros Mograine")
       {
         UnitType = Constants.UNIT_H01J_THE_ASHBRINGER_LORDAERON,
@@ -104,7 +109,6 @@ namespace WarcraftLegacies.Source.Setup.Legends
         .AddAction(() =>
         {
           Terenas.Unit.Kill();
-          artifactSetup.CrownOfLordaeron.Item.SetPosition(Regions.King_Arthas_crown.Center);
           SetDoodadAnimation(Regions.King_Arthas_crown.Center.X, Regions.King_Arthas_crown.Center.Y, 200,
             FourCC("Ysaw"), false, "hide", false);
           SetDoodadAnimation(Regions.King_Arthas_crown.Center.X, Regions.King_Arthas_crown.Center.Y, 200,
@@ -147,8 +151,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
 
       Arthas = new LegendaryHero("Arthas Menethil")
       {
-        UnitType = Constants.UNIT_HART_CROWN_PRINCE_OF_LORDAERON_LORDAERON,
-        PlayerColor = PLAYER_COLOR_BLUE
+        UnitType = Constants.UNIT_HART_CROWN_PRINCE_OF_LORDAERON_LORDAERON
       };
       LegendaryHeroManager.Register(Arthas);
     }

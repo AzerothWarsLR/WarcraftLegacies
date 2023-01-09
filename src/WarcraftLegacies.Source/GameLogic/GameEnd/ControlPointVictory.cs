@@ -1,4 +1,4 @@
-using MacroTools.ControlPointSystem;
+﻿using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using static War3Api.Common;
@@ -10,9 +10,9 @@ namespace WarcraftLegacies.Source.GameLogic.GameEnd
   /// </summary>
   public static class ControlPointVictory
   {
-    private const int CpsWarning = 75; //How many Control Points to start the warning at
+    private const int CpsWarning = 70; //How many Control Points to start the warning at
     private const string VictoryColor = "|cff911499";
-    private static int _cpsVictory = 90; //This many Control Points gives an instant win
+    private static int _cpsVictory = 80; //This many Control Points gives an instant win
 
     public static void SetCpsVictory(int victoryCpCount)
     {
@@ -59,7 +59,8 @@ namespace WarcraftLegacies.Source.GameLogic.GameEnd
 
     public static void Setup()
     {
-      //ControlPoint.OnControlPointOwnerChange += ControlPointOwnerChanges;
+      foreach (var controlPoint in ControlPointManager.Instance.GetAllControlPoints())
+        controlPoint.ChangedOwner += ControlPointOwnerChanges;
     }
   }
 }
