@@ -162,7 +162,7 @@ namespace WarcraftLegacies.Source.Dialogue
             LegionSetup.Legion
           }, new Objective[]
           {
-            new ObjectiveCompleteQuest(ScourgeSetup.Scourge.GetQuestByType(typeof(QuestCorruptArthas)))
+            new ObjectiveLegendMeetsLegend(LegendScourge.Arthas, LegendLegion.LEGEND_MALGANIS)
           }));
       
       TriggeredDialogueManager.Add(
