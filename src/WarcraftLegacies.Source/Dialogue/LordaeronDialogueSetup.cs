@@ -207,8 +207,7 @@ namespace WarcraftLegacies.Source.Dialogue
           LordaeronSetup.Lordaeron
         }, new List<Objective>
         {
-          new ObjectiveLegendMeetsLegend(LegendLordaeron.Uther, LegendLordaeron.Arthas),
-          new ObjectiveCompleteQuest(ScourgeSetup.Scourge.GetQuestByType(typeof(QuestCorruptArthas)))
+          new ObjectiveLegendMeetsLegend(LegendLordaeron.Uther, LegendLordaeron.Arthas)
         }
       ));
     }
