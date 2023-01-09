@@ -1,3 +1,4 @@
+using System;
 using MacroTools.LegendSystem;
 using MacroTools.QuestSystem;
 using WCSharp.Shared.Data;
@@ -11,6 +12,15 @@ namespace MacroTools.ObjectiveSystem.Objectives.LegendBased
   public sealed class ObjectiveLegendDead : Objective
   {
     private readonly Legend _target;
+
+    /// <summary>
+    /// An optional filter that is applied against the <see cref="LegendaryHero"/> when it dies. The <see cref="Objective"/>
+    /// will only be completed if the filter passes.
+    /// </summary>
+    public Func<Legend, bool> DeathFilter { get; init; } = _ => true;
+
+    /// <inheritdoc/>
+    public override Point Position => new(GetUnitX(_target.Unit), GetUnitY(_target.Unit));
 
     /// <summary>
     /// Initializes a new instance of the <see cref="ObjectiveLegendDead"/> class.
@@ -28,12 +38,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.LegendBased
       target.PermanentlyDied += OnDeath;
     }
 
-    /// <inheritdoc/>
-    public override Point Position => new(GetUnitX(_target.Unit), GetUnitY(_target.Unit));
-
-    private void OnDeath(object? sender, Legend legend)
-    {
-      Progress = QuestProgress.Complete;
-    }
+    private void OnDeath(object? sender, Legend legend) =>
+      Progress = DeathFilter(legend) ? QuestProgress.Complete : QuestProgress.Failed;
   }
 }
