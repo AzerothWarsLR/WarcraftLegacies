@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using MacroTools.DialogueSystem;
 using MacroTools.FactionSystem;
+using MacroTools.ObjectiveSystem;
 using MacroTools.ObjectiveSystem.Objectives;
 using WarcraftLegacies.Source.Setup.FactionSetup;
 using WarcraftLegacies.Source.Setup.Legends;
@@ -60,6 +61,25 @@ namespace WarcraftLegacies.Source.Dialogue
         {
           new ObjectiveLegendInRect(LegendDalaran.LegendJaina, Regions.Hearthglen, "Hearthglen")
         }));
+      
+      TriggeredDialogueManager.Add(new TriggeredDialogue(
+        new DialogueSequence(
+          new MacroTools.DialogueSystem.Dialogue(@"Sound\Dialogue\UndeadCampaign\Undead07\U07Antonidas13.flac",
+            "It pains me to even look at you, Arthas.",
+            "Arthas Menethil"),
+          new MacroTools.DialogueSystem.Dialogue(@"Sound\Dialogue\UndeadCampaign\Undead07\U07Arthas14.flac",
+            "I'll be happy to end your torment, old man. I told you that your magics could not stop me.",
+            "Antonidas")
+        ), new[]
+        {
+          ScourgeSetup.Scourge,
+          DalaranSetup.Dalaran
+        }, new List<Objective>
+        {
+          new ObjectiveLegendDead(LegendDalaran.LegendAntonidas),
+          new ObjectiveLegendMeetsLegend(LegendLordaeron.Arthas, LegendDalaran.LegendAntonidas)
+        }
+      ));
     }
   }
 }

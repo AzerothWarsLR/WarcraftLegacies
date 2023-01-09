@@ -1,4 +1,6 @@
-﻿using MacroTools.DialogueSystem;
+﻿using System.Collections.Generic;
+using MacroTools.DialogueSystem;
+using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem;
 using MacroTools.ObjectiveSystem.Objectives;
 using WarcraftLegacies.Source.Setup.FactionSetup;
@@ -76,7 +78,11 @@ namespace WarcraftLegacies.Source.Dialogue
               soundFile: @"Sound\Dialogue\UndeadCampaign\Undead03\U03AKelthuzad04.flac",
               caption: "Don't be too overconfident, death knight. The elves must not be taken lightly.",
               speaker: "Kel'thuzad")),
-          new[] { ScourgeSetup.Scourge },
+          new[]
+          {
+            ScourgeSetup.Scourge,
+            QuelthalasSetup.Quelthalas
+          },
           new[]
           {
             new ObjectiveLegendInRect(LegendLordaeron.Arthas, Regions.QuelthalasAmbient, "Quel'thalas"),
@@ -94,7 +100,11 @@ namespace WarcraftLegacies.Source.Dialogue
               soundFile: @"Sound\Dialogue\UndeadCampaign\Undead03\U03AArthas13.flac",
               caption: "It is you who should turn back, Sylvanas. Death itself has come for your land.",
               speaker: "Arthas Menethil")),
-          new[] { ScourgeSetup.Scourge },
+          new[]
+          {
+            ScourgeSetup.Scourge,
+            QuelthalasSetup.Quelthalas
+          },
           new[]
           {
             new ObjectiveLegendInRect(LegendLordaeron.Arthas, Regions.QuelthalasAmbient, "Quel'thalas"),
@@ -112,7 +122,11 @@ namespace WarcraftLegacies.Source.Dialogue
               soundFile: @"Sound\Dialogue\UndeadCampaign\Undead05\U05ATichondrius03.flac",
               caption: "I am here to ensure that you do your job, little human. Not do it for you.",
               speaker: "Tichondrius")),
-          new[] { ScourgeSetup.Scourge },
+          new[]
+          {
+            ScourgeSetup.Scourge,
+            LegionSetup.Legion
+          },
           new[]
           {
             new ObjectiveLegendMeetsLegend(LegendLordaeron.Arthas, LegendLegion.LEGEND_TICHONDRIUS)
@@ -133,11 +147,47 @@ namespace WarcraftLegacies.Source.Dialogue
               soundFile: @"Sound\Dialogue\UndeadCampaign\Undead05\U05AKelThuzad31.flac",
               caption: "I am reborn, as promised! The Lich King has granted me eternal life!",
               speaker: "Kel'thuzad")),
-          new[] { ScourgeSetup.Scourge },
+          new[]
+          {
+            ScourgeSetup.Scourge,
+            LordaeronSetup.Lordaeron,
+            QuelthalasSetup.Quelthalas
+          },
           new[]
           {
             new ObjectiveLegendMeetsLegend(LegendLordaeron.Arthas, LegendLegion.LEGEND_TICHONDRIUS)
           }));
+      
+      TriggeredDialogueManager.Add(new TriggeredDialogue(
+        new DialogueSequence(
+          new MacroTools.DialogueSystem.Dialogue(@"Sound\Dialogue\UndeadCampaign\Undead07\U07Arthas01.flac",
+            "Wizards of the Kirin Tor! I am Arthas, first of the Lich King's death knights! I demand that you open your gates and surrender to the might of the Scourge!",
+            "Arthas Menethil"),
+          new MacroTools.DialogueSystem.Dialogue(@"Sound\Dialogue\UndeadCampaign\Undead07\U07Antonidas02.flac",
+            "Greetings, Prince Arthas. How fares your noble father?",
+            "Antonidas"),
+          new MacroTools.DialogueSystem.Dialogue(@"Sound\Dialogue\UndeadCampaign\Undead07\U07Arthas03.flac",
+            "Lord Antonidas. There's no need to be snide.",
+            "Arthas Menethil"),
+          new MacroTools.DialogueSystem.Dialogue(@"Sound\Dialogue\UndeadCampaign\Undead07\U07Antonidas04.flac",
+            "We've prepared for your coming, Arthas. My brethren and I have erected auras that will destroy any undead that pass through them.",
+            "Antonidas"),
+          new MacroTools.DialogueSystem.Dialogue(@"Sound\Dialogue\UndeadCampaign\Undead07\U07Arthas05.flac",
+            "Your petty magics will not stop me, Antonidas.",
+            "Arthas Menethil"),
+          new MacroTools.DialogueSystem.Dialogue(@"Sound\Dialogue\UndeadCampaign\Undead07\U07Antonidas06.flac",
+            "Pull your troops back, or we will be forced to unleash our full powers against you! Make your choice, death knight.",
+            "Antonidas")
+        ), new[]
+        {
+          ScourgeSetup.Scourge,
+          DalaranSetup.Dalaran
+        }, new List<Objective>
+        {
+          new ObjectiveLegendInRect(LegendDalaran.LegendAntonidas, Regions.Dalaran, "Dalaran"),
+          new ObjectiveLegendInRect(LegendLordaeron.Arthas, Regions.Dalaran, "Dalaran")
+        }
+      ));
     }
   }
 }

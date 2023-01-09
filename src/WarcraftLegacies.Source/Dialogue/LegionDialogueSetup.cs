@@ -81,6 +81,24 @@ namespace WarcraftLegacies.Source.Dialogue
           new ObjectiveCompleteQuest(LegionSetup.Legion.GetQuestByType(typeof(QuestConsumeTree)))
         }
       ));
+      
+      TriggeredDialogueManager.Add(new TriggeredDialogue(
+        new DialogueSequence(
+          new MacroTools.DialogueSystem.Dialogue(@"Sound\Dialogue\UndeadCampaign\Undead06\U06KelThuzad21.flac",
+            "You called my name, puny lich, and I have come. You are Kel'Thuzad, are you not?",
+            "Archimonde"),
+          new MacroTools.DialogueSystem.Dialogue(@"Sound\Dialogue\UndeadCampaign\Undead06\U06Archimonde22.flac",
+            "Yes, great one. I am the summoner.",
+            "Kel'thuzad")
+        ), new[]
+        {
+          LegionSetup.Legion,
+          ScourgeSetup.Scourge
+        }, new List<Objective>
+        {
+          new ObjectiveLegendMeetsLegend(LegendLegion.LEGEND_ARCHIMONDE, LegendScourge.LegendKelthuzad)
+        }
+      ));
     }
   }
 }
