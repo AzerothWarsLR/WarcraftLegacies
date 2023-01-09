@@ -20,7 +20,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.FactionBased
       ShowsInQuestLog = false;
     }
 
-    internal override void OnAdd(FactionSystem.Faction whichFaction)
+    internal override void OnAdd(Faction whichFaction)
     {
       Progress = QuestProgress.Complete;
       whichFaction.ScoreStatusChanged += OnAnyFactionScoreStatusChanged;
@@ -31,7 +31,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.FactionBased
       });
     }
 
-    private void OnAnyFactionScoreStatusChanged(object? sender, FactionSystem.Faction faction)
+    private void OnAnyFactionScoreStatusChanged(object? sender, Faction faction)
     {
       if (faction.ScoreStatus == ScoreStatus.Defeated) 
         Progress = QuestProgress.Failed;

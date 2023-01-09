@@ -9,9 +9,9 @@ namespace MacroTools.ObjectiveSystem.Objectives.ControlPointBased
 {
   public sealed class ObjectiveControlPoint : Objective
   {
-    private readonly ControlPointSystem.ControlPoint _target;
+    private readonly ControlPoint _target;
 
-    public ObjectiveControlPoint(ControlPointSystem.ControlPoint target)
+    public ObjectiveControlPoint(ControlPoint target)
     {
       _target = target;
       Description = "Your team controls " + target.Name;
@@ -23,7 +23,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.ControlPointBased
 
     public override Point Position => new(GetUnitX(_target.Unit), GetUnitY(_target.Unit));
 
-    internal override void OnAdd(FactionSystem.Faction whichFaction)
+    internal override void OnAdd(Faction whichFaction)
     {
       Progress = IsPlayerOnSameTeamAsAnyEligibleFaction(_target.Unit.OwningPlayer())
         ? QuestProgress.Complete

@@ -9,7 +9,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.LegendBased
   {
     private readonly int _level;
 
-    private readonly LegendSystem.Legend _target;
+    private readonly Legend _target;
 
     public ObjectiveLegendLevel(LegendaryHero target, int level)
     {

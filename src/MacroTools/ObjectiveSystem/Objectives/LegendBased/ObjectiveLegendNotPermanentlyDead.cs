@@ -10,7 +10,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.LegendBased
   /// </summary>
   public sealed class ObjectiveLegendNotPermanentlyDead : Objective
   {
-    private readonly LegendSystem.Legend _target;
+    private readonly Legend _target;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="ObjectiveLegendNotPermanentlyDead"/> class.
@@ -27,7 +27,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.LegendBased
       PlayerUnitEvents.Register(UnitTypeEvent.FinishesTraining, OnAnyUnitTrain);
     }
 
-    private void OnAnyUnitDeath(object? sender, LegendSystem.Legend legend)
+    private void OnAnyUnitDeath(object? sender, Legend legend)
     {
       Progress = QuestProgress.Failed;
     }

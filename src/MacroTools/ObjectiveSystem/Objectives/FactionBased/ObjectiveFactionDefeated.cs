@@ -5,13 +5,13 @@ namespace MacroTools.ObjectiveSystem.Objectives.FactionBased
 {
   public class ObjectiveFactionDefeated : Objective
   {
-    public ObjectiveFactionDefeated(FactionSystem.Faction whichFaction)
+    public ObjectiveFactionDefeated(Faction whichFaction)
     {
       Description = whichFaction.Name + " has been defeated";
       whichFaction.ScoreStatusChanged += OnAnyFactionScoreStatusChanged;
     }
 
-    private  void OnAnyFactionScoreStatusChanged(object? sender, FactionSystem.Faction faction)
+    private  void OnAnyFactionScoreStatusChanged(object? sender, Faction faction)
     {
       if (faction.ScoreStatus == ScoreStatus.Defeated)
         Progress = QuestProgress.Complete;
