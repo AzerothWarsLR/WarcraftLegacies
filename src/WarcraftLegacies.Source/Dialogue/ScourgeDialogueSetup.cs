@@ -67,19 +67,19 @@ namespace WarcraftLegacies.Source.Dialogue
         new TriggeredDialogue(
           new DialogueSequence(
             new MacroTools.DialogueSystem.Dialogue(
-              soundFile: @"Sound\Dialogue\UndeadCampaign\Undead03\U03AArthas01.flac",
+              soundFile: @"Sound\Dialogue\UndeadCampaign\Undead03A\U03AArthas01.flac",
               caption: "Ah, wondrous, eternal Quel'Thalas. I haven't been here since I was a boy.",
               speaker: "Arthas Menethil"),
             new MacroTools.DialogueSystem.Dialogue(
-              soundFile: @"Sound\Dialogue\UndeadCampaign\Undead03\U03AKelThuzad02.flac",
+              soundFile: @"Sound\Dialogue\UndeadCampaign\Undead03A\U03AKelThuzad02.flac",
               caption: "Be wary. The elves likely wait in ambush.",
               speaker: "Kel'thuzad"),
             new MacroTools.DialogueSystem.Dialogue(
-              soundFile: @"Sound\Dialogue\UndeadCampaign\Undead03\U03AArthas03.flac",
+              soundFile: @"Sound\Dialogue\UndeadCampaign\Undead03A\U03AArthas03.flac",
               caption: "The frail elves do not concern me, necromancer. Our forces are strengthened with every foe we slay.",
               speaker: "Arthas Menethil"),
             new MacroTools.DialogueSystem.Dialogue(
-              soundFile: @"Sound\Dialogue\UndeadCampaign\Undead03\U03AKelthuzad04.flac",
+              soundFile: @"Sound\Dialogue\UndeadCampaign\Undead03A\U03AKelthuzad04.flac",
               caption: "Don't be too overconfident, death knight. The elves must not be taken lightly.",
               speaker: "Kel'thuzad")),
           new[]
@@ -99,11 +99,11 @@ namespace WarcraftLegacies.Source.Dialogue
         new TriggeredDialogue(
           new DialogueSequence(
             new MacroTools.DialogueSystem.Dialogue(
-              soundFile: @"Sound\Dialogue\UndeadCampaign\Undead03\U03ASylvanas12.flac",
+              soundFile: @"Sound\Dialogue\UndeadCampaign\Undead03A\U03ASylvanas12.flac",
               caption: "You are not welcome here. I am Sylvanas Windrunner, Ranger-General of Silvermoon. I advise you to turn back now.",
               speaker: "Sylvanas Windrunner"),
             new MacroTools.DialogueSystem.Dialogue(
-              soundFile: @"Sound\Dialogue\UndeadCampaign\Undead03\U03AArthas13.flac",
+              soundFile: @"Sound\Dialogue\UndeadCampaign\Undead03A\U03AArthas13.flac",
               caption: "It is you who should turn back, Sylvanas. Death itself has come for your land.",
               speaker: "Arthas Menethil")),
           new[]
@@ -120,11 +120,11 @@ namespace WarcraftLegacies.Source.Dialogue
         new TriggeredDialogue(
           new DialogueSequence(
             new MacroTools.DialogueSystem.Dialogue(
-              soundFile: @"Sound\Dialogue\UndeadCampaign\Undead05\U05AArthas02.flac",
+              soundFile: @"Sound\Dialogue\UndeadCampaign\Undead05A\U05AArthas02.flac",
               caption: "I was wondering when you'd show up.",
               speaker: "Arthas Menethil"),
             new MacroTools.DialogueSystem.Dialogue(
-              soundFile: @"Sound\Dialogue\UndeadCampaign\Undead05\U05ATichondrius03.flac",
+              soundFile: @"Sound\Dialogue\UndeadCampaign\Undead05A\U05ATichondrius03.flac",
               caption: "I am here to ensure that you do your job, little human. Not do it for you.",
               speaker: "Tichondrius")),
           new[]
@@ -141,15 +141,15 @@ namespace WarcraftLegacies.Source.Dialogue
         new TriggeredDialogue(
           new DialogueSequence(
             new MacroTools.DialogueSystem.Dialogue(
-              soundFile: @"Sound\Dialogue\UndeadCampaign\Undead05\U05AArthas22.flac",
-              caption: "Citizens of Silvermoon! I given you ample opportunities to surrender, but you have stubbornly refused! Know that today, your entire race and your ancient heritage will end! Death itself has come to claim the high home of the elves!",
+              soundFile: @"Sound\Dialogue\UndeadCampaign\Undead05A\U05AArthas22.flac",
+              caption: "Citizens of Silvermoon! I have given you ample opportunities to surrender, but you have stubbornly refused! Know that today, your entire race and your ancient heritage will end! Death itself has come to claim the high home of the elves!",
               speaker: "Arthas Menethil"),
             new MacroTools.DialogueSystem.Dialogue(
-              soundFile: @"Sound\Dialogue\UndeadCampaign\Undead05\U05AArthas30.flac",
+              soundFile: @"Sound\Dialogue\UndeadCampaign\Undead05A\U05AArthas30.flac",
               caption: "Now, arise, Kel'Thuzad, and serve the Lich King once again!",
               speaker: "Arthas Menethil"),
             new MacroTools.DialogueSystem.Dialogue(
-              soundFile: @"Sound\Dialogue\UndeadCampaign\Undead05\U05AKelThuzad31.flac",
+              soundFile: @"Sound\Dialogue\UndeadCampaign\Undead05A\U05AKelThuzad31.flac",
               caption: "I am reborn, as promised! The Lich King has granted me eternal life!",
               speaker: "Kel'thuzad")),
           new[]
