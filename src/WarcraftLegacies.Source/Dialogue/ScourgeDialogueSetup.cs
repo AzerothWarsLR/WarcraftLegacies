@@ -156,7 +156,7 @@ namespace WarcraftLegacies.Source.Dialogue
           },
           new[]
           {
-            new ObjectiveCompleteQuest(ScourgeSetup.Scourge.GetQuestByType(typeof(QuestKelthuzad)))
+            new ObjectiveCompleteQuest(ScourgeSetup.Scourge.GetQuestByType(typeof(QuestKelthuzadLich)))
           }));
       
       TriggeredDialogueManager.Add(new TriggeredDialogue(
