@@ -3,6 +3,7 @@ using MacroTools.DialogueSystem;
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem;
 using MacroTools.ObjectiveSystem.Objectives;
+using WarcraftLegacies.Source.Quests.Scourge;
 using WarcraftLegacies.Source.Setup.FactionSetup;
 using WarcraftLegacies.Source.Setup.Legends;
 
@@ -107,8 +108,7 @@ namespace WarcraftLegacies.Source.Dialogue
           },
           new[]
           {
-            new ObjectiveLegendInRect(LegendScourge.Arthas, Regions.QuelthalasAmbient, "Quel'thalas"),
-            new ObjectiveLegendInRect(LegendScourge.Kelthuzad, Regions.QuelthalasAmbient, "Quel'thalas")
+            new ObjectiveLegendMeetsLegend(LegendScourge.Arthas, LegendQuelthalas.LegendSylvanas)
           }));
       
       TriggeredDialogueManager.Add(
@@ -155,7 +155,7 @@ namespace WarcraftLegacies.Source.Dialogue
           },
           new[]
           {
-            new ObjectiveLegendMeetsLegend(LegendScourge.Arthas, LegendLegion.LEGEND_TICHONDRIUS)
+            new ObjectiveCompleteQuest(ScourgeSetup.Scourge.GetQuestByType(typeof(QuestKelthuzad)))
           }));
       
       TriggeredDialogueManager.Add(new TriggeredDialogue(
