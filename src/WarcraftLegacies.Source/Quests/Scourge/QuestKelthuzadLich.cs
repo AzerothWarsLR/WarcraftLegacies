@@ -7,11 +7,11 @@ using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Scourge
 {
-  public sealed class QuestKelthuzad : QuestData
+  public sealed class QuestKelthuzadLich : QuestData
   {
     private static readonly int UnittypeKelthuzadLich = FourCC("Uktl");
     
-    public QuestKelthuzad() : base("Life Beyond Death",
+    public QuestKelthuzadLich() : base("Into the Realm Eternal",
       "Kel'thuzad is the leader of the Cult of the Damned and an extraordinarily powerful necromancer. If he were to be brought to the Sunwell and submerged in its waters, he would be reanimated as an immortal Lich.",
       "ReplaceableTextures\\CommandButtons\\BTNLichVersion2.blp")
     {
@@ -20,6 +20,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
       Required = true;
     }
 
+    /// <inheritdoc />
     protected override string CompletionPopup
     {
       get
@@ -32,8 +33,10 @@ namespace WarcraftLegacies.Source.Quests.Scourge
       }
     }
 
+    /// <inheritdoc />
     protected override string RewardDescription => "Kel'thuzad becomes a Lich";
 
+    /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)
     {
       LegendScourge.Kelthuzad.UnitType = UnittypeKelthuzadLich;

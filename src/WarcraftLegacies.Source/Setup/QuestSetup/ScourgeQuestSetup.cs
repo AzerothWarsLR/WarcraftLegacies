@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using MacroTools;
-using MacroTools.QuestSystem;
+using WarcraftLegacies.Source.Mechanics.Scourge;
 using WarcraftLegacies.Source.Mechanics.Scourge.Plague;
 using WarcraftLegacies.Source.Quests.Scourge;
 using WarcraftLegacies.Source.Setup.FactionSetup;
@@ -10,11 +10,12 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
 {
   public static class ScourgeQuestSetup
   {
-    public static QuestData Setup(PreplacedUnitSystem preplacedUnitSystem, ArtifactSetup artifactSetup)
+    public static void Setup(PreplacedUnitSystem preplacedUnitSystem, ArtifactSetup artifactSetup)
     {
       QuestSpiderWar questSpiderWar = new(Regions.Ice_Crown,
         preplacedUnitSystem.GetUnit(Constants.UNIT_N074_QUEEN_NEZAR_AZRET));
-      QuestKelthuzad questKelthuzad = new();
+      QuestKelthuzadLich questKelthuzadLich = new();
+      QuestKelthuzadDies questKelthuzadDies = new(questKelthuzadLich);
       QuestDrakUnlock questDrakUnlock = new(Regions.DrakUnlock);
 
       var plagueParameters = new PlagueParameters();
@@ -55,12 +56,11 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       ScourgeSetup.Scourge.AddQuest(questSapphiron);
       //Early duel
       ScourgeSetup.Scourge.AddQuest(questCorruptArthas);
-      ScourgeSetup.Scourge.AddQuest(questKelthuzad);
+      ScourgeSetup.Scourge.AddQuest(questKelthuzadLich);
+      ScourgeSetup.Scourge.AddQuest(questKelthuzadDies);
       ScourgeSetup.Scourge.AddQuest(questNaxxramas);
       //Misc
       ScourgeSetup.Scourge.AddQuest(questLichKingArthas);
-
-      return questPlague;
     }
   }
 }
