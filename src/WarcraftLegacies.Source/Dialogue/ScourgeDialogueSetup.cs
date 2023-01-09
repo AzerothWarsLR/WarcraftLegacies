@@ -85,10 +85,12 @@ namespace WarcraftLegacies.Source.Dialogue
             ScourgeSetup.Scourge,
             QuelthalasSetup.Quelthalas
           },
-          new[]
+          new Objective[]
           {
             new ObjectiveLegendInRect(LegendScourge.Arthas, Regions.QuelthalasAmbient, "Quel'thalas"),
-            new ObjectiveLegendInRect(LegendScourge.Kelthuzad, Regions.QuelthalasAmbient, "Quel'thalas")
+            new ObjectiveLegendInRect(LegendScourge.Kelthuzad, Regions.QuelthalasAmbient, "Quel'thalas"),
+            new ObjectiveCompleteQuest(ScourgeSetup.Scourge.GetQuestByType(typeof(QuestKelthuzadDies))),
+            new ObjectiveDontCompleteQuest(ScourgeSetup.Scourge.GetQuestByType(typeof(QuestKelthuzadLich)))
           }));
       
       TriggeredDialogueManager.Add(
