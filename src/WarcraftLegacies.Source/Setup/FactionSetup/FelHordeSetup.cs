@@ -16,7 +16,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
         "ReplaceableTextures\\CommandButtons\\BTNPitLord.blp")
       {
         UndefeatedResearch = FourCC("R05L"),
-        StartingGold = 150,
+        StartingGold = 200,
         StartingLumber = 500,
         CinematicMusic = "Doom",
         ControlPointDefenderUnitTypeId = Constants.UNIT_N0AA_CONTROL_POINT_DEFENDER_FEL_HORDE,
@@ -68,7 +68,7 @@ The Alliance is gathering outside the Dark Portal to stop you, so prepare to for
       FelHorde.ModObjectLimit(FourCC("h0AY"), Faction.UNLIMITED); //Galley
       FelHorde.ModObjectLimit(FourCC("h0B5"), Faction.UNLIMITED); //Boarding
       FelHorde.ModObjectLimit(FourCC("h0BC"), Faction.UNLIMITED); //Juggernaut
-      FelHorde.ModObjectLimit(FourCC("h0AO"), Faction.UNLIMITED); //Bombard
+      FelHorde.ModObjectLimit(FourCC("h0AO"), 6); //Bombard
 
       FelHorde.ModObjectLimit(FourCC("n05T"), 1); //Kazzak
       FelHorde.ModObjectLimit(FourCC("n064"), 1); //Voone

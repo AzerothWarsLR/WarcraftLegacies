@@ -15,7 +15,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
         "ReplaceableTextures\\CommandButtons\\BTNPriestessOfTheMoon.blp")
       {
         UndefeatedResearch = FourCC("R05Y"),
-        StartingGold = 150,
+        StartingGold = 200,
         StartingLumber = 500,
         CinematicMusic = "Comradeship",
         ControlPointDefenderUnitTypeId = Constants.UNIT_H03F_CONTROL_POINT_DEFENDER_SENTINELS,
@@ -65,7 +65,7 @@ Once you have secured your holdings, gather your army and destroy the Orcish Hor
       Sentinels.ModObjectLimit(FourCC("h057"), Faction.UNLIMITED); // Galley
       Sentinels.ModObjectLimit(FourCC("h0B4"), Faction.UNLIMITED); // Boarding
       Sentinels.ModObjectLimit(FourCC("h0BA"), Faction.UNLIMITED); // Juggernaut
-      Sentinels.ModObjectLimit(FourCC("h0B8"), Faction.UNLIMITED); // Bombard
+      Sentinels.ModObjectLimit(FourCC("h0B8"), 6); // Bombard
 
       Sentinels.ModObjectLimit(FourCC("e009"), 1); //Naisha
       Sentinels.ModObjectLimit(FourCC("Etyr"), 1); //Tyrande

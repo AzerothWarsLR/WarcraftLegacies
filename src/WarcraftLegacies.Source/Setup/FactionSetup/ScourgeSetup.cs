@@ -18,7 +18,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
         "ReplaceableTextures\\CommandButtons\\BTNRevenant.blp")
       {
         UndefeatedResearch = FourCC("R05K"),
-        StartingGold = 150,
+        StartingGold = 200,
         StartingLumber = 500,
         CinematicMusic = "ArthasTheme",
         ControlPointDefenderUnitTypeId = Constants.UNIT_U028_CONTROL_POINT_DEFENDER_SCOURGE,
@@ -78,7 +78,7 @@ Naxxramas looms over Dragonblight, but requires a powerful necromancer to awaken
       Scourge.ModObjectLimit(FourCC("h0AZ"), Faction.UNLIMITED); //Galley
       Scourge.ModObjectLimit(FourCC("h0AQ"), Faction.UNLIMITED); //Boarding
       Scourge.ModObjectLimit(FourCC("h0BB"), Faction.UNLIMITED); //Juggernaut
-      Scourge.ModObjectLimit(FourCC("h0B9"), Faction.UNLIMITED); //Bombard
+      Scourge.ModObjectLimit(FourCC("h0B9"), 6); //Bombard
 
       //Demi-Heroes
       Scourge.ModObjectLimit(FourCC("ubdd"), 1); //Sapphiron

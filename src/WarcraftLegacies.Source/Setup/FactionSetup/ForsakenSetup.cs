@@ -64,7 +64,7 @@ To do so, march North to Quel'thalas and capture the Sunwell. This will unlock S
       Forsaken.ModObjectLimit(FourCC("h0AZ"), Faction.UNLIMITED); //Galley
       Forsaken.ModObjectLimit(FourCC("h0AQ"), Faction.UNLIMITED); //Boarding
       Forsaken.ModObjectLimit(FourCC("h0BB"), Faction.UNLIMITED); //Juggernaut
-      Forsaken.ModObjectLimit(FourCC("h0B9"), Faction.UNLIMITED); //Bombard
+      Forsaken.ModObjectLimit(FourCC("h0B9"), 6); //Bombard
 
       Forsaken.ModObjectLimit(FourCC("U01O"), 1); //Putress
       Forsaken.ModObjectLimit(FourCC("Usyl"), 1); //Sylvanas

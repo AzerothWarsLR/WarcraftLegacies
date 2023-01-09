@@ -18,7 +18,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
         "ReplaceableTextures\\CommandButtons\\BTNKnight.blp")
       {
         UndefeatedResearch = FourCC("R060"),
-        StartingGold = 150,
+        StartingGold = 200,
         StartingLumber = 500,
         ControlPointDefenderUnitTypeId = Constants.UNIT_H05X_CONTROL_POINT_DEFENDER_STORMWIND, 
         IntroText = @"You are playing as the steadfast |cff005800Kingdom of Stormwind|r.
@@ -74,7 +74,7 @@ Make sure to communicate with your Dwarven and Kul'tiran allies, as they will be
       Stormwind.ModObjectLimit(FourCC("h0B0"), Faction.UNLIMITED); //Alliance Galley
       Stormwind.ModObjectLimit(FourCC("h0B6"), Faction.UNLIMITED); //Alliance Boarding
       Stormwind.ModObjectLimit(FourCC("h0AN"), Faction.UNLIMITED); //Alliance Juggernaut
-      Stormwind.ModObjectLimit(FourCC("h0B7"), Faction.UNLIMITED); //Alliance Bombard
+      Stormwind.ModObjectLimit(FourCC("h0B7"), 6); //Alliance Bombard
       Stormwind.ModObjectLimit(FourCC("h060"), 3); //Arathor Flagship
 
 

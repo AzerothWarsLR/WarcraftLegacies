@@ -27,7 +27,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
       "ReplaceableTextures\\CommandButtons\\BTNutherAlt.blp")
     {
       AddObjective(new ObjectiveLegendInRect(LegendLordaeron.Arthas, Regions.Hearthglen, "Hearthglen"));
-      AddObjective(new ObjectiveExpire(635));
+      AddObjective(new ObjectiveExpire(1235));
       AddObjective(new ObjectiveSelfExists());
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
       Required = true;

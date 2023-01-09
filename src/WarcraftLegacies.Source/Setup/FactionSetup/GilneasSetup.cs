@@ -12,7 +12,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
       Gilneas = new Faction("Gilneas", PLAYER_COLOR_COAL, "|cff808080",
         "ReplaceableTextures\\CommandButtons\\BTNGreymane.blp")
       {
-        StartingGold = 150,
+        StartingGold = 200,
         StartingLumber = 200,
         IntroText = @"You are playing as the accursed |cff646464Kingdom of Gilneas|r|r.
 
@@ -69,7 +69,7 @@ Once you have reclaimed Gilneas, open Greymane's Gate and march North to assist 
       Gilneas.ModObjectLimit(FourCC("h0B0"), Faction.UNLIMITED); //Alliance Galley
       Gilneas.ModObjectLimit(FourCC("h0B6"), Faction.UNLIMITED); //Alliance Boarding
       Gilneas.ModObjectLimit(FourCC("h0AN"), Faction.UNLIMITED); //Alliance Juggernaut
-      Gilneas.ModObjectLimit(FourCC("h0B7"), Faction.UNLIMITED); //Alliance Bombard
+      Gilneas.ModObjectLimit(FourCC("h0B7"), 6); //Alliance Bombard
 
       //Upgrades
       Gilneas.ModObjectLimit(FourCC("R04O"), Faction.UNLIMITED); //Cleric Training

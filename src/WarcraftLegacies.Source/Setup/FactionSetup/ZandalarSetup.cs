@@ -13,7 +13,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
       Zandalar = new Faction("Zandalar", PLAYER_COLOR_PEACH, "|cffff8c6c",
         "ReplaceableTextures\\CommandButtons\\BTNHeadHunterBerserker.blp")
       {
-        StartingGold = 150,
+        StartingGold = 200,
         StartingLumber = 500,
         IntroText = @"You are playing as the mighty |cffe1946cZandalari Empire|r.
 
@@ -60,7 +60,7 @@ Once the human menace has been dealt with, sail West and help the Horde in Kalim
       Zandalar.ModObjectLimit(FourCC("h0AY"), Faction.UNLIMITED); //Galley
       Zandalar.ModObjectLimit(FourCC("h0B5"), Faction.UNLIMITED); //Boarding
       Zandalar.ModObjectLimit(FourCC("h0BC"), Faction.UNLIMITED); //Juggernaut
-      Zandalar.ModObjectLimit(FourCC("h0AO"), Faction.UNLIMITED); //Bombard
+      Zandalar.ModObjectLimit(FourCC("h0AO"), 6); //Bombard
 
       Zandalar.ModObjectLimit(FourCC("O026"), 1); //Rasthakan
       Zandalar.ModObjectLimit(FourCC("O01J"), 1); //Zul

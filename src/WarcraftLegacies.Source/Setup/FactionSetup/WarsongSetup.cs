@@ -15,7 +15,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
         "ReplaceableTextures\\CommandButtons\\BTNHellScream.blp")
       {
         UndefeatedResearch = FourCC("R05W"),
-        StartingGold = 150,
+        StartingGold = 200,
         StartingLumber = 500,
         CinematicMusic = "DarkAgents",
         ControlPointDefenderUnitTypeId = Constants.UNIT_N0D6_CONTROL_POINT_DEFENDER_WARSONG,
@@ -65,7 +65,7 @@ The Night Elves are aware of your presence and are gathering a mighty host again
       WarsongClan.ModObjectLimit(FourCC("h0AY"), Faction.UNLIMITED); //Galley
       WarsongClan.ModObjectLimit(FourCC("h0B5"), Faction.UNLIMITED); //Boarding
       WarsongClan.ModObjectLimit(FourCC("h0BC"), Faction.UNLIMITED); //Juggernaut
-      WarsongClan.ModObjectLimit(FourCC("h0AO"), Faction.UNLIMITED); //Bombard
+      WarsongClan.ModObjectLimit(FourCC("h0AO"), 6); //Bombard
 
       WarsongClan.ModObjectLimit(FourCC("Ogrh"), 1); //Grom
       WarsongClan.ModObjectLimit(FourCC("Obla"), 1); //Varok

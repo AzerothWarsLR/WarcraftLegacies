@@ -28,9 +28,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
     {
       AddObjective(new ObjectiveControlLevel(
         ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N03P_CORIN_S_CROSSING_10GOLD_MIN), 20));
-      AddObjective(new ObjectiveControlLevel(
-        ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N044_HEARTHGLEN_10GOLD_MIN), 20));
-      AddObjective(new ObjectiveExpire(1335));
+      AddObjective(new ObjectiveExpire(1435));
       AddObjective(new ObjectiveSelfExists());
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
       Required = true;

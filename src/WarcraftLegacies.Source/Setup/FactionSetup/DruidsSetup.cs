@@ -15,7 +15,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
         "ReplaceableTextures\\CommandButtons\\BTNFurion.blp")
       {
         UndefeatedResearch = FourCC("R06E"),
-        StartingGold = 150,
+        StartingGold = 200,
         StartingLumber = 500,
         CinematicMusic = "DarkAgents",
         ControlPointDefenderUnitTypeId = Constants.UNIT_E01Y_CONTROL_POINT_DEFENDER_DRUIDS,
@@ -64,7 +64,7 @@ Gather your forces and strike before the Horde can organize their efforts."
       Druids.ModObjectLimit(FourCC("h057"), Faction.UNLIMITED); // Galley
       Druids.ModObjectLimit(FourCC("h0B4"), Faction.UNLIMITED); // Boarding
       Druids.ModObjectLimit(FourCC("h0BA"), Faction.UNLIMITED); // Juggernaut
-      Druids.ModObjectLimit(FourCC("h0B8"), Faction.UNLIMITED); // Bombard
+      Druids.ModObjectLimit(FourCC("h0B8"), 6); // Bombard
 
       Druids.ModObjectLimit(FourCC("Ecen"), 1); //Cenarius
       Druids.ModObjectLimit(FourCC("E00H"), 1); //Cenarius

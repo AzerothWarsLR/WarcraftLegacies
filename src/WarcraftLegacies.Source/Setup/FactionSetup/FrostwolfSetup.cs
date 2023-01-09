@@ -16,7 +16,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
         "ReplaceableTextures\\CommandButtons\\BTNThrall.blp")
       {
         UndefeatedResearch = Constants.UPGRADE_R05V_FROSTWOLF_EXISTS,
-        StartingGold = 150,
+        StartingGold = 200,
         StartingLumber = 500,
         CinematicMusic = "SadMystery",
         ControlPointDefenderUnitTypeId = Constants.UNIT_N0B6_CONTROL_POINT_DEFENDER_FROSTWOLF,
@@ -63,7 +63,7 @@ Salvage the wrecked ships, establish a base and gather your troops to move inlan
       Frostwolf.ModObjectLimit(FourCC("h0AY"), Faction.UNLIMITED); //Galley
       Frostwolf.ModObjectLimit(FourCC("h0B5"), Faction.UNLIMITED); //Boarding
       Frostwolf.ModObjectLimit(FourCC("h0BC"), Faction.UNLIMITED); //Juggernaut
-      Frostwolf.ModObjectLimit(FourCC("h0AO"), Faction.UNLIMITED); //Bombard
+      Frostwolf.ModObjectLimit(FourCC("h0AO"), 6); //Bombard
 
       Frostwolf.ModObjectLimit(FourCC("h00C"), 1); //Drek)thar
       Frostwolf.ModObjectLimit(FourCC("Othr"), 1); //Thrall

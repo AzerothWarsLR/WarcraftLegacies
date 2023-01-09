@@ -13,7 +13,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
         "ReplaceableTextures\\CommandButtons\\BTNBOSSVelen.blp")
       {
         UndefeatedResearch = FourCC("R06E"),
-        StartingGold = 150,
+        StartingGold = 200,
         StartingLumber = 500,
         ControlPointDefenderUnitTypeId = Constants.UNIT_U008_CONTROL_POINT_DEFENDER_DRAENEI,
         IntroText = @"You are playing as the exiled |cff000080Draenei|r.
@@ -58,7 +58,7 @@ The Exodar is a mighty fortress-base with the ability to move around the map, bu
       Draenei.ModObjectLimit(FourCC("h057"), Faction.UNLIMITED); // Galley
       Draenei.ModObjectLimit(FourCC("h0B4"), Faction.UNLIMITED); // Boarding
       Draenei.ModObjectLimit(FourCC("h0BA"), Faction.UNLIMITED); // Juggernaut
-      Draenei.ModObjectLimit(FourCC("h0B8"), Faction.UNLIMITED); // Bombard
+      Draenei.ModObjectLimit(FourCC("h0B8"), 6); // Bombard
 
       Draenei.ModObjectLimit(FourCC("H09S"), 1); //Maraad
       Draenei.ModObjectLimit(FourCC("E01I"), 1); //Velen

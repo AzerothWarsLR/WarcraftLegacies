@@ -15,7 +15,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
         "ReplaceableTextures\\CommandButtons\\BTNJaina.blp")
       {
         UndefeatedResearch = FourCC("R05N"),
-        StartingGold = 150,
+        StartingGold = 200,
         StartingLumber = 500,
         CinematicMusic = "SadMystery",
         ControlPointDefenderUnitTypeId = Constants.UNIT_N00N_CONTROL_POINT_DEFENDER_DALARAN,
@@ -67,7 +67,7 @@ Your mages are the finest in Azeroth, be sure to utilize them alongside your her
       Dalaran.ModObjectLimit(FourCC("h0B0"), Faction.UNLIMITED); //Alliance Galley
       Dalaran.ModObjectLimit(FourCC("h0B6"), Faction.UNLIMITED); //Alliance Boarding
       Dalaran.ModObjectLimit(FourCC("h0AN"), Faction.UNLIMITED); //Alliance Juggernaut
-      Dalaran.ModObjectLimit(FourCC("h0B7"), Faction.UNLIMITED); //Alliance Bombard
+      Dalaran.ModObjectLimit(FourCC("h0B7"), 6); //Alliance Bombard
 
 
       //Demi-heroes

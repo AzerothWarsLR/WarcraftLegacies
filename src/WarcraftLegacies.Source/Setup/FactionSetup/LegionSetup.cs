@@ -15,7 +15,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
         "ReplaceableTextures\\CommandButtons\\BTNKiljaedin.blp")
       {
         UndefeatedResearch = FourCC("R04T"),
-        StartingGold = 150,
+        StartingGold = 200,
         StartingLumber = 500,
         CinematicMusic = "DarkAgents",
         ControlPointDefenderUnitTypeId = Constants.UNIT_U01U_CONTROL_POINT_DEFENDER_LEGION,
@@ -70,7 +70,7 @@ Your primary objective is to summon the great host of the Burning Legion. Invade
       Legion.ModObjectLimit(FourCC("h0AZ"), Faction.UNLIMITED); //Galley
       Legion.ModObjectLimit(FourCC("h0AQ"), Faction.UNLIMITED); //Boarding
       Legion.ModObjectLimit(FourCC("h0BB"), Faction.UNLIMITED); //Juggernaut
-      Legion.ModObjectLimit(FourCC("h0B9"), Faction.UNLIMITED); //Bombard
+      Legion.ModObjectLimit(FourCC("h0B9"), 6); //Bombard
 
       Legion.ModObjectLimit(FourCC("n05R"), 1); //Felguard
       Legion.ModObjectLimit(FourCC("n06H"), 1); //Pit Fiend

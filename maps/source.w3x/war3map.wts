@@ -2702,7 +2702,7 @@ STRING 451
 }
 
 STRING 452
-// Units: nnrg (Naga Royal Guard), Hotkey (Hotkey)
+// Units: nnrg (Royal Guard), Hotkey (Hotkey)
 {
 W
 }
@@ -6582,12 +6582,6 @@ STRING 1097
 // Units: efon (Treant), Ubertip (Tooltip - Extended)
 {
 Basic Wooden warrior |n|n|cffffcc00Attacks land units.|r
-}
-
-STRING 1098
-// Units: h0AO (Bombard), Ubertip (Tooltip - Extended)
-{
-Long range siege heavy ship.|n|r|n|cffffcc00Attacks land units and Control Points.|r |nStrong versus Buildings, Weak versus Ships.|n
 }
 
 STRING 1099
@@ -19447,7 +19441,7 @@ C
 }
 
 STRING 3242
-// Units: h031 (Royal Guard), Name (Name)
+// Units: nnrg (Royal Guard), Name (Name)
 {
 Royal Guard
 }
@@ -27604,12 +27598,6 @@ STRING 4601
 // Doodads: D03M (Wisp Animation), Name (Name)
 {
 Wisp Animation
-}
-
-STRING 4602
-// Upgrades: R08Z (Chaos), Name (Name)
-{
-Quest Completed: Refuse Kil'jaeden Offer
 }
 
 STRING 4603
@@ -49857,7 +49845,7 @@ Dummy Nuke Warning
 }
 
 STRING 8307
-// Units: nnrg (Naga Royal Guard), Ubertip (Tooltip - Extended)
+// Units: nnrg (Royal Guard), Ubertip (Tooltip - Extended)
 {
 Incredibly powerful melee unit. Has the Submerge ability, which allows this unit to hide in water. Also has Resistant Skin, which reduces the duration of negative spells and Crushing Wave, which deals damage in a line.|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land units.|r
 }
@@ -52245,39 +52233,27 @@ STRING 8704
 }
 
 STRING 8705
-// Abilities: A012 (Summon Gallywix Personal Transport), Name (Name)
+// Abilities: A0JB (Summon Gallywix Personal Transport), Name (Name)
 {
 Summon Gallywix Personal Transport
 }
 
-STRING 8706
-// Abilities: A012 (Summon Gallywix Personal Transport), Researchtip (Tooltip - Learn)
-{
-Learn Gallywix Personal Transport - [|cffffcc00Level %d|r]
-}
-
 STRING 8707
-// Abilities: A012 (Summon Gallywix Personal Transport), Researchubertip (Tooltip - Learn - Extended)
+// Abilities: A0JB (Summon Gallywix Personal Transport), Researchubertip (Tooltip - Learn - Extended)
 {
 Gallywix calls his personnal transport to rain fire on his enemies and enable him to fly. Can transport 1 hero. |n|n|cffffcc00Level 1|r - 180 seconds cooldown|n|cffffcc00Level 2|r - 100 seconds cooldown|n|cffffcc00Level 3|r - 20 seconds cooldown
 }
 
 STRING 8708
-// Abilities: A012 (Summon Gallywix Personal Transport), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A0JB (Summon Gallywix Personal Transport), Ubertip (Tooltip - Normal - Extended)
 {
 Gallywix calls his personnal transport to rain fire on his enemies and enable him to fly. Can transport 1 hero. 180 seconds cooldown
 }
 
 STRING 8709
-// Abilities: A012 (Summon Gallywix Personal Transport), Tip (Tooltip - Normal)
+// Abilities: A0JB (Summon Gallywix Personal Transport), Tip (Tooltip - Normal)
 {
 Summon Gallywix Personal Transport - [|cffffcc00Level 1|r]
-}
-
-STRING 8710
-// Abilities: A012 (Summon Gallywix Personal Transport), Tip (Tooltip - Normal)
-{
-Summon Gallywix Personal Transport - [|cffffcc00Level 2|r]
 }
 
 STRING 8711
@@ -65632,12 +65608,6 @@ STRING 10935
 Adds 30 bonus damage to attacks. Units killed while under the effect of Root Parasites will turn into Corrupted Treants.
 }
 
-STRING 10936
-// Abilities: A012 (Summon Gallywix Personal Transport), Tip (Tooltip - Normal)
-{
-Summon Gallywix Personal Transport - [|cffffcc00Level 3|r]
-}
-
 STRING 10937
 // Abilities: A06E (Avatar), Researchhotkey (Hotkey - Learn)
 {
@@ -75181,12 +75151,6 @@ STRING 12526
 Cunning Hero, adept at maneuvering and evasion.|n|cfff5962dCan Learn:|R Mana Burn, Immolation, Evasion, Metamorphosis|n|n|cffffcc00Attacks land units.|R
 }
 
-STRING 12527
-// Units: nnrg (Naga Royal Guard), Tip (Tooltip - Basic)
-{
-Train - Naga Royal Guard
-}
-
 STRING 12528
 // Abilities: A0O8 (Devour Magic), EditorSuffix (Editor Suffix)
 {
@@ -76863,7 +76827,7 @@ Consumes all magical buffs from units in an area. Each unit that is devoured of 
 }
 
 STRING 12807
-// Abilities: A012 (Summon Gallywix Personal Transport), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A0JB (Summon Gallywix Personal Transport), Ubertip (Tooltip - Normal - Extended)
 {
 Gallywix calls his personnal transport to rain fire on his enemies and enable him to fly. Can transport 1 hero. 100 seconds cooldown
 }
@@ -76875,7 +76839,7 @@ W
 }
 
 STRING 12809
-// Abilities: A012 (Summon Gallywix Personal Transport), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A0JB (Summon Gallywix Personal Transport), Ubertip (Tooltip - Normal - Extended)
 {
 Gallywix calls his personnal transport to rain fire on his enemies and enable him to fly. Can transport 1 hero. 20 seconds cooldown
 }
@@ -84339,7 +84303,7 @@ D
 }
 
 STRING 14053
-// Upgrades: R07W (Defend), EditorSuffix (Editor Suffix)
+// Upgrades: R07X (Defend), EditorSuffix (Editor Suffix)
 {
 (Scourge)
 }
@@ -85149,7 +85113,7 @@ Improves Phase Blade by increasing its damage to <A057,DataA2>.
 }
 
 STRING 14188
-// Upgrades: R07X (Defend), EditorSuffix (Editor Suffix)
+// Upgrades: R08T (Cannibalize), EditorSuffix (Editor Suffix)
 {
 (Scourge)
 }
@@ -85182,12 +85146,6 @@ STRING 14193
 // Upgrades: R06N (Freezing Breath), Ubertip (Tooltip - Extended)
 {
 Improves Orb of Annihilation by increasing its damage dealt to <Afak,DataA2>.
-}
-
-STRING 14194
-// Upgrades: R08T (Cannibalize), EditorSuffix (Editor Suffix)
-{
-(Scourge)
 }
 
 STRING 14195
@@ -89374,7 +89332,7 @@ STRING 14891
 }
 
 STRING 14892
-// Abilities: A012 (Summon Gallywix Personal Transport), Hotkey (Hotkey - Normal)
+// Abilities: A0SF (Illusionary Lance), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -90550,7 +90508,7 @@ Increases Clergymans' mana capacity, mana regeneration rate, attack damage and g
 }
 
 STRING 15088
-// Abilities: A012 (Summon Gallywix Personal Transport), Researchhotkey (Hotkey - Learn)
+// Abilities: A0TR (Soul Voodoo), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -91731,7 +91689,7 @@ STRING 15292
 }
 
 STRING 15293
-// Abilities: A0SF (Illusionary Lance), Researchhotkey (Hotkey - Learn)
+// Abilities: A02K (Multi Shot), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -92422,6 +92380,18 @@ Check out the Azeroth Wars Discord server to download the map and chat about the
 STRING 15408
 {
 Lordsebas, HerrDave,YakaryBovine
+}
+
+STRING 15409
+// Units: n03A (Nath'raxas Hold (10gold/min)), Name (Name)
+{
+Nath'raxas Hold (10gold/min)
+}
+
+STRING 15410
+// Units: nnrg (Royal Guard), Tip (Tooltip - Basic)
+{
+Train - Royal Guard
 }
 
 STRING 15411
@@ -94831,7 +94801,7 @@ STRING 15811
 }
 
 STRING 15812
-// Units: n06Q (Royal Guard), Name (Name)
+// Units: h031 (Royal Guard), Name (Name)
 {
 Royal Guard
 }
@@ -96542,12 +96512,6 @@ STRING 16096
 Build Bombard
 }
 
-STRING 16097
-// Units: h0B7 (Bombard), Ubertip (Tooltip - Extended)
-{
-Long range siege heavy ship.|n|r|n|cffffcc00Attacks land units and Control Points.|r |nStrong versus Buildings, Weak versus Ships.|n
-}
-
 STRING 16098
 // Units: o01C (Control Point Defender), Ubertip (Tooltip - Extended)
 {
@@ -96600,12 +96564,6 @@ STRING 16106
 // Units: o03W (Improved Rocket Tower), Ubertip (Tooltip - Extended)
 {
 Defensive structure.  |n|n|cffffcc00Attacks land and air units.|r
-}
-
-STRING 16107
-// Units: h0B8 (Bombard), Ubertip (Tooltip - Extended)
-{
-Long range siege heavy ship.|n|r|n|cffffcc00Attacks land units and Control Points.|r |nStrong versus Buildings, Weak versus Ships.|n
 }
 
 STRING 16108
@@ -96720,12 +96678,6 @@ STRING 16126
 // Units: H049 (Ranger-Lord), Tip (Tooltip - Basic)
 {
 Summon Nathanos
-}
-
-STRING 16127
-// Units: h0B9 (Bombard), Ubertip (Tooltip - Extended)
-{
-Long range siege heavy ship.|n|r|n|cffffcc00Attacks land units and Control Points.|r |nStrong versus Buildings, Weak versus Ships.|n
 }
 
 STRING 16128
@@ -97051,7 +97003,7 @@ Opens a two-way portal to the target location within a range of <A00D,Rng3>. The
 }
 
 STRING 16182
-// Abilities: A0TR (Soul Voodoo), Researchhotkey (Hotkey - Learn)
+// Abilities: A0V0 (Snipe), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -97092,6 +97044,12 @@ STRING 16188
 Archer filled tower defense.|n|cfff5962dCan learn:|R Magic Sentry|n|cfff5962dUpgrades Into:|R Improved Guard Tower|n|n|cffffcc00Attacks land and air units.|r
 }
 
+STRING 16189
+// Units: n06Q (Royal Guard), Name (Name)
+{
+Royal Guard
+}
+
 STRING 16190
 // Abilities: A0OB (Call Trade Prince Guards), Hotkey (Hotkey - Normal)
 {
@@ -97102,6 +97060,24 @@ STRING 16191
 // Units: o047 (Bazaar), Ubertip (Tooltip - Extended)
 {
 Creates a shop with purchasable items.
+}
+
+STRING 16192
+// Units: h0AO (Bombard), Ubertip (Tooltip - Extended)
+{
+Long range siege heavy ship.|n|n|cff99b4d1Can only train 6.|r|r|n|cffffcc00Attacks land units and Control Points.|r |nStrong versus Buildings, Weak versus Ships.|n
+}
+
+STRING 16193
+// Units: h0B7 (Bombard), Ubertip (Tooltip - Extended)
+{
+Long range siege heavy ship.|n|n|cff99b4d1Can only train 6.|r|r|n|cffffcc00Attacks land units and Control Points.|r |nStrong versus Buildings, Weak versus Ships.|n
+}
+
+STRING 16194
+// Units: h0B8 (Bombard), Ubertip (Tooltip - Extended)
+{
+Long range siege heavy ship.|n|n|cff99b4d1Can only train 6.|r|r|n|cffffcc00Attacks land units and Control Points.|r |nStrong versus Buildings, Weak versus Ships.|n
 }
 
 STRING 16195
@@ -97356,6 +97332,12 @@ STRING 16236
 A
 }
 
+STRING 16237
+// Units: h0B9 (Bombard), Ubertip (Tooltip - Extended)
+{
+Long range siege heavy ship.|n|n|cff99b4d1Can only train 6.|r|r|n|cffffcc00Attacks land units and Control Points.|r |nStrong versus Buildings, Weak versus Ships.|n
+}
+
 STRING 16238
 // Upgrades: R047 (Marksmanship), Hotkey (Hotkey)
 {
@@ -97516,6 +97498,18 @@ STRING 16264
 // Upgrades: R062 (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
 {
 Illidan follows his heart and seeks forgivness to Malfurion. United by their brotherly bond and their desire to protect Tyrande, they decide to unite forces again |n|n|cffd45e19Open the portal to the Aetheneum Catacombs. Join the Night Elves team. Enable the training of Demon Hunters.
+}
+
+STRING 16265
+// Abilities: A0JB (Summon Gallywix Personal Transport), Tip (Tooltip - Normal)
+{
+Summon Fel Hound - [|cffffcc00Level 4|r]
+}
+
+STRING 16266
+// Abilities: A0JB (Summon Gallywix Personal Transport), Ubertip (Tooltip - Normal - Extended)
+{
+Summons <A0X4,DataA1> Fel Hounds with Mana Burn to attack the Hero's enemies. |n|n|cffffcc00Attacks land units.|r
 }
 
 STRING 16267
@@ -97710,6 +97704,18 @@ STRING 16298
 (scarlet)
 }
 
+STRING 16299
+// Abilities: A0JB (Summon Gallywix Personal Transport), Tip (Tooltip - Normal)
+{
+Summon Gallywix Personal Transport - [|cffffcc00Level 1|r]
+}
+
+STRING 16300
+// Abilities: A0JB (Summon Gallywix Personal Transport), Tip (Tooltip - Normal)
+{
+Summon Gallywix Personal Transport - [|cffffcc00Level 1|r]
+}
+
 STRING 16301
 // Upgrades: R063 (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
 {
@@ -97720,6 +97726,18 @@ STRING 16302
 // Abilities: A0Z1 (Shout of the Crusader), EditorSuffix (Editor Suffix)
 {
 (scarlet)
+}
+
+STRING 16303
+// Abilities: A0JB (Summon Gallywix Personal Transport), Researchtip (Tooltip - Learn)
+{
+Learn Summon Gallywix Personal Transport - [|cffffcc00Level %d|r]
+}
+
+STRING 16304
+// Upgrades: R08Z (Chaos), Name (Name)
+{
+Quest Completed: Forgotten Knowledge
 }
 
 STRING 16306
@@ -99655,7 +99673,7 @@ Warrior Hero, excels at augmenting nearby friendly troops.|n|cfff5962dCan learn:
 }
 
 STRING 16643
-// Abilities: A02K (Multi Shot), Researchhotkey (Hotkey - Learn)
+// Abilities: A0VC (Viral Plague), Hotkey (Hotkey - Normal)
 {
 R
 }
@@ -99708,28 +99726,16 @@ STRING 16651
 The Alchemist causes his Ogre to enter a chemically induced rage, increasing movement rate by 50%, increasing attack rate by 75% and giving 800 bonus hp for 15 seconds.
 }
 
-STRING 16652
-// Abilities: A0JB (Join the Crusade), EditorSuffix (Editor Suffix)
-{
-(kultirasPath)
-}
-
 STRING 16653
-// Abilities: A0JB (Join the Crusade), Name (Name)
+// Upgrades: R08E (Iron Plating,Steel Plating,Mithril Plating), Name (Name)
 {
 Join the Crusade
 }
 
 STRING 16654
-// Abilities: A0JB (Join the Crusade), Tip (Tooltip - Normal)
+// Upgrades: R08E (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
 {
 Join the Crusade
-}
-
-STRING 16655
-// Abilities: A0JB (Join the Crusade), Ubertip (Tooltip - Normal - Extended)
-{
-Leave the Alliance and join the Scarlet Crusade. This will allow you to train Order Inquisitors.
 }
 
 STRING 16656
@@ -103573,7 +103579,7 @@ Gallywix calls for reinforcements in his time of need These reinforcements are p
 }
 
 STRING 17354
-// Abilities: A012 (Summon Gallywix Personal Transport), EditorSuffix (Editor Suffix)
+// Abilities: A0JB (Summon Gallywix Personal Transport), EditorSuffix (Editor Suffix)
 {
 (gallywix)
 }
@@ -105224,7 +105230,7 @@ Crimson Cathedral
 }
 
 STRING 17641
-// Abilities: A0V0 (Snipe), Researchhotkey (Hotkey - Learn)
+// Abilities: A0VC (Viral Plague), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -105335,12 +105341,6 @@ STRING 17660
 // Abilities: A02L (Aura of Madness), Researchtip (Tooltip - Learn)
 {
 Learn Aura of Madness- [|cffffcc00Level %d|r]
-}
-
-STRING 17661
-// Upgrades: R07W (Defend), Name (Name)
-{
-Rebel against the Legion
 }
 
 STRING 17662
@@ -105515,18 +105515,6 @@ STRING 17690
 // Upgrades: R02K (Storm Hammers), effect1 (Effect 1)
 {
 rhpx
-}
-
-STRING 17691
-// Upgrades: R07W (Defend), Tip (Tooltip)
-{
-Rebel against the Legion
-}
-
-STRING 17692
-// Upgrades: R07W (Defend), Ubertip (Tooltip - Extended)
-{
-The Lich King has had enough of being the puppet of the Legion and declares war on them.|n|n|cffffcc00Unally from the Legion team
 }
 
 STRING 17693
@@ -106102,7 +106090,7 @@ Upgrade to Improved Crystal Protector
 }
 
 STRING 17831
-// Abilities: A0VC (Viral Plague), Hotkey (Hotkey - Normal)
+// Abilities: A0WF (Herald of Destruction), Hotkey (Hotkey - Normal)
 {
 R
 }
@@ -106996,7 +106984,7 @@ V
 }
 
 STRING 18001
-// Abilities: A0VC (Viral Plague), Researchhotkey (Hotkey - Learn)
+// Abilities: A0WF (Herald of Destruction), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -107074,7 +107062,7 @@ Q
 }
 
 STRING 18014
-// Abilities: A0WF (Herald of Destruction), Hotkey (Hotkey - Normal)
+// Abilities: A0WQ (Locust Swarm), Hotkey (Hotkey - Normal)
 {
 R
 }
@@ -107482,7 +107470,7 @@ Gives the War Station the ability to fire multiple arrows at its enemies.
 }
 
 STRING 18099
-// Abilities: A0WF (Herald of Destruction), Researchhotkey (Hotkey - Learn)
+// Abilities: A0WQ (Locust Swarm), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -108142,7 +108130,7 @@ Q
 }
 
 STRING 18222
-// Abilities: A0WQ (Locust Swarm), Hotkey (Hotkey - Normal)
+// Abilities: A0WS (Aegis of Ragaros), Hotkey (Hotkey - Normal)
 {
 R
 }
@@ -108670,12 +108658,6 @@ STRING 18311
 C
 }
 
-STRING 18312
-// Upgrades: R08E (Iron Plating,Steel Plating,Mithril Plating), Name (Name)
-{
-Join the Crusade
-}
-
 STRING 18313
 // Upgrades: R08H (Iron Plating,Steel Plating,Mithril Plating), Name (Name)
 {
@@ -108686,12 +108668,6 @@ STRING 18314
 // Upgrades: R08H (Iron Plating,Steel Plating,Mithril Plating), Name (Name)
 {
 Fortified Hulls
-}
-
-STRING 18315
-// Upgrades: R08E (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
-{
-Join the Crusade
 }
 
 STRING 18316
@@ -109127,25 +109103,25 @@ Viral Plague
 }
 
 STRING 18402
-// Abilities: A0WQ (Locust Swarm), Researchhotkey (Hotkey - Learn)
-{
-R
-}
-
-STRING 18403
-// Abilities: A0WS (Aegis of Ragaros), Hotkey (Hotkey - Normal)
-{
-R
-}
-
-STRING 18404
 // Abilities: A0WS (Aegis of Ragaros), Researchhotkey (Hotkey - Learn)
 {
 R
 }
 
-STRING 18405
+STRING 18403
 // Abilities: A0WW (Summon Zelemar), Researchhotkey (Hotkey - Learn)
+{
+R
+}
+
+STRING 18404
+// Abilities: A0WW (Summon Zelemar), Hotkey (Hotkey - Normal)
+{
+R
+}
+
+STRING 18405
+// Abilities: A00D (Slipstream), Hotkey (Hotkey - Normal)
 {
 R
 }
@@ -109973,7 +109949,7 @@ Revive Ragnaros
 }
 
 STRING 18575
-// Abilities: A0WW (Summon Zelemar), Hotkey (Hotkey - Normal)
+// Abilities: A00D (Slipstream), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -110394,7 +110370,7 @@ Elemental Fire
 }
 
 STRING 18660
-// Abilities: A00D (Slipstream), Hotkey (Hotkey - Normal)
+// Abilities: A0XB (Decapitate), Hotkey (Hotkey - Normal)
 {
 R
 }
@@ -110406,7 +110382,7 @@ Q
 }
 
 STRING 18664
-// Abilities: A00D (Slipstream), Researchhotkey (Hotkey - Learn)
+// Abilities: A0XB (Decapitate), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -110682,7 +110658,7 @@ Curse of Executus
 }
 
 STRING 18712
-// Abilities: A0XB (Decapitate), Hotkey (Hotkey - Normal)
+// Abilities: A0ZA (Dragonmaw Battle Standard), Hotkey (Hotkey - Normal)
 {
 R
 }
@@ -110694,7 +110670,7 @@ W
 }
 
 STRING 18716
-// Abilities: A0XB (Decapitate), Researchhotkey (Hotkey - Learn)
+// Abilities: A0ZA (Dragonmaw Battle Standard), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -110928,13 +110904,13 @@ This unit was hit by a Serrated Bite; its armor is temporarily reduced.
 }
 
 STRING 18756
-// Abilities: A0ZA (Dragonmaw Battle Standard), Hotkey (Hotkey - Normal)
+// Abilities: A0ZJ (Portal to Nagrand), Researchhotkey (Hotkey - Learn)
 {
 R
 }
 
 STRING 18757
-// Abilities: A0ZA (Dragonmaw Battle Standard), Researchhotkey (Hotkey - Learn)
+// Abilities: A0ZY (Multi Shot), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -111000,7 +110976,7 @@ Curse of Flame (|cffffcc00Q|r)
 }
 
 STRING 18769
-// Abilities: A0ZJ (Portal to Nagrand), Researchhotkey (Hotkey - Learn)
+// Abilities: A0KT (Arcane Recall), Hotkey (Hotkey - Normal)
 {
 R
 }
@@ -111174,7 +111150,7 @@ STRING 18800
 }
 
 STRING 18803
-// Abilities: A0ZY (Multi Shot), Researchhotkey (Hotkey - Learn)
+// Abilities: A0P9 (Dimensional Jump to Azuremyst), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -111258,7 +111234,7 @@ STRING 18818
 }
 
 STRING 18819
-// Units: nnrg (Naga Royal Guard), EditorSuffix (Name - Editor Suffix)
+// Units: nnrg (Royal Guard), EditorSuffix (Name - Editor Suffix)
 {
  (Illidari)
 }
@@ -112338,7 +112314,7 @@ An impenetrable shield surrounds this unit, protecting it from all damage and sp
 }
 
 STRING 19042
-// Abilities: A0KT (Arcane Recall), Hotkey (Hotkey - Normal)
+// Abilities: A0RB (Dimensional Jump to Argus), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -112668,7 +112644,7 @@ Farahlon (10gold/min)
 }
 
 STRING 19103
-// Abilities: A0P9 (Dimensional Jump to Azuremyst), Researchhotkey (Hotkey - Learn)
+// Abilities: A0SR (Dimensional Jump to Tempest Keep), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -113262,7 +113238,7 @@ STRING 19227
 }
 
 STRING 19230
-// Abilities: A0RB (Dimensional Jump to Argus), Researchhotkey (Hotkey - Learn)
+// Abilities: A07D (Portal to Black Temple), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -113725,7 +113701,7 @@ The hero unleashes a mortal axe strike, dealing 750 damage after a short delay.
 }
 
 STRING 19316
-// Abilities: A0SR (Dimensional Jump to Tempest Keep), Researchhotkey (Hotkey - Learn)
+// Abilities: A0JB (Summon Gallywix Personal Transport), Hotkey (Hotkey - Normal)
 {
 R
 }
@@ -113737,7 +113713,7 @@ The hero unleashes a mortal axe strike, dealing 1250 damage after a short delay.
 }
 
 STRING 19318
-// Abilities: A07D (Portal to Black Temple), Researchhotkey (Hotkey - Learn)
+// Abilities: A0JB (Summon Gallywix Personal Transport), Researchhotkey (Hotkey - Learn)
 {
 R
 }

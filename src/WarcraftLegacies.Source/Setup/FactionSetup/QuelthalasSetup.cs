@@ -17,7 +17,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
           "ReplaceableTextures\\CommandButtons\\BTNSylvanusWindrunner.blp")
         {
           UndefeatedResearch = FourCC("R05U"),
-          StartingGold = 150,
+          StartingGold = 200,
           StartingLumber = 500,
           CinematicMusic = "BloodElfTheme",
           ControlPointDefenderUnitTypeId = Constants.UNIT_N0BC_CONTROL_POINT_DEFENDER_QUELTHALAS,
@@ -71,7 +71,7 @@ The Plague of Undeath is coming and Lordaeron will need your help with the Scour
       Quelthalas.ModObjectLimit(FourCC("h0B0"), Faction.UNLIMITED); //Alliance Galley
       Quelthalas.ModObjectLimit(FourCC("h0B6"), Faction.UNLIMITED); //Alliance Boarding
       Quelthalas.ModObjectLimit(FourCC("h0AN"), Faction.UNLIMITED); //Alliance Juggernaut
-      Quelthalas.ModObjectLimit(FourCC("h0B7"), Faction.UNLIMITED); //Alliance Bombard
+      Quelthalas.ModObjectLimit(FourCC("h0B7"), 6); //Alliance Bombard
 
       //Demi-heroes
       Quelthalas.ModObjectLimit(FourCC("n075"), 1); //Vareesa

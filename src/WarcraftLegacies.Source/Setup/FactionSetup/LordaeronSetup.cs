@@ -15,7 +15,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
       Lordaeron = new Faction("Lordaeron", PLAYER_COLOR_BLUE, "|c000042ff",
         "ReplaceableTextures\\CommandButtons\\BTNArthas.blp")
       {
-        StartingGold = 150,
+        StartingGold = 200,
         StartingLumber = 500,
         UndefeatedResearch = FourCC("R05M"),
         CinematicMusic = "Comradeship",
@@ -71,7 +71,7 @@ If you survive the Plague, sail to the frozen wasteland of Northrend and take th
       Lordaeron.ModObjectLimit(FourCC("h0B0"), Faction.UNLIMITED); //Alliance Galley
       Lordaeron.ModObjectLimit(FourCC("h0B6"), Faction.UNLIMITED); //Alliance Boarding
       Lordaeron.ModObjectLimit(FourCC("h0AN"), Faction.UNLIMITED); //Alliance Juggernaut
-      Lordaeron.ModObjectLimit(FourCC("h0B7"), Faction.UNLIMITED); //Alliance Bombard
+      Lordaeron.ModObjectLimit(FourCC("h0B7"), 6); //Alliance Bombard
 
       //Demis
       Lordaeron.ModObjectLimit(FourCC("h012"), 1); //Falric

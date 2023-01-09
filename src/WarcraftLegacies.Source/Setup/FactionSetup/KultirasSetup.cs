@@ -17,7 +17,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
         new Faction(
           "Kul'tiras", PLAYER_COLOR_EMERALD, "|cff00781e", "ReplaceableTextures\\CommandButtons\\BTNProudmoore.blp")
           {
-            StartingGold = 150,
+            StartingGold = 200,
             StartingLumber = 500,
             ControlPointDefenderUnitTypeId = Constants.UNIT_H09W_CONTROL_POINT_DEFENDER_KUL_TIRAS,
             IntroText = @"You are playing as the maritime |cff008000Kingdom of Kul'tiras|r.
@@ -74,7 +74,7 @@ Stormwind is preparing for an invasion through the Dark Portal in the South. Mus
       Kultiras.ModObjectLimit(FourCC("h0B0"), Faction.UNLIMITED); //Alliance Galley
       Kultiras.ModObjectLimit(FourCC("h0B6"), Faction.UNLIMITED); //Alliance Boarding
       Kultiras.ModObjectLimit(FourCC("h0AN"), Faction.UNLIMITED); //Alliance Juggernaut
-      Kultiras.ModObjectLimit(FourCC("h0B7"), Faction.UNLIMITED); //Alliance Bombard
+      Kultiras.ModObjectLimit(FourCC("h0B7"), 6); //Alliance Bombard
 
       //Upgrades
       Kultiras.ModObjectLimit(FourCC("R001"), Faction.UNLIMITED); //Rising Tides

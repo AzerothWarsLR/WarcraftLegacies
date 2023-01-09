@@ -13,7 +13,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
         "ReplaceableTextures\\CommandButtons\\BTNHeroDemonHunter.blp")
       {
         UndefeatedResearch = FourCC("R02L"),
-        StartingGold = 150,
+        StartingGold = 200,
         StartingLumber = 500,
         IntroText = @"You are playing as the renegade Illidan.|r|r.
 

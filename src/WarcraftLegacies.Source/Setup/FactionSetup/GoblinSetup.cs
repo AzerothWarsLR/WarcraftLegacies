@@ -13,7 +13,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
       Goblin = new Faction("Bilgewater", PLAYER_COLOR_LIGHT_GRAY, "|cff808080",
         "ReplaceableTextures\\CommandButtons\\BTNHeroTinker.blp")
       {
-        StartingGold = 150,
+        StartingGold = 200,
         StartingLumber = 500,
         ControlPointDefenderUnitTypeId = Constants.UNIT_O01C_CONTROL_POINT_DEFENDER_GOBLIN,
         IntroText = @"You are playing as the industrious |cff808080Bilgewater Cartel|r.
@@ -48,7 +48,7 @@ The Trading Center in Kezan will unlock the ability to train Traders. Be sure to
       Goblin.ModObjectLimit(FourCC("h0AY"), Faction.UNLIMITED); //Galley
       Goblin.ModObjectLimit(FourCC("h0B5"), Faction.UNLIMITED); //Boarding
       Goblin.ModObjectLimit(FourCC("h0BC"), Faction.UNLIMITED); //Juggernaut
-      Goblin.ModObjectLimit(FourCC("h0AO"), Faction.UNLIMITED); //Bombard
+      Goblin.ModObjectLimit(FourCC("h0AO"), 6); //Bombard
 
       Goblin.ModObjectLimit(Constants.UNIT_O02I_BUILDER_GOBLIN_WORKER, Faction.UNLIMITED);
       Goblin.ModObjectLimit(Constants.UNIT_N099_OGRE_MERCENARY_GOBLIN, Faction.UNLIMITED);

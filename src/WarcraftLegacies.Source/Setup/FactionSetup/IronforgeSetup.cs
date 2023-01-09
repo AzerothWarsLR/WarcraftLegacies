@@ -18,7 +18,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
         "ReplaceableTextures\\CommandButtons\\BTNHeroMountainKing.blp")
       {
         UndefeatedResearch = FourCC("R05T"),
-        StartingGold = 250,
+        StartingGold = 200,
         StartingLumber = 500,
         CinematicMusic = "PursuitTheme",
         ControlPointDefenderUnitTypeId = Constants.UNIT_H0AL_CONTROL_POINT_DEFENDER_IRONFORGE,
@@ -75,7 +75,7 @@ Stormwind is preparing for an invasion through the Dark Portal in the South. Mus
       Ironforge.ModObjectLimit(FourCC("h0B0"), Faction.UNLIMITED); //Alliance Galley
       Ironforge.ModObjectLimit(FourCC("h0B6"), Faction.UNLIMITED); //Alliance Boarding
       Ironforge.ModObjectLimit(FourCC("h0AN"), Faction.UNLIMITED); //Alliance Juggernaut
-      Ironforge.ModObjectLimit(FourCC("h0B7"), Faction.UNLIMITED); //Alliance Bombard
+      Ironforge.ModObjectLimit(FourCC("h0B7"), 6); //Alliance Bombard
 
       //Upgrades
       Ironforge.ModObjectLimit(FourCC("R03H"), Faction.UNLIMITED); //Engineering Adept Training
