@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.Libraries;
 using MacroTools.ObjectiveSystem.Objectives.MetaBased;
@@ -53,20 +54,25 @@ namespace WarcraftLegacies.Source.Quests.Scourge
     protected override string RewardDescription =>
       "All villagers in Lordaeron are transformed into Zombies, and several Plague Cauldrons spawn throughout Lordaeron, which periodically spawn Zombies.";
 
-    private void CreatePlagueCauldrons(player whichPlayer)
+    private void CreatePlagueCauldrons(Faction completingFaction)
     {
+      var plaguePlayer = (completingFaction.ScoreStatus != ScoreStatus.Defeated
+        ? completingFaction.Player
+        : Player(PLAYER_NEUTRAL_AGGRESSIVE)) 
+                         ?? Player(PLAYER_NEUTRAL_AGGRESSIVE);
+
       foreach (var plagueRect in _plagueRects)
       {
         var position = plagueRect.GetRandomPoint();
-        var plagueCauldron = CreateUnit(whichPlayer, _plagueCauldronUnitTypeId, position.X, position.Y, 0);
-        UnitApplyTimedLife(plagueCauldron, 0, _duration);
+        var plagueCauldron = CreateUnit(plaguePlayer, _plagueCauldronUnitTypeId, position.X, position.Y, 0)
+          .SetTimedLife(_duration);
         var plagueCauldronBuff = new PlagueCauldronBuff(plagueCauldron, plagueCauldron)
         {
           ZombieUnitTypeId = Constants.UNIT_NZOM_ZOMBIE_SCOURGE
         };
         BuffSystem.Add(plagueCauldronBuff);
         foreach (var parameter in _plagueCauldronSummonParameters)
-          GeneralHelpers.CreateUnits(parameter.FactionOverride?.Player ?? whichPlayer, parameter.SummonUnitTypeId,
+          GeneralHelpers.CreateUnits(plaguePlayer, parameter.SummonUnitTypeId,
             position.X, position.Y, 0, parameter.SummonCount);
       }
     }
@@ -77,7 +83,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
       completingFaction.ModObjectLimit(Constants.UPGRADE_R06I_PLAGUE_OF_UNDEATH_SCOURGE, -Faction.UNLIMITED);
       var plaguePower = new PlaguePower();
       if (completingFaction.Player != null) 
-        CreatePlagueCauldrons(completingFaction.Player);
+        CreatePlagueCauldrons(completingFaction);
       completingFaction.AddPower(plaguePower);
     }
 

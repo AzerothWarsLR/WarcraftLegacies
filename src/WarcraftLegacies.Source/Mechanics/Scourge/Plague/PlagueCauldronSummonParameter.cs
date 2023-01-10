@@ -1,6 +1,4 @@
-﻿using MacroTools.FactionSystem;
-
-namespace WarcraftLegacies.Source.Mechanics.Scourge.Plague
+﻿namespace WarcraftLegacies.Source.Mechanics.Scourge.Plague
 {
   /// <summary>
   /// Specifies how many of each unit type to spawn during the Plague.
@@ -16,17 +14,11 @@ namespace WarcraftLegacies.Source.Mechanics.Scourge.Plague
     /// What type of unit to spawn around the Plague Cauldron.
     /// </summary>
     public int SummonUnitTypeId { get; }
-    
-    /// <summary>
-    /// If set, the summoned unit is given to this <see cref="Faction"/> instead of the <see cref="PlaguePower"/> holder.
-    /// </summary>
-    public Faction? FactionOverride { get; }
-    
-    public PlagueCauldronSummonParameter(int summonCount, int summonUnitTypeId, Faction? factionOverride = null)
+
+    public PlagueCauldronSummonParameter(int summonCount, int summonUnitTypeId)
     {
       SummonCount = summonCount;
       SummonUnitTypeId = summonUnitTypeId;
-      FactionOverride = factionOverride;
     }
   }
 }

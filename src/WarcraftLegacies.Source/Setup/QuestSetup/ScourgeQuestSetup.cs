@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using MacroTools;
-using WarcraftLegacies.Source.Mechanics.Scourge;
 using WarcraftLegacies.Source.Mechanics.Scourge.Plague;
 using WarcraftLegacies.Source.Quests.Scourge;
 using WarcraftLegacies.Source.Setup.FactionSetup;
@@ -32,7 +31,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       plagueParameters.PlagueCauldronSummonParameters = new List<PlagueCauldronSummonParameter>
       {
         new(2, Constants.UNIT_UNEC_NECROMANCER_SCOURGE),
-        new(2, Constants.UNIT_UACO_ACOLYTE_SCOURGE_WORKER, ScourgeSetup.Scourge),
+        new(2, Constants.UNIT_UACO_ACOLYTE_SCOURGE_WORKER),
         new(4, Constants.UNIT_UGHO_GHOUL_SCOURGE),
         new(4, Constants.UNIT_UCRY_CRYPT_FIEND_SCOURGE),
       };
