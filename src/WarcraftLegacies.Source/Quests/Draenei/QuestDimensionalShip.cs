@@ -3,10 +3,13 @@ using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
+using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 using MacroTools.ObjectiveSystem.Objectives.QuestBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
+using System.Collections.Generic;
 using WarcraftLegacies.Source.Objectives;
+using WarcraftLegacies.Source.Setup.Legends;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
@@ -23,19 +26,16 @@ namespace WarcraftLegacies.Source.Quests.Draenei
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestDimensionalShip"/> class.
     /// </summary>
-    public QuestDimensionalShip(Rectangle questRect, QuestData prerequisite, PreplacedUnitSystem preplacedUnitSystem) : base(
-      "The Dimensional Ship", "The broken Exodar could be rebuild, unlocking a powerful asset for the Draenei.", "ReplaceableTextures\\CommandButtons\\BTNArcaneEnergy.blp")
+    public QuestDimensionalShip(Rectangle questRect, List<QuestData> prerequisite) : base(
+      "The Dimensional Ship", "The core of the Exodar is rebuilt, but it requires a great source of power to function again. Finding that source of power would make the Exodar a powerful asset for the Draenei.", "ReplaceableTextures\\CommandButtons\\BTNArcaneEnergy.blp")
     {
-      _dimensionalGenerator = preplacedUnitSystem.GetUnit(Constants.UNIT_N00E_DIMENSIONAL_GENERATOR_DRAENEI);
+      _dimensionalGenerator = LegendDraenei.LegendExodarGenerator.Unit; ;
       Required = true;
-      AddObjective(new ObjectiveCompleteQuest(prerequisite));
-      AddObjective(
-        new ObjectiveBuildInRect(questRect, "inside the Exodar", Constants.UNIT_O056_ARCANE_WELL_DRAENEI_FARM, 10));
+      foreach (var quest in prerequisite)
+        AddObjective(new ObjectiveCompleteQuest(quest));   
+      AddObjective(new ObjectiveBuildInRect(questRect, "inside the Exodar", Constants.UNIT_O056_ARCANE_WELL_DRAENEI_FARM, 10));
       AddObjective(new ObjectiveControlLevel(
         ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N0BL_EXODAR_REGALIS_25GOLD_MIN), 20));
-      AddObjective(
-        new ObjectiveUnitReachesFullHealth(
-          preplacedUnitSystem.GetUnit(Constants.UNIT_N00E_DIMENSIONAL_GENERATOR_DRAENEI)));
       _objectivePowerSource = new ObjectivePowerSource(_dimensionalGenerator, new[]
       {
         Constants.ITEM_I006_BOOK_OF_MEDIVH,
@@ -44,8 +44,14 @@ namespace WarcraftLegacies.Source.Quests.Draenei
         Constants.ITEM_I018_VIAL_OF_THE_SUNWELL
       });
       AddObjective(_objectivePowerSource);
-
+      AddObjective(new ObjectiveSelfExists());
       ResearchId = Constants.UPGRADE_R09A_QUEST_COMPLETED_THE_DIMENSIONAL_SHIP;
+    }
+
+    /// <inheritdoc/>
+    protected override void OnFail(Faction whichFaction)
+    {
+      LegendDraenei.LegendExodar.Unit?.SetInvulnerable(false);
     }
 
     /// <inheritdoc/>
@@ -55,6 +61,7 @@ namespace WarcraftLegacies.Source.Quests.Draenei
       CreateTrigger()
         .RegisterUnitEvent(_dimensionalGenerator, EVENT_UNIT_DEATH)
         .AddAction(() => { _objectivePowerSource.UsedPowerSource?.SetDroppable(true); });
+      LegendDraenei.LegendExodar.Unit?.SetInvulnerable(false);
     }
 
     /// <inheritdoc/>

@@ -1,4 +1,6 @@
 ﻿using MacroTools;
+using MacroTools.QuestSystem;
+using System.Collections.Generic;
 using WarcraftLegacies.Source.Quests.Draenei;
 using WarcraftLegacies.Source.Setup.FactionSetup;
 
@@ -20,8 +22,10 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
         preplacedUnitSystem.GetUnit(Constants.UNIT_H03V_ENTRANCE_PORTAL, Regions.OutlandToArgus.Center),
         preplacedUnitSystem.GetUnit(Constants.UNIT_H03V_ENTRANCE_PORTAL, Regions.TempestKeepSpawn.Center)
       ));
+      var questRepairGenerator = new QuestRepairGenerator();
+      draenei.AddQuest(questRepairGenerator);
       draenei.AddQuest(new QuestTriumvirate());
-      var questDimensionalShip = new QuestDimensionalShip(Regions.Exodar_Interior_All, questRepairHull, preplacedUnitSystem);
+      var questDimensionalShip = new QuestDimensionalShip(Regions.Exodar_Interior_All, new List<QuestData> { questRepairHull, questRepairGenerator });
       draenei.AddQuest(questDimensionalShip);
     }
   }
