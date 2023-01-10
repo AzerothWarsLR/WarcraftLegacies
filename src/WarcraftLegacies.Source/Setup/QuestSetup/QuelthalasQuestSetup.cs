@@ -15,6 +15,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       quelthalas.StartingQuest = newQuest;
       quelthalas.AddQuest(new QuestTheBloodElves(Regions.BloodElfSecondChanceSpawn));
       quelthalas.AddQuest(new QuestQueldanil(Regions.QuelDanil_Lodge));
+      quelthalas.AddQuest(new QuestQueensArchive());
       quelthalas.AddQuest(new QuestForgottenKnowledge());
     }
   }

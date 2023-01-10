@@ -12,7 +12,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       if (frostwolf != null)
       {
         frostwolf.AddQuest(new QuestThunderBluff(preplacedUnitSystem, Regions.ThunderBluff));
-        frostwolf.AddQuest(new QuestRexxar(preplacedUnitSystem));
+        frostwolf.AddQuest(new QuestStonemaul(preplacedUnitSystem, Regions.StonemaulKeep));
         frostwolf.AddQuest(new QuestDarkspear());
         frostwolf.AddQuest(new QuestDrektharsSpellbook());
         frostwolf.AddQuest(new QuestFreeNerzhul());

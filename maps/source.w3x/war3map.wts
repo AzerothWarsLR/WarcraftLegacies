@@ -11323,7 +11323,7 @@ Quest Completed: Safe Sea Decree
 }
 
 STRING 1888
-// Units: n02F (Felblood Warlock), EditorSuffix (Name - Editor Suffix)
+// Units: n02F (Warlock), EditorSuffix (Name - Editor Suffix)
 {
 (Quel'thalas)
 }
@@ -13622,6 +13622,12 @@ STRING 2271
 // Units: n060 (Silithid Tunneler), Name (Name)
 {
 Silithid Tunneler
+}
+
+STRING 2272
+// Abilities: A0KT (Arcane Recall), Tip (Tooltip - Normal)
+{
+Arcane Recall
 }
 
 STRING 2273
@@ -27600,6 +27606,12 @@ STRING 4601
 Wisp Animation
 }
 
+STRING 4602
+// Abilities: A0KT (Arcane Recall), Ubertip (Tooltip - Normal - Extended)
+{
+Summons 24 friendly units from a target area to the caster.
+}
+
 STRING 4603
 // Doodads: D03K (Gilneas Tower Bridge), Name (Name)
 {
@@ -29779,7 +29791,7 @@ Q
 }
 
 STRING 4966
-// Units: n02F (Felblood Warlock), Hotkey (Hotkey)
+// Units: n02F (Warlock), Hotkey (Hotkey)
 {
 E
 }
@@ -52238,6 +52250,12 @@ STRING 8705
 Summon Gallywix Personal Transport
 }
 
+STRING 8706
+// Abilities: A012 (Anti Portal Blocking), EditorSuffix (Editor Suffix)
+{
+(Splipstream)
+}
+
 STRING 8707
 // Abilities: A0JB (Summon Gallywix Personal Transport), Researchubertip (Tooltip - Learn - Extended)
 {
@@ -52254,6 +52272,12 @@ STRING 8709
 // Abilities: A0JB (Summon Gallywix Personal Transport), Tip (Tooltip - Normal)
 {
 Summon Gallywix Personal Transport - [|cffffcc00Level 1|r]
+}
+
+STRING 8710
+// Abilities: A012 (Anti Portal Blocking), Name (Name)
+{
+Anti Portal Blocking
 }
 
 STRING 8711
@@ -65608,6 +65632,12 @@ STRING 10935
 Adds 30 bonus damage to attacks. Units killed while under the effect of Root Parasites will turn into Corrupted Treants.
 }
 
+STRING 10936
+// Units: n02F (Warlock), Name (Name)
+{
+Warlock
+}
+
 STRING 10937
 // Abilities: A06E (Avatar), Researchhotkey (Hotkey - Learn)
 {
@@ -72000,12 +72030,6 @@ STRING 12001
 (monk)
 }
 
-STRING 12002
-// Units: n02F (Felblood Warlock), Ubertip (Tooltip - Extended)
-{
-An elven warlock that has consumed Fel Blood.|n|cfff5962dAbilities:|R Fire Storm, Life Drain, Summon Succubus|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land and air units.|r
-}
-
 STRING 12003
 // Units: E01E (Ancient Guardian), Revivetip (Tooltip - Revive)
 {
@@ -75149,6 +75173,12 @@ STRING 12526
 // Units: E015 (Demon Hunter), Ubertip (Tooltip - Extended)
 {
 Cunning Hero, adept at maneuvering and evasion.|n|cfff5962dCan Learn:|R Mana Burn, Immolation, Evasion, Metamorphosis|n|n|cffffcc00Attacks land units.|R
+}
+
+STRING 12527
+// Units: n02F (Warlock), Tip (Tooltip - Basic)
+{
+Train Warlock
 }
 
 STRING 12528
@@ -85146,6 +85176,12 @@ STRING 14193
 // Upgrades: R06N (Freezing Breath), Ubertip (Tooltip - Extended)
 {
 Improves Orb of Annihilation by increasing its damage dealt to <Afak,DataA2>.
+}
+
+STRING 14194
+// Units: n02F (Warlock), Ubertip (Tooltip - Extended)
+{
+An elven arcanist that practices dark magic.|n|cfff5962dAbilities:|R Fire Storm, Life Drain, Summon Succubus|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land and air units.|r
 }
 
 STRING 14195
@@ -96512,6 +96548,12 @@ STRING 16096
 Build Bombard
 }
 
+STRING 16097
+// Upgrades: R075 (Chaos), Name (Name)
+{
+Quest Completed: The Queen's Archive
+}
+
 STRING 16098
 // Units: o01C (Control Point Defender), Ubertip (Tooltip - Extended)
 {
@@ -99678,12 +99720,6 @@ STRING 16643
 R
 }
 
-STRING 16644
-// Upgrades: R075 (Chaos), Name (Name)
-{
-Quest Completed: The Great Treachery
-}
-
 STRING 16645
 // Units: h08I (Crusader), Ubertip (Tooltip - Extended)
 {
@@ -100104,12 +100140,6 @@ STRING 16732
 Twilight fanatics who have tamed Nether Drakes.|n|cfff5962dAbilities:|R Weighted Spear, True Sight |n|cfff5962dCan learn:|R Envenomed Spears|n |n|cff99b4d1Can only train 8.|r|n|cffffcc00Attacks land and air units.|r
 }
 
-STRING 16733
-// Units: n02F (Felblood Warlock), Name (Name)
-{
-Felblood Warlock
-}
-
 STRING 16734
 // Units: E01O (Champion of the Uncrowned), EditorSuffix (Name - Editor Suffix)
 {
@@ -100444,12 +100474,6 @@ STRING 16793
 // Upgrades: R00Q (Magic Sentry), Tip (Tooltip)
 {
 Chilling Aura
-}
-
-STRING 16794
-// Units: n02F (Felblood Warlock), Tip (Tooltip - Basic)
-{
-Train Felblood Warlock
 }
 
 STRING 16795
