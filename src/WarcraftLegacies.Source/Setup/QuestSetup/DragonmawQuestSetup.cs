@@ -29,7 +29,6 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
         preplacedUnitSystem.GetUnit(Constants.UNIT_N08R_GRIM_BATOL_TUNNELS, new Point(16562, -2766)),
         preplacedUnitSystem.GetUnit(Constants.UNIT_N08R_GRIM_BATOL_TUNNELS, new Point(16756, -2473))
       ));
-      dragonmaw.AddQuest(new QuestStonemaul(preplacedUnitSystem, Regions.StonemaulKeep));
     }
   }
 }
