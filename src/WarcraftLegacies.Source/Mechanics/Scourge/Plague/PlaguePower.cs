@@ -73,7 +73,7 @@ namespace WarcraftLegacies.Source.Mechanics.Scourge.Plague
       _holders.Add(whichPlayer);
 
       var darkConversionBuffOwner = _holders
-        .FirstOrDefault(x => x.GetFaction()?.ScoreStatus != ScoreStatus.Undefeated) ?? Player(PLAYER_NEUTRAL_AGGRESSIVE);
+        .FirstOrDefault(x => x.GetFaction()?.ScoreStatus != ScoreStatus.Defeated) ?? Player(PLAYER_NEUTRAL_AGGRESSIVE);
       
       var villagers = CreateGroup().EnumUnitsOfPlayer(Player(PLAYER_NEUTRAL_PASSIVE))
         .EmptyToList()
