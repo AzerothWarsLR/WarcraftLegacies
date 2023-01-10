@@ -19046,7 +19046,7 @@ Build Academy
 }
 
 STRING 3175
-// Abilities: A0T2 (AAASpell Resistance), Name (Name)
+// Abilities: A07C (AAASpell Resistance), Name (Name)
 {
 AAASpell Resistance
 }
@@ -68045,7 +68045,7 @@ STRING 11337
 }
 
 STRING 11338
-// Abilities: A07C (AAASpell Resistance), Name (Name)
+// Abilities: A0T2 (AAASpell Resistance), Name (Name)
 {
 AAASpell Resistance
 }
@@ -99610,6 +99610,12 @@ STRING 16606
 // Abilities: A0N7 (Disorienting Howl), Tip (Tooltip - Normal)
 {
 Disorienting Howl - [|cffffcc00Level 1|r]
+}
+
+STRING 16607
+// Units: h014 (Trading Post), Name (Name)
+{
+Trading Post
 }
 
 STRING 16609
