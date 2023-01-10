@@ -503,6 +503,7 @@ gg_snd_DoorCloseRemix = nil
 gg_snd_DoorOpenRemix = nil
 gg_snd_NuclearLaunchDetected = nil
 gg_snd_IllidansTheme = ""
+gg_rct_Nazjatar = nil
 function InitGlobals()
 end
 
@@ -7933,6 +7934,7 @@ gg_rct_IllidanBlackTempleUnlock = Rect(3744.0, -31680.0, 6720.0, -29152.0)
 gg_rct_BlackTempleBase = Rect(2112.0, -31584.0, 6496.0, -28288.0)
 gg_rct_SatyrCamp = Rect(-16288.0, 5664.0, -15360.0, 6496.0)
 gg_rct_FountainOfHealthAlterac = Rect(10656.0, 5536.0, 11104.0, 6016.0)
+gg_rct_Nazjatar = Rect(-5792.0, -3680.0, -5024.0, -2752.0)
 end
 
 function InitUpgrades_Player0()

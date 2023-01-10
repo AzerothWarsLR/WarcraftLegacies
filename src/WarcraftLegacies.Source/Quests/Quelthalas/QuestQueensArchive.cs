@@ -1,7 +1,9 @@
 ﻿
 using MacroTools.ControlPointSystem;
 using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
+using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.QuestSystem;
+using WarcraftLegacies.Source.Setup.Legends;
 
 namespace WarcraftLegacies.Source.Quests.Quelthalas
 {
@@ -20,6 +22,7 @@ namespace WarcraftLegacies.Source.Quests.Quelthalas
     {
       AddObjective(new ObjectiveControlLevel(
         ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N04Y_NAZJATAR_ROYAL_COURT_25GOLD_MIN), 10));
+      AddObjective(new ObjectiveChannelRect(Regions.Nazjatar, "Nazjatar", LegendQuelthalas.LegendKael, 60, 270));
       ResearchId = Constants.UPGRADE_R075_QUEST_COMPLETED_THE_QUEEN_S_ARCHIVE;
     }
 

@@ -13625,7 +13625,7 @@ Silithid Tunneler
 }
 
 STRING 2272
-// Abilities: A0KT (Arcane Recall), Tip (Tooltip - Normal)
+// Abilities: A0KT (Arcane Recall), Name (Name)
 {
 Arcane Recall
 }
@@ -50463,7 +50463,7 @@ R
 }
 
 STRING 8408
-// Abilities: A0KT (Arcane Recall), Name (Name)
+// Abilities: A0KT (Arcane Recall), Tip (Tooltip - Normal)
 {
 Arcane Recall
 }
@@ -52275,7 +52275,7 @@ Summon Gallywix Personal Transport - [|cffffcc00Level 1|r]
 }
 
 STRING 8710
-// Abilities: A012 (Anti Portal Blocking), Name (Name)
+// Abilities: A0A4 (Anti Portal Blocking), Name (Name)
 {
 Anti Portal Blocking
 }
@@ -64517,7 +64517,7 @@ STRING 10749
 }
 
 STRING 10750
-// Abilities: A0A4 (Anti Portal Blocking), Name (Name)
+// Abilities: A0A2 (Anti Portal Blocking), Name (Name)
 {
 Anti Portal Blocking
 }
@@ -64607,7 +64607,7 @@ STRING 10764
 }
 
 STRING 10765
-// Abilities: A0A2 (Anti Portal Blocking), Name (Name)
+// Abilities: A03K (Anti Portal Blocking), Name (Name)
 {
 Anti Portal Blocking
 }
@@ -73185,7 +73185,7 @@ STRING 12194
 }
 
 STRING 12195
-// Abilities: A03K (Anti Portal Blocking), Name (Name)
+// Abilities: A023 (Anti Portal Blocking), Name (Name)
 {
 Anti Portal Blocking
 }
@@ -75200,7 +75200,7 @@ STRING 12530
 }
 
 STRING 12531
-// Abilities: A023 (Anti Portal Blocking), Name (Name)
+// Abilities: A0M6 (Anti Portal Blocking), Name (Name)
 {
 Anti Portal Blocking
 }
@@ -94453,7 +94453,7 @@ STRING 15747
 }
 
 STRING 15748
-// Abilities: A0M6 (Anti Portal Blocking), Name (Name)
+// Abilities: A012 (Anti Portal Blocking), Name (Name)
 {
 Anti Portal Blocking
 }
