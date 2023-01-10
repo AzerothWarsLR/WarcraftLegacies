@@ -21,6 +21,7 @@ namespace WarcraftLegacies.Source.Setup
         DalaranDialogueSetup.Setup();
         QuelthalasDialogueSetup.Setup();
         GoblinDialogueSetup.Setup();
+        KultirasDialogueSetup.Setup();
       }
       catch (Exception ex)
       {
