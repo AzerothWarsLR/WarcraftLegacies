@@ -9,10 +9,10 @@ namespace WarcraftLegacies.Source.Researches
   /// When Veteran Footman is researched, the researching player loses the ability to train Footmen,
   /// and gains the ability to train Veteran Footmen.
   /// </summary>
-  public sealed class VeteranFootmen : Research
+  public sealed class SunfuryWarrior : Research
   {
     /// <inheritdoc />
-    public VeteranFootmen(int researchTypeId, int goldCost, int lumberCost) : base(researchTypeId, goldCost, lumberCost)
+    public SunfuryWarrior(int researchTypeId, int goldCost, int lumberCost) : base(researchTypeId, goldCost, lumberCost)
     {
     }
 
@@ -20,8 +20,8 @@ namespace WarcraftLegacies.Source.Researches
     public override void OnResearch(player researchingPlayer)
     {
       var faction = researchingPlayer.GetFaction();
-      faction?.ModObjectLimit(Constants.UNIT_HFOO_FOOTMAN_LORDAERON, -Faction.UNLIMITED);
-      faction?.ModObjectLimit(Constants.UNIT_H029_VETERAN_FOOTMAN_LORDAERON, Faction.UNLIMITED);
+      faction?.ModObjectLimit(Constants.UNIT_HHES_SWORDSMAN_QUEL_THALAS, -Faction.UNLIMITED);
+      faction?.ModObjectLimit(Constants.UNIT_NBEL_SUNFURY_WARRIOR_QUEL_THALAS, Faction.UNLIMITED);
     }
   }
 }

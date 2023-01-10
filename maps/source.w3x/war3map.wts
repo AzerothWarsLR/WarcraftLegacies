@@ -72030,6 +72030,12 @@ STRING 12001
 (monk)
 }
 
+STRING 12002
+// Abilities: S007 (Chaos), EditorSuffix (Editor Suffix)
+{
+(Quelthalas Swordsman to Sunfury)
+}
+
 STRING 12003
 // Units: E01E (Ancient Guardian), Revivetip (Tooltip - Revive)
 {
@@ -96608,6 +96614,12 @@ STRING 16106
 Defensive structure.  |n|n|cffffcc00Attacks land and air units.|r
 }
 
+STRING 16107
+// Abilities: S007 (Chaos), Name (Name)
+{
+Chaos
+}
+
 STRING 16108
 // Units: o057 (Vault of Relics), Ubertip (Tooltip - Extended)
 {
@@ -96720,6 +96732,12 @@ STRING 16126
 // Units: H049 (Ranger-Lord), Tip (Tooltip - Basic)
 {
 Summon Nathanos
+}
+
+STRING 16127
+// Upgrades: R004 (Magic Sentry), EditorSuffix (Editor Suffix)
+{
+(Quel'thalas)
 }
 
 STRING 16128
@@ -97782,6 +97800,12 @@ STRING 16304
 Quest Completed: Forgotten Knowledge
 }
 
+STRING 16305
+// Upgrades: R004 (Magic Sentry), Hotkey (Hotkey)
+{
+Z
+}
+
 STRING 16306
 // Abilities: A0IA (Blood Fury), EditorSuffix (Editor Suffix)
 {
@@ -98562,10 +98586,22 @@ STRING 16435
 Gorfax Angerfang
 }
 
+STRING 16436
+// Upgrades: R004 (Magic Sentry), Name (Name)
+{
+Sunfury Training
+}
+
 STRING 16437
 // Abilities: A0VR (Blazing Aura), Researchtip (Tooltip - Learn)
 {
 Learn Blazing Aura - [|cffffcc00Level %d|r]
+}
+
+STRING 16438
+// Upgrades: R004 (Magic Sentry), Tip (Tooltip)
+{
+Research Sunfury Training
 }
 
 STRING 16439
@@ -98704,6 +98740,12 @@ STRING 16461
 // Abilities: A0RZ (Arcane Bomb), Researchhotkey (Hotkey - Learn)
 {
 E
+}
+
+STRING 16462
+// Upgrades: R004 (Magic Sentry), Ubertip (Tooltip - Extended)
+{
+Replace Swordsman with Sunfury Warrior, which have Combat Experience, Feedback, Magic Resistance and improved stats.
 }
 
 STRING 16463

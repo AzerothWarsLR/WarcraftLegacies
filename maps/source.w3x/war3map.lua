@@ -315,6 +315,7 @@ gg_rct_IllidanBlackTempleUnlock = nil
 gg_rct_BlackTempleBase = nil
 gg_rct_SatyrCamp = nil
 gg_rct_FountainOfHealthAlterac = nil
+gg_rct_Nazjatar = nil
 gg_snd_ArcaneObservatoryWhat1 = nil
 gg_snd_ArrangedTeamInvitation = nil
 gg_snd_ClanInvitation = nil
@@ -503,7 +504,6 @@ gg_snd_DoorCloseRemix = nil
 gg_snd_DoorOpenRemix = nil
 gg_snd_NuclearLaunchDetected = nil
 gg_snd_IllidansTheme = ""
-gg_rct_Nazjatar = nil
 function InitGlobals()
 end
 

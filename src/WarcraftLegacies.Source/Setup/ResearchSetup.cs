@@ -30,7 +30,9 @@ namespace WarcraftLegacies.Source.Setup
       TierVeteranGuard.Setup();
 
       ResearchManager.Register(new VeteranFootmen(Constants.UPGRADE_R00B_VETERAN_FOOTMEN_LORDAERON, 220, 120));
-      
+
+      ResearchManager.Register(new SunfuryWarrior(Constants.UPGRADE_R004_SUNFURY_TRAINING_QUEL_THALAS, 300, 300));
+
       ResearchManager.RegisterIncompatibleSet(
         new BasicResearch(Constants.UPGRADE_R01X_EPIDEMIC_SCOURGE, 250, 200),
         new Revenants(Constants.UPGRADE_R08T_REVENANTS_SCOURGE, 250, 200));
