@@ -1,7 +1,11 @@
-﻿using MacroTools.DialogueSystem;
+﻿using System.Collections.Generic;
+using MacroTools.DialogueSystem;
+using MacroTools.FactionSystem;
+using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.QuestBased;
 using WarcraftLegacies.Source.Quests.Warsong;
 using WarcraftLegacies.Source.Setup.FactionSetup;
+using WarcraftLegacies.Source.Setup.Legends;
 
 namespace WarcraftLegacies.Source.Dialogue
 {
@@ -26,6 +30,47 @@ namespace WarcraftLegacies.Source.Dialogue
         {
           new ObjectiveCompleteQuest(WarsongSetup.WarsongClan.GetQuestByType(typeof(QuestFountainOfBlood)))
         }));
+      
+      TriggeredDialogueManager.Add(
+        new TriggeredDialogue(new DialogueSequence(new MacroTools.DialogueSystem.Dialogue(
+            @"Sound\Dialogue\OrcExpCamp\OrcQuest00x\D00Rexxar01",
+            "I have wandered alone for many years, little Misha. Yet sometimes, even I grow weary of this endless solitude.",
+            "Rexxar"), 
+            new MacroTools.DialogueSystem.Dialogue(
+            @"Sound\Dialogue\OrcExpCamp\OrcQuest00x\D00Rexxar02",
+            "I have watched the other races. I have seen their squabbling, their ruthlessness. Their wars do nothing but scar the land and drive the wild things to extinction.",
+            "Rexxar"), 
+            new MacroTools.DialogueSystem.Dialogue(
+            @"Sound\Dialogue\OrcExpCamp\OrcQuest00x\D00Rexxar03",
+            "No, they cannot be trusted. Only beasts are above deceit.",
+            "Rexxar"))
+          , new[]
+          {
+            FrostwolfSetup.Frostwolf
+          }, new[]
+          {
+            new ObjectiveControlLegend(LegendFrostwolf.LegendRexxar, false)
+            {
+              EligibleFactions = new List<Faction>{FrostwolfSetup.Frostwolf}
+            }
+          }));
+      
+      TriggeredDialogueManager.Add(
+        new TriggeredDialogue(new DialogueSequence(new MacroTools.DialogueSystem.Dialogue(
+              @"Sound\Dialogue\OrcExpCamp\OrcQuest00x\D00Thrall25",
+              "Who are you, warrior?",
+              "Thrall"), 
+            new MacroTools.DialogueSystem.Dialogue(
+              @"Sound\Dialogue\OrcExpCamp\OrcQuest00x\D00Rexxar26",
+              "I am Rexxar, last son of the Mok'Nathal.",
+              "Rexxar"))
+            , new[]
+          {
+            FrostwolfSetup.Frostwolf
+          }, new[]
+          {
+            new ObjectiveLegendMeetsLegend(LegendFrostwolf.LegendThrall, LegendFrostwolf.LegendRexxar)
+          }));
     }
   }
 }

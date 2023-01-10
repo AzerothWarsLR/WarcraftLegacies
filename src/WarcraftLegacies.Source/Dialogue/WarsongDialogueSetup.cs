@@ -36,6 +36,22 @@ namespace WarcraftLegacies.Source.Dialogue
           }
         }
       ));
+      
+      TriggeredDialogueManager.Add(
+        new TriggeredDialogue(new MacroTools.DialogueSystem.Dialogue(
+            @"Sound\Dialogue\OrcExpCamp\RandomOrcQuest02x\DR02Chen01",
+            "Ah, greetings, my friend. I am Chen Stormstout, humble brewmaster of Pandaria. I have traveled the wide world searching for rare, exotic ingredients to use in my special brew! After all, good ale can solve all the problems of this world, don't you agree?",
+            "Chen Stormstout")
+          , new[]
+          {
+            WarsongSetup.WarsongClan
+          }, new[]
+          {
+            new ObjectiveControlLegend(LegendWarsong.ChenStormstout, false)
+            {
+              EligibleFactions = new List<Faction>{ WarsongSetup.WarsongClan }
+            }
+          }));
     }
   }
 }
