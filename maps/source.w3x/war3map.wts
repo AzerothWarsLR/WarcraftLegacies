@@ -5718,6 +5718,12 @@ STRING 953
 Q
 }
 
+STRING 954
+// Abilities: A0T2 (AAASpell Resistance), EditorSuffix (Editor Suffix)
+{
+(spellbreakers)
+}
+
 STRING 955
 // Units: hsor (Sorceress), Casterupgradetip (Caster Upgrade Tips)
 {
@@ -19037,6 +19043,12 @@ STRING 3174
 // Units: h03E (Academy), Tip (Tooltip - Basic)
 {
 Build Academy
+}
+
+STRING 3175
+// Abilities: A0T2 (AAASpell Resistance), Name (Name)
+{
+AAASpell Resistance
 }
 
 STRING 3176
@@ -93168,6 +93180,12 @@ STRING 15534
 A
 }
 
+STRING 15535
+// Abilities: A0T2 (AAASpell Resistance), Tip (Tooltip - Normal)
+{
+Spell Resistance
+}
+
 STRING 15536
 // Units: efon (Treant), EditorSuffix (Name - Editor Suffix)
 {
@@ -99025,7 +99043,7 @@ Quest Completed: The Brothers Stormrage
 }
 
 STRING 16512
-// Upgrades: R02Y (Long Rifles), Hotkey (Hotkey)
+// Upgrades: R02K (Storm Hammers), Hotkey (Hotkey)
 {
 A
 }
@@ -99556,6 +99574,12 @@ STRING 16600
 // Upgrades: R02Y (Long Rifles), Tip (Tooltip)
 {
 Upgrade to Improved Glaives
+}
+
+STRING 16601
+// Abilities: A0T2 (AAASpell Resistance), Ubertip (Tooltip - Normal - Extended)
+{
+Reduces the damage taken from Magic attacks and Spells by 60%.
 }
 
 STRING 16602
@@ -102985,7 +103009,7 @@ E
 }
 
 STRING 17220
-// Upgrades: R02K (Storm Hammers), Hotkey (Hotkey)
+// Upgrades: R08T (Cannibalize), Hotkey (Hotkey)
 {
 A
 }
@@ -105674,19 +105698,19 @@ Consumes an enemy in holy flames, slowing them for 40% and dealing 20 initial da
 }
 
 STRING 17726
-// Upgrades: R08T (Cannibalize), Hotkey (Hotkey)
-{
-A
-}
-
-STRING 17727
 // Upgrades: R096 (Defend), Hotkey (Hotkey)
 {
 A
 }
 
-STRING 17728
+STRING 17727
 // Upgrades: R098 (Burning Oil), Hotkey (Hotkey)
+{
+A
+}
+
+STRING 17728
+// Upgrades: R02Y (Long Rifles), Hotkey (Hotkey)
 {
 A
 }
