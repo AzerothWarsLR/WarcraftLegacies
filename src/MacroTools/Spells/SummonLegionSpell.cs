@@ -20,8 +20,11 @@ namespace MacroTools.Spells
       if (InstanceSystem.GetPointInstance(caster.GetPosition()) == null)
         return;
 
-      caster.Pause(true);
-      caster.Pause(false);
+      CreateTimer().Start(1f, false, () =>
+      {
+        caster.IssueOrder("stop");
+        DestroyTimer(GetExpiredTimer());
+      });
     }
 
     /// <inheritdoc />
