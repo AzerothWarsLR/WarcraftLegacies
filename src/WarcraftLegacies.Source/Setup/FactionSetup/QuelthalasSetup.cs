@@ -97,6 +97,7 @@ The Plague of Undeath is coming and Lordaeron will need your help with the Scour
       Quelthalas.ModObjectLimit(FourCC("Rhpt"), Faction.UNLIMITED); //Priest Adept Training
       Quelthalas.ModObjectLimit(FourCC("Rhst"), Faction.UNLIMITED); //Sorceress Adept Training
       Quelthalas.ModObjectLimit(FourCC("R004"), Faction.UNLIMITED); //Sunfury Warrior Training
+      Quelthalas.ModObjectLimit(FourCC("R02Y"), Faction.UNLIMITED); //Improved Glaives
 
       Quelthalas.ModAbilityAvailability(Constants.ABILITY_A0K5_DWARVEN_MASONRY_CASTLES_YELLOW, -1);
       

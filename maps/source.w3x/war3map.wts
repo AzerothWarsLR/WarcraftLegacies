@@ -5718,12 +5718,6 @@ STRING 953
 Q
 }
 
-STRING 954
-// Units: hspt (Spellbreaker), Ubertip (Tooltip - Extended)
-{
-Elite warrior trained to destroy spellcasters.|n|cfff5962dAbilities:|R Spell Steal, Feedback, Spell Resistance|n|cfff5962dCan learn:|R Control Magic|n|r|n|cffffcc00Attacks land units.|r
-}
-
 STRING 955
 // Units: hsor (Sorceress), Casterupgradetip (Caster Upgrade Tips)
 {
@@ -19043,12 +19037,6 @@ STRING 3174
 // Units: h03E (Academy), Tip (Tooltip - Basic)
 {
 Build Academy
-}
-
-STRING 3175
-// Units: h03J (Academy), Ubertip (Tooltip - Extended)
-{
-Training institution for elite Elven warriors.|n|cfff5962dTrains:|R Spell Breaker, Dragonhawk Rider|n|cfff5962dResearches:|R Control Magic, Cloud
 }
 
 STRING 3176
@@ -93180,12 +93168,6 @@ STRING 15534
 A
 }
 
-STRING 15535
-// Units: nheb (Cantonment), Ubertip (Tooltip - Extended)
-{
-Armory of the Silvermoon forces.|n|cfff5962dTrains:|R Swordsman, Ranger, Ballista|n|cfff5962dResearches:|R Precision Shots, Enchanted Bowstrings
-}
-
 STRING 15536
 // Units: efon (Treant), EditorSuffix (Name - Editor Suffix)
 {
@@ -97801,7 +97783,7 @@ Quest Completed: Forgotten Knowledge
 }
 
 STRING 16305
-// Upgrades: R004 (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: R070 (Druid of the Talon Adept Training,Druid of the Talon Master Training), Hotkey (Hotkey)
 {
 Z
 }
@@ -98701,7 +98683,7 @@ Gives <A0B2,DataA1,.> additional armor to nearby friendly units in 600 range.
 }
 
 STRING 16455
-// Upgrades: R070 (Druid of the Talon Adept Training,Druid of the Talon Master Training), Hotkey (Hotkey)
+// Upgrades: R07J (Banshee Adept Training,Banshee Master Training), Hotkey (Hotkey)
 {
 Z
 }
@@ -98754,6 +98736,18 @@ STRING 16463
 Build Shipyard
 }
 
+STRING 16464
+// Units: nheb (Cantonment), Ubertip (Tooltip - Extended)
+{
+Armory of the Silvermoon forces.|n|cfff5962dTrains:|R Swordsman, Ranger, Ballista|n|cfff5962dResearches:|R Precision Shots, Enchanted Bowstrings, Sunfury Training
+}
+
+STRING 16465
+// Units: hspt (Spellbreaker), Ubertip (Tooltip - Extended)
+{
+Elite warrior trained to destroy spellcasters.|n|cfff5962dAbilities:|R Spell Steal, Feedback, Spell Resistance|n|cfff5962dCan learn:|R Control Magic, Improved Glaives|n|r|n|cffffcc00Attacks land units.|r
+}
+
 STRING 16466
 // Units: h08S (Undercity), Ubertip (Tooltip - Extended)
 {
@@ -98800,6 +98794,18 @@ STRING 16473
 // Units: u019 (Drone), Name (Name)
 {
 Drone
+}
+
+STRING 16474
+// Units: h03J (Academy), Ubertip (Tooltip - Extended)
+{
+Training institution for elite Elven warriors.|n|cfff5962dTrains:|R Spell Breaker, Dragonhawk Rider|n|cfff5962dResearches:|R Control Magic, Cloud, Improved Glaives
+}
+
+STRING 16475
+// Upgrades: R02Y (Long Rifles), EditorSuffix (Editor Suffix)
+{
+(Quel'thalas
 }
 
 STRING 16476
@@ -99016,6 +99022,12 @@ STRING 16511
 // Upgrades: R06S (Chaos), Name (Name)
 {
 Quest Completed: The Brothers Stormrage
+}
+
+STRING 16512
+// Upgrades: R02Y (Long Rifles), Hotkey (Hotkey)
+{
+A
 }
 
 STRING 16513
@@ -99348,6 +99360,12 @@ STRING 16567
 W
 }
 
+STRING 16568
+// Upgrades: R02Y (Long Rifles), Ubertip (Tooltip - Extended)
+{
+Increases the range of Spellbreakers attacks by 300.
+}
+
 STRING 16569
 // Abilities: A0FR (Transfusion), EditorSuffix (Editor Suffix)
 {
@@ -99475,9 +99493,15 @@ STRING 16589
 }
 
 STRING 16590
-// Upgrades: R07J (Banshee Adept Training,Banshee Master Training), Hotkey (Hotkey)
+// Upgrades: R07L (Shaman Adept Training,Shaman Master Training), Hotkey (Hotkey)
 {
 Z
+}
+
+STRING 16591
+// Upgrades: R02Y (Long Rifles), Name (Name)
+{
+Improved Glaives
 }
 
 STRING 16592
@@ -99526,6 +99550,12 @@ STRING 16599
 // Units: o03O (Altar of Industry), Tip (Tooltip - Basic)
 {
 Build Altar of Industry
+}
+
+STRING 16600
+// Upgrades: R02Y (Long Rifles), Tip (Tooltip)
+{
+Upgrade to Improved Glaives
 }
 
 STRING 16602
@@ -100057,7 +100087,7 @@ Seismic Shard
 }
 
 STRING 16706
-// Upgrades: R07L (Shaman Adept Training,Shaman Master Training), Hotkey (Hotkey)
+// Upgrades: R07O (Witch Doctor Adept Training,Witch Doctor Master Training), Hotkey (Hotkey)
 {
 Z
 }
@@ -100537,7 +100567,7 @@ Z
 }
 
 STRING 16798
-// Upgrades: R07O (Witch Doctor Adept Training,Witch Doctor Master Training), Hotkey (Hotkey)
+// Upgrades: R07V (Control Magic), Hotkey (Hotkey)
 {
 Z
 }
@@ -100759,7 +100789,7 @@ STRING 16834
 }
 
 STRING 16835
-// Upgrades: R07V (Control Magic), Hotkey (Hotkey)
+// Upgrades: R07C (Spirit Walker Adept Training,Spirit Walker Master Training), Hotkey (Hotkey)
 {
 Z
 }
@@ -104665,7 +104695,7 @@ Z
 }
 
 STRING 17538
-// Upgrades: R07C (Spirit Walker Adept Training,Spirit Walker Master Training), Hotkey (Hotkey)
+// Upgrades: R08E (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 Z
 }
@@ -104930,13 +104960,13 @@ Elemental Fire - [|cffffcc00Level 3|r]
 }
 
 STRING 17582
-// Upgrades: R08E (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R08H (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 Z
 }
 
 STRING 17583
-// Upgrades: R08H (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R08P (Naga Siren Adept Training,Naga Siren Master Training), Hotkey (Hotkey)
 {
 Z
 }
@@ -105952,7 +105982,7 @@ X
 }
 
 STRING 17800
-// Upgrades: R08P (Naga Siren Adept Training,Naga Siren Master Training), Hotkey (Hotkey)
+// Upgrades: R08S (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 Z
 }
@@ -106120,7 +106150,7 @@ R
 }
 
 STRING 17832
-// Upgrades: R08S (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R004 (Magic Sentry), Hotkey (Hotkey)
 {
 Z
 }
