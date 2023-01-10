@@ -69,7 +69,8 @@ namespace WarcraftLegacies.Source.Setup
         DummyAbilityOrderString = "thunderbolt",
         Radius = 250,
         CastFilter = CastFilters.IsTargetEnemyAndAlive,
-        TargetType = SpellTargetType.Point
+        TargetType = SpellTargetType.Point,
+        DummyCastOriginType = DummyCastOriginType.Caster
       };
       SpellSystem.Register(scattershot);
 

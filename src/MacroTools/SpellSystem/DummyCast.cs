@@ -33,14 +33,15 @@ namespace MacroTools.SpellSystem
     /// <summary>
     /// Causes the specified ability to be cast from the specified object at the specified target.
     /// </summary>
-    public static void DummyCastUnit(unit caster, int abilId, string orderId, int level, unit u)
+    public static void DummyCastUnit(unit caster, int abilId, string orderId, int level, unit target, DummyCastOriginType originType)
     {
+      var originPoint = originType == DummyCastOriginType.Caster ? caster.GetPosition() : target.GetPosition();
       DummyCaster.DummyUnit
         .SetOwner(caster.OwningPlayer())
-        .SetPosition(caster.GetPosition())
+        .SetPosition(originPoint)
         .AddAbility(abilId)
         .SetAbilityLevel(abilId, level)
-        .IssueOrder(orderId, u)
+        .IssueOrder(orderId, target)
         .RemoveAbility(abilId);
     }
 
@@ -112,13 +113,13 @@ namespace MacroTools.SpellSystem
     }
 
     public static void DummyCastOnUnitsInCircle(unit caster, int abilId, string orderId, int level, Point center,
-      float radius, CastFilter castFilter)
+      float radius, CastFilter castFilter, DummyCastOriginType originType)
     {
       foreach (var target in CreateGroup()
                  .EnumUnitsInRange(center, radius).EmptyToList()
                  .FindAll(unit => castFilter(caster, unit)))
       {
-        DummyCastUnit(caster, abilId, orderId, level, target);
+        DummyCastUnit(caster, abilId, orderId, level, target, originType);
       }
     }
   }
