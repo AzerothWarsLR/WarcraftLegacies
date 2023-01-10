@@ -99618,6 +99618,12 @@ STRING 16607
 Trading Post
 }
 
+STRING 16608
+// Units: h014 (Trading Post), EditorSuffix (Name - Editor Suffix)
+{
+ (Sea)
+}
+
 STRING 16609
 // Abilities: A0N7 (Disorienting Howl), Tip (Tooltip - Normal)
 {
