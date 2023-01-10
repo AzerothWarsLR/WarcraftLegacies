@@ -22,9 +22,14 @@ namespace WarcraftLegacies.Source.Setup
         new Instance("Outland", Regions.InstanceOutland)
       );
 
+      var naxxramasUnit = preplacedUnitSystem.GetUnit(Constants.UNIT_E013_NAXXRAMAS_SCOURGE_OTHER);
       var naxxramas = new Instance("Naxxramas", Regions.NaxxramasInstance);
       naxxramas.AddDependency(preplacedUnitSystem.GetUnit(Constants.UNIT_U01X_HEART_OF_NAXXRAMAS_SCOURGE_NAXXRAMAS_INTERIOR));
-      naxxramas.AddDependency(preplacedUnitSystem.GetUnit(Constants.UNIT_E013_NAXXRAMAS_SCOURGE_OTHER));
+      naxxramas.AddDependency(naxxramasUnit);
+      naxxramas.AddGate(new Gate(
+        () => Regions.NaxxramasInside.Center,
+        () => naxxramasUnit.GetPosition()
+        ));
       InstanceSystem.Register(naxxramas);
 
       var proudmooreFlagshipInterior = new Instance("Proudmoore Flagship Interior", Regions.ShipAmbient);
