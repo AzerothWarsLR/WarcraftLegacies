@@ -22,7 +22,7 @@ namespace WarcraftLegacies.Source.Quests.Quelthalas
     {
       AddObjective(new ObjectiveControlLevel(
         ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N04Y_NAZJATAR_ROYAL_COURT_25GOLD_MIN), 10));
-      AddObjective(new ObjectiveChannelRect(Regions.Nazjatar, "Nazjatar", LegendQuelthalas.LegendKael, 60, 270));
+      AddObjective(new ObjectiveChannelRect(Regions.Nazjatar, "Nazjatar", LegendQuelthalas.LegendKael, 80, 270));
       ResearchId = Constants.UPGRADE_R075_QUEST_COMPLETED_THE_QUEEN_S_ARCHIVE;
     }
 
