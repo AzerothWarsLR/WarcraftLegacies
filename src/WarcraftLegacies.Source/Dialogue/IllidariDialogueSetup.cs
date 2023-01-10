@@ -4,7 +4,9 @@ using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.MetaBased;
+using MacroTools.ObjectiveSystem.Objectives.QuestBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
+using WarcraftLegacies.Source.Quests.Naga;
 using WarcraftLegacies.Source.Setup.FactionSetup;
 using WarcraftLegacies.Source.Setup.Legends;
 
@@ -145,6 +147,19 @@ namespace WarcraftLegacies.Source.Dialogue
           {
             new ObjectiveLegendMeetsLegend(LegendNaga.LegendIllidan, LegendScourge.Arthas)
           }));
+      
+      TriggeredDialogueManager.Add(new TriggeredDialogue(
+        new MacroTools.DialogueSystem.Dialogue(@"Sound\Dialogue\HumanExpCamp\NightElf02x\A07Illidan24",
+          "Hear me now, you trembling mortals! I am your lord and master! Illidan reigns supreme!",
+          "Illidan Stormrage")
+        , new[]
+        {
+          IllidariSetup.Illidari
+        }, new List<Objective>
+        {
+          new ObjectiveCompleteQuest(IllidariSetup.Illidari.GetQuestByType(typeof(QuestBlackTemple)))
+        }
+      ));
     }
   }
 }
