@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using MacroTools;
 using MacroTools.DialogueSystem;
+using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.QuestBased;
@@ -20,9 +21,9 @@ namespace WarcraftLegacies.Source.Dialogue
         new TriggeredDialogue(
           new DialogueSequence(
             new MacroTools.DialogueSystem.Dialogue(
-            @"Sound\Dialogue\HumanCampaign\Human01\H01Uther01",
-            "Welcome, Prince Arthas. The men and I are honored by your presence.",
-            "Uther the Lightbringer"), 
+              @"Sound\Dialogue\HumanCampaign\Human01\H01Uther01",
+              "Welcome, Prince Arthas. The men and I are honored by your presence.",
+              "Uther the Lightbringer"),
             new MacroTools.DialogueSystem.Dialogue(
               @"Sound\Dialogue\HumanCampaign\Human01\H01Arthas02",
               "Can the formalities, Uther. I'm not king yet. It's good to see you.",
@@ -39,42 +40,43 @@ namespace WarcraftLegacies.Source.Dialogue
               @"Sound\Dialogue\HumanCampaign\Human01\H01Uther05",
               "It is a father's right to dream, isn't it?",
               "Uther the Lightbringer")
-            ), 
+          ),
           new[]
-        {
-          LordaeronSetup.Lordaeron
-        }, new Objective[]
-        {
-          new ObjectiveLegendMeetsLegend(LegendLordaeron.Arthas, LegendLordaeron.Uther)
-        }));
-      
+          {
+            LordaeronSetup.Lordaeron
+          }, new Objective[]
+          {
+            new ObjectiveLegendMeetsLegend(LegendLordaeron.Arthas, LegendLordaeron.Uther)
+          }));
+
       TriggeredDialogueManager.Add(
         new TriggeredDialogue(
           new DialogueSequence(
             new MacroTools.DialogueSystem.Dialogue(
               @"Sound\Dialogue\HumanCampaign\Human02\H02Blademaster11",
               "Paladin fool! The warlocks of the Blackrock clan have spoken! Soon, demons will rain from the sky, and this wretched world will burn!",
-              "Jubei'thos"), 
+              "Jubei'thos"),
             new MacroTools.DialogueSystem.Dialogue(
               @"Sound\Dialogue\HumanCampaign\Human02\H02Uther12",
               "Yes, I've heard this rhetoric before. You orcs will never learn!",
               "Uther the Lightbringer")
-          ), 
+          ),
           new[]
           {
             LordaeronSetup.Lordaeron
           }, new Objective[]
           {
             new ObjectiveLegendInRect(LegendLordaeron.Uther, Regions.AlteracAmbient, "Alterac"),
-            new ObjectiveUnitAlive(preplacedUnitSystem.GetUnit(Constants.UNIT_O00B_JUBEI_THOS_LEGION_DEMI, new Point(11066, 6291)))
+            new ObjectiveUnitAlive(preplacedUnitSystem.GetUnit(Constants.UNIT_O00B_JUBEI_THOS_LEGION_DEMI,
+              new Point(11066, 6291)))
           }));
-      
+
       TriggeredDialogueManager.Add(
         new TriggeredDialogue(new DialogueSequence(
           new MacroTools.DialogueSystem.Dialogue(
-          @"Sound\Dialogue\HumanCampaign\Human07\H07Captain01",
-          "This is a Light-forsaken land, isn't it? You can barely even see the sun! This howling wind cuts to the bone and you're not even shaking. Mi'lord, are you alright?",
-          "Captain Falric"),
+            @"Sound\Dialogue\HumanCampaign\Human07\H07Captain01",
+            "This is a Light-forsaken land, isn't it? You can barely even see the sun! This howling wind cuts to the bone and you're not even shaking. Mi'lord, are you alright?",
+            "Captain Falric"),
           new MacroTools.DialogueSystem.Dialogue(
             @"Sound\Dialogue\HumanCampaign\Human07\H07Arthas02",
             "Captain, are all my forces accounted for?",
@@ -87,21 +89,21 @@ namespace WarcraftLegacies.Source.Dialogue
             @"Sound\Dialogue\HumanCampaign\Human07\H07Arthas04",
             "Very well. Our first priority is to set up a base camp with proper defenses. There's no telling what's waiting for us out there in the shadows.",
             "Arthas Menethil")
-          ), new[]
+        ), new[]
         {
           LordaeronSetup.Lordaeron
         }, new Objective[]
         {
           new ObjectiveLegendReachRect(LegendLordaeron.Arthas, Regions.Central_Northrend, "central Northrend")
         }));
-      
+
       TriggeredDialogueManager.Add(
         new TriggeredDialogue(
           new DialogueSequence(
             new MacroTools.DialogueSystem.Dialogue(
               @"Sound\Dialogue\HumanCampaign\Human03\H03Arthas06",
               "Looks like you haven't lost your touch. It's good to see you again, Jaina.",
-              "Arthas Menethil"), 
+              "Arthas Menethil"),
             new MacroTools.DialogueSystem.Dialogue(
               @"Sound\Dialogue\HumanCampaign\Human03\H03Jaina07",
               "You too, Arthas. It's been awhile since a prince escorted me anywhere.",
@@ -110,7 +112,7 @@ namespace WarcraftLegacies.Source.Dialogue
               @"Sound\Dialogue\HumanCampaign\Human03\H03Arthas08",
               "Yes, it has. Well, I guess we should get underway.",
               "Arthas Menethil")
-          ), 
+          ),
           new[]
           {
             LordaeronSetup.Lordaeron
@@ -118,7 +120,7 @@ namespace WarcraftLegacies.Source.Dialogue
           {
             new ObjectiveLegendMeetsLegend(LegendLordaeron.Arthas, LegendDalaran.LegendJaina)
           }));
-      
+
       TriggeredDialogueManager.Add(
         new TriggeredDialogue(
           new DialogueSequence(
@@ -126,15 +128,16 @@ namespace WarcraftLegacies.Source.Dialogue
               @"Sound\Dialogue\HumanCampaign\Human03\H03Arthas12",
               "This must be the shrine that the old man spoke of. Any man who drinks from these Light-blessed waters will be healed.",
               "Arthas Menethil")
-          ), 
+          ),
           new[]
           {
             LordaeronSetup.Lordaeron
           }, new Objective[]
           {
-            new ObjectiveLegendInRect(LegendLordaeron.Arthas, Regions.FountainOfHealthAlterac, "Fountain of Health in Alterac")
+            new ObjectiveLegendInRect(LegendLordaeron.Arthas, Regions.FountainOfHealthAlterac,
+              "Fountain of Health in Alterac")
           }));
-      
+
       TriggeredDialogueManager.Add(
         new TriggeredDialogue(
           new DialogueSequence(
@@ -154,7 +157,7 @@ namespace WarcraftLegacies.Source.Dialogue
               @"Sound\Dialogue\HumanCampaign\Human09\H09Arthas26",
               "He tells me that the time for my vengeance has come.",
               "Arthas Menethil")
-          ), 
+          ),
           new[]
           {
             LordaeronSetup.Lordaeron,
@@ -164,14 +167,14 @@ namespace WarcraftLegacies.Source.Dialogue
           {
             new ObjectiveLegendMeetsLegend(LegendScourge.Arthas, LegendLegion.LEGEND_MALGANIS)
           }));
-      
+
       TriggeredDialogueManager.Add(
         new TriggeredDialogue(
           new MacroTools.DialogueSystem.Dialogue(
-              @"Sound\Dialogue\HumanCampaign\Human07\H07Arthas26",
-              "That has to be where Mal'Ganis is hiding! I want that base leveled!",
-              "Arthas Menethil"),
-            new[]
+            @"Sound\Dialogue\HumanCampaign\Human07\H07Arthas26",
+            "That has to be where Mal'Ganis is hiding! I want that base leveled!",
+            "Arthas Menethil"),
+          new[]
           {
             LordaeronSetup.Lordaeron,
             LegionSetup.Legion
@@ -179,7 +182,7 @@ namespace WarcraftLegacies.Source.Dialogue
           {
             new ObjectiveLegendInRect(LegendLordaeron.Arthas, Regions.DrakUnlock, ""),
           }));
-      
+
       TriggeredDialogueManager.Add(
         new TriggeredDialogue(
           new MacroTools.DialogueSystem.Dialogue(
@@ -193,10 +196,11 @@ namespace WarcraftLegacies.Source.Dialogue
           }, new Objective[]
           {
             new ObjectiveLegendMeetsLegend(LegendLegion.LEGEND_MALGANIS, LegendLordaeron.Arthas),
-            new ObjectiveLegendInRect(LegendLordaeron.Arthas, Regions.Central_Northrend, ""), //Todo: make this work in any region of Northrend
+            new ObjectiveLegendInRect(LegendLordaeron.Arthas, Regions.Central_Northrend,
+              ""), //Todo: make this work in any region of Northrend
             new ObjectiveLegendInRect(LegendLegion.LEGEND_MALGANIS, Regions.Central_Northrend, "")
           }));
-      
+
       TriggeredDialogueManager.Add(new TriggeredDialogue(
         new DialogueSequence(
           new MacroTools.DialogueSystem.Dialogue(@"Sound\Dialogue\UndeadCampaign\Undead02\U02Uther21.flac",
@@ -212,7 +216,7 @@ namespace WarcraftLegacies.Source.Dialogue
           new ObjectiveLegendMeetsLegend(LegendLordaeron.Uther, LegendScourge.Arthas)
         }
       ));
-      
+
       TriggeredDialogueManager.Add(new TriggeredDialogue(
         new DialogueSequence(
           new MacroTools.DialogueSystem.Dialogue(@"Sound\Dialogue\UndeadCampaign\Undead02\U02PaladinD10.flac",
@@ -228,6 +232,30 @@ namespace WarcraftLegacies.Source.Dialogue
           new ObjectiveLegendMeetsLegend(LegendLordaeron.Mograine, LegendScourge.Arthas)
         }
       ));
+
+      TriggeredDialogueManager.Add(
+        new TriggeredDialogue(
+          new DialogueSequence(
+            new MacroTools.DialogueSystem.Dialogue(
+              @"Sound\Dialogue\HumanCampaign\Human05\H05Arthas10",
+              "Oh no...",
+              "Arthas Menethil"),
+            new MacroTools.DialogueSystem.Dialogue(
+              @"Sound\Dialogue\HumanCampaign\Human05\H05Arthas11",
+              "The plague was never meant to simply kill my people. It was meant to turn them... into the undead! Defend yourselves!",
+              "Arthas Menethil")
+          ),
+          new[]
+          {
+            LordaeronSetup.Lordaeron
+          }, new Objective[]
+          {
+            new ObjectiveCompleteQuest(ScourgeSetup.Scourge.GetQuestByType(typeof(QuestPlague))),
+            new ObjectiveControlLegend(LegendLordaeron.Arthas, false)
+            {
+              EligibleFactions = new List<Faction> { LordaeronSetup.Lordaeron }
+            }
+          }));
     }
   }
 }
