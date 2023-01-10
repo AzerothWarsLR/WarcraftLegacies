@@ -79,6 +79,7 @@ namespace MacroTools.PassiveAbilitySystem
         PlayerUnitEvents.Register(UnitTypeEvent.SpellFinish, passiveAbility.OnSpellFinish, unitTypeId);
         PlayerUnitEvents.Register(HeroTypeEvent.FinishesRevive, UnitCreated, unitTypeId);
         PlayerUnitEvents.Register(UnitTypeEvent.ReceivesPointOrder, passiveAbility.OnOrderIssued, unitTypeId);
+        PlayerUnitEvents.Register(UnitTypeEvent.CancelsUpgrade, passiveAbility.OnCancelUpgrade, unitTypeId);
 
         if (passiveAbility is IAppliesEffectOnDamage appliesEffectOnDamage)
           PlayerUnitEvents.Register(UnitTypeEvent.Damaging, appliesEffectOnDamage.OnDealsDamage, unitTypeId);

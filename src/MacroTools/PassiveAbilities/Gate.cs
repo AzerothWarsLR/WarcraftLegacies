@@ -48,5 +48,9 @@ namespace MacroTools.PassiveAbilities
       if (createdUnit.GetTypeId() == _openedId) 
         createdUnit.SetAnimation("death alternate");
     }
+
+    /// <inheritdoc />
+    public override void OnCancelUpgrade() => 
+      GetTriggerUnit().SetAnimation("death");
   }
 }
