@@ -16,6 +16,8 @@ namespace WarcraftLegacies.Source.Setup
     {
       foreach (var fountainOfHealth in preplacedUnitSystem.GetUnits(FourCC("nfoh"))) 
         fountainOfHealth.MakeCapturable();
+      foreach (var tradingPost in preplacedUnitSystem.GetUnits(FourCC("h014")))
+        tradingPost.MakeCapturable();
     }
   }
 }
