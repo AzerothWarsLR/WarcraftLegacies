@@ -4972,12 +4972,6 @@ STRING 829
 Summon Queen of Suffering
 }
 
-STRING 830
-// Units: ndqs (Queen of Suffering), Ubertip (Tooltip - Extended)
-{
-Mother of cruel delights.|n|cfff5962dAbilities:|R Carrion Swarm, Howl of Terror, Unholy Aura |n|n|cffffcc00Attacks land units.|r
-}
-
 STRING 831
 // Units: ndqp (Maiden of Dominance), EditorSuffix (Name - Editor Suffix)
 {
@@ -5480,12 +5474,6 @@ STRING 914
 // Units: nbel (Sunfury Warrior), Tip (Tooltip - Basic)
 {
 Train Sunfury Warrior
-}
-
-STRING 915
-// Units: nbel (Sunfury Warrior), Ubertip (Tooltip - Extended)
-{
-Stout protector of Quel'Thalas.|n|cfff5962dAbilities:|R Charge, Defend, Battle Experience, Magic Resistance|n|cfff5962dCan Learn:|R Feedback|n|n|cffffcc00Attacks land units.|r
 }
 
 STRING 916
@@ -11346,12 +11334,6 @@ STRING 1891
 Build Consortium
 }
 
-STRING 1892
-// Units: n0A2 (Consortium), Ubertip (Tooltip - Extended)
-{
-Gathering place for Quel'thalas' most prestigious spellcasters.|n|cfff5962dTrains:|R Magus, Blood Mage|n|cfff5962dResearches:|R Magus Training
-}
-
 STRING 1893
 // Units: o00P (Chaos Grunt), Hotkey (Hotkey)
 {
@@ -13886,12 +13868,6 @@ STRING 2315
 // Units: n05L (Conjurer), Tip (Tooltip - Basic)
 {
 Train Conjurer
-}
-
-STRING 2316
-// Units: n05L (Conjurer), Ubertip (Tooltip - Extended)
-{
-Diverse spellmage from an old day and age.|n|cfff5962dAbilities:|R Firestorm, Summon Scorpions, Invisibility|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land and air units.|r
 }
 
 STRING 2317
@@ -22284,7 +22260,7 @@ Revive Necromancer
 }
 
 STRING 3715
-// Upgrades: R04G (Magic Sentry), EditorSuffix (Editor Suffix)
+// Buffs/Effects: B0AK (), EditorSuffix (Editor Suffix)
 {
 (Legion)
 }
@@ -27139,7 +27115,7 @@ Agave
 }
 
 STRING 4524
-// Upgrades: R028 (Banshee Adept Training,Banshee Master Training), EditorSuffix (Editor Suffix)
+// Upgrades: R04G (Magic Sentry), EditorSuffix (Editor Suffix)
 {
 (Legion)
 }
@@ -29767,7 +29743,7 @@ STRING 4961
 }
 
 STRING 4962
-// Upgrades: R027 (Necromancer Adept Training,Necromancer Master Training), EditorSuffix (Editor Suffix)
+// Upgrades: R028 (Banshee Adept Training,Banshee Master Training), EditorSuffix (Editor Suffix)
 {
 (Legion)
 }
@@ -37987,7 +37963,7 @@ Calls down a storm of lightning to strike enemy units for 40 damage in a medium 
 }
 
 STRING 6332
-// Upgrades: R01Y (Magic Sentry), EditorSuffix (Editor Suffix)
+// Upgrades: R027 (Necromancer Adept Training,Necromancer Master Training), EditorSuffix (Editor Suffix)
 {
 (Legion)
 }
@@ -38293,7 +38269,7 @@ Life Drain
 }
 
 STRING 6383
-// Upgrades: R003 (Cannibalize), EditorSuffix (Editor Suffix)
+// Upgrades: R01Y (Magic Sentry), EditorSuffix (Editor Suffix)
 {
 (Legion)
 }
@@ -38455,7 +38431,7 @@ STRING 6409
 }
 
 STRING 6410
-// Upgrades: R096 (Defend), EditorSuffix (Editor Suffix)
+// Upgrades: R003 (Cannibalize), EditorSuffix (Editor Suffix)
 {
 (Legion)
 }
@@ -54916,19 +54892,19 @@ Q
 }
 
 STRING 9150
-// Abilities: A0IW (Firestorm), Name (Name)
+// Abilities: A0C7 (Firestorm), Name (Name)
 {
 Firestorm
 }
 
 STRING 9151
-// Abilities: A0IW (Firestorm), Tip (Tooltip - Normal)
+// Abilities: A07I (Firestorm), Name (Name)
 {
 Firestorm
 }
 
 STRING 9152
-// Abilities: A0IW (Firestorm), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A07I (Firestorm), Ubertip (Tooltip - Normal - Extended)
 {
 Calls down a storm of fire to strike enemy units for 30 damage in a large target area. |nLasts 15 seconds.
 }
@@ -58576,7 +58552,7 @@ STRING 9759
 }
 
 STRING 9760
-// Abilities: A0IW (Firestorm), Hotkey (Hotkey - Normal)
+// Abilities: A0IW (Lightning Storm), Hotkey (Hotkey - Normal)
 {
 Q
 }
@@ -62068,7 +62044,7 @@ R
 }
 
 STRING 10342
-// Abilities: A0C7 (Firestorm), Name (Name)
+// Buffs/Effects: B02O (Firestorm), EditorName (Name (Editor Only))
 {
 Firestorm
 }
@@ -67924,12 +67900,6 @@ STRING 11317
 W
 }
 
-STRING 11318
-// Abilities: A07I (Firestorm), Name (Name)
-{
-Firestorm
-}
-
 STRING 11319
 // Abilities: A07I (Firestorm), Tip (Tooltip - Normal)
 {
@@ -67940,12 +67910,6 @@ STRING 11320
 // Abilities: A07I (Firestorm), Tip (Tooltip - Normal)
 {
 Firestorm 
-}
-
-STRING 11321
-// Abilities: A07I (Firestorm), Ubertip (Tooltip - Normal - Extended)
-{
-Calls down a storm of fire to strike enemy units for 30 damage in a large target area. |nLasts 15 seconds.
 }
 
 STRING 11322
@@ -69494,12 +69458,6 @@ STRING 11579
 // Abilities: A0R2 (Siege Mode), Tip (Tooltip - Normal)
 {
 Siege Mode
-}
-
-STRING 11580
-// Abilities: A0R2 (Siege Mode), Ubertip (Tooltip - Normal - Extended)
-{
-Immobilizes the Siege Ancient to grant it a powerful ranged attack.
 }
 
 STRING 11581
@@ -72884,12 +72842,6 @@ STRING 12143
 Q
 }
 
-STRING 12144
-// Abilities: A0R2 (Siege Mode), Unubertip (Tooltip - Turn Off - Extended)
-{
-Allows the Ancient to move again.
-}
-
 STRING 12145
 // Abilities: A04H (Resurgent Flame Strike), Hotkey (Hotkey - Normal)
 {
@@ -75857,12 +75809,6 @@ STRING 12639
 // Abilities: A01Q (Shadow Aura), Tip (Tooltip - Normal)
 {
 Grandeur Aura - [|cffffcc00Level 4|r]
-}
-
-STRING 12640
-// Units: e01B (Arcane Annihilator), Ubertip (Tooltip - Extended)
-{
-Siege unit that can transform into an immobile ranged turret.|n|cfff5962dAbilities:|r Siege mode|n|n|cff99b4d1Can only train 6|n|cffffcc00Cannot attack.|r
 }
 
 STRING 12641
@@ -79077,7 +79023,7 @@ This unit has Inner Will; its armor is increased.
 }
 
 STRING 13176
-// Buffs/Effects: B07P (Lightning Storm), EditorName (Name (Editor Only))
+// Abilities: A0IW (Lightning Storm), Name (Name)
 {
 Lightning Storm
 }
@@ -81534,12 +81480,6 @@ STRING 13585
 // Buffs/Effects: B02P (), Buffubertip (Tooltip - Extended)
 {
 This unit has Unholy Armor; it is impervious to damage.
-}
-
-STRING 13586
-// Buffs/Effects: B02O (Firestorm), EditorName (Name (Editor Only))
-{
-Firestorm
 }
 
 STRING 13587
@@ -97189,7 +97129,7 @@ C
 }
 
 STRING 16203
-// Abilities: A0RO (Summon Succubus), Hotkey (Hotkey - Normal)
+// Abilities: A0RO (Summon Queen of Suffering), Hotkey (Hotkey - Normal)
 {
 E
 }
@@ -97483,7 +97423,7 @@ Deactivate Mana Shield
 }
 
 STRING 16252
-// Abilities: A0RO (Summon Succubus), Researchhotkey (Hotkey - Learn)
+// Abilities: A0RO (Summon Queen of Suffering), Researchhotkey (Hotkey - Learn)
 {
 W
 }
@@ -98760,12 +98700,6 @@ STRING 16464
 Armory of the Silvermoon forces.|n|cfff5962dTrains:|R Swordsman, Ranger, Ballista|n|cfff5962dResearches:|R Precision Shots, Enchanted Bowstrings, Sunfury Training
 }
 
-STRING 16465
-// Units: hspt (Spellbreaker), Ubertip (Tooltip - Extended)
-{
-Elite warrior trained to destroy spellcasters.|n|cfff5962dAbilities:|R Spell Steal, Feedback, Spell Resistance|n|cfff5962dCan learn:|R Control Magic, Improved Glaives|n|r|n|cffffcc00Attacks land units.|r
-}
-
 STRING 16466
 // Units: h08S (Undercity), Ubertip (Tooltip - Extended)
 {
@@ -98812,12 +98746,6 @@ STRING 16473
 // Units: u019 (Drone), Name (Name)
 {
 Drone
-}
-
-STRING 16474
-// Units: h03J (Academy), Ubertip (Tooltip - Extended)
-{
-Training institution for elite Elven warriors.|n|cfff5962dTrains:|R Spell Breaker, Dragonhawk Rider|n|cfff5962dResearches:|R Control Magic, Cloud, Improved Glaives
 }
 
 STRING 16475
@@ -99570,12 +99498,6 @@ STRING 16599
 Build Altar of Industry
 }
 
-STRING 16600
-// Upgrades: R02Y (Long Rifles), Tip (Tooltip)
-{
-Upgrade to Improved Glaives
-}
-
 STRING 16601
 // Abilities: A0T2 (AAASpell Resistance), Ubertip (Tooltip - Normal - Extended)
 {
@@ -99744,6 +99666,12 @@ STRING 16628
 Enraged Tree of Life
 }
 
+STRING 16629
+// Units: ndqs (Queen of Suffering), Ubertip (Tooltip - Extended)
+{
+Mother of cruel delights.|n|cfff5962dAbilities:|R Unholy Aura |n|n|cffffcc00Attacks land units.|r
+}
+
 STRING 16630
 // Units: h093 (Order Chapter House), Name (Name)
 {
@@ -99828,6 +99756,12 @@ STRING 16643
 R
 }
 
+STRING 16644
+// Units: nbel (Sunfury Warrior), Ubertip (Tooltip - Extended)
+{
+Stout protector of Quel'Thalas.|n|cfff5962dAbilities:|R Charge, Defend, Battle Experience, Spell Resistance, Feedback|n|n|cffffcc00Attacks land units.|r
+}
+
 STRING 16645
 // Units: h08I (Crusader), Ubertip (Tooltip - Extended)
 {
@@ -99870,6 +99804,12 @@ STRING 16651
 The Alchemist causes his Ogre to enter a chemically induced rage, increasing movement rate by 50%, increasing attack rate by 75% and giving 800 bonus hp for 15 seconds.
 }
 
+STRING 16652
+// Units: hspt (Spellbreaker), Ubertip (Tooltip - Extended)
+{
+Elite warrior trained to destroy spellcasters.|n|cfff5962dAbilities:|R Spell Steal, Feedback, Spell Resistance|n|cfff5962dCan learn:|R Control Magic|n|r|n|cffffcc00Attacks land units.|r
+}
+
 STRING 16653
 // Upgrades: R08E (Iron Plating,Steel Plating,Mithril Plating), Name (Name)
 {
@@ -99882,6 +99822,12 @@ STRING 16654
 Join the Crusade
 }
 
+STRING 16655
+// Units: n0A2 (Consortium), Ubertip (Tooltip - Extended)
+{
+Gathering place for Quel'thalas' most prestigious spellcasters.|n|cfff5962dTrains:|R Magus, Blood Mage, Warlock|n|cfff5962dResearches:|R Magus Training
+}
+
 STRING 16656
 // Upgrades: R06U (Chaos), Name (Name)
 {
@@ -99892,6 +99838,18 @@ STRING 16657
 // Upgrades: R06V (Chaos), Name (Name)
 {
 Scarlet Crusade is Unleashed
+}
+
+STRING 16658
+// Units: n05L (Conjurer), Ubertip (Tooltip - Extended)
+{
+Diverse spellmage from an old day and age.|n|cfff5962dAbilities:|R Firestorm, Summon Scorpions, Invisibility, Summon Reef Elemental|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land and air units.|r
+}
+
+STRING 16659
+// Units: h05A (Wizard's Sanctum), Ubertip (Tooltip - Extended)
+{
+- Has the |cffcece00Mana Siphon|r ability, which allows the Wizard's Sanctum to grant 250 Mana to any unit within 2000 range with a 90 second cooldown.|n|n- Can Learn the |cffcece00Electric Strike |rand |cffcece00Solar Flare |rability|n|n- Further Research unlocks a 4th spell to |cffcece00Chaplains |rand |cffcece00Clergymen|r.|n|n- Another research will unlock the |cffcece00Conjurer |runit.
 }
 
 STRING 16660
@@ -99930,6 +99888,12 @@ STRING 16665
 Summon Darius Crowley
 }
 
+STRING 16666
+// Units: h03J (Academy), Ubertip (Tooltip - Extended)
+{
+Training institution for elite Elven warriors.|n|cfff5962dTrains:|R Spell Breaker, Dragonhawk Rider, Arcane Annihilator|n|cfff5962dResearches:|R Control Magic, Cloud, Improved Glaives
+}
+
 STRING 16667
 // Units: e017 (Scorpion), Ubertip (Tooltip - Extended)
 {
@@ -99954,6 +99918,12 @@ STRING 16670
 Train Orcish Death Knight
 }
 
+STRING 16671
+// Units: e01B (Arcane Annihilator), Ubertip (Tooltip - Extended)
+{
+Siege unit that can transform into an immobile ranged turret.|n|cfff5962dAbilities:|r Siege mode|n|n|cff99b4d1Can only train 6.|n|cffffcc00Cannot attack.|r
+}
+
 STRING 16672
 // Units: o04W (Golden Vessel), EditorSuffix (Name - Editor Suffix)
 {
@@ -99970,6 +99940,18 @@ STRING 16674
 // Units: obar (War Camp), Ubertip (Tooltip - Extended)
 {
 Home to the warriors of the Horde.|n|cfff5962dTrains:|R Grunt, Headhunter, Bat Rider |n|cfff5962dResearches:|RTroll Regeneration, Liquid Fire
+}
+
+STRING 16675
+// Abilities: A0IW (Lightning Storm), Tip (Tooltip - Normal)
+{
+Lightning Storm
+}
+
+STRING 16676
+// Abilities: A0IW (Lightning Storm), Ubertip (Tooltip - Normal - Extended)
+{
+Calls down a storm of lightning to strike enemy units for 30 damage in a large target area. |nLasts 15 seconds.
 }
 
 STRING 16677
@@ -100038,6 +100020,12 @@ STRING 16687
 The dread of the sea and the bane of any Navy.|n|cfff5962dAbilities:|R Repair|n|n|cff99b4d1Can only build 6.|r|n|cffffcc00Attacks land units.|r
 }
 
+STRING 16688
+// Abilities: A0R2 (Siege Mode), Ubertip (Tooltip - Normal - Extended)
+{
+Immobilizes the Arcane Annihilator to grant it a powerful ranged attack.
+}
+
 STRING 16689
 // Abilities: A06L (Mana Shield), EditorSuffix (Editor Suffix)
 {
@@ -100062,6 +100050,18 @@ STRING 16692
 Activate Mana Shield - [|cffffcc00Level 4|r]
 }
 
+STRING 16693
+// Abilities: A0R2 (Siege Mode), Unubertip (Tooltip - Turn Off - Extended)
+{
+Allows the Arcane Annihilator to move again.
+}
+
+STRING 16694
+// Abilities: A0RO (Summon Queen of Suffering), Name (Name)
+{
+Summon Queen of Suffering
+}
+
 STRING 16695
 // Abilities: A06L (Mana Shield), Ubertip (Tooltip - Normal - Extended)
 {
@@ -100072,6 +100072,12 @@ STRING 16696
 // Abilities: A06L (Mana Shield), Researchtip (Tooltip - Learn)
 {
 Learn Mana Shield
+}
+
+STRING 16697
+// Abilities: A0RO (Summon Queen of Suffering), Tip (Tooltip - Normal)
+{
+Summon Queen of Suffering
 }
 
 STRING 16698
@@ -100140,6 +100146,12 @@ STRING 16708
 Warrior hero, adept at melee combat and bolstering nearby allies.|n|cfff5962dAbilities:|r Critical Strike|n|cfff5962dCan Learn:|R White Wolf's Fury, Goldrinn's Howl, Vampiric Aura, Reincarnation|n|n|cffffcc00Attacks land units.|R
 }
 
+STRING 16709
+// Abilities: A0RO (Summon Queen of Suffering), Ubertip (Tooltip - Normal - Extended)
+{
+The Warlock summons 1 Queen of Suffering to help him in battle.
+}
+
 STRING 16710
 // Abilities: A0UF (Spike Aura), Researchhotkey (Hotkey - Learn)
 {
@@ -100200,6 +100212,18 @@ STRING 16719
 Transfusion - [|cffffcc00Level 4|r]
 }
 
+STRING 16720
+// Buffs/Effects: B07P (Lightning Storm), EditorName (Name (Editor Only))
+{
+Lightning Storm
+}
+
+STRING 16721
+// Buffs/Effects: B0AK (), Bufftip (Tooltip)
+{
+Summon Queen of Suffering
+}
+
 STRING 16722
 // Units: o03H (Improved Twilight Lookout), Name (Name)
 {
@@ -100216,6 +100240,24 @@ STRING 16724
 // Units: o06A (Improved High Watchtower), Ubertip (Tooltip - Extended)
 {
 Defensive structure.|n|cfff5962dCan learn:|R Spiked Barricades |n|n|cffffcc00Attacks land and air units.|r
+}
+
+STRING 16725
+// Upgrades: R03X (Magic Sentry), Ubertip (Tooltip - Extended)
+{
+Enables the training of |cffcece00Conjurers|r, limited to 6, with the following abilities:|n|n|cffcece00Firestorm|r - Calls down a storm of fire to strike enemy units for 30 damage in a large area. Lasts 15 seconds.|n|n|cffcece00Summon Scorpions |r- Summons 4 scorpions which have poisonous attacks. Each scorpion has 380 hit points and deal 28 -37 damage. Lasts 45 seconds.|n|n|cffcece00Invisibility|r - Makes a unit invisible. If the unit attacks, uses an ability or casts a spell, it will become visible. Lasts 120 seconds. |n|n|cffffff00Summon Reef Elemental|r|r|r - Summons 2 Reef Elementals that have the Crushing Wave Ability. Lasts 90 seconds.
+}
+
+STRING 16726
+// Upgrades: R096 (Defend), EditorSuffix (Editor Suffix)
+{
+(Legion)
+}
+
+STRING 16727
+// Upgrades: R02Y (Long Rifles), Tip (Tooltip)
+{
+Research Improved Glaives
 }
 
 STRING 16728
@@ -104101,39 +104143,21 @@ Ancient Animated Statue from the time of Old.|n|cffffcc00Casts:|r Shadow storm, 
 }
 
 STRING 17428
-// Abilities: A0RO (Summon Succubus), EditorSuffix (Editor Suffix)
+// Abilities: A0RO (Summon Queen of Suffering), EditorSuffix (Editor Suffix)
 {
 (felelves warlock)
 }
 
-STRING 17429
-// Abilities: A0RO (Summon Succubus), Name (Name)
-{
-Summon Succubus
-}
-
 STRING 17430
-// Abilities: A0RO (Summon Succubus), Researchtip (Tooltip - Learn)
+// Abilities: A0RO (Summon Queen of Suffering), Researchtip (Tooltip - Learn)
 {
 Ritual of Fire - [|cffffcc00Level %d|r].
 }
 
 STRING 17431
-// Abilities: A0RO (Summon Succubus), Researchubertip (Tooltip - Learn - Extended)
+// Abilities: A0RO (Summon Queen of Suffering), Researchubertip (Tooltip - Learn - Extended)
 {
 Dargan perfoms a ritual that opens a portal allowing Fire Elementals to fight his enemies. |nThe Fire Elementals last 60 seconds. |n|n|cffffcc00Level 1|r - 3 Fire Elementals with Immolation and Incinerate.|n|cffffcc00Level 2|r - 4 Fire Elementals with Immolation and Incinerate.|n|cffffcc00Level 3|r - 4 Strong Fire Elementals with Immolation, Incinerate, and Breath of Fire.|n|cffffcc00Level 4|r - 5 Strong Fire Elementals with Immolation, Incinerate, and Breath of Fire.
-}
-
-STRING 17432
-// Abilities: A0RO (Summon Succubus), Tip (Tooltip - Normal)
-{
-Summon Succubus
-}
-
-STRING 17433
-// Abilities: A0RO (Summon Succubus), Ubertip (Tooltip - Normal - Extended)
-{
-The Warlock summons 1 succubus to help him in battle.
 }
 
 STRING 17434
@@ -114690,12 +114714,6 @@ STRING 19492
 Build Steamvault
 }
 
-STRING 19493
-// Units: h05A (Wizard's Sanctum), Ubertip (Tooltip - Extended)
-{
-- Has the |cffcece00Mana Siphon|r ability, which allows the Wizard's Sanctum to grant 250 Mana to any unit within 2000 range with a 90 second cooldown.|n|n- Can Learn the |cffcece00Electric Strike |ror |cffcece00Solar Flare |rability|n|n- Further Research allows a portal to be opened between |cffcece00Stormwind and Honor Hold |rin Outland or |cffcece00Stormwind and Stromgarde|r, along with adding a 4th spell to |cffcece00Chaplains |ror |cffcece00Clergymen|r.|n|n- Final research will unlock the |cffcece00Conjurer |runit.
-}
-
 STRING 19494
 // Abilities: A0AU (Frost Armor), EditorSuffix (Editor Suffix)
 {
@@ -114712,12 +114730,6 @@ STRING 19496
 // Upgrades: R03X (Magic Sentry), Tip (Tooltip)
 {
 Research Conjurers
-}
-
-STRING 19497
-// Upgrades: R03X (Magic Sentry), Ubertip (Tooltip - Extended)
-{
-Enables the training of |cffcece00Conjurers|r, limited to 6, with the following abilities:|n|n|cffcece00Firestorm|r - Calls down a storm of fire to strike enemy units for 30 damage in a large area. Lasts 15 seconds.|n|n|cffcece00Summon Scorpions |r- Summons 4 scorpions which have poisonous attacks. Each scorpion has 380 hit points and deal 28 -37 damage. Lasts 45 seconds.|n|n|cffcece00Invisibility|r - Makes a unit invisible. If the unit attacks, uses an ability or casts a spell, it will become visible. Lasts 120 seconds.
 }
 
 STRING 19498
@@ -118003,7 +118015,7 @@ STRING 20166
 }
 
 STRING 20167
-// Abilities: A0IW (Firestorm), EditorSuffix (Editor Suffix)
+// Abilities: A0IW (Lightning Storm), EditorSuffix (Editor Suffix)
 {
 (Stormwind Conjurer)
 }
