@@ -15,6 +15,7 @@ using WarcraftLegacies.Source.Mechanics.Scourge.Blight;
 using WarcraftLegacies.Source.Rocks;
 using WarcraftLegacies.Source.Setup.FactionSetup;
 using WarcraftLegacies.Source.UnitTypes;
+using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup
 {
@@ -55,7 +56,7 @@ namespace WarcraftLegacies.Source.Setup
       PlayerSetup.Setup();
       NeutralHostileSetup.Setup();
       AllQuestSetup.Setup(preplacedUnitSystem, artifactSetup);
-      ObserverSetup.Setup();
+      ObserverSetup.Setup(new[] { Player(21) });
       SpellsSetup.Setup();
       CheatSetup.Setup();
       CommandSetup.Setup();
