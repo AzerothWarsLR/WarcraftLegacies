@@ -149,7 +149,7 @@ namespace WarcraftLegacies.Source.Dialogue
           }));
       
       TriggeredDialogueManager.Add(new TriggeredDialogue(
-        new MacroTools.DialogueSystem.Dialogue(@"Sound\Dialogue\HumanExpCamp\NightElf02x\A07Illidan24",
+        new MacroTools.DialogueSystem.Dialogue(@"Sound\Dialogue\HumanExpCamp\Human07x\A07Illidan24",
           "Hear me now, you trembling mortals! I am your lord and master! Illidan reigns supreme!",
           "Illidan Stormrage")
         , new[]
