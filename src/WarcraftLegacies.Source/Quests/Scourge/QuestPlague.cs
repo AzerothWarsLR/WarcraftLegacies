@@ -53,8 +53,8 @@ namespace WarcraftLegacies.Source.Quests.Scourge
       Global = true;
       Required = true;
 
-      _portalController1 = preplacedUnitSystem.GetUnit(Constants.UNIT_N03J_BLACK_PORTAL_AURA_CONTROL_NEXUS, new Point(-1546, 18236)).Show(false);
-      _portalController2 = preplacedUnitSystem.GetUnit(Constants.UNIT_N03J_BLACK_PORTAL_AURA_CONTROL_NEXUS, new Point(14198, 6530)).Show(false);
+      _portalController1 = preplacedUnitSystem.GetUnit(Constants.UNIT_N03J_BLACK_PORTAL_AURA_CONTROL_NEXUS, new Point(-1546, 18236)).SetInvulnerable(true);
+      _portalController2 = preplacedUnitSystem.GetUnit(Constants.UNIT_N03J_BLACK_PORTAL_AURA_CONTROL_NEXUS, new Point(14198, 6530)).SetInvulnerable(true);
       _innerWaygate1 = preplacedUnitSystem.GetUnit(Constants.UNIT_N03H_DEATH_GATE_WAYGATE, Regions.Scholomance_Exterior_1.Center).Show(false);
       _innerWaygate2 = preplacedUnitSystem.GetUnit(Constants.UNIT_N03H_DEATH_GATE_WAYGATE, Regions.Scholomance_Exterior_2.Center).Show(false);
       _outerWaygate1 = preplacedUnitSystem.GetUnit(Constants.UNIT_N03H_DEATH_GATE_WAYGATE, Regions.Wrathgate_Portal_1.Center).Show(false);
@@ -101,8 +101,8 @@ namespace WarcraftLegacies.Source.Quests.Scourge
         CreatePlagueCauldrons(completingFaction);
       completingFaction.AddPower(plaguePower);
 
-      _portalController1.Show(true);
-      _portalController2.Show(true);
+      _portalController1.SetInvulnerable(false);
+      _portalController2.SetInvulnerable(false);
       _innerWaygate1
         .Show(true)
         .SetWaygateDestination(Regions.Wrathgate_Portal_1.Center);

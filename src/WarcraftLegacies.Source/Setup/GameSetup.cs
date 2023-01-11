@@ -133,6 +133,7 @@ namespace WarcraftLegacies.Source.Setup
       IntegrityChecker.Setup(true);
       PeonsStartHarvestingShips.Setup(preplacedUnitSystem);
       DarkPortalControlNexusSetup.Setup(preplacedUnitSystem);
+      BlackPortalControlNexusSetup.Setup(preplacedUnitSystem);
     }
   }
 }
