@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using MacroTools;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
@@ -79,6 +80,11 @@ namespace WarcraftLegacies.Source.Quests.Scourge
       foreach (var plagueRect in _plagueRects)
       {
         var position = plagueRect.GetRandomPoint();
+        var pointCapital = new Point(9041, 8036);
+        var pointStratholme = new Point(13825, 12471);
+        Point attackPoint;
+        float distance1;
+        float distance2;
         var plagueCauldron = CreateUnit(plaguePlayer, _plagueCauldronUnitTypeId, position.X, position.Y, 0)
           .SetTimedLife(_duration);
         var plagueCauldronBuff = new PlagueCauldronBuff(plagueCauldron, plagueCauldron)
@@ -86,9 +92,23 @@ namespace WarcraftLegacies.Source.Quests.Scourge
           ZombieUnitTypeId = Constants.UNIT_NZOM_ZOMBIE_SCOURGE
         };
         BuffSystem.Add(plagueCauldronBuff);
+
+        distance1 = MathEx.GetDistanceBetweenPoints(position, pointCapital);
+
+        distance2 = MathEx.GetDistanceBetweenPoints(position, pointStratholme);
+
+        if (distance1 < distance2)
+          attackPoint = pointCapital;
+        else
+          attackPoint = pointStratholme;
+
         foreach (var parameter in _plagueCauldronSummonParameters)
-          GeneralHelpers.CreateUnits(plaguePlayer, parameter.SummonUnitTypeId,
-            position.X, position.Y, 0, parameter.SummonCount);
+          foreach (var unit in GeneralHelpers.CreateUnits(plaguePlayer, parameter.SummonUnitTypeId,
+                   position.X, position.Y, 0, parameter.SummonCount))
+          {
+            if (!unit.IsType(UNIT_TYPE_PEON))
+              unit.IssueOrder("attack", attackPoint);
+          }
       }
     }
 
