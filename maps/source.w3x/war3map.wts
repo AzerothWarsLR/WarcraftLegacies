@@ -67952,6 +67952,12 @@ STRING 11320
 Firestorm 
 }
 
+STRING 11321
+// Units: n036 (Dark Portal), EditorSuffix (Name - Editor Suffix)
+{
+ (Waygate)
+}
+
 STRING 11322
 // Abilities: A07I (Firestorm), Ubertip (Tooltip - Normal - Extended)
 {
@@ -69498,6 +69504,12 @@ STRING 11579
 // Abilities: A0R2 (Siege Mode), Tip (Tooltip - Normal)
 {
 Siege Mode
+}
+
+STRING 11580
+// Units: n035 (Scholomance), EditorSuffix (Name - Editor Suffix)
+{
+ (Caer Darrow Portal)
 }
 
 STRING 11581
@@ -72882,6 +72894,12 @@ STRING 12143
 Q
 }
 
+STRING 12144
+// Units: n03H (Death Gate), Name (Name)
+{
+Death Gate
+}
+
 STRING 12145
 // Abilities: A04H (Resurgent Flame Strike), Hotkey (Hotkey - Normal)
 {
@@ -75849,6 +75867,12 @@ STRING 12639
 // Abilities: A01Q (Shadow Aura), Tip (Tooltip - Normal)
 {
 Grandeur Aura - [|cffffcc00Level 4|r]
+}
+
+STRING 12640
+// Units: n03H (Death Gate), EditorSuffix (Name - Editor Suffix)
+{
+ (Waygate)
 }
 
 STRING 12641
