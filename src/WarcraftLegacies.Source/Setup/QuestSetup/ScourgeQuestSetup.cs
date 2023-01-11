@@ -38,7 +38,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       plagueParameters.PlagueCauldronUnitTypeId = Constants.UNIT_H02W_PLAGUE_CAULDRON_SCOURGE_OTHER;
       plagueParameters.Duration = 360;
 
-      QuestPlague questPlague = new(plagueParameters);
+      QuestPlague questPlague = new(plagueParameters, preplacedUnitSystem);
 
       QuestSapphiron questSapphiron = new(preplacedUnitSystem.GetUnit(Constants.UNIT_UBDR_SAPPHIRON_CREEP));
       QuestCorruptArthas questCorruptArthas = new();

@@ -1,4 +1,5 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using MacroTools;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.Libraries;
@@ -20,6 +21,13 @@ namespace WarcraftLegacies.Source.Quests.Scourge
   {
     private readonly float _duration;
 
+    private readonly unit _portalController1;
+    private readonly unit _portalController2;
+    private readonly unit _innerWaygate1;
+    private readonly unit _innerWaygate2;
+    private readonly unit _outerWaygate1;
+    private readonly unit _outerWaygate2;
+
     private readonly List<PlagueCauldronSummonParameter> _plagueCauldronSummonParameters;
     private readonly int _plagueCauldronUnitTypeId;
     private readonly List<Rectangle> _plagueRects;
@@ -29,7 +37,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
     /// and converting villagers into Zombies.
     /// </summary>
     /// <param name="plagueParameters">Provides information about how the Plague should work.</param>
-    public QuestPlague(PlagueParameters plagueParameters) : base(
+    public QuestPlague(PlagueParameters plagueParameters, PreplacedUnitSystem preplacedUnitSystem) : base(
       "Plague of Undeath",
       "The Cult of the Damned is prepared to unleash a devastating zombifying plague across the lands of Lordaeron.",
       "ReplaceableTextures\\CommandButtons\\BTNPlagueBarrel.blp")
@@ -44,6 +52,13 @@ namespace WarcraftLegacies.Source.Quests.Scourge
       AddObjective(new ObjectiveTime(660));
       Global = true;
       Required = true;
+
+      _portalController1 = preplacedUnitSystem.GetUnit(Constants.UNIT_N03J_BLACK_PORTAL_AURA_CONTROL_NEXUS, new Point(-1546, 18236)).Show(false);
+      _portalController2 = preplacedUnitSystem.GetUnit(Constants.UNIT_N03J_BLACK_PORTAL_AURA_CONTROL_NEXUS, new Point(14198, 6530)).Show(false);
+      _innerWaygate1 = preplacedUnitSystem.GetUnit(Constants.UNIT_N03H_DEATH_GATE_WAYGATE, Regions.Scholomance_Exterior_1.Center).Show(false);
+      _innerWaygate2 = preplacedUnitSystem.GetUnit(Constants.UNIT_N03H_DEATH_GATE_WAYGATE, Regions.Scholomance_Exterior_2.Center).Show(false);
+      _outerWaygate1 = preplacedUnitSystem.GetUnit(Constants.UNIT_N03H_DEATH_GATE_WAYGATE, Regions.Wrathgate_Portal_1.Center).Show(false);
+      _outerWaygate2 = preplacedUnitSystem.GetUnit(Constants.UNIT_N03H_DEATH_GATE_WAYGATE, Regions.Wrathgate_Portal_2.Center).Show(false);
     }
 
     /// <inheritdoc />
@@ -85,6 +100,21 @@ namespace WarcraftLegacies.Source.Quests.Scourge
       if (completingFaction.Player != null) 
         CreatePlagueCauldrons(completingFaction);
       completingFaction.AddPower(plaguePower);
+
+      _portalController1.Show(true);
+      _portalController2.Show(true);
+      _innerWaygate1
+        .Show(true)
+        .SetWaygateDestination(Regions.Wrathgate_Portal_1.Center);
+      _innerWaygate2
+        .Show(true)
+        .SetWaygateDestination(Regions.Wrathgate_Portal_2.Center);
+      _outerWaygate1
+        .Show(true)
+        .SetWaygateDestination(Regions.Scholomance_Exterior_1.Center);
+      _outerWaygate2
+        .Show(true)
+        .SetWaygateDestination(Regions.Scholomance_Exterior_2.Center);
     }
 
     /// <inheritdoc />

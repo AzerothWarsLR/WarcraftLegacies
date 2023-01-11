@@ -56,17 +56,6 @@ namespace WarcraftLegacies.Source.Setup.Legends
       };
       LegendaryHeroManager.Register(LEGEND_MALGANIS);
 
-      LegionNexusAlterac = new Capital
-      {
-        Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_N0BE_LEGION_NEXUS_LEGION_OTHER, new Point(11035f, 5348f))
-      };
-      CapitalManager.Register(LegionNexusAlterac);
-
-      LegionNexusNorthrend = new Capital
-      {
-        Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_N0BE_LEGION_NEXUS_LEGION_OTHER, new Point(3544, 20780))
-      };
-      CapitalManager.Register(LegionNexusNorthrend);
     }
   }
 }

@@ -8191,12 +8191,6 @@ STRING 1365
 Demigod of the Night Elves
 }
 
-STRING 1366
-// Units: n0BE (Legion Nexus), Name (Name)
-{
-Legion Nexus
-}
-
 STRING 1367
 // Units: O04H (Fire Ascendant), Revivetip (Tooltip - Revive)
 {
@@ -31632,7 +31626,7 @@ STRING 5272
 }
 
 STRING 5273
-// Units: n0BE (Legion Nexus), Hotkey (Hotkey)
+// Units: n0BE (Legion Teleporters), Hotkey (Hotkey)
 {
 E
 }
@@ -81546,6 +81540,12 @@ STRING 13585
 This unit has Unholy Armor; it is impervious to damage.
 }
 
+STRING 13586
+// Units: n03J (Black Portal Aura Control Nexus), Name (Name)
+{
+Black Portal Aura Control Nexus
+}
+
 STRING 13587
 // Buffs/Effects: B02N (), Bufftip (Tooltip)
 {
@@ -85186,12 +85186,6 @@ STRING 14193
 // Upgrades: R06N (Freezing Breath), Ubertip (Tooltip - Extended)
 {
 Improves Orb of Annihilation by increasing its damage dealt to <Afak,DataA2>.
-}
-
-STRING 14194
-// Units: n02F (Warlock), Ubertip (Tooltip - Extended)
-{
-An elven arcanist that practices dark magic.|n|cfff5962dAbilities:|R Fire Storm, Life Drain, Summon Succubus|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land and air units.|r
 }
 
 STRING 14195
@@ -98764,6 +98758,12 @@ STRING 16464
 Armory of the Silvermoon forces.|n|cfff5962dTrains:|R Swordsman, Ranger, Ballista|n|cfff5962dResearches:|R Precision Shots, Enchanted Bowstrings, Sunfury Training
 }
 
+STRING 16465
+// Units: n02F (Warlock), Ubertip (Tooltip - Extended)
+{
+An elven arcanist that practices dark magic.|n|cfff5962dAbilities:|R Lightning Storm, Life Drain, Summon Succubus|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land and air units.|r
+}
+
 STRING 16466
 // Units: h08S (Undercity), Ubertip (Tooltip - Extended)
 {
@@ -98810,6 +98810,12 @@ STRING 16473
 // Units: u019 (Drone), Name (Name)
 {
 Drone
+}
+
+STRING 16474
+// Units: n0BE (Legion Teleporters), Name (Name)
+{
+Legion Teleporters
 }
 
 STRING 16475
@@ -105732,7 +105738,7 @@ The Alchemist causes his Ogre to enter a chemically induced rage, increasing mov
 }
 
 STRING 17699
-// Units: n0BE (Legion Nexus), Tip (Tooltip - Basic)
+// Units: n0BE (Legion Teleporters), Tip (Tooltip - Basic)
 {
 Summon Legion Nexus
 }
@@ -117617,13 +117623,13 @@ STRING 20077
 }
 
 STRING 20078
-// Units: n0BE (Legion Nexus), EditorSuffix (Name - Editor Suffix)
+// Units: n0BE (Legion Teleporters), EditorSuffix (Name - Editor Suffix)
 {
 (Legion Other)
 }
 
 STRING 20079
-// Units: n0BE (Legion Nexus), Ubertip (Tooltip - Extended)
+// Units: n0BE (Legion Teleporters), Ubertip (Tooltip - Extended)
 {
 Demonic Nexus for the summoning of the Legion's armies
 }

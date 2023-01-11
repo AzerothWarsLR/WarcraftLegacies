@@ -300,7 +300,7 @@ public static class Regions
 	public static Rectangle Exodar_North_Interior { get; set; } = new Rectangle(-9792f, -25024f, -9312f, -24512f);
 	public static Rectangle Exodar_Interior_All { get; set; } = new Rectangle(-11616f, -26848f, -9280f, -24480f);
 	public static Rectangle BloodElfSecondChanceSpawn { get; set; } = new Rectangle(10432f, 3520f, 10816f, 3936f);
-	public static Rectangle CaerDarrow { get; set; } = new Rectangle(14240f, 6528f, 15520f, 8064f);
+	public static Rectangle CaerDarrow { get; set; } = new Rectangle(13952f, 6208f, 15648f, 8064f);
 	public static Rectangle TombOfSargerasInteriorA { get; set; } = new Rectangle(-832f, 10144f, 704f, 11168f);
 	public static Rectangle TombOfSargerasInteriorB { get; set; } = new Rectangle(-1632f, 9152f, 64f, 10176f);
 	public static Rectangle TombOfSargerasInteriorC { get; set; } = new Rectangle(-1536f, 8960f, 0f, 9184f);
@@ -323,5 +323,11 @@ public static class Regions
 	public static Rectangle SatyrCamp { get; set; } = new Rectangle(-16288f, 5664f, -15360f, 6496f);
 	public static Rectangle FountainOfHealthAlterac { get; set; } = new Rectangle(10656f, 5536f, 11104f, 6016f);
 	public static Rectangle Nazjatar { get; set; } = new Rectangle(-5792f, -3680f, -5024f, -2752f);
+	public static Rectangle Wrathgate_Portal_1 { get; set; } = new Rectangle(-3040f, 18304f, -2752f, 18560f);
+	public static Rectangle Scholomance_Exterior_1 { get; set; } = new Rectangle(14528f, 7616f, 14912f, 7872f);
+	public static Rectangle Scholomance_Exterior_2 { get; set; } = new Rectangle(15232f, 6720f, 15552f, 7136f);
+	public static Rectangle Wrathgate_Portal_2 { get; set; } = new Rectangle(-2400f, 18848f, -2112f, 19136f);
+	public static Rectangle AlteracLegionLanding { get; set; } = new Rectangle(11008f, 6080f, 11392f, 6432f);
+	public static Rectangle NorthrendLegionLanding { get; set; } = new Rectangle(3392f, 20512f, 3776f, 20864f);
 
 }
