@@ -38,7 +38,9 @@ namespace WarcraftLegacies.Source.Quests.Ironforge
     protected override void OnComplete(Faction whichFaction)
     {
       var uldumPosition = ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N0BD_ULDUM_10GOLD_MIN).Unit.GetPosition();
-      ArtifactManager.Register(new Artifact(CreateItem(_rewardArtifactItemTypeId, uldumPosition.X, uldumPosition.Y)));
+      var rewardArtifact = new Artifact(CreateItem(_rewardArtifactItemTypeId, uldumPosition.X, uldumPosition.Y));
+      rewardArtifact.Titanforge();
+      ArtifactManager.Register(rewardArtifact);
     }
   }
 }
