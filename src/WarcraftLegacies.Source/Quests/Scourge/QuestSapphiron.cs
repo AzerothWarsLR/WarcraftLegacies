@@ -18,7 +18,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
       AddObjective(new ObjectiveControlLegend(LegendScourge.Kelthuzad, false));
     }
     
-    protected override string CompletionPopup =>
+    protected override string RewardFlavour =>
       "Sapphiron has been slain, and has been reanimated as a mighty Frost Wyrm under the command of the Scourge.";
 
     protected override string RewardDescription => "The demihero Sapphiron";

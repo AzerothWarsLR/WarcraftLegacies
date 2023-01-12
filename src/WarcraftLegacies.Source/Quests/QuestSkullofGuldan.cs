@@ -45,10 +45,10 @@ namespace WarcraftLegacies.Source.Quests
     protected override string RewardDescription => "The Skull of Gul'dan";
 
     /// <inheritdoc/>
-    protected override string CompletionPopup => $"{_objectiveWithCompletingUnit.CompletingUnitName} has retrieved the Skull of Gul'dan from its pedestal.";
+    protected override string RewardFlavour => $"{_objectiveWithCompletingUnit.CompletingUnitName} has retrieved the Skull of Gul'dan from its pedestal.";
 
     /// <inheritdoc/>
-    protected override string FailurePopup => 
+    protected override string PenaltyFlavour => 
       "Another faction has retrieved the Skull of Gul'dan from its pedestal. Hopefully they do not turn its nefarious power against us.";
 
     /// <inheritdoc/>

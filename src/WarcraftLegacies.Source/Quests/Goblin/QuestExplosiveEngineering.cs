@@ -5,7 +5,7 @@ namespace WarcraftLegacies.Source.Quests.Goblin
 {
   public sealed class QuestExplosiveEngineering : QuestData
   {
-    protected override string CompletionPopup => "We now have acquired Oil and can begin constructing War Machines";
+    protected override string RewardFlavour => "We now have acquired Oil and can begin constructing War Machines";
 
     protected override string RewardDescription => "Gazlowee is trainable at the altar";
 

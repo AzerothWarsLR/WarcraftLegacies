@@ -30,7 +30,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
 
     //Todo: bad flavour
     /// <inheritdoc/>
-    protected override string CompletionPopup => "The Thunder Eagles are now in the safe hands of Lordaeron.";
+    protected override string RewardFlavour => "The Thunder Eagles are now in the safe hands of Lordaeron.";
 
     /// <inheritdoc/>
     protected override string RewardDescription => "Learn to train " + GetObjectName(ThunderEagleId) + "s";

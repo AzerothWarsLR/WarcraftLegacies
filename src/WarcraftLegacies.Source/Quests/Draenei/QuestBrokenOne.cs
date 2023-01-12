@@ -22,7 +22,7 @@ namespace WarcraftLegacies.Source.Quests.Draenei
     }
 
     /// <inheritdoc />
-    protected override string CompletionPopup => "Nobundo acts in service of the Draenai once again.";
+    protected override string RewardFlavour => "Nobundo acts in service of the Draenai once again.";
 
     /// <inheritdoc />
     protected override string RewardDescription => "The hero Nobundo is now trainable at the altar.";

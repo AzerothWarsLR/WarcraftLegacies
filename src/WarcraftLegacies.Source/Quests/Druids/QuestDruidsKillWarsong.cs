@@ -27,7 +27,7 @@ namespace WarcraftLegacies.Source.Quests.Druids
       ResearchId = FourCC("R05A");
     }
     
-    protected override string CompletionPopup =>
+    protected override string RewardFlavour =>
       "The Warsong presence on Kalimdor has been eliminated. The sacred lands are safe from their hatchets.";
 
     protected override string RewardDescription => "Learn to train " + GetObjectName(UNITTYPE_ID) + "s";

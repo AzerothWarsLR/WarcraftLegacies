@@ -24,7 +24,7 @@ namespace WarcraftLegacies.Source.Quests.Dragonmaw
       AddObjective(new ObjectiveExpire(600));
     }
 
-    protected override string CompletionPopup =>
+    protected override string RewardFlavour =>
       "Nek'rosh's revenge is finally complete and the plounder of Menethil Harbor will give the Dragonmaw plenty of ressources for the wars to come";
 
     protected override string RewardDescription => "3000 experience for Nek'rosh, 750 gold and lumber at turn 10";

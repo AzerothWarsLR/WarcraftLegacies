@@ -14,7 +14,7 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
       AddObjective(new ObjectiveControlCapital(LegendNeutral.Karazhan, false));
     }
     
-    protected override string CompletionPopup => "Karazhan has been captured. Dalaran's archivists scour its halls for arcane resources.";
+    protected override string RewardFlavour => "Karazhan has been captured. Dalaran's archivists scour its halls for arcane resources.";
 
     protected override string RewardDescription => "Learn to research three powerful upgrades at Karazhan.";
 

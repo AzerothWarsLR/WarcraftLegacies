@@ -19,7 +19,7 @@ namespace WarcraftLegacies.Source.Quests.Legion
       Global = true;
     }
 
-    protected override string CompletionPopup =>
+    protected override string RewardFlavour =>
       "Archimonde has now consummed the World Tree and is now nigh unstoppable";
 
     protected override string RewardDescription =>

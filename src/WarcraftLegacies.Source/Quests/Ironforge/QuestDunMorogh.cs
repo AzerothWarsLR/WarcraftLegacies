@@ -25,7 +25,7 @@ namespace WarcraftLegacies.Source.Quests.Ironforge
       Required = true;
     }
 
-    protected override string CompletionPopup => "The Trolls have been defeated, Dun Morogh will join your cause.";
+    protected override string RewardFlavour => "The Trolls have been defeated, Dun Morogh will join your cause.";
 
     protected override string RewardDescription => "Control of all units in Dun Morogh";
 

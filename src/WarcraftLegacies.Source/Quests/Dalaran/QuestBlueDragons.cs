@@ -20,7 +20,7 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
       AddObjective(new ObjectiveControlCapital(LegendNeutral.TheNexus, false));
     }
 
-    protected override string CompletionPopup =>
+    protected override string RewardFlavour =>
       "The Nexus has been captured. The Blue Dragonflight fights for Dalaran.";
 
     protected override string RewardDescription => "Learn to train Blue Dragons";

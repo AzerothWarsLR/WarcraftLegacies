@@ -26,7 +26,7 @@ namespace WarcraftLegacies.Source.Quests.Gilneas
     }
 
     /// <inheritdoc/>
-    protected override string CompletionPopup => "Goldrinn has joined Gilneas and they remain in the Alliance.";
+    protected override string RewardFlavour => "Goldrinn has joined Gilneas and they remain in the Alliance.";
 
     /// <inheritdoc/>
     protected override string RewardDescription => "Goldrinn will be trainable at the altar.";

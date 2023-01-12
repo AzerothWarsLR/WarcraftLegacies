@@ -27,7 +27,7 @@ namespace WarcraftLegacies.Source.Quests.Zandalar
     }
 
     /// <inheritdoc/>
-    protected override string CompletionPopup =>
+    protected override string RewardFlavour =>
       "Jintha'Alor has fallen. The Vilebranch trolls lend their might to the Zandalari";
 
     /// <inheritdoc/>>

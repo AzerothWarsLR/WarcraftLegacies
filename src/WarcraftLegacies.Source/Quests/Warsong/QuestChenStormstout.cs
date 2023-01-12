@@ -24,7 +24,7 @@ namespace WarcraftLegacies.Source.Quests.Warsong
       _chen = chen;
     }
 
-    protected override string CompletionPopup => "Chen Stormstout has joined the Warsong Clan.";
+    protected override string RewardFlavour => "Chen Stormstout has joined the Warsong Clan.";
 
     protected override string RewardDescription => "The hero Chen Stormstout";
 

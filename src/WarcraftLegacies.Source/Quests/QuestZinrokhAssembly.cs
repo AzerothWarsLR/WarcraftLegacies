@@ -27,11 +27,11 @@ namespace WarcraftLegacies.Source.Quests
     }
 
     /// <inheritdoc/>
-    protected override string CompletionPopup =>
+    protected override string RewardFlavour =>
       $"{_fragments.First().OwningUnit?.GetProperName() ?? ""} has assembled Zin'rokh, Destroyer of Worlds!";
     
     /// <inheritdoc/>
-    protected override string FailurePopup =>
+    protected override string PenaltyFlavour =>
       $"{_fragments.First().OwningPlayer?.GetFaction()?.ColoredName ?? ""} has assembled Zin'rokh, Destroyer of Worlds. The only way we will acquire it now is if we take it from them.";
     
     /// <inheritdoc/>

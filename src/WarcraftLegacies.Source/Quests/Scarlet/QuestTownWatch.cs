@@ -21,7 +21,7 @@ namespace WarcraftLegacies.Source.Quests.Scarlet
       Required = true;
     }
 
-    protected override string CompletionPopup => "The Cultists have been eliminated. Our towns are now safe.";
+    protected override string RewardFlavour => "The Cultists have been eliminated. Our towns are now safe.";
 
     protected override string RewardDescription => "Gain 4000 lumber and 500 gold";
 

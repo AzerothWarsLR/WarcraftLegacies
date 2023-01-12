@@ -21,7 +21,7 @@ namespace WarcraftLegacies.Source.Quests.Warsong
       AddObjective(new ObjectiveCapitalDead(LegendSentinels.Auberdine));
     }
     
-    protected override string CompletionPopup =>
+    protected override string RewardFlavour =>
       "The Sentinels have been eliminated. Warchief Thrall breathes a sigh of relief, knowing that his people are safe - for now.";
 
     protected override string RewardDescription =>

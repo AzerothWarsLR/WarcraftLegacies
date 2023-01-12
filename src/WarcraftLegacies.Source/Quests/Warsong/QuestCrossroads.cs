@@ -36,7 +36,7 @@ namespace WarcraftLegacies.Source.Quests.Warsong
         }
     }
 
-    protected override string CompletionPopup => "The Crossroads have been constructed.";
+    protected override string RewardFlavour => "The Crossroads have been constructed.";
 
     protected override string RewardDescription => "Control of the Crossroads";
 

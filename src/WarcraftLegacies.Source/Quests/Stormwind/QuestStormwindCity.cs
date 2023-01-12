@@ -42,7 +42,7 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
 
     //Todo: bad flavour
     /// <inheritdoc />
-    protected override string CompletionPopup =>
+    protected override string RewardFlavour =>
       "Stormwind has been liberated, and its military is now free to assist the Alliance.";
 
     /// <inheritdoc />

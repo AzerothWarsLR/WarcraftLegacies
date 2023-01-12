@@ -20,7 +20,7 @@ namespace WarcraftLegacies.Source.Quests.Fel_Horde
       ResearchId = FourCC("R011");
     }
     
-    protected override string CompletionPopup =>
+    protected override string RewardFlavour =>
       "The Great Forge has been annihilated. The Fel Horde's peons immediately salvage its intact refineries and put them to purpose in the creation of Felsteel.";
 
     protected override string RewardDescription => "Learn to train " + I2S(UNIT_LIMIT) + " " +

@@ -36,10 +36,10 @@ namespace WarcraftLegacies.Source.Quests.Draenei
     }
 
     /// <inheritdoc/>
-    protected override string CompletionPopup => "The Exodar's hull is repaired. It can now be entered again.";
+    protected override string RewardFlavour => "The Exodar's hull is repaired. It can now be entered again.";
 
     /// <inheritdoc/>
-    protected override string FailurePopup => "The Exodar is destroyed. It can never be repaired again.";
+    protected override string PenaltyFlavour => "The Exodar is destroyed. It can never be repaired again.";
 
     /// <inheritdoc/>
     protected override string RewardDescription =>

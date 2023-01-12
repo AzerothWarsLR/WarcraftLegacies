@@ -38,7 +38,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
     }
 
     /// <inheritdoc />
-    protected override string CompletionPopup =>
+    protected override string RewardFlavour =>
       "Arthas has ascended the Frozen Throne itself and shattered Ner'zhul's frozen prison. Ner'zhul and Arthas are now joined, body and soul, into one being: the god-like Lich King.";
 
     /// <inheritdoc />

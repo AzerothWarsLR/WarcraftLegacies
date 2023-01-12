@@ -38,7 +38,7 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
     }
 
     /// <inheritdoc/>
-    protected override string CompletionPopup =>
+    protected override string RewardFlavour =>
       "The people of the Eastern Kingdoms have been united under the banner of Lordaeron. Long live High King Varian Wrynn!";
 
     /// <inheritdoc/>

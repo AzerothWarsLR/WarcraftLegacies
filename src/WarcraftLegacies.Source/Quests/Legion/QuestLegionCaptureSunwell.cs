@@ -16,7 +16,7 @@ namespace WarcraftLegacies.Source.Quests.Legion
       ResearchId = FourCC("R054");
     }
 
-    protected override string CompletionPopup =>
+    protected override string RewardFlavour =>
       "The Sunwell has been captured by the Scourge. It now writhes with necromantic energy.";
 
     protected override string RewardDescription => "A research improving your Dreadlords";

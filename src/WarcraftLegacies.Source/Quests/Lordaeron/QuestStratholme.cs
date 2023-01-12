@@ -40,7 +40,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
     }
 
     /// <inheritdoc/>
-    protected override string CompletionPopup =>
+    protected override string RewardFlavour =>
       "Stratholme has been liberated, and its military is now free to assist the Kingdom of Lordaeron.";
     /// <inheritdoc/>
     protected override string RewardDescription => "Control of all units in Stratholme";

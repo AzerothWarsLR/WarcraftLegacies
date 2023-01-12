@@ -44,7 +44,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
     }
 
     /// <inheritdoc/>
-    protected override string CompletionPopup =>
+    protected override string RewardFlavour =>
       "The Capital City of Lordaeron has been literated.";
 
     /// <inheritdoc/>

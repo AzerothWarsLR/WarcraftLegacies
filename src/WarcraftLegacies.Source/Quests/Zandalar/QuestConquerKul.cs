@@ -41,13 +41,13 @@ namespace WarcraftLegacies.Source.Quests.Zandalar
     }
 
     /// <inheritdoc/>
-    protected override string CompletionPopup => "Before setting sails we need to conquer Kul'tiras";
+    protected override string RewardFlavour => "Before setting sails we need to conquer Kul'tiras";
 
     /// <inheritdoc/>>
     protected override string RewardDescription => "Unlock shipyards";
 
     /// <inheritdoc/>
-    protected override string FailurePopup => "Zandalar has fallen.";
+    protected override string PenaltyFlavour => "Zandalar has fallen.";
 
     /// <inheritdoc/>
     protected override string PenaltyDescription =>

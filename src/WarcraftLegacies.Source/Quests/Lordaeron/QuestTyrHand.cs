@@ -35,7 +35,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
     }
 
     /// <inheritdoc />
-    protected override string CompletionPopup => "The city-fortress of Tyr's Hand has decided to join us!";
+    protected override string RewardFlavour => "The city-fortress of Tyr's Hand has decided to join us!";
 
     /// <inheritdoc />
     protected override string RewardDescription => "Control of all units in Tyr's Hand";

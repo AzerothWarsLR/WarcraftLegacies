@@ -63,7 +63,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
     }
 
     /// <inheritdoc />
-    protected override string CompletionPopup =>
+    protected override string RewardFlavour =>
       "The plague has been unleashed! The citizens of Lordaeron are quickly transforming into mindless zombies.";
 
     /// <inheritdoc />

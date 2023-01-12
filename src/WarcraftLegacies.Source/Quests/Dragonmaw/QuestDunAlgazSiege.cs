@@ -23,7 +23,7 @@ namespace WarcraftLegacies.Source.Quests.Dragonmaw
     }
 
     /// <inheritdoc />
-    protected override string CompletionPopup =>
+    protected override string RewardFlavour =>
       "Zaela emerges victorious, having pillaged Thelsamar, uncovering great treasures to bring back to the clan.";
 
     /// <inheritdoc />

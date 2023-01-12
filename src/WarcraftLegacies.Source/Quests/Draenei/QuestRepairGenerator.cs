@@ -23,7 +23,7 @@ namespace WarcraftLegacies.Source.Quests.Draenei
     }
 
     /// <inheritdoc/>
-    protected override string CompletionPopup =>
+    protected override string RewardFlavour =>
       "The Exodar's core has been rebuilt - the Crystal Protectors around it now shield it from any harm.";
 
     /// <inheritdoc/>

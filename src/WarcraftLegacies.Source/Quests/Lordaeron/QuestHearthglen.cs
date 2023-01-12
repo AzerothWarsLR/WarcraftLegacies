@@ -34,7 +34,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
     }
 
     /// <inheritdoc />
-    protected override string CompletionPopup => "The village of Hearthglen has decided to join Arthas";
+    protected override string RewardFlavour => "The village of Hearthglen has decided to join Arthas";
 
     /// <inheritdoc />
     protected override string RewardDescription => "Control of all units in Hearthglen";

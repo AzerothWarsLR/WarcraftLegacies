@@ -21,7 +21,7 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
       ResearchId = FourCC("R016");
     }
     
-    protected override string CompletionPopup =>
+    protected override string RewardFlavour =>
       "Khadgar has been freed from his confines under the Black Temple, and he is now free to serve the Kingdom of Stormwind.";
 
     protected override string RewardDescription => "You can summon Khadgar from the Altar of Kings";

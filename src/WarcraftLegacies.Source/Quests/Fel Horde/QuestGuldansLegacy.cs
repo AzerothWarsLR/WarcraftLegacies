@@ -8,7 +8,7 @@ namespace WarcraftLegacies.Source.Quests.Fel_Horde
     protected override string RewardDescription =>
       "Unlock the Blood Runes and Demonic construction researches in the War Mill";
 
-    protected override string CompletionPopup =>
+    protected override string RewardFlavour =>
       "Gul'dan's remains have been located within the Tomb of Sargeras. His eldritch knowledge may now be put to purpose.";
 
     public QuestGuldansLegacy() : base("Gul'dans Legacy",

@@ -35,7 +35,7 @@ namespace WarcraftLegacies.Source.Quests.Naga
     }
 
     /// <inheritdoc />
-    protected override string CompletionPopup => "The forces of Outland are now under Illidan's command.";
+    protected override string RewardFlavour => "The forces of Outland are now under Illidan's command.";
 
     /// <inheritdoc />
     protected override string RewardDescription => $"Gain control of the Black Temple";

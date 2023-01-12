@@ -21,7 +21,7 @@ namespace WarcraftLegacies.Source.Quests.Goblin
       ResearchId = FourCC("R07F");
     }
 
-    protected override string CompletionPopup => "With all the Goblin towns united, a new empire rises!";
+    protected override string RewardFlavour => "With all the Goblin towns united, a new empire rises!";
 
     protected override string RewardDescription => "Unlock the Intercontinental Artillery";
   }

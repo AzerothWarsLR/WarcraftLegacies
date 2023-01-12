@@ -44,7 +44,7 @@ namespace WarcraftLegacies.Source.Quests.Druids
     }
 
     /// <inheritdoc />
-    protected override string CompletionPopup => "Malfurion has emerged from his deep slumber in the Barrow Den.";
+    protected override string RewardFlavour => "Malfurion has emerged from his deep slumber in the Barrow Den.";
 
     /// <inheritdoc />
     protected override string RewardDescription => "Gain Nordrassil, the hero Malfurion, and the artifact G'hanir";

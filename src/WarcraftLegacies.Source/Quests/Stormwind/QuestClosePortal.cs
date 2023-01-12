@@ -35,7 +35,7 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
       };
     }
 
-    protected override string CompletionPopup => "Khadgar has closed the Dark Portal definately";
+    protected override string RewardFlavour => "Khadgar has closed the Dark Portal definately";
 
     protected override string RewardDescription => "Close the Dark Portal from both sides";
 

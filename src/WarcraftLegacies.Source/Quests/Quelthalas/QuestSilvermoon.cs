@@ -45,7 +45,7 @@ namespace WarcraftLegacies.Source.Quests.Quelthalas
     }
 
     //Todo: bad flavour
-    protected override string CompletionPopup =>
+    protected override string RewardFlavour =>
       "Silvermoon siege has been lifted, and its military is now free to assist the Alliance.";
 
     protected override string RewardDescription =>

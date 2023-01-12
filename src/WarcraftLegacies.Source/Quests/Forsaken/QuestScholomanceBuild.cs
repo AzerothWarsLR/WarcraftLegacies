@@ -26,7 +26,7 @@ namespace WarcraftLegacies.Source.Quests.Forsaken
     }
 
     //Todo: bad flavour
-    protected override string CompletionPopup => "Putress is now trainable.";
+    protected override string RewardFlavour => "Putress is now trainable.";
 
     protected override string RewardDescription => "Putress is trainable at the altar";
     

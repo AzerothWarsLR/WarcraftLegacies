@@ -24,7 +24,7 @@ namespace WarcraftLegacies.Source.Quests.Druids
     }
 
 
-    protected override string CompletionPopup =>
+    protected override string RewardFlavour =>
       "With Northrend finally free of the Lich King's influence, the time is ripe to regrow Andrassil in the hope that it can help reclaim this barren land.";
 
     protected override string RewardDescription =>

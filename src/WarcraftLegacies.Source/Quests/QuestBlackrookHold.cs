@@ -30,7 +30,7 @@ namespace WarcraftLegacies.Source.Quests
     }
 
     /// <inheritdoc />
-    protected override string CompletionPopup =>
+    protected override string RewardFlavour =>
       "The Broken Isles have been secured, and Black Rook Hold's garrison has been re-established.";
 
     /// <inheritdoc />

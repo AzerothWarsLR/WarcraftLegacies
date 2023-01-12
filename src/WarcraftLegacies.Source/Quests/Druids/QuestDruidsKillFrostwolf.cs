@@ -12,7 +12,7 @@ namespace WarcraftLegacies.Source.Quests.Druids
     private const int RESEARCH_ID = Constants.UPGRADE_R044_QUEST_COMPLETED_NATURAL_CONTEST_DRUIDS;
     private const int ELEMENTAL_GUARDIAN_ID = Constants.UNIT_E00X_ELEMENTAL_GUARDIAN_DRUIDS_DEMI;
 
-    protected override string CompletionPopup =>
+    protected override string RewardFlavour =>
       "The Frostwolves have been driven from Kalimdor. Their departure reveals the existence of a powerful nature spirit that now heeds the call of the Druids.";
 
     protected override string RewardDescription => "The demihero " + GetObjectName(ELEMENTAL_GUARDIAN_ID);

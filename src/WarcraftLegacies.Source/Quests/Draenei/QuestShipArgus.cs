@@ -32,7 +32,7 @@ namespace WarcraftLegacies.Source.Quests.Draenei
     }
 
     /// <inheritdoc />
-    protected override string CompletionPopup => "Velen has opened the portal to Argus";
+    protected override string RewardFlavour => "Velen has opened the portal to Argus";
 
     /// <inheritdoc />
     protected override string RewardDescription => "Open a Portal between Tempest Keep and Argus";

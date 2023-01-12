@@ -26,7 +26,7 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
       Required = true;
     }
     /// <inheritdoc/>
-    protected override string CompletionPopup =>
+    protected override string RewardFlavour =>
       "The Frostwolves have been ousted from Kalimdor, along with their Tauren allies. They will !be missed.";
 
     /// <inheritdoc/>

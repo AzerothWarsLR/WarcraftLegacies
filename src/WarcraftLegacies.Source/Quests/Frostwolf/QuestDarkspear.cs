@@ -30,7 +30,7 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
     }
 
     /// <inheritdoc />
-    protected override string CompletionPopup => "Vol'jin has made contact with the Darkspear trolls on the Echo Isles. They are now yours to command!";
+    protected override string RewardFlavour => "Vol'jin has made contact with the Darkspear trolls on the Echo Isles. They are now yours to command!";
 
     /// <inheritdoc />
     protected override string RewardDescription => "Unlock the troll base on the Echo Isles.";

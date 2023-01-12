@@ -34,7 +34,7 @@ namespace WarcraftLegacies.Source.Quests.Zandalar
     }
 
     /// <inheritdoc/>
-    protected override string CompletionPopup =>
+    protected override string RewardFlavour =>
       "The City of Gold is now yours to command and has joined the Zandalari";
 
     /// <inheritdoc/>

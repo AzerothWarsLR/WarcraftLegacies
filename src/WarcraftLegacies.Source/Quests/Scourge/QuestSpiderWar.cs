@@ -39,7 +39,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
       Required = true;
     }
 
-    protected override string CompletionPopup =>
+    protected override string RewardFlavour =>
       "Northrend and the Icecrown Citadel is now under full control of the Lich King and the Scourge.";
 
     protected override string RewardDescription =>

@@ -43,7 +43,7 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
     }
 
     /// <inheritdoc/>
-    protected override string FailurePopup =>
+    protected override string PenaltyFlavour =>
       "You failed to reunite the Kul'Tiran kingdom. It will never rise to its former glory again.";
 
     /// <inheritdoc/>
@@ -51,7 +51,7 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
       "The Proudmoore Capital Ship is lost forever.";
 
     /// <inheritdoc/>
-    protected override string CompletionPopup => "The Kul'Tiran kingdom has been united once more. The Proudmoore Capital Ship is now ready to set sail!";
+    protected override string RewardFlavour => "The Kul'Tiran kingdom has been united once more. The Proudmoore Capital Ship is now ready to set sail!";
 
     /// <inheritdoc/>
     protected override string RewardDescription =>

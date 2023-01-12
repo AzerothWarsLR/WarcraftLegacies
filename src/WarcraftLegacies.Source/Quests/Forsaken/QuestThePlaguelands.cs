@@ -24,7 +24,7 @@ namespace WarcraftLegacies.Source.Quests.Forsaken
     }
 
     //Todo: includes mechanics, should just be flavour
-    protected override string CompletionPopup =>
+    protected override string RewardFlavour =>
       "The ravaged lands of Lordaeron are now under the control of the Forsaken and able to train up to 4 Val'kyr join their ranks. 500 gold was plundered.";
 
     protected override string RewardDescription => "Enable 4 Val'kyr to be raised and grants 500 gold";

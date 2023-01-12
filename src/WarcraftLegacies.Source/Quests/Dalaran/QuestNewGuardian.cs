@@ -19,7 +19,7 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
       AddObjective(new ObjectiveLegendHasArtifact(LegendDalaran.LegendJaina, bookOfMedivh));
     }
 
-    protected override string CompletionPopup =>
+    protected override string RewardFlavour =>
       "Dalaran has empowered Jaina to be the new Guardian of Tirisfal, endowing her with a portion of the Council of Tirisfal's power.";
 
     protected override string RewardDescription =>

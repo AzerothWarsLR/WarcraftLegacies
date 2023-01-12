@@ -28,7 +28,7 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
       ResearchId = FourCC("R039");
     }
 
-    protected override string CompletionPopup =>
+    protected override string RewardFlavour =>
       "Honor Hold is now free from the constant looming threat of Hellfire Citadel, and have finally been reconnected with their Alliance from Azeroth.";
 
     protected override string RewardDescription =>

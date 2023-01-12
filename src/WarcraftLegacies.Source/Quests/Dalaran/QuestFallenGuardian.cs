@@ -21,7 +21,7 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
       ResearchId = FourCC("R04K");
     }
 
-    protected override string CompletionPopup =>
+    protected override string RewardFlavour =>
       "Medivh's spirit has been cleansed of Sargeras' influence, allowing him to return to Azeroth for a time.";
 
     protected override string RewardDescription => "You can summon Medivh from the Altar of Knowledge";

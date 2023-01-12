@@ -43,7 +43,7 @@ namespace WarcraftLegacies.Source.Quests.Scarlet
 
     //Todo: bad flavour
     /// <inheritdoc />
-    protected override string CompletionPopup =>
+    protected override string RewardFlavour =>
       "The Scarlet Monastery Hand is complete and ready to join the Alliance.";
 
     /// <inheritdoc />

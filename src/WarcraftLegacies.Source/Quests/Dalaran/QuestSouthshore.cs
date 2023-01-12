@@ -37,7 +37,7 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
     }
 
     /// <inheritdoc />
-    protected override string CompletionPopup => "The Murlocs have been defeated, Southshore is safe.";
+    protected override string RewardFlavour => "The Murlocs have been defeated, Southshore is safe.";
 
     /// <inheritdoc />
     protected override string RewardDescription => "Control of all units in Southshore";

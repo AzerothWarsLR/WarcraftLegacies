@@ -21,7 +21,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
     }
 
     /// <inheritdoc />
-    protected override string CompletionPopup
+    protected override string RewardFlavour
     {
       get
       {

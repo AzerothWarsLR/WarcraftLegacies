@@ -42,7 +42,7 @@ namespace WarcraftLegacies.Source.Quests.Warsong
     private readonly ObjectiveAnyUnitInRect _anyUnitInRect;
 
     /// <inheritdoc/>
-    protected override string CompletionPopup =>
+    protected override string RewardFlavour =>
       "The Highborne are no longer implicitly defended by the Night Elven presence at Feathermoon Stronghold. The Horde unleashes their full might against these Night Elven arcanists.";
 
     /// <inheritdoc/>

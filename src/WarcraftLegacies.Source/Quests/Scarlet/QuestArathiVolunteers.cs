@@ -19,7 +19,7 @@ namespace WarcraftLegacies.Source.Quests.Scarlet
     }
 
     //Todo: bad flavour
-    protected override string CompletionPopup => "The Arathi have been convinced to join the fight.";
+    protected override string RewardFlavour => "The Arathi have been convinced to join the fight.";
 
     protected override string RewardDescription => "Enable to train Mounted Archers";
   }

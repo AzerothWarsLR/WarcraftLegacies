@@ -22,7 +22,7 @@ namespace WarcraftLegacies.Source.Quests.Warsong
       AddObjective(new ObjectiveResearch(ResearchId, FourCC("o02T")));
     }
 
-    protected override string CompletionPopup =>
+    protected override string RewardFlavour =>
       "The Warsong Clan has sail for the icy shores of Northrend and up a formidable encampment at Borean Tundra.";
 
     protected override string RewardDescription => "A new base at Borean Tundra in Northrend";

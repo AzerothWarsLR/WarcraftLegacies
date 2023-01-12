@@ -27,7 +27,7 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
     }
 
     /// <inheritdoc/>
-    protected override string CompletionPopup =>
+    protected override string RewardFlavour =>
       "With the seas now secure, the Ember Order can be reformed and Lucille Waycrest has joined the Proudmoor";
 
     /// <inheritdoc/>

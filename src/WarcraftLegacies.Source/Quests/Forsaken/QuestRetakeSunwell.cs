@@ -15,7 +15,7 @@ namespace WarcraftLegacies.Source.Quests.Forsaken
       AddObjective(new ObjectiveControlCapital(LegendQuelthalas.LegendSunwell, false));
     }
     
-    protected override string CompletionPopup => "Sylvanas and all the Banshee Hall units gain 500 bonus hit points";
+    protected override string RewardFlavour => "Sylvanas and all the Banshee Hall units gain 500 bonus hit points";
 
     protected override string RewardDescription =>
       "Sylvanas and her Banshees will be empowered with 500 additional hitpoints each";

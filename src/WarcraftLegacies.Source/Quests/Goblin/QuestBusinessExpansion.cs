@@ -40,7 +40,7 @@ namespace WarcraftLegacies.Source.Quests.Goblin
     }
 
     /// <inheritdoc />
-    protected override string CompletionPopup => "Our trade empire has grown large enough to earn the attention of the Trade Princes of Kezan. Their investments are already flowing in, and the isle of Kezan is now under Bilgewater control.";
+    protected override string RewardFlavour => "Our trade empire has grown large enough to earn the attention of the Trade Princes of Kezan. Their investments are already flowing in, and the isle of Kezan is now under Bilgewater control.";
 
     /// <inheritdoc />
     protected override string RewardDescription => "You unlock Kezan and can now train Traders";

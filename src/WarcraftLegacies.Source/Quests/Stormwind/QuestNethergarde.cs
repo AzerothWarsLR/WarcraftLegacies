@@ -25,7 +25,7 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
     }
 
     /// <inheritdoc />
-    protected override string CompletionPopup => "Varian has come to relieve the Nethergarde garrison.";
+    protected override string RewardFlavour => "Varian has come to relieve the Nethergarde garrison.";
 
     /// <inheritdoc />
     protected override string RewardDescription => "You gain control of Nethergarde";

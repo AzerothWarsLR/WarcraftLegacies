@@ -33,7 +33,7 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
       Required = true;
     }
 
-    protected override string CompletionPopup => "The Gnolls have been defeated, Goldshire is safe.";
+    protected override string RewardFlavour => "The Gnolls have been defeated, Goldshire is safe.";
 
     protected override string RewardDescription => "Control of all units in Goldshire";
 

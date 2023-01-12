@@ -34,7 +34,7 @@ namespace WarcraftLegacies.Source.Quests.Gilneas
     }
 
     /// <inheritdoc/>
-    protected override string CompletionPopup => "Every worgen has been eliminated, the curse is lifting!";
+    protected override string RewardFlavour => "Every worgen has been eliminated, the curse is lifting!";
 
     /// <inheritdoc/>
     protected override string RewardDescription => "Gain control of the Greymane Wall and Gilneas City.";

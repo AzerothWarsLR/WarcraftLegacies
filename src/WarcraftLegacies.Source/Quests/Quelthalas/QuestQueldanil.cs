@@ -24,7 +24,7 @@ namespace WarcraftLegacies.Source.Quests.Quelthalas
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
     }
 
-    protected override string CompletionPopup =>
+    protected override string RewardFlavour =>
       "Quel'thalas has finally reunited with its lost rangers in the Hinterlands.";
 
     protected override string RewardDescription => "Control of Quel'danil Lodge";

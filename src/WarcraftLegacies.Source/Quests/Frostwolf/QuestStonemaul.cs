@@ -39,7 +39,7 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
     }
 
     //Todo: bad flavour
-    protected override string CompletionPopup =>
+    protected override string RewardFlavour =>
       "Korghal has been defeated, Rexxar has joined the Frostwolf!";
 
     protected override string RewardDescription => "Control of all buildings in Stonemaul and Rexxar is now trainable at the Altar";

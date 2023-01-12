@@ -21,7 +21,7 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
       Global = true;
     }
 
-    protected override string CompletionPopup =>
+    protected override string RewardFlavour =>
       "The Nexus powers have been absorbed by Jaina";
 
     protected override string RewardDescription =>

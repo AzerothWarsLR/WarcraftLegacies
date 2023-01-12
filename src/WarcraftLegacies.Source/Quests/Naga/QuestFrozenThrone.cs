@@ -16,7 +16,7 @@ namespace WarcraftLegacies.Source.Quests.Naga
       Global = true;
     }
 
-    protected override string CompletionPopup =>
+    protected override string RewardFlavour =>
       "As a reward for his mission, Illidan and his followers have been welcomed into the ranks of the Burning Legion";
 
     protected override string RewardDescription => "The Illidari team will join the Burning Legion in their team";

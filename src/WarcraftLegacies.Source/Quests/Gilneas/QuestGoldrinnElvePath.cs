@@ -27,7 +27,7 @@ namespace WarcraftLegacies.Source.Quests.Gilneas
     }
 
     /// <inheritdoc/>
-    protected override string CompletionPopup => "Goldrinn has joined Gilneas.";
+    protected override string RewardFlavour => "Goldrinn has joined Gilneas.";
 
     /// <inheritdoc/>
     protected override string RewardDescription => "Goldrinn will be trainable at the altar and you will join the Night Elves.";

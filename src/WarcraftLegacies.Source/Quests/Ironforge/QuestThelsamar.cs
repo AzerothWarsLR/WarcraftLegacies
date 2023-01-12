@@ -31,7 +31,7 @@ namespace WarcraftLegacies.Source.Quests.Ironforge
       Required = true;
     }
 
-    protected override string CompletionPopup => "The Murlocs have been defeated, Thelsamar will join your cause.";
+    protected override string RewardFlavour => "The Murlocs have been defeated, Thelsamar will join your cause.";
 
     protected override string RewardDescription => "Control of all units in Thelsamar";
 

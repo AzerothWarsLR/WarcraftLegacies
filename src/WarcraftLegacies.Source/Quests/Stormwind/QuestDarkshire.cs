@@ -23,7 +23,7 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
       Required = true;
     }
 
-    protected override string CompletionPopup =>
+    protected override string RewardFlavour =>
       "Darkshire has been liberated, and its military is now free to assist Stormwind.";
 
     protected override string RewardDescription => "Control of all units in Darkshire";

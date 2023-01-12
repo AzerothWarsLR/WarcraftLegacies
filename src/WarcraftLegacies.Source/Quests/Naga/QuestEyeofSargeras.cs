@@ -25,7 +25,7 @@ namespace WarcraftLegacies.Source.Quests.Naga
     }
 
     /// <inheritdoc/>
-    protected override string CompletionPopup =>
+    protected override string RewardFlavour =>
       "The Eye of Sargeras' power needs to be channeled by powerful arcanists, the Summoners will be the perfect vessels.";
 
     /// <inheritdoc/>

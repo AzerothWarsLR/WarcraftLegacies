@@ -37,7 +37,7 @@ namespace WarcraftLegacies.Source.Quests.Dragonmaw
     }
 
     /// <inheritdoc />
-    protected override string CompletionPopup =>
+    protected override string RewardFlavour =>
       "The portal to Kalimdor will open at turn 9! Once it does, hurry! it will only last for 60 seconds.";
 
     /// <inheritdoc />

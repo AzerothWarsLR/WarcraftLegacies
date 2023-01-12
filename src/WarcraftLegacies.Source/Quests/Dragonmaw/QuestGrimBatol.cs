@@ -46,7 +46,7 @@ namespace WarcraftLegacies.Source.Quests.Dragonmaw
     }
 
     //Todo: bad flavour
-    protected override string CompletionPopup =>
+    protected override string RewardFlavour =>
       "Grim Batol is now under our control, and its military is now free to assist the Dragonmaw.";
 
     protected override string RewardDescription =>

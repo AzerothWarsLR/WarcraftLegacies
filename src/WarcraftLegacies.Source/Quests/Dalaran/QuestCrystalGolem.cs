@@ -20,7 +20,7 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
       ResearchId = FourCC("R045");
     }
 
-    protected override string CompletionPopup => "Dalaran's Earth Golems have been infused with living crystal.";
+    protected override string RewardFlavour => "Dalaran's Earth Golems have been infused with living crystal.";
 
     protected override string RewardDescription => "Transform your Earth Golems into Crystal Golems";
 

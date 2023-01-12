@@ -19,7 +19,7 @@ namespace WarcraftLegacies.Source.Quests.Legion
       ResearchId = Constants.UPGRADE_R042_QUEST_COMPLETED_INFERNAL_FOOTHOLD_LEGION;
     }
 
-    protected override string CompletionPopup => "The Legion has secured a foothold on Azeroth.";
+    protected override string RewardFlavour => "The Legion has secured a foothold on Azeroth.";
 
     protected override string RewardDescription =>
       "You can build the Infernal Machine Factory and summon Anetheron from the " + GetObjectName(AltarId);

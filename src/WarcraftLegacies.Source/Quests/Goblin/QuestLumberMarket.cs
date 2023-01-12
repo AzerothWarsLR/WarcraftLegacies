@@ -9,7 +9,7 @@ namespace WarcraftLegacies.Source.Quests.Goblin
 {
   public sealed class QuestLumberMarket : QuestData
   {
-    protected override string CompletionPopup => "The World Tree is ours, our lumber supplies will never run out!";
+    protected override string RewardFlavour => "The World Tree is ours, our lumber supplies will never run out!";
 
     protected override string RewardDescription =>
       "Shredders will gain cleaving attack and 500 hit points. You will gain 30000 lumber.";

@@ -27,7 +27,7 @@ namespace WarcraftLegacies.Source.Quests.Druids
       SetHeroXP(_sleepingTortolla, LegendDruids.LegendTortolla.StartingXp, false);
     }
 
-    protected override string CompletionPopup => "Tortolla has finally awoken from his ancient slumber.";
+    protected override string RewardFlavour => "Tortolla has finally awoken from his ancient slumber.";
 
     protected override string RewardDescription => "You can summon Tortolla from the Altar of Elders";
 

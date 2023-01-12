@@ -34,7 +34,7 @@ namespace WarcraftLegacies.Source.Quests.Ironforge
     }
 
     /// <inheritdoc />
-    protected override string CompletionPopup =>
+    protected override string RewardFlavour =>
       "The peace talk were succesful, The Dark Iron will join the Dwarven Empire.";
 
     /// <inheritdoc />

@@ -37,7 +37,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
     }
 
     /// <inheritdoc/>
-    protected override string CompletionPopup => "Drak'tharon Keep is now under the control of the Scourge.";
+    protected override string RewardFlavour => "Drak'tharon Keep is now under the control of the Scourge.";
 
     /// <inheritdoc/>
     protected override string RewardDescription => "Control of all buildings in Drak'tharon Keep";

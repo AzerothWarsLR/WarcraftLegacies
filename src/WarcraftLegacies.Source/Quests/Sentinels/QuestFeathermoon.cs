@@ -40,7 +40,7 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
     }
 
     /// <inheritdoc />
-    protected override string CompletionPopup =>
+    protected override string RewardFlavour =>
       "Feathermoon Stronghold has been relieved and has joined the Sentinels in their war effort";
 
     /// <inheritdoc />

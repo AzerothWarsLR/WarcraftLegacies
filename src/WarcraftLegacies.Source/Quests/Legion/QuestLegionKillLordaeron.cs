@@ -17,7 +17,7 @@ namespace WarcraftLegacies.Source.Quests.Legion
       AddObjective(new ObjectiveCapitalDead(LegendLordaeron.TyrsHand));
     }
 
-    protected override string CompletionPopup =>
+    protected override string RewardFlavour =>
       "The Kingdom of Lordaeron has fallen, eliminating Azeroth's vanguard against the Legion.";
 
     protected override string RewardDescription => "Tichondrius gains 15 Strength, Agility and Intelligence";

@@ -37,7 +37,7 @@ namespace WarcraftLegacies.Source.Quests.Ironforge
       Required = true;
     }
 
-    protected override string CompletionPopup =>
+    protected override string RewardFlavour =>
       "The Dwarven Empire is re-united again, Ironforge is ready for war again.";
 
     protected override string RewardDescription => "Control of all units in Ironforge";

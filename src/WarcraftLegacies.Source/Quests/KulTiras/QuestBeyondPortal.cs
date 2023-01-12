@@ -25,7 +25,7 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
     }
 
     /// <inheritdoc/>
-    protected override string CompletionPopup => "The orcs are no more and we can now train Fusillier.";
+    protected override string RewardFlavour => "The orcs are no more and we can now train Fusillier.";
 
     /// <inheritdoc/>
     protected override string RewardDescription => "You will be able to train Fusillier from the Castle";

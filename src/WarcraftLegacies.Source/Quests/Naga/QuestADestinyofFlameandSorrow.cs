@@ -24,7 +24,7 @@ namespace WarcraftLegacies.Source.Quests.Naga
     }
 
     /// <inheritdoc/>
-    protected override string CompletionPopup =>
+    protected override string RewardFlavour =>
       "The Skull of Gul'dan has given Illidan Demonic power beyond measure";
 
     /// <inheritdoc/>

@@ -31,7 +31,7 @@ namespace WarcraftLegacies.Source.Quests.Gilneas
     }
 
     /// <inheritdoc/>
-    protected override string CompletionPopup => "Duskhaven has been liberated.";
+    protected override string RewardFlavour => "Duskhaven has been liberated.";
 
     /// <inheritdoc/>
     protected override string RewardDescription => "Control of all buildings in Duskhaven.";

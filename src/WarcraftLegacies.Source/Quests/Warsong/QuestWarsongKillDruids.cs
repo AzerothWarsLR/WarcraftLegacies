@@ -14,7 +14,7 @@ namespace WarcraftLegacies.Source.Quests.Warsong
     private const int ExperienceReward = 10000;
 
     /// <inheritdoc/>
-    protected override string CompletionPopup => "Nordrassil has been captured. The Warsong is supreme!";
+    protected override string RewardFlavour => "Nordrassil has been captured. The Warsong is supreme!";
 
     /// <inheritdoc/>
     protected override string RewardDescription =>

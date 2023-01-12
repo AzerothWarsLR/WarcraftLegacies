@@ -28,7 +28,7 @@ namespace WarcraftLegacies.Source.Quests.Naga
     }
 
     /// <inheritdoc/>
-    protected override string CompletionPopup =>
+    protected override string RewardFlavour =>
       "Now that the sea floor is under Illidan's control, Lady Vashj's champion Lord Naj'entus has joined Illidan's forces.";
 
     /// <inheritdoc/>

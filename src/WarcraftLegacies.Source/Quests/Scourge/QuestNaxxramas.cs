@@ -33,7 +33,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
     }
 
     /// <inheritdoc />
-    protected override string CompletionPopup =>
+    protected override string RewardFlavour =>
       "The Naxxramas has now been raised and under the control of the Scourge.";
 
     /// <inheritdoc />

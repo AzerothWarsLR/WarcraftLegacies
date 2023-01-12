@@ -26,7 +26,7 @@ namespace WarcraftLegacies.Source.Quests.Warsong
 
     //todo: bad flavour
     /// <inheritdoc />
-    protected override string CompletionPopup => "Grom has found the body of Gul'dan.";
+    protected override string RewardFlavour => "Grom has found the body of Gul'dan.";
 
     /// <inheritdoc />
     protected override string RewardDescription =>

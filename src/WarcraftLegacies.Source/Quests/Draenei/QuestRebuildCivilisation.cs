@@ -38,7 +38,7 @@ namespace WarcraftLegacies.Source.Quests.Draenei
     }
 
     /// <inheritdoc/>
-    protected override string CompletionPopup => "The Exodar is secure and Maraad joins the Draenai.";
+    protected override string RewardFlavour => "The Exodar is secure and Maraad joins the Draenai.";
 
     /// <inheritdoc/>
     protected override string RewardDescription => "Gain 500 Gold, 200 Lumber and Maraad is now trainable at the altar.";

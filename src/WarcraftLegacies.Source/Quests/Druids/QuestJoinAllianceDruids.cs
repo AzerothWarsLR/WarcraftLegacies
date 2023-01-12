@@ -17,7 +17,7 @@ namespace WarcraftLegacies.Source.Quests.Druids
       AddObjective(new ObjectiveCastSpell(FourCC("A0IG"), true));
     }
     
-    protected override string CompletionPopup => "The Druids have joined the Alliance";
+    protected override string RewardFlavour => "The Druids have joined the Alliance";
 
     protected override string RewardDescription => "Join the Alliance team";
     

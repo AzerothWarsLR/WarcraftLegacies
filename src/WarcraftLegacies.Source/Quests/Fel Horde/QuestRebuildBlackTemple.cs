@@ -35,7 +35,7 @@ namespace WarcraftLegacies.Source.Quests.Fel_Horde
     }
 
     /// <inheritdoc/>
-    protected override string CompletionPopup => "Black Temple has been rebuilt to its former glory.";
+    protected override string RewardFlavour => "Black Temple has been rebuilt to its former glory.";
 
     /// <inheritdoc/>
     protected override string RewardDescription => "Gain 800 Gold and 200 Lumber";

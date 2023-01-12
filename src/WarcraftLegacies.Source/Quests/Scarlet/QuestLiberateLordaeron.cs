@@ -40,7 +40,7 @@ namespace WarcraftLegacies.Source.Quests.Scarlet
     }
 
 
-    protected override string CompletionPopup => "The lands of Lordaeron have been purged from Undeath and Corruption, the Scarlet can now expand North";
+    protected override string RewardFlavour => "The lands of Lordaeron have been purged from Undeath and Corruption, the Scarlet can now expand North";
 
     protected override string RewardDescription =>
       "Unlock New Hearthglen in Northrend and the Scarlet Harbor";

@@ -17,7 +17,7 @@ namespace WarcraftLegacies.Source.Quests.Warsong
       AddObjective(new ObjectiveControlCapital(LegendNeutral.FountainOfBlood, false));
     }
     
-    protected override string CompletionPopup =>
+    protected override string RewardFlavour =>
       "The Fountain of Blood is under Warsong control. As the orcs drink from it, they feel a a familiar fury awake within them.";
 
     protected override string RewardDescription =>

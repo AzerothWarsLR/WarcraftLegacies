@@ -20,7 +20,7 @@ namespace WarcraftLegacies.Source.Quests.Forsaken
       AddObjective(new ObjectiveCapitalDead(LegendScourge.LegendLichking));
     }
 
-    protected override string CompletionPopup =>
+    protected override string RewardFlavour =>
       "With the Lich King eliminated, Sylvanas vengeance is finally complete. She has absorbed his power and has become the Banshee Queen";
 
     protected override string RewardDescription => "Sylvanas gains 20 intelligence, 20 strength and Chaos damage";

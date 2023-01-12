@@ -34,7 +34,7 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
     }
 
     //Todo: bad flavour
-    protected override string CompletionPopup =>
+    protected override string RewardFlavour =>
       "Lakeshire has been liberated, and its military is now free to assist Stormwind.";
 
     protected override string RewardDescription => "Control of all units in Lakeshire";

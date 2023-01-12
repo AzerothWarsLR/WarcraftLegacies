@@ -23,7 +23,7 @@ namespace WarcraftLegacies.Source.Quests.Forsaken
     }
 
     //Todo: bad flavour
-    protected override string CompletionPopup => "Enable up to 9 Val'kyr join their ranks.";
+    protected override string RewardFlavour => "Enable up to 9 Val'kyr join their ranks.";
 
     protected override string RewardDescription => "Enable 9 Val'kyr to be raised";
 

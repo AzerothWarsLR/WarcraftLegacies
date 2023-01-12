@@ -36,7 +36,7 @@ namespace WarcraftLegacies.Source.Quests.Zandalar
     }
 
     /// <inheritdoc/>
-    protected override string CompletionPopup =>
+    protected override string RewardFlavour =>
       $"Zul'farrak has fallen. The Sandfury trolls lend their might to the Zandalari.";
 
     /// <inheritdoc/>

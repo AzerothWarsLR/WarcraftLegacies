@@ -37,7 +37,7 @@ namespace WarcraftLegacies.Source.Quests.Dragonmaw
 
     //Todo: bad flavour
     /// <inheritdoc />
-    protected override string CompletionPopup =>
+    protected override string RewardFlavour =>
       "Dragonmaw Port has fallen under our control.";
 
     /// <inheritdoc />

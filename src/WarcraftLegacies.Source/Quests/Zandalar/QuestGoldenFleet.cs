@@ -24,7 +24,7 @@ namespace WarcraftLegacies.Source.Quests.Zandalar
     }
 
     /// <inheritdoc/>>
-    protected override string CompletionPopup => "Rastakhan is now trainable and Direhorn are available.";
+    protected override string RewardFlavour => "Rastakhan is now trainable and Direhorn are available.";
 
     /// <inheritdoc/>
     protected override string RewardDescription => "Rastakhan is trainable at the altar and Direhorns are trainable";

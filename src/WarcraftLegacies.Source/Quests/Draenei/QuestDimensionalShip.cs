@@ -65,7 +65,7 @@ namespace WarcraftLegacies.Source.Quests.Draenei
     }
 
     /// <inheritdoc/>
-    protected override string CompletionPopup =>
+    protected override string RewardFlavour =>
       "With the acquisition of a replacement power source, the Exodar's gemcrafters set to work reigniting the ship's planar engines. The Dimensional Generator can now now be used to travel the planes once more.";
 
     /// <inheritdoc/>

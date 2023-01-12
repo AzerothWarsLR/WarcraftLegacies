@@ -36,7 +36,7 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
     protected override string RewardDescription =>
       "Gain the Scepter of the Queen and turn all units in Dire Maul hostile";
 
-    protected override string CompletionPopup =>
+    protected override string RewardFlavour =>
       "The Highborne are no longer implicitly defended by the Night Elven presence at Feathermoon Stronghold. The Horde unleashes their full might against these Night Elven arcanists.";
 
     protected override void OnComplete(Faction completingFaction)

@@ -41,11 +41,11 @@ namespace WarcraftLegacies.Source.Quests.Quelthalas
     }
 
     /// <inheritdoc />
-    protected override string FailurePopup =>
+    protected override string PenaltyFlavour =>
       "The Sunwell has fallen. The survivors escape to Dalaran and name themselves the Blood Elves in remembrance of their fallen people.";
 
     /// <inheritdoc />
-    protected override string CompletionPopup =>
+    protected override string RewardFlavour =>
       "The Legion Nexus has been obliterated. A group of ambitious mages seize the opportunity to study the demons' magic, becoming the first Blood Mages.";
 
     /// <inheritdoc />

@@ -21,6 +21,6 @@ namespace WarcraftLegacies.Source.Quests.Legion
 
     protected override string RewardDescription => "With Argus finally under the Legion's control, the invasion of Azeroth can begin!";
     
-    protected override string CompletionPopup => "Enable to research Astral Walk from the Burning Citadel and build the Unholy Reliquary";
+    protected override string RewardFlavour => "Enable to research Astral Walk from the Burning Citadel and build the Unholy Reliquary";
   }
 }
