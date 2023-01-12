@@ -28,5 +28,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
     /// How long the spawned Plague Cauldrons should last.
     /// </summary>
     public float Duration { get; set; }
-  }
+
+    public List<Point> AttackTargets { get; init; } = new();
+}
 }

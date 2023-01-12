@@ -32,6 +32,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
     private readonly List<PlagueCauldronSummonParameter> _plagueCauldronSummonParameters;
     private readonly int _plagueCauldronUnitTypeId;
     private readonly List<Rectangle> _plagueRects;
+    private readonly List<Point> _attackTargets;
 
     /// <summary>
     /// When completed, the quest holder initiates the Plague, creating Plague Cauldrons around Lordaeron
@@ -47,6 +48,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
       _plagueCauldronUnitTypeId = plagueParameters.PlagueCauldronUnitTypeId;
       _plagueCauldronSummonParameters = plagueParameters.PlagueCauldronSummonParameters;
       _duration = plagueParameters.Duration;
+      _attackTargets = plagueParameters.AttackTargets;
       AddObjective(new ObjectiveEitherOf(
         new ObjectiveResearch(Constants.UPGRADE_R06I_PLAGUE_OF_UNDEATH_SCOURGE, FourCC("u000")),
         new ObjectiveTime(960)));
