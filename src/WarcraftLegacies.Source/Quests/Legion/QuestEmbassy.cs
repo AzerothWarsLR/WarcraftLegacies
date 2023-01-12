@@ -11,7 +11,7 @@ namespace WarcraftLegacies.Source.Quests.Legion
   {
     private static readonly int AltarId = FourCC("u01N");
 
-    public QuestEmbassy(Rectangle questRect1, Rectangle questRect2) : base("Infernal Weapons",
+    public QuestEmbassy(Rectangle questRect1, Rectangle questRect2) : base("Infernal Foothold",
       "A stronger foothold in this world will be required to field the Burning Legion's war machines and to in more of its lieutenants."
       , "ReplaceableTextures\\CommandButtons\\BTNDemonBlackCitadel.blp")
     {

@@ -19,13 +19,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
     public static void Setup()
     {
       SpellSystem.Register(new SingleTargetRecall(Constants.ABILITY_A0W8_RECALL_FROZEN_THRONE));
-      SpellSystem.Register(new WaygateOpen(Constants.ABILITY_A0NM_OPEN_NAXXRAMAS)
-      {
-        InteriorWaygateUnitTypeId = Constants.UNIT_H03V_ENTRANCE_PORTAL,
-        ExteriorWaygateUnitTypeId = Constants.UNIT_H05T_INSTANCE_ENTRANCE_PORTAL,
-        GetExteriorWaygatePosition = () => new Point(GetUnitX(GetTriggerUnit()) - 100, GetUnitY(GetTriggerUnit()) - 100),
-        GetInteriorWaygatePosition = () => Regions.NaxxramasInside.Center
-      });
+
       PassiveAbilityManager.Register(new PersistentSoul(Constants.UNIT_N009_REVENANT_SCOURGE,
         Constants.ABILITY_A05L_PERSISTENT_SOUL_SCOURGE_REVENANT)
       {

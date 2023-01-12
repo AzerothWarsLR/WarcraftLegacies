@@ -109,14 +109,6 @@ namespace WarcraftLegacies.Source.Setup.Legends
         if (LegendLichking.Unit.OwningPlayer() != Player(bj_PLAYER_NEUTRAL_VICTIM))
           LegendLichking.Unit.SetOwner(Player(bj_PLAYER_NEUTRAL_VICTIM));
       });
-
-      Naxxramas = new Capital
-      {
-        Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_U01X_HEART_OF_NAXXRAMAS_SCOURGE_NAXXRAMAS_INTERIOR)
-      };
-      CapitalManager.Register(Naxxramas);
-      SetUnitInvulnerable(Naxxramas.Unit, true);
-      SetUnitTimeScale(Naxxramas.Unit, 0);
     }
   }
 }

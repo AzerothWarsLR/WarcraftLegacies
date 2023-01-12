@@ -10778,10 +10778,34 @@ STRING 1796
 Train - Silithid Reaver
 }
 
+STRING 1797
+// Abilities: A0T5 (Legion Teleporters), Ubertip (Tooltip - Normal - Extended)
+{
+Teleporters will be activated when the Argus Incursion quest is completed. They are temporary structures that will destroy themselves after 20 turns. |n|nThey cannot be repaired or healed so use them well before then!
+}
+
 STRING 1798
 // Units: e00L (War Academy), Hotkey (Hotkey)
 {
 A
+}
+
+STRING 1799
+// Abilities: Ahlh (Improved Lumber Harvesting), Ubertip (Tooltip - Normal - Extended)
+{
+Increases the rate at which this unit gathers lumber.
+}
+
+STRING 1800
+// Units: n0BE (Legion Teleporters), Name (Name)
+{
+Legion Teleporters
+}
+
+STRING 1801
+// Abilities: A0T5 (Legion Teleporters), Tip (Tooltip - Normal)
+{
+Legion Teleports
 }
 
 STRING 1802
@@ -13866,7 +13890,7 @@ Train Conjurer
 
 STRING 2316
 {
-Warcraft Legacies 2.1.0
+Warcraft Legacies 2.2.0
 }
 
 STRING 2317
@@ -19323,6 +19347,12 @@ STRING 3225
 // Units: n02B (Ragnaros Summoning Pedestal), EditorSuffix (Name - Editor Suffix)
 {
 (pedestal)
+}
+
+STRING 3226
+// Abilities: A0T5 (Legion Teleporters), EditorSuffix (Editor Suffix)
+{
+(icon Teleporter)
 }
 
 STRING 3227
@@ -31338,7 +31368,7 @@ E
 }
 
 STRING 5231
-// Abilities: Ahlh (Improved Lumber Harvesting), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A0MN (Oil Consumer), Ubertip (Tooltip - Normal - Extended)
 {
 Increases the rate at which this unit gathers lumber.
 }
@@ -92324,7 +92354,7 @@ Further increases the armor of all Naval Units.
 
 STRING 15405
 {
-Warcraft Legacies 2.1.0
+Warcraft Legacies 2.2.0NA TEST
 }
 
 STRING 15406
@@ -93185,13 +93215,13 @@ Cruel housing for a soul used as fuel for the Legion.|nProvides 8 food, which in
 }
 
 STRING 15549
-// Abilities: A0MN (Oil Consumer), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A0O2 (Goblin Pilot), Ubertip (Tooltip - Normal - Extended)
 {
 Increases the rate at which this unit gathers lumber.
 }
 
 STRING 15550
-// Abilities: A0O2 (Goblin Pilot), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A0YG (Goblin Pilot), Ubertip (Tooltip - Normal - Extended)
 {
 Increases the rate at which this unit gathers lumber.
 }
@@ -98717,7 +98747,7 @@ Drone
 }
 
 STRING 16474
-// Units: n0BE (Legion Teleporters), Name (Name)
+// Abilities: A0T5 (Legion Teleporters), Name (Name)
 {
 Legion Teleporters
 }
@@ -99341,7 +99371,7 @@ STRING 16578
 }
 
 STRING 16579
-// Abilities: A0YG (Goblin Pilot), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A0KY (Power Sources), Ubertip (Tooltip - Normal - Extended)
 {
 Increases the rate at which this unit gathers lumber.
 }
@@ -107408,7 +107438,7 @@ Zin'rokh, Destroyer of Worlds
 }
 
 STRING 18054
-// Abilities: A0KY (Power Sources), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A0IU (Oil Producer), Ubertip (Tooltip - Normal - Extended)
 {
 Increases the rate at which this unit gathers lumber.
 }
@@ -107456,7 +107486,7 @@ Gazlowee burns some extra fuel, resetting the cooldown of all his abilities.|n|n
 }
 
 STRING 18065
-// Abilities: A0IU (Oil Producer), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A0T5 (Legion Teleporters), Ubertip (Tooltip - Normal - Extended)
 {
 Increases the rate at which this unit gathers lumber.
 }

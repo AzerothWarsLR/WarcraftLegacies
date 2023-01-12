@@ -28,8 +28,8 @@ namespace WarcraftLegacies.Source.Quests.Legion
       ResearchId = Constants.UPGRADE_R055_QUEST_COMPLETED_ARGUS_INCURSION;
       Required = true;
 
-      _legionTeleporter1 = preplacedUnitSystem.GetUnit(Constants.UNIT_N03H_DEATH_GATE_WAYGATE, new Point(22939, -29345));
-      _legionTeleporter2 = preplacedUnitSystem.GetUnit(Constants.UNIT_N03H_DEATH_GATE_WAYGATE, new Point(23536, -29975));
+      _legionTeleporter1 = preplacedUnitSystem.GetUnit(Constants.UNIT_N0BE_LEGION_TELEPORTERS_LEGION_OTHER, new Point(22939, -29345));
+      _legionTeleporter2 = preplacedUnitSystem.GetUnit(Constants.UNIT_N0BE_LEGION_TELEPORTERS_LEGION_OTHER, new Point(23536, -29975));
     }
 
     protected override string RewardDescription => "With Argus finally under the Legion's control, the invasion of Azeroth can begin!";

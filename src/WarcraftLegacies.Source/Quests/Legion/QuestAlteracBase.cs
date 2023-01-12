@@ -1,4 +1,6 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
+using MacroTools;
 using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
@@ -18,18 +20,16 @@ namespace WarcraftLegacies.Source.Quests.Legion
     /// Initializes a new instance of the <see cref="QuestAlteracBase"/> class
     /// </summary>
     /// <param name="rescueRect"></param>
-    public QuestAlteracBase(Rectangle rescueRect) : base("Ruins of Alterac",
+
+    private readonly unit _legionDemonGate;
+    public QuestAlteracBase(Rectangle rescueRect, PreplacedUnitSystem preplacedUnitSystem) : base("Ruins of Alterac",
       "The orcs that occupied Alterac have maintained a secret demon gate, the Legion will make good use of it",
       "ReplaceableTextures\\CommandButtons\\BTNDemonCrypt.blp")
     {
       AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N019_ALTERAC_MOUNTAINS_20GOLD_MIN)));
 
-      foreach (var unit in CreateGroup().EnumUnitsInRect(rescueRect).EmptyToList())
-      {
-        SetUnitInvulnerable(unit, true);
-        ShowUnit(unit, false);
-        _rescueUnits.Add(unit);
-      }
+      _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
+      _legionDemonGate = preplacedUnitSystem.GetUnit(Constants.UNIT_N081_UNFOCUSED_DEMON_GATE_T0, new Point(10921, 6405));
       Required = true;
     }
 
@@ -41,7 +41,9 @@ namespace WarcraftLegacies.Source.Quests.Legion
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
     {
-      foreach (var unit in _rescueUnits) unit.Rescue(completingFaction.Player);
+      completingFaction.Player.RescueGroup(_rescueUnits);
+      _legionDemonGate.Rescue(completingFaction.Player);
+
     }
   }
 }
