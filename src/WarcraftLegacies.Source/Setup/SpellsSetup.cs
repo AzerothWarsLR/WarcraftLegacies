@@ -3,6 +3,7 @@ using MacroTools.PassiveAbilitySystem;
 using MacroTools.Spells;
 using MacroTools.SpellSystem;
 using WarcraftLegacies.Source.Setup.Spells;
+using WarcraftLegacies.Source.Spells;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup
@@ -197,6 +198,10 @@ namespace WarcraftLegacies.Source.Setup
         Effect = "Abilities\\Spells\\Human\\Thunderclap\\ThunderClapCaster.mdl"
       };
       SpellSystem.Register(electricStrike);
+
+      SpellSystem.Register(new MakeCasterVulnerable(Constants.ABILITY_A00M_SCROLL_TELE));
+      SpellSystem.Register(new MakeCasterVulnerable(Constants.ABILITY_A0CS_VASSAL_SCROLL_TELE));
+      SpellSystem.Register(new MakeCasterVulnerable(Constants.ABILITY_A002_SCROLL_TELE_TOWN));
       
       FrostwolfSpellSetup.Setup();
       LegionSpellSetup.Setup();
