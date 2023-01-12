@@ -52,7 +52,7 @@ namespace WarcraftLegacies.Source.GameLogic
       {
         DisplayTextToPlayer(GetLocalPlayer(), 0, 0,
           "Open alliances are disabled; only Quests can change your alliance.");
-        Hint.Register(new Hint("You can't change alliances except through a select few Quests."));
+        Hint.Register(new Hint("You can leave your current alliances by typing -unally, but you won't be able to join a new one."));
         AreAlliancesOpen = false;
       }
 

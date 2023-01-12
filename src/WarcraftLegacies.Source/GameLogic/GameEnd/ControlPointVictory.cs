@@ -55,8 +55,7 @@ namespace WarcraftLegacies.Source.GameLogic.GameEnd
     {
       ClearTextMessages();
       DisplayTextToPlayer(GetLocalPlayer(), 0, 0,
-        VictoryColor + "\nTEAM VICTORY!|r\nThe " + whichTeam.Name +
-        " has won the game! Surviving players may continue playing, but scores have already been recorded.");
+        $"{VictoryColor}\nTEAM VICTORY!|r\nThe {whichTeam.Name} has won the game! You may choose to continue playing.");
       PlayThematicMusic(whichTeam.VictoryMusic);
       _gameWon = true;
     }
