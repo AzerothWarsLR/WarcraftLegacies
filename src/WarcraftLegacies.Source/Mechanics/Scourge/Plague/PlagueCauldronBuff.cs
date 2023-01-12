@@ -11,8 +11,8 @@ namespace WarcraftLegacies.Source.Mechanics.Scourge.Plague
   /// </summary>
   public sealed class PlagueCauldronBuff : TickingBuff
   {
-
     private readonly Point _attackTarget;
+
     public PlagueCauldronBuff(unit caster, unit target, Point attackTarget) : base(caster, target)
     {
       Duration = 3000;

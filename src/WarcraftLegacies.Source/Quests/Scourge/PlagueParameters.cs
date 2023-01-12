@@ -29,6 +29,9 @@ namespace WarcraftLegacies.Source.Quests.Scourge
     /// </summary>
     public float Duration { get; set; }
 
+    /// <summary>
+    /// List of potential points plague cauldrons can send units too
+    /// </summary>
     public List<Point> AttackTargets { get; set; } = new();
 }
 }
