@@ -163,7 +163,7 @@ namespace MacroTools.Extensions
     /// <summary>
     /// The number of extra <see cref="ControlPoint.ControlLevel"/>s the player gets each turn.
     /// </summary>
-    public int ControlLevelPerTurnBonus { get; set; }
+    public float ControlLevelPerTurnBonus { get; set; }
 
     /// <summary>
     /// Fired when the player's income changes.

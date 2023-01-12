@@ -11,7 +11,7 @@ namespace MacroTools.ControlPointSystem
   /// </summary>
   public sealed class ControlPoint
   {
-    private int _controlLevel;
+    private float _controlLevel;
 
     /// <summary>
     ///   Invoked when the <see cref="ControlPoint" /> changes its owner.
@@ -57,7 +57,7 @@ namespace MacroTools.ControlPointSystem
     /// When <see cref="ControlLevel"/> is higher than 0, the <see cref="ControlPoint"/> becomes a tower with
     /// attack damage and hit points based on its <see cref="ControlLevel"/>.
     /// </summary>
-    public int ControlLevel
+    public float ControlLevel
     {
       get => _controlLevel;
       set

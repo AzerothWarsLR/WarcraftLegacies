@@ -17,7 +17,7 @@ namespace MacroTools.Extensions
     /// Set the number of extra <see cref="ControlPoint.ControlLevel"/>s the player gets each turn.
     /// </summary>
     /// <returns></returns>
-    public static player SetControlLevelPerTurnBonus(this player whichPlayer, int value)
+    public static player SetControlLevelPerTurnBonus(this player whichPlayer, float value)
     {
       PlayerData.ByHandle(whichPlayer).ControlLevelPerTurnBonus = value;
       return whichPlayer;
@@ -26,12 +26,9 @@ namespace MacroTools.Extensions
     /// <summary>
     /// Returns the number of extra <see cref="ControlPoint.ControlLevel"/>s the player gets each turn.
     /// </summary>
-    /// <returns></returns>
-    public static int GetControlLevelPerTurnBonus(this player whichPlayer)
-    {
-      return PlayerData.ByHandle(whichPlayer).ControlLevelPerTurnBonus;
-    }
-    
+    public static float GetControlLevelPerTurnBonus(this player whichPlayer) => 
+      PlayerData.ByHandle(whichPlayer).ControlLevelPerTurnBonus;
+
     /// <summary>
     /// Pings the minimap for the player.
     /// </summary>
