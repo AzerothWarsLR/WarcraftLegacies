@@ -38,6 +38,7 @@ namespace WarcraftLegacies.Source.Setup
       CheatManager.Register(new CheatAddSpell());
       CheatManager.Register(new CheatSetResearchLevel());
       CheatManager.Register(new CheatDestroy());
+      CheatManager.Register(new CheatRawCode());
     }
   }
 }
