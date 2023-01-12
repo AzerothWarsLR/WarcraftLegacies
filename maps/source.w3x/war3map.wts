@@ -7587,7 +7587,7 @@ STRING 1264
 }
 
 STRING 1265
-// Units: o005 (Chaos Blademaster), Hotkey (Hotkey)
+// Units: n06E (Shadowleaf), Hotkey (Hotkey)
 {
 A
 }
@@ -7653,7 +7653,7 @@ STRING 1275
 }
 
 STRING 1276
-// Units: n06E (Shadowleaf), Hotkey (Hotkey)
+// Units: n049 (Hawk), Hotkey (Hotkey)
 {
 A
 }
@@ -7845,7 +7845,7 @@ STRING 1307
 }
 
 STRING 1308
-// Units: n049 (Hawk), Hotkey (Hotkey)
+// Units: n041 (Abyssal), Hotkey (Hotkey)
 {
 A
 }
@@ -8030,7 +8030,7 @@ STRING 1338
 }
 
 STRING 1339
-// Units: n041 (Abyssal), Hotkey (Hotkey)
+// Units: n03R (Warsong Blood-Rider), Hotkey (Hotkey)
 {
 A
 }
@@ -8108,7 +8108,7 @@ STRING 1351
 }
 
 STRING 1352
-// Units: n03R (Warsong Blood-Rider), Hotkey (Hotkey)
+// Units: h07C (Mustering Hall), Hotkey (Hotkey)
 {
 A
 }
@@ -8189,6 +8189,12 @@ STRING 1365
 // Units: Ecen (Demigod of the Night Elves), Name (Name)
 {
 Demigod of the Night Elves
+}
+
+STRING 1366
+// Units: o01L (Executioner), Ubertip (Tooltip - Extended)
+{
+Powerful Orc warrior that serves the Shattered Hand.|n|cfff5962dAbilities:|R Execute, Thunder Clap, Self-Bloodlust, Rampage, Cleaving Attack|n|cfff5962dCan learn:|R Blood Runes, Felsteel Plating|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land units.|r
 }
 
 STRING 1367
@@ -9230,7 +9236,7 @@ STRING 1539
 }
 
 STRING 1540
-// Units: h07C (Mustering Hall), Hotkey (Hotkey)
+// Units: h06E (Barracks), Hotkey (Hotkey)
 {
 A
 }
@@ -9488,7 +9494,7 @@ Bootcamp for the Goblin Army.|n|cfff5962dTrains:|R Ogre Mercenaries, Gunners, Sa
 }
 
 STRING 1583
-// Units: h06E (Barracks), Hotkey (Hotkey)
+// Units: h069 (Military Quarter), Hotkey (Hotkey)
 {
 A
 }
@@ -9818,7 +9824,7 @@ Wrecked Ship
 }
 
 STRING 1638
-// Units: h069 (Military Quarter), Hotkey (Hotkey)
+// Units: h03Q (City Watch), Hotkey (Hotkey)
 {
 A
 }
@@ -10292,7 +10298,7 @@ Bloodlust Totem
 }
 
 STRING 1717
-// Units: h03Q (City Watch), Hotkey (Hotkey)
+// Units: h01M (Baelgun Flamebeard), Hotkey (Hotkey)
 {
 A
 }
@@ -10376,7 +10382,7 @@ STRING 1730
 }
 
 STRING 1731
-// Units: h01M (Baelgun Flamebeard), Hotkey (Hotkey)
+// Units: h012 (Captain Falric), Hotkey (Hotkey)
 {
 A
 }
@@ -10554,12 +10560,6 @@ STRING 1760
 // Units: o00G (Blademaster), Tip (Tooltip - Basic)
 {
 Train Blademaster
-}
-
-STRING 1761
-// Units: o00G (Blademaster), Ubertip (Tooltip - Extended)
-{
-Elite warrior trained according to the teachings of the Burning Blade clan.|n|cfff5962dAbilities:|R Wind Walk, Mirror Image, Critical Strike, Bladestorm|n|cfff5962dCan Learn:|R Self-Bloodlust|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land units.|r
 }
 
 STRING 1762
@@ -10772,34 +10772,10 @@ STRING 1796
 Train - Silithid Reaver
 }
 
-STRING 1797
-// Units: o005 (Chaos Blademaster), EditorSuffix (Name - Editor Suffix)
-{
-(Warsong - Bloodpact)
-}
-
 STRING 1798
-// Units: h012 (Captain Falric), Hotkey (Hotkey)
+// Units: e00L (War Academy), Hotkey (Hotkey)
 {
 A
-}
-
-STRING 1799
-// Units: o005 (Chaos Blademaster), Name (Name)
-{
-Chaos Blademaster
-}
-
-STRING 1800
-// Units: o005 (Chaos Blademaster), Tip (Tooltip - Basic)
-{
-Train Chaos Blademaster
-}
-
-STRING 1801
-// Units: o005 (Chaos Blademaster), Ubertip (Tooltip - Extended)
-{
-Corrupted master of the sword for the Warsong Clan.|n|cfff5962dAbilities:|R Wind Walk, Mirror Image, Critical Strike, Bladestorm|n|cfff5962dCan Learn:|R Self-Bloodlust|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land units.|r
 }
 
 STRING 1802
@@ -11293,7 +11269,7 @@ STRING 1883
 }
 
 STRING 1884
-// Units: e00L (War Academy), Hotkey (Hotkey)
+// Units: e009 (Naisha), Hotkey (Hotkey)
 {
 A
 }
@@ -12211,7 +12187,7 @@ Boulderfist Mauler
 }
 
 STRING 2037
-// Units: e009 (Naisha), Hotkey (Hotkey)
+// Units: H02E (Regent of Quel'Thalas), Hotkey (Hotkey)
 {
 A
 }
@@ -12721,13 +12697,13 @@ C
 }
 
 STRING 2122
-// Units: H02E (Regent of Quel'Thalas), Hotkey (Hotkey)
+// Units: n04Q (Nether Pit), Hotkey (Hotkey)
 {
 A
 }
 
 STRING 2123
-// Units: n04Q (Nether Pit), Hotkey (Hotkey)
+// Units: h06R (Garrison), Hotkey (Hotkey)
 {
 A
 }
@@ -12977,7 +12953,7 @@ Upgrade to Burning Citadel
 }
 
 STRING 2165
-// Units: h06R (Garrison), Hotkey (Hotkey)
+// Units: o03D (Cult Gathering), Hotkey (Hotkey)
 {
 A
 }
@@ -13277,7 +13253,7 @@ STRING 2214
 }
 
 STRING 2215
-// Units: o03D (Cult Gathering), Hotkey (Hotkey)
+// Units: o03P (Mercenary Den), Hotkey (Hotkey)
 {
 A
 }
@@ -13733,7 +13709,7 @@ STRING 2290
 }
 
 STRING 2291
-// Units: o03P (Mercenary Den), Hotkey (Hotkey)
+// Units: o041 (Training Ground), Hotkey (Hotkey)
 {
 A
 }
@@ -14140,7 +14116,7 @@ Summon Water Elemental
 }
 
 STRING 2359
-// Units: o041 (Training Ground), Hotkey (Hotkey)
+// Units: u011 (Mausoleum), Hotkey (Hotkey)
 {
 A
 }
@@ -14182,7 +14158,7 @@ Azerite Siege Engine
 }
 
 STRING 2366
-// Units: u011 (Mausoleum), Hotkey (Hotkey)
+// Units: h09A (Draconic Spire), Hotkey (Hotkey)
 {
 A
 }
@@ -14339,7 +14315,7 @@ Summon Dormant Spire
 }
 
 STRING 2392
-// Units: h09A (Draconic Spire), Hotkey (Hotkey)
+// Units: n0AW (Incubation Pool), Hotkey (Hotkey)
 {
 A
 }
@@ -14579,7 +14555,7 @@ STRING 2431
 }
 
 STRING 2432
-// Units: n0AW (Incubation Pool), Hotkey (Hotkey)
+// Units: E01E (Ancient Guardian), Hotkey (Hotkey)
 {
 A
 }
@@ -14705,7 +14681,7 @@ STRING 2452
 }
 
 STRING 2453
-// Units: E01E (Ancient Guardian), Hotkey (Hotkey)
+// Units: o052 (Ceremonial Altar), Hotkey (Hotkey)
 {
 A
 }
@@ -14819,7 +14795,7 @@ STRING 2471
 }
 
 STRING 2472
-// Units: o052 (Ceremonial Altar), Hotkey (Hotkey)
+// Units: n0C4 (Spawning Grounds), Hotkey (Hotkey)
 {
 A
 }
@@ -15113,7 +15089,7 @@ R
 }
 
 STRING 2521
-// Units: n0C4 (Spawning Grounds), Hotkey (Hotkey)
+// Units: O05O (Ragefire Warlock), Hotkey (Hotkey)
 {
 A
 }
@@ -16256,7 +16232,7 @@ STRING 2711
 }
 
 STRING 2712
-// Units: O05O (Ragefire Warlock), Hotkey (Hotkey)
+// Units: o067 (War Camp), Hotkey (Hotkey)
 {
 A
 }
@@ -16856,7 +16832,7 @@ Fires massive boulders at enemy targets.|n|cfff5962dUpgrades Into:|R Improved Fl
 }
 
 STRING 2812
-// Units: o067 (War Camp), Hotkey (Hotkey)
+// Units: e01T (Coral of War), Hotkey (Hotkey)
 {
 A
 }
@@ -16994,7 +16970,7 @@ STRING 2834
 }
 
 STRING 2835
-// Units: e01T (Coral of War), Hotkey (Hotkey)
+// Units: h0AP (Frigate), Hotkey (Hotkey)
 {
 A
 }
@@ -17271,7 +17247,7 @@ Rematerialization
 }
 
 STRING 2881
-// Units: h0AP (Frigate), Hotkey (Hotkey)
+// Units: h0AV (Frigate), Hotkey (Hotkey)
 {
 A
 }
@@ -17529,7 +17505,7 @@ STRING 2923
 }
 
 STRING 2924
-// Units: h0AV (Frigate), Hotkey (Hotkey)
+// Units: h0AW (Frigate), Hotkey (Hotkey)
 {
 A
 }
@@ -18685,7 +18661,7 @@ Ship Gold Trader. Once trained, it cannot be controlled and will automatically t
 }
 
 STRING 3116
-// Units: h0AW (Frigate), Hotkey (Hotkey)
+// Units: h0AX (Frigate), Hotkey (Hotkey)
 {
 A
 }
@@ -18715,7 +18691,7 @@ STRING 3120
 }
 
 STRING 3121
-// Units: h0AX (Frigate), Hotkey (Hotkey)
+// Items: phea (Potion of Healing), Hotkey (Hotkey)
 {
 A
 }
@@ -18847,7 +18823,7 @@ STRING 3142
 }
 
 STRING 3143
-// Items: phea (Potion of Healing), Hotkey (Hotkey)
+// Items: pghe (Potion of Greater Healing), Hotkey (Hotkey)
 {
 A
 }
@@ -18991,7 +18967,7 @@ STRING 3166
 }
 
 STRING 3167
-// Items: pghe (Potion of Greater Healing), Hotkey (Hotkey)
+// Items: hlst (Health Stone), Hotkey (Hotkey)
 {
 A
 }
@@ -19075,7 +19051,7 @@ A powerful priestess of Elune who specializes in spellcasting.
 }
 
 STRING 3181
-// Units: o01L (Executioner), Ubertip (Tooltip - Extended)
+// Units: o02J (Worgen), Ubertip (Tooltip - Extended)
 {
 Powerful Orc warrior that serves the Shattered Hand.|n|cfff5962dAbilities:|R Charge, Thunder Clap, Self-Bloodlust, Rampage, Cleaving Attack|n|cfff5962dCan learn:|R Blood Runes, Felsteel Plating|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land units.|r
 }
@@ -19111,7 +19087,7 @@ Quest Completed: Liberation of Lordaeron
 }
 
 STRING 3187
-// Items: hlst (Health Stone), Hotkey (Hotkey)
+// Items: gemt (Gem of True Seeing), Hotkey (Hotkey)
 {
 A
 }
@@ -19341,12 +19317,6 @@ STRING 3225
 // Units: n02B (Ragnaros Summoning Pedestal), EditorSuffix (Name - Editor Suffix)
 {
 (pedestal)
-}
-
-STRING 3226
-// Units: o02J (Worgen), Ubertip (Tooltip - Extended)
-{
-Powerful Orc warrior that serves the Shattered Hand.|n|cfff5962dAbilities:|R Charge, Thunder Clap, Self-Bloodlust, Rampage, Cleaving Attack|n|cfff5962dCan learn:|R Blood Runes, Felsteel Plating|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land units.|r
 }
 
 STRING 3227
@@ -19878,7 +19848,7 @@ Summons a water elemental to attack the Hydromancer's enemies. Has <hwat,realHP>
 }
 
 STRING 3315
-// Items: gemt (Gem of True Seeing), Hotkey (Hotkey)
+// Abilities: A0UH (Phase Blade Auto-Cast), Hotkey (Hotkey - Normal)
 {
 A
 }
@@ -20130,7 +20100,7 @@ Q
 }
 
 STRING 3357
-// Abilities: A0UH (Phase Blade Auto-Cast), Hotkey (Hotkey - Normal)
+// Abilities: A0UG (Phase Blade Auto-Cast), Hotkey (Hotkey - Normal)
 {
 A
 }
@@ -20436,7 +20406,7 @@ STRING 3407
 }
 
 STRING 3408
-// Abilities: A0UG (Phase Blade Auto-Cast), Hotkey (Hotkey - Normal)
+// Abilities: A0K2 (Raise Dead Auto-Cast), Hotkey (Hotkey - Normal)
 {
 A
 }
@@ -20826,7 +20796,7 @@ Primary Caster building.|n|cfff5962dTrains:|r Shadow Priest, Warlock|n|cfff5962d
 }
 
 STRING 3473
-// Abilities: A0K2 (Raise Dead Auto-Cast), Hotkey (Hotkey - Normal)
+// Abilities: A0JY (Raise Dead Auto-Cast), Hotkey (Hotkey - Normal)
 {
 A
 }
@@ -21234,7 +21204,7 @@ STRING 3540
 }
 
 STRING 3541
-// Abilities: A0JY (Raise Dead Auto-Cast), Hotkey (Hotkey - Normal)
+// Upgrades: Rusm (Skeletal Mastery), Hotkey (Hotkey)
 {
 A
 }
@@ -21635,7 +21605,7 @@ STRING 3607
 }
 
 STRING 3608
-// Upgrades: Rusm (Skeletal Mastery), Hotkey (Hotkey)
+// Upgrades: Rufb (Freezing Breath), Hotkey (Hotkey)
 {
 A
 }
@@ -21911,7 +21881,7 @@ Bazaar
 }
 
 STRING 3654
-// Upgrades: Rufb (Freezing Breath), Hotkey (Hotkey)
+// Upgrades: Ruar (Unholy Armor,Improved Unholy Armor,Advanced Unholy Armor), Hotkey (Hotkey)
 {
 A
 }
@@ -22751,7 +22721,7 @@ Summon Water Elemental
 }
 
 STRING 3794
-// Upgrades: Ruar (Unholy Armor,Improved Unholy Armor,Advanced Unholy Armor), Hotkey (Hotkey)
+// Upgrades: Robs (Brute Strength), Hotkey (Hotkey)
 {
 A
 }
@@ -22766,12 +22736,6 @@ STRING 3796
 // Units: O01Q (Dragonmaw Chieftain), Propernames (Proper Names)
 {
 Nek'rosh Skullcrusher
-}
-
-STRING 3797
-// Abilities: A0L0 (Execute), EditorSuffix (Editor Suffix)
-{
-(Warsong - Ravager)
 }
 
 STRING 3798
@@ -23489,7 +23453,7 @@ STRING 3916
 }
 
 STRING 3917
-// Upgrades: Robs (Brute Strength), Hotkey (Hotkey)
+// Upgrades: Rhar (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 A
 }
@@ -38940,7 +38904,7 @@ STRING 6491
 }
 
 STRING 6492
-// Abilities: S009 (Chaos), Name (Name)
+// Abilities: S001 (Chaos), Name (Name)
 {
 Chaos
 }
@@ -38952,7 +38916,7 @@ STRING 6493
 }
 
 STRING 6494
-// Abilities: S001 (Chaos), Name (Name)
+// Abilities: S006 (Chaos), Name (Name)
 {
 Chaos
 }
@@ -38964,7 +38928,7 @@ Deactivate Battle Trance
 }
 
 STRING 6496
-// Abilities: S006 (Chaos), Name (Name)
+// Abilities: S007 (Chaos), Name (Name)
 {
 Chaos
 }
@@ -39159,12 +39123,6 @@ STRING 6528
 // Abilities: S00B (Bloodlust Aura Level 4), Ubertip (Tooltip - Normal - Extended)
 {
 Increases nearby friendly units' movement speed by 30% and attack rate by 25%.
-}
-
-STRING 6529
-// Abilities: S009 (Chaos), EditorSuffix (Editor Suffix)
-{
-(Grey - Blademaster)
 }
 
 STRING 6530
@@ -40716,7 +40674,7 @@ Fires and arrow that stuns the target and does significant damage.|n|n|cffffcc00
 }
 
 STRING 6788
-// Upgrades: Rhar (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: Rerh (Reinforced Hides,Improved Reinforced Hides,Advanced Reinforced Hides), Hotkey (Hotkey)
 {
 A
 }
@@ -45662,7 +45620,7 @@ STRING 7608
 }
 
 STRING 7609
-// Upgrades: Rerh (Reinforced Hides,Improved Reinforced Hides,Advanced Reinforced Hides), Hotkey (Hotkey)
+// Upgrades: Remg (Upgrade Moon Glaive), Hotkey (Hotkey)
 {
 A
 }
@@ -51943,18 +51901,6 @@ STRING 8655
 Q
 }
 
-STRING 8656
-// Abilities: A0MM (Critical Strike), EditorSuffix (Editor Suffix)
-{
-(Grey - Blademaster, Rend Teal)
-}
-
-STRING 8657
-// Abilities: A0MM (Critical Strike), Ubertip (Tooltip - Normal - Extended)
-{
-Gives a 25% chance to do <ACct,DataB1> times normal damage on an attack.
-}
-
 STRING 8658
 // Abilities: A0MK (SoulSacrificeDummy), Name (Name)
 {
@@ -54033,7 +53979,7 @@ STRING 9003
 }
 
 STRING 9004
-// Upgrades: Remg (Upgrade Moon Glaive), Hotkey (Hotkey)
+// Upgrades: R06I (Defend), Hotkey (Hotkey)
 {
 A
 }
@@ -54153,7 +54099,7 @@ STRING 9023
 }
 
 STRING 9024
-// Upgrades: R06I (Defend), Hotkey (Hotkey)
+// Upgrades: R03U (Magic Sentry), Hotkey (Hotkey)
 {
 A
 }
@@ -58977,7 +58923,7 @@ STRING 9827
 }
 
 STRING 9828
-// Upgrades: R03U (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: R03D (Defend), Hotkey (Hotkey)
 {
 A
 }
@@ -63904,7 +63850,7 @@ Forms a shield of flames around a target unit, dealing 15 damage per second to u
 }
 
 STRING 10649
-// Upgrades: R03D (Defend), Hotkey (Hotkey)
+// Upgrades: R01L (Magic Sentry), Hotkey (Hotkey)
 {
 A
 }
@@ -65302,7 +65248,7 @@ STRING 10881
 }
 
 STRING 10882
-// Upgrades: R01L (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: R00W (Magic Sentry), Hotkey (Hotkey)
 {
 A
 }
@@ -67858,7 +67804,7 @@ Q
 }
 
 STRING 11308
-// Upgrades: R00W (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: R001 (Defend), Hotkey (Hotkey)
 {
 A
 }
@@ -74652,7 +74598,7 @@ W
 }
 
 STRING 12438
-// Upgrades: R001 (Defend), Hotkey (Hotkey)
+// Upgrades: R03L (Chaos), Hotkey (Hotkey)
 {
 A
 }
@@ -75024,7 +74970,7 @@ STRING 12499
 }
 
 STRING 12500
-// Upgrades: R03L (Chaos), Hotkey (Hotkey)
+// Upgrades: R046 (Marksmanship), Hotkey (Hotkey)
 {
 A
 }
@@ -81931,7 +81877,7 @@ Mind Shield
 }
 
 STRING 13651
-// Upgrades: R046 (Marksmanship), Hotkey (Hotkey)
+// Upgrades: R02X (Defend), Hotkey (Hotkey)
 {
 A
 }
@@ -82957,7 +82903,7 @@ STRING 13821
 }
 
 STRING 13822
-// Upgrades: R02X (Defend), Hotkey (Hotkey)
+// Upgrades: R062 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 A
 }
@@ -83035,13 +82981,13 @@ STRING 13834
 }
 
 STRING 13835
-// Upgrades: R062 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R080 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 A
 }
 
 STRING 13836
-// Upgrades: R080 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R08K (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
 {
 A
 }
@@ -85186,6 +85132,12 @@ STRING 14193
 // Upgrades: R06N (Freezing Breath), Ubertip (Tooltip - Extended)
 {
 Improves Orb of Annihilation by increasing its damage dealt to <Afak,DataA2>.
+}
+
+STRING 14194
+// Units: o00G (Blademaster), Ubertip (Tooltip - Extended)
+{
+Elite warrior trained according to the teachings of the Burning Blade clan.|n|cfff5962dAbilities:|R Wind Walk, Mirror Image, Execute, Bladestorm|n|cfff5962dCan Learn:|R Self-Bloodlust|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land units.|r
 }
 
 STRING 14195
@@ -96612,12 +96564,6 @@ STRING 16106
 Defensive structure.  |n|n|cffffcc00Attacks land and air units.|r
 }
 
-STRING 16107
-// Abilities: S007 (Chaos), Name (Name)
-{
-Chaos
-}
-
 STRING 16108
 // Units: o057 (Vault of Relics), Ubertip (Tooltip - Extended)
 {
@@ -97421,7 +97367,7 @@ X
 }
 
 STRING 16242
-// Upgrades: R08K (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
+// Upgrades: R090 (Defend), Hotkey (Hotkey)
 {
 A
 }
@@ -97451,7 +97397,7 @@ C
 }
 
 STRING 16247
-// Upgrades: R090 (Defend), Hotkey (Hotkey)
+// Upgrades: R091 (Defend), Hotkey (Hotkey)
 {
 A
 }
@@ -97583,7 +97529,7 @@ Build Field Stockpile
 }
 
 STRING 16269
-// Upgrades: R091 (Defend), Hotkey (Hotkey)
+// Upgrades: R092 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 A
 }
@@ -98267,7 +98213,7 @@ STRING 16382
 }
 
 STRING 16383
-// Upgrades: R092 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R02K (Storm Hammers), Hotkey (Hotkey)
 {
 A
 }
@@ -99041,7 +98987,7 @@ Quest Completed: The Brothers Stormrage
 }
 
 STRING 16512
-// Upgrades: R02K (Storm Hammers), Hotkey (Hotkey)
+// Upgrades: R08T (Cannibalize), Hotkey (Hotkey)
 {
 A
 }
@@ -99566,6 +99512,12 @@ STRING 16599
 // Units: o03O (Altar of Industry), Tip (Tooltip - Basic)
 {
 Build Altar of Industry
+}
+
+STRING 16600
+// Abilities: A0MM (Critical Strike), EditorSuffix (Editor Suffix)
+{
+(Rend Blackhand)
 }
 
 STRING 16601
@@ -100360,6 +100312,12 @@ STRING 16732
 Twilight fanatics who have tamed Nether Drakes.|n|cfff5962dAbilities:|R Weighted Spear, True Sight |n|cfff5962dCan learn:|R Envenomed Spears|n |n|cff99b4d1Can only train 8.|r|n|cffffcc00Attacks land and air units.|r
 }
 
+STRING 16733
+// Abilities: A0MM (Critical Strike), Ubertip (Tooltip - Normal - Extended)
+{
+Gives a <A0MM,DataA1>% chance to do <A0MM,DataB1> times total damage on an attack.
+}
+
 STRING 16734
 // Units: E01O (Champion of the Uncrowned), EditorSuffix (Name - Editor Suffix)
 {
@@ -100396,10 +100354,22 @@ STRING 16739
 (Twilight DK)
 }
 
+STRING 16740
+// Abilities: A0L0 (Execute), EditorSuffix (Editor Suffix)
+{
+(Blademaster)
+}
+
 STRING 16741
 // Abilities: AEvi (Metamorphosis), Ubertip (Tooltip - Normal - Extended)
 {
 Transforms the Demon Hunter into a powerful Demon with a ranged attack. Has 600 bonus hit points and lasts for 20 seconds.
+}
+
+STRING 16742
+// Abilities: A0S4 (Execute), EditorSuffix (Editor Suffix)
+{
+(Shattered Hand Executioner)
 }
 
 STRING 16743
@@ -103133,7 +103103,7 @@ E
 }
 
 STRING 17220
-// Upgrades: R08T (Cannibalize), Hotkey (Hotkey)
+// Upgrades: R096 (Defend), Hotkey (Hotkey)
 {
 A
 }
@@ -105804,18 +105774,12 @@ Consumes an enemy in holy flames, slowing them for 40% and dealing 20 initial da
 }
 
 STRING 17726
-// Upgrades: R096 (Defend), Hotkey (Hotkey)
-{
-A
-}
-
-STRING 17727
 // Upgrades: R098 (Burning Oil), Hotkey (Hotkey)
 {
 A
 }
 
-STRING 17728
+STRING 17727
 // Upgrades: R02Y (Long Rifles), Hotkey (Hotkey)
 {
 A
@@ -114092,12 +114056,6 @@ STRING 19351
 // Abilities: A0ZK (Multishot), Ubertip (Tooltip - Normal - Extended)
 {
 This tower fires up to 9 additional projectiles that deal 10 damage each to nearby enemies
-}
-
-STRING 19352
-// Abilities: A0S4 (Execute), EditorSuffix (Editor Suffix)
-{
-(Black Empire)
 }
 
 STRING 19353

@@ -127,9 +127,6 @@ namespace WarcraftLegacies.Source.Setup
       };
       SpellSystem.Register(bombingRun);
 
-      var executeWarsong = new Execute(Constants.UNIT_O021_RAVAGER_WARSONG);
-      PassiveAbilityManager.Register(executeWarsong);
-
       var maievVengeance = new Vengeance(Constants.UNIT_EWRD_LEADER_OF_THE_WATCHERS_SENTINELS,
         Constants.ABILITY_A017_TAKE_VENGEANCE_SENTINELS_MAIEV)
       {
@@ -215,6 +212,7 @@ namespace WarcraftLegacies.Source.Setup
       IllidariSpellSetup.Setup();
       FelHordeSpellSetup.Setup();
       DraeneiSpellSetup.Setup();
+      WarsongSpellSetup.Setup();
     }
   }
 }
