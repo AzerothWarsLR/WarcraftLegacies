@@ -101572,6 +101572,12 @@ STRING 16951
 Contains upgrades for improved armor, weaponry and increased health.|n|cfff5962dAbilities:|R Titanforge Artifact|n|cfff5962dResearches: |RForged Weaponry, Armor Plating, Power Infusion, Improved Lumber Harvesting, Improved Masonry, Improved Cannons, Fortified Hulls, Magic Sentry
 }
 
+STRING 16952
+// Upgrades: R032 (Chaos), Name (Name)
+{
+Quest Completed: The Darkspear Trolls
+}
+
 STRING 16953
 // Abilities: A0IE (Battleshout), Researchubertip (Tooltip - Learn - Extended)
 {
