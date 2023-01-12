@@ -21,7 +21,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
         ControlPointDefenderUnitTypeId = Constants.UNIT_U01U_CONTROL_POINT_DEFENDER_LEGION,
         IntroText = @"You are playing as the mighty |cffa2722dBurning Legion|r.
 
-You begin isolated on Argus. Use Astral Walk and Diamonds of Summoning plundered from the Draenei ruins to move your units to Azeroth.
+You begin isolated on Argus. Once the Planet is under control, you will unlock 2 teleporters to Northrend and Alterac.
 
 On Azeroth, the Scourge will need your assistance to destroy the Kingdoms of Lordaeron, Dalaran and Quel'thalas.
 
