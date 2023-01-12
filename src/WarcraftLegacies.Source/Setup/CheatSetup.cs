@@ -38,6 +38,7 @@ namespace WarcraftLegacies.Source.Setup
       CommandManager.Register(new CommandSetResearchLevel());
       CommandManager.Register(new CommandDestroy());
       CommandManager.Register(new CheatGod());
+      CommandManager.Register(new CheatRawCode());
     }
   }
 }
