@@ -37,6 +37,12 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       };
       plagueParameters.PlagueCauldronUnitTypeId = Constants.UNIT_H02W_PLAGUE_CAULDRON_SCOURGE_OTHER;
       plagueParameters.Duration = 360;
+      plagueParameters.AttackTargets = new List<Point>
+      {
+        new Point(9041, 8036),
+        new Point(13825, 12471),
+        new Point(9418, 5396)
+      };
 
       QuestPlague questPlague = new(plagueParameters, preplacedUnitSystem);
 

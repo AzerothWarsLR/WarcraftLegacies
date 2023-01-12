@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using MacroTools;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
@@ -31,6 +33,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
     private readonly List<PlagueCauldronSummonParameter> _plagueCauldronSummonParameters;
     private readonly int _plagueCauldronUnitTypeId;
     private readonly List<Rectangle> _plagueRects;
+    private readonly List<Point> _attackTargets;
 
     /// <summary>
     /// When completed, the quest holder initiates the Plague, creating Plague Cauldrons around Lordaeron
@@ -47,6 +50,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
       _plagueCauldronUnitTypeId = plagueParameters.PlagueCauldronUnitTypeId;
       _plagueCauldronSummonParameters = plagueParameters.PlagueCauldronSummonParameters;
       _duration = plagueParameters.Duration;
+      _attackTargets = plagueParameters.AttackTargets;
       AddObjective(new ObjectiveEitherOf(
         new ObjectiveResearch(Constants.UPGRADE_R06I_PLAGUE_OF_UNDEATH_SCOURGE, FourCC("u000")),
         new ObjectiveTime(960)));
@@ -82,14 +86,22 @@ namespace WarcraftLegacies.Source.Quests.Scourge
         var position = plagueRect.GetRandomPoint();
         var plagueCauldron = CreateUnit(plaguePlayer, _plagueCauldronUnitTypeId, position.X, position.Y, 0)
           .SetTimedLife(_duration);
-        var plagueCauldronBuff = new PlagueCauldronBuff(plagueCauldron, plagueCauldron)
+
+        var attackTarget = _attackTargets.OrderBy(x => MathEx.GetDistanceBetweenPoints(position, x)).First();
+        
+        var plagueCauldronBuff = new PlagueCauldronBuff(plagueCauldron, plagueCauldron, attackTarget)
         {
           ZombieUnitTypeId = Constants.UNIT_NZOM_ZOMBIE_SCOURGE
         };
         BuffSystem.Add(plagueCauldronBuff);
+
         foreach (var parameter in _plagueCauldronSummonParameters)
-          GeneralHelpers.CreateUnits(plaguePlayer, parameter.SummonUnitTypeId,
-            position.X, position.Y, 0, parameter.SummonCount);
+          foreach (var unit in GeneralHelpers.CreateUnits(plaguePlayer, parameter.SummonUnitTypeId,
+                   position.X, position.Y, 0, parameter.SummonCount))
+          {
+            if (!unit.IsType(UNIT_TYPE_PEON))
+              unit.IssueOrder("attack", attackTarget);
+          }
       }
     }
 
