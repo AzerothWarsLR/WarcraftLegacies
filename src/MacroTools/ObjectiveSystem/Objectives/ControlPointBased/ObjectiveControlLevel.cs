@@ -47,7 +47,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.ControlPointBased
     
     private void RefreshDescription() => Description =
       IsPlayerOnSameTeamAsAnyEligibleFaction(_target.Owner)
-        ? $"{_target.Name} is Control Level {_requiredLevel} or higher ({_target.ControlLevel}/{_requiredLevel})"
+        ? $"{_target.Name} is Control Level {_requiredLevel} or higher ({(int)_target.ControlLevel}/{_requiredLevel})"
         : $"{_target.Name} is Control Level {_requiredLevel} or higher";
 
     private void RefreshProgress()
