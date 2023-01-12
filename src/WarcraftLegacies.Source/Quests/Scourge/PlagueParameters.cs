@@ -29,6 +29,6 @@ namespace WarcraftLegacies.Source.Quests.Scourge
     /// </summary>
     public float Duration { get; set; }
 
-    public List<Point> AttackTargets { get; init; } = new();
+    public List<Point> AttackTargets { get; set; } = new();
 }
 }

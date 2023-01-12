@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using MacroTools;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
@@ -82,8 +83,6 @@ namespace WarcraftLegacies.Source.Quests.Scourge
       foreach (var plagueRect in _plagueRects)
       {
         var position = plagueRect.GetRandomPoint();
-        var pointCapital = new Point(9041, 8036);
-        var pointStratholme = new Point(13825, 12471);
         Point attackPoint;
         float distance1;
         float distance2;
@@ -95,21 +94,14 @@ namespace WarcraftLegacies.Source.Quests.Scourge
         };
         BuffSystem.Add(plagueCauldronBuff);
 
-        distance1 = MathEx.GetDistanceBetweenPoints(position, pointCapital);
-
-        distance2 = MathEx.GetDistanceBetweenPoints(position, pointStratholme);
-
-        if (distance1 < distance2)
-          attackPoint = pointCapital;
-        else
-          attackPoint = pointStratholme;
+          var attackTarget = _attackTargets.OrderBy(x => MathEx.GetDistanceBetweenPoints(position, x)).First();
 
         foreach (var parameter in _plagueCauldronSummonParameters)
           foreach (var unit in GeneralHelpers.CreateUnits(plaguePlayer, parameter.SummonUnitTypeId,
                    position.X, position.Y, 0, parameter.SummonCount))
           {
             if (!unit.IsType(UNIT_TYPE_PEON))
-              unit.IssueOrder("attack", attackPoint);
+              unit.IssueOrder("attack", attackTarget);
           }
       }
     }
