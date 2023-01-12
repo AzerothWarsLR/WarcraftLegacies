@@ -20489,12 +20489,6 @@ STRING 3421
 Heavy melee commander unit. Has the Command Aura ability.|n|cff99b4d1Can only train 12.|r|n|cffffcc00Attacks land units.|r
 }
 
-STRING 3422
-// Abilities: A0VH (Inventory), EditorSuffix (Editor Suffix)
-{
-(The Great Forge)
-}
-
 STRING 3423
 // Upgrades: R00E (Sorceress Adept Training,Sorceress Master Training), EditorSuffix (Editor Suffix)
 {
@@ -23483,7 +23477,7 @@ Revive Thane of Aerie Peak
 }
 
 STRING 3922
-// Upgrades: Rhri (Long Rifles), EditorSuffix (Editor Suffix)
+// Abilities: A0T3 (Titanforge Artifact), EditorSuffix (Editor Suffix)
 {
 (Ironforge)
 }
@@ -58269,7 +58263,7 @@ Causes this unit to attack <A0F5,DataB1,%>% faster, but take <A0F5,DataC1,%>% mo
 }
 
 STRING 9719
-// Upgrades: Rhfl (Flare), EditorSuffix (Editor Suffix)
+// Upgrades: Rhri (Long Rifles), EditorSuffix (Editor Suffix)
 {
 (Ironforge)
 }
@@ -60843,7 +60837,7 @@ Hurls a bolt of lightning that bounces up to 6 times, dealing 75 damage to the p
 }
 
 STRING 10148
-// Upgrades: R05Q (Chaos), EditorSuffix (Editor Suffix)
+// Upgrades: Rhfl (Flare), EditorSuffix (Editor Suffix)
 {
 (Ironforge)
 }
@@ -60867,7 +60861,7 @@ Gives 5% extra damage to the attacks of nearby friendly units.
 }
 
 STRING 10152
-// Upgrades: R05P (Priest Adept Training,Priest Master Training), EditorSuffix (Editor Suffix)
+// Upgrades: R05Q (Chaos), EditorSuffix (Editor Suffix)
 {
 (Ironforge)
 }
@@ -80838,12 +80832,6 @@ STRING 13477
 Summon Scorpion
 }
 
-STRING 13478
-// Units: h048 (Forgeworks), Ubertip (Tooltip - Extended)
-{
-Contains upgrades for improved armor, weaponry and increased health.|n|cfff5962dResearches: |RForged Weaponry, Armor Plating, Power Infusion, Improved Lumber Harvesting, Improved Masonry, Improved Cannons, Fortified Hulls, Magic Sentry
-}
-
 STRING 13479
 // Buffs/Effects: B03X (), Buffubertip (Tooltip - Extended)
 {
@@ -82987,7 +82975,7 @@ A
 }
 
 STRING 13836
-// Upgrades: R08K (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
+// Upgrades: R090 (Defend), Hotkey (Hotkey)
 {
 A
 }
@@ -83899,7 +83887,7 @@ Summons 2 Fel Hounds with Mana Burn to attack the heroes enemies. |n|n|cffffcc00
 }
 
 STRING 13988
-// Upgrades: R014 (Priest Adept Training,Priest Master Training), EditorSuffix (Editor Suffix)
+// Upgrades: R05P (Priest Adept Training,Priest Master Training), EditorSuffix (Editor Suffix)
 {
 (Ironforge)
 }
@@ -84277,7 +84265,7 @@ C
 }
 
 STRING 14051
-// Upgrades: R010 (Control Magic), EditorSuffix (Editor Suffix)
+// Upgrades: R014 (Priest Adept Training,Priest Master Training), EditorSuffix (Editor Suffix)
 {
 (Ironforge)
 }
@@ -84973,7 +84961,7 @@ Z
 }
 
 STRING 14167
-// Upgrades: Rune (Necromancer Adept Training,Necromancer Master Training), Hotkey (Hotkey)
+// Abilities: A0T3 (Titanforge Artifact), Hotkey (Hotkey - Normal)
 {
 Z
 }
@@ -85195,13 +85183,13 @@ Allows Obsidian Statues to use Mana Flare, which causes them to channel negative
 }
 
 STRING 14204
-// Upgrades: R08K (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
+// Upgrades: R091 (Defend), Hotkey (Hotkey)
 {
 A
 }
 
 STRING 14205
-// Upgrades: Rows (Pulverize Damage Increase), Hotkey (Hotkey)
+// Upgrades: Rune (Necromancer Adept Training,Necromancer Master Training), Hotkey (Hotkey)
 {
 Z
 }
@@ -85303,7 +85291,7 @@ STRING 14221
 }
 
 STRING 14222
-// Upgrades: Rotr (Troll Regeneration,Improved Troll Regeneration,Advanced Troll Regeneration), Hotkey (Hotkey)
+// Upgrades: Rows (Pulverize Damage Increase), Hotkey (Hotkey)
 {
 Z
 }
@@ -85333,7 +85321,7 @@ STRING 14226
 }
 
 STRING 14227
-// Upgrades: Rost (Shaman Adept Training,Shaman Master Training), Hotkey (Hotkey)
+// Upgrades: Rotr (Troll Regeneration,Improved Troll Regeneration,Advanced Troll Regeneration), Hotkey (Hotkey)
 {
 Z
 }
@@ -85627,7 +85615,7 @@ Summons 4 Fel Hounds with Mana Burn to attack the heroes enemies. |n|n|cffffcc00
 }
 
 STRING 14276
-// Upgrades: R00Z (Defend), EditorSuffix (Editor Suffix)
+// Upgrades: R010 (Control Magic), EditorSuffix (Editor Suffix)
 {
 (Ironforge)
 }
@@ -85639,7 +85627,7 @@ Quest Completed: Gnomeregan
 }
 
 STRING 14278
-// Upgrades: R00V (Priest Adept Training,Priest Master Training), EditorSuffix (Editor Suffix)
+// Upgrades: R00Z (Defend), EditorSuffix (Editor Suffix)
 {
 (Ironforge)
 }
@@ -86358,7 +86346,7 @@ STRING 14397
 }
 
 STRING 14398
-// Upgrades: Roen (Ensnare), Hotkey (Hotkey)
+// Upgrades: Rost (Shaman Adept Training,Shaman Master Training), Hotkey (Hotkey)
 {
 Z
 }
@@ -86430,7 +86418,7 @@ ratx
 }
 
 STRING 14410
-// Upgrades: Robf (Burning Oil), Hotkey (Hotkey)
+// Upgrades: Roen (Ensnare), Hotkey (Hotkey)
 {
 Z
 }
@@ -86490,7 +86478,7 @@ STRING 14419
 }
 
 STRING 14420
-// Upgrades: Rnsw (Naga Siren Adept Training,Naga Siren Master Training), Hotkey (Hotkey)
+// Upgrades: Robf (Burning Oil), Hotkey (Hotkey)
 {
 Z
 }
@@ -86808,13 +86796,13 @@ Q
 }
 
 STRING 14473
-// Upgrades: Rhss (Control Magic), Hotkey (Hotkey)
+// Upgrades: Rnsw (Naga Siren Adept Training,Naga Siren Master Training), Hotkey (Hotkey)
 {
 Z
 }
 
 STRING 14474
-// Upgrades: Rhpt (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
+// Upgrades: Rhss (Control Magic), Hotkey (Hotkey)
 {
 Z
 }
@@ -87174,7 +87162,7 @@ rlev
 }
 
 STRING 14534
-// Upgrades: Rhhb (Storm Hammers), Hotkey (Hotkey)
+// Upgrades: Rhpt (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
 {
 Z
 }
@@ -87252,7 +87240,7 @@ Resource harvesting center and producer of Draenei enhancements. |n|cfff5962dRes
 }
 
 STRING 14547
-// Upgrades: Reuv (Ultravision), Hotkey (Hotkey)
+// Upgrades: Rhhb (Storm Hammers), Hotkey (Hotkey)
 {
 Z
 }
@@ -87312,7 +87300,7 @@ Bombard
 }
 
 STRING 14557
-// Upgrades: Redt (Druid of the Talon Adept Training,Druid of the Talon Master Training), Hotkey (Hotkey)
+// Upgrades: Reuv (Ultravision), Hotkey (Hotkey)
 {
 Z
 }
@@ -87402,13 +87390,13 @@ rlev
 }
 
 STRING 14572
-// Upgrades: Redc (Druid of the Claw Adept Training,Druid of the Claw Master Training), Hotkey (Hotkey)
+// Upgrades: Redt (Druid of the Talon Adept Training,Druid of the Talon Master Training), Hotkey (Hotkey)
 {
 Z
 }
 
 STRING 14573
-// Upgrades: R08K (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
+// Upgrades: R092 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 A
 }
@@ -87487,7 +87475,7 @@ rlev
 }
 
 STRING 14586
-// Upgrades: R06O (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: Redc (Druid of the Claw Adept Training,Druid of the Claw Master Training), Hotkey (Hotkey)
 {
 Z
 }
@@ -87523,13 +87511,13 @@ Dimensional Jump to Tempest Keep
 }
 
 STRING 14592
-// Upgrades: R04V (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: R06O (Magic Sentry), Hotkey (Hotkey)
 {
 Z
 }
 
 STRING 14593
-// Upgrades: R04F (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
+// Upgrades: R04V (Magic Sentry), Hotkey (Hotkey)
 {
 Z
 }
@@ -87985,13 +87973,13 @@ The unit takes aim and fires at an enemy unit, causing 75 damage and stunning th
 }
 
 STRING 14669
-// Upgrades: R03V (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: R04F (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
 {
 Z
 }
 
 STRING 14670
-// Upgrades: R03Q (Shaman Adept Training,Shaman Master Training), Hotkey (Hotkey)
+// Upgrades: R03V (Magic Sentry), Hotkey (Hotkey)
 {
 Z
 }
@@ -88099,7 +88087,7 @@ Z
 }
 
 STRING 14688
-// Upgrades: R03H (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
+// Upgrades: R03Q (Shaman Adept Training,Shaman Master Training), Hotkey (Hotkey)
 {
 Z
 }
@@ -88411,7 +88399,7 @@ rmvx
 }
 
 STRING 14740
-// Upgrades: R030 (Defend), Hotkey (Hotkey)
+// Upgrades: R03H (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
 {
 Z
 }
@@ -88442,13 +88430,13 @@ Goblin talented with magic.|n|cfff5962dAbilities:|R Ice Bolt|n|cfff5962dCan Lear
 }
 
 STRING 14745
-// Upgrades: R02W (Defend), Hotkey (Hotkey)
+// Upgrades: R030 (Defend), Hotkey (Hotkey)
 {
 Z
 }
 
 STRING 14746
-// Upgrades: R029 (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
+// Upgrades: R02W (Defend), Hotkey (Hotkey)
 {
 Z
 }
@@ -89078,7 +89066,7 @@ STRING 14850
 }
 
 STRING 14851
-// Upgrades: R027 (Necromancer Adept Training,Necromancer Master Training), Hotkey (Hotkey)
+// Upgrades: R029 (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
 {
 Z
 }
@@ -89162,7 +89150,7 @@ Purchase Summon Workers
 }
 
 STRING 14865
-// Upgrades: R00F (Control Magic), EditorSuffix (Editor Suffix)
+// Upgrades: R00V (Priest Adept Training,Priest Master Training), EditorSuffix (Editor Suffix)
 {
 (Ironforge)
 }
@@ -89252,7 +89240,7 @@ Quest Completed: Felsteel Refining
 }
 
 STRING 14880
-// Upgrades: R08K (Priest Adept Training,Priest Master Training), EditorSuffix (Editor Suffix)
+// Upgrades: R00F (Control Magic), EditorSuffix (Editor Suffix)
 {
 (Ironforge)
 }
@@ -89264,7 +89252,7 @@ Opens a two-way portal to the target location within a range of <A00D,Rng3>. The
 }
 
 STRING 14882
-// Upgrades: R024 (Necromancer Adept Training,Necromancer Master Training), Hotkey (Hotkey)
+// Upgrades: R027 (Necromancer Adept Training,Necromancer Master Training), Hotkey (Hotkey)
 {
 Z
 }
@@ -89285,12 +89273,6 @@ STRING 14885
 // Upgrades: R010 (Control Magic), Ubertip (Tooltip - Extended)
 {
 Improves War Golems' Spell Resistance by causing it to reduce the damage taken from spells and Magic attacks by 90%.
-}
-
-STRING 14886
-// Upgrades: R08K (Priest Adept Training,Priest Master Training), EditorSuffix (Editor Suffix)
-{
-(Ironforge)
 }
 
 STRING 14887
@@ -89405,12 +89387,6 @@ STRING 14905
 // Upgrades: R00W (Magic Sentry), Ubertip (Tooltip - Extended)
 {
 Causes Taurens and Spirit Walkers to take less damage from attacks.
-}
-
-STRING 14906
-// Upgrades: R08K (Priest Adept Training,Priest Master Training), EditorSuffix (Editor Suffix)
-{
-(Ironforge)
 }
 
 STRING 14907
@@ -89930,13 +89906,13 @@ ratx
 }
 
 STRING 14993
-// Upgrades: R01X (Disease Cloud), Hotkey (Hotkey)
+// Upgrades: R024 (Necromancer Adept Training,Necromancer Master Training), Hotkey (Hotkey)
 {
 Z
 }
 
 STRING 14994
-// Upgrades: R01W (Druid of the Talon Adept Training,Druid of the Talon Master Training), Hotkey (Hotkey)
+// Upgrades: R01X (Disease Cloud), Hotkey (Hotkey)
 {
 Z
 }
@@ -90037,12 +90013,6 @@ STRING 15010
 Allows Farstriders to use Feint ability, which turns them invisible for 5 seconds and increases their movement speed by 50%.
 }
 
-STRING 15011
-// Upgrades: R08K (Priest Adept Training,Priest Master Training), EditorSuffix (Editor Suffix)
-{
-(Ironforge)
-}
-
 STRING 15012
 // Upgrades: R01W (Druid of the Talon Adept Training,Druid of the Talon Master Training), Hotkey (Hotkey)
 {
@@ -90074,13 +90044,13 @@ Fast moving flying machine. Excellent at scouting, and effective against air uni
 }
 
 STRING 15017
-// Upgrades: R01Q (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: R01W (Druid of the Talon Adept Training,Druid of the Talon Master Training), Hotkey (Hotkey)
 {
 Z
 }
 
 STRING 15018
-// Upgrades: R01J (Ensnare), Hotkey (Hotkey)
+// Upgrades: R01Q (Magic Sentry), Hotkey (Hotkey)
 {
 Z
 }
@@ -90254,7 +90224,7 @@ Research Blood Runes
 }
 
 STRING 15047
-// Upgrades: R017 (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: R01J (Ensnare), Hotkey (Hotkey)
 {
 Z
 }
@@ -90290,7 +90260,7 @@ Unleash the Crusade
 }
 
 STRING 15053
-// Upgrades: R010 (Control Magic), Hotkey (Hotkey)
+// Upgrades: R017 (Magic Sentry), Hotkey (Hotkey)
 {
 Z
 }
@@ -90452,13 +90422,13 @@ Train Enslaved Dragon
 }
 
 STRING 15080
-// Upgrades: R00O (Ensnare), Hotkey (Hotkey)
+// Upgrades: R010 (Control Magic), Hotkey (Hotkey)
 {
 Z
 }
 
 STRING 15081
-// Upgrades: R00I (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
+// Upgrades: R00O (Ensnare), Hotkey (Hotkey)
 {
 Z
 }
@@ -90856,12 +90826,6 @@ STRING 15155
 (Draenei)
 }
 
-STRING 15156
-// Upgrades: R08K (Priest Adept Training,Priest Master Training), EditorSuffix (Editor Suffix)
-{
-(Ironforge)
-}
-
 STRING 15157
 // Units: H06Q (Demigod), Awakentip (Tooltip - Awaken)
 {
@@ -90953,7 +90917,7 @@ STRING 15171
 }
 
 STRING 15172
-// Upgrades: R00F (Control Magic), Hotkey (Hotkey)
+// Upgrades: R00I (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
 {
 Z
 }
@@ -91199,7 +91163,7 @@ Fires a cannonball at every enemy unit in the target area, dealing <A0GL,DataA4>
 }
 
 STRING 15213
-// Upgrades: R00E (Sorceress Adept Training,Sorceress Master Training), Hotkey (Hotkey)
+// Upgrades: R00F (Control Magic), Hotkey (Hotkey)
 {
 Z
 }
@@ -92927,7 +92891,7 @@ Research Power Infusion 1
 }
 
 STRING 15501
-// Upgrades: R00B (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: R00E (Sorceress Adept Training,Sorceress Master Training), Hotkey (Hotkey)
 {
 Z
 }
@@ -93125,7 +93089,7 @@ Creates a barrier that stops 800 points of spell damage from affecting a target 
 }
 
 STRING 15534
-// Upgrades: R08K (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
+// Upgrades: R02K (Storm Hammers), Hotkey (Hotkey)
 {
 A
 }
@@ -94505,7 +94469,7 @@ STRING 15763
 }
 
 STRING 15764
-// Upgrades: R00A (Mark of the Claw), Hotkey (Hotkey)
+// Upgrades: R00B (Magic Sentry), Hotkey (Hotkey)
 {
 Z
 }
@@ -95039,7 +95003,7 @@ Q
 }
 
 STRING 15853
-// Upgrades: R005 (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
+// Upgrades: R00A (Mark of the Claw), Hotkey (Hotkey)
 {
 Z
 }
@@ -95315,7 +95279,7 @@ Absord Nexus
 }
 
 STRING 15899
-// Upgrades: R000 (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
+// Upgrades: R005 (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
 {
 Z
 }
@@ -96017,13 +95981,13 @@ W
 }
 
 STRING 16016
-// Upgrades: R01U (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: R000 (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
 {
 Z
 }
 
 STRING 16017
-// Upgrades: R03Z (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: R01U (Magic Sentry), Hotkey (Hotkey)
 {
 Z
 }
@@ -96059,7 +96023,7 @@ Short range medium ship.|n|r|n|cffffcc00Attacks land units.|r|nStrong versus Fri
 }
 
 STRING 16023
-// Upgrades: R04O (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
+// Upgrades: R03Z (Magic Sentry), Hotkey (Hotkey)
 {
 Z
 }
@@ -96367,7 +96331,7 @@ Open the Scholomance
 }
 
 STRING 16074
-// Upgrades: R051 (Necromancer Adept Training,Necromancer Master Training), Hotkey (Hotkey)
+// Upgrades: R04O (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
 {
 Z
 }
@@ -97307,7 +97271,7 @@ Z
 }
 
 STRING 16232
-// Upgrades: R06Z (Necromancer Adept Training,Necromancer Master Training), Hotkey (Hotkey)
+// Upgrades: R051 (Necromancer Adept Training,Necromancer Master Training), Hotkey (Hotkey)
 {
 Z
 }
@@ -97331,7 +97295,7 @@ Brigitte Abbendis
 }
 
 STRING 16236
-// Upgrades: R08K (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
+// Upgrades: R08T (Cannibalize), Hotkey (Hotkey)
 {
 A
 }
@@ -97367,7 +97331,7 @@ X
 }
 
 STRING 16242
-// Upgrades: R090 (Defend), Hotkey (Hotkey)
+// Upgrades: R096 (Defend), Hotkey (Hotkey)
 {
 A
 }
@@ -97397,7 +97361,7 @@ C
 }
 
 STRING 16247
-// Upgrades: R091 (Defend), Hotkey (Hotkey)
+// Upgrades: R098 (Burning Oil), Hotkey (Hotkey)
 {
 A
 }
@@ -97445,7 +97409,7 @@ E
 }
 
 STRING 16255
-// Upgrades: R070 (Druid of the Talon Adept Training,Druid of the Talon Master Training), Hotkey (Hotkey)
+// Upgrades: R06Z (Necromancer Adept Training,Necromancer Master Training), Hotkey (Hotkey)
 {
 Z
 }
@@ -97529,7 +97493,7 @@ Build Field Stockpile
 }
 
 STRING 16269
-// Upgrades: R092 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R02Y (Long Rifles), Hotkey (Hotkey)
 {
 A
 }
@@ -98212,12 +98176,6 @@ STRING 16382
  (Lordaeron Tower)
 }
 
-STRING 16383
-// Upgrades: R02K (Storm Hammers), Hotkey (Hotkey)
-{
-A
-}
-
 STRING 16384
 // Units: H08Q (High Priestess), Propernames (Proper Names)
 {
@@ -98645,7 +98603,7 @@ Gives <A0B2,DataA1,.> additional armor to nearby friendly units in 600 range.
 }
 
 STRING 16455
-// Upgrades: R07J (Banshee Adept Training,Banshee Master Training), Hotkey (Hotkey)
+// Upgrades: R070 (Druid of the Talon Adept Training,Druid of the Talon Master Training), Hotkey (Hotkey)
 {
 Z
 }
@@ -98984,12 +98942,6 @@ STRING 16511
 // Upgrades: R06S (Chaos), Name (Name)
 {
 Quest Completed: The Brothers Stormrage
-}
-
-STRING 16512
-// Upgrades: R08T (Cannibalize), Hotkey (Hotkey)
-{
-A
 }
 
 STRING 16513
@@ -99455,7 +99407,7 @@ STRING 16589
 }
 
 STRING 16590
-// Upgrades: R07L (Shaman Adept Training,Shaman Master Training), Hotkey (Hotkey)
+// Upgrades: R07J (Banshee Adept Training,Banshee Master Training), Hotkey (Hotkey)
 {
 Z
 }
@@ -100151,7 +100103,7 @@ Seismic Shard
 }
 
 STRING 16706
-// Upgrades: R07O (Witch Doctor Adept Training,Witch Doctor Master Training), Hotkey (Hotkey)
+// Upgrades: R07L (Shaman Adept Training,Shaman Master Training), Hotkey (Hotkey)
 {
 Z
 }
@@ -100402,6 +100354,12 @@ STRING 16747
 Mana Burn - [|cffffcc00Level 4|r]
 }
 
+STRING 16748
+// Abilities: A0VH (Inventory), EditorSuffix (Editor Suffix)
+{
+(Forgeworks)
+}
+
 STRING 16749
 // Upgrades: R06X (Shaman Adept Training,Shaman Master Training), Name (Name)
 {
@@ -100588,6 +100546,12 @@ STRING 16779
 (Twilight)
 }
 
+STRING 16780
+// Abilities: A0T3 (Titanforge Artifact), Ubertip (Tooltip - Normal - Extended)
+{
+Titanforges the Artifact currently held within the Forgeworks, permanently granting it an additional ability. Each Artifact can be Titanforged only once.
+}
+
 STRING 16781
 // Abilities: A0O5 (Lightning Shield), Ubertip (Tooltip - Normal - Extended)
 {
@@ -100685,7 +100649,7 @@ Z
 }
 
 STRING 16798
-// Upgrades: R07V (Control Magic), Hotkey (Hotkey)
+// Upgrades: R07O (Witch Doctor Adept Training,Witch Doctor Master Training), Hotkey (Hotkey)
 {
 Z
 }
@@ -100907,7 +100871,7 @@ STRING 16834
 }
 
 STRING 16835
-// Upgrades: R07C (Spirit Walker Adept Training,Spirit Walker Master Training), Hotkey (Hotkey)
+// Upgrades: R07V (Control Magic), Hotkey (Hotkey)
 {
 Z
 }
@@ -101578,6 +101542,12 @@ STRING 16946
 Summon Living Tornado - [|cffffcc00Level 1|r]
 }
 
+STRING 16947
+// Upgrades: R004 (Magic Sentry), Hotkey (Hotkey)
+{
+Z
+}
+
 STRING 16948
 // Abilities: A0N1 (Plague of Frogs), Tip (Tooltip - Normal)
 {
@@ -101594,6 +101564,12 @@ STRING 16950
 // Abilities: A0N1 (Plague of Frogs), Ubertip (Tooltip - Normal - Extended)
 {
 The hero calls forth waves a plague of frogs that explode dealing damage to to the hero's enemies. Each exploding frog deals 50 damage. |nLasts 30 seconds.
+}
+
+STRING 16951
+// Units: h048 (Forgeworks), Ubertip (Tooltip - Extended)
+{
+Contains upgrades for improved armor, weaponry and increased health.|n|cfff5962dAbilities:|R Titanforge Artifact|n|cfff5962dResearches: |RForged Weaponry, Armor Plating, Power Infusion, Improved Lumber Harvesting, Improved Masonry, Improved Cannons, Fortified Hulls, Magic Sentry
 }
 
 STRING 16953
@@ -103100,12 +103076,6 @@ STRING 17219
 // Abilities: A0VE (Flame Shield), Hotkey (Hotkey - Normal)
 {
 E
-}
-
-STRING 17220
-// Upgrades: R096 (Defend), Hotkey (Hotkey)
-{
-A
 }
 
 STRING 17221
@@ -104795,7 +104765,7 @@ Z
 }
 
 STRING 17538
-// Upgrades: R08E (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R07C (Spirit Walker Adept Training,Spirit Walker Master Training), Hotkey (Hotkey)
 {
 Z
 }
@@ -105060,13 +105030,13 @@ Elemental Fire - [|cffffcc00Level 3|r]
 }
 
 STRING 17582
-// Upgrades: R08H (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R08E (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 Z
 }
 
 STRING 17583
-// Upgrades: R08P (Naga Siren Adept Training,Naga Siren Master Training), Hotkey (Hotkey)
+// Upgrades: R08H (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 Z
 }
@@ -105773,18 +105743,6 @@ STRING 17724
 Consumes an enemy in holy flames, slowing them for 40% and dealing 20 initial damage, and 45 damage every 1 second for 10 seconds.
 }
 
-STRING 17726
-// Upgrades: R098 (Burning Oil), Hotkey (Hotkey)
-{
-A
-}
-
-STRING 17727
-// Upgrades: R02Y (Long Rifles), Hotkey (Hotkey)
-{
-A
-}
-
 STRING 17735
 // Abilities: A0TO (Summon Garrison), Researchubertip (Tooltip - Learn - Extended)
 {
@@ -106076,7 +106034,7 @@ X
 }
 
 STRING 17800
-// Upgrades: R08S (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R08P (Naga Siren Adept Training,Naga Siren Master Training), Hotkey (Hotkey)
 {
 Z
 }
@@ -106244,7 +106202,7 @@ R
 }
 
 STRING 17832
-// Upgrades: R004 (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: R08S (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 Z
 }
@@ -109053,7 +109011,7 @@ E
 }
 
 STRING 18357
-// Upgrades: R08K (Priest Adept Training,Priest Master Training), Name (Name)
+// Abilities: A0T3 (Titanforge Artifact), Tip (Tooltip - Normal)
 {
 Titanforge Artifact
 }
@@ -109281,7 +109239,7 @@ Gronn Overlord
 }
 
 STRING 18407
-// Upgrades: R08K (Priest Adept Training,Priest Master Training), Tip (Tooltip)
+// Abilities: A0T3 (Titanforge Artifact), Name (Name)
 {
 Titanforge Artifact
 }
@@ -109302,72 +109260,6 @@ STRING 18411
 // Abilities: A0MJ (Parasite), Unubertip (Tooltip - Turn Off - Extended)
 {
 |cffc3dbffRight-click to deactivate auto-casting.|r
-}
-
-STRING 18412
-// Upgrades: R08K (Priest Adept Training,Priest Master Training), Ubertip (Tooltip - Extended)
-{
-Titanforges the Artifact currently held within the Great Forge, permanently granting it an additional ability. Each Artifact can be Titanforged only once.|n|n|cff8080ffTitanforges remaining|r: 3
-}
-
-STRING 18413
-// Upgrades: R08K (Priest Adept Training,Priest Master Training), Ubertip (Tooltip - Extended)
-{
-Titanforges the Artifact currently held within the Great Forge, permanently granting it an additional ability. Each Artifact can be Titanforged only once.|n|n|cff8080ffTitanforges remaining|r: 2
-}
-
-STRING 18414
-// Upgrades: R08K (Priest Adept Training,Priest Master Training), Ubertip (Tooltip - Extended)
-{
-Titanforges the Artifact currently held within the Great Forge, permanently granting it an additional ability. Each Artifact can be Titanforged only once.|n|n|cff8080ffTitanforges remaining|r: 1
-}
-
-STRING 18415
-// Upgrades: R08K (Priest Adept Training,Priest Master Training), Tip (Tooltip)
-{
-Titanforge Artifact
-}
-
-STRING 18416
-// Upgrades: R08K (Priest Adept Training,Priest Master Training), Tip (Tooltip)
-{
-Titanforge Artifact
-}
-
-STRING 18417
-// Upgrades: R08K (Priest Adept Training,Priest Master Training), Tip (Tooltip)
-{
-Titanforge Artifact
-}
-
-STRING 18418
-// Upgrades: R08K (Priest Adept Training,Priest Master Training), Tip (Tooltip)
-{
-Titanforge Artifact
-}
-
-STRING 18419
-// Upgrades: R08K (Priest Adept Training,Priest Master Training), Name (Name)
-{
-Titanforge Artifact
-}
-
-STRING 18420
-// Upgrades: R08K (Priest Adept Training,Priest Master Training), Name (Name)
-{
-Titanforge Artifact
-}
-
-STRING 18421
-// Upgrades: R08K (Priest Adept Training,Priest Master Training), Name (Name)
-{
-Titanforge Artifact
-}
-
-STRING 18422
-// Upgrades: R08K (Priest Adept Training,Priest Master Training), Name (Name)
-{
-Titanforge Artifact
 }
 
 STRING 18426
@@ -109458,18 +109350,6 @@ STRING 18443
 // Abilities: A0VN (Titanforged), Tip (Tooltip - Normal)
 {
 Titanforged
-}
-
-STRING 18444
-// Upgrades: R08K (Priest Adept Training,Priest Master Training), Ubertip (Tooltip - Extended)
-{
-Titanforges the Artifact currently held within the Great Forge, permanently granting it an additional ability. Each Artifact can be Titanforged only once.
-}
-
-STRING 18445
-// Upgrades: R08K (Priest Adept Training,Priest Master Training), Ubertip (Tooltip - Extended)
-{
-Titanforges the Artifact currently held within the Great Forge, permanently granting it an additional ability. Each Artifact can be Titanforged only once.
 }
 
 STRING 18446

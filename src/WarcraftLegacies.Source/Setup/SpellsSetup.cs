@@ -213,6 +213,7 @@ namespace WarcraftLegacies.Source.Setup
       FelHordeSpellSetup.Setup();
       DraeneiSpellSetup.Setup();
       WarsongSpellSetup.Setup();
+      IronforgeSpellSetup.Setup();
     }
   }
 }

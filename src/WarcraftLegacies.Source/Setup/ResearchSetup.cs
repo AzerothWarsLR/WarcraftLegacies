@@ -5,6 +5,7 @@ using MacroTools.ResearchSystems;
 using WarcraftLegacies.Source.Researches;
 using WarcraftLegacies.Source.Researches.Ironforge;
 using WarcraftLegacies.Source.Researches.Stormwind;
+using WarcraftLegacies.Source.Spells;
 using WCSharp.Events;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -22,7 +23,6 @@ namespace WarcraftLegacies.Source.Setup
     /// <param name="preplacedUnitSystem">A system that can find preplaced units.</param>
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
-      TitanForgeArtifact.Setup();
       DeeprunTram.Setup(preplacedUnitSystem);
       TierCodeOfChivalry.Setup();
       TierExpeditionSurvivors.Setup();
