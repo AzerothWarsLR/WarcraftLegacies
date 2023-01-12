@@ -1,4 +1,5 @@
-﻿using MacroTools.Libraries;
+﻿using MacroTools.Extensions;
+using MacroTools.Libraries;
 using WCSharp.Buffs;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -10,10 +11,13 @@ namespace WarcraftLegacies.Source.Mechanics.Scourge.Plague
   /// </summary>
   public sealed class PlagueCauldronBuff : TickingBuff
   {
-    public PlagueCauldronBuff(unit caster, unit target) : base(caster, target)
+
+    private readonly Point _attackTarget;
+    public PlagueCauldronBuff(unit caster, unit target, Point attackTarget) : base(caster, target)
     {
       Duration = 3000;
       Interval = 30f;
+      _attackTarget = attackTarget;
     }
 
     public int ZombieUnitTypeId { get; init; }
@@ -31,7 +35,8 @@ namespace WarcraftLegacies.Source.Mechanics.Scourge.Plague
 
     public override void OnTick()
     {
-      CreateUnit(GetOwningPlayer(Target), ZombieUnitTypeId, GetUnitX(Target), GetUnitY(Target), 0);
+      var unit = CreateUnit(GetOwningPlayer(Target), ZombieUnitTypeId, GetUnitX(Target), GetUnitY(Target), 0);
+      unit.IssueOrder("attack", _attackTarget);
     }
   }
 }

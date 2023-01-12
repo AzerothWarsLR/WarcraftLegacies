@@ -83,18 +83,16 @@ namespace WarcraftLegacies.Source.Quests.Scourge
       foreach (var plagueRect in _plagueRects)
       {
         var position = plagueRect.GetRandomPoint();
-        Point attackPoint;
-        float distance1;
-        float distance2;
         var plagueCauldron = CreateUnit(plaguePlayer, _plagueCauldronUnitTypeId, position.X, position.Y, 0)
           .SetTimedLife(_duration);
-        var plagueCauldronBuff = new PlagueCauldronBuff(plagueCauldron, plagueCauldron)
+
+        var attackTarget = _attackTargets.OrderBy(x => MathEx.GetDistanceBetweenPoints(position, x)).First();
+        
+        var plagueCauldronBuff = new PlagueCauldronBuff(plagueCauldron, plagueCauldron, attackTarget)
         {
           ZombieUnitTypeId = Constants.UNIT_NZOM_ZOMBIE_SCOURGE
         };
         BuffSystem.Add(plagueCauldronBuff);
-
-          var attackTarget = _attackTargets.OrderBy(x => MathEx.GetDistanceBetweenPoints(position, x)).First();
 
         foreach (var parameter in _plagueCauldronSummonParameters)
           foreach (var unit in GeneralHelpers.CreateUnits(plaguePlayer, parameter.SummonUnitTypeId,
