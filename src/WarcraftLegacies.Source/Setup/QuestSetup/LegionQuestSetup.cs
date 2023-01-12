@@ -12,6 +12,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       var newQuest = LegionSetup.Legion.AddQuest(new QuestArgusControl());
       LegionSetup.Legion.StartingQuest = newQuest;
       LegionSetup.Legion.AddQuest(new QuestEmbassy(Regions.Northrend_Ambiance, Regions.AlteracAmbient));
+      LegionSetup.Legion.AddQuest(new QuestAlteracBase(Regions.AlteracAmbient));
       LegionSetup.Legion.AddQuest(new QuestLegionCaptureSunwell());
       LegionSetup.Legion.AddQuest(new QuestLegionKillLordaeron());
       //Misc

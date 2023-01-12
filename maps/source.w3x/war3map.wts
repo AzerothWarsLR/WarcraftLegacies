@@ -10562,6 +10562,12 @@ STRING 1760
 Train Blademaster
 }
 
+STRING 1761
+// Units: n02F (Warlock), Ubertip (Tooltip - Extended)
+{
+An elven arcanist that practices dark magic.|n|cfff5962dAbilities:|R Lightning Storm, Life Drain, Summon Queen of Pain|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land and air units.|r
+}
+
 STRING 1762
 // Units: o00F (Black Temple), Name (Name)
 {
@@ -98662,12 +98668,6 @@ STRING 16464
 Armory of the Silvermoon forces.|n|cfff5962dTrains:|R Swordsman, Ranger, Ballista|n|cfff5962dResearches:|R Precision Shots, Enchanted Bowstrings, Sunfury Training
 }
 
-STRING 16465
-// Units: n02F (Warlock), Ubertip (Tooltip - Extended)
-{
-An elven arcanist that practices dark magic.|n|cfff5962dAbilities:|R Lightning Storm, Life Drain, Summon Succubus|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land and air units.|r
-}
-
 STRING 16466
 // Units: h08S (Undercity), Ubertip (Tooltip - Extended)
 {
@@ -101543,7 +101543,7 @@ Summon Living Tornado - [|cffffcc00Level 1|r]
 }
 
 STRING 16947
-// Upgrades: R004 (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: R07C (Spirit Walker Adept Training,Spirit Walker Master Training), Hotkey (Hotkey)
 {
 Z
 }
@@ -104771,7 +104771,7 @@ Z
 }
 
 STRING 17538
-// Upgrades: R07C (Spirit Walker Adept Training,Spirit Walker Master Training), Hotkey (Hotkey)
+// Upgrades: R08E (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 Z
 }
@@ -105036,13 +105036,13 @@ Elemental Fire - [|cffffcc00Level 3|r]
 }
 
 STRING 17582
-// Upgrades: R08E (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R08H (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 Z
 }
 
 STRING 17583
-// Upgrades: R08H (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R08P (Naga Siren Adept Training,Naga Siren Master Training), Hotkey (Hotkey)
 {
 Z
 }
@@ -106040,7 +106040,7 @@ X
 }
 
 STRING 17800
-// Upgrades: R08P (Naga Siren Adept Training,Naga Siren Master Training), Hotkey (Hotkey)
+// Upgrades: R08S (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 Z
 }
@@ -106208,7 +106208,7 @@ R
 }
 
 STRING 17832
-// Upgrades: R08S (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R004 (Magic Sentry), Hotkey (Hotkey)
 {
 Z
 }
