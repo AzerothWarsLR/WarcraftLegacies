@@ -37,6 +37,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
     /// and converting villagers into Zombies.
     /// </summary>
     /// <param name="plagueParameters">Provides information about how the Plague should work.</param>
+    /// <param name="preplacedUnitSystem">A system for finding preplaced units.</param>
     public QuestPlague(PlagueParameters plagueParameters, PreplacedUnitSystem preplacedUnitSystem) : base(
       "Plague of Undeath",
       "The Cult of the Damned is prepared to unleash a devastating zombifying plague across the lands of Lordaeron.",
