@@ -34,7 +34,7 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
     protected override string RewardFlavour => "Vol'jin has made contact with the Darkspear trolls on the Echo Isles. They are now yours to command!";
 
     /// <inheritdoc />
-    protected override string RewardDescription => "Unlock the troll base on the Echo Isles.";
+    protected override string RewardDescription => "You gain control of Echo Isles, and learn to train Vol'jin from the Altar of Storms";
 
     /// <inheritdoc />
     protected override void OnFail(Faction completingFaction)
