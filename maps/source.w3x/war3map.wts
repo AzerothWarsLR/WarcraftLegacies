@@ -1445,6 +1445,12 @@ STRING 240
 Revive The Fallen Guardian
 }
 
+STRING 241
+// Units: hrif (Rifleman), Ubertip (Tooltip - Extended)
+{
+Highly skilled sharpshooter and fan of the boomstick. |cfff5962dAbilities:|R Ensnare|n|cfff5962dCan Learn:|R Armor Penetration Rounds|n|n|cffffcc00Attacks land and air units.
+}
+
 STRING 242
 // Units: n0D9 (Slipstream Portal), EditorSuffix (Name - Editor Suffix)
 {
@@ -1819,6 +1825,12 @@ STRING 305
 Q
 }
 
+STRING 306
+// Units: hgra (Gryphon Aviary), Ubertip (Tooltip - Extended)
+{
+Fortified rookery for the gryphons of Ironforge.|n|cfff5962dTrains:|R Gryphon Rider|n|cfff5962dResearches:|R Storm Hammers, Gryphon Superior Breed
+}
+
 STRING 307
 // Units: hwtw (Scout Tower), Hotkey (Hotkey)
 {
@@ -2107,6 +2119,12 @@ STRING 354
 Build Haunted Transport Ship
 }
 
+STRING 355
+// Units: h07K (Improved Cannon Tower), Tip (Tooltip - Basic)
+{
+Upgrade to Improved Cannon Tower
+}
+
 STRING 356
 // Units: ntrh (Sea Turtle Hatchling), Hotkey (Hotkey)
 {
@@ -2351,6 +2369,12 @@ STRING 396
 // Units: nstw (Storm Wyrm), Hotkey (Hotkey)
 {
 W
+}
+
+STRING 397
+// Units: h07I (Guard Tower), Ubertip (Tooltip - Extended)
+{
+Archer filled tower defense.|n|cfff5962dUpgrades into:|R Improved Guard Tower|n|n|cffffcc00Attacks land and air units.|r
 }
 
 STRING 398
@@ -3824,12 +3848,6 @@ STRING 642
 Train Redeemed Highborne
 }
 
-STRING 643
-// Units: h07G (Great Hold), Ubertip (Tooltip - Extended)
-{
-Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Mason, Thane |n|cfff5962dAbilities:|R Dwarven Masonry, Powered Up Ammunition
-}
-
 STRING 644
 // Units: nnht (Nether Dragon Hatchling), Tip (Tooltip - Basic)
 {
@@ -4571,7 +4589,7 @@ Train Plague Titan
 }
 
 STRING 767
-// Abilities: A0C7 (Firestorm), EditorSuffix (Editor Suffix)
+// Abilities: A0C7 (Monsoon), EditorSuffix (Editor Suffix)
 {
 (Teal, Yellow - Magtheridon, Dagran)
 }
@@ -6398,6 +6416,12 @@ STRING 1070
 C
 }
 
+STRING 1071
+// Units: h07G (Great Hold), Ubertip (Tooltip - Extended)
+{
+Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Mason, Thane |n|cfff5962dAbilities:|R Dwarven Masonry, Powered Up Ammunition|n|cfff5962dResearches:|R Full Scale Escalation
+}
+
 STRING 1072
 // Units: espv (Avatar of Vengeance), EditorSuffix (Name - Editor Suffix)
 {
@@ -6776,6 +6800,12 @@ STRING 1134
 W
 }
 
+STRING 1135
+// Units: h07C (Mustering Hall), Ubertip (Tooltip - Extended)
+{
+Primary troop production building.|n|cfff5962dTrains:|R Defender, Rifleman, Mortar Team|n|cfff5962dResearches:|R Mithril Plated Armor, Long Rifles, Flare, Fragmentation Shards, Armor Penetration Rounds
+}
+
 STRING 1136
 // Units: echm (Chimaera), EditorSuffix (Name - Editor Suffix)
 {
@@ -6948,6 +6978,12 @@ STRING 1164
 // Units: eaoe (Ancient of Lore), Tip (Tooltip - Basic)
 {
 Build Ancient of Lore
+}
+
+STRING 1165
+// Units: h071 (Improved Cannon Tower), Tip (Tooltip - Basic)
+{
+Upgrade to Improved Cannon Tower
 }
 
 STRING 1166
@@ -9895,6 +9931,12 @@ STRING 1656
  (Faranell)
 }
 
+STRING 1657
+// Units: h048 (Forgeworks), Ubertip (Tooltip - Extended)
+{
+Contains upgrades for improved armor, weaponry and increased health.|n|cfff5962dAbilities:|R Titanforge Artifact|n|cfff5962dResearches: |RForged Weaponry, Armor Plating, Power Infusion, Improved Swig, Improved Lumber Harvesting, Improved Masonry, Improved Cannons, Fortified Hulls
+}
+
 STRING 1658
 // Units: o01L (Executioner), EditorSuffix (Name - Editor Suffix)
 {
@@ -12190,6 +12232,12 @@ STRING 2040
 // Abilities: A07Z (Lightbringer's Strength), Ubertip (Tooltip - Normal - Extended)
 {
 Increases this units damage by <A07Z,DataA1,%>%, armor by <A07Z,DataB1> and hit point regeneration by <A07Z,DataC1> for <A07Z,HeroDur1> seconds.
+}
+
+STRING 2041
+// Units: h01M (Baelgun Flamebeard), EditorSuffix (Name - Editor Suffix)
+{
+(Ironforge Demi)
 }
 
 STRING 2042
@@ -16051,12 +16099,6 @@ STRING 2685
 Improved Cannon Tower
 }
 
-STRING 2686
-// Units: h07K (Improved Cannon Tower), Tip (Tooltip - Basic)
-{
-Upgrade to (|cffffcc00Z|r) Improved Cannon Tower
-}
-
 STRING 2687
 // Units: h07K (Improved Cannon Tower), Ubertip (Tooltip - Extended)
 {
@@ -16109,12 +16151,6 @@ STRING 2695
 // Units: e000 (Improved Ancient Protector), Hotkey (Hotkey)
 {
 Z
-}
-
-STRING 2696
-// Units: h07H (Scout Tower), Ubertip (Tooltip - Extended)
-{
-Observation tower.|n|r|cfff5962dUpgrades into:|R Guard Tower, Cannon Tower, Keep Tower
 }
 
 STRING 2697
@@ -16463,12 +16499,6 @@ STRING 2754
 // Units: h071 (Improved Cannon Tower), Name (Name)
 {
 Improved Cannon Tower
-}
-
-STRING 2755
-// Units: h071 (Improved Cannon Tower), Tip (Tooltip - Basic)
-{
-Upgrade to (|cffffcc00Z|r) Improved Cannon Tower
 }
 
 STRING 2756
@@ -17586,6 +17616,12 @@ STRING 2941
 // Units: h05F (Stormwind Champion), Tip (Tooltip - Basic)
 {
 Train Stormwind Champion
+}
+
+STRING 2942
+// Units: h01M (Baelgun Flamebeard), Tip (Tooltip - Basic)
+{
+Revive Baelgun Flamebeard
 }
 
 STRING 2943
@@ -20375,12 +20411,6 @@ STRING 3406
 Teleports C'thun to a target friendly unit, has a 8 seconds cast time and a 90 seconds cooldown.
 }
 
-STRING 3407
-// Units: h01M (Baelgun Flamebeard), EditorSuffix (Name - Editor Suffix)
-{
-(Khaz Modan-Demi)
-}
-
 STRING 3408
 // Abilities: A0K2 (Raise Dead Auto-Cast), Hotkey (Hotkey - Normal)
 {
@@ -20391,18 +20421,6 @@ STRING 3409
 // Units: h01M (Baelgun Flamebeard), Name (Name)
 {
 Baelgun Flamebeard
-}
-
-STRING 3410
-// Units: h01M (Baelgun Flamebeard), Tip (Tooltip - Basic)
-{
-Revive Flamebeard
-}
-
-STRING 3411
-// Units: h01M (Baelgun Flamebeard), Ubertip (Tooltip - Extended)
-{
-Second in command of Muradin's expedition force, Baelgun is a stout scout of bristling fire and wily leadership.
 }
 
 STRING 3412
@@ -21197,6 +21215,12 @@ STRING 3543
 Revive Drek'Thar
 }
 
+STRING 3544
+// Units: h01M (Baelgun Flamebeard), Ubertip (Tooltip - Extended)
+{
+Second in command of Muradin's expedition force, Baelgun is a stout scout of bristling fire and wily leadership.|n|n|cfff5962dAbilities:|R Mithril Plated Armor, Resistant Skin, Explorer's Flare, Dispel Magic|n|n|cffffcc00Attacks land units.|R
+}
+
 STRING 3545
 // Abilities: A0D5 (Keep Commander Aura), EditorSuffix (Editor Suffix)
 {
@@ -21308,12 +21332,6 @@ STRING 3563
 // Units: h007 (Improved Cannon Tower), Name (Name)
 {
 Improved Cannon Tower
-}
-
-STRING 3564
-// Units: h007 (Improved Cannon Tower), Tip (Tooltip - Basic)
-{
-Upgrade to (|cffffcc00Z|r) Improved Cannon Tower
 }
 
 STRING 3565
@@ -21638,6 +21656,12 @@ STRING 3618
 // Units: e00X (Elemental Guardian), Tip (Tooltip - Basic)
 {
 Revive Elemental Guardian
+}
+
+STRING 3619
+// Units: h01L (Thane), Ubertip (Tooltip - Extended)
+{
+Elite Melee unit and head of a Dwarven clan.|n|cfff5962dAbilities:|R Taunt, Storming Brew, Bash, Resistant Skin, Perfect Avatar|n|cfff5962dCan learn:|R Mithril Plated Armor |n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land units.|r
 }
 
 STRING 3620
@@ -32225,6 +32249,12 @@ STRING 5383
 Sends a horde of bats to deal <AUcs,DataA4> damage to each enemy unit in a cone.
 }
 
+STRING 5384
+// Units: h007 (Improved Cannon Tower), Tip (Tooltip - Basic)
+{
+Upgrade to Improved Cannon Tower
+}
+
 STRING 5385
 // Units: o053 (Smithery), Hotkey (Hotkey)
 {
@@ -33297,6 +33327,12 @@ STRING 5563
 // Abilities: AOeq (Earthquake), Hotkey (Hotkey - Normal)
 {
 R
+}
+
+STRING 5564
+// Units: H03G (Emperor of Blackrock), Ubertip (Tooltip - Extended)
+{
+Oppressive mystical Hero, adept at dealing magical damage.|n|cfff5962dCan Learn:|R Inferno Strike, Rain of Fire, Brilliance Aura, Firestorm|n|n|cffffcc00Attacks land and air units.|R
 }
 
 STRING 5565
@@ -36255,6 +36291,12 @@ STRING 6057
 // Abilities: AHav (Avatar), Researchubertip (Tooltip - Learn - Extended)
 {
 When Avatar is activated, it gives the Mountain King bonus armor, bonus hit points, bonus damage and spell immunity. |n|cffffcc00Level 1|r - 20 damage, 5 armor, 300 hit points, 30 seconds.|n|cffffcc00Level 2|r - 40 damage, 10 armor, 600 hit points, 45 seconds.|n|cffffcc00Level 3|r - 60 damage, 15 armor, 900 hit points, 60 seconds.
+}
+
+STRING 6058
+// Units: H00S (King of Khaz Modan), Tip (Tooltip - Basic)
+{
+Summon King Magni Bronzebeard
 }
 
 STRING 6059
@@ -47263,6 +47305,12 @@ STRING 7889
 Q
 }
 
+STRING 7890
+// Units: h04N (Improved Cannon Tower), Tip (Tooltip - Basic)
+{
+Upgrade to Improved Cannon Tower
+}
+
 STRING 7891
 // Abilities: A0SU (Righteous Blow), Researchubertip (Tooltip - Learn - Extended)
 {
@@ -50551,6 +50599,12 @@ STRING 8438
 Afterimage
 }
 
+STRING 8439
+// Units: h052 (Improved Guard Tower), Ubertip (Tooltip - Extended)
+{
+Improved defensive structure.|n|n|cffffcc00Attacks land and air units.|r
+}
+
 STRING 8440
 // Abilities: A01J (Inferno Strike), Tip (Tooltip - Normal)
 {
@@ -52255,6 +52309,12 @@ STRING 8723
 Feral Spirit
 }
 
+STRING 8724
+// Units: h07R (Scout Tower), Ubertip (Tooltip - Extended)
+{
+Observation tower.|n|r|cfff5962dUpgrades into:|R Guard Tower, Cannon Tower
+}
+
 STRING 8725
 // Abilities: A0RB (Dimensional Jump to Argus), Ubertip (Tooltip - Normal - Extended)
 {
@@ -52379,6 +52439,18 @@ STRING 8745
 // Abilities: A0HZ (Multi Shot), Researchhotkey (Hotkey - Learn)
 {
 R
+}
+
+STRING 8746
+// Units: h07V (Improved Cannon Tower), Tip (Tooltip - Basic)
+{
+Upgrade to Improved Cannon Tower
+}
+
+STRING 8747
+// Abilities: A0C7 (Monsoon), Researchubertip (Tooltip - Learn - Extended)
+{
+Calls a storm of lightning bolts to strike enemy units.|nLasts 20 seconds. |n|n|cffffcc00Level 1|r - 40 Damage per Second|n|cffffcc00Level 2|r - 70 Damage per Second |n|cffffcc00Level 3|r - 100 Damage per Second
 }
 
 STRING 8748
@@ -53648,6 +53720,12 @@ STRING 8958
 Will of the Ashbringer - [|cffffcc00Level 3|r]
 }
 
+STRING 8959
+// Abilities: A06I (Perfect Avatar), Ubertip (Tooltip - Normal - Extended)
+{
+The Thanes, having perfected their avatar, will take almost no damage while in it. They also gain 20 bonus damage and 200 hit point bonus.|n|nLasts 10 seconds.
+}
+
 STRING 8960
 // Abilities: A0M2 (Promise of Fortune), Tip (Tooltip - Normal)
 {
@@ -54789,12 +54867,6 @@ Q
 }
 
 STRING 9150
-// Abilities: A0C7 (Firestorm), Name (Name)
-{
-Firestorm
-}
-
-STRING 9151
 // Abilities: A07I (Firestorm), Name (Name)
 {
 Firestorm
@@ -59379,7 +59451,7 @@ STRING 9914
 }
 
 STRING 9915
-// Abilities: A0C7 (Firestorm), Hotkey (Hotkey - Normal)
+// Abilities: A0C7 (Monsoon), Hotkey (Hotkey - Normal)
 {
 R
 }
@@ -59391,7 +59463,7 @@ Flame Inferno
 }
 
 STRING 9917
-// Abilities: A0C7 (Firestorm), Researchhotkey (Hotkey - Learn)
+// Abilities: A0C7 (Monsoon), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -61940,62 +62012,26 @@ STRING 10341
 R
 }
 
-STRING 10342
-// Buffs/Effects: B02O (Firestorm), EditorName (Name (Editor Only))
-{
-Firestorm
-}
-
 STRING 10343
 // Abilities: A097 (Exact Justice), Hotkey (Hotkey - Normal)
 {
 R
 }
 
-STRING 10344
-// Abilities: A0C7 (Firestorm), Researchtip (Tooltip - Learn)
-{
-Learn Firestorm - [|cffffcc00Level %d|r]
-}
-
-STRING 10345
-// Abilities: A0C7 (Firestorm), Researchubertip (Tooltip - Learn - Extended)
-{
-The hero creates a gigantic Firestorm which causes fire to rain down from the sky burning enemy units.|nLasts 20 seconds. |n|n|cffffcc00Level 1|r - 40 Damage per Second|n|cffffcc00Level 2|r - 70 Damage per Second |n|cffffcc00Level 3|r - 100 Damage per Second
-}
-
-STRING 10346
-// Abilities: A0C7 (Firestorm), Tip (Tooltip - Normal)
-{
-Firestorm - [|cffffcc00Level 1|r]
-}
-
-STRING 10347
-// Abilities: A0C7 (Firestorm), Tip (Tooltip - Normal)
-{
-Firestorm - [|cffffcc00Level 2|r]
-}
-
-STRING 10348
-// Abilities: A0C7 (Firestorm), Tip (Tooltip - Normal)
-{
-Firestorm - [|cffffcc00Level 3|r]
-}
-
 STRING 10349
-// Abilities: A0C7 (Firestorm), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A0C7 (Monsoon), Ubertip (Tooltip - Normal - Extended)
 {
 The hero creates a gigantic Firestorm which causes fire to rain down from the sky burning enemy units. Deals 40 damage per hit for 20 seconds.
 }
 
 STRING 10350
-// Abilities: A0C7 (Firestorm), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A0C7 (Monsoon), Ubertip (Tooltip - Normal - Extended)
 {
 The hero creates a gigantic Firestorm which causes fire to rain down from the sky burning enemy units. Deals 70 damage per hit for 20 seconds.
 }
 
 STRING 10351
-// Abilities: A0C7 (Firestorm), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A0C7 (Monsoon), Ubertip (Tooltip - Normal - Extended)
 {
 The hero creates a gigantic Firestorm which causes fire to rain down from the sky burning enemy units. Deals 100 damage per hit for 20 seconds.
 }
@@ -65371,6 +65407,12 @@ STRING 10913
 // Abilities: A096 (Summon Water Elemental), Ubertip (Tooltip - Normal - Extended)
 {
 Summons 4 Water Elementals with Bash and Crushing Wave to attack Jaina's enemies. |n|n|cffffcc00Attacks land and air units.|r
+}
+
+STRING 10914
+// Buffs/Effects: B0AN (), Bufftip (Tooltip)
+{
+Perfect Avatar
 }
 
 STRING 10915
@@ -69170,12 +69212,6 @@ STRING 11545
 Activate Perfect Avatar
 }
 
-STRING 11546
-// Abilities: A06I (Perfect Avatar), Ubertip (Tooltip - Normal - Extended)
-{
-The Thanes, having perfected their avatar, will take no damage while in it.They also gain 20 bonus damage and 200 hit point bonus.|n|nLasts 10 seconds.
-}
-
 STRING 11547
 // Abilities: A03N (Dragon form), Researchhotkey (Hotkey - Learn)
 {
@@ -69320,6 +69356,12 @@ STRING 11570
 Shoots a long distance arrows, dealing maximum 100 damage to enemies with successful hit. Stuns non-Hero units for 0.75 seconds. Has a range of 1200.
 }
 
+STRING 11571
+// Buffs/Effects: B0AN (), EditorSuffix (Editor Suffix)
+{
+ (Thane)
+}
+
 STRING 11572
 // Abilities: A053 (Nightfall), Unhotkey (Hotkey - Turn Off)
 {
@@ -69378,6 +69420,18 @@ STRING 11581
 // Abilities: A0R2 (Siege Mode), Untip (Tooltip - Turn Off)
 {
 Mobile Form
+}
+
+STRING 11582
+// Buffs/Effects: B0AN (), Buffubertip (Tooltip - Extended)
+{
+This unit is in Perfect Avatar form; it has dramatically increased hit points, attack damage, armor, and is immune to spells.
+}
+
+STRING 11583
+// Buffs/Effects: B0AO (), Bufftip (Tooltip)
+{
+Rune of Shielding
 }
 
 STRING 11584
@@ -73396,6 +73450,12 @@ STRING 12252
 // Abilities: A03B (Nature Aura), Researchtip (Tooltip - Learn)
 {
 Learn Nature Aura - [|cffffcc00Level %d|r]
+}
+
+STRING 12253
+// Buffs/Effects: B0AO (), Buffubertip (Tooltip - Extended)
+{
+This unit has a Rune of Shielding; its armor is greatly increased.
 }
 
 STRING 12254
@@ -78222,12 +78282,6 @@ STRING 13057
 Arrow Volley (effect)
 }
 
-STRING 13058
-// Buffs/Effects: X008 (Firestorm (Effect)), EditorName (Name (Editor Only))
-{
-Firestorm (Effect)
-}
-
 STRING 13059
 // Buffs/Effects: X007 (Arcane Burst (Effect)), EditorName (Name (Editor Only))
 {
@@ -79540,12 +79594,6 @@ STRING 13277
 // Abilities: A0LM (Open Ship), Ubertip (Tooltip - Normal - Extended)
 {
 Open Ship
-}
-
-STRING 13278
-// Units: H03G (Emperor of Blackrock), Ubertip (Tooltip - Extended)
-{
-Oppressive mystical Hero, adept at dealing magical damage.|n|cfff5962dCan Learn:|R Inferno Strike, Rain of Fire, Brilliance Aura, Ritual of Fire|n|n|cffffcc00Attacks land and air units.|R
 }
 
 STRING 13279
@@ -83488,6 +83536,12 @@ STRING 13935
 // Abilities: A0GN (Ancestral Spirits), Hotkey (Hotkey - Normal)
 {
 X
+}
+
+STRING 13936
+// Upgrades: R00F (Control Magic), Ubertip (Tooltip - Extended)
+{
+Gives Dwarven Warriors, Thanes and Baelgun Flamebeard a <A02O,DataA1>% chance to reduce incoming damage by <A02O,DataC1>.
 }
 
 STRING 13937
@@ -87673,7 +87727,7 @@ Quest Completed: Drak'tharon Keep
 }
 
 STRING 14636
-// Units: h07R (Scout Tower), Ubertip (Tooltip - Extended)
+// Units: h07H (Scout Tower), Ubertip (Tooltip - Extended)
 {
 Observation tower.|n|r|cfff5962dUpgrades into:|R Guard Tower, Cannon Tower
 }
@@ -89665,12 +89719,6 @@ STRING 14971
 Increases Fel Warlocks' mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Life Drain.
 }
 
-STRING 14972
-// Units: hrif (Rifleman), Ubertip (Tooltip - Extended)
-{
-Highly skilled sharpshooter and fan of the boomstick. |cfff5962dAbilities:|R Ensnare|n|cfff5962dCan Learn:|R Armor Penetration Rounds|n|n|cffffcc00Attacks land and air units.|nCan be loaded into Keep Towers.|r
-}
-
 STRING 14973
 // Upgrades: R00L (Chaos), Name (Name)
 {
@@ -89921,12 +89969,6 @@ STRING 15014
 // Upgrades: R00F (Control Magic), Tip (Tooltip)
 {
 Research Mithril Plated Armor
-}
-
-STRING 15015
-// Upgrades: R00F (Control Magic), Ubertip (Tooltip - Extended)
-{
-Gives Dwarven Warriors and Thanes a <A02O,DataA1>% chance to reduce incoming damage by <A02O,DataC1>.
 }
 
 STRING 15016
@@ -90248,7 +90290,7 @@ Seed of Burning Hatred - [|cffffcc00Level 3|r]
 }
 
 STRING 15069
-// Units: h07I (Guard Tower), Ubertip (Tooltip - Extended)
+// Units: h06W (Guard Tower), Ubertip (Tooltip - Extended)
 {
 Archer filled tower defense.|n|cfff5962dCan learn:|R Magic Sentry|n|cfff5962dUpgrades into:|R Improved Guard Tower|n|n|cffffcc00Attacks land and air units.|r
 }
@@ -90928,12 +90970,6 @@ STRING 15190
 Slow melee unit capable of devastating area of effect attacks.|n|cfff5962dAbilities:|R Pulverize|n|cfff5962dCan learn:|R Crushing Wave|n|n|cff99b4d1Can only train 12.|r|n|cffffcc00Attacks land units.|r
 }
 
-STRING 15191
-// Units: hgra (Gryphon Aviary), Ubertip (Tooltip - Extended)
-{
-Fortified rookery for the gryphons of Ironforge.|n|cfff5962dTrains:|R Gryphon Rider|n|cfff5962dResearches:|R Storm Hammers
-}
-
 STRING 15192
 // Upgrades: R001 (Defend), EditorSuffix (Editor Suffix)
 {
@@ -91528,12 +91564,6 @@ STRING 15290
 // Abilities: A0H3 (Mass Ice Armor), Tip (Tooltip - Normal)
 {
 Mass Ice Armor - [|cffffcc00Level 1|r]
-}
-
-STRING 15291
-// Units: h06W (Guard Tower), Ubertip (Tooltip - Extended)
-{
-Archer filled tower defense.|n|cfff5962dCan learn:|R Magic Sentry|n|cfff5962dUpgrades into:|R Improved Guard Tower|n|n|cffffcc00Attacks land and air units.|r
 }
 
 STRING 15292
@@ -94666,12 +94696,6 @@ STRING 15822
 (Druids - Fandral Summon)
 }
 
-STRING 15823
-// Units: h07C (Mustering Hall), Ubertip (Tooltip - Extended)
-{
-Primary troop production building.|n|cfff5962dTrains:|R Defender, Rifleman, Mortar Team|n|cfff5962dResearches:|R Mithril Plated Armor, Long Rifles, Flare, Fragmentation Shards
-}
-
 STRING 15824
 // Units: o04U (Cyclone Cannon), EditorSuffix (Name - Editor Suffix)
 {
@@ -94786,12 +94810,6 @@ STRING 15842
 Improved Cannon Tower
 }
 
-STRING 15843
-// Units: h04N (Improved Cannon Tower), Tip (Tooltip - Basic)
-{
-Upgrade to (|cffffcc00Z|r) Improved Cannon Tower
-}
-
 STRING 15844
 // Units: h04N (Improved Cannon Tower), Ubertip (Tooltip - Extended)
 {
@@ -94817,15 +94835,9 @@ Upgrade to Improved Guard Tower
 }
 
 STRING 15848
-// Units: h052 (Improved Guard Tower), Ubertip (Tooltip - Extended)
+// Units: h08F (Improved Plague Tower), Ubertip (Tooltip - Extended)
 {
 Primary defensive structure. |n|cfff5962dCan learn:|R Magic Sentry |n|n|cffffcc00Attacks land and air units.|r
-}
-
-STRING 15849
-// Units: h01L (Thane), Ubertip (Tooltip - Extended)
-{
-Mighty head of a dwarven clan.|n|cfff5962dAbilities:|R Taunt, Storming Brew, Bash, Avatar|n|cfff5962dCan learn:|R Mithril Plated Armor |n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land units.|r
 }
 
 STRING 15850
@@ -95716,12 +95728,6 @@ STRING 15998
 Upgrade to Improved Guard Tower
 }
 
-STRING 15999
-// Units: h08F (Improved Plague Tower), Ubertip (Tooltip - Extended)
-{
-Primary defensive structure. |n|cfff5962dCan learn:|R Magic Sentry |n|n|cffffcc00Attacks land and air units.|r
-}
-
 STRING 16000
 // Abilities: A0X8 (Summon Shadowspawn), Name (Name)
 {
@@ -95744,12 +95750,6 @@ STRING 16003
 // Units: h07V (Improved Cannon Tower), Name (Name)
 {
 Improved Cannon Tower
-}
-
-STRING 16004
-// Units: h07V (Improved Cannon Tower), Tip (Tooltip - Basic)
-{
-Upgrade to (|cffffcc00Z|r) Improved Cannon Tower
 }
 
 STRING 16005
@@ -99388,12 +99388,6 @@ STRING 16612
 Warrior Hero, adept at melee combat and aggression.|n|cfff5962dAbilities:|r Divine Shield|n|cfff5962dCan Learn:|R Consecration, Blood Fury, Fiery Aura, Guarding Light|n|n|cffffcc00Attacks land units.|R
 }
 
-STRING 16613
-// Units: H00S (King of Khaz Modan), Tip (Tooltip - Basic)
-{
-Summon King of Ironforge and leader of the Bronzebeard clan.
-}
-
 STRING 16614
 // Abilities: A0N7 (Disorienting Howl), Tip (Tooltip - Normal)
 {
@@ -101398,12 +101392,6 @@ STRING 16950
 The hero calls forth waves a plague of frogs that explode dealing damage to to the hero's enemies. Each exploding frog deals 50 damage. |nLasts 30 seconds.
 }
 
-STRING 16951
-// Units: h048 (Forgeworks), Ubertip (Tooltip - Extended)
-{
-Contains upgrades for improved armor, weaponry and increased health.|n|cfff5962dAbilities:|R Titanforge Artifact|n|cfff5962dResearches: |RForged Weaponry, Armor Plating, Power Infusion, Improved Lumber Harvesting, Improved Masonry, Improved Cannons, Fortified Hulls, Magic Sentry
-}
-
 STRING 16952
 // Upgrades: R032 (Chaos), Name (Name)
 {
@@ -102551,7 +102539,7 @@ Increases magi mana capacity, mana regeneration rate, attack damage and gives th
 }
 
 STRING 17144
-// Buffs/Effects: B0AL (), EditorSuffix (Editor Suffix)
+// Abilities: A00C (Call for Reinforcements), EditorSuffix (Editor Suffix)
 {
 (Gallywix)
 }
@@ -102977,7 +102965,7 @@ Summon Altruis
 }
 
 STRING 17217
-// Abilities: A00C (Call for Reinforcements), EditorSuffix (Editor Suffix)
+// Buffs/Effects: B0AL (), EditorSuffix (Editor Suffix)
 {
 (Gallywix)
 }
@@ -103499,7 +103487,7 @@ Increases the maximum hit points of all casters by 100 and increases armor by 2.
 }
 
 STRING 17304
-// Upgrades: R02T (Well Spring), Hotkey (Hotkey)
+// Upgrades: Rorb (Reinforced Defenses), Hotkey (Hotkey)
 {
 F
 }
@@ -103745,7 +103733,7 @@ Gunner Pilot
 }
 
 STRING 17345
-// Upgrades: R03S (Chaos), EditorSuffix (Editor Suffix)
+// Upgrades: R00D (Envenomed Spears), EditorSuffix (Editor Suffix)
 {
 (Frostwolf)
 }
@@ -107018,7 +107006,7 @@ STRING 17974
 }
 
 STRING 17975
-// Upgrades: Rorb (Reinforced Defenses), Hotkey (Hotkey)
+// Upgrades: R02T (Well Spring), Hotkey (Hotkey)
 {
 F
 }
@@ -113789,7 +113777,7 @@ STRING 19319
 }
 
 STRING 19320
-// Upgrades: R00D (Envenomed Spears), EditorSuffix (Editor Suffix)
+// Upgrades: R03S (Chaos), EditorSuffix (Editor Suffix)
 {
 (Frostwolf)
 }
