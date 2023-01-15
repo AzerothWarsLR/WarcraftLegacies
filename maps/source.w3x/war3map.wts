@@ -923,7 +923,7 @@ Build Tree of Life
 }
 
 STRING 154
-// Units: etol (Tree of Life), Ubertip (Tooltip - Extended)
+// Units: e013 (Naxxramas), Ubertip (Tooltip - Extended)
 {
 Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Wisp |n|cfff5962dUpgrades to:|R Tree of Ages
 }
@@ -2111,12 +2111,6 @@ STRING 354
 // Units: ubot (Haunted Transport Ship), Tip (Tooltip - Basic)
 {
 Build Haunted Transport Ship
-}
-
-STRING 355
-// Upgrades: R02T (Well Spring), Ubertip (Tooltip - Extended)
-{
-Improves Moonwells by increasing the amount of mana that can be stored by 175, and their rate of mana regeneration by 500%
 }
 
 STRING 356
@@ -5773,7 +5767,7 @@ STRING 963
 }
 
 STRING 964
-// Units: edcm (Druid of the Claw), Hotkey (Hotkey)
+// Units: edcm (Bear), Hotkey (Hotkey)
 {
 W
 }
@@ -6381,7 +6375,7 @@ Build Tree of Life
 }
 
 STRING 1065
-// Units: e013 (Naxxramas), Ubertip (Tooltip - Extended)
+// Units: e01X (Exodar Regalis), Ubertip (Tooltip - Extended)
 {
 Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Wisp |n|cfff5962dUpgrades to:|R Tree of Ages
 }
@@ -6414,12 +6408,6 @@ STRING 1070
 // Units: etoe (Tree of Eternity), Hotkey (Hotkey)
 {
 C
-}
-
-STRING 1071
-// Units: etoa (Tree of Ages), Ubertip (Tooltip - Extended)
-{
-Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Wisp|n|cfff5962dAbilities:|R Force of Nature, Sacred Ground |n|cfff5962dUpgrades to:|R Tree of Eternity
 }
 
 STRING 1072
@@ -6789,7 +6777,7 @@ Structure of the artifacts of the Kaldorei, and any purchasable items.
 }
 
 STRING 1133
-// Units: edcm (Druid of the Claw), EditorSuffix (Name - Editor Suffix)
+// Units: edcm (Bear), EditorSuffix (Name - Editor Suffix)
 {
 (Bear Form)
 }
@@ -6798,12 +6786,6 @@ STRING 1134
 // Units: Hpb2 (Gilnean Lord), Hotkey (Hotkey)
 {
 W
-}
-
-STRING 1135
-// Units: edcm (Druid of the Claw), Ubertip (Tooltip - Extended)
-{
-Powerful frontline melee unit. |n|cfff5962dAbilities:|R Roar, Cleaving Attack|n|n|cffffcc00Attacks land units.|r
 }
 
 STRING 1136
@@ -6978,12 +6960,6 @@ STRING 1164
 // Units: eaoe (Ancient of Lore), Tip (Tooltip - Basic)
 {
 Build Ancient of Lore
-}
-
-STRING 1165
-// Units: eaoe (Ancient of Lore), Ubertip (Tooltip - Extended)
-{
-Ancient keeper of the forest dwellers.|n|cfff5962dTrains:|R Druid of the Claw, Mountain Giant|n|cfff5962dResearches:|R Druid of the Claw Training, Resistant Skin|n|n|cffffcc00Attacks land units.|r
 }
 
 STRING 1166
@@ -12228,12 +12204,6 @@ STRING 2040
 Increases this units damage by <A07Z,DataA1,%>%, armor by <A07Z,DataB1> and hit point regeneration by <A07Z,DataC1> for <A07Z,HeroDur1> seconds.
 }
 
-STRING 2041
-// Abilities: A0HT (Cycle of Rebirth), Ubertip (Tooltip - Normal - Extended)
-{
-Creates a Healing Bulb that will heal nearby units for 10 seconds. They will heal for a maximum of 600 hitpoints each.
-}
-
 STRING 2042
 // Units: h071 (Improved Cannon Tower), Hotkey (Hotkey)
 {
@@ -14939,7 +14909,7 @@ High King
 }
 
 STRING 2493
-// Units: e01X (Exodar Regalis), Ubertip (Tooltip - Extended)
+// Units: e01Z (Exodar Regalis), Ubertip (Tooltip - Extended)
 {
 Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Wisp |n|cfff5962dUpgrades to:|R Tree of Ages
 }
@@ -17628,12 +17598,6 @@ STRING 2941
 // Units: h05F (Stormwind Champion), Tip (Tooltip - Basic)
 {
 Train Stormwind Champion
-}
-
-STRING 2942
-// Units: eaom (Ancient of War), Ubertip (Tooltip - Extended)
-{
-Ancient of the warrior Sentinels.|n|cfff5962dTrains:|R Sapling, Dryad, Siege Ancient|n|cfff5962dResearches:|R Improved Thorns, Crippling Poison, Deadly Poison, Limber Timber|n|n|cffffcc00Attacks land units.|r
 }
 
 STRING 2943
@@ -21692,12 +21656,6 @@ STRING 3618
 // Units: e00X (Elemental Guardian), Tip (Tooltip - Basic)
 {
 Revive Elemental Guardian
-}
-
-STRING 3619
-// Units: e00X (Elemental Guardian), Ubertip (Tooltip - Extended)
-{
-A powerful guardian of nature who specializes in spellcasting.
 }
 
 STRING 3620
@@ -36329,20 +36287,14 @@ STRING 6057
 When Avatar is activated, it gives the Mountain King bonus armor, bonus hit points, bonus damage and spell immunity. |n|cffffcc00Level 1|r - 20 damage, 5 armor, 300 hit points, 30 seconds.|n|cffffcc00Level 2|r - 40 damage, 10 armor, 600 hit points, 45 seconds.|n|cffffcc00Level 3|r - 60 damage, 15 armor, 900 hit points, 60 seconds.
 }
 
-STRING 6058
-// Abilities: A06E (Avatar), Tip (Tooltip - Normal)
-{
-Activate Avatar - [|cffffcc00Level 1|r]
-}
-
 STRING 6059
-// Abilities: A06E (Avatar), Tip (Tooltip - Normal)
+// Abilities: A0IT (Avatar), Tip (Tooltip - Normal)
 {
 Activate Avatar - [|cffffcc00Level 2|r]
 }
 
 STRING 6060
-// Abilities: A06E (Avatar), Tip (Tooltip - Normal)
+// Abilities: A0IT (Avatar), Tip (Tooltip - Normal)
 {
 Activate Avatar - [|cffffcc00Level 3|r]
 }
@@ -47341,12 +47293,6 @@ STRING 7889
 Q
 }
 
-STRING 7890
-// Units: etoe (Tree of Eternity), Ubertip (Tooltip - Extended)
-{
-Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Wisp, Keeper of the Grove|n|cfff5962dResearches:|R Improved Nature's Fury |n|cfff5962dAbilities:|R Force of Nature, Sacred Ground
-}
-
 STRING 7891
 // Abilities: A0SU (Righteous Blow), Researchubertip (Tooltip - Learn - Extended)
 {
@@ -50635,12 +50581,6 @@ STRING 8438
 Afterimage
 }
 
-STRING 8439
-// Abilities: A0OT (Afterimage), Ubertip (Tooltip - Normal - Extended)
-{
-The Guardian moves so fast he creates 3 afterimages who seemingly move on their own. Afterimages deal 100% damage and take 100% damage. Each image lasts 20 seconds.
-}
-
 STRING 8440
 // Abilities: A01J (Inferno Strike), Tip (Tooltip - Normal)
 {
@@ -52475,18 +52415,6 @@ STRING 8745
 // Abilities: A0HZ (Multi Shot), Researchhotkey (Hotkey - Learn)
 {
 R
-}
-
-STRING 8746
-// Abilities: A0IT (Avatar), Tip (Tooltip - Normal)
-{
-Activate Avatar - [|cffffcc00Level 2|r]
-}
-
-STRING 8747
-// Abilities: A0IT (Avatar), Tip (Tooltip - Normal)
-{
-Activate Avatar - [|cffffcc00Level 3|r]
 }
 
 STRING 8748
@@ -69488,18 +69416,6 @@ STRING 11581
 Mobile Form
 }
 
-STRING 11582
-// Abilities: A06E (Avatar), Ubertip (Tooltip - Normal - Extended)
-{
-Activate Avatar to give Ursoc <ANav,DataA1> bonus armor, <ANav,DataB1> bonus hit points, <AHav,DataC1> bonus damage and spell immunity. |nLasts <ANav,Dur1> seconds.
-}
-
-STRING 11583
-// Abilities: A06E (Avatar), Ubertip (Tooltip - Normal - Extended)
-{
-Activate Avatar to give Ursoc <ANav,DataA2> bonus armor, <ANav,DataB2> bonus hit points, <AHav,DataC2> bonus damage and spell immunity. |nLasts <ANav,Dur1> seconds.
-}
-
 STRING 11584
 // Abilities: A034 (Frostfall), Hotkey (Hotkey - Normal)
 {
@@ -73516,12 +73432,6 @@ STRING 12252
 // Abilities: A03B (Nature Aura), Researchtip (Tooltip - Learn)
 {
 Learn Nature Aura - [|cffffcc00Level %d|r]
-}
-
-STRING 12253
-// Abilities: A03B (Nature Aura), Researchubertip (Tooltip - Learn - Extended)
-{
-Cenarius' nature powers influence enemy units in 600 AOE, causing them to have reduced movement and attack speed.|n|n|cffffcc00Level 1|r - 6% movement speed and 5% attack speed decrease.|n|cffffcc00Level 2|r - 12% movement speed and 10% attack speed decrease.|n|cffffcc00Level 3|r - 18% movement speed and 15% attack speed decrease.|n|cffffcc00Level 4|r - 24% movement speed and 20% attack speed decrease.
 }
 
 STRING 12254
@@ -85614,12 +85524,6 @@ STRING 14268
 Research Blessing of Ursol
 }
 
-STRING 14269
-// Upgrades: R05X (Mark of the Claw), Ubertip (Tooltip - Extended)
-{
-Improves Druids of the Claw by increasing their armor upgrade by 1, hit points by 150, and damage by 10.
-}
-
 STRING 14270
 // Upgrades: R05W (Chaos), Name (Name)
 {
@@ -88877,12 +88781,6 @@ STRING 14816
 // Upgrades: R01H (Animal War Training), Tip (Tooltip)
 {
 Research Malorne's Infusion
-}
-
-STRING 14817
-// Upgrades: R01H (Animal War Training), Ubertip (Tooltip - Extended)
-{
-Increases the maximum hit points of all casters by 100 and increases armor by 2.|n|n|cffffd700Affects Druids of the Talon, Druids of the Branch, Druids of the Claw and Wisps.|r
 }
 
 STRING 14818
@@ -92160,12 +92058,6 @@ STRING 15372
 Blood Runes
 }
 
-STRING 15373
-// Units: n0CX (Enraged Ancient of War), EditorSuffix (Name - Editor Suffix)
-{
-(event)
-}
-
 STRING 15374
 // Abilities: A0LX (Frostbolt), Ubertip (Tooltip - Normal - Extended)
 {
@@ -92830,12 +92722,6 @@ STRING 15484
 (Charred Ancient)
 }
 
-STRING 15485
-// Units: n0CX (Enraged Ancient of War), Name (Name)
-{
-Enraged Ancient of War
-}
-
 STRING 15486
 // Units: n058 (Fel Crossbowman), Ubertip (Tooltip - Extended)
 {
@@ -92986,12 +92872,6 @@ STRING 15510
 (Twilight)
 }
 
-STRING 15511
-// Units: n0CY (Enraged Ancient of Lore), EditorSuffix (Name - Editor Suffix)
-{
-(event)
-}
-
 STRING 15512
 // Upgrades: R00G (Flare), Hotkey (Hotkey)
 {
@@ -93034,12 +92914,6 @@ STRING 15518
 Improves Necrolytes' Shadow Infusion by increasing its heal amount by 45 and reducing its mana cost to 0.
 }
 
-STRING 15519
-// Units: n0CY (Enraged Ancient of Lore), Name (Name)
-{
-Enraged Ancient of Lore
-}
-
 STRING 15520
 // Upgrades: R03O (Animal War Training), Ubertip (Tooltip - Extended)
 {
@@ -93080,12 +92954,6 @@ STRING 15526
 // Abilities: A0CO (Nature's Fury), Ubertip (Tooltip - Normal - Extended)
 {
 Blasts enemy units with a wave of Driduc Energy that deals <A0CO,DataB2> damage to the target, and <A0CO,DataA2> splash damage. 
-}
-
-STRING 15527
-// Units: n0CZ (Enraged Ancient of Wind), EditorSuffix (Name - Editor Suffix)
-{
-(event)
 }
 
 STRING 15528
@@ -93640,12 +93508,6 @@ STRING 15619
 Revive Vareesa
 }
 
-STRING 15620
-// Units: e00N (Keeper of the Grove), Ubertip (Tooltip - Extended)
-{
-Powerful Druidic caster. |n|cfff5962dAbilities:|R Nature's Fury, Haste, Banish, Cyclone, Spell Resistance |n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land units, air units, and trees.|r
-}
-
 STRING 15621
 // Abilities: A05E (Holy Aura), Ubertip (Tooltip - Normal - Extended)
 {
@@ -93698,12 +93560,6 @@ STRING 15629
 // Upgrades: R098 (Burning Oil), EditorSuffix (Editor Suffix)
 {
 (Fel Horde)
-}
-
-STRING 15630
-// Units: e01Z (Exodar Regalis), Ubertip (Tooltip - Extended)
-{
-Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Wisp |n|cfff5962dUpgrades to:|R Tree of Ages
 }
 
 STRING 15631
@@ -94214,12 +94070,6 @@ STRING 15715
 // Units: n003 (Improved Sun Tower), Ubertip (Tooltip - Extended)
 {
 Sunwell infused stone and steel, built to defend Quel'Thalas.|n|cfff5962dCan learn:|R Magic Sentry|n|n|cffffcc00Attacks land and air units.|r
-}
-
-STRING 15716
-// Units: n0CZ (Enraged Ancient of Wind), Name (Name)
-{
-Enraged Ancient of Wind
 }
 
 STRING 15717
@@ -95432,12 +95282,6 @@ STRING 15918
 // Upgrades: R00C (Black Gunpowder,Refined Gunpowder,Imbued Gunpowder), Hotkey (Hotkey)
 {
 X
-}
-
-STRING 15919
-// Units: n0D0 (Enraged Ancient of Wonder), EditorSuffix (Name - Editor Suffix)
-{
-(event)
 }
 
 STRING 15920
@@ -97301,7 +97145,7 @@ E
 }
 
 STRING 16230
-// Upgrades: R02T (Well Spring), Hotkey (Hotkey)
+// Upgrades: R040 (Magic Sentry), Hotkey (Hotkey)
 {
 X
 }
@@ -97319,7 +97163,7 @@ Z
 }
 
 STRING 16233
-// Upgrades: R040 (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: R047 (Marksmanship), Hotkey (Hotkey)
 {
 X
 }
@@ -97349,7 +97193,7 @@ Long range siege heavy ship.|n|n|cff99b4d1Can only train 6.|r|r|n|cffffcc00Attac
 }
 
 STRING 16238
-// Upgrades: R047 (Marksmanship), Hotkey (Hotkey)
+// Upgrades: R015 (Marksmanship), Hotkey (Hotkey)
 {
 X
 }
@@ -97367,7 +97211,7 @@ The hero progenerates Carrion Beetle from a target corpse to attack the hero's e
 }
 
 STRING 16241
-// Upgrades: R015 (Marksmanship), Hotkey (Hotkey)
+// Upgrades: R04P (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
 {
 X
 }
@@ -99070,18 +98914,6 @@ STRING 16524
 Wrath of Ragnaros - [|cffffcc00Level 4|r]
 }
 
-STRING 16525
-// Units: n0D0 (Enraged Ancient of Wonder), Name (Name)
-{
-Enraged Ancient of Wonder
-}
-
-STRING 16526
-// Units: n0D1 (Enraged Tree of Life), EditorSuffix (Name - Editor Suffix)
-{
-(event)
-}
-
 STRING 16527
 // Items: I00G (Summon Farmers), Tip (Tooltip - Basic)
 {
@@ -99686,12 +99518,6 @@ STRING 16627
 // Units: h092 (Order Inquisitor), Tip (Tooltip - Basic)
 {
 Train Order Inquisitor
-}
-
-STRING 16628
-// Units: n0D1 (Enraged Tree of Life), Name (Name)
-{
-Enraged Tree of Life
 }
 
 STRING 16629
@@ -100385,7 +100211,7 @@ X
 }
 
 STRING 16744
-// Upgrades: R04P (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
+// Upgrades: R03P (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 X
 }
@@ -100979,7 +100805,7 @@ Quest Completed: Tear it Down
 }
 
 STRING 16844
-// Upgrades: R03P (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R05C (Sorceress Adept Training,Sorceress Master Training), Hotkey (Hotkey)
 {
 X
 }
@@ -102473,7 +102299,7 @@ Summon Engineer
 }
 
 STRING 17093
-// Upgrades: R05C (Sorceress Adept Training,Sorceress Master Training), Hotkey (Hotkey)
+// Upgrades: R05D (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
 {
 X
 }
@@ -102485,7 +102311,7 @@ X
 }
 
 STRING 17095
-// Upgrades: R05D (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
+// Upgrades: R05G (Druid of the Claw Adept Training,Druid of the Claw Master Training), Hotkey (Hotkey)
 {
 X
 }
@@ -102497,7 +102323,7 @@ X
 }
 
 STRING 17097
-// Upgrades: R05G (Druid of the Claw Adept Training,Druid of the Claw Master Training), Hotkey (Hotkey)
+// Upgrades: R06X (Shaman Adept Training,Shaman Master Training), Hotkey (Hotkey)
 {
 X
 }
@@ -102509,7 +102335,7 @@ X
 }
 
 STRING 17099
-// Upgrades: R06X (Shaman Adept Training,Shaman Master Training), Hotkey (Hotkey)
+// Upgrades: R071 (Witch Doctor Adept Training,Witch Doctor Master Training), Hotkey (Hotkey)
 {
 X
 }
@@ -102796,6 +102622,12 @@ STRING 17146
 Increases magi mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Bloodlust.
 }
 
+STRING 17147
+// Units: etol (Tree of Life), Ubertip (Tooltip - Extended)
+{
+Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Wisp|n|cfff5962dResearches:|R Nature's Blessing|n|cfff5962dUpgrades to:|R Tree of Ages
+}
+
 STRING 17148
 // Abilities: A0QP (Immolation), Researchubertip (Tooltip - Learn - Extended)
 {
@@ -102818,6 +102650,24 @@ STRING 17151
 // Abilities: A0KK (Far Sight), EditorSuffix (Editor Suffix)
 {
 (Pink - Farseer)
+}
+
+STRING 17152
+// Units: etoe (Tree of Eternity), Ubertip (Tooltip - Extended)
+{
+Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Wisp, Keeper of the Grove|n|cfff5962dResearches:|R Nature's Blessing, Improved Nature's Fury, Full Scale Escalation|n|cfff5962dAbilities:|R Force of Nature, Sacred Ground
+}
+
+STRING 17153
+// Units: etoa (Tree of Ages), Ubertip (Tooltip - Extended)
+{
+Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Wisp|n|cfff5962dResearches:|R Nature's Blessing|n|cfff5962dAbilities:|R Force of Nature, Sacred Ground|n|cfff5962dUpgrades to:|R Tree of Eternity
+}
+
+STRING 17154
+// Units: edcm (Bear), Ubertip (Tooltip - Extended)
+{
+Powerful frontline melee unit. |n|cfff5962dAbilities:|R Roar, Cleaving Attack, Animal Fury|n|n|cffffcc00Attacks land units.|r
 }
 
 STRING 17155
@@ -102902,6 +102752,12 @@ STRING 17168
 // Abilities: A07K (Reincarnation), Ubertip (Tooltip - Normal - Extended)
 {
 When killed, this unit will come back to life. Reincarnation has a 600 second cooldown.
+}
+
+STRING 17169
+// Units: edcm (Bear), Tip (Tooltip - Basic)
+{
+Train Bear
 }
 
 STRING 17170
@@ -103024,6 +102880,30 @@ STRING 17190
 Wicked mystical Hero, adept at supporting armies.|n|cfff5962dCan Learn:|R Bloodlust Totem, Healing Wave, Brilliance Aura, Ascendance|n|n|cffffcc00Attacks land and air units.|R
 }
 
+STRING 17191
+// Units: edcm (Bear), Name (Name)
+{
+Bear
+}
+
+STRING 17192
+// Units: eaom (Ancient of War), Ubertip (Tooltip - Extended)
+{
+Ancient of the warrior Sentinels.|n|cfff5962dTrains:|R Sapling, Dryad, Siege Ancient|n|cfff5962dResearches:|R Improved Thorns, Crippling Poison, Deadly Poison|n|n|cffffcc00Attacks land units.|r
+}
+
+STRING 17193
+// Units: eaoe (Ancient of Lore), Ubertip (Tooltip - Extended)
+{
+Ancient keeper of the forest dwellers.|n|cfff5962dTrains:|R Druid of the Claw, Bear, Mountain Giant|n|cfff5962dResearches:|R Druid of the Claw Training, Resistant Skin|n|n|cffffcc00Attacks land units.|r
+}
+
+STRING 17194
+// Units: e00X (Elemental Guardian), Ubertip (Tooltip - Extended)
+{
+A powerful guardian of nature who specializes in spellcasting.|n|cfff5962dAbilities:|r Entangling Roots, Frost Armor, Frost Nova, Afterimage|n|n|cff99b4d1Can only train 1.|n|cffffcc00Attacks land and air units.|r
+}
+
 STRING 17195
 // Units: U027 (Steward of Magic), Awakentip (Tooltip - Awaken)
 {
@@ -103090,10 +102970,16 @@ STRING 17205
 Summon Putress
 }
 
-STRING 17208
+STRING 17206
+// Units: e00N (Keeper of the Grove), Ubertip (Tooltip - Extended)
+{
+Powerful Druidic caster. |n|cfff5962dAbilities:|R Nature's Fury, Haste, Banish, Cyclone, Spell Resistance, Resistant Skin |n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land units, air units, and trees.|r
+}
+
+STRING 17207
 // Units: H04U (Demigod), Ubertip (Tooltip - Extended)
 {
-Ancient hero, adept at sustaining damage and producing units.|n|cfff5962dTrains:|r Sea Turtle Hatchling, Sea Turtle|n|cfff5962dCan learn:|R Crushing Wave, Spiked Carapace, Devour, Tidal Storm|n|n|cffffcc00Attacks land units.|R
+Ancient hero, adept at sustaining damage and producing units.|n|cfff5962dTrains:|r Sea Turtle|n|cfff5962dCan learn:|R Crushing Wave, Spiked Carapace, Devour, Tidal Storm|n|n|cffffcc00Attacks land units.|R
 }
 
 STRING 17209
@@ -103162,6 +103048,12 @@ STRING 17219
 E
 }
 
+STRING 17220
+// Abilities: A0OT (Afterimage), EditorSuffix (Editor Suffix)
+{
+(Elemental Guardian)
+}
+
 STRING 17221
 // Upgrades: R01H (Animal War Training), Hotkey (Hotkey)
 {
@@ -103202,6 +103094,12 @@ STRING 17227
 // Abilities: A0W9 (Elemental Fire), Tip (Tooltip - Normal)
 {
 Elemental Fire - [|cffffcc00Level 1|r]
+}
+
+STRING 17228
+// Abilities: A0OT (Afterimage), Ubertip (Tooltip - Normal - Extended)
+{
+Creates <A0OT,DataA1> magical copies of the Elemental Guardian, and dispels all magic from the original. |nLasts <A0OT,Dur1> seconds.
 }
 
 STRING 17229
@@ -103516,10 +103414,28 @@ STRING 17280
 Strongest N'raqi Warriors.|n|cfff5962dAbilities:|R Otherworldy Rampage, Execute, Nether Eye, Evasion , Cleaving Attack, Resistant Skin|n|n|cff99b4d1Can only summon 6.|r|n|cffffcc00Attacks land units.|r
 }
 
+STRING 17281
+// Abilities: A06E (Avatar), Tip (Tooltip - Normal)
+{
+Avatar - [|cffffcc00Level 2|r]
+}
+
 STRING 17282
 // Units: U02C (Old God), Revivetip (Tooltip - Revive)
 {
 Revive
+}
+
+STRING 17283
+// Abilities: A06E (Avatar), Tip (Tooltip - Normal)
+{
+Avatar - [|cffffcc00Level 3|r]
+}
+
+STRING 17284
+// Abilities: A06E (Avatar), Ubertip (Tooltip - Normal - Extended)
+{
+Activate Avatar to give Ursoc <A06E,DataA1> bonus armor, <A06E,DataB1> bonus hit points, <A06E,DataC1> bonus damage and spell immunity. |nLasts <A06E,Dur1> seconds.
 }
 
 STRING 17285
@@ -103570,10 +103486,46 @@ STRING 17292
 Altar of Visions
 }
 
+STRING 17293
+// Abilities: A06E (Avatar), Ubertip (Tooltip - Normal - Extended)
+{
+Activate Avatar to give Ursoc <A06E,DataA2> bonus armor, <A06E,DataB2> bonus hit points, <A06E,DataC2> bonus damage and spell immunity. |nLasts <A06E,Dur2> seconds.
+}
+
+STRING 17294
+// Abilities: A06E (Avatar), Ubertip (Tooltip - Normal - Extended)
+{
+Activate Avatar to give Ursoc <A06E,DataA3> bonus armor, <A06E,DataB3> bonus hit points, <A06E,DataC3> bonus damage and spell immunity. |nLasts <A06E,Dur3> seconds.
+}
+
+STRING 17295
+// Abilities: A06E (Avatar), Tip (Tooltip - Normal)
+{
+Avatar - [|cffffcc00Level 1|r]
+}
+
+STRING 17296
+// Abilities: A0HT (Cycle of Rebirth), Ubertip (Tooltip - Normal - Extended)
+{
+Creates a Healing Bulb from a nearby corpse that will heal nearby units for 10 seconds. They will heal for a maximum of 600 hitpoints each.
+}
+
+STRING 17297
+// Buffs/Effects: B0AM (), Bufftip (Tooltip)
+{
+Afterimage
+}
+
 STRING 17298
 // Units: n0AT (Cathedral of Madness), Name (Name)
 {
 Cathedral of Madness
+}
+
+STRING 17299
+// Buffs/Effects: B0AM (), EditorSuffix (Editor Suffix)
+{
+(Elemental Guardian)
 }
 
 STRING 17300
@@ -103582,10 +103534,52 @@ STRING 17300
 Pulsating Portal
 }
 
+STRING 17301
+// Buffs/Effects: B0AM (), Buffubertip (Tooltip - Extended)
+{
+A duplicate illusion of the original Elemental Guardian.
+}
+
+STRING 17302
+// Upgrades: R05X (Mark of the Claw), Ubertip (Tooltip - Extended)
+{
+Improves Druids of the Claw and Bears by increasing their armor upgrade by 1, hit points by 150, and damage by 10.
+}
+
+STRING 17303
+// Upgrades: R01H (Animal War Training), Ubertip (Tooltip - Extended)
+{
+Increases the maximum hit points of all casters by 100 and increases armor by 2.|n|n|cffffd700Affects Druids of the Talon, Druids of the Claw, and Wisps.|r
+}
+
+STRING 17304
+// Upgrades: R02T (Well Spring), Hotkey (Hotkey)
+{
+F
+}
+
+STRING 17305
+// Upgrades: R02T (Well Spring), Ubertip (Tooltip - Extended)
+{
+Increases the amount of mana that can be stored in Moon Wells by <R02T,base1>, and their rate of mana regeneration by <R02T,base2,%>%.
+}
+
 STRING 17306
 // Units: h06U (Siphoning Crystal), Name (Name)
 {
 Siphoning Crystal
+}
+
+STRING 17307
+// Abilities: A03B (Nature Aura), Researchubertip (Tooltip - Learn - Extended)
+{
+Decreases nearby enemy units' movement speed and attack rate.|n|n|cffffcc00Level 1|r - 6% movement speed and 5% attack speed decrease.|n|cffffcc00Level 2|r - 12% movement speed and 10% attack speed decrease.|n|cffffcc00Level 3|r - 18% movement speed and 15% attack speed decrease.|n|cffffcc00Level 4|r - 24% movement speed and 20% attack speed decrease.
+}
+
+STRING 17308
+// Buffs/Effects: B08K (), EditorSuffix (Editor Suffix)
+{
+(Cenarius)
 }
 
 STRING 17309
@@ -104873,7 +104867,7 @@ X
 }
 
 STRING 17547
-// Upgrades: R071 (Witch Doctor Adept Training,Witch Doctor Master Training), Hotkey (Hotkey)
+// Upgrades: R07M (Shaman Adept Training,Shaman Master Training), Hotkey (Hotkey)
 {
 X
 }
@@ -105036,7 +105030,7 @@ X
 }
 
 STRING 17574
-// Upgrades: R07M (Shaman Adept Training,Shaman Master Training), Hotkey (Hotkey)
+// Upgrades: R07N (Necromancer Adept Training,Necromancer Master Training), Hotkey (Hotkey)
 {
 X
 }
@@ -106082,7 +106076,7 @@ W
 }
 
 STRING 17797
-// Upgrades: R07N (Necromancer Adept Training,Necromancer Master Training), Hotkey (Hotkey)
+// Upgrades: R078 (Spirit Walker Adept Training,Spirit Walker Master Training), Hotkey (Hotkey)
 {
 X
 }
@@ -106796,7 +106790,7 @@ X
 }
 
 STRING 17933
-// Upgrades: R078 (Spirit Walker Adept Training,Spirit Walker Master Training), Hotkey (Hotkey)
+// Upgrades: R08B (Long Rifles), Hotkey (Hotkey)
 {
 X
 }
@@ -107012,7 +107006,7 @@ Summon Water Elemental
 }
 
 STRING 17973
-// Upgrades: R08B (Long Rifles), Hotkey (Hotkey)
+// Upgrades: R08F (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 X
 }
@@ -108098,7 +108092,7 @@ Grants <A0WF,DataA1> bonus armor, <A0WF,DataB1> bonus hit points, <A0WF,DataC1> 
 }
 
 STRING 18188
-// Upgrades: R08F (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R08O (Naga Siren Adept Training,Naga Siren Master Training), Hotkey (Hotkey)
 {
 X
 }
@@ -108428,7 +108422,7 @@ STRING 18245
 }
 
 STRING 18246
-// Upgrades: R08O (Naga Siren Adept Training,Naga Siren Master Training), Hotkey (Hotkey)
+// Upgrades: R08R (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 X
 }
@@ -108867,7 +108861,7 @@ C
 }
 
 STRING 18323
-// Upgrades: R08R (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R02V (Naga Siren Adept Training,Naga Siren Master Training), Hotkey (Hotkey)
 {
 X
 }
@@ -109443,12 +109437,6 @@ Reduces nearby enemy units' attack damage by <A0WP,DataA2,%>% for <A0WP,Dur2> se
 }
 
 STRING 18452
-// Upgrades: R02V (Naga Siren Adept Training,Naga Siren Master Training), Hotkey (Hotkey)
-{
-X
-}
-
-STRING 18453
 // Upgrades: R02V (Naga Siren Adept Training,Naga Siren Master Training), Hotkey (Hotkey)
 {
 X
