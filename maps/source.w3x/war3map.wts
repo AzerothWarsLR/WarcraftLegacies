@@ -1819,12 +1819,6 @@ STRING 305
 Q
 }
 
-STRING 306
-// Units: ofor (War Mill), Ubertip (Tooltip - Extended)
-{
-Resource harvesting center and producer of Horde enhancements. |n|cfff5962dResearches:|R Weapon Upgdrades, Armor Upgrades, Reinforced Defenses, Spiked Barricades, Spiritual Infusion|n
-}
-
 STRING 307
 // Units: hwtw (Scout Tower), Hotkey (Hotkey)
 {
@@ -2357,12 +2351,6 @@ STRING 396
 // Units: nstw (Storm Wyrm), Hotkey (Hotkey)
 {
 W
-}
-
-STRING 397
-// Units: otbr (Batrider), Ubertip (Tooltip - Extended)
-{
-Swift flying bomber of the skies.|n|cfff5962dAbilities:|R Unstable Concoction, Acid Bomb|n|cfff5962dCan Learn:|R Liquid Fire, Troll Regeneration |n|n|cff99b4d1Can only train 12.|r|n|cffffcc00Attacks land units.|r
 }
 
 STRING 398
@@ -21209,12 +21197,6 @@ STRING 3543
 Revive Drek'Thar
 }
 
-STRING 3544
-// Units: h00C (Drek'Thar), Ubertip (Tooltip - Extended)
-{
-The first among the redeemed shaman of the Frostwolf Clan, Drek'thar is a blind, old, but immensely powerful member of the Horde. He was Thrall's mentor and teacher in the ways of shamanism.
-}
-
 STRING 3545
 // Abilities: A0D5 (Keep Commander Aura), EditorSuffix (Editor Suffix)
 {
@@ -32243,12 +32225,6 @@ STRING 5383
 Sends a horde of bats to deal <AUcs,DataA4> damage to each enemy unit in a cone.
 }
 
-STRING 5384
-// Units: ofrt (Fortress), Ubertip (Tooltip - Extended)
-{
-Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Peon, Far Seer|n|cfff5962dResearches:|R Improved Chain Lightning|n|cfff5962dAbilities:|R For The Horde!
-}
-
 STRING 5385
 // Units: o053 (Smithery), Hotkey (Hotkey)
 {
@@ -33321,12 +33297,6 @@ STRING 5563
 // Abilities: AOeq (Earthquake), Hotkey (Hotkey - Normal)
 {
 R
-}
-
-STRING 5564
-// Upgrades: Rolf (Liquid Fire), EditorSuffix (Editor Suffix)
-{
-(frostwolf)
 }
 
 STRING 5565
@@ -52283,12 +52253,6 @@ STRING 8723
 // Abilities: A0LT (Feral Spirit), Tip (Tooltip - Normal)
 {
 Feral Spirit
-}
-
-STRING 8724
-// Abilities: A0LT (Feral Spirit), Ubertip (Tooltip - Normal - Extended)
-{
-Summons 2 Spirit Wolf companions. Each wolf has <osw1,realHP> hit points and deals 21-22 damage. |nLasts <AOsf,Dur1> seconds. |n|n|cffffcc00Attacks land units.|r
 }
 
 STRING 8725
@@ -83047,7 +83011,7 @@ Makes the Tauren Pulverize ability stronger.
 }
 
 STRING 13856
-// Upgrades: R058 (Chaos), EditorSuffix (Editor Suffix)
+// Upgrades: Rolf (Liquid Fire), EditorSuffix (Editor Suffix)
 {
 (Frostwolf)
 }
@@ -83089,7 +83053,7 @@ Increases Witch Doctors' mana capacity, mana regeneration rate, attack damage an
 }
 
 STRING 13863
-// Upgrades: R01F (Chaos), EditorSuffix (Editor Suffix)
+// Upgrades: R058 (Chaos), EditorSuffix (Editor Suffix)
 {
 (Frostwolf)
 }
@@ -83119,7 +83083,7 @@ Increases the hit point regeneration of Troll units by 2.
 }
 
 STRING 13868
-// Upgrades: R00W (Magic Sentry), EditorSuffix (Editor Suffix)
+// Upgrades: R01F (Chaos), EditorSuffix (Editor Suffix)
 {
 (Frostwolf)
 }
@@ -83524,12 +83488,6 @@ STRING 13935
 // Abilities: A0GN (Ancestral Spirits), Hotkey (Hotkey - Normal)
 {
 X
-}
-
-STRING 13936
-// Upgrades: Rolf (Liquid Fire), Ubertip (Tooltip - Extended)
-{
-Gives Troll Batriders the Liquid Fire attack, which deals an additional 5 damage per second to buildings, stops them from being repaired, and reduces the attack rate of enemy buildings by 50%.
 }
 
 STRING 13937
@@ -85327,7 +85285,7 @@ Unstable conconuion level up
 }
 
 STRING 14236
-// Upgrades: R00R (Magic Sentry), EditorSuffix (Editor Suffix)
+// Upgrades: R00W (Magic Sentry), EditorSuffix (Editor Suffix)
 {
 (Frostwolf)
 }
@@ -88802,7 +88760,7 @@ This is a dummy upgrade used to enable Chaos abilities for the Silver Hand.
 }
 
 STRING 14821
-// Upgrades: R00H (Envenomed Spears), EditorSuffix (Editor Suffix)
+// Upgrades: R00R (Magic Sentry), EditorSuffix (Editor Suffix)
 {
 (Frostwolf)
 }
@@ -88976,7 +88934,7 @@ Allows Chimaeras to gain a temporary burst of increased attack rate.
 }
 
 STRING 14850
-// Upgrades: R00D (Envenomed Spears), EditorSuffix (Editor Suffix)
+// Upgrades: R00H (Envenomed Spears), EditorSuffix (Editor Suffix)
 {
 (Frostwolf)
 }
@@ -99790,12 +99748,6 @@ STRING 16673
 Hakkar
 }
 
-STRING 16674
-// Units: obar (War Camp), Ubertip (Tooltip - Extended)
-{
-Home to the warriors of the Horde.|n|cfff5962dTrains:|R Grunt, Headhunter, Bat Rider |n|cfff5962dResearches:|RTroll Regeneration, Liquid Fire
-}
-
 STRING 16675
 // Abilities: A0IW (Lightning Storm), Tip (Tooltip - Normal)
 {
@@ -102106,12 +102058,6 @@ STRING 17060
 Warrior Hero, adept at summoning insect minions and crushing enemies.|n|cfff5962dCan learn:|R Impale, Carrion Beetles, Spiked Carapace, Locust Swarm|n|n|cffffcc00Attacks land units.|R
 }
 
-STRING 17061
-// Units: Orkn (Chieftain of the Darkspear Tribe), Ubertip (Tooltip - Extended)
-{
-Mystical Hero, exceptional at healing and protecting allies.|n|cfff5962dCan learn:|R Voodoo Restauration, Serpent Ward, Brilliance Aura, Big Bad Voodoo|n|n|cffffcc00Attacks land and air units.|R
-}
-
 STRING 17062
 // Units: Nmag (Lord of Outland), Ubertip (Tooltip - Extended)
 {
@@ -103588,6 +103534,12 @@ STRING 17309
 Acid Spitter
 }
 
+STRING 17310
+// Units: otbr (Batrider), Ubertip (Tooltip - Extended)
+{
+Swift flying bomber of the skies.|n|cfff5962dAbilities:|R Unstable Concoction, Acid Bomb|n|cfff5962dCan Learn:|R Liquid Fire |n|n|cff99b4d1Can only train 12.|r|n|cffffcc00Attacks land units.|r
+}
+
 STRING 17311
 // Units: n0AZ (Sleepless Watcher), Name (Name)
 {
@@ -103600,16 +103552,46 @@ STRING 17312
 Improved Acid Spitter
 }
 
+STRING 17313
+// Units: ofrt (Fortress), Ubertip (Tooltip - Extended)
+{
+Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Peon, Far Seer|n|cfff5962dResearches:|R Improved Chain Lightning, Full Scale Escalation|n|cfff5962dAbilities:|R For The Horde!
+}
+
 STRING 17314
 // Units: n0B1 (Improved Sleepless Watcher), Name (Name)
 {
 Improved Sleepless Watcher
 }
 
+STRING 17315
+// Units: ofor (War Mill), Ubertip (Tooltip - Extended)
+{
+Resource harvesting center and producer of Horde enhancements. |n|cfff5962dResearches:|R Forged Weaponry, Armor Plating, Reinforced Defenses, Spiked Barricades, Spiritual Infusion, Improved Cannons, Fortified Hulls|n
+}
+
 STRING 17316
 // Units: n0B2 (Ominous Vault), Name (Name)
 {
 Ominous Vault
+}
+
+STRING 17317
+// Units: obar (War Camp), Ubertip (Tooltip - Extended)
+{
+Home to the warriors of the Horde.|n|cfff5962dTrains:|R Grunt, Headhunter, Bat Rider |n|cfff5962dResearches:|R Liquid Fire
+}
+
+STRING 17318
+// Units: Orkn (Chieftain of the Darkspear Tribe), Ubertip (Tooltip - Extended)
+{
+Mystical Hero, exceptional at healing and protecting allies.|n|cfff5962dCan learn:|R Voodoo Restoration, Serpent Ward, Brilliance Aura, Big Bad Voodoo|n|n|cffffcc00Attacks land and air units.|R
+}
+
+STRING 17319
+// Units: h00C (Drek'Thar), Ubertip (Tooltip - Extended)
+{
+Elder shaman and seer of the Frostwolf clan, adept at dealing area of effect damage and summoning units.|n|cfff5962dAbilities:|r Monsoon, Feral Spirit, Resistant Skin|n|n|cff99b4d1Can only train 1.|r|n|cffffcc00Attacks land and air units.|r
 }
 
 STRING 17320
@@ -103622,6 +103604,18 @@ STRING 17321
 // Units: h09E (Madness Pool), Tip (Tooltip - Basic)
 {
 Build Madness Pool
+}
+
+STRING 17322
+// Abilities: A0LT (Feral Spirit), Ubertip (Tooltip - Normal - Extended)
+{
+Summons <A0LT,DataB1> Frost Wolf companions. Each wolf has <nwwf,realHP> hit points and deals <nwwf,mindmg1> - <nwwf,maxdmg1> damage. |nLasts <A0LT,Dur1> seconds. |n|n|cffffcc00Attacks land units.|r
+}
+
+STRING 17323
+// Upgrades: Rolf (Liquid Fire), Ubertip (Tooltip - Extended)
+{
+Gives Troll Batriders the Liquid Fire attack, which deals an additional 5 damage per second to buildings, stops them from being repaired, and reduces their attack rate by 50%.
 }
 
 STRING 17324
@@ -103748,6 +103742,12 @@ STRING 17344
 // Abilities: A0HS (Gunner Pilot), Name (Name)
 {
 Gunner Pilot
+}
+
+STRING 17345
+// Upgrades: R03S (Chaos), EditorSuffix (Editor Suffix)
+{
+(Frostwolf)
 }
 
 STRING 17346
@@ -113789,7 +113789,7 @@ STRING 19319
 }
 
 STRING 19320
-// Upgrades: R03S (Chaos), EditorSuffix (Editor Suffix)
+// Upgrades: R00D (Envenomed Spears), EditorSuffix (Editor Suffix)
 {
 (Frostwolf)
 }
