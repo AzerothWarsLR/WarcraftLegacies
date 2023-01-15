@@ -1445,12 +1445,6 @@ STRING 240
 Revive The Fallen Guardian
 }
 
-STRING 241
-// Units: n062 (Shredder), Ubertip (Tooltip - Extended)
-{
-Goblin Shredders.|n|cfff5962dAbilities:|R Gather, Emergency Repairs, Oil Lubrification, Goblin Pilot|n|cfff5962dCan Learn:|R Cleaving Attack|n|n|cff99b4d1Can only build 12.|n|cffffcc00Attacks land units and trees.|r
-}
-
 STRING 242
 // Units: n0D9 (Slipstream Portal), EditorSuffix (Name - Editor Suffix)
 {
@@ -9935,12 +9929,6 @@ STRING 1656
 // Abilities: A072 (Acid Bomb), EditorSuffix (Editor Suffix)
 {
  (Faranell)
-}
-
-STRING 1657
-// Units: o01M (Engineer's Guild), Ubertip (Tooltip - Extended)
-{
-Centre of highly volatile innovation.|n|cfff5962dTrains:|R Shredder, Sapper, Zeppelin |n|cfff5962dAbilities:|R Reveal
 }
 
 STRING 1658
@@ -20525,6 +20513,12 @@ STRING 3421
 Heavy melee commander unit. Has the Command Aura ability.|n|cff99b4d1Can only train 12.|r|n|cffffcc00Attacks land units.|r
 }
 
+STRING 3422
+// Units: Ntin (Chief Engineer), Ubertip (Tooltip - Extended)
+{
+Versatile warrior Hero, adept at disrupting enemy armies.|n|cfff5962dAbilities:|R Oil Consumer|n|cfff5962dCan learn:|R Cluster Rockets, Pocket Factory, Engineering Upgrade, Overclock|n|n|cffffcc00Attacks land units.|R
+}
+
 STRING 3423
 // Upgrades: R00E (Sorceress Adept Training,Sorceress Master Training), EditorSuffix (Editor Suffix)
 {
@@ -22766,6 +22760,12 @@ STRING 3796
 // Units: O01Q (Dragonmaw Chieftain), Propernames (Proper Names)
 {
 Nek'rosh Skullcrusher
+}
+
+STRING 3797
+// Units: o01M (Engineer's Guild), Ubertip (Tooltip - Extended)
+{
+Centre of highly volatile innovation.|n|cfff5962dTrains:|R Shredder, War Zeppelin, Assault Tank |n|cfff5962dAbilities:|R Reveal, Oil Consumer
 }
 
 STRING 3798
@@ -39155,6 +39155,12 @@ STRING 6528
 Increases nearby friendly units' movement speed by 30% and attack rate by 25%.
 }
 
+STRING 6529
+// Units: n062 (Shredder), Ubertip (Tooltip - Extended)
+{
+Goblin Shredders.|n|cfff5962dAbilities:|R Gather, Emergency Repairs, Oil Lubrification, Goblin Pilot, Oil Consumer|n|cfff5962dCan Learn:|R Cleaving Attack|n|n|cff99b4d1Can only build 12.|n|cffffcc00Attacks land units and trees.|r
+}
+
 STRING 6530
 // Abilities: A0BW (Glimpse of the Old Gods), Tip (Tooltip - Normal)
 {
@@ -51931,6 +51937,18 @@ STRING 8655
 Q
 }
 
+STRING 8656
+// Units: o03Q (Scrapyard), Ubertip (Tooltip - Extended)
+{
+Resource harvesting center and producer of Goblin enhancements. |n|cfff5962dResearches:|R Forged Weaponry, Armor Plating, Reinforced Defenses, Spiritual Infusion, Improved Cannons, Fortified Hulls
+}
+
+STRING 8657
+// Units: h08Z (Assault Tank), Ubertip (Tooltip - Extended)
+{
+Heavily armored vehicle, adept at shooting down air units.|n|cfff5962dAbilities:|R Barrage, Explosive Ammo, Goblin Pilot, Emergency Repairs, Oil Consumer|n|n|cff99b4d1Can only build 5.|r|n|cffffcc00Attacks land and air units.|r
+}
+
 STRING 8658
 // Abilities: A0MK (SoulSacrificeDummy), Name (Name)
 {
@@ -53736,12 +53754,6 @@ STRING 8958
 // Abilities: A0KA (Will of the Ashbringer), Tip (Tooltip - Normal)
 {
 Will of the Ashbringer - [|cffffcc00Level 3|r]
-}
-
-STRING 8959
-// Abilities: A0M2 (Promise of Fortune), Researchubertip (Tooltip - Learn - Extended)
-{
-The Hero empowers nearby allies with a promise of riches, increasing their damage and armor for 30 seconds.|n|cffffcc00Level 1|r - Increases damage by 20% and armor by 2|n|cffffcc00Level 2|r - Increases damage by 25% and armor by 3|n|cffffcc00Level 3|r - Increases damage by 30% and armor by 4|n|cffffcc00Level 4|r - Increases damage by 35% and armor by 5
 }
 
 STRING 8960
@@ -65469,12 +65481,6 @@ STRING 10913
 Summons 4 Water Elementals with Bash and Crushing Wave to attack Jaina's enemies. |n|n|cffffcc00Attacks land and air units.|r
 }
 
-STRING 10914
-// Abilities: A0M2 (Promise of Fortune), Ubertip (Tooltip - Normal - Extended)
-{
-The hero empowers nearby allies with promises of riches, increasing their damage by 20% and armor by 2 for 30 seconds.
-}
-
 STRING 10915
 // Abilities: A095 (Summon Fel Stalker), EditorSuffix (Editor Suffix)
 {
@@ -69420,12 +69426,6 @@ STRING 11570
 // Abilities: A06G (Barrage), Ubertip (Tooltip - Normal - Extended)
 {
 Shoots a long distance arrows, dealing maximum 100 damage to enemies with successful hit. Stuns non-Hero units for 0.75 seconds. Has a range of 1200.
-}
-
-STRING 11571
-// Abilities: A0M2 (Promise of Fortune), Ubertip (Tooltip - Normal - Extended)
-{
-The hero empowers nearby allies with promises of riches, increasing their damage by 25% and armor by 3 for 30 seconds.
 }
 
 STRING 11572
@@ -80868,6 +80868,12 @@ STRING 13477
 Summon Scorpion
 }
 
+STRING 13478
+// Units: h091 (War Zeppelin), Ubertip (Tooltip - Extended)
+{
+Fine Goblin engineering with a deadshot pilot.|n|cfff5962dAbilities:|R Truesight, Flak Cannons, Flying Machine Bombs, Emergency Repairs, Oil Consumer|n|n|cff99b4d1Can only build 6.|r|n|cffffcc00Attacks land and air units.|r
+}
+
 STRING 13479
 // Buffs/Effects: B03X (), Buffubertip (Tooltip - Extended)
 {
@@ -87119,12 +87125,6 @@ STRING 14520
 X
 }
 
-STRING 14521
-// Units: o03Q (Scrapyard), Ubertip (Tooltip - Extended)
-{
-Resource harvesting center and producer of Goblin enhancements. |n|cfff5962dResearches:|R Forged Weaponry, Armor Plating, Reinforced Defenses, Spiked Barricades, Spiritual Infusion, Improved Cannons, Fortified Hulls
-}
-
 STRING 14522
 // Units: o042 (War Mill), Ubertip (Tooltip - Extended)
 {
@@ -88320,12 +88320,6 @@ STRING 14720
 Enslaved Dragon
 }
 
-STRING 14721
-// Units: h08Z (Assault Tank), Ubertip (Tooltip - Extended)
-{
-Heavily armored vehicle, adept at shooting down air units.|n|cfff5962dAbilities:|R Barrage, Explosive Ammo, Goblin Pilot, Emergency Repairs|n|n|cff99b4d1Can only build 5.|r|n|cffffcc00Attacks land and air units.|r
-}
-
 STRING 14722
 // Upgrades: R021 (Magic Sentry), Name (Name)
 {
@@ -88567,12 +88561,6 @@ STRING 14761
 Increases Geomancers' mana capacity, mana regeneration rate, attack damage and gives them the ability cast Healing Shield.
 }
 
-STRING 14762
-// Units: h091 (War Zeppelin), Ubertip (Tooltip - Extended)
-{
-Fine Goblin engineering with a deadshot pilot.|n|cfff5962dAbilities:|R Truesight, Flak Cannons, Flying Machine Bombs, Emergency Repairs|n|n|cff99b4d1Can only build 6.|r|n|cffffcc00Attacks land and air units.|r
-}
-
 STRING 14763
 // Upgrades: R03W (Magic Sentry), Hotkey (Hotkey)
 {
@@ -88733,12 +88721,6 @@ STRING 14789
 // Upgrades: R01N (Defend), Ubertip (Tooltip - Extended)
 {
 Improves all non-Hero units by increasing their damage number of dice by 1, hit points by 100, and armor level by 1.
-}
-
-STRING 14790
-// Units: h011 (Intercontinental Artillery), Ubertip (Tooltip - Extended)
-{
-Massive Artillery. Can use up a ton of oil to fire a devastating, delayed strike anywhere on the map.|n|cfff5962dAbilities:|r Intercontinental Bombardment
 }
 
 STRING 14791
@@ -89311,6 +89293,12 @@ STRING 14885
 Improves War Golems' Spell Resistance by causing it to reduce the damage taken from spells and Magic attacks by 90%.
 }
 
+STRING 14886
+// Units: h011 (Intercontinental Artillery), Ubertip (Tooltip - Extended)
+{
+Massive Artillery. Can use up a ton of oil to fire a devastating, delayed strike anywhere on the map.|n|cfff5962dAbilities:|r Intercontinental Bombardment, Oil Consumer
+}
+
 STRING 14887
 // Upgrades: R03K (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
 {
@@ -89423,6 +89411,12 @@ STRING 14905
 // Upgrades: R00W (Magic Sentry), Ubertip (Tooltip - Extended)
 {
 Causes Taurens and Spirit Walkers to take less damage from attacks.
+}
+
+STRING 14906
+// Abilities: A0M2 (Promise of Fortune), Researchubertip (Tooltip - Learn - Extended)
+{
+Empowers nearby friendly units, increasing their damage and armor for <A0M2,Dur1> seconds.|n|cffffcc00Level 1|r - Increases damage by 20% and armor by 2.|n|cffffcc00Level 2|r - Increases damage by 25% and armor by 3.|n|cffffcc00Level 3|r - Increases damage by 30% and armor by 4.|n|cffffcc00Level 4|r - Increases damage by 35% and armor by 5.
 }
 
 STRING 14907
@@ -90047,6 +90041,12 @@ STRING 15010
 // Upgrades: R00G (Flare), Ubertip (Tooltip - Extended)
 {
 Allows Farstriders to use Feint ability, which turns them invisible for 5 seconds and increases their movement speed by 50%.
+}
+
+STRING 15011
+// Abilities: A0M2 (Promise of Fortune), Ubertip (Tooltip - Normal - Extended)
+{
+Empower nearby friendly units, increasing their damage by <A0M2,DataA1,%>% and armor by <A0M2,DataB1> for <A0M2,Dur1> seconds.
 }
 
 STRING 15012
@@ -90860,6 +90860,12 @@ STRING 15155
 // Units: o05C (Luminarch), EditorSuffix (Name - Editor Suffix)
 {
 (Draenei)
+}
+
+STRING 15156
+// Abilities: A0M2 (Promise of Fortune), Ubertip (Tooltip - Normal - Extended)
+{
+Empower nearby friendly units, increasing their damage by <A0M2,DataA2,%>% and armor by <A0M2,DataB2> for <A0M2,Dur2> seconds.
 }
 
 STRING 15157
@@ -91732,12 +91738,6 @@ STRING 15301
 // Abilities: A0H6 (Mass Ice Armor), Name (Name)
 {
 Mass Ice Armor
-}
-
-STRING 15302
-// Units: Ntin (Chief Engineer), Ubertip (Tooltip - Extended)
-{
-Versatile warrior Hero, adept at disrupting enemy armies.|n|cfff5962dCan Learn:|R Cluster Rockets, Pocket Factory, Engineering Upgrade, Overclock|n|n|cffffcc00Attacks land units.|R
 }
 
 STRING 15303
@@ -96564,6 +96564,12 @@ STRING 16106
 Defensive structure.  |n|n|cffffcc00Attacks land and air units.|r
 }
 
+STRING 16107
+// Abilities: A0M2 (Promise of Fortune), Ubertip (Tooltip - Normal - Extended)
+{
+Empower nearby friendly units, increasing their damage by <A0M2,DataA3,%>% and armor by <A0M2,DataB3> for <A0M2,Dur3> seconds.
+}
+
 STRING 16108
 // Units: o057 (Vault of Relics), Ubertip (Tooltip - Extended)
 {
@@ -98212,6 +98218,12 @@ STRING 16382
  (Lordaeron Tower)
 }
 
+STRING 16383
+// Abilities: A0M2 (Promise of Fortune), Ubertip (Tooltip - Normal - Extended)
+{
+Empower nearby friendly units, increasing their damage by <A0M2,DataA4,%>% and armor by <A0M2,DataB4> for <A0M2,Dur4> seconds.
+}
+
 STRING 16384
 // Units: H08Q (High Priestess), Propernames (Proper Names)
 {
@@ -98698,6 +98710,12 @@ STRING 16464
 Armory of the Silvermoon forces.|n|cfff5962dTrains:|R Swordsman, Ranger, Ballista|n|cfff5962dResearches:|R Precision Shots, Enchanted Bowstrings, Sunfury Training
 }
 
+STRING 16465
+// Abilities: A0OB (Call Trade Prince Guards), Researchubertip (Tooltip - Learn - Extended)
+{
+Summons several Trade Prince Guards for <A0OB,Dur1> seconds. Each guard has Perfect Defend, Taunt, and Resistant Skin. |n|n|cffffcc00Level 1|r - 2 Guards.|n|cffffcc00Level 2|r - 3 Guards.|n|cffffcc00Level 3|r - 4 Guards. |n|cffffcc00Level 4|r - 5 Guards.
+}
+
 STRING 16466
 // Units: h08S (Undercity), Ubertip (Tooltip - Extended)
 {
@@ -98972,6 +98990,12 @@ STRING 16511
 // Upgrades: R06S (Chaos), Name (Name)
 {
 Quest Completed: The Brothers Stormrage
+}
+
+STRING 16512
+// Abilities: A0OB (Call Trade Prince Guards), Ubertip (Tooltip - Normal - Extended)
+{
+Summons <A0OB,DataA1> Trade Prince Guards for <A0OB,Dur1> seconds. Each guard has Perfect Defend, Taunt, and Resistant Skin.
 }
 
 STRING 16513
@@ -100660,6 +100684,12 @@ STRING 16793
 Chilling Aura
 }
 
+STRING 16794
+// Abilities: A0OB (Call Trade Prince Guards), Ubertip (Tooltip - Normal - Extended)
+{
+Summons <A0OB,DataA2> Trade Prince Guards for <A0OB,Dur2> seconds. Each guard has Perfect Defend, Taunt, and Resistant Skin.
+}
+
 STRING 16795
 // Abilities: A0TE (Fishing Net), Tip (Tooltip - Normal)
 {
@@ -100850,12 +100880,6 @@ STRING 16826
 // Abilities: A0P3 (Mana Burn), EditorSuffix (Editor Suffix)
 {
 (troll - zandalar)
-}
-
-STRING 16827
-// Abilities: A0M2 (Promise of Fortune), Ubertip (Tooltip - Normal - Extended)
-{
-The hero empowers nearby allies with promises of riches, increasing their damage by 30% and armor by 4 for 30 seconds.
 }
 
 STRING 16828
@@ -101800,6 +101824,12 @@ STRING 16984
 The hero enters a frenzy state gaining 20 bonus damage and 100% lifesteal.|n|nLasts 8 seconds.
 }
 
+STRING 16985
+// Abilities: A0OB (Call Trade Prince Guards), Ubertip (Tooltip - Normal - Extended)
+{
+Summons <A0OB,DataA3> Trade Prince Guards for <A0OB,Dur3> seconds. Each guard has Perfect Defend, Taunt, and Resistant Skin.
+}
+
 STRING 16986
 // Abilities: A078 (Holy Shackles), EditorSuffix (Editor Suffix)
 {
@@ -101924,6 +101954,12 @@ STRING 17006
 // Abilities: A0QJ (Corrupted Lightning), Researchubertip (Tooltip - Learn - Extended)
 {
 Calls forth a cone of lightning to damage enemies. |n|n|cffffcc00Level 1|r - 250 damage per unit. |n|cffffcc00Level 2|r - 400 damage per unit. |n|cffffcc00Level 3|r - 550 damage per unit.
+}
+
+STRING 17007
+// Abilities: A0OB (Call Trade Prince Guards), Ubertip (Tooltip - Normal - Extended)
+{
+Summons <A0OB,DataA4> Trade Prince Guards for <A0OB,Dur4> seconds. Each guard has Perfect Defend, Taunt, and Resistant Skin.
 }
 
 STRING 17008
@@ -102074,6 +102110,12 @@ STRING 17032
 // Buffs/Effects: B03H (Blood Fury), EditorName (Name (Editor Only))
 {
 Blood Fury
+}
+
+STRING 17033
+// Buffs/Effects: B0AL (), Bufftip (Tooltip)
+{
+Promise of Fortune
 }
 
 STRING 17034
@@ -102736,6 +102778,18 @@ STRING 17143
 Increases magi mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Rain of Fire.
 }
 
+STRING 17144
+// Buffs/Effects: B0AL (), EditorSuffix (Editor Suffix)
+{
+(Gallywix)
+}
+
+STRING 17145
+// Buffs/Effects: B0AL (), Buffubertip (Tooltip - Extended)
+{
+This unit has Promise of Fortune; its attack damage and armor have been increased.
+}
+
 STRING 17146
 // Upgrades: R06X (Shaman Adept Training,Shaman Master Training), Ubertip (Tooltip - Extended)
 {
@@ -102890,12 +102944,6 @@ STRING 17176
 // Units: H098 (Sunfury Mastermind), Ubertip (Tooltip - Extended)
 {
 Warrior Hero, adept at disrupting enemies and offensive magic.|n|cfff5962dCan Learn:|R Arcane Blast, Silence, Retribution Aura, Arcane Burst|n|n|cffffcc00Attacks land units.|R
-}
-
-STRING 17177
-// Abilities: A0M2 (Promise of Fortune), Ubertip (Tooltip - Normal - Extended)
-{
-The hero empowers nearby allies with promises of riches, increasing their damage by 35% and armor by 5 for 30 seconds.
 }
 
 STRING 17178
@@ -103774,12 +103822,6 @@ STRING 17356
 Learn Call Trade Prince Guards - [|cffffcc00Level %d|r]
 }
 
-STRING 17357
-// Abilities: A0OB (Call Trade Prince Guards), Researchubertip (Tooltip - Learn - Extended)
-{
-Gallywix calls for his elite bodyguards for defense. Has Defend, Taunt and Resistant skin. |nReinforcements last 60 seconds. |n|n|cffffcc00Level 1|r - 2 Guards.|n|cffffcc00Level 2|r - 3 Guards.|n|cffffcc00Level 3|r - 4 Guards. |n|cffffcc00Level 4|r - 5 Guards.
-}
-
 STRING 17358
 // Abilities: A0OB (Call Trade Prince Guards), Tip (Tooltip - Normal)
 {
@@ -103802,30 +103844,6 @@ STRING 17361
 // Abilities: A0OB (Call Trade Prince Guards), Tip (Tooltip - Normal)
 {
 Call Trade Prince Guard - [|cffffcc00Level 4|r]
-}
-
-STRING 17362
-// Abilities: A0OB (Call Trade Prince Guards), Ubertip (Tooltip - Normal - Extended)
-{
-Calls forth 2 Guards.
-}
-
-STRING 17363
-// Abilities: A0OB (Call Trade Prince Guards), Ubertip (Tooltip - Normal - Extended)
-{
-Calls forth 3 Guards.
-}
-
-STRING 17364
-// Abilities: A0OB (Call Trade Prince Guards), Ubertip (Tooltip - Normal - Extended)
-{
-Calls forth 4 Guards.
-}
-
-STRING 17365
-// Abilities: A0OB (Call Trade Prince Guards), Ubertip (Tooltip - Normal - Extended)
-{
-Calls forth 5 Guards.
 }
 
 STRING 17366
