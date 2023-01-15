@@ -48,6 +48,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
           Constants.ITEM_I00J_FELO_MELORN
         }
       };
+      LegendaryHeroManager.Register(LegendAnasterian);
 
       LegendRommath = new LegendaryHero("Grand Magister Rommath")
       {
