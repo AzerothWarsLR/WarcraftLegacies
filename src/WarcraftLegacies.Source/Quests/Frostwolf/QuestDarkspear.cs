@@ -45,7 +45,7 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
     /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)
     {
-        completingFaction.Player?.RescueGroup(_rescueUnits);
+        completingFaction.Player.RescueGroup(_rescueUnits);
     }
   }
 }

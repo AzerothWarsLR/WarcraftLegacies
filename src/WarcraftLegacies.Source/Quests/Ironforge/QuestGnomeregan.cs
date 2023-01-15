@@ -50,7 +50,7 @@ namespace WarcraftLegacies.Source.Quests.Ironforge
     protected override void OnComplete(Faction completingFaction)
     {
       SetPlayerTechResearched(completingFaction.Player, FourCC("R05Q"), 1);
-      completingFaction.Player?.RescueGroup(_rescueUnits);
+      completingFaction.Player.RescueGroup(_rescueUnits);
     }
 
     protected override void OnAdd(Faction whichFaction)

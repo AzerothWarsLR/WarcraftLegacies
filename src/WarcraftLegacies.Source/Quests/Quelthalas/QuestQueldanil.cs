@@ -31,7 +31,7 @@ namespace WarcraftLegacies.Source.Quests.Quelthalas
 
     protected override void OnComplete(Faction completingFaction)
     {
-      completingFaction.Player?.RescueGroup(_rescueUnits);
+      completingFaction.Player.RescueGroup(_rescueUnits);
     }
   }
 }

@@ -59,7 +59,7 @@ namespace WarcraftLegacies.Source.Quests.Druids
     /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)
     {
-      completingFaction.Player?.RescueGroup(_moongladeUnits);
+      completingFaction.Player.RescueGroup(_moongladeUnits);
       _worldTree.Rescue(completingFaction.Player);
       if (LegendDruids.LegendMalfurion.Unit == null)
       {

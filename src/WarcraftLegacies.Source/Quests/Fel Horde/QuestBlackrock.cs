@@ -52,7 +52,7 @@ namespace WarcraftLegacies.Source.Quests.Fel_Horde
 
     /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction) => 
-      completingFaction.Player?.RescueGroup(_rescueUnits);
+      completingFaction.Player.RescueGroup(_rescueUnits);
 
     /// <inheritdoc />
     protected override void OnAdd(Faction whichFaction) => 

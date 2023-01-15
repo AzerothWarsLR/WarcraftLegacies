@@ -54,7 +54,7 @@ namespace WarcraftLegacies.Source.Quests.Dragonmaw
     {
       if (completingFaction?.Player == GetLocalPlayer())
         PlayThematicMusic("war3mapImported\\DragonmawTheme.mp3");
-      completingFaction.Player?.RescueGroup(_rescueUnits);
+      completingFaction.Player.RescueGroup(_rescueUnits);
     }
   }
 }
