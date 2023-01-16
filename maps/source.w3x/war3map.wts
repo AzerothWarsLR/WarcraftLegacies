@@ -2907,7 +2907,7 @@ STRING 485
 }
 
 STRING 486
-// Units: ocbw (Fel Burrow), EditorSuffix (Name - Editor Suffix)
+// Units: nina (Infernal Juggernaut), EditorSuffix (Name - Editor Suffix)
 {
 (Fel Horde)
 }
@@ -2922,12 +2922,6 @@ STRING 488
 // Units: ocbw (Fel Burrow), Tip (Tooltip - Basic)
 {
 Build Fel Orc Burrow
-}
-
-STRING 489
-// Units: ocbw (Fel Burrow), Ubertip (Tooltip - Extended)
-{
-Provides 10 food, which increases the maximum number of units that can be trained. Fel Orc Peons can garrison inside to attack enemy units. |n|n|cffffcc00Attacks land and air units.|r
 }
 
 STRING 490
@@ -3848,6 +3842,12 @@ STRING 642
 Train Redeemed Highborne
 }
 
+STRING 643
+// Units: njks (Jailor Kassan), Ubertip (Tooltip - Extended)
+{
+Powerful anti-magic melee unit.|nThe infamous warden of Dalaran's dungeons.|n|n|cfff5962dAbilities:|R Charge!, Resistant Skin, Binding Shackles, Heavy Armor, Perfect Defend|n|cffffcc00Attacks land units.|r
+}
+
 STRING 644
 // Units: nnht (Nether Dragon Hatchling), Tip (Tooltip - Basic)
 {
@@ -4107,12 +4107,6 @@ STRING 686
 Revive - Jailor Kassan
 }
 
-STRING 687
-// Units: njks (Jailor Kassan), Ubertip (Tooltip - Extended)
-{
-The Kirin Tor's jailor for their dungeons. He guards the mage's failed experiments from running amuck in Dalaran and is their sole guardian for their most precious artifacts.
-}
-
 STRING 688
 // Units: hgra (Gryphon Aviary), Hotkey (Hotkey)
 {
@@ -4174,7 +4168,7 @@ C
 }
 
 STRING 698
-// Units: nina (Infernal Juggernaut), EditorSuffix (Name - Editor Suffix)
+// Units: ndfl (Defiled Fountain of Life), EditorSuffix (Name - Editor Suffix)
 {
 (Fel Horde)
 }
@@ -5092,14 +5086,8 @@ STRING 850
 Upgrade to Kirin Tor Tower
 }
 
-STRING 851
-// Units: ndgt (Kirin Tor Tower), Ubertip (Tooltip - Extended)
-{
-Dalaran's defense tower.|n|cfff5962dCan Learn:|R Magic Sentry|n|n|cffffcc00Attacks land and air units.|r
-}
-
 STRING 852
-// Units: ndfl (Defiled Fountain of Life), EditorSuffix (Name - Editor Suffix)
+// Units: nchw (Fel Warlock), EditorSuffix (Name - Editor Suffix)
 {
 (Fel Horde)
 }
@@ -5117,7 +5105,7 @@ Corrupted life spring replenishing the soldiers of the Fel Horde.|n|cfff5962dAbi
 }
 
 STRING 855
-// Units: nchw (Fel Warlock), EditorSuffix (Name - Editor Suffix)
+// Units: nchr (Fel Raider), EditorSuffix (Name - Editor Suffix)
 {
 (Fel Horde)
 }
@@ -5183,7 +5171,7 @@ Felsteel Plating
 }
 
 STRING 866
-// Units: nchr (Fel Raider), EditorSuffix (Name - Editor Suffix)
+// Units: nchg (Fel Grunt), EditorSuffix (Name - Editor Suffix)
 {
 (Fel Horde)
 }
@@ -5207,7 +5195,7 @@ Blood Rune
 }
 
 STRING 870
-// Units: nchg (Fel Grunt), EditorSuffix (Name - Editor Suffix)
+// Units: nbdm (Blackrock Dragonkin), EditorSuffix (Name - Editor Suffix)
 {
 (Fel Horde)
 }
@@ -5228,12 +5216,6 @@ STRING 873
 // Units: nchr (Fel Raider), Tip (Tooltip - Basic)
 {
 Train Fel Raider
-}
-
-STRING 874
-// Units: n086 (Fel Death Knight), Ubertip (Tooltip - Extended)
-{
-The Fel Death Knights of the Shadow Council are strong and cunning sorcerers. |n|cfff5962dAbilities:|R Dark Energy, Silence, Soul Funnel|n|n|cff99b4d1Can only train 6.|n|cffffcc00Attacks land and air units.|r
 }
 
 STRING 875
@@ -5279,7 +5261,7 @@ STRING 881
 }
 
 STRING 882
-// Units: nbdm (Blackrock Dragonkin), EditorSuffix (Name - Editor Suffix)
+// Units: nbdk (Obsidian Drake), EditorSuffix (Name - Editor Suffix)
 {
 (Fel Horde)
 }
@@ -5531,7 +5513,7 @@ Dragonspawn Overseer
 }
 
 STRING 924
-// Units: nbdk (Obsidian Drake), EditorSuffix (Name - Editor Suffix)
+// Units: Nmag (Lord of Outland), EditorSuffix (Name - Editor Suffix)
 {
 (Fel Horde)
 }
@@ -5561,7 +5543,7 @@ Spawn of Dragonmaw breeding.|n|cfff5962dAbilities:|R Evasion, Critical Strike, C
 }
 
 STRING 929
-// Units: Nmag (Lord of Outland), EditorSuffix (Name - Editor Suffix)
+// Units: Nbbc (Warchief of the Blackrock Clan), EditorSuffix (Name - Editor Suffix)
 {
 (Fel Horde)
 }
@@ -7575,7 +7557,7 @@ Revive Mannoroth
 }
 
 STRING 1264
-// Units: Nbbc (Warchief of the Blackrock Clan), EditorSuffix (Name - Editor Suffix)
+// Units: u018 (Eye of Grillok), EditorSuffix (Name - Editor Suffix)
 {
 (Fel Horde)
 }
@@ -7599,7 +7581,7 @@ Revive Rend
 }
 
 STRING 1268
-// Units: u018 (Eye of Grillok), EditorSuffix (Name - Editor Suffix)
+// Units: u00V (Necrolyte), EditorSuffix (Name - Editor Suffix)
 {
 (Fel Horde)
 }
@@ -7872,12 +7854,6 @@ STRING 1313
 // Units: o02V (Altar of Domination), Hotkey (Hotkey)
 {
 X
-}
-
-STRING 1314
-// Units: owar (Bonebreaker), Ubertip (Tooltip - Extended)
-{
-Strong mounted warrior of Outland.|n|cfff5962dAbilities:|R Charge, Self-Bloodlust, Bash, Pillage|n|cfff5962dCan learn:|R Felsteel Plating, Blood Runes|n|n|cffffcc00Attacks land units.|r
 }
 
 STRING 1315
@@ -8185,12 +8161,6 @@ STRING 1365
 Demigod of the Night Elves
 }
 
-STRING 1366
-// Units: o01L (Executioner), Ubertip (Tooltip - Extended)
-{
-Powerful Orc warrior that serves the Shattered Hand.|n|cfff5962dAbilities:|R Execute, Thunder Clap, Self-Bloodlust, Rampage, Cleaving Attack|n|cfff5962dCan learn:|R Blood Runes, Felsteel Plating|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land units.|r
-}
-
 STRING 1367
 // Units: O04H (Fire Ascendant), Revivetip (Tooltip - Revive)
 {
@@ -8474,7 +8444,7 @@ Worshipper and structure summoner of C'thun.|n|cfff5962dAbilities:|R Unsummon Bu
 }
 
 STRING 1414
-// Units: u00V (Necrolyte), EditorSuffix (Name - Editor Suffix)
+// Units: u00Q (Treasury), EditorSuffix (Name - Editor Suffix)
 {
 (Fel Horde)
 }
@@ -8582,7 +8552,7 @@ STRING 1431
 }
 
 STRING 1432
-// Units: u00Q (Treasury), EditorSuffix (Name - Editor Suffix)
+// Units: o01O (Demolisher), EditorSuffix (Name - Editor Suffix)
 {
 (Fel Horde)
 }
@@ -8630,7 +8600,7 @@ Turns all enemy units in a 350 area into a sheep. The targeted unit retains its 
 }
 
 STRING 1440
-// Units: o01O (Demolisher), EditorSuffix (Name - Editor Suffix)
+// Units: n0AP (Focal Demon Gate), EditorSuffix (Name - Editor Suffix)
 {
 (Fel Horde)
 }
@@ -9872,7 +9842,7 @@ Last survivor of the lost Dark Scar Clan, Nazgrel has since vetted his loyalty t
 }
 
 STRING 1647
-// Units: n0AP (Focal Demon Gate), EditorSuffix (Name - Editor Suffix)
+// Units: n070 (Nether Drake), EditorSuffix (Name - Editor Suffix)
 {
 (Fel Horde)
 }
@@ -10928,7 +10898,7 @@ An incredibly powerful warrior. Can use Impale, Locus Swarm, Wind Walk and Blood
 }
 
 STRING 1823
-// Units: n070 (Nether Drake), EditorSuffix (Name - Editor Suffix)
+// Units: n058 (Fel Crossbowman), EditorSuffix (Name - Editor Suffix)
 {
 (Fel Horde)
 }
@@ -10994,7 +10964,7 @@ Upgrade to Improved Flame Pillar
 }
 
 STRING 1834
-// Units: n0AN (Improved Flame Pillar), Ubertip (Tooltip - Extended)
+// Units: n0AL (Improved Iron Keep), Ubertip (Tooltip - Extended)
 {
 Launch even larger boulders.|n|n|cffffcc00Attacks land units.|r
 }
@@ -11048,7 +11018,7 @@ Upgrade to Improved Iron Keep
 }
 
 STRING 1843
-// Units: n0AL (Improved Iron Keep), Ubertip (Tooltip - Extended)
+// Units: n0AJ (Boulder Tower), Ubertip (Tooltip - Extended)
 {
 Launch even larger boulders.|n|n|cffffcc00Attacks land units.|r
 }
@@ -11063,18 +11033,6 @@ STRING 1845
 // Units: n05V (Shadow Weaver), Hotkey (Hotkey)
 {
 W
-}
-
-STRING 1846
-// Units: h068 (Observatory), Ubertip (Tooltip - Extended)
-{
-Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Farmer, Whelp, Kirin Tor, Crystal Lord|n|cfff5962dResearches:|R Improved Forked Lightning|n|cfff5962dAbilities:|R Replenish Mana
-}
-
-STRING 1847
-// Units: h066 (Conclave), Ubertip (Tooltip - Extended)
-{
-Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Farmer, Whelp|n|cfff5962dAbilities:|R Replenish Mana
 }
 
 STRING 1848
@@ -11099,12 +11057,6 @@ STRING 1851
 // Units: n0AJ (Boulder Tower), Tip (Tooltip - Basic)
 {
 Upgrade to Improved Boulder Tower
-}
-
-STRING 1852
-// Units: n0AJ (Boulder Tower), Ubertip (Tooltip - Extended)
-{
-Launch even larger boulders.|n|n|cffffcc00Attacks land units.|r
 }
 
 STRING 1853
@@ -11971,7 +11923,7 @@ E
 }
 
 STRING 1997
-// Units: n08A (Neltharaku), EditorSuffix (Name - Editor Suffix)
+// Units: n064 (War Master Voone), EditorSuffix (Name - Editor Suffix)
 {
 (Fel Horde-Demi)
 }
@@ -11992,12 +11944,6 @@ STRING 2000
 // Units: n08A (Neltharaku), Tip (Tooltip - Basic)
 {
 Revive Neltharaku
-}
-
-STRING 2001
-// Units: n08A (Neltharaku), Ubertip (Tooltip - Extended)
-{
-Patriarch of the Netherwing Flight, Naltharaku struggles to survive in a harsh world that is not of his origin. Enslaved by the remnants of the Dragonmaw Clan, he fights those that his masters deem a threat.
 }
 
 STRING 2002
@@ -13469,7 +13415,7 @@ Dragons tasked by the Titans with the safeguarding of nature on Azeroth.|n|cfff5
 }
 
 STRING 2247
-// Units: n064 (War Master Voone), EditorSuffix (Name - Editor Suffix)
+// Units: n05T (Kazzak the Supreme), EditorSuffix (Name - Editor Suffix)
 {
 (Fel Horde-Demi)
 }
@@ -13484,18 +13430,6 @@ STRING 2249
 // Units: n064 (War Master Voone), Name (Name)
 {
 War Master Voone
-}
-
-STRING 2250
-// Units: n064 (War Master Voone), Tip (Tooltip - Basic)
-{
-Revive - Voone
-}
-
-STRING 2251
-// Units: n064 (War Master Voone), Ubertip (Tooltip - Extended)
-{
-Heavy ranged demi-herot with Trueshot Aura and Ensnare. |n|n|cffffcc00Attacks land and air units.|r
 }
 
 STRING 2252
@@ -13726,12 +13660,6 @@ STRING 2289
 Feathermoon Stronghold (20gold/min)
 }
 
-STRING 2290
-// Units: n05T (Kazzak the Supreme), EditorSuffix (Name - Editor Suffix)
-{
-(Fel Horde-Demi)
-}
-
 STRING 2291
 // Units: o041 (Training Ground), Hotkey (Hotkey)
 {
@@ -13748,12 +13676,6 @@ STRING 2293
 // Units: n05T (Kazzak the Supreme), Tip (Tooltip - Basic)
 {
 Revive Kazzak
-}
-
-STRING 2294
-// Units: n05T (Kazzak the Supreme), Ubertip (Tooltip - Extended)
-{
-Demon lord of the Blasted Lands, and reopener of the portal to Outland, Kazzak is a mighty adversary for the mortals of Azeroth, and a prime beta commander for Magtheridon's fel legions.
 }
 
 STRING 2295
@@ -14092,7 +14014,7 @@ Arcane thirsting hound of the Fel.|n|cfff5962dAbilities:|R Feedback |n|n|cffffcc
 }
 
 STRING 2351
-// Units: n058 (Fel Crossbowman), EditorSuffix (Name - Editor Suffix)
+// Units: n04C (Defiled Fountain of Life), EditorSuffix (Name - Editor Suffix)
 {
 (Fel Horde)
 }
@@ -14531,7 +14453,7 @@ Andrassil
 }
 
 STRING 2424
-// Units: n04C (Defiled Fountain of Life), EditorSuffix (Name - Editor Suffix)
+// Units: n043 (Deactivated Demon Gate), EditorSuffix (Name - Editor Suffix)
 {
 (Fel Horde)
 }
@@ -14663,7 +14585,7 @@ Hearthglen (10gold/min)
 }
 
 STRING 2446
-// Units: n043 (Deactivated Demon Gate), EditorSuffix (Name - Editor Suffix)
+// Units: O01Q (Dragonmaw Chieftain), EditorSuffix (Name - Editor Suffix)
 {
 (Fel Horde)
 }
@@ -16099,6 +16021,12 @@ STRING 2685
 Improved Cannon Tower
 }
 
+STRING 2686
+// Units: ndgt (Kirin Tor Tower), Ubertip (Tooltip - Extended)
+{
+Dalaran's defense tower.|n|cfff5962dAbilities:|R Magic Sentry|n|cffffcc00Attacks land and air units.|r
+}
+
 STRING 2687
 // Units: h07K (Improved Cannon Tower), Ubertip (Tooltip - Extended)
 {
@@ -16151,6 +16079,12 @@ STRING 2695
 // Units: e000 (Improved Ancient Protector), Hotkey (Hotkey)
 {
 Z
+}
+
+STRING 2696
+// Units: h07A (Improved Arcane Tower), Ubertip (Tooltip - Extended)
+{
+Enhanced magic defense tower. |n|cfff5962dAbilities:|R Magic Sentry, Feedback, Reveal|n|n|cffffcc00Attacks land and air units.|r
 }
 
 STRING 2697
@@ -16322,7 +16256,7 @@ C
 }
 
 STRING 2725
-// Units: h079 (Arcane Tower), Ubertip (Tooltip - Extended)
+// Units: h074 (Arcane Tower), Ubertip (Tooltip - Extended)
 {
 Mage filled defense tower. |n|cfff5962dAbilities:|R Feedback|n|cfff5962dCan Learn:|R Reveal, Magic Sentry|n|cfff5962dUpgrades Into:|R Improved Arcane Tower |n|n|cffffcc00Attacks land and air units.|r
 }
@@ -16337,12 +16271,6 @@ STRING 2727
 // Units: H04A (Lord of the Nexus), Hotkey (Hotkey)
 {
 Z
-}
-
-STRING 2728
-// Units: h078 (Scout Tower), Ubertip (Tooltip - Extended)
-{
-Observation tower.|n|r|cfff5962dUpgrades into:|R Kirin Tor Tower, Arcane Tower
 }
 
 STRING 2729
@@ -16442,7 +16370,7 @@ C
 }
 
 STRING 2745
-// Units: h074 (Arcane Tower), Ubertip (Tooltip - Extended)
+// Units: h06Y (Arcane Tower), Ubertip (Tooltip - Extended)
 {
 Mage filled defense tower. |n|cfff5962dAbilities:|R Feedback|n|cfff5962dCan Learn:|R Reveal, Magic Sentry|n|cfff5962dUpgrades Into:|R Improved Arcane Tower |n|n|cffffcc00Attacks land and air units.|r
 }
@@ -16457,12 +16385,6 @@ STRING 2747
 // Units: u00N (Burning Citadel), Hotkey (Hotkey)
 {
 Z
-}
-
-STRING 2748
-// Units: nchg (Fel Grunt), Ubertip (Tooltip - Extended)
-{
-Brutish warrior of infused with the blood of demons.|n|cfff5962dAbilities:|R Charge, Self-Bloodlust, Pillage|n|cfff5962dCan learn:|R Blood Runes|n|n|cffffcc00Attacks land units.|r
 }
 
 STRING 2749
@@ -16499,6 +16421,12 @@ STRING 2754
 // Units: h071 (Improved Cannon Tower), Name (Name)
 {
 Improved Cannon Tower
+}
+
+STRING 2755
+// Units: h079 (Arcane Tower), Ubertip (Tooltip - Extended)
+{
+Mage filled defense tower. |n|cfff5962dAbilities:|R Magic Sentry, Feedback, Reveal|n|cfff5962dUpgrades Into:|R Improved Arcane Tower |n|n|cffffcc00Attacks land and air units.|r
 }
 
 STRING 2756
@@ -16568,7 +16496,7 @@ C
 }
 
 STRING 2767
-// Units: h06Y (Arcane Tower), Ubertip (Tooltip - Extended)
+// Units: h05X (Control Point Defender), Ubertip (Tooltip - Extended)
 {
 Mage filled defense tower. |n|cfff5962dAbilities:|R Feedback|n|cfff5962dCan Learn:|R Reveal, Magic Sentry|n|cfff5962dUpgrades Into:|R Improved Arcane Tower |n|n|cffffcc00Attacks land and air units.|r
 }
@@ -16625,12 +16553,6 @@ STRING 2776
 // Units: h06V (Scout Tower), Ubertip (Tooltip - Extended)
 {
 Observation tower.|n|r|cfff5962dUpgrades into:|R Guard Tower, Cannon Tower, Arcane Tower
-}
-
-STRING 2777
-// Units: o033 (Dark Enclave), Ubertip (Tooltip - Extended)
-{
-Shadowy gathering place for the Fel Horde's casters.|n|cfff5962dTrains:|R Necrolyte, Fel Warlock, Eredar Occultist|n|cfff5962dResearches:|R Adept Training, Mastery Training
 }
 
 STRING 2778
@@ -19295,12 +19217,6 @@ STRING 3220
 Build Arcane Sanctuary
 }
 
-STRING 3221
-// Units: h036 (Arcane Sanctuary), Ubertip (Tooltip - Extended)
-{
-|cfff5962dTrains:|R Hydromancer, Arcanists, Geomancer|n|cfff5962dResearches:|R Hydromancer Training, Arcanist Training, Geomancer Training, Magic Sentry
-}
-
 STRING 3222
 // Units: h000 (Capital Palace), EditorSuffix (Name - Editor Suffix)
 {
@@ -20411,6 +20327,12 @@ STRING 3406
 Teleports C'thun to a target friendly unit, has a 8 seconds cast time and a 90 seconds cooldown.
 }
 
+STRING 3407
+// Units: h078 (Scout Tower), Ubertip (Tooltip - Extended)
+{
+Observation tower.|n|cfff5962dAbilities:|R Magic Sentry|n|r|cfff5962dUpgrades into:|R Kirin Tor Tower, Arcane Tower
+}
+
 STRING 3408
 // Abilities: A0K2 (Raise Dead Auto-Cast), Hotkey (Hotkey - Normal)
 {
@@ -20421,6 +20343,18 @@ STRING 3409
 // Units: h01M (Baelgun Flamebeard), Name (Name)
 {
 Baelgun Flamebeard
+}
+
+STRING 3410
+// Units: h068 (Observatory), Ubertip (Tooltip - Extended)
+{
+Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Farmer / Whelp, Kirin Tor|n|cfff5962dResearches:|R Improved Forked Lightning, Full Scale Escalation|n|cfff5962dAbilities:|R Replenish Mana, Summon Initiate Mage
+}
+
+STRING 3411
+// Units: h066 (Conclave), Ubertip (Tooltip - Extended)
+{
+Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Farmer / Whelp|n|cfff5962dAbilities:|R Replenish Mana
 }
 
 STRING 3412
@@ -21332,6 +21266,12 @@ STRING 3563
 // Units: h007 (Improved Cannon Tower), Name (Name)
 {
 Improved Cannon Tower
+}
+
+STRING 3564
+// Units: h065 (Refuge), Ubertip (Tooltip - Extended)
+{
+Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Farmer / Whelp
 }
 
 STRING 3565
@@ -22817,7 +22757,7 @@ Revive Dragonmaw Chieftain
 }
 
 STRING 3812
-// Units: O01Q (Dragonmaw Chieftain), EditorSuffix (Name - Editor Suffix)
+// Units: O00Y (Dragonmaw Chieftain), EditorSuffix (Name - Editor Suffix)
 {
 (Fel Horde)
 }
@@ -22931,7 +22871,7 @@ Revive Fel Warchief
 }
 
 STRING 3831
-// Units: O00Y (Dragonmaw Chieftain), EditorSuffix (Name - Editor Suffix)
+// Units: N03D (Warchief of the Fel Horde), EditorSuffix (Name - Editor Suffix)
 {
 (Fel Horde)
 }
@@ -24875,7 +24815,7 @@ W
 }
 
 STRING 4155
-// Abilities: A0TW (Field of Blood), Researchubertip (Tooltip - Learn - Extended)
+// Abilities: A0CX (Rain of Light), Researchubertip (Tooltip - Learn - Extended)
 {
 Conjures a Field of Blood which Heals allied ground units in a target area over time. |n|n|cffffcc00Level 1|r - Heals 150 hitpoints over 5 seconds, then 10 hitpoint every 1 seconds for 35 seconds.|n|cffffcc00Level 2|r - Heals 200 hitpoints over 5 seconds, then 15 hitpoint every 1 seconds for 35 seconds.|n|cffffcc00Level 3|r - Heals 250 hitpoints over 5 seconds, then 20 hitpoint every 1 seconds for 35 seconds.|n
 }
@@ -24887,7 +24827,7 @@ Q
 }
 
 STRING 4157
-// Abilities: A0CX (Rain of Light), Researchubertip (Tooltip - Learn - Extended)
+// Abilities: A0JQ (Rain of Light), Researchubertip (Tooltip - Learn - Extended)
 {
 Conjures a Field of Blood which Heals allied ground units in a target area over time. |n|n|cffffcc00Level 1|r - Heals 150 hitpoints over 5 seconds, then 10 hitpoint every 1 seconds for 35 seconds.|n|cffffcc00Level 2|r - Heals 200 hitpoints over 5 seconds, then 15 hitpoint every 1 seconds for 35 seconds.|n|cffffcc00Level 3|r - Heals 250 hitpoints over 5 seconds, then 20 hitpoint every 1 seconds for 35 seconds.|n
 }
@@ -26141,7 +26081,7 @@ Learn Field of Blood - [|cffffcc00Level %d|r]
 }
 
 STRING 4366
-// Abilities: A0JQ (Rain of Light), Researchubertip (Tooltip - Learn - Extended)
+// Abilities: A0JR (Dark Energy), Researchubertip (Tooltip - Learn - Extended)
 {
 Conjures a Field of Blood which Heals allied ground units in a target area over time. |n|n|cffffcc00Level 1|r - Heals 150 hitpoints over 5 seconds, then 10 hitpoint every 1 seconds for 35 seconds.|n|cffffcc00Level 2|r - Heals 200 hitpoints over 5 seconds, then 15 hitpoint every 1 seconds for 35 seconds.|n|cffffcc00Level 3|r - Heals 250 hitpoints over 5 seconds, then 20 hitpoint every 1 seconds for 35 seconds.|n
 }
@@ -34110,7 +34050,7 @@ Improves Fel Grunts, Crossbowmen and Bonecrushers by increasing their hit points
 }
 
 STRING 5694
-// Units: N03D (Warchief of the Fel Horde), EditorSuffix (Name - Editor Suffix)
+// Units: n00O (Skeletal Grunt), EditorSuffix (Name - Editor Suffix)
 {
 (Fel Horde)
 }
@@ -36588,7 +36528,7 @@ Summons an Owl Scout, which can be used to scout.|nCan see invisible units. |nLa
 }
 
 STRING 6107
-// Units: n00O (Skeletal Grunt), EditorSuffix (Name - Editor Suffix)
+// Abilities: A08B (Burning Oil), EditorSuffix (Editor Suffix)
 {
 (Fel Horde)
 }
@@ -44330,7 +44270,7 @@ Wreaths an enemy unit in magical flames which cause 7.5 damage per second, preve
 }
 
 STRING 7394
-// Abilities: A0W5 (Soul Burn), EditorSuffix (Editor Suffix)
+// Abilities: A03R (Incite Unholy Frenzy), EditorSuffix (Editor Suffix)
 {
 (teal)
 }
@@ -44462,7 +44402,7 @@ E
 }
 
 STRING 7416
-// Abilities: A0W2 (Soul Burn), Tip (Tooltip - Normal)
+// Abilities: A0W5 (Soul Burn), Tip (Tooltip - Normal)
 {
 Soul Burn
 }
@@ -46286,7 +46226,7 @@ Learn Field of Blood - [|cffffcc00Level %d|r]
 }
 
 STRING 7720
-// Abilities: A0JR (Dark Energy), Researchubertip (Tooltip - Learn - Extended)
+// Abilities: A0S7 (Rain of Light), Researchubertip (Tooltip - Learn - Extended)
 {
 Conjures a Field of Blood which Heals allied ground units in a target area over time. |n|n|cffffcc00Level 1|r - Heals 150 hitpoints over 5 seconds, then 10 hitpoint every 1 seconds for 35 seconds.|n|cffffcc00Level 2|r - Heals 200 hitpoints over 5 seconds, then 15 hitpoint every 1 seconds for 35 seconds.|n|cffffcc00Level 3|r - Heals 250 hitpoints over 5 seconds, then 20 hitpoint every 1 seconds for 35 seconds.|n
 }
@@ -46646,7 +46586,7 @@ R
 }
 
 STRING 7780
-// Abilities: A0P7 (Soul Burn), Tip (Tooltip - Normal)
+// Abilities: A0W2 (Soul Burn), Tip (Tooltip - Normal)
 {
 Soul Burn
 }
@@ -52310,7 +52250,7 @@ Feral Spirit
 }
 
 STRING 8724
-// Units: h07R (Scout Tower), Ubertip (Tooltip - Extended)
+// Units: h07H (Scout Tower), Ubertip (Tooltip - Extended)
 {
 Observation tower.|n|r|cfff5962dUpgrades into:|R Guard Tower, Cannon Tower
 }
@@ -53828,12 +53768,6 @@ STRING 8976
 Raise Earth
 }
 
-STRING 8977
-// Abilities: A0K6 (Raise Earth), Ubertip (Tooltip - Normal - Extended)
-{
-Raise a soild rock from the ground blocking the path of enemies for 20 seconds.
-}
-
 STRING 8978
 // Abilities: A0K5 (Dwarven Masonry), EditorSuffix (Editor Suffix)
 {
@@ -54870,6 +54804,12 @@ STRING 9150
 // Abilities: A07I (Firestorm), Name (Name)
 {
 Firestorm
+}
+
+STRING 9151
+// Units: h036 (Arcane Sanctuary), Ubertip (Tooltip - Extended)
+{
+|cfff5962dTrains:|R Hydromancer, Arcanists, Geomancer|n|cfff5962dResearches:|R Hydromancer Training, Arcanist Training, Geomancer Training
 }
 
 STRING 9152
@@ -57410,12 +57350,6 @@ STRING 9574
 Healing Shield
 }
 
-STRING 9575
-// Abilities: A0FW (Healing Shield), Ubertip (Tooltip - Normal - Extended)
-{
-Forms a shield of healing energies around a target unit, healing 15 damage per second to all units around it. |n|cffffcc00Lasts 20 seconds.
-}
-
 STRING 9576
 // Abilities: A0FV (Board), EditorSuffix (Editor Suffix)
 {
@@ -59084,12 +59018,6 @@ STRING 9853
 Capture Protection Dummy
 }
 
-STRING 9854
-// Abilities: A0E9 (Slow), EditorSuffix (Editor Suffix)
-{
-(Sludge Flinger)
-}
-
 STRING 9855
 // Abilities: A0HI (Taunt), Hotkey (Hotkey - Normal)
 {
@@ -59100,12 +59028,6 @@ STRING 9856
 // Buffs/Effects: B095 (), Bufftip (Tooltip)
 {
 Ooze
-}
-
-STRING 9857
-// Units: n09T (Judicator), Ubertip (Tooltip - Extended)
-{
-Powerful Ranged Unit.|n|cfff5962dAbilities:|R Chain Heal, Frost Attack|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land and air units.|r
 }
 
 STRING 9858
@@ -62012,10 +61934,46 @@ STRING 10341
 R
 }
 
+STRING 10342
+// Units: h02N (Lumber Mill), Ubertip (Tooltip - Extended)
+{
+Lumber processing mill and research center.|n|cfff5962dResearches:|R Forged Weaponry, Armor Plating, Power Infusion, Fortified Hulls, Improved Cannons
+}
+
 STRING 10343
 // Abilities: A097 (Exact Justice), Hotkey (Hotkey - Normal)
 {
 R
+}
+
+STRING 10344
+// Units: n09T (Judicator), Ubertip (Tooltip - Extended)
+{
+Powerful Ranged Unit.|n|cfff5962dAbilities:|R Healing Wave, Frost Attack|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land and air units.|r
+}
+
+STRING 10345
+// Units: h09A (Draconic Spire), Ubertip (Tooltip - Extended)
+{
+Primary troop production building for the Nexus.|n|cfff5962dTrains:|R Zealot, Initiate Mage, Blue Dragonspawn|n|cfff5962dResearches:|R Improved Slow
+}
+
+STRING 10346
+// Abilities: A0K6 (Raise Earth), Ubertip (Tooltip - Normal - Extended)
+{
+Raise a soild rock from the ground blocking the path of enemies.|nLasts until it is destroyed, takes damage over time.
+}
+
+STRING 10347
+// Abilities: A0FW (Healing Shield), Ubertip (Tooltip - Normal - Extended)
+{
+Forms a shield of healing energy around a target unit, restoring 15 health per second to all units around it. |n|cffffcc00Lasts 20 seconds.
+}
+
+STRING 10348
+// Abilities: A0E9 (Slow), EditorSuffix (Editor Suffix)
+{
+ (Initiate Mage)
 }
 
 STRING 10349
@@ -64690,7 +64648,7 @@ E
 }
 
 STRING 10794
-// Abilities: A09V (Soul Burn), Tip (Tooltip - Normal)
+// Abilities: A0P7 (Soul Burn), Tip (Tooltip - Normal)
 {
 Soul Burn
 }
@@ -65410,7 +65368,7 @@ Summons 4 Water Elementals with Bash and Crushing Wave to attack Jaina's enemies
 }
 
 STRING 10914
-// Buffs/Effects: B0AN (), Bufftip (Tooltip)
+// Abilities: A06I (Perfect Avatar), Name (Name)
 {
 Perfect Avatar
 }
@@ -66556,7 +66514,7 @@ Every attack that does damage to an enemy unit or building will yield some resou
 }
 
 STRING 11105
-// Abilities: A08B (Burning Oil), EditorSuffix (Editor Suffix)
+// Upgrades: Robf (Burning Oil), EditorSuffix (Editor Suffix)
 {
 (Fel Horde)
 }
@@ -69201,7 +69159,7 @@ R
 }
 
 STRING 11544
-// Abilities: A06I (Perfect Avatar), Name (Name)
+// Buffs/Effects: B0AN (), Bufftip (Tooltip)
 {
 Perfect Avatar
 }
@@ -69210,6 +69168,12 @@ STRING 11545
 // Abilities: A06I (Perfect Avatar), Tip (Tooltip - Normal)
 {
 Activate Perfect Avatar
+}
+
+STRING 11546
+// Abilities: A0E9 (Slow), Ubertip (Tooltip - Normal - Extended)
+{
+Slows a target enemy air unit's attack rate by <A0E9,DataB1,%>% and movement speed by <A0E9,DataA1,%>%. |nLasts <A0E9,Dur1> seconds.
 }
 
 STRING 11547
@@ -69429,13 +69393,13 @@ This unit is in Perfect Avatar form; it has dramatically increased hit points, a
 }
 
 STRING 11583
-// Buffs/Effects: B0AO (), Bufftip (Tooltip)
+// Abilities: A009 (Rune of Shielding), Name (Name)
 {
 Rune of Shielding
 }
 
 STRING 11584
-// Abilities: A034 (Frostfall), Hotkey (Hotkey - Normal)
+// Abilities: A034 (Starfall), Hotkey (Hotkey - Normal)
 {
 R
 }
@@ -70233,7 +70197,7 @@ STRING 11716
 }
 
 STRING 11717
-// Abilities: A034 (Frostfall), Researchhotkey (Hotkey - Learn)
+// Abilities: A034 (Starfall), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -71980,12 +71944,6 @@ STRING 12007
 Learn Field of Blood - [|cffffcc00Level %d|r]
 }
 
-STRING 12008
-// Abilities: A0S7 (Rain of Light), Researchubertip (Tooltip - Learn - Extended)
-{
-Conjures a Field of Blood which Heals allied ground units in a target area over time. |n|n|cffffcc00Level 1|r - Heals 150 hitpoints over 5 seconds, then 10 hitpoint every 1 seconds for 35 seconds.|n|cffffcc00Level 2|r - Heals 200 hitpoints over 5 seconds, then 15 hitpoint every 1 seconds for 35 seconds.|n|cffffcc00Level 3|r - Heals 250 hitpoints over 5 seconds, then 20 hitpoint every 1 seconds for 35 seconds.|n
-}
-
 STRING 12009
 // Abilities: A0S7 (Rain of Light), Tip (Tooltip - Normal)
 {
@@ -72906,12 +72864,6 @@ STRING 12161
 Demonic Shield
 }
 
-STRING 12162
-// Abilities: A03R (Incite Unholy Frenzy), EditorSuffix (Editor Suffix)
-{
-(teal)
-}
-
 STRING 12163
 // Abilities: A05U (Forced March), Hotkey (Hotkey - Normal)
 {
@@ -73699,7 +73651,7 @@ Summons a water elemental to attack the Hydromancer's enemies. Has <hwat,realHP>
 }
 
 STRING 12294
-// Abilities: A034 (Frostfall), EditorSuffix (Editor Suffix)
+// Abilities: A034 (Starfall), EditorSuffix (Editor Suffix)
 {
 (Orange - Antonidas)
 }
@@ -73710,62 +73662,26 @@ STRING 12295
 R
 }
 
-STRING 12296
-// Abilities: A034 (Frostfall), Name (Name)
-{
-Frostfall
-}
-
 STRING 12297
 // Abilities: A003 (Sonic Boom), Researchhotkey (Hotkey - Learn)
 {
 R
 }
 
-STRING 12298
-// Abilities: A034 (Frostfall), Researchtip (Tooltip - Learn)
-{
-Learn Frostfall - [|cffffcc00Level %d|r]
-}
-
-STRING 12299
-// Abilities: A034 (Frostfall), Researchubertip (Tooltip - Learn - Extended)
-{
-Calls down waves of piercing ice shards that damage nearby enemy units.|n|n|cffffcc00Level 1|r - Each wave deals 40 damage.|n|cffffcc00Level 2|r - Each wave deals 60 damage.|n|cffffcc00Level 3|r - Each wave deals 80 damage|n|nLasts 20 seconds. 900 range.
-}
-
-STRING 12300
-// Abilities: A034 (Frostfall), Tip (Tooltip - Normal)
-{
-Frostfall - [|cffffcc00Level 1|r]
-}
-
-STRING 12301
-// Abilities: A034 (Frostfall), Tip (Tooltip - Normal)
-{
-Frostfall - [|cffffcc00Level 2|r]
-}
-
-STRING 12302
-// Abilities: A034 (Frostfall), Tip (Tooltip - Normal)
-{
-Frostfall - [|cffffcc00Level 3|r]
-}
-
 STRING 12303
-// Abilities: A034 (Frostfall), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A034 (Starfall), Ubertip (Tooltip - Normal - Extended)
 {
 Calls down waves of piercing ice shards that damage nearby enemy units. Each wave deals <A034,DataA1> damage. |nLasts for <A034,Dur1> seconds.
 }
 
 STRING 12304
-// Abilities: A034 (Frostfall), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A034 (Starfall), Ubertip (Tooltip - Normal - Extended)
 {
 Calls down waves of piercing ice shards that damage nearby enemy units. Each wave deals <A034,DataA2> damage. |nLasts for <A034,Dur2> seconds.
 }
 
 STRING 12305
-// Abilities: A034 (Frostfall), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A034 (Starfall), Ubertip (Tooltip - Normal - Extended)
 {
 Calls down waves of piercing ice shards that damage nearby enemy units. Each wave deals <A034,DataA3> damage. |nLasts for <A034,Dur3> seconds.
 }
@@ -77671,13 +77587,13 @@ E
 }
 
 STRING 12956
-// Abilities: A009 (Rune of Shielding), Name (Name)
+// Abilities: A009 (Rune of Shielding), Tip (Tooltip - Normal)
 {
 Rune of Shielding
 }
 
 STRING 12957
-// Abilities: A009 (Rune of Shielding), Tip (Tooltip - Normal)
+// Buffs/Effects: B0AO (), Bufftip (Tooltip)
 {
 Rune of Shielding
 }
@@ -78228,12 +78144,6 @@ STRING 13048
 Desert Storm (Effect)
 }
 
-STRING 13049
-// Buffs/Effects: X00H (Frostfall (Effect)), EditorName (Name (Editor Only))
-{
-Frostfall (Effect)
-}
-
 STRING 13050
 // Buffs/Effects: X00G (Inferno (Effect)), EditorName (Name (Editor Only))
 {
@@ -78280,6 +78190,12 @@ STRING 13057
 // Buffs/Effects: X009 (Arrow Volley (effect)), EditorName (Name (Editor Only))
 {
 Arrow Volley (effect)
+}
+
+STRING 13058
+// Abilities: A0E9 (Slow), Ubertip (Tooltip - Normal - Extended)
+{
+Slows a target enemy air unit's attack rate by <A0E9,DataB2,%>% and movement speed by <A0E9,DataA2,%>%. |nLasts <A0E9,Dur2> seconds.
 }
 
 STRING 13059
@@ -78562,12 +78478,6 @@ STRING 13105
 // Buffs/Effects: B08R (), Bufftip (Tooltip)
 {
 Surge of Power
-}
-
-STRING 13106
-// Buffs/Effects: B08R (), Buffubertip (Tooltip - Extended)
-{
-This unit is surging with power
 }
 
 STRING 13107
@@ -79470,12 +79380,6 @@ STRING 13256
 Field of Blood
 }
 
-STRING 13257
-// Buffs/Effects: B06L (), Buffubertip (Tooltip - Extended)
-{
-This unit is in a Field of Blood
-}
-
 STRING 13258
 // Buffs/Effects: B06K (), Bufftip (Tooltip)
 {
@@ -79594,6 +79498,12 @@ STRING 13277
 // Abilities: A0LM (Open Ship), Ubertip (Tooltip - Normal - Extended)
 {
 Open Ship
+}
+
+STRING 13278
+// Abilities: A034 (Starfall), Researchtip (Tooltip - Learn)
+{
+Learn Starfall - [|cffffcc00Level %d|r]
 }
 
 STRING 13279
@@ -81324,12 +81234,6 @@ STRING 13566
 Healing Shield
 }
 
-STRING 13567
-// Buffs/Effects: B02X (), Buffubertip (Tooltip - Extended)
-{
-This unit has a Healing Shield; nearby friendly units will be healed of damage damage if they are next to this unit.
-}
-
 STRING 13568
 // Abilities: A0FV (Board), Tip (Tooltip - Normal)
 {
@@ -82536,36 +82440,6 @@ STRING 13768
 This unit has Reassuring Calm; its defense has been increased.
 }
 
-STRING 13769
-// Buffs/Effects: B00A (Mage Armour), Bufftip (Tooltip)
-{
-Mage Armour
-}
-
-STRING 13770
-// Buffs/Effects: B00A (Mage Armour), Buffubertip (Tooltip - Extended)
-{
-This unit has Mage Armour
-}
-
-STRING 13771
-// Buffs/Effects: B00A (Mage Armour), EditorName (Name (Editor Only))
-{
-Mage Armour
-}
-
-STRING 13772
-// Buffs/Effects: B009 (FrostFall), EditorName (Name (Editor Only))
-{
-FrostFall
-}
-
-STRING 13773
-// Buffs/Effects: B009 (FrostFall), EditorSuffix (Editor Suffix)
-{
-(Target)
-}
-
 STRING 13774
 // Buffs/Effects: B008 (Infected Wounds), Bufftip (Tooltip)
 {
@@ -83617,7 +83491,7 @@ Improves Grunts by increasing their hit points by 225 and attack damage by 3.
 }
 
 STRING 13949
-// Upgrades: Robf (Burning Oil), EditorSuffix (Editor Suffix)
+// Upgrades: R069 (Chaos), EditorSuffix (Editor Suffix)
 {
 (Fel Horde)
 }
@@ -85351,7 +85225,7 @@ Quest Completed: To Tame a Land
 }
 
 STRING 14238
-// Upgrades: R069 (Chaos), EditorSuffix (Editor Suffix)
+// Upgrades: R066 (Burning Oil), EditorSuffix (Editor Suffix)
 {
 (Fel Horde)
 }
@@ -85375,7 +85249,7 @@ Turn 6 has passed
 }
 
 STRING 14242
-// Upgrades: R066 (Burning Oil), EditorSuffix (Editor Suffix)
+// Upgrades: R05Z (Chaos), EditorSuffix (Editor Suffix)
 {
 (Fel Horde)
 }
@@ -85477,7 +85351,7 @@ Stormwind exists
 }
 
 STRING 14259
-// Upgrades: R05Z (Chaos), EditorSuffix (Editor Suffix)
+// Upgrades: R03I (Shaman Adept Training,Shaman Master Training), EditorSuffix (Editor Suffix)
 {
 (Fel Horde)
 }
@@ -85534,6 +85408,12 @@ STRING 14268
 // Upgrades: R05X (Mark of the Claw), Tip (Tooltip)
 {
 Research Blessing of Ursol
+}
+
+STRING 14269
+// Abilities: A034 (Starfall), Tip (Tooltip - Normal)
+{
+Starfall - [|cffffcc00Level 1|r]
 }
 
 STRING 14270
@@ -86285,12 +86165,6 @@ STRING 14394
 An exclusive place of ingenuity for those clever enough to work there.|n|cfff5962dResearches: |RForged Weaponry, Armor Plating, Power Infusion, Improved Cannons, Fortified Hulls
 }
 
-STRING 14395
-// Units: h02N (Lumber Mill), Ubertip (Tooltip - Extended)
-{
-Lumber processing mill and research center.|n|cfff5962dResearches:|R Forged Weaponry, Armor Plating, Power Infusion, Fortified Hulls, Improved Cannons|n|n|cffffcc00Can receive Lumber.|R
-}
-
 STRING 14396
 // Units: h01I (Arcanist), Ubertip (Tooltip - Extended)
 {
@@ -86694,7 +86568,7 @@ Alows Archers, Huntresses, Moonhunters, Priestesses, and Hippogryph Riders to be
 }
 
 STRING 14463
-// Upgrades: R03I (Shaman Adept Training,Shaman Master Training), EditorSuffix (Editor Suffix)
+// Upgrades: R036 (Pillage), EditorSuffix (Editor Suffix)
 {
 (Fel Horde)
 }
@@ -86880,7 +86754,7 @@ Q
 }
 
 STRING 14494
-// Upgrades: R036 (Pillage), EditorSuffix (Editor Suffix)
+// Upgrades: R024 (Necromancer Adept Training,Necromancer Master Training), EditorSuffix (Editor Suffix)
 {
 (Fel Horde)
 }
@@ -87041,6 +86915,12 @@ STRING 14520
 X
 }
 
+STRING 14521
+// Abilities: A034 (Starfall), Tip (Tooltip - Normal)
+{
+Starfall - [|cffffcc00Level 2|r]
+}
+
 STRING 14522
 // Units: o042 (War Mill), Ubertip (Tooltip - Extended)
 {
@@ -87150,7 +87030,7 @@ Quest Completed: The Wandering Brewmaster
 }
 
 STRING 14540
-// Upgrades: R024 (Necromancer Adept Training,Necromancer Master Training), EditorSuffix (Editor Suffix)
+// Upgrades: R011 (Chaos), EditorSuffix (Editor Suffix)
 {
 (Fel Horde)
 }
@@ -87595,7 +87475,7 @@ Quest Completed: Return to the Fold
 }
 
 STRING 14614
-// Upgrades: R011 (Chaos), EditorSuffix (Editor Suffix)
+// Upgrades: R00Y (Magic Sentry), EditorSuffix (Editor Suffix)
 {
 (Fel Horde)
 }
@@ -87727,7 +87607,7 @@ Quest Completed: Drak'tharon Keep
 }
 
 STRING 14636
-// Units: h07H (Scout Tower), Ubertip (Tooltip - Extended)
+// Units: h07R (Scout Tower), Ubertip (Tooltip - Extended)
 {
 Observation tower.|n|r|cfff5962dUpgrades into:|R Guard Tower, Cannon Tower
 }
@@ -88129,7 +88009,7 @@ Quest Completed: Sapphiron
 }
 
 STRING 14703
-// Upgrades: R00Y (Magic Sentry), EditorSuffix (Editor Suffix)
+// Upgrades: R00O (Ensnare), EditorSuffix (Editor Suffix)
 {
 (Fel Horde)
 }
@@ -88174,12 +88054,6 @@ STRING 14710
 // Upgrades: R024 (Necromancer Adept Training,Necromancer Master Training), Ubertip (Tooltip - Extended)
 {
 Increases Necrolytes' mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Unholy Frenzy.
-}
-
-STRING 14711
-// Upgrades: R024 (Necromancer Adept Training,Necromancer Master Training), Ubertip (Tooltip - Extended)
-{
-Increases Necrolytes' mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Cripple.
 }
 
 STRING 14712
@@ -88234,6 +88108,12 @@ STRING 14720
 // Units: n0CP (Enslaved Dragon), Name (Name)
 {
 Enslaved Dragon
+}
+
+STRING 14721
+// Abilities: A034 (Starfall), Tip (Tooltip - Normal)
+{
+Starfall - [|cffffcc00Level 3|r]
 }
 
 STRING 14722
@@ -88477,6 +88357,12 @@ STRING 14761
 Increases Geomancers' mana capacity, mana regeneration rate, attack damage and gives them the ability cast Healing Shield.
 }
 
+STRING 14762
+// Abilities: A034 (Starfall), Researchubertip (Tooltip - Learn - Extended)
+{
+Calls down waves of stars that damage nearby enemy units.|n|n|cffffcc00Level 1|r - Each wave deals 40 damage.|n|cffffcc00Level 2|r - Each wave deals 60 damage.|n|cffffcc00Level 3|r - Each wave deals 80 damage|n|nLasts 20 seconds. 900 range.
+}
+
 STRING 14763
 // Upgrades: R03W (Magic Sentry), Hotkey (Hotkey)
 {
@@ -88639,6 +88525,12 @@ STRING 14789
 Improves all non-Hero units by increasing their damage number of dice by 1, hit points by 100, and armor level by 1.
 }
 
+STRING 14790
+// Buffs/Effects: B08R (), Buffubertip (Tooltip - Extended)
+{
+This unit has a Surge of Power, it's attack speed is dramatically increased.
+}
+
 STRING 14791
 // Upgrades: R01M (Chaos), Name (Name)
 {
@@ -88793,6 +88685,12 @@ STRING 14816
 // Upgrades: R01H (Animal War Training), Tip (Tooltip)
 {
 Research Malorne's Infusion
+}
+
+STRING 14817
+// Buffs/Effects: B02X (), Buffubertip (Tooltip - Extended)
+{
+This unit has a Healing Shield; nearby friendly units will be healed if they stand near this unit.
 }
 
 STRING 14818
@@ -89156,7 +89054,7 @@ Quest Completed: Secrets of Karazhan
 }
 
 STRING 14878
-// Upgrades: R00O (Ensnare), EditorSuffix (Editor Suffix)
+// Upgrades: R00M (Shaman Adept Training,Shaman Master Training), EditorSuffix (Editor Suffix)
 {
 (Fel Horde)
 }
@@ -89234,7 +89132,7 @@ Causes Riflemen to deal <A0F4,DataB1,%>% increased damage to units with Heavy ar
 }
 
 STRING 14891
-// Upgrades: R00M (Shaman Adept Training,Shaman Master Training), EditorSuffix (Editor Suffix)
+// Upgrades: R041 (Chaos), EditorSuffix (Editor Suffix)
 {
 (Fel Horde)
 }
@@ -89576,7 +89474,7 @@ C
 }
 
 STRING 14948
-// Upgrades: R041 (Chaos), EditorSuffix (Editor Suffix)
+// Upgrades: R03G (Chaos), EditorSuffix (Editor Suffix)
 {
 (Fel Horde)
 }
@@ -89648,7 +89546,7 @@ Improves the Swig ability by causing it to restore <A09J,DataA2> hit points.
 }
 
 STRING 14960
-// Upgrades: R03G (Chaos), EditorSuffix (Editor Suffix)
+// Upgrades: R07N (Necromancer Adept Training,Necromancer Master Training), EditorSuffix (Editor Suffix)
 {
 (Fel Horde)
 }
@@ -89717,6 +89615,12 @@ STRING 14971
 // Upgrades: R00M (Shaman Adept Training,Shaman Master Training), Ubertip (Tooltip - Extended)
 {
 Increases Fel Warlocks' mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Life Drain.
+}
+
+STRING 14972
+// Buffs/Effects: B00A (Mage Armor), Bufftip (Tooltip)
+{
+Mage Armor
 }
 
 STRING 14973
@@ -89969,6 +89873,12 @@ STRING 15014
 // Upgrades: R00F (Control Magic), Tip (Tooltip)
 {
 Research Mithril Plated Armor
+}
+
+STRING 15015
+// Buffs/Effects: B00A (Mage Armor), Buffubertip (Tooltip - Extended)
+{
+This unit has Mage Armor, it's armor is increased by 7.
 }
 
 STRING 15016
@@ -90970,6 +90880,12 @@ STRING 15190
 Slow melee unit capable of devastating area of effect attacks.|n|cfff5962dAbilities:|R Pulverize|n|cfff5962dCan learn:|R Crushing Wave|n|n|cff99b4d1Can only train 12.|r|n|cffffcc00Attacks land units.|r
 }
 
+STRING 15191
+// Buffs/Effects: B00A (Mage Armor), EditorName (Name (Editor Only))
+{
+Mage Armor
+}
+
 STRING 15192
 // Upgrades: R001 (Defend), EditorSuffix (Editor Suffix)
 {
@@ -91543,7 +91459,7 @@ Primary defensive structure. |n|cfff5962dCan learn:|R Magic Sentry |n|n|cffffcc0
 }
 
 STRING 15287
-// Upgrades: R07N (Necromancer Adept Training,Necromancer Master Training), EditorSuffix (Editor Suffix)
+// Upgrades: R098 (Burning Oil), EditorSuffix (Editor Suffix)
 {
 (Fel Horde)
 }
@@ -91564,6 +91480,12 @@ STRING 15290
 // Abilities: A0H3 (Mass Ice Armor), Tip (Tooltip - Normal)
 {
 Mass Ice Armor - [|cffffcc00Level 1|r]
+}
+
+STRING 15291
+// Buffs/Effects: B00A (Mage Armor), EditorSuffix (Editor Suffix)
+{
+ (Dalaran)
 }
 
 STRING 15292
@@ -91624,6 +91546,12 @@ STRING 15301
 // Abilities: A0H6 (Mass Ice Armor), Name (Name)
 {
 Mass Ice Armor
+}
+
+STRING 15302
+// Buffs/Effects: B02O (), Bufftip (Tooltip)
+{
+Initiate Mage
 }
 
 STRING 15303
@@ -92044,6 +91972,12 @@ STRING 15372
 // Upgrades: R03O (Animal War Training), Name (Name)
 {
 Blood Runes
+}
+
+STRING 15373
+// Buffs/Effects: B009 (), Buffubertip (Tooltip - Extended)
+{
+This unit is bound in Binding Shackles; it cannot move or attack and will take damage over time.
 }
 
 STRING 15374
@@ -92710,6 +92644,12 @@ STRING 15484
 (Charred Ancient)
 }
 
+STRING 15485
+// Buffs/Effects: B009 (), Bufftip (Tooltip)
+{
+Binding Shackles
+}
+
 STRING 15486
 // Units: n058 (Fel Crossbowman), Ubertip (Tooltip - Extended)
 {
@@ -92860,6 +92800,12 @@ STRING 15510
 (Twilight)
 }
 
+STRING 15511
+// Buffs/Effects: B009 (), EditorSuffix (Editor Suffix)
+{
+ (Jailor Kassan)
+}
+
 STRING 15512
 // Upgrades: R00G (Flare), Hotkey (Hotkey)
 {
@@ -92902,6 +92848,12 @@ STRING 15518
 Improves Necrolytes' Shadow Infusion by increasing its heal amount by 45 and reducing its mana cost to 0.
 }
 
+STRING 15519
+// Units: owar (Bonebreaker), Ubertip (Tooltip - Extended)
+{
+Strong mounted warrior of Outland.|n|cfff5962dAbilities:|R Charge, Self-Bloodlust, Pillage|n|cfff5962dCan learn:|R Felsteel Plating, Blood Runes|n|n|cffffcc00Attacks land units.|r
+}
+
 STRING 15520
 // Upgrades: R03O (Animal War Training), Ubertip (Tooltip - Extended)
 {
@@ -92942,6 +92894,12 @@ STRING 15526
 // Abilities: A0CO (Nature's Fury), Ubertip (Tooltip - Normal - Extended)
 {
 Blasts enemy units with a wave of Driduc Energy that deals <A0CO,DataB2> damage to the target, and <A0CO,DataA2> splash damage. 
+}
+
+STRING 15527
+// Units: ocbw (Fel Burrow), EditorSuffix (Name - Editor Suffix)
+{
+(Fel Horde Farm)
 }
 
 STRING 15528
@@ -93496,6 +93454,12 @@ STRING 15619
 Revive Vareesa
 }
 
+STRING 15620
+// Units: ocbw (Fel Burrow), Ubertip (Tooltip - Extended)
+{
+Defensive hovel for peons to defend the territory.|nProvides 10 food, which increases the maximum number of units that can be trained.|n|cfff5962dAbilities:|R Battle Stations|n|n|cffffcc00Attacks land and air units.|r
+}
+
 STRING 15621
 // Abilities: A05E (Holy Aura), Ubertip (Tooltip - Normal - Extended)
 {
@@ -93544,10 +93508,10 @@ STRING 15628
 Quest Completed: The First Banshee
 }
 
-STRING 15629
-// Upgrades: R098 (Burning Oil), EditorSuffix (Editor Suffix)
+STRING 15630
+// Units: nchg (Fel Grunt), Ubertip (Tooltip - Extended)
 {
-(Fel Horde)
+Brutish warrior of infused with the blood of demons.|n|cfff5962dAbilities:|R Charge, Self-Bloodlust, Pillage|n|cfff5962dCan learn:|R Blood Runes, Fel-infused Skeleton|n|n|cffffcc00Attacks land units.|r
 }
 
 STRING 15631
@@ -94058,6 +94022,12 @@ STRING 15715
 // Units: n003 (Improved Sun Tower), Ubertip (Tooltip - Extended)
 {
 Sunwell infused stone and steel, built to defend Quel'Thalas.|n|cfff5962dCan learn:|R Magic Sentry|n|n|cffffcc00Attacks land and air units.|r
+}
+
+STRING 15716
+// Units: Nbbc (Warchief of the Blackrock Clan), Ubertip (Tooltip - Extended)
+{
+Cunning Hero, specialised in dealing damage and disrupting enemies.|n|cfff5962dAbilities:|r Wind Walk, Critical Strike|n|cfff5962dCan learn:|R Bladestorm, Blackhand's Howl, Endurance Aura, Mirror Image|n|n|cffffcc00Attacks land units.|R
 }
 
 STRING 15717
@@ -94696,6 +94666,12 @@ STRING 15822
 (Druids - Fandral Summon)
 }
 
+STRING 15823
+// Units: o033 (Dark Enclave), Ubertip (Tooltip - Extended)
+{
+Shadowy gathering place for the Fel Horde's casters.|n|cfff5962dTrains:|R Necrolyte, Fel Warlock, Eredar Occultist, Eye of Gilrokk|n|cfff5962dResearches:|R Adept Training, Mastery Training
+}
+
 STRING 15824
 // Units: o04U (Cyclone Cannon), EditorSuffix (Name - Editor Suffix)
 {
@@ -94810,6 +94786,12 @@ STRING 15842
 Improved Cannon Tower
 }
 
+STRING 15843
+// Units: o01L (Executioner), Ubertip (Tooltip - Extended)
+{
+Powerful Orc champion in the service of the Shattered Hand.|n|cfff5962dAbilities:|R Execute, Thunder Clap, Self-Bloodlust, Rampage, Cleaving Attack, Resistant Skin|n|cfff5962dCan learn:|R Blood Runes, Felsteel Plating|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land units.|r
+}
+
 STRING 15844
 // Units: h04N (Improved Cannon Tower), Ubertip (Tooltip - Extended)
 {
@@ -94838,6 +94820,12 @@ STRING 15848
 // Units: h08F (Improved Plague Tower), Ubertip (Tooltip - Extended)
 {
 Primary defensive structure. |n|cfff5962dCan learn:|R Magic Sentry |n|n|cffffcc00Attacks land and air units.|r
+}
+
+STRING 15849
+// Units: n0AN (Improved Flame Pillar), Ubertip (Tooltip - Extended)
+{
+Launch even larger chunks of burning slag.|n|n|cffffcc00Attacks land units.|r
 }
 
 STRING 15850
@@ -95252,6 +95240,12 @@ STRING 15918
 // Upgrades: R00C (Black Gunpowder,Refined Gunpowder,Imbued Gunpowder), Hotkey (Hotkey)
 {
 X
+}
+
+STRING 15919
+// Units: n08A (Neltharaku), EditorSuffix (Name - Editor Suffix)
+{
+(Fel Horde-Demi: UNUSED)
 }
 
 STRING 15920
@@ -95728,6 +95722,12 @@ STRING 15998
 Upgrade to Improved Guard Tower
 }
 
+STRING 15999
+// Units: n08A (Neltharaku), Ubertip (Tooltip - Extended)
+{
+Powerful flying ranged demi-hero.|n|n|cfff5962dAbilities:|R Arcane Barrage, Devour Magic, Netherwing Protection, True Sight, Resistant Skin|n|n|cffffcc00Attacks land units.|R
+}
+
 STRING 16000
 // Abilities: A0X8 (Summon Shadowspawn), Name (Name)
 {
@@ -95750,6 +95750,12 @@ STRING 16003
 // Units: h07V (Improved Cannon Tower), Name (Name)
 {
 Improved Cannon Tower
+}
+
+STRING 16004
+// Units: n086 (Fel Death Knight), Ubertip (Tooltip - Extended)
+{
+The Fel Death Knights of the Shadow Council are strong and cunning sorcerers. |n|cfff5962dAbilities:|R Dark Energy, Silence, Soul Funnel, Spell Resistance, Resistant Skin|n|n|cff99b4d1Can only train 6.|n|cffffcc00Attacks land and air units.|r
 }
 
 STRING 16005
@@ -96492,12 +96498,6 @@ STRING 16127
 (Quel'thalas)
 }
 
-STRING 16128
-// Abilities: A0E9 (Slow), Ubertip (Tooltip - Normal - Extended)
-{
-Slows a target enemy AIR unit's attack rate by <A0E9,DataB1,%>% and movement speed by <A0E9,DataA1,%>%. |nLasts <A0E9,Dur1> seconds.
-}
-
 STRING 16129
 // Units: h0B8 (Bombard), EditorSuffix (Name - Editor Suffix)
 {
@@ -96771,12 +96771,6 @@ Persistent Soul - [|cffffcc00Level 2|r]
 STRING 16174
 {
 Warsong
-}
-
-STRING 16175
-// Abilities: A0E9 (Slow), Ubertip (Tooltip - Normal - Extended)
-{
-Slows a target enemy AIR unit's attack rate by <A0E9,DataB2,%>% and movement speed by <A0E9,DataA2,%>%. |nLasts <A0E9,Dur2> seconds.
 }
 
 STRING 16176
@@ -98872,6 +98866,18 @@ STRING 16524
 Wrath of Ragnaros - [|cffffcc00Level 4|r]
 }
 
+STRING 16525
+// Units: n064 (War Master Voone), Tip (Tooltip - Basic)
+{
+Revive Voone
+}
+
+STRING 16526
+// Units: n064 (War Master Voone), Ubertip (Tooltip - Extended)
+{
+Heavy ranged demi-hero.|n|n|cfff5962dAbilities:|R Ensnare, Trueshot Aura, Resistant Skin |n|n|cffffcc00Attacks land and air units.|r
+}
+
 STRING 16527
 // Items: I00G (Summon Farmers), Tip (Tooltip - Basic)
 {
@@ -99388,6 +99394,12 @@ STRING 16612
 Warrior Hero, adept at melee combat and aggression.|n|cfff5962dAbilities:|r Divine Shield|n|cfff5962dCan Learn:|R Consecration, Blood Fury, Fiery Aura, Guarding Light|n|n|cffffcc00Attacks land units.|R
 }
 
+STRING 16613
+// Units: n05T (Kazzak the Supreme), Ubertip (Tooltip - Extended)
+{
+Heavy melee anti-magic demi-hero.|n|n|cfff5962dAbilities:|R Devotion Aura, War Stomp, Cripple, Devour Magic, Cleaving Attack, Resistant Skin|n|r|n|cffffcc00Attacks land units.|r
+}
+
 STRING 16614
 // Abilities: A0N7 (Disorienting Howl), Tip (Tooltip - Normal)
 {
@@ -99470,6 +99482,12 @@ STRING 16627
 // Units: h092 (Order Inquisitor), Tip (Tooltip - Basic)
 {
 Train Order Inquisitor
+}
+
+STRING 16628
+// Abilities: A0W5 (Soul Burn), EditorSuffix (Editor Suffix)
+{
+ (Necrolyte)
 }
 
 STRING 16629
@@ -99740,6 +99758,12 @@ STRING 16673
 // Units: U023 (The Soulflayer), Propernames (Proper Names)
 {
 Hakkar
+}
+
+STRING 16674
+// Abilities: A0TW (Field of Blood), Researchubertip (Tooltip - Learn - Extended)
+{
+Conjures a field of churning blood which heals allied ground units in a target area over time. |n|n|cffffcc00Level 1|r - Heals 150 hitpoints over 5 seconds, then 10 hitpoint every 1 seconds for 35 seconds.|n|cffffcc00Level 2|r - Heals 200 hitpoints over 5 seconds, then 15 hitpoint every 1 seconds for 35 seconds.|n|cffffcc00Level 3|r - Heals 250 hitpoints over 5 seconds, then 20 hitpoint every 1 seconds for 35 seconds.|n
 }
 
 STRING 16675
@@ -100654,6 +100678,12 @@ STRING 16826
 (troll - zandalar)
 }
 
+STRING 16827
+// Abilities: A0V5 (Soul Burn), Tip (Tooltip - Normal)
+{
+Soul Burn
+}
+
 STRING 16828
 // Abilities: A0P3 (Mana Burn), Researchubertip (Tooltip - Learn - Extended)
 {
@@ -101392,6 +101422,12 @@ STRING 16950
 The hero calls forth waves a plague of frogs that explode dealing damage to to the hero's enemies. Each exploding frog deals 50 damage. |nLasts 30 seconds.
 }
 
+STRING 16951
+// Buffs/Effects: B06L (), Buffubertip (Tooltip - Extended)
+{
+This unit is in a Field of Blood. It's health is rapidly replenishing.
+}
+
 STRING 16952
 // Upgrades: R032 (Chaos), Name (Name)
 {
@@ -101938,12 +101974,6 @@ STRING 17042
 Warrior Hero, exceptional at absorbing damage and melee combat.|n|cfff5962dAbilities:|r Reincarnation|n|cfff5962dCan learn:|R Shockwave, War Stomp, Ancestors' Blessing, Totemic Spirits|n|n|cffffcc00Attacks land units.|R
 }
 
-STRING 17043
-// Units: Nbbc (Warchief of the Blackrock Clan), Ubertip (Tooltip - Extended)
-{
-Cunning Hero, specialised in dealing damage and disrupting enemies.|n|cfff5962dAbilities:|r Wind Walk, Critical Strike|n|cfff5962dCan learn:|R Bladestorm, Howl, Endurance Aura, Mirror Image|n|n|cffffcc00Attacks land units.|R
-}
-
 STRING 17044
 // Units: Huth (Leader of the Silver Hand), Ubertip (Tooltip - Extended)
 {
@@ -102044,6 +102074,12 @@ STRING 17060
 // Units: Uanb (King of Azjol-Nerub), Ubertip (Tooltip - Extended)
 {
 Warrior Hero, adept at summoning insect minions and crushing enemies.|n|cfff5962dCan learn:|R Impale, Carrion Beetles, Spiked Carapace, Locust Swarm|n|n|cffffcc00Attacks land units.|R
+}
+
+STRING 17061
+// Buffs/Effects: B0AP (), Bufftip (Tooltip)
+{
+Blackhand's Howl
 }
 
 STRING 17062
@@ -102670,12 +102706,6 @@ STRING 17165
 Goldrinn's Howl
 }
 
-STRING 17166
-// Units: h065 (Refuge), Ubertip (Tooltip - Extended)
-{
-Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Farmer, Whelp
-}
-
 STRING 17167
 // Abilities: A07K (Reincarnation), Researchubertip (Tooltip - Learn - Extended)
 {
@@ -102736,6 +102766,12 @@ STRING 17176
 Warrior Hero, adept at disrupting enemies and offensive magic.|n|cfff5962dCan Learn:|R Arcane Blast, Silence, Retribution Aura, Arcane Burst|n|n|cffffcc00Attacks land units.|R
 }
 
+STRING 17177
+// Buffs/Effects: B0AP (), Buffubertip (Tooltip - Extended)
+{
+This unit has Blackhand's Howl. It's damage and health regeneration are increased.
+}
+
 STRING 17178
 // Units: U00A (Scourge Commander), Tip (Tooltip - Basic)
 {
@@ -102764,12 +102800,6 @@ STRING 17182
 // Units: n0A1 (Crystal Lord), Ubertip (Tooltip - Extended)
 {
 Strongest breed of Draconian warriors.|n|cfff5962dAbilities:|R  Devour Magic, Breath of Frost, Devotion Aura, Cleaving Attack, Resistant Skin|n|n|cff99b4d1Can only summon 6.|r|n|cffffcc00Attacks land and air units.|r
-}
-
-STRING 17183
-// Units: h09A (Draconic Spire), Ubertip (Tooltip - Extended)
-{
-Primary production building for the Nexus.|n|cfff5962dTrains:|R Zealot, Initiate Mage, Dragonspawn|n|cfff5962dResearches:|R Improved Slow
 }
 
 STRING 17184
@@ -102914,6 +102944,12 @@ STRING 17207
 // Units: H04U (Demigod), Ubertip (Tooltip - Extended)
 {
 Ancient hero, adept at sustaining damage and producing units.|n|cfff5962dTrains:|r Sea Turtle|n|cfff5962dCan learn:|R Crushing Wave, Spiked Carapace, Devour, Tidal Storm|n|n|cffffcc00Attacks land units.|R
+}
+
+STRING 17208
+// Upgrades: R024 (Necromancer Adept Training,Necromancer Master Training), Ubertip (Tooltip - Extended)
+{
+Increases Necrolytes' mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Soul Burn.
 }
 
 STRING 17209
@@ -105363,24 +105399,6 @@ STRING 17636
 // Abilities: A0SV (White Wolf's Fury), Ubertip (Tooltip - Normal - Extended)
 {
 Causes this unit to attack <A10I,DataB4,%>% faster, and move <A10I,DataA4,%>% faster, but take <A10I,DataC4,%>% more damage.
-}
-
-STRING 17637
-// Buffs/Effects: B01V (Howl), Bufftip (Tooltip)
-{
-Howl
-}
-
-STRING 17638
-// Buffs/Effects: B01V (Howl), Buffubertip (Tooltip - Extended)
-{
-This unit has Howl
-}
-
-STRING 17639
-// Buffs/Effects: B01V (Howl), EditorName (Name (Editor Only))
-{
-Howl
 }
 
 STRING 17640
@@ -108657,7 +108675,7 @@ Revive Necromancer
 }
 
 STRING 18288
-// Abilities: A0V5 (Soul Burn), Tip (Tooltip - Normal)
+// Abilities: A09V (Soul Burn), Tip (Tooltip - Normal)
 {
 Soul Burn
 }
@@ -112549,12 +112567,6 @@ STRING 19078
 // Abilities: A0WV (Attribute Bonus), Ubertip (Tooltip - Normal - Extended)
 {
 Gives a total of <Aamk,DataA4> points to Intelligence, and Strength
-}
-
-STRING 19079
-// Units: h05X (Control Point Defender), Ubertip (Tooltip - Extended)
-{
-Mage filled defense tower. |n|cfff5962dAbilities:|R Feedback|n|cfff5962dCan Learn:|R Reveal, Magic Sentry|n|cfff5962dUpgrades Into:|R Improved Arcane Tower |n|n|cffffcc00Attacks land and air units.|r
 }
 
 STRING 19080
