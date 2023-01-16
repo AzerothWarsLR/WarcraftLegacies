@@ -27,7 +27,7 @@ namespace WarcraftLegacies.Source.Quests.Druids
     /// </summary>
     /// <param name="ashenvaleRect">Units in this rectangle start invulnerable and are rescued when the quest is completed.</param>
     public QuestAshenvale(Rectangle ashenvaleRect) : base("The Spirits of Ashenvale",
-      "The forest needs healing. Regain control of it to unleash its wrath on the Horde.",
+      "The forest needs healing. Regain control of it to awaken it.",
       "ReplaceableTextures\\CommandButtons\\BTNKeeperC.blp")
     {
       _ashenvaleRect = ashenvaleRect;

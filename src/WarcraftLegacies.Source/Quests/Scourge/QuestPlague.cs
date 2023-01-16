@@ -68,11 +68,11 @@ namespace WarcraftLegacies.Source.Quests.Scourge
 
     /// <inheritdoc />
     protected override string RewardFlavour =>
-      "The plague has been unleashed! The citizens of Lordaeron are quickly transforming into mindless zombies.";
+      "The plague has been unleashed! The citizens of Lordaeron are quickly transforming into mindless zombies. The Black Gatehas been opened in Dragonblight!";
 
     /// <inheritdoc />
     protected override string RewardDescription =>
-      "All villagers in Lordaeron are transformed into Zombies, and several Plague Cauldrons spawn throughout Lordaeron, which periodically spawn Zombies.";
+      "All villagers in Lordaeron are transformed into Zombies, and several Plague Cauldrons spawn throughout Lordaeron, which periodically spawn Zombies. Open a portal between Dragonblight and Scholomance";
 
     private void CreatePlagueCauldrons(Faction completingFaction)
     {

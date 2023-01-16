@@ -30924,7 +30924,7 @@ Q
 }
 
 STRING 5173
-// Abilities: Acrs (Curse), Tip (Tooltip - Normal)
+// Abilities: ACcs (Curse), Tip (Tooltip - Normal)
 {
 Curse (|cffffcc00Q|r)
 }
@@ -38355,12 +38355,6 @@ STRING 6411
 // Abilities: Abtl (Battle Stations), Hotkey (Hotkey - Normal)
 {
 Q
-}
-
-STRING 6412
-// Abilities: ACcs (Curse), Tip (Tooltip - Normal)
-{
-Curse (|cffffcc00Q|r)
 }
 
 STRING 6413
@@ -89618,7 +89612,7 @@ Increases Fel Warlocks' mana capacity, mana regeneration rate, attack damage and
 }
 
 STRING 14972
-// Buffs/Effects: B00A (Mage Armor), Bufftip (Tooltip)
+// Abilities: A02R (Mage Armor), Name (Name)
 {
 Mage Armor
 }
@@ -90881,7 +90875,7 @@ Slow melee unit capable of devastating area of effect attacks.|n|cfff5962dAbilit
 }
 
 STRING 15191
-// Buffs/Effects: B00A (Mage Armor), EditorName (Name (Editor Only))
+// Abilities: A02R (Mage Armor), Tip (Tooltip - Normal)
 {
 Mage Armor
 }
@@ -91549,7 +91543,7 @@ Mass Ice Armor
 }
 
 STRING 15302
-// Buffs/Effects: B02O (), Bufftip (Tooltip)
+// Units: n0AK (Initiate Mage), Name (Name)
 {
 Initiate Mage
 }
@@ -92645,7 +92639,7 @@ STRING 15484
 }
 
 STRING 15485
-// Buffs/Effects: B009 (), Bufftip (Tooltip)
+// Abilities: A0Z8 (Binding Shackles), Name (Name)
 {
 Binding Shackles
 }
@@ -95891,7 +95885,7 @@ Quest Completed: City of Gold
 }
 
 STRING 16027
-// Units: n0AK (Initiate Mage), Name (Name)
+// Buffs/Effects: B02O (), Bufftip (Tooltip)
 {
 Initiate Mage
 }
@@ -100679,7 +100673,7 @@ STRING 16826
 }
 
 STRING 16827
-// Abilities: A0V5 (Soul Burn), Tip (Tooltip - Normal)
+// Abilities: A09V (Soul Burn), Tip (Tooltip - Normal)
 {
 Soul Burn
 }
@@ -104735,7 +104729,7 @@ STRING 17519
 }
 
 STRING 17520
-// Abilities: A02R (Mage Armor), Name (Name)
+// Buffs/Effects: B00A (Mage Armor), Bufftip (Tooltip)
 {
 Mage Armor
 }
@@ -104759,7 +104753,7 @@ Learn Illusionary Lance - [|cffffcc00Level %d|r]
 }
 
 STRING 17524
-// Abilities: A02R (Mage Armor), Tip (Tooltip - Normal)
+// Buffs/Effects: B00A (Mage Armor), EditorName (Name (Editor Only))
 {
 Mage Armor
 }
@@ -108675,7 +108669,7 @@ Revive Necromancer
 }
 
 STRING 18288
-// Abilities: A09V (Soul Burn), Tip (Tooltip - Normal)
+// Abilities: A0V5 (Soul Burn), Tip (Tooltip - Normal)
 {
 Soul Burn
 }
@@ -113843,13 +113837,13 @@ STRING 19328
 }
 
 STRING 19329
-// Abilities: A0Z8 (Binding Shackles), Name (Name)
+// Abilities: A0Z8 (Binding Shackles), Tip (Tooltip - Normal)
 {
 Binding Shackles
 }
 
 STRING 19330
-// Abilities: A0Z8 (Binding Shackles), Tip (Tooltip - Normal)
+// Buffs/Effects: B009 (), Bufftip (Tooltip)
 {
 Binding Shackles
 }
