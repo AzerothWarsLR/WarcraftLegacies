@@ -26,7 +26,6 @@ namespace WarcraftLegacies.Source.Setup.Legends
     public static LegendaryHero Vaelastrasz { get; private set; }
     public static Capital Caerdarrow { get; private set; }
     public static Capital Shaladrassil { get; private set; }
-    
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
       Ragnaros = new LegendaryHero("Ragnaros")
