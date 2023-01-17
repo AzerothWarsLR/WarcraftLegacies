@@ -15,7 +15,7 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
     /// Initializes a new instance of the <see cref="QuestSafeSea"/> class.
     /// </summary>
     public QuestWestfallOutpost(Rectangle questRect) : base("Westfall Outpost",
-      "The Kul'tiran military will need a solid foothold to help Stormwind in their fight against the Outland invaders!", @"ReplaceableTextures\\CommandButtons\\BTNKultirasGryphonAviary.blp")
+      "The Kul'tiran military will need a solid foothold to help Stormwind in their fight against the Outland invaders!", "ReplaceableTextures\\CommandButtons\\BTNKultirasGryphonAviary.blp")
     {
       Required = true;
       AddObjective(new ObjectiveBuildInRect(questRect, "in Westfall", Constants.UNIT_H06R_GARRISON_KUL_TIRAS_BARRACKS, 2));

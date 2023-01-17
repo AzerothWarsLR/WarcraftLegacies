@@ -20,7 +20,7 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
     /// Initializes a new instance of the <see cref="QuestEliminatePiracy"/> class.
     /// </summary>
     public QuestEliminatePiracy(Rectangle rescueRect) : base("Eliminate Piracy",
-      "The seas must be secured and the Kul'tiras navy must be returned to its former glory!", @"ReplaceableTextures\\CommandButtons\\BTNHeroTinker.blp")
+      "The seas must be secured and the Kul'tiras navy must be returned to its former glory!", "ReplaceableTextures\\CommandButtons\\BTNHeroTinker.blp")
     {
       AddObjective(new ObjectiveKillAllInArea(new List<Rectangle> { Regions.StranglethornAmbient3 }, "In Booty Bay"));
       AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N01E_FUSELIGHT_10GOLD_MIN)));
@@ -39,6 +39,7 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
     protected override void OnComplete(Faction completingFaction)
     {
       completingFaction.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, 400);
+      completingFaction.Player.RescueGroup(_rescueUnits);
     }
   }
 }
