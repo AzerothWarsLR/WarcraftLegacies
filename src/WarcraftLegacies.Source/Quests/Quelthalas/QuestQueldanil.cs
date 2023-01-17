@@ -25,9 +25,9 @@ namespace WarcraftLegacies.Source.Quests.Quelthalas
     }
 
     protected override string RewardFlavour =>
-      "Quel'thalas has finally reunited with its lost rangers in the Hinterlands.";
+      "The rangers of Quel'danil have been reunited with the forces of Quel'thalas.";
 
-    protected override string RewardDescription => "Control of Quel'danil Lodge";
+    protected override string RewardDescription => "Grants control of Quel'danil Lodge and it's rangers";
 
     protected override void OnComplete(Faction completingFaction)
     {

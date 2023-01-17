@@ -26,7 +26,7 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
     /// </summary>
     /// <param name="rescueRect">Units in this area will be made invulnerable, then rescued when the quest is completed.</param>
     public QuestStormwindCity(Rectangle rescueRect) : base("Clear the Outskirts",
-      "The outskirts of Stormwind are infested by evil creatures. Kill their leaders and regain control of the Towns.",
+      "The outskirts of Stormwind are infested by rebels and foul creatures. Defeat them to regain control of your lands.",
       "ReplaceableTextures\\CommandButtons\\BTNStormwindCastle.blp")
     {
       AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N00V_DUSKWOOD_10GOLD_MIN)));
@@ -43,11 +43,11 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
     //Todo: bad flavour
     /// <inheritdoc />
     protected override string RewardFlavour =>
-      "Stormwind has been liberated, and its military is now free to assist the Alliance.";
+      "Stormwind has been liberated, and its grand army is now free to assist the Alliance.";
 
     /// <inheritdoc />
     protected override string RewardDescription =>
-      "Control of all units in Stormwind and enable Varian to be trained at the altar";
+      "Control of all units in Stormwind, unlocks Varian for training at the altar, unlocks the Summon Garrison spell";
 
     /// <inheritdoc />
     protected override void OnFail(Faction completingFaction)
