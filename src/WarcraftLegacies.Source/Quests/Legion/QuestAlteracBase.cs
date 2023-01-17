@@ -19,7 +19,6 @@ namespace WarcraftLegacies.Source.Quests.Legion
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestAlteracBase"/> class
     /// </summary>
-    /// <param name="rescueRect"></param>
 
     private readonly unit _legionDemonGate;
     public QuestAlteracBase(Rectangle rescueRect, PreplacedUnitSystem preplacedUnitSystem) : base("Ruins of Alterac",
