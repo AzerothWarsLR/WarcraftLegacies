@@ -14,7 +14,7 @@ namespace WarcraftLegacies.Source.Setup
     /// </summary>
     public static void Setup()
     {
-      foreach (var unit in CreateGroup().EnumUnitsOfPlayer(Player(Player(20)))
+      foreach (var unit in CreateGroup().EnumUnitsOfPlayer(Player(20)).EmptyToList())
           unit.SetOwner(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
   }

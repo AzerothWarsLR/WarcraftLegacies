@@ -28,19 +28,19 @@ Salvage the wrecked ships, establish a base and gather your troops to move inlan
 
       };
 
-      Frostwolf.ModObjectLimit(Constants.UNIT_OGRE_GREAT_HALL_FROSTWOLF, Faction.UNLIMITED);
-      Frostwolf.ModObjectLimit(Constants.UNIT_OSTR_STRONGHOLD_FROSTWOLF, Faction.UNLIMITED);
-      Frostwolf.ModObjectLimit(Constants.UNIT_OFRT_FORTRESS_FROSTWOLF, Faction.UNLIMITED);
-      Frostwolf.ModObjectLimit(Constants.UNIT_OALT_ALTAR_OF_STORMS_FROSTWOLF, Faction.UNLIMITED);
-      Frostwolf.ModObjectLimit(Constants.UNIT_OBAR_WAR_CAMP_FROSTWOLF, Faction.UNLIMITED);
-      Frostwolf.ModObjectLimit(Constants.UNIT_OFOR_WAR_MILL_FROSTWOLF, Faction.UNLIMITED);
-      Frostwolf.ModObjectLimit(Constants.UNIT_OTTO_TAUREN_TOTEM_FROSTWOLF, Faction.UNLIMITED);
-      Frostwolf.ModObjectLimit(Constants.UNIT_OSLD_SPIRIT_LODGE_FROSTWOLF, Faction.UNLIMITED);
-      Frostwolf.ModObjectLimit(Constants.UNIT_OTRB_BURROW_FROSTWOLF, Faction.UNLIMITED);
-      Frostwolf.ModObjectLimit(Constants.UNIT_OWTW_WATCH_TOWER_FROSTWOLF, Faction.UNLIMITED);
+      Frostwolf.ModObjectLimit(Constants.UNIT_OGRE_GREAT_HALL_FROSTWOLF_T1, Faction.UNLIMITED);
+      Frostwolf.ModObjectLimit(Constants.UNIT_OSTR_STRONGHOLD_FROSTWOLF_T2, Faction.UNLIMITED);
+      Frostwolf.ModObjectLimit(Constants.UNIT_OFRT_FORTRESS_FROSTWOLF_T3, Faction.UNLIMITED);
+      Frostwolf.ModObjectLimit(Constants.UNIT_OALT_ALTAR_OF_STORMS_FROSTWOLF_ALTAR, Faction.UNLIMITED);
+      Frostwolf.ModObjectLimit(Constants.UNIT_OBAR_WAR_CAMP_FROSTWOLF_BARRACKS, Faction.UNLIMITED);
+      Frostwolf.ModObjectLimit(Constants.UNIT_OFOR_WAR_MILL_FROSTWOLF_RESEARCH, Faction.UNLIMITED);
+      Frostwolf.ModObjectLimit(Constants.UNIT_OTTO_TAUREN_TOTEM_FROSTWOLF_SPECIALIST, Faction.UNLIMITED);
+      Frostwolf.ModObjectLimit(Constants.UNIT_OSLD_SPIRIT_LODGE_FROSTWOLF_MAGIC, Faction.UNLIMITED);
+      Frostwolf.ModObjectLimit(Constants.UNIT_OTRB_BURROW_FROSTWOLF_FARM, Faction.UNLIMITED);
+      Frostwolf.ModObjectLimit(Constants.UNIT_OWTW_WATCH_TOWER_FROSTWOLF_TOWER, Faction.UNLIMITED);
       Frostwolf.ModObjectLimit(Constants.UNIT_O002_IMPROVED_WATCH_TOWER_FROSTWOLF_TOWER_2, Faction.UNLIMITED);
-      Frostwolf.ModObjectLimit(Constants.UNIT_OVLN_VOODOO_LOUNGE_FROSTWOLF, Faction.UNLIMITED);
-      Frostwolf.ModObjectLimit(Constants.UNIT_OSHY_HORDE_PIER_FROSTWOLF, Faction.UNLIMITED);
+      Frostwolf.ModObjectLimit(Constants.UNIT_OVLN_VOODOO_LOUNGE_FROSTWOLF_SHOP, Faction.UNLIMITED);
+      Frostwolf.ModObjectLimit(Constants.UNIT_OSHY_HORDE_PIER_FROSTWOLF_SHIPYARD, Faction.UNLIMITED);
       Frostwolf.ModObjectLimit(Constants.UNIT_OOSC_PACK_KODO_FROSTWOLF, Faction.UNLIMITED);
 
       Frostwolf.ModObjectLimit(FourCC("opeo"), Faction.UNLIMITED); //Peon
