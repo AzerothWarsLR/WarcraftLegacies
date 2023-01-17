@@ -26,7 +26,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
     public static LegendaryHero Vaelastrasz { get; private set; }
     public static Capital Caerdarrow { get; private set; }
     public static Capital Shaladrassil { get; private set; }
-    
+    public static Capital ThandolSpanDestroyed { get; private set; }
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
       Ragnaros = new LegendaryHero("Ragnaros")
@@ -172,6 +172,13 @@ namespace WarcraftLegacies.Source.Setup.Legends
         Capturable = true
       };
       CapitalManager.Register(Shaladrassil);
+
+      ThandolSpanDestroyed = new Capital
+      {
+        //ToDo Add unit here
+      };
+
+      CapitalManager.Register(ThandolSpanDestroyed);
     }
   }
 }
