@@ -19,7 +19,7 @@ namespace WarcraftLegacies.Source.Quests.Warsong
     private readonly List<unit> _rescueUnits = new();
 
     public QuestCrossroads(Rectangle rescueRect, PreplacedUnitSystem preplacedUnitSystem) : base("The Crossroads",
-      "The Horde still needs to establish a strong strategic foothold into Kalimdor. There is an opportune crossroads nearby.",
+      "The Horde still needs to establish a strong strategic foothold into Kalimdor. Expand into the Barrens and claim the Crossroads.",
       "ReplaceableTextures\\CommandButtons\\BTNBarracks.blp")
     {
       AddObjective(
@@ -36,9 +36,9 @@ namespace WarcraftLegacies.Source.Quests.Warsong
         }
     }
 
-    protected override string RewardFlavour => "The Crossroads have been constructed.";
+    protected override string RewardFlavour => "The Crossroads have been constructed. You have received 2000 Lumber.";
 
-    protected override string RewardDescription => "Control of the Crossroads";
+    protected override string RewardDescription => "Control of the Crossroads, +2000 Lumber";
 
     private void GiveCrossroads(player whichPlayer)
     {

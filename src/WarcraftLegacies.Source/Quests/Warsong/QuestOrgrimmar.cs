@@ -17,7 +17,7 @@ namespace WarcraftLegacies.Source.Quests.Warsong
     private readonly int _researchId = FourCC("R05O"); //This research is required to complete the quest
 
     public QuestOrgrimmar(Rectangle rescueRect) : base("To Tame a Land",
-      "This new continent is ripe for opportunity, if (the Horde is going to survive, a new city needs to be built.",
+      "This new continent is ripe for the taking. If (the Horde is to survive, a new city needs to be built.",
       "ReplaceableTextures\\CommandButtons\\BTNFortress.blp")
     {
       AddObjective(new ObjectiveResearch(_researchId, FourCC("o02S")));
@@ -33,9 +33,9 @@ namespace WarcraftLegacies.Source.Quests.Warsong
         }
     }
 
-    protected override string RewardFlavour => "Control of all units in Orgrimmar, able to train Varok";
+    protected override string RewardFlavour => "Control of all units in Orgrimmar, able to train Varok and Azerite Siege Engines";
 
-    protected override string RewardDescription => "Control of all units in Orgrimmar, able to train Varok";
+    protected override string RewardDescription => "Control of all units in Orgrimmar, able to train Varok and Azerite Siege Engines";
 
     protected override void OnComplete(Faction completingFaction)
     {

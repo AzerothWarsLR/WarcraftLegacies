@@ -7,7 +7,7 @@ using static War3Api.Common;
 namespace WarcraftLegacies.Source.Quests.Warsong
 {
   /// <summary>
-  /// Chen Stormstout joins the Warsong when a Warsong unit approaches him.
+  /// Chen Stormstout becomes available for training at the Warsong Altar.
   /// </summary>
   public sealed class QuestChenStormstout : QuestData
   {
@@ -24,7 +24,7 @@ namespace WarcraftLegacies.Source.Quests.Warsong
       _chen = chen;
     }
 
-    protected override string RewardFlavour => "Chen Stormstout has joined the Warsong Clan.";
+    protected override string RewardFlavour => "Chen Stormstout is now available for training at your Altar.";
 
     protected override string RewardDescription => "The hero Chen Stormstout";
 
