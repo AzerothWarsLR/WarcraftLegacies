@@ -4,7 +4,6 @@ using MacroTools.QuestSystem;
 using MacroTools.Extensions;
 using WarcraftLegacies.Source.Setup.Legends;
 using static War3Api.Common;
-using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools;
 using WCSharp.Shared.Data;
 
@@ -14,22 +13,21 @@ namespace WarcraftLegacies.Source.Quests
   /// <summary>
   /// Repair the Thandol Span to make it walkabale again
   /// </summary>
-  public class QuestThandolSpan : QuestData
+  public sealed class QuestThandolSpan : QuestData
   {
 
-    private destructable ThandolSpan { get; }
-
+    private readonly destructable _thandolSpan;
+    private readonly unit _thandolSpanDestroyed;
     /// <inheritdoc />
     public QuestThandolSpan(PreplacedUnitSystem preplacedUnitSystem) : base("Thandol Span",
       "The massive stone bridges connecting the Wetlands of northern Khaz Modan with the Arathi Highlands of southeastern Lordaeron, known as the Thandol Span is one of the greatest engineering projects ever completed by the dwarves." +
-      "The mighty bridges recently suffered heavy damage due to a Dark Iron. Repair them to connect the two areas once again.",
-      BlzGetAbilityIcon(LegendSentinels.BlackrookHold.UnitType))
+      "The mighty bridges recently suffered heavy damage due to a Dark Iron. Repair them to connect the two areas once again.", "")//Add icon here
     {
-      ThandolSpan = preplacedUnitSystem.GetDestructable(FourCC("LT08"), new Point(15695, 457));
-      
-      AddObjective(new ObjectiveUnitReachesFullHealth(LegendNeutral.ThandolSpanDestroyed.Unit));
+      _thandolSpan = preplacedUnitSystem.GetDestructable(FourCC("LT08"), new Point(15695, 457));
+      _thandolSpanDestroyed = preplacedUnitSystem.GetUnit(1234, new Point(15695, 457)); //Insert proper Id here
+      AddObjective(new ObjectiveUnitReachesFullHealth(_thandolSpanDestroyed));
       CreateTrigger()
-        .RegisterUnitEvent(LegendNeutral.ThandolSpanDestroyed.Unit, EVENT_UNIT_DAMAGED)
+        .RegisterUnitEvent(_thandolSpanDestroyed, EVENT_UNIT_DAMAGED)
         .AddAction(OnDamaged);
     }
 
@@ -44,14 +42,14 @@ namespace WarcraftLegacies.Source.Quests
     /// <inheritdoc />
     protected override void OnComplete(Faction whichFaction)
     {
-      DestructableRestoreLife(ThandolSpan, GetDestructableMaxLife(ThandolSpan), true);
+      DestructableRestoreLife(_thandolSpan, GetDestructableMaxLife(_thandolSpan), true);
     }
 
     private void OnDamaged()
     {
-      if (!(GetEventDamage() + 1 >= GetUnitState(LegendNeutral.ThandolSpanDestroyed.Unit, UNIT_STATE_LIFE))) return;
+      if (!(GetEventDamage() + 1 >= GetUnitState(_thandolSpanDestroyed, UNIT_STATE_LIFE))) return;
       BlzSetEventDamage(0);
-      SetUnitState(LegendNeutral.ThandolSpanDestroyed.Unit, UNIT_STATE_LIFE, GetUnitState(LegendNeutral.ThandolSpanDestroyed.Unit, UNIT_STATE_MAX_LIFE) * 0.05f);
+      _thandolSpanDestroyed.SetLifePercent(0.05f);
     }
   }
 }
