@@ -41,7 +41,7 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
         ValidUnitTypes = new[]
         {
           Constants.UNIT_OPEO_PEON_FROSTWOLF_WARSONG_WORKER,
-          Constants.UNIT_OGRU_GRUNT_FROSTWOLF_WARSONG,
+          Constants.UNIT_OGRU_GRUNT_FROSTWOLF,
           Constants.UNIT_OSHM_SHAMAN_FROSTWOLF,
           Constants.UNIT_O00A_FAR_SEER_FROSTWOLF_ELITE,
           Constants.UNIT_OTHR_WARCHIEF_OF_THE_HORDE_FROSTWOLF,

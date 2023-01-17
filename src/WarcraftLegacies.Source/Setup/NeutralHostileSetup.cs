@@ -14,9 +14,7 @@ namespace WarcraftLegacies.Source.Setup
     /// </summary>
     public static void Setup()
     {
-      if (IllidariSetup.Illidari?.Player == null) return;
-      foreach (var unit in CreateGroup().EnumUnitsOfPlayer(IllidariSetup.Illidari.Player).EmptyToList())
-        if (!Regions.IllidanStartingPosition.Contains(unit.GetPosition()))
+      foreach (var unit in CreateGroup().EnumUnitsOfPlayer(Player(20)).EmptyToList())
           unit.SetOwner(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
   }
