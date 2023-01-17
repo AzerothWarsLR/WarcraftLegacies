@@ -29,8 +29,7 @@ namespace WarcraftLegacies.Source.Quests.Naga
       AddObjective(new ObjectiveLegendInRect(LegendNaga.LegendIllidan, Regions.IllidanBlackTempleUnlock, "Black Temple"));
       AddObjective(new ObjectiveExpire(1250));
       AddObjective(new ObjectiveSelfExists());
-      _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures,
-        filterUnit => filterUnit.GetTypeId() != Constants.UNIT_N066_INFERNAL_JUGGERNAUT_TEAL_TOWER);
+      _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
       Required = true;
     }
 

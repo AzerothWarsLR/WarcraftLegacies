@@ -38,6 +38,7 @@ Support your ally in Outland by defeating Kul'tiras and invading Stormwind to dr
       Illidari.ModObjectLimit(FourCC("n005"), Faction.UNLIMITED); //Improved Tidal Guardian
       Illidari.ModObjectLimit(FourCC("nmrb"), Faction.UNLIMITED); //Deep Sea Vault
       Illidari.ModObjectLimit(FourCC("n08W"), Faction.UNLIMITED); //Deep Sea Vault
+      Illidari.ModObjectLimit(FourCC("e020"), Faction.UNLIMITED); //Shipyard
 
       Illidari.ModObjectLimit(FourCC("nmpe"), Faction.UNLIMITED); //Murgul Slave
       Illidari.ModObjectLimit(FourCC("nmyr"), Faction.UNLIMITED); //Myrmidon
@@ -52,6 +53,16 @@ Support your ally in Outland by defeating Kul'tiras and invading Stormwind to dr
       Illidari.ModObjectLimit(FourCC("h0AC"), 6); //Sea Witch
       Illidari.ModObjectLimit(FourCC("ndrn"), Faction.UNLIMITED); //AshtongueMelee
       Illidari.ModObjectLimit(FourCC("ndrs"), 6); //Ashtonguecaster
+
+      //Ships
+      Illidari.ModObjectLimit(FourCC("etrs"), Faction.UNLIMITED); //Night Elf Transport Ship
+      Illidari.ModObjectLimit(FourCC("h0AU"), Faction.UNLIMITED); // Scout
+      Illidari.ModObjectLimit(FourCC("h0AV"), Faction.UNLIMITED); // Frigate
+      Illidari.ModObjectLimit(FourCC("h0B1"), Faction.UNLIMITED); // Fireship
+      Illidari.ModObjectLimit(FourCC("h057"), Faction.UNLIMITED); // Galley
+      Illidari.ModObjectLimit(FourCC("h0B4"), Faction.UNLIMITED); // Boarding
+      Illidari.ModObjectLimit(FourCC("h0BA"), Faction.UNLIMITED); // Juggernaut
+      Illidari.ModObjectLimit(FourCC("h0B8"), 6); // Bombard
 
       Illidari.ModObjectLimit(FourCC("Hvsh"), 1); //Vashj
       Illidari.ModObjectLimit(FourCC("U00S"), 1); //Najentus

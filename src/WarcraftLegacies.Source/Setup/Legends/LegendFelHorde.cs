@@ -86,7 +86,6 @@ namespace WarcraftLegacies.Source.Setup.Legends
       LegendBlacktemple = new Capital
       {
         Unit = preplacedUnitSystem.GetUnit(FourCC("o00F")),
-        Hivemind = true
       };
       CapitalManager.Register(LegendBlacktemple);
       LegendBlacktemple.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_NPGR_POWER_GENERATOR_TEAL, new Point(5511.9f, -29688.2f)));
