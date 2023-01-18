@@ -26,10 +26,10 @@ namespace WarcraftLegacies.Source.Quests.Naga
 
     /// <inheritdoc/>
     protected override string RewardFlavour =>
-      "The Eye of Sargeras' power needs to be channeled by powerful arcanists, the Summoners will be the perfect vessels.";
+      "The Eye of Sargeras' power needs to be channeled by powerful arcanists, the Naga Sea Witch will be the perfect vessels.";
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
-      "Gain the Eye of Sargeras and the ability to train Coilfang Summoners";
+      "Gain the Eye of Sargeras and the ability to train Sea Witches";
   }
 }

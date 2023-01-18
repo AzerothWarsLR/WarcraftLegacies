@@ -11,7 +11,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       //Early duel
       var newQuest = LegionSetup.Legion.AddQuest(new QuestArgusControl(preplacedUnitSystem));
       LegionSetup.Legion.StartingQuest = newQuest;
-      LegionSetup.Legion.AddQuest(new QuestEmbassy(Regions.Northrend_Ambiance, Regions.AlteracAmbient));
+      LegionSetup.Legion.AddQuest(new QuestEmbassy(Regions.DrakUnlock));
       LegionSetup.Legion.AddQuest(new QuestAlteracBase(Regions.AlteracAmbient, preplacedUnitSystem));
       LegionSetup.Legion.AddQuest(new QuestLegionCaptureSunwell());
       LegionSetup.Legion.AddQuest(new QuestLegionKillLordaeron());

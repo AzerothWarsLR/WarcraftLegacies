@@ -17,9 +17,8 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
       "The Orc threat from Draenor still looms over all. Eliminate every trace of the Orcs and their bases.",
       "ReplaceableTextures\\CommandButtons\\BTNDarkPortal.blp")
     {
-      AddObjective(new ObjectiveCapitalDead(LegendFelHorde.LegendBlacktemple));
       AddObjective(new ObjectiveCapitalDead(LegendFelHorde.LegendHellfirecitadel));
-      AddObjective(new ObjectiveCapitalDead(LegendFelHorde.LegendBlackrockspire));
+      AddObjective(new ObjectiveCapitalDead(LegendFelHorde.LegendKilsorrowFortress));
       AddObjective(new ObjectiveSelfExists());
       ResearchId = Constants.UPGRADE_R085_QUEST_COMPLETED_BEYOND_THE_DARK_PORTAL;
     }
@@ -28,6 +27,6 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
     protected override string RewardFlavour => "The orcs are no more and we can now train Fusillier.";
 
     /// <inheritdoc/>
-    protected override string RewardDescription => "You will be able to train Fusillier from the Castle";
+    protected override string RewardDescription => "You will be able to train Fusillier from the Chapter House";
   }
 }

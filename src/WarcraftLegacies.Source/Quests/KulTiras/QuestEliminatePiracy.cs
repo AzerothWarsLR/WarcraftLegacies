@@ -22,7 +22,7 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
     public QuestEliminatePiracy(Rectangle rescueRect) : base("Eliminate Piracy",
       "The seas must be secured and the Kul'tiras navy must be returned to its former glory!", "ReplaceableTextures\\CommandButtons\\BTNHeroTinker.blp")
     {
-      AddObjective(new ObjectiveKillAllInArea(new List<Rectangle> { Regions.StranglethornAmbient3 }, "In Booty Bay"));
+      AddObjective(new ObjectiveKillAllInArea(new List<Rectangle> { Regions.BootyBayQuest }, "In Booty Bay"));
       AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N01E_FUSELIGHT_10GOLD_MIN)));
       AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N00L_BOOTY_BAY_10GOLD_MIN)));
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);

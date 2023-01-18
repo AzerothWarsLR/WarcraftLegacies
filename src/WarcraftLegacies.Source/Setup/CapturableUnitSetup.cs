@@ -18,9 +18,6 @@ namespace WarcraftLegacies.Source.Setup
         fountainOfHealth.MakeCapturable();
       foreach (var tradingPost in preplacedUnitSystem.GetUnits(FourCC("h014")))
         tradingPost.MakeCapturable();
-
-      foreach (var thandolSpan in preplacedUnitSystem.GetUnits(FourCC("h06G")))
-        thandolSpan.MakeCapturable();
     }
   }
 }

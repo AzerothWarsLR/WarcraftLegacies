@@ -323,7 +323,7 @@ public static class Regions
 	public static Rectangle Scholomance_Exterior_1 { get; set; } = new Rectangle(14528f, 7616f, 14912f, 7872f);
 	public static Rectangle Scholomance_Exterior_2 { get; set; } = new Rectangle(15232f, 6720f, 15552f, 7136f);
 	public static Rectangle Wrathgate_Portal_2 { get; set; } = new Rectangle(-2400f, 18848f, -2112f, 19136f);
-	public static Rectangle AlteracLegionLanding { get; set; } = new Rectangle(10944f, 6016f, 11328f, 6368f);
+	public static Rectangle AlteracLegionLanding { get; set; } = new Rectangle(11168f, 5632f, 11552f, 5984f);
 	public static Rectangle NorthrendLegionLanding { get; set; } = new Rectangle(3392f, 20512f, 3776f, 20864f);
 	public static Rectangle IslandBlocker1 { get; set; } = new Rectangle(416f, 2048f, 1440f, 2336f);
 	public static Rectangle IslandBlocker2 { get; set; } = new Rectangle(-2048f, 2048f, -1024f, 2336f);
@@ -331,6 +331,6 @@ public static class Regions
 	public static Rectangle IslandBlocker4 { get; set; } = new Rectangle(768f, -10496f, 1792f, -10208f);
 	public static Rectangle IslandBlocker5 { get; set; } = new Rectangle(512f, -9216f, 800f, -8416f);
 	public static Rectangle IllidariUnlockSA { get; set; } = new Rectangle(12000f, -22816f, 13376f, -21280f);
-	public static Rectangle Region_112 { get; set; } = new Rectangle(9696f, -24160f, 12032f, -22304f);
+	public static Rectangle BootyBayQuest { get; set; } = new Rectangle(9696f, -24160f, 12032f, -22304f);
 
 }

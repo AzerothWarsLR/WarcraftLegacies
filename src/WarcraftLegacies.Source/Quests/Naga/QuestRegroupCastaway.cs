@@ -23,9 +23,9 @@ namespace WarcraftLegacies.Source.Quests.Naga
     }
 
     /// <inheritdoc/>
-    protected override string RewardFlavour => "The powerful Sea Witches are serving their Master once again.";
+    protected override string RewardFlavour => "The powerful Summoners are serving their Master once again. The ancient Highborn shipyards can now be constructed";
 
     /// <inheritdoc/>
-    protected override string RewardDescription => $"Sea Witches can be trained from the {GetObjectName(Constants.UNIT_N055_BETRAYER_S_CITADEL_ILLIDARI_T3)}";
+    protected override string RewardDescription => $"Summoners can be trained from the Archives and you can build shipyards";
   }
 }

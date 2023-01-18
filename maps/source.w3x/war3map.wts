@@ -6500,12 +6500,6 @@ STRING 1083
 Lieutenant of the Watchers, Naisha is a strong leader and close confidant to Maeiv. She is the shield of the underside of the Sentinels and the rest of the Kaldorei
 }
 
-STRING 1084
-// Units: h0AN (Juggernaut), Ubertip (Tooltip - Extended)
-{
-Dominating heavy ship.|n|r|n|cffffcc00Attacks land units.|r |nStrong versus every Ship, Weak versus Frigates on equal ressources.|n
-}
-
 STRING 1085
 // Units: Nmag (Lord of Outland), Hotkey (Hotkey)
 {
@@ -11994,6 +11988,12 @@ STRING 1999
  (Neutral Hostile)
 }
 
+STRING 2000
+// Units: h093 (Order Chapter House), Ubertip (Tooltip - Extended)
+{
+Primary troop production building.|n|cfff5962dTrains:|R Ember Cleric, Witch Hunter and Fusillier
+}
+
 STRING 2001
 // Units: orai (Raider), Ubertip (Tooltip - Extended)
 {
@@ -13884,7 +13884,7 @@ Train Conjurer
 
 STRING 2316
 {
-Warcraft Legacies 2.2.0
+Warcraft Legacies 2.3.0
 }
 
 STRING 2317
@@ -27921,6 +27921,12 @@ STRING 4655
 // Doodads: D021 (Everlook Wall), Name (Name)
 {
 Everlook Wall
+}
+
+STRING 4656
+// Units: h0AN (Juggernaut), Ubertip (Tooltip - Extended)
+{
+Dominating heavy ship.|n|r|n|cffffcc00Attacks ships.|r |nStrong versus every Ship, Weak versus Frigates on equal ressources.|nCannot attack non-mechanical units.
 }
 
 STRING 4657
@@ -76644,6 +76650,12 @@ STRING 12770
 Tougher Hides reduces the damage dealt to the Druid by 10 damage.
 }
 
+STRING 12771
+// Units: h0BA (Juggernaut), Ubertip (Tooltip - Extended)
+{
+Dominating heavy ship.|n|r|n|cffffcc00Attacks ships.|r |nStrong versus every Ship, Weak versus Frigates on equal ressources.|nCannot attack non-mechanical units.
+}
+
 STRING 12772
 // Abilities: A01W (Brute Strength), Researchhotkey (Hotkey - Learn)
 {
@@ -79312,6 +79324,12 @@ STRING 13216
 // Units: n009 (Revenant), Ubertip (Tooltip - Extended)
 {
 Heavy melee unit infused with a persistent soul.|n|cfff5962dAbilities:|R Persistent Soul|n|n|cffffcc00Attacks land units.|r
+}
+
+STRING 13217
+// Units: h0BB (Juggernaut), Ubertip (Tooltip - Extended)
+{
+Dominating heavy ship.|n|r|n|cffffcc00Attacks ships.|r |nStrong versus every Ship, Weak versus Frigates on equal ressources.|nCannot attack non-mechanical units.
 }
 
 STRING 13218
@@ -83070,6 +83088,12 @@ STRING 13843
 Further increases the armor of Ghouls, Crypt Fiends, Zombies, Skeletal Archers, Gargoyles, Abominations, Meat Wagons, Destroyers, Frost Wyrms, Obsidian Statues, Death Knights, Sapphiron, Risen Skeletons, and Anub'arak's Beetles.
 }
 
+STRING 13844
+// Units: h0BC (Juggernaut), Ubertip (Tooltip - Extended)
+{
+Dominating heavy ship.|n|r|n|cffffcc00Attacks ships.|r |nStrong versus every Ship, Weak versus Frigates on equal ressources.|nCannot attack non-mechanical units.
+}
+
 STRING 13845
 // Items: srrc (Scroll of Resurrection), Hotkey (Hotkey)
 {
@@ -83106,6 +83130,12 @@ STRING 13850
 Increases Spirit Walkers' mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Ancestral Spirit.
 }
 
+STRING 13851
+// Abilities: A0UB (Open a portal to Northrend), EditorSuffix (Editor Suffix)
+{
+(legion)(Northrend)
+}
+
 STRING 13852
 // Abilities: A0LJ (Hellfire), Hotkey (Hotkey - Normal)
 {
@@ -83128,6 +83158,12 @@ STRING 13855
 // Upgrades: Rows (Pulverize Damage Increase), Ubertip (Tooltip - Extended)
 {
 Makes the Tauren Pulverize ability stronger.
+}
+
+STRING 13856
+// Abilities: A0UB (Open a portal to Northrend), Name (Name)
+{
+Open a portal to Northrend
 }
 
 STRING 13857
@@ -83166,6 +83202,12 @@ STRING 13862
 Increases Witch Doctors' mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Healing Ward.
 }
 
+STRING 13863
+// Abilities: A0RB (Dimensional Jump to Argus), Researchtip (Tooltip - Learn)
+{
+Learn Slipstream - [|cffffcc00Level %d|r]
+}
+
 STRING 13864
 // Abilities: A0K4 (Explore Map), Hotkey (Hotkey - Normal)
 {
@@ -83188,6 +83230,12 @@ STRING 13867
 // Upgrades: Rotr (Troll Regeneration,Improved Troll Regeneration,Advanced Troll Regeneration), Ubertip (Tooltip - Extended)
 {
 Increases the hit point regeneration of Troll units by 2.
+}
+
+STRING 13868
+// Abilities: A0RB (Dimensional Jump to Argus), Researchubertip (Tooltip - Learn - Extended)
+{
+Opens a two-way portal to the target location. The portal becomes useable after 5 seconds, and closes 10 seconds after the caster stops channeling.|n|n|cffffcc00Level 1|r - <A00D,Rng1> range. |n|cffffcc00Level 2|r - <A00D,Rng2> range. |n|cffffcc00Level 3|r - <A00D,Rng3> range.
 }
 
 STRING 13869
@@ -85392,6 +85440,12 @@ STRING 14235
 Unstable conconuion level up
 }
 
+STRING 14236
+// Abilities: A0UB (Open a portal to Northrend), Tip (Tooltip - Normal)
+{
+Open a portal to Northrend
+}
+
 STRING 14237
 // Upgrades: R05R (Chaos), Name (Name)
 {
@@ -87414,13 +87468,13 @@ A
 }
 
 STRING 14574
-// Abilities: A0RB (Dimensional Jump to Argus), Researchtip (Tooltip - Learn)
+// Abilities: A0SR (Dimensional Jump to Tempest Keep), Researchtip (Tooltip - Learn)
 {
 Learn Slipstream - [|cffffcc00Level %d|r]
 }
 
 STRING 14575
-// Abilities: A0RB (Dimensional Jump to Argus), Researchubertip (Tooltip - Learn - Extended)
+// Abilities: A0SR (Dimensional Jump to Tempest Keep), Researchubertip (Tooltip - Learn - Extended)
 {
 Opens a two-way portal to the target location. The portal becomes useable after 5 seconds, and closes 10 seconds after the caster stops channeling.|n|n|cffffcc00Level 1|r - <A00D,Rng1> range. |n|cffffcc00Level 2|r - <A00D,Rng2> range. |n|cffffcc00Level 3|r - <A00D,Rng3> range.
 }
@@ -88897,6 +88951,12 @@ STRING 14820
 This is a dummy upgrade used to enable Chaos abilities for the Silver Hand.
 }
 
+STRING 14821
+// Abilities: A0SR (Dimensional Jump to Tempest Keep), Tip (Tooltip - Normal)
+{
+Slipstream - [|cffffcc00Level 2|r]
+}
+
 STRING 14822
 // Upgrades: R01F (Chaos), Name (Name)
 {
@@ -89063,6 +89123,12 @@ STRING 14849
 // Upgrades: R018 (Magic Sentry), Ubertip (Tooltip - Extended)
 {
 Allows Chimaeras to gain a temporary burst of increased attack rate.
+}
+
+STRING 14850
+// Abilities: A0SR (Dimensional Jump to Tempest Keep), Tip (Tooltip - Normal)
+{
+Slipstream - [|cffffcc00Level 3|r]
 }
 
 STRING 14851
@@ -92220,6 +92286,12 @@ STRING 15384
 The hero heals every ally in a large radious around him. |n|n|cffffcc00Level 1|r - 150 hit points healed. |n|cffffcc00Level 2|r - 200 hit points healed. |n|cffffcc00Level 3|r - 250 hit points healed. |n|cffffcc00Level 4|r - 300 hit points healed.
 }
 
+STRING 15385
+// Abilities: A0UB (Open a portal to Northrend), Ubertip (Tooltip - Normal - Extended)
+{
+Opens a two-way portal to Argus at the target location within a range of <A00D,Rng1>. The portal becomes useable after 20 seconds, and closes 10 seconds after the caster stops channeling.
+}
+
 STRING 15386
 // Abilities: A0RA (Overclock), EditorSuffix (Editor Suffix)
 {
@@ -92242,6 +92314,12 @@ STRING 15389
 // Upgrades: R048 (Marksmanship), Tip (Tooltip)
 {
 Research Deadly Poison
+}
+
+STRING 15390
+// Abilities: A07D (Portal to Black Temple), Ubertip (Tooltip - Normal - Extended)
+{
+Opens a two-way portal to the target location within a range of <A00D,Rng2>. The portal becomes useable after 5 seconds, and closes 20 seconds after the caster stops channeling.
 }
 
 STRING 15391
@@ -92298,6 +92376,30 @@ STRING 15399
 Rounds for Everyone - [|cffffcc00Level 4|r]
 }
 
+STRING 15400
+// Abilities: A07D (Portal to Black Temple), Ubertip (Tooltip - Normal - Extended)
+{
+Opens a two-way portal to the target location within a range of <A00D,Rng3>. The portal becomes useable after 5 seconds, and closes 30 seconds after the caster stops channeling.
+}
+
+STRING 15401
+// Abilities: A0UC (Open a portal to Alterac), EditorSuffix (Editor Suffix)
+{
+(legion)(Alterac)
+}
+
+STRING 15402
+// Abilities: A0UC (Open a portal to Alterac), Name (Name)
+{
+Open a portal to Alterac
+}
+
+STRING 15403
+// Abilities: A07D (Portal to Black Temple), Researchtip (Tooltip - Learn)
+{
+Learn Slipstream - [|cffffcc00Level %d|r]
+}
+
 STRING 15404
 // Upgrades: R05O (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
 {
@@ -92306,7 +92408,7 @@ Further increases the armor of all Naval Units.
 
 STRING 15405
 {
-Warcraft Legacies 2.2.0
+Warcraft Legacies 2.3.0
 }
 
 STRING 15406
@@ -93562,6 +93664,12 @@ STRING 15614
 Research Ultravision
 }
 
+STRING 15615
+// Abilities: A07D (Portal to Black Temple), Researchubertip (Tooltip - Learn - Extended)
+{
+Opens a two-way portal to the target location. The portal becomes useable after 5 seconds, and closes 10 seconds after the caster stops channeling.|n|n|cffffcc00Level 1|r - <A00D,Rng1> range. |n|cffffcc00Level 2|r - <A00D,Rng2> range. |n|cffffcc00Level 3|r - <A00D,Rng3> range.
+}
+
 STRING 15616
 // Units: hwtw (Scout Tower), Ubertip (Tooltip - Extended)
 {
@@ -93584,6 +93692,12 @@ STRING 15619
 // Units: n075 (Vereesa Windrunner), Tip (Tooltip - Basic)
 {
 Revive Vareesa
+}
+
+STRING 15620
+// Abilities: A0UC (Open a portal to Alterac), Tip (Tooltip - Normal)
+{
+Open a portal to Alterac
 }
 
 STRING 15621
@@ -95374,6 +95488,12 @@ STRING 15918
 X
 }
 
+STRING 15919
+// Abilities: A07D (Portal to Black Temple), Tip (Tooltip - Normal)
+{
+Slipstream - [|cffffcc00Level 2|r]
+}
+
 STRING 15920
 // Units: n07X (Ogre Magi), Casterupgradename (Caster Upgrade Names)
 {
@@ -95846,6 +95966,12 @@ STRING 15998
 // Units: h07T (Improved Guard Tower), Tip (Tooltip - Basic)
 {
 Upgrade to Improved Guard Tower
+}
+
+STRING 15999
+// Abilities: A07D (Portal to Black Temple), Tip (Tooltip - Normal)
+{
+Slipstream - [|cffffcc00Level 3|r]
 }
 
 STRING 16000
@@ -96409,7 +96535,7 @@ Specialized medium ship.|n|cfff5962dAbilities:|R Boarding|n|r|n|cffffcc00Attacks
 }
 
 STRING 16093
-// Abilities: A0SR (Dimensional Jump to Tempest Keep), Researchtip (Tooltip - Learn)
+// Abilities: A0UB (Open a portal to Northrend), Researchtip (Tooltip - Learn)
 {
 Learn Slipstream - [|cffffcc00Level %d|r]
 }
@@ -96648,12 +96774,6 @@ STRING 16132
 Build Juggernaut
 }
 
-STRING 16133
-// Units: h0BA (Juggernaut), Ubertip (Tooltip - Extended)
-{
-Dominating heavy ship.|n|r|n|cffffcc00Attacks land units.|r |nStrong versus every Ship, Weak versus Frigates on equal ressources.|n
-}
-
 STRING 16134
 // Units: n07W (Plague Revenant), Tip (Tooltip - Basic)
 {
@@ -96679,15 +96799,9 @@ Build Juggernaut
 }
 
 STRING 16138
-// Abilities: A0SR (Dimensional Jump to Tempest Keep), Researchubertip (Tooltip - Learn - Extended)
+// Abilities: A0UB (Open a portal to Northrend), Researchubertip (Tooltip - Learn - Extended)
 {
 Opens a two-way portal to the target location. The portal becomes useable after 5 seconds, and closes 10 seconds after the caster stops channeling.|n|n|cffffcc00Level 1|r - <A00D,Rng1> range. |n|cffffcc00Level 2|r - <A00D,Rng2> range. |n|cffffcc00Level 3|r - <A00D,Rng3> range.
-}
-
-STRING 16139
-// Units: h0BB (Juggernaut), Ubertip (Tooltip - Extended)
-{
-Dominating heavy ship.|n|r|n|cffffcc00Attacks land units.|r |nStrong versus every Ship, Weak versus Frigates on equal ressources.|n
 }
 
 STRING 16140
@@ -96718,12 +96832,6 @@ STRING 16144
 // Units: h0BC (Juggernaut), Tip (Tooltip - Basic)
 {
 Build Juggernaut
-}
-
-STRING 16145
-// Units: h0BC (Juggernaut), Ubertip (Tooltip - Extended)
-{
-Dominating heavy ship.|n|r|n|cffffcc00Attacks land units.|r |nStrong versus every Ship, Weak versus Frigates on equal ressources.|n
 }
 
 STRING 16146
@@ -96847,7 +96955,7 @@ Golden Vessel
 }
 
 STRING 16166
-// Abilities: A0SR (Dimensional Jump to Tempest Keep), Tip (Tooltip - Normal)
+// Abilities: A0UB (Open a portal to Northrend), Tip (Tooltip - Normal)
 {
 Slipstream - [|cffffcc00Level 2|r]
 }
@@ -96911,7 +97019,7 @@ Legion
 }
 
 STRING 16177
-// Abilities: A0SR (Dimensional Jump to Tempest Keep), Tip (Tooltip - Normal)
+// Abilities: A0UB (Open a portal to Northrend), Tip (Tooltip - Normal)
 {
 Slipstream - [|cffffcc00Level 3|r]
 }
@@ -96929,13 +97037,13 @@ Opens a two-way portal to Black Temple at the target location within a range of 
 }
 
 STRING 16180
-// Abilities: A07D (Portal to Black Temple), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A0UB (Open a portal to Northrend), Ubertip (Tooltip - Normal - Extended)
 {
 Opens a two-way portal to the target location within a range of <A00D,Rng2>. The portal becomes useable after 5 seconds, and closes 20 seconds after the caster stops channeling.
 }
 
 STRING 16181
-// Abilities: A07D (Portal to Black Temple), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A0UB (Open a portal to Northrend), Ubertip (Tooltip - Normal - Extended)
 {
 Opens a two-way portal to the target location within a range of <A00D,Rng3>. The portal becomes useable after 5 seconds, and closes 30 seconds after the caster stops channeling.
 }
@@ -99640,12 +99748,6 @@ STRING 16631
 Build Order Chapter House
 }
 
-STRING 16632
-// Units: h093 (Order Chapter House), Ubertip (Tooltip - Extended)
-{
-Primary troop production building.|n|cfff5962dTrains:|R Ember Cleric, Witch Hunter and Order Inquisitor
-}
-
 STRING 16633
 // Units: n09A (Ember Cleric), EditorSuffix (Name - Editor Suffix)
 {
@@ -101566,6 +101668,12 @@ STRING 16952
 Quest Completed: The Darkspear Trolls
 }
 
+STRING 16953
+// Abilities: A0UC (Open a portal to Alterac), Ubertip (Tooltip - Normal - Extended)
+{
+Opens a two-way portal to Azuremyst at the target location within a range of <A00D,Rng1>. The portal becomes useable after 20 seconds, and closes 10 seconds after the caster stops channeling.
+}
+
 STRING 16954
 // Abilities: A0P5 (United for the Crusade), Name (Name)
 {
@@ -102212,6 +102320,12 @@ STRING 17061
 // Buffs/Effects: B0AP (), Bufftip (Tooltip)
 {
 Blackhand's Howl
+}
+
+STRING 17062
+// Abilities: A0UC (Open a portal to Alterac), Ubertip (Tooltip - Normal - Extended)
+{
+Opens a two-way portal to the target location within a range of <A00D,Rng2>. The portal becomes useable after 5 seconds, and closes 20 seconds after the caster stops channeling.
 }
 
 STRING 17063
@@ -103906,6 +104020,12 @@ STRING 17344
 Gunner Pilot
 }
 
+STRING 17345
+// Abilities: A0UC (Open a portal to Alterac), Ubertip (Tooltip - Normal - Extended)
+{
+Opens a two-way portal to the target location within a range of <A00D,Rng3>. The portal becomes useable after 5 seconds, and closes 30 seconds after the caster stops channeling.
+}
+
 STRING 17346
 // Upgrades: R065 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
@@ -104212,6 +104332,24 @@ STRING 17396
 (Arcane Annihilator)
 }
 
+STRING 17397
+// Abilities: A0VC (Viral Plague), Researchhotkey (Hotkey - Learn)
+{
+R
+}
+
+STRING 17398
+// Abilities: A0XQ (Squall), Hotkey (Hotkey - Normal)
+{
+Q
+}
+
+STRING 17399
+// Abilities: A0WF (Herald of Destruction), Hotkey (Hotkey - Normal)
+{
+R
+}
+
 STRING 17400
 // Abilities: A0RJ (Exploding Cocktail), EditorSuffix (Editor Suffix)
 {
@@ -104363,7 +104501,7 @@ W
 }
 
 STRING 17425
-// Abilities: A0XQ (Squall), Hotkey (Hotkey - Normal)
+// Abilities: A0HR (Heal), Hotkey (Hotkey - Normal)
 {
 Q
 }
@@ -105395,6 +105533,12 @@ STRING 17596
 Retribution Aura
 }
 
+STRING 17597
+// Abilities: A0WY (Banish), Hotkey (Hotkey - Normal)
+{
+W
+}
+
 STRING 17598
 // Upgrades: R088 (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
 {
@@ -105486,7 +105630,7 @@ Elemental Fire - [|cffffcc00Level 4|r]
 }
 
 STRING 17614
-// Abilities: A0WY (Banish), Hotkey (Hotkey - Normal)
+// Abilities: A0WY (Banish), Researchhotkey (Hotkey - Learn)
 {
 W
 }
@@ -105630,19 +105774,19 @@ Crimson Cathedral
 }
 
 STRING 17641
-// Abilities: A0VC (Viral Plague), Researchhotkey (Hotkey - Learn)
+// Abilities: A0WF (Herald of Destruction), Researchhotkey (Hotkey - Learn)
 {
 R
 }
 
 STRING 17643
-// Abilities: A0WY (Banish), Researchhotkey (Hotkey - Learn)
+// Abilities: A0WZ (Incinerate), Hotkey (Hotkey - Normal)
 {
 W
 }
 
 STRING 17644
-// Abilities: A0WZ (Incinerate), Hotkey (Hotkey - Normal)
+// Abilities: A0WZ (Incinerate), Researchhotkey (Hotkey - Learn)
 {
 W
 }
@@ -105666,7 +105810,7 @@ Open Exodar
 }
 
 STRING 17648
-// Abilities: A0WZ (Incinerate), Researchhotkey (Hotkey - Learn)
+// Abilities: A0X6 (Forked Lightning), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -105966,13 +106110,13 @@ Greater Frost Bolt
 }
 
 STRING 17709
-// Abilities: A0HR (Heal), Hotkey (Hotkey - Normal)
+// Abilities: A0HR (Heal), Unhotkey (Hotkey - Turn Off)
 {
 Q
 }
 
 STRING 17710
-// Abilities: A0HR (Heal), Unhotkey (Hotkey - Turn Off)
+// Abilities: A0OA (Emergency Repairs), Hotkey (Hotkey - Normal)
 {
 Q
 }
@@ -106008,7 +106152,7 @@ STRING 17715
 }
 
 STRING 17716
-// Abilities: A0X6 (Forked Lightning), Hotkey (Hotkey - Normal)
+// Abilities: A0X6 (Forked Lightning), Researchhotkey (Hotkey - Learn)
 {
 W
 }
@@ -106056,7 +106200,7 @@ V
 }
 
 STRING 17753
-// Abilities: A0X6 (Forked Lightning), Researchhotkey (Hotkey - Learn)
+// Abilities: A0XH (Frost Shell), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -106116,7 +106260,7 @@ Mech Kit
 }
 
 STRING 17764
-// Abilities: A0XH (Frost Shell), Hotkey (Hotkey - Normal)
+// Abilities: A0XH (Frost Shell), Unhotkey (Hotkey - Turn Off)
 {
 W
 }
@@ -106256,7 +106400,7 @@ Build Altar of Loa
 }
 
 STRING 17789
-// Abilities: A0OA (Emergency Repairs), Hotkey (Hotkey - Normal)
+// Abilities: A0YU (Select Unit), Hotkey (Hotkey - Normal)
 {
 Q
 }
@@ -106298,7 +106442,7 @@ C
 }
 
 STRING 17796
-// Abilities: A0XH (Frost Shell), Unhotkey (Hotkey - Turn Off)
+// Abilities: A0XI (Dispel Magic), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -106472,7 +106616,7 @@ Upgrade to Improved Crystal Protector
 }
 
 STRING 17831
-// Abilities: A0WF (Herald of Destruction), Hotkey (Hotkey - Normal)
+// Abilities: A0WQ (Locust Swarm), Hotkey (Hotkey - Normal)
 {
 R
 }
@@ -106496,7 +106640,7 @@ Vindication
 }
 
 STRING 17837
-// Abilities: A0YU (Select Unit), Hotkey (Hotkey - Normal)
+// Abilities: A0YU (Select Unit), Unhotkey (Hotkey - Turn Off)
 {
 Q
 }
@@ -106586,13 +106730,13 @@ Revive Velen
 }
 
 STRING 17853
-// Abilities: A0YU (Select Unit), Unhotkey (Hotkey - Turn Off)
+// Abilities: A0Z9 (Bile Shot), Hotkey (Hotkey - Normal)
 {
 Q
 }
 
 STRING 17855
-// Abilities: A0XI (Dispel Magic), Hotkey (Hotkey - Normal)
+// Abilities: A0XR (Breath of Life), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -106676,7 +106820,7 @@ Moving Earth - [|cffffcc00Level 1|r]
 }
 
 STRING 17870
-// Abilities: A0XR (Breath of Life), Hotkey (Hotkey - Normal)
+// Abilities: A03L (Explosive Ammo), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -106736,7 +106880,7 @@ STRING 17882
 }
 
 STRING 17883
-// Abilities: A0Z9 (Bile Shot), Hotkey (Hotkey - Normal)
+// Abilities: A0Z9 (Bile Shot), Researchhotkey (Hotkey - Learn)
 {
 Q
 }
@@ -106790,13 +106934,13 @@ Renewal - [|cffffcc00Level 3|r]
 }
 
 STRING 17892
-// Abilities: A0Z9 (Bile Shot), Researchhotkey (Hotkey - Learn)
+// Abilities: A0FR (Transfusion), Hotkey (Hotkey - Normal)
 {
 Q
 }
 
 STRING 17893
-// Abilities: A0FR (Transfusion), Hotkey (Hotkey - Normal)
+// Abilities: A0FR (Transfusion), Researchhotkey (Hotkey - Learn)
 {
 Q
 }
@@ -106886,7 +107030,7 @@ Moving Earth
 }
 
 STRING 17908
-// Abilities: A0FR (Transfusion), Researchhotkey (Hotkey - Learn)
+// Abilities: S000 (Load), Hotkey (Hotkey - Normal)
 {
 Q
 }
@@ -106994,7 +107138,7 @@ Renewal
 }
 
 STRING 17928
-// Abilities: S000 (Load), Hotkey (Hotkey - Normal)
+// Abilities: A0A8 (Fortify), Hotkey (Hotkey - Normal)
 {
 Q
 }
@@ -107276,7 +107420,7 @@ Returns carried lumber.
 }
 
 STRING 17980
-// Abilities: A0A8 (Fortify), Hotkey (Hotkey - Normal)
+// Abilities: A0N8 (Open Exodar), Hotkey (Hotkey - Normal)
 {
 Q
 }
@@ -107288,7 +107432,7 @@ Harvests lumber from trees.
 }
 
 STRING 17982
-// Abilities: A03L (Explosive Ammo), Hotkey (Hotkey - Normal)
+// Abilities: A03L (Explosive Ammo), Unhotkey (Hotkey - Turn Off)
 {
 W
 }
@@ -107312,7 +107456,7 @@ Returns carried lumber.
 }
 
 STRING 17987
-// Abilities: A0N8 (Open Exodar), Hotkey (Hotkey - Normal)
+// Abilities: A0UB (Open a portal to Northrend), Hotkey (Hotkey - Normal)
 {
 Q
 }
@@ -107366,13 +107510,13 @@ V
 }
 
 STRING 18001
-// Abilities: A0WF (Herald of Destruction), Researchhotkey (Hotkey - Learn)
+// Abilities: A0WQ (Locust Swarm), Researchhotkey (Hotkey - Learn)
 {
 R
 }
 
 STRING 18002
-// Abilities: A03L (Explosive Ammo), Unhotkey (Hotkey - Turn Off)
+// Abilities: A0YK (Oil Lubrification), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -107444,7 +107588,7 @@ Q
 }
 
 STRING 18014
-// Abilities: A0WQ (Locust Swarm), Hotkey (Hotkey - Normal)
+// Abilities: A0WS (Aegis of Ragaros), Hotkey (Hotkey - Normal)
 {
 R
 }
@@ -107852,7 +107996,7 @@ Gives the War Station the ability to fire multiple arrows at its enemies.
 }
 
 STRING 18099
-// Abilities: A0WQ (Locust Swarm), Researchhotkey (Hotkey - Learn)
+// Abilities: A0WS (Aegis of Ragaros), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -108512,7 +108656,7 @@ Q
 }
 
 STRING 18222
-// Abilities: A0WS (Aegis of Ragaros), Hotkey (Hotkey - Normal)
+// Abilities: A0WW (Summon Zelemar), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -108981,7 +109125,7 @@ Q
 }
 
 STRING 18302
-// Abilities: A0YK (Oil Lubrification), Hotkey (Hotkey - Normal)
+// Abilities: A0YK (Oil Lubrification), Unhotkey (Hotkey - Turn Off)
 {
 W
 }
@@ -109203,13 +109347,13 @@ Wreaths an enemy unit in magical flames which cause <ANso,DataA1> damage per sec
 }
 
 STRING 18342
-// Abilities: A0YK (Oil Lubrification), Unhotkey (Hotkey - Turn Off)
+// Abilities: A0Z7 (Earth's Grace), Hotkey (Hotkey - Normal)
 {
 W
 }
 
 STRING 18343
-// Abilities: A0Z7 (Earth's Grace), Hotkey (Hotkey - Normal)
+// Abilities: A0Z7 (Earth's Grace), Researchhotkey (Hotkey - Learn)
 {
 W
 }
@@ -109251,13 +109395,13 @@ Summon Renault
 }
 
 STRING 18350
-// Abilities: A0Z7 (Earth's Grace), Researchhotkey (Hotkey - Learn)
+// Abilities: A0O3 (Dispel Magic), Hotkey (Hotkey - Normal)
 {
 W
 }
 
 STRING 18351
-// Abilities: A0O3 (Dispel Magic), Hotkey (Hotkey - Normal)
+// Abilities: A0OJ (Mass Unholy Armor), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -109317,7 +109461,7 @@ E
 }
 
 STRING 18374
-// Abilities: A0OJ (Mass Unholy Armor), Hotkey (Hotkey - Normal)
+// Abilities: A0OJ (Mass Unholy Armor), Researchhotkey (Hotkey - Learn)
 {
 W
 }
@@ -109485,25 +109629,25 @@ Viral Plague
 }
 
 STRING 18402
-// Abilities: A0WS (Aegis of Ragaros), Researchhotkey (Hotkey - Learn)
-{
-R
-}
-
-STRING 18403
-// Abilities: A0WW (Summon Zelemar), Researchhotkey (Hotkey - Learn)
-{
-R
-}
-
-STRING 18404
 // Abilities: A0WW (Summon Zelemar), Hotkey (Hotkey - Normal)
 {
 R
 }
 
-STRING 18405
+STRING 18403
 // Abilities: A00D (Slipstream), Hotkey (Hotkey - Normal)
+{
+R
+}
+
+STRING 18404
+// Abilities: A00D (Slipstream), Researchhotkey (Hotkey - Learn)
+{
+R
+}
+
+STRING 18405
+// Abilities: A0XB (Decapitate), Hotkey (Hotkey - Normal)
 {
 R
 }
@@ -109749,7 +109893,7 @@ D
 }
 
 STRING 18470
-// Abilities: A0OJ (Mass Unholy Armor), Researchhotkey (Hotkey - Learn)
+// Abilities: A0EW (Take off), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -109965,13 +110109,13 @@ Naga Sea Witch
 }
 
 STRING 18511
-// Abilities: A0EW (Take off), Hotkey (Hotkey - Normal)
+// Abilities: A0EW (Take off), Unhotkey (Hotkey - Turn Off)
 {
 W
 }
 
 STRING 18512
-// Abilities: A0EW (Take off), Unhotkey (Hotkey - Turn Off)
+// Abilities: A0UC (Open a portal to Alterac), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -110235,7 +110379,7 @@ Revive Ragnaros
 }
 
 STRING 18575
-// Abilities: A00D (Slipstream), Researchhotkey (Hotkey - Learn)
+// Abilities: A0XB (Decapitate), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -110656,13 +110800,13 @@ Elemental Fire
 }
 
 STRING 18660
-// Abilities: A0XB (Decapitate), Hotkey (Hotkey - Normal)
+// Abilities: A0ZA (Dragonmaw Battle Standard), Hotkey (Hotkey - Normal)
 {
 R
 }
 
 STRING 18664
-// Abilities: A0XB (Decapitate), Researchhotkey (Hotkey - Learn)
+// Abilities: A0ZA (Dragonmaw Battle Standard), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -110938,7 +111082,7 @@ Curse of Executus
 }
 
 STRING 18712
-// Abilities: A0ZA (Dragonmaw Battle Standard), Hotkey (Hotkey - Normal)
+// Abilities: A0ZJ (Portal to Nagrand), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -110950,7 +111094,7 @@ W
 }
 
 STRING 18716
-// Abilities: A0ZA (Dragonmaw Battle Standard), Researchhotkey (Hotkey - Learn)
+// Abilities: A0ZY (Multi Shot), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -111160,13 +111304,13 @@ This unit was hit by a Serrated Bite; its armor is temporarily reduced.
 }
 
 STRING 18756
-// Abilities: A0ZJ (Portal to Nagrand), Researchhotkey (Hotkey - Learn)
+// Abilities: A0KT (Arcane Recall), Hotkey (Hotkey - Normal)
 {
 R
 }
 
 STRING 18757
-// Abilities: A0ZY (Multi Shot), Researchhotkey (Hotkey - Learn)
+// Abilities: A0P9 (Dimensional Jump to Azuremyst), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -111232,7 +111376,7 @@ Curse of Flame (|cffffcc00Q|r)
 }
 
 STRING 18769
-// Abilities: A0KT (Arcane Recall), Hotkey (Hotkey - Normal)
+// Abilities: A0RB (Dimensional Jump to Argus), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -111400,7 +111544,7 @@ STRING 18800
 }
 
 STRING 18803
-// Abilities: A0P9 (Dimensional Jump to Azuremyst), Researchhotkey (Hotkey - Learn)
+// Abilities: A0SR (Dimensional Jump to Tempest Keep), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -112546,7 +112690,7 @@ An impenetrable shield surrounds this unit, protecting it from all damage and sp
 }
 
 STRING 19042
-// Abilities: A0RB (Dimensional Jump to Argus), Researchhotkey (Hotkey - Learn)
+// Abilities: A07D (Portal to Black Temple), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -112870,7 +113014,7 @@ Farahlon (10gold/min)
 }
 
 STRING 19103
-// Abilities: A0SR (Dimensional Jump to Tempest Keep), Researchhotkey (Hotkey - Learn)
+// Abilities: A0JB (Summon Gallywix Personal Transport), Hotkey (Hotkey - Normal)
 {
 R
 }
@@ -113464,7 +113608,7 @@ STRING 19227
 }
 
 STRING 19230
-// Abilities: A07D (Portal to Black Temple), Researchhotkey (Hotkey - Learn)
+// Abilities: A0JB (Summon Gallywix Personal Transport), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -113921,7 +114065,7 @@ The hero unleashes a mortal axe strike, dealing 750 damage after a short delay.
 }
 
 STRING 19316
-// Abilities: A0JB (Summon Gallywix Personal Transport), Hotkey (Hotkey - Normal)
+// Abilities: A0UB (Open a portal to Northrend), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -113933,7 +114077,7 @@ The hero unleashes a mortal axe strike, dealing 1250 damage after a short delay.
 }
 
 STRING 19318
-// Abilities: A0JB (Summon Gallywix Personal Transport), Researchhotkey (Hotkey - Learn)
+// Abilities: A0UC (Open a portal to Alterac), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -114743,13 +114887,13 @@ Portal to Nagrand
 }
 
 STRING 19477
-// Abilities: A07D (Portal to Black Temple), Researchtip (Tooltip - Learn)
+// Abilities: A0UC (Open a portal to Alterac), Researchtip (Tooltip - Learn)
 {
 Learn Slipstream - [|cffffcc00Level %d|r]
 }
 
 STRING 19478
-// Abilities: A07D (Portal to Black Temple), Researchubertip (Tooltip - Learn - Extended)
+// Abilities: A0UC (Open a portal to Alterac), Researchubertip (Tooltip - Learn - Extended)
 {
 Opens a two-way portal to the target location. The portal becomes useable after 5 seconds, and closes 10 seconds after the caster stops channeling.|n|n|cffffcc00Level 1|r - <A00D,Rng1> range. |n|cffffcc00Level 2|r - <A00D,Rng2> range. |n|cffffcc00Level 3|r - <A00D,Rng3> range.
 }
@@ -114761,13 +114905,13 @@ Portal to Nagrand
 }
 
 STRING 19480
-// Abilities: A07D (Portal to Black Temple), Tip (Tooltip - Normal)
+// Abilities: A0UC (Open a portal to Alterac), Tip (Tooltip - Normal)
 {
 Slipstream - [|cffffcc00Level 2|r]
 }
 
 STRING 19481
-// Abilities: A07D (Portal to Black Temple), Tip (Tooltip - Normal)
+// Abilities: A0UC (Open a portal to Alterac), Tip (Tooltip - Normal)
 {
 Slipstream - [|cffffcc00Level 3|r]
 }

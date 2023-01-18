@@ -43,9 +43,9 @@ Your primary objective is to summon the great host of the Burning Legion. Invade
       Legion.ModObjectLimit(FourCC("ndmg"), Faction.UNLIMITED); //Demon Gate
       Legion.ModObjectLimit(FourCC("n04N"), Faction.UNLIMITED); //Infernal Machine Factory
       Legion.ModObjectLimit(FourCC("n04Q"), Faction.UNLIMITED); //Nether Pit
-      Legion.ModObjectLimit(Constants.UNIT_U00F_DORMANT_SPIRE_LEGION_T1, 1);
-      Legion.ModObjectLimit(Constants.UNIT_U00C_LEGION_BASTION_LEGION_T2, 1);
-      Legion.ModObjectLimit(Constants.UNIT_U00N_BURNING_CITADEL_LEGION_T3, 1);
+      Legion.ModObjectLimit(Constants.UNIT_U00F_DORMANT_SPIRE_LEGION_T1, Faction.UNLIMITED);
+      Legion.ModObjectLimit(Constants.UNIT_U00C_LEGION_BASTION_LEGION_T2, Faction.UNLIMITED);
+      Legion.ModObjectLimit(Constants.UNIT_U00N_BURNING_CITADEL_LEGION_T3, Faction.UNLIMITED);
 
       //Units
       Legion.ModObjectLimit(FourCC("u00D"), Faction.UNLIMITED); //Legion Herald

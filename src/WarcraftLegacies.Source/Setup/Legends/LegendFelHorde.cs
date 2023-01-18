@@ -19,6 +19,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
     public static Capital LegendBlackrockspire { get; private set; }
     public static Capital LegendBlacktemple { get; private set; }
     public static Capital LegendHellfirecitadel { get; private set; }
+    public static Capital LegendKilsorrowFortress { get; private set; }
 
 
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
@@ -82,6 +83,13 @@ namespace WarcraftLegacies.Source.Setup.Legends
         DeathMessage = "Blackrock Spire has been razed."
       };
       CapitalManager.Register(LegendBlackrockspire);
+
+      LegendKilsorrowFortress = new Capital
+      {
+        Unit = preplacedUnitSystem.GetUnit(FourCC("o017")),
+        DeathMessage = "Kilsorrow Fortress has been razed."
+      };
+      CapitalManager.Register(LegendKilsorrowFortress);
 
       LegendBlacktemple = new Capital
       {

@@ -35,7 +35,8 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
           ,preplacedUnitSystem.GetUnit(Constants.UNIT_O01U_GUL_DAN_S_REMAINS));
 
       var ragnarosQuest = new QuestRagnaros(preplacedUnitSystem.GetUnit(Constants.UNIT_N02B_RAGNAROS_SUMMONING_PEDESTAL_PEDESTAL));
-      var questThandolSpan = new QuestThandolSpan(preplacedUnitSystem);
+      //var questThandolSpan = new QuestThandolSpan(preplacedUnitSystem);
+      
       foreach (var faction in FactionManager.GetAllFactions())
       {
         faction.AddQuest(tombOfSargerasQuest);
@@ -54,7 +55,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
           faction == LegionSetup.Legion || faction == IllidanSetup.Illidan, artifactSetup.SkullOfGuldan));
         faction.AddQuest(ragnarosQuest);
 
-        faction.AddQuest(questThandolSpan);
+        //faction.AddQuest(questThandolSpan);
       }
     }
   }
