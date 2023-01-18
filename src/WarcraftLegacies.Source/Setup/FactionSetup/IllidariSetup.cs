@@ -20,9 +20,9 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
 
 You begin on the Broken Isles, ready to plunder the tombs for artifacts to empower Illidan.
 
-Unfortunately, the Kul'tirans are alerted to your presence, and will send their Navy Forces to slay your Naga and drive back to Outland.
+Unfortunately, you cannot progress further in the Islands. Use Illidan's mastery of portals to travel to Outland push with your fel allu
 
-Support your ally in Outland by defeating Kul'tiras and invading Stormwind to draw the focus away from the Dark Portal."
+Support your ally in Outland by unlocking bases and coordinating with his push out of the Dark Portal"
       };
 
       Illidari.ModObjectLimit(FourCC("nntt"), Faction.UNLIMITED); //Pillar of Waves
