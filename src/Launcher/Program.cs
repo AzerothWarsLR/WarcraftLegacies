@@ -103,8 +103,7 @@ namespace Launcher
 
       // Load existing map data
       var map = Map.Open(baseMapPath);
-
-      FixDoodadData(map);
+      
       ConfigureControlPointData(map);
       if (launch)
         SetTestPlayerSlot(map, launchSettings.TestingPlayerSlot);
@@ -164,18 +163,6 @@ namespace Launcher
       foreach (var player in map.Info.Players)
         if (player.Id < playerSlot && player.Id != playerSlot && player.Controller != PlayerController.None)
           player.Controller = PlayerController.Computer;
-    }
-
-    private static void FixDoodadData(Map map)
-    {
-      if (map.Doodads == null) 
-        return;
-      var i = 0;
-      foreach (var doodad in map.Doodads.Doodads)
-      {
-        doodad.CreationNumber = i;
-        i++;
-      }
     }
 
     private static bool IsControlPoint(War3Api.Object.Unit unit)
