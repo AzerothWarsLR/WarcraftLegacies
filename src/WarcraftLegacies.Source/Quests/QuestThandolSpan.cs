@@ -24,7 +24,7 @@ namespace WarcraftLegacies.Source.Quests
       "The mighty bridges recently suffered heavy damage due to a Dark Iron. Repair them to connect the two areas once again.", "")//Add icon here
     {
       _thandolSpan = preplacedUnitSystem.GetDestructable(FourCC("LT08"), new Point(15695, 457));
-      _thandolSpanDestroyed = preplacedUnitSystem.GetUnit(1234, new Point(15695, 457)); //Insert proper Id here
+      _thandolSpanDestroyed = preplacedUnitSystem.GetUnit(Constants.UNIT_H06G_THANDOL_SPAM_BRIDGE_NEUTRAL_HOSTILE, new Point(15695, 457));
       AddObjective(new ObjectiveUnitReachesFullHealth(_thandolSpanDestroyed));
       CreateTrigger()
         .RegisterUnitEvent(_thandolSpanDestroyed, EVENT_UNIT_DAMAGED)

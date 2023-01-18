@@ -18,7 +18,7 @@ public static class Regions
 	public static Rectangle Corins_Crossing { get; set; } = new Rectangle(16192f, 8896f, 18080f, 10944f);
 	public static Rectangle Crossroads { get; set; } = new Rectangle(-12480f, -2592f, -11424f, -1568f);
 	public static Rectangle Dalaran { get; set; } = new Rectangle(8608f, 3872f, 10336f, 5600f);
-	public static Rectangle Dark_Portal_Entrance_1 { get; set; } = new Rectangle(15264f, -19392f, 15680f, -19072f);
+	public static Rectangle Dark_Portal_Entrance_1 { get; set; } = new Rectangle(15840f, -20256f, 16256f, -19936f);
 	public static Rectangle Dark_Portal_Exit_1 { get; set; } = new Rectangle(4096f, -25120f, 4448f, -24672f);
 	public static Rectangle Darrowshire { get; set; } = new Rectangle(16096f, 7168f, 17600f, 8480f);
 	public static Rectangle Demongate_1 { get; set; } = new Rectangle(-1248f, -22400f, -864f, -22016f);
@@ -35,7 +35,7 @@ public static class Regions
 	public static Rectangle Gilneas { get; set; } = new Rectangle(2848f, -3264f, 9760f, 2624f);
 	public static Rectangle Gilneas_Canals { get; set; } = new Rectangle(5600f, -1440f, 8832f, 2624f);
 	public static Rectangle Gnomergan { get; set; } = new Rectangle(7296f, -6528f, 8672f, -4960f);
-	public static Rectangle Grim_Batol { get; set; } = new Rectangle(16000f, -4192f, 17952f, -2048f);
+	public static Rectangle Grim_Batol { get; set; } = new Rectangle(16000f, -4192f, 18336f, -2048f);
 	public static Rectangle Grim_Batol_Tunnel_Entrance { get; set; } = new Rectangle(16480f, -2944f, 16672f, -2784f);
 	public static Rectangle Grim_Batol_Tunnel_Top { get; set; } = new Rectangle(16608f, -2496f, 16832f, -2400f);
 	public static Rectangle Havenshire { get; set; } = new Rectangle(20128f, 7040f, 22112f, 9472f);
@@ -90,8 +90,8 @@ public static class Regions
 	public static Rectangle Sunwell { get; set; } = new Rectangle(18144f, 21248f, 18976f, 22048f);
 	public static Rectangle Dark_Portal_Exit_2 { get; set; } = new Rectangle(4160f, -25696f, 4544f, -25312f);
 	public static Rectangle Dark_Portal_Exit_3 { get; set; } = new Rectangle(4768f, -26272f, 5152f, -25888f);
-	public static Rectangle Dark_Portal_Entrance_2 { get; set; } = new Rectangle(16288f, -19040f, 16704f, -18720f);
-	public static Rectangle Dark_Portal_Entrance_3 { get; set; } = new Rectangle(17376f, -19136f, 17792f, -18816f);
+	public static Rectangle Dark_Portal_Entrance_2 { get; set; } = new Rectangle(16544f, -19840f, 16960f, -19520f);
+	public static Rectangle Dark_Portal_Entrance_3 { get; set; } = new Rectangle(17376f, -19936f, 17792f, -19616f);
 	public static Rectangle Chen { get; set; } = new Rectangle(-9536f, -2848f, -9088f, -2176f);
 	public static Rectangle QuelDanil_Lodge { get; set; } = new Rectangle(15616f, 5088f, 16416f, 5888f);
 	public static Rectangle Andrassil { get; set; } = new Rectangle(4992f, 18400f, 5440f, 18816f);
@@ -163,13 +163,13 @@ public static class Regions
 	public static Rectangle StormwindAmbient2 { get; set; } = new Rectangle(6624f, -10528f, 8160f, -8544f);
 	public static Rectangle SentinelTowerAmbient { get; set; } = new Rectangle(5696f, -17664f, 8672f, -14304f);
 	public static Rectangle StranglethornAmbient1 { get; set; } = new Rectangle(7680f, -19136f, 13536f, -17472f);
-	public static Rectangle StranglethornAmbient2 { get; set; } = new Rectangle(11808f, -23744f, 14880f, -18272f);
-	public static Rectangle StranglethornAmbient3 { get; set; } = new Rectangle(8768f, -24192f, 12192f, -19168f);
+	public static Rectangle StranglethornAmbient2 { get; set; } = new Rectangle(11968f, -24544f, 14880f, -18272f);
+	public static Rectangle StranglethornAmbient3 { get; set; } = new Rectangle(8224f, -24768f, 11968f, -19168f);
 	public static Rectangle ElwinForestAmbient { get; set; } = new Rectangle(8704f, -14816f, 13376f, -12672f);
 	public static Rectangle DarkshireAmbient1 { get; set; } = new Rectangle(8672f, -17440f, 13600f, -14816f);
 	public static Rectangle DarkshireAmbient2 { get; set; } = new Rectangle(13600f, -18208f, 14912f, -14720f);
 	public static Rectangle DarkshireAmbient3 { get; set; } = new Rectangle(13408f, -14752f, 17952f, -12672f);
-	public static Rectangle BlastedlandAmbient { get; set; } = new Rectangle(14912f, -21760f, 19200f, -16896f);
+	public static Rectangle BlastedlandAmbient { get; set; } = new Rectangle(14912f, -22176f, 19200f, -16896f);
 	public static Rectangle SwampofSorrowsAmbient { get; set; } = new Rectangle(14944f, -16896f, 19424f, -14784f);
 	public static Rectangle BurningSteppesAmbient { get; set; } = new Rectangle(11712f, -12704f, 17984f, -7552f);
 	public static Rectangle BurningSteppeAmbient2 { get; set; } = new Rectangle(17952f, -14720f, 19872f, -9504f);
@@ -200,7 +200,7 @@ public static class Regions
 	public static Rectangle DarkshireUnlock { get; set; } = new Rectangle(11904f, -16320f, 13408f, -15072f);
 	public static Rectangle StormwindUnlock { get; set; } = new Rectangle(6816f, -12640f, 11264f, -8576f);
 	public static Rectangle LakeshireUnlock { get; set; } = new Rectangle(13568f, -13696f, 15456f, -12864f);
-	public static Rectangle NethergardeUnlock { get; set; } = new Rectangle(17472f, -18400f, 18880f, -16960f);
+	public static Rectangle NethergardeUnlock { get; set; } = new Rectangle(16576f, -18400f, 18880f, -16960f);
 	public static Rectangle StratholmeUnlock { get; set; } = new Rectangle(13248f, 11168f, 16224f, 14144f);
 	public static Rectangle TyrUnlock { get; set; } = new Rectangle(18912f, 6560f, 22592f, 9696f);
 	public static Rectangle ShadowfangUnlock { get; set; } = new Rectangle(5440f, 3104f, 6592f, 4768f);
@@ -223,7 +223,7 @@ public static class Regions
 	public static Rectangle AstranaarUnlock { get; set; } = new Rectangle(-16832f, 1344f, -15168f, 2496f);
 	public static Rectangle AshenvaleUnlock { get; set; } = new Rectangle(-15552f, 2464f, -13088f, 4576f);
 	public static Rectangle DrownedTemple { get; set; } = new Rectangle(17248f, -15936f, 17696f, -15520f);
-	public static Rectangle DragonmawUnlock { get; set; } = new Rectangle(21152f, -5088f, 23168f, -2720f);
+	public static Rectangle DragonmawUnlock { get; set; } = new Rectangle(20832f, -5088f, 23168f, -2720f);
 	public static Rectangle SouthshoreUnlock { get; set; } = new Rectangle(10784f, 1632f, 12096f, 2656f);
 	public static Rectangle MaievStartUnlock { get; set; } = new Rectangle(-6016f, -28416f, -4896f, -27104f);
 	public static Rectangle Silithus_Stone_Exterior { get; set; } = new Rectangle(-18816f, -18464f, -18496f, -18048f);
@@ -231,13 +231,13 @@ public static class Regions
 	public static Rectangle EchoUnlock { get; set; } = new Rectangle(-8608f, -6816f, -6208f, -3968f);
 	public static Rectangle StrahnbradUnlock { get; set; } = new Rectangle(12544f, 4992f, 13408f, 5824f);
 	public static Rectangle ZeppelinReturn { get; set; } = new Rectangle(-960f, -5824f, -320f, -5216f);
-	public static Rectangle Trade1 { get; set; } = new Rectangle(10240f, -23200f, 10880f, -22816f);
+	public static Rectangle Trade1 { get; set; } = new Rectangle(9952f, -23200f, 10592f, -22816f);
 	public static Rectangle Trade2 { get; set; } = new Rectangle(-10432f, 9856f, -10048f, 10240f);
 	public static Rectangle Trade3 { get; set; } = new Rectangle(-11008f, -3808f, -10592f, -3392f);
 	public static Rectangle Trade4 { get; set; } = new Rectangle(18816f, -9984f, 19200f, -9600f);
 	public static Rectangle Trader1 { get; set; } = new Rectangle(2144f, 15456f, 2560f, 15776f);
 	public static Rectangle Trader2 { get; set; } = new Rectangle(-7840f, -13344f, -7456f, -13024f);
-	public static Rectangle Trader3 { get; set; } = new Rectangle(9344f, -22752f, 9664f, -22464f);
+	public static Rectangle Trader3 { get; set; } = new Rectangle(8864f, -22720f, 9184f, -22432f);
 	public static Rectangle GadgetUnlock { get; set; } = new Rectangle(-9248f, -13984f, -8160f, -12896f);
 	public static Rectangle TempestKeepSpawn { get; set; } = new Rectangle(3808f, -21856f, 4224f, -21504f);
 	public static Rectangle SummonObeliskTarget { get; set; } = new Rectangle(3232f, 22752f, 3648f, 23168f);
@@ -264,7 +264,7 @@ public static class Regions
 	public static Rectangle TyrsFall { get; set; } = new Rectangle(5120f, 9056f, 5408f, 9344f);
 	public static Rectangle DuskwoodCrypt { get; set; } = new Rectangle(9376f, -16032f, 9728f, -15616f);
 	public static Rectangle OutlandToArgus { get; set; } = new Rectangle(22848f, -28224f, 23360f, -27808f);
-	public static Rectangle ClosePortal { get; set; } = new Rectangle(16192f, -19488f, 16480f, -19232f);
+	public static Rectangle ClosePortal { get; set; } = new Rectangle(16512f, -19456f, 16800f, -19200f);
 	public static Rectangle GarithosCrusadeSpawn { get; set; } = new Rectangle(19168f, 7520f, 19776f, 8160f);
 	public static Rectangle GilneasUnlock6 { get; set; } = new Rectangle(6272f, -928f, 8672f, 1312f);
 	public static Rectangle GilneasUnlock1 { get; set; } = new Rectangle(8480f, -2368f, 9824f, -832f);
@@ -330,5 +330,7 @@ public static class Regions
 	public static Rectangle IslandBlocker3 { get; set; } = new Rectangle(1536f, -3456f, 2560f, -3168f);
 	public static Rectangle IslandBlocker4 { get; set; } = new Rectangle(768f, -10496f, 1792f, -10208f);
 	public static Rectangle IslandBlocker5 { get; set; } = new Rectangle(512f, -9216f, 800f, -8416f);
+	public static Rectangle IllidariUnlockSA { get; set; } = new Rectangle(12000f, -22816f, 13376f, -21280f);
+	public static Rectangle Region_112 { get; set; } = new Rectangle(9696f, -24160f, 12032f, -22304f);
 
 }

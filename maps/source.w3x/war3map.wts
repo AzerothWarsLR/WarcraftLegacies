@@ -11988,6 +11988,12 @@ STRING 1998
 D
 }
 
+STRING 1999
+// Units: h03C (Black Rook Hold), EditorSuffix (Name - Editor Suffix)
+{
+ (Neutral Hostile)
+}
+
 STRING 2001
 // Units: orai (Raider), Ubertip (Tooltip - Extended)
 {
@@ -51553,6 +51559,12 @@ STRING 8592
 E
 }
 
+STRING 8593
+// Units: h03C (Black Rook Hold), Ubertip (Tooltip - Extended)
+{
+The gloomy fortress of the Elf-wardens of old.
+}
+
 STRING 8594
 // Abilities: A0XN (Incinerate), Hotkey (Hotkey - Normal)
 {
@@ -64378,7 +64390,7 @@ Shaladrassil
 }
 
 STRING 10731
-// Units: h03C (Black Rook Hold), EditorSuffix (Name - Editor Suffix)
+// Units: h06G (Broken Thandol Spam Bridge), EditorSuffix (Name - Editor Suffix)
 {
  (Neutral Hostile)
 }
@@ -64465,6 +64477,18 @@ STRING 10745
 // Abilities: A0EB (Meatsplosion), Unhotkey (Hotkey - Turn Off)
 {
 W
+}
+
+STRING 10746
+// Units: h06G (Broken Thandol Spam Bridge), Name (Name)
+{
+Broken Thandol Spam Bridge
+}
+
+STRING 10747
+// Units: h06G (Broken Thandol Spam Bridge), Tip (Tooltip - Basic)
+{
+Broken Thandol Spam Bridge
 }
 
 STRING 10748
@@ -66352,7 +66376,7 @@ Activate Summoning
 }
 
 STRING 11062
-// Units: h03C (Black Rook Hold), Ubertip (Tooltip - Extended)
+// Units: h06G (Broken Thandol Spam Bridge), Ubertip (Tooltip - Extended)
 {
 The gloomy fortress of the Elf-wardens of old.
 }
