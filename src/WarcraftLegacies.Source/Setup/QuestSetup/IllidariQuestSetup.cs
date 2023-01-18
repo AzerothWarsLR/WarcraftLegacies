@@ -14,6 +14,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       illidari.AddQuest(new QuestBlackTemple(Regions.IllidanBlackTempleUnlock));
       illidari.AddQuest(new QuestEyeofSargeras(artifactSetup.EyeOfSargeras));
       illidari.AddQuest(new QuestZangarmarsh(Regions.TelredorUnlock));
+      illidari.AddQuest(new QuestStranglethornOutpost(Regions.IllidariUnlockSA));
       illidari.AddQuest(new QuestNajentus());
       illidari.AddQuest(new QuestRegroupCastaway());
       illidari.AddQuest(new QuestBlackrookHold());
