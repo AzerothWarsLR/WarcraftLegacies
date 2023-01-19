@@ -12,7 +12,7 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
   public sealed class QuestWestfallOutpost : QuestData
   {
     /// <summary>
-    /// Initializes a new instance of the <see cref="QuestSafeSea"/> class.
+    /// Initializes a new instance of the <see cref="QuestWestfallOutpost"/> class.
     /// </summary>
     public QuestWestfallOutpost(Rectangle questRect) : base("Westfall Outpost",
       "The Kul'tiran military will need a solid foothold to help Stormwind in their fight against the Outland invaders!", "ReplaceableTextures\\CommandButtons\\BTNKultirasGryphonAviary.blp")
