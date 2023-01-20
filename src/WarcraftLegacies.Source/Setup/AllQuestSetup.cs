@@ -19,7 +19,7 @@ namespace WarcraftLegacies.Source.Setup
       SentinelsQuestSetup.Setup(artifactSetup);
       StormwindQuestSetup.Setup(preplacedUnitSystem, artifactSetup);
       WarsongQuestSetup.Setup(preplacedUnitSystem, artifactSetup);
-      NagaQuestSetup.Setup(preplacedUnitSystem, artifactSetup);
+      NagaQuestSetup.Setup(artifactSetup);
       GilneasQuestSetup.Setup(artifactSetup);
       KultirasQuestSetup.Setup(preplacedUnitSystem);
       ScarletQuestSetup.Setup();

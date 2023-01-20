@@ -1,4 +1,6 @@
-﻿using MacroTools.FactionSystem;
+﻿using System.Collections.Generic;
+using MacroTools.FactionSystem;
+using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.QuestSystem;
 using WarcraftLegacies.Source.Setup.Legends;
@@ -15,12 +17,13 @@ namespace WarcraftLegacies.Source.Quests.Naga
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestNajentus"/> class.
     /// </summary>
-    public QuestNajentus() : base("Lord of the Depths",
+    public QuestNajentus(IEnumerable<Capital> capitalTargets) : base("Lord of the Depths",
       "the Naga Lord Naj'entus will only join us if enough blood and destruction was shed in his name",
       "ReplaceableTextures\\CommandButtons\\BTNLordNaj.blp")
     {
-      AddObjective(new ObjectiveCapitalDead(LegendStormwind.Stormwindkeep));
-      AddObjective(new ObjectiveCapitalDead(LegendIronforge.LegendGreatforge));
+      foreach (var capital in capitalTargets) 
+        AddObjective(new ObjectiveCapitalDead(capital));
+      
       ResearchId = Constants.UPGRADE_R08W_QUEST_COMPLETED_LORD_OF_THE_DEPTHS;
       Required = true;
     }

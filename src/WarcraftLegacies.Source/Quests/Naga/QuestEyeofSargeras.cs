@@ -1,4 +1,5 @@
 ﻿using MacroTools.ArtifactSystem;
+using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.QuestSystem;
 using WarcraftLegacies.Source.Setup;
@@ -15,13 +16,12 @@ namespace WarcraftLegacies.Source.Quests.Naga
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestEyeofSargeras"/> class.
     /// </summary>
-    /// <param name="eyeOfSargeras"></param>
-    public QuestEyeofSargeras(Artifact eyeOfSargeras) : base("The Eye of Sargeras",
+    public QuestEyeofSargeras(Artifact eyeOfSargeras, LegendaryHero illidan) : base("The Eye of Sargeras",
       "The Eye of Sargeras is an extremely powerful artifact, it could be the key to satiate Illidan's thirst for power.",
       "ReplaceableTextures\\CommandButtons\\BTNEyeOfSargeras.blp")
     {
-      AddObjective(new ObjectiveLegendHasArtifact(LegendNaga.LegendIllidan, eyeOfSargeras));
-      ResearchId = FourCC("R094");
+      AddObjective(new ObjectiveLegendHasArtifact(illidan, eyeOfSargeras));
+      ResearchId = Constants.UPGRADE_R094_QUEST_COMPLETED_THE_EYE_OF_SARGERAS;
     }
 
     /// <inheritdoc/>

@@ -15,16 +15,17 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
   /// </summary>
   public sealed class QuestShoresOfNorthrend : QuestData
   {
+    private readonly LegendaryHero _arthas;
     private new const int ResearchId = Constants.UPGRADE_R06F_NORTHREND_EXPEDITION_LORDAERON;
-    private static LegendaryHero Arthas => LegendLordaeron.Arthas;
-
+    
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestShoresOfNorthrend"/> class.
     /// </summary>
-    public QuestShoresOfNorthrend() : base("Shores of Northrend", "Mal'ganis' citadel lies somewhere within the arctic wastes of the north. In order to assault the Dreadlord, Arthas must first establish a base camp at the shores of Northrend.", "ReplaceableTextures\\CommandButtons\\BTNHumanTransport.blp")
+    public QuestShoresOfNorthrend(LegendaryHero arthas, Capital caerDarrow) : base("Shores of Northrend", "Mal'ganis' citadel lies somewhere within the arctic wastes of the north. In order to assault the Dreadlord, Arthas must first establish a base camp at the shores of Northrend.", "ReplaceableTextures\\CommandButtons\\BTNHumanTransport.blp")
     {
-      AddObjective(new ObjectiveControlLegend(Arthas, true));
-      AddObjective(new ObjectiveControlCapital(LegendNeutral.Caerdarrow, false));
+      _arthas = arthas;
+      AddObjective(new ObjectiveControlLegend(arthas, true));
+      AddObjective(new ObjectiveControlCapital(caerDarrow, false));
       AddObjective(new ObjectiveResearch(ResearchId, Constants.UNIT_HSHY_SHIPYARD_LORDAERON_SHIPYARD));
     }
 
@@ -46,10 +47,10 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
     protected override void OnComplete(Faction completingFaction)
     {
       KillNeutralHostileUnitsInRadius(-512, 15776, 2000);
-      if (GetOwningPlayer(Arthas.Unit) == completingFaction.Player)
+      if (GetOwningPlayer(_arthas.Unit) == completingFaction.Player)
       {
-        ReviveHero(Arthas.Unit, 400, 16102, true);
-        BlzSetUnitFacingEx(Arthas.Unit, 112);
+        ReviveHero(_arthas.Unit, 400, 16102, true);
+        BlzSetUnitFacingEx(_arthas.Unit, 112);
       }
       if(completingFaction.Player != null)
       {

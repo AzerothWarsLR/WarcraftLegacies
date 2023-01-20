@@ -1,5 +1,6 @@
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
+using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.MetaBased;
@@ -15,15 +16,18 @@ namespace WarcraftLegacies.Source.Quests.Scourge
   /// </summary>
   public sealed class QuestCorruptArthas : QuestData
   {
+    private readonly LegendaryHero _arthas;
+
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestCorruptArthas"/> class.
     /// </summary>
-    public QuestCorruptArthas() : base("The Culling",
+    public QuestCorruptArthas(Capital stratholme, LegendaryHero arthas) : base("The Culling",
       "When the city of Stratholme falls, Prince Arthas will abandon his people and join the Scourge as their champion.",
       "ReplaceableTextures\\CommandButtons\\BTNHeroDeathKnight.blp")
     {
-      AddObjective(new ObjectiveCapitalDead(LegendLordaeron.Stratholme));
-      AddObjective(new ObjectiveEitherOf(new ObjectiveLegendDead(LegendLordaeron.Arthas),
+      _arthas = arthas;
+      AddObjective(new ObjectiveCapitalDead(stratholme));
+      AddObjective(new ObjectiveEitherOf(new ObjectiveLegendDead(arthas),
         new ObjectiveFactionDefeated(LordaeronSetup.Lordaeron)));
       AddObjective(new ObjectiveSelfExists());
       Required = true;
@@ -35,12 +39,12 @@ namespace WarcraftLegacies.Source.Quests.Scourge
       "Having failed to protect his people, Arthas seizes the cursed runeblade Frostmourne as the instrument of his vengeance. The malevolence of the blade overwhelms him. Arthas is now a loyal Death Knight of the Scourge, and will soon become its greatest champion.";
 
     /// <inheritdoc />
-    protected override string RewardDescription => $"Learn to train {LegendScourge.Arthas?.Name} from the {GetObjectName(Constants.UNIT_UAOD_ALTAR_OF_DARKNESS)}";
+    protected override string RewardDescription => $"Learn to train {_arthas.Name} from the {GetObjectName(Constants.UNIT_UAOD_ALTAR_OF_DARKNESS)}";
 
     /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)
     {
-      var arthas = LegendLordaeron.Arthas?.Unit;
+      var arthas = _arthas.Unit;
       if (arthas != null && UnitAlive(arthas))
       {
         arthas

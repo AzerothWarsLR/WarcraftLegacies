@@ -3,6 +3,7 @@ using MacroTools;
 using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
+using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
 using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 using MacroTools.ObjectiveSystem.Objectives.TimeBased;
@@ -20,16 +21,21 @@ namespace WarcraftLegacies.Source.Quests.Quelthalas
   public sealed class QuestSilvermoon : QuestData
   {
     private readonly unit _elvenRunestone;
+    private readonly Capital _silvermoon;
+    private readonly Capital _sunwell;
     private readonly List<unit> _rescueUnits;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestSilvermoon"/> class.
     /// </summary>
-    public QuestSilvermoon(Rectangle rescueRect, unit elvenRunestone, PreplacedUnitSystem preplacedUnitSystem) : base("The Siege of Silvermoon",
+    public QuestSilvermoon(Rectangle rescueRect, unit elvenRunestone, PreplacedUnitSystem preplacedUnitSystem,
+      Capital silvermoon, Capital sunwell) : base("The Siege of Silvermoon",
       "The Amani Trolls have been harassing Silvermoon since it's founding, but their defensive position within their jungle has made the prospect of an all-out assault too costly. Today, however, the Amani begins their largest siege yet. They leave us no choice; we must scour Zul'aman if the High Elves are to prosper.",
       "ReplaceableTextures\\CommandButtons\\BTNForestTrollTrapper.blp")
     {
       _elvenRunestone = elvenRunestone;
+      _silvermoon = silvermoon;
+      _sunwell = sunwell;
       AddObjective(new ObjectiveKillUnit(
         preplacedUnitSystem.GetUnit(Constants.UNIT_O00O_CHIEFTAN_OF_THE_AMANI_TRIBE_CREEP_ZUL_AMAN)));
       AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N01V_ZUL_AMAN_20GOLD_MIN)));
@@ -60,8 +66,8 @@ namespace WarcraftLegacies.Source.Quests.Quelthalas
     {
       completingFaction.Player.RescueGroup(_rescueUnits);
       if (UnitAlive(_elvenRunestone))
-        LegendQuelthalas.LegendSilvermoon.Unit?.SetInvulnerable(true);
-      LegendQuelthalas.LegendSunwell.Unit?.SetInvulnerable(true);
+        _silvermoon.Unit?.SetInvulnerable(true);
+      _sunwell.Unit?.SetInvulnerable(true);
       if (GetLocalPlayer() == completingFaction.Player)
         PlayThematicMusic("war3mapImported\\SilvermoonTheme.mp3");
     }
