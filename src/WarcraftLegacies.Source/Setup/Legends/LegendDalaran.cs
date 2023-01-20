@@ -13,32 +13,32 @@ namespace WarcraftLegacies.Source.Setup.Legends
     /// <summary>
     /// Archmage of Dalaran.
     /// </summary>
-    public LegendaryHero? LegendAntonidas { get; }
+    public LegendaryHero LegendAntonidas { get; }
     
     /// <summary>
     /// Former Guardian of Tirisfal.
     /// </summary>
-    public LegendaryHero? LegendMedivh { get; }
+    public LegendaryHero LegendMedivh { get; }
     
     /// <summary>
     /// Antonidas' best student.
     /// </summary>
-    public LegendaryHero? LegendJaina { get; }
+    public LegendaryHero LegendJaina { get; }
     
     /// <summary>
     /// Powerful Blue Dragon and sorcerer.
     /// </summary>
-    public LegendaryHero? LegendKalecgos { get; }
+    public LegendaryHero LegendKalecgos { get; }
     
     /// <summary>
     /// Aspect of the Blue Dragonflight.
     /// </summary>
-    public LegendaryHero? LegendMalygos { get; }
+    public LegendaryHero LegendMalygos { get; }
     
     /// <summary>
     /// Dalaran city capital.l
     /// </summary>
-    public Capital? LegendDalaranCapital { get; }
+    public Capital LegendDalaranCapital { get; }
 
     /// <summary>
     /// Sets up all Dalaran <see cref="Legend"/>s.

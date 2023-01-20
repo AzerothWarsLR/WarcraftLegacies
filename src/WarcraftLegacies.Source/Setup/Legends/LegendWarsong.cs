@@ -5,11 +5,11 @@ namespace WarcraftLegacies.Source.Setup.Legends
 {
   public sealed class LegendWarsong : IRegistersLegends
   {
-    public LegendaryHero? GromHellscream { get; }
-    public Capital? StonemaulKeep { get; }
-    public Capital? Orgrimmar { get; }
-    public LegendaryHero? ChenStormstout { get; }
-    public LegendaryHero? Saurfang { get; }
+    public LegendaryHero GromHellscream { get; }
+    public Capital StonemaulKeep { get; }
+    public Capital Orgrimmar { get; }
+    public LegendaryHero ChenStormstout { get; }
+    public LegendaryHero Saurfang { get; }
     
     public LegendWarsong(PreplacedUnitSystem preplacedUnitSystem)
     {

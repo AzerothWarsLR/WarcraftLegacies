@@ -16,32 +16,32 @@ namespace WarcraftLegacies.Source.Setup.Legends
     /// <summary>
     /// Leader of the Cult of the Damned.
     /// </summary>
-    public LegendaryHero? Kelthuzad { get; }
+    public LegendaryHero Kelthuzad { get; }
     
     /// <summary>
     /// Fallen king of the Nerubians.
     /// </summary>
-    public LegendaryHero? Anubarak { get; }
+    public LegendaryHero Anubarak { get; }
     
     /// <summary>
     /// Ruler of Stratholme after it's taken over by the Scourge.
     /// </summary>
-    public LegendaryHero? Rivendare { get; }
+    public LegendaryHero Rivendare { get; }
     
     /// <summary>
     /// The first human Death Knight, and Ner'zhul's champion.
     /// </summary>
-    public LegendaryHero? Arthas { get; }
+    public LegendaryHero Arthas { get; }
     
     /// <summary>
     /// Psychic ruler of the Scourge.
     /// </summary>
-    public Capital? LegendLichking { get; }
+    public Capital LegendLichking { get; }
     
     /// <summary>
     /// A Vrykul stronghold.
     /// </summary>
-    public Capital? LegendUtgarde { get; }
+    public Capital LegendUtgarde { get; }
 
     /// <summary>
     /// Sets up <see cref="LegendScourge"/>.

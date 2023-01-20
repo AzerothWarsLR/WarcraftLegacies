@@ -12,39 +12,39 @@ namespace WarcraftLegacies.Source.Setup.Legends
     /// <summary>
     /// Leader of the Wardens.
     /// </summary>
-    public LegendaryHero? Maiev { get; }
+    public LegendaryHero Maiev { get; }
 
     /// <summary>
     /// High Priestess of Elune.
     /// </summary>
-    public LegendaryHero? Tyrande { get; }
+    public LegendaryHero Tyrande { get; }
     
     /// <summary>
     /// Tyrande's second in command.
     /// </summary>
-    public LegendaryHero? Shandris { get; }
+    public LegendaryHero Shandris { get; }
     
     /// <summary>
     /// Night Elven Commander.
     /// </summary>
-    public LegendaryHero? Jarod { get; }
+    public LegendaryHero Jarod { get; }
     
     /// <summary>
     /// Night Elven town in Darkshore.
     /// </summary>
-    public Capital? Auberdine { get; }
+    public Capital Auberdine { get; }
     
     /// <summary>
     /// Night Elven stronghold village led by Shandris.
     /// </summary>
-    public Capital? Feathermoon { get; }
+    public Capital Feathermoon { get; }
 
     /// <summary>
     /// Where the Wardens store their worst enemies.
     /// </summary>
-    public Capital? VaultOfTheWardens { get; }
+    public Capital VaultOfTheWardens { get; }
     
-    public Capital? BlackrookHold { get; }
+    public Capital BlackrookHold { get; }
     
     /// <summary>
     /// Sets up all Sentinel <see cref="Legend"/>s.

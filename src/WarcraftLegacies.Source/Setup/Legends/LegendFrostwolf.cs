@@ -6,12 +6,12 @@ namespace WarcraftLegacies.Source.Setup.Legends
 {
   public sealed class LegendFrostwolf : IRegistersLegends
   {
-    public LegendaryHero? LegendCairne { get; }
-    public LegendaryHero? LegendThrall { get; }
-    public LegendaryHero? LegendRexxar { get; }
-    public LegendaryHero? LegendVolJin { get; }
-    public Capital? LegendThunderbluff { get; }
-    public Capital? LegendDarkspearhold { get; }
+    public LegendaryHero LegendCairne { get; }
+    public LegendaryHero LegendThrall { get; }
+    public LegendaryHero LegendRexxar { get; }
+    public LegendaryHero LegendVolJin { get; }
+    public Capital LegendThunderbluff { get; }
+    public Capital LegendDarkspearhold { get; }
 
     public LegendFrostwolf(PreplacedUnitSystem preplacedUnitSystem)
     {

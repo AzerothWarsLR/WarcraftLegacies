@@ -5,10 +5,10 @@ namespace WarcraftLegacies.Source.Setup.Legends
 {
   public sealed class LegendGoblin : IRegistersLegends
   {
-    public LegendaryHero? Gallywix { get; }
-    public LegendaryHero? Noggenfogger { get; }
-    public LegendaryHero? Gazlowe { get; }
-    public Capital? KezanTradingCenter { get; }
+    public LegendaryHero Gallywix { get; }
+    public LegendaryHero Noggenfogger { get; }
+    public LegendaryHero Gazlowe { get; }
+    public Capital KezanTradingCenter { get; }
 
     public LegendGoblin(PreplacedUnitSystem preplacedUnitSystem)
     {

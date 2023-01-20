@@ -12,11 +12,11 @@ namespace WarcraftLegacies.Source.Setup.Legends
     public LegendaryHero LegendNobundo { get; }
     public Capital LegendExodar { get; }
     public Capital LegendExodarGenerator { get; }
-    public Capital? Shattrah { get; }
+    public Capital Shattrah { get; }
     
-    public Capital? Farahlon { get; }
+    public Capital Farahlon { get; }
     
-    public Capital? Halaar { get; }
+    public Capital Halaar { get; }
     
     public LegendDraenei(PreplacedUnitSystem preplacedUnitSystem)
     {
