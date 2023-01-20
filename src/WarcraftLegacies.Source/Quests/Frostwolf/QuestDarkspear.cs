@@ -20,7 +20,7 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
     /// <inheritdoc />
     public QuestDarkspear() : base("The Darkspear Trolls",
       "After the Darkspear trolls were rescued by Thrall, Vol'jin pledged his loyalty and service to the Horde. The trolls must now be gathered to help in the fight against the night elves.",
-      "ReplaceableTextures\\CommandButtons\\BTNSorceressMaster.blp")
+      @"ReplaceableTextures\CommandButtons\BTNWitchDoctor.blp")
     {
       _rescueUnits = Regions.EchoUnlock.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
       AddObjective(new ObjectiveSelfExists());
