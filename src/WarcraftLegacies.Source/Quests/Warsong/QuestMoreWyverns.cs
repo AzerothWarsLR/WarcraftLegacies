@@ -21,12 +21,15 @@ namespace WarcraftLegacies.Source.Quests.Warsong
       AddObjective(new ObjectiveCapitalDead(auberdine));
     }
     
+    /// <inheritdoc/>
     protected override string RewardFlavour =>
       "The Sentinels have been eliminated. Warchief Thrall breathes a sigh of relief, knowing that his people are safe - for now.";
 
+    /// <inheritdoc/>
     protected override string RewardDescription =>
       $"Learn to train {I2S(LimitChange)} additional {GetObjectName(UnittypeId)}s";
 
+    /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
     {
       completingFaction.ModObjectLimit(UnittypeId, LimitChange);

@@ -26,10 +26,17 @@ namespace WarcraftLegacies.Source.Quests.Naga
       "A tribe of Draenei known as the Ashtongue are struggling to survive in the harsh environment of Outland. If Illidan helps them, they would plead loyalty to him.",
       "ReplaceableTextures\\CommandButtons\\BTNDranaiAkama.blp")
     {
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N01J_ZANGARMARSH_15GOLD_MIN)));
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N02N_BLADE_S_EDGE_MOUNTAINS_15GOLD_MIN)));
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N00B_NAGRAND_15GOLD_MIN)));
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N0CW_FARAHLON_10GOLD_MIN)));
+      AddObjective(
+        new ObjectiveControlPoint(
+          ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N01J_ZANGARMARSH_15GOLD_MIN)));
+      AddObjective(new ObjectiveControlPoint(
+        ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N02N_BLADE_S_EDGE_MOUNTAINS_15GOLD_MIN)));
+      AddObjective(
+        new ObjectiveControlPoint(
+          ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N00B_NAGRAND_15GOLD_MIN)));
+      AddObjective(
+        new ObjectiveControlPoint(
+          ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N0CW_FARAHLON_10GOLD_MIN)));
       AddObjective(new ObjectiveExpire(1450));
       AddObjective(new ObjectiveSelfExists());
       ResearchId = Constants.UPGRADE_R05H_QUEST_COMPLETED_THE_LOST_ONES;
@@ -55,11 +62,8 @@ namespace WarcraftLegacies.Source.Quests.Naga
     /// </summary>
     protected override void OnComplete(Faction completingFaction)
     {
-      if(completingFaction.Player != null)
-      {
-        completingFaction.Player.RescueGroup(_rescueUnits);
-      }
-      if (completingFaction?.Player == GetLocalPlayer())
+      completingFaction.Player?.RescueGroup(_rescueUnits);
+      if (completingFaction.Player == GetLocalPlayer())
         PlayThematicMusic("IllidansTheme");
     }
 
@@ -68,10 +72,7 @@ namespace WarcraftLegacies.Source.Quests.Naga
     /// </summary>
     protected override void OnFail(Faction completingFaction)
     {
-      if (completingFaction.Player != null)
-      {
-        Player(PLAYER_NEUTRAL_AGGRESSIVE).RescueGroup(_rescueUnits);
-      }      
+      Player(PLAYER_NEUTRAL_AGGRESSIVE).RescueGroup(_rescueUnits);
     }
   }
 }

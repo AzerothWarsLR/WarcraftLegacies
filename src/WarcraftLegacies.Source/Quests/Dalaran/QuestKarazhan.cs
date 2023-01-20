@@ -14,10 +14,13 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
       AddObjective(new ObjectiveControlCapital(karazhan, false));
     }
     
+    /// <inheritdoc/>
     protected override string RewardFlavour => "Karazhan has been captured. Dalaran's archivists scour its halls for arcane resources.";
 
+    /// <inheritdoc/>
     protected override string RewardDescription => "Learn to research three powerful upgrades at Karazhan.";
 
+    /// <inheritdoc/>
     protected override void OnAdd(Faction whichFaction)
     {
       whichFaction.ModObjectLimit(Constants.UPGRADE_R020_RAIN_AN_AMALGAM_DALARAN_KARAZHAN, Faction.UNLIMITED);

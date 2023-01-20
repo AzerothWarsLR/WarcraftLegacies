@@ -12,21 +12,24 @@ namespace WarcraftLegacies.Source.Quests.Warsong
 {
   public sealed class QuestWarsongHold : QuestData
   {
-    private static readonly int ResearchId = FourCC("R06G");
-    private static readonly int AbilityId = FourCC("A0DZ");
+    private const int RequiredResearchId = Constants.UPGRADE_R06G_NORTHREND_EXPEDITION_WARSONG;
+    private const int AbilityId = Constants.ABILITY_A0DZ_WARSONG_OFFENSIVE_WARSONG;
 
     public QuestWarsongHold() : base("Warsong Hold",
       "The far-off land of Northrend is the new home of the traitor shaman Ner'zhul. The Warsong must land its forces on its shores in order to end the existential threat he now represents.",
       "ReplaceableTextures\\CommandButtons\\BTNTuskaarBrown.blp")
     {
-      AddObjective(new ObjectiveResearch(ResearchId, FourCC("o02T")));
+      AddObjective(new ObjectiveResearch(RequiredResearchId, Constants.UNIT_O02T_SHIPYARD_WARSONG_SHIPYARD));
     }
 
+    /// <inheritdoc/>
     protected override string RewardFlavour =>
       "The Warsong Clan has sail for the icy shores of Northrend and up a formidable encampment at Borean Tundra.";
 
+    /// <inheritdoc/>
     protected override string RewardDescription => "A new base at Borean Tundra in Northrend";
 
+    /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
     {
       var boreanTundra = ControlPointManager.Instance.GetFromUnitType(FourCC("n00G")).Unit;
@@ -61,12 +64,13 @@ namespace WarcraftLegacies.Source.Quests.Warsong
       CreateStructureForced(completingFaction.Player, FourCC("n03E"), -7808, 16128, 4.712389f * MathEx.DegToRad, 128);
       CreateStructureForced(completingFaction.Player, FourCC("orai"), -7319, 15134, 0.467489f * MathEx.DegToRad, 128);
       CreateStructureForced(completingFaction.Player, FourCC("o02T"), -8672, 15328, 4.712389f * MathEx.DegToRad, 128);
-      completingFaction.ModObjectLimit(ResearchId, -Faction.UNLIMITED);
+      completingFaction.ModObjectLimit(RequiredResearchId, -Faction.UNLIMITED);
     }
 
+    /// <inheritdoc/>
     protected override void OnAdd(Faction whichFaction)
     {
-      whichFaction.ModObjectLimit(ResearchId, Faction.UNLIMITED);
+      whichFaction.ModObjectLimit(RequiredResearchId, Faction.UNLIMITED);
     }
   }
 }

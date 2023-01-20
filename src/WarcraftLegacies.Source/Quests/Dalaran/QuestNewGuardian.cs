@@ -22,12 +22,15 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
       AddObjective(new ObjectiveLegendHasArtifact(jaina, bookOfMedivh));
     }
 
+    /// <inheritdoc/>
     protected override string RewardFlavour =>
       "Dalaran has empowered Jaina to be the new Guardian of Tirisfal, endowing her with a portion of the Council of Tirisfal's power.";
 
+    /// <inheritdoc/>
     protected override string RewardDescription =>
       "Grant Jaina Chaos Damage, 20 additional Intelligence, Teleport, and Mana Shield";
 
+    /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
     {
       var whichUnit = _jaina.Unit;
@@ -36,7 +39,7 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
       BlzSetUnitName(whichUnit, "Guardian of Tirisfal");
       UnitAddAbility(whichUnit, Constants.ABILITY_A0BX_GUARDIAN_OF_TIRISFAL_DALARAN_GUARDIAN_OF_TIRISFAL);
       BlzSetUnitWeaponIntegerField(whichUnit, UNIT_WEAPON_IF_ATTACK_ATTACK_TYPE, 0, 5); //Chaos
-      whichUnit.AddHeroAttributes(0, 0, 20);
+      whichUnit?.AddHeroAttributes(0, 0, 20);
       _jaina.ClearUnitDependencies();
       _jaina.PermaDies = false;
     }

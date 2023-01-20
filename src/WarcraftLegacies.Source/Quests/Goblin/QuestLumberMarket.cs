@@ -9,8 +9,10 @@ namespace WarcraftLegacies.Source.Quests.Goblin
 {
   public sealed class QuestLumberMarket : QuestData
   {
+    /// <inheritdoc/>
     protected override string RewardFlavour => "The World Tree is ours, our lumber supplies will never run out!";
 
+    /// <inheritdoc/>
     protected override string RewardDescription =>
       "Shredders will gain cleaving attack and 500 hit points. You will gain 30000 lumber.";
 
@@ -22,6 +24,7 @@ namespace WarcraftLegacies.Source.Quests.Goblin
       ResearchId = Constants.UPGRADE_R07Z_QUEST_COMPLETED_LUMBER_MARKET_CRASH;
     }
     
+    /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
     {
       completingFaction.Player?.AdjustPlayerState(PLAYER_STATE_RESOURCE_LUMBER, 30000);

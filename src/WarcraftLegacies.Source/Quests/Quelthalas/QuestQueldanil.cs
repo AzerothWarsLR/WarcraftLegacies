@@ -24,11 +24,14 @@ namespace WarcraftLegacies.Source.Quests.Quelthalas
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
     }
 
+    /// <inheritdoc/>
     protected override string RewardFlavour =>
       "The rangers of Quel'danil have been reunited with the forces of Quel'thalas.";
 
+    /// <inheritdoc/>
     protected override string RewardDescription => "Grants control of Quel'danil Lodge and it's rangers";
 
+    /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
     {
       completingFaction.Player.RescueGroup(_rescueUnits);

@@ -24,7 +24,7 @@ namespace WarcraftLegacies.Source.Quests.Warsong
     {
       AddObjective(
         new ObjectiveKillUnit(preplacedUnitSystem.GetUnit(FourCC("nrzm"), rescueRect.Center))); //Razorman Medicine Man
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(FourCC("n01T"))));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N01T_NORTHERN_BARRENS_15GOLD_MIN)));
       AddObjective(new ObjectiveExpire(1460));
       AddObjective(new ObjectiveSelfExists());
 
@@ -36,8 +36,10 @@ namespace WarcraftLegacies.Source.Quests.Warsong
         }
     }
 
+    /// <inheritdoc/>
     protected override string RewardFlavour => "The Crossroads have been constructed. You have received 2000 Lumber.";
 
+    /// <inheritdoc/>
     protected override string RewardDescription => "Control of the Crossroads, +2000 Lumber";
 
     private void GiveCrossroads(player whichPlayer)
@@ -50,12 +52,14 @@ namespace WarcraftLegacies.Source.Quests.Warsong
       whichPlayer.AdjustPlayerState(PLAYER_STATE_RESOURCE_LUMBER, 2000);
     }
 
+    /// <inheritdoc/>
     protected override void OnFail(Faction completingFaction)
     {
       GiveCrossroads(Player(PLAYER_NEUTRAL_AGGRESSIVE));
       _rescueUnits.Clear();
     }
 
+    /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
     {
       GiveCrossroads(completingFaction.Player);

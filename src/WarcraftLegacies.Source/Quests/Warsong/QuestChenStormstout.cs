@@ -24,21 +24,26 @@ namespace WarcraftLegacies.Source.Quests.Warsong
       _chen = chen;
     }
 
+    /// <inheritdoc/>
     protected override string RewardFlavour => "Chen Stormstout is now available for training at your Altar.";
 
+    /// <inheritdoc/>
     protected override string RewardDescription => "The hero Chen Stormstout";
 
+    /// <inheritdoc/>
     protected override void OnFail(Faction completingFaction)
     {
       RemoveUnit(_chen);
     }
 
+    /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
     {
       RemoveUnit(_chen);
       SetPlayerTechResearched(completingFaction.Player, _chenResearch, 1);
     }
 
+    /// <inheritdoc/>
     protected override void OnAdd(Faction whichFaction)
     {
       whichFaction.ModObjectLimit(_chenResearch, Faction.UNLIMITED);

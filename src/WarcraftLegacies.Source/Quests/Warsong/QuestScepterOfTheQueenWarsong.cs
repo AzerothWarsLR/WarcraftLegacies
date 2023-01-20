@@ -53,7 +53,7 @@ namespace WarcraftLegacies.Source.Quests.Warsong
     /// <inheritdoc/>
     protected override void OnComplete(Faction whichFaction)
     {
-      _anyUnitInRect.CompletingUnit.AddItemSafe(_scepterOfTheQueen.Item);
+      _anyUnitInRect.CompletingUnit?.AddItemSafe(_scepterOfTheQueen.Item);
       Player(GetPlayerNeutralAggressive()).RescueGroup(_highBourneAreaUnits);
     }
   }

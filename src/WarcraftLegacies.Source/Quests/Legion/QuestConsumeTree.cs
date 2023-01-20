@@ -21,13 +21,16 @@ namespace WarcraftLegacies.Source.Quests.Legion
       Global = true;
     }
 
+    /// <inheritdoc/>
     protected override string RewardFlavour =>
       "Archimonde has now consummed the World Tree and is now nigh unstoppable";
 
+    /// <inheritdoc/>
     protected override string RewardDescription =>
       "By consuming the World Tree, Archimonde will obtain immense power. +80 to all stats. Additionally, the Druids faction will be eliminated.";
 
 
+    /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
     {
       var archimondeUnit = _archimonde.Unit;

@@ -20,11 +20,14 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
       ResearchId = Constants.UPGRADE_R016_QUEST_COMPLETED_KEEPER_OF_THE_ETERNAL_WATCH_STORMWIND;
     }
     
+    /// <inheritdoc/>
     protected override string RewardFlavour =>
       "Khadgar has been freed from his confines under the Black Temple, and he is now free to serve the Kingdom of Stormwind.";
 
+    /// <inheritdoc/>
     protected override string RewardDescription => "You can summon Khadgar from the Altar of Kings";
 
+    /// <inheritdoc/>
     protected override void OnAdd(Faction whichFaction) => whichFaction.ModObjectLimit(HeroId, 1);
   }
 }

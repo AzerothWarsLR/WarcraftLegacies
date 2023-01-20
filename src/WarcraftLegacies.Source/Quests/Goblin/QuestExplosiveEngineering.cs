@@ -5,8 +5,10 @@ namespace WarcraftLegacies.Source.Quests.Goblin
 {
   public sealed class QuestExplosiveEngineering : QuestData
   {
+    /// <inheritdoc/>
     protected override string RewardFlavour => "We now have acquired Oil and can begin constructing War Machines";
 
+    /// <inheritdoc/>
     protected override string RewardDescription => "Gazlowee is trainable at the altar";
 
     public QuestExplosiveEngineering() : base("Explosive Engineering",

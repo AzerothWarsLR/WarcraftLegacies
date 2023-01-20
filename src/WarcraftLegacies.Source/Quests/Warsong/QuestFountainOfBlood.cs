@@ -14,9 +14,11 @@ namespace WarcraftLegacies.Source.Quests.Warsong
       ResearchId = Constants.UPGRADE_R00X_QUEST_COMPLETED_THE_BLOOD_OF_MANNOROTH_WARSONG;
     }
     
+    /// <inheritdoc/>
     protected override string RewardFlavour =>
       "The Fountain of Blood is under Warsong control. As the orcs drink from it, they feel a a familiar fury awake within them.";
 
+    /// <inheritdoc/>
     protected override string RewardDescription =>
       "Allows Orcish units to increase their attack rate and movement speed temporarily";
   }

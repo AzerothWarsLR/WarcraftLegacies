@@ -15,16 +15,22 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
   /// </summary>
   public sealed class QuestEliminatePiracy : QuestData
   {
-    private readonly List<unit> _rescueUnits = new();
+    private readonly List<unit> _rescueUnits;
+
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestEliminatePiracy"/> class.
     /// </summary>
     public QuestEliminatePiracy(Rectangle rescueRect) : base("Eliminate Piracy",
-      "The seas must be secured and the Kul'tiras navy must be returned to its former glory!", "ReplaceableTextures\\CommandButtons\\BTNHeroTinker.blp")
+      "The seas must be secured and the Kul'tiras navy must be returned to its former glory!",
+      "ReplaceableTextures\\CommandButtons\\BTNHeroTinker.blp")
     {
       AddObjective(new ObjectiveKillAllInArea(new List<Rectangle> { Regions.BootyBayQuest }, "In Booty Bay"));
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N01E_FUSELIGHT_10GOLD_MIN)));
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N00L_BOOTY_BAY_10GOLD_MIN)));
+      AddObjective(
+        new ObjectiveControlPoint(
+          ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N01E_FUSELIGHT_10GOLD_MIN)));
+      AddObjective(
+        new ObjectiveControlPoint(
+          ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N00L_BOOTY_BAY_10GOLD_MIN)));
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
     }
 
@@ -34,11 +40,11 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
 
     /// <inheritdoc/>
     protected override string RewardDescription => "Gain control of High Bank and 400 gold";
-/// <inheritdoc/>
 
+    /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
     {
-      completingFaction.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, 400);
+      completingFaction.Player?.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, 400);
       completingFaction.Player.RescueGroup(_rescueUnits);
     }
   }

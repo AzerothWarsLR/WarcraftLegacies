@@ -40,12 +40,15 @@ namespace WarcraftLegacies.Source.Quests.Legion
         preplacedUnitSystem.GetUnit(Constants.UNIT_N0BE_LEGION_TELEPORTERS_LEGION_OTHER, new Point(23536, -29975));
     }
 
+    /// <inheritdoc/>
     protected override string RewardDescription =>
       "With Argus finally under the Legion's control, the invasion of Azeroth can begin! It will enable Dreadlords to travel across worlds";
 
+    /// <inheritdoc/>
     protected override string RewardFlavour =>
       "Enable to research Astral Walk from the Burning Citadel and unlock the Portal spell in the Legion Teleporter";
 
+    /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
     {
       _legionTeleporter1.SetWaygateDestination(Regions.NorthrendLegionLanding.Center);

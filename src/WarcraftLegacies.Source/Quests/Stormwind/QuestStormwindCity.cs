@@ -18,8 +18,7 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
   /// </summary>
   public sealed class QuestStormwindCity : QuestData
   {
-
-    private readonly List<unit> _rescueUnits = new();
+    private readonly List<unit> _rescueUnits;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestStormwindCity"/> class.
@@ -29,10 +28,16 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
       "The outskirts of Stormwind are infested by rebels and foul creatures. Defeat them to regain control of your lands.",
       "ReplaceableTextures\\CommandButtons\\BTNStormwindCastle.blp")
     {
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N00V_DUSKWOOD_10GOLD_MIN)));
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N00Z_ELWYNN_FOREST_20GOLD_MIN)));
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N011_REDRIDGE_MOUNTAINS_10GOLD_MIN)));
-      AddObjective(new ObjectiveUpgrade(Constants.UNIT_H06N_CASTLE_STORMWIND_T3, Constants.UNIT_H06K_TOWN_HALL_STORMWIND_T1));
+      AddObjective(
+        new ObjectiveControlPoint(
+          ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N00V_DUSKWOOD_10GOLD_MIN)));
+      AddObjective(
+        new ObjectiveControlPoint(
+          ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N00Z_ELWYNN_FOREST_20GOLD_MIN)));
+      AddObjective(new ObjectiveControlPoint(
+        ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N011_REDRIDGE_MOUNTAINS_10GOLD_MIN)));
+      AddObjective(new ObjectiveUpgrade(Constants.UNIT_H06N_CASTLE_STORMWIND_T3,
+        Constants.UNIT_H06K_TOWN_HALL_STORMWIND_T1));
       AddObjective(new ObjectiveExpire(1020));
       AddObjective(new ObjectiveSelfExists());
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
@@ -58,10 +63,9 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
     /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)
     {
-      if (completingFaction.Player != null)
-        completingFaction.Player.RescueGroup(_rescueUnits);
+      completingFaction.Player?.RescueGroup(_rescueUnits);
 
-      if (GetLocalPlayer() == completingFaction.Player) 
+      if (GetLocalPlayer() == completingFaction.Player)
         PlayThematicMusic("war3mapImported\\StormwindTheme.mp3");
     }
   }

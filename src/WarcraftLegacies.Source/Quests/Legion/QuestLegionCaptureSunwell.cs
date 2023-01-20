@@ -15,12 +15,14 @@ namespace WarcraftLegacies.Source.Quests.Legion
       ResearchId = Constants.UPGRADE_R054_STOLEN_POWER_LEGION_QUEST;
     }
 
+    /// <inheritdoc/>
     protected override string RewardFlavour =>
       "The Sunwell has been captured by the Scourge. It now writhes with necromantic energy.";
 
+    /// <inheritdoc/>
     protected override string RewardDescription => "A research improving your Dreadlords";
 
-
+    /// <inheritdoc/>
     protected override void OnAdd(Faction whichFaction)
     {
       whichFaction.ModObjectLimit(ResearchId, Faction.UNLIMITED);

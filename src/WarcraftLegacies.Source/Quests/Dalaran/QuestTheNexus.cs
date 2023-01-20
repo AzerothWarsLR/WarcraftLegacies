@@ -22,12 +22,15 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
       Global = true;
     }
 
+    /// <inheritdoc/>
     protected override string RewardFlavour =>
       "The Nexus powers have been absorbed by Jaina";
 
+    /// <inheritdoc/>
     protected override string RewardDescription =>
       "You become the Nexus faction. You gain multiple new Dragonkin units.";
     
+    /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
     {
       completingFaction.ModObjectLimit(FourCC("h069"), -Faction.UNLIMITED); //Military Quarters

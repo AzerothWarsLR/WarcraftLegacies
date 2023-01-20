@@ -33,15 +33,19 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
       Required = true;
     }
 
+    /// <inheritdoc/>
     protected override string RewardFlavour => "The Gnolls have been defeated, Goldshire is safe.";
 
+    /// <inheritdoc/>
     protected override string RewardDescription => "Control of all units in Goldshire";
 
+    /// <inheritdoc/>
     protected override void OnFail(Faction completingFaction)
     {
       foreach (var unit in _rescueUnits) unit.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
+    /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
     {
       foreach (var unit in _rescueUnits) unit.Rescue(completingFaction.Player);

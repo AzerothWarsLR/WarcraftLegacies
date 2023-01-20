@@ -20,18 +20,22 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
       AddObjective(new ObjectiveControlCapital(theNexus, false));
     }
 
+    /// <inheritdoc/>
     protected override string RewardFlavour =>
       "The Nexus has been captured. The Blue Dragonflight fights for Dalaran.";
 
+    /// <inheritdoc/>
     protected override string RewardDescription => "Learn to train Blue Dragons";
 
+    /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
     {
       SetPlayerTechResearched(completingFaction.Player, RESEARCH_ID, 1);
-      completingFaction.Player.DisplayUnitTypeAcquired(DRAGON_ID,
+      completingFaction.Player?.DisplayUnitTypeAcquired(DRAGON_ID,
         "You can now train Blue Dragons from Military Quarters and the Nexus.");
     }
 
+    /// <inheritdoc/>
     protected override void OnAdd(Faction whichFaction)
     {
       whichFaction.ModObjectLimit(DRAGON_ID, 6);

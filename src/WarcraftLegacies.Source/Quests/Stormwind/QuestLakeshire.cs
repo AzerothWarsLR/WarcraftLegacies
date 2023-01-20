@@ -34,16 +34,20 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
     }
 
     //Todo: bad flavour
+    /// <inheritdoc/>
     protected override string RewardFlavour =>
       "Lakeshire has been liberated, and its military is now free to assist Stormwind.";
 
+    /// <inheritdoc/>
     protected override string RewardDescription => "Control of all units in Lakeshire";
 
+    /// <inheritdoc/>
     protected override void OnFail(Faction completingFaction)
     {
       foreach (var unit in _rescueUnits) unit.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
+    /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
     {
       foreach (var unit in _rescueUnits) unit.Rescue(completingFaction.Player);

@@ -28,17 +28,21 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
       ResearchId = Constants.UPGRADE_R039_HELLFIRE_DESTROYED;
     }
 
+    /// <inheritdoc/>
     protected override string RewardFlavour =>
       "Honor Hold is now free from the constant looming threat of Hellfire Citadel, and have finally been reconnected with their Alliance from Azeroth.";
 
+    /// <inheritdoc/>
     protected override string RewardDescription =>
       "Control of all units at Honor Hold";
 
+    /// <inheritdoc/>
     protected override void OnFail(Faction completingFaction)
     {
       foreach (var unit in _rescueUnits) unit.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
+    /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
     {
       foreach (var unit in _rescueUnits) unit.Rescue(completingFaction.Player);

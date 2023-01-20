@@ -21,11 +21,14 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
       ResearchId = FourCC("R04K");
     }
 
+    /// <inheritdoc/>
     protected override string RewardFlavour =>
       "Medivh's spirit has been cleansed of Sargeras' influence, allowing him to return to Azeroth for a time.";
 
+    /// <inheritdoc/>
     protected override string RewardDescription => "You can summon Medivh from the Altar of Knowledge";
 
+    /// <inheritdoc/>
     protected override void OnAdd(Faction whichFaction)
     {
       whichFaction.ModObjectLimit(MedivhId, 1);

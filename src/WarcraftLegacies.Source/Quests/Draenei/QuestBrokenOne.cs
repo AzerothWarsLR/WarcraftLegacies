@@ -5,13 +5,13 @@ using MacroTools.QuestSystem;
 namespace WarcraftLegacies.Source.Quests.Draenei
 {
   /// <summary>
-  /// Bring Velen to the Maelstrom to unlock Nobundo as a hero
+  /// Bring Velen to the Maelstrom to unlock Nobundo as a hero.
   /// </summary>
   public sealed class QuestBrokenOne : QuestData
   {
 
     /// <summary>
-    /// 
+    /// Initializes a new instance of the <see cref="QuestBrokenOne"/> class.
     /// </summary>
     public QuestBrokenOne(LegendaryHero velen) : base("The Broken One",
       "The great shaman Nobundo lent his services to the Earthen Ring to help calm the raging elements of Azeroth. But now the Draenai require his aid once again. Velen must travel to the Maelstrom to reunite with his old friend.",

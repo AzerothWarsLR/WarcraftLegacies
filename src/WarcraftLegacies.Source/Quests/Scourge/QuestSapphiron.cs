@@ -20,11 +20,14 @@ namespace WarcraftLegacies.Source.Quests.Scourge
       ResearchId = Constants.UPGRADE_R025_QUEST_COMPLETED_SAPPHIRON_SCOURGE;
     }
     
+    /// <inheritdoc/>
     protected override string RewardFlavour =>
       "Sapphiron has been slain, and has been reanimated as a mighty Frost Wyrm under the command of the Scourge.";
 
+    /// <inheritdoc/>
     protected override string RewardDescription => "The demihero Sapphiron";
 
+    /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
     {
       CreateUnit(completingFaction.Player, SapphironId, GetUnitX(GetTriggerUnit()), GetUnitY(GetTriggerUnit()),

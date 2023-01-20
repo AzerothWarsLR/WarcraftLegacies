@@ -37,16 +37,20 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
     }
 
     //Todo: bad flavour
+    /// <inheritdoc/>
     protected override string RewardFlavour =>
       "Korghal has been defeated, Rexxar has joined the Frostwolf!";
 
+    /// <inheritdoc/>
     protected override string RewardDescription => "Control of all buildings in Stonemaul and Rexxar is now trainable at the Altar";
 
+    /// <inheritdoc/>
     protected override void OnFail(Faction completingFaction)
     {
       foreach (var unit in _rescueUnits) unit.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
+    /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
     {
       foreach (var unit in _rescueUnits) unit.Rescue(completingFaction.Player);

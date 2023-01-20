@@ -28,15 +28,19 @@ namespace WarcraftLegacies.Source.Quests.Druids
         "overhead");
     }
 
+    /// <inheritdoc/>
     protected override string RewardFlavour => "Tortolla has finally awoken from his ancient slumber.";
 
+    /// <inheritdoc/>
     protected override string RewardDescription => "You can summon Tortolla from the Altar of Elders";
 
+    /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
     {
       RemoveUnit(_sleepingTortolla);
     }
 
+    /// <inheritdoc/>
     protected override void OnFail(Faction completingFaction)
     {
       RemoveUnit(_sleepingTortolla);

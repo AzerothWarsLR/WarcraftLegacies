@@ -20,13 +20,16 @@ namespace WarcraftLegacies.Source.Quests.Fel_Horde
       ResearchId = Constants.UPGRADE_R011_QUEST_COMPLETED_FELSTEEL_REFINING_FEL_HORDE;
     }
     
+    /// <inheritdoc/>
     protected override string RewardFlavour =>
       "The Great Forge has been annihilated. The Fel Horde's peons immediately salvage its intact refineries and put them to purpose in the creation of Felsteel.";
 
+    /// <inheritdoc/>
     protected override string RewardDescription => "Learn to train " + I2S(UnitLimit) + " " +
                                                        GetObjectName(UnittypeId) + "s from the " +
                                                        GetObjectName(BuildingId) + " and acquire Felsteel Plating";
     
+    /// <inheritdoc/>
     protected override void OnAdd(Faction whichFaction)
     {
       whichFaction.ModObjectLimit(UnittypeId, UnitLimit);

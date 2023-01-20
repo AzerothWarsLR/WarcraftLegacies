@@ -35,15 +35,19 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
       };
     }
 
+    /// <inheritdoc/>
     protected override string RewardFlavour => "Khadgar has closed the Dark Portal definately";
 
+    /// <inheritdoc/>
     protected override string RewardDescription => "Close the Dark Portal from both sides";
 
+    /// <inheritdoc/>
     protected override void OnFail(Faction completingFaction)
     {
       _unitsToRemove.Clear();
     }
     
+    /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
     {
       foreach (var unit in _unitsToRemove)

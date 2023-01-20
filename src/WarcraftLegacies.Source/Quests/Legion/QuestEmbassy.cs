@@ -17,9 +17,11 @@ namespace WarcraftLegacies.Source.Quests.Legion
       ResearchId = Constants.UPGRADE_R042_QUEST_COMPLETED_INFERNAL_FOOTHOLD_LEGION;
     }
 
+    /// <inheritdoc/>
     protected override string RewardFlavour => "The Legion has developped more infernal weaponry";
 
+    /// <inheritdoc/>
     protected override string RewardDescription =>
-      "You can build the Infernal Siegeworks and summon Anetheron from the " + GetObjectName(AltarId);
+      $"You can build the Infernal Siegeworks and summon Anetheron from the {GetObjectName(AltarId)}";
   }
 }
