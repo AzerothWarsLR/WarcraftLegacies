@@ -1,6 +1,7 @@
 ﻿using MacroTools.ArtifactSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
+using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem;
 using MacroTools.ObjectiveSystem.Objectives.ArtifactBased;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
@@ -24,11 +25,12 @@ namespace WarcraftLegacies.Source.Quests
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestBookOfMedivh"/> class.
     /// </summary>
+    /// <param name="dalaran">Must be destroyed for the quest to be completed.</param>
     /// <param name="bookOfMedivhPedestal">The pedestal which has the Book on it.</param>
     /// <param name="bookOfMedivh">Reward for completing the quest.</param>
     /// <param name="bypassLevelRequirement">If set to true, any hero of any level can complete the objective.</param>
     /// <param name="bypassDestructionRequirement">If true, Dalaran does not need to be destroyed to complete the quest.</param>
-    public QuestBookOfMedivh(unit bookOfMedivhPedestal, Artifact bookOfMedivh, bool bypassLevelRequirement = false, bool bypassDestructionRequirement = false) : base("Book of Medivh",
+    public QuestBookOfMedivh(Capital dalaran, unit bookOfMedivhPedestal, Artifact bookOfMedivh, bool bypassLevelRequirement = false, bool bypassDestructionRequirement = false) : base("Book of Medivh",
       "The last remaining spellbook written by Medivh, the Last Guardian, is held securely within the dungeons of Dalaran. The spells within its pages could bring us great power.",
       @"ReplaceableTextures\CommandButtons\BTNBookOfTheDead.blp")
     {
@@ -41,7 +43,7 @@ namespace WarcraftLegacies.Source.Quests
         AddObjective(objective);
       AddObjective(new ObjectiveNoOtherPlayerGetsArtifact(bookOfMedivh));
       if (!bypassDestructionRequirement)
-        AddObjective(new ObjectiveCapitalDead(LegendDalaran.LegendDalaranCapital));
+        AddObjective(new ObjectiveCapitalDead(dalaran));
       _bookOfMedivhPedestal = bookOfMedivhPedestal;
       Required = bypassLevelRequirement;
     }

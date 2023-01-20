@@ -1,6 +1,7 @@
 ﻿using MacroTools.ArtifactSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
+using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem;
 using MacroTools.ObjectiveSystem.Objectives.ArtifactBased;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
@@ -23,10 +24,11 @@ namespace WarcraftLegacies.Source.Quests
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestSkullOfGuldan"/> class.
     /// </summary>
+    /// <param name="dalaran">Needs to be destroyed for some players to complete the quest.</param>
     /// <param name="skullOfGuldanBuilding">The pedestal with the Skull.</param>
     /// <param name="isInterested">If set to true, any hero of any level can complete the objective.</param>
     /// <param name="skullOfGuldan">Reward for completing the quest.</param>
-    public QuestSkullOfGuldan(unit skullOfGuldanBuilding, bool isInterested, Artifact skullOfGuldan) : base("The Skull of Gul'dan",
+    public QuestSkullOfGuldan(Capital dalaran, unit skullOfGuldanBuilding, bool isInterested, Artifact skullOfGuldan) : base("The Skull of Gul'dan",
       "Khadgar managed to claim the Skull of Gul'dan and find the Book of Medivh in Outland, which Ner'zhul had left behind when he escaped through a portal. Khadgar used both artifacts to close the Dark Portal. As it crumbled, he sent the artifacts back to Azeroth via gryphon rider, which ended up in the hands of the Kirin Tor in Dalaran.",
       "ReplaceableTextures\\CommandButtons\\BTNGuldanSkull.blp")
     {
@@ -36,7 +38,7 @@ namespace WarcraftLegacies.Source.Quests
       if (_objectiveWithCompletingUnit is Objective objective)
         AddObjective(objective);
       AddObjective(new ObjectiveNoOtherPlayerGetsArtifact(skullOfGuldan));
-      AddObjective(new ObjectiveCapitalDead(LegendDalaran.LegendDalaranCapital));
+      AddObjective(new ObjectiveCapitalDead(dalaran));
       _skullOfGuldanBuilding = skullOfGuldanBuilding;
       _skullOfGuldan = skullOfGuldan;
     }

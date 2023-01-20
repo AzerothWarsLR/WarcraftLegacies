@@ -1,6 +1,7 @@
 using MacroTools.ArtifactSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
+using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.QuestSystem;
 using WarcraftLegacies.Source.Setup.Legends;
@@ -10,12 +11,15 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
 {
   public sealed class QuestJainaSoulGem : QuestData
   {
-    public QuestJainaSoulGem() : base("The Soul Gem",
+    private readonly LegendaryHero _jaina;
+
+    public QuestJainaSoulGem(LegendaryHero jaina, Capital caerDarrow) : base("The Soul Gem",
       "Scholomance is home to a wide variety of profane artifacts. Bring Jaina there to see what might be discovered.",
       "ReplaceableTextures\\CommandButtons\\BTNSoulGem.blp")
     {
-      AddObjective(new ObjectiveLegendInRect(LegendDalaran.LegendJaina, Regions.CaerDarrow, "Caer Darrow"));
-      AddObjective(new ObjectiveControlCapital(LegendNeutral.Caerdarrow, false));
+      _jaina = jaina;
+      AddObjective(new ObjectiveLegendInRect(jaina, Regions.CaerDarrow, "Caer Darrow"));
+      AddObjective(new ObjectiveControlCapital(caerDarrow, false));
     }
     
     /// <inheritdoc />
@@ -30,7 +34,7 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
     {
       var soulGem = new Artifact(CreateItem(Constants.ITEM_GSOU_SOUL_GEM, 0, 0));
       ArtifactManager.Register(soulGem);
-      LegendDalaran.LegendJaina?.Unit?.AddItemSafe(soulGem.Item);
+      _jaina.Unit?.AddItemSafe(soulGem.Item);
     }
   }
 }

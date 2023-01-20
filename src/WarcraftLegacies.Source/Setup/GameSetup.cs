@@ -62,7 +62,7 @@ namespace WarcraftLegacies.Source.Setup
       CheatSetup.Setup();
       CommandSetup.Setup();
       ControlPointVictory.Setup();
-      SilvermoonDies.Setup();
+      SilvermoonDies.Setup(allLegendSetup.Quelthalas.LegendSunwell);
       GameTime.Setup();
       FactionMultiboard.Setup();
       BookSetup.Setup();
