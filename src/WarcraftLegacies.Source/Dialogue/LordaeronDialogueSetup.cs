@@ -9,7 +9,6 @@ using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using WarcraftLegacies.Source.Quests.Scourge;
 using WarcraftLegacies.Source.Setup;
 using WarcraftLegacies.Source.Setup.FactionSetup;
-using WarcraftLegacies.Source.Setup.Legends;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Dialogue

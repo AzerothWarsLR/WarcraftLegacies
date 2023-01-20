@@ -4,7 +4,6 @@ using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.Powers;
 using MacroTools.QuestSystem;
-using WarcraftLegacies.Source.Setup.Legends;
 
 namespace WarcraftLegacies.Source.Quests.Frostwolf
 {

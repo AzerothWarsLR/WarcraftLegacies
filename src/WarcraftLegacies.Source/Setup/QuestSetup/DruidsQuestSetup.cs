@@ -1,6 +1,5 @@
 using MacroTools.QuestSystem;
 using WarcraftLegacies.Source.Quests.Druids;
-using WarcraftLegacies.Source.Setup.Legends;
 
 namespace WarcraftLegacies.Source.Setup.QuestSetup
 {

@@ -1,5 +1,4 @@
-﻿using MacroTools;
-using MacroTools.ControlPointSystem;
+﻿using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
@@ -10,7 +9,6 @@ using MacroTools.QuestSystem;
 using System.Collections.Generic;
 using MacroTools.LegendSystem;
 using WarcraftLegacies.Source.Objectives;
-using WarcraftLegacies.Source.Setup.Legends;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 

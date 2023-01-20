@@ -3,7 +3,6 @@ using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using WarcraftLegacies.Source.Quests.Lordaeron;
 using WarcraftLegacies.Source.Setup.FactionSetup;
-using WarcraftLegacies.Source.Setup.Legends;
 
 namespace WarcraftLegacies.Source.Setup.QuestSetup
 {

@@ -1,6 +1,5 @@
 using MacroTools.Extensions;
 using MacroTools.LegendSystem;
-using WarcraftLegacies.Source.Setup.Legends;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Mechanics.Quelthalas

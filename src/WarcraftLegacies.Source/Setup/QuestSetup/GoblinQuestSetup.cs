@@ -1,6 +1,5 @@
 ﻿using WarcraftLegacies.Source.Quests.Goblin;
 using WarcraftLegacies.Source.Setup.FactionSetup;
-using WarcraftLegacies.Source.Setup.Legends;
 
 namespace WarcraftLegacies.Source.Setup.QuestSetup
 {

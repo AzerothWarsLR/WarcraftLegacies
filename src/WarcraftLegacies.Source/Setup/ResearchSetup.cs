@@ -5,7 +5,6 @@ using MacroTools.ResearchSystems;
 using WarcraftLegacies.Source.Researches;
 using WarcraftLegacies.Source.Researches.Ironforge;
 using WarcraftLegacies.Source.Researches.Stormwind;
-using WarcraftLegacies.Source.Spells;
 using WCSharp.Events;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
