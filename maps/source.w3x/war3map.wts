@@ -1909,6 +1909,12 @@ STRING 319
 E
 }
 
+STRING 320
+// Abilities: A0HA (Rocket Bombardment), Ubertip (Tooltip - Normal - Extended)
+{
+Bombards an area with 3 waves of rockets. Each wave deals 30 damage to all units in an area.
+}
+
 STRING 321
 // Units: ugrm (Stone Form Gargoyle), EditorSuffix (Name - Editor Suffix)
 {
@@ -23024,12 +23030,6 @@ STRING 3856
 // Units: H04U (Demigod), Awakentip (Tooltip - Awaken)
 {
 Revive Demigod
-}
-
-STRING 3857
-// Abilities: A0HA (Rocket Bombardment), Ubertip (Tooltip - Normal - Extended)
-{
-Bombards an area with 3 waves of rockets. Each wave deals 40 damage to all units in an area.
 }
 
 STRING 3858
