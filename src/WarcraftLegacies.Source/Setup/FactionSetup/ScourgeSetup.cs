@@ -135,8 +135,6 @@ When Plague hits Lordaeron, a great portal will be opened between Dragonblight a
       
       Scourge.AddGoldMine(preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-4939, 18803)));
 
-      HelmOfDominationDropsWhenScourgeLeaves.Setup(helmOfDomination);
-
       FactionManager.Register(Scourge);
     }
   }

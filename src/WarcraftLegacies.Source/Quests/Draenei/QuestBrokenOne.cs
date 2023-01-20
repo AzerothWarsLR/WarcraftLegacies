@@ -1,4 +1,5 @@
-﻿using MacroTools.ObjectiveSystem.Objectives.LegendBased;
+﻿using MacroTools.LegendSystem;
+using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.QuestSystem;
 using WarcraftLegacies.Source.Setup.Legends;
 
@@ -13,11 +14,11 @@ namespace WarcraftLegacies.Source.Quests.Draenei
     /// <summary>
     /// 
     /// </summary>
-    public QuestBrokenOne() : base("The Broken One",
+    public QuestBrokenOne(LegendaryHero velen) : base("The Broken One",
       "The great shaman Nobundo lent his services to the Earthen Ring to help calm the raging elements of Azeroth. But now the Draenai require his aid once again. Velen must travel to the Maelstrom to reunite with his old friend.",
       "ReplaceableTextures\\CommandButtons\\BTNAkamanew.blp")
     {
-      AddObjective(new ObjectiveLegendInRect(LegendDraenei.LegendVelen, Regions.MaelstromAmbient, "Maelstrom"));
+      AddObjective(new ObjectiveLegendInRect(velen, Regions.MaelstromAmbient, "Maelstrom"));
       ResearchId = Constants.UPGRADE_R083_QUEST_COMPLETED_THE_BROKEN_ONE;
     }
 

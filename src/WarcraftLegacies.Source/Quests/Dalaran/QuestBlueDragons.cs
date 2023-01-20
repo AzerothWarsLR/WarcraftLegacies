@@ -1,5 +1,6 @@
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
+using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.QuestSystem;
 using WarcraftLegacies.Source.Setup.Legends;
@@ -13,11 +14,11 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
     private static readonly int DRAGON_ID = FourCC("n0AC");
     private static readonly int MANADAM_ID = FourCC("R00N");
 
-    public QuestBlueDragons() : base("The Blue Dragonflight",
+    public QuestBlueDragons(Capital theNexus) : base("The Blue Dragonflight",
       "The Blue Dragons of Northrend are the wardens of magic on Azeroth. They might be convinced to willingly join the mages of Dalaran.",
       "ReplaceableTextures\\CommandButtons\\BTNAzureDragon.blp")
     {
-      AddObjective(new ObjectiveControlCapital(LegendNeutral.TheNexus, false));
+      AddObjective(new ObjectiveControlCapital(theNexus, false));
     }
 
     protected override string RewardFlavour =>

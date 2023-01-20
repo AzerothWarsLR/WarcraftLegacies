@@ -5,6 +5,7 @@ using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.QuestBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using WarcraftLegacies.Source.Quests.Scourge;
+using WarcraftLegacies.Source.Setup;
 using WarcraftLegacies.Source.Setup.FactionSetup;
 using WarcraftLegacies.Source.Setup.Legends;
 
@@ -12,7 +13,7 @@ namespace WarcraftLegacies.Source.Dialogue
 {
   public static class ScourgeDialogueSetup
   {
-    public static void Setup()
+    public static void Setup(AllLegendSetup legendSetup)
     {
       TriggeredDialogueManager.Add(
         new TriggeredDialogue(new MacroTools.DialogueSystem.Dialogue(
@@ -25,7 +26,7 @@ namespace WarcraftLegacies.Source.Dialogue
           LordaeronSetup.Lordaeron,
         }, new[]
         {
-          new ObjectiveLegendDead(LegendScourge.Kelthuzad)
+          new ObjectiveLegendDead(legendSetup.Scourge.Kelthuzad)
         }));
 
       TriggeredDialogueManager.Add(
@@ -37,7 +38,7 @@ namespace WarcraftLegacies.Source.Dialogue
           new[]
           {
             new ObjectiveStartSpell(Constants.ABILITY_A00J_SUMMON_THE_BURNING_LEGION_ALL_FACTIONS, false,
-              LegendScourge.Kelthuzad)
+              legendSetup.Scourge.Kelthuzad)
           }));
 
       TriggeredDialogueManager.Add(
@@ -58,7 +59,7 @@ namespace WarcraftLegacies.Source.Dialogue
           new[] { ScourgeSetup.Scourge },
           new Objective[]
           {
-            new ObjectiveLegendMeetsLegend(LegendScourge.Arthas, LegendScourge.Kelthuzad),
+            new ObjectiveLegendMeetsLegend(legendSetup.Scourge.Arthas, legendSetup.Scourge.Kelthuzad),
             new ObjectiveCompleteQuest(ScourgeSetup.Scourge.GetQuestByType(typeof(QuestKelthuzadDies))),
             new ObjectiveDontCompleteQuest(ScourgeSetup.Scourge.GetQuestByType(typeof(QuestKelthuzadLich)))
           }));
@@ -89,8 +90,8 @@ namespace WarcraftLegacies.Source.Dialogue
           },
           new Objective[]
           {
-            new ObjectiveLegendInRect(LegendScourge.Arthas, Regions.QuelthalasAmbient, "Quel'thalas"),
-            new ObjectiveLegendInRect(LegendScourge.Kelthuzad, Regions.QuelthalasAmbient, "Quel'thalas"),
+            new ObjectiveLegendInRect(legendSetup.Scourge.Arthas, Regions.QuelthalasAmbient, "Quel'thalas"),
+            new ObjectiveLegendInRect(legendSetup.Scourge.Kelthuzad, Regions.QuelthalasAmbient, "Quel'thalas"),
             new ObjectiveCompleteQuest(ScourgeSetup.Scourge.GetQuestByType(typeof(QuestKelthuzadDies))),
             new ObjectiveDontCompleteQuest(ScourgeSetup.Scourge.GetQuestByType(typeof(QuestKelthuzadLich)))
           }));
@@ -113,7 +114,7 @@ namespace WarcraftLegacies.Source.Dialogue
           },
           new[]
           {
-            new ObjectiveLegendMeetsLegend(LegendScourge.Arthas, LegendQuelthalas.LegendSylvanas)
+            new ObjectiveLegendMeetsLegend(legendSetup.Scourge.Arthas, legendSetup.Quelthalas.Sylvanas)
           }));
       
       TriggeredDialogueManager.Add(
@@ -134,7 +135,7 @@ namespace WarcraftLegacies.Source.Dialogue
           },
           new[]
           {
-            new ObjectiveLegendMeetsLegend(LegendScourge.Arthas, LegendLegion.LEGEND_TICHONDRIUS)
+            new ObjectiveLegendMeetsLegend(legendSetup.Scourge.Arthas, legendSetup.Legion.Tichondrius)
           }));
       
       TriggeredDialogueManager.Add(
@@ -189,8 +190,8 @@ namespace WarcraftLegacies.Source.Dialogue
           DalaranSetup.Dalaran
         }, new List<Objective>
         {
-          new ObjectiveLegendInRect(LegendDalaran.LegendAntonidas, Regions.Dalaran, "Dalaran"),
-          new ObjectiveLegendInRect(LegendScourge.Arthas, Regions.Dalaran, "Dalaran")
+          new ObjectiveLegendInRect(legendSetup.Dalaran.Antonidas, Regions.Dalaran, "Dalaran"),
+          new ObjectiveLegendInRect(legendSetup.Scourge.Arthas, Regions.Dalaran, "Dalaran")
         }
       ));
     }

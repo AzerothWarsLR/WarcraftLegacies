@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
+using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
@@ -14,12 +15,12 @@ namespace WarcraftLegacies.Source.Quests.Quelthalas
   {
     private readonly List<unit> _rescueUnits;
 
-    public QuestQueldanil(Rectangle rescueRect) : base("Quel'danil Lodge",
+    public QuestQueldanil(Rectangle rescueRect, Capital caerdarrow) : base("Quel'danil Lodge",
       "Quel'danil Lodge is a High Elven outpost situated in the Hinterlands. It's been some time since the rangers there have been in contact with Quel'thalas.",
       "ReplaceableTextures\\CommandButtons\\BTNBearDen.blp")
     {
       AddObjective(new ObjectiveAnyUnitInRect(Regions.QuelDanil_Lodge, "Quel'danil Lodge", true));
-      AddObjective(new ObjectiveControlCapital(LegendNeutral.Caerdarrow, false));
+      AddObjective(new ObjectiveControlCapital(caerdarrow, false));
       ResearchId = Constants.UPGRADE_R074_QUEST_COMPLETED_QUEL_DANIL_LODGE;
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
     }

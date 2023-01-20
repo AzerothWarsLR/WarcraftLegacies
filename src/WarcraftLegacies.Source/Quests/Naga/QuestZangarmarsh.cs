@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
+using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.TimeBased;
@@ -20,12 +21,11 @@ namespace WarcraftLegacies.Source.Quests.Naga
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestZangarmarsh"/> class.
     /// </summary>
-    /// <param name="rescueRect"></param>
-    public QuestZangarmarsh(Rectangle rescueRect) : base("The Coilfang Reservoir",
+    public QuestZangarmarsh(Rectangle rescueRect, LegendaryHero vashj) : base("The Coilfang Reservoir",
       $"The bassins of Zangarmarsh will be the perfect breeding ground for Illidan's Naga",
       "ReplaceableTextures\\CommandButtons\\BTNIllidariDemonGate.blp")
     {
-      AddObjective(new ObjectiveLegendInRect(LegendNaga.LegendVashj, rescueRect, "Zangarmarsh"));
+      AddObjective(new ObjectiveLegendInRect(vashj, rescueRect, "Zangarmarsh"));
       AddObjective(new ObjectiveExpire(1250));
       AddObjective(new ObjectiveSelfExists());
       ResearchId = Constants.UPGRADE_R03B_QUEST_COMPLETED_THE_COILFANG_RESERVOIR;
@@ -37,7 +37,7 @@ namespace WarcraftLegacies.Source.Quests.Naga
     protected override string RewardFlavour => "The Clutcheries of Zangarmarsh are now built";
 
     /// <inheritdoc />
-    protected override string RewardDescription => $"Gain control of the Zangarmarsh Outpost and the ability to build the Clutchery";
+    protected override string RewardDescription => "Gain control of the Zangarmarsh Outpost and the ability to build the Clutchery";
 
     /// <inheritdoc />
     protected override void OnFail(Faction completingFaction)

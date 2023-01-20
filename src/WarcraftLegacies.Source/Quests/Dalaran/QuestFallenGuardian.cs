@@ -1,5 +1,6 @@
 using MacroTools.ControlPointSystem;
 using MacroTools.FactionSystem;
+using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.QuestSystem;
@@ -12,11 +13,11 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
   {
     private static readonly int MedivhId = FourCC("Haah");
 
-    public QuestFallenGuardian() : base("The Fallen Guardian",
+    public QuestFallenGuardian(Capital karazhan) : base("The Fallen Guardian",
       "Medivh's body was corrupted by Sargeras at conception. Now that he is dead, the secrets of the Tomb of Sargeras and Karazhan combined might allow the mages of Dalaran to cleanse his spirit.",
       "ReplaceableTextures\\CommandButtons\\BTNMedivh.blp")
     {
-      AddObjective(new ObjectiveControlCapital(LegendNeutral.Karazhan, false));
+      AddObjective(new ObjectiveControlCapital(karazhan, false));
       AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(FourCC("n00J"))));
       ResearchId = FourCC("R04K");
     }

@@ -1,4 +1,5 @@
 using MacroTools.FactionSystem;
+using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
@@ -9,13 +10,15 @@ namespace WarcraftLegacies.Source.Quests.Scourge
 {
   public sealed class QuestSapphiron : QuestData
   {
-    private static readonly int SapphironId = FourCC("ubdd");
-    private static readonly int SapphironResearch = FourCC("R025");
-    
-    public QuestSapphiron(unit sapphiron) : base("Sapphiron", "Kill Sapphiron the Blue Dragon to have Kel'Tuzad reanimate her as a Frost Wyrm. Sapphiron can be found in Northrend.", "ReplaceableTextures\\CommandButtons\\BTNFrostWyrm.blp")
+    private const int SapphironId = Constants.UNIT_UBDD_SAPPHIRON_SCOURGE_DEMI;
+
+    public QuestSapphiron(unit sapphiron, LegendaryHero kelthuzad) : base("Sapphiron",
+      "Kill Sapphiron the Blue Dragon to have Kel'Tuzad reanimate her as a Frost Wyrm. Sapphiron can be found in Northrend.",
+      "ReplaceableTextures\\CommandButtons\\BTNFrostWyrm.blp")
     {
       AddObjective(new ObjectiveKillUnit(sapphiron));
-      AddObjective(new ObjectiveControlLegend(LegendScourge.Kelthuzad, false));
+      AddObjective(new ObjectiveControlLegend(kelthuzad, false));
+      ResearchId = Constants.UPGRADE_R025_QUEST_COMPLETED_SAPPHIRON_SCOURGE;
     }
     
     protected override string RewardFlavour =>
@@ -27,12 +30,6 @@ namespace WarcraftLegacies.Source.Quests.Scourge
     {
       CreateUnit(completingFaction.Player, SapphironId, GetUnitX(GetTriggerUnit()), GetUnitY(GetTriggerUnit()),
         GetUnitFacing(GetTriggerUnit()));
-      SetPlayerTechResearched(completingFaction.Player, SapphironResearch, 1);
-    }
-
-    protected override void OnAdd(Faction whichFaction)
-    {
-      whichFaction.ModObjectLimit(SapphironResearch, Faction.UNLIMITED);
     }
   }
 }

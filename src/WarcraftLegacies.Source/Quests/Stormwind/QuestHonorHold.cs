@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
+using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.QuestSystem;
 using WarcraftLegacies.Source.Setup.Legends;
@@ -14,7 +15,7 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
   {
     private readonly List<unit> _rescueUnits = new();
 
-    public QuestHonorHold(Rectangle rescueRect) : base("Honor Hold",
+    public QuestHonorHold(Rectangle rescueRect, Capital hellfireCitadel) : base("Honor Hold",
       "Despite Outland's incredibly harsh climate, some Alliance forces have managed to make a home there - a town called Honor Hold",
       "ReplaceableTextures\\CommandButtons\\BTNHumanBarracks.blp")
     {
@@ -24,8 +25,8 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
           SetUnitInvulnerable(unit, true);
           _rescueUnits.Add(unit);
         }
-      AddObjective(new ObjectiveCapitalDead(LegendFelHorde.LegendHellfirecitadel));
-      ResearchId = FourCC("R039");
+      AddObjective(new ObjectiveCapitalDead(hellfireCitadel));
+      ResearchId = Constants.UPGRADE_R039_HELLFIRE_DESTROYED;
     }
 
     protected override string RewardFlavour =>

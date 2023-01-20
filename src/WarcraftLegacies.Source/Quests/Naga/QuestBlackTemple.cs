@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
+using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.TimeBased;
@@ -12,7 +13,7 @@ using static War3Api.Common;
 namespace WarcraftLegacies.Source.Quests.Naga
 {
   /// <summary>
-  /// Bring <see cref="LegendNaga.LegendIllidan"/> to <see cref="LegendFelHorde.LegendBlacktemple"/> to gain control of it.
+  /// Bring <see cref="LegendNaga.Illidan"/> to <see cref="LegendFelHorde.BlackTemple"/> to gain control of it.
   /// </summary>
   public sealed class QuestBlackTemple : QuestData
   {
@@ -21,12 +22,11 @@ namespace WarcraftLegacies.Source.Quests.Naga
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestBlackTemple"/> class.
     /// </summary>
-    /// <param name="rescueRect"></param>
-    public QuestBlackTemple(Rectangle rescueRect) : base("Seat of Power",
+    public QuestBlackTemple(Rectangle rescueRect, LegendaryHero illidan) : base("Seat of Power",
       $"Illidan requires the aid of his servants in Outland for the upcoming war. He must travel to the Black Temple to muster them. His incredible power allows him to move between worlds with ease.",
       "ReplaceableTextures\\CommandButtons\\BTNWarpPortal.blp")
     {
-      AddObjective(new ObjectiveLegendInRect(LegendNaga.LegendIllidan, Regions.IllidanBlackTempleUnlock, "Black Temple"));
+      AddObjective(new ObjectiveLegendInRect(illidan, Regions.IllidanBlackTempleUnlock, "Black Temple"));
       AddObjective(new ObjectiveExpire(1250));
       AddObjective(new ObjectiveSelfExists());
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);

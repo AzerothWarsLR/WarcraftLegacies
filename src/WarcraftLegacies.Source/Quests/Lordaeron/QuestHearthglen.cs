@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
+using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.TimeBased;
@@ -22,11 +23,12 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
     /// Initializes a new instance of the <see cref="QuestHearthglen"/> class.
     /// </summary>
     /// <param name="rescueRect">Units in this area will start invulnerable and be rescued when the quest is complete.</param>
-    public QuestHearthglen(Rectangle rescueRect) : base("Hearthglen",
+    /// <param name="arthas">Must be brought somewhere to complete the quest.</param>
+    public QuestHearthglen(Rectangle rescueRect, LegendaryHero arthas) : base("Hearthglen",
       "The village of Hearthglen is just nearby. A legendary warrior like Arthas would be enough for them to join us",
       "ReplaceableTextures\\CommandButtons\\BTNutherAlt.blp")
     {
-      AddObjective(new ObjectiveLegendInRect(LegendLordaeron.Arthas, Regions.Hearthglen, "Hearthglen"));
+      AddObjective(new ObjectiveLegendInRect(arthas, Regions.Hearthglen, "Hearthglen"));
       AddObjective(new ObjectiveExpire(1235));
       AddObjective(new ObjectiveSelfExists());
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);

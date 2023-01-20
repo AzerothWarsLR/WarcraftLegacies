@@ -17,7 +17,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
     /// <summary>
     /// Sets up all shared <see cref="QuestData"/>s.
     /// </summary>
-    public static void Setup(PreplacedUnitSystem preplacedUnitSystem, ArtifactSetup artifactSetup)
+    public static void Setup(PreplacedUnitSystem preplacedUnitSystem, ArtifactSetup artifactSetup, AllLegendSetup allLegendSetup)
     {
       var tombOfSargerasQuest =
         new QuestTombOfSargeras(
@@ -34,13 +34,13 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
           }, Regions.Sargeras_Entrance, preplacedUnitSystem.GetUnit(Constants.UNIT_H00K_HORIZONTAL_WOODEN_GATE_CLOSED, Regions.Sargeras_Entrance.Center)
           ,preplacedUnitSystem.GetUnit(Constants.UNIT_O01U_GUL_DAN_S_REMAINS));
 
-      var ragnarosQuest = new QuestRagnaros(preplacedUnitSystem.GetUnit(Constants.UNIT_N02B_RAGNAROS_SUMMONING_PEDESTAL_PEDESTAL));
-      //var questThandolSpan = new QuestThandolSpan(preplacedUnitSystem);
-      
+      var ragnarosQuest = new QuestRagnaros(allLegendSetup.Neutral.Ragnaros,
+        preplacedUnitSystem.GetUnit(Constants.UNIT_N02B_RAGNAROS_SUMMONING_PEDESTAL_PEDESTAL));
+
       foreach (var faction in FactionManager.GetAllFactions())
       {
         faction.AddQuest(tombOfSargerasQuest);
-        faction.AddQuest(new QuestZinrokhAssembly(new List<Artifact>()
+        faction.AddQuest(new QuestZinrokhAssembly(new List<Artifact>
         {
           artifactSetup.AzureFragment,
           artifactSetup.BronzeFragment,
@@ -48,14 +48,12 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
           artifactSetup.ObsidianFragment,
           artifactSetup.RubyFragment
         }));
-        faction.AddQuest(new QuestBookOfMedivh(preplacedUnitSystem.GetUnit(Constants.UNIT_NBSM_BOOK_OF_MEDIVH),
+        faction.AddQuest(new QuestBookOfMedivh(allLegendSetup.Dalaran.Dalaran, preplacedUnitSystem.GetUnit(Constants.UNIT_NBSM_BOOK_OF_MEDIVH),
           artifactSetup.BookOfMedivh, faction == LegionSetup.Legion, faction == DalaranSetup.Dalaran));
-        faction.AddQuest(new QuestSkullOfGuldan(
+        faction.AddQuest(new QuestSkullOfGuldan(allLegendSetup.Dalaran.Dalaran,
           preplacedUnitSystem.GetUnit(Constants.UNIT_N0DK_SKULL_OF_GUL_DAN_PEDESTAL),
           faction == LegionSetup.Legion || faction == IllidanSetup.Illidan, artifactSetup.SkullOfGuldan));
         faction.AddQuest(ragnarosQuest);
-
-        //faction.AddQuest(questThandolSpan);
       }
     }
   }

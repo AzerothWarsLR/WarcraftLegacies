@@ -2,6 +2,7 @@
 using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
+using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
 using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
@@ -18,11 +19,11 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
   {
     private readonly List<unit> _rescueUnits = new();
 
-    public QuestFeathermoon(Rectangle rescueRect) : base("Feathermoon Stronghold",
+    public QuestFeathermoon(Rectangle rescueRect, LegendaryHero tyrande) : base("Feathermoon Stronghold",
       "Feathermoon Stronghold stood guard for ten thousand years, it is time to relieve the guards from their duty.",
       "ReplaceableTextures\\CommandButtons\\BTNBearDen.blp")
     {
-      AddObjective(new ObjectiveLegendReachRect(LegendSentinels.Tyrande, Regions.FeathermoonUnlock,
+      AddObjective(new ObjectiveLegendReachRect(tyrande, Regions.FeathermoonUnlock,
         "Feathermoon Stronghold"));
       AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N01R_ASTRANAAR_15GOLD_MIN)));
       AddObjective(new ObjectiveUpgrade(Constants.UNIT_N06P_SENTINEL_ENCLAVE_SENTINEL_T3, Constants.UNIT_N06J_SENTINEL_OUTPOST_SENTINEL_T1));

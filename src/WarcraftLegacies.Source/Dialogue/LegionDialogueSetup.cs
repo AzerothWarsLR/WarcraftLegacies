@@ -4,6 +4,7 @@ using MacroTools.ObjectiveSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.QuestBased;
 using WarcraftLegacies.Source.Quests.Legion;
+using WarcraftLegacies.Source.Setup;
 using WarcraftLegacies.Source.Setup.FactionSetup;
 using WarcraftLegacies.Source.Setup.Legends;
 
@@ -11,7 +12,7 @@ namespace WarcraftLegacies.Source.Dialogue
 {
   public static class LegionDialogueSeup
   {
-    public static void Setup()
+    public static void Setup(AllLegendSetup legendSetup)
     {
       TriggeredDialogueManager.Add(new TriggeredDialogue(
         new DialogueSequence(
@@ -31,7 +32,7 @@ namespace WarcraftLegacies.Source.Dialogue
           IllidariSetup.Illidari
         }, new List<Objective>
         {
-          new ObjectiveLegendMeetsLegend(LegendLegion.LEGEND_TICHONDRIUS, LegendNaga.LegendIllidan)
+          new ObjectiveLegendMeetsLegend(legendSetup.Legion.Tichondrius, legendSetup.Naga.Illidan)
         }
       ));
 
@@ -50,7 +51,7 @@ namespace WarcraftLegacies.Source.Dialogue
           FrostwolfSetup.Frostwolf
         }, new List<Objective>
         {
-          new ObjectiveLegendMeetsLegend(LegendLegion.LEGEND_ARCHIMONDE, LegendFrostwolf.LegendThrall)
+          new ObjectiveLegendMeetsLegend(legendSetup.Legion.Archimonde, legendSetup.Frostwolf.Thrall)
         }
       ));
 
@@ -69,7 +70,7 @@ namespace WarcraftLegacies.Source.Dialogue
           DalaranSetup.Dalaran
         }, new List<Objective>
         {
-          new ObjectiveLegendMeetsLegend(LegendLegion.LEGEND_ARCHIMONDE, LegendDalaran.LegendJaina)
+          new ObjectiveLegendMeetsLegend(legendSetup.Legion.Archimonde, legendSetup.Dalaran.Jaina)
         }
       ));
 
@@ -97,7 +98,7 @@ namespace WarcraftLegacies.Source.Dialogue
           ScourgeSetup.Scourge
         }, new List<Objective>
         {
-          new ObjectiveLegendMeetsLegend(LegendLegion.LEGEND_ARCHIMONDE, LegendScourge.Kelthuzad)
+          new ObjectiveLegendMeetsLegend(legendSetup.Legion.Archimonde, legendSetup.Scourge.Kelthuzad)
         }
       ));
     }

@@ -7,7 +7,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
 {
   public static class IronforgeQuestSetup
   {
-    public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
+    public static void Setup(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup)
     {
       var ironforge = IronforgeSetup.Ironforge;
       var newQuest = ironforge.AddQuest(new QuestThelsamar(preplacedUnitSystem, Regions.ThelUnlock));
@@ -15,8 +15,8 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       ironforge.AddQuest(new QuestDunMorogh(preplacedUnitSystem));
       ironforge.AddQuest(new QuestDominion(Regions.IronforgeAmbient));
       ironforge.AddQuest(new QuestGnomeregan(Regions.Gnomergan, preplacedUnitSystem));
-      ironforge.AddQuest(new QuestDarkIron(Regions.Shadowforge_City));
-      ironforge.AddQuest(new QuestWildhammer());
+      ironforge.AddQuest(new QuestDarkIron(Regions.Shadowforge_City, allLegendSetup.FelHorde.BlackTemple, allLegendSetup.Ironforge.Magni));
+      ironforge.AddQuest(new QuestWildhammer(allLegendSetup.Ironforge.Magni));
 
       var missingArtifacts = new int[]
       {

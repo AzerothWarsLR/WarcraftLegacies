@@ -1,5 +1,6 @@
 ﻿using MacroTools.DialogueSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
+using WarcraftLegacies.Source.Setup;
 using WarcraftLegacies.Source.Setup.FactionSetup;
 using WarcraftLegacies.Source.Setup.Legends;
 
@@ -13,7 +14,7 @@ namespace WarcraftLegacies.Source.Dialogue
     /// <summary>
     /// Sets up <see cref="QuelthalasDialogueSetup"/>.
     /// </summary>
-    public static void Setup()
+    public static void Setup(AllLegendSetup legendSetup)
     {
       TriggeredDialogueManager.Add(
         new TriggeredDialogue(new DialogueSequence(new MacroTools.DialogueSystem.Dialogue(
@@ -29,7 +30,7 @@ namespace WarcraftLegacies.Source.Dialogue
             ScourgeSetup.Scourge
           }, new[]
           {
-            new ObjectiveLegendMeetsLegend(LegendScourge.Arthas, LegendQuelthalas.LegendKael)
+            new ObjectiveLegendMeetsLegend(legendSetup.Scourge.Arthas, legendSetup.Quelthalas.Kael)
           }));
     }
   }

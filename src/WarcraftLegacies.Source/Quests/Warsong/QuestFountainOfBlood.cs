@@ -1,4 +1,5 @@
 using MacroTools.FactionSystem;
+using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.QuestSystem;
 using WarcraftLegacies.Source.Setup.Legends;
@@ -8,13 +9,12 @@ namespace WarcraftLegacies.Source.Quests.Warsong
 {
   public sealed class QuestFountainOfBlood : QuestData
   {
-    private static readonly int ResearchId = FourCC("R00X");
-
-    public QuestFountainOfBlood() : base("The Blood of Mannoroth",
+    public QuestFountainOfBlood(Capital fountainOfBlood) : base("The Blood of Mannoroth",
       "Long ago, the orcs drank the blood of Mannoroth and were infused with demonic fury. A mere taste of his blood would reignite those powers.",
       "ReplaceableTextures\\CommandButtons\\BTNFountainOfLifeBlood.blp")
     {
-      AddObjective(new ObjectiveControlCapital(LegendNeutral.FountainOfBlood, false));
+      AddObjective(new ObjectiveControlCapital(fountainOfBlood, false));
+      ResearchId = Constants.UPGRADE_R00X_QUEST_COMPLETED_THE_BLOOD_OF_MANNOROTH_WARSONG;
     }
     
     protected override string RewardFlavour =>
@@ -22,15 +22,5 @@ namespace WarcraftLegacies.Source.Quests.Warsong
 
     protected override string RewardDescription =>
       "Allows Orcish units to increase their attack rate and movement speed temporarily";
-
-    protected override void OnComplete(Faction completingFaction)
-    {
-      SetPlayerTechResearched(completingFaction.Player, ResearchId, 1);
-    }
-
-    protected override void OnAdd(Faction whichFaction)
-    {
-      whichFaction.ModObjectLimit(ResearchId, Faction.UNLIMITED);
-    }
   }
 }

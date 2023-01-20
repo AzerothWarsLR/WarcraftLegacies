@@ -1,5 +1,6 @@
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
+using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.MetaBased;
 using MacroTools.ObjectiveSystem.Objectives.QuestBased;
@@ -15,6 +16,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
   /// </summary>
   public sealed class QuestKelthuzadDies : QuestData
   {
+    private readonly LegendaryHero _kelthuzad;
     private readonly ObjectiveEitherOf _objectiveEitherOf;
 
     /// <inheritdoc />
@@ -27,12 +29,13 @@ namespace WarcraftLegacies.Source.Quests.Scourge
     protected override string RewardDescription => "If Kel'thuzad dies, he revives in spectral form at Icecrown Citadel. Otherwise, he gains 1000 experience";
 
     /// <inheritdoc />
-    public QuestKelthuzadDies(QuestData questKelthuzadLich) : base("Life Beyond Death",
+    public QuestKelthuzadDies(QuestData questKelthuzadLich, LegendaryHero kelthuzad) : base("Life Beyond Death",
       "The Lich King has foretold that the human necromancer Kel'thuzad will be slain by the enemies of the Scourge. Fortunately for him, he will live on in an ethereal form.",
       @"ReplaceableTextures\CommandButtons\BTNGhostOfKelThuzad.blp")
     {
+      _kelthuzad = kelthuzad;
       _objectiveEitherOf = new ObjectiveEitherOf(
-        new ObjectiveLegendDead(LegendScourge.Kelthuzad),
+        new ObjectiveLegendDead(_kelthuzad),
         new ObjectiveCompleteQuest(questKelthuzadLich));
       AddObjective(_objectiveEitherOf);
     }
@@ -40,19 +43,17 @@ namespace WarcraftLegacies.Source.Quests.Scourge
     /// <inheritdoc />
     protected override void OnComplete(Faction whichFaction)
     {
-      if (LegendScourge.Kelthuzad == null)
-        return;
-
+      
       if (_objectiveEitherOf.ObjectiveA.Progress == QuestProgress.Complete)
       {
-        LegendScourge.Kelthuzad.UnitType = FourCC("U00M");
-        LegendScourge.Kelthuzad.PermaDies = false;
-        LegendScourge.Kelthuzad.ForceCreate(ScourgeSetup.Scourge.Player, Regions.FTSummon.Center,
+        _kelthuzad.UnitType = FourCC("U00M");
+        _kelthuzad.PermaDies = false;
+        _kelthuzad.ForceCreate(ScourgeSetup.Scourge.Player, Regions.FTSummon.Center,
           270);
       }
       else
       {
-        LegendScourge.Kelthuzad.Unit?.AddExperience(1000);
+        _kelthuzad.Unit?.AddExperience(1000);
       }
     }
   }

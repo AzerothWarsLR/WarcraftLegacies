@@ -1,5 +1,6 @@
 ﻿using MacroTools.DialogueSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
+using WarcraftLegacies.Source.Setup;
 using WarcraftLegacies.Source.Setup.FactionSetup;
 using WarcraftLegacies.Source.Setup.Legends;
 
@@ -10,7 +11,7 @@ namespace WarcraftLegacies.Source.Dialogue
     /// <summary>
     /// Sets up <see cref="KultirasDialogueSetup"/>.
     /// </summary>
-    public static void Setup()
+    public static void Setup(AllLegendSetup legendSetup)
     {
       TriggeredDialogueManager.Add(
         new TriggeredDialogue(new DialogueSequence(new MacroTools.DialogueSystem.Dialogue(
@@ -31,7 +32,7 @@ namespace WarcraftLegacies.Source.Dialogue
             FrostwolfSetup.Frostwolf
           }, new[]
           {
-            new ObjectiveLegendMeetsLegend(LegendKultiras.LegendAdmiral, LegendFrostwolf.LegendThrall)
+            new ObjectiveLegendMeetsLegend(legendSetup.Kultiras.LegendAdmiral, legendSetup.Frostwolf.Thrall)
           }));
     }
   }
