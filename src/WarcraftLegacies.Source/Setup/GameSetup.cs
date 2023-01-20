@@ -72,7 +72,7 @@ namespace WarcraftLegacies.Source.Setup
       BlightSetup.Setup(preplacedUnitSystem);
       QuestMenuSetup.Setup();
       CinematicMode.Start(59);
-      DialogueSetup.Setup(preplacedUnitSystem);
+      DialogueSetup.Setup(preplacedUnitSystem, allLegendSetup);
       DisplayIntroText.Setup(10);
       GameSettings.Setup();
       InfoQuests.Setup();
@@ -136,6 +136,7 @@ namespace WarcraftLegacies.Source.Setup
       DarkPortalControlNexusSetup.Setup(preplacedUnitSystem);
       BlackPortalControlNexusSetup.Setup(preplacedUnitSystem);
       CenariusGhost.Setup(allLegendSetup.Druids);
+      HelmOfDominationDropsWhenScourgeLeaves.Setup(artifactSetup.HelmOfDomination, allLegendSetup.Scourge.LegendLichking);
     }
   }
 }
