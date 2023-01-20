@@ -6,6 +6,7 @@ using MacroTools.UserInterface;
 using WarcraftLegacies.Source.ArtifactBehaviour;
 using WarcraftLegacies.Source.GameLogic;
 using WarcraftLegacies.Source.GameLogic.GameEnd;
+using WarcraftLegacies.Source.Mechanics.Druids;
 using WarcraftLegacies.Source.Mechanics.Frostwolf;
 using WarcraftLegacies.Source.Mechanics.Neutral;
 using WarcraftLegacies.Source.Mechanics.Quelthalas;
@@ -134,6 +135,7 @@ namespace WarcraftLegacies.Source.Setup
       PeonsStartHarvestingShips.Setup(preplacedUnitSystem);
       DarkPortalControlNexusSetup.Setup(preplacedUnitSystem);
       BlackPortalControlNexusSetup.Setup(preplacedUnitSystem);
+      CenariusGhost.Setup(allLegendSetup.Druids);
     }
   }
 }
