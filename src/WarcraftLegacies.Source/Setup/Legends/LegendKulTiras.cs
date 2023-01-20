@@ -53,7 +53,8 @@ namespace WarcraftLegacies.Source.Setup.Legends
     /// <inheritdoc />
     public void RegisterLegends()
     {
-      throw new System.NotImplementedException();
+      LegendaryHeroManager.Register();
+      CapitalManager.Register();
     }
   }
 }

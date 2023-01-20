@@ -17,7 +17,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
 
     public LegendDruids(PreplacedUnitSystem preplacedUnitSystem)
     {
-      LegendaryHeroManager.Register(LegendCenarius = new LegendaryHero("Cenarius")
+      LegendCenarius = new LegendaryHero("Cenarius")
       {
         UnitType = FourCC("Ecen"),
         PermaDies = true,
@@ -25,45 +25,50 @@ namespace WarcraftLegacies.Source.Setup.Legends
           "The Lord of the Forest, Cenarius, has fallen. The druids of the Kaldorei have lost their greatest mentor.",
         DeathSfx = "Objects\\Spawnmodels\\NightElf\\EntBirthTarget\\EntBirthTarget.mdl",
         PlayerColor = PLAYER_COLOR_CYAN,
-      });
+      };
 
-      LegendaryHeroManager.Register(LegendMalfurion = new LegendaryHero("Malfurion")
+      LegendMalfurion = new LegendaryHero("Malfurion")
       {
         UnitType = FourCC("Efur"),
         StartingArtifactItemTypeIds = new[]
         {
           Constants.ITEM_I00C_G_HANIR_THE_MOTHER_TREE
         }
-      });
+      };
 
-      LegendaryHeroManager.Register(LegendFandral = new LegendaryHero("Fandral")
+      LegendFandral = new LegendaryHero("Fandral")
       {
         UnitType = FourCC("E00K")
-      });
+      };
 
-      LegendaryHeroManager.Register(LegendUrsoc = new LegendaryHero("Ursoc")
+      LegendUrsoc = new LegendaryHero("Ursoc")
       {
         UnitType = FourCC("E00A"),
         StartingXp = 7000
-      });
+      };
 
-      CapitalManager.Register(LegendNordrassil = new Capital
+      LegendNordrassil = new Capital
       {
         Unit = preplacedUnitSystem.GetUnit(FourCC("n002")),
         Capturable = true
-      });
+      };
 
-      LegendaryHeroManager.Register(LegendTortolla = new LegendaryHero("Tortolla")
+      LegendTortolla = new LegendaryHero("Tortolla")
       {
         UnitType = FourCC("H04U"),
         StartingXp = 1800
-      });
+      };
     }
 
     /// <inheritdoc />
     public void RegisterLegends()
     {
-      throw new System.NotImplementedException();
+      LegendaryHeroManager.Register(LegendCenarius);
+      LegendaryHeroManager.Register(LegendMalfurion);
+      LegendaryHeroManager.Register(LegendFandral);
+      LegendaryHeroManager.Register(LegendUrsoc);
+      LegendaryHeroManager.Register(LegendTortolla);
+      CapitalManager.Register(LegendNordrassil);
     }
   }
 }
