@@ -6717,7 +6717,7 @@ Build Hunter's Hall
 }
 
 STRING 1122
-// Units: u01J (Graveyard), Ubertip (Tooltip - Extended)
+// Units: ugrv (Graveyard), Ubertip (Tooltip - Extended)
 {
 Resource collection and infuser of combat enhancements.|n|cfff5962dAbilities:|R Spawn Corpses |n|cfff5962dResearches:|R Forged Weaponry, Armor Plating, Chaos Infusion, Improved Cannons, Fortified Hulls
 }
@@ -86898,7 +86898,7 @@ Resource harvesting center and producer of Horde enhancements. |n|cfff5962dResea
 }
 
 STRING 14523
-// Units: ugrv (Graveyard), Ubertip (Tooltip - Extended)
+// Units: u01J (Graveyard), Ubertip (Tooltip - Extended)
 {
 Resource collection and infuser of combat enhancements.|n|cfff5962dAbilities:|R Spawn Corpses |n|cfff5962dResearches:|R Forged Weaponry, Armor Plating, Chaos Infusion, Improved Cannons, Fortified Hulls
 }
