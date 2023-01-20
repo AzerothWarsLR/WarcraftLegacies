@@ -32,9 +32,9 @@ namespace WarcraftLegacies.Source.Quests.Legion
       _legionTeleporter2 = preplacedUnitSystem.GetUnit(Constants.UNIT_N0BE_LEGION_TELEPORTERS_LEGION_OTHER, new Point(23536, -29975));
     }
 
-    protected override string RewardDescription => "With Argus finally under the Legion's control, the invasion of Azeroth can begin!";
+    protected override string RewardDescription => "With Argus finally under the Legion's control, the invasion of Azeroth can begin! It will enable Dreadlords to travel across worlds";
 
-    protected override string RewardFlavour => "Enable to research Astral Walk from the Burning Citadel, build the Unholy Reliquary and unlock the 2 teleports in Korkuun";
+    protected override string RewardFlavour => "Enable to research Astral Walk from the Burning Citadel and unlock the Portal spell in the Legion Teleporter";
 
     protected override void OnComplete(Faction completingFaction)
     {
