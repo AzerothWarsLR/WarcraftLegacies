@@ -31,11 +31,6 @@ namespace MacroTools.LegendSystem
     public bool HasCustomColor { get; private set; }
 
     /// <summary>
-    /// Fired when the <see cref="Legend"/> permanently dies, after it is removed from the game.
-    /// </summary>
-    public event EventHandler<LegendaryHero>? OnLegendPermaDeath;
-    
-    /// <summary>
     ///   Fired when the <see cref="Legend" /> permanently dies.
     /// </summary>
     public event EventHandler<LegendaryHero>? PermanentlyDied;
@@ -259,7 +254,6 @@ namespace MacroTools.LegendSystem
         OwningPlayer.GetFaction()?.Obliterate();
 
       OnPermaDeath();
-      OnLegendPermaDeath?.Invoke(this, this);
       PermanentlyDied?.Invoke(this, this);
     }
     
