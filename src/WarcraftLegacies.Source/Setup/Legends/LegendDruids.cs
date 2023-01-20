@@ -15,7 +15,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
     public static int UnittypeCenariusAlive { get; } = FourCC("Ecen");
     public static int UnittypeCenariusGhost { get; } = FourCC("E00H");
 
-    public LegendDruids Setup(PreplacedUnitSystem preplacedUnitSystem)
+    public LegendDruids(PreplacedUnitSystem preplacedUnitSystem)
     {
       LegendaryHeroManager.Register(LegendCenarius = new LegendaryHero("Cenarius")
       {

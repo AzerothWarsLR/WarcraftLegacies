@@ -13,7 +13,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
     public Capital? LegendThunderbluff { get; private set; }
     public Capital? LegendDarkspearhold { get; private set; }
 
-    public LegendFrostwolf Setup(PreplacedUnitSystem preplacedUnitSystem)
+    public LegendFrostwolf(PreplacedUnitSystem preplacedUnitSystem)
     {
       LegendCairne = new LegendaryHero("Cairne Bloodhoof")
       {

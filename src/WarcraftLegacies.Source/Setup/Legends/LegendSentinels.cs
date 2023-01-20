@@ -49,7 +49,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
     /// <summary>
     /// Sets up all Sentinel <see cref="Legend"/>s.
     /// </summary>
-    public LegendSentinels Setup(PreplacedUnitSystem preplacedUnitSystem)
+    public LegendSentinels(PreplacedUnitSystem preplacedUnitSystem)
     {
       Maiev = new LegendaryHero("Maiev Shadowsong")
       {

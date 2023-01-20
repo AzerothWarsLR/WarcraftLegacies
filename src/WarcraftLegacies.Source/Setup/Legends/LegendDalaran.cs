@@ -43,7 +43,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
     /// <summary>
     /// Sets up all Dalaran <see cref="Legend"/>s.
     /// </summary>
-    public LegendDalaran Setup(PreplacedUnitSystem preplacedUnitSystem)
+    public LegendDalaran(PreplacedUnitSystem preplacedUnitSystem)
     {
       LegendJaina = new LegendaryHero("Jaina Proudmoore")
       {

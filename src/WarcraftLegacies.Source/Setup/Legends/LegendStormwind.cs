@@ -19,7 +19,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
 
     public Capital? ConstructionSiteMagic { get; private set; }
 
-    public LegendStormwind Setup(PreplacedUnitSystem preplacedUnitSystem)
+    public LegendStormwind(PreplacedUnitSystem preplacedUnitSystem)
     {
       Varian = new LegendaryHero("Varian Wrynn")
       {

@@ -15,7 +15,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
     public Capital LegionNexusNorthrend { get; private set; }
     public Capital LegionNexusAlterac { get; private set; }
 
-    public LegendLegion Setup(PreplacedUnitSystem preplacedUnitSystem)
+    public LegendLegion(PreplacedUnitSystem preplacedUnitSystem)
     {
       LEGEND_ARCHIMONDE = new LegendaryHero("Archimonde")
       {

@@ -18,7 +18,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
     public Capital LegendSilvermoon { get; private set; }
     public Capital LegendSunwell { get; private set; }
 
-    public LegendQuelthalas Setup(PreplacedUnitSystem preplacedUnitSystem)
+    public LegendQuelthalas(PreplacedUnitSystem preplacedUnitSystem)
     {
       LegendSilvermoon = new Capital()
       {

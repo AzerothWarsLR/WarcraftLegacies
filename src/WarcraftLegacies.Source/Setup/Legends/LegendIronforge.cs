@@ -14,7 +14,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
     public Capital LegendThelsamar { get; private set; }
     public Capital LegendMenethilHarbor { get; private set; }
 
-    public LegendIronforge Setup(PreplacedUnitSystem preplacedUnitSystem)
+    public LegendIronforge(PreplacedUnitSystem preplacedUnitSystem)
     {
       LegendDagran = new LegendaryHero("Dagran Thaurissan")
       {

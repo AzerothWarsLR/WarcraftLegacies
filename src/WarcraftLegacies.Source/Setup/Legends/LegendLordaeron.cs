@@ -59,7 +59,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
     /// <summary>
     /// Sets up all Lordaeron <see cref="Legend"/>s.
     /// </summary>
-    public LegendLordaeron Setup(PreplacedUnitSystem preplacedUnitSystem, ArtifactSetup artifactSetup)
+    public LegendLordaeron(PreplacedUnitSystem preplacedUnitSystem, ArtifactSetup artifactSetup)
     {
       Terenas = new LegendaryHero("Terenas Menethil")
       {

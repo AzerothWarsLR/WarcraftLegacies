@@ -10,7 +10,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
     public LegendaryHero? Gazlowe { get; private set; }
     public Capital? KezanTradingCenter { get; private set; }
 
-    public LegendGoblin Setup(PreplacedUnitSystem preplacedUnitSystem)
+    public LegendGoblin(PreplacedUnitSystem preplacedUnitSystem)
     {
       Gallywix = new LegendaryHero("Gallywix")
       {

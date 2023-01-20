@@ -13,7 +13,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
     public Capital LegendBoralus { get; private set; }
     public LegendaryHero Flagship { get; private set; }
 
-    public LegendKultiras Setup(PreplacedUnitSystem preplacedUnitSystem)
+    public LegendKultiras(PreplacedUnitSystem preplacedUnitSystem)
     {
       LegendAdmiral = new LegendaryHero("Daelin Proudmoore")
       {

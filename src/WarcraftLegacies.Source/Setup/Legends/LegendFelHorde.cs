@@ -22,7 +22,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
     public Capital LegendKilsorrowFortress { get; private set; }
 
 
-    public LegendFelHorde Setup(PreplacedUnitSystem preplacedUnitSystem)
+    public LegendFelHorde(PreplacedUnitSystem preplacedUnitSystem)
     {
       LegendMagtheridon = new LegendaryHero("Magtheridon")
       {

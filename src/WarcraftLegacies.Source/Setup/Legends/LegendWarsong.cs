@@ -11,7 +11,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
     public LegendaryHero? ChenStormstout { get; private set; }
     public LegendaryHero? Saurfang { get; private set; }
     
-    public LegendWarsong Setup(PreplacedUnitSystem preplacedUnitSystem)
+    public LegendWarsong(PreplacedUnitSystem preplacedUnitSystem)
     {
       ChenStormstout = new LegendaryHero("Chen Stormstout")
       {

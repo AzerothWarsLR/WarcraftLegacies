@@ -52,7 +52,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
     /// Sets up <see cref="LegendScourge"/>.
     /// </summary>
     /// <param name="preplacedUnitSystem">A system for finding preplaced units on the map.</param>
-    public LegendScourge Setup(PreplacedUnitSystem preplacedUnitSystem)
+    public LegendScourge(PreplacedUnitSystem preplacedUnitSystem)
     {
       Kelthuzad = new LegendaryHero("Kel'thuzad")
       {

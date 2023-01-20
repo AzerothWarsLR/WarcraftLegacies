@@ -95,23 +95,23 @@ namespace WarcraftLegacies.Source.Setup
     /// </summary>
     public AllLegendSetup(PreplacedUnitSystem preplacedUnitSystem, ArtifactSetup artifactSetup)
     {
-      Dalaran = new LegendDalaran().Setup(preplacedUnitSystem);
-      Draenei = new LegendDraenei().Setup(preplacedUnitSystem);
-      Druids = new LegendDruids().Setup(preplacedUnitSystem);
-      FelHorde = new LegendFelHorde().Setup(preplacedUnitSystem);
-      Frostwolf = new LegendFrostwolf().Setup(preplacedUnitSystem);
-      Goblin = new LegendGoblin().Setup(preplacedUnitSystem);
-      Ironforge = new LegendIronforge().Setup(preplacedUnitSystem);
-      Kultiras = new LegendKultiras().Setup(preplacedUnitSystem);
-      Legion = new LegendLegion().Setup(preplacedUnitSystem);
-      Lordaeron = new LegendLordaeron().Setup(preplacedUnitSystem, artifactSetup);
+      Dalaran = new LegendDalaran(preplacedUnitSystem).Setup();
+      Draenei = new LegendDraenei(preplacedUnitSystem).Setup();
+      Druids = new LegendDruids(preplacedUnitSystem).Setup();
+      FelHorde = new LegendFelHorde(preplacedUnitSystem).Setup();
+      Frostwolf = new LegendFrostwolf(preplacedUnitSystem).Setup();
+      Goblin = new LegendGoblin(preplacedUnitSystem).Setup();
+      Ironforge = new LegendIronforge(preplacedUnitSystem).Setup();
+      Kultiras = new LegendKultiras(preplacedUnitSystem).Setup();
+      Legion = new LegendLegion(preplacedUnitSystem).Setup();
+      Lordaeron = new LegendLordaeron(preplacedUnitSystem, artifactSetup).Setup();
       Naga = new LegendNaga().Setup();
-      Quelthalas = new LegendQuelthalas().Setup(preplacedUnitSystem);
-      Scourge = new LegendScourge().Setup(preplacedUnitSystem);
-      Sentinels = new LegendSentinels().Setup(preplacedUnitSystem);
-      Stormwind = new LegendStormwind().Setup(preplacedUnitSystem);
-      Warsong = new LegendWarsong().Setup(preplacedUnitSystem);
-      Neutral = new LegendNeutral().Setup(preplacedUnitSystem);
+      Quelthalas = new LegendQuelthalas(preplacedUnitSystem).Setup();
+      Scourge = new LegendScourge(preplacedUnitSystem).Setup();
+      Sentinels = new LegendSentinels(preplacedUnitSystem).Setup();
+      Stormwind = new LegendStormwind(preplacedUnitSystem).Setup();
+      Warsong = new LegendWarsong(preplacedUnitSystem).Setup();
+      Neutral = new LegendNeutral(preplacedUnitSystem).Setup();
     }
   }
 }

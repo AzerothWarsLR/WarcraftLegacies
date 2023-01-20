@@ -12,7 +12,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
     public LegendaryHero LegendAltruis { get; private set; }
     public LegendaryHero LegendAkama { get; private set; }
 
-    public LegendNaga Setup()
+    public LegendNaga()
     {
 
       LegendIllidan = new LegendaryHero("Illidan")

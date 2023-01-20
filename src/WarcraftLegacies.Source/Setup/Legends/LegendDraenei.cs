@@ -19,7 +19,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
     
     public Capital? Halaar { get; private set; }
     
-    public LegendDraenei Setup(PreplacedUnitSystem preplacedUnitSystem)
+    public LegendDraenei(PreplacedUnitSystem preplacedUnitSystem)
     {
       LegendNobundo = new LegendaryHero("Nobundo")
       {
