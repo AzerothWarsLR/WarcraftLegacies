@@ -3,6 +3,7 @@ using MacroTools.DialogueSystem;
 using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
+using WarcraftLegacies.Source.Setup;
 using WarcraftLegacies.Source.Setup.FactionSetup;
 using WarcraftLegacies.Source.Setup.Legends;
 
@@ -10,7 +11,7 @@ namespace WarcraftLegacies.Source.Dialogue
 {
   public static class WarsongDialogueSetup
   {
-    public static void Setup()
+    public static void Setup(AllLegendSetup setup)
     {
       TriggeredDialogueManager.Add(new TriggeredDialogue(
         new MacroTools.DialogueSystem.Dialogue(@"Sound\Dialogue\OrcCampaign\Orc05\O05Grom26.flac",
