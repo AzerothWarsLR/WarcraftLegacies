@@ -14,12 +14,12 @@ namespace MacroTools.LegendSystem
   /// </summary>
   public sealed class LegendaryHero : Legend
   {
-    private playercolor? _playerColor;
+    private readonly playercolor? _playerColor;
     private readonly int _dummyDieswithout = FourCC("LEgn");
     private readonly int _dummyPermadies = FourCC("LEgo");
     private group? _diesWithout;
     private trigger? _castTrig;
-    private trigger? _deathTrig;
+    private trigger? _becomesRevivableTrig;
     private trigger? _ownerTrig;
     private readonly string? _name;
     private bool _permaDies;
@@ -28,7 +28,7 @@ namespace MacroTools.LegendSystem
     /// If true, the <see cref="Legend"/> has a custom <see cref="playercolor"/> rather than having its color based
     /// on its owning player.
     /// </summary>
-    public bool HasCustomColor { get; private set; }
+    public bool HasCustomColor { get; private init; }
 
     /// <summary>
     ///   Fired when the <see cref="Legend" /> permanently dies.
@@ -74,7 +74,7 @@ namespace MacroTools.LegendSystem
     public playercolor? PlayerColor
     {
       get => _playerColor;
-      set
+      init
       {
         _playerColor = value;
         HasCustomColor = true;
@@ -151,56 +151,38 @@ namespace MacroTools.LegendSystem
     ///   If all of a Legend's unit dependencies are dead or owned by hostile forces,
     ///   the Legend permanently dies upon death.
     /// </summary>
-    public void AddUnitDependency(unit u)
+    public void AddUnitDependency(unit whichUnit)
     {
       _diesWithout ??= CreateGroup();
-      GroupAddUnit(_diesWithout, u);
+      GroupAddUnit(_diesWithout, whichUnit);
       RefreshDummy();
     }
     
     private void OnDeath()
     {
-      if (GetOwningPlayer(Unit) == Player(PLAYER_NEUTRAL_AGGRESSIVE) && DeathMessage != "" &&
-          !string.IsNullOrEmpty(DeathMessage) && !IsUnitType(Unit, UNIT_TYPE_STRUCTURE))
-        DisplayTextToPlayer(GetLocalPlayer(), 0, 0, $"\n|cffffcc00LEGENDARY CREEP DEATH|r\n{DeathMessage}");
-
-      if (_permaDies || !IsUnitType(Unit, UNIT_TYPE_HERO))
-      {
-        PermanentlyKill();
+      if (!_permaDies && IsUnitType(Unit, UNIT_TYPE_HERO) && AllDependenciesAreMissing()) 
         return;
-      }
+      PermanentlyKill();
+    }
 
-      var anyOwned = false;
-      if (_diesWithout == null) return;
-      var tempGroup = CreateGroup();
-      BlzGroupAddGroupFast(_diesWithout, tempGroup);
-      while (true)
-      {
-        var u = FirstOfGroup(tempGroup);
-        if (u == null) break;
-
-        if (GetOwningPlayer(u) == GetOwningPlayer(Unit) && UnitAlive(u)) anyOwned = true;
-
-        GroupRemoveUnit(tempGroup, u);
-      }
-
-      if (anyOwned == false) PermanentlyKill();
-
-      DestroyGroup(tempGroup);
+    private bool AllDependenciesAreMissing()
+    {
+      return _diesWithout != null && !_diesWithout.Copy().EmptyToList()
+        .Any(x => GetOwningPlayer(x) == GetOwningPlayer(Unit) && UnitAlive(x));
     }
 
     /// <inheritdoc />
     protected override void OnChangeUnit()
     {
-      _deathTrig?.Destroy();
+      _becomesRevivableTrig?.Destroy();
       _castTrig?.Destroy();
       _ownerTrig?.Destroy();
 
       if (Unit == null) 
         return;
       
-      _deathTrig = CreateTrigger()
-        .RegisterUnitEvent(Unit, EVENT_UNIT_DEATH)
+      _becomesRevivableTrig = CreateTrigger()
+        .RegisterUnitEvent(Unit, EVENT_UNIT_HERO_REVIVABLE)
         .AddAction(OnDeath);
       _castTrig = CreateTrigger()
         .RegisterUnitEvent(Unit, EVENT_UNIT_SPELL_FINISH)
@@ -245,7 +227,10 @@ namespace MacroTools.LegendSystem
 
       if (string.IsNullOrEmpty(DeathMessage)) 
         return;
-      DisplayTextToPlayer(GetLocalPlayer(), 0, 0, $"\n|cffffcc00HERO SLAIN|r\n{DeathMessage}");
+      DisplayTextToPlayer(GetLocalPlayer(), 0, 0,
+        GetOwningPlayer(Unit) == Player(PLAYER_NEUTRAL_AGGRESSIVE)
+          ? $"\n|cffffcc00LEGENDARY FOE SLAIN|r\n{DeathMessage}"
+          : $"\n|cffffcc00HERO SLAIN|r\n{DeathMessage}");
     }
 
     private void PermanentlyKill()
