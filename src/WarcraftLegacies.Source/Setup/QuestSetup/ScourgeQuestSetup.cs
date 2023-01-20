@@ -9,7 +9,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
 {
   public static class ScourgeQuestSetup
   {
-    public static void Setup(PreplacedUnitSystem preplacedUnitSystem, ArtifactSetup artifactSetup)
+    public static void Setup(PreplacedUnitSystem preplacedUnitSystem, ArtifactSetup artifactSetup, AllLegendSetup allLegendSetup)
     {
       QuestSpiderWar questSpiderWar = new(Regions.Ice_Crown,
         preplacedUnitSystem.GetUnit(Constants.UNIT_N074_QUEEN_NEZAR_AZRET));

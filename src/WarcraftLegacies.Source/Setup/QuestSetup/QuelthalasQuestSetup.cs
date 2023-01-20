@@ -7,7 +7,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
 {
   public static class QuelthalasQuestSetup
   {
-    public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
+    public static void Setup(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup)
     {
       var quelthalas = QuelthalasSetup.Quelthalas;
       var newQuest = quelthalas.AddQuest(new QuestSilvermoon(Regions.SunwellAmbient,

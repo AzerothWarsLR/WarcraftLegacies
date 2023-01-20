@@ -6,7 +6,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
 {
   public static class KultirasQuestSetup
   {
-    public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
+    public static void Setup(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup)
     {
       var kultiras = KultirasSetup.Kultiras;
 

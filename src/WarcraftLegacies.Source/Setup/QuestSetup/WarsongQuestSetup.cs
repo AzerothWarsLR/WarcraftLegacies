@@ -7,7 +7,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
 {
   public static class WarsongQuestSetup
   {
-    public static void Setup(PreplacedUnitSystem preplacedUnitSystem, ArtifactSetup artifactSetup)
+    public static void Setup(PreplacedUnitSystem preplacedUnitSystem, ArtifactSetup artifactSetup, AllLegendSetup allLegendSetup)
     {
       var warsong = WarsongSetup.WarsongClan;
       warsong.StartingQuest = warsong.AddQuest(new QuestOrgrimmar(Regions.Orgrimmar));

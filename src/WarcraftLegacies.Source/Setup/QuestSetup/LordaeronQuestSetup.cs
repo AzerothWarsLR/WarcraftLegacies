@@ -12,7 +12,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
   /// </summary>
   public static class LordaeronQuestSetup
   {
-    public static void Setup(PreplacedUnitSystem preplacedUnitSystem, ArtifactSetup artifactSetup, LegendLordaeron legendLordaeron)
+    public static void Setup(PreplacedUnitSystem preplacedUnitSystem, ArtifactSetup artifactSetup, AllLegendSetup allLegendSetup)
     {
       var questStrahnbrad = new QuestStrahnbrad(Regions.StrahnbradUnlock);
       var questStratholme = new QuestStratholme(Regions.StratholmeUnlock, preplacedUnitSystem);

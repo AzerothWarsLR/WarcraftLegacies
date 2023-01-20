@@ -6,7 +6,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
 {
   public static class FrostwolfQuestSetup
   {
-    public static void Setup(PreplacedUnitSystem preplacedUnitSystem, ArtifactSetup artifactSetup)
+    public static void Setup(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup)
     {
       var frostwolf = FrostwolfSetup.Frostwolf;
       if (frostwolf != null)

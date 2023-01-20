@@ -8,7 +8,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
 {
   public static class DraeneiQuestSetup
   {
-    public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
+    public static void Setup(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup)
     {
       var draenei = DraeneiSetup.Draenei;
       if (draenei == null) 

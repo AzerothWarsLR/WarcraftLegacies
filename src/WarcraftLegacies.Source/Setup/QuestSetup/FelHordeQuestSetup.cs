@@ -5,7 +5,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
 {
   public static class FelHordeQuestSetup
   {
-    public static void Setup()
+    public static void Setup(, AllLegendSetup allLegendSetup)
     {
       var questHellfireCitadel = FelHorde.AddQuest(new QuestHellfireCitadel(Regions.HellfireUnlock));
       FelHorde.AddQuest(new QuestRebuildBlackTemple(Regions.BlackTempleBase));

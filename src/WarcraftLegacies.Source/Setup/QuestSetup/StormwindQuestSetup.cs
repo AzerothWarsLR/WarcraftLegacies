@@ -8,7 +8,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
 {
   public static class StormwindQuestSetup
   {
-    public static void Setup(PreplacedUnitSystem preplacedUnitSystem, ArtifactSetup artifactSetup)
+    public static void Setup(PreplacedUnitSystem preplacedUnitSystem, ArtifactSetup artifactSetup, AllLegendSetup allLegendSetup)
     {
       var stormwind = StormwindSetup.Stormwind;
       var newQuest =

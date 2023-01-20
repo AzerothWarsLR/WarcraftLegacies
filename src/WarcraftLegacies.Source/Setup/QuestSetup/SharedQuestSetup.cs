@@ -17,7 +17,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
     /// <summary>
     /// Sets up all shared <see cref="QuestData"/>s.
     /// </summary>
-    public static void Setup(PreplacedUnitSystem preplacedUnitSystem, ArtifactSetup artifactSetup)
+    public static void Setup(PreplacedUnitSystem preplacedUnitSystem, ArtifactSetup artifactSetup, AllLegendSetup allLegendSetup)
     {
       var tombOfSargerasQuest =
         new QuestTombOfSargeras(

@@ -12,7 +12,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
     /// <summary>
     /// Sets up <see cref="DruidsQuestSetup"/>.
     /// </summary>
-    public static void Setup(ArtifactSetup artifactSetup, LegendDruids legendDruids)
+    public static void Setup(ArtifactSetup artifactSetup, LegendDruids legendDruids, AllLegendSetup allLegendSetup)
     {
       var druids = FactionSetup.DruidsSetup.Druids;
       var newQuest = druids.AddQuest(new QuestMalfurionAwakens(Regions.MoongladeVillage, legendDruids.LegendNordrassil.Unit, artifactSetup.HornOfCenarius));

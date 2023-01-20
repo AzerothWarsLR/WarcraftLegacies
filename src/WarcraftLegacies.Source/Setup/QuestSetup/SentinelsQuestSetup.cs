@@ -8,7 +8,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
 {
   public static class SentinelsQuestSetup
   {
-    public static void Setup(ArtifactSetup artifactSetup)
+    public static void Setup(ArtifactSetup artifactSetup, AllLegendSetup allLegendSetup)
     {
       var sentinels = SentinelsSetup.Sentinels;
 
