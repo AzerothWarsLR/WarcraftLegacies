@@ -1,5 +1,5 @@
-﻿using System.Collections.Generic;
-using System.Collections.ObjectModel;
+﻿using System;
+using System.Collections.Generic;
 using static War3Api.Common;
 
 namespace MacroTools.LegendSystem
@@ -16,8 +16,11 @@ namespace MacroTools.LegendSystem
     /// </summary>
     public static void Register(Capital capital)
     {
-      if (capital.Unit != null)
-        ByUnit.Add(capital.Unit, capital);
+      if (capital.Unit == null)
+        return;
+      if (ByUnit.ContainsKey(capital.Unit))
+        throw new Exception($"Tried to register {nameof(Capital)} {capital.Name} but it is already registered.");
+      ByUnit.Add(capital.Unit, capital);
     }
 
     /// <summary>
