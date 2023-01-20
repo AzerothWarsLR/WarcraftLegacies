@@ -2161,6 +2161,12 @@ STRING 361
 Revive Sapphiron
 }
 
+STRING 362
+// Units: nmdr (Brown Elekk), Ubertip (Tooltip - Extended)
+{
+Heavy melee unit.|n|cfff5962dAbilities:|r Think Skin |n|n|cffffcc00Attacks land units.|r
+}
+
 STRING 363
 // Units: nzom (Zombie), EditorSuffix (Name - Editor Suffix)
 {
@@ -9163,12 +9169,6 @@ STRING 1528
 C
 }
 
-STRING 1529
-// Units: o030 (Fortress), Ubertip (Tooltip - Extended)
-{
-Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Peon, Executioner, Fel Death Knight, Infernal Juggernaut |n|cfff5962dAbilities:|R Spiked Barricades, Fel Energy
-}
-
 STRING 1530
 // Units: n0C9 (Temple of Tides), EditorSuffix (Name - Editor Suffix)
 {
@@ -9599,6 +9599,12 @@ STRING 1601
 // Units: U02D (Death Knight Lord), Tip (Tooltip - Basic)
 {
 Summon Teron Gorefiend
+}
+
+STRING 1602
+// Units: o030 (Fortress), Ubertip (Tooltip - Extended)
+{
+Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Peon, Executioner, Fel Death Knight, Infernal Juggernaut|n|cfff5962dResearches:|R Full Scale Escalation |n|cfff5962dAbilities:|R Spiked Barricades, Fel Energy
 }
 
 STRING 1603
@@ -10548,6 +10554,12 @@ STRING 1760
 // Units: o00G (Blademaster), Tip (Tooltip - Basic)
 {
 Train Blademaster
+}
+
+STRING 1761
+// Units: o051 (Divine Citadel), Ubertip (Tooltip - Extended)
+{
+Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Gemcrafter, Vindicator|n|cfff5962dResearches:|R Full Scale Escalation
 }
 
 STRING 1762
@@ -11704,6 +11716,12 @@ STRING 1954
 // Items: I018 (Vial of the Sunwell), Name (Name)
 {
 Vial of the Sunwell
+}
+
+STRING 1955
+// Units: o052 (Ceremonial Altar), Ubertip (Tooltip - Extended)
+{
+Training halls of light and virtue.|n|cfff5962dTrains:|R Defender, Rangari, Polybolos
 }
 
 STRING 1956
@@ -13018,6 +13036,12 @@ STRING 2174
 Sentinel Enclave
 }
 
+STRING 2175
+// Units: o058 (Altar of Light), Tip (Tooltip - Basic)
+{
+Build Altar of Light
+}
+
 STRING 2176
 // Units: h03F (Control Point Defender), EditorSuffix (Name - Editor Suffix)
 {
@@ -13328,6 +13352,12 @@ STRING 2227
 // Units: n06C (Moonhunter), Tip (Tooltip - Basic)
 {
 Train Moonhunter
+}
+
+STRING 2228
+// Units: E01J (High Shaman), Ubertip (Tooltip - Extended)
+{
+Mystical Hero, adept at healing allies and disrupting the enemies.|n|cfff5962dCan learn:|R Rejuvenation, Feral Spirit, Brilliance Aura, Moving Earth |n|n|cffffcc00Attacks land and air units.|R
 }
 
 STRING 2229
@@ -14474,6 +14504,12 @@ STRING 2419
 // Units: n04H (Fel Guard), Tip (Tooltip - Basic)
 {
 Summon Fel Guard
+}
+
+STRING 2420
+// Units: o05B (Defender), Ubertip (Tooltip - Extended)
+{
+Proud and honorable warriors of the light, training to become Paladins.|n|cfff5962dAbilities:|R Charge, Combat Experience, True Sight|R|n|cfff5962d|n|cffffcc00Attacks land units.|r
 }
 
 STRING 2421
@@ -16585,6 +16621,12 @@ STRING 2772
 Z
 }
 
+STRING 2773
+// Units: h09U (Elekk Knight), Ubertip (Tooltip - Extended)
+{
+Powerful Rider of the Exodar.|n|cfff5962dAbilities:|R Charge, Thick Skin|n |n|cff99b4d1Can only train 4.|n|cffffcc00Attacks land units and trees.|r
+}
+
 STRING 2774
 // Units: h07D (Shipyard), Ubertip (Tooltip - Extended)
 {
@@ -16595,6 +16637,12 @@ STRING 2775
 // Units: h07T (Improved Guard Tower), Hotkey (Hotkey)
 {
 Z
+}
+
+STRING 2776
+// Abilities: A0MH (Feral Spirit), Researchubertip (Tooltip - Learn - Extended)
+{
+Summons Spirit Wolves to fight the heroes enemies.|nLasts 60 seconds.|n|n|cffffcc00Level 1|r - Summons 2 Shadow Wolves. |n|cffffcc00Level 2|r - Summons 3 Shadow Wolves. |n|cffffcc00Level 3|r - Summons 4 Shadow Wolves.|n|cffffcc00Level 4|r - Summons 5 Shadow Wolves.
 }
 
 STRING 2777
@@ -49081,12 +49129,6 @@ STRING 8206
 Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Gemcrafter
 }
 
-STRING 8207
-// Units: o051 (Divine Citadel), Ubertip (Tooltip - Extended)
-{
-Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Gemcrafter, Vindicator
-}
-
 STRING 8208
 // Abilities: A0QQ (Aimed Shot), EditorSuffix (Editor Suffix)
 {
@@ -51821,12 +51863,6 @@ STRING 8665
 // Abilities: A0U0 (Master of Nature), Hotkey (Hotkey - Normal)
 {
 W
-}
-
-STRING 8666
-// Abilities: A0MH (Feral Spirit), Researchubertip (Tooltip - Learn - Extended)
-{
-Summons Spirit Wolves to fight Thrall's enemies.|nLasts 60 seconds.|n|n|cffffcc00Level 1|r - Summons 2 Shadow Wolves. |n|cffffcc00Level 2|r - Summons 3 Shadow Wolves. |n|cffffcc00Level 3|r - Summons 4 Shadow Wolves.|n|cffffcc00Level 4|r - Summons 5 Shadow Wolves.
 }
 
 STRING 8667
@@ -60552,12 +60588,6 @@ STRING 10122
 // Abilities: A0D9 (Unpack War Mill), Ubertip (Tooltip - Normal - Extended)
 {
 Consumes the Pack Kodo to build a War Mill.
-}
-
-STRING 10123
-// Units: o052 (Ceremonial Altar), Ubertip (Tooltip - Extended)
-{
-Training halls of light and virtue.|n|cfff5962dTrains:|R Paladin Initiate, Rangari, Polybolos
 }
 
 STRING 10124
@@ -106279,12 +106309,6 @@ STRING 17787
 Train Nether Ray
 }
 
-STRING 17788
-// Units: o058 (Altar of Light), Tip (Tooltip - Basic)
-{
-Build Altar of Loa
-}
-
 STRING 17789
 // Abilities: A0YU (Select Unit), Hotkey (Hotkey - Normal)
 {
@@ -106711,12 +106735,6 @@ STRING 17859
 Revive Nobundo
 }
 
-STRING 17860
-// Units: E01J (High Shaman), Ubertip (Tooltip - Extended)
-{
-Mystical Hero, adept at healing allies and disrupting the enemies.|n|cfff5962dCan learn:|R Rejuvenation, Grow a Tree, Brilliance Aura, Hurricane |n|n|cffffcc00Attacks land and air units.|R
-}
-
 STRING 17861
 // Units: E01J (High Shaman), Tip (Tooltip - Basic)
 {
@@ -106945,12 +106963,6 @@ STRING 17898
 Agile sharpshooters.|n|cfff5962dAbilities:|R Ensnare|n|cffffcc00Attacks land and air units.|n
 }
 
-STRING 17899
-// Units: o05B (Defender), Ubertip (Tooltip - Extended)
-{
-Proud and honorable warriors of the light, training to become Paladins.|n|cfff5962dAbilities:|R Charge, Combat Experience|R|n|cfff5962d|n|cffffcc00Attacks land units.|r
-}
-
 STRING 17900
 // Units: o05B (Defender), Name (Name)
 {
@@ -106979,12 +106991,6 @@ STRING 17904
 // Units: e01K (Polybolos), Ubertip (Tooltip - Extended)
 {
 Long-range percision siege weaponry.|n|n|cff99b4d1Can only build 3.|r|n|cffffcc00Attacks land units and trees.|r
-}
-
-STRING 17905
-// Units: h09U (Elekk Knight), Ubertip (Tooltip - Extended)
-{
-Powerful Rider of the Exodar.|n|cfff5962dAbilities:|R Charge|n |n|cff99b4d1Can only train 4.|n|cffffcc00Attacks land units and trees.|r
 }
 
 STRING 17906
