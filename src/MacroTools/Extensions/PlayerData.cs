@@ -24,7 +24,7 @@ namespace MacroTools.Extensions
     /// <summary>
     /// Fired when the player changes their <see cref="Faction"/>.
     /// </summary>
-    public event EventHandler<PlayerFactionChangeEventArgs> ChangedFaction;
+    public event EventHandler<PlayerFactionChangeEventArgs>? ChangedFaction;
     
     private static readonly Dictionary<int, PlayerData> ById = new();
     private readonly Dictionary<int, int> _objectLevels = new();
