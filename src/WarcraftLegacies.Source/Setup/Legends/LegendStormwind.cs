@@ -3,20 +3,19 @@ using MacroTools.Extensions;
 using MacroTools.LegendSystem;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
+#pragma warning disable CS1591
 
 namespace WarcraftLegacies.Source.Setup.Legends
 {
   public sealed class LegendStormwind : IRegistersLegends
   {
     public LegendaryHero Varian { get; }
-    public LegendaryHero khadgar { get; }
+    public LegendaryHero Khadgar { get; }
     public LegendaryHero Galen { get; }
     public LegendaryHero Bolvar { get; }
     public Capital Stormwindkeep { get; }
     public Capital Darkshire { get; }
-    
     public Capital ConstructionSiteMartial { get; }
-
     public Capital ConstructionSiteMagic { get; }
 
     public LegendStormwind(PreplacedUnitSystem preplacedUnitSystem)
@@ -45,7 +44,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
         UnitType = FourCC("H017")
       };
 
-      khadgar = new LegendaryHero("Khadgar")
+      Khadgar = new LegendaryHero("Khadgar")
       {
         UnitType = FourCC("H05Y"),
         StartingXp = 7000
@@ -87,7 +86,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
     public void RegisterLegends()
     {
       LegendaryHeroManager.Register(Varian);
-      LegendaryHeroManager.Register(khadgar);
+      LegendaryHeroManager.Register(Khadgar);
       LegendaryHeroManager.Register(Galen);
       LegendaryHeroManager.Register(Bolvar);
       CapitalManager.Register(Stormwindkeep);

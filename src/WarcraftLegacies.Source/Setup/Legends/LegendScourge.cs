@@ -5,6 +5,7 @@ using WarcraftLegacies.Source.Setup.FactionSetup;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 using static War3Api.Blizzard;
+#pragma warning disable CS1591
 
 namespace WarcraftLegacies.Source.Setup.Legends
 {
@@ -13,34 +14,11 @@ namespace WarcraftLegacies.Source.Setup.Legends
   /// </summary>
   public sealed class LegendScourge : IRegistersLegends
   {
-    /// <summary>
-    /// Leader of the Cult of the Damned.
-    /// </summary>
     public LegendaryHero Kelthuzad { get; }
-    
-    /// <summary>
-    /// Fallen king of the Nerubians.
-    /// </summary>
     public LegendaryHero Anubarak { get; }
-    
-    /// <summary>
-    /// Ruler of Stratholme after it's taken over by the Scourge.
-    /// </summary>
     public LegendaryHero Rivendare { get; }
-    
-    /// <summary>
-    /// The first human Death Knight, and Ner'zhul's champion.
-    /// </summary>
     public LegendaryHero Arthas { get; }
-    
-    /// <summary>
-    /// Psychic ruler of the Scourge.
-    /// </summary>
     public Capital LegendLichking { get; }
-    
-    /// <summary>
-    /// A Vrykul stronghold.
-    /// </summary>
     public Capital LegendUtgarde { get; }
 
     /// <summary>

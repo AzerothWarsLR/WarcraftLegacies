@@ -3,6 +3,7 @@ using MacroTools.Extensions;
 using MacroTools.LegendSystem;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
+#pragma warning disable CS1591
 
 namespace WarcraftLegacies.Source.Setup.Legends
 {
@@ -11,49 +12,14 @@ namespace WarcraftLegacies.Source.Setup.Legends
   /// </summary>
   public sealed class LegendLordaeron : IRegistersLegends
   {
-    /// <summary>
-    /// King of Lordaeron.
-    /// </summary>
     public LegendaryHero Terenas { get; }
-    
-    /// <summary>
-    /// Leader of the Silver Hand.
-    /// </summary>
     public LegendaryHero Uther { get; }
-    
-    /// <summary>
-    /// Prince of Lordaeron.
-    /// </summary>
     public LegendaryHero Arthas { get; }
-    
-    /// <summary>
-    /// Legendary wielder of Ashbringer.
-    /// </summary>
     public LegendaryHero Mograine { get; }
-    
-    /// <summary>
-    /// Xenophobic human general.
-    /// </summary>
     public LegendaryHero Garithos { get; }
-    
-    /// <summary>
-    /// High Commander of the Scarlet Crusade.
-    /// </summary>
     public LegendaryHero Goodchild { get; }
-    
-    /// <summary>
-    /// Capital of Lordaeron.
-    /// </summary>
     public Capital CapitalPalace { get; }
-    
-    /// <summary>
-    /// The place Arthas culls in the Culling of Stratholme campaign mission.
-    /// </summary>
     public Capital Stratholme { get; }
-    
-    /// <summary>
-    /// A well fortified city.
-    /// </summary>
     public Capital TyrsHand { get; }
 
     /// <summary>

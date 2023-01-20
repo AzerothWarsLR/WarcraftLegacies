@@ -2,6 +2,7 @@
 using MacroTools.LegendSystem;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
+#pragma warning disable CS1591
 
 namespace WarcraftLegacies.Source.Setup.Legends
 {
@@ -10,34 +11,16 @@ namespace WarcraftLegacies.Source.Setup.Legends
   /// </summary>
   public sealed class LegendDalaran : IRegistersLegends
   {
-    /// <summary>
-    /// Archmage of Dalaran.
-    /// </summary>
     public LegendaryHero LegendAntonidas { get; }
     
-    /// <summary>
-    /// Former Guardian of Tirisfal.
-    /// </summary>
     public LegendaryHero LegendMedivh { get; }
     
-    /// <summary>
-    /// Antonidas' best student.
-    /// </summary>
     public LegendaryHero LegendJaina { get; }
     
-    /// <summary>
-    /// Powerful Blue Dragon and sorcerer.
-    /// </summary>
     public LegendaryHero LegendKalecgos { get; }
     
-    /// <summary>
-    /// Aspect of the Blue Dragonflight.
-    /// </summary>
     public LegendaryHero LegendMalygos { get; }
     
-    /// <summary>
-    /// Dalaran city capital.l
-    /// </summary>
     public Capital LegendDalaranCapital { get; }
 
     /// <summary>
