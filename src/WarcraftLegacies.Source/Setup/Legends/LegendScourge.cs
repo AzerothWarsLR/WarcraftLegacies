@@ -42,11 +42,6 @@ namespace WarcraftLegacies.Source.Setup.Legends
     /// A Vrykul stronghold.
     /// </summary>
     public Capital? LegendUtgarde { get; }
-    
-    /// <summary>
-    /// Mobile Scourge Necropolis.
-    /// </summary>
-    public Capital? Naxxramas { get; private set; }
 
     /// <summary>
     /// Sets up <see cref="LegendScourge"/>.
