@@ -13,12 +13,12 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       warsong.StartingQuest = warsong.AddQuest(new QuestOrgrimmar(Regions.Orgrimmar));
       warsong.AddQuest(new QuestCrossroads(Regions.Crossroads, preplacedUnitSystem));
       warsong.AddQuest(new QuestChenStormstout(preplacedUnitSystem.GetUnit(FourCC("Nsjs"))));
-      warsong.AddQuest(new QuestFountainOfBlood());
-      warsong.AddQuest(new QuestWarsongKillDruids());
-      warsong.AddQuest(new QuestMoreWyverns());
+      warsong.AddQuest(new QuestFountainOfBlood(allLegendSetup.Neutral.FountainOfBlood));
+      warsong.AddQuest(new QuestWarsongKillDruids(allLegendSetup.Druids.LegendNordrassil, allLegendSetup.Warsong.GromHellscream));
+      warsong.AddQuest(new QuestMoreWyverns(allLegendSetup.Sentinels.Feathermoon, allLegendSetup.Sentinels.Auberdine));
       warsong.AddQuest(new QuestWarsongHold());
-      warsong.AddQuest(new QuestJergosh());
-      warsong.AddQuest(new QuestScepterOfTheQueenWarsong(Regions.TheAthenaeum, artifactSetup.ScepterOfTheQueen));
+      warsong.AddQuest(new QuestJergosh(allLegendSetup.Warsong.GromHellscream));
+      warsong.AddQuest(new QuestScepterOfTheQueenWarsong(Regions.TheAthenaeum, artifactSetup.ScepterOfTheQueen, allLegendSetup.Sentinels.Feathermoon));
     }
   }
 }

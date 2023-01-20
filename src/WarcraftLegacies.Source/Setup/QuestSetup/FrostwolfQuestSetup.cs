@@ -14,9 +14,9 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
         frostwolf.AddQuest(new QuestThunderBluff(preplacedUnitSystem, Regions.ThunderBluff));
         frostwolf.AddQuest(new QuestStonemaul(preplacedUnitSystem, Regions.StonemaulKeep));
         frostwolf.AddQuest(new QuestDarkspear());
-        frostwolf.AddQuest(new QuestDrektharsSpellbook());
-        frostwolf.AddQuest(new QuestFreeNerzhul());
-        frostwolf.AddQuest(new QuestWorldShaman());
+        frostwolf.AddQuest(new QuestDrektharsSpellbook(allLegendSetup.Druids.LegendNordrassil, allLegendSetup.Frostwolf.LegendThrall));
+        frostwolf.AddQuest(new QuestFreeNerzhul(allLegendSetup.Scourge.LegendLichking, allLegendSetup.Frostwolf.LegendThrall));
+        frostwolf.AddQuest(new QuestWorldShaman(allLegendSetup.Frostwolf.LegendThrall));
       }
     }
   }

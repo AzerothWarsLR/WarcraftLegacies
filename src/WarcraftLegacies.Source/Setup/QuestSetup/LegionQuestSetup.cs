@@ -13,7 +13,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       LegionSetup.Legion.StartingQuest = newQuest;
       LegionSetup.Legion.AddQuest(new QuestEmbassy(Regions.DrakUnlock));
       LegionSetup.Legion.AddQuest(new QuestAlteracBase(Regions.AlteracAmbient));
-      LegionSetup.Legion.AddQuest(new QuestLegionCaptureSunwell());
+      LegionSetup.Legion.AddQuest(new QuestLegionCaptureSunwell(allLegendSetup.Quelthalas.LegendSunwell));
       LegionSetup.Legion.AddQuest(new QuestLegionKillLordaeron(
         new[]
         {
@@ -22,7 +22,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       //Misc
       LegionSetup.Legion.AddQuest(new QuestSummonLegion(Regions.TwistingNether,
         preplacedUnitSystem.GetUnit(Constants.UNIT_N03C_DEMON_PORTAL_NETHER)));
-      LegionSetup.Legion.AddQuest(new QuestConsumeTree());
+      LegionSetup.Legion.AddQuest(new QuestConsumeTree(allLegendSetup.Legion.LEGEND_ARCHIMONDE));
     }
   }
 }

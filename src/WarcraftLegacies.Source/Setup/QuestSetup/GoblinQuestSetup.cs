@@ -12,7 +12,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       goblin.StartingQuest = goblin.AddQuest(new QuestBusinessExpansion());
       goblin.AddQuest(new QuestExplosiveEngineering());
       goblin.AddQuest(new QuestWesternExpansion(new [] { allLegendSetup.Sentinels.Auberdine, allLegendSetup.Sentinels.Feathermoon }));
-      goblin.AddQuest(new QuestLumberMarket());
+      goblin.AddQuest(new QuestLumberMarket(allLegendSetup.Druids.LegendNordrassil));
       goblin.AddQuest(new QuestGoblinEmpire());
     }
   }

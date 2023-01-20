@@ -13,9 +13,9 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
     {
       QuestSpiderWar questSpiderWar = new(Regions.Ice_Crown,
         preplacedUnitSystem.GetUnit(Constants.UNIT_N074_QUEEN_NEZAR_AZRET));
-      QuestKelthuzadLich questKelthuzadLich = new();
-      QuestKelthuzadDies questKelthuzadDies = new(questKelthuzadLich);
-      QuestDrakUnlock questDrakUnlock = new(Regions.DrakUnlock);
+      QuestKelthuzadLich questKelthuzadLich = new(allLegendSetup.Quelthalas.LegendSunwell, allLegendSetup.Scourge.Kelthuzad);
+      QuestKelthuzadDies questKelthuzadDies = new(questKelthuzadLich, allLegendSetup.Scourge.Kelthuzad);
+      QuestDrakUnlock questDrakUnlock = new(Regions.DrakUnlock, allLegendSetup.Neutral.DraktharonKeep);
 
       var plagueParameters = new PlagueParameters();
       plagueParameters.PlagueRects = new List<Rectangle>
@@ -47,10 +47,11 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
 
       QuestPlague questPlague = new(plagueParameters, preplacedUnitSystem);
 
-      QuestSapphiron questSapphiron = new(preplacedUnitSystem.GetUnit(Constants.UNIT_UBDR_SAPPHIRON_CREEP));
-      QuestCorruptArthas questCorruptArthas = new();
+      QuestSapphiron questSapphiron = new(preplacedUnitSystem.GetUnit(Constants.UNIT_UBDR_SAPPHIRON_CREEP), allLegendSetup.Scourge.Kelthuzad);
+      QuestCorruptArthas questCorruptArthas = new(allLegendSetup.Lordaeron.Stratholme, allLegendSetup.Lordaeron.Arthas);
       QuestLichKingArthas questLichKingArthas =
-        new(preplacedUnitSystem.GetUnit(Constants.UNIT_H00O_UTGARDE_KEEP_SCOURGE_OTHER), artifactSetup.HelmOfDomination);
+        new(preplacedUnitSystem.GetUnit(Constants.UNIT_H00O_UTGARDE_KEEP_SCOURGE_OTHER), artifactSetup.HelmOfDomination,
+          allLegendSetup.Scourge.Arthas, allLegendSetup.Scourge.LegendLichking);
 
       //Setup
       ScourgeSetup.Scourge.AddQuest(questSpiderWar);
