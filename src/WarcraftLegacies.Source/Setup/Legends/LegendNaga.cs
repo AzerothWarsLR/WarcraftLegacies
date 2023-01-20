@@ -3,16 +3,16 @@ using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup.Legends
 {
-  public static class LegendNaga
+  public sealed class LegendNaga
   {
-    public static LegendaryHero LegendIllidan { get; private set; }
-    public static LegendaryHero LegendVashj { get; private set; }
-    public static LegendaryHero LegendNajentus { get; private set; }
-    public static LegendaryHero LegendAzshara { get; private set; }
-    public static LegendaryHero LegendAltruis { get; private set; }
-    public static LegendaryHero LegendAkama { get; private set; }
+    public LegendaryHero LegendIllidan { get; private set; }
+    public LegendaryHero LegendVashj { get; private set; }
+    public LegendaryHero LegendNajentus { get; private set; }
+    public LegendaryHero LegendAzshara { get; private set; }
+    public LegendaryHero LegendAltruis { get; private set; }
+    public LegendaryHero LegendAkama { get; private set; }
 
-    public static void Setup()
+    public LegendNaga Setup()
     {
 
       LegendIllidan = new LegendaryHero("Illidan")

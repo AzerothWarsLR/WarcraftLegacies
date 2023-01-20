@@ -5,24 +5,24 @@ using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup.Legends
 {
-  public static class LegendFelHorde
+  public sealed class LegendFelHorde
   {
-    public static LegendaryHero LegendMagtheridon { get; private set; }
-    public static LegendaryHero LegendZuluhed { get; private set; }
-    public static LegendaryHero LegendChogall { get; private set; }
-    public static LegendaryHero LegendNekrosh { get; private set; }
-    public static LegendaryHero LegendRend { get; private set; }
-    public static LegendaryHero LegendTeron { get; private set; }
-    public static LegendaryHero LegendKargath { get; private set; }
-    public static LegendaryHero Gruul { get; private set; }
+    public LegendaryHero LegendMagtheridon { get; private set; }
+    public LegendaryHero LegendZuluhed { get; private set; }
+    public LegendaryHero LegendChogall { get; private set; }
+    public LegendaryHero LegendNekrosh { get; private set; }
+    public LegendaryHero LegendRend { get; private set; }
+    public LegendaryHero LegendTeron { get; private set; }
+    public LegendaryHero LegendKargath { get; private set; }
+    public LegendaryHero Gruul { get; private set; }
 
-    public static Capital LegendBlackrockspire { get; private set; }
-    public static Capital LegendBlacktemple { get; private set; }
-    public static Capital LegendHellfirecitadel { get; private set; }
-    public static Capital LegendKilsorrowFortress { get; private set; }
+    public Capital LegendBlackrockspire { get; private set; }
+    public Capital LegendBlacktemple { get; private set; }
+    public Capital LegendHellfirecitadel { get; private set; }
+    public Capital LegendKilsorrowFortress { get; private set; }
 
 
-    public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
+    public LegendFelHorde Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
       LegendMagtheridon = new LegendaryHero("Magtheridon")
       {

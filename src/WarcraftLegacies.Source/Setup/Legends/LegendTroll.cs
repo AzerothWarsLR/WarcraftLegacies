@@ -3,11 +3,11 @@ using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup.Legends
 {
-  public static class LegendTroll
+  public sealed class LegendTroll
   {
-    public static LegendaryHero LEGEND_PRIEST { get; private set; }
-    public static LegendaryHero LEGEND_RASTAKHAN { get; private set; }
-    public static LegendaryHero LEGEND_HAKKAR { get; private set; }
+    public LegendaryHero LEGEND_PRIEST { get; private set; }
+    public LegendaryHero LEGEND_RASTAKHAN { get; private set; }
+    public LegendaryHero LEGEND_HAKKAR { get; private set; }
 
     public static void Setup()
     {

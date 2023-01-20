@@ -5,16 +5,16 @@ using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup.Legends
 {
-  public static class LegendIronforge
+  public sealed class LegendIronforge
   {
-    public static LegendaryHero LegendDagran { get; private set; }
-    public static LegendaryHero LegendFalstad { get; private set; }
-    public static LegendaryHero LegendMagni { get; private set; }
-    public static Capital LegendGreatforge { get; private set; }
-    public static Capital LegendThelsamar { get; private set; }
-    public static Capital LegendMenethilHarbor { get; private set; }
+    public LegendaryHero LegendDagran { get; private set; }
+    public LegendaryHero LegendFalstad { get; private set; }
+    public LegendaryHero LegendMagni { get; private set; }
+    public Capital LegendGreatforge { get; private set; }
+    public Capital LegendThelsamar { get; private set; }
+    public Capital LegendMenethilHarbor { get; private set; }
 
-    public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
+    public LegendIronforge Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
       LegendDagran = new LegendaryHero("Dagran Thaurissan")
       {

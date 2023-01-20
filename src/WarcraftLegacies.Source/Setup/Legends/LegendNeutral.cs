@@ -4,29 +4,29 @@ using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup.Legends
 {
-  public static class LegendNeutral
+  public sealed class LegendNeutral
   {
-    public static LegendaryHero Ragnaros { get; private set; }
-    public static Capital Auchindoun { get; private set; }
-    public static Capital DraktharonKeep { get; private set; }
-    public static Capital Oshugun { get; private set; }
-    public static Capital Jinthaalor { get; private set; }
-    public static Capital ShrineOfUlatek { get; private set; }
-    public static Capital Seradane { get; private set; }
-    public static Capital Zulgurub { get; private set; }
-    public static Capital Dazaralor { get; private set; }
-    public static Capital Gundrak { get; private set; }
-    public static Capital DuskwoodGraveyard { get; private set; }
-    public static Capital GrimBatol { get; private set; }
-    public static Capital Ethelrethor { get; private set; }
-    public static Capital TheNexus { get; private set; }
-    public static Capital Karazhan { get; private set; }
-    public static Capital Zulfarrak { get; private set; }
-    public static Capital FountainOfBlood { get; private set; }
-    public static LegendaryHero Vaelastrasz { get; private set; }
-    public static Capital Caerdarrow { get; private set; }
-    public static Capital Shaladrassil { get; private set; }
-    public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
+    public LegendaryHero Ragnaros { get; private set; }
+    public Capital Auchindoun { get; private set; }
+    public Capital DraktharonKeep { get; private set; }
+    public Capital Oshugun { get; private set; }
+    public Capital Jinthaalor { get; private set; }
+    public Capital ShrineOfUlatek { get; private set; }
+    public Capital Seradane { get; private set; }
+    public Capital Zulgurub { get; private set; }
+    public Capital Dazaralor { get; private set; }
+    public Capital Gundrak { get; private set; }
+    public Capital DuskwoodGraveyard { get; private set; }
+    public Capital GrimBatol { get; private set; }
+    public Capital Ethelrethor { get; private set; }
+    public Capital TheNexus { get; private set; }
+    public Capital Karazhan { get; private set; }
+    public Capital Zulfarrak { get; private set; }
+    public Capital FountainOfBlood { get; private set; }
+    public LegendaryHero Vaelastrasz { get; private set; }
+    public Capital Caerdarrow { get; private set; }
+    public Capital Shaladrassil { get; private set; }
+    public LegendNeutral Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
       Ragnaros = new LegendaryHero("Ragnaros")
       {

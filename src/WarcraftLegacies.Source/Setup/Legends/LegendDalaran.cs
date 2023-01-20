@@ -8,42 +8,42 @@ namespace WarcraftLegacies.Source.Setup.Legends
   /// <summary>
   /// Responsible for setting up and storing all Dalaran <see cref="Legend"/>s.
   /// </summary>
-  public static class LegendDalaran
+  public sealed class LegendDalaran
   {
     /// <summary>
     /// Archmage of Dalaran.
     /// </summary>
-    public static LegendaryHero? LegendAntonidas { get; private set; }
+    public LegendaryHero? LegendAntonidas { get; private set; }
     
     /// <summary>
     /// Former Guardian of Tirisfal.
     /// </summary>
-    public static LegendaryHero? LegendMedivh { get; private set; }
+    public LegendaryHero? LegendMedivh { get; private set; }
     
     /// <summary>
     /// Antonidas' best student.
     /// </summary>
-    public static LegendaryHero? LegendJaina { get; private set; }
+    public LegendaryHero? LegendJaina { get; private set; }
     
     /// <summary>
     /// Powerful Blue Dragon and sorcerer.
     /// </summary>
-    public static LegendaryHero? LegendKalecgos { get; private set; }
+    public LegendaryHero? LegendKalecgos { get; private set; }
     
     /// <summary>
     /// Aspect of the Blue Dragonflight.
     /// </summary>
-    public static LegendaryHero? LegendMalygos { get; private set; }
+    public LegendaryHero? LegendMalygos { get; private set; }
     
     /// <summary>
     /// Dalaran city capital.l
     /// </summary>
-    public static Capital? LegendDalaranCapital { get; private set; }
+    public Capital? LegendDalaranCapital { get; private set; }
 
     /// <summary>
     /// Sets up all Dalaran <see cref="Legend"/>s.
     /// </summary>
-    public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
+    public LegendDalaran Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
       LegendJaina = new LegendaryHero("Jaina Proudmoore")
       {

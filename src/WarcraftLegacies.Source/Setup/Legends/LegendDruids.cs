@@ -4,18 +4,18 @@ using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup.Legends
 {
-  public static class LegendDruids
+  public sealed class LegendDruids
   {
-    public static LegendaryHero LegendCenarius { get; private set; }
-    public static LegendaryHero LegendMalfurion { get; private set; }
-    public static LegendaryHero LegendFandral { get; private set; }
-    public static LegendaryHero LegendUrsoc { get; private set; }
-    public static LegendaryHero LegendTortolla { get; private set; }
-    public static Capital LegendNordrassil { get; private set; }
+    public LegendaryHero LegendCenarius { get; private set; }
+    public LegendaryHero LegendMalfurion { get; private set; }
+    public LegendaryHero LegendFandral { get; private set; }
+    public LegendaryHero LegendUrsoc { get; private set; }
+    public LegendaryHero LegendTortolla { get; private set; }
+    public Capital LegendNordrassil { get; private set; }
     public static int UnittypeCenariusAlive { get; } = FourCC("Ecen");
     public static int UnittypeCenariusGhost { get; } = FourCC("E00H");
 
-    public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
+    public LegendDruids Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
       LegendaryHeroManager.Register(LegendCenarius = new LegendaryHero("Cenarius")
       {

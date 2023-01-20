@@ -3,15 +3,15 @@ using MacroTools.LegendSystem;
 
 namespace WarcraftLegacies.Source.Setup.Legends
 {
-  public static class LegendWarsong
+  public sealed class LegendWarsong
   {
-    public static LegendaryHero? GromHellscream { get; private set; }
-    public static Capital? StonemaulKeep { get; private set; }
-    public static Capital? Orgrimmar { get; private set; }
-    public static LegendaryHero? ChenStormstout { get; private set; }
-    public static LegendaryHero? Saurfang { get; private set; }
+    public LegendaryHero? GromHellscream { get; private set; }
+    public Capital? StonemaulKeep { get; private set; }
+    public Capital? Orgrimmar { get; private set; }
+    public LegendaryHero? ChenStormstout { get; private set; }
+    public LegendaryHero? Saurfang { get; private set; }
     
-    public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
+    public LegendWarsong Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
       ChenStormstout = new LegendaryHero("Chen Stormstout")
       {

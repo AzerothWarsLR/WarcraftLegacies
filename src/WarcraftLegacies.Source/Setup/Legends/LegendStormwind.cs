@@ -6,20 +6,20 @@ using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup.Legends
 {
-  public static class LegendStormwind
+  public sealed class LegendStormwind
   {
-    public static LegendaryHero? Varian { get; private set; }
-    public static LegendaryHero khadgar { get; private set; }
-    public static LegendaryHero Galen { get; private set; }
-    public static LegendaryHero Bolvar { get; private set; }
-    public static Capital Stormwindkeep { get; private set; }
-    public static Capital Darkshire { get; private set; }
+    public LegendaryHero? Varian { get; private set; }
+    public LegendaryHero khadgar { get; private set; }
+    public LegendaryHero Galen { get; private set; }
+    public LegendaryHero Bolvar { get; private set; }
+    public Capital Stormwindkeep { get; private set; }
+    public Capital Darkshire { get; private set; }
     
-    public static Capital? ConstructionSiteMartial { get; private set; }
+    public Capital? ConstructionSiteMartial { get; private set; }
 
-    public static Capital? ConstructionSiteMagic { get; private set; }
+    public Capital? ConstructionSiteMagic { get; private set; }
 
-    public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
+    public LegendStormwind Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
       Varian = new LegendaryHero("Varian Wrynn")
       {

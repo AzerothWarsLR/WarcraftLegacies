@@ -5,17 +5,17 @@ using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup.Legends
 {
-  public static class LegendLegion
+  public sealed class LegendLegion
   {
-    public static LegendaryHero LEGEND_ARCHIMONDE { get; private set; }
-    public static LegendaryHero LEGEND_ANETHERON { get; private set; }
-    public static LegendaryHero LEGEND_TICHONDRIUS { get; private set; }
-    public static LegendaryHero LEGEND_MALGANIS { get; private set; }
-    public static LegendaryHero LEGEND_LILIAN { get; private set; }
-    public static Capital LegionNexusNorthrend { get; private set; }
-    public static Capital LegionNexusAlterac { get; private set; }
+    public LegendaryHero LEGEND_ARCHIMONDE { get; private set; }
+    public LegendaryHero LEGEND_ANETHERON { get; private set; }
+    public LegendaryHero LEGEND_TICHONDRIUS { get; private set; }
+    public LegendaryHero LEGEND_MALGANIS { get; private set; }
+    public LegendaryHero LEGEND_LILIAN { get; private set; }
+    public Capital LegionNexusNorthrend { get; private set; }
+    public Capital LegionNexusAlterac { get; private set; }
 
-    public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
+    public LegendLegion Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
       LEGEND_ARCHIMONDE = new LegendaryHero("Archimonde")
       {

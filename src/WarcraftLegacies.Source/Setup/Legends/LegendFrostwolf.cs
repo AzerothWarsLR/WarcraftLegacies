@@ -4,16 +4,16 @@ using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup.Legends
 {
-  public static class LegendFrostwolf
+  public sealed class LegendFrostwolf
   {
-    public static LegendaryHero? LegendCairne { get; private set; }
-    public static LegendaryHero? LegendThrall { get; private set; }
-    public static LegendaryHero? LegendRexxar { get; private set; }
-    public static LegendaryHero? LegendVolJin { get; private set; }
-    public static Capital? LegendThunderbluff { get; private set; }
-    public static Capital? LegendDarkspearhold { get; private set; }
+    public LegendaryHero? LegendCairne { get; private set; }
+    public LegendaryHero? LegendThrall { get; private set; }
+    public LegendaryHero? LegendRexxar { get; private set; }
+    public LegendaryHero? LegendVolJin { get; private set; }
+    public Capital? LegendThunderbluff { get; private set; }
+    public Capital? LegendDarkspearhold { get; private set; }
 
-    public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
+    public LegendFrostwolf Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
       LegendCairne = new LegendaryHero("Cairne Bloodhoof")
       {

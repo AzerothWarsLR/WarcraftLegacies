@@ -5,10 +5,10 @@ namespace WarcraftLegacies.Source.Setup.Legends
 {
   public static class LegendDragonmaw
   {
-    public static Capital? DragonmawPort { get; private set; }
-    public static LegendaryHero? Zaela { get; private set; }
-    public static LegendaryHero? Nekrosh { get; private set; }
-    public static LegendaryHero? Gorfax { get; private set; }
+    public Capital? DragonmawPort { get; private set; }
+    public LegendaryHero? Zaela { get; private set; }
+    public LegendaryHero? Nekrosh { get; private set; }
+    public LegendaryHero? Gorfax { get; private set; }
 
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {

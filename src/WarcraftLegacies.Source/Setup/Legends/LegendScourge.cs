@@ -11,48 +11,48 @@ namespace WarcraftLegacies.Source.Setup.Legends
   /// <summary>
   /// Responsible for setting up and managing all <see cref="ScourgeSetup.Scourge"/> <see cref="Legend"/>s.
   /// </summary>
-  public static class LegendScourge
+  public sealed class LegendScourge
   {
     /// <summary>
     /// Leader of the Cult of the Damned.
     /// </summary>
-    public static LegendaryHero? Kelthuzad { get; private set; }
+    public LegendaryHero? Kelthuzad { get; private set; }
     
     /// <summary>
     /// Fallen king of the Nerubians.
     /// </summary>
-    public static LegendaryHero? Anubarak { get; private set; }
+    public LegendaryHero? Anubarak { get; private set; }
     
     /// <summary>
     /// Ruler of Stratholme after it's taken over by the Scourge.
     /// </summary>
-    public static LegendaryHero? Rivendare { get; private set; }
+    public LegendaryHero? Rivendare { get; private set; }
     
     /// <summary>
     /// The first human Death Knight, and Ner'zhul's champion.
     /// </summary>
-    public static LegendaryHero? Arthas { get; private set; }
+    public LegendaryHero? Arthas { get; private set; }
     
     /// <summary>
     /// Psychic ruler of the Scourge.
     /// </summary>
-    public static Capital? LegendLichking { get; private set; }
+    public Capital? LegendLichking { get; private set; }
     
     /// <summary>
     /// A Vrykul stronghold.
     /// </summary>
-    public static Capital? LegendUtgarde { get; private set; }
+    public Capital? LegendUtgarde { get; private set; }
     
     /// <summary>
     /// Mobile Scourge Necropolis.
     /// </summary>
-    public static Capital? Naxxramas { get; private set; }
+    public Capital? Naxxramas { get; private set; }
 
     /// <summary>
     /// Sets up <see cref="LegendScourge"/>.
     /// </summary>
     /// <param name="preplacedUnitSystem">A system for finding preplaced units on the map.</param>
-    public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
+    public LegendScourge Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
       Kelthuzad = new LegendaryHero("Kel'thuzad")
       {

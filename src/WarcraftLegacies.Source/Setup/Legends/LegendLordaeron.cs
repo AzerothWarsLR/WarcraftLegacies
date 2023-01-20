@@ -9,57 +9,57 @@ namespace WarcraftLegacies.Source.Setup.Legends
   /// <summary>
   /// Responsible for creating and storing all Lordaeron <see cref="Legend"/>s.
   /// </summary>
-  public static class LegendLordaeron
+  public sealed class LegendLordaeron
   {
     /// <summary>
     /// King of Lordaeron.
     /// </summary>
-    public static LegendaryHero? Terenas { get; private set; }
+    public LegendaryHero? Terenas { get; private set; }
     
     /// <summary>
     /// Leader of the Silver Hand.
     /// </summary>
-    public static LegendaryHero? Uther { get; private set; }
+    public LegendaryHero? Uther { get; private set; }
     
     /// <summary>
     /// Prince of Lordaeron.
     /// </summary>
-    public static LegendaryHero? Arthas { get; private set; }
+    public LegendaryHero? Arthas { get; private set; }
     
     /// <summary>
     /// Legendary wielder of Ashbringer.
     /// </summary>
-    public static LegendaryHero? Mograine { get; private set; }
+    public LegendaryHero? Mograine { get; private set; }
     
     /// <summary>
     /// Xenophobic human general.
     /// </summary>
-    public static LegendaryHero? Garithos { get; private set; }
+    public LegendaryHero? Garithos { get; private set; }
     
     /// <summary>
     /// High Commander of the Scarlet Crusade.
     /// </summary>
-    public static LegendaryHero? Goodchild { get; private set; }
+    public LegendaryHero? Goodchild { get; private set; }
     
     /// <summary>
     /// Capital of Lordaeron.
     /// </summary>
-    public static Capital? CapitalPalace { get; private set; }
+    public Capital? CapitalPalace { get; private set; }
     
     /// <summary>
     /// The place Arthas culls in the Culling of Stratholme campaign mission.
     /// </summary>
-    public static Capital? Stratholme { get; private set; }
+    public Capital? Stratholme { get; private set; }
     
     /// <summary>
     /// A well fortified city.
     /// </summary>
-    public static Capital? TyrsHand { get; private set; }
+    public Capital? TyrsHand { get; private set; }
 
     /// <summary>
     /// Sets up all Lordaeron <see cref="Legend"/>s.
     /// </summary>
-    public static void Setup(PreplacedUnitSystem preplacedUnitSystem, ArtifactSetup artifactSetup)
+    public LegendLordaeron Setup(PreplacedUnitSystem preplacedUnitSystem, ArtifactSetup artifactSetup)
     {
       Terenas = new LegendaryHero("Terenas Menethil")
       {

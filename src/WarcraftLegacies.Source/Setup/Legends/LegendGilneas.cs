@@ -7,12 +7,12 @@ namespace WarcraftLegacies.Source.Setup.Legends
   /// </summary>
   public static class LegendGilneas
   {
-    public static LegendaryHero Tess { get; private set; }
-    public static LegendaryHero Genn { get; private set; }
-    public static LegendaryHero Darius { get; private set; }
-    public static LegendaryHero Goldrinn { get; private set; }
-    public static Capital NorthshireAbbey { get; private set; }
-    public static Capital GilneasCastle { get; private set; }
+    public LegendaryHero Tess { get; private set; }
+    public LegendaryHero Genn { get; private set; }
+    public LegendaryHero Darius { get; private set; }
+    public LegendaryHero Goldrinn { get; private set; }
+    public Capital NorthshireAbbey { get; private set; }
+    public Capital GilneasCastle { get; private set; }
 
     /// <summary>
     /// Sets up <see cref="LegendGilneas"/>.

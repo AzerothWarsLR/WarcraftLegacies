@@ -7,49 +7,49 @@ namespace WarcraftLegacies.Source.Setup.Legends
   /// <summary>
   /// Responsible for setting up and storing all Sentinel <see cref="Legend"/>s.
   /// </summary>
-  public static class LegendSentinels
+  public sealed class LegendSentinels
   {
     /// <summary>
     /// Leader of the Wardens.
     /// </summary>
-    public static LegendaryHero? Maiev { get; private set; }
+    public LegendaryHero? Maiev { get; private set; }
 
     /// <summary>
     /// High Priestess of Elune.
     /// </summary>
-    public static LegendaryHero? Tyrande { get; private set; }
+    public LegendaryHero? Tyrande { get; private set; }
     
     /// <summary>
     /// Tyrande's second in command.
     /// </summary>
-    public static LegendaryHero? Shandris { get; private set; }
+    public LegendaryHero? Shandris { get; private set; }
     
     /// <summary>
     /// Night Elven Commander.
     /// </summary>
-    public static LegendaryHero? Jarod { get; private set; }
+    public LegendaryHero? Jarod { get; private set; }
     
     /// <summary>
     /// Night Elven town in Darkshore.
     /// </summary>
-    public static Capital? Auberdine { get; private set; }
+    public Capital? Auberdine { get; private set; }
     
     /// <summary>
     /// Night Elven stronghold village led by Shandris.
     /// </summary>
-    public static Capital? Feathermoon { get; private set; }
+    public Capital? Feathermoon { get; private set; }
 
     /// <summary>
     /// Where the Wardens store their worst enemies.
     /// </summary>
-    public static Capital? VaultOfTheWardens { get; private set; }
+    public Capital? VaultOfTheWardens { get; private set; }
     
-    public static Capital? BlackrookHold { get; private set; }
+    public Capital? BlackrookHold { get; private set; }
     
     /// <summary>
     /// Sets up all Sentinel <see cref="Legend"/>s.
     /// </summary>
-    public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
+    public LegendSentinels Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
       Maiev = new LegendaryHero("Maiev Shadowsong")
       {

@@ -3,14 +3,14 @@ using MacroTools.LegendSystem;
 
 namespace WarcraftLegacies.Source.Setup.Legends
 {
-  public static class LegendGoblin
+  public sealed class LegendGoblin
   {
-    public static LegendaryHero? Gallywix { get; private set; }
-    public static LegendaryHero? Noggenfogger { get; private set; }
-    public static LegendaryHero? Gazlowe { get; private set; }
-    public static Capital? KezanTradingCenter { get; private set; }
+    public LegendaryHero? Gallywix { get; private set; }
+    public LegendaryHero? Noggenfogger { get; private set; }
+    public LegendaryHero? Gazlowe { get; private set; }
+    public Capital? KezanTradingCenter { get; private set; }
 
-    public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
+    public LegendGoblin Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
       Gallywix = new LegendaryHero("Gallywix")
       {

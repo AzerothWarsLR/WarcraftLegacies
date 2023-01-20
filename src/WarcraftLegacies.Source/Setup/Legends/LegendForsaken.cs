@@ -3,11 +3,11 @@ using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup.Legends
 {
-  public static class LegendForsaken
+  public sealed class LegendForsaken
   {
-    public static LegendaryHero SylvanasUndead { get; private set; }
-    public static LegendaryHero Varimathras { get; private set; }
-    public static LegendaryHero Nathanos { get; private set; }
+    public LegendaryHero SylvanasUndead { get; private set; }
+    public LegendaryHero Varimathras { get; private set; }
+    public LegendaryHero Nathanos { get; private set; }
 
     public static void Setup()
     {

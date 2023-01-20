@@ -5,8 +5,8 @@ namespace WarcraftLegacies.Source.Setup.Legends
 {
   public static class LegendScarlet
   {
-    public static LegendaryHero LegendBrigitte { get; private set; }
-    public static LegendaryHero LEGEND_TIRION { get; private set; }
+    public LegendaryHero LegendBrigitte { get; private set; }
+    public LegendaryHero LEGEND_TIRION { get; private set; }
 
     public static void Setup()
     {

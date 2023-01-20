@@ -5,20 +5,20 @@ using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup.Legends
 {
-  public static class LegendQuelthalas
+  public sealed class LegendQuelthalas
   {
-    public static LegendaryHero LegendAnasterian { get; private set; }
-    public static LegendaryHero LegendRommath { get; private set; }
-    public static LegendaryHero LegendJennalla { get; private set; }
-    public static LegendaryHero LegendSylvanas { get; private set; }
-    public static LegendaryHero LegendKael { get; private set; }
-    public static LegendaryHero LegendLorthemar { get; private set; }
-    public static LegendaryHero LegendKiljaeden { get; private set; }
-    public static LegendaryHero LegendPathaleon { get; private set; }
-    public static Capital LegendSilvermoon { get; private set; }
-    public static Capital LegendSunwell { get; private set; }
+    public LegendaryHero LegendAnasterian { get; private set; }
+    public LegendaryHero LegendRommath { get; private set; }
+    public LegendaryHero LegendJennalla { get; private set; }
+    public LegendaryHero LegendSylvanas { get; private set; }
+    public LegendaryHero LegendKael { get; private set; }
+    public LegendaryHero LegendLorthemar { get; private set; }
+    public LegendaryHero LegendKiljaeden { get; private set; }
+    public LegendaryHero LegendPathaleon { get; private set; }
+    public Capital LegendSilvermoon { get; private set; }
+    public Capital LegendSunwell { get; private set; }
 
-    public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
+    public LegendQuelthalas Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
       LegendSilvermoon = new Capital()
       {

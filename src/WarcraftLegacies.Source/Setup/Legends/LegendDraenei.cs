@@ -6,20 +6,20 @@ using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup.Legends
 {
-  public static class LegendDraenei
+  public sealed class LegendDraenei
   {
-    public static LegendaryHero LegendVelen { get; private set; }
-    public static LegendaryHero LegendMaraad { get; private set; }
-    public static LegendaryHero LegendNobundo { get; private set; }
-    public static Capital LegendExodar { get; private set; }
-    public static Capital LegendExodarGenerator { get; private set; }
-    public static Capital? Shattrah { get; private set; }
+    public LegendaryHero LegendVelen { get; private set; }
+    public LegendaryHero LegendMaraad { get; private set; }
+    public LegendaryHero LegendNobundo { get; private set; }
+    public Capital LegendExodar { get; private set; }
+    public Capital LegendExodarGenerator { get; private set; }
+    public Capital? Shattrah { get; private set; }
     
-    public static Capital? Farahlon { get; private set; }
+    public Capital? Farahlon { get; private set; }
     
-    public static Capital? Halaar { get; private set; }
+    public Capital? Halaar { get; private set; }
     
-    public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
+    public LegendDraenei Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
       LegendNobundo = new LegendaryHero("Nobundo")
       {

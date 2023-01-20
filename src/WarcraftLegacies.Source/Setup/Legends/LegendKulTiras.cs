@@ -5,15 +5,15 @@ using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup.Legends
 {
-  public static class LegendKultiras
+  public sealed class LegendKultiras
   {
-    public static LegendaryHero LegendAdmiral { get; private set; }
-    public static LegendaryHero LegendLucille { get; private set; }
-    public static LegendaryHero LegendKatherine { get; private set; }
-    public static Capital LegendBoralus { get; private set; }
-    public static LegendaryHero Flagship { get; private set; }
+    public LegendaryHero LegendAdmiral { get; private set; }
+    public LegendaryHero LegendLucille { get; private set; }
+    public LegendaryHero LegendKatherine { get; private set; }
+    public Capital LegendBoralus { get; private set; }
+    public LegendaryHero Flagship { get; private set; }
 
-    public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
+    public LegendKultiras Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
       LegendAdmiral = new LegendaryHero("Daelin Proudmoore")
       {
