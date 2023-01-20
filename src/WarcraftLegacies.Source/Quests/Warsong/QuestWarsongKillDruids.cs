@@ -1,5 +1,6 @@
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
+using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.QuestSystem;
 using WarcraftLegacies.Source.Setup.Legends;
@@ -11,6 +12,7 @@ namespace WarcraftLegacies.Source.Quests.Warsong
   /// </summary>
   public sealed class QuestWarsongKillDruids : QuestData
   {
+    private readonly LegendaryHero _grom;
     private const int ExperienceReward = 10000;
 
     /// <inheritdoc/>
@@ -23,19 +25,18 @@ namespace WarcraftLegacies.Source.Quests.Warsong
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestWarsongKillDruids"/> class.
     /// </summary>
-    public QuestWarsongKillDruids() : base("Tear It Down",
+    public QuestWarsongKillDruids(Capital nordrassil, LegendaryHero grom) : base("Tear It Down",
       "The World Tree, Nordrassil, is the Night Elves' source of immortality. Capture it to cripple them permanently.",
       "ReplaceableTextures\\CommandButtons\\BTNFountainOfLife.blp")
     {
-      AddObjective(new ObjectiveControlCapital(LegendDruids.LegendNordrassil, false));
-      AddObjective(new ObjectiveLegendNotPermanentlyDead(LegendWarsong.GromHellscream));
+      _grom = grom;
+      AddObjective(new ObjectiveControlCapital(nordrassil, false));
+      AddObjective(new ObjectiveLegendNotPermanentlyDead(grom));
       ResearchId = Constants.UPGRADE_R08M_QUEST_COMPLETED_TEAR_IT_DOWN;
     }
 
     /// <inheritdoc/>
-    protected override void OnComplete(Faction completingFaction)
-    {
-      LegendWarsong.GromHellscream?.Unit?.AddExperience(ExperienceReward);
-    }
+    protected override void OnComplete(Faction completingFaction) => 
+      _grom.Unit?.AddExperience(ExperienceReward);
   }
 }

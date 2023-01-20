@@ -22,8 +22,7 @@ namespace WarcraftLegacies.Source.Quests.Druids
       AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(FourCC("n03U"))));
       AddObjective(new ObjectiveAnyUnitInRect(Regions.GrizzlyHills, "Grizzly Hills", true));
     }
-
-
+    
     protected override string RewardFlavour =>
       "With Northrend finally free of the Lich King's influence, the time is ripe to regrow Andrassil in the hope that it can help reclaim this barren land.";
 

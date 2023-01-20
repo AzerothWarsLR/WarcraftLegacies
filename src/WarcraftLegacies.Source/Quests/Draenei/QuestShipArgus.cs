@@ -1,5 +1,6 @@
 ﻿using MacroTools.Extensions;
 using MacroTools.FactionSystem;
+using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.QuestSystem;
 using WarcraftLegacies.Source.Setup.Legends;
@@ -20,13 +21,14 @@ namespace WarcraftLegacies.Source.Quests.Draenei
     /// </summary>
     /// <param name="outlandToArgusWaygate">Starts hidden, and gets enabled as a waygate when the quest is complete.</param>
     /// <param name="argusToOutlandWaygate">Starts hidden, and gets enabled as a waygate when the quest is complete.</param>
-    public QuestShipArgus(unit outlandToArgusWaygate, unit argusToOutlandWaygate) : base("Reconquering Tempest Keep",
+    /// <param name="velen">Needs to be brought somewhere to complete the quest.</param>
+    public QuestShipArgus(unit outlandToArgusWaygate, unit argusToOutlandWaygate, LegendaryHero velen) : base("Reconquering Tempest Keep",
       "Tempest Keep still has the power to open a portal Argus, but Velen needs to channel it",
       "ReplaceableTextures\\CommandButtons\\BTNArcaneCastle.blp")
     {
       _outlandToArgusWaygate = outlandToArgusWaygate.Show(false);
       _argusToOutlandWaygate = argusToOutlandWaygate.Show(false);
-      AddObjective(new ObjectiveChannelRect(Regions.TempestKeepSpawn, "Tempest Keep", LegendDraenei.LegendVelen, 180, 0));
+      AddObjective(new ObjectiveChannelRect(Regions.TempestKeepSpawn, "Tempest Keep", velen, 180, 0));
       Global = true;
       Progress = QuestProgress.Undiscovered;
     }

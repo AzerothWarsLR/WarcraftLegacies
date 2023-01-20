@@ -2,12 +2,12 @@ using System.Collections.Generic;
 using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
+using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
 using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.QuestSystem;
-using WarcraftLegacies.Source.Setup.Legends;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
@@ -17,11 +17,11 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
   {
     private readonly List<unit> _rescueUnits = new();
 
-    public QuestAstranaar(List<Rectangle> rescueRects) : base("Astranaar Stronghold",
+    public QuestAstranaar(List<Rectangle> rescueRects, LegendaryHero tyrande) : base("Astranaar Stronghold",
       "Darkshore is under attack by some Murloc. We should deal with them swiftly and make for the Astranaar Outpost. Clearing the Murlocs will also reestablish communication with Darnassus.",
       "ReplaceableTextures\\CommandButtons\\BTNMurloc.blp")
     {
-      AddObjective(new ObjectiveLegendReachRect(LegendSentinels.Tyrande, Regions.AstranaarUnlock,
+      AddObjective(new ObjectiveLegendReachRect(tyrande, Regions.AstranaarUnlock,
         "Astranaar Outpost"));
       AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N02U_DARKSHORE_10GOLD_MIN)));
       AddObjective(new ObjectiveExpire(1430));
@@ -54,9 +54,9 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
     /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)
     {
-      foreach (var unit in _rescueUnits) unit.Rescue(completingFaction.Player);
-      completingFaction.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_LUMBER, 200);
-      completingFaction.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, 100);
+      completingFaction.Player.RescueGroup(_rescueUnits);
+      completingFaction.Player?.AdjustPlayerState(PLAYER_STATE_RESOURCE_LUMBER, 200);
+      completingFaction.Player?.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, 100);
     }
   }
 }

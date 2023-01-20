@@ -2,6 +2,7 @@
 using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
+using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.ArtifactBased;
 using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
@@ -18,22 +19,27 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
   {
     private readonly Artifact _crownOfLordaeron;
     private readonly Artifact _crownOfStormwind;
+    private readonly LegendaryHero _varian;
     private const int RewardResearchId = Constants.UPGRADE_R01N_ARATHORIAN_LEGACY_LORDAERON_STORMWIND_QUEST;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestKingdomOfManStormwind"/> class.
     /// </summary>
-    public QuestKingdomOfManStormwind(Artifact crownOfLordaeron, Artifact crownOfStormwind) : base("Kingdom of Man",
-      "Before the First War, all of humanity was united under the banner of the Arathorian Empire. Reclaim its greatness by uniting mankind once again.",
-      "ReplaceableTextures\\CommandButtons\\BTNFireKingCrown.blp")
+    public QuestKingdomOfManStormwind(Artifact crownOfLordaeron, Artifact crownOfStormwind, LegendaryHero varian) :
+      base("Kingdom of Man",
+        "Before the First War, all of humanity was united under the banner of the Arathorian Empire. Reclaim its greatness by uniting mankind once again.",
+        "ReplaceableTextures\\CommandButtons\\BTNFireKingCrown.blp")
     {
       _crownOfLordaeron = crownOfLordaeron;
       _crownOfStormwind = crownOfStormwind;
-      AddObjective(new ObjectiveControlLegend(LegendStormwind.Varian, true));
+      _varian = varian;
+      AddObjective(new ObjectiveControlLegend(varian, true));
       AddObjective(new ObjectiveAcquireArtifact(crownOfLordaeron));
       AddObjective(new ObjectiveAcquireArtifact(crownOfStormwind));
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N010_STORMWIND_CITY_30GOLD_MIN)));
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N01G_LORDAERON_CITY_30GOLD_MIN)));
+      AddObjective(new ObjectiveControlPoint(
+        ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N010_STORMWIND_CITY_30GOLD_MIN)));
+      AddObjective(new ObjectiveControlPoint(
+        ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N01G_LORDAERON_CITY_30GOLD_MIN)));
       Global = true;
     }
 
@@ -50,15 +56,13 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
     {
       SetPlayerTechResearched(completingFaction.Player, RewardResearchId, 1);
       completingFaction.Player?.DisplayResearchAcquired(RewardResearchId, 1);
-      
-      if (LegendStormwind.Varian != null)
-      {
-        LegendStormwind.Varian.ClearUnitDependencies();
-        LegendStormwind.Varian.Unit?.AddHeroAttributes(10, 10, 0);
-      }
+
+
+      _varian.ClearUnitDependencies();
+      _varian.Unit?.AddHeroAttributes(10, 10, 0);
 
       var crownHolder = _crownOfStormwind.OwningUnit;
-      
+
       ArtifactManager.Destroy(_crownOfLordaeron);
       ArtifactManager.Destroy(_crownOfStormwind);
 

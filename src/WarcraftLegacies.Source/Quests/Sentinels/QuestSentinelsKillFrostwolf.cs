@@ -1,5 +1,6 @@
 ﻿using MacroTools.Extensions;
 using MacroTools.FactionSystem;
+using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.QuestSystem;
 using WarcraftLegacies.Source.Setup.Legends;
@@ -17,11 +18,11 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestSentinelsKillFrostwolf"/> class.
     /// </summary>
-    public QuestSentinelsKillFrostwolf() : base("Drive Them Back",
+    public QuestSentinelsKillFrostwolf(Capital thunderBluff) : base("Drive Them Back",
       "The Frostwolf Clan is beginning to seize a firm foothold within the Barrens and on the plains of Mulgore. They must be driven back.",
       "ReplaceableTextures\\CommandButtons\\BTNThrall.blp")
     {
-      AddObjective(new ObjectiveCapitalDead(LegendFrostwolf.LegendThunderbluff));
+      AddObjective(new ObjectiveCapitalDead(thunderBluff));
       ResearchId = Constants.UPGRADE_R052_QUEST_COMPLETED_DRIVE_THEM_BACK_SENTINELS;
       Required = true;
     }

@@ -3,6 +3,7 @@ using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using System.Collections.Generic;
 using MacroTools.ArtifactSystem;
+using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.ArtifactBased;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
@@ -22,14 +23,15 @@ namespace WarcraftLegacies.Source.Quests.Warsong
     /// </summary>
     /// <param name="area">Units in this area will be made invulnerable, then made hostile when the quest is completed.</param>
     /// <param name="scepterOfTheQueen">Reward for completing the quest.</param>
-    public QuestScepterOfTheQueenWarsong(Rectangle area, Artifact scepterOfTheQueen) : base("Royal Plunder",
+    /// <param name="feathermoonStronghold">Must be destroyed to complete the quest.</param>
+    public QuestScepterOfTheQueenWarsong(Rectangle area, Artifact scepterOfTheQueen, Capital feathermoonStronghold) : base("Royal Plunder",
       "Remnants of the ancient Highborne survive within the ruins of the Athenaeum. If Feathermoon Stronghold falls, it would become a simple matter to slaughter the Highborne and plunder their artifacts.",
       "ReplaceableTextures\\CommandButtons\\BTNNagaWeaponUp2.blp")
     {
       _highBourneArea = area;
       _scepterOfTheQueen = scepterOfTheQueen;
       _highBourneAreaUnits = _highBourneArea.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
-      AddObjective(new ObjectiveCapitalDead(LegendSentinels.Feathermoon));
+      AddObjective(new ObjectiveCapitalDead(feathermoonStronghold));
       AddObjective(new ObjectiveKillAllInArea(new[]{area}, "outside the Athenaeum"));
       _anyUnitInRect = new ObjectiveAnyUnitInRect(_highBourneArea, "Dire Maul", true);
       AddObjective(_anyUnitInRect);

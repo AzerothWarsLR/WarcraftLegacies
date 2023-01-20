@@ -1,6 +1,7 @@
 ﻿using MacroTools.ArtifactSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
+using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
@@ -16,22 +17,24 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
   {
     private readonly unit _terenas;
     private readonly Artifact _crownOfLordaeron;
+    private readonly LegendaryHero _arthas;
     private const int CompletionExperienceBonus = 2000;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestKingArthas"/> class.
     /// </summary>
-    public QuestKingArthas(unit terenas, Artifact crownOfLordaeron) : base("Line of Succession",
+    public QuestKingArthas(unit terenas, Artifact crownOfLordaeron, Capital capitalPalace, LegendaryHero arthas, Capital lichKing) : base("Line of Succession",
       "Arthas Menethil is the one true heir of the Kingdom of Lordaeron. The only thing standing in the way of his coronation is the world-ending threat of the Scourge.",
       "ReplaceableTextures\\CommandButtons\\BTNArthas.blp")
     {
-      AddObjective(new ObjectiveUnitAlive(LegendLordaeron.CapitalPalace.Unit));
-      AddObjective(new ObjectiveControlLegend(LegendLordaeron.Arthas, true));
-      AddObjective(new ObjectiveCapitalDead(LegendScourge.LegendLichking));
-      AddObjective(new ObjectiveLegendInRect(LegendLordaeron.Arthas, Regions.King_Arthas_crown, "King Terenas"));
+      AddObjective(new ObjectiveUnitAlive(capitalPalace.Unit));
+      AddObjective(new ObjectiveControlLegend(arthas, true));
+      AddObjective(new ObjectiveCapitalDead(lichKing));
+      AddObjective(new ObjectiveLegendInRect(arthas, Regions.King_Arthas_crown, "King Terenas"));
       ResearchId = Constants.UPGRADE_R08A_QUEST_COMPLETED_LINE_OF_SUCCESSION;
       _terenas = terenas;
       _crownOfLordaeron = crownOfLordaeron;
+      _arthas = arthas;
       Required = true;
     }
 
@@ -46,12 +49,12 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
     {
-      BlzSetUnitName(LegendLordaeron.Arthas.Unit, "King of Lordaeron");
-      BlzSetUnitName(_terenas, "King Emeritus Terenas Menethil");
-      RemoveUnit(_terenas);
-      AddHeroXP(LegendLordaeron.Arthas.Unit, CompletionExperienceBonus, true);
-      LegendLordaeron.Arthas.Unit?.AddItemSafe(_crownOfLordaeron.Item);
-      LegendLordaeron.Arthas.ClearUnitDependencies();
+      _arthas.ClearUnitDependencies();
+      _arthas.Unit?
+        .SetName("King of Lordaeron")
+        .AddExperience(CompletionExperienceBonus)
+        .AddItemSafe(_crownOfLordaeron.Item);
+      _terenas.SetName("King Emeritus Terenas Menethil");
     }
   }
 }
