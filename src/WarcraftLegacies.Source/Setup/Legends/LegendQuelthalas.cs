@@ -7,16 +7,16 @@ namespace WarcraftLegacies.Source.Setup.Legends
 {
   public sealed class LegendQuelthalas
   {
-    public LegendaryHero LegendAnasterian { get; private set; }
-    public LegendaryHero LegendRommath { get; private set; }
-    public LegendaryHero LegendJennalla { get; private set; }
-    public LegendaryHero LegendSylvanas { get; private set; }
-    public LegendaryHero LegendKael { get; private set; }
-    public LegendaryHero LegendLorthemar { get; private set; }
-    public LegendaryHero LegendKiljaeden { get; private set; }
-    public LegendaryHero LegendPathaleon { get; private set; }
-    public Capital LegendSilvermoon { get; private set; }
-    public Capital LegendSunwell { get; private set; }
+    public LegendaryHero LegendAnasterian { get; }
+    public LegendaryHero LegendRommath { get; }
+    public LegendaryHero LegendJennalla { get; }
+    public LegendaryHero LegendSylvanas { get; }
+    public LegendaryHero LegendKael { get; }
+    public LegendaryHero LegendLorthemar { get; }
+    public LegendaryHero LegendKiljaeden { get; }
+    public LegendaryHero LegendPathaleon { get; }
+    public Capital LegendSilvermoon { get; }
+    public Capital LegendSunwell { get; }
 
     public LegendQuelthalas(PreplacedUnitSystem preplacedUnitSystem)
     {

@@ -6,26 +6,26 @@ namespace WarcraftLegacies.Source.Setup.Legends
 {
   public sealed class LegendNeutral
   {
-    public LegendaryHero Ragnaros { get; private set; }
-    public Capital Auchindoun { get; private set; }
-    public Capital DraktharonKeep { get; private set; }
-    public Capital Oshugun { get; private set; }
-    public Capital Jinthaalor { get; private set; }
-    public Capital ShrineOfUlatek { get; private set; }
-    public Capital Seradane { get; private set; }
-    public Capital Zulgurub { get; private set; }
-    public Capital Dazaralor { get; private set; }
-    public Capital Gundrak { get; private set; }
-    public Capital DuskwoodGraveyard { get; private set; }
-    public Capital GrimBatol { get; private set; }
-    public Capital Ethelrethor { get; private set; }
-    public Capital TheNexus { get; private set; }
-    public Capital Karazhan { get; private set; }
-    public Capital Zulfarrak { get; private set; }
-    public Capital FountainOfBlood { get; private set; }
-    public LegendaryHero Vaelastrasz { get; private set; }
-    public Capital Caerdarrow { get; private set; }
-    public Capital Shaladrassil { get; private set; }
+    public LegendaryHero Ragnaros { get; }
+    public Capital Auchindoun { get; }
+    public Capital DraktharonKeep { get; }
+    public Capital Oshugun { get; }
+    public Capital Jinthaalor { get; }
+    public Capital ShrineOfUlatek { get; }
+    public Capital Seradane { get; }
+    public Capital Zulgurub { get; }
+    public Capital Dazaralor { get; }
+    public Capital Gundrak { get; }
+    public Capital DuskwoodGraveyard { get; }
+    public Capital GrimBatol { get; }
+    public Capital Ethelrethor { get; }
+    public Capital TheNexus { get; }
+    public Capital Karazhan { get; }
+    public Capital Zulfarrak { get; }
+    public Capital FountainOfBlood { get; }
+    public LegendaryHero Vaelastrasz { get; }
+    public Capital Caerdarrow { get; }
+    public Capital Shaladrassil { get; }
     
     public LegendNeutral(PreplacedUnitSystem preplacedUnitSystem)
     {

@@ -5,12 +5,12 @@ namespace WarcraftLegacies.Source.Setup.Legends
 {
   public sealed class LegendNaga
   {
-    public LegendaryHero LegendIllidan { get; private set; }
-    public LegendaryHero LegendVashj { get; private set; }
-    public LegendaryHero LegendNajentus { get; private set; }
-    public LegendaryHero LegendAzshara { get; private set; }
-    public LegendaryHero LegendAltruis { get; private set; }
-    public LegendaryHero LegendAkama { get; private set; }
+    public LegendaryHero LegendIllidan { get; }
+    public LegendaryHero LegendVashj { get; }
+    public LegendaryHero LegendNajentus { get; }
+    public LegendaryHero LegendAzshara { get; }
+    public LegendaryHero LegendAltruis { get; }
+    public LegendaryHero LegendAkama { get; }
 
     public LegendNaga()
     {

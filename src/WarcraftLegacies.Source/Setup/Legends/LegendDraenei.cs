@@ -8,16 +8,16 @@ namespace WarcraftLegacies.Source.Setup.Legends
 {
   public sealed class LegendDraenei
   {
-    public LegendaryHero LegendVelen { get; private set; }
-    public LegendaryHero LegendMaraad { get; private set; }
-    public LegendaryHero LegendNobundo { get; private set; }
-    public Capital LegendExodar { get; private set; }
-    public Capital LegendExodarGenerator { get; private set; }
-    public Capital? Shattrah { get; private set; }
+    public LegendaryHero LegendVelen { get; }
+    public LegendaryHero LegendMaraad { get; }
+    public LegendaryHero LegendNobundo { get; }
+    public Capital LegendExodar { get; }
+    public Capital LegendExodarGenerator { get; }
+    public Capital? Shattrah { get; }
     
-    public Capital? Farahlon { get; private set; }
+    public Capital? Farahlon { get; }
     
-    public Capital? Halaar { get; private set; }
+    public Capital? Halaar { get; }
     
     public LegendDraenei(PreplacedUnitSystem preplacedUnitSystem)
     {

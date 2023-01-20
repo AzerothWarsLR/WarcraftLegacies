@@ -7,11 +7,11 @@ namespace WarcraftLegacies.Source.Setup.Legends
 {
   public sealed class LegendLegion
   {
-    public LegendaryHero LEGEND_ARCHIMONDE { get; private set; }
-    public LegendaryHero LEGEND_ANETHERON { get; private set; }
-    public LegendaryHero LEGEND_TICHONDRIUS { get; private set; }
-    public LegendaryHero LEGEND_MALGANIS { get; private set; }
-    public LegendaryHero LEGEND_LILIAN { get; private set; }
+    public LegendaryHero LEGEND_ARCHIMONDE { get; }
+    public LegendaryHero LEGEND_ANETHERON { get; }
+    public LegendaryHero LEGEND_TICHONDRIUS { get; }
+    public LegendaryHero LEGEND_MALGANIS { get; }
+    public LegendaryHero LEGEND_LILIAN { get; }
     public Capital LegionNexusNorthrend { get; private set; }
     public Capital LegionNexusAlterac { get; private set; }
 

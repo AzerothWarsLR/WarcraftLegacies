@@ -6,12 +6,12 @@ namespace WarcraftLegacies.Source.Setup.Legends
 {
   public sealed class LegendDruids
   {
-    public LegendaryHero LegendCenarius { get; private set; }
-    public LegendaryHero LegendMalfurion { get; private set; }
-    public LegendaryHero LegendFandral { get; private set; }
-    public LegendaryHero LegendUrsoc { get; private set; }
-    public LegendaryHero LegendTortolla { get; private set; }
-    public Capital LegendNordrassil { get; private set; }
+    public LegendaryHero LegendCenarius { get; }
+    public LegendaryHero LegendMalfurion { get; }
+    public LegendaryHero LegendFandral { get; }
+    public LegendaryHero LegendUrsoc { get; }
+    public LegendaryHero LegendTortolla { get; }
+    public Capital LegendNordrassil { get; }
     public static int UnittypeCenariusAlive { get; } = FourCC("Ecen");
     public static int UnittypeCenariusGhost { get; } = FourCC("E00H");
 

@@ -7,11 +7,11 @@ namespace WarcraftLegacies.Source.Setup.Legends
 {
   public sealed class LegendKultiras
   {
-    public LegendaryHero LegendAdmiral { get; private set; }
-    public LegendaryHero LegendLucille { get; private set; }
-    public LegendaryHero LegendKatherine { get; private set; }
-    public Capital LegendBoralus { get; private set; }
-    public LegendaryHero Flagship { get; private set; }
+    public LegendaryHero LegendAdmiral { get; }
+    public LegendaryHero LegendLucille { get; }
+    public LegendaryHero LegendKatherine { get; }
+    public Capital LegendBoralus { get; }
+    public LegendaryHero Flagship { get; }
 
     public LegendKultiras(PreplacedUnitSystem preplacedUnitSystem)
     {

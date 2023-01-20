@@ -7,12 +7,12 @@ namespace WarcraftLegacies.Source.Setup.Legends
 {
   public sealed class LegendIronforge
   {
-    public LegendaryHero LegendDagran { get; private set; }
-    public LegendaryHero LegendFalstad { get; private set; }
-    public LegendaryHero LegendMagni { get; private set; }
-    public Capital LegendGreatforge { get; private set; }
-    public Capital LegendThelsamar { get; private set; }
-    public Capital LegendMenethilHarbor { get; private set; }
+    public LegendaryHero LegendDagran { get; }
+    public LegendaryHero LegendFalstad { get; }
+    public LegendaryHero LegendMagni { get; }
+    public Capital LegendGreatforge { get; }
+    public Capital LegendThelsamar { get; }
+    public Capital LegendMenethilHarbor { get; }
 
     public LegendIronforge(PreplacedUnitSystem preplacedUnitSystem)
     {

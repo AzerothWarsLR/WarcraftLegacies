@@ -8,16 +8,16 @@ namespace WarcraftLegacies.Source.Setup.Legends
 {
   public sealed class LegendStormwind
   {
-    public LegendaryHero? Varian { get; private set; }
-    public LegendaryHero khadgar { get; private set; }
-    public LegendaryHero Galen { get; private set; }
-    public LegendaryHero Bolvar { get; private set; }
-    public Capital Stormwindkeep { get; private set; }
-    public Capital Darkshire { get; private set; }
+    public LegendaryHero? Varian { get; }
+    public LegendaryHero khadgar { get; }
+    public LegendaryHero Galen { get; }
+    public LegendaryHero Bolvar { get; }
+    public Capital Stormwindkeep { get; }
+    public Capital Darkshire { get; }
     
-    public Capital? ConstructionSiteMartial { get; private set; }
+    public Capital? ConstructionSiteMartial { get; }
 
-    public Capital? ConstructionSiteMagic { get; private set; }
+    public Capital? ConstructionSiteMagic { get; }
 
     public LegendStormwind(PreplacedUnitSystem preplacedUnitSystem)
     {

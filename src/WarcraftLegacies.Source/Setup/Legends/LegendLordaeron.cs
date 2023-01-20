@@ -14,47 +14,47 @@ namespace WarcraftLegacies.Source.Setup.Legends
     /// <summary>
     /// King of Lordaeron.
     /// </summary>
-    public LegendaryHero? Terenas { get; private set; }
+    public LegendaryHero? Terenas { get; }
     
     /// <summary>
     /// Leader of the Silver Hand.
     /// </summary>
-    public LegendaryHero? Uther { get; private set; }
+    public LegendaryHero? Uther { get; }
     
     /// <summary>
     /// Prince of Lordaeron.
     /// </summary>
-    public LegendaryHero? Arthas { get; private set; }
+    public LegendaryHero? Arthas { get; }
     
     /// <summary>
     /// Legendary wielder of Ashbringer.
     /// </summary>
-    public LegendaryHero? Mograine { get; private set; }
+    public LegendaryHero? Mograine { get; }
     
     /// <summary>
     /// Xenophobic human general.
     /// </summary>
-    public LegendaryHero? Garithos { get; private set; }
+    public LegendaryHero? Garithos { get; }
     
     /// <summary>
     /// High Commander of the Scarlet Crusade.
     /// </summary>
-    public LegendaryHero? Goodchild { get; private set; }
+    public LegendaryHero? Goodchild { get; }
     
     /// <summary>
     /// Capital of Lordaeron.
     /// </summary>
-    public Capital? CapitalPalace { get; private set; }
+    public Capital? CapitalPalace { get; }
     
     /// <summary>
     /// The place Arthas culls in the Culling of Stratholme campaign mission.
     /// </summary>
-    public Capital? Stratholme { get; private set; }
+    public Capital? Stratholme { get; }
     
     /// <summary>
     /// A well fortified city.
     /// </summary>
-    public Capital? TyrsHand { get; private set; }
+    public Capital? TyrsHand { get; }
 
     /// <summary>
     /// Sets up all Lordaeron <see cref="Legend"/>s.
