@@ -55,7 +55,7 @@ namespace WarcraftLegacies.Source.Setup
       SharedFactionConfigSetup.Setup();
       PlayerSetup.Setup();
       NeutralHostileSetup.Setup();
-      AllQuestSetup.Setup(preplacedUnitSystem, artifactSetup);
+      AllQuestSetup.Setup(preplacedUnitSystem, artifactSetup, allLegendSetup);
       ObserverSetup.Setup(new[] { Player(21) });
       SpellsSetup.Setup();
       CheatSetup.Setup();

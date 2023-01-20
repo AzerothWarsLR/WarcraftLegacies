@@ -5,16 +5,16 @@ namespace WarcraftLegacies.Source.Setup
 {
   public static class AllQuestSetup
   {
-    public static void Setup(PreplacedUnitSystem preplacedUnitSystem, ArtifactSetup artifactSetup)
+    public static void Setup(PreplacedUnitSystem preplacedUnitSystem, ArtifactSetup artifactSetup, AllLegendSetup allLegendSetup)
     {
       QuelthalasQuestSetup.Setup(preplacedUnitSystem);
       DalaranQuestSetup.Setup(preplacedUnitSystem, artifactSetup);
-      DruidsQuestSetup.Setup(artifactSetup);
+      DruidsQuestSetup.Setup(artifactSetup, allLegendSetup.Druids);
       FelHordeQuestSetup.Setup();
       FrostwolfQuestSetup.Setup(preplacedUnitSystem, artifactSetup);
       IronforgeQuestSetup.Setup(preplacedUnitSystem);
       LegionQuestSetup.Setup(preplacedUnitSystem);
-      LordaeronQuestSetup.Setup(preplacedUnitSystem, artifactSetup);
+      LordaeronQuestSetup.Setup(preplacedUnitSystem, artifactSetup, allLegendSetup.Lordaeron);
       ScourgeQuestSetup.Setup(preplacedUnitSystem, artifactSetup);
       SentinelsQuestSetup.Setup(artifactSetup);
       StormwindQuestSetup.Setup(preplacedUnitSystem, artifactSetup);
