@@ -54,5 +54,11 @@ namespace WarcraftLegacies.Source.Setup.Legends
       };
       LegendaryHeroManager.Register(LegendAkama);
     }
+
+    /// <inheritdoc />
+    public void RegisterLegends()
+    {
+      throw new System.NotImplementedException();
+    }
   }
 }

@@ -55,5 +55,11 @@ namespace WarcraftLegacies.Source.Setup.Legends
       LegendaryHeroManager.Register(LEGEND_MALGANIS);
 
     }
+
+    /// <inheritdoc />
+    public void RegisterLegends()
+    {
+      throw new System.NotImplementedException();
+    }
   }
 }

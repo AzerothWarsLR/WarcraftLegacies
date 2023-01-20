@@ -51,5 +51,11 @@ namespace WarcraftLegacies.Source.Setup.Legends
       };
       LegendaryHeroManager.Register(GromHellscream);
     }
+
+    /// <inheritdoc />
+    public void RegisterLegends()
+    {
+      throw new System.NotImplementedException();
+    }
   }
 }

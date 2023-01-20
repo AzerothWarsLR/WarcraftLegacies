@@ -88,5 +88,11 @@ namespace WarcraftLegacies.Source.Setup.Legends
         .RegisterUnitEvent(Stormwindkeep.Unit, EVENT_UNIT_DEATH)
         .AddAction(() => ConstructionSiteMartial.Unit.Kill());
     }
+
+    /// <inheritdoc />
+    public void RegisterLegends()
+    {
+      throw new System.NotImplementedException();
+    }
   }
 }

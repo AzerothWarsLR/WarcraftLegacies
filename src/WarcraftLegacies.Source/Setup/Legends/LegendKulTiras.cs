@@ -49,5 +49,11 @@ namespace WarcraftLegacies.Source.Setup.Legends
       Flagship.Unit.SetInvulnerable(true);
       Flagship.Unit.Pause(true);
     }
+
+    /// <inheritdoc />
+    public void RegisterLegends()
+    {
+      throw new System.NotImplementedException();
+    }
   }
 }

@@ -59,5 +59,11 @@ namespace WarcraftLegacies.Source.Setup.Legends
         StartingXp = 1800
       });
     }
+
+    /// <inheritdoc />
+    public void RegisterLegends()
+    {
+      throw new System.NotImplementedException();
+    }
   }
 }

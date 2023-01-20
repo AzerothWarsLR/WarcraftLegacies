@@ -105,5 +105,11 @@ namespace WarcraftLegacies.Source.Setup.Legends
           LegendLichking.Unit.SetOwner(Player(bj_PLAYER_NEUTRAL_VICTIM));
       });
     }
+
+    /// <inheritdoc />
+    public void RegisterLegends()
+    {
+      throw new System.NotImplementedException();
+    }
   }
 }

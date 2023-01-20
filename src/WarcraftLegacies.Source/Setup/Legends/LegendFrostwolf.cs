@@ -61,5 +61,11 @@ namespace WarcraftLegacies.Source.Setup.Legends
       };
       LegendaryHeroManager.Register(LegendVolJin);
     }
+
+    /// <inheritdoc />
+    public void RegisterLegends()
+    {
+      throw new System.NotImplementedException();
+    }
   }
 }

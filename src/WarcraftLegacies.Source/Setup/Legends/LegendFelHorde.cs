@@ -105,5 +105,11 @@ namespace WarcraftLegacies.Source.Setup.Legends
       };
       CapitalManager.Register(LegendHellfirecitadel);
     }
+
+    /// <inheritdoc />
+    public void RegisterLegends()
+    {
+      throw new System.NotImplementedException();
+    }
   }
 }

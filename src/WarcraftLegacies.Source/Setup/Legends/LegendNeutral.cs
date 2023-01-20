@@ -173,5 +173,11 @@ namespace WarcraftLegacies.Source.Setup.Legends
       };
       CapitalManager.Register(Shaladrassil);
     }
+
+    /// <inheritdoc />
+    public void RegisterLegends()
+    {
+      throw new System.NotImplementedException();
+    }
   }
 }

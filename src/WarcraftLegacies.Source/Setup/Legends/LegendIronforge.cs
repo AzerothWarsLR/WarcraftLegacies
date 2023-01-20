@@ -60,5 +60,11 @@ namespace WarcraftLegacies.Source.Setup.Legends
       };
       CapitalManager.Register(LegendMenethilHarbor);
     }
+
+    /// <inheritdoc />
+    public void RegisterLegends()
+    {
+      throw new System.NotImplementedException();
+    }
   }
 }

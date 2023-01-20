@@ -78,5 +78,11 @@ namespace WarcraftLegacies.Source.Setup.Legends
       };
       CapitalManager.Register(Halaar);
     }
+
+    /// <inheritdoc />
+    public void RegisterLegends()
+    {
+      throw new System.NotImplementedException();
+    }
   }
 }
