@@ -32,7 +32,6 @@ namespace WarcraftLegacies.Source.Setup.Legends
         }
       };
       Varian.AddUnitDependency(preplacedUnitSystem.GetUnit(Constants.UNIT_H00X_STORMWIND_KEEP_STORMWIND_OTHER));
-      LegendaryHeroManager.Register(Varian);
 
       Galen = new LegendaryHero("Galen Trollbane")
       {
@@ -40,27 +39,23 @@ namespace WarcraftLegacies.Source.Setup.Legends
         StartingXp = 1000,
         StartingArtifactItemTypeIds = new[] { Constants.ITEM_I01O_TROL_KALAR }
       };
-      LegendaryHeroManager.Register(Galen);
 
       Bolvar = new LegendaryHero("Bolvar Fordragon")
       {
         UnitType = FourCC("H017")
       };
-      LegendaryHeroManager.Register(Bolvar);
 
       khadgar = new LegendaryHero("Khadgar")
       {
         UnitType = FourCC("H05Y"),
         StartingXp = 7000
       };
-      LegendaryHeroManager.Register(khadgar);
 
       Stormwindkeep = new Capital
       {
         Unit = preplacedUnitSystem.GetUnit(FourCC("h00X")),
         DeathMessage = "Stormwind Keep, the capitol of the nation of Stormwind, has been destroyed!"
       };
-      CapitalManager.Register(Stormwindkeep);
       Stormwindkeep.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_H070_IMPROVED_GUARD_TOWER_STORMWIND_TOWER, new Point(9530, -10941)));
       Stormwindkeep.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_H070_IMPROVED_GUARD_TOWER_STORMWIND_TOWER, new Point(10177, -10952)));
 
@@ -68,7 +63,6 @@ namespace WarcraftLegacies.Source.Setup.Legends
       {
         Unit = preplacedUnitSystem.GetUnit(FourCC("h03Y"))
       };
-      CapitalManager.Register(Darkshire);
 
       ConstructionSiteMagic = new Capital
       {
@@ -92,8 +86,14 @@ namespace WarcraftLegacies.Source.Setup.Legends
     /// <inheritdoc />
     public void RegisterLegends()
     {
-      LegendaryHeroManager.Register();
-      CapitalManager.Register();
+      LegendaryHeroManager.Register(Varian);
+      LegendaryHeroManager.Register(khadgar);
+      LegendaryHeroManager.Register(Galen);
+      LegendaryHeroManager.Register(Bolvar);
+      CapitalManager.Register(Stormwindkeep);
+      CapitalManager.Register(Darkshire);
+      CapitalManager.Register(ConstructionSiteMartial);
+      CapitalManager.Register(ConstructionSiteMagic);
     }
   }
 }

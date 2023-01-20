@@ -55,40 +55,34 @@ namespace WarcraftLegacies.Source.Setup.Legends
       {
         UnitType = FourCC("Ewrd")
       };
-      LegendaryHeroManager.Register(Maiev);
 
       Auberdine = new Capital
       {
         Unit = preplacedUnitSystem.GetUnit(FourCC("e00J"))
       };
-      CapitalManager.Register(Auberdine);
 
       Feathermoon = new Capital
       {
         Unit = preplacedUnitSystem.GetUnit(FourCC("e00M"))
       };
-      CapitalManager.Register(Feathermoon);
 
       Tyrande = new LegendaryHero("Tyrande Whisperwind")
       {
         UnitType = FourCC("Etyr"),
         PlayerColor = PLAYER_COLOR_CYAN
       };
-      LegendaryHeroManager.Register(Tyrande);
 
       Shandris = new LegendaryHero("Shandris Feathermoon")
       {
         UnitType = FourCC("E002"),
         StartingXp = 1000
       };
-      LegendaryHeroManager.Register(Shandris);
 
       Jarod = new LegendaryHero("Jarod Shadowsong")
       {
         UnitType = FourCC("O02E"),
         StartingXp = 4000
       };
-      LegendaryHeroManager.Register(Jarod);
 
       VaultOfTheWardens = new Capital
       {
@@ -104,8 +98,13 @@ namespace WarcraftLegacies.Source.Setup.Legends
     /// <inheritdoc />
     public void RegisterLegends()
     {
-      LegendaryHeroManager.Register();
-      CapitalManager.Register();
+      LegendaryHeroManager.Register(Maiev);
+      LegendaryHeroManager.Register(Tyrande);
+      LegendaryHeroManager.Register(Shandris);
+      LegendaryHeroManager.Register(Jarod);
+      CapitalManager.Register(Auberdine);
+      CapitalManager.Register(Feathermoon);
+      CapitalManager.Register(BlackrookHold);
     }
   }
 }

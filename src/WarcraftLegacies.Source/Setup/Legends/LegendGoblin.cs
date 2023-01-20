@@ -16,21 +16,18 @@ namespace WarcraftLegacies.Source.Setup.Legends
       {
         UnitType = Constants.UNIT_O04N_TRADE_PRINCE_OF_THE_BILGEWATER_CARTEL_GOBLIN
       };
-      LegendaryHeroManager.Register(Gallywix);
 
       Noggenfogger = new LegendaryHero("Noggenfogger")
       {
         UnitType = Constants.UNIT_NALC_BARON_OF_GADGETZAN_GOBLIN,
         StartingXp = 800
       };
-      LegendaryHeroManager.Register(Noggenfogger);
 
       Gazlowe = new LegendaryHero("Gazlowe")
       {
         UnitType = Constants.UNIT_NTIN_CHIEF_ENGINEER_GOBLIN,
         StartingXp = 1800
       };
-      LegendaryHeroManager.Register(Gazlowe);
 
       KezanTradingCenter = new Capital
       {
@@ -38,14 +35,15 @@ namespace WarcraftLegacies.Source.Setup.Legends
         DeathMessage = "The Trade center for the Goblin Empire has fallen."
       };
       KezanTradingCenter.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_O05I_MISSILE_BATTERY_GOBLIN_TOWER));
-      CapitalManager.Register(KezanTradingCenter);
     }
 
     /// <inheritdoc />
     public void RegisterLegends()
     {
-      LegendaryHeroManager.Register();
-      CapitalManager.Register();
+      LegendaryHeroManager.Register(Gallywix);
+      LegendaryHeroManager.Register(Noggenfogger);
+      LegendaryHeroManager.Register(Gazlowe);
+      CapitalManager.Register(KezanTradingCenter);
     }
   }
 }

@@ -22,7 +22,6 @@ namespace WarcraftLegacies.Source.Setup.Legends
           "Cairne's spirit has passed on from this world. The Tauren have already begun to revere their fallen ancestor.",
         StartingXp = 1000
       };
-      LegendaryHeroManager.Register(LegendCairne);
 
       LegendThrall = new LegendaryHero("Thrall")
       {
@@ -32,7 +31,6 @@ namespace WarcraftLegacies.Source.Setup.Legends
           Constants.ITEM_I004_THE_DOOMHAMMER
         }
       };
-      LegendaryHeroManager.Register(LegendThrall);
 
       LegendThunderbluff = new Capital
       {
@@ -40,33 +38,33 @@ namespace WarcraftLegacies.Source.Setup.Legends
         DeathMessage =
           "The mesas of Thunderbluff have been swept clean of the Tauren. The Bloodhoof are without a home."
       };
-      CapitalManager.Register(LegendThunderbluff);
 
       LegendDarkspearhold = new Capital
       {
         Unit = preplacedUnitSystem.GetUnit(FourCC("o02D"))
       };
-      CapitalManager.Register(LegendDarkspearhold);
 
       LegendRexxar = new LegendaryHero("Rexxar")
       {
         UnitType = FourCC("Orex"),
         StartingXp = 1800
       };
-      LegendaryHeroManager.Register(LegendRexxar);
 
       LegendVolJin = new LegendaryHero("Vol'jin")
       {
         UnitType = Constants.UNIT_ORKN_CHIEFTAIN_OF_THE_DARKSPEAR_TRIBE_FROSTWOLF,
       };
-      LegendaryHeroManager.Register(LegendVolJin);
     }
 
     /// <inheritdoc />
     public void RegisterLegends()
     {
-      LegendaryHeroManager.Register();
-      CapitalManager.Register();
+      LegendaryHeroManager.Register(LegendCairne);
+      LegendaryHeroManager.Register(LegendThrall);
+      LegendaryHeroManager.Register(LegendRexxar);
+      LegendaryHeroManager.Register(LegendVolJin);
+      CapitalManager.Register(LegendThunderbluff);
+      CapitalManager.Register(LegendDarkspearhold);
     }
   }
 }

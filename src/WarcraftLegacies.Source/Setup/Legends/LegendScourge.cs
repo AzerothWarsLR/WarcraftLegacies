@@ -56,34 +56,29 @@ namespace WarcraftLegacies.Source.Setup.Legends
         DeathSfx = "Abilities\\Spells\\Undead\\DeathCoil\\DeathCoilSpecialArt.mdl",
         StartingXp = 1000
       };
-      LegendaryHeroManager.Register(Kelthuzad);
 
       Anubarak = new LegendaryHero("Anub'arak")
       {
         UnitType = FourCC("Uanb")
       };
-      LegendaryHeroManager.Register(Anubarak);
 
       Rivendare = new LegendaryHero("Baron Rivendare")
       {
         UnitType = FourCC("U00A"),
         StartingXp = 1000
       };
-      LegendaryHeroManager.Register(Rivendare);
 
       Arthas = new LegendaryHero("Arthas Menethil")
       {
         UnitType = Constants.UNIT_UEAR_CHAMPION_OF_THE_SCOURGE_SCOURGE,
         StartingXp = 7000
       };
-      LegendaryHeroManager.Register(Arthas);
-      
+
       LegendUtgarde = new Capital
       {
         Unit = preplacedUnitSystem.GetUnit(FourCC("h00O")),
         Capturable = true
       };
-      CapitalManager.Register(LegendUtgarde);
 
       LegendLichking = new Capital
       {
@@ -92,7 +87,6 @@ namespace WarcraftLegacies.Source.Setup.Legends
         DeathMessage =
           "The great Lich King has been destroyed. With no central mind to command them, the forces of the Undead have gone rogue."
       };
-      CapitalManager.Register(LegendLichking);
       LegendLichking.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_N094_ICECROWN_OBELISK_RED, new Point(-3655, 20220)));
       LegendLichking.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_N094_ICECROWN_OBELISK_RED, new Point(-3015, 20762)));
       LegendLichking.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_N094_ICECROWN_OBELISK_RED, new Point(-3643, 22588)));
@@ -109,8 +103,12 @@ namespace WarcraftLegacies.Source.Setup.Legends
     /// <inheritdoc />
     public void RegisterLegends()
     {
-      LegendaryHeroManager.Register();
-      CapitalManager.Register();
+      LegendaryHeroManager.Register(Kelthuzad);
+      LegendaryHeroManager.Register(Anubarak);
+      LegendaryHeroManager.Register(Rivendare);
+      LegendaryHeroManager.Register(Arthas);
+      CapitalManager.Register(LegendLichking);
+      CapitalManager.Register(LegendUtgarde);
     }
   }
 }

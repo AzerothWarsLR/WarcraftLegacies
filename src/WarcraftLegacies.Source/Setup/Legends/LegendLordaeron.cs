@@ -65,7 +65,6 @@ namespace WarcraftLegacies.Source.Setup.Legends
       {
         Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_NEMI_KING_TERENAS_MENETHIL_LORDAERON)
       };
-      LegendaryHeroManager.Register(Terenas);
       CreateTrigger()
        .RegisterUnitEvent(Terenas.Unit, EVENT_UNIT_DEATH)
        .AddAction(() =>
@@ -78,28 +77,24 @@ namespace WarcraftLegacies.Source.Setup.Legends
         UnitType = Constants.UNIT_H01J_THE_ASHBRINGER_LORDAERON,
         StartingXp = 2800
       };
-      LegendaryHeroManager.Register(Mograine);
 
       Garithos = new LegendaryHero("Garithos")
       {
         UnitType = Constants.UNIT_HLGR_GRAND_MARSHAL_SCARLET,
         StartingXp = 2800
       };
-      LegendaryHeroManager.Register(Garithos);
 
       Goodchild = new LegendaryHero("High Commander Goodchilde")
       {
         UnitType = Constants.UNIT_E000_IMPROVED_ANCIENT_PROTECTOR_DRUID_TOWER,
         StartingXp = 2800
       };
-      LegendaryHeroManager.Register(Goodchild);
 
       CapitalPalace = new Capital
       {
         Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_H000_CAPITAL_PALACE_LORDAERON),
         DeathMessage = "The capital city of Lordaeron has been razed, and King Terenas is dead."
       };
-      CapitalManager.Register(CapitalPalace);
       CapitalPalace.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_H006_IMPROVED_GUARD_TOWER_LORDAERON_TOWER, new Point(8686, 8862)));
       CapitalPalace.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_H006_IMPROVED_GUARD_TOWER_LORDAERON_TOWER, new Point(9476, 8843)));
       CapitalPalace.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_H007_IMPROVED_CANNON_TOWER_LORDAERON_TOWER, new Point(8638, 9342)));
@@ -124,7 +119,6 @@ namespace WarcraftLegacies.Source.Setup.Legends
         Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_H01G_STRATHOLME_CASTLE_LORDAERON_OTHER),
         DeathMessage = "The majestic city of Stratholme has been destroyed."
       };
-      CapitalManager.Register(Stratholme);
       Stratholme.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_H006_IMPROVED_GUARD_TOWER_LORDAERON_TOWER, new Point(14067, 12242)));
       Stratholme.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_H006_IMPROVED_GUARD_TOWER_LORDAERON_TOWER, new Point(14553, 11593)));
       Stratholme.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_H006_IMPROVED_GUARD_TOWER_LORDAERON_TOWER, new Point(15359, 11612)));
@@ -134,7 +128,6 @@ namespace WarcraftLegacies.Source.Setup.Legends
         Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_H030_TYR_S_HAND_CITADEL_LORDAERON_OTHER),
         DeathMessage = "Tyr's Hand, the bastion of human power in Lordaeron, has fallen."
       };
-      CapitalManager.Register(TyrsHand);
       TyrsHand.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_HCTW_CANNON_TOWER_LORDAERON_TOWER, new Point(20652, 8057)));
       TyrsHand.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_H007_IMPROVED_CANNON_TOWER_LORDAERON_TOWER, new Point(20024, 8123)));
       TyrsHand.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_H007_IMPROVED_CANNON_TOWER_LORDAERON_TOWER, new Point(20042, 7420)));
@@ -147,20 +140,25 @@ namespace WarcraftLegacies.Source.Setup.Legends
         PlayerColor = PLAYER_COLOR_LIGHT_BLUE,
         StartingXp = 1000
       };
-      LegendaryHeroManager.Register(Uther);
 
       Arthas = new LegendaryHero("Arthas Menethil")
       {
         UnitType = Constants.UNIT_HART_CROWN_PRINCE_OF_LORDAERON_LORDAERON
       };
-      LegendaryHeroManager.Register(Arthas);
     }
 
     /// <inheritdoc />
     public void RegisterLegends()
     {
-      LegendaryHeroManager.Register();
-      CapitalManager.Register();
+      LegendaryHeroManager.Register(Terenas);
+      LegendaryHeroManager.Register(Uther);
+      LegendaryHeroManager.Register(Arthas);
+      LegendaryHeroManager.Register(Mograine);
+      LegendaryHeroManager.Register(Garithos);
+      LegendaryHeroManager.Register(Goodchild);
+      CapitalManager.Register(CapitalPalace);
+      CapitalManager.Register(Stratholme);
+      CapitalManager.Register(TyrsHand);
     }
   }
 }
