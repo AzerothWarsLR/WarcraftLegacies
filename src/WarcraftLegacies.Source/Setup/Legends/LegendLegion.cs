@@ -5,15 +5,13 @@ using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup.Legends
 {
-  public sealed class LegendLegion
+  public sealed class LegendLegion : IRegistersLegends
   {
     public LegendaryHero LEGEND_ARCHIMONDE { get; }
     public LegendaryHero LEGEND_ANETHERON { get; }
     public LegendaryHero LEGEND_TICHONDRIUS { get; }
     public LegendaryHero LEGEND_MALGANIS { get; }
     public LegendaryHero LEGEND_LILIAN { get; }
-    public Capital LegionNexusNorthrend { get; private set; }
-    public Capital LegionNexusAlterac { get; private set; }
 
     public LegendLegion(PreplacedUnitSystem preplacedUnitSystem)
     {

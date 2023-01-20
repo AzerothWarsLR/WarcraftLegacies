@@ -4,7 +4,7 @@ using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup.Legends
 {
-  public sealed class LegendDruids
+  public sealed class LegendDruids : IRegistersLegends
   {
     public LegendaryHero LegendCenarius { get; }
     public LegendaryHero LegendMalfurion { get; }

@@ -5,7 +5,7 @@ using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup.Legends
 {
-  public sealed class LegendQuelthalas
+  public sealed class LegendQuelthalas : IRegistersLegends
   {
     public LegendaryHero LegendAnasterian { get; }
     public LegendaryHero LegendRommath { get; }

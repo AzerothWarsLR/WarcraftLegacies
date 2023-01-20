@@ -6,7 +6,7 @@ using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup.Legends
 {
-  public sealed class LegendDraenei
+  public sealed class LegendDraenei : IRegistersLegends
   {
     public LegendaryHero LegendVelen { get; }
     public LegendaryHero LegendMaraad { get; }

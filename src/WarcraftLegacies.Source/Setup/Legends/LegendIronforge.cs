@@ -5,7 +5,7 @@ using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup.Legends
 {
-  public sealed class LegendIronforge
+  public sealed class LegendIronforge : IRegistersLegends
   {
     public LegendaryHero LegendDagran { get; }
     public LegendaryHero LegendFalstad { get; }

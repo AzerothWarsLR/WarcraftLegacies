@@ -3,7 +3,7 @@ using MacroTools.LegendSystem;
 
 namespace WarcraftLegacies.Source.Setup.Legends
 {
-  public static class LegendDragonmaw
+  public static class LegendDragonmaw : IRegistersLegends
   {
     public Capital? DragonmawPort { get; private set; }
     public LegendaryHero? Zaela { get; private set; }

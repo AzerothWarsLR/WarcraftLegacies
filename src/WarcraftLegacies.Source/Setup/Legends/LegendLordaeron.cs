@@ -9,7 +9,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
   /// <summary>
   /// Responsible for creating and storing all Lordaeron <see cref="Legend"/>s.
   /// </summary>
-  public sealed class LegendLordaeron
+  public sealed class LegendLordaeron : IRegistersLegends
   {
     /// <summary>
     /// King of Lordaeron.

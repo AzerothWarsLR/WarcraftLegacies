@@ -11,7 +11,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
   /// <summary>
   /// Responsible for setting up and managing all <see cref="ScourgeSetup.Scourge"/> <see cref="Legend"/>s.
   /// </summary>
-  public sealed class LegendScourge
+  public sealed class LegendScourge : IRegistersLegends
   {
     /// <summary>
     /// Leader of the Cult of the Damned.

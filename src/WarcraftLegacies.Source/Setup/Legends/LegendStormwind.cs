@@ -6,7 +6,7 @@ using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup.Legends
 {
-  public sealed class LegendStormwind
+  public sealed class LegendStormwind : IRegistersLegends
   {
     public LegendaryHero? Varian { get; }
     public LegendaryHero khadgar { get; }

@@ -7,7 +7,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
   /// <summary>
   /// Responsible for setting up and storing all Sentinel <see cref="Legend"/>s.
   /// </summary>
-  public sealed class LegendSentinels
+  public sealed class LegendSentinels : IRegistersLegends
   {
     /// <summary>
     /// Leader of the Wardens.

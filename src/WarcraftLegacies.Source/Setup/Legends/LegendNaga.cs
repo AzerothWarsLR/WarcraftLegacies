@@ -3,7 +3,7 @@ using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup.Legends
 {
-  public sealed class LegendNaga
+  public sealed class LegendNaga : IRegistersLegends
   {
     public LegendaryHero LegendIllidan { get; }
     public LegendaryHero LegendVashj { get; }

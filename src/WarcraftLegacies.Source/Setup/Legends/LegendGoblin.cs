@@ -3,7 +3,7 @@ using MacroTools.LegendSystem;
 
 namespace WarcraftLegacies.Source.Setup.Legends
 {
-  public sealed class LegendGoblin
+  public sealed class LegendGoblin : IRegistersLegends
   {
     public LegendaryHero? Gallywix { get; }
     public LegendaryHero? Noggenfogger { get; }

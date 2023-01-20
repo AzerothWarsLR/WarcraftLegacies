@@ -3,7 +3,7 @@ using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup.Legends
 {
-  public sealed class LegendTroll
+  public sealed class LegendTroll : IRegistersLegends
   {
     public LegendaryHero LEGEND_PRIEST { get; private set; }
     public LegendaryHero LEGEND_RASTAKHAN { get; private set; }

@@ -8,7 +8,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
   /// <summary>
   /// Responsible for setting up and storing all Dalaran <see cref="Legend"/>s.
   /// </summary>
-  public sealed class LegendDalaran
+  public sealed class LegendDalaran : IRegistersLegends
   {
     /// <summary>
     /// Archmage of Dalaran.
@@ -49,28 +49,24 @@ namespace WarcraftLegacies.Source.Setup.Legends
       {
         UnitType = Constants.UNIT_HJAI_ARCHMAGE_OF_DALARAN_DALARAN
       };
-      LegendaryHeroManager.Register(LegendJaina);
 
       LegendMedivh = new LegendaryHero("Medivh")
       {
         UnitType = FourCC("Haah"),
         StartingXp = 2800
       };
-      LegendaryHeroManager.Register(LegendMedivh);
 
       LegendKalecgos = new LegendaryHero("Kalecgos")
       {
         UnitType = FourCC("U027"),
         StartingXp = 9800
       };
-      LegendaryHeroManager.Register(LegendKalecgos);
 
       LegendMalygos = new LegendaryHero("Malygos")
       {
         UnitType = FourCC("U026"),
         StartingXp = 10900
       };
-      LegendaryHeroManager.Register(LegendMalygos);
 
       LegendDalaranCapital = new Capital
       {
@@ -78,7 +74,6 @@ namespace WarcraftLegacies.Source.Setup.Legends
         DeathMessage =
           "The Violet Citadel, the ultimate bastion of arcane knowledge in the Eastern Kingdoms, crumbles like a sand castle."
       };
-      CapitalManager.Register(LegendDalaranCapital);
       LegendDalaranCapital.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_N03G_VIOLET_TOWER, new Point(9084, 4979)));
       LegendDalaranCapital.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_N03G_VIOLET_TOWER, new Point(9008, 4092)));
       LegendDalaranCapital.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_N03G_VIOLET_TOWER, new Point(9864, 4086)));
@@ -91,7 +86,17 @@ namespace WarcraftLegacies.Source.Setup.Legends
           "Archmage Antonidas has been cut down, his vast knowledge forever lost with his death. The mages of Dalaran have lost their brightest mind."
       };
       LegendAntonidas.AddUnitDependency(LegendDalaranCapital.Unit);
+    }
+
+    /// <inheritdoc />
+    public void RegisterLegends()
+    {
       LegendaryHeroManager.Register(LegendAntonidas);
+      LegendaryHeroManager.Register(LegendJaina);
+      LegendaryHeroManager.Register(LegendKalecgos);
+      LegendaryHeroManager.Register(LegendMalygos);
+      LegendaryHeroManager.Register(LegendMedivh);
+      CapitalManager.Register(LegendDalaranCapital);
     }
   }
 }

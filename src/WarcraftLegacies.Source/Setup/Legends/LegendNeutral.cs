@@ -4,7 +4,7 @@ using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup.Legends
 {
-  public sealed class LegendNeutral
+  public sealed class LegendNeutral : IRegistersLegends
   {
     public LegendaryHero Ragnaros { get; }
     public Capital Auchindoun { get; }

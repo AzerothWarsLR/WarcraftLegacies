@@ -3,7 +3,7 @@ using MacroTools.LegendSystem;
 
 namespace WarcraftLegacies.Source.Setup.Legends
 {
-  public sealed class LegendWarsong
+  public sealed class LegendWarsong : IRegistersLegends
   {
     public LegendaryHero? GromHellscream { get; }
     public Capital? StonemaulKeep { get; }
