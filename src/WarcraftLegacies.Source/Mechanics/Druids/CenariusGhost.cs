@@ -20,8 +20,8 @@ namespace WarcraftLegacies.Source.Mechanics.Druids
 
     public static void Setup(LegendDruids legendDruids)
     {
-      legendDruids.LegendCenarius.OnLegendPermaDeath += Dies;
-      legendDruids.LegendCenarius.DeathMessage =
+      legendDruids.Cenarius.OnLegendPermaDeath += Dies;
+      legendDruids.Cenarius.DeathMessage =
         "Cenarius, Demigod of the Night Elves, has fallen. His spirit lives on, a mere echo of his former self.";
     }
   }

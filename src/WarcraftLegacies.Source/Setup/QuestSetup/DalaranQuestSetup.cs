@@ -14,8 +14,8 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
     {
       var dalaran = DalaranSetup.Dalaran;
 
-      QuestNewGuardian newGuardian = new(artifactSetup.BookOfMedivh, allLegendSetup.Dalaran.LegendJaina);
-      QuestTheNexus theNexus = new(allLegendSetup.Dalaran.LegendJaina, allLegendSetup.Scourge.LegendLichking, allLegendSetup.Neutral.TheNexus);
+      QuestNewGuardian newGuardian = new(artifactSetup.BookOfMedivh, allLegendSetup.Dalaran.Jaina);
+      QuestTheNexus theNexus = new(allLegendSetup.Dalaran.Jaina, allLegendSetup.Scourge.TheFrozenThrone, allLegendSetup.Neutral.TheNexus);
       QuestCrystalGolem crystalGolem = new(allLegendSetup.Neutral.DraktharonKeep);
       QuestFallenGuardian fallenGuardian = new(allLegendSetup.Neutral.Karazhan);
 
@@ -36,7 +36,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
         questSouthshore,
         questShadowfang
       }));
-      dalaran.AddQuest(new QuestJainaSoulGem(allLegendSetup.Dalaran.LegendJaina, allLegendSetup.Neutral.Caerdarrow));
+      dalaran.AddQuest(new QuestJainaSoulGem(allLegendSetup.Dalaran.Jaina, allLegendSetup.Neutral.Caerdarrow));
       dalaran.AddQuest(new QuestBlueDragons(allLegendSetup.Neutral.TheNexus));
       dalaran.AddQuest(new QuestKarazhan(allLegendSetup.Neutral.Karazhan));
 

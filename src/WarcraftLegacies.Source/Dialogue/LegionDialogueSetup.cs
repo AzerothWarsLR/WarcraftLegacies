@@ -32,7 +32,7 @@ namespace WarcraftLegacies.Source.Dialogue
           IllidariSetup.Illidari
         }, new List<Objective>
         {
-          new ObjectiveLegendMeetsLegend(legendSetup.Legion.LEGEND_TICHONDRIUS, legendSetup.Naga.LegendIllidan)
+          new ObjectiveLegendMeetsLegend(legendSetup.Legion.Tichondrius, legendSetup.Naga.Illidan)
         }
       ));
 
@@ -51,7 +51,7 @@ namespace WarcraftLegacies.Source.Dialogue
           FrostwolfSetup.Frostwolf
         }, new List<Objective>
         {
-          new ObjectiveLegendMeetsLegend(legendSetup.Legion.LEGEND_ARCHIMONDE, legendSetup.Frostwolf.LegendThrall)
+          new ObjectiveLegendMeetsLegend(legendSetup.Legion.Archimonde, legendSetup.Frostwolf.Thrall)
         }
       ));
 
@@ -70,7 +70,7 @@ namespace WarcraftLegacies.Source.Dialogue
           DalaranSetup.Dalaran
         }, new List<Objective>
         {
-          new ObjectiveLegendMeetsLegend(legendSetup.Legion.LEGEND_ARCHIMONDE, legendSetup.Dalaran.LegendJaina)
+          new ObjectiveLegendMeetsLegend(legendSetup.Legion.Archimonde, legendSetup.Dalaran.Jaina)
         }
       ));
 
@@ -98,7 +98,7 @@ namespace WarcraftLegacies.Source.Dialogue
           ScourgeSetup.Scourge
         }, new List<Objective>
         {
-          new ObjectiveLegendMeetsLegend(legendSetup.Legion.LEGEND_ARCHIMONDE, legendSetup.Scourge.Kelthuzad)
+          new ObjectiveLegendMeetsLegend(legendSetup.Legion.Archimonde, legendSetup.Scourge.Kelthuzad)
         }
       ));
     }

@@ -16,15 +16,15 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
     {
       var druids = FactionSetup.DruidsSetup.Druids;
       var newQuest = druids.AddQuest(new QuestMalfurionAwakens(Regions.MoongladeVillage,
-        allLegendSetup.Druids.LegendNordrassil.Unit, artifactSetup.HornOfCenarius,
-        allLegendSetup.Druids.LegendMalfurion));
+        allLegendSetup.Druids.Nordrassil.Unit, artifactSetup.HornOfCenarius,
+        allLegendSetup.Druids.Malfurion));
       druids.StartingQuest = newQuest;
-      druids.AddQuest(new QuestAshenvale(Regions.AshenvaleUnlock, allLegendSetup.Druids.LegendMalfurion));
-      druids.AddQuest(new QuestDruidsKillFrostwolf(allLegendSetup.Frostwolf.LegendThunderbluff));
+      druids.AddQuest(new QuestAshenvale(Regions.AshenvaleUnlock, allLegendSetup.Druids.Malfurion));
+      druids.AddQuest(new QuestDruidsKillFrostwolf(allLegendSetup.Frostwolf.ThunderBluff));
       druids.AddQuest(new QuestDruidsKillWarsong());
-      druids.AddQuest(new QuestAndrassil(allLegendSetup.Scourge.LegendLichking));
+      druids.AddQuest(new QuestAndrassil(allLegendSetup.Scourge.TheFrozenThrone));
       druids.AddQuest(new QuestShaladrassil(allLegendSetup.Neutral.Shaladrassil));
-      druids.AddQuest(new QuestTortolla(allLegendSetup.Druids.LegendTortolla));
+      druids.AddQuest(new QuestTortolla(allLegendSetup.Druids.Tortolla));
     }
   }
 }

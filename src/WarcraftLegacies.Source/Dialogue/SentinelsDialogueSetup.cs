@@ -28,7 +28,7 @@ namespace WarcraftLegacies.Source.Dialogue
           DruidsSetup.Druids
         }, new[]
         {
-          new ObjectiveLegendMeetsLegend(legendSetup.Sentinels.Maiev, legendSetup.Druids.LegendMalfurion)
+          new ObjectiveLegendMeetsLegend(legendSetup.Sentinels.Maiev, legendSetup.Druids.Malfurion)
         }));
       
       TriggeredDialogueManager.Add(
@@ -53,7 +53,7 @@ namespace WarcraftLegacies.Source.Dialogue
           IllidariSetup.Illidari
         }, new[]
         {
-          new ObjectiveLegendMeetsLegend(legendSetup.Sentinels.Maiev, legendSetup.Naga.LegendIllidan)
+          new ObjectiveLegendMeetsLegend(legendSetup.Sentinels.Maiev, legendSetup.Naga.Illidan)
         }));
       
       TriggeredDialogueManager.Add(new TriggeredDialogue(
@@ -71,7 +71,7 @@ namespace WarcraftLegacies.Source.Dialogue
           SentinelsSetup.Sentinels
         }, new List<Objective>
         {
-          new ObjectiveLegendMeetsLegend(legendSetup.Sentinels.Tyrande, legendSetup.Legion.LEGEND_ARCHIMONDE)
+          new ObjectiveLegendMeetsLegend(legendSetup.Sentinels.Tyrande, legendSetup.Legion.Archimonde)
         }
       ));
       

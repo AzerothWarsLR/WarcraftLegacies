@@ -15,8 +15,8 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       ironforge.AddQuest(new QuestDunMorogh(preplacedUnitSystem));
       ironforge.AddQuest(new QuestDominion(Regions.IronforgeAmbient));
       ironforge.AddQuest(new QuestGnomeregan(Regions.Gnomergan, preplacedUnitSystem));
-      ironforge.AddQuest(new QuestDarkIron(Regions.Shadowforge_City, allLegendSetup.FelHorde.LegendBlacktemple, allLegendSetup.Ironforge.LegendMagni));
-      ironforge.AddQuest(new QuestWildhammer(allLegendSetup.Ironforge.LegendMagni));
+      ironforge.AddQuest(new QuestDarkIron(Regions.Shadowforge_City, allLegendSetup.FelHorde.BlackTemple, allLegendSetup.Ironforge.Magni));
+      ironforge.AddQuest(new QuestWildhammer(allLegendSetup.Ironforge.Magni));
 
       var missingArtifacts = new int[]
       {

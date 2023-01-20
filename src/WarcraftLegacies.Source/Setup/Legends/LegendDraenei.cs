@@ -8,8 +8,8 @@ namespace WarcraftLegacies.Source.Setup.Legends
 {
   public sealed class LegendDraenei : IRegistersLegends
   {
-    public LegendaryHero LegendVelen { get; }
-    public LegendaryHero LegendMaraad { get; }
+    public LegendaryHero Velen { get; }
+    public LegendaryHero Maraad { get; }
     public LegendaryHero LegendNobundo { get; }
     public Capital LegendExodar { get; }
     public Capital LegendExodarGenerator { get; }
@@ -45,12 +45,12 @@ namespace WarcraftLegacies.Source.Setup.Legends
       LegendExodarGenerator.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_U00U_CRYSTAL_PROTECTOR_DRAENEI_TOWER, new Point(-10625, -25218)));
       LegendExodarGenerator.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_U00U_CRYSTAL_PROTECTOR_DRAENEI_TOWER, new Point(-10896, -25456)));
 
-      LegendMaraad = new LegendaryHero("Maraad")
+      Maraad = new LegendaryHero("Maraad")
       {
         UnitType = FourCC("H09S")
       };
 
-      LegendVelen = new LegendaryHero("Velen")
+      Velen = new LegendaryHero("Velen")
       {
         UnitType = FourCC("E01I")
       };
@@ -74,8 +74,8 @@ namespace WarcraftLegacies.Source.Setup.Legends
     /// <inheritdoc />
     public void RegisterLegends()
     {
-      LegendaryHeroManager.Register(LegendVelen);
-      LegendaryHeroManager.Register(LegendMaraad);
+      LegendaryHeroManager.Register(Velen);
+      LegendaryHeroManager.Register(Maraad);
       LegendaryHeroManager.Register(LegendNobundo);
       CapitalManager.Register(LegendExodar);
       CapitalManager.Register(LegendExodarGenerator);

@@ -33,7 +33,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       LordaeronSetup.Lordaeron.AddQuest(new QuestThunderEagle(allLegendSetup.Neutral.DraktharonKeep));
       LordaeronSetup.Lordaeron.AddQuest(new QuestKingArthas(allLegendSetup.Lordaeron.Terenas.Unit,
         artifactSetup.CrownOfLordaeron, allLegendSetup.Lordaeron.CapitalPalace, allLegendSetup.Lordaeron.Arthas,
-        allLegendSetup.Scourge.LegendLichking));
+        allLegendSetup.Scourge.TheFrozenThrone));
       LordaeronSetup.Lordaeron.AddQuest(new QuestKingdomOfManLordaeron(artifactSetup.CrownOfLordaeron,
         artifactSetup.CrownOfStormwind, allLegendSetup.Lordaeron.Arthas));
     }

@@ -7,16 +7,16 @@ namespace WarcraftLegacies.Source.Setup.Legends
 {
   public sealed class LegendFrostwolf : IRegistersLegends
   {
-    public LegendaryHero LegendCairne { get; }
-    public LegendaryHero LegendThrall { get; }
-    public LegendaryHero LegendRexxar { get; }
-    public LegendaryHero LegendVolJin { get; }
-    public Capital LegendThunderbluff { get; }
-    public Capital LegendDarkspearhold { get; }
+    public LegendaryHero Cairne { get; }
+    public LegendaryHero Thrall { get; }
+    public LegendaryHero Rexxar { get; }
+    public LegendaryHero Voljin { get; }
+    public Capital ThunderBluff { get; }
+    public Capital DarkspearHold { get; }
 
     public LegendFrostwolf(PreplacedUnitSystem preplacedUnitSystem)
     {
-      LegendCairne = new LegendaryHero("Cairne Bloodhoof")
+      Cairne = new LegendaryHero("Cairne Bloodhoof")
       {
         UnitType = FourCC("Ocbh"),
         DeathMessage =
@@ -24,7 +24,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
         StartingXp = 1000
       };
 
-      LegendThrall = new LegendaryHero("Thrall")
+      Thrall = new LegendaryHero("Thrall")
       {
         UnitType = Constants.UNIT_OTHR_WARCHIEF_OF_THE_HORDE_FROSTWOLF,
         StartingArtifactItemTypeIds = new[]
@@ -33,25 +33,25 @@ namespace WarcraftLegacies.Source.Setup.Legends
         }
       };
 
-      LegendThunderbluff = new Capital
+      ThunderBluff = new Capital
       {
         Unit = preplacedUnitSystem.GetUnit(FourCC("o00J")),
         DeathMessage =
           "The mesas of Thunderbluff have been swept clean of the Tauren. The Bloodhoof are without a home."
       };
 
-      LegendDarkspearhold = new Capital
+      DarkspearHold = new Capital
       {
         Unit = preplacedUnitSystem.GetUnit(FourCC("o02D"))
       };
 
-      LegendRexxar = new LegendaryHero("Rexxar")
+      Rexxar = new LegendaryHero("Rexxar")
       {
         UnitType = FourCC("Orex"),
         StartingXp = 1800
       };
 
-      LegendVolJin = new LegendaryHero("Vol'jin")
+      Voljin = new LegendaryHero("Vol'jin")
       {
         UnitType = Constants.UNIT_ORKN_CHIEFTAIN_OF_THE_DARKSPEAR_TRIBE_FROSTWOLF,
       };
@@ -60,12 +60,12 @@ namespace WarcraftLegacies.Source.Setup.Legends
     /// <inheritdoc />
     public void RegisterLegends()
     {
-      LegendaryHeroManager.Register(LegendCairne);
-      LegendaryHeroManager.Register(LegendThrall);
-      LegendaryHeroManager.Register(LegendRexxar);
-      LegendaryHeroManager.Register(LegendVolJin);
-      CapitalManager.Register(LegendThunderbluff);
-      CapitalManager.Register(LegendDarkspearhold);
+      LegendaryHeroManager.Register(Cairne);
+      LegendaryHeroManager.Register(Thrall);
+      LegendaryHeroManager.Register(Rexxar);
+      LegendaryHeroManager.Register(Voljin);
+      CapitalManager.Register(ThunderBluff);
+      CapitalManager.Register(DarkspearHold);
     }
   }
 }

@@ -119,7 +119,7 @@ namespace WarcraftLegacies.Source.Dialogue
             LordaeronSetup.Lordaeron
           }, new Objective[]
           {
-            new ObjectiveLegendMeetsLegend(legendSetup.Lordaeron.Arthas, legendSetup.Dalaran.LegendJaina)
+            new ObjectiveLegendMeetsLegend(legendSetup.Lordaeron.Arthas, legendSetup.Dalaran.Jaina)
           }));
 
       TriggeredDialogueManager.Add(
@@ -166,7 +166,7 @@ namespace WarcraftLegacies.Source.Dialogue
             LegionSetup.Legion
           }, new Objective[]
           {
-            new ObjectiveLegendMeetsLegend(legendSetup.Scourge.Arthas, legendSetup.Legion.LEGEND_MALGANIS)
+            new ObjectiveLegendMeetsLegend(legendSetup.Scourge.Arthas, legendSetup.Legion.Malganis)
           }));
 
       TriggeredDialogueManager.Add(
@@ -196,10 +196,10 @@ namespace WarcraftLegacies.Source.Dialogue
             LegionSetup.Legion
           }, new Objective[]
           {
-            new ObjectiveLegendMeetsLegend(legendSetup.Legion.LEGEND_MALGANIS, legendSetup.Lordaeron.Arthas),
+            new ObjectiveLegendMeetsLegend(legendSetup.Legion.Malganis, legendSetup.Lordaeron.Arthas),
             new ObjectiveLegendInRect(legendSetup.Lordaeron.Arthas, Regions.Central_Northrend,
               ""), //Todo: make this work in any region of Northrend
-            new ObjectiveLegendInRect(legendSetup.Legion.LEGEND_MALGANIS, Regions.Central_Northrend, "")
+            new ObjectiveLegendInRect(legendSetup.Legion.Malganis, Regions.Central_Northrend, "")
           }));
 
       TriggeredDialogueManager.Add(new TriggeredDialogue(

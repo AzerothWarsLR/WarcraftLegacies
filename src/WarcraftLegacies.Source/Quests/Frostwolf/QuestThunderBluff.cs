@@ -14,7 +14,7 @@ using static War3Api.Common;
 namespace WarcraftLegacies.Source.Quests.Frostwolf
 {
   /// <summary>
-  /// Kill the centaur leader in Mulgore and bring <see cref="LegendFrostwolf.LegendCairne"/> to <see cref="LegendFrostwolf.LegendThunderbluff"/> to unlock it
+  /// Kill the centaur leader in Mulgore and bring <see cref="LegendFrostwolf.Cairne"/> to <see cref="LegendFrostwolf.ThunderBluff"/> to unlock it
   /// </summary>
   public sealed class QuestThunderBluff : QuestData
   {

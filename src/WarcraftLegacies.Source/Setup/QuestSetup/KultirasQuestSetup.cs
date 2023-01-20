@@ -16,7 +16,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       kultiras.AddQuest(new QuestWestfallOutpost(Regions.SentinelTowerAmbient));
       kultiras.AddQuest(new QuestEliminatePiracy(Regions.HighbankUnlock));
       kultiras.AddQuest(new QuestTheramore(Regions.Theramore));
-      kultiras.AddQuest(new QuestBeyondPortal(allLegendSetup.FelHorde.LegendHellfirecitadel, allLegendSetup.FelHorde.LegendKilsorrowFortress));
+      kultiras.AddQuest(new QuestBeyondPortal(allLegendSetup.FelHorde.HellfireCitadel, allLegendSetup.FelHorde.KilsorrowFortress));
     }
   }
 }

@@ -19,7 +19,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       ));
       sentinels.AddQuest(new QuestFeathermoon(Regions.FeathermoonUnlock, allLegendSetup.Sentinels.Tyrande));
       sentinels.AddQuest(new QuestSentinelsKillWarsong(allLegendSetup.Warsong.Orgrimmar));
-      sentinels.AddQuest(new QuestSentinelsKillFrostwolf(allLegendSetup.Frostwolf.LegendThunderbluff));
+      sentinels.AddQuest(new QuestSentinelsKillFrostwolf(allLegendSetup.Frostwolf.ThunderBluff));
       sentinels.AddQuest(new QuestScepterOfTheQueenSentinels(Regions.TheAthenaeum, artifactSetup.ScepterOfTheQueen, allLegendSetup.Warsong.StonemaulKeep));
       sentinels.AddQuest(new QuestVaultoftheWardens(allLegendSetup.Sentinels.Maiev, allLegendSetup.Sentinels.VaultOfTheWardens));
       sentinels.AddQuest(new QuestBlackrookHold(allLegendSetup.Sentinels.BlackrookHold));

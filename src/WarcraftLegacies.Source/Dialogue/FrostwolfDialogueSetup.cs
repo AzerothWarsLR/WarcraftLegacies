@@ -50,7 +50,7 @@ namespace WarcraftLegacies.Source.Dialogue
             FrostwolfSetup.Frostwolf
           }, new[]
           {
-            new ObjectiveControlLegend(legendSetup.Frostwolf.LegendRexxar, false)
+            new ObjectiveControlLegend(legendSetup.Frostwolf.Rexxar, false)
             {
               EligibleFactions = new List<Faction>{FrostwolfSetup.Frostwolf}
             }
@@ -70,7 +70,7 @@ namespace WarcraftLegacies.Source.Dialogue
             FrostwolfSetup.Frostwolf
           }, new[]
           {
-            new ObjectiveLegendMeetsLegend(legendSetup.Frostwolf.LegendThrall, legendSetup.Frostwolf.LegendRexxar)
+            new ObjectiveLegendMeetsLegend(legendSetup.Frostwolf.Thrall, legendSetup.Frostwolf.Rexxar)
           }));
     }
   }

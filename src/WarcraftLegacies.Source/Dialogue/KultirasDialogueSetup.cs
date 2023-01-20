@@ -32,7 +32,7 @@ namespace WarcraftLegacies.Source.Dialogue
             FrostwolfSetup.Frostwolf
           }, new[]
           {
-            new ObjectiveLegendMeetsLegend(legendSetup.Kultiras.LegendAdmiral, legendSetup.Frostwolf.LegendThrall)
+            new ObjectiveLegendMeetsLegend(legendSetup.Kultiras.LegendAdmiral, legendSetup.Frostwolf.Thrall)
           }));
     }
   }

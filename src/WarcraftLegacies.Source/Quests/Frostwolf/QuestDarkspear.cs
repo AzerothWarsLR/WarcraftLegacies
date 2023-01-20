@@ -11,7 +11,7 @@ using static War3Api.Common;
 namespace WarcraftLegacies.Source.Quests.Frostwolf
 {
   /// <summary>
-  /// Bring <see cref="LegendFrostwolf.LegendVolJin"/> to the Echo Isles to unlock the base
+  /// Bring <see cref="LegendFrostwolf.Voljin"/> to the Echo Isles to unlock the base
   /// </summary>
   public sealed class QuestDarkspear : QuestData
   {

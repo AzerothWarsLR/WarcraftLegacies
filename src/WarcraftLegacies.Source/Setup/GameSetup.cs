@@ -62,7 +62,7 @@ namespace WarcraftLegacies.Source.Setup
       CheatSetup.Setup();
       CommandSetup.Setup();
       ControlPointVictory.Setup();
-      SilvermoonDies.Setup(allLegendSetup.Quelthalas.LegendSunwell);
+      SilvermoonDies.Setup(allLegendSetup.Quelthalas.Sunwell);
       GameTime.Setup();
       FactionMultiboard.Setup();
       BookSetup.Setup();
@@ -136,7 +136,7 @@ namespace WarcraftLegacies.Source.Setup
       DarkPortalControlNexusSetup.Setup(preplacedUnitSystem);
       BlackPortalControlNexusSetup.Setup(preplacedUnitSystem);
       CenariusGhost.Setup(allLegendSetup.Druids);
-      HelmOfDominationDropsWhenScourgeLeaves.Setup(artifactSetup.HelmOfDomination, allLegendSetup.Scourge.LegendLichking);
+      HelmOfDominationDropsWhenScourgeLeaves.Setup(artifactSetup.HelmOfDomination, allLegendSetup.Scourge.TheFrozenThrone);
     }
   }
 }

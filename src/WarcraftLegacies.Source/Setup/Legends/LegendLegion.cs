@@ -7,14 +7,14 @@ namespace WarcraftLegacies.Source.Setup.Legends
 {
   public sealed class LegendLegion : IRegistersLegends
   {
-    public LegendaryHero LEGEND_ARCHIMONDE { get; }
-    public LegendaryHero LEGEND_ANETHERON { get; }
-    public LegendaryHero LEGEND_TICHONDRIUS { get; }
-    public LegendaryHero LEGEND_MALGANIS { get; }
+    public LegendaryHero Archimonde { get; }
+    public LegendaryHero Anetheron { get; }
+    public LegendaryHero Tichondrius { get; }
+    public LegendaryHero Malganis { get; }
 
     public LegendLegion(PreplacedUnitSystem preplacedUnitSystem)
     {
-      LEGEND_ARCHIMONDE = new LegendaryHero("Archimonde")
+      Archimonde = new LegendaryHero("Archimonde")
       {
         Unit = preplacedUnitSystem.GetUnit(FourCC("Uwar")),
         PermaDies = true,
@@ -23,20 +23,20 @@ namespace WarcraftLegacies.Source.Setup.Legends
         StartingXp = 10800
       };
 
-      LEGEND_ANETHERON = new LegendaryHero("Anetheron")
+      Anetheron = new LegendaryHero("Anetheron")
       {
         UnitType = FourCC("U00L"),
         PlayerColor = PLAYER_COLOR_ORANGE,
         StartingXp = 4000
       };
 
-      LEGEND_TICHONDRIUS = new LegendaryHero("Tichondrius")
+      Tichondrius = new LegendaryHero("Tichondrius")
       {
         UnitType = FourCC("Utic"),
         PlayerColor = PLAYER_COLOR_RED
       };
 
-      LEGEND_MALGANIS = new LegendaryHero("Mal'ganis")
+      Malganis = new LegendaryHero("Mal'ganis")
       {
         UnitType = FourCC("Umal"),
         PlayerColor = PLAYER_COLOR_GREEN
@@ -46,10 +46,10 @@ namespace WarcraftLegacies.Source.Setup.Legends
     /// <inheritdoc />
     public void RegisterLegends()
     {
-      LegendaryHeroManager.Register(LEGEND_ARCHIMONDE);
-      LegendaryHeroManager.Register(LEGEND_ANETHERON);
-      LegendaryHeroManager.Register(LEGEND_TICHONDRIUS);
-      LegendaryHeroManager.Register(LEGEND_MALGANIS);
+      LegendaryHeroManager.Register(Archimonde);
+      LegendaryHeroManager.Register(Anetheron);
+      LegendaryHeroManager.Register(Tichondrius);
+      LegendaryHeroManager.Register(Malganis);
     }
   }
 }

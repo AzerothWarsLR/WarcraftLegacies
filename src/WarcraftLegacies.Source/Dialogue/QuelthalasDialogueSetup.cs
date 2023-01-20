@@ -30,7 +30,7 @@ namespace WarcraftLegacies.Source.Dialogue
             ScourgeSetup.Scourge
           }, new[]
           {
-            new ObjectiveLegendMeetsLegend(legendSetup.Scourge.Arthas, legendSetup.Quelthalas.LegendKael)
+            new ObjectiveLegendMeetsLegend(legendSetup.Scourge.Arthas, legendSetup.Quelthalas.Kael)
           }));
     }
   }

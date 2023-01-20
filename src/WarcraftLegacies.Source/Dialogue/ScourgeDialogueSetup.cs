@@ -114,7 +114,7 @@ namespace WarcraftLegacies.Source.Dialogue
           },
           new[]
           {
-            new ObjectiveLegendMeetsLegend(legendSetup.Scourge.Arthas, legendSetup.Quelthalas.LegendSylvanas)
+            new ObjectiveLegendMeetsLegend(legendSetup.Scourge.Arthas, legendSetup.Quelthalas.Sylvanas)
           }));
       
       TriggeredDialogueManager.Add(
@@ -135,7 +135,7 @@ namespace WarcraftLegacies.Source.Dialogue
           },
           new[]
           {
-            new ObjectiveLegendMeetsLegend(legendSetup.Scourge.Arthas, legendSetup.Legion.LEGEND_TICHONDRIUS)
+            new ObjectiveLegendMeetsLegend(legendSetup.Scourge.Arthas, legendSetup.Legion.Tichondrius)
           }));
       
       TriggeredDialogueManager.Add(
@@ -190,7 +190,7 @@ namespace WarcraftLegacies.Source.Dialogue
           DalaranSetup.Dalaran
         }, new List<Objective>
         {
-          new ObjectiveLegendInRect(legendSetup.Dalaran.LegendAntonidas, Regions.Dalaran, "Dalaran"),
+          new ObjectiveLegendInRect(legendSetup.Dalaran.Antonidas, Regions.Dalaran, "Dalaran"),
           new ObjectiveLegendInRect(legendSetup.Scourge.Arthas, Regions.Dalaran, "Dalaran")
         }
       ));

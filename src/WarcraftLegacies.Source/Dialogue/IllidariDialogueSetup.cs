@@ -46,7 +46,7 @@ namespace WarcraftLegacies.Source.Dialogue
             SentinelsSetup.Sentinels
           }, new[]
           {
-            new ObjectiveLegendMeetsLegend(legendSetup.Naga.LegendIllidan, legendSetup.Sentinels.Tyrande)
+            new ObjectiveLegendMeetsLegend(legendSetup.Naga.Illidan, legendSetup.Sentinels.Tyrande)
           }));
 
       TriggeredDialogueManager.Add(
@@ -65,7 +65,7 @@ namespace WarcraftLegacies.Source.Dialogue
             DruidsSetup.Druids
           }, new[]
           {
-            new ObjectiveLegendMeetsLegend(legendSetup.Naga.LegendIllidan, legendSetup.Druids.LegendMalfurion)
+            new ObjectiveLegendMeetsLegend(legendSetup.Naga.Illidan, legendSetup.Druids.Malfurion)
           }));
 
       TriggeredDialogueManager.Add(
@@ -112,7 +112,7 @@ namespace WarcraftLegacies.Source.Dialogue
           IllidariSetup.Illidari
         }, new List<Objective>
         {
-          new ObjectiveLegendReachRect(legendSetup.Naga.LegendIllidan, Regions.Sargeras_Entrance,
+          new ObjectiveLegendReachRect(legendSetup.Naga.Illidan, Regions.Sargeras_Entrance,
             "the Tomb of Sargeras' entrance")
         }
       ));
@@ -127,7 +127,7 @@ namespace WarcraftLegacies.Source.Dialogue
           ScourgeSetup.Scourge
         }, new List<Objective>
         {
-          new ObjectiveLegendMeetsLegend(legendSetup.Naga.LegendIllidan, legendSetup.Scourge.Anubarak)
+          new ObjectiveLegendMeetsLegend(legendSetup.Naga.Illidan, legendSetup.Scourge.Anubarak)
         }
       ));
       
@@ -146,7 +146,7 @@ namespace WarcraftLegacies.Source.Dialogue
             ScourgeSetup.Scourge
           }, new[]
           {
-            new ObjectiveLegendMeetsLegend(legendSetup.Naga.LegendIllidan, legendSetup.Scourge.Arthas)
+            new ObjectiveLegendMeetsLegend(legendSetup.Naga.Illidan, legendSetup.Scourge.Arthas)
           }));
       
       TriggeredDialogueManager.Add(new TriggeredDialogue(

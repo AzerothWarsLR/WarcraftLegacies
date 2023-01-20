@@ -48,9 +48,9 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
           artifactSetup.ObsidianFragment,
           artifactSetup.RubyFragment
         }));
-        faction.AddQuest(new QuestBookOfMedivh(allLegendSetup.Dalaran.LegendDalaranCapital, preplacedUnitSystem.GetUnit(Constants.UNIT_NBSM_BOOK_OF_MEDIVH),
+        faction.AddQuest(new QuestBookOfMedivh(allLegendSetup.Dalaran.Dalaran, preplacedUnitSystem.GetUnit(Constants.UNIT_NBSM_BOOK_OF_MEDIVH),
           artifactSetup.BookOfMedivh, faction == LegionSetup.Legion, faction == DalaranSetup.Dalaran));
-        faction.AddQuest(new QuestSkullOfGuldan(allLegendSetup.Dalaran.LegendDalaranCapital,
+        faction.AddQuest(new QuestSkullOfGuldan(allLegendSetup.Dalaran.Dalaran,
           preplacedUnitSystem.GetUnit(Constants.UNIT_N0DK_SKULL_OF_GUL_DAN_PEDESTAL),
           faction == LegionSetup.Legion || faction == IllidanSetup.Illidan, artifactSetup.SkullOfGuldan));
         faction.AddQuest(ragnarosQuest);

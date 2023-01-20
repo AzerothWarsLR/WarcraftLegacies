@@ -21,8 +21,8 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       stormwind.AddQuest(new QuestStormwindCity(Regions.StormwindUnlock));
       stormwind.AddQuest(new QuestNethergarde(allLegendSetup.Stormwind.Varian));
       stormwind.AddQuest(new QuestStromgarde(Regions.Stromgarde));
-      stormwind.AddQuest(new QuestHonorHold(Regions.HonorHold, allLegendSetup.FelHorde.LegendHellfirecitadel));
-      stormwind.AddQuest(new QuestKhadgar(allLegendSetup.FelHorde.LegendBlacktemple));
+      stormwind.AddQuest(new QuestHonorHold(Regions.HonorHold, allLegendSetup.FelHorde.HellfireCitadel));
+      stormwind.AddQuest(new QuestKhadgar(allLegendSetup.FelHorde.BlackTemple));
       stormwind.AddQuest(new QuestClosePortal(preplacedUnitSystem, allLegendSetup.Stormwind.Khadgar));
       stormwind.AddQuest(new QuestConstructionSites(new[]
       {

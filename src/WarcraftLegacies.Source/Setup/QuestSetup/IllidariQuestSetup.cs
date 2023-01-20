@@ -10,14 +10,14 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
     {
       var illidari = IllidariSetup.Illidari;
       illidari.StartingQuest = illidari.AddQuest(new QuestLostOnes(Regions.AkamaUnlock));
-      illidari.AddQuest(new QuestBlackTemple(Regions.IllidanBlackTempleUnlock, allLegendSetup.Naga.LegendIllidan));
-      illidari.AddQuest(new QuestEyeofSargeras(artifactSetup.EyeOfSargeras, allLegendSetup.Naga.LegendIllidan));
-      illidari.AddQuest(new QuestZangarmarsh(Regions.TelredorUnlock, allLegendSetup.Naga.LegendVashj));
-      illidari.AddQuest(new QuestStranglethornOutpost(Regions.IllidariUnlockSA, allLegendSetup.Naga.LegendVashj));
+      illidari.AddQuest(new QuestBlackTemple(Regions.IllidanBlackTempleUnlock, allLegendSetup.Naga.Illidan));
+      illidari.AddQuest(new QuestEyeofSargeras(artifactSetup.EyeOfSargeras, allLegendSetup.Naga.Illidan));
+      illidari.AddQuest(new QuestZangarmarsh(Regions.TelredorUnlock, allLegendSetup.Naga.Vashj));
+      illidari.AddQuest(new QuestStranglethornOutpost(Regions.IllidariUnlockSA, allLegendSetup.Naga.Vashj));
       illidari.AddQuest(new QuestNajentus(new[]
       {
         allLegendSetup.Stormwind.Stormwindkeep,
-        allLegendSetup.Ironforge.LegendGreatforge
+        allLegendSetup.Ironforge.GreatForge
       }));
       illidari.AddQuest(new QuestRegroupCastaway());
       illidari.AddQuest(new QuestBlackrookHold(allLegendSetup.Sentinels.BlackrookHold));

@@ -13,7 +13,7 @@ using static War3Api.Common;
 namespace WarcraftLegacies.Source.Quests.Naga
 {
   /// <summary>
-  /// Bring <see cref="LegendNaga.LegendIllidan"/> to <see cref="LegendFelHorde.LegendBlacktemple"/> to gain control of it.
+  /// Bring <see cref="LegendNaga.Illidan"/> to <see cref="LegendFelHorde.BlackTemple"/> to gain control of it.
   /// </summary>
   public sealed class QuestBlackTemple : QuestData
   {

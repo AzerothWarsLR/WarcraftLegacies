@@ -13,7 +13,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
     {
       QuestSpiderWar questSpiderWar = new(Regions.Ice_Crown,
         preplacedUnitSystem.GetUnit(Constants.UNIT_N074_QUEEN_NEZAR_AZRET));
-      QuestKelthuzadLich questKelthuzadLich = new(allLegendSetup.Quelthalas.LegendSunwell, allLegendSetup.Scourge.Kelthuzad);
+      QuestKelthuzadLich questKelthuzadLich = new(allLegendSetup.Quelthalas.Sunwell, allLegendSetup.Scourge.Kelthuzad);
       QuestKelthuzadDies questKelthuzadDies = new(questKelthuzadLich, allLegendSetup.Scourge.Kelthuzad);
       QuestDrakUnlock questDrakUnlock = new(Regions.DrakUnlock, allLegendSetup.Neutral.DraktharonKeep);
 
@@ -51,7 +51,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       QuestCorruptArthas questCorruptArthas = new(allLegendSetup.Lordaeron.Stratholme, allLegendSetup.Lordaeron.Arthas);
       QuestLichKingArthas questLichKingArthas =
         new(preplacedUnitSystem.GetUnit(Constants.UNIT_H00O_UTGARDE_KEEP_SCOURGE_OTHER), artifactSetup.HelmOfDomination,
-          allLegendSetup.Scourge.Arthas, allLegendSetup.Scourge.LegendLichking);
+          allLegendSetup.Scourge.Arthas, allLegendSetup.Scourge.TheFrozenThrone);
 
       //Setup
       ScourgeSetup.Scourge.AddQuest(questSpiderWar);

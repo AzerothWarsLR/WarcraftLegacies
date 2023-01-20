@@ -18,8 +18,8 @@ namespace WarcraftLegacies.Source.Setup.Legends
     public LegendaryHero Anubarak { get; }
     public LegendaryHero Rivendare { get; }
     public LegendaryHero Arthas { get; }
-    public Capital LegendLichking { get; }
-    public Capital LegendUtgarde { get; }
+    public Capital TheFrozenThrone { get; }
+    public Capital Utgarde { get; }
 
     /// <summary>
     /// Sets up <see cref="LegendScourge"/>.
@@ -52,29 +52,29 @@ namespace WarcraftLegacies.Source.Setup.Legends
         StartingXp = 7000
       };
 
-      LegendUtgarde = new Capital
+      Utgarde = new Capital
       {
         Unit = preplacedUnitSystem.GetUnit(FourCC("h00O")),
         Capturable = true
       };
 
-      LegendLichking = new Capital
+      TheFrozenThrone = new Capital
       {
         Unit = preplacedUnitSystem.GetUnit(FourCC("u000")),
         Hivemind = true,
         DeathMessage =
           "The great Lich King has been destroyed. With no central mind to command them, the forces of the Undead have gone rogue."
       };
-      LegendLichking.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_N094_ICECROWN_OBELISK_RED, new Point(-3655, 20220)));
-      LegendLichking.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_N094_ICECROWN_OBELISK_RED, new Point(-3015, 20762)));
-      LegendLichking.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_N094_ICECROWN_OBELISK_RED, new Point(-3643, 22588)));
-      LegendLichking.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_N094_ICECROWN_OBELISK_RED, new Point(-3638, 23374)));
+      TheFrozenThrone.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_N094_ICECROWN_OBELISK_RED, new Point(-3655, 20220)));
+      TheFrozenThrone.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_N094_ICECROWN_OBELISK_RED, new Point(-3015, 20762)));
+      TheFrozenThrone.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_N094_ICECROWN_OBELISK_RED, new Point(-3643, 22588)));
+      TheFrozenThrone.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_N094_ICECROWN_OBELISK_RED, new Point(-3638, 23374)));
       CreateTrigger()
-        .RegisterUnitEvent(LegendLichking.Unit, EVENT_UNIT_CHANGE_OWNER)
+        .RegisterUnitEvent(TheFrozenThrone.Unit, EVENT_UNIT_CHANGE_OWNER)
         .AddAction(() =>
       {
-        if (LegendLichking.Unit.OwningPlayer() != Player(bj_PLAYER_NEUTRAL_VICTIM))
-          LegendLichking.Unit.SetOwner(Player(bj_PLAYER_NEUTRAL_VICTIM));
+        if (TheFrozenThrone.Unit.OwningPlayer() != Player(bj_PLAYER_NEUTRAL_VICTIM))
+          TheFrozenThrone.Unit.SetOwner(Player(bj_PLAYER_NEUTRAL_VICTIM));
       });
     }
 
@@ -85,8 +85,8 @@ namespace WarcraftLegacies.Source.Setup.Legends
       LegendaryHeroManager.Register(Anubarak);
       LegendaryHeroManager.Register(Rivendare);
       LegendaryHeroManager.Register(Arthas);
-      CapitalManager.Register(LegendLichking);
-      CapitalManager.Register(LegendUtgarde);
+      CapitalManager.Register(TheFrozenThrone);
+      CapitalManager.Register(Utgarde);
     }
   }
 }
