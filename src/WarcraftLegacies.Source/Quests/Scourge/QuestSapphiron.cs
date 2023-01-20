@@ -1,4 +1,4 @@
-using MacroTools.FactionSystem;
+﻿using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
@@ -25,7 +25,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
       "Sapphiron has been slain, and has been reanimated as a mighty Frost Wyrm under the command of the Scourge.";
 
     /// <inheritdoc/>
-    protected override string RewardDescription => "The demihero Sapphiron";
+    protected override string RewardDescription => "The demihero Sapphiron and the ability to train Frost Wyrms";
 
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)

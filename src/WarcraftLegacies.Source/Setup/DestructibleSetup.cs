@@ -13,7 +13,7 @@ namespace WarcraftLegacies.Source.Setup
     {
       var thandolSpan = preplacedUnitSystem.GetDestructable(FourCC("LT08"), new Point(15695, 457));
       SetDestructableInvulnerable(thandolSpan, true);
-      KillDestructable(thandolSpan);
+      //KillDestructable(thandolSpan);
     }
   }
 }

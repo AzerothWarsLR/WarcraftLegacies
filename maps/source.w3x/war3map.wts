@@ -311,7 +311,7 @@ Summon Val'kyr
 }
 
 STRING 52
-// Units: ubdd (Sapphiron), Ubertip (Tooltip - Extended)
+// Units: u01Y (Deathwing), Ubertip (Tooltip - Extended)
 {
 Flying demi-hero, has the following abilities: Freazing Breath, Breat of Frost and Frost Breath.|n|n|cffffcc00Attacks land and air units.|r
 }
@@ -1373,6 +1373,12 @@ STRING 228
 Train Herald of Ny'alotha
 }
 
+STRING 229
+// Units: utod (Temple of the Damned), Ubertip (Tooltip - Extended)
+{
+Dark arts training structure.|n|cfff5962dTrains:|R Necromancers, Banshees, Obsidian Statue|n|cfff5962dResearches:|R Necromancer Training, Banshee Training, Skeletal Longevity, Skeletal Mastery
+}
+
 STRING 230
 // Upgrades: R051 (Necromancer Adept Training,Necromancer Master Training), Ubertip (Tooltip - Extended)
 {
@@ -1903,12 +1909,6 @@ STRING 319
 E
 }
 
-STRING 320
-// Units: ugrv (Graveyard), Ubertip (Tooltip - Extended)
-{
-Resource collection and infuser of combat enhancements.|n|cfff5962dAbilities:|R Spawn Corpses |n|cfff5962dResearches:|R Weapon Upgdrades, Armor Upgrades, Chaos Infusion
-}
-
 STRING 321
 // Units: ugrm (Stone Form Gargoyle), EditorSuffix (Name - Editor Suffix)
 {
@@ -2153,12 +2153,6 @@ STRING 361
 // Units: ubdd (Sapphiron), Tip (Tooltip - Basic)
 {
 Revive Sapphiron
-}
-
-STRING 362
-// Units: u01Y (Deathwing), Ubertip (Tooltip - Extended)
-{
-Flying demi-hero, has the following abilities: Freazing Breath, Breat of Frost and Frost Breath.|n|n|cffffcc00Attacks land and air units.|r
 }
 
 STRING 363
@@ -3162,6 +3156,12 @@ STRING 529
 // Units: nwe2 (Thunder Eagle), Tip (Tooltip - Basic)
 {
 Train Thunder Eagle
+}
+
+STRING 530
+// Units: unp2 (Black Citadel), Ubertip (Tooltip - Extended)
+{
+Flying bastion of death's reign.|n|cfff5962dTrains:|R Death Knights|n|cfff5962dResearches:|R Chilling Aura, Full Scale Escalation|n|cfff5962dAbilities:|R Raise Dead, Blighted Grounds|n|R|n|cffffcc00Attacks land and air units.|r
 }
 
 STRING 531
@@ -5500,6 +5500,12 @@ STRING 919
 Train Architect
 }
 
+STRING 920
+// Units: ugho (Ghoul), Ubertip (Tooltip - Extended)
+{
+Horrid risen corpse reshaped from death.|n|cfff5962dAbilities:|R Charge, Skeletal Frame, Gather|n|cfff5962d|n|cffffcc00Attacks land units and trees.|r
+}
+
 STRING 921
 // Units: nbdw (Dragonspawn Warrior), Name (Name)
 {
@@ -6032,6 +6038,12 @@ STRING 1008
 Q
 }
 
+STRING 1009
+// Units: ugar (Gargoyle), Ubertip (Tooltip - Extended)
+{
+Foul creature of the skies.|n|cfff5962dAbilities:|R Stone Form, Prioritize|n|cfff5962dCan learn:|R Piercing Screech|n|n|cff99b4d1Can only train 12.|r|n|cffffcc00Attacks land and air units.|r
+}
+
 STRING 1010
 // Units: Hvwd (Ranger-General of Silvermoon), EditorSuffix (Name - Editor Suffix)
 {
@@ -6446,6 +6458,12 @@ STRING 1078
 Q
 }
 
+STRING 1079
+// Units: ubdd (Sapphiron), Ubertip (Tooltip - Extended)
+{
+Flying demi-hero.|n|cfff5962dAbilities:|R Freazing Breath, Hypothermic Breath and Frost Breath.|n|n|cffffcc00Attacks land and air units.|r
+}
+
 STRING 1080
 // Units: ensh (Naisha), EditorSuffix (Name - Editor Suffix)
 {
@@ -6528,6 +6546,12 @@ STRING 1093
 // Units: ehpr (Hippogryph Rider), Tip (Tooltip - Basic)
 {
 Train Hippogryph Rider
+}
+
+STRING 1094
+// Units: Uear (Champion of the Scourge), Ubertip (Tooltip - Extended)
+{
+Warrior Hero, adept at supporting armies and inflicting magical damage.|n|cfff5962dAbilities:|r Power of Frostmourne|n|cfff5962dCan learn:|R Taste of Death, Soul Drain, Unholy Aura, Frost Storm|n|n|cffffcc00Attacks land units.|R
 }
 
 STRING 1095
@@ -6690,6 +6714,12 @@ STRING 1121
 // Units: edob (Hunter's Hall), Tip (Tooltip - Basic)
 {
 Build Hunter's Hall
+}
+
+STRING 1122
+// Units: u01J (Graveyard), Ubertip (Tooltip - Extended)
+{
+Resource collection and infuser of combat enhancements.|n|cfff5962dAbilities:|R Spawn Corpses |n|cfff5962dResearches:|R Forged Weaponry, Armor Plating, Chaos Infusion, Improved Cannons, Fortified Hulls
 }
 
 STRING 1123
@@ -6870,6 +6900,12 @@ STRING 1152
 // Units: u00E (Soul Prison), Hotkey (Hotkey)
 {
 W
+}
+
+STRING 1153
+// Abilities: A001 (Frost Nova), Tip (Tooltip - Normal)
+{
+Frost Nova
 }
 
 STRING 1154
@@ -9557,12 +9593,6 @@ STRING 1601
 // Units: U02D (Death Knight Lord), Tip (Tooltip - Basic)
 {
 Summon Teron Gorefiend
-}
-
-STRING 1602
-// Units: Uear (Champion of the Scourge), Ubertip (Tooltip - Extended)
-{
-Warrior Hero, adept at supporting armies and inflicting magical damage.|n|cfff5962dCan learn:|R Taste of Death, Soul Drain, Unholy Aura, Reaping Hour|n|n|cffffcc00Attacks land units.|R
 }
 
 STRING 1603
@@ -33905,12 +33935,6 @@ STRING 5680
 Burns nearby enemy units for 15 points of damage per second.
 }
 
-STRING 5681
-// Units: ugar (Gargoyle), Ubertip (Tooltip - Extended)
-{
-Foul creature of the skies.|n|cfff5962dAbilities:|R Stone Form|n|cfff5962dCan learn:|R Piercing Screech|n|n|cff99b4d1Can only train 12.|r|n|cffffcc00Attacks land and air units.|r
-}
-
 STRING 5682
 // Units: h0AS (Scout Ship), Hotkey (Hotkey)
 {
@@ -36783,12 +36807,6 @@ STRING 6160
 // Abilities: A0BA (Mana Burn), Researchtip (Tooltip - Learn)
 {
 Learn Mana Burn (|cffffcc00Q|r) - [|cffffcc00Level %d|r]
-}
-
-STRING 6161
-// Units: utod (Temple of the Damned), Ubertip (Tooltip - Extended)
-{
-Dark arts training structure.|n|cfff5962dTrains:|R Necromancers, Banshees|n|cfff5962dResearches:|R Necromancer Training, Banshee Training, Skeletal Longevity, Skeletal Mastery
 }
 
 STRING 6162
@@ -77863,7 +77881,7 @@ Unleash a Sonic Boom, stunning nearby enemy land units 6 seconds.
 }
 
 STRING 13011
-// Abilities: A001 (Frost Explosion), EditorSuffix (Editor Suffix)
+// Abilities: A001 (Frost Nova), EditorSuffix (Editor Suffix)
 {
 (Red - The Frozen Throne)
 }
@@ -77902,18 +77920,6 @@ STRING 13017
 // Abilities: Amic (Call To Arms), Unhotkey (Hotkey - Turn Off)
 {
 X
-}
-
-STRING 13018
-// Abilities: A001 (Frost Explosion), Name (Name)
-{
-Frost Explosion
-}
-
-STRING 13019
-// Abilities: A001 (Frost Explosion), Tip (Tooltip - Normal)
-{
-Frost Explosion
 }
 
 STRING 13020
@@ -84709,7 +84715,7 @@ STRING 14153
 }
 
 STRING 14154
-// Abilities: A001 (Frost Explosion), Hotkey (Hotkey - Normal)
+// Abilities: A001 (Frost Nova), Hotkey (Hotkey - Normal)
 {
 X
 }
@@ -85009,7 +85015,7 @@ Allows Obsidian Statues to use Mana Flare, which causes them to channel negative
 }
 
 STRING 14204
-// Upgrades: R091 (Defend), Hotkey (Hotkey)
+// Upgrades: R092 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 A
 }
@@ -86892,7 +86898,7 @@ Resource harvesting center and producer of Horde enhancements. |n|cfff5962dResea
 }
 
 STRING 14523
-// Units: u01J (Graveyard), Ubertip (Tooltip - Extended)
+// Units: ugrv (Graveyard), Ubertip (Tooltip - Extended)
 {
 Resource collection and infuser of combat enhancements.|n|cfff5962dAbilities:|R Spawn Corpses |n|cfff5962dResearches:|R Forged Weaponry, Armor Plating, Chaos Infusion, Improved Cannons, Fortified Hulls
 }
@@ -87192,7 +87198,7 @@ Z
 }
 
 STRING 14573
-// Upgrades: R092 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R02K (Storm Hammers), Hotkey (Hotkey)
 {
 A
 }
@@ -92728,12 +92734,6 @@ STRING 15512
 X
 }
 
-STRING 15513
-// Units: unp2 (Black Citadel), Ubertip (Tooltip - Extended)
-{
-Flying bastion of death's reign.|n|cfff5962dTrains:|R Death Knights|n|cfff5962dResearches:|R Chilling Aura|n|cfff5962dAbilities:|R Raise Dead, Blighted Grounds|n|R|n|cffffcc00Attacks land and air units.|r
-}
-
 STRING 15514
 // Upgrades: R035 (Chaos), Name (Name)
 {
@@ -92855,7 +92855,7 @@ Creates a barrier that stops 800 points of spell damage from affecting a target 
 }
 
 STRING 15534
-// Upgrades: R02K (Storm Hammers), Hotkey (Hotkey)
+// Upgrades: R08T (Cannibalize), Hotkey (Hotkey)
 {
 A
 }
@@ -93023,7 +93023,7 @@ Drains 40 hit points and 20 mana per second from up to 7 units in the target are
 }
 
 STRING 15562
-// Abilities: A001 (Frost Explosion), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A001 (Frost Nova), Ubertip (Tooltip - Normal - Extended)
 {
 Blasts enemy units with a wave of frost that deals <A001,DataB1> damage to the target, and <A001,DataA1> nova damage. Cold damage slows units' movement and attack rate for <A001,Dur1> seconds.
 }
@@ -97025,7 +97025,7 @@ Brigitte Abbendis
 }
 
 STRING 16236
-// Upgrades: R08T (Cannibalize), Hotkey (Hotkey)
+// Upgrades: R096 (Defend), Hotkey (Hotkey)
 {
 A
 }
@@ -97061,7 +97061,7 @@ X
 }
 
 STRING 16242
-// Upgrades: R096 (Defend), Hotkey (Hotkey)
+// Upgrades: R098 (Burning Oil), Hotkey (Hotkey)
 {
 A
 }
@@ -97091,7 +97091,7 @@ C
 }
 
 STRING 16247
-// Upgrades: R098 (Burning Oil), Hotkey (Hotkey)
+// Upgrades: R02Y (Long Rifles), Hotkey (Hotkey)
 {
 A
 }
@@ -97220,12 +97220,6 @@ STRING 16268
 // Units: h086 (Field Stockpile), Tip (Tooltip - Basic)
 {
 Build Field Stockpile
-}
-
-STRING 16269
-// Upgrades: R02Y (Long Rifles), Hotkey (Hotkey)
-{
-A
 }
 
 STRING 16270
@@ -110474,12 +110468,6 @@ STRING 18578
 Practitioner of vile necrotic magic.|n|cfff5962dAbilities:|R Raise Dead|n|cfff5962dCan Learn:|R Unholy Frenzy, Soul Burn|n|n|cffffcc00Attacks land and air units.|R
 }
 
-STRING 18579
-// Units: ugho (Ghoul), Ubertip (Tooltip - Extended)
-{
-Horrid risen corpse reshaped from death.|n|cfff5962dAbilities:|R Charge, Skeletal Frame|n|cfff5962d|n|cffffcc00Attacks land units and trees.|r
-}
-
 STRING 18580
 // Units: ucry (Crypt Fiend), Ubertip (Tooltip - Extended)
 {
@@ -111681,12 +111669,6 @@ STRING 18814
 V
 }
 
-STRING 18815
-// Upgrades: R091 (Defend), EditorSuffix (Editor Suffix)
-{
-(Druid)
-}
-
 STRING 18816
 // Abilities: A0XR (Breath of Life), Name (Name)
 {
@@ -112575,12 +112557,6 @@ STRING 19009
 C
 }
 
-STRING 19011
-// Upgrades: R091 (Defend), Name (Name)
-{
-Unleash the Spirits of Ashenvale
-}
-
 STRING 19012
 // Upgrades: R08S (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
@@ -112833,12 +112809,6 @@ STRING 19061
 Warrior Hero, adept at bolstering troups and melee combat.|n|cfff5962dAbilities:|r Command Aura|n|cfff5962dCan Learn:|R Breath of Fire, Dark Grip, Vampiric Aura, Field of Blood|n|n|cffffcc00Attacks land and air units.|R
 }
 
-STRING 19062
-// Upgrades: R091 (Defend), Tip (Tooltip)
-{
-Unleash the Spirits of Ashenvale
-}
-
 STRING 19063
 // Upgrades: R097 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
@@ -113071,12 +113041,6 @@ STRING 19108
 // Units: o05J (Dragon Hatchery), Name (Name)
 {
 Dragon Hatchery
-}
-
-STRING 19110
-// Upgrades: R091 (Defend), Ubertip (Tooltip - Extended)
-{
-The Forest will be unleashed upon the Warsong Lumber Camp.|n|n|cffffcc00Required to complete the quest Spirits of Ashenvale.
 }
 
 STRING 19111

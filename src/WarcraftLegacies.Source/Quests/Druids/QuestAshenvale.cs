@@ -33,7 +33,6 @@ namespace WarcraftLegacies.Source.Quests.Druids
       AddObjective(new ObjectiveLegendReachRect(malfurion, Regions.AshenvaleUnlock, "Ashenvale"));
       AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N07C_FELWOOD_10GOLD_MIN)));
       AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N01Q_NORTHERN_ASHENVALE_10GOLD_MIN)));
-      AddObjective(new ObjectiveResearch(Constants.UPGRADE_R091_UNLEASH_THE_SPIRITS_OF_ASHENVALE_DRUID, Constants.UNIT_N002_NORDRASSIL_DRUID_OTHER));
       AddObjective(new ObjectiveUpgrade(Constants.UNIT_ETOE_TREE_OF_ETERNITY_DRUIDS, Constants.UNIT_ETOL_TREE_OF_LIFE_DRUIDS));
       AddObjective(new ObjectiveExpire(1440));
       AddObjective(new ObjectiveSelfExists());

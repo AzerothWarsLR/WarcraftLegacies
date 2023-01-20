@@ -1,4 +1,5 @@
-﻿using MacroTools.ObjectiveSystem.Objectives.UnitBased;
+﻿using MacroTools.ObjectiveSystem.Objectives.TimeBased;
+using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -14,6 +15,7 @@ namespace WarcraftLegacies.Source.Quests.Legion
       , "ReplaceableTextures\\CommandButtons\\BTNDemonBlackCitadel.blp")
     {
       AddObjective(new ObjectiveBuildInRect(questRect, "In Drak'tharon Keep", Constants.UNIT_U00F_DORMANT_SPIRE_LEGION_T1));
+      AddObjective(new ObjectiveTime(480));
       ResearchId = Constants.UPGRADE_R042_QUEST_COMPLETED_INFERNAL_FOOTHOLD_LEGION;
     }
 

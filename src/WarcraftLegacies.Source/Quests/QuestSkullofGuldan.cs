@@ -50,7 +50,7 @@ namespace WarcraftLegacies.Source.Quests
 
     /// <inheritdoc/>
     protected override string PenaltyFlavour => 
-      "Another faction has retrieved the Skull of Gul'dan from its pedestal. Hopefully they do not turn its nefarious power against us.";
+      "Another faction has retrieved the Skull of Gul'dan from its pedestal. We will have to be careful of this fearsom artifact in the future";
 
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
