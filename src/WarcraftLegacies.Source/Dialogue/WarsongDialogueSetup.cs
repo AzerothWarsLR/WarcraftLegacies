@@ -11,7 +11,7 @@ namespace WarcraftLegacies.Source.Dialogue
 {
   public static class WarsongDialogueSetup
   {
-    public static void Setup(AllLegendSetup setup)
+    public static void Setup(AllLegendSetup legendSetup)
     {
       TriggeredDialogueManager.Add(new TriggeredDialogue(
         new MacroTools.DialogueSystem.Dialogue(@"Sound\Dialogue\OrcCampaign\Orc05\O05Grom26.flac",
@@ -21,14 +21,14 @@ namespace WarcraftLegacies.Source.Dialogue
           WarsongSetup.WarsongClan
         }, new List<Objective>
         {
-          new ObjectiveControlLegend(LegendWarsong.GromHellscream, false)
+          new ObjectiveControlLegend(legendSetup.Warsong.GromHellscream, false)
           {
             EligibleFactions = new List<Faction>
             {
               WarsongSetup.WarsongClan
             }
           },
-          new ObjectiveControlCapital(LegendNeutral.FountainOfBlood, false)
+          new ObjectiveControlCapital(legendSetup.Neutral.FountainOfBlood, false)
           {
             EligibleFactions = new List<Faction>
             {
@@ -48,7 +48,7 @@ namespace WarcraftLegacies.Source.Dialogue
             WarsongSetup.WarsongClan
           }, new[]
           {
-            new ObjectiveControlLegend(LegendWarsong.ChenStormstout, false)
+            new ObjectiveControlLegend(legendSetup.Warsong.ChenStormstout, false)
             {
               EligibleFactions = new List<Faction>{ WarsongSetup.WarsongClan }
             }

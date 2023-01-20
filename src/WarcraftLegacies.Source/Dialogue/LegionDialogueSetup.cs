@@ -12,7 +12,7 @@ namespace WarcraftLegacies.Source.Dialogue
 {
   public static class LegionDialogueSeup
   {
-    public static void Setup(AllLegendSetup setup)
+    public static void Setup(AllLegendSetup legendSetup)
     {
       TriggeredDialogueManager.Add(new TriggeredDialogue(
         new DialogueSequence(
@@ -32,7 +32,7 @@ namespace WarcraftLegacies.Source.Dialogue
           IllidariSetup.Illidari
         }, new List<Objective>
         {
-          new ObjectiveLegendMeetsLegend(LegendLegion.LEGEND_TICHONDRIUS, LegendNaga.LegendIllidan)
+          new ObjectiveLegendMeetsLegend(legendSetup.Legion.LEGEND_TICHONDRIUS, legendSetup.Naga.LegendIllidan)
         }
       ));
 
@@ -51,7 +51,7 @@ namespace WarcraftLegacies.Source.Dialogue
           FrostwolfSetup.Frostwolf
         }, new List<Objective>
         {
-          new ObjectiveLegendMeetsLegend(LegendLegion.LEGEND_ARCHIMONDE, LegendFrostwolf.LegendThrall)
+          new ObjectiveLegendMeetsLegend(legendSetup.Legion.LEGEND_ARCHIMONDE, legendSetup.Frostwolf.LegendThrall)
         }
       ));
 
@@ -70,7 +70,7 @@ namespace WarcraftLegacies.Source.Dialogue
           DalaranSetup.Dalaran
         }, new List<Objective>
         {
-          new ObjectiveLegendMeetsLegend(LegendLegion.LEGEND_ARCHIMONDE, LegendDalaran.LegendJaina)
+          new ObjectiveLegendMeetsLegend(legendSetup.Legion.LEGEND_ARCHIMONDE, legendSetup.Dalaran.LegendJaina)
         }
       ));
 
@@ -98,7 +98,7 @@ namespace WarcraftLegacies.Source.Dialogue
           ScourgeSetup.Scourge
         }, new List<Objective>
         {
-          new ObjectiveLegendMeetsLegend(LegendLegion.LEGEND_ARCHIMONDE, LegendScourge.Kelthuzad)
+          new ObjectiveLegendMeetsLegend(legendSetup.Legion.LEGEND_ARCHIMONDE, legendSetup.Scourge.Kelthuzad)
         }
       ));
     }

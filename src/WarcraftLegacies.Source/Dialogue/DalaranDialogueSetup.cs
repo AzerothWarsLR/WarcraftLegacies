@@ -19,7 +19,7 @@ namespace WarcraftLegacies.Source.Dialogue
     /// <summary>
     /// Sets up <see cref="DalaranDialogueSetup"/>.
     /// </summary>
-    public static void Setup(AllLegendSetup setup)
+    public static void Setup(AllLegendSetup legendSetup)
     {
       TriggeredDialogueManager.Add(
         new TriggeredDialogue(new DialogueSequence(new MacroTools.DialogueSystem.Dialogue(
@@ -43,7 +43,7 @@ namespace WarcraftLegacies.Source.Dialogue
             DalaranSetup.Dalaran
           }, new[]
           {
-            new ObjectiveControlLegend(LegendDalaran.LegendMedivh, false)
+            new ObjectiveControlLegend(legendSetup.Dalaran.LegendMedivh, false)
             {
               EligibleFactions = new List<Faction>
               {
@@ -62,7 +62,7 @@ namespace WarcraftLegacies.Source.Dialogue
           DalaranSetup.Dalaran,
         }, new[]
         {
-          new ObjectiveLegendInRect(LegendDalaran.LegendJaina, Regions.Hearthglen, "Hearthglen")
+          new ObjectiveLegendInRect(legendSetup.Dalaran.LegendJaina, Regions.Hearthglen, "Hearthglen")
         }));
       
       TriggeredDialogueManager.Add(new TriggeredDialogue(
@@ -79,9 +79,9 @@ namespace WarcraftLegacies.Source.Dialogue
           DalaranSetup.Dalaran
         }, new List<Objective>
         {
-          new ObjectiveLegendDead(LegendDalaran.LegendAntonidas)
+          new ObjectiveLegendDead(legendSetup.Dalaran.LegendAntonidas)
           {
-            DeathFilter = dyingLegend => MathEx.GetDistanceBetweenPoints(LegendScourge.Arthas.Unit.GetPosition(),
+            DeathFilter = dyingLegend => MathEx.GetDistanceBetweenPoints(legendSetup.Scourge.Arthas.Unit.GetPosition(),
               dyingLegend.Unit.GetPosition()) < 500
           }
         }

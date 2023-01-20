@@ -14,7 +14,7 @@ namespace WarcraftLegacies.Source.Dialogue
     /// <summary>
     /// Sets up <see cref="QuelthalasDialogueSetup"/>.
     /// </summary>
-    public static void Setup(AllLegendSetup setup)
+    public static void Setup(AllLegendSetup legendSetup)
     {
       TriggeredDialogueManager.Add(
         new TriggeredDialogue(new DialogueSequence(new MacroTools.DialogueSystem.Dialogue(
@@ -30,7 +30,7 @@ namespace WarcraftLegacies.Source.Dialogue
             ScourgeSetup.Scourge
           }, new[]
           {
-            new ObjectiveLegendMeetsLegend(LegendScourge.Arthas, LegendQuelthalas.LegendKael)
+            new ObjectiveLegendMeetsLegend(legendSetup.Scourge.Arthas, legendSetup.Quelthalas.LegendKael)
           }));
     }
   }

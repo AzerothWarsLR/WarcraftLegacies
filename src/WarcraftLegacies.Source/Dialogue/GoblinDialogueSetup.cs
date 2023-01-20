@@ -15,7 +15,7 @@ namespace WarcraftLegacies.Source.Dialogue
     /// <summary>
     /// Sets up <see cref="GoblinDialogueSetup"/>.
     /// </summary>
-    public static void Setup(AllLegendSetup setup)
+    public static void Setup(AllLegendSetup legendSetup)
     {
       TriggeredDialogueManager.Add(
         new TriggeredDialogue(new MacroTools.DialogueSystem.Dialogue(
@@ -27,7 +27,7 @@ namespace WarcraftLegacies.Source.Dialogue
             GoblinSetup.Goblin
           }, new[]
           {
-            new ObjectiveControlLegend(LegendGoblin.Gazlowe, false)
+            new ObjectiveControlLegend(legendSetup.Goblin.Gazlowe, false)
             {
               EligibleFactions = new List<Faction>{ GoblinSetup.Goblin }
             }

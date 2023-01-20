@@ -16,7 +16,7 @@ namespace WarcraftLegacies.Source.Dialogue
     /// <summary>
     /// Sets up <see cref="SentinelsDialogueSetup"/>.
     /// </summary>
-    public static void Setup(AllLegendSetup setup)
+    public static void Setup(AllLegendSetup legendSetup)
     {
       TriggeredDialogueManager.Add(
         new TriggeredDialogue(new MacroTools.DialogueSystem.Dialogue(
@@ -28,7 +28,7 @@ namespace WarcraftLegacies.Source.Dialogue
           DruidsSetup.Druids
         }, new[]
         {
-          new ObjectiveLegendMeetsLegend(LegendSentinels.Maiev, LegendDruids.LegendMalfurion)
+          new ObjectiveLegendMeetsLegend(legendSetup.Sentinels.Maiev, legendSetup.Druids.LegendMalfurion)
         }));
       
       TriggeredDialogueManager.Add(
@@ -40,7 +40,7 @@ namespace WarcraftLegacies.Source.Dialogue
           SentinelsSetup.Sentinels
         }, new[]
         {
-          new ObjectiveLegendMeetsLegend(LegendSentinels.Maiev, LegendSentinels.Tyrande)
+          new ObjectiveLegendMeetsLegend(legendSetup.Sentinels.Maiev, legendSetup.Sentinels.Tyrande)
         }));
       
       TriggeredDialogueManager.Add(
@@ -53,7 +53,7 @@ namespace WarcraftLegacies.Source.Dialogue
           IllidariSetup.Illidari
         }, new[]
         {
-          new ObjectiveLegendMeetsLegend(LegendSentinels.Maiev, LegendNaga.LegendIllidan)
+          new ObjectiveLegendMeetsLegend(legendSetup.Sentinels.Maiev, legendSetup.Naga.LegendIllidan)
         }));
       
       TriggeredDialogueManager.Add(new TriggeredDialogue(
@@ -71,7 +71,7 @@ namespace WarcraftLegacies.Source.Dialogue
           SentinelsSetup.Sentinels
         }, new List<Objective>
         {
-          new ObjectiveLegendMeetsLegend(LegendSentinels.Tyrande, LegendLegion.LEGEND_ARCHIMONDE)
+          new ObjectiveLegendMeetsLegend(legendSetup.Sentinels.Tyrande, legendSetup.Legion.LEGEND_ARCHIMONDE)
         }
       ));
       
@@ -95,7 +95,7 @@ namespace WarcraftLegacies.Source.Dialogue
           SentinelsSetup.Sentinels
         }, new List<Objective>
         {
-          new ObjectiveLegendReachRect(LegendSentinels.Maiev, Regions.BrokenIslesA, "the Broken Isles")
+          new ObjectiveLegendReachRect(legendSetup.Sentinels.Maiev, Regions.BrokenIslesA, "the Broken Isles")
         }
       ));
     }

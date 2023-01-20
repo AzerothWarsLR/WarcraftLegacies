@@ -18,7 +18,7 @@ namespace WarcraftLegacies.Source.Dialogue
     /// <summary>
     /// Sets up <see cref="FrostwolfDialogueSetup"/>.
     /// </summary>
-    public static void Setup(AllLegendSetup setup)
+    public static void Setup(AllLegendSetup legendSetup)
     {
       TriggeredDialogueManager.Add(
         new TriggeredDialogue(new MacroTools.DialogueSystem.Dialogue(
@@ -50,7 +50,7 @@ namespace WarcraftLegacies.Source.Dialogue
             FrostwolfSetup.Frostwolf
           }, new[]
           {
-            new ObjectiveControlLegend(LegendFrostwolf.LegendRexxar, false)
+            new ObjectiveControlLegend(legendSetup.Frostwolf.LegendRexxar, false)
             {
               EligibleFactions = new List<Faction>{FrostwolfSetup.Frostwolf}
             }
@@ -70,7 +70,7 @@ namespace WarcraftLegacies.Source.Dialogue
             FrostwolfSetup.Frostwolf
           }, new[]
           {
-            new ObjectiveLegendMeetsLegend(LegendFrostwolf.LegendThrall, LegendFrostwolf.LegendRexxar)
+            new ObjectiveLegendMeetsLegend(legendSetup.Frostwolf.LegendThrall, legendSetup.Frostwolf.LegendRexxar)
           }));
     }
   }

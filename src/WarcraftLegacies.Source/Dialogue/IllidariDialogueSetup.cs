@@ -21,7 +21,7 @@ namespace WarcraftLegacies.Source.Dialogue
     /// <summary>
     /// Sets up <see cref="IllidariDialogueSetup"/>.
     /// </summary>
-    public static void Setup(AllLegendSetup setup)
+    public static void Setup(AllLegendSetup legendSetup)
     {
       TriggeredDialogueManager.Add(
         new TriggeredDialogue(new DialogueSequence(new MacroTools.DialogueSystem.Dialogue(
@@ -46,7 +46,7 @@ namespace WarcraftLegacies.Source.Dialogue
             SentinelsSetup.Sentinels
           }, new[]
           {
-            new ObjectiveLegendMeetsLegend(LegendNaga.LegendIllidan, LegendSentinels.Tyrande)
+            new ObjectiveLegendMeetsLegend(legendSetup.Naga.LegendIllidan, legendSetup.Sentinels.Tyrande)
           }));
 
       TriggeredDialogueManager.Add(
@@ -65,7 +65,7 @@ namespace WarcraftLegacies.Source.Dialogue
             DruidsSetup.Druids
           }, new[]
           {
-            new ObjectiveLegendMeetsLegend(LegendNaga.LegendIllidan, LegendDruids.LegendMalfurion)
+            new ObjectiveLegendMeetsLegend(legendSetup.Naga.LegendIllidan, legendSetup.Druids.LegendMalfurion)
           }));
 
       TriggeredDialogueManager.Add(
@@ -112,7 +112,7 @@ namespace WarcraftLegacies.Source.Dialogue
           IllidariSetup.Illidari
         }, new List<Objective>
         {
-          new ObjectiveLegendReachRect(LegendNaga.LegendIllidan, Regions.Sargeras_Entrance,
+          new ObjectiveLegendReachRect(legendSetup.Naga.LegendIllidan, Regions.Sargeras_Entrance,
             "the Tomb of Sargeras' entrance")
         }
       ));
@@ -127,7 +127,7 @@ namespace WarcraftLegacies.Source.Dialogue
           ScourgeSetup.Scourge
         }, new List<Objective>
         {
-          new ObjectiveLegendMeetsLegend(LegendNaga.LegendIllidan, LegendScourge.Anubarak)
+          new ObjectiveLegendMeetsLegend(legendSetup.Naga.LegendIllidan, legendSetup.Scourge.Anubarak)
         }
       ));
       
@@ -146,7 +146,7 @@ namespace WarcraftLegacies.Source.Dialogue
             ScourgeSetup.Scourge
           }, new[]
           {
-            new ObjectiveLegendMeetsLegend(LegendNaga.LegendIllidan, LegendScourge.Arthas)
+            new ObjectiveLegendMeetsLegend(legendSetup.Naga.LegendIllidan, legendSetup.Scourge.Arthas)
           }));
       
       TriggeredDialogueManager.Add(new TriggeredDialogue(
