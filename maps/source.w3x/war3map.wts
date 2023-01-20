@@ -1373,12 +1373,6 @@ STRING 228
 Train Herald of Ny'alotha
 }
 
-STRING 229
-// Units: u007 (Dreadlord), Ubertip (Tooltip - Extended)
-{
-Elite Nathrezim, handpicked by Tichondrius himself.|n|cfff5962dAbilities:|R Carrion Swarm, Sleep, Vampiric Attack|n|cfff5962dCan Learn:|R Astral Walk, Sargeras Sight|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land units.|r
-}
-
 STRING 230
 // Upgrades: R051 (Necromancer Adept Training,Necromancer Master Training), Ubertip (Tooltip - Extended)
 {
@@ -3168,12 +3162,6 @@ STRING 529
 // Units: nwe2 (Thunder Eagle), Tip (Tooltip - Basic)
 {
 Train Thunder Eagle
-}
-
-STRING 530
-// Units: nwe2 (Thunder Eagle), Ubertip (Tooltip - Extended)
-{
-Swift guardian eagle for Lordaeron.|n|cfff5962dCan Learn:|R Animal War Training|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land and air units.|r
 }
 
 STRING 531
@@ -5512,12 +5500,6 @@ STRING 919
 Train Architect
 }
 
-STRING 920
-// Units: nbee (Architect), Ubertip (Tooltip - Extended)
-{
-Intelligent builder of Thalassian structures.|n|cfff5962dAbilities:|r Repair, Gather|n|cfff5962dCan Learn:|R Improved Lumber Harvesting|n|n|cffffcc00Attacks land units and trees.
-}
-
 STRING 921
 // Units: nbdw (Dragonspawn Warrior), Name (Name)
 {
@@ -6050,12 +6032,6 @@ STRING 1008
 Q
 }
 
-STRING 1009
-// Units: hfoo (Footman), Ubertip (Tooltip - Extended)
-{
-Versatile foot soldier of Lordaeron.|n|cfff5962dAbilities:|R Charge, Defend, Combat Experience|n|n|cffffcc00Attacks land units.|r
-}
-
 STRING 1010
 // Units: Hvwd (Ranger-General of Silvermoon), EditorSuffix (Name - Editor Suffix)
 {
@@ -6470,12 +6446,6 @@ STRING 1078
 Q
 }
 
-STRING 1079
-// Units: esen (Huntress), Ubertip (Tooltip - Extended)
-{
-Mounted Sentinel warrior.|n|cfff5962dAbilities:|r Ensnare, Evasion, Elune's Grace|n|cfff5962dCan Learn:|r Sentinel, Moon Glaive|n|n|cffffcc00Attacks land units.|r
-}
-
 STRING 1080
 // Units: ensh (Naisha), EditorSuffix (Name - Editor Suffix)
 {
@@ -6498,6 +6468,12 @@ STRING 1083
 // Units: ensh (Naisha), Ubertip (Tooltip - Extended)
 {
 Lieutenant of the Watchers, Naisha is a strong leader and close confidant to Maeiv. She is the shield of the underside of the Sentinels and the rest of the Kaldorei
+}
+
+STRING 1084
+// Units: negt (Sun Tower), Ubertip (Tooltip - Extended)
+{
+Tower infused with the magic of the Sunwell.|n|cfff5962dCan learn:|R Magic Sentry|n|cfff5962dUpgrades Into:|R Improved Sun Tower|n|n|cffffcc00Attacks land and air units.|r
 }
 
 STRING 1085
@@ -6552,12 +6528,6 @@ STRING 1093
 // Units: ehpr (Hippogryph Rider), Tip (Tooltip - Basic)
 {
 Train Hippogryph Rider
-}
-
-STRING 1094
-// Units: ehpr (Hippogryph Rider), Ubertip (Tooltip - Extended)
-{
-Airborne archer of the Sentinels who strikes multiple foes.|n|cfff5962dAbilities:|R Multi Shot|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land and air units.|r
 }
 
 STRING 1095
@@ -6720,12 +6690,6 @@ STRING 1121
 // Units: edob (Hunter's Hall), Tip (Tooltip - Basic)
 {
 Build Hunter's Hall
-}
-
-STRING 1122
-// Units: edob (Hunter's Hall), Ubertip (Tooltip - Extended)
-{
-Kaldorei hall of enhancements, where the defenders of Kalimdor grow in strength.|n|cfff5962dResearches: |RWeapon Upgrades, Armor Upgrades, Ultravision, Elune's Infusion
 }
 
 STRING 1123
@@ -6906,12 +6870,6 @@ STRING 1152
 // Units: u00E (Soul Prison), Hotkey (Hotkey)
 {
 W
-}
-
-STRING 1153
-// Units: earc (Archer), Ubertip (Tooltip - Extended)
-{
-Agile archer of the Sentinels.|n|cfff5962dAbilities:|r Aimed Shot, Elune's Grace|n|cfff5962dCan Learn:|r Wind Walk|n|n|cffffcc00Attacks land and air units.|r
 }
 
 STRING 1154
@@ -10556,12 +10514,6 @@ STRING 1760
 Train Blademaster
 }
 
-STRING 1761
-// Units: n02F (Warlock), Ubertip (Tooltip - Extended)
-{
-An elven arcanist that practices dark magic.|n|cfff5962dAbilities:|R Lightning Storm, Life Drain, Summon Queen of Pain|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land and air units.|r
-}
-
 STRING 1762
 // Units: o00F (Black Temple), Name (Name)
 {
@@ -11716,12 +11668,6 @@ STRING 1954
 // Items: I018 (Vial of the Sunwell), Name (Name)
 {
 Vial of the Sunwell
-}
-
-STRING 1955
-// Units: hkni (Knight), Ubertip (Tooltip - Extended)
-{
-Powerful mounted warrior.|n|cfff5962dAbilities:|R Charge, War Plating|n|cfff5962dCan Learn:|R Animal War Training|n|n|cffffcc00Attacks land units.|r
 }
 
 STRING 1956
@@ -13036,12 +12982,6 @@ STRING 2174
 Sentinel Enclave
 }
 
-STRING 2175
-// Units: n06P (Sentinel Enclave), Ubertip (Tooltip - Extended)
-{
-Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Wisp, Priestess of the Moon|n|cfff5962dAbilities:|R Ancestral Spirits|n|cfff5962dResearches:|R Elune's Blessing
-}
-
 STRING 2176
 // Units: h03F (Control Point Defender), EditorSuffix (Name - Editor Suffix)
 {
@@ -13352,12 +13292,6 @@ STRING 2227
 // Units: n06C (Moonhunter), Tip (Tooltip - Basic)
 {
 Train Moonhunter
-}
-
-STRING 2228
-// Units: hcas (Castle), Ubertip (Tooltip - Extended)
-{
-Fortified stronghold of the Alliance Nations.|n|cfff5962dTrains:|R Peasant, Paladin|n|cfff5962dResearches:|R Paladin Training|n|cfff5962dAbilities:|R Summon Garrison
 }
 
 STRING 2229
@@ -14506,12 +14440,6 @@ STRING 2419
 Summon Fel Guard
 }
 
-STRING 2420
-// Units: n04H (Fel Guard), Ubertip (Tooltip - Extended)
-{
-Mainstay soldier of the Legion.|n|cfff5962dAbilities:|R Combat Experience, Heavy Plating, Cleaving Attack, Charge|n|n|cffffcc00Attacks land units.|r
-}
-
 STRING 2421
 // Upgrades: Roen (Ensnare), EditorSuffix (Editor Suffix)
 {
@@ -15131,7 +15059,7 @@ Train Guild Ranger
 }
 
 STRING 2524
-// Units: n00A (Farstrider), Ubertip (Tooltip - Extended)
+// Units: n09S (Blood Elven Ranger), Ubertip (Tooltip - Extended)
 {
 Agile, deadly and skilled Rangers of Quel'Thalas.|n|cfff5962dAbilities:|R Splintering Arrows, Smoke Bomb|n|cfff5962dCan Learn:|R Feint, Aimed Shot, Improved Bows|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land and air units.|r
 }
@@ -16621,12 +16549,6 @@ STRING 2772
 Z
 }
 
-STRING 2773
-// Units: hpea (Peasant), Ubertip (Tooltip - Extended)
-{
-Backbone worker and builder.|n|cfff5962dAbilities:|r Repair, Gather|n|cfff5962dCan Learn:|R Improved Lumber Harvesting|n|n|cffffcc00Attacks land units and trees.
-}
-
 STRING 2774
 // Units: h07D (Shipyard), Ubertip (Tooltip - Extended)
 {
@@ -16637,12 +16559,6 @@ STRING 2775
 // Units: h07T (Improved Guard Tower), Hotkey (Hotkey)
 {
 Z
-}
-
-STRING 2776
-// Units: h06V (Scout Tower), Ubertip (Tooltip - Extended)
-{
-Observation tower.|n|r|cfff5962dUpgrades into:|R Guard Tower, Cannon Tower, Arcane Tower
 }
 
 STRING 2777
@@ -18208,12 +18124,6 @@ STRING 3036
 Train Priestess of the Moon
 }
 
-STRING 3037
-// Units: h04L (Priestess of the Moon), Ubertip (Tooltip - Extended)
-{
-Warrior priestess of Elune.|n|cfff5962dAbilities:|R Light of the Goddess, Slow Poison, Scout|n|cfff5962dCan learn:|R Elune's Blessing |n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land and air units.|r
-}
-
 STRING 3038
 // Abilities: A0GH (Barrage), EditorSuffix (Editor Suffix)
 {
@@ -18732,12 +18642,6 @@ STRING 3123
 Train Rear-Marshal
 }
 
-STRING 3124
-// Units: h03U (Rear-Marshal), Ubertip (Tooltip - Extended)
-{
-Defensive commander of the humans of the South.|n|cfff5962dAbilities:|R On Guard, Defensive Formation|n|cfff5962dCan Learn:|R Runic Strength, Steel Plating|n|n|cff99b4d1Can only train 12.|r|n|cffffcc00Attacks land units.|r
-}
-
 STRING 3125
 // Upgrades: Rhcd (Cloud), EditorSuffix (Editor Suffix)
 {
@@ -18760,12 +18664,6 @@ STRING 3128
 // Units: h004 (Troll Hut), Name (Name)
 {
 Troll Hut
-}
-
-STRING 3129
-// Units: h03T (Palace), Ubertip (Tooltip - Extended)
-{
-Main gathering structure.|n|cfff5962dTrains:|R Architect, Farstrider
 }
 
 STRING 3130
@@ -18949,7 +18847,7 @@ Silvermyst Island (10gold/min)
 }
 
 STRING 3160
-// Units: h03M (Hunter Tower), Ubertip (Tooltip - Extended)
+// Units: h07T (Improved Guard Tower), Ubertip (Tooltip - Extended)
 {
 Primary defensive structure. |n|n|cffffcc00Attacks land and air units.|r
 }
@@ -19006,12 +18904,6 @@ STRING 3169
 // Units: h03K (Marshal), Tip (Tooltip - Basic)
 {
 Train Marshal
-}
-
-STRING 3170
-// Units: h03K (Marshal), Ubertip (Tooltip - Extended)
-{
-Military commander of the humans of the South.|n|cfff5962dCan Learn:|R Runic Strength, Foreman's Aura, Steel Plating|n|n|cff99b4d1Can only train 12.|r|n|cffffcc00Attacks land units.|r
 }
 
 STRING 3171
@@ -19329,12 +19221,6 @@ STRING 3223
 // Units: h0B3 (Fireship), Hotkey (Hotkey)
 {
 S
-}
-
-STRING 3224
-// Units: hbla (Blacksmith), Ubertip (Tooltip - Extended)
-{
-Forges iron and steel for the war effort.|n|cfff5962dResearches: |RForged Weaponry, Armor Plating, Power Infusion, Improved Cannons, Fortified Hulls
 }
 
 STRING 3225
@@ -21304,12 +21190,6 @@ STRING 3552
 Train Spearman
 }
 
-STRING 3553
-// Units: h00A (Spearman), Ubertip (Tooltip - Extended)
-{
-Westfall marksman aiding in the rapid defense of Stormwind.|n|cfff5962dAbilities:|R Poisoned Spear|n|cfff5962dCan Learn:|R Runic Strength|n|n|cffffcc00Attacks land and air units.|r
-}
-
 STRING 3554
 // Abilities: ANpa (Parasite), EditorSuffix (Editor Suffix)
 {
@@ -21928,12 +21808,6 @@ STRING 3656
 Build War Academy
 }
 
-STRING 3657
-// Units: e00L (War Academy), Ubertip (Tooltip - Extended)
-{
-Training hall for the warrior Sentinels.|n|cfff5962dTrains:|R Archer, Huntress, Glaive Thrower|n|cfff5962dResearches:|R Improved Bows, Sentinel, Improved Ensnare, Moon Glaive
-}
-
 STRING 3658
 // Upgrades: R00S (Spirit Walker Adept Training,Spirit Walker Master Training), EditorSuffix (Editor Suffix)
 {
@@ -22136,12 +22010,6 @@ STRING 3691
 // Units: e006 (Priestess), Tip (Tooltip - Basic)
 {
 Train Priestess
-}
-
-STRING 3692
-// Units: e006 (Priestess), Ubertip (Tooltip - Extended)
-{
-Divine priestess of Elune.|n|cfff5962dAbilities:|r Heal, Elune's Grace|n|cfff5962dCan Learn:|R Dispel Magic, Light Burst, Wind Walk|n|n|cffffcc00Attacks land and air units.|R
 }
 
 STRING 3693
@@ -23692,12 +23560,6 @@ STRING 3950
 Summon Galen Trollbane
 }
 
-STRING 3951
-// Units: h06N (Castle), Ubertip (Tooltip - Extended)
-{
-Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Peasant, Stormwind Champion |n|cfff5962dAbilities:|R Summon Garrison
-}
-
 STRING 3952
 // Items: stwp (Town Portal Scroll), Name (Name)
 {
@@ -23732,12 +23594,6 @@ STRING 3957
 // Items: stwp (Town Portal Scroll), Tip (Tooltip - Basic)
 {
 Purchase Town Portal Scroll
-}
-
-STRING 3958
-// Units: h06M (Keep), Ubertip (Tooltip - Extended)
-{
-Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Peasant |n|cfff5962dAbilities:|R Summon Garrison|n|cfff5962dUpgrades to:|R Castle
 }
 
 STRING 3959
@@ -34007,12 +33863,6 @@ STRING 5669
 Learn Rain of Chaos - [|cffffcc00Level %d|r]
 }
 
-STRING 5670
-// Abilities: ANrc (Rain of Chaos), Researchubertip (Tooltip - Learn - Extended)
-{
-Calls down multiple Infernals from the sky.|n|n|cffffcc00Level 1|r - Calls down 4 basic infernals. |n|cffffcc00Level 2|r - Calls down 5 powerful infernals. |n|cffffcc00Level 3|r - Calls down 6 elite infernals.
-}
-
 STRING 5671
 // Abilities: ANrc (Rain of Chaos), Tip (Tooltip - Normal)
 {
@@ -34029,24 +33879,6 @@ STRING 5673
 // Abilities: ANrc (Rain of Chaos), Tip (Tooltip - Normal)
 {
 Rain of Chaos - [|cffffcc00Level 3|r]
-}
-
-STRING 5674
-// Abilities: ANrc (Rain of Chaos), Ubertip (Tooltip - Normal - Extended)
-{
-Calls down 4 basic Infernals from the sky.
-}
-
-STRING 5675
-// Abilities: ANrc (Rain of Chaos), Ubertip (Tooltip - Normal - Extended)
-{
-Calls down 5 powerful Infernals from the sky.
-}
-
-STRING 5676
-// Abilities: ANrc (Rain of Chaos), Ubertip (Tooltip - Normal - Extended)
-{
-Calls down 6 Elite Infernals from the sky.
 }
 
 STRING 5677
@@ -42074,7 +41906,7 @@ STRING 7010
 }
 
 STRING 7011
-// Abilities: AHwe (Summon Fel Hounds), Researchhotkey (Hotkey - Learn)
+// Abilities: AHwe (Summon Fel Stalkers ), Researchhotkey (Hotkey - Learn)
 {
 Q
 }
@@ -42236,7 +42068,7 @@ STRING 7037
 }
 
 STRING 7038
-// Abilities: AHwe (Summon Fel Hounds), Hotkey (Hotkey - Normal)
+// Abilities: AHwe (Summon Fel Stalkers ), Hotkey (Hotkey - Normal)
 {
 Q
 }
@@ -43535,12 +43367,6 @@ STRING 7254
 // Abilities: ANpa (Parasite), Unhotkey (Hotkey - Turn Off)
 {
 E
-}
-
-STRING 7255
-// Abilities: A0XN (Incinerate), Researchubertip (Tooltip - Learn - Extended)
-{
-Each attack made is enhanced with living flames that cling to the target. These flames add a small amount of damage on the first attack, twice as much on the second attack, three times as much on the third attack, etc.|n|nIf a unit dies while under this effect, it is incinerated, causing 40/80/120/160 damage to all nearby hostile units.
 }
 
 STRING 7256
@@ -46211,12 +46037,6 @@ STRING 7700
 // Abilities: A0TY (Ion_Canon(dummy height trick)), Name (Name)
 {
 Ion_Canon(dummy height trick)
-}
-
-STRING 7701
-// Units: hbar (Barracks), Ubertip (Tooltip - Extended)
-{
-Housing for the defenders of Lordaeron.|n|n|r|cfff5962dTrains:|R Footman, Huntsman, Knight|n|cfff5962dResearches:|r Improved Ensnare, Veteran Footman, Animal War Training
 }
 
 STRING 7702
@@ -49009,12 +48829,6 @@ STRING 8166
 Brings back to life the corpse of 3 friendly nearby unit.
 }
 
-STRING 8167
-// Units: h045 (Warden), Ubertip (Tooltip - Extended)
-{
-Sentinel Elite Warrior, specialises in disruption. |n|cfff5962dAbilities:|R Fan of Knives, Blink, Spell Steal|n|cff99b4d1Can only train 8.|r|n|cffffcc00Attacks land units.|r
-}
-
 STRING 8168
 // Abilities: A0YR (Spirit Link), Hotkey (Hotkey - Normal)
 {
@@ -49553,12 +49367,6 @@ STRING 8257
 // Abilities: A0YB (Boulder Toss), Hotkey (Hotkey - Normal)
 {
 Q
-}
-
-STRING 8258
-// Abilities: A0Q4 (Earth Bind), Researchtip (Tooltip - Learn)
-{
-Learn Earth Bind (|cffffcc00Q|r) - [|cffffcc00Level %d|r]
 }
 
 STRING 8259
@@ -50543,12 +50351,6 @@ STRING 8422
 // Abilities: A0P0 (Poisoned Spear), Tip (Tooltip - Normal)
 {
 Poisoned Spear (|cffffcc00Q|r)
-}
-
-STRING 8423
-// Abilities: A0P0 (Poisoned Spear), Ubertip (Tooltip - Normal - Extended)
-{
-Adds 10 bonus poison damage to an attack against enemies
 }
 
 STRING 8424
@@ -56588,12 +56390,6 @@ STRING 9429
 Increases Shaman mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Bloodlust.
 }
 
-STRING 9430
-// Abilities: A0GN (Ancestral Spirits), Ubertip (Tooltip - Normal - Extended)
-{
-Summons Ancestral Spirits which steal health from enemy units and give it back to the Ancient. Lasts 30 seconds.
-}
-
 STRING 9431
 // Abilities: A0GM (For The Horde!), EditorSuffix (Editor Suffix)
 {
@@ -57180,12 +56976,6 @@ STRING 9528
 // Abilities: A0G4 (Flame Burst), Researchtip (Tooltip - Learn)
 {
 Learn Flame Burst - [|cffffcc00Level %d|r]
-}
-
-STRING 9529
-// Abilities: A0G4 (Flame Burst), Researchubertip (Tooltip - Learn - Extended)
-{
-Hero releases a wave of fire that damages up to nearby enemy units.|n|n|cffffcc00Level 1|r - 150 damage per target. |n|cffffcc00Level 2|r - 200 damage per target. |n|cffffcc00Level 3|r - 250 damage per target.|n|cffffcc00Level 4|r - 300 damage per target.
 }
 
 STRING 9530
@@ -66238,7 +66028,7 @@ Conveyance Aura
 }
 
 STRING 11038
-// Abilities: A08N (Conveyance Aura), Researchtip (Tooltip - Learn)
+// Abilities: A0YZ (Hunt Aura), Researchtip (Tooltip - Learn)
 {
 |cffffcc00(E)|r - Learn Conveyance Aura - [|cffffcc00Level %d|r]
 }
@@ -68436,12 +68226,6 @@ STRING 11402
 // Abilities: A0A7 (Faerie Fire), Unhotkey (Hotkey - Turn Off)
 {
 E
-}
-
-STRING 11403
-// Units: h05F (Stormwind Champion), Ubertip (Tooltip - Extended)
-{
-Elite melee champion of the Stormwind Army.|n|cfff5962dAbilities:|R Charge, Safeguard, Cleaving Attack, Resistant Skin, Heavy Armor, Combat Experience, Staggering Shout|n|cfff5962dCan Learn:|R Animal War Training |n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land units.|r
 }
 
 STRING 11404
@@ -74256,7 +74040,7 @@ R
 }
 
 STRING 12372
-// Abilities: A0YZ (Hunt Aura), Researchtip (Tooltip - Learn)
+// Abilities: A0Z5 (Hunt Aura), Researchtip (Tooltip - Learn)
 {
 |cffffcc00(E)|r - Learn Conveyance Aura - [|cffffcc00Level %d|r]
 }
@@ -74361,12 +74145,6 @@ STRING 12389
 // Upgrades: R063 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 S
-}
-
-STRING 12390
-// Units: n034 (Guild Ranger), Ubertip (Tooltip - Extended)
-{
-Agile, deadly and skilled Archers of the Sentinels.|n|cfff5962dAbilities:|R|n|n|cff99b4d1Can only train 12.|r|n|cffffcc00Attacks land and air units.|r
 }
 
 STRING 12391
@@ -75197,12 +74975,6 @@ STRING 12528
 (anetheron)
 }
 
-STRING 12529
-// Abilities: AHwe (Summon Fel Hounds), Researchubertip (Tooltip - Learn - Extended)
-{
-Summons Fel Hounds's to attack the heroe's enemies. |nLasts 40 seconds.|r |n|n|cffffcc00Level 1|r - Summons 2 Fel Hounds|n|cffffcc00Level 2|r - Summons 3 Fel Hounds.|n|cffffcc00Level 3|r - Summons 4 Fel Hounds.|n|cffffcc00Level 4|r - Summons 5 Fel Hounds
-}
-
 STRING 12530
 // Abilities: A023 (Anti Portal Blocking), EditorSuffix (Editor Suffix)
 {
@@ -75588,7 +75360,7 @@ W
 }
 
 STRING 12594
-// Abilities: A01U (Earth Bind), Researchtip (Tooltip - Learn)
+// Abilities: A0Q4 (Earth Bind), Researchtip (Tooltip - Learn)
 {
 Learn Earth Bind - [|cffffcc00Level %d|r]
 }
@@ -78727,7 +78499,7 @@ Primary structure, used to train workers and gather resources.|n|cfff5962dTrains
 }
 
 STRING 13117
-// Abilities: AHwe (Summon Fel Hounds), Tip (Tooltip - Normal)
+// Abilities: A0X5 (Summon Fel Hounds), Tip (Tooltip - Normal)
 {
 Summon Fel Hound - [|cffffcc00Level 4|r]
 }
@@ -81522,12 +81294,6 @@ STRING 13582
 Fear Aura
 }
 
-STRING 13583
-// Buffs/Effects: B02Q (), Buffubertip (Tooltip - Extended)
-{
-This unit is under the fear aura
-}
-
 STRING 13584
 // Abilities: A0HG (Unholy Armor), Name (Name)
 {
@@ -83946,12 +83712,6 @@ STRING 13986
  (Warsong)
 }
 
-STRING 13987
-// Abilities: AHwe (Summon Fel Hounds), Ubertip (Tooltip - Normal - Extended)
-{
-Summons 2 Fel Hounds with Mana Burn to attack the heroes enemies. |n|n|cffffcc00Attacks land units.|r
-}
-
 STRING 13988
 // Upgrades: R05P (Priest Adept Training,Priest Master Training), EditorSuffix (Editor Suffix)
 {
@@ -85530,12 +85290,6 @@ STRING 14250
 Upgrades all structures' hit points and armor.
 }
 
-STRING 14251
-// Abilities: AHwe (Summon Fel Hounds), Ubertip (Tooltip - Normal - Extended)
-{
-Summons 3 Fel Hounds with Mana Burn to attack the heroes enemies. |n|n|cffffcc00Attacks land units.|r
-}
-
 STRING 14252
 // Upgrades: R08T (Cannibalize), Ubertip (Tooltip - Extended)
 {
@@ -85674,12 +85428,6 @@ STRING 14274
 Great Forge and Stormwind Destroyed
 }
 
-STRING 14275
-// Abilities: AHwe (Summon Fel Hounds), Ubertip (Tooltip - Normal - Extended)
-{
-Summons 4 Fel Hounds with Mana Burn to attack the heroes enemies. |n|n|cffffcc00Attacks land units.|r
-}
-
 STRING 14276
 // Upgrades: R010 (Control Magic), EditorSuffix (Editor Suffix)
 {
@@ -85780,12 +85528,6 @@ STRING 14292
 // Abilities: A0LK (Arcane Phantom), Ubertip (Tooltip - Normal - Extended)
 {
 Summon an Arcane Phantom for 30 seconds. 3 seconds cooldown
-}
-
-STRING 14293
-// Abilities: AHwe (Summon Fel Hounds), Ubertip (Tooltip - Normal - Extended)
-{
-Summons 5 Fel Hounds with Mana Burn to attack the heroes enemies. |n|n|cffffcc00Attacks land units.|r
 }
 
 STRING 14294
@@ -86086,12 +85828,6 @@ STRING 14343
 // Upgrades: R03D (Defend), effect3 (Effect 3)
 {
 rlev
-}
-
-STRING 14344
-// Units: n06C (Moonhunter), Ubertip (Tooltip - Extended)
-{
-Cunning trapper of prey, in service to the Sentinels.|n|cfff5962dAbilities:|R Paralysis|n|cfff5962dCan Learn:|R Corrosive Strike, Faerie Fire, Elune's Grace, Wind Walk|n|n|cffffcc00Attacks land and air units.
 }
 
 STRING 14345
@@ -86463,12 +86199,6 @@ STRING 14406
 // Upgrades: R03W (Magic Sentry), Tip (Tooltip)
 {
 Research Knowledge of Honor Hold
-}
-
-STRING 14407
-// Units: h01B (Outrider), Ubertip (Tooltip - Extended)
-{
-Melee horseman of the Southern lands. |n|cfff5962dAbilities:|R Charge, Trample, Demolish|n|cfff5962dCan Learn:|R Animal War Training|n|n|cffffcc00Attacks land units.|r
 }
 
 STRING 14408
@@ -87492,7 +87222,7 @@ rlev
 }
 
 STRING 14578
-// Abilities: AHwe (Summon Fel Hounds), Tip (Tooltip - Normal)
+// Abilities: A0X5 (Summon Fel Hounds), Tip (Tooltip - Normal)
 {
 Summon Fel Hound - [|cffffcc00Level 1|r]
 }
@@ -87586,12 +87316,6 @@ STRING 14593
 // Upgrades: R04V (Magic Sentry), Hotkey (Hotkey)
 {
 Z
-}
-
-STRING 14594
-// Units: h05J (Champion's Hall), Ubertip (Tooltip - Extended)
-{
-- Enables |cffcece00Devotion Aura |ron Stormwind Keep, Lakeshire, Darkshire, Netherguard Keep, Sentinel Tower, and Honor Hold which grants an additional 2 armor to units within 1200 range.|n|n- Contains research which improves the |cffcece00Bladesman|r, |cffcece00Outrider|r, |cffcece00Marshal|r, and |cffcece00Brigadier |runits.|n|n- Further research will unlock the |cffcece00Stormwind Knight|r or |cffcece00Marksman |runit, replacing Outriders or Spearmen.|n
 }
 
 STRING 14595
@@ -88074,12 +87798,6 @@ STRING 14674
 Research Magus Master Training
 }
 
-STRING 14675
-// Upgrades: R029 (Priest Adept Training,Priest Master Training), Ubertip (Tooltip - Extended)
-{
-Increases Magus' mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Mana Siphon.
-}
-
 STRING 14676
 // Upgrades: R029 (Priest Adept Training,Priest Master Training), Ubertip (Tooltip - Extended)
 {
@@ -88222,12 +87940,6 @@ STRING 14699
 // Upgrades: R026 (Animal War Training), Tip (Tooltip)
 {
 Research Elune's Infusion
-}
-
-STRING 14700
-// Upgrades: R026 (Animal War Training), Ubertip (Tooltip - Extended)
-{
-Increases the maximum hit points of all casters by 100 and increases armor by 2.|n|n|cffffd700Affects Priestesses, Moonhunters, and Wisps.|r
 }
 
 STRING 14701
@@ -88537,12 +88249,6 @@ STRING 14751
 Increases Moonhunters' mana capacity, mana regeneration rate, attack damage and gives the ability Corrosive Strike.
 }
 
-STRING 14752
-// Upgrades: R01W (Druid of the Talon Adept Training,Druid of the Talon Master Training), Ubertip (Tooltip - Extended)
-{
-Increases Moonhunters' mana capacity, mana regeneration rate, attack damage and gives the ability Mark the Spot.
-}
-
 STRING 14753
 // Units: o04Q (Tinker), Ubertip (Tooltip - Extended)
 {
@@ -88778,7 +88484,7 @@ Quest Completed: Stromgarde
 }
 
 STRING 14792
-// Units: h07T (Improved Guard Tower), Ubertip (Tooltip - Extended)
+// Units: h03F (Control Point Defender), Ubertip (Tooltip - Extended)
 {
 Primary defensive structure. |n|n|cffffcc00Attacks land and air units.|r
 }
@@ -89515,12 +89221,6 @@ STRING 14914
 Increases Rune Priests' mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Rune of Shielding.
 }
 
-STRING 14915
-// Units: nchp (Mage), Ubertip (Tooltip - Extended)
-{
-Damage dealing spellcaster.|n|cfff5962dAbilities:|r Frost Bolt|n|cfff5962dCan learn:|R Dispel, Ice Fall|n|n|cffffcc00Attacks land and air units.|R
-}
-
 STRING 14916
 // Upgrades: R00U (Chaos), Name (Name)
 {
@@ -89597,12 +89297,6 @@ STRING 14928
 // Upgrades: R00S (Spirit Walker Adept Training,Spirit Walker Master Training), Tip (Tooltip)
 {
 Research Priestess Master Training
-}
-
-STRING 14929
-// Upgrades: R00S (Spirit Walker Adept Training,Spirit Walker Master Training), Ubertip (Tooltip - Extended)
-{
-Increases Priestess' mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Astral Healing.
 }
 
 STRING 14930
@@ -90085,12 +89779,6 @@ STRING 15009
 Research Feint
 }
 
-STRING 15010
-// Upgrades: R00G (Flare), Ubertip (Tooltip - Extended)
-{
-Allows Farstriders to use Feint ability, which turns them invisible for 5 seconds and increases their movement speed by 50%.
-}
-
 STRING 15011
 // Abilities: A0M2 (Promise of Fortune), Ubertip (Tooltip - Normal - Extended)
 {
@@ -90437,12 +90125,6 @@ STRING 15068
 // Abilities: A091 (Seed of Burning Hatred), Tip (Tooltip - Normal)
 {
 Seed of Burning Hatred - [|cffffcc00Level 3|r]
-}
-
-STRING 15069
-// Units: h06W (Guard Tower), Ubertip (Tooltip - Extended)
-{
-Archer filled tower defense.|n|cfff5962dCan learn:|R Magic Sentry|n|cfff5962dUpgrades into:|R Improved Guard Tower|n|n|cffffcc00Attacks land and air units.|r
 }
 
 STRING 15070
@@ -92440,12 +92122,6 @@ STRING 15410
 Train - Royal Guard
 }
 
-STRING 15411
-// Upgrades: R040 (Magic Sentry), Ubertip (Tooltip - Extended)
-{
-Allows Sky Barges to be trained from the Infernal Machine Factory.
-}
-
 STRING 15412
 // Upgrades: R02V (Naga Siren Adept Training,Naga Siren Master Training), Name (Name)
 {
@@ -93670,12 +93346,6 @@ STRING 15615
 Opens a two-way portal to the target location. The portal becomes useable after 5 seconds, and closes 10 seconds after the caster stops channeling.|n|n|cffffcc00Level 1|r - <A00D,Rng1> range. |n|cffffcc00Level 2|r - <A00D,Rng2> range. |n|cffffcc00Level 3|r - <A00D,Rng3> range.
 }
 
-STRING 15616
-// Units: hwtw (Scout Tower), Ubertip (Tooltip - Extended)
-{
-Basic observation tower. Has no attack.|n|cfff5962dCan learn:|r Magic Sentry|n|cfff5962dUpgrades into:|r Guard Tower, Cannon Towe
-}
-
 STRING 15617
 // Units: h08E (Plague Tower), Ubertip (Tooltip - Extended)
 {
@@ -94108,20 +93778,8 @@ STRING 15688
 Heals a friendly living unit for <A0H0,DataA1>.
 }
 
-STRING 15689
-// Abilities: A08A (Inferno), Ubertip (Tooltip - Normal - Extended)
-{
-Summons a more powerful Infernal from the sky, causing <A08A,DataA2> damage to enemy units near the impact point. The Infernal lasts <A08A,Dur2> seconds.
-}
-
-STRING 15690
-// Abilities: A08A (Inferno), Ubertip (Tooltip - Normal - Extended)
-{
-Summons an Infernal from the sky, causing <A08A,DataA1> damage to enemy units near the impact point. The Infernal lasts <A08A,Dur1> seconds.
-}
-
 STRING 15691
-// Abilities: AHwe (Summon Fel Hounds), Tip (Tooltip - Normal)
+// Abilities: A0X5 (Summon Fel Hounds), Tip (Tooltip - Normal)
 {
 Summon Fel Hound - [|cffffcc00Level 2|r]
 }
@@ -94187,7 +93845,7 @@ Powerful Eredar Warlock in service of Magtheridon.|n|cfff5962dAbilities:|R Fires
 }
 
 STRING 15702
-// Units: negt (Sun Tower), Ubertip (Tooltip - Extended)
+// Units: n0BC (Control Point Defender), Ubertip (Tooltip - Extended)
 {
 Tower infused with the magic of the Sunwell.|n|cfff5962dCan learn:|R Magic Sentry|n|n|cffffcc00Attacks land and air units.|r
 }
@@ -94226,12 +93884,6 @@ STRING 15708
 // Units: h0B0 (Galley), Name (Name)
 {
 Galley
-}
-
-STRING 15709
-// Units: u00D (Legion Herald), Ubertip (Tooltip - Extended)
-{
-Basic worker. Can summon and restore structures.|n|cfff5962dAbilities:|R Shadow Infusion|n|n|cffffcc00Attacks land units.|r
 }
 
 STRING 15710
@@ -94294,12 +93946,6 @@ STRING 15719
 Moonlit home of the Night Elves.|nProvides 8 food, which increases the maximum number of units that can be trained.
 }
 
-STRING 15720
-// Units: n04Q (Nether Pit), Ubertip (Tooltip - Extended)
-{
-Summoning site for minor demons.|n|cfff5962dTrains:|R Fel Guard, Burning Archer, Fel Creeper
-}
-
 STRING 15721
 // Abilities: ANms (Mana Shield), Untip (Tooltip - Turn Off)
 {
@@ -94346,12 +93992,6 @@ STRING 15728
 // Abilities: A0JQ (Rain of Light), Ubertip (Tooltip - Normal - Extended)
 {
 Heal all friendly units in the target area for 100 hit points.
-}
-
-STRING 15729
-// Units: n075 (Vereesa Windrunner), Ubertip (Tooltip - Extended)
-{
-One of the three sisters of the Windrunners, Vereesa is a skilled Ranger-Lord and keen defender of Silvermoon. She holds the values of the Quel'dorei close to heart.
 }
 
 STRING 15730
@@ -94988,12 +94628,6 @@ STRING 15835
 // Units: h056 (Khaz Modan Tower), EditorSuffix (Name - Editor Suffix)
 {
 (Ironforge Other)
-}
-
-STRING 15836
-// Units: h02Q (Pegasus Knight), Ubertip (Tooltip - Extended)
-{
-Swift flying unit. |n|cfff5962dAbilities:|R Cloud, Shackles|n|cfff5962dCan Learn:|R Animal War Training|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land and air units.|r
 }
 
 STRING 15837
@@ -96774,6 +96408,12 @@ STRING 16132
 Build Juggernaut
 }
 
+STRING 16133
+// Units: nbel (Sunfury Warrior), Ubertip (Tooltip - Extended)
+{
+Stout protector of Quel'Thalas.|n|cfff5962dAbilities:|R Charge, Defend, Combat Experience, Spell Resistance, Feedback|n|n|cffffcc00Attacks land units.|r
+}
+
 STRING 16134
 // Units: n07W (Plague Revenant), Tip (Tooltip - Basic)
 {
@@ -96804,6 +96444,12 @@ STRING 16138
 Opens a two-way portal to the target location. The portal becomes useable after 5 seconds, and closes 10 seconds after the caster stops channeling.|n|n|cffffcc00Level 1|r - <A00D,Rng1> range. |n|cffffcc00Level 2|r - <A00D,Rng2> range. |n|cffffcc00Level 3|r - <A00D,Rng3> range.
 }
 
+STRING 16139
+// Units: nbee (Architect), Ubertip (Tooltip - Extended)
+{
+Intelligent builder of Thalassian structures.|n|cfff5962dAbilities:|r Repair, Gather|n|n|cffffcc00Attacks land units and trees.
+}
+
 STRING 16140
 // Units: ohun (Headhunter), Ubertip (Tooltip - Extended)
 {
@@ -96832,6 +96478,12 @@ STRING 16144
 // Units: h0BC (Juggernaut), Tip (Tooltip - Basic)
 {
 Build Juggernaut
+}
+
+STRING 16145
+// Units: hpea (Peasant), Ubertip (Tooltip - Extended)
+{
+Backbone worker and builder.|n|cfff5962dAbilities:|r Repair, Gather, Call to Arms|n|cfff5962dCan Learn:|R Improved Lumber Harvesting|n|n|cffffcc00Attacks land units and trees.
 }
 
 STRING 16146
@@ -97457,7 +97109,7 @@ E
 }
 
 STRING 16250
-// Abilities: AHwe (Summon Fel Hounds), Tip (Tooltip - Normal)
+// Abilities: A0X5 (Summon Fel Hounds), Tip (Tooltip - Normal)
 {
 Summon Fel Hound - [|cffffcc00Level 3|r]
 }
@@ -97547,7 +97199,7 @@ Illidan follows his heart and seeks forgivness to Malfurion. United by their bro
 }
 
 STRING 16265
-// Abilities: A0X5 (Summon Fel Hounds), Tip (Tooltip - Normal)
+// Abilities: A0JB (Summon Gallywix Personal Transport), Tip (Tooltip - Normal)
 {
 Summon Fel Hound - [|cffffcc00Level 4|r]
 }
@@ -98812,12 +98464,6 @@ STRING 16475
 (Quel'thalas
 }
 
-STRING 16476
-// Units: h035 (Arcane Study), Ubertip (Tooltip - Extended)
-{
-Towering college of Magic.|n|cfff5962dTrains:|R Inquisitor, Pastor, Silver Hand Squire|n|cfff5962dResearches:|R Cleric Adept Training, Light's Praise Adept Training, Seal of Righteousness, Magic Sentry
-}
-
 STRING 16477
 // Units: h035 (Arcane Study), Tip (Tooltip - Basic)
 {
@@ -99329,7 +98975,7 @@ STRING 16561
 }
 
 STRING 16562
-// Abilities: AHwe (Summon Fel Hounds), Researchtip (Tooltip - Learn)
+// Abilities: A0X5 (Summon Fel Hounds), Researchtip (Tooltip - Learn)
 {
 Learn Summon Fel Hounds - [|cffffcc00Level %d|r]
 }
@@ -99748,6 +99394,12 @@ STRING 16631
 Build Order Chapter House
 }
 
+STRING 16632
+// Units: n00A (Farstrider), Ubertip (Tooltip - Extended)
+{
+Agile, deadly and skilled Rangers of Quel'Thalas.|n|cfff5962dAbilities:|R Splintering Arrows, Smoke Bomb, Spell Resistance, Resistant Skin, Precision Shots|n|cfff5962dCan Learn:|R Feint, Improved Bows|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land and air units.|r
+}
+
 STRING 16633
 // Units: n09A (Ember Cleric), EditorSuffix (Name - Editor Suffix)
 {
@@ -99812,12 +99464,6 @@ STRING 16643
 // Abilities: A0VC (Viral Plague), Hotkey (Hotkey - Normal)
 {
 R
-}
-
-STRING 16644
-// Units: nbel (Sunfury Warrior), Ubertip (Tooltip - Extended)
-{
-Stout protector of Quel'Thalas.|n|cfff5962dAbilities:|R Charge, Defend, Battle Experience, Spell Resistance, Feedback|n|n|cffffcc00Attacks land units.|r
 }
 
 STRING 16645
@@ -99976,12 +99622,6 @@ STRING 16670
 Train Orcish Death Knight
 }
 
-STRING 16671
-// Units: e01B (Arcane Annihilator), Ubertip (Tooltip - Extended)
-{
-Siege unit that can transform into an immobile ranged turret.|n|cfff5962dAbilities:|r Siege mode|n|n|cff99b4d1Can only train 6.|n|cffffcc00Cannot attack.|r
-}
-
 STRING 16672
 // Units: o04W (Golden Vessel), EditorSuffix (Name - Editor Suffix)
 {
@@ -100019,7 +99659,7 @@ Build Golden Vessel
 }
 
 STRING 16678
-// Abilities: AHwe (Summon Fel Hounds), Name (Name)
+// Abilities: A0X5 (Summon Fel Hounds), Name (Name)
 {
 Summon Fel Hounds
 }
@@ -100217,7 +99857,7 @@ E
 }
 
 STRING 16711
-// Abilities: A0US (Protector of King's), Researchhotkey (Hotkey - Learn)
+// Abilities: A0US (Protector of Kings), Researchhotkey (Hotkey - Learn)
 {
 E
 }
@@ -102274,22 +101914,10 @@ STRING 17053
 Summon Varimathras
 }
 
-STRING 17054
-// Units: Utic (The Darkener), Ubertip (Tooltip - Extended)
-{
-Warrior Hero, exceptional at manipulating enemies and destroying them from the inside.|n|cfff5962dAbilities:|r Permanent Invisibility, Astral Walk|n|cfff5962dCan learn:|R Finger of Pain, Mind Confusion, Vampiric Aura, Inspire Madness|n|n|cffffcc00Attacks land units.|R
-}
-
 STRING 17055
 // Units: Usyl (Dark Ranger), Ubertip (Tooltip - Extended)
 {
 Cunning Hero, adept at manipulating opponents.|n|cfff5962dAbilities:|r Wind Walk|n|cfff5962dCan learn:|R Aimed Shot, Silence, Black Arrow, Banshee Queen|n|n|cffffcc00Attacks land and air units.|R
-}
-
-STRING 17056
-// Units: Umal (The Cunning), Ubertip (Tooltip - Extended)
-{
-Mystical Hero, adept at infiltration and disrupting enemies.|n|cfff5962dAbilities:|r Permanent Invisibility, Astral Walk |n|cfff5962dCan learn:|R Carrion Swarm, Silence, Brilliance Aura, Doom|n|n|cffffcc00Attacks land units.|R
 }
 
 STRING 17057
@@ -102302,12 +101930,6 @@ STRING 17058
 // Abilities: A0UX (Summon Zombie), Hotkey (Hotkey - Normal)
 {
 E
-}
-
-STRING 17059
-// Units: Ubal (Envoy of Archimonde), Ubertip (Tooltip - Extended)
-{
-Cunning hero, adept at dealing magic damage and supporting armies.|n|cfff5962dCan learn:|R Astral Walk, Feedback, Demonic Thunder, Summon Demonic Reinforcements, Unholy Aura, Death and Decay|n|n|cffffcc00Attacks land units.|R
 }
 
 STRING 17060
@@ -102550,34 +102172,16 @@ STRING 17099
 X
 }
 
-STRING 17100
-// Units: n09S (Blood Elven Ranger), Ubertip (Tooltip - Extended)
-{
-Agile, deadly and skilled Rangers of Quel'Thalas.|n|cfff5962dAbilities:|R Splintering Arrows, Smoke Bomb|n|cfff5962dCan Learn:|R Feint, Aimed Shot, Improved Bows|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land and air units.|r
-}
-
 STRING 17101
 // Units: Naka (Elder Sage), Tip (Tooltip - Basic)
 {
 Summon Akama
 }
 
-STRING 17102
-// Units: Ewrd (Leader of the Watchers ), Ubertip (Tooltip - Extended)
-{
-Cunning Hero, adept at melee combat and slipping in and out of fights.|n|cfff5962dAbilities:|r Blink, Hide|n|cfff5962dCan learn:|R Fan of Knives, Avatar of Vengeance, Battle Experience, Take Vengeance |n|n|cffffcc00Attacks land units.|R
-}
-
 STRING 17103
 // Units: Ewrd (Leader of the Watchers ), Tip (Tooltip - Basic)
 {
 Summon Maiev
-}
-
-STRING 17104
-// Units: Etyr (High Priestess of Elune ), Ubertip (Tooltip - Extended)
-{
-Mystical Hero, adept at empowering your backline and dealing magic damage over time.|n|cfff5962dAbilities:|r Moonlight, Hide |n|cfff5962dCan learn:|R Starfire, Words of Protection, Trueshot Aura, Starfall|n|n|cffffcc00Attacks land and air units.|R
 }
 
 STRING 17105
@@ -105581,6 +105185,12 @@ STRING 17604
 Heavy melee unit with Charge, Cleaving Attack and Hardened Scale.|n|n|cffffcc00Attacks land units.|r
 }
 
+STRING 17605
+// Units: h075 (Improved Arcane Tower), Ubertip (Tooltip - Extended)
+{
+Mage filled defense tower. |n|cfff5962dAbilities:|R Magic Sentry, Feedback, Reveal |n|n|cffffcc00Attacks land and air units.|r
+}
+
 STRING 17606
 // Units: n0BD (Uldum (10gold/min)), Name (Name)
 {
@@ -105767,6 +105377,24 @@ STRING 17636
 Causes this unit to attack <A10I,DataB4,%>% faster, and move <A10I,DataA4,%>% faster, but take <A10I,DataC4,%>% more damage.
 }
 
+STRING 17637
+// Units: h06Z (Improved Arcane Tower), Ubertip (Tooltip - Extended)
+{
+Mage filled defense tower. |n|cfff5962dAbilities:|R Magic Sentry, Feedback, Reveal |n|n|cffffcc00Attacks land and air units.|r
+}
+
+STRING 17638
+// Units: h06W (Guard Tower), Ubertip (Tooltip - Extended)
+{
+Archer filled tower defense.|n|cfff5962dUpgrades into:|R Improved Guard Tower|n|n|cffffcc00Attacks land and air units.|r
+}
+
+STRING 17639
+// Units: h06V (Scout Tower), Ubertip (Tooltip - Extended)
+{
+Observation tower.|n|r|cfff5962dCan learn:|R Magic Sentry|n|r|cfff5962dUpgrades into:|R Guard Tower, Cannon Tower, Arcane Tower
+}
+
 STRING 17640
 // Units: h09L (Crimson Cathedral), Name (Name)
 {
@@ -105777,6 +105405,12 @@ STRING 17641
 // Abilities: A0WF (Herald of Destruction), Researchhotkey (Hotkey - Learn)
 {
 R
+}
+
+STRING 17642
+// Units: h06N (Castle), Ubertip (Tooltip - Extended)
+{
+Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Peasant, Stormwind Champion|n|cfff5962dResearches:|r Full Scale Escalation |n|cfff5962dAbilities:|R Summon Garrison, Call to Arms
 }
 
 STRING 17643
@@ -105885,6 +105519,12 @@ STRING 17660
 // Abilities: A02L (Aura of Madness), Researchtip (Tooltip - Learn)
 {
 Learn Aura of Madness- [|cffffcc00Level %d|r]
+}
+
+STRING 17661
+// Units: h06M (Keep), Ubertip (Tooltip - Extended)
+{
+Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Peasant |n|cfff5962dAbilities:|R Summon Garrison, Call to Arms|n|cfff5962dUpgrades to:|R Castle
 }
 
 STRING 17662
@@ -106061,6 +105701,18 @@ STRING 17690
 rhpx
 }
 
+STRING 17691
+// Units: h05J (Champion's Hall), Ubertip (Tooltip - Extended)
+{
+Contains research which improves the |cffcece00Bladesman|r, |cffcece00Outrider|r, |cffcece00Marshal|r, and |cffcece00Brigadier |runits.|n|n- Further research will unlock the |cffcece00Stormwind Knight|r or |cffcece00Marksman |runit, replacing Outriders or Spearmen.|n
+}
+
+STRING 17692
+// Units: h05F (Stormwind Champion), Ubertip (Tooltip - Extended)
+{
+Elite melee champion of the Stormwind Army.|n|cfff5962dAbilities:|R Charge, Safeguard, Cleaving Attack, Resistant Skin, Heavy Armor, Combat Experience, Staggering Shout |n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land units.|r
+}
+
 STRING 17693
 // Abilities: A02L (Aura of Madness), Tip (Tooltip - Normal)
 {
@@ -106107,6 +105759,54 @@ STRING 17700
 // Abilities: ACcb (Greater Frost Bolt), Tip (Tooltip - Normal)
 {
 Greater Frost Bolt
+}
+
+STRING 17701
+// Units: h03U (Rear-Marshal), Ubertip (Tooltip - Extended)
+{
+Defensive commander of the humans of the South.|n|cfff5962dAbilities:|R On Guard, Defensive Formation|n|cfff5962dCan Learn:|R Steel Plating|n|n|cff99b4d1Can only train 12.|r|n|cffffcc00Attacks land units.|r
+}
+
+STRING 17702
+// Units: h03T (Palace), Ubertip (Tooltip - Extended)
+{
+Main gathering structure.|n|cfff5962dTrains:|R Architect, Farstrider|n|cfff5962dResearches:|R Feint, Full Scale Escalation
+}
+
+STRING 17703
+// Units: h03K (Marshal), Ubertip (Tooltip - Extended)
+{
+Military commander of the humans of the South.|n|cfff5962dCan Learn:|R Foreman's Aura, Steel Plating|n|n|cff99b4d1Can only train 12.|r|n|cffffcc00Attacks land units.|r
+}
+
+STRING 17704
+// Units: h01B (Outrider), Ubertip (Tooltip - Extended)
+{
+Melee horseman of the Southern lands. |n|cfff5962dAbilities:|R Charge, Trample, Demolish|n|n|cffffcc00Attacks land units.|r
+}
+
+STRING 17705
+// Units: h00A (Spearman), Ubertip (Tooltip - Extended)
+{
+Westfall marksman aiding in the rapid defense of Stormwind.|n|cfff5962dAbilities:|R Poisoned Spear|n|n|cffffcc00Attacks land and air units.|r
+}
+
+STRING 17706
+// Units: e01B (Arcane Annihilator), Ubertip (Tooltip - Extended)
+{
+Siege unit that can transform into an immobile ranged turret.|n|cfff5962dAbilities:|r Siege Mode|n|n|cff99b4d1Can only train 6.|n|cffffcc00Cannot attack.|r
+}
+
+STRING 17707
+// Units: n02F (Warlock), Ubertip (Tooltip - Extended)
+{
+An elven arcanist that practices dark magic.|n|cfff5962dAbilities:|R Lightning Storm, Life Drain, Summon Queen of Suffering|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land and air units.|r
+}
+
+STRING 17708
+// Units: n075 (Vereesa Windrunner), Ubertip (Tooltip - Extended)
+{
+One of the three sisters of the Windrunners.|n|cfff5962dAbilities:|R Suppression, Precision Shot, Spell Resistance, Resistant Skin, Poisoned Arrow|n|cfff5962dCan Learn:|R Feint, Improved Bows|n|n|cff99b4d1Can only train 1.|r|n|cffffcc00Attacks land and air units.|r
 }
 
 STRING 17709
@@ -106157,10 +105857,112 @@ STRING 17716
 W
 }
 
+STRING 17717
+// Abilities: A0XN (Incinerate), Researchubertip (Tooltip - Learn - Extended)
+{
+Each attack made is enhanced with living flames that cling to the target. These flames add a small amount of damage on the first attack, twice as much on the second attack, three times as much on the third attack, etc. If a unit dies while under this effect, it is incinerated, causing damage to all nearby hostile units. |n|n|cffffcc00Level 1|r - 40 damage. |n|cffffcc00Level 2|r - 80 damage. |n|cffffcc00Level 3|r - 120 damage. |n|cffffcc00Level 4|r - 160 damage.
+}
+
+STRING 17718
+// Abilities: A0P0 (Poisoned Spear), Ubertip (Tooltip - Normal - Extended)
+{
+Adds 10 bonus magic damage to an attack against enemies
+}
+
+STRING 17719
+// Abilities: A0G4 (Flame Burst), Researchubertip (Tooltip - Learn - Extended)
+{
+Hero releases a wave of fire that damages nearby enemy units.|n|n|cffffcc00Level 1|r - 150 damage per target. |n|cffffcc00Level 2|r - 200 damage per target. |n|cffffcc00Level 3|r - 250 damage per target.|n|cffffcc00Level 4|r - 300 damage per target.
+}
+
+STRING 17720
+// Abilities: A08N (Conveyance Aura), Researchtip (Tooltip - Learn)
+{
+Learn Conveyance Aura - [|cffffcc00Level %d|r]
+}
+
+STRING 17721
+// Abilities: A01U (Earth Bind), Researchtip (Tooltip - Learn)
+{
+Learn Earth Bind - [|cffffcc00Level %d|r]
+}
+
+STRING 17722
+// Buffs/Effects: B0AV (), Bufftip (Tooltip)
+{
+Suppresion
+}
+
+STRING 17723
+// Buffs/Effects: B0AV (), Buffubertip (Tooltip - Extended)
+{
+This unit is supressed, it cannot attack.
+}
+
 STRING 17724
 // Abilities: A0R4 (Holy Fire), Ubertip (Tooltip - Normal - Extended)
 {
 Consumes an enemy in holy flames, slowing them for 40% and dealing 20 initial damage, and 45 damage every 1 second for 10 seconds.
+}
+
+STRING 17725
+// Upgrades: R029 (Priest Adept Training,Priest Master Training), Ubertip (Tooltip - Extended)
+{
+Increases Magus' mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Siphon Mana.
+}
+
+STRING 17726
+// Upgrades: R00G (Flare), Ubertip (Tooltip - Extended)
+{
+Allows Farstriders and Vareesa to use Feint ability, which turns them invisible for 5 seconds and increases their movement speed by 50%.
+}
+
+STRING 17727
+// Units: Utic (The Darkener), Ubertip (Tooltip - Extended)
+{
+Warrior Hero, exceptional at manipulating enemies and destroying them from the inside.|n|cfff5962dAbilities:|r Permanent Invisibility, Feedback|n|cfff5962dCan learn:|R Finger of Pain, Mind Confusion, Vampiric Aura, Inspire Madness, Astral Walk|n|n|cffffcc00Attacks land units.|R
+}
+
+STRING 17728
+// Units: Umal (The Cunning), Ubertip (Tooltip - Extended)
+{
+Mystical Hero, adept at infiltration and disrupting enemies.|n|cfff5962dAbilities:|r Permanent Invisibility, Feedback |n|cfff5962dCan learn:|R Carrion Swarm, Silence, Brilliance Aura, Doom, Astral Walk|n|n|cffffcc00Attacks land units.|R
+}
+
+STRING 17729
+// Units: Ubal (Envoy of Archimonde), Ubertip (Tooltip - Extended)
+{
+Cunning hero, adept at dealing magic damage and supporting armies.|n|cfff5962dAbilities:|r Permanent Invisibility, Feedback|n|cfff5962dCan learn:|R Astral Walk, Demonic Thunder, Summon Demonic Reinforcements, Unholy Aura, Death and Decay|n|n|cffffcc00Attacks land units.|R
+}
+
+STRING 17730
+// Units: u00D (Legion Herald), Ubertip (Tooltip - Extended)
+{
+Basic worker. Can summon and restore structures.|n|n|cffffcc00Attacks land units.|r
+}
+
+STRING 17731
+// Units: u007 (Dreadlord), Ubertip (Tooltip - Extended)
+{
+Elite Nathrezim, handpicked by Tichondrius himself.|n|cfff5962dAbilities:|R Carrion Swarm, Sleep, Vampiric Attack|n|cfff5962dCan Learn:|R Astral Walk, Sight of Sargeras|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land units.|r
+}
+
+STRING 17732
+// Units: n04H (Fel Guard), Ubertip (Tooltip - Extended)
+{
+Mainstay soldier of the Legion.|n|cfff5962dAbilities:|R Combat Experience, War Plating, Charge|n|n|cffffcc00Attacks land units.|r
+}
+
+STRING 17733
+// Units: n04Q (Nether Pit), Ubertip (Tooltip - Extended)
+{
+Summoning site for minor demons.|n|cfff5962dTrains:|R Fel Guard, Burning Archer, Fel Creeper|n|cfff5962dResearches:|R War Plating
+}
+
+STRING 17734
+// Abilities: ANrc (Rain of Chaos), Researchubertip (Tooltip - Learn - Extended)
+{
+Calls down multiple Infernals from the sky.|n|n|cffffcc00Level 1|r - Calls down 4 Abyssals . |n|cffffcc00Level 2|r - Calls down 5 Doomfire Abyssals. |n|cffffcc00Level 3|r - Calls down 6 Gargantuan Abyssals.
 }
 
 STRING 17735
@@ -106179,6 +105981,78 @@ STRING 17737
 // Upgrades: R095 (Chaos), Name (Name)
 {
 Quest Completed: A Destiny of Flame and Sorrow
+}
+
+STRING 17738
+// Abilities: ANrc (Rain of Chaos), Ubertip (Tooltip - Normal - Extended)
+{
+Calls down 4 Abyssals from the sky.
+}
+
+STRING 17739
+// Abilities: ANrc (Rain of Chaos), Ubertip (Tooltip - Normal - Extended)
+{
+Calls down 5 Doomfire Abyssals  from the sky.
+}
+
+STRING 17740
+// Abilities: ANrc (Rain of Chaos), Ubertip (Tooltip - Normal - Extended)
+{
+Calls down 6 Gargantuan Abyssals from the sky.
+}
+
+STRING 17741
+// Abilities: AHwe (Summon Fel Stalkers ), Researchubertip (Tooltip - Learn - Extended)
+{
+Summons Fel Stalkers to attack the heroe's enemies. |nLasts 40 seconds.|r |n|n|cffffcc00Level 1|r - Summons 2 Fel Stalkers |n|cffffcc00Level 2|r - Summons 3 Fel Stalkers .|n|cffffcc00Level 3|r - Summons 4 Fel Stalkers .|n|cffffcc00Level 4|r - Summons 5 Fel Stalkers 
+}
+
+STRING 17742
+// Abilities: AHwe (Summon Fel Stalkers ), Tip (Tooltip - Normal)
+{
+Summon Fel Stalkers  - [|cffffcc00Level 4|r]
+}
+
+STRING 17743
+// Abilities: AHwe (Summon Fel Stalkers ), Ubertip (Tooltip - Normal - Extended)
+{
+Summons 2 Fel Stalkers  with Mana Burn to attack the heroes enemies. |n|n|cffffcc00Attacks land units.|r
+}
+
+STRING 17744
+// Abilities: AHwe (Summon Fel Stalkers ), Ubertip (Tooltip - Normal - Extended)
+{
+Summons 3 Fel Stalkers  with Mana Burn to attack the heroes enemies. |n|n|cffffcc00Attacks land units.|r
+}
+
+STRING 17745
+// Abilities: AHwe (Summon Fel Stalkers ), Ubertip (Tooltip - Normal - Extended)
+{
+Summons 4 Fel Stalkers  with Mana Burn to attack the heroes enemies. |n|n|cffffcc00Attacks land units.|r
+}
+
+STRING 17746
+// Abilities: AHwe (Summon Fel Stalkers ), Ubertip (Tooltip - Normal - Extended)
+{
+Summons 5 Fel Stalkers  with Mana Burn to attack the heroes enemies. |n|n|cffffcc00Attacks land units.|r
+}
+
+STRING 17747
+// Abilities: AHwe (Summon Fel Stalkers ), Tip (Tooltip - Normal)
+{
+Summon Fel Stalkers  - [|cffffcc00Level 1|r]
+}
+
+STRING 17748
+// Abilities: AHwe (Summon Fel Stalkers ), Tip (Tooltip - Normal)
+{
+Summon Fel Stalkers  - [|cffffcc00Level 2|r]
+}
+
+STRING 17749
+// Abilities: AHwe (Summon Fel Stalkers ), Tip (Tooltip - Normal)
+{
+Summon Fel Stalkers  - [|cffffcc00Level 3|r]
 }
 
 STRING 17750
@@ -106203,6 +106077,12 @@ STRING 17753
 // Abilities: A0XH (Frost Shell), Hotkey (Hotkey - Normal)
 {
 W
+}
+
+STRING 17754
+// Abilities: AHwe (Summon Fel Stalkers ), Researchtip (Tooltip - Learn)
+{
+Learn Summon Fel Stalkers - [|cffffcc00Level %d|r]
 }
 
 STRING 17755
@@ -106327,6 +106207,12 @@ STRING 17774
 - Frost Bolt,- Frost Bolt|n- Summon Earth Elemental,- Frost Bolt|n- Summon Earth Elemental|n- Frost Armor
 }
 
+STRING 17775
+// Abilities: AHwe (Summon Fel Stalkers ), Name (Name)
+{
+Summon Fel Stalkers 
+}
+
 STRING 17776
 // Abilities: A0TH (Dispel Magic), EditorSuffix (Editor Suffix)
 {
@@ -106373,6 +106259,12 @@ STRING 17783
 // Upgrades: R07C (Spirit Walker Adept Training,Spirit Walker Master Training), EditorSuffix (Editor Suffix)
 {
 (Draenei)
+}
+
+STRING 17784
+// Abilities: A08A (Inferno), Ubertip (Tooltip - Normal - Extended)
+{
+Summons a more powerful Infernal from the sky, causing <A08A,DataA2> damage to enemy units near the impact point. The Infernal lasts 50 seconds.
 }
 
 STRING 17785
@@ -106451,6 +106343,18 @@ STRING 17797
 // Upgrades: R078 (Spirit Walker Adept Training,Spirit Walker Master Training), Hotkey (Hotkey)
 {
 X
+}
+
+STRING 17798
+// Abilities: A08A (Inferno), Ubertip (Tooltip - Normal - Extended)
+{
+Summons an Infernal from the sky, causing <A08A,DataA1> damage to enemy units near the impact point. The Infernal lasts 50 seconds.
+}
+
+STRING 17799
+// Buffs/Effects: B02Q (), Buffubertip (Tooltip - Extended)
+{
+This unit is under the fear aura, it has reduced damage.
 }
 
 STRING 17800
@@ -106591,6 +106495,24 @@ STRING 17822
 Build Crystal Protector
 }
 
+STRING 17823
+// Upgrades: R040 (Magic Sentry), Ubertip (Tooltip - Extended)
+{
+Allows Sky Barges to be trained from the Infernal Siegeworks.
+}
+
+STRING 17824
+// Units: nwe2 (Thunder Eagle), Ubertip (Tooltip - Extended)
+{
+Swift guardian eagle for Lordaeron.|n|cfff5962dAbilities:|r True Sight|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land and air units.|r
+}
+
+STRING 17825
+// Units: nchp (Mage), Ubertip (Tooltip - Extended)
+{
+Damage dealing spellcaster.|n|cfff5962dAbilities:|r Ice Bolt|n|cfff5962dCan learn:|R Dispel, Ice Fall|n|n|cffffcc00Attacks land and air units.|R
+}
+
 STRING 17826
 // Abilities: A0YJ (Inner Fire), Ubertip (Tooltip - Normal - Extended)
 {
@@ -106601,6 +106523,12 @@ STRING 17827
 // Units: e01K (Polybolos), EditorSuffix (Name - Editor Suffix)
 {
 (draenei)
+}
+
+STRING 17828
+// Units: hwtw (Scout Tower), Ubertip (Tooltip - Extended)
+{
+Basic observation tower. Has no attack.|n|cfff5962dCan learn:|r Magic Sentry|n|cfff5962dUpgrades into:|r Guard Tower, Cannon Tower
 }
 
 STRING 17829
@@ -106627,10 +106555,22 @@ STRING 17832
 Z
 }
 
+STRING 17833
+// Units: hkni (Knight), Ubertip (Tooltip - Extended)
+{
+Powerful mounted warrior.|n|cfff5962dAbilities:|R Charge, War Plating|n|n|cffffcc00Attacks land units.|r
+}
+
 STRING 17834
 // Units: o05A (Gemcrafter), Ubertip (Tooltip - Extended)
 {
 Hard working, back breaking laborer.|n|cfff5962dAbilities:|r Repair, Gather|n|n|cffffcc00Attacks land units and trees.
+}
+
+STRING 17835
+// Units: hfoo (Footman), Ubertip (Tooltip - Extended)
+{
+Versatile foot soldier of Lordaeron.|n|cfff5962dAbilities:|R Defend, Combat Experience|n|n|cffffcc00Attacks land units.|r
 }
 
 STRING 17836
@@ -106667,6 +106607,12 @@ STRING 17841
 // Units: o055 (Crystal Spire), Ubertip (Tooltip - Extended)
 {
 Beast taming tower of the Draenei.|n|cfff5962dTrains:|R Brown Elekk, Elekk Knight, Nether Ray
+}
+
+STRING 17842
+// Units: hcas (Castle), Ubertip (Tooltip - Extended)
+{
+Fortified stronghold of the Alliance Nations.|n|cfff5962dTrains:|R Peasant, Paladin|n|cfff5962dResearches:|R Paladin Training, Full Scale Escalation|n|cfff5962dAbilities:|R Summon Garrison
 }
 
 STRING 17843
@@ -106735,6 +106681,12 @@ STRING 17853
 Q
 }
 
+STRING 17854
+// Units: hbla (Blacksmith), Ubertip (Tooltip - Extended)
+{
+Forges iron and steel for the war effort.|n|cfff5962dResearches: |RForged Weaponry, Armor Plating, Power Infusion, Improved Cannons, Fortified Hulls, Improved Lumber Harvesting, Improved Masonry
+}
+
 STRING 17855
 // Abilities: A0XR (Breath of Life), Hotkey (Hotkey - Normal)
 {
@@ -106787,6 +106739,12 @@ STRING 17863
 // Units: H09S (Hammer of the Light), Propernames (Proper Names)
 {
 Vindicator Maraad
+}
+
+STRING 17864
+// Units: hbar (Barracks), Ubertip (Tooltip - Extended)
+{
+Housing for the defenders of Lordaeron.|n|n|r|cfff5962dTrains:|R Footman, Huntsman, Knight|n|cfff5962dResearches:|r Ensnare, Veteran Footman, Animal War Training, Rapid Fire
 }
 
 STRING 17865
@@ -106849,6 +106807,12 @@ STRING 17874
 Train Rangari
 }
 
+STRING 17875
+// Units: esen (Huntress), Ubertip (Tooltip - Extended)
+{
+Mounted Sentinel warrior.|n|cfff5962dAbilities:|r Ensnare, Elune's Grace, Sentinel|n|cfff5962dCan Learn:|r Moon Glaive|n|n|cffffcc00Attacks land units.|r
+}
+
 STRING 17876
 // Abilities: A0BD (Moving Earth), Tip (Tooltip - Normal)
 {
@@ -106871,6 +106835,18 @@ STRING 17879
 // Abilities: A0SD (Consecrated Slam), EditorSuffix (Editor Suffix)
 {
 (draenei)
+}
+
+STRING 17880
+// Units: ehpr (Hippogryph Rider), Ubertip (Tooltip - Extended)
+{
+Airborne archer of the Sentinels who strikes multiple foes.|n|cfff5962dAbilities:|R Multi Shot |n|cfff5962dCan learn:|R Wind Walk|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land and air units.|r
+}
+
+STRING 17881
+// Units: edob (Hunter's Hall), Ubertip (Tooltip - Extended)
+{
+Kaldorei hall of enhancements, where the defenders of Kalimdor grow in strength.|n|cfff5962dResearches: |RForged Weaponry, Armor Plating, Elune Infusion, Improved Cannons, Fortified Hulls
 }
 
 STRING 17882
@@ -107107,10 +107083,22 @@ STRING 17920
 Heals a target friendly unit for <A07U,DataA3> hit points over <A07U,Dur3> seconds.
 }
 
+STRING 17921
+// Units: earc (Archer), Ubertip (Tooltip - Extended)
+{
+Agile archer of the Sentinels.|n|cfff5962dAbilities:|r Barrage, Elune's Grace, Shadowmeld|n|cfff5962dCan Learn:|r Wind Walk|n|n|cffffcc00Attacks land and air units.|r
+}
+
 STRING 17922
 // Abilities: A0TH (Dispel Magic), Ubertip (Tooltip - Normal - Extended)
 {
 Removes all buffs from units in a target area. |n|cffffcc00Deals 250 damage to summoned units.|r
+}
+
+STRING 17923
+// Units: Ewrd (Leader of the Watchers ), Ubertip (Tooltip - Extended)
+{
+Cunning Hero, adept at melee combat and slipping in and out of fights.|n|cfff5962dAbilities:|r Blink, Hide, Hunt Aura|n|cfff5962dCan learn:|R Fan of Knives, Avatar of Vengeance, Battle Experience, Take Vengeance |n|n|cffffcc00Attacks land units.|R
 }
 
 STRING 17924
@@ -107153,6 +107141,12 @@ STRING 17930
 // Upgrades: R08E (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
 {
 Research Fortified Hulls
+}
+
+STRING 17931
+// Units: Etyr (High Priestess of Elune ), Ubertip (Tooltip - Extended)
+{
+Mystical Hero, adept at empowering your backline and dealing magic damage over time.|n|cfff5962dAbilities:|r Moonlight, Hide |n|cfff5962dCan learn:|R Rain of Arrows, Words of Protection, Trueshot Aura, Starfall|n|n|cffffcc00Attacks land and air units.|R
 }
 
 STRING 17932
@@ -107203,6 +107197,18 @@ STRING 17939
 Increases Elementalist' mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Frost Armor.
 }
 
+STRING 17940
+// Units: n06P (Sentinel Enclave), Ubertip (Tooltip - Extended)
+{
+Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Wisp, Priestess of the Moon|n|cfff5962dAbilities:|R Ancestral Spirits|n|cfff5962dResearches:|R Elune's Blessing, Full Scale Escalation
+}
+
+STRING 17941
+// Units: n06C (Moonhunter), Ubertip (Tooltip - Extended)
+{
+Cunning trapper of prey, in service to the Sentinels.|n|cfff5962dAbilities:|R Shadow Strike, Elune's Grace|n|cfff5962dCan Learn:|R Corrosive Strike, Faerie Fire, Wind Walk|n|n|cffffcc00Attacks land and air units.
+}
+
 STRING 17942
 // Abilities: A0UX (Summon Zombie), Tip (Tooltip - Normal)
 {
@@ -107251,6 +107257,12 @@ STRING 17949
 This unit is under Moving Earth; it will take damage over time.
 }
 
+STRING 17950
+// Units: n034 (Guild Ranger), Ubertip (Tooltip - Extended)
+{
+Agile, deadly and skilled Archers of the Sentinels.|n|cfff5962dAbilities: |RResistant Skin, Shadowmeld|n|n|cff99b4d1Can only train 12.|r|n|cffffcc00Attacks land and air units.|r
+}
+
 STRING 17951
 // Abilities: A0TM (Spirit Orb), Ubertip (Tooltip - Normal - Extended)
 {
@@ -107273,6 +107285,12 @@ STRING 17954
 // Abilities: A0UI (Siege Form), Ubertip (Tooltip - Normal - Extended)
 {
 Immobilizes the Azerite Siege Engine to grant it a powerful ranged attack.
+}
+
+STRING 17955
+// Units: h04L (Priestess of the Moon), Ubertip (Tooltip - Extended)
+{
+Warrior priestess of Elune.|n|cfff5962dAbilities:|R Light of the Goddess, Slow Poison, Scout, Shadowmeld, Resistant Skin|n|cfff5962dCan learn:|R Elune's Blessing |n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land and air units.|r
 }
 
 STRING 17956
@@ -107455,6 +107473,12 @@ STRING 17985
 Returns carried lumber.
 }
 
+STRING 17986
+// Units: h045 (Warden), Ubertip (Tooltip - Extended)
+{
+Sentinel Elite Warrior, specialises in disruption. |n|cfff5962dAbilities:|R Fan of Knives, Blink, Spell Steal, Shadowmeld, Elune's Grace,  Resistant Skin|n|cff99b4d1Can only train 8.|r|n|cffffcc00Attacks land units.|r
+}
+
 STRING 17987
 // Abilities: A0UB (Open a portal to Northrend), Hotkey (Hotkey - Normal)
 {
@@ -107485,16 +107509,46 @@ STRING 17991
 Build Kezan Trading Center
 }
 
+STRING 17992
+// Units: h03M (Hunter Tower), Ubertip (Tooltip - Extended)
+{
+Primary defensive structure.|n|cfff5962dUpgrades Into:|R Improved Hunter Tower|n|n|cffffcc00Attacks land and air units.|r
+}
+
 STRING 17993
 // Abilities: A07F (Critical Strike), Ubertip (Tooltip - Normal - Extended)
 {
 Gives a 15% chance to do 1.5 times normal damage on an attack.
 }
 
+STRING 17994
+// Units: h035 (Arcane Study), Ubertip (Tooltip - Extended)
+{
+Towering college of Magic.|n|cfff5962dTrains:|R Mage, Pastor, Silver Hand Squire|n|cfff5962dResearches:|R Pastor Adept Training, Mage Adept Training, Seal of Righteousness, Magic Sentry
+}
+
+STRING 17995
+// Units: h02Q (Pegasus Knight), Ubertip (Tooltip - Extended)
+{
+Swift flying unit. |n|cfff5962dAbilities:|R Cloud, Shackles|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land and air units.|r
+}
+
+STRING 17996
+// Units: e00L (War Academy), Ubertip (Tooltip - Extended)
+{
+Training hall for the warrior Sentinels.|n|cfff5962dTrains:|R Archer, Huntress, Glaive Thrower|n|cfff5962dResearches:|R Improved Bows, Improved Ensnare, Moon Glaive, Wind Walk
+}
+
 STRING 17997
 // Abilities: A0ZI (Serrated Blades), Name (Name)
 {
 Serrated Blades
+}
+
+STRING 17998
+// Units: e006 (Priestess), Ubertip (Tooltip - Extended)
+{
+Divine priestess of Elune.|n|cfff5962dAbilities:|r Heal, Elune's Grace|n|cfff5962dCan Learn:|R Dispel Magic, Rain of Light, Wind Walk|n|n|cffffcc00Attacks land and air units.|R
 }
 
 STRING 17999
@@ -107785,6 +107839,12 @@ STRING 18046
 |cffff8c00Artifact|r|nAdds <AIdf,DataA1> bonus damage to the attack of a Hero when carried. The Hero's attack also becomes ranged when attacking air and will create a Dark Minion when it is the killing blow on an enemy unit. The Dark Minion lasts <ANbs,DataC1> seconds.|n|cffffcc00Lore|r|n|cffffdeadA dark crystal found on the body of a dead orc warlock.
 }
 
+STRING 18047
+// Units: h09Y (Throne Guard), Ubertip (Tooltip - Extended)
+{
+Strongest Soldiers of Lordaeron, Protectors of Kings.|n|cfff5962dAbilities:|R Charge, Protector of Kings, Cleaving Attack, Heavy Armor, Elite Combat Experience|n |n|cff99b4d1Can only train 2.|r|n|cffffcc00Attacks land units.|r
+}
+
 STRING 18048
 // Units: H09S (Hammer of the Light), Ubertip (Tooltip - Extended)
 {
@@ -107863,6 +107923,24 @@ STRING 18060
 Increases damage and provides life steal. Can be used to cast Divine Shield.
 }
 
+STRING 18061
+// Abilities: A0GN (Ancestral Spirits), Ubertip (Tooltip - Normal - Extended)
+{
+Summons Ancestral Spirits which steal health from enemy units and give it back to the building. Lasts 30 seconds.
+}
+
+STRING 18062
+// Abilities: A0US (Protector of Kings), Tip (Tooltip - Normal)
+{
+Protector of Kings
+}
+
+STRING 18063
+// Abilities: A0US (Protector of Kings), Name (Name)
+{
+Protector of Kings
+}
+
 STRING 18064
 // Abilities: A0RA (Overclock), Researchubertip (Tooltip - Learn - Extended)
 {
@@ -107873,6 +107951,24 @@ STRING 18065
 // Abilities: A0T5 (Legion Teleporters), Ubertip (Tooltip - Normal - Extended)
 {
 Increases the rate at which this unit gathers lumber.
+}
+
+STRING 18066
+// Upgrades: R026 (Animal War Training), Ubertip (Tooltip - Extended)
+{
+Increases the maximum hit points of all casters by 100 and increases armor by 2.|n|n|cffffd700Affects Priestesses, Moonhunters, Reedeemed Highborns and Wisps.|r
+}
+
+STRING 18067
+// Upgrades: R01W (Druid of the Talon Adept Training,Druid of the Talon Master Training), Ubertip (Tooltip - Extended)
+{
+Increases Moonhunters' mana capacity, mana regeneration rate, attack damage and gives the ability Fairy Fire.
+}
+
+STRING 18068
+// Upgrades: R00S (Spirit Walker Adept Training,Spirit Walker Master Training), Ubertip (Tooltip - Extended)
+{
+Increases Priestess' mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Dispel Magic.
 }
 
 STRING 18069
@@ -108187,40 +108283,22 @@ STRING 18139
 E
 }
 
-STRING 18140
-// Units: h09Y (Throne Guard), Ubertip (Tooltip - Extended)
-{
-Strongest Soldiers of Lordaeron, Protectors of Kings.|n|cfff5962dAbilities:|R Charge, Protector, Cleaving Attack, Heavy Armor, Combat Experience|n |n|cff99b4d1Can only train 2.|r|n|cffffcc00Attacks land units.|r
-}
-
 STRING 18141
-// Abilities: A0US (Protector of King's), EditorSuffix (Editor Suffix)
+// Abilities: A0US (Protector of Kings), EditorSuffix (Editor Suffix)
 {
 (protector)
 }
 
 STRING 18142
-// Abilities: A0US (Protector of King's), Researchubertip (Tooltip - Learn - Extended)
+// Abilities: A0US (Protector of Kings), Researchubertip (Tooltip - Learn - Extended)
 {
 Gives additional armor to nearby friendly units. |n|n|cffffcc00Level 1|r - Increases base armor by 1.5. |n|cffffcc00Level 2|r - Increases base armor by 3. |n|cffffcc00Level 3|r - Increases base armor by 4.5. |n|cffffcc00Level 4|r - Increases base armor by 6.
 }
 
-STRING 18143
-// Abilities: A0US (Protector of King's), Tip (Tooltip - Normal)
-{
-Protector of King's
-}
-
 STRING 18144
-// Abilities: A0US (Protector of King's), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A0US (Protector of Kings), Ubertip (Tooltip - Normal - Extended)
 {
 Gives 15 additional armor to your nearby heroes.
-}
-
-STRING 18145
-// Abilities: A0US (Protector of King's), Name (Name)
-{
-Protector of King's
 }
 
 STRING 18146
@@ -111922,7 +112000,7 @@ Control Point Defender
 }
 
 STRING 18899
-// Abilities: AHwe (Summon Fel Hounds), EditorSuffix (Editor Suffix)
+// Abilities: AHwe (Summon Fel Stalkers ), EditorSuffix (Editor Suffix)
 {
  (Anetheron)
 }
@@ -111993,12 +112071,6 @@ STRING 18910
 Summons Fel Hounds to attack the Hero's enemies. |nLasts 40 seconds.|r |n|n|cffffcc00Level 1|r - Summons <A0X5,DataA1> Fel Hounds|n|cffffcc00Level 2|r - Summons <A0X5,DataA2> Fel Hounds.|n|cffffcc00Level 3|r - Summons <A0X5,DataA3> Fel Hounds.|n|cffffcc00Level 4|r - Summons <A0X5,DataA4> Fel Hounds
 }
 
-STRING 18911
-// Abilities: A0JB (Summon Gallywix Personal Transport), Tip (Tooltip - Normal)
-{
-Summon Fel Hound - [|cffffcc00Level 4|r]
-}
-
 STRING 18912
 // Abilities: A0X5 (Summon Fel Hounds), Ubertip (Tooltip - Normal - Extended)
 {
@@ -112021,36 +112093,6 @@ STRING 18915
 // Abilities: A0JB (Summon Gallywix Personal Transport), Ubertip (Tooltip - Normal - Extended)
 {
 Summons <A0X4,DataA1> Fel Hounds with Mana Burn to attack the Hero's enemies. |n|n|cffffcc00Attacks land units.|r
-}
-
-STRING 18916
-// Abilities: A0X5 (Summon Fel Hounds), Tip (Tooltip - Normal)
-{
-Summon Fel Hound - [|cffffcc00Level 1|r]
-}
-
-STRING 18917
-// Abilities: A0X5 (Summon Fel Hounds), Tip (Tooltip - Normal)
-{
-Summon Fel Hound - [|cffffcc00Level 2|r]
-}
-
-STRING 18918
-// Abilities: A0X5 (Summon Fel Hounds), Tip (Tooltip - Normal)
-{
-Summon Fel Hound - [|cffffcc00Level 3|r]
-}
-
-STRING 18919
-// Abilities: A0X5 (Summon Fel Hounds), Researchtip (Tooltip - Learn)
-{
-Learn Summon Fel Hounds - [|cffffcc00Level %d|r]
-}
-
-STRING 18920
-// Abilities: A0X5 (Summon Fel Hounds), Name (Name)
-{
-Summon Fel Hounds
 }
 
 STRING 18921
@@ -113811,12 +113853,6 @@ STRING 19270
 Annihilan Guard
 }
 
-STRING 19271
-// Abilities: A0Z5 (Hunt Aura), Researchtip (Tooltip - Learn)
-{
-|cffffcc00(E)|r - Learn Conveyance Aura - [|cffffcc00Level %d|r]
-}
-
 STRING 19273
 // Units: n0C7 (Royal Temple), Name (Name)
 {
@@ -115144,12 +115180,6 @@ STRING 19530
 Wyrmrest
 }
 
-STRING 19531
-// Units: n0BC (Control Point Defender), Ubertip (Tooltip - Extended)
-{
-Tower infused with the magic of the Sunwell.|n|cfff5962dCan learn:|R Magic Sentry|n|n|cffffcc00Attacks land and air units.|r
-}
-
 STRING 19532
 // Units: n0BC (Control Point Defender), EditorSuffix (Name - Editor Suffix)
 {
@@ -115178,12 +115208,6 @@ STRING 19537
 // Units: h03F (Control Point Defender), Tip (Tooltip - Basic)
 {
 Build Hunter Tower
-}
-
-STRING 19538
-// Units: h03F (Control Point Defender), Ubertip (Tooltip - Extended)
-{
-Primary defensive structure. |n|n|cffffcc00Attacks land and air units.|r
 }
 
 STRING 19539

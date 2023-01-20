@@ -40,7 +40,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
     {
       SetPlayerTechResearched(completingFaction.Player, ResearchId, 1);
       completingFaction.Player?.DisplayUnitTypeAcquired(ThunderEagleId,
-        "You can now train Thunder Eagles from upgraded Town Halls and from your capitals.");
+        "You can now train Thunder Eagles at the High Tower.");
     }
   }
 }

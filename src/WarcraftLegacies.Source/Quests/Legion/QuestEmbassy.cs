@@ -22,6 +22,6 @@ namespace WarcraftLegacies.Source.Quests.Legion
     protected override string RewardFlavour => "The Legion has developped more infernal weaponry";
 
     protected override string RewardDescription =>
-      "You can build the Infernal Machine Factory and summon Anetheron from the " + GetObjectName(AltarId);
+      "You can build the Infernal Siegeworks and summon Anetheron from the " + GetObjectName(AltarId);
   }
 }
