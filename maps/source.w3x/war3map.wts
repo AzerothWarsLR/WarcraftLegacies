@@ -2161,12 +2161,6 @@ STRING 361
 Revive Sapphiron
 }
 
-STRING 362
-// Units: nmdr (Brown Elekk), Ubertip (Tooltip - Extended)
-{
-Heavy melee unit.|n|cfff5962dAbilities:|r Think Skin |n|n|cffffcc00Attacks land units.|r
-}
-
 STRING 363
 // Units: nzom (Zombie), EditorSuffix (Name - Editor Suffix)
 {
@@ -44905,12 +44899,6 @@ STRING 7482
 Learn Forked Lightning (|cffffcc00Q|r) - [|cffffcc00Level %d|r]
 }
 
-STRING 7483
-// Abilities: A0VI (Thick Skin), EditorSuffix (Editor Suffix)
-{
-(Roanauk)
-}
-
 STRING 7484
 // Abilities: A0VI (Thick Skin), Name (Name)
 {
@@ -44921,12 +44909,6 @@ STRING 7485
 // Abilities: A0VI (Thick Skin), Tip (Tooltip - Normal)
 {
 Thick Skin
-}
-
-STRING 7486
-// Abilities: A0VI (Thick Skin), Ubertip (Tooltip - Normal - Extended)
-{
-Reduces all ranged attack on the unit by 20 damage. Attacks cannot be reduced below 5 damage.
 }
 
 STRING 7487
@@ -75149,10 +75131,28 @@ STRING 12532
 Burns nearby enemy structures for 75 points of damage per second.
 }
 
+STRING 12533
+// Units: nmdr (Brown Elekk), Ubertip (Tooltip - Extended)
+{
+Heavy melee unit.|n|cfff5962dAbilities:|r Thick Skin |n|n|cffffcc00Attacks land units.|r
+}
+
 STRING 12534
 // Abilities: A02I (Feint), Hotkey (Hotkey - Normal)
 {
 Q
+}
+
+STRING 12535
+// Abilities: A0VI (Thick Skin), EditorSuffix (Editor Suffix)
+{
+(Brown Elekk)
+}
+
+STRING 12536
+// Abilities: A0VI (Thick Skin), Ubertip (Tooltip - Normal - Extended)
+{
+Reduces all ranged attacks on the unit by <A0VI,DataC1> damage. Attacks cannot be reduced below <A0VI,DataB1> damage.
 }
 
 STRING 12538
