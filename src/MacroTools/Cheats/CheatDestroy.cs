@@ -26,11 +26,11 @@ namespace MacroTools.Cheats
     {
       var artifact = ArtifactManager.GetFromName(parameters[0]);
       if (artifact == null)
-      {
         return $"You must specify the name of a registered {nameof(Artifact)} as the first parameter.";
-      }
+      
+      var artifactName = GetItemName(artifact.Item);
       ArtifactManager.Destroy(artifact);
-      return $"Destroying {GetItemName(artifact.Item)}";
+      return $"Destroyed {artifactName}";
     }
   }
 }
