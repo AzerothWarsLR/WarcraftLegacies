@@ -34,10 +34,10 @@ namespace MacroTools.Cheats
             WCSharp.Shared.Data.Rectangle.WorldBounds.Rect, true, false);
           FogModifierStart(newFog);
           Fogs.Add(cheater, newFog);
-          return "|cffD27575CHEAT:|r Whole map revealed.";
+          return "Whole map revealed.";
         case Toggle.Off:
           DestroyFogModifier(Fogs[cheater]);
-          return "|cffD27575CHEAT:|r Whole map unrevealed.";
+          return "Whole map unrevealed.";
         default:
           throw new ArgumentOutOfRangeException($"{nameof(parameters)}");
       }
