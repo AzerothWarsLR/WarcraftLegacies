@@ -13,7 +13,10 @@ namespace MacroTools.Cheats
     
     /// <inheritdoc />
     public override CommandType Type => CommandType.Cheat;
-    
+
+    /// <inheritdoc />
+    public override string Description => "Sets your lumber to the specified value.";
+
     /// <inheritdoc />
     public override string Execute(player cheater, params string[] parameters)
     {

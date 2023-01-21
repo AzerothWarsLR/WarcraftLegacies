@@ -18,6 +18,9 @@ namespace MacroTools.Cheats
     private static readonly Dictionary<player, fogmodifier> Fogs = new();
 
     /// <inheritdoc />
+    public override string Description => "When activated, grants vision of the entire map.";
+    
+    /// <inheritdoc />
     public override string Execute(player cheater, params string[] parameters)
     {
       if (!TestMode.CheatCondition()) return;

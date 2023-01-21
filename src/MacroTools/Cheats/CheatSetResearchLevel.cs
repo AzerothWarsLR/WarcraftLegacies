@@ -20,6 +20,9 @@ namespace MacroTools.Cheats
     public override CommandType Type => CommandType.Cheat;
     
     /// <inheritdoc />
+    public override string Description => "Sets the specified research to the specified level.";
+    
+    /// <inheritdoc />
     public override string Execute(player cheater, params string[] parameters)
     {
       var research = parameters[0];

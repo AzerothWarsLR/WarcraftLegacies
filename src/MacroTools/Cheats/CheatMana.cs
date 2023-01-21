@@ -16,6 +16,9 @@ namespace MacroTools.Cheats
     /// <inheritdoc />
     public override CommandType Type => CommandType.Cheat;
     
+    /// <inheritdoc />
+    public override string Description => "When activated, causes your units to fully restore mana whenever they cast a spell.";
+    
     private static readonly List<player> PlayersWithCheat = new();
 
     private static bool IsCheatActive(player whichPlayer)

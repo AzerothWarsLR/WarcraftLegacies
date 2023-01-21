@@ -16,6 +16,9 @@ namespace MacroTools.Cheats
     /// <inheritdoc />
     public override CommandType Type => CommandType.Cheat;
     
+    /// <inheritdoc />
+    public override string Description => "Spawns the specified units or items the specified number of times.";
+    
     private static void SpawnUnitsOrItems(unit whichUnit, int typeId, int count)
     {
       for (var i = 0; i < count; i++)

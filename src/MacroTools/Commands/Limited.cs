@@ -19,7 +19,10 @@ namespace MacroTools.Commands
 
     /// <inheritdoc />
     public override CommandType Type => CommandType.Normal;
-    
+
+    /// <inheritdoc />
+    public override string Description => "Pings all limited units you control.";
+
     /// <inheritdoc />
     public override string Execute(player commandUser, params string[] parameters)
     {

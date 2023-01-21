@@ -16,6 +16,9 @@ namespace MacroTools.Cheats
     public override CommandType Type => CommandType.Cheat;
 
     /// <inheritdoc />
+    public override string Description => "Removes all selected units.";
+    
+    /// <inheritdoc />
     public override string Execute(player cheater, params string[] parameters)
     {
       foreach (var unit in CreateGroup().EnumSelectedUnits(cheater).EmptyToList()) 

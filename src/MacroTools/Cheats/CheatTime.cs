@@ -15,6 +15,9 @@ namespace MacroTools.Cheats
     public override CommandType Type => CommandType.Cheat;
     
     /// <inheritdoc />
+    public override string Description => "Sets the time to a particular value.";
+    
+    /// <inheritdoc />
     public override string Execute(player cheater, params string[] parameters)
     {
       if (!float.TryParse(parameters[0], out var time))

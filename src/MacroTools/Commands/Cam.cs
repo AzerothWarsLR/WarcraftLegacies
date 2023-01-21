@@ -19,7 +19,10 @@ namespace MacroTools.Commands
 
     /// <inheritdoc />
     public override CommandType Type => CommandType.Normal;
-    
+
+    /// <inheritdoc />
+    public override string Description => "Sets your camera zoom to the specified distance.";
+
     /// <inheritdoc />
     public override string Execute(player commandUser, params string[] parameters)
     {

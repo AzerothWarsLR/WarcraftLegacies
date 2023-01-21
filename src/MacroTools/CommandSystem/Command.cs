@@ -21,6 +21,11 @@ namespace MacroTools.CommandSystem
     /// Determines the purpose of the command and when it can be used.
     /// </summary>
     public abstract CommandType Type { get; }
+    
+    /// <summary>
+    /// Describes to the player what the commmand will do.
+    /// </summary>
+    public abstract string Description { get; }
 
     /// <summary>
     /// What happens when the <see cref="CommandSystem.Command"/> gets executed by a player.

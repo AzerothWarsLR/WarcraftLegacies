@@ -28,6 +28,9 @@ namespace MacroTools.Cheats
     }
 
     /// <inheritdoc />
+    public override string Description => "When activated, causes your units to teleport whenever you order them to patrol.";
+    
+    /// <inheritdoc />
     public override string Execute(player cheater, params string[] parameters)
     {
       if (!TestMode.CheatCondition()) return;

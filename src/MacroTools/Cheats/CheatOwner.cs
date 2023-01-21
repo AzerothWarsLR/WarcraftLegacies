@@ -16,6 +16,9 @@ namespace MacroTools.Cheats
     public override CommandType Type => CommandType.Cheat;
 
     /// <inheritdoc />
+    public override string Description => "Sets the owner of all units to the specified player number.";
+    
+    /// <inheritdoc />
     public override string Execute(player cheater, params string[] parameters)
     {
       if (!int.TryParse(parameters[0], out var playerNumber))

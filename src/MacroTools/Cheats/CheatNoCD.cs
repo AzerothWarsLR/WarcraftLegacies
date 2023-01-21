@@ -14,6 +14,9 @@ namespace MacroTools.Cheats
     public override int ParameterCount => 1;
     
     /// <inheritdoc />
+    public override string Description => "When activated, your units reset all cooldowns after they cast a spell.";
+    
+    /// <inheritdoc />
     public override CommandType Type => CommandType.Cheat;
     
     private static readonly List<player> PlayersWithCheat = new();
