@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using MacroTools.CommandSystem;
 using static War3Api.Common;
@@ -23,22 +24,22 @@ namespace MacroTools.Cheats
     /// <inheritdoc />
     public override string Execute(player cheater, params string[] parameters)
     {
-      if (!TestMode.CheatCondition()) return;
-      string enteredString = GetEventPlayerChatString();
-      player p = GetTriggerPlayer();
-      string parameter = SubString(enteredString, StringLength(Command), StringLength(enteredString));
+      if (Enum.TryParse<Toggle>(parameters[0], out var toggle))
+        return "You must specify \"on\" or \"off\" as the first parameter.";
 
-      if (parameter == "on")
+      switch (toggle)
       {
-        var newFog = CreateFogModifierRect(p, FOG_OF_WAR_VISIBLE, WCSharp.Shared.Data.Rectangle.WorldBounds.Rect, true, false);
-        FogModifierStart(newFog);
-        Fogs.Add(p, newFog);
-        DisplayTextToPlayer(p, 0, 0, "|cffD27575CHEAT:|r Whole map revealed.");
-      }
-      else if (parameter == "off")
-      {
-        DestroyFogModifier(Fogs[p]);
-        DisplayTextToPlayer(p, 0, 0, "|cffD27575CHEAT:|r Whole map unrevealed.");
+        case Toggle.On:
+          var newFog = CreateFogModifierRect(cheater, FOG_OF_WAR_VISIBLE,
+            WCSharp.Shared.Data.Rectangle.WorldBounds.Rect, true, false);
+          FogModifierStart(newFog);
+          Fogs.Add(cheater, newFog);
+          return "|cffD27575CHEAT:|r Whole map revealed.";
+        case Toggle.Off:
+          DestroyFogModifier(Fogs[cheater]);
+          return "|cffD27575CHEAT:|r Whole map unrevealed.";
+        default:
+          throw new ArgumentOutOfRangeException($"{nameof(parameters)}");
       }
     }
   }

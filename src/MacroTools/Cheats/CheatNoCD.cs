@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using MacroTools.CommandSystem;
 using WCSharp.Events;
@@ -46,20 +47,19 @@ namespace MacroTools.Cheats
     /// <inheritdoc />
     public override string Execute(player cheater, params string[] parameters)
     {
-      if (!TestMode.CheatCondition()) return;
-      string enteredString = GetEventPlayerChatString();
-      player p = GetTriggerPlayer();
-      string parameter = SubString(enteredString, StringLength(Command), StringLength(enteredString));
+      if (Enum.TryParse<Toggle>(parameters[0], out var toggle))
+        return "You must specify \"on\" or \"off\" as the first parameter.";
 
-      if (parameter == "on")
+      switch (toggle)
       {
-        SetCheatActive(p, true);
-        DisplayTextToPlayer(p, 0, 0, "|cffD27575CHEAT:|r No cooldowns activated.");
-      }
-      else if (parameter == "off")
-      {
-        SetCheatActive(p, false);
-        DisplayTextToPlayer(p, 0, 0, "|cffD27575CHEAT:|r No cooldowns deactivated.");
+        case Toggle.On:
+          SetCheatActive(cheater, true);
+          return "No cooldowns activated.";
+        case Toggle.Off:
+          SetCheatActive(cheater, false);
+          return "No cooldowns deactivated.";
+        default:
+          throw new ArgumentOutOfRangeException($"{nameof(parameters)}");
       }
     }
 

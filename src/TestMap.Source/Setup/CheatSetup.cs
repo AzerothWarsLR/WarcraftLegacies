@@ -18,13 +18,13 @@ namespace TestMap.Source.Setup
       CheatKick.Setup();
       CheatLevel.Setup();
       CommandManager.Register(new CheatLumber());
-      CheatMana.Setup();
+      CommandManager.Register(new CheatMana());
       CommandManager.Register(new CheatMp());
-      CheatNocd.Setup();
+      CommandManager.Register(new CheatNocd());
       CommandManager.Register(new CheatOwner());
       CommandManager.Register(new CheatRemove());
       CommandManager.Register(new CheatSpawn());
-      CheatTele.Setup();
+      CommandManager.Register(new CheatTele());
       CommandManager.Register(new CheatTime());
       CommandManager.Register(new CheatUncontrol());
       CommandManager.Register(new CheatVision());

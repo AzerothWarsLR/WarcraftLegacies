@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using MacroTools.CommandSystem;
 using WCSharp.Events;
@@ -21,50 +22,46 @@ namespace MacroTools.Cheats
     
     private static readonly List<player> PlayersWithCheat = new();
 
-    private static bool IsCheatActive(player whichPlayer)
-    {
-      return PlayersWithCheat.Contains(whichPlayer);
-    }
-
-    private static void SetCheatActive(player whichPlayer, bool isActive)
-    {
-      if (isActive && !PlayersWithCheat.Contains(whichPlayer))
-      {
-        PlayersWithCheat.Add(whichPlayer);
-        return;
-      }
-
-      if (!isActive && PlayersWithCheat.Contains(whichPlayer)) PlayersWithCheat.Remove(whichPlayer);
-    }
-
-    private static void Spell()
-    {
-      if (IsCheatActive(GetTriggerPlayer()))
-        SetUnitState(GetTriggerUnit(), UNIT_STATE_MANA, GetUnitState(GetTriggerUnit(), UNIT_STATE_MAX_MANA));
-    }
-
     /// <inheritdoc />
     public override string Execute(player cheater, params string[] parameters)
     {
-      if (!TestMode.CheatCondition()) return;
-      string enteredString = GetEventPlayerChatString();
-      player p = GetTriggerPlayer();
-      string parameter = SubString(enteredString, StringLength(Command), StringLength(enteredString));
+      if (Enum.TryParse<Toggle>(parameters[0], out var toggle))
+        return "You must specify \"on\" or \"off\" as the first parameter.";
 
-      if (parameter == "on")
+      switch (toggle)
       {
-        SetCheatActive(p, true);
-        DisplayTextToPlayer(p, 0, 0, "|cffD27575CHEAT:|r Infinite mana activated.");
-      }
-      else if (parameter == "off")
-      {
-        SetCheatActive(p, false);
-        DisplayTextToPlayer(p, 0, 0, "|cffD27575CHEAT:|r Infinite mana deactivated.");
+        case Toggle.On:
+          SetCheatActive(cheater, true);
+          return "Infinite mana activated.";
+        case Toggle.Off:
+          SetCheatActive(cheater, false);
+          return "Infinite mana deactivated.";
+        default:
+          throw new ArgumentOutOfRangeException($"{nameof(parameters)}");
       }
     }
 
     /// <inheritdoc />
     public override void OnRegister() => 
       PlayerUnitEvents.Register(UnitTypeEvent.SpellEndCast, Spell);
+    
+    private static void SetCheatActive(player whichPlayer, bool isActive)
+    {
+      switch (isActive)
+      {
+        case true when !PlayersWithCheat.Contains(whichPlayer):
+          PlayersWithCheat.Add(whichPlayer);
+          return;
+        case false when PlayersWithCheat.Contains(whichPlayer):
+          PlayersWithCheat.Remove(whichPlayer);
+          break;
+      }
+    }
+
+    private static void Spell()
+    {
+      if (PlayersWithCheat.Contains(GetTriggerPlayer()))
+        SetUnitState(GetTriggerUnit(), UNIT_STATE_MANA, GetUnitState(GetTriggerUnit(), UNIT_STATE_MAX_MANA));
+    }
   }
 }
