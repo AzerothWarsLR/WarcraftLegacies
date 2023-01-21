@@ -1,12 +1,25 @@
+using System;
 using System.Collections.Generic;
+using MacroTools.CommandSystem;
 using WCSharp.Events;
 using static War3Api.Common;
 
 namespace MacroTools.Cheats
 {
-  public static class CheatNocd
+  public sealed class CheatNocd : Command
   {
-    private const string Command = "-nocd ";
+    /// <inheritdoc />
+    public override string CommandText => "nocd";
+    
+    /// <inheritdoc />
+    public override int ParameterCount => 1;
+    
+    /// <inheritdoc />
+    public override string Description => "When activated, your units reset all cooldowns after they cast a spell.";
+    
+    /// <inheritdoc />
+    public override CommandType Type => CommandType.Cheat;
+    
     private static readonly List<player> PlayersWithCheat = new();
 
     private static bool IsCheatActive(player whichPlayer)
@@ -31,32 +44,27 @@ namespace MacroTools.Cheats
         BlzEndUnitAbilityCooldown(GetTriggerUnit(), GetSpellAbilityId());
     }
 
-    private static void Actions()
+    /// <inheritdoc />
+    public override string Execute(player cheater, params string[] parameters)
     {
-      if (!TestMode.CheatCondition()) return;
-      string enteredString = GetEventPlayerChatString();
-      player p = GetTriggerPlayer();
-      string parameter = SubString(enteredString, StringLength(Command), StringLength(enteredString));
+      if (Enum.TryParse<Toggle>(parameters[0], out var toggle))
+        return "You must specify \"on\" or \"off\" as the first parameter.";
 
-      if (parameter == "on")
+      switch (toggle)
       {
-        SetCheatActive(p, true);
-        DisplayTextToPlayer(p, 0, 0, "|cffD27575CHEAT:|r No cooldowns activated.");
-      }
-      else if (parameter == "off")
-      {
-        SetCheatActive(p, false);
-        DisplayTextToPlayer(p, 0, 0, "|cffD27575CHEAT:|r No cooldowns deactivated.");
+        case Toggle.On:
+          SetCheatActive(cheater, true);
+          return "No cooldowns activated.";
+        case Toggle.Off:
+          SetCheatActive(cheater, false);
+          return "No cooldowns deactivated.";
+        default:
+          throw new ArgumentOutOfRangeException($"{nameof(parameters)}");
       }
     }
 
-    public static void Setup()
-    {
-      trigger trig = CreateTrigger();
-      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers()) TriggerRegisterPlayerChatEvent(trig, player, Command, false);
-      TriggerAddAction(trig, Actions);
-
+    /// <inheritdoc />
+    public override void OnRegister() => 
       PlayerUnitEvents.Register(UnitTypeEvent.SpellEndCast, Spell);
-    }
   }
 }

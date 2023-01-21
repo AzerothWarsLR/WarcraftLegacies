@@ -19,6 +19,9 @@ namespace MacroTools.Cheats
     public override CommandType Type => CommandType.Cheat;
 
     /// <inheritdoc />
+    public override string Description => "Adds the specified spell to all selected units.";
+    
+    /// <inheritdoc />
     public override string Execute(player cheater, params string[] parameters)
     {
       var spell = parameters[0];

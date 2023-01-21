@@ -1,13 +1,24 @@
 using System.Linq;
+using MacroTools.CommandSystem;
 using MacroTools.Extensions;
 using static War3Api.Common;
 
 namespace MacroTools.Cheats
 {
-  public static class CheatSpawn
+  public sealed class CheatSpawn : Command
   {
-    private const string Command = "-spawn ";
+    /// <inheritdoc />
+    public override string CommandText => "spawn";
 
+    /// <inheritdoc />
+    public override int ParameterCount => 2;
+    
+    /// <inheritdoc />
+    public override CommandType Type => CommandType.Cheat;
+    
+    /// <inheritdoc />
+    public override string Description => "Spawns the specified units or items the specified number of times.";
+    
     private static void SpawnUnitsOrItems(unit whichUnit, int typeId, int count)
     {
       for (var i = 0; i < count; i++)
@@ -17,33 +28,19 @@ namespace MacroTools.Cheats
       }
     }
 
-    private static void Actions()
+    /// <inheritdoc />
+    public override string Execute(player cheater, params string[] parameters)
     {
-      if (!TestMode.CheatCondition()) return;
-      var enteredString = GetEventPlayerChatString();
-      var triggerPlayer = GetTriggerPlayer();
-      var typeIdParameter = SubString(enteredString, StringLength(Command), StringLength(Command) + 4);
-      var countParameter = SubString(enteredString, StringLength(Command) + StringLength(typeIdParameter) + 1,
-        StringLength(enteredString));
+      var objectTypeId = FourCC(parameters[0]);
+      if (objectTypeId == 0)
+        return "You must specify a valid object type ID as the first parameter.";
 
-      if (S2I(countParameter) < 1) 
-        countParameter = "1";
+      if (!int.TryParse(parameters[1], out var count))
+        return "You must specify a valid count as the second parameter.";
 
-      if (FourCC(typeIdParameter) <= 0) 
-        return;
-
-      var firstSelectedUnit = CreateGroup().EnumSelectedUnits(triggerPlayer).EmptyToList().First();
-      SpawnUnitsOrItems(firstSelectedUnit, FourCC(typeIdParameter), S2I(countParameter));
-      
-      DisplayTextToPlayer(triggerPlayer, 0, 0,
-        $"|cffD27575CHEAT:|r Attempted to spawn {countParameter} of object {GetObjectName(FourCC(typeIdParameter))}.");
-    }
-
-    public static void Setup()
-    {
-      var trig = CreateTrigger();
-      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers()) TriggerRegisterPlayerChatEvent(trig, player, Command, false);
-      TriggerAddAction(trig, Actions);
+      var firstSelectedUnit = CreateGroup().EnumSelectedUnits(cheater).EmptyToList().First();
+      SpawnUnitsOrItems(firstSelectedUnit, objectTypeId, count);
+      return $"Attempted to spawn {count} of object {GetObjectName(objectTypeId)}.";
     }
   }
 }

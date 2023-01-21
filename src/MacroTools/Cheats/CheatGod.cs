@@ -19,6 +19,9 @@ namespace MacroTools.Cheats
     /// <inheritdoc />
     public override CommandType Type => CommandType.Cheat;
 
+    /// <inheritdoc />
+    public override string Description => "When activated, your units deal 100x damage and take 0x damage.";
+    
     static CheatGod()
     {
       PlayerUnitEvents.Register(UnitTypeEvent.IsDamaged, Damage);
