@@ -20441,18 +20441,6 @@ STRING 3409
 Baelgun Flamebeard
 }
 
-STRING 3410
-// Units: h068 (Observatory), Ubertip (Tooltip - Extended)
-{
-Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Farmer / Whelp, Kirin Tor|n|cfff5962dResearches:|R Improved Forked Lightning, Full Scale Escalation|n|cfff5962dAbilities:|R Replenish Mana, Summon Initiate Mage
-}
-
-STRING 3411
-// Units: h066 (Conclave), Ubertip (Tooltip - Extended)
-{
-Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Farmer / Whelp|n|cfff5962dAbilities:|R Replenish Mana
-}
-
 STRING 3412
 // Units: h0AT (Scout Ship), Ubertip (Tooltip - Extended)
 {
@@ -21362,12 +21350,6 @@ STRING 3563
 // Units: h007 (Improved Cannon Tower), Name (Name)
 {
 Improved Cannon Tower
-}
-
-STRING 3564
-// Units: h065 (Refuge), Ubertip (Tooltip - Extended)
-{
-Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Farmer / Whelp
 }
 
 STRING 3565
@@ -46201,6 +46183,12 @@ STRING 7700
 Ion_Canon(dummy height trick)
 }
 
+STRING 7701
+// Units: h068 (Observatory), Ubertip (Tooltip - Extended)
+{
+Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Farmer/Whelp, Kirin Tor/Crystal Lord|n|cfff5962dResearches:|R Improved Forked Lightning, Full Scale Escalation|n|cfff5962dAbilities:|R Replenish Mana, Summon Initiate Mage
+}
+
 STRING 7702
 // Abilities: AChv (Healing Wave), Hotkey (Hotkey - Normal)
 {
@@ -48991,6 +48979,12 @@ STRING 8166
 Brings back to life the corpse of 3 friendly nearby unit.
 }
 
+STRING 8167
+// Units: h066 (Conclave), Ubertip (Tooltip - Extended)
+{
+Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Farmer/Whelp|n|cfff5962dAbilities:|R Replenish Mana|n|cfff5962dUpgrades to:|R Observatory
+}
+
 STRING 8168
 // Abilities: A0YR (Spirit Link), Hotkey (Hotkey - Normal)
 {
@@ -49223,6 +49217,12 @@ STRING 8206
 // Units: o050 (Metropolis), Ubertip (Tooltip - Extended)
 {
 Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Gemcrafter
+}
+
+STRING 8207
+// Units: h065 (Refuge), Ubertip (Tooltip - Extended)
+{
+Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Farmer/Whelp
 }
 
 STRING 8208
