@@ -1,12 +1,21 @@
 using System.Collections.Generic;
+using MacroTools.CommandSystem;
 using WCSharp.Events;
 using static War3Api.Common;
 
 namespace MacroTools.Cheats
 {
-  public static class CheatNocd
+  public sealed class CheatNocd : Command
   {
-    private const string Command = "-nocd ";
+    /// <inheritdoc />
+    public override string CommandText => "nocd";
+    
+    /// <inheritdoc />
+    public override int ParameterCount => 1;
+    
+    /// <inheritdoc />
+    public override CommandType Type => CommandType.Cheat;
+    
     private static readonly List<player> PlayersWithCheat = new();
 
     private static bool IsCheatActive(player whichPlayer)
@@ -31,7 +40,8 @@ namespace MacroTools.Cheats
         BlzEndUnitAbilityCooldown(GetTriggerUnit(), GetSpellAbilityId());
     }
 
-    private static void Actions()
+    /// <inheritdoc />
+    public override string Execute(player cheater, params string[] parameters)
     {
       if (!TestMode.CheatCondition()) return;
       string enteredString = GetEventPlayerChatString();
@@ -52,10 +62,6 @@ namespace MacroTools.Cheats
 
     public static void Setup()
     {
-      trigger trig = CreateTrigger();
-      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers()) TriggerRegisterPlayerChatEvent(trig, player, Command, false);
-      TriggerAddAction(trig, Actions);
-
       PlayerUnitEvents.Register(UnitTypeEvent.SpellEndCast, Spell);
     }
   }

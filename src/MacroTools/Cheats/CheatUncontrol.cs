@@ -1,13 +1,22 @@
+using MacroTools.CommandSystem;
 using MacroTools.Libraries;
 using static War3Api.Common;
 
 namespace MacroTools.Cheats
 {
-  public static class CheatUncontrol
+  public sealed class CheatUncontrol : Command
   {
-    private const string Command = "-uncontrol ";
+    /// <inheritdoc />
+    public override string CommandText => "uncontrol";
 
-    private static void Actions()
+    /// <inheritdoc />
+    public override int ParameterCount => 1;
+    
+    /// <inheritdoc />
+    public override CommandType Type => CommandType.Cheat;
+    
+    /// <inheritdoc />
+    public override string Execute(player cheater, params string[] parameters)
     {
       if (!TestMode.CheatCondition()) return;
 
@@ -36,14 +45,6 @@ namespace MacroTools.Cheats
         DisplayTextToPlayer(p, 0, 0,
           "|cffD27575CHEAT:|r Revoked control of player " + GetPlayerName(Player(S2I(parameter))) + ".");
       }
-    }
-
-    public static void Setup()
-    {
-      trigger trig = CreateTrigger();
-      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers()) TriggerRegisterPlayerChatEvent(trig, player, Command, false);
-
-      TriggerAddAction(trig, Actions);
     }
   }
 }

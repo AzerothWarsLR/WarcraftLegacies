@@ -1,12 +1,21 @@
 using System.Collections.Generic;
+using MacroTools.CommandSystem;
 using WCSharp.Events;
 using static War3Api.Common;
 
 namespace MacroTools.Cheats
 {
-  public static class CheatMana
+  public sealed class CheatMana : Command
   {
-    private const string Command = "-mana ";
+    /// <inheritdoc />
+    public override string CommandText => "mana";
+    
+    /// <inheritdoc />
+    public override int ParameterCount => 1;
+    
+    /// <inheritdoc />
+    public override CommandType Type => CommandType.Cheat;
+    
     private static readonly List<player> PlayersWithCheat = new();
 
     private static bool IsCheatActive(player whichPlayer)
@@ -31,7 +40,8 @@ namespace MacroTools.Cheats
         SetUnitState(GetTriggerUnit(), UNIT_STATE_MANA, GetUnitState(GetTriggerUnit(), UNIT_STATE_MAX_MANA));
     }
 
-    private static void Actions()
+    /// <inheritdoc />
+    public override string Execute(player cheater, params string[] parameters)
     {
       if (!TestMode.CheatCondition()) return;
       string enteredString = GetEventPlayerChatString();
@@ -49,13 +59,9 @@ namespace MacroTools.Cheats
         DisplayTextToPlayer(p, 0, 0, "|cffD27575CHEAT:|r Infinite mana deactivated.");
       }
     }
-
+    
     public static void Setup()
     {
-      trigger trig = CreateTrigger();
-      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers()) TriggerRegisterPlayerChatEvent(trig, player, Command, false);
-      TriggerAddAction(trig, Actions);
-
       PlayerUnitEvents.Register(UnitTypeEvent.SpellEndCast, Spell);
     }
   }

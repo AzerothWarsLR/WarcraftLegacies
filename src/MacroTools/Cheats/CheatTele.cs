@@ -1,12 +1,21 @@
 using System.Collections.Generic;
+using MacroTools.CommandSystem;
 using WCSharp.Events;
 using static War3Api.Common;
 
 namespace MacroTools.Cheats
 {
-  public static class CheatTele
+  public sealed class CheatTele : Command
   {
-    private const string Command = "-tele ";
+    /// <inheritdoc />
+    public override string CommandText => "tele";
+    
+    /// <inheritdoc />
+    public override int ParameterCount => 1;
+    
+    /// <inheritdoc />
+    public override CommandType Type => CommandType.Cheat;
+    
     private static readonly Dictionary<player, bool> TeleToggle = new();
 
     private static void Patrol()
@@ -18,7 +27,8 @@ namespace MacroTools.Cheats
       }
     }
 
-    private static void Actions()
+    /// <inheritdoc />
+    public override string Execute(player cheater, params string[] parameters)
     {
       if (!TestMode.CheatCondition()) return;
 
@@ -40,9 +50,6 @@ namespace MacroTools.Cheats
 
     public static void Setup()
     {
-      trigger trig = CreateTrigger();
-      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers()) TriggerRegisterPlayerChatEvent(trig, player, Command, false);
-      TriggerAddAction(trig, Actions);
       PlayerUnitEvents.Register(UnitTypeEvent.ReceivesPointOrder, Patrol);
     }
   }

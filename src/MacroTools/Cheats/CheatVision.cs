@@ -1,14 +1,24 @@
 using System.Collections.Generic;
+using MacroTools.CommandSystem;
 using static War3Api.Common;
 
 namespace MacroTools.Cheats
 {
-  public static class CheatVision
+  public sealed class CheatVision : Command
   {
-    private const string Command = "-vision ";
+    /// <inheritdoc />
+    public override string CommandText => "vision";
+    
+    /// <inheritdoc />
+    public override int ParameterCount => 2;
+    
+    /// <inheritdoc />
+    public override CommandType Type => CommandType.Cheat;
+    
     private static readonly Dictionary<player, fogmodifier> Fogs = new();
 
-    private static void Actions()
+    /// <inheritdoc />
+    public override string Execute(player cheater, params string[] parameters)
     {
       if (!TestMode.CheatCondition()) return;
       string enteredString = GetEventPlayerChatString();
@@ -27,13 +37,6 @@ namespace MacroTools.Cheats
         DestroyFogModifier(Fogs[p]);
         DisplayTextToPlayer(p, 0, 0, "|cffD27575CHEAT:|r Whole map unrevealed.");
       }
-    }
-
-    public static void Setup()
-    {
-      trigger trig = CreateTrigger();
-      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers()) TriggerRegisterPlayerChatEvent(trig, player, Command, false);
-      TriggerAddAction(trig, Actions);
     }
   }
 }

@@ -1,20 +1,29 @@
+using MacroTools.CommandSystem;
 using MacroTools.Extensions;
 using static War3Api.Common;
 
 namespace MacroTools.Cheats
 {
-  public static class CheatMp
+  public sealed class CheatMp : Command
   {
-    private const string Command = "-mp ";
+    /// <inheritdoc />
+    public override string CommandText => "mp";
+    
+    /// <inheritdoc />
+    public override int ParameterCount => 1;
+    
+    /// <inheritdoc />
+    public override CommandType Type => CommandType.Cheat;
+    
     private static string? _parameter;
-
-
+    
     private static void SetMana(unit whichUnit)
     {
       SetUnitState(whichUnit, UNIT_STATE_MANA, S2R(_parameter));
     }
 
-    private static void Actions()
+    /// <inheritdoc />
+    public override string Execute(player cheater, params string[] parameters)
     {
       if (!TestMode.CheatCondition()) return;
       string enteredString = GetEventPlayerChatString();
@@ -29,13 +38,6 @@ namespace MacroTools.Cheats
         }
         DisplayTextToPlayer(p, 0, 0, "|cffD27575CHEAT:|r Setting mana of selected units to " + _parameter + ".");
       }
-    }
-
-    public static void Setup()
-    {
-      trigger trig = CreateTrigger();
-      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers()) TriggerRegisterPlayerChatEvent(trig, player, Command, false);
-      TriggerAddAction(trig, Actions);
     }
   }
 }

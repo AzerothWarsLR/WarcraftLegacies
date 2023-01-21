@@ -1,11 +1,20 @@
+using MacroTools.CommandSystem;
 using MacroTools.Extensions;
 using static War3Api.Common;
 
 namespace MacroTools.Cheats
 {
-  public static class CheatOwner
+  public sealed class CheatOwner : Command
   {
-    private const string Command = "-owner ";
+    /// <inheritdoc />
+    public override string CommandText => "owner";
+    
+    /// <inheritdoc />
+    public override int ParameterCount => 1;
+    
+    /// <inheritdoc />
+    public override CommandType Type => CommandType.Cheat;
+    
     private static string? _parameter;
 
     private static void SetOwner(unit whichUnit)
@@ -13,7 +22,8 @@ namespace MacroTools.Cheats
       SetUnitOwner(whichUnit, Player(S2I(_parameter)), true);
     }
 
-    private static void Actions()
+    /// <inheritdoc />
+    public override string Execute(player cheater, params string[] parameters)
     {
       if (!TestMode.CheatCondition()) return;
 
@@ -30,14 +40,6 @@ namespace MacroTools.Cheats
         DisplayTextToPlayer(p, 0, 0,
           "|cffD27575CHEAT:|r Setting owner of selected units to " + GetPlayerName(Player(S2I(_parameter))) + ".");
       }
-    }
-
-    public static void Setup()
-    {
-      trigger trig = CreateTrigger();
-      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers()) TriggerRegisterPlayerChatEvent(trig, player, Command, false);
-
-      TriggerAddAction(trig, Actions);
     }
   }
 }
