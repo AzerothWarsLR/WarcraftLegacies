@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using MacroTools.CommandSystem;
 using WCSharp.Events;
@@ -34,19 +33,18 @@ namespace MacroTools.Cheats
     /// <inheritdoc />
     public override string Execute(player cheater, params string[] parameters)
     {
-      if (Enum.TryParse<Toggle>(parameters[0], out var toggle))
-        return "You must specify \"on\" or \"off\" as the first parameter.";
+      var toggle = parameters[0];
 
       switch (toggle)
       {
-        case Toggle.On:
+        case "on":
           TeleToggle[cheater] = true;
           return "Teleport activated. Use patrol to move instantly.";
-        case Toggle.Off:
+        case "off":
           TeleToggle[cheater] = false;
           return "Teleport deactivated. Patrol works normally.";
         default:
-          throw new ArgumentOutOfRangeException($"{nameof(parameters)}");
+          return "You must specify \"on\" or \"off\" as the first parameter.";
       }
     }
 

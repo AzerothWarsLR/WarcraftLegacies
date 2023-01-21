@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using MacroTools.CommandSystem;
 using static War3Api.Common;
@@ -24,22 +23,21 @@ namespace MacroTools.Cheats
     /// <inheritdoc />
     public override string Execute(player cheater, params string[] parameters)
     {
-      if (Enum.TryParse<Toggle>(parameters[0], out var toggle))
-        return "You must specify \"on\" or \"off\" as the first parameter.";
+      var toggle = parameters[0];
 
       switch (toggle)
       {
-        case Toggle.On:
+        case "on":
           var newFog = CreateFogModifierRect(cheater, FOG_OF_WAR_VISIBLE,
             WCSharp.Shared.Data.Rectangle.WorldBounds.Rect, true, false);
           FogModifierStart(newFog);
           Fogs.Add(cheater, newFog);
           return "Whole map revealed.";
-        case Toggle.Off:
+        case "off":
           DestroyFogModifier(Fogs[cheater]);
           return "Whole map unrevealed.";
         default:
-          throw new ArgumentOutOfRangeException($"{nameof(parameters)}");
+          return "You must specify \"on\" or \"off\" as the first parameter.";
       }
     }
   }

@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using MacroTools.CommandSystem;
 using WCSharp.Events;
@@ -25,19 +24,18 @@ namespace MacroTools.Cheats
     /// <inheritdoc />
     public override string Execute(player cheater, params string[] parameters)
     {
-      if (Enum.TryParse<Toggle>(parameters[0], out var toggle))
-        return "You must specify \"on\" or \"off\" as the first parameter.";
+      var toggle = parameters[0];
 
       switch (toggle)
       {
-        case Toggle.On:
+        case "on":
           SetCheatActive(cheater, true);
           return "Infinite mana activated.";
-        case Toggle.Off:
+        case "off":
           SetCheatActive(cheater, false);
           return "Infinite mana deactivated.";
         default:
-          throw new ArgumentOutOfRangeException($"{nameof(parameters)}");
+          return "You must specify \"on\" or \"off\" as the first parameter.";
       }
     }
 
