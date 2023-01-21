@@ -48,9 +48,8 @@ namespace MacroTools.Cheats
       }
     }
 
-    public static void Setup()
-    {
+    /// <inheritdoc />
+    public override void OnRegister() => 
       PlayerUnitEvents.Register(UnitTypeEvent.ReceivesPointOrder, Patrol);
-    }
   }
 }

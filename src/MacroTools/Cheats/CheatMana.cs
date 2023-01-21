@@ -59,10 +59,9 @@ namespace MacroTools.Cheats
         DisplayTextToPlayer(p, 0, 0, "|cffD27575CHEAT:|r Infinite mana deactivated.");
       }
     }
-    
-    public static void Setup()
-    {
+
+    /// <inheritdoc />
+    public override void OnRegister() => 
       PlayerUnitEvents.Register(UnitTypeEvent.SpellEndCast, Spell);
-    }
   }
 }

@@ -21,7 +21,7 @@ namespace MacroTools.Cheats
         return "You must specify a valid integer as the first parameter.";
       
       SetPlayerState(cheater, PLAYER_STATE_RESOURCE_LUMBER, lumber);
-      return "Setting lumber to {lumber}.";
+      return $"Setting lumber to {lumber}.";
     }
   }
 }
