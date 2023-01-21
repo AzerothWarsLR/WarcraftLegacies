@@ -15,7 +15,7 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
       "ReplaceableTextures\\CommandButtons\\BTNBlueDragonNexus.blp")
     {
       _jaina = jaina;
-      AddObjective(new ObjectiveChannelRect(Regions.JainaChannel, "The Nexus", jaina, 60, 270));
+      AddObjective(new ObjectiveChannelRect(Regions.JainaChannel, "The Nexus", jaina, 60, 270, Title));
       AddObjective(new ObjectiveControlLegend(jaina, true));
       AddObjective(new ObjectiveCapitalDead(lichKing));
       AddObjective(new ObjectiveControlCapital(theNexus, false));

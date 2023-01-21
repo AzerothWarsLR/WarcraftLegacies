@@ -17,7 +17,7 @@ namespace WarcraftLegacies.Source.Quests.Legion
       "ReplaceableTextures\\CommandButtons\\BTNGlazeroth.blp")
     {
       _archimonde = archimonde;
-      AddObjective(new ObjectiveChannelRect(Regions.ArchimondeChannel, "The World Tree", _archimonde, 420, 90));
+      AddObjective(new ObjectiveChannelRect(Regions.ArchimondeChannel, "The World Tree", _archimonde, 420, 90, Title));
       Global = true;
     }
 
