@@ -17,14 +17,11 @@ namespace MacroTools.Cheats
     /// <inheritdoc />
     public override string Execute(player cheater, params string[] parameters)
     {
-      if (!TestMode.CheatCondition()) return;
-      string enteredString = GetEventPlayerChatString();
-      player p = GetTriggerPlayer();
-      var pId = GetPlayerId(p);
-      string parameter = SubString(enteredString, StringLength(Command), StringLength(enteredString));
+      if (!float.TryParse(parameters[0], out var time))
+        return "You must specify a valid float as the first parameter.";
 
-      SetFloatGameState(GAME_STATE_TIME_OF_DAY, S2R(parameter));
-      DisplayTextToPlayer(p, 0, 0, "|cffD27575CHEAT:|r Time of day to " + parameter + ".");
+      SetFloatGameState(GAME_STATE_TIME_OF_DAY, time);
+      return $"Setting time of day to {time}.";
     }
   }
 }

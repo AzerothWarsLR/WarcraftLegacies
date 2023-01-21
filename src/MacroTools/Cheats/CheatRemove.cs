@@ -14,22 +14,13 @@ namespace MacroTools.Cheats
     
     /// <inheritdoc />
     public override CommandType Type => CommandType.Cheat;
-    
-    private static void Remove(unit whichUnit)
-    {
-      RemoveUnit(whichUnit);
-    }
 
     /// <inheritdoc />
     public override string Execute(player cheater, params string[] parameters)
     {
-      if (!TestMode.CheatCondition()) return;
-      player p = GetTriggerPlayer();
-      foreach (var unit in CreateGroup().EnumSelectedUnits(p).EmptyToList())
-      {
-        Remove(unit);
-      }
-      DisplayTextToPlayer(p, 0, 0, "|cffD27575CHEAT:|r Permanently removing selected units.");
+      foreach (var unit in CreateGroup().EnumSelectedUnits(cheater).EmptyToList()) 
+        RemoveUnit(unit);
+      return "Permanently removing selected units.";
     }
   }
 }

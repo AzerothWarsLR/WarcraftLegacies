@@ -17,14 +17,11 @@ namespace MacroTools.Cheats
     /// <inheritdoc />
     public override string Execute(player cheater, params string[] parameters)
     {
-      if (!TestMode.CheatCondition()) return;
-      string enteredString = GetEventPlayerChatString();
-      string parameter = null;
-      player p = GetTriggerPlayer();
-
-      parameter = SubString(enteredString, StringLength(Command), StringLength(enteredString));
-      SetPlayerState(p, PLAYER_STATE_RESOURCE_LUMBER, S2I(parameter));
-      DisplayTextToPlayer(p, 0, 0, "|cffD27575CHEAT:|r Set to " + parameter + " lumber.");
+      if (!int.TryParse(parameters[0], out var lumber))
+        return "You must specify a valid integer as the first parameter.";
+      
+      SetPlayerState(cheater, PLAYER_STATE_RESOURCE_LUMBER, lumber);
+      return "Setting lumber to {lumber}.";
     }
   }
 }

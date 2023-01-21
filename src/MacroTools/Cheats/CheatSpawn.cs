@@ -28,24 +28,16 @@ namespace MacroTools.Cheats
     /// <inheritdoc />
     public override string Execute(player cheater, params string[] parameters)
     {
-      if (!TestMode.CheatCondition()) return;
-      var enteredString = GetEventPlayerChatString();
-      var triggerPlayer = GetTriggerPlayer();
-      var typeIdParameter = SubString(enteredString, StringLength(Command), StringLength(Command) + 4);
-      var countParameter = SubString(enteredString, StringLength(Command) + StringLength(typeIdParameter) + 1,
-        StringLength(enteredString));
+      var objectTypeId = FourCC(parameters[0]);
+      if (objectTypeId == 0)
+        return "You must specify a valid object type ID as the first parameter.";
 
-      if (S2I(countParameter) < 1) 
-        countParameter = "1";
+      if (!int.TryParse(parameters[1], out var count))
+        return "You must specify a valid count as the second parameter.";
 
-      if (FourCC(typeIdParameter) <= 0) 
-        return;
-
-      var firstSelectedUnit = CreateGroup().EnumSelectedUnits(triggerPlayer).EmptyToList().First();
-      SpawnUnitsOrItems(firstSelectedUnit, FourCC(typeIdParameter), S2I(countParameter));
-      
-      DisplayTextToPlayer(triggerPlayer, 0, 0,
-        $"|cffD27575CHEAT:|r Attempted to spawn {countParameter} of object {GetObjectName(FourCC(typeIdParameter))}.");
+      var firstSelectedUnit = CreateGroup().EnumSelectedUnits(cheater).EmptyToList().First();
+      SpawnUnitsOrItems(firstSelectedUnit, objectTypeId, count);
+      return $"Attempted to spawn {count} of object {GetObjectName(objectTypeId)}.";
     }
   }
 }
