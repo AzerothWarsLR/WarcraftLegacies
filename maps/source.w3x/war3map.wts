@@ -74291,6 +74291,12 @@ STRING 12389
 S
 }
 
+STRING 12390
+// Units: o00G (Blademaster), Ubertip (Tooltip - Extended)
+{
+Elite warrior trained according to the teachings of the Burning Blade clan.|n|cfff5962dAbilities:|R Wind Walk, Mirror Image, Critical Strike, Bladestorm|n|cfff5962dCan Learn:|R Self-Bloodlust|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land units.|r
+}
+
 STRING 12391
 // Abilities: A0H4 (To Victory!), EditorSuffix (Editor Suffix)
 {
@@ -75117,6 +75123,12 @@ STRING 12528
 // Abilities: A0O8 (Devour Magic), EditorSuffix (Editor Suffix)
 {
 (anetheron)
+}
+
+STRING 12529
+// Abilities: A0MM (Critical Strike), EditorSuffix (Editor Suffix)
+{
+(Rend Blackhand, Blademaster)
 }
 
 STRING 12530
@@ -85048,12 +85060,6 @@ STRING 14193
 // Upgrades: R06N (Freezing Breath), Ubertip (Tooltip - Extended)
 {
 Improves Orb of Annihilation by increasing its damage dealt to <Afak,DataA2>.
-}
-
-STRING 14194
-// Units: o00G (Blademaster), Ubertip (Tooltip - Extended)
-{
-Elite warrior trained according to the teachings of the Burning Blade clan.|n|cfff5962dAbilities:|R Wind Walk, Mirror Image, Execute, Bladestorm|n|cfff5962dCan Learn:|R Self-Bloodlust|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land units.|r
 }
 
 STRING 14195
@@ -99266,12 +99272,6 @@ STRING 16599
 // Units: o03O (Altar of Industry), Tip (Tooltip - Basic)
 {
 Build Altar of Industry
-}
-
-STRING 16600
-// Abilities: A0MM (Critical Strike), EditorSuffix (Editor Suffix)
-{
-(Rend Blackhand)
 }
 
 STRING 16601

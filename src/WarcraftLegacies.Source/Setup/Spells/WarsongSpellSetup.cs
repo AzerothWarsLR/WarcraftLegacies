@@ -1,5 +1,4 @@
-﻿using MacroTools.PassiveAbilities;
-using MacroTools.PassiveAbilitySystem;
+﻿using MacroTools.PassiveAbilitySystem;
 using MacroTools.SpellSystem;
 using WarcraftLegacies.Source.Setup.FactionSetup;
 
@@ -15,7 +14,6 @@ namespace WarcraftLegacies.Source.Setup.Spells
     /// </summary>
     public static void Setup()
     {
-      PassiveAbilityManager.Register(new Execute(Constants.UNIT_O00G_BLADEMASTER_WARSONG));
     }
   }
 }
