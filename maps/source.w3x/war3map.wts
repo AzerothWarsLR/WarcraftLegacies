@@ -544,12 +544,6 @@ STRING 90
 A store for purchasing items
 }
 
-STRING 91
-// Abilities: A0EW (Take off), Ubertip (Tooltip - Normal - Extended)
-{
-Lift off the Dimensional Ship
-}
-
 STRING 92
 // Units: e007 (Thornspeaker), Ubertip (Tooltip - Extended)
 {
@@ -5686,12 +5680,6 @@ STRING 950
 // Units: hgry (Gryphon Rider), Hotkey (Hotkey)
 {
 Q
-}
-
-STRING 951
-// Abilities: A0EW (Take off), Name (Name)
-{
-Take off
 }
 
 STRING 952
@@ -12667,7 +12655,7 @@ Ahn'Qiraj
 }
 
 STRING 2114
-// Abilities: A0EW (Take off), Tip (Tooltip - Normal)
+// Abilities: A0EW (Take Off), Name (Name)
 {
 Take Off
 }
@@ -15393,12 +15381,6 @@ STRING 2568
 Un'Goro Crater (10gold/min)
 }
 
-STRING 2569
-// Abilities: A0EW (Take off), EditorSuffix (Editor Suffix)
-{
-(Draenei
-}
-
 STRING 2570
 // Units: n022 (Stonemaul (20gold/min)), Name (Name)
 {
@@ -15758,7 +15740,7 @@ Sholazar Basin (15gold/min)
 }
 
 STRING 2630
-// Abilities: A0EW (Take off), Untip (Tooltip - Turn Off)
+// Abilities: A0EW (Take Off), Untip (Tooltip - Turn Off)
 {
 Land
 }
@@ -17538,12 +17520,6 @@ STRING 2926
 // Units: Hapm (Lord Admiral of Kul Tiras), Name (Name)
 {
 Lord Admiral of Kul Tiras
-}
-
-STRING 2927
-// Abilities: A0EW (Take off), Unubertip (Tooltip - Turn Off - Extended)
-{
-Land the Dimensional Ship
 }
 
 STRING 2928
@@ -75155,6 +75131,12 @@ STRING 12536
 Reduces all ranged attacks on the unit by <A0VI,DataC1> damage. Attacks cannot be reduced below <A0VI,DataB1> damage.
 }
 
+STRING 12537
+// Abilities: A0N8 (Open Exodar), Ubertip (Tooltip - Normal - Extended)
+{
+Opens the Exodar, allowing units to enter and exit it.
+}
+
 STRING 12538
 // Abilities: A021 (Flamestrike by sword), Name (Name)
 {
@@ -78034,6 +78016,18 @@ STRING 13017
 // Abilities: Amic (Call To Arms), Unhotkey (Hotkey - Turn Off)
 {
 X
+}
+
+STRING 13018
+// Abilities: A0N8 (Open Exodar), EditorSuffix (Editor Suffix)
+{
+(Exodar)
+}
+
+STRING 13019
+// Abilities: A0EW (Take Off), EditorSuffix (Editor Suffix)
+{
+(Exodar)
 }
 
 STRING 13020
@@ -81408,6 +81402,12 @@ STRING 13582
 Fear Aura
 }
 
+STRING 13583
+// Abilities: A0EW (Take Off), Ubertip (Tooltip - Normal - Extended)
+{
+Lift off the Dimensional Ship, preventing it from being opened but allowing it to move.
+}
+
 STRING 13584
 // Abilities: A0HG (Unholy Armor), Name (Name)
 {
@@ -83826,6 +83826,12 @@ STRING 13986
  (Warsong)
 }
 
+STRING 13987
+// Abilities: A0EW (Take Off), Tip (Tooltip - Normal)
+{
+Take Off
+}
+
 STRING 13988
 // Upgrades: R05P (Priest Adept Training,Priest Master Training), EditorSuffix (Editor Suffix)
 {
@@ -85396,6 +85402,12 @@ STRING 14250
 // Upgrades: R064 (Nature's Blessing), Ubertip (Tooltip - Extended)
 {
 Upgrades all structures' hit points and armor.
+}
+
+STRING 14251
+// Abilities: A0EW (Take Off), Unubertip (Tooltip - Turn Off - Extended)
+{
+Land the Dimensional Ship, preventing it from moving but allowing it to be opened.
 }
 
 STRING 14252
@@ -105497,12 +105509,6 @@ STRING 17646
 Flame Shield
 }
 
-STRING 17647
-// Abilities: A0N8 (Open Exodar), Ubertip (Tooltip - Normal - Extended)
-{
-Open Exodar
-}
-
 STRING 17648
 // Abilities: A0X6 (Forked Lightning), Hotkey (Hotkey - Normal)
 {
@@ -110007,7 +110013,7 @@ D
 }
 
 STRING 18470
-// Abilities: A0EW (Take off), Hotkey (Hotkey - Normal)
+// Abilities: A0EW (Take Off), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -110223,7 +110229,7 @@ Naga Sea Witch
 }
 
 STRING 18511
-// Abilities: A0EW (Take off), Unhotkey (Hotkey - Turn Off)
+// Abilities: A0EW (Take Off), Unhotkey (Hotkey - Turn Off)
 {
 W
 }
