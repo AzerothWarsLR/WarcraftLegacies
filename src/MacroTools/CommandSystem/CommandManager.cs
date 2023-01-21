@@ -38,7 +38,8 @@ namespace MacroTools.CommandSystem
               return;
             }
             var message = command.Execute(GetTriggerPlayer(), parameters);
-            DisplayTextToPlayer(GetTriggerPlayer(), 0, 0, $"{message}");
+            DisplayTextToPlayer(GetTriggerPlayer(), 0, 0,
+              command.Type == CommandType.Cheat ? $"|cffD27575CHEAT:|r {message}" : $"{message}");
           }
           catch (Exception ex)
           {
