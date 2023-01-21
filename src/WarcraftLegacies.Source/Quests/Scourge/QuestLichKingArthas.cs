@@ -58,7 +58,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
       _lichKing.Unit?
         .RemoveAbility(Constants.ABILITY_A0W8_RECALL_FROZEN_THRONE)
         .RemoveAbility(Constants.ABILITY_A0L3_ANIMATE_DEAD_RED_THE_FROZEN_THRONE)
-        .RemoveAbility(Constants.ABILITY_A001_FROST_EXPLOSION_RED_THE_FROZEN_THRONE)
+        .RemoveAbility(Constants.ABILITY_A001_FROST_NOVA_RED_THE_FROZEN_THRONE)
         .SetMaximumMana(0)
         .SetName("Icecrown Citadel");
       

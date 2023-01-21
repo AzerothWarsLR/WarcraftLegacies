@@ -61,11 +61,5 @@ namespace WarcraftLegacies.Source.Quests.Druids
       if (GetLocalPlayer() == completingFaction.Player) 
         PlayThematicMusic("war3mapImported\\DruidTheme.mp3");
     }
-
-    /// <inheritdoc />
-    protected override void OnAdd(Faction whichFaction)
-    {
-      whichFaction.ModObjectLimit(Constants.UPGRADE_R091_UNLEASH_THE_SPIRITS_OF_ASHENVALE_DRUID, 1);
-    }
   }
 }

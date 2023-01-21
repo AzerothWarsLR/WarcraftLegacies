@@ -199,7 +199,7 @@ public static class Regions
 	public static Rectangle Undercity_Escape { get; set; } = new Rectangle(6048f, 8288f, 6400f, 8672f);
 	public static Rectangle DarkshireUnlock { get; set; } = new Rectangle(11904f, -16320f, 13408f, -15072f);
 	public static Rectangle StormwindUnlock { get; set; } = new Rectangle(6816f, -12640f, 11264f, -8576f);
-	public static Rectangle LakeshireUnlock { get; set; } = new Rectangle(13568f, -13696f, 15456f, -12864f);
+	public static Rectangle LakeshireUnlock { get; set; } = new Rectangle(13568f, -13728f, 16128f, -12608f);
 	public static Rectangle NethergardeUnlock { get; set; } = new Rectangle(16576f, -18400f, 18880f, -16960f);
 	public static Rectangle StratholmeUnlock { get; set; } = new Rectangle(13248f, 11168f, 16224f, 14144f);
 	public static Rectangle TyrUnlock { get; set; } = new Rectangle(18912f, 6560f, 22592f, 9696f);
@@ -215,7 +215,7 @@ public static class Regions
 	public static Rectangle ZandalarUnlock { get; set; } = new Rectangle(-5440f, -17088f, -2400f, -14656f);
 	public static Rectangle TwilightOutside { get; set; } = new Rectangle(17984f, -8224f, 21696f, -4896f);
 	public static Rectangle ShipInside { get; set; } = new Rectangle(8928f, -31168f, 9472f, -30720f);
-	public static Rectangle ShipAmbient { get; set; } = new Rectangle(8608f, -31392f, 9792f, -28768f);
+	public static Rectangle ShipAmbient { get; set; } = new Rectangle(8608f, -31424f, 9984f, -28768f);
 	public static Rectangle ShipTarget { get; set; } = new Rectangle(4608f, -10528f, 4640f, -10496f);
 	public static Rectangle IllidanOutlandEntrance { get; set; } = new Rectangle(-2496f, -20512f, -2080f, -20064f);
 	public static Rectangle Kalimdor { get; set; } = new Rectangle(-21280f, -18816f, -5664f, 12000f);
