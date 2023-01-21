@@ -3170,12 +3170,6 @@ STRING 529
 Train Thunder Eagle
 }
 
-STRING 530
-// Units: unp2 (Black Citadel), Ubertip (Tooltip - Extended)
-{
-Flying bastion of death's reign.|n|cfff5962dTrains:|R Death Knights|n|cfff5962dResearches:|R Chilling Aura, Full Scale Escalation|n|cfff5962dAbilities:|R Raise Dead, Blighted Grounds|n|R|n|cffffcc00Attacks land and air units.|r
-}
-
 STRING 531
 // Units: nvdw (Voidweaver), EditorSuffix (Name - Editor Suffix)
 {
@@ -50515,6 +50509,12 @@ STRING 8422
 Poisoned Spear (|cffffcc00Q|r)
 }
 
+STRING 8423
+// Units: unp2 (Black Citadel), Ubertip (Tooltip - Extended)
+{
+Flying bastion of death's reign.|n|cfff5962dTrains:|R Death Knights|n|cfff5962dResearches:|R Chilling Aura, Full Scale Escalation|n|cfff5962dAbilities:|R Raise Dead, Blight Aura|n|R|n|cffffcc00Attacks land and air units.|r
+}
+
 STRING 8424
 // Abilities: A0P0 (Poisoned Spear), Ubertip (Tooltip - Normal - Extended)
 {
@@ -51967,6 +51967,12 @@ STRING 8665
 W
 }
 
+STRING 8666
+// Units: unp1 (Halls of the Dead), Ubertip (Tooltip - Extended)
+{
+Death ridden halls soaring high above.|n|cfff5962dAbilities:|R Raise Dead, Blight Aura|n|cfff5962dUpgrades Into:|R Black Citadel|n|R|n|cffffcc00Attacks land and air units.|r
+}
+
 STRING 8667
 // Abilities: A0MH (Feral Spirit), Tip (Tooltip - Normal)
 {
@@ -52327,10 +52333,22 @@ STRING 8726
 Causes attacks to do double damage to buildings.
 }
 
+STRING 8727
+// Abilities: A0CB (Blight Aura), Name (Name)
+{
+Blight Aura
+}
+
 STRING 8728
 // Abilities: A0RG (Mana Syphon), Unhotkey (Hotkey - Turn Off)
 {
 Q
+}
+
+STRING 8729
+// Abilities: A0CB (Blight Aura), Tip (Tooltip - Normal)
+{
+Blight Aura
 }
 
 STRING 8730
@@ -52351,6 +52369,12 @@ STRING 8732
 Blasts enemy units around a target enemy unit with a wave of damaging plague that slows movement for 4 seconds. |n|n|cffffcc00Level 1|r - 100 target damage, 100 nova damage. |n|cffffcc00Level 2|r - 125 target damage, 150 nova damage. |n|cffffcc00Level 3|r - 150 target damage, 200 nova damage. |n|cffffcc00Level 4|r - 175 target damage, 250 nova damage.
 }
 
+STRING 8733
+// Abilities: A0CB (Blight Aura), Ubertip (Tooltip - Normal - Extended)
+{
+Increases the hit point regeneration of friendly units within a range of <A0CB,Area1> by <A0CB,DataB1>.
+}
+
 STRING 8734
 // Abilities: A0Z9 (Bile Shot), Tip (Tooltip - Normal)
 {
@@ -52367,6 +52391,12 @@ STRING 8736
 // Abilities: A0Z9 (Bile Shot), Tip (Tooltip - Normal)
 {
 Corpse Explosion (|cffffcc00Q|r) - [|cffffcc00Level 4|r]
+}
+
+STRING 8737
+// Abilities: A0CA (Blight Aura), Name (Name)
+{
+Blight Aura
 }
 
 STRING 8738
@@ -56522,6 +56552,12 @@ STRING 9429
 Increases Shaman mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Bloodlust.
 }
 
+STRING 9430
+// Abilities: A0CA (Blight Aura), Tip (Tooltip - Normal)
+{
+Blight Aura
+}
+
 STRING 9431
 // Abilities: A0GM (For The Horde!), EditorSuffix (Editor Suffix)
 {
@@ -57108,6 +57144,12 @@ STRING 9528
 // Abilities: A0G4 (Flame Burst), Researchtip (Tooltip - Learn)
 {
 Learn Flame Burst - [|cffffcc00Level %d|r]
+}
+
+STRING 9529
+// Abilities: A0CA (Blight Aura), Ubertip (Tooltip - Normal - Extended)
+{
+Increases the hit point regeneration of friendly units within a range of <A0CA,Area1> by <A0CA,DataB1>.
 }
 
 STRING 9530
@@ -60668,6 +60710,12 @@ STRING 10122
 Consumes the Pack Kodo to build a War Mill.
 }
 
+STRING 10123
+// Buffs/Effects: B0AW (), Bufftip (Tooltip)
+{
+Blight Aura
+}
+
 STRING 10124
 // Abilities: A0D8 (Glory of the Ancestors), Name (Name)
 {
@@ -61851,51 +61899,15 @@ Reduces the damage taken from spells and Magic attacks by 90%.
 }
 
 STRING 10321
-// Abilities: A0CB (Blighted Grounds), EditorSuffix (Editor Suffix)
+// Abilities: A0CB (Blight Aura), EditorSuffix (Editor Suffix)
 {
 (Halls of the Dead)
 }
 
-STRING 10322
-// Abilities: A0CB (Blighted Grounds), Name (Name)
-{
-Blighted Grounds
-}
-
-STRING 10323
-// Abilities: A0CB (Blighted Grounds), Tip (Tooltip - Normal)
-{
-Blighted Grounds
-}
-
-STRING 10324
-// Abilities: A0CB (Blighted Grounds), Ubertip (Tooltip - Normal - Extended)
-{
-The grounds near the structure is blighted. Increases nearby friendly life regeneration rate by 3 health per second in a 1000 area of effect.
-}
-
 STRING 10325
-// Abilities: A0CA (Blighted Grounds), EditorSuffix (Editor Suffix)
+// Abilities: A0CA (Blight Aura), EditorSuffix (Editor Suffix)
 {
 (Black Citadel)
-}
-
-STRING 10326
-// Abilities: A0CA (Blighted Grounds), Name (Name)
-{
-Blighted Grounds
-}
-
-STRING 10327
-// Abilities: A0CA (Blighted Grounds), Tip (Tooltip - Normal)
-{
-Blighted Grounds
-}
-
-STRING 10328
-// Abilities: A0CA (Blighted Grounds), Ubertip (Tooltip - Normal - Extended)
-{
-The grounds near the structure is blighted. Increases nearby friendly life regeneration rate by 6 health per second in a 1000 area of effect.
 }
 
 STRING 10329
@@ -68354,6 +68366,12 @@ STRING 11402
 E
 }
 
+STRING 11403
+// Buffs/Effects: B0AW (), Buffubertip (Tooltip - Extended)
+{
+This unit is under the effects of Blight Aura; it has increased hit point regeneration.
+}
+
 STRING 11404
 // Abilities: A072 (Acid Bomb), Tip (Tooltip - Normal)
 {
@@ -70722,6 +70740,12 @@ STRING 11798
 // Abilities: A05A (Binding Shackles), Ubertip (Tooltip - Normal - Extended)
 {
 Binds a target unit so that it cannot move or attack and takes 50 damage per second. |nLasts 4 seconds on heroes, 15 on units.
+}
+
+STRING 11799
+// Buffs/Effects: B0AW (), EditorSuffix (Editor Suffix)
+{
+(Halls of the Dead)
 }
 
 STRING 11800
@@ -92840,12 +92864,6 @@ STRING 15522
 // Upgrades: R03O (Animal War Training), Ubertip (Tooltip - Extended)
 {
 Causes affected units to take 15% less damage from spells and Magic damage.|n|n|cfff5962dAffects:|r Grunt, Crossbowman, Bonebreaker, Raider, Executioner
-}
-
-STRING 15523
-// Units: unp1 (Halls of the Dead), Ubertip (Tooltip - Extended)
-{
-Death ridden halls soaring high above.|n|cfff5962dAbilities:|R Raise Dead, Blighted Grounds|n|cfff5962dUpgrades Into:|R Black Citadel|n|R|n|cffffcc00Attacks land and air units.|r
 }
 
 STRING 15524
