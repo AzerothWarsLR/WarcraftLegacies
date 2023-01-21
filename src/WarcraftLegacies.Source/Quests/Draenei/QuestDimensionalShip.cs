@@ -26,7 +26,9 @@ namespace WarcraftLegacies.Source.Quests.Draenei
     /// Initializes a new instance of the <see cref="QuestDimensionalShip"/> class.
     /// </summary>
     public QuestDimensionalShip(Rectangle questRect, List<QuestData> prerequisite, Capital dimensionalGenerator) : base(
-      "The Dimensional Ship", "The core of the Exodar is rebuilt, but it requires a great source of power to function again. Finding that source of power would make the Exodar a powerful asset for the Draenei.", "ReplaceableTextures\\CommandButtons\\BTNArcaneEnergy.blp")
+      "The Dimensional Ship",
+      "The core of the Exodar is rebuilt, but it requires a great source of power to function again. Finding that source of power would make the Exodar a powerful asset for the Draenei.",
+      "ReplaceableTextures\\CommandButtons\\BTNArcaneEnergy.blp")
     {
       _dimensionalGenerator = dimensionalGenerator.Unit;
       Required = true;

@@ -16,7 +16,9 @@ namespace WarcraftLegacies.Source.Quests.Draenei
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestRepairGenerator"/> class.
     /// </summary>
-    public QuestRepairGenerator(Capital exodarGenerator) : base("Core of the Ship", "The broken core of the Exodar should be rebuilt, bringing us one step closer to making it usable again.", "ReplaceableTextures\\CommandButtons\\BTNArcaneEnergy.blp")
+    public QuestRepairGenerator(Capital exodarGenerator) : base("Core of the Ship",
+      "The broken core of the Exodar should be rebuilt, bringing us one step closer to making it usable again.",
+      @"ReplaceableTextures\CommandButtons\BTNPowerGenerator.blp")
     {
       _exodarGenerator = exodarGenerator;
       Required = true;
