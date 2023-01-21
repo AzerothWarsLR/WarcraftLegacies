@@ -1,5 +1,4 @@
 using MacroTools.CommandSystem;
-using MacroTools.Libraries;
 using static War3Api.Common;
 
 namespace MacroTools.Cheats
@@ -18,33 +17,22 @@ namespace MacroTools.Cheats
     /// <inheritdoc />
     public override string Execute(player cheater, params string[] parameters)
     {
-      if (!TestMode.CheatCondition()) return;
+      if (!int.TryParse(parameters[0], out var playerNumber) && parameters[0] != "all")
+        return "You must specify a valid player number or \"all\" as the first parameter.";
 
-      string enteredString = GetEventPlayerChatString();
-      player p = GetTriggerPlayer();
-      string parameter = SubString(enteredString, StringLength(Command), StringLength(enteredString));
-
-      if (parameter == "all")
+      if (parameters[0] == "all")
       {
-        var i = 0;
-        while (true)
+        foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
         {
-          if (i > Environment.MAX_PLAYERS) break;
-
-          SetPlayerAlliance(Player(i), GetTriggerPlayer(), ALLIANCE_SHARED_CONTROL, false);
-          SetPlayerAlliance(Player(i), GetTriggerPlayer(), ALLIANCE_SHARED_ADVANCED_CONTROL, false);
-          i += 1;
+          SetPlayerAlliance(player, GetTriggerPlayer(), ALLIANCE_SHARED_CONTROL, false);
+          SetPlayerAlliance(player, GetTriggerPlayer(), ALLIANCE_SHARED_ADVANCED_CONTROL, false);
         }
+        return "Revoked control of all players.";
+      }
 
-        DisplayTextToPlayer(p, 0, 0, "|cffD27575CHEAT:|r Revoked control of all players.");
-      }
-      else
-      {
-        SetPlayerAlliance(Player(S2I(parameter)), GetTriggerPlayer(), ALLIANCE_SHARED_CONTROL, false);
-        SetPlayerAlliance(Player(S2I(parameter)), GetTriggerPlayer(), ALLIANCE_SHARED_ADVANCED_CONTROL, false);
-        DisplayTextToPlayer(p, 0, 0,
-          "|cffD27575CHEAT:|r Revoked control of player " + GetPlayerName(Player(S2I(parameter))) + ".");
-      }
+      SetPlayerAlliance(Player(playerNumber), GetTriggerPlayer(), ALLIANCE_SHARED_CONTROL, false);
+      SetPlayerAlliance(Player(playerNumber), GetTriggerPlayer(), ALLIANCE_SHARED_ADVANCED_CONTROL, false);
+      return $"Revoked control of player {GetPlayerName(Player(playerNumber))}.";
     }
   }
 }
