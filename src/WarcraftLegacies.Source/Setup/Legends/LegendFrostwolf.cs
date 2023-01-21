@@ -54,6 +54,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
       Voljin = new LegendaryHero("Vol'jin")
       {
         UnitType = Constants.UNIT_ORKN_CHIEFTAIN_OF_THE_DARKSPEAR_TRIBE_FROSTWOLF,
+        StartingXp = 1000
       };
     }
 

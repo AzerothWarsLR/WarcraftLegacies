@@ -9,15 +9,14 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup)
     {
       var frostwolf = FrostwolfSetup.Frostwolf;
-      if (frostwolf != null)
-      {
-        frostwolf.AddQuest(new QuestThunderBluff(preplacedUnitSystem, Regions.ThunderBluff));
-        frostwolf.AddQuest(new QuestStonemaul(preplacedUnitSystem, Regions.StonemaulKeep));
-        frostwolf.AddQuest(new QuestDarkspear());
-        frostwolf.AddQuest(new QuestDrektharsSpellbook(allLegendSetup.Druids.Nordrassil, allLegendSetup.Frostwolf.Thrall));
-        frostwolf.AddQuest(new QuestFreeNerzhul(allLegendSetup.Scourge.TheFrozenThrone, allLegendSetup.Frostwolf.Thrall));
-        frostwolf.AddQuest(new QuestWorldShaman(allLegendSetup.Frostwolf.Thrall));
-      }
+      if (frostwolf == null) 
+        return;
+      frostwolf.AddQuest(new QuestThunderBluff(preplacedUnitSystem, Regions.ThunderBluff));
+      frostwolf.AddQuest(new QuestStonemaul(preplacedUnitSystem, Regions.StonemaulKeep));
+      frostwolf.AddQuest(new QuestDarkspear());
+      frostwolf.AddQuest(new QuestDrektharsSpellbook(allLegendSetup.Druids.Nordrassil, allLegendSetup.Frostwolf.Thrall));
+      frostwolf.AddQuest(new QuestFreeNerzhul(allLegendSetup.Scourge.TheFrozenThrone, allLegendSetup.Frostwolf.Thrall));
+      frostwolf.AddQuest(new QuestWorldShaman(allLegendSetup.Frostwolf.Thrall));
     }
   }
 }
