@@ -1,9 +1,9 @@
 ﻿using MacroTools.CommandSystem;
 using MacroTools.FactionSystem;
 using static War3Api.Common;
+
 namespace MacroTools.Cheats
 {
-
   /// <summary>
   /// A command that displays all quest names of a specified <see cref="Faction"/>.
   /// <para/>
@@ -11,7 +11,6 @@ namespace MacroTools.Cheats
   /// </summary>
   public sealed class CheatShowQuestNames : Command
   {
-  
     /// <inheritdoc />
     public override string CommandText => "quests";
 
@@ -21,7 +20,7 @@ namespace MacroTools.Cheats
     /// <inheritdoc />
     public override CommandType Type => CommandType.Cheat;
 
-    /// <inheritdoc /
+    /// <inheritdoc />
     public override string Description => "Displays all quest names of a specified faction.";
 
     /// <inheritdoc />
