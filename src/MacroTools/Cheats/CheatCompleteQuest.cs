@@ -11,7 +11,7 @@ namespace MacroTools.Cheats
   public sealed class CheatCompleteQuest : Command
   {
     /// <inheritdoc />
-    public override string CommandText => "complete ";
+    public override string CommandText => "complete";
 
     /// <inheritdoc />
     public override int ParameterCount => 2;
@@ -25,12 +25,10 @@ namespace MacroTools.Cheats
     /// <inheritdoc />
     public override string Execute(player cheater, params string[] parameters)
     {
-      QuestData? quest;
-
       var faction = FactionManager.GetFromName(parameters[0]);
       if (faction != null)
       {
-        quest = faction.GetQuestByTitle(parameters[1]);
+        var quest = faction.GetQuestByTitle(parameters[1]);
         quest.Progress = QuestProgress.Complete;
         return $"Completed quest {parameters[1]} of faction {parameters[0]}.";
       }
