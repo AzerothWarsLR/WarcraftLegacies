@@ -5,9 +5,9 @@ using static War3Api.Common;
 namespace MacroTools.Cheats
 {
   /// <summary>
-  /// A <see cref="CommandSystem.Command"/> that adds a specified spell to all selected units.
+  /// A <see cref="Command"/> that adds a specified spell to all selected units.
   /// </summary>
-  public sealed class CommandAddSpell : Command
+  public sealed class CheatAddSpell : Command
   {
     /// <inheritdoc />
     public override string CommandText => "add";

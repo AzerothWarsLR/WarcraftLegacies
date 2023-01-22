@@ -1,45 +1,47 @@
-using System;
-using MacroTools.Extensions;
+﻿using System;
+using MacroTools.CommandSystem;
 using MacroTools.FactionSystem;
 using static War3Api.Common;
 
 namespace MacroTools.Cheats
 {
-  public static class CheatKick
+  /// <summary>
+  /// Kicks the specified player out of the game.
+  /// </summary>
+  public sealed class CheatKick : Command
   {
-    private const string Command = "-kick ";
-    private static string? _parameter;
 
-    private static void Actions()
+    /// <inheritdoc />
+    public override string CommandText => "kick";
+
+    /// <inheritdoc />
+    public override int ParameterCount => 1;
+
+    /// <inheritdoc />
+    public override CommandType Type => CommandType.Cheat;
+
+    /// <inheritdoc />
+    public override string Description => "Kicks the specified player out of the game.";
+
+    /// <inheritdoc />
+    public override string Execute(player cheater, params string[] parameters)
     {
       try
       {
-        if (!TestMode.CheatCondition()) return;
-
-        string enteredString = GetEventPlayerChatString();
-        player p = GetTriggerPlayer();
-
-        _parameter = SubString(enteredString, StringLength(Command), StringLength(enteredString));
-        var kickId = S2I(_parameter);
-
-        var faction = PlayerData.ByHandle(Player(kickId)).Faction;
+        var kickId = S2I(parameters[0]);
+        var faction = FactionManager.GetFromName(parameters[0]);
         if (faction != null)
+        {
           faction.ScoreStatus = ScoreStatus.Defeated;
-        DisplayTextToPlayer(p, 0, 0,
-          "|cffD27575CHEAT:|r Attempted to kick player " + GetPlayerName(Player(kickId)) + ".");
+          return "Kicking player " + GetPlayerName(Player(kickId)) + ".";
+        }
+        return " Failed kicking player " + GetPlayerName(Player(kickId)) + ".";
+
       }
       catch (Exception ex)
       {
-        Console.WriteLine(ex);
+        return ex.Message;
       }
-    }
-
-    public static void Setup()
-    {
-      trigger trig = CreateTrigger();
-      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers()) TriggerRegisterPlayerChatEvent(trig, player, Command, false);
-
-      TriggerAddAction(trig, Actions);
     }
   }
 }

@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using MacroTools.CommandSystem;
 using WCSharp.Events;
@@ -6,7 +6,10 @@ using static War3Api.Common;
 
 namespace MacroTools.Cheats
 {
-  public sealed  class CheatGod : Command
+  /// <summary>
+  /// Gives the cheater god like power (0 damage taken, 100x damage dealt).
+  /// </summary>
+  public sealed class CheatGod : Command
   {
     private static readonly List<player> PlayersWithCheat = new();
     
