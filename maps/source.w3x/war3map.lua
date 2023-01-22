@@ -513,6 +513,7 @@ gg_snd_DoorCloseRemix = nil
 gg_snd_DoorOpenRemix = nil
 gg_snd_NuclearLaunchDetected = nil
 gg_snd_IllidansTheme = ""
+gg_rct_KaliRock8 = nil
 function InitGlobals()
 end
 
@@ -8140,6 +8141,7 @@ gg_rct_IslandBlocker4 = Rect(768.0, -10496.0, 1792.0, -10208.0)
 gg_rct_IslandBlocker5 = Rect(512.0, -9216.0, 800.0, -8416.0)
 gg_rct_IllidariUnlockSA = Rect(12000.0, -22816.0, 13376.0, -21280.0)
 gg_rct_BootyBayQuest = Rect(9696.0, -24160.0, 12032.0, -22304.0)
+gg_rct_KaliRock8 = Rect(-14400.0, -9472.0, -13632.0, -8768.0)
 end
 
 function InitUpgrades_Player0()
