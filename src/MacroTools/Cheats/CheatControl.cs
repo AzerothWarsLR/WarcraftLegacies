@@ -1,52 +1,47 @@
+﻿using MacroTools.CommandSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using static War3Api.Common;
 
 namespace MacroTools.Cheats
 {
-  public static class CheatControl
+  /// <summary>
+  /// Gives the cheater control of all players or a specific player.
+  /// </summary>
+  public sealed class CheatControl: Command
   {
-    private const string Command = "-control ";
 
-    private static void Actions()
+    /// <inheritdoc />
+    public override string CommandText => "control";
+
+    /// <inheritdoc />
+    public override int ParameterCount => 1;
+
+    /// <inheritdoc />
+    public override CommandType Type => CommandType.Cheat;
+
+    /// <inheritdoc />
+    public override string Description => "Gives the cheater control of all players or a specific player.";
+
+    /// <inheritdoc />
+    public override string Execute(player cheater, params string[] parameters)
     {
-      if (!TestMode.CheatCondition())
-      {
-        return;
-      }
-
-      string enteredString = GetEventPlayerChatString();
-      player p = GetTriggerPlayer();
-      GetPlayerId(p);
-      string parameter = SubString(enteredString, StringLength(Command), StringLength(enteredString));
-      if (parameter == "all")
+ 
+      if (parameters[0] == "all")
       {
         foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
         {
           GetTriggerPlayer().SetAllianceState(player, AllianceState.AlliedAdvUnits);
           player.SetAllianceState(GetTriggerPlayer(), AllianceState.AlliedAdvUnits);
         }
-
-        DisplayTextToPlayer(p, 0, 0, "|cffD27575CHEAT:|r Granted control of all players.");
+       return "Granted control of all players.";
       }
       else
       {
-        Player(S2I(parameter)).SetAllianceState(GetTriggerPlayer(), AllianceState.AlliedAdvUnits);
-        GetTriggerPlayer().SetAllianceState(Player(S2I(parameter)), AllianceState.AlliedAdvUnits);
-        DisplayTextToPlayer(p, 0, 0,
-          "|cffD27575CHEAT:|r Granted control of player " + GetPlayerName(Player(S2I(parameter))) + ".");
+        Player(S2I(parameters[0])).SetAllianceState(GetTriggerPlayer(), AllianceState.AlliedAdvUnits);
+        GetTriggerPlayer().SetAllianceState(Player(S2I(parameters[0])), AllianceState.AlliedAdvUnits);
+        return $"Granted control of player {GetPlayerName(Player(S2I(parameters[0])))}.";
       }
-    }
-
-    public static void Setup()
-    {
-      trigger trig = CreateTrigger();
-      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
-      {
-        TriggerRegisterPlayerChatEvent(trig, player, Command, false);
-      }
-
-      TriggerAddAction(trig, Actions);
     }
   }
 }
