@@ -6,7 +6,7 @@ namespace WarcraftLegacies.Source.Setup
 {
   public static class CommandSetup
   {
-    public static void Setup()
+    public static void Setup(CommandManager commandManager)
     {
       InviteCommand.Setup();
       JoinCommand.Setup();
@@ -14,9 +14,9 @@ namespace WarcraftLegacies.Source.Setup
       ObserverCommand.Setup();
       UnallyCommand.Setup();
       UninviteCommand.Setup();
-      CommandManager.Register(new Limited());
-      CommandManager.Register(new Clear());
-      CommandManager.Register(new Cam());
+      commandManager.Register(new Limited());
+      commandManager.Register(new Clear());
+      commandManager.Register(new Cam());
     }
   }
 }

@@ -9,7 +9,7 @@ namespace MacroTools.CommandSystem
   /// <summary>
   /// Responsible for managing all <see cref="Command"/>s in the game.
   /// </summary>
-  public static class CommandManager
+  public sealed class CommandManager
   {
     /// <summary>
     /// All <see cref="Command"/>s must be prefixed with this when entered into the chat.
@@ -19,7 +19,7 @@ namespace MacroTools.CommandSystem
     /// <summary>
     /// Registers a <see cref="Command"/>, allowing it to be fired when a player executes its command in the chat.
     /// </summary>
-    public static void Register(Command command)
+    public void Register(Command command)
     {
       command.OnRegister();
       CreateTrigger()

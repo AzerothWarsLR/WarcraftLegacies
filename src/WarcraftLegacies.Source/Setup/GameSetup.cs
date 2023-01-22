@@ -1,4 +1,5 @@
 ﻿using MacroTools;
+using MacroTools.CommandSystem;
 using MacroTools.ControlPointSystem;
 using MacroTools.Mechanics;
 using MacroTools.PassiveAbilitySystem;
@@ -59,8 +60,9 @@ namespace WarcraftLegacies.Source.Setup
       AllQuestSetup.Setup(preplacedUnitSystem, artifactSetup, allLegendSetup);
       ObserverSetup.Setup(new[] { Player(21) });
       SpellsSetup.Setup();
-      CheatSetup.Setup();
-      CommandSetup.Setup();
+      var commandManager = new CommandManager();
+      CheatSetup.Setup(commandManager);
+      CommandSetup.Setup(commandManager);
       ControlPointVictory.Setup();
       SilvermoonDies.Setup(allLegendSetup.Quelthalas.Sunwell);
       GameTime.Setup();

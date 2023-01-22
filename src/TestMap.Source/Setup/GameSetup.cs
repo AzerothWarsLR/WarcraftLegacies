@@ -1,4 +1,5 @@
-﻿using MacroTools.ControlPointSystem;
+﻿using MacroTools.CommandSystem;
+using MacroTools.ControlPointSystem;
 using MacroTools.Mechanics;
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.ResearchSystems;
@@ -24,7 +25,7 @@ namespace TestMap.Source.Setup
       ControlPointSetup.Setup();
       AllQuestSetup.Setup();
       SpellSetup.Setup();
-      CheatSetup.Setup();
+      CheatSetup.Setup(new CommandManager());
       FactionMultiboard.Setup();
       BookSetup.Setup();
       TestSetup.Setup();

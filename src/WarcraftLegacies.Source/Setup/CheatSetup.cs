@@ -7,40 +7,40 @@ namespace WarcraftLegacies.Source.Setup
 {
   public static class CheatSetup
   {
-    public static void Setup()
+    public static void Setup(CommandManager commandManager)
     {
       TestMode.Setup();
-      CommandManager.Register(new CheatAddSpell());
-      CommandManager.Register(new CheatResearchLevel());
-      CommandManager.Register(new CheatBuild());
-      CommandManager.Register(new CheatQuestProgress("complete", QuestProgress.Complete));
-      CommandManager.Register(new CheatQuestProgress("fail", QuestProgress.Failed));
-      CommandManager.Register(new CheatQuestProgress("uncomplete", QuestProgress.Incomplete));
-      CommandManager.Register(new CheatQuestProgress("undiscover", QuestProgress.Undiscovered));
-      CommandManager.Register(new CheatControl());
-      CommandManager.Register(new CommandDestroy());
-      CommandManager.Register(new CheatFaction());
-      CommandManager.Register(new CheatFood());
-      CommandManager.Register(new CheatGod());
-      CommandManager.Register(new CheatGold());
-      CommandManager.Register(new CheatHp());
-      CommandManager.Register(new CheatKick());
-      CommandManager.Register(new CheatLevel());
-      CommandManager.Register(new CheatLumber());
-      CommandManager.Register(new CheatMana());
-      CommandManager.Register(new CheatMp());
-      CommandManager.Register(new CheatNocd());
-      CommandManager.Register(new CheatOwner());
-      CommandManager.Register(new CheatRemove());
-      CommandManager.Register(new CheatResearchLevel());
-      CommandManager.Register(new CommandSetResearchLevel());
-      CommandManager.Register(new CheatShowQuestNames());
-      CommandManager.Register(new CheatSpawn());
-      CommandManager.Register(new CommandTeam());   
-      CommandManager.Register(new CheatTele());
-      CommandManager.Register(new CheatTime());
-      CommandManager.Register(new CheatUncontrol());
-      CommandManager.Register(new CheatVision());
+      commandManager.Register(new CheatAddSpell());
+      commandManager.Register(new CheatResearchLevel());
+      commandManager.Register(new CheatBuild());
+      commandManager.Register(new CheatQuestProgress("complete", QuestProgress.Complete));
+      commandManager.Register(new CheatQuestProgress("fail", QuestProgress.Failed));
+      commandManager.Register(new CheatQuestProgress("uncomplete", QuestProgress.Incomplete));
+      commandManager.Register(new CheatQuestProgress("undiscover", QuestProgress.Undiscovered));
+      commandManager.Register(new CheatControl());
+      commandManager.Register(new CommandDestroy());
+      commandManager.Register(new CheatFaction());
+      commandManager.Register(new CheatFood());
+      commandManager.Register(new CheatGod());
+      commandManager.Register(new CheatGold());
+      commandManager.Register(new CheatHp());
+      commandManager.Register(new CheatKick());
+      commandManager.Register(new CheatLevel());
+      commandManager.Register(new CheatLumber());
+      commandManager.Register(new CheatMana());
+      commandManager.Register(new CheatMp());
+      commandManager.Register(new CheatNocd());
+      commandManager.Register(new CheatOwner());
+      commandManager.Register(new CheatRemove());
+      commandManager.Register(new CheatResearchLevel());
+      commandManager.Register(new CommandSetResearchLevel());
+      commandManager.Register(new CheatShowQuestNames());
+      commandManager.Register(new CheatSpawn());
+      commandManager.Register(new CommandTeam());   
+      commandManager.Register(new CheatTele());
+      commandManager.Register(new CheatTime());
+      commandManager.Register(new CheatUncontrol());
+      commandManager.Register(new CheatVision());
       CheatSkipCinematic.Setup();
     }
   }
