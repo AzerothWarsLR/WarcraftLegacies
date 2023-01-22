@@ -1,6 +1,7 @@
-﻿using static War3Api.Common;
+﻿using WarcraftLegacies.Source.Rocks;
+using static War3Api.Common;
 
-namespace WarcraftLegacies.Source.Rocks
+namespace WarcraftLegacies.Source.Setup
 {
   /// <summary>
   /// Sets up all <see cref="RockGroup"/>s in the <see cref="RockSystem"/>.
@@ -22,7 +23,6 @@ namespace WarcraftLegacies.Source.Rocks
       RockSystem.Register(new RockGroup(Regions.IslandBlocker3, IslandChunkId, 1200));
       RockSystem.Register(new RockGroup(Regions.IslandBlocker4, IslandChunkId, 1200));
       RockSystem.Register(new RockGroup(Regions.IslandBlocker5, IslandChunkId, 1200));
-
     }
   }
 }
