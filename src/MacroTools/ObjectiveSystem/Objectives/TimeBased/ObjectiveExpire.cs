@@ -6,7 +6,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.TimeBased
   /// <summary>
   ///   Starts completed, then fails when the specified amount of time has elapsed.
   /// </summary>
-  public class ObjectiveExpire : Objective
+  public sealed class ObjectiveExpire : Objective
   {
     private readonly timer _timer;
 

@@ -6,7 +6,7 @@ using static War3Api.Common;
 
 namespace MacroTools.ObjectiveSystem.Objectives.LegendBased
 {
-  public class ObjectiveLegendReachRect : Objective
+  public sealed class ObjectiveLegendReachRect : Objective
   {
     private readonly TriggerWrapper _entersRect = new();
 

@@ -3,7 +3,7 @@ using static War3Api.Common;
 
 namespace MacroTools.FactionSystem
 {
-  public class PlayerFactionChangeEventArgs : EventArgs
+  public sealed class PlayerFactionChangeEventArgs : EventArgs
   {
     public player Player { get; }
     public Faction? PreviousFaction { get; }

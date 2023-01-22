@@ -6,7 +6,7 @@ using static War3Api.Common;
 
 namespace MacroTools.Spells
 {
-  public class SummonUnits : Spell
+  public sealed class SummonUnits : Spell
   {
     public int SummonUnitTypeId { get; init; } = FourCC("hfoo");
     public int SummonCount { get; init; } = 1;

@@ -3,7 +3,7 @@ using WCSharp.Shared.Data;
 
 namespace MacroTools.ObjectiveSystem.Objectives.MetaBased
 {
-  public class ObjectiveEitherOf : Objective
+  public sealed class ObjectiveEitherOf : Objective
   {
     public Objective ObjectiveA { get; }
 

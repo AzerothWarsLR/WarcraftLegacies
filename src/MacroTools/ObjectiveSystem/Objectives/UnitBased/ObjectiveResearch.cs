@@ -5,7 +5,7 @@ using static War3Api.Common;
 
 namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
 {
-  public class ObjectiveResearch : Objective
+  public sealed class ObjectiveResearch : Objective
   {
     public ObjectiveResearch(int researchId, int structureId)
     {

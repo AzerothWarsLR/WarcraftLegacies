@@ -8,7 +8,7 @@ using static War3Api.Common;
 
 namespace MacroTools.Spells
 {
-  public class InspireMadness : Spell
+  public sealed class InspireMadness : Spell
   {
     public InspireMadness(int id) : base(id)
     {
