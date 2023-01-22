@@ -15,6 +15,7 @@ namespace WarcraftLegacies.Source.Rocks
       RockSystem.Register(new RockGroup(Regions.KaliRock1, RockChunkId, 600));
       RockSystem.Register(new RockGroup(Regions.KaliRock4, RockChunkId, 600));
       RockSystem.Register(new RockGroup(Regions.KaliRock7, RockChunkId, 600));
+      RockSystem.Register(new RockGroup(Regions.KaliRock8, RockChunkId, 600));
 
       RockSystem.Register(new RockGroup(Regions.IslandBlocker1, IslandChunkId, 1200));
       RockSystem.Register(new RockGroup(Regions.IslandBlocker2, IslandChunkId, 1200));

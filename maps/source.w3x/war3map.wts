@@ -544,6 +544,12 @@ STRING 90
 A store for purchasing items
 }
 
+STRING 91
+// Units: h0AN (Juggernaut), Ubertip (Tooltip - Extended)
+{
+Dominating heavy ship.|n|r|n|cffffcc00Attacks mechanical targets.|r |nStrong versus every Ship, Weak versus Frigates on equal ressources.|nCannot attack non-mechanical units.
+}
+
 STRING 92
 // Units: e007 (Thornspeaker), Ubertip (Tooltip - Extended)
 {
@@ -1964,7 +1970,7 @@ Q
 }
 
 STRING 330
-// Abilities: A0TZ (Voodoo Restoration), EditorSuffix (Editor Suffix)
+// Abilities: Arsw (Serpent Ward), EditorSuffix (Editor Suffix)
 {
 (Vol'jin)
 }
@@ -2153,6 +2159,12 @@ STRING 361
 // Units: ubdd (Sapphiron), Tip (Tooltip - Basic)
 {
 Revive Sapphiron
+}
+
+STRING 362
+// Units: h0BA (Juggernaut), Ubertip (Tooltip - Extended)
+{
+Dominating heavy ship.|n|r|n|cffffcc00Attacks mechanical targets.|r |nStrong versus every Ship, Weak versus Frigates on equal ressources.|nCannot attack non-mechanical units.
 }
 
 STRING 363
@@ -3156,6 +3168,12 @@ STRING 529
 // Units: nwe2 (Thunder Eagle), Tip (Tooltip - Basic)
 {
 Train Thunder Eagle
+}
+
+STRING 530
+// Units: h0BB (Juggernaut), Ubertip (Tooltip - Extended)
+{
+Dominating heavy ship.|n|r|n|cffffcc00Attacks mechanical targets.|r |nStrong versus every Ship, Weak versus Frigates on equal ressources.|nCannot attack non-mechanical units.
 }
 
 STRING 531
@@ -5680,6 +5698,12 @@ STRING 950
 // Units: hgry (Gryphon Rider), Hotkey (Hotkey)
 {
 Q
+}
+
+STRING 951
+// Units: h0BC (Juggernaut), Ubertip (Tooltip - Extended)
+{
+Dominating heavy ship.|n|r|n|cffffcc00Attacks mechanical targets.|r |nStrong versus every Ship, Weak versus Frigates on equal ressources.|nCannot attack non-mechanical units.
 }
 
 STRING 952
@@ -15381,6 +15405,12 @@ STRING 2568
 Un'Goro Crater (10gold/min)
 }
 
+STRING 2569
+// Abilities: A07D (Portal to Black Temple), Ubertip (Tooltip - Normal - Extended)
+{
+Opens a two-way portal to Black Temple at the target location. The portal becomes useable after 20 seconds, and closes 15 seconds after the caster stops channeling.
+}
+
 STRING 2570
 // Units: n022 (Stonemaul (20gold/min)), Name (Name)
 {
@@ -17520,6 +17550,12 @@ STRING 2926
 // Units: Hapm (Lord Admiral of Kul Tiras), Name (Name)
 {
 Lord Admiral of Kul Tiras
+}
+
+STRING 2927
+// Abilities: A0UB (Open a portal to Northrend), Ubertip (Tooltip - Normal - Extended)
+{
+Opens a two-way portal to Northrend at the target location. The portal becomes useable after 10 seconds, and closes 5 seconds after the caster stops channeling.
 }
 
 STRING 2928
@@ -27893,12 +27929,6 @@ STRING 4655
 Everlook Wall
 }
 
-STRING 4656
-// Units: h0AN (Juggernaut), Ubertip (Tooltip - Extended)
-{
-Dominating heavy ship.|n|r|n|cffffcc00Attacks ships.|r |nStrong versus every Ship, Weak versus Frigates on equal ressources.|nCannot attack non-mechanical units.
-}
-
 STRING 4657
 // Abilities: A0H3 (Mass Ice Armor), Researchtip (Tooltip - Learn)
 {
@@ -29106,7 +29136,7 @@ STRING 4857
 }
 
 STRING 4858
-// Abilities: Arsw (Serpent Ward), EditorSuffix (Editor Suffix)
+// Abilities: A0TZ (Voodoo Restoration), EditorSuffix (Editor Suffix)
 {
 (Vol'jin)
 }
@@ -44873,6 +44903,12 @@ STRING 7482
 // Abilities: A024 (Thunder Fists), Researchtip (Tooltip - Learn)
 {
 Learn Forked Lightning (|cffffcc00Q|r) - [|cffffcc00Level %d|r]
+}
+
+STRING 7483
+// Abilities: A0UC (Open a portal to Alterac), Ubertip (Tooltip - Normal - Extended)
+{
+Opens a two-way portal to Alterac at the target location. The portal becomes useable after 10 seconds, and closes 5 seconds after the caster stops channeling.
 }
 
 STRING 7484
@@ -76536,12 +76572,6 @@ STRING 12770
 Tougher Hides reduces the damage dealt to the Druid by 10 damage.
 }
 
-STRING 12771
-// Units: h0BA (Juggernaut), Ubertip (Tooltip - Extended)
-{
-Dominating heavy ship.|n|r|n|cffffcc00Attacks ships.|r |nStrong versus every Ship, Weak versus Frigates on equal ressources.|nCannot attack non-mechanical units.
-}
-
 STRING 12772
 // Abilities: A01W (Brute Strength), Researchhotkey (Hotkey - Learn)
 {
@@ -79210,12 +79240,6 @@ STRING 13216
 // Units: n009 (Revenant), Ubertip (Tooltip - Extended)
 {
 Heavy melee unit infused with a persistent soul.|n|cfff5962dAbilities:|R Persistent Soul|n|n|cffffcc00Attacks land units.|r
-}
-
-STRING 13217
-// Units: h0BB (Juggernaut), Ubertip (Tooltip - Extended)
-{
-Dominating heavy ship.|n|r|n|cffffcc00Attacks ships.|r |nStrong versus every Ship, Weak versus Frigates on equal ressources.|nCannot attack non-mechanical units.
 }
 
 STRING 13218
@@ -82966,12 +82990,6 @@ STRING 13843
 // Upgrades: Ruar (Unholy Armor,Improved Unholy Armor,Advanced Unholy Armor), Ubertip (Tooltip - Extended)
 {
 Further increases the armor of Ghouls, Crypt Fiends, Zombies, Skeletal Archers, Gargoyles, Abominations, Meat Wagons, Destroyers, Frost Wyrms, Obsidian Statues, Death Knights, Sapphiron, Risen Skeletons, and Anub'arak's Beetles.
-}
-
-STRING 13844
-// Units: h0BC (Juggernaut), Ubertip (Tooltip - Extended)
-{
-Dominating heavy ship.|n|r|n|cffffcc00Attacks ships.|r |nStrong versus every Ship, Weak versus Frigates on equal ressources.|nCannot attack non-mechanical units.
 }
 
 STRING 13845
@@ -92070,12 +92088,6 @@ STRING 15384
 The hero heals every ally in a large radious around him. |n|n|cffffcc00Level 1|r - 150 hit points healed. |n|cffffcc00Level 2|r - 200 hit points healed. |n|cffffcc00Level 3|r - 250 hit points healed. |n|cffffcc00Level 4|r - 300 hit points healed.
 }
 
-STRING 15385
-// Abilities: A0UB (Open a portal to Northrend), Ubertip (Tooltip - Normal - Extended)
-{
-Opens a two-way portal to Argus at the target location within a range of <A00D,Rng1>. The portal becomes useable after 20 seconds, and closes 10 seconds after the caster stops channeling.
-}
-
 STRING 15386
 // Abilities: A0RA (Overclock), EditorSuffix (Editor Suffix)
 {
@@ -96772,12 +96784,6 @@ STRING 16178
 Blood Fury - [|cffffcc00Level 1|r]
 }
 
-STRING 16179
-// Abilities: A07D (Portal to Black Temple), Ubertip (Tooltip - Normal - Extended)
-{
-Opens a two-way portal to Black Temple at the target location within a range of <A00D,Rng1>. The portal becomes useable after 5 seconds, and closes 10 seconds after the caster stops channeling.
-}
-
 STRING 16180
 // Abilities: A0UB (Open a portal to Northrend), Ubertip (Tooltip - Normal - Extended)
 {
@@ -101384,12 +101390,6 @@ STRING 16952
 // Upgrades: R032 (Chaos), Name (Name)
 {
 Quest Completed: The Darkspear Trolls
-}
-
-STRING 16953
-// Abilities: A0UC (Open a portal to Alterac), Ubertip (Tooltip - Normal - Extended)
-{
-Opens a two-way portal to Azuremyst at the target location within a range of <A00D,Rng1>. The portal becomes useable after 20 seconds, and closes 10 seconds after the caster stops channeling.
 }
 
 STRING 16954
