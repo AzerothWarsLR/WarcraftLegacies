@@ -1,5 +1,6 @@
 ﻿using MacroTools.Cheats;
 using MacroTools.CommandSystem;
+using MacroTools.QuestSystem;
 
 namespace TestMap.Source.Setup
 {
@@ -17,7 +18,10 @@ namespace TestMap.Source.Setup
       CommandManager.Register(new CheatGold());
       CommandManager.Register(new CheatHp());
       CommandManager.Register(new CheatKick());
-      CommandManager.Register(new CheatCompleteQuest());
+      CommandManager.Register(new CheatQuestProgress("complete", QuestProgress.Complete));
+      CommandManager.Register(new CheatQuestProgress("fail", QuestProgress.Failed));
+      CommandManager.Register(new CheatQuestProgress("uncomplete", QuestProgress.Incomplete));
+      CommandManager.Register(new CheatQuestProgress("undiscover", QuestProgress.Undiscovered));
       CommandManager.Register(new CheatLumber());
       CommandManager.Register(new CheatMana());
       CommandManager.Register(new CheatMp());

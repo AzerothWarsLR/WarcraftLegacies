@@ -1,5 +1,6 @@
 ﻿using MacroTools.Cheats;
 using MacroTools.CommandSystem;
+using MacroTools.QuestSystem;
 using WarcraftLegacies.Source.Cheats;
 
 namespace WarcraftLegacies.Source.Setup
@@ -12,7 +13,10 @@ namespace WarcraftLegacies.Source.Setup
       CommandManager.Register(new CheatAddSpell());
       CommandManager.Register(new CheatResearchLevel());
       CommandManager.Register(new CheatBuild());
-      CommandManager.Register(new CheatCompleteQuest());
+      CommandManager.Register(new CheatQuestProgress("complete", QuestProgress.Complete));
+      CommandManager.Register(new CheatQuestProgress("fail", QuestProgress.Failed));
+      CommandManager.Register(new CheatQuestProgress("uncomplete", QuestProgress.Incomplete));
+      CommandManager.Register(new CheatQuestProgress("undiscover", QuestProgress.Undiscovered));
       CommandManager.Register(new CheatControl());
       CommandManager.Register(new CommandDestroy());
       CommandManager.Register(new CheatFaction());
