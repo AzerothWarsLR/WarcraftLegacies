@@ -8,7 +8,6 @@ namespace TestMap.Source.Setup
   {
     public static void Setup(CommandManager commandManager)
     {
-      TestMode.Setup();
       commandManager.Register(new CheatLevel());
       commandManager.Register(new CheatResearchLevel());
       commandManager.Register(new CheatBuild());
@@ -38,6 +37,7 @@ namespace TestMap.Source.Setup
       commandManager.Register(new CommandSetResearchLevel());
       commandManager.Register(new CommandDestroy());
       commandManager.Register(new CheatGod());
+      TestMode.Setup(commandManager);
     }
   }
 }

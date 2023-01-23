@@ -9,7 +9,6 @@ namespace WarcraftLegacies.Source.Setup
   {
     public static void Setup(CommandManager commandManager)
     {
-      TestMode.Setup();
       commandManager.Register(new CheatAddSpell());
       commandManager.Register(new CheatResearchLevel());
       commandManager.Register(new CheatBuild());
@@ -41,6 +40,7 @@ namespace WarcraftLegacies.Source.Setup
       commandManager.Register(new CheatTime());
       commandManager.Register(new CheatUncontrol());
       commandManager.Register(new CheatVision());
+      TestMode.Setup(commandManager);
       CheatSkipCinematic.Setup();
     }
   }

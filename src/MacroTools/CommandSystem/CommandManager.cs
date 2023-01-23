@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using MacroTools.Cheats;
 using MacroTools.Extensions;
@@ -11,16 +12,24 @@ namespace MacroTools.CommandSystem
   /// </summary>
   public sealed class CommandManager
   {
+    private readonly List<Command> _registeredCommands = new();
+
     /// <summary>
     /// All <see cref="Command"/>s must be prefixed with this when entered into the chat.
     /// </summary>
     private const string Prefix = "-";
     
     /// <summary>
+    /// Returns all registered <see cref="Command"/>s.
+    /// </summary>
+    public IEnumerable<Command> GetAllCommands() => _registeredCommands.AsReadOnly();
+
+    /// <summary>
     /// Registers a <see cref="Command"/>, allowing it to be fired when a player executes its command in the chat.
     /// </summary>
     public void Register(Command command)
     {
+      _registeredCommands.Add(command);
       command.OnRegister();
       CreateTrigger()
         .RegisterSharedChatEvent(Prefix + command.CommandText, false)
