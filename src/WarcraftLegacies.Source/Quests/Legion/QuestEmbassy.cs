@@ -15,7 +15,7 @@ namespace WarcraftLegacies.Source.Quests.Legion
       , "ReplaceableTextures\\CommandButtons\\BTNDemonBlackCitadel.blp")
     {
       AddObjective(new ObjectiveBuildInRect(questRect, "In Drak'tharon Keep", Constants.UNIT_U00F_DORMANT_SPIRE_LEGION_T1));
-      AddObjective(new ObjectiveTime(480));
+      AddObjective(new ObjectiveTime(540));
       ResearchId = Constants.UPGRADE_R042_QUEST_COMPLETED_INFERNAL_FOOTHOLD_LEGION;
     }
 
