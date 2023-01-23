@@ -160,7 +160,7 @@ namespace MacroTools.LegendSystem
     
     private void OnDeath()
     {
-      if (!_permaDies && IsUnitType(Unit, UNIT_TYPE_HERO) && AllDependenciesAreMissing()) 
+      if (!_permaDies && !AllDependenciesAreMissing()) 
         return;
       PermanentlyKill();
     }
