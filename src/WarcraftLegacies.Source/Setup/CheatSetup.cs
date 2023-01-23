@@ -1,4 +1,4 @@
-using MacroTools.Cheats;
+﻿using MacroTools.Cheats;
 using MacroTools.CommandSystem;
 using MacroTools.QuestSystem;
 using WarcraftLegacies.Source.Cheats;
@@ -40,7 +40,7 @@ namespace WarcraftLegacies.Source.Setup
       commandManager.Register(new CheatTime());
       commandManager.Register(new CheatUncontrol());
       commandManager.Register(new CheatVision());
-      CommandManager.Register(new CheatRawCode());
+      commandManager.Register(new CheatRawCode());
       TestMode.Setup(commandManager);
       CheatSkipCinematic.Setup();
     }
