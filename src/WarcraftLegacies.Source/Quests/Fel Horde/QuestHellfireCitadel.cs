@@ -24,7 +24,7 @@ namespace WarcraftLegacies.Source.Quests.Fel_Horde
     /// </summary>
     /// <param name="rescueRect">Units in this area start invulnerable then get rescued when the quest is complete.</param>
     public QuestHellfireCitadel(Rectangle rescueRect) : base("The Citadel",
-      "The clans holding Hellfire Citadel do not respect Kargath's authority yet, capture a large part of Outland to finally establish Illidan as the undisputable Lord of Outland",
+      "The clans holding Hellfire Citadel do not respect Kargath's authority yet, Magtheridon is being kept alive by Illidan, if we break him, he could serve us well.",
       "ReplaceableTextures\\CommandButtons\\BTNFelOrcFortress.blp")
     {
       AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N01J_ZANGARMARSH_15GOLD_MIN)));
@@ -40,12 +40,12 @@ namespace WarcraftLegacies.Source.Quests.Fel_Horde
     }
     
     /// <inheritdoc/>
-    protected override string CompletionPopup =>
+    protected override string RewardFlavour =>
       "Hellfire Citadel has been subjugated, and its military is now free to assist the Fel Horde.";
     
     /// <inheritdoc/>
     protected override string RewardDescription =>
-      "Control of all units in Hellfire Citadel and enable Gruul to be trained at the altar";
+      "Control of all units in Hellfire Citadel and enable Magtheridon to be trained at the altar";
     
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)

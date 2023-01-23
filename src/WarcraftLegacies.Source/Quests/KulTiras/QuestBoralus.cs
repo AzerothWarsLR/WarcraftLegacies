@@ -17,7 +17,7 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
   /// </summary>
   public sealed class QuestBoralus : QuestData
   {
-    private readonly List<unit> _rescueUnits = new();
+    private readonly List<unit> _rescueUnits;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestBoralus"/> class.
@@ -39,7 +39,7 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
     }
 
     /// <inheritdoc/>
-    protected override string CompletionPopup =>
+    protected override string RewardFlavour =>
       "Kul'tiras has joined the war and its military is now free to assist the Alliance.";
 
     /// <inheritdoc/>

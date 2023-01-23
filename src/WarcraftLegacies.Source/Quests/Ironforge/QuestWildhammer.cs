@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
+using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.QuestSystem;
-using WarcraftLegacies.Source.Setup.Legends;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Ironforge
@@ -19,17 +19,17 @@ namespace WarcraftLegacies.Source.Quests.Ironforge
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestWildhammer"/> class.
     /// </summary>
-    public QuestWildhammer() : base("Wildhammer Alliance",
+    public QuestWildhammer(LegendaryHero magni) : base("Wildhammer Alliance",
       "The Wildhammer dwarves roam freely over the peaks of the Hinterlands. An audience with Magni himself might earn their cooperation.",
       "ReplaceableTextures\\CommandButtons\\BTNHeroGriffonWarrior.blp")
     {
-      AddObjective(new ObjectiveLegendInRect(LegendIronforge.LegendMagni, Regions.Aerie_Peak, "Aerie Peak"));
+      AddObjective(new ObjectiveLegendInRect(magni, Regions.Aerie_Peak, "Aerie Peak"));
       ResearchId = Constants.UPGRADE_R01C_QUEST_COMPLETED_WILDHAMMER_ALLIANCE;
       _rescueUnits = Regions.Aerie_Peak.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
     }
     
     /// <inheritdoc />
-    protected override string CompletionPopup =>
+    protected override string RewardFlavour =>
       "Magni has spoken with Falstad Wildhammer and secured an alliance with the Wildhammer Clan.";
 
     /// <inheritdoc />
@@ -39,7 +39,7 @@ namespace WarcraftLegacies.Source.Quests.Ironforge
     /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)
     {
-      completingFaction.Player?.RescueGroup(_rescueUnits);
+      completingFaction.Player.RescueGroup(_rescueUnits);
     }
     
     /// <inheritdoc />

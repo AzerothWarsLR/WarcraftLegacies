@@ -2,7 +2,7 @@
 
 namespace MacroTools.Frames
 {
-  public class TextFrame : Frame
+  public sealed class TextFrame : Frame
   {
     public string Text
     {

@@ -88,6 +88,7 @@ Your mages are the finest in Azeroth, be sure to utilize them alongside your her
       Dalaran.ModObjectLimit(FourCC("R06O"), Faction.UNLIMITED); //Improved Phase Blade
       Dalaran.ModObjectLimit(FourCC("R00J"), Faction.UNLIMITED); //Combat Tomes
 
+      Dalaran.ModAbilityAvailability(Constants.ABILITY_A0GC_REPLENISH_MANA_ORANGE_KEEPS_CAPITALS, 1);
       Dalaran.ModAbilityAvailability(Constants.ABILITY_A0GG_SPELL_SHIELD_SPELL_BOOK_ORANGE_KIRIN_TOR, -1); //Todo: should be global
       Dalaran.ModAbilityAvailability(Constants.ABILITY_A0WG_SPELL_SHIELD_SPELL_BOOK_ORANGE_ANTONIDAS_RED_LICH_KING, -1);
       Dalaran.ModAbilityAvailability(Constants.ABILITY_A0UG_PHASE_BLADE_AUTO_CAST_ORANGE_BARRACKS_OFF, -1); //Todo: should have a system for this

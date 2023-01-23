@@ -12,21 +12,24 @@ namespace WarcraftLegacies.Source.Quests.Warsong
 {
   public sealed class QuestWarsongHold : QuestData
   {
-    private static readonly int ResearchId = FourCC("R06G");
-    private static readonly int AbilityId = FourCC("A0DZ");
+    private const int RequiredResearchId = Constants.UPGRADE_R06G_NORTHREND_EXPEDITION_WARSONG;
+    private const int AbilityId = Constants.ABILITY_A0DZ_WARSONG_OFFENSIVE_WARSONG;
 
     public QuestWarsongHold() : base("Warsong Hold",
       "The far-off land of Northrend is the new home of the traitor shaman Ner'zhul. The Warsong must land its forces on its shores in order to end the existential threat he now represents.",
       "ReplaceableTextures\\CommandButtons\\BTNTuskaarBrown.blp")
     {
-      AddObjective(new ObjectiveResearch(ResearchId, FourCC("o02T")));
+      AddObjective(new ObjectiveResearch(RequiredResearchId, Constants.UNIT_O02T_SHIPYARD_WARSONG_SHIPYARD));
     }
 
-    protected override string CompletionPopup =>
+    /// <inheritdoc/>
+    protected override string RewardFlavour =>
       "The Warsong Clan has sail for the icy shores of Northrend and up a formidable encampment at Borean Tundra.";
 
+    /// <inheritdoc/>
     protected override string RewardDescription => "A new base at Borean Tundra in Northrend";
 
+    /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
     {
       var boreanTundra = ControlPointManager.Instance.GetFromUnitType(FourCC("n00G")).Unit;
@@ -38,35 +41,36 @@ namespace WarcraftLegacies.Source.Quests.Warsong
       BlzSetUnitMaxHP(warsongHold, 4000);
       warsongHold.SetLifePercent(100);
       UnitAddAbility(warsongHold, AbilityId);
-      CreateStructureForced(completingFaction.Player, FourCC("n03E"), -7296, 15680, 4712389 * MathEx.DegToRad, 128);
-      CreateStructureForced(completingFaction.Player, FourCC("o01T"), -7456, 15008, 4712389 * MathEx.DegToRad, 128);
-      CreateStructureForced(completingFaction.Player, FourCC("o028"), -7808, 16512, 4712389 * MathEx.DegToRad, 128);
-      CreateStructureForced(completingFaction.Player, FourCC("o028"), -7296, 16000, 4712389 * MathEx.DegToRad, 128);
-      CreateStructureForced(completingFaction.Player, FourCC("o028"), -7424, 16192, 4712389 * MathEx.DegToRad, 128);
-      CreateStructureForced(completingFaction.Player, FourCC("o028"), -6656, 15616, 4712389 * MathEx.DegToRad, 128);
-      CreateStructureForced(completingFaction.Player, FourCC("o028"), -6912, 15744, 4712389 * MathEx.DegToRad, 128);
-      CreateStructureForced(completingFaction.Player, FourCC("n08E"), -829943, 1611051, 1850517 * MathEx.DegToRad, 128);
-      CreateStructureForced(completingFaction.Player, FourCC("o02Q"), -8512, 15936, 4712389 * MathEx.DegToRad, 128);
-      CreateStructureForced(completingFaction.Player, FourCC("n08E"), -85136, 1617106, 1126743 * MathEx.DegToRad, 128);
-      CreateStructureForced(completingFaction.Player, FourCC("o01S"), -8192, 16576, 4712389 * MathEx.DegToRad, 128);
-      CreateStructureForced(completingFaction.Player, FourCC("o02M"), -8048254, 1642775, -07628738 * MathEx.DegToRad, 128);
-      CreateStructureForced(completingFaction.Player, FourCC("o02M"), -8065816, 1578813, -008624744 * MathEx.DegToRad, 128);
-      CreateStructureForced(completingFaction.Player, FourCC("o028"), -7936, 16768, 4712389 * MathEx.DegToRad, 128);
-      CreateStructureForced(completingFaction.Player, FourCC("o02T"), -6752, 14880, 4712389 * MathEx.DegToRad, 128);
-      CreateStructureForced(completingFaction.Player, FourCC("odes"), -863319, 1501282, -1101598 * MathEx.DegToRad, 128);
-      CreateStructureForced(completingFaction.Player, FourCC("o020"), -6976, 15552, 4712389 * MathEx.DegToRad, 128);
-      CreateStructureForced(completingFaction.Player, FourCC("n03E"), -8064, 15360, 4712389 * MathEx.DegToRad, 128);
-      CreateStructureForced(completingFaction.Player, FourCC("n03E"), -8320, 16000, 4712389 * MathEx.DegToRad, 128);
-      CreateStructureForced(completingFaction.Player, FourCC("o02M"), -7086232, 1574921, 1348478 * MathEx.DegToRad, 128);
-      CreateStructureForced(completingFaction.Player, FourCC("n03E"), -7808, 16128, 4712389 * MathEx.DegToRad, 128);
-      CreateStructureForced(completingFaction.Player, FourCC("orai"), -7319426, 1513472, 0467489 * MathEx.DegToRad, 128);
-      CreateStructureForced(completingFaction.Player, FourCC("o02T"), -8672, 15328, 4712389 * MathEx.DegToRad, 128);
-      completingFaction.ModObjectLimit(ResearchId, -Faction.UNLIMITED);
+      CreateStructureForced(completingFaction.Player, FourCC("n03E"), -7296, 15680, 4.712389f * MathEx.DegToRad, 128);
+      CreateStructureForced(completingFaction.Player, FourCC("o01T"), -7456, 15008, 4.712389f * MathEx.DegToRad, 128);
+      CreateStructureForced(completingFaction.Player, FourCC("o028"), -7808, 16512, 4.712389f * MathEx.DegToRad, 128);
+      CreateStructureForced(completingFaction.Player, FourCC("o028"), -7296, 16000, 4.712389f * MathEx.DegToRad, 128);
+      CreateStructureForced(completingFaction.Player, FourCC("o028"), -7424, 16192, 4.712389f * MathEx.DegToRad, 128);
+      CreateStructureForced(completingFaction.Player, FourCC("o028"), -6656, 15616, 4.712389f * MathEx.DegToRad, 128);
+      CreateStructureForced(completingFaction.Player, FourCC("o028"), -6912, 15744, 4.712389f * MathEx.DegToRad, 128);
+      CreateStructureForced(completingFaction.Player, FourCC("n08E"), -8299, 16110, 1.850517f * MathEx.DegToRad, 128);
+      CreateStructureForced(completingFaction.Player, FourCC("o02Q"), -8512, 15936, 4.712389f * MathEx.DegToRad, 128);
+      CreateStructureForced(completingFaction.Player, FourCC("n08E"), -85136, 16171, 1.126743f * MathEx.DegToRad, 128);
+      CreateStructureForced(completingFaction.Player, FourCC("o01S"), -8192, 16576, 4.712389f * MathEx.DegToRad, 128);
+      CreateStructureForced(completingFaction.Player, FourCC("o02M"), -8048, 16427, -0.7628738f * MathEx.DegToRad, 128);
+      CreateStructureForced(completingFaction.Player, FourCC("o02M"), -8065, 15788, -0.08624744f * MathEx.DegToRad, 128);
+      CreateStructureForced(completingFaction.Player, FourCC("o028"), -7936, 16768, 4.712389f * MathEx.DegToRad, 128);
+      CreateStructureForced(completingFaction.Player, FourCC("o02T"), -6752, 14880, 4.712389f * MathEx.DegToRad, 128);
+      CreateStructureForced(completingFaction.Player, FourCC("odes"), -8633, 15012, -1.101598f * MathEx.DegToRad, 128);
+      CreateStructureForced(completingFaction.Player, FourCC("o020"), -6976, 15552, 4.712389f * MathEx.DegToRad, 128);
+      CreateStructureForced(completingFaction.Player, FourCC("n03E"), -8064, 15360, 4.712389f * MathEx.DegToRad, 128);
+      CreateStructureForced(completingFaction.Player, FourCC("n03E"), -8320, 16000, 4.712389f * MathEx.DegToRad, 128);
+      CreateStructureForced(completingFaction.Player, FourCC("o02M"), -7086, 15749, 1.348478f * MathEx.DegToRad, 128);
+      CreateStructureForced(completingFaction.Player, FourCC("n03E"), -7808, 16128, 4.712389f * MathEx.DegToRad, 128);
+      CreateStructureForced(completingFaction.Player, FourCC("orai"), -7319, 15134, 0.467489f * MathEx.DegToRad, 128);
+      CreateStructureForced(completingFaction.Player, FourCC("o02T"), -8672, 15328, 4.712389f * MathEx.DegToRad, 128);
+      completingFaction.ModObjectLimit(RequiredResearchId, -Faction.UNLIMITED);
     }
 
+    /// <inheritdoc/>
     protected override void OnAdd(Faction whichFaction)
     {
-      whichFaction.ModObjectLimit(ResearchId, Faction.UNLIMITED);
+      whichFaction.ModObjectLimit(RequiredResearchId, Faction.UNLIMITED);
     }
   }
 }

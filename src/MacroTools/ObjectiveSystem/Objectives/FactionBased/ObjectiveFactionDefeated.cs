@@ -3,7 +3,7 @@ using MacroTools.QuestSystem;
 
 namespace MacroTools.ObjectiveSystem.Objectives.FactionBased
 {
-  public class ObjectiveFactionDefeated : Objective
+  public sealed class ObjectiveFactionDefeated : Objective
   {
     public ObjectiveFactionDefeated(Faction whichFaction)
     {

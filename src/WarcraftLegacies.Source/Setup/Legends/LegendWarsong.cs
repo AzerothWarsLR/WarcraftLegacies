@@ -1,45 +1,42 @@
 ﻿using MacroTools;
 using MacroTools.LegendSystem;
+#pragma warning disable CS1591
 
 namespace WarcraftLegacies.Source.Setup.Legends
 {
-  public static class LegendWarsong
+  public sealed class LegendWarsong : IRegistersLegends
   {
-    public static LegendaryHero? GromHellscream { get; private set; }
-    public static Capital? StonemaulKeep { get; private set; }
-    public static Capital? Orgrimmar { get; private set; }
-    public static LegendaryHero? ChenStormstout { get; private set; }
-    public static LegendaryHero? Saurfang { get; private set; }
+    public LegendaryHero GromHellscream { get; }
+    public Capital StonemaulKeep { get; }
+    public Capital Orgrimmar { get; }
+    public LegendaryHero ChenStormstout { get; }
+    public LegendaryHero Saurfang { get; }
     
-    public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
+    public LegendWarsong(PreplacedUnitSystem preplacedUnitSystem)
     {
       ChenStormstout = new LegendaryHero("Chen Stormstout")
       {
         UnitType = Constants.UNIT_NSJS_BREWMASTER_WARSONG,
         StartingXp = 1000
       };
-      LegendaryHeroManager.Register(ChenStormstout);
 
       Saurfang = new LegendaryHero("Varok Saurfang")
       {
         UnitType = Constants.UNIT_OBLA_HIGH_OVERLORD_OF_THE_KOR_KRON_VASSAL,
         StartingXp = 2800
       };
-      LegendaryHeroManager.Register(Saurfang);
 
       StonemaulKeep = new Capital
       {
         Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_O004_STONEMAUL_KEEP),
         DeathMessage = "The fortress of the Stonemaul Clan has fallen."
       };
-      CapitalManager.Register(StonemaulKeep);
 
       Orgrimmar = new Capital
       {
         Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_O01B_ORGRIMMAR_WARSONG),
         DeathMessage = "Orgrimmar has been demolished and with it die the hopes and dreams of a wartorn race seeking refuge in a new world."
       };
-      CapitalManager.Register(Orgrimmar);
 
       GromHellscream = new LegendaryHero("Grom Hellscream")
       {
@@ -49,7 +46,16 @@ namespace WarcraftLegacies.Source.Setup.Legends
           Constants.ITEM_I01V_GOREHOWL
         }
       };
+    }
+
+    /// <inheritdoc />
+    public void RegisterLegends()
+    {
       LegendaryHeroManager.Register(GromHellscream);
+      LegendaryHeroManager.Register(ChenStormstout);
+      LegendaryHeroManager.Register(Saurfang);
+      CapitalManager.Register(StonemaulKeep);
+      CapitalManager.Register(Orgrimmar);
     }
   }
 }

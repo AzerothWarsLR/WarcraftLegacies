@@ -28,7 +28,7 @@ namespace WarcraftLegacies.Source.Quests.Quelthalas
     }
 
     /// <inheritdoc />
-    protected override string CompletionPopup => "We have uncovered the technology to build arcane weaponry";
+    protected override string RewardFlavour => "We have uncovered the technology to build arcane weaponry";
 
     /// <inheritdoc />
     protected override string RewardDescription => "You can now train Arcane Annihilators at the Academy";

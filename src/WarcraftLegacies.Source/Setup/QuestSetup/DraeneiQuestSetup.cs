@@ -8,24 +8,27 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
 {
   public static class DraeneiQuestSetup
   {
-    public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
+    public static void Setup(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup)
     {
       var draenei = DraeneiSetup.Draenei;
       if (draenei == null) 
         return;
-      var questRepairHull = new QuestRepairExodarHull(Regions.Exodar_Interior_All);
+      var questRepairHull = new QuestRepairExodarHull(Regions.Exodar_Interior_All, allLegendSetup.Draenei.LegendExodar,
+        allLegendSetup.Draenei.LegendExodarGenerator);
       draenei.StartingQuest = questRepairHull;
       draenei.AddQuest(questRepairHull);
       draenei.AddQuest(new QuestRebuildCivilisation(Regions.AzuremystAmbient));
-      draenei.AddQuest(new QuestBrokenOne());
+      draenei.AddQuest(new QuestBrokenOne(allLegendSetup.Draenei.Velen));
       draenei.AddQuest(new QuestShipArgus(
         preplacedUnitSystem.GetUnit(Constants.UNIT_H03V_ENTRANCE_PORTAL, Regions.OutlandToArgus.Center),
-        preplacedUnitSystem.GetUnit(Constants.UNIT_H03V_ENTRANCE_PORTAL, Regions.TempestKeepSpawn.Center)
+        preplacedUnitSystem.GetUnit(Constants.UNIT_H03V_ENTRANCE_PORTAL, Regions.TempestKeepSpawn.Center),
+        allLegendSetup.Draenei.Velen
       ));
-      var questRepairGenerator = new QuestRepairGenerator();
+      var questRepairGenerator = new QuestRepairGenerator(allLegendSetup.Draenei.LegendExodarGenerator);
       draenei.AddQuest(questRepairGenerator);
-      draenei.AddQuest(new QuestTriumvirate());
-      var questDimensionalShip = new QuestDimensionalShip(Regions.Exodar_Interior_All, new List<QuestData> { questRepairHull, questRepairGenerator });
+      draenei.AddQuest(new QuestTriumvirate(allLegendSetup.Draenei.Velen));
+      var questDimensionalShip = new QuestDimensionalShip(Regions.Exodar_Interior_All,
+        new List<QuestData> { questRepairHull, questRepairGenerator }, allLegendSetup.Draenei.LegendExodarGenerator);
       draenei.AddQuest(questDimensionalShip);
     }
   }

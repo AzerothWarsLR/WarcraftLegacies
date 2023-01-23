@@ -3,6 +3,7 @@ using MacroTools.PassiveAbilitySystem;
 using MacroTools.Spells;
 using MacroTools.SpellSystem;
 using WarcraftLegacies.Source.Setup.Spells;
+using WarcraftLegacies.Source.Spells;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup
@@ -127,9 +128,6 @@ namespace WarcraftLegacies.Source.Setup
       };
       SpellSystem.Register(bombingRun);
 
-      var executeWarsong = new Execute(Constants.UNIT_O021_RAVAGER_WARSONG);
-      PassiveAbilityManager.Register(executeWarsong);
-
       var maievVengeance = new Vengeance(Constants.UNIT_EWRD_LEADER_OF_THE_WATCHERS_SENTINELS,
         Constants.ABILITY_A017_TAKE_VENGEANCE_SENTINELS_MAIEV)
       {
@@ -200,6 +198,10 @@ namespace WarcraftLegacies.Source.Setup
         Effect = "Abilities\\Spells\\Human\\Thunderclap\\ThunderClapCaster.mdl"
       };
       SpellSystem.Register(electricStrike);
+
+      SpellSystem.Register(new MakeCasterVulnerable(Constants.ABILITY_A00M_SCROLL_TELE));
+      SpellSystem.Register(new MakeCasterVulnerable(Constants.ABILITY_A0CS_VASSAL_SCROLL_TELE));
+      SpellSystem.Register(new MakeCasterVulnerable(Constants.ABILITY_A002_SCROLL_TELE_TOWN));
       
       FrostwolfSpellSetup.Setup();
       LegionSpellSetup.Setup();
@@ -215,6 +217,8 @@ namespace WarcraftLegacies.Source.Setup
       IllidariSpellSetup.Setup();
       FelHordeSpellSetup.Setup();
       DraeneiSpellSetup.Setup();
+      WarsongSpellSetup.Setup();
+      IronforgeSpellSetup.Setup();
     }
   }
 }

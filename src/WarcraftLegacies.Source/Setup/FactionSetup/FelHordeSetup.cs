@@ -76,7 +76,7 @@ The Alliance is gathering outside the Dark Portal to stop you, so prepare to for
       FelHorde.ModObjectLimit(FourCC("N03D"), 1); //Kargath
       FelHorde.ModObjectLimit(FourCC("Nbbc"), 1); //Rend
       FelHorde.ModObjectLimit(FourCC("U02D"), 1); //Teron
-      FelHorde.ModObjectLimit(FourCC("E01G"), 1); //Gruul
+      FelHorde.ModObjectLimit(FourCC("Nmag"), 1); //Magtheridon
 
       FelHorde.ModObjectLimit(FourCC("Robf"), Faction.UNLIMITED); //Demonic Flux
       FelHorde.ModObjectLimit(FourCC("R066"), Faction.UNLIMITED); //Burning Oil

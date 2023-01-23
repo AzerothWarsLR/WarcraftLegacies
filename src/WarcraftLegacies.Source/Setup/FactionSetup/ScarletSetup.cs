@@ -33,7 +33,6 @@ Fortify your strongholds against the storm to come and make ready to unleash the
       ScarletCrusade.ModObjectLimit(FourCC("h088"), Faction.UNLIMITED); //Farm
       ScarletCrusade.ModObjectLimit(FourCC("h080"), Faction.UNLIMITED); //Altar of Kings
       ScarletCrusade.ModObjectLimit(FourCC("h081"), Faction.UNLIMITED); //Barracks
-      ScarletCrusade.ModObjectLimit(FourCC("h06G"), Faction.UNLIMITED); //Blacksmith
       ScarletCrusade.ModObjectLimit(FourCC("h083"), Faction.UNLIMITED); //Chapel
       ScarletCrusade.ModObjectLimit(FourCC("h084"), Faction.UNLIMITED); //Scout Tower
       ScarletCrusade.ModObjectLimit(FourCC("h085"), Faction.UNLIMITED); //Guard Tower

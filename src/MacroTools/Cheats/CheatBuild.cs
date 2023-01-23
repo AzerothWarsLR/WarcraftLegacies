@@ -1,13 +1,62 @@
+﻿using MacroTools.CommandSystem;
+using System;
 using System.Collections.Generic;
 using WCSharp.Events;
 using static War3Api.Common;
 
 namespace MacroTools.Cheats
 {
-  public static class CheatBuild
+  /// <summary>
+  /// Allows the cheater to finish reasearches and building construction instantly.
+  /// </summary>
+  public sealed class CheatBuild : Command
   {
-    private const string Command = "-build ";
+
     private static readonly List<player> PlayersWithCheat = new();
+
+    /// <inheritdoc />
+    public override string CommandText => "build";
+
+    /// <inheritdoc />
+    public override int ParameterCount => 1;
+
+    /// <inheritdoc />
+    public override CommandType Type => CommandType.Cheat;
+
+    /// <inheritdoc />
+    public override string Description => "When activated, reasearches and building construction finishes instantly.";
+
+    /// <inheritdoc />
+    public override string Execute(player cheater, params string[] parameters)
+    {
+      if (parameters[0] == "on")
+      {
+        SetCheatActive(cheater, true);
+        return "Instant build activated.";
+      }
+
+      else if (parameters[0] == "off")
+      {
+        SetCheatActive(cheater, false);
+        return "Instant build deactivated.";
+      }
+      return $"The paramater {parameters[0]} did not equal 'on' or 'off'.";
+    }
+
+    /// <inheritdoc />
+    public override void OnRegister()
+    {
+      PlayerUnitEvents.Register(UnitTypeEvent.ReceivesOrder, Build);
+    }
+
+    private static void Build()
+    {
+      if (GetIssuedOrderId() == 851976 && IsCheatActive(GetTriggerPlayer()))
+      {
+        UnitSetUpgradeProgress(GetTriggerUnit(), 100);
+        UnitSetConstructionProgress(GetTriggerUnit(), 100);
+      }
+    }
 
     private static bool IsCheatActive(player whichPlayer)
     {
@@ -22,47 +71,8 @@ namespace MacroTools.Cheats
         return;
       }
 
-      if (!isActive && PlayersWithCheat.Contains(whichPlayer)) PlayersWithCheat.Remove(whichPlayer);
-    }
-
-    private static void Build()
-    {
-      if (GetIssuedOrderId() == 851976 && IsCheatActive(GetTriggerPlayer()))
-      {
-        UnitSetUpgradeProgress(GetTriggerUnit(), 100);
-        UnitSetConstructionProgress(GetTriggerUnit(), 100);
-      }
-    }
-
-    private static void Actions()
-    {
-      if (!TestMode.CheatCondition()) return;
-
-      var enteredString = GetEventPlayerChatString();
-      var p = GetTriggerPlayer();
-      var parameter = SubString(enteredString, StringLength(Command), StringLength(enteredString));
-
-      if (parameter == "on")
-      {
-        SetCheatActive(p, true);
-        DisplayTextToPlayer(p, 0, 0, "|cffD27575CHEAT:|r Instant build activated.");
-      }
-
-      else if (parameter == "off")
-      {
-        SetCheatActive(p, false);
-        DisplayTextToPlayer(p, 0, 0, "|cffD27575CHEAT:|r Instant build deactivated.");
-      }
-    }
-
-    public static void Setup()
-    {
-      trigger trig = CreateTrigger();
-      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers()) TriggerRegisterPlayerChatEvent(trig, player, Command, false);
-
-      TriggerAddAction(trig, Actions);
-
-      PlayerUnitEvents.Register(UnitTypeEvent.ReceivesOrder, Build);
-    }
+      if (!isActive && PlayersWithCheat.Contains(whichPlayer)) 
+        PlayersWithCheat.Remove(whichPlayer);
+    } 
   }
 }

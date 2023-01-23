@@ -1,4 +1,5 @@
 using System.Linq;
+using MacroTools.CommandSystem;
 using WCSharp.Shared;
 using static War3Api.Common;
 
@@ -29,12 +30,13 @@ namespace MacroTools.Cheats
       DisplayTextToPlayer(GetLocalPlayer(), 0, 0, "To use these |cffD27575CHEATS|r, refer to the Quest menu.");
     }
 
-    private static void CreateInfoQuests()
+    private static void CreateInfoQuests(CommandManager commandManager)
     {
       var newQuest = CreateQuest();
       QuestSetTitle(newQuest, "Test Commands");
-      QuestSetDescription(newQuest,
-        " - gold x|n - lumber x|n - food x|n - tele on/off (use patrol to teleport anywhere on the map instantly)|n - build on/off (press cancel on a building to finish its progress instantly)|n - nocd on/off (instant refresh cds)|n - mana on/off (instant refund all mana)|n - unlock (unlocks all Path requirements)|n - god on/off (deal 100x damage, take no damage)|n - vision on/off (reveal entire map)|n - time xx (time of day)|n - control xx (take shared control of player xx)|n - uncontrol xx (revoke control of player xx)|n - level xx (level of selected units)|n - hp xx (health of selected units)|n - mp xx|n - remove (remove selected units)|n - faction <text> (change faction to entered string)|n - team <faction> <team> (change the specified faction's team)|n - owner xx (transfer selected units to player xx)|n - spawn yyyy xx (spawns xx instances of unit || item yyyy, uses rawcodes)|n - kick xx (causes player xx to psuedo-leave, and lose faction and team)|n");
+      var description = commandManager.GetAllCommands().Aggregate("",
+        (current, command) => $"{current} -{command.CommandText}: {command.Description}\n");
+      QuestSetDescription(newQuest, description);
       QuestSetDiscovered(newQuest, true);
       QuestSetRequired(newQuest, true);
       QuestSetIconPath(newQuest, "ReplaceableTextures\\CommandButtons\\BTNStaffOfTeleportation.blp");
@@ -44,14 +46,14 @@ namespace MacroTools.Cheats
     /// <summary>
     /// Sets up <see cref="TestMode"/>.
     /// </summary>
-    public static void Setup()
+    public static void Setup(CommandManager commandManager)
     {
       AreCheatsActive = Util.EnumeratePlayers().Count(player =>
         GetPlayerSlotState(player) == PLAYER_SLOT_STATE_PLAYING && GetPlayerController(player) == MAP_CONTROL_USER) < 2;
 
       if (!AreCheatsActive) 
         return;
-      CreateInfoQuests();
+      CreateInfoQuests(commandManager);
       var trig = CreateTrigger();
       TriggerRegisterTimerEvent(trig, 200, true);
       TriggerAddAction(trig, Warning);

@@ -25,8 +25,10 @@ namespace WarcraftLegacies.Source.Quests.Ironforge
       Required = true;
     }
 
-    protected override string CompletionPopup => "The Trolls have been defeated, Dun Morogh will join your cause.";
+    /// <inheritdoc/>
+    protected override string RewardFlavour => "The Trolls have been defeated, Dun Morogh will join your cause.";
 
+    /// <inheritdoc/>
     protected override string RewardDescription => "Control of all units in Dun Morogh";
 
     private static void GrantDunMorogh(player whichPlayer)
@@ -47,11 +49,13 @@ namespace WarcraftLegacies.Source.Quests.Ironforge
       DestroyGroup(tempGroup);
     }
 
+    /// <inheritdoc/>
     protected override void OnFail(Faction completingFaction)
     {
       GrantDunMorogh(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
+    /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
     {
       GrantDunMorogh(completingFaction.Player);

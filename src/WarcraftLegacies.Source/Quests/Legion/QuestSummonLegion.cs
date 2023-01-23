@@ -38,7 +38,7 @@ namespace WarcraftLegacies.Source.Quests.Legion
     }
 
     /// <inheritdoc />
-    protected override string CompletionPopup => "Tremble, mortals, and despair. Doom has come to this world.";
+    protected override string RewardFlavour => "Tremble, mortals, and despair. Doom has come to this world.";
 
     /// <inheritdoc />
     protected override string RewardDescription =>

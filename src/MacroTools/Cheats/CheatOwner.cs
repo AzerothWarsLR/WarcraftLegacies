@@ -1,43 +1,32 @@
+using MacroTools.CommandSystem;
 using MacroTools.Extensions;
 using static War3Api.Common;
 
 namespace MacroTools.Cheats
 {
-  public static class CheatOwner
+  public sealed class CheatOwner : Command
   {
-    private const string Command = "-owner ";
-    private static string? _parameter;
+    /// <inheritdoc />
+    public override string CommandText => "owner";
+    
+    /// <inheritdoc />
+    public override int ParameterCount => 1;
+    
+    /// <inheritdoc />
+    public override CommandType Type => CommandType.Cheat;
 
-    private static void SetOwner(unit whichUnit)
+    /// <inheritdoc />
+    public override string Description => "Sets the owner of all units to the specified player number.";
+    
+    /// <inheritdoc />
+    public override string Execute(player cheater, params string[] parameters)
     {
-      SetUnitOwner(whichUnit, Player(S2I(_parameter)), true);
-    }
+      if (!int.TryParse(parameters[0], out var playerNumber))
+        return "You must specify a valid player number as the first parameter.";
 
-    private static void Actions()
-    {
-      if (!TestMode.CheatCondition()) return;
-
-      string enteredString = GetEventPlayerChatString();
-      player p = GetTriggerPlayer();
-      _parameter = SubString(enteredString, StringLength(Command), StringLength(enteredString));
-
-      if (S2I(_parameter) >= 0)
-      {
-        foreach (var unit in CreateGroup().EnumSelectedUnits(p).EmptyToList())
-        {
-          SetOwner(unit);
-        }
-        DisplayTextToPlayer(p, 0, 0,
-          "|cffD27575CHEAT:|r Setting owner of selected units to " + GetPlayerName(Player(S2I(_parameter))) + ".");
-      }
-    }
-
-    public static void Setup()
-    {
-      trigger trig = CreateTrigger();
-      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers()) TriggerRegisterPlayerChatEvent(trig, player, Command, false);
-
-      TriggerAddAction(trig, Actions);
+      foreach (var unit in CreateGroup().EnumSelectedUnits(cheater).EmptyToList()) 
+        unit.SetOwner(Player(playerNumber));
+      return $"Setting owner of selected units to {GetPlayerName(Player(playerNumber))}.";
     }
   }
 }

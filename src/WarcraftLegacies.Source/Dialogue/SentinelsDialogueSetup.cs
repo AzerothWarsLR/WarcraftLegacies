@@ -2,8 +2,8 @@
 using MacroTools.DialogueSystem;
 using MacroTools.ObjectiveSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
+using WarcraftLegacies.Source.Setup;
 using WarcraftLegacies.Source.Setup.FactionSetup;
-using WarcraftLegacies.Source.Setup.Legends;
 
 namespace WarcraftLegacies.Source.Dialogue
 {
@@ -15,7 +15,7 @@ namespace WarcraftLegacies.Source.Dialogue
     /// <summary>
     /// Sets up <see cref="SentinelsDialogueSetup"/>.
     /// </summary>
-    public static void Setup()
+    public static void Setup(AllLegendSetup legendSetup)
     {
       TriggeredDialogueManager.Add(
         new TriggeredDialogue(new MacroTools.DialogueSystem.Dialogue(
@@ -27,7 +27,7 @@ namespace WarcraftLegacies.Source.Dialogue
           DruidsSetup.Druids
         }, new[]
         {
-          new ObjectiveLegendMeetsLegend(LegendSentinels.Maiev, LegendDruids.LegendMalfurion)
+          new ObjectiveLegendMeetsLegend(legendSetup.Sentinels.Maiev, legendSetup.Druids.Malfurion)
         }));
       
       TriggeredDialogueManager.Add(
@@ -39,7 +39,7 @@ namespace WarcraftLegacies.Source.Dialogue
           SentinelsSetup.Sentinels
         }, new[]
         {
-          new ObjectiveLegendMeetsLegend(LegendSentinels.Maiev, LegendSentinels.Tyrande)
+          new ObjectiveLegendMeetsLegend(legendSetup.Sentinels.Maiev, legendSetup.Sentinels.Tyrande)
         }));
       
       TriggeredDialogueManager.Add(
@@ -52,7 +52,7 @@ namespace WarcraftLegacies.Source.Dialogue
           IllidariSetup.Illidari
         }, new[]
         {
-          new ObjectiveLegendMeetsLegend(LegendSentinels.Maiev, LegendNaga.LegendIllidan)
+          new ObjectiveLegendMeetsLegend(legendSetup.Sentinels.Maiev, legendSetup.Naga.Illidan)
         }));
       
       TriggeredDialogueManager.Add(new TriggeredDialogue(
@@ -70,7 +70,7 @@ namespace WarcraftLegacies.Source.Dialogue
           SentinelsSetup.Sentinels
         }, new List<Objective>
         {
-          new ObjectiveLegendMeetsLegend(LegendSentinels.Tyrande, LegendLegion.LEGEND_ARCHIMONDE)
+          new ObjectiveLegendMeetsLegend(legendSetup.Sentinels.Tyrande, legendSetup.Legion.Archimonde)
         }
       ));
       
@@ -94,7 +94,7 @@ namespace WarcraftLegacies.Source.Dialogue
           SentinelsSetup.Sentinels
         }, new List<Objective>
         {
-          new ObjectiveLegendReachRect(LegendSentinels.Maiev, Regions.BrokenIslesA, "the Broken Isles")
+          new ObjectiveLegendReachRect(legendSetup.Sentinels.Maiev, Regions.BrokenIslesA, "the Broken Isles")
         }
       ));
     }

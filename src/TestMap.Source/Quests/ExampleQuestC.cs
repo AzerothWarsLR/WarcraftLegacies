@@ -23,7 +23,7 @@ namespace TestMap.Source.Quests
     }
 
     protected override string RewardDescription => "A free Zergling, and destroy Kelen's Dagger of Escape";
-    protected override string CompletionPopup => "Congratulations on your free Zergling!";
+    protected override string RewardFlavour => "Congratulations on your free Zergling!";
     protected override string PenaltyDescription => "A hostile Peasant spawns";
 
     protected override void OnAdd(Faction whichFaction)

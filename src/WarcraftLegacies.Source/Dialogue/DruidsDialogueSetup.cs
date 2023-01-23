@@ -5,8 +5,8 @@ using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
+using WarcraftLegacies.Source.Setup;
 using WarcraftLegacies.Source.Setup.FactionSetup;
-using WarcraftLegacies.Source.Setup.Legends;
 
 namespace WarcraftLegacies.Source.Dialogue
 {
@@ -18,7 +18,7 @@ namespace WarcraftLegacies.Source.Dialogue
     /// <summary>
     /// Sets up all dialogue related to the Druids.
     /// </summary>
-    public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
+    public static void Setup(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup legendSetup)
     {
       TriggeredDialogueManager.Add(
         new TriggeredDialogue(new MacroTools.DialogueSystem.Dialogue(
@@ -32,7 +32,7 @@ namespace WarcraftLegacies.Source.Dialogue
           WarsongSetup.WarsongClan
         }, new[]
         {
-          new ObjectiveControlLegend(LegendDruids.LegendCenarius, false)
+          new ObjectiveControlLegend(legendSetup.Druids.Cenarius, false)
           {
             EligibleFactions = new List<Faction>
             {
@@ -56,7 +56,7 @@ namespace WarcraftLegacies.Source.Dialogue
             "Malfurion Stormrage")
         ), 
         new[] { DruidsSetup.Druids, SentinelsSetup.Sentinels },
-        new[] { new ObjectiveLegendMeetsLegend(LegendDruids.LegendMalfurion, LegendSentinels.Tyrande) }));
+        new[] { new ObjectiveLegendMeetsLegend(legendSetup.Druids.Malfurion, legendSetup.Sentinels.Tyrande) }));
       
       TriggeredDialogueManager.Add(new TriggeredDialogue(new DialogueSequence(
           new MacroTools.DialogueSystem.Dialogue(
@@ -72,7 +72,7 @@ namespace WarcraftLegacies.Source.Dialogue
         new Objective[]
         {
           new ObjectiveUnitAlive(preplacedUnitSystem.GetUnit(Constants.UNIT_NSTH_SATYR_HELLCALLER, Regions.SatyrCamp.Center)),
-          new ObjectiveLegendInRect(LegendDruids.LegendMalfurion, Regions.SatyrCamp, "Satyr camp")
+          new ObjectiveLegendInRect(legendSetup.Druids.Malfurion, Regions.SatyrCamp, "Satyr camp")
         }));
       
       TriggeredDialogueManager.Add(new TriggeredDialogue(
@@ -83,7 +83,7 @@ namespace WarcraftLegacies.Source.Dialogue
           new[] { DruidsSetup.Druids },
         new Objective[]
         {
-          new ObjectiveControlLegend(LegendDruids.LegendMalfurion, false)
+          new ObjectiveControlLegend(legendSetup.Druids.Malfurion, false)
           {
             EligibleFactions = new List<Faction>
             {

@@ -1,9 +1,9 @@
 ﻿using MacroTools.Extensions;
 using MacroTools.FactionSystem;
+using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.QuestSystem;
-using WarcraftLegacies.Source.Setup.Legends;
 using static MacroTools.Libraries.GeneralHelpers;
 
 namespace WarcraftLegacies.Source.Quests.Sentinels
@@ -13,14 +13,16 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
   /// </summary>
   public sealed class QuestVaultoftheWardens : QuestData
   {
+    private readonly Capital _vaultOfTheWardens;
     private const int WardenId = Constants.UNIT_H045_WARDEN_SENTINELS;
 
     /// <inheritdoc />
-    public QuestVaultoftheWardens() : base("Vault of the Wardens",
+    public QuestVaultoftheWardens(LegendaryHero maiev, Capital vaultOfTheWardens) : base("Vault of the Wardens",
       "In millenia past, the most vile entities of Azeroth were imprisoned in a facility near Zin-Ashari, but it was abandoned when the Broken Isles were shattered. In troubling times such as these, the Wardens could make great use of such a facility.",
       "ReplaceableTextures\\CommandButtons\\BTNReincarnationWarden.blp")
     {
-      AddObjective(new ObjectiveChannelRect(Regions.VaultoftheWardens, "Vault of the Wardens", LegendSentinels.Maiev,
+      _vaultOfTheWardens = vaultOfTheWardens;
+      AddObjective(new ObjectiveChannelRect(Regions.VaultoftheWardens, "Vault of the Wardens", maiev,
         120, 90));
       AddObjective(new ObjectiveSelfExists());
       ResearchId = Constants.UPGRADE_R06H_QUEST_COMPLETED_VAULT_OF_THE_WARDENS_SENTINELS_JAROD;
@@ -28,7 +30,7 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
     }
 
     /// <inheritdoc />
-    protected override string CompletionPopup =>
+    protected override string RewardFlavour =>
       "The ancient Vault of the Wardens has been secured. Maiev and her Wardens take up residence within its ancient halls.";
 
     /// <inheritdoc />
@@ -42,20 +44,20 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
         Regions.VaultoftheWardens.Center.Y, 270, 4);
       completingFaction.Player.DisplayUnitTypeAcquired(WardenId,
         "You can now train Wardens from the Vault of the Wardens, Sentinel Enclaves, and your capitals.");
-      LegendSentinels.VaultOfTheWardens?.Unit?.Rescue(completingFaction.Player);
+      _vaultOfTheWardens.Unit?.Rescue(completingFaction.Player);
     }
 
     /// <inheritdoc />
     protected override void OnFail(Faction completingFaction)
     {
-      LegendSentinels.VaultOfTheWardens?.Unit?.Kill();
+      _vaultOfTheWardens.Unit?.Kill();
     }
 
     /// <inheritdoc />
     protected override void OnAdd(Faction whichFaction)
     {
       whichFaction.ModObjectLimit(WardenId, 8);
-      LegendSentinels.VaultOfTheWardens?.Unit?.SetInvulnerable(true);
+      _vaultOfTheWardens.Unit?.SetInvulnerable(true);
     }
   }
 }

@@ -8,7 +8,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
   /// <summary>
   /// An objective that completes when a unit reaches full health and fails if it dies
   /// </summary>
-  public class ObjectiveUnitReachesFullHealth : Objective
+  public sealed class ObjectiveUnitReachesFullHealth : Objective
   {
     private readonly unit _objectiveUnit;
     

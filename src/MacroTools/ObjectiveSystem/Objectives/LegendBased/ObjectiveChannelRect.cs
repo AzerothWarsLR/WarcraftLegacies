@@ -18,6 +18,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.LegendBased
     private readonly int _duration;
     private readonly TriggerWrapper _entersRectTrig = new();
     private readonly float _facing;
+    private readonly string? _timerDialogTitle;
     private readonly Legend _targetLegend;
 
     private readonly rect _targetRect;
@@ -31,8 +32,10 @@ namespace MacroTools.ObjectiveSystem.Objectives.LegendBased
     /// <param name="legendaryHero"></param>
     /// <param name="duration">How long the channel lasts.</param>
     /// <param name="facing">Which way the unit faces while channeling.</param>
+    /// <param name="timerDialogTitle">If set, any <see cref="Channel"/> created by the <see cref="ObjectiveChannelRect"/>
+    /// displays a countdown timer to all players with this title. If null, no timer is displayed.</param>
     public ObjectiveChannelRect(Rectangle targetRect, string rectName, LegendaryHero legendaryHero, int duration,
-      float facing)
+      float facing, string? timerDialogTitle = null)
     {
       _targetRect = targetRect.Rect;
       var target = RectToRegion(_targetRect);
@@ -40,6 +43,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.LegendBased
       _duration = duration;
       Description = $"Have {legendaryHero.Name} channel at {rectName} for {duration} seconds";
       _facing = facing;
+      _timerDialogTitle = timerDialogTitle;
 
       MapEffectPath = TargetEffect;
 
@@ -57,7 +61,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.LegendBased
       if (!EligibleFactions.Contains(GetOwningPlayer(whichUnit)) || !UnitAlive(whichUnit) ||
           LegendaryHeroManager.GetFromUnit(GetTriggerUnit()) != _targetLegend || _channel != null ||
           Progress != QuestProgress.Incomplete) return;
-      _channel = new Channel(whichUnit, _duration, _facing, Position);
+      _channel = new Channel(whichUnit, _duration, _facing, Position, _timerDialogTitle);
       _channel.Finished += OnChannelEnd;
     }
 

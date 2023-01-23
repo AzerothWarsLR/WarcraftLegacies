@@ -15,13 +15,13 @@ namespace MacroTools.PassiveAbilities
 
     public void OnDealsDamage()
     {
-      unit triggerUnit = GetTriggerUnit();
-      if (BlzGetEventIsAttack() && GetUnitState(triggerUnit, UNIT_STATE_LIFE) <
-        GetEventDamage() + GetEventDamageSource().GetAverageDamage(0) * DamageMult)
-      {
-        BlzSetEventDamage(GetUnitState(triggerUnit, UNIT_STATE_LIFE) + 1);
-        DestroyEffect(AddSpecialEffectTarget(Effect, triggerUnit, "origin"));
-      }
+      var triggerUnit = GetTriggerUnit();
+      if (!BlzGetEventIsAttack() 
+          || !(GetUnitState(triggerUnit, UNIT_STATE_LIFE) < GetEventDamage() + GetEventDamageSource().GetAverageDamage(0) * DamageMult))
+        return;
+      BlzSetEventDamage(GetUnitState(triggerUnit, UNIT_STATE_LIFE) + 1);
+      BlzSetEventDamageType(DAMAGE_TYPE_UNIVERSAL);
+      DestroyEffect(AddSpecialEffectTarget(Effect, triggerUnit, "origin"));
     }
   }
 }

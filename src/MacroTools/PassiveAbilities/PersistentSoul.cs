@@ -65,6 +65,7 @@ namespace MacroTools.PassiveAbilities
              && !IsUnitType(target, UNIT_TYPE_STRUCTURE) 
              && !IsUnitType(target, UNIT_TYPE_HERO) 
              && !IsUnitType(target, UNIT_TYPE_SUMMONED)
+             && !IsUnitType(target, UNIT_TYPE_FLYING)
              && caster != target;
     }
     

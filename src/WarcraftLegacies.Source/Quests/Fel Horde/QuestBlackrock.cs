@@ -39,7 +39,7 @@ namespace WarcraftLegacies.Source.Quests.Fel_Horde
 
     //Todo: bad flavour
     /// <inheritdoc />
-    protected override string CompletionPopup =>
+    protected override string RewardFlavour =>
       "Blackrock Citadel has been subjugated, and its military is now free to assist the Fel Horde.";
 
     /// <inheritdoc />
@@ -52,7 +52,7 @@ namespace WarcraftLegacies.Source.Quests.Fel_Horde
 
     /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction) => 
-      completingFaction.Player?.RescueGroup(_rescueUnits);
+      completingFaction.Player.RescueGroup(_rescueUnits);
 
     /// <inheritdoc />
     protected override void OnAdd(Faction whichFaction) => 

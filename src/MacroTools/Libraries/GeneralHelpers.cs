@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using WCSharp.Shared.Data;
@@ -128,14 +129,17 @@ namespace MacroTools.Libraries
       }
     }
 
-    public static void CreateUnits(player whichPlayer, int unitId, float x, float y, float face, int count)
+    /// <summary>
+    /// Creates several units of the same type at the same location.
+    /// </summary>
+    /// <returns>The units that were created.</returns>
+    public static IEnumerable<unit> CreateUnits(player whichPlayer, int unitId, float x, float y, float face, int count)
     {
       var i = 0;
       while (true)
       {
         if (i == count) break;
-
-        CreateUnit(whichPlayer, unitId, x, y, face);
+        yield return CreateUnit(whichPlayer, unitId, x, y, face);
         i += 1;
       }
     }

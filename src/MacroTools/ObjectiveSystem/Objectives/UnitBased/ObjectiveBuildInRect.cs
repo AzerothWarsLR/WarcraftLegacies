@@ -10,7 +10,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
   /// <summary>
   /// Completed when an eligible player completes construction on a building in the specified <see cref="Rectangle"/>.
   /// </summary>
-  public class ObjectiveBuildInRect : Objective
+  public sealed class ObjectiveBuildInRect : Objective
   {
     private readonly int _objectId;
     private readonly Rectangle _targetRect;

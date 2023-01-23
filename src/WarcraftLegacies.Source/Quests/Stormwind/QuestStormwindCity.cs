@@ -18,21 +18,26 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
   /// </summary>
   public sealed class QuestStormwindCity : QuestData
   {
-
-    private readonly List<unit> _rescueUnits = new();
+    private readonly List<unit> _rescueUnits;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestStormwindCity"/> class.
     /// </summary>
     /// <param name="rescueRect">Units in this area will be made invulnerable, then rescued when the quest is completed.</param>
     public QuestStormwindCity(Rectangle rescueRect) : base("Clear the Outskirts",
-      "The outskirts of Stormwind are infested by evil creatures. Kill their leaders and regain control of the Towns.",
+      "The outskirts of Stormwind are infested by rebels and foul creatures. Defeat them to regain control of your lands.",
       "ReplaceableTextures\\CommandButtons\\BTNStormwindCastle.blp")
     {
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N00V_DUSKWOOD_10GOLD_MIN)));
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N00Z_ELWYNN_FOREST_20GOLD_MIN)));
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N011_REDRIDGE_MOUNTAINS_10GOLD_MIN)));
-      AddObjective(new ObjectiveUpgrade(Constants.UNIT_H06N_CASTLE_STORMWIND_T3, Constants.UNIT_H06K_TOWN_HALL_STORMWIND_T1));
+      AddObjective(
+        new ObjectiveControlPoint(
+          ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N00V_DUSKWOOD_10GOLD_MIN)));
+      AddObjective(
+        new ObjectiveControlPoint(
+          ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N00Z_ELWYNN_FOREST_20GOLD_MIN)));
+      AddObjective(new ObjectiveControlPoint(
+        ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N011_REDRIDGE_MOUNTAINS_10GOLD_MIN)));
+      AddObjective(new ObjectiveUpgrade(Constants.UNIT_H06N_CASTLE_STORMWIND_T3,
+        Constants.UNIT_H06K_TOWN_HALL_STORMWIND_T1));
       AddObjective(new ObjectiveExpire(1020));
       AddObjective(new ObjectiveSelfExists());
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
@@ -42,12 +47,12 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
 
     //Todo: bad flavour
     /// <inheritdoc />
-    protected override string CompletionPopup =>
-      "Stormwind has been liberated, and its military is now free to assist the Alliance.";
+    protected override string RewardFlavour =>
+      "Stormwind has been liberated, and its grand army is now free to assist the Alliance.";
 
     /// <inheritdoc />
     protected override string RewardDescription =>
-      "Control of all units in Stormwind and enable Varian to be trained at the altar";
+      "Control of all units in Stormwind, unlocks Varian for training at the altar, unlocks the Summon Garrison spell";
 
     /// <inheritdoc />
     protected override void OnFail(Faction completingFaction)
@@ -58,10 +63,9 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
     /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)
     {
-      if (completingFaction.Player != null)
-        completingFaction.Player.RescueGroup(_rescueUnits);
+      completingFaction.Player?.RescueGroup(_rescueUnits);
 
-      if (GetLocalPlayer() == completingFaction.Player) 
+      if (GetLocalPlayer() == completingFaction.Player)
         PlayThematicMusic("war3mapImported\\StormwindTheme.mp3");
     }
   }

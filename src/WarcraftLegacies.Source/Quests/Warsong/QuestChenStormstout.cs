@@ -7,7 +7,7 @@ using static War3Api.Common;
 namespace WarcraftLegacies.Source.Quests.Warsong
 {
   /// <summary>
-  /// Chen Stormstout joins the Warsong when a Warsong unit approaches him.
+  /// Chen Stormstout becomes available for training at the Warsong Altar.
   /// </summary>
   public sealed class QuestChenStormstout : QuestData
   {
@@ -24,21 +24,26 @@ namespace WarcraftLegacies.Source.Quests.Warsong
       _chen = chen;
     }
 
-    protected override string CompletionPopup => "Chen Stormstout has joined the Warsong Clan.";
+    /// <inheritdoc/>
+    protected override string RewardFlavour => "Chen Stormstout is now available for training at your Altar.";
 
+    /// <inheritdoc/>
     protected override string RewardDescription => "The hero Chen Stormstout";
 
+    /// <inheritdoc/>
     protected override void OnFail(Faction completingFaction)
     {
       RemoveUnit(_chen);
     }
 
+    /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
     {
       RemoveUnit(_chen);
       SetPlayerTechResearched(completingFaction.Player, _chenResearch, 1);
     }
 
+    /// <inheritdoc/>
     protected override void OnAdd(Faction whichFaction)
     {
       whichFaction.ModObjectLimit(_chenResearch, Faction.UNLIMITED);

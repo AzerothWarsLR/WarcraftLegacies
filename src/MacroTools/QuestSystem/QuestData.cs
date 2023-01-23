@@ -26,7 +26,7 @@ namespace MacroTools.QuestSystem
     protected QuestData(string title, string desc, string icon)
     {
       Quest = CreateQuest();
-      Description = desc;
+      Flavour = desc;
       Title = title;
       QuestSetTitle(Quest, title);
       QuestSetIconPath(Quest, icon);
@@ -69,19 +69,19 @@ namespace MacroTools.QuestSystem
     ///   Displayed to the player when the quest is completed.
     ///   Describes flavour, not mechanics.
     /// </summary>
-    protected abstract string CompletionPopup { get; }
+    protected abstract string RewardFlavour { get; }
 
     /// <summary>
     ///   Displayed to the player when the quest is failed.
     ///   Describes flavour, not mechanics.
     /// </summary>
-    protected virtual string FailurePopup => string.Empty;
+    protected virtual string PenaltyFlavour => string.Empty;
 
     /// <summary>
     ///   Describes the background and flavour of this quest.
     ///   Describes flavour, not mechanics.
     /// </summary>
-    private string Description { get; }
+    private string Flavour { get; }
 
     /// <summary>
     ///   The research given to the faction when it completes its quest.
@@ -90,8 +90,9 @@ namespace MacroTools.QuestSystem
 
     private quest Quest { get; }
 
-    public bool ProgressLocked => _progress is QuestProgress.Complete or QuestProgress.Failed;
-
+    /// <summary>
+    /// Determines the current progression level of the <see cref="QuestData"/>.
+    /// </summary>
     public QuestProgress Progress
     {
       get => _progress;
@@ -114,8 +115,8 @@ namespace MacroTools.QuestSystem
     {
       QuestSetDescription(Quest,
         !string.IsNullOrEmpty(PenaltyDescription)
-          ? $"{Description}\n|cffffcc00On completion:|r {RewardDescription}\n|cffffcc00On failure:|r {PenaltyDescription}"
-          : $"{Description}\n|cffffcc00On completion:|r {RewardDescription}");
+          ? $"{Flavour}\n|cffffcc00On completion:|r {RewardDescription}\n|cffffcc00On failure:|r {PenaltyDescription}"
+          : $"{Flavour}\n|cffffcc00On completion:|r {RewardDescription}");
     }
 
     private void Complete(Faction whichFaction)
@@ -285,14 +286,14 @@ namespace MacroTools.QuestSystem
       foreach (var enumPlayer in WCSharp.Shared.Util.EnumeratePlayers())
         if (enumPlayer != whichPlayer)
           DisplayTextToPlayer(enumPlayer, 0, 0,
-            $"\n|cffffcc00MAJOR EVENT - {whichPlayer.GetFaction()?.PrefixCol}{Title}|r\n{CompletionPopup}\n");
+            $"\n|cffffcc00MAJOR EVENT - {whichPlayer.GetFaction()?.PrefixCol}{Title}|r\n{RewardFlavour}\n");
     }
 
     private void DisplayFailed(Faction faction)
     {
-      var display = !string.IsNullOrEmpty(FailurePopup)
-        ? $"\n|cffffcc00QUEST FAILED - {Title}|r\n{FailurePopup}\n"
-        : $"\n|cffffcc00QUEST FAILED - {Title}|r\n{Description}\n";
+      var display = !string.IsNullOrEmpty(PenaltyFlavour)
+        ? $"\n|cffffcc00QUEST FAILED - {Title}|r\n{PenaltyFlavour}\n"
+        : $"\n|cffffcc00QUEST FAILED - {Title}|r\n{Flavour}\n";
 
       foreach (var questItem in _objectives)
         if (questItem.ShowsInQuestLog)
@@ -311,7 +312,7 @@ namespace MacroTools.QuestSystem
 
     private void DisplayCompleted(Faction faction)
     {
-      var display = $"\n|cffffcc00QUEST COMPLETED - {Title}|r\n{CompletionPopup}\n";
+      var display = $"\n|cffffcc00QUEST COMPLETED - {Title}|r\n{RewardFlavour}\n";
       foreach (var questItem in _objectives)
         if (questItem.ShowsInQuestLog)
           display = $"{display} - |cff808080{questItem.Description} (Completed)|r\n";
@@ -327,7 +328,7 @@ namespace MacroTools.QuestSystem
     /// <param name="faction"></param>
     public void DisplayDiscovered(Faction faction)
     {
-      var display = $"\n|cffffcc00QUEST DISCOVERED - {Title}|r\n{Description}\n";
+      var display = $"\n|cffffcc00QUEST DISCOVERED - {Title}|r\n{Flavour}\n";
       foreach (var questItem in _objectives)
         if (questItem.ShowsInQuestLog)
         {

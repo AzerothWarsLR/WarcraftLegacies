@@ -31,15 +31,19 @@ namespace WarcraftLegacies.Source.Quests.Ironforge
       Required = true;
     }
 
-    protected override string CompletionPopup => "The Murlocs have been defeated, Thelsamar will join your cause.";
+    /// <inheritdoc/>
+    protected override string RewardFlavour => "The Murlocs have been defeated, Thelsamar will join your cause.";
 
+    /// <inheritdoc/>
     protected override string RewardDescription => "Control of all units in Thelsamar";
 
+    /// <inheritdoc/>
     protected override void OnFail(Faction completingFaction)
     {
       foreach (var unit in _rescueUnits) unit.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
+    /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
     {
       foreach (var unit in _rescueUnits) unit.Rescue(completingFaction.Player);

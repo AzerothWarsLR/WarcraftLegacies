@@ -5,11 +5,9 @@ using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
 using MacroTools.ObjectiveSystem.Objectives.FactionBased;
-using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
-using WarcraftLegacies.Source.Setup.Legends;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
@@ -39,16 +37,20 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
     }
 
     //Todo: bad flavour
-    protected override string CompletionPopup =>
+    /// <inheritdoc/>
+    protected override string RewardFlavour =>
       "Korghal has been defeated, Rexxar has joined the Frostwolf!";
 
+    /// <inheritdoc/>
     protected override string RewardDescription => "Control of all buildings in Stonemaul and Rexxar is now trainable at the Altar";
 
+    /// <inheritdoc/>
     protected override void OnFail(Faction completingFaction)
     {
       foreach (var unit in _rescueUnits) unit.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
+    /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
     {
       foreach (var unit in _rescueUnits) unit.Rescue(completingFaction.Player);

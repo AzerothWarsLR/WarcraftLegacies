@@ -1,6 +1,7 @@
 ﻿using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
+using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.QuestSystem;
@@ -20,17 +21,17 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestThunderEagle"/> class.
     /// </summary>
-    public QuestThunderEagle() : base("To the Skies!",
+    public QuestThunderEagle(Capital draktharonKeep) : base("To the Skies!",
       "The Thunder Eagles of the Storm Peaks live in fear of the Legion. Wipe out the Legion Nexus to bring these great birds out into the open.",
       "ReplaceableTextures\\CommandButtons\\BTNWarEagle.blp")
     {
-      AddObjective(new ObjectiveControlCapital(LegendNeutral.DraktharonKeep, false));
+      AddObjective(new ObjectiveControlCapital(draktharonKeep, false));
       AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N02S_STORM_PEAKS_15GOLD_MIN)));
     }
 
     //Todo: bad flavour
     /// <inheritdoc/>
-    protected override string CompletionPopup => "The Thunder Eagles are now in the safe hands of Lordaeron.";
+    protected override string RewardFlavour => "The Thunder Eagles are now in the safe hands of Lordaeron.";
 
     /// <inheritdoc/>
     protected override string RewardDescription => "Learn to train " + GetObjectName(ThunderEagleId) + "s";
@@ -40,7 +41,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
     {
       SetPlayerTechResearched(completingFaction.Player, ResearchId, 1);
       completingFaction.Player?.DisplayUnitTypeAcquired(ThunderEagleId,
-        "You can now train Thunder Eagles from upgraded Town Halls and from your capitals.");
+        "You can now train Thunder Eagles at the High Tower.");
     }
   }
 }

@@ -2,63 +2,69 @@
 using MacroTools.LegendSystem;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
+#pragma warning disable CS1591
 
 namespace WarcraftLegacies.Source.Setup.Legends
 {
-  public static class LegendIronforge
+  public sealed class LegendIronforge : IRegistersLegends
   {
-    public static LegendaryHero LegendDagran { get; private set; }
-    public static LegendaryHero LegendFalstad { get; private set; }
-    public static LegendaryHero LegendMagni { get; private set; }
-    public static Capital LegendGreatforge { get; private set; }
-    public static Capital LegendThelsamar { get; private set; }
-    public static Capital LegendMenethilHarbor { get; private set; }
+    public LegendaryHero Dagran { get; }
+    public LegendaryHero Falstad { get; }
+    public LegendaryHero Magni { get; }
+    public Capital GreatForge { get; }
+    public Capital Thelsamar { get; }
+    public Capital MenethilHarbor { get; }
 
-    public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
+    public LegendIronforge(PreplacedUnitSystem preplacedUnitSystem)
     {
-      LegendDagran = new LegendaryHero("Dagran Thaurissan")
+      Dagran = new LegendaryHero("Dagran Thaurissan")
       {
         UnitType = FourCC("H03G"),
         StartingXp = 1000
       };
-      LegendaryHeroManager.Register(LegendDagran);
 
-      LegendFalstad = new LegendaryHero("Falstad Wildhammer")
+      Falstad = new LegendaryHero("Falstad Wildhammer")
       {
         UnitType = FourCC("H028"),
         StartingXp = 1000
       };
-      LegendaryHeroManager.Register(LegendFalstad);
 
-      LegendMagni = new LegendaryHero("Magni Bronzebeard")
+      Magni = new LegendaryHero("Magni Bronzebeard")
       {
         UnitType = FourCC("H00S"),
         DeathMessage = "King Magni Bronzebeard has died.", //Todo: bad flavour
         StartingXp = 1000
       };
-      LegendMagni.AddUnitDependency(preplacedUnitSystem.GetUnit(FourCC("h001")));
-      LegendaryHeroManager.Register(LegendMagni);
+      Magni.AddUnitDependency(preplacedUnitSystem.GetUnit(FourCC("h001")));
 
-      LegendGreatforge = new Capital()
+      GreatForge = new Capital()
       {
         Unit = preplacedUnitSystem.GetUnit(FourCC("h001")),
         DeathMessage = "The Great Forge has been extinguished." //Todo: mediocre flavour
       };
-      CapitalManager.Register(LegendGreatforge);
-      LegendGreatforge.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_H07K_IMPROVED_CANNON_TOWER_IRONFORGE_TOWER, new Point(10509, -5976)));
-      LegendGreatforge.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_H07K_IMPROVED_CANNON_TOWER_IRONFORGE_TOWER, new Point(10710, -5974)));
+      GreatForge.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_H07K_IMPROVED_CANNON_TOWER_IRONFORGE_TOWER, new Point(10509, -5976)));
+      GreatForge.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_H07K_IMPROVED_CANNON_TOWER_IRONFORGE_TOWER, new Point(10710, -5974)));
 
-      LegendThelsamar = new Capital
+      Thelsamar = new Capital
       {
         Unit = preplacedUnitSystem.GetUnit(FourCC("h05H"))
       };
-      CapitalManager.Register(LegendThelsamar);
 
-      LegendMenethilHarbor = new Capital
+      MenethilHarbor = new Capital
       {
         Unit = preplacedUnitSystem.GetUnit(FourCC("h0AK"))
       };
-      CapitalManager.Register(LegendMenethilHarbor);
+    }
+
+    /// <inheritdoc />
+    public void RegisterLegends()
+    {
+      LegendaryHeroManager.Register(Dagran);
+      LegendaryHeroManager.Register(Falstad);
+      LegendaryHeroManager.Register(Magni);
+      CapitalManager.Register(GreatForge);
+      CapitalManager.Register(Thelsamar);
+      CapitalManager.Register(MenethilHarbor);
     }
   }
 }

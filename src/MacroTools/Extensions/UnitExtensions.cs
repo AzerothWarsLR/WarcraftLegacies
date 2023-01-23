@@ -309,19 +309,23 @@ namespace MacroTools.Extensions
     /// <summary>
     /// Moves the unit to a specified <see cref="Point"/>.
     /// </summary>
-    public static unit SetPosition(this unit unit, Point where)
+    public static unit SetPosition(this unit unit, Point where, bool considerPathability = false)
     {
-      SetUnitPosition(unit, where.X, where.Y);
+      if (!considerPathability)
+      {
+        SetUnitX(unit, where.X);
+        SetUnitY(unit, where.Y);
+      }
+      else
+        SetUnitPosition(unit, where.X, where.Y);
+
       return unit;
     }
 
     /// <summary>
     /// Returns the position of the unit.
     /// </summary>
-    public static Point GetPosition(this unit unit)
-    {
-      return new Point(GetUnitX(unit), GetUnitY(unit));
-    }
+    public static Point GetPosition(this unit unit) => new(GetUnitX(unit), GetUnitY(unit));
 
     /// <summary>
     /// Changess the unit's owner to the specified player.

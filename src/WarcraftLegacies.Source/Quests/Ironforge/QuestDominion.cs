@@ -37,16 +37,20 @@ namespace WarcraftLegacies.Source.Quests.Ironforge
       Required = true;
     }
 
-    protected override string CompletionPopup =>
+    /// <inheritdoc/>
+    protected override string RewardFlavour =>
       "The Dwarven Empire is re-united again, Ironforge is ready for war again.";
 
+    /// <inheritdoc/>
     protected override string RewardDescription => "Control of all units in Ironforge";
 
+    /// <inheritdoc/>
     protected override void OnFail(Faction completingFaction)
     {
       foreach (var unit in _rescueUnits) unit.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
+    /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
     {
       foreach (var unit in _rescueUnits) unit.Rescue(completingFaction.Player ?? Player(PLAYER_NEUTRAL_AGGRESSIVE));

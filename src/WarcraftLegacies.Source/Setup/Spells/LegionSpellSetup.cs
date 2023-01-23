@@ -1,5 +1,8 @@
-﻿using MacroTools.Spells;
+﻿using MacroTools;
+using MacroTools.Spells;
+using MacroTools.Spells.Slipstream;
 using MacroTools.SpellSystem;
+using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Setup.Spells
 {
@@ -28,6 +31,26 @@ namespace WarcraftLegacies.Source.Setup.Spells
       {
       };
       SpellSystem.Register(summonBurningLegion);
+
+      //Northrend
+      SpellSystem.Register(new SlipstreamSpellSpecificLocation(Constants.ABILITY_A0UB_OPEN_A_PORTAL_TO_NORTHREND_LEGION_NORTHREND)
+      {
+        PortalUnitTypeId = Constants.UNIT_N0D9_SLIPSTREAM_PORTAL_STORMWIND_KHADGAR,
+        OpeningDelay = 10,
+        ClosingDelay = 5,
+        TargetLocation = new Point(3578, 20707),
+        Color = new Color(55, 50, 250, 255)
+      });
+
+      //Alterac
+      SpellSystem.Register(new SlipstreamSpellSpecificLocation(Constants.ABILITY_A0UC_OPEN_A_PORTAL_TO_ALTERAC_LEGION_ALTERAC)
+      {
+        PortalUnitTypeId = Constants.UNIT_N0D9_SLIPSTREAM_PORTAL_STORMWIND_KHADGAR,
+        OpeningDelay = 10,
+        ClosingDelay = 5,
+        TargetLocation = new Point(11366, 5802),
+        Color = new Color(155, 250, 50, 255)
+      });
     }
   }
 }
