@@ -3,7 +3,7 @@ using static War3Api.Common;
 
 namespace MacroTools.ObjectiveSystem.Objectives.TimeBased
 {
-  public class ObjectiveTime : Objective
+  public sealed class ObjectiveTime : Objective
   {
     private readonly timer _timer;
 

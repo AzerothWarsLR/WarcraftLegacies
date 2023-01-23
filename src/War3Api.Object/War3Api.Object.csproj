@@ -1,21 +1,22 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
-  </PropertyGroup>
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
 
-  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
-    <WarningLevel>0</WarningLevel>
-  </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+        <WarningLevel>0</WarningLevel>
+    </PropertyGroup>
 
-  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
-    <WarningLevel>0</WarningLevel>
-  </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+        <WarningLevel>0</WarningLevel>
+    </PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="War3Net.Build" Version="5.5.7" />
-    <PackageReference Include="War3Net.Build.Core" Version="5.5.7" />
-    <PackageReference Include="War3Net.Common" Version="5.5.5" />
-  </ItemGroup>
+    <ItemGroup>
+        <PackageReference Include="War3Net.Build" Version="5.5.7"/>
+        <PackageReference Include="War3Net.Build.Core" Version="5.5.7"/>
+        <PackageReference Include="War3Net.Common" Version="5.5.5"/>
+    </ItemGroup>
 
 </Project>

@@ -1,5 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Linq;
 using static War3Api.Common;
 
 namespace MacroTools.LegendSystem
@@ -18,7 +20,12 @@ namespace MacroTools.LegendSystem
     public static void Register(LegendaryHero legendaryHero)
     {
       if (legendaryHero.Unit != null)
+      {
+        if (ByUnit.ContainsKey(legendaryHero.Unit))
+          throw new Exception($"Tried to register {nameof(LegendaryHero)} {legendaryHero.Name} but it is already registered.");;
         ByUnit.Add(legendaryHero.Unit, legendaryHero);
+      }
+        
       AllLegendaryHeroes.Add(legendaryHero);
       legendaryHero.UnitChanged += OnLegendUnitChanged;
     }
@@ -27,19 +34,13 @@ namespace MacroTools.LegendSystem
     /// Returns the <see cref="Legend"/> represented by the <see cref="Legend"/>.
     /// Returns null if there is no match.
     /// </summary>
-    public static LegendaryHero? GetFromUnit(unit whichUnit)
-    {
-      return ByUnit.ContainsKey(whichUnit) ? ByUnit[whichUnit] : null;
-    }
-    
+    public static LegendaryHero? GetFromUnit(unit whichUnit) => ByUnit.ContainsKey(whichUnit) ? ByUnit[whichUnit] : null;
+
     /// <summary>
     /// Returns all registered <see cref="Legend"/>s.
     /// </summary>
-    public static ReadOnlyCollection<LegendaryHero> GetAll()
-    {
-      return AllLegendaryHeroes.AsReadOnly();
-    }
-    
+    public static ReadOnlyCollection<LegendaryHero> GetAll() => AllLegendaryHeroes.AsReadOnly();
+
     private static void OnLegendUnitChanged(object? sender, LegendChangeUnitEventArgs args)
     {
       if (args.PreviousUnit != null) 

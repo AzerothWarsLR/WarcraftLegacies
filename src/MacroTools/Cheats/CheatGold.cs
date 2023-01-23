@@ -1,28 +1,31 @@
+﻿using MacroTools.CommandSystem;
 using static War3Api.Common;
 
 namespace MacroTools.Cheats
 {
-  public static class CheatGold
+  /// <summary>
+  /// Gives the player a specified amount of gold.
+  /// </summary>
+  public sealed class CheatGold : Command
   {
-    private const string Command = "-gold ";
 
-    private static void Actions()
+    /// <inheritdoc />
+    public override string CommandText => "gold";
+
+    /// <inheritdoc />
+    public override int ParameterCount => 1;
+
+    /// <inheritdoc />
+    public override CommandType Type => CommandType.Cheat;
+
+    /// <inheritdoc />
+    public override string Description => "Gives the player a specified amount of gold.";
+
+    /// <inheritdoc />
+    public override string Execute(player cheater, params string[] parameters)
     {
-      if (!TestMode.CheatCondition()) return;
-      string enteredString = GetEventPlayerChatString();
-      string parameter = null;
-      player p = GetTriggerPlayer();
-
-      parameter = SubString(enteredString, StringLength(Command), StringLength(enteredString));
-      SetPlayerState(p, PLAYER_STATE_RESOURCE_GOLD, S2I(parameter));
-      DisplayTextToPlayer(p, 0, 0, "|cffD27575CHEAT:|r Set to " + parameter + " gold.");
-    }
-
-    public static void Setup()
-    {
-      trigger trig = CreateTrigger();
-      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers()) TriggerRegisterPlayerChatEvent(trig, player, Command, false);
-      TriggerAddAction(trig, Actions);
+      SetPlayerState(cheater, PLAYER_STATE_RESOURCE_GOLD, S2I(parameters[0]));
+      return "Set to " + parameters[0] + " gold.";
     }
   }
 }

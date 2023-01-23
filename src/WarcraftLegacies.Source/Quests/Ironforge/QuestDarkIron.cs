@@ -1,10 +1,10 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
+using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.QuestSystem;
-using WarcraftLegacies.Source.Setup.Legends;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
@@ -21,12 +21,12 @@ namespace WarcraftLegacies.Source.Quests.Ironforge
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestDarkIron"/> class.
     /// </summary>
-    public QuestDarkIron(Rectangle shadowforgeCity) : base("Dark Iron Alliance",
+    public QuestDarkIron(Rectangle shadowforgeCity, Capital blackTemple, LegendaryHero magni) : base("Dark Iron Alliance",
       "The Dark Iron dwarves are renegades. Bring Magni to their capital to open negotiations for an alliance.",
       "ReplaceableTextures\\CommandButtons\\BTNRPGDarkIron.blp")
     {
-      AddObjective(new ObjectiveCapitalDead(LegendFelHorde.LegendBlacktemple));
-      AddObjective(new ObjectiveLegendInRect(LegendIronforge.LegendMagni, shadowforgeCity,
+      AddObjective(new ObjectiveCapitalDead(blackTemple));
+      AddObjective(new ObjectiveLegendInRect(magni, shadowforgeCity,
         "Shadowforge City"));
       AddObjective(new ObjectiveSelfExists());
       ResearchId = Constants.UPGRADE_R01A_QUEST_COMPLETED_DARK_IRON_ALLIANCE;
@@ -34,7 +34,7 @@ namespace WarcraftLegacies.Source.Quests.Ironforge
     }
 
     /// <inheritdoc />
-    protected override string CompletionPopup =>
+    protected override string RewardFlavour =>
       "The peace talk were succesful, The Dark Iron will join the Dwarven Empire.";
 
     /// <inheritdoc />
@@ -44,7 +44,7 @@ namespace WarcraftLegacies.Source.Quests.Ironforge
     /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)
     {
-      completingFaction.Player?.RescueGroup(_rescueUnits);
+      completingFaction.Player.RescueGroup(_rescueUnits);
     }
     
     /// <inheritdoc />

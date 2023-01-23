@@ -1,4 +1,5 @@
 ﻿using MacroTools;
+using MacroTools.CommandSystem;
 using MacroTools.ControlPointSystem;
 using MacroTools.Mechanics;
 using MacroTools.PassiveAbilitySystem;
@@ -6,7 +7,7 @@ using MacroTools.UserInterface;
 using WarcraftLegacies.Source.ArtifactBehaviour;
 using WarcraftLegacies.Source.GameLogic;
 using WarcraftLegacies.Source.GameLogic.GameEnd;
-using WarcraftLegacies.Source.Hints;
+using WarcraftLegacies.Source.Mechanics.Druids;
 using WarcraftLegacies.Source.Mechanics.Frostwolf;
 using WarcraftLegacies.Source.Mechanics.Neutral;
 using WarcraftLegacies.Source.Mechanics.Quelthalas;
@@ -46,7 +47,8 @@ namespace WarcraftLegacies.Source.Setup
       var preplacedUnitSystem = new PreplacedUnitSystem();
       SoundLibrary.Setup();
       var artifactSetup = new ArtifactSetup(preplacedUnitSystem);
-      AllLegendSetup.Setup(preplacedUnitSystem, artifactSetup);
+      var allLegendSetup = new AllLegendSetup(preplacedUnitSystem, artifactSetup);
+      allLegendSetup.RegisterLegends();
       ShoreSetup.Setup();
       ControlPointSetup.Setup();
       InstanceSetup.Setup(preplacedUnitSystem);
@@ -55,13 +57,14 @@ namespace WarcraftLegacies.Source.Setup
       SharedFactionConfigSetup.Setup();
       PlayerSetup.Setup();
       NeutralHostileSetup.Setup();
-      AllQuestSetup.Setup(preplacedUnitSystem, artifactSetup);
+      AllQuestSetup.Setup(preplacedUnitSystem, artifactSetup, allLegendSetup);
       ObserverSetup.Setup(new[] { Player(21) });
       SpellsSetup.Setup();
-      CheatSetup.Setup();
-      CommandSetup.Setup();
+      var commandManager = new CommandManager();
+      CheatSetup.Setup(commandManager);
+      CommandSetup.Setup(commandManager);
       ControlPointVictory.Setup();
-      SilvermoonDies.Setup();
+      SilvermoonDies.Setup(allLegendSetup.Quelthalas.Sunwell);
       GameTime.Setup();
       FactionMultiboard.Setup();
       BookSetup.Setup();
@@ -71,7 +74,7 @@ namespace WarcraftLegacies.Source.Setup
       BlightSetup.Setup(preplacedUnitSystem);
       QuestMenuSetup.Setup();
       CinematicMode.Start(59);
-      DialogueSetup.Setup(preplacedUnitSystem);
+      DialogueSetup.Setup(preplacedUnitSystem, allLegendSetup);
       DisplayIntroText.Setup(10);
       GameSettings.Setup();
       InfoQuests.Setup();
@@ -134,6 +137,8 @@ namespace WarcraftLegacies.Source.Setup
       PeonsStartHarvestingShips.Setup(preplacedUnitSystem);
       DarkPortalControlNexusSetup.Setup(preplacedUnitSystem);
       BlackPortalControlNexusSetup.Setup(preplacedUnitSystem);
+      CenariusGhost.Setup(allLegendSetup.Druids);
+      HelmOfDominationDropsWhenScourgeLeaves.Setup(artifactSetup.HelmOfDomination, allLegendSetup.Scourge.TheFrozenThrone);
     }
   }
 }

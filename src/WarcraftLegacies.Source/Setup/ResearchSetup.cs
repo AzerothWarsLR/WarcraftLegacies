@@ -22,7 +22,6 @@ namespace WarcraftLegacies.Source.Setup
     /// <param name="preplacedUnitSystem">A system that can find preplaced units.</param>
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
-      TitanForgeArtifact.Setup();
       DeeprunTram.Setup(preplacedUnitSystem);
       TierCodeOfChivalry.Setup();
       TierExpeditionSurvivors.Setup();
@@ -34,8 +33,8 @@ namespace WarcraftLegacies.Source.Setup
       ResearchManager.Register(new SunfuryWarrior(Constants.UPGRADE_R004_SUNFURY_TRAINING_QUEL_THALAS, 300, 300));
 
       ResearchManager.RegisterIncompatibleSet(
-        new BasicResearch(Constants.UPGRADE_R01X_EPIDEMIC_SCOURGE, 250, 200),
-        new Revenants(Constants.UPGRADE_R08T_REVENANTS_SCOURGE, 250, 200));
+        new BasicResearch(Constants.UPGRADE_R01X_EPIDEMIC_SCOURGE, 150, 100),
+        new Revenants(Constants.UPGRADE_R08T_REVENANTS_SCOURGE, 150, 100));
       
       PlayerUnitEvents.Register(ResearchEvent.IsFinished, () =>
       {

@@ -1,43 +1,37 @@
+﻿using MacroTools.CommandSystem;
 using MacroTools.Extensions;
 using static War3Api.Common;
 
 namespace MacroTools.Cheats
 {
-  public static class CheatHp
+  /// <summary>
+  /// Sets the hit points of all selected units to a specified amount.
+  /// </summary>
+  public sealed class CheatHp: Command
   {
-    private const string Command = "-hp ";
-    private static string? _parameter;
+ 
+    /// <inheritdoc />
+    public override string CommandText => "hp";
 
-    private static void SetHp(unit whichUnit)
+    /// <inheritdoc />
+    public override int ParameterCount => 1;
+
+    /// <inheritdoc />
+    public override CommandType Type => CommandType.Cheat;
+
+    /// <inheritdoc />
+    public override string Description => "Sets the hit points of all selected units to a specified amount";
+
+    /// <inheritdoc />
+    public override string Execute(player cheater, params string[] parameters)
     {
-      SetUnitState(whichUnit, UNIT_STATE_LIFE, S2R(_parameter));
-    }
-
-    private static void Actions()
-    {
-      if (!TestMode.CheatCondition()) return;
-
-      string enteredString = GetEventPlayerChatString();
-      player p = GetTriggerPlayer();
-      GetPlayerId(p);
-      _parameter = SubString(enteredString, StringLength(Command), StringLength(enteredString));
-
-      if (S2I(_parameter) >= 0)
+      if (S2I(parameters[0]) >= 0)
       {
-        foreach (var unit in CreateGroup().EnumSelectedUnits(p).EmptyToList())
-        {
-          SetHp(unit);
-        }
-        DisplayTextToPlayer(p, 0, 0, "|cffD27575CHEAT:|r Setting hitpoints of selected units to " + _parameter + ".");
+        foreach (var unit in CreateGroup().EnumSelectedUnits(cheater).EmptyToList())
+          SetUnitState(unit, UNIT_STATE_LIFE, S2R(parameters[0]));
+        return "Setting hitpoints of selected units to " + parameters[0] + ".";
       }
-    }
-
-    public static void Setup()
-    {
-      trigger trig = CreateTrigger();
-      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers()) TriggerRegisterPlayerChatEvent(trig, player, Command, false);
-
-      TriggerAddAction(trig, Actions);
+      return "Failed setting hitpoints of selected units to " + parameters[0] + "(input was not a number).";
     }
   }
 }

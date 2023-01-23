@@ -1,9 +1,8 @@
 ﻿using MacroTools.Extensions;
 using MacroTools.FactionSystem;
+using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
-using WarcraftLegacies.Source.Setup.Legends;
-
 
 namespace WarcraftLegacies.Source.Quests.Draenei
 {
@@ -12,18 +11,22 @@ namespace WarcraftLegacies.Source.Quests.Draenei
   /// </summary>
   public class QuestRepairGenerator : QuestData
   {
-    /// <summary>
-    /// 
-    /// </summary>
-    public QuestRepairGenerator() : base("Core of the Ship", "The broken core of the Exodar should be rebuilt, bringing us one step closer to making it usable again.", "ReplaceableTextures\\CommandButtons\\BTNArcaneEnergy.blp")
-    {
-      Required = true;
-      AddObjective(new ObjectiveUnitReachesFullHealth(LegendDraenei.LegendExodarGenerator.Unit));
+    private readonly Capital _exodarGenerator;
 
+    /// <summary>
+    /// Initializes a new instance of the <see cref="QuestRepairGenerator"/> class.
+    /// </summary>
+    public QuestRepairGenerator(Capital exodarGenerator) : base("Core of the Ship",
+      "The broken core of the Exodar should be rebuilt, bringing us one step closer to making it usable again.",
+      @"ReplaceableTextures\CommandButtons\BTNPowerGenerator.blp")
+    {
+      _exodarGenerator = exodarGenerator;
+      Required = true;
+      AddObjective(new ObjectiveUnitReachesFullHealth(exodarGenerator.Unit));
     }
 
     /// <inheritdoc/>
-    protected override string CompletionPopup =>
+    protected override string RewardFlavour =>
       "The Exodar's core has been rebuilt - the Crystal Protectors around it now shield it from any harm.";
 
     /// <inheritdoc/>
@@ -33,9 +36,8 @@ namespace WarcraftLegacies.Source.Quests.Draenei
     /// <inheritdoc/>
     protected override void OnComplete(Faction whichFaction)
     {
-      if (LegendDraenei.LegendExodarGenerator.ProtectorCount > 0)
-        LegendDraenei.LegendExodarGenerator.Unit?.SetInvulnerable(true);
-
+      if (_exodarGenerator.ProtectorCount > 0)
+        _exodarGenerator.Unit?.SetInvulnerable(true);
     }
   }
 }

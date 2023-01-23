@@ -2,7 +2,6 @@
 using MacroTools.ArtifactSystem;
 using MacroTools.FactionSystem;
 using MacroTools.Powers;
-using WarcraftLegacies.Source.Mechanics.Scourge;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
@@ -28,9 +27,9 @@ You begin in Northrend, a vast and isolated land, perfect to raise an army of un
 
 The local Nerubians have declared war on you, destroy their decrepit holdings and kill their Queen to secure the continent.
 
-Coordinate with the Burning Legion and make use of the Plague of Undeath to sweep Lordaeron away. 
+Coordinate with the Burning Legion and make use of the Plague of Undeath to sweep Lordaeron away.
 
-Naxxramas looms over Dragonblight, but requires a powerful necromancer to awaken it."
+When Plague hits Lordaeron, a great portal will be opened between Dragonblight and the Scholomance, The Black Gate!"
       };
 
       //Buildings
@@ -134,8 +133,6 @@ Naxxramas looms over Dragonblight, but requires a powerful necromancer to awaken
       Scourge.AddPower(visionPower);
       
       Scourge.AddGoldMine(preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-4939, 18803)));
-
-      HelmOfDominationDropsWhenScourgeLeaves.Setup(helmOfDomination);
 
       FactionManager.Register(Scourge);
     }

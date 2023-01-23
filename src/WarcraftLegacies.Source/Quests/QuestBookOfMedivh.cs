@@ -1,12 +1,12 @@
 ﻿using MacroTools.ArtifactSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
+using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem;
 using MacroTools.ObjectiveSystem.Objectives.ArtifactBased;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
-using WarcraftLegacies.Source.Setup.Legends;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests
@@ -24,11 +24,12 @@ namespace WarcraftLegacies.Source.Quests
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestBookOfMedivh"/> class.
     /// </summary>
+    /// <param name="dalaran">Must be destroyed for the quest to be completed.</param>
     /// <param name="bookOfMedivhPedestal">The pedestal which has the Book on it.</param>
     /// <param name="bookOfMedivh">Reward for completing the quest.</param>
     /// <param name="bypassLevelRequirement">If set to true, any hero of any level can complete the objective.</param>
     /// <param name="bypassDestructionRequirement">If true, Dalaran does not need to be destroyed to complete the quest.</param>
-    public QuestBookOfMedivh(unit bookOfMedivhPedestal, Artifact bookOfMedivh, bool bypassLevelRequirement = false, bool bypassDestructionRequirement = false) : base("Book of Medivh",
+    public QuestBookOfMedivh(Capital dalaran, unit bookOfMedivhPedestal, Artifact bookOfMedivh, bool bypassLevelRequirement = false, bool bypassDestructionRequirement = false) : base("Book of Medivh",
       "The last remaining spellbook written by Medivh, the Last Guardian, is held securely within the dungeons of Dalaran. The spells within its pages could bring us great power.",
       @"ReplaceableTextures\CommandButtons\BTNBookOfTheDead.blp")
     {
@@ -41,7 +42,7 @@ namespace WarcraftLegacies.Source.Quests
         AddObjective(objective);
       AddObjective(new ObjectiveNoOtherPlayerGetsArtifact(bookOfMedivh));
       if (!bypassDestructionRequirement)
-        AddObjective(new ObjectiveCapitalDead(LegendDalaran.LegendDalaranCapital));
+        AddObjective(new ObjectiveCapitalDead(dalaran));
       _bookOfMedivhPedestal = bookOfMedivhPedestal;
       Required = bypassLevelRequirement;
     }
@@ -52,12 +53,12 @@ namespace WarcraftLegacies.Source.Quests
       : "The Book of Medivh";
 
     /// <inheritdoc/>
-    protected override string CompletionPopup => _bypassLevelRequirement
+    protected override string RewardFlavour => _bypassLevelRequirement
       ? $"{_objectiveWithCompletingUnit.CompletingUnitName} has retrieved the Book of Medivh from its pedestal. With its power, we can summon the full might of the Burning Legion from the depths of the Twisting Nether."
       : $"{_objectiveWithCompletingUnit.CompletingUnitName} has retrieved the Book of Medivh from its pedestal, and now prepares to harness its untold power.";
 
     /// <inheritdoc/>
-    protected override string FailurePopup => 
+    protected override string PenaltyFlavour => 
       "Another faction has retrieved the Book of Medivh from its pedestal. Hopefully they do not turn its nefarious power against us.";
 
     /// <inheritdoc/>

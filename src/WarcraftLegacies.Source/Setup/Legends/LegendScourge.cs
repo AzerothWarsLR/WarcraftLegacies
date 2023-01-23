@@ -5,54 +5,27 @@ using WarcraftLegacies.Source.Setup.FactionSetup;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 using static War3Api.Blizzard;
+#pragma warning disable CS1591
 
 namespace WarcraftLegacies.Source.Setup.Legends
 {
   /// <summary>
   /// Responsible for setting up and managing all <see cref="ScourgeSetup.Scourge"/> <see cref="Legend"/>s.
   /// </summary>
-  public static class LegendScourge
+  public sealed class LegendScourge : IRegistersLegends
   {
-    /// <summary>
-    /// Leader of the Cult of the Damned.
-    /// </summary>
-    public static LegendaryHero? Kelthuzad { get; private set; }
-    
-    /// <summary>
-    /// Fallen king of the Nerubians.
-    /// </summary>
-    public static LegendaryHero? Anubarak { get; private set; }
-    
-    /// <summary>
-    /// Ruler of Stratholme after it's taken over by the Scourge.
-    /// </summary>
-    public static LegendaryHero? Rivendare { get; private set; }
-    
-    /// <summary>
-    /// The first human Death Knight, and Ner'zhul's champion.
-    /// </summary>
-    public static LegendaryHero? Arthas { get; private set; }
-    
-    /// <summary>
-    /// Psychic ruler of the Scourge.
-    /// </summary>
-    public static Capital? LegendLichking { get; private set; }
-    
-    /// <summary>
-    /// A Vrykul stronghold.
-    /// </summary>
-    public static Capital? LegendUtgarde { get; private set; }
-    
-    /// <summary>
-    /// Mobile Scourge Necropolis.
-    /// </summary>
-    public static Capital? Naxxramas { get; private set; }
+    public LegendaryHero Kelthuzad { get; }
+    public LegendaryHero Anubarak { get; }
+    public LegendaryHero Rivendare { get; }
+    public LegendaryHero Arthas { get; }
+    public Capital TheFrozenThrone { get; }
+    public Capital Utgarde { get; }
 
     /// <summary>
     /// Sets up <see cref="LegendScourge"/>.
     /// </summary>
     /// <param name="preplacedUnitSystem">A system for finding preplaced units on the map.</param>
-    public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
+    public LegendScourge(PreplacedUnitSystem preplacedUnitSystem)
     {
       Kelthuzad = new LegendaryHero("Kel'thuzad")
       {
@@ -61,62 +34,59 @@ namespace WarcraftLegacies.Source.Setup.Legends
         DeathSfx = "Abilities\\Spells\\Undead\\DeathCoil\\DeathCoilSpecialArt.mdl",
         StartingXp = 1000
       };
-      LegendaryHeroManager.Register(Kelthuzad);
 
       Anubarak = new LegendaryHero("Anub'arak")
       {
         UnitType = FourCC("Uanb")
       };
-      LegendaryHeroManager.Register(Anubarak);
 
       Rivendare = new LegendaryHero("Baron Rivendare")
       {
         UnitType = FourCC("U00A"),
         StartingXp = 1000
       };
-      LegendaryHeroManager.Register(Rivendare);
 
       Arthas = new LegendaryHero("Arthas Menethil")
       {
         UnitType = Constants.UNIT_UEAR_CHAMPION_OF_THE_SCOURGE_SCOURGE,
         StartingXp = 7000
       };
-      LegendaryHeroManager.Register(Arthas);
-      
-      LegendUtgarde = new Capital
+
+      Utgarde = new Capital
       {
         Unit = preplacedUnitSystem.GetUnit(FourCC("h00O")),
         Capturable = true
       };
-      CapitalManager.Register(LegendUtgarde);
 
-      LegendLichking = new Capital
+      TheFrozenThrone = new Capital
       {
         Unit = preplacedUnitSystem.GetUnit(FourCC("u000")),
         Hivemind = true,
         DeathMessage =
           "The great Lich King has been destroyed. With no central mind to command them, the forces of the Undead have gone rogue."
       };
-      CapitalManager.Register(LegendLichking);
-      LegendLichking.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_N094_ICECROWN_OBELISK_RED, new Point(-3655, 20220)));
-      LegendLichking.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_N094_ICECROWN_OBELISK_RED, new Point(-3015, 20762)));
-      LegendLichking.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_N094_ICECROWN_OBELISK_RED, new Point(-3643, 22588)));
-      LegendLichking.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_N094_ICECROWN_OBELISK_RED, new Point(-3638, 23374)));
+      TheFrozenThrone.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_N094_ICECROWN_OBELISK_RED, new Point(-3655, 20220)));
+      TheFrozenThrone.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_N094_ICECROWN_OBELISK_RED, new Point(-3015, 20762)));
+      TheFrozenThrone.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_N094_ICECROWN_OBELISK_RED, new Point(-3643, 22588)));
+      TheFrozenThrone.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_N094_ICECROWN_OBELISK_RED, new Point(-3638, 23374)));
       CreateTrigger()
-        .RegisterUnitEvent(LegendLichking.Unit, EVENT_UNIT_CHANGE_OWNER)
+        .RegisterUnitEvent(TheFrozenThrone.Unit, EVENT_UNIT_CHANGE_OWNER)
         .AddAction(() =>
       {
-        if (LegendLichking.Unit.OwningPlayer() != Player(bj_PLAYER_NEUTRAL_VICTIM))
-          LegendLichking.Unit.SetOwner(Player(bj_PLAYER_NEUTRAL_VICTIM));
+        if (TheFrozenThrone.Unit.OwningPlayer() != Player(bj_PLAYER_NEUTRAL_VICTIM))
+          TheFrozenThrone.Unit.SetOwner(Player(bj_PLAYER_NEUTRAL_VICTIM));
       });
+    }
 
-      Naxxramas = new Capital
-      {
-        Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_U01X_HEART_OF_NAXXRAMAS_SCOURGE_NAXXRAMAS_INTERIOR)
-      };
-      CapitalManager.Register(Naxxramas);
-      SetUnitInvulnerable(Naxxramas.Unit, true);
-      SetUnitTimeScale(Naxxramas.Unit, 0);
+    /// <inheritdoc />
+    public void RegisterLegends()
+    {
+      LegendaryHeroManager.Register(Kelthuzad);
+      LegendaryHeroManager.Register(Anubarak);
+      LegendaryHeroManager.Register(Rivendare);
+      LegendaryHeroManager.Register(Arthas);
+      CapitalManager.Register(TheFrozenThrone);
+      CapitalManager.Register(Utgarde);
     }
   }
 }

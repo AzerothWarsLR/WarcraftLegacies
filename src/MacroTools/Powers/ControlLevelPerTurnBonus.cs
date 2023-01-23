@@ -1,5 +1,4 @@
-﻿using System;
-using MacroTools.Extensions;
+﻿using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using static War3Api.Common;
 
@@ -10,19 +9,17 @@ namespace MacroTools.Powers
   /// </summary>
   public sealed class ControlLevelPerTurnBonus : Power
   {
-    private readonly int _bonus;
+    private readonly float _bonus;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="ControlLevelPerTurnBonus"/> class.
     /// </summary>
-    public ControlLevelPerTurnBonus(int bonus)
+    public ControlLevelPerTurnBonus(float bonus)
     {
-      if (bonus < 1)
-        throw new ArgumentOutOfRangeException(nameof(bonus), $"{nameof(bonus)} must be at least 1.");
       _bonus = bonus;
-      Description = bonus > 1
-        ? $"Your Control Points gain {bonus} additional Control Levels each turn."
-        : "Your Control Points gain an additional Control Level each turn.";
+      Description = bonus == 1
+        ? "Your Control Points gain an additional level each turn."
+        : $"Your Control Points gain {bonus} additional levels each turn.";
     }
     
     /// <inheritdoc />

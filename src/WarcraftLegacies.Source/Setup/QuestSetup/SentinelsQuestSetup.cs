@@ -8,22 +8,21 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
 {
   public static class SentinelsQuestSetup
   {
-    public static void Setup(ArtifactSetup artifactSetup)
+    public static void Setup(ArtifactSetup artifactSetup, AllLegendSetup allLegendSetup)
     {
       var sentinels = SentinelsSetup.Sentinels;
 
       sentinels.StartingQuest = sentinels.AddQuest(new QuestAstranaar(new List<Rectangle>
         {
           Regions.AstranaarUnlock, Regions.TeldrassilUnlock1, Regions.TeldrassilUnlock2
-        }
+        }, allLegendSetup.Sentinels.Tyrande
       ));
-      sentinels.AddQuest(new QuestFeathermoon(Regions.FeathermoonUnlock));
-      sentinels.AddQuest(new QuestSentinelsKillWarsong());
-      sentinels.AddQuest(new QuestSentinelsKillFrostwolf());
-      sentinels.AddQuest(new QuestScepterOfTheQueenSentinels(Regions.TheAthenaeum, artifactSetup.ScepterOfTheQueen));
-      sentinels.AddQuest(new QuestVaultoftheWardens());
-      sentinels.AddQuest(new QuestBlackrookHold());
-      sentinels.AddQuest(new QuestMaievOutland(Regions.MaievStartUnlock));
+      sentinels.AddQuest(new QuestFeathermoon(Regions.FeathermoonUnlock, allLegendSetup.Sentinels.Tyrande));
+      sentinels.AddQuest(new QuestSentinelsKillWarsong(allLegendSetup.Warsong.Orgrimmar));
+      sentinels.AddQuest(new QuestSentinelsKillFrostwolf(allLegendSetup.Frostwolf.ThunderBluff));
+      sentinels.AddQuest(new QuestScepterOfTheQueenSentinels(Regions.TheAthenaeum, artifactSetup.ScepterOfTheQueen, allLegendSetup.Warsong.StonemaulKeep));
+      sentinels.AddQuest(new QuestVaultoftheWardens(allLegendSetup.Sentinels.Maiev, allLegendSetup.Sentinels.VaultOfTheWardens));
+      sentinels.AddQuest(new QuestMaievOutland(Regions.MaievStartUnlock, allLegendSetup.Sentinels.Maiev, allLegendSetup.Sentinels.VaultOfTheWardens));
     }
   }
 }

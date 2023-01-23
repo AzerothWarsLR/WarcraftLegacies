@@ -4,7 +4,7 @@ using static War3Api.Common;
 
 namespace MacroTools.Buffs
 {
-  public class AscendancyBuff : PassiveBuff
+  public sealed class AscendancyBuff : PassiveBuff
   {
     public IEnumerable<int>? AbilitiesToRemove { get; init; }
     

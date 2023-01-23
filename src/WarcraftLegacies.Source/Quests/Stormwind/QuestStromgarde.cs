@@ -11,16 +11,15 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
 {
   public sealed class QuestStromgarde : QuestData
   {
-    private static readonly int HeroId = FourCC("H00Z");
-    private readonly ObjectiveAnyUnitInRect _objectiveAnyUnitInRect;
+    private const int HeroId = Constants.UNIT_H00Z_CROWN_PRINCE_OF_STROMGARDE_STORMWIND;
     private readonly List<unit> _rescueUnits = new();
 
     public QuestStromgarde(Rectangle rescueRect) : base("Stromgarde",
       "Although Stromgarde's strength has dwindled since the days of the Arathorian Empire, it remains a significant bastion of humanity. They could be convinced to mobilize their forces for Stormwind.",
       "ReplaceableTextures\\CommandButtons\\BTNTheCaptain.blp")
     {
-      _objectiveAnyUnitInRect = new ObjectiveAnyUnitInRect(Regions.Stromgarde, "Stromgarde", true);
-      AddObjective(_objectiveAnyUnitInRect);
+      var objectiveAnyUnitInRect = new ObjectiveAnyUnitInRect(Regions.Stromgarde, "Stromgarde", true);
+      AddObjective(objectiveAnyUnitInRect);
       AddObjective(new ObjectiveSelfExists());
       ResearchId = Constants.UPGRADE_R01M_QUEST_COMPLETED_STROMGARDE_STORMWIND;
       foreach (var unit in CreateGroup().EnumUnitsInRect(rescueRect).EmptyToList())
@@ -32,7 +31,7 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
     }
 
     /// <inheritdoc />
-    protected override string CompletionPopup => "Galen Trollbane has pledged his forces to Stormwind's cause.";
+    protected override string RewardFlavour => "Galen Trollbane has pledged his forces to Stormwind's cause.";
 
     /// <inheritdoc />
     protected override string RewardDescription =>

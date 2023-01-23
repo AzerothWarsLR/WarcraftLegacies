@@ -19,15 +19,18 @@ namespace MacroTools.Cheats
     public override CommandType Type => CommandType.Cheat;
     
     /// <inheritdoc />
+    public override string Description => $"Destroys the specified {nameof(Artifact)}.";
+    
+    /// <inheritdoc />
     public override string Execute(player cheater, params string[] parameters)
     {
       var artifact = ArtifactManager.GetFromName(parameters[0]);
       if (artifact == null)
-      {
         return $"You must specify the name of a registered {nameof(Artifact)} as the first parameter.";
-      }
+      
+      var artifactName = GetItemName(artifact.Item);
       ArtifactManager.Destroy(artifact);
-      return $"Destroying {GetItemName(artifact.Item)}";
+      return $"Destroyed {artifactName}";
     }
   }
 }

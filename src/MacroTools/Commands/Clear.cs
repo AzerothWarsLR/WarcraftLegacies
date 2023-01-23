@@ -16,7 +16,10 @@ namespace MacroTools.Commands
 
     /// <inheritdoc />
     public override CommandType Type => CommandType.Normal;
-    
+
+    /// <inheritdoc />
+    public override string Description => "Clears all text from your screen.";
+
     /// <inheritdoc />
     public override string Execute(player commandUser, params string[] parameters)
     {

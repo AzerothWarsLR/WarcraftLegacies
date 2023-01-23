@@ -1,12 +1,21 @@
 using System.Collections.Generic;
+using MacroTools.CommandSystem;
 using WCSharp.Events;
 using static War3Api.Common;
 
 namespace MacroTools.Cheats
 {
-  public static class CheatTele
+  public sealed class CheatTele : Command
   {
-    private const string Command = "-tele ";
+    /// <inheritdoc />
+    public override string CommandText => "tele";
+    
+    /// <inheritdoc />
+    public override int ParameterCount => 1;
+    
+    /// <inheritdoc />
+    public override CommandType Type => CommandType.Cheat;
+    
     private static readonly Dictionary<player, bool> TeleToggle = new();
 
     private static void Patrol()
@@ -18,32 +27,29 @@ namespace MacroTools.Cheats
       }
     }
 
-    private static void Actions()
+    /// <inheritdoc />
+    public override string Description => "When activated, causes your units to teleport whenever you order them to patrol.";
+    
+    /// <inheritdoc />
+    public override string Execute(player cheater, params string[] parameters)
     {
-      if (!TestMode.CheatCondition()) return;
+      var toggle = parameters[0];
 
-      string enteredString = GetEventPlayerChatString();
-      player p = GetTriggerPlayer();
-      string parameter = SubString(enteredString, StringLength(Command), StringLength(enteredString));
-
-      if (parameter == "on")
+      switch (toggle)
       {
-        TeleToggle[p] = true;
-        DisplayTextToPlayer(p, 0, 0, "|cffD27575CHEAT:|r Teleport activated. Use patrol to move instantly.");
-      }
-      else if (parameter == "off")
-      {
-        TeleToggle[p] = false;
-        DisplayTextToPlayer(p, 0, 0, "|cffD27575CHEAT:|r Teleport deactivated. Patrol works normally.");
+        case "on":
+          TeleToggle[cheater] = true;
+          return "Teleport activated. Use patrol to move instantly.";
+        case "off":
+          TeleToggle[cheater] = false;
+          return "Teleport deactivated. Patrol works normally.";
+        default:
+          return "You must specify \"on\" or \"off\" as the first parameter.";
       }
     }
 
-    public static void Setup()
-    {
-      trigger trig = CreateTrigger();
-      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers()) TriggerRegisterPlayerChatEvent(trig, player, Command, false);
-      TriggerAddAction(trig, Actions);
+    /// <inheritdoc />
+    public override void OnRegister() => 
       PlayerUnitEvents.Register(UnitTypeEvent.ReceivesPointOrder, Patrol);
-    }
   }
 }

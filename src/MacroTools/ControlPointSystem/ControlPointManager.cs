@@ -72,7 +72,7 @@ namespace MacroTools.ControlPointSystem
           try
           {
             var controlPoint = _byUnit[GetTriggerUnit()];
-            controlPoint.ControlLevel++;
+            controlPoint.ControlLevel += 1;
             AddSpecialEffect(@"Abilities\Spells\Items\AIlm\AIlmTarget.mdl", GetUnitX(controlPoint.Unit),
                 GetUnitY(controlPoint.Unit))
               .SetScale(1.5f)
@@ -209,7 +209,7 @@ namespace MacroTools.ControlPointSystem
           CreateOrUpdateDefender(controlPoint);
           ConfigureControlPointStats(controlPoint);
           controlPoint.Unit.SetScale(1.2f);
-          if (controlPoint.ControlLevel == ControlLevelSettings.ControlLevelMaximum)
+          if ((int)controlPoint.ControlLevel == ControlLevelSettings.ControlLevelMaximum)
             controlPoint.Unit.RemoveAbility(IncreaseControlLevelAbilityTypeId);
         }
         else
@@ -239,28 +239,32 @@ namespace MacroTools.ControlPointSystem
 
     private void ConfigureControlPointStats(ControlPoint controlPoint)
     {
-      var maxHitPoints = MaxHitpoints + controlPoint.ControlLevel * ControlLevelSettings.HitPointsPerControlLevel;
+      var flooredLevel = (int)controlPoint.ControlLevel;
+      
+      var maxHitPoints = MaxHitpoints + flooredLevel * ControlLevelSettings.HitPointsPerControlLevel;
       var lifePercent = Math.Max(controlPoint.Unit.GetLifePercent(), 1);
       controlPoint.Unit
         .SetMaximumHitpoints(maxHitPoints)
         .SetLifePercent(lifePercent)
         .SetArmor(ControlLevelSettings.ArmorPerControlLevel * ControlLevelSettings.ArmorPerControlLevel)
-        .SetUnitLevel(controlPoint.ControlLevel)
-        .SetArmor(ControlLevelSettings.ArmorPerControlLevel * controlPoint.ControlLevel)
+        .SetUnitLevel(flooredLevel)
+        .SetArmor(ControlLevelSettings.ArmorPerControlLevel * flooredLevel)
         .ShowAttackUi(false);
-      ConfigureControlPointOrDefenderAttack(controlPoint.Unit, controlPoint.ControlLevel);
+      ConfigureControlPointOrDefenderAttack(controlPoint.Unit, flooredLevel);
     }
 
     private void CreateOrUpdateDefender(ControlPoint controlPoint)
     {
+      var flooredLevel = (int)controlPoint.ControlLevel;
+      
       var defenderUnitTypeId = controlPoint.Owner.GetFaction()?.ControlPointDefenderUnitTypeId ??
                                ControlLevelSettings.DefaultDefenderUnitTypeId;
       controlPoint.Defender ??= CreateUnit(controlPoint.Owner, defenderUnitTypeId, GetUnitX(controlPoint.Unit), GetUnitY(controlPoint.Unit), 270);
       controlPoint.Defender
         .AddAbility(FourCC("Aloc"))
         .SetInvulnerable(true);
-      ConfigureControlPointOrDefenderAttack(controlPoint.Defender, controlPoint.ControlLevel);
-      ConfigureControlPointOrDefenderAttack(controlPoint.Unit, controlPoint.ControlLevel);
+      ConfigureControlPointOrDefenderAttack(controlPoint.Defender, flooredLevel);
+      ConfigureControlPointOrDefenderAttack(controlPoint.Unit, flooredLevel);
     }
 
     private void RemoveDefender(ControlPoint controlPoint)

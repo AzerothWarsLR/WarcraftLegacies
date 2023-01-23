@@ -1,32 +1,36 @@
-﻿using MacroTools.Extensions;
-using MacroTools.FactionSystem;
+﻿using MacroTools.FactionSystem;
+using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.QuestSystem;
-using WarcraftLegacies.Source.Setup;
-using WarcraftLegacies.Source.Setup.Legends;
 using static War3Api.Common; 
 
 namespace WarcraftLegacies.Source.Quests.Dalaran
 {
   public sealed class QuestTheNexus : QuestData
   {
-    public QuestTheNexus() : base("The Nexus",
+    private readonly LegendaryHero _jaina;
+
+    public QuestTheNexus(LegendaryHero jaina, Capital lichKing, Capital theNexus) : base("The Nexus",
       "The Nexus is a tower of powerful arcane energy, Jaina could absord it to gain it's power",
       "ReplaceableTextures\\CommandButtons\\BTNBlueDragonNexus.blp")
     {
-      AddObjective(new ObjectiveChannelRect(Regions.JainaChannel, "The Nexus", LegendDalaran.LegendJaina, 60, 270));
-      AddObjective(new ObjectiveControlLegend(LegendDalaran.LegendJaina, true));
-      AddObjective(new ObjectiveCapitalDead(LegendScourge.LegendLichking));
-      AddObjective(new ObjectiveControlCapital(LegendNeutral.TheNexus, false));
+      _jaina = jaina;
+      AddObjective(new ObjectiveChannelRect(Regions.JainaChannel, "The Nexus", jaina, 60, 270, Title));
+      AddObjective(new ObjectiveControlLegend(jaina, true));
+      AddObjective(new ObjectiveCapitalDead(lichKing));
+      AddObjective(new ObjectiveControlCapital(theNexus, false));
       Global = true;
     }
 
-    protected override string CompletionPopup =>
+    /// <inheritdoc/>
+    protected override string RewardFlavour =>
       "The Nexus powers have been absorbed by Jaina";
 
+    /// <inheritdoc/>
     protected override string RewardDescription =>
       "You become the Nexus faction. You gain multiple new Dragonkin units.";
     
+    /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
     {
       completingFaction.ModObjectLimit(FourCC("h069"), -Faction.UNLIMITED); //Military Quarters
@@ -52,9 +56,8 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
       completingFaction.ModObjectLimit(FourCC("h09A"), Faction.UNLIMITED); //Nexus
       completingFaction.ModObjectLimit(FourCC("h09B"), Faction.UNLIMITED); //Roost
 
-      LegendDalaran.LegendJaina.UnitType = FourCC("H04A");
-
-      UnitRemoveAbility(LegendDalaran.LegendJaina.Unit, FourCC("A0RB"));
+      _jaina.UnitType = Constants.UNIT_H04A_LORD_OF_THE_NEXUS_NEXUS;
+      
       completingFaction.Name = "The Nexus";
       completingFaction.Icon = "ReplaceableTextures\\CommandButtons\\BTNJaina_Archmage.blp";
       SetPlayerState(completingFaction.Player, PLAYER_STATE_FOOD_CAP_CEILING, 250);

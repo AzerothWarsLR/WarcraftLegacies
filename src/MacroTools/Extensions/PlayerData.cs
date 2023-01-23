@@ -24,7 +24,7 @@ namespace MacroTools.Extensions
     /// <summary>
     /// Fired when the player changes their <see cref="Faction"/>.
     /// </summary>
-    public event EventHandler<PlayerFactionChangeEventArgs> ChangedFaction;
+    public event EventHandler<PlayerFactionChangeEventArgs>? ChangedFaction;
     
     private static readonly Dictionary<int, PlayerData> ById = new();
     private readonly Dictionary<int, int> _objectLevels = new();
@@ -163,7 +163,7 @@ namespace MacroTools.Extensions
     /// <summary>
     /// The number of extra <see cref="ControlPoint.ControlLevel"/>s the player gets each turn.
     /// </summary>
-    public int ControlLevelPerTurnBonus { get; set; }
+    public float ControlLevelPerTurnBonus { get; set; }
 
     /// <summary>
     /// Fired when the player's income changes.

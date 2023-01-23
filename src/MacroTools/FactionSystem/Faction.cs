@@ -444,7 +444,7 @@ namespace MacroTools.FactionSystem
         _objectLimits.Add(objectId, limit);
 
       //If a player has this Faction, adjust their techtree as well
-      Player?.ModObjectLimit(objectId, limit, isResearch);
+      Player?.ModObjectLimit(objectId, limit);
 
       if (_objectLimits[objectId] == 0)
         _objectLimits.Remove(objectId);
@@ -464,7 +464,7 @@ namespace MacroTools.FactionSystem
         _objectLimits.Add(objectId, limit);
 
       //If a player has this Faction, adjust their techtree as well
-      Player?.SetObjectLimit(objectId, limit, isResearch);
+      Player?.SetObjectLimit(objectId, limit);
 
       if (_objectLimits[objectId] == 0)
         _objectLimits.Remove(objectId);
@@ -542,7 +542,7 @@ namespace MacroTools.FactionSystem
     private void ApplyObjects()
     {
       foreach (var (key, value) in _objectLimits)
-        Player?.ModObjectLimit(key, value, false);
+        Player?.ModObjectLimit(key, value);
 
       foreach (var (key, value) in _objectLevels)
         Player?.SetObjectLevel(key, value);
@@ -555,7 +555,7 @@ namespace MacroTools.FactionSystem
     private void UnapplyObjects()
     {
       foreach (var (key, value) in _objectLimits)
-        Player?.ModObjectLimit(key, -value, false);
+        Player?.ModObjectLimit(key, -value);
 
       foreach (var (key, _) in _objectLevels)
         Player?.SetObjectLevel(key, 0);

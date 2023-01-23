@@ -4,8 +4,8 @@ using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.QuestBased;
 using WarcraftLegacies.Source.Quests.Warsong;
+using WarcraftLegacies.Source.Setup;
 using WarcraftLegacies.Source.Setup.FactionSetup;
-using WarcraftLegacies.Source.Setup.Legends;
 
 namespace WarcraftLegacies.Source.Dialogue
 {
@@ -17,7 +17,7 @@ namespace WarcraftLegacies.Source.Dialogue
     /// <summary>
     /// Sets up <see cref="FrostwolfDialogueSetup"/>.
     /// </summary>
-    public static void Setup()
+    public static void Setup(AllLegendSetup legendSetup)
     {
       TriggeredDialogueManager.Add(
         new TriggeredDialogue(new MacroTools.DialogueSystem.Dialogue(
@@ -49,7 +49,7 @@ namespace WarcraftLegacies.Source.Dialogue
             FrostwolfSetup.Frostwolf
           }, new[]
           {
-            new ObjectiveControlLegend(LegendFrostwolf.LegendRexxar, false)
+            new ObjectiveControlLegend(legendSetup.Frostwolf.Rexxar, false)
             {
               EligibleFactions = new List<Faction>{FrostwolfSetup.Frostwolf}
             }
@@ -69,7 +69,7 @@ namespace WarcraftLegacies.Source.Dialogue
             FrostwolfSetup.Frostwolf
           }, new[]
           {
-            new ObjectiveLegendMeetsLegend(LegendFrostwolf.LegendThrall, LegendFrostwolf.LegendRexxar)
+            new ObjectiveLegendMeetsLegend(legendSetup.Frostwolf.Thrall, legendSetup.Frostwolf.Rexxar)
           }));
     }
   }

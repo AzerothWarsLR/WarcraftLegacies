@@ -27,6 +27,16 @@ namespace WarcraftLegacies.Source.Setup
         SetTextTagPos(westToEast, Regions.West_of_Kalimdor.Center.X, Regions.West_of_Kalimdor.Center.Y, 0);
         SetTextTagColor(westToEast, 255, 255, 255, 0);
 
+        var LegionNorth = CreateTextTag();
+        SetTextTagText(LegionNorth, "To Northrend", fontSize);
+        SetTextTagPos(LegionNorth, 22939, -29345, 0);
+        SetTextTagColor(LegionNorth, 255, 255, 255, 0);
+
+        var LegionAlterac = CreateTextTag();
+        SetTextTagText(LegionAlterac, "To Alterac", fontSize);
+        SetTextTagPos(LegionAlterac, 23536, -29975, 0);
+        SetTextTagColor(LegionAlterac, 255, 255, 255, 0);
+
         DestroyTimer(GetExpiredTimer());
       });
     }

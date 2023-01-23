@@ -23,9 +23,11 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
       Required = true;
     }
 
-    protected override string CompletionPopup =>
+    /// <inheritdoc/>
+    protected override string RewardFlavour =>
       "Darkshire has been liberated, and its military is now free to assist Stormwind.";
 
+    /// <inheritdoc/>
     protected override string RewardDescription => "Control of all units in Darkshire";
 
     private static void GrantDarkshire(player whichPlayer)
@@ -46,11 +48,13 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
       DestroyGroup(tempGroup);
     }
 
+    /// <inheritdoc/>
     protected override void OnFail(Faction completingFaction)
     {
       GrantDarkshire(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
+    /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
     {
       GrantDarkshire(completingFaction.Player);

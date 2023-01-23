@@ -47,7 +47,7 @@ namespace WarcraftLegacies.Source.UnitTypes
         Category = UnitCategory.Shipyard
       });
       
-      UnitType.Register(new UnitType(Constants.UNIT_OSHY_HORDE_PIER_FROSTWOLF)
+      UnitType.Register(new UnitType(Constants.UNIT_OSHY_HORDE_PIER_FROSTWOLF_SHIPYARD)
       {
         Category = UnitCategory.Shipyard
       });

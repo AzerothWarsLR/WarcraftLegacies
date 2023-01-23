@@ -51,6 +51,8 @@ namespace WarcraftLegacies.Source.Setup.Spells
         SpecialEffectPath = @"Abilities\Spells\Undead\RaiseSkeletonWarrior\RaiseSkeleton.mdl",
         RequiredResearch = Constants.UPGRADE_R098_FEL_INFUSED_SKELETON_FEL_HORDE
       });
+
+      PassiveAbilityManager.Register(new Execute(Constants.UNIT_O01L_EXECUTIONER_FEL_HORDE_ELITE));
     }
   }
 }

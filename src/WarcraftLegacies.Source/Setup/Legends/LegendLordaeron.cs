@@ -3,69 +3,34 @@ using MacroTools.Extensions;
 using MacroTools.LegendSystem;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
+#pragma warning disable CS1591
 
 namespace WarcraftLegacies.Source.Setup.Legends
 {
   /// <summary>
   /// Responsible for creating and storing all Lordaeron <see cref="Legend"/>s.
   /// </summary>
-  public static class LegendLordaeron
+  public sealed class LegendLordaeron : IRegistersLegends
   {
-    /// <summary>
-    /// King of Lordaeron.
-    /// </summary>
-    public static LegendaryHero? Terenas { get; private set; }
-    
-    /// <summary>
-    /// Leader of the Silver Hand.
-    /// </summary>
-    public static LegendaryHero? Uther { get; private set; }
-    
-    /// <summary>
-    /// Prince of Lordaeron.
-    /// </summary>
-    public static LegendaryHero? Arthas { get; private set; }
-    
-    /// <summary>
-    /// Legendary wielder of Ashbringer.
-    /// </summary>
-    public static LegendaryHero? Mograine { get; private set; }
-    
-    /// <summary>
-    /// Xenophobic human general.
-    /// </summary>
-    public static LegendaryHero? Garithos { get; private set; }
-    
-    /// <summary>
-    /// High Commander of the Scarlet Crusade.
-    /// </summary>
-    public static LegendaryHero? Goodchild { get; private set; }
-    
-    /// <summary>
-    /// Capital of Lordaeron.
-    /// </summary>
-    public static Capital? CapitalPalace { get; private set; }
-    
-    /// <summary>
-    /// The place Arthas culls in the Culling of Stratholme campaign mission.
-    /// </summary>
-    public static Capital? Stratholme { get; private set; }
-    
-    /// <summary>
-    /// A well fortified city.
-    /// </summary>
-    public static Capital? TyrsHand { get; private set; }
+    public LegendaryHero Terenas { get; }
+    public LegendaryHero Uther { get; }
+    public LegendaryHero Arthas { get; }
+    public LegendaryHero Mograine { get; }
+    public LegendaryHero Garithos { get; }
+    public LegendaryHero Goodchild { get; }
+    public Capital CapitalPalace { get; }
+    public Capital Stratholme { get; }
+    public Capital TyrsHand { get; }
 
     /// <summary>
     /// Sets up all Lordaeron <see cref="Legend"/>s.
     /// </summary>
-    public static void Setup(PreplacedUnitSystem preplacedUnitSystem, ArtifactSetup artifactSetup)
+    public LegendLordaeron(PreplacedUnitSystem preplacedUnitSystem, ArtifactSetup artifactSetup)
     {
       Terenas = new LegendaryHero("Terenas Menethil")
       {
         Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_NEMI_KING_TERENAS_MENETHIL_LORDAERON)
       };
-      LegendaryHeroManager.Register(Terenas);
       CreateTrigger()
        .RegisterUnitEvent(Terenas.Unit, EVENT_UNIT_DEATH)
        .AddAction(() =>
@@ -78,28 +43,24 @@ namespace WarcraftLegacies.Source.Setup.Legends
         UnitType = Constants.UNIT_H01J_THE_ASHBRINGER_LORDAERON,
         StartingXp = 2800
       };
-      LegendaryHeroManager.Register(Mograine);
 
       Garithos = new LegendaryHero("Garithos")
       {
         UnitType = Constants.UNIT_HLGR_GRAND_MARSHAL_SCARLET,
         StartingXp = 2800
       };
-      LegendaryHeroManager.Register(Garithos);
 
       Goodchild = new LegendaryHero("High Commander Goodchilde")
       {
         UnitType = Constants.UNIT_E000_IMPROVED_ANCIENT_PROTECTOR_DRUID_TOWER,
         StartingXp = 2800
       };
-      LegendaryHeroManager.Register(Goodchild);
 
       CapitalPalace = new Capital
       {
         Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_H000_CAPITAL_PALACE_LORDAERON),
         DeathMessage = "The capital city of Lordaeron has been razed, and King Terenas is dead."
       };
-      CapitalManager.Register(CapitalPalace);
       CapitalPalace.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_H006_IMPROVED_GUARD_TOWER_LORDAERON_TOWER, new Point(8686, 8862)));
       CapitalPalace.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_H006_IMPROVED_GUARD_TOWER_LORDAERON_TOWER, new Point(9476, 8843)));
       CapitalPalace.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_H007_IMPROVED_CANNON_TOWER_LORDAERON_TOWER, new Point(8638, 9342)));
@@ -124,7 +85,6 @@ namespace WarcraftLegacies.Source.Setup.Legends
         Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_H01G_STRATHOLME_CASTLE_LORDAERON_OTHER),
         DeathMessage = "The majestic city of Stratholme has been destroyed."
       };
-      CapitalManager.Register(Stratholme);
       Stratholme.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_H006_IMPROVED_GUARD_TOWER_LORDAERON_TOWER, new Point(14067, 12242)));
       Stratholme.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_H006_IMPROVED_GUARD_TOWER_LORDAERON_TOWER, new Point(14553, 11593)));
       Stratholme.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_H006_IMPROVED_GUARD_TOWER_LORDAERON_TOWER, new Point(15359, 11612)));
@@ -134,7 +94,6 @@ namespace WarcraftLegacies.Source.Setup.Legends
         Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_H030_TYR_S_HAND_CITADEL_LORDAERON_OTHER),
         DeathMessage = "Tyr's Hand, the bastion of human power in Lordaeron, has fallen."
       };
-      CapitalManager.Register(TyrsHand);
       TyrsHand.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_HCTW_CANNON_TOWER_LORDAERON_TOWER, new Point(20652, 8057)));
       TyrsHand.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_H007_IMPROVED_CANNON_TOWER_LORDAERON_TOWER, new Point(20024, 8123)));
       TyrsHand.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_H007_IMPROVED_CANNON_TOWER_LORDAERON_TOWER, new Point(20042, 7420)));
@@ -147,13 +106,25 @@ namespace WarcraftLegacies.Source.Setup.Legends
         PlayerColor = PLAYER_COLOR_LIGHT_BLUE,
         StartingXp = 1000
       };
-      LegendaryHeroManager.Register(Uther);
 
       Arthas = new LegendaryHero("Arthas Menethil")
       {
         UnitType = Constants.UNIT_HART_CROWN_PRINCE_OF_LORDAERON_LORDAERON
       };
+    }
+
+    /// <inheritdoc />
+    public void RegisterLegends()
+    {
+      LegendaryHeroManager.Register(Terenas);
+      LegendaryHeroManager.Register(Uther);
       LegendaryHeroManager.Register(Arthas);
+      LegendaryHeroManager.Register(Mograine);
+      LegendaryHeroManager.Register(Garithos);
+      LegendaryHeroManager.Register(Goodchild);
+      CapitalManager.Register(CapitalPalace);
+      CapitalManager.Register(Stratholme);
+      CapitalManager.Register(TyrsHand);
     }
   }
 }

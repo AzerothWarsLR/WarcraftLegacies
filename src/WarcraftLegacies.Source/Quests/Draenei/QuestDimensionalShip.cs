@@ -1,5 +1,4 @@
-﻿using MacroTools;
-using MacroTools.ControlPointSystem;
+﻿using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
@@ -8,8 +7,8 @@ using MacroTools.ObjectiveSystem.Objectives.QuestBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
 using System.Collections.Generic;
+using MacroTools.LegendSystem;
 using WarcraftLegacies.Source.Objectives;
-using WarcraftLegacies.Source.Setup.Legends;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
@@ -26,10 +25,12 @@ namespace WarcraftLegacies.Source.Quests.Draenei
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestDimensionalShip"/> class.
     /// </summary>
-    public QuestDimensionalShip(Rectangle questRect, List<QuestData> prerequisite) : base(
-      "The Dimensional Ship", "The core of the Exodar is rebuilt, but it requires a great source of power to function again. Finding that source of power would make the Exodar a powerful asset for the Draenei.", "ReplaceableTextures\\CommandButtons\\BTNArcaneEnergy.blp")
+    public QuestDimensionalShip(Rectangle questRect, List<QuestData> prerequisite, Capital dimensionalGenerator) : base(
+      "The Dimensional Ship",
+      "The core of the Exodar is rebuilt, but it requires a great source of power to function again. Finding that source of power would make the Exodar a powerful asset for the Draenei.",
+      "ReplaceableTextures\\CommandButtons\\BTNArcaneEnergy.blp")
     {
-      _dimensionalGenerator = LegendDraenei.LegendExodarGenerator.Unit; ;
+      _dimensionalGenerator = dimensionalGenerator.Unit;
       Required = true;
       foreach (var quest in prerequisite)
         AddObjective(new ObjectiveCompleteQuest(quest));   
@@ -51,7 +52,7 @@ namespace WarcraftLegacies.Source.Quests.Draenei
     /// <inheritdoc/>
     protected override void OnFail(Faction whichFaction)
     {
-      LegendDraenei.LegendExodar.Unit?.SetInvulnerable(false);
+      _dimensionalGenerator.SetInvulnerable(false);
     }
 
     /// <inheritdoc/>
@@ -61,11 +62,11 @@ namespace WarcraftLegacies.Source.Quests.Draenei
       CreateTrigger()
         .RegisterUnitEvent(_dimensionalGenerator, EVENT_UNIT_DEATH)
         .AddAction(() => { _objectivePowerSource.UsedPowerSource?.SetDroppable(true); });
-      LegendDraenei.LegendExodar.Unit?.SetInvulnerable(false);
+      _dimensionalGenerator.SetInvulnerable(false);
     }
 
     /// <inheritdoc/>
-    protected override string CompletionPopup =>
+    protected override string RewardFlavour =>
       "With the acquisition of a replacement power source, the Exodar's gemcrafters set to work reigniting the ship's planar engines. The Dimensional Generator can now now be used to travel the planes once more.";
 
     /// <inheritdoc/>
