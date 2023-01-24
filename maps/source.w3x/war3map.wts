@@ -13890,7 +13890,7 @@ Train Conjurer
 
 STRING 2316
 {
-Warcraft Legacies 2.3.1
+Warcraft Legacies 2.3.2
 }
 
 STRING 2317
@@ -67846,13 +67846,11 @@ Thank you so much to all our patrons for supporting us!
 
 Fight over the control of Azeroth as one of over 16 factions from the Warcraft III campaign and more!
 
-Credits:
-
 Lead Designers: Lord Sebas, YakaryBovine
 
 Artist and Modeler: HerrDave
-Coders: Tracy, Savantic, Naowsx, Headhunter
-Designers: Richardik, Hellborne
+Coders: Tracy, Savantic, Naowsx
+Designers: Hellborne
 Discord link: https://discord.gg/4eGZnR5
 }
 
@@ -92204,7 +92202,7 @@ Further increases the armor of all Naval Units.
 
 STRING 15405
 {
-Warcraft Legacies 2.3.1
+Warcraft Legacies 2.3.2
 }
 
 STRING 15406

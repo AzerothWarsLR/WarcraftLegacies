@@ -325,6 +325,7 @@ gg_rct_IslandBlocker4 = nil
 gg_rct_IslandBlocker5 = nil
 gg_rct_IllidariUnlockSA = nil
 gg_rct_BootyBayQuest = nil
+gg_rct_KaliRock8 = nil
 gg_snd_ArcaneObservatoryWhat1 = nil
 gg_snd_ArrangedTeamInvitation = nil
 gg_snd_ClanInvitation = nil
@@ -513,7 +514,6 @@ gg_snd_DoorCloseRemix = nil
 gg_snd_DoorOpenRemix = nil
 gg_snd_NuclearLaunchDetected = nil
 gg_snd_IllidansTheme = ""
-gg_rct_KaliRock8 = nil
 function InitGlobals()
 end
 
