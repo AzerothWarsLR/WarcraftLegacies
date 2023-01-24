@@ -11,6 +11,7 @@ namespace WarcraftLegacies.Source.ArtifactBehaviour
   public sealed class EyeOfSargerasMissile : BasicMissile
   {
     private readonly item _eyeOfSargeras;
+    private bool _impacted;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="EyeOfSargerasMissile"/> class.
@@ -45,6 +46,14 @@ namespace WarcraftLegacies.Source.ArtifactBehaviour
           eyeEffect.Destroy();
           DestroyTrigger(GetTriggeringTrigger());
         });
+      _impacted = true;
+    }
+
+    /// <inheritdoc />
+    public override void OnDispose()
+    {
+      if (!_impacted) 
+        _eyeOfSargeras.SetPosition(new Point(MissileX, MissileY));
     }
   }
 }
