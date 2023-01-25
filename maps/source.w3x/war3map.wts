@@ -2347,12 +2347,6 @@ STRING 392
 W
 }
 
-STRING 393
-// Units: ocbw (Fel Burrow), Ubertip (Tooltip - Extended)
-{
-Defensive hovel for peons to defend the territory.|nProvides 10 food, which increases the maximum number of units that can be trained.|n|cfff5962dAbilities:|R Battle Stations|n|n|cffffcc00Attacks land and air units.|r
-}
-
 STRING 394
 // Units: ohun (Headhunter), EditorSuffix (Name - Editor Suffix)
 {
@@ -2771,12 +2765,6 @@ STRING 463
 // Units: ngsp (Goblin Sapper), Hotkey (Hotkey)
 {
 Q
-}
-
-STRING 464
-// Units: o02Y (Great Hall), Ubertip (Tooltip - Extended)
-{
-Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Peon |n|cfff5962dAbilities:|R Spiked Barricades
 }
 
 STRING 465
@@ -8660,7 +8648,7 @@ Galley
 }
 
 STRING 1444
-// Units: u00Q (Treasury), Ubertip (Tooltip - Extended)
+// Units: o01T (Treasure Hoard), Ubertip (Tooltip - Extended)
 {
 Creates a shop with purchasable items.
 }
@@ -9091,12 +9079,6 @@ STRING 1515
 Z
 }
 
-STRING 1516
-// Units: o034 (Watch Tower), Ubertip (Tooltip - Extended)
-{
-Spearman filled eyes of the Horde.|n|cfff5962dUpgrades Into:|R Improved Watch Tower, Flame Pillar|n|n|cffffcc00Attacks land and air units.|r
-}
-
 STRING 1517
 // Upgrades: R035 (Chaos), EditorSuffix (Editor Suffix)
 {
@@ -9187,12 +9169,6 @@ STRING 1531
 C
 }
 
-STRING 1532
-// Units: o02Z (Stronghold), Ubertip (Tooltip - Extended)
-{
-Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Peon |n|cfff5962dAbilities:|R Spiked Barricades, Fel Energy
-}
-
 STRING 1533
 // Units: n0C9 (Temple of Tides), Tip (Tooltip - Basic)
 {
@@ -9221,12 +9197,6 @@ STRING 1537
 // Units: h06C (High Tower), Hotkey (Hotkey)
 {
 D
-}
-
-STRING 1538
-// Units: o02X (Beastiary), Ubertip (Tooltip - Extended)
-{
-Beast stables for the Horde.|n|cfff5962dTrains:|R Fel Raider, Bonebreaker, Obsidian Drake |n|cfff5962dResearches:|R Incinerate
 }
 
 STRING 1539
@@ -9284,7 +9254,7 @@ Build Altar of Domination
 }
 
 STRING 1548
-// Units: o02V (Altar of Domination), Ubertip (Tooltip - Extended)
+// Units: o020 (Altar of Conquerors), Ubertip (Tooltip - Extended)
 {
 Revives slain Heroes and Demi-heros.
 }
@@ -9607,12 +9577,6 @@ STRING 1601
 Summon Teron Gorefiend
 }
 
-STRING 1602
-// Units: o030 (Fortress), Ubertip (Tooltip - Extended)
-{
-Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Peon, Executioner, Fel Death Knight, Infernal Juggernaut|n|cfff5962dResearches:|R Full Scale Escalation |n|cfff5962dAbilities:|R Spiked Barricades, Fel Energy
-}
-
 STRING 1603
 // Units: usep (Crypt), Ubertip (Tooltip - Extended)
 {
@@ -9704,7 +9668,7 @@ Build Altar of Conquerors
 }
 
 STRING 1618
-// Units: o020 (Altar of Conquerors), Ubertip (Tooltip - Extended)
+// Units: h07B (Altar of Fortitude), Ubertip (Tooltip - Extended)
 {
 Revives slain Heroes and Demi-heros.
 }
@@ -9812,7 +9776,7 @@ STRING 1635
 }
 
 STRING 1636
-// Units: o01T (Treasure Hoard), Ubertip (Tooltip - Extended)
+// Units: h04V (Arcane Vault), Ubertip (Tooltip - Extended)
 {
 Creates a shop with purchasable items.
 }
@@ -18029,7 +17993,7 @@ C
 }
 
 STRING 3006
-// Units: h04V (Arcane Vault), Ubertip (Tooltip - Extended)
+// Units: u00Y (Black Vault), Ubertip (Tooltip - Extended)
 {
 Creates a shop with purchasable items.
 }
@@ -23561,7 +23525,7 @@ Summon Falstad Wildhammer
 }
 
 STRING 3928
-// Units: h07B (Altar of Fortitude), Ubertip (Tooltip - Extended)
+// Units: o03C (Altar of Visions), Ubertip (Tooltip - Extended)
 {
 Revives slain Heroes and Demi-heros.
 }
@@ -27929,6 +27893,12 @@ STRING 4655
 Everlook Wall
 }
 
+STRING 4656
+// Units: ocbw (Fel Burrow), Ubertip (Tooltip - Extended)
+{
+Defensive hovel for peons to defend the territory.|nProvides 10 food, which increases the maximum number of units that can be trained.|n|cfff5962dAbilities:|R Battle Stations|n|cfff5962dCan learn:|R Spiked Barricades|n|n|cffffcc00Attacks land and air units.|r
+}
+
 STRING 4657
 // Abilities: A0H3 (Mass Ice Armor), Researchtip (Tooltip - Learn)
 {
@@ -28905,12 +28875,6 @@ STRING 4819
 // Units: o04W (Golden Vessel), Hotkey (Hotkey)
 {
 Q
-}
-
-STRING 4820
-// Abilities: Aspi (Spiked Barricades), EditorSuffix (Editor Suffix)
-{
-(Pink/Teal/Grey)
 }
 
 STRING 4821
@@ -42506,7 +42470,7 @@ STRING 7082
 }
 
 STRING 7083
-// Units: o03H (Improved Twilight Lookout), Ubertip (Tooltip - Extended)
+// Units: o035 (Improved Watch Tower), Ubertip (Tooltip - Extended)
 {
 Defensive structure.|n|cfff5962dCan learn:|R Spiked Barricades |n|n|cffffcc00Attacks land and air units.|r
 }
@@ -44923,6 +44887,12 @@ STRING 7485
 Thick Skin
 }
 
+STRING 7486
+// Units: u00Q (Treasury), Ubertip (Tooltip - Extended)
+{
+Creates a shop with purchasable items.|n|cfff5962dCan learn:|R Spiked Barricades
+}
+
 STRING 7487
 // Abilities: A0VG (Necromantic Summon), EditorSuffix (Editor Suffix)
 {
@@ -46099,6 +46069,12 @@ STRING 7682
 Cenarius summons creatures of the wild to aid him in combat.|n|n|cffffcc00- Summon Forest Spiders|n- Summon Feral Wolves|n- Summon Furbolg Elder Shaman|n- Summon Ysonder|r
 }
 
+STRING 7683
+// Units: o034 (Watch Tower), Ubertip (Tooltip - Extended)
+{
+Spearman filled eyes of the Horde.|n|cfff5962dUpgrades Into:|R Improved Watch Tower, Flame Pillar|n|cfff5962dCan learn:|R Spiked Barricades|n|n|cffffcc00Attacks land and air units.|r
+}
+
 STRING 7684
 // Abilities: AHds (Demonic Shield), Unhotkey (Hotkey - Turn Off)
 {
@@ -46123,6 +46099,12 @@ STRING 7687
 Learn Voodoo Restoration - [|cffffcc00Level %d|r]
 }
 
+STRING 7688
+// Units: o033 (Dark Enclave), Ubertip (Tooltip - Extended)
+{
+Shadowy gathering place for the Fel Horde's casters.|n|cfff5962dTrains:|R Necrolyte, Fel Warlock, Eredar Occultist, Eye of Grillok|n|cfff5962dResearches:|R Necrolyte Training, Fel Warlock Training, Eredar Occultist Training, Improved Shadow Infusion, Improved Firebolt|n|cfff5962dCan learn:|R Spiked Barricades
+}
+
 STRING 7689
 // Abilities: A0TZ (Voodoo Restoration), Tip (Tooltip - Normal)
 {
@@ -46145,6 +46127,30 @@ STRING 7692
 // Abilities: A0TZ (Voodoo Restoration), Tip (Tooltip - Normal)
 {
 Activate Voodoo Restoration - [|cffffcc00Level 4|r]
+}
+
+STRING 7693
+// Units: o031 (War Mill), Ubertip (Tooltip - Extended)
+{
+Resource harvesting center and producer of Fel Horde enhancements. |n|cfff5962dResearches:|R Forged Weaponry, Armor Plating, Reinforced Defenses, Spiked Barricades, Spiritual Infusion, Blood Runes, Improved Cannons, Fortified Hulls|n|cfff5962dCan learn:|R Spiked Barricades
+}
+
+STRING 7694
+// Units: o030 (Fortress), Ubertip (Tooltip - Extended)
+{
+Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Peon, Executioner, Fel Death Knight, Infernal Juggernaut|n|cfff5962dResearches:|R Full Scale Escalation|n|cfff5962dAbilities:|R Fel Energy|n|cfff5962dCan learn:|R Spiked Barricades
+}
+
+STRING 7695
+// Units: o02Z (Stronghold), Ubertip (Tooltip - Extended)
+{
+Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Peon |n|cfff5962dAbilities:|R Fel Energy|n|cfff5962dCan learn:|R Spiked Barricades
+}
+
+STRING 7696
+// Units: o02Y (Great Hall), Ubertip (Tooltip - Extended)
+{
+Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Peon |n|cfff5962dCan learn:|R Spiked Barricades
 }
 
 STRING 7697
@@ -47159,12 +47165,6 @@ STRING 7865
 // Abilities: A0T4 (Bishop of Silver Hand), Name (Name)
 {
 Bishop of Silver Hand
-}
-
-STRING 7866
-// Units: o031 (War Mill), Ubertip (Tooltip - Extended)
-{
-Resource harvesting center and producer of Fel Horde enhancements. |n|cfff5962dResearches:|R Forged Weaponry, Armor Plating, Reinforced Defenses, Spiked Barricades, Spiritual Infusion, Blood Runes, Improved Cannons, Fortified Hulls
 }
 
 STRING 7867
@@ -61898,10 +61898,46 @@ STRING 10321
 (Halls of the Dead)
 }
 
+STRING 10322
+// Units: o02X (Beastiary), Ubertip (Tooltip - Extended)
+{
+Beast stables for the Horde.|n|cfff5962dTrains:|R Fel Raider, Bonebreaker, Obsidian Drake |n|cfff5962dResearches:|R Demonic Flux, Improved Self-Bloodlust, Incinerate, Enhanced Breath|n|cfff5962dCan learn:|R Spiked Barricades
+}
+
+STRING 10323
+// Units: o02W (Barracks), Ubertip (Tooltip - Extended)
+{
+Home to the warriors of the Fel Horde.|n|cfff5962dTrains:|R Fel Grunt, Crossbowman, Demolisher|n|cfff5962dResearches:|R Fel Infused Skeleton/Demonic Flux, Improved Self-Bloodlust, Burning Oil|n|cfff5962dCan learn:|R Spiked Barricades
+}
+
+STRING 10324
+// Units: o02V (Altar of Domination), Ubertip (Tooltip - Extended)
+{
+Revives slain Heroes and Demi-heros.|n|cfff5962dCan learn:|R Spiked Barricades
+}
+
 STRING 10325
 // Abilities: A0CA (Blight Aura), EditorSuffix (Editor Suffix)
 {
 (Black Citadel)
+}
+
+STRING 10326
+// Units: o06A (Improved High Watchtower), Ubertip (Tooltip - Extended)
+{
+Defensive structure.|n|cfff5962dCan learn:|R Spiked Barricades |n|n|cffffcc00Attacks land and air units.|r
+}
+
+STRING 10327
+// Abilities: Aspi (Spiked Barricades), EditorSuffix (Editor Suffix)
+{
+(Frostwolf/Fel Horde/Warsong)
+}
+
+STRING 10328
+// Upgrades: Rosp (Spiked Barricades,Improved Spiked Barricades,Advanced Spiked Barricades), EditorSuffix (Editor Suffix)
+{
+(Frostwolf/Fel Horde/Warsong)
 }
 
 STRING 10329
@@ -62631,7 +62667,7 @@ Train |cffffcc00F|rel Beast
 }
 
 STRING 10450
-// Units: u00Y (Black Vault), Ubertip (Tooltip - Extended)
+// Units: o03X (Auction House), Ubertip (Tooltip - Extended)
 {
 Creates a shop with purchasable items.
 }
@@ -76083,12 +76119,6 @@ STRING 12689
 Q
 }
 
-STRING 12690
-// Units: o02W (Barracks), Ubertip (Tooltip - Extended)
-{
-Home to the warriors of the Fel Horde.|n|cfff5962dTrains:|R Fel Grunt, Crossbowman, Demolisher|n|cfff5962dResearches:|R Fel Infused Skeleton/Demonic Flux, Improved Self-Bloodlust, Burning Oil
-}
-
 STRING 12691
 // Abilities: A0OJ (Mass Unholy Armor), Ubertip (Tooltip - Normal - Extended)
 {
@@ -76568,6 +76598,12 @@ STRING 12770
 // Abilities: A016 (Toughened Hides), Ubertip (Tooltip - Normal - Extended)
 {
 Tougher Hides reduces the damage dealt to the Druid by 10 damage.
+}
+
+STRING 12771
+// Upgrades: Rorb (Reinforced Defenses), EditorSuffix (Editor Suffix)
+{
+(Frostwolf/Fel Horde/Warsong)
 }
 
 STRING 12772
@@ -83171,7 +83207,7 @@ Pandaren Brew - [|cffffcc00Level 3|r]
 }
 
 STRING 13875
-// Upgrades: Rosp (Spiked Barricades,Improved Spiked Barricades,Advanced Spiked Barricades), EditorSuffix (Editor Suffix)
+// Upgrades: Rome (Steel Melee Weapons,Thorium Melee Weapons,Arcanite Melee Weapons), EditorSuffix (Editor Suffix)
 {
 (Teal/Pink/Grey Research)
 }
@@ -83207,7 +83243,7 @@ Research Improved Spiked Barricades
 }
 
 STRING 13881
-// Upgrades: Rorb (Reinforced Defenses), EditorSuffix (Editor Suffix)
+// Upgrades: Roar (Steel Armor,Thorium Armor,Arcanite Armor), EditorSuffix (Editor Suffix)
 {
 (Teal/Pink/Grey Research)
 }
@@ -83384,12 +83420,6 @@ STRING 13910
 // Upgrades: Roar (Steel Armor,Thorium Armor,Arcanite Armor), EditorSuffix (Editor Suffix)
 {
 (Unused)
-}
-
-STRING 13911
-// Upgrades: Rome (Steel Melee Weapons,Thorium Melee Weapons,Arcanite Melee Weapons), EditorSuffix (Editor Suffix)
-{
-(Teal/Pink/Grey Research)
 }
 
 STRING 13912
@@ -83660,12 +83690,6 @@ STRING 13956
 // Upgrades: Rhra (Black Gunpowder,Refined Gunpowder,Imbued Gunpowder), EditorSuffix (Editor Suffix)
 {
 (Unused)
-}
-
-STRING 13957
-// Upgrades: Roar (Steel Armor,Thorium Armor,Arcanite Armor), EditorSuffix (Editor Suffix)
-{
-(Teal/Pink/Grey Research)
 }
 
 STRING 13958
@@ -93992,12 +94016,6 @@ STRING 15710
 Moonlit home of the Night Elves.|nProvides 8 food, which increases the maximum number of units that can be trained.
 }
 
-STRING 15711
-// Units: o035 (Improved Watch Tower), Ubertip (Tooltip - Extended)
-{
-Defensive structure.|n|cfff5962dCan learn:|R Reinforced Defenses, Spiked Barricades |n|n|cffffcc00Attacks land and air units.|r
-}
-
 STRING 15712
 // Units: o002 (Improved Watch Tower), Tip (Tooltip - Basic)
 {
@@ -94650,12 +94668,6 @@ STRING 15822
 // Units: n006 (Charred Ancient), EditorSuffix (Name - Editor Suffix)
 {
 (Druids - Fandral Summon)
-}
-
-STRING 15823
-// Units: o033 (Dark Enclave), Ubertip (Tooltip - Extended)
-{
-Shadowy gathering place for the Fel Horde's casters.|n|cfff5962dTrains:|R Necrolyte, Fel Warlock, Eredar Occultist, Eye of Gilrokk|n|cfff5962dResearches:|R Adept Training, Mastery Training
 }
 
 STRING 15824
@@ -95667,7 +95679,7 @@ Wielder of destructive elemental magic. |n|cfff5962dAbilities:|R Incinerate |n|c
 }
 
 STRING 15993
-// Units: o03C (Altar of Visions), Ubertip (Tooltip - Extended)
+// Units: o03O (Altar of Industry), Ubertip (Tooltip - Extended)
 {
 Revives slain Heroes and Demi-heros.
 }
@@ -95937,7 +95949,7 @@ C'thun presence makes all units around him terribly frightened which decreases t
 }
 
 STRING 16038
-// Units: o03O (Altar of Industry), Ubertip (Tooltip - Extended)
+// Units: o040 (Altar of Loa), Ubertip (Tooltip - Extended)
 {
 Revives slain Heroes and Demi-heros.
 }
@@ -96083,7 +96095,7 @@ Boarding Vessel
 }
 
 STRING 16062
-// Units: o03X (Auction House), Ubertip (Tooltip - Extended)
+// Units: o047 (Bazaar), Ubertip (Tooltip - Extended)
 {
 Creates a shop with purchasable items.
 }
@@ -96233,7 +96245,7 @@ Build Boarding Vessel
 }
 
 STRING 16087
-// Units: o040 (Altar of Loa), Ubertip (Tooltip - Extended)
+// Units: o058 (Altar of Light), Ubertip (Tooltip - Extended)
 {
 Revives slain Heroes and Demi-heros.
 }
@@ -96491,7 +96503,7 @@ STRING 16129
 }
 
 STRING 16130
-// Units: o058 (Altar of Light), Ubertip (Tooltip - Extended)
+// Units: o066 (Altar of Dragons), Ubertip (Tooltip - Extended)
 {
 Revives slain Heroes and Demi-heros.
 }
@@ -96849,7 +96861,7 @@ W
 }
 
 STRING 16191
-// Units: o047 (Bazaar), Ubertip (Tooltip - Extended)
+// Units: h086 (Field Stockpile), Ubertip (Tooltip - Extended)
 {
 Creates a shop with purchasable items.
 }
@@ -97065,7 +97077,7 @@ STRING 16226
 }
 
 STRING 16227
-// Units: h086 (Field Stockpile), Ubertip (Tooltip - Extended)
+// Units: u017 (Undertaker's Vault), Ubertip (Tooltip - Extended)
 {
 Creates a shop with purchasable items.
 }
@@ -100017,7 +100029,7 @@ Upgrade to Improved Twilight Lookout
 }
 
 STRING 16724
-// Units: o06A (Improved High Watchtower), Ubertip (Tooltip - Extended)
+// Units: o03H (Improved Twilight Lookout), Ubertip (Tooltip - Extended)
 {
 Defensive structure.|n|cfff5962dCan learn:|R Spiked Barricades |n|n|cffffcc00Attacks land and air units.|r
 }
@@ -106335,12 +106347,6 @@ STRING 17785
 // Upgrades: R080 (Iron Plating,Steel Plating,Mithril Plating), EditorSuffix (Editor Suffix)
 {
 (Draenei)
-}
-
-STRING 17786
-// Units: o066 (Altar of Dragons), Ubertip (Tooltip - Extended)
-{
-Revives slain Heroes and Demi-heros.
 }
 
 STRING 17787
@@ -117471,7 +117477,7 @@ STRING 20007
 }
 
 STRING 20008
-// Units: u017 (Undertaker's Vault), Ubertip (Tooltip - Extended)
+// Units: u02N (Treasure Hoard), Ubertip (Tooltip - Extended)
 {
 Creates a shop with purchasable items.
 }
@@ -118128,12 +118134,6 @@ STRING 20140
 // Units: u02N (Treasure Hoard), EditorSuffix (Name - Editor Suffix)
 {
 (Dragonmaw Shop)
-}
-
-STRING 20142
-// Units: u02N (Treasure Hoard), Ubertip (Tooltip - Extended)
-{
-Creates a shop with purchasable items.
 }
 
 STRING 20143
