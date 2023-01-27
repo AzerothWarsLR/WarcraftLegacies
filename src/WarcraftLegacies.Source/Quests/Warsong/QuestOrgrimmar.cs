@@ -23,7 +23,8 @@ namespace WarcraftLegacies.Source.Quests.Warsong
       AddObjective(new ObjectiveResearch(RequiredResearchId, Constants.UNIT_O02S_FORTRESS_WARSONG_T3));
       AddObjective(new ObjectiveExpire(1500));
       AddObjective(new ObjectiveSelfExists());
-      ResearchId = FourCC("R05R");
+      ResearchId = Constants.UPGRADE_R05R_QUEST_COMPLETED_TO_TAME_A_LAND;
+      Required = true;
 
       foreach (var unit in CreateGroup().EnumUnitsInRect(rescueRect).EmptyToList())
         if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))

@@ -12,6 +12,7 @@ namespace WarcraftLegacies.Source.Quests.Warsong
     {
       AddObjective(new ObjectiveControlCapital(fountainOfBlood, false));
       ResearchId = Constants.UPGRADE_R00X_QUEST_COMPLETED_THE_BLOOD_OF_MANNOROTH_WARSONG;
+      Required = true;
     }
     
     /// <inheritdoc/>
