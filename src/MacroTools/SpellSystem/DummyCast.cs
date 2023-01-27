@@ -38,7 +38,7 @@ namespace MacroTools.SpellSystem
         .AddAbility(abilId)
         .SetAbilityLevel(abilId, level);
 
-      if (originType == DummyCastOriginType.Target) 
+      if (originType == DummyCastOriginType.Caster) 
         DummyCaster.DummyUnit.FacePosition(target.GetPosition());
 
       DummyCaster.DummyUnit
