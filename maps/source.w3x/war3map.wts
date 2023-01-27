@@ -10093,6 +10093,12 @@ STRING 1682
 Bloodlust Totem
 }
 
+STRING 1683
+// Buffs/Effects: B0AX (), Bufftip (Tooltip)
+{
+Protector of Kings
+}
+
 STRING 1684
 // Units: n08C (Voidcrusher), EditorSuffix (Name - Editor Suffix)
 {
@@ -14342,6 +14348,12 @@ STRING 2392
 // Units: n0AW (Incubation Pool), Hotkey (Hotkey)
 {
 A
+}
+
+STRING 2393
+// Buffs/Effects: B0AX (), Buffubertip (Tooltip - Extended)
+{
+This unit is under the effects of Protector of Kings; it has increased armor.
 }
 
 STRING 2396
@@ -28884,7 +28896,7 @@ Q
 }
 
 STRING 4820
-// Abilities: A0EQ (Cleaving Attack), EditorSuffix (Editor Suffix)
+// Abilities: ACcr (Cripple), EditorSuffix (Editor Suffix)
 {
 (Teal - Kazzak)
 }
@@ -38448,7 +38460,7 @@ Q
 }
 
 STRING 6414
-// Abilities: ACcr (Cripple), EditorSuffix (Editor Suffix)
+// Abilities: A0EQ (Cleaving Attack), EditorSuffix (Editor Suffix)
 {
 (Teal - Kazzak)
 }

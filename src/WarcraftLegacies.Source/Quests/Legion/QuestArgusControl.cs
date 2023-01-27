@@ -42,7 +42,7 @@ namespace WarcraftLegacies.Source.Quests.Legion
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
-      "With Argus finally under the Legion's control, the invasion of Azeroth can begin! It will enable Dreadlords to travel across worlds";
+      "With Argus finally under the Legion's control, the invasion of Azeroth can begin! ";
 
     /// <inheritdoc/>
     protected override string RewardFlavour =>
