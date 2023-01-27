@@ -36,7 +36,12 @@ namespace MacroTools.SpellSystem
         .SetOwner(caster.OwningPlayer())
         .SetPosition(originPoint)
         .AddAbility(abilId)
-        .SetAbilityLevel(abilId, level)
+        .SetAbilityLevel(abilId, level);
+
+      if (originType == DummyCastOriginType.Target) 
+        DummyCaster.DummyUnit.FacePosition(target.GetPosition());
+
+      DummyCaster.DummyUnit
         .IssueOrder(orderId, target)
         .RemoveAbility(abilId);
     }

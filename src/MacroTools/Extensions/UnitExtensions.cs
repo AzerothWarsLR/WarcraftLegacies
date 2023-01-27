@@ -751,5 +751,16 @@ namespace MacroTools.Extensions
       BlzStartUnitAbilityCooldown(whichUnit, abilCode, fullCooldown);
       return whichUnit;
     }
+
+    /// <summary>
+    /// Turns the unit to face a particular position.
+    /// </summary>
+    public static unit FacePosition(this unit whichUnit, Point targetPoint)
+    {
+      var unitPosition = whichUnit.GetPosition();
+      var facing = WCSharp.Shared.Util.AngleBetweenPoints(unitPosition.X, unitPosition.Y, targetPoint.X, targetPoint.Y);
+      BlzSetUnitFacingEx(whichUnit, facing);
+      return whichUnit;
+    }
   }
 }
