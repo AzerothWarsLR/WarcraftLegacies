@@ -11,7 +11,7 @@ namespace MacroTools.Cheats
     public override string CommandText => "nocd";
     
     /// <inheritdoc />
-    public override int ParameterCount => 1;
+    public override int MinimumParameterCount => 1;
     
     /// <inheritdoc />
     public override string Description => "When activated, your units reset all cooldowns after they cast a spell.";

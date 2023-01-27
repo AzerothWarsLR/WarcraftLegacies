@@ -14,7 +14,7 @@ namespace MacroTools.Cheats
     public override string CommandText => "team";
 
     /// <inheritdoc />
-    public override int ParameterCount => 2;
+    public override int MinimumParameterCount => 2;
     
     /// <inheritdoc />
     public override CommandType Type => CommandType.Cheat;

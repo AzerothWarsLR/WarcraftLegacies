@@ -13,7 +13,7 @@ namespace MacroTools.Cheats
     public override string CommandText => "hasresearch";
 
     /// <inheritdoc />
-    public override int ParameterCount => 1;
+    public override int MinimumParameterCount => 1;
 
     /// <inheritdoc />
     public override CommandType Type => CommandType.Cheat;

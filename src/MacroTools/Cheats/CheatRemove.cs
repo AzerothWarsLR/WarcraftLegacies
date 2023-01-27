@@ -10,7 +10,7 @@ namespace MacroTools.Cheats
     public override string CommandText => "remove";
 
     /// <inheritdoc />
-    public override int ParameterCount => 0;
+    public override int MinimumParameterCount => 0;
     
     /// <inheritdoc />
     public override CommandType Type => CommandType.Cheat;

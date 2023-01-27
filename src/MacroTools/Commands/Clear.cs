@@ -12,7 +12,7 @@ namespace MacroTools.Commands
     public override string CommandText => "clear";
   
     /// <inheritdoc />
-    public override int ParameterCount => 0;
+    public override int MinimumParameterCount => 0;
 
     /// <inheritdoc />
     public override CommandType Type => CommandType.Normal;

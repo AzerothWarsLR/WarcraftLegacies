@@ -46,10 +46,10 @@ namespace MacroTools.CommandSystem
               Console.WriteLine(paremeter);
             }
 
-            if (parameters.Length != command.ParameterCount)
+            if (parameters.Length < command.MinimumParameterCount)
             {
               DisplayTextToPlayer(GetTriggerPlayer(), 0, 0,
-                $"You must supply exactly {command.ParameterCount} parameters. If you're trying to use a parameter with multiple words, try enclosing it in quotes.");
+                $"You must supply at least {command.MinimumParameterCount} parameters. If you're trying to use a parameter with multiple words, try enclosing it in quotes.");
               return;
             }
 
