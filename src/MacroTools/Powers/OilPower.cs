@@ -113,15 +113,6 @@ namespace MacroTools.Powers
 
     private void GenerateOilPool()
     {
-      if (_oilPools.Count > 0)
-      {
-        for (var i = _oilPools.Count; i-- > 0;)
-        {
-          if (_oilPools[i].OilAmount <= 0)
-            _oilPools.Remove(_oilPools[i]);
-        }
-      }
-
       if (_oilPools.Count >= MaximumOilPoolCount)
         return;
       var randomPoint = GetRandomPointAtSea();
@@ -131,8 +122,15 @@ namespace MacroTools.Powers
         Duration = float.MaxValue,
         OilAmount = GetRandomInt(OilPoolMinimumValue, OilPoolMaximumValue)
       };
+      oilPool.Disposed += OnOilPoolDisposed;
       HazardSystem.Add(oilPool);
       _oilPools.Add(oilPool);
+    }
+
+    private void OnOilPoolDisposed(object? sender, OilPool oilPool)
+    {
+      _oilPools.Remove(oilPool);
+      oilPool.Disposed -= OnOilPoolDisposed;
     }
 
     private void RefreshDescription()

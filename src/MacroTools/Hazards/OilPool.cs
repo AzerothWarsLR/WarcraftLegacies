@@ -1,4 +1,5 @@
-﻿using MacroTools.Extensions;
+﻿using System;
+using MacroTools.Extensions;
 using MacroTools.Powers;
 using MacroTools.SpellSystem;
 using WCSharp.Shared.Data;
@@ -19,6 +20,11 @@ namespace MacroTools.Hazards
     private readonly effect _effectOil;
     private readonly effect _effectCircle;
 
+    /// <summary>
+    /// Invoked when the <see cref="OilPool"/> calls <see cref="OilPool.OnDispose"/>.
+    /// </summary>
+    public event EventHandler<OilPool>? Disposed;
+    
     /// <inheritdoc />
     public override bool Active { get; set; } = true;
 
@@ -52,6 +58,7 @@ namespace MacroTools.Hazards
     {
       _effectOil.Destroy();
       _effectCircle.Destroy();
+      Disposed?.Invoke(this, this);
     }
   }
 }
