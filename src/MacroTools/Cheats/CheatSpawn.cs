@@ -5,13 +5,16 @@ using static War3Api.Common;
 
 namespace MacroTools.Cheats
 {
+  /// <summary>
+  /// A <see cref="Cheat"/> that spawns the specified units or items the specified number of times.
+  /// </summary>
   public sealed class CheatSpawn : Command
   {
     /// <inheritdoc />
     public override string CommandText => "spawn";
 
     /// <inheritdoc />
-    public override int ParameterCount => 2;
+    public override int MinimumParameterCount => 1;
     
     /// <inheritdoc />
     public override CommandType Type => CommandType.Cheat;
@@ -35,8 +38,10 @@ namespace MacroTools.Cheats
       if (objectTypeId == 0)
         return "You must specify a valid object type ID as the first parameter.";
 
-      if (!int.TryParse(parameters[1], out var count))
-        return "You must specify a valid count as the second parameter.";
+      var count = 1;
+      if (parameters.Length >= 2)
+        if (!int.TryParse(parameters[1], out count))
+          return "You must specify a valid count as the second parameter.";
 
       var firstSelectedUnit = CreateGroup().EnumSelectedUnits(cheater).EmptyToList().First();
       SpawnUnitsOrItems(firstSelectedUnit, objectTypeId, count);

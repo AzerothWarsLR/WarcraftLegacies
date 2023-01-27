@@ -1,4 +1,5 @@
 ﻿using MacroTools.CommandSystem;
+using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using static War3Api.Common;
@@ -17,7 +18,7 @@ namespace MacroTools.Cheats
     public override string CommandText => _commandText;
 
     /// <inheritdoc />
-    public override int ParameterCount => 2;
+    public override int MinimumParameterCount => 1;
 
     /// <inheritdoc />
     public override CommandType Type => CommandType.Cheat;
@@ -37,14 +38,26 @@ namespace MacroTools.Cheats
     /// <inheritdoc />
     public override string Execute(player cheater, params string[] parameters)
     {
-      var faction = FactionManager.GetFromName(parameters[0]);
-      if (faction != null)
+      Faction? faction;
+      if (parameters.Length < 2)
       {
-        var quest = faction.GetQuestByTitle(parameters[1]);
-        quest.Progress = _progress;
-        return $"Setting quest progress of {parameters[1]} to {_progress.ToString()} for faction {parameters[0]}.";
+        faction = cheater.GetFaction();
+        if (faction == null)
+          return $"You are not playing as a {nameof(Faction)}, so you don't have any quests.";
       }
-      return $"Failed to set quest progress of {parameters[1]} for faction {parameters[0]}.";
+      else
+      {
+        faction = FactionManager.GetFromName(parameters[1]);
+        if (faction == null) 
+          return $"{parameters[1]} is not a valid {nameof(Faction)}.";
+      }
+      
+      var quest = faction.GetQuestByTitle(parameters[0]);
+      if (quest == null)
+        return $"{parameters[0]} is not a valid quest for {nameof(Faction)} {faction.Name}.";
+      
+      quest.Progress = _progress;
+      return $"Set quest progress of {quest.Title} to {_progress.ToString()} for {nameof(Faction)} {faction.Name}.";
     }
   }
 }

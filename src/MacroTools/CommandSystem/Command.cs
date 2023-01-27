@@ -13,9 +13,9 @@ namespace MacroTools.CommandSystem
     public abstract string CommandText { get; }
 
     /// <summary>
-    /// How many parameters should be supplied to this <see cref="CommandSystem.Command"/> command.
+    /// The minimum number of parameters that must be supplied to this <see cref="CommandSystem.Command"/> command.
     /// </summary>
-    public abstract int ParameterCount { get; }
+    public abstract int MinimumParameterCount { get; }
 
     /// <summary>
     /// Determines the purpose of the command and when it can be used.
