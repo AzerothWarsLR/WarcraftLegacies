@@ -18,7 +18,7 @@ namespace MacroTools.CommandSystem
     /// All <see cref="Command"/>s must be prefixed with this when entered into the chat.
     /// </summary>
     private const string Prefix = "-";
-    
+
     /// <summary>
     /// Returns all registered <see cref="Command"/>s.
     /// </summary>
@@ -39,13 +39,20 @@ namespace MacroTools.CommandSystem
           {
             if (command.Type == CommandType.Cheat && !TestMode.CheatCondition())
               return;
-            
-            var parameters = GetEventPlayerChatString().Split(" ").Skip(1).ToArray();
+
+            var parameters = SplitParameters(GetEventPlayerChatString());
+            foreach (var paremeter in parameters)
+            {
+              Console.WriteLine(paremeter);
+            }
+
             if (parameters.Length != command.ParameterCount)
             {
-              DisplayTextToPlayer(GetTriggerPlayer(), 0, 0, $"You must supply exactly {command.ParameterCount} parameters.");
+              DisplayTextToPlayer(GetTriggerPlayer(), 0, 0,
+                $"You must supply exactly {command.ParameterCount} parameters. If you're trying to use a parameter with multiple words, try enclosing it in quotes.");
               return;
             }
+
             var message = command.Execute(GetTriggerPlayer(), parameters);
             DisplayTextToPlayer(GetTriggerPlayer(), 0, 0,
               command.Type == CommandType.Cheat ? $"|cffD27575CHEAT:|r {message}" : $"{message}");
@@ -55,6 +62,17 @@ namespace MacroTools.CommandSystem
             Console.WriteLine($"Failed to execute command: {ex}");
           }
         });
+    }
+
+    private static string[] SplitParameters(string inputString)
+    {
+      return inputString.Split('"')
+        .Select((element, index) => index % 2 == 0
+          ? element.Split(' ', StringSplitOptions.RemoveEmptyEntries)
+          : new string[] { element })
+        .SelectMany(element => element)
+        .Skip(1)
+        .ToArray();
     }
   }
 }
