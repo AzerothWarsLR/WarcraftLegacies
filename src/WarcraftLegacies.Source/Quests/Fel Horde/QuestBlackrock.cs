@@ -30,6 +30,7 @@ namespace WarcraftLegacies.Source.Quests.Fel_Horde
       foreach (var prequisite in prequisites) 
         AddObjective(new ObjectiveCompleteQuest(prequisite));
       AddObjective(new ObjectiveResearch(Constants.UPGRADE_R090_ACTIVATE_THE_BLACKROCK_CLAN_FEL, Constants.UNIT_O008_HELLFIRE_CITADEL_FEL_HORDE));
+      AddObjective(new ObjectiveTime(480));
       AddObjective(new ObjectiveExpire(1451));
       AddObjective(new ObjectiveSelfExists());
       ResearchId = Constants.UPGRADE_R03C_QUEST_COMPLETED_BLACKROCK_UNIFICATION;
