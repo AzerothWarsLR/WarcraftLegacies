@@ -10094,7 +10094,7 @@ Bloodlust Totem
 }
 
 STRING 1683
-// Buffs/Effects: B0AX (), Bufftip (Tooltip)
+// Abilities: A0US (Protector of Kings), Tip (Tooltip - Normal)
 {
 Protector of Kings
 }
@@ -107988,13 +107988,13 @@ Summons Ancestral Spirits which steal health from enemy units and give it back t
 }
 
 STRING 18062
-// Abilities: A0US (Protector of Kings), Tip (Tooltip - Normal)
+// Abilities: A0US (Protector of Kings), Name (Name)
 {
 Protector of Kings
 }
 
 STRING 18063
-// Abilities: A0US (Protector of Kings), Name (Name)
+// Buffs/Effects: B0AX (), Bufftip (Tooltip)
 {
 Protector of Kings
 }
