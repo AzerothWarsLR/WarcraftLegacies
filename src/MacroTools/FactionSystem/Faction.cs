@@ -503,7 +503,8 @@ namespace MacroTools.FactionSystem
     /// <summary>
     ///   Attempts to retrieve a <see cref="QuestData" /> belonging to this <see cref="Faction" /> with the given title.
     /// </summary>
-    public QuestData GetQuestByTitle(string parameter) => _questsByName[parameter];
+    public QuestData? GetQuestByTitle(string parameter) =>
+      _questsByName.ContainsKey(parameter) ? _questsByName[parameter] : null;
 
     /// <summary>
     /// Returns the first <see cref="QuestData"/> the <see cref="Faction"/> has with the given <see cref="Type"/>.

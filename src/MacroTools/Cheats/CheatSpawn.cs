@@ -5,6 +5,9 @@ using static War3Api.Common;
 
 namespace MacroTools.Cheats
 {
+  /// <summary>
+  /// A <see cref="Cheat"/> that spawns the specified units or items the specified number of times.
+  /// </summary>
   public sealed class CheatSpawn : Command
   {
     /// <inheritdoc />

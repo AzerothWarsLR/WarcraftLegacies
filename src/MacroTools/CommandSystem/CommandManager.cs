@@ -41,10 +41,6 @@ namespace MacroTools.CommandSystem
               return;
 
             var parameters = SplitParameters(GetEventPlayerChatString());
-            foreach (var paremeter in parameters)
-            {
-              Console.WriteLine(paremeter);
-            }
 
             if (parameters.Length < command.MinimumParameterCount)
             {
