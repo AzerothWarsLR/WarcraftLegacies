@@ -28,15 +28,11 @@ namespace MacroTools.Cheats
     {
       try
       {
-        var kickId = S2I(parameters[0]);
         var faction = FactionManager.GetFromName(parameters[0]);
-        if (faction != null)
-        {
-          faction.ScoreStatus = ScoreStatus.Defeated;
-          return "Kicking player " + GetPlayerName(Player(kickId)) + ".";
-        }
-        return " Failed kicking player " + GetPlayerName(Player(kickId)) + ".";
-
+        if (faction == null)
+          return $"There is no registered {nameof(Faction)} with the name {parameters[0]}.";
+        faction.ScoreStatus = ScoreStatus.Defeated;
+        return $"Kicking {nameof(Faction)} {faction.Name}.";
       }
       catch (Exception ex)
       {
