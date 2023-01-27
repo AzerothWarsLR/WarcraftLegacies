@@ -32,7 +32,7 @@ namespace WarcraftLegacies.Source.Mechanics.Scourge
         .RegisterUnitEvent(lichKing.Unit, EVENT_UNIT_DEATH)
         .AddAction(() =>
         {
-          CheckHelmOfDomination();
+          MaybeDropHelmOfDomination();
           UnregisterEvents();
         });
 
@@ -42,7 +42,7 @@ namespace WarcraftLegacies.Source.Mechanics.Scourge
 
     private static void OnScourgeLeaveGame(object? sender, Faction faction)
     {
-      CheckHelmOfDomination();
+      MaybeDropHelmOfDomination();
       UnregisterEvents();
     }
 
@@ -53,9 +53,9 @@ namespace WarcraftLegacies.Source.Mechanics.Scourge
         ScourgeSetup.Scourge.LeftGame -= OnScourgeLeaveGame;
     }
 
-    private static void CheckHelmOfDomination()
+    private static void MaybeDropHelmOfDomination()
     {
-      if (_lichKing?.Unit == null)
+      if (_lichKing?.Unit == null || !UnitHasItem(_lichKing.Unit, _helmOfDomination?.Item))
         return;
 
       var lichKingPosition = _lichKing.Unit.GetPosition();
