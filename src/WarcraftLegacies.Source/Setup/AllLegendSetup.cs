@@ -62,7 +62,7 @@ namespace WarcraftLegacies.Source.Setup
     /// <summary>
     /// Contains references to all Naga <see cref="Legend"/>s.
     /// </summary>
-    public LegendNaga Naga { get; }
+    public LegendIllidan Naga { get; }
     
     /// <summary>
     /// Contains references to all Quel'thalas <see cref="Legend"/>s.
@@ -109,7 +109,7 @@ namespace WarcraftLegacies.Source.Setup
       Kultiras = new LegendKultiras(preplacedUnitSystem);
       Legion = new LegendLegion(preplacedUnitSystem);
       Lordaeron = new LegendLordaeron(preplacedUnitSystem, artifactSetup);
-      Naga = new LegendNaga();
+      Naga = new LegendIllidan();
       Quelthalas = new LegendQuelthalas(preplacedUnitSystem);
       Scourge = new LegendScourge(preplacedUnitSystem);
       Sentinels = new LegendSentinels(preplacedUnitSystem);
