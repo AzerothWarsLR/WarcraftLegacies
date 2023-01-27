@@ -2773,6 +2773,12 @@ STRING 463
 Q
 }
 
+STRING 464
+// Units: n04Y (Nazjatar (25gold/min)), Name (Name)
+{
+Nazjatar (25gold/min)
+}
+
 STRING 465
 // Upgrades: Rows (Pulverize Damage Increase), EditorSuffix (Editor Suffix)
 {
@@ -6464,6 +6470,12 @@ STRING 1078
 Q
 }
 
+STRING 1079
+// Units: n04O (Doom Lord), Name (Name)
+{
+Doom Lord
+}
+
 STRING 1080
 // Units: ensh (Naisha), EditorSuffix (Name - Editor Suffix)
 {
@@ -8786,7 +8798,7 @@ STRING 1466
 }
 
 STRING 1467
-// Units: n04O (Greater Doom Guard), EditorSuffix (Name - Editor Suffix)
+// Units: n04O (Doom Lord), EditorSuffix (Name - Editor Suffix)
 {
 (Legion)
 }
@@ -9079,6 +9091,12 @@ STRING 1515
 Z
 }
 
+STRING 1516
+// Units: n04O (Doom Lord), Tip (Tooltip - Basic)
+{
+Summon Doom Lord
+}
+
 STRING 1517
 // Upgrades: R035 (Chaos), EditorSuffix (Editor Suffix)
 {
@@ -9169,6 +9187,12 @@ STRING 1531
 C
 }
 
+STRING 1532
+// Units: n04O (Doom Lord), Ubertip (Tooltip - Extended)
+{
+Elite defender charged with guarding the Greater Demons.|n|cfff5962dAbilities:|R Cripple, Warstomp, Devour Magic, Devotion Aura, Pulverize, Resistant Skin|n|n|cff99b4d1Can only summon 6.|r|n|cffffcc00Attacks land and air units.|r
+}
+
 STRING 1533
 // Units: n0C9 (Temple of Tides), Tip (Tooltip - Basic)
 {
@@ -9197,6 +9221,12 @@ STRING 1537
 // Units: h06C (High Tower), Hotkey (Hotkey)
 {
 D
+}
+
+STRING 1538
+// Destructibles: B013 (Whirlpool Blockers), Name (Name)
+{
+Whirlpool Blockers
 }
 
 STRING 1539
@@ -9575,6 +9605,12 @@ STRING 1601
 // Units: U02D (Death Knight Lord), Tip (Tooltip - Basic)
 {
 Summon Teron Gorefiend
+}
+
+STRING 1602
+// Abilities: A10H (Pulverize), EditorSuffix (Editor Suffix)
+{
+(Doom Lord)
 }
 
 STRING 1603
@@ -10055,12 +10091,6 @@ STRING 1682
 // Units: o01D (Bloodlust Totem), Name (Name)
 {
 Bloodlust Totem
-}
-
-STRING 1683
-// Units: n04Y (Nazjatar Royal Court (25gold/min)), Name (Name)
-{
-Nazjatar Royal Court (25gold/min)
 }
 
 STRING 1684
@@ -11899,7 +11929,7 @@ Z
 }
 
 STRING 1990
-// Units: n04O (Greater Doom Guard), Hotkey (Hotkey)
+// Units: n04O (Doom Lord), Hotkey (Hotkey)
 {
 W
 }
@@ -12857,7 +12887,7 @@ Upgrade to Healing Spire
 }
 
 STRING 2150
-// Destructibles: B013 (Rock Chunks), EditorSuffix (Editor Suffix)
+// Destructibles: B013 (Whirlpool Blockers), EditorSuffix (Editor Suffix)
 {
 (Islands Blockade)
 }
@@ -14314,24 +14344,6 @@ STRING 2392
 A
 }
 
-STRING 2393
-// Units: n04O (Greater Doom Guard), Name (Name)
-{
-Greater Doom Guard
-}
-
-STRING 2394
-// Units: n04O (Greater Doom Guard), Tip (Tooltip - Basic)
-{
-Summon Greater Doom Guard
-}
-
-STRING 2395
-// Units: n04O (Greater Doom Guard), Ubertip (Tooltip - Extended)
-{
-Elite defender charged with guarding the Greater Demons.|n|cfff5962dAbilities:|R Cripple, Warstomp, Devour Magic, Devotion Aura, Cleaving Attack, Resistant Skin|n|n|cff99b4d1Can only summon 6.|r|n|cffffcc00Attacks land and air units.|r
-}
-
 STRING 2396
 // Units: n04M (Pocket Factory), EditorSuffix (Name - Editor Suffix)
 {
@@ -15677,12 +15689,6 @@ Ironforge, Stormwind, Kultiras
 STRING 2620
 {
 Druids, Draenei, Sentinels
-}
-
-STRING 2621
-// Units: n00R (Nazjatar Depths (15gold/min)), Name (Name)
-{
-Nazjatar Depths (15gold/min)
 }
 
 STRING 2622
@@ -28877,6 +28883,12 @@ STRING 4819
 Q
 }
 
+STRING 4820
+// Abilities: A0EQ (Cleaving Attack), EditorSuffix (Editor Suffix)
+{
+(Teal - Kazzak)
+}
+
 STRING 4821
 // Abilities: Aspa (Spider Attack), EditorSuffix (Editor Suffix)
 {
@@ -41165,12 +41177,6 @@ STRING 6868
 Summon Mur'gul - [|cffffcc00Level 1|r]
 }
 
-STRING 6869
-// Abilities: A10H (Pulverize), EditorSuffix (Editor Suffix)
-{
-(Nazgrim) (iron giant)
-}
-
 STRING 6870
 // Abilities: A10H (Pulverize), Ubertip (Tooltip - Normal - Extended)
 {
@@ -47165,6 +47171,12 @@ STRING 7865
 // Abilities: A0T4 (Bishop of Silver Hand), Name (Name)
 {
 Bishop of Silver Hand
+}
+
+STRING 7866
+// Abilities: A0DT (Assasinate), EditorSuffix (Editor Suffix)
+{
+(Katherine)
 }
 
 STRING 7867
@@ -58616,12 +58628,6 @@ STRING 9774
 Gives a 35% chance for an attack to be absorbed reducing damage taken by 40 damage. Attacks cannot be reduced below 3 damage.
 }
 
-STRING 9775
-// Abilities: A0EQ (Cleaving Attack), EditorSuffix (Editor Suffix)
-{
-(Teal - Kazzak, Legion - Doom Guard)
-}
-
 STRING 9776
 // Abilities: A0EQ (Cleaving Attack), Ubertip (Tooltip - Normal - Extended)
 {
@@ -59586,12 +59592,6 @@ STRING 9936
 // Abilities: A0DU (Banshee Queen), Ubertip (Tooltip - Normal - Extended)
 {
 Unleashes ancient spirits which drain enemy health and replenish Sylvanas's health.|nLasts <AOls,HeroDur1> seconds.
-}
-
-STRING 9937
-// Abilities: A0DT (Assasinate), EditorSuffix (Editor Suffix)
-{
-(Brann)
 }
 
 STRING 9938

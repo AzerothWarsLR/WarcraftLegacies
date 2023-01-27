@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using MacroTools;
 using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
@@ -38,7 +38,7 @@ namespace WarcraftLegacies.Source.Quests.Warsong
     }
 
     /// <inheritdoc/>
-    protected override string RewardFlavour => "The Crossroads have been constructed. You have received 2000 Lumber.";
+    protected override string RewardFlavour => "The Crossroads have been constructed and the surrounding land has been harvested for wood.";
 
     /// <inheritdoc/>
     protected override string RewardDescription => "Control of the Crossroads, +2000 Lumber";

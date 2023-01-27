@@ -25,7 +25,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
       "Sapphiron has been slain, and has been reanimated as a mighty Frost Wyrm under the command of the Scourge.";
 
     /// <inheritdoc/>
-    protected override string RewardDescription => "The demihero Sapphiron and the ability to train Frost Wyrms";
+    protected override string RewardDescription => "The demihero Sapphiron and unlocks one of the requirements to train Frost Wyrms";
 
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)

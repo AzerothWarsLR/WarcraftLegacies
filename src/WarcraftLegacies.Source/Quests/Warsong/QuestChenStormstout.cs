@@ -1,4 +1,4 @@
-using MacroTools.FactionSystem;
+﻿using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
@@ -26,10 +26,10 @@ namespace WarcraftLegacies.Source.Quests.Warsong
     }
 
     /// <inheritdoc/>
-    protected override string RewardFlavour => "Chen Stormstout is now available for training at your Altar.";
+    protected override string RewardFlavour => "Chen Stormstout has joined the Warsong as a mercenary!";
 
     /// <inheritdoc/>
-    protected override string RewardDescription => "The hero Chen Stormstout";
+    protected override string RewardDescription => "The hero Chen Stormstout is now trainable at the Altar";
 
     /// <inheritdoc/>
     protected override void OnFail(Faction completingFaction)
