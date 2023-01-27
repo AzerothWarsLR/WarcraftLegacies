@@ -50,7 +50,7 @@ namespace WarcraftLegacies.Source.Quests.Warsong
       CreateStructureForced(completingFaction.Player, FourCC("o028"), -6912, 15744, 4.712389f * MathEx.DegToRad, 128);
       CreateStructureForced(completingFaction.Player, FourCC("n08E"), -8299, 16110, 1.850517f * MathEx.DegToRad, 128);
       CreateStructureForced(completingFaction.Player, FourCC("o02Q"), -8512, 15936, 4.712389f * MathEx.DegToRad, 128);
-      CreateStructureForced(completingFaction.Player, FourCC("n08E"), -85136, 16171, 1.126743f * MathEx.DegToRad, 128);
+      CreateStructureForced(completingFaction.Player, FourCC("n08E"), -8513, 16171, 1.126743f * MathEx.DegToRad, 128);
       CreateStructureForced(completingFaction.Player, FourCC("o01S"), -8192, 16576, 4.712389f * MathEx.DegToRad, 128);
       CreateStructureForced(completingFaction.Player, FourCC("o02M"), -8048, 16427, -0.7628738f * MathEx.DegToRad, 128);
       CreateStructureForced(completingFaction.Player, FourCC("o02M"), -8065, 15788, -0.08624744f * MathEx.DegToRad, 128);
