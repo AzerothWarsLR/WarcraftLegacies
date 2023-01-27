@@ -2347,6 +2347,12 @@ STRING 392
 W
 }
 
+STRING 393
+// Units: ubdd (Sapphiron), Ubertip (Tooltip - Extended)
+{
+Flying demi-hero, adept at dealing area of effect damage and disabling buildings.|n|cfff5962dAbilities:|R Hypothermic Breath, Frost Breath, Resistant Skin|n|cfff5962dCan learn:|R Freezing Breath|n|n|cffffcc00Attacks land and air units.|r
+}
+
 STRING 394
 // Units: ohun (Headhunter), EditorSuffix (Name - Editor Suffix)
 {
@@ -6456,12 +6462,6 @@ STRING 1078
 // Units: Umal (The Cunning), Hotkey (Hotkey)
 {
 Q
-}
-
-STRING 1079
-// Units: ubdd (Sapphiron), Ubertip (Tooltip - Extended)
-{
-Flying demi-hero.|n|cfff5962dAbilities:|R Freazing Breath, Hypothermic Breath and Frost Breath.|n|n|cffffcc00Attacks land and air units.|r
 }
 
 STRING 1080
@@ -61923,7 +61923,7 @@ STRING 10325
 }
 
 STRING 10326
-// Units: o06A (Improved High Watchtower), Ubertip (Tooltip - Extended)
+// Units: o03H (Improved Twilight Lookout), Ubertip (Tooltip - Extended)
 {
 Defensive structure.|n|cfff5962dCan learn:|R Spiked Barricades |n|n|cffffcc00Attacks land and air units.|r
 }
@@ -100029,7 +100029,7 @@ Upgrade to Improved Twilight Lookout
 }
 
 STRING 16724
-// Units: o03H (Improved Twilight Lookout), Ubertip (Tooltip - Extended)
+// Units: o06A (Improved High Watchtower), Ubertip (Tooltip - Extended)
 {
 Defensive structure.|n|cfff5962dCan learn:|R Spiked Barricades |n|n|cffffcc00Attacks land and air units.|r
 }
