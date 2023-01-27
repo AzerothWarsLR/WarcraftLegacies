@@ -6,7 +6,7 @@ using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup.Legends
 {
-  public sealed class LegendIronforge : IRegistersLegends
+  public sealed class LegendIronforge
   {
     public LegendaryHero Dagran { get; }
     public LegendaryHero Falstad { get; }
@@ -55,8 +55,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
         Unit = preplacedUnitSystem.GetUnit(FourCC("h0AK"))
       };
     }
-
-    /// <inheritdoc />
+    
     public void RegisterLegends()
     {
       LegendaryHeroManager.Register(Dagran);

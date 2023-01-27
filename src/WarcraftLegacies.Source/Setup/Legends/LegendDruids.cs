@@ -5,7 +5,7 @@ using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup.Legends
 {
-  public sealed class LegendDruids : IRegistersLegends
+  public sealed class LegendDruids
   {
     public LegendaryHero Cenarius { get; }
     public LegendaryHero Malfurion { get; }
@@ -59,8 +59,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
         StartingXp = 1800
       };
     }
-
-    /// <inheritdoc />
+    
     public void RegisterLegends()
     {
       LegendaryHeroManager.Register(Cenarius);

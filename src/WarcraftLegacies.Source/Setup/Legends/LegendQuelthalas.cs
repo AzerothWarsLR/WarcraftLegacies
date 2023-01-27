@@ -6,7 +6,7 @@ using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup.Legends
 {
-  public sealed class LegendQuelthalas : IRegistersLegends
+  public sealed class LegendQuelthalas
   {
     public LegendaryHero Anasterian { get; }
     public LegendaryHero Rommath { get; }
@@ -93,8 +93,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
           "Kil'jaeden the Deceiver has been annihilated, but it is too late for the Blood Elves, who will continue to live and die with demonic taint coursing through their veins."
       };
     }
-
-    /// <inheritdoc />
+    
     public void RegisterLegends()
     {
       LegendaryHeroManager.Register(Anasterian);

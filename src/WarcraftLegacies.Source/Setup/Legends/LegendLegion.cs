@@ -5,7 +5,7 @@ using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup.Legends
 {
-  public sealed class LegendLegion : IRegistersLegends
+  public sealed class LegendLegion
   {
     public LegendaryHero Archimonde { get; }
     public LegendaryHero Anetheron { get; }
@@ -42,8 +42,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
         PlayerColor = PLAYER_COLOR_GREEN
       };
     }
-
-    /// <inheritdoc />
+    
     public void RegisterLegends()
     {
       LegendaryHeroManager.Register(Archimonde);

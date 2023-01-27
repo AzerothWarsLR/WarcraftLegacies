@@ -10,7 +10,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
   /// <summary>
   /// Responsible for creating and storing all Lordaeron <see cref="Legend"/>s.
   /// </summary>
-  public sealed class LegendLordaeron : IRegistersLegends
+  public sealed class LegendLordaeron
   {
     public LegendaryHero Terenas { get; }
     public LegendaryHero Uther { get; }
@@ -112,8 +112,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
         UnitType = Constants.UNIT_HART_CROWN_PRINCE_OF_LORDAERON_LORDAERON
       };
     }
-
-    /// <inheritdoc />
+    
     public void RegisterLegends()
     {
       LegendaryHeroManager.Register(Terenas);

@@ -8,7 +8,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
   /// <summary>
   /// Responsible for setting up and storing all Sentinel <see cref="Legend"/>s.
   /// </summary>
-  public sealed class LegendSentinels : IRegistersLegends
+  public sealed class LegendSentinels
   {
     public LegendaryHero Maiev { get; }
     public LegendaryHero Tyrande { get; }
@@ -64,8 +64,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
         Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_H03C_BLACK_ROOK_HOLD_NEUTRAL_HOSTILE)
       };
     }
-
-    /// <inheritdoc />
+    
     public void RegisterLegends()
     {
       LegendaryHeroManager.Register(Maiev);

@@ -4,7 +4,7 @@ using MacroTools.LegendSystem;
 
 namespace WarcraftLegacies.Source.Setup.Legends
 {
-  public sealed class LegendWarsong : IRegistersLegends
+  public sealed class LegendWarsong
   {
     public LegendaryHero GromHellscream { get; }
     public Capital StonemaulKeep { get; }
@@ -47,8 +47,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
         }
       };
     }
-
-    /// <inheritdoc />
+    
     public void RegisterLegends()
     {
       LegendaryHeroManager.Register(GromHellscream);

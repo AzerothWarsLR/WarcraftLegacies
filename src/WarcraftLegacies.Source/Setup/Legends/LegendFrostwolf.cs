@@ -5,7 +5,7 @@ using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup.Legends
 {
-  public sealed class LegendFrostwolf : IRegistersLegends
+  public sealed class LegendFrostwolf
   {
     public LegendaryHero Cairne { get; }
     public LegendaryHero Thrall { get; }
@@ -57,8 +57,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
         StartingXp = 1000
       };
     }
-
-    /// <inheritdoc />
+    
     public void RegisterLegends()
     {
       LegendaryHeroManager.Register(Cairne);

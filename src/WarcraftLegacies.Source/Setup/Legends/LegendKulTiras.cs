@@ -6,7 +6,7 @@ using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup.Legends
 {
-  public sealed class LegendKultiras : IRegistersLegends
+  public sealed class LegendKultiras
   {
     public LegendaryHero LegendAdmiral { get; }
     public LegendaryHero LegendLucille { get; }
@@ -46,8 +46,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
       Flagship.Unit.SetInvulnerable(true);
       Flagship.Unit.Pause(true);
     }
-
-    /// <inheritdoc />
+    
     public void RegisterLegends()
     {
       LegendaryHeroManager.Register(LegendAdmiral);

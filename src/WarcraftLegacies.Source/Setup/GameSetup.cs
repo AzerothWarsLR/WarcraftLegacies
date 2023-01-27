@@ -48,7 +48,7 @@ namespace WarcraftLegacies.Source.Setup
       SoundLibrary.Setup();
       var artifactSetup = new ArtifactSetup(preplacedUnitSystem);
       var allLegendSetup = new AllLegendSetup(preplacedUnitSystem, artifactSetup);
-      allLegendSetup.RegisterLegends();
+      allLegendSetup.RegisterLegends(preplacedUnitSystem);
       ShoreSetup.Setup();
       ControlPointSetup.Setup();
       InstanceSetup.Setup(preplacedUnitSystem);

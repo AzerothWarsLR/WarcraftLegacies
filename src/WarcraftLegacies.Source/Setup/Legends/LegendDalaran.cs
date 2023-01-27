@@ -9,7 +9,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
   /// <summary>
   /// Responsible for setting up and storing all Dalaran <see cref="Legend"/>s.
   /// </summary>
-  public sealed class LegendDalaran : IRegistersLegends
+  public sealed class LegendDalaran
   {
     public LegendaryHero Antonidas { get; }
     public LegendaryHero Medivh { get; }
@@ -65,8 +65,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
       };
       Antonidas.AddUnitDependency(Dalaran.Unit);
     }
-
-    /// <inheritdoc />
+    
     public void RegisterLegends()
     {
       LegendaryHeroManager.Register(Antonidas);

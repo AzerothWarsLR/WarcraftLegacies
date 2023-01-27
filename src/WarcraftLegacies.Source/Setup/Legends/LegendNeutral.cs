@@ -5,7 +5,7 @@ using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup.Legends
 {
-  public sealed class LegendNeutral : IRegistersLegends
+  public sealed class LegendNeutral
   {
     public LegendaryHero Ragnaros { get; }
     public Capital Auchindoun { get; }
@@ -154,8 +154,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
         Capturable = true
       };
     }
-
-    /// <inheritdoc />
+    
     public void RegisterLegends()
     {
       LegendaryHeroManager.Register(Ragnaros);

@@ -4,7 +4,7 @@ using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup.Legends
 {
-  public sealed class LegendNaga : IRegistersLegends
+  public sealed class LegendNaga
   {
     public LegendaryHero Illidan { get; }
     public LegendaryHero Vashj { get; }
@@ -48,8 +48,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
         StartingXp = 4000
       };
     }
-
-    /// <inheritdoc />
+    
     public void RegisterLegends()
     {
       LegendaryHeroManager.Register(Illidan);

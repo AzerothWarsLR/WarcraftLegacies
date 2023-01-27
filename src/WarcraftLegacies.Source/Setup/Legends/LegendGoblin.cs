@@ -4,7 +4,7 @@ using MacroTools.LegendSystem;
 
 namespace WarcraftLegacies.Source.Setup.Legends
 {
-  public sealed class LegendGoblin : IRegistersLegends
+  public sealed class LegendGoblin
   {
     public LegendaryHero Gallywix { get; }
     public LegendaryHero Noggenfogger { get; }
@@ -37,8 +37,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
       };
       KezanTradingCenter.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_O05I_MISSILE_BATTERY_GOBLIN_TOWER));
     }
-
-    /// <inheritdoc />
+    
     public void RegisterLegends()
     {
       LegendaryHeroManager.Register(Gallywix);

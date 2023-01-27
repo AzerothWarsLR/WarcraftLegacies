@@ -6,7 +6,7 @@ using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup.Legends
 {
-  public sealed class LegendFelHorde : IRegistersLegends
+  public sealed class LegendFelHorde
   {
     public LegendaryHero Magtheridon { get; }
     public LegendaryHero Zuluhed { get; }
@@ -94,8 +94,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
         Unit = preplacedUnitSystem.GetUnit(FourCC("o008"))
       };
     }
-
-    /// <inheritdoc />
+    
     public void RegisterLegends()
     {
       LegendaryHeroManager.Register(Magtheridon);

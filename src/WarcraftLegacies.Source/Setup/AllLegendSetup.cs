@@ -121,7 +121,7 @@ namespace WarcraftLegacies.Source.Setup
     /// <summary>
     /// Registers all <see cref="Legend"/>s managed by the <see cref="AllLegendSetup"/>.
     /// </summary>
-    public void RegisterLegends()
+    public void RegisterLegends(PreplacedUnitSystem preplacedUnitSystem)
     {
       Dalaran.RegisterLegends();
       Draenei.RegisterLegends();
@@ -135,7 +135,7 @@ namespace WarcraftLegacies.Source.Setup
       Lordaeron.RegisterLegends();
       Naga.RegisterLegends();
       Quelthalas.RegisterLegends();
-      Scourge.RegisterLegends();
+      Scourge.RegisterLegends(preplacedUnitSystem);
       Sentinels.RegisterLegends();
       Stormwind.RegisterLegends();
       Warsong.RegisterLegends();

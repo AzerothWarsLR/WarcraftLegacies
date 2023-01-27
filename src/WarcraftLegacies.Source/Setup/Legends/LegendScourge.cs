@@ -12,7 +12,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
   /// <summary>
   /// Responsible for setting up and managing all <see cref="ScourgeSetup.Scourge"/> <see cref="Legend"/>s.
   /// </summary>
-  public sealed class LegendScourge : IRegistersLegends
+  public sealed class LegendScourge
   {
     public LegendaryHero Kelthuzad { get; }
     public LegendaryHero Anubarak { get; }
@@ -65,6 +65,15 @@ namespace WarcraftLegacies.Source.Setup.Legends
         DeathMessage =
           "The great Lich King has been destroyed. With no central mind to command them, the forces of the Undead have gone rogue."
       };
+    }
+    
+    public void RegisterLegends(PreplacedUnitSystem preplacedUnitSystem)
+    {
+      LegendaryHeroManager.Register(Kelthuzad);
+      LegendaryHeroManager.Register(Anubarak);
+      LegendaryHeroManager.Register(Rivendare);
+      LegendaryHeroManager.Register(Arthas);
+      CapitalManager.Register(TheFrozenThrone);
       TheFrozenThrone.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_N094_ICECROWN_OBELISK_RED, new Point(-3655, 20220)));
       TheFrozenThrone.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_N094_ICECROWN_OBELISK_RED, new Point(-3015, 20762)));
       TheFrozenThrone.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_N094_ICECROWN_OBELISK_RED, new Point(-3643, 22588)));
@@ -76,16 +85,6 @@ namespace WarcraftLegacies.Source.Setup.Legends
         if (TheFrozenThrone.Unit.OwningPlayer() != Player(bj_PLAYER_NEUTRAL_VICTIM))
           TheFrozenThrone.Unit.SetOwner(Player(bj_PLAYER_NEUTRAL_VICTIM));
       });
-    }
-
-    /// <inheritdoc />
-    public void RegisterLegends()
-    {
-      LegendaryHeroManager.Register(Kelthuzad);
-      LegendaryHeroManager.Register(Anubarak);
-      LegendaryHeroManager.Register(Rivendare);
-      LegendaryHeroManager.Register(Arthas);
-      CapitalManager.Register(TheFrozenThrone);
       CapitalManager.Register(Utgarde);
     }
   }

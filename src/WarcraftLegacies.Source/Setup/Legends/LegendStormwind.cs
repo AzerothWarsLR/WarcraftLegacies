@@ -7,7 +7,7 @@ using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup.Legends
 {
-  public sealed class LegendStormwind : IRegistersLegends
+  public sealed class LegendStormwind
   {
     public LegendaryHero Varian { get; }
     public LegendaryHero Khadgar { get; }
@@ -81,8 +81,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
         .RegisterUnitEvent(Stormwindkeep.Unit, EVENT_UNIT_DEATH)
         .AddAction(() => ConstructionSiteMartial.Unit.Kill());
     }
-
-    /// <inheritdoc />
+    
     public void RegisterLegends()
     {
       LegendaryHeroManager.Register(Varian);
