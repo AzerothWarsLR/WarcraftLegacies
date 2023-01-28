@@ -12768,6 +12768,12 @@ STRING 2128
 Q
 }
 
+STRING 2129
+// Buffs/Effects: B02Q (), Bufftip (Tooltip)
+{
+|cffff0000Fear Aura|r
+}
+
 STRING 2130
 // Units: n05K (Warsong Lumber Camp (15gold/min)), Name (Name)
 {
@@ -76162,7 +76168,7 @@ Q
 }
 
 STRING 12690
-// Upgrades: R00L (Chaos), EditorSuffix (Editor Suffix)
+// Units: h092 (Order Inquisitor), EditorSuffix (Name - Editor Suffix)
 {
 (Kul Tiras)
 }
@@ -81512,12 +81518,6 @@ STRING 13581
 // Buffs/Effects: B02R (), Buffubertip (Tooltip - Extended)
 {
 This unit has Chemical Frenzy; its attack rate and movement speed are increased.
-}
-
-STRING 13582
-// Buffs/Effects: B02Q (), Bufftip (Tooltip)
-{
-Fear Aura
 }
 
 STRING 13583
@@ -88866,7 +88866,7 @@ Quest Completed: Explosive Engineering
 }
 
 STRING 14823
-// Units: h092 (Order Inquisitor), EditorSuffix (Name - Editor Suffix)
+// Units: h093 (Order Chapter House), EditorSuffix (Name - Editor Suffix)
 {
 (Kul Tiras)
 }
@@ -95279,13 +95279,13 @@ STRING 15923
 }
 
 STRING 15924
-// Units: h093 (Order Chapter House), EditorSuffix (Name - Editor Suffix)
+// Units: h0A0 (Fusillier), EditorSuffix (Name - Editor Suffix)
 {
 (Kul Tiras)
 }
 
 STRING 15925
-// Units: h0A0 (Fusillier), EditorSuffix (Name - Editor Suffix)
+// Abilities: A0TO (Summon Garrison), EditorSuffix (Editor Suffix)
 {
 (Kul Tiras)
 }
@@ -95585,7 +95585,7 @@ Path of Redemption
 }
 
 STRING 15976
-// Abilities: A0TO (Summon Garrison), EditorSuffix (Editor Suffix)
+// Upgrades: R00L (Chaos), EditorSuffix (Editor Suffix)
 {
 (Kul Tiras)
 }
