@@ -5,9 +5,7 @@ using MacroTools.ResearchSystems;
 using WarcraftLegacies.Source.Researches;
 using WarcraftLegacies.Source.Researches.Ironforge;
 using WarcraftLegacies.Source.Researches.Stormwind;
-using WCSharp.Events;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup
 {
@@ -22,11 +20,13 @@ namespace WarcraftLegacies.Source.Setup
     /// <param name="preplacedUnitSystem">A system that can find preplaced units.</param>
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
-      DeeprunTram.Setup(preplacedUnitSystem);
       TierCodeOfChivalry.Setup();
       TierExpeditionSurvivors.Setup();
       TierReflectivePlating.Setup();
       TierVeteranGuard.Setup();
+
+      ResearchManager.Register(new DeeprunTram(Constants.UPGRADE_R014_DEEPRUN_TRAM_IRONFORGE, 70, 75,
+        preplacedUnitSystem));
 
       ResearchManager.Register(new VeteranFootmen(Constants.UPGRADE_R00B_VETERAN_FOOTMEN_LORDAERON, 220, 120));
 

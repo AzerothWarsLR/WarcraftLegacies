@@ -20,6 +20,7 @@ namespace MacroTools.ResearchSystems
       if (ByTypeId.ContainsKey(research.ResearchTypeId))
         throw new InvalidOperationException($"{GetObjectName(research.ResearchTypeId)} has already been registered.");
       ByTypeId.Add(research.ResearchTypeId, research);
+      research.OnRegister();
     }
     
     /// <summary>
