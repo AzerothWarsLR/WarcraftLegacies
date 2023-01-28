@@ -16,7 +16,7 @@ namespace WarcraftLegacies.Source.Quests.Goblin
     protected override string RewardDescription =>
       "Shredders will gain cleaving attack and 500 hit points. You will gain 30000 lumber.";
 
-    public QuestLumberMarket(Capital nordrassil) : base("Lumber Market Krash",
+    public QuestLumberMarket(Capital nordrassil) : base("Lumber Market Crash",
       "The World Tree would provide enough lumber to completely crash the lumber market, forcing our Shredders to specialise more on war.",
       "ReplaceableTextures\\CommandButtons\\BTNJunkGolem.blp")
     {

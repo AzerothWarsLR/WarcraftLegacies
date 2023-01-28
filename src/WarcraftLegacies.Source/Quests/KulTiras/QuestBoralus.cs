@@ -32,7 +32,7 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
       AddObjective(new ObjectiveUpgrade(Constants.UNIT_H06I_CASTLE_KUL_TIRAS_T3, Constants.UNIT_H062_TOWN_HALL_KUL_TIRAS_T1));
       AddObjective(new ObjectiveExpire(900));
       AddObjective(new ObjectiveSelfExists());
-      ResearchId = Constants.UPGRADE_R00L_QUEST_COMPLETED_CITY_AT_SEA_KULTIRAS;
+      ResearchId = Constants.UPGRADE_R00L_QUEST_COMPLETED_THE_CITY_AT_SEA_KUL_TIRAS;
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
       _rescueUnits.Remove(preplacedUnitSystem.GetUnit(Constants.UNIT_H05V_PROUDMOORE_FLAGSHIP_KUL_TIRAS)); // Proudmoore Capital Ship is not supposed to be rescued on this quest
       Required = true;

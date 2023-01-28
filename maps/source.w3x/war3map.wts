@@ -75016,7 +75016,7 @@ Boarding
 }
 
 STRING 12499
-// Upgrades: R00L (Chaos), EditorSuffix (Editor Suffix)
+// Upgrades: R04U (Chaos), EditorSuffix (Editor Suffix)
 {
 (KulTiras)
 }
@@ -76159,6 +76159,12 @@ STRING 12689
 // Abilities: A01H (Flame Strike), Hotkey (Hotkey - Normal)
 {
 Q
+}
+
+STRING 12690
+// Upgrades: R00L (Chaos), EditorSuffix (Editor Suffix)
+{
+(Kul Tiras)
 }
 
 STRING 12691
@@ -79318,6 +79324,12 @@ STRING 13216
 Heavy melee unit infused with a persistent soul.|n|cfff5962dAbilities:|R Persistent Soul|n|n|cffffcc00Attacks land units.|r
 }
 
+STRING 13217
+// Upgrades: R00L (Chaos), Name (Name)
+{
+Quest Completed: The City at Sea
+}
+
 STRING 13218
 // Buffs/Effects: B075 (), Bufftip (Tooltip)
 {
@@ -79592,6 +79604,12 @@ STRING 13263
 // Buffs/Effects: B06H (), Bufftip (Tooltip)
 {
 Voodoo Restoration
+}
+
+STRING 13264
+// Upgrades: R08M (Chaos), Name (Name)
+{
+Quest Completed: Tear It Down
 }
 
 STRING 13265
@@ -89717,12 +89735,6 @@ STRING 14972
 Mage Armor
 }
 
-STRING 14973
-// Upgrades: R00L (Chaos), Name (Name)
-{
-Quest Completed: City at Sea
-}
-
 STRING 14974
 // Upgrades: R00K (Animal War Training), EditorSuffix (Editor Suffix)
 {
@@ -95410,12 +95422,6 @@ STRING 15947
 A forgotten grave remembered by ony the Forsaken.|nProvides 8 food, which increases the maximum number of units that can be trained.
 }
 
-STRING 15948
-// Upgrades: R04U (Chaos), EditorSuffix (Editor Suffix)
-{
-(KulTiras)
-}
-
 STRING 15949
 // Upgrades: R04P (Priest Adept Training,Priest Master Training), Name (Name)
 {
@@ -100742,12 +100748,6 @@ STRING 16842
 // Upgrades: R070 (Druid of the Talon Adept Training,Druid of the Talon Master Training), Tip (Tooltip)
 {
 Haruspex Master Training
-}
-
-STRING 16843
-// Upgrades: R08M (Chaos), Name (Name)
-{
-Quest Completed: Tear it Down
 }
 
 STRING 16844
