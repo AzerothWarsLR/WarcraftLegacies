@@ -1,3 +1,4 @@
+using System;
 using MacroTools.Cheats;
 using WarcraftLegacies.Source.GameLogic;
 using static War3Api.Common;
@@ -9,8 +10,18 @@ namespace WarcraftLegacies.Source.Cheats
     private static void Actions()
     {
       if (!TestMode.CheatCondition()) return;
-      CinematicMode.EndEarly();
-      DestroyTrigger(GetTriggeringTrigger());
+      try
+      {
+        CinematicMode.EndEarly();
+      }
+      catch (Exception ex)
+      {
+        Console.WriteLine($"Failed to execute {nameof(CheatSkipCinematic)}: {ex}");
+      }
+      finally
+      {
+        DestroyTrigger(GetTriggeringTrigger());
+      }
     }
 
     private static void DelayedSetup()

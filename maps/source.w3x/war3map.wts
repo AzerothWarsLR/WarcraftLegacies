@@ -85432,12 +85432,6 @@ STRING 14239
 Quest Completed: Recruit the Dragonmaw Clan
 }
 
-STRING 14240
-// Upgrades: R068 (Chaos), Name (Name)
-{
-Intro Finished
-}
-
 STRING 14241
 // Upgrades: R067 (Chaos), Name (Name)
 {
