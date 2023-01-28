@@ -13,7 +13,6 @@ using WarcraftLegacies.Source.Mechanics.Neutral;
 using WarcraftLegacies.Source.Mechanics.Quelthalas;
 using WarcraftLegacies.Source.Mechanics.Scourge;
 using WarcraftLegacies.Source.Mechanics.Scourge.Blight;
-using WarcraftLegacies.Source.Rocks;
 using WarcraftLegacies.Source.Setup.FactionSetup;
 using WarcraftLegacies.Source.UnitTypes;
 using static War3Api.Common;
@@ -133,7 +132,7 @@ namespace WarcraftLegacies.Source.Setup
       GilneasGateTowers.Setup(preplacedUnitSystem);
       EyeOfSargerasPickup.Setup();
       SacrificeAcolyte.Setup();
-      IntegrityChecker.Setup(true);
+      IntegrityChecker.Setup(false);
       PeonsStartHarvestingShips.Setup(preplacedUnitSystem);
       DarkPortalControlNexusSetup.Setup(preplacedUnitSystem);
       BlackPortalControlNexusSetup.Setup(preplacedUnitSystem);
