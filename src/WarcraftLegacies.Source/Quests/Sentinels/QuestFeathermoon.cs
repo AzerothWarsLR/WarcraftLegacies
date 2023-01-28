@@ -28,7 +28,7 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
       AddObjective(new ObjectiveUpgrade(Constants.UNIT_N06P_SENTINEL_ENCLAVE_SENTINEL_T3, Constants.UNIT_N06J_SENTINEL_OUTPOST_SENTINEL_T1));
       AddObjective(new ObjectiveExpire(1485));
       AddObjective(new ObjectiveSelfExists());
-      ResearchId = Constants.UPGRADE_R06M_QUEST_COMPLETED_FEATHERMOON_RELIEF;
+      ResearchId = Constants.UPGRADE_R06M_QUEST_COMPLETED_FEATHERMOON_STRONGHOLD;
       foreach (var unit in CreateGroup().EnumUnitsInRect(rescueRect).EmptyToList())
         if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))
         {

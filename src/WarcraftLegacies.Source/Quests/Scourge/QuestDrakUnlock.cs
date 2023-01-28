@@ -25,7 +25,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
     /// Initializes a new instance of the <see cref="QuestDrakUnlock"/> class.
     /// </summary>
     public QuestDrakUnlock(Rectangle rescueRect, Capital draktharonKeep) : base(
-      "Draktharon Keep", "Drak'tharon Keep will be the perfect place for an outpost by the sea.",
+      "Drak'tharon Keep", "Drak'tharon Keep will be the perfect place for an outpost by the sea.",
       "ReplaceableTextures\\CommandButtons\\BTNUndeadShipyard.blp")
     {
       AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N030_DRAK_THARON_KEEP_30GOLD_MIN)));

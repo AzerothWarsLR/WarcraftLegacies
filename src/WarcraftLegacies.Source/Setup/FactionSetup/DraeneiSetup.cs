@@ -12,7 +12,6 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
       Draenei = new Faction("The Exodar", PLAYER_COLOR_NAVY, "|cff000080",
         "ReplaceableTextures\\CommandButtons\\BTNBOSSVelen.blp")
       {
-        UndefeatedResearch = FourCC("R06E"),
         StartingGold = 200,
         StartingLumber = 500,
         ControlPointDefenderUnitTypeId = Constants.UNIT_U008_CONTROL_POINT_DEFENDER_DRAENEI,

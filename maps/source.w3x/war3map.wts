@@ -12768,12 +12768,6 @@ STRING 2128
 Q
 }
 
-STRING 2129
-// Upgrades: R06M (Chaos), Name (Name)
-{
-Quest Completed: Feathermoon Relief
-}
-
 STRING 2130
 // Units: n05K (Warsong Lumber Camp (15gold/min)), Name (Name)
 {
@@ -14356,6 +14350,18 @@ STRING 2393
 This unit is under the effects of Protector of Kings; it has increased armor.
 }
 
+STRING 2394
+// Upgrades: R05Y (Chaos), Name (Name)
+{
+Sentinels exists
+}
+
+STRING 2395
+// Upgrades: R04T (Chaos), Name (Name)
+{
+Legion exists
+}
+
 STRING 2396
 // Units: n04M (Pocket Factory), EditorSuffix (Name - Editor Suffix)
 {
@@ -15701,6 +15707,12 @@ Ironforge, Stormwind, Kultiras
 STRING 2620
 {
 Druids, Draenei, Sentinels
+}
+
+STRING 2621
+// Upgrades: R039 (Chaos), Name (Name)
+{
+Quest Completed: Honor Hold
 }
 
 STRING 2622
@@ -41189,6 +41201,12 @@ STRING 6868
 Summon Mur'gul - [|cffffcc00Level 1|r]
 }
 
+STRING 6869
+// Upgrades: R007 (Chaos), Name (Name)
+{
+Quest Completed: Green-skinned Brutes
+}
+
 STRING 6870
 // Abilities: A10H (Pulverize), Ubertip (Tooltip - Normal - Extended)
 {
@@ -58640,6 +58658,12 @@ STRING 9774
 Gives a 35% chance for an attack to be absorbed reducing damage taken by 40 damage. Attacks cannot be reduced below 3 damage.
 }
 
+STRING 9775
+// Upgrades: R02L (Chaos), Name (Name)
+{
+Illidan exists
+}
+
 STRING 9776
 // Abilities: A0EQ (Cleaving Attack), Ubertip (Tooltip - Normal - Extended)
 {
@@ -59604,6 +59628,12 @@ STRING 9936
 // Abilities: A0DU (Banshee Queen), Ubertip (Tooltip - Normal - Extended)
 {
 Unleashes ancient spirits which drain enemy health and replenish Sylvanas's health.|nLasts <AOls,HeroDur1> seconds.
+}
+
+STRING 9937
+// Upgrades: R06M (Chaos), Name (Name)
+{
+Quest Completed: Feathermoon Stronghold
 }
 
 STRING 9938
@@ -82672,12 +82702,6 @@ STRING 13782
 Dark Iron Square Tower
 }
 
-STRING 13783
-// Upgrades: R02L (Chaos), Name (Name)
-{
-Naga exists
-}
-
 STRING 13784
 // Abilities: A0LK (Arcane Phantom), Ubertip (Tooltip - Normal - Extended)
 {
@@ -85516,12 +85540,6 @@ STRING 14260
 Quest Completed: Those Who Came Before
 }
 
-STRING 14261
-// Upgrades: R05Y (Chaos), Name (Name)
-{
-Sentinel exists
-}
-
 STRING 14262
 // Upgrades: R047 (Marksmanship), EditorSuffix (Editor Suffix)
 {
@@ -85940,12 +85958,6 @@ STRING 14333
 // Upgrades: R04V (Magic Sentry), Ubertip (Tooltip - Extended)
 {
 Improves Frost Wyrms' Hypothermic Breath by increasing its initial damage to <A058,DataA2> and damage per second to <A058,DataE2>.
-}
-
-STRING 14334
-// Upgrades: R04T (Chaos), Name (Name)
-{
-Burning Legion exists
 }
 
 STRING 14335
@@ -87109,12 +87121,6 @@ STRING 14530
 // Abilities: A091 (Seed of Burning Hatred), Researchtip (Tooltip - Learn)
 {
 Learn Seed of Burning Hatred
-}
-
-STRING 14531
-// Upgrades: R039 (Chaos), Name (Name)
-{
-Hellfire Destroyed
 }
 
 STRING 14532
@@ -90255,12 +90261,6 @@ STRING 15064
 // Units: O01Q (Dragonmaw Chieftain), Tip (Tooltip - Basic)
 {
 Summon Nek'rosh
-}
-
-STRING 15065
-// Upgrades: R007 (Chaos), Name (Name)
-{
-Quest Completed: Green-Skinned Brutes
 }
 
 STRING 15066

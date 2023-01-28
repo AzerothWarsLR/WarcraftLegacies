@@ -25,7 +25,7 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
           _rescueUnits.Add(unit);
         }
       AddObjective(new ObjectiveCapitalDead(hellfireCitadel));
-      ResearchId = Constants.UPGRADE_R039_HELLFIRE_DESTROYED;
+      ResearchId = Constants.UPGRADE_R039_QUEST_COMPLETED_HONOR_HOLD;
     }
 
     /// <inheritdoc/>

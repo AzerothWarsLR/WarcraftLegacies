@@ -41,7 +41,7 @@ public static class Regions
 	public static Rectangle Havenshire { get; set; } = new Rectangle(20128f, 7040f, 22112f, 9472f);
 	public static Rectangle Hearthglen { get; set; } = new Rectangle(10624f, 10176f, 13312f, 11744f);
 	public static Rectangle HonorHold { get; set; } = new Rectangle(2208f, -27360f, 3936f, -26016f);
-	public static Rectangle Ice_Crown { get; set; } = new Rectangle(-4480f, 19616f, -2272f, 23424f);
+	public static Rectangle Ice_Crown { get; set; } = new Rectangle(-4480f, 19616f, -2272f, 24256f);
 	public static Rectangle IcecrownShipyard { get; set; } = new Rectangle(-6976f, 22304f, -1248f, 24992f);
 	public static Rectangle Ironforge { get; set; } = new Rectangle(9792f, -5728f, 10016f, -5536f);
 	public static Rectangle Kali_Ships { get; set; } = new Rectangle(-17600f, -15296f, -10816f, 5600f);
