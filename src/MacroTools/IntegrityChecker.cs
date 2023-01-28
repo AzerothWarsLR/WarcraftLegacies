@@ -53,7 +53,7 @@ namespace MacroTools
           
           var intendedName = $"Quest Completed: {quest.Title}";
           var actualName = GetObjectName(quest.ResearchId);
-          if (actualName != intendedName)
+          if (!actualName.Equals(intendedName))
             Logger.LogWarning(
               $"{quest.Title}'s {nameof(quest.ResearchId)} should be named {intendedName} but it is instead named {actualName}.");
         }
