@@ -12,10 +12,9 @@ namespace MacroTools.ObjectiveSystem.Objectives.TimeBased
 
     public ObjectiveExpire(int duration)
     {
-      Description = "Complete this quest before " + I2S(duration) + " seconds have elapsed";
+      Description = $"Complete this quest before {duration} seconds have elapsed";
       _timer = CreateTimer();
       TimerStart(_timer, duration, false, OnExpire);
-      ShowsInQuestLog = false;
     }
 
     internal override void OnAdd(FactionSystem.Faction whichFaction)
