@@ -35,18 +35,14 @@ namespace WarcraftLegacies.Source.Setup
       ResearchManager.RegisterIncompatibleSet(
         new BasicResearch(Constants.UPGRADE_R01X_EPIDEMIC_SCOURGE, 150, 100),
         new Revenants(Constants.UPGRADE_R08T_REVENANTS_SCOURGE, 150, 100));
-      
-      PlayerUnitEvents.Register(ResearchEvent.IsFinished, () =>
-      {
-        GetTriggerPlayer()
-          .GetFaction()?
-          .AddPower(new Rematerialization(0.15f, new Point(20454.9f, -28873.6f), "Argus", Regions.MonolithNoBuild)
-          {
-            IconName = "achievement_raid_argusraid",
-            Name = "Rematerialization",
-            EligibilityCondition = dyingUnit => dyingUnit.OwningPlayer().GetObjectLimit(dyingUnit.GetTypeId()) != 0
-          });
-      }, Constants.UPGRADE_R096_REMATERIALIZATION_LEGION);
+
+      ResearchManager.Register(new PowerResearch(Constants.UPGRADE_R096_REMATERIALIZATION_LEGION, 150, 250,
+        new Rematerialization(0.15f, new Point(20454.9f, -28873.6f), "Argus", Regions.MonolithNoBuild)
+        {
+          IconName = "achievement_raid_argusraid",
+          Name = "Rematerialization",
+          EligibilityCondition = dyingUnit => dyingUnit.OwningPlayer().GetObjectLimit(dyingUnit.GetTypeId()) != 0
+        }));
     }
   }
-} 
+}
