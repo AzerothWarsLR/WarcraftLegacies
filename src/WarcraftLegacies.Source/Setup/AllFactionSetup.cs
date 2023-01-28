@@ -21,14 +21,8 @@ namespace WarcraftLegacies.Source.Setup
       IronforgeSetup.Setup(preplacedUnitSystem);
       KultirasSetup.Setup(preplacedUnitSystem);
       IllidariSetup.Setup();
-      IllidanSetup.Setup();
-      GilneasSetup.Setup();
-      ZandalarSetup.Setup(preplacedUnitSystem);
       GoblinSetup.Setup();
-      ScarletSetup.Setup(preplacedUnitSystem);
-      ForsakenSetup.Setup();
       DraeneiSetup.Setup();
-      DragonmawSetup.Setup();
     }
   }
 }
