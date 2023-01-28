@@ -1,6 +1,5 @@
 ﻿using MacroTools.Extensions;
 using MacroTools.FactionSystem;
-using MacroTools.ObjectiveSystem.Objectives;
 using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.QuestSystem;
@@ -10,7 +9,6 @@ namespace WarcraftLegacies.Source.Quests.Fel_Horde
 {
   public sealed class QuestDarkPortal : QuestData
   {
-    private readonly unit _portalController;
     private readonly unit _innerWaygate1;
     private readonly unit _innerWaygate2;
     private readonly unit _innerWaygate3;
@@ -19,9 +17,8 @@ namespace WarcraftLegacies.Source.Quests.Fel_Horde
     private readonly unit _outerWaygate3;
 
     /// <summary>
-    /// Initializes a new instance of the class <see cref="QuestDarkPortalOpen"/>.
+    /// Initializes a new instance of the class <see cref="QuestDarkPortal"/>.
     /// </summary>
-    /// <param name="portalController"></param>
     /// <param name="innerWaygate1">A Waygate inside outland, next to the Dark Portal.</param>
     /// <param name="innerWaygate2">A Waygate inside outland, next to the Dark Portal.</param>
     /// <param name="innerWaygate3">A Waygate inside outland, next to the Dark Portal.</param>

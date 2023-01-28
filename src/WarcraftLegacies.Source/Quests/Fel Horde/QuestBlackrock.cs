@@ -21,8 +21,6 @@ namespace WarcraftLegacies.Source.Quests.Fel_Horde
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestBlackrock"/> class.
     /// </summary>
-    /// <param name="rescueRect"></param>
-    /// <param name="prequisites"></param>
     public QuestBlackrock(Rectangle rescueRect, IEnumerable<QuestData> prequisites) : base("Blackrock Unification",
       "Make contact with the Blackrock clan and convince them to join Magtheridon",
       "ReplaceableTextures\\CommandButtons\\BTNBlackhand.blp")
