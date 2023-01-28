@@ -61,6 +61,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
       LegendaryHeroManager.Register(GromHellscream);
       LegendaryHeroManager.Register(ChenStormstout);
       LegendaryHeroManager.Register(Saurfang);
+      LegendaryHeroManager.Register(Jergosh);
       CapitalManager.Register(StonemaulKeep);
       CapitalManager.Register(Orgrimmar);
     }
