@@ -17,11 +17,6 @@ namespace MacroTools.Libraries
     private static Point? _enumDestructableCenter;
     private static float _enumDestructableRadius;
 
-    static GeneralHelpers()
-    {
-      CreateUnit(Player(PLAYER_NEUTRAL_PASSIVE), FourCC("u00X"), 0, 0, 0);
-    }
-
     private static bool EnumDestructablesInCircleFilter()
     {
       return MathEx.GetDistanceBetweenPoints(
