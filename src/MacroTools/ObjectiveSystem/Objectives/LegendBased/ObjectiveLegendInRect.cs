@@ -34,7 +34,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.LegendBased
 
     private static region RectToRegion(rect whichRect)
     {
-      region rectRegion = CreateRegion();
+      var rectRegion = CreateRegion();
       RegionAddRect(rectRegion, whichRect);
       return rectRegion;
     }

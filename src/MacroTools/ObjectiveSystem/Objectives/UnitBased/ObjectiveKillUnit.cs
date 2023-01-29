@@ -9,7 +9,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
   {
     public ObjectiveKillUnit(unit unitToKill)
     {
-      trigger trig = CreateTrigger();
+      var trig = CreateTrigger();
       TriggerRegisterUnitEvent(trig, unitToKill, EVENT_UNIT_DEATH);
       TriggerAddAction(trig, OnUnitDeath);
       Target = unitToKill;

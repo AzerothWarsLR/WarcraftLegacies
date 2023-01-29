@@ -374,7 +374,7 @@ namespace MacroTools.Extensions
       var index = 0;
       while (true)
       {
-        item indexItem = UnitItemInSlot(whichUnit, index);
+        var indexItem = UnitItemInSlot(whichUnit, index);
         if (indexItem != null && GetItemTypeId(indexItem) == itemTypeId) return index + 1;
 
         index += 1;

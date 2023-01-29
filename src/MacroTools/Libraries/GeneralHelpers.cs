@@ -61,7 +61,7 @@ namespace MacroTools.Libraries
     {
       const string charMap =
         ".................................!.#$%&'()*+,-./0123456789:;<=>.@ABCDEFGHIJKLMNOPQRSTUVWXYZ[.]^_`abcdefghijklmnopqrstuvwxyz{|}~.................................................................................................................................";
-      string result = "";
+      var result = "";
       var remainingValue = value;
 
       for (var i = 0; i < 5; i++)
@@ -82,7 +82,7 @@ namespace MacroTools.Libraries
       GroupEnumUnitsInRange(TempGroup, x, y, radius, null);
       while (true)
       {
-        unit u = FirstOfGroup(TempGroup);
+        var u = FirstOfGroup(TempGroup);
         if (u == null) break;
 
         if (GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_AGGRESSIVE) && !IsUnitType(u, UNIT_TYPE_SAPPER) &&
@@ -102,7 +102,7 @@ namespace MacroTools.Libraries
       GroupEnumUnitsInRect(TempGroup, TempRect, null);
       while (true)
       {
-        unit u = FirstOfGroup(TempGroup);
+        var u = FirstOfGroup(TempGroup);
         if (u == null) break;
 
         if (IsUnitType(u, UNIT_TYPE_STRUCTURE))

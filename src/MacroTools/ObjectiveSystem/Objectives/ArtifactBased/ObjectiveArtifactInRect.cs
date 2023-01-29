@@ -19,7 +19,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.ArtifactBased
     {
       _targetArtifact = targetArtifact;
       _targetRect = targetRect;
-      region targetRegion = RectToRegion(_targetRect.Rect);
+      var targetRegion = RectToRegion(_targetRect.Rect);
       Description = "Bring " + GetItemName(targetArtifact.Item) + " to " + rectName;
 
       TriggerRegisterEnterRegion(_entersRect.Trigger, targetRegion, null);
@@ -34,7 +34,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.ArtifactBased
 
     private static region RectToRegion(rect whichRect)
     {
-      region rectRegion = CreateRegion();
+      var rectRegion = CreateRegion();
       RegionAddRect(rectRegion, whichRect);
       return rectRegion;
     }
