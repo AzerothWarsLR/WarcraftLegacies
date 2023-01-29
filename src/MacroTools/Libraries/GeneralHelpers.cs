@@ -124,13 +124,16 @@ namespace MacroTools.Libraries
     /// <returns>The units that were created.</returns>
     public static IEnumerable<unit> CreateUnits(player whichPlayer, int unitId, float x, float y, float face, int count)
     {
+      var createdUnits = new List<unit>();
       var i = 0;
       while (true)
       {
         if (i == count) break;
-        yield return CreateUnit(whichPlayer, unitId, x, y, face);
+        createdUnits.Add(CreateUnit(whichPlayer, unitId, x, y, face));
         i += 1;
       }
+
+      return createdUnits;
     }
 
     public static region RectToRegion(rect whichRect)
