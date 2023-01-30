@@ -16,7 +16,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       illidari.AddQuest(new QuestStranglethornOutpost(Regions.IllidariUnlockSA, allLegendSetup.Naga.Vashj));
       illidari.AddQuest(new QuestNajentus(new[]
       {
-        allLegendSetup.Stormwind.Stormwindkeep,
+        allLegendSetup.Stormwind.StormwindKeep,
         allLegendSetup.Ironforge.GreatForge
       }));
       illidari.AddQuest(new QuestRegroupCastaway());
