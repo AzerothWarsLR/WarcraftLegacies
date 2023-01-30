@@ -29,7 +29,7 @@ namespace WarcraftLegacies.Source.Quests.Fel_Horde
     public QuestDarkPortal(unit innerWaygate1, unit innerWaygate2, unit innerWaygate3, unit outerWaygate1,
       unit outerWaygate2, unit outerWaygate3)
       : base("The Dark Portal",
-        "Following the Second War, the archmage Khadgar and his fellow magi sealed the Dark Portal so that it would never again be used to threaten Azeroth. Little did they know that their magicks were only temporary, and that the portal would open again, in time.",
+        "Following the Second War, the archmage Khadgar and his fellow magi sealed the Dark Portal so that it would never again be used to threaten Azeroth. Little did they know that their magicks were only temporary, and that the portal would open again in time.",
         "ReplaceableTextures\\CommandButtons\\BTNDarkPortal.blp")
     {
       _innerWaygate1 = innerWaygate1.Show(false);
