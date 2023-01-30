@@ -20,6 +20,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
   /// </summary>
   public sealed class QuestPlague : QuestData
   {
+    private readonly Faction _plagueVictim;
     private readonly float _duration;
 
     private readonly unit _portalController1;
@@ -40,11 +41,13 @@ namespace WarcraftLegacies.Source.Quests.Scourge
     /// </summary>
     /// <param name="plagueParameters">Provides information about how the Plague should work.</param>
     /// <param name="preplacedUnitSystem">A system for finding preplaced units.</param>
-    public QuestPlague(PlagueParameters plagueParameters, PreplacedUnitSystem preplacedUnitSystem) : base(
+    /// <param name="plagueVictim">The faction that the plague will primarily affect.</param>
+    public QuestPlague(PlagueParameters plagueParameters, PreplacedUnitSystem preplacedUnitSystem, Faction plagueVictim) : base(
       "Plague of Undeath",
       "The Cult of the Damned is prepared to unleash a devastating zombifying plague across the lands of Lordaeron.",
       "ReplaceableTextures\\CommandButtons\\BTNPlagueBarrel.blp")
     {
+      _plagueVictim = plagueVictim;
       _plagueRects = plagueParameters.PlagueRects;
       _plagueCauldronUnitTypeId = plagueParameters.PlagueCauldronUnitTypeId;
       _plagueCauldronSummonParameters = plagueParameters.PlagueCauldronSummonParameters;
@@ -108,7 +111,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
     protected override void OnComplete(Faction completingFaction)
     {
       completingFaction.ModObjectLimit(Constants.UPGRADE_R06I_PLAGUE_OF_UNDEATH_SCOURGE, -Faction.UNLIMITED);
-      var plaguePower = new PlaguePower();
+      var plaguePower = new PlaguePower(_plagueVictim);
       if (completingFaction.Player != null) 
         CreatePlagueCauldrons(completingFaction);
       completingFaction.AddPower(plaguePower);

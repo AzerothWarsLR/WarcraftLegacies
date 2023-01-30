@@ -45,7 +45,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
         new Point(9418, 5396)
       };
 
-      QuestPlague questPlague = new(plagueParameters, preplacedUnitSystem);
+      QuestPlague questPlague = new(plagueParameters, preplacedUnitSystem, LordaeronSetup.Lordaeron);
 
       QuestSapphiron questSapphiron = new(preplacedUnitSystem.GetUnit(Constants.UNIT_UBDR_SAPPHIRON_CREEP), allLegendSetup.Scourge.Kelthuzad);
       QuestCorruptArthas questCorruptArthas = new(allLegendSetup.Lordaeron.Stratholme, allLegendSetup.Lordaeron.Arthas);
