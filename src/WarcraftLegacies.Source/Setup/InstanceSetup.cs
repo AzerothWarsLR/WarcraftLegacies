@@ -22,9 +22,13 @@ namespace WarcraftLegacies.Source.Setup
         new Instance("Outland", Regions.InstanceOutland)
       );
 
+      var proudmooreFlagshipUnit = preplacedUnitSystem.GetUnit(Constants.UNIT_H05V_PROUDMOORE_FLAGSHIP_KUL_TIRAS);
       var proudmooreFlagshipInterior = new Instance("Proudmoore Flagship Interior", Regions.ShipAmbient);
-      proudmooreFlagshipInterior.AddDependency(preplacedUnitSystem.GetUnit(Constants.UNIT_H05V_PROUDMOORE_FLAGSHIP_KUL_TIRAS));
+      proudmooreFlagshipInterior.AddDependency(proudmooreFlagshipUnit);
       proudmooreFlagshipInterior.AddDependency(preplacedUnitSystem.GetUnit(Constants.UNIT_H09D_FLEETMASTER_S_TABLE_KUL_TIRAS_OTHER));
+      proudmooreFlagshipInterior.AddGate(new Gate(
+        () => Regions.ShipInside.Center,
+        () => proudmooreFlagshipUnit.GetPosition()));
       InstanceSystem.Register(proudmooreFlagshipInterior);
 
       var draeneiShipInterior = new Instance("Draenei Ship interior", Regions.Exodar_Interior_All);
