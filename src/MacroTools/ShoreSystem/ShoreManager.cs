@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Instances;
 using WCSharp.Shared.Data;
+using static War3Api.Common;
 
 namespace MacroTools.ShoreSystem
 {
@@ -18,6 +19,11 @@ namespace MacroTools.ShoreSystem
     /// </summary>
     public static void Register(Shore shore)
     {
+      if (IsTerrainPathable(shore.Position.X, shore.Position.Y, PATHING_TYPE_WALKABILITY))
+      {
+        Logger.LogWarning($"Registered a {nameof(Shore)} at unwalkable location {shore.Position.X}, {shore.Position.Y}.");
+        PingMinimap(shore.Position.X, shore.Position.Y, 120);
+      }
       ShoresByIndex.Add(shore);
     }
 
