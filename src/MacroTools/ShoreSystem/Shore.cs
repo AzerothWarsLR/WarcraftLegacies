@@ -13,22 +13,19 @@ namespace MacroTools.ShoreSystem
     public Point Position { get; }
 
     /// <summary>
-    /// Initializes a new instance of the <see cref="Shore"/> class.
+    /// A user-friendly name for the <see cref="Shore"/>.
     /// </summary>
-    /// <param name="x">The x position of the <see cref="Shore"/>.</param>
-    /// <param name="y">The y position of the <see cref="Shore"/>.</param>
-    public Shore(float x, float y)
-    {
-      Position = new Point(x, y);
-    }
+    public string Name { get; }
 
     /// <summary>
     /// Initializes a new instance of the <see cref="Shore"/> class.
     /// </summary>
     /// <param name="position">The position of the <see cref="Shore"/>.</param>
-    public Shore(Point position)
+    /// <param name="name">A user-friendly name for the <see cref="Shore"/>.</param>
+    public Shore(Point position, string name)
     {
       Position = position;
+      Name = name;
     }
   }
 }
