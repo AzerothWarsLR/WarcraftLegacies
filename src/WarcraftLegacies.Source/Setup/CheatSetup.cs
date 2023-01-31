@@ -40,6 +40,7 @@ namespace WarcraftLegacies.Source.Setup
       commandManager.Register(new CheatTime());
       commandManager.Register(new CheatUncontrol());
       commandManager.Register(new CheatVision());
+      commandManager.Register(new CheatShore());
       TestMode.Setup(commandManager);
       CheatSkipCinematic.Setup();
     }

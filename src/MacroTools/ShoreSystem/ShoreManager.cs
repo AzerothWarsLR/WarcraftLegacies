@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using MacroTools.Instances;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -10,10 +11,8 @@ namespace MacroTools.ShoreSystem
   /// </summary>
   public static class ShoreManager
   {
-    private static readonly List<Shore> ShoresByIndex = new();
-    
-    private static int Count => ShoresByIndex.Count;
-    
+    private static readonly List<Shore> AllShores = new();
+
     /// <summary>
     /// Registers a <see cref="Shore"/> to the <see cref="ShoreManager"/>, allowing the manager to return it in search results.
     /// </summary>
@@ -24,9 +23,14 @@ namespace MacroTools.ShoreSystem
         Logger.LogWarning($"Registered a {nameof(Shore)} at unwalkable location {shore.Position.X}, {shore.Position.Y}.");
         PingMinimap(shore.Position.X, shore.Position.Y, 120);
       }
-      ShoresByIndex.Add(shore);
+      AllShores.Add(shore);
     }
 
+    /// <summary>
+    /// Returns all registered <see cref="Shore"/>s.
+    /// </summary>
+    public static ReadOnlyCollection<Shore> GetAllShores() => AllShores.AsReadOnly();
+    
     /// <summary>
     /// Returns the <see cref="Shore"/> closest to the given <see cref="Point"/>.
     /// </summary>
@@ -37,16 +41,16 @@ namespace MacroTools.ShoreSystem
       float nearestDistance = 1000000;
       while (true)
       {
-        if (i == Count)
+        if (i == AllShores.Count)
         {
           break;
         }
 
-        var tempDistance = InstanceSystem.GetDistanceBetweenPointsEx(position, ShoresByIndex[i].Position);
+        var tempDistance = InstanceSystem.GetDistanceBetweenPointsEx(position, AllShores[i].Position);
         if (tempDistance < nearestDistance)
         {
           nearestDistance = tempDistance;
-          nearestShore = ShoresByIndex[i];
+          nearestShore = AllShores[i];
         }
 
         i += 1;
