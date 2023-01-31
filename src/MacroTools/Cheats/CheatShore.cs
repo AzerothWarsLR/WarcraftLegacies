@@ -1,12 +1,13 @@
 ﻿using MacroTools.CommandSystem;
 using MacroTools.Extensions;
+using MacroTools.FactionSystem;
 using MacroTools.ShoreSystem;
 using static War3Api.Common;
 
 namespace MacroTools.Cheats
 {
   /// <summary>
-  /// A cheat <see cref="Command"/> that removes all of your units, then spawns a large, invulnerable peon at all registered {nameof(Shore)}s.
+  /// A cheat <see cref="Command"/> that Removes all units on the map, obliterates you, reveals the map, then spawns a large, invulnerable penguin at all registered {nameof(Shore)}s.
   /// </summary>
   public sealed class CheatShore : Command
   {
@@ -20,30 +21,39 @@ namespace MacroTools.Cheats
     public override CommandType Type => CommandType.Cheat;
 
     /// <inheritdoc />
-    public override string Description => $"Removes all of your units, then spawns a large, invulnerable peon at all registered {nameof(Shore)}s.";
+    public override string Description =>
+      $"Removes all units on the map, obliterates you, reveals the map, then spawns a large, invulnerable penguin at all registered {nameof(Shore)}s.";
 
     private bool _executed;
-    
+
     /// <inheritdoc />
     public override string Execute(player cheater, params string[] parameters)
     {
       if (_executed)
         return $"{nameof(CheatShore)} has already been executed and cannot be executed multiple times.";
-      
+
       _executed = true;
 
-      foreach (var unit in CreateGroup().EnumUnitsOfPlayer(cheater).EmptyToList()) 
+      foreach (var unit in CreateGroup().EnumUnitsInRect(WCSharp.Shared.Data.Rectangle.WorldBounds).EmptyToList())
         unit.Remove();
 
+      cheater.SetFaction(new Faction("Dummy", PLAYER_COLOR_COAL, "", ""));
+      cheater.SetTeam(new Team("Dummy"));
+
+      var newFogModifier = CreateFogModifierRect(cheater, FOG_OF_WAR_VISIBLE,
+        WCSharp.Shared.Data.Rectangle.WorldBounds.Rect, true, true);
+      FogModifierStart(newFogModifier);
+      
       foreach (var shore in ShoreManager.GetAllShores())
       {
-        CreateUnit(cheater, FourCC("opeo"), shore.Position.X, shore.Position.Y, 0)
+        CreateUnit(cheater, FourCC("npng"), shore.Position.X, shore.Position.Y, 0)
           .SetScale(7)
           .SetName(shore.Name)
-          .SetInvulnerable(true);
+          .SetInvulnerable(true)
+          .RemoveAbility(FourCC("Awan"));
       }
 
-      return $"Created a peon at all registered {nameof(Shore)}s.";
+      return $"Created a penguin at all registered {nameof(Shore)}s.";
     }
   }
 }

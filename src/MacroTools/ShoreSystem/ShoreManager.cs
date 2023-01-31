@@ -21,7 +21,7 @@ namespace MacroTools.ShoreSystem
       if (IsTerrainPathable(shore.Position.X, shore.Position.Y, PATHING_TYPE_WALKABILITY))
       {
         Logger.LogWarning($"Registered a {nameof(Shore)} at unwalkable location {shore.Position.X}, {shore.Position.Y}.");
-        PingMinimap(shore.Position.X, shore.Position.Y, 120);
+        PingMinimap(shore.Position.X, shore.Position.Y, 10);
       }
       AllShores.Add(shore);
     }
