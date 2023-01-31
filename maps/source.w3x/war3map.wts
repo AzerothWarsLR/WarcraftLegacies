@@ -11856,12 +11856,6 @@ STRING 1976
 Summon Jarod
 }
 
-STRING 1977
-// Units: O02E (Guard Captain), Ubertip (Tooltip - Extended)
-{
-Ancient hero, adept at sustaining damage and producing units.|n|cfff5962dCan learn:|R Maiming Strike, Mirror Image, Battle Experience, Bladestorm|n|n|cffffcc00Attacks land units.|R
-}
-
 STRING 1978
 // Units: n059 (Fel Hound), Hotkey (Hotkey)
 {
@@ -19074,12 +19068,6 @@ STRING 3179
 Revive Amara
 }
 
-STRING 3180
-// Units: h03I (Moon Priestess Amara), Ubertip (Tooltip - Extended)
-{
-A powerful priestess of Elune who specializes in spellcasting.
-}
-
 STRING 3181
 // Units: o02J (Worgen), Ubertip (Tooltip - Extended)
 {
@@ -22006,12 +21994,6 @@ STRING 3668
 Permanently kills a target Hero under your control, allowing you to summon additional Heroes.|n|n|cffffcc00Sacrificed Heroes can never be reacquired.
 }
 
-STRING 3669
-// Units: e00B (Wickerbeast), EditorSuffix (Name - Editor Suffix)
-{
-(Bear Form)
-}
-
 STRING 3670
 // Units: h04H (Gilneas City Building), Hotkey (Hotkey)
 {
@@ -22046,12 +22028,6 @@ STRING 3675
 // Units: e009 (Naisha), Tip (Tooltip - Basic)
 {
 Revive - Naisha
-}
-
-STRING 3676
-// Units: e009 (Naisha), Ubertip (Tooltip - Extended)
-{
-Lieutenant of the Watchers, Naisha is a strong leader and close confidant to Maeiv. She is the shield of the underside of the Sentinels and the rest of the Kaldorei
 }
 
 STRING 3677
@@ -36965,6 +36941,30 @@ STRING 6161
 Enables Gargoyles to use Howl of Terror, which reduces the attack damage of nearby enemy units by <A022,DataA1,%>% for <A022,Dur1> seconds.
 }
 
+STRING 6162
+// Abilities: A007 (Wrath of the Blood Elves), EditorSuffix (Editor Suffix)
+{
+ (Lorthemar)
+}
+
+STRING 6163
+// Abilities: A007 (Wrath of the Blood Elves), Researchubertip (Tooltip - Learn - Extended)
+{
+Calls down waves of starlight that damage nearby enemy units.|nLasts 30 seconds. |n|n|cffffcc00Level 1|r - Each wave deals <AEsf,DataA1> damage.|n|cffffcc00Level 2|r - Each wave deals <AEsf,DataA2> damage.|n|cffffcc00Level 3|r - Each wave deals <AEsf,DataA3> damage.|n|nLasts for <AEsf,Dur1> seconds.|n
+}
+
+STRING 6164
+// Abilities: A007 (Wrath of the Blood Elves), Ubertip (Tooltip - Normal - Extended)
+{
+Calls down waves of starlight that damage nearby enemy units. Each wave deals <A007,DataA1> damage. |nLasts for <A007,Dur1> seconds.
+}
+
+STRING 6165
+// Abilities: A007 (Wrath of the Blood Elves), Ubertip (Tooltip - Normal - Extended)
+{
+Calls down waves of starlight that damage nearby enemy units. Each wave deals <A007,DataA2> damage. |nLasts for <A007,Dur2> seconds.
+}
+
 STRING 6166
 // Abilities: A0TZ (Voodoo Restoration), Ubertip (Tooltip - Normal - Extended)
 {
@@ -51679,6 +51679,12 @@ STRING 8614
 Reduces the damage taken from Piercing attacks by 10%, and spells and Magic attacks by 15%.
 }
 
+STRING 8615
+// Abilities: A007 (Wrath of the Blood Elves), Ubertip (Tooltip - Normal - Extended)
+{
+Calls down waves of starlight that damage nearby enemy units. Each wave deals <A007,DataA3> damage. |nLasts for <A007,Dur3> seconds.
+}
+
 STRING 8616
 // Abilities: A01I (Crusade Aura), Name (Name)
 {
@@ -51707,6 +51713,12 @@ STRING 8620
 // Abilities: A01I (Crusade Aura), Tip (Tooltip - Normal)
 {
 Crusade Aura
+}
+
+STRING 8621
+// Buffs/Effects: B021 (), Buffubertip (Tooltip - Extended)
+{
+This unit is Poisoned; its movement speed, attack rate and damage have been reduced.
 }
 
 STRING 8622
@@ -55898,12 +55910,6 @@ STRING 9319
 Bounce Attack
 }
 
-STRING 9320
-// Abilities: A0HJ (Bounce Attack), Ubertip (Tooltip - Normal - Extended)
-{
-Gives the Runestone the ability to strike additional units with its bouncing attacks.
-}
-
 STRING 9321
 // Abilities: A0HI (Taunt), EditorSuffix (Editor Suffix)
 {
@@ -60062,16 +60068,46 @@ STRING 10013
 Increases nearby friendly units' movement speed by 20% and life regeneration rate by 3.5.
 }
 
+STRING 10014
+// Units: h03I (Moon Priestess Amara), Ubertip (Tooltip - Extended)
+{
+A powerful priestess of Elune who specializes in spellcasting.|n|n|cfff5962dAbilities:|R Fear the Goddess, Light of the Goddess, Elune's Gaze, Aura of Elune, Shadow Meld, Resistant Skin|n|r|n|cffffcc00Attacks land and air units.|r
+}
+
 STRING 10015
 // Abilities: A0BA (Mana Burn), Hotkey (Hotkey - Normal)
 {
 R
 }
 
+STRING 10016
+// Units: e009 (Naisha), Ubertip (Tooltip - Extended)
+{
+Lieutenant of the Watchers, Naisha is a strong leader and close confidant to Maeiv. |n|n|cfff5962dAbilities:|R Ensnare, Sentinel, Moon Glaive, Divine Hymn, Hunt Aura, Shadow Meld, Resistant Skin|n|r|n|cffffcc00Attacks land and air units.|r
+}
+
 STRING 10017
 // Abilities: A0A0 (Dark Pact), Researchhotkey (Hotkey - Learn)
 {
 R
+}
+
+STRING 10018
+// Units: O02E (Guard Captain), Ubertip (Tooltip - Extended)
+{
+Ancient hero, adept at sustaining damage and producing units.|n|cfff5962dCan learn:|R Blood Fury, Mirror Image, Battle Experience, Bladestorm|n|n|cffffcc00Attacks land units.|R
+}
+
+STRING 10019
+// Abilities: A0IA (Blood Fury), EditorSuffix (Editor Suffix)
+{
+ (Jarod Shadowsong)
+}
+
+STRING 10020
+// Abilities: A0HJ (Bounce Attack), Ubertip (Tooltip - Normal - Extended)
+{
+Gives the Hunter Tower the ability to strike additional units with its bouncing attacks.
 }
 
 STRING 10023
@@ -77740,12 +77776,6 @@ STRING 12964
 Sends a gigantic wave which deals 70 damage to each enemy land unit in a line, up to 300 max damage.
 }
 
-STRING 12965
-// Abilities: A007 (Wrath of the Blood Elves), EditorSuffix (Editor Suffix)
-{
-(lorthemar
-}
-
 STRING 12966
 // Abilities: A0QI (Guarding Light), Hotkey (Hotkey - Normal)
 {
@@ -77770,12 +77800,6 @@ STRING 12969
 Wrath of the Blood Elves
 }
 
-STRING 12970
-// Abilities: A007 (Wrath of the Blood Elves), Researchubertip (Tooltip - Learn - Extended)
-{
-Calls down waves of falling light that damage nearby enemy units.|nLasts 30 seconds. |n|n|cffffcc00Level 1|r - Each wave deals <AEsf,DataA1> damage.|n|cffffcc00Level 2|r - Each wave deals <AEsf,DataA2> damage.|n|cffffcc00Level 3|r - Each wave deals <AEsf,DataA3> damage.|n|nLasts for <AEsf,Dur1> seconds.|n
-}
-
 STRING 12971
 // Abilities: A0LK (Arcane Phantom), Tip (Tooltip - Normal)
 {
@@ -77792,24 +77816,6 @@ STRING 12973
 // Abilities: A0LK (Arcane Phantom), Ubertip (Tooltip - Normal - Extended)
 {
 Summon an Arcane Phantom for 15 seconds. 9 seconds cooldown
-}
-
-STRING 12974
-// Abilities: A007 (Wrath of the Blood Elves), Ubertip (Tooltip - Normal - Extended)
-{
-Calls down waves of light that damage nearby enemy units. Each wave deals <A007,DataA1> damage. |nLasts for <A007,Dur1> seconds.
-}
-
-STRING 12975
-// Abilities: A007 (Wrath of the Blood Elves), Ubertip (Tooltip - Normal - Extended)
-{
-Calls down waves of light that damage nearby enemy units. Each wave deals <A007,DataA2> damage. |nLasts for <A007,Dur2> seconds.
-}
-
-STRING 12976
-// Abilities: A007 (Wrath of the Blood Elves), Ubertip (Tooltip - Normal - Extended)
-{
-Calls down waves of light that damage nearby enemy units. Each wave deals <A007,DataA3> damage. |nLasts for <A007,Dur3> seconds.
 }
 
 STRING 12977
@@ -81125,19 +81131,7 @@ STRING 13534
 }
 
 STRING 13535
-// Buffs/Effects: B03A (Poisoned Arrow), Bufftip (Tooltip)
-{
-Poisoned Arrow
-}
-
-STRING 13536
-// Buffs/Effects: B03A (Poisoned Arrow), Buffubertip (Tooltip - Extended)
-{
-This unit is under the effect of Poisoned Arrow
-}
-
-STRING 13537
-// Buffs/Effects: B03A (Poisoned Arrow), EditorName (Name (Editor Only))
+// Buffs/Effects: B021 (), Bufftip (Tooltip)
 {
 Poisoned Arrow
 }
@@ -97481,7 +97475,7 @@ Z
 }
 
 STRING 16306
-// Abilities: A0IA (Blood Fury), EditorSuffix (Editor Suffix)
+// Abilities: A07P (Fiery Aura), EditorSuffix (Editor Suffix)
 {
 (scarlet)
 }
@@ -97505,7 +97499,7 @@ W
 }
 
 STRING 16310
-// Abilities: A07P (Fiery Aura), EditorSuffix (Editor Suffix)
+// Upgrades: R05D (Priest Adept Training,Priest Master Training), EditorSuffix (Editor Suffix)
 {
 (scarlet)
 }
@@ -97526,12 +97520,6 @@ STRING 16313
 // Abilities: A0RR (Energy Wave), Researchhotkey (Hotkey - Learn)
 {
 W
-}
-
-STRING 16314
-// Upgrades: R05D (Priest Adept Training,Priest Master Training), EditorSuffix (Editor Suffix)
-{
-(scarlet)
 }
 
 STRING 16315
