@@ -271,6 +271,15 @@ namespace MacroTools.Extensions
     }
     
     /// <summary>
+    /// If true, prevents the unit from moving or taking actions.
+    /// </summary>
+    public static unit PauseEx(this unit unit, bool value)
+    {
+      BlzPauseUnitEx(unit, value);
+      return unit;
+    }
+    
+    /// <summary>
     /// If true, the unit cannot be targeted by attacks or hostile abilities and cannot be damaged.
     /// </summary>
     public static unit SetInvulnerable(this unit unit, bool value)

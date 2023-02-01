@@ -59,7 +59,7 @@ namespace MacroTools.ObjectiveSystem
       _position = position;
 
       caster.SetPosition(_position)
-        .Pause(true)
+        .PauseEx(true)
         .SetAnimation("channel")
         .SetFacingEx(facing)
         .SetInvulnerable(false);
@@ -96,9 +96,9 @@ namespace MacroTools.ObjectiveSystem
     
     private void End(bool finishedWithoutInterruption)
     {
-      PauseUnit(_caster, false);
-      if (finishedWithoutInterruption) 
-        SetUnitAnimation(_caster, "spell");
+      _caster.PauseEx(false);
+      if (finishedWithoutInterruption)
+        _caster.SetAnimation("spell");
 
       if (UnitAlive(_caster)) 
         QueueUnitAnimation(_caster, "stand");
