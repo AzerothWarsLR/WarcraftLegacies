@@ -51,15 +51,11 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
       "You failed to reunite the Kul'Tiran kingdom. It will never rise to its former glory again.";
 
     /// <inheritdoc/>
-    protected override string PenaltyDescription =>
-      "The Proudmoore Capital Ship is lost forever.";
-
-    /// <inheritdoc/>
     protected override string RewardFlavour => "The Kul'Tiran kingdom has been united once more. The Proudmoore Capital Ship is now ready to set sail!";
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
-      "Unlock the Proudmoore capital ship and the buildings inside.";
+      "Unlock the Proudmoore capital ship and the buildings inside";
 
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
