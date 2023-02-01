@@ -11856,6 +11856,12 @@ STRING 1976
 Summon Jarod
 }
 
+STRING 1977
+// Abilities: A0DL (Communion), Ubertip (Tooltip - Normal - Extended)
+{
+Causes Alexandros to regenerate <A0DL,DataB1,%>% of his hit points per second.
+}
+
 STRING 1978
 // Units: n059 (Fel Hound), Hotkey (Hotkey)
 {
@@ -19068,6 +19074,12 @@ STRING 3179
 Revive Amara
 }
 
+STRING 3180
+// Buffs/Effects: B07D (), Buffubertip (Tooltip - Extended)
+{
+This unit has drastically increased attack speed and is ignoring incoming damage.
+}
+
 STRING 3181
 // Units: o02J (Worgen), Ubertip (Tooltip - Extended)
 {
@@ -21994,6 +22006,12 @@ STRING 3668
 Permanently kills a target Hero under your control, allowing you to summon additional Heroes.|n|n|cffffcc00Sacrificed Heroes can never be reacquired.
 }
 
+STRING 3669
+// Buffs/Effects: B07D (), EditorSuffix (Editor Suffix)
+{
+(Alexandros)
+}
+
 STRING 3670
 // Units: h04H (Gilneas City Building), Hotkey (Hotkey)
 {
@@ -22028,6 +22046,12 @@ STRING 3675
 // Units: e009 (Naisha), Tip (Tooltip - Basic)
 {
 Revive - Naisha
+}
+
+STRING 3676
+// Abilities: A0KA (Will of the Ashbringer), Researchubertip (Tooltip - Learn - Extended)
+{
+Increases Alexandros' attack speed and causes him to ignore all incoming damage for <A0KA,HeroDur1> seconds.|n |n|cffffcc00Level 1|r - <A0KA,DataB1,%>% attack speed. |n|cffffcc00Level 2|r - <A0KA,DataB2,%>% attack speed. |n|cffffcc00Level 3|r - <A0KA,DataB3,%>% attack speed.
 }
 
 STRING 3677
@@ -31617,12 +31641,6 @@ STRING 5274
 // Abilities: Aabs (Absorb Mana), Ubertip (Tooltip - Normal - Extended)
 {
 Takes all mana from one of your units and gives it to the Caster.
-}
-
-STRING 5275
-// Abilities: Aabr (Aura of Blight), EditorSuffix (Editor Suffix)
-{
-(Red - Kel'Thuzad(Necro)
 }
 
 STRING 5276
@@ -51343,28 +51361,16 @@ STRING 8558
 Gives a 25% chance that an attack will deal 35 damage to nearby units.
 }
 
-STRING 8559
-// Abilities: A0NP (Communion), EditorSuffix (Editor Suffix)
-{
-(Alexandros - Spellbook)
-}
-
 STRING 8560
-// Abilities: A0NP (Communion), Name (Name)
+// Abilities: A0DL (Communion), Tip (Tooltip - Normal)
 {
 Communion
 }
 
 STRING 8561
-// Abilities: A0NP (Communion), Tip (Tooltip - Normal)
+// Abilities: A0DL (Communion), Name (Name)
 {
 Communion
-}
-
-STRING 8562
-// Abilities: A0NP (Communion), Ubertip (Tooltip - Normal - Extended)
-{
-This hero regains <A0NP,DataA1,%>% of its hit points each second.
 }
 
 STRING 8563
@@ -51806,7 +51812,7 @@ Increases nearby friendly units' movement speed by 15% and life regeneration rat
 }
 
 STRING 8636
-// Abilities: A0MQ (Pulverize), EditorSuffix (Editor Suffix)
+// Abilities: A0L5 (Ashbringer), EditorSuffix (Editor Suffix)
 {
 (Purple - Alexandros)
 }
@@ -51830,19 +51836,19 @@ Pulverize - [|cffffcc00Level 3|r]
 }
 
 STRING 8640
-// Abilities: A0MQ (Pulverize), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A0I9 (Storm Hammers), Ubertip (Tooltip - Normal - Extended)
 {
 Gives a 25% chance that an attack will deal 50 damage to nearby units.
 }
 
 STRING 8641
-// Abilities: A0MQ (Pulverize), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A0UU (Judgement), Ubertip (Tooltip - Normal - Extended)
 {
 Gives a 25% chance that an attack will deal 75 damage to nearby units.
 }
 
 STRING 8642
-// Abilities: A0MQ (Pulverize), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A0UU (Judgement), Ubertip (Tooltip - Normal - Extended)
 {
 Gives a 25% chance that an attack will deal 100 damage to nearby units.
 }
@@ -52778,7 +52784,7 @@ Q
 }
 
 STRING 8798
-// Abilities: A0L5 (Ashbringer), EditorSuffix (Editor Suffix)
+// Buffs/Effects: B07E (), EditorSuffix (Editor Suffix)
 {
 (Purple - Alexandros)
 }
@@ -53580,30 +53586,6 @@ STRING 8931
 // Abilities: A0RV (Cluster Rockets), Hotkey (Hotkey - Normal)
 {
 W
-}
-
-STRING 8932
-// Abilities: A0KC (Incinerate), EditorSuffix (Editor Suffix)
-{
-(Purple - Alexandros)
-}
-
-STRING 8933
-// Abilities: A0KC (Incinerate), Ubertip (Tooltip - Normal - Extended)
-{
-Lethal strike against enemy causes it to explode, dealing 40 damage in an area.
-}
-
-STRING 8934
-// Abilities: A0KC (Incinerate), Ubertip (Tooltip - Normal - Extended)
-{
-Lethal strike against enemy causes it to explode, dealing 60 damage in an area.
-}
-
-STRING 8935
-// Abilities: A0KC (Incinerate), Ubertip (Tooltip - Normal - Extended)
-{
-Lethal strike against enemy causes it to explode, dealing 80 damage in an area.
 }
 
 STRING 8936
@@ -55569,7 +55551,7 @@ Gives a 20% chance that an attack will deal 30  damage to nearby units.
 }
 
 STRING 9263
-// Abilities: A0I9 (Storm Hammers), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A0V6 (Pulverize), Ubertip (Tooltip - Normal - Extended)
 {
 Gives a 25% chance that an attack will deal 50 damage to nearby units.
 }
@@ -77776,6 +77758,12 @@ STRING 12964
 Sends a gigantic wave which deals 70 damage to each enemy land unit in a line, up to 300 max damage.
 }
 
+STRING 12965
+// Abilities: A0MQ (Pulverize), EditorSuffix (Editor Suffix)
+{
+(Alexandros)
+}
+
 STRING 12966
 // Abilities: A0QI (Guarding Light), Hotkey (Hotkey - Normal)
 {
@@ -77816,6 +77804,24 @@ STRING 12973
 // Abilities: A0LK (Arcane Phantom), Ubertip (Tooltip - Normal - Extended)
 {
 Summon an Arcane Phantom for 15 seconds. 9 seconds cooldown
+}
+
+STRING 12974
+// Abilities: A0MQ (Pulverize), Ubertip (Tooltip - Normal - Extended)
+{
+Gives a <A0MQ,DataA2>% chance that an attack will deal <A0MQ,DataB2> damage to nearby units.
+}
+
+STRING 12975
+// Abilities: A0MQ (Pulverize), Ubertip (Tooltip - Normal - Extended)
+{
+Gives a <A0MQ,DataA3>% chance that an attack will deal <A0MQ,DataB3> damage to nearby units.
+}
+
+STRING 12976
+// Abilities: A0MQ (Pulverize), Ubertip (Tooltip - Normal - Extended)
+{
+Gives a <A0MQ,DataA1>% chance that an attack will deal <A0MQ,DataB1> damage to nearby units.
 }
 
 STRING 12977
@@ -78598,6 +78604,18 @@ STRING 13106
 Ignore Pain - [|cffffcc00Level 2|r]
 }
 
+STRING 13107
+// Abilities: A0KA (Will of the Ashbringer), Ubertip (Tooltip - Normal - Extended)
+{
+Increases Alexandros' attack speed by <A0KA,DataB1,%>% and causes him to ignore incoming damage for <A0KA,HeroDur1> seconds.
+}
+
+STRING 13108
+// Abilities: A0KA (Will of the Ashbringer), Ubertip (Tooltip - Normal - Extended)
+{
+Increases Alexandros' attack speed by <A0KA,DataB2,%>% and causes him to ignore incoming damage for <A0KA,HeroDur2> seconds.
+}
+
 STRING 13109
 // Buffs/Effects: B08P (), Bufftip (Tooltip)
 {
@@ -79108,12 +79126,6 @@ STRING 13193
 This unit is under the effects of Crusade Aura; it has reduced movement speed.
 }
 
-STRING 13194
-// Buffs/Effects: B07E (), EditorSuffix (Editor Suffix)
-{
-(Purple - Alexandros)
-}
-
 STRING 13195
 // Buffs/Effects: B07F (), Bufftip (Tooltip)
 {
@@ -79138,16 +79150,16 @@ STRING 13198
 Holy Radiance
 }
 
+STRING 13199
+// Abilities: A0KA (Will of the Ashbringer), Ubertip (Tooltip - Normal - Extended)
+{
+Increases Alexandros' attack speed by <A0KA,DataB3,%>% and causes him to ignore incoming damage for <A0KA,HeroDur3> seconds.
+}
+
 STRING 13200
 // Buffs/Effects: B07D (), Bufftip (Tooltip)
 {
 Will of the Ashbringer
-}
-
-STRING 13201
-// Buffs/Effects: B07D (), Buffubertip (Tooltip - Extended)
-{
-Alexandros has become resistant to damage; he heals any damage taken.
 }
 
 STRING 13202
@@ -80362,6 +80374,18 @@ STRING 13403
 Aerial warriors of the Silithid.|n|cfff5962dAbilities:|R Envenomed Dart|n |n|cff99b4d1Can only train 24.|r|n|cffffcc00Attacks land and air units.|r
 }
 
+STRING 13404
+// Abilities: A0KC (Incinerate), EditorSuffix (Editor Suffix)
+{
+(Alexandros)
+}
+
+STRING 13406
+// Abilities: A01I (Crusade Aura), EditorSuffix (Editor Suffix)
+{
+(Alexandros)
+}
+
 STRING 13407
 // Buffs/Effects: B04R (), Bufftip (Tooltip)
 {
@@ -81136,6 +81160,18 @@ STRING 13535
 Poisoned Arrow
 }
 
+STRING 13536
+// Abilities: A0DL (Communion), EditorSuffix (Editor Suffix)
+{
+(Alexandros)
+}
+
+STRING 13537
+// Abilities: A0KC (Incinerate), Ubertip (Tooltip - Normal - Extended)
+{
+Each attack made is enhanced with living flames that cling to the target. These flames add <A0KC,DataA2> damage on the first attack, twice as much on the second attack, three times as much on the third attack, etc.|n|nIf a unit dies while under this effect, it is incinerated, causing up to <A0KC,DataB2> damage to all nearby hostile units.
+}
+
 STRING 13538
 // Buffs/Effects: B039 (Psychosis), Bufftip (Tooltip)
 {
@@ -81398,12 +81434,6 @@ STRING 13581
 // Buffs/Effects: B02R (), Buffubertip (Tooltip - Extended)
 {
 This unit has Chemical Frenzy; its attack rate and movement speed are increased.
-}
-
-STRING 13582
-// Abilities: A01I (Crusade Aura), EditorSuffix (Editor Suffix)
-{
-(Mograine)
 }
 
 STRING 13583
@@ -81734,6 +81764,18 @@ STRING 13637
 // Abilities: A05L (Persistent Soul), Name (Name)
 {
 Persistent Soul
+}
+
+STRING 13638
+// Abilities: A0KC (Incinerate), Ubertip (Tooltip - Normal - Extended)
+{
+Each attack made is enhanced with living flames that cling to the target. These flames add <A0KC,DataA3> damage on the first attack, twice as much on the second attack, three times as much on the third attack, etc.|n|nIf a unit dies while under this effect, it is incinerated, causing up to <A0KC,DataB3> damage to all nearby hostile units.
+}
+
+STRING 13639
+// Abilities: A0KC (Incinerate), Ubertip (Tooltip - Normal - Extended)
+{
+Each attack made is enhanced with living flames that cling to the target. These flames add <A0KC,DataA1> damage on the first attack, twice as much on the second attack, three times as much on the third attack, etc.|n|nIf a unit dies while under this effect, it is incinerated, causing up to <A0KC,DataB1> damage to all nearby hostile units.
 }
 
 STRING 13641
@@ -85456,12 +85498,6 @@ STRING 14260
 Quest Completed: Those Who Came Before
 }
 
-STRING 14261
-// Abilities: A0KA (Will of the Ashbringer), Researchubertip (Tooltip - Learn - Extended)
-{
-Increases Alexandros' attack speed and causes him to heal for a percentage of incoming damage instead of taking damage for <A0KA,HeroDur1> seconds.|n |n|cffffcc00Level 1|r - 20% healed, <A0KA,DataB1,%>% attack speed. |n|cffffcc00Level 2|r - 30% healed, <A0KA,DataB2,%>% attack speed. |n|cffffcc00Level 3|r - 40% healed, <A0KA,DataB3,%>% attack speed.
-}
-
 STRING 14262
 // Upgrades: R047 (Marksmanship), EditorSuffix (Editor Suffix)
 {
@@ -85538,12 +85574,6 @@ STRING 14274
 // Upgrades: R05S (Chaos), Name (Name)
 {
 Great Forge and Stormwind Destroyed
-}
-
-STRING 14275
-// Abilities: A0KA (Will of the Ashbringer), Ubertip (Tooltip - Normal - Extended)
-{
-Increases Alexandros' attack speed by <A0KA,DataB1,%> and causes him to heal for 20% of incoming damage instead of taking damage for <A0KA,HeroDur1> seconds.
 }
 
 STRING 14276
@@ -85646,12 +85676,6 @@ STRING 14292
 // Abilities: A0LK (Arcane Phantom), Ubertip (Tooltip - Normal - Extended)
 {
 Summon an Arcane Phantom for 30 seconds. 3 seconds cooldown
-}
-
-STRING 14293
-// Abilities: A0KA (Will of the Ashbringer), Ubertip (Tooltip - Normal - Extended)
-{
-Increases Alexandros' attack speed by <A0KA,DataB2,%> and causes him to heal for 30% of incoming damage instead of taking damage for <A0KA,HeroDur2> seconds.
 }
 
 STRING 14294
@@ -85892,12 +85916,6 @@ STRING 14333
 // Upgrades: R04V (Magic Sentry), Ubertip (Tooltip - Extended)
 {
 Improves Frost Wyrms' Hypothermic Breath by increasing its initial damage to <A058,DataA2> and damage per second to <A058,DataE2>.
-}
-
-STRING 14334
-// Abilities: A0KA (Will of the Ashbringer), Ubertip (Tooltip - Normal - Extended)
-{
-Increases Alexandros' attack speed by <A0KA,DataB3,%> and causes him to heal for 40% of incoming damage instead of taking damage for <A0KA,HeroDur3> seconds.
 }
 
 STRING 14335
@@ -108385,18 +108403,6 @@ STRING 18165
 E
 }
 
-STRING 18166
-// Abilities: A0UU (Judgement), Ubertip (Tooltip - Normal - Extended)
-{
-Gives a 25% chance that an attack will deal 75 damage to nearby units.
-}
-
-STRING 18167
-// Abilities: A0UU (Judgement), Ubertip (Tooltip - Normal - Extended)
-{
-Gives a 25% chance that an attack will deal 100 damage to nearby units.
-}
-
 STRING 18168
 // Abilities: A0UU (Judgement), Name (Name)
 {
@@ -109482,12 +109488,6 @@ STRING 18369
 // Abilities: A0V6 (Pulverize), EditorSuffix (Editor Suffix)
 {
 (Zakajz)
-}
-
-STRING 18370
-// Abilities: A0V6 (Pulverize), Ubertip (Tooltip - Normal - Extended)
-{
-Gives a 25% chance that an attack will deal 50 damage to nearby units.
 }
 
 STRING 18371

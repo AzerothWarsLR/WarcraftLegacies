@@ -101,9 +101,9 @@ If you survive the Plague, sail to the frozen wasteland of Northrend and take th
       Lordaeron.ModObjectLimit(Constants.UPGRADE_R08F_GARITHOS_MIND_CONTROL_LORDAERON, Faction.UNLIMITED);
 
       //Todo: these probably should be in some kind of ability library, not here
-      Lordaeron.ModAbilityAvailability(Constants.ABILITY_A0KC_INCINERATE_PURPLE_ALEXANDROS, -1);
-      Lordaeron.ModAbilityAvailability(Constants.ABILITY_A0MQ_PULVERIZE_PURPLE_ALEXANDROS, -1);
-      Lordaeron.ModAbilityAvailability(Constants.ABILITY_A0NP_COMMUNION_ALEXANDROS_SPELLBOOK, -1);
+      Lordaeron.ModAbilityAvailability(Constants.ABILITY_A0KC_INCINERATE_ALEXANDROS, -1);
+      Lordaeron.ModAbilityAvailability(Constants.ABILITY_A0MQ_PULVERIZE_ALEXANDROS, -1);
+      Lordaeron.ModAbilityAvailability(Constants.ABILITY_A0DL_COMMUNION_ALEXANDROS, -1);
       Lordaeron.ModAbilityAvailability(Constants.ABILITY_A0N2_GRASPING_VINES_TREANTS, -1);
       Lordaeron.ModAbilityAvailability(Constants.ABILITY_A0GD_SUMMON_GARRISON_STORMWIND, -1);
       Lordaeron.ModAbilityAvailability(Constants.ABILITY_A0GC_REPLENISH_MANA_ORANGE_KEEPS_CAPITALS, -1);
