@@ -55,6 +55,11 @@ namespace MacroTools.Extensions
     /// Returns the unit's maximum hit points.
     /// </summary>
     public static int GetMaximumHitPoints(this unit whichUnit) => BlzGetUnitMaxHP(whichUnit);
+
+    /// <summary>
+    /// Returns the unit's current hit points.
+    /// </summary>
+    public static float GetHitPoints(this unit whichUnit) => GetUnitState(whichUnit, UNIT_STATE_LIFE);
     
     /// <summary>
     /// Sets the unit's scaling value.
@@ -761,6 +766,15 @@ namespace MacroTools.Extensions
       var facing = WCSharp.Shared.Util.AngleBetweenPoints(unitPosition.X, unitPosition.Y, targetPoint.X, targetPoint.Y);
       BlzSetUnitFacingEx(whichUnit, facing);
       return whichUnit;
+    }
+
+    /// <summary>
+    /// Returns true if the unit is a hero, has Resistant Skin, or is a creep with a level of 6 or higher.
+    /// </summary>
+    public static bool IsResistant(this unit whichUnit)
+    {
+      return whichUnit.IsType(UNIT_TYPE_RESISTANT) || whichUnit.IsType(UNIT_TYPE_HERO) ||
+             (whichUnit.OwningPlayer() == Player(PLAYER_NEUTRAL_AGGRESSIVE) && whichUnit.GetLevel() >= 6);
     }
   }
 }
