@@ -51361,12 +51361,6 @@ STRING 8558
 Gives a 25% chance that an attack will deal 35 damage to nearby units.
 }
 
-STRING 8559
-// Abilities: A0NP (Devour), Ubertip (Tooltip - Normal - Extended)
-{
-Reduces movement speed by 75%, attack rate by 50%, and damage by 50% of a target enemy unit. |nLasts 45 seconds. Lasts 7 seconds on Heroes.
-}
-
 STRING 8560
 // Abilities: A0DL (Communion), Tip (Tooltip - Normal)
 {
@@ -53616,6 +53610,12 @@ STRING 8934
 // Abilities: A0TU (Devour), EditorSuffix (Editor Suffix)
 {
 (Black Drake)
+}
+
+STRING 8935
+// Abilities: A0NP (Devour), Ubertip (Tooltip - Normal - Extended)
+{
+Consumes an enemy unit, dealing 200 damage if it's a hero and killing it instantly otherwise. Heals the caster caster for 50% of its hit points.
 }
 
 STRING 8936
@@ -55920,6 +55920,12 @@ STRING 9319
 // Abilities: A0HJ (Bounce Attack), Tip (Tooltip - Normal)
 {
 Bounce Attack
+}
+
+STRING 9320
+// Abilities: A0NP (Devour), Ubertip (Tooltip - Normal - Extended)
+{
+Consumes an enemy unit, dealing 300 damage if it's a hero and killing it instantly otherwise. Heals the caster caster for 50% of its hit points.
 }
 
 STRING 9321
@@ -60120,6 +60126,18 @@ STRING 10020
 // Abilities: A0HJ (Bounce Attack), Ubertip (Tooltip - Normal - Extended)
 {
 Gives the Hunter Tower the ability to strike additional units with its bouncing attacks.
+}
+
+STRING 10021
+// Abilities: A0NP (Devour), Ubertip (Tooltip - Normal - Extended)
+{
+Consumes an enemy unit, dealing 400 damage if it's a hero and killing it instantly otherwise. Heals the caster caster for 50% of its hit points.
+}
+
+STRING 10022
+// Abilities: A0NP (Devour), Ubertip (Tooltip - Normal - Extended)
+{
+Consumes an enemy unit, dealing 500 damage if it's a hero and killing it instantly otherwise. Heals the caster caster for 50% of its hit points.
 }
 
 STRING 10023
