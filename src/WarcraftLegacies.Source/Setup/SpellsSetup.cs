@@ -121,13 +121,6 @@ namespace WarcraftLegacies.Source.Setup
       };
       SpellSystem.Register(massSimulacrum);
 
-      var bombingRun = new ChannelAnySpell(Constants.ABILITY_A0S5_BOMBING_RUN_STORMWIND_DUMMY)
-      {
-        DummyAbilityId = Constants.ABILITY_A0S1_BOMBING_RUN_STORMWIND,
-        DummyAbilityOrderString = "locustswarm"
-      };
-      SpellSystem.Register(bombingRun);
-
       var maievVengeance = new Vengeance(Constants.UNIT_EWRD_LEADER_OF_THE_WATCHERS_SENTINELS,
         Constants.ABILITY_A017_TAKE_VENGEANCE_SENTINELS_MAIEV)
       {

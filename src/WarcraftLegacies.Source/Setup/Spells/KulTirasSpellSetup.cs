@@ -22,6 +22,13 @@ namespace WarcraftLegacies.Source.Setup.Spells
         GetExteriorWaygatePosition = () => new Point(GetSpellTargetX(), GetSpellTargetY()),
         GetInteriorWaygatePosition = () => Regions.ShipInside.Center
       });
+      
+      SpellSystem.Register(new ChannelAnySpell(Constants.ABILITY_A0S5_BOMBING_RUN_STORMWIND_DUMMY)
+      {
+        DummyAbilityId = Constants.ABILITY_A0S1_BOMBING_RUN_STORMWIND,
+        DummyAbilityOrderString = "locustswarm",
+        Duration = 15
+      });
     }
   }
 }
