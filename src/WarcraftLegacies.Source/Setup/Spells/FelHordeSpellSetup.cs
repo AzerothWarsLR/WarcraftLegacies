@@ -54,7 +54,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
 
       PassiveAbilityManager.Register(new Execute(Constants.UNIT_O01L_EXECUTIONER_FEL_HORDE_ELITE));
 
-      SpellSystem.Register(new Devour(Constants.ABILITY_A0TU_DEVOUR_TEAL_DRAKE)
+      SpellSystem.Register(new Devour(Constants.ABILITY_A0TU_DEVOUR_BLACK_DRAKE)
       {
         PercentageOfMaxHealth = 0.5f
       });

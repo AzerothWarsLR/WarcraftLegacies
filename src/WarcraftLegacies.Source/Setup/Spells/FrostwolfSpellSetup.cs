@@ -11,7 +11,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
   {
     public static void Setup()
     {
-      var devour = new Devour(Constants.ABILITY_ADEV_DEVOUR_PINK_KODO_BEAST)
+      var devour = new Devour(Constants.ABILITY_ADEV_DEVOUR_KODO_BEAST)
       {
         PercentageOfMaxHealth = 0.5f
       };
