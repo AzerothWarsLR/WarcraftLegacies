@@ -100,6 +100,7 @@ The Plague of Undeath is coming and Lordaeron will need your help with the Scour
       Quelthalas.ModObjectLimit(FourCC("R02Y"), Faction.UNLIMITED); //Improved Glaives
 
       Quelthalas.ModAbilityAvailability(Constants.ABILITY_A0K5_DWARVEN_MASONRY_CASTLES_YELLOW, -1);
+      Quelthalas.ModAbilityAvailability(Constants.ABILITY_A0OC_EXTRACT_VIAL_ALL, -1);
       
       Quelthalas.AddGoldMine(preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(17716, 13000)));
       
