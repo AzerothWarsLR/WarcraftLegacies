@@ -12,7 +12,7 @@ namespace MacroTools.Extensions
     /// Returns true if units can path over the <see cref="Point"/>.
     /// </summary>
     public static bool IsPathable(this Point whichPoint, pathingtype pathingType) =>
-      IsTerrainPathable(whichPoint.X, whichPoint.Y, pathingType);
+      !IsTerrainPathable(whichPoint.X, whichPoint.Y, pathingType);
 
     /// <summary>
     /// Returns the terrain type at the <see cref="Point"/>.
