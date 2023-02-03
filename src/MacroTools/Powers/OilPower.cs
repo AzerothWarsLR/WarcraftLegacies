@@ -69,7 +69,7 @@ namespace MacroTools.Powers
     /// <summary>
     /// The number of oil pools that are spawned at the start of the game.
     /// </summary>
-    public int StartingOilPoolCount { get; init; } = 1;
+    public int StartingOilPoolCount { get; init; }
 
     /// <summary>
     /// The maximum amount of oil that a given <see cref="OilPool"/> can start with.
