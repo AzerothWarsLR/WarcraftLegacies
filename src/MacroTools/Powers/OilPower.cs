@@ -145,11 +145,13 @@ namespace MacroTools.Powers
       do
       {
         randomPoint = Rectangle.WorldBounds.GetRandomPoint();
-      } while (IsTerrainPathable(randomPoint.X, randomPoint.Y, PATHING_TYPE_FLOATABILITY) ||
-               !IsTerrainPathable(randomPoint.X, randomPoint.Y, PATHING_TYPE_WALKABILITY) || 
-               GetTerrainType(randomPoint.X, randomPoint.Y) != FourCC("Gsqd"));
+      } while (!IsPointValidForOilPool(randomPoint));
 
       return randomPoint;
     }
+
+    private static bool IsPointValidForOilPool(Point whichPoint) =>
+      whichPoint.IsPathable(PATHING_TYPE_FLOATABILITY) && !whichPoint.IsPathable(PATHING_TYPE_WALKABILITY) &&
+      whichPoint.TerrainType() == FourCC("Gsqd");
   }
 }
