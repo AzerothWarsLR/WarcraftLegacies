@@ -30,12 +30,9 @@ namespace MacroTools.Powers
     public EventHandler<OilPower>? AmountChanged;
 
     /// <summary>
-    /// Initializes a new instance of the <see cref="OilPower"/> class.
+    /// <see cref="OilPool"/>s cannot spawn within this distance of eachother.
     /// </summary>
-    public OilPower()
-    {
-      RefreshDescription();
-    }
+    public float OilPoolBorderDistance { get; init; } = 600;
 
     /// <summary>
     /// The amount of oil the <see cref="OilPower"/> has.
@@ -85,6 +82,14 @@ namespace MacroTools.Powers
     public int OilPoolMinimumValue { get; init; }
 
     /// <summary>
+    /// Initializes a new instance of the <see cref="OilPower"/> class.
+    /// </summary>
+    public OilPower()
+    {
+      RefreshDescription();
+    }
+    
+    /// <summary>
     /// Returns all <see cref="OilPool"/>s managed by this <see cref="OilPower"/>.
     /// </summary>
     public IEnumerable<OilPool> GetAllOilPools() => _oilPools.AsReadOnly();
@@ -109,6 +114,20 @@ namespace MacroTools.Powers
       _oilIncomePeriodicAction = null;
       _owners.Remove(whichPlayer);
       _oilTimer?.Destroy();
+    }
+    
+    /// <summary>
+    /// Returns all <see cref="OilPool"/>s in the specified radius around the specified <see cref="Point"/>.
+    /// </summary>
+    public IEnumerable<OilPool> GetOilPoolsInRadius(Point fromPoint, float radius)
+    {
+      return GetAllOilPools()
+        .Where(x =>
+        {
+          var oilPoolPosition = x.Position;
+          return WCSharp.Shared.Util.DistanceBetweenPoints(fromPoint.X, fromPoint.Y, oilPoolPosition.X,
+            oilPoolPosition.Y) < radius;
+        });
     }
 
     private void GenerateOilPool()
@@ -139,7 +158,7 @@ namespace MacroTools.Powers
         $"You can harvest oil and use it to enhance your mechanical units.|n|cffffcc00Oil:|r {Amount}|n|cffffcc00Income:|r {Income}";
     }
 
-    private static Point GetRandomPointAtSea()
+    private Point GetRandomPointAtSea()
     {
       Point randomPoint;
       do
@@ -150,8 +169,8 @@ namespace MacroTools.Powers
       return randomPoint;
     }
 
-    private static bool IsPointValidForOilPool(Point whichPoint) =>
+    private bool IsPointValidForOilPool(Point whichPoint) =>
       whichPoint.IsPathable(PATHING_TYPE_FLOATABILITY) && !whichPoint.IsPathable(PATHING_TYPE_WALKABILITY) &&
-      whichPoint.TerrainType() == FourCC("Gsqd");
+      whichPoint.TerrainType() == FourCC("Gsqd") && !GetOilPoolsInRadius(whichPoint, OilPoolBorderDistance).Any();
   }
 }

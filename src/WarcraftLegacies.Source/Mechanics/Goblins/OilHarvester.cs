@@ -44,14 +44,7 @@ namespace WarcraftLegacies.Source.Mechanics.Goblins
         throw new Exception(
           $"Oil user {GetUnitName(GetTriggerUnit())} was created but owning faction {owningFaction?.Name} doesn't have a power that stores oil.");
       
-      var oilPoolNearby = oilPower.GetAllOilPools()
-        .Where(x =>
-        {
-          var harvesterPosition = createdUnit.GetPosition();
-          var oilPoolPosition = x.Position;
-          return WCSharp.Shared.Util.DistanceBetweenPoints(harvesterPosition.X, harvesterPosition.Y, oilPoolPosition.X,
-            oilPoolPosition.Y) < Radius;
-        }).FirstOrDefault();
+      var oilPoolNearby = oilPower.GetOilPoolsInRadius(createdUnit.GetPosition(), Radius).FirstOrDefault();
 
       if (oilPoolNearby == null)
       {
