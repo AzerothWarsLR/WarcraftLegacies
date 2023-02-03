@@ -1,5 +1,6 @@
 ﻿using MacroTools;
 using MacroTools.Extensions;
+using MacroTools.FactionSystem;
 using MacroTools.Powers;
 using MacroTools.ResearchSystems;
 using WarcraftLegacies.Source.Researches;
@@ -37,11 +38,11 @@ namespace WarcraftLegacies.Source.Setup
         new Revenants(Constants.UPGRADE_R08T_REVENANTS_SCOURGE, 150, 100));
 
       ResearchManager.Register(new PowerResearch(Constants.UPGRADE_R096_REMATERIALIZATION_LEGION, 150, 250,
-        new Rematerialization(0.15f, new Point(20454.9f, -28873.6f), "Argus", Regions.MonolithNoBuild)
+        new Rematerialization(0.30f, new Point(20454.9f, -28873.6f), "Argus", Regions.MonolithNoBuild)
         {
           IconName = "achievement_raid_argusraid",
           Name = "Rematerialization",
-          EligibilityCondition = dyingUnit => dyingUnit.OwningPlayer().GetObjectLimit(dyingUnit.GetTypeId()) != 0
+          EligibilityCondition = dyingUnit => dyingUnit.OwningPlayer().GetObjectLimit(dyingUnit.GetTypeId()) >= Faction.UNLIMITED
         }));
     }
   }
