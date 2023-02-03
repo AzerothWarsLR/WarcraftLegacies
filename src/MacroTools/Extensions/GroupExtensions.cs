@@ -23,6 +23,7 @@ namespace MacroTools.Extensions
         GroupRemoveUnit(whichGroup, firstOfGroup);
         firstOfGroup = FirstOfGroup(whichGroup);
       }
+      DestroyGroup(whichGroup);
       return list;
     }
 
