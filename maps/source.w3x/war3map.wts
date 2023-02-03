@@ -18696,12 +18696,6 @@ STRING 3116
 A
 }
 
-STRING 3117
-// Upgrades: R096 (Defend), Ubertip (Tooltip - Extended)
-{
-Grants your units a 15% chance to rematerialize at Argus upon death.
-}
-
 STRING 3118
 // Units: O04H (Fire Ascendant), EditorSuffix (Name - Editor Suffix)
 {
@@ -36969,6 +36963,12 @@ STRING 6162
 // Abilities: A007 (Starfall), EditorSuffix (Editor Suffix)
 {
  (Lorthemar)
+}
+
+STRING 6163
+// Upgrades: R096 (Defend), Ubertip (Tooltip - Extended)
+{
+Grants your unlimited units a 30% chance to rematerialize at Argus upon death.
 }
 
 STRING 6165
