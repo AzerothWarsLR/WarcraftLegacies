@@ -22774,14 +22774,8 @@ STRING 3797
 Centre of highly volatile innovation.|n|cfff5962dTrains:|R Shredder, War Zeppelin, Assault Tank |n|cfff5962dAbilities:|R Reveal, Oil Consumer
 }
 
-STRING 3798
-// Abilities: A0L0 (Execute), Ubertip (Tooltip - Normal - Extended)
-{
-This units attacks instantly kill units with fewer hit points than 500% of this units damage.
-}
-
 STRING 3799
-// Abilities: A0L0 (Execute), Tip (Tooltip - Normal)
+// Abilities: A0S4 (Execute), Tip (Tooltip - Normal)
 {
 Execute
 }
@@ -22793,7 +22787,7 @@ Revive Cho'gall
 }
 
 STRING 3801
-// Abilities: A0L0 (Execute), Name (Name)
+// Abilities: A0S4 (Execute), Name (Name)
 {
 Execute
 }
@@ -36969,6 +36963,12 @@ STRING 6163
 // Upgrades: R096 (Defend), Ubertip (Tooltip - Extended)
 {
 Grants your unlimited units a 30% chance to rematerialize at Argus upon death.
+}
+
+STRING 6164
+// Abilities: A0S4 (Execute), Ubertip (Tooltip - Normal - Extended)
+{
+This unit's attacks instantly kill units with fewer hit points than 500% of this units damage, and heroes with fewer hit points than 250% of its damage.
 }
 
 STRING 6165
@@ -97822,12 +97822,6 @@ STRING 16366
 Revive Defiler
 }
 
-STRING 16367
-// Abilities: A0S4 (Execute), Ubertip (Tooltip - Normal - Extended)
-{
-This units attacks instantly kill units with fewer hit points than 500% of this units damage.
-}
-
 STRING 16368
 // Units: o04G (Haruspex), Name (Name)
 {
@@ -100034,12 +100028,6 @@ STRING 16739
 // Abilities: A0OM (Animate Dead), EditorSuffix (Editor Suffix)
 {
 (Twilight DK)
-}
-
-STRING 16740
-// Abilities: A0L0 (Execute), EditorSuffix (Editor Suffix)
-{
-(Blademaster)
 }
 
 STRING 16741
@@ -103168,12 +103156,6 @@ STRING 17270
 Ny'alothan Stairs
 }
 
-STRING 17271
-// Abilities: A0S4 (Execute), Tip (Tooltip - Normal)
-{
-Execute
-}
-
 STRING 17272
 // Units: E01D (N'raqi Arcanist), Revivetip (Tooltip - Revive)
 {
@@ -103190,12 +103172,6 @@ STRING 17274
 // Units: U02A (N'raqi Aberration), Awakentip (Tooltip - Awaken)
 {
 Revive
-}
-
-STRING 17275
-// Abilities: A0S4 (Execute), Name (Name)
-{
-Execute
 }
 
 STRING 17276

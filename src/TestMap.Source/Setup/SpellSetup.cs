@@ -43,7 +43,11 @@ namespace TestMap.Source.Setup
         };
         SpellSystem.Register(massSimulacrum);
 
-        var executeFootman = new Execute(FourCC("hfoo"));
+        var executeFootman = new Execute(FourCC("hfoo"))
+        {
+          DamageMultNonResistant = 5,
+          DamageMultResistant = 2.5f
+        };
         PassiveAbilityManager.Register(executeFootman);
 
         var animalCompanion = new AnimalCompanion(FourCC("hfoo"), FourCC("nqb1"))

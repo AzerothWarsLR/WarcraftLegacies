@@ -52,7 +52,11 @@ namespace WarcraftLegacies.Source.Setup.Spells
         RequiredResearch = Constants.UPGRADE_R098_FEL_INFUSED_SKELETON_FEL_HORDE
       });
 
-      PassiveAbilityManager.Register(new Execute(Constants.UNIT_O01L_EXECUTIONER_FEL_HORDE_ELITE));
+      PassiveAbilityManager.Register(new Execute(Constants.UNIT_O01L_EXECUTIONER_FEL_HORDE_ELITE)
+      {
+        DamageMultNonResistant = 5,
+        DamageMultResistant = 2.5f
+      });
 
       SpellSystem.Register(new Devour(Constants.ABILITY_A0TU_DEVOUR_BLACK_DRAKE)
       {

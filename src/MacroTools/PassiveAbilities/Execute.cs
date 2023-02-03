@@ -4,20 +4,39 @@ using static War3Api.Common;
 
 namespace MacroTools.PassiveAbilities
 {
+  /// <summary>
+  /// Causes the unit to instantly kill enemies who drop below a certain threshold.
+  /// </summary>
   public sealed class Execute : PassiveAbility, IAppliesEffectOnDamage
   {
     private const string Effect = "Objects\\Spawnmodels\\Human\\HumanLargeDeathExplode\\HumanLargeDeathExplode.mdl";
-    private const int DamageMult = 5;
+    
+    /// <summary>
+    /// Non-resistant enemies are instantly killed when their hit points drop below the caster's attack damage multiplied by this value.
+    /// </summary>
+    public float DamageMultNonResistant { get; init; }
+    
+    /// <summary>
+    /// Resistant enemies are instantly killed when their hit points drop below the caster's attack damage multiplied by this value.
+    /// </summary>
+    public float DamageMultResistant { get; init; }
 
+    /// <summary>
+    /// Initializes a new instance of the <see cref="Execute"/> class.
+    /// </summary>
+    /// <param name="unitTypeId"><inheritdoc /></param>
     public Execute(int unitTypeId) : base(unitTypeId)
     {
     }
 
+    /// <inheritdoc />
     public void OnDealsDamage()
     {
       var triggerUnit = GetTriggerUnit();
-      if (!BlzGetEventIsAttack() 
-          || !(GetUnitState(triggerUnit, UNIT_STATE_LIFE) < GetEventDamage() + GetEventDamageSource().GetAverageDamage(0) * DamageMult))
+      var damageMult = triggerUnit.IsResistant() ? DamageMultResistant : DamageMultNonResistant;
+      
+      if (!BlzGetEventIsAttack() || !(GetUnitState(triggerUnit, UNIT_STATE_LIFE) <
+                                      GetEventDamage() + GetEventDamageSource().GetAverageDamage(0) * damageMult))
         return;
       BlzSetEventDamage(GetUnitState(triggerUnit, UNIT_STATE_LIFE) + 1);
       BlzSetEventDamageType(DAMAGE_TYPE_UNIVERSAL);
