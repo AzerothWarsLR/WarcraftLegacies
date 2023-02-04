@@ -25,6 +25,7 @@ namespace MacroTools.Spells.Slipstream
     /// <param name="target"><inheritdoc /></param>
     public SlipstreamPortalBuff(unit caster, unit target) : base(caster, target)
     {
+      Duration = float.MaxValue;
     }
 
     /// <summary>
@@ -37,7 +38,7 @@ namespace MacroTools.Spells.Slipstream
       _progressBar = AddSpecialEffect(@"war3mapImported\Progressbar10sec.mdx", Target.GetPosition().X, Target.GetPosition().Y)
         .SetTimeScale(10f / delay)
         .SetColor(Caster.OwningPlayer())
-        .SetHeight(255);
+        .SetHeight(450);
       Target
         .SetAnimationSpeed(9.3f * (1 / delay))
         .SetAnimation("birth");
