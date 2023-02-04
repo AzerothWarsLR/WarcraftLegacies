@@ -1,4 +1,5 @@
-﻿using MacroTools.ChannelSystem;
+﻿using System;
+using MacroTools.ChannelSystem;
 using MacroTools.Extensions;
 using MacroTools.Instances;
 using MacroTools.SpellSystem;
@@ -58,20 +59,22 @@ namespace MacroTools.Spells.Slipstream
         PortalUnitTypeId = PortalUnitTypeId,
         OpeningDelay = OpeningDelay,
         ClosingDelay = ClosingDelay,
-        Color = Color
+        Color = Color,
+        RefundFunc = Refund
       });
     }
 
     /// <inheritdoc/>
     public override void OnStartCast(unit caster, unit target, Point targetPoint)
     {
-      if (!IsPointValidTarget(caster, targetPoint))
-        Refund(caster);
+      if (IsPointValidTarget(caster, targetPoint)) 
+        return;
+      caster.IssueOrder("stop");
+      Refund(caster);
     }
 
     private void Refund(unit whichUnit)
     {
-      whichUnit.IssueOrder("stop");
       whichUnit.RestoreMana(BlzGetUnitAbilityManaCost(whichUnit, Id, GetAbilityLevel(whichUnit)));
       BlzEndUnitAbilityCooldown(whichUnit, Id);
     }

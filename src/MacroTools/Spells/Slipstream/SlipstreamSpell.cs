@@ -55,22 +55,25 @@ namespace MacroTools.Spells.Slipstream
         PortalUnitTypeId = PortalUnitTypeId,
         OpeningDelay = OpeningDelay,
         ClosingDelay = ClosingDelay,
-        Color = Color
+        Color = Color,
+        RefundFunc = Refund
       });
     }
 
     /// <inheritdoc/>
     public override void OnStartCast(unit caster, unit target, Point targetPoint)
     {
-      if (IsTerrainPathable(targetPoint.X, targetPoint.Y, PATHING_TYPE_WALKABILITY) 
-          || WCSharp.Shared.Util.DistanceBetweenPoints(GetUnitX(caster), GetUnitY(caster), targetPoint.X, targetPoint.Y) < 500
-          || InstanceSystem.GetPointInstance(caster.GetPosition()) != InstanceSystem.GetPointInstance(targetPoint)) 
-        Refund(caster);
+      if (!IsTerrainPathable(targetPoint.X, targetPoint.Y, PATHING_TYPE_WALKABILITY) &&
+          !(WCSharp.Shared.Util.DistanceBetweenPoints(GetUnitX(caster), GetUnitY(caster), targetPoint.X,
+            targetPoint.Y) < 500) && InstanceSystem.GetPointInstance(caster.GetPosition()) ==
+          InstanceSystem.GetPointInstance(targetPoint))
+        return;
+      caster.IssueOrder("stop");
+      Refund(caster);
     }
 
     private void Refund(unit whichUnit)
     {
-      whichUnit.IssueOrder("stop");
       whichUnit.RestoreMana(BlzGetUnitAbilityManaCost(whichUnit, Id, GetAbilityLevel(whichUnit)));
       BlzEndUnitAbilityCooldown(whichUnit, Id);
     }

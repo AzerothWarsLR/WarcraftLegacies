@@ -1,4 +1,5 @@
-﻿using MacroTools.ChannelSystem;
+﻿using System;
+using MacroTools.ChannelSystem;
 using MacroTools.Extensions;
 using WCSharp.Buffs;
 using WCSharp.Shared.Data;
@@ -28,6 +29,11 @@ namespace MacroTools.Spells.Slipstream
     /// It takes this long for the portal to close after the caster stops channeling.
     /// </summary>
     public float ClosingDelay { get; init; }
+    
+    /// <summary>
+    /// A function that tells the <see cref="SlipstreamPortalChannel"/> how to refund its cost to its caster if necessary.
+    /// </summary>
+    public Action<unit>? RefundFunc { get; init; }
 
     /// <summary>
     /// The color of the created portals.
@@ -67,7 +73,10 @@ namespace MacroTools.Spells.Slipstream
       _portalDestination = CreateUnit(Caster.OwningPlayer(), PortalUnitTypeId, _target.X, _target.Y, Caster.GetFacing())
         .SetWaygateDestination(new Point(_origin.X, _origin.Y))
         .SetColor(Color.Red, Color.Green, Color.Blue, Color.Alpha);
-      _portalDestinationBuff = new SlipstreamPortalBuff(Caster, _portalDestination);
+      _portalDestinationBuff = new SlipstreamPortalBuff(Caster, _portalDestination)
+      {
+        RefundFunc = RefundFunc
+      };
       BuffSystem.Add(_portalDestinationBuff);
       _portalDestinationBuff.Open(OpeningDelay);
     }

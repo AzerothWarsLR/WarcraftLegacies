@@ -1,4 +1,5 @@
-﻿using MacroTools.Extensions;
+﻿using System;
+using MacroTools.Extensions;
 using WCSharp.Buffs;
 using static War3Api.Common;
 
@@ -10,7 +11,13 @@ namespace MacroTools.Spells.Slipstream
   public sealed class SlipstreamPortalBuff : PassiveBuff
   {
     private SlipstreamPortalState _state = SlipstreamPortalState.Unopened;
+    private effect? _progressBar;
 
+    /// <summary>
+    /// A function that tells the <see cref="SlipstreamPortalBuff"/> how to refund its cost to its caster if necessary.
+    /// </summary>
+    public Action<unit>? RefundFunc { get; init; }
+    
     /// <summary>
     /// Initializes a new instance of the <see cref="SlipstreamPortalBuff"/> class.
     /// </summary>
@@ -27,6 +34,10 @@ namespace MacroTools.Spells.Slipstream
     {
       if (_state != SlipstreamPortalState.Unopened) return;
       _state = SlipstreamPortalState.Opening;
+      _progressBar = AddSpecialEffect(@"war3mapImported\Progressbar10sec.mdx", Target.GetPosition().X, Target.GetPosition().Y)
+        .SetTimeScale(10f / delay)
+        .SetColor(Caster.OwningPlayer())
+        .SetHeight(255);
       Target
         .SetAnimationSpeed(9.3f * (1 / delay))
         .SetAnimation("birth");
@@ -39,6 +50,7 @@ namespace MacroTools.Spells.Slipstream
             .SetAnimationSpeed(1)
             .SetAnimation("stand")
             .SetWaygateActive(true);
+          _progressBar.Destroy();
         }
 
         DestroyTimer(GetExpiredTimer());
@@ -53,6 +65,7 @@ namespace MacroTools.Spells.Slipstream
     {
       if (_state == SlipstreamPortalState.Opening)
       {
+        RefundFunc?.Invoke(Caster);
         CloseInstantly();
         return;
       }
@@ -76,6 +89,12 @@ namespace MacroTools.Spells.Slipstream
       Target.SetWaygateActive(false);
     }
 
+    /// <inheritdoc />
+    public override void OnDispose()
+    {
+      _progressBar?.Destroy();
+    }
+
     private void CloseInstantly()
     {
       _state = SlipstreamPortalState.Closed;
@@ -86,6 +105,7 @@ namespace MacroTools.Spells.Slipstream
       AddSpecialEffect(@"Abilities\Spells\Human\Feedback\SpellBreakerAttack.mdl", GetUnitX(Target), GetUnitY(Target))
         .SetScale(6)
         .SetLifespan();
+      Active = false;
     }
   }
 }
