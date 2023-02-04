@@ -5,6 +5,7 @@ using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.QuestSystem;
 using static MacroTools.Libraries.GeneralHelpers;
+using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Sentinels
 {
@@ -35,7 +36,7 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
 
     /// <inheritdoc />
     protected override string RewardDescription =>
-      "4 free Wardens appear at the Broken Isles, and you learn to train Wardens";
+      $"4 free {GetObjectName(Constants.UNIT_H045_WARDEN_SENTINELS)}s appear at the Broken Isles, and you learn to train {GetObjectName(Constants.UNIT_H045_WARDEN_SENTINELS)}s from the {GetObjectName(Constants.UNIT_N04G_VAULT_OF_THE_WARDENS_SENTINELS)} and from {GetObjectName(Constants.UNIT_E00T_WATCHER_S_BASTION_SENTINEL_SPECIALIST)}s";
 
     /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)
@@ -43,7 +44,7 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
       CreateUnits(completingFaction.Player, WardenId, Regions.VaultoftheWardens.Center.X,
         Regions.VaultoftheWardens.Center.Y, 270, 4);
       completingFaction.Player.DisplayUnitTypeAcquired(WardenId,
-        "You can now train Wardens from the Vault of the Wardens, Sentinel Enclaves, and your capitals.");
+        $"You can now train Wardens from the {GetObjectName(Constants.UNIT_N04G_VAULT_OF_THE_WARDENS_SENTINELS)} and from {GetObjectName(Constants.UNIT_E00T_WATCHER_S_BASTION_SENTINEL_SPECIALIST)}s.");
       _vaultOfTheWardens.Unit?.Rescue(completingFaction.Player);
     }
 

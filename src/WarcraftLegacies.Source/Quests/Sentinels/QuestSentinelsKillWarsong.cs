@@ -28,7 +28,7 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
       "The Warsong presence on Kalimdor has been eliminated. The land has been protected from their misbegotten race.";
 
     /// <inheritdoc/>
-    protected override string RewardDescription => "Allows the construction of the Watcher's Bastion";
+    protected override string RewardDescription => $"Allows {GetObjectName(Constants.UNIT_H08V_NIGHTSABER_KNIGHT_SENTINEL)}s and {GetObjectName(Constants.UNIT_N034_GUILD_RANGER_SENTINELS)}s to be trained from {GetObjectName(Constants.UNIT_E00T_WATCHER_S_BASTION_SENTINEL_SPECIALIST)}s";
 
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)

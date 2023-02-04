@@ -18696,6 +18696,12 @@ STRING 3116
 A
 }
 
+STRING 3117
+// Units: e00T (Watcher's Bastion), Ubertip (Tooltip - Extended)
+{
+High rise tower where the best warriors of the Sentinels reside.|n|cfff5962dTrains:|R Nightsaber Knight, Guild Ranger, Warden
+}
+
 STRING 3118
 // Units: O04H (Fire Ascendant), EditorSuffix (Name - Editor Suffix)
 {
@@ -21898,12 +21904,6 @@ STRING 3651
 Build Feathermoon Stronghold
 }
 
-STRING 3652
-// Units: e00M (Feathermoon Stronghold), Ubertip (Tooltip - Extended)
-{
-Stronghold of Sentinel General Shandris Feathermoon
-}
-
 STRING 3653
 // Units: o047 (Bazaar), Name (Name)
 {
@@ -21935,7 +21935,7 @@ Black Strike
 }
 
 STRING 3658
-// Upgrades: R00S (Spirit Walker Adept Training,Spirit Walker Master Training), EditorSuffix (Editor Suffix)
+// Upgrades: R013 (Mark of the Claw), EditorSuffix (Editor Suffix)
 {
 (Sentinels)
 }
@@ -22115,7 +22115,7 @@ STRING 3687
 }
 
 STRING 3688
-// Upgrades: R007 (Chaos), EditorSuffix (Editor Suffix)
+// Upgrades: R00S (Spirit Walker Adept Training,Spirit Walker Master Training), EditorSuffix (Editor Suffix)
 {
 (Sentinels)
 }
@@ -22772,6 +22772,12 @@ STRING 3797
 // Units: o01M (Engineer's Guild), Ubertip (Tooltip - Extended)
 {
 Centre of highly volatile innovation.|n|cfff5962dTrains:|R Shredder, War Zeppelin, Assault Tank |n|cfff5962dAbilities:|R Reveal, Oil Consumer
+}
+
+STRING 3798
+// Abilities: A0HN (Naval Aura), EditorSuffix (Editor Suffix)
+{
+(Boralus Keep, Auberdine)
 }
 
 STRING 3799
@@ -44150,7 +44156,7 @@ Q
 }
 
 STRING 7358
-// Upgrades: R013 (Mark of the Claw), EditorSuffix (Editor Suffix)
+// Upgrades: R00A (Mark of the Claw), EditorSuffix (Editor Suffix)
 {
 (Druids)
 }
@@ -44879,6 +44885,18 @@ STRING 7479
 // Abilities: ANbl (Blink), Hotkey (Hotkey - Normal)
 {
 W
+}
+
+STRING 7480
+// Abilities: A0HN (Naval Aura), Ubertip (Tooltip - Normal - Extended)
+{
+Enhances friendly ships within a radius of <A0HN,Area1> by increasing their movement speed by <A0HN,DataA1,%> and hit point regeneration per second by <A0HN,DataB1>.
+}
+
+STRING 7481
+// Buffs/Effects: B036 (Naval Aura), Buffubertip (Tooltip - Extended)
+{
+This unit has increased movement speed and hit point regeneration.
 }
 
 STRING 7482
@@ -51343,12 +51361,6 @@ STRING 8558
 Gives a 25% chance that an attack will deal 35 damage to nearby units.
 }
 
-STRING 8559
-// Units: e00T (Watcher's Bastion), Ubertip (Tooltip - Extended)
-{
-High rise tower where the best warriors of the Sentinels reside.|n|cfff5962dTrains:|R Nightsaber Knight, Guild Ranger
-}
-
 STRING 8560
 // Abilities: A0DL (Communion), Tip (Tooltip - Normal)
 {
@@ -55592,6 +55604,12 @@ STRING 9266
 Gloves of Fury Berserk
 }
 
+STRING 9267
+// Upgrades: R007 (Chaos), EditorSuffix (Editor Suffix)
+{
+(Sentinels)
+}
+
 STRING 9268
 // Abilities: A0T0 (Bloodlust), Unhotkey (Hotkey - Turn Off)
 {
@@ -55803,7 +55821,7 @@ Auberdine Navy
 }
 
 STRING 9306
-// Upgrades: R00A (Mark of the Claw), EditorSuffix (Editor Suffix)
+// Upgrades: R002 (Chaos), EditorSuffix (Editor Suffix)
 {
 (Druids)
 }
@@ -55812,12 +55830,6 @@ STRING 9307
 // Units: h08K (Monk), Casterupgradetip (Caster Upgrade Tips)
 {
 - Heal,- Heal|n- Minor Holy Light,- Heal|n- Minor Holy Light|n- Rain of Light
-}
-
-STRING 9308
-// Abilities: A0HN (Naval Aura), EditorSuffix (Editor Suffix)
-{
-(Orange - Boralus Keep. Light Blue - Auberdine)
 }
 
 STRING 9309
@@ -55830,12 +55842,6 @@ STRING 9310
 // Abilities: A0HN (Naval Aura), Tip (Tooltip - Normal)
 {
 Naval Aura.
-}
-
-STRING 9311
-// Abilities: A0HN (Naval Aura), Ubertip (Tooltip - Normal - Extended)
-{
-The waters nearby are familiar to friendly ships, increasing their movement speed by 25%. Constant reinforcement from this naval city allows ships to repair any damage taken.
 }
 
 STRING 9312
@@ -77369,7 +77375,7 @@ Consumes the Pack Kodo to build a Great Hall.
 }
 
 STRING 12901
-// Upgrades: R002 (Chaos), EditorSuffix (Editor Suffix)
+// Upgrades: R02T (Well Spring), EditorSuffix (Editor Suffix)
 {
 (Druids)
 }
@@ -80524,24 +80530,6 @@ STRING 13431
 This unit is affected by a Arcane Brilliance; its armor is temporarily increased.
 }
 
-STRING 13432
-// Buffs/Effects: B04G (Theramore Naval Aura), Bufftip (Tooltip)
-{
-Theramore Naval Aura
-}
-
-STRING 13433
-// Buffs/Effects: B04G (Theramore Naval Aura), Buffubertip (Tooltip - Extended)
-{
-This ship is sailing in familiar waters
-}
-
-STRING 13434
-// Buffs/Effects: B04G (Theramore Naval Aura), EditorName (Name (Editor Only))
-{
-Theramore Naval Aura
-}
-
 STRING 13435
 // Buffs/Effects: B04F (Fire Arrows), Bufftip (Tooltip)
 {
@@ -80624,24 +80612,6 @@ STRING 13448
 // Buffs/Effects: B04C (Will of the Emperor), EditorName (Name (Editor Only))
 {
 Will of the Emperor
-}
-
-STRING 13449
-// Buffs/Effects: B04B (Kul Tiras Naval Aura), Bufftip (Tooltip)
-{
-Kul Tiras Naval Aura.
-}
-
-STRING 13450
-// Buffs/Effects: B04B (Kul Tiras Naval Aura), Buffubertip (Tooltip - Extended)
-{
-This ship is sailing in familiar waters
-}
-
-STRING 13451
-// Buffs/Effects: B04B (Kul Tiras Naval Aura), EditorName (Name (Editor Only))
-{
-Kul Tiras Naval Aura
 }
 
 STRING 13452
@@ -81212,12 +81182,6 @@ STRING 13546
 // Buffs/Effects: B036 (Naval Aura), Bufftip (Tooltip)
 {
 Naval Aura
-}
-
-STRING 13547
-// Buffs/Effects: B036 (Naval Aura), Buffubertip (Tooltip - Extended)
-{
-Repairing 3 health per second and granting 25% increased movement speed.
 }
 
 STRING 13548
@@ -84869,7 +84833,7 @@ Increases the attack range of Archers and Hippogryph Rider by an additional 100.
 }
 
 STRING 14159
-// Upgrades: R02T (Well Spring), EditorSuffix (Editor Suffix)
+// Upgrades: R046 (Marksmanship), EditorSuffix (Editor Suffix)
 {
 (Druids)
 }
@@ -84905,7 +84869,7 @@ Increases Druids of the Talons' mana capacity, mana regeneration rate, hit point
 }
 
 STRING 14165
-// Upgrades: R046 (Marksmanship), EditorSuffix (Editor Suffix)
+// Upgrades: R047 (Marksmanship), EditorSuffix (Editor Suffix)
 {
 (Druids)
 }
@@ -85475,7 +85439,7 @@ STRING 14261
 }
 
 STRING 14262
-// Upgrades: R047 (Marksmanship), EditorSuffix (Editor Suffix)
+// Upgrades: R048 (Marksmanship), EditorSuffix (Editor Suffix)
 {
 (Druids)
 }
@@ -86050,7 +86014,7 @@ Summon Azshara
 }
 
 STRING 14361
-// Upgrades: R048 (Marksmanship), EditorSuffix (Editor Suffix)
+// Upgrades: R015 (Marksmanship), EditorSuffix (Editor Suffix)
 {
 (Druids)
 }
@@ -86221,12 +86185,6 @@ STRING 14389
 // Upgrades: R045 (Chaos), Ubertip (Tooltip - Extended)
 {
 Transforms Earth Golems into Crystal Golems, increasing their hit points by 500 and attack damage by 20.
-}
-
-STRING 14390
-// Upgrades: R015 (Marksmanship), EditorSuffix (Editor Suffix)
-{
-(Druids)
 }
 
 STRING 14391
