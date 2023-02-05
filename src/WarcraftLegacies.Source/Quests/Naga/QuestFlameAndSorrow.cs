@@ -9,12 +9,12 @@ namespace WarcraftLegacies.Source.Quests.Naga
   /// <summary>
   /// Acquire the <see cref="ArtifactSetup.EyeOfSargeras"/> to unlock Coilfang Summoners
   /// </summary>
-  public sealed class QuestSkullOfGuldan : QuestData
+  public sealed class QuestFlameAndSorrow : QuestData
   {
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestEyeofSargeras"/> class.
     /// </summary>
-    public QuestSkullOfGuldan(Artifact skullofGuldan, LegendaryHero illidan) : base("A Destiny of Flame and Sorrow",
+    public QuestFlameAndSorrow(Artifact skullofGuldan, LegendaryHero illidan) : base("A Destiny of Flame and Sorrow",
       "The Skull of Gul'dan would give Illidan immeasurable power",
       "ReplaceableTextures\\CommandButtons\\BTNEyeOfSargeras.blp")
     {

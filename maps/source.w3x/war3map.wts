@@ -68418,12 +68418,6 @@ STRING 11398
 Shadow Strike
 }
 
-STRING 11399
-// Units: U026 (Matriarch of House Waycrest), Ubertip (Tooltip - Extended)
-{
-Mystical Hero, adept at long range damage and resilience.|n|cfff5962dCan Learn:|R Dragon Kin, Ice Lance, Mana Shield, Dragon Form|n|n|cffffcc00Attacks land and air units.|R
-}
-
 STRING 11400
 // Abilities: A073 (Shadow Strike), Ubertip (Tooltip - Normal - Extended)
 {
@@ -78022,10 +78016,22 @@ STRING 12998
 Calls an onslaught of Gryphon Riders to attack enemies in a 800 radious. |n|cffffcc00Level 1|r -  Each gryphon deals 20 damage. |n|nLasts 30 seconds.
 }
 
+STRING 12999
+// Units: U026 (Matriarch of House Waycrest), Ubertip (Tooltip - Extended)
+{
+Mystical Hero, frail with extremely potent offensive and disruptive abilities.|n|cfff5962dAbilities:|r Wraith's Form|n|cfff5962dCan Learn:|R Frost Nova, Forked Lightning, Mana Shield, Siren's Scream|n|n|cffffcc00Attacks land and air units.|R
+}
+
 STRING 13000
 // Abilities: A0QJ (Corrupted Lightning), Hotkey (Hotkey - Normal)
 {
 R
+}
+
+STRING 13001
+// Abilities: A0D7 (Wraith Form), Ubertip (Tooltip - Normal - Extended)
+{
+Transforms Meredith into a powerful Wraith with a ranged attack. Has 1000 bonus hit points, 60 bonus damage, 10 hp regeneration per second and 40 armor. lasts for 15 seconds.
 }
 
 STRING 13002
@@ -81248,12 +81254,6 @@ STRING 13546
 // Buffs/Effects: B036 (Naval Aura), Bufftip (Tooltip)
 {
 Naval Aura
-}
-
-STRING 13547
-// Abilities: A0D7 (Wraith Form), Ubertip (Tooltip - Normal - Extended)
-{
-Transforms Meredith into a powerful Wraith with a ranged attack. Has 1000 bonus hit points, 10 hp regeneration per second and 60% evasion. lasts for 15 seconds.
 }
 
 STRING 13548
