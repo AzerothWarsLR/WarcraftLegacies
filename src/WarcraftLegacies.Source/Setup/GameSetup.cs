@@ -31,16 +31,16 @@ namespace WarcraftLegacies.Source.Setup
     {
       ControlPointManager.Instance = new ControlPointManager
       {
-        StartingMaxHitPoints = 1600,
-        HostileStartingCurrentHitPoints = 1200,
+        StartingMaxHitPoints = 1400,
+        HostileStartingCurrentHitPoints = 1000,
         IncreaseControlLevelAbilityTypeId = Constants.ABILITY_A0A8_FORTIFY_CONTROL_POINTS_SHARED,
         ControlLevelSettings = new ControlLevelSettings
         {
           DefaultDefenderUnitTypeId = Constants.UNIT_H03W_CONTROL_POINT_DEFENDER_LORDAERON,
-          DamageBase = 12,
+          DamageBase = 18,
           DamagePerControlLevel = 1,
           ArmorPerControlLevel = 1,
-          HitPointsPerControlLevel = 80,
+          HitPointsPerControlLevel = 70,
           ControlLevelMaximum = 20
         }
       };
@@ -130,7 +130,6 @@ namespace WarcraftLegacies.Source.Setup
       RemoveUnusedAreas.Run();
       EyeOfSargerasCooldowns.Setup();
       CapturableUnitSetup.Setup(preplacedUnitSystem);
-      GilneasGateTowers.Setup(preplacedUnitSystem);
       EyeOfSargerasPickup.Setup();
       SacrificeAcolyte.Setup();
       IntegrityChecker.Setup(false);

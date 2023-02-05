@@ -25,9 +25,9 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
 
     /// <inheritdoc/>
     protected override string RewardFlavour =>
-      "With the outpost built, the Ember Order can be deployed and Lucille Waycrest has joined the Proudmoor";
+      "While the outpost was built, the Ember Order has finished saving house Waycrest from the Drust influence. Meredith Waycrest is rid of the corruption and will join the war effort of the Kul'tiras ";
 
     /// <inheritdoc/>
-    protected override string RewardDescription => "You can now build Order Chapter House and Lucille Waycrest is trainable";
+    protected override string RewardDescription => "You can now build Order Chapter House and Meredith Waycrest is trainable";
   }
 }

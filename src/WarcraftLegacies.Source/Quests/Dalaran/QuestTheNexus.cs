@@ -19,6 +19,7 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
       AddObjective(new ObjectiveControlLegend(jaina, true));
       AddObjective(new ObjectiveCapitalDead(lichKing));
       AddObjective(new ObjectiveControlCapital(theNexus, false));
+      ResearchId = Constants.UPGRADE_R03Y_QUEST_COMPLETED_THE_NEXUS;
       Global = true;
     }
 

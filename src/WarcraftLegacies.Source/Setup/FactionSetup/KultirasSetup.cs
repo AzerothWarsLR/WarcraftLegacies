@@ -91,7 +91,7 @@ Stormwind is preparing for an invasion through the Dark Portal in the South. Mus
       //Heroes
       Kultiras.ModObjectLimit(FourCC("Hapm"), 1); //Admiral
       Kultiras.ModObjectLimit(FourCC("H05L"), 1); //Lady Ashvane
-      Kultiras.ModObjectLimit(FourCC("E016"), 1); //Lucille
+      Kultiras.ModObjectLimit(FourCC("U026"), 1); //Meredith
 
       Kultiras.AddGoldMine(preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(4585, -13038)));
       

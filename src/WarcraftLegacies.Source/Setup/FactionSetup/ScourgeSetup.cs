@@ -55,7 +55,7 @@ When Plague hits Lordaeron, a great portal will be opened between Dragonblight a
       Scourge.ModObjectLimit(FourCC("ushd"), Faction.UNLIMITED); //Shade
       Scourge.ModObjectLimit(FourCC("ugho"), Faction.UNLIMITED); //Ghoul
       Scourge.ModObjectLimit(FourCC("uabo"), Faction.UNLIMITED); //Abomination
-      Scourge.ModObjectLimit(FourCC("umtw"), 6); //Meat Wagon
+      Scourge.ModObjectLimit(FourCC("umtw"), 8); //Meat Wagon
       Scourge.ModObjectLimit(FourCC("ucry"), Faction.UNLIMITED); //Crypt Fiend
       Scourge.ModObjectLimit(FourCC("ugar"), 12); //Gargoyle
       Scourge.ModObjectLimit(FourCC("h02G"), Faction.UNLIMITED); //Vrykul Warrior
@@ -73,7 +73,7 @@ When Plague hits Lordaeron, a great portal will be opened between Dragonblight a
       Scourge.ModObjectLimit(FourCC("ubot"), Faction.UNLIMITED); //Undead Transport Ship
       Scourge.ModObjectLimit(FourCC("h0AT"), Faction.UNLIMITED); //Scout
       Scourge.ModObjectLimit(FourCC("h0AW"), Faction.UNLIMITED); //Frigate
-      Scourge.ModObjectLimit(FourCC("h0BM"), Faction.UNLIMITED); //Fireship
+      Scourge.ModObjectLimit(FourCC("h0AM"), Faction.UNLIMITED); //Fireship
       Scourge.ModObjectLimit(FourCC("h0AZ"), Faction.UNLIMITED); //Galley
       Scourge.ModObjectLimit(FourCC("h0AQ"), Faction.UNLIMITED); //Boarding
       Scourge.ModObjectLimit(FourCC("h0BB"), Faction.UNLIMITED); //Juggernaut
