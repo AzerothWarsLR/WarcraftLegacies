@@ -28,6 +28,6 @@ namespace WarcraftLegacies.Source.Quests.Naga
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
-      "Gain the Eye of Sargeras and the ability to train Sea Witches";
+      $"Learn to train {Constants.UNIT_HVSH_SEA_WITCH_ILLIDARI}es from {Constants.UNIT_N055_BETRAYER_S_CITADEL_ILLIDARI_T3}s";
   }
 }

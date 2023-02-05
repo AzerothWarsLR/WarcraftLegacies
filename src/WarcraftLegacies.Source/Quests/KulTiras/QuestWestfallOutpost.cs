@@ -11,7 +11,7 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
     /// Initializes a new instance of the <see cref="QuestWestfallOutpost"/> class.
     /// </summary>
     public QuestWestfallOutpost(Rectangle questRect) : base("Westfall Outpost",
-      "The Kul'tiran military will need a solid foothold to help Stormwind in their fight against the Outland invaders!", "ReplaceableTextures\\CommandButtons\\BTNKultirasGryphonAviary.blp")
+      "Stormwind faces the threat of annihilation at the hands of forces from beyond the Dark Portal, and they have called in our assistance. If we are to aid them, we must first establish a foothold on Westfall's coast.", "ReplaceableTextures\\CommandButtons\\BTNKultirasGryphonAviary.blp")
     {
       Required = true;
       AddObjective(new ObjectiveBuildInRect(questRect, "in Westfall", Constants.UNIT_H06R_GARRISON_KUL_TIRAS_BARRACKS, 2));
@@ -23,9 +23,9 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
 
     /// <inheritdoc/>
     protected override string RewardFlavour =>
-      "While the outpost was built, the Ember Order has finished saving house Waycrest from the Drust influence. Meredith Waycrest is rid of the corruption and will join the war effort of the Kul'tiras ";
+      "The Kul Tiran outpost in Westfall has been completed. In the mean time, the Ember Order has cleansed House Waycrest of their Drust influence. Meredith Waycrest has been released from her pact, and may now join the war effort.";
 
     /// <inheritdoc/>
-    protected override string RewardDescription => "You can now build Order Chapter House and Meredith Waycrest is trainable";
+    protected override string RewardDescription => $"Learn to build {Constants.UNIT_H093_ORDER_CHAPTER_HOUSE_KUL_TIRAS}s, and learn to train Meredith Waycrest from the {Constants.UNIT_H07M_ALTAR_OF_ADMIRALS_KUL_TIRAS_ALTAR}";
   }
 }
