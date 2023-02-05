@@ -80,6 +80,15 @@ namespace MacroTools.Extensions
     }
 
     /// <summary>
+    /// Sets the unit's current hit points.
+    /// </summary>
+    public static unit SetCurrentHitpoints(this unit whichUnit, int value)
+    {
+      SetUnitState(whichUnit, UNIT_STATE_LIFE, value);
+      return whichUnit;
+    }
+
+    /// <summary>
     /// Sets the unit's base damage.
     /// </summary>
     public static unit SetDamageBase(this unit whichUnit, int value, int weaponSlot = 0)

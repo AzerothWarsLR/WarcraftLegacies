@@ -31,7 +31,8 @@ namespace WarcraftLegacies.Source.Setup
     {
       ControlPointManager.Instance = new ControlPointManager
       {
-        MaxHitpoints = 1600,
+        StartingMaxHitPoints = 1600,
+        HostileStartingCurrentHitPoints = 1200,
         IncreaseControlLevelAbilityTypeId = Constants.ABILITY_A0A8_FORTIFY_CONTROL_POINTS_SHARED,
         ControlLevelSettings = new ControlLevelSettings
         {

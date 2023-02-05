@@ -51,7 +51,12 @@ namespace MacroTools.ControlPointSystem
     /// <summary>
     /// All <see cref="ControlPoint"/>s are given this many hitpoints.
     /// </summary>
-    public int MaxHitpoints { get; init; }
+    public int StartingMaxHitPoints { get; init; }
+    
+    /// <summary>
+    /// All Neutral Hostile <see cref="ControlPoint"/>s start with this many hit points.
+    /// </summary>
+    public int HostileStartingCurrentHitPoints { get; init; }
 
     /// <summary>
     /// Determines the settings for the <see cref="ControlPoint.Defender"/> units that defend <see cref="ControlPoint"/>s.
@@ -132,7 +137,7 @@ namespace MacroTools.ControlPointSystem
         _byUnitType.Add(controlPoint.UnitType, controlPoint);
       
       controlPoint.Unit
-        .SetMaximumHitpoints(MaxHitpoints)
+        .SetMaximumHitpoints(StartingMaxHitPoints)
         .AddAbility(IncreaseControlLevelAbilityTypeId)
         .SetLifePercent(100);
       RegisterIncome(controlPoint);
@@ -140,7 +145,7 @@ namespace MacroTools.ControlPointSystem
       RegisterOwnershipChangeTrigger(controlPoint);
       RegisterControlLevelChangeTrigger(controlPoint);
       RegisterControlLevelGrowthOverTime(controlPoint);
-      ConfigureControlPointStats(controlPoint);
+      ConfigureControlPointStats(controlPoint, true);
     }
 
     private static void RegisterIncome(ControlPoint controlPoint)
@@ -207,7 +212,7 @@ namespace MacroTools.ControlPointSystem
         if (controlPoint.ControlLevel > 0)
         {
           CreateOrUpdateDefender(controlPoint);
-          ConfigureControlPointStats(controlPoint);
+          ConfigureControlPointStats(controlPoint, false);
           controlPoint.Unit.SetScale(1.2f);
           if ((int)controlPoint.ControlLevel == ControlLevelSettings.ControlLevelMaximum)
             controlPoint.Unit.RemoveAbility(IncreaseControlLevelAbilityTypeId);
@@ -215,7 +220,7 @@ namespace MacroTools.ControlPointSystem
         else
         {
           RemoveDefender(controlPoint);
-          ConfigureControlPointStats(controlPoint);
+          ConfigureControlPointStats(controlPoint, false);
         }
       };
     }
@@ -237,19 +242,29 @@ namespace MacroTools.ControlPointSystem
       };
     }
 
-    private void ConfigureControlPointStats(ControlPoint controlPoint)
+    private void ConfigureControlPointStats(ControlPoint controlPoint, bool initialize)
     {
       var flooredLevel = (int)controlPoint.ControlLevel;
       
-      var maxHitPoints = MaxHitpoints + flooredLevel * ControlLevelSettings.HitPointsPerControlLevel;
-      var lifePercent = Math.Max(controlPoint.Unit.GetLifePercent(), 1);
+      var maxHitPoints = StartingMaxHitPoints + flooredLevel * ControlLevelSettings.HitPointsPerControlLevel;
+      
       controlPoint.Unit
         .SetMaximumHitpoints(maxHitPoints)
-        .SetLifePercent(lifePercent)
         .SetArmor(ControlLevelSettings.ArmorPerControlLevel * ControlLevelSettings.ArmorPerControlLevel)
         .SetUnitLevel(flooredLevel)
         .SetArmor(ControlLevelSettings.ArmorPerControlLevel * flooredLevel)
         .ShowAttackUi(false);
+
+      if (initialize && controlPoint.Unit.OwningPlayer() == Player(PLAYER_NEUTRAL_AGGRESSIVE))
+      {
+        controlPoint.Unit.SetCurrentHitpoints(HostileStartingCurrentHitPoints);
+      }
+      else
+      {
+        var lifePercent = Math.Max(controlPoint.Unit.GetLifePercent(), 1);
+        controlPoint.Unit.SetLifePercent(lifePercent);
+      }
+
       ConfigureControlPointOrDefenderAttack(controlPoint.Unit, flooredLevel);
     }
 
