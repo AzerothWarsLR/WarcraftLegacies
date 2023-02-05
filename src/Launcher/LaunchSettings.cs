@@ -16,12 +16,7 @@
     /// The folder where you want the published map to be saved to.
     /// </summary>
     public string OutputFolderPath { get; set; }
-    
-    /// <summary>
-    /// The name of the published map.
-    /// </summary>
-    public string OutputMapName { get; set; }
-    
+
     /// <summary>
     /// The name of the seperate map script that gets saved in <see cref="OutputFolderPath"/>.
     /// </summary>
