@@ -3,6 +3,7 @@ using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.QuestSystem;
 using WarcraftLegacies.Source.Setup;
+using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Naga
 {
@@ -28,6 +29,6 @@ namespace WarcraftLegacies.Source.Quests.Naga
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
-      $"Learn to train {Constants.UNIT_HVSH_SEA_WITCH_ILLIDARI}es from {Constants.UNIT_N055_BETRAYER_S_CITADEL_ILLIDARI_T3}s";
+      $"Learn to train {GetObjectName(Constants.UNIT_HVSH_SEA_WITCH_ILLIDARI)}es from {GetObjectName(Constants.UNIT_N055_BETRAYER_S_CITADEL_ILLIDARI_T3)}s";
   }
 }
