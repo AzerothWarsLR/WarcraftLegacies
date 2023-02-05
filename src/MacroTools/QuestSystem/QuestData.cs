@@ -9,7 +9,7 @@ using static War3Api.Common;
 namespace MacroTools.QuestSystem
 {
   /// <summary>
-  /// A highly implementation of Warcraft 3 quests which supports <see cref="Objective"/>s, rewards, and penalties.
+  /// A heavily cutomized implementation of Warcraft 3 quests which supports <see cref="Objective"/>s, rewards, and penalties.
   /// </summary>
   public abstract class QuestData
   {
