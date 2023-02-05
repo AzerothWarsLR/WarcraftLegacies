@@ -1,15 +1,12 @@
 ﻿using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
-using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.QuestSystem;
 
 namespace WarcraftLegacies.Source.Quests.KulTiras
 {
-  /// <summary>
-  /// Varuious Fel Horde buildings must be destroyed or controlled to unlock Fusillier. 
-  /// </summary>
+  /// <inheritdoc/>
   public sealed class QuestOldBattlefield : QuestData
   {
     private readonly LegendaryHero _proudmoore;

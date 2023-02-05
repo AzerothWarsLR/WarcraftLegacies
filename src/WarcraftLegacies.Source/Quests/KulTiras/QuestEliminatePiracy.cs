@@ -13,9 +13,7 @@ using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.KulTiras
 {
-  /// <summary>
-  /// Various control points must be captured.
-  /// </summary>
+  /// <inheritdoc/>
   public sealed class QuestEliminatePiracy : QuestData
   {
     private readonly List<unit> _rescueUnits;

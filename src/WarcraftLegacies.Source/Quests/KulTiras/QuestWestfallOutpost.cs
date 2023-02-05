@@ -4,9 +4,7 @@ using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Quests.KulTiras
 {
-  /// <summary>
-  /// Various control points must be captured.
-  /// </summary>
+  /// <inheritdoc/>
   public sealed class QuestWestfallOutpost : QuestData
   {
     /// <summary>
