@@ -54861,7 +54861,7 @@ E
 }
 
 STRING 9141
-// Abilities: A0IY (Repair Crew), Name (Name)
+// Abilities: A0IY (Repair Crew), Tip (Tooltip - Normal)
 {
 Repair Crew
 }
@@ -58545,7 +58545,7 @@ STRING 9754
 }
 
 STRING 9755
-// Abilities: A0IW (Lightning Storm), Hotkey (Hotkey - Normal)
+// Abilities: A0IW (Monsoon), Hotkey (Hotkey - Normal)
 {
 Q
 }
@@ -68418,6 +68418,12 @@ STRING 11398
 Shadow Strike
 }
 
+STRING 11399
+// Units: n05L (Conjurer), Ubertip (Tooltip - Extended)
+{
+Masterful spellcaster.|n|cfff5962dAbilities:|R Monsoon, Summon Scorpions, Invisibility, Summon Reef Elemental|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land and air units.|r
+}
+
 STRING 11400
 // Abilities: A073 (Shadow Strike), Ubertip (Tooltip - Normal - Extended)
 {
@@ -78040,6 +78046,24 @@ STRING 13002
 R
 }
 
+STRING 13003
+// Abilities: A0IW (Monsoon), Ubertip (Tooltip - Normal - Extended)
+{
+Calls down a storm of lightning to strike enemy units for 30 damage in a small target area. |nLasts 15 seconds.
+}
+
+STRING 13004
+// Buffs/Effects: B001 (), Bufftip (Tooltip)
+{
+Solar Flare
+}
+
+STRING 13005
+// Buffs/Effects: B001 (), Buffubertip (Tooltip - Extended)
+{
+This unit was hit with a Solar Flare; it cannot cast attack or spells.
+}
+
 STRING 13011
 // Abilities: A001 (Frost Nova), EditorSuffix (Editor Suffix)
 {
@@ -79031,7 +79055,7 @@ This unit has Inner Will; its armor is increased.
 }
 
 STRING 13176
-// Abilities: A0IW (Lightning Storm), Name (Name)
+// Buffs/Effects: B07P (Lightning Storm), EditorName (Name (Editor Only))
 {
 Lightning Storm
 }
@@ -93815,7 +93839,7 @@ STRING 15667
 }
 
 STRING 15668
-// Abilities: A0IY (Repair Crew), Tip (Tooltip - Normal)
+// Abilities: A0IY (Repair Crew), Name (Name)
 {
 Repair Crew
 }
@@ -99646,12 +99670,6 @@ STRING 16657
 Scarlet Crusade is Unleashed
 }
 
-STRING 16658
-// Units: n05L (Conjurer), Ubertip (Tooltip - Extended)
-{
-Diverse spellmage from an old day and age.|n|cfff5962dAbilities:|R Firestorm, Summon Scorpions, Invisibility, Summon Reef Elemental|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land and air units.|r
-}
-
 STRING 16659
 // Units: h05A (Wizard's Sanctum), Ubertip (Tooltip - Extended)
 {
@@ -99740,18 +99758,6 @@ STRING 16674
 // Abilities: A0TW (Field of Blood), Researchubertip (Tooltip - Learn - Extended)
 {
 Conjures a field of churning blood which heals allied ground units in a target area over time. |n|n|cffffcc00Level 1|r - Heals 150 hitpoints over 5 seconds, then 10 hitpoint every 1 seconds for 35 seconds.|n|cffffcc00Level 2|r - Heals 200 hitpoints over 5 seconds, then 15 hitpoint every 1 seconds for 35 seconds.|n|cffffcc00Level 3|r - Heals 250 hitpoints over 5 seconds, then 20 hitpoint every 1 seconds for 35 seconds.|n
-}
-
-STRING 16675
-// Abilities: A0IW (Lightning Storm), Tip (Tooltip - Normal)
-{
-Lightning Storm
-}
-
-STRING 16676
-// Abilities: A0IW (Lightning Storm), Ubertip (Tooltip - Normal - Extended)
-{
-Calls down a storm of lightning to strike enemy units for 30 damage in a large target area. |nLasts 15 seconds.
 }
 
 STRING 16677
@@ -100010,12 +100016,6 @@ STRING 16719
 // Abilities: A0FR (Transfusion), Tip (Tooltip - Normal)
 {
 Transfusion - [|cffffcc00Level 4|r]
-}
-
-STRING 16720
-// Buffs/Effects: B07P (Lightning Storm), EditorName (Name (Editor Only))
-{
-Lightning Storm
 }
 
 STRING 16721
@@ -118175,7 +118175,7 @@ STRING 20166
 }
 
 STRING 20167
-// Abilities: A0IW (Lightning Storm), EditorSuffix (Editor Suffix)
+// Abilities: A0IW (Monsoon), EditorSuffix (Editor Suffix)
 {
 (Stormwind Conjurer)
 }
