@@ -18925,7 +18925,7 @@ Increases this Control Point's Control Level, granting it increased hit points, 
 }
 
 STRING 3155
-// Units: h03N (Improved Hunter Tower), Ubertip (Tooltip - Extended)
+// Units: h07T (Improved Guard Tower), Ubertip (Tooltip - Extended)
 {
 Primary defensive structure. |n|n|cffffcc00Attacks land and air units.|r
 }
@@ -18955,7 +18955,7 @@ Silvermyst Island (10gold/min)
 }
 
 STRING 3160
-// Units: h07T (Improved Guard Tower), Ubertip (Tooltip - Extended)
+// Units: h03F (Control Point Defender), Ubertip (Tooltip - Extended)
 {
 Primary defensive structure. |n|n|cffffcc00Attacks land and air units.|r
 }
@@ -74247,12 +74247,6 @@ STRING 12369
 The Hammerer does a patch up of a nearby mechanical unit, healing it for 550 hit points.
 }
 
-STRING 12370
-// Buffs/Effects: B0AG (Speed Aura 1), Bufftip (Tooltip)
-{
-Speed Aura
-}
-
 STRING 12371
 // Abilities: A0HM (Storm, Earth and Fire), Hotkey (Hotkey - Normal)
 {
@@ -78064,6 +78058,36 @@ STRING 13005
 This unit was hit with a Solar Flare; it cannot cast attack or spells.
 }
 
+STRING 13006
+// Units: h03N (Improved Hunter Tower), Ubertip (Tooltip - Extended)
+{
+Primary defensive structure. |n|cfff5962dAbilities:|R Bounce Attack|n|n|cffffcc00Attacks land and air units.|r
+}
+
+STRING 13007
+// Units: h03M (Hunter Tower), Ubertip (Tooltip - Extended)
+{
+Primary defensive structure.|n|cfff5962dUpgrades Into:|R Improved Hunter Tower|n|cfff5962dAbilities:|R Bounce Attack|n|n|cffffcc00Attacks land and air units.|r
+}
+
+STRING 13008
+// Buffs/Effects: B0AG (), Bufftip (Tooltip)
+{
+Hunt Aura
+}
+
+STRING 13009
+// Buffs/Effects: B0AG (), Buffubertip (Tooltip - Extended)
+{
+This unit is under the effects of Hunt Aura; it has an increased movement speed.
+}
+
+STRING 13010
+// Buffs/Effects: B0AG (), EditorSuffix (Editor Suffix)
+{
+1
+}
+
 STRING 13011
 // Abilities: A001 (Frost Nova), EditorSuffix (Editor Suffix)
 {
@@ -80134,12 +80158,6 @@ STRING 13355
 Summoned Voidwalker
 }
 
-STRING 13356
-// Buffs/Effects: B0AH (Speed Aura 2), Bufftip (Tooltip)
-{
-Speed Aura
-}
-
 STRING 13357
 // Buffs/Effects: B05C (Open Wounds), Bufftip (Tooltip)
 {
@@ -81278,6 +81296,12 @@ STRING 13546
 // Buffs/Effects: B036 (Naval Aura), Bufftip (Tooltip)
 {
 Naval Aura
+}
+
+STRING 13547
+// Buffs/Effects: B0AH (), Bufftip (Tooltip)
+{
+Hunt Aura
 }
 
 STRING 13548
@@ -85024,6 +85048,12 @@ STRING 14171
 (Lordaeron)
 }
 
+STRING 14172
+// Buffs/Effects: B0AH (), Buffubertip (Tooltip - Extended)
+{
+This unit is under the effects of Hunt Aura; it has an increased movement speed.
+}
+
 STRING 14173
 // Upgrades: R05O (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
 {
@@ -88499,6 +88529,12 @@ STRING 14751
 (dummy)
 }
 
+STRING 14752
+// Buffs/Effects: B0AH (), EditorSuffix (Editor Suffix)
+{
+2
+}
+
 STRING 14753
 // Units: o04Q (Tinker), Ubertip (Tooltip - Extended)
 {
@@ -88733,12 +88769,6 @@ STRING 14791
 Quest Completed: Stromgarde
 }
 
-STRING 14792
-// Units: h03F (Control Point Defender), Ubertip (Tooltip - Extended)
-{
-Primary defensive structure. |n|n|cffffcc00Attacks land and air units.|r
-}
-
 STRING 14793
 // Units: n0CO (Trench Hydra), EditorSuffix (Name - Editor Suffix)
 {
@@ -88941,6 +88971,24 @@ STRING 14826
 // Upgrades: R02B (Control Magic), Hotkey (Hotkey)
 {
 X
+}
+
+STRING 14827
+// Buffs/Effects: B00J (), Bufftip (Tooltip)
+{
+Naval Aura
+}
+
+STRING 14828
+// Buffs/Effects: B00J (), Buffubertip (Tooltip - Extended)
+{
+This unit has increased movement and attack speed.
+}
+
+STRING 14829
+// Buffs/Effects: B00J (), EditorSuffix (Editor Suffix)
+{
+ (Theramore Variant)
 }
 
 STRING 14830
@@ -107533,12 +107581,6 @@ STRING 17991
 Build Kezan Trading Center
 }
 
-STRING 17992
-// Units: h03M (Hunter Tower), Ubertip (Tooltip - Extended)
-{
-Primary defensive structure.|n|cfff5962dUpgrades Into:|R Improved Hunter Tower|n|n|cffffcc00Attacks land and air units.|r
-}
-
 STRING 17993
 // Abilities: A07F (Critical Strike), Ubertip (Tooltip - Normal - Extended)
 {
@@ -113859,34 +113901,10 @@ STRING 19281
 Train Annihilan Guard
 }
 
-STRING 19282
-// Buffs/Effects: B0AG (Speed Aura 1), Buffubertip (Tooltip - Extended)
-{
-This unit is under the effects of SpeedAura; it has an increased movement speed.
-}
-
-STRING 19283
-// Buffs/Effects: B0AG (Speed Aura 1), EditorName (Name (Editor Only))
-{
-Speed Aura 1
-}
-
 STRING 19284
 // Units: o061 (Cliffrunner), Tip (Tooltip - Basic)
 {
 Train Cliffrunner
-}
-
-STRING 19285
-// Buffs/Effects: B0AH (Speed Aura 2), Buffubertip (Tooltip - Extended)
-{
-This unit is under the effects of SpeedAura; it has an increased movement speed.
-}
-
-STRING 19286
-// Buffs/Effects: B0AH (Speed Aura 2), EditorName (Name (Editor Only))
-{
-Speed Aura 2
 }
 
 STRING 19287
