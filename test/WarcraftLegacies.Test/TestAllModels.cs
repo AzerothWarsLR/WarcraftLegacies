@@ -1,3 +1,5 @@
+using System.Text.Json;
+using System.Text.Json.Serialization;
 using ModelTester;
 using WarcraftLegacies.Test.Extensions;
 
@@ -8,6 +10,22 @@ namespace WarcraftLegacies.Test;
 /// </summary>
 public sealed class TestAllModels
 {
+  private Dictionary<string, ModelAnnotation> _modelAnnotations;
+
+  public TestAllModels()
+  {
+    var options = new JsonSerializerOptions
+    {
+      WriteIndented = true,
+      Converters = { new JsonStringEnumConverter(JsonNamingPolicy.CamelCase) }
+    };
+
+    _modelAnnotations =
+      JsonSerializer.Deserialize<Dictionary<string, ModelAnnotation>>(
+        File.ReadAllText("../../../ModelAnnotations.json"), options) ??
+      throw new Exception("Failed to read ModelAnnotations");
+  }
+
   [Theory]
   [MemberData(nameof(AllModels))]
   public void TestModel(ModelPath modelPath)
@@ -18,14 +36,14 @@ public sealed class TestAllModels
 
   public static IEnumerable<object[]> AllModels =>
     Directory.EnumerateFiles(
-      @"..\..\..\..\..\maps\source.w3x\war3mapImported", "*.mdx", SearchOption.AllDirectories)
+        @"..\..\..\..\..\maps\source.w3x\war3mapImported", "*.mdx", SearchOption.AllDirectories)
       .Select(file => new object[] { new ModelPath(file) });
 
   private static void TestSequences(MDX modelToTest)
   {
     var hasStandAnimation = false;
     var hasDeathAnimation = false;
-    
+
     foreach (var sequence in modelToTest.Sequences)
     {
       var token = sequence.GetToken();
