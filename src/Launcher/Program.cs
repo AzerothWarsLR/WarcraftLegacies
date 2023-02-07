@@ -12,6 +12,7 @@ using War3Api.Object.Enums;
 using War3Net.Build;
 using War3Net.Build.Extensions;
 using War3Net.Build.Info;
+using War3Net.Build.Widget;
 using War3Net.IO.Mpq;
 using WCSharp.ConstantGenerator;
 using CoreSystemProvider = CSharpLua.CoreSystem.CoreSystemProvider;
@@ -133,7 +134,17 @@ namespace Launcher
         "Warcraft III/JassHelper/Blizzard.j");
       var commonJ = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments),
         "Warcraft III/JassHelper/common.j");
-      var compileResult = map.CompileScript(compiler, coreSystemFiles, blizzardJ, commonJ);
+      var mapScriptBuilder = new MapScriptBuilder();
+      mapScriptBuilder.SetDefaultOptionsForCSharpLua();
+
+      if (map.Doodads is not null && mapScriptBuilder.ForceGenerateGlobalDestructableVariable)
+      {
+        foreach (var doodad in map.Doodads.Doodads)
+        {
+          doodad.State = DoodadState.NonSolidInvisible;
+        }
+      }
+      var compileResult = map.CompileScript(compiler, mapScriptBuilder, coreSystemFiles, blizzardJ, commonJ);
 
       // If compilation failed, output an error
       if (!compileResult.Success)
