@@ -132,7 +132,7 @@ namespace WarcraftLegacies.Source.Setup
       CapturableUnitSetup.Setup(preplacedUnitSystem);
       EyeOfSargerasPickup.Setup();
       SacrificeAcolyte.Setup();
-      IntegrityChecker.Setup(false);
+      IntegrityChecker.Setup(true);
       PeonsStartHarvestingShips.Setup(preplacedUnitSystem);
       DarkPortalControlNexusSetup.Setup(preplacedUnitSystem);
       BlackPortalControlNexusSetup.Setup(preplacedUnitSystem);
