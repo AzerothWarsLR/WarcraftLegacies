@@ -23,8 +23,8 @@ public sealed class TestAllModels
 
   private static void TestSequences(MDX modelToTest)
   {
-    var foundStand = false;
-    var foundDeath = false;
+    var hasStandAnimation = false;
+    var hasDeathAnimation = false;
     
     foreach (var sequence in modelToTest.Sequences)
     {
@@ -32,18 +32,18 @@ public sealed class TestAllModels
       switch (token)
       {
         case "stand":
-          foundStand = true;
+          hasStandAnimation = true;
           break;
         case "death":
-          foundDeath = true;
+          hasDeathAnimation = true;
           break;
       }
     }
 
     if (!modelToTest.Info.Name.Contains("_portrait", StringComparison.InvariantCultureIgnoreCase))
     {
-      foundStand.Should().BeTrue("the model should have a stand animation");
-      foundDeath.Should().BeTrue("the model should have a death animation");
+      hasStandAnimation.Should().BeTrue("the model should have a stand animation");
+      hasDeathAnimation.Should().BeTrue("the model should have a death animation");
     }
   }
 }
