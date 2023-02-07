@@ -1,33 +1,49 @@
 using ModelTester;
-using ModelTester.Objects;
-using Xunit.Abstractions;
+using WarcraftLegacies.Test.Extensions;
 
 namespace WarcraftLegacies.Test;
 
-public class UnitTest1
+/// <summary>
+/// Test every model in the game for major issues.
+/// </summary>
+public sealed class TestAllModels
 {
-  private readonly ITestOutputHelper _testOutputHelper;
-
-  public UnitTest1(ITestOutputHelper testOutputHelper)
+  [Theory]
+  [MemberData(nameof(AllModels))]
+  public void TestModel(ModelPath modelPath)
   {
-    _testOutputHelper = testOutputHelper;
-  }
-
-  [Fact]
-  public void TestModel()
-  {
-    var mdx = new MDX(@"C:\Users\zakar\RiderProjects\WarcraftLegacies\maps\source.w3x\war3mapImported\AdmiralsEliteGuard.mdx");
+    var mdx = new MDX(modelPath.FilePath);
     TestSequences(mdx);
   }
 
-  private void TestSequences(MDX modelToTest)
-  {
-    foreach (var sequence in modelToTest.Sequences)
-      TestSequence(sequence);
-  }
+  public static IEnumerable<object[]> AllModels =>
+    Directory.EnumerateFiles(
+      @"..\..\..\..\..\maps\source.w3x\war3mapImported", "*.mdx", SearchOption.AllDirectories)
+      .Select(file => new object[] { new ModelPath(file) });
 
-  private void TestSequence(Sequence sequence)
+  private static void TestSequences(MDX modelToTest)
   {
-    _testOutputHelper.WriteLine(sequence.Name);
+    var foundStand = false;
+    var foundDeath = false;
+    
+    foreach (var sequence in modelToTest.Sequences)
+    {
+      var token = sequence.GetToken();
+      switch (token)
+      {
+        case "stand":
+          foundStand = true;
+          break;
+        case "death":
+          foundDeath = true;
+          break;
+      }
+    }
+
+    if (!modelToTest.Info.Name.Contains("_portrait", StringComparison.InvariantCultureIgnoreCase))
+    {
+      foundStand.Should().BeTrue("the model should have a stand animation");
+      foundDeath.Should().BeTrue("the model should have a death animation");
+    }
   }
 }
