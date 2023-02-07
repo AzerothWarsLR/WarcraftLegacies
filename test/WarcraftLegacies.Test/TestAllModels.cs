@@ -10,7 +10,7 @@ namespace WarcraftLegacies.Test;
 /// </summary>
 public sealed class TestAllModels
 {
-  private Dictionary<string, ModelAnnotation> _modelAnnotations;
+  private readonly Dictionary<string, ModelAnnotation> _modelAnnotations;
 
   public TestAllModels()
   {
@@ -30,8 +30,10 @@ public sealed class TestAllModels
   [MemberData(nameof(AllModels))]
   public void TestModel(ModelPath modelPath)
   {
-    var mdx = new MDX(modelPath.FilePath);
-    TestSequences(mdx);
+    var modelName = Path.GetFileName(modelPath.FilePath);
+    _modelAnnotations.TryGetValue(modelName, out var modelAnnotation);
+    var annotatedModel = new AnnotatedModel(new MDX(modelPath.FilePath), modelAnnotation); 
+    TestSequences(annotatedModel);
   }
 
   public static IEnumerable<object[]> AllModels =>
@@ -39,12 +41,12 @@ public sealed class TestAllModels
         @"..\..\..\..\..\maps\source.w3x\war3mapImported", "*.mdx", SearchOption.AllDirectories)
       .Select(file => new object[] { new ModelPath(file) });
 
-  private static void TestSequences(MDX modelToTest)
+  private static void TestSequences(AnnotatedModel annotatedModel)
   {
     var hasStandAnimation = false;
     var hasDeathAnimation = false;
 
-    foreach (var sequence in modelToTest.Sequences)
+    foreach (var sequence in annotatedModel.Model.Sequences)
     {
       var token = sequence.GetToken();
       switch (token)
@@ -58,7 +60,7 @@ public sealed class TestAllModels
       }
     }
 
-    if (!modelToTest.Info.Name.Contains("_portrait", StringComparison.OrdinalIgnoreCase))
+    if (!annotatedModel.Model.Info.Name.Contains("_portrait", StringComparison.OrdinalIgnoreCase))
     {
       hasStandAnimation.Should().BeTrue("the model should have a stand animation");
       hasDeathAnimation.Should().BeTrue("the model should have a death animation");
