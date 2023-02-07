@@ -1,5 +1,11 @@
 {
   "AdmiralsEliteGuard.mdx": {
-    "ModelType": "unit"
+    "ModelType": "Unit"
+  },
+  "AuraAstral_Fixed.mdx": {
+    "ModelType": "Aura"
+  },
+  "AuraAstralAgony_Fixed.mdx": {
+    "ModelType": "Aura"
   }
 }

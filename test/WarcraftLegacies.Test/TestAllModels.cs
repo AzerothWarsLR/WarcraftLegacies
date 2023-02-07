@@ -60,10 +60,10 @@ public sealed class TestAllModels
       }
     }
 
-    if (!annotatedModel.Model.Info.Name.Contains("_portrait", StringComparison.OrdinalIgnoreCase))
-    {
+    if (annotatedModel.ShouldHaveStandAnimation)
       hasStandAnimation.Should().BeTrue("the model should have a stand animation");
+
+    if (annotatedModel.ShouldHaveDeathAnimation)
       hasDeathAnimation.Should().BeTrue("the model should have a death animation");
-    }
   }
 }

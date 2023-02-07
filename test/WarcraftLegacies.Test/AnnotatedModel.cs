@@ -16,5 +16,12 @@ namespace WarcraftLegacies.Test
       Model = model;
       Annotation = annotation;
     }
+
+    public bool ShouldHaveDeathAnimation => !Model.Info.Name.Contains("_portrait", StringComparison.OrdinalIgnoreCase)
+                                            && Annotation?.ModelType != ModelType.Aura &&
+                                            Annotation?.ModelType != ModelType.Doodad;
+    
+    public bool ShouldHaveStandAnimation => !Model.Info.Name.Contains("_portrait", StringComparison.OrdinalIgnoreCase) &&
+                                            Annotation?.ModelType != ModelType.Doodad;
   }
 }
