@@ -40,7 +40,7 @@ public sealed class TestAllModels
       }
     }
 
-    if (!modelToTest.Info.Name.Contains("_portrait", StringComparison.InvariantCultureIgnoreCase))
+    if (!modelToTest.Info.Name.Contains("_portrait", StringComparison.OrdinalIgnoreCase))
     {
       hasStandAnimation.Should().BeTrue("the model should have a stand animation");
       hasDeathAnimation.Should().BeTrue("the model should have a death animation");
