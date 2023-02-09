@@ -1,7 +1,6 @@
 ﻿using MacroTools;
 using MacroTools.Extensions;
 using MacroTools.LegendSystem;
-using static War3Api.Common;
 #pragma warning disable CS1591
 
 namespace WarcraftLegacies.Source.Setup.Legends
@@ -19,24 +18,24 @@ namespace WarcraftLegacies.Source.Setup.Legends
     {
       LegendAdmiral = new LegendaryHero("Daelin Proudmoore")
       {
-        UnitType = FourCC("Hapm")
+        UnitType = Constants.UNIT_HAPM_LORD_ADMIRAL_OF_KUL_TIRAS_KUL_TIRAS
       };
 
       LegendLucille = new LegendaryHero("Lucille Waycrest")
       {
-        UnitType = FourCC("E016"),
+        UnitType = Constants.UNIT_E016_RULER_OF_HOUSE_WAYCREST_KULTIRAS,
         StartingXp = 2800
       };
 
       LegendMeredith = new LegendaryHero("Meredith Waycrest")
       {
-        UnitType = FourCC("U026"),
+        UnitType = Constants.UNIT_U026_MATRIARCH_OF_HOUSE_WAYCREST_KULTIRAS,
         StartingXp = 8000
       };
 
       LegendKatherine = new LegendaryHero("Katherine Proudmoore")
       {
-        UnitType = FourCC("H05L"),
+        UnitType = Constants.UNIT_H05L_LADY_OF_HOUSE_PROUDMOORE_KUL_TIRAS,
         StartingXp = 1200
       };
 
