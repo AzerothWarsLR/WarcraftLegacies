@@ -39,7 +39,7 @@ namespace WarcraftLegacies.Source.Quests.Quelthalas
       _anasterian = anasterian;
       _kael = kael;
       AddObjective(new ObjectiveControlCapital(draktharonKeep, false));
-      AddObjective(new ObjectiveControlLevel(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N030_DRAK_THARON_KEEP_30GOLD_MIN), 5));
+      AddObjective(new ObjectiveControlLevel(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N030_DRAK_THARON_KEEP_30GOLD_MIN), 10));
       AddObjective(new ObjectiveControlCapital(sunwell, true));
       Required = true;
     }

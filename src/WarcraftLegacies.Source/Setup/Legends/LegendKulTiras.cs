@@ -10,6 +10,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
   {
     public LegendaryHero LegendAdmiral { get; }
     public LegendaryHero LegendLucille { get; }
+    public LegendaryHero LegendMeredith { get; }
     public LegendaryHero LegendKatherine { get; }
     public Capital LegendBoralus { get; }
     public LegendaryHero Flagship { get; }
@@ -25,6 +26,12 @@ namespace WarcraftLegacies.Source.Setup.Legends
       {
         UnitType = FourCC("E016"),
         StartingXp = 2800
+      };
+
+      LegendMeredith = new LegendaryHero("Meredith Waycrest")
+      {
+        UnitType = FourCC("U026"),
+        StartingXp = 8000
       };
 
       LegendKatherine = new LegendaryHero("Katherine Proudmoore")
@@ -51,6 +58,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
     {
       LegendaryHeroManager.Register(LegendAdmiral);
       LegendaryHeroManager.Register(LegendLucille);
+      LegendaryHeroManager.Register(LegendMeredith);
       LegendaryHeroManager.Register(LegendKatherine);
       LegendaryHeroManager.Register(Flagship);
       CapitalManager.Register(LegendBoralus);

@@ -15,7 +15,6 @@ namespace WarcraftLegacies.Source.Setup.Legends
     public LegendaryHero Medivh { get; }
     public LegendaryHero Jaina { get; }
     public LegendaryHero Kalecgos { get; }
-    public LegendaryHero Malygos { get; }
     public Capital Dalaran { get; }
 
     /// <summary>
@@ -38,12 +37,6 @@ namespace WarcraftLegacies.Source.Setup.Legends
       {
         UnitType = FourCC("U027"),
         StartingXp = 9800
-      };
-
-      Malygos = new LegendaryHero("Malygos")
-      {
-        UnitType = FourCC("U026"),
-        StartingXp = 10900
       };
 
       Dalaran = new Capital
@@ -71,7 +64,6 @@ namespace WarcraftLegacies.Source.Setup.Legends
       LegendaryHeroManager.Register(Antonidas);
       LegendaryHeroManager.Register(Jaina);
       LegendaryHeroManager.Register(Kalecgos);
-      LegendaryHeroManager.Register(Malygos);
       LegendaryHeroManager.Register(Medivh);
       CapitalManager.Register(Dalaran);
     }

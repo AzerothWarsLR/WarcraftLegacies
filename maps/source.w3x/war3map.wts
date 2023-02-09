@@ -11,9 +11,9 @@ Jaina Proudmoore
 }
 
 STRING 2
-// Units: uobs (Obsidian Statue), Ubertip (Tooltip - Extended)
+// Units: unec (Necromancer), Ubertip (Tooltip - Extended)
 {
-Construct of ancient design.|n|cfff5962dAbilities:|R Essence of Blight, Spirit Touch|n|n|cff99b4d1Can only train 4.|r|n|cffffcc00Attacks land and air units.|r
+Practitioner of vile necrotic magic.|n|cfff5962dAbilities:|R Raise Dead|n|cfff5962dCan Learn:|R Dispel Magic, Soul Burn|n|n|cffffcc00Attacks land and air units.|R
 }
 
 STRING 3
@@ -23429,7 +23429,7 @@ Summon Dagran Thaurissan
 }
 
 STRING 3906
-// Abilities: A0WN (Stun Unit), EditorSuffix (Editor Suffix)
+// Abilities: ACuf (Unholy Frenzy), EditorSuffix (Editor Suffix)
 {
 (DUMMY)
 }
@@ -43838,7 +43838,7 @@ Returns to normal Tinker form, losing the benefits of Robo-Goblin but once again
 }
 
 STRING 7304
-// Abilities: LEca (Capital), EditorSuffix (Editor Suffix)
+// Abilities: A0WN (Stun Unit), EditorSuffix (Editor Suffix)
 {
 (DUMMY)
 }
@@ -62535,7 +62535,7 @@ Q
 }
 
 STRING 10420
-// Upgrades: R05G (Druid of the Claw Adept Training,Druid of the Claw Master Training), EditorSuffix (Editor Suffix)
+// Units: U026 (Matriarch of House Waycrest), EditorSuffix (Name - Editor Suffix)
 {
 (kultiras)
 }
@@ -73661,7 +73661,7 @@ STRING 12271
 }
 
 STRING 12272
-// Abilities: A003 (Siren's Scream), Hotkey (Hotkey - Normal)
+// Abilities: A003 (Discordant Cadenza), Hotkey (Hotkey - Normal)
 {
 R
 }
@@ -73673,7 +73673,7 @@ Cavalry Onslaught
 }
 
 STRING 12274
-// Abilities: A003 (Siren's Scream), Researchhotkey (Hotkey - Learn)
+// Abilities: A003 (Discordant Cadenza), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -74245,6 +74245,12 @@ STRING 12369
 // Abilities: A02W (Emergency Patch Up), Ubertip (Tooltip - Normal - Extended)
 {
 The Hammerer does a patch up of a nearby mechanical unit, healing it for 550 hit points.
+}
+
+STRING 12370
+// Units: uobs (Obsidian Statue), Ubertip (Tooltip - Extended)
+{
+Construct of ancient design.|n|cfff5962dAbilities:|R Essence of Blight, Spirit Touch, Mass Unholy Frenzy|n|n|cff99b4d1Can only train 4.|r|n|cffffcc00Attacks land and air units.|r
 }
 
 STRING 12371
@@ -78017,9 +78023,9 @@ Calls an onslaught of Gryphon Riders to attack enemies in a 800 radious. |n|cfff
 }
 
 STRING 12999
-// Units: U026 (Matriarch of House Waycrest), Ubertip (Tooltip - Extended)
+// Units: unec (Necromancer), Casterupgradetip (Caster Upgrade Tips)
 {
-Mystical Hero, frail with extremely potent offensive and disruptive abilities.|n|cfff5962dAbilities:|r Wraith's Form|n|cfff5962dCan Learn:|R Frost Nova, Forked Lightning, Mana Shield, Siren's Scream|n|n|cffffcc00Attacks land and air units.|R
+- Raise Dead,- Raise Dead|n- Dispel Magic,- Raise Dead|n- Dispel Magic|n- Cripple
 }
 
 STRING 13000
@@ -78029,9 +78035,9 @@ R
 }
 
 STRING 13001
-// Abilities: A0D7 (Wraith Form), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A0UE (Dispel Magic), EditorSuffix (Editor Suffix)
 {
-Transforms Meredith into a powerful Wraith with a ranged attack. Has 1000 bonus hit points, 60 bonus damage, 10 hp regeneration per second and 40 armor. lasts for 15 seconds.
+(Scourge-Necro)
 }
 
 STRING 13002
@@ -78071,7 +78077,7 @@ Primary defensive structure.|n|cfff5962dUpgrades Into:|R Improved Hunter Tower|n
 }
 
 STRING 13008
-// Buffs/Effects: B0AG (), Bufftip (Tooltip)
+// Abilities: A0YZ (Hunt Aura), Name (Name)
 {
 Hunt Aura
 }
@@ -78083,7 +78089,7 @@ This unit is under the effects of Hunt Aura; it has an increased movement speed.
 }
 
 STRING 13010
-// Buffs/Effects: B0AG (), EditorSuffix (Editor Suffix)
+// Buffs/Effects: B09P (), EditorSuffix (Editor Suffix)
 {
 1
 }
@@ -80158,6 +80164,12 @@ STRING 13355
 Summoned Voidwalker
 }
 
+STRING 13356
+// Units: U026 (Matriarch of House Waycrest), Ubertip (Tooltip - Extended)
+{
+Mystical Hero, frail with extremely potent offensive and disruptive abilities.|n|cfff5962dAbilities:|r Wraiths Form|n|cfff5962dCan Learn:|R Frost Nova, Forked Lightning, Mana Shield, Discordant Cadenza|n|n|cffffcc00Attacks land and air units.|R
+}
+
 STRING 13357
 // Buffs/Effects: B05C (Open Wounds), Bufftip (Tooltip)
 {
@@ -80609,21 +80621,21 @@ This unit is affected by a Arcane Brilliance; its armor is temporarily increased
 }
 
 STRING 13432
-// Abilities: A003 (Siren's Scream), EditorSuffix (Editor Suffix)
+// Abilities: A003 (Discordant Cadenza), EditorSuffix (Editor Suffix)
 {
 (Meredith)
 }
 
 STRING 13433
-// Abilities: A003 (Siren's Scream), Name (Name)
+// Abilities: A0UE (Dispel Magic), Ubertip (Tooltip - Normal - Extended)
 {
-Siren's Scream
+Removes all buffs from units in a target area and deals <Adis,DataB1> damage to summoned units.|r
 }
 
 STRING 13434
-// Abilities: A003 (Siren's Scream), Researchtip (Tooltip - Learn)
+// Upgrades: Rune (Necromancer Adept Training,Necromancer Master Training), Ubertip (Tooltip - Extended)
 {
-Learn Siren's Scream - [|cffffcc00Level %d|r]
+Increases Necromancers' mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Dispel Magic.
 }
 
 STRING 13435
@@ -80711,7 +80723,7 @@ Will of the Emperor
 }
 
 STRING 13449
-// Abilities: A003 (Siren's Scream), Researchubertip (Tooltip - Learn - Extended)
+// Abilities: A003 (Discordant Cadenza), Researchubertip (Tooltip - Learn - Extended)
 {
 The user's unleash a powerful sonic scream that sleeps all enemy in a largy aoe around him. |n|n|cffffcc00Level 1|r - 4 second sleep. |n|cffffcc00Level 2|r - 6 second sleep. |n|cffffcc00Level 3|r - 8 second sleep.
 }
@@ -81299,7 +81311,7 @@ Naval Aura
 }
 
 STRING 13547
-// Buffs/Effects: B0AH (), Bufftip (Tooltip)
+// Abilities: A0YZ (Hunt Aura), Tip (Tooltip - Normal)
 {
 Hunt Aura
 }
@@ -82856,12 +82868,6 @@ STRING 13806
 // Upgrades: Rune (Necromancer Adept Training,Necromancer Master Training), Tip (Tooltip)
 {
 Research Necromancer Master Training
-}
-
-STRING 13807
-// Upgrades: Rune (Necromancer Adept Training,Necromancer Master Training), Ubertip (Tooltip - Extended)
-{
-Increases Necromancers' mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Unholy Frenzy.
 }
 
 STRING 13808
@@ -86356,9 +86362,9 @@ Transforms Earth Golems into Crystal Golems, increasing their hit points by 500 
 }
 
 STRING 14390
-// Abilities: A003 (Siren's Scream), Tip (Tooltip - Normal)
+// Upgrades: R07I (Necromancer Adept Training,Necromancer Master Training), Hotkey (Hotkey)
 {
-Siren's Scream - [|cffffcc00Level 1|r]
+W
 }
 
 STRING 14391
@@ -86455,12 +86461,6 @@ STRING 14406
 // Upgrades: R03W (Magic Sentry), Tip (Tooltip)
 {
 Research Knowledge of Honor Hold
-}
-
-STRING 14407
-// Abilities: A003 (Siren's Scream), Tip (Tooltip - Normal)
-{
-Siren's Scream - [|cffffcc00Level 2|r]
 }
 
 STRING 14408
@@ -87201,12 +87201,6 @@ STRING 14530
 Learn Seed of Burning Hatred
 }
 
-STRING 14531
-// Abilities: A003 (Siren's Scream), Tip (Tooltip - Normal)
-{
-Siren's Scream - [|cffffcc00Level 3|r]
-}
-
 STRING 14532
 // Units: H098 (Sunfury Mastermind), Revivetip (Tooltip - Revive)
 {
@@ -87578,12 +87572,6 @@ STRING 14593
 // Upgrades: R04V (Magic Sentry), Hotkey (Hotkey)
 {
 Z
-}
-
-STRING 14594
-// Abilities: A003 (Siren's Scream), Ubertip (Tooltip - Normal - Extended)
-{
-Unleash a Sonic Scream, sleeping nearby enemy land units 4 seconds.
 }
 
 STRING 14595
@@ -88066,12 +88054,6 @@ STRING 14674
 Research Magus Master Training
 }
 
-STRING 14675
-// Abilities: A003 (Siren's Scream), Ubertip (Tooltip - Normal - Extended)
-{
-Unleash a Sonic Scream, sleeping nearby enemy land units 6 seconds.
-}
-
 STRING 14676
 // Upgrades: R029 (Priest Adept Training,Priest Master Training), Ubertip (Tooltip - Extended)
 {
@@ -88214,12 +88196,6 @@ STRING 14699
 // Upgrades: R026 (Animal War Training), Tip (Tooltip)
 {
 Research Elune's Infusion
-}
-
-STRING 14700
-// Abilities: A003 (Siren's Scream), Ubertip (Tooltip - Normal - Extended)
-{
-Unleash a Sonic Scream, sleeping nearby enemy land units 8 seconds.
 }
 
 STRING 14701
@@ -88530,7 +88506,7 @@ STRING 14751
 }
 
 STRING 14752
-// Buffs/Effects: B0AH (), EditorSuffix (Editor Suffix)
+// Buffs/Effects: B09U (), EditorSuffix (Editor Suffix)
 {
 2
 }
@@ -88767,6 +88743,12 @@ STRING 14791
 // Upgrades: R01M (Chaos), Name (Name)
 {
 Quest Completed: Stromgarde
+}
+
+STRING 14792
+// Abilities: A003 (Discordant Cadenza), Name (Name)
+{
+Discordant Cadenza
 }
 
 STRING 14793
@@ -89501,6 +89483,12 @@ STRING 14914
 Increases Rune Priests' mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Rune of Shielding.
 }
 
+STRING 14915
+// Abilities: A003 (Discordant Cadenza), Researchtip (Tooltip - Learn)
+{
+Learn Discordant Cadenza - [|cffffcc00Level %d|r]
+}
+
 STRING 14916
 // Upgrades: R00U (Chaos), Name (Name)
 {
@@ -89577,6 +89565,12 @@ STRING 14928
 // Upgrades: R00S (Spirit Walker Adept Training,Spirit Walker Master Training), Tip (Tooltip)
 {
 Research Priestess Master Training
+}
+
+STRING 14929
+// Abilities: A003 (Discordant Cadenza), Tip (Tooltip - Normal)
+{
+Discordant Cadenza - [|cffffcc00Level 1|r]
 }
 
 STRING 14930
@@ -89837,6 +89831,12 @@ STRING 14972
 Mage Armor
 }
 
+STRING 14973
+// Abilities: A003 (Discordant Cadenza), Tip (Tooltip - Normal)
+{
+Discordant Cadenza - [|cffffcc00Level 2|r]
+}
+
 STRING 14974
 // Upgrades: R00K (Animal War Training), EditorSuffix (Editor Suffix)
 {
@@ -90051,6 +90051,12 @@ STRING 15009
 // Upgrades: R00G (Flare), Tip (Tooltip)
 {
 Research Feint
+}
+
+STRING 15010
+// Abilities: A003 (Discordant Cadenza), Tip (Tooltip - Normal)
+{
+Discordant Cadenza - [|cffffcc00Level 3|r]
 }
 
 STRING 15011
@@ -90377,6 +90383,12 @@ STRING 15064
 Summon Nek'rosh
 }
 
+STRING 15065
+// Abilities: A003 (Discordant Cadenza), Ubertip (Tooltip - Normal - Extended)
+{
+Unleash a powerful sonic scream, putting all enemy units within a radius of 800 to sleep for 4 seconds.
+}
+
 STRING 15066
 // Upgrades: R006 (Iron Plating,Steel Plating,Mithril Plating), EditorSuffix (Editor Suffix)
 {
@@ -90393,6 +90405,12 @@ STRING 15068
 // Abilities: A091 (Seed of Burning Hatred), Tip (Tooltip - Normal)
 {
 Seed of Burning Hatred - [|cffffcc00Level 3|r]
+}
+
+STRING 15069
+// Abilities: A003 (Discordant Cadenza), Ubertip (Tooltip - Normal - Extended)
+{
+Unleash a powerful sonic scream, putting all enemy units within a radius of 800 to sleep for 6 seconds.
 }
 
 STRING 15070
@@ -90790,6 +90808,18 @@ Quests (|Cfffed312F9|R)
 STRING 15143
 {
 Quests
+}
+
+STRING 15144
+// Abilities: A003 (Discordant Cadenza), Ubertip (Tooltip - Normal - Extended)
+{
+Unleash a powerful sonic scream, putting all enemy units within a radius of 800 to sleep for 8 seconds.
+}
+
+STRING 15145
+// Abilities: LEca (Capital), EditorSuffix (Editor Suffix)
+{
+(DUMMY)
 }
 
 STRING 15146
@@ -92226,6 +92256,12 @@ STRING 15384
 The hero heals every ally in a large radious around him. |n|n|cffffcc00Level 1|r - 150 hit points healed. |n|cffffcc00Level 2|r - 200 hit points healed. |n|cffffcc00Level 3|r - 250 hit points healed. |n|cffffcc00Level 4|r - 300 hit points healed.
 }
 
+STRING 15385
+// Abilities: A0D7 (Wraith Form), Ubertip (Tooltip - Normal - Extended)
+{
+Transforms Meredith into a powerful Wraith with a ranged attack. Has 1000 bonus hit points, 60 bonus damage, 10 hp regeneration per second and 40 armor. Lasts for 15 seconds.
+}
+
 STRING 15386
 // Abilities: A0RA (Overclock), EditorSuffix (Editor Suffix)
 {
@@ -92372,6 +92408,12 @@ STRING 15410
 // Units: nnrg (Royal Guard), Tip (Tooltip - Basic)
 {
 Train - Royal Guard
+}
+
+STRING 15411
+// Abilities: A0UD (Mass Unholy Frenzy), EditorSuffix (Editor Suffix)
+{
+(Scourge - Obsidian Statue)
 }
 
 STRING 15412
@@ -92980,6 +93022,12 @@ STRING 15512
 X
 }
 
+STRING 15513
+// Abilities: A0UD (Mass Unholy Frenzy), Name (Name)
+{
+Mass Unholy Frenzy
+}
+
 STRING 15514
 // Upgrades: R035 (Chaos), Name (Name)
 {
@@ -93032,6 +93080,12 @@ STRING 15522
 // Upgrades: R03O (Animal War Training), Ubertip (Tooltip - Extended)
 {
 Causes affected units to take 15% less damage from spells and Magic damage.|n|n|cfff5962dAffects:|r Grunt, Crossbowman, Bonebreaker, Raider, Executioner
+}
+
+STRING 15523
+// Abilities: A0UD (Mass Unholy Frenzy), Researchtip (Tooltip - Learn)
+{
+Learn Mass Banish - [|cffffcc00Level %d|r]
 }
 
 STRING 15524
@@ -93341,7 +93395,7 @@ The Alchemist causes his Ogre to enter a chemically induced rage, increasing mov
 }
 
 STRING 15575
-// Buffs/Effects: B09P (), EditorSuffix (Editor Suffix)
+// Buffs/Effects: B09Y (), EditorSuffix (Editor Suffix)
 {
 1
 }
@@ -93586,6 +93640,12 @@ STRING 15615
 Opens a two-way portal to the target location. The portal becomes useable after 5 seconds, and closes 10 seconds after the caster stops channeling.|n|n|cffffcc00Level 1|r - <A00D,Rng1> range. |n|cffffcc00Level 2|r - <A00D,Rng2> range. |n|cffffcc00Level 3|r - <A00D,Rng3> range.
 }
 
+STRING 15616
+// Abilities: A0UD (Mass Unholy Frenzy), Researchubertip (Tooltip - Learn - Extended)
+{
+Turns all non-mechanical unit in the target area ethereal and slows their movement speed by <A0FE,DataA1,%>%. Ethereal creatures cannot attack, but they can cast spells and certain spells cast upon them will have a greater effect. |n|n|cffffcc00Level 1|r - Lasts <A0FE,Dur1> seconds on units and <A0FE,HeroDur1> seconds on heroes.|n|cffffcc00Level 2|r - Lasts <A0FE,Dur2> seconds on units and <A0FE,HeroDur2> seconds on heroes.|n|cffffcc00Level 3|r - Lasts <A0FE,Dur3> seconds on units and <A0FE,HeroDur3> seconds on heroes.|n|cffffcc00Level 4|r - Lasts <A0FE,Dur4> seconds on units and <A0FE,HeroDur4> seconds on heroes.
+}
+
 STRING 15617
 // Units: h08E (Plague Tower), Ubertip (Tooltip - Extended)
 {
@@ -93704,6 +93764,12 @@ STRING 15636
 // Upgrades: R00K (Animal War Training), Name (Name)
 {
 Power Infusion 3
+}
+
+STRING 15637
+// Abilities: A0UD (Mass Unholy Frenzy), Tip (Tooltip - Normal)
+{
+Mass Unholy Frenzy
 }
 
 STRING 15638
@@ -94012,6 +94078,18 @@ STRING 15688
 Heals a friendly living unit for <A0H0,DataA1>.
 }
 
+STRING 15689
+// Abilities: A0UD (Mass Unholy Frenzy), Tip (Tooltip - Normal)
+{
+Mass Banish - [|cffffcc00Level 2|r]
+}
+
+STRING 15690
+// Abilities: A0UD (Mass Unholy Frenzy), Tip (Tooltip - Normal)
+{
+Mass Banish - [|cffffcc00Level 3|r]
+}
+
 STRING 15691
 // Abilities: A0X5 (Summon Fel Hounds), Tip (Tooltip - Normal)
 {
@@ -94120,10 +94198,22 @@ STRING 15708
 Galley
 }
 
+STRING 15709
+// Abilities: A0UD (Mass Unholy Frenzy), Tip (Tooltip - Normal)
+{
+Mass Banish - [|cffffcc00Level 4|r]
+}
+
 STRING 15710
 // Units: n07I (Residence), Ubertip (Tooltip - Extended)
 {
 Moonlit home of the Night Elves.|nProvides 8 food, which increases the maximum number of units that can be trained.
+}
+
+STRING 15711
+// Abilities: A0UD (Mass Unholy Frenzy), Ubertip (Tooltip - Normal - Extended)
+{
+All non-mechanical units in the target area gain Unholy Frenzy, increasing attack rate by 40% but draining them of 2 hit points per second. |nLasts 45 seconds.
 }
 
 STRING 15712
@@ -94162,10 +94252,22 @@ STRING 15717
 Yak
 }
 
+STRING 15718
+// Abilities: A0UD (Mass Unholy Frenzy), Ubertip (Tooltip - Normal - Extended)
+{
+Turns all non-mechanical unit in the target area ethereal and slows their movement speed by <A0FE,DataA2,%>% for <A0FE,Dur2> seconds. Lasts <A0FE,HeroDur2> second on Heroes. Ethereal creatures cannot attack, but they can cast spells and certain spells cast upon them will have a greater effect.
+}
+
 STRING 15719
 // Units: n06M (Residence), Ubertip (Tooltip - Extended)
 {
 Moonlit home of the Night Elves.|nProvides 8 food, which increases the maximum number of units that can be trained.
+}
+
+STRING 15720
+// Abilities: A0UD (Mass Unholy Frenzy), Ubertip (Tooltip - Normal - Extended)
+{
+Turns all non-mechanical unit in the target area ethereal and slows their movement speed by <A0FE,DataA3,%>% for <A0FE,Dur3> seconds. Lasts <A0FE,HeroDur3> second on Heroes. Ethereal creatures cannot attack, but they can cast spells and certain spells cast upon them will have a greater effect.
 }
 
 STRING 15721
@@ -94214,6 +94316,12 @@ STRING 15728
 // Abilities: A0JQ (Rain of Light), Ubertip (Tooltip - Normal - Extended)
 {
 Heal all friendly units in the target area for 100 hit points.
+}
+
+STRING 15729
+// Abilities: A0UD (Mass Unholy Frenzy), Ubertip (Tooltip - Normal - Extended)
+{
+Turns all non-mechanical unit in the target area ethereal and slows their movement speed by <A0FE,DataA4,%>% for <A0FE,Dur4> seconds. Lasts <A0FE,HeroDur4> second on Heroes. Ethereal creatures cannot attack, but they can cast spells and certain spells cast upon them will have a greater effect.
 }
 
 STRING 15730
@@ -94774,6 +94882,12 @@ STRING 15822
 (Druids - Fandral Summon)
 }
 
+STRING 15823
+// Buffs/Effects: B03A (Discordant Cadenza), EditorName (Name (Editor Only))
+{
+Discordant Cadenza
+}
+
 STRING 15824
 // Units: o04U (Cyclone Cannon), EditorSuffix (Name - Editor Suffix)
 {
@@ -94844,6 +94958,12 @@ STRING 15835
 // Units: h056 (Khaz Modan Tower), EditorSuffix (Name - Editor Suffix)
 {
 (Ironforge Other)
+}
+
+STRING 15836
+// Buffs/Effects: B03A (Discordant Cadenza), Buffubertip (Tooltip - Extended)
+{
+This unit is sleeping; it is invulnerable and it cannot move attack or cast spells.
 }
 
 STRING 15837
@@ -95453,7 +95573,7 @@ Slams the ground with the Hero's massive claws, shooting spiked tendrils out in 
 }
 
 STRING 15938
-// Abilities: ACuf (Unholy Frenzy), EditorSuffix (Editor Suffix)
+// Abilities: A0QK (Mass Enrage), EditorSuffix (Editor Suffix)
 {
 (hakkar)
 }
@@ -95510,6 +95630,12 @@ STRING 15947
 // Units: h08C (Grave), Ubertip (Tooltip - Extended)
 {
 A forgotten grave remembered by ony the Forsaken.|nProvides 8 food, which increases the maximum number of units that can be trained.
+}
+
+STRING 15948
+// Buffs/Effects: B04B (), Bufftip (Tooltip)
+{
+Wraith Form
 }
 
 STRING 15949
@@ -96892,6 +97018,12 @@ STRING 16178
 Blood Fury - [|cffffcc00Level 1|r]
 }
 
+STRING 16179
+// Buffs/Effects: B04B (), Buffubertip (Tooltip - Extended)
+{
+Transforms the Meredith into a powerful Wraith with high armor.
+}
+
 STRING 16180
 // Abilities: A0UB (Open a portal to Northrend), Ubertip (Tooltip - Normal - Extended)
 {
@@ -97426,6 +97558,12 @@ STRING 16268
 Build Field Stockpile
 }
 
+STRING 16269
+// Upgrades: R05G (Druid of the Claw Adept Training,Druid of the Claw Master Training), EditorSuffix (Editor Suffix)
+{
+(kultiras)
+}
+
 STRING 16270
 // Units: h08C (Grave), Name (Name)
 {
@@ -97690,6 +97828,12 @@ STRING 16313
 W
 }
 
+STRING 16314
+// Abilities: A07A (Dispel Magic), Hotkey (Hotkey - Normal)
+{
+W
+}
+
 STRING 16315
 // Units: h08L (Cavalier), Name (Name)
 {
@@ -97709,7 +97853,7 @@ Rays of the New Dawn - [|cffffcc00Level 2|r]
 }
 
 STRING 16318
-// Abilities: A07A (Dispel Magic), Hotkey (Hotkey - Normal)
+// Abilities: A02R (Mage Armor), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -97721,7 +97865,7 @@ Mystical hero, adept at dealing magical damage.|n|cfff5962dCan Learn:|R Resurgen
 }
 
 STRING 16320
-// Abilities: A02R (Mage Armor), Hotkey (Hotkey - Normal)
+// Abilities: A02R (Mage Armor), Unhotkey (Hotkey - Turn Off)
 {
 W
 }
@@ -97901,13 +98045,13 @@ Research Fortified Hulls
 }
 
 STRING 16350
-// Abilities: A02R (Mage Armor), Unhotkey (Hotkey - Turn Off)
+// Abilities: A0SM (Devour Magic), Hotkey (Hotkey - Normal)
 {
 W
 }
 
 STRING 16351
-// Abilities: A0SM (Devour Magic), Hotkey (Hotkey - Normal)
+// Abilities: A0SN (Anti-magic Shell), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -98000,6 +98144,12 @@ STRING 16366
 // Units: U023 (The Soulflayer), Awakentip (Tooltip - Awaken)
 {
 Revive Defiler
+}
+
+STRING 16367
+// Abilities: A0ST (Goldrinn's Howl), Hotkey (Hotkey - Normal)
+{
+W
 }
 
 STRING 16368
@@ -98117,7 +98267,7 @@ Deadeye
 }
 
 STRING 16387
-// Abilities: A0SN (Anti-magic Shell), Hotkey (Hotkey - Normal)
+// Abilities: A0ST (Goldrinn's Howl), Researchhotkey (Hotkey - Learn)
 {
 W
 }
@@ -98249,7 +98399,7 @@ Train Apothecary
 }
 
 STRING 16410
-// Abilities: A0ST (Goldrinn's Howl), Hotkey (Hotkey - Normal)
+// Abilities: A0T9 (Unload), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -98375,7 +98525,7 @@ Q
 }
 
 STRING 16431
-// Abilities: A0ST (Goldrinn's Howl), Researchhotkey (Hotkey - Learn)
+// Abilities: A0TE (Fishing Net), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -98615,7 +98765,7 @@ Tower - Lordaeron Top
 }
 
 STRING 16471
-// Abilities: A0T9 (Unload), Hotkey (Hotkey - Normal)
+// Abilities: A0TH (Dispel Magic), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -98987,7 +99137,7 @@ NzothTentacle
 }
 
 STRING 16534
-// Abilities: A0TE (Fishing Net), Hotkey (Hotkey - Normal)
+// Abilities: A0TO (Summon Garrison), Researchhotkey (Hotkey - Learn)
 {
 W
 }
@@ -99185,7 +99335,7 @@ Heal all friendly units in the target area for 130 hit points.
 }
 
 STRING 16567
-// Abilities: A0TH (Dispel Magic), Hotkey (Hotkey - Normal)
+// Abilities: A0TX (Field Medkit), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -99245,7 +99395,7 @@ Spiritual Hut for the casters of the Zandalari.|n|cfff5962dTrains:|r Haruspex, H
 }
 
 STRING 16577
-// Abilities: A0TO (Summon Garrison), Researchhotkey (Hotkey - Learn)
+// Abilities: A0V5 (Soul Burn), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -100721,7 +100871,7 @@ Sends a bolt of negative energy that burns up to 40 points of a target enemy uni
 }
 
 STRING 16831
-// Abilities: A0TX (Field Medkit), Hotkey (Hotkey - Normal)
+// Abilities: A0V5 (Soul Burn), Researchhotkey (Hotkey - Learn)
 {
 W
 }
@@ -101201,7 +101351,7 @@ This unit is under the effects of Spirit of the Crusade; it has increased attack
 }
 
 STRING 16912
-// Buffs/Effects: B09Y (), EditorSuffix (Editor Suffix)
+// Buffs/Effects: B0AG (), EditorSuffix (Editor Suffix)
 {
 1
 }
@@ -101291,7 +101441,7 @@ This unit is under the effects of Spirit of the Crusade; it has increased attack
 }
 
 STRING 16927
-// Buffs/Effects: B09U (), EditorSuffix (Editor Suffix)
+// Buffs/Effects: B09V (), EditorSuffix (Editor Suffix)
 {
 2
 }
@@ -101309,7 +101459,7 @@ This unit is under the effects of United for the Cause; it has increased armor.
 }
 
 STRING 16930
-// Buffs/Effects: B09V (), EditorSuffix (Editor Suffix)
+// Buffs/Effects: B0AH (), EditorSuffix (Editor Suffix)
 {
 2
 }
@@ -101858,12 +102008,6 @@ STRING 17022
 // Abilities: A0QK (Mass Enrage), Tip (Tooltip - Normal)
 {
 Mass Enrage - [|cffffcc00Level 4|r]
-}
-
-STRING 17023
-// Abilities: A0QK (Mass Enrage), EditorSuffix (Editor Suffix)
-{
-(hakkar)
 }
 
 STRING 17024
@@ -102520,12 +102664,6 @@ STRING 17138
 Cunning Hero, exceptional at dealing damages in all form.|n|cfff5962dCan Learn:|R Scattershot, Make it Rain, Deadeye, Assasinate|n|n|cffffcc00Attacks land and air units.|R
 }
 
-STRING 17139
-// Units: U026 (Matriarch of House Waycrest), EditorSuffix (Name - Editor Suffix)
-{
-(nexus)
-}
-
 STRING 17140
 // Units: u025 (Elementalist), Name (Name)
 {
@@ -102725,7 +102863,7 @@ Deals <A0VU,DataA4> damage, stuns heroes for <A0VU,HeroDur4> seconds and normal 
 }
 
 STRING 17173
-// Abilities: A0V5 (Soul Burn), Hotkey (Hotkey - Normal)
+// Abilities: A0V7 (Plague Summon), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -102869,7 +103007,7 @@ Revive Kalecgos
 }
 
 STRING 17197
-// Abilities: A0V5 (Soul Burn), Researchhotkey (Hotkey - Learn)
+// Abilities: A0V7 (Plague Summon), Researchhotkey (Hotkey - Learn)
 {
 W
 }
@@ -103247,13 +103385,13 @@ Q
 }
 
 STRING 17261
-// Abilities: A0V7 (Plague Summon), Hotkey (Hotkey - Normal)
+// Abilities: A0VR (Blazing Aura), Hotkey (Hotkey - Normal)
 {
 W
 }
 
 STRING 17262
-// Abilities: A0V7 (Plague Summon), Researchhotkey (Hotkey - Learn)
+// Abilities: A0VR (Blazing Aura), Researchhotkey (Hotkey - Learn)
 {
 W
 }
@@ -103265,7 +103403,7 @@ Q
 }
 
 STRING 17264
-// Abilities: A0VR (Blazing Aura), Hotkey (Hotkey - Normal)
+// Abilities: A0VU (Magma Blast), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -104213,7 +104351,7 @@ The hero's Stoneform blocks 32 damage from all physical attacks to a minimum of 
 }
 
 STRING 17424
-// Abilities: A0VR (Blazing Aura), Researchhotkey (Hotkey - Learn)
+// Abilities: A0VU (Magma Blast), Researchhotkey (Hotkey - Learn)
 {
 W
 }
@@ -104567,7 +104705,7 @@ STRING 17482
 }
 
 STRING 17483
-// Abilities: A0VU (Magma Blast), Hotkey (Hotkey - Normal)
+// Abilities: A0WK (Dispel Magic), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -104579,7 +104717,7 @@ Curse of Silence - [|cffffcc00Level 3|r]
 }
 
 STRING 17485
-// Abilities: A0VU (Magma Blast), Researchhotkey (Hotkey - Learn)
+// Abilities: A0WY (Banish), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -104879,7 +105017,7 @@ Calls down 6 Arcane waves; each wave deals 15 damage to units in a small area.
 }
 
 STRING 17535
-// Abilities: A0WK (Dispel Magic), Hotkey (Hotkey - Normal)
+// Abilities: A0WY (Banish), Researchhotkey (Hotkey - Learn)
 {
 W
 }
@@ -105096,7 +105234,7 @@ Suppresses all enemy ranged units in a target area from attacking for 4 seconds.
 }
 
 STRING 17571
-// Abilities: A0WY (Banish), Hotkey (Hotkey - Normal)
+// Abilities: A0WZ (Incinerate), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -105252,7 +105390,7 @@ Retribution Aura
 }
 
 STRING 17597
-// Abilities: A0WY (Banish), Researchhotkey (Hotkey - Learn)
+// Abilities: A0WZ (Incinerate), Researchhotkey (Hotkey - Learn)
 {
 W
 }
@@ -105354,7 +105492,7 @@ Elemental Fire - [|cffffcc00Level 4|r]
 }
 
 STRING 17614
-// Abilities: A0WZ (Incinerate), Hotkey (Hotkey - Normal)
+// Abilities: A0X6 (Forked Lightning), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -105528,13 +105666,13 @@ Primary structure, used to train workers and gather resources.|n|cfff5962dTrains
 }
 
 STRING 17643
-// Abilities: A0WZ (Incinerate), Researchhotkey (Hotkey - Learn)
+// Abilities: A0X6 (Forked Lightning), Researchhotkey (Hotkey - Learn)
 {
 W
 }
 
 STRING 17644
-// Abilities: A0X6 (Forked Lightning), Hotkey (Hotkey - Normal)
+// Abilities: A0XH (Frost Shell), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -105552,7 +105690,7 @@ Flame Shield
 }
 
 STRING 17648
-// Abilities: A0X6 (Forked Lightning), Researchhotkey (Hotkey - Learn)
+// Abilities: A0XH (Frost Shell), Unhotkey (Hotkey - Turn Off)
 {
 W
 }
@@ -105960,7 +106098,7 @@ STRING 17715
 }
 
 STRING 17716
-// Abilities: A0XH (Frost Shell), Hotkey (Hotkey - Normal)
+// Abilities: A0XI (Dispel Magic), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -106182,7 +106320,7 @@ V
 }
 
 STRING 17753
-// Abilities: A0XH (Frost Shell), Unhotkey (Hotkey - Turn Off)
+// Abilities: A0XR (Breath of Life), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -106248,7 +106386,7 @@ Mech Kit
 }
 
 STRING 17764
-// Abilities: A0XI (Dispel Magic), Hotkey (Hotkey - Normal)
+// Abilities: A03L (Explosive Ammo), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -106430,7 +106568,7 @@ C
 }
 
 STRING 17796
-// Abilities: A0XR (Breath of Life), Hotkey (Hotkey - Normal)
+// Abilities: A03L (Explosive Ammo), Unhotkey (Hotkey - Turn Off)
 {
 W
 }
@@ -106784,7 +106922,7 @@ Forges iron and steel for the war effort.|n|cfff5962dResearches: |RForged Weapon
 }
 
 STRING 17855
-// Abilities: A03L (Explosive Ammo), Hotkey (Hotkey - Normal)
+// Abilities: A0YK (Oil Lubrification), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -106868,7 +107006,7 @@ Moving Earth - [|cffffcc00Level 1|r]
 }
 
 STRING 17870
-// Abilities: A03L (Explosive Ammo), Unhotkey (Hotkey - Turn Off)
+// Abilities: A0YK (Oil Lubrification), Unhotkey (Hotkey - Turn Off)
 {
 W
 }
@@ -107522,7 +107660,7 @@ Harvests lumber from trees.
 }
 
 STRING 17982
-// Abilities: A0YK (Oil Lubrification), Hotkey (Hotkey - Normal)
+// Abilities: A0Z7 (Earth's Grace), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -107636,7 +107774,7 @@ R
 }
 
 STRING 18002
-// Abilities: A0YK (Oil Lubrification), Unhotkey (Hotkey - Turn Off)
+// Abilities: A0Z7 (Earth's Grace), Researchhotkey (Hotkey - Learn)
 {
 W
 }
@@ -109245,7 +109383,7 @@ Q
 }
 
 STRING 18302
-// Abilities: A0Z7 (Earth's Grace), Hotkey (Hotkey - Normal)
+// Abilities: A0O3 (Dispel Magic), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -109467,13 +109605,13 @@ Wreaths an enemy unit in magical flames which cause <ANso,DataA1> damage per sec
 }
 
 STRING 18342
-// Abilities: A0Z7 (Earth's Grace), Researchhotkey (Hotkey - Learn)
+// Abilities: A0OJ (Mass Unholy Armor), Hotkey (Hotkey - Normal)
 {
 W
 }
 
 STRING 18343
-// Abilities: A0O3 (Dispel Magic), Hotkey (Hotkey - Normal)
+// Abilities: A0OJ (Mass Unholy Armor), Researchhotkey (Hotkey - Learn)
 {
 W
 }
@@ -109515,13 +109653,13 @@ Summon Renault
 }
 
 STRING 18350
-// Abilities: A0OJ (Mass Unholy Armor), Hotkey (Hotkey - Normal)
+// Abilities: A0EW (Take Off), Hotkey (Hotkey - Normal)
 {
 W
 }
 
 STRING 18351
-// Abilities: A0OJ (Mass Unholy Armor), Researchhotkey (Hotkey - Learn)
+// Abilities: A0EW (Take Off), Unhotkey (Hotkey - Turn Off)
 {
 W
 }
@@ -109575,7 +109713,7 @@ E
 }
 
 STRING 18374
-// Abilities: A0EW (Take Off), Hotkey (Hotkey - Normal)
+// Abilities: A0UC (Open a portal to Alterac), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -110007,7 +110145,7 @@ D
 }
 
 STRING 18470
-// Abilities: A0EW (Take Off), Unhotkey (Hotkey - Turn Off)
+// Abilities: A0L0 (Sleep), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -110223,19 +110361,19 @@ Naga Sea Witch
 }
 
 STRING 18511
-// Abilities: A0UC (Open a portal to Alterac), Hotkey (Hotkey - Normal)
+// Abilities: A0UD (Mass Unholy Frenzy), Hotkey (Hotkey - Normal)
 {
 W
 }
 
 STRING 18512
-// Abilities: A0L0 (Sleep), Hotkey (Hotkey - Normal)
+// Abilities: A0UD (Mass Unholy Frenzy), Researchhotkey (Hotkey - Learn)
 {
 W
 }
 
 STRING 18513
-// Upgrades: Rora (Steel Ranged Weapons,Thorium Ranged Weapons,Arcanite Ranged Weapons), Hotkey (Hotkey)
+// Abilities: A0UE (Dispel Magic), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -110409,7 +110547,7 @@ E
 }
 
 STRING 18548
-// Upgrades: Rhra (Black Gunpowder,Refined Gunpowder,Imbued Gunpowder), Hotkey (Hotkey)
+// Upgrades: Rora (Steel Ranged Weapons,Thorium Ranged Weapons,Arcanite Ranged Weapons), Hotkey (Hotkey)
 {
 W
 }
@@ -110457,7 +110595,7 @@ Gilneas Cathedral
 }
 
 STRING 18567
-// Upgrades: Rhac (Improved Masonry,Advanced Masonry,Imbued Masonry), Hotkey (Hotkey)
+// Upgrades: Rhra (Black Gunpowder,Refined Gunpowder,Imbued Gunpowder), Hotkey (Hotkey)
 {
 W
 }
@@ -110502,12 +110640,6 @@ STRING 18576
 // Units: uzg1 (Spirit Tower), Ubertip (Tooltip - Extended)
 {
 Suspends an unholy crystal crackling with deadly magic above the Ziggurat.|n|cfff5962dUpgrades Into:|R Improved Spirit Tower|n|n|cffffcc00Attacks land and air units.|r
-}
-
-STRING 18578
-// Units: unec (Necromancer), Ubertip (Tooltip - Extended)
-{
-Practitioner of vile necrotic magic.|n|cfff5962dAbilities:|R Raise Dead|n|cfff5962dCan Learn:|R Unholy Frenzy, Soul Burn|n|n|cffffcc00Attacks land and air units.|R
 }
 
 STRING 18580
@@ -111214,7 +111346,7 @@ W
 }
 
 STRING 18718
-// Upgrades: R01B (Defend), Hotkey (Hotkey)
+// Upgrades: Rhac (Improved Masonry,Advanced Masonry,Imbued Masonry), Hotkey (Hotkey)
 {
 W
 }
@@ -111460,7 +111592,7 @@ Curse of Flame (|cffffcc00Q|r)
 }
 
 STRING 18764
-// Upgrades: R07I (Necromancer Adept Training,Necromancer Master Training), Hotkey (Hotkey)
+// Upgrades: R01B (Defend), Hotkey (Hotkey)
 {
 W
 }
@@ -113981,25 +114113,25 @@ Powerful Gnoll Leader.|n|cfff5962dAbilities:|R Earth Healing, Taunt, Bash|n|cff9
 }
 
 STRING 19300
-// Abilities: A0YZ (Hunt Aura), Name (Name)
-{
-Hunt Aura
-}
-
-STRING 19301
-// Abilities: A0YZ (Hunt Aura), Tip (Tooltip - Normal)
-{
-Hunt Aura
-}
-
-STRING 19302
 // Abilities: A0Z5 (Hunt Aura), Name (Name)
 {
 Hunt Aura
 }
 
-STRING 19303
+STRING 19301
 // Abilities: A0Z5 (Hunt Aura), Tip (Tooltip - Normal)
+{
+Hunt Aura
+}
+
+STRING 19302
+// Buffs/Effects: B0AG (), Bufftip (Tooltip)
+{
+Hunt Aura
+}
+
+STRING 19303
+// Buffs/Effects: B0AH (), Bufftip (Tooltip)
 {
 Hunt Aura
 }

@@ -30,7 +30,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
         Duration = 15
       });
 
-      var warStompMeredith = new Stomp(Constants.ABILITY_A003_SIREN_S_SCREAM_MEREDITH)
+      var warStompMeredith = new Stomp(Constants.ABILITY_A003_DISCORDANT_CADENZA_MEREDITH)
       {
         Radius = 800,
         DamageBase = 00,
