@@ -1,5 +1,4 @@
-﻿using WarcraftLegacies.Source.Quests;
-using WarcraftLegacies.Source.Quests.Naga;
+﻿using WarcraftLegacies.Source.Quests.Naga;
 using WarcraftLegacies.Source.Setup.FactionSetup;
 
 namespace WarcraftLegacies.Source.Setup.QuestSetup
