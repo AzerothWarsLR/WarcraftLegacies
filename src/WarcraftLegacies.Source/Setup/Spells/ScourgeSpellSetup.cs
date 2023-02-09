@@ -29,16 +29,17 @@ namespace WarcraftLegacies.Source.Setup.Spells
         Radius = 700
       });
       Plagueling.Setup(); //Todo: convert this into being a proper passive ability
-    }
 
-    var massUnholyFrenzy = new MassAnySpell(Constants.ABILITY_A0UD_MASS_UNHOLY_FRENZY_SCOURGE_OBSIDIAN_STATUE)
-    {
-      DummyAbilityId = Constants.ABILITY_ACUF_UNHOLY_FRENZY_DUMMY,
-      DummyAbilityOrderString = "unholyfrenzy",
-      Radius = 250,
-      CastFilter = CastFilters.IsTargetOrganicAndAlive,
-      TargetType = SpellTargetType.Point
-    };
-    SpellSystem.Register(massUnholyFrenzy);
+
+      var massUnholyFrenzy = new MassAnySpell(Constants.ABILITY_A0UD_MASS_UNHOLY_FRENZY_SCOURGE_OBSIDIAN_STATUE)
+      {
+        DummyAbilityId = Constants.ABILITY_ACUF_UNHOLY_FRENZY_DUMMY,
+        DummyAbilityOrderString = "unholyfrenzy",
+        Radius = 250,
+        CastFilter = CastFilters.IsTargetOrganicAndAlive,
+        TargetType = SpellTargetType.Point
+      };
+      SpellSystem.Register(massUnholyFrenzy);
+    }
   }
 }
