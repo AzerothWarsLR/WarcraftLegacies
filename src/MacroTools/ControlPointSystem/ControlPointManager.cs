@@ -245,8 +245,8 @@ namespace MacroTools.ControlPointSystem
     private void ConfigureControlPointStats(ControlPoint controlPoint, bool initialize)
     {
       var flooredLevel = (int)controlPoint.ControlLevel;
-      
       var maxHitPoints = StartingMaxHitPoints + flooredLevel * ControlLevelSettings.HitPointsPerControlLevel;
+      var lifePercent = Math.Max(controlPoint.Unit.GetLifePercent(), 1);
       
       controlPoint.Unit
         .SetMaximumHitpoints(maxHitPoints)
@@ -256,14 +256,9 @@ namespace MacroTools.ControlPointSystem
         .ShowAttackUi(false);
 
       if (initialize && controlPoint.Unit.OwningPlayer() == Player(PLAYER_NEUTRAL_AGGRESSIVE))
-      {
         controlPoint.Unit.SetCurrentHitpoints(HostileStartingCurrentHitPoints);
-      }
       else
-      {
-        var lifePercent = Math.Max(controlPoint.Unit.GetLifePercent(), 1);
         controlPoint.Unit.SetLifePercent(lifePercent);
-      }
 
       ConfigureControlPointOrDefenderAttack(controlPoint.Unit, flooredLevel);
     }
