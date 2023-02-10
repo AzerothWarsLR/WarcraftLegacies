@@ -50,19 +50,12 @@ namespace WarcraftLegacies.Source.Quests.Draenei
     }
 
     /// <inheritdoc/>
-    protected override void OnFail(Faction whichFaction)
-    {
-      _dimensionalGenerator.SetInvulnerable(false);
-    }
-
-    /// <inheritdoc/>
     protected override void OnComplete(Faction whichFaction)
     {
       _objectivePowerSource.UsedPowerSource?.SetDroppable(false);
       CreateTrigger()
         .RegisterUnitEvent(_dimensionalGenerator, EVENT_UNIT_DEATH)
         .AddAction(() => { _objectivePowerSource.UsedPowerSource?.SetDroppable(true); });
-      _dimensionalGenerator.SetInvulnerable(false);
     }
 
     /// <inheritdoc/>

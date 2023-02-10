@@ -16,7 +16,6 @@ namespace WarcraftLegacies.Source.Quests.Draenei
   public sealed class QuestRepairExodarHull : QuestData
   {
     private readonly Capital _exodar;
-    private readonly Capital _exodarGenerator;
     private readonly List<unit> _rescueUnits;
 
     /// <summary>
@@ -27,7 +26,6 @@ namespace WarcraftLegacies.Source.Quests.Draenei
       "ReplaceableTextures\\CommandButtons\\BTNDraeneiVaultOfRelics.blp")
     {
       _exodar = exodar;
-      _exodarGenerator = exodarGenerator;
       Required = true;
       AddObjective(new ObjectiveUnitAlive(exodar.Unit));
       AddObjective(new ObjectiveUnitReachesFullHealth(exodar.Unit));
@@ -56,8 +54,6 @@ namespace WarcraftLegacies.Source.Quests.Draenei
       else
         Player(PLAYER_NEUTRAL_AGGRESSIVE).RescueGroup(_rescueUnits);
       SetUnitTimeScale(_exodar.Unit, 1);
-      _exodar.Unit?.SetInvulnerable(true);
-      _exodarGenerator.Unit?.SetInvulnerable(false);
     }
   }
 }
