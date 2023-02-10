@@ -9,7 +9,7 @@ namespace WarcraftLegacies.Source.Quests.Fel_Horde
   /// <summary>
   /// Construct various buildings near the Black Temple to gain resources
   /// </summary>
-  public class QuestRebuildBlackTemple : QuestData
+  public sealed class QuestRebuildBlackTemple : QuestData
   {
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestRebuildBlackTemple"/> class.

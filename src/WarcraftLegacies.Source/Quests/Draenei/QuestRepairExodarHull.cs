@@ -13,7 +13,7 @@ namespace WarcraftLegacies.Source.Quests.Draenei
   /// <summary>
   /// Bring the exodar to full health in order to unlock the base inside
   /// </summary>
-  public class QuestRepairExodarHull : QuestData
+  public sealed class QuestRepairExodarHull : QuestData
   {
     private readonly Capital _exodar;
     private readonly Capital _exodarGenerator;

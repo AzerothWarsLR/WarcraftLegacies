@@ -7,7 +7,7 @@ namespace WarcraftLegacies.Source.Mechanics.Goblins
   /// <summary>
   /// Units with this buff use oil instead of mana.
   /// </summary>
-  public class OilUserBuff : PassiveBuff
+  public sealed class OilUserBuff : PassiveBuff
   {
     private readonly OilPower _oilPower;
     private trigger? _castTrigger;

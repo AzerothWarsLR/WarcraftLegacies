@@ -9,7 +9,7 @@ namespace WarcraftLegacies.Source.Quests.Draenei
   /// <summary>
   /// Bring the generator inside the Exodar to full health to make it more defensible
   /// </summary>
-  public class QuestRepairGenerator : QuestData
+  public sealed class QuestRepairGenerator : QuestData
   {
     private readonly Capital _exodarGenerator;
 

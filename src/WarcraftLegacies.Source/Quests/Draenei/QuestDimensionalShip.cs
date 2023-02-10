@@ -17,7 +17,7 @@ namespace WarcraftLegacies.Source.Quests.Draenei
   /// <summary>
   /// The Draenei acquire some kind of power source to power their ship.
   /// </summary>
-  public class QuestDimensionalShip : QuestData
+  public sealed class QuestDimensionalShip : QuestData
   {
     private readonly ObjectivePowerSource _objectivePowerSource;
     private readonly unit _dimensionalGenerator;

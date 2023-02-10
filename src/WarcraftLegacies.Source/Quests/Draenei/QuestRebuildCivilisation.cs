@@ -11,7 +11,7 @@ namespace WarcraftLegacies.Source.Quests.Draenei
   /// <summary>
   /// Build various structures inside <see cref="Regions.AzuremystAmbient"/>
   /// </summary>
-  public class QuestRebuildCivilisation : QuestData
+  public sealed class QuestRebuildCivilisation : QuestData
   {
 
     /// <summary>
