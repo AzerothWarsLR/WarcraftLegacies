@@ -34,9 +34,9 @@ namespace WarcraftLegacies.Source.Commands
         throw new InvalidOperationException(
           $"{GetPlayerName(GetTriggerPlayer())} tried to execute {nameof(ObserverCommand)}, but they don't have a {nameof(Faction)}.");
       }
-
-      triggerFaction.Player?.SetTeam(_observers!);
+      
       triggerFaction.ScoreStatus = ScoreStatus.Defeated;
+      triggerFaction.Player?.SetTeam(_observers!);
     }
   }
 }
