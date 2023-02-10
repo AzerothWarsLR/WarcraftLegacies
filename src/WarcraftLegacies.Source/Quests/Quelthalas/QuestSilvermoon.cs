@@ -29,7 +29,7 @@ namespace WarcraftLegacies.Source.Quests.Quelthalas
     /// </summary>
     public QuestSilvermoon(Rectangle rescueRect, unit elvenRunestone, PreplacedUnitSystem preplacedUnitSystem,
       Capital silvermoon, Capital sunwell) : base("The Siege of Silvermoon",
-      "The Amani Trolls have been harassing Silvermoon since it's founding, but their defensive position within their jungle has made the prospect of an all-out assault too costly. Today, however, the Amani begins their largest siege yet. They leave us no choice; we must scour Zul'aman if the High Elves are to prosper.",
+      "The Amani Trolls have been harassing Silvermoon since its founding, but their defensive position within their jungle has made the prospect of an all-out assault too costly. Today, however, the Amani begins their largest siege yet. They leave us no choice; we must scour Zul'aman if the High Elves are to prosper.",
       "ReplaceableTextures\\CommandButtons\\BTNForestTrollTrapper.blp")
     {
       _elvenRunestone = elvenRunestone;
