@@ -3,16 +3,20 @@ using MacroTools.QuestSystem;
 
 namespace WarcraftLegacies.Source.Quests.Goblin
 {
+  /// <inheritdoc />
   public sealed class QuestExplosiveEngineering : QuestData
   {
     /// <inheritdoc/>
-    protected override string RewardFlavour => "We now have acquired Oil and can begin constructing War Machines";
+    protected override string RewardFlavour => "With the first Bilgewater-owned offshore oil rig now completed, Chief Engineer Gazlowe begins his long journey back home.";
 
     /// <inheritdoc/>
-    protected override string RewardDescription => "Gazlowee is trainable at the altar";
+    protected override string RewardDescription => $"Learn to train Gazlowe from the {Constants.UNIT_O03O_ALTAR_OF_INDUSTRY_GOBLIN_ALTAR}";
 
+    /// <summary>
+    /// Initializees a new instance of the <see cref="QuestExplosiveEngineering"/> class.
+    /// </summary>
     public QuestExplosiveEngineering() : base("Explosive Engineering",
-      "The Goblin chief engineer, Gazlowee, is overseeing the construction of the overseas oil platforms.",
+      "Chief Engineer Gazlowe out at sea, overseeing the construction of the cartel's first offshore oil rig. He will return home when the first one has been constructed.",
       "ReplaceableTextures\\CommandButtons\\BTNHeroTinker.blp")
     {
       AddObjective(new ObjectiveBuild(Constants.UNIT_O04R_OIL_RIG_GOBLIN, 1));
