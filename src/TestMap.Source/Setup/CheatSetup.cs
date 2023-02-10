@@ -32,11 +32,12 @@ namespace TestMap.Source.Setup
       commandManager.Register(new CheatTime());
       commandManager.Register(new CheatUncontrol());
       commandManager.Register(new CheatVision());
-      commandManager.Register(new CommandTeam());
+      commandManager.Register(new CheatTeam());
       commandManager.Register(new CheatAddSpell());
-      commandManager.Register(new CommandSetResearchLevel());
-      commandManager.Register(new CommandDestroy());
+      commandManager.Register(new CheatSetResearchLevel());
+      commandManager.Register(new CheatDestroy());
       commandManager.Register(new CheatGod());
+      commandManager.Register(new CheatPosition());
       TestMode.Setup(commandManager);
     }
   }

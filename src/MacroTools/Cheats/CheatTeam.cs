@@ -8,7 +8,7 @@ namespace MacroTools.Cheats
   /// <summary>
   /// Sets the <see cref="Team"/> any <see cref="Faction"/>.
   /// </summary>
-  public sealed class CommandTeam : Command
+  public sealed class CheatTeam : Command
   {
     /// <inheritdoc />
     public override string CommandText => "team";

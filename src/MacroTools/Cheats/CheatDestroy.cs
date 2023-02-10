@@ -7,7 +7,7 @@ namespace MacroTools.Cheats
   /// <summary>
   /// Destroys an <see cref="Artifact"/>.
   /// </summary>
-  public sealed class CommandDestroy : Command
+  public sealed class CheatDestroy : Command
   {
     /// <inheritdoc />
     public override string CommandText => "destroy";
