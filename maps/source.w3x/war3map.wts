@@ -80164,6 +80164,12 @@ STRING 13355
 Summoned Voidwalker
 }
 
+STRING 13356
+// Buffs/Effects: BUsl (), Buffubertip (Tooltip - Extended)
+{
+This unit is sleeping; it is invulnerable and it cannot move attack or cast spells.
+}
+
 STRING 13357
 // Buffs/Effects: B05C (Open Wounds), Bufftip (Tooltip)
 {
