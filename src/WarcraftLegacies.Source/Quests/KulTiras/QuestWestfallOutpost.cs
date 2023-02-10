@@ -1,6 +1,7 @@
 ﻿using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
 using WCSharp.Shared.Data;
+using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.KulTiras
 {
@@ -26,6 +27,6 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
       "The Kul Tiran outpost in Westfall has been completed. In the mean time, the Ember Order has cleansed House Waycrest of their Drust influence. Meredith Waycrest has been released from her pact, and may now join the war effort.";
 
     /// <inheritdoc/>
-    protected override string RewardDescription => $"Learn to build {Constants.UNIT_H093_ORDER_CHAPTER_HOUSE_KUL_TIRAS}s, and learn to train Meredith Waycrest from the {Constants.UNIT_H07M_ALTAR_OF_ADMIRALS_KUL_TIRAS_ALTAR}";
+    protected override string RewardDescription => $"Learn to build {GetObjectName(Constants.UNIT_H093_ORDER_CHAPTER_HOUSE_KUL_TIRAS)}s, and learn to train Meredith Waycrest from the {GetObjectName(Constants.UNIT_H07M_ALTAR_OF_ADMIRALS_KUL_TIRAS_ALTAR)}";
   }
 }
