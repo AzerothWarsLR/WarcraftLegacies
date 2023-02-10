@@ -136,14 +136,8 @@ namespace Launcher
         "Warcraft III/JassHelper/common.j");
       var mapScriptBuilder = new MapScriptBuilder();
       mapScriptBuilder.SetDefaultOptionsForCSharpLua();
+      mapScriptBuilder.ForceGenerateGlobalDestructableVariable = false;
 
-      if (map.Doodads is not null && mapScriptBuilder.ForceGenerateGlobalDestructableVariable)
-      {
-        foreach (var doodad in map.Doodads.Doodads)
-        {
-          doodad.State = DoodadState.NonSolidInvisible;
-        }
-      }
       var compileResult = map.CompileScript(compiler, mapScriptBuilder, coreSystemFiles, blizzardJ, commonJ);
 
       // If compilation failed, output an error
