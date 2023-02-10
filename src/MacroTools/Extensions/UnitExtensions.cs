@@ -723,13 +723,19 @@ namespace MacroTools.Extensions
     public static bool IsAlive(this unit whichUnit) => UnitAlive(whichUnit);
 
     /// <summary>
-    /// Changes a unit's attack type.
+    /// Changes a unit's attack type as an integer.
     /// </summary>
     public static unit SetAttackType(this unit whichUnit, int attackType)
     {
       BlzSetUnitWeaponIntegerField(whichUnit, UNIT_WEAPON_IF_ATTACK_ATTACK_TYPE, 0, attackType);
       return whichUnit;
     }
+
+    /// <summary>
+    /// Returns the unit's attack type as an integer.
+    /// </summary>
+    public static int GetAttackType(this unit whichUnit) =>
+      BlzGetUnitWeaponIntegerField(whichUnit, UNIT_WEAPON_IF_ATTACK_ATTACK_TYPE, 0);
 
     /// <summary>
     /// Changes a unit's armor type.

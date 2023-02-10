@@ -61,8 +61,10 @@ namespace MacroTools.Powers
         .RemoveAbility(FourCC("Aihn"))
         .AddAbility(HeroGlowAbilityTypeId)
         .AddAbility(FourCC("AInv"))
-        .SetAttackType(6)
         .SetArmorType(5);
+
+      if (whichUnit.GetAttackType() != 3)
+        whichUnit.SetAttackType(6);
     }
 
     private void OnTrainUnit()
