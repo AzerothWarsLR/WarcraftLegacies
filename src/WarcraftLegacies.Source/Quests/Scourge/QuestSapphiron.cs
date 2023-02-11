@@ -35,8 +35,8 @@ namespace WarcraftLegacies.Source.Quests.Scourge
 
     /// <inheritdoc/>
     protected override string RewardDescription => "Unlock one of the requirements to train Frost Wyrms. " +
-                                                   "If your team killed Sapphiron, gain her in an undead form; " +
-                                                   $"otherwise, learn to train her from the {GetObjectName(Constants.UNIT_UAOD_ALTAR_OF_DARKNESS)}";
+                                                   "If your team killed Sapphiron, gain him in an undead form; " +
+                                                   $"otherwise, learn to train him from the {GetObjectName(Constants.UNIT_UAOD_ALTAR_OF_DARKNESS)}";
 
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
