@@ -6,6 +6,7 @@ using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
 using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
+using MacroTools.Powers;
 using MacroTools.QuestSystem;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -19,6 +20,7 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
   public sealed class QuestStormwindCity : QuestData
   {
     private readonly List<unit> _rescueUnits;
+    private const string RewardPowerName = "City of Heroes";
 
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestStormwindCity"/> class.
@@ -52,7 +54,10 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
 
     /// <inheritdoc />
     protected override string RewardDescription =>
-      "Control of all units in Stormwind, unlocks Varian for training at the altar, unlocks the Summon Garrison spell";
+      "Gain control of all units in Stormwind, " +
+      $"learn to train Varian from the {GetObjectName(Constants.UNIT_H06T_ALTAR_OF_KINGS_STORMWIND_ALTAR)}, " +
+      $"learn to cast {GetObjectName(Constants.ABILITY_A0GD_SUMMON_GARRISON_STORMWIND)} from {GetObjectName(Constants.UNIT_H06M_KEEP_STORMWIND_T2)}s and {GetObjectName(Constants.UNIT_H06N_CASTLE_STORMWIND_T3)}s, " +
+      $"and acquire the {RewardPowerName} Power";
 
     /// <inheritdoc />
     protected override void OnFail(Faction completingFaction)
@@ -63,6 +68,17 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
     /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)
     {
+      var rewardPower = new CityOfHeroes(0.125f, 1.5f, "Units")
+      {
+        IconName = "Angel",
+        Name = RewardPowerName,
+        HeroGlowAbilityTypeId = Constants.ABILITY_A0GK_HERO_GLOW_ORIGIN,
+        Filter = unit => !unit.IsType(UNIT_TYPE_MECHANICAL) && unit.GetTypeId() != Constants.UNIT_H05F_STORMWIND_CHAMPION_STORMWIND_ELITE,
+      };
+      
+      completingFaction.AddPower(rewardPower);
+      completingFaction.Player?.DisplayPowerAcquired(rewardPower);
+      
       completingFaction.Player?.RescueGroup(_rescueUnits);
 
       if (GetLocalPlayer() == completingFaction.Player)

@@ -9,6 +9,7 @@ using MacroTools;
 using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
+using MacroTools.Powers;
 
 namespace WarcraftLegacies.Source.Quests.KulTiras
 {
@@ -18,6 +19,7 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
   public sealed class QuestBoralus : QuestData
   {
     private readonly List<unit> _rescueUnits;
+    private const string RewardPowerName = "City of Admirals";
 
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestBoralus"/> class.
@@ -44,7 +46,7 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
-      "Control of all units in Kul'tiras and enables Katherine Proodmoure to be trained at the altar";
+      $"Gain control of all units in Kul'tiras, learn to train Katherine Proodmoure from the {GetObjectName(Constants.UNIT_H07M_ALTAR_OF_ADMIRALS_KUL_TIRAS_ALTAR)}, and acquire the {RewardPowerName} Power";
 
     /// <inheritdoc/>
     protected override void OnFail(Faction completingFaction)
@@ -55,16 +57,30 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
     {
-      if (completingFaction.Player != null)
+      var rewardPower = new CityOfHeroes(0.125f, 1.5f, "Ships")
       {
-        completingFaction.Player.RescueGroup(_rescueUnits);
-      }
-      else
-      {
-        Player(bj_PLAYER_NEUTRAL_VICTIM).RescueGroup(_rescueUnits);
-      }
-      if (GetLocalPlayer() == completingFaction.Player) PlayThematicMusic("war3mapImported\\KultirasTheme.mp3");
+        IconName = "LordAdmiralPendant",
+        Name = RewardPowerName,
+        HeroGlowAbilityTypeId = Constants.ABILITY_A0GK_HERO_GLOW_ORIGIN,
+        Filter = unit =>
+        {
+          var x = GetUnitX(unit);
+          var y = GetUnitY(unit);
+          return unit.IsType(UNIT_TYPE_MECHANICAL) && !IsTerrainPathable(x, y, PATHING_TYPE_FLOATABILITY) &&
+                 IsTerrainPathable(x, y, PATHING_TYPE_WALKABILITY);
+        }
+      };
       
+      completingFaction.AddPower(rewardPower);
+      completingFaction.Player?.DisplayPowerAcquired(rewardPower);
+      
+      if (completingFaction.Player != null)
+        completingFaction.Player.RescueGroup(_rescueUnits);
+      else
+        Player(bj_PLAYER_NEUTRAL_VICTIM).RescueGroup(_rescueUnits);
+
+      if (GetLocalPlayer() == completingFaction.Player) 
+        PlayThematicMusic("war3mapImported\\KultirasTheme.mp3");
     }
   }
 }

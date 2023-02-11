@@ -94,21 +94,7 @@ Stormwind is preparing for an invasion through the Dark Portal in the South. Mus
       Kultiras.ModObjectLimit(FourCC("U026"), 1); //Meredith
 
       Kultiras.AddGoldMine(preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(4585, -13038)));
-      
-      Kultiras.AddPower(new CityOfHeroes(0.125f, 1.5f, "Ships")
-      {
-        IconName = "LordAdmiralPendant",
-        Name = "City of Admirals",
-        HeroGlowAbilityTypeId = Constants.ABILITY_A0GK_HERO_GLOW_ORIGIN,
-        Filter = unit =>
-        {
-          var x = GetUnitX(unit);
-          var y = GetUnitY(unit);
-          return unit.IsType(UNIT_TYPE_MECHANICAL) && !IsTerrainPathable(x, y, PATHING_TYPE_FLOATABILITY) &&
-                 IsTerrainPathable(x, y, PATHING_TYPE_WALKABILITY);
-        },
-      });
-      
+
       FactionManager.Register(Kultiras);
     }
   }

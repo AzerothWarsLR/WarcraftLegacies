@@ -111,12 +111,6 @@ If you survive the Plague, sail to the frozen wasteland of Northrend and take th
       
       Lordaeron.AddGoldMine(preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(13617, 8741)));
 
-      Lordaeron.AddPower(new ControlLevelPerTurnBonus(0.5f)
-      {
-        IconName = @"ShieldOfUnification",
-        Name = "Dominion"
-      });
-      
       FactionManager.Register(Lordaeron);
     }
   }

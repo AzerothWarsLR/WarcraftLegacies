@@ -6,6 +6,7 @@ using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.QuestBased;
 using MacroTools.ObjectiveSystem.Objectives.TimeBased;
+using MacroTools.Powers;
 using MacroTools.QuestSystem;
 using WarcraftLegacies.Source.Setup.Legends;
 using WCSharp.Shared.Data;
@@ -22,6 +23,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
     private readonly unit _unitToMakeInvulnerable;
     private readonly LegendaryHero _uther;
     private readonly Capital _capitalPalace;
+    private const string RewardPowerName = "Dominion";
 
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestCapitalCity"/> class.
@@ -50,7 +52,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
       "The Capital City of Lordaeron has been literated.";
 
     /// <inheritdoc/>
-    protected override string RewardDescription => "Control of all units in the Capital City";
+    protected override string RewardDescription => $"Gain control of all units in the Capital City, and acquire the {RewardPowerName} Power";
 
     /// <inheritdoc/>
     protected override void OnFail(Faction completingFaction)
@@ -61,6 +63,15 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
     {
+      var rewardPower = new ControlLevelPerTurnBonus(0.5f)
+      {
+        IconName = @"ShieldOfUnification",
+        Name = RewardPowerName
+      };
+      
+      completingFaction.AddPower(rewardPower);
+      completingFaction.Player?.DisplayPowerAcquired(rewardPower);
+      
       completingFaction.Player?.RescueGroup(_rescueUnits);
       SetUnitInvulnerable(_unitToMakeInvulnerable, true);
       if (GetLocalPlayer() == completingFaction.Player)
