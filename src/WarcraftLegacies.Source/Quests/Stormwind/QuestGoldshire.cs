@@ -20,7 +20,7 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
       "Hogger and his pack have taken over Goldshire, clear them out!",
       "ReplaceableTextures\\CommandButtons\\BTNGnoll.blp")
     {
-      AddObjective(new ObjectiveKillUnit(hogger)); //Hogger
+      AddObjective(new ObjectiveUnitIsDead(hogger)); //Hogger
       AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(FourCC("n00Z"))));
       AddObjective(new ObjectiveExpire(1335));
       AddObjective(new ObjectiveSelfExists());

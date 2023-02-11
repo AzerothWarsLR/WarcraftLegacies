@@ -24,7 +24,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
     {
       AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(FourCC("n08D"))));
       AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(FourCC("n00G"))));
-      AddObjective(new ObjectiveKillUnit(spiderQueen));
+      AddObjective(new ObjectiveUnitIsDead(spiderQueen));
       AddObjective(new ObjectiveUpgrade(FourCC("unp2"), FourCC("unp1")));
       AddObjective(new ObjectiveExpire(1480));
       AddObjective(new ObjectiveSelfExists());

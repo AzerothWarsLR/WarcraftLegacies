@@ -20,7 +20,7 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
       "The town of Lakeshire is invaded by Ogres, wipe them out!",
       "ReplaceableTextures\\CommandButtons\\BTNOgreLord.blp")
     {
-      AddObjective(new ObjectiveKillUnit(ogreLordToKill));
+      AddObjective(new ObjectiveUnitIsDead(ogreLordToKill));
       AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(FourCC("n011"))));
       AddObjective(new ObjectiveExpire(1427));
       AddObjective(new ObjectiveSelfExists());

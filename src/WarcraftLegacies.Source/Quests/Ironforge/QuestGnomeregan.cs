@@ -27,7 +27,7 @@ namespace WarcraftLegacies.Source.Quests.Ironforge
       "The people of Gnomeregan have long been unable to assist the Alliance in its wars due an infestation of troggs and Ice Trolls. Resolve their conflicts for them to gain their services.",
       "ReplaceableTextures\\CommandButtons\\BTNFlyingMachine.blp")
     {
-      AddObjective(new ObjectiveKillUnit(preplacedUnitSystem.GetUnit(FourCC("nitw"), Regions.Gnomergan.Center))); //Ice Troll Warlord
+      AddObjective(new ObjectiveUnitIsDead(preplacedUnitSystem.GetUnit(FourCC("nitw"), Regions.Gnomergan.Center))); //Ice Troll Warlord
       AddObjective(new ObjectiveSelfExists());
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
       Required = true;

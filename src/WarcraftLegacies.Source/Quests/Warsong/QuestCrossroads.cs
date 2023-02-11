@@ -23,7 +23,7 @@ namespace WarcraftLegacies.Source.Quests.Warsong
       "ReplaceableTextures\\CommandButtons\\BTNBarracks.blp")
     {
       AddObjective(
-        new ObjectiveKillUnit(preplacedUnitSystem.GetUnit(FourCC("nrzm"), rescueRect.Center))); //Razorman Medicine Man
+        new ObjectiveUnitIsDead(preplacedUnitSystem.GetUnit(FourCC("nrzm"), rescueRect.Center))); //Razorman Medicine Man
       AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N01T_NORTHERN_BARRENS_15GOLD_MIN)));
       AddObjective(new ObjectiveExpire(1460));
       AddObjective(new ObjectiveSelfExists());

@@ -28,7 +28,7 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
       "A small murloc skirmish is attacking Southshore, push them back",
       "ReplaceableTextures\\CommandButtons\\BTNMurloc.blp")
     {
-      AddObjective(new ObjectiveKillUnit(murlocToKill));
+      AddObjective(new ObjectiveUnitIsDead(murlocToKill));
       AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N08M_SOUTHSHORE_15GOLD_MIN)));
       AddObjective(new ObjectiveExpire(1135));
       AddObjective(new ObjectiveSelfExists());

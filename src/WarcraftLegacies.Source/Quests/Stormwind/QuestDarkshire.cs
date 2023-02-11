@@ -16,7 +16,7 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
       "The town of Darkshire is under attack by Gnoll's, clear them out!",
       "ReplaceableTextures\\CommandButtons\\BTNGnollArcher.blp")
     {
-      AddObjective(new ObjectiveKillUnit(gnollToKill));
+      AddObjective(new ObjectiveUnitIsDead(gnollToKill));
       AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(FourCC("n00V"))));
       AddObjective(new ObjectiveExpire(1425));
       AddObjective(new ObjectiveSelfExists());
