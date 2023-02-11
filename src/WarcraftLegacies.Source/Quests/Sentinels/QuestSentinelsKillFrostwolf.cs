@@ -30,7 +30,7 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
       "The Frostwolves have been ousted from Kalimdor, along with their Tauren allies. They will !be missed.";
 
     /// <inheritdoc/>
-    protected override string RewardDescription => "The demihero Amara and the hero Jarod";
+    protected override string RewardDescription => "The demihero Amara and the hero Jarod Shadowsong are now trainable at the Altar of Watches";
 
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)

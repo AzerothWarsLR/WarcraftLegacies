@@ -3645,7 +3645,7 @@ Powerful warrior of Rexxar's clan.|n|cfff5962dAbilities:|R Bash, Earth Bind |n|c
 }
 
 STRING 609
-// Units: nhym (Hydromancer), Casterupgradename (Caster Upgrade Names)
+// Units: nmsc (Mur'gul Shadowcaster), Casterupgradename (Caster Upgrade Names)
 {
 Initiate,Adept,Master
 }
@@ -4204,7 +4204,7 @@ Hellforged contraption of the doom.|n|cfff5962dAbilities:|R Inferno|n|n|cff99b4d
 }
 
 STRING 702
-// Units: nchp (Mage), Casterupgradename (Caster Upgrade Names)
+// Units: nhym (Hydromancer), Casterupgradename (Caster Upgrade Names)
 {
 Initiate,Adept,Master
 }
@@ -5243,7 +5243,7 @@ STRING 874
 }
 
 STRING 875
-// Units: n093 (Chaplain), Casterupgradename (Caster Upgrade Names)
+// Units: nchp (Mage), Casterupgradename (Caster Upgrade Names)
 {
 Initiate,Adept,Master
 }
@@ -11653,7 +11653,7 @@ Icecrown Obelisk
 }
 
 STRING 1943
-// Units: n063 (Magus), Casterupgradename (Caster Upgrade Names)
+// Units: nnsw (Naga Siren), Casterupgradename (Caster Upgrade Names)
 {
 Initiate,Adept,Master
 }
@@ -13505,7 +13505,7 @@ STRING 2251
 }
 
 STRING 2252
-// Units: n060 (Silithid Tunneler), Casterupgradename (Caster Upgrade Names)
+// Units: n093 (Chaplain), Casterupgradename (Caster Upgrade Names)
 {
 Initiate,Adept,Master
 }
@@ -13595,7 +13595,7 @@ Explosive team of goblin sappers.|n|cfff5962dAbilities:|R Suicide Shield, Kaboom
 }
 
 STRING 2267
-// Units: n05V (Shadow Weaver), Casterupgradename (Caster Upgrade Names)
+// Units: n063 (Magus), Casterupgradename (Caster Upgrade Names)
 {
 Initiate,Adept,Master
 }
@@ -13685,7 +13685,7 @@ Upgrade to Sanctuary
 }
 
 STRING 2282
-// Units: n04P (Eredar Summoner), Casterupgradename (Caster Upgrade Names)
+// Units: n060 (Silithid Tunneler), Casterupgradename (Caster Upgrade Names)
 {
 Initiate,Adept,Master
 }
@@ -14296,7 +14296,7 @@ This unit is under the effects of Brilliant Counsel; it might get mana restaured
 }
 
 STRING 2384
-// Units: n04K (Succubus), Casterupgradename (Caster Upgrade Names)
+// Units: n05V (Shadow Weaver), Casterupgradename (Caster Upgrade Names)
 {
 Initiate,Adept,Master
 }
@@ -14399,7 +14399,7 @@ Gahz'rilla many heads enables it to attack his enemies. |n|n|cffffcc00Level 1|r 
 }
 
 STRING 2401
-// Units: n03K (Pastor), Casterupgradename (Caster Upgrade Names)
+// Units: n04P (Eredar Summoner), Casterupgradename (Caster Upgrade Names)
 {
 Initiate,Adept,Master
 }
@@ -14909,7 +14909,7 @@ Train Faceless Corrupter
 }
 
 STRING 2486
-// Units: h06B (Templar), Casterupgradename (Caster Upgrade Names)
+// Units: n04K (Succubus), Casterupgradename (Caster Upgrade Names)
 {
 Initiate,Adept,Master
 }
@@ -16934,7 +16934,7 @@ Plant a seed of hatred onto a friendly building. The afflicted unit cannot uproo
 }
 
 STRING 2824
-// Units: h00F (Paladin), Casterupgradename (Caster Upgrade Names)
+// Units: n03K (Pastor), Casterupgradename (Caster Upgrade Names)
 {
 Initiate,Adept,Master
 }
@@ -21174,7 +21174,7 @@ Karazhan
 }
 
 STRING 3530
-// Units: n068 (Inquisitor), Casterupgradename (Caster Upgrade Names)
+// Units: h06B (Templar), Casterupgradename (Caster Upgrade Names)
 {
 Initiate,Adept,Master
 }
@@ -21635,7 +21635,7 @@ Q
 }
 
 STRING 3607
-// Abilities: A0YZ (Hunt Aura), EditorSuffix (Editor Suffix)
+// Abilities: A0YZ (Joy of the Hunt), EditorSuffix (Editor Suffix)
 {
 (sentinel)
 }
@@ -34679,22 +34679,10 @@ STRING 5780
 Ensnare (|cffffcc00Q|r)
 }
 
-STRING 5781
-// Abilities: ANeg (Engineering Upgrade), Researchubertip (Tooltip - Learn - Extended)
-{
-Enhances other Tinker abilities with each level learned:|n|n|cffffcc00Cluster Rockets|r - Larger Area.|n|cffffcc00Pocket Factory|r - Builds Clockwerk Goblins more quickly.|n|cffffcc00Robo-Goblin|r - Increases armor and Strength; enhances Demolish.|n|nAlso gives bonus damage and increases the Tinker's movement speed.|n|n|cffffcc00Level 1|r - +<ANeg,DataB1> damage, +<ANeg,DataA1,%>% movement.|n|cffffcc00Level 2|r - +<ANeg,DataB2> damage, +<ANeg,DataA2,%>% movement.|n|cffffcc00Level 3|r - +<ANeg,DataB3> damage, +<ANeg,DataA3,%>% movement.|n|cffffcc00Level 4|r - +9 damage, +40% movement.
-}
-
 STRING 5782
 // Abilities: ANeg (Engineering Upgrade), Tip (Tooltip - Normal)
 {
 Engineering Upgrade - [|cffffcc00Level 4|r]
-}
-
-STRING 5783
-// Abilities: ANeg (Engineering Upgrade), Ubertip (Tooltip - Normal - Extended)
-{
-Improves other Tinker abilities, gives <ANeg,DataB4> attack damage and increases Tinker movement speed by <ANeg,DataA4,%>%.
 }
 
 STRING 5784
@@ -41154,7 +41142,7 @@ Conjurus Rex
 }
 
 STRING 6860
-// Abilities: A10I (Demon Rage), Researchubertip (Tooltip - Learn - Extended)
+// Abilities: A0SV (White Wolf's Fury), Researchubertip (Tooltip - Learn - Extended)
 {
 Causes this unit to attack significantly faster, and move <A10I,DataA1,%>%, faster but take <A10I,DataC1,%>% more damage. |nLasts 7 seconds.|n|n|cffffcc00Level 1|r - <A10I,DataB1,%>% attack rate increase.|n|cffffcc00Level 2|r - <A10I,DataB2,%>% attack rate increase.|n|cffffcc00Level 3|r - <A10I,DataB3,%>% attack rate increase. |n|cffffcc00Level 4|r - <A10I,DataB4,%>% attack rate increase.
 }
@@ -41193,12 +41181,6 @@ STRING 6866
 // Abilities: A0DA (Summon Mur'gul), Researchtip (Tooltip - Learn)
 {
 Learn Summon Mur'gul - [|cffffcc00Level %d|r].
-}
-
-STRING 6867
-// Abilities: A0DA (Summon Mur'gul), Researchubertip (Tooltip - Learn - Extended)
-{
-Summons a legion of 4/6/8/10 Mur'gul to aid the hero in battle.|n|nLasts 60 seconds|n|cffffcc00Attacks land units.|r
 }
 
 STRING 6868
@@ -44675,12 +44657,6 @@ STRING 7443
 // Abilities: A0VX (Elune's Gaze), Name (Name)
 {
 Elune's Gaze
-}
-
-STRING 7444
-// Abilities: A0VX (Elune's Gaze), Tip (Tooltip - Normal)
-{
-Elune's Gaze 
 }
 
 STRING 7445
@@ -66244,13 +66220,13 @@ Conveyance Aura
 }
 
 STRING 11038
-// Abilities: A0YZ (Hunt Aura), Researchtip (Tooltip - Learn)
+// Abilities: A0YZ (Joy of the Hunt), Researchtip (Tooltip - Learn)
 {
 |cffffcc00(E)|r - Learn Conveyance Aura - [|cffffcc00Level %d|r]
 }
 
 STRING 11039
-// Abilities: A0YZ (Hunt Aura), Researchubertip (Tooltip - Learn - Extended)
+// Abilities: A0YZ (Joy of the Hunt), Researchubertip (Tooltip - Learn - Extended)
 {
 Galen has always been an adept commander and his skills give his armies increased mobility. Increases the movement speed of all nearby friendly units.|n|n|cffffcc00Level 1|r - 15% increased movement speed. |n|cffffcc00Level 2|r - 20% increased movement speed. |n|cffffcc00Level 3|r - 25% increased movement speed. |n|cffffcc00Level 4|r - 30% increased movement speed. |n
 }
@@ -66292,13 +66268,13 @@ Increases nearby friendly units' movement speed by 20%.
 }
 
 STRING 11046
-// Abilities: A0YZ (Hunt Aura), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A0YZ (Joy of the Hunt), Ubertip (Tooltip - Normal - Extended)
 {
 Increases nearby friendly units' movement speed by 25%.
 }
 
 STRING 11047
-// Abilities: A0YZ (Hunt Aura), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A0YZ (Joy of the Hunt), Ubertip (Tooltip - Normal - Extended)
 {
 Increases nearby friendly units' movement speed by 30%.
 }
@@ -74260,7 +74236,7 @@ R
 }
 
 STRING 12372
-// Abilities: A0Z5 (Hunt Aura), Researchtip (Tooltip - Learn)
+// Abilities: A0Z5 (Driven by Vengance), Researchtip (Tooltip - Learn)
 {
 |cffffcc00(E)|r - Learn Conveyance Aura - [|cffffcc00Level %d|r]
 }
@@ -74290,7 +74266,7 @@ Ritual of Fire
 }
 
 STRING 12377
-// Abilities: A0Z5 (Hunt Aura), Researchubertip (Tooltip - Learn - Extended)
+// Abilities: A0Z5 (Driven by Vengance), Researchubertip (Tooltip - Learn - Extended)
 {
 Galen has always been an adept commander and his skills give his armies increased mobility. Increases the movement speed of all nearby friendly units.|n|n|cffffcc00Level 1|r - 15% increased movement speed. |n|cffffcc00Level 2|r - 20% increased movement speed. |n|cffffcc00Level 3|r - 25% increased movement speed. |n|cffffcc00Level 4|r - 30% increased movement speed. |n
 }
@@ -75397,12 +75373,6 @@ STRING 12561
 // Abilities: A01X (Heavy Armor), Tip (Tooltip - Normal)
 {
 Heavy Armor
-}
-
-STRING 12562
-// Units: h0AC (Naga Sea Witch), Ubertip (Tooltip - Extended)
-{
-Elite Warriors of the Nazjatar Court.|n|cfff5962dAbilities:|R Forked Lightning, Frost Arrows, Tornado|n |n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land and air units.|r
 }
 
 STRING 12563
@@ -78077,7 +78047,7 @@ Primary defensive structure.|n|cfff5962dUpgrades Into:|R Improved Hunter Tower|n
 }
 
 STRING 13008
-// Abilities: A0YZ (Hunt Aura), Name (Name)
+// Buffs/Effects: B0AG (), Bufftip (Tooltip)
 {
 Hunt Aura
 }
@@ -80722,6 +80692,12 @@ STRING 13448
 Will of the Emperor
 }
 
+STRING 13449
+// Units: nmsc (Mur'gul Shadowcaster), Casterupgradetip (Caster Upgrade Tips)
+{
+- Curse,- Curse|n- Dispel,- Curse|n- Dispel|n- Healing Ward
+}
+
 STRING 13450
 // Abilities: A0D7 (Wraith Form), Researchtip (Tooltip - Learn)
 {
@@ -80795,7 +80771,7 @@ Lordaeron Knights
 }
 
 STRING 13462
-// Abilities: A0YZ (Hunt Aura), Tip (Tooltip - Normal)
+// Abilities: A0YZ (Joy of the Hunt), Tip (Tooltip - Normal)
 {
 Conveyance Aura - [|cffffcc00Level 2|r]
 }
@@ -81305,7 +81281,7 @@ Naval Aura
 }
 
 STRING 13547
-// Abilities: A0YZ (Hunt Aura), Tip (Tooltip - Normal)
+// Buffs/Effects: B0AH (), Bufftip (Tooltip)
 {
 Hunt Aura
 }
@@ -81860,12 +81836,6 @@ STRING 13639
 // Abilities: A0KC (Incinerate), Ubertip (Tooltip - Normal - Extended)
 {
 Each attack made is enhanced with living flames that cling to the target. These flames add <A0KC,DataA1> damage on the first attack, twice as much on the second attack, three times as much on the third attack, etc.|n|nIf a unit dies while under this effect, it is incinerated, causing up to <A0KC,DataB1> damage to all nearby hostile units.
-}
-
-STRING 13640
-// Units: e009 (Naisha), Ubertip (Tooltip - Extended)
-{
-Lieutenant of the Watchers, Naisha is a strong leader and close confidant to Maeiv. |n|n|cfff5962dAbilities:|R Ensnare, Sentinel, Moon Glaive, Resurrection, Hunt Aura, Shadow Meld, Resistant Skin|n|r|n|cffffcc00Attacks land and air units.|r
 }
 
 STRING 13641
@@ -87207,6 +87177,12 @@ STRING 14530
 Learn Seed of Burning Hatred
 }
 
+STRING 14531
+// Units: Ewrd (Leader of the Watchers ), Ubertip (Tooltip - Extended)
+{
+Cunning Hero, adept at melee combat and slipping in and out of fights.|n|cfff5962dAbilities:|r Blink, Hide, Driven by Vengance|n|cfff5962dCan learn:|R Fan of Knives, Avatar of Vengeance, Battle Experience, Take Vengeance |n|n|cffffcc00Attacks land units.|R
+}
+
 STRING 14532
 // Units: H098 (Sunfury Mastermind), Revivetip (Tooltip - Revive)
 {
@@ -87578,6 +87554,12 @@ STRING 14593
 // Upgrades: R04V (Magic Sentry), Hotkey (Hotkey)
 {
 Z
+}
+
+STRING 14594
+// Units: nnsw (Naga Siren), Casterupgradetip (Caster Upgrade Tips)
+{
+- Frost Bolt,- Frost Bolt|n- Anti-magic Shell,- Frost Bolt|n- Anti-magic Shell|n- Parasite
 }
 
 STRING 14595
@@ -88060,6 +88042,12 @@ STRING 14674
 Research Magus Master Training
 }
 
+STRING 14675
+// Units: e009 (Naisha), Ubertip (Tooltip - Extended)
+{
+Lieutenant of the Watchers, Naisha is a strong leader and close confidant to Maeiv. |n|n|cfff5962dAbilities:|R Ensnare, Sentinel, Moon Glaive, Resurrection, Joy of the Hunt, Shadow Meld, Resistant Skin|n|r|n|cffffcc00Attacks land and air units.|r
+}
+
 STRING 14676
 // Upgrades: R029 (Priest Adept Training,Priest Master Training), Ubertip (Tooltip - Extended)
 {
@@ -88202,6 +88190,12 @@ STRING 14699
 // Upgrades: R026 (Animal War Training), Tip (Tooltip)
 {
 Research Elune's Infusion
+}
+
+STRING 14700
+// Units: n0CB (Deepseer), Casterupgradename (Caster Upgrade Names)
+{
+Initiate,Adept,Master
 }
 
 STRING 14701
@@ -90866,12 +90860,6 @@ STRING 15152
 // Abilities: A0XZ (Carrion Swarm), EditorSuffix (Editor Suffix)
 {
 (Queen of Suffering)
-}
-
-STRING 15153
-// Abilities: A0VX (Elune's Gaze), Ubertip (Tooltip - Normal - Extended)
-{
-Turns each unit in the target area invisible. If a unit attacks, uses an ability or casts a spell, it will become visible. |nLasts <A0VX,Dur1> seconds.
 }
 
 STRING 15154
@@ -94408,30 +94396,6 @@ STRING 15742
 Summon Goldrinn
 }
 
-STRING 15743
-// Abilities: A0DA (Summon Mur'gul), Ubertip (Tooltip - Normal - Extended)
-{
-Summons a legion of 4 Naga Mur'gul to aid the hero in battle.|n|nLasts 60 seconds|n|cffffcc00Attacks land units.|r
-}
-
-STRING 15744
-// Abilities: A0DA (Summon Mur'gul), Ubertip (Tooltip - Normal - Extended)
-{
-Summons a legion of 6 Naga Mur'gul to aid the hero in battle.|n|nLasts 60 seconds|n|cffffcc00Attacks land units.|r
-}
-
-STRING 15745
-// Abilities: A0DA (Summon Mur'gul), Ubertip (Tooltip - Normal - Extended)
-{
-Summons a legion of 8 Naga Mur'gul to aid the hero in battle.|n|nLasts 60 seconds|n|cffffcc00Attacks land units.|r
-}
-
-STRING 15746
-// Abilities: A0DA (Summon Mur'gul), Ubertip (Tooltip - Normal - Extended)
-{
-Summons a legion of 10 Naga Mur'gul to aid the hero in battle.|n|nLasts 60 seconds|n|cffffcc00Attacks land units.|r
-}
-
 STRING 15747
 // Abilities: A0M6 (Anti Portal Blocking), EditorSuffix (Editor Suffix)
 {
@@ -94553,7 +94517,7 @@ Train Greyguard
 }
 
 STRING 15767
-// Units: n077 (Sorcerer), Casterupgradename (Caster Upgrade Names)
+// Units: h00F (Paladin), Casterupgradename (Caster Upgrade Names)
 {
 Initiate,Adept,Master
 }
@@ -94871,7 +94835,7 @@ Grants Unholy Armor to all friendly unit in a large area of effect. Lasts 60 sec
 }
 
 STRING 15820
-// Units: n0CB (Deepseer), Casterupgradename (Caster Upgrade Names)
+// Units: n068 (Inquisitor), Casterupgradename (Caster Upgrade Names)
 {
 Initiate,Adept,Master
 }
@@ -98338,6 +98302,12 @@ STRING 16397
 Build Plague Catapult
 }
 
+STRING 16398
+// Units: n0CD (Bloodkin), Casterupgradename (Caster Upgrade Names)
+{
+Initiate,Adept,Master
+}
+
 STRING 16399
 // Units: u01P (Plague Catapult), Name (Name)
 {
@@ -98798,6 +98768,12 @@ STRING 16475
 // Upgrades: R02Y (Long Rifles), EditorSuffix (Editor Suffix)
 {
 (Quel'thalas
+}
+
+STRING 16476
+// Units: h0AC (Naga Sea Witch), Ubertip (Tooltip - Extended)
+{
+Elite Warriors of the Nazjatar Court.|n|cfff5962dAbilities:|R Forked Lightning, Frost Arrows, Tornado, Resistant Skin, Spell Resistance|n |n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land and air units.|r
 }
 
 STRING 16477
@@ -99538,6 +99514,12 @@ STRING 16599
 Build Altar of Industry
 }
 
+STRING 16600
+// Abilities: A0VX (Elune's Gaze), Ubertip (Tooltip - Normal - Extended)
+{
+Turns target unit invisible. If a unit attacks, uses an ability or casts a spell, it will become visible. |nLasts <A0VX,Dur1> seconds.
+}
+
 STRING 16601
 // Abilities: A0T2 (AAASpell Resistance), Ubertip (Tooltip - Normal - Extended)
 {
@@ -99796,6 +99778,12 @@ STRING 16643
 R
 }
 
+STRING 16644
+// Abilities: A0VX (Elune's Gaze), Tip (Tooltip - Normal)
+{
+Elune's Gaze
+}
+
 STRING 16645
 // Units: h08I (Crusader), Ubertip (Tooltip - Extended)
 {
@@ -99874,6 +99862,12 @@ STRING 16657
 Scarlet Crusade is Unleashed
 }
 
+STRING 16658
+// Abilities: A0QL (Spellbook and Maiev Event), Ubertip (Tooltip - Normal - Extended)
+{
+Contains the following spells: Driven by Vengance, Chase Illidan to Outland, Shadow Meld
+}
+
 STRING 16659
 // Units: h05A (Wizard's Sanctum), Ubertip (Tooltip - Extended)
 {
@@ -99946,6 +99940,12 @@ STRING 16670
 Train Orcish Death Knight
 }
 
+STRING 16671
+// Abilities: A0YZ (Joy of the Hunt), Name (Name)
+{
+Joy of the Hunt
+}
+
 STRING 16672
 // Units: o04W (Golden Vessel), EditorSuffix (Name - Editor Suffix)
 {
@@ -99962,6 +99962,18 @@ STRING 16674
 // Abilities: A0TW (Field of Blood), Researchubertip (Tooltip - Learn - Extended)
 {
 Conjures a field of churning blood which heals allied ground units in a target area over time. |n|n|cffffcc00Level 1|r - Heals 150 hitpoints over 5 seconds, then 10 hitpoint every 1 seconds for 35 seconds.|n|cffffcc00Level 2|r - Heals 200 hitpoints over 5 seconds, then 15 hitpoint every 1 seconds for 35 seconds.|n|cffffcc00Level 3|r - Heals 250 hitpoints over 5 seconds, then 20 hitpoint every 1 seconds for 35 seconds.|n
+}
+
+STRING 16675
+// Abilities: A0YZ (Joy of the Hunt), Tip (Tooltip - Normal)
+{
+Joy of the Hunt
+}
+
+STRING 16676
+// Abilities: A0YZ (Joy of the Hunt), Ubertip (Tooltip - Normal - Extended)
+{
+Increases nearby friendly units' movement speed by 15%.|nThis ability will stack with Driven by Vengance.
 }
 
 STRING 16677
@@ -100222,6 +100234,12 @@ STRING 16719
 Transfusion - [|cffffcc00Level 4|r]
 }
 
+STRING 16720
+// Abilities: A0Z5 (Driven by Vengance), Name (Name)
+{
+Driven by Vengance
+}
+
 STRING 16721
 // Buffs/Effects: B0AK (), Bufftip (Tooltip)
 {
@@ -100336,10 +100354,10 @@ STRING 16739
 (Twilight DK)
 }
 
-STRING 16741
-// Abilities: AEvi (Metamorphosis), Ubertip (Tooltip - Normal - Extended)
+STRING 16740
+// Abilities: A0Z5 (Driven by Vengance), Tip (Tooltip - Normal)
 {
-Transforms the Demon Hunter into a powerful Demon with a ranged attack. Has 600 bonus hit points and lasts for 20 seconds.
+Driven by Vengance
 }
 
 STRING 16742
@@ -100946,6 +100964,12 @@ STRING 16842
 // Upgrades: R070 (Druid of the Talon Adept Training,Druid of the Talon Master Training), Tip (Tooltip)
 {
 Haruspex Master Training
+}
+
+STRING 16843
+// Abilities: A0Z5 (Driven by Vengance), Ubertip (Tooltip - Normal - Extended)
+{
+Increases nearby friendly units' movement speed by 15%. |nThis ability will stack with Joy of the Hunt.
 }
 
 STRING 16844
@@ -101602,6 +101626,12 @@ STRING 16952
 Quest Completed: The Darkspear Trolls
 }
 
+STRING 16953
+// Upgrades: R02T (Well Spring), Ubertip (Tooltip - Extended)
+{
+Increases the amount of mana that can be stored in Moon Wells by 175, and their rate of mana regeneration by 5%.
+}
+
 STRING 16954
 // Abilities: A0P5 (United for the Crusade), Name (Name)
 {
@@ -102016,6 +102046,12 @@ STRING 17022
 Mass Enrage - [|cffffcc00Level 4|r]
 }
 
+STRING 17023
+// Units: n00R (Nazbrock the Crazy Dwarf), Name (Name)
+{
+Nazbrock the Crazy Dwarf
+}
+
 STRING 17024
 // Abilities: A0QK (Mass Enrage), Ubertip (Tooltip - Normal - Extended)
 {
@@ -102196,10 +102232,22 @@ STRING 17053
 Summon Varimathras
 }
 
+STRING 17054
+// Units: n00R (Nazbrock the Crazy Dwarf), EditorSuffix (Name - Editor Suffix)
+{
+(Contributor reward)
+}
+
 STRING 17055
 // Units: Usyl (Dark Ranger), Ubertip (Tooltip - Extended)
 {
 Cunning Hero, adept at manipulating opponents.|n|cfff5962dAbilities:|r Wind Walk|n|cfff5962dCan learn:|R Aimed Shot, Silence, Black Arrow, Banshee Queen|n|n|cffffcc00Attacks land and air units.|R
+}
+
+STRING 17056
+// Abilities: ANeg (Engineering Upgrade), Researchubertip (Tooltip - Learn - Extended)
+{
+Enhances the other Gazlowee abilities with each level learned:|n|n|cffffcc00Cluster Rockets|r - Larger Area.|n|cffffcc00Pocket Factory|r - Builds Clockwerk Goblins more quickly.|n|nAlso gives bonus damage and increases the Tinker's movement speed.|n|n|cffffcc00Level 1|r - +<ANeg,DataB1> damage, +<ANeg,DataA1,%>% movement.|n|cffffcc00Level 2|r - +<ANeg,DataB2> damage, +<ANeg,DataA2,%>% movement.|n|cffffcc00Level 3|r - +<ANeg,DataB3> damage, +<ANeg,DataA3,%>% movement.|n|cffffcc00Level 4|r - +9 damage, +40% movement.
 }
 
 STRING 17057
@@ -102212,6 +102260,12 @@ STRING 17058
 // Abilities: A0VE (Flame Shield), Hotkey (Hotkey - Normal)
 {
 E
+}
+
+STRING 17059
+// Abilities: ANeg (Engineering Upgrade), Ubertip (Tooltip - Normal - Extended)
+{
+Improves other Gazlowee abilities, gives <ANeg,DataB4> attack damage and increases Gazlowee movement speed by <ANeg,DataA4,%>%.
 }
 
 STRING 17060
@@ -102454,16 +102508,34 @@ STRING 17099
 X
 }
 
+STRING 17100
+// Abilities: ANeg (Engineering Upgrade), Ubertip (Tooltip - Normal - Extended)
+{
+Improves other Gazlowee abilities, gives <ANeg,DataB1> attack damage and increases Gazlowee movement speed by <ANeg,DataA1,%>%.
+}
+
 STRING 17101
 // Units: Naka (Elder Sage), Tip (Tooltip - Basic)
 {
 Summon Akama
 }
 
+STRING 17102
+// Abilities: ANeg (Engineering Upgrade), Ubertip (Tooltip - Normal - Extended)
+{
+Improves other Gazlowee abilities, gives <ANeg,DataB2> attack damage and increases Gazlowee movement speed by <ANeg,DataA2,%>%.
+}
+
 STRING 17103
 // Units: Ewrd (Leader of the Watchers ), Tip (Tooltip - Basic)
 {
 Summon Maiev
+}
+
+STRING 17104
+// Abilities: ANeg (Engineering Upgrade), Ubertip (Tooltip - Normal - Extended)
+{
+Improves other Gazlowee abilities, gives <ANeg,DataB3> attack damage and increases Gazlowee movement speed by <ANeg,DataA3,%>%.
 }
 
 STRING 17105
@@ -102668,6 +102740,12 @@ STRING 17138
 // Units: H05L (Lady of House Proudmoore), Ubertip (Tooltip - Extended)
 {
 Cunning Hero, exceptional at dealing damages in all form.|n|cfff5962dCan Learn:|R Scattershot, Make it Rain, Deadeye, Assasinate|n|n|cffffcc00Attacks land and air units.|R
+}
+
+STRING 17139
+// Abilities: AEvi (Metamorphosis), Ubertip (Tooltip - Normal - Extended)
+{
+Transforms the Demon Hunter into a powerful Demon with a ranged attack. Has 900 bonus hit points, 65 bonus damage and lasts for 20 seconds.
 }
 
 STRING 17140
@@ -103024,6 +103102,12 @@ STRING 17198
 Summon Kalecgos
 }
 
+STRING 17199
+// Abilities: A10I (Demon Rage), Researchubertip (Tooltip - Learn - Extended)
+{
+Causes this unit to attack significantly faster, and move <A10I,DataA1,%>%, faster but take <A10I,DataC1,%>% more damage. |nLasts 3 seconds.|n|n|cffffcc00Level 1|r - <A10I,DataB1,%>% attack rate increase.|n|cffffcc00Level 2|r - <A10I,DataB2,%>% attack rate increase.|n|cffffcc00Level 3|r - <A10I,DataB3,%>% attack rate increase. |n|cffffcc00Level 4|r - <A10I,DataB4,%>% attack rate increase.
+}
+
 STRING 17200
 // Units: U001 (Master of the Cult of the Damned), Tip (Tooltip - Basic)
 {
@@ -103217,7 +103301,7 @@ N'raqi Arcanist
 }
 
 STRING 17232
-// Units: n0CD (Bloodkin), Casterupgradename (Caster Upgrade Names)
+// Units: n077 (Sorcerer), Casterupgradename (Caster Upgrade Names)
 {
 Initiate,Adept,Master
 }
@@ -103450,6 +103534,12 @@ STRING 17270
 Ny'alothan Stairs
 }
 
+STRING 17271
+// Abilities: A0DA (Summon Mur'gul), Researchubertip (Tooltip - Learn - Extended)
+{
+Summons Mur'gul Tidewarriors to attack the heroe's enemies. |nLasts 60 seconds.|r |n|n|cffffcc00Level 1|r - Summons 4 Mur'gul Tidewarriors |n|cffffcc00Level 2|r - Summons 6 Mur'gul Tidewarriors .|n|cffffcc00Level 3|r - Summons 8 Mur'gul Tidewarriors .|n|cffffcc00Level 4|r - Summons 10 Mur'gul Tidewarriors
+}
+
 STRING 17272
 // Units: E01D (N'raqi Arcanist), Revivetip (Tooltip - Revive)
 {
@@ -103466,6 +103556,12 @@ STRING 17274
 // Units: U02A (N'raqi Aberration), Awakentip (Tooltip - Awaken)
 {
 Revive
+}
+
+STRING 17275
+// Abilities: A0DA (Summon Mur'gul), Ubertip (Tooltip - Normal - Extended)
+{
+Summons a legion of 4 Mur'gul Tidewarriors to aid the hero in battle.|n|nLasts 60 seconds|n|cffffcc00Attacks land units.|r
 }
 
 STRING 17276
@@ -103640,12 +103736,6 @@ STRING 17304
 // Upgrades: Rorb (Reinforced Defenses), Hotkey (Hotkey)
 {
 F
-}
-
-STRING 17305
-// Upgrades: R02T (Well Spring), Ubertip (Tooltip - Extended)
-{
-Increases the amount of mana that can be stored in Moon Wells by <R02T,base1>, and their rate of mana regeneration by <R02T,base2,%>%.
 }
 
 STRING 17306
@@ -105581,12 +105671,6 @@ STRING 17627
 Learn White Wolf's Fury - [|cffffcc00Level %d|r]
 }
 
-STRING 17628
-// Abilities: A0SV (White Wolf's Fury), Researchubertip (Tooltip - Learn - Extended)
-{
-Causes this unit to attack significantly faster, and move <A10I,DataA1,%>%, faster but take <A10I,DataC1,%>% more damage. |nLasts 7 seconds.|n|n|cffffcc00Level 1|r - <A10I,DataB1,%>% attack rate increase.|n|cffffcc00Level 2|r - <A10I,DataB2,%>% attack rate increase.|n|cffffcc00Level 3|r - <A10I,DataB3,%>% attack rate increase. |n|cffffcc00Level 4|r - <A10I,DataB4,%>% attack rate increase.
-}
-
 STRING 17629
 // Abilities: A0SV (White Wolf's Fury), Tip (Tooltip - Normal)
 {
@@ -105693,6 +105777,12 @@ STRING 17646
 // Abilities: A0X1 (Flame Shield), Name (Name)
 {
 Flame Shield
+}
+
+STRING 17647
+// Abilities: A0DA (Summon Mur'gul), Ubertip (Tooltip - Normal - Extended)
+{
+Summons a legion of 6 Mur'gul Tidewarriors to aid the hero in battle.|n|nLasts 60 seconds|n|cffffcc00Attacks land units.|r
 }
 
 STRING 17648
@@ -106525,10 +106615,22 @@ STRING 17785
 (Draenei)
 }
 
+STRING 17786
+// Abilities: A0DA (Summon Mur'gul), Ubertip (Tooltip - Normal - Extended)
+{
+Summons a legion of 8 Mur'gul Tidewarriors to aid the hero in battle.|n|nLasts 60 seconds|n|cffffcc00Attacks land units.|r
+}
+
 STRING 17787
 // Units: u02H (Nether Ray), Tip (Tooltip - Basic)
 {
 Train Nether Ray
+}
+
+STRING 17788
+// Abilities: A0DA (Summon Mur'gul), Ubertip (Tooltip - Normal - Extended)
+{
+Summons a legion of 10 Mur'gul Tidewarriors to aid the hero in battle.|n|nLasts 60 seconds|n|cffffcc00Attacks land units.|r
 }
 
 STRING 17789
@@ -106957,6 +107059,12 @@ STRING 17859
 Revive Nobundo
 }
 
+STRING 17860
+// Buffs/Effects: B04G (), Bufftip (Tooltip)
+{
+Shadow Aura
+}
+
 STRING 17861
 // Units: E01J (High Shaman), Tip (Tooltip - Basic)
 {
@@ -107185,6 +107293,12 @@ STRING 17898
 Agile sharpshooters.|n|cfff5962dAbilities:|R Ensnare|n|cffffcc00Attacks land and air units.|n
 }
 
+STRING 17899
+// Buffs/Effects: B04G (), Buffubertip (Tooltip - Extended)
+{
+This unit is under the fear aura, it has reduced damage.
+}
+
 STRING 17900
 // Units: o05B (Defender), Name (Name)
 {
@@ -107213,6 +107327,12 @@ STRING 17904
 // Units: e01K (Polybolos), Ubertip (Tooltip - Extended)
 {
 Long-range percision siege weaponry.|n|n|cff99b4d1Can only build 3.|r|n|cffffcc00Attacks land units and trees.|r
+}
+
+STRING 17905
+// Buffs/Effects: B04S (), Bufftip (Tooltip)
+{
+Demon Rage
 }
 
 STRING 17906
@@ -107317,12 +107437,6 @@ STRING 17922
 Removes all buffs from units in a target area. |n|cffffcc00Deals 250 damage to summoned units.|r
 }
 
-STRING 17923
-// Units: Ewrd (Leader of the Watchers ), Ubertip (Tooltip - Extended)
-{
-Cunning Hero, adept at melee combat and slipping in and out of fights.|n|cfff5962dAbilities:|r Blink, Hide, Hunt Aura|n|cfff5962dCan learn:|R Fan of Knives, Avatar of Vengeance, Battle Experience, Take Vengeance |n|n|cffffcc00Attacks land units.|R
-}
-
 STRING 17924
 // Abilities: A0TL (Summon Earth Elemental), Name (Name)
 {
@@ -107423,6 +107537,12 @@ STRING 17940
 // Units: n06P (Sentinel Enclave), Ubertip (Tooltip - Extended)
 {
 Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Wisp, Priestess of the Moon|n|cfff5962dAbilities:|R Ancestral Spirits|n|cfff5962dResearches:|R Elune's Blessing, Full Scale Escalation
+}
+
+STRING 17941
+// Buffs/Effects: B04S (), Buffubertip (Tooltip - Extended)
+{
+This unit under a Demon Rage; it will deal more damage, but also take more damage from attacks.
 }
 
 STRING 17942
@@ -113434,7 +113554,7 @@ Deactivate Mana Shield
 }
 
 STRING 19155
-// Abilities: A0YZ (Hunt Aura), Tip (Tooltip - Normal)
+// Abilities: A0YZ (Joy of the Hunt), Tip (Tooltip - Normal)
 {
 Conveyance Aura - [|cffffcc00Level 3|r]
 }
@@ -113950,37 +114070,31 @@ Coilfang Summoner
 }
 
 STRING 19264
-// Abilities: A0YZ (Hunt Aura), Tip (Tooltip - Normal)
+// Abilities: A0YZ (Joy of the Hunt), Tip (Tooltip - Normal)
 {
 Conveyance Aura - [|cffffcc00Level 4|r]
 }
 
-STRING 19265
-// Abilities: A0YZ (Hunt Aura), Ubertip (Tooltip - Normal - Extended)
-{
-Increases nearby friendly units' movement speed by 15%.
-}
-
 STRING 19266
-// Abilities: A0YZ (Hunt Aura), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A0YZ (Joy of the Hunt), Ubertip (Tooltip - Normal - Extended)
 {
 Increases nearby friendly units' movement speed by 20%.
 }
 
 STRING 19267
-// Abilities: A0Z5 (Hunt Aura), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A0Z5 (Driven by Vengance), Ubertip (Tooltip - Normal - Extended)
 {
 Increases nearby friendly units' movement speed by 25%.
 }
 
 STRING 19268
-// Abilities: A0Z5 (Hunt Aura), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A0Z5 (Driven by Vengance), Ubertip (Tooltip - Normal - Extended)
 {
 Increases nearby friendly units' movement speed by 30%.
 }
 
 STRING 19269
-// Abilities: A0Z5 (Hunt Aura), EditorSuffix (Editor Suffix)
+// Abilities: A0Z5 (Driven by Vengance), EditorSuffix (Editor Suffix)
 {
 (sentinel) 2
 }
@@ -113998,31 +114112,25 @@ Royal Temple
 }
 
 STRING 19274
-// Abilities: A0Z5 (Hunt Aura), Tip (Tooltip - Normal)
+// Abilities: A0Z5 (Driven by Vengance), Tip (Tooltip - Normal)
 {
 Conveyance Aura - [|cffffcc00Level 2|r]
 }
 
 STRING 19275
-// Abilities: A0Z5 (Hunt Aura), Tip (Tooltip - Normal)
+// Abilities: A0Z5 (Driven by Vengance), Tip (Tooltip - Normal)
 {
 Conveyance Aura - [|cffffcc00Level 3|r]
 }
 
 STRING 19276
-// Abilities: A0Z5 (Hunt Aura), Tip (Tooltip - Normal)
+// Abilities: A0Z5 (Driven by Vengance), Tip (Tooltip - Normal)
 {
 Conveyance Aura - [|cffffcc00Level 4|r]
 }
 
-STRING 19277
-// Abilities: A0Z5 (Hunt Aura), Ubertip (Tooltip - Normal - Extended)
-{
-Increases nearby friendly units' movement speed by 15%.
-}
-
 STRING 19278
-// Abilities: A0Z5 (Hunt Aura), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A0Z5 (Driven by Vengance), Ubertip (Tooltip - Normal - Extended)
 {
 Increases nearby friendly units' movement speed by 20%.
 }
@@ -114116,30 +114224,6 @@ STRING 19298
 // Units: h0AJ (Gnoll Overseer), Ubertip (Tooltip - Extended)
 {
 Powerful Gnoll Leader.|n|cfff5962dAbilities:|R Earth Healing, Taunt, Bash|n|cff99b4d1Can only train 4.|r|n|cffffcc00Attacks land units.|r
-}
-
-STRING 19300
-// Abilities: A0Z5 (Hunt Aura), Name (Name)
-{
-Hunt Aura
-}
-
-STRING 19301
-// Abilities: A0Z5 (Hunt Aura), Tip (Tooltip - Normal)
-{
-Hunt Aura
-}
-
-STRING 19302
-// Buffs/Effects: B0AG (), Bufftip (Tooltip)
-{
-Hunt Aura
-}
-
-STRING 19303
-// Buffs/Effects: B0AH (), Bufftip (Tooltip)
-{
-Hunt Aura
 }
 
 STRING 19304

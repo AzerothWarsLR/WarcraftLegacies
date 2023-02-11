@@ -54,7 +54,7 @@ namespace WarcraftLegacies.Source.Quests.Naga
     /// <inheritdoc/>
     /// </summary>
     protected override string RewardDescription =>
-      $"Gain control of the Draenei camp in Outland, allows construction of the Draenei Hut and Akama can be trained from the {GetObjectName(Constants.UNIT_NNAD_ALTAR_OF_THE_BETRAYER_ILLIDARI_ALTAR)}";
+      $"Gain control of the Draenei camp in Outland, allows construction of the Ashtongue Lair and Akama can be trained from the {GetObjectName(Constants.UNIT_NNAD_ALTAR_OF_THE_BETRAYER_ILLIDARI_ALTAR)}";
 
 
     /// <summary>
