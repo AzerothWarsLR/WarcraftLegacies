@@ -91,7 +91,7 @@ namespace MacroTools.FactionSystem
           if (research == null || !research.IncompatibleWith.Any(x => faction.GetObjectLevel(x.ResearchTypeId) > 0))
           {
             faction.SetObjectLevel(researchId, GetPlayerTechCount(GetTriggerPlayer(), researchId, true));
-            if (research == null) 
+            if (research == null)
               return;
             research.OnResearch(GetTriggerPlayer());
             foreach (var otherResearch in research.IncompatibleWith)
@@ -120,7 +120,7 @@ namespace MacroTools.FactionSystem
     /// will be represented by this unit type.
     /// </summary>
     public int? ControlPointDefenderUnitTypeId { get; init; }
-    
+
     public int StartingGold { get; set; }
 
     public int StartingLumber { get; set; }
@@ -255,7 +255,8 @@ namespace MacroTools.FactionSystem
       {
         if (_undefeatedResearch != 0) return;
         _undefeatedResearch = value;
-        foreach (var player in WCSharp.Shared.Util.EnumeratePlayers()) SetPlayerTechResearched(player, _undefeatedResearch, 1);
+        foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
+          SetPlayerTechResearched(player, _undefeatedResearch, 1);
       }
       get => _undefeatedResearch;
     }
@@ -269,7 +270,8 @@ namespace MacroTools.FactionSystem
       {
         if (_defeatedResearch != 0) return;
         _defeatedResearch = value;
-        foreach (var player in WCSharp.Shared.Util.EnumeratePlayers()) SetPlayerTechResearched(player, _defeatedResearch, 0);
+        foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
+          SetPlayerTechResearched(player, _defeatedResearch, 0);
       }
     }
 
@@ -281,7 +283,7 @@ namespace MacroTools.FactionSystem
       _icon = icon;
       FoodMaximum = FoodMaximumDefault;
     }
-    
+
     /// <summary>
     ///   Fires when the <see cref="Faction" /> joins a new <see cref="Team" />.
     /// </summary>
@@ -296,17 +298,17 @@ namespace MacroTools.FactionSystem
     /// Fired after the <see cref="Faction"/> leaves the game.
     /// </summary>
     public event EventHandler<Faction>? LeftGame;
-    
+
     /// <summary>
     /// Fired when the <see cref="Faction"/>'s has changed.
     /// </summary>
     public event EventHandler<Faction>? IconChanged;
-    
+
     /// <summary>
     /// Fired after the <see cref="Faction"/>'s status has changed.
     /// </summary>
     public event EventHandler<Faction>? StatusChanged;
-    
+
     /// <summary>
     ///   Returns all unit types which this <see cref="Faction" /> can only train a limited number of.
     /// </summary>
@@ -323,7 +325,7 @@ namespace MacroTools.FactionSystem
     {
       return _objectLimits[whichObject];
     }
-    
+
     /// <summary>
     ///   Registers a gold mine as belonging to this <see cref="Faction" />.
     ///   When the Faction leaves the game, all of their goldmines are removed.
@@ -393,7 +395,7 @@ namespace MacroTools.FactionSystem
       FactionManager.Register(newTeam);
       Player.SetTeam(newTeam);
     }
-    
+
     public QuestData AddQuest(QuestData questData)
     {
       questData.Add(this);
@@ -404,7 +406,7 @@ namespace MacroTools.FactionSystem
       questData.ProgressChanged += OnQuestProgressChanged;
       return questData;
     }
-    
+
     public int GetObjectLevel(int obj) => _objectLevels.ContainsKey(obj) ? _objectLevels[obj] : 0;
 
     /// <summary>
@@ -415,7 +417,7 @@ namespace MacroTools.FactionSystem
       _objectLevels[obj] = level;
       Player?.SetObjectLevel(obj, level);
     }
-    
+
     /// <summary>
     ///   Changes the ability's availability by the provided amount.
     ///   If the availability is higher than 0, the <see cref="player" /> with this <see cref="Faction" />
@@ -449,7 +451,7 @@ namespace MacroTools.FactionSystem
       if (_objectLimits[objectId] == 0)
         _objectLimits.Remove(objectId);
     }
-    
+
     /// <summary>
     ///   Sets the limit of the given object that the <see cref="Faction" /> can train, build, or research.
     /// </summary>
@@ -499,7 +501,7 @@ namespace MacroTools.FactionSystem
     {
       foreach (var power in _powers) yield return power;
     }
-    
+
     /// <summary>
     ///   Attempts to retrieve a <see cref="QuestData" /> belonging to this <see cref="Faction" /> with the given title.
     /// </summary>
@@ -518,13 +520,13 @@ namespace MacroTools.FactionSystem
         throw new Exception($"{Name} does not have a {nameof(QuestData)} of type {type.Name}");
       return quest;
     }
-    
+
     /// <summary>
     /// Returns all <see cref="QuestData"/>s the <see cref="Faction"/> can complete.
     /// </summary>
     /// <returns></returns>
     public List<QuestData> GetAllQuests() => _questsByName.Values.ToList();
-    
+
     private void ApplyPowers()
     {
       if (Player == null) return;
@@ -610,7 +612,8 @@ namespace MacroTools.FactionSystem
         var allyHeroes = CreateGroup().EnumUnitsOfPlayer(ally).EmptyToList()
           .FindAll(unit => IsUnitType(unit, UNIT_TYPE_HERO));
         foreach (var hero in allyHeroes)
-          AddHeroXP(hero, R2I(_xp / (Player.GetTeam().Size - 1) / allyHeroes.Count * ExperienceTransferMultiplier), true);
+          AddHeroXP(hero, R2I(_xp / (Player.GetTeam().Size - 1) / allyHeroes.Count * ExperienceTransferMultiplier),
+            true);
       }
 
       _xp = 0;
@@ -641,31 +644,33 @@ namespace MacroTools.FactionSystem
           RemoveUnit(unit);
           continue;
         }
+
         if (IsUnitType(unit, UNIT_TYPE_HERO))
         {
           Player?.AddGold(HeroCost);
           _xp += GetHeroXP(unit);
-          if (LegendaryHeroManager.GetFromUnit(unit) != null) 
+          if (LegendaryHeroManager.GetFromUnit(unit) != null)
             _xp -= LegendaryHeroManager.GetFromUnit(unit)!.StartingXp;
-          unit.DropAllItems();
-          RemoveUnit(unit);
+          unit
+            .DropAllItems()
+            .Remove();
           continue;
         }
-        if (!IsUnitType(unit, UNIT_TYPE_STRUCTURE))
+
+        if (!IsUnitType(unit, UNIT_TYPE_STRUCTURE) && !loopUnitType.Meta)
         {
           Gold += loopUnitType.GoldCost * RefundMultiplier;
           Lumber += loopUnitType.LumberCost * RefundMultiplier;
-          unit.DropAllItems();
-          RemoveUnit(unit);
+          unit
+            .DropAllItems()
+            .Remove();
           continue;
         }
-        if (loopUnitType.Meta == false)
-        {
-          unit.SetOwner(
-            Player?.GetTeam()?.Size > 1
-              ? playersToDistributeTo[GetRandomInt(0, playersToDistributeTo.Count-1)]
-              : Player(GetBJPlayerNeutralVictim()), false);
-        }
+
+        unit.SetOwner(
+          Player?.GetTeam()?.Size > 1
+            ? playersToDistributeTo[GetRandomInt(0, playersToDistributeTo.Count - 1)]
+            : Player(GetBJPlayerNeutralVictim()), false);
       }
     }
 
@@ -681,7 +686,7 @@ namespace MacroTools.FactionSystem
         .Where(x => x.ScoreStatus == ScoreStatus.Undefeated && x.Player != Player && Player != null)
         .Select(x => x.Player)
         .ToList();
-      
+
       if (eligiblePlayers != null && eligiblePlayers.Any() && GameTime.GetGameTime() > 60)
       {
         DistributeUnits(eligiblePlayers);
