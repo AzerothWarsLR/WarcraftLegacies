@@ -110,7 +110,6 @@ The Alliance is gathering outside the Dark Portal to stop you, so prepare to for
       FelHorde.ModAbilityAvailability(Constants.ABILITY_A0GM_FOR_THE_HORDE_PINK_GREY_MAIN_BUILDINGS, -1);
 
       FelHorde.ModObjectLimit(FourCC("R090"), Faction.UNLIMITED); //Blackrock
-      FelHorde.ModObjectLimit(FourCC("R02C"), Faction.UNLIMITED); //Dark Portal
 
       FelHorde.AddGoldMine(preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-2735, -30242)));
       

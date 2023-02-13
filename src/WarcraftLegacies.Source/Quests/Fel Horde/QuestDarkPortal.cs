@@ -72,6 +72,10 @@ namespace WarcraftLegacies.Source.Quests.Fel_Horde
     /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction) => OpenPortal();
 
+    /// <inheritdoc />
+    protected override void OnAdd(Faction whichFaction) =>
+      whichFaction.ModObjectLimit(Constants.UPGRADE_R02C_OPEN_THE_DARK_PORTAL, Faction.UNLIMITED);
+
     private void OpenPortal()
     {
       _innerWaygate1
