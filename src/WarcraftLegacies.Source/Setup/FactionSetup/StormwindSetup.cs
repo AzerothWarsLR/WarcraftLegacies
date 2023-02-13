@@ -63,7 +63,7 @@ Make sure to communicate with your Dwarven and Kul'tiran allies, as they will be
       Stormwind.ModObjectLimit(FourCC("h05F"), 6); //Stormwind Champion
       Stormwind.ModObjectLimit(FourCC("n05L"), 6); //Conjurer
       Stormwind.ModObjectLimit(FourCC("h00J"), Faction.UNLIMITED); //Clergyman
-      Stormwind.ModObjectLimit(FourCC("n06N"), 6); //Gyrobomber
+      Stormwind.ModObjectLimit(Constants.UNIT_N06N_GUNSHIP_STORMWIND, 6);
       Stormwind.ModObjectLimit(FourCC("n093"), Faction.UNLIMITED); //Chaplain
 
       //Ships
