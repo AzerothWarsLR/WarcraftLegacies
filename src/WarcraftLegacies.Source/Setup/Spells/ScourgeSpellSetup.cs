@@ -29,7 +29,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
       Plagueling.Setup(); //Todo: convert this into being a proper passive ability
 
 
-      var massUnholyFrenzy = new MassAnySpell(Constants.ABILITY_A0UD_MASS_UNHOLY_FRENZY_SCOURGE_OBSIDIAN_STATUE)
+      var massUnholyFrenzy = new MassAnySpell(Constants.ABILITY_A02W_MASS_UNHOLY_FRENZY_SCOURGE)
       {
         DummyAbilityId = Constants.ABILITY_ACUF_UNHOLY_FRENZY_DUMMY,
         DummyAbilityOrderString = "unholyfrenzy",

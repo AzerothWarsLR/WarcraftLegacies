@@ -9,7 +9,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup)
     {
       var questHellfireCitadel = FelHorde.AddQuest(new QuestHellfireCitadel(Regions.HellfireUnlock));
-      FelHorde.AddQuest(new QuestRebuildBlackTemple(Regions.BlackTempleBase));
+      FelHorde.AddQuest(new QuestRuinsofShadowmoon(Regions.ShadowmoonBaseUnlock));
       FelHorde.AddQuest(new QuestDarkPortal(
         preplacedUnitSystem.GetUnit(Constants.UNIT_N036_DARK_PORTAL_WAYGATE, Regions.Dark_Portal_Entrance_1.Center),
         preplacedUnitSystem.GetUnit(Constants.UNIT_N036_DARK_PORTAL_WAYGATE, Regions.Dark_Portal_Entrance_2.Center),
