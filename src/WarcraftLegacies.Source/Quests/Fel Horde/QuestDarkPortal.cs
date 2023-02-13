@@ -1,6 +1,8 @@
 ﻿using MacroTools.Extensions;
 using MacroTools.FactionSystem;
+using MacroTools.ObjectiveSystem.Objectives.MetaBased;
 using MacroTools.ObjectiveSystem.Objectives.TimeBased;
+using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
 using WarcraftLegacies.Source.Setup.FactionSetup;
 using static War3Api.Common;
@@ -37,7 +39,10 @@ namespace WarcraftLegacies.Source.Quests.Fel_Horde
       _outerWaygate1 = outerWaygate1.Show(false);
       _outerWaygate2 = outerWaygate2.Show(false);
       _outerWaygate3 = outerWaygate3.Show(false);
-      AddObjective(new ObjectiveTime(420));
+      AddObjective(new ObjectiveEitherOf(
+        new ObjectiveResearch(Constants.UPGRADE_R02C_OPEN_THE_DARK_PORTAL, Constants.UNIT_O008_HELLFIRE_CITADEL_FEL_HORDE),
+        new ObjectiveTime(540)));
+      AddObjective(new ObjectiveTime(360));
       Global = true;
     }
 
