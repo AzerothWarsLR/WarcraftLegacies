@@ -15,7 +15,8 @@ namespace WarcraftLegacies.Source.Setup
       UnallyCommand.Setup();
       UninviteCommand.Setup();
       commandManager.Register(new Limited());
-      commandManager.Register(new Clear());
+      commandManager.Register(new Clear("clear"));
+      commandManager.Register(new Clear("c"));
       commandManager.Register(new Cam());
     }
   }
