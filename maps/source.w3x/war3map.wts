@@ -74241,6 +74241,12 @@ STRING 12368
 S
 }
 
+STRING 12369
+// Units: uslh (Slaughterhouse), Ubertip (Tooltip - Extended)
+{
+Gore spattered fleshworks of the Scourge.|n|cfff5962dTrains:|R Abomination, Meat Wagon, Plague Titan|n|cfff5962dResearches:|R Revenants/Epidemic, Exhume Corpses, Flesh Shaping
+}
+
 STRING 12370
 // Units: uobs (Obsidian Statue), Ubertip (Tooltip - Extended)
 {
@@ -74353,12 +74359,6 @@ STRING 12388
 // Abilities: A056 (Call Royal Guard), Hotkey (Hotkey - Normal)
 {
 W
-}
-
-STRING 12389
-// Upgrades: R02C (Defend), Hotkey (Hotkey)
-{
-S
 }
 
 STRING 12390
@@ -75847,12 +75847,6 @@ STRING 12637
 // Abilities: A0O1 (Open the Gates of Ahn'Qiraj), Name (Name)
 {
 Open the Gates of Ahn'Qiraj
-}
-
-STRING 12638
-// Units: uslh (Slaughterhouse), Ubertip (Tooltip - Extended)
-{
-Gore spattered fleshworks of the Scourge.|n|cfff5962dTrains:|R Abomination, Meat Wagon, Obsidian Statue, Plague Titan|n|cfff5962dResearches:|R Revenants/Epidemic, Exhume Corpses, Flesh Shaping
 }
 
 STRING 12639
