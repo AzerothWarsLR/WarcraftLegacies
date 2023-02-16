@@ -1,6 +1,9 @@
-﻿using System.Linq;
+﻿using System.Collections.Generic;
+using System.Linq;
 using MacroTools.Extensions;
+using MacroTools.FactionSystem;
 using MacroTools.PassiveAbilitySystem;
+using WCSharp.Shared.Data;
 using static War3Api.Common;
 
 namespace MacroTools.PassiveAbilities
@@ -11,15 +14,18 @@ namespace MacroTools.PassiveAbilities
   public sealed class PersistentSoul : PassiveAbility
   {
     private readonly int _abilityTypeId;
+    private readonly List<int> _unaffectedUnitIds;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="PersistentSoul"/> class.
     /// </summary>
     /// <param name="unitTypeId"><inheritdoc /></param>
     /// <param name="abilityTypeId">The ability ID that determines the effect's level.</param>
-    public PersistentSoul(int unitTypeId, int abilityTypeId) : base(unitTypeId)
+    /// <param name="unaffectedUnitIds">The unit ids not affected by the ability. If empty, all units are affected.</param>
+    public PersistentSoul(int unitTypeId, int abilityTypeId, List<int> unaffectedUnitIds) : base(unitTypeId)
     {
       _abilityTypeId = abilityTypeId;
+      _unaffectedUnitIds = unaffectedUnitIds;
     }
     
     /// <summary>
@@ -48,6 +54,7 @@ namespace MacroTools.PassiveAbilities
       var caster = GetTriggerUnit();
       if (IsUnitType(caster, UNIT_TYPE_SUMMONED))
         return;
+
       foreach (var unit in CreateGroup().EnumUnitsInRange(caster.GetPosition(), Radius)
                  .EmptyToList()
                  .Where(x => IsReanimationCandidate(caster, x))
@@ -58,8 +65,9 @@ namespace MacroTools.PassiveAbilities
       }
     }
 
-    private static bool IsReanimationCandidate(unit caster, unit target)
+    private bool IsReanimationCandidate(unit caster, unit target)
     {
+   
       return !UnitAlive(target) 
              && !IsUnitType(target, UNIT_TYPE_MECHANICAL) 
              && !IsUnitType(target, UNIT_TYPE_STRUCTURE) 
@@ -67,7 +75,9 @@ namespace MacroTools.PassiveAbilities
              && !IsUnitType(target, UNIT_TYPE_SUMMONED)
              && !IsUnitType(target, UNIT_TYPE_FLYING)
              && !IsUnitIllusion(target)
-             && caster != target;
+             && caster != target
+             && !_unaffectedUnitIds.Contains(target.GetTypeId());
+
     }
     
     private void Reanimate(player castingPlayer, unit whichUnit)
@@ -85,7 +95,7 @@ namespace MacroTools.PassiveAbilities
         .SetExplodeOnDeath(true)
         .AddType(UNIT_TYPE_UNDEAD)
         .AddType(UNIT_TYPE_SUMMONED);
-      
+       
       whichUnit.Remove();
       
       reanimatedUnit.SetPosition(whichUnitPosition);

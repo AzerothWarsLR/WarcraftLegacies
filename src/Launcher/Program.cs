@@ -12,7 +12,6 @@ using War3Api.Object.Enums;
 using War3Net.Build;
 using War3Net.Build.Extensions;
 using War3Net.Build.Info;
-using War3Net.Build.Widget;
 using War3Net.IO.Mpq;
 using WCSharp.ConstantGenerator;
 using CoreSystemProvider = CSharpLua.CoreSystem.CoreSystemProvider;
