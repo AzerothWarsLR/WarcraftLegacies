@@ -14,18 +14,17 @@ namespace MacroTools.PassiveAbilities
   public sealed class PersistentSoul : PassiveAbility
   {
     private readonly int _abilityTypeId;
-    private readonly List<int> _unaffectedUnitIds;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="PersistentSoul"/> class.
     /// </summary>
     /// <param name="unitTypeId"><inheritdoc /></param>
     /// <param name="abilityTypeId">The ability ID that determines the effect's level.</param>
-    /// <param name="unaffectedUnitIds">The unit ids not affected by the ability. If empty, all units are affected.</param>
-    public PersistentSoul(int unitTypeId, int abilityTypeId, List<int> unaffectedUnitIds) : base(unitTypeId)
+    /// <param name="ignoredAbilityId">Units with this ability are not affected by <see cref="PersistentSoul"/></param>
+    public PersistentSoul(int unitTypeId, int abilityTypeId, int ignoredAbilityId = 0) : base(unitTypeId)
     {
       _abilityTypeId = abilityTypeId;
-      _unaffectedUnitIds = unaffectedUnitIds;
+      IgnoredAbilityId = ignoredAbilityId;
     }
     
     /// <summary>
@@ -47,7 +46,9 @@ namespace MacroTools.PassiveAbilities
     /// How far away corpses can be to be a candidate for reanimation.
     /// </summary>
     public float Radius { get; init; }
-    
+
+    private int IgnoredAbilityId { get; }
+
     /// <inheritdoc/>
     public override void OnDeath()
     {
@@ -67,16 +68,16 @@ namespace MacroTools.PassiveAbilities
 
     private bool IsReanimationCandidate(unit caster, unit target)
     {
-   
-      return !UnitAlive(target) 
-             && !IsUnitType(target, UNIT_TYPE_MECHANICAL) 
-             && !IsUnitType(target, UNIT_TYPE_STRUCTURE) 
-             && !IsUnitType(target, UNIT_TYPE_HERO) 
+
+      return !UnitAlive(target)
+             && !IsUnitType(target, UNIT_TYPE_MECHANICAL)
+             && !IsUnitType(target, UNIT_TYPE_STRUCTURE)
+             && !IsUnitType(target, UNIT_TYPE_HERO)
              && !IsUnitType(target, UNIT_TYPE_SUMMONED)
              && !IsUnitType(target, UNIT_TYPE_FLYING)
              && !IsUnitIllusion(target)
              && caster != target
-             && !_unaffectedUnitIds.Contains(target.GetTypeId());
+             && BlzGetUnitAbility(target, IgnoredAbilityId) == null;
 
     }
     
