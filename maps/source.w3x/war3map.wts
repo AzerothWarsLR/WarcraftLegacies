@@ -51837,12 +51837,6 @@ STRING 8636
 (Purple - Alexandros)
 }
 
-STRING 8637
-// Abilities: A0MQ (Pulverize), Tip (Tooltip - Normal)
-{
-Pulverize - [|cffffcc00Level 1|r]
-}
-
 STRING 8638
 // Abilities: A0MQ (Pulverize), Tip (Tooltip - Normal)
 {
@@ -51862,7 +51856,7 @@ Gives a 25% chance that an attack will deal 50 damage to nearby units.
 }
 
 STRING 8641
-// Abilities: A0UU (Judgement), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A0MQ (Pulverize), Ubertip (Tooltip - Normal - Extended)
 {
 Gives a 25% chance that an attack will deal 75 damage to nearby units.
 }
@@ -52803,6 +52797,12 @@ STRING 8797
 Q
 }
 
+STRING 8798
+// Abilities: A0KC (Incinerate), Ubertip (Tooltip - Normal - Extended)
+{
+Each attack made is enhanced with living flames that cling to the target. These flames add <A0KC,DataA2> damage on the first attack, twice as much on the second attack, three times as much on the third attack, etc.|n|nIf a unit dies while under this effect, it is incinerated, causing up to <A0KC,DataB2> damage to all nearby hostile units.
+}
+
 STRING 8799
 // Abilities: A0WH (Verdant Spheres), Unhotkey (Hotkey - Turn Off)
 {
@@ -52813,6 +52813,18 @@ STRING 8800
 // Items: I012 (Ashbringer), Name (Name)
 {
 Ashbringer
+}
+
+STRING 8801
+// Abilities: A0UU (Judgement), Ubertip (Tooltip - Normal - Extended)
+{
+Gives a 25% chance that an attack will deal 75 damage to nearby units.
+}
+
+STRING 8802
+// Abilities: A0KC (Incinerate), Tip (Tooltip - Normal)
+{
+Incinerate
 }
 
 STRING 8803
@@ -77818,12 +77830,6 @@ STRING 12975
 Gives a <A0MQ,DataA3>% chance that an attack will deal <A0MQ,DataB3> damage to nearby units.
 }
 
-STRING 12976
-// Abilities: A0MQ (Pulverize), Ubertip (Tooltip - Normal - Extended)
-{
-Gives a <A0MQ,DataA1>% chance that an attack will deal <A0MQ,DataB1> damage to nearby units.
-}
-
 STRING 12977
 // Abilities: A006 (Rune of Wrath), EditorSuffix (Editor Suffix)
 {
@@ -81788,12 +81794,6 @@ STRING 13638
 // Abilities: A0KC (Incinerate), Ubertip (Tooltip - Normal - Extended)
 {
 Each attack made is enhanced with living flames that cling to the target. These flames add <A0KC,DataA3> damage on the first attack, twice as much on the second attack, three times as much on the third attack, etc.|n|nIf a unit dies while under this effect, it is incinerated, causing up to <A0KC,DataB3> damage to all nearby hostile units.
-}
-
-STRING 13639
-// Abilities: A0KC (Incinerate), Ubertip (Tooltip - Normal - Extended)
-{
-Each attack made is enhanced with living flames that cling to the target. These flames add <A0KC,DataA1> damage on the first attack, twice as much on the second attack, three times as much on the third attack, etc.|n|nIf a unit dies while under this effect, it is incinerated, causing up to <A0KC,DataB1> damage to all nearby hostile units.
 }
 
 STRING 13640
