@@ -32,6 +32,7 @@ namespace WarcraftLegacies.Source.Setup
       {
         StartingMaxHitPoints = 1400,
         HostileStartingCurrentHitPoints = 1000,
+        RegenerationAbility = Constants.ABILITY_A0UT_CP_LIFE_REGEN,
         IncreaseControlLevelAbilityTypeId = Constants.ABILITY_A0A8_FORTIFY_CONTROL_POINTS_SHARED,
         ControlLevelSettings = new ControlLevelSettings
         {

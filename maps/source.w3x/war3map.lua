@@ -327,6 +327,7 @@ gg_rct_IllidariUnlockSA = nil
 gg_rct_BootyBayQuest = nil
 gg_rct_KaliRock8 = nil
 gg_rct_ShadowmoonBaseUnlock = nil
+gg_rct_MaelstromChannel = nil
 gg_snd_ArcaneObservatoryWhat1 = nil
 gg_snd_ArrangedTeamInvitation = nil
 gg_snd_ClanInvitation = nil
@@ -515,7 +516,6 @@ gg_snd_DoorCloseRemix = nil
 gg_snd_DoorOpenRemix = nil
 gg_snd_NuclearLaunchDetected = nil
 gg_snd_IllidansTheme = ""
-gg_rct_MaelstromChannel = nil
 function InitGlobals()
 end
 
@@ -3551,8 +3551,6 @@ u = BlzCreateUnitWithSkin(p, FourCC("n0BG"), 22848.0, -30784.0, 270.000, FourCC(
 u = BlzCreateUnitWithSkin(p, FourCC("ncnt"), -20192.0, -4576.0, 270.000, FourCC("ncnt"))
 u = BlzCreateUnitWithSkin(p, FourCC("n01Y"), -18496.0, -3776.0, 270.000, FourCC("n01Y"))
 u = BlzCreateUnitWithSkin(p, FourCC("owtw"), 15808.0, -17536.0, 270.000, FourCC("owtw"))
-u = BlzCreateUnitWithSkin(p, FourCC("e01W"), -2592.0, 8800.0, 270.000, FourCC("e01W"))
-SetUnitColor(u, ConvertPlayerColor(12))
 u = BlzCreateUnitWithSkin(p, FourCC("n02R"), -320.0, 20288.0, 270.000, FourCC("n02R"))
 u = BlzCreateUnitWithSkin(p, FourCC("n027"), -16640.0, -9664.0, 270.000, FourCC("n027"))
 u = BlzCreateUnitWithSkin(p, FourCC("n02E"), -13696.0, 11584.0, 270.000, FourCC("n02E"))
@@ -6438,6 +6436,8 @@ u = BlzCreateUnitWithSkin(p, FourCC("h01H"), 20640.0, 18464.0, 270.000, FourCC("
 u = BlzCreateUnitWithSkin(p, FourCC("obar"), -7104.0, -5568.0, 270.000, FourCC("obar"))
 u = BlzCreateUnitWithSkin(p, FourCC("ngol"), 4608.0, -13056.0, 270.000, FourCC("ngol"))
 SetResourceAmount(u, 1000)
+u = BlzCreateUnitWithSkin(p, FourCC("e01W"), -2592.0, 8800.0, 270.000, FourCC("e01W"))
+SetUnitColor(u, ConvertPlayerColor(12))
 u = BlzCreateUnitWithSkin(p, FourCC("npgf"), 1344.0, -27072.0, 270.000, FourCC("npgf"))
 u = BlzCreateUnitWithSkin(p, FourCC("osld"), -15680.0, -3520.0, 270.000, FourCC("osld"))
 u = BlzCreateUnitWithSkin(p, FourCC("hshy"), 14240.0, 13536.0, 270.000, FourCC("hshy"))
@@ -8025,7 +8025,7 @@ gg_rct_ShadowfangUnlock = Rect(5440.0, 3104.0, 6592.0, 4768.0)
 gg_rct_TrollAttackSpawn = Rect(20928.0, 12224.0, 21248.0, 12480.0)
 gg_rct_TrollTarget = Rect(17088.0, 12480.0, 17120.0, 12512.0)
 gg_rct_KilsorrowUnlock = Rect(-4224.0, -31904.0, -2752.0, -30752.0)
-gg_rct_HellfireUnlock = Rect(-128.0, -27488.0, 2624.0, -25312.0)
+gg_rct_HellfireUnlock = Rect(-128.0, -27488.0, 2368.0, -24736.0)
 gg_rct_ThelUnlock = Rect(14432.0, -6752.0, 15648.0, -4768.0)
 gg_rct_KulAttack = Rect(3776.0, -11136.0, 4096.0, -10912.0)
 gg_rct_KulTarget = Rect(3904.0, -13440.0, 3936.0, -13408.0)
