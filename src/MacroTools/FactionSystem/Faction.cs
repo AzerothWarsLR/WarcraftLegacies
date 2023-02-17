@@ -678,7 +678,7 @@ namespace MacroTools.FactionSystem
     ///   This should get used any time a player exits the game without being defeated;
     ///   IE they left, went afk, became an observer, or triggered an event that causes this.
     /// </summary>
-    private void Leave()
+    public void Leave()
     {
       var eligiblePlayers = Player?
         .GetTeam()?

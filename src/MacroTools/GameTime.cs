@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using static War3Api.Common;
 
 namespace MacroTools
@@ -25,7 +25,10 @@ namespace MacroTools
     /// </summary>
     public static event EventHandler? TurnEnded;
 
-    //Returns the number of seconds that have elapsed since the start of the game
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <returns>The number of seconds that have elapsed since the start of the game</returns>
     public static float GetGameTime()
     {
       return _currentTime;
