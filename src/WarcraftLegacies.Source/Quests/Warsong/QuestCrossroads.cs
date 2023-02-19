@@ -25,16 +25,10 @@ namespace WarcraftLegacies.Source.Quests.Warsong
       AddObjective(
         new ObjectiveUnitIsDead(preplacedUnitSystem.GetUnit(FourCC("nrzm"), rescueRect.Center))); //Razorman Medicine Man
       AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N01T_NORTHERN_BARRENS_15GOLD_MIN)));
-      AddObjective(new ObjectiveExpire(1460));
+      AddObjective(new ObjectiveExpire(1460, Title));
       AddObjective(new ObjectiveSelfExists());
       Required = true;
-
-      foreach (var unit in CreateGroup().EnumUnitsInRect(rescueRect).EmptyToList())
-        if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))
-        {
-          SetUnitInvulnerable(unit, true);
-          _rescueUnits.Add(unit);
-        }
+      _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
     }
 
     /// <inheritdoc/>

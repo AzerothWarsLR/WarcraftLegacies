@@ -19,7 +19,7 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
       "ReplaceableTextures\\CommandButtons\\BTNStormwindGuardTower.blp")
     {
       AddObjective(new ObjectiveLegendInRect(varian, Regions.NethergardeUnlock, "Nethergarde"));
-      AddObjective(new ObjectiveExpire(1440));
+      AddObjective(new ObjectiveExpire(1440, Title));
       AddObjective(new ObjectiveSelfExists());
       _rescueUnits = Regions.NethergardeUnlock.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
     }

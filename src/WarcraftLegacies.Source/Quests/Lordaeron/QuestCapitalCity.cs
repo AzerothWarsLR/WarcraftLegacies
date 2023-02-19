@@ -36,7 +36,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
       AddObjective(new ObjectiveControlCapital(caerDarrow, false));
       foreach (var prequisite in prequisites)
         AddObjective(new ObjectiveCompleteQuest(prequisite));
-      AddObjective(new ObjectiveExpire(1472));
+      AddObjective(new ObjectiveExpire(1472, Title));
       AddObjective(new ObjectiveSelfExists());
       ResearchId = Constants.UPGRADE_R04Y_QUEST_COMPLETED_HEARTHLANDS;
       _unitToMakeInvulnerable = unitToMakeInvulnerable;

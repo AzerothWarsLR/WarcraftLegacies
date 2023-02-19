@@ -30,7 +30,7 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
     {
       AddObjective(new ObjectiveUnitIsDead(direwolfToKill));
       AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N01D_SILVERPINE_FOREST_15GOLD_MIN)));
-      AddObjective(new ObjectiveExpire(1444));
+      AddObjective(new ObjectiveExpire(1444, Title));
       AddObjective(new ObjectiveSelfExists());
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
       Required = true;

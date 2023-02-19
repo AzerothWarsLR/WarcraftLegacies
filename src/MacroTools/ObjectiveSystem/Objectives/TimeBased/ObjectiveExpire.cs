@@ -1,4 +1,6 @@
+﻿using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
+using System.Collections.Generic;
 using static War3Api.Common;
 
 namespace MacroTools.ObjectiveSystem.Objectives.TimeBased
@@ -8,24 +10,44 @@ namespace MacroTools.ObjectiveSystem.Objectives.TimeBased
   /// </summary>
   public sealed class ObjectiveExpire : Objective
   {
-    private readonly timer _timer;
+    private readonly timer _expirationTimer;
+    private readonly timer _warningTimer;
+    private readonly string _questName;
 
-    public ObjectiveExpire(int duration)
+    private readonly List<Faction> assignedFactions = new();
+
+
+    /// <param name="duration">The time after which the objective will fail</param>
+    /// <param name="questName">The name of the quest this objective belongs to.</param>
+    public ObjectiveExpire(int duration, string questName)
     {
       Description = $"Complete this quest before {duration} seconds have elapsed";
-      _timer = CreateTimer();
-      TimerStart(_timer, duration, false, OnExpire);
+      _expirationTimer = CreateTimer();
+      _warningTimer = CreateTimer();
+      TimerStart(_expirationTimer, duration, false, OnExpire);
+      TimerStart(_warningTimer, duration - 120, false, OnWarning);
+      _questName = questName;
     }
 
-    internal override void OnAdd(FactionSystem.Faction whichFaction)
+    internal override void OnAdd(Faction whichFaction)
     {
+      assignedFactions.Add(whichFaction);
       Progress = QuestProgress.Complete;
     }
 
     private void OnExpire()
     {
-      DestroyTimer(_timer);
+      DestroyTimer(_expirationTimer);
       Progress = QuestProgress.Failed;
+    }
+
+    private void OnWarning()
+    {
+      DestroyTimer(_warningTimer);
+      foreach (var assignedFaction in assignedFactions)
+      {
+        DisplayTextToPlayer(assignedFaction.Player, 0, 0, $"\n|c00FF7F00WARNING|r - Quest {_questName} will expire in 2 minutes.");
+      }
     }
   }
 }

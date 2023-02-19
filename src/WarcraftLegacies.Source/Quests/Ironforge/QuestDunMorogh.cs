@@ -1,4 +1,4 @@
-using MacroTools;
+﻿using MacroTools;
 using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
@@ -20,7 +20,7 @@ namespace WarcraftLegacies.Source.Quests.Ironforge
     {
       AddObjective(new ObjectiveUnitIsDead(preplacedUnitSystem.GetUnit(FourCC("nith"), new Point(10673, -7188)))); //Troll High Priest
       AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N014_DUN_MOROGH_15GOLD_MIN)));
-      AddObjective(new ObjectiveExpire(1435));
+      AddObjective(new ObjectiveExpire(1435, Title));
       AddObjective(new ObjectiveSelfExists());
       Required = true;
     }

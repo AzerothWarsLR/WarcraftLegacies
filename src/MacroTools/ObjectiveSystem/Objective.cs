@@ -1,10 +1,9 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using MacroTools.DialogueSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
-using MacroTools.ObjectiveSystem.Objectives;
 using MacroTools.QuestSystem;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -56,7 +55,7 @@ namespace MacroTools.ObjectiveSystem
     internal questitem QuestItem { get; set; }
 
     /// <summary>
-    ///   Whether or not this can be seen as a bullet point in the quest log.
+    ///  Whether or not this can be seen as a bullet point in the quest log.
     /// </summary>
     public bool ShowsInQuestLog { get; protected init; } = true;
 
@@ -92,6 +91,9 @@ namespace MacroTools.ObjectiveSystem
       }
     }
 
+    /// <summary>
+    /// Describes what must be done in order to complete the <see cref="Objective"/>
+    /// </summary>
     public string Description
     {
       get => _description;
@@ -124,6 +126,9 @@ namespace MacroTools.ObjectiveSystem
       EligibleFactions.Add(faction);
     }
 
+    /// <summary>
+    /// Fires after the <see cref="Progress"/> of this quest has changed
+    /// </summary>
     public event EventHandler<Objective>? ProgressChanged;
 
     /// <summary>
@@ -133,7 +138,10 @@ namespace MacroTools.ObjectiveSystem
     {
     }
 
-    //Shows the local aspects of this QuestItem, namely the minimap icon.
+    /// <summary>
+    /// Shows the local aspects of this QuestItem, namely the minimap icon.
+    /// </summary>
+    /// <param name="parentQuestProgress"></param>
     internal void ShowLocal(QuestProgress parentQuestProgress)
     {
       if (Progress == QuestProgress.Incomplete &&

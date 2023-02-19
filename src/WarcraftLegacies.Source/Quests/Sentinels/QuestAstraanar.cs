@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
@@ -24,7 +24,7 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
       AddObjective(new ObjectiveLegendReachRect(tyrande, Regions.AstranaarUnlock,
         "Astranaar Outpost"));
       AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N02U_DARKSHORE_10GOLD_MIN)));
-      AddObjective(new ObjectiveExpire(1430));
+      AddObjective(new ObjectiveExpire(1430, Title));
       AddObjective(new ObjectiveSelfExists());
 
       foreach (var rectangle in rescueRects)

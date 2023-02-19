@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using MacroTools.ArtifactSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
@@ -39,7 +39,7 @@ namespace WarcraftLegacies.Source.Quests.Druids
       AddObjective(new ObjectiveAcquireArtifact(hornofCenarius));
       AddObjective(new ObjectiveArtifactInRect(hornofCenarius, Regions.Moonglade,
         "The Barrow Den"));
-      AddObjective(new ObjectiveExpire(1440));
+      AddObjective(new ObjectiveExpire(1440, Title));
       AddObjective(new ObjectiveSelfExists());
       _moongladeUnits = moonglade.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
       worldTree.SetInvulnerable(true);

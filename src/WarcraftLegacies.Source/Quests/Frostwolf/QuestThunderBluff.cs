@@ -27,7 +27,7 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
     {
       AddObjective(new ObjectiveUnitIsDead(preplacedUnitSystem.GetUnit(FourCC("ncnk"), rescueRect.Center)));
       AddObjective(new ObjectiveAnyUnitInRect(rescueRect, "Thunder Bluff", true));
-      AddObjective(new ObjectiveExpire(1455));
+      AddObjective(new ObjectiveExpire(1455, Title));
       AddObjective(new ObjectiveSelfExists());
       ResearchId = Constants.UPGRADE_R05I_QUEST_COMPLETED_THE_LONG_MARCH; 
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);

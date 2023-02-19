@@ -25,7 +25,7 @@ namespace WarcraftLegacies.Source.Quests.Naga
       "ReplaceableTextures\\CommandButtons\\BTNIllidariSpawningGrounds.blp")
     {
       AddObjective(new ObjectiveLegendInRect(vashj, rescueRect, "the Cape of Stranglethorn"));
-      AddObjective(new ObjectiveExpire(1250));
+      AddObjective(new ObjectiveExpire(1250, Title));
       AddObjective(new ObjectiveSelfExists());
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
       Required = true;

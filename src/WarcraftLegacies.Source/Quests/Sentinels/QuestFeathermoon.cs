@@ -26,7 +26,7 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
         "Feathermoon Stronghold"));
       AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N01R_ASTRANAAR_15GOLD_MIN)));
       AddObjective(new ObjectiveUpgrade(Constants.UNIT_N06P_SENTINEL_ENCLAVE_SENTINEL_T3, Constants.UNIT_N06J_SENTINEL_OUTPOST_SENTINEL_T1));
-      AddObjective(new ObjectiveExpire(1485));
+      AddObjective(new ObjectiveExpire(1485, Title));
       AddObjective(new ObjectiveSelfExists());
       ResearchId = Constants.UPGRADE_R06M_QUEST_COMPLETED_FEATHERMOON_STRONGHOLD;
       foreach (var unit in CreateGroup().EnumUnitsInRect(rescueRect).EmptyToList())
