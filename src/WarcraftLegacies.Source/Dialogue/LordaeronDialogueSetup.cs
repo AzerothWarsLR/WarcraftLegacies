@@ -161,7 +161,6 @@ namespace WarcraftLegacies.Source.Dialogue
           new[]
           {
             LordaeronSetup.Lordaeron,
-            ScourgeSetup.Scourge,
             LegionSetup.Legion
           }, new Objective[]
           {

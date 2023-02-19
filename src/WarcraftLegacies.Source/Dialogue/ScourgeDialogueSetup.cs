@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using MacroTools.DialogueSystem;
 using MacroTools.ObjectiveSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
@@ -155,7 +155,6 @@ namespace WarcraftLegacies.Source.Dialogue
           new[]
           {
             ScourgeSetup.Scourge,
-            LordaeronSetup.Lordaeron,
             QuelthalasSetup.Quelthalas
           },
           new[]
