@@ -13270,12 +13270,6 @@ STRING 2212
 Opens a two-way portal to the target location within a range of <A00D,Rng3>. The portal becomes useable after 5 seconds, and closes 10 seconds after the caster stops channeling.
 }
 
-STRING 2213
-// Units: u00F (Dormant Spire), Ubertip (Tooltip - Extended)
-{
-A gathering point for the followers of the Burning Legion.|n|cfff5962dAbilities:|r Curse Aura|n|cfff5962dTrains:|R Legion Herald |n|cfff5962dResearches:|R Rematerialization |n|n|cfff5962dUpgrades Into:|R Burning Citadel|n|n
-}
-
 STRING 2214
 // Units: n06E (Shadowleaf), EditorSuffix (Name - Editor Suffix)
 {
@@ -51837,6 +51831,12 @@ STRING 8636
 (Purple - Alexandros)
 }
 
+STRING 8637
+// Units: u00F (Dormant Spire), Ubertip (Tooltip - Extended)
+{
+A gathering point for the followers of the Burning Legion.|n|cfff5962dTrains:|R Legion Herald |n|cfff5962dResearches:|R Rematerialization |n|n|cfff5962dUpgrades Into:|R Burning Citadel|n|n
+}
+
 STRING 8638
 // Abilities: A0MQ (Pulverize), Tip (Tooltip - Normal)
 {
@@ -54086,6 +54086,12 @@ STRING 9012
 // Abilities: A0K0 (Thunder Clap), Tip (Tooltip - Normal)
 {
 Thunder Clap (|cffffcc00Q|r)
+}
+
+STRING 9013
+// Upgrades: R097 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+{
+E
 }
 
 STRING 9014
@@ -108470,7 +108476,7 @@ Train Throne Guard
 }
 
 STRING 18139
-// Abilities: A02W (Mass Unholy Frenzy), Hotkey (Hotkey - Normal)
+// Abilities: A0NP (Devour), Researchhotkey (Hotkey - Learn)
 {
 E
 }
@@ -108494,7 +108500,7 @@ Gives 15 additional armor to your nearby heroes.
 }
 
 STRING 18146
-// Abilities: A02W (Mass Unholy Frenzy), Researchhotkey (Hotkey - Learn)
+// Abilities: A02W (Mass Unholy Frenzy), Hotkey (Hotkey - Normal)
 {
 E
 }
@@ -108524,7 +108530,7 @@ Lilian Voss
 }
 
 STRING 18151
-// Abilities: A0UD (Weapon Empowerement), Hotkey (Hotkey - Normal)
+// Abilities: A02W (Mass Unholy Frenzy), Researchhotkey (Hotkey - Learn)
 {
 E
 }
@@ -108608,7 +108614,7 @@ Pulverize - [|cffffcc00Level 3|r]
 }
 
 STRING 18165
-// Abilities: A0UD (Weapon Empowerement), Researchhotkey (Hotkey - Learn)
+// Abilities: A0UD (Weapon Empowerement), Hotkey (Hotkey - Normal)
 {
 E
 }
@@ -108740,7 +108746,7 @@ Summon Zombie
 }
 
 STRING 18191
-// Upgrades: Rhlh (Improved Lumber Harvesting,Advanced Lumber Harvesting), Hotkey (Hotkey)
+// Abilities: A0UD (Weapon Empowerement), Researchhotkey (Hotkey - Learn)
 {
 E
 }
@@ -109407,7 +109413,7 @@ Adds <ACbk,DataA1> bonus damage to attacks. Units killed while under the effect 
 }
 
 STRING 18306
-// Upgrades: Renb (Nature's Blessing), Hotkey (Hotkey)
+// Upgrades: Rhlh (Improved Lumber Harvesting,Advanced Lumber Harvesting), Hotkey (Hotkey)
 {
 E
 }
@@ -109965,7 +109971,7 @@ Titanforged
 }
 
 STRING 18434
-// Upgrades: R06K (Defend), Hotkey (Hotkey)
+// Upgrades: Renb (Nature's Blessing), Hotkey (Hotkey)
 {
 E
 }
@@ -110031,7 +110037,7 @@ Learn Curse of Executus - [|cffffcc00Level %d|r]
 }
 
 STRING 18447
-// Upgrades: R06G (Defend), Hotkey (Hotkey)
+// Upgrades: R06K (Defend), Hotkey (Hotkey)
 {
 E
 }
@@ -110133,7 +110139,7 @@ Q
 }
 
 STRING 18468
-// Upgrades: R06F (Defend), Hotkey (Hotkey)
+// Upgrades: R06G (Defend), Hotkey (Hotkey)
 {
 E
 }
@@ -110451,7 +110457,7 @@ Summon Fire Wyrm
 }
 
 STRING 18527
-// Upgrades: R064 (Nature's Blessing), Hotkey (Hotkey)
+// Upgrades: R06F (Defend), Hotkey (Hotkey)
 {
 E
 }
@@ -110541,7 +110547,7 @@ Q
 }
 
 STRING 18547
-// Upgrades: R03M (Defend), Hotkey (Hotkey)
+// Upgrades: R064 (Nature's Blessing), Hotkey (Hotkey)
 {
 E
 }
@@ -110932,7 +110938,7 @@ Q
 }
 
 STRING 18640
-// Upgrades: R02P (Backpack), Hotkey (Hotkey)
+// Upgrades: R03M (Defend), Hotkey (Hotkey)
 {
 E
 }
@@ -111616,7 +111622,7 @@ STRING 18772
 }
 
 STRING 18773
-// Upgrades: R03O (Animal War Training), Hotkey (Hotkey)
+// Upgrades: R02P (Backpack), Hotkey (Hotkey)
 {
 E
 }
@@ -112528,7 +112534,7 @@ Multishot
 }
 
 STRING 18977
-// Upgrades: R097 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R03O (Animal War Training), Hotkey (Hotkey)
 {
 E
 }
