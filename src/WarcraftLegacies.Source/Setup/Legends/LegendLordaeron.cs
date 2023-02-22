@@ -35,7 +35,8 @@ namespace WarcraftLegacies.Source.Setup.Legends
        .RegisterUnitEvent(Terenas.Unit, EVENT_UNIT_DEATH)
        .AddAction(() =>
        {
-         artifactSetup.CrownOfLordaeron.Item.SetPosition(Regions.King_Arthas_crown.Center);
+         if (artifactSetup.CrownOfLordaeron.OwningUnit == Terenas.Unit)
+           artifactSetup.CrownOfLordaeron.Item.SetPosition(Regions.King_Arthas_crown.Center);
        });
 
       Mograine = new LegendaryHero("Alexandros Mograine")
@@ -112,7 +113,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
         UnitType = Constants.UNIT_HART_CROWN_PRINCE_OF_LORDAERON_LORDAERON
       };
     }
-    
+
     public void RegisterLegends()
     {
       LegendaryHeroManager.Register(Terenas);
