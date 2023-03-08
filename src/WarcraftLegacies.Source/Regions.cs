@@ -59,7 +59,7 @@ public static class Regions
 	public static Rectangle Plague_4 { get; set; } = new Rectangle(15328f, 8896f, 18496f, 10944f);
 	public static Rectangle Plague_5 { get; set; } = new Rectangle(7136f, 10272f, 9280f, 11840f);
 	public static Rectangle Plague_6 { get; set; } = new Rectangle(6560f, 3104f, 7232f, 5728f);
-	public static Rectangle Plague_7 { get; set; } = new Rectangle(9216f, 2048f, 12736f, 3424f);
+	public static Rectangle Plague_7 { get; set; } = new Rectangle(9792f, 1664f, 13216f, 3008f);
 	public static Rectangle Quel_Ships_1 { get; set; } = new Rectangle(16384f, 16288f, 20096f, 17568f);
 	public static Rectangle Quel_Ships_2 { get; set; } = new Rectangle(17216f, 13984f, 20512f, 17568f);
 	public static Rectangle Quel_Ships_3 { get; set; } = new Rectangle(16288f, 11744f, 21920f, 15584f);
@@ -207,7 +207,7 @@ public static class Regions
 	public static Rectangle TrollAttackSpawn { get; set; } = new Rectangle(20928f, 12224f, 21248f, 12480f);
 	public static Rectangle TrollTarget { get; set; } = new Rectangle(17088f, 12480f, 17120f, 12512f);
 	public static Rectangle KilsorrowUnlock { get; set; } = new Rectangle(-4224f, -31904f, -2752f, -30752f);
-	public static Rectangle HellfireUnlock { get; set; } = new Rectangle(-128f, -27488f, 2624f, -25312f);
+	public static Rectangle HellfireUnlock { get; set; } = new Rectangle(-128f, -27488f, 2368f, -24736f);
 	public static Rectangle ThelUnlock { get; set; } = new Rectangle(14432f, -6752f, 15648f, -4768f);
 	public static Rectangle KulAttack { get; set; } = new Rectangle(3776f, -11136f, 4096f, -10912f);
 	public static Rectangle KulTarget { get; set; } = new Rectangle(3904f, -13440f, 3936f, -13408f);
@@ -335,5 +335,8 @@ public static class Regions
 	public static Rectangle KaliRock8 { get; set; } = new Rectangle(-14400f, -9472f, -13632f, -8768f);
 	public static Rectangle ShadowmoonBaseUnlock { get; set; } = new Rectangle(1696f, -31776f, 3936f, -28896f);
 	public static Rectangle MaelstromChannel { get; set; } = new Rectangle(-384f, -1504f, 96f, -1120f);
+	public static Rectangle FeathermoonCreeps { get; set; } = new Rectangle(-22464f, -12128f, -18368f, -7584f);
+	public static Rectangle AuberdineUnlock { get; set; } = new Rectangle(-19136f, 8704f, -16192f, 11296f);
+	public static Rectangle KaliRock9 { get; set; } = new Rectangle(-15808f, -11072f, -14464f, -10240f);
 
 }

@@ -18,14 +18,13 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
   {
     private readonly List<unit> _rescueUnits = new();
 
-    public QuestFeathermoon(Rectangle rescueRect, LegendaryHero tyrande) : base("Feathermoon Stronghold",
+    public QuestFeathermoon(Rectangle rescueRect, LegendaryHero shandris) : base("Shores of Feathermoon",
       "Feathermoon Stronghold stood guard for ten thousand years, it is time to relieve the guards from their duty.",
       "ReplaceableTextures\\CommandButtons\\BTNBearDen.blp")
     {
-      AddObjective(new ObjectiveLegendReachRect(tyrande, Regions.FeathermoonUnlock,
+      AddObjective(new ObjectiveLegendReachRect(shandris, Regions.FeathermoonUnlock,
         "Feathermoon Stronghold"));
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N01R_ASTRANAAR_15GOLD_MIN)));
-      AddObjective(new ObjectiveUpgrade(Constants.UNIT_N06P_SENTINEL_ENCLAVE_SENTINEL_T3, Constants.UNIT_N06J_SENTINEL_OUTPOST_SENTINEL_T1));
+      AddObjective(new ObjectiveKillAllInArea(new List<Rectangle> { Regions.FeathermoonCreeps }, "around Feathermoon Stronghold"));
       AddObjective(new ObjectiveExpire(1485, Title));
       AddObjective(new ObjectiveSelfExists());
       ResearchId = Constants.UPGRADE_R06M_QUEST_COMPLETED_FEATHERMOON_STRONGHOLD;
@@ -45,7 +44,7 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
 
     /// <inheritdoc />
     protected override string RewardDescription =>
-      "Control of all units in Feathermoon Stronghold and make Shandris and Maiev trainable at the Altar";
+      "Control of all units in Feathermoon Stronghold";
 
     /// <inheritdoc />
     protected override void OnFail(Faction completingFaction)
