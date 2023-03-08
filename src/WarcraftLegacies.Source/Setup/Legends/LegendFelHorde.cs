@@ -28,6 +28,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
       Magtheridon = new LegendaryHero("Magtheridon")
       {
         UnitType = Constants.UNIT_NMAG_LORD_OF_OUTLAND_FEL_HORDE,
+        StartingXp = 1800,
         DeathMessage = "Magtheridon’s eternal demon soul has been consumed, and his life permanently extinguished. The Lord of Outland has fallen."
       };
 
