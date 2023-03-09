@@ -26,13 +26,14 @@ namespace WarcraftLegacies.Source.Quests.Zandalar
     /// <param name="onFailSpawnRect"></param>
     /// <param name="completeOnFailQuest">Quest that gets completed upon failing <see cref="QuestConquerKul"/>.</param>
     /// <param name="failOnFailQuest">Quest that is failed upon failing <see cref="QuestConquerKul"/>. </param>
-    public QuestConquerKul(Rectangle onFailSpawnRect, QuestData completeOnFailQuest, QuestData failOnFailQuest) : base(
+    /// <param name="legendSetup"></param>
+    public QuestConquerKul(Rectangle onFailSpawnRect, QuestData completeOnFailQuest, QuestData failOnFailQuest, AllLegendSetup legendSetup) : base(
       "Conquer Boralus",
       "The Kul'tiran people and their fleet have been a threat to the Zandalari Empire for ages, it is time to put them to rest.",
       "ReplaceableTextures\\CommandButtons\\BTNGalleonIcon.blp")
     {
-      AddObjective(new ObjectiveControlCapital(LegendNeutral.Dazaralor, true));
-      AddObjective(new ObjectiveCapitalDead(LegendKultiras.LegendBoralus));
+      AddObjective(new ObjectiveControlCapital(legendSetup.Neutral.Dazaralor, true));
+      AddObjective(new ObjectiveCapitalDead(legendSetup.Kultiras.LegendBoralus));
       ResearchId = Constants.UPGRADE_R08D_QUEST_COMPLETED_CONQUER_BORALUS;
       _onFailSpawnRect = onFailSpawnRect;
       _completeOnFailQuest = completeOnFailQuest;

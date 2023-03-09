@@ -24,7 +24,7 @@ namespace WarcraftLegacies.Source.Quests.Gilneas
     {
       AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N08X_KEEL_HARBOR_10GOLD_MIN)));
       AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N031_DUSKHAVEN_20GOLD_MIN)));
-      AddObjective(new ObjectiveExpire(1200));
+      AddObjective(new ObjectiveExpire(1200, Title));
       AddObjective(new ObjectiveSelfExists());
       _rescueUnits = Regions.GilneasUnlock3.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
       Required = true;

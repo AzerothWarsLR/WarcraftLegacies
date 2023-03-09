@@ -2,6 +2,7 @@
 using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.QuestSystem;
+using WarcraftLegacies.Source.Setup;
 using WarcraftLegacies.Source.Setup.Legends;
 using static War3Api.Common; 
 
@@ -19,11 +20,11 @@ namespace WarcraftLegacies.Source.Quests.Zandalar
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestZulgurub"/> class
     /// </summary>
-    public QuestZulgurub() : base("Heart of Hakkar",
+    public QuestZulgurub(AllLegendSetup allLegendSetup) : base("Heart of Hakkar",
       "The Gurubashi trolls of Zul'Gurub follow the sacred Heart of Hakkar, hidden within their shrine. Capture it to gain their loyalty.",
       "ReplaceableTextures\\CommandButtons\\BTNTrollRavager.blp")
     {
-      AddObjective(new ObjectiveControlCapital(LegendNeutral.Zulgurub, false));
+      AddObjective(new ObjectiveControlCapital(allLegendSetup.Neutral.Zulgurub, false));
     }
 
 

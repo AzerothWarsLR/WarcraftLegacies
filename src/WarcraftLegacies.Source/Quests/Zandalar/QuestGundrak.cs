@@ -2,6 +2,7 @@
 using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.QuestSystem;
+using WarcraftLegacies.Source.Setup;
 using WarcraftLegacies.Source.Setup.Legends;
 using static War3Api.Common;
 
@@ -20,11 +21,11 @@ namespace WarcraftLegacies.Source.Quests.Zandalar
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestGundrak"/> class
     /// </summary>
-    public QuestGundrak() : base("The Drakkari Fortress",
+    public QuestGundrak(AllLegendSetup legendSetup) : base("The Drakkari Fortress",
       "The Drakkari troll of Gundrak believe their fortress to be impregnable. Capture it to gain their loyalty.",
       "ReplaceableTextures\\CommandButtons\\BTNTerrorTroll.blp")
     {
-      AddObjective(new ObjectiveControlCapital(LegendNeutral.Gundrak, false));
+      AddObjective(new ObjectiveControlCapital(legendSetup.Neutral.Gundrak, false));
     }
 
     /// <inheritdoc/>

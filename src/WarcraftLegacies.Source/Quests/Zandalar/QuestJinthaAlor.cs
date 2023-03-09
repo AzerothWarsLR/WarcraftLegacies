@@ -2,6 +2,7 @@
 using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.QuestSystem;
+using WarcraftLegacies.Source.Setup;
 using WarcraftLegacies.Source.Setup.Legends;
 using static War3Api.Common;
 
@@ -19,11 +20,11 @@ namespace WarcraftLegacies.Source.Quests.Zandalar
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestJinthaAlor"/> class
     /// </summary>
-    public QuestJinthaAlor() : base("The Ancient Egg",
+    public QuestJinthaAlor(AllLegendSetup legendSetup) : base("The Ancient Egg",
       "The Vilebranch trolls of Jintha'Alor are controlled by their fear of the Soulflayer's egg, hidden within their shrine. Smash it to gain their loyalty.",
       "ReplaceableTextures\\CommandButtons\\BTNForestTrollShadowPriest.blp")
     {
-      AddObjective(new ObjectiveControlCapital(LegendNeutral.Jinthaalor, false));
+      AddObjective(new ObjectiveControlCapital(legendSetup.Neutral.Jinthaalor, false));
     }
 
     /// <inheritdoc/>
