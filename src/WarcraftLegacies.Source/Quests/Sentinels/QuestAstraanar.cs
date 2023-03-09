@@ -46,7 +46,7 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
       "Auberdine has been reached and has joined the Sentinels in their war effort";
 
     /// <inheritdoc />
-    protected override string RewardDescription => "Control of all units in Astranaar Outpost and Auberdine. Tyrande and Maiev will de trainable at Altar";
+    protected override string RewardDescription => "Control of all units in Astranaar Outpost and Auberdine. Tyrande, Maiev and Naisha will de trainable at Altar";
 
     /// <inheritdoc />
     protected override void OnFail(Faction completingFaction)

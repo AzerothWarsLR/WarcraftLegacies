@@ -6692,6 +6692,12 @@ STRING 1115
 Build Roost
 }
 
+STRING 1116
+// Abilities: A0VX (Elune's Gaze), Ubertip (Tooltip - Normal - Extended)
+{
+Turns target unit and every allied unit in a 350 area of effect invisible. If an invisible unit attacks, uses an ability or casts a spell, it will become visible. |nLasts 60 seconds.
+}
+
 STRING 1117
 // Units: edoc (Druid of the Claw), EditorSuffix (Name - Editor Suffix)
 {
@@ -99368,12 +99374,6 @@ STRING 16599
 // Units: o03O (Altar of Industry), Tip (Tooltip - Basic)
 {
 Build Altar of Industry
-}
-
-STRING 16600
-// Abilities: A0VX (Elune's Gaze), Ubertip (Tooltip - Normal - Extended)
-{
-Turns target unit invisible. If a unit attacks, uses an ability or casts a spell, it will become visible. |nLasts <A0VX,Dur1> seconds.
 }
 
 STRING 16601
