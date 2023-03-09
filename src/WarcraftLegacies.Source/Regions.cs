@@ -248,9 +248,7 @@ public static class Regions
 	public static Rectangle KaliRock4 { get; set; } = new Rectangle(-10304f, -12960f, -9408f, -12384f);
 	public static Rectangle GoldrinnDuskwood { get; set; } = new Rectangle(10976f, -16000f, 11456f, -15520f);
 	public static Rectangle GoldrinnHyjal { get; set; } = new Rectangle(-11040f, 5216f, -10496f, 5760f);
-	public static Rectangle TeldrassilUnlock1 { get; set; } = new Rectangle(-20032f, 14368f, -17856f, 16480f);
-	public static Rectangle TeldrassilUnlock2 { get; set; } = new Rectangle(-20640f, 12160f, -18912f, 13312f);
-	public static Rectangle DarnassusWorgen { get; set; } = new Rectangle(-17856f, 12736f, -16736f, 15968f);
+	public static Rectangle TeldrassilUnlock { get; set; } = new Rectangle(-20512f, 12256f, -16352f, 16512f);
 	public static Rectangle KaelSunwellChannel { get; set; } = new Rectangle(18496f, 21568f, 18624f, 21696f);
 	public static Rectangle JainaChannel { get; set; } = new Rectangle(-9888f, 17632f, -9792f, 17728f);
 	public static Rectangle MonolithNoBuild { get; set; } = new Rectangle(18208f, -31584f, 23808f, -23360f);
@@ -336,7 +334,7 @@ public static class Regions
 	public static Rectangle ShadowmoonBaseUnlock { get; set; } = new Rectangle(1696f, -31776f, 3936f, -28896f);
 	public static Rectangle MaelstromChannel { get; set; } = new Rectangle(-384f, -1504f, 96f, -1120f);
 	public static Rectangle FeathermoonCreeps { get; set; } = new Rectangle(-22464f, -12128f, -18368f, -7584f);
-	public static Rectangle AuberdineUnlock { get; set; } = new Rectangle(-19136f, 8704f, -16192f, 11296f);
+	public static Rectangle AuberdineUnlock { get; set; } = new Rectangle(-18784f, 9024f, -15936f, 11104f);
 	public static Rectangle KaliRock9 { get; set; } = new Rectangle(-15808f, -11072f, -14464f, -10240f);
 
 }

@@ -13,10 +13,10 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
 
       sentinels.StartingQuest = sentinels.AddQuest(new QuestAstranaar(new List<Rectangle>
         {
-          Regions.AstranaarUnlock, Regions.TeldrassilUnlock1, Regions.TeldrassilUnlock2
-        }, allLegendSetup.Sentinels.Tyrande
+          Regions.AstranaarUnlock, Regions.AuberdineUnlock
+        }, allLegendSetup.Sentinels.Shandris
       ));
-      sentinels.AddQuest(new QuestFeathermoon(Regions.FeathermoonUnlock, allLegendSetup.Sentinels.Tyrande));
+      sentinels.AddQuest(new QuestFeathermoon(Regions.FeathermoonUnlock, allLegendSetup.Sentinels.Shandris));
       sentinels.AddQuest(new QuestSentinelsKillWarsong(allLegendSetup.Warsong.Orgrimmar));
       sentinels.AddQuest(new QuestSentinelsKillFrostwolf(allLegendSetup.Frostwolf.ThunderBluff));
       sentinels.AddQuest(new QuestScepterOfTheQueenSentinels(Regions.TheAthenaeum, artifactSetup.ScepterOfTheQueen, allLegendSetup.Warsong.StonemaulKeep));

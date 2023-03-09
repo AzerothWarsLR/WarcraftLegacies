@@ -54148,6 +54148,12 @@ STRING 9021
 Cunning hero, adept at dealing magic damage and supporting armies.|n|cfff5962dCan learn:|R Astral Walk, Feedback, Energy Wave, Summon Fel Hounds, Devour Magic, Death and Decay|n|n|cffffcc00Attacks land units.|R
 }
 
+STRING 9022
+// Upgrades: R03N (Chaos), Name (Name)
+{
+Quest Completed: Daughters of the Moon
+}
+
 STRING 9023
 // Abilities: A0JY (Raise Dead Auto-Cast), EditorSuffix (Editor Suffix)
 {
