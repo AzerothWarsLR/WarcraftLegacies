@@ -11,7 +11,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       var frostwolf = FrostwolfSetup.Frostwolf;
       if (frostwolf == null) 
         return;
-      frostwolf.AddQuest(new QuestThunderBluff(preplacedUnitSystem, Regions.ThunderBluff));
+      frostwolf.StartingQuest = frostwolf.AddQuest(new QuestThunderBluff(preplacedUnitSystem, Regions.ThunderBluff));
       frostwolf.AddQuest(new QuestStonemaul(preplacedUnitSystem, Regions.StonemaulKeep));
       frostwolf.AddQuest(new QuestDarkspear());
       frostwolf.AddQuest(new QuestDrektharsSpellbook(allLegendSetup.Druids.Nordrassil, allLegendSetup.Frostwolf.Thrall));

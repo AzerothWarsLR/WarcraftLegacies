@@ -46,7 +46,8 @@ namespace MacroTools.ObjectiveSystem.Objectives.TimeBased
       DestroyTimer(_warningTimer);
       foreach (var assignedFaction in assignedFactions)
       {
-        DisplayTextToPlayer(assignedFaction.Player, 0, 0, $"\n|c00FF7F00WARNING|r - Quest {_questName} will expire in 2 minutes.");
+        if (Progress != QuestProgress.Complete)
+          DisplayTextToPlayer(assignedFaction.Player, 0, 0, $"\n|c00FF7F00WARNING|r - Quest {_questName} will expire in 2 minutes.");
       }
     }
   }

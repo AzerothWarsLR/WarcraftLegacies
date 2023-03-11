@@ -20,11 +20,11 @@ namespace MacroTools.PassiveAbilities
     /// </summary>
     /// <param name="unitTypeId"><inheritdoc /></param>
     /// <param name="abilityTypeId">The ability ID that determines the effect's level.</param>
-    /// <param name="ignoredAbilityId">Units with this ability are not affected by <see cref="PersistentSoul"/></param>
-    public PersistentSoul(int unitTypeId, int abilityTypeId, int ignoredAbilityId = 0) : base(unitTypeId)
+    /// <param name="ignoredAbilityId">Units with these abilities are not affected by <see cref="PersistentSoul"/></param>
+    public PersistentSoul(int unitTypeId, int abilityTypeId, List<int> ignoredAbilityId) : base(unitTypeId)
     {
       _abilityTypeId = abilityTypeId;
-      IgnoredAbilityId = ignoredAbilityId;
+      IgnoredAbilityIds = ignoredAbilityId;
     }
     
     /// <summary>
@@ -47,7 +47,7 @@ namespace MacroTools.PassiveAbilities
     /// </summary>
     public float Radius { get; init; }
 
-    private int IgnoredAbilityId { get; }
+    private List<int> IgnoredAbilityIds { get; } = new();
 
     /// <inheritdoc/>
     public override void OnDeath()
@@ -77,7 +77,7 @@ namespace MacroTools.PassiveAbilities
              && !IsUnitType(target, UNIT_TYPE_FLYING)
              && !IsUnitIllusion(target)
              && caster != target
-             && BlzGetUnitAbility(target, IgnoredAbilityId) == null;
+             && IgnoredAbilityIds.All(id =>  BlzGetUnitAbility(target, id) == null);
 
     }
     

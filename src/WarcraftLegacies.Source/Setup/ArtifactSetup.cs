@@ -145,7 +145,7 @@ namespace WarcraftLegacies.Source.Setup
       ArtifactManager.Register(BronzeFragment);
 
       ObsidianFragment = new Artifact(CreateItem(Constants.ITEM_I01L_OBSIDIAN_FRAGMENT, DummyX, DummyY));
-      UnitAddItem(preplacedUnitSystem.GetUnit(Constants.UNIT_O04E_BONESEER_TROLL), ObsidianFragment.Item);
+      UnitAddItem(preplacedUnitSystem.GetUnit(Constants.UNIT_NDTW_XU_BA), ObsidianFragment.Item);
       ArtifactManager.Register(ObsidianFragment);
 
       RubyFragment = new Artifact(CreateItem(Constants.ITEM_I01J_RUBY_FRAGMENT, DummyX, DummyY));

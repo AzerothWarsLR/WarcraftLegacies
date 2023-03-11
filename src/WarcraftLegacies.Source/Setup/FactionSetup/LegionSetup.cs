@@ -66,7 +66,7 @@ Your primary objective is to summon the great host of the Burning Legion. Invade
       Legion.ModObjectLimit(FourCC("ubot"), Faction.UNLIMITED); //Undead Transport Ship
       Legion.ModObjectLimit(FourCC("h0AT"), Faction.UNLIMITED); //Scout
       Legion.ModObjectLimit(FourCC("h0AW"), Faction.UNLIMITED); //Frigate
-      Legion.ModObjectLimit(FourCC("h0SM"), Faction.UNLIMITED); //Fireship
+      Legion.ModObjectLimit(FourCC("h0AM"), Faction.UNLIMITED); //Fireship
       Legion.ModObjectLimit(FourCC("h0AZ"), Faction.UNLIMITED); //Galley
       Legion.ModObjectLimit(FourCC("h0AQ"), Faction.UNLIMITED); //Boarding
       Legion.ModObjectLimit(FourCC("h0BB"), Faction.UNLIMITED); //Juggernaut

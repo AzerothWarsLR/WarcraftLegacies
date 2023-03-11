@@ -24,6 +24,7 @@ namespace WarcraftLegacies.Source.Setup
       GoblinQuestSetup.Setup(allLegendSetup);
       DraeneiQuestSetup.Setup(preplacedUnitSystem, allLegendSetup);
       SharedQuestSetup.Setup(preplacedUnitSystem, artifactSetup, allLegendSetup);
+      
     }
   }
 }

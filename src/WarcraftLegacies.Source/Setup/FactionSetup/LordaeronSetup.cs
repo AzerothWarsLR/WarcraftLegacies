@@ -1,6 +1,5 @@
 ﻿using MacroTools;
 using MacroTools.FactionSystem;
-using MacroTools.Powers;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
