@@ -30,6 +30,7 @@ namespace WarcraftLegacies.Source.Setup
     public static void Setup()
     {
       TestMode.Setup();
+      var gameTime = new GameTime();
       var gameStartQueue = new TimerQueue();
       var gameStartScreen = new GameSetupScreen(10);
       var goblinZandalarPick = new ZandalarGoblinChoice(10, gameStartScreen);
@@ -37,6 +38,7 @@ namespace WarcraftLegacies.Source.Setup
       var cinematicMode = new CinematicMode(49, displayIntroText);
       gameStartQueue.Add(goblinZandalarPick);
       gameStartQueue.Add(cinematicMode);
+      gameStartQueue.Add(gameTime);
       ControlPointManager.Instance = new ControlPointManager
       {
         StartingMaxHitPoints = 1400,
@@ -73,7 +75,7 @@ namespace WarcraftLegacies.Source.Setup
       CommandSetup.Setup(commandManager);
       ControlPointVictory.Setup();
       SilvermoonDies.Setup(allLegendSetup.Quelthalas.Sunwell);
-      GameTime.Setup();
+ 
       FactionMultiboard.Setup();
       BookSetup.Setup();
       HintConfig.Setup();
