@@ -1,4 +1,5 @@
 ﻿using MacroTools;
+using MacroTools.Cheats;
 using MacroTools.CommandSystem;
 using MacroTools.ControlPointSystem;
 using MacroTools.Mechanics;
@@ -28,6 +29,14 @@ namespace WarcraftLegacies.Source.Setup
     /// </summary>
     public static void Setup()
     {
+      TestMode.Setup();
+      var gameStartQueue = new TimerQueue();
+      var gameStartScreen = new GameSetupScreen(10);
+      var goblinZandalarPick = new ZandalarGoblinChoice(10, gameStartScreen);
+      var displayIntroText = new DisplayIntroText(10);
+      var cinematicMode = new CinematicMode(49, displayIntroText);
+      gameStartQueue.Add(goblinZandalarPick);
+      gameStartQueue.Add(cinematicMode);
       ControlPointManager.Instance = new ControlPointManager
       {
         StartingMaxHitPoints = 1400,
@@ -61,7 +70,6 @@ namespace WarcraftLegacies.Source.Setup
       ObserverSetup.Setup(new[] { Player(21) });
       SpellsSetup.Setup();
       var commandManager = new CommandManager();
-      CheatSetup.Setup(commandManager);
       CommandSetup.Setup(commandManager);
       ControlPointVictory.Setup();
       SilvermoonDies.Setup(allLegendSetup.Quelthalas.Sunwell);
@@ -73,9 +81,9 @@ namespace WarcraftLegacies.Source.Setup
       BlightSystem.Setup(ScourgeSetup.Scourge);
       BlightSetup.Setup(preplacedUnitSystem);
       QuestMenuSetup.Setup();
-      CinematicMode.Start(59);
+      gameStartQueue.Start();
+      CheatSetup.Setup(commandManager, cinematicMode);
       DialogueSetup.Setup(preplacedUnitSystem, allLegendSetup);
-      DisplayIntroText.Setup(10);
       GameSettings.Setup();
       InfoQuests.Setup();
       DestructibleSetup.Setup(preplacedUnitSystem);

@@ -7,25 +7,37 @@ namespace WarcraftLegacies.Source.GameLogic
   /// <summary>
   /// Display intro text to all players after some period of time has elapsed.
   /// </summary>
-  public static class DisplayIntroText
+  public class DisplayIntroText : ILinkedTimer
   {
+    /// <inheritdoc/>
+    public EventHandler? OnTimerEnds { get; set; }
+
+    private float _timeout;
+
+
     /// <summary>
     /// Displays intro text to all players after some period of time has elapsed.
     /// </summary>
     /// <param name="timeout">The time after which to display intro text, in seconds.</param>
-    public static void Setup(float timeout)
+    public DisplayIntroText(float timeout)
     {
-      CreateTimer().Start(timeout, false, () =>
+      _timeout = timeout;
+    }
+
+    /// <inheritdoc/>
+    public void StartTimer()
+    {
+      CreateTimer().Start(_timeout, false, () =>
       {
         try
         {
           foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
             DisplayTextToPlayer(player, 0, 0, player.GetFaction()?.IntroText ?? "");
-          DestroyTimer(GetExpiredTimer());
+          TimerEnd();
         }
         catch (Exception ex)
         {
-          Console.WriteLine(ex);
+          Console.WriteLine($"Error displaying intro text {ex}");
         }
       });
       DisplayTimedTextToPlayer(GetLocalPlayer(), 0, 0, 51, @"|cffffcc00Warcraft Legacies|r
@@ -34,5 +46,12 @@ namespace WarcraftLegacies.Source.GameLogic
 If you are a new player, look at the Quest (F9) tab to see your objectives
 ");
     }
+
+    private void TimerEnd()
+    {
+      DestroyTimer(GetExpiredTimer());
+      OnTimerEnds?.Invoke(this, new EventArgs());
+    }
+
   }
 }
