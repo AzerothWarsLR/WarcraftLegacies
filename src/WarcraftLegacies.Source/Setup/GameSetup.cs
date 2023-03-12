@@ -30,9 +30,10 @@ namespace WarcraftLegacies.Source.Setup
     public static void Setup()
     {
       TestMode.Setup();
-      TimerQueue gameStartQueue;
-      CinematicMode cinematicMode;
-      SetupStartOfGameTimerQueue(out gameStartQueue, out cinematicMode);
+      var displayIntroText = new DisplayIntroText(10);
+      var cinematicMode = new CinematicMode(59, displayIntroText);
+      var goblinZandalarPick = new ZandalarGoblinChoiceDialogue(10);
+      var gameTime = new GameTime();
       SetupControlPointManager();
       var preplacedUnitSystem = new PreplacedUnitSystem();
       SoundLibrary.Setup();
@@ -61,7 +62,9 @@ namespace WarcraftLegacies.Source.Setup
       BlightSystem.Setup(ScourgeSetup.Scourge);
       BlightSetup.Setup(preplacedUnitSystem);
       QuestMenuSetup.Setup();
-      gameStartQueue.Start();
+      cinematicMode.StartTimer();
+      gameTime.StartTimer();
+      goblinZandalarPick.StartTimer();
       CheatSetup.Setup(commandManager, cinematicMode);
       DialogueSetup.Setup(preplacedUnitSystem, allLegendSetup);
       GameSettings.Setup();
@@ -147,19 +150,6 @@ namespace WarcraftLegacies.Source.Setup
           ControlLevelMaximum = 20
         }
       };
-    }
-
-    private static void SetupStartOfGameTimerQueue(out TimerQueue gameStartQueue, out CinematicMode cinematicMode)
-    {
-      gameStartQueue = new TimerQueue();
-      var gameTime = new GameTime();
-      var gameStartScreen = new GameSetupDialogue(10);
-      var goblinZandalarPick = new ZandalarGoblinChoiceDialogue(10, gameStartScreen);
-      var displayIntroText = new DisplayIntroText(10);
-      cinematicMode = new CinematicMode(49, displayIntroText);
-      gameStartQueue.Add(goblinZandalarPick);
-      gameStartQueue.Add(cinematicMode);
-      gameStartQueue.Add(gameTime);
     }
   }
 }

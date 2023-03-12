@@ -12,11 +12,16 @@ namespace MacroTools
   {
     private const float TurnDuration = 60;
 
+    /// <summary>
+    /// How long after game start to actually show the timer.
+    /// </summary>
+    private const float TimerDelay = 2;
+
     //This must be after the Multiboard is shown or the Multiboard will break
     private static timer? _gameTimer;
     private static timer? _turnTimer;
     private static timerdialog? _turnTimerDialog;
-    private static int _turnCount = 1;
+    private static int _turnCount;
     private static float _currentTime;
 
     /// <summary>
@@ -43,8 +48,10 @@ namespace MacroTools
       var trig = CreateTrigger();
       TriggerRegisterTimerEvent(trig, 0, false);
       TriggerAddAction(trig, Actions);
-      TimerDialogDisplay(_turnTimerDialog, true);
-      TimerDialogSetTitle(_turnTimerDialog, $"Turn {I2S(_turnCount)}");
+
+      trig = CreateTrigger();
+      TriggerRegisterTimerEvent(trig, TimerDelay, false);
+      TriggerAddAction(trig, ShowTimer); ;
     }
   
     /// <returns>The number of seconds that have elapsed since the start of the game</returns>
@@ -64,6 +71,12 @@ namespace MacroTools
     private static void GameTick()
     {
       _currentTime += 1;
+    }
+
+    private static void ShowTimer()
+    {
+      TimerDialogDisplay(_turnTimerDialog, true);
+      TimerDialogSetTitle(_turnTimerDialog, "Game starts in:");
     }
 
     private void Actions()

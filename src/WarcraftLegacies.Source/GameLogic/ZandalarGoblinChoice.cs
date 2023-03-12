@@ -20,7 +20,7 @@ namespace WarcraftLegacies.Source.GameLogic
     private readonly trigger? YesTrigger;
     private readonly trigger? NoTrigger;
     private readonly float _duration;
-    private readonly GameSetupDialogue _gameSetupScreen;
+
     private bool _factionPicked;
     private timer? _timer;
 
@@ -28,10 +28,9 @@ namespace WarcraftLegacies.Source.GameLogic
     /// 
     /// </summary>
     /// <param name="duration"></param>
-    /// <param name="gameSetupScreen">This starts playing at the same time as <see cref="ZandalarGoblinChoiceDialogue"/></param>
-    public ZandalarGoblinChoiceDialogue(float duration, GameSetupDialogue gameSetupScreen)
+    public ZandalarGoblinChoiceDialogue(float duration)
     {
-      _gameSetupScreen = gameSetupScreen;
+   
       PickDialogue = DialogCreate();
       NoButton = DialogAddButton(PickDialogue, "Zandalari", 0);
       YesButton = DialogAddButton(PickDialogue, "Goblins", 0);
@@ -48,7 +47,6 @@ namespace WarcraftLegacies.Source.GameLogic
       StartFactionPick();
       _timer = CreateTimer();
       TimerStart(_timer, _duration, false, ConcludeFactionPick);
-      _gameSetupScreen.StartTimer();
     }
 
     private void StartFactionPick()

@@ -1,5 +1,6 @@
 ﻿using MacroTools.Extensions;
 using System;
+using System.Linq;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.GameLogic
@@ -41,16 +42,17 @@ namespace WarcraftLegacies.Source.GameLogic
 
       _musicTimer = CreateTimer();
       TimerStart(_musicTimer, 2.1f, false, PlayFactionMusic);
-      FogEnable(false);
-      FogMaskEnable(false);
 
+      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers().Where(p => p != Player(PLAYER_NEUTRAL_PASSIVE) || p != Player(PLAYER_NEUTRAL_AGGRESSIVE)))
+        foreach (var unit in CreateGroup().EnumUnitsOfPlayer(player).EmptyToList())
+          PauseUnit(unit, true);
+        
+  
       Player(21).ApplyCameraField(CAMERA_FIELD_TARGET_DISTANCE, 2400, 1.00f);
       Player(19).ApplyCameraField(CAMERA_FIELD_TARGET_DISTANCE, 2400, 1.00f);
       Player(8).ApplyCameraField(CAMERA_FIELD_TARGET_DISTANCE, 2400, 1.00f);
 
-      ShowInterface(false, 0.5f);
-      ForceCinematicSubtitles(true);
-      EnableUserControl(false);
+
       _state = CinematicState.Active;
       _linkedTimer.StartTimer();
     }
@@ -69,11 +71,6 @@ namespace WarcraftLegacies.Source.GameLogic
       if (_state != CinematicState.Active)
         return;
 
-      FogEnable(true);
-      ResetToGameCamera(1);
-      ShowInterface(true, 2);
-      EnableUserControl(true);
-      ForceCinematicSubtitles(false);
       SetMapMusic("music", true, 0);
       SetCameraField(CAMERA_FIELD_TARGET_DISTANCE, 2400f, 1f);
 
@@ -83,6 +80,10 @@ namespace WarcraftLegacies.Source.GameLogic
       DestroyTimer(_cinermaticTimer);
       DestroyTimer(_musicTimer);
       _state = CinematicState.Finished;
+      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers().Where(p => p != Player(PLAYER_NEUTRAL_PASSIVE) || p != Player(PLAYER_NEUTRAL_AGGRESSIVE)))
+        foreach (var unit in CreateGroup().EnumUnitsOfPlayer(player).EmptyToList())
+          PauseUnit(unit, false);
+
       OnTimerEnds?.Invoke(this, new EventArgs());
     }
 
