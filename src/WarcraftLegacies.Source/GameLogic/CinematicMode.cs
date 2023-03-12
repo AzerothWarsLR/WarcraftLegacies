@@ -8,12 +8,12 @@ namespace WarcraftLegacies.Source.GameLogic
   /// Used to engage cinematic mode, which prevents players from taking actions and manipulates sound
   /// and weather effects for a cinematic experience.
   /// </summary>
-  public class CinematicMode : ILinkedTimer
+  public class CinematicMode : ITimer
   {
     private timer _cinermaticTimer;
     private timer _musicTimer;
     private CinematicState _state = CinematicState.Inactive;
-    private readonly ILinkedTimer _linkedTimer;
+    private readonly ITimer _linkedTimer;
 
     private float Timeout { get; }
 
@@ -26,7 +26,7 @@ namespace WarcraftLegacies.Source.GameLogic
     /// </summary>
     /// <param name="timeout">How long cinematic mode should last.</param>
     /// <param name="linkedTimer">this timer will start at the same time as cinematic mosw</param>
-    public CinematicMode(float timeout, ILinkedTimer linkedTimer)
+    public CinematicMode(float timeout, ITimer linkedTimer)
     {
       Timeout = timeout;
       _linkedTimer = linkedTimer;

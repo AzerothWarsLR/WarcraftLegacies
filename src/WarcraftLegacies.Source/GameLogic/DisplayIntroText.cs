@@ -7,7 +7,7 @@ namespace WarcraftLegacies.Source.GameLogic
   /// <summary>
   /// Display intro text to all players after some period of time has elapsed.
   /// </summary>
-  public class DisplayIntroText : ILinkedTimer
+  public class DisplayIntroText : ITimer
   {
     /// <inheritdoc/>
     public EventHandler? OnTimerEnds { get; set; }

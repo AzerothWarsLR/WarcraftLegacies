@@ -30,31 +30,10 @@ namespace WarcraftLegacies.Source.Setup
     public static void Setup()
     {
       TestMode.Setup();
-      var gameTime = new GameTime();
-      var gameStartQueue = new TimerQueue();
-      var gameStartScreen = new GameSetupScreen(10);
-      var goblinZandalarPick = new ZandalarGoblinChoice(10, gameStartScreen);
-      var displayIntroText = new DisplayIntroText(10);
-      var cinematicMode = new CinematicMode(49, displayIntroText);
-      gameStartQueue.Add(goblinZandalarPick);
-      gameStartQueue.Add(cinematicMode);
-      gameStartQueue.Add(gameTime);
-      ControlPointManager.Instance = new ControlPointManager
-      {
-        StartingMaxHitPoints = 1400,
-        HostileStartingCurrentHitPoints = 1000,
-        RegenerationAbility = Constants.ABILITY_A0UT_CP_LIFE_REGEN,
-        IncreaseControlLevelAbilityTypeId = Constants.ABILITY_A0A8_FORTIFY_CONTROL_POINTS_SHARED,
-        ControlLevelSettings = new ControlLevelSettings
-        {
-          DefaultDefenderUnitTypeId = Constants.UNIT_H03W_CONTROL_POINT_DEFENDER_LORDAERON,
-          DamageBase = 18,
-          DamagePerControlLevel = 1,
-          ArmorPerControlLevel = 1,
-          HitPointsPerControlLevel = 70,
-          ControlLevelMaximum = 20
-        }
-      };
+      TimerQueue gameStartQueue;
+      CinematicMode cinematicMode;
+      SetupStartOfGameTimerQueue(out gameStartQueue, out cinematicMode);
+      SetupControlPointManager();
       var preplacedUnitSystem = new PreplacedUnitSystem();
       SoundLibrary.Setup();
       var artifactSetup = new ArtifactSetup(preplacedUnitSystem);
@@ -75,7 +54,6 @@ namespace WarcraftLegacies.Source.Setup
       CommandSetup.Setup(commandManager);
       ControlPointVictory.Setup();
       SilvermoonDies.Setup(allLegendSetup.Quelthalas.Sunwell);
- 
       FactionMultiboard.Setup();
       BookSetup.Setup();
       HintConfig.Setup();
@@ -149,6 +127,39 @@ namespace WarcraftLegacies.Source.Setup
       CenariusGhost.Setup(allLegendSetup.Druids);
       HelmOfDominationDropsWhenScourgeLeaves.Setup(artifactSetup.HelmOfDomination, allLegendSetup.Scourge.TheFrozenThrone);
       TagSummonedUnits.Setup();
+    }
+
+    private static void SetupControlPointManager()
+    {
+      ControlPointManager.Instance = new ControlPointManager
+      {
+        StartingMaxHitPoints = 1400,
+        HostileStartingCurrentHitPoints = 1000,
+        RegenerationAbility = Constants.ABILITY_A0UT_CP_LIFE_REGEN,
+        IncreaseControlLevelAbilityTypeId = Constants.ABILITY_A0A8_FORTIFY_CONTROL_POINTS_SHARED,
+        ControlLevelSettings = new ControlLevelSettings
+        {
+          DefaultDefenderUnitTypeId = Constants.UNIT_H03W_CONTROL_POINT_DEFENDER_LORDAERON,
+          DamageBase = 18,
+          DamagePerControlLevel = 1,
+          ArmorPerControlLevel = 1,
+          HitPointsPerControlLevel = 70,
+          ControlLevelMaximum = 20
+        }
+      };
+    }
+
+    private static void SetupStartOfGameTimerQueue(out TimerQueue gameStartQueue, out CinematicMode cinematicMode)
+    {
+      gameStartQueue = new TimerQueue();
+      var gameTime = new GameTime();
+      var gameStartScreen = new GameSetupDialogue(10);
+      var goblinZandalarPick = new ZandalarGoblinChoiceDialogue(10, gameStartScreen);
+      var displayIntroText = new DisplayIntroText(10);
+      cinematicMode = new CinematicMode(49, displayIntroText);
+      gameStartQueue.Add(goblinZandalarPick);
+      gameStartQueue.Add(cinematicMode);
+      gameStartQueue.Add(gameTime);
     }
   }
 }

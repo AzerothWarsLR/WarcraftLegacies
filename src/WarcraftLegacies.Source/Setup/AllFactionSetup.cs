@@ -23,6 +23,7 @@ namespace WarcraftLegacies.Source.Setup
       IllidariSetup.Setup();
       GoblinSetup.Setup();
       DraeneiSetup.Setup();
+      ZandalarSetup.Setup(preplacedUnitSystem);
     }
   }
 }

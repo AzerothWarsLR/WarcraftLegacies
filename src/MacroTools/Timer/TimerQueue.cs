@@ -4,25 +4,29 @@ using System.Collections.Generic;
 namespace WarcraftLegacies.Source.GameLogic
 {
   /// <summary>
-  /// 
+  /// Allows chaining timers together so they run one after the other seamlessly
   /// </summary>
   public partial class TimerQueue
   {
-    private Queue<ILinkedTimer> Queue = new();
+    private Queue<ITimer> Queue = new();
 
-    private ILinkedTimer _currentTimer;
+    private ITimer _currentTimer;
 
     /// <summary>
-    /// 
+    /// Adds a timer to the queue.
     /// </summary>
     /// <param name="linkedTimer"></param>
-    public void Add(ILinkedTimer linkedTimer)
+    public void Add(ITimer linkedTimer)
     {
       Queue.Enqueue(linkedTimer);
     }
 
     /// <summary>
-    /// 
+    /// Starts the queue.
+    /// <para/>
+    /// Dequeues the first timer and chains it to the next one.
+    /// <para/>
+    /// Then starts the first timer.
     /// </summary>
     public void Start()
     {

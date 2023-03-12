@@ -4,7 +4,11 @@ using static War3Api.Common;
 
 namespace MacroTools
 {
-  public class GameTime: ILinkedTimer
+  /// <summary>
+  ///  Á Dialogue that counts the elapsed game time, displayed in number of turns passed.
+  ///  One turn passes every 60 seconds.
+  /// </summary>
+  public class GameTime: ITimer
   {
     private const float TurnDuration = 60;
 
@@ -20,8 +24,12 @@ namespace MacroTools
     /// </summary>
     public static event EventHandler? TurnEnded;
 
+    /// <inheritdoc/>
     public EventHandler? OnTimerEnds { get; set; }
 
+    /// <summary>
+    /// 
+    /// </summary>
     public GameTime()
     {
       _gameTimer = CreateTimer();
@@ -29,6 +37,7 @@ namespace MacroTools
       _turnTimerDialog = CreateTimerDialog(_turnTimer);
    
     }
+    /// <inheritdoc/>
     public void StartTimer()
     {
       var trig = CreateTrigger();

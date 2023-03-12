@@ -1,6 +1,4 @@
-﻿using MacroTools.Cheats;
-using MacroTools.Extensions;
-using MacroTools.Frames;
+﻿using MacroTools.Extensions;
 using System;
 using WarcraftLegacies.Source.Setup;
 using WarcraftLegacies.Source.Setup.FactionSetup;
@@ -9,9 +7,9 @@ using static War3Api.Common;
 namespace WarcraftLegacies.Source.GameLogic
 {
   /// <summary>
-  /// 
+  /// A Dialogue where a player can choose between Zandalar and Goblin
   /// </summary>
-  public class ZandalarGoblinChoice : ILinkedTimer
+  public class ZandalarGoblinChoiceDialogue : ITimer
   {
     /// <inheritdoc/>
     public EventHandler? OnTimerEnds { get; set; }
@@ -22,7 +20,7 @@ namespace WarcraftLegacies.Source.GameLogic
     private readonly trigger? YesTrigger;
     private readonly trigger? NoTrigger;
     private readonly float _duration;
-    private readonly GameSetupScreen _gameSetupScreen;
+    private readonly GameSetupDialogue _gameSetupScreen;
     private bool _factionPicked;
     private timer? _timer;
 
@@ -30,11 +28,9 @@ namespace WarcraftLegacies.Source.GameLogic
     /// 
     /// </summary>
     /// <param name="duration"></param>
-    /// <param name="gameSetupScreen"></param>
-    public ZandalarGoblinChoice(float duration, GameSetupScreen gameSetupScreen)
+    /// <param name="gameSetupScreen">This starts playing at the same time as <see cref="ZandalarGoblinChoiceDialogue"/></param>
+    public ZandalarGoblinChoiceDialogue(float duration, GameSetupDialogue gameSetupScreen)
     {
-
-
       _gameSetupScreen = gameSetupScreen;
       PickDialogue = DialogCreate();
       NoButton = DialogAddButton(PickDialogue, "Zandalari", 0);
@@ -101,63 +97,4 @@ namespace WarcraftLegacies.Source.GameLogic
       ConcludeFactionPick();
     }
   }
-
-  public class GameSetupScreen : ILinkedTimer
-  {
-    /// <inheritdoc/>
-    public EventHandler? OnTimerEnds { get; set; }
-
-    private timer? _timer;
-    private readonly dialog waitDialogue;
-    private readonly float _duration;
-
-    /// <summary>
-    /// 
-    /// </summary>
-    /// <param name="duration"></param>
-    public GameSetupScreen(float duration)
-    {
-      waitDialogue = DialogCreate();
-      _duration = duration;
-      DialogSetMessage(waitDialogue, "Game is setting up");
-      // Required to be able to test the map in single player because timers are halted
-      // when dialogue is being displayed
-      if (TestMode.AreCheatsActive)
-      {
-        DialogSetMessage(waitDialogue, "Game is in test mode");
-        var closeButton  = DialogAddButton(waitDialogue, "Close", 0);
-        var trigger = CreateTrigger();
-        TriggerRegisterDialogButtonEvent(trigger, closeButton);
-        TriggerAddAction(trigger, CloseDialogue);
-      }
-    }
-
-    /// <inheritdoc/>
-    public void StartTimer()
-    {
-      OpenDialogue();
-      _timer = CreateTimer();
-      TimerStart(_timer, _duration, false, CloseDialogue);
-    }
-
-    private void OpenDialogue()
-    {
-      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
-        if (GetLocalPlayer() == player && player != Player(8))
-          DialogDisplay(player, waitDialogue, true);
-    }
-
-    private void CloseDialogue()
-    {
-      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
-        if (GetLocalPlayer() == player && player != Player(8))
-          DialogDisplay(player, waitDialogue, false);
-
-      DialogClear(waitDialogue);
-      DialogDestroy(waitDialogue);
-      DestroyTimer(_timer);
-      OnTimerEnds?.Invoke(this, new EventArgs());
-    }
-  }
-
 }
