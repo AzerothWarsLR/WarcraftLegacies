@@ -55,7 +55,9 @@ namespace WarcraftLegacies.Source.Setup.Spells
       PassiveAbilityManager.Register(new Execute(Constants.UNIT_O01L_EXECUTIONER_FEL_HORDE_ELITE)
       {
         DamageMultNonResistant = 5,
-        DamageMultResistant = 2.5f
+        DamageMultResistant = 2.5f,
+        DamageMultCapital = 1,
+        DamageMultControlPoint = 1
       });
 
       SpellSystem.Register(new Devour(Constants.ABILITY_A0TU_DEVOUR_BLACK_DRAKE)
