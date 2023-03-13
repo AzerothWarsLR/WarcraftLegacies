@@ -20,7 +20,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
       Dagran = new LegendaryHero("Dagran Thaurissan")
       {
         UnitType = FourCC("H03G"),
-        StartingXp = 1000
+        StartingXp = 7000
       };
 
       Falstad = new LegendaryHero("Falstad Wildhammer")
@@ -35,7 +35,6 @@ namespace WarcraftLegacies.Source.Setup.Legends
         DeathMessage = "King Magni Bronzebeard has died.", //Todo: bad flavour
         StartingXp = 1000
       };
-      Magni.AddUnitDependency(preplacedUnitSystem.GetUnit(FourCC("h001")));
 
       GreatForge = new Capital()
       {

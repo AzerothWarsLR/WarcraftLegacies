@@ -22,7 +22,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
         "ReplaceableTextures\\CommandButtons\\BTNRedDragon.blp")
       {
         StartingGold = 250,
-        StartingLumber = 500,
+        StartingLumber = 700,
         IntroText = @"You are playing as the fragmented |cffe4bc00Dragonmaw Clan.
                     |r
 Your situation is dire, you have been pushed into the Twilight Highlands and the Dwarves will soon attack whatever is left of your clan.

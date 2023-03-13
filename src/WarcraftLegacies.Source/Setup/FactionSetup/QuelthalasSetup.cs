@@ -18,7 +18,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
         {
           UndefeatedResearch = FourCC("R05U"),
           StartingGold = 200,
-          StartingLumber = 500,
+          StartingLumber = 700,
           CinematicMusic = "BloodElfTheme",
           ControlPointDefenderUnitTypeId = Constants.UNIT_N0BC_CONTROL_POINT_DEFENDER_QUELTHALAS,
           IntroText = @"You are playing as the proud |cff32e1e1Kingdom of Quel'thalas|r.

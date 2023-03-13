@@ -12589,7 +12589,7 @@ Q
 }
 
 STRING 2099
-// Units: n07F (Ny'alotha Portal), EditorSuffix (Name - Editor Suffix)
+// Units: n0BT (Entrance Only), EditorSuffix (Name - Editor Suffix)
 {
 (Green - twilight highlands)
 }
@@ -18696,6 +18696,12 @@ STRING 3116
 A
 }
 
+STRING 3117
+// Units: n07F (Emerald Portal), EditorSuffix (Name - Editor Suffix)
+{
+(dragon portals)
+}
+
 STRING 3118
 // Units: O04H (Fire Ascendant), EditorSuffix (Name - Editor Suffix)
 {
@@ -19044,10 +19050,28 @@ STRING 3175
 AAASpell Resistance
 }
 
+STRING 3176
+// Units: n07F (Emerald Portal), Name (Name)
+{
+Emerald Portal
+}
+
 STRING 3177
 // Units: h0B1 (Fireship), Hotkey (Hotkey)
 {
 S
+}
+
+STRING 3178
+// Units: n04S (Taerar), Name (Name)
+{
+Taerar
+}
+
+STRING 3179
+// Units: n04X (Ysondre), Name (Name)
+{
+Ysondre
 }
 
 STRING 3180
@@ -23978,6 +24002,12 @@ STRING 4001
 // Units: E00K (Archdruid of Darnassus), Revivetip (Tooltip - Revive)
 {
 Revive Archdruid
+}
+
+STRING 4002
+// Units: n054 (Emeriss), Name (Name)
+{
+Emeriss
 }
 
 STRING 4003
@@ -60068,6 +60098,12 @@ STRING 10013
 // Abilities: A0DM (Great Holy Aura), Ubertip (Tooltip - Normal - Extended)
 {
 Increases nearby friendly units' movement speed by 20% and life regeneration rate by 3.5.
+}
+
+STRING 10014
+// Units: n05O (Lethon), Name (Name)
+{
+Lethon
 }
 
 STRING 10015
@@ -98518,12 +98554,6 @@ STRING 16455
 Z
 }
 
-STRING 16456
-// Units: n07F (Ny'alotha Portal), Name (Name)
-{
-Ny'alotha Portal
-}
-
 STRING 16457
 // Units: h08N (Dreadguard), Tip (Tooltip - Basic)
 {
@@ -106289,12 +106319,6 @@ STRING 17755
 Shrine of Goldrinn (10gold/min)
 }
 
-STRING 17756
-// Units: n0BJ (Frostwhisper Gorge (10gold/min)), Name (Name)
-{
-Frostwhisper Gorge (10gold/min)
-}
-
 STRING 17757
 // Units: n0BK (Lost City of the Tol'vir (25gold/min)), Name (Name)
 {
@@ -108407,12 +108431,6 @@ STRING 18132
 // Upgrades: R085 (Chaos), Name (Name)
 {
 Quest Completed: Beyond the Dark Portal
-}
-
-STRING 18133
-// Units: n0BT (Entrance Only), EditorSuffix (Name - Editor Suffix)
-{
-(Green - twilight highlands)
 }
 
 STRING 18134
