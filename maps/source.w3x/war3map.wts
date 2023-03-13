@@ -12589,7 +12589,7 @@ Q
 }
 
 STRING 2099
-// Units: n07F (Ny'alotha Portal), EditorSuffix (Name - Editor Suffix)
+// Units: n0BT (Entrance Only), EditorSuffix (Name - Editor Suffix)
 {
 (Green - twilight highlands)
 }
@@ -18696,6 +18696,12 @@ STRING 3116
 A
 }
 
+STRING 3117
+// Units: n07F (Emerald Portal), EditorSuffix (Name - Editor Suffix)
+{
+(dragon portals)
+}
+
 STRING 3118
 // Units: O04H (Fire Ascendant), EditorSuffix (Name - Editor Suffix)
 {
@@ -19042,6 +19048,12 @@ STRING 3175
 // Abilities: A07C (AAASpell Resistance), Name (Name)
 {
 AAASpell Resistance
+}
+
+STRING 3176
+// Units: n07F (Emerald Portal), Name (Name)
+{
+Emerald Portal
 }
 
 STRING 3177
@@ -98518,12 +98530,6 @@ STRING 16455
 Z
 }
 
-STRING 16456
-// Units: n07F (Ny'alotha Portal), Name (Name)
-{
-Ny'alotha Portal
-}
-
 STRING 16457
 // Units: h08N (Dreadguard), Tip (Tooltip - Basic)
 {
@@ -108401,12 +108407,6 @@ STRING 18132
 // Upgrades: R085 (Chaos), Name (Name)
 {
 Quest Completed: Beyond the Dark Portal
-}
-
-STRING 18133
-// Units: n0BT (Entrance Only), EditorSuffix (Name - Editor Suffix)
-{
-(Green - twilight highlands)
 }
 
 STRING 18134
