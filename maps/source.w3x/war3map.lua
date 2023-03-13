@@ -325,6 +325,10 @@ gg_rct_MaelstromChannel = nil
 gg_rct_FeathermoonCreeps = nil
 gg_rct_AuberdineUnlock = nil
 gg_rct_KaliRock9 = nil
+gg_rct_HinterEmeraldPortal = nil
+gg_rct_DuskwoodEmeraldPortal = nil
+gg_rct_FeralasEmeraldPortal = nil
+gg_rct_AshenvaleEmeraldPortal = nil
 gg_snd_ArcaneObservatoryWhat1 = nil
 gg_snd_ArrangedTeamInvitation = nil
 gg_snd_ClanInvitation = nil
@@ -513,10 +517,6 @@ gg_snd_DoorCloseRemix = nil
 gg_snd_DoorOpenRemix = nil
 gg_snd_NuclearLaunchDetected = nil
 gg_snd_IllidansTheme = ""
-gg_rct_HinterEmeraldPortal = nil
-gg_rct_DuskwoodEmeraldPortal = nil
-gg_rct_FeralasEmeraldPortal = nil
-gg_rct_AshenvaleEmeraldPortal = nil
 function InitGlobals()
 end
 
@@ -4344,7 +4344,11 @@ function CreateNeutralHostile()
     u = BlzCreateUnitWithSkin(p, FourCC("nfsp"), 16430.8, 3532.0, 222.600, FourCC("nfsp"))
     SetUnitState(u, UNIT_STATE_MANA, 200)
     SetUnitAcquireRange(u, 200.0)
+    u = BlzCreateUnitWithSkin(p, FourCC("n04S"), -17907.7, -6308.4, 28.690, FourCC("n04S"))
+    SetUnitAcquireRange(u, 200.0)
     u = BlzCreateUnitWithSkin(p, FourCC("nscb"), -320.6, 662.2, 166.920, FourCC("nscb"))
+    SetUnitAcquireRange(u, 200.0)
+    u = BlzCreateUnitWithSkin(p, FourCC("n04X"), -12029.9, 5059.2, 48.670, FourCC("n04X"))
     SetUnitAcquireRange(u, 200.0)
     u = BlzCreateUnitWithSkin(p, FourCC("nbrg"), 13322.2, 6364.1, 187.420, FourCC("nbrg"))
     SetUnitAcquireRange(u, 200.0)
@@ -5245,6 +5249,8 @@ function CreateNeutralHostile()
     SetUnitAcquireRange(u, 200.0)
     u = BlzCreateUnitWithSkin(p, FourCC("nsgh"), 1027.2, 8125.6, 256.572, FourCC("nsgh"))
     SetUnitAcquireRange(u, 200.0)
+    u = BlzCreateUnitWithSkin(p, FourCC("n054"), 17543.0, 6501.6, 59.500, FourCC("n054"))
+    SetUnitAcquireRange(u, 200.0)
     u = BlzCreateUnitWithSkin(p, FourCC("nwlt"), -16515.4, -9977.8, 216.641, FourCC("nwlt"))
     SetUnitAcquireRange(u, 200.0)
     u = BlzCreateUnitWithSkin(p, FourCC("ntrh"), 18247.3, -15732.1, 216.077, FourCC("ntrh"))
@@ -5323,6 +5329,8 @@ function CreateNeutralHostile()
     SetUnitState(u, UNIT_STATE_MANA, 400)
     SetUnitAcquireRange(u, 200.0)
     u = BlzCreateUnitWithSkin(p, FourCC("nplb"), 3586.8, 23014.2, 173.980, FourCC("nplb"))
+    SetUnitAcquireRange(u, 200.0)
+    u = BlzCreateUnitWithSkin(p, FourCC("n05O"), 11195.4, -15801.2, 293.680, FourCC("n05O"))
     SetUnitAcquireRange(u, 200.0)
     u = BlzCreateUnitWithSkin(p, FourCC("nenc"), -15282.3, -12116.2, 266.000, FourCC("nenc"))
     SetUnitAcquireRange(u, 200.0)
@@ -6283,7 +6291,7 @@ function CreateNeutralPassiveBuildings()
     SetUnitState(u, UNIT_STATE_MANA, 1000)
     u = BlzCreateUnitWithSkin(p, FourCC("o028"), -8000.0, 320.0, 270.000, FourCC("o028"))
     u = BlzCreateUnitWithSkin(p, FourCC("h05P"), 10240.0, 4864.0, 270.000, FourCC("h05P"))
-    u = BlzCreateUnitWithSkin(p, FourCC("n07F"), 11199.4, -15703.6, 270.000, FourCC("n07F"))
+    u = BlzCreateUnitWithSkin(p, FourCC("n07F"), 11135.4, -15639.6, 270.000, FourCC("n07F"))
     u = BlzCreateUnitWithSkin(p, FourCC("o028"), -9728.0, -768.0, 270.000, FourCC("o028"))
     u = BlzCreateUnitWithSkin(p, FourCC("o028"), -9344.0, -1024.0, 270.000, FourCC("o028"))
     u = BlzCreateUnitWithSkin(p, FourCC("o01T"), -9696.0, -608.0, 270.000, FourCC("o01T"))

@@ -19062,6 +19062,18 @@ STRING 3177
 S
 }
 
+STRING 3178
+// Units: n04S (Taerar), Name (Name)
+{
+Taerar
+}
+
+STRING 3179
+// Units: n04X (Ysondre), Name (Name)
+{
+Ysondre
+}
+
 STRING 3180
 // Buffs/Effects: B07D (), Buffubertip (Tooltip - Extended)
 {
@@ -23990,6 +24002,12 @@ STRING 4001
 // Units: E00K (Archdruid of Darnassus), Revivetip (Tooltip - Revive)
 {
 Revive Archdruid
+}
+
+STRING 4002
+// Units: n054 (Emeriss), Name (Name)
+{
+Emeriss
 }
 
 STRING 4003
@@ -60080,6 +60098,12 @@ STRING 10013
 // Abilities: A0DM (Great Holy Aura), Ubertip (Tooltip - Normal - Extended)
 {
 Increases nearby friendly units' movement speed by 20% and life regeneration rate by 3.5.
+}
+
+STRING 10014
+// Units: n05O (Lethon), Name (Name)
+{
+Lethon
 }
 
 STRING 10015
