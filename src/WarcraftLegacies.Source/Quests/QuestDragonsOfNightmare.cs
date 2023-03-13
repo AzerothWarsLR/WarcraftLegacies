@@ -1,9 +1,12 @@
 ﻿using MacroTools;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
+using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
+using WCSharp.Shared;
+using WCSharp.Shared.Data;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests
@@ -18,9 +21,10 @@ namespace WarcraftLegacies.Source.Quests
     private readonly string _portalOneLocation;
     private readonly string _portalTwoLocation;
 
-    private readonly unit _innerWaygate;
-    private readonly unit _outerWaygate;
-
+    private readonly unit _waygateOne;
+    private readonly unit _waygateTwo;
+    private readonly Rectangle _wayGateOneDestination;
+    private readonly Rectangle _wayGateTwoDestination;
     private timer _timer;
 
 
@@ -31,39 +35,58 @@ namespace WarcraftLegacies.Source.Quests
     /// <param name="nightmareDragonEk">The unit that has to be killed to complete the objective</param>
     /// <param name="portalOneLocation">The name of the first portal's location</param>
     /// <param name="portalTwoLocation">The name of the second portal's location</param>
-    /// <param name="preplacedUnitSystem">A system for finding preplaced units</param>
-    public QuestDragonsOfNightmare(unit nightmareDragonKalimdor, unit nightmareDragonEk, string portalOneLocation, string portalTwoLocation, PreplacedUnitSystem preplacedUnitSystem) : base("Dragons of Nightmare",
-      "Ragnaros hides within the Elemental Plane known as the Firelands. Outside Shadowforge City, the Dark Iron dwarves have been trying to summon him forth into Azeroth. Their efforts until now have proved ineffective, but we could succeed where they have not.",
-      @"ReplaceableTextures\CommandButtons\BTNHeroAvatarOfFlame.blp")
+    /// <param name="waygateOne"></param>
+    /// <param name="waygateTwo"></param>
+    /// <param name="wayGateOneDestination"></param>
+    /// <param name="wayGateTwoDestination"></param>
+    public QuestDragonsOfNightmare(unit nightmareDragonKalimdor, unit nightmareDragonEk, string portalOneLocation, string portalTwoLocation, unit waygateOne, unit waygateTwo, Rectangle wayGateOneDestination, Rectangle wayGateTwoDestination, string icon) : base($"{nightmareDragonKalimdor.GetProperName()} and {nightmareDragonEk.GetProperName()}",
+     "Once protectors of the Emerald Dream, the now corrupted dragons came to Azeroth to spread the corruption. Stop them before the corruption begins to spread.",
+      @$"ReplaceableTextures\CommandButtons\{icon}.blp")
     {
+      _waygateOne = waygateOne;
+      _waygateTwo = waygateTwo;
+      _wayGateOneDestination = wayGateOneDestination;
+      _wayGateTwoDestination = wayGateTwoDestination;
       _nightmareDragonKalimdor = nightmareDragonKalimdor.Show(false);
       _nightmareDragonEk = nightmareDragonEk.Show(false);
+      _nightmareDragonKalimdor = nightmareDragonKalimdor;
+      _nightmareDragonEk = nightmareDragonEk;
       _portalOneLocation = portalOneLocation;
       _portalTwoLocation = portalTwoLocation;
       AddObjective(new ObjectiveKillUnit(nightmareDragonKalimdor));
       AddObjective(new ObjectiveKillUnit(nightmareDragonEk));
-      AddObjective(new ObjectiveTime(2700));
-      _timer = CreateTimer().Start(2700, false, OnTimeElapsed);
+      AddObjective(new ObjectiveTime(27));
+      _timer = CreateTimer().Start(27, false, OnTimeElapsed);
 
     }
 
     private void OnTimeElapsed()
     {
       DestroyTimer(_timer);
+      foreach (var player in Util.EnumeratePlayers())
+      {
+        DisplayTextToPlayer(player, 0, 0, $"\n|cff590ff7 NIGHTMARE DRAGONS SPAWNED \n|r {_nightmareDragonKalimdor.GetProperName()} and {_nightmareDragonEk.GetProperName()} have appeared in {_portalOneLocation} and {_portalTwoLocation}.");
+        StartSound(SoundLibrary.Warning);
+      }
       _nightmareDragonEk.Show(true);
       _nightmareDragonKalimdor.Show(true);
     }
+    
+    /// <inheritdoc/>
+    protected override string RewardDescription => $"A portal between {_portalOneLocation} and {_portalTwoLocation} opens";
 
     /// <inheritdoc/>
-    protected override string RewardDescription => $"A portal between {_portalOneLocation} and {_portalTwoLocation} is now open";
-
-    /// <inheritdoc/>
-    protected override string RewardFlavour => $"The Nightmare Dragons {_nightmareDragonKalimdor.GetProperName()} and {_nightmareDragonEk.GetProperName()} have been defeated.";
+    protected override string RewardFlavour => $"The Dragons of Nightmare {_nightmareDragonKalimdor.GetProperName()} and {_nightmareDragonEk.GetProperName()} have been defeated.";
 
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
     {
-
+      _waygateOne
+     .Show(true)
+     .SetWaygateDestination(_wayGateOneDestination.Center);
+      _waygateTwo
+        .Show(true)
+        .SetWaygateDestination(_wayGateTwoDestination.Center);
     }
   }
 }
