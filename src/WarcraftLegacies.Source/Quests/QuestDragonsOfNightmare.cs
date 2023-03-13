@@ -35,10 +35,11 @@ namespace WarcraftLegacies.Source.Quests
     /// <param name="nightmareDragonEk">The unit that has to be killed to complete the objective</param>
     /// <param name="portalOneLocation">The name of the first portal's location</param>
     /// <param name="portalTwoLocation">The name of the second portal's location</param>
-    /// <param name="waygateOne"></param>
-    /// <param name="waygateTwo"></param>
+    /// <param name="waygateOne">the waygate at the first location</param>
+    /// <param name="waygateTwo">the waygate at the second location</param>
     /// <param name="wayGateOneDestination"></param>
     /// <param name="wayGateTwoDestination"></param>
+    /// <param name="icon">the icon shown in the quest menu</param>
     public QuestDragonsOfNightmare(unit nightmareDragonKalimdor, unit nightmareDragonEk, string portalOneLocation, string portalTwoLocation, unit waygateOne, unit waygateTwo, Rectangle wayGateOneDestination, Rectangle wayGateTwoDestination, string icon) : base($"{nightmareDragonKalimdor.GetProperName()} and {nightmareDragonEk.GetProperName()}",
      "Once protectors of the Emerald Dream, the now corrupted dragons came to Azeroth to spread the corruption. Stop them before the corruption begins to spread.",
       @$"ReplaceableTextures\CommandButtons\{icon}.blp")
