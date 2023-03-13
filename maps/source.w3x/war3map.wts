@@ -106289,12 +106289,6 @@ STRING 17755
 Shrine of Goldrinn (10gold/min)
 }
 
-STRING 17756
-// Units: n0BJ (Frostwhisper Gorge (10gold/min)), Name (Name)
-{
-Frostwhisper Gorge (10gold/min)
-}
-
 STRING 17757
 // Units: n0BK (Lost City of the Tol'vir (25gold/min)), Name (Name)
 {

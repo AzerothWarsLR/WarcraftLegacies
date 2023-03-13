@@ -15,7 +15,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
         "ReplaceableTextures\\CommandButtons\\BTNArthas.blp")
       {
         StartingGold = 200,
-        StartingLumber = 500,
+        StartingLumber = 700,
         UndefeatedResearch = FourCC("R05M"),
         CinematicMusic = "Comradeship",
         ControlPointDefenderUnitTypeId = Constants.UNIT_H03W_CONTROL_POINT_DEFENDER_LORDAERON,

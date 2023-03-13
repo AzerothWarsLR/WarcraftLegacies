@@ -14,7 +14,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
         "ReplaceableTextures\\CommandButtons\\BTNHeadHunterBerserker.blp")
       {
         StartingGold = 200,
-        StartingLumber = 500,
+        StartingLumber = 700,
         IntroText = @"You are playing as the mighty |cffe1946cZandalari Empire|r.
 
 You start off on Zandalar. Raise an army and deal with the uprising in Nazmir, then head West to Crestfall to claim more gold mines. 

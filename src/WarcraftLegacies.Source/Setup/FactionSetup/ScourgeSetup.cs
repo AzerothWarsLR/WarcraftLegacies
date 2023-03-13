@@ -18,7 +18,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
       {
         UndefeatedResearch = FourCC("R05K"),
         StartingGold = 200,
-        StartingLumber = 500,
+        StartingLumber = 700,
         CinematicMusic = "ArthasTheme",
         ControlPointDefenderUnitTypeId = Constants.UNIT_U028_CONTROL_POINT_DEFENDER_SCOURGE,
         IntroText = @"You are playing as the the horrific Undead Scourge.

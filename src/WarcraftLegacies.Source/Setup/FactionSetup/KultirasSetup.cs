@@ -16,7 +16,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
           "Kul'tiras", PLAYER_COLOR_EMERALD, "|cff00781e", "ReplaceableTextures\\CommandButtons\\BTNProudmoore.blp")
           {
             StartingGold = 200,
-            StartingLumber = 500,
+            StartingLumber = 700,
             ControlPointDefenderUnitTypeId = Constants.UNIT_H09W_CONTROL_POINT_DEFENDER_KUL_TIRAS,
             IntroText = @"You are playing as the maritime |cff008000Kingdom of Kul'tiras|r.
 

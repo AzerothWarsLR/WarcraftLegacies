@@ -56,7 +56,6 @@ namespace WarcraftLegacies.Source.Setup.Legends
         DeathMessage =
           "Archmage Antonidas has been cut down, his vast knowledge forever lost with his death. The mages of Dalaran have lost their brightest mind."
       };
-      Antonidas.AddUnitDependency(Dalaran.Unit);
     }
     
     public void RegisterLegends()

@@ -16,7 +16,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
       {
         UndefeatedResearch = FourCC("R05W"),
         StartingGold = 200,
-        StartingLumber = 500,
+        StartingLumber = 700,
         CinematicMusic = "DarkAgents",
         ControlPointDefenderUnitTypeId = Constants.UNIT_N0D6_CONTROL_POINT_DEFENDER_WARSONG,
         IntroText = @"You are playing as the brutal |cffd45e19Warsong clan|r.

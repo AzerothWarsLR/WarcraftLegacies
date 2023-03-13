@@ -14,7 +14,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
       {
         UndefeatedResearch = FourCC("R02L"),
         StartingGold = 200,
-        StartingLumber = 500,
+        StartingLumber = 700,
         ControlPointDefenderUnitTypeId = Constants.UNIT_N0BB_CONTROL_POINT_DEFENDER_ILLIDARI_TOWER,
         IntroText = @"You are playing as the Betrayer, Illidan|r|r.
 
