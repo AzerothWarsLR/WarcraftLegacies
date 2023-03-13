@@ -47,8 +47,7 @@ namespace TestMap.Source.Setup
         {
           DamageMultNonResistant = 5,
           DamageMultResistant = 2.5f,
-          DamageMultCapital = 1,
-          DamageMultControlPoint = 1
+          DamageMultStructure = 1
         };
         PassiveAbilityManager.Register(executeFootman);
 

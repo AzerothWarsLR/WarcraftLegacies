@@ -56,8 +56,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
       {
         DamageMultNonResistant = 5,
         DamageMultResistant = 2.5f,
-        DamageMultCapital = 1,
-        DamageMultControlPoint = 1
+        DamageMultStructure = 1
       });
 
       SpellSystem.Register(new Devour(Constants.ABILITY_A0TU_DEVOUR_BLACK_DRAKE)

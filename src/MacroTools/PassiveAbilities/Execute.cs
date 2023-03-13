@@ -25,15 +25,11 @@ namespace MacroTools.PassiveAbilities
     public float DamageMultResistant { get; init; }
 
     /// <summary>
-    /// Control points are instantly killed when their hit points drop below the caster's attack damage multiplied by this value.
+    /// Structures are instantly killed when their hit points drop below the caster's attack damage multiplied by this value.
     /// </summary>
-    public float DamageMultControlPoint { get; init; }
+    public float DamageMultStructure { get; init; }
 
-    /// <summary>
-    /// Capitals are instantly killed when their hit points drop below the caster's attack damage multiplied by this value.
-    /// </summary>
-    public float DamageMultCapital { get; init; }
-
+  
     /// <summary>
     /// Initializes a new instance of the <see cref="Execute"/> class.
     /// </summary>
@@ -48,13 +44,9 @@ namespace MacroTools.PassiveAbilities
       var triggerUnit = GetTriggerUnit();
 
       var damageMult = 1f;
-      if (ControlPointManager.Instance.UnitIsControlPoint(triggerUnit))
+      if (IsUnitType(triggerUnit, UNIT_TYPE_STRUCTURE) || ControlPointManager.Instance.UnitIsControlPoint(triggerUnit))
       {
-        damageMult = DamageMultControlPoint;
-      }
-      else if (CapitalManager.GetFromUnit(triggerUnit) != null)
-      {
-        damageMult = DamageMultCapital;
+        damageMult = DamageMultStructure;
       }
       else if (triggerUnit.IsResistant())
       {
