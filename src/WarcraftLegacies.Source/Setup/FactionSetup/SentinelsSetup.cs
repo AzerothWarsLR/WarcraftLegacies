@@ -55,6 +55,7 @@ Once you have secured your holdings, gather your army and destroy the Orcish Hor
       Sentinels.ModObjectLimit(FourCC("n034"), 12); //Guild Ranger
       Sentinels.ModObjectLimit(FourCC("nwat"), Faction.UNLIMITED); //Nightblade
       Sentinels.ModObjectLimit(FourCC("nnmg"), 12); //Redeemed Highborne
+      Sentinels.ModObjectLimit(FourCC("e022"), 2); //Moon Rider
       Sentinels.ModObjectLimit(Constants.UNIT_ECHM_CHIMAERA_SENTINELS, 4);
 
       //Ships
@@ -87,7 +88,7 @@ Once you have secured your holdings, gather your army and destroy the Orcish Hor
       Sentinels.ModObjectLimit(FourCC("R013"), Faction.UNLIMITED); //Elune's Blessing
       Sentinels.ModObjectLimit(FourCC("R018"), Faction.UNLIMITED); //Lightning Barrage
 
-      Sentinels.AddGoldMine(preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-16516, 10513)));
+      Sentinels.AddGoldMine(preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-22659, -13733)));
       
       FactionManager.Register(Sentinels);
     }

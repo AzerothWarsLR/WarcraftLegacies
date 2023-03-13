@@ -1,4 +1,4 @@
-using MacroTools;
+﻿using MacroTools;
 using MacroTools.LegendSystem;
 using static War3Api.Common;
 #pragma warning disable CS1591
@@ -23,7 +23,8 @@ namespace WarcraftLegacies.Source.Setup.Legends
     {
       Maiev = new LegendaryHero("Maiev Shadowsong")
       {
-        UnitType = FourCC("Ewrd")
+        UnitType = FourCC("Ewrd"),
+        StartingXp = 1800
       };
 
       Auberdine = new Capital
@@ -39,13 +40,13 @@ namespace WarcraftLegacies.Source.Setup.Legends
       Tyrande = new LegendaryHero("Tyrande Whisperwind")
       {
         UnitType = FourCC("Etyr"),
-        PlayerColor = PLAYER_COLOR_CYAN
+        PlayerColor = PLAYER_COLOR_CYAN,
+        StartingXp = 2400
       };
 
       Shandris = new LegendaryHero("Shandris Feathermoon")
       {
         UnitType = FourCC("E002"),
-        StartingXp = 1000
       };
 
       Jarod = new LegendaryHero("Jarod Shadowsong")

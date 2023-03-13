@@ -1,7 +1,6 @@
 ﻿using MacroTools.Spells;
 using MacroTools.Spells.ExactJustice;
 using MacroTools.SpellSystem;
-using WarcraftLegacies.Source.Spells;
 
 namespace WarcraftLegacies.Source.Setup.Spells
 {
