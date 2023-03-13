@@ -56,8 +56,8 @@ namespace WarcraftLegacies.Source.Quests
       _portalTwoLocation = portalTwoLocation;
       AddObjective(new ObjectiveKillUnit(nightmareDragonKalimdor));
       AddObjective(new ObjectiveKillUnit(nightmareDragonEk));
-      AddObjective(new ObjectiveTime(2700));
-      _timer = CreateTimer().Start(2700, false, OnTimeElapsed);
+      AddObjective(new ObjectiveTime(1800));
+      _timer = CreateTimer().Start(1800, false, OnTimeElapsed);
 
     }
 
