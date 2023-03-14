@@ -328,6 +328,10 @@ gg_rct_HinterEmeraldPortal = nil
 gg_rct_DuskwoodEmeraldPortal = nil
 gg_rct_FeralasEmeraldPortal = nil
 gg_rct_AshenvaleEmeraldPortal = nil
+gg_rct_KaliRock10 = nil
+gg_rct_KaliRock11 = nil
+gg_rct_KaliRock12 = nil
+gg_rct_LumberCampUnlock = nil
 gg_snd_ArcaneObservatoryWhat1 = nil
 gg_snd_ArrangedTeamInvitation = nil
 gg_snd_ClanInvitation = nil
@@ -516,10 +520,6 @@ gg_snd_DoorCloseRemix = nil
 gg_snd_DoorOpenRemix = nil
 gg_snd_NuclearLaunchDetected = nil
 gg_snd_IllidansTheme = ""
-gg_rct_KaliRock10 = nil
-gg_rct_KaliRock11 = nil
-gg_rct_KaliRock12 = nil
-gg_rct_LumberCampUnlock = nil
 function InitGlobals()
 end
 
@@ -6257,7 +6257,6 @@ u = BlzCreateUnitWithSkin(p, FourCC("ngol"), -14464.0, -4736.0, 270.000, FourCC(
 SetResourceAmount(u, 900)
 u = BlzCreateUnitWithSkin(p, FourCC("h016"), 12608.0, -16128.0, 270.000, FourCC("h016"))
 u = BlzCreateUnitWithSkin(p, FourCC("o05R"), -9824.0, 2208.0, 270.000, FourCC("o05R"))
-SetUnitState(u, UNIT_STATE_MANA, 0)
 u = BlzCreateUnitWithSkin(p, FourCC("n0AL"), -9664.0, 2624.0, 270.000, FourCC("n0AL"))
 u = BlzCreateUnitWithSkin(p, FourCC("osld"), 12032.0, -17472.0, 314.112, FourCC("osld"))
 u = BlzCreateUnitWithSkin(p, FourCC("owtw"), -6720.0, -5632.0, 270.000, FourCC("owtw"))
@@ -7927,27 +7926,23 @@ u = BlzCreateUnitWithSkin(p, FourCC("E023"), -14573.8, -27341.9, 270.000, FourCC
 u = BlzCreateUnitWithSkin(p, FourCC("U02O"), -14866.8, -27339.7, 270.000, FourCC("U02O"))
 u = BlzCreateUnitWithSkin(p, FourCC("E024"), -14379.5, -27335.6, 270.000, FourCC("E024"))
 u = BlzCreateUnitWithSkin(p, FourCC("n08E"), -9940.2, 1679.3, 197.109, FourCC("n08E"))
-SetUnitState(u, UNIT_STATE_MANA, 0)
 u = BlzCreateUnitWithSkin(p, FourCC("u00V"), 1045.5, -25685.6, 213.624, FourCC("u00V"))
 SetUnitState(u, UNIT_STATE_MANA, 200)
 SetUnitAcquireRange(u, 200.0)
 u = BlzCreateUnitWithSkin(p, FourCC("n08E"), -9944.5, 1554.1, 266.976, FourCC("n08E"))
-SetUnitState(u, UNIT_STATE_MANA, 0)
 u = BlzCreateUnitWithSkin(p, FourCC("o02M"), -10547.7, 2192.6, 178.753, FourCC("o02M"))
-u = BlzCreateUnitWithSkin(p, FourCC("o02M"), -10362.1, 2111.0, -84.402, FourCC("o02M"))
+u = BlzCreateUnitWithSkin(p, FourCC("o02M"), -10362.1, 2111.0, 275.598, FourCC("o02M"))
 u = BlzCreateUnitWithSkin(p, FourCC("o04L"), -10079.3, 2066.3, 15.766, FourCC("o04L"))
 u = BlzCreateUnitWithSkin(p, FourCC("o04L"), -9982.9, 1922.5, 80.565, FourCC("o04L"))
 u = BlzCreateUnitWithSkin(p, FourCC("orai"), -10342.4, 1229.9, 317.427, FourCC("orai"))
 u = BlzCreateUnitWithSkin(p, FourCC("nchg"), 794.0, -26110.4, 166.454, FourCC("nchg"))
 SetUnitAcquireRange(u, 200.0)
-u = BlzCreateUnitWithSkin(p, FourCC("orai"), -10246.6, 1291.3, -83.013, FourCC("orai"))
+u = BlzCreateUnitWithSkin(p, FourCC("orai"), -10246.6, 1291.3, 276.987, FourCC("orai"))
 u = BlzCreateUnitWithSkin(p, FourCC("otbk"), -9843.2, 2930.7, 70.765, FourCC("otbk"))
 u = BlzCreateUnitWithSkin(p, FourCC("otbk"), -9974.4, 2935.1, 218.184, FourCC("otbk"))
 u = BlzCreateUnitWithSkin(p, FourCC("nogn"), -10462.1, 1617.1, 23.479, FourCC("nogn"))
-SetUnitState(u, UNIT_STATE_MANA, 0)
 u = BlzCreateUnitWithSkin(p, FourCC("nhmc"), 14953.6, 2590.3, 250.342, FourCC("nhmc"))
 u = BlzCreateUnitWithSkin(p, FourCC("nogn"), -10293.2, 1491.7, 89.172, FourCC("nogn"))
-SetUnitState(u, UNIT_STATE_MANA, 0)
 u = BlzCreateUnitWithSkin(p, FourCC("nfro"), 14737.7, 2664.5, 295.219, FourCC("nfro"))
 u = BlzCreateUnitWithSkin(p, FourCC("ndrn"), -3282.1, -20743.1, 142.387, FourCC("ndrn"))
 u = BlzCreateUnitWithSkin(p, FourCC("ndrn"), -3261.9, -20594.8, 272.711, FourCC("ndrn"))

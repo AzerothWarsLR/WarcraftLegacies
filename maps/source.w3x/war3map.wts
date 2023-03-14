@@ -111352,7 +111352,7 @@ Manor
 }
 
 STRING 18561
-// Units: o05R (Warsong Lumber Camp), EditorSuffix (Name - Editor Suffix)
+// Units: O05O (Ragefire Warlock), EditorSuffix (Name - Editor Suffix)
 {
  (Warsong)
 }
@@ -111448,7 +111448,7 @@ Suspends an unholy crystal crackling with deadly magic above the Ziggurat.|n|cff
 }
 
 STRING 18577
-// Upgrades: R097 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R092 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 C
 }
@@ -111791,7 +111791,7 @@ Revive Ragefire Warlock
 }
 
 STRING 18650
-// Units: O05O (Ragefire Warlock), EditorSuffix (Name - Editor Suffix)
+// Units: n0D6 (Control Point Defender), EditorSuffix (Name - Editor Suffix)
 {
  (Warsong)
 }
@@ -113423,7 +113423,7 @@ Summons 2 Blue Dragon to fight for you. |nLasts 180 seconds.
 }
 
 STRING 18998
-// Upgrades: R092 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R097 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 C
 }
@@ -118806,7 +118806,7 @@ STRING 20153
 }
 
 STRING 20155
-// Units: n0D6 (Control Point Defender), EditorSuffix (Name - Editor Suffix)
+// Units: o05R (Warsong Lumber Camp), EditorSuffix (Name - Editor Suffix)
 {
  (Warsong)
 }
