@@ -332,6 +332,7 @@ gg_rct_KaliRock10 = nil
 gg_rct_KaliRock11 = nil
 gg_rct_KaliRock12 = nil
 gg_rct_LumberCampUnlock = nil
+gg_rct_UpperBarrenCreeps = nil
 gg_snd_ArcaneObservatoryWhat1 = nil
 gg_snd_ArrangedTeamInvitation = nil
 gg_snd_ClanInvitation = nil
@@ -3253,7 +3254,7 @@ u = BlzCreateUnitWithSkin(p, FourCC("nsty"), -14270.8, 6431.0, 118.634, FourCC("
 SetUnitAcquireRange(u, 200.0)
 u = BlzCreateUnitWithSkin(p, FourCC("nsty"), -14563.6, 6348.2, 74.237, FourCC("nsty"))
 SetUnitAcquireRange(u, 200.0)
-u = BlzCreateUnitWithSkin(p, FourCC("nsth"), -14160.9, 6258.9, 206.736, FourCC("nsth"))
+u = BlzCreateUnitWithSkin(p, FourCC("nsth"), -14312.5, 6515.4, 206.736, FourCC("nsth"))
 SetUnitAcquireRange(u, 200.0)
 u = BlzCreateUnitWithSkin(p, FourCC("narg"), -18291.7, -17177.2, 256.903, FourCC("narg"))
 SetUnitAcquireRange(u, 200.0)
@@ -8385,7 +8386,7 @@ gg_rct_HighbankUnlock = Rect(21664.0, -8128.0, 23200.0, -6848.0)
 gg_rct_RagnarosSummon = Rect(12192.0, -10784.0, 12512.0, -10464.0)
 gg_rct_IllidanBlackTempleUnlock = Rect(3680.0, -31680.0, 6720.0, -28480.0)
 gg_rct_BlackTempleBase = Rect(2112.0, -31584.0, 6496.0, -28288.0)
-gg_rct_SatyrCamp = Rect(-16288.0, 5664.0, -15360.0, 6496.0)
+gg_rct_SatyrCamp = Rect(-14816.0, 6080.0, -13888.0, 6912.0)
 gg_rct_FountainOfHealthAlterac = Rect(10656.0, 5536.0, 11104.0, 6016.0)
 gg_rct_Nazjatar = Rect(-5792.0, -3680.0, -5024.0, -2752.0)
 gg_rct_Wrathgate_Portal_1 = Rect(-3040.0, 18304.0, -2752.0, 18560.0)
@@ -8410,11 +8411,12 @@ gg_rct_KaliRock9 = Rect(-15808.0, -11072.0, -14464.0, -10240.0)
 gg_rct_HinterEmeraldPortal = Rect(17344.0, 6368.0, 17792.0, 6624.0)
 gg_rct_DuskwoodEmeraldPortal = Rect(11008.0, -15968.0, 11456.0, -15712.0)
 gg_rct_FeralasEmeraldPortal = Rect(-18144.0, -6464.0, -17696.0, -6208.0)
-gg_rct_AshenvaleEmeraldPortal = Rect(-12192.0, 4960.0, -11744.0, 5216.0)
+gg_rct_AshenvaleEmeraldPortal = Rect(-8576.0, 8992.0, -8128.0, 9280.0)
 gg_rct_KaliRock10 = Rect(-11296.0, 2688.0, -10144.0, 3424.0)
 gg_rct_KaliRock11 = Rect(-12800.0, 3392.0, -12032.0, 4736.0)
 gg_rct_KaliRock12 = Rect(-9472.0, -1888.0, -8256.0, -1248.0)
 gg_rct_LumberCampUnlock = Rect(-11648.0, 864.0, -9472.0, 3296.0)
+gg_rct_UpperBarrenCreeps = Rect(-14464.0, -3104.0, -10336.0, -32.0)
 end
 
 function InitUpgrades_Player0()

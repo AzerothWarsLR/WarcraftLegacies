@@ -93,7 +93,7 @@ Gather your forces and strike before the Horde can organize their efforts."
 
       Druids.SetObjectLevel(Constants.UPGRADE_REWS_WELL_SPRING, 1);
       
-      Druids.AddGoldMine(preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-10967, 7196)));
+      Druids.AddGoldMine(preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-9200, 10742)));
       
       FactionManager.Register(Druids);
     }

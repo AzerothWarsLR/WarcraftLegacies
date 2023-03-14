@@ -88,7 +88,7 @@ Once you have secured your holdings, gather your army and destroy the Orcish Hor
       Sentinels.ModObjectLimit(FourCC("R013"), Faction.UNLIMITED); //Elune's Blessing
       Sentinels.ModObjectLimit(FourCC("R018"), Faction.UNLIMITED); //Lightning Barrage
 
-      Sentinels.AddGoldMine(preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-22659, -13733)));
+      Sentinels.AddGoldMine(preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-22721, -13570)));
       
       FactionManager.Register(Sentinels);
     }
