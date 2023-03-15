@@ -15,7 +15,7 @@ namespace WarcraftLegacies.Source.Quests.Ironforge
   /// </summary>
   public sealed class QuestDarkIron : QuestData
   {
-    private const int HeroId = Constants.UNIT_H03G_EMPEROR_OF_BLACKROCK_IRONFORGE;
+    private const int HeroId = Constants.UNIT_H03G_EMPEROR_OF_BLACKROCK_RAGNAROS;
     private readonly List<unit> _rescueUnits;
     
     /// <summary>

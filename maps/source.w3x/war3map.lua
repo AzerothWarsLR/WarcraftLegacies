@@ -333,6 +333,8 @@ gg_rct_KaliRock11 = nil
 gg_rct_KaliRock12 = nil
 gg_rct_LumberCampUnlock = nil
 gg_rct_UpperBarrenCreeps = nil
+gg_rct_RiseBaseUnlock = nil
+gg_rct_ShrineBaseUnlock = nil
 gg_snd_ArcaneObservatoryWhat1 = nil
 gg_snd_ArrangedTeamInvitation = nil
 gg_snd_ClanInvitation = nil
@@ -521,8 +523,6 @@ gg_snd_DoorCloseRemix = nil
 gg_snd_DoorOpenRemix = nil
 gg_snd_NuclearLaunchDetected = nil
 gg_snd_IllidansTheme = ""
-gg_rct_RiseBaseUnlock = nil
-gg_rct_ShrineBaseUnlock = nil
 function InitGlobals()
 end
 
@@ -2569,6 +2569,7 @@ local t
 local life
 
 u = BlzCreateUnitWithSkin(p, FourCC("o03L"), -8864.0, -13600.0, 270.000, FourCC("o03L"))
+u = BlzCreateUnitWithSkin(p, FourCC("o03R"), -9120.0, -17440.0, 270.000, FourCC("o03R"))
 u = BlzCreateUnitWithSkin(p, FourCC("o03V"), -8288.0, -13152.0, 270.000, FourCC("o03V"))
 u = BlzCreateUnitWithSkin(p, FourCC("n05C"), -8960.0, -13184.0, 270.000, FourCC("n05C"))
 end
@@ -2580,6 +2581,11 @@ local unitID
 local t
 local life
 
+u = BlzCreateUnitWithSkin(p, FourCC("o04A"), -8831.3, -17181.6, 191.585, FourCC("o04A"))
+u = BlzCreateUnitWithSkin(p, FourCC("o04A"), -8737.6, -17092.6, 191.585, FourCC("o04A"))
+u = BlzCreateUnitWithSkin(p, FourCC("o04A"), -8658.0, -17147.4, 191.585, FourCC("o04A"))
+u = BlzCreateUnitWithSkin(p, FourCC("o04A"), -8652.7, -17250.8, 191.585, FourCC("o04A"))
+u = BlzCreateUnitWithSkin(p, FourCC("o04A"), -8768.0, -17289.9, 191.585, FourCC("o04A"))
 u = BlzCreateUnitWithSkin(p, FourCC("o02I"), -8826.4, -13139.4, 253.517, FourCC("o02I"))
 u = BlzCreateUnitWithSkin(p, FourCC("o02I"), -8740.3, -13112.1, 253.517, FourCC("o02I"))
 u = BlzCreateUnitWithSkin(p, FourCC("o02I"), -8684.2, -13206.4, 253.517, FourCC("o02I"))
@@ -4410,7 +4416,7 @@ SetUnitState(u, UNIT_STATE_MANA, 400)
 SetUnitAcquireRange(u, 200.0)
 u = BlzCreateUnitWithSkin(p, FourCC("nchw"), -114.6, -31332.5, 132.520, FourCC("nchw"))
 SetUnitAcquireRange(u, 200.0)
-u = BlzCreateUnitWithSkin(p, FourCC("nowb"), -12267.1, 6596.7, -68.075, FourCC("nowb"))
+u = BlzCreateUnitWithSkin(p, FourCC("nowb"), -12267.1, 6596.7, 291.925, FourCC("nowb"))
 SetUnitAcquireRange(u, 200.0)
 u = BlzCreateUnitWithSkin(p, FourCC("nfsp"), 16430.8, 3532.0, 222.600, FourCC("nfsp"))
 SetUnitState(u, UNIT_STATE_MANA, 200)
@@ -5921,7 +5927,6 @@ SetUnitAcquireRange(u, 200.0)
 u = BlzCreateUnitWithSkin(p, FourCC("nowb"), -12368.3, 6400.0, 1.000, FourCC("nowb"))
 SetUnitAcquireRange(u, 200.0)
 u = BlzCreateUnitWithSkin(p, FourCC("nowk"), -12143.7, 6271.1, 113.918, FourCC("nowk"))
-SetUnitState(u, UNIT_STATE_MANA, 0)
 SetUnitAcquireRange(u, 200.0)
 u = BlzCreateUnitWithSkin(p, FourCC("nwzr"), 13566.2, 3433.1, 205.850, FourCC("nwzr"))
 SetUnitAcquireRange(u, 200.0)
@@ -5939,7 +5944,6 @@ SetUnitAcquireRange(u, 200.0)
 u = BlzCreateUnitWithSkin(p, FourCC("nmyr"), -20561.8, -11796.9, 135.000, FourCC("nmyr"))
 SetUnitAcquireRange(u, 200.0)
 u = BlzCreateUnitWithSkin(p, FourCC("nfrb"), -9948.7, 8550.0, 107.153, FourCC("nfrb"))
-SetUnitState(u, UNIT_STATE_MANA, 0)
 SetUnitAcquireRange(u, 200.0)
 u = BlzCreateUnitWithSkin(p, FourCC("nfrl"), -10020.1, 8711.9, 346.124, FourCC("nfrl"))
 SetUnitAcquireRange(u, 200.0)
@@ -7208,7 +7212,6 @@ u = BlzCreateUnitWithSkin(p, FourCC("ngol"), -20288.0, -11392.0, 270.000, FourCC
 SetResourceAmount(u, 1200)
 u = BlzCreateUnitWithSkin(p, FourCC("ngol"), -8640.0, -16832.0, 270.000, FourCC("ngol"))
 SetResourceAmount(u, 800)
-u = BlzCreateUnitWithSkin(p, FourCC("o03R"), -9120.0, -17440.0, 270.000, FourCC("o03R"))
 u = BlzCreateUnitWithSkin(p, FourCC("ntt2"), -15232.0, -3328.0, 250.000, FourCC("ntt2"))
 u = BlzCreateUnitWithSkin(p, FourCC("o028"), -11520.0, 1920.0, 270.000, FourCC("o028"))
 u = BlzCreateUnitWithSkin(p, FourCC("n003"), 18112.0, 17600.0, 270.000, FourCC("n003"))
@@ -7296,7 +7299,6 @@ u = BlzCreateUnitWithSkin(p, FourCC("etrp"), -12608.0, 7168.0, 270.000, FourCC("
 u = BlzCreateUnitWithSkin(p, FourCC("etrp"), -12800.0, 6400.0, 270.000, FourCC("etrp"))
 u = BlzCreateUnitWithSkin(p, FourCC("etrp"), -12608.0, 5632.0, 270.000, FourCC("etrp"))
 u = BlzCreateUnitWithSkin(p, FourCC("etoa"), -11424.0, 6816.0, 270.000, FourCC("etoa"))
-SetUnitState(u, UNIT_STATE_MANA, 0)
 u = BlzCreateUnitWithSkin(p, FourCC("eaom"), -12544.0, 6720.0, 270.000, FourCC("eaom"))
 u = BlzCreateUnitWithSkin(p, FourCC("eaow"), -11328.0, 6336.0, 270.000, FourCC("eaow"))
 u = BlzCreateUnitWithSkin(p, FourCC("eaoe"), -11840.0, 6208.0, 270.000, FourCC("eaoe"))
@@ -7967,14 +7969,9 @@ u = BlzCreateUnitWithSkin(p, FourCC("n083"), -16640.2, -26602.4, 242.312, FourCC
 u = BlzCreateUnitWithSkin(p, FourCC("n051"), -16469.1, -26580.6, 228.808, FourCC("n051"))
 u = BlzCreateUnitWithSkin(p, FourCC("nfro"), 5406.3, 9732.2, 222.579, FourCC("nfro"))
 u = BlzCreateUnitWithSkin(p, FourCC("ewsp"), -16530.1, 9588.7, 186.608, FourCC("ewsp"))
-u = BlzCreateUnitWithSkin(p, FourCC("o04A"), -8831.3, -17181.6, 191.585, FourCC("o04A"))
-u = BlzCreateUnitWithSkin(p, FourCC("o04A"), -8737.6, -17092.6, 191.585, FourCC("o04A"))
 u = BlzCreateUnitWithSkin(p, FourCC("h02O"), 9016.0, -10765.2, 103.000, FourCC("h02O"))
-u = BlzCreateUnitWithSkin(p, FourCC("o04A"), -8658.0, -17147.4, 191.585, FourCC("o04A"))
 u = BlzCreateUnitWithSkin(p, FourCC("h00J"), 8324.7, -9747.6, 308.934, FourCC("h00J"))
 SetUnitState(u, UNIT_STATE_MANA, 200)
-u = BlzCreateUnitWithSkin(p, FourCC("o04A"), -8652.7, -17250.8, 191.585, FourCC("o04A"))
-u = BlzCreateUnitWithSkin(p, FourCC("o04A"), -8768.0, -17289.9, 191.585, FourCC("o04A"))
 u = BlzCreateUnitWithSkin(p, FourCC("h00A"), 8573.8, -9981.7, 119.256, FourCC("h00A"))
 u = BlzCreateUnitWithSkin(p, FourCC("nchg"), 1657.8, -26269.8, 2.925, FourCC("nchg"))
 SetUnitAcquireRange(u, 200.0)
@@ -8395,7 +8392,7 @@ gg_rct_EchoUnlock = Rect(-8608.0, -6816.0, -6208.0, -3968.0)
 gg_rct_StrahnbradUnlock = Rect(12544.0, 4992.0, 13408.0, 5824.0)
 gg_rct_ZeppelinReturn = Rect(-960.0, -5824.0, -320.0, -5216.0)
 gg_rct_Trade1 = Rect(9952.0, -23200.0, 10592.0, -22816.0)
-gg_rct_Trade2 = Rect(-10432.0, 9856.0, -10048.0, 10240.0)
+gg_rct_Trade2 = Rect(-8960.0, 7872.0, -8576.0, 8256.0)
 gg_rct_Trade3 = Rect(-11008.0, -3808.0, -10592.0, -3392.0)
 gg_rct_Trade4 = Rect(18816.0, -9984.0, 19200.0, -9600.0)
 gg_rct_Trader1 = Rect(2144.0, 15456.0, 2560.0, 15776.0)
