@@ -84334,6 +84334,12 @@ STRING 14050
 C
 }
 
+STRING 14051
+// Units: n0BI (Shrine to Malorne (10gold/min)), Name (Name)
+{
+Shrine to Malorne (10gold/min)
+}
+
 STRING 14052
 // Abilities: A06Q (Force of Nature), Hotkey (Hotkey - Normal)
 {
@@ -106473,12 +106479,6 @@ STRING 17754
 // Abilities: AHwe (Summon Fel Stalkers ), Researchtip (Tooltip - Learn)
 {
 Learn Summon Fel Stalkers - [|cffffcc00Level %d|r]
-}
-
-STRING 17755
-// Units: n0BI (Shrine of Goldrinn (10gold/min)), Name (Name)
-{
-Shrine of Goldrinn (10gold/min)
 }
 
 STRING 17756
