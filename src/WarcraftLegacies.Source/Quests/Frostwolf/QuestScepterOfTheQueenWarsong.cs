@@ -10,7 +10,7 @@ using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.Source.Quests.Warsong
+namespace WarcraftLegacies.Source.Quests.Frostwolf
 {
   /// <summary>
   /// Warsong acquires the Scepter of the Queen and kills some Highborne.

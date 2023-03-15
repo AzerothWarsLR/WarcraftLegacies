@@ -32,10 +32,10 @@ namespace WarcraftLegacies.Source.Quests.Warsong
     }
 
     /// <inheritdoc/>
-    protected override string RewardFlavour => "The Crossroads have been constructed and the surrounding land has been harvested for wood.";
+    protected override string RewardFlavour => "The Crossroads have been constructed";
 
     /// <inheritdoc/>
-    protected override string RewardDescription => "Control of the Crossroads, +2000 Lumber";
+    protected override string RewardDescription => "Control of the Crossroads";
 
     private void GiveCrossroads(player whichPlayer)
     {
@@ -44,7 +44,6 @@ namespace WarcraftLegacies.Source.Quests.Warsong
       CreateUnit(whichPlayer, wardId, -12844, -1975, 0);
       CreateUnit(whichPlayer, wardId, -10876, -2066, 0);
       CreateUnit(whichPlayer, wardId, -11922, -824, 0);
-      whichPlayer.AdjustPlayerState(PLAYER_STATE_RESOURCE_LUMBER, 2000);
     }
 
     /// <inheritdoc/>

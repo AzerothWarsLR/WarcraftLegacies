@@ -7,7 +7,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
 {
   public static class WarsongQuestSetup
   {
-    public static void Setup(PreplacedUnitSystem preplacedUnitSystem, ArtifactSetup artifactSetup, AllLegendSetup allLegendSetup)
+    public static void Setup(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup)
     {
       var warsong = WarsongSetup.WarsongClan;
       warsong.StartingQuest = warsong.AddQuest(new QuestOrgrimmar(Regions.Orgrimmar));
@@ -19,7 +19,6 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       warsong.AddQuest(new QuestMoreWyverns(allLegendSetup.Sentinels.Feathermoon, allLegendSetup.Sentinels.Auberdine));
       warsong.AddQuest(new QuestWarsongHold());
       warsong.AddQuest(new QuestJergosh(allLegendSetup.Warsong.GromHellscream));
-      warsong.AddQuest(new QuestScepterOfTheQueenWarsong(Regions.TheAthenaeum, artifactSetup.ScepterOfTheQueen, allLegendSetup.Sentinels.Feathermoon));
     }
   }
 }

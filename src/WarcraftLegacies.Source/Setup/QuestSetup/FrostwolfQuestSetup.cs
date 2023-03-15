@@ -1,12 +1,13 @@
 ﻿using MacroTools;
 using WarcraftLegacies.Source.Quests.Frostwolf;
 using WarcraftLegacies.Source.Setup.FactionSetup;
+using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup.QuestSetup
 {
   public static class FrostwolfQuestSetup
   {
-    public static void Setup(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup)
+    public static void Setup(PreplacedUnitSystem preplacedUnitSystem, ArtifactSetup artifactSetup, AllLegendSetup allLegendSetup)
     {
       var frostwolf = FrostwolfSetup.Frostwolf;
       if (frostwolf == null) 
@@ -17,6 +18,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       frostwolf.AddQuest(new QuestDrektharsSpellbook(allLegendSetup.Druids.Nordrassil, allLegendSetup.Frostwolf.Thrall));
       frostwolf.AddQuest(new QuestFreeNerzhul(allLegendSetup.Scourge.TheFrozenThrone, allLegendSetup.Frostwolf.Thrall));
       frostwolf.AddQuest(new QuestWorldShaman(allLegendSetup.Frostwolf.Thrall));
+      frostwolf.AddQuest(new QuestScepterOfTheQueenWarsong(Regions.TheAthenaeum, artifactSetup.ScepterOfTheQueen, allLegendSetup.Sentinels.Feathermoon));
     }
   }
 }

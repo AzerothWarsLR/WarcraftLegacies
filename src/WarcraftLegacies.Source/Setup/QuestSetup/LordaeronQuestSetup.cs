@@ -26,7 +26,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
           questStrahnbrad,
           questStratholme
         }));
-      LordaeronSetup.Lordaeron.AddQuest(new QuestTyrHand(allLegendSetup.Lordaeron.CapitalPalace, Regions.TyrUnlock));
+      LordaeronSetup.Lordaeron.AddQuest(new QuestTyrHand(allLegendSetup.Lordaeron.CapitalPalace, allLegendSetup.Lordaeron.Stratholme, Regions.TyrUnlock));
       LordaeronSetup.Lordaeron.AddQuest(new QuestMograine());
       LordaeronSetup.Lordaeron.AddQuest(new QuestShoresOfNorthrend(allLegendSetup.Lordaeron.Arthas, allLegendSetup.Neutral.Caerdarrow));
       LordaeronSetup.Lordaeron.AddQuest(new QuestThunderEagle(allLegendSetup.Neutral.DraktharonKeep));

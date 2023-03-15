@@ -6,6 +6,7 @@ using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
 using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
+using MacroTools.ObjectiveSystem.Objectives.MetaBased;
 using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.QuestSystem;
 using WCSharp.Shared.Data;
@@ -24,11 +25,13 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
     /// Initializes a new instance of the <see cref="QuestTyrHand"/> class.
     /// </summary>
     /// <param name="rescueRect">Units in this area will start invulnerable and be rescued when the quest is complete.</param>
-    public QuestTyrHand(Capital capitalcity, Rectangle rescueRect) : base("The Fortified City",
+    public QuestTyrHand(Capital capitalcity, Capital stratholme, Rectangle rescueRect) : base("The Fortified City",
       "The city of Tyr's Hand is considered impregnable, but they will be reluctant to join the war",
       "ReplaceableTextures\\CommandButtons\\BTNHumanBarracks.blp")
     {
-      AddObjective(new ObjectiveCapitalDead(capitalcity));
+      AddObjective(new ObjectiveCapitalDead(stratholme));
+      AddObjective(new ObjectiveEitherOf(new ObjectiveCapitalDead(capitalcity),
+        new ObjectiveCapitalDead(stratholme)));
       AddObjective(new ObjectiveSelfExists());
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
       Required = true;

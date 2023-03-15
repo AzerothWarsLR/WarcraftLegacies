@@ -13139,7 +13139,7 @@ Provides 8 food, which increases the maximum number of units that can be trained
 }
 
 STRING 2191
-// Units: e022 (Moon Riders), EditorSuffix (Name - Editor Suffix)
+// Units: e022 (Moon Rider), EditorSuffix (Name - Editor Suffix)
 {
 (Sentinels)
 }
@@ -23084,12 +23084,6 @@ STRING 3848
 // Units: U00L (Envoy of Archimonde), Revivetip (Tooltip - Revive)
 {
 Revive Envoy of Archimonde
-}
-
-STRING 3849
-// Units: n04R (Immol'thar), Name (Name)
-{
-Immol'thar
 }
 
 STRING 3850
@@ -37602,7 +37596,7 @@ E
 }
 
 STRING 6268
-// Units: e022 (Moon Riders), Hotkey (Hotkey)
+// Units: e022 (Moon Rider), Hotkey (Hotkey)
 {
 E
 }
@@ -56146,6 +56140,12 @@ STRING 9354
 Learn Hurricane
 }
 
+STRING 9355
+// Units: e022 (Moon Rider), Tip (Tooltip - Basic)
+{
+Train Moon Rider
+}
+
 STRING 9356
 // Abilities: A0H7 (Hurricane), Tip (Tooltip - Normal)
 {
@@ -62702,12 +62702,6 @@ STRING 10448
 // Abilities: A01T (Shockwave), Name (Name)
 {
 Shockwave
-}
-
-STRING 10449
-// Units: n04R (Immol'thar), Tip (Tooltip - Basic)
-{
-Train |cffffcc00F|rel Beast
 }
 
 STRING 10450
@@ -86415,12 +86409,6 @@ STRING 14398
 Z
 }
 
-STRING 14399
-// Units: e022 (Moon Riders), Tip (Tooltip - Basic)
-{
-Train Moon Riders
-}
-
 STRING 14400
 // Abilities: A08L (Create Single Corpse), Name (Name)
 {
@@ -86692,7 +86680,7 @@ Summon Tichondrius
 }
 
 STRING 14445
-// Units: e022 (Moon Riders), Ubertip (Tooltip - Extended)
+// Units: e022 (Moon Rider), Ubertip (Tooltip - Extended)
 {
 A powerful priestess of Elune who specializes in deception.|n|n|cfff5962dAbilities:|R Fear the Goddess, Elune's Gaze, Resistant Skin.|n|n|cff99b4d1Can only build 2.|r|n|cffffcc00Attacks land and air units.|r
 }
@@ -88793,12 +88781,6 @@ STRING 14794
 Provides towers with the ability to detect invisible units, excluding Cannon Towers.
 }
 
-STRING 14795
-// Units: e022 (Moon Riders), Name (Name)
-{
-Moon Riders
-}
-
 STRING 14796
 // Upgrades: R01K (Chaos), Name (Name)
 {
@@ -89214,7 +89196,7 @@ Purchase Summon Workers
 }
 
 STRING 14865
-// Upgrades: R00N (Storm Hammers), Hotkey (Hotkey)
+// Abilities: A02K (Multi Shot), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -89303,6 +89285,12 @@ STRING 14879
 Quest Completed: Felsteel Refining
 }
 
+STRING 14880
+// Units: e022 (Moon Rider), Name (Name)
+{
+Moon Rider
+}
+
 STRING 14881
 // Abilities: A0SR (Dimensional Jump to Tempest Keep), Ubertip (Tooltip - Normal - Extended)
 {
@@ -89370,7 +89358,7 @@ STRING 14891
 }
 
 STRING 14892
-// Abilities: A02K (Multi Shot), Researchhotkey (Hotkey - Learn)
+// Abilities: A0V0 (Snipe), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -90546,7 +90534,7 @@ Increases Clergymans' mana capacity, mana regeneration rate, attack damage and g
 }
 
 STRING 15088
-// Abilities: A0V0 (Snipe), Researchhotkey (Hotkey - Learn)
+// Abilities: A0VC (Viral Plague), Hotkey (Hotkey - Normal)
 {
 R
 }
@@ -91729,7 +91717,7 @@ STRING 15292
 }
 
 STRING 15293
-// Abilities: A0VC (Viral Plague), Hotkey (Hotkey - Normal)
+// Abilities: A0VC (Viral Plague), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -97055,7 +97043,7 @@ Opens a two-way portal to the target location within a range of <A00D,Rng3>. The
 }
 
 STRING 16182
-// Abilities: A0VC (Viral Plague), Researchhotkey (Hotkey - Learn)
+// Abilities: A0WF (Herald of Destruction), Hotkey (Hotkey - Normal)
 {
 R
 }
@@ -99821,7 +99809,7 @@ Warrior Hero, excels at augmenting nearby friendly troops.|n|cfff5962dCan learn:
 }
 
 STRING 16643
-// Abilities: A0WF (Herald of Destruction), Hotkey (Hotkey - Normal)
+// Abilities: A0WF (Herald of Destruction), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -104339,7 +104327,7 @@ STRING 17396
 }
 
 STRING 17397
-// Abilities: A0WF (Herald of Destruction), Researchhotkey (Hotkey - Learn)
+// Abilities: A0WQ (Locust Swarm), Hotkey (Hotkey - Normal)
 {
 R
 }
@@ -104351,7 +104339,7 @@ Q
 }
 
 STRING 17399
-// Abilities: A0WQ (Locust Swarm), Hotkey (Hotkey - Normal)
+// Abilities: A0WQ (Locust Swarm), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -105804,7 +105792,7 @@ Crimson Cathedral
 }
 
 STRING 17641
-// Abilities: A0WQ (Locust Swarm), Researchhotkey (Hotkey - Learn)
+// Abilities: A0WS (Aegis of Ragaros), Hotkey (Hotkey - Normal)
 {
 R
 }
@@ -106940,7 +106928,7 @@ Upgrade to Improved Crystal Protector
 }
 
 STRING 17831
-// Abilities: A0WS (Aegis of Ragaros), Hotkey (Hotkey - Normal)
+// Abilities: A0WS (Aegis of Ragaros), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -107960,7 +107948,7 @@ V
 }
 
 STRING 18001
-// Abilities: A0WS (Aegis of Ragaros), Researchhotkey (Hotkey - Learn)
+// Abilities: A0WW (Summon Zelemar), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -108038,7 +108026,7 @@ Q
 }
 
 STRING 18014
-// Abilities: A0WW (Summon Zelemar), Researchhotkey (Hotkey - Learn)
+// Abilities: A0WW (Summon Zelemar), Hotkey (Hotkey - Normal)
 {
 R
 }
@@ -108392,7 +108380,7 @@ Q
 }
 
 STRING 18073
-// Abilities: A0WW (Summon Zelemar), Hotkey (Hotkey - Normal)
+// Abilities: A00D (Slipstream), Hotkey (Hotkey - Normal)
 {
 R
 }
@@ -108548,7 +108536,7 @@ C
 }
 
 STRING 18099
-// Abilities: A00D (Slipstream), Hotkey (Hotkey - Normal)
+// Abilities: A00D (Slipstream), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -109286,7 +109274,7 @@ Q
 }
 
 STRING 18222
-// Abilities: A00D (Slipstream), Researchhotkey (Hotkey - Learn)
+// Abilities: A0XB (Decapitate), Hotkey (Hotkey - Normal)
 {
 R
 }
@@ -110368,25 +110356,25 @@ Viral Plague
 }
 
 STRING 18402
-// Abilities: A0XB (Decapitate), Hotkey (Hotkey - Normal)
-{
-R
-}
-
-STRING 18403
 // Abilities: A0XB (Decapitate), Researchhotkey (Hotkey - Learn)
 {
 R
 }
 
-STRING 18404
+STRING 18403
 // Abilities: A0ZA (Dragonmaw Battle Standard), Hotkey (Hotkey - Normal)
 {
 R
 }
 
-STRING 18405
+STRING 18404
 // Abilities: A0ZA (Dragonmaw Battle Standard), Researchhotkey (Hotkey - Learn)
+{
+R
+}
+
+STRING 18405
+// Abilities: A0ZJ (Portal to Nagrand), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -111376,7 +111364,7 @@ Revive Ragnaros
 }
 
 STRING 18575
-// Abilities: A0ZJ (Portal to Nagrand), Researchhotkey (Hotkey - Learn)
+// Abilities: A0ZY (Multi Shot), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -111887,7 +111875,7 @@ Elemental Fire
 }
 
 STRING 18660
-// Abilities: A0ZY (Multi Shot), Researchhotkey (Hotkey - Learn)
+// Abilities: A0KT (Arcane Recall), Hotkey (Hotkey - Normal)
 {
 R
 }
@@ -111911,7 +111899,7 @@ STRING 18663
 }
 
 STRING 18664
-// Abilities: A0KT (Arcane Recall), Hotkey (Hotkey - Normal)
+// Abilities: A0P9 (Dimensional Jump to Azuremyst), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -112199,7 +112187,7 @@ Curse of Executus
 }
 
 STRING 18712
-// Abilities: A0P9 (Dimensional Jump to Azuremyst), Researchhotkey (Hotkey - Learn)
+// Abilities: A0RB (Dimensional Jump to Argus), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -112223,7 +112211,7 @@ Tavern
 }
 
 STRING 18716
-// Abilities: A0RB (Dimensional Jump to Argus), Researchhotkey (Hotkey - Learn)
+// Abilities: A0SR (Dimensional Jump to Tempest Keep), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -112463,13 +112451,13 @@ This unit was hit by a Serrated Bite; its armor is temporarily reduced.
 }
 
 STRING 18756
-// Abilities: A0SR (Dimensional Jump to Tempest Keep), Researchhotkey (Hotkey - Learn)
+// Abilities: A07D (Portal to Black Temple), Researchhotkey (Hotkey - Learn)
 {
 R
 }
 
 STRING 18757
-// Abilities: A07D (Portal to Black Temple), Researchhotkey (Hotkey - Learn)
+// Abilities: A0JB (Summon Gallywix Personal Transport), Hotkey (Hotkey - Normal)
 {
 R
 }
@@ -112541,7 +112529,7 @@ Mustering Hall
 }
 
 STRING 18769
-// Abilities: A0JB (Summon Gallywix Personal Transport), Hotkey (Hotkey - Normal)
+// Abilities: A0JB (Summon Gallywix Personal Transport), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -112745,7 +112733,7 @@ Pinnacle
 }
 
 STRING 18803
-// Abilities: A0JB (Summon Gallywix Personal Transport), Researchhotkey (Hotkey - Learn)
+// Abilities: A0UB (Open a portal to Northrend), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -113987,7 +113975,7 @@ An impenetrable shield surrounds this unit, protecting it from all damage and sp
 }
 
 STRING 19042
-// Abilities: A0UB (Open a portal to Northrend), Researchhotkey (Hotkey - Learn)
+// Abilities: A0UC (Open a portal to Alterac), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -114233,7 +114221,7 @@ Farahlon (10gold/min)
 }
 
 STRING 19103
-// Abilities: A0UC (Open a portal to Alterac), Researchhotkey (Hotkey - Learn)
+// Abilities: A0D7 (Wraith Form), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -114815,7 +114803,7 @@ STRING 19227
 }
 
 STRING 19230
-// Abilities: A0D7 (Wraith Form), Researchhotkey (Hotkey - Learn)
+// Upgrades: Rosp (Spiked Barricades,Improved Spiked Barricades,Advanced Spiked Barricades), Hotkey (Hotkey)
 {
 R
 }
@@ -115218,7 +115206,7 @@ The hero unleashes a mortal axe strike, dealing 1250 damage after a short delay.
 }
 
 STRING 19318
-// Upgrades: Rosp (Spiked Barricades,Improved Spiked Barricades,Advanced Spiked Barricades), Hotkey (Hotkey)
+// Upgrades: Ropg (Pillage), Hotkey (Hotkey)
 {
 R
 }
@@ -115302,7 +115290,7 @@ Build Oil Rig
 }
 
 STRING 19333
-// Upgrades: Ropg (Pillage), Hotkey (Hotkey)
+// Upgrades: Rews (Well Spring), Hotkey (Hotkey)
 {
 R
 }
@@ -115494,7 +115482,7 @@ Build Coral of Wind
 }
 
 STRING 19378
-// Upgrades: Rews (Well Spring), Hotkey (Hotkey)
+// Upgrades: R00N (Storm Hammers), Hotkey (Hotkey)
 {
 R
 }
