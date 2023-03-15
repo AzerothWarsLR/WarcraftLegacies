@@ -2,8 +2,10 @@
 using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
+using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
 using MacroTools.ObjectiveSystem.Objectives.FactionBased;
+using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.QuestSystem;
 using WCSharp.Shared.Data;
@@ -22,13 +24,11 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
     /// Initializes a new instance of the <see cref="QuestTyrHand"/> class.
     /// </summary>
     /// <param name="rescueRect">Units in this area will start invulnerable and be rescued when the quest is complete.</param>
-    public QuestTyrHand(Rectangle rescueRect) : base("The Fortified City",
+    public QuestTyrHand(Capital capitalcity, Rectangle rescueRect) : base("The Fortified City",
       "The city of Tyr's Hand is considered impregnable, but they will be reluctant to join the war",
       "ReplaceableTextures\\CommandButtons\\BTNHumanBarracks.blp")
     {
-      AddObjective(new ObjectiveControlLevel(
-        ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N03P_CORIN_S_CROSSING_10GOLD_MIN), 20));
-      AddObjective(new ObjectiveExpire(1435, Title));
+      AddObjective(new ObjectiveCapitalDead(capitalcity));
       AddObjective(new ObjectiveSelfExists());
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
       Required = true;
@@ -38,7 +38,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
     protected override string RewardFlavour => "The city-fortress of Tyr's Hand has decided to join us!";
 
     /// <inheritdoc />
-    protected override string RewardDescription => "Control of all units in Tyr's Hand";
+    protected override string RewardDescription => "Control of all units in Tyr's Hand and Garythos is trainable";
 
     /// <inheritdoc />
     protected override void OnFail(Faction completingFaction) => 

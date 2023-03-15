@@ -78,6 +78,7 @@ If you survive the Plague, sail to the frozen wasteland of Northrend and take th
       Lordaeron.ModObjectLimit(FourCC("Hart"), 1); //Arthas
       Lordaeron.ModObjectLimit(FourCC("Huth"), 1); //Uther
       Lordaeron.ModObjectLimit(FourCC("H01J"), 1); //Mograine
+      Lordaeron.ModObjectLimit(FourCC("Hlgr"), 1); //Garithos
 
       Lordaeron.ModObjectLimit(FourCC("Harf"), 1); //Arthas
 
