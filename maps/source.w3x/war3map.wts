@@ -3740,12 +3740,6 @@ STRING 624
 Learn War Stomp - [|cffffcc00Level %d|r].
 }
 
-STRING 625
-// Units: nnsu (Coilfang Summoner), Ubertip (Tooltip - Extended)
-{
-Powerful caster. Can cast Monsoon, Tidal Serpent and Wise Council.|n |n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land and air units.|r
-}
-
 STRING 626
 // Units: nntg (Tidal Watcher), Name (Name)
 {
@@ -4247,7 +4241,7 @@ E
 }
 
 STRING 709
-// Units: nhyc (Dragon Turtle), Ubertip (Tooltip - Extended)
+// Units: n07R (War Turtle), Ubertip (Tooltip - Extended)
 {
 A powerful Turtle. Good at destroying enemy buildings. Has Hardened Skin, which reduces damage taken, and Spiked Shell which deals damage to enemy melee attackers. |n|cff99b4d1Can only train 8.|r|n|cffffcc00Attacks land units.|r
 }
@@ -4916,12 +4910,6 @@ STRING 820
 // Units: h022 (Farmer), Name (Name)
 {
 Farmer
-}
-
-STRING 821
-// Units: ndrn (Ashtongue Deathsworn), Ubertip (Tooltip - Extended)
-{
-Heavy melee unit. Has Vindication and War Plating.|n |n|n|cffffcc00Attacks land units.|r
 }
 
 STRING 822
@@ -23086,6 +23074,12 @@ STRING 3848
 Revive Envoy of Archimonde
 }
 
+STRING 3849
+// Units: nwgs (Couatl), Ubertip (Tooltip - Extended)
+{
+Agile flying creature of the Illidari.|n|cfff5962dAbilities:|R Prioritise.|n |n|cff99b4d1Can only train 12.|r|n|cffffcc00Attacks land and air units.|r
+}
+
 STRING 3850
 // Units: Ubal (Envoy of Archimonde), Tip (Tooltip - Basic)
 {
@@ -36995,18 +36989,6 @@ STRING 6167
 Inquisitor
 }
 
-STRING 6168
-// Units: nmsc (Mur'gul Shadowcaster), Ubertip (Tooltip - Extended)
-{
-Heavy ranged amphibious unit with Curse, Dispel Magic and Healing Ward. |n|n|cffffcc00Attacks land and air units.|r
-}
-
-STRING 6169
-// Units: nnsw (Naga Siren), Ubertip (Tooltip - Extended)
-{
-Powerful spellcaster. Can initially cast Parasite, which damages an enemy unit over time and can spawn a Watery Minion from their corpse. Also has the Frostbolt and anti-magic shell abilities. |n|n|cffffcc00Attacks land and air units.|r
-}
-
 STRING 6170
 // Units: n0BS (神已堕落 - Tier 4 Patron), EditorSuffix (Name - Editor Suffix)
 {
@@ -49851,12 +49833,6 @@ STRING 8306
 Dummy Nuke Warning
 }
 
-STRING 8307
-// Units: nnrg (Royal Guard), Ubertip (Tooltip - Extended)
-{
-Incredibly powerful melee unit. Has the Submerge ability, which allows this unit to hide in water. Also has Resistant Skin, which reduces the duration of negative spells and Crushing Wave, which deals damage in a line.|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land units.|r
-}
-
 STRING 8308
 // Abilities: ACsa (Searing Arrows), Unhotkey (Hotkey - Turn Off)
 {
@@ -61259,7 +61235,7 @@ Conjures forth a gigantic pillar of flame which deals 200 damage per second for 
 }
 
 STRING 10208
-// Units: n07R (War Turtle), Ubertip (Tooltip - Extended)
+// Units: n0CL (Gargantuan Sea Turtle), Ubertip (Tooltip - Extended)
 {
 A powerful Turtle. Good at destroying enemy buildings. Has Hardened Skin, which reduces damage taken, and Spiked Shell which deals damage to enemy melee attackers. |n|cff99b4d1Can only train 8.|r|n|cffffcc00Attacks land units.|r
 }
@@ -62702,6 +62678,12 @@ STRING 10448
 // Abilities: A01T (Shockwave), Name (Name)
 {
 Shockwave
+}
+
+STRING 10449
+// Units: nnsu (Coilfang Summoner), Ubertip (Tooltip - Extended)
+{
+Proud powerful witches of the Illidari.|n|cfff5962dAbilities:|R Monsoon, Tidal Serpent and Wise Council.|n |n|cff99b4d1Can only train 6.|n|cffffcc00Attacks land and air units.|r
 }
 
 STRING 10450
@@ -78407,7 +78389,7 @@ Light Burst (Effect)
 }
 
 STRING 13065
-// Units: nsnp (Snap Dragon), Ubertip (Tooltip - Extended)
+// Units: n0CE (Hatchling), Ubertip (Tooltip - Extended)
 {
 Light ranged unit that has a poison attack which slows and damages enemy units. Has True Sight and the Submerge ability, which allows this unit to hide in water. |n|n|cffffcc00Attacks land and air units.|r
 }
@@ -86409,6 +86391,12 @@ STRING 14398
 Z
 }
 
+STRING 14399
+// Units: nnrg (Royal Guard), Ubertip (Tooltip - Extended)
+{
+Powerful defenders of the sea.|n|cfff5962dAbilities:|RResistant Skin, Hardened Scales, Frost Bolt, Crushing Wave. |n |n|cff99b4d1Can only train 6.|n|cffffcc00Attacks land units.|r
+}
+
 STRING 14400
 // Abilities: A08L (Create Single Corpse), Name (Name)
 {
@@ -88779,6 +88767,12 @@ STRING 14794
 // Upgrades: R01L (Magic Sentry), Ubertip (Tooltip - Extended)
 {
 Provides towers with the ability to detect invisible units, excluding Cannon Towers.
+}
+
+STRING 14795
+// Units: nnad (Altar of the Betrayer), Ubertip (Tooltip - Extended)
+{
+Revives slain heroes and demi heroes.
 }
 
 STRING 14796
@@ -95896,6 +95890,12 @@ STRING 15989
 W
 }
 
+STRING 15990
+// Units: nmyr (Naga Myrmidon), Ubertip (Tooltip - Extended)
+{
+Powerful warrior of the depths.|n|cfff5962dAbilities:|R Ensnare.|n|n|cffffcc00Attacks land units.|r
+}
+
 STRING 15991
 // Abilities: AOcl (Chain Lightning), Ubertip (Tooltip - Normal - Extended)
 {
@@ -98102,12 +98102,6 @@ STRING 16358
 // Units: n09E (Storm Wyrm), EditorSuffix (Name - Editor Suffix)
 {
 (troll)
-}
-
-STRING 16359
-// Units: n0CL (Gargantuan Sea Turtle), Ubertip (Tooltip - Extended)
-{
-A powerful Turtle. Good at destroying enemy buildings. Has Hardened Skin, which reduces damage taken, and Spiked Shell which deals damage to enemy melee attackers. |n|cff99b4d1Can only train 8.|r|n|cffffcc00Attacks land units.|r
 }
 
 STRING 16360
@@ -101584,12 +101578,6 @@ STRING 16938
 This unit is under the effects of United for the Cause; it has increased armor.
 }
 
-STRING 16939
-// Units: nwgs (Couatl), Ubertip (Tooltip - Extended)
-{
-Light flying unit that has the prioritize ability and a very strong anti-air attack. |n|cff99b4d1Can only train 8.|r|n|cffffcc00Attacks land and air units.|r
-}
-
 STRING 16940
 // Buffs/Effects: B09Z (), Bufftip (Tooltip)
 {
@@ -102608,6 +102596,12 @@ STRING 17109
 // Units: Ecen (Demigod of the Night Elves), Tip (Tooltip - Basic)
 {
 Summon Cenarius
+}
+
+STRING 17110
+// Units: nmsc (Mur'gul Shadowcaster), Ubertip (Tooltip - Extended)
+{
+Mystic caster of the Naga.  |n|cfff5962dAbilities:|r Curse.|n|cfff5962dCan Learn:|R Dispel Magic, Healing Ward.|n|n|cffffcc00Attacks land and air units.
 }
 
 STRING 17111
@@ -106473,6 +106467,12 @@ STRING 17754
 // Abilities: AHwe (Summon Fel Stalkers ), Researchtip (Tooltip - Learn)
 {
 Learn Summon Fel Stalkers - [|cffffcc00Level %d|r]
+}
+
+STRING 17755
+// Units: nmpe (Mur'gul Slave), Ubertip (Tooltip - Extended)
+{
+Mur'gul Thrall of the lower slave class.|n|cfff5962dAbilities:|r Repair, Gather|n|n|cffffcc00Attacks land units and trees.
 }
 
 STRING 17756
@@ -110523,6 +110523,12 @@ STRING 18429
 Train - Stygian Hulk
 }
 
+STRING 18430
+// Units: nhyc (Dragon Turtle), Ubertip (Tooltip - Extended)
+{
+Large turtle of old, exceptional damage buildings.  |n|cfff5962dAbilities:|R Devour, Spiked Shell, Hardened Skin.|n|n|cff99b4d1Can only train 8.|r|n|cffffcc00Attacks land units. |r
+}
+
 STRING 18431
 // Abilities: A0VJ (Titanforged), EditorSuffix (Editor Suffix)
 {
@@ -110883,6 +110889,12 @@ STRING 18490
 Deepseer
 }
 
+STRING 18491
+// Units: ndrs (Ashtongue Mystic), Ubertip (Tooltip - Extended)
+{
+Draenei mystic supportive spellcastrter.|n|cfff5962dAbilities:|R Lightning Shield, Healing Wave:|R|n|cff99b4d1|nCan only train 6.|cffffcc00|nAttacks land and air units.|r
+}
+
 STRING 18492
 // Upgrades: Rhme (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Hotkey (Hotkey)
 {
@@ -110917,12 +110929,6 @@ STRING 18497
 // Units: n0CD (Bloodkin), Name (Name)
 {
 Bloodkin
-}
-
-STRING 18498
-// Units: n0CE (Hatchling), Ubertip (Tooltip - Extended)
-{
-Light ranged unit that has a poison attack which slows and damages enemy units. Has True Sight and the Submerge ability, which allows this unit to hide in water. |n|n|cffffcc00Attacks land and air units.|r
 }
 
 STRING 18499
@@ -111031,6 +111037,24 @@ STRING 18516
 // Upgrades: Rora (Steel Ranged Weapons,Thorium Ranged Weapons,Arcanite Ranged Weapons), Hotkey (Hotkey)
 {
 W
+}
+
+STRING 18517
+// Units: ndrn (Ashtongue Deathsworn), Ubertip (Tooltip - Extended)
+{
+Versatile frontline warrior of the Draenei.|n|cfff5962dAbilities:|R Vindication, War Plating|n|n|cffffcc00Attacks land units.|r
+}
+
+STRING 18518
+// Units: nnsw (Naga Siren), Ubertip (Tooltip - Extended)
+{
+Ancient mystic Naga spellcaster.|n|cfff5962dAbilities:|r Parasite|n|cfff5962dCan Learn:|R Frostbolt, Anti-Magic Shell|n|n|cffffcc00Attacks land and air units.|R
+}
+
+STRING 18519
+// Units: nsnp (Snap Dragon), Ubertip (Tooltip - Extended)
+{
+Ferocious amphibious reptile.|n|cfff5962dAbilities:|r True Sight, Slow Poison|n|cfff5962d|n|cffffcc00Attacks land and air units.|R
 }
 
 STRING 18520
@@ -116061,12 +116085,6 @@ STRING 19501
 // Units: ndrs (Ashtongue Mystic), Tip (Tooltip - Basic)
 {
 Train Ashtongue Mystic
-}
-
-STRING 19502
-// Units: ndrs (Ashtongue Mystic), Ubertip (Tooltip - Extended)
-{
-Heavy ranged unit. Can cast Lightning Shield and Healing Wave. |n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land and air units.|r
 }
 
 STRING 19503
