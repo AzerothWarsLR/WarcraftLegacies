@@ -60928,6 +60928,12 @@ STRING 10151
 Gives 5% extra damage to the attacks of nearby friendly units.
 }
 
+STRING 10152
+// Units: n0A0 (Ascendant's Rise (10gold/min)), Name (Name)
+{
+Ascendant's Rise (10gold/min)
+}
+
 STRING 10153
 // Abilities: A0D4 (Ironforge Aura), Name (Name)
 {
@@ -83948,6 +83954,12 @@ STRING 13987
 // Abilities: A0EW (Take Off), Tip (Tooltip - Normal)
 {
 Take Off
+}
+
+STRING 13988
+// Doodads: D020 (Ashenvale Lights), Name (Name)
+{
+Ashenvale Lights
 }
 
 STRING 13989
@@ -111376,13 +111388,13 @@ C
 }
 
 STRING 18578
-// Units: n0CF (Fire Wyrm), EditorSuffix (Name - Editor Suffix)
+// Units: U00W (Majordomo of Ragnaros), EditorSuffix (Name - Editor Suffix)
 {
  (Ragnaros)
 }
 
 STRING 18579
-// Units: n0CG (Core Hound), EditorSuffix (Name - Editor Suffix)
+// Units: n0CC (Shadowforge Titan), EditorSuffix (Name - Editor Suffix)
 {
  (Ragnaros)
 }
@@ -111413,7 +111425,7 @@ Elementalist connected with the spirits of Azeroth.|n|cfff5962dAbilities:|R Purg
 }
 
 STRING 18584
-// Units: h00B (Irondrake), EditorSuffix (Name - Editor Suffix)
+// Units: n0CF (Fire Wyrm), EditorSuffix (Name - Editor Suffix)
 {
  (Ragnaros)
 }
@@ -111437,13 +111449,13 @@ Massive Flesh Golem, the ultimate fleshwork creation.|n|cfff5962dAbilities:|R Di
 }
 
 STRING 18588
-// Units: h0A6 (Anvilrage Guardsman), EditorSuffix (Name - Editor Suffix)
+// Units: n0CG (Core Hound), EditorSuffix (Name - Editor Suffix)
 {
  (Ragnaros)
 }
 
 STRING 18589
-// Units: h0A7 (Bear Rider), EditorSuffix (Name - Editor Suffix)
+// Units: h00B (Irondrake), EditorSuffix (Name - Editor Suffix)
 {
  (Ragnaros)
 }
@@ -111455,25 +111467,25 @@ STRING 18590
 }
 
 STRING 18591
-// Units: h0A8 (Chieftain), EditorSuffix (Name - Editor Suffix)
+// Units: h0A6 (Anvilrage Guardsman), EditorSuffix (Name - Editor Suffix)
 {
  (Ragnaros)
 }
 
 STRING 18592
-// Units: h0AA (Magma Tank), EditorSuffix (Name - Editor Suffix)
+// Units: h0A7 (Bear Rider), EditorSuffix (Name - Editor Suffix)
 {
  (Ragnaros)
 }
 
 STRING 18593
-// Units: h0AB (Shadowcaster), EditorSuffix (Name - Editor Suffix)
+// Units: h0A8 (Chieftain), EditorSuffix (Name - Editor Suffix)
 {
  (Ragnaros)
 }
 
 STRING 18594
-// Units: n0CH (Flame Keeper), EditorSuffix (Name - Editor Suffix)
+// Units: h0AA (Magma Tank), EditorSuffix (Name - Editor Suffix)
 {
  (Ragnaros)
 }
@@ -111491,7 +111503,7 @@ Build School of the Tides
 }
 
 STRING 18597
-// Units: U02K (Lord of the Firelands), EditorSuffix (Name - Editor Suffix)
+// Units: h0AB (Shadowcaster), EditorSuffix (Name - Editor Suffix)
 {
  (Ragnaros)
 }
@@ -111509,13 +111521,13 @@ Primary structure, used to train workers and gather resources.|n|cfff5962dTrains
 }
 
 STRING 18600
-// Units: h07Z (Mining Colony), Name (Name)
+// Units: h07E (Mining Colony), Name (Name)
 {
 Mining Colony
 }
 
 STRING 18601
-// Units: h07Z (Mining Colony), Tip (Tooltip - Basic)
+// Units: h07E (Mining Colony), Tip (Tooltip - Basic)
 {
 Build Mining Colony
 }
@@ -111563,7 +111575,7 @@ STRING 18608
 }
 
 STRING 18609
-// Units: U00W (Majordomo of Ragnaros), EditorSuffix (Name - Editor Suffix)
+// Units: n0CH (Flame Keeper), EditorSuffix (Name - Editor Suffix)
 {
  (Ragnaros)
 }
@@ -111635,7 +111647,7 @@ Magma Blast - [|cffffcc00Level 3|r]
 }
 
 STRING 18621
-// Units: n0CC (Shadowforge Titan), EditorSuffix (Name - Editor Suffix)
+// Units: U02K (Lord of the Firelands), EditorSuffix (Name - Editor Suffix)
 {
  (Ragnaros)
 }
@@ -111875,13 +111887,13 @@ R
 }
 
 STRING 18661
-// Units: h080 (Dwarf Hold), Name (Name)
+// Units: h07F (Dwarf Hold), Name (Name)
 {
 Dwarf Hold
 }
 
 STRING 18662
-// Units: h080 (Dwarf Hold), Tip (Tooltip - Basic)
+// Units: h07F (Dwarf Hold), Tip (Tooltip - Basic)
 {
 Upgrade to Dwarf Hold
 }
@@ -112097,7 +112109,7 @@ Goblin Flare
 }
 
 STRING 18698
-// Units: h081 (Great Hold), Name (Name)
+// Units: h07G (Great Hold), Name (Name)
 {
 Great Hold
 }
@@ -112187,7 +112199,7 @@ R
 }
 
 STRING 18713
-// Units: h081 (Great Hold), Tip (Tooltip - Basic)
+// Units: h07G (Great Hold), Tip (Tooltip - Basic)
 {
 Upgrade to Great Hold
 }
@@ -112517,7 +112529,7 @@ Curse of Flame (|cffffcc00Q|r)
 }
 
 STRING 18768
-// Units: h084 (Mustering Hall), Name (Name)
+// Units: h07C (Mustering Hall), Name (Name)
 {
 Mustering Hall
 }
@@ -112565,7 +112577,7 @@ Gruul
 }
 
 STRING 18776
-// Units: h084 (Mustering Hall), Tip (Tooltip - Basic)
+// Units: h07C (Mustering Hall), Tip (Tooltip - Basic)
 {
 Build Mustering Hall
 }
@@ -112607,7 +112619,7 @@ Cremate
 }
 
 STRING 18783
-// Units: h085 (Forgeworks), Name (Name)
+// Units: h048 (Forgeworks), Name (Name)
 {
 Forgeworks
 }
@@ -112643,7 +112655,7 @@ Learn Healing Spores - [|cffffcc00Level %d|r]
 }
 
 STRING 18789
-// Units: h085 (Forgeworks), Tip (Tooltip - Basic)
+// Units: h048 (Forgeworks), Tip (Tooltip - Basic)
 {
 Build Forgeworks
 }
@@ -112937,13 +112949,13 @@ STRING 18837
 }
 
 STRING 18838
-// Units: n09Z (Explorer's Vault), Name (Name)
+// Units: n07U (Explorer's Vault), Name (Name)
 {
 Explorer's Vault
 }
 
 STRING 18839
-// Units: n09Z (Explorer's Vault), Tip (Tooltip - Basic)
+// Units: n07U (Explorer's Vault), Tip (Tooltip - Basic)
 {
 Build Explorer's Vault
 }
@@ -113003,7 +113015,7 @@ STRING 18848
 }
 
 STRING 18849
-// Units: h08R (Cannon Tower), Ubertip (Tooltip - Extended)
+// Units: h09W (Control Point Defender), Ubertip (Tooltip - Extended)
 {
 Cannon topped tower defense.|n|cfff5962dUpgrades into:|R Improved Cannon Tower|n|n|cffffcc00Attacks land units and trees.|r
 }
@@ -113231,7 +113243,7 @@ Summons Zelemar the Wrathful to fight as the Hero's champion.|n|n|cffffcc00Level
 }
 
 STRING 18887
-// Upgrades: R034 (Improved Bows), Hotkey (Hotkey)
+// Upgrades: R00K (Animal War Training), Hotkey (Hotkey)
 {
 D
 }
@@ -113417,19 +113429,19 @@ X
 }
 
 STRING 18918
-// Upgrades: R097 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R03O (Animal War Training), Hotkey (Hotkey)
 {
 E
 }
 
 STRING 18919
-// Upgrades: R097 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R08S (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 C
 }
 
 STRING 18920
-// Upgrades: R097 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R092 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 C
 }
@@ -113477,7 +113489,7 @@ Forked Lightning - [|cffffcc00Level 4|r]
 }
 
 STRING 18928
-// Upgrades: R097 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R092 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 C
 }
@@ -113753,7 +113765,7 @@ Multishot
 }
 
 STRING 18977
-// Upgrades: R03O (Animal War Training), Hotkey (Hotkey)
+// Upgrades: R097 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 E
 }
@@ -113825,7 +113837,7 @@ Further increases the armor of all Naval Units.
 }
 
 STRING 18993
-// Upgrades: R08S (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R092 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 C
 }
@@ -113843,13 +113855,13 @@ Summons 2 Blue Dragon to fight for you. |nLasts 180 seconds.
 }
 
 STRING 18998
-// Upgrades: R092 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R097 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 C
 }
 
 STRING 18999
-// Upgrades: R092 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R097 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 C
 }
@@ -113873,7 +113885,7 @@ You will start the game as the Dragonmaw Clan, allied to the Horde and trying to
 }
 
 STRING 19009
-// Upgrades: R092 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R097 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 C
 }
@@ -114371,7 +114383,7 @@ Goblin Pilot
 }
 
 STRING 19139
-// Units: h09W (Control Point Defender), Ubertip (Tooltip - Extended)
+// Units: h0AL (Control Point Defender), Ubertip (Tooltip - Extended)
 {
 Cannon topped tower defense.|n|cfff5962dUpgrades into:|R Improved Cannon Tower|n|n|cffffcc00Attacks land units and trees.|r
 }
@@ -114773,7 +114785,7 @@ Increases a friendly unit's attack rate by 30% and movement speed by 30%. |nLast
 }
 
 STRING 19222
-// Upgrades: R00K (Animal War Training), Hotkey (Hotkey)
+// Upgrades: R034 (Improved Bows), Hotkey (Hotkey)
 {
 D
 }
@@ -116238,7 +116250,7 @@ Build Hunter Tower
 }
 
 STRING 19539
-// Units: h0AL (Control Point Defender), Ubertip (Tooltip - Extended)
+// Units: h08R (Cannon Tower), Ubertip (Tooltip - Extended)
 {
 Cannon topped tower defense.|n|cfff5962dUpgrades into:|R Improved Cannon Tower|n|n|cffffcc00Attacks land units and trees.|r
 }
@@ -116934,13 +116946,13 @@ STRING 19693
 }
 
 STRING 19695
-// Units: n07U (Explorer's Vault), Name (Name)
+// Units: n09Z (Explorer's Vault), Name (Name)
 {
 Explorer's Vault
 }
 
 STRING 19696
-// Units: n07U (Explorer's Vault), Tip (Tooltip - Basic)
+// Units: n09Z (Explorer's Vault), Tip (Tooltip - Basic)
 {
 Build Explorer's Vault
 }
@@ -117144,13 +117156,13 @@ STRING 19729
 }
 
 STRING 19730
-// Units: h07G (Great Hold), Name (Name)
+// Units: h081 (Great Hold), Name (Name)
 {
 Great Hold
 }
 
 STRING 19731
-// Units: h07G (Great Hold), Tip (Tooltip - Basic)
+// Units: h081 (Great Hold), Tip (Tooltip - Basic)
 {
 Upgrade to Great Hold
 }
@@ -117162,13 +117174,13 @@ STRING 19732
 }
 
 STRING 19733
-// Units: h07F (Dwarf Hold), Name (Name)
+// Units: h080 (Dwarf Hold), Name (Name)
 {
 Dwarf Hold
 }
 
 STRING 19734
-// Units: h07F (Dwarf Hold), Tip (Tooltip - Basic)
+// Units: h080 (Dwarf Hold), Tip (Tooltip - Basic)
 {
 Upgrade to Dwarf Hold
 }
@@ -117180,13 +117192,13 @@ STRING 19735
 }
 
 STRING 19736
-// Units: h07E (Mining Colony), Name (Name)
+// Units: h07Z (Mining Colony), Name (Name)
 {
 Mining Colony
 }
 
 STRING 19737
-// Units: h07E (Mining Colony), Tip (Tooltip - Basic)
+// Units: h07Z (Mining Colony), Tip (Tooltip - Basic)
 {
 Build Mining Colony
 }
@@ -117204,13 +117216,13 @@ STRING 19739
 }
 
 STRING 19740
-// Units: h07C (Mustering Hall), Name (Name)
+// Units: h084 (Mustering Hall), Name (Name)
 {
 Mustering Hall
 }
 
 STRING 19741
-// Units: h07C (Mustering Hall), Tip (Tooltip - Basic)
+// Units: h084 (Mustering Hall), Tip (Tooltip - Basic)
 {
 Build Mustering Hall
 }
@@ -117516,13 +117528,13 @@ STRING 19797
 }
 
 STRING 19798
-// Units: h048 (Forgeworks), Name (Name)
+// Units: h085 (Forgeworks), Name (Name)
 {
 Forgeworks
 }
 
 STRING 19799
-// Units: h048 (Forgeworks), Tip (Tooltip - Basic)
+// Units: h085 (Forgeworks), Tip (Tooltip - Basic)
 {
 Build Forgeworks
 }
