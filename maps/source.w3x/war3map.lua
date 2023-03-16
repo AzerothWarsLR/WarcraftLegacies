@@ -5804,7 +5804,7 @@ u = BlzCreateUnitWithSkin(p, FourCC("nits"), 2232.2, 20025.2, 334.764, FourCC("n
 SetUnitAcquireRange(u, 200.0)
 u = BlzCreateUnitWithSkin(p, FourCC("nith"), 2110.9, 20018.3, 267.097, FourCC("nith"))
 SetUnitAcquireRange(u, 200.0)
-u = BlzCreateUnitWithSkin(p, FourCC("nfra"), -11578.4, 8987.6, -21.785, FourCC("nfra"))
+u = BlzCreateUnitWithSkin(p, FourCC("nfra"), -11578.4, 8987.6, 338.216, FourCC("nfra"))
 SetUnitState(u, UNIT_STATE_MANA, 500)
 SetUnitAcquireRange(u, 200.0)
 u = BlzCreateUnitWithSkin(p, FourCC("nitr"), 2225.8, 19731.8, 163.368, FourCC("nitr"))

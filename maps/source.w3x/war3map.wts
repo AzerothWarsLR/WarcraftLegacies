@@ -3741,9 +3741,9 @@ Learn War Stomp - [|cffffcc00Level %d|r].
 }
 
 STRING 625
-// Units: nnsu (Coilfang Summoner), Ubertip (Tooltip - Extended)
+// Units: h083 (Altar of Cataclysm), Name (Name)
 {
-Powerful caster. Can cast Monsoon, Tidal Serpent and Wise Council.|n |n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land and air units.|r
+Altar of Cataclysm
 }
 
 STRING 626
@@ -4247,7 +4247,7 @@ E
 }
 
 STRING 709
-// Units: nhyc (Dragon Turtle), Ubertip (Tooltip - Extended)
+// Units: n07R (War Turtle), Ubertip (Tooltip - Extended)
 {
 A powerful Turtle. Good at destroying enemy buildings. Has Hardened Skin, which reduces damage taken, and Spiked Shell which deals damage to enemy melee attackers. |n|cff99b4d1Can only train 8.|r|n|cffffcc00Attacks land units.|r
 }
@@ -4919,9 +4919,9 @@ Farmer
 }
 
 STRING 821
-// Units: ndrn (Ashtongue Deathsworn), Ubertip (Tooltip - Extended)
+// Units: h07Z (Holdfast), Ubertip (Tooltip - Extended)
 {
-Heavy melee unit. Has Vindication and War Plating.|n |n|n|cffffcc00Attacks land units.|r
+Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Mason. |n|cfff5962dUpgrades to:|R Fortified Holdfast.
 }
 
 STRING 822
@@ -18853,7 +18853,7 @@ STRING 3142
 }
 
 STRING 3143
-// Units: h084 (Mustering Hall), Hotkey (Hotkey)
+// Units: h084 (Hall of Tyr), Hotkey (Hotkey)
 {
 A
 }
@@ -19332,7 +19332,7 @@ STRING 3222
 }
 
 STRING 3223
-// Units: h087 (Pinnacle), Hotkey (Hotkey)
+// Units: h087 (Hall of Logi), Hotkey (Hotkey)
 {
 S
 }
@@ -23086,6 +23086,12 @@ STRING 3848
 Revive Envoy of Archimonde
 }
 
+STRING 3849
+// Units: nwgs (Couatl), Ubertip (Tooltip - Extended)
+{
+Agile flying creature of the Illidari.|n|cfff5962dAbilities:|R Prioritise.|n |n|cff99b4d1Can only train 12.|r|n|cffffcc00Attacks land and air units.|r
+}
+
 STRING 3850
 // Units: Ubal (Envoy of Archimonde), Tip (Tooltip - Basic)
 {
@@ -24611,7 +24617,7 @@ Fires a huge shard of stone at every enemy unit in the target area, dealing dama
 }
 
 STRING 4104
-// Units: h08J (Gryphon Aviary), Hotkey (Hotkey)
+// Units: h08J (Magma Hold), Hotkey (Hotkey)
 {
 F
 }
@@ -28398,7 +28404,7 @@ Increases the attack rate of the target unit by <Suhf,DataA2,%>%.|nLasts 20 seco
 }
 
 STRING 4735
-// Units: h083 (Altar of Fortitude), Hotkey (Hotkey)
+// Units: h083 (Altar of Cataclysm), Hotkey (Hotkey)
 {
 X
 }
@@ -29832,7 +29838,7 @@ Q
 }
 
 STRING 4974
-// Units: h088 (Workshop), Hotkey (Hotkey)
+// Units: h088 (Ember Workshop), Hotkey (Hotkey)
 {
 D
 }
@@ -30972,7 +30978,7 @@ Deactivate to move at normal speed, but take regular damage from Piercing attack
 }
 
 STRING 5164
-// Units: h07Z (Mining Colony), Hotkey (Hotkey)
+// Units: h07Z (Holdfast), Hotkey (Hotkey)
 {
 Q
 }
@@ -34644,7 +34650,7 @@ Frost Arrows - [|cffffcc00Level 4|r]
 }
 
 STRING 5776
-// Units: h082 (Tavern), Hotkey (Hotkey)
+// Units: h082 (Crooked Inn Tavern), Hotkey (Hotkey)
 {
 W
 }
@@ -36996,15 +37002,15 @@ Inquisitor
 }
 
 STRING 6168
-// Units: nmsc (Mur'gul Shadowcaster), Ubertip (Tooltip - Extended)
+// Units: h07Z (Holdfast), Name (Name)
 {
-Heavy ranged amphibious unit with Curse, Dispel Magic and Healing Ward. |n|n|cffffcc00Attacks land and air units.|r
+Holdfast
 }
 
 STRING 6169
-// Units: nnsw (Naga Siren), Ubertip (Tooltip - Extended)
+// Units: h07Z (Holdfast), Tip (Tooltip - Basic)
 {
-Powerful spellcaster. Can initially cast Parasite, which damages an enemy unit over time and can spawn a Watery Minion from their corpse. Also has the Frostbolt and anti-magic shell abilities. |n|n|cffffcc00Attacks land and air units.|r
+Build Holdfast
 }
 
 STRING 6170
@@ -38088,7 +38094,7 @@ Creates a shield of frost around a target friendly unit. The shield adds <ACfu,D
 }
 
 STRING 6350
-// Units: h085 (Forgeworks), Hotkey (Hotkey)
+// Units: h085 (Catalyst Forge), Hotkey (Hotkey)
 {
 E
 }
@@ -49852,9 +49858,9 @@ Dummy Nuke Warning
 }
 
 STRING 8307
-// Units: nnrg (Royal Guard), Ubertip (Tooltip - Extended)
+// Units: h080 (Fortfied Holdfast), Ubertip (Tooltip - Extended)
 {
-Incredibly powerful melee unit. Has the Submerge ability, which allows this unit to hide in water. Also has Resistant Skin, which reduces the duration of negative spells and Crushing Wave, which deals damage in a line.|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land units.|r
+Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Mason |n|cfff5962dAbilities:|R Powered Up Ammunition |n|cfff5962dUpgrades to:|R Trelleborg
 }
 
 STRING 8308
@@ -61259,7 +61265,7 @@ Conjures forth a gigantic pillar of flame which deals 200 damage per second for 
 }
 
 STRING 10208
-// Units: n07R (War Turtle), Ubertip (Tooltip - Extended)
+// Units: n0CL (Gargantuan Sea Turtle), Ubertip (Tooltip - Extended)
 {
 A powerful Turtle. Good at destroying enemy buildings. Has Hardened Skin, which reduces damage taken, and Spiked Shell which deals damage to enemy melee attackers. |n|cff99b4d1Can only train 8.|r|n|cffffcc00Attacks land units.|r
 }
@@ -62702,6 +62708,12 @@ STRING 10448
 // Abilities: A01T (Shockwave), Name (Name)
 {
 Shockwave
+}
+
+STRING 10449
+// Units: nnsu (Coilfang Summoner), Ubertip (Tooltip - Extended)
+{
+Proud powerful witches of the Illidari.|n|cfff5962dAbilities:|R Monsoon, Tidal Serpent and Wise Council.|n |n|cff99b4d1Can only train 6.|n|cffffcc00Attacks land and air units.|r
 }
 
 STRING 10450
@@ -78407,7 +78419,7 @@ Light Burst (Effect)
 }
 
 STRING 13065
-// Units: nsnp (Snap Dragon), Ubertip (Tooltip - Extended)
+// Units: n0CE (Hatchling), Ubertip (Tooltip - Extended)
 {
 Light ranged unit that has a poison attack which slows and damages enemy units. Has True Sight and the Submerge ability, which allows this unit to hide in water. |n|n|cffffcc00Attacks land and air units.|r
 }
@@ -84317,7 +84329,7 @@ STRING 14049
 }
 
 STRING 14050
-// Units: h080 (Dwarf Hold), Hotkey (Hotkey)
+// Units: h080 (Fortfied Holdfast), Hotkey (Hotkey)
 {
 C
 }
@@ -84515,7 +84527,7 @@ STRING 14082
 }
 
 STRING 14083
-// Units: h081 (Great Hold), Hotkey (Hotkey)
+// Units: h081 (Great Trelleborg), Hotkey (Hotkey)
 {
 C
 }
@@ -85157,7 +85169,7 @@ rlev
 }
 
 STRING 14190
-// Units: n09Z (Explorer's Vault), Hotkey (Hotkey)
+// Units: n09Z (Arcane Hall), Hotkey (Hotkey)
 {
 C
 }
@@ -86407,6 +86419,12 @@ STRING 14398
 // Upgrades: Rune (Necromancer Adept Training,Necromancer Master Training), Hotkey (Hotkey)
 {
 Z
+}
+
+STRING 14399
+// Units: nnrg (Royal Guard), Ubertip (Tooltip - Extended)
+{
+Powerful defenders of the sea.|n|cfff5962dAbilities:|RResistant Skin, Hardened Scales, Frost Bolt, Crushing Wave. |n |n|cff99b4d1Can only train 6.|n|cffffcc00Attacks land units.|r
 }
 
 STRING 14400
@@ -88779,6 +88797,12 @@ STRING 14794
 // Upgrades: R01L (Magic Sentry), Ubertip (Tooltip - Extended)
 {
 Provides towers with the ability to detect invisible units, excluding Cannon Towers.
+}
+
+STRING 14795
+// Units: nnad (Altar of the Betrayer), Ubertip (Tooltip - Extended)
+{
+Revives slain heroes and demi heroes.
 }
 
 STRING 14796
@@ -95896,6 +95920,12 @@ STRING 15989
 W
 }
 
+STRING 15990
+// Units: nmyr (Naga Myrmidon), Ubertip (Tooltip - Extended)
+{
+Powerful warrior of the depths.|n|cfff5962dAbilities:|R Ensnare.|n|n|cffffcc00Attacks land units.|r
+}
+
 STRING 15991
 // Abilities: AOcl (Chain Lightning), Ubertip (Tooltip - Normal - Extended)
 {
@@ -98105,9 +98135,9 @@ STRING 16358
 }
 
 STRING 16359
-// Units: n0CL (Gargantuan Sea Turtle), Ubertip (Tooltip - Extended)
+// Units: h080 (Fortfied Holdfast), Name (Name)
 {
-A powerful Turtle. Good at destroying enemy buildings. Has Hardened Skin, which reduces damage taken, and Spiked Shell which deals damage to enemy melee attackers. |n|cff99b4d1Can only train 8.|r|n|cffffcc00Attacks land units.|r
+Fortfied Holdfast
 }
 
 STRING 16360
@@ -101585,9 +101615,9 @@ This unit is under the effects of United for the Cause; it has increased armor.
 }
 
 STRING 16939
-// Units: nwgs (Couatl), Ubertip (Tooltip - Extended)
+// Units: h080 (Fortfied Holdfast), Tip (Tooltip - Basic)
 {
-Light flying unit that has the prioritize ability and a very strong anti-air attack. |n|cff99b4d1Can only train 8.|r|n|cffffcc00Attacks land and air units.|r
+Upgrade to Fortified Holdfast
 }
 
 STRING 16940
@@ -102608,6 +102638,12 @@ STRING 17109
 // Units: Ecen (Demigod of the Night Elves), Tip (Tooltip - Basic)
 {
 Summon Cenarius
+}
+
+STRING 17110
+// Units: nmsc (Mur'gul Shadowcaster), Ubertip (Tooltip - Extended)
+{
+Mystic caster of the Naga.  |n|cfff5962dAbilities:|r Curse.|n|cfff5962dCan Learn:|R Dispel Magic, Healing Ward.|n|n|cffffcc00Attacks land and air units.
 }
 
 STRING 17111
@@ -106473,6 +106509,12 @@ STRING 17754
 // Abilities: AHwe (Summon Fel Stalkers ), Researchtip (Tooltip - Learn)
 {
 Learn Summon Fel Stalkers - [|cffffcc00Level %d|r]
+}
+
+STRING 17755
+// Units: nmpe (Mur'gul Slave), Ubertip (Tooltip - Extended)
+{
+Mur'gul Thrall of the lower slave class.|n|cfff5962dAbilities:|r Repair, Gather|n|n|cffffcc00Attacks land units and trees.
 }
 
 STRING 17756
@@ -110523,6 +110565,12 @@ STRING 18429
 Train - Stygian Hulk
 }
 
+STRING 18430
+// Units: nhyc (Dragon Turtle), Ubertip (Tooltip - Extended)
+{
+Large turtle of old, exceptional damage buildings.  |n|cfff5962dAbilities:|R Devour, Spiked Shell, Hardened Skin.|n|n|cff99b4d1Can only train 8.|r|n|cffffcc00Attacks land units. |r
+}
+
 STRING 18431
 // Abilities: A0VJ (Titanforged), EditorSuffix (Editor Suffix)
 {
@@ -110883,6 +110931,12 @@ STRING 18490
 Deepseer
 }
 
+STRING 18491
+// Units: ndrs (Ashtongue Mystic), Ubertip (Tooltip - Extended)
+{
+Draenei mystic supportive spellcastrter.|n|cfff5962dAbilities:|R Lightning Shield, Healing Wave:|R|n|cff99b4d1|nCan only train 6.|cffffcc00|nAttacks land and air units.|r
+}
+
 STRING 18492
 // Upgrades: Rhme (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Hotkey (Hotkey)
 {
@@ -110920,9 +110974,9 @@ Bloodkin
 }
 
 STRING 18498
-// Units: n0CE (Hatchling), Ubertip (Tooltip - Extended)
+// Units: h081 (Great Trelleborg), Name (Name)
 {
-Light ranged unit that has a poison attack which slows and damages enemy units. Has True Sight and the Submerge ability, which allows this unit to hide in water. |n|n|cffffcc00Attacks land and air units.|r
+Great Trelleborg
 }
 
 STRING 18499
@@ -111031,6 +111085,24 @@ STRING 18516
 // Upgrades: Rora (Steel Ranged Weapons,Thorium Ranged Weapons,Arcanite Ranged Weapons), Hotkey (Hotkey)
 {
 W
+}
+
+STRING 18517
+// Units: ndrn (Ashtongue Deathsworn), Ubertip (Tooltip - Extended)
+{
+Versatile frontline warrior of the Draenei.|n|cfff5962dAbilities:|R Vindication, War Plating|n|n|cffffcc00Attacks land units.|r
+}
+
+STRING 18518
+// Units: nnsw (Naga Siren), Ubertip (Tooltip - Extended)
+{
+Ancient mystic Naga spellcaster.|n|cfff5962dAbilities:|r Parasite|n|cfff5962dCan Learn:|R Frostbolt, Anti-Magic Shell|n|n|cffffcc00Attacks land and air units.|R
+}
+
+STRING 18519
+// Units: nsnp (Snap Dragon), Ubertip (Tooltip - Extended)
+{
+Ferocious amphibious reptile.|n|cfff5962dAbilities:|r True Sight, Slow Poison|n|cfff5962d|n|cffffcc00Attacks land and air units.|R
 }
 
 STRING 18520
@@ -111503,15 +111575,9 @@ STRING 18597
 }
 
 STRING 18598
-// Units: h07Z (Mining Colony), EditorSuffix (Name - Editor Suffix)
+// Units: h07Z (Holdfast), EditorSuffix (Name - Editor Suffix)
 {
 (Ragnaros T1)
-}
-
-STRING 18599
-// Units: h07Z (Mining Colony), Ubertip (Tooltip - Extended)
-{
-Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Mason |n|cfff5962dUpgrades to:|R Keep
 }
 
 STRING 18600
@@ -111779,7 +111845,7 @@ STRING 18643
 }
 
 STRING 18644
-// Units: h080 (Dwarf Hold), EditorSuffix (Name - Editor Suffix)
+// Units: h080 (Fortfied Holdfast), EditorSuffix (Name - Editor Suffix)
 {
 (Ragnaros T2)
 }
@@ -111800,12 +111866,6 @@ STRING 18647
 // Units: n0CH (Flame Keeper), Casterupgradename (Caster Upgrade Names)
 {
 Initiate, Adept, Master
-}
-
-STRING 18648
-// Units: h080 (Dwarf Hold), Ubertip (Tooltip - Extended)
-{
-Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Mason |n|cfff5962dAbilities:|R Powered Up Ammunition |n|cfff5962dUpgrades to:|R Castle
 }
 
 STRING 18649
@@ -111893,7 +111953,7 @@ Upgrade to Dwarf Hold
 }
 
 STRING 18663
-// Units: h081 (Great Hold), EditorSuffix (Name - Editor Suffix)
+// Units: h081 (Great Trelleborg), EditorSuffix (Name - Editor Suffix)
 {
  (Ragnaros T3)
 }
@@ -111905,7 +111965,7 @@ R
 }
 
 STRING 18665
-// Units: h081 (Great Hold), Ubertip (Tooltip - Extended)
+// Units: h081 (Great Trelleborg), Ubertip (Tooltip - Extended)
 {
 Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Mason, Thane |n|cfff5962dAbilities:|R Dwarven Masonry, Powered Up Ammunition|n|cfff5962dResearches:|R Full Scale Escalation
 }
@@ -112199,15 +112259,9 @@ Upgrade to Great Hold
 }
 
 STRING 18714
-// Units: h082 (Tavern), EditorSuffix (Name - Editor Suffix)
+// Units: h082 (Crooked Inn Tavern), EditorSuffix (Name - Editor Suffix)
 {
  (Ragnaros Farm)
-}
-
-STRING 18715
-// Units: h082 (Tavern), Name (Name)
-{
-Tavern
 }
 
 STRING 18716
@@ -112216,14 +112270,8 @@ STRING 18716
 R
 }
 
-STRING 18717
-// Units: h082 (Tavern), Tip (Tooltip - Basic)
-{
-Build Tavern
-}
-
 STRING 18718
-// Units: h082 (Tavern), Ubertip (Tooltip - Extended)
+// Units: h082 (Crooked Inn Tavern), Ubertip (Tooltip - Extended)
 {
 Provides 8 food, which increases the maximum number of units that can be trained and can heal nearby friendly units.|n|n|cfff5962dAbilities:|r Swig
 }
@@ -112295,25 +112343,19 @@ This Hero's presence weakens nearby enemies.|n|n|cffffcc00Level 1|r - 30% Reduce
 }
 
 STRING 18730
-// Units: h083 (Altar of Fortitude), EditorSuffix (Name - Editor Suffix)
+// Units: h083 (Altar of Cataclysm), EditorSuffix (Name - Editor Suffix)
 {
  (Ragnaros Altar)
 }
 
 STRING 18731
-// Units: h083 (Altar of Fortitude), Name (Name)
+// Units: h081 (Great Trelleborg), Tip (Tooltip - Basic)
 {
-Altar of Fortitude
-}
-
-STRING 18732
-// Units: h083 (Altar of Fortitude), Tip (Tooltip - Basic)
-{
-Build Altar of Fortitude
+Solid fort of Ragnaros
 }
 
 STRING 18733
-// Units: h083 (Altar of Fortitude), Ubertip (Tooltip - Extended)
+// Units: h083 (Altar of Cataclysm), Ubertip (Tooltip - Extended)
 {
 Revives slain Heroes and Demi-heros.
 }
@@ -112325,7 +112367,7 @@ STRING 18734
 }
 
 STRING 18735
-// Units: h084 (Mustering Hall), EditorSuffix (Name - Editor Suffix)
+// Units: h084 (Hall of Tyr), EditorSuffix (Name - Editor Suffix)
 {
  (Ragnaros Barracks)
 }
@@ -112498,12 +112540,6 @@ STRING 18763
 Curse of Flame (|cffffcc00Q|r)
 }
 
-STRING 18764
-// Units: h084 (Mustering Hall), Ubertip (Tooltip - Extended)
-{
-Primary troop production building.|n|cfff5962dTrains:|R Defender, Rifleman, Mortar Team|n|cfff5962dResearches:|R Mithril Plated Armor, Long Rifles, Flare, Fragmentation Shards, Armor Penetration Rounds
-}
-
 STRING 18765
 // Abilities: A0WX (Curse of Flame), Tip (Tooltip - Normal)
 {
@@ -112577,7 +112613,7 @@ Build Mustering Hall
 }
 
 STRING 18777
-// Units: h085 (Forgeworks), EditorSuffix (Name - Editor Suffix)
+// Units: h085 (Catalyst Forge), EditorSuffix (Name - Editor Suffix)
 {
 (Ragnaros Research)
 }
@@ -112685,7 +112721,7 @@ Trench Hydra
 }
 
 STRING 18795
-// Units: h085 (Forgeworks), Ubertip (Tooltip - Extended)
+// Units: h085 (Catalyst Forge), Ubertip (Tooltip - Extended)
 {
 Contains upgrades for improved armor, weaponry and increased health.|n|cfff5962dAbilities:|R Titanforge Artifact|n|cfff5962dResearches: |RForged Weaponry, Armor Plating, Power Infusion, Improved Swig, Improved Lumber Harvesting, Improved Masonry, Improved Cannons, Fortified Hulls
 }
@@ -112721,15 +112757,9 @@ STRING 18800
 }
 
 STRING 18801
-// Units: h087 (Pinnacle), EditorSuffix (Name - Editor Suffix)
+// Units: h087 (Hall of Logi), EditorSuffix (Name - Editor Suffix)
 {
 (Ragnaros Magic)
-}
-
-STRING 18802
-// Units: h087 (Pinnacle), Name (Name)
-{
-Pinnacle
 }
 
 STRING 18803
@@ -112742,12 +112772,6 @@ STRING 18804
 // Upgrades: R036 (Pillage), Name (Name)
 {
 Incinerate
-}
-
-STRING 18805
-// Units: h087 (Pinnacle), Tip (Tooltip - Basic)
-{
-Pinnacle
 }
 
 STRING 18806
@@ -112780,12 +112804,6 @@ STRING 18810
 Deactivate Aegis of Ragnaros
 }
 
-STRING 18811
-// Units: h087 (Pinnacle), Ubertip (Tooltip - Extended)
-{
-Center of technological innovation and runecrafting.|n|cfff5962dTrains:|R Engineer, Rune Priest|n|cfff5962dResearches:|R Engineer Training, Rune Priest Training
-}
-
 STRING 18812
 // Upgrades: R03O (Animal War Training), Hotkey (Hotkey)
 {
@@ -112805,7 +112823,7 @@ V
 }
 
 STRING 18815
-// Units: h088 (Workshop), EditorSuffix (Name - Editor Suffix)
+// Units: h088 (Ember Workshop), EditorSuffix (Name - Editor Suffix)
 {
 (Ragnaros Siege)
 }
@@ -112882,12 +112900,6 @@ STRING 18827
  (Illidari Shop)
 }
 
-STRING 18828
-// Units: h088 (Workshop), Ubertip (Tooltip - Extended)
-{
-Technological shop of engineering prowess.|n|cfff5962dTrains:|r War Golem, Gyrocopter, Steam Tank|n|cfff5962dResearches:|R Improved Spell Resistance, Overclock
-}
-
 STRING 18829
 // Units: nnsw (Naga Siren), EditorSuffix (Name - Editor Suffix)
 {
@@ -112918,14 +112930,8 @@ STRING 18833
  (Nzoth)
 }
 
-STRING 18834
-// Units: h08J (Gryphon Aviary), Ubertip (Tooltip - Extended)
-{
-Fortified rookery for the gryphons of Ironforge.|n|cfff5962dTrains:|R Gryphon Rider|n|cfff5962dResearches:|R Storm Hammers, Gryphon Superior Breed
-}
-
 STRING 18835
-// Units: h08J (Gryphon Aviary), EditorSuffix (Name - Editor Suffix)
+// Units: h08J (Magma Hold), EditorSuffix (Name - Editor Suffix)
 {
 (Ragnaros Specialist)
 }
@@ -112937,7 +112943,7 @@ STRING 18836
 }
 
 STRING 18837
-// Units: n09Z (Explorer's Vault), EditorSuffix (Name - Editor Suffix)
+// Units: n09Z (Arcane Hall), EditorSuffix (Name - Editor Suffix)
 {
 (Ragnaros Shop)
 }
@@ -112955,7 +112961,7 @@ Build Explorer's Vault
 }
 
 STRING 18840
-// Units: n09Z (Explorer's Vault), Ubertip (Tooltip - Extended)
+// Units: n09Z (Arcane Hall), Ubertip (Tooltip - Extended)
 {
 Creates a shop with purchasable items. 
 }
@@ -113240,6 +113246,12 @@ STRING 18887
 // Upgrades: R00K (Animal War Training), Hotkey (Hotkey)
 {
 D
+}
+
+STRING 18888
+// Units: h082 (Crooked Inn Tavern), Name (Name)
+{
+Crooked Inn Tavern
 }
 
 STRING 18889
@@ -113632,6 +113644,18 @@ STRING 18953
 Gives a permanent bonus to Intelligence, and Strength. Each level adds 3 points to all stats.
 }
 
+STRING 18954
+// Units: h082 (Crooked Inn Tavern), Tip (Tooltip - Basic)
+{
+Build Crooked Inn Tavern
+}
+
+STRING 18955
+// Units: h083 (Altar of Cataclysm), Tip (Tooltip - Basic)
+{
+Build Altar of Cataclysm
+}
+
 STRING 18956
 // Abilities: A0WV (Attribute Bonus), Tip (Tooltip - Normal)
 {
@@ -113666,6 +113690,12 @@ STRING 18961
 // Units: O05O (Ragefire Warlock), Ubertip (Tooltip - Extended)
 {
 Wicked mystical Hero, adept at debuffing his enemies.|n|cfff5962dCan Learn:|R Banish, Fear Aura, Curse of Flame, Summon Zelemar|n|n|cffffcc00Attacks land and air units.|R
+}
+
+STRING 18962
+// Units: h084 (Hall of Tyr), Ubertip (Tooltip - Extended)
+{
+Primary troop production building.|n|cfff5962dTrains:|R Anvilrage Gaurdsman, Irondrake, Bear Rider.|n|cfff5962dResearches:|R Armour Penetration Rounds, Flare, Fragmentation Shards, Long Rifles Mithral Plated Armour
 }
 
 STRING 18963
@@ -113758,6 +113788,24 @@ STRING 18977
 E
 }
 
+STRING 18978
+// Units: h084 (Hall of Tyr), Name (Name)
+{
+Hall of Tyr
+}
+
+STRING 18979
+// Units: h084 (Hall of Tyr), Tip (Tooltip - Basic)
+{
+Build Hall of Tyr
+}
+
+STRING 18980
+// Units: h085 (Catalyst Forge), Name (Name)
+{
+Catalyst Forge
+}
+
 STRING 18981
 // Upgrades: R097 (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
 {
@@ -113798,6 +113846,12 @@ STRING 18987
 // Units: n090 (Scryer), Ubertip (Tooltip - Extended)
 {
 Heavy Amphibian Ranged Unit.|n|cfff5962dAbilities:|R Slow Poison, Multi Shot, Spawn Hydra|n|n|cff99b4d1Can only train 2.|r|n|cffffcc00Attacks land and air units.|r
+}
+
+STRING 18988
+// Units: h085 (Catalyst Forge), Tip (Tooltip - Basic)
+{
+Build Catalyst Forge
 }
 
 STRING 18989
@@ -113842,6 +113896,18 @@ STRING 18995
 Summons 2 Blue Dragon to fight for you. |nLasts 180 seconds.
 }
 
+STRING 18996
+// Units: h087 (Hall of Logi), Name (Name)
+{
+Hall of Logi
+}
+
+STRING 18997
+// Units: h087 (Hall of Logi), Tip (Tooltip - Basic)
+{
+Hall of Logi
+}
+
 STRING 18998
 // Upgrades: R097 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
@@ -113860,10 +113926,34 @@ STRING 19000
 The Way of the Dragonmaw Clan
 }
 
+STRING 19001
+// Units: h087 (Hall of Logi), Ubertip (Tooltip - Extended)
+{
+Hall of runes and fire trains mystical warriors.|n|cfff5962dTrains:|R Shadowcaster, Flamekeeper|n|cfff5962dResearches:|R Shadowcaster Adept Training, Shadow Priest Master Training
+}
+
+STRING 19002
+// Units: h088 (Ember Workshop), Ubertip (Tooltip - Extended)
+{
+Technological shop of engineering prowess.|n|cfff5962dTrains:|r Shadowforge Titan, Magma Tank.|n|cfff5962dResearches:|R 
+}
+
 STRING 19003
 // Upgrades: R08R (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
 {
 The Way of the Dragonmaw Clan
+}
+
+STRING 19004
+// Units: h088 (Ember Workshop), Name (Name)
+{
+Ember Workshop
+}
+
+STRING 19005
+// Units: h088 (Ember Workshop), Tip (Tooltip - Basic)
+{
+Build Ember Workshop
 }
 
 STRING 19006
@@ -113872,16 +113962,58 @@ STRING 19006
 You will start the game as the Dragonmaw Clan, allied to the Horde and trying to join them in Kalimdor.
 }
 
+STRING 19007
+// Units: h08J (Magma Hold), Ubertip (Tooltip - Extended)
+{
+Fierce beasts rise from the magma core of the hold.|n|cfff5962dTrains:|R Core Hound, Fire Wyrm|n|cfff5962dResearches:|R 
+}
+
+STRING 19008
+// Units: h08J (Magma Hold), Name (Name)
+{
+Magma Hold
+}
+
 STRING 19009
 // Upgrades: R097 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 C
 }
 
+STRING 19010
+// Units: h08J (Magma Hold), Tip (Tooltip - Basic)
+{
+Build Magma Hold
+}
+
+STRING 19011
+// Units: n09Z (Arcane Hall), Name (Name)
+{
+Arcane Hall
+}
+
+STRING 19012
+// Units: n09Z (Arcane Hall), Tip (Tooltip - Basic)
+{
+Build Arcane Hall
+}
+
+STRING 19013
+// Units: h08R (Cannon Tower), Ubertip (Tooltip - Extended)
+{
+Sturdy cannon bunker.|n|cfff5962dUpgrades into:|R Improved Cannon Bunker.|n|n|cffffcc00Attacks land units and trees.|r
+}
+
 STRING 19014
 // Upgrades: R08S (Iron Plating,Steel Plating,Mithril Plating), Name (Name)
 {
 The Path of the Old Gods
+}
+
+STRING 19015
+// Units: h08R (Cannon Tower), Tip (Tooltip - Basic)
+{
+Upgrade to Improved Cannon Bunker
 }
 
 STRING 19017
@@ -116063,12 +116195,6 @@ STRING 19501
 Train Ashtongue Mystic
 }
 
-STRING 19502
-// Units: ndrs (Ashtongue Mystic), Ubertip (Tooltip - Extended)
-{
-Heavy ranged unit. Can cast Lightning Shield and Healing Wave. |n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land and air units.|r
-}
-
 STRING 19503
 // Units: ndrs (Ashtongue Mystic), Name (Name)
 {
@@ -116235,12 +116361,6 @@ STRING 19537
 // Units: h03F (Control Point Defender), Tip (Tooltip - Basic)
 {
 Build Hunter Tower
-}
-
-STRING 19539
-// Units: h08R (Cannon Tower), Ubertip (Tooltip - Extended)
-{
-Cannon topped tower defense.|n|cfff5962dUpgrades into:|R Improved Cannon Tower|n|n|cffffcc00Attacks land units and trees.|r
 }
 
 STRING 19540
@@ -116933,18 +117053,6 @@ STRING 19693
 (Sentinel Other)
 }
 
-STRING 19695
-// Units: n09Z (Explorer's Vault), Name (Name)
-{
-Explorer's Vault
-}
-
-STRING 19696
-// Units: n09Z (Explorer's Vault), Tip (Tooltip - Basic)
-{
-Build Explorer's Vault
-}
-
 STRING 19697
 // Units: n07T (Auction House), EditorSuffix (Name - Editor Suffix)
 {
@@ -117143,52 +117251,16 @@ STRING 19729
  (Ironforge T3)
 }
 
-STRING 19730
-// Units: h081 (Great Hold), Name (Name)
-{
-Great Hold
-}
-
-STRING 19731
-// Units: h081 (Great Hold), Tip (Tooltip - Basic)
-{
-Upgrade to Great Hold
-}
-
 STRING 19732
 // Units: h07F (Dwarf Hold), EditorSuffix (Name - Editor Suffix)
 {
  (Ironforge T2)
 }
 
-STRING 19733
-// Units: h080 (Dwarf Hold), Name (Name)
-{
-Dwarf Hold
-}
-
-STRING 19734
-// Units: h080 (Dwarf Hold), Tip (Tooltip - Basic)
-{
-Upgrade to Dwarf Hold
-}
-
 STRING 19735
 // Units: h07E (Mining Colony), EditorSuffix (Name - Editor Suffix)
 {
  (Ironforge T1)
-}
-
-STRING 19736
-// Units: h07Z (Mining Colony), Name (Name)
-{
-Mining Colony
-}
-
-STRING 19737
-// Units: h07Z (Mining Colony), Tip (Tooltip - Basic)
-{
-Build Mining Colony
 }
 
 STRING 19738
@@ -117201,18 +117273,6 @@ STRING 19739
 // Units: h07C (Mustering Hall), EditorSuffix (Name - Editor Suffix)
 {
  (Ironforge Barracks)
-}
-
-STRING 19740
-// Units: h084 (Mustering Hall), Name (Name)
-{
-Mustering Hall
-}
-
-STRING 19741
-// Units: h084 (Mustering Hall), Tip (Tooltip - Basic)
-{
-Build Mustering Hall
 }
 
 STRING 19742
@@ -117513,18 +117573,6 @@ STRING 19797
 // Units: h04B (Rock), EditorSuffix (Name - Editor Suffix)
 {
  (Dalaran Geomancer Rock)
-}
-
-STRING 19798
-// Units: h085 (Forgeworks), Name (Name)
-{
-Forgeworks
-}
-
-STRING 19799
-// Units: h085 (Forgeworks), Tip (Tooltip - Basic)
-{
-Build Forgeworks
 }
 
 STRING 19800
