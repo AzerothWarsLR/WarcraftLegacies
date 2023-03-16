@@ -38094,7 +38094,7 @@ Creates a shield of frost around a target friendly unit. The shield adds <ACfu,D
 }
 
 STRING 6350
-// Units: h085 (Catalyst Forge), Hotkey (Hotkey)
+// Units: h085 (Lumber Yard), Hotkey (Hotkey)
 {
 E
 }
@@ -85169,7 +85169,7 @@ rlev
 }
 
 STRING 14190
-// Units: n09Z (Arcane Hall), Hotkey (Hotkey)
+// Units: n09Z (Titan Vault), Hotkey (Hotkey)
 {
 C
 }
@@ -111580,6 +111580,12 @@ STRING 18598
 (Ragnaros T1)
 }
 
+STRING 18599
+// Units: h085 (Lumber Yard), Name (Name)
+{
+Lumber Yard
+}
+
 STRING 18600
 // Units: h07E (Mining Colony), Name (Name)
 {
@@ -111866,6 +111872,12 @@ STRING 18647
 // Units: n0CH (Flame Keeper), Casterupgradename (Caster Upgrade Names)
 {
 Initiate, Adept, Master
+}
+
+STRING 18648
+// Units: h085 (Lumber Yard), Tip (Tooltip - Basic)
+{
+Build Lumber Yard
 }
 
 STRING 18649
@@ -112264,10 +112276,22 @@ STRING 18714
  (Ragnaros Farm)
 }
 
+STRING 18715
+// Units: n09Z (Titan Vault), Name (Name)
+{
+Titan Vault
+}
+
 STRING 18716
 // Abilities: A0SR (Dimensional Jump to Tempest Keep), Researchhotkey (Hotkey - Learn)
 {
 R
+}
+
+STRING 18717
+// Units: n09Z (Titan Vault), Tip (Tooltip - Basic)
+{
+Build Titan Vault
 }
 
 STRING 18718
@@ -112613,7 +112637,7 @@ Build Mustering Hall
 }
 
 STRING 18777
-// Units: h085 (Catalyst Forge), EditorSuffix (Name - Editor Suffix)
+// Units: h085 (Lumber Yard), EditorSuffix (Name - Editor Suffix)
 {
 (Ragnaros Research)
 }
@@ -112721,7 +112745,7 @@ Trench Hydra
 }
 
 STRING 18795
-// Units: h085 (Catalyst Forge), Ubertip (Tooltip - Extended)
+// Units: h085 (Lumber Yard), Ubertip (Tooltip - Extended)
 {
 Contains upgrades for improved armor, weaponry and increased health.|n|cfff5962dAbilities:|R Titanforge Artifact|n|cfff5962dResearches: |RForged Weaponry, Armor Plating, Power Infusion, Improved Swig, Improved Lumber Harvesting, Improved Masonry, Improved Cannons, Fortified Hulls
 }
@@ -112943,7 +112967,7 @@ STRING 18836
 }
 
 STRING 18837
-// Units: n09Z (Arcane Hall), EditorSuffix (Name - Editor Suffix)
+// Units: n09Z (Titan Vault), EditorSuffix (Name - Editor Suffix)
 {
 (Ragnaros Shop)
 }
@@ -112961,7 +112985,7 @@ Build Explorer's Vault
 }
 
 STRING 18840
-// Units: n09Z (Arcane Hall), Ubertip (Tooltip - Extended)
+// Units: n09Z (Titan Vault), Ubertip (Tooltip - Extended)
 {
 Creates a shop with purchasable items. 
 }
@@ -113800,12 +113824,6 @@ STRING 18979
 Build Hall of Tyr
 }
 
-STRING 18980
-// Units: h085 (Catalyst Forge), Name (Name)
-{
-Catalyst Forge
-}
-
 STRING 18981
 // Upgrades: R097 (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
 {
@@ -113846,12 +113864,6 @@ STRING 18987
 // Units: n090 (Scryer), Ubertip (Tooltip - Extended)
 {
 Heavy Amphibian Ranged Unit.|n|cfff5962dAbilities:|R Slow Poison, Multi Shot, Spawn Hydra|n|n|cff99b4d1Can only train 2.|r|n|cffffcc00Attacks land and air units.|r
-}
-
-STRING 18988
-// Units: h085 (Catalyst Forge), Tip (Tooltip - Basic)
-{
-Build Catalyst Forge
 }
 
 STRING 18989
@@ -113984,18 +113996,6 @@ STRING 19010
 // Units: h08J (Magma Hold), Tip (Tooltip - Basic)
 {
 Build Magma Hold
-}
-
-STRING 19011
-// Units: n09Z (Arcane Hall), Name (Name)
-{
-Arcane Hall
-}
-
-STRING 19012
-// Units: n09Z (Arcane Hall), Tip (Tooltip - Basic)
-{
-Build Arcane Hall
 }
 
 STRING 19013
