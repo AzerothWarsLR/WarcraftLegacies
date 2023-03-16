@@ -46,7 +46,8 @@ namespace TestMap.Source.Setup
         var executeFootman = new Execute(FourCC("hfoo"))
         {
           DamageMultNonResistant = 5,
-          DamageMultResistant = 2.5f
+          DamageMultResistant = 2.5f,
+          DamageMultStructure = 1
         };
         PassiveAbilityManager.Register(executeFootman);
 

@@ -14,7 +14,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
       {
         UndefeatedResearch = FourCC("R02L"),
         StartingGold = 200,
-        StartingLumber = 500,
+        StartingLumber = 700,
         IntroText = @"You are playing as the renegade Illidan.|r|r.
 
 While shunned by most of Night Elven society, you still support Tyrande, the object of your eternal affection.

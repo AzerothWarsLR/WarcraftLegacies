@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using MacroTools;
 using MacroTools.ArtifactSystem;
+using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using WarcraftLegacies.Source.Quests;
@@ -19,26 +20,14 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
     /// </summary>
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem, ArtifactSetup artifactSetup, AllLegendSetup allLegendSetup)
     {
-      var tombOfSargerasQuest =
-        new QuestTombOfSargeras(
-          new List<Rectangle>
-          {
-            Regions.TombOfSargerasInteriorA,
-            Regions.TombOfSargerasInteriorB,
-            Regions.TombOfSargerasInteriorC,
-            Regions.TombOfSargerasInteriorD,
-            Regions.TombOfSargerasInteriorE,
-            Regions.TombOfSargerasInteriorF,
-            Regions.TombOfSargerasInteriorG,
-            Regions.TombOfSargerasInteriorH
-          }, Regions.Sargeras_Entrance, preplacedUnitSystem.GetUnit(Constants.UNIT_H00K_HORIZONTAL_WOODEN_GATE_CLOSED, Regions.Sargeras_Entrance.Center)
-          ,preplacedUnitSystem.GetUnit(Constants.UNIT_O01U_GUL_DAN_S_REMAINS));
-
-      var ragnarosQuest = new QuestRagnaros(allLegendSetup.Neutral.Ragnaros,
-        preplacedUnitSystem.GetUnit(Constants.UNIT_N02B_RAGNAROS_SUMMONING_PEDESTAL_PEDESTAL));
-
+      var tombOfSargerasQuest = CreateTombOfSargerasQuest(preplacedUnitSystem);
+      var ragnarosQuest = CreateRagnarosQuest(preplacedUnitSystem, allLegendSetup);
+      var dragonsOfNightmareOne = CreateDragonsOfNightmareQuestOne(preplacedUnitSystem);
+      var dragonsOfNightmareTwo = CreateDragonsOfNightmareQuestTwo(preplacedUnitSystem);
       foreach (var faction in FactionManager.GetAllFactions())
       {
+        faction.AddQuest(dragonsOfNightmareTwo);
+        faction.AddQuest(dragonsOfNightmareOne);
         faction.AddQuest(tombOfSargerasQuest);
         faction.AddQuest(new QuestZinrokhAssembly(new List<Artifact>
         {
@@ -55,6 +44,48 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
           faction == LegionSetup.Legion || faction == IllidanSetup.Illidan, artifactSetup.SkullOfGuldan));
         faction.AddQuest(ragnarosQuest);
       }
+
+    }
+
+    private static QuestDragonsOfNightmare CreateDragonsOfNightmareQuestOne(PreplacedUnitSystem preplacedUnitSystem)
+    {
+      var waygateOne = preplacedUnitSystem.GetUnit(Constants.UNIT_N07F_EMERALD_PORTAL_DRAGON_PORTALS, Regions.FeralasEmeraldPortal.Center).Show(false);
+      var waygateTwo = preplacedUnitSystem.GetUnit(Constants.UNIT_N07F_EMERALD_PORTAL_DRAGON_PORTALS, Regions.HinterEmeraldPortal.Center).Show(false);
+      var dragonEk = preplacedUnitSystem.GetUnit(Constants.UNIT_N054_EMERISS);
+      var dragonKalimdor = preplacedUnitSystem.GetUnit(Constants.UNIT_N04S_TAERAR);
+      return new QuestDragonsOfNightmare(dragonKalimdor, dragonEk, "Feralas", "Hinterlands", waygateOne, waygateTwo, Regions.HinterEmeraldPortal, Regions.FeralasEmeraldPortal, "BTNWarpPortalGreen");
+    }
+
+    private static QuestDragonsOfNightmare CreateDragonsOfNightmareQuestTwo(PreplacedUnitSystem preplacedUnitSystem)
+    {
+      var waygateOne = preplacedUnitSystem.GetUnit(Constants.UNIT_N07F_EMERALD_PORTAL_DRAGON_PORTALS, Regions.AshenvaleEmeraldPortal.Center).Show(false);
+      var waygateTwo = preplacedUnitSystem.GetUnit(Constants.UNIT_N07F_EMERALD_PORTAL_DRAGON_PORTALS, Regions.DuskwoodEmeraldPortal.Center).Show(false);
+      var dragonEk = preplacedUnitSystem.GetUnit(Constants.UNIT_N04X_YSONDRE);
+      var dragonKalimdor = preplacedUnitSystem.GetUnit(Constants.UNIT_N05O_LETHON);
+      return new QuestDragonsOfNightmare(dragonKalimdor, dragonEk, "Ashenvale", "Duskwood", waygateOne, waygateTwo, Regions.DuskwoodEmeraldPortal, Regions.AshenvaleEmeraldPortal, "BTNWarpPortalRed");
+    }
+
+    private static QuestRagnaros CreateRagnarosQuest(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup)
+    {
+      return new QuestRagnaros(allLegendSetup.Neutral.Ragnaros,
+        preplacedUnitSystem.GetUnit(Constants.UNIT_N02B_RAGNAROS_SUMMONING_PEDESTAL_PEDESTAL));
+    }
+
+    private static QuestTombOfSargeras CreateTombOfSargerasQuest(PreplacedUnitSystem preplacedUnitSystem)
+    {
+      return new QuestTombOfSargeras(
+          new List<Rectangle>
+          {
+            Regions.TombOfSargerasInteriorA,
+            Regions.TombOfSargerasInteriorB,
+            Regions.TombOfSargerasInteriorC,
+            Regions.TombOfSargerasInteriorD,
+            Regions.TombOfSargerasInteriorE,
+            Regions.TombOfSargerasInteriorF,
+            Regions.TombOfSargerasInteriorG,
+            Regions.TombOfSargerasInteriorH
+          }, Regions.Sargeras_Entrance, preplacedUnitSystem.GetUnit(Constants.UNIT_H00K_HORIZONTAL_WOODEN_GATE_CLOSED, Regions.Sargeras_Entrance.Center)
+          , preplacedUnitSystem.GetUnit(Constants.UNIT_O01U_GUL_DAN_S_REMAINS));
     }
   }
 }

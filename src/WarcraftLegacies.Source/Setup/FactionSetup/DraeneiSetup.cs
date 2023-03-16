@@ -13,7 +13,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
         "ReplaceableTextures\\CommandButtons\\BTNBOSSVelen.blp")
       {
         StartingGold = 200,
-        StartingLumber = 500,
+        StartingLumber = 700,
         ControlPointDefenderUnitTypeId = Constants.UNIT_U008_CONTROL_POINT_DEFENDER_DRAENEI,
         IntroText = @"You are playing as the exiled |cff000080Draenei|r.
 

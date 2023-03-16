@@ -21,6 +21,7 @@ namespace WarcraftLegacies.Source.Quests.Druids
     private readonly Artifact _hornofCenarius;
     private readonly LegendaryHero _malfurion;
     private readonly List<unit> _moongladeUnits;
+    private readonly List<unit> _darnassusUnits;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestMalfurionAwakens"/> class.
@@ -29,7 +30,7 @@ namespace WarcraftLegacies.Source.Quests.Druids
     /// <param name="worldTree">Starts invulnerable and is recued when the quest is completed.</param>
     /// <param name="hornofCenarius">Required to complete the quest.</param>
     /// <param name="malfurion">Awakened when the quest is completed.</param>
-    public QuestMalfurionAwakens(Rectangle moonglade, unit worldTree, Artifact hornofCenarius, LegendaryHero malfurion) : base("Awakening of Stormrage",
+    public QuestMalfurionAwakens(Rectangle moonglade, Rectangle darnassus, unit worldTree, Artifact hornofCenarius, LegendaryHero malfurion) : base("Awakening of Stormrage",
       "Ever since the War of the Ancients ten thousand years ago, Malfurion Stormrage and his druids have slumbered within the Barrow Den. Now, their help is required once again.",
       "ReplaceableTextures\\CommandButtons\\BTNFurion.blp")
     {
@@ -42,20 +43,22 @@ namespace WarcraftLegacies.Source.Quests.Druids
       AddObjective(new ObjectiveExpire(1440, Title));
       AddObjective(new ObjectiveSelfExists());
       _moongladeUnits = moonglade.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
+      _darnassusUnits = darnassus.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
       worldTree.SetInvulnerable(true);
       Required = true;
     }
 
     /// <inheritdoc />
-    protected override string RewardFlavour => "Malfurion has emerged from his deep slumber in the Barrow Den.";
+    protected override string RewardFlavour => "Malfurion has emerged from his deep slumber in the Barrow Den. Darnassus and the Moonglade ancients have been awakened.";
 
     /// <inheritdoc />
-    protected override string RewardDescription => "Gain Nordrassil, the hero Malfurion, and the artifact G'hanir";
+    protected override string RewardDescription => "Gain Nordrassil, the Darnassus base, the Moonglade base, the hero Malfurion, and the artifact G'hanir";
 
     /// <inheritdoc />
     protected override void OnFail(Faction completingFaction)
     {
       Player(PLAYER_NEUTRAL_AGGRESSIVE).RescueGroup(_moongladeUnits);
+      Player(PLAYER_NEUTRAL_AGGRESSIVE).RescueGroup(_darnassusUnits);
       _worldTree.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
@@ -63,6 +66,7 @@ namespace WarcraftLegacies.Source.Quests.Druids
     protected override void OnComplete(Faction completingFaction)
     {
       completingFaction.Player.RescueGroup(_moongladeUnits);
+      completingFaction.Player.RescueGroup(_darnassusUnits);
       _worldTree.Rescue(completingFaction.Player);
       if (_malfurion.Unit == null)
       {

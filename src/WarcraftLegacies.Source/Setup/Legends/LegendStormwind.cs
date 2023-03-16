@@ -28,7 +28,6 @@ namespace WarcraftLegacies.Source.Setup.Legends
           Constants.ITEM_I00D_SHALAMAYNE
         }
       };
-      Varian.AddUnitDependency(preplacedUnitSystem.GetUnit(Constants.UNIT_H00X_STORMWIND_KEEP_STORMWIND_OTHER));
 
       Galen = new LegendaryHero("Galen Trollbane")
       {
