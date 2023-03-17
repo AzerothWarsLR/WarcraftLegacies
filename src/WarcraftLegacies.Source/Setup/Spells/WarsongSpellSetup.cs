@@ -1,6 +1,8 @@
-﻿using MacroTools.PassiveAbilitySystem;
+﻿using MacroTools.PassiveAbilities;
+using MacroTools.PassiveAbilitySystem;
 using MacroTools.SpellSystem;
 using WarcraftLegacies.Source.Setup.FactionSetup;
+using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup.Spells
 {
@@ -14,6 +16,8 @@ namespace WarcraftLegacies.Source.Setup.Spells
     /// </summary>
     public static void Setup()
     {
+      var spellResistanceAura = new SpellResistanceAura(FourCC("o02M"));
+      PassiveAbilityManager.Register(spellResistanceAura);
     }
   }
 }

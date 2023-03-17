@@ -2569,8 +2569,8 @@ local t
 local life
 
 u = BlzCreateUnitWithSkin(p, FourCC("o03L"), -8864.0, -13600.0, 270.000, FourCC("o03L"))
-u = BlzCreateUnitWithSkin(p, FourCC("o05T"), -21824.0, -26048.0, 270.000, FourCC("o05T"))
-u = BlzCreateUnitWithSkin(p, FourCC("o01M"), -22592.0, -25920.0, 270.000, FourCC("o01M"))
+u = BlzCreateUnitWithSkin(p, FourCC("o05T"), -21504.0, -25728.0, 270.000, FourCC("o05T"))
+u = BlzCreateUnitWithSkin(p, FourCC("o01M"), -21952.0, -25728.0, 270.000, FourCC("o01M"))
 u = BlzCreateUnitWithSkin(p, FourCC("o03V"), -8288.0, -13152.0, 270.000, FourCC("o03V"))
 u = BlzCreateUnitWithSkin(p, FourCC("n05C"), -8960.0, -13184.0, 270.000, FourCC("n05C"))
 end
@@ -2582,13 +2582,15 @@ local unitID
 local t
 local life
 
-u = BlzCreateUnitWithSkin(p, FourCC("h09H"), -22147.1, -26358.6, 275.965, FourCC("h09H"))
-u = BlzCreateUnitWithSkin(p, FourCC("O04N"), -22436.4, -26372.8, 276.696, FourCC("O04N"))
-u = BlzCreateUnitWithSkin(p, FourCC("h09I"), -22133.6, -26618.2, 281.219, FourCC("h09I"))
+u = BlzCreateUnitWithSkin(p, FourCC("h09H"), -21487.5, -26113.7, 275.965, FourCC("h09H"))
+u = BlzCreateUnitWithSkin(p, FourCC("O04N"), -21776.8, -26127.9, 276.696, FourCC("O04N"))
+u = BlzCreateUnitWithSkin(p, FourCC("h09I"), -21474.0, -26373.2, 281.219, FourCC("h09I"))
 u = BlzCreateUnitWithSkin(p, FourCC("o02I"), -8826.4, -13139.4, 253.517, FourCC("o02I"))
 u = BlzCreateUnitWithSkin(p, FourCC("o02I"), -8740.3, -13112.1, 253.517, FourCC("o02I"))
-u = BlzCreateUnitWithSkin(p, FourCC("h08X"), -22410.7, -26706.2, 277.084, FourCC("h08X"))
-u = BlzCreateUnitWithSkin(p, FourCC("h09J"), -22239.8, -26717.2, 331.589, FourCC("h09J"))
+u = BlzCreateUnitWithSkin(p, FourCC("h08X"), -21770.8, -26375.0, 277.084, FourCC("h08X"))
+u = BlzCreateUnitWithSkin(p, FourCC("h09J"), -21599.9, -26386.0, 331.589, FourCC("h09J"))
+u = BlzCreateUnitWithSkin(p, FourCC("o02M"), -21686.1, -26774.7, 36.210, FourCC("o02M"))
+u = BlzCreateUnitWithSkin(p, FourCC("u02R"), -21329.4, -26402.0, 232.090, FourCC("u02R"))
 u = BlzCreateUnitWithSkin(p, FourCC("o02I"), -8684.2, -13206.4, 253.517, FourCC("o02I"))
 u = BlzCreateUnitWithSkin(p, FourCC("o02I"), -8748.9, -13326.3, 176.501, FourCC("o02I"))
 u = BlzCreateUnitWithSkin(p, FourCC("o02I"), -8840.9, -13232.5, 23.797, FourCC("o02I"))

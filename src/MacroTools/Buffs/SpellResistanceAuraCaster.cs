@@ -9,7 +9,7 @@ namespace MacroTools.Buffs
     {
       StackBehaviour = StackBehaviour.Stack;
       EffectString = @"Abilities\Spells\Human\DevotionAura\DevotionAura.mdl";
-      Radius = 800;
+      Radius = 300;
     }
 
     protected override SpellResistanceAuraTarget CreateAuraBuff(unit unit)
