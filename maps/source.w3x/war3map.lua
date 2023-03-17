@@ -2569,8 +2569,8 @@ local t
 local life
 
 u = BlzCreateUnitWithSkin(p, FourCC("o03L"), -8864.0, -13600.0, 270.000, FourCC("o03L"))
-u = BlzCreateUnitWithSkin(p, FourCC("o05T"), -21504.0, -25728.0, 270.000, FourCC("o05T"))
-u = BlzCreateUnitWithSkin(p, FourCC("o01M"), -21952.0, -25728.0, 270.000, FourCC("o01M"))
+u = BlzCreateUnitWithSkin(p, FourCC("o05T"), -21504.0, -26048.0, 270.000, FourCC("o05T"))
+u = BlzCreateUnitWithSkin(p, FourCC("o01M"), -21952.0, -26048.0, 270.000, FourCC("o01M"))
 u = BlzCreateUnitWithSkin(p, FourCC("o03V"), -8288.0, -13152.0, 270.000, FourCC("o03V"))
 u = BlzCreateUnitWithSkin(p, FourCC("n05C"), -8960.0, -13184.0, 270.000, FourCC("n05C"))
 end
@@ -2582,15 +2582,15 @@ local unitID
 local t
 local life
 
-u = BlzCreateUnitWithSkin(p, FourCC("h09H"), -21487.5, -26113.7, 275.965, FourCC("h09H"))
-u = BlzCreateUnitWithSkin(p, FourCC("O04N"), -21776.8, -26127.9, 276.696, FourCC("O04N"))
-u = BlzCreateUnitWithSkin(p, FourCC("h09I"), -21474.0, -26373.2, 281.219, FourCC("h09I"))
+u = BlzCreateUnitWithSkin(p, FourCC("h09H"), -21487.5, -26433.7, 275.965, FourCC("h09H"))
+u = BlzCreateUnitWithSkin(p, FourCC("O04N"), -21776.8, -26447.9, 276.696, FourCC("O04N"))
+u = BlzCreateUnitWithSkin(p, FourCC("h09I"), -21474.0, -26693.2, 281.219, FourCC("h09I"))
 u = BlzCreateUnitWithSkin(p, FourCC("o02I"), -8826.4, -13139.4, 253.517, FourCC("o02I"))
 u = BlzCreateUnitWithSkin(p, FourCC("o02I"), -8740.3, -13112.1, 253.517, FourCC("o02I"))
-u = BlzCreateUnitWithSkin(p, FourCC("h08X"), -21770.8, -26375.0, 277.084, FourCC("h08X"))
-u = BlzCreateUnitWithSkin(p, FourCC("h09J"), -21599.9, -26386.0, 331.589, FourCC("h09J"))
-u = BlzCreateUnitWithSkin(p, FourCC("o02M"), -21686.1, -26774.7, 36.210, FourCC("o02M"))
-u = BlzCreateUnitWithSkin(p, FourCC("u02R"), -21329.4, -26402.0, 232.090, FourCC("u02R"))
+u = BlzCreateUnitWithSkin(p, FourCC("h08X"), -21770.8, -26695.0, 277.084, FourCC("h08X"))
+u = BlzCreateUnitWithSkin(p, FourCC("h09J"), -21599.9, -26706.0, 331.589, FourCC("h09J"))
+u = BlzCreateUnitWithSkin(p, FourCC("o02M"), -21686.1, -27094.7, 36.210, FourCC("o02M"))
+u = BlzCreateUnitWithSkin(p, FourCC("u02R"), -21329.4, -26722.0, 232.090, FourCC("u02R"))
 u = BlzCreateUnitWithSkin(p, FourCC("o02I"), -8684.2, -13206.4, 253.517, FourCC("o02I"))
 u = BlzCreateUnitWithSkin(p, FourCC("o02I"), -8748.9, -13326.3, 176.501, FourCC("o02I"))
 u = BlzCreateUnitWithSkin(p, FourCC("o02I"), -8840.9, -13232.5, 23.797, FourCC("o02I"))
@@ -2670,6 +2670,7 @@ SetUnitState(u, UNIT_STATE_MANA, 400)
 IssueImmediateOrder(u, "")
 u = BlzCreateUnitWithSkin(p, FourCC("o02P"), -21536.0, 7968.0, 270.000, FourCC("o02P"))
 u = BlzCreateUnitWithSkin(p, FourCC("n06F"), -20672.0, 7936.0, 270.000, FourCC("n06F"))
+u = BlzCreateUnitWithSkin(p, FourCC("o05U"), -22784.0, -23296.0, 270.000, FourCC("o05U"))
 end
 
 function CreateUnitsForPlayer13()
@@ -2684,6 +2685,17 @@ u = BlzCreateUnitWithSkin(p, FourCC("o05A"), -21142.3, 8102.0, 176.885, FourCC("
 u = BlzCreateUnitWithSkin(p, FourCC("o05A"), -21214.9, 8188.1, 195.552, FourCC("o05A"))
 u = BlzCreateUnitWithSkin(p, FourCC("o05A"), -21217.3, 8013.7, 195.552, FourCC("o05A"))
 u = BlzCreateUnitWithSkin(p, FourCC("o05A"), -21098.2, 8192.6, 195.552, FourCC("o05A"))
+u = BlzCreateUnitWithSkin(p, FourCC("n0BJ"), -22580.8, -23675.5, 272.469, FourCC("n0BJ"))
+SetUnitState(u, UNIT_STATE_MANA, 0)
+u = BlzCreateUnitWithSkin(p, FourCC("n0BM"), -22775.5, -23663.1, 268.943, FourCC("n0BM"))
+SetUnitState(u, UNIT_STATE_MANA, 0)
+u = BlzCreateUnitWithSkin(p, FourCC("n0BP"), -22393.4, -23668.0, 294.585, FourCC("n0BP"))
+SetUnitState(u, UNIT_STATE_MANA, 0)
+u = BlzCreateUnitWithSkin(p, FourCC("H09M"), -22195.3, -23366.9, 259.211, FourCC("H09M"))
+SetUnitState(u, UNIT_STATE_MANA, 0)
+SetUnitColor(u, ConvertPlayerColor(13))
+u = BlzCreateUnitWithSkin(p, FourCC("n0CX"), -21880.6, -23664.1, 242.706, FourCC("n0CX"))
+u = BlzCreateUnitWithSkin(p, FourCC("h09R"), -22734.2, -23988.0, 273.710, FourCC("h09R"))
 end
 
 function CreateBuildingsForPlayer15()
