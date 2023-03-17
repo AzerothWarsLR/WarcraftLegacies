@@ -53212,6 +53212,12 @@ STRING 8865
 (unused)
 }
 
+STRING 8866
+// Units: o05T (Boot Camp), Ubertip (Tooltip - Extended)
+{
+Bootcamp for the Goblin Army.|n|cfff5962dTrains:|RFirebat, Grenadier, War Zeppelin
+}
+
 STRING 8867
 // Units: h09I (Firebat), Name (Name)
 {
@@ -112976,12 +112982,6 @@ STRING 18833
 // Units: H08U (Empress of Nazjatar), EditorSuffix (Name - Editor Suffix)
 {
  (Nzoth)
-}
-
-STRING 18834
-// Units: o05T (Boot Camp), Ubertip (Tooltip - Extended)
-{
-Bootcamp for the Goblin Army.|n|cfff5962dTrains:|R Ogre Mercenaries, Gunners, Sappers
 }
 
 STRING 18835
