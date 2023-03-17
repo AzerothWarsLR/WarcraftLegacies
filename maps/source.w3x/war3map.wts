@@ -21563,7 +21563,7 @@ STRING 3594
 }
 
 STRING 3595
-// Units: o05U (Lightforged Gateway), EditorSuffix (Name - Editor Suffix)
+// Units: o052 (Ceremonial Altar), EditorSuffix (Name - Editor Suffix)
 {
 (Draenei Specialist)
 }
@@ -45004,7 +45004,7 @@ Summons undead creatures from the ground to aid the necromancer in his battles. 
 }
 
 STRING 7498
-// Units: o052 (Ceremonial Altar), EditorSuffix (Name - Editor Suffix)
+// Units: o055 (Crystal Spire), EditorSuffix (Name - Editor Suffix)
 {
 (Draenei Specialist)
 }
@@ -62426,30 +62426,6 @@ STRING 10401
 // Abilities: A0C0 (Vampiric Attack), Name (Name)
 {
 Vampiric Attack
-}
-
-STRING 10402
-// Abilities: A0BZ (Crippling Attack), EditorSuffix (Editor Suffix)
-{
-(Passive)
-}
-
-STRING 10403
-// Abilities: A0BZ (Crippling Attack), Name (Name)
-{
-Crippling Attack
-}
-
-STRING 10404
-// Abilities: A0BZ (Crippling Attack), Tip (Tooltip - Normal)
-{
-Crippling Attack
-}
-
-STRING 10405
-// Abilities: A0BZ (Crippling Attack), Ubertip (Tooltip - Normal - Extended)
-{
-This unit has a 20% chance to do extra damage and reduce the targets Attack and Movement speed.
 }
 
 STRING 10406
@@ -119316,7 +119292,7 @@ STRING 20088
 }
 
 STRING 20089
-// Units: o055 (Crystal Spire), EditorSuffix (Name - Editor Suffix)
+// Units: o05U (Lightforged Gateway), EditorSuffix (Name - Editor Suffix)
 {
 (Draenei Specialist)
 }
