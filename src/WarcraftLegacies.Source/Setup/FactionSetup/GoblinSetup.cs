@@ -30,6 +30,7 @@ The Trading Center in Kezan will unlock the ability to train Traders. Be sure to
       Goblin.ModObjectLimit(FourCC("o03N"), Faction.UNLIMITED); //Fortress
       Goblin.ModObjectLimit(FourCC("o03O"), Faction.UNLIMITED); //Altar of Storms
       Goblin.ModObjectLimit(FourCC("o03P"), Faction.UNLIMITED); //Barracks
+      Goblin.ModObjectLimit(FourCC("o05T"), Faction.UNLIMITED); //Boot Camp
       Goblin.ModObjectLimit(FourCC("o03Q"), Faction.UNLIMITED); //War Mill
       Goblin.ModObjectLimit(FourCC("o03S"), Faction.UNLIMITED); //Tauren Totem
       Goblin.ModObjectLimit(FourCC("o01M"), Faction.UNLIMITED); //Spirit Lodge
@@ -80,9 +81,9 @@ The Trading Center in Kezan will unlock the ability to train Traders. Be sure to
         Name = "Oil Tycoon",
         IconName = "OilStation",
         StartingOilPoolCount = 4,
-        MaximumOilPoolCount = 10,
-        OilPoolMinimumValue = 1000,
-        OilPoolMaximumValue = 5000,
+        MaximumOilPoolCount = 15,
+        OilPoolMinimumValue = 1500,
+        OilPoolMaximumValue = 9000,
         OilPoolBorderDistance = 600
       };
       Goblin.AddPower(oilPower);

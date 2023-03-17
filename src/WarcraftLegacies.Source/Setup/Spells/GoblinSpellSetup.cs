@@ -45,7 +45,6 @@ namespace WarcraftLegacies.Source.Setup.Spells
       PassiveAbilityManager.Register(new OilUser(Constants.UNIT_NTIN_CHIEF_ENGINEER_GOBLIN));
       PassiveAbilityManager.Register(new OilUser(Constants.UNIT_N062_SHREDDER_GOBLIN));
       PassiveAbilityManager.Register(new OilUser(Constants.UNIT_H08Z_ASSAULT_TANK_GOBLIN));
-      PassiveAbilityManager.Register(new OilUser(Constants.UNIT_H091_WAR_ZEPPELIN_GOBLIN));
       PassiveAbilityManager.Register(new OilUser(Constants.UNIT_O01M_ENGINEER_S_GUILD_GOBLIN_SPECIALIST));
       PassiveAbilityManager.Register(new OilUser(Constants.UNIT_NTIN_CHIEF_ENGINEER_GOBLIN));
       PassiveAbilityManager.Register(new OilProducer(Constants.UNIT_H04Z_KEZAN_OIL_SUPPLY_GOBLIN)
