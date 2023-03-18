@@ -109400,13 +109400,13 @@ STRING 18235
 }
 
 STRING 18236
-// Upgrades: Rume (Unholy Strength,Improved Unholy Strength,Advanced Unholy Strength), Hotkey (Hotkey)
+// Abilities: A0L5 (Light's Edict), Hotkey (Hotkey - Normal)
 {
 Q
 }
 
 STRING 18237
-// Upgrades: Rume (Unholy Strength,Improved Unholy Strength,Advanced Unholy Strength), Hotkey (Hotkey)
+// Abilities: A0L5 (Light's Edict), Researchhotkey (Hotkey - Learn)
 {
 Q
 }
@@ -109448,7 +109448,7 @@ STRING 18243
 }
 
 STRING 18244
-// Upgrades: Rume (Unholy Strength,Improved Unholy Strength,Advanced Unholy Strength), Hotkey (Hotkey)
+// Abilities: A102 (Flash of Light), Hotkey (Hotkey - Normal)
 {
 Q
 }
@@ -109683,7 +109683,7 @@ Train Dragon Rider
 }
 
 STRING 18283
-// Upgrades: Rome (Steel Melee Weapons,Thorium Melee Weapons,Arcanite Melee Weapons), Hotkey (Hotkey)
+// Upgrades: Rume (Unholy Strength,Improved Unholy Strength,Advanced Unholy Strength), Hotkey (Hotkey)
 {
 Q
 }
@@ -109755,13 +109755,13 @@ Gives a 25% chance that an attack will deal 60 damage to nearby units in a large
 }
 
 STRING 18295
-// Upgrades: Rome (Steel Melee Weapons,Thorium Melee Weapons,Arcanite Melee Weapons), Hotkey (Hotkey)
+// Upgrades: Rume (Unholy Strength,Improved Unholy Strength,Advanced Unholy Strength), Hotkey (Hotkey)
 {
 Q
 }
 
 STRING 18296
-// Upgrades: Rome (Steel Melee Weapons,Thorium Melee Weapons,Arcanite Melee Weapons), Hotkey (Hotkey)
+// Upgrades: Rume (Unholy Strength,Improved Unholy Strength,Advanced Unholy Strength), Hotkey (Hotkey)
 {
 Q
 }
@@ -109791,7 +109791,7 @@ Hurl a Dark Hammer towards an enemy unit, damaging them for 75 damage and stunni
 }
 
 STRING 18301
-// Upgrades: Rhme (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Hotkey (Hotkey)
+// Upgrades: Rome (Steel Melee Weapons,Thorium Melee Weapons,Arcanite Melee Weapons), Hotkey (Hotkey)
 {
 Q
 }
@@ -110212,7 +110212,7 @@ Train Fateweaver
 }
 
 STRING 18371
-// Upgrades: Rhme (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Hotkey (Hotkey)
+// Upgrades: Rome (Steel Melee Weapons,Thorium Melee Weapons,Arcanite Melee Weapons), Hotkey (Hotkey)
 {
 Q
 }
@@ -110788,7 +110788,7 @@ Learn Molten Strike - [|cffffcc00Level %d|r]
 }
 
 STRING 18467
-// Upgrades: Rhme (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Hotkey (Hotkey)
+// Upgrades: Rome (Steel Melee Weapons,Thorium Melee Weapons,Arcanite Melee Weapons), Hotkey (Hotkey)
 {
 Q
 }
@@ -111172,13 +111172,13 @@ Summon Core Hound
 }
 
 STRING 18531
-// Abilities: A0L5 (Light's Edict), Hotkey (Hotkey - Normal)
+// Upgrades: Rora (Steel Ranged Weapons,Thorium Ranged Weapons,Arcanite Ranged Weapons), Hotkey (Hotkey)
 {
 W
 }
 
 STRING 18532
-// Abilities: A0L5 (Light's Edict), Researchhotkey (Hotkey - Learn)
+// Upgrades: Rora (Steel Ranged Weapons,Thorium Ranged Weapons,Arcanite Ranged Weapons), Hotkey (Hotkey)
 {
 W
 }
@@ -111238,7 +111238,7 @@ Train Bear Rider
 }
 
 STRING 18542
-// Upgrades: Rora (Steel Ranged Weapons,Thorium Ranged Weapons,Arcanite Ranged Weapons), Hotkey (Hotkey)
+// Upgrades: Rhra (Black Gunpowder,Refined Gunpowder,Imbued Gunpowder), Hotkey (Hotkey)
 {
 W
 }
@@ -111274,7 +111274,7 @@ E
 }
 
 STRING 18548
-// Upgrades: Rora (Steel Ranged Weapons,Thorium Ranged Weapons,Arcanite Ranged Weapons), Hotkey (Hotkey)
+// Upgrades: Rhra (Black Gunpowder,Refined Gunpowder,Imbued Gunpowder), Hotkey (Hotkey)
 {
 W
 }
@@ -111292,25 +111292,25 @@ Q
 }
 
 STRING 18551
-// Upgrades: Resw (Strength of the Wild,Improved Strength of the Wild,Advanced Strength of the Wil), Hotkey (Hotkey)
+// Upgrades: Rhme (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Hotkey (Hotkey)
 {
 Q
 }
 
 STRING 18552
-// Upgrades: Rhra (Black Gunpowder,Refined Gunpowder,Imbued Gunpowder), Hotkey (Hotkey)
+// Upgrades: Rhac (Improved Masonry,Advanced Masonry,Imbued Masonry), Hotkey (Hotkey)
 {
 W
 }
 
 STRING 18553
-// Upgrades: Resw (Strength of the Wild,Improved Strength of the Wild,Advanced Strength of the Wil), Hotkey (Hotkey)
+// Upgrades: Rhme (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Hotkey (Hotkey)
 {
 Q
 }
 
 STRING 18554
-// Upgrades: Resw (Strength of the Wild,Improved Strength of the Wild,Advanced Strength of the Wil), Hotkey (Hotkey)
+// Upgrades: Rhme (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Hotkey (Hotkey)
 {
 Q
 }
@@ -111328,7 +111328,7 @@ E
 }
 
 STRING 18557
-// Upgrades: Rhra (Black Gunpowder,Refined Gunpowder,Imbued Gunpowder), Hotkey (Hotkey)
+// Upgrades: Rhac (Improved Masonry,Advanced Masonry,Imbued Masonry), Hotkey (Hotkey)
 {
 W
 }
@@ -111358,7 +111358,7 @@ STRING 18561
 }
 
 STRING 18562
-// Upgrades: Rhac (Improved Masonry,Advanced Masonry,Imbued Masonry), Hotkey (Hotkey)
+// Upgrades: R01B (Defend), Hotkey (Hotkey)
 {
 W
 }
@@ -111388,7 +111388,7 @@ Gilneas Cathedral
 }
 
 STRING 18567
-// Upgrades: Rhac (Improved Masonry,Advanced Masonry,Imbued Masonry), Hotkey (Hotkey)
+// Upgrades: R07I (Necromancer Adept Training,Necromancer Master Training), Hotkey (Hotkey)
 {
 W
 }
@@ -111791,7 +111791,7 @@ Learn Herald of Destruction
 }
 
 STRING 18634
-// Upgrades: Resm (Strength of the Moon,Improved Strength of the Moon,Advanced Strength of the Moo), Hotkey (Hotkey)
+// Upgrades: Resw (Strength of the Wild,Improved Strength of the Wild,Advanced Strength of the Wil), Hotkey (Hotkey)
 {
 Q
 }
@@ -111815,13 +111815,13 @@ Herald of Destruction - [|cffffcc00Level 3|r]
 }
 
 STRING 18638
-// Upgrades: Resm (Strength of the Moon,Improved Strength of the Moon,Advanced Strength of the Moo), Hotkey (Hotkey)
+// Upgrades: Resw (Strength of the Wild,Improved Strength of the Wild,Advanced Strength of the Wil), Hotkey (Hotkey)
 {
 Q
 }
 
 STRING 18639
-// Upgrades: Resm (Strength of the Moon,Improved Strength of the Moon,Advanced Strength of the Moo), Hotkey (Hotkey)
+// Upgrades: Resw (Strength of the Wild,Improved Strength of the Wild,Advanced Strength of the Wil), Hotkey (Hotkey)
 {
 Q
 }
@@ -113201,7 +113201,7 @@ STRING 18868
 }
 
 STRING 18869
-// Upgrades: R020 (Defend), Hotkey (Hotkey)
+// Upgrades: Resm (Strength of the Moon,Improved Strength of the Moon,Advanced Strength of the Moo), Hotkey (Hotkey)
 {
 Q
 }
@@ -114101,7 +114101,7 @@ Emphasis during training is placed on defensive capabilities, granting the follo
 }
 
 STRING 19019
-// Upgrades: R014 (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
+// Upgrades: Resm (Strength of the Moon,Improved Strength of the Moon,Advanced Strength of the Moo), Hotkey (Hotkey)
 {
 Q
 }
@@ -114995,7 +114995,7 @@ STRING 19167
 }
 
 STRING 19168
-// Upgrades: R00X (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: Resm (Strength of the Moon,Improved Strength of the Moon,Advanced Strength of the Moo), Hotkey (Hotkey)
 {
 Q
 }
@@ -115079,7 +115079,7 @@ Medium dragon of the Dragonmaw Clan.|n|r|n|cffffcc00Attacks land and air units.|
 }
 
 STRING 19182
-// Upgrades: R01B (Defend), Hotkey (Hotkey)
+// Upgrades: R07I (Necromancer Adept Training,Necromancer Master Training), Hotkey (Hotkey)
 {
 W
 }
@@ -115367,15 +115367,27 @@ STRING 19229
 }
 
 STRING 19230
-// Upgrades: Rosp (Spiked Barricades,Improved Spiked Barricades,Advanced Spiked Barricades), Hotkey (Hotkey)
+// Abilities: A101 (Army of Light Golem summon), Hotkey (Hotkey - Normal)
 {
 R
+}
+
+STRING 19231
+// Abilities: A0ZH (Army of Light), Researchtip (Tooltip - Learn)
+{
+Learn Rain of Chaos - [|cffffcc00Level %d|r]
 }
 
 STRING 19232
 // Units: nntt (Betrayer's Reservoir), Name (Name)
 {
 Betrayer's Reservoir
+}
+
+STRING 19233
+// Abilities: A0ZH (Army of Light), Researchubertip (Tooltip - Learn - Extended)
+{
+Calls down multiple Infernals from the sky.|n|n|cffffcc00Level 1|r - Calls down 4 Abyssals . |n|cffffcc00Level 2|r - Calls down 5 Doomfire Abyssals. |n|cffffcc00Level 3|r - Calls down 6 Gargantuan Abyssals.
 }
 
 STRING 19234
@@ -115402,6 +115414,12 @@ STRING 19237
 Altar of the Queen
 }
 
+STRING 19238
+// Abilities: A0ZH (Army of Light), Tip (Tooltip - Normal)
+{
+Army of the Light - [|cffffcc00Level 1|r]
+}
+
 STRING 19239
 // Abilities: A0L5 (Light's Edict), Ubertip (Tooltip - Normal - Extended)
 {
@@ -115409,9 +115427,9 @@ Bombards an area with 8 waves of rockets. Each wave deals 15 damage to all units
 }
 
 STRING 19240
-// Upgrades: R07I (Necromancer Adept Training,Necromancer Master Training), Hotkey (Hotkey)
+// Abilities: A102 (Flash of Light), Name (Name)
 {
-W
+Flash of Light
 }
 
 STRING 19241
@@ -115463,9 +115481,9 @@ Train Bandit Spearman
 }
 
 STRING 19249
-// Upgrades: R07I (Necromancer Adept Training,Necromancer Master Training), Hotkey (Hotkey)
+// Abilities: A102 (Flash of Light), Tip (Tooltip - Normal)
 {
-W
+Flash of Light
 }
 
 STRING 19250
@@ -115559,7 +115577,7 @@ Conveyance Aura - [|cffffcc00Level 4|r]
 }
 
 STRING 19265
-// Upgrades: R078 (Spirit Walker Adept Training,Spirit Walker Master Training), EditorSuffix (Editor Suffix)
+// Abilities: A0ZH (Army of Light), EditorSuffix (Editor Suffix)
 {
 (Draenei)
 }
@@ -115595,13 +115613,13 @@ Annihilan Guard
 }
 
 STRING 19271
-// Upgrades: R07C (Spirit Walker Adept Training,Spirit Walker Master Training), EditorSuffix (Editor Suffix)
+// Abilities: A101 (Army of Light Golem summon), EditorSuffix (Editor Suffix)
 {
 (Draenei)
 }
 
 STRING 19272
-// Upgrades: R080 (Iron Plating,Steel Plating,Mithril Plating), EditorSuffix (Editor Suffix)
+// Abilities: A102 (Flash of Light), EditorSuffix (Editor Suffix)
 {
 (Draenei)
 }
@@ -115630,10 +115648,22 @@ STRING 19276
 Conveyance Aura - [|cffffcc00Level 4|r]
 }
 
+STRING 19277
+// Abilities: A0ZH (Army of Light), Tip (Tooltip - Normal)
+{
+Army of the Light - [|cffffcc00Level 2|r]
+}
+
 STRING 19278
 // Abilities: A0Z5 (Driven by Vengance), Ubertip (Tooltip - Normal - Extended)
 {
 Increases nearby friendly units' movement speed by 20%.
+}
+
+STRING 19279
+// Abilities: A0ZH (Army of Light), Tip (Tooltip - Normal)
+{
+Army of the Light - [|cffffcc00Level 3|r]
 }
 
 STRING 19280
@@ -115648,10 +115678,34 @@ STRING 19281
 Train Annihilan Guard
 }
 
+STRING 19282
+// Abilities: A0ZH (Army of Light), Ubertip (Tooltip - Normal - Extended)
+{
+Calls down 4 Abyssals from the sky.
+}
+
+STRING 19283
+// Abilities: A0ZH (Army of Light), Ubertip (Tooltip - Normal - Extended)
+{
+Calls down 5 Doomfire Abyssals  from the sky.
+}
+
 STRING 19284
 // Units: o061 (Cliffrunner), Tip (Tooltip - Basic)
 {
 Train Cliffrunner
+}
+
+STRING 19285
+// Abilities: A0ZH (Army of Light), Ubertip (Tooltip - Normal - Extended)
+{
+Calls down 6 Gargantuan Abyssals from the sky.
+}
+
+STRING 19286
+// Abilities: A0ZH (Army of Light), Name (Name)
+{
+Army of Light
 }
 
 STRING 19287
@@ -115727,6 +115781,36 @@ STRING 19298
 Powerful Gnoll Leader.|n|cfff5962dAbilities:|R Earth Healing, Taunt, Bash|n|cff99b4d1Can only train 4.|r|n|cffffcc00Attacks land units.|r
 }
 
+STRING 19299
+// Abilities: A101 (Army of Light Golem summon), Name (Name)
+{
+Army of Light Golem summon
+}
+
+STRING 19300
+// Abilities: A101 (Army of Light Golem summon), Researchtip (Tooltip - Learn)
+{
+Learn Inferno - [|cffffcc00Level %d|r]
+}
+
+STRING 19301
+// Abilities: A101 (Army of Light Golem summon), Researchubertip (Tooltip - Learn - Extended)
+{
+Calls an Infernal down from the sky, dealing <AUin,DataA1> damage and stunning enemy land units for <AUin,Dur1> seconds in an area. The Infernal lasts <AUin,DataB1> seconds.|n|cffffcc00Level 1|r - <AUin,DataA1> damage, lasts <AUin,DataB1> seconds.|n|cffffcc00Level 2|r - <AUin,DataA2> damage, lasts <AUin,DataB2> seconds.|n|cffffcc00Level 3|r - <AUin,DataA3> damage, lasts <AUin,DataB3> seconds.
+}
+
+STRING 19302
+// Abilities: A101 (Army of Light Golem summon), Tip (Tooltip - Normal)
+{
+Inferno - [|cffffcc00Level 1|r]
+}
+
+STRING 19303
+// Abilities: A101 (Army of Light Golem summon), Tip (Tooltip - Normal)
+{
+Inferno - [|cffffcc00Level 2|r]
+}
+
 STRING 19304
 // Abilities: A0XB (Decapitate), Tip (Tooltip - Normal)
 {
@@ -115800,7 +115884,7 @@ The hero unleashes a mortal axe strike, dealing 750 damage after a short delay.
 }
 
 STRING 19316
-// Upgrades: Rosp (Spiked Barricades,Improved Spiked Barricades,Advanced Spiked Barricades), Hotkey (Hotkey)
+// Abilities: A101 (Army of Light Golem summon), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -115812,7 +115896,7 @@ The hero unleashes a mortal axe strike, dealing 1250 damage after a short delay.
 }
 
 STRING 19318
-// Upgrades: Ropg (Pillage), Hotkey (Hotkey)
+// Upgrades: Rosp (Spiked Barricades,Improved Spiked Barricades,Advanced Spiked Barricades), Hotkey (Hotkey)
 {
 R
 }
@@ -115821,6 +115905,12 @@ STRING 19319
 // Units: n0DE (Murloc Mutant), EditorSuffix (Name - Editor Suffix)
 {
 (murloc)
+}
+
+STRING 19320
+// Abilities: A101 (Army of Light Golem summon), Tip (Tooltip - Normal)
+{
+Inferno - [|cffffcc00Level 3|r]
 }
 
 STRING 19321
@@ -115896,7 +115986,7 @@ Build Oil Rig
 }
 
 STRING 19333
-// Upgrades: Rews (Well Spring), Hotkey (Hotkey)
+// Upgrades: Rosp (Spiked Barricades,Improved Spiked Barricades,Advanced Spiked Barricades), Hotkey (Hotkey)
 {
 R
 }
@@ -115931,6 +116021,12 @@ STRING 19338
 Bile Shot
 }
 
+STRING 19339
+// Abilities: A101 (Army of Light Golem summon), Ubertip (Tooltip - Normal - Extended)
+{
+Calls an Infernal down from the sky, dealing <AUin,DataA2> damage and stunning enemy land units for <AUin,Dur2> seconds in an area. The Infernal lasts <AUin,DataB2> seconds.
+}
+
 STRING 19340
 // Abilities: A0Z9 (Bile Shot), Researchubertip (Tooltip - Learn - Extended)
 {
@@ -115943,10 +116039,46 @@ STRING 19341
 Bile Shot
 }
 
+STRING 19342
+// Abilities: A101 (Army of Light Golem summon), Ubertip (Tooltip - Normal - Extended)
+{
+Calls an Infernal down from the sky, dealing <AUin,DataA3> damage and stunning enemy land units for <AUin,Dur3> seconds in an area. The Infernal lasts <AUin,DataB3> seconds.
+}
+
+STRING 19343
+// Upgrades: Ropg (Pillage), Hotkey (Hotkey)
+{
+R
+}
+
+STRING 19344
+// Upgrades: R020 (Defend), Hotkey (Hotkey)
+{
+Q
+}
+
 STRING 19345
 // Abilities: A0Z9 (Bile Shot), Ubertip (Tooltip - Normal - Extended)
 {
 Blasts enemy units with a wave of plague that deals 50 damage to the target, and 75 nova damage. Plague damage slows units' movement for 4 seconds.
+}
+
+STRING 19346
+// Upgrades: R014 (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
+{
+Q
+}
+
+STRING 19347
+// Upgrades: Rews (Well Spring), Hotkey (Hotkey)
+{
+R
+}
+
+STRING 19348
+// Upgrades: R078 (Spirit Walker Adept Training,Spirit Walker Master Training), EditorSuffix (Editor Suffix)
+{
+(Draenei)
 }
 
 STRING 19349
@@ -115965,6 +116097,24 @@ STRING 19351
 // Abilities: A0ZK (Multishot), Ubertip (Tooltip - Normal - Extended)
 {
 This tower fires up to 9 additional projectiles that deal 10 damage each to nearby enemies
+}
+
+STRING 19352
+// Upgrades: R07C (Spirit Walker Adept Training,Spirit Walker Master Training), EditorSuffix (Editor Suffix)
+{
+(Draenei)
+}
+
+STRING 19353
+// Upgrades: R00X (Magic Sentry), Hotkey (Hotkey)
+{
+Q
+}
+
+STRING 19354
+// Upgrades: R080 (Iron Plating,Steel Plating,Mithril Plating), EditorSuffix (Editor Suffix)
+{
+(Draenei)
 }
 
 STRING 19356
