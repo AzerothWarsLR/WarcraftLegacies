@@ -11520,6 +11520,12 @@ STRING 1920
 Train Bishop of the Light
 }
 
+STRING 1921
+// Abilities: A0L5 (Light's Edict), Name (Name)
+{
+Light's Edict
+}
+
 STRING 1922
 // Units: n09M (Fire Acscended Elementals), EditorSuffix (Name - Editor Suffix)
 {
@@ -46899,6 +46905,12 @@ STRING 7814
 Headshot
 }
 
+STRING 7815
+// Abilities: A0L5 (Light's Edict), Researchtip (Tooltip - Learn)
+{
+Learn Light's Edict  - [|cffffcc00Level %d|r]
+}
+
 STRING 7816
 // Abilities: A0TI (Permanent Invisibility), EditorSuffix (Editor Suffix)
 {
@@ -65541,6 +65553,12 @@ STRING 10922
 // Abilities: A094 (Flash of Light), Name (Name)
 {
 Flash of Light
+}
+
+STRING 10923
+// Abilities: A0L5 (Light's Edict), Tip (Tooltip - Normal)
+{
+Light's Edict - [|cffffcc00Level 1|r]
 }
 
 STRING 10924
@@ -111154,13 +111172,13 @@ Summon Core Hound
 }
 
 STRING 18531
-// Abilities: A0L5 (Rocket Bombardment), Hotkey (Hotkey - Normal)
+// Abilities: A0L5 (Light's Edict), Hotkey (Hotkey - Normal)
 {
 W
 }
 
 STRING 18532
-// Abilities: A0L5 (Rocket Bombardment), Researchhotkey (Hotkey - Learn)
+// Abilities: A0L5 (Light's Edict), Researchhotkey (Hotkey - Learn)
 {
 W
 }
@@ -114394,6 +114412,12 @@ STRING 19070
 Powerful Ogre that follows the Dragonmaw Clan.|n|cfff5962dAbilities:|R Avatar, Shockwave, Pulverise, Self-Bloodlust|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land units.|r
 }
 
+STRING 19071
+// Abilities: A0L5 (Light's Edict), Tip (Tooltip - Normal)
+{
+Light's Edict - [|cffffcc00Level 2|r]
+}
+
 STRING 19072
 // Units: n0BM (Lightforged Dragoon), Name (Name)
 {
@@ -114434,6 +114458,12 @@ STRING 19078
 // Abilities: A0WV (Attribute Bonus), Ubertip (Tooltip - Normal - Extended)
 {
 Gives a total of <Aamk,DataA4> points to Intelligence, and Strength
+}
+
+STRING 19079
+// Abilities: A0L5 (Light's Edict), Tip (Tooltip - Normal)
+{
+Light's Edict - [|cffffcc00Level 3|r]
 }
 
 STRING 19080
@@ -114608,6 +114638,12 @@ STRING 19108
 // Units: o05J (Dragon Hatchery), Name (Name)
 {
 Dragon Hatchery
+}
+
+STRING 19109
+// Abilities: A0L5 (Light's Edict), Tip (Tooltip - Normal)
+{
+Light's Edict - [|cffffcc00Level 4|r]
 }
 
 STRING 19110
@@ -115325,7 +115361,7 @@ Holy Arrows
 }
 
 STRING 19229
-// Abilities: A0L5 (Rocket Bombardment), EditorSuffix (Editor Suffix)
+// Abilities: A0L5 (Light's Edict), EditorSuffix (Editor Suffix)
 {
 (Draenei)
 }
@@ -115336,22 +115372,10 @@ STRING 19230
 R
 }
 
-STRING 19231
-// Abilities: A0L5 (Rocket Bombardment), Name (Name)
-{
-Rocket Bombardment
-}
-
 STRING 19232
 // Units: nntt (Betrayer's Reservoir), Name (Name)
 {
 Betrayer's Reservoir
-}
-
-STRING 19233
-// Abilities: A0L5 (Rocket Bombardment), Researchtip (Tooltip - Learn)
-{
-Learn Healing Spray (|cffffcc00Q|r)  - [|cffffcc00Level %d|r]
 }
 
 STRING 19234
@@ -115367,7 +115391,7 @@ Amphibian
 }
 
 STRING 19236
-// Abilities: A0L5 (Rocket Bombardment), Researchubertip (Tooltip - Learn - Extended)
+// Abilities: A0L5 (Light's Edict), Researchubertip (Tooltip - Learn - Extended)
 {
 Rexxar sprays waves of mists into his allies healing them. |n|n|cffffcc00Level 1|r - 3 waves at 60 hit points healed each. |n|cffffcc00Level 2|r - 4 waves at 65 hit points healed each. |n|cffffcc00Level 3|r - 5 waves at 75 hit points healed each.|n|cffffcc00Level 4|r - 6 waves at 85 hit points healed each.|n|cffffcc00Level 5|r - 7 waves at 100 hit points healed each.
 }
@@ -115378,14 +115402,8 @@ STRING 19237
 Altar of the Queen
 }
 
-STRING 19238
-// Abilities: A0L5 (Rocket Bombardment), Tip (Tooltip - Normal)
-{
-Rocket Bombardment
-}
-
 STRING 19239
-// Abilities: A0L5 (Rocket Bombardment), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A0L5 (Light's Edict), Ubertip (Tooltip - Normal - Extended)
 {
 Bombards an area with 8 waves of rockets. Each wave deals 15 damage to all units in an area.
 }
