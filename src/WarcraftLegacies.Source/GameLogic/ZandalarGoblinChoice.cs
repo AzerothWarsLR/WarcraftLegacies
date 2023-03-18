@@ -83,6 +83,7 @@ namespace WarcraftLegacies.Source.GameLogic
     {
       Player(8).SetFaction(ZandalarSetup.Zandalar);
       Player(8).SetTeam(TeamSetup.Horde);
+      GoblinSetup.Goblin?.Obliterate();
       _factionPicked = true;
       ConcludeFactionPick();
     }
@@ -91,6 +92,7 @@ namespace WarcraftLegacies.Source.GameLogic
     {
       Player(8).SetFaction(GoblinSetup.Goblin);
       Player(8).SetTeam(TeamSetup.Horde);
+      ZandalarSetup.Zandalar?.Obliterate();
       _factionPicked = true;
       ConcludeFactionPick();
     }

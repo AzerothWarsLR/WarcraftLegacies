@@ -5,6 +5,7 @@ using MacroTools.PassiveAbilitySystem;
 using MacroTools.ResearchSystems;
 using MacroTools.Spells;
 using MacroTools.SpellSystem;
+using Microsoft.VisualBasic;
 using static War3Api.Common;
 
 namespace TestMap.Source.Setup

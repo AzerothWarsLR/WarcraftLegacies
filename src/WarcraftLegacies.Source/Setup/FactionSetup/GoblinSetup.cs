@@ -4,9 +4,12 @@ using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup.FactionSetup
 {
+  /// <summary>
+  /// Setup for the Goblin <see cref="Faction"/>
+  /// </summary>
   public static class GoblinSetup
   {
-    public static Faction? Goblin { get; private set; }
+    public static Faction Goblin { get; private set; }
 
     public static void Setup()
     {
