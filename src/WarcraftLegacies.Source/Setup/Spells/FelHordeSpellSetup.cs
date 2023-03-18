@@ -54,8 +54,8 @@ namespace WarcraftLegacies.Source.Setup.Spells
 
       PassiveAbilityManager.Register(new Execute(Constants.UNIT_O01L_EXECUTIONER_FEL_HORDE_ELITE)
       {
-        DamageMultNonResistant = 5,
-        DamageMultResistant = 2.5f,
+        DamageMultNonResistant = 4,
+        DamageMultResistant = 2,
         DamageMultStructure = 1
       });
 

@@ -27,6 +27,7 @@ namespace WarcraftLegacies.Source.Quests.Druids
     /// Initializes a new instance of the <see cref="QuestMalfurionAwakens"/> class.
     /// </summary>
     /// <param name="moonglade">All units here start invulnerable and are rescued when the quest is completed.</param>
+    /// <param name="darnassus"></param>
     /// <param name="worldTree">Starts invulnerable and is recued when the quest is completed.</param>
     /// <param name="hornofCenarius">Required to complete the quest.</param>
     /// <param name="malfurion">Awakened when the quest is completed.</param>
