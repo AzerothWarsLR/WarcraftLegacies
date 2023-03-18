@@ -111172,7 +111172,7 @@ Summon Core Hound
 }
 
 STRING 18531
-// Upgrades: Rora (Steel Ranged Weapons,Thorium Ranged Weapons,Arcanite Ranged Weapons), Hotkey (Hotkey)
+// Abilities: A103 (Holy Shockwave), Researchhotkey (Hotkey - Learn)
 {
 W
 }
@@ -111238,7 +111238,7 @@ Train Bear Rider
 }
 
 STRING 18542
-// Upgrades: Rhra (Black Gunpowder,Refined Gunpowder,Imbued Gunpowder), Hotkey (Hotkey)
+// Upgrades: Rora (Steel Ranged Weapons,Thorium Ranged Weapons,Arcanite Ranged Weapons), Hotkey (Hotkey)
 {
 W
 }
@@ -111298,7 +111298,7 @@ Q
 }
 
 STRING 18552
-// Upgrades: Rhac (Improved Masonry,Advanced Masonry,Imbued Masonry), Hotkey (Hotkey)
+// Upgrades: Rhra (Black Gunpowder,Refined Gunpowder,Imbued Gunpowder), Hotkey (Hotkey)
 {
 W
 }
@@ -111358,7 +111358,7 @@ STRING 18561
 }
 
 STRING 18562
-// Upgrades: R01B (Defend), Hotkey (Hotkey)
+// Upgrades: Rhac (Improved Masonry,Advanced Masonry,Imbued Masonry), Hotkey (Hotkey)
 {
 W
 }
@@ -111388,7 +111388,7 @@ Gilneas Cathedral
 }
 
 STRING 18567
-// Upgrades: R07I (Necromancer Adept Training,Necromancer Master Training), Hotkey (Hotkey)
+// Upgrades: R01B (Defend), Hotkey (Hotkey)
 {
 W
 }
@@ -115384,12 +115384,6 @@ STRING 19232
 Betrayer's Reservoir
 }
 
-STRING 19233
-// Abilities: A0ZH (Army of Light), Researchubertip (Tooltip - Learn - Extended)
-{
-Calls down multiple Infernals from the sky.|n|n|cffffcc00Level 1|r - Calls down 4 Abyssals . |n|cffffcc00Level 2|r - Calls down 5 Doomfire Abyssals. |n|cffffcc00Level 3|r - Calls down 6 Gargantuan Abyssals.
-}
-
 STRING 19234
 // Units: nnsu (Coilfang Summoner), Tip (Tooltip - Basic)
 {
@@ -115678,28 +115672,10 @@ STRING 19281
 Train Annihilan Guard
 }
 
-STRING 19282
-// Abilities: A0ZH (Army of Light), Ubertip (Tooltip - Normal - Extended)
-{
-Calls down 4 Abyssals from the sky.
-}
-
-STRING 19283
-// Abilities: A0ZH (Army of Light), Ubertip (Tooltip - Normal - Extended)
-{
-Calls down 5 Doomfire Abyssals  from the sky.
-}
-
 STRING 19284
 // Units: o061 (Cliffrunner), Tip (Tooltip - Basic)
 {
 Train Cliffrunner
-}
-
-STRING 19285
-// Abilities: A0ZH (Army of Light), Ubertip (Tooltip - Normal - Extended)
-{
-Calls down 6 Gargantuan Abyssals from the sky.
 }
 
 STRING 19286
@@ -116076,7 +116052,7 @@ R
 }
 
 STRING 19348
-// Upgrades: R078 (Spirit Walker Adept Training,Spirit Walker Master Training), EditorSuffix (Editor Suffix)
+// Abilities: A103 (Holy Shockwave), EditorSuffix (Editor Suffix)
 {
 (Draenei)
 }
@@ -116100,7 +116076,7 @@ This tower fires up to 9 additional projectiles that deal 10 damage each to near
 }
 
 STRING 19352
-// Upgrades: R07C (Spirit Walker Adept Training,Spirit Walker Master Training), EditorSuffix (Editor Suffix)
+// Upgrades: R078 (Spirit Walker Adept Training,Spirit Walker Master Training), EditorSuffix (Editor Suffix)
 {
 (Draenei)
 }
@@ -116112,9 +116088,15 @@ Q
 }
 
 STRING 19354
-// Upgrades: R080 (Iron Plating,Steel Plating,Mithril Plating), EditorSuffix (Editor Suffix)
+// Upgrades: R07C (Spirit Walker Adept Training,Spirit Walker Master Training), EditorSuffix (Editor Suffix)
 {
 (Draenei)
+}
+
+STRING 19355
+// Abilities: A0ZH (Army of Light), Researchubertip (Tooltip - Learn - Extended)
+{
+Calls down multiple Lightforged Warframe from the void.|n|n|cffffcc00Level 1|r - Calls down 6 Lightforged Warframe . |n|cffffcc00Level 2|r - Calls down 10 Lightforged Warframe. |n|cffffcc00Level 3|r - Calls down 14 Lightforged Warframes.
 }
 
 STRING 19356
@@ -116183,6 +116165,12 @@ STRING 19366
 Build Altar of the Depth
 }
 
+STRING 19367
+// Abilities: A0ZH (Army of Light), Ubertip (Tooltip - Normal - Extended)
+{
+Calls down 6 Lightforged Warframe from the void.
+}
+
 STRING 19368
 // Units: e01S (Altar of the Depth), Name (Name)
 {
@@ -116193,6 +116181,12 @@ STRING 19369
 // Units: e01T (Coral of War), Tip (Tooltip - Basic)
 {
 Build Coral of War
+}
+
+STRING 19370
+// Abilities: A0ZH (Army of Light), Ubertip (Tooltip - Normal - Extended)
+{
+Calls down 10 Lightforged Warframe from the void.
 }
 
 STRING 19371
@@ -116261,6 +116255,18 @@ STRING 19381
 (Illidan)
 }
 
+STRING 19382
+// Abilities: A0ZH (Army of Light), Ubertip (Tooltip - Normal - Extended)
+{
+Calls down 14 Lightforged Warframe from the void.
+}
+
+STRING 19383
+// Abilities: A103 (Holy Shockwave), Researchubertip (Tooltip - Learn - Extended)
+{
+When this hero attacks, it has a 15% chance to hurl lightning at <A024,DataB1> targets, dealing damage to each of them. |n|n|cffffcc00Level 1|r - Deals <A024,DataA1> damage. |n|cffffcc00Level 2|r - Deals <A024,DataA2> damage.|n|cffffcc00Level 3|r - Deals <A024,DataA3> damage.|n|cffffcc00Level 4|r - Deals <A024,DataA4> damage.
+}
+
 STRING 19384
 // Abilities: AHds (Demonic Shield), EditorSuffix (Editor Suffix)
 {
@@ -116309,6 +116315,12 @@ STRING 19391
 (Illidan)
 }
 
+STRING 19392
+// Abilities: A103 (Holy Shockwave), Tip (Tooltip - Normal)
+{
+Thunder Fists - [|cffffcc00Level 4|r]
+}
+
 STRING 19393
 // Abilities: A07K (Reincarnation), EditorSuffix (Editor Suffix)
 {
@@ -116321,10 +116333,22 @@ STRING 19394
 (Illidan)
 }
 
+STRING 19395
+// Abilities: A103 (Holy Shockwave), Ubertip (Tooltip - Normal - Extended)
+{
+When this unit attacks, it has a 15% chance to fire a shockwave dealing 60 damage to units in front of them.
+}
+
 STRING 19396
 // Abilities: A0ZA (Dragonmaw Battle Standard), Name (Name)
 {
 Dragonmaw Battle Standard
+}
+
+STRING 19397
+// Abilities: A103 (Holy Shockwave), Ubertip (Tooltip - Normal - Extended)
+{
+When this hero attacks, it has a 15% chance to hurl lightning at <A024,DataB2> targets, dealing <A024,DataA2> damage to each of them.
 }
 
 STRING 19398
@@ -116501,6 +116525,24 @@ STRING 19426
 Vitality Aura
 }
 
+STRING 19427
+// Abilities: A103 (Holy Shockwave), Ubertip (Tooltip - Normal - Extended)
+{
+When this hero attacks, it has a 15% chance to hurl lightning at <A024,DataB3> targets, dealing <A024,DataA3> damage to each of them.
+}
+
+STRING 19428
+// Abilities: A103 (Holy Shockwave), Ubertip (Tooltip - Normal - Extended)
+{
+When this hero attacks, it has a 15% chance to hurl lightning at <A024,DataB4> targets, dealing <A024,DataA4> damage to each of them.
+}
+
+STRING 19429
+// Abilities: A103 (Holy Shockwave), Name (Name)
+{
+Holy Shockwave
+}
+
 STRING 19430
 // Units: nbot (Goblin Privateer), EditorSuffix (Name - Editor Suffix)
 {
@@ -116535,6 +116577,12 @@ STRING 19435
 // Units: n08H (Hunter Proving Grounds), Tip (Tooltip - Basic)
 {
 Build - Hunter Proving Grounds
+}
+
+STRING 19436
+// Abilities: A103 (Holy Shockwave), Researchtip (Tooltip - Learn)
+{
+Learn Thunder Fists - [|cffffcc00Level %d|r]
 }
 
 STRING 19437
@@ -116621,6 +116669,12 @@ STRING 19450
 Summon The Betrayer
 }
 
+STRING 19451
+// Abilities: A103 (Holy Shockwave), Tip (Tooltip - Normal)
+{
+Holy Shockwave
+}
+
 STRING 19452
 // Units: Eevi (Betrayer), Tip (Tooltip - Basic)
 {
@@ -116667,6 +116721,30 @@ STRING 19459
 // Abilities: A0XF (Aura of Durability), Ubertip (Tooltip - Normal - Extended)
 {
 Increases nearby friendly Mechanical units' hit point regeneration by 6 per second.
+}
+
+STRING 19460
+// Abilities: A103 (Holy Shockwave), Tip (Tooltip - Normal)
+{
+Thunder Fists - [|cffffcc00Level 2|r]
+}
+
+STRING 19461
+// Abilities: A103 (Holy Shockwave), Tip (Tooltip - Normal)
+{
+Thunder Fists - [|cffffcc00Level 3|r]
+}
+
+STRING 19462
+// Upgrades: R07I (Necromancer Adept Training,Necromancer Master Training), Hotkey (Hotkey)
+{
+W
+}
+
+STRING 19463
+// Upgrades: R080 (Iron Plating,Steel Plating,Mithril Plating), EditorSuffix (Editor Suffix)
+{
+(Draenei)
 }
 
 STRING 19469

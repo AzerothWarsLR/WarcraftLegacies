@@ -1,4 +1,5 @@
 ﻿using MacroTools;
+using MacroTools.PassiveAbilities;
 using MacroTools.Spells;
 using MacroTools.Spells.Slipstream;
 using MacroTools.SpellSystem;
@@ -54,6 +55,15 @@ namespace WarcraftLegacies.Source.Setup.Spells
         TargetLocation = new Point(2649, -22845),
         Color = new Color(55, 50, 250, 255)
       });
+
+      var holyShockwave = new SpellOnAttack(Constants.UNIT_N0CX_LIGHFORGED_WARFRAME_DRAENEI,
+        Constants.ABILITY_A0LN_THUNDER_FISTS_CHO_GALL)
+      {
+        DummyAbilityId = Constants.ABILITY_A024_THUNDER_FISTS_CHO_GALL_DUMMY_CAST,
+        DummyOrderString = "forkedlightning",
+        ProcChance = 0.15f
+      };
+      PassiveAbilityManager.Register(holyShockwave);
     }
   }
 }
