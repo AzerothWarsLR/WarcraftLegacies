@@ -56,6 +56,7 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
     {
       if (completingFaction.Player != null)
       {
+        MoveStranglethorn(completingFaction.Player);
         completingFaction.Player.RescueGroup(_rescueUnits);
         _proudmooreCapitalShip.Rescue(completingFaction.Player);
       }
@@ -65,6 +66,20 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
         _proudmooreCapitalShip.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
       }
       _proudmooreCapitalShip.Pause(false);
+
+
+    }
+
+    private static void MoveStranglethorn(player whichPlayer)
+    {
+      foreach (var unit in CreateGroup().EnumUnitsInRect(Rectangle.WorldBounds).EmptyToList())
+      {
+        if (GetOwningPlayer(unit) != whichPlayer) continue;
+        if (!IsUnitType(unit, UNIT_TYPE_STRUCTURE) && !IsUnitType(unit, UNIT_TYPE_ANCIENT) && !IsUnitType(unit, UNIT_TYPE_PEON))
+          SetUnitPosition(unit, 9755, -21510);
+        if (GetLocalPlayer() == whichPlayer)
+          SetCameraPosition(9755, -21510);
+      }
     }
 
     /// <inheritdoc/>

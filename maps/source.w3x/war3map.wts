@@ -18625,7 +18625,7 @@ E
 }
 
 STRING 3105
-// Upgrades: R05J (Defend), EditorSuffix (Editor Suffix)
+// Units: E016 (Ruler of House Waycrest), EditorSuffix (Name - Editor Suffix)
 {
 (Kultiras)
 }
@@ -20664,7 +20664,7 @@ Primary structure, used to train workers and gather resources.|n|cfff5962dTrains
 }
 
 STRING 3445
-// Units: E016 (Ruler of House Waycrest), EditorSuffix (Name - Editor Suffix)
+// Upgrades: R05J (Defend), EditorSuffix (Editor Suffix)
 {
 (Kultiras)
 }
@@ -114767,7 +114767,7 @@ Orb of Annihilation - [|cffffcc00Level 2|r]
 }
 
 STRING 19130
-// Upgrades: R05J (Defend), Hotkey (Hotkey)
+// Upgrades: R02Y (Long Rifles), Hotkey (Hotkey)
 {
 A
 }
@@ -115169,7 +115169,7 @@ Z
 }
 
 STRING 19197
-// Upgrades: R02Y (Long Rifles), Hotkey (Hotkey)
+// Upgrades: R05J (Defend), Hotkey (Hotkey)
 {
 A
 }
