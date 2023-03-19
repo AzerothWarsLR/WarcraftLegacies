@@ -49011,6 +49011,12 @@ STRING 8165
 E
 }
 
+STRING 8166
+// Units: Nalc (Baron of Gadgetzan), Ubertip (Tooltip - Extended)
+{
+Warrior Hero, strong at defensive and offensive combat.|n|cfff5962dCan learn:|R Exploding Cocktail, Healing Spray, Wise Council, Chemical Rage|n|n|cffffcc00Attacks land units.|R
+}
+
 STRING 8167
 // Units: h066 (Conclave), Ubertip (Tooltip - Extended)
 {
@@ -104258,12 +104264,6 @@ STRING 17380
 // Abilities: A0RH (Intercontinental Bombardment), Ubertip (Tooltip - Normal - Extended)
 {
 Fire the artillery, dealing 1800 damage to enemies in an area of 450. 40000 range. Has a 25 second cast time. Will also damage friendly units.
-}
-
-STRING 17381
-// Units: Nalc (Baron of Gadgetzan), Ubertip (Tooltip - Extended)
-{
-Warrior Hero, strong at defensive and offensive combat.|n|cfff5962dCan learn:|R Exploding Cocktail, Healing Spray, Bash, Chemical Rage|n|n|cffffcc00Attacks land units.|R
 }
 
 STRING 17382

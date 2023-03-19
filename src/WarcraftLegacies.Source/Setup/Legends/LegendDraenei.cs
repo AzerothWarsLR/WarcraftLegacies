@@ -42,6 +42,12 @@ namespace WarcraftLegacies.Source.Setup.Legends
         StartingXp = 1000
       };
 
+      Maraad = new LegendaryHero("A'dal")
+      {
+        UnitType = FourCC("H09M"),
+        StartingXp = 8800
+      };
+
       Velen = new LegendaryHero("Velen")
       {
         UnitType = FourCC("E01I")
