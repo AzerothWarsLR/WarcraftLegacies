@@ -1,5 +1,6 @@
 ﻿using MacroTools;
 using MacroTools.PassiveAbilities;
+using MacroTools.PassiveAbilitySystem;
 using MacroTools.Spells;
 using MacroTools.Spells.Slipstream;
 using MacroTools.SpellSystem;
@@ -56,14 +57,27 @@ namespace WarcraftLegacies.Source.Setup.Spells
         Color = new Color(55, 50, 250, 255)
       });
 
-      var holyShockwave = new SpellOnAttack(Constants.UNIT_N0CX_LIGHFORGED_WARFRAME_DRAENEI,
-        Constants.ABILITY_A0LN_THUNDER_FISTS_CHO_GALL)
+      var holyShockwave = new SpellOnAttack(Constants.UNIT_N0CX_LIGHTFORGED_WARFRAME_DRAENEI,
+        Constants.ABILITY_A103_HOLY_SHOCKWAVE_DRAENEI)
       {
-        DummyAbilityId = Constants.ABILITY_A024_THUNDER_FISTS_CHO_GALL_DUMMY_CAST,
-        DummyOrderString = "forkedlightning",
-        ProcChance = 0.15f
+        DummyAbilityId = Constants.ABILITY_A104_SHOCKWAVE_WARFRAME_DUMMY,
+        DummyOrderString = "carrionswarm",
+        ProcChance = 1
       };
       PassiveAbilityManager.Register(holyShockwave);
+
+      var warStompAdal = new Stomp(Constants.ABILITY_A105_BLINDING_STARLIGHT_ADAL)
+      {
+        Radius = 1000,
+        DamageBase = 00,
+        DamageLevel = 00,
+        DurationBase = 6,
+        DurationLevel = 3,
+        StunAbilityId = Constants.ABILITY_A106_CURSE_DREANEI,
+        StunOrderString = "sleep",
+        SpecialEffect = @"war3mapImported\FrostNova.mdx"
+      };
+      SpellSystem.Register(warStompAdal);
     }
   }
 }

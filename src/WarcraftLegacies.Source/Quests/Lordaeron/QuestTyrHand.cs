@@ -42,7 +42,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
     protected override string RewardFlavour => "The city-fortress of Tyr's Hand has decided to join us!";
 
     /// <inheritdoc />
-    protected override string RewardDescription => "Control of all units in Tyr's Hand and Garythos is trainable";
+    protected override string RewardDescription => "Control of all units in Tyr's Hand and Garithos is trainable";
 
     /// <inheritdoc />
     protected override void OnFail(Faction completingFaction) => 

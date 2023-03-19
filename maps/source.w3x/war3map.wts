@@ -109683,7 +109683,7 @@ Train Dragon Rider
 }
 
 STRING 18283
-// Upgrades: Rume (Unholy Strength,Improved Unholy Strength,Advanced Unholy Strength), Hotkey (Hotkey)
+// Abilities: A106 (Curse), Hotkey (Hotkey - Normal)
 {
 Q
 }
@@ -109755,7 +109755,7 @@ Gives a 25% chance that an attack will deal 60 damage to nearby units in a large
 }
 
 STRING 18295
-// Upgrades: Rume (Unholy Strength,Improved Unholy Strength,Advanced Unholy Strength), Hotkey (Hotkey)
+// Abilities: A106 (Curse), Unhotkey (Hotkey - Turn Off)
 {
 Q
 }
@@ -109791,7 +109791,7 @@ Hurl a Dark Hammer towards an enemy unit, damaging them for 75 damage and stunni
 }
 
 STRING 18301
-// Upgrades: Rome (Steel Melee Weapons,Thorium Melee Weapons,Arcanite Melee Weapons), Hotkey (Hotkey)
+// Upgrades: Rume (Unholy Strength,Improved Unholy Strength,Advanced Unholy Strength), Hotkey (Hotkey)
 {
 Q
 }
@@ -110212,7 +110212,7 @@ Train Fateweaver
 }
 
 STRING 18371
-// Upgrades: Rome (Steel Melee Weapons,Thorium Melee Weapons,Arcanite Melee Weapons), Hotkey (Hotkey)
+// Upgrades: Rume (Unholy Strength,Improved Unholy Strength,Advanced Unholy Strength), Hotkey (Hotkey)
 {
 Q
 }
@@ -110884,13 +110884,13 @@ Upgrade to Flame Pillar
 }
 
 STRING 18483
-// Upgrades: Rhme (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Hotkey (Hotkey)
+// Upgrades: Rome (Steel Melee Weapons,Thorium Melee Weapons,Arcanite Melee Weapons), Hotkey (Hotkey)
 {
 Q
 }
 
 STRING 18484
-// Upgrades: Rhme (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Hotkey (Hotkey)
+// Upgrades: Rome (Steel Melee Weapons,Thorium Melee Weapons,Arcanite Melee Weapons), Hotkey (Hotkey)
 {
 Q
 }
@@ -111178,7 +111178,7 @@ W
 }
 
 STRING 18532
-// Upgrades: Rora (Steel Ranged Weapons,Thorium Ranged Weapons,Arcanite Ranged Weapons), Hotkey (Hotkey)
+// Abilities: A104 (Shockwave), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -111274,7 +111274,7 @@ E
 }
 
 STRING 18548
-// Upgrades: Rhra (Black Gunpowder,Refined Gunpowder,Imbued Gunpowder), Hotkey (Hotkey)
+// Upgrades: Rora (Steel Ranged Weapons,Thorium Ranged Weapons,Arcanite Ranged Weapons), Hotkey (Hotkey)
 {
 W
 }
@@ -111328,7 +111328,7 @@ E
 }
 
 STRING 18557
-// Upgrades: Rhac (Improved Masonry,Advanced Masonry,Imbued Masonry), Hotkey (Hotkey)
+// Upgrades: Rhra (Black Gunpowder,Refined Gunpowder,Imbued Gunpowder), Hotkey (Hotkey)
 {
 W
 }
@@ -111388,7 +111388,7 @@ Gilneas Cathedral
 }
 
 STRING 18567
-// Upgrades: R01B (Defend), Hotkey (Hotkey)
+// Upgrades: Rhac (Improved Masonry,Advanced Masonry,Imbued Masonry), Hotkey (Hotkey)
 {
 W
 }
@@ -111791,7 +111791,7 @@ Learn Herald of Destruction
 }
 
 STRING 18634
-// Upgrades: Resw (Strength of the Wild,Improved Strength of the Wild,Advanced Strength of the Wil), Hotkey (Hotkey)
+// Upgrades: Rhme (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Hotkey (Hotkey)
 {
 Q
 }
@@ -111815,7 +111815,7 @@ Herald of Destruction - [|cffffcc00Level 3|r]
 }
 
 STRING 18638
-// Upgrades: Resw (Strength of the Wild,Improved Strength of the Wild,Advanced Strength of the Wil), Hotkey (Hotkey)
+// Upgrades: Rhme (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Hotkey (Hotkey)
 {
 Q
 }
@@ -113201,7 +113201,7 @@ STRING 18868
 }
 
 STRING 18869
-// Upgrades: Resm (Strength of the Moon,Improved Strength of the Moon,Advanced Strength of the Moo), Hotkey (Hotkey)
+// Upgrades: Resw (Strength of the Wild,Improved Strength of the Wild,Advanced Strength of the Wil), Hotkey (Hotkey)
 {
 Q
 }
@@ -114101,7 +114101,7 @@ Emphasis during training is placed on defensive capabilities, granting the follo
 }
 
 STRING 19019
-// Upgrades: Resm (Strength of the Moon,Improved Strength of the Moon,Advanced Strength of the Moo), Hotkey (Hotkey)
+// Upgrades: Resw (Strength of the Wild,Improved Strength of the Wild,Advanced Strength of the Wil), Hotkey (Hotkey)
 {
 Q
 }
@@ -115079,7 +115079,7 @@ Medium dragon of the Dragonmaw Clan.|n|r|n|cffffcc00Attacks land and air units.|
 }
 
 STRING 19182
-// Upgrades: R07I (Necromancer Adept Training,Necromancer Master Training), Hotkey (Hotkey)
+// Upgrades: R01B (Defend), Hotkey (Hotkey)
 {
 W
 }
@@ -115384,6 +115384,12 @@ STRING 19232
 Betrayer's Reservoir
 }
 
+STRING 19233
+// Abilities: A103 (Holy Shockwave), Ubertip (Tooltip - Normal - Extended)
+{
+When this unit attacks, it has a 100% chance to fire a shockwave dealing 50 damage to units in front of them.
+}
+
 STRING 19234
 // Units: nnsu (Coilfang Summoner), Tip (Tooltip - Basic)
 {
@@ -115672,10 +115678,22 @@ STRING 19281
 Train Annihilan Guard
 }
 
+STRING 19283
+// Abilities: A104 (Shockwave), EditorSuffix (Editor Suffix)
+{
+(Warframe dummy)
+}
+
 STRING 19284
 // Units: o061 (Cliffrunner), Tip (Tooltip - Basic)
 {
 Train Cliffrunner
+}
+
+STRING 19285
+// Abilities: A104 (Shockwave), Name (Name)
+{
+Shockwave
 }
 
 STRING 19286
@@ -116028,7 +116046,7 @@ R
 }
 
 STRING 19344
-// Upgrades: R020 (Defend), Hotkey (Hotkey)
+// Upgrades: Resm (Strength of the Moon,Improved Strength of the Moon,Advanced Strength of the Moo), Hotkey (Hotkey)
 {
 Q
 }
@@ -116040,7 +116058,7 @@ Blasts enemy units with a wave of plague that deals 50 damage to the target, and
 }
 
 STRING 19346
-// Upgrades: R014 (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
+// Upgrades: Resm (Strength of the Moon,Improved Strength of the Moon,Advanced Strength of the Moo), Hotkey (Hotkey)
 {
 Q
 }
@@ -116076,19 +116094,19 @@ This tower fires up to 9 additional projectiles that deal 10 damage each to near
 }
 
 STRING 19352
-// Upgrades: R078 (Spirit Walker Adept Training,Spirit Walker Master Training), EditorSuffix (Editor Suffix)
+// Abilities: A106 (Curse), EditorSuffix (Editor Suffix)
 {
 (Draenei)
 }
 
 STRING 19353
-// Upgrades: R00X (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: R020 (Defend), Hotkey (Hotkey)
 {
 Q
 }
 
 STRING 19354
-// Upgrades: R07C (Spirit Walker Adept Training,Spirit Walker Master Training), EditorSuffix (Editor Suffix)
+// Upgrades: R078 (Spirit Walker Adept Training,Spirit Walker Master Training), EditorSuffix (Editor Suffix)
 {
 (Draenei)
 }
@@ -116334,9 +116352,9 @@ STRING 19394
 }
 
 STRING 19395
-// Abilities: A103 (Holy Shockwave), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A104 (Shockwave), Tip (Tooltip - Normal)
 {
-When this unit attacks, it has a 15% chance to fire a shockwave dealing 60 damage to units in front of them.
+Shockwave - [|cffffcc00Level 1|r]
 }
 
 STRING 19396
@@ -116742,9 +116760,39 @@ W
 }
 
 STRING 19463
-// Upgrades: R080 (Iron Plating,Steel Plating,Mithril Plating), EditorSuffix (Editor Suffix)
+// Upgrades: R07C (Spirit Walker Adept Training,Spirit Walker Master Training), EditorSuffix (Editor Suffix)
 {
 (Draenei)
+}
+
+STRING 19464
+// Abilities: A104 (Shockwave), Tip (Tooltip - Normal)
+{
+Shockwave - [|cffffcc00Level 2|r]
+}
+
+STRING 19465
+// Abilities: A104 (Shockwave), Ubertip (Tooltip - Normal - Extended)
+{
+Sends a gigantic wave which deals <A01T,DataA1> damage to each enemy land unit in a line, up to <A01T,DataB1> max damage.
+}
+
+STRING 19466
+// Abilities: A104 (Shockwave), Ubertip (Tooltip - Normal - Extended)
+{
+Sends a gigantic wave which deals <A01T,DataA2> damage to each enemy land unit in a line, up to <A01T,DataB2> max damage.
+}
+
+STRING 19467
+// Upgrades: R07I (Necromancer Adept Training,Necromancer Master Training), Hotkey (Hotkey)
+{
+W
+}
+
+STRING 19468
+// Abilities: A105 (Blinding Starlight), EditorSuffix (Editor Suffix)
+{
+(Adal)
 }
 
 STRING 19469
@@ -116769,6 +116817,18 @@ STRING 19472
 // Abilities: A072 (Acid Bomb), Researchubertip (Tooltip - Learn - Extended)
 {
 Hurls a flask of plague at a target.  The flask breaks upon impact, splashing a powerful plague on nearby hostile units.|nDecreases armor; deals high damage over time to the primary target; deals slightly less damage over time to nearby targets.|nLasts 15 seconds.|n|n|cffffcc00Level 1|r - 15 max damage per second, reduces armor by 3 .|n|cffffcc00Level 2|r - 20 max damage per second, reduces armor by 4.|n|cffffcc00Level 3|r - 25 max damage per second, reduces armor by 5. |n|cffffcc00Level 4|r - 30 max damage per second, reduces armor by 6.
+}
+
+STRING 19473
+// Abilities: A105 (Blinding Starlight), Name (Name)
+{
+Blinding Starlight
+}
+
+STRING 19474
+// Abilities: A105 (Blinding Starlight), Researchtip (Tooltip - Learn)
+{
+Learn Blinding Starlight - [|cffffcc00Level %d|r]
 }
 
 STRING 19475
@@ -116819,16 +116879,40 @@ STRING 19482
 Opens a two-way portal to Nagrand at the target location within a range of <A00D,Rng1>. The portal becomes useable after 5 seconds, and closes 10 seconds after the caster stops channeling.
 }
 
+STRING 19483
+// Abilities: A105 (Blinding Starlight), Researchubertip (Tooltip - Learn - Extended)
+{
+Unleash a burst of light, blinding all enemy units within a radius of 1000. |n|n|cffffcc00Level 1|r - 6 second blind. |n|cffffcc00Level 2|r - 9 second blind. |n|cffffcc00Level 3|r - 12 second blind. |n|cffffcc00Level 4|r - 15 second blind.
+}
+
 STRING 19484
 // Units: n0AW (Incubation Pool), Tip (Tooltip - Basic)
 {
 Build Incubation Pool
 }
 
+STRING 19485
+// Abilities: A105 (Blinding Starlight), Tip (Tooltip - Normal)
+{
+Blinding Starlight- [|cffffcc00Level 1|r]
+}
+
 STRING 19486
 // Items: I017 (Portal to Nagrand), Description (Description)
 {
 Transports troops to Nagrand.
+}
+
+STRING 19487
+// Abilities: A105 (Blinding Starlight), Tip (Tooltip - Normal)
+{
+Blinding Starlight- [|cffffcc00Level 2|r]
+}
+
+STRING 19488
+// Abilities: A105 (Blinding Starlight), Tip (Tooltip - Normal)
+{
+Blinding Starlight- [|cffffcc00Level 3|r]
 }
 
 STRING 19489
@@ -116855,6 +116939,12 @@ STRING 19492
 Build Steamvault
 }
 
+STRING 19493
+// Abilities: A105 (Blinding Starlight), Ubertip (Tooltip - Normal - Extended)
+{
+Unleash a burst of light, blinding all enemy units within a radius of 1000  for 6 seconds.
+}
+
 STRING 19494
 // Abilities: A0AU (Frost Armor), EditorSuffix (Editor Suffix)
 {
@@ -116871,6 +116961,12 @@ STRING 19496
 // Upgrades: R03X (Magic Sentry), Tip (Tooltip)
 {
 Research Conjurers
+}
+
+STRING 19497
+// Abilities: A105 (Blinding Starlight), Ubertip (Tooltip - Normal - Extended)
+{
+Unleash a burst of light, blinding all enemy units within a radius of 1000  for 9 seconds.
 }
 
 STRING 19498
@@ -116897,6 +116993,12 @@ STRING 19501
 Train Ashtongue Mystic
 }
 
+STRING 19502
+// Abilities: A105 (Blinding Starlight), Ubertip (Tooltip - Normal - Extended)
+{
+Unleash a burst of light, blinding all enemy units within a radius of 1000  for 12 seconds.
+}
+
 STRING 19503
 // Units: ndrs (Ashtongue Mystic), Name (Name)
 {
@@ -116915,10 +117017,28 @@ STRING 19505
 Ashtongue Deathsworn
 }
 
+STRING 19506
+// Abilities: A105 (Blinding Starlight), Tip (Tooltip - Normal)
+{
+Blinding Starlight- [|cffffcc00Level 4|r]
+}
+
 STRING 19507
 // Units: h054 (Stormwind Knight), EditorSuffix (Name - Editor Suffix)
 {
  (Stormwind)
+}
+
+STRING 19508
+// Abilities: A105 (Blinding Starlight), Ubertip (Tooltip - Normal - Extended)
+{
+Unleash a burst of light, blinding all enemy units within a radius of 1000  for 15 seconds.
+}
+
+STRING 19509
+// Abilities: A106 (Curse), Ubertip (Tooltip - Normal - Extended)
+{
+Curses a target enemy unit, causing it to have a <Acrs,DataA2,%>% chance to miss on an attack. |nLasts <Acrs,Dur2> seconds.
 }
 
 STRING 19510
@@ -116937,6 +117057,12 @@ STRING 19512
 // Units: h01B (Outrider), EditorSuffix (Name - Editor Suffix)
 {
  (Stormwind)
+}
+
+STRING 19513
+// Buffs/Effects: B06V (), Buffubertip (Tooltip - Extended)
+{
+This unit is Blinded; it misses when it attacks.
 }
 
 STRING 19514
@@ -117017,6 +117143,12 @@ STRING 19526
 Build Ashtongue Lair
 }
 
+STRING 19527
+// Buffs/Effects: B06V (), Bufftip (Tooltip)
+{
+Blind
+}
+
 STRING 19528
 // Units: h09L (Crimson Cathedral), EditorSuffix (Name - Editor Suffix)
 {
@@ -117033,6 +117165,12 @@ STRING 19530
 // Destructibles: B00D (Wyrmrest), Name (Name)
 {
 Wyrmrest
+}
+
+STRING 19531
+// Upgrades: R014 (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
+{
+Q
 }
 
 STRING 19532
@@ -117053,6 +117191,12 @@ STRING 19534
 Control Point Defender
 }
 
+STRING 19535
+// Upgrades: R00X (Magic Sentry), Hotkey (Hotkey)
+{
+Q
+}
+
 STRING 19536
 // Units: h03F (Control Point Defender), Name (Name)
 {
@@ -117063,6 +117207,12 @@ STRING 19537
 // Units: h03F (Control Point Defender), Tip (Tooltip - Basic)
 {
 Build Hunter Tower
+}
+
+STRING 19538
+// Upgrades: R080 (Iron Plating,Steel Plating,Mithril Plating), EditorSuffix (Editor Suffix)
+{
+(Draenei)
 }
 
 STRING 19540
