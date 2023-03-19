@@ -41,7 +41,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
           artifactSetup.BookOfMedivh, faction == LegionSetup.Legion, faction == DalaranSetup.Dalaran));
         faction.AddQuest(new QuestSkullOfGuldan(allLegendSetup.Dalaran.Dalaran,
           preplacedUnitSystem.GetUnit(Constants.UNIT_N0DK_SKULL_OF_GUL_DAN_PEDESTAL),
-          faction == LegionSetup.Legion || faction == IllidanSetup.Illidan, artifactSetup.SkullOfGuldan));
+          faction == IllidanSetup.Illidan, artifactSetup.SkullOfGuldan));
         faction.AddQuest(ragnarosQuest);
       }
 

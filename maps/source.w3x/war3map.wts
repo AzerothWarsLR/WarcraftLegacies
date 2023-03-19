@@ -16694,7 +16694,7 @@ E
 }
 
 STRING 2784
-// Abilities: A0NX (A Close), EditorSuffix (Editor Suffix)
+// Units: o06K (Siege Tower), EditorSuffix (Name - Editor Suffix)
 {
 (Stormwind)
 }
@@ -16790,7 +16790,7 @@ Boat construction facility.|n|cfff5962dTrains:|R Transport, Scout, Frigate, Fire
 }
 
 STRING 2800
-// Units: h03Z (Saboteur), Hotkey (Hotkey)
+// Units: h037 (Engineer), Hotkey (Hotkey)
 {
 Q
 }
@@ -17120,7 +17120,7 @@ STRING 2854
 }
 
 STRING 2855
-// Units: h037 (Engineer), Hotkey (Hotkey)
+// Units: h033 (Steading), Hotkey (Hotkey)
 {
 Q
 }
@@ -17198,7 +17198,7 @@ Build Archive
 }
 
 STRING 2868
-// Abilities: A0NC (Reveal), EditorSuffix (Editor Suffix)
+// Abilities: A0NX (A Close), EditorSuffix (Editor Suffix)
 {
 (Stormwind)
 }
@@ -17397,7 +17397,7 @@ Shipyard
 }
 
 STRING 2901
-// Units: h033 (Steading), Hotkey (Hotkey)
+// Units: h032 (Battlemage), Hotkey (Hotkey)
 {
 Q
 }
@@ -17505,7 +17505,7 @@ Dalaran (50gold/min)
 }
 
 STRING 2919
-// Units: h032 (Battlemage), Hotkey (Hotkey)
+// Units: h02Q (Pegasus Knight), Hotkey (Hotkey)
 {
 Q
 }
@@ -17523,7 +17523,7 @@ W
 }
 
 STRING 2922
-// Units: h02Q (Pegasus Knight), Hotkey (Hotkey)
+// Units: h02O (Bladesman), Hotkey (Hotkey)
 {
 Q
 }
@@ -17757,7 +17757,7 @@ Shadow Infusion
 }
 
 STRING 2961
-// Units: h02O (Bladesman), Hotkey (Hotkey)
+// Units: h02A (Mountaineer), Hotkey (Hotkey)
 {
 Q
 }
@@ -17993,7 +17993,7 @@ STRING 2999
 }
 
 STRING 3000
-// Units: h02A (Mountaineer), Hotkey (Hotkey)
+// Units: h029 (Veteran Footman), Hotkey (Hotkey)
 {
 Q
 }
@@ -18167,7 +18167,7 @@ STRING 3028
 }
 
 STRING 3029
-// Units: h029 (Veteran Footman), Hotkey (Hotkey)
+// Units: h022 (Farmer), Hotkey (Hotkey)
 {
 Q
 }
@@ -18373,7 +18373,7 @@ Loyal phoenix of the Sunstrider Dynasty.|n|cfff5962dAbilities:|R Sun Ray, Spell 
 }
 
 STRING 3063
-// Abilities: A0GD (Summon Garrison), EditorSuffix (Editor Suffix)
+// Abilities: A0NC (Reveal), EditorSuffix (Editor Suffix)
 {
 (Stormwind)
 }
@@ -18445,7 +18445,7 @@ C
 }
 
 STRING 3075
-// Upgrades: R022 (Chaos), EditorSuffix (Editor Suffix)
+// Abilities: A0GD (Summon Garrison), EditorSuffix (Editor Suffix)
 {
 (Stormwind)
 }
@@ -18523,7 +18523,7 @@ Grasping Vines
 }
 
 STRING 3088
-// Units: h022 (Farmer), Hotkey (Hotkey)
+// Units: h01R (Town Hall), Hotkey (Hotkey)
 {
 Q
 }
@@ -18583,7 +18583,7 @@ STRING 3097
 }
 
 STRING 3098
-// Units: h01R (Town Hall), Hotkey (Hotkey)
+// Units: h01Q (Immortal Guardian), Hotkey (Hotkey)
 {
 Q
 }
@@ -18613,7 +18613,7 @@ Imperial Quarters
 }
 
 STRING 3103
-// Units: h01Q (Immortal Guardian), Hotkey (Hotkey)
+// Units: h01E (Deckhand), Hotkey (Hotkey)
 {
 Q
 }
@@ -18622,18 +18622,6 @@ STRING 3104
 // Units: e010 (Ancient of Creation), Hotkey (Hotkey)
 {
 E
-}
-
-STRING 3105
-// Units: h03Z (Saboteur), Name (Name)
-{
-Saboteur
-}
-
-STRING 3106
-// Units: h03Z (Saboteur), Tip (Tooltip - Basic)
-{
-Train Saboteur
 }
 
 STRING 3107
@@ -18967,7 +18955,7 @@ STRING 3161
 }
 
 STRING 3162
-// Units: h01E (Deckhand), Hotkey (Hotkey)
+// Units: h019 (Mason), Hotkey (Hotkey)
 {
 Q
 }
@@ -18991,7 +18979,7 @@ Summon Minion
 }
 
 STRING 3166
-// Upgrades: R01M (Chaos), EditorSuffix (Editor Suffix)
+// Upgrades: R022 (Chaos), EditorSuffix (Editor Suffix)
 {
 (Stormwind)
 }
@@ -19272,7 +19260,7 @@ STRING 3212
 }
 
 STRING 3213
-// Units: h019 (Mason), Hotkey (Hotkey)
+// Units: h018 (Defender), Hotkey (Hotkey)
 {
 Q
 }
@@ -19380,7 +19368,7 @@ STRING 3230
 }
 
 STRING 3231
-// Units: h018 (Defender), Hotkey (Hotkey)
+// Units: h00J (Clergyman), Hotkey (Hotkey)
 {
 Q
 }
@@ -19410,7 +19398,7 @@ STRING 3235
 }
 
 STRING 3236
-// Units: h00J (Clergyman), Hotkey (Hotkey)
+// Units: O01P (Leader of the Twilight's Hammer), Hotkey (Hotkey)
 {
 Q
 }
@@ -19638,7 +19626,7 @@ STRING 3273
 }
 
 STRING 3274
-// Units: O01P (Leader of the Twilight's Hammer), Hotkey (Hotkey)
+// Units: O01J (The Dark Prophet), Hotkey (Hotkey)
 {
 Q
 }
@@ -19686,7 +19674,7 @@ STRING 3281
 }
 
 STRING 3282
-// Upgrades: R016 (Chaos), EditorSuffix (Editor Suffix)
+// Upgrades: R01M (Chaos), EditorSuffix (Editor Suffix)
 {
 (Stormwind)
 }
@@ -19986,7 +19974,7 @@ STRING 3331
 }
 
 STRING 3332
-// Units: O01J (The Dark Prophet), Hotkey (Hotkey)
+// Units: O00Y (Dragonmaw Chieftain), Hotkey (Hotkey)
 {
 Q
 }
@@ -20016,7 +20004,7 @@ STRING 3336
 }
 
 STRING 3337
-// Units: O00Y (Dragonmaw Chieftain), Hotkey (Hotkey)
+// Units: N03D (Warchief of the Fel Horde), Hotkey (Hotkey)
 {
 Q
 }
@@ -20130,7 +20118,7 @@ STRING 3355
 }
 
 STRING 3356
-// Units: N03D (Warchief of the Fel Horde), Hotkey (Hotkey)
+// Units: H017 (Highlord of the Alliance), Hotkey (Hotkey)
 {
 Q
 }
@@ -20142,7 +20130,7 @@ A
 }
 
 STRING 3358
-// Units: H017 (Highlord of the Alliance), Hotkey (Hotkey)
+// Units: E005 (The Prophet), Hotkey (Hotkey)
 {
 Q
 }
@@ -20328,7 +20316,7 @@ STRING 3388
 }
 
 STRING 3389
-// Units: E005 (The Prophet), Hotkey (Hotkey)
+// Units: E002 (General of the Sentinel Army), Hotkey (Hotkey)
 {
 Q
 }
@@ -20412,7 +20400,7 @@ STRING 3402
 }
 
 STRING 3403
-// Units: E002 (General of the Sentinel Army), Hotkey (Hotkey)
+// Units: o02M (Warsong Grunt), Hotkey (Hotkey)
 {
 Q
 }
@@ -20622,7 +20610,7 @@ Acwulf,Adalwolf,Audolf,Bledig,Coinin,Ernouf,Fleki,Heoruwulf,Lowe,Maheegan,Vigolf
 }
 
 STRING 3438
-// Units: o02M (Warsong Grunt), Hotkey (Hotkey)
+// Units: h04E (Protector), Hotkey (Hotkey)
 {
 Q
 }
@@ -20700,7 +20688,7 @@ Highly skilled hunter of Tirisfal.|n|cfff5962dCan learn:|R Ensnare, Rapid Fire|n
 }
 
 STRING 3451
-// Units: h04E (Protector), Hotkey (Hotkey)
+// Units: n06L (Armored Wolf), Hotkey (Hotkey)
 {
 Q
 }
@@ -20748,7 +20736,7 @@ STRING 3458
 }
 
 STRING 3459
-// Units: n06L (Armored Wolf), Hotkey (Hotkey)
+// Units: h05K (Tidesage), Hotkey (Hotkey)
 {
 Q
 }
@@ -20778,7 +20766,7 @@ STRING 3463
 }
 
 STRING 3464
-// Units: h05K (Tidesage), Hotkey (Hotkey)
+// Units: h062 (Town Hall), Hotkey (Hotkey)
 {
 Q
 }
@@ -21096,7 +21084,7 @@ The Dark Prophet
 }
 
 STRING 3517
-// Units: h062 (Town Hall), Hotkey (Hotkey)
+// Units: o039 (Great Hall), Hotkey (Hotkey)
 {
 Q
 }
@@ -21323,7 +21311,7 @@ STRING 3554
 }
 
 STRING 3555
-// Units: o039 (Great Hall), Hotkey (Hotkey)
+// Units: o03L (Great Hall), Hotkey (Hotkey)
 {
 Q
 }
@@ -21629,7 +21617,7 @@ STRING 3605
 }
 
 STRING 3606
-// Units: o03L (Great Hall), Hotkey (Hotkey)
+// Units: o03R (Great Hall), Hotkey (Hotkey)
 {
 Q
 }
@@ -21659,7 +21647,7 @@ Thunder Fists - [|cffffcc00Level 2|r]
 }
 
 STRING 3611
-// Units: o03R (Great Hall), Hotkey (Hotkey)
+// Units: h089 (Dark Mansion), Hotkey (Hotkey)
 {
 Q
 }
@@ -22433,13 +22421,13 @@ STRING 3739
 }
 
 STRING 3740
-// Units: h089 (Dark Mansion), Hotkey (Hotkey)
+// Units: o04A (Gatherer), Hotkey (Hotkey)
 {
 Q
 }
 
 STRING 3741
-// Units: o04A (Gatherer), Hotkey (Hotkey)
+// Units: o02I (Builder), Hotkey (Hotkey)
 {
 Q
 }
@@ -22805,7 +22793,7 @@ Execute
 }
 
 STRING 3802
-// Units: o02I (Builder), Hotkey (Hotkey)
+// Units: o04B (Cultist), Hotkey (Hotkey)
 {
 Q
 }
@@ -23477,7 +23465,7 @@ Cannon Port
 }
 
 STRING 3914
-// Units: o04B (Cultist), Hotkey (Hotkey)
+// Units: u01K (Acolyte), Hotkey (Hotkey)
 {
 Q
 }
@@ -24689,7 +24677,7 @@ Seismic Shard - [|cffffcc00Level 2|r]
 }
 
 STRING 4116
-// Units: u01K (Acolyte), Hotkey (Hotkey)
+// Units: H08G (Scarlet Crusader Lord), Hotkey (Hotkey)
 {
 Q
 }
@@ -24827,7 +24815,7 @@ Z
 }
 
 STRING 4139
-// Units: H08G (Scarlet Crusader Lord), Hotkey (Hotkey)
+// Units: h08I (Crusader), Hotkey (Hotkey)
 {
 Q
 }
@@ -24839,7 +24827,7 @@ STRING 4140
 }
 
 STRING 4141
-// Units: h08I (Crusader), Hotkey (Hotkey)
+// Units: h021 (Watcher), Hotkey (Hotkey)
 {
 Q
 }
@@ -24929,7 +24917,7 @@ Conjures a Field of Blood which Heals allied ground units in a target area over 
 }
 
 STRING 4156
-// Units: h021 (Watcher), Hotkey (Hotkey)
+// Units: h05D (Raptor Rider), Hotkey (Hotkey)
 {
 Q
 }
@@ -25361,7 +25349,7 @@ STRING 4227
 }
 
 STRING 4228
-// Units: h05D (Raptor Rider), Hotkey (Hotkey)
+// Units: o04G (Haruspex), Hotkey (Hotkey)
 {
 Q
 }
@@ -25577,7 +25565,7 @@ W
 }
 
 STRING 4264
-// Units: o04G (Haruspex), Hotkey (Hotkey)
+// Units: h08O (Rotguard), Hotkey (Hotkey)
 {
 Q
 }
@@ -25595,7 +25583,7 @@ W
 }
 
 STRING 4267
-// Units: h08O (Rotguard), Hotkey (Hotkey)
+// Units: u01R (Apothecary), Hotkey (Hotkey)
 {
 Q
 }
@@ -25613,13 +25601,13 @@ F
 }
 
 STRING 4270
-// Units: u01R (Apothecary), Hotkey (Hotkey)
+// Units: o01H (Twilight Hammer Enforcer), Hotkey (Hotkey)
 {
 Q
 }
 
 STRING 4271
-// Units: o01H (Twilight Hammer Enforcer), Hotkey (Hotkey)
+// Units: u01T (Herald), Hotkey (Hotkey)
 {
 Q
 }
@@ -26018,12 +26006,6 @@ STRING 4337
 // Units: u017 (Undertaker's Vault), Hotkey (Hotkey)
 {
 C
-}
-
-STRING 4338
-// Items: I018 (Vial of the Sunwell), Ubertip (Tooltip - Extended)
-{
-|cffff8c00Artifact|r|nIncreases Intelligence by <A0F6,DataB1>. Can be activated to fully restore the drinker's hit points and mana.|n|cffffcc00Lore|r|n|cffffdeadThe Sunwell was originally created from a stolen vial of water from the Well of Eternity, and has since grown into an immeasurably deep font of power. Even this small vial holds enough power to keep its imbiber alive indefinitely.
 }
 
 STRING 4339
@@ -27480,7 +27462,7 @@ Wooden Bridge Custom
 }
 
 STRING 4581
-// Units: u01T (Herald), Hotkey (Hotkey)
+// Units: n083 (Twilight Dragonspawn), Hotkey (Hotkey)
 {
 Q
 }
@@ -28416,7 +28398,7 @@ STRING 4736
 }
 
 STRING 4737
-// Units: n083 (Twilight Dragonspawn), Hotkey (Hotkey)
+// Units: h08S (Undercity), Hotkey (Hotkey)
 {
 Q
 }
@@ -28500,7 +28482,7 @@ STRING 4750
 }
 
 STRING 4751
-// Units: h08S (Undercity), Hotkey (Hotkey)
+// Units: e013 (Naxxramas), Hotkey (Hotkey)
 {
 Q
 }
@@ -28590,7 +28572,7 @@ UNUSED
 }
 
 STRING 4766
-// Units: e013 (Naxxramas), Hotkey (Hotkey)
+// Units: o04L (Peon), Hotkey (Hotkey)
 {
 Q
 }
@@ -28620,7 +28602,7 @@ STRING 4770
 }
 
 STRING 4771
-// Units: o04L (Peon), Hotkey (Hotkey)
+// Units: u020 (Monument), Hotkey (Hotkey)
 {
 Q
 }
@@ -28638,13 +28620,13 @@ STRING 4773
 }
 
 STRING 4774
-// Units: u020 (Monument), Hotkey (Hotkey)
+// Units: h08V (Glaive Maiden), Hotkey (Hotkey)
 {
 Q
 }
 
 STRING 4775
-// Units: h08V (Glaive Maiden), Hotkey (Hotkey)
+// Units: n099 (Ogre Mercenary), Hotkey (Hotkey)
 {
 Q
 }
@@ -28752,7 +28734,7 @@ STRING 4792
 }
 
 STRING 4793
-// Units: n099 (Ogre Mercenary), Hotkey (Hotkey)
+// Units: o04P (Wizard), Hotkey (Hotkey)
 {
 Q
 }
@@ -28770,7 +28752,7 @@ Causes a powerful explosion that deals 750 damage to a target air unit, and 200 
 }
 
 STRING 4796
-// Units: o04P (Wizard), Hotkey (Hotkey)
+// Units: o04R (Oil Rig), Hotkey (Hotkey)
 {
 Q
 }
@@ -28788,7 +28770,7 @@ STRING 4798
 }
 
 STRING 4799
-// Units: o04R (Oil Rig), Hotkey (Hotkey)
+// Units: n09A (Ember Cleric), Hotkey (Hotkey)
 {
 Q
 }
@@ -28872,13 +28854,13 @@ STRING 4812
 }
 
 STRING 4813
-// Units: n09A (Ember Cleric), Hotkey (Hotkey)
+// Units: e017 (Scorpion), Hotkey (Hotkey)
 {
 Q
 }
 
 STRING 4814
-// Units: e017 (Scorpion), Hotkey (Hotkey)
+// Units: o04W (Golden Vessel), Hotkey (Hotkey)
 {
 Q
 }
@@ -28908,7 +28890,7 @@ STRING 4818
 }
 
 STRING 4819
-// Units: o04W (Golden Vessel), Hotkey (Hotkey)
+// Units: n068 (Inquisitor), Hotkey (Hotkey)
 {
 Q
 }
@@ -28938,7 +28920,7 @@ STRING 4823
 }
 
 STRING 4824
-// Units: n068 (Inquisitor), Hotkey (Hotkey)
+// Units: h02G (Vrykul Warrior), Hotkey (Hotkey)
 {
 Q
 }
@@ -28962,7 +28944,7 @@ Slows a target enemy unit's attack speed by <Aslo,DataB2,%>% and movement speed 
 }
 
 STRING 4828
-// Units: h02G (Vrykul Warrior), Hotkey (Hotkey)
+// Units: h099 (Zealot), Hotkey (Hotkey)
 {
 Q
 }
@@ -28980,7 +28962,7 @@ STRING 4830
 }
 
 STRING 4831
-// Units: h099 (Zealot), Hotkey (Hotkey)
+// Units: u025 (Elementalist), Hotkey (Hotkey)
 {
 Q
 }
@@ -29094,7 +29076,7 @@ Deals 450 damage to all units and buildings in a 300 radius.|n|n|cffe8e800Destro
 }
 
 STRING 4850
-// Units: u025 (Elementalist), Hotkey (Hotkey)
+// Units: h09C (Whelp), Hotkey (Hotkey)
 {
 Q
 }
@@ -29148,13 +29130,13 @@ STRING 4858
 }
 
 STRING 4859
-// Units: h09C (Whelp), Hotkey (Hotkey)
+// Units: o02N (Silithid Wasp), Hotkey (Hotkey)
 {
 Q
 }
 
 STRING 4860
-// Units: o02N (Silithid Wasp), Hotkey (Hotkey)
+// Units: n0AR (Twisting Halls), Hotkey (Hotkey)
 {
 Q
 }
@@ -29328,13 +29310,13 @@ STRING 4888
 }
 
 STRING 4889
-// Units: n0AR (Twisting Halls), Hotkey (Hotkey)
+// Units: o01G (Faceless Marauder), Hotkey (Hotkey)
 {
 Q
 }
 
 STRING 4890
-// Units: o01G (Faceless Marauder), Hotkey (Hotkey)
+// Units: o04Y (Fateweaver), Hotkey (Hotkey)
 {
 Q
 }
@@ -29382,7 +29364,7 @@ STRING 4897
 }
 
 STRING 4898
-// Units: o04Y (Fateweaver), Hotkey (Hotkey)
+// Units: o04Z (Flying Horror), Hotkey (Hotkey)
 {
 Q
 }
@@ -29394,7 +29376,7 @@ Essence of Blight (|cffffcc00Q|r)
 }
 
 STRING 4900
-// Units: o04Z (Flying Horror), Hotkey (Hotkey)
+// Units: n0B5 (Scavenger), Hotkey (Hotkey)
 {
 Q
 }
@@ -29418,7 +29400,7 @@ STRING 4903
 }
 
 STRING 4904
-// Units: n0B5 (Scavenger), Hotkey (Hotkey)
+// Units: E01D (N'raqi Arcanist), Hotkey (Hotkey)
 {
 Q
 }
@@ -29556,7 +29538,7 @@ STRING 4926
 }
 
 STRING 4927
-// Units: E01D (N'raqi Arcanist), Hotkey (Hotkey)
+// Units: u02G (Elite Abominations), Hotkey (Hotkey)
 {
 Q
 }
@@ -29586,13 +29568,13 @@ Raises <Arai,DataA2> skeletons from a corpse for <Arai,Dur2> seconds.
 }
 
 STRING 4932
-// Units: u02G (Elite Abominations), Hotkey (Hotkey)
+// Units: o02P (Crystal Hall), Hotkey (Hotkey)
 {
 Q
 }
 
 STRING 4933
-// Units: o02P (Crystal Hall), Hotkey (Hotkey)
+// Units: o05A (Gemcrafter), Hotkey (Hotkey)
 {
 Q
 }
@@ -29640,7 +29622,7 @@ STRING 4940
 }
 
 STRING 4941
-// Units: o05A (Gemcrafter), Hotkey (Hotkey)
+// Units: E01I (Ageless One), Hotkey (Hotkey)
 {
 Q
 }
@@ -29658,7 +29640,7 @@ Causes this unit to shift out of existence whenever it takes damage, temporarily
 }
 
 STRING 4944
-// Units: E01I (Ageless One), Hotkey (Hotkey)
+// Units: o05B (Defender), Hotkey (Hotkey)
 {
 Q
 }
@@ -29670,7 +29652,7 @@ STRING 4945
 }
 
 STRING 4946
-// Units: o05B (Defender), Hotkey (Hotkey)
+// Units: o05C (Luminarch), Hotkey (Hotkey)
 {
 Q
 }
@@ -29748,7 +29730,7 @@ STRING 4958
 }
 
 STRING 4959
-// Units: o05C (Luminarch), Hotkey (Hotkey)
+// Units: o05H (Plague Flyer), Hotkey (Hotkey)
 {
 Q
 }
@@ -29772,7 +29754,7 @@ STRING 4962
 }
 
 STRING 4963
-// Units: o05H (Plague Flyer), Hotkey (Hotkey)
+// Units: o05K (Pillager), Hotkey (Hotkey)
 {
 Q
 }
@@ -29784,7 +29766,7 @@ Heal (|cffffcc00Q|r)
 }
 
 STRING 4965
-// Units: o05K (Pillager), Hotkey (Hotkey)
+// Units: o05M (Dragon Rider), Hotkey (Hotkey)
 {
 Q
 }
@@ -29796,13 +29778,13 @@ E
 }
 
 STRING 4967
-// Units: o05M (Dragon Rider), Hotkey (Hotkey)
+// Units: U02I (Master of the Royal Apothecary Society), Hotkey (Hotkey)
 {
 Q
 }
 
 STRING 4968
-// Units: U02I (Master of the Royal Apothecary Society), Hotkey (Hotkey)
+// Units: n0C2 (Pillar of Waves), Hotkey (Hotkey)
 {
 Q
 }
@@ -29820,7 +29802,7 @@ STRING 4970
 }
 
 STRING 4971
-// Units: n0C2 (Pillar of Waves), Hotkey (Hotkey)
+// Units: H0A5 (Sea Witch), Hotkey (Hotkey)
 {
 Q
 }
@@ -29832,7 +29814,7 @@ Abolish Magic (|cffffcc00Q|r)
 }
 
 STRING 4973
-// Units: H0A5 (Sea Witch), Hotkey (Hotkey)
+// Units: n0CA (Naga Incursor), Hotkey (Hotkey)
 {
 Q
 }
@@ -29874,7 +29856,7 @@ STRING 4979
 }
 
 STRING 4980
-// Units: n0CA (Naga Incursor), Hotkey (Hotkey)
+// Units: n0CB (Deepseer), Hotkey (Hotkey)
 {
 Q
 }
@@ -29904,13 +29886,13 @@ STRING 4984
 }
 
 STRING 4985
-// Units: n0CB (Deepseer), Hotkey (Hotkey)
+// Units: n0CC (Shadowforge Titan), Hotkey (Hotkey)
 {
 Q
 }
 
 STRING 4986
-// Units: n0CC (Shadowforge Titan), Hotkey (Hotkey)
+// Units: n0CG (Core Hound), Hotkey (Hotkey)
 {
 Q
 }
@@ -30000,7 +29982,7 @@ STRING 5000
 }
 
 STRING 5001
-// Units: n0CG (Core Hound), Hotkey (Hotkey)
+// Units: h0A6 (Anvilrage Guardsman), Hotkey (Hotkey)
 {
 Q
 }
@@ -30012,7 +29994,7 @@ Get Corpse (|cffffcc00Q|r)
 }
 
 STRING 5003
-// Units: h0A6 (Anvilrage Guardsman), Hotkey (Hotkey)
+// Units: h0AB (Shadowcaster), Hotkey (Hotkey)
 {
 Q
 }
@@ -30036,7 +30018,7 @@ STRING 5006
 }
 
 STRING 5007
-// Units: h0AB (Shadowcaster), Hotkey (Hotkey)
+// Units: o05P (Peon), Hotkey (Hotkey)
 {
 Q
 }
@@ -30054,7 +30036,7 @@ Replenish the life and mana of a target friendly unit. |n|nRestores 0.5 health a
 }
 
 STRING 5010
-// Units: o05P (Peon), Hotkey (Hotkey)
+// Units: O05S (Warlord Maiden), Hotkey (Hotkey)
 {
 Q
 }
@@ -30096,7 +30078,7 @@ Forms a shield of electricity around a target unit, dealing 30 damage per second
 }
 
 STRING 5017
-// Units: O05S (Warlord Maiden), Hotkey (Hotkey)
+// Units: o05V (Gnoll Brawler), Hotkey (Hotkey)
 {
 Q
 }
@@ -30258,7 +30240,7 @@ Build Portal of the Deep
 }
 
 STRING 5044
-// Units: o05V (Gnoll Brawler), Hotkey (Hotkey)
+// Units: o05W (Axeman), Hotkey (Hotkey)
 {
 Q
 }
@@ -30306,7 +30288,7 @@ Heals a target friendly non-mechanical wounded unit for <Ahea,DataA4> hit points
 }
 
 STRING 5052
-// Units: o05W (Axeman), Hotkey (Hotkey)
+// Units: o061 (Cliffrunner), Hotkey (Hotkey)
 {
 Q
 }
@@ -30354,7 +30336,7 @@ STRING 5059
 }
 
 STRING 5060
-// Units: o061 (Cliffrunner), Hotkey (Hotkey)
+// Units: o063 (Great Hall), Hotkey (Hotkey)
 {
 Q
 }
@@ -30366,7 +30348,7 @@ Frenzy (|cffffcc00Q|r)
 }
 
 STRING 5062
-// Units: o063 (Great Hall), Hotkey (Hotkey)
+// Units: e01P (Coral of Life), Hotkey (Hotkey)
 {
 Q
 }
@@ -30432,7 +30414,7 @@ STRING 5072
 }
 
 STRING 5073
-// Units: e01P (Coral of Life), Hotkey (Hotkey)
+// Units: n0D7 (Deep Forager), Hotkey (Hotkey)
 {
 Q
 }
@@ -30624,7 +30606,7 @@ STRING 5104
 }
 
 STRING 5105
-// Units: n0D7 (Deep Forager), Hotkey (Hotkey)
+// Units: o06G (Oil Rig Constructor), Hotkey (Hotkey)
 {
 Q
 }
@@ -30636,7 +30618,7 @@ Faerie Fire (|cffffcc00Q|r)
 }
 
 STRING 5107
-// Units: o06G (Oil Rig Constructor), Hotkey (Hotkey)
+// Units: n00O (Skeletal Grunt), Hotkey (Hotkey)
 {
 Q
 }
@@ -30648,7 +30630,7 @@ STRING 5108
 }
 
 STRING 5109
-// Units: n00O (Skeletal Grunt), Hotkey (Hotkey)
+// Units: e01X (Exodar Regalis), Hotkey (Hotkey)
 {
 Q
 }
@@ -30660,7 +30642,7 @@ Faerie Fire (|cffffcc00Q|r)
 }
 
 STRING 5111
-// Units: e01X (Exodar Regalis), Hotkey (Hotkey)
+// Units: e01Z (Exodar Regalis), Hotkey (Hotkey)
 {
 Q
 }
@@ -30672,7 +30654,7 @@ E
 }
 
 STRING 5113
-// Units: e01Z (Exodar Regalis), Hotkey (Hotkey)
+// Units: h05W (Trade Lumber for Gold), Hotkey (Hotkey)
 {
 Q
 }
@@ -30732,7 +30714,7 @@ STRING 5122
 }
 
 STRING 5123
-// Units: h05W (Trade Lumber for Gold), Hotkey (Hotkey)
+// Units: n05Q (Pillar of Waves), Hotkey (Hotkey)
 {
 Q
 }
@@ -30750,7 +30732,7 @@ STRING 5125
 }
 
 STRING 5126
-// Units: n05Q (Pillar of Waves), Hotkey (Hotkey)
+// Units: o01I (Outrunner), Hotkey (Hotkey)
 {
 Q
 }
@@ -30780,7 +30762,7 @@ STRING 5130
 }
 
 STRING 5131
-// Units: o01I (Outrunner), Hotkey (Hotkey)
+// Units: E023 (Grand Vizier), Hotkey (Hotkey)
 {
 Q
 }
@@ -30822,7 +30804,7 @@ STRING 5137
 }
 
 STRING 5138
-// Units: E023 (Grand Vizier), Hotkey (Hotkey)
+// Units: n08O (Wrangler), Hotkey (Hotkey)
 {
 Q
 }
@@ -30834,7 +30816,7 @@ Consumes all magical buffs from units in an area. Each unit that is devoured of 
 }
 
 STRING 5140
-// Units: n08O (Wrangler), Hotkey (Hotkey)
+// Units: o05E (Lurking Tempest), Hotkey (Hotkey)
 {
 Q
 }
@@ -30924,7 +30906,7 @@ Field Medkit
 }
 
 STRING 5155
-// Units: o05E (Lurking Tempest), Hotkey (Hotkey)
+// Units: h07Z (Holdfast), Hotkey (Hotkey)
 {
 Q
 }
@@ -30978,7 +30960,7 @@ Deactivate to move at normal speed, but take regular damage from Piercing attack
 }
 
 STRING 5164
-// Units: h07Z (Holdfast), Hotkey (Hotkey)
+// Units: h09I (Firebat), Hotkey (Hotkey)
 {
 Q
 }
@@ -31026,7 +31008,7 @@ Summons 4 Galleys which last 2 minutes.|n|n|cffe8e8004 minute cooldown.|r
 }
 
 STRING 5172
-// Units: h09I (Firebat), Hotkey (Hotkey)
+// Units: n0BM (Lightforged Dragoon), Hotkey (Hotkey)
 {
 Q
 }
@@ -31044,7 +31026,7 @@ Curses a target enemy unit, causing it to have a <Acrs,DataA2,%>% chance to miss
 }
 
 STRING 5175
-// Units: n0BM (Lightforged Dragoon), Hotkey (Hotkey)
+// Units: o06K (Siege Tower), Hotkey (Hotkey)
 {
 Q
 }
@@ -64379,12 +64361,6 @@ STRING 10726
 Emergency Repairs
 }
 
-STRING 10727
-// Units: h06A (Smithy), Ubertip (Tooltip - Extended)
-{
-The industrial heart of Stormwind's war machine.|n|cfff5962dTrains:|R Gunship, Saboteur, Marshal|n|cfff5962dResearches:|R Chainmail Layering
-}
-
 STRING 10728
 // Units: n053 (Val'sharah (15gold/min)), Name (Name)
 {
@@ -85318,12 +85294,6 @@ STRING 14214
 Wild cunning Hero, adept at supporting armies.|n|cfff5962dCan Learn:|R Hamer Time!, Battleshout, Stoneform, Gryphon Sky|n|n|cffffcc00Attacks land and air units.|R
 }
 
-STRING 14215
-// Units: h03Z (Saboteur), Ubertip (Tooltip - Extended)
-{
-A veteran from the Second War adept at sabotage and demolition operations.|n|cfff5962dAbilities:|R Bash, Infiltrate, Incendiary Cocktail|n|n|cff99b4d1Can only train 12.|r|n|cffffcc00Attacks land units.|r
-}
-
 STRING 14216
 // Upgrades: R06I (Defend), Name (Name)
 {
@@ -104266,6 +104236,12 @@ STRING 17380
 Fire the artillery, dealing 1800 damage to enemies in an area of 450. 40000 range. Has a 25 second cast time. Will also damage friendly units.
 }
 
+STRING 17381
+// Units: o06K (Siege Tower), Name (Name)
+{
+Siege Tower
+}
+
 STRING 17382
 // Units: E016 (Ruler of House Waycrest), Ubertip (Tooltip - Extended)
 {
@@ -114718,6 +114694,12 @@ STRING 19122
 The Sea floor has many possibilities, exploit them to start rebuilding the Naga forces.
 }
 
+STRING 19123
+// Units: o06K (Siege Tower), Tip (Tooltip - Basic)
+{
+Train Siege Tower
+}
+
 STRING 19124
 // Abilities: AOwk (Wind Walk), EditorSuffix (Editor Suffix)
 {
@@ -114752,6 +114734,12 @@ STRING 19129
 // Abilities: A03L (Explosive Ammo), Tip (Tooltip - Normal)
 {
 Orb of Annihilation - [|cffffcc00Level 2|r]
+}
+
+STRING 19130
+// Units: o06K (Siege Tower), Ubertip (Tooltip - Extended)
+{
+Boulder tossing siege weaponry.|n|n|cff99b4d1Can only build 6. |r|n|cffffcc00Attacks land units and trees.|r
 }
 
 STRING 19131
@@ -115366,6 +115354,12 @@ STRING 19232
 Betrayer's Reservoir
 }
 
+STRING 19233
+// Items: I018 (Vial of the Sunwell), Ubertip (Tooltip - Extended)
+{
+|cffff8c00Artifact|r|nIncreases Intelligence by <A0F6,DataB1>. Can be activated to restore the drinker's hit points and mana by 5000 each.|n|cffffcc00Lore|r|n|cffffdeadThe Sunwell was originally created from a stolen vial of water from the Well of Eternity, and has since grown into an immeasurably deep font of power. Even this small vial holds enough power to keep its imbiber alive indefinitely.
+}
+
 STRING 19234
 // Units: nnsu (Coilfang Summoner), Tip (Tooltip - Basic)
 {
@@ -115378,6 +115372,12 @@ STRING 19235
 Amphibian
 }
 
+STRING 19236
+// Upgrades: R016 (Chaos), EditorSuffix (Editor Suffix)
+{
+(Stormwind)
+}
+
 STRING 19237
 // Units: n078 (Altar of the Queen), Name (Name)
 {
@@ -115388,6 +115388,12 @@ STRING 19238
 // Abilities: A0ZH (Army of Light), Tip (Tooltip - Normal)
 {
 Army of the Light - [|cffffcc00Level 1|r]
+}
+
+STRING 19239
+// Units: h06A (Smithy), Ubertip (Tooltip - Extended)
+{
+The industrial heart of Stormwind's war machine.|n|cfff5962dTrains:|R Siege Tower, Gunship, Marshal|n|cfff5962dResearches:|R Chainmail Layering
 }
 
 STRING 19240
@@ -117018,13 +117024,13 @@ Mur'gul slaves toil to provide the Illidari with ever-improving weapons and armo
 }
 
 STRING 19511
-// Units: h03Z (Saboteur), EditorSuffix (Name - Editor Suffix)
+// Units: h01B (Outrider), EditorSuffix (Name - Editor Suffix)
 {
  (Stormwind)
 }
 
 STRING 19512
-// Units: h01B (Outrider), EditorSuffix (Name - Editor Suffix)
+// Abilities: A0S1 (Bombing Run), EditorSuffix (Editor Suffix)
 {
  (Stormwind)
 }
@@ -117045,12 +117051,6 @@ STRING 19515
 // Units: h06A (Smithy), Tip (Tooltip - Basic)
 {
 Build Smithy
-}
-
-STRING 19516
-// Abilities: A0S1 (Bombing Run), EditorSuffix (Editor Suffix)
-{
- (Stormwind)
 }
 
 STRING 19517
