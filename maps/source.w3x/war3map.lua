@@ -3516,7 +3516,6 @@ local unitID
 local t
 local life
 
-u = BlzCreateUnitWithSkin(p, FourCC("h05M"), 22283.0, 24068.2, 357.230, FourCC("h05M"))
 u = BlzCreateUnitWithSkin(p, FourCC("h01E"), 4210.9, -13096.5, 241.091, FourCC("h01E"))
 u = BlzCreateUnitWithSkin(p, FourCC("h01E"), 4086.1, -13152.1, 299.785, FourCC("h01E"))
 u = BlzCreateUnitWithSkin(p, FourCC("h01E"), 4183.6, -13278.7, 95.839, FourCC("h01E"))
@@ -6372,6 +6371,8 @@ u = BlzCreateUnitWithSkin(p, FourCC("o020"), -7008.0, 608.0, 270.000, FourCC("o0
 u = BlzCreateUnitWithSkin(p, FourCC("ngad"), -8960.0, 8128.0, 270.000, FourCC("ngad"))
 u = BlzCreateUnitWithSkin(p, FourCC("o05I"), -192.0, -5824.0, 270.000, FourCC("o05I"))
 u = BlzCreateUnitWithSkin(p, FourCC("edob"), -20736.0, -9920.0, 270.000, FourCC("edob"))
+u = BlzCreateUnitWithSkin(p, FourCC("ngol"), -20288.0, -11456.0, 270.000, FourCC("ngol"))
+SetResourceAmount(u, 1200)
 u = BlzCreateUnitWithSkin(p, FourCC("o028"), -7232.0, 832.0, 270.000, FourCC("o028"))
 u = BlzCreateUnitWithSkin(p, FourCC("ndfl"), 4864.0, -31488.0, 270.000, FourCC("ndfl"))
 SetUnitState(u, UNIT_STATE_MANA, 1000)
@@ -6391,7 +6392,7 @@ u = BlzCreateUnitWithSkin(p, FourCC("h00L"), 9088.0, 9472.0, 270.000, FourCC("h0
 u = BlzCreateUnitWithSkin(p, FourCC("h058"), 5792.0, 4512.0, 270.000, FourCC("h058"))
 u = BlzCreateUnitWithSkin(p, FourCC("n004"), 5760.0, 3968.0, 270.000, FourCC("n004"))
 u = BlzCreateUnitWithSkin(p, FourCC("ngol"), -22528.0, -13312.0, 270.000, FourCC("ngol"))
-SetResourceAmount(u, 900)
+SetResourceAmount(u, 800)
 u = BlzCreateUnitWithSkin(p, FourCC("h069"), 6076.5, 3447.5, 86.297, FourCC("h069"))
 u = BlzCreateUnitWithSkin(p, FourCC("h05P"), 9856.0, 4864.0, 270.000, FourCC("h05P"))
 u = BlzCreateUnitWithSkin(p, FourCC("h01U"), 13888.0, 4416.0, 90.556, FourCC("h01U"))

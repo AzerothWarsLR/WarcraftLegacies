@@ -18624,6 +18624,12 @@ STRING 3104
 E
 }
 
+STRING 3105
+// Units: o06K (Siege Tower), Ubertip (Tooltip - Extended)
+{
+Boulder tossing siege weaponry.|n|cfff5962dAbilities:|R Aura of Protection, |n|n|cff99b4d1Can only build 6. |r|n|cffffcc00Attacks land units and trees.|r
+}
+
 STRING 3107
 // Abilities: A0P9 (Dimensional Jump to Azuremyst), Ubertip (Tooltip - Normal - Extended)
 {
@@ -18979,7 +18985,7 @@ Summon Minion
 }
 
 STRING 3166
-// Upgrades: R022 (Chaos), EditorSuffix (Editor Suffix)
+// Abilities: A107 (Aura of Protection), EditorSuffix (Editor Suffix)
 {
 (Stormwind)
 }
@@ -19674,7 +19680,7 @@ STRING 3281
 }
 
 STRING 3282
-// Upgrades: R01M (Chaos), EditorSuffix (Editor Suffix)
+// Abilities: A108 (Main Cannon), EditorSuffix (Editor Suffix)
 {
 (Stormwind)
 }
@@ -26006,6 +26012,12 @@ STRING 4337
 // Units: u017 (Undertaker's Vault), Hotkey (Hotkey)
 {
 C
+}
+
+STRING 4338
+// Abilities: A107 (Aura of Protection), Name (Name)
+{
+Aura of Protection
 }
 
 STRING 4339
@@ -64361,6 +64373,12 @@ STRING 10726
 Emergency Repairs
 }
 
+STRING 10727
+// Upgrades: R022 (Chaos), EditorSuffix (Editor Suffix)
+{
+(Stormwind)
+}
+
 STRING 10728
 // Units: n053 (Val'sharah (15gold/min)), Name (Name)
 {
@@ -85292,6 +85310,12 @@ STRING 14214
 // Units: H028 (Thane of Aerie Peak), Ubertip (Tooltip - Extended)
 {
 Wild cunning Hero, adept at supporting armies.|n|cfff5962dCan Learn:|R Hamer Time!, Battleshout, Stoneform, Gryphon Sky|n|n|cffffcc00Attacks land and air units.|R
+}
+
+STRING 14215
+// Abilities: A107 (Aura of Protection), Ubertip (Tooltip - Normal - Extended)
+{
+Gives 50% additional armor to nearby friendly units.
 }
 
 STRING 14216
@@ -109731,7 +109755,7 @@ Q
 }
 
 STRING 18296
-// Upgrades: Rume (Unholy Strength,Improved Unholy Strength,Advanced Unholy Strength), Hotkey (Hotkey)
+// Abilities: A108 (Main Cannon), Hotkey (Hotkey - Normal)
 {
 Q
 }
@@ -110758,7 +110782,7 @@ Learn Molten Strike - [|cffffcc00Level %d|r]
 }
 
 STRING 18467
-// Upgrades: Rome (Steel Melee Weapons,Thorium Melee Weapons,Arcanite Melee Weapons), Hotkey (Hotkey)
+// Upgrades: Rume (Unholy Strength,Improved Unholy Strength,Advanced Unholy Strength), Hotkey (Hotkey)
 {
 Q
 }
@@ -110908,7 +110932,7 @@ Draenei mystic supportive spellcastrter.|n|cfff5962dAbilities:|R Lightning Shiel
 }
 
 STRING 18492
-// Upgrades: Rhme (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Hotkey (Hotkey)
+// Upgrades: Rome (Steel Melee Weapons,Thorium Melee Weapons,Arcanite Melee Weapons), Hotkey (Hotkey)
 {
 Q
 }
@@ -111791,7 +111815,7 @@ Q
 }
 
 STRING 18639
-// Upgrades: Resw (Strength of the Wild,Improved Strength of the Wild,Advanced Strength of the Wil), Hotkey (Hotkey)
+// Upgrades: Rhme (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Hotkey (Hotkey)
 {
 Q
 }
@@ -114737,9 +114761,9 @@ Orb of Annihilation - [|cffffcc00Level 2|r]
 }
 
 STRING 19130
-// Units: o06K (Siege Tower), Ubertip (Tooltip - Extended)
+// Abilities: A108 (Main Cannon), Name (Name)
 {
-Boulder tossing siege weaponry.|n|n|cff99b4d1Can only build 6. |r|n|cffffcc00Attacks land units and trees.|r
+Main Cannon
 }
 
 STRING 19131
@@ -114965,7 +114989,7 @@ STRING 19167
 }
 
 STRING 19168
-// Upgrades: Resm (Strength of the Moon,Improved Strength of the Moon,Advanced Strength of the Moo), Hotkey (Hotkey)
+// Upgrades: Resw (Strength of the Wild,Improved Strength of the Wild,Advanced Strength of the Wil), Hotkey (Hotkey)
 {
 Q
 }
@@ -115373,7 +115397,7 @@ Amphibian
 }
 
 STRING 19236
-// Upgrades: R016 (Chaos), EditorSuffix (Editor Suffix)
+// Upgrades: R01M (Chaos), EditorSuffix (Editor Suffix)
 {
 (Stormwind)
 }
@@ -116076,7 +116100,7 @@ STRING 19352
 }
 
 STRING 19353
-// Upgrades: R020 (Defend), Hotkey (Hotkey)
+// Upgrades: Resm (Strength of the Moon,Improved Strength of the Moon,Advanced Strength of the Moo), Hotkey (Hotkey)
 {
 Q
 }
@@ -117053,6 +117077,12 @@ STRING 19515
 Build Smithy
 }
 
+STRING 19516
+// Abilities: A108 (Main Cannon), Tip (Tooltip - Normal)
+{
+Main Cannon
+}
+
 STRING 19517
 // Units: n04T (Betrayer's Spire), EditorSuffix (Name - Editor Suffix)
 {
@@ -117138,7 +117168,7 @@ Wyrmrest
 }
 
 STRING 19531
-// Upgrades: R014 (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
+// Upgrades: R020 (Defend), Hotkey (Hotkey)
 {
 Q
 }
@@ -117162,7 +117192,7 @@ Control Point Defender
 }
 
 STRING 19535
-// Upgrades: R00X (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: R014 (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
 {
 Q
 }
@@ -117249,6 +117279,24 @@ STRING 19549
 // Abilities: A103 (Holy Shockwave), Ubertip (Tooltip - Normal - Extended)
 {
 When this unit attacks, it has a 100% chance to fire a shockwave dealing 30 damage to units in front of them.
+}
+
+STRING 19550
+// Abilities: A108 (Main Cannon), Ubertip (Tooltip - Normal - Extended)
+{
+Fire the cannon, causing 100 damage to units in a 250 area and stunning for 1 seconds on impact.
+}
+
+STRING 19551
+// Upgrades: R00X (Magic Sentry), Hotkey (Hotkey)
+{
+Q
+}
+
+STRING 19552
+// Upgrades: R016 (Chaos), EditorSuffix (Editor Suffix)
+{
+(Stormwind)
 }
 
 STRING 19565
