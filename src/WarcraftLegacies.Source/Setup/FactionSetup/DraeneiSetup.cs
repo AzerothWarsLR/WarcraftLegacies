@@ -37,7 +37,7 @@ The Exodar is a mighty fortress-base with the ability to move around the map, bu
       Draenei.ModObjectLimit(FourCC("u00U"), Faction.UNLIMITED); //Crystal Protector
       Draenei.ModObjectLimit(FourCC("u01Q"), Faction.UNLIMITED); //Crystal Protector improved
       Draenei.ModObjectLimit(FourCC("o059"), Faction.UNLIMITED); //Improved Ancient Protector
-      Draenei.ModObjectLimit(FourCC("o05U"), 1); //Lightforged Gateway
+      Draenei.ModObjectLimit(FourCC("o05U"), Faction.UNLIMITED); //Lightforged Gateway
 
       Draenei.ModObjectLimit(FourCC("o05A"), Faction.UNLIMITED); //Wisp
       Draenei.ModObjectLimit(FourCC("o05B"), Faction.UNLIMITED); //Defender

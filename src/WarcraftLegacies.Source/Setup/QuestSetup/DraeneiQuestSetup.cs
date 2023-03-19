@@ -42,6 +42,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       var questDimensionalShip = new QuestDimensionalShip(Regions.Exodar_Interior_All,
         new List<QuestData> { questRepairHull, questRepairGenerator }, allLegendSetup.Draenei.LegendExodarGenerator);
       draenei.AddQuest(questDimensionalShip);
+      draenei.AddQuest(new QuestInterdimensionalPortal(Regions.MaelstromChannel));
     }
   }
 }

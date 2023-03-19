@@ -114364,12 +114364,6 @@ STRING 19062
 Build Lightforged Gateway
 }
 
-STRING 19063
-// Units: o05U (Lightforged Gateway), Ubertip (Tooltip - Extended)
-{
-Training halls of light and virtue.|n|cfff5962dTrains:|R Defender, Rangari, Polybolos |n|n|cff99b4d1Can only build 1.|r
-}
-
 STRING 19064
 // Units: n0BJ (Lightforged Sharpshooter), Name (Name)
 {
@@ -114646,6 +114640,12 @@ STRING 19109
 Light's Edict - [|cffffcc00Level 4|r]
 }
 
+STRING 19110
+// Units: o05U (Lightforged Gateway), Ubertip (Tooltip - Extended)
+{
+Interdimensional gateway that enables to bring forth the Lightforged Draenei.|n|cfff5962dTrains:|R Dragoon, Sharpshooter, Juggernaut
+}
+
 STRING 19111
 // Units: h05X (Control Point Defender), Name (Name)
 {
@@ -114704,6 +114704,12 @@ STRING 19120
 // Abilities: A0N7 (Disorienting Howl), Ubertip (Tooltip - Normal - Extended)
 {
 The hero unleashes devastating roar that reduces attack damage of all nearby enemy units by 100%. 9 seconds duration. Lasts 7 second on heroes.
+}
+
+STRING 19121
+// Upgrades: R04H (Chaos), Name (Name)
+{
+Quest Completed: The Interdimensional Gateway
 }
 
 STRING 19122
