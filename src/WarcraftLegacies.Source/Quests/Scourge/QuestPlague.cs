@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using MacroTools;
+using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.Libraries;
@@ -9,6 +10,7 @@ using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
 using WarcraftLegacies.Source.Mechanics.Scourge.Plague;
+using WarcraftLegacies.Source.Setup.FactionSetup;
 using WCSharp.Buffs;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -80,7 +82,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
     {
       var plaguePlayer = (completingFaction.ScoreStatus != ScoreStatus.Defeated
         ? completingFaction.Player
-        : Player(PLAYER_NEUTRAL_AGGRESSIVE)) 
+        : Player(PLAYER_NEUTRAL_AGGRESSIVE))
                          ?? Player(PLAYER_NEUTRAL_AGGRESSIVE);
 
       foreach (var plagueRect in _plagueRects)
@@ -90,7 +92,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
           .SetTimedLife(_duration);
 
         var attackTarget = _attackTargets.OrderBy(x => MathEx.GetDistanceBetweenPoints(position, x)).First();
-        
+
         var plagueCauldronBuff = new PlagueCauldronBuff(plagueCauldron, plagueCauldron, attackTarget)
         {
           ZombieUnitTypeId = Constants.UNIT_NZOM_ZOMBIE_SCOURGE
@@ -112,10 +114,10 @@ namespace WarcraftLegacies.Source.Quests.Scourge
     {
       completingFaction.ModObjectLimit(Constants.UPGRADE_R06I_PLAGUE_OF_UNDEATH_SCOURGE, -Faction.UNLIMITED);
       var plaguePower = new PlaguePower(_plagueVictim);
-      if (completingFaction.Player != null) 
+      if (completingFaction.Player != null)
         CreatePlagueCauldrons(completingFaction);
       completingFaction.AddPower(plaguePower);
-
+      ResetLordaeronCpLevel();
       _portalController1.SetInvulnerable(false);
       _portalController2.SetInvulnerable(false);
       _innerWaygate1
@@ -132,8 +134,15 @@ namespace WarcraftLegacies.Source.Quests.Scourge
         .SetWaygateDestination(Regions.Scholomance_Exterior_2.Center);
     }
 
+    private static void ResetLordaeronCpLevel()
+    {
+      var lordaeron = FactionManager.GetFromName("Lordaeron");
+      foreach (var cp in lordaeron.Player.GetControlPoints())
+        cp.ControlLevel = 0;
+    }
+
     /// <inheritdoc />
-    protected override void OnAdd(Faction whichFaction) => 
+    protected override void OnAdd(Faction whichFaction) =>
       whichFaction.ModObjectLimit(Constants.UPGRADE_R06I_PLAGUE_OF_UNDEATH_SCOURGE, Faction.UNLIMITED);
   }
 }
