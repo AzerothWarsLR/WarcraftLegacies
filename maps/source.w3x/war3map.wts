@@ -49011,12 +49011,6 @@ STRING 8165
 E
 }
 
-STRING 8166
-// Units: n0BM (Lightforged Dragoon), Ubertip (Tooltip - Extended)
-{
-Elite draenei warriors blessed by the Naaru.|n|cfff5962dAbilities:|R Charge, Critical Strike, Warplate , Spell Resistance, Resistant Skin|n|n|cff99b4d1Can only summon 6.|r|n|cffffcc00Attacks land units.|r
-}
-
 STRING 8167
 // Units: h066 (Conclave), Ubertip (Tooltip - Extended)
 {
@@ -114362,6 +114356,12 @@ STRING 19062
 // Units: o05U (Lightforged Gateway), Tip (Tooltip - Basic)
 {
 Build Lightforged Gateway
+}
+
+STRING 19063
+// Units: n0BM (Lightforged Dragoon), Ubertip (Tooltip - Extended)
+{
+Elite draenei warriors blessed by the Naaru.|n|cfff5962dAbilities:|R Charge, Critical Strike, Warplate , Spell Resistance, Resistant Skin|n|n|cff99b4d1Can only summon 8.|r|n|cffffcc00Attacks land units.|r
 }
 
 STRING 19064

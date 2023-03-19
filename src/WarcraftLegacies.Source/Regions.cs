@@ -327,7 +327,7 @@ public static class Regions
 	public static Rectangle BootyBayQuest { get; set; } = new Rectangle(9696f, -24160f, 12032f, -22304f);
 	public static Rectangle KaliRock8 { get; set; } = new Rectangle(-14400f, -9472f, -13632f, -8768f);
 	public static Rectangle ShadowmoonBaseUnlock { get; set; } = new Rectangle(1696f, -31776f, 3936f, -28896f);
-	public static Rectangle MaelstromChannel { get; set; } = new Rectangle(-384f, -1504f, 96f, -1120f);
+	public static Rectangle MaelstromChannel { get; set; } = new Rectangle(-1120f, -1504f, 96f, -640f);
 	public static Rectangle FeathermoonCreeps { get; set; } = new Rectangle(-22464f, -12128f, -18368f, -7584f);
 	public static Rectangle AuberdineUnlock { get; set; } = new Rectangle(-18784f, 8608f, -14784f, 11104f);
 	public static Rectangle KaliRock9 { get; set; } = new Rectangle(-15808f, -11072f, -14464f, -10240f);

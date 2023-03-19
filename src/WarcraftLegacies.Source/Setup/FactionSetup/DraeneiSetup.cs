@@ -50,6 +50,10 @@ The Exodar is a mighty fortress-base with the ability to move around the map, bu
       Draenei.ModObjectLimit(FourCC("h09U"), 4); //Elekk Knight
       Draenei.ModObjectLimit(FourCC("u02H"), 6); //Nether Ray
 
+      Draenei.ModObjectLimit(FourCC("n0BJ"), 6); //Sharpshooter
+      Draenei.ModObjectLimit(FourCC("n0BP"), 4); //Juggernaut
+      Draenei.ModObjectLimit(FourCC("n0BM"), 8); //Nether Ray
+
       //Ships
       Draenei.ModObjectLimit(FourCC("etrs"), Faction.UNLIMITED); //Night Elf Transport Ship
       Draenei.ModObjectLimit(FourCC("h0AU"), Faction.UNLIMITED); // Scout
@@ -63,6 +67,7 @@ The Exodar is a mighty fortress-base with the ability to move around the map, bu
       Draenei.ModObjectLimit(FourCC("H09S"), 1); //Maraad
       Draenei.ModObjectLimit(FourCC("E01I"), 1); //Velen
       Draenei.ModObjectLimit(FourCC("E01J"), 1); //Nobundo
+      Draenei.ModObjectLimit(FourCC("H09M"), 1); //Adal
 
       Draenei.ModObjectLimit(FourCC("R023"), Faction.UNLIMITED); //Spiritual Infusion
       Draenei.ModObjectLimit(FourCC("R078"), Faction.UNLIMITED); //Elementalist training
