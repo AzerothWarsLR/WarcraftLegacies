@@ -114646,12 +114646,6 @@ STRING 19109
 Light's Edict - [|cffffcc00Level 4|r]
 }
 
-STRING 19110
-// Units: H09M (The Naaru), Awakentip (Tooltip - Awaken)
-{
-Revive Demigod
-}
-
 STRING 19111
 // Units: h05X (Control Point Defender), Name (Name)
 {
@@ -114712,22 +114706,10 @@ STRING 19120
 The hero unleashes devastating roar that reduces attack damage of all nearby enemy units by 100%. 9 seconds duration. Lasts 7 second on heroes.
 }
 
-STRING 19121
-// Units: H09M (The Naaru), Revivetip (Tooltip - Revive)
-{
-Revive Demigod
-}
-
 STRING 19122
 // Upgrades: R092 (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
 {
 The Sea floor has many possibilities, exploit them to start rebuilding the Naga forces.
-}
-
-STRING 19123
-// Units: H09M (The Naaru), Tip (Tooltip - Basic)
-{
-Summon Tortolla
 }
 
 STRING 19124
@@ -114764,12 +114746,6 @@ STRING 19129
 // Abilities: A03L (Explosive Ammo), Tip (Tooltip - Normal)
 {
 Orb of Annihilation - [|cffffcc00Level 2|r]
-}
-
-STRING 19130
-// Units: H09M (The Naaru), Ubertip (Tooltip - Extended)
-{
-Ancient hero, adept at sustaining damage and producing units.|n|cfff5962dTrains:|r Sea Turtle|n|cfff5962dCan learn:|R Crushing Wave, Spiked Carapace, Devour, Tidal Storm|n|n|cffffcc00Attacks land units.|R
 }
 
 STRING 19131
@@ -115384,12 +115360,6 @@ STRING 19232
 Betrayer's Reservoir
 }
 
-STRING 19233
-// Abilities: A103 (Holy Shockwave), Ubertip (Tooltip - Normal - Extended)
-{
-When this unit attacks, it has a 100% chance to fire a shockwave dealing 50 damage to units in front of them.
-}
-
 STRING 19234
 // Units: nnsu (Coilfang Summoner), Tip (Tooltip - Basic)
 {
@@ -115402,12 +115372,6 @@ STRING 19235
 Amphibian
 }
 
-STRING 19236
-// Abilities: A0L5 (Light's Edict), Researchubertip (Tooltip - Learn - Extended)
-{
-Rexxar sprays waves of mists into his allies healing them. |n|n|cffffcc00Level 1|r - 3 waves at 60 hit points healed each. |n|cffffcc00Level 2|r - 4 waves at 65 hit points healed each. |n|cffffcc00Level 3|r - 5 waves at 75 hit points healed each.|n|cffffcc00Level 4|r - 6 waves at 85 hit points healed each.|n|cffffcc00Level 5|r - 7 waves at 100 hit points healed each.
-}
-
 STRING 19237
 // Units: n078 (Altar of the Queen), Name (Name)
 {
@@ -115418,12 +115382,6 @@ STRING 19238
 // Abilities: A0ZH (Army of Light), Tip (Tooltip - Normal)
 {
 Army of the Light - [|cffffcc00Level 1|r]
-}
-
-STRING 19239
-// Abilities: A0L5 (Light's Edict), Ubertip (Tooltip - Normal - Extended)
-{
-Bombards an area with 8 waves of rockets. Each wave deals 15 damage to all units in an area.
 }
 
 STRING 19240
@@ -115676,6 +115634,12 @@ STRING 19281
 // Units: o060 (Annihilan Guard), Tip (Tooltip - Basic)
 {
 Train Annihilan Guard
+}
+
+STRING 19282
+// Units: H09M (The Naaru), Awakentip (Tooltip - Awaken)
+{
+Revive A'dal
 }
 
 STRING 19283
@@ -117215,6 +117179,12 @@ STRING 19538
 (Draenei)
 }
 
+STRING 19539
+// Units: H09M (The Naaru), Revivetip (Tooltip - Revive)
+{
+Revive A'dal
+}
+
 STRING 19540
 // Units: h0AL (Control Point Defender), Name (Name)
 {
@@ -117231,6 +117201,48 @@ STRING 19542
 // Units: n0D6 (Control Point Defender), Tip (Tooltip - Basic)
 {
 Build Iron Keep
+}
+
+STRING 19543
+// Units: H09M (The Naaru), Tip (Tooltip - Basic)
+{
+Summon A'dal
+}
+
+STRING 19544
+// Units: H09M (The Naaru), Ubertip (Tooltip - Extended)
+{
+Cosmic hero, expert at team fight support.|n|cfff5962dCan learn:|R Light's Edict, Blinding Starlight, Wise Council, Army of the Light|n|n|cffffcc00Attacks land and air units.|R
+}
+
+STRING 19545
+// Abilities: A0L5 (Light's Edict), Ubertip (Tooltip - Normal - Extended)
+{
+Bombards an area with 6 waves of light bursts. Each wave deals 15 damage to all units in an area.
+}
+
+STRING 19546
+// Abilities: A0L5 (Light's Edict), Ubertip (Tooltip - Normal - Extended)
+{
+Bombards an area with 8 waves of light bursts. Each wave deals 20 damage to all units in an area.
+}
+
+STRING 19547
+// Abilities: A0L5 (Light's Edict), Ubertip (Tooltip - Normal - Extended)
+{
+Bombards an area with 10 waves of light bursts. Each wave deals 25 damage to all units in an area.
+}
+
+STRING 19548
+// Abilities: A0L5 (Light's Edict), Ubertip (Tooltip - Normal - Extended)
+{
+Bombards an area with 12 waves of light bursts. Each wave deals 30 damage to all units in an area.
+}
+
+STRING 19549
+// Abilities: A103 (Holy Shockwave), Ubertip (Tooltip - Normal - Extended)
+{
+When this unit attacks, it has a 100% chance to fire a shockwave dealing 30 damage to units in front of them.
 }
 
 STRING 19565

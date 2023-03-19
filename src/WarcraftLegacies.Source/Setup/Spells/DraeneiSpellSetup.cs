@@ -73,8 +73,8 @@ namespace WarcraftLegacies.Source.Setup.Spells
         DamageLevel = 00,
         DurationBase = 6,
         DurationLevel = 3,
-        StunAbilityId = Constants.ABILITY_A106_CURSE_DREANEI,
-        StunOrderString = "sleep",
+        StunAbilityId = Constants.ABILITY_A106_CURSE_DRAENEI,
+        StunOrderString = "curse",
         SpecialEffect = @"war3mapImported\FrostNova.mdx"
       };
       SpellSystem.Register(warStompAdal);
