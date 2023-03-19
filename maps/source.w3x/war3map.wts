@@ -18625,9 +18625,15 @@ E
 }
 
 STRING 3105
+// Units: E016 (Ruler of House Waycrest), EditorSuffix (Name - Editor Suffix)
+{
+(Kultiras)
+}
+
+STRING 3106
 // Units: o06K (Siege Tower), Ubertip (Tooltip - Extended)
 {
-Boulder tossing siege weaponry.|n|cfff5962dAbilities:|R Aura of Protection, |n|n|cff99b4d1Can only build 6. |r|n|cffffcc00Attacks land units and trees.|r
+Boulder tossing siege weaponry.|n|cfff5962dAbilities:|R Aura of Protection, Artillery Bombardment |n|n|cff99b4d1Can only build 6. |r|n|cffffcc00Attacks land units and trees.|r
 }
 
 STRING 3107
@@ -19680,7 +19686,7 @@ STRING 3281
 }
 
 STRING 3282
-// Abilities: A108 (Main Cannon), EditorSuffix (Editor Suffix)
+// Upgrades: R022 (Chaos), EditorSuffix (Editor Suffix)
 {
 (Stormwind)
 }
@@ -20658,7 +20664,7 @@ Primary structure, used to train workers and gather resources.|n|cfff5962dTrains
 }
 
 STRING 3445
-// Units: E016 (Ruler of House Waycrest), EditorSuffix (Name - Editor Suffix)
+// Upgrades: R05J (Defend), EditorSuffix (Editor Suffix)
 {
 (Kultiras)
 }
@@ -64374,7 +64380,7 @@ Emergency Repairs
 }
 
 STRING 10727
-// Upgrades: R022 (Chaos), EditorSuffix (Editor Suffix)
+// Upgrades: R01M (Chaos), EditorSuffix (Editor Suffix)
 {
 (Stormwind)
 }
@@ -109755,7 +109761,7 @@ Q
 }
 
 STRING 18296
-// Abilities: A108 (Main Cannon), Hotkey (Hotkey - Normal)
+// Abilities: A108 (Artillery Bombardment), Hotkey (Hotkey - Normal)
 {
 Q
 }
@@ -109785,7 +109791,7 @@ Hurl a Dark Hammer towards an enemy unit, damaging them for 75 damage and stunni
 }
 
 STRING 18301
-// Upgrades: Rume (Unholy Strength,Improved Unholy Strength,Advanced Unholy Strength), Hotkey (Hotkey)
+// Abilities: A108 (Artillery Bombardment), Researchhotkey (Hotkey - Learn)
 {
 Q
 }
@@ -110878,7 +110884,7 @@ Upgrade to Flame Pillar
 }
 
 STRING 18483
-// Upgrades: Rome (Steel Melee Weapons,Thorium Melee Weapons,Arcanite Melee Weapons), Hotkey (Hotkey)
+// Upgrades: Rume (Unholy Strength,Improved Unholy Strength,Advanced Unholy Strength), Hotkey (Hotkey)
 {
 Q
 }
@@ -111064,7 +111070,7 @@ W
 }
 
 STRING 18514
-// Upgrades: Rhme (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Hotkey (Hotkey)
+// Upgrades: Rome (Steel Melee Weapons,Thorium Melee Weapons,Arcanite Melee Weapons), Hotkey (Hotkey)
 {
 Q
 }
@@ -113195,7 +113201,7 @@ STRING 18868
 }
 
 STRING 18869
-// Upgrades: Resw (Strength of the Wild,Improved Strength of the Wild,Advanced Strength of the Wil), Hotkey (Hotkey)
+// Upgrades: Rhme (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Hotkey (Hotkey)
 {
 Q
 }
@@ -114761,9 +114767,9 @@ Orb of Annihilation - [|cffffcc00Level 2|r]
 }
 
 STRING 19130
-// Abilities: A108 (Main Cannon), Name (Name)
+// Upgrades: R02Y (Long Rifles), Hotkey (Hotkey)
 {
-Main Cannon
+A
 }
 
 STRING 19131
@@ -115163,7 +115169,7 @@ Z
 }
 
 STRING 19197
-// Upgrades: R02Y (Long Rifles), Hotkey (Hotkey)
+// Upgrades: R05J (Defend), Hotkey (Hotkey)
 {
 A
 }
@@ -115397,7 +115403,7 @@ Amphibian
 }
 
 STRING 19236
-// Upgrades: R01M (Chaos), EditorSuffix (Editor Suffix)
+// Upgrades: R016 (Chaos), EditorSuffix (Editor Suffix)
 {
 (Stormwind)
 }
@@ -116046,7 +116052,7 @@ R
 }
 
 STRING 19344
-// Upgrades: Resm (Strength of the Moon,Improved Strength of the Moon,Advanced Strength of the Moo), Hotkey (Hotkey)
+// Upgrades: Resw (Strength of the Wild,Improved Strength of the Wild,Advanced Strength of the Wil), Hotkey (Hotkey)
 {
 Q
 }
@@ -117078,9 +117084,9 @@ Build Smithy
 }
 
 STRING 19516
-// Abilities: A108 (Main Cannon), Tip (Tooltip - Normal)
+// Upgrades: R05J (Defend), Name (Name)
 {
-Main Cannon
+Stranglethorn Expedition
 }
 
 STRING 19517
@@ -117168,7 +117174,7 @@ Wyrmrest
 }
 
 STRING 19531
-// Upgrades: R020 (Defend), Hotkey (Hotkey)
+// Upgrades: Resm (Strength of the Moon,Improved Strength of the Moon,Advanced Strength of the Moo), Hotkey (Hotkey)
 {
 Q
 }
@@ -117192,7 +117198,7 @@ Control Point Defender
 }
 
 STRING 19535
-// Upgrades: R014 (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
+// Upgrades: R020 (Defend), Hotkey (Hotkey)
 {
 Q
 }
@@ -117282,21 +117288,63 @@ When this unit attacks, it has a 100% chance to fire a shockwave dealing 30 dama
 }
 
 STRING 19550
-// Abilities: A108 (Main Cannon), Ubertip (Tooltip - Normal - Extended)
+// Upgrades: R05J (Defend), Tip (Tooltip)
 {
-Fire the cannon, causing 100 damage to units in a 250 area and stunning for 1 seconds on impact.
+Research Stranglethorn Expedition
 }
 
 STRING 19551
-// Upgrades: R00X (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: R014 (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
 {
 Q
 }
 
 STRING 19552
-// Upgrades: R016 (Chaos), EditorSuffix (Editor Suffix)
+// Upgrades: R05J (Defend), Ubertip (Tooltip - Extended)
 {
-(Stormwind)
+Provides Daelin with the resources required to launch an incursion into Stranglethorn.|n|n|cffffcc00Required to complete the quest Stranglethorn Expedition.
+}
+
+STRING 19553
+// Abilities: A108 (Artillery Bombardment), EditorSuffix (Editor Suffix)
+{
+(stormwind)
+}
+
+STRING 19554
+// Abilities: A108 (Artillery Bombardment), Name (Name)
+{
+Artillery Bombardment
+}
+
+STRING 19555
+// Abilities: A108 (Artillery Bombardment), Researchtip (Tooltip - Learn)
+{
+Learn Healing Spray (|cffffcc00Q|r)  - [|cffffcc00Level %d|r]
+}
+
+STRING 19556
+// Abilities: A108 (Artillery Bombardment), Researchubertip (Tooltip - Learn - Extended)
+{
+Rexxar sprays waves of mists into his allies healing them. |n|n|cffffcc00Level 1|r - 3 waves at 60 hit points healed each. |n|cffffcc00Level 2|r - 4 waves at 65 hit points healed each. |n|cffffcc00Level 3|r - 5 waves at 75 hit points healed each.|n|cffffcc00Level 4|r - 6 waves at 85 hit points healed each.|n|cffffcc00Level 5|r - 7 waves at 100 hit points healed each.
+}
+
+STRING 19557
+// Abilities: A108 (Artillery Bombardment), Tip (Tooltip - Normal)
+{
+Artillery Bombardment
+}
+
+STRING 19558
+// Abilities: A108 (Artillery Bombardment), Ubertip (Tooltip - Normal - Extended)
+{
+Innacurate bombardment of an area with 30 waves of one cannonball. Each ball deals 45 damage to all units in an area.
+}
+
+STRING 19559
+// Upgrades: R00X (Magic Sentry), Hotkey (Hotkey)
+{
+Q
 }
 
 STRING 19565
