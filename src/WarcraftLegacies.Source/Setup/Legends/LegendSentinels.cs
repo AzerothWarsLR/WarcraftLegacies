@@ -41,7 +41,6 @@ namespace WarcraftLegacies.Source.Setup.Legends
       {
         UnitType = FourCC("Etyr"),
         PlayerColor = PLAYER_COLOR_CYAN,
-        StartingXp = 2400
       };
 
       Shandris = new LegendaryHero("Shandris Feathermoon")

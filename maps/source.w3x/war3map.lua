@@ -334,6 +334,7 @@ gg_rct_UpperBarrenCreeps = nil
 gg_rct_RiseBaseUnlock = nil
 gg_rct_ShrineBaseUnlock = nil
 gg_rct_StranglethornBaseBuild = nil
+gg_rct_TrollStartPos = nil
 gg_snd_ArcaneObservatoryWhat1 = nil
 gg_snd_ArrangedTeamInvitation = nil
 gg_snd_ClanInvitation = nil
@@ -522,7 +523,6 @@ gg_snd_DoorCloseRemix = nil
 gg_snd_DoorOpenRemix = nil
 gg_snd_NuclearLaunchDetected = nil
 gg_snd_IllidansTheme = ""
-gg_rct_TrollStartPos = nil
 function InitGlobals()
 end
 
@@ -2569,8 +2569,6 @@ local t
 local life
 
 u = BlzCreateUnitWithSkin(p, FourCC("o03L"), -8864.0, -13600.0, 270.000, FourCC("o03L"))
-u = BlzCreateUnitWithSkin(p, FourCC("o05T"), -21440.0, -25984.0, 270.000, FourCC("o05T"))
-u = BlzCreateUnitWithSkin(p, FourCC("o01M"), -21952.0, -26048.0, 270.000, FourCC("o01M"))
 u = BlzCreateUnitWithSkin(p, FourCC("o03V"), -8288.0, -13152.0, 270.000, FourCC("o03V"))
 u = BlzCreateUnitWithSkin(p, FourCC("n05C"), -8960.0, -13184.0, 270.000, FourCC("n05C"))
 end
@@ -2582,15 +2580,13 @@ local unitID
 local t
 local life
 
-u = BlzCreateUnitWithSkin(p, FourCC("h09H"), -21487.5, -26433.7, 275.965, FourCC("h09H"))
-u = BlzCreateUnitWithSkin(p, FourCC("O04N"), -21776.8, -26447.9, 276.696, FourCC("O04N"))
-u = BlzCreateUnitWithSkin(p, FourCC("h09I"), -21474.0, -26693.2, 281.219, FourCC("h09I"))
+u = BlzCreateUnitWithSkin(p, FourCC("E025"), -22827.5, -23151.4, 256.710, FourCC("E025"))
+SetUnitState(u, UNIT_STATE_MANA, 165)
+SetUnitColor(u, ConvertPlayerColor(7))
+u = BlzCreateUnitWithSkin(p, FourCC("O04N"), -21369.0, -26568.3, 276.696, FourCC("O04N"))
 u = BlzCreateUnitWithSkin(p, FourCC("o02I"), -8826.4, -13139.4, 253.517, FourCC("o02I"))
 u = BlzCreateUnitWithSkin(p, FourCC("o02I"), -8740.3, -13112.1, 253.517, FourCC("o02I"))
-u = BlzCreateUnitWithSkin(p, FourCC("h08X"), -21770.8, -26695.0, 277.084, FourCC("h08X"))
-u = BlzCreateUnitWithSkin(p, FourCC("h09J"), -21599.9, -26706.0, 331.589, FourCC("h09J"))
-u = BlzCreateUnitWithSkin(p, FourCC("o06K"), -22918.2, -25503.0, 314.210, FourCC("o06K"))
-u = BlzCreateUnitWithSkin(p, FourCC("u02R"), -21329.4, -26722.0, 232.090, FourCC("u02R"))
+u = BlzCreateUnitWithSkin(p, FourCC("u02R"), -21338.3, -26190.5, 232.090, FourCC("u02R"))
 u = BlzCreateUnitWithSkin(p, FourCC("o02I"), -8684.2, -13206.4, 253.517, FourCC("o02I"))
 u = BlzCreateUnitWithSkin(p, FourCC("o02I"), -8748.9, -13326.3, 176.501, FourCC("o02I"))
 u = BlzCreateUnitWithSkin(p, FourCC("o02I"), -8840.9, -13232.5, 23.797, FourCC("o02I"))

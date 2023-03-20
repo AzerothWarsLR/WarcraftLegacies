@@ -20,7 +20,6 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       draenei.StartingQuest = questRepairHull;
       draenei.AddQuest(questRepairHull);
       draenei.AddQuest(new QuestRebuildCivilisation(Regions.AzuremystAmbient));
-      draenei.AddQuest(new QuestBrokenOne(allLegendSetup.Draenei.Velen));
       draenei.AddQuest(new QuestShipArgus(
         preplacedUnitSystem.GetUnit(Constants.UNIT_H03V_ENTRANCE_PORTAL, Regions.OutlandToArgus.Center),
         preplacedUnitSystem.GetUnit(Constants.UNIT_H03V_ENTRANCE_PORTAL, Regions.TempestKeepSpawn.Center),
