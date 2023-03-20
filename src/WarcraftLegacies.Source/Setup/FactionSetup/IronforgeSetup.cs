@@ -62,6 +62,7 @@ Stormwind is preparing for an invasion through the Dark Portal in the South. Mus
       Ironforge.ModObjectLimit(FourCC("n02D"), Faction.UNLIMITED); //War Golem
       Ironforge.ModObjectLimit(FourCC("h01P"), 3); //Steam Tank
       Ironforge.ModObjectLimit(FourCC("n00C"), Faction.UNLIMITED); //Rune Priest
+      Ironforge.ModObjectLimit(FourCC("h03Z"), 3); //War Gryphon
 
       Ironforge.ModObjectLimit(FourCC("h01M"), 1); //Baelgun
       Ironforge.ModObjectLimit(FourCC("H00S"), 1); //Magni
