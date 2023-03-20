@@ -29,7 +29,7 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
       "The Frostwolves have been ousted from Kalimdor, along with their Tauren allies. They will not be missed.";
 
     /// <inheritdoc/>
-    protected override string RewardDescription => "The hero Jarod Shadowsong is now trainable at the Altar of Watches and the Moon Riders are trainable at the Roost";
+    protected override string RewardDescription => "The hero Jarod Shadowsong is now trainable at the Altar of Watchers and Moon Riders are trainable at the Roost";
 
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)

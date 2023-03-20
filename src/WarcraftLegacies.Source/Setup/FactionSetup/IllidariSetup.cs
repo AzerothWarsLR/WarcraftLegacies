@@ -20,9 +20,9 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
 
 You begin on the Broken Isles, ready to plunder the tombs for artifacts to empower Illidan.
 
-Unfortunately, you cannot progress further in the Islands. Use Illidan's mastery of portals to travel to Outland push with your fel allu
+Unfortunately, you cannot progress further in the Islands. Use Illidan's mastery of portals to travel to Outland and join forces with your ally.
 
-Support your ally in Outland by unlocking bases and coordinating with his push out of the Dark Portal"
+Support your ally in Outland by unlocking bases and coordinating with his push out of the Dark Portal."
       };
 
       Illidari.ModObjectLimit(FourCC("nntt"), Faction.UNLIMITED); //Pillar of Waves
