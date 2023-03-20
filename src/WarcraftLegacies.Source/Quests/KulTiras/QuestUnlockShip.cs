@@ -12,6 +12,7 @@ using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
+using System.Linq;
 
 namespace WarcraftLegacies.Source.Quests.KulTiras
 {
@@ -72,14 +73,14 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
 
     private static void MoveStranglethorn(player whichPlayer)
     {
-      foreach (var unit in CreateGroup().EnumUnitsInRect(Rectangle.WorldBounds).EmptyToList())
+      foreach (var unit in CreateGroup().EnumUnitsInRect(Rectangle.WorldBounds).EmptyToList().Where(x => x.OwningPlayer() == whichPlayer))
       {
-        if (GetOwningPlayer(unit) != whichPlayer) continue;
         if (!IsUnitType(unit, UNIT_TYPE_STRUCTURE) && !IsUnitType(unit, UNIT_TYPE_ANCIENT) && !IsUnitType(unit, UNIT_TYPE_PEON))
           SetUnitPosition(unit, 9755, -21510);
-        if (GetLocalPlayer() == whichPlayer)
-          SetCameraPosition(9755, -21510);
       }
+
+      if (GetLocalPlayer() == whichPlayer)
+        SetCameraPosition(9755, -21510);
     }
 
     /// <inheritdoc/>
