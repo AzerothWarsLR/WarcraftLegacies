@@ -229,7 +229,7 @@ gg_rct_Trade4 = nil
 gg_rct_Trader1 = nil
 gg_rct_Trader2 = nil
 gg_rct_Trader3 = nil
-gg_rct_GadgetUnlock = nil
+gg_rct_GoblinStartPos = nil
 gg_rct_TempestKeepSpawn = nil
 gg_rct_SummonObeliskTarget = nil
 gg_rct_NyTanaris = nil
@@ -264,8 +264,6 @@ gg_rct_DragonmawPortal = nil
 gg_rct_ScarletHarbor = nil
 gg_rct_ShadowvaultUnlock = nil
 gg_rct_RuinOfDalaran = nil
-gg_rct_TrollSecondChance = nil
-gg_rct_TrollSecondChanceWater = nil
 gg_rct_Farahlon = nil
 gg_rct_TelredorUnlock = nil
 gg_rct_Shattrah = nil
@@ -524,6 +522,7 @@ gg_snd_DoorCloseRemix = nil
 gg_snd_DoorOpenRemix = nil
 gg_snd_NuclearLaunchDetected = nil
 gg_snd_IllidansTheme = ""
+gg_rct_TrollStartPos = nil
 function InitGlobals()
 end
 
@@ -7324,6 +7323,9 @@ u = BlzCreateUnitWithSkin(p, FourCC("ngad"), 2944.0, 16256.0, 270.000, FourCC("n
 u = BlzCreateUnitWithSkin(p, FourCC("oshy"), -6816.0, -5920.0, 270.000, FourCC("oshy"))
 u = BlzCreateUnitWithSkin(p, FourCC("o028"), -6464.0, 320.0, 270.000, FourCC("o028"))
 u = BlzCreateUnitWithSkin(p, FourCC("ushp"), 1568.0, 18912.0, 270.000, FourCC("ushp"))
+u = BlzCreateUnitWithSkin(p, FourCC("o03R"), -9312.0, -17632.0, 270.000, FourCC("o03R"))
+u = BlzCreateUnitWithSkin(p, FourCC("ngol"), -8896.0, -17024.0, 270.000, FourCC("ngol"))
+SetResourceAmount(u, 800)
 u = BlzCreateUnitWithSkin(p, FourCC("ngol"), -2688.0, -30464.0, 270.000, FourCC("ngol"))
 SetResourceAmount(u, 1200)
 u = BlzCreateUnitWithSkin(p, FourCC("o028"), -6592.0, 384.0, 270.000, FourCC("o028"))
@@ -7508,6 +7510,8 @@ u = BlzCreateUnitWithSkin(p, FourCC("nbsm"), 9920.0, 5376.0, 270.000, FourCC("nb
 SetUnitAcquireRange(u, 200.0)
 u = BlzCreateUnitWithSkin(p, FourCC("h02D"), 9273.9, 4662.8, 43.513, FourCC("h02D"))
 SetUnitState(u, UNIT_STATE_MANA, 200)
+u = BlzCreateUnitWithSkin(p, FourCC("o04A"), -9106.2, -17428.7, 95.727, FourCC("o04A"))
+u = BlzCreateUnitWithSkin(p, FourCC("o04A"), -8999.9, -17423.9, 251.122, FourCC("o04A"))
 u = BlzCreateUnitWithSkin(p, FourCC("n00R"), 10347.0, -18002.8, 267.227, FourCC("n00R"))
 u = BlzCreateUnitWithSkin(p, FourCC("opeo"), -7243.5, -6226.6, 121.908, FourCC("opeo"))
 u = BlzCreateUnitWithSkin(p, FourCC("opeo"), -7490.4, -6264.6, 230.929, FourCC("opeo"))
@@ -7518,6 +7522,7 @@ u = BlzCreateUnitWithSkin(p, FourCC("ohun"), -7454.0, -5096.1, 202.847, FourCC("
 u = BlzCreateUnitWithSkin(p, FourCC("hrif"), 11190.0, -5781.7, 130.180, FourCC("hrif"))
 u = BlzCreateUnitWithSkin(p, FourCC("n04D"), -17950.6, 2995.6, 51.449, FourCC("n04D"))
 u = BlzCreateUnitWithSkin(p, FourCC("nvil"), 9203.1, 3167.3, 297.838, FourCC("nvil"))
+u = BlzCreateUnitWithSkin(p, FourCC("o04A"), -8920.8, -17484.9, 125.611, FourCC("o04A"))
 u = BlzCreateUnitWithSkin(p, FourCC("ohun"), -7233.1, -5384.7, 274.853, FourCC("ohun"))
 u = BlzCreateUnitWithSkin(p, FourCC("hkni"), 8921.0, 9281.2, 89.351, FourCC("hkni"))
 u = BlzCreateUnitWithSkin(p, FourCC("n0CS"), 20598.2, -4643.1, 282.203, FourCC("n0CS"))
@@ -7571,6 +7576,7 @@ u = BlzCreateUnitWithSkin(p, FourCC("nvlk"), 10202.1, 2515.2, 239.466, FourCC("n
 u = BlzCreateUnitWithSkin(p, FourCC("nvlw"), 10093.2, 2565.0, 304.870, FourCC("nvlw"))
 u = BlzCreateUnitWithSkin(p, FourCC("nchg"), 12779.8, -11384.6, 59.698, FourCC("nchg"))
 u = BlzCreateUnitWithSkin(p, FourCC("nchg"), 12864.6, -11462.1, 61.129, FourCC("nchg"))
+u = BlzCreateUnitWithSkin(p, FourCC("o04A"), -8987.2, -17542.3, 358.890, FourCC("o04A"))
 u = BlzCreateUnitWithSkin(p, FourCC("nchg"), 13004.1, -11557.9, 63.266, FourCC("nchg"))
 u = BlzCreateUnitWithSkin(p, FourCC("nfro"), 16942.6, 14795.6, 311.843, FourCC("nfro"))
 u = BlzCreateUnitWithSkin(p, FourCC("ohun"), -8074.7, -5398.0, 160.515, FourCC("ohun"))
@@ -7777,6 +7783,7 @@ SetUnitColor(u, ConvertPlayerColor(9))
 u = BlzCreateUnitWithSkin(p, FourCC("n09S"), 4241.6, -21866.1, 120.370, FourCC("n09S"))
 u = BlzCreateUnitWithSkin(p, FourCC("n0CE"), -17678.9, -24642.2, 157.856, FourCC("n0CE"))
 u = BlzCreateUnitWithSkin(p, FourCC("u02J"), -16651.7, -24533.9, 249.221, FourCC("u02J"))
+u = BlzCreateUnitWithSkin(p, FourCC("o04A"), -9072.3, -17544.9, 290.553, FourCC("o04A"))
 u = BlzCreateUnitWithSkin(p, FourCC("n0D2"), 10914.5, 8476.9, 285.365, FourCC("n0D2"))
 u = BlzCreateUnitWithSkin(p, FourCC("n0CO"), -15943.1, -24303.8, 238.103, FourCC("n0CO"))
 u = BlzCreateUnitWithSkin(p, FourCC("n0CA"), -17847.1, -24611.0, 284.104, FourCC("n0CA"))
@@ -8401,7 +8408,7 @@ gg_rct_Trade4 = Rect(18816.0, -9984.0, 19200.0, -9600.0)
 gg_rct_Trader1 = Rect(2144.0, 15456.0, 2560.0, 15776.0)
 gg_rct_Trader2 = Rect(-7840.0, -13344.0, -7456.0, -13024.0)
 gg_rct_Trader3 = Rect(8864.0, -22720.0, 9184.0, -22432.0)
-gg_rct_GadgetUnlock = Rect(-9248.0, -13984.0, -8160.0, -12896.0)
+gg_rct_GoblinStartPos = Rect(-9248.0, -13984.0, -8160.0, -12896.0)
 gg_rct_TempestKeepSpawn = Rect(3808.0, -21856.0, 4224.0, -21504.0)
 gg_rct_SummonObeliskTarget = Rect(3232.0, 22752.0, 3648.0, 23168.0)
 gg_rct_NyTanaris = Rect(-15136.0, -17888.0, -14656.0, -17376.0)
@@ -8436,8 +8443,6 @@ gg_rct_DragonmawPortal = Rect(22176.0, -4896.0, 22720.0, -4576.0)
 gg_rct_ScarletHarbor = Rect(-9728.0, 21984.0, -7872.0, 23648.0)
 gg_rct_ShadowvaultUnlock = Rect(-4480.0, 23424.0, -3168.0, 24224.0)
 gg_rct_RuinOfDalaran = Rect(9312.0, 5152.0, 9472.0, 5344.0)
-gg_rct_TrollSecondChance = Rect(-9536.0, -17856.0, -8736.0, -17152.0)
-gg_rct_TrollSecondChanceWater = Rect(-9600.0, -18528.0, -8672.0, -18080.0)
 gg_rct_Farahlon = Rect(2336.0, -20960.0, 3616.0, -19616.0)
 gg_rct_TelredorUnlock = Rect(-3296.0, -26464.0, -1728.0, -25376.0)
 gg_rct_Shattrah = Rect(-2016.0, -29440.0, -768.0, -28000.0)
@@ -8508,6 +8513,7 @@ gg_rct_UpperBarrenCreeps = Rect(-14464.0, -3104.0, -10336.0, -32.0)
 gg_rct_RiseBaseUnlock = Rect(-13056.0, 5440.0, -11072.0, 7488.0)
 gg_rct_ShrineBaseUnlock = Rect(-13184.0, 7648.0, -9632.0, 9568.0)
 gg_rct_StranglethornBaseBuild = Rect(6848.0, -24704.0, 11936.0, -17920.0)
+gg_rct_TrollStartPos = Rect(-9824.0, -18400.0, -8544.0, -16832.0)
 end
 
 function InitUpgrades_Player0()
