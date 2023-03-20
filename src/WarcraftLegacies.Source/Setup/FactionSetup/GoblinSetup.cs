@@ -10,7 +10,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
 
     public static void Setup()
     {
-      Goblin = new Faction("Bilgewater", PLAYER_COLOR_LIGHT_GRAY, "|cff808080",
+      Goblin = new Faction(FactionNames.Goblin, PLAYER_COLOR_LIGHT_GRAY, "|cff808080",
         "ReplaceableTextures\\CommandButtons\\BTNHeroTinker.blp")
       {
         StartingGold = 200,

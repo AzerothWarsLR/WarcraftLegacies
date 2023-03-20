@@ -9,16 +9,16 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
   public static class StormwindSetup
   {
     public static Faction? Stormwind { get; private set; }
-    
+
     public static void Setup()
     {
-      Stormwind = new Faction("Stormwind", PLAYER_COLOR_AQUA, "|CFF106246",
+      Stormwind = new Faction(FactionNames.Stormwind, PLAYER_COLOR_AQUA, "|CFF106246",
         "ReplaceableTextures\\CommandButtons\\BTNKnight.blp")
       {
         UndefeatedResearch = FourCC("R060"),
         StartingGold = 200,
         StartingLumber = 700,
-        ControlPointDefenderUnitTypeId = Constants.UNIT_H05X_CONTROL_POINT_DEFENDER_STORMWIND, 
+        ControlPointDefenderUnitTypeId = Constants.UNIT_H05X_CONTROL_POINT_DEFENDER_STORMWIND,
         IntroText = @"You are playing as the steadfast |cff005800Kingdom of Stormwind|r.
 
 You begin in Westfall, separated from the rest of the kingdom. Reunite your lands by liberating Darkshire, Lakeshire and finally Stormwind City. 

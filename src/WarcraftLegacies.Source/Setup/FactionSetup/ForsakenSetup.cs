@@ -9,7 +9,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
     
     public static void Setup()
     {
-      Forsaken = new Faction("Cult", PLAYER_COLOR_LIGHT_BLUE, "|cff8080ff",
+      Forsaken = new Faction(FactionNames.Cult, PLAYER_COLOR_LIGHT_BLUE, "|cff8080ff",
         "ReplaceableTextures\\CommandButtons\\BTNAcolyte.blp")
       {
         StartingGold = 0,

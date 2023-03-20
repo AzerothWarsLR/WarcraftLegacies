@@ -136,9 +136,12 @@ namespace WarcraftLegacies.Source.Quests.Scourge
 
     private static void ResetLordaeronCpLevel()
     {
-      var lordaeron = FactionManager.GetFromName("Lordaeron");
-      foreach (var cp in lordaeron.Player.GetControlPoints())
-        cp.ControlLevel = 0;
+      var lordaeron = FactionManager.GetFromName(FactionNames.Lordaeron);
+      if (lordaeron != null && lordaeron.Player != null)
+      {
+        foreach (var cp in lordaeron.Player.GetControlPoints())
+          cp.ControlLevel = 0;
+      }
     }
 
     /// <inheritdoc />

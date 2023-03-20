@@ -7,10 +7,10 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
   public static class ZandalarSetup
   {
     public static Faction? Zandalar { get; private set; }
-    
+
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
-      Zandalar = new Faction("Zandalar", PLAYER_COLOR_PEACH, "|cffff8c6c",
+      Zandalar = new Faction(FactionNames.Zandalar, PLAYER_COLOR_PEACH, "|cffff8c6c",
         "ReplaceableTextures\\CommandButtons\\BTNHeadHunterBerserker.blp")
       {
         StartingGold = 200,

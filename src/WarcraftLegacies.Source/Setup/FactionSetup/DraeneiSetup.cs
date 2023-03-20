@@ -9,7 +9,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
 
     public static void Setup()
     {
-      Draenei = new Faction("The Exodar", PLAYER_COLOR_NAVY, "|cff000080",
+      Draenei = new Faction(FactionNames.Draenai, PLAYER_COLOR_NAVY, "|cff000080",
         "ReplaceableTextures\\CommandButtons\\BTNBOSSVelen.blp")
       {
         StartingGold = 200,

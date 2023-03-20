@@ -8,10 +8,10 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
   public static class SentinelsSetup
   {
     public static Faction? Sentinels { get; private set; }
-    
+
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
-      Sentinels = new Faction("Sentinels", PLAYER_COLOR_MINT, "|CFFBFFF80",
+      Sentinels = new Faction(FactionNames.Sentinels, PLAYER_COLOR_MINT, "|CFFBFFF80",
         "ReplaceableTextures\\CommandButtons\\BTNPriestessOfTheMoon.blp")
       {
         UndefeatedResearch = FourCC("R05Y"),
@@ -89,7 +89,7 @@ Once you have secured your holdings, gather your army and destroy the Orcish Hor
       Sentinels.ModObjectLimit(FourCC("R018"), Faction.UNLIMITED); //Lightning Barrage
 
       Sentinels.AddGoldMine(preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-22721, -13570)));
-      
+
       FactionManager.Register(Sentinels);
     }
   }

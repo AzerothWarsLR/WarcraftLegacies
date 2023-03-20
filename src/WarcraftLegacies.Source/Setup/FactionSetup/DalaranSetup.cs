@@ -11,7 +11,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
 
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
-      Dalaran = new Faction("Dalaran", PLAYER_COLOR_PINK, "|c00e55bb0",
+      Dalaran = new Faction(FactionNames.Dalaran, PLAYER_COLOR_PINK, "|c00e55bb0",
         "ReplaceableTextures\\CommandButtons\\BTNJaina.blp")
       {
         UndefeatedResearch = FourCC("R05N"),
@@ -98,7 +98,7 @@ Your mages are the finest in Azeroth, be sure to utilize them alongside your her
       Dalaran.ModAbilityAvailability(Constants.ABILITY_A0K5_DWARVEN_MASONRY_CASTLES_YELLOW, -1);
 
       Dalaran.AddGoldMine(preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(9204, 2471)));
-      
+
       FactionManager.Register(Dalaran);
     }
   }
