@@ -68,11 +68,10 @@ Once you have secured your holdings, gather your army and destroy the Orcish Hor
       Sentinels.ModObjectLimit(FourCC("h0BA"), Faction.UNLIMITED); // Juggernaut
       Sentinels.ModObjectLimit(FourCC("h0B8"), 6); // Bombard
 
-      Sentinels.ModObjectLimit(FourCC("e009"), 1); //Naisha
+      Sentinels.ModObjectLimit(FourCC("E025"), 1); //Naisha
       Sentinels.ModObjectLimit(FourCC("Etyr"), 1); //Tyrande
       Sentinels.ModObjectLimit(FourCC("E002"), 1); //Shandris
       Sentinels.ModObjectLimit(FourCC("Ewrd"), 1); //Maiev
-      Sentinels.ModObjectLimit(FourCC("O02E"), 1); //Jarod
 
       Sentinels.ModObjectLimit(FourCC("R00S"), Faction.UNLIMITED); //Priestess Adept Training
       Sentinels.ModObjectLimit(FourCC("R064"), Faction.UNLIMITED); //Sentinel Fortifications

@@ -12,7 +12,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
   {
     public static void Setup()
     { 
-      PassiveAbilityManager.Register(new DefensiveOrbs(Constants.UNIT_E025, Constants.ABILITY_A10A_GLAIVE_STORM_ICON_NAISHA)
+      PassiveAbilityManager.Register(new DefensiveOrbs(Constants.UNIT_E025_LIEUTENANT_OF_THE_WATCHERS_SENTINELS, Constants.ABILITY_A10A_GLAIVE_STORM_ICON_NAISHA)
       {
         OrbitRadius = 350,
         OrbitalPeriod = 4,
@@ -22,9 +22,8 @@ namespace WarcraftLegacies.Source.Setup.Spells
         OrbDuration = 20,
         AbilityWhitelist = new List<int>
         {
-          Constants.ABILITY_A04J_ARCANE_BURST_HIGH_ELVES_ANASTERIAN,
-          Constants.ABILITY_A013_DEVOUR_MAGIC_GUL_DAN,
-          Constants.ABILITY_AHPX_ASHES_OF_AL_AR_QUEL_THALAS_ANASTERIAN_KAEL_THAS
+          Constants.ABILITY_A0FC_BARBED_NET_NAISHA,
+          Constants.ABILITY_A0MG_QUICK_KNIVES_NAISHA,
         }
       });
 

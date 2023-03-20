@@ -236,7 +236,7 @@ public static class Regions
 	public static Rectangle Trader1 { get; set; } = new Rectangle(2144f, 15456f, 2560f, 15776f);
 	public static Rectangle Trader2 { get; set; } = new Rectangle(-7840f, -13344f, -7456f, -13024f);
 	public static Rectangle Trader3 { get; set; } = new Rectangle(8864f, -22720f, 9184f, -22432f);
-	public static Rectangle GadgetUnlock { get; set; } = new Rectangle(-9248f, -13984f, -8160f, -12896f);
+	public static Rectangle GoblinStartPos { get; set; } = new Rectangle(-9248f, -13984f, -8160f, -12896f);
 	public static Rectangle TempestKeepSpawn { get; set; } = new Rectangle(3808f, -21856f, 4224f, -21504f);
 	public static Rectangle SummonObeliskTarget { get; set; } = new Rectangle(3232f, 22752f, 3648f, 23168f);
 	public static Rectangle NyTanaris { get; set; } = new Rectangle(-15136f, -17888f, -14656f, -17376f);
@@ -271,8 +271,6 @@ public static class Regions
 	public static Rectangle ScarletHarbor { get; set; } = new Rectangle(-9728f, 21984f, -7872f, 23648f);
 	public static Rectangle ShadowvaultUnlock { get; set; } = new Rectangle(-4480f, 23424f, -3168f, 24224f);
 	public static Rectangle RuinOfDalaran { get; set; } = new Rectangle(9312f, 5152f, 9472f, 5344f);
-	public static Rectangle TrollSecondChance { get; set; } = new Rectangle(-9536f, -17856f, -8736f, -17152f);
-	public static Rectangle TrollSecondChanceWater { get; set; } = new Rectangle(-9600f, -18528f, -8672f, -18080f);
 	public static Rectangle Farahlon { get; set; } = new Rectangle(2336f, -20960f, 3616f, -19616f);
 	public static Rectangle TelredorUnlock { get; set; } = new Rectangle(-3296f, -26464f, -1728f, -25376f);
 	public static Rectangle Shattrah { get; set; } = new Rectangle(-2016f, -29440f, -768f, -28000f);
@@ -343,5 +341,6 @@ public static class Regions
 	public static Rectangle RiseBaseUnlock { get; set; } = new Rectangle(-13056f, 5440f, -11072f, 7488f);
 	public static Rectangle ShrineBaseUnlock { get; set; } = new Rectangle(-13184f, 7648f, -9632f, 9568f);
 	public static Rectangle StranglethornBaseBuild { get; set; } = new Rectangle(6848f, -24704f, 11936f, -17920f);
+	public static Rectangle TrollStartPos { get; set; } = new Rectangle(-9824f, -18400f, -8544f, -16832f);
 
 }

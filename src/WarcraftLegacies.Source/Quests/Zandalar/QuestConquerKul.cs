@@ -78,17 +78,6 @@ namespace WarcraftLegacies.Source.Quests.Zandalar
           SetCameraPosition(_onFailSpawnRect.Center.X, _onFailSpawnRect.Center.Y);
         completingFaction.Player.AddGold(1500);
         completingFaction.Player.AddLumber(2000);
-
-        GeneralHelpers.CreateUnits(completingFaction.Player, Constants.UNIT_H021_WATCHER_TROLL,
-          Regions.TrollSecondChance.Center.X, Regions.TrollSecondChance.Center.Y, 270, 8);
-        GeneralHelpers.CreateUnits(completingFaction.Player, Constants.UNIT_O04A_GATHERER_TROLL_ZANDALARI_WORKER,
-          Regions.TrollSecondChance.Center.X, Regions.TrollSecondChance.Center.Y, 270, 8);
-        GeneralHelpers.CreateUnits(completingFaction.Player, Constants.UNIT_O04D_SCOUT_TROLL,
-          Regions.TrollSecondChance.Center.X, Regions.TrollSecondChance.Center.Y, 270, 6);
-        GeneralHelpers.CreateUnits(completingFaction.Player, Constants.UNIT_H05D_RAPTOR_RIDER_TROLL,
-          Regions.TrollSecondChance.Center.X, Regions.TrollSecondChance.Center.Y, 270, 4);
-        GeneralHelpers.CreateUnits(completingFaction.Player, Constants.UNIT_O04W_GOLDEN_VESSEL_ZANDALAR,
-          Regions.TrollSecondChance.Center.X, Regions.TrollSecondChance.Center.Y, 270, 3);
       }
       ZandalarSetup.Zandalar?.Player?.SetTeam(TeamSetup.Horde);
     }
