@@ -335,6 +335,7 @@ gg_rct_LumberCampUnlock = nil
 gg_rct_UpperBarrenCreeps = nil
 gg_rct_RiseBaseUnlock = nil
 gg_rct_ShrineBaseUnlock = nil
+gg_rct_StranglethornBaseBuild = nil
 gg_snd_ArcaneObservatoryWhat1 = nil
 gg_snd_ArrangedTeamInvitation = nil
 gg_snd_ClanInvitation = nil
@@ -523,7 +524,6 @@ gg_snd_DoorCloseRemix = nil
 gg_snd_DoorOpenRemix = nil
 gg_snd_NuclearLaunchDetected = nil
 gg_snd_IllidansTheme = ""
-gg_rct_StranglethornBaseBuild = nil
 function InitGlobals()
 end
 
@@ -8227,7 +8227,7 @@ gg_rct_Quel_Ships_3 = Rect(16288.0, 11744.0, 21920.0, 15584.0)
 gg_rct_Quelthalas = Rect(15136.0, 13536.0, 21408.0, 23168.0)
 gg_rct_Sargeras_Entrance = Rect(-1024.0, 8096.0, -448.0, 8576.0)
 gg_rct_South_EK_Ships = Rect(7872.0, -18240.0, 18880.0, -12288.0)
-gg_rct_StonemaulKeep = Rect(-11808.0, -10112.0, -9216.0, -7904.0)
+gg_rct_StonemaulKeep = Rect(-12096.0, -10144.0, -9216.0, -7904.0)
 gg_rct_Storm_Peaks = Rect(-1088.0, 21088.0, 4640.0, 25088.0)
 we = AddWeatherEffect(gg_rct_Storm_Peaks, FourCC("SNhs"))
 EnableWeatherEffect(we, true)

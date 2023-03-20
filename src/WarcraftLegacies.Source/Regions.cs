@@ -66,7 +66,7 @@ public static class Regions
 	public static Rectangle Quelthalas { get; set; } = new Rectangle(15136f, 13536f, 21408f, 23168f);
 	public static Rectangle Sargeras_Entrance { get; set; } = new Rectangle(-1024f, 8096f, -448f, 8576f);
 	public static Rectangle South_EK_Ships { get; set; } = new Rectangle(7872f, -18240f, 18880f, -12288f);
-	public static Rectangle StonemaulKeep { get; set; } = new Rectangle(-11808f, -10112f, -9216f, -7904f);
+	public static Rectangle StonemaulKeep { get; set; } = new Rectangle(-12096f, -10144f, -9216f, -7904f);
 	public static Rectangle Storm_Peaks { get; set; } = new Rectangle(-1088f, 21088f, 4640f, 25088f);
 	public static Rectangle Stormwind { get; set; } = new Rectangle(10880f, -10176f, 11040f, -10016f);
 	public static Rectangle StratholmeShipyard { get; set; } = new Rectangle(13696f, 7232f, 20128f, 11712f);
