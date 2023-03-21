@@ -74,6 +74,7 @@ Your mages are the finest in Azeroth, be sure to utilize them alongside your her
       Dalaran.ModObjectLimit(FourCC("njks"), 1); //Jailor Kassan
       Dalaran.ModObjectLimit(FourCC("Hjai"), 1); //jaina
       Dalaran.ModObjectLimit(FourCC("Hant"), 1); //antonidas
+      Dalaran.ModObjectLimit(FourCC("H09N"), 1); //aegwynn
 
       //Upgrades
       Dalaran.ModObjectLimit(FourCC("R01I"), Faction.UNLIMITED); //Arcanist Adept Training
