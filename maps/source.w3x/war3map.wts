@@ -117257,30 +117257,6 @@ STRING 19544
 Cosmic hero, expert at team fight support.|n|cfff5962dCan learn:|R Light's Edict, Blinding Starlight, Wise Council, Army of the Light|n|n|cffffcc00Attacks land and air units.|R
 }
 
-STRING 19545
-// Abilities: A0L5 (Light's Edict), Ubertip (Tooltip - Normal - Extended)
-{
-Bombards an area with 6 waves of light bursts. Each wave deals 15 damage to all units in an area.
-}
-
-STRING 19546
-// Abilities: A0L5 (Light's Edict), Ubertip (Tooltip - Normal - Extended)
-{
-Bombards an area with 8 waves of light bursts. Each wave deals 20 damage to all units in an area.
-}
-
-STRING 19547
-// Abilities: A0L5 (Light's Edict), Ubertip (Tooltip - Normal - Extended)
-{
-Bombards an area with 10 waves of light bursts. Each wave deals 25 damage to all units in an area.
-}
-
-STRING 19548
-// Abilities: A0L5 (Light's Edict), Ubertip (Tooltip - Normal - Extended)
-{
-Bombards an area with 12 waves of light bursts. Each wave deals 30 damage to all units in an area.
-}
-
 STRING 19549
 // Abilities: A103 (Holy Shockwave), Ubertip (Tooltip - Normal - Extended)
 {
@@ -121251,5 +121227,47 @@ STRING 20210
 // Upgrades: R097 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 E
+}
+
+STRING 20211
+// Units: H09N (Matriarch of Tirisfal), Awakentip (Tooltip - Awaken)
+{
+Revive Aegwynn
+}
+
+STRING 20212
+// Units: H09N (Matriarch of Tirisfal), Revivetip (Tooltip - Revive)
+{
+Revive Aegwynn
+}
+
+STRING 20213
+// Abilities: A0L5 (Light's Edict), Ubertip (Tooltip - Normal - Extended)
+{
+Calls upon 6 waves of light bursts. Each wave heals 15 HP to all friendly units in an area.
+}
+
+STRING 20214
+// Abilities: A0L5 (Light's Edict), Ubertip (Tooltip - Normal - Extended)
+{
+Calls upon 8 waves of light bursts. Each wave heals 20 HP to all friendly units in an area.
+}
+
+STRING 20215
+// Abilities: A0L5 (Light's Edict), Ubertip (Tooltip - Normal - Extended)
+{
+Calls upon 10 waves of light bursts. Each wave heals 25 HP to all friendly units in an area.
+}
+
+STRING 20216
+// Abilities: A0L5 (Light's Edict), Ubertip (Tooltip - Normal - Extended)
+{
+Calls upon 12 waves of light bursts. Each wave heals 30 HP to all friendly units in an area.
+}
+
+STRING 20217
+// Abilities: A0L5 (Light's Edict), Researchubertip (Tooltip - Learn - Extended)
+{
+Calls down holy beams of light that heal friendly units in a target area. |n|n|cffffcc00Level 1|r - <ANhs,DataF1> waves at <ANhs,DataA1> hit points healed each. |n|cffffcc00Level 2|r - <ANhs,DataF2> waves at <ANhs,DataA2> hit points healed each. |n|cffffcc00Level 3|r - <ANhs,DataF3> waves at <ANhs,DataA3> hit points healed each.
 }
 
