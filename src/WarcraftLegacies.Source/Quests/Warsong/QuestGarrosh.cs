@@ -21,7 +21,7 @@ namespace WarcraftLegacies.Source.Quests.Warsong
       "ReplaceableTextures\\CommandButtons\\BTNWC1UnholyArmorRemasteredAlt.blp")
     {
       AddObjective(new ObjectiveCapitalDead(darnassus));
-      ResearchId = Constants.UPGRADE_R044_QUEST_COMPLETED_NATURAL_CONTEST_DRUIDS;
+      ResearchId = Constants.UPGRADE_R062_QUEST_COMPLETED_THIRST_FOR_CONQUEST;
     }
 
   }

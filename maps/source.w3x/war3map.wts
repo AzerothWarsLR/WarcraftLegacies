@@ -109611,7 +109611,7 @@ Provides Daelin with the resources required to launch an incursion into Kalimdor
 }
 
 STRING 18272
-// Upgrades: R05O (Iron Plating,Steel Plating,Mithril Plating), EditorSuffix (Editor Suffix)
+// Abilities: A10E (Blood Brothers), EditorSuffix (Editor Suffix)
 {
 (warsong)
 }
@@ -118968,7 +118968,7 @@ Build Manaforge
 }
 
 STRING 19841
-// Abilities: A10E (Blood Brothers), EditorSuffix (Editor Suffix)
+// Abilities: S00K (Well Oiled Aura), EditorSuffix (Editor Suffix)
 {
 (warsong)
 }
@@ -119880,7 +119880,7 @@ STRING 19993
 }
 
 STRING 19994
-// Abilities: S00K (Well Oiled Aura), EditorSuffix (Editor Suffix)
+// Upgrades: R05O (Iron Plating,Steel Plating,Mithril Plating), EditorSuffix (Editor Suffix)
 {
 (warsong)
 }
