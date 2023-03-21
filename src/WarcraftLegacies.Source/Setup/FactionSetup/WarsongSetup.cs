@@ -69,7 +69,7 @@ The Night Elves are aware of your presence and are gathering a mighty host again
 
       WarsongClan.ModObjectLimit(FourCC("Ogrh"), 1); //Grom
       WarsongClan.ModObjectLimit(FourCC("Obla"), 1); //Varok
-      WarsongClan.ModObjectLimit(FourCC("O05O"), 1); //Varok
+      WarsongClan.ModObjectLimit(FourCC("O06L"), 1); //Garrosh
       WarsongClan.ModObjectLimit(FourCC("n0CN"), 1); //Gibbs
 
       WarsongClan.ModObjectLimit(FourCC("Robs"), Faction.UNLIMITED); //Berserker Strength
