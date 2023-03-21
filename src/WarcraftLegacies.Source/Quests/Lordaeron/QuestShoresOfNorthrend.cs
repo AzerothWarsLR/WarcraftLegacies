@@ -73,7 +73,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
         CreateStructureForced(completingFaction.Player, Constants.UNIT_HFOO_FOOTMAN_LORDAERON, -174, 16631, 3.987584f * MathEx.DegToRad, 256);
         CreateStructureForced(completingFaction.Player, Constants.UNIT_HFOO_FOOTMAN_LORDAERON, -388, 16871, 4.113693f * MathEx.DegToRad, 256);
         CreateStructureForced(completingFaction.Player, Constants.UNIT_HFOO_FOOTMAN_LORDAERON, -561, 16521, 6.02386f * MathEx.DegToRad, 256);
-        CreateStructureForced(completingFaction.Player, Constants.UNIT_H0AX_FRIGATE_ALLIANCE, 251, 15569, 5.33097f * MathEx.DegToRad, 256);
+        CreateStructureForced(completingFaction.Player, Constants.UNIT_H0B0_GALLEY_ALLIANCE, 251, 15569, 5.33097f * MathEx.DegToRad, 256);
         CreateStructureForced(completingFaction.Player, Constants.UNIT_HBLA_BLACKSMITH_LORDAERON_RESEARCH, 800, 16288, 4.712389f * MathEx.DegToRad, 256);
         CreateStructureForced(completingFaction.Player, Constants.UNIT_HGTW_GUARD_TOWER_LORDAERON_TOWER, 1472, 16384, 4.712389f * MathEx.DegToRad, 256);
         CreateStructureForced(completingFaction.Player, Constants.UNIT_HKNI_KNIGHT_LORDAERON, 893, 16175, 4.130178f * MathEx.DegToRad, 256);

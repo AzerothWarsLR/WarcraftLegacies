@@ -18547,7 +18547,7 @@ Build Academy
 }
 
 STRING 3092
-// Units: h03Z (War Gryphon), EditorSuffix (Name - Editor Suffix)
+// Units: h03Z (Stormrider), EditorSuffix (Name - Editor Suffix)
 {
 (Ironforge)
 }
@@ -32520,9 +32520,9 @@ Learn Bladestorm - [|cffffcc00Level %d|r]
 }
 
 STRING 5421
-// Abilities: AOww (Bladestorm), Researchubertip (Tooltip - Learn - Extended)
+// Units: hgra (Gryphon Aviary), Ubertip (Tooltip - Extended)
 {
-Causes a bladestorm of destructive force around the Blademaster, rendering him immune to magic and dealing damage to nearby enemy land units for 3 seconds. |n|n|cffffcc00Level 1|r - 60 damage. |n|cffffcc00Level 2|r - 90 damage. |n|cffffcc00Level 3|r - 120 damage.|n|cffffcc00Level 4|r - 150 damage.
+Fortified rookery for the gryphons of Ironforge.|n|cfff5962dTrains:|R Gryphon Rider, Stormrider|n|cfff5962dResearches:|R Storm Hammers, Gryphon Superior Breed
 }
 
 STRING 5422
@@ -32550,27 +32550,27 @@ Bladestorm - [|cffffcc00Level 4|r]
 }
 
 STRING 5426
-// Abilities: AOww (Bladestorm), Ubertip (Tooltip - Normal - Extended)
+// Units: h03Z (Stormrider), Ubertip (Tooltip - Extended)
 {
-Causes a bladestorm of destructive force around the Blademaster, rendering him immune to magic and dealing 60 damage to nearby enemy units.|nLasts 3 seconds.
+Majestic gryphon ridden by a powerful Thane. |n|cfff5962dAbilities:|R Master of Lightning, War Rider Aura|n|n|cff99b4d1Can only train 3.|r|n|cffffcc00Attacks land and air units.|r
 }
 
 STRING 5427
-// Abilities: AOww (Bladestorm), Ubertip (Tooltip - Normal - Extended)
+// Units: h03Z (Stormrider), Name (Name)
 {
-Causes a bladestorm of destructive force around the Blademaster, rendering him immune to magic and dealing 90 damage to nearby enemy units. |nLasts 3 seconds.
+Stormrider
 }
 
 STRING 5428
-// Abilities: AOww (Bladestorm), Ubertip (Tooltip - Normal - Extended)
+// Units: h03Z (Stormrider), Tip (Tooltip - Basic)
 {
-Causes a bladestorm of destructive force around the Blademaster, rendering him immune to magic and dealing 120 damage to nearby enemy units. |nLasts 3 seconds.
+Train Stormrider
 }
 
 STRING 5429
-// Abilities: AOww (Bladestorm), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A10J (Master of Lightning), EditorSuffix (Editor Suffix)
 {
-Causes a bladestorm of destructive force around the Blademaster, rendering him immune to magic and dealing 150 damage to nearby enemy units. |nLasts 3 seconds.
+(stormriders)
 }
 
 STRING 5430
@@ -34788,7 +34788,7 @@ STRING 5798
 }
 
 STRING 5799
-// Units: h03Z (War Gryphon), Hotkey (Hotkey)
+// Units: h03Z (Stormrider), Hotkey (Hotkey)
 {
 W
 }
@@ -59158,12 +59158,6 @@ STRING 9856
 Ooze
 }
 
-STRING 9857
-// Units: h03Z (War Gryphon), Name (Name)
-{
-War Gryphon
-}
-
 STRING 9858
 // Units: u025 (Elementalist), Ubertip (Tooltip - Extended)
 {
@@ -72998,6 +72992,12 @@ STRING 12161
 // Abilities: AHds (Demonic Shield), Name (Name)
 {
 Demonic Shield
+}
+
+STRING 12162
+// Units: Obla (High Overlord of the Kor'kron), Ubertip (Tooltip - Extended)
+{
+Warrior Hero, specialised in enduring and buffing troops.|n|cfff5962dAbilities:|r Cleaving Attack|n|cfff5962dCan learn:|R Seismic Slam, Battleshout, Toughness, Warsong Battle Standard|n|n|cffffcc00Attacks land units.|R
 }
 
 STRING 12163
@@ -109646,6 +109646,12 @@ STRING 18277
 (Dragonmaw)(Level 3)
 }
 
+STRING 18278
+// Units: O06L (Warlord of the Warsong Clan), Ubertip (Tooltip - Extended)
+{
+Warrior Hero, specialize in buffing his frontline.|n|cfff5962dAbilities:|r Execute|n|cfff5962dCan learn:|R Blade Storm, Mass Unholy Armor, Blood Absorption, Field of Blood|n|cffffcc00Attacks land units.|R
+}
+
 STRING 18279
 // Units: O05S (Warlord Maiden), EditorSuffix (Name - Editor Suffix)
 {
@@ -111226,7 +111232,7 @@ Train Bear Rider
 }
 
 STRING 18542
-// Upgrades: Rora (Steel Ranged Weapons,Thorium Ranged Weapons,Arcanite Ranged Weapons), Hotkey (Hotkey)
+// Abilities: A10J (Master of Lightning), Researchhotkey (Hotkey - Learn)
 {
 W
 }
@@ -111286,7 +111292,7 @@ Q
 }
 
 STRING 18552
-// Upgrades: Rhra (Black Gunpowder,Refined Gunpowder,Imbued Gunpowder), Hotkey (Hotkey)
+// Upgrades: Rora (Steel Ranged Weapons,Thorium Ranged Weapons,Arcanite Ranged Weapons), Hotkey (Hotkey)
 {
 W
 }
@@ -111346,7 +111352,7 @@ STRING 18561
 }
 
 STRING 18562
-// Upgrades: Rhac (Improved Masonry,Advanced Masonry,Imbued Masonry), Hotkey (Hotkey)
+// Upgrades: Rhra (Black Gunpowder,Refined Gunpowder,Imbued Gunpowder), Hotkey (Hotkey)
 {
 W
 }
@@ -114083,9 +114089,9 @@ The Path of the Old Gods
 }
 
 STRING 19018
-// Upgrades: R03D (Defend), Ubertip (Tooltip - Extended)
+// Abilities: A10J (Master of Lightning), Researchubertip (Tooltip - Learn - Extended)
 {
-Emphasis during training is placed on defensive capabilities, granting the following improvements:|n|n- Marshal health increased by 200.|n|n- Enables the |cffcece00On Guard |rability for Marshals, which gives friendly nearby units 100 additional armor for 2 seconds.|n|n- Enables the |cffcece00Defensive Formation |rability for Marshals, which decreases nearby enemy units attack damage by 10%.|n|n- |cffcece00Steel Plating |rblocks an additional 3 damage.|n|n|cffcece00- Combat Experience |rgains an additional 5% evasion.
+When this hero attacks, it has a 15% chance to hurl lightning at <A024,DataB1> targets, dealing damage to each of them. |n|n|cffffcc00Level 1|r - Deals <A024,DataA1> damage. |n|cffffcc00Level 2|r - Deals <A024,DataA2> damage.|n|cffffcc00Level 3|r - Deals <A024,DataA3> damage.|n|cffffcc00Level 4|r - Deals <A024,DataA4> damage.
 }
 
 STRING 19019
@@ -115877,6 +115883,12 @@ STRING 19316
 R
 }
 
+STRING 19317
+// Abilities: AOww (Bladestorm), Researchubertip (Tooltip - Learn - Extended)
+{
+Causes a bladestorm of destructive force around the Blademaster, rendering him immune to magic and dealing damage to nearby enemy land units for 1 seconds. |n|n|cffffcc00Level 1|r - 180 damage. |n|cffffcc00Level 2|r - 270 damage. |n|cffffcc00Level 3|r - 360 damage.|n|cffffcc00Level 4|r - 450 damage.
+}
+
 STRING 19318
 // Abilities: A10C (Open a portal to Argus), Researchhotkey (Hotkey - Learn)
 {
@@ -116063,6 +116075,12 @@ STRING 19348
 (Draenei)
 }
 
+STRING 19349
+// Abilities: AOww (Bladestorm), Ubertip (Tooltip - Normal - Extended)
+{
+Causes a bladestorm of destructive force around the Blademaster, rendering him immune to magic and dealing 180 damage to nearby enemy units.|nLasts 1 seconds.
+}
+
 STRING 19350
 // Abilities: A0MU (Build Oil Rig), EditorSuffix (Editor Suffix)
 {
@@ -116207,6 +116225,12 @@ STRING 19373
 Build Coral of Lore
 }
 
+STRING 19374
+// Abilities: AOww (Bladestorm), Ubertip (Tooltip - Normal - Extended)
+{
+Causes a bladestorm of destructive force around the Blademaster, rendering him immune to magic and dealing 270 damage to nearby enemy units. |nLasts 1 seconds.
+}
+
 STRING 19375
 // Units: e01U (Coral of Lore), Name (Name)
 {
@@ -116333,10 +116357,22 @@ STRING 19395
 Shockwave - [|cffffcc00Level 1|r]
 }
 
+STRING 19396
+// Abilities: AOww (Bladestorm), Ubertip (Tooltip - Normal - Extended)
+{
+Causes a bladestorm of destructive force around the Blademaster, rendering him immune to magic and dealing 360 damage to nearby enemy units. |nLasts 1 seconds.
+}
+
 STRING 19397
 // Abilities: A103 (Holy Shockwave), Ubertip (Tooltip - Normal - Extended)
 {
 When this hero attacks, it has a 15% chance to hurl lightning at <A024,DataB2> targets, dealing <A024,DataA2> damage to each of them.
+}
+
+STRING 19398
+// Abilities: AOww (Bladestorm), Ubertip (Tooltip - Normal - Extended)
+{
+Causes a bladestorm of destructive force around the Blademaster, rendering him immune to magic and dealing 450 damage to nearby enemy units. |nLasts 1 seconds.
 }
 
 STRING 19399
@@ -116351,10 +116387,28 @@ STRING 19400
 Places a battle standard, giving bonus regeneration and armor to friendly units next to the banner.|nLasts 25 seconds. |n|n|cffffcc00Level 1|r - 750 hit points gives a 50% regeneration increase and 10 armor. |n|cffffcc00Level 2|r - 950 hit points gives a 100% regeneration increase and 10 armor.|n|cffffcc00Level 3|r - 1250 hit points gives a 150% regeneration increase and 10 armor.
 }
 
+STRING 19401
+// Abilities: A0XB (Decapitate), EditorSuffix (Editor Suffix)
+{
+(Garrosh)
+}
+
 STRING 19402
 // Abilities: A0ZI (Serrated Blades), Tip (Tooltip - Normal)
 {
 Serrated Blades
+}
+
+STRING 19403
+// Abilities: A10G (Execute), Ubertip (Tooltip - Normal - Extended)
+{
+This unit's attacks instantly kill units with fewer hit points than 400% of this units damage, and heroes with fewer hit points than 150% of its damage.
+}
+
+STRING 19404
+// Upgrades: R03D (Defend), Ubertip (Tooltip - Extended)
+{
+Emphasis during training is placed on defensive capabilities, granting the following improvements:|n|n- Marshal health increased by 200.|n- Enables the |cffcece00On Guard |rability for Marshals, which gives friendly nearby units 100 additional armor for 2 seconds.|n- Enables the |cffcece00Defensive Formation |rability for Marshals, which decreases nearby enemy units attack damage by 10%.|n- |cffcece00Steel Plating |rblocks an additional 3 damage.|n|cffcece00- Combat Experience |rgains an additional 5% evasion.
 }
 
 STRING 19405
@@ -116700,7 +116754,7 @@ Thunder Fists - [|cffffcc00Level 3|r]
 }
 
 STRING 19462
-// Upgrades: R01B (Defend), Hotkey (Hotkey)
+// Upgrades: Rhac (Improved Masonry,Advanced Masonry,Imbued Masonry), Hotkey (Hotkey)
 {
 W
 }
@@ -118763,8 +118817,14 @@ STRING 19805
 (Quel'thalas T3)
 }
 
+STRING 19806
+// Abilities: A10J (Master of Lightning), Tip (Tooltip - Normal)
+{
+Thunder Fists - [|cffffcc00Level 4|r]
+}
+
 STRING 19807
-// Upgrades: R07I (Necromancer Adept Training,Necromancer Master Training), Hotkey (Hotkey)
+// Upgrades: R01B (Defend), Hotkey (Hotkey)
 {
 W
 }
@@ -119459,12 +119519,6 @@ STRING 19922
 E
 }
 
-STRING 19923
-// Units: h03Z (War Gryphon), Tip (Tooltip - Basic)
-{
-Train War Gryphon
-}
-
 STRING 19924
 // Units: o03J (Voidforge), EditorSuffix (Name - Editor Suffix)
 {
@@ -119753,12 +119807,6 @@ STRING 19971
 W
 }
 
-STRING 19972
-// Units: hgra (Gryphon Aviary), Ubertip (Tooltip - Extended)
-{
-Fortified rookery for the gryphons of Ironforge.|n|cfff5962dTrains:|R Gryphon Rider, War Gryphon|n|cfff5962dResearches:|R Storm Hammers, Gryphon Superior Breed
-}
-
 STRING 19973
 // Units: o048 (Improved Watch Tower), EditorSuffix (Name - Editor Suffix)
 {
@@ -119769,12 +119817,6 @@ STRING 19974
 // Units: o045 (Dwelling), EditorSuffix (Name - Editor Suffix)
 {
  (Zandalari Farm)
-}
-
-STRING 19975
-// Units: h03Z (War Gryphon), Ubertip (Tooltip - Extended)
-{
-Powerful flying creature, mounted by a Wildhammer Thane. |n|cfff5962dAbilities:|R War Rider Aura|n|n|cff99b4d1Can only train 3.|r|n|cffffcc00Attacks land and air units.|r
 }
 
 STRING 19976
@@ -119825,6 +119867,12 @@ STRING 19983
 Summon Garrosh
 }
 
+STRING 19984
+// Abilities: A10J (Master of Lightning), Ubertip (Tooltip - Normal - Extended)
+{
+When this unit attacks, it has a 15% chance to hurl lightning at 5 targets, dealing 75 damage to each of them.
+}
+
 STRING 19985
 // Abilities: A0ZA (Warsong Battle Standard), Name (Name)
 {
@@ -119856,9 +119904,9 @@ Warsong Battle Standard - [|cffffcc00Level 3|r]
 }
 
 STRING 19990
-// Abilities: A10G (Execute), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A10J (Master of Lightning), Ubertip (Tooltip - Normal - Extended)
 {
-This unit's attacks instantly kill units with fewer hit points than 400% of this units damage, and heroes with fewer hit points than 200% of its damage.
+When this hero attacks, it has a 15% chance to hurl lightning at <A024,DataB2> targets, dealing <A024,DataA2> damage to each of them.
 }
 
 STRING 19991
@@ -119885,10 +119933,16 @@ STRING 19994
 (warsong)
 }
 
-STRING 19996
-// Units: Obla (High Overlord of the Kor'kron), Ubertip (Tooltip - Extended)
+STRING 19995
+// Abilities: A10J (Master of Lightning), Ubertip (Tooltip - Normal - Extended)
 {
-Warrior Hero, specialised in enduring and buffing troops.|n|cfff5962dAbilities:|r Cleaving Attack|n|cfff5962dCan learn:|R Decapitate, Battleshout, Toughness, Battle Trance|n|n|cffffcc00Attacks land units.|R
+When this hero attacks, it has a 15% chance to hurl lightning at <A024,DataB3> targets, dealing <A024,DataA3> damage to each of them.
+}
+
+STRING 19996
+// Abilities: A10J (Master of Lightning), Ubertip (Tooltip - Normal - Extended)
+{
+When this hero attacks, it has a 15% chance to hurl lightning at <A024,DataB4> targets, dealing <A024,DataA4> damage to each of them.
 }
 
 STRING 19997
@@ -119982,9 +120036,9 @@ Summon Undertaker's Vault
 }
 
 STRING 20012
-// Units: O06L (Warlord of the Warsong Clan), Ubertip (Tooltip - Extended)
+// Abilities: A10J (Master of Lightning), Name (Name)
 {
-Warrior Hero, specialize in buffing his frontline..|n|cfff5962dAbilities:|r Execute|n|cfff5962dCan learn:|R Seismic Slam, Mass Unholy Armor, Blood Absorption, Warsong Battle Standard|n|cffffcc00Attacks land units.|R
+Master of Lightning
 }
 
 STRING 20013
@@ -120096,9 +120150,9 @@ STRING 20030
 }
 
 STRING 20031
-// Abilities: A0XB (Decapitate), EditorSuffix (Editor Suffix)
+// Abilities: A10J (Master of Lightning), Researchtip (Tooltip - Learn)
 {
-(saurfang)
+Learn Thunder Fists - [|cffffcc00Level %d|r]
 }
 
 STRING 20032
@@ -120233,10 +120287,22 @@ STRING 20053
 Q
 }
 
+STRING 20054
+// Abilities: A10J (Master of Lightning), Tip (Tooltip - Normal)
+{
+Master of Lightning
+}
+
 STRING 20055
 // Units: n0AX (Pit of Torment), EditorSuffix (Name - Editor Suffix)
 {
 (Yogg Specialist)
+}
+
+STRING 20056
+// Abilities: A10J (Master of Lightning), Tip (Tooltip - Normal)
+{
+Thunder Fists - [|cffffcc00Level 2|r]
 }
 
 STRING 20057
@@ -120315,6 +120381,18 @@ STRING 20069
 // Units: n0B3 (Shadow Lair), EditorSuffix (Name - Editor Suffix)
 {
 (Yogg Magic)
+}
+
+STRING 20070
+// Abilities: A10J (Master of Lightning), Tip (Tooltip - Normal)
+{
+Thunder Fists - [|cffffcc00Level 3|r]
+}
+
+STRING 20071
+// Upgrades: R07I (Necromancer Adept Training,Necromancer Master Training), Hotkey (Hotkey)
+{
+W
 }
 
 STRING 20073

@@ -181,7 +181,6 @@ gg_rct_WaveCrash = nil
 gg_rct_IllidanBoat2 = nil
 gg_rct_IllidanBoat3 = nil
 gg_rct_IllidanBoat4 = nil
-gg_rct_IllidanExitText1 = nil
 gg_rct_IllidanDalaExit = nil
 gg_rct_IllidanLast = nil
 gg_rct_MaelstromAmbient = nil
@@ -5610,7 +5609,7 @@ SetUnitAcquireRange(u, 200.0)
 u = BlzCreateUnitWithSkin(p, FourCC("ngrk"), -11692.8, -16618.2, 83.683, FourCC("ngrk"))
 SetUnitState(u, UNIT_STATE_MANA, 300)
 SetUnitAcquireRange(u, 200.0)
-u = BlzCreateUnitWithSkin(p, FourCC("ncen"), -13506.2, -786.0, -19.414, FourCC("ncen"))
+u = BlzCreateUnitWithSkin(p, FourCC("ncen"), -13506.2, -786.0, 340.586, FourCC("ncen"))
 SetUnitAcquireRange(u, 200.0)
 u = BlzCreateUnitWithSkin(p, FourCC("ngh1"), -15984.9, -13642.5, 156.882, FourCC("ngh1"))
 SetUnitState(u, UNIT_STATE_MANA, 300)
@@ -5920,10 +5919,10 @@ u = BlzCreateUnitWithSkin(p, FourCC("nfrl"), -9861.9, 8829.6, 215.009, FourCC("n
 SetUnitAcquireRange(u, 200.0)
 u = BlzCreateUnitWithSkin(p, FourCC("ncer"), -13467.4, -578.7, 3.344, FourCC("ncer"))
 SetUnitAcquireRange(u, 200.0)
-u = BlzCreateUnitWithSkin(p, FourCC("ncnk"), -13632.8, -979.9, -38.717, FourCC("ncnk"))
+u = BlzCreateUnitWithSkin(p, FourCC("ncnk"), -13632.8, -979.9, 321.283, FourCC("ncnk"))
 SetUnitState(u, UNIT_STATE_MANA, 500)
 SetUnitAcquireRange(u, 200.0)
-u = BlzCreateUnitWithSkin(p, FourCC("ncks"), -13684.1, -743.2, -64.135, FourCC("ncks"))
+u = BlzCreateUnitWithSkin(p, FourCC("ncks"), -13684.1, -743.2, 295.865, FourCC("ncks"))
 SetUnitState(u, UNIT_STATE_MANA, 400)
 SetUnitAcquireRange(u, 200.0)
 u = BlzCreateUnitWithSkin(p, FourCC("ntrd"), -1479.7, 4606.3, 167.835, FourCC("ntrd"))
@@ -8350,7 +8349,6 @@ gg_rct_WaveCrash = Rect(-18912.0, 3872.0, -18880.0, 3904.0)
 gg_rct_IllidanBoat2 = Rect(3616.0, 7456.0, 3744.0, 7616.0)
 gg_rct_IllidanBoat3 = Rect(4416.0, 7072.0, 4480.0, 7136.0)
 gg_rct_IllidanBoat4 = Rect(-5280.0, 3168.0, -5248.0, 3200.0)
-gg_rct_IllidanExitText1 = Rect(-16928.0, -7808.0, -16896.0, -7776.0)
 gg_rct_IllidanDalaExit = Rect(8736.0, 6432.0, 8896.0, 6624.0)
 gg_rct_IllidanLast = Rect(-18720.0, 3712.0, -18688.0, 3744.0)
 gg_rct_MaelstromAmbient = Rect(-5632.0, -5280.0, 2752.0, 3456.0)

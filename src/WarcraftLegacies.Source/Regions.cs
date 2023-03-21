@@ -188,7 +188,6 @@ public static class Regions
 	public static Rectangle IllidanBoat2 { get; set; } = new Rectangle(3616f, 7456f, 3744f, 7616f);
 	public static Rectangle IllidanBoat3 { get; set; } = new Rectangle(4416f, 7072f, 4480f, 7136f);
 	public static Rectangle IllidanBoat4 { get; set; } = new Rectangle(-5280f, 3168f, -5248f, 3200f);
-	public static Rectangle IllidanExitText1 { get; set; } = new Rectangle(-16928f, -7808f, -16896f, -7776f);
 	public static Rectangle IllidanDalaExit { get; set; } = new Rectangle(8736f, 6432f, 8896f, 6624f);
 	public static Rectangle IllidanLast { get; set; } = new Rectangle(-18720f, 3712f, -18688f, 3744f);
 	public static Rectangle MaelstromAmbient { get; set; } = new Rectangle(-5632f, -5280f, 2752f, 3456f);

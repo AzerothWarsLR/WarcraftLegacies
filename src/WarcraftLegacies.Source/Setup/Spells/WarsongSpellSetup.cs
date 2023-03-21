@@ -20,14 +20,14 @@ namespace WarcraftLegacies.Source.Setup.Spells
       PassiveAbilityManager.Register(new Execute(Constants.UNIT_O06L_WARLORD_OF_THE_WARSONG_CLAN_WARSONG)
       {
         DamageMultNonResistant = 4,
-        DamageMultResistant = 2,
+        DamageMultResistant = 1.5f,
         DamageMultStructure = 1
       });
 
       PassiveAbilityManager.Register(new Execute(Constants.UNIT_OGRH_CHIEFTAIN_OF_THE_WARSONG_CLAN_WARSONG)
       {
         DamageMultNonResistant = 4,
-        DamageMultResistant = 2,
+        DamageMultResistant = 1.5f,
         DamageMultStructure = 1
       });
 
