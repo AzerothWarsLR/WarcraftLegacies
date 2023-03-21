@@ -77237,7 +77237,7 @@ Mystical Hero, adept at area of effect and damage.|n|cfff5962dCan learn:|R Comet
 }
 
 STRING 12868
-// Abilities: A10U (Mana Burn), Researchubertip (Tooltip - Learn - Extended)
+// Abilities: AEmb (Mana Burn), Researchubertip (Tooltip - Learn - Extended)
 {
 Sends a bolt of negative energy that burns a target enemy unit's mana. Burned mana combusts, dealing damage to the target equal to the amount of mana burned. |n|n|cffffcc00Level 1|r - Burns up to 240 mana. |n|cffffcc00Level 2|r - Burns up to 300 mana. |n|cffffcc00Level 3|r - Burns up to 360 mana.|n|cffffcc00Level 4|r - Burns up to 420 mana.
 }
@@ -94397,7 +94397,7 @@ Summon Mur'gul - [|cffffcc00Level 4|r]
 }
 
 STRING 15736
-// Abilities: AEmb (Mana Burn), Researchubertip (Tooltip - Learn - Extended)
+// Abilities: A10U (Mana Burn), Researchubertip (Tooltip - Learn - Extended)
 {
 Sends a bolt of negative energy that burns a target enemy unit's mana. Burned mana combusts, dealing damage to the target equal to the amount of mana burned. |n|n|cffffcc00Level 1|r - Burns up to 240 mana. |n|cffffcc00Level 2|r - Burns up to 300 mana. |n|cffffcc00Level 3|r - Burns up to 360 mana.|n|cffffcc00Level 4|r - Burns up to 420 mana.
 }
@@ -111268,7 +111268,7 @@ Q
 }
 
 STRING 18547
-// Upgrades: Rhlh (Improved Lumber Harvesting,Advanced Lumber Harvesting), Hotkey (Hotkey)
+// Abilities: A10X (Time's Shield), Hotkey (Hotkey - Normal)
 {
 E
 }
@@ -111316,13 +111316,13 @@ Q
 }
 
 STRING 18555
-// Upgrades: Rhlh (Improved Lumber Harvesting,Advanced Lumber Harvesting), Hotkey (Hotkey)
+// Abilities: A10X (Time's Shield), Researchhotkey (Hotkey - Learn)
 {
 E
 }
 
 STRING 18556
-// Upgrades: Renb (Nature's Blessing), Hotkey (Hotkey)
+// Upgrades: Rhlh (Improved Lumber Harvesting,Advanced Lumber Harvesting), Hotkey (Hotkey)
 {
 E
 }
@@ -111340,7 +111340,7 @@ W
 }
 
 STRING 18559
-// Upgrades: Renb (Nature's Blessing), Hotkey (Hotkey)
+// Upgrades: Rhlh (Improved Lumber Harvesting,Advanced Lumber Harvesting), Hotkey (Hotkey)
 {
 E
 }
@@ -112625,7 +112625,7 @@ STRING 18772
 }
 
 STRING 18773
-// Upgrades: R06K (Defend), Hotkey (Hotkey)
+// Upgrades: Renb (Nature's Blessing), Hotkey (Hotkey)
 {
 E
 }
@@ -112859,7 +112859,7 @@ Boot Camp
 }
 
 STRING 18812
-// Upgrades: R06G (Defend), Hotkey (Hotkey)
+// Upgrades: Renb (Nature's Blessing), Hotkey (Hotkey)
 {
 E
 }
@@ -113249,7 +113249,7 @@ F
 }
 
 STRING 18877
-// Upgrades: R06F (Defend), Hotkey (Hotkey)
+// Upgrades: R06K (Defend), Hotkey (Hotkey)
 {
 E
 }
@@ -113495,7 +113495,7 @@ X
 }
 
 STRING 18918
-// Upgrades: R064 (Nature's Blessing), Hotkey (Hotkey)
+// Upgrades: R06G (Defend), Hotkey (Hotkey)
 {
 E
 }
@@ -113849,7 +113849,7 @@ Multishot
 }
 
 STRING 18977
-// Upgrades: R03M (Defend), Hotkey (Hotkey)
+// Upgrades: R06F (Defend), Hotkey (Hotkey)
 {
 E
 }
@@ -114245,7 +114245,7 @@ R
 }
 
 STRING 19043
-// Upgrades: R02P (Backpack), Hotkey (Hotkey)
+// Upgrades: R064 (Nature's Blessing), Hotkey (Hotkey)
 {
 E
 }
@@ -114341,7 +114341,7 @@ STRING 19058
 }
 
 STRING 19059
-// Upgrades: R03O (Animal War Training), Hotkey (Hotkey)
+// Upgrades: R03M (Defend), Hotkey (Hotkey)
 {
 E
 }
@@ -119520,7 +119520,7 @@ STRING 19921
 }
 
 STRING 19922
-// Upgrades: R03O (Animal War Training), Hotkey (Hotkey)
+// Upgrades: R02P (Backpack), Hotkey (Hotkey)
 {
 E
 }
@@ -119817,6 +119817,12 @@ STRING 19971
 // Upgrades: R07I (Necromancer Adept Training,Necromancer Master Training), Hotkey (Hotkey)
 {
 W
+}
+
+STRING 19972
+// Abilities: A10X (Time's Shield), Tip (Tooltip - Normal)
+{
+Time's Shield - [|cffffcc00Level 1|r]
 }
 
 STRING 19973
@@ -121146,12 +121152,102 @@ E
 }
 
 STRING 20194
-// Upgrades: R079 (Chaos), EditorSuffix (Editor Suffix)
+// Abilities: A10X (Time's Shield), EditorSuffix (Editor Suffix)
 {
 (dalaran)
 }
 
 STRING 20195
+// Upgrades: R03O (Animal War Training), Hotkey (Hotkey)
+{
+E
+}
+
+STRING 20196
+// Abilities: A10X (Time's Shield), Tip (Tooltip - Normal)
+{
+Time's Shield - [|cffffcc00Level 2|r]
+}
+
+STRING 20197
+// Abilities: A10X (Time's Shield), Tip (Tooltip - Normal)
+{
+Time's Shield - [|cffffcc00Level 3|r]
+}
+
+STRING 20198
+// Abilities: A10X (Time's Shield), Tip (Tooltip - Normal)
+{
+Time's Shield - [|cffffcc00Level 4|r]
+}
+
+STRING 20199
+// Abilities: A10X (Time's Shield), Ubertip (Tooltip - Normal - Extended)
+{
+Turns all friendly units invulnerable in an area around Aegwynn. |nLasts 1 seconds.
+}
+
+STRING 20200
+// Abilities: A10X (Time's Shield), Ubertip (Tooltip - Normal - Extended)
+{
+Turns all friendly units invulnerable in an area around Aegwynn. |nLasts 2 seconds.
+}
+
+STRING 20201
+// Abilities: A10X (Time's Shield), Ubertip (Tooltip - Normal - Extended)
+{
+Turns all friendly units invulnerable in an area around Aegwynn. |nLasts 3 seconds.
+}
+
+STRING 20202
+// Abilities: A10X (Time's Shield), Ubertip (Tooltip - Normal - Extended)
+{
+Turns all friendly units invulnerable in an area around Aegwynn. |nLasts 4 seconds.
+}
+
+STRING 20203
+// Abilities: A10X (Time's Shield), Researchtip (Tooltip - Learn)
+{
+Learn Time's Shield
+}
+
+STRING 20204
+// Abilities: A10X (Time's Shield), Name (Name)
+{
+Time's Shield
+}
+
+STRING 20205
+// Abilities: A10X (Time's Shield), Researchubertip (Tooltip - Learn - Extended)
+{
+Turns all friendly units invulnerable in an area around Aegwynn. |nLasts 1/2/3/4 seconds. |n|cffffcc00Level 1|r - 1 second duration. |n|cffffcc00Level 2|r - 2 seconds duration. |n|cffffcc00Level 3|r - 3 seconds duration.|n|cffffcc00Level 4|r - 4 seconds duration.
+}
+
+STRING 20206
+// Buffs/Effects: B0B1 (), Bufftip (Tooltip)
+{
+Time's Shield
+}
+
+STRING 20207
+// Buffs/Effects: B0B1 (), Buffubertip (Tooltip - Extended)
+{
+This unit is under the effects of Time's Shield, and is invulnerable.
+}
+
+STRING 20208
+// Upgrades: R03O (Animal War Training), Hotkey (Hotkey)
+{
+E
+}
+
+STRING 20209
+// Upgrades: R079 (Chaos), EditorSuffix (Editor Suffix)
+{
+(dalaran)
+}
+
+STRING 20210
 // Upgrades: R097 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 E
