@@ -77158,16 +77158,88 @@ STRING 12854
 Archimonde's dark magic defiles a targetted unit along with all nearby enemies. |n|nDecreases armor by 7; deals 45 damage per second to the primary target; deals slightly less damage to nearby targets. Also Reduces enemy Movement speed by 20%.|nLasts 15 seconds on units and 10 seconds on heroes.
 }
 
+STRING 12855
+// Abilities: A10T (Reborn through Time), Name (Name)
+{
+Reborn through Time
+}
+
 STRING 12856
 // Abilities: A030 (Call Treants), Hotkey (Hotkey - Normal)
 {
 W
 }
 
+STRING 12857
+// Abilities: A10T (Reborn through Time), Researchtip (Tooltip - Learn)
+{
+Learn Reborn through Time - [|cffffcc00Level %d|r]
+}
+
 STRING 12858
 // Abilities: A030 (Call Treants), Researchhotkey (Hotkey - Learn)
 {
 W
+}
+
+STRING 12859
+// Abilities: A10T (Reborn through Time), Researchubertip (Tooltip - Learn - Extended)
+{
+Aegwynn uses her immense arcane power to reset time for herself, instantly restoring herself to full health and reseting her cooldown.|n|n|cffffcc00Level 1|r - 100 second cooldown.|n|cffffcc00Level 2|r - 85 second cooldown.|n|cffffcc00Level 3|r - 60 second cooldown.
+}
+
+STRING 12860
+// Abilities: A10T (Reborn through Time), Tip (Tooltip - Normal)
+{
+Reborn through Time - [|cffffcc00Level 1|r]
+}
+
+STRING 12861
+// Abilities: A10T (Reborn through Time), Tip (Tooltip - Normal)
+{
+Reborn through Time - [|cffffcc00Level 2|r]
+}
+
+STRING 12862
+// Abilities: A10T (Reborn through Time), Tip (Tooltip - Normal)
+{
+Reborn through Time - [|cffffcc00Level 3|r]
+}
+
+STRING 12863
+// Abilities: A10T (Reborn through Time), Ubertip (Tooltip - Normal - Extended)
+{
+Aegwynn uses her immense arcane power to reset time for herself, instantly restoring herself to full health and reseting her cooldown.|n|cff99b4d1100 second cooldown|r
+}
+
+STRING 12864
+// Abilities: A10T (Reborn through Time), Ubertip (Tooltip - Normal - Extended)
+{
+Aegwynn uses her immense arcane power to reset time for herself, instantly restoring herself to full health and reseting her cooldown.|n|cff99b4d285 second cooldown|r
+}
+
+STRING 12865
+// Abilities: A10T (Reborn through Time), Ubertip (Tooltip - Normal - Extended)
+{
+Aegwynn uses her immense arcane power to reset time for herself, instantly restoring herself to full health and reseting her cooldown.|n|cff99b4d360 second cooldown|r
+}
+
+STRING 12866
+// Abilities: A10T (Reborn through Time), EditorSuffix (Editor Suffix)
+{
+(dalaran)
+}
+
+STRING 12867
+// Units: H09N (Matriarch of Tirisfal), Ubertip (Tooltip - Extended)
+{
+Mystical Hero, adept at area of effect and damage.|n|cfff5962dCan learn:|R Comet Strike, Enchanted Bolt, Mana Burn, Reborn through Time|n|n|cffffcc00Attacks land and air units.|R
+}
+
+STRING 12868
+// Abilities: A10U (Mana Burn), Researchubertip (Tooltip - Learn - Extended)
+{
+Sends a bolt of negative energy that burns a target enemy unit's mana. Burned mana combusts, dealing damage to the target equal to the amount of mana burned. |n|n|cffffcc00Level 1|r - Burns up to 240 mana. |n|cffffcc00Level 2|r - Burns up to 300 mana. |n|cffffcc00Level 3|r - Burns up to 360 mana.|n|cffffcc00Level 4|r - Burns up to 420 mana.
 }
 
 STRING 12869
@@ -110722,7 +110794,7 @@ Q
 }
 
 STRING 18468
-// Upgrades: Rhlh (Improved Lumber Harvesting,Advanced Lumber Harvesting), Hotkey (Hotkey)
+// Abilities: A10U (Mana Burn), Hotkey (Hotkey - Normal)
 {
 E
 }
@@ -111076,7 +111148,7 @@ Summon Fire Wyrm
 }
 
 STRING 18527
-// Upgrades: Rhlh (Improved Lumber Harvesting,Advanced Lumber Harvesting), Hotkey (Hotkey)
+// Abilities: A10U (Mana Burn), Researchhotkey (Hotkey - Learn)
 {
 E
 }
@@ -111196,7 +111268,7 @@ Q
 }
 
 STRING 18547
-// Upgrades: Renb (Nature's Blessing), Hotkey (Hotkey)
+// Upgrades: Rhlh (Improved Lumber Harvesting,Advanced Lumber Harvesting), Hotkey (Hotkey)
 {
 E
 }
@@ -111244,7 +111316,7 @@ Q
 }
 
 STRING 18555
-// Upgrades: Renb (Nature's Blessing), Hotkey (Hotkey)
+// Upgrades: Rhlh (Improved Lumber Harvesting,Advanced Lumber Harvesting), Hotkey (Hotkey)
 {
 E
 }
@@ -111268,7 +111340,7 @@ W
 }
 
 STRING 18559
-// Upgrades: R06K (Defend), Hotkey (Hotkey)
+// Upgrades: Renb (Nature's Blessing), Hotkey (Hotkey)
 {
 E
 }
@@ -111755,7 +111827,7 @@ Q
 }
 
 STRING 18640
-// Upgrades: R06G (Defend), Hotkey (Hotkey)
+// Upgrades: Renb (Nature's Blessing), Hotkey (Hotkey)
 {
 E
 }
@@ -112553,7 +112625,7 @@ STRING 18772
 }
 
 STRING 18773
-// Upgrades: R06F (Defend), Hotkey (Hotkey)
+// Upgrades: R06K (Defend), Hotkey (Hotkey)
 {
 E
 }
@@ -112787,7 +112859,7 @@ Boot Camp
 }
 
 STRING 18812
-// Upgrades: R064 (Nature's Blessing), Hotkey (Hotkey)
+// Upgrades: R06G (Defend), Hotkey (Hotkey)
 {
 E
 }
@@ -113177,7 +113249,7 @@ F
 }
 
 STRING 18877
-// Upgrades: R03M (Defend), Hotkey (Hotkey)
+// Upgrades: R06F (Defend), Hotkey (Hotkey)
 {
 E
 }
@@ -113423,7 +113495,7 @@ X
 }
 
 STRING 18918
-// Upgrades: R02P (Backpack), Hotkey (Hotkey)
+// Upgrades: R064 (Nature's Blessing), Hotkey (Hotkey)
 {
 E
 }
@@ -113777,7 +113849,7 @@ Multishot
 }
 
 STRING 18977
-// Upgrades: R03O (Animal War Training), Hotkey (Hotkey)
+// Upgrades: R03M (Defend), Hotkey (Hotkey)
 {
 E
 }
@@ -114173,7 +114245,7 @@ R
 }
 
 STRING 19043
-// Upgrades: R03O (Animal War Training), Hotkey (Hotkey)
+// Upgrades: R02P (Backpack), Hotkey (Hotkey)
 {
 E
 }
@@ -119448,7 +119520,7 @@ STRING 19921
 }
 
 STRING 19922
-// Upgrades: R097 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R03O (Animal War Training), Hotkey (Hotkey)
 {
 E
 }
@@ -119745,12 +119817,6 @@ STRING 19971
 // Upgrades: R07I (Necromancer Adept Training,Necromancer Master Training), Hotkey (Hotkey)
 {
 W
-}
-
-STRING 19972
-// Units: H09N (Matriarch of Tirisfal), Ubertip (Tooltip - Extended)
-{
-Mystical Hero, adept at summoning and damaging enemies over time.|n|cfff5962dAbilities:|r Invisibility|n|cfff5962dCan learn:|R Blizzard, Water Elemental, Brilliance Aura, Mass Teleport|n|n|cffffcc00Attacks land and air units.|R
 }
 
 STRING 19973
@@ -121020,7 +121086,7 @@ Q
 }
 
 STRING 20184
-// Upgrades: R079 (Chaos), EditorSuffix (Editor Suffix)
+// Abilities: A10U (Mana Burn), EditorSuffix (Editor Suffix)
 {
 (dalaran)
 }
@@ -121059,5 +121125,35 @@ STRING 20190
 // Upgrades: R00X (Magic Sentry), Hotkey (Hotkey)
 {
 Q
+}
+
+STRING 20191
+// Abilities: A10U (Mana Burn), Tip (Tooltip - Normal)
+{
+Mana Burn - [|cffffcc00Level 4|r]
+}
+
+STRING 20192
+// Abilities: A10U (Mana Burn), Ubertip (Tooltip - Normal - Extended)
+{
+Sends a bolt of negative energy that burns up to <AEmb,DataA4> points of a target enemy unit's mana. The mana combusts, dealing damage equal to the amount of mana burned.
+}
+
+STRING 20193
+// Upgrades: R03O (Animal War Training), Hotkey (Hotkey)
+{
+E
+}
+
+STRING 20194
+// Upgrades: R079 (Chaos), EditorSuffix (Editor Suffix)
+{
+(dalaran)
+}
+
+STRING 20195
+// Upgrades: R097 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+{
+E
 }
 

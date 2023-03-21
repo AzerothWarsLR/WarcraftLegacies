@@ -18,9 +18,9 @@ namespace WarcraftLegacies.Source.Setup.Spells
     /// </summary>
     public static void Setup()
     {
-      var enchantedBolt = new MassAnySpell(Constants.ABILITY_A10L)
+      var enchantedBolt = new MassAnySpell(Constants.ABILITY_A10L_ENCHANTED_BOLTS_DALARAN)
       {
-        DummyAbilityId = Constants.ABILITY_A10O,
+        DummyAbilityId = Constants.ABILITY_A10O_ENCHANTED_BOLT_DALARAN_DUMMY,
         DummyAbilityOrderString = "thunderbolt",
         Radius = 250,
         CastFilter = CastFilters.IsTargetEnemyAndAlive,
@@ -28,6 +28,9 @@ namespace WarcraftLegacies.Source.Setup.Spells
         DummyCastOriginType = DummyCastOriginType.Caster
       };
       SpellSystem.Register(enchantedBolt);
+
+      var rebornTime = new CooldownReset(Constants.ABILITY_A10T_REBORN_THROUGH_TIME_DALARAN);
+      SpellSystem.Register(rebornTime);
     }
   }
 }

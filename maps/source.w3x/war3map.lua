@@ -2268,7 +2268,6 @@ u = BlzCreateUnitWithSkin(p, FourCC("opeo"), -8973.2, -11133.8, 273.156, FourCC(
 u = BlzCreateUnitWithSkin(p, FourCC("opeo"), -9082.9, -11070.7, 267.812, FourCC("opeo"))
 u = BlzCreateUnitWithSkin(p, FourCC("opeo"), -8761.7, -10712.7, 104.990, FourCC("opeo"))
 u = BlzCreateUnitWithSkin(p, FourCC("opeo"), -8623.5, -10824.6, 0.828, FourCC("opeo"))
-u = BlzCreateUnitWithSkin(p, FourCC("H09N"), -22805.3, -25557.6, 261.597, FourCC("H09N"))
 end
 
 function CreateBuildingsForPlayer1()
@@ -2557,6 +2556,7 @@ local life
 u = BlzCreateUnitWithSkin(p, FourCC("h022"), 9494.3, 2723.3, 274.381, FourCC("h022"))
 u = BlzCreateUnitWithSkin(p, FourCC("h022"), 9635.7, 2632.7, 35.454, FourCC("h022"))
 u = BlzCreateUnitWithSkin(p, FourCC("h022"), 9512.6, 2529.2, 256.363, FourCC("h022"))
+u = BlzCreateUnitWithSkin(p, FourCC("H09N"), -22722.2, -23520.5, 168.997, FourCC("H09N"))
 u = BlzCreateUnitWithSkin(p, FourCC("h022"), 9426.2, 2637.5, 35.454, FourCC("h022"))
 u = BlzCreateUnitWithSkin(p, FourCC("h022"), 9600.6, 2559.4, 35.454, FourCC("h022"))
 end
