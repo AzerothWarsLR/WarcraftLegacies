@@ -29,6 +29,13 @@ namespace WarcraftLegacies.Source.Setup.Spells
       };
       SpellSystem.Register(enchantedBolt);
 
+      SpellSystem.Register(new ChannelAnySpellCaster(Constants.ABILITY_A11A_TIME_S_SHIELD_DALARAN_2)
+      {
+        DummyAbilityId = Constants.ABILITY_A11K_TIME_S_SHIELD_DALARAN_DUMMY,
+        DummyAbilityOrderString = "voodoo",
+        Duration = 4
+      });
+
       var rebornTime = new CooldownReset(Constants.ABILITY_A10T_REBORN_THROUGH_TIME_DALARAN);
       SpellSystem.Register(rebornTime);
     }

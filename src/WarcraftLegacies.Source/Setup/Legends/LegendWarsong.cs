@@ -40,7 +40,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
       Garrosh = new LegendaryHero("Garrosh Hellscream")
       {
         UnitType = Constants.UNIT_O06L_WARLORD_OF_THE_WARSONG_CLAN_WARSONG,
-        StartingXp = 5400
+        StartingXp = 8800
       };
 
       StonemaulKeep = new Capital

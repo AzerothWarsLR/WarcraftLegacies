@@ -111322,7 +111322,7 @@ E
 }
 
 STRING 18556
-// Upgrades: Rhlh (Improved Lumber Harvesting,Advanced Lumber Harvesting), Hotkey (Hotkey)
+// Abilities: A11K (Time's Shield), Hotkey (Hotkey - Normal)
 {
 E
 }
@@ -111340,7 +111340,7 @@ W
 }
 
 STRING 18559
-// Upgrades: Rhlh (Improved Lumber Harvesting,Advanced Lumber Harvesting), Hotkey (Hotkey)
+// Abilities: A11K (Time's Shield), Researchhotkey (Hotkey - Learn)
 {
 E
 }
@@ -111827,7 +111827,7 @@ Q
 }
 
 STRING 18640
-// Upgrades: Renb (Nature's Blessing), Hotkey (Hotkey)
+// Abilities: A11A (Time's Shield), Hotkey (Hotkey - Normal)
 {
 E
 }
@@ -112625,7 +112625,7 @@ STRING 18772
 }
 
 STRING 18773
-// Upgrades: Renb (Nature's Blessing), Hotkey (Hotkey)
+// Abilities: A11A (Time's Shield), Researchhotkey (Hotkey - Learn)
 {
 E
 }
@@ -112859,7 +112859,7 @@ Boot Camp
 }
 
 STRING 18812
-// Upgrades: Renb (Nature's Blessing), Hotkey (Hotkey)
+// Upgrades: Rhlh (Improved Lumber Harvesting,Advanced Lumber Harvesting), Hotkey (Hotkey)
 {
 E
 }
@@ -113249,7 +113249,7 @@ F
 }
 
 STRING 18877
-// Upgrades: R06K (Defend), Hotkey (Hotkey)
+// Upgrades: Rhlh (Improved Lumber Harvesting,Advanced Lumber Harvesting), Hotkey (Hotkey)
 {
 E
 }
@@ -113495,7 +113495,7 @@ X
 }
 
 STRING 18918
-// Upgrades: R06G (Defend), Hotkey (Hotkey)
+// Upgrades: Renb (Nature's Blessing), Hotkey (Hotkey)
 {
 E
 }
@@ -113849,7 +113849,7 @@ Multishot
 }
 
 STRING 18977
-// Upgrades: R06F (Defend), Hotkey (Hotkey)
+// Upgrades: Renb (Nature's Blessing), Hotkey (Hotkey)
 {
 E
 }
@@ -114245,7 +114245,7 @@ R
 }
 
 STRING 19043
-// Upgrades: R064 (Nature's Blessing), Hotkey (Hotkey)
+// Upgrades: Renb (Nature's Blessing), Hotkey (Hotkey)
 {
 E
 }
@@ -114341,7 +114341,7 @@ STRING 19058
 }
 
 STRING 19059
-// Upgrades: R03M (Defend), Hotkey (Hotkey)
+// Upgrades: R06K (Defend), Hotkey (Hotkey)
 {
 E
 }
@@ -117257,6 +117257,30 @@ STRING 19544
 Cosmic hero, expert at team fight support.|n|cfff5962dCan learn:|R Light's Edict, Blinding Starlight, Wise Council, Army of the Light|n|n|cffffcc00Attacks land and air units.|R
 }
 
+STRING 19545
+// Buffs/Effects: B0B2 (Time's Shield (Caster)), EditorName (Name (Editor Only))
+{
+Time's Shield (Caster)
+}
+
+STRING 19546
+// Abilities: A11A (Time's Shield), EditorSuffix (Editor Suffix)
+{
+(dalaran - 2)
+}
+
+STRING 19547
+// Abilities: A11A (Time's Shield), Researchubertip (Tooltip - Learn - Extended)
+{
+Aegwynn manipulates time to prevent her army from being attacked. Grants invulnerable to every unit for 4 seconds|n|n|cffffcc00Level 1|r - 500 mana, 240 seconds cooldown|n|cffffcc00Level 2|r - 425 mana, 200 seconds cooldown|n|cffffcc00Level 3|r - 350 mana, 160 seconds cooldown|n|cffffcc00Level 4|r - 250 mana, 120 seconds cooldown
+}
+
+STRING 19548
+// Abilities: A10X (Time's Shield), Tip (Tooltip - Normal)
+{
+Time's Shield - [|cffffcc00Level 1|r]
+}
+
 STRING 19549
 // Abilities: A103 (Holy Shockwave), Ubertip (Tooltip - Normal - Extended)
 {
@@ -119496,7 +119520,7 @@ STRING 19921
 }
 
 STRING 19922
-// Upgrades: R02P (Backpack), Hotkey (Hotkey)
+// Upgrades: R06G (Defend), Hotkey (Hotkey)
 {
 E
 }
@@ -119796,7 +119820,7 @@ W
 }
 
 STRING 19972
-// Abilities: A10X (Time's Shield), Tip (Tooltip - Normal)
+// Abilities: A11K (Time's Shield), Tip (Tooltip - Normal)
 {
 Time's Shield - [|cffffcc00Level 1|r]
 }
@@ -121122,7 +121146,7 @@ Sends a bolt of negative energy that burns up to <AEmb,DataA4> points of a targe
 }
 
 STRING 20193
-// Upgrades: R03O (Animal War Training), Hotkey (Hotkey)
+// Upgrades: R06F (Defend), Hotkey (Hotkey)
 {
 E
 }
@@ -121134,7 +121158,7 @@ STRING 20194
 }
 
 STRING 20195
-// Upgrades: R03O (Animal War Training), Hotkey (Hotkey)
+// Upgrades: R064 (Nature's Blessing), Hotkey (Hotkey)
 {
 E
 }
@@ -121200,7 +121224,7 @@ Turns all friendly units invulnerable in an area around Aegwynn. |nLasts 1/2/3/4
 }
 
 STRING 20206
-// Buffs/Effects: B0B1 (), Bufftip (Tooltip)
+// Abilities: A11K (Time's Shield), Name (Name)
 {
 Time's Shield
 }
@@ -121212,7 +121236,7 @@ This unit is under the effects of Time's Shield, and is invulnerable.
 }
 
 STRING 20208
-// Upgrades: R03O (Animal War Training), Hotkey (Hotkey)
+// Upgrades: R03M (Defend), Hotkey (Hotkey)
 {
 E
 }
@@ -121224,7 +121248,7 @@ STRING 20209
 }
 
 STRING 20210
-// Upgrades: R097 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R02P (Backpack), Hotkey (Hotkey)
 {
 E
 }
@@ -121269,5 +121293,155 @@ STRING 20217
 // Abilities: A0L5 (Light's Edict), Researchubertip (Tooltip - Learn - Extended)
 {
 Calls down holy beams of light that heal friendly units in a target area. |n|n|cffffcc00Level 1|r - <ANhs,DataF1> waves at <ANhs,DataA1> hit points healed each. |n|cffffcc00Level 2|r - <ANhs,DataF2> waves at <ANhs,DataA2> hit points healed each. |n|cffffcc00Level 3|r - <ANhs,DataF3> waves at <ANhs,DataA3> hit points healed each.
+}
+
+STRING 20218
+// Abilities: A11K (Time's Shield), Tip (Tooltip - Normal)
+{
+Time's Shield - [|cffffcc00Level 2|r]
+}
+
+STRING 20219
+// Abilities: A11K (Time's Shield), Tip (Tooltip - Normal)
+{
+Time's Shield - [|cffffcc00Level 3|r]
+}
+
+STRING 20220
+// Abilities: A11K (Time's Shield), Tip (Tooltip - Normal)
+{
+Time's Shield - [|cffffcc00Level 4|r]
+}
+
+STRING 20221
+// Abilities: A11A (Time's Shield), Ubertip (Tooltip - Normal - Extended)
+{
+Gives friendly nearby units invulnerable. Lasts 4 seconds.
+}
+
+STRING 20222
+// Abilities: A11A (Time's Shield), Ubertip (Tooltip - Normal - Extended)
+{
+Gives friendly nearby units invulnerable. Lasts 4 seconds.
+}
+
+STRING 20223
+// Abilities: A11A (Time's Shield), Ubertip (Tooltip - Normal - Extended)
+{
+Gives friendly nearby units invulnerable. Lasts 4 seconds.
+}
+
+STRING 20224
+// Abilities: A11A (Time's Shield), Ubertip (Tooltip - Normal - Extended)
+{
+Gives friendly nearby units invulnerable. Lasts 4 seconds.
+}
+
+STRING 20230
+// Abilities: A11K (Time's Shield), EditorSuffix (Editor Suffix)
+{
+(dalaran - dummy)
+}
+
+STRING 20231
+// Abilities: A11A (Time's Shield), Tip (Tooltip - Normal)
+{
+Time's Shield - [|cffffcc00Level 1|r]
+}
+
+STRING 20232
+// Abilities: A11A (Time's Shield), Tip (Tooltip - Normal)
+{
+Time's Shield - [|cffffcc00Level 2|r]
+}
+
+STRING 20233
+// Abilities: A11A (Time's Shield), Tip (Tooltip - Normal)
+{
+Time's Shield - [|cffffcc00Level 3|r]
+}
+
+STRING 20234
+// Abilities: A11A (Time's Shield), Tip (Tooltip - Normal)
+{
+Time's Shield - [|cffffcc00Level 4|r]
+}
+
+STRING 20235
+// Abilities: A11K (Time's Shield), Ubertip (Tooltip - Normal - Extended)
+{
+Turns all friendly units invulnerable in an area around Aegwynn. |nLasts 1 seconds.
+}
+
+STRING 20236
+// Abilities: A11K (Time's Shield), Ubertip (Tooltip - Normal - Extended)
+{
+Turns all friendly units invulnerable in an area around Aegwynn. |nLasts 2 seconds.
+}
+
+STRING 20237
+// Abilities: A11K (Time's Shield), Ubertip (Tooltip - Normal - Extended)
+{
+Turns all friendly units invulnerable in an area around Aegwynn. |nLasts 3 seconds.
+}
+
+STRING 20238
+// Abilities: A11K (Time's Shield), Ubertip (Tooltip - Normal - Extended)
+{
+Turns all friendly units invulnerable in an area around Aegwynn. |nLasts 4 seconds.
+}
+
+STRING 20239
+// Abilities: A11K (Time's Shield), Researchtip (Tooltip - Learn)
+{
+Learn Time's Shield
+}
+
+STRING 20240
+// Abilities: A11A (Time's Shield), Name (Name)
+{
+Time's Shield
+}
+
+STRING 20241
+// Abilities: A11K (Time's Shield), Researchubertip (Tooltip - Learn - Extended)
+{
+Turns all friendly units invulnerable in an area around Aegwynn. |nLasts 1/2/3/4 seconds. |n|cffffcc00Level 1|r - 1 second duration. |n|cffffcc00Level 2|r - 2 seconds duration. |n|cffffcc00Level 3|r - 3 seconds duration.|n|cffffcc00Level 4|r - 4 seconds duration.
+}
+
+STRING 20242
+// Buffs/Effects: B0B1 (), Bufftip (Tooltip)
+{
+Time's Shield
+}
+
+STRING 20243
+// Upgrades: R03O (Animal War Training), Hotkey (Hotkey)
+{
+E
+}
+
+STRING 20244
+// Upgrades: R03O (Animal War Training), Hotkey (Hotkey)
+{
+E
+}
+
+STRING 20245
+// Upgrades: R03O (Animal War Training), Hotkey (Hotkey)
+{
+E
+}
+
+STRING 20246
+// Upgrades: R097 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+{
+E
+}
+
+STRING 20248
+// Abilities: A11A (Time's Shield), Researchtip (Tooltip - Learn)
+{
+Learn Time's Shield- [|cffffcc00Level %d|r]
 }
 

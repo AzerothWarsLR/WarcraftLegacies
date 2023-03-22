@@ -1,4 +1,4 @@
-using MacroTools.Extensions;
+﻿using MacroTools.Extensions;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
@@ -20,6 +20,17 @@ namespace MacroTools.SpellSystem
     public static void ChannelOnPoint(unit caster, int abilityId, string orderId, int level, Point targetPoint, float duration)
     {
       CreateUnit(GetOwningPlayer(caster), DummyCaster.UnitTypeId, targetPoint.X, targetPoint.Y, 0)
+        .AddAbility(abilityId)
+        .SetAbilityLevel(abilityId, level)
+        .IssueOrder(orderId)
+        .SetTimedLife(duration);
+    }
+    /// <summary>
+    /// Causes the specified spell to be channeled at the caster's point.
+    /// </summary>
+    public static void ChannelAtCaster(unit caster, int abilityId, string orderId, int level, float duration)
+    {
+      CreateUnit(GetOwningPlayer(caster), DummyCaster.UnitTypeId, caster.GetPosition().X, caster.GetPosition().Y, 0)
         .AddAbility(abilityId)
         .SetAbilityLevel(abilityId, level)
         .IssueOrder(orderId)
