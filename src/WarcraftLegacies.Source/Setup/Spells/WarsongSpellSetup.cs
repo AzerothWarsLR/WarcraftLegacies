@@ -31,7 +31,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
         DamageMultStructure = 1
       });
 
-      PassiveAbilityManager.Register(new RestoreManaFromDamage(Constants.UNIT_O06L_WARLORD_OF_THE_WARSONG_CLAN_WARSONG, Constants.ABILITY_A0FR_TRANSFUSION_GORFAX)
+      PassiveAbilityManager.Register(new RestoreManaFromDamage(Constants.UNIT_O06L_WARLORD_OF_THE_WARSONG_CLAN_WARSONG, Constants.ABILITY_A0ZG_BLOOD_ABSORPTION_GORFAX)
       {
         ManaPerDamage = new LeveledAbilityField<float>
         {
