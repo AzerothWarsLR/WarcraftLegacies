@@ -25,6 +25,7 @@ namespace MacroTools.SpellSystem
         .IssueOrder(orderId)
         .SetTimedLife(duration);
     }
+
     /// <summary>
     /// Causes the specified spell to be channeled at the caster's point.
     /// </summary>
@@ -49,7 +50,7 @@ namespace MacroTools.SpellSystem
         .AddAbility(abilId)
         .SetAbilityLevel(abilId, level);
 
-      if (originType == DummyCastOriginType.Caster) 
+      if (originType == DummyCastOriginType.Caster)
         DummyCaster.DummyUnit.FacePosition(target.GetPosition());
 
       DummyCaster.DummyUnit
