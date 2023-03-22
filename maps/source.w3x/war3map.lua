@@ -2716,6 +2716,8 @@ local t
 local life
 
 u = BlzCreateUnitWithSkin(p, FourCC("n06J"), -22880.0, -13920.0, 270.000, FourCC("n06J"))
+u = BlzCreateUnitWithSkin(p, FourCC("n07I"), -22208.0, -13312.0, 270.000, FourCC("n07I"))
+u = BlzCreateUnitWithSkin(p, FourCC("n06M"), -21504.0, -13312.0, 270.000, FourCC("n06M"))
 u = BlzCreateUnitWithSkin(p, FourCC("n05G"), -22144.0, -13824.0, 270.000, FourCC("n05G"))
 end
 
