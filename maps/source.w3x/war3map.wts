@@ -1421,12 +1421,6 @@ STRING 236
 Teleporter Circle Indicator
 }
 
-STRING 237
-// Units: H05Y (Lord Wizard), Ubertip (Tooltip - Extended)
-{
-Arcane Hero, adept at dealing magic damage and transporting armies.|n|cfff5962dCan learn:|R Forked Thunder, Polymorph, Wise Council, Slipstream|n|n|cffffcc00Attacks land and air units.|R
-}
-
 STRING 238
 // Abilities: A075 (Acid Blob), EditorSuffix (Editor Suffix)
 {
@@ -66323,12 +66317,6 @@ STRING 11050
 Learn Horn of Stormwind - [|cffffcc00Level %d|r]
 }
 
-STRING 11051
-// Units: H00R (King of Stormwind), Ubertip (Tooltip - Extended)
-{
-Warrior Hero, exceptional at melee combat and bolstering nearby troops.|n|cfff5962dAbilities:|r Command Aura, Heavy Armor|n|cfff5962dCan Learn:|R Shockwave, Lo'gosh Fury, Battle Experience, Horn of Stormwind|n|n|cffffcc00Attacks land units.|R
-}
-
 STRING 11052
 // Abilities: A08M (Horn of Stormwind), Tip (Tooltip - Normal)
 {
@@ -93688,12 +93676,6 @@ STRING 15617
 Archer filled tower defense.|n|cfff5962dCan learn:|R Magic Sentry|n|cfff5962dUpgrades Into:|R Improved Guard Tower|n|n|cffffcc00Attacks land and air units.|r
 }
 
-STRING 15618
-// Units: H017 (Highlord of the Alliance), Ubertip (Tooltip - Extended)
-{
-Warrior Hero, exceptional at augmenting nearby troops.|n|cfff5962dAbilities:|r Divine Shield|n|cfff5962dCan Learn:|R Holy Light, Rally to the Highlord, Retribution Aura, Resurrection|n|n|cffffcc00Attacks land units.|R
-}
-
 STRING 15619
 // Units: n075 (Vereesa Windrunner), Tip (Tooltip - Basic)
 {
@@ -102284,6 +102266,12 @@ STRING 17050
 // Units: Hhkl (King of Gilneas), Ubertip (Tooltip - Extended)
 {
 Warrior Hero, extremely aggressive hero adept at disrupting enemies.|n|cfff5962dAbilities:|r Bash|n|cfff5962dCan learn:|R Roar of the Worgen, War Stomp, Thorns Aura, Goldrinn's Might|n|n|cffffcc00Attacks land units.|R
+}
+
+STRING 17051
+// Units: H05Y (Lord Wizard), Ubertip (Tooltip - Extended)
+{
+Arcane Hero, adept at dealing magic damage and mana manipulation.|n|cfff5962dCan learn:|R Forked Thunder, Wise Council, Arcane Absorption, Black Hole|n|n|cffffcc00Attacks land and air units.|R
 }
 
 STRING 17052
@@ -121595,10 +121583,22 @@ STRING 20268
 (khadgar)
 }
 
+STRING 20269
+// Units: H017 (Highlord of the Alliance), Ubertip (Tooltip - Extended)
+{
+Warrior Hero, exceptional at augmenting nearby troops.|n|cfff5962dAbilities:|r Divine Shield, Heavy Armor|n|cfff5962dCan Learn:|R Holy Light, Rally to the Highlord, Retribution Aura, Horn of Stormwind|n|n|cffffcc00Attacks land units.|R
+}
+
 STRING 20270
 // Abilities: A11N (Arcane Absorption), Tip (Tooltip - Normal)
 {
 Arcane Absorption - [|cffffcc00Level 4|r]
+}
+
+STRING 20271
+// Units: H00R (King of Stormwind), Ubertip (Tooltip - Extended)
+{
+Warrior Hero, exceptional at melee combat and bolstering nearby troops.|n|cfff5962dAbilities:|r Command Aura, Heavy Armor|n|cfff5962dCan Learn:|R Shockwave, Lo'gosh Fury, Battle Experience, Exact Justice|n|n|cffffcc00Attacks land units.|R
 }
 
 STRING 20273
