@@ -116046,7 +116046,7 @@ Calls an Infernal down from the sky, dealing <AUin,DataA3> damage and stunning e
 }
 
 STRING 19343
-// Upgrades: Rosp (Spiked Barricades,Improved Spiked Barricades,Advanced Spiked Barricades), Hotkey (Hotkey)
+// Abilities: A11O (Black Hole), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -116070,7 +116070,7 @@ Q
 }
 
 STRING 19347
-// Upgrades: Rosp (Spiked Barricades,Improved Spiked Barricades,Advanced Spiked Barricades), Hotkey (Hotkey)
+// Abilities: A11O (Black Hole), Hotkey (Hotkey - Normal)
 {
 R
 }
@@ -116256,7 +116256,7 @@ Build Coral of Wind
 }
 
 STRING 19378
-// Upgrades: Ropg (Pillage), Hotkey (Hotkey)
+// Upgrades: Rosp (Spiked Barricades,Improved Spiked Barricades,Advanced Spiked Barricades), Hotkey (Hotkey)
 {
 R
 }
@@ -118494,7 +118494,7 @@ Q
 }
 
 STRING 19751
-// Upgrades: Rews (Well Spring), Hotkey (Hotkey)
+// Upgrades: Rosp (Spiked Barricades,Improved Spiked Barricades,Advanced Spiked Barricades), Hotkey (Hotkey)
 {
 R
 }
@@ -120420,7 +120420,7 @@ W
 }
 
 STRING 20072
-// Upgrades: R00N (Storm Hammers), Hotkey (Hotkey)
+// Upgrades: Ropg (Pillage), Hotkey (Hotkey)
 {
 R
 }
@@ -121337,6 +121337,36 @@ STRING 20224
 Gives friendly nearby units invulnerable. Lasts 4 seconds.
 }
 
+STRING 20225
+// Units: n0CY (Black Hole), Name (Name)
+{
+Black Hole
+}
+
+STRING 20226
+// Abilities: A11L (Building Damage Aura), EditorSuffix (Editor Suffix)
+{
+(Black Hole)
+}
+
+STRING 20227
+// Abilities: A11M (Slow Aura), EditorSuffix (Editor Suffix)
+{
+(Black hole)
+}
+
+STRING 20228
+// Abilities: A11N (black hole visual), EditorSuffix (Editor Suffix)
+{
+(Dummy aura)
+}
+
+STRING 20229
+// Abilities: A11N (black hole visual), Name (Name)
+{
+black hole visual
+}
+
 STRING 20230
 // Abilities: A11K (Time's Shield), EditorSuffix (Editor Suffix)
 {
@@ -121439,9 +121469,99 @@ STRING 20246
 E
 }
 
+STRING 20247
+// Abilities: A11N (black hole visual), Tip (Tooltip - Normal)
+{
+black hole visual
+}
+
 STRING 20248
 // Abilities: A11A (Time's Shield), Researchtip (Tooltip - Learn)
 {
 Learn Time's Shield- [|cffffcc00Level %d|r]
+}
+
+STRING 20249
+// Abilities: A11O (Black Hole), Name (Name)
+{
+Black Hole
+}
+
+STRING 20250
+// Abilities: A11O (Black Hole), Researchtip (Tooltip - Learn)
+{
+Learn Black Hole - [|cffffcc00Level %d|r]
+}
+
+STRING 20251
+// Abilities: A11O (Black Hole), Researchubertip (Tooltip - Learn - Extended)
+{
+Al-akir summons a fierce controllable Hurricane that slows enemy units and randomly throws them into the air while dealing damage in an area of effect around the Hurricane.|n|cffffcc00Level 1|r - Lasts 45 seconds.|n|cffffcc00Level 2|r - Deals increased damage and moves faster. Lasts 50 seconds.|n|cffffcc00Level 3|r - Deals increased damage and moves faster. Lasts 55 seconds.
+}
+
+STRING 20252
+// Abilities: A11O (Black Hole), EditorSuffix (Editor Suffix)
+{
+(khadgar)
+}
+
+STRING 20253
+// Abilities: A11O (Black Hole), Tip (Tooltip - Normal)
+{
+Summon Black Hole - [|cffffcc00Level 1|r]
+}
+
+STRING 20254
+// Abilities: A11O (Black Hole), Tip (Tooltip - Normal)
+{
+Summon Black Hole - [|cffffcc00Level 2|r]
+}
+
+STRING 20255
+// Abilities: A11O (Black Hole), Tip (Tooltip - Normal)
+{
+Summon Black Hole - [|cffffcc00Level 3|r]
+}
+
+STRING 20256
+// Abilities: A11O (Black Hole), Ubertip (Tooltip - Normal - Extended)
+{
+Summons a fierce controllable Tornado that slows enemy units' movement speed, randomly tosses enemy ground units into the air and damages enemy buildings. |nLasts 45 seconds and got 120 seconds cooldown.
+}
+
+STRING 20257
+// Abilities: A11O (Black Hole), Ubertip (Tooltip - Normal - Extended)
+{
+Summons a fierce controllable Tornado that slows enemy units' movement speed, randomly tosses enemy ground units into the air and damages enemy buildings. |nLasts <ANto,Dur2> seconds and got 105 seconds cooldown.
+}
+
+STRING 20258
+// Abilities: A11O (Black Hole), Ubertip (Tooltip - Normal - Extended)
+{
+Summons a fierce controllable Tornado that slows enemy units' movement speed, randomly tosses enemy ground units into the air and damages enemy buildings. |nLasts <ANto,Dur3> seconds.
+}
+
+STRING 20259
+// Buffs/Effects: B0B3 (), Bufftip (Tooltip)
+{
+Black Hole
+}
+
+STRING 20260
+// Buffs/Effects: B0B3 (), Buffubertip (Tooltip - Extended)
+{
+This unit is caught within a Black Hole; its movement speed has been reduced temporarily.
+}
+
+STRING 20261
+// Upgrades: Rews (Well Spring), Hotkey (Hotkey)
+{
+R
+}
+
+STRING 20262
+// Upgrades: R00N (Storm Hammers), Hotkey (Hotkey)
+{
+R
 }
 
