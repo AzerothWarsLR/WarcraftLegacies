@@ -6290,12 +6290,6 @@ STRING 1048
 D
 }
 
-STRING 1049
-// Units: harm (Workshop), Ubertip (Tooltip - Extended)
-{
-Technological shop of engineering prowess.|n|cfff5962dTrains:|r War Golem, Gyrocopter, Steam Tank|n|cfff5962dResearches:|R Improved Spell Resistance, Overclock
-}
-
 STRING 1050
 // Units: u01F (Altar of the Old Ones), Hotkey (Hotkey)
 {
@@ -121629,6 +121623,12 @@ STRING 20273
 // Abilities: A11N (Arcane Absorption), Ubertip (Tooltip - Normal - Extended)
 {
 When this hero deals damage, 100% of the damage will be gained as mana
+}
+
+STRING 20274
+// Units: harm (Workshop), Ubertip (Tooltip - Extended)
+{
+Technological shop of engineering prowess.|n|cfff5962dTrains:|r War Golem, Dreadnaught, Steam Tank|n|cfff5962dResearches:|R Improved Spell Resistance, Overclock
 }
 
 STRING 20275
