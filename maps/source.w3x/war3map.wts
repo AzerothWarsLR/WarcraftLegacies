@@ -6290,6 +6290,12 @@ STRING 1048
 D
 }
 
+STRING 1049
+// Upgrades: R065 (Chaos), Name (Name)
+{
+Quest Completed: Into the Realm Eternal
+}
+
 STRING 1050
 // Units: u01F (Altar of the Old Ones), Hotkey (Hotkey)
 {

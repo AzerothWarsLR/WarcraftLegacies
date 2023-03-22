@@ -1,4 +1,4 @@
-using MacroTools.FactionSystem;
+﻿using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.QuestSystem;
@@ -19,6 +19,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
       _kelthuzad = kelthuzad;
       AddObjective(new ObjectiveControlCapital(sunwell, false));
       AddObjective(new ObjectiveLegendInRect(kelthuzad, Regions.Sunwell, "The Sunwell"));
+      ResearchId = Constants.UPGRADE_R065_QUEST_COMPLETED_INTO_THE_REALM_ETERNAL;
       Required = true;
     }
 
@@ -28,7 +29,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
       get
       {
         var completionPopup =
-          "Kel'thuzad has been reanimated and empowered through the unlimited magical energies of the Sunwell.";
+          "Kel'thuzad has been reanimated and empowered through the unlimited magical energies of the Sunwell. Revenants are now upgradable in the Slaughterhouse";
         if (LegionSetup.Legion != null)
           completionPopup += " He now has the ability to summon the Burning Legion.";
         return completionPopup;
@@ -36,7 +37,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
     }
 
     /// <inheritdoc />
-    protected override string RewardDescription => "Kel'thuzad becomes a Lich";
+    protected override string RewardDescription => "Kel'thuzad becomes a Lich and the Revenant upgrade becomes available";
 
     /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)
