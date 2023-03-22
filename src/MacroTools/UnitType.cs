@@ -32,7 +32,7 @@ namespace MacroTools
     public int LumberCost => GetUnitWoodCost(Id);
 
     /// <summary>
-    /// Whether or not the unit should be deleted without refund when the player leaves.
+    /// If true, this unit should never be deleted.
     /// </summary>
     public bool Meta { get; init; }
 

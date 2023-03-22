@@ -1,6 +1,8 @@
 ﻿using MacroTools.ArtifactSystem;
 using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives;
+using MacroTools.ObjectiveSystem.Objectives.ArtifactBased;
+using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 using MacroTools.Powers;
 using MacroTools.QuestSystem;
 using TestMap.Source.Setup;
@@ -21,7 +23,7 @@ namespace TestMap.Source.Quests
     }
 
     protected override string RewardDescription => "A free Zergling, and destroy Kelen's Dagger of Escape";
-    protected override string CompletionPopup => "Congratulations on your free Zergling!";
+    protected override string RewardFlavour => "Congratulations on your free Zergling!";
     protected override string PenaltyDescription => "A hostile Peasant spawns";
 
     protected override void OnAdd(Faction whichFaction)

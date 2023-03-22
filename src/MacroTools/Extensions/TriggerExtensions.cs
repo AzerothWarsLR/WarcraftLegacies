@@ -57,5 +57,14 @@ namespace MacroTools.Extensions
     /// Destroys the trigger.
     /// </summary>
     public static void Destroy(this trigger whichTrigger) => DestroyTrigger(whichTrigger);
+
+    /// <summary>
+    /// Immediately executes all of the trigger's actions.
+    /// </summary>
+    public static trigger Execute(this trigger whichTrigger)
+    {
+      TriggerExecute(whichTrigger);
+      return whichTrigger;
+    }
   }
 }

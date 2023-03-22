@@ -1,10 +1,14 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
-using MacroTools.ObjectiveSystem.Objectives;
+using MacroTools.LegendSystem;
+using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
+using MacroTools.ObjectiveSystem.Objectives.FactionBased;
+using MacroTools.ObjectiveSystem.Objectives.LegendBased;
+using MacroTools.ObjectiveSystem.Objectives.TimeBased;
+using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
-using WarcraftLegacies.Source.Setup.Legends;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
@@ -14,15 +18,19 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
   {
     private readonly List<unit> _rescueUnits = new();
 
-    public QuestAstranaar(List<Rectangle> rescueRects) : base("Astranaar Stronghold",
-      "Darkshore is under attack by some Murloc. We should deal with them swiftly and make for the Astranaar Outpost. Clearing the Murlocs will also reestablish communication with Darnassus.",
-      "ReplaceableTextures\\CommandButtons\\BTNMurloc.blp")
+    public QuestAstranaar(List<Rectangle> rescueRects, LegendaryHero shandris) : base("Daughters of the Moon",
+      "Shandris need to reach the Dark Shore and warn the Sentinels of the Horde invadors",
+      "ReplaceableTextures\\CommandButtons\\BTNShandris.blp")
     {
-      AddObjective(new ObjectiveLegendReachRect(LegendSentinels.Tyrande, Regions.AstranaarUnlock,
+      AddObjective(new ObjectiveLegendReachRect(shandris, Regions.AstranaarUnlock,
         "Astranaar Outpost"));
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N02U_DARKSHORE_10GOLD_MIN)));
-      AddObjective(new ObjectiveExpire(1430));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N05N_WINDSHEAR_CROSSING_10GOLD_MIN)));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N01Y_DESOLACE_15GOLD_MIN)));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N05U_FEATHERMOON_STRONGHOLD_20GOLD_MIN)));
+      AddObjective(new ObjectiveUpgrade(Constants.UNIT_N06P_SENTINEL_ENCLAVE_SENTINEL_T3, Constants.UNIT_N06J_SENTINEL_OUTPOST_SENTINEL_T1));
+      AddObjective(new ObjectiveExpire(1430, Title));
       AddObjective(new ObjectiveSelfExists());
+      ResearchId = Constants.UPGRADE_R03N_QUEST_COMPLETED_DAUGHTERS_OF_THE_MOON;
 
       foreach (var rectangle in rescueRects)
       foreach (var unit in CreateGroup().EnumUnitsInRect(rectangle.Rect).EmptyToList())
@@ -36,11 +44,11 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
     }
 
     /// <inheritdoc />
-    protected override string CompletionPopup =>
-      "Astranaar has been relieved and has joined the Sentinels in their war effort";
+    protected override string RewardFlavour =>
+      "Auberdine has been reached and has joined the Sentinels in their war effort";
 
     /// <inheritdoc />
-    protected override string RewardDescription => "Control of all units in Astranaar Outpost and Darnassus";
+    protected override string RewardDescription => "Control of all units in Astranaar Outpost and Auberdine. Tyrande, Maiev and Naisha will be trainable at Altar";
 
     /// <inheritdoc />
     protected override void OnFail(Faction completingFaction)
@@ -51,9 +59,7 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
     /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)
     {
-      foreach (var unit in _rescueUnits) unit.Rescue(completingFaction.Player);
-      completingFaction.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_LUMBER, 200);
-      completingFaction.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, 100);
+      completingFaction.Player.RescueGroup(_rescueUnits);
     }
   }
 }

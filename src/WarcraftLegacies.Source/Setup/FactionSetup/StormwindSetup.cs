@@ -1,6 +1,4 @@
-﻿using MacroTools.Extensions;
-using MacroTools.FactionSystem;
-using MacroTools.Powers;
+﻿using MacroTools.FactionSystem;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup.FactionSetup
@@ -11,23 +9,23 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
   public static class StormwindSetup
   {
     public static Faction? Stormwind { get; private set; }
-    
+
     public static void Setup()
     {
-      Stormwind = new Faction("Stormwind", PLAYER_COLOR_AQUA, "|CFF106246",
+      Stormwind = new Faction(FactionNames.Stormwind, PLAYER_COLOR_AQUA, "|CFF106246",
         "ReplaceableTextures\\CommandButtons\\BTNKnight.blp")
       {
         UndefeatedResearch = FourCC("R060"),
-        StartingGold = 150,
-        StartingLumber = 500,
-        ControlPointDefenderUnitTypeId = Constants.UNIT_H05X_CONTROL_POINT_DEFENDER_STORMWIND, 
+        StartingGold = 200,
+        StartingLumber = 700,
+        ControlPointDefenderUnitTypeId = Constants.UNIT_H05X_CONTROL_POINT_DEFENDER_STORMWIND,
         IntroText = @"You are playing as the steadfast |cff005800Kingdom of Stormwind|r.
 
-You are the first line of defense against the onslaught of the forces of Outland. 
+You begin in Westfall, separated from the rest of the kingdom. Reunite your lands by liberating Darkshire, Lakeshire and finally Stormwind City. 
 
-Reunite your Kingdom, beginning with Darkshire, Lakeshire, and finally Stormwind City. Then race East to the Stronghold of Nethergarde near the Dark Portal and prepare for the invasion of the forces in Outland.
+Once you have unified Stormwind's forces, race East to the Nethergarde Stronghold and prepare for the invasion of the Fel Horde.
 
-Make sure to communicate with your Dwarven and Kul'tiran allies, as they will be the ones to help you defend against the evil coming from beyond the portal."
+Make sure to communicate with your Dwarven and Kul'tiran allies, as they will be key in helping you defeat the evil from beyond the Dark Portal."
       };
 
       //Structures
@@ -50,8 +48,8 @@ Make sure to communicate with your Dwarven and Kul'tiran allies, as they will be
       Stormwind.ModObjectLimit(FourCC("h06Y"), Faction.UNLIMITED); //Arcane Tower
       Stormwind.ModObjectLimit(FourCC("h06Z"), Faction.UNLIMITED); //Arcane Tower (Improved)
       Stormwind.ModObjectLimit(FourCC("h024"), Faction.UNLIMITED); //Light House
-      Stormwind.ModObjectLimit(Constants.UNIT_H05J_CHAMPION_S_HALL_STORMWIND, 1);
-      Stormwind.ModObjectLimit(Constants.UNIT_H05A_WIZARD_S_SANCTUM_DARK_GREEN, 1);
+      Stormwind.ModObjectLimit(Constants.UNIT_H05J_CHAMPION_S_HALL_STORMWIND_SPECIALIST, 1);
+      Stormwind.ModObjectLimit(Constants.UNIT_H05A_WIZARD_S_SANCTUM_STORMWIND_OTHER, 1);
 
       //Units
       Stormwind.ModObjectLimit(FourCC("hpea"), Faction.UNLIMITED); //Peasant
@@ -63,11 +61,19 @@ Make sure to communicate with your Dwarven and Kul'tiran allies, as they will be
       Stormwind.ModObjectLimit(FourCC("h05F"), 6); //Stormwind Champion
       Stormwind.ModObjectLimit(FourCC("n05L"), 6); //Conjurer
       Stormwind.ModObjectLimit(FourCC("h00J"), Faction.UNLIMITED); //Clergyman
-      Stormwind.ModObjectLimit(FourCC("n06N"), 6); //Gyrobomber
+      Stormwind.ModObjectLimit(Constants.UNIT_N06N_GUNSHIP_STORMWIND, 6);
       Stormwind.ModObjectLimit(FourCC("n093"), Faction.UNLIMITED); //Chaplain
+      Stormwind.ModObjectLimit(FourCC("o06K"), 6); //Siege Tower
+
+      //Ships
       Stormwind.ModObjectLimit(FourCC("hbot"), Faction.UNLIMITED); //Alliance Transport Ship
-      Stormwind.ModObjectLimit(FourCC("hdes"), Faction.UNLIMITED); //Alliance Frigate
-      Stormwind.ModObjectLimit(FourCC("hbsh"), 6); //Alliance Battle Ship
+      Stormwind.ModObjectLimit(FourCC("h0AR"), Faction.UNLIMITED); //Alliance Scout
+      Stormwind.ModObjectLimit(FourCC("h0AX"), Faction.UNLIMITED); //Alliance Frigate
+      Stormwind.ModObjectLimit(FourCC("h0B3"), Faction.UNLIMITED); //Alliance Fireship
+      Stormwind.ModObjectLimit(FourCC("h0B0"), Faction.UNLIMITED); //Alliance Galley
+      Stormwind.ModObjectLimit(FourCC("h0B6"), Faction.UNLIMITED); //Alliance Boarding
+      Stormwind.ModObjectLimit(FourCC("h0AN"), Faction.UNLIMITED); //Alliance Juggernaut
+      Stormwind.ModObjectLimit(FourCC("h0B7"), 6); //Alliance Bombard
       Stormwind.ModObjectLimit(FourCC("h060"), 3); //Arathor Flagship
 
 
@@ -85,6 +91,13 @@ Make sure to communicate with your Dwarven and Kul'tiran allies, as they will be
       Stormwind.ModObjectLimit(FourCC("Rhse"), Faction.UNLIMITED); //Magic Sentry
       Stormwind.ModObjectLimit(Constants.UPGRADE_R014_DEEPRUN_TRAM_IRONFORGE, 1);
 
+      Stormwind.ModObjectLimit(Constants.UPGRADE_R02Z_REFLECTIVE_PLATING_ARATHOR_T2, Faction.UNLIMITED);
+      Stormwind.ModObjectLimit(FourCC("R030"), Faction.UNLIMITED); //Code of Chivalry
+      Stormwind.ModObjectLimit(FourCC("R031"), Faction.UNLIMITED); //Elven Refugees
+      Stormwind.ModObjectLimit(Constants.UPGRADE_R03V_MAGES_OF_STROMGARDE_ARATHOR_T2, Faction.UNLIMITED);
+      Stormwind.ModObjectLimit(Constants.UPGRADE_R03W_KNOWLEDGE_OF_HONOR_HOLD_ARATHOR_T2, Faction.UNLIMITED);
+      Stormwind.ModObjectLimit(Constants.ABILITY_A0F2_SELF_DESTROY_DEEPRUN_TRAM, Faction.UNLIMITED);
+
       //Tier researches
       Stormwind.ModObjectLimit(FourCC("R038"), Faction.UNLIMITED); //Enforcer Training
       Stormwind.ModObjectLimit(FourCC("R03E"), Faction.UNLIMITED); //Saboteur Training
@@ -94,19 +107,12 @@ Make sure to communicate with your Dwarven and Kul'tiran allies, as they will be
       Stormwind.ModObjectLimit(FourCC("R03A"), Faction.UNLIMITED); //Focus In The Light
       Stormwind.ModObjectLimit(FourCC("R03T"), Faction.UNLIMITED); //Electric Strike Ritual
       Stormwind.ModObjectLimit(FourCC("R03U"), Faction.UNLIMITED); //Solar Flare Ritual
-      
+      Stormwind.ModObjectLimit(FourCC("R03X"), Faction.UNLIMITED); //Conjurers
+
       Stormwind.ModAbilityAvailability(Constants.ABILITY_A0GA_SUMMON_GARRISON_LORDAERON, -1);
       Stormwind.ModAbilityAvailability(Constants.ABILITY_A0GC_REPLENISH_MANA_ORANGE_KEEPS_CAPITALS, -1);
       Stormwind.ModAbilityAvailability(Constants.ABILITY_A0K5_DWARVEN_MASONRY_CASTLES_YELLOW, -1);
 
-      Stormwind.AddPower(new CityOfHeroes(0.125f, 1.5f, "Units")
-      {
-        IconName = "Angel",
-        Name = "City of Heroes",
-        HeroGlowAbilityTypeId = Constants.ABILITY_A0GK_HERO_GLOW_ORIGIN,
-        Filter = unit => !unit.IsType(UNIT_TYPE_MECHANICAL) || unit.GetTypeId() != Constants.UNIT_H05F_STORMWIND_CHAMPION_STORMWIND_ELITE,
-      });
-      
       FactionManager.Register(Stormwind);
     }
   }

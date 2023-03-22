@@ -11,22 +11,24 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
 
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
-      Druids = new Faction("Druids", PLAYER_COLOR_BROWN, "|c004e2a04",
+      Druids = new Faction(FactionNames.Druids, PLAYER_COLOR_BROWN, "|c004e2a04",
         "ReplaceableTextures\\CommandButtons\\BTNFurion.blp")
       {
         UndefeatedResearch = FourCC("R06E"),
-        StartingGold = 150,
-        StartingLumber = 500,
+        StartingGold = 200,
+        StartingLumber = 700,
         CinematicMusic = "DarkAgents",
         ControlPointDefenderUnitTypeId = Constants.UNIT_E01Y_CONTROL_POINT_DEFENDER_DRUIDS,
-        IntroText = @"You are playing as the venerable Druids of the Cenarion Circle.
+        IntroText = @"You are playing as the ancient Druids of the Cenarion Circle.
 
-Without a Hero, you are perilously weak in the beginning. 
-Awaken Malfurion from his slumber as soon as possible. 
+You begin isolated in the deepest parts of Mount Hyjal near the World Tree.
 
-Once awakened, use his Force of Nature to clear a path through the trees in Ashenvale and summon Cenarius to aid you. 
+The Horde is gathering to burn Ashenvale forest and the World Tree. Cenarius has emerged from his seclusion to stop them. 
+Use him to awaken Malfurion from his slumber as soon as possible. 
 
-The Horde is gathering to burn Ashenvale forest and all within, gather your forces and strike before they can organize their forces."
+Once awakened, use his Force of Nature to clear a path through the trees in Ashenvale.
+
+Gather your forces and strike before the Horde can organize their efforts."
       };
 
       Druids.ModObjectLimit(FourCC("etol"), Faction.UNLIMITED); //Tree of Life
@@ -53,9 +55,16 @@ The Horde is gathering to burn Ashenvale forest and all within, gather your forc
       Druids.ModObjectLimit(FourCC("e00N"), 6); //Keeper of the Grove
       Druids.ModObjectLimit(FourCC("n05H"), Faction.UNLIMITED); //Furbolg
       Druids.ModObjectLimit(FourCC("n065"), 6); //Green Dragon
+
+      //Ships
       Druids.ModObjectLimit(FourCC("etrs"), Faction.UNLIMITED); //Night Elf Transport Ship
-      Druids.ModObjectLimit(FourCC("edes"), Faction.UNLIMITED); //Night Elf Frigate
-      Druids.ModObjectLimit(FourCC("ebsh"), 6); //Night Elf Battleship
+      Druids.ModObjectLimit(FourCC("h0AU"), Faction.UNLIMITED); // Scout
+      Druids.ModObjectLimit(FourCC("h0AV"), Faction.UNLIMITED); // Frigate
+      Druids.ModObjectLimit(FourCC("h0B1"), Faction.UNLIMITED); // Fireship
+      Druids.ModObjectLimit(FourCC("h057"), Faction.UNLIMITED); // Galley
+      Druids.ModObjectLimit(FourCC("h0B4"), Faction.UNLIMITED); // Boarding
+      Druids.ModObjectLimit(FourCC("h0BA"), Faction.UNLIMITED); // Juggernaut
+      Druids.ModObjectLimit(FourCC("h0B8"), 6); // Bombard
 
       Druids.ModObjectLimit(FourCC("Ecen"), 1); //Cenarius
       Druids.ModObjectLimit(FourCC("E00H"), 1); //Cenarius
@@ -84,7 +93,7 @@ The Horde is gathering to burn Ashenvale forest and all within, gather your forc
 
       Druids.SetObjectLevel(Constants.UPGRADE_REWS_WELL_SPRING, 1);
       
-      Druids.AddGoldMine(preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-10967, 7196)));
+      Druids.AddGoldMine(preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-9200, 10742)));
       
       FactionManager.Register(Druids);
     }

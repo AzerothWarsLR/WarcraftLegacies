@@ -9,7 +9,7 @@ namespace WarcraftLegacies.Source.Researches.Stormwind
     private static void Research()
     {
       StormwindSetup.Stormwind.ModObjectLimit(Constants.UNIT_H01B_OUTRIDER_STORMWIND, -Faction.UNLIMITED);
-      StormwindSetup.Stormwind.ModObjectLimit(Constants.UNIT_H054_STORMWIND_KNIGHT_ARATHOR, Faction.UNLIMITED);
+      StormwindSetup.Stormwind.ModObjectLimit(Constants.UNIT_H054_STORMWIND_KNIGHT_STORMWIND, Faction.UNLIMITED);
     }
 
     public static void Setup()

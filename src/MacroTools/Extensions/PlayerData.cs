@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using MacroTools.ControlPointSystem;
 using MacroTools.FactionSystem;
@@ -24,7 +24,7 @@ namespace MacroTools.Extensions
     /// <summary>
     /// Fired when the player changes their <see cref="Faction"/>.
     /// </summary>
-    public event EventHandler<PlayerFactionChangeEventArgs> ChangedFaction;
+    public event EventHandler<PlayerFactionChangeEventArgs>? ChangedFaction;
     
     private static readonly Dictionary<int, PlayerData> ById = new();
     private readonly Dictionary<int, int> _objectLevels = new();
@@ -147,23 +147,15 @@ namespace MacroTools.Extensions
       }
     }
 
-    public int ControlPointCount
-    {
-      get => _controlPointCount;
-      set
-      {
-        if (value < 0)
-          throw new ArgumentOutOfRangeException(
-            $"Tried to assign a negative {nameof(ControlPointCount)} to + {GetPlayerName(Player)}");
-
-        _controlPointCount = value;
-      }
-    }
+    /// <summary>
+    /// Control points the player owns
+    /// </summary>
+    public List<ControlPoint> ControlPoints { get; set; } = new();
 
     /// <summary>
     /// The number of extra <see cref="ControlPoint.ControlLevel"/>s the player gets each turn.
     /// </summary>
-    public int ControlLevelPerTurnBonus { get; set; }
+    public float ControlLevelPerTurnBonus { get; set; }
 
     /// <summary>
     /// Fired when the player's income changes.
@@ -176,26 +168,44 @@ namespace MacroTools.Extensions
     /// </summary>
     public static event EventHandler<PlayerFactionChangeEventArgs>? FactionChange;
 
-    public int GetObjectLevel(int obj)
-    {
-      return _objectLevels[obj];
-    }
+    public int GetObjectLevel(int obj) => _objectLevels.ContainsKey(obj) ? _objectLevels[obj] : 0;
 
     public void SetObjectLevel(int obj, int level)
     {
+      var objectLimit = Player.GetObjectLimit(obj);
+      
+      if (level > objectLimit)
+        throw new ArgumentException(
+          $"{nameof(level)} ({level}) cannot be higher than the object limit for {GetObjectName(obj)} ({objectLimit}).",
+          $"{nameof(level)}");
+      
+      //Object levels cannot be changed for objects with a limit of 0.
+      //This works around it by increasing the limit to 1 before making the change, then reverting it back.
+      var revertAfter = false;
+
+      if (objectLimit < 1)
+      {
+        SetPlayerTechMaxAllowed(Player, obj, 100);
+        revertAfter = true;
+      }
+
+      SetPlayerTechResearched(Player, obj, Math.Max(level, 0));
+
       _objectLevels[obj] = level;
-      SetPlayerTechResearched(Player, obj, level);
+      if (revertAfter)
+        SetPlayerTechMaxAllowed(Player, obj, 0);
+      
+      if (GetPlayerTechCount(Player, obj, false) != Math.Max(level, 0))
+        throw new InvalidOperationException(
+          $"Failed to set the object level of {GetObjectName(obj)} to {level}; it is {GetPlayerTechCount(Player, obj, false)} instead.");
     }
 
-    public int GetObjectLimit(int id)
-    {
-      return _objectLimits.TryGetValue(id, out var limit) ? limit : 0;
-    }
+    public int GetObjectLimit(int id) => _objectLimits.TryGetValue(id, out var limit) ? limit : 0;
 
-    private void SetObjectLimit(int id, int limit)
+    public void SetObjectLimit(int id, int limit)
     {
       _objectLimits[id] = limit;
-      SetObjectLevel(id, Math.Min(GetPlayerTechCount(Player, id, true), limit));
+
       if (limit >= Faction.UNLIMITED)
         SetPlayerTechMaxAllowed(Player, id, -1);
       else if (limit <= 0)
@@ -204,10 +214,8 @@ namespace MacroTools.Extensions
         SetPlayerTechMaxAllowed(Player, id, limit);
     }
 
-    public void ModObjectLimit(int id, int limit)
-    {
+    public void ModObjectLimit(int id, int limit) =>
       SetObjectLimit(id, GetObjectLimit(id) + limit);
-    }
 
     public void AddGold(float x)
     {

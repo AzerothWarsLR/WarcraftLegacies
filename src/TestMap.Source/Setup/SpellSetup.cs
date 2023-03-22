@@ -43,7 +43,12 @@ namespace TestMap.Source.Setup
         };
         SpellSystem.Register(massSimulacrum);
 
-        var executeFootman = new Execute(FourCC("hfoo"));
+        var executeFootman = new Execute(FourCC("hfoo"))
+        {
+          DamageMultNonResistant = 5,
+          DamageMultResistant = 2.5f,
+          DamageMultStructure = 1
+        };
         PassiveAbilityManager.Register(executeFootman);
 
         var animalCompanion = new AnimalCompanion(FourCC("hfoo"), FourCC("nqb1"))
@@ -72,9 +77,7 @@ namespace TestMap.Source.Setup
 
         var taxGuardTower = new ProvidesIncome(FourCC("hgtw"), 20);
         PassiveAbilityManager.Register(taxGuardTower);
-        
-        ParentChildResearchSystem.Register(FourCC("Rhde"), FourCC("Rhan"));
-        
+
         var electricStrike = new ElectricStrike(FourCC("AHbz"))
         {
           StunId = FourCC("ANsb"),

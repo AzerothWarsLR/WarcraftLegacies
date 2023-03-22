@@ -40,8 +40,9 @@ namespace MacroTools.LegendSystem
         
         _unit = value;
 
-        if (_unit == null) return;
-        _unitType = GetUnitTypeId(_unit);
+        if (_unit == null) 
+          return;
+        _unitType = _unit.GetTypeId();
         OnChangeUnit();
         UnitChanged?.Invoke(this, new LegendChangeUnitEventArgs(this, previousUnit));
       }

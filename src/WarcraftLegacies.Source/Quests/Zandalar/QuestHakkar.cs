@@ -1,7 +1,8 @@
 using MacroTools.ArtifactSystem;
 using MacroTools.ControlPointSystem;
 using MacroTools.FactionSystem;
-using MacroTools.ObjectiveSystem.Objectives;
+using MacroTools.ObjectiveSystem.Objectives.ArtifactBased;
+using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
 using MacroTools.QuestSystem;
 using WarcraftLegacies.Source.Setup.Legends;
 using static War3Api.Common;
@@ -28,7 +29,7 @@ namespace WarcraftLegacies.Source.Quests.Zandalar
     }
 
     /// <inheritdoc/>
-    protected override string CompletionPopup => "Hakkar has emerged from the Drowned Temple";
+    protected override string RewardFlavour => "Hakkar has emerged from the Drowned Temple";
 
     /// <inheritdoc/>
     protected override string RewardDescription => "Gain the demigod hero Hakkar";

@@ -4,7 +4,7 @@ using static War3Api.Common;
 
 namespace MacroTools.Spells
 {
-  public class ChannelAnySpell : Spell
+  public sealed class ChannelAnySpell : Spell
   {
     public int DummyAbilityId { get; init; }
     public string DummyAbilityOrderString { get; init; }

@@ -18,20 +18,20 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
     /// </summary>
     public static void Setup()
     {
-      Dragonmaw = new Faction("Dragonmaw", PLAYER_COLOR_WHEAT, "|C00FFFC01",
+      Dragonmaw = new Faction(FactionNames.Dragonmaw, PLAYER_COLOR_WHEAT, "|C00FFFC01",
         "ReplaceableTextures\\CommandButtons\\BTNRedDragon.blp")
       {
         StartingGold = 250,
-        StartingLumber = 500,
-        IntroText = @"You are playing as the Fragmented |cffe4bc00Dragonmaw Clan.
+        StartingLumber = 700,
+        IntroText = @"You are playing as the fragmented |cffe4bc00Dragonmaw Clan.
                     |r
-Your current situation is dire, the Dwarves of Ironforge will soon attack whatever is left of your clan.
+Your situation is dire, you have been pushed into the Twilight Highlands and the Dwarves will soon attack whatever is left of your clan.
 
-Your best chance of survival is escaping to Kalimdor, Warlord Zaela has heard of a new horde forming there. 
+Your best chance of survival is escaping to Kalimdor, where Warlord Zaela has heard of a New Horde forming. 
 
-The portal to Kalimdor will take 9 mins to summon and will only last for 60 seconds, be ready to escape when it is.
+The portal to Kalimdor will take 9 minutes to open and will only last for 60 seconds, be ready to escape the Highlands when it does.
 
-Until then, plunder as much as you can from the surrounding lands."
+Plunder as much as you can from the surrounding lands in preparation for your migration."
       };
 
       Dragonmaw.ModObjectLimit(FourCC("o063"), Faction.UNLIMITED); //Great Hall
@@ -59,13 +59,20 @@ Until then, plunder as much as you can from the surrounding lands."
       Dragonmaw.ModObjectLimit(FourCC("n09O"), 6); //DK
       Dragonmaw.ModObjectLimit(FourCC("u01T"), Faction.UNLIMITED); //Necrolyte
       Dragonmaw.ModObjectLimit(FourCC("o05L"), Faction.UNLIMITED); //Phase Grenadier
-      Dragonmaw.ModObjectLimit(FourCC("obot"), Faction.UNLIMITED); //Transport Ship
-      Dragonmaw.ModObjectLimit(FourCC("odes"), Faction.UNLIMITED); //Orc Frigate
-      Dragonmaw.ModObjectLimit(FourCC("ojgn"), 6); //Juggernaught
 
       Dragonmaw.ModObjectLimit(FourCC("O01Q"), 1); //Nekrosh
       Dragonmaw.ModObjectLimit(FourCC("O05S"), 1); //Zaela
       Dragonmaw.ModObjectLimit(FourCC("O06F"), 1); //Gorfax
+
+      //Ship
+      Dragonmaw.ModObjectLimit(FourCC("obot"), Faction.UNLIMITED); //Transport Ship
+      Dragonmaw.ModObjectLimit(FourCC("h0AS"), Faction.UNLIMITED); //Scout
+      Dragonmaw.ModObjectLimit(FourCC("h0AP"), Faction.UNLIMITED); //Frigate
+      Dragonmaw.ModObjectLimit(FourCC("h0B2"), Faction.UNLIMITED); //Fireship
+      Dragonmaw.ModObjectLimit(FourCC("h0AY"), Faction.UNLIMITED); //Galley
+      Dragonmaw.ModObjectLimit(FourCC("h0B5"), Faction.UNLIMITED); //Boarding
+      Dragonmaw.ModObjectLimit(FourCC("h0BC"), Faction.UNLIMITED); //Juggernaut
+      Dragonmaw.ModObjectLimit(FourCC("h0AO"), Faction.UNLIMITED); //Bombard
 
       Dragonmaw.ModObjectLimit(FourCC("R023"), Faction.UNLIMITED); //Spiritual Infusion
       Dragonmaw.ModObjectLimit(FourCC("Rosp"), Faction.UNLIMITED); //Spiked Barricades

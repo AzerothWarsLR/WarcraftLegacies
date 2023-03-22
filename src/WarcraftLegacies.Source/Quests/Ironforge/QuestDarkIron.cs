@@ -1,9 +1,10 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
-using MacroTools.ObjectiveSystem.Objectives;
+using MacroTools.LegendSystem;
+using MacroTools.ObjectiveSystem.Objectives.FactionBased;
+using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.QuestSystem;
-using WarcraftLegacies.Source.Setup.Legends;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
@@ -14,35 +15,26 @@ namespace WarcraftLegacies.Source.Quests.Ironforge
   /// </summary>
   public sealed class QuestDarkIron : QuestData
   {
-    private const int HeroId = Constants.UNIT_H03G_EMPEROR_OF_BLACKROCK_IRONFORGE;
-    private readonly List<unit> _rescueUnits = new();
+    private const int HeroId = Constants.UNIT_H03G_EMPEROR_OF_BLACKROCK_RAGNAROS;
+    private readonly List<unit> _rescueUnits;
     
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestDarkIron"/> class.
     /// </summary>
-    public QuestDarkIron(Rectangle shadowforgeCity) : base("Dark Iron Alliance",
+    public QuestDarkIron(Rectangle shadowforgeCity, Capital blackTemple, LegendaryHero magni) : base("Dark Iron Alliance",
       "The Dark Iron dwarves are renegades. Bring Magni to their capital to open negotiations for an alliance.",
       "ReplaceableTextures\\CommandButtons\\BTNRPGDarkIron.blp")
     {
-      AddObjective(new ObjectiveControlCapital(LegendFelHorde.LegendBlacktemple, false));
-      AddObjective(new ObjectiveLegendInRect(LegendIronforge.LegendMagni, Regions.Shadowforge_City,
-        "Shadowforge"));
+      AddObjective(new ObjectiveCapitalDead(blackTemple));
+      AddObjective(new ObjectiveLegendInRect(magni, shadowforgeCity,
+        "Shadowforge City"));
       AddObjective(new ObjectiveSelfExists());
       ResearchId = Constants.UPGRADE_R01A_QUEST_COMPLETED_DARK_IRON_ALLIANCE;
-      foreach (var unit in CreateGroup().EnumUnitsInRect(shadowforgeCity).EmptyToList())
-        if (unit.OwningPlayer() == Player(PLAYER_NEUTRAL_PASSIVE))
-        {
-          unit.SetInvulnerable(true);
-          _rescueUnits.Add(unit);
-          if (!IsUnitType(unit, UNIT_TYPE_STRUCTURE))
-          {
-            unit.Show(false);
-          }
-        }
+      _rescueUnits = shadowforgeCity.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
     }
 
     /// <inheritdoc />
-    protected override string CompletionPopup =>
+    protected override string RewardFlavour =>
       "The peace talk were succesful, The Dark Iron will join the Dwarven Empire.";
 
     /// <inheritdoc />
@@ -52,15 +44,13 @@ namespace WarcraftLegacies.Source.Quests.Ironforge
     /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)
     {
-      foreach (var unit in _rescueUnits) 
-        unit.Rescue(completingFaction.Player ?? Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      completingFaction.Player.RescueGroup(_rescueUnits);
     }
     
     /// <inheritdoc />
     protected override void OnFail(Faction failingFaction)
     {
-      foreach (var unit in _rescueUnits) 
-        unit.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      Player(PLAYER_NEUTRAL_AGGRESSIVE).RescueGroup(_rescueUnits);
     }
 
     /// <inheritdoc />

@@ -4,7 +4,7 @@ using static War3Api.Common;
 
 namespace MacroTools.Buffs
 {
-  public class SimulacrumBuff : PassiveBuff
+  public sealed class SimulacrumBuff : PassiveBuff
   {
     private readonly float _damageScale;
     private readonly float _effectScaleTarget;

@@ -23,10 +23,8 @@ namespace TestMap.Source
 		{
 			try
 			{
-				Console.WriteLine("Starting setup.");
-				GameSetup.Setup();
-				Console.WriteLine("Setup finished.");
-			}
+        GameSetup.Setup();
+      }
 			catch (Exception ex)
 			{
 				Console.WriteLine(ex);

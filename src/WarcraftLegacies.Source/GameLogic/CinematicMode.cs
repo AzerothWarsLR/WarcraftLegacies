@@ -1,6 +1,4 @@
 ﻿using MacroTools.Extensions;
-using MacroTools.FactionSystem;
-using WarcraftLegacies.Source.Setup.FactionSetup;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.GameLogic
@@ -27,8 +25,6 @@ namespace WarcraftLegacies.Source.GameLogic
       ForceCinematicSubtitles(false);
       SetMapMusic("music", true, 0);
       SetCameraField(CAMERA_FIELD_TARGET_DISTANCE, 2400f, 1f);
-      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
-        player.GetFaction()?.SetObjectLevel(Constants.UPGRADE_R068_INTRO_FINISHED, 1);
 
       VolumeGroupReset();
       VolumeGroupSetVolume(SOUND_VOLUMEGROUP_AMBIENTSOUNDS, 0.4f);
@@ -75,11 +71,6 @@ namespace WarcraftLegacies.Source.GameLogic
       Player(21).ApplyCameraField(CAMERA_FIELD_TARGET_DISTANCE, 2400, 1.00f);
       Player(19).ApplyCameraField(CAMERA_FIELD_TARGET_DISTANCE, 2400, 1.00f);
       Player(8).ApplyCameraField(CAMERA_FIELD_TARGET_DISTANCE, 2400, 1.00f);
-
-      VolumeGroupSetVolume(SOUND_VOLUMEGROUP_MUSIC, 0.45f);
-      VolumeGroupSetVolume(SOUND_VOLUMEGROUP_AMBIENTSOUNDS, 0);
-      VolumeGroupSetVolume(SOUND_VOLUMEGROUP_UI, 0);
-      VolumeGroupSetVolume(SOUND_VOLUMEGROUP_SPELLS, 0.4f);
 
       ShowInterface(false, 0.5f);
       ForceCinematicSubtitles(true);

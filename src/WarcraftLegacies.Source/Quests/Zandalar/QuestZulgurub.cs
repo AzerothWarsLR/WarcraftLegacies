@@ -1,7 +1,8 @@
 ﻿using MacroTools.Extensions;
 using MacroTools.FactionSystem;
-using MacroTools.ObjectiveSystem.Objectives;
+using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.QuestSystem;
+using WarcraftLegacies.Source.Setup;
 using WarcraftLegacies.Source.Setup.Legends;
 using static War3Api.Common; 
 
@@ -13,22 +14,22 @@ namespace WarcraftLegacies.Source.Quests.Zandalar
   public sealed class QuestZulgurub : QuestData
   {
     private const int _zulgurubResearch = Constants.UPGRADE_R02M_QUEST_COMPLETED_THE_HEART_OF_HAKKAR_WARSONG;
-    private const int _trollShrineId = Constants.UNIT_O04X_LOA_SHRINE_ZANDALAR;
+    private const int _trollShrineId = Constants.UNIT_O04X_LOA_SHRINE_ZANDALARI_SPECIALIST;
     private const int _ravagerId = Constants.UNIT_O021_RAVAGER_WARSONG;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestZulgurub"/> class
     /// </summary>
-    public QuestZulgurub() : base("Heart of Hakkar",
+    public QuestZulgurub(AllLegendSetup allLegendSetup) : base("Heart of Hakkar",
       "The Gurubashi trolls of Zul'Gurub follow the sacred Heart of Hakkar, hidden within their shrine. Capture it to gain their loyalty.",
       "ReplaceableTextures\\CommandButtons\\BTNTrollRavager.blp")
     {
-      AddObjective(new ObjectiveControlCapital(LegendNeutral.Zulgurub, false));
+      AddObjective(new ObjectiveControlCapital(allLegendSetup.Neutral.Zulgurub, false));
     }
 
 
     /// <inheritdoc/>
-    protected override string CompletionPopup => "Zul'gurub has fallen. The Gurubashi trolls lend their might to the Zandalari.";
+    protected override string RewardFlavour => "Zul'gurub has fallen. The Gurubashi trolls lend their might to the Zandalari.";
 
     /// <inheritdoc/>
     protected override string RewardDescription => "300 gold and the ability to train " + GetObjectName(_ravagerId) + "s from the " + GetObjectName(_trollShrineId);

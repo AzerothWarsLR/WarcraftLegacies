@@ -9,8 +9,8 @@ namespace WarcraftLegacies.Source.GameLogic
   public static class OpenAllianceVote
   {
     private static readonly dialog? VoteDialogue = DialogCreate();
-    private static readonly button? YesButton = DialogAddButton(VoteDialogue, "Yes", 0);
     private static readonly button? NoButton = DialogAddButton(VoteDialogue, "No", 0);
+    private static readonly button? YesButton = DialogAddButton(VoteDialogue, "Yes", 0);
     private static readonly trigger? YesTrigger = CreateTrigger();
     private static readonly trigger? NoTrigger = CreateTrigger();
     private static int _voteCount;
@@ -52,7 +52,7 @@ namespace WarcraftLegacies.Source.GameLogic
       {
         DisplayTextToPlayer(GetLocalPlayer(), 0, 0,
           "Open alliances are disabled; only Quests can change your alliance.");
-        Hint.Register(new Hint("You can't change alliances except through a select few Quests."));
+        Hint.Register(new Hint("You can leave your current alliances by typing -unally, but you won't be able to join a new one."));
         AreAlliancesOpen = false;
       }
 

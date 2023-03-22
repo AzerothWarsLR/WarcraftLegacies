@@ -87,7 +87,7 @@ namespace MacroTools.PassiveAbilities
           .SetYaw(GetUnitFacing(caster) * MathEx.DegToRad)
           .SetLifespan();
 
-        foreach (var nearbyUnit in CreateGroup().EnumUnitsInRange(caster.GetPosition(), Radius).EmptyToList())
+        foreach (var nearbyUnit in CreateGroup().EnumUnitsInRange(target.GetPosition(), Radius).EmptyToList())
         {
           if (IsUnitAlly(nearbyUnit, caster.OwningPlayer()) || !UnitAlive(nearbyUnit) || BlzIsUnitInvulnerable(nearbyUnit) ||
               IsUnitType(nearbyUnit, UNIT_TYPE_STRUCTURE) || IsUnitType(nearbyUnit, UNIT_TYPE_ANCIENT))

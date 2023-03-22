@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
-using MacroTools.ObjectiveSystem.Objectives;
+using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
 using static War3Api.Common;
 
@@ -26,14 +26,14 @@ namespace WarcraftLegacies.Source.Quests.Forsaken
     }
 
     //Todo: bad flavour
-    protected override string CompletionPopup => "Putress is now trainable.";
+    protected override string RewardFlavour => "Putress is now trainable.";
 
     protected override string RewardDescription => "Putress is trainable at the altar";
     
     /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)
     {
-      completingFaction.Player?.RescueGroup(_rescueUnits);
+      completingFaction.Player.RescueGroup(_rescueUnits);
     }
     
     /// <inheritdoc />

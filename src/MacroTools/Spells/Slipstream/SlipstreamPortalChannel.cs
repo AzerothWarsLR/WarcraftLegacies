@@ -1,4 +1,5 @@
-﻿using MacroTools.ChannelSystem;
+﻿using System;
+using MacroTools.ChannelSystem;
 using MacroTools.Extensions;
 using WCSharp.Buffs;
 using WCSharp.Shared.Data;
@@ -11,8 +12,6 @@ namespace MacroTools.Spells.Slipstream
   /// </summary>
   public sealed class SlipstreamPortalChannel : Channel
   {
-    private readonly Point _target;
-    
     /// <inheritdoc />
     public override bool Active { get; set; }
     
@@ -30,33 +29,41 @@ namespace MacroTools.Spells.Slipstream
     /// It takes this long for the portal to close after the caster stops channeling.
     /// </summary>
     public float ClosingDelay { get; init; }
+    
+    /// <summary>
+    /// A function that tells the <see cref="SlipstreamPortalChannel"/> how to refund its cost to its caster if necessary.
+    /// </summary>
+    public Action<unit>? RefundFunc { get; init; }
 
     /// <summary>
     /// The color of the created portals.
     /// </summary>
     public Color Color { get; init; } = new(255, 255, 255, 255);
-    
+
     private unit? _portalOrigin;
     private unit? _portalDestination;
     private SlipstreamPortalBuff? _portalOriginBuff;
     private SlipstreamPortalBuff? _portalDestinationBuff;
-    
+    private readonly Point _origin;
+    private readonly Point _target;
+
     /// <summary>
     /// Initializes a new instance of the <see cref="SlipstreamPortalChannel"/> class.
     /// </summary>
     /// <param name="caster"><inheritdoc /></param>
     /// <param name="spellId"><inheritdoc /></param>
+    /// <param name="origin">The position of the portal that spawns near the caster.</param>
     /// <param name="target">The destination point of the portal.</param>
-    public SlipstreamPortalChannel(unit caster, int spellId, Point target) : base(caster, spellId)
+    public SlipstreamPortalChannel(unit caster, int spellId, Point origin, Point target) : base(caster, spellId)
     {
       _target = target;
+      _origin = origin;
     }
     
     /// <inheritdoc />
     public override void OnCreate()
     {
-      var casterPosition = WCSharp.Shared.Util.PositionWithPolarOffset(GetUnitX(Caster), GetUnitY(Caster), 200, Caster.GetFacing());
-      _portalOrigin = CreateUnit(Caster.OwningPlayer(), PortalUnitTypeId, casterPosition.x, casterPosition.y, Caster.GetFacing() - 180)
+      _portalOrigin = CreateUnit(Caster.OwningPlayer(), PortalUnitTypeId, _origin.X, _origin.Y, Caster.GetFacing() - 180)
         .SetWaygateDestination(_target)
         .SetColor(Color.Red, Color.Green, Color.Blue, Color.Alpha);
       _portalOriginBuff = new SlipstreamPortalBuff(Caster, _portalOrigin);
@@ -64,9 +71,12 @@ namespace MacroTools.Spells.Slipstream
       _portalOriginBuff.Open(OpeningDelay);
       
       _portalDestination = CreateUnit(Caster.OwningPlayer(), PortalUnitTypeId, _target.X, _target.Y, Caster.GetFacing())
-        .SetWaygateDestination(new Point(casterPosition.x, casterPosition.y))
+        .SetWaygateDestination(new Point(_origin.X, _origin.Y))
         .SetColor(Color.Red, Color.Green, Color.Blue, Color.Alpha);
-      _portalDestinationBuff = new SlipstreamPortalBuff(Caster, _portalDestination);
+      _portalDestinationBuff = new SlipstreamPortalBuff(Caster, _portalDestination)
+      {
+        RefundFunc = RefundFunc
+      };
       BuffSystem.Add(_portalDestinationBuff);
       _portalDestinationBuff.Open(OpeningDelay);
     }

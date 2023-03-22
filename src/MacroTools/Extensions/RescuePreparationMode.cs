@@ -6,11 +6,6 @@
   public enum RescuePreparationMode
   {
     /// <summary>
-    /// Do nothing.
-    /// </summary>
-    None,
-
-    /// <summary>
     /// Render all prepared units invulnerable.
     /// </summary>
     Invulnerable,

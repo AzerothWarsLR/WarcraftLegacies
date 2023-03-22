@@ -1,7 +1,8 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
-using MacroTools.ObjectiveSystem.Objectives;
+using MacroTools.ObjectiveSystem.Objectives.FactionBased;
+using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -26,13 +27,13 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
       "The distant lands of Kalimdor remain untouched by human civilization. If the Third War proceeds poorly, it may become necessary to establish a forward base there.",
       "ReplaceableTextures\\CommandButtons\\BTNHumanArcaneTower.blp")
     {
-      AddObjective(new ObjectiveResearch(RequiredResearch, Constants.UNIT_H076_ALLIANCE_SHIPYARD_DALARAN));
+      AddObjective(new ObjectiveResearch(RequiredResearch, Constants.UNIT_H076_SHIPYARD_DALARAN_SHIPYARD));
       AddObjective(new ObjectiveSelfExists());
       _rescueUnits = theramoreRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
     }
 
     /// <inheritdoc />
-    protected override string CompletionPopup =>
+    protected override string RewardFlavour =>
       "A sizeable isle off the coast of Dustwallow Marsh has been colonized and dubbed Theramore, marking the first human settlement to be established on Kalimdor.";
 
     /// <inheritdoc />

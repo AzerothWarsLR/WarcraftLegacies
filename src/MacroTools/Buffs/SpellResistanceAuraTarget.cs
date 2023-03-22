@@ -7,18 +7,18 @@ namespace MacroTools.Buffs
   {
     public SpellResistanceAuraTarget(unit caster, unit target) : base(caster, target)
     {
-      Bind(FourCC("AAAA"), FourCC("BBBB"));
+      Bind(FourCC("A0B1"), FourCC("Bhab"));
       EffectString = @"Abilities\Spells\Other\GeneralAuraTarget\GeneralAuraTarget.mdl";
     }
 
     public override void OnApply()
     {
-      UnitAddAbility(Target, FourCC("Alsr"));
+      UnitAddAbility(Target, FourCC("A0B1"));
     }
 
     public override void OnExpire()
     {
-      UnitRemoveAbility(Target, FourCC("Alsr"));
+      UnitRemoveAbility(Target, FourCC("A0B1"));
     }
   }
 }

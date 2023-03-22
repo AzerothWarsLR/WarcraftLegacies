@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using MacroTools.Extensions;
-using MacroTools.FactionSystem;
-using MacroTools.ObjectiveSystem;
-using MacroTools.QuestSystem;
+﻿using System.Collections.Generic;
 using MacroTools.Wrappers;
 using static War3Api.Common;
 
@@ -13,93 +7,45 @@ namespace MacroTools.DialogueSystem
   /// <summary>
   /// Can play a piece of dialogue from the Warcraft 3 campaign.
   /// </summary>
-  public sealed class Dialogue
+  public sealed class Dialogue : IHasPlayableDialogue
   {
-    private readonly IEnumerable<Faction>? _audience;
     private readonly string _caption;
-    private readonly SoundWrapper _sound;
     private readonly string _speaker;
-    private bool _completed;
-
-    public Dialogue(IEnumerable<Objective> objectives, string soundFile, string caption, string speaker,
-      IEnumerable<Faction>? audience = null)
+    
+    /// <summary>
+    /// The <see cref="SoundWrapper"/> played by this <see cref="Dialogue"/>.
+    /// </summary>
+    public SoundWrapper Sound { get; }
+    
+    /// <summary>
+    /// Initializes a new instance of the <see cref="Dialogue"/> class.
+    /// </summary>
+    /// <param name="soundFile">A path to the sound file which the dialogue will play.</param>
+    /// <param name="caption">Gets displayed to the user when the dialogue is played.</param>
+    /// <param name="speaker">The character that is saying the dialogue.</param>
+    public Dialogue(string soundFile, string caption, string speaker)
     {
       _caption = caption;
       _speaker = speaker;
-      _audience = audience;
-      Objectives = objectives.ToList();
-      _sound = new SoundWrapper(soundFile, soundEax: SoundEax.HeroAcks);
-    }
-
-    internal List<Objective> Objectives { get; }
-
-    private QuestProgress Progress
-    {
-      set
-      {
-        switch (value)
-        {
-          case QuestProgress.Complete:
-            if (_audience != null)
-            {
-              _sound.Play(x => _audience.Contains(x.GetFaction()), true);
-              foreach (var faction in _audience)
-              {
-                var player = faction.Player;
-                if (player != null)
-                {
-                  DisplayTextToPlayer(player, 0, 0, $"|cffffcc00{_speaker}:|r {_caption}");
-                }
-              }
-            }
-            else
-            {
-              DisplayTextToPlayer(GetLocalPlayer(), 0, 0, $"|cffffcc00{_speaker}:|r {_caption}");
-              _sound.Play(true);
-            }
-
-            _completed = true;
-            Completed?.Invoke(this, this);
-            break;
-          case QuestProgress.Failed:
-            _completed = true;
-            Completed?.Invoke(this, this);
-            break;
-          default:
-            throw new ArgumentOutOfRangeException(nameof(value), value, null);
-        }
-      }
+      Sound = new SoundWrapper(soundFile, soundEax: SoundEax.HeroAcks);
     }
 
     /// <summary>
-    /// Fired when the <see cref="Dialogue"/> plays.
+    /// Plays the <see cref="Dialogue"/> to eligible audience members.
     /// </summary>
-    public event EventHandler<Dialogue>? Completed;
-
-    internal void OnObjectiveCompleted(object? sender, Objective completedObjective)
+    public void Play(List<player>? players)
     {
-      if (_completed)
+      if (players != null)
       {
-        return;
+        Sound.Play(players.Contains, true);
+        foreach (var player in players) 
+          DisplayTextToPlayer(player, 0, 0, $"|cffffcc00{_speaker}:|r {_caption}");
       }
-
-      var allComplete = true;
-      var anyFailed = false;
-
-      foreach (var objective in Objectives)
+      else
       {
-        if (objective.Progress != QuestProgress.Complete)
-        {
-          allComplete = false;
-          if (objective.Progress == QuestProgress.Failed)
-            anyFailed = true;
-        }
+        DisplayTextToPlayer(GetLocalPlayer(), 0, 0, $"|cffffcc00{_speaker}:|r {_caption}");
+        Sound.Play(true);
       }
-
-      if (allComplete)
-        Progress = QuestProgress.Complete;
-      else if (anyFailed)
-        Progress = QuestProgress.Failed;
     }
   }
 }

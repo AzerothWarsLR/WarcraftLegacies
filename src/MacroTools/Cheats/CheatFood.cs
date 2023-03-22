@@ -1,30 +1,32 @@
+﻿using MacroTools.CommandSystem;
 using MacroTools.Extensions;
-using MacroTools.FactionSystem;
 using static War3Api.Common;
 
 namespace MacroTools.Cheats
 {
-  public static class CheatFood
+  /// <summary>
+  /// Increases the player's food cap by the specified amount.
+  /// </summary>
+  public sealed class CheatFood : Command
   {
-    private const string Command = "-food ";
 
+    /// <inheritdoc />
+    public override string CommandText => "food";
 
-    private static void Actions()
+    /// <inheritdoc />
+    public override int MinimumParameterCount => 1;
+
+    /// <inheritdoc />
+    public override CommandType Type => CommandType.Cheat;
+
+    /// <inheritdoc />
+    public override string Description => "Increases the player's food cap by the specified amount.";
+
+    /// <inheritdoc />
+    public override string Execute(player cheater, params string[] parameters)
     {
-      if (!TestMode.CheatCondition()) return;
-      string enteredString = GetEventPlayerChatString();
-      player p = GetTriggerPlayer();
-
-      string parameter = SubString(enteredString, StringLength(Command), StringLength(enteredString));
-      p.AdjustPlayerState(PLAYER_STATE_RESOURCE_FOOD_CAP, S2I(parameter));
-      DisplayTextToPlayer(p, 0, 0, "|cffD27575CHEAT:|r Granted " + parameter + " food.");
-    }
-
-    public static void Setup()
-    {
-      trigger trig = CreateTrigger();
-      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers()) TriggerRegisterPlayerChatEvent(trig, player, Command, false);
-      TriggerAddAction(trig, Actions);
+      cheater.AdjustPlayerState(PLAYER_STATE_RESOURCE_FOOD_CAP, S2I(parameters[0]));
+      return "Granted " + parameters[0] + " food.";
     }
   }
 }

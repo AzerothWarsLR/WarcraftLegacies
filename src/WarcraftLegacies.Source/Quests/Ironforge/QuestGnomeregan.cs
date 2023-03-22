@@ -1,47 +1,56 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using MacroTools;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
-using MacroTools.ObjectiveSystem.Objectives;
+using MacroTools.ObjectiveSystem.Objectives.FactionBased;
+using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Ironforge
 {
+  /// <summary>
+  /// Kill a specific to unlock Gnomeregan
+  /// </summary>
   public sealed class QuestGnomeregan : QuestData
   {
     private static readonly int QuestResearchId = FourCC("R05Q");
-    private readonly List<unit> _rescueUnits = new();
+    private readonly List<unit> _rescueUnits;
 
+    /// <summary>
+    /// Initializes a new instance of the <see cref="QuestGnomeregan"/> class.
+    /// </summary>
+    /// <param name="rescueRect"></param>
+    /// <param name="preplacedUnitSystem"></param>
     public QuestGnomeregan(Rectangle rescueRect, PreplacedUnitSystem preplacedUnitSystem) : base("The City of Invention",
       "The people of Gnomeregan have long been unable to assist the Alliance in its wars due an infestation of troggs and Ice Trolls. Resolve their conflicts for them to gain their services.",
       "ReplaceableTextures\\CommandButtons\\BTNFlyingMachine.blp")
     {
-      AddObjective(new ObjectiveKillUnit(preplacedUnitSystem.GetUnit(FourCC("nitw"), Regions.Gnomergan.Center))); //Ice Troll Warlord
+      AddObjective(new ObjectiveUnitIsDead(preplacedUnitSystem.GetUnit(FourCC("nitw"), Regions.Gnomergan.Center))); //Ice Troll Warlord
       AddObjective(new ObjectiveSelfExists());
-      foreach (var unit in CreateGroup().EnumUnitsInRect(rescueRect).EmptyToList())
-        if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))
-        {
-          SetUnitInvulnerable(unit, true);
-          _rescueUnits.Add(unit);
-        }
+      _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
+      Required = true;
     }
 
-    protected override string CompletionPopup =>
+    /// <inheritdoc/>
+    protected override string RewardFlavour =>
       "Gnomeregan has been literated, and its military is now free to assist Ironforge.";
 
+    /// <inheritdoc/>
     protected override string RewardDescription => "Control of all units in Gnomeregan";
 
+    /// <inheritdoc/>
     protected override void OnFail(Faction completingFaction)
     {
-      foreach (var unit in _rescueUnits) unit.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      Player(PLAYER_NEUTRAL_AGGRESSIVE).RescueGroup(_rescueUnits);
     }
 
+    /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
     {
       SetPlayerTechResearched(completingFaction.Player, FourCC("R05Q"), 1);
-      foreach (var unit in _rescueUnits) unit.Rescue(completingFaction.Player);
+      completingFaction.Player.RescueGroup(_rescueUnits);
     }
 
     protected override void OnAdd(Faction whichFaction)

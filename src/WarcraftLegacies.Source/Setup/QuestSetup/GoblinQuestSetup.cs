@@ -5,13 +5,13 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
 {
   public static class GoblinQuestSetup
   {
-    public static void Setup()
+    public static void Setup(AllLegendSetup allLegendSetup)
     {
       var goblin = GoblinSetup.Goblin;
       goblin.StartingQuest = goblin.AddQuest(new QuestBusinessExpansion());
       goblin.AddQuest(new QuestExplosiveEngineering());
-      goblin.AddQuest(new QuestWesternExpansion());
-      goblin.AddQuest(new QuestLumberMarket());
+      goblin.AddQuest(new QuestWesternExpansion(new [] { allLegendSetup.Sentinels.Auberdine, allLegendSetup.Sentinels.Feathermoon }));
+      goblin.AddQuest(new QuestLumberMarket(allLegendSetup.Druids.Nordrassil));
       goblin.AddQuest(new QuestGoblinEmpire());
     }
   }

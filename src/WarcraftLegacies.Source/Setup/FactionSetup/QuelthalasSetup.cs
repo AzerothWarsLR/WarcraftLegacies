@@ -11,23 +11,23 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
 
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
-      Quelthalas =
-        new Faction(
-          "Quel'thalas", PLAYER_COLOR_CYAN, "|C0000FFFF",
+      Quelthalas = new Faction(FactionNames.QuelThalas, PLAYER_COLOR_CYAN, "|C0000FFFF",
           "ReplaceableTextures\\CommandButtons\\BTNSylvanusWindrunner.blp")
-        {
-          UndefeatedResearch = FourCC("R05U"),
-          StartingGold = 150,
-          StartingLumber = 500,
-          CinematicMusic = "BloodElfTheme",
-          ControlPointDefenderUnitTypeId = Constants.UNIT_N0BC_CONTROL_POINT_DEFENDER_QUELTHALAS,
-          IntroText = @"You are playing as the mystical |cff32e1e1Kingdom of Quel'thalas|r.
+      {
+        UndefeatedResearch = FourCC("R05U"),
+        StartingGold = 200,
+        StartingLumber = 700,
+        CinematicMusic = "BloodElfTheme",
+        ControlPointDefenderUnitTypeId = Constants.UNIT_N0BC_CONTROL_POINT_DEFENDER_QUELTHALAS,
+        IntroText = @"You are playing as the proud |cff32e1e1Kingdom of Quel'thalas|r.
 
-The Trolls of Zul'Aman have cut you off from Silvermoon City, and are preparing attacks on your base,
-Train soldiers to repel the attack, then gather enough strength to besiege Zul'Aman and take the head of Zul'jin.
+You begin in Tranquilien, separated from Silvermoon.
+The Trolls of Zul'Aman have laid siege to the city, and are preparing attacks on your base.
 
-The Plague of Undeath is coming, and your allies to the South will need your help with the Undead soon, be ready to join them as once you have secured Silvermoon and dealt with the Troll threat."
-        };
+Train soldiers to repel the attacks, then gather enough strength to besiege Zul'Aman and take the head of Zul'jin.
+
+The Plague of Undeath is coming and Lordaeron will need your help with the Scourge soon. Be ready to join them as once you have secured Silvermoon and dealt with the Amani invasion."
+      };
 
       //Structures
       Quelthalas.ModObjectLimit(FourCC("h033"), Faction.UNLIMITED); //Steading
@@ -50,9 +50,6 @@ The Plague of Undeath is coming, and your allies to the South will need your hel
 
       //Units
       Quelthalas.ModObjectLimit(FourCC("nbee"), Faction.UNLIMITED); //Elven Worker
-      Quelthalas.ModObjectLimit(FourCC("hbot"), Faction.UNLIMITED); //Alliance Transport Ship
-      Quelthalas.ModObjectLimit(FourCC("hdes"), Faction.UNLIMITED); //Alliance Frigate
-      Quelthalas.ModObjectLimit(FourCC("hbsh"), 6); //Alliance Battle Ship
       Quelthalas.ModObjectLimit(FourCC("hhes"), Faction.UNLIMITED); //Elven Warrior
       Quelthalas.ModObjectLimit(FourCC("hmpr"), Faction.UNLIMITED); //Priest
       Quelthalas.ModObjectLimit(FourCC("hsor"), Faction.UNLIMITED); //Sorceress
@@ -60,9 +57,21 @@ The Plague of Undeath is coming, and your allies to the South will need your hel
       Quelthalas.ModObjectLimit(FourCC("nhea"), Faction.UNLIMITED); //Archer
       Quelthalas.ModObjectLimit(FourCC("e008"), 6); //Elven Ballista
       Quelthalas.ModObjectLimit(FourCC("n00A"), 6); //Farstrider
+      Quelthalas.ModObjectLimit(FourCC("e01B"), 6); //Arcane Annihilator
+      Quelthalas.ModObjectLimit(FourCC("n02F"), 6); //Warlock
       Quelthalas.ModObjectLimit(FourCC("n063"), 12); //Magus
       Quelthalas.ModObjectLimit(FourCC("hspt"), Faction.UNLIMITED); //Spell Breaker
       Quelthalas.ModObjectLimit(FourCC("u00J"), 2); //Arcane Wagon
+
+      //Ships
+      Quelthalas.ModObjectLimit(FourCC("hbot"), Faction.UNLIMITED); //Alliance Transport Ship
+      Quelthalas.ModObjectLimit(FourCC("h0AR"), Faction.UNLIMITED); //Alliance Scout
+      Quelthalas.ModObjectLimit(FourCC("h0AX"), Faction.UNLIMITED); //Alliance Frigate
+      Quelthalas.ModObjectLimit(FourCC("h0B3"), Faction.UNLIMITED); //Alliance Fireship
+      Quelthalas.ModObjectLimit(FourCC("h0B0"), Faction.UNLIMITED); //Alliance Galley
+      Quelthalas.ModObjectLimit(FourCC("h0B6"), Faction.UNLIMITED); //Alliance Boarding
+      Quelthalas.ModObjectLimit(FourCC("h0AN"), Faction.UNLIMITED); //Alliance Juggernaut
+      Quelthalas.ModObjectLimit(FourCC("h0B7"), 6); //Alliance Bombard
 
       //Demi-heroes
       Quelthalas.ModObjectLimit(FourCC("n075"), 1); //Vareesa
@@ -85,11 +94,14 @@ The Plague of Undeath is coming, and your allies to the South will need your hel
       Quelthalas.ModObjectLimit(FourCC("Rhse"), Faction.UNLIMITED); //Magic Sentry
       Quelthalas.ModObjectLimit(FourCC("Rhpt"), Faction.UNLIMITED); //Priest Adept Training
       Quelthalas.ModObjectLimit(FourCC("Rhst"), Faction.UNLIMITED); //Sorceress Adept Training
-      
+      Quelthalas.ModObjectLimit(FourCC("R004"), Faction.UNLIMITED); //Sunfury Warrior Training
+      Quelthalas.ModObjectLimit(FourCC("R02Y"), Faction.UNLIMITED); //Improved Glaives
+
       Quelthalas.ModAbilityAvailability(Constants.ABILITY_A0K5_DWARVEN_MASONRY_CASTLES_YELLOW, -1);
-      
+      Quelthalas.ModAbilityAvailability(Constants.ABILITY_A0OC_EXTRACT_VIAL_ALL, -1);
+
       Quelthalas.AddGoldMine(preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(17716, 13000)));
-      
+
       FactionManager.Register(Quelthalas);
     }
   }

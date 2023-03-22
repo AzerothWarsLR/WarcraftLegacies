@@ -14,6 +14,20 @@ namespace MacroTools.Extensions
     private const float HeroDropDist = 50; //The radius in which heroes spread out items when they drop them
 
     /// <summary>
+    /// Sets the unit's level to a particular value.
+    /// </summary>
+    public static unit SetLevel(this unit whichUnit, int newLevel, bool showEyeCandy = true)
+    {
+      var oldLevel = GetHeroLevel(whichUnit);
+      if (newLevel > oldLevel)
+        SetHeroLevel(whichUnit, newLevel, showEyeCandy);
+      else if (newLevel < oldLevel) 
+        UnitStripHeroLevel(whichUnit, oldLevel - newLevel);
+
+      return whichUnit;
+    }
+    
+    /// <summary>
     /// Determines whether or not the unit's attack can be seen in the UI window.
     /// </summary>
     public static unit ShowAttackUi(this unit whichUnit, bool show, int weaponSlot = 0)
@@ -41,6 +55,11 @@ namespace MacroTools.Extensions
     /// Returns the unit's maximum hit points.
     /// </summary>
     public static int GetMaximumHitPoints(this unit whichUnit) => BlzGetUnitMaxHP(whichUnit);
+
+    /// <summary>
+    /// Returns the unit's current hit points.
+    /// </summary>
+    public static float GetHitPoints(this unit whichUnit) => GetUnitState(whichUnit, UNIT_STATE_LIFE);
     
     /// <summary>
     /// Sets the unit's scaling value.
@@ -57,6 +76,15 @@ namespace MacroTools.Extensions
     public static unit SetMaximumHitpoints(this unit whichUnit, int value)
     {
       BlzSetUnitMaxHP(whichUnit, value);
+      return whichUnit;
+    }
+
+    /// <summary>
+    /// Sets the unit's current hit points.
+    /// </summary>
+    public static unit SetCurrentHitpoints(this unit whichUnit, int value)
+    {
+      SetUnitState(whichUnit, UNIT_STATE_LIFE, value);
       return whichUnit;
     }
 
@@ -160,6 +188,9 @@ namespace MacroTools.Extensions
     /// <returns></returns>
     public static unit SetTimedLife(this unit whichUnit, float duration, int buffId = 0)
     {
+      if (duration < 1)
+        throw new ArgumentException($"Cannot apply a timed life with a {nameof(duration)} less than 1.");
+      
       UnitApplyTimedLife(whichUnit, buffId, duration);
       return whichUnit;
     }
@@ -249,6 +280,15 @@ namespace MacroTools.Extensions
     }
     
     /// <summary>
+    /// If true, prevents the unit from moving or taking actions.
+    /// </summary>
+    public static unit PauseEx(this unit unit, bool value)
+    {
+      BlzPauseUnitEx(unit, value);
+      return unit;
+    }
+    
+    /// <summary>
     /// If true, the unit cannot be targeted by attacks or hostile abilities and cannot be damaged.
     /// </summary>
     public static unit SetInvulnerable(this unit unit, bool value)
@@ -295,26 +335,30 @@ namespace MacroTools.Extensions
     /// <summary>
     /// Moves the unit to a specified <see cref="Point"/>.
     /// </summary>
-    public static unit SetPosition(this unit unit, Point where)
+    public static unit SetPosition(this unit unit, Point where, bool considerPathability = false)
     {
-      SetUnitPosition(unit, where.X, where.Y);
+      if (!considerPathability)
+      {
+        SetUnitX(unit, where.X);
+        SetUnitY(unit, where.Y);
+      }
+      else
+        SetUnitPosition(unit, where.X, where.Y);
+
       return unit;
     }
 
     /// <summary>
     /// Returns the position of the unit.
     /// </summary>
-    public static Point GetPosition(this unit unit)
-    {
-      return new Point(GetUnitX(unit), GetUnitY(unit));
-    }
+    public static Point GetPosition(this unit unit) => new(GetUnitX(unit), GetUnitY(unit));
 
     /// <summary>
     /// Changess the unit's owner to the specified player.
     /// </summary>
-    public static unit SetOwner(this unit unit, player whichPlayer)
+    public static unit SetOwner(this unit unit, player whichPlayer, bool changeColor = true)
     {
-      SetUnitOwner(unit, whichPlayer, true);
+      SetUnitOwner(unit, whichPlayer, changeColor);
       return unit;
     }
     
@@ -356,7 +400,7 @@ namespace MacroTools.Extensions
       var index = 0;
       while (true)
       {
-        item indexItem = UnitItemInSlot(whichUnit, index);
+        var indexItem = UnitItemInSlot(whichUnit, index);
         if (indexItem != null && GetItemTypeId(indexItem) == itemTypeId) return index + 1;
 
         index += 1;
@@ -445,8 +489,10 @@ namespace MacroTools.Extensions
     public static void Rescue(this unit whichUnit, player whichPlayer)
     {
       //If the unit costs 10 food, that means it should be owned by neutral passive instead of the rescuing player.
-      SetUnitOwner(whichUnit, GetUnitFoodUsed(whichUnit) == 10 ? Player(PLAYER_NEUTRAL_PASSIVE) : whichPlayer, true);
-      ShowUnit(whichUnit, true);
+      whichUnit
+        .SetOwner(GetUnitFoodUsed(whichUnit) == 10 ? Player(PLAYER_NEUTRAL_PASSIVE) : whichPlayer)
+        .Show(true)
+        .Pause(false);
 
       var asCapital = CapitalManager.GetFromUnit(whichUnit);
       if (asCapital == null || asCapital.ProtectorCount == 0) 
@@ -511,7 +557,7 @@ namespace MacroTools.Extensions
     /// <summary>
     ///   Drops a units entire inventory on the ground.
     /// </summary>
-    public static void DropAllItems(this unit whichUnit)
+    public static unit DropAllItems(this unit whichUnit)
     {
       if (IsUnitType(whichUnit, UNIT_TYPE_SUMMONED))
         throw new InvalidOperationException($"Tried to call {nameof(DropAllItems)} on a summoned hero.");
@@ -531,6 +577,8 @@ namespace MacroTools.Extensions
         whichUnit.DropItem(itemToDrop);
         itemToDrop.SetPositionSafe(new Point(x, y));
       }
+
+      return whichUnit;
     }
 
     /// <summary>
@@ -675,13 +723,19 @@ namespace MacroTools.Extensions
     public static bool IsAlive(this unit whichUnit) => UnitAlive(whichUnit);
 
     /// <summary>
-    /// Changes a unit's attack type.
+    /// Changes a unit's attack type as an integer.
     /// </summary>
     public static unit SetAttackType(this unit whichUnit, int attackType)
     {
       BlzSetUnitWeaponIntegerField(whichUnit, UNIT_WEAPON_IF_ATTACK_ATTACK_TYPE, 0, attackType);
       return whichUnit;
     }
+
+    /// <summary>
+    /// Returns the unit's attack type as an integer.
+    /// </summary>
+    public static int GetAttackType(this unit whichUnit) =>
+      BlzGetUnitWeaponIntegerField(whichUnit, UNIT_WEAPON_IF_ATTACK_ATTACK_TYPE, 0);
 
     /// <summary>
     /// Changes a unit's armor type.
@@ -728,6 +782,26 @@ namespace MacroTools.Extensions
       var fullCooldown = BlzGetUnitAbilityCooldown(whichUnit, abilCode, 0);
       BlzStartUnitAbilityCooldown(whichUnit, abilCode, fullCooldown);
       return whichUnit;
+    }
+
+    /// <summary>
+    /// Turns the unit to face a particular position.
+    /// </summary>
+    public static unit FacePosition(this unit whichUnit, Point targetPoint)
+    {
+      var unitPosition = whichUnit.GetPosition();
+      var facing = WCSharp.Shared.Util.AngleBetweenPoints(unitPosition.X, unitPosition.Y, targetPoint.X, targetPoint.Y);
+      BlzSetUnitFacingEx(whichUnit, facing);
+      return whichUnit;
+    }
+
+    /// <summary>
+    /// Returns true if the unit is a hero, has Resistant Skin, or is a creep with a level of 6 or higher.
+    /// </summary>
+    public static bool IsResistant(this unit whichUnit)
+    {
+      return whichUnit.IsType(UNIT_TYPE_RESISTANT) || whichUnit.IsType(UNIT_TYPE_HERO) ||
+             (whichUnit.OwningPlayer() == Player(PLAYER_NEUTRAL_AGGRESSIVE) && whichUnit.GetLevel() >= 6);
     }
   }
 }

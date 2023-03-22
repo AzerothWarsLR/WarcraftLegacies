@@ -9,20 +9,20 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
     
     public static void Setup()
     {
-      Illidari = new Faction("Illidan", PLAYER_COLOR_VIOLET, "|cffff00ff",
+      Illidari = new Faction(FactionNames.Illidan, PLAYER_COLOR_VIOLET, "|cffff00ff",
         "ReplaceableTextures\\CommandButtons\\BTNEvilIllidan.blp")
       {
         UndefeatedResearch = FourCC("R02L"),
-        StartingGold = 150,
-        StartingLumber = 500,
-        ControlPointDefenderUnitTypeId = Constants.UNIT_N0BB_CONTROL_POINT_DEFENDER_ILLIDARI,
-        IntroText = @"You are playing as the banished Empire of Nazjatar|r|r.
+        StartingGold = 200,
+        StartingLumber = 700,
+        ControlPointDefenderUnitTypeId = Constants.UNIT_N0BB_CONTROL_POINT_DEFENDER_ILLIDARI_TOWER,
+        IntroText = @"You are playing as the Betrayer, Illidan|r|r.
 
-You start weak in the middle of the map.
+You begin on the Broken Isles, ready to plunder the tombs for artifacts to empower Illidan.
 
-Take control of the deap sea before moving on to raiding coastal settlements and islands all around you, slowly gaining ressources along the way.
+Unfortunately, you cannot progress further in the Islands. Use Illidan's mastery of portals to travel to Outland and join forces with your ally.
 
-Once you have collected enough, you can rebuild the great Nazjatar empire and start conquering the world."
+Support your ally in Outland by unlocking bases and coordinating with his push out of the Dark Portal."
       };
 
       Illidari.ModObjectLimit(FourCC("nntt"), Faction.UNLIMITED); //Pillar of Waves
@@ -38,6 +38,7 @@ Once you have collected enough, you can rebuild the great Nazjatar empire and st
       Illidari.ModObjectLimit(FourCC("n005"), Faction.UNLIMITED); //Improved Tidal Guardian
       Illidari.ModObjectLimit(FourCC("nmrb"), Faction.UNLIMITED); //Deep Sea Vault
       Illidari.ModObjectLimit(FourCC("n08W"), Faction.UNLIMITED); //Deep Sea Vault
+      Illidari.ModObjectLimit(FourCC("e020"), Faction.UNLIMITED); //Shipyard
 
       Illidari.ModObjectLimit(FourCC("nmpe"), Faction.UNLIMITED); //Murgul Slave
       Illidari.ModObjectLimit(FourCC("nmyr"), Faction.UNLIMITED); //Myrmidon
@@ -53,6 +54,16 @@ Once you have collected enough, you can rebuild the great Nazjatar empire and st
       Illidari.ModObjectLimit(FourCC("ndrn"), Faction.UNLIMITED); //AshtongueMelee
       Illidari.ModObjectLimit(FourCC("ndrs"), 6); //Ashtonguecaster
 
+      //Ships
+      Illidari.ModObjectLimit(FourCC("etrs"), Faction.UNLIMITED); //Night Elf Transport Ship
+      Illidari.ModObjectLimit(FourCC("h0AU"), Faction.UNLIMITED); // Scout
+      Illidari.ModObjectLimit(FourCC("h0AV"), Faction.UNLIMITED); // Frigate
+      Illidari.ModObjectLimit(FourCC("h0B1"), Faction.UNLIMITED); // Fireship
+      Illidari.ModObjectLimit(FourCC("h057"), Faction.UNLIMITED); // Galley
+      Illidari.ModObjectLimit(FourCC("h0B4"), Faction.UNLIMITED); // Boarding
+      Illidari.ModObjectLimit(FourCC("h0BA"), Faction.UNLIMITED); // Juggernaut
+      Illidari.ModObjectLimit(FourCC("h0B8"), 6); // Bombard
+
       Illidari.ModObjectLimit(FourCC("Hvsh"), 1); //Vashj
       Illidari.ModObjectLimit(FourCC("U00S"), 1); //Najentus
       Illidari.ModObjectLimit(FourCC("Naka"), 1); //Akama
@@ -64,6 +75,7 @@ Once you have collected enough, you can rebuild the great Nazjatar empire and st
 
       Illidari.ModObjectLimit(FourCC("Rnsw"), Faction.UNLIMITED); //Siren Adept Training
       Illidari.ModObjectLimit(FourCC("R02V"), Faction.UNLIMITED); //Shadowcaster Adept Training
+      Illidari.ModObjectLimit(FourCC("R00K"), Faction.UNLIMITED); //Power Infusion
 
       FactionManager.Register(Illidari);
     }

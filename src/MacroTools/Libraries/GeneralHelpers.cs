@@ -1,40 +1,21 @@
 ﻿using System;
+using System.Collections.Generic;
 using MacroTools.Extensions;
-using MacroTools.FactionSystem;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
 namespace MacroTools.Libraries
 {
+  /// <summary>
+  /// Provides a useful set of methods for interacting with the Warcraft 3 engine.
+  /// </summary>
   public static class GeneralHelpers
   {
     private static readonly group TempGroup = CreateGroup();
     private static readonly rect TempRect = Rect(0, 0, 0, 0);
-    private static readonly unit PosUnit;
 
     private static Point? _enumDestructableCenter;
     private static float _enumDestructableRadius;
-
-    static GeneralHelpers()
-    {
-      PosUnit = CreateUnit(Player(PLAYER_NEUTRAL_PASSIVE), FourCC("u00X"), 0, 0, 0);
-    }
-
-    public static void CameraSetEarthquakeNoise(float magnitude)
-    {
-      var richter = magnitude;
-      if (richter > 5)
-      {
-        richter = 5;
-      }
-
-      if (richter < 2)
-      {
-        richter = 2;
-      }
-
-      CameraSetTargetNoiseEx(magnitude * 2.0f, magnitude * Pow(10, richter), true);
-    }
 
     private static bool EnumDestructablesInCircleFilter()
     {
@@ -43,9 +24,15 @@ namespace MacroTools.Libraries
         _enumDestructableCenter!) <= _enumDestructableRadius;
     }
 
+    /// <summary>
+    /// Creates and returns a rectangle with the given radius at its widest point.
+    /// </summary>
     public static Rectangle GetRectFromCircle(Point center, float radius) => 
       new(center.X - radius, center.Y - radius, center.X + radius, center.Y + radius);
 
+    /// <summary>
+    /// Performs an action on all destructables in a circle.
+    /// </summary>
     public static void EnumDestructablesInCircle(float radius, Point center, Action actionFunc)
     {
       if (radius < 0) 
@@ -56,6 +43,9 @@ namespace MacroTools.Libraries
       EnumDestructablesInRect(circleAsRectangle.Rect, Condition(EnumDestructablesInCircleFilter), actionFunc);
     }
 
+    /// <summary>
+    /// Creates blight in a circular radius.
+    /// </summary>
     public static void SetBlightRadius(player whichPlayer, Point position, float radius, bool addBlight)
     {
       var location = Location(position.X, position.Y);
@@ -63,11 +53,15 @@ namespace MacroTools.Libraries
       RemoveLocation(location);
     }
 
+    /// <summary>
+    /// Converts an integer ID into an ID string.
+    /// <para>E.g. converts the integer representation of "hfoo" back into "hfoo".</para>
+    /// </summary>
     public static string DebugIdInteger2IdString(int value)
     {
       const string charMap =
         ".................................!.#$%&'()*+,-./0123456789:;<=>.@ABCDEFGHIJKLMNOPQRSTUVWXYZ[.]^_`abcdefghijklmnopqrstuvwxyz{|}~.................................................................................................................................";
-      string result = "";
+      var result = "";
       var remainingValue = value;
 
       for (var i = 0; i < 5; i++)
@@ -80,12 +74,15 @@ namespace MacroTools.Libraries
       return result;
     }
 
+    /// <summary>
+    /// Kills all neutral hostile units in an circular radius.
+    /// </summary>
     public static void KillNeutralHostileUnitsInRadius(float x, float y, float radius)
     {
       GroupEnumUnitsInRange(TempGroup, x, y, radius, null);
       while (true)
       {
-        unit u = FirstOfGroup(TempGroup);
+        var u = FirstOfGroup(TempGroup);
         if (u == null) break;
 
         if (GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_AGGRESSIVE) && !IsUnitType(u, UNIT_TYPE_SAPPER) &&
@@ -96,13 +93,16 @@ namespace MacroTools.Libraries
       }
     }
 
+    /// <summary>
+    /// Creates a structure at a location, killing any existing structures there to make room.
+    /// </summary>
     public static unit CreateStructureForced(player whichPlayer, int unitId, float x, float y, float face, float size)
     {
       SetRect(TempRect, x - size / 2, y - size / 2, x + size / 2, y + size / 2);
       GroupEnumUnitsInRect(TempGroup, TempRect, null);
       while (true)
       {
-        unit u = FirstOfGroup(TempGroup);
+        var u = FirstOfGroup(TempGroup);
         if (u == null) break;
 
         if (IsUnitType(u, UNIT_TYPE_STRUCTURE))
@@ -118,26 +118,22 @@ namespace MacroTools.Libraries
       return CreateUnit(whichPlayer, unitId, x, y, face);
     }
 
-    public static void PlayDialogue(player whichPlayer, sound whichSound, string speakerName, string caption)
+    /// <summary>
+    /// Creates several units of the same type at the same location.
+    /// </summary>
+    /// <returns>The units that were created.</returns>
+    public static IEnumerable<unit> CreateUnits(player whichPlayer, int unitId, float x, float y, float face, int count)
     {
-      if (GetLocalPlayer() == whichPlayer)
-      {
-        StartSound(whichSound);
-        DisplayTimedTextToPlayer(whichPlayer, 0, 0, GetSoundDuration(whichSound) / 1000,
-          "\n|cffffcc00" + speakerName + ":|r " + caption);
-      }
-    }
-
-    public static void CreateUnits(player whichPlayer, int unitId, float x, float y, float face, int count)
-    {
+      var createdUnits = new List<unit>();
       var i = 0;
       while (true)
       {
         if (i == count) break;
-
-        CreateUnit(whichPlayer, unitId, x, y, face);
+        createdUnits.Add(CreateUnit(whichPlayer, unitId, x, y, face));
         i += 1;
       }
+
+      return createdUnits;
     }
 
     public static region RectToRegion(rect whichRect)
@@ -145,13 +141,6 @@ namespace MacroTools.Libraries
       var rectRegion = CreateRegion();
       RegionAddRect(rectRegion, whichRect);
       return rectRegion;
-    }
-
-    public static float GetPositionZ(float x, float y)
-    {
-      SetUnitX(PosUnit, x);
-      SetUnitY(PosUnit, y);
-      return BlzGetUnitZ(PosUnit);
     }
   }
 }

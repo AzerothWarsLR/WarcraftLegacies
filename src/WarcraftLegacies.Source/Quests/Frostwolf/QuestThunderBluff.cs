@@ -2,7 +2,9 @@
 using MacroTools;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
-using MacroTools.ObjectiveSystem.Objectives;
+using MacroTools.ObjectiveSystem.Objectives.FactionBased;
+using MacroTools.ObjectiveSystem.Objectives.TimeBased;
+using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
 using WarcraftLegacies.Source.Setup.Legends;
 using WCSharp.Shared.Data;
@@ -12,7 +14,7 @@ using static War3Api.Common;
 namespace WarcraftLegacies.Source.Quests.Frostwolf
 {
   /// <summary>
-  /// Kill the centaur leader in Mulgore and bring <see cref="LegendFrostwolf.LegendCairne"/> to <see cref="LegendFrostwolf.LegendThunderbluff"/> to unlock it
+  /// Kill the centaur leader in Mulgore and bring <see cref="LegendFrostwolf.Cairne"/> to <see cref="LegendFrostwolf.ThunderBluff"/> to unlock it
   /// </summary>
   public sealed class QuestThunderBluff : QuestData
   {
@@ -25,7 +27,7 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
     {
       AddObjective(new ObjectiveUnitIsDead(preplacedUnitSystem.GetUnit(FourCC("ncnk"), rescueRect.Center)));
       AddObjective(new ObjectiveAnyUnitInRect(rescueRect, "Thunder Bluff", true));
-      AddObjective(new ObjectiveExpire(1455));
+      AddObjective(new ObjectiveExpire(1455, Title));
       AddObjective(new ObjectiveSelfExists());
       ResearchId = Constants.UPGRADE_R05I_QUEST_COMPLETED_THE_LONG_MARCH; 
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
@@ -34,7 +36,7 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
 
     //todo: bad flavour
     /// <inheritdoc />
-    protected override string CompletionPopup => "The long march of the Tauren clans has ended, and they have joined forces with the Horde.";
+    protected override string RewardFlavour => "The long march of the Tauren clans has ended, and they have joined forces with the Horde.";
 
     /// <inheritdoc />
     protected override string RewardDescription => "Control of Thunder Bluff";

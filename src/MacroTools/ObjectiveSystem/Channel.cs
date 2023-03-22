@@ -2,6 +2,7 @@
 using MacroTools.Extensions;
 using MacroTools.Libraries;
 using MacroTools.ObjectiveSystem.Objectives;
+using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 using Environment = MacroTools.Libraries.Environment;
@@ -47,9 +48,9 @@ namespace MacroTools.ObjectiveSystem
     /// <param name="duration">How long the channel should last.</param>
     /// <param name="facing">Which way the caster should face while channeling.</param>
     /// <param name="position">Where the caster should channel from.</param>
-    /// <param name="global">If true, all players are alerted to the channel by a timer.</param>
-    /// <param name="title">The name of the timer to use when alerting all players.</param>
-    public Channel(unit caster, int duration, float facing, Point position, bool global = false, string title = "")
+    /// <param name="timerDialogTitle">If set, the <see cref="Channel"/> displays a countdown timer to all players with
+    /// this title. If null, no timer is displayed.</param>
+    public Channel(unit caster, int duration, float facing, Point position, string? timerDialogTitle = null)
     {
       _caster = caster;
       _elapsedDuration = 0;
@@ -58,9 +59,10 @@ namespace MacroTools.ObjectiveSystem
       _position = position;
 
       caster.SetPosition(_position)
-        .Pause(true)
+        .PauseEx(true)
         .SetAnimation("channel")
-        .SetFacingEx(facing);
+        .SetFacingEx(facing)
+        .SetInvulnerable(false);
       _sfxProgress = AddSpecialEffect(ProgressEffect, GetUnitX(caster), GetUnitY(caster))
         .SetTimeScale(10 / (float)duration)
         .SetColor(caster.OwningPlayer())
@@ -68,12 +70,12 @@ namespace MacroTools.ObjectiveSystem
         .SetHeight(ProgressHeight + Environment.GetPositionZ(position));
       _sfx = AddSpecialEffect(Effect, GetUnitX(caster), GetUnitY(caster));
 
-      if (global)
+      if (timerDialogTitle != null)
       {
         _channelingTimer = CreateTimer();
         TimerStart(_channelingTimer, _maxDuration, false, null);
         _channelingDialog = CreateTimerDialog(_channelingTimer);
-        TimerDialogSetTitle(_channelingDialog, title);
+        TimerDialogSetTitle(_channelingDialog, timerDialogTitle);
         TimerDialogDisplay(_channelingDialog, true);
       }
 
@@ -94,9 +96,9 @@ namespace MacroTools.ObjectiveSystem
     
     private void End(bool finishedWithoutInterruption)
     {
-      PauseUnit(_caster, false);
-      if (finishedWithoutInterruption) 
-        SetUnitAnimation(_caster, "spell");
+      _caster.PauseEx(false);
+      if (finishedWithoutInterruption)
+        _caster.SetAnimation("spell");
 
       if (UnitAlive(_caster)) 
         QueueUnitAnimation(_caster, "stand");

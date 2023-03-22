@@ -1,37 +1,52 @@
+﻿using MacroTools.Extensions;
 using MacroTools.FactionSystem;
-using MacroTools.ObjectiveSystem.Objectives;
+using MacroTools.LegendSystem;
+using MacroTools.ObjectiveSystem.Objectives.LegendBased;
+using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
-using WarcraftLegacies.Source.Setup.Legends;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Scourge
 {
+  /// <inheritdoc/>
   public sealed class QuestSapphiron : QuestData
   {
-    private static readonly int SapphironId = FourCC("ubdd");
-    private static readonly int SapphironResearch = FourCC("R025");
-    
-    public QuestSapphiron(unit sapphiron) : base("Sapphiron", "Kill Sapphiron the Blue Dragon to have Kel'Tuzad reanimate her as a Frost Wyrm. Sapphiron can be found in Northrend.", "ReplaceableTextures\\CommandButtons\\BTNFrostWyrm.blp")
+    private readonly ObjectiveUnitIsDead _unitIsDeadObjective;
+    private const int SapphironId = Constants.UNIT_UBDD_SAPPHIRON_SCOURGE_DEMI;
+
+    /// <summary>
+    /// Initializes a new instance of the <see cref="QuestSapphiron"/> class.
+    /// </summary>
+    /// <param name="sapphiron"></param>
+    /// <param name="kelthuzad"></param>
+    public QuestSapphiron(unit sapphiron, LegendaryHero kelthuzad) : base("Sapphiron",
+      "Kill Sapphiron the Blue Dragon to have Kel'Tuzad reanimate her as a Frost Wyrm. Sapphiron can be found in Northrend.",
+      "ReplaceableTextures\\CommandButtons\\BTNFrostWyrm.blp")
     {
-      AddObjective(new ObjectiveKillUnit(sapphiron));
-      AddObjective(new ObjectiveControlLegend(LegendScourge.LegendKelthuzad, false));
+      _unitIsDeadObjective = new ObjectiveUnitIsDead(sapphiron);
+      AddObjective(_unitIsDeadObjective);
+      AddObjective(new ObjectiveControlLegend(kelthuzad, false));
+      ResearchId = Constants.UPGRADE_R025_QUEST_COMPLETED_SAPPHIRON_SCOURGE;
     }
-    
-    protected override string CompletionPopup =>
+
+    /// <inheritdoc/>
+    protected override string RewardFlavour =>
       "Sapphiron has been slain, and has been reanimated as a mighty Frost Wyrm under the command of the Scourge.";
 
-    protected override string RewardDescription => "The demihero Sapphiron";
+    /// <inheritdoc/>
+    protected override string RewardDescription => "Unlock one of the requirements to train Frost Wyrms. " +
+                                                   "If your team killed Sapphiron, gain him in an undead form; " +
+                                                   $"otherwise, learn to train him from the {GetObjectName(Constants.UNIT_UAOD_ALTAR_OF_DARKNESS)}";
 
+    /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
     {
-      CreateUnit(completingFaction.Player, SapphironId, GetUnitX(GetTriggerUnit()), GetUnitY(GetTriggerUnit()),
-        GetUnitFacing(GetTriggerUnit()));
-      SetPlayerTechResearched(completingFaction.Player, SapphironResearch, 1);
-    }
-
-    protected override void OnAdd(Faction whichFaction)
-    {
-      whichFaction.ModObjectLimit(SapphironResearch, Faction.UNLIMITED);
+      var killingPlayer = _unitIsDeadObjective.KillingUnit?.OwningPlayer();
+      if (killingPlayer == null)
+        return;
+      if (completingFaction.Player?.GetTeam()?.Contains(killingPlayer) == true)
+        CreateUnit(completingFaction.Player, SapphironId, GetUnitX(GetTriggerUnit()), GetUnitY(GetTriggerUnit()),
+          GetUnitFacing(GetTriggerUnit()));
     }
   }
 }

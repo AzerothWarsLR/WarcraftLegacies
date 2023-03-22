@@ -1,27 +1,35 @@
-﻿using WCSharp.Shared.Data;
-using static War3Api.Common;
+﻿using System;
+using WCSharp.Shared.Data;
 
 namespace MacroTools.Instances
 {
+  /// <summary>
+  /// Describes an entryway into an <see cref="Instance"/>.
+  /// </summary>
   public sealed class Gate
   {
-    private readonly unit _exteriorWaygate;
-    private readonly unit _interiorWaygate;
+    private readonly Func<Point> _exteriorPosition;
+    private readonly Func<Point> _interiorPosition;
 
-    private Gate(unit interiorWaygate, unit exteriorWaygate)
+    /// <summary>
+    /// Initializes a new instance of the <see cref="Gate"/> class.
+    /// </summary>
+    /// <param name="interiorPosition">A function describing the interior position of the <see cref="Gate"/>.</param>
+    /// <param name="exteriorPosition">A function describing the exterior position of the <see cref="Gate"/>.</param>
+    public Gate(Func<Point> interiorPosition, Func<Point> exteriorPosition)
     {
-      _interiorWaygate = interiorWaygate;
-      _exteriorWaygate = exteriorWaygate;
+      _interiorPosition = interiorPosition;
+      _exteriorPosition = exteriorPosition;
     }
 
-    public Point InteriorPosition => new(GetUnitX(_interiorWaygate), GetUnitY(_interiorWaygate));
+    /// <summary>
+    /// A function describing the interior position of the <see cref="Gate"/>.
+    /// </summary>
+    public Point InteriorPosition => _interiorPosition();
 
-    public Point ExteriorPosition => new(GetUnitX(_exteriorWaygate), GetUnitY(_exteriorWaygate));
-
-    public void Destroy()
-    {
-      KillUnit(_interiorWaygate);
-      KillUnit(_exteriorWaygate);
-    }
+    /// <summary>
+    /// A function describing the exterior position of the <see cref="Gate"/>.
+    /// </summary>
+    public Point ExteriorPosition => _exteriorPosition();
   }
 }

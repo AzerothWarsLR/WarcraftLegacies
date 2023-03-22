@@ -14,21 +14,19 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
     
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
-      Ironforge = new Faction("Ironforge", PLAYER_COLOR_YELLOW, "|C00FFFC01",
+      Ironforge = new Faction(FactionNames.Dwarves, PLAYER_COLOR_YELLOW, "|C00FFFC01",
         "ReplaceableTextures\\CommandButtons\\BTNHeroMountainKing.blp")
       {
         UndefeatedResearch = FourCC("R05T"),
-        StartingGold = 250,
-        StartingLumber = 500,
+        StartingGold = 200,
+        StartingLumber = 700,
         CinematicMusic = "PursuitTheme",
         ControlPointDefenderUnitTypeId = Constants.UNIT_H0AL_CONTROL_POINT_DEFENDER_IRONFORGE,
-        IntroText = @"You are playing as the long- enduring |cffe4bc00Kingdom of Ironforge.
+        IntroText = @"You are playing as the long-enduring |cffe4bc00Kingdom of Ironforge.
                     |r
-Re-establish your stronghold by capturing the surrounding lands.
-
-The Dragonmaw Clan is gathering in the Twilight highlands, you will need to destroy them before they attack your towns in the Wetlands. 
-
-Stormwind is preparing for the Fel Horde invasion in the South, muster the throng to help them or you may lose your strongest ally."
+You begin in the Wetlands, separated from the rest of your forces. Conquer Loch Modan and Dun Morough to gain access to Ironforge.
+ 
+Stormwind is preparing for an invasion through the Dark Portal in the South. Muster the throng and help them, or you may lose your strongest ally."
       };
 
       //Structures
@@ -54,9 +52,6 @@ Stormwind is preparing for the Fel Horde invasion in the South, muster the thron
 
       //Units
       Ironforge.ModObjectLimit(FourCC("h019"), Faction.UNLIMITED); //Dwarven Worker
-      Ironforge.ModObjectLimit(FourCC("hbot"), Faction.UNLIMITED); //Alliance Transport Ship
-      Ironforge.ModObjectLimit(FourCC("hdes"), Faction.UNLIMITED); //Alliance Frigate
-      Ironforge.ModObjectLimit(FourCC("hbsh"), 6); //Alliance Battle Ship
       Ironforge.ModObjectLimit(FourCC("hrif"), Faction.UNLIMITED); //Rifleman
       Ironforge.ModObjectLimit(FourCC("hmtm"), 9); //Mortar Team
       Ironforge.ModObjectLimit(FourCC("hgyr"), 12); //Flying Machine
@@ -67,10 +62,21 @@ Stormwind is preparing for the Fel Horde invasion in the South, muster the thron
       Ironforge.ModObjectLimit(FourCC("n02D"), Faction.UNLIMITED); //War Golem
       Ironforge.ModObjectLimit(FourCC("h01P"), 3); //Steam Tank
       Ironforge.ModObjectLimit(FourCC("n00C"), Faction.UNLIMITED); //Rune Priest
+      Ironforge.ModObjectLimit(FourCC("h03Z"), 3); //War Gryphon
 
       Ironforge.ModObjectLimit(FourCC("h01M"), 1); //Baelgun
       Ironforge.ModObjectLimit(FourCC("H00S"), 1); //Magni
       Ironforge.ModObjectLimit(FourCC("Hmbr"), 1); //Muradin
+
+      //Ships
+      Ironforge.ModObjectLimit(FourCC("hbot"), Faction.UNLIMITED); //Alliance Transport Ship
+      Ironforge.ModObjectLimit(FourCC("h0AR"), Faction.UNLIMITED); //Alliance Scout
+      Ironforge.ModObjectLimit(FourCC("h0AX"), Faction.UNLIMITED); //Alliance Frigate
+      Ironforge.ModObjectLimit(FourCC("h0B3"), Faction.UNLIMITED); //Alliance Fireship
+      Ironforge.ModObjectLimit(FourCC("h0B0"), Faction.UNLIMITED); //Alliance Galley
+      Ironforge.ModObjectLimit(FourCC("h0B6"), Faction.UNLIMITED); //Alliance Boarding
+      Ironforge.ModObjectLimit(FourCC("h0AN"), Faction.UNLIMITED); //Alliance Juggernaut
+      Ironforge.ModObjectLimit(FourCC("h0B7"), 6); //Alliance Bombard
 
       //Upgrades
       Ironforge.ModObjectLimit(FourCC("R03H"), Faction.UNLIMITED); //Engineering Adept Training
@@ -84,15 +90,15 @@ Stormwind is preparing for the Fel Horde invasion in the South, muster the thron
       Ironforge.ModObjectLimit(FourCC("Rhhb"), Faction.UNLIMITED); //Storm Hammers
       Ironforge.ModObjectLimit(FourCC("R063"), Faction.UNLIMITED); //Thunder Ale
       Ironforge.ModObjectLimit(FourCC("R02K"), Faction.UNLIMITED); //Gryphon Superior Breed
-      Ironforge.ModObjectLimit(Constants.UPGRADE_RHME_PYRITE_FORGED_WEAPONRY_UNIVERSAL_UPGRADE, Faction.UNLIMITED);
-      Ironforge.ModObjectLimit(Constants.UPGRADE_RHAR_PYRITE_ARMOR_PLATING_UNIVERSAL_UPGRADE, Faction.UNLIMITED);
+      Ironforge.ModObjectLimit(Constants.UPGRADE_RHME_PYRITE_FORGED_WEAPONRY_UNIVERSAL_UPGRADE, 2);
+      Ironforge.ModObjectLimit(Constants.UPGRADE_RHAR_PYRITE_ARMOR_PLATING_UNIVERSAL_UPGRADE, 2);
       Ironforge.ModObjectLimit(Constants.UPGRADE_R014_DEEPRUN_TRAM_IRONFORGE, 1);
       Ironforge.ModObjectLimit(Constants.UPGRADE_R00V_RUNE_PRIEST_MASTER_TRAINING_IRONFORGE, Faction.UNLIMITED);
       Ironforge.ModObjectLimit(Constants.UPGRADE_R00Z_ARMOR_PENETRATION_ROUNDS_IRONFORGE, Faction.UNLIMITED);
       Ironforge.ModObjectLimit(Constants.UPGRADE_R010_IMPROVED_SPELL_RESISTANCE_IRONFORGE, Faction.UNLIMITED);
       Ironforge.ModObjectLimit(Constants.UPGRADE_R00T_OVERCLOCK_IRONFORGE_STEAM_TANK, Faction.UNLIMITED);
       Ironforge.ModObjectLimit(Constants.UPGRADE_R00N_IMPROVED_SWIG_IRONFORGE_TAVERN, Faction.UNLIMITED);
-      Ironforge.ModObjectLimit(Constants.UPGRADE_R08K_TITANFORGE_ARTIFACT_IRONFORGE, Faction.UNLIMITED);
+      Ironforge.ModObjectLimit(Constants.ABILITY_A0F2_SELF_DESTROY_DEEPRUN_TRAM, Faction.UNLIMITED);
 
       Ironforge.ModAbilityAvailability(Constants.ABILITY_A0IH_SPIKED_BARRICADES_DWARF_KEEP, -1);
       Ironforge.ModAbilityAvailability(Constants.ABILITY_A0GA_SUMMON_GARRISON_LORDAERON, -1);

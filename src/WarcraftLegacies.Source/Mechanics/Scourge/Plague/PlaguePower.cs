@@ -15,6 +15,8 @@ namespace WarcraftLegacies.Source.Mechanics.Scourge.Plague
   /// </summary>
   public sealed class PlaguePower : Power
   {
+    private readonly Faction _victim;
+
     /// <summary>
     /// A list of all players that have this <see cref="Power"/>.
     /// </summary>
@@ -54,12 +56,14 @@ namespace WarcraftLegacies.Source.Mechanics.Scourge.Plague
     
     /// <summary>
     /// Causes <see cref="Power" /> holder to periodically convert villagers on the map into Zombies.
+    /// <param name="victim">Only this faction will spawn villagers from their buildings when they die.</param>
     /// </summary>
-    public PlaguePower()
+    public PlaguePower(Faction victim)
     {
       IconName = "PlagueBarrel";
       Name = "Plague of Undeath";
       Description = "All villagers on the map are periodically transformed into Zombies.";
+      _victim = victim;
     }
 
     /// <inheritdoc />
@@ -72,7 +76,18 @@ namespace WarcraftLegacies.Source.Mechanics.Scourge.Plague
       }
       _holders.Add(whichPlayer);
 
-      var darkConversionBuffOwner = _holders.First();
+      var darkConversionBuffOwner = Player(PLAYER_NEUTRAL_AGGRESSIVE);
+
+      foreach (var player in _holders)
+      {
+        if (player.GetFaction()?.ScoreStatus == ScoreStatus.Defeated) 
+          continue;
+        darkConversionBuffOwner = player;
+        break;
+      }
+
+      if (darkConversionBuffOwner == Player(PLAYER_NEUTRAL_PASSIVE) || darkConversionBuffOwner == null)
+        darkConversionBuffOwner = Player(PLAYER_NEUTRAL_AGGRESSIVE);
       
       var villagers = CreateGroup().EnumUnitsOfPlayer(Player(PLAYER_NEUTRAL_PASSIVE))
         .EmptyToList()
@@ -95,12 +110,10 @@ namespace WarcraftLegacies.Source.Mechanics.Scourge.Plague
     public override void OnRemove(player whichPlayer)
     {
       _holders.Remove(whichPlayer);
-      if (_holders.Count == 0)
-      {
-        PlayerUnitEvents.Unregister(UnitTypeEvent.Dies, SpawnPeasants);
-        foreach (var villagerTypeId in _villagerUnitTypeIds)
-          PlayerUnitEvents.Unregister(UnitTypeEvent.IsCreated, _villagerPlagueConversionActions[villagerTypeId], villagerTypeId);
-      }
+
+      PlayerUnitEvents.Unregister(UnitTypeEvent.Dies, SpawnPeasants);
+      foreach (var villagerTypeId in _villagerUnitTypeIds)
+        PlayerUnitEvents.Unregister(UnitTypeEvent.IsCreated, _villagerPlagueConversionActions[villagerTypeId], villagerTypeId);
     }
 
     private static void ApplyDarkConversion(unit whichUnit, player buffOwner)
@@ -118,6 +131,9 @@ namespace WarcraftLegacies.Source.Mechanics.Scourge.Plague
     private void SpawnPeasants()
     {
       var triggerUnit = GetTriggerUnit();
+      if (_victim.Player?.GetTeam()?.Contains(triggerUnit.OwningPlayer()) != true)
+        return;
+      
       var x = GetUnitX(triggerUnit);
       var y = GetUnitY(triggerUnit);
 

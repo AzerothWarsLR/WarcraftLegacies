@@ -1,7 +1,9 @@
-﻿using MacroTools.Spells;
+﻿using MacroTools.PassiveAbilities;
+using MacroTools.PassiveAbilitySystem;
+using MacroTools.Spells;
 using MacroTools.SpellSystem;
-using WCSharp.Shared.Data;
-using static War3Api.Common;
+using System.Collections.Generic;
+using WarcraftLegacies.Source.Mechanics.Scourge;
 
 namespace WarcraftLegacies.Source.Setup.Spells
 {
@@ -16,13 +18,27 @@ namespace WarcraftLegacies.Source.Setup.Spells
     public static void Setup()
     {
       SpellSystem.Register(new SingleTargetRecall(Constants.ABILITY_A0W8_RECALL_FROZEN_THRONE));
-      SpellSystem.Register(new WaygateOpen(Constants.ABILITY_A0NM_OPEN_NAXXRAMAS)
+
+      PassiveAbilityManager.Register(new PersistentSoul(Constants.UNIT_N009_REVENANT_SCOURGE,
+        Constants.ABILITY_A05L_PERSISTENT_SOUL_SCOURGE_REVENANT, new List<int>{ Constants.ABILITY_ACRK_RESISTANT_SKIN_1_1_POSITION, Constants.ABILITY_ACSK_RESISTANT_SKIN_2_1_POSITION, Constants.ABILITY_A08P_RESISTANT_SKIN_3_1_POSITION })
       {
-        InteriorWaygateUnitTypeId = Constants.UNIT_H03V_ENTRANCE_PORTAL,
-        ExteriorWaygateUnitTypeId = Constants.UNIT_H05T_INSTANCE_ENTRANCE_PORTAL,
-        GetExteriorWaygatePosition = () => new Point(GetUnitX(GetTriggerUnit()) - 100, GetUnitY(GetTriggerUnit()) - 100),
-        GetInteriorWaygatePosition = () => Regions.NaxxramasInside.Center
+        ReanimationCountLevel = 1,
+        Duration = 40,
+        BuffId = Constants.BUFF_B069_PERSISTENT_SOUL_FORSAKEN_PLAGUE_REVENANT,
+        Radius = 700
       });
+      Plagueling.Setup(); //Todo: convert this into being a proper passive ability
+
+
+      var massUnholyFrenzy = new MassAnySpell(Constants.ABILITY_A02W_MASS_UNHOLY_FRENZY_SCOURGE)
+      {
+        DummyAbilityId = Constants.ABILITY_ACUF_UNHOLY_FRENZY_DUMMY,
+        DummyAbilityOrderString = "unholyfrenzy",
+        Radius = 250,
+        CastFilter = CastFilters.IsTargetOrganicAndAlive,
+        TargetType = SpellTargetType.Point
+      };
+      SpellSystem.Register(massUnholyFrenzy);
     }
   }
 }

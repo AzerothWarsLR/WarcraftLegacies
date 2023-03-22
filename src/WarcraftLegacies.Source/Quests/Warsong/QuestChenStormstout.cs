@@ -1,12 +1,13 @@
-using MacroTools.FactionSystem;
-using MacroTools.ObjectiveSystem.Objectives;
+﻿using MacroTools.FactionSystem;
+using MacroTools.ObjectiveSystem.Objectives.FactionBased;
+using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Warsong
 {
   /// <summary>
-  /// Chen Stormstout joins the Warsong when a Warsong unit approaches him.
+  /// Chen Stormstout becomes available for training at the Warsong Altar.
   /// </summary>
   public sealed class QuestChenStormstout : QuestData
   {
@@ -21,23 +22,29 @@ namespace WarcraftLegacies.Source.Quests.Warsong
       AddObjective(new ObjectiveAnyUnitInRect(Regions.Chen, "Chen Stormstout", false));
       AddObjective(new ObjectiveSelfExists());
       _chen = chen;
+      Required = true;
     }
 
-    protected override string CompletionPopup => "Chen Stormstout has joined the Warsong Clan.";
+    /// <inheritdoc/>
+    protected override string RewardFlavour => "Chen Stormstout has joined the Warsong as a mercenary!";
 
-    protected override string RewardDescription => "The hero Chen Stormstout";
+    /// <inheritdoc/>
+    protected override string RewardDescription => "The hero Chen Stormstout is now trainable at the Altar";
 
+    /// <inheritdoc/>
     protected override void OnFail(Faction completingFaction)
     {
       RemoveUnit(_chen);
     }
 
+    /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
     {
       RemoveUnit(_chen);
       SetPlayerTechResearched(completingFaction.Player, _chenResearch, 1);
     }
 
+    /// <inheritdoc/>
     protected override void OnAdd(Faction whichFaction)
     {
       whichFaction.ModObjectLimit(_chenResearch, Faction.UNLIMITED);

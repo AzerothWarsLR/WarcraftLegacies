@@ -23,6 +23,7 @@ namespace MacroTools.Extensions
         GroupRemoveUnit(whichGroup, firstOfGroup);
         firstOfGroup = FirstOfGroup(whichGroup);
       }
+      DestroyGroup(whichGroup);
       return list;
     }
 
@@ -87,6 +88,16 @@ namespace MacroTools.Extensions
     {
       GroupEnumUnitsInRange(whichGroup, point.X, point.Y, radius, null);
       return whichGroup;
+    }
+
+    /// <summary>
+    /// Returns an exact copy of the group.
+    /// </summary>
+    public static group Copy(this group sourceGroup)
+    {
+      var newGroup = CreateGroup();
+      BlzGroupAddGroupFast(sourceGroup, newGroup);
+      return newGroup;
     }
   }
 }

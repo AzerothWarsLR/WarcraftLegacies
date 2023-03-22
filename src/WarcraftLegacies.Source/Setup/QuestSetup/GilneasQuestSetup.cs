@@ -1,25 +1,16 @@
-﻿using WarcraftLegacies.Source.Quests.Gilneas;
-using WarcraftLegacies.Source.Setup.FactionSetup;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace WarcraftLegacies.Source.Setup.QuestSetup
 {
   public static class GilneasQuestSetup
   {
-    public static void Setup(ArtifactSetup artifactSetup)
+    public static void Setup()
     {
-      var gilneas = GilneasSetup.Gilneas;
-      if (gilneas != null)
-      {
-        gilneas.AddQuest(new QuestTempestReach());
-        gilneas.AddQuest(new QuestStormglen());
-        gilneas.AddQuest(new QuestKeelHarbor());
-        gilneas.AddQuest(new QuestDuskhaven());
-        gilneas.AddQuest(new QuestGilneasCity());
 
-        var questGoldrinnElvePath = new QuestGoldrinnElvePath(artifactSetup.ScytheOfElune);
-        gilneas.AddQuest(questGoldrinnElvePath);
-        gilneas.AddQuest(new QuestGoldrinnHumanPath(questGoldrinnElvePath, artifactSetup.ScytheOfElune));
-      }
     }
   }
 }

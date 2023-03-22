@@ -1,48 +1,69 @@
-using MacroTools;
-using MacroTools.FactionSystem;
+﻿using MacroTools;
 using MacroTools.LegendSystem;
+#pragma warning disable CS1591
 
 namespace WarcraftLegacies.Source.Setup.Legends
 {
-  public static class LegendWarsong
+  public sealed class LegendWarsong
   {
-    public static LegendaryHero? GromHellscream { get; private set; }
-    public static Capital? StonemaulKeep { get; private set; }
-    public static Capital? WarsongEncampment { get; private set; }
-    public static LegendaryHero? ChenStormstout { get; private set; }
-    public static LegendaryHero? Saurfang { get; private set; }
+    public LegendaryHero GromHellscream { get; }
+    public LegendaryHero ChenStormstout { get; }
+    public LegendaryHero Saurfang { get; }
+    public LegendaryHero Garrosh { get; }
+    public Capital StonemaulKeep { get; }
+    public Capital Orgrimmar { get; }
     
-    public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
+    
+    public LegendWarsong(PreplacedUnitSystem preplacedUnitSystem)
     {
+      GromHellscream = new LegendaryHero("Grom Hellscream")
+      {
+        UnitType = Constants.UNIT_OGRH_CHIEFTAIN_OF_THE_WARSONG_CLAN_WARSONG,
+        StartingArtifactItemTypeIds = new[]
+        {
+          Constants.ITEM_I01V_GOREHOWL
+        }
+      };
+      
       ChenStormstout = new LegendaryHero("Chen Stormstout")
       {
         UnitType = Constants.UNIT_NSJS_BREWMASTER_WARSONG,
         StartingXp = 1000
       };
-      LegendaryHeroManager.Register(ChenStormstout);
 
       Saurfang = new LegendaryHero("Varok Saurfang")
       {
         UnitType = Constants.UNIT_OBLA_HIGH_OVERLORD_OF_THE_KOR_KRON_VASSAL,
         StartingXp = 2800
       };
-      LegendaryHeroManager.Register(Saurfang);
+
+      Garrosh = new LegendaryHero("Garrosh Hellscream")
+      {
+        UnitType = Constants.UNIT_O06L_WARLORD_OF_THE_WARSONG_CLAN_WARSONG,
+        StartingXp = 8800
+      };
 
       StonemaulKeep = new Capital
       {
         Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_O004_STONEMAUL_KEEP),
         DeathMessage = "The fortress of the Stonemaul Clan has fallen."
       };
-      CapitalManager.Register(StonemaulKeep);
 
-      WarsongEncampment = new Capital();
-      CapitalManager.Register(WarsongEncampment);
-
-      GromHellscream = new LegendaryHero("Grom Hellscream")
+      Orgrimmar = new Capital
       {
-        UnitType = Constants.UNIT_OGRH_CHIEFTAIN_OF_THE_WARSONG_CLAN_WARSONG
+        Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_O01B_ORGRIMMAR_WARSONG),
+        DeathMessage = "Orgrimmar has been demolished and with it die the hopes and dreams of a wartorn race seeking refuge in a new world."
       };
+    }
+    
+    public void RegisterLegends()
+    {
       LegendaryHeroManager.Register(GromHellscream);
+      LegendaryHeroManager.Register(ChenStormstout);
+      LegendaryHeroManager.Register(Saurfang);
+      LegendaryHeroManager.Register(Garrosh);
+      CapitalManager.Register(StonemaulKeep);
+      CapitalManager.Register(Orgrimmar);
     }
   }
 }

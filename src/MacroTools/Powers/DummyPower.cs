@@ -3,7 +3,7 @@ using War3Api;
 
 namespace MacroTools.Powers
 {
-  public class DummyPower : Power
+  public sealed class DummyPower : Power
   {
     public DummyPower(string name, string description, string iconName)
     {

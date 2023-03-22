@@ -1,6 +1,5 @@
 ﻿using System;
 using MacroTools.Extensions;
-using MacroTools.FactionSystem;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.GameLogic
@@ -32,6 +31,7 @@ namespace WarcraftLegacies.Source.GameLogic
       DisplayTimedTextToPlayer(GetLocalPlayer(), 0, 0, 51, @"|cffffcc00Warcraft Legacies|r
 |cffaaaaaaJoin our Discord:|r discord.gg/pnWZs69
 |cffff0000Support our Patreon:|r https://www.patreon.com/lordsebas
+If you are a new player, look at the Quest (F9) tab to see your objectives
 ");
     }
   }

@@ -1,10 +1,12 @@
+﻿using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
+using MacroTools.LegendSystem;
 using MacroTools.Libraries;
-using MacroTools.ObjectiveSystem.Objectives;
+using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
+using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.Powers;
 using MacroTools.QuestSystem;
-using WarcraftLegacies.Source.Setup.Legends;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
@@ -16,32 +18,38 @@ namespace WarcraftLegacies.Source.Quests.Quelthalas
   public sealed class QuestTheBloodElves : QuestData
   {
     private readonly Rectangle _secondChanceRect;
+    private readonly LegendaryHero _anasterian;
+    private readonly LegendaryHero _kael;
     private const int QuestResearchId = Constants.UPGRADE_R04Q_QUEST_COMPLETED_THE_BLOOD_ELVES_QUEL_THALAS;
     private const int UnittypeId = Constants.UNIT_N048_BLOOD_MAGE_QUEL_THALAS;
-    private const int BuildingId = Constants.UNIT_N0A2_CONSORTIUM_QUEL_THALAS;
+    private const int BuildingId = Constants.UNIT_N0A2_CONSORTIUM_QUEL_THALAS_MAGIC;
     private const int HeroId = Constants.UNIT_HKAL_PRINCE_OF_QUEL_THALAS_QUEL_THALAS;
+    private const int GoldOnFail = 500;
+    private const int LumberOnFail = 750;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestTheBloodElves"/> class.
     /// </summary>
-    /// <param name="secondChanceRect">Units in this area start invulnerable and become rescued when the quest is failed.</param>
-    public QuestTheBloodElves(Rectangle secondChanceRect) : base("The Blood Elves",
+    public QuestTheBloodElves(Rectangle secondChanceRect, Capital draktharonKeep, Capital sunwell,
+      LegendaryHero anasterian, LegendaryHero kael) : base("The Blood Elves",
       "The Elves of Quel'thalas have a deep reliance on the Sunwell's magic. Without it, they would have to turn to darker magicks to sate themselves.",
       "ReplaceableTextures\\CommandButtons\\BTNHeroBloodElfPrince.blp")
     {
       _secondChanceRect = secondChanceRect;
-      AddObjective(new ObjectiveControlCapital(LegendNeutral.DraktharonKeep, false));
-      AddObjective(new ObjectiveControlLegend(LegendQuelthalas.LegendAnasterian, true));
-      AddObjective(new ObjectiveControlCapital(LegendQuelthalas.LegendSunwell, true));
+      _anasterian = anasterian;
+      _kael = kael;
+      AddObjective(new ObjectiveControlCapital(draktharonKeep, false));
+      AddObjective(new ObjectiveControlLevel(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N030_DRAK_THARON_KEEP_30GOLD_MIN), 10));
+      AddObjective(new ObjectiveControlCapital(sunwell, true));
       Required = true;
     }
 
     /// <inheritdoc />
-    protected override string FailurePopup =>
+    protected override string PenaltyFlavour =>
       "The Sunwell has fallen. The survivors escape to Dalaran and name themselves the Blood Elves in remembrance of their fallen people.";
 
     /// <inheritdoc />
-    protected override string CompletionPopup =>
+    protected override string RewardFlavour =>
       "The Legion Nexus has been obliterated. A group of ambitious mages seize the opportunity to study the demons' magic, becoming the first Blood Mages.";
 
     /// <inheritdoc />
@@ -50,7 +58,7 @@ namespace WarcraftLegacies.Source.Quests.Quelthalas
 
     /// <inheritdoc />
     protected override string PenaltyDescription =>
-      $"You lose everything you control, but you gain Prince Kael'thas at the Dalaran Dungeons, you can train {GetObjectName(UnittypeId)}s from the Consortium, and you gain the Mana Addiction power";
+      $"You lose everything you control, but you gain Prince Kael'thas at the Dalaran Dungeons, you can train {GetObjectName(UnittypeId)}s from the Consortium, you gain the Mana Addiction power, and you receive 500 gold and 750 lumber";
 
     /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)
@@ -63,7 +71,7 @@ namespace WarcraftLegacies.Source.Quests.Quelthalas
     /// <inheritdoc />
     protected override void OnFail(Faction completingFaction)
     {
-      LegendQuelthalas.LegendKael.StartingXp = GetHeroXP(LegendQuelthalas.LegendAnasterian.Unit);
+      _kael.StartingXp = GetHeroXP(_anasterian.Unit);
       completingFaction.Obliterate();
       if (completingFaction.ScoreStatus == ScoreStatus.Defeated) 
         return;
@@ -72,6 +80,8 @@ namespace WarcraftLegacies.Source.Quests.Quelthalas
         SetCameraPosition(_secondChanceRect.Center.X, _secondChanceRect.Center.Y);
       GrantPower(completingFaction);
       CreateSecondChanceUnits(completingFaction);
+      completingFaction.Player?.AddGold(GoldOnFail);
+      completingFaction.Player?.AddLumber(LumberOnFail);
     }
 
     /// <inheritdoc />
@@ -92,11 +102,11 @@ namespace WarcraftLegacies.Source.Quests.Quelthalas
       GeneralHelpers.CreateUnits(whichPlayer, Constants.UNIT_N048_BLOOD_MAGE_QUEL_THALAS, spawn.X, spawn.Y, 270, 6);
       GeneralHelpers.CreateUnits(whichPlayer, Constants.UNIT_HHES_SWORDSMAN_QUEL_THALAS, spawn.X, spawn.Y, 270, 12);
       GeneralHelpers.CreateUnits(whichPlayer, Constants.UNIT_NHEA_RANGER_QUEL_THALAS, spawn.X, spawn.Y, 270, 12);
-      LegendQuelthalas.LegendKael.StartingXp = GetHeroXP(LegendQuelthalas.LegendAnasterian.Unit);
-      LegendQuelthalas.LegendKael.ForceCreate(whichPlayer, _secondChanceRect.Center, 270);
-      UnitAddItem(LegendQuelthalas.LegendKael.Unit,
-        CreateItem(Constants.ITEM_I00M_SUMMON_ELVEN_WORKERS, GetUnitX(LegendQuelthalas.LegendKael.Unit),
-          GetUnitY(LegendQuelthalas.LegendKael.Unit)));
+      _kael.StartingXp = GetHeroXP(_anasterian.Unit);
+      _kael.ForceCreate(whichPlayer, _secondChanceRect.Center, 270);
+      UnitAddItem(_kael.Unit,
+        CreateItem(Constants.ITEM_I00M_SUMMON_ELVEN_WORKERS, GetUnitX(_kael.Unit),
+          GetUnitY(_kael.Unit)));
     }
     
     private static void GrantPower(Faction whichFaction)

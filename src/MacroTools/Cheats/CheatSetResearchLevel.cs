@@ -8,16 +8,19 @@ namespace MacroTools.Cheats
   /// <summary>
   /// A <see cref="CommandSystem.Command"/> that sets the specified research to the specified level for the cheater.
   /// </summary>
-  public sealed class CommandSetResearchLevel : Command
+  public sealed class CheatSetResearchLevel : Command
   {
     /// <inheritdoc />
     public override string CommandText => "setresearchlevel";
     
     /// <inheritdoc />
-    public override int ParameterCount => 2;
+    public override int MinimumParameterCount => 2;
     
     /// <inheritdoc />
     public override CommandType Type => CommandType.Cheat;
+    
+    /// <inheritdoc />
+    public override string Description => "Sets the specified research to the specified level.";
     
     /// <inheritdoc />
     public override string Execute(player cheater, params string[] parameters)

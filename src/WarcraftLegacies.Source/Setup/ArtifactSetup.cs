@@ -17,12 +17,7 @@ namespace WarcraftLegacies.Source.Setup
     /// The Crown of Stormwind.
     /// </summary>
     public Artifact CrownOfStormwind { get; }
-    
-    /// <summary>
-    /// Legendary Druidic weapon.
-    /// </summary>
-    public Artifact Ghanir { get; }
-    
+
     /// <summary>
     /// The Skull of Guldan.
     /// </summary>
@@ -102,17 +97,8 @@ namespace WarcraftLegacies.Source.Setup
       UnitAddItem(preplacedUnitSystem.GetUnit(FourCC("n021")), CrownOfStormwind.Item); //Hogger
       ArtifactManager.Register(CrownOfStormwind);
 
-      EyeOfSargeras = new Artifact(CreateItem(FourCC("I003"), DummyX, DummyY));
-      var doomguard = preplacedUnitSystem.GetUnit(FourCC("n04O"), new Point(-10028.1f, -23598.7f));
-      UnitAddAbility(doomguard, Artifact.ArtifactHolderAbilId);
-      UnitAddItem(doomguard, EyeOfSargeras.Item);
+      EyeOfSargeras = new Artifact(CreateItem(Constants.ITEM_I003_EYE_OF_SARGERAS, -77.9f, 10910.4f));
       ArtifactManager.Register(EyeOfSargeras);
-
-      var tempArtifact = new Artifact(CreateItem(FourCC("I00H"), DummyX, DummyY));
-      UnitAddAbility(preplacedUnitSystem.GetUnit(FourCC("N00D_1457")), Artifact.ArtifactHolderAbilId); //Ragnaros
-      UnitAddItem(preplacedUnitSystem.GetUnit(FourCC("N00D")), tempArtifact.Item);
-      tempArtifact.TitanforgedAbility = FourCC("A0VN");
-      ArtifactManager.Register(tempArtifact);
 
       HelmOfDomination = new Artifact(CreateItem(FourCC("I01Y"), DummyX, DummyY)); //Helm of Domination
       UnitAddAbility(preplacedUnitSystem.GetUnit(FourCC("u000_0649")), Artifact.ArtifactHolderAbilId); //Frozen Throne
@@ -124,20 +110,10 @@ namespace WarcraftLegacies.Source.Setup
       UnitAddItem(preplacedUnitSystem.GetUnit(FourCC("nemi")), CrownOfLordaeron.Item);
       ArtifactManager.Register(CrownOfLordaeron);
 
-      tempArtifact = new Artifact(CreateItem(FourCC("I00D"), DummyX, DummyY)); //Shalamayne
-      UnitAddItem(preplacedUnitSystem.GetUnit(FourCC("n021")), tempArtifact.Item); //Hogger
-      ArtifactManager.Register(tempArtifact);
-
-      tempArtifact = new Artifact(CreateItem(FourCC("klmm"), DummyX, DummyY)); //Killmaim
+      var tempArtifact = new Artifact(CreateItem(FourCC("klmm"), DummyX, DummyY)); //Killmaim
       UnitAddAbility(preplacedUnitSystem.GetUnit(FourCC("H00E_1728")),
         Artifact.ArtifactHolderAbilId); //Ramzes the Horror
       UnitAddItem(preplacedUnitSystem.GetUnit(FourCC("H00E")), tempArtifact.Item);
-      ArtifactManager.Register(tempArtifact);
-
-      tempArtifact = new Artifact(CreateItem(FourCC("I004"), -1480, -2240)); //The Doomhammer
-      ArtifactManager.Register(tempArtifact);
-
-      tempArtifact = new Artifact(CreateItem(Constants.ITEM_I01V_GOREHOWL, -10330, 2105));
       ArtifactManager.Register(tempArtifact);
 
       ScepterOfTheQueen = new Artifact(CreateItem(FourCC("I00I"), DummyX, DummyY));
@@ -169,7 +145,7 @@ namespace WarcraftLegacies.Source.Setup
       ArtifactManager.Register(BronzeFragment);
 
       ObsidianFragment = new Artifact(CreateItem(Constants.ITEM_I01L_OBSIDIAN_FRAGMENT, DummyX, DummyY));
-      UnitAddItem(preplacedUnitSystem.GetUnit(Constants.UNIT_O04E_BONESEER_TROLL), ObsidianFragment.Item);
+      UnitAddItem(preplacedUnitSystem.GetUnit(Constants.UNIT_NDTW_XU_BA), ObsidianFragment.Item);
       ArtifactManager.Register(ObsidianFragment);
 
       RubyFragment = new Artifact(CreateItem(Constants.ITEM_I01J_RUBY_FRAGMENT, DummyX, DummyY));
@@ -197,11 +173,6 @@ namespace WarcraftLegacies.Source.Setup
       UnitAddItem(preplacedUnitSystem.GetUnit(FourCC("O025")), tempArtifact.Item);
       ArtifactManager.Register(tempArtifact);
 
-      Ghanir = new Artifact(CreateItem(FourCC("I00C"), DummyX, DummyY)); //G)hanir
-      UnitAddAbility(preplacedUnitSystem.GetUnit(FourCC("nbwd_0737")), Artifact.ArtifactHolderAbilId); //Barrow Den
-      UnitAddItem(preplacedUnitSystem.GetUnit(FourCC("nbwd")), Ghanir.Item);
-      ArtifactManager.Register(Ghanir);
-
       HornOfCenarius = new Artifact(CreateItem(FourCC("cnhn"), DummyX, DummyY));
       UnitAddAbility(preplacedUnitSystem.GetUnit(FourCC("nhcn_2597")),
         Artifact.ArtifactHolderAbilId); //Horn of Cenarius Pedestal
@@ -210,11 +181,6 @@ namespace WarcraftLegacies.Source.Setup
 
       tempArtifact = new Artifact(CreateItem(FourCC("kgal"), DummyX, DummyY)); //Keg of Thunderwater
       UnitAddItem(preplacedUnitSystem.GetUnit(FourCC("hmtm"), new Point(15109, -895)), tempArtifact.Item);
-      ArtifactManager.Register(tempArtifact);
-
-      tempArtifact = new Artifact(CreateItem(FourCC("I00J"), DummyX, DummyY)); //Felo)melorn
-      UnitAddItem(preplacedUnitSystem.GetUnit(FourCC("O00O")), tempArtifact.Item); //Zuljin
-      tempArtifact.TitanforgedAbility = FourCC("A0VN");
       ArtifactManager.Register(tempArtifact);
 
       tempArtifact = new Artifact(CreateItem(FourCC("I00K"), DummyX, DummyY)); //Essence

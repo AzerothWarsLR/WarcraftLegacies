@@ -1,4 +1,5 @@
-﻿using MacroTools.ChannelSystem;
+﻿using System;
+using MacroTools.ChannelSystem;
 using MacroTools.Extensions;
 using MacroTools.Instances;
 using MacroTools.SpellSystem;
@@ -36,7 +37,7 @@ namespace MacroTools.Spells.Slipstream
     /// The color of the created portals.
     /// </summary>
     public Color Color { get; init; } = new(255, 255, 255, 255);
-    
+
     /// <summary>
     /// Initializes a new instance of the <see cref="SlipstreamSpell"/> class.
     /// </summary>
@@ -48,30 +49,39 @@ namespace MacroTools.Spells.Slipstream
     /// <inheritdoc/>
     public override void OnCast(unit caster, unit target, Point targetPoint)
     {
-      ChannelManager.Add(new SlipstreamPortalChannel(caster, Id, TargetLocation)
+      if (!IsPointValidTarget(caster, targetPoint))
+        return;
+      
+      var spellTarget = new Point(GetSpellTargetX(), GetSpellTargetY());
+      ChannelManager.Add(new SlipstreamPortalChannel(caster, Id, spellTarget, TargetLocation)
       {
         Active = true,
         PortalUnitTypeId = PortalUnitTypeId,
         OpeningDelay = OpeningDelay,
         ClosingDelay = ClosingDelay,
-        Color = Color
+        Color = Color,
+        RefundFunc = Refund
       });
     }
 
     /// <inheritdoc/>
     public override void OnStartCast(unit caster, unit target, Point targetPoint)
     {
-      if (IsTerrainPathable(targetPoint.X, targetPoint.Y, PATHING_TYPE_WALKABILITY) 
-          || WCSharp.Shared.Util.DistanceBetweenPoints(GetUnitX(caster), GetUnitY(caster), TargetLocation.X, TargetLocation.Y) < 500
-          || InstanceSystem.GetPointInstance(caster.GetPosition()) != InstanceSystem.GetPointInstance(targetPoint)) 
-        Refund(caster);
+      if (IsPointValidTarget(caster, targetPoint)) 
+        return;
+      caster.IssueOrder("stop");
+      Refund(caster);
     }
 
     private void Refund(unit whichUnit)
     {
-      whichUnit.IssueOrder("stop");
       whichUnit.RestoreMana(BlzGetUnitAbilityManaCost(whichUnit, Id, GetAbilityLevel(whichUnit)));
       BlzEndUnitAbilityCooldown(whichUnit, Id);
     }
+
+    private bool IsPointValidTarget(unit caster, Point targetPoint) =>
+      !IsTerrainPathable(targetPoint.X, targetPoint.Y, PATHING_TYPE_WALKABILITY) 
+      && !(WCSharp.Shared.Util.DistanceBetweenPoints(GetUnitX(caster), GetUnitY(caster), TargetLocation.X, TargetLocation.Y) < 500) 
+      && InstanceSystem.GetPointInstance(caster.GetPosition()) == InstanceSystem.GetPointInstance(targetPoint);
   }
 }

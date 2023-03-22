@@ -1,7 +1,6 @@
 ﻿using MacroTools.Spells;
 using MacroTools.Spells.ExactJustice;
 using MacroTools.SpellSystem;
-using WarcraftLegacies.Source.Spells;
 
 namespace WarcraftLegacies.Source.Setup.Spells
 {
@@ -35,8 +34,6 @@ namespace WarcraftLegacies.Source.Setup.Spells
         EffectHealPath = @"Abilities\Spells\Human\Heal\HealTarget.mdl"
       };
       SpellSystem.Register(solarJudgement);
-      
-      SpellSystem.Register(new WeaponEmpowerment(Constants.ABILITY_A0JZ_WEAPON_EMPOWERMENT_PURPLE_ALEXANDROS_SPELL));
 
       var exactJustice = new ExactJusticeSpell(Constants.ABILITY_A097_EXACT_JUSTICE_PURPLE_UTHER)
       {

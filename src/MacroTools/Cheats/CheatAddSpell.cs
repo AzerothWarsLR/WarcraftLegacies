@@ -5,19 +5,22 @@ using static War3Api.Common;
 namespace MacroTools.Cheats
 {
   /// <summary>
-  /// A <see cref="CommandSystem.Command"/> that adds a specified spell to all selected units.
+  /// A <see cref="Command"/> that adds a specified spell to all selected units.
   /// </summary>
-  public sealed class CommandAddSpell : Command
+  public sealed class CheatAddSpell : Command
   {
     /// <inheritdoc />
     public override string CommandText => "add";
 
     /// <inheritdoc />
-    public override int ParameterCount => 1;
+    public override int MinimumParameterCount => 1;
 
     /// <inheritdoc />
     public override CommandType Type => CommandType.Cheat;
 
+    /// <inheritdoc />
+    public override string Description => "Adds the specified spell to all selected units.";
+    
     /// <inheritdoc />
     public override string Execute(player cheater, params string[] parameters)
     {

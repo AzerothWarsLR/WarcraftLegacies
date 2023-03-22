@@ -1,4 +1,4 @@
-﻿using MacroTools.ObjectiveSystem.Objectives;
+﻿using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
 
 namespace WarcraftLegacies.Source.Quests.Zandalar
@@ -17,14 +17,14 @@ namespace WarcraftLegacies.Source.Quests.Zandalar
       "The King has ordered for the greatest armada in the world. The construction of the Golden Fleet has begun!",
       "ReplaceableTextures\\CommandButtons\\BTNTrollConjurer.blp")
     {
-      AddObjective(new ObjectiveTrain(Constants.UNIT_O04W_GOLDEN_VESSEL_ZANDALAR, Constants.UNIT_O049_GOLDEN_DOCK_ZANDALAR, 5));
+      AddObjective(new ObjectiveTrain(Constants.UNIT_O04W_GOLDEN_VESSEL_ZANDALAR, Constants.UNIT_O049_GOLDEN_DOCK_ZANDALARI_SHIPYARD, 5));
       ResearchId = Constants.UPGRADE_R06W_QUEST_COMPLETED_THE_GOLDEN_FLEET;
       Required = true;
       
     }
 
     /// <inheritdoc/>>
-    protected override string CompletionPopup => "Rastakhan is now trainable and Direhorn are available.";
+    protected override string RewardFlavour => "Rastakhan is now trainable and Direhorn are available.";
 
     /// <inheritdoc/>
     protected override string RewardDescription => "Rastakhan is trainable at the altar and Direhorns are trainable";

@@ -1,3 +1,4 @@
+﻿using System.Linq;
 using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
@@ -10,56 +11,53 @@ namespace WarcraftLegacies.Source.GameLogic.GameEnd
   /// </summary>
   public static class ControlPointVictory
   {
-    private const int CpsWarning = 75; //How many Control Points to start the warning at
+    /// <summary>
+    /// The number of <see cref="ControlPoint"/>s a <see cref="Team"/> must acquire to win the game.
+    /// </summary>
+    public const int CpsVictory = 90;
+    
+    private const int CpsWarning = 80; //How many Control Points to start the warning at
     private const string VictoryColor = "|cff911499";
-    private static int _cpsVictory = 90; //This many Control Points gives an instant win
+    private static bool _gameWon;
 
-    public static void SetCpsVictory(int victoryCpCount)
+    /// <summary>
+    /// Sets up <see cref="ControlPointVictory"/>.
+    /// </summary>
+    public static void Setup()
     {
-      _cpsVictory = victoryCpCount;
+      foreach (var controlPoint in ControlPointManager.Instance.GetAllControlPoints())
+        controlPoint.ChangedOwner += ControlPointOwnerChanges;
     }
+    
+    private static int GetTeamControlPoints(Team whichTeam) => 
+      whichTeam.GetAllFactions().Where(faction => faction.Player != null).Sum(faction => faction.Player.GetControlPointCount());
 
-    public static int GetControlPointsRequiredVictory()
-    {
-      return _cpsVictory;
-    }
-
-    public static int GetControlPointsRequiredWarning()
-    {
-      return CpsWarning;
-    }
-
-    private static int GetTeamControlPoints(Team whichTeam)
-    {
-      var total = 0;
-      foreach (var faction in whichTeam.GetAllFactions())
-        if (faction.Player != null)
-          total += faction.Player.GetControlPointCount();
-      return total;
-    }
-
-    private static void TeamWarning(Team whichTeam, int controlPoints)
-    {
+    private static void TeamWarning(Team whichTeam, int controlPoints) =>
       DisplayTextToPlayer(GetLocalPlayer(), 0, 0,
-        $"\n{VictoryColor}TEAM VICTORY IMMINENT|r\n{whichTeam.Name} has captured {I2S(controlPoints)} out of {I2S(_cpsVictory)} Control Points required to win the game!");
-    }
+        $"\n{VictoryColor}TEAM VICTORY IMMINENT|r\n{whichTeam.Name} has captured {controlPoints} out of {CpsVictory} Control Points required to win the game!");
 
     private static void ControlPointOwnerChanges(object? sender,
       ControlPointOwnerChangeEventArgs controlPointOwnerChangeEventArgs)
     {
-      if (VictoryDefeat.GameWon) return;
+      if (_gameWon) 
+        return;
       var newOwnerTeam = controlPointOwnerChangeEventArgs.ControlPoint.Owner.GetTeam();
       var formerOwnerTeam = controlPointOwnerChangeEventArgs.FormerOwner.GetTeam();
       if (newOwnerTeam == null || newOwnerTeam == formerOwnerTeam) return;
       var teamControlPoints = GetTeamControlPoints(newOwnerTeam);
-      if (teamControlPoints >= _cpsVictory)
-        VictoryDefeat.TeamVictory(newOwnerTeam);
-      else if (teamControlPoints > CpsWarning) TeamWarning(newOwnerTeam, teamControlPoints);
+      if (teamControlPoints >= CpsVictory)
+        TeamVictory(newOwnerTeam);
+      else if (teamControlPoints > CpsWarning) 
+        TeamWarning(newOwnerTeam, teamControlPoints);
     }
 
-    public static void Setup()
+    private static void TeamVictory(Team whichTeam)
     {
-      //ControlPoint.OnControlPointOwnerChange += ControlPointOwnerChanges;
+      ClearTextMessages();
+      DisplayTextToPlayer(GetLocalPlayer(), 0, 0,
+        $"{VictoryColor}\nTEAM VICTORY!|r\nThe {whichTeam.Name} has won the game! You may choose to continue playing.");
+      PlayThematicMusic(whichTeam.VictoryMusic);
+      _gameWon = true;
     }
   }
 }

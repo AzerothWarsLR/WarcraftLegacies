@@ -2,7 +2,8 @@
 using System.Linq;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
-using MacroTools.ObjectiveSystem.Objectives;
+using MacroTools.ObjectiveSystem.Objectives.TimeBased;
+using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -48,7 +49,7 @@ namespace WarcraftLegacies.Source.Quests
     protected override string RewardDescription => "The Tomb of Sargeras opens";
 
     /// <inheritdoc />
-    protected override string CompletionPopup =>
+    protected override string RewardFlavour =>
       $"The Tomb of Sargeras has been opened by {_enterTombOfSargerasRegion.CompletingUnitName}.";
 
     /// <inheritdoc />

@@ -2,9 +2,10 @@
 using MacroTools;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
-using MacroTools.ObjectiveSystem.Objectives;
+using MacroTools.ObjectiveSystem.Objectives.FactionBased;
+using MacroTools.ObjectiveSystem.Objectives.TimeBased;
+using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
-using WarcraftLegacies.Source.Setup.Legends;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
@@ -19,26 +20,25 @@ namespace WarcraftLegacies.Source.Quests.Ironforge
       "ReplaceableTextures\\CommandButtons\\BTNMurlocNightCrawler.blp")
     {
       AddObjective(new ObjectiveUnitIsDead(preplacedUnitSystem.GetUnit(FourCC("N089"))));
-      AddObjective(new ObjectiveExpire(420));
+      AddObjective(new ObjectiveExpire(1020, Title));
       AddObjective(new ObjectiveSelfExists());
-      foreach (var unit in CreateGroup().EnumUnitsInRect(rescueRect).EmptyToList())
-        if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))
-        {
-          SetUnitInvulnerable(unit, true);
-          _rescueUnits.Add(unit);
-        }
+      _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable);
       Required = true;
     }
 
-    protected override string CompletionPopup => "The Murlocs have been defeated, Thelsamar will join your cause.";
+    /// <inheritdoc/>
+    protected override string RewardFlavour => "The Murlocs have been defeated, Thelsamar will join your cause.";
 
+    /// <inheritdoc/>
     protected override string RewardDescription => "Control of all units in Thelsamar";
 
+    /// <inheritdoc/>
     protected override void OnFail(Faction completingFaction)
     {
       foreach (var unit in _rescueUnits) unit.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
+    /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
     {
       foreach (var unit in _rescueUnits) unit.Rescue(completingFaction.Player);

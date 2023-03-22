@@ -1,42 +1,38 @@
+﻿using MacroTools.CommandSystem;
 using MacroTools.Extensions;
 using static War3Api.Common;
 
 namespace MacroTools.Cheats
 {
-  public static class CheatLevel
+  /// <summary>
+  /// Sets the hero level of all selected units to the specified level.
+  /// </summary>
+  public sealed class CheatLevel: Command
   {
-    private const string Command = "-level ";
-    private static string? _parameter;
-    
-    private static void SetLevel(unit whichUnit)
+
+    /// <inheritdoc />
+    public override string CommandText => "level";
+
+    /// <inheritdoc />
+    public override int MinimumParameterCount => 1;
+
+    /// <inheritdoc />
+    public override CommandType Type => CommandType.Cheat;
+
+    /// <inheritdoc />
+    public override string Description => "Sets the hero level of all selected units to the specified level.";
+
+    /// <inheritdoc />
+    public override string Execute(player cheater, params string[] parameters)
     {
-      SetHeroLevel(whichUnit, S2I(_parameter), true);
-    }
-
-    private static void Actions()
-    {
-      if (!TestMode.CheatCondition()) return;
-
-      string enteredString = GetEventPlayerChatString();
-      player p = GetTriggerPlayer();
-      GetPlayerId(p);
-      _parameter = SubString(enteredString, StringLength(Command), StringLength(enteredString));
-
-      if (S2I(_parameter) > 0)
+      if (S2I(parameters[0]) > 0)
       {
-        foreach (var unit in CreateGroup().EnumSelectedUnits(p).EmptyToList())
-        {
-          SetLevel(unit);
-        }
-        DisplayTextToPlayer(p, 0, 0, "|cffD27575CHEAT:|r Setting hero level of selected units to " + _parameter + ".");
+        foreach (var unit in CreateGroup().EnumSelectedUnits(cheater).EmptyToList())
+          unit.SetLevel(S2I(parameters[0]));
+        
+        return $"Setting hero level of selected units to {parameters[0]}.";
       }
-    }
-
-    public static void Setup()
-    {
-      trigger trig = CreateTrigger();
-      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers()) TriggerRegisterPlayerChatEvent(trig, player, Command, false);
-      TriggerAddAction(trig, Actions);
+      return $"Failed setting hero level of selected units to {parameters[0]} ({parameters[0]} is not a number).";
     }
   }
 }

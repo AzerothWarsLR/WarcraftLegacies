@@ -1,24 +1,24 @@
-using MacroTools;
-using MacroTools.FactionSystem;
+﻿using MacroTools;
 using MacroTools.LegendSystem;
 using static War3Api.Common;
+#pragma warning disable CS1591
 
 namespace WarcraftLegacies.Source.Setup.Legends
 {
-  public static class LegendDruids
+  public sealed class LegendDruids
   {
-    public static LegendaryHero LegendCenarius { get; private set; }
-    public static LegendaryHero LegendMalfurion { get; private set; }
-    public static LegendaryHero LegendFandral { get; private set; }
-    public static LegendaryHero LegendUrsoc { get; private set; }
-    public static LegendaryHero LegendTortolla { get; private set; }
-    public static Capital LegendNordrassil { get; private set; }
-    public static int UnittypeCenariusAlive { get; } = FourCC("Ecen");
-    public static int UnittypeCenariusGhost { get; } = FourCC("E00H");
+    public LegendaryHero Cenarius { get; }
+    public LegendaryHero Malfurion { get; }
+    public LegendaryHero Fandral { get; }
+    public LegendaryHero Ursoc { get; }
+    public LegendaryHero Tortolla { get; }
+    public Capital Nordrassil { get; }
+    public Capital Darnassus { get; }
+    public static int UnittypeCenariusGhost => Constants.UNIT_E00H_DEMIGOD_OF_THE_NIGHT_ELVES_DRUIDS_GHOST;
 
-    public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
+    public LegendDruids(PreplacedUnitSystem preplacedUnitSystem)
     {
-      LegendaryHeroManager.Register(LegendCenarius = new LegendaryHero("Cenarius")
+      Cenarius = new LegendaryHero("Cenarius")
       {
         UnitType = FourCC("Ecen"),
         PermaDies = true,
@@ -26,36 +26,54 @@ namespace WarcraftLegacies.Source.Setup.Legends
           "The Lord of the Forest, Cenarius, has fallen. The druids of the Kaldorei have lost their greatest mentor.",
         DeathSfx = "Objects\\Spawnmodels\\NightElf\\EntBirthTarget\\EntBirthTarget.mdl",
         PlayerColor = PLAYER_COLOR_CYAN,
-        StartingXp = 1000
-      });
+      };
 
-      LegendaryHeroManager.Register(LegendMalfurion = new LegendaryHero("Malfurion")
+      Malfurion = new LegendaryHero("Malfurion")
       {
-        UnitType = FourCC("Efur")
-      });
+        UnitType = FourCC("Efur"),
+        StartingArtifactItemTypeIds = new[]
+        {
+          Constants.ITEM_I00C_G_HANIR_THE_MOTHER_TREE
+        }
+      };
 
-      LegendaryHeroManager.Register(LegendFandral = new LegendaryHero("Fandral")
+      Fandral = new LegendaryHero("Fandral")
       {
         UnitType = FourCC("E00K")
-      });
+      };
 
-      LegendaryHeroManager.Register(LegendUrsoc = new LegendaryHero("Ursoc")
+      Ursoc = new LegendaryHero("Ursoc")
       {
         UnitType = FourCC("E00A"),
         StartingXp = 7000
-      });
+      };
 
-      CapitalManager.Register(LegendNordrassil = new Capital
+      Nordrassil = new Capital
       {
         Unit = preplacedUnitSystem.GetUnit(FourCC("n002")),
         Capturable = true
-      });
+      };
 
-      LegendaryHeroManager.Register(LegendTortolla = new LegendaryHero("Tortolla")
+      Darnassus = new Capital
+      {
+        Unit = preplacedUnitSystem.GetUnit(FourCC("o029")),
+      };
+
+      Tortolla = new LegendaryHero("Tortolla")
       {
         UnitType = FourCC("H04U"),
         StartingXp = 1800
-      });
+      };
+    }
+    
+    public void RegisterLegends()
+    {
+      LegendaryHeroManager.Register(Cenarius);
+      LegendaryHeroManager.Register(Malfurion);
+      LegendaryHeroManager.Register(Fandral);
+      LegendaryHeroManager.Register(Ursoc);
+      LegendaryHeroManager.Register(Tortolla);
+      CapitalManager.Register(Nordrassil);
     }
   }
 }

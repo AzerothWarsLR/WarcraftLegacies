@@ -1,5 +1,4 @@
 ﻿using MacroTools;
-using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 
 namespace WarcraftLegacies.Source.Setup.Legends
@@ -15,7 +14,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
     {
       DragonmawPort = new Capital
       {
-        Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_O06E_DRAGONMAW_PORT),
+        Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_O06E_DRAGONMAW_PORT_DRAGONMAW),
         DeathMessage =
           "The Dragonmaw Port has fallen, the Twilight Highlands are finally liberated"
       };

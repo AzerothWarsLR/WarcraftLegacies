@@ -1,33 +1,29 @@
+using MacroTools.CommandSystem;
 using MacroTools.Extensions;
 using static War3Api.Common;
 
 namespace MacroTools.Cheats
 {
-  public static class CheatRemove
+  public sealed class CheatRemove : Command
   {
-    private const string Command = "-remove";
+    /// <inheritdoc />
+    public override string CommandText => "remove";
 
-    private static void Remove(unit whichUnit)
-    {
-      RemoveUnit(whichUnit);
-    }
+    /// <inheritdoc />
+    public override int MinimumParameterCount => 0;
+    
+    /// <inheritdoc />
+    public override CommandType Type => CommandType.Cheat;
 
-    private static void Actions()
+    /// <inheritdoc />
+    public override string Description => "Removes all selected units.";
+    
+    /// <inheritdoc />
+    public override string Execute(player cheater, params string[] parameters)
     {
-      if (!TestMode.CheatCondition()) return;
-      player p = GetTriggerPlayer();
-      foreach (var unit in CreateGroup().EnumSelectedUnits(p).EmptyToList())
-      {
-        Remove(unit);
-      }
-      DisplayTextToPlayer(p, 0, 0, "|cffD27575CHEAT:|r Permanently removing selected units.");
-    }
-
-    public static void Setup()
-    {
-      trigger trig = CreateTrigger();
-      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers()) TriggerRegisterPlayerChatEvent(trig, player, Command, false);
-      TriggerAddAction(trig, Actions);
+      foreach (var unit in CreateGroup().EnumSelectedUnits(cheater).EmptyToList()) 
+        RemoveUnit(unit);
+      return "Permanently removing selected units.";
     }
   }
 }

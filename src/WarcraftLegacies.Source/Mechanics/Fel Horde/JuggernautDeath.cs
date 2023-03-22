@@ -1,5 +1,6 @@
 ﻿using MacroTools;
 using MacroTools.Extensions;
+using WCSharp.Events;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
@@ -22,23 +23,23 @@ namespace WarcraftLegacies.Source.Mechanics.Fel_Horde
       var inferJuggernaut3 = preplacedUnitSystem.GetUnit(Constants.UNIT_N066_INFERNAL_JUGGERNAUT_TEAL_TOWER, new Point(4537.8f, -30988.1f));
       var inferJuggernaut4 = preplacedUnitSystem.GetUnit(Constants.UNIT_N066_INFERNAL_JUGGERNAUT_TEAL_TOWER, new Point(4631.4f, -31433.0f));
 
-      CreateTrigger()
-        .RegisterUnitEvent(powerGenerator1, EVENT_UNIT_DEATH)
-        .AddAction(() =>
-        {
-          KillUnit(inferJuggernaut1);
-          KillUnit(inferJuggernaut2);
-          DestroyTrigger(GetTriggeringTrigger());
-        });
+      SetupPowerGenerators(powerGenerator1, inferJuggernaut1, inferJuggernaut2);
+      SetupPowerGenerators(powerGenerator2, inferJuggernaut3, inferJuggernaut4);
+    }
 
-      CreateTrigger()
-        .RegisterUnitEvent(powerGenerator2, EVENT_UNIT_DEATH)
-        .AddAction(() =>
-        {
-          KillUnit(inferJuggernaut3);
-          KillUnit(inferJuggernaut4);
-          DestroyTrigger(GetTriggeringTrigger());
-        });
+    private static void SetupPowerGenerators(unit powerGenerator, params unit[] dependentJuggernauts)
+    {
+      PlayerUnitEvents.Register(UnitEvent.Dies, () =>
+      {
+        foreach (var juggernaut in dependentJuggernauts)
+          juggernaut.Kill();
+      }, powerGenerator);
+
+      PlayerUnitEvents.Register(UnitEvent.ChangesOwner, () =>
+      {
+        foreach (var juggernaut in dependentJuggernauts)
+          juggernaut.SetOwner(GetTriggerUnit().OwningPlayer());
+      }, powerGenerator);
     }
   }
 }

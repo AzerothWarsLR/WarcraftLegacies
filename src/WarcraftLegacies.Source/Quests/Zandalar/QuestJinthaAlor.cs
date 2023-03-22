@@ -1,7 +1,8 @@
 ﻿using MacroTools.Extensions;
 using MacroTools.FactionSystem;
-using MacroTools.ObjectiveSystem.Objectives;
+using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.QuestSystem;
+using WarcraftLegacies.Source.Setup;
 using WarcraftLegacies.Source.Setup.Legends;
 using static War3Api.Common;
 
@@ -14,20 +15,20 @@ namespace WarcraftLegacies.Source.Quests.Zandalar
   {
     private const int _jinthaalorResearch = Constants.UPGRADE_R02N_QUEST_COMPLETED_THE_ANCIENT_EGG_WARSONG;
     private const int _bearRiderId = Constants.UNIT_O02K_BEAR_RIDER_WARSONG;
-    private const int _trollShrineId = Constants.UNIT_O04X_LOA_SHRINE_ZANDALAR;
+    private const int _trollShrineId = Constants.UNIT_O04X_LOA_SHRINE_ZANDALARI_SPECIALIST;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestJinthaAlor"/> class
     /// </summary>
-    public QuestJinthaAlor() : base("The Ancient Egg",
+    public QuestJinthaAlor(AllLegendSetup legendSetup) : base("The Ancient Egg",
       "The Vilebranch trolls of Jintha'Alor are controlled by their fear of the Soulflayer's egg, hidden within their shrine. Smash it to gain their loyalty.",
       "ReplaceableTextures\\CommandButtons\\BTNForestTrollShadowPriest.blp")
     {
-      AddObjective(new ObjectiveControlCapital(LegendNeutral.Jinthaalor, false));
+      AddObjective(new ObjectiveControlCapital(legendSetup.Neutral.Jinthaalor, false));
     }
 
     /// <inheritdoc/>
-    protected override string CompletionPopup =>
+    protected override string RewardFlavour =>
       "Jintha'Alor has fallen. The Vilebranch trolls lend their might to the Zandalari";
 
     /// <inheritdoc/>>

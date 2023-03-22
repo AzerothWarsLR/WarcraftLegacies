@@ -9,12 +9,12 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
     
     public static void Setup()
     {
-      Illidan = new Faction("Illidan's Forces", PLAYER_COLOR_VIOLET, "|cffff00ff",
+      Illidan = new Faction(FactionNames.IllidansForces, PLAYER_COLOR_VIOLET, "|cffff00ff",
         "ReplaceableTextures\\CommandButtons\\BTNHeroDemonHunter.blp")
       {
         UndefeatedResearch = FourCC("R02L"),
-        StartingGold = 150,
-        StartingLumber = 500,
+        StartingGold = 200,
+        StartingLumber = 700,
         IntroText = @"You are playing as the renegade Illidan.|r|r.
 
 While shunned by most of Night Elven society, you still support Tyrande, the object of your eternal affection.

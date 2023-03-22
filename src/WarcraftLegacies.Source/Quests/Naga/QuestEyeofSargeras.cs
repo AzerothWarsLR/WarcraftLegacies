@@ -1,26 +1,34 @@
 ﻿using MacroTools.ArtifactSystem;
-using MacroTools.ObjectiveSystem.Objectives;
+using MacroTools.LegendSystem;
+using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.QuestSystem;
-using WarcraftLegacies.Source.Setup.Legends;
+using WarcraftLegacies.Source.Setup;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Naga
 {
-  //todo: fix incorrect grammar
+  /// <summary>
+  /// Acquire the <see cref="ArtifactSetup.EyeOfSargeras"/> to unlock Coilfang Summoners
+  /// </summary>
   public sealed class QuestEyeofSargeras : QuestData
   {
-    public QuestEyeofSargeras(Artifact eyeOfSargeras) : base("The Eye of Sargeras",
-      "The Eye of Sargeras is an extremely powerful artifact, it could be the key to satiate Illidan's thirst for power",
-      "ReplaceableTextures\\CommandButtons\\BTNEyeOfSargeras.blp")
+    /// <summary>
+    /// Initializes a new instance of the <see cref="QuestEyeofSargeras"/> class.
+    /// </summary>
+    public QuestEyeofSargeras(Artifact eyeOfSargeras, LegendaryHero illidan) : base("The Eye of Sargeras",
+      "The Eye of Sargeras is an extremely powerful artifact, it could be the key to satiate Illidan's thirst for power.",
+      "ReplaceableTextures\\CommandButtons\\BTNKazzakIon.blp")
     {
-      AddObjective(new ObjectiveLegendHasArtifact(LegendNaga.LegendIllidan, eyeOfSargeras));
-      ResearchId = FourCC("R094");
+      AddObjective(new ObjectiveLegendHasArtifact(illidan, eyeOfSargeras));
+      ResearchId = Constants.UPGRADE_R094_QUEST_COMPLETED_THE_EYE_OF_SARGERAS;
     }
 
-    protected override string CompletionPopup =>
-      "The Eye of Sargeras power needs to be channeled by powerful arcanists, the Summoners will be the perfect vessels";
+    /// <inheritdoc/>
+    protected override string RewardFlavour =>
+      "The Eye of Sargeras' power needs to be channeled by powerful arcanists, the Naga Sea Witch will be the perfect vessels.";
 
+    /// <inheritdoc/>
     protected override string RewardDescription =>
-      "Gain the Eye of Sargeras and the ability to train Summoner's";
+      $"Learn to train {GetObjectName(Constants.UNIT_HVSH_SEA_WITCH_ILLIDARI)}es from {GetObjectName(Constants.UNIT_N055_BETRAYER_S_CITADEL_ILLIDARI_T3)}s";
   }
 }

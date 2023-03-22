@@ -81,7 +81,7 @@ namespace MacroTools.Extensions
       EffectSystem.Add(effect, lifespan);
       return effect;
     }
-    
+
     /// <summary>
     /// Sets the effect's height above the ground.
     /// </summary>

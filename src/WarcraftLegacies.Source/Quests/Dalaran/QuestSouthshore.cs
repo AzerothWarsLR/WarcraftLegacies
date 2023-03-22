@@ -1,8 +1,11 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
-using MacroTools.ObjectiveSystem.Objectives;
+using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
+using MacroTools.ObjectiveSystem.Objectives.FactionBased;
+using MacroTools.ObjectiveSystem.Objectives.TimeBased;
+using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -25,16 +28,16 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
       "A small murloc skirmish is attacking Southshore, push them back",
       "ReplaceableTextures\\CommandButtons\\BTNMurloc.blp")
     {
-      AddObjective(new ObjectiveKillUnit(murlocToKill));
+      AddObjective(new ObjectiveUnitIsDead(murlocToKill));
       AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N08M_SOUTHSHORE_15GOLD_MIN)));
-      AddObjective(new ObjectiveExpire(1135));
+      AddObjective(new ObjectiveExpire(1135, Title));
       AddObjective(new ObjectiveSelfExists());
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
       Required = true;
     }
 
     /// <inheritdoc />
-    protected override string CompletionPopup => "The Murlocs have been defeated, Southshore is safe.";
+    protected override string RewardFlavour => "The Murlocs have been defeated, Southshore is safe.";
 
     /// <inheritdoc />
     protected override string RewardDescription => "Control of all units in Southshore";
@@ -45,6 +48,6 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
 
     /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction) => 
-      completingFaction.Player?.RescueGroup(_rescueUnits);
+      completingFaction.Player.RescueGroup(_rescueUnits);
   }
 }

@@ -1,98 +1,78 @@
-using MacroTools;
-using MacroTools.FactionSystem;
+﻿using MacroTools;
 using MacroTools.LegendSystem;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
+#pragma warning disable CS1591
 
 namespace WarcraftLegacies.Source.Setup.Legends
 {
   /// <summary>
   /// Responsible for setting up and storing all Dalaran <see cref="Legend"/>s.
   /// </summary>
-  public static class LegendDalaran
+  public sealed class LegendDalaran
   {
-    /// <summary>
-    /// Archmage of Dalaran.
-    /// </summary>
-    public static LegendaryHero? LegendAntonidas { get; private set; }
-    
-    /// <summary>
-    /// Former Guardian of Tirisfal.
-    /// </summary>
-    public static LegendaryHero? LegendMedivh { get; private set; }
-    
-    /// <summary>
-    /// Antonidas' best student.
-    /// </summary>
-    public static LegendaryHero? LegendJaina { get; private set; }
-    
-    /// <summary>
-    /// Powerful Blue Dragon and sorcerer.
-    /// </summary>
-    public static LegendaryHero? LegendKalecgos { get; private set; }
-    
-    /// <summary>
-    /// Aspect of the Blue Dragonflight.
-    /// </summary>
-    public static LegendaryHero? LegendMalygos { get; private set; }
-    
-    /// <summary>
-    /// Dalaran city capital.l
-    /// </summary>
-    public static Capital? LegendDalaranCapital { get; private set; }
+    public LegendaryHero Antonidas { get; }
+    public LegendaryHero Medivh { get; }
+    public LegendaryHero Jaina { get; }
+    public LegendaryHero Kalecgos { get; }
+    public LegendaryHero Aegwynn { get; }
+    public Capital Dalaran { get; }
 
     /// <summary>
     /// Sets up all Dalaran <see cref="Legend"/>s.
     /// </summary>
-    public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
+    public LegendDalaran(PreplacedUnitSystem preplacedUnitSystem)
     {
-      LegendJaina = new LegendaryHero("Jaina Proudmoore")
+      Jaina = new LegendaryHero("Jaina Proudmoore")
       {
         UnitType = Constants.UNIT_HJAI_ARCHMAGE_OF_DALARAN_DALARAN
       };
-      LegendaryHeroManager.Register(LegendJaina);
 
-      LegendMedivh = new LegendaryHero("Medivh")
+      Medivh = new LegendaryHero("Medivh")
       {
         UnitType = FourCC("Haah"),
         StartingXp = 2800
       };
-      LegendaryHeroManager.Register(LegendMedivh);
 
-      LegendKalecgos = new LegendaryHero("Kalecgos")
+      Kalecgos = new LegendaryHero("Kalecgos")
       {
         UnitType = FourCC("U027"),
         StartingXp = 9800
       };
-      LegendaryHeroManager.Register(LegendKalecgos);
 
-      LegendMalygos = new LegendaryHero("Malygos")
+      Aegwynn = new LegendaryHero("Aegwynn")
       {
-        UnitType = FourCC("U026"),
-        StartingXp = 10900
+        UnitType = FourCC("H09N"),
+        StartingXp = 9800
       };
-      LegendaryHeroManager.Register(LegendMalygos);
 
-      LegendDalaranCapital = new Capital
+      Dalaran = new Capital
       {
-        Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_H002_THE_VIOLET_CITADEL_DALARAN),
+        Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_H002_THE_VIOLET_CITADEL_DALARAN_OTHER),
         DeathMessage =
           "The Violet Citadel, the ultimate bastion of arcane knowledge in the Eastern Kingdoms, crumbles like a sand castle."
       };
-      CapitalManager.Register(LegendDalaranCapital);
-      LegendDalaranCapital.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_N03G_VIOLET_TOWER, new Point(9084, 4979)));
-      LegendDalaranCapital.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_N03G_VIOLET_TOWER, new Point(9008, 4092)));
-      LegendDalaranCapital.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_N03G_VIOLET_TOWER, new Point(9864, 4086)));
+      Dalaran.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_N03G_VIOLET_TOWER, new Point(9084, 4979)));
+      Dalaran.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_N03G_VIOLET_TOWER, new Point(9008, 4092)));
+      Dalaran.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_N03G_VIOLET_TOWER, new Point(9864, 4086)));
 
-      LegendAntonidas = new LegendaryHero("Antonidas")
+      Antonidas = new LegendaryHero("Antonidas")
       {
         UnitType = FourCC("Hant"),
         StartingXp = 1000,
         DeathMessage =
           "Archmage Antonidas has been cut down, his vast knowledge forever lost with his death. The mages of Dalaran have lost their brightest mind."
       };
-      LegendAntonidas.AddUnitDependency(LegendDalaranCapital.Unit);
-      LegendaryHeroManager.Register(LegendAntonidas);
+    }
+    
+    public void RegisterLegends()
+    {
+      LegendaryHeroManager.Register(Antonidas);
+      LegendaryHeroManager.Register(Jaina);
+      LegendaryHeroManager.Register(Kalecgos);
+      LegendaryHeroManager.Register(Medivh);
+      LegendaryHeroManager.Register(Aegwynn);
+      CapitalManager.Register(Dalaran);
     }
   }
 }

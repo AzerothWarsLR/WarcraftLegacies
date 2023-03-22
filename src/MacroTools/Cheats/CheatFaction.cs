@@ -1,46 +1,41 @@
-using System;
+﻿using MacroTools.CommandSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using static War3Api.Common;
 
 namespace MacroTools.Cheats
 {
-  public static class CheatFaction
+  /// <summary>
+  /// Changes the cheater's <see cref="Faction"/> to a specified <see cref="Faction"/>
+  /// </summary>
+  public sealed class CheatFaction : Command
   {
-    private const string Command = "-faction ";
-    private static string? _parameter;
 
-    private static void Actions()
+    /// <inheritdoc />
+    public override string CommandText => "faction";
+
+    /// <inheritdoc />
+    public override int MinimumParameterCount => 1;
+
+    /// <inheritdoc />
+    public override CommandType Type => CommandType.Cheat;
+
+    /// <inheritdoc />
+    public override string Description => " Changes your faction to the specified faction.";
+
+    /// <inheritdoc />
+    public override string Execute(player cheater, params string[] parameters)
     {
-      try
+      if (!FactionManager.FactionWithNameExists(parameters[0]))
+        return $"There is no registered {nameof(Faction)} with the name {parameters[0]}.";
+
+      var f = FactionManager.GetFromName(parameters[0]);
+      if (f != null)
       {
-        if (!TestMode.CheatCondition())
-          return;
-
-        string enteredString = GetEventPlayerChatString();
-        player p = GetTriggerPlayer();
-        _parameter = SubString(enteredString, StringLength(Command), StringLength(enteredString));
-
-        if (!FactionManager.FactionWithNameExists(_parameter))
-          throw new Exception($"There is no registered {nameof(Faction)} with the name {_parameter}.");
-
-        Faction f = FactionManager.GetFromName(_parameter);
-
         PlayerData.ByHandle(GetTriggerPlayer()).Faction = f;
-        DisplayTextToPlayer(p, 0, 0, $"|cffD27575CHEAT:|r Attempted to change faction to {f.Name}.");
+        return $"Successfully changed faction to {f.Name}.";
       }
-      catch (Exception ex)
-      {
-        Console.WriteLine(ex);
-      }
-    }
-
-    public static void Setup()
-    {
-      trigger trig = CreateTrigger();
-      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers()) TriggerRegisterPlayerChatEvent(trig, player, Command, false);
-
-      TriggerAddAction(trig, Actions);
+      return $"Failed changing faction to {parameters[0]}";
     }
   }
 }

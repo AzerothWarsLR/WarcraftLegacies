@@ -1,4 +1,6 @@
 ﻿using MacroTools.ObjectiveSystem.Objectives;
+using MacroTools.ObjectiveSystem.Objectives.QuestBased;
+using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
 using static War3Api.Common;
 
@@ -13,6 +15,6 @@ namespace TestMap.Source.Quests
     }
 
     protected override string RewardDescription => "No idea.";
-    protected override string CompletionPopup => "Thanks for completing me instead of that other quest!";
+    protected override string RewardFlavour => "Thanks for completing me instead of that other quest!";
   }
 }

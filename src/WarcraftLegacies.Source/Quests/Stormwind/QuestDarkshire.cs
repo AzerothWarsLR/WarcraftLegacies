@@ -1,7 +1,10 @@
-using MacroTools.ControlPointSystem;
+﻿using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
-using MacroTools.ObjectiveSystem.Objectives;
+using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
+using MacroTools.ObjectiveSystem.Objectives.FactionBased;
+using MacroTools.ObjectiveSystem.Objectives.TimeBased;
+using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
 using static War3Api.Common;
 
@@ -13,16 +16,18 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
       "The town of Darkshire is under attack by Gnoll's, clear them out!",
       "ReplaceableTextures\\CommandButtons\\BTNGnollArcher.blp")
     {
-      AddObjective(new ObjectiveKillUnit(gnollToKill));
+      AddObjective(new ObjectiveUnitIsDead(gnollToKill));
       AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(FourCC("n00V"))));
-      AddObjective(new ObjectiveExpire(1425));
+      AddObjective(new ObjectiveExpire(1425, Title));
       AddObjective(new ObjectiveSelfExists());
       Required = true;
     }
 
-    protected override string CompletionPopup =>
+    /// <inheritdoc/>
+    protected override string RewardFlavour =>
       "Darkshire has been liberated, and its military is now free to assist Stormwind.";
 
+    /// <inheritdoc/>
     protected override string RewardDescription => "Control of all units in Darkshire";
 
     private static void GrantDarkshire(player whichPlayer)
@@ -43,11 +48,13 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
       DestroyGroup(tempGroup);
     }
 
+    /// <inheritdoc/>
     protected override void OnFail(Faction completingFaction)
     {
       GrantDarkshire(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
+    /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
     {
       GrantDarkshire(completingFaction.Player);

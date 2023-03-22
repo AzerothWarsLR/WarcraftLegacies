@@ -1,62 +1,65 @@
 using System.Collections.Generic;
+using MacroTools.CommandSystem;
 using WCSharp.Events;
 using static War3Api.Common;
 
 namespace MacroTools.Cheats
 {
-  public static class CheatMana
+  public sealed class CheatMana : Command
   {
-    private const string Command = "-mana ";
+    /// <inheritdoc />
+    public override string CommandText => "mana";
+    
+    /// <inheritdoc />
+    public override int MinimumParameterCount => 1;
+    
+    /// <inheritdoc />
+    public override CommandType Type => CommandType.Cheat;
+    
+    /// <inheritdoc />
+    public override string Description => "When activated, causes your units to fully restore mana whenever they cast a spell.";
+    
     private static readonly List<player> PlayersWithCheat = new();
 
-    private static bool IsCheatActive(player whichPlayer)
+    /// <inheritdoc />
+    public override string Execute(player cheater, params string[] parameters)
     {
-      return PlayersWithCheat.Contains(whichPlayer);
+      var toggle = parameters[0];
+
+      switch (toggle)
+      {
+        case "on":
+          SetCheatActive(cheater, true);
+          return "Infinite mana activated.";
+        case "off":
+          SetCheatActive(cheater, false);
+          return "Infinite mana deactivated.";
+        default:
+          return "You must specify \"on\" or \"off\" as the first parameter.";
+      }
     }
 
+    /// <inheritdoc />
+    public override void OnRegister() => 
+      PlayerUnitEvents.Register(UnitTypeEvent.SpellEndCast, Spell);
+    
     private static void SetCheatActive(player whichPlayer, bool isActive)
     {
-      if (isActive && !PlayersWithCheat.Contains(whichPlayer))
+      switch (isActive)
       {
-        PlayersWithCheat.Add(whichPlayer);
-        return;
+        case true when !PlayersWithCheat.Contains(whichPlayer):
+          PlayersWithCheat.Add(whichPlayer);
+          return;
+        case false when PlayersWithCheat.Contains(whichPlayer):
+          PlayersWithCheat.Remove(whichPlayer);
+          break;
       }
-
-      if (!isActive && PlayersWithCheat.Contains(whichPlayer)) PlayersWithCheat.Remove(whichPlayer);
     }
 
     private static void Spell()
     {
-      if (IsCheatActive(GetTriggerPlayer()))
+      if (PlayersWithCheat.Contains(GetTriggerPlayer()))
         SetUnitState(GetTriggerUnit(), UNIT_STATE_MANA, GetUnitState(GetTriggerUnit(), UNIT_STATE_MAX_MANA));
-    }
-
-    private static void Actions()
-    {
-      if (!TestMode.CheatCondition()) return;
-      string enteredString = GetEventPlayerChatString();
-      player p = GetTriggerPlayer();
-      string parameter = SubString(enteredString, StringLength(Command), StringLength(enteredString));
-
-      if (parameter == "on")
-      {
-        SetCheatActive(p, true);
-        DisplayTextToPlayer(p, 0, 0, "|cffD27575CHEAT:|r Infinite mana activated.");
-      }
-      else if (parameter == "off")
-      {
-        SetCheatActive(p, false);
-        DisplayTextToPlayer(p, 0, 0, "|cffD27575CHEAT:|r Infinite mana deactivated.");
-      }
-    }
-
-    public static void Setup()
-    {
-      trigger trig = CreateTrigger();
-      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers()) TriggerRegisterPlayerChatEvent(trig, player, Command, false);
-      TriggerAddAction(trig, Actions);
-
-      PlayerUnitEvents.Register(UnitTypeEvent.SpellEndCast, Spell);
     }
   }
 }

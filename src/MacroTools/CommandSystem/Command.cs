@@ -11,11 +11,21 @@ namespace MacroTools.CommandSystem
     /// The command that a player can execute to run the <see cref="CommandSystem.Command"/>.
     /// </summary>
     public abstract string CommandText { get; }
+
+    /// <summary>
+    /// The minimum number of parameters that must be supplied to this <see cref="CommandSystem.Command"/> command.
+    /// </summary>
+    public abstract int MinimumParameterCount { get; }
+
+    /// <summary>
+    /// Determines the purpose of the command and when it can be used.
+    /// </summary>
+    public abstract CommandType Type { get; }
     
     /// <summary>
-    /// How many parameters should be supplied to this <see cref="CommandSystem.Command"/> command.
+    /// Describes to the player what the commmand will do.
     /// </summary>
-    public abstract int ParameterCount { get; }
+    public abstract string Description { get; }
 
     /// <summary>
     /// What happens when the <see cref="CommandSystem.Command"/> gets executed by a player.
@@ -26,8 +36,10 @@ namespace MacroTools.CommandSystem
     public abstract string Execute(player cheater, params string[] parameters);
 
     /// <summary>
-    /// Determines the purpose of the command and when it can be used.
+    /// Fired when the <see cref="Command"/> is registered.
     /// </summary>
-    public abstract CommandType Type { get; }
+    public virtual void OnRegister()
+    {
+    }
   }
 }

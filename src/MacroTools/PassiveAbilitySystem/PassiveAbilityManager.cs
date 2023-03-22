@@ -69,16 +69,19 @@ namespace MacroTools.PassiveAbilitySystem
     {
       foreach (var unitTypeId in passiveAbility.UnitTypeIds)
       {
+        void UnitCreated() => passiveAbility.OnCreated(GetTriggerUnit());
+
         PlayerUnitEvents.Register(UnitTypeEvent.IsCreated, UnitCreated, unitTypeId);
         PlayerUnitEvents.Register(UnitTypeEvent.FinishesBeingTrained, passiveAbility.OnTrained, unitTypeId);
         PlayerUnitEvents.Register(UnitTypeEvent.FinishesTraining, passiveAbility.OnTrainedUnit, unitTypeId);
         PlayerUnitEvents.Register(UnitTypeEvent.FinishesBeingConstructed, passiveAbility.OnConstruction, unitTypeId);
-        PlayerUnitEvents.Register(UnitTypeEvent.FinishesConstruction, passiveAbility.OnUpgrade, unitTypeId);
+        PlayerUnitEvents.Register(UnitTypeEvent.FinishesUpgrade, passiveAbility.OnUpgrade, unitTypeId);
         PlayerUnitEvents.Register(UnitTypeEvent.Dies, passiveAbility.OnDeath, unitTypeId);
         PlayerUnitEvents.Register(UnitTypeEvent.SpellEffect, passiveAbility.OnSpellEffect, unitTypeId);
         PlayerUnitEvents.Register(UnitTypeEvent.SpellFinish, passiveAbility.OnSpellFinish, unitTypeId);
         PlayerUnitEvents.Register(HeroTypeEvent.FinishesRevive, UnitCreated, unitTypeId);
         PlayerUnitEvents.Register(UnitTypeEvent.ReceivesPointOrder, passiveAbility.OnOrderIssued, unitTypeId);
+        PlayerUnitEvents.Register(UnitTypeEvent.CancelsUpgrade, passiveAbility.OnCancelUpgrade, unitTypeId);
 
         if (passiveAbility is IAppliesEffectOnDamage appliesEffectOnDamage)
           PlayerUnitEvents.Register(UnitTypeEvent.Damaging, appliesEffectOnDamage.OnDealsDamage, unitTypeId);
@@ -86,13 +89,6 @@ namespace MacroTools.PassiveAbilitySystem
         if (passiveAbility is IEffectOnTakesDamage effectOnTakesDamage)
           PlayerUnitEvents.Register(UnitTypeEvent.IsDamaged, effectOnTakesDamage.OnTakesDamage, unitTypeId);
       }
-    }
-    
-    private static void UnitCreated()
-    {
-      var triggerUnit = GetTriggerUnit();
-      foreach (var passiveAbility in PassiveAbilitiesByUnitTypeId[GetUnitTypeId(triggerUnit)])
-        passiveAbility.OnCreated(triggerUnit);
     }
   }
 }

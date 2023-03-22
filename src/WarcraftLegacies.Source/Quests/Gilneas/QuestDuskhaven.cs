@@ -4,7 +4,9 @@ using System.Collections.Generic;
 using static War3Api.Common;
 using MacroTools.Extensions;
 using MacroTools.ControlPointSystem;
-using MacroTools.ObjectiveSystem.Objectives;
+using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
+using MacroTools.ObjectiveSystem.Objectives.FactionBased;
+using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 
 namespace WarcraftLegacies.Source.Quests.Gilneas
 {
@@ -22,14 +24,14 @@ namespace WarcraftLegacies.Source.Quests.Gilneas
     {
       AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N031_DUSKHAVEN_20GOLD_MIN)));
       AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N06V_BLACKWALD_10GOLD_MIN)));
-      AddObjective(new ObjectiveExpire(1200));
+      AddObjective(new ObjectiveExpire(1200, "Duskhaven"));
       AddObjective(new ObjectiveSelfExists());
       _rescueUnits = Regions.GilneasUnlock4.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
       Required = true;
     }
 
     /// <inheritdoc/>
-    protected override string CompletionPopup => "Duskhaven has been liberated.";
+    protected override string RewardFlavour => "Duskhaven has been liberated.";
 
     /// <inheritdoc/>
     protected override string RewardDescription => "Control of all buildings in Duskhaven.";

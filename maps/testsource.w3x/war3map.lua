@@ -10,6 +10,8 @@ local life
 
 u = BlzCreateUnitWithSkin(p, FourCC("n002"), 1728.0, -2432.0, 270.000, FourCC("n002"))
 u = BlzCreateUnitWithSkin(p, FourCC("n001"), 864.0, 2080.0, 270.000, FourCC("n001"))
+u = BlzCreateUnitWithSkin(p, FourCC("hbar"), -64.0, -192.0, 270.000, FourCC("hbar"))
+u = BlzCreateUnitWithSkin(p, FourCC("hbar"), -64.0, -576.0, 270.000, FourCC("hbar"))
 end
 
 function CreateNeutralHostileBuildings()

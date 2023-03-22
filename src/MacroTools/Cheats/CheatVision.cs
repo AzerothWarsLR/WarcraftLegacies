@@ -1,39 +1,44 @@
 using System.Collections.Generic;
+using MacroTools.CommandSystem;
 using static War3Api.Common;
 
 namespace MacroTools.Cheats
 {
-  public static class CheatVision
+  public sealed class CheatVision : Command
   {
-    private const string Command = "-vision ";
+    /// <inheritdoc />
+    public override string CommandText => "vision";
+    
+    /// <inheritdoc />
+    public override int MinimumParameterCount => 1;
+    
+    /// <inheritdoc />
+    public override CommandType Type => CommandType.Cheat;
+    
     private static readonly Dictionary<player, fogmodifier> Fogs = new();
 
-    private static void Actions()
+    /// <inheritdoc />
+    public override string Description => "When activated, grants vision of the entire map.";
+    
+    /// <inheritdoc />
+    public override string Execute(player cheater, params string[] parameters)
     {
-      if (!TestMode.CheatCondition()) return;
-      string enteredString = GetEventPlayerChatString();
-      player p = GetTriggerPlayer();
-      string parameter = SubString(enteredString, StringLength(Command), StringLength(enteredString));
+      var toggle = parameters[0];
 
-      if (parameter == "on")
+      switch (toggle)
       {
-        var newFog = CreateFogModifierRect(p, FOG_OF_WAR_VISIBLE, WCSharp.Shared.Data.Rectangle.WorldBounds.Rect, true, false);
-        FogModifierStart(newFog);
-        Fogs.Add(p, newFog);
-        DisplayTextToPlayer(p, 0, 0, "|cffD27575CHEAT:|r Whole map revealed.");
+        case "on":
+          var newFog = CreateFogModifierRect(cheater, FOG_OF_WAR_VISIBLE,
+            WCSharp.Shared.Data.Rectangle.WorldBounds.Rect, true, false);
+          FogModifierStart(newFog);
+          Fogs.Add(cheater, newFog);
+          return "Whole map revealed.";
+        case "off":
+          DestroyFogModifier(Fogs[cheater]);
+          return "Whole map unrevealed.";
+        default:
+          return "You must specify \"on\" or \"off\" as the first parameter.";
       }
-      else if (parameter == "off")
-      {
-        DestroyFogModifier(Fogs[p]);
-        DisplayTextToPlayer(p, 0, 0, "|cffD27575CHEAT:|r Whole map unrevealed.");
-      }
-    }
-
-    public static void Setup()
-    {
-      trigger trig = CreateTrigger();
-      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers()) TriggerRegisterPlayerChatEvent(trig, player, Command, false);
-      TriggerAddAction(trig, Actions);
     }
   }
 }

@@ -8,16 +8,19 @@ namespace MacroTools.Cheats
   /// <summary>
   /// Sets the <see cref="Team"/> any <see cref="Faction"/>.
   /// </summary>
-  public sealed class CommandTeam : Command
+  public sealed class CheatTeam : Command
   {
     /// <inheritdoc />
     public override string CommandText => "team";
 
     /// <inheritdoc />
-    public override int ParameterCount => 2;
+    public override int MinimumParameterCount => 2;
     
     /// <inheritdoc />
     public override CommandType Type => CommandType.Cheat;
+    
+    /// <inheritdoc />
+    public override string Description => "Sets the specified faction to the specified team.";
     
     /// <inheritdoc />
     public override string Execute(player cheater, params string[] parameters)

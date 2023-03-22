@@ -7,15 +7,19 @@ namespace MacroTools.Wrappers
   {
     public delegate bool PlayCondition(player whichPlayer);
 
-    private readonly sound _sound;
+    /// <summary>
+    /// The internal Warcraft 3 sound that this wrapper wraps.
+    /// </summary>
+    public sound Sound { get; }
+    
     private bool _disposed;
 
     public SoundWrapper(string fileName, bool looping = false, bool is3D = false, bool stopWhenOutOfRange = true,
       int fadeInRate = 0, int fadeOutRate = 0, SoundEax soundEax = SoundEax.Default)
     {
-      _sound = CreateSound(fileName, looping, is3D, stopWhenOutOfRange, fadeInRate, fadeOutRate,
+      Sound = CreateSound(fileName, looping, is3D, stopWhenOutOfRange, fadeInRate, fadeOutRate,
         soundEax.GetStringEquivalent());
-      SetSoundVolume(_sound, 100);
+      SetSoundVolume(Sound, 100);
     }
 
     /// <summary>
@@ -30,11 +34,11 @@ namespace MacroTools.Wrappers
         throw new ObjectDisposedException(nameof(SoundWrapper));
       }
 
-      StartSound(_sound);
+      StartSound(Sound);
 
       if (disposeAfter)
       {
-        KillSoundWhenDone(_sound);
+        KillSoundWhenDone(Sound);
         _disposed = true;
       }
     }
@@ -54,12 +58,12 @@ namespace MacroTools.Wrappers
 
       if (playCondition(GetLocalPlayer()))
       {
-        StartSound(_sound);
+        StartSound(Sound);
       }
 
       if (disposeAfter)
       {
-        KillSoundWhenDone(_sound);
+        KillSoundWhenDone(Sound);
         _disposed = true;
       }
     }

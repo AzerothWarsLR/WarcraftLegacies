@@ -2,9 +2,11 @@
 using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
-using MacroTools.ObjectiveSystem.Objectives;
+using MacroTools.LegendSystem;
+using MacroTools.ObjectiveSystem.Objectives.ArtifactBased;
+using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
+using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.QuestSystem;
-using WarcraftLegacies.Source.Setup.Legends;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Lordaeron
@@ -16,27 +18,32 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
   {
     private readonly Artifact _crownOfLordaeron;
     private readonly Artifact _crownOfStormwind;
+    private readonly LegendaryHero _arthas;
     private const int RewardResearchId = Constants.UPGRADE_R01N_ARATHORIAN_LEGACY_LORDAERON_STORMWIND_QUEST;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestKingdomOfManLordaeron"/> class.
     /// </summary>
-    public QuestKingdomOfManLordaeron(Artifact crownOfLordaeron, Artifact crownOfStormwind) : base("Kingdom of Man",
-      "Before the First War, all of humanity was united under the banner of the Arathorian Empire. Reclaim its greatness by uniting mankind once again.",
-      "ReplaceableTextures\\CommandButtons\\BTNFireKingCrown.blp")
+    public QuestKingdomOfManLordaeron(Artifact crownOfLordaeron, Artifact crownOfStormwind, LegendaryHero arthas) :
+      base("Kingdom of Man",
+        "Before the First War, all of humanity was united under the banner of the Arathorian Empire. Reclaim its greatness by uniting mankind once again.",
+        "ReplaceableTextures\\CommandButtons\\BTNFireKingCrown.blp")
     {
       _crownOfLordaeron = crownOfLordaeron;
       _crownOfStormwind = crownOfStormwind;
-      AddObjective(new ObjectiveControlLegend(LegendLordaeron.Arthas, true));
+      _arthas = arthas;
+      AddObjective(new ObjectiveControlLegend(arthas, true));
       AddObjective(new ObjectiveAcquireArtifact(crownOfLordaeron));
       AddObjective(new ObjectiveAcquireArtifact(crownOfStormwind));
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N010_STORMWIND_CITY_30GOLD_MIN)));
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N01G_LORDAERON_CITY_30GOLD_MIN)));
+      AddObjective(new ObjectiveControlPoint(
+        ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N010_STORMWIND_CITY_30GOLD_MIN)));
+      AddObjective(new ObjectiveControlPoint(
+        ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N01G_LORDAERON_CITY_30GOLD_MIN)));
       Global = true;
     }
 
     /// <inheritdoc/>
-    protected override string CompletionPopup =>
+    protected override string RewardFlavour =>
       "The people of the Eastern Kingdoms have been united under the banner of Lordaeron. Long live High King Arthas Menethil!";
 
     /// <inheritdoc/>
@@ -48,15 +55,12 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
     {
       SetPlayerTechResearched(completingFaction.Player, RewardResearchId, 1);
       completingFaction.Player?.DisplayResearchAcquired(RewardResearchId, 1);
-      
-      if (LegendLordaeron.Arthas != null)
-      {
-        LegendLordaeron.Arthas.UnitType = Constants.UNIT_HARF_HIGH_KING_LORDAERON_HIGH_KING;
-        LegendLordaeron.Arthas.ClearUnitDependencies();
-      }
+
+      _arthas.UnitType = Constants.UNIT_HARF_HIGH_KING_LORDAERON_HIGH_KING;
+      _arthas.ClearUnitDependencies();
 
       var crownHolder = _crownOfStormwind.OwningUnit;
-      
+
       ArtifactManager.Destroy(_crownOfLordaeron);
       ArtifactManager.Destroy(_crownOfStormwind);
 

@@ -1,18 +1,27 @@
 ﻿using System;
+using MacroTools;
 using WarcraftLegacies.Source.Dialogue;
 
 namespace WarcraftLegacies.Source.Setup
 {
   public static class DialogueSetup
   {
-    public static void Setup()
+    public static void Setup(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup legendSetup)
     {
       try
       {
-        ScourgeDialogueSetup.Setup();
-        WarsongDialogueSetup.Setup();
-        DruidsDialogueSetup.Setup();
-        LordaeronDialogueSetup.Setup();
+        ScourgeDialogueSetup.Setup(legendSetup);
+        WarsongDialogueSetup.Setup(legendSetup);
+        DruidsDialogueSetup.Setup(preplacedUnitSystem, legendSetup);
+        LordaeronDialogueSetup.Setup(preplacedUnitSystem, legendSetup);
+        IllidariDialogueSetup.Setup(legendSetup);
+        SentinelsDialogueSetup.Setup(legendSetup);
+        FrostwolfDialogueSetup.Setup(legendSetup);
+        LegionDialogueSeup.Setup(legendSetup);
+        DalaranDialogueSetup.Setup(legendSetup);
+        QuelthalasDialogueSetup.Setup(legendSetup);
+        GoblinDialogueSetup.Setup(legendSetup);
+        KultirasDialogueSetup.Setup(legendSetup);
       }
       catch (Exception ex)
       {

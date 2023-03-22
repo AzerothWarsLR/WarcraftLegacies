@@ -1,46 +1,49 @@
 ﻿using MacroTools;
 using MacroTools.Extensions;
 using MacroTools.LegendSystem;
-using static War3Api.Common;
+#pragma warning disable CS1591
 
 namespace WarcraftLegacies.Source.Setup.Legends
 {
-  public static class LegendKultiras
+  public sealed class LegendKultiras
   {
-    public static LegendaryHero LegendAdmiral { get; private set; }
-    public static LegendaryHero LegendLucille { get; private set; }
-    public static LegendaryHero LegendKatherine { get; private set; }
-    public static Capital LegendBoralus { get; private set; }
-    public static LegendaryHero Flagship { get; private set; }
+    public LegendaryHero LegendAdmiral { get; }
+    public LegendaryHero LegendLucille { get; }
+    public LegendaryHero LegendMeredith { get; }
+    public LegendaryHero LegendKatherine { get; }
+    public Capital LegendBoralus { get; }
+    public LegendaryHero Flagship { get; }
 
-    public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
+    public LegendKultiras(PreplacedUnitSystem preplacedUnitSystem)
     {
       LegendAdmiral = new LegendaryHero("Daelin Proudmoore")
       {
-        UnitType = FourCC("Hapm")
+        UnitType = Constants.UNIT_HAPM_LORD_ADMIRAL_OF_KUL_TIRAS_KUL_TIRAS
       };
-      LegendaryHeroManager.Register(LegendAdmiral);
 
       LegendLucille = new LegendaryHero("Lucille Waycrest")
       {
-        UnitType = FourCC("E016"),
+        UnitType = Constants.UNIT_E016_RULER_OF_HOUSE_WAYCREST_KULTIRAS,
         StartingXp = 2800
       };
-      LegendaryHeroManager.Register(LegendLucille);
+
+      LegendMeredith = new LegendaryHero("Meredith Waycrest")
+      {
+        UnitType = Constants.UNIT_U026_MATRIARCH_OF_HOUSE_WAYCREST_KULTIRAS,
+        StartingXp = 4000
+      };
 
       LegendKatherine = new LegendaryHero("Katherine Proudmoore")
       {
-        UnitType = FourCC("H05L"),
+        UnitType = Constants.UNIT_H05L_LADY_OF_HOUSE_PROUDMOORE_KUL_TIRAS,
         StartingXp = 1200
       };
-      LegendaryHeroManager.Register(LegendKatherine);
 
       LegendBoralus = new Capital
       {
         Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_H046_BORALUS_KEEP_KUL_TIRAS),
         DeathMessage = "Boralus Keep has fallen" //Todo: pointless flavour
       };
-      CapitalManager.Register(LegendBoralus);
 
       Flagship = new LegendaryHero("Flagship")
       {
@@ -48,6 +51,16 @@ namespace WarcraftLegacies.Source.Setup.Legends
       };
       Flagship.Unit.SetInvulnerable(true);
       Flagship.Unit.Pause(true);
+    }
+    
+    public void RegisterLegends()
+    {
+      LegendaryHeroManager.Register(LegendAdmiral);
+      LegendaryHeroManager.Register(LegendLucille);
+      LegendaryHeroManager.Register(LegendMeredith);
+      LegendaryHeroManager.Register(LegendKatherine);
+      LegendaryHeroManager.Register(Flagship);
+      CapitalManager.Register(LegendBoralus);
     }
   }
 }

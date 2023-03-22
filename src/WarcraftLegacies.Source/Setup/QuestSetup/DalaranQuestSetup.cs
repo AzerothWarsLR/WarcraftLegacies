@@ -1,5 +1,5 @@
 ﻿using MacroTools;
-using MacroTools.ObjectiveSystem.Objectives;
+using MacroTools.ObjectiveSystem.Objectives.QuestBased;
 using MacroTools.QuestSystem;
 using WarcraftLegacies.Source.Quests.Dalaran;
 using WarcraftLegacies.Source.Setup.FactionSetup;
@@ -10,18 +10,17 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
 {
   public static class DalaranQuestSetup
   {
-    public static void Setup(PreplacedUnitSystem preplacedUnitSystem, ArtifactSetup artifactSetup)
+    public static void Setup(PreplacedUnitSystem preplacedUnitSystem, ArtifactSetup artifactSetup, AllLegendSetup allLegendSetup)
     {
       var dalaran = DalaranSetup.Dalaran;
 
-      QuestNewGuardian newGuardian = new(artifactSetup.BookOfMedivh);
-      QuestTheNexus theNexus = new();
-      QuestCrystalGolem crystalGolem = new();
-      QuestFallenGuardian fallenGuardian = new();
+      QuestNewGuardian newGuardian = new(artifactSetup.BookOfMedivh, allLegendSetup.Dalaran.Jaina);
+      QuestTheNexus theNexus = new(allLegendSetup.Dalaran.Jaina, allLegendSetup.Scourge.TheFrozenThrone, allLegendSetup.Neutral.TheNexus);
+      QuestCrystalGolem crystalGolem = new(allLegendSetup.Neutral.DraktharonKeep);
+      QuestFallenGuardian fallenGuardian = new(allLegendSetup.Neutral.Karazhan);
 
       newGuardian.AddObjective(new ObjectiveDontCompleteQuest(theNexus));
       crystalGolem.AddObjective(new ObjectiveDontCompleteQuest(theNexus));
-      fallenGuardian.AddObjective(new ObjectiveDontCompleteQuest(theNexus));
       theNexus.AddObjective(new ObjectiveDontCompleteQuest(newGuardian));
 
       var questSouthshore = dalaran.AddQuest(new QuestSouthshore(Regions.SouthshoreUnlock,
@@ -37,9 +36,9 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
         questSouthshore,
         questShadowfang
       }));
-      dalaran.AddQuest(new QuestJainaSoulGem());
-      dalaran.AddQuest(new QuestBlueDragons());
-      dalaran.AddQuest(new QuestKarazhan());
+      dalaran.AddQuest(new QuestJainaSoulGem(allLegendSetup.Dalaran.Jaina, allLegendSetup.Neutral.Caerdarrow));
+      dalaran.AddQuest(new QuestBlueDragons(allLegendSetup.Neutral.TheNexus));
+      dalaran.AddQuest(new QuestKarazhan(allLegendSetup.Neutral.Karazhan));
 
       dalaran.AddQuest(crystalGolem);
       dalaran.AddQuest(fallenGuardian);

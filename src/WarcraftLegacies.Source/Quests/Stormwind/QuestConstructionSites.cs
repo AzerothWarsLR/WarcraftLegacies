@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
-using MacroTools.ObjectiveSystem.Objectives;
+using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.QuestSystem;
 using static War3Api.Common;
 
@@ -28,7 +28,7 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
     }
 
     /// <inheritdoc />
-    protected override string CompletionPopup => "Stormwind's Construction Sites are now ready to be upgraded.";
+    protected override string RewardFlavour => "Stormwind's Construction Sites are now ready to be upgraded.";
 
     /// <inheritdoc />
     protected override string RewardDescription => "Your Construction Sites can be upgraded";
@@ -36,7 +36,9 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
     /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)
     {
-      foreach (var constructionSite in _constructionSites) 
+      if (completingFaction.Player != GetLocalPlayer()) 
+        return;
+      foreach (var constructionSite in _constructionSites)
         constructionSite.Ping(5);
     }
   }

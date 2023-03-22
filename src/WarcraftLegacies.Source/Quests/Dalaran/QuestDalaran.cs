@@ -2,7 +2,11 @@
 using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
-using MacroTools.ObjectiveSystem.Objectives;
+using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
+using MacroTools.ObjectiveSystem.Objectives.FactionBased;
+using MacroTools.ObjectiveSystem.Objectives.QuestBased;
+using MacroTools.ObjectiveSystem.Objectives.TimeBased;
+using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -29,8 +33,8 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
         AddObjective(new ObjectiveCompleteQuest(prerequisite));
       AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N018_DURNHOLDE_15GOLD_MIN)));
       AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N01I_CAER_DARROW_15GOLD_MIN)));
-      AddObjective(new ObjectiveUpgrade(Constants.UNIT_H068_OBSERVATORY_DALARAN, Constants.UNIT_H065_REFUGE_DALARAN));
-      AddObjective(new ObjectiveExpire(1445));
+      AddObjective(new ObjectiveUpgrade(Constants.UNIT_H068_OBSERVATORY_DALARAN_T3, Constants.UNIT_H065_REFUGE_DALARAN_T1));
+      AddObjective(new ObjectiveExpire(1445, Title));
       AddObjective(new ObjectiveSelfExists());
       ResearchId = Constants.UPGRADE_R038_QUEST_COMPLETED_OUTSKIRTS;
 
@@ -41,7 +45,7 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
     }
 
     /// <inheritdoc/>
-    protected override string CompletionPopup =>
+    protected override string RewardFlavour =>
       "Dalaran outskirs are now secure, the mages will join Dalaran.";
 
     /// <inheritdoc/>
@@ -55,7 +59,7 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
     {
-      completingFaction.Player?.RescueGroup(_rescueUnits);
+      completingFaction.Player.RescueGroup(_rescueUnits);
       if (GetLocalPlayer() == completingFaction.Player) 
         PlayThematicMusic("war3mapImported\\DalaranTheme.mp3");
     }

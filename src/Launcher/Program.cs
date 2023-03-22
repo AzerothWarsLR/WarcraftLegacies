@@ -60,8 +60,8 @@ namespace Launcher
     private static IConfiguration GetAppConfiguration()
     {
       var userAppsettingsFileName = $"appsettings.{Environment.UserName}.json";
-      var projectDir = Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory).Parent.Parent;
-      var projectDirPath = Path.GetDirectoryName(projectDir.FullName);
+      var projectDir = Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory)?.Parent?.Parent;
+      var projectDirPath = Path.GetDirectoryName(projectDir?.FullName);
       var userAppsettingsFilePath = $"{projectDirPath}\\{userAppsettingsFileName}";
 
       if (!File.Exists(userAppsettingsFilePath))
@@ -96,6 +96,7 @@ namespace Launcher
     private static void Build(string baseMapPath, string projectFolderPath, bool launch, IConfiguration config)
     {
       var launchSettings = config.GetRequiredSection(nameof(LaunchSettings)).Get<LaunchSettings>();
+      var mapSettings = config.GetRequiredSection(nameof(MapSettings)).Get<MapSettings>();
 
       // Ensure these folders exist
       Directory.CreateDirectory(launchSettings.AssetsFolderPath);
@@ -103,11 +104,11 @@ namespace Launcher
 
       // Load existing map data
       var map = Map.Open(baseMapPath);
-
-      FixDoodadData(map);
+      
       ConfigureControlPointData(map);
       if (launch)
         SetTestPlayerSlot(map, launchSettings.TestingPlayerSlot);
+      SetMapTitles(map, mapSettings.Version);
       var builder = new MapBuilder(map);
       builder.AddFiles(baseMapPath, "*", SearchOption.AllDirectories);
       builder.AddFiles(launchSettings.AssetsFolderPath, "*", SearchOption.AllDirectories);
@@ -115,7 +116,7 @@ namespace Launcher
       // Set debug options if necessary, configure compiler
       const string csc = Debug ? "-debug -define:DEBUG" : null;
       var csproj = Directory.EnumerateFiles(projectFolderPath, "*.csproj", SearchOption.TopDirectoryOnly).Single();
-      var compiler = new Compiler(csproj, launchSettings.OutputFolderPath, string.Empty, null,
+      var compiler = new Compiler(csproj, launchSettings.OutputFolderPath, string.Empty, null!,
         "War3Api.*;WCSharp.*;MacroTools.*", "", csc, false, null,
         string.Empty)
       {
@@ -132,7 +133,11 @@ namespace Launcher
         "Warcraft III/JassHelper/Blizzard.j");
       var commonJ = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments),
         "Warcraft III/JassHelper/common.j");
-      var compileResult = map.CompileScript(compiler, coreSystemFiles, blizzardJ, commonJ);
+      var mapScriptBuilder = new MapScriptBuilder();
+      mapScriptBuilder.SetDefaultOptionsForCSharpLua();
+      mapScriptBuilder.ForceGenerateGlobalDestructableVariable = false;
+
+      var compileResult = map.CompileScript(compiler, mapScriptBuilder, coreSystemFiles, blizzardJ, commonJ);
 
       // If compilation failed, output an error
       if (!compileResult.Success)
@@ -148,12 +153,24 @@ namespace Launcher
         AttributesCreateMode = MpqFileCreateMode.Overwrite,
         ListFileCreateMode = MpqFileCreateMode.Overwrite
       };
+      
+      var mapFilePath = launch
+        ? $"{Path.Combine(launchSettings.OutputFolderPath, mapSettings.Name)}Test.w3x"
+        : $"{Path.Combine(launchSettings.OutputFolderPath, mapSettings.Name)}{mapSettings.Version}.w3x";
 
-      builder.Build(Path.Combine(launchSettings.OutputFolderPath, launchSettings.OutputMapName), archiveCreateOptions);
+      builder.Build(mapFilePath, archiveCreateOptions);
       if (launch)
-        LaunchGame(launchSettings);
+        LaunchGame(launchSettings.Warcraft3ExecutablePath, mapFilePath);
     }
 
+    private static void SetMapTitles(Map map, string version)
+    {
+      if (map.Info == null)
+        return;
+      map.Info.MapName = $"Warcraft Legacies {version}";
+      map.Info.LoadingScreenTitle = $"Warcraft Legacies {version}";
+    }
+    
     /// <summary>
     ///   Makes all players prior to the given player slot computers,
     ///   so that the given player slot is what the tester will play as when the map is launched.
@@ -164,18 +181,6 @@ namespace Launcher
       foreach (var player in map.Info.Players)
         if (player.Id < playerSlot && player.Id != playerSlot && player.Controller != PlayerController.None)
           player.Controller = PlayerController.Computer;
-    }
-
-    private static void FixDoodadData(Map map)
-    {
-      if (map.Doodads == null) 
-        return;
-      var i = 0;
-      foreach (var doodad in map.Doodads.Doodads)
-      {
-        doodad.CreationNumber = i;
-        i++;
-      }
     }
 
     private static bool IsControlPoint(War3Api.Object.Unit unit)
@@ -203,26 +208,26 @@ namespace Launcher
         unit.StatsRace = UnitRace.Creeps;
         unit.StatsCanBeBuiltOn = false;
         unit.PathingPathingMap = @"PathTextures\4x4SimpleSolid.tga";
+        unit.StatsHitPointsRegenerationRate = 0;
       }
       map.UnitObjectData = objectDatabase.GetAllData().UnitData;
     }
 
-    private static void LaunchGame(LaunchSettings launchSettings)
+    private static void LaunchGame(string warcraft3ExecutablePath, string mapFilePath)
     {
-      var wc3Exe = launchSettings.Warcraft3ExecutablePath;
-      if (File.Exists(wc3Exe))
+      if (File.Exists(warcraft3ExecutablePath))
       {
         var commandLineArgs = new StringBuilder();
-        var isReforged = Version.Parse(FileVersionInfo.GetVersionInfo(wc3Exe).FileVersion) >= new Version(1, 32);
+        var fileVersion = FileVersionInfo.GetVersionInfo(warcraft3ExecutablePath).FileVersion;
+        var isReforged = fileVersion != null && Version.Parse(fileVersion) >= new Version(1, 32);
         commandLineArgs.Append(isReforged ? " -launch" : $" -graphicsapi {GraphicsApi}");
 
         commandLineArgs.Append(" -nowfpause");
-
-        var mapPath = Path.Combine(launchSettings.OutputFolderPath, launchSettings.OutputMapName);
-        var absoluteMapPath = new FileInfo(mapPath).FullName;
+        
+        var absoluteMapPath = new FileInfo(mapFilePath).FullName;
         commandLineArgs.Append($" -loadfile \"{absoluteMapPath}\"");
 
-        Process.Start(wc3Exe, commandLineArgs.ToString());
+        Process.Start(warcraft3ExecutablePath, commandLineArgs.ToString());
       }
       else
       {

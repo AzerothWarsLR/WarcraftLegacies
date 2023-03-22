@@ -30,12 +30,9 @@ namespace MacroTools.Powers
     public EventHandler<OilPower>? AmountChanged;
 
     /// <summary>
-    /// Initializes a new instance of the <see cref="OilPower"/> class.
+    /// <see cref="OilPool"/>s cannot spawn within this distance of eachother.
     /// </summary>
-    public OilPower()
-    {
-      RefreshDescription();
-    }
+    public float OilPoolBorderDistance { get; init; } = 600;
 
     /// <summary>
     /// The amount of oil the <see cref="OilPower"/> has.
@@ -65,9 +62,14 @@ namespace MacroTools.Powers
     }
 
     /// <summary>
-    /// The number of oil pools that will generate on the map.
+    /// The maximum number of oil pools that will generate on the map.
     /// </summary>
-    public int OilPoolCount { get; init; }
+    public int MaximumOilPoolCount { get; init; }
+
+    /// <summary>
+    /// The number of oil pools that are spawned at the start of the game.
+    /// </summary>
+    public int StartingOilPoolCount { get; init; }
 
     /// <summary>
     /// The maximum amount of oil that a given <see cref="OilPool"/> can start with.
@@ -80,6 +82,14 @@ namespace MacroTools.Powers
     public int OilPoolMinimumValue { get; init; }
 
     /// <summary>
+    /// Initializes a new instance of the <see cref="OilPower"/> class.
+    /// </summary>
+    public OilPower()
+    {
+      RefreshDescription();
+    }
+    
+    /// <summary>
     /// Returns all <see cref="OilPool"/>s managed by this <see cref="OilPower"/>.
     /// </summary>
     public IEnumerable<OilPool> GetAllOilPools() => _oilPools.AsReadOnly();
@@ -91,8 +101,9 @@ namespace MacroTools.Powers
       _oilIncomePeriodicAction = new OilIncomePeriodicAction(this);
       OilIncomePeriodicTrigger.Add(_oilIncomePeriodicAction);
 
-      _oilTimer = CreateTimer().Start(300, true, GenerateOilPools);
-      GenerateOilPools();
+      _oilTimer = CreateTimer().Start(150, true, GenerateOilPool);
+      for (var i = 0; i < StartingOilPoolCount; i++)
+        GenerateOilPool();
     }
 
     /// <inheritdoc/>
@@ -104,19 +115,24 @@ namespace MacroTools.Powers
       _owners.Remove(whichPlayer);
       _oilTimer?.Destroy();
     }
-
-    private void GenerateOilPools()
+    
+    /// <summary>
+    /// Returns all <see cref="OilPool"/>s in the specified radius around the specified <see cref="Point"/>.
+    /// </summary>
+    public IEnumerable<OilPool> GetOilPoolsInRadius(Point fromPoint, float radius)
     {
-      if (_oilPools.Count > 0)
-      {
-        for (var i = _oilPools.Count; i-- > 0;)
+      return GetAllOilPools()
+        .Where(x =>
         {
-          if (_oilPools[i].OilAmount <= 0)
-            _oilPools.Remove(_oilPools[i]);
-        }
-      }
+          var oilPoolPosition = x.Position;
+          return WCSharp.Shared.Util.DistanceBetweenPoints(fromPoint.X, fromPoint.Y, oilPoolPosition.X,
+            oilPoolPosition.Y) < radius;
+        });
+    }
 
-      if (_oilPools.Count >= OilPoolCount)
+    private void GenerateOilPool()
+    {
+      if (_oilPools.Count >= MaximumOilPoolCount)
         return;
       var randomPoint = GetRandomPointAtSea();
       var oilPool = new OilPool(_owners.First(), randomPoint, "Tar Pool.mdx", this)
@@ -125,8 +141,15 @@ namespace MacroTools.Powers
         Duration = float.MaxValue,
         OilAmount = GetRandomInt(OilPoolMinimumValue, OilPoolMaximumValue)
       };
+      oilPool.Disposed += OnOilPoolDisposed;
       HazardSystem.Add(oilPool);
       _oilPools.Add(oilPool);
+    }
+
+    private void OnOilPoolDisposed(object? sender, OilPool oilPool)
+    {
+      _oilPools.Remove(oilPool);
+      oilPool.Disposed -= OnOilPoolDisposed;
     }
 
     private void RefreshDescription()
@@ -135,16 +158,19 @@ namespace MacroTools.Powers
         $"You can harvest oil and use it to enhance your mechanical units.|n|cffffcc00Oil:|r {Amount}|n|cffffcc00Income:|r {Income}";
     }
 
-    private static Point GetRandomPointAtSea()
+    private Point GetRandomPointAtSea()
     {
       Point randomPoint;
       do
       {
         randomPoint = Rectangle.WorldBounds.GetRandomPoint();
-      } while (IsTerrainPathable(randomPoint.X, randomPoint.Y, PATHING_TYPE_FLOATABILITY) ||
-               !IsTerrainPathable(randomPoint.X, randomPoint.Y, PATHING_TYPE_WALKABILITY));
+      } while (!IsPointValidForOilPool(randomPoint));
 
       return randomPoint;
     }
+
+    private bool IsPointValidForOilPool(Point whichPoint) =>
+      whichPoint.IsPathable(PATHING_TYPE_FLOATABILITY) && !whichPoint.IsPathable(PATHING_TYPE_WALKABILITY) &&
+      whichPoint.TerrainType() == FourCC("Gsqd") && !GetOilPoolsInRadius(whichPoint, OilPoolBorderDistance).Any();
   }
 }

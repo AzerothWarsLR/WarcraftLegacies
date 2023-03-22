@@ -37,10 +37,9 @@ namespace MacroTools.Extensions
       filter ??= _ => true;
       return rescuePreparationMode switch
       {
-        RescuePreparationMode.None => PrepareUnitsForRescue(rectangle, false, false, false, filter),
-        RescuePreparationMode.Invulnerable => PrepareUnitsForRescue(rectangle, true, false, false, filter),
-        RescuePreparationMode.HideNonStructures => PrepareUnitsForRescue(rectangle, true, true, false, filter),
-        RescuePreparationMode.HideAll => PrepareUnitsForRescue(rectangle, true, true, true, filter),
+        RescuePreparationMode.Invulnerable => PrepareUnitsForRescue(rectangle, false, false, filter),
+        RescuePreparationMode.HideNonStructures => PrepareUnitsForRescue(rectangle, true, false, filter),
+        RescuePreparationMode.HideAll => PrepareUnitsForRescue(rectangle, true, true, filter),
         _ => throw new ArgumentException($"{nameof(rescuePreparationMode)} is not implemented for this function.",
           nameof(rescuePreparationMode))
       };
@@ -50,12 +49,11 @@ namespace MacroTools.Extensions
     /// Prepares all Neutral Passive inside the specified <paramref name="rectangle"/>.
     /// </summary>
     /// <param name="rectangle">The rectangle in which to prepare units.</param>
-    /// <param name="makeInvulnerable">If true, prepared units are made invulnerable.</param>
     /// <param name="hideUnits">If true, prepared units are hidden.</param>
     /// <param name="hideStructures">If true, prepared structures are hidden.</param>
     /// <param name="filter"></param>
     /// <returns>Returns all neutral passive units not matching the <paramref name="filter"/> in the specified rectangle.</returns>
-    private static List<unit> PrepareUnitsForRescue(this Rectangle rectangle, bool makeInvulnerable, bool hideUnits, bool hideStructures, Func<unit, bool> filter)
+    private static List<unit> PrepareUnitsForRescue(this Rectangle rectangle, bool hideUnits, bool hideStructures, Func<unit, bool> filter)
     {
       var group = CreateGroup()
         .EnumUnitsInRect(rectangle)
@@ -64,12 +62,12 @@ namespace MacroTools.Extensions
         .ToList();
       foreach (var unit in group)
       {
-        if (makeInvulnerable)
-          unit.SetInvulnerable(true);
-        if (IsUnitType(unit, UNIT_TYPE_STRUCTURE) && hideStructures && !IsUnitType(unit, UNIT_TYPE_ANCIENT))
+        if (IsUnitType(unit, UNIT_TYPE_STRUCTURE) && hideStructures && !IsUnitType(unit, UNIT_TYPE_ANCIENT) ||
+            !IsUnitType(unit, UNIT_TYPE_STRUCTURE) && hideUnits)
           unit.Show(false);
-        if (!IsUnitType(unit, UNIT_TYPE_STRUCTURE) && hideUnits)
-          unit.Show(false);
+        unit
+          .SetInvulnerable(true)
+          .Pause(true);
       }
       return group;
     }

@@ -8,7 +8,7 @@ using static War3Api.Common;
 
 namespace MacroTools.Spells
 {
-  public class MassSimulacrum : Spell
+  public sealed class MassSimulacrum : Spell
   {
     public float Radius { get; init; } = 150;
     public int CountBase { get; init; }

@@ -1,94 +1,59 @@
-using MacroTools;
+﻿using MacroTools;
 using MacroTools.LegendSystem;
 using static War3Api.Common;
+#pragma warning disable CS1591
 
 namespace WarcraftLegacies.Source.Setup.Legends
 {
   /// <summary>
   /// Responsible for setting up and storing all Sentinel <see cref="Legend"/>s.
   /// </summary>
-  public static class LegendSentinels
+  public sealed class LegendSentinels
   {
-    /// <summary>
-    /// Leader of the Wardens.
-    /// </summary>
-    public static LegendaryHero? Maiev { get; private set; }
-
-    /// <summary>
-    /// High Priestess of Elune.
-    /// </summary>
-    public static LegendaryHero? Tyrande { get; private set; }
+    public LegendaryHero Maiev { get; }
+    public LegendaryHero Tyrande { get; }
+    public LegendaryHero Shandris { get; }
+    public LegendaryHero Naisha { get; }
+    public Capital Auberdine { get; }
+    public Capital Feathermoon { get; }
+    public Capital VaultOfTheWardens { get; }
+    public Capital BlackrookHold { get; }
     
-    /// <summary>
-    /// Tyrande's second in command.
-    /// </summary>
-    public static LegendaryHero? Shandris { get; private set; }
-    
-    /// <summary>
-    /// Night Elven Commander.
-    /// </summary>
-    public static LegendaryHero? Jarod { get; private set; }
-    
-    /// <summary>
-    /// Night Elven town in Darkshore.
-    /// </summary>
-    public static Capital? Auberdine { get; private set; }
-    
-    /// <summary>
-    /// Night Elven stronghold village led by Shandris.
-    /// </summary>
-    public static Capital? Feathermoon { get; private set; }
-
-    /// <summary>
-    /// Where the Wardens store their worst enemies.
-    /// </summary>
-    public static Capital? VaultOfTheWardens { get; private set; }
-    
-    public static Capital? BlackrookHold { get; private set; }
-    
-    /// <summary>
-    /// Sets up all Sentinel <see cref="Legend"/>s.
-    /// </summary>
-    public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
+    public LegendSentinels(PreplacedUnitSystem preplacedUnitSystem)
     {
       Maiev = new LegendaryHero("Maiev Shadowsong")
       {
-        UnitType = FourCC("Ewrd")
+        UnitType = FourCC("Ewrd"),
+        StartingXp = 1800
       };
-      LegendaryHeroManager.Register(Maiev);
 
       Auberdine = new Capital
       {
         Unit = preplacedUnitSystem.GetUnit(FourCC("e00J"))
       };
-      CapitalManager.Register(Auberdine);
 
       Feathermoon = new Capital
       {
         Unit = preplacedUnitSystem.GetUnit(FourCC("e00M"))
       };
-      CapitalManager.Register(Feathermoon);
 
       Tyrande = new LegendaryHero("Tyrande Whisperwind")
       {
         UnitType = FourCC("Etyr"),
-        PlayerColor = PLAYER_COLOR_CYAN
+        PlayerColor = PLAYER_COLOR_CYAN,
       };
-      LegendaryHeroManager.Register(Tyrande);
+
+      Naisha = new LegendaryHero("Naisha")
+      {
+        UnitType = FourCC("E025"),
+        PlayerColor = PLAYER_COLOR_PINK,
+        StartingXp = 1800
+      };
 
       Shandris = new LegendaryHero("Shandris Feathermoon")
       {
         UnitType = FourCC("E002"),
-        StartingXp = 1000
       };
-      LegendaryHeroManager.Register(Shandris);
-
-      Jarod = new LegendaryHero("Jarod Shadowsong")
-      {
-        UnitType = FourCC("O02E"),
-        StartingXp = 4000
-      };
-      LegendaryHeroManager.Register(Jarod);
 
       VaultOfTheWardens = new Capital
       {
@@ -99,6 +64,17 @@ namespace WarcraftLegacies.Source.Setup.Legends
       {
         Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_H03C_BLACK_ROOK_HOLD_NEUTRAL_HOSTILE)
       };
+    }
+    
+    public void RegisterLegends()
+    {
+      LegendaryHeroManager.Register(Maiev);
+      LegendaryHeroManager.Register(Tyrande);
+      LegendaryHeroManager.Register(Shandris);
+      LegendaryHeroManager.Register(Naisha);
+      CapitalManager.Register(Auberdine);
+      CapitalManager.Register(Feathermoon);
+      CapitalManager.Register(BlackrookHold);
     }
   }
 }

@@ -1,6 +1,5 @@
 ﻿using MacroTools;
 using MacroTools.FactionSystem;
-using WCSharp.Shared.Data;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup.FactionSetup
@@ -11,7 +10,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
 
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
-      ScarletCrusade = new Faction("Militia", PLAYER_COLOR_MAROON, "|cff800000",
+      ScarletCrusade = new Faction(FactionNames.Militia, PLAYER_COLOR_MAROON, "|cff800000",
         "ReplaceableTextures\\CommandButtons\\BTNPeasant.blp")
       {
         StartingGold = 150,
@@ -34,7 +33,6 @@ Fortify your strongholds against the storm to come and make ready to unleash the
       ScarletCrusade.ModObjectLimit(FourCC("h088"), Faction.UNLIMITED); //Farm
       ScarletCrusade.ModObjectLimit(FourCC("h080"), Faction.UNLIMITED); //Altar of Kings
       ScarletCrusade.ModObjectLimit(FourCC("h081"), Faction.UNLIMITED); //Barracks
-      ScarletCrusade.ModObjectLimit(FourCC("h06G"), Faction.UNLIMITED); //Blacksmith
       ScarletCrusade.ModObjectLimit(FourCC("h083"), Faction.UNLIMITED); //Chapel
       ScarletCrusade.ModObjectLimit(FourCC("h084"), Faction.UNLIMITED); //Scout Tower
       ScarletCrusade.ModObjectLimit(FourCC("h085"), Faction.UNLIMITED); //Guard Tower
@@ -88,8 +86,6 @@ Fortify your strongholds against the storm to come and make ready to unleash the
       ScarletCrusade.ModObjectLimit(FourCC("Rhac"), Faction.UNLIMITED); //Improved Masonry
       ScarletCrusade.ModObjectLimit(FourCC("R06Q"), Faction.UNLIMITED); //Paladin Adept Training
 
-      ScarletCrusade.AddGoldMine(preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(12860, 11254)));
-      
       FactionManager.Register(ScarletCrusade);
     }
   }

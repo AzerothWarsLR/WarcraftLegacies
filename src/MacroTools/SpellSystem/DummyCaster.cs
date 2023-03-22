@@ -14,6 +14,10 @@ namespace MacroTools.SpellSystem
         _dummyUnit = CreateUnit(Player(PLAYER_NEUTRAL_AGGRESSIVE), UnitTypeId, 0, 0, 0);
         _initialized = true;
       }
+      UnitType.Register(new UnitType(FourCC("u00X"))
+      {
+        Meta = true
+      });
     }
 
     public static int UnitTypeId { get; } = FourCC("u00X");

@@ -51,6 +51,18 @@ namespace WarcraftLegacies.Source.Setup.Spells
         SpecialEffectPath = @"Abilities\Spells\Undead\RaiseSkeletonWarrior\RaiseSkeleton.mdl",
         RequiredResearch = Constants.UPGRADE_R098_FEL_INFUSED_SKELETON_FEL_HORDE
       });
+
+      PassiveAbilityManager.Register(new Execute(Constants.UNIT_O01L_EXECUTIONER_FEL_HORDE_ELITE)
+      {
+        DamageMultNonResistant = 4,
+        DamageMultResistant = 2,
+        DamageMultStructure = 1
+      });
+
+      SpellSystem.Register(new Devour(Constants.ABILITY_A0TU_DEVOUR_BLACK_DRAKE)
+      {
+        PercentageOfMaxHealth = 0.5f
+      });
     }
   }
 }

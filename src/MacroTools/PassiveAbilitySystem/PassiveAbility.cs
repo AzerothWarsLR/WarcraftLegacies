@@ -89,6 +89,13 @@ namespace MacroTools.PassiveAbilitySystem
     }
 
     /// <summary>
+    /// Fired when the unit cancels a research.
+    /// </summary>
+    public virtual void OnCancelUpgrade()
+    {
+    }
+
+    /// <summary>
     /// Fired when the unit is issued a point order.
     /// </summary>
     public virtual void OnOrderIssued()

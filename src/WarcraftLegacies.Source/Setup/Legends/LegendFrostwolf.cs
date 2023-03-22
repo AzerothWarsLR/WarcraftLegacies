@@ -1,71 +1,71 @@
 ﻿using MacroTools;
-using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
-using System;
 using static War3Api.Common;
+#pragma warning disable CS1591
 
 namespace WarcraftLegacies.Source.Setup.Legends
 {
-  public static class LegendFrostwolf
+  public sealed class LegendFrostwolf
   {
-    public static LegendaryHero? LegendCairne { get; private set; }
-    public static LegendaryHero? LegendThrall { get; private set; }
-    public static LegendaryHero? LegendRexxar { get; private set; }
-    public static LegendaryHero? LegendVolJin { get; private set; }
-    public static Capital? LegendThunderbluff { get; private set; }
-    public static Capital? LegendDarkspearhold { get; private set; }
-    public static Capital? LegendOrgrimmar { get; private set; }
+    public LegendaryHero Cairne { get; }
+    public LegendaryHero Thrall { get; }
+    public LegendaryHero Rexxar { get; }
+    public LegendaryHero Voljin { get; }
+    public Capital ThunderBluff { get; }
+    public Capital DarkspearHold { get; }
 
-    public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
+    public LegendFrostwolf(PreplacedUnitSystem preplacedUnitSystem)
     {
-      LegendCairne = new LegendaryHero("Cairne Bloodhoof")
+      Cairne = new LegendaryHero("Cairne Bloodhoof")
       {
         UnitType = FourCC("Ocbh"),
         DeathMessage =
           "Cairne's spirit has passed on from this world. The Tauren have already begun to revere their fallen ancestor.",
         StartingXp = 1000
       };
-      LegendaryHeroManager.Register(LegendCairne);
 
-      LegendThrall = new LegendaryHero("Thrall")
+      Thrall = new LegendaryHero("Thrall")
       {
         UnitType = Constants.UNIT_OTHR_WARCHIEF_OF_THE_HORDE_FROSTWOLF,
+        StartingArtifactItemTypeIds = new[]
+        {
+          Constants.ITEM_I004_THE_DOOMHAMMER
+        }
       };
-      LegendaryHeroManager.Register(LegendThrall);
 
-      LegendThunderbluff = new Capital
+      ThunderBluff = new Capital
       {
         Unit = preplacedUnitSystem.GetUnit(FourCC("o00J")),
         DeathMessage =
           "The mesas of Thunderbluff have been swept clean of the Tauren. The Bloodhoof are without a home."
       };
-      CapitalManager.Register(LegendThunderbluff);
 
-      LegendDarkspearhold = new Capital
+      DarkspearHold = new Capital
       {
         Unit = preplacedUnitSystem.GetUnit(FourCC("o02D"))
       };
-      CapitalManager.Register(LegendDarkspearhold);
 
-      LegendRexxar = new LegendaryHero("Rexxar")
+      Rexxar = new LegendaryHero("Rexxar")
       {
         UnitType = FourCC("Orex"),
         StartingXp = 1800
       };
-      LegendaryHeroManager.Register(LegendRexxar);
 
-      LegendVolJin = new LegendaryHero("Vol'jin")
+      Voljin = new LegendaryHero("Vol'jin")
       {
         UnitType = Constants.UNIT_ORKN_CHIEFTAIN_OF_THE_DARKSPEAR_TRIBE_FROSTWOLF,
+        StartingXp = 1000
       };
-      LegendaryHeroManager.Register(LegendVolJin);
-
-      LegendOrgrimmar = new Capital
-      {
-        DeathMessage =
-          "Orgrimmar has been demolished. With it dies the hopes and dreams of a wartorn race seeking refuge in a new world."
-      };
-      CapitalManager.Register(LegendOrgrimmar);
+    }
+    
+    public void RegisterLegends()
+    {
+      LegendaryHeroManager.Register(Cairne);
+      LegendaryHeroManager.Register(Thrall);
+      LegendaryHeroManager.Register(Rexxar);
+      LegendaryHeroManager.Register(Voljin);
+      CapitalManager.Register(ThunderBluff);
+      CapitalManager.Register(DarkspearHold);
     }
   }
 }

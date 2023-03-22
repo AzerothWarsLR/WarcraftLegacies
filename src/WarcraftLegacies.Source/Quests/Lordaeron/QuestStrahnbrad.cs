@@ -2,7 +2,9 @@
 using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
-using MacroTools.ObjectiveSystem.Objectives;
+using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
+using MacroTools.ObjectiveSystem.Objectives.FactionBased;
+using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.QuestSystem;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -14,7 +16,8 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
   /// </summary>
   public sealed class QuestStrahnbrad : QuestData
   {
-    private readonly List<unit> _rescueUnits = new();
+    private readonly List<unit> _rescueUnits;
+
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestStrahnbrad"/> class.
     /// </summary>
@@ -23,15 +26,17 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
       "The Strahnbrad is under attack by some brigands, clear them out",
       "ReplaceableTextures\\CommandButtons\\BTNFarm.blp")
     {
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N01C_STRAHNBRAD_10GOLD_MIN)));
-      AddObjective(new ObjectiveExpire(1170));
+      AddObjective(
+        new ObjectiveControlPoint(
+          ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N01C_STRAHNBRAD_10GOLD_MIN)));
+      AddObjective(new ObjectiveExpire(1170, Title));
       AddObjective(new ObjectiveSelfExists());
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
       Required = true;
     }
 
     /// <inheritdoc/>
-    protected override string CompletionPopup => "Strahnbrad has been liberated.";
+    protected override string RewardFlavour => "Strahnbrad has been liberated.";
 
     /// <inheritdoc/>
     protected override string RewardDescription => "Control of all buildings in Strahnbrad";

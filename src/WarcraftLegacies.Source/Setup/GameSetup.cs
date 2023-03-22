@@ -1,4 +1,5 @@
 ﻿using MacroTools;
+using MacroTools.CommandSystem;
 using MacroTools.ControlPointSystem;
 using MacroTools.Mechanics;
 using MacroTools.PassiveAbilitySystem;
@@ -6,14 +7,14 @@ using MacroTools.UserInterface;
 using WarcraftLegacies.Source.ArtifactBehaviour;
 using WarcraftLegacies.Source.GameLogic;
 using WarcraftLegacies.Source.GameLogic.GameEnd;
-using WarcraftLegacies.Source.Hints;
-using WarcraftLegacies.Source.Mechanics.Neutral;
+using WarcraftLegacies.Source.Mechanics.Druids;
+using WarcraftLegacies.Source.Mechanics.Frostwolf;
 using WarcraftLegacies.Source.Mechanics.Quelthalas;
 using WarcraftLegacies.Source.Mechanics.Scourge;
 using WarcraftLegacies.Source.Mechanics.Scourge.Blight;
-using WarcraftLegacies.Source.Rocks;
 using WarcraftLegacies.Source.Setup.FactionSetup;
 using WarcraftLegacies.Source.UnitTypes;
+using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup
 {
@@ -29,47 +30,51 @@ namespace WarcraftLegacies.Source.Setup
     {
       ControlPointManager.Instance = new ControlPointManager
       {
-        MaxHitpoints = 1600,
+        StartingMaxHitPoints = 1400,
+        HostileStartingCurrentHitPoints = 1000,
         RegenerationAbility = Constants.ABILITY_A0UT_CP_LIFE_REGEN,
         IncreaseControlLevelAbilityTypeId = Constants.ABILITY_A0A8_FORTIFY_CONTROL_POINTS_SHARED,
         ControlLevelSettings = new ControlLevelSettings
         {
           DefaultDefenderUnitTypeId = Constants.UNIT_H03W_CONTROL_POINT_DEFENDER_LORDAERON,
-          DamageBase = 8,
-          DamagePerControlLevel = 2,
+          DamageBase = 18,
+          DamagePerControlLevel = 1,
           ArmorPerControlLevel = 1,
-          HitPointsPerControlLevel = 100,
+          HitPointsPerControlLevel = 70,
           ControlLevelMaximum = 20
         }
       };
       var preplacedUnitSystem = new PreplacedUnitSystem();
       SoundLibrary.Setup();
       var artifactSetup = new ArtifactSetup(preplacedUnitSystem);
-      AllLegendSetup.Setup(preplacedUnitSystem, artifactSetup);
+      var allLegendSetup = new AllLegendSetup(preplacedUnitSystem, artifactSetup);
+      allLegendSetup.RegisterLegends(preplacedUnitSystem);
       ShoreSetup.Setup();
       ControlPointSetup.Setup();
       InstanceSetup.Setup(preplacedUnitSystem);
       TeamSetup.Setup();
       AllFactionSetup.Setup(preplacedUnitSystem, artifactSetup);
+      SharedFactionConfigSetup.Setup();
       PlayerSetup.Setup();
       NeutralHostileSetup.Setup();
-      AllQuestSetup.Setup(preplacedUnitSystem, artifactSetup);
-      ObserverSetup.Setup();
+      AllQuestSetup.Setup(preplacedUnitSystem, artifactSetup, allLegendSetup);
+      ObserverSetup.Setup(new[] { Player(21) });
       SpellsSetup.Setup();
-      CheatSetup.Setup();
-      CommandSetup.Setup();
+      var commandManager = new CommandManager();
+      CheatSetup.Setup(commandManager);
+      CommandSetup.Setup(commandManager);
       ControlPointVictory.Setup();
-      SilvermoonDies.Setup();
+      SilvermoonDies.Setup(allLegendSetup.Quelthalas.Sunwell);
       GameTime.Setup();
       FactionMultiboard.Setup();
       BookSetup.Setup();
       HintConfig.Setup();
-      WaygateManager.Setup(Constants.UNIT_N0AO_WAY_GATE_DALARAN);
+      WaygateManager.Setup(Constants.UNIT_N0AO_WAY_GATE_DALARAN_OTHER);
       BlightSystem.Setup(ScourgeSetup.Scourge);
       BlightSetup.Setup(preplacedUnitSystem);
       QuestMenuSetup.Setup();
       CinematicMode.Start(59);
-      DialogueSetup.Setup();
+      DialogueSetup.Setup(preplacedUnitSystem, allLegendSetup);
       DisplayIntroText.Setup(10);
       GameSettings.Setup();
       InfoQuests.Setup();
@@ -124,11 +129,16 @@ namespace WarcraftLegacies.Source.Setup
       SummonRallyPoints.Setup();
       RemoveUnusedAreas.Run();
       EyeOfSargerasCooldowns.Setup();
-      EventKelthuzadDeath.Setup();
       CapturableUnitSetup.Setup(preplacedUnitSystem);
-      GilneasGateTowers.Setup(preplacedUnitSystem);
       EyeOfSargerasPickup.Setup();
       SacrificeAcolyte.Setup();
+      IntegrityChecker.Setup(true);
+      PeonsStartHarvestingShips.Setup(preplacedUnitSystem);
+      DarkPortalControlNexusSetup.Setup(preplacedUnitSystem);
+      BlackPortalControlNexusSetup.Setup(preplacedUnitSystem);
+      CenariusGhost.Setup(allLegendSetup.Druids);
+      HelmOfDominationDropsWhenScourgeLeaves.Setup(artifactSetup.HelmOfDomination, allLegendSetup.Scourge.TheFrozenThrone);
+      TagSummonedUnits.Setup();
     }
   }
 }

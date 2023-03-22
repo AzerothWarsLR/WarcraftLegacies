@@ -1,89 +1,88 @@
-using MacroTools;
-using MacroTools.Extensions;
-using MacroTools.FactionSystem;
+﻿using MacroTools;
 using MacroTools.LegendSystem;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
+#pragma warning disable CS1591
 
 namespace WarcraftLegacies.Source.Setup.Legends
 {
-  public static class LegendStormwind
+  public sealed class LegendStormwind
   {
-    public static LegendaryHero? Varian { get; private set; }
-    public static LegendaryHero khadgar { get; private set; }
-    public static LegendaryHero Galen { get; private set; }
-    public static LegendaryHero Bolvar { get; private set; }
-    public static Capital Stormwindkeep { get; private set; }
-    public static Capital Darkshire { get; private set; }
-    
-    public static Capital? ConstructionSiteMartial { get; private set; }
+    public LegendaryHero Varian { get; }
+    public LegendaryHero Khadgar { get; }
+    public LegendaryHero Galen { get; }
+    public LegendaryHero Bolvar { get; }
+    public Capital StormwindKeep { get; }
+    public Capital Darkshire { get; }
+    public Capital ConstructionSiteMartial { get; }
+    public Capital ConstructionSiteMagic { get; }
 
-    public static Capital? ConstructionSiteMagic { get; private set; }
-
-    public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
+    public LegendStormwind(PreplacedUnitSystem preplacedUnitSystem)
     {
       Varian = new LegendaryHero("Varian Wrynn")
       {
-        UnitType = FourCC("H00R")
+        UnitType = Constants.UNIT_H00R_KING_OF_STORMWIND_DARK_GREEN,
+        DeathMessage = "The King of Stormwind dies a warrior’s death, defending hearth and family. The Wrynn Dynasty crumbles with his passing.",
+        StartingXp = 1800,
+        StartingArtifactItemTypeIds = new[]
+        {
+          Constants.ITEM_I00D_SHALAMAYNE
+        }
       };
-      Varian.AddUnitDependency(preplacedUnitSystem.GetUnit(Constants.UNIT_H00X_STORMWIND_KEEP_DARK_GREEN));
-      Varian.DeathMessage =
-        "The King of Stormwind dies a warrior’s death, defending hearth and family. The Wrynn Dynasty crumbles with his passing.";
-      Varian.StartingXp = 1800;
-      LegendaryHeroManager.Register(Varian);
 
       Galen = new LegendaryHero("Galen Trollbane")
       {
-        UnitType = FourCC("H00Z"),
-        StartingXp = 1000
+        UnitType = Constants.UNIT_H00Z_CROWN_PRINCE_OF_STROMGARDE_STORMWIND,
+        StartingXp = 1000,
+        StartingArtifactItemTypeIds = new[] { Constants.ITEM_I01O_TROL_KALAR }
       };
-      LegendaryHeroManager.Register(Galen);
 
       Bolvar = new LegendaryHero("Bolvar Fordragon")
       {
-        UnitType = FourCC("H017")
+        UnitType = Constants.UNIT_H017_HIGHLORD_OF_THE_ALLIANCE_DARK_GREEN
       };
-      LegendaryHeroManager.Register(Bolvar);
 
-      khadgar = new LegendaryHero("Khadgar")
+      Khadgar = new LegendaryHero("Khadgar")
       {
-        UnitType = FourCC("H05Y"),
+        UnitType = Constants.UNIT_H05Y_LORD_WIZARD_STORMWIND,
         StartingXp = 7000
       };
-      LegendaryHeroManager.Register(khadgar);
 
-      Stormwindkeep = new Capital
+      StormwindKeep = new Capital
       {
-        Unit = preplacedUnitSystem.GetUnit(FourCC("h00X")),
+        Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_H00X_STORMWIND_KEEP_STORMWIND_OTHER),
         DeathMessage = "Stormwind Keep, the capitol of the nation of Stormwind, has been destroyed!"
       };
-      CapitalManager.Register(Stormwindkeep);
-      Stormwindkeep.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_H070_IMPROVED_GUARD_TOWER_STORMWIND, new Point(9530, -10941)));
-      Stormwindkeep.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_H070_IMPROVED_GUARD_TOWER_STORMWIND, new Point(10177, -10952)));
+      StormwindKeep.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_H070_IMPROVED_GUARD_TOWER_STORMWIND_TOWER, new Point(9530, -10941)));
+      StormwindKeep.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_H070_IMPROVED_GUARD_TOWER_STORMWIND_TOWER, new Point(10177, -10952)));
 
       Darkshire = new Capital
       {
-        Unit = preplacedUnitSystem.GetUnit(FourCC("h03Y"))
+        Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_H03Y_DARKSHIRE_STORMWIND_OTHER)
       };
-      CapitalManager.Register(Darkshire);
 
       ConstructionSiteMagic = new Capital
       {
         Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_H053_CONSTRUCTION_SITE_STORMWIND_WIZARD_S_SANCTUM)
       };
-      ConstructionSiteMagic.Unit.SetInvulnerable(true);
-      CreateTrigger()
-        .RegisterUnitEvent(Stormwindkeep.Unit, EVENT_UNIT_DEATH)
-        .AddAction(() => ConstructionSiteMagic.Unit.Kill());
+      ConstructionSiteMagic.AddProtector(StormwindKeep.Unit);
 
       ConstructionSiteMartial = new Capital
       {
         Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_H055_CONSTRUCTION_SITE_STORMWIND_CHAMPION_S_HALL)
       };
-      ConstructionSiteMartial.Unit.SetInvulnerable(true);
-      CreateTrigger()
-        .RegisterUnitEvent(Stormwindkeep.Unit, EVENT_UNIT_DEATH)
-        .AddAction(() => ConstructionSiteMartial.Unit.Kill());
+      ConstructionSiteMartial.AddProtector(StormwindKeep.Unit);
+    }
+    
+    public void RegisterLegends()
+    {
+      LegendaryHeroManager.Register(Varian);
+      LegendaryHeroManager.Register(Khadgar);
+      LegendaryHeroManager.Register(Galen);
+      LegendaryHeroManager.Register(Bolvar);
+      CapitalManager.Register(StormwindKeep);
+      CapitalManager.Register(Darkshire);
+      CapitalManager.Register(ConstructionSiteMartial);
+      CapitalManager.Register(ConstructionSiteMagic);
     }
   }
 }

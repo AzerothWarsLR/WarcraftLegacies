@@ -62,7 +62,7 @@ namespace MacroTools.Spells
       var duration = DurationBase + DurationLevel * GetAbilityLevel(caster);
       if (StunAbilityId == 0 || StunOrderString == "" || duration <= 0)
         return;
-      DummyCast.DummyCastUnit(caster, StunAbilityId, StunOrderString, duration, target);
+      DummyCast.DummyCastUnit(caster, StunAbilityId, StunOrderString, duration, target, DummyCastOriginType.Target);
     }
 
     /// <inheritdoc />

@@ -1,33 +1,42 @@
 using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
-using MacroTools.ObjectiveSystem.Objectives;
+using MacroTools.LegendSystem;
+using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
+using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.QuestSystem;
-using WarcraftLegacies.Source.Setup.Legends;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Dalaran
 {
   public sealed class QuestCrystalGolem : QuestData
   {
-    public QuestCrystalGolem() : base("Crystalsong Forest",
+    private const int RewardResearchTypeId = Constants.UPGRADE_R045_HARD_CRYSTAL_CONSTRUCTS_DALARAN_QUEST;
+    
+    public QuestCrystalGolem(Capital draktharonKeep) : base("Crystalsong Forest",
       "The living crystal of the Crystalsong Forest suffers from its proximity to the Legion. Freed from that corruption, it could be used to empower Dalaran's constructs."
       , "ReplaceableTextures\\CommandButtons\\BTNRockGolem.blp")
     {
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(FourCC("n02R"))));
-      AddObjective(new ObjectiveControlCapital(LegendNeutral.DraktharonKeep, false));
-      ResearchId = FourCC("R045");
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N02R_CRYSTALSONG_FOREST_15GOLD_MIN)));
+      AddObjective(new ObjectiveControlCapital(draktharonKeep, false));
     }
 
-    protected override string CompletionPopup => "Dalaran's Earth Golems have been infused with living crystal.";
+    /// <inheritdoc/>
+    protected override string RewardFlavour => "Dalaran's Earth Golems have been infused with living crystal.";
 
+    /// <inheritdoc/>
     protected override string RewardDescription => "Transform your Earth Golems into Crystal Golems";
 
+    /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
     {
-      completingFaction.Player.DisplayResearchAcquired(ResearchId, 1);
-      completingFaction.ModObjectLimit(FourCC("n096"), -6);
-      completingFaction.ModObjectLimit(FourCC("n0AD"), 6);
+      completingFaction.SetObjectLevel(RewardResearchTypeId, 1);
+      completingFaction.Player?.DisplayResearchAcquired(ResearchId, 1);
+      completingFaction.ModObjectLimit(Constants.UNIT_N096_EARTH_GOLEM_DALARAN, -6);
+      completingFaction.ModObjectLimit(Constants.UNIT_N0AD_CRYSTAL_GOLEM_DALARAN_HARD_CRYSTAL_CONSTRUCTS, 6);
     }
+    
+    /// <inheritdoc/>
+    protected override void OnAdd(Faction whichFaction) => 
+      whichFaction.ModObjectLimit(RewardResearchTypeId, Faction.UNLIMITED);
   }
 }

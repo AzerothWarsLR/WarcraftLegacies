@@ -11,6 +11,7 @@ namespace WarcraftLegacies.Source.Commands
   public static class ObserverCommand
   {
     private const string Command = "-obs";
+    private static Team? _observers;
 
     /// <summary>
     /// Sets up the observer command.
@@ -21,6 +22,8 @@ namespace WarcraftLegacies.Source.Commands
       foreach (var player in WCSharp.Shared.Util.EnumeratePlayers()) 
         TriggerRegisterPlayerChatEvent(trig, player, Command, true);
       TriggerAddAction(trig, Actions);
+      _observers = new Team("Observers");
+      FactionManager.Register(_observers);
     }
     
     private static void Actions()
@@ -31,7 +34,9 @@ namespace WarcraftLegacies.Source.Commands
         throw new InvalidOperationException(
           $"{GetPlayerName(GetTriggerPlayer())} tried to execute {nameof(ObserverCommand)}, but they don't have a {nameof(Faction)}.");
       }
+      
       triggerFaction.ScoreStatus = ScoreStatus.Defeated;
+      triggerFaction.Player?.SetTeam(_observers!);
     }
   }
 }

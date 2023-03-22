@@ -12,35 +12,36 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
     
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
-      Frostwolf = new Faction("Frostwolf", PLAYER_COLOR_RED, "|c00ff0303",
+      Frostwolf = new Faction(FactionNames.Frostwolf, PLAYER_COLOR_RED, "|c00ff0303",
         "ReplaceableTextures\\CommandButtons\\BTNThrall.blp")
       {
         UndefeatedResearch = Constants.UPGRADE_R05V_FROSTWOLF_EXISTS,
-        StartingGold = 150,
-        StartingLumber = 500,
+        StartingGold = 200,
+        StartingLumber = 700,
         CinematicMusic = "SadMystery",
         ControlPointDefenderUnitTypeId = Constants.UNIT_N0B6_CONTROL_POINT_DEFENDER_FROSTWOLF,
         IntroText = @"You are playing as the honorable |cffff0000Frostwolf Clan|r.
 
-Following Medihvs call to sail west and find his destiny, Thrall and his forces were shipwrecked on the coast of Kalimdor. 
+You begin in the Salt Flats, separated from your ally, the Warsong Clan in the North.
 
-Establish a base and gather your troops - but make haste and move inland, for the lands are rugged and harsh and resources are scarce."
+Salvage the wrecked ships, establish a base and gather your troops to move inland and assist your ally against the Night Elf threat."
 
       };
 
-      Frostwolf.ModObjectLimit(Constants.UNIT_OGRE_GREAT_HALL_FROSTWOLF, Faction.UNLIMITED);
-      Frostwolf.ModObjectLimit(Constants.UNIT_OSTR_STRONGHOLD_FROSTWOLF, Faction.UNLIMITED);
-      Frostwolf.ModObjectLimit(Constants.UNIT_OFRT_FORTRESS_FROSTWOLF, Faction.UNLIMITED);
-      Frostwolf.ModObjectLimit(Constants.UNIT_OALT_ALTAR_OF_STORMS_FROSTWOLF, Faction.UNLIMITED);
-      Frostwolf.ModObjectLimit(Constants.UNIT_OBAR_WAR_CAMP_FROSTWOLF, Faction.UNLIMITED);
-      Frostwolf.ModObjectLimit(Constants.UNIT_OFOR_WAR_MILL_FROSTWOLF, Faction.UNLIMITED);
-      Frostwolf.ModObjectLimit(Constants.UNIT_OTTO_TAUREN_TOTEM_FROSTWOLF, Faction.UNLIMITED);
-      Frostwolf.ModObjectLimit(Constants.UNIT_OSLD_SPIRIT_LODGE_FROSTWOLF, Faction.UNLIMITED);
-      Frostwolf.ModObjectLimit(Constants.UNIT_OTRB_BURROW_FROSTWOLF, Faction.UNLIMITED);
-      Frostwolf.ModObjectLimit(Constants.UNIT_OWTW_WATCH_TOWER_FROSTWOLF, Faction.UNLIMITED);
-      Frostwolf.ModObjectLimit(Constants.UNIT_O002_IMPROVED_WATCH_TOWER_FROSTWOLF, Faction.UNLIMITED);
-      Frostwolf.ModObjectLimit(Constants.UNIT_OVLN_VOODOO_LOUNGE_FROSTWOLF, Faction.UNLIMITED);
-      Frostwolf.ModObjectLimit(Constants.UNIT_OSHY_HORDE_PIER_FROSTWOLF, Faction.UNLIMITED);
+      Frostwolf.ModObjectLimit(Constants.UNIT_OGRE_GREAT_HALL_FROSTWOLF_T1, Faction.UNLIMITED);
+      Frostwolf.ModObjectLimit(Constants.UNIT_OSTR_STRONGHOLD_FROSTWOLF_T2, Faction.UNLIMITED);
+      Frostwolf.ModObjectLimit(Constants.UNIT_OFRT_FORTRESS_FROSTWOLF_T3, Faction.UNLIMITED);
+      Frostwolf.ModObjectLimit(Constants.UNIT_OALT_ALTAR_OF_STORMS_FROSTWOLF_ALTAR, Faction.UNLIMITED);
+      Frostwolf.ModObjectLimit(Constants.UNIT_OBAR_WAR_CAMP_FROSTWOLF_BARRACKS, Faction.UNLIMITED);
+      Frostwolf.ModObjectLimit(Constants.UNIT_OFOR_WAR_MILL_FROSTWOLF_RESEARCH, Faction.UNLIMITED);
+      Frostwolf.ModObjectLimit(Constants.UNIT_OTTO_TAUREN_TOTEM_FROSTWOLF_SPECIALIST, Faction.UNLIMITED);
+      Frostwolf.ModObjectLimit(Constants.UNIT_OSLD_SPIRIT_LODGE_FROSTWOLF_MAGIC, Faction.UNLIMITED);
+      Frostwolf.ModObjectLimit(Constants.UNIT_OTRB_BURROW_FROSTWOLF_FARM, Faction.UNLIMITED);
+      Frostwolf.ModObjectLimit(Constants.UNIT_OWTW_WATCH_TOWER_FROSTWOLF_TOWER, Faction.UNLIMITED);
+      Frostwolf.ModObjectLimit(Constants.UNIT_O002_IMPROVED_WATCH_TOWER_FROSTWOLF_TOWER_2, Faction.UNLIMITED);
+      Frostwolf.ModObjectLimit(Constants.UNIT_OVLN_VOODOO_LOUNGE_FROSTWOLF_SHOP, Faction.UNLIMITED);
+      Frostwolf.ModObjectLimit(Constants.UNIT_OSHY_HORDE_PIER_FROSTWOLF_SHIPYARD, Faction.UNLIMITED);
+      Frostwolf.ModObjectLimit(Constants.UNIT_OOSC_PACK_KODO_FROSTWOLF, Faction.UNLIMITED);
 
       Frostwolf.ModObjectLimit(FourCC("opeo"), Faction.UNLIMITED); //Peon
       Frostwolf.ModObjectLimit(FourCC("ogru"), Faction.UNLIMITED); //Grunt
@@ -53,9 +54,16 @@ Establish a base and gather your troops - but make haste and move inland, for th
       Frostwolf.ModObjectLimit(FourCC("ospw"), Faction.UNLIMITED); //Spirit Walker
       Frostwolf.ModObjectLimit(FourCC("o00A"), 6); //Far Seer
       Frostwolf.ModObjectLimit(FourCC("obot"), Faction.UNLIMITED); //Transport Ship
-      Frostwolf.ModObjectLimit(FourCC("odes"), Faction.UNLIMITED); //Orc Frigate
-      Frostwolf.ModObjectLimit(FourCC("oosc"), Faction.UNLIMITED); //Pack Kodo
-      Frostwolf.ModObjectLimit(FourCC("ojgn"), 6); //Juggernaught
+
+      //Ship
+      Frostwolf.ModObjectLimit(FourCC("obot"), Faction.UNLIMITED); //Transport Ship
+      Frostwolf.ModObjectLimit(FourCC("h0AS"), Faction.UNLIMITED); //Scout
+      Frostwolf.ModObjectLimit(FourCC("h0AP"), Faction.UNLIMITED); //Frigate
+      Frostwolf.ModObjectLimit(FourCC("h0B2"), Faction.UNLIMITED); //Fireship
+      Frostwolf.ModObjectLimit(FourCC("h0AY"), Faction.UNLIMITED); //Galley
+      Frostwolf.ModObjectLimit(FourCC("h0B5"), Faction.UNLIMITED); //Boarding
+      Frostwolf.ModObjectLimit(FourCC("h0BC"), Faction.UNLIMITED); //Juggernaut
+      Frostwolf.ModObjectLimit(FourCC("h0AO"), 6); //Bombard
 
       Frostwolf.ModObjectLimit(FourCC("h00C"), 1); //Drek)thar
       Frostwolf.ModObjectLimit(FourCC("Othr"), 1); //Thrall
@@ -82,8 +90,8 @@ Establish a base and gather your troops - but make haste and move inland, for th
       Frostwolf.ModAbilityAvailability(Constants.ABILITY_A0M4_BATTLE_STATIONS_PINK_GREY_ORC_BURROW_BLOODPACT, -1);
       Frostwolf.ModAbilityAvailability(Constants.ABILITY_ABTL_BATTLE_STATIONS_FROSTWOLF_WARSONG_BURROW, 1);
       
-      Frostwolf.AddGoldMine(preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-1789, -1697)));
-      Frostwolf.AddGoldMine(preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-14466, -4703)));
+      Frostwolf.AddGoldMine(preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-8793, -11350)));
+      Frostwolf.AddGoldMine(preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-14457, -4701)));
       
       FrostwolfStructurePackingConfig.Setup();
       FactionManager.Register(Frostwolf);

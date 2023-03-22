@@ -1,7 +1,7 @@
 ﻿using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.Libraries;
-using MacroTools.ObjectiveSystem.Objectives;
+using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.QuestSystem;
 using WarcraftLegacies.Source.Setup;
 using WarcraftLegacies.Source.Setup.FactionSetup;
@@ -26,13 +26,14 @@ namespace WarcraftLegacies.Source.Quests.Zandalar
     /// <param name="onFailSpawnRect"></param>
     /// <param name="completeOnFailQuest">Quest that gets completed upon failing <see cref="QuestConquerKul"/>.</param>
     /// <param name="failOnFailQuest">Quest that is failed upon failing <see cref="QuestConquerKul"/>. </param>
-    public QuestConquerKul(Rectangle onFailSpawnRect, QuestData completeOnFailQuest, QuestData failOnFailQuest) : base(
+    /// <param name="legendSetup"></param>
+    public QuestConquerKul(Rectangle onFailSpawnRect, QuestData completeOnFailQuest, QuestData failOnFailQuest, AllLegendSetup legendSetup) : base(
       "Conquer Boralus",
       "The Kul'tiran people and their fleet have been a threat to the Zandalari Empire for ages, it is time to put them to rest.",
       "ReplaceableTextures\\CommandButtons\\BTNGalleonIcon.blp")
     {
-      AddObjective(new ObjectiveControlCapital(LegendNeutral.Dazaralor, true));
-      AddObjective(new ObjectiveCapitalDead(LegendKultiras.LegendBoralus));
+      AddObjective(new ObjectiveControlCapital(legendSetup.Neutral.Dazaralor, true));
+      AddObjective(new ObjectiveCapitalDead(legendSetup.Kultiras.LegendBoralus));
       ResearchId = Constants.UPGRADE_R08D_QUEST_COMPLETED_CONQUER_BORALUS;
       _onFailSpawnRect = onFailSpawnRect;
       _completeOnFailQuest = completeOnFailQuest;
@@ -41,13 +42,13 @@ namespace WarcraftLegacies.Source.Quests.Zandalar
     }
 
     /// <inheritdoc/>
-    protected override string CompletionPopup => "Before setting sails we need to conquer Kul'tiras";
+    protected override string RewardFlavour => "Before setting sails we need to conquer Kul'tiras";
 
     /// <inheritdoc/>>
     protected override string RewardDescription => "Unlock shipyards";
 
     /// <inheritdoc/>
-    protected override string FailurePopup => "Zandalar has fallen.";
+    protected override string PenaltyFlavour => "Zandalar has fallen.";
 
     /// <inheritdoc/>
     protected override string PenaltyDescription =>
@@ -77,17 +78,6 @@ namespace WarcraftLegacies.Source.Quests.Zandalar
           SetCameraPosition(_onFailSpawnRect.Center.X, _onFailSpawnRect.Center.Y);
         completingFaction.Player.AddGold(1500);
         completingFaction.Player.AddLumber(2000);
-
-        GeneralHelpers.CreateUnits(completingFaction.Player, Constants.UNIT_H021_WATCHER_TROLL,
-          Regions.TrollSecondChance.Center.X, Regions.TrollSecondChance.Center.Y, 270, 8);
-        GeneralHelpers.CreateUnits(completingFaction.Player, Constants.UNIT_O04A_GATHERER_TROLL_ZANDALARI_WORKER,
-          Regions.TrollSecondChance.Center.X, Regions.TrollSecondChance.Center.Y, 270, 8);
-        GeneralHelpers.CreateUnits(completingFaction.Player, Constants.UNIT_O04D_SCOUT_TROLL,
-          Regions.TrollSecondChance.Center.X, Regions.TrollSecondChance.Center.Y, 270, 6);
-        GeneralHelpers.CreateUnits(completingFaction.Player, Constants.UNIT_H05D_RAPTOR_RIDER_TROLL,
-          Regions.TrollSecondChance.Center.X, Regions.TrollSecondChance.Center.Y, 270, 4);
-        GeneralHelpers.CreateUnits(completingFaction.Player, Constants.UNIT_O04W_GOLDEN_VESSEL_ZANDALAR,
-          Regions.TrollSecondChance.Center.X, Regions.TrollSecondChance.Center.Y, 270, 3);
       }
       ZandalarSetup.Zandalar?.Player?.SetTeam(TeamSetup.Horde);
     }
