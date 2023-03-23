@@ -31565,12 +31565,6 @@ STRING 5261
 Gives a total of <Aamk,DataA5> points to Agility, Intelligence, and Strength
 }
 
-STRING 5262
-// Abilities: A08N (Conveyance Aura), Researchubertip (Tooltip - Learn - Extended)
-{
-Galen has always been an adept commander and his skills give his armies increased mobility. Increases the movement speed of all nearby friendly units.|n|n|cffffcc00Level 1|r - 5% increased movement speed. |n|cffffcc00Level 2|r - 10% increased movement speed. |n|cffffcc00Level 3|r - 15% increased movement speed. |n|cffffcc00Level 4|r - 20% increased movement speed. |n
-}
-
 STRING 5263
 // Units: h00B (Irondrake), Hotkey (Hotkey)
 {
@@ -117335,12 +117329,6 @@ STRING 19557
 Artillery Bombardment
 }
 
-STRING 19558
-// Abilities: A108 (Artillery Bombardment), Ubertip (Tooltip - Normal - Extended)
-{
-Innacurate bombardment of an area with 30 waves of one cannonball. Each ball deals 45 damage to all units in an area.
-}
-
 STRING 19559
 // Upgrades: Rhme (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Hotkey (Hotkey)
 {
@@ -121265,36 +121253,6 @@ STRING 20212
 Revive Aegwynn
 }
 
-STRING 20213
-// Abilities: A0L5 (Light's Edict), Ubertip (Tooltip - Normal - Extended)
-{
-Calls upon 6 waves of light bursts. Each wave heals 15 HP to all friendly units in an area.
-}
-
-STRING 20214
-// Abilities: A0L5 (Light's Edict), Ubertip (Tooltip - Normal - Extended)
-{
-Calls upon 8 waves of light bursts. Each wave heals 20 HP to all friendly units in an area.
-}
-
-STRING 20215
-// Abilities: A0L5 (Light's Edict), Ubertip (Tooltip - Normal - Extended)
-{
-Calls upon 10 waves of light bursts. Each wave heals 25 HP to all friendly units in an area.
-}
-
-STRING 20216
-// Abilities: A0L5 (Light's Edict), Ubertip (Tooltip - Normal - Extended)
-{
-Calls upon 12 waves of light bursts. Each wave heals 30 HP to all friendly units in an area.
-}
-
-STRING 20217
-// Abilities: A0L5 (Light's Edict), Researchubertip (Tooltip - Learn - Extended)
-{
-Calls down holy beams of light that heal friendly units in a target area. |n|n|cffffcc00Level 1|r - <ANhs,DataF1> waves at <ANhs,DataA1> hit points healed each. |n|cffffcc00Level 2|r - <ANhs,DataF2> waves at <ANhs,DataA2> hit points healed each. |n|cffffcc00Level 3|r - <ANhs,DataF3> waves at <ANhs,DataA3> hit points healed each.
-}
-
 STRING 20218
 // Abilities: A11K (Time's Shield), Tip (Tooltip - Normal)
 {
@@ -121683,5 +121641,47 @@ STRING 20282
 // Upgrades: R07I (Necromancer Adept Training,Necromancer Master Training), Hotkey (Hotkey)
 {
 W
+}
+
+STRING 20283
+// Abilities: A08N (Conveyance Aura), Researchubertip (Tooltip - Learn - Extended)
+{
+The hero is an adept commander and his skills give his armies increased mobility. Increases the movement speed of all nearby friendly units.|n|n|cffffcc00Level 1|r - 5% increased movement speed. |n|cffffcc00Level 2|r - 10% increased movement speed. |n|cffffcc00Level 3|r - 15% increased movement speed. |n|cffffcc00Level 4|r - 20% increased movement speed. |n
+}
+
+STRING 20284
+// Abilities: A0L5 (Light's Edict), Ubertip (Tooltip - Normal - Extended)
+{
+Calls upon 6 waves of light bursts. Each wave deals 15 damage to all units in an area.
+}
+
+STRING 20285
+// Abilities: A0L5 (Light's Edict), Ubertip (Tooltip - Normal - Extended)
+{
+Calls upon 8 waves of light bursts. Each wave deals 20 damage to all units in an area.
+}
+
+STRING 20286
+// Abilities: A0L5 (Light's Edict), Ubertip (Tooltip - Normal - Extended)
+{
+Calls upon 10 waves of light bursts. Each wave deals 25 damage to all units in an area.
+}
+
+STRING 20287
+// Abilities: A0L5 (Light's Edict), Ubertip (Tooltip - Normal - Extended)
+{
+Calls upon 12 waves of light bursts. Each wave deals 30 damage to all units in an area.
+}
+
+STRING 20288
+// Abilities: A0L5 (Light's Edict), Researchubertip (Tooltip - Learn - Extended)
+{
+Calls down holy beams of light that damage units in a target area. |n|n|cffffcc00Level 1|r - <ANhs,DataF1> waves at <ANhs,DataA1> hit points healed each. |n|cffffcc00Level 2|r - <ANhs,DataF2> waves at <ANhs,DataA2> hit points healed each. |n|cffffcc00Level 3|r - <ANhs,DataF3> waves at <ANhs,DataA3> hit points healed each.
+}
+
+STRING 20289
+// Abilities: A108 (Artillery Bombardment), Ubertip (Tooltip - Normal - Extended)
+{
+Innacurate bombardment of an area with 30 waves of one cannonball. Each ball deals 15 damage to all units in an area.
 }
 

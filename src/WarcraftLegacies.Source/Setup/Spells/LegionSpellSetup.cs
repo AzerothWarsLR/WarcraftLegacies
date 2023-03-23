@@ -56,7 +56,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
       SpellSystem.Register(new SlipstreamSpellSpecificLocation(Constants.ABILITY_A10C_OPEN_A_PORTAL_TO_ARGUS_LEGION_ARGUS)
       {
         PortalUnitTypeId = Constants.UNIT_N0D9_SLIPSTREAM_PORTAL_STORMWIND_KHADGAR,
-        OpeningDelay = 10,
+        OpeningDelay = 20,
         ClosingDelay = 0,
         TargetLocation = new Point(21606, -28467),
         Color = new Color(255, 50, 50, 255)
