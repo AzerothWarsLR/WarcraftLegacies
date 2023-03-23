@@ -54,7 +54,7 @@ Stormwind is preparing for an invasion through the Dark Portal in the South. Mus
       Ironforge.ModObjectLimit(FourCC("h019"), Faction.UNLIMITED); //Dwarven Worker
       Ironforge.ModObjectLimit(FourCC("hrif"), Faction.UNLIMITED); //Rifleman
       Ironforge.ModObjectLimit(FourCC("hmtm"), 9); //Mortar Team
-      Ironforge.ModObjectLimit(FourCC("hgyr"), 12); //Flying Machine
+      Ironforge.ModObjectLimit(FourCC("n0CZ"), 4); //Dreadnaught
       Ironforge.ModObjectLimit(FourCC("hgry"), 6); //Gryphon Rider
       Ironforge.ModObjectLimit(FourCC("h018"), Faction.UNLIMITED); //Dwarven Warrior
       Ironforge.ModObjectLimit(FourCC("h01L"), 6); //Thane

@@ -63,7 +63,7 @@ Make sure to communicate with your Dwarven and Kul'tiran allies, as they will be
       Stormwind.ModObjectLimit(FourCC("h00J"), Faction.UNLIMITED); //Clergyman
       Stormwind.ModObjectLimit(Constants.UNIT_N06N_GUNSHIP_STORMWIND, 6);
       Stormwind.ModObjectLimit(FourCC("n093"), Faction.UNLIMITED); //Chaplain
-      Stormwind.ModObjectLimit(FourCC("o06K"), 6); //Siege Tower
+      Stormwind.ModObjectLimit(FourCC("o06K"), 5); //Siege Tower
 
       //Ships
       Stormwind.ModObjectLimit(FourCC("hbot"), Faction.UNLIMITED); //Alliance Transport Ship
