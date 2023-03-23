@@ -9,7 +9,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
 
     public static void Setup()
     {
-      Draenei = new Faction("The Exodar", PLAYER_COLOR_NAVY, "|cff000080",
+      Draenei = new Faction(FactionNames.Draenai, PLAYER_COLOR_NAVY, "|cff000080",
         "ReplaceableTextures\\CommandButtons\\BTNBOSSVelen.blp")
       {
         StartingGold = 200,
@@ -37,7 +37,7 @@ The Exodar is a mighty fortress-base with the ability to move around the map, bu
       Draenei.ModObjectLimit(FourCC("u00U"), Faction.UNLIMITED); //Crystal Protector
       Draenei.ModObjectLimit(FourCC("u01Q"), Faction.UNLIMITED); //Crystal Protector improved
       Draenei.ModObjectLimit(FourCC("o059"), Faction.UNLIMITED); //Improved Ancient Protector
-      Draenei.ModObjectLimit(FourCC("o05U"), 1); //Lightforged Gateway
+      Draenei.ModObjectLimit(FourCC("o05U"), Faction.UNLIMITED); //Lightforged Gateway
 
       Draenei.ModObjectLimit(FourCC("o05A"), Faction.UNLIMITED); //Wisp
       Draenei.ModObjectLimit(FourCC("o05B"), Faction.UNLIMITED); //Defender
@@ -49,6 +49,10 @@ The Exodar is a mighty fortress-base with the ability to move around the map, bu
       Draenei.ModObjectLimit(FourCC("nmdr"), Faction.UNLIMITED); //Elekk
       Draenei.ModObjectLimit(FourCC("h09U"), 4); //Elekk Knight
       Draenei.ModObjectLimit(FourCC("u02H"), 6); //Nether Ray
+
+      Draenei.ModObjectLimit(FourCC("n0BJ"), 6); //Sharpshooter
+      Draenei.ModObjectLimit(FourCC("n0BP"), 4); //Juggernaut
+      Draenei.ModObjectLimit(FourCC("n0BM"), 8); //Nether Ray
 
       //Ships
       Draenei.ModObjectLimit(FourCC("etrs"), Faction.UNLIMITED); //Night Elf Transport Ship
@@ -63,6 +67,7 @@ The Exodar is a mighty fortress-base with the ability to move around the map, bu
       Draenei.ModObjectLimit(FourCC("H09S"), 1); //Maraad
       Draenei.ModObjectLimit(FourCC("E01I"), 1); //Velen
       Draenei.ModObjectLimit(FourCC("E01J"), 1); //Nobundo
+      Draenei.ModObjectLimit(FourCC("H09M"), 1); //Adal
 
       Draenei.ModObjectLimit(FourCC("R023"), Faction.UNLIMITED); //Spiritual Infusion
       Draenei.ModObjectLimit(FourCC("R078"), Faction.UNLIMITED); //Elementalist training

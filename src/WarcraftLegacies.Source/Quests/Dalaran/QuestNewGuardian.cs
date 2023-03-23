@@ -1,4 +1,4 @@
-using MacroTools.ArtifactSystem;
+﻿using MacroTools.ArtifactSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
@@ -20,15 +20,16 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
       _jaina = jaina;
       AddObjective(new ObjectiveLegendLevel(jaina, 15));
       AddObjective(new ObjectiveLegendHasArtifact(jaina, bookOfMedivh));
+      ResearchId = Constants.UPGRADE_R063_QUEST_COMPLETED_GUARDIAN_OF_TIRISFAL;
     }
 
     /// <inheritdoc/>
     protected override string RewardFlavour =>
-      "Dalaran has empowered Jaina to be the new Guardian of Tirisfal, endowing her with a portion of the Council of Tirisfal's power.";
+      "Dalaran has empowered Jaina to be the new Guardian of Tirisfal, endowing her with a portion of the Council of Tirisfal's power. Aegwynn will come back from exile to mentor Jaina in her new functions as Guardian.";
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
-      "Grant Jaina Chaos Damage, 20 additional Intelligence, Teleport, and Mana Shield";
+      "Grant Jaina Chaos Damage, 20 additional Intelligence, Teleport, and Mana Shield. Aegwynn will also be trainable at the altar.";
 
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)

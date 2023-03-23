@@ -12,13 +12,12 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
       Kultiras =
-        new Faction(
-          "Kul'tiras", PLAYER_COLOR_EMERALD, "|cff00781e", "ReplaceableTextures\\CommandButtons\\BTNProudmoore.blp")
-          {
-            StartingGold = 200,
-            StartingLumber = 700,
-            ControlPointDefenderUnitTypeId = Constants.UNIT_H09W_CONTROL_POINT_DEFENDER_KUL_TIRAS,
-            IntroText = @"You are playing as the maritime |cff008000Kingdom of Kul'tiras|r.
+        new Faction(FactionNames.KulTiras, PLAYER_COLOR_EMERALD, "|cff00781e", "ReplaceableTextures\\CommandButtons\\BTNProudmoore.blp")
+        {
+          StartingGold = 200,
+          StartingLumber = 700,
+          ControlPointDefenderUnitTypeId = Constants.UNIT_H09W_CONTROL_POINT_DEFENDER_KUL_TIRAS,
+          IntroText = @"You are playing as the maritime |cff008000Kingdom of Kul'tiras|r.
 
 You begin on Balor island, separated from your main forces in Kul Tiras. Unite your forces by eliminating your enemies in Tiragarde, Drustvar and Stormsong Valley.
 

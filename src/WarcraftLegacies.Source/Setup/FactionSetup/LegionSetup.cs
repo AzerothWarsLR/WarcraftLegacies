@@ -11,7 +11,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
     
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
-      Legion = new Faction("Legion", PLAYER_COLOR_PEANUT, "|CFFBF8F4F",
+      Legion = new Faction(FactionNames.Legion, PLAYER_COLOR_PEANUT, "|CFFBF8F4F",
         "ReplaceableTextures\\CommandButtons\\BTNKiljaedin.blp")
       {
         UndefeatedResearch = FourCC("R04T"),

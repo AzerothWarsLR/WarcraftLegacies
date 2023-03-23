@@ -13,7 +13,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
 
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem, Artifact helmOfDomination)
     {
-      Scourge = new Faction("Scourge", PLAYER_COLOR_PURPLE, "|c00540081",
+      Scourge = new Faction(FactionNames.Scourge, PLAYER_COLOR_PURPLE, "|c00540081",
         "ReplaceableTextures\\CommandButtons\\BTNRevenant.blp")
       {
         UndefeatedResearch = FourCC("R05K"),
@@ -113,7 +113,7 @@ When Plague hits Lordaeron, a great portal will be opened between Dragonblight a
       Scourge.ModAbilityAvailability(Constants.ABILITY_A0WG_SPELL_SHIELD_SPELL_BOOK_ORANGE_ANTONIDAS_RED_LICH_KING, -1);
       Scourge.ModAbilityAvailability(Constants.ABILITY_A0K2_RAISE_DEAD_AUTO_CAST_RED_TEMPLE_OF_THE_DAMNED_OFF, -1);
       Scourge.ModAbilityAvailability(Constants.ABILITY_A09N_PERMANENT_IMMOLATION_SCOURGE_ICECROWN_OBELISK, -1);
-      
+
       //Powers
       var visionPower = new VisionPower("All-Seeing",
         "Grants permanent vision over Northrend.",
@@ -131,7 +131,7 @@ When Plague hits Lordaeron, a great portal will be opened between Dragonblight a
           Regions.IcecrownShipyard
         });
       Scourge.AddPower(visionPower);
-      
+
       Scourge.AddGoldMine(preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-4939, 18803)));
 
       FactionManager.Register(Scourge);

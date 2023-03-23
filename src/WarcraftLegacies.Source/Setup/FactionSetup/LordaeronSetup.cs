@@ -11,7 +11,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
 
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
-      Lordaeron = new Faction("Lordaeron", PLAYER_COLOR_BLUE, "|c000042ff",
+      Lordaeron = new Faction(FactionNames.Lordaeron, PLAYER_COLOR_BLUE, "|c000042ff",
         "ReplaceableTextures\\CommandButtons\\BTNArthas.blp")
       {
         StartingGold = 200,
@@ -21,7 +21,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
         ControlPointDefenderUnitTypeId = Constants.UNIT_H03W_CONTROL_POINT_DEFENDER_LORDAERON,
         IntroText = @"You are playing as the great |cff4242ebKingdom of Lordaeron|r.
 
-You begin in Andorhal, isolated from your forces in the rest of the Kingdom, and the Plague of Undeadh is coming.
+You begin in Andorhal, isolated from your forces in the rest of the Kingdom, and the Plague of Undeath is coming.
 
 Secure your major settlements by clearing out clusters of enemies and fortify your Kingdom as much as possible.
 

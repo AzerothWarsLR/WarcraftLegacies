@@ -212,6 +212,8 @@ namespace WarcraftLegacies.Source.Setup
       DraeneiSpellSetup.Setup();
       WarsongSpellSetup.Setup();
       IronforgeSpellSetup.Setup();
+      SentinelSpellSetup.Setup();
+      DalaranSpellSetup.Setup();
     }
   }
 }

@@ -13,7 +13,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
     public LegendaryHero Maiev { get; }
     public LegendaryHero Tyrande { get; }
     public LegendaryHero Shandris { get; }
-    public LegendaryHero Jarod { get; }
+    public LegendaryHero Naisha { get; }
     public Capital Auberdine { get; }
     public Capital Feathermoon { get; }
     public Capital VaultOfTheWardens { get; }
@@ -41,18 +41,18 @@ namespace WarcraftLegacies.Source.Setup.Legends
       {
         UnitType = FourCC("Etyr"),
         PlayerColor = PLAYER_COLOR_CYAN,
-        StartingXp = 2400
+      };
+
+      Naisha = new LegendaryHero("Naisha")
+      {
+        UnitType = FourCC("E025"),
+        PlayerColor = PLAYER_COLOR_PINK,
+        StartingXp = 1800
       };
 
       Shandris = new LegendaryHero("Shandris Feathermoon")
       {
         UnitType = FourCC("E002"),
-      };
-
-      Jarod = new LegendaryHero("Jarod Shadowsong")
-      {
-        UnitType = FourCC("O02E"),
-        StartingXp = 4000
       };
 
       VaultOfTheWardens = new Capital
@@ -71,7 +71,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
       LegendaryHeroManager.Register(Maiev);
       LegendaryHeroManager.Register(Tyrande);
       LegendaryHeroManager.Register(Shandris);
-      LegendaryHeroManager.Register(Jarod);
+      LegendaryHeroManager.Register(Naisha);
       CapitalManager.Register(Auberdine);
       CapitalManager.Register(Feathermoon);
       CapitalManager.Register(BlackrookHold);

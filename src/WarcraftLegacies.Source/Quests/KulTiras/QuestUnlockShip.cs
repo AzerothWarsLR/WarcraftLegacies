@@ -11,6 +11,8 @@ using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
 using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.TimeBased;
+using MacroTools.ObjectiveSystem.Objectives.UnitBased;
+using System.Linq;
 
 namespace WarcraftLegacies.Source.Quests.KulTiras
 {
@@ -30,16 +32,13 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
     /// <param name="legendBoralus">Must be controlled to complete the quest.</param>
     /// <param name="daelinProudmoore">Must be controlled to complete the quest.</param>
     public QuestUnlockShip(Rectangle rescueRect, unit proudmooreCapitalShip, Capital legendBoralus,
-      LegendaryHero daelinProudmoore) : base("The Admiralty of Kul Tiras",
-      "Kul Tiras has degenerated severely in contemporary times. Bandits and vile monsters threaten the islands and the noble houses have split apart. We must quell these threats and reunite the kingdom's various regions under Daelin Proudmoore's command.",
+      LegendaryHero daelinProudmoore) : base("Stranglethorn Expedition",
+      "The Stranglethorn vale is still infested with trolls and pirates. If peace is to be brought back to the South Alliance, it needs to be purged",
       "ReplaceableTextures\\CommandButtons\\BTNGalleonIcon.blp")
     {
       AddObjective(new ObjectiveControlCapital(legendBoralus, false));
       AddObjective(new ObjectiveControlLegend(daelinProudmoore, false));
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N0BX_TIRAGARDE_SOUND_10GOLD_MIN)));
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N0BW_STORMSONG_VALLEY_10GOLD_MIN)));
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N0BV_DRUSTVAR_10GOLD_MIN)));
-      AddObjective(new ObjectiveExpire(900, Title));
+      AddObjective(new ObjectiveResearch(Constants.UPGRADE_R05J_STRANGLETHORN_EXPEDITION_KULTIRAS, Constants.UNIT_H046_BORALUS_KEEP_KUL_TIRAS));
       AddObjective(new ObjectiveSelfExists());
       _proudmooreCapitalShip = proudmooreCapitalShip;
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
@@ -47,21 +46,18 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
     }
 
     /// <inheritdoc/>
-    protected override string PenaltyFlavour =>
-      "You failed to reunite the Kul'Tiran kingdom. It will never rise to its former glory again.";
-
-    /// <inheritdoc/>
-    protected override string RewardFlavour => "The Kul'Tiran kingdom has been united once more. The Proudmoore Capital Ship is now ready to set sail!";
+    protected override string RewardFlavour => "The capital ship will set sail with the Kul'tiran navy army to Stranglethorn Vale.";
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
-      "Unlock the Proudmoore capital ship and the buildings inside";
+      "Unlock the Proudmoore capital ship and the buildings inside. Move all your non-worker units to Stranglethorn Vale";
 
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
     {
       if (completingFaction.Player != null)
       {
+        MoveStranglethorn(completingFaction.Player);
         completingFaction.Player.RescueGroup(_rescueUnits);
         _proudmooreCapitalShip.Rescue(completingFaction.Player);
       }
@@ -71,6 +67,20 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
         _proudmooreCapitalShip.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
       }
       _proudmooreCapitalShip.Pause(false);
+
+
+    }
+
+    private static void MoveStranglethorn(player whichPlayer)
+    {
+      foreach (var unit in CreateGroup().EnumUnitsInRect(Rectangle.WorldBounds).EmptyToList().Where(x => x.OwningPlayer() == whichPlayer))
+      {
+        if (!IsUnitType(unit, UNIT_TYPE_STRUCTURE) && !IsUnitType(unit, UNIT_TYPE_ANCIENT) && !IsUnitType(unit, UNIT_TYPE_PEON))
+          SetUnitPosition(unit, 9755, -21510);
+      }
+
+      if (GetLocalPlayer() == whichPlayer)
+        SetCameraPosition(9755, -21510);
     }
 
     /// <inheritdoc/>

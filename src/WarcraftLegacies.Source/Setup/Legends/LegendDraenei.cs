@@ -23,7 +23,6 @@ namespace WarcraftLegacies.Source.Setup.Legends
       LegendNobundo = new LegendaryHero("Nobundo")
       {
         UnitType = Constants.UNIT_E01J_HIGH_SHAMAN_DRUIDS,
-        StartingXp = 1800
       };
 
       LegendExodar = new Capital
@@ -40,6 +39,12 @@ namespace WarcraftLegacies.Source.Setup.Legends
       {
         UnitType = FourCC("H09S"),
         StartingXp = 1000
+      };
+
+      Maraad = new LegendaryHero("A'dal")
+      {
+        UnitType = FourCC("H09M"),
+        StartingXp = 5400
       };
 
       Velen = new LegendaryHero("Velen")

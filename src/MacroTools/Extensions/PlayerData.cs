@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using MacroTools.ControlPointSystem;
 using MacroTools.FactionSystem;
@@ -147,18 +147,10 @@ namespace MacroTools.Extensions
       }
     }
 
-    public int ControlPointCount
-    {
-      get => _controlPointCount;
-      set
-      {
-        if (value < 0)
-          throw new ArgumentOutOfRangeException(
-            $"Tried to assign a negative {nameof(ControlPointCount)} to + {GetPlayerName(Player)}");
-
-        _controlPointCount = value;
-      }
-    }
+    /// <summary>
+    /// Control points the player owns
+    /// </summary>
+    public List<ControlPoint> ControlPoints { get; set; } = new();
 
     /// <summary>
     /// The number of extra <see cref="ControlPoint.ControlLevel"/>s the player gets each turn.

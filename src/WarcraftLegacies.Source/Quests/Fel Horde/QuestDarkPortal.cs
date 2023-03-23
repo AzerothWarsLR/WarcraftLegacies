@@ -41,8 +41,8 @@ namespace WarcraftLegacies.Source.Quests.Fel_Horde
       _outerWaygate3 = outerWaygate3.Show(false);
       AddObjective(new ObjectiveEitherOf(
         new ObjectiveResearch(Constants.UPGRADE_R02C_OPEN_THE_DARK_PORTAL, Constants.UNIT_O008_HELLFIRE_CITADEL_FEL_HORDE),
-        new ObjectiveTime(540)));
-      AddObjective(new ObjectiveTime(360));
+        new ObjectiveTime(600)));
+      AddObjective(new ObjectiveTime(420));
       Global = true;
     }
 

@@ -1,4 +1,4 @@
-using MacroTools.Extensions;
+﻿using MacroTools.Extensions;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
@@ -27,6 +27,18 @@ namespace MacroTools.SpellSystem
     }
 
     /// <summary>
+    /// Causes the specified spell to be channeled at the caster's point.
+    /// </summary>
+    public static void ChannelAtCaster(unit caster, int abilityId, string orderId, int level, float duration)
+    {
+      CreateUnit(GetOwningPlayer(caster), DummyCaster.UnitTypeId, caster.GetPosition().X, caster.GetPosition().Y, 0)
+        .AddAbility(abilityId)
+        .SetAbilityLevel(abilityId, level)
+        .IssueOrder(orderId)
+        .SetTimedLife(duration);
+    }
+
+    /// <summary>
     /// Causes the specified ability to be cast from the specified object at the specified target.
     /// </summary>
     public static void DummyCastUnit(unit caster, int abilId, string orderId, int level, unit target, DummyCastOriginType originType)
@@ -38,7 +50,7 @@ namespace MacroTools.SpellSystem
         .AddAbility(abilId)
         .SetAbilityLevel(abilId, level);
 
-      if (originType == DummyCastOriginType.Caster) 
+      if (originType == DummyCastOriginType.Caster)
         DummyCaster.DummyUnit.FacePosition(target.GetPosition());
 
       DummyCaster.DummyUnit

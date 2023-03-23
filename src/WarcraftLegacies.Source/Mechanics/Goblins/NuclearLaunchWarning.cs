@@ -14,7 +14,8 @@ namespace WarcraftLegacies.Source.Mechanics.Goblins
     private readonly float _castTime;
     private readonly int _nuclearWarningUnitTypeId;
     private readonly string _warningSoundPath;
-    
+    private bool _warningActive;
+
     /// <summary>
     /// Initializes a new instance of the <see cref="NuclearLaunchWarning"/> class.
     /// </summary>
@@ -28,10 +29,13 @@ namespace WarcraftLegacies.Source.Mechanics.Goblins
       _warningSoundPath = warningSoundPath;
       _castTime = castTime;
     }
-    
+
     /// <inheritdoc />
     public override void OnOrderIssued()
     {
+      if (_warningActive)
+        return;
+
       var caster = GetTriggerUnit();
       var targetPoint = new Point(GetOrderPointX(), GetOrderPointY());
       var sound = new SoundWrapper(_warningSoundPath);
@@ -39,6 +43,18 @@ namespace WarcraftLegacies.Source.Mechanics.Goblins
       var dummyNukeWarning =
         CreateUnit(caster.OwningPlayer(), _nuclearWarningUnitTypeId, targetPoint.X, targetPoint.Y, 0);
       UnitApplyTimedLife(dummyNukeWarning, 0, _castTime);
+      BLockLaunchWarningAnimation();
+
+    }
+
+    private void BLockLaunchWarningAnimation()
+    {
+      _warningActive = true;
+      TimerStart(CreateTimer(), _castTime, false, () =>
+      {
+        _warningActive = false;
+        DestroyTimer(GetExpiredTimer());
+      });
     }
   }
 }

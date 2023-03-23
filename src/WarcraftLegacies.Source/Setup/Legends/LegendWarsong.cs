@@ -9,7 +9,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
     public LegendaryHero GromHellscream { get; }
     public LegendaryHero ChenStormstout { get; }
     public LegendaryHero Saurfang { get; }
-    public LegendaryHero Jergosh { get; }
+    public LegendaryHero Garrosh { get; }
     public Capital StonemaulKeep { get; }
     public Capital Orgrimmar { get; }
     
@@ -37,10 +37,10 @@ namespace WarcraftLegacies.Source.Setup.Legends
         StartingXp = 2800
       };
 
-      Jergosh = new LegendaryHero("Jergosh the Invoker")
+      Garrosh = new LegendaryHero("Garrosh Hellscream")
       {
-        UnitType = Constants.UNIT_O05O_RAGEFIRE_WARLOCK_WARSONG,
-        StartingXp = 5400
+        UnitType = Constants.UNIT_O06L_WARLORD_OF_THE_WARSONG_CLAN_WARSONG,
+        StartingXp = 8800
       };
 
       StonemaulKeep = new Capital
@@ -61,7 +61,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
       LegendaryHeroManager.Register(GromHellscream);
       LegendaryHeroManager.Register(ChenStormstout);
       LegendaryHeroManager.Register(Saurfang);
-      LegendaryHeroManager.Register(Jergosh);
+      LegendaryHeroManager.Register(Garrosh);
       CapitalManager.Register(StonemaulKeep);
       CapitalManager.Register(Orgrimmar);
     }

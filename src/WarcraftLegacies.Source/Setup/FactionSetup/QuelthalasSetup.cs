@@ -11,17 +11,15 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
 
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
-      Quelthalas =
-        new Faction(
-          "Quel'thalas", PLAYER_COLOR_CYAN, "|C0000FFFF",
+      Quelthalas = new Faction(FactionNames.QuelThalas, PLAYER_COLOR_CYAN, "|C0000FFFF",
           "ReplaceableTextures\\CommandButtons\\BTNSylvanusWindrunner.blp")
-        {
-          UndefeatedResearch = FourCC("R05U"),
-          StartingGold = 200,
-          StartingLumber = 700,
-          CinematicMusic = "BloodElfTheme",
-          ControlPointDefenderUnitTypeId = Constants.UNIT_N0BC_CONTROL_POINT_DEFENDER_QUELTHALAS,
-          IntroText = @"You are playing as the proud |cff32e1e1Kingdom of Quel'thalas|r.
+      {
+        UndefeatedResearch = FourCC("R05U"),
+        StartingGold = 200,
+        StartingLumber = 700,
+        CinematicMusic = "BloodElfTheme",
+        ControlPointDefenderUnitTypeId = Constants.UNIT_N0BC_CONTROL_POINT_DEFENDER_QUELTHALAS,
+        IntroText = @"You are playing as the proud |cff32e1e1Kingdom of Quel'thalas|r.
 
 You begin in Tranquilien, separated from Silvermoon.
 The Trolls of Zul'Aman have laid siege to the city, and are preparing attacks on your base.
@@ -29,7 +27,7 @@ The Trolls of Zul'Aman have laid siege to the city, and are preparing attacks on
 Train soldiers to repel the attacks, then gather enough strength to besiege Zul'Aman and take the head of Zul'jin.
 
 The Plague of Undeath is coming and Lordaeron will need your help with the Scourge soon. Be ready to join them as once you have secured Silvermoon and dealt with the Amani invasion."
-        };
+      };
 
       //Structures
       Quelthalas.ModObjectLimit(FourCC("h033"), Faction.UNLIMITED); //Steading
@@ -101,9 +99,9 @@ The Plague of Undeath is coming and Lordaeron will need your help with the Scour
 
       Quelthalas.ModAbilityAvailability(Constants.ABILITY_A0K5_DWARVEN_MASONRY_CASTLES_YELLOW, -1);
       Quelthalas.ModAbilityAvailability(Constants.ABILITY_A0OC_EXTRACT_VIAL_ALL, -1);
-      
+
       Quelthalas.AddGoldMine(preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(17716, 13000)));
-      
+
       FactionManager.Register(Quelthalas);
     }
   }

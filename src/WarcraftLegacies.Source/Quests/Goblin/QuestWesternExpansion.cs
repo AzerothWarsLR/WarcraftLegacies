@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.QuestSystem;
@@ -15,7 +15,7 @@ namespace WarcraftLegacies.Source.Quests.Goblin
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
-      $"Learn to train {GetObjectName(Constants.UNIT_H091_WAR_ZEPPELIN_GOBLIN)}s from the {Constants.UNIT_O01M_ENGINEER_S_GUILD_GOBLIN_SPECIALIST}";
+      $"Learn to train {GetObjectName(Constants.UNIT_H091_WAR_ZEPPELIN_GOBLIN)}s from the {GetObjectName(Constants.UNIT_O01M_ENGINEER_S_GUILD_GOBLIN_SPECIALIST)}";
 
     /// <summary>
     /// Initializesa  new instance of the <see cref="QuestWesternExpansion"/> class.

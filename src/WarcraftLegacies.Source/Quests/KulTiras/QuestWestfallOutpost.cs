@@ -11,14 +11,14 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestWestfallOutpost"/> class.
     /// </summary>
-    public QuestWestfallOutpost(Rectangle questRect) : base("Westfall Outpost",
-      "Stormwind faces the threat of annihilation at the hands of forces from beyond the Dark Portal, and they have called in our assistance. If we are to aid them, we must first establish a foothold on Westfall's coast.", "ReplaceableTextures\\CommandButtons\\BTNKultirasGryphonAviary.blp")
+    public QuestWestfallOutpost(Rectangle questRect) : base("Stranglethorn Outpost",
+      "Stormwind faces the threat of annihilation at the hands of forces from beyond the Dark Portal, and they have called in our assistance. If we are to aid them, we must first establish a foothold on Stranglethorn's coast.", "ReplaceableTextures\\CommandButtons\\BTNKultirasGryphonAviary.blp")
     {
       Required = true;
-      AddObjective(new ObjectiveBuildInRect(questRect, "in Westfall", Constants.UNIT_H06R_GARRISON_KUL_TIRAS_BARRACKS, 2));
-      AddObjective(new ObjectiveBuildInRect(questRect, "in Westfall", Constants.UNIT_H07Q_SCHOOL_OF_THE_TIDES_KUL_TIRAS_MAGIC));
-      AddObjective(new ObjectiveBuildInRect(questRect, "in Westfall", Constants.UNIT_H062_TOWN_HALL_KUL_TIRAS_T1));
-      AddObjective(new ObjectiveBuildInRect(questRect, "in Westfall", Constants.UNIT_H07P_WORKSHOP_KUL_TIRAS_SIEGE));
+      AddObjective(new ObjectiveBuildInRect(questRect, "in Stranglethorn", Constants.UNIT_H06R_GARRISON_KUL_TIRAS_BARRACKS, 2));
+      AddObjective(new ObjectiveBuildInRect(questRect, "in Stranglethorn", Constants.UNIT_H07Q_SCHOOL_OF_THE_TIDES_KUL_TIRAS_MAGIC));
+      AddObjective(new ObjectiveBuildInRect(questRect, "in Stranglethorn", Constants.UNIT_H062_TOWN_HALL_KUL_TIRAS_T1));
+      AddObjective(new ObjectiveBuildInRect(questRect, "in Stranglethorn", Constants.UNIT_H07P_WORKSHOP_KUL_TIRAS_SIEGE));
       ResearchId = Constants.UPGRADE_R06T_QUEST_COMPLETED_WESTFALL_OUTPOST;
     }
 

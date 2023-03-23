@@ -13,6 +13,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
     public LegendaryHero Ursoc { get; }
     public LegendaryHero Tortolla { get; }
     public Capital Nordrassil { get; }
+    public Capital Darnassus { get; }
     public static int UnittypeCenariusGhost => Constants.UNIT_E00H_DEMIGOD_OF_THE_NIGHT_ELVES_DRUIDS_GHOST;
 
     public LegendDruids(PreplacedUnitSystem preplacedUnitSystem)
@@ -51,6 +52,11 @@ namespace WarcraftLegacies.Source.Setup.Legends
       {
         Unit = preplacedUnitSystem.GetUnit(FourCC("n002")),
         Capturable = true
+      };
+
+      Darnassus = new Capital
+      {
+        Unit = preplacedUnitSystem.GetUnit(FourCC("o029")),
       };
 
       Tortolla = new LegendaryHero("Tortolla")

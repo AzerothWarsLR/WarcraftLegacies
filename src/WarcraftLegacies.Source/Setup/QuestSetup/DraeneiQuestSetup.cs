@@ -20,7 +20,6 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       draenei.StartingQuest = questRepairHull;
       draenei.AddQuest(questRepairHull);
       draenei.AddQuest(new QuestRebuildCivilisation(Regions.AzuremystAmbient));
-      draenei.AddQuest(new QuestBrokenOne(allLegendSetup.Draenei.Velen));
       draenei.AddQuest(new QuestShipArgus(
         preplacedUnitSystem.GetUnit(Constants.UNIT_H03V_ENTRANCE_PORTAL, Regions.OutlandToArgus.Center),
         preplacedUnitSystem.GetUnit(Constants.UNIT_H03V_ENTRANCE_PORTAL, Regions.TempestKeepSpawn.Center),
@@ -42,6 +41,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       var questDimensionalShip = new QuestDimensionalShip(Regions.Exodar_Interior_All,
         new List<QuestData> { questRepairHull, questRepairGenerator }, allLegendSetup.Draenei.LegendExodarGenerator);
       draenei.AddQuest(questDimensionalShip);
+      draenei.AddQuest(new QuestInterdimensionalPortal(Regions.MaelstromChannel));
     }
   }
 }

@@ -7,6 +7,7 @@ using MacroTools.QuestSystem;
 using WarcraftLegacies.Source.Quests;
 using WarcraftLegacies.Source.Setup.FactionSetup;
 using WCSharp.Shared.Data;
+using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup.QuestSetup
 {
@@ -26,8 +27,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       var dragonsOfNightmareTwo = CreateDragonsOfNightmareQuestTwo(preplacedUnitSystem);
       foreach (var faction in FactionManager.GetAllFactions())
       {
-        faction.AddQuest(dragonsOfNightmareTwo);
-        faction.AddQuest(dragonsOfNightmareOne);
+    
         faction.AddQuest(tombOfSargerasQuest);
         faction.AddQuest(new QuestZinrokhAssembly(new List<Artifact>
         {
@@ -41,12 +41,23 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
           artifactSetup.BookOfMedivh, faction == LegionSetup.Legion, faction == DalaranSetup.Dalaran));
         faction.AddQuest(new QuestSkullOfGuldan(allLegendSetup.Dalaran.Dalaran,
           preplacedUnitSystem.GetUnit(Constants.UNIT_N0DK_SKULL_OF_GUL_DAN_PEDESTAL),
-          faction == LegionSetup.Legion || faction == IllidanSetup.Illidan, artifactSetup.SkullOfGuldan));
+          faction == IllidanSetup.Illidan, artifactSetup.SkullOfGuldan));
         faction.AddQuest(ragnarosQuest);
       }
-
+      AddDragonsOfNightmareQuests(dragonsOfNightmareOne, dragonsOfNightmareTwo);
     }
-
+    private static void AddDragonsOfNightmareQuests(QuestDragonsOfNightmare dragonsOfNightmareOne, QuestDragonsOfNightmare dragonsOfNightmareTwo)
+    {
+      // These quests should only show up once they become relevant
+      TimerStart(CreateTimer(), 1500, false, () =>
+      {
+        foreach (var faction in FactionManager.GetAllFactions())
+        {
+          faction.AddQuest(dragonsOfNightmareTwo);
+          faction.AddQuest(dragonsOfNightmareOne);
+        }
+      });
+    }
     private static QuestDragonsOfNightmare CreateDragonsOfNightmareQuestOne(PreplacedUnitSystem preplacedUnitSystem)
     {
       var waygateOne = preplacedUnitSystem.GetUnit(Constants.UNIT_N07F_EMERALD_PORTAL_DRAGON_PORTALS, Regions.FeralasEmeraldPortal.Center).Show(false);
