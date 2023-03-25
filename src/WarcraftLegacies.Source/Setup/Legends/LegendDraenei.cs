@@ -46,7 +46,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
       {
         UnitType = FourCC("H09M"),
         PlayerColor = PLAYER_COLOR_BLUE,
-        StartingXp = 5400
+        StartingXp = 10800
       };
 
       Velen = new LegendaryHero("Velen")

@@ -13270,6 +13270,12 @@ STRING 2212
 Opens a two-way portal to the target location within a range of <A00D,Rng3>. The portal becomes useable after 5 seconds, and closes 10 seconds after the caster stops channeling.
 }
 
+STRING 2213
+// Units: n034 (Guild Ranger), Ubertip (Tooltip - Extended)
+{
+Agile, deadly and skilled Archers of the Sentinels.|n|cfff5962dAbilities: |RResistant Skin, Elune's Grace, Shadowmeld|n|n|cff99b4d1Can only train 12.|r|n|cffffcc00Attacks land and air units.|r
+}
+
 STRING 2214
 // Units: n06E (Shadowleaf), EditorSuffix (Name - Editor Suffix)
 {
@@ -54112,6 +54118,12 @@ STRING 9016
 E
 }
 
+STRING 9017
+// Units: h08V (Glaive Maiden), Ubertip (Tooltip - Extended)
+{
+Armored Guards of the Sentinels.|n|cfff5962dAbilities:|R Defend, Elune's Grace, War Plating|n|n|cffffcc00Attacks land units.|r
+}
+
 STRING 9020
 // Units: n099 (Ogre Mercenary), EditorSuffix (Name - Editor Suffix)
 {
@@ -64833,12 +64845,6 @@ STRING 10806
 // Abilities: A09S (Reincarnation), Researchubertip (Tooltip - Learn - Extended)
 {
 When killed, the Hero will come back to life. |n|n|cffffcc00Level 1|r - <A022,Cool1> cooldown. |n|cffffcc00Level 2|r - <A022,Cool2> cooldown. |n|cffffcc00Level 3|r - <A022,Cool3> cooldown.
-}
-
-STRING 10807
-// Units: h08V (Glaive Maiden), Ubertip (Tooltip - Extended)
-{
-Armored Guards of the Sentinels.|n|cfff5962dAbilities:|R Charge, War Plating|n|n|cffffcc00Attacks land units.|r
 }
 
 STRING 10808
@@ -107615,12 +107621,6 @@ STRING 17949
 // Buffs/Effects: B024 (), Buffubertip (Tooltip - Extended)
 {
 This unit is under Moving Earth; it will take damage over time.
-}
-
-STRING 17950
-// Units: n034 (Guild Ranger), Ubertip (Tooltip - Extended)
-{
-Agile, deadly and skilled Archers of the Sentinels.|n|cfff5962dAbilities: |RResistant Skin, Shadowmeld|n|n|cff99b4d1Can only train 12.|r|n|cffffcc00Attacks land and air units.|r
 }
 
 STRING 17951
