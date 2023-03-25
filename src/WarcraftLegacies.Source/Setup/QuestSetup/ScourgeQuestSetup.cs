@@ -48,23 +48,28 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       QuestPlague questPlague = new(plagueParameters, preplacedUnitSystem, LordaeronSetup.Lordaeron);
 
       QuestSapphiron questSapphiron = new(preplacedUnitSystem.GetUnit(Constants.UNIT_UBDR_SAPPHIRON_CREEP), allLegendSetup.Scourge.Kelthuzad);
-      QuestCorruptArthas questCorruptArthas = new(allLegendSetup.Lordaeron.Stratholme, allLegendSetup.Lordaeron.Arthas);
+      QuestDestroyStratholme questDestroyStratholme = new(allLegendSetup.Lordaeron.Stratholme, allLegendSetup.Lordaeron.Arthas);
+      QuestCorruptArthas questCorruptArthas = new(questDestroyStratholme, allLegendSetup.Lordaeron.Arthas);
       QuestLichKingArthas questLichKingArthas =
         new(preplacedUnitSystem.GetUnit(Constants.UNIT_H00O_UTGARDE_KEEP_SCOURGE_OTHER), artifactSetup.HelmOfDomination,
           allLegendSetup.Scourge.Arthas, allLegendSetup.Scourge.TheFrozenThrone);
 
       //Setup
-      ScourgeSetup.Scourge.AddQuest(questSpiderWar);
-      ScourgeSetup.Scourge.StartingQuest = questSpiderWar;
-      ScourgeSetup.Scourge.AddQuest(questDrakUnlock);
-      ScourgeSetup.Scourge.AddQuest(questPlague);
-      ScourgeSetup.Scourge.AddQuest(questSapphiron);
-      //Early duel
-      ScourgeSetup.Scourge.AddQuest(questCorruptArthas);
-      ScourgeSetup.Scourge.AddQuest(questKelthuzadLich);
-      ScourgeSetup.Scourge.AddQuest(questKelthuzadDies);
-      //Misc
-      ScourgeSetup.Scourge.AddQuest(questLichKingArthas);
+      if (ScourgeSetup.Scourge != null)
+      {
+        ScourgeSetup.Scourge.AddQuest(questSpiderWar);
+        ScourgeSetup.Scourge.StartingQuest = questSpiderWar;
+        ScourgeSetup.Scourge.AddQuest(questDrakUnlock);
+        ScourgeSetup.Scourge.AddQuest(questPlague);
+        ScourgeSetup.Scourge.AddQuest(questSapphiron);
+        //Early duel
+        ScourgeSetup.Scourge.AddQuest(questDestroyStratholme);
+        ScourgeSetup.Scourge.AddQuest(questCorruptArthas);
+        ScourgeSetup.Scourge.AddQuest(questKelthuzadLich);
+        ScourgeSetup.Scourge.AddQuest(questKelthuzadDies);
+        //Misc
+        ScourgeSetup.Scourge.AddQuest(questLichKingArthas);
+      }
     }
   }
 }

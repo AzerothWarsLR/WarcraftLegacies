@@ -1,10 +1,12 @@
-using MacroTools.Extensions;
+﻿using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.MetaBased;
+using MacroTools.ObjectiveSystem.Objectives.QuestBased;
 using MacroTools.QuestSystem;
+using WarcraftLegacies.Source.Powers;
 using WarcraftLegacies.Source.Setup.FactionSetup;
 using static War3Api.Common;
 
@@ -20,12 +22,12 @@ namespace WarcraftLegacies.Source.Quests.Scourge
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestCorruptArthas"/> class.
     /// </summary>
-    public QuestCorruptArthas(Capital stratholme, LegendaryHero arthas) : base("The Culling",
-      "When the city of Stratholme falls, Prince Arthas will abandon his people and join the Scourge as their champion.",
+    public QuestCorruptArthas(QuestData questDestroyStratholme, LegendaryHero arthas) : base("The Dark Champion",
+      "Driven by vengeance, Prince Arthas will abandon his people and join the Scourge as their champion.",
       "ReplaceableTextures\\CommandButtons\\BTNHeroDeathKnight.blp")
     {
       _arthas = arthas;
-      AddObjective(new ObjectiveCapitalDead(stratholme));
+      AddObjective(new ObjectiveCompleteQuest(questDestroyStratholme));
       AddObjective(new ObjectiveEitherOf(new ObjectiveLegendDead(arthas),
         new ObjectiveFactionDefeated(LordaeronSetup.Lordaeron)));
       AddObjective(new ObjectiveSelfExists());
@@ -49,7 +51,40 @@ namespace WarcraftLegacies.Source.Quests.Scourge
         arthas
           .Kill()
           .Remove();
+        completingFaction.RemovePowerByName("Eye of the Lich King");
       }
+    }
+  }
+
+  /// <summary>
+  /// 
+  /// </summary>
+  public class QuestDestroyStratholme : QuestData
+  {
+    private readonly LegendaryHero _arthas;
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="stratholme"></param>
+    /// <param name="arthas"></param>
+    public QuestDestroyStratholme(Capital stratholme, LegendaryHero arthas) : base("The Culling", "When the city of Stratholme falls, Prince Arthas' despair will make him more susceptible to the power of the Lich King.", "ReplaceableTextures\\CommandButtons\\BTNRuneblade.blp")
+    {
+      _arthas = arthas;
+      AddObjective(new ObjectiveCapitalDead(stratholme));
+      Required = true;
+    }
+
+    /// <inheritdoc />
+    protected override string RewardFlavour => "Prince Arthas could not protect the people of Stratholme. The Lich King's hold over him grows stronger.";
+
+    /// <inheritdoc />
+    protected override string RewardDescription => $"You gain the power Eye of the Lich King.";
+
+    /// <inheritdoc />
+    protected override void OnComplete(Faction completingFaction)
+    {
+      completingFaction.AddPower(new PingPower(_arthas, "Eye of the Lich King", 5, 10, true));
     }
   }
 }

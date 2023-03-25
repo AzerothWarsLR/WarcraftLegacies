@@ -366,6 +366,18 @@ namespace MacroTools.FactionSystem
     }
 
     /// <summary>
+    ///   Removes a <see cref="Power" /> from this <see cref="Faction" />.
+    /// </summary>
+    public void RemovePowerByName(string name)
+    {
+      var power = _powers.Where(x => x.Name == name).FirstOrDefault();
+      if (power == null)
+        throw new ArgumentException($"Unable to find power with name {name}");
+      _powers.Remove(power);
+      if (Player != null) power.OnRemove(Player);
+      PowerRemoved?.Invoke(this, new FactionPowerEventArgs(this, power));
+    }
+    /// <summary>
     ///   Gets the first <see cref="Power" /> this <see cref="Faction" /> has with the provided type.
     /// </summary>
     public T? GetPowerByType<T>() where T : Power
