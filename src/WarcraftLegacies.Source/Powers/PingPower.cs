@@ -17,6 +17,7 @@ namespace WarcraftLegacies.Source.Powers
     private bool _pingPeriodically;
 
     /// <param name="heroToPing">The pinged hero</param>
+    /// <param name="name">Name of the power</param>
     /// <param name="pingTime">The duration of the ping</param>
     /// <param name="pingInterval">The interval at which the ping occurs</param>
     /// <param name="pingPeriodically">If true repeats the ping, eles only pings once</param>
