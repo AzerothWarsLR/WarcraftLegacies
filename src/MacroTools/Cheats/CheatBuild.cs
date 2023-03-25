@@ -1,5 +1,4 @@
 ﻿using MacroTools.CommandSystem;
-using System;
 using System.Collections.Generic;
 using WCSharp.Events;
 using static War3Api.Common;
