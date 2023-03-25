@@ -1,7 +1,13 @@
-﻿using MacroTools.Extensions;
+﻿using MacroTools;
+using MacroTools.ControlPointSystem;
+using MacroTools.Extensions;
+using MacroTools.FactionSystem;
+using MacroTools.QuestSystem;
 using System;
 using WarcraftLegacies.Source.Setup;
 using WarcraftLegacies.Source.Setup.FactionSetup;
+using WCSharp.Shared.Data;
+using static System.Collections.Specialized.BitVector32;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.GameLogic
@@ -30,7 +36,7 @@ namespace WarcraftLegacies.Source.GameLogic
     /// <param name="duration"></param>
     public ZandalarGoblinChoiceDialogue(float duration)
     {
-   
+
       PickDialogue = DialogCreate();
       NoButton = DialogAddButton(PickDialogue, "Zandalari", 0);
       YesButton = DialogAddButton(PickDialogue, "Goblins", 0);
@@ -65,7 +71,7 @@ namespace WarcraftLegacies.Source.GameLogic
     {
       if (!_factionPicked)
       {
-        PickGoblin();
+        PickZandalar();
         return;
       }
 
@@ -81,20 +87,47 @@ namespace WarcraftLegacies.Source.GameLogic
 
     private void PickZandalar()
     {
+      Player(8).SetFaction(GoblinSetup.Goblin);
+      Player(8).SetTeam(TeamSetup.Horde);
+      RemoveFaction(GoblinSetup.Goblin, Regions.GoblinStartPos);
+
       Player(8).SetFaction(ZandalarSetup.Zandalar);
       Player(8).SetTeam(TeamSetup.Horde);
-      GoblinSetup.Goblin?.Obliterate();
+      foreach (var unit in CreateGroup().EnumUnitsInRect(Regions.TrollStartPos).EmptyToList())
+      {
+        unit.SetOwner(Player(8));
+      }
       _factionPicked = true;
       ConcludeFactionPick();
     }
 
     private void PickGoblin()
     {
+      Player(8).SetFaction(ZandalarSetup.Zandalar);
+      Player(8).SetTeam(TeamSetup.Horde);
+      RemoveFaction(ZandalarSetup.Zandalar, Regions.TrollStartPos);
+
       Player(8).SetFaction(GoblinSetup.Goblin);
       Player(8).SetTeam(TeamSetup.Horde);
-      ZandalarSetup.Zandalar?.Obliterate();
       _factionPicked = true;
       ConcludeFactionPick();
+    }
+
+    private void RemoveFaction(Faction faction, Rectangle rect)
+    {
+      faction.Leave();
+
+      foreach (var unit in CreateGroup().EnumUnitsInRect(rect).EmptyToList())
+      {
+        if (ControlPointManager.Instance.UnitIsControlPoint(unit))
+        {
+          SetUnitOwner(unit, Player(GetBJPlayerNeutralVictim()), true);
+        }
+        else
+        {
+          RemoveUnit(unit);
+        }
+      }
     }
   }
 }
