@@ -19,13 +19,11 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
     private readonly List<unit> _rescueUnits = new();
 
     public QuestAstranaar(List<Rectangle> rescueRects, LegendaryHero shandris) : base("Daughters of the Moon",
-      "Shandris need to reach the Dark Shore and warn the Sentinels of the Horde invadors",
+      "Shandris need to warn the Sentinels in Auberdine of the Horde invadors by sending a messenger.",
       "ReplaceableTextures\\CommandButtons\\BTNShandris.blp")
     {
-      AddObjective(new ObjectiveLegendReachRect(shandris, Regions.AstranaarUnlock,
-        "Astranaar Outpost"));
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N05N_WINDSHEAR_CROSSING_10GOLD_MIN)));
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N01Y_DESOLACE_15GOLD_MIN)));
+      AddObjective(new ObjectiveAnyUnitInRect(Regions.AuberdineUnlock,
+        "Auberdine", false));
       AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N05U_FEATHERMOON_STRONGHOLD_20GOLD_MIN)));
       AddObjective(new ObjectiveUpgrade(Constants.UNIT_N06P_SENTINEL_ENCLAVE_SENTINEL_T3, Constants.UNIT_N06J_SENTINEL_OUTPOST_SENTINEL_T1));
       AddObjective(new ObjectiveExpire(1430, Title));
@@ -48,7 +46,7 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
       "Auberdine has been reached and has joined the Sentinels in their war effort";
 
     /// <inheritdoc />
-    protected override string RewardDescription => "Control of all units in Astranaar Outpost and Auberdine. Tyrande, Maiev and Naisha will be trainable at Altar";
+    protected override string RewardDescription => "Control of all units in Astranaar Outpost and Auberdine. Maiev and Naisha will be trainable at Altar";
 
     /// <inheritdoc />
     protected override void OnFail(Faction completingFaction)
