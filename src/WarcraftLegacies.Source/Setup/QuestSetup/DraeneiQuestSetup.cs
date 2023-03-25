@@ -15,8 +15,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       var draenei = DraeneiSetup.Draenei;
       if (draenei == null) 
         return;
-      var questRepairHull = new QuestRepairExodarHull(Regions.Exodar_Interior_All, allLegendSetup.Draenei.LegendExodar,
-        allLegendSetup.Draenei.LegendExodarGenerator);
+      var questRepairHull = new QuestRepairExodarHull(Regions.ExodarBaseUnlock, allLegendSetup.Draenei.LegendExodar);
       draenei.StartingQuest = questRepairHull;
       draenei.AddQuest(questRepairHull);
       draenei.AddQuest(new QuestRebuildCivilisation(Regions.AzuremystAmbient));
@@ -38,10 +37,9 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       });
       draenei.AddQuest(questRepairGenerator);
       draenei.AddQuest(new QuestTriumvirate(allLegendSetup.Draenei.Velen));
-      var questDimensionalShip = new QuestDimensionalShip(Regions.Exodar_Interior_All,
+      var questDimensionalShip = new QuestDimensionalShip(Regions.ExodarBaseUnlock,
         new List<QuestData> { questRepairHull, questRepairGenerator }, allLegendSetup.Draenei.LegendExodarGenerator);
       draenei.AddQuest(questDimensionalShip);
-      draenei.AddQuest(new QuestInterdimensionalPortal(Regions.MaelstromChannel));
     }
   }
 }

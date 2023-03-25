@@ -12678,6 +12678,12 @@ STRING 2113
 Ahn'Qiraj
 }
 
+STRING 2114
+// Units: h09H (Siege Walker), Ubertip (Tooltip - Extended)
+{
+Long range siege vehicle, adept at shooting down air units.|n|cfff5962dAbilities:|R Goblin Pilot, Emergency Repairs, Oil Consumer|n|n|cff99b4d1Can only build 5.|r|n|cffffcc00Attacks land and air units.|r
+}
+
 STRING 2115
 // Units: o04B (Cultist), EditorSuffix (Name - Editor Suffix)
 {
@@ -14235,6 +14241,12 @@ STRING 2374
 Azsuna (15gold/min)
 }
 
+STRING 2375
+// Doodads: D05W (Dalaran Shield), Name (Name)
+{
+Dalaran Shield
+}
+
 STRING 2376
 // Units: n04W (Havenshire (10gold/min)), Name (Name)
 {
@@ -14758,6 +14770,12 @@ STRING 2462
 Grim Batol (10gold/min)
 }
 
+STRING 2463
+// Abilities: A0EW (Building Damage Aura), EditorSuffix (Editor Suffix)
+{
+(Dalaran Shield)
+}
+
 STRING 2464
 // Units: n03V (Sea Elemental), EditorSuffix (Name - Editor Suffix)
 {
@@ -14930,6 +14948,12 @@ STRING 2492
 // Units: Harf (High King), Name (Name)
 {
 High King
+}
+
+STRING 2493
+// Abilities: A0N8 (Citadel Shield), EditorSuffix (Editor Suffix)
+{
+(Antonidas)
 }
 
 STRING 2494
@@ -15743,6 +15767,12 @@ STRING 2629
 // Units: n00F (Sholazar Basin (15gold/min)), Name (Name)
 {
 Sholazar Basin (15gold/min)
+}
+
+STRING 2630
+// Abilities: A0N8 (Citadel Shield), Researchubertip (Tooltip - Learn - Extended)
+{
+Summons a Black Hole that slows enemy units' movement speed by 90% and damages enemy units for 15 damage per second. If they within 200 range of the Black Hole, they take 100 damage per second. |n|n|cffffcc00Level 1|r - 240 cooldown. 6 seconds duration. |n|cffffcc00Level 2|r - 160 cooldown. 9 seconds duration. |n|cffffcc00Level 3|r - 120 cooldown. 12 seconds duration.
 }
 
 STRING 2631
@@ -18367,7 +18397,7 @@ Train Pikeman
 }
 
 STRING 3067
-// Doodads: D05W (Dalaran Shield), Name (Name)
+// Units: n0D0 (Dalaran Shield), Name (Name)
 {
 Dalaran Shield
 }
@@ -36945,12 +36975,6 @@ STRING 6163
 // Units: o01S (War Camp), Ubertip (Tooltip - Extended)
 {
 Brutal training ground for the Warsong warriors.|n|cfff5962dTrains:|r Grunt, Axe Thrower, Blademaster|n|cfff5962dResearches:|R Brute Strength
-}
-
-STRING 6164
-// Units: h09H (Siege Walker), Ubertip (Tooltip - Extended)
-{
-Long range siege vehicle, adept at shooting down air units.|n|cfff5962dAbilities:|R Goblin Pilot, Emergency Repairs, Oil Consumer|n|n|cff99b4d1Can only build 7.|r|n|cffffcc00Attacks land and air units.|r
 }
 
 STRING 6165
@@ -75219,6 +75243,12 @@ STRING 12536
 Reduces all ranged attacks on the unit by <A0VI,DataC1> damage. Attacks cannot be reduced below <A0VI,DataB1> damage.
 }
 
+STRING 12537
+// Abilities: A0N8 (Citadel Shield), Tip (Tooltip - Normal)
+{
+Citadel Shield - [|cffffcc00Level 2|r]
+}
+
 STRING 12538
 // Abilities: A021 (Flamestrike by sword), Name (Name)
 {
@@ -78098,6 +78128,18 @@ STRING 13017
 // Items: I00Y (Summon Drone), Hotkey (Hotkey)
 {
 X
+}
+
+STRING 13018
+// Abilities: A0N8 (Citadel Shield), Tip (Tooltip - Normal)
+{
+Citadel Shield - [|cffffcc00Level 3|r]
+}
+
+STRING 13019
+// Abilities: A0N8 (Citadel Shield), Ubertip (Tooltip - Normal - Extended)
+{
+Summons a Black Hole that slows enemy units' movement speed by 90% and damages enemy units for 15 damage per second. If they within 200 range of the Black Hole, they take 100 damage per second.
 }
 
 STRING 13020
@@ -81478,6 +81520,12 @@ STRING 13582
 Increases Moonhunters' mana capacity, mana regeneration rate, attack damage and gives the ability Acid Bomb.
 }
 
+STRING 13583
+// Abilities: A0N8 (Citadel Shield), Ubertip (Tooltip - Normal - Extended)
+{
+Summons a Black Hole that slows enemy units' movement speed by 90% and damages enemy units for 15 damage per second. If they within 200 range of the Black Hole, they take 100 damage per second.
+}
+
 STRING 13584
 // Abilities: A0HG (Unholy Armor), Name (Name)
 {
@@ -83896,6 +83944,12 @@ STRING 13986
  (Warsong)
 }
 
+STRING 13987
+// Abilities: A0N8 (Citadel Shield), Ubertip (Tooltip - Normal - Extended)
+{
+Summons a Black Hole that slows enemy units' movement speed by 90% and damages enemy units for 15 damage per second. If they within 200 range of the Black Hole, they take 100 damage per second.
+}
+
 STRING 13988
 // Doodads: D020 (Ashenvale Lights), Name (Name)
 {
@@ -85472,6 +85526,12 @@ STRING 14250
 // Upgrades: R064 (Nature's Blessing), Ubertip (Tooltip - Extended)
 {
 Upgrades all structures' hit points and armor.
+}
+
+STRING 14251
+// Abilities: A0N8 (Citadel Shield), Name (Name)
+{
+Citadel Shield
 }
 
 STRING 14252
@@ -99004,6 +99064,18 @@ STRING 16514
 Wrath of Ragnaros - [|cffffcc00Level 3|r]
 }
 
+STRING 16515
+// Abilities: A0N8 (Citadel Shield), Researchtip (Tooltip - Learn)
+{
+Learn Citadel Shield
+}
+
+STRING 16516
+// Abilities: A0N8 (Citadel Shield), Tip (Tooltip - Normal)
+{
+Citadel Shield - [|cffffcc00Level 1|r]
+}
+
 STRING 16517
 // Doodads: D064 (Pyramid), Name (Name)
 {
@@ -107833,6 +107905,12 @@ STRING 17987
 Q
 }
 
+STRING 17988
+// Abilities: A0N8 (Citadel Shield), Tip (Tooltip - Normal)
+{
+Citadel Shield - [|cffffcc00Level 4|r]
+}
+
 STRING 17989
 // Items: I011 (Crown of the Triumvirate), Ubertip (Tooltip - Extended)
 {
@@ -111154,7 +111232,7 @@ Train Bear Rider
 }
 
 STRING 18542
-// Upgrades: Rora (Steel Ranged Weapons,Thorium Ranged Weapons,Arcanite Ranged Weapons), Hotkey (Hotkey)
+// Abilities: A0N8 (Citadel Shield), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -111190,7 +111268,7 @@ E
 }
 
 STRING 18548
-// Upgrades: Rora (Steel Ranged Weapons,Thorium Ranged Weapons,Arcanite Ranged Weapons), Hotkey (Hotkey)
+// Abilities: A0N8 (Citadel Shield), Researchhotkey (Hotkey - Learn)
 {
 W
 }
@@ -111214,7 +111292,7 @@ Q
 }
 
 STRING 18552
-// Upgrades: Rhra (Black Gunpowder,Refined Gunpowder,Imbued Gunpowder), Hotkey (Hotkey)
+// Upgrades: Rora (Steel Ranged Weapons,Thorium Ranged Weapons,Arcanite Ranged Weapons), Hotkey (Hotkey)
 {
 W
 }
@@ -111244,7 +111322,7 @@ E
 }
 
 STRING 18557
-// Upgrades: Rhra (Black Gunpowder,Refined Gunpowder,Imbued Gunpowder), Hotkey (Hotkey)
+// Upgrades: Rora (Steel Ranged Weapons,Thorium Ranged Weapons,Arcanite Ranged Weapons), Hotkey (Hotkey)
 {
 W
 }
@@ -111274,7 +111352,7 @@ STRING 18561
 }
 
 STRING 18562
-// Upgrades: Rhac (Improved Masonry,Advanced Masonry,Imbued Masonry), Hotkey (Hotkey)
+// Upgrades: Rhra (Black Gunpowder,Refined Gunpowder,Imbued Gunpowder), Hotkey (Hotkey)
 {
 W
 }
@@ -111304,7 +111382,7 @@ Gilneas Cathedral
 }
 
 STRING 18567
-// Upgrades: Rhac (Improved Masonry,Advanced Masonry,Imbued Masonry), Hotkey (Hotkey)
+// Upgrades: Rhra (Black Gunpowder,Refined Gunpowder,Imbued Gunpowder), Hotkey (Hotkey)
 {
 W
 }
@@ -114628,12 +114706,6 @@ STRING 19120
 The hero unleashes devastating roar that reduces attack damage of all nearby enemy units by 100%. 9 seconds duration. Lasts 7 second on heroes.
 }
 
-STRING 19121
-// Upgrades: R04H (Chaos), Name (Name)
-{
-Quest Completed: The Interdimensional Gateway
-}
-
 STRING 19122
 // Upgrades: R092 (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
 {
@@ -116676,7 +116748,7 @@ Thunder Fists - [|cffffcc00Level 3|r]
 }
 
 STRING 19462
-// Upgrades: R01B (Defend), Hotkey (Hotkey)
+// Upgrades: Rhac (Improved Masonry,Advanced Masonry,Imbued Masonry), Hotkey (Hotkey)
 {
 W
 }
@@ -118746,7 +118818,7 @@ Thunder Fists - [|cffffcc00Level 4|r]
 }
 
 STRING 19807
-// Upgrades: R07I (Necromancer Adept Training,Necromancer Master Training), Hotkey (Hotkey)
+// Upgrades: Rhac (Improved Masonry,Advanced Masonry,Imbued Masonry), Hotkey (Hotkey)
 {
 W
 }
@@ -119730,7 +119802,7 @@ STRING 19970
 }
 
 STRING 19971
-// Upgrades: R07I (Necromancer Adept Training,Necromancer Master Training), Hotkey (Hotkey)
+// Upgrades: R01B (Defend), Hotkey (Hotkey)
 {
 W
 }
@@ -120327,6 +120399,12 @@ STRING 20070
 // Abilities: A10J (Master of Lightning), Tip (Tooltip - Normal)
 {
 Thunder Fists - [|cffffcc00Level 3|r]
+}
+
+STRING 20071
+// Upgrades: R07I (Necromancer Adept Training,Necromancer Master Training), Hotkey (Hotkey)
+{
+W
 }
 
 STRING 20072
@@ -121029,6 +121107,12 @@ STRING 20188
 // Abilities: A10O (Enchanted Bolt), Name (Name)
 {
 Enchanted Bolt
+}
+
+STRING 20189
+// Upgrades: R07I (Necromancer Adept Training,Necromancer Master Training), Hotkey (Hotkey)
+{
+W
 }
 
 STRING 20191

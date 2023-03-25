@@ -19,14 +19,6 @@ namespace WarcraftLegacies.Source.Setup.Spells
     /// </summary>
     public static void Setup()
     {
-      SpellSystem.Register(new WaygateOpen(Constants.ABILITY_A0N8_OPEN_EXODAR_EXODAR)
-      {
-        InteriorWaygateUnitTypeId = Constants.UNIT_H03V_ENTRANCE_PORTAL,
-        ExteriorWaygateUnitTypeId = Constants.UNIT_H05T_INSTANCE_ENTRANCE_PORTAL,
-        GetExteriorWaygatePosition = () => new Point(GetUnitX(GetTriggerUnit()) - 200, GetUnitY(GetTriggerUnit()) - 200),
-        GetInteriorWaygatePosition = () => Regions.Exodar_South_Interior.Center
-      });
-
       //Azuremyst
       SpellSystem.Register(new SlipstreamSpellSpecificLocation(Constants.ABILITY_A0P9_DIMENSIONAL_JUMP_TO_AZUREMYST_DRAENEI_AZUREMYST)
       {

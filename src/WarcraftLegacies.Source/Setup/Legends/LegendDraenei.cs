@@ -9,6 +9,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
   {
     public LegendaryHero Velen { get; }
     public LegendaryHero Maraad { get; }
+    public LegendaryHero Adal { get; }
     public LegendaryHero LegendNobundo { get; }
     public Capital LegendExodar { get; }
     public Capital LegendExodarGenerator { get; }
@@ -41,9 +42,10 @@ namespace WarcraftLegacies.Source.Setup.Legends
         StartingXp = 1000
       };
 
-      Maraad = new LegendaryHero("A'dal")
+      Adal = new LegendaryHero("A'dal")
       {
         UnitType = FourCC("H09M"),
+        PlayerColor = PLAYER_COLOR_BLUE,
         StartingXp = 5400
       };
 
@@ -72,6 +74,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
     {
       LegendaryHeroManager.Register(Velen);
       LegendaryHeroManager.Register(Maraad);
+      LegendaryHeroManager.Register(Adal);
       LegendaryHeroManager.Register(LegendNobundo);
       CapitalManager.Register(LegendExodar);
       CapitalManager.Register(LegendExodarGenerator);

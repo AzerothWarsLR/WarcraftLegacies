@@ -31,15 +31,6 @@ namespace WarcraftLegacies.Source.Setup
         () => proudmooreFlagshipUnit.GetPosition()));
       InstanceSystem.Register(proudmooreFlagshipInterior);
 
-      var draeneiShipInterior = new Instance("Draenei Ship interior", Regions.Exodar_Interior_All);
-      var exodarRegalis = preplacedUnitSystem.GetUnit(Constants.UNIT_E01X_EXODAR_REGALIS_DRAENEI_SPACESHIP);
-      draeneiShipInterior.AddDependency(exodarRegalis);
-      draeneiShipInterior.AddDependency(preplacedUnitSystem.GetUnit(Constants.UNIT_N00E_DIMENSIONAL_GENERATOR_DRAENEI));
-      draeneiShipInterior.AddGate(new Gate(
-        () => Regions.Exodar_South_Interior.Center, 
-        () => exodarRegalis.GetPosition()));
-      InstanceSystem.Register(draeneiShipInterior);
-
       InstanceSystem.Register(new Instance("Artifact dummy area", Regions.ArtifactDummyInstance));
     }
   }
