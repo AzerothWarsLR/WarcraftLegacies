@@ -1,13 +1,12 @@
 ﻿using System;
 using MacroTools.Augments;
 using MacroTools.Extensions;
-using MacroTools.FactionSystem;
 using MacroTools.Frames;
 using static War3Api.Common;
 
 namespace MacroTools.BookSystem.Augments
 {
-   public sealed class AugmentCard : Card
+  public sealed class AugmentCard : Card
    {
       private const float BoxWidth = 0.16f;
       private const float BoxHeight = 0.28f;
