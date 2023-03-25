@@ -25,7 +25,7 @@ namespace WarcraftLegacies.Source.Quests.Draenei
       "ReplaceableTextures\\CommandButtons\\BTNDraeneiVaultOfRelics.blp")
     {
       Required = true;
-      AddObjective(new ObjectiveUnitAlive(exodar.Unit));
+      AddObjective(new ObjectiveUpgrade(Constants.UNIT_O051_DIVINE_CITADEL_DRAENEI_T3, Constants.UNIT_O02P_CRYSTAL_HALL_DRAENEI_T1));
       AddObjective(new ObjectiveUnitReachesFullHealth(exodar.Unit));
       AddObjective(new ObjectiveKillAllInArea(new List<Rectangle> { Regions.AzuremystAmbient }, "on Azuremyst Isle"));
       AddObjective(new ObjectiveSelfExists());
