@@ -29,6 +29,7 @@ namespace WarcraftLegacies.Source.Powers
       _pingPeriodically = pingPeriodically;
       _pingTimer = CreateTimer();
       Name = name;
+      IconName = "HelmofDomination";
       Description = $"Ping {heroToPing.Name} on the map every {pingInterval / 60} turns for {pingTime} seconds.";
     }
 
