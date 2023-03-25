@@ -13270,12 +13270,6 @@ STRING 2212
 Opens a two-way portal to the target location within a range of <A00D,Rng3>. The portal becomes useable after 5 seconds, and closes 10 seconds after the caster stops channeling.
 }
 
-STRING 2213
-// Abilities: A055 (Defensive Orbs), Researchubertip (Tooltip - Learn - Extended)
-{
-Causes the caster to generate an arcane orb whenever they cast a spell. The orb orbits around the caster for 45 seconds, dealing damage to enemy units it strikes. |n|n|cffffcc00Level 1|r - 50 damage. |n|cffffcc00Level 2|r - 75 damage. |n|cffffcc00Level 3|r - 100 damage. |n|cffffcc00Level 3|r - 125 damage.
-}
-
 STRING 2214
 // Units: n06E (Shadowleaf), EditorSuffix (Name - Editor Suffix)
 {
@@ -21635,7 +21629,7 @@ Q
 }
 
 STRING 3607
-// Abilities: A0YZ (Joy of the Hunt), EditorSuffix (Editor Suffix)
+// Abilities: A0YZ (), EditorSuffix (Editor Suffix)
 {
 (sentinel)
 }
@@ -36975,6 +36969,12 @@ STRING 6163
 // Units: o01S (War Camp), Ubertip (Tooltip - Extended)
 {
 Brutal training ground for the Warsong warriors.|n|cfff5962dTrains:|r Grunt, Axe Thrower, Blademaster|n|cfff5962dResearches:|R Brute Strength
+}
+
+STRING 6164
+// Abilities: A11R (Unspoiled Wilderness), EditorSuffix (Editor Suffix)
+{
+(sentinel power)
 }
 
 STRING 6165
@@ -54112,24 +54112,6 @@ STRING 9016
 E
 }
 
-STRING 9017
-// Abilities: A055 (Defensive Orbs), Ubertip (Tooltip - Normal - Extended)
-{
-Causes the caster to generate an arcane orb whenever they cast a spell. The orb orbits around the caster for 45 seconds, dealing 125 damage to enemy units it strikes.
-}
-
-STRING 9018
-// Abilities: A055 (Defensive Orbs), Ubertip (Tooltip - Normal - Extended)
-{
-Causes the caster to generate an arcane orb whenever they cast a spell. The orb orbits around the caster for 45 seconds, dealing 50 damage to enemy units it strikes.
-}
-
-STRING 9019
-// Abilities: A055 (Defensive Orbs), Ubertip (Tooltip - Normal - Extended)
-{
-Causes the caster to generate an arcane orb whenever they cast a spell. The orb orbits around the caster for 45 seconds, dealing 100 damage to enemy units it strikes.
-}
-
 STRING 9020
 // Units: n099 (Ogre Mercenary), EditorSuffix (Name - Editor Suffix)
 {
@@ -66240,13 +66222,13 @@ Conveyance Aura
 }
 
 STRING 11038
-// Abilities: A0YZ (Joy of the Hunt), Researchtip (Tooltip - Learn)
+// Abilities: A0YZ (), Researchtip (Tooltip - Learn)
 {
 |cffffcc00(E)|r - Learn Conveyance Aura - [|cffffcc00Level %d|r]
 }
 
 STRING 11039
-// Abilities: A0YZ (Joy of the Hunt), Researchubertip (Tooltip - Learn - Extended)
+// Abilities: A0YZ (), Researchubertip (Tooltip - Learn - Extended)
 {
 Galen has always been an adept commander and his skills give his armies increased mobility. Increases the movement speed of all nearby friendly units.|n|n|cffffcc00Level 1|r - 15% increased movement speed. |n|cffffcc00Level 2|r - 20% increased movement speed. |n|cffffcc00Level 3|r - 25% increased movement speed. |n|cffffcc00Level 4|r - 30% increased movement speed. |n
 }
@@ -66288,13 +66270,13 @@ Increases nearby friendly units' movement speed by 20%.
 }
 
 STRING 11046
-// Abilities: A0YZ (Joy of the Hunt), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A0YZ (), Ubertip (Tooltip - Normal - Extended)
 {
 Increases nearby friendly units' movement speed by 25%.
 }
 
 STRING 11047
-// Abilities: A0YZ (Joy of the Hunt), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A0YZ (), Ubertip (Tooltip - Normal - Extended)
 {
 Increases nearby friendly units' movement speed by 30%.
 }
@@ -77224,12 +77206,6 @@ STRING 12866
 (dalaran)
 }
 
-STRING 12867
-// Units: H09N (Matriarch of Tirisfal), Ubertip (Tooltip - Extended)
-{
-Mystical Hero, adept at area of effect and damage.|n|cfff5962dCan learn:|R Comet Strike, Enchanted Bolt, Mana Burn, Reborn through Time|n|n|cffffcc00Attacks land and air units.|R
-}
-
 STRING 12868
 // Abilities: AEmb (Mana Burn), Researchubertip (Tooltip - Learn - Extended)
 {
@@ -78071,13 +78047,13 @@ Primary defensive structure.|n|cfff5962dUpgrades Into:|R Improved Hunter Tower|n
 }
 
 STRING 13008
-// Buffs/Effects: B0AG (), Bufftip (Tooltip)
+// Buffs/Effects: B0AH (), Bufftip (Tooltip)
 {
 Hunt Aura
 }
 
 STRING 13009
-// Buffs/Effects: B0AG (), Buffubertip (Tooltip - Extended)
+// Buffs/Effects: B0AH (), Buffubertip (Tooltip - Extended)
 {
 This unit is under the effects of Hunt Aura; it has an increased movement speed.
 }
@@ -80795,7 +80771,7 @@ Lordaeron Knights
 }
 
 STRING 13462
-// Abilities: A0YZ (Joy of the Hunt), Tip (Tooltip - Normal)
+// Abilities: A0YZ (), Tip (Tooltip - Normal)
 {
 Conveyance Aura - [|cffffcc00Level 2|r]
 }
@@ -81302,12 +81278,6 @@ STRING 13546
 // Buffs/Effects: B036 (Naval Aura), Bufftip (Tooltip)
 {
 Naval Aura
-}
-
-STRING 13547
-// Buffs/Effects: B0AH (), Bufftip (Tooltip)
-{
-Hunt Aura
 }
 
 STRING 13548
@@ -85052,12 +85022,6 @@ STRING 14171
 // Upgrades: R01E (Chaos), EditorSuffix (Editor Suffix)
 {
 (Lordaeron)
-}
-
-STRING 14172
-// Buffs/Effects: B0AH (), Buffubertip (Tooltip - Extended)
-{
-This unit is under the effects of Hunt Aura; it has an increased movement speed.
 }
 
 STRING 14173
@@ -89913,12 +89877,6 @@ STRING 14981
 // Upgrades: Reib (Improved Bows), Ubertip (Tooltip - Extended)
 {
 Increases the attack range of Archers, Guild Rangers, Priestess of the Moon, Moon Rider and Hippogryph Rider by an additional 100.
-}
-
-STRING 14982
-// Abilities: A055 (Defensive Orbs), Ubertip (Tooltip - Normal - Extended)
-{
-Causes the caster to generate an arcane orb whenever they cast a spell. The orb orbits around the caster for 45 seconds, dealing 75 damage to enemy units it strikes.
 }
 
 STRING 14983
@@ -100000,12 +99958,6 @@ STRING 16670
 Train Orcish Death Knight
 }
 
-STRING 16671
-// Abilities: A0YZ (Joy of the Hunt), Name (Name)
-{
-Joy of the Hunt
-}
-
 STRING 16672
 // Units: o04W (Golden Vessel), EditorSuffix (Name - Editor Suffix)
 {
@@ -100022,18 +99974,6 @@ STRING 16674
 // Abilities: A0TW (Field of Blood), Researchubertip (Tooltip - Learn - Extended)
 {
 Conjures a field of churning blood which heals allied ground units in a target area over time. |n|n|cffffcc00Level 1|r - Heals 150 hitpoints over 5 seconds, then 10 hitpoint every 1 seconds for 35 seconds.|n|cffffcc00Level 2|r - Heals 200 hitpoints over 5 seconds, then 15 hitpoint every 1 seconds for 35 seconds.|n|cffffcc00Level 3|r - Heals 250 hitpoints over 5 seconds, then 20 hitpoint every 1 seconds for 35 seconds.|n
-}
-
-STRING 16675
-// Abilities: A0YZ (Joy of the Hunt), Tip (Tooltip - Normal)
-{
-Joy of the Hunt
-}
-
-STRING 16676
-// Abilities: A0YZ (Joy of the Hunt), Ubertip (Tooltip - Normal - Extended)
-{
-Increases nearby friendly units' movement speed by 15%.|nThis ability will stack with Driven by Vengance.
 }
 
 STRING 16677
@@ -102260,6 +102200,12 @@ STRING 17047
 // Units: Harf (High King), Ubertip (Tooltip - Extended)
 {
 Warrior Hero, adept at destroying the enemy and enduring.|n|cfff5962dAbilities:|r Divine Shield |n|cfff5962dCan learn:|R Holy Nova, Call Royal Guard, Holy Aura, Solar Judgement|n|n|cffffcc00Attacks land units.|R
+}
+
+STRING 17048
+// Abilities: A11R (Unspoiled Wilderness), Name (Name)
+{
+Unspoiled Wilderness
 }
 
 STRING 17049
@@ -114700,6 +114646,12 @@ STRING 19120
 The hero unleashes devastating roar that reduces attack damage of all nearby enemy units by 100%. 9 seconds duration. Lasts 7 second on heroes.
 }
 
+STRING 19121
+// Abilities: A11R (Unspoiled Wilderness), Tip (Tooltip - Normal)
+{
+Unspoiled Wilderness
+}
+
 STRING 19122
 // Upgrades: R092 (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
 {
@@ -114899,7 +114851,7 @@ Deactivate Mana Shield
 }
 
 STRING 19155
-// Abilities: A0YZ (Joy of the Hunt), Tip (Tooltip - Normal)
+// Abilities: A0YZ (), Tip (Tooltip - Normal)
 {
 Conveyance Aura - [|cffffcc00Level 3|r]
 }
@@ -115553,7 +115505,7 @@ Coilfang Summoner
 }
 
 STRING 19264
-// Abilities: A0YZ (Joy of the Hunt), Tip (Tooltip - Normal)
+// Abilities: A0YZ (), Tip (Tooltip - Normal)
 {
 Conveyance Aura - [|cffffcc00Level 4|r]
 }
@@ -115565,7 +115517,7 @@ STRING 19265
 }
 
 STRING 19266
-// Abilities: A0YZ (Joy of the Hunt), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A0YZ (), Ubertip (Tooltip - Normal - Extended)
 {
 Increases nearby friendly units' movement speed by 20%.
 }
@@ -121109,6 +121061,12 @@ STRING 20189
 W
 }
 
+STRING 20190
+// Abilities: A11R (Unspoiled Wilderness), Ubertip (Tooltip - Normal - Extended)
+{
+Gives nearby Sentinel units 40% movement speed increase.
+}
+
 STRING 20191
 // Abilities: A10U (Mana Burn), Tip (Tooltip - Normal)
 {
@@ -121251,6 +121209,18 @@ STRING 20214
 // Abilities: A0L5 (Light's Edict), Ubertip (Tooltip - Normal - Extended)
 {
 Calls upon 12 waves of light bursts. Each wave deals 40 damage to all units in an area.
+}
+
+STRING 20215
+// Buffs/Effects: B0B5 (), Bufftip (Tooltip)
+{
+Unspoiled Wilderness
+}
+
+STRING 20216
+// Buffs/Effects: B0B5 (), Buffubertip (Tooltip - Extended)
+{
+This unit is under the effects of Unspoiled Wilderness; it has an increased movement speed.
 }
 
 STRING 20217
