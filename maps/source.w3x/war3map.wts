@@ -36977,12 +36977,6 @@ STRING 6163
 Brutal training ground for the Warsong warriors.|n|cfff5962dTrains:|r Grunt, Axe Thrower, Blademaster|n|cfff5962dResearches:|R Brute Strength
 }
 
-STRING 6164
-// Abilities: A0N8 (Citadel Shield), Researchubertip (Tooltip - Learn - Extended)
-{
-Channel the Citadel Shield for up to 120 seconds. The shield will deal 5 damage per second to enemies in a 900 area of effect and increase the armor of friendly buildings. |n|n|cffffcc00Level 1|r - 240 cooldown. 6 seconds duration. |n|cffffcc00Level 2|r - 160 cooldown. 9 seconds duration. |n|cffffcc00Level 3|r - 120 cooldown. 12 seconds duration.
-}
-
 STRING 6165
 // Abilities: A007 (Starfall), Ubertip (Tooltip - Normal - Extended)
 {
@@ -102268,12 +102262,6 @@ STRING 17047
 Warrior Hero, adept at destroying the enemy and enduring.|n|cfff5962dAbilities:|r Divine Shield |n|cfff5962dCan learn:|R Holy Nova, Call Royal Guard, Holy Aura, Solar Judgement|n|n|cffffcc00Attacks land units.|R
 }
 
-STRING 17048
-// Units: Hant (Grand Magus of the Kirin Tor), Ubertip (Tooltip - Extended)
-{
-Mystical Hero, adept at conjuring and long range damaging spells.|n|cfff5962dAbilities:|r Counterspell |n|cfff5962dCan learn:|R Arcane Bombardment, Mass Simulacrum, Wise Council, Frostfall|n|n|cffffcc00Attacks land and air units.|R
-}
-
 STRING 17049
 // Units: Nsjs (Brewmaster), Ubertip (Tooltip - Extended)
 {
@@ -114712,12 +114700,6 @@ STRING 19120
 The hero unleashes devastating roar that reduces attack damage of all nearby enemy units by 100%. 9 seconds duration. Lasts 7 second on heroes.
 }
 
-STRING 19121
-// Abilities: A0N8 (Citadel Shield), Ubertip (Tooltip - Normal - Extended)
-{
-Channel the Citadel Shield for up to 180 seconds. It will deal 5 damage per second in a 900 area of effect. It will also buff friendly buildings in the area giving them 10 additional armor. Has a 180 seconds cooldown
-}
-
 STRING 19122
 // Upgrades: R092 (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
 {
@@ -121127,12 +121109,6 @@ STRING 20189
 W
 }
 
-STRING 20190
-// Abilities: A0N8 (Citadel Shield), Ubertip (Tooltip - Normal - Extended)
-{
-Channel the Citadel Shield for up to 280 seconds. It will deal 5 damage per second in a 900 area of effect. It will also buff friendly buildings in the area giving them 20 additional armor. Has a 280 seconds cooldown
-}
-
 STRING 20191
 // Abilities: A10U (Mana Burn), Tip (Tooltip - Normal)
 {
@@ -121275,18 +121251,6 @@ STRING 20214
 // Abilities: A0L5 (Light's Edict), Ubertip (Tooltip - Normal - Extended)
 {
 Calls upon 12 waves of light bursts. Each wave deals 40 damage to all units in an area.
-}
-
-STRING 20215
-// Abilities: A0N8 (Citadel Shield), Ubertip (Tooltip - Normal - Extended)
-{
-Channel the Citadel Shield for up to 380 seconds. It will deal 5 damage per second in a 900 area of effect. It will also buff friendly buildings in the area giving them 30 additional armor. Has a 380 seconds cooldown
-}
-
-STRING 20216
-// Abilities: A0N8 (Citadel Shield), Ubertip (Tooltip - Normal - Extended)
-{
-Channel the Citadel Shield for up to 480 seconds. It will deal 5 damage per second in a 900 area of effect. It will also buff friendly buildings in the area giving them 40 additional armor. Has a 480 seconds cooldown
 }
 
 STRING 20217
@@ -121505,6 +121469,24 @@ STRING 20252
 (khadgar)
 }
 
+STRING 20253
+// Units: Hant (Grand Magus of the Kirin Tor), Ubertip (Tooltip - Extended)
+{
+Mystical Hero, adept at conjuring and long range damaging spells.|n|cfff5962dAbilities:|r Counterspell |n|cfff5962dCan learn:|R Arcane Bombardment, Mass Simulacrum, Citadel Shield, Frostfall|n|n|cffffcc00Attacks land and air units.|R
+}
+
+STRING 20254
+// Abilities: A0N8 (Citadel Shield), Researchubertip (Tooltip - Learn - Extended)
+{
+Channel the Citadel Shield. The shield will deal 5 damage per second to enemies in a 900 area of effect and increase the armor of friendly buildings by 10. |n|n|cffffcc00Level 1|r - Cast range 100. Maximum channeling duration 15 seconds. |n|cffffcc00Level 2|r - Cast range 150. Maximum channeling duration 45 seconds. |n|cffffcc00Level 3|r - Cast range 225. Maximum channeling duration 90 seconds. |n|cffffcc00Level 4|r - Cast range 350. Maximum channeling duration 180 seconds.
+}
+
+STRING 20255
+// Abilities: A0N8 (Citadel Shield), Ubertip (Tooltip - Normal - Extended)
+{
+Channel the Citadel Shield for up to 15 seconds. It will deal 5 damage per second in a 900 area of effect. It will also buff friendly buildings in the area giving them 10 additional armor. Has a 180 seconds cooldown and 100 casting range.
+}
+
 STRING 20256
 // Abilities: A11P (Heavy Armor), EditorSuffix (Editor Suffix)
 {
@@ -121545,6 +121527,12 @@ STRING 20262
 // Upgrades: R00N (Storm Hammers), Hotkey (Hotkey)
 {
 R
+}
+
+STRING 20263
+// Abilities: A0N8 (Citadel Shield), Ubertip (Tooltip - Normal - Extended)
+{
+Channel the Citadel Shield for up to 45 seconds. It will deal 5 damage per second in a 900 area of effect. It will also buff friendly buildings in the area giving them 10 additional armor. Has a 180 seconds cooldown and 150 casting range.
 }
 
 STRING 20264
@@ -121701,5 +121689,17 @@ STRING 20289
 // Abilities: A108 (Artillery Bombardment), Ubertip (Tooltip - Normal - Extended)
 {
 Innacurate bombardment of an area with 30 waves of one cannonball. Each ball deals 15 damage to all units in an area.
+}
+
+STRING 20290
+// Abilities: A0N8 (Citadel Shield), Ubertip (Tooltip - Normal - Extended)
+{
+Channel the Citadel Shield for up to 90 seconds. It will deal 5 damage per second in a 900 area of effect. It will also buff friendly buildings in the area giving them 10 additional armor. Has a 180 seconds cooldown and 225 casting range.
+}
+
+STRING 20291
+// Abilities: A0N8 (Citadel Shield), Ubertip (Tooltip - Normal - Extended)
+{
+Channel the Citadel Shield for up to 180 seconds. It will deal 5 damage per second in a 900 area of effect. It will also buff friendly buildings in the area giving them 10 additional armor. Has a 180 seconds cooldown and 350 casting range.
 }
 
