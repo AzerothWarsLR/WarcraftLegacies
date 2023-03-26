@@ -8,6 +8,9 @@ namespace MacroTools.Cheats
   {
     /// <inheritdoc />
     public override string CommandText => "remove";
+    
+    /// <inheritdoc />
+    public override bool Exact => true;
 
     /// <inheritdoc />
     public override int MinimumParameterCount => 0;

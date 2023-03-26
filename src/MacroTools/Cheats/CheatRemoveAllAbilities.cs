@@ -1,4 +1,6 @@
-﻿using System.Linq;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using MacroTools.CommandSystem;
 using MacroTools.Extensions;
 using static War3Api.Common;
@@ -6,12 +8,12 @@ using static War3Api.Common;
 namespace MacroTools.Cheats
 {
   /// <summary>
-  /// A cheat that displays the position of the first selected unit.
+  /// A <see cref="Command"/> Removes all abilities from first selected unit.
   /// </summary>
-  public sealed class CheatPosition : Command
+  public sealed class CheatRemoveAllAbilities : Command
   {
     /// <inheritdoc />
-    public override string CommandText => "position";
+    public override string CommandText => "removeAllAbilities";
     
     /// <inheritdoc />
     public override bool Exact => true;
@@ -23,13 +25,14 @@ namespace MacroTools.Cheats
     public override CommandType Type => CommandType.Cheat;
 
     /// <inheritdoc />
-    public override string Description => "Displays the position of the first selected unit.";
-
+    public override string Description => "Removes all abilities from first selected unit.";
+  
     /// <inheritdoc />
     public override string Execute(player cheater, params string[] parameters)
     {
       var firstSelectedUnit = CreateGroup().EnumSelectedUnits(cheater).EmptyToList().First();
-      return $"{firstSelectedUnit.GetName()} is at position {GetUnitX(firstSelectedUnit)}, {GetUnitY(firstSelectedUnit)}.";
+      firstSelectedUnit.RemoveAllAbilities(new List<int>{1096905835,1097690998,1112498531});
+      return $"All abilities removed from {firstSelectedUnit.GetName()}";
     }
   }
 }
