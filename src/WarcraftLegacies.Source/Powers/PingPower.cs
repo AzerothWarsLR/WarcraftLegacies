@@ -11,44 +11,57 @@ namespace WarcraftLegacies.Source.Powers
   public class PingPower : Power
   {
     private readonly LegendaryHero _arthas;
-    private timer _pingTimer;
+    private timer _coodownTimer;
     private int _pingTime;
-    private int _pingInterval;
-    private bool _pingPeriodically;
+    private readonly int _cooldown;
+
 
     /// <param name="heroToPing">The pinged hero</param>
     /// <param name="name">Name of the power</param>
     /// <param name="pingTime">The duration of the ping</param>
-    /// <param name="pingInterval">The interval at which the ping occurs</param>
-    /// <param name="pingPeriodically">If true repeats the ping, eles only pings once</param>
-    public PingPower(LegendaryHero heroToPing,string name, int pingTime, int pingInterval, bool pingPeriodically)
+    /// <param name="cooldown">The cooldown of the power in seconds</param>
+    public PingPower(LegendaryHero heroToPing, string name, int pingTime, int cooldown)
     {
+      Usable = true;
       _pingTime = pingTime;
-      _pingInterval = pingInterval;
+      _cooldown = cooldown;
       _arthas = heroToPing;
-      _pingPeriodically = pingPeriodically;
-      _pingTimer = CreateTimer();
+      _coodownTimer = CreateTimer();
       Name = name;
-      Description = $"Ping {heroToPing.Name} on the map every {pingInterval / 60} turns for {pingTime} seconds.";
+      IconName = "HelmofDomination";
+      Description = $"Ping {heroToPing.Name} on the map {pingTime} for seconds.\n{cooldown} seconds cooldown.";
     }
 
     ///<inheritdoc/>
     public override void OnAdd(player whichPlayer)
     {
-      _pingTimer.Start(_pingInterval, _pingPeriodically, PingArthas);
+      if (GetLocalPlayer() != whichPlayer)
+        return;
+      if (_arthas.Unit != null)
+      {
+        PingMinimap(_arthas.Unit.GetPosition().X, _arthas.Unit.GetPosition().Y, _pingTime);
+      }
     }
 
     ///<inheritdoc/>
     public override void OnRemove(player whichPlayer)
     {
-      _pingTimer.Destroy();
+      _coodownTimer.Destroy();
     }
 
-    private void PingArthas()
+    ///<inheritdoc/>
+    public override void OnUse(player whichPlayer)
     {
-      if (_arthas.Unit != null)
+      if (GetLocalPlayer() != whichPlayer || OnCooldown)
+        return;
+      if (_arthas.Unit != null && _arthas.Unit.IsAlive())
       {
         PingMinimap(_arthas.Unit.GetPosition().X, _arthas.Unit.GetPosition().Y, _pingTime);
+        OnCooldown = true;
+        _coodownTimer.Start(_cooldown, false, () =>
+        {
+          OnCooldown = false;
+        });
       }
     }
   }

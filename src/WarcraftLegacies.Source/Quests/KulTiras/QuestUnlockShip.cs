@@ -5,12 +5,9 @@ using MacroTools.QuestSystem;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 using static War3Api.Blizzard;
-using MacroTools.ControlPointSystem;
 using MacroTools.LegendSystem;
-using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
 using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
-using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using System.Linq;
 

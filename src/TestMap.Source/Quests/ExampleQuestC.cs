@@ -1,6 +1,5 @@
 ﻿using MacroTools.ArtifactSystem;
 using MacroTools.FactionSystem;
-using MacroTools.ObjectiveSystem.Objectives;
 using MacroTools.ObjectiveSystem.Objectives.ArtifactBased;
 using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 using MacroTools.Powers;

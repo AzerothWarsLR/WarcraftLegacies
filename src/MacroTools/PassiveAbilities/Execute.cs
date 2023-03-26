@@ -1,8 +1,6 @@
 ﻿using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
-using MacroTools.LegendSystem;
 using MacroTools.PassiveAbilitySystem;
-using System.Linq;
 using static War3Api.Common;
 
 namespace MacroTools.PassiveAbilities

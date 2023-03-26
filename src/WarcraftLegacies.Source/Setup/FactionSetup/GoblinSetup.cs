@@ -67,7 +67,7 @@ The Trading Center in Kezan will unlock the ability to train Traders. Be sure to
       Goblin.ModObjectLimit(Constants.UNIT_N062_SHREDDER_GOBLIN, 12);
       Goblin.ModObjectLimit(Constants.UNIT_H08Z_ASSAULT_TANK_GOBLIN, 5);
       Goblin.ModObjectLimit(Constants.UNIT_H091_WAR_ZEPPELIN_GOBLIN, 6);
-      Goblin.ModObjectLimit(Constants.UNIT_H09H_SIEGE_WALKER_GOBLIN, 7);
+      Goblin.ModObjectLimit(Constants.UNIT_H09H_SIEGE_WALKER_GOBLIN, 5);
       Goblin.ModObjectLimit(Constants.UNIT_NZEP_TRADING_ZEPPELIN_WARSONG, 16);
       Goblin.ModObjectLimit(Constants.UNIT_O04S_TRADER_GOBLIN, 10);
 

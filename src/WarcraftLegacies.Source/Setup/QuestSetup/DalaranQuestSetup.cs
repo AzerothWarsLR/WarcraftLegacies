@@ -14,7 +14,8 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
     {
       var dalaran = DalaranSetup.Dalaran;
 
-      QuestNewGuardian newGuardian = new(artifactSetup.BookOfMedivh, allLegendSetup.Dalaran.Jaina);
+      QuestNewGuardian newGuardian = new(artifactSetup.BookOfMedivh, allLegendSetup.Dalaran.Jaina, allLegendSetup.Dalaran.Dalaran
+        );
       QuestTheNexus theNexus = new(allLegendSetup.Dalaran.Jaina, allLegendSetup.Scourge.TheFrozenThrone, allLegendSetup.Neutral.TheNexus);
       QuestCrystalGolem crystalGolem = new(allLegendSetup.Neutral.DraktharonKeep);
       QuestFallenGuardian fallenGuardian = new(allLegendSetup.Neutral.Karazhan);

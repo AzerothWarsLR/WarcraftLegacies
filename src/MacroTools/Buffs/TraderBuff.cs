@@ -1,5 +1,4 @@
 ﻿using MacroTools.Extensions;
-using MacroTools.FactionSystem;
 using MacroTools.Wrappers;
 using WCSharp.Buffs;
 using static War3Api.Common;

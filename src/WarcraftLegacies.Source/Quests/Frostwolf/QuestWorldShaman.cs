@@ -34,7 +34,7 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
         ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N05Z_STORMHEIM_15GOLD_MIN),
       };
       AddObjective(new ObjectiveLegendLevel(_thrall, 8));
-      AddObjective(new ObjectiveChannelRect(Regions.MaelstromChannel, "the Maelstrom", _thrall, 120, 120, "The Maelstrom's Power is being harnessed"));
+      AddObjective(new ObjectiveChannelRect(Regions.MaelstromChannel, "the Maelstrom", _thrall, 120, 120, "Taming Maelstrom Power"));
       AddObjective(new ObjectiveControlPoints(CPs, "The Broken Isles and the Maelstrom"));
     }
 

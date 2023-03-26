@@ -109,7 +109,7 @@ public static class Regions
 	public static Rectangle Northrend_Ambiance { get; set; } = new Rectangle(-10688f, 13120f, 8608f, 24736f);
 	public static Rectangle TeldrassilAmbient { get; set; } = new Rectangle(-20576f, 12160f, -16000f, 16544f);
 	public static Rectangle MoongladeVillage { get; set; } = new Rectangle(-14688f, 10048f, -12288f, 12192f);
-	public static Rectangle AzuremystAmbient { get; set; } = new Rectangle(-22016f, 6464f, -18976f, 11072f);
+	public static Rectangle AzuremystAmbient { get; set; } = new Rectangle(-21408f, 6432f, -18976f, 11136f);
 	public static Rectangle AshenvaleAmbient { get; set; } = new Rectangle(-17856f, 384f, -9856f, 9152f);
 	public static Rectangle BarrenAmbient1 { get; set; } = new Rectangle(-19424f, -5632f, -9856f, 384f);
 	public static Rectangle BarrenAmbient2 { get; set; } = new Rectangle(-16448f, -7776f, -12352f, -5472f);
@@ -283,9 +283,6 @@ public static class Regions
 	public static Rectangle ArtifactDummyInstance { get; set; } = new Rectangle(19584f, 23232f, 22688f, 24800f);
 	public static Rectangle Shadowforge_City { get; set; } = new Rectangle(11488f, -9728f, 13248f, -8320f);
 	public static Rectangle BlackrockUnlock { get; set; } = new Rectangle(11840f, -12224f, 13632f, -10208f);
-	public static Rectangle Exodar_South_Interior { get; set; } = new Rectangle(-11648f, -26816f, -11168f, -26368f);
-	public static Rectangle Exodar_North_Interior { get; set; } = new Rectangle(-9792f, -25024f, -9312f, -24512f);
-	public static Rectangle Exodar_Interior_All { get; set; } = new Rectangle(-11776f, -26976f, -9024f, -24352f);
 	public static Rectangle BloodElfSecondChanceSpawn { get; set; } = new Rectangle(10432f, 3520f, 10816f, 3936f);
 	public static Rectangle CaerDarrow { get; set; } = new Rectangle(13952f, 6208f, 15648f, 8064f);
 	public static Rectangle TombOfSargerasInteriorA { get; set; } = new Rectangle(-832f, 10144f, 704f, 11168f);
@@ -341,5 +338,6 @@ public static class Regions
 	public static Rectangle ShrineBaseUnlock { get; set; } = new Rectangle(-13184f, 7648f, -9632f, 9568f);
 	public static Rectangle StranglethornBaseBuild { get; set; } = new Rectangle(6848f, -24704f, 11936f, -17920f);
 	public static Rectangle TrollStartPos { get; set; } = new Rectangle(-9824f, -18400f, -8544f, -16832f);
+	public static Rectangle ExodarBaseUnlock { get; set; } = new Rectangle(-23872f, 5792f, -21248f, 8416f);
 
 }

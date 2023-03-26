@@ -62,7 +62,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
         OrbEffectPath = @"war3mapImported\OrbFireX.mdx",
         Damage = new LeveledAbilityField<float> { Base = 25, PerLevel = 25 },
         CollisionRadius = new LeveledAbilityField<float> { Base = 100, PerLevel = 0},
-        OrbDuration = 45,
+        OrbDuration = 30,
         AbilityWhitelist = new List<int>
         {
           Constants.ABILITY_A04J_ARCANE_BURST_HIGH_ELVES_ANASTERIAN,
