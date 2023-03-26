@@ -24,6 +24,11 @@ namespace MacroTools.FactionSystem
       }
     }
 
+    public bool Usable { get; set; }
+
+    public bool OnCooldown { get; set; }
+
+
     public event EventHandler<Power>? DescriptionChanged;
 
     /// <summary>
@@ -35,5 +40,16 @@ namespace MacroTools.FactionSystem
     ///   Fired when the <see cref="Power" /> is added to a <see cref="player" />.
     /// </summary>
     public abstract void OnRemove(player whichPlayer);
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="whichPlayer"></param>
+    public virtual void OnUse(player whichPlayer)
+    {
+
+    }
+
   }
+
 }
