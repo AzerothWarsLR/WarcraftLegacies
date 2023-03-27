@@ -20838,9 +20838,9 @@ A
 }
 
 STRING 3474
-// Upgrades: R06T (Chaos), Name (Name)
+// Abilities: A055 (Defensive Orbs), Researchtip (Tooltip - Learn)
 {
-Quest Completed: Westfall Outpost
+Learn Defensive Orbs - [|cffffcc00Level %d|r]Anasterian generates an arcane orb whenver he casts a spell. The orb orbits around the caster for 30 seconds, dealing damage to enemy units it strikes.|n|n|cffffcc00Level 1|r - 50 damage|n|cffffcc00Level 2|r - 75 damage|n|cffffcc00Level 3|r - 100 damage|n|cffffcc00Level 4|r - 125 damage
 }
 
 STRING 3475
@@ -54124,6 +54124,18 @@ STRING 9017
 Armored Guards of the Sentinels.|n|cfff5962dAbilities:|R Defend, Elune's Grace, War Plating|n|n|cffffcc00Attacks land units.|r
 }
 
+STRING 9018
+// Upgrades: R06T (Chaos), Name (Name)
+{
+Quest Completed: Stranglethorn Outpost
+}
+
+STRING 9019
+// Abilities: A0GV (Deadeye), Untip (Tooltip - Turn Off)
+{
+Defense Orbs deal 50 damage per orb to each unit it collides with.
+}
+
 STRING 9020
 // Units: n099 (Ogre Mercenary), EditorSuffix (Name - Editor Suffix)
 {
@@ -64847,6 +64859,12 @@ STRING 10806
 When killed, the Hero will come back to life. |n|n|cffffcc00Level 1|r - <A022,Cool1> cooldown. |n|cffffcc00Level 2|r - <A022,Cool2> cooldown. |n|cffffcc00Level 3|r - <A022,Cool3> cooldown.
 }
 
+STRING 10807
+// Abilities: A0GV (Deadeye), Untip (Tooltip - Turn Off)
+{
+Defense Orbs deal 75 damage per orb to each unit it collides with.
+}
+
 STRING 10808
 // Abilities: A09R (Perfect Defend indicator), EditorSuffix (Editor Suffix)
 {
@@ -71044,12 +71062,6 @@ Lasts 8 seconds on heroes and indefinitely on units.
  |n|cffffcc00Level 1|r - 40 damage per second and 2 Elite Abominations summoned.|n|cffffcc00Level 2|r - 70 damage per second and 4 Elite Abominations summoned. |n|cffffcc00Level 3|r - 100 damage per second and 6 Elite Abominations
 }
 
-STRING 11839
-// Abilities: A055 (Defensive Orbs), Tip (Tooltip - Normal)
-{
-Defensive Orbs - [|cffffcc00Level 4|r]
-}
-
 STRING 11840
 // Abilities: A054 (Arcane Artillery), EditorSuffix (Editor Suffix)
 {
@@ -77212,6 +77224,12 @@ STRING 12866
 (dalaran)
 }
 
+STRING 12867
+// Abilities: A0GV (Deadeye), Untip (Tooltip - Turn Off)
+{
+Defense Orbs deal 100 damage per orb to each unit it collides with.
+}
+
 STRING 12868
 // Abilities: AEmb (Mana Burn), Researchubertip (Tooltip - Learn - Extended)
 {
@@ -79817,9 +79835,9 @@ Animate Soul
 }
 
 STRING 13302
-// Abilities: A055 (Defensive Orbs), Researchtip (Tooltip - Learn)
+// Abilities: A0GV (Deadeye), Untip (Tooltip - Turn Off)
 {
-Learn Defensive Orbs - [|cffffcc00Level %d|r]
+Defense Orbs deal 125 damage per orb to each unit it collides with.
 }
 
 STRING 13303
@@ -81284,6 +81302,12 @@ STRING 13546
 // Buffs/Effects: B036 (Naval Aura), Bufftip (Tooltip)
 {
 Naval Aura
+}
+
+STRING 13547
+// Abilities: A055 (Defensive Orbs), Tip (Tooltip - Normal)
+{
+Defensive Orbs -[|cffffcc00Level 4|r]
 }
 
 STRING 13548
@@ -85028,6 +85052,12 @@ STRING 14171
 // Upgrades: R01E (Chaos), EditorSuffix (Editor Suffix)
 {
 (Lordaeron)
+}
+
+STRING 14172
+// Abilities: A055 (Defensive Orbs), Ubertip (Tooltip - Normal - Extended)
+{
+Defense Orbs deal 50 damage per orb to each unit it collides with.
 }
 
 STRING 14173
@@ -89883,6 +89913,12 @@ STRING 14981
 // Upgrades: Reib (Improved Bows), Ubertip (Tooltip - Extended)
 {
 Increases the attack range of Archers, Guild Rangers, Priestess of the Moon, Moon Rider and Hippogryph Rider by an additional 100.
+}
+
+STRING 14982
+// Abilities: A055 (Defensive Orbs), Ubertip (Tooltip - Normal - Extended)
+{
+Defense Orbs deal 75 damage per orb to each unit it collides with.
 }
 
 STRING 14983
@@ -99964,6 +100000,12 @@ STRING 16670
 Train Orcish Death Knight
 }
 
+STRING 16671
+// Abilities: A055 (Defensive Orbs), Ubertip (Tooltip - Normal - Extended)
+{
+Defense Orbs deal 100 damage per orb to each unit it collides with.
+}
+
 STRING 16672
 // Units: o04W (Golden Vessel), EditorSuffix (Name - Editor Suffix)
 {
@@ -99980,6 +100022,12 @@ STRING 16674
 // Abilities: A0TW (Field of Blood), Researchubertip (Tooltip - Learn - Extended)
 {
 Conjures a field of churning blood which heals allied ground units in a target area over time. |n|n|cffffcc00Level 1|r - Heals 150 hitpoints over 5 seconds, then 10 hitpoint every 1 seconds for 35 seconds.|n|cffffcc00Level 2|r - Heals 200 hitpoints over 5 seconds, then 15 hitpoint every 1 seconds for 35 seconds.|n|cffffcc00Level 3|r - Heals 250 hitpoints over 5 seconds, then 20 hitpoint every 1 seconds for 35 seconds.|n
+}
+
+STRING 16675
+// Abilities: A055 (Defensive Orbs), Ubertip (Tooltip - Normal - Extended)
+{
+Defense Orbs deal 125 damage per orb to each unit it collides with.
 }
 
 STRING 16677
