@@ -93,8 +93,9 @@ namespace MacroTools.PassiveAbilities
         .SetColor(200, 50, 50, 255)
         .SetExplodeOnDeath(true)
         .AddType(UNIT_TYPE_UNDEAD)
-        .AddType(UNIT_TYPE_SUMMONED);
-       
+        .AddType(UNIT_TYPE_SUMMONED)
+        .RemoveAllAbilities(new List<int>{1096905835,1097690998,1112498531});
+      
       whichUnit.Remove();
       
       reanimatedUnit.SetPosition(whichUnitPosition);
