@@ -20837,12 +20837,6 @@ STRING 3473
 A
 }
 
-STRING 3474
-// Upgrades: R06T (Chaos), Name (Name)
-{
-Quest Completed: Westfall Outpost
-}
-
 STRING 3475
 // Units: o00C (Great Hall), Ubertip (Tooltip - Extended)
 {
@@ -54124,6 +54118,18 @@ STRING 9017
 Armored Guards of the Sentinels.|n|cfff5962dAbilities:|R Defend, Elune's Grace, War Plating|n|n|cffffcc00Attacks land units.|r
 }
 
+STRING 9018
+// Upgrades: R06T (Chaos), Name (Name)
+{
+Quest Completed: Stranglethorn Outpost
+}
+
+STRING 9019
+// Abilities: A055 (Defensive Orbs), Ubertip (Tooltip - Normal - Extended)
+{
+Defense Orbs deal 50 damage per orb to each unit it collides with.
+}
+
 STRING 9020
 // Units: n099 (Ogre Mercenary), EditorSuffix (Name - Editor Suffix)
 {
@@ -64847,6 +64853,12 @@ STRING 10806
 When killed, the Hero will come back to life. |n|n|cffffcc00Level 1|r - <A022,Cool1> cooldown. |n|cffffcc00Level 2|r - <A022,Cool2> cooldown. |n|cffffcc00Level 3|r - <A022,Cool3> cooldown.
 }
 
+STRING 10807
+// Abilities: A055 (Defensive Orbs), Ubertip (Tooltip - Normal - Extended)
+{
+Defense Orbs deal 75 damage per orb to each unit it collides with.
+}
+
 STRING 10808
 // Abilities: A09R (Perfect Defend indicator), EditorSuffix (Editor Suffix)
 {
@@ -71045,9 +71057,9 @@ Lasts 8 seconds on heroes and indefinitely on units.
 }
 
 STRING 11839
-// Abilities: A055 (Defensive Orbs), Tip (Tooltip - Normal)
+// Abilities: A0GV (Deadeye), Ubertip (Tooltip - Normal - Extended)
 {
-Defensive Orbs - [|cffffcc00Level 4|r]
+Gives attacks a <A0GV,DataA1>% chance to deal <A0GV,DataC1> additional damage.
 }
 
 STRING 11840
@@ -77212,6 +77224,12 @@ STRING 12866
 (dalaran)
 }
 
+STRING 12867
+// Abilities: A055 (Defensive Orbs), Ubertip (Tooltip - Normal - Extended)
+{
+Defense Orbs deal 100 damage per orb to each unit it collides with.
+}
+
 STRING 12868
 // Abilities: AEmb (Mana Burn), Researchubertip (Tooltip - Learn - Extended)
 {
@@ -79817,9 +79835,9 @@ Animate Soul
 }
 
 STRING 13302
-// Abilities: A055 (Defensive Orbs), Researchtip (Tooltip - Learn)
+// Abilities: A055 (Defensive Orbs), Ubertip (Tooltip - Normal - Extended)
 {
-Learn Defensive Orbs - [|cffffcc00Level %d|r]
+Defense Orbs deal 125 damage per orb to each unit it collides with.
 }
 
 STRING 13303
@@ -81284,6 +81302,12 @@ STRING 13546
 // Buffs/Effects: B036 (Naval Aura), Bufftip (Tooltip)
 {
 Naval Aura
+}
+
+STRING 13547
+// Abilities: A055 (Defensive Orbs), Tip (Tooltip - Normal)
+{
+Defensive Orbs -[|cffffcc00Level 4|r]
 }
 
 STRING 13548
@@ -85028,6 +85052,12 @@ STRING 14171
 // Upgrades: R01E (Chaos), EditorSuffix (Editor Suffix)
 {
 (Lordaeron)
+}
+
+STRING 14172
+// Abilities: A055 (Defensive Orbs), Researchubertip (Tooltip - Learn - Extended)
+{
+Anasterian generates an arcane orb whenver he casts a spell. The orb orbits around the caster for 30 seconds, dealing damage to enemy units it strikes.|n|n|cffffcc00Level 1|r - 50 damage|n|cffffcc00Level 2|r - 75 damage|n|cffffcc00Level 3|r - 100 damage|n|cffffcc00Level 4|r - 125 damage
 }
 
 STRING 14173
@@ -89885,6 +89915,12 @@ STRING 14981
 Increases the attack range of Archers, Guild Rangers, Priestess of the Moon, Moon Rider and Hippogryph Rider by an additional 100.
 }
 
+STRING 14982
+// Abilities: A055 (Defensive Orbs), Researchtip (Tooltip - Learn)
+{
+Learn Defensive Orbs - [|cffffcc00Level %d|r]
+}
+
 STRING 14983
 // Units: hmtm (Mortar Team), Ubertip (Tooltip - Extended)
 {
@@ -91307,7 +91343,7 @@ Deadeye - [|cffffcc00Level 4|r]
 }
 
 STRING 15228
-// Abilities: A0GV (Deadeye), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A0GV (Deadeye), Untip (Tooltip - Turn Off)
 {
 Gives attacks a <A0GV,DataA1>% chance to deal <A0GV,DataC1> additional damage.
 }
@@ -99982,6 +100018,12 @@ STRING 16674
 Conjures a field of churning blood which heals allied ground units in a target area over time. |n|n|cffffcc00Level 1|r - Heals 150 hitpoints over 5 seconds, then 10 hitpoint every 1 seconds for 35 seconds.|n|cffffcc00Level 2|r - Heals 200 hitpoints over 5 seconds, then 15 hitpoint every 1 seconds for 35 seconds.|n|cffffcc00Level 3|r - Heals 250 hitpoints over 5 seconds, then 20 hitpoint every 1 seconds for 35 seconds.|n
 }
 
+STRING 16676
+// Abilities: A0GV (Deadeye), Untip (Tooltip - Turn Off)
+{
+Gives attacks a <A0GV,DataA2>% chance to deal <A0GV,DataC2> additional damage.
+}
+
 STRING 16677
 // Units: o04W (Golden Vessel), Tip (Tooltip - Basic)
 {
@@ -107621,6 +107663,12 @@ STRING 17949
 // Buffs/Effects: B024 (), Buffubertip (Tooltip - Extended)
 {
 This unit is under Moving Earth; it will take damage over time.
+}
+
+STRING 17950
+// Abilities: A0GV (Deadeye), Untip (Tooltip - Turn Off)
+{
+Gives attacks a <A0GV,DataA3>% chance to deal <A0GV,DataC3> additional damage.
 }
 
 STRING 17951
@@ -121671,5 +121719,11 @@ STRING 20291
 // Abilities: A0N8 (Citadel Shield), Ubertip (Tooltip - Normal - Extended)
 {
 Channel the Citadel Shield for up to 180 seconds. It will deal 5 damage per second in a 900 area of effect. It will also buff friendly buildings in the area giving them 10 additional armor. Has a 180 seconds cooldown and 350 casting range.
+}
+
+STRING 20292
+// Abilities: A0GV (Deadeye), Untip (Tooltip - Turn Off)
+{
+Gives attacks a <A0GV,DataA4>% chance to deal <A0GV,DataC4> additional damage.
 }
 
