@@ -34,8 +34,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
         Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_N001_THE_SUNWELL_QUEL_THALAS_OTHER),
         Capturable = true
       };
-      Sunwell.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_H00D_ELVEN_RUNESTONE_QUEL_THALAS_TOWER, new Point(20479, 17477)));
-      Sunwell.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_H00D_ELVEN_RUNESTONE_QUEL_THALAS_TOWER, new Point(17415, 13196)));
+      Sunwell.AddProtector(Silvermoon.Unit);
 
       Anasterian = new LegendaryHero("Anasterian Sunstrider")
       {

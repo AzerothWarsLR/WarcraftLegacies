@@ -1,8 +1,6 @@
 ﻿using System;
-using MacroTools;
 using MacroTools.PassiveAbilities;
 using MacroTools.PassiveAbilitySystem;
-using MacroTools.ResearchSystems;
 using MacroTools.Spells;
 using MacroTools.SpellSystem;
 using Microsoft.VisualBasic;

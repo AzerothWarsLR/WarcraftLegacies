@@ -15,8 +15,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       var draenei = DraeneiSetup.Draenei;
       if (draenei == null) 
         return;
-      var questRepairHull = new QuestRepairExodarHull(Regions.Exodar_Interior_All, allLegendSetup.Draenei.LegendExodar,
-        allLegendSetup.Draenei.LegendExodarGenerator);
+      var questRepairHull = new QuestRepairExodarHull(Regions.ExodarBaseUnlock, allLegendSetup.Draenei.LegendExodar);
       draenei.StartingQuest = questRepairHull;
       draenei.AddQuest(questRepairHull);
       draenei.AddQuest(new QuestRebuildCivilisation(Regions.AzuremystAmbient));
@@ -27,21 +26,20 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       ));
       var questRepairGenerator = new QuestRepairGenerator(allLegendSetup.Draenei.LegendExodarGenerator, new List<unit>
       {
-        preplacedUnitSystem.GetUnit(Constants.UNIT_U00U_CRYSTAL_PROTECTOR_DRAENEI_TOWER, new Point(-10895, -25846)),
-        preplacedUnitSystem.GetUnit(Constants.UNIT_U00U_CRYSTAL_PROTECTOR_DRAENEI_TOWER, new Point(-10625, -26098)),
-        preplacedUnitSystem.GetUnit(Constants.UNIT_U00U_CRYSTAL_PROTECTOR_DRAENEI_TOWER, new Point(-10230, -26110)),
-        preplacedUnitSystem.GetUnit(Constants.UNIT_U00U_CRYSTAL_PROTECTOR_DRAENEI_TOWER, new Point(-9973, -25856)),
-        preplacedUnitSystem.GetUnit(Constants.UNIT_U00U_CRYSTAL_PROTECTOR_DRAENEI_TOWER, new Point(-9973, -25460)),
-        preplacedUnitSystem.GetUnit(Constants.UNIT_U00U_CRYSTAL_PROTECTOR_DRAENEI_TOWER, new Point(-10235, -25187)),
-        preplacedUnitSystem.GetUnit(Constants.UNIT_U00U_CRYSTAL_PROTECTOR_DRAENEI_TOWER, new Point(-10625, -25218)),
-        preplacedUnitSystem.GetUnit(Constants.UNIT_U00U_CRYSTAL_PROTECTOR_DRAENEI_TOWER, new Point(-10896, -25456))
+        preplacedUnitSystem.GetUnit(Constants.UNIT_U00U_CRYSTAL_PROTECTOR_DRAENEI_TOWER, new Point(-22656, 7543)),
+        preplacedUnitSystem.GetUnit(Constants.UNIT_U00U_CRYSTAL_PROTECTOR_DRAENEI_TOWER, new Point(-22917, 7286)),
+        preplacedUnitSystem.GetUnit(Constants.UNIT_U00U_CRYSTAL_PROTECTOR_DRAENEI_TOWER, new Point(-22917, 6905)),
+        preplacedUnitSystem.GetUnit(Constants.UNIT_U00U_CRYSTAL_PROTECTOR_DRAENEI_TOWER, new Point(-22656, 6636)),
+        preplacedUnitSystem.GetUnit(Constants.UNIT_U00U_CRYSTAL_PROTECTOR_DRAENEI_TOWER, new Point(-22266, 6636)),
+        preplacedUnitSystem.GetUnit(Constants.UNIT_U00U_CRYSTAL_PROTECTOR_DRAENEI_TOWER, new Point(-22009, 6905)),
+        preplacedUnitSystem.GetUnit(Constants.UNIT_U00U_CRYSTAL_PROTECTOR_DRAENEI_TOWER, new Point(-22009, 7286)),
+        preplacedUnitSystem.GetUnit(Constants.UNIT_U00U_CRYSTAL_PROTECTOR_DRAENEI_TOWER, new Point(-22266, 7543))
       });
       draenei.AddQuest(questRepairGenerator);
       draenei.AddQuest(new QuestTriumvirate(allLegendSetup.Draenei.Velen));
-      var questDimensionalShip = new QuestDimensionalShip(Regions.Exodar_Interior_All,
+      var questDimensionalShip = new QuestDimensionalShip(Regions.ExodarBaseUnlock,
         new List<QuestData> { questRepairHull, questRepairGenerator }, allLegendSetup.Draenei.LegendExodarGenerator);
       draenei.AddQuest(questDimensionalShip);
-      draenei.AddQuest(new QuestInterdimensionalPortal(Regions.MaelstromChannel));
     }
   }
 }

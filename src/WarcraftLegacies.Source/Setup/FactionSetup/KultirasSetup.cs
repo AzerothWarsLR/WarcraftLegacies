@@ -84,6 +84,7 @@ Stormwind is preparing for an invasion through the Dark Portal in the South. Mus
       Kultiras.ModObjectLimit(FourCC("Rhac"), Faction.UNLIMITED); //Improved Masonry
       Kultiras.ModObjectLimit(FourCC("R08B"), Faction.UNLIMITED); //Long Rifles
       Kultiras.ModObjectLimit(FourCC("R00K"), Faction.UNLIMITED); //Power Infusion
+      Kultiras.ModObjectLimit(FourCC("R05J"), Faction.UNLIMITED); //Expedition
 
       //Heroes
       Kultiras.ModObjectLimit(FourCC("Hapm"), 1); //Admiral

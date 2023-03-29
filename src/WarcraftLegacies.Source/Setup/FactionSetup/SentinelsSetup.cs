@@ -1,5 +1,6 @@
 ﻿using MacroTools;
 using MacroTools.FactionSystem;
+using MacroTools.Powers;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
@@ -88,6 +89,12 @@ Once you have secured your holdings, gather your army and destroy the Orcish Hor
       Sentinels.ModObjectLimit(FourCC("R018"), Faction.UNLIMITED); //Lightning Barrage
 
       Sentinels.AddGoldMine(preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-22721, -13570)));
+
+      //Powers
+      var dummyPower = new DummyPower("Unspoiled Wilderness",
+        "Every control point tower has a 40% movement speed aura in a 2000 area of effect",
+        "ANA_HealingButterfliesFixed");
+      Sentinels.AddPower(dummyPower);
 
       FactionManager.Register(Sentinels);
     }
