@@ -59,7 +59,6 @@ The Trading Center in Kezan will unlock the ability to train Traders. Be sure to
       Goblin.ModObjectLimit(Constants.UNIT_H09I_FIREBAT_GOBLIN, 12);
       Goblin.ModObjectLimit(Constants.UNIT_H09J_GRENADIER_GOBLIN, 12);
       Goblin.ModObjectLimit(Constants.UNIT_ODOC_WITCH_DOCTOR_FROSTWOLF, Faction.UNLIMITED);
-      Goblin.ModObjectLimit(Constants.UNIT_O04P_WIZARD_GOBLIN, Faction.UNLIMITED);
       Goblin.ModObjectLimit(Constants.UNIT_O04O_ALCHEMIST_GOBLIN, Faction.UNLIMITED);
       Goblin.ModObjectLimit(Constants.UNIT_O04Q_TINKER_GOBLIN, 6);
       Goblin.ModObjectLimit(Constants.UNIT_ODES_FRIGATE_WARSONG_FROSTWOLF_FEL_HORDE, Faction.UNLIMITED);
@@ -75,7 +74,6 @@ The Trading Center in Kezan will unlock the ability to train Traders. Be sure to
       Goblin.ModObjectLimit(Constants.UNIT_NTIN_CHIEF_ENGINEER_GOBLIN, 1);
       Goblin.ModObjectLimit(Constants.UNIT_NALC_BARON_OF_GADGETZAN_GOBLIN, 1);
 
-      Goblin.ModObjectLimit(Constants.UPGRADE_R07L_WIZARD_MASTER_TRAINING_GOBLIN, Faction.UNLIMITED);
       Goblin.ModObjectLimit(Constants.UPGRADE_R07M_ALCHEMIST_MASTER_TRAINING_GOBLIN, Faction.UNLIMITED);
       Goblin.ModObjectLimit(Constants.UPGRADE_R023_SPIRITUAL_INFUSION_WARSONG_FROSTWOLF_FEL_HORDE, Faction.UNLIMITED);
       Goblin.ModObjectLimit(Constants.UPGRADE_R097_FORTIFIED_HULLS_GOBLIN, Faction.UNLIMITED);

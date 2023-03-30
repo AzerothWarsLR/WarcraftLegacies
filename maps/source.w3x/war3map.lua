@@ -7605,7 +7605,6 @@ u = BlzCreateUnitWithSkin(p, FourCC("n099"), -1438.3, -7578.2, 245.832, FourCC("
 u = BlzCreateUnitWithSkin(p, FourCC("nchp"), 15665.9, 12342.8, 255.399, FourCC("nchp"))
 SetUnitState(u, UNIT_STATE_MANA, 200)
 u = BlzCreateUnitWithSkin(p, FourCC("hfoo"), 14937.6, 12116.8, 229.393, FourCC("hfoo"))
-u = BlzCreateUnitWithSkin(p, FourCC("o04P"), -114.4, -6716.3, 56.680, FourCC("o04P"))
 u = BlzCreateUnitWithSkin(p, FourCC("h08X"), -975.5, -5892.1, 292.706, FourCC("h08X"))
 u = BlzCreateUnitWithSkin(p, FourCC("o04O"), -1404.4, -5779.0, 328.490, FourCC("o04O"))
 u = BlzCreateUnitWithSkin(p, FourCC("h08Y"), -1302.2, -5852.5, 126.127, FourCC("h08Y"))
