@@ -22451,27 +22451,15 @@ Goblin Privateer
 }
 
 STRING 3743
-// Abilities: A0QL (Spellbook and Maiev Event), EditorSuffix (Editor Suffix)
+// Abilities: A0QM (Spellbook and Alliance Event), EditorSuffix (Editor Suffix)
 {
 (Sentinel Spellbook)
 }
 
 STRING 3744
-// Abilities: A0QL (Spellbook and Maiev Event), Name (Name)
+// Abilities: A0QM (Spellbook and Alliance Event), Tip (Tooltip - Normal)
 {
 Spellbook and Maiev Event
-}
-
-STRING 3745
-// Abilities: A0QL (Spellbook and Maiev Event), Tip (Tooltip - Normal)
-{
-Spellbook and Maiev Event
-}
-
-STRING 3746
-// Abilities: A0QM (Spellbook and Alliance Event), EditorSuffix (Editor Suffix)
-{
-(Sentinel Spellbook)
 }
 
 STRING 3747
@@ -49011,12 +48999,6 @@ STRING 8165
 E
 }
 
-STRING 8166
-// Units: Nalc (Baron of Gadgetzan), Ubertip (Tooltip - Extended)
-{
-Warrior Hero, strong at defensive and offensive combat.|n|cfff5962dCan learn:|R Exploding Cocktail, Healing Spray, Wise Council, Chemical Rage|n|n|cffffcc00Attacks land units.|R
-}
-
 STRING 8167
 // Units: h066 (Conclave), Ubertip (Tooltip - Extended)
 {
@@ -69764,12 +69746,6 @@ STRING 11622
 Spellbook and Alliance Event
 }
 
-STRING 11623
-// Abilities: A0QM (Spellbook and Alliance Event), Tip (Tooltip - Normal)
-{
-Spellbook and Maiev Event
-}
-
 STRING 11624
 // Abilities: A065 (Enhanced Healing Totem Aura), EditorSuffix (Editor Suffix)
 {
@@ -81430,12 +81406,6 @@ STRING 13566
 Healing Shield
 }
 
-STRING 13567
-// Abilities: A0I0 (Rounds for Everyone), Ubertip (Tooltip - Normal - Extended)
-{
-Restores 200 hit points to friendly units in a large radius.
-}
-
 STRING 13568
 // Abilities: A0FV (Board), Tip (Tooltip - Normal)
 {
@@ -82640,12 +82610,6 @@ STRING 13768
 // Buffs/Effects: B00B (), Buffubertip (Tooltip - Extended)
 {
 This unit has Reassuring Calm; its defense has been increased.
-}
-
-STRING 13769
-// Abilities: A0I0 (Rounds for Everyone), Ubertip (Tooltip - Normal - Extended)
-{
-Restores 250 hit points to friendly units in a large radius.
 }
 
 STRING 13770
@@ -86584,7 +86548,7 @@ STRING 14425
 }
 
 STRING 14426
-// Abilities: A0QL (Spellbook and Maiev Event), Hotkey (Hotkey - Normal)
+// Abilities: A0QM (Spellbook and Alliance Event), Hotkey (Hotkey - Normal)
 {
 X
 }
@@ -86614,13 +86578,13 @@ STRING 14430
 }
 
 STRING 14431
-// Abilities: A0QM (Spellbook and Alliance Event), Hotkey (Hotkey - Normal)
+// Abilities: A0OC (Extract Vial), Hotkey (Hotkey - Normal)
 {
 X
 }
 
 STRING 14432
-// Abilities: A0OC (Extract Vial), Hotkey (Hotkey - Normal)
+// Abilities: A0PY (Summon Ragnaros), Hotkey (Hotkey - Normal)
 {
 X
 }
@@ -86752,7 +86716,7 @@ STRING 14453
 }
 
 STRING 14454
-// Abilities: A0PY (Summon Ragnaros), Hotkey (Hotkey - Normal)
+// Upgrades: Ruwb (Web), Hotkey (Hotkey)
 {
 X
 }
@@ -87010,7 +86974,7 @@ STRING 14496
 }
 
 STRING 14497
-// Upgrades: Ruwb (Web), Hotkey (Hotkey)
+// Upgrades: Ruex (Exhume Corpses), Hotkey (Hotkey)
 {
 X
 }
@@ -87064,7 +87028,7 @@ rlev
 }
 
 STRING 14506
-// Upgrades: Ruex (Exhume Corpses), Hotkey (Hotkey)
+// Upgrades: Ruba (Banshee Adept Training,Banshee Master Training), Hotkey (Hotkey)
 {
 X
 }
@@ -87148,7 +87112,7 @@ rtma
 }
 
 STRING 14520
-// Upgrades: Ruba (Banshee Adept Training,Banshee Master Training), Hotkey (Hotkey)
+// Upgrades: Rowd (Witch Doctor Adept Training,Witch Doctor Master Training), Hotkey (Hotkey)
 {
 X
 }
@@ -87211,12 +87175,6 @@ STRING 14530
 // Abilities: A091 (Seed of Burning Hatred), Researchtip (Tooltip - Learn)
 {
 Learn Seed of Burning Hatred
-}
-
-STRING 14531
-// Units: Ewrd (Leader of the Watchers ), Ubertip (Tooltip - Extended)
-{
-Cunning Hero, adept at melee combat and slipping in and out of fights.|n|cfff5962dAbilities:|r Blink, Hide, Driven by Vengance|n|cfff5962dCan learn:|R Fan of Knives, Avatar of Vengeance, Battle Experience, Take Vengeance |n|n|cffffcc00Attacks land units.|R
 }
 
 STRING 14532
@@ -87340,7 +87298,7 @@ Summon Saiden
 }
 
 STRING 14552
-// Upgrades: Rowd (Witch Doctor Adept Training,Witch Doctor Master Training), Hotkey (Hotkey)
+// Upgrades: Rovs (Envenomed Spears), Hotkey (Hotkey)
 {
 X
 }
@@ -87761,7 +87719,7 @@ Increases Shadowcasters' mana capacity, mana regeneration rate, attack damage an
 }
 
 STRING 14622
-// Upgrades: Rovs (Envenomed Spears), Hotkey (Hotkey)
+// Upgrades: Rhst (Sorceress Adept Training,Sorceress Master Training), Hotkey (Hotkey)
 {
 X
 }
@@ -87791,7 +87749,7 @@ X
 }
 
 STRING 14627
-// Upgrades: Rhst (Sorceress Adept Training,Sorceress Master Training), Hotkey (Hotkey)
+// Upgrades: Rhri (Long Rifles), Hotkey (Hotkey)
 {
 X
 }
@@ -87881,13 +87839,13 @@ STRING 14641
 }
 
 STRING 14642
-// Upgrades: Rhri (Long Rifles), Hotkey (Hotkey)
+// Upgrades: Rhcd (Cloud), Hotkey (Hotkey)
 {
 X
 }
 
 STRING 14643
-// Upgrades: Rhcd (Cloud), Hotkey (Hotkey)
+// Upgrades: Reib (Improved Bows), Hotkey (Hotkey)
 {
 X
 }
@@ -88103,7 +88061,7 @@ X
 }
 
 STRING 14679
-// Upgrades: Reib (Improved Bows), Hotkey (Hotkey)
+// Upgrades: R06N (Freezing Breath), Hotkey (Hotkey)
 {
 X
 }
@@ -88608,7 +88566,7 @@ Calls down waves of stars that damage nearby enemy units.|n|n|cffffcc00Level 1|r
 }
 
 STRING 14763
-// Upgrades: R06N (Freezing Breath), Hotkey (Hotkey)
+// Upgrades: R06J (Defend), Hotkey (Hotkey)
 {
 X
 }
@@ -88704,7 +88662,7 @@ Allows the training of Pegasus Knights from the Aviary.
 }
 
 STRING 14779
-// Upgrades: R06J (Defend), Hotkey (Hotkey)
+// Upgrades: R061 (Magic Sentry), Hotkey (Hotkey)
 {
 X
 }
@@ -88716,7 +88674,7 @@ rlev
 }
 
 STRING 14781
-// Upgrades: R061 (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: R05P (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
 {
 X
 }
@@ -88854,7 +88812,7 @@ Increases the Thornspeaker mana capacity, mana regeneration rate, attack damage 
 }
 
 STRING 14804
-// Upgrades: R05P (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
+// Upgrades: R04G (Magic Sentry), Hotkey (Hotkey)
 {
 X
 }
@@ -88986,7 +88944,7 @@ Research Fortified Hulls
 }
 
 STRING 14826
-// Upgrades: R04G (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: R03W (Magic Sentry), Hotkey (Hotkey)
 {
 X
 }
@@ -89076,7 +89034,7 @@ rlev
 }
 
 STRING 14841
-// Upgrades: R03W (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: R03E (Defend), Hotkey (Hotkey)
 {
 X
 }
@@ -89106,7 +89064,7 @@ STRING 14845
 }
 
 STRING 14846
-// Upgrades: R03E (Defend), Hotkey (Hotkey)
+// Upgrades: R031 (Defend), Hotkey (Hotkey)
 {
 X
 }
@@ -89472,7 +89430,7 @@ Empowers nearby friendly units, increasing their damage and armor for <A0M2,Dur1
 }
 
 STRING 14907
-// Upgrades: R031 (Defend), Hotkey (Hotkey)
+// Upgrades: R02I (Shaman Adept Training,Shaman Master Training), Hotkey (Hotkey)
 {
 X
 }
@@ -89568,7 +89526,7 @@ Creates a shield that absorbs damage by using the hero's mana. |n|n|cffffcc00Lev
 }
 
 STRING 14923
-// Upgrades: R02I (Shaman Adept Training,Shaman Master Training), Hotkey (Hotkey)
+// Upgrades: R02E (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
 {
 X
 }
@@ -89628,7 +89586,7 @@ Heavy ranged amphibious unit with Heal, Dispel Magic and Binding Shackles. |n|n|
 }
 
 STRING 14933
-// Upgrades: R02E (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
+// Upgrades: R02B (Control Magic), Hotkey (Hotkey)
 {
 X
 }
@@ -89706,7 +89664,7 @@ STRING 14945
 }
 
 STRING 14946
-// Upgrades: R02B (Control Magic), Hotkey (Hotkey)
+// Upgrades: R028 (Banshee Adept Training,Banshee Master Training), Hotkey (Hotkey)
 {
 X
 }
@@ -89802,7 +89760,7 @@ X
 }
 
 STRING 14962
-// Upgrades: R028 (Banshee Adept Training,Banshee Master Training), Hotkey (Hotkey)
+// Upgrades: R01S (Long Rifles), Hotkey (Hotkey)
 {
 X
 }
@@ -90042,7 +90000,7 @@ Open Gate
 }
 
 STRING 15002
-// Upgrades: R01S (Long Rifles), Hotkey (Hotkey)
+// Upgrades: R01P (Ensnare), Hotkey (Hotkey)
 {
 X
 }
@@ -91031,7 +90989,7 @@ STRING 15174
 }
 
 STRING 15175
-// Upgrades: R01P (Ensnare), Hotkey (Hotkey)
+// Upgrades: R01I (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
 {
 X
 }
@@ -91903,7 +91861,7 @@ Serpent Ward (|cffffcc00Q|r) - [|cffffcc00Level 2|r]
 }
 
 STRING 15320
-// Upgrades: R01I (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
+// Upgrades: R019 (Magic Sentry), Hotkey (Hotkey)
 {
 X
 }
@@ -92161,7 +92119,7 @@ Charred Ancient
 }
 
 STRING 15363
-// Upgrades: R019 (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: R018 (Magic Sentry), Hotkey (Hotkey)
 {
 X
 }
@@ -92286,12 +92244,6 @@ STRING 15383
 Learn Rounds for Everyone - [|cffffcc00Level %d|r]
 }
 
-STRING 15384
-// Abilities: A0I0 (Rounds for Everyone), Researchubertip (Tooltip - Learn - Extended)
-{
-The hero heals every ally in a large radious around him. |n|n|cffffcc00Level 1|r - 150 hit points healed. |n|cffffcc00Level 2|r - 200 hit points healed. |n|cffffcc00Level 3|r - 250 hit points healed. |n|cffffcc00Level 4|r - 300 hit points healed.
-}
-
 STRING 15385
 // Abilities: A0D7 (Wraith Form), Ubertip (Tooltip - Normal - Extended)
 {
@@ -92353,7 +92305,7 @@ Improves the Ignore Pain ability, making it last 10 seconds, up from 5.
 }
 
 STRING 15395
-// Upgrades: R018 (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: R00Y (Magic Sentry), Hotkey (Hotkey)
 {
 X
 }
@@ -92999,7 +92951,7 @@ Power Infusion 2
 }
 
 STRING 15503
-// Upgrades: R00Y (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: R00V (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
 {
 X
 }
@@ -93053,7 +93005,7 @@ STRING 15511
 }
 
 STRING 15512
-// Upgrades: R00V (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
+// Upgrades: R00S (Spirit Walker Adept Training,Spirit Walker Master Training), Hotkey (Hotkey)
 {
 X
 }
@@ -93773,7 +93725,7 @@ STRING 15631
 }
 
 STRING 15632
-// Upgrades: R00S (Spirit Walker Adept Training,Spirit Walker Master Training), Hotkey (Hotkey)
+// Upgrades: R00R (Magic Sentry), Hotkey (Hotkey)
 {
 X
 }
@@ -94511,7 +94463,7 @@ Void Exile
 }
 
 STRING 15755
-// Upgrades: R00R (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: R00M (Shaman Adept Training,Shaman Master Training), Hotkey (Hotkey)
 {
 X
 }
@@ -97361,7 +97313,7 @@ E
 }
 
 STRING 16230
-// Upgrades: R00M (Shaman Adept Training,Shaman Master Training), Hotkey (Hotkey)
+// Upgrades: R00H (Envenomed Spears), Hotkey (Hotkey)
 {
 X
 }
@@ -97379,7 +97331,7 @@ Z
 }
 
 STRING 16233
-// Upgrades: R00H (Envenomed Spears), Hotkey (Hotkey)
+// Upgrades: R00G (Flare), Hotkey (Hotkey)
 {
 X
 }
@@ -97409,7 +97361,7 @@ Long range siege heavy ship.|n|n|cff99b4d1Can only train 6.|r|r|n|cffffcc00Attac
 }
 
 STRING 16238
-// Upgrades: R00G (Flare), Hotkey (Hotkey)
+// Upgrades: R00C (Black Gunpowder,Refined Gunpowder,Imbued Gunpowder), Hotkey (Hotkey)
 {
 X
 }
@@ -99928,12 +99880,6 @@ STRING 16657
 Scarlet Crusade is Unleashed
 }
 
-STRING 16658
-// Abilities: A0QL (Spellbook and Maiev Event), Ubertip (Tooltip - Normal - Extended)
-{
-Contains the following spells: Driven by Vengance, Chase Illidan to Outland, Shadow Meld
-}
-
 STRING 16659
 // Units: h05A (Wizard's Sanctum), Ubertip (Tooltip - Extended)
 {
@@ -101045,13 +100991,13 @@ Increases nearby friendly units' movement speed by 15%. |nThis ability will stac
 }
 
 STRING 16844
-// Upgrades: R00C (Black Gunpowder,Refined Gunpowder,Imbued Gunpowder), Hotkey (Hotkey)
+// Upgrades: R040 (Magic Sentry), Hotkey (Hotkey)
 {
 X
 }
 
 STRING 16845
-// Upgrades: R040 (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: R047 (Marksmanship), Hotkey (Hotkey)
 {
 X
 }
@@ -102539,13 +102485,13 @@ Summon Engineer
 }
 
 STRING 17093
-// Upgrades: R047 (Marksmanship), Hotkey (Hotkey)
+// Upgrades: R015 (Marksmanship), Hotkey (Hotkey)
 {
 X
 }
 
 STRING 17094
-// Upgrades: R015 (Marksmanship), Hotkey (Hotkey)
+// Upgrades: R04P (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
 {
 X
 }
@@ -102557,13 +102503,13 @@ X
 }
 
 STRING 17096
-// Upgrades: R04P (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
+// Upgrades: R03P (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 X
 }
 
 STRING 17097
-// Upgrades: R03P (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R05C (Sorceress Adept Training,Sorceress Master Training), Hotkey (Hotkey)
 {
 X
 }
@@ -102575,7 +102521,7 @@ X
 }
 
 STRING 17099
-// Upgrades: R05C (Sorceress Adept Training,Sorceress Master Training), Hotkey (Hotkey)
+// Upgrades: R05D (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
 {
 X
 }
@@ -102902,12 +102848,6 @@ STRING 17153
 // Units: etoa (Tree of Ages), Ubertip (Tooltip - Extended)
 {
 Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Wisp|n|cfff5962dResearches:|R Nature's Blessing|n|cfff5962dAbilities:|R Force of Nature, Sacred Ground|n|cfff5962dUpgrades to:|R Tree of Eternity
-}
-
-STRING 17154
-// Units: edcm (Bear), Ubertip (Tooltip - Extended)
-{
-Powerful frontline melee unit. |n|cfff5962dAbilities:|R Roar, Cleaving Attack, Animal Fury|n|n|cffffcc00Attacks land units.|r
 }
 
 STRING 17155
@@ -105263,7 +105203,7 @@ X
 }
 
 STRING 17547
-// Upgrades: R05D (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
+// Upgrades: R05G (Druid of the Claw Adept Training,Druid of the Claw Master Training), Hotkey (Hotkey)
 {
 X
 }
@@ -105426,7 +105366,7 @@ X
 }
 
 STRING 17574
-// Upgrades: R05G (Druid of the Claw Adept Training,Druid of the Claw Master Training), Hotkey (Hotkey)
+// Upgrades: R06X (Shaman Adept Training,Shaman Master Training), Hotkey (Hotkey)
 {
 X
 }
@@ -106766,7 +106706,7 @@ W
 }
 
 STRING 17797
-// Upgrades: R06X (Shaman Adept Training,Shaman Master Training), Hotkey (Hotkey)
+// Upgrades: R071 (Witch Doctor Adept Training,Witch Doctor Master Training), Hotkey (Hotkey)
 {
 X
 }
@@ -107582,7 +107522,7 @@ X
 }
 
 STRING 17933
-// Upgrades: R071 (Witch Doctor Adept Training,Witch Doctor Master Training), Hotkey (Hotkey)
+// Upgrades: R07M (Shaman Adept Training,Shaman Master Training), Hotkey (Hotkey)
 {
 X
 }
@@ -108440,7 +108380,7 @@ D
 }
 
 STRING 18076
-// Upgrades: R07M (Shaman Adept Training,Shaman Master Training), Hotkey (Hotkey)
+// Upgrades: R07N (Necromancer Adept Training,Necromancer Master Training), Hotkey (Hotkey)
 {
 X
 }
@@ -109118,7 +109058,7 @@ X
 }
 
 STRING 18189
-// Upgrades: R07N (Necromancer Adept Training,Necromancer Master Training), Hotkey (Hotkey)
+// Upgrades: R078 (Spirit Walker Adept Training,Spirit Walker Master Training), Hotkey (Hotkey)
 {
 X
 }
@@ -109923,7 +109863,7 @@ Revive
 }
 
 STRING 18323
-// Upgrades: R078 (Spirit Walker Adept Training,Spirit Walker Master Training), Hotkey (Hotkey)
+// Upgrades: R08B (Long Rifles), Hotkey (Hotkey)
 {
 X
 }
@@ -113483,13 +113423,13 @@ Summons <A0X4,DataA1> Fel Hounds with Mana Burn to attack the Hero's enemies. |n
 }
 
 STRING 18916
-// Upgrades: R08B (Long Rifles), Hotkey (Hotkey)
+// Upgrades: R08F (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 X
 }
 
 STRING 18917
-// Upgrades: R08F (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R08O (Naga Siren Adept Training,Naga Siren Master Training), Hotkey (Hotkey)
 {
 X
 }
@@ -121511,18 +121451,6 @@ STRING 20253
 Mystical Hero, adept at conjuring and long range damaging spells.|n|cfff5962dAbilities:|r Counterspell |n|cfff5962dCan learn:|R Arcane Bombardment, Mass Simulacrum, Citadel Shield, Frostfall|n|n|cffffcc00Attacks land and air units.|R
 }
 
-STRING 20254
-// Abilities: A0N8 (Citadel Shield), Researchubertip (Tooltip - Learn - Extended)
-{
-Channel the Citadel Shield. The shield will deal 5 damage per second to enemies in a 900 area of effect and increase the armor of friendly buildings by 10. |n|n|cffffcc00Level 1|r - Cast range 100. Maximum channeling duration 15 seconds. |n|cffffcc00Level 2|r - Cast range 150. Maximum channeling duration 45 seconds. |n|cffffcc00Level 3|r - Cast range 225. Maximum channeling duration 90 seconds. |n|cffffcc00Level 4|r - Cast range 350. Maximum channeling duration 180 seconds.
-}
-
-STRING 20255
-// Abilities: A0N8 (Citadel Shield), Ubertip (Tooltip - Normal - Extended)
-{
-Channel the Citadel Shield for up to 15 seconds. It will deal 5 damage per second in a 900 area of effect. It will also buff friendly buildings in the area giving them 10 additional armor. Has a 180 seconds cooldown and 100 casting range.
-}
-
 STRING 20256
 // Abilities: A11P (Heavy Armor), EditorSuffix (Editor Suffix)
 {
@@ -121563,12 +121491,6 @@ STRING 20262
 // Upgrades: R00N (Storm Hammers), Hotkey (Hotkey)
 {
 R
-}
-
-STRING 20263
-// Abilities: A0N8 (Citadel Shield), Ubertip (Tooltip - Normal - Extended)
-{
-Channel the Citadel Shield for up to 45 seconds. It will deal 5 damage per second in a 900 area of effect. It will also buff friendly buildings in the area giving them 10 additional armor. Has a 180 seconds cooldown and 150 casting range.
 }
 
 STRING 20264
@@ -121725,18 +121647,6 @@ STRING 20289
 // Abilities: A108 (Artillery Bombardment), Ubertip (Tooltip - Normal - Extended)
 {
 Innacurate bombardment of an area with 30 waves of one cannonball. Each ball deals 15 damage to all units in an area.
-}
-
-STRING 20290
-// Abilities: A0N8 (Citadel Shield), Ubertip (Tooltip - Normal - Extended)
-{
-Channel the Citadel Shield for up to 90 seconds. It will deal 5 damage per second in a 900 area of effect. It will also buff friendly buildings in the area giving them 10 additional armor. Has a 180 seconds cooldown and 225 casting range.
-}
-
-STRING 20291
-// Abilities: A0N8 (Citadel Shield), Ubertip (Tooltip - Normal - Extended)
-{
-Channel the Citadel Shield for up to 180 seconds. It will deal 5 damage per second in a 900 area of effect. It will also buff friendly buildings in the area giving them 10 additional armor. Has a 180 seconds cooldown and 350 casting range.
 }
 
 STRING 20292
@@ -122388,7 +122298,7 @@ Z
 }
 
 STRING 20400
-// Upgrades: R08O (Naga Siren Adept Training,Naga Siren Master Training), Hotkey (Hotkey)
+// Upgrades: R08R (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 X
 }
@@ -122412,7 +122322,7 @@ S
 }
 
 STRING 20404
-// Upgrades: R08R (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R02V (Naga Siren Adept Training,Naga Siren Master Training), Hotkey (Hotkey)
 {
 X
 }
@@ -122442,12 +122352,6 @@ C
 }
 
 STRING 20409
-// Upgrades: R02V (Naga Siren Adept Training,Naga Siren Master Training), Hotkey (Hotkey)
-{
-X
-}
-
-STRING 20410
 // Upgrades: R02V (Naga Siren Adept Training,Naga Siren Master Training), Hotkey (Hotkey)
 {
 X
@@ -122493,5 +122397,71 @@ STRING 20417
 // Upgrades: R05J (Defend), Hotkey (Hotkey)
 {
 A
+}
+
+STRING 20418
+// Units: edcm (Bear), Ubertip (Tooltip - Extended)
+{
+Powerful frontline melee unit. |n|cfff5962dAbilities:|R Roar, Animal Fury|n|n|cffffcc00Attacks land units.|r
+}
+
+STRING 20419
+// Units: Nalc (Baron of Gadgetzan), Ubertip (Tooltip - Extended)
+{
+Alchemist Hero, strong at defensive and offensive combat.|n|cfff5962dCan learn:|R Exploding Cocktail, Healing Spray, Wise Council, Chemical Rage|n|n|cffffcc00Attacks land units.|R
+}
+
+STRING 20420
+// Units: Ewrd (Leader of the Watchers ), Ubertip (Tooltip - Extended)
+{
+Cunning Hero, adept at melee combat and slipping in and out of fights.|n|cfff5962dAbilities:|r Blink, Hide|n|cfff5962dCan learn:|R Fan of Knives, Avatar of Vengeance, Battle Experience, Take Vengeance |n|n|cffffcc00Attacks land units.|R
+}
+
+STRING 20421
+// Abilities: A0I0 (Rounds for Everyone), Researchubertip (Tooltip - Learn - Extended)
+{
+The hero heals every ally in a large radious around him. |n|n|cffffcc00Level 1|r - 150 hit points healed. |n|cffffcc00Level 2|r - 225 hit points healed. |n|cffffcc00Level 3|r - 300 hit points healed. |n|cffffcc00Level 4|r - 375 hit points healed.
+}
+
+STRING 20422
+// Abilities: A0I0 (Rounds for Everyone), Ubertip (Tooltip - Normal - Extended)
+{
+Restores 225 hit points to friendly units in a large radius.
+}
+
+STRING 20423
+// Abilities: A0I0 (Rounds for Everyone), Ubertip (Tooltip - Normal - Extended)
+{
+Restores 375 hit points to friendly units in a large radius.
+}
+
+STRING 20424
+// Abilities: A0N8 (Citadel Shield), Researchubertip (Tooltip - Learn - Extended)
+{
+Channel the Citadel Shield. The shield will deal 12 damage per second to enemies in a 1000 area of effect and increase the armor of friendly buildings by 10. |n|n|cffffcc00Level 1|r - Cast range 100. Maximum channeling duration 15 seconds. |n|cffffcc00Level 2|r - Cast range 150. Maximum channeling duration 45 seconds. |n|cffffcc00Level 3|r - Cast range 225. Maximum channeling duration 90 seconds. |n|cffffcc00Level 4|r - Cast range 350. Maximum channeling duration 180 seconds.
+}
+
+STRING 20425
+// Abilities: A0N8 (Citadel Shield), Ubertip (Tooltip - Normal - Extended)
+{
+Channel the Citadel Shield for up to 15 seconds. It will deal 12 damage per second in a 1000 area of effect. It will also buff friendly buildings in the area giving them 10 additional armor. Has a 180 seconds cooldown and 100 casting range.
+}
+
+STRING 20426
+// Abilities: A0N8 (Citadel Shield), Ubertip (Tooltip - Normal - Extended)
+{
+Channel the Citadel Shield for up to 45 seconds. It will deal 12 damage per second in a 1000 area of effect. It will also buff friendly buildings in the area giving them 10 additional armor. Has a 180 seconds cooldown and 150 casting range.
+}
+
+STRING 20427
+// Abilities: A0N8 (Citadel Shield), Ubertip (Tooltip - Normal - Extended)
+{
+Channel the Citadel Shield for up to 90 seconds. It will deal 12 damage per second in a 1000 area of effect. It will also buff friendly buildings in the area giving them 10 additional armor. Has a 180 seconds cooldown and 225 casting range.
+}
+
+STRING 20428
+// Abilities: A0N8 (Citadel Shield), Ubertip (Tooltip - Normal - Extended)
+{
+Channel the Citadel Shield for up to 180 seconds. It will deal 12 damage per second in a 1000 area of effect. It will also buff friendly buildings in the area giving them 10 additional armor. Has a 180 seconds cooldown and 350 casting range.
 }
 
