@@ -62801,6 +62801,12 @@ STRING 10463
 Warrior Hero, adept at enduring and strengthening nearby allies.|n|cfff5962dAbilities:|r Unholy Plating |n|cfff5962dCan learn:|R Dark Burst, General's Order, Dread Aura, Reincarnation|n|n|cffffcc00Attacks land units.|R
 }
 
+STRING 10464
+// Units: o03S (Laboratory), Ubertip (Tooltip - Extended)
+{
+Place for Kaja'Cola fueled experimenting.|n|cfff5962dTrains:|R Alchemist, Hobgoblin|n|cfff5962dResearches:|R  Alchemist Training
+}
+
 STRING 10466
 // Abilities: A0BQ (Dragon Storm), EditorSuffix (Editor Suffix)
 {
@@ -114219,12 +114225,6 @@ STRING 19051
 Mass Unholy Armor - [|cffffcc00Level 2|r]
 }
 
-STRING 19052
-// Units: o03S (Laboratory), Ubertip (Tooltip - Extended)
-{
-Place for Kaja'Cola fueled experimenting.|n|cfff5962dTrains:|R Alchemist, Wizard, Hobgoblin|n|cfff5962dResearches:|R Wizard Training, Alchemist Training
-}
-
 STRING 19053
 // Units: u02R (Hobgoblin), Ubertip (Tooltip - Extended)
 {
@@ -121433,7 +121433,7 @@ Conjures a pillar of flame that burns ground units for 15 damage a second for 2 
 }
 
 STRING 20255
-// Upgrades: R00X (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: R020 (Defend), Hotkey (Hotkey)
 {
 Q
 }
@@ -121643,7 +121643,7 @@ Innacurate bombardment of an area with 30 waves of one cannonball. Each ball dea
 }
 
 STRING 20290
-// Upgrades: R07I (Necromancer Adept Training,Necromancer Master Training), Hotkey (Hotkey)
+// Upgrades: R01B (Defend), Hotkey (Hotkey)
 {
 W
 }
@@ -122219,13 +122219,13 @@ Trade-house
 }
 
 STRING 20386
-// Upgrades: R020 (Defend), Hotkey (Hotkey)
+// Upgrades: R014 (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
 {
 Q
 }
 
 STRING 20387
-// Upgrades: R014 (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
+// Upgrades: R00X (Magic Sentry), Hotkey (Hotkey)
 {
 Q
 }
@@ -122267,7 +122267,7 @@ S
 }
 
 STRING 20394
-// Upgrades: R01B (Defend), Hotkey (Hotkey)
+// Upgrades: R07I (Necromancer Adept Training,Necromancer Master Training), Hotkey (Hotkey)
 {
 W
 }
