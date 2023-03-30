@@ -22462,6 +22462,18 @@ STRING 3744
 Spellbook and Maiev Event
 }
 
+STRING 3745
+// Units: H05Y (Lord Wizard), Ubertip (Tooltip - Extended)
+{
+Arcane Hero, adept at dealing magic damage and mana manipulation.|n|cfff5962dAbilities:|r Arcane Absorption|n|cfff5962dCan learn:|R Forked Thunder, Wise Council, Mana Shield, Black Hole|n|n|cffffcc00Attacks land and air units.|R
+}
+
+STRING 3746
+// Abilities: ANav (Battle Trance), Researchubertip (Tooltip - Learn - Extended)
+{
+When Battle Trance is activated, the Hero gains bonus armor, bonus hit points, bonus damage and spell immunity.|nLasts 15 seconds.|n|n|cffffcc00Level 1|r - 5 bonus armor, 15 bonus damage.|n|cffffcc00Level 2|r - 10 bonus armor, 30 bonus damage.|n|cffffcc00Level 3|r - 15 bonus armor, 45 bonus damage.
+}
+
 STRING 3747
 // Abilities: ACs7 (Feral Spirit), EditorSuffix (Editor Suffix)
 {
@@ -23254,12 +23266,6 @@ STRING 3878
 Revive Archmage
 }
 
-STRING 3879
-// Abilities: ANav (Battle Trance), Researchubertip (Tooltip - Learn - Extended)
-{
-When Battle Trance is activated, the Hero gains bonus armor, bonus hit points, bonus damage and spell immunity.|nLasts 60 seconds.|n|n|cffffcc00Level 1|r - 5 bonus armor, 600 bonus hit points, 15 bonus damage.|n|cffffcc00Level 2|r - 10 bonus armor, 1200 bonus hit points, 30 bonus damage.|n|cffffcc00Level 3|r - 15 bonus armor, 1800 bonus hit points, 45 bonus damage.
-}
-
 STRING 3880
 // Upgrades: Rhse (Magic Sentry), Hotkey (Hotkey)
 {
@@ -23782,12 +23788,6 @@ STRING 3966
 W
 }
 
-STRING 3967
-// Abilities: ANav (Battle Trance), Ubertip (Tooltip - Normal - Extended)
-{
-Activate Battle Trance to give the Hero <ANav,DataA1> bonus armor, <ANav,DataB1> bonus hit points, <AHav,DataC1> bonus damage and spell immunity. |nLasts <ANav,Dur1> seconds.
-}
-
 STRING 3968
 // Upgrades: Ruar (Unholy Armor,Improved Unholy Armor,Advanced Unholy Armor), Hotkey (Hotkey)
 {
@@ -23864,12 +23864,6 @@ STRING 3980
 // Units: h090 (Trade Prince Guard), Tip (Tooltip - Basic)
 {
 Train Trade Prince Guard
-}
-
-STRING 3981
-// Abilities: ANav (Battle Trance), Ubertip (Tooltip - Normal - Extended)
-{
-Activate Battle Trance to give the Hero <ANav,DataA2> bonus armor, <ANav,DataB2> bonus hit points, <AHav,DataC2> bonus damage and spell immunity. |nLasts <ANav,Dur2> seconds.
 }
 
 STRING 3982
@@ -34893,12 +34887,6 @@ STRING 5818
 // Abilities: ANcr (Chemical Rage), Tip (Tooltip - Normal)
 {
 Chemical Rage - [|cffffcc00Level 4|r]
-}
-
-STRING 5819
-// Abilities: ANav (Battle Trance), Ubertip (Tooltip - Normal - Extended)
-{
-Activate Battle Trance to give the Hero <ANav,DataA3> bonus armor, <ANav,DataB3> bonus hit points, <AHav,DataC3> bonus damage and spell immunity. |nLasts <ANav,Dur3> seconds.
 }
 
 STRING 5820
@@ -48997,6 +48985,12 @@ STRING 8165
 // Abilities: S008 (Cripple), Hotkey (Hotkey - Normal)
 {
 E
+}
+
+STRING 8166
+// Abilities: ANav (Battle Trance), Ubertip (Tooltip - Normal - Extended)
+{
+Activate Battle Trance to give the Hero <ANav,DataA1> bonus armor,  <AHav,DataC1> bonus damage and spell immunity. |nLasts 15 seconds.
 }
 
 STRING 8167
@@ -69746,6 +69740,12 @@ STRING 11622
 Spellbook and Alliance Event
 }
 
+STRING 11623
+// Abilities: ANav (Battle Trance), Ubertip (Tooltip - Normal - Extended)
+{
+Activate Battle Trance to give the Hero <ANav,DataA2> bonus armor,  <AHav,DataC2> bonus damage and spell immunity. |nLasts 15 seconds.
+}
+
 STRING 11624
 // Abilities: A065 (Enhanced Healing Totem Aura), EditorSuffix (Editor Suffix)
 {
@@ -81406,6 +81406,12 @@ STRING 13566
 Healing Shield
 }
 
+STRING 13567
+// Abilities: ANav (Battle Trance), Ubertip (Tooltip - Normal - Extended)
+{
+Activate Battle Trance to give the Hero <ANav,DataA3> bonus armor, <AHav,DataC3> bonus damage and spell immunity. |nLasts 15 seconds.
+}
+
 STRING 13568
 // Abilities: A0FV (Board), Tip (Tooltip - Normal)
 {
@@ -82610,6 +82616,12 @@ STRING 13768
 // Buffs/Effects: B00B (), Buffubertip (Tooltip - Extended)
 {
 This unit has Reassuring Calm; its defense has been increased.
+}
+
+STRING 13769
+// Abilities: A11R (Unspoiled Wilderness), Ubertip (Tooltip - Normal - Extended)
+{
+Gives nearby Sentinel units 30% movement speed increase.
 }
 
 STRING 13770
@@ -102232,12 +102244,6 @@ STRING 17050
 Warrior Hero, extremely aggressive hero adept at disrupting enemies.|n|cfff5962dAbilities:|r Bash|n|cfff5962dCan learn:|R Roar of the Worgen, War Stomp, Thorns Aura, Goldrinn's Might|n|n|cffffcc00Attacks land units.|R
 }
 
-STRING 17051
-// Units: H05Y (Lord Wizard), Ubertip (Tooltip - Extended)
-{
-Arcane Hero, adept at dealing magic damage and mana manipulation.|n|cfff5962dCan learn:|R Forked Thunder, Wise Council, Arcane Absorption, Black Hole|n|n|cffffcc00Attacks land and air units.|R
-}
-
 STRING 17052
 // Units: Uvar (Arch Dreadlord), Ubertip (Tooltip - Extended)
 {
@@ -121065,12 +121071,6 @@ STRING 20189
 // Upgrades: R01B (Defend), Hotkey (Hotkey)
 {
 W
-}
-
-STRING 20190
-// Abilities: A11R (Unspoiled Wilderness), Ubertip (Tooltip - Normal - Extended)
-{
-Gives nearby Sentinel units 40% movement speed increase.
 }
 
 STRING 20191
