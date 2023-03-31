@@ -4,6 +4,7 @@ using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using System;
+using System.Collections.Generic;
 using WarcraftLegacies.Source.Setup;
 using WarcraftLegacies.Source.Setup.FactionSetup;
 using WCSharp.Shared.Data;
@@ -87,6 +88,13 @@ namespace WarcraftLegacies.Source.GameLogic
 
     private void PickZandalar()
     {
+
+      var unitsToTransfer = CreateGroup().EnumUnitsInRect(Regions.TrollStartPos).EmptyToList();
+      foreach (var unit in unitsToTransfer)
+      {
+        unit.SetOwner(Player(PLAYER_NEUTRAL_PASSIVE));
+      }
+
       Player(8).SetFaction(GoblinSetup.Goblin);
       Player(8).SetTeam(TeamSetup.Horde);
       RemoveFaction(GoblinSetup.Goblin, Regions.GoblinStartPos);
@@ -103,31 +111,45 @@ namespace WarcraftLegacies.Source.GameLogic
 
     private void PickGoblin()
     {
+      var unitsToTransfer = CreateGroup().EnumUnitsInRect(Regions.GoblinStartPos).EmptyToList();
+      foreach (var unit in unitsToTransfer)
+      {
+        unit.SetOwner(Player(PLAYER_NEUTRAL_PASSIVE));
+        Console.WriteLine($"unit {unit.GetProperName()} transferred to {unit.OwningPlayer()}");
+      }
+
       Player(8).SetFaction(ZandalarSetup.Zandalar);
       Player(8).SetTeam(TeamSetup.Horde);
       RemoveFaction(ZandalarSetup.Zandalar, Regions.TrollStartPos);
 
       Player(8).SetFaction(GoblinSetup.Goblin);
       Player(8).SetTeam(TeamSetup.Horde);
+      foreach (var unit in unitsToTransfer)
+      {
+        unit.SetOwner(Player(8));
+        Console.WriteLine($"unit{unit.GetProperName()} transferred to {unit.OwningPlayer()}");
+      }
       _factionPicked = true;
       ConcludeFactionPick();
     }
 
     private void RemoveFaction(Faction faction, Rectangle rect)
     {
-      faction.Leave();
-
       foreach (var unit in CreateGroup().EnumUnitsInRect(rect).EmptyToList())
       {
         if (ControlPointManager.Instance.UnitIsControlPoint(unit))
         {
           SetUnitOwner(unit, Player(GetBJPlayerNeutralVictim()), true);
+          Console.WriteLine($"unit{unit.GetProperName()} transferred to {unit.OwningPlayer()}");
         }
         else
         {
           RemoveUnit(unit);
+          Console.WriteLine($"removed unit {unit.GetProperName()}");
         }
       }
+
+      faction.Leave();
     }
   }
 }

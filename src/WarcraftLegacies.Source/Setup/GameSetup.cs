@@ -10,7 +10,6 @@ using WarcraftLegacies.Source.GameLogic;
 using WarcraftLegacies.Source.GameLogic.GameEnd;
 using WarcraftLegacies.Source.Mechanics.Druids;
 using WarcraftLegacies.Source.Mechanics.Frostwolf;
-using WarcraftLegacies.Source.Mechanics.Quelthalas;
 using WarcraftLegacies.Source.Mechanics.Scourge;
 using WarcraftLegacies.Source.Mechanics.Scourge.Blight;
 using WarcraftLegacies.Source.Setup.FactionSetup;
@@ -54,7 +53,6 @@ namespace WarcraftLegacies.Source.Setup
       var commandManager = new CommandManager();
       CommandSetup.Setup(commandManager);
       ControlPointVictory.Setup();
-      SilvermoonDies.Setup(allLegendSetup.Quelthalas.Sunwell);
       FactionMultiboard.Setup();
       BookSetup.Setup();
       HintConfig.Setup();
