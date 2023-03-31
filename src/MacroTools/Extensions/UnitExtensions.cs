@@ -488,13 +488,13 @@ namespace MacroTools.Extensions
     /// <summary>
     ///   Reveals the unit, makes it vulnerable, and transfers its ownership to the specified player.
     /// </summary>
-    public static void Rescue(this unit whichUnit, player whichPlayer)
+    public static void Rescue(this unit whichUnit, player whichPlayer, bool pause = false)
     {
       //If the unit costs 10 food, that means it should be owned by neutral passive instead of the rescuing player.
       whichUnit
         .SetOwner(GetUnitFoodUsed(whichUnit) == 10 ? Player(PLAYER_NEUTRAL_PASSIVE) : whichPlayer)
         .Show(true)
-        .Pause(false);
+        .Pause(pause);
 
       var asCapital = CapitalManager.GetFromUnit(whichUnit);
       if (asCapital == null || asCapital.ProtectorCount == 0)
