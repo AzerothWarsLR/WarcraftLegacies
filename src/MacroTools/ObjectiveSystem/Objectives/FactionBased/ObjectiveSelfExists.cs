@@ -1,4 +1,4 @@
-using MacroTools.Extensions;
+﻿using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using static War3Api.Common;
@@ -24,7 +24,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.FactionBased
     {
       Progress = QuestProgress.Complete;
       whichFaction.ScoreStatusChanged += OnAnyFactionScoreStatusChanged;
-      CreateTimer().Start(1, false, () =>
+      CreateTimer().Start(55, false, () =>
       {
         if (whichFaction.Player == null)
           Progress = QuestProgress.Failed;

@@ -38,7 +38,7 @@ namespace TestMap.Source.Setup
       commandManager.Register(new CheatDestroy());
       commandManager.Register(new CheatGod());
       commandManager.Register(new CheatPosition());
-      TestMode.Setup(commandManager);
+      TestMode.Setup();
     }
   }
 }

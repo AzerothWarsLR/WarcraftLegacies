@@ -1,14 +1,19 @@
-﻿using MacroTools.FactionSystem;
+﻿using MacroTools;
+using MacroTools.FactionSystem;
 using MacroTools.Powers;
+using WCSharp.Shared.Data;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup.FactionSetup
 {
+  /// <summary>
+  /// Setup for the Goblin <see cref="Faction"/>
+  /// </summary>
   public static class GoblinSetup
   {
-    public static Faction? Goblin { get; private set; }
+    public static Faction Goblin { get; private set; }
 
-    public static void Setup()
+    public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
       Goblin = new Faction(FactionNames.Goblin, PLAYER_COLOR_LIGHT_GRAY, "|cff808080",
         "ReplaceableTextures\\CommandButtons\\BTNHeroTinker.blp")
@@ -90,6 +95,7 @@ The Trading Center in Kezan will unlock the ability to train Traders. Be sure to
       };
       Goblin.AddPower(oilPower);
 
+      Goblin.AddGoldMine(preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-8615, -12869)));
       FactionManager.Register(Goblin);
     }
   }
