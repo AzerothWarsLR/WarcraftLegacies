@@ -1,12 +1,13 @@
 ﻿using MacroTools;
 using MacroTools.FactionSystem;
+using WCSharp.Shared.Data;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup.FactionSetup
 {
   public static class ZandalarSetup
   {
-    public static Faction? Zandalar { get; private set; }
+    public static Faction Zandalar { get; private set; }
 
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
@@ -70,6 +71,8 @@ Once the human menace has been dealt with, sail West and help the Horde in Kalim
       Zandalar.ModObjectLimit(FourCC("R00H"), Faction.UNLIMITED); //Animal Companion
       Zandalar.ModObjectLimit(FourCC("R070"), Faction.UNLIMITED); //Haruspex Training
       Zandalar.ModObjectLimit(FourCC("R071"), Faction.UNLIMITED); //Hex Training
+
+      Zandalar.AddGoldMine(preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-8900, -17000)));
 
       FactionManager.Register(Zandalar);
     }
