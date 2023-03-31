@@ -94,7 +94,7 @@ namespace WarcraftLegacies.Source.GameLogic
 
       GoblinSetup.Goblin.ScoreStatus = ScoreStatus.Defeated;
       GoblinSetup.Goblin.RemoveGoldMines();
-      foreach (var unit in zandaUnits)
+      foreach (var unit in gobUnits)
       {
         if (ControlPointManager.Instance.UnitIsControlPoint(unit))
         {

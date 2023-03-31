@@ -7,7 +7,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
 {
   public static class ZandalarSetup
   {
-    public static Faction? Zandalar { get; private set; }
+    public static Faction Zandalar { get; private set; }
 
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {

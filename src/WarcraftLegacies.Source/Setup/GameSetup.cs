@@ -46,6 +46,7 @@ namespace WarcraftLegacies.Source.Setup
       AllFactionSetup.Setup(preplacedUnitSystem, artifactSetup);
       SharedFactionConfigSetup.Setup();
       PlayerSetup.Setup();
+      goblinZandalarPick.StartTimer();
       NeutralHostileSetup.Setup();
       AllQuestSetup.Setup(preplacedUnitSystem, artifactSetup, allLegendSetup);
       ObserverSetup.Setup(new[] { Player(21) });
@@ -62,7 +63,6 @@ namespace WarcraftLegacies.Source.Setup
       QuestMenuSetup.Setup();
       cinematicMode.StartTimer();
       gameTime.StartTimer();
-      goblinZandalarPick.StartTimer();
       CheatSetup.Setup(commandManager, cinematicMode);
       DialogueSetup.Setup(preplacedUnitSystem, allLegendSetup);
       GameSettings.Setup();
