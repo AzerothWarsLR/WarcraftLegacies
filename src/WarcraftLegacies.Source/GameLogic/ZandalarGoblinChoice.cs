@@ -111,12 +111,7 @@ namespace WarcraftLegacies.Source.GameLogic
 
     private void PickGoblin()
     {
-      var unitsToTransfer = CreateGroup().EnumUnitsInRect(Regions.GoblinStartPos).EmptyToList();
-      foreach (var unit in unitsToTransfer)
-      {
-        unit.SetOwner(Player(PLAYER_NEUTRAL_PASSIVE));
-        Console.WriteLine($"unit {unit.GetProperName()} transferred to {unit.OwningPlayer()}");
-      }
+      var gobUnits = Regions.GoblinStartPos.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
 
       Player(8).SetFaction(ZandalarSetup.Zandalar);
       Player(8).SetTeam(TeamSetup.Horde);
@@ -124,11 +119,7 @@ namespace WarcraftLegacies.Source.GameLogic
 
       Player(8).SetFaction(GoblinSetup.Goblin);
       Player(8).SetTeam(TeamSetup.Horde);
-      foreach (var unit in unitsToTransfer)
-      {
-        unit.SetOwner(Player(8));
-        Console.WriteLine($"unit{unit.GetProperName()} transferred to {unit.OwningPlayer()}");
-      }
+
       _factionPicked = true;
       ConcludeFactionPick();
     }
