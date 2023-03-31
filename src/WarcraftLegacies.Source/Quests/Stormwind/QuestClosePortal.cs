@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using MacroTools;
+using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
@@ -12,11 +13,13 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
   public sealed class QuestClosePortal : QuestData
   {
     private readonly List<unit> _unitsToRemove;
-    
+    private readonly LegendaryHero _khadgar;
+
     public QuestClosePortal(PreplacedUnitSystem preplacedUnitSystem, LegendaryHero khadgar) : base("Seal the Dark Portal",
       "The Dark Portal has been a menace to the Kingdom of Stormwind for decades, it is time to end the menace once and for all.",
       "ReplaceableTextures\\CommandButtons\\BTNDarkPortal.blp")
     {
+      _khadgar = khadgar;
       AddObjective(new ObjectiveChannelRect(Regions.ClosePortal, "the Dark Portal", khadgar, 480, 270, Title));
       Global = true;
       _unitsToRemove = new List<unit>
@@ -55,6 +58,7 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
         RemoveUnit(unit);
       }
       _unitsToRemove.Clear();
+      _khadgar.Unit?.AddExperience(10000);
     }
   }
 }
