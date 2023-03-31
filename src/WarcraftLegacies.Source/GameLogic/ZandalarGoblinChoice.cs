@@ -89,58 +89,37 @@ namespace WarcraftLegacies.Source.GameLogic
     private void PickZandalar()
     {
 
-      var unitsToTransfer = CreateGroup().EnumUnitsInRect(Regions.TrollStartPos).EmptyToList();
-      foreach (var unit in unitsToTransfer)
+      var gobUnits = Regions.GoblinStartPos.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
+      var zandaUnits = Regions.TrollStartPos.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
+
+      GoblinSetup.Goblin.Leave();
+      foreach (var unit in gobUnits)
       {
-        unit.SetOwner(Player(PLAYER_NEUTRAL_PASSIVE));
+        unit.Remove();
       }
-
-      Player(8).SetFaction(GoblinSetup.Goblin);
-      Player(8).SetTeam(TeamSetup.Horde);
-      RemoveFaction(GoblinSetup.Goblin, Regions.GoblinStartPos);
-
       Player(8).SetFaction(ZandalarSetup.Zandalar);
       Player(8).SetTeam(TeamSetup.Horde);
-      foreach (var unit in CreateGroup().EnumUnitsInRect(Regions.TrollStartPos).EmptyToList())
-      {
-        unit.SetOwner(Player(8));
-      }
+      Player(8).RescueGroup(zandaUnits);
       _factionPicked = true;
+      ConcludeFactionPick();
       ConcludeFactionPick();
     }
 
     private void PickGoblin()
     {
       var gobUnits = Regions.GoblinStartPos.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
+      var zandaUnits = Regions.TrollStartPos.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
 
-      Player(8).SetFaction(ZandalarSetup.Zandalar);
-      Player(8).SetTeam(TeamSetup.Horde);
-      RemoveFaction(ZandalarSetup.Zandalar, Regions.TrollStartPos);
-
+      ZandalarSetup.Zandalar.Leave();
+      foreach (var unit in zandaUnits)
+      {
+        unit.Remove();
+      }
       Player(8).SetFaction(GoblinSetup.Goblin);
       Player(8).SetTeam(TeamSetup.Horde);
-
+      Player(8).RescueGroup(gobUnits);
       _factionPicked = true;
       ConcludeFactionPick();
-    }
-
-    private void RemoveFaction(Faction faction, Rectangle rect)
-    {
-      foreach (var unit in CreateGroup().EnumUnitsInRect(rect).EmptyToList())
-      {
-        if (ControlPointManager.Instance.UnitIsControlPoint(unit))
-        {
-          SetUnitOwner(unit, Player(GetBJPlayerNeutralVictim()), true);
-          Console.WriteLine($"unit{unit.GetProperName()} transferred to {unit.OwningPlayer()}");
-        }
-        else
-        {
-          RemoveUnit(unit);
-          Console.WriteLine($"removed unit {unit.GetProperName()}");
-        }
-      }
-
-      faction.Leave();
     }
   }
 }
