@@ -715,7 +715,10 @@ namespace MacroTools.FactionSystem
       LeftGame?.Invoke(this, this);
     }
 
-    private void RemoveGoldMines()
+    /// <summary>
+    /// Removes all gold mines assigned to the faction
+    /// </summary>
+    public void RemoveGoldMines()
     {
       foreach (var unit in _goldMines) KillUnit(unit);
       _goldMines.Clear();
