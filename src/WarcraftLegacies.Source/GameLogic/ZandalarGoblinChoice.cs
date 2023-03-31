@@ -88,27 +88,11 @@ namespace WarcraftLegacies.Source.GameLogic
 
     private void PickZandalar()
     {
-
       var gobUnits = Regions.GoblinStartPos.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
       var zandaUnits = Regions.TrollStartPos.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
-
-      GoblinSetup.Goblin.ScoreStatus = ScoreStatus.Defeated;
-      GoblinSetup.Goblin.RemoveGoldMines();
-      foreach (var unit in gobUnits)
-      {
-        if (ControlPointManager.Instance.UnitIsControlPoint(unit))
-        {
-          unit.SetInvulnerable(false);
-        }
-        else
-        {
-          unit.Remove();
-        }
-      }
-
-      Player(8).SetFaction(ZandalarSetup.Zandalar);
-      Player(8).SetTeam(TeamSetup.Horde);
-      Player(8).RescueGroup(zandaUnits);
+      RemoveFaction(GoblinSetup.Goblin, gobUnits);
+      AssignFaction(ZandalarSetup.Zandalar, zandaUnits);
+      SetCameraPosition(Regions.TrollStartPos.Center.X, Regions.TrollStartPos.Center.Y);
       _factionPicked = true;
       ConcludeFactionPick();
     }
@@ -117,26 +101,36 @@ namespace WarcraftLegacies.Source.GameLogic
     {
       var gobUnits = Regions.GoblinStartPos.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
       var zandaUnits = Regions.TrollStartPos.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
+      RemoveFaction(ZandalarSetup.Zandalar, zandaUnits);
+      AssignFaction(GoblinSetup.Goblin, zandaUnits);
+      _factionPicked = true;
+      ConcludeFactionPick();
+    }
 
-      ZandalarSetup.Zandalar.ScoreStatus = ScoreStatus.Defeated;
-      ZandalarSetup.Zandalar.RemoveGoldMines();
-      foreach (var unit in zandaUnits)
+    private static void RemoveFaction(Faction faction, List<unit> gobUnits)
+    {
+      faction.ScoreStatus = ScoreStatus.Defeated;
+      faction.RemoveGoldMines();
+      foreach (var unit in gobUnits)
       {
         if (ControlPointManager.Instance.UnitIsControlPoint(unit))
         {
           unit.SetInvulnerable(false);
+          unit.SetOwner(Player(PLAYER_NEUTRAL_AGGRESSIVE));
         }
         else
         {
           unit.Remove();
         }
       }
-
-      Player(8).SetFaction(GoblinSetup.Goblin);
-      Player(8).SetTeam(TeamSetup.Horde);
-      Player(8).RescueGroup(gobUnits);
-      _factionPicked = true;
-      ConcludeFactionPick();
     }
+
+    private static void AssignFaction(Faction faction, List<unit> units)
+    {
+      Player(8).SetFaction(faction);
+      Player(8).SetTeam(TeamSetup.Horde);
+      Player(8).RescueGroup(units, true);
+    }
+
   }
 }
