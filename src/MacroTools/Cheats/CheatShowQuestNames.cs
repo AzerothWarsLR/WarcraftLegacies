@@ -13,6 +13,9 @@ namespace MacroTools.Cheats
   {
     /// <inheritdoc />
     public override string CommandText => "quests";
+    
+    /// <inheritdoc />
+    public override bool Exact => false;
 
     /// <inheritdoc />
     public override int MinimumParameterCount => 1;

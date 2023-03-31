@@ -1,8 +1,10 @@
 ﻿using System;
+using System.Collections.Generic;
 using MacroTools.LegendSystem;
 using MacroTools.Libraries;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
+using static MacroTools.Libraries.GeneralHelpers;
 
 namespace MacroTools.Extensions
 {
@@ -21,12 +23,12 @@ namespace MacroTools.Extensions
       var oldLevel = GetHeroLevel(whichUnit);
       if (newLevel > oldLevel)
         SetHeroLevel(whichUnit, newLevel, showEyeCandy);
-      else if (newLevel < oldLevel) 
+      else if (newLevel < oldLevel)
         UnitStripHeroLevel(whichUnit, oldLevel - newLevel);
 
       return whichUnit;
     }
-    
+
     /// <summary>
     /// Determines whether or not the unit's attack can be seen in the UI window.
     /// </summary>
@@ -35,19 +37,13 @@ namespace MacroTools.Extensions
       BlzSetUnitWeaponBooleanField(whichUnit, UNIT_WEAPON_BF_ATTACK_SHOW_UI, weaponSlot, show);
       return whichUnit;
     }
-    
-    /// <summary>
-    /// Sets the level of the unit to the specified value
-    /// </summary>
-    /// <param name="whichUnit"></param>
-    /// <param name="level"></param>
-    /// <returns></returns>
+
     public static unit SetUnitLevel(this unit whichUnit, int level)
     {
       BlzSetUnitIntegerField(whichUnit, UNIT_IF_LEVEL, level);
       return whichUnit;
     }
-    
+
     /// <summary>
     /// Sets a unit's armor.
     /// </summary>
@@ -56,7 +52,7 @@ namespace MacroTools.Extensions
       BlzSetUnitArmor(whichUnit, armor);
       return whichUnit;
     }
-    
+
     /// <summary>
     /// Returns the unit's maximum hit points.
     /// </summary>
@@ -66,7 +62,7 @@ namespace MacroTools.Extensions
     /// Returns the unit's current hit points.
     /// </summary>
     public static float GetHitPoints(this unit whichUnit) => GetUnitState(whichUnit, UNIT_STATE_LIFE);
-    
+
     /// <summary>
     /// Sets the unit's scaling value.
     /// </summary>
@@ -75,7 +71,7 @@ namespace MacroTools.Extensions
       SetUnitScale(whichUnit, scale, scale, scale);
       return whichUnit;
     }
-    
+
     /// <summary>
     /// Sets the unit's maximum hit points.
     /// </summary>
@@ -102,7 +98,7 @@ namespace MacroTools.Extensions
       BlzSetUnitBaseDamage(whichUnit, value, weaponSlot);
       return whichUnit;
     }
-    
+
     /// <summary>
     /// Sets the unit's number of damage dice.
     /// </summary>
@@ -111,7 +107,7 @@ namespace MacroTools.Extensions
       BlzSetUnitDiceNumber(whichUnit, value, weaponSlot);
       return whichUnit;
     }
-    
+
     /// <summary>
     /// Sets the number of sides on the unit's damage dice.
     /// </summary>
@@ -129,7 +125,7 @@ namespace MacroTools.Extensions
       BlzSetUnitSkin(whichUnit, skinUnitTypeId);
       return whichUnit;
     }
-    
+
     /// <summary>
     /// Changes the unit's name.
     /// </summary>
@@ -138,7 +134,7 @@ namespace MacroTools.Extensions
       BlzSetUnitName(whichUnit, name);
       return whichUnit;
     }
-    
+
     /// <summary>
     /// Returns true if the unit is an illusion.
     /// </summary>
@@ -158,7 +154,7 @@ namespace MacroTools.Extensions
       BlzSetUnitFacingEx(whichUnit, facing);
       return whichUnit;
     }
-    
+
     /// <summary>
     /// Determines whether or not the unit explodes on death.
     /// </summary>
@@ -167,7 +163,7 @@ namespace MacroTools.Extensions
       SetUnitExploded(whichUnit, flag);
       return whichUnit;
     }
-    
+
     /// <summary>
     /// Gets the unit's unit level if it's a unit, or hero level if it's a hero.
     /// </summary>
@@ -184,7 +180,7 @@ namespace MacroTools.Extensions
       SetUnitVertexColor(whichUnit, red, green, blue, alpha);
       return whichUnit;
     }
-    
+
     /// <summary>
     /// Causes the unit to die after the specified duration, like a summoned unit.
     /// </summary>
@@ -196,11 +192,11 @@ namespace MacroTools.Extensions
     {
       if (duration < 1)
         throw new ArgumentException($"Cannot apply a timed life with a {nameof(duration)} less than 1.");
-      
+
       UnitApplyTimedLife(whichUnit, buffId, duration);
       return whichUnit;
     }
-    
+
     /// <summary>
     /// Gets the unit's type ID as shown in the object editor.
     /// </summary>
@@ -229,11 +225,11 @@ namespace MacroTools.Extensions
       SetUnitAnimation(whichUnit, animation);
       return whichUnit;
     }
-    
+
     /// <summary>
     /// Gets the units proper name. If it doesn't have one, get their unit name instead.
     /// </summary>
-    public static string GetProperName(this unit whichUnit) => 
+    public static string GetProperName(this unit whichUnit) =>
       IsUnitType(whichUnit, UNIT_TYPE_HERO) ? GetHeroProperName(whichUnit) : GetUnitName(whichUnit);
 
     /// <summary>
@@ -249,7 +245,7 @@ namespace MacroTools.Extensions
       UnitRemoveItem(whichUnit, whichItem);
       return whichUnit;
     }
-    
+
     /// <summary>
     /// Determines whether or not the unit exists in the game world.
     /// </summary>
@@ -258,7 +254,7 @@ namespace MacroTools.Extensions
       ShowUnit(whichUnit, show);
       return whichUnit;
     }
-    
+
     /// <summary>
     /// Kill the unit instantly.
     /// </summary>
@@ -284,7 +280,7 @@ namespace MacroTools.Extensions
       PauseUnit(unit, value);
       return unit;
     }
-    
+
     /// <summary>
     /// If true, prevents the unit from moving or taking actions.
     /// </summary>
@@ -293,7 +289,7 @@ namespace MacroTools.Extensions
       BlzPauseUnitEx(unit, value);
       return unit;
     }
-    
+
     /// <summary>
     /// If true, the unit cannot be targeted by attacks or hostile abilities and cannot be damaged.
     /// </summary>
@@ -302,7 +298,7 @@ namespace MacroTools.Extensions
       SetUnitInvulnerable(unit, value);
       return unit;
     }
-    
+
     /// <summary>
     /// Removes the unit from the game permanently.
     /// </summary>
@@ -310,7 +306,7 @@ namespace MacroTools.Extensions
     {
       RemoveUnit(unit);
     }
-    
+
     /// <summary>
     /// Orders a unit to perform a specified order at a specified <see cref="Point"/>.
     /// </summary>
@@ -319,7 +315,7 @@ namespace MacroTools.Extensions
       IssuePointOrder(unit, order, target.X, target.Y);
       return unit;
     }
-    
+
     /// <summary>
     /// Orders a unit to perform a specified order on the specified target.
     /// </summary>
@@ -328,7 +324,7 @@ namespace MacroTools.Extensions
       IssueTargetOrder(unit, order, target);
       return unit;
     }
-    
+
     /// <summary>
     /// Orders a unit to perform the specified targetless order.
     /// </summary>
@@ -367,7 +363,7 @@ namespace MacroTools.Extensions
       SetUnitOwner(unit, whichPlayer, changeColor);
       return unit;
     }
-    
+
     /// <summary>
     /// Returns the current owner of the specified unit/
     /// </summary>
@@ -384,7 +380,7 @@ namespace MacroTools.Extensions
       WaygateActivate(waygate, flag);
       return waygate;
     }
-    
+
     /// <summary>
     ///   Sets the Waygate's destination to the target point.
     ///   Blindly assumes that the unit is a Waygate.
@@ -501,7 +497,7 @@ namespace MacroTools.Extensions
         .Pause(pause);
 
       var asCapital = CapitalManager.GetFromUnit(whichUnit);
-      if (asCapital == null || asCapital.ProtectorCount == 0) 
+      if (asCapital == null || asCapital.ProtectorCount == 0)
         whichUnit.SetInvulnerable(false);
     }
 
@@ -629,7 +625,7 @@ namespace MacroTools.Extensions
       whichUnit.SetLifePercent(percentageHitpoints);
       return whichUnit;
     }
-    
+
     /// <summary>
     /// Multiplities the specified unit's mana by the specified amount.
     /// </summary>
@@ -658,7 +654,7 @@ namespace MacroTools.Extensions
         GetUnitState(whichUnit, UNIT_STATE_MAX_MANA) * MathEx.Max(0, percent) * 0.01f);
       return whichUnit;
     }
-    
+
     /// <summary>
     /// Sets the unit's maximum mana.
     /// </summary>
@@ -668,7 +664,7 @@ namespace MacroTools.Extensions
       BlzSetUnitMaxMana(whichUnit, maximumMana);
       return whichUnit;
     }
-    
+
     /// <summary>
     /// Sets the unit's current mana.
     /// </summary>
@@ -713,7 +709,7 @@ namespace MacroTools.Extensions
       SetUnitAbilityLevel(whichUnit, abilityTypeId, level);
       return whichUnit;
     }
-    
+
     /// <summary>
     /// Removes an ability from a unit.
     /// </summary>
@@ -808,6 +804,54 @@ namespace MacroTools.Extensions
     {
       return whichUnit.IsType(UNIT_TYPE_RESISTANT) || whichUnit.IsType(UNIT_TYPE_HERO) ||
              (whichUnit.OwningPlayer() == Player(PLAYER_NEUTRAL_AGGRESSIVE) && whichUnit.GetLevel() >= 6);
+    }
+
+    /// <summary>
+    /// Removes All abilities not in the ignore list from a unit
+    /// </summary>
+    /// <param name="whichUnit">The unit to remove abilities from</param>
+    /// <param name="ignoredAbilityId">List of ability Ids to not be removed. </param>
+    /// <returns>A List of abilityids for a given unit.</returns>
+    public static unit RemoveAllAbilities(this unit whichUnit, List<int> ignoredAbilityId)
+    {
+      
+      var abilities = GetUnitAbilities(whichUnit);
+
+      foreach (var ability in abilities)
+      {
+        var abilityid = BlzGetAbilityId(ability);
+        if (!ignoredAbilityId.Contains(abilityid))
+        {
+          RemoveAbility(whichUnit, abilityid);
+        }
+      }
+
+      return whichUnit;
+    }
+    
+    /// <summary>
+    /// Gets all the abilities for a unit
+    /// </summary>
+    /// <param name="whichUnit">The unit to get the abilities of.</param>
+    /// <returns>A List of ability objects for a given unit.</returns>
+    public static List<ability> GetUnitAbilities(this unit whichUnit)
+    {
+      
+      var abilities = new List<ability>();
+      var index = 0;
+
+      while(true)
+      {
+        var ability = BlzGetUnitAbilityByIndex(whichUnit, index);
+
+        if (ability is null)
+          break;
+        
+        abilities.Add(ability);
+        index++;
+      }
+
+      return abilities;
     }
   }
 }

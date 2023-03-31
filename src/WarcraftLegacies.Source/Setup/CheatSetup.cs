@@ -3,13 +3,12 @@ using MacroTools.CommandSystem;
 using MacroTools.QuestSystem;
 using WarcraftLegacies.Source.Cheats;
 using WarcraftLegacies.Source.GameLogic;
-using static MacroTools.Cheats.TestMode;
 
 namespace WarcraftLegacies.Source.Setup
 {
   public static class CheatSetup
   {
-    public static void Setup(CommandManager commandManager, CinematicMode cinematic)
+    public static void Setup(CommandManager commandManager, CinematicMode cinematicMode)
     {
       commandManager.Register(new CheatAddSpell());
       commandManager.Register(new CheatResearchLevel());
@@ -44,8 +43,10 @@ namespace WarcraftLegacies.Source.Setup
       commandManager.Register(new CheatVision());
       commandManager.Register(new CheatShore());
       commandManager.Register(new CheatPosition());
-      CheatDocumentation.Setup(commandManager);
-      var cheatSkipCinematic = new CheatSkipCinematic(cinematic);
+      commandManager.Register(new CheatGetUnitAbilities());
+      commandManager.Register(new CheatRemoveAllAbilities());
+      TestMode.Setup();
+      var cheatSkipCinematic = new CheatSkipCinematic(cinematicMode);
       cheatSkipCinematic.Init();
     }
   }
