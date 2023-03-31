@@ -3,6 +3,7 @@ using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
+using MacroTools.Timer;
 using System;
 using System.Collections.Generic;
 using WarcraftLegacies.Source.Setup;

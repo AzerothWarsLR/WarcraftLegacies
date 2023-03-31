@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace WarcraftLegacies.Source.GameLogic
+namespace MacroTools.Timer
 {
   /// <summary>
   /// 

@@ -36,6 +36,12 @@ namespace MacroTools.Extensions
       return whichUnit;
     }
     
+    /// <summary>
+    /// Sets the level of the unit to the specified value
+    /// </summary>
+    /// <param name="whichUnit"></param>
+    /// <param name="level"></param>
+    /// <returns></returns>
     public static unit SetUnitLevel(this unit whichUnit, int level)
     {
       BlzSetUnitIntegerField(whichUnit, UNIT_IF_LEVEL, level);

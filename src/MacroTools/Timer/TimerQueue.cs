@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace WarcraftLegacies.Source.GameLogic
+namespace MacroTools.Timer
 {
   /// <summary>
   /// Allows chaining timers together so they run one after the other seamlessly

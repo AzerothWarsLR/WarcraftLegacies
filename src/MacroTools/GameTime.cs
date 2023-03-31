@@ -1,5 +1,5 @@
-﻿using System;
-using WarcraftLegacies.Source.GameLogic;
+﻿using MacroTools.Timer;
+using System;
 using static War3Api.Common;
 
 namespace MacroTools
