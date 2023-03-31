@@ -13,7 +13,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
   {
     public static Faction Goblin { get; private set; }
 
-    public static void Setup()
+    public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
       Goblin = new Faction(FactionNames.Goblin, PLAYER_COLOR_LIGHT_GRAY, "|cff808080",
         "ReplaceableTextures\\CommandButtons\\BTNHeroTinker.blp")

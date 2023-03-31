@@ -93,15 +93,23 @@ namespace WarcraftLegacies.Source.GameLogic
       var zandaUnits = Regions.TrollStartPos.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
 
       GoblinSetup.Goblin.ScoreStatus = ScoreStatus.Defeated;
-      foreach (var unit in gobUnits)
+      GoblinSetup.Goblin.RemoveGoldMines();
+      foreach (var unit in zandaUnits)
       {
-        unit.Remove();
+        if (ControlPointManager.Instance.UnitIsControlPoint(unit))
+        {
+          unit.SetInvulnerable(false);
+        }
+        else
+        {
+          unit.Remove();
+        }
       }
+
       Player(8).SetFaction(ZandalarSetup.Zandalar);
       Player(8).SetTeam(TeamSetup.Horde);
       Player(8).RescueGroup(zandaUnits);
       _factionPicked = true;
-      ConcludeFactionPick();
       ConcludeFactionPick();
     }
 
@@ -111,10 +119,19 @@ namespace WarcraftLegacies.Source.GameLogic
       var zandaUnits = Regions.TrollStartPos.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
 
       ZandalarSetup.Zandalar.ScoreStatus = ScoreStatus.Defeated;
+      ZandalarSetup.Zandalar.RemoveGoldMines();
       foreach (var unit in zandaUnits)
       {
-        unit.Remove();
+        if (ControlPointManager.Instance.UnitIsControlPoint(unit))
+        {
+          unit.SetInvulnerable(false);
+        }
+        else
+        {
+          unit.Remove();
+        }
       }
+
       Player(8).SetFaction(GoblinSetup.Goblin);
       Player(8).SetTeam(TeamSetup.Horde);
       Player(8).RescueGroup(gobUnits);
