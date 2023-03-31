@@ -1,5 +1,7 @@
-﻿using MacroTools.FactionSystem;
+﻿using MacroTools;
+using MacroTools.FactionSystem;
 using MacroTools.Powers;
+using WCSharp.Shared.Data;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup.FactionSetup
@@ -93,6 +95,7 @@ The Trading Center in Kezan will unlock the ability to train Traders. Be sure to
       };
       Goblin.AddPower(oilPower);
 
+      Goblin.AddGoldMine(preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-8615, -12869)));
       FactionManager.Register(Goblin);
     }
   }

@@ -32,9 +32,6 @@ namespace WarcraftLegacies.Source.Setup
       Player(7).SetFaction(DalaranSetup.Dalaran);
       Player(7).SetTeam(TeamSetup.NorthAlliance);
 
-      Player(8).SetFaction(GoblinSetup.Goblin);
-      Player(8).SetTeam(TeamSetup.Horde);
-
       Player(10).SetFaction(StormwindSetup.Stormwind);
       Player(10).SetTeam(TeamSetup.SouthAlliance);
 

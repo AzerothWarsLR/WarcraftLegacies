@@ -92,7 +92,7 @@ namespace WarcraftLegacies.Source.GameLogic
       var gobUnits = Regions.GoblinStartPos.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
       var zandaUnits = Regions.TrollStartPos.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
 
-      GoblinSetup.Goblin.Leave();
+      GoblinSetup.Goblin.ScoreStatus = ScoreStatus.Defeated;
       foreach (var unit in gobUnits)
       {
         unit.Remove();
@@ -110,7 +110,7 @@ namespace WarcraftLegacies.Source.GameLogic
       var gobUnits = Regions.GoblinStartPos.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
       var zandaUnits = Regions.TrollStartPos.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
 
-      ZandalarSetup.Zandalar.Leave();
+      ZandalarSetup.Zandalar.ScoreStatus = ScoreStatus.Defeated;
       foreach (var unit in zandaUnits)
       {
         unit.Remove();
