@@ -14,6 +14,9 @@ namespace MacroTools.Cheats
     public override string CommandText => "setresearchlevel";
     
     /// <inheritdoc />
+    public override bool Exact => false;
+    
+    /// <inheritdoc />
     public override int MinimumParameterCount => 2;
     
     /// <inheritdoc />

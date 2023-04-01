@@ -218,12 +218,14 @@ namespace MacroTools.Extensions
     /// </summary>
     /// <param name="newOwningPlayer">The player who should own the units after being rescued</param>
     /// <param name="units">The units to rescue.</param>
-    public static void RescueGroup(this player? newOwningPlayer, List<unit> units)
+    /// <param name="pause"></param>
+    public static void RescueGroup(this player? newOwningPlayer, List<unit> units, bool pause = false)
     {
       newOwningPlayer ??= Player(PLAYER_NEUTRAL_AGGRESSIVE);
 
       foreach (var unit in units)
-        unit.Rescue(newOwningPlayer);
+      
+        unit.Rescue(newOwningPlayer, pause);
     }
 
     /// <summary>

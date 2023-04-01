@@ -12,6 +12,9 @@ namespace MacroTools.Commands
   {
     /// <inheritdoc />
     public override string CommandText => "cam";
+    
+    /// <inheritdoc />
+    public override bool Exact => false;
   
     /// <inheritdoc />
     public override int MinimumParameterCount => 1;
