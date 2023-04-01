@@ -38,7 +38,6 @@ namespace WarcraftLegacies.Source.GameLogic
     /// <param name="duration"></param>
     public ZandalarGoblinChoiceDialogue(float duration)
     {
-
       PickDialogue = DialogCreate();
       NoButton = DialogAddButton(PickDialogue, "Zandalari", 0);
       YesButton = DialogAddButton(PickDialogue, "Goblins", 0);
@@ -78,7 +77,6 @@ namespace WarcraftLegacies.Source.GameLogic
       }
 
       DialogDisplay(Player(8), PickDialogue, false);
-
       DialogClear(PickDialogue);
       DialogDestroy(PickDialogue);
       DestroyTrigger(YesTrigger);
@@ -93,7 +91,8 @@ namespace WarcraftLegacies.Source.GameLogic
       var zandaUnits = Regions.TrollStartPos.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
       RemoveFaction(GoblinSetup.Goblin, gobUnits);
       AssignFaction(ZandalarSetup.Zandalar, zandaUnits);
-      SetCameraPosition(Regions.TrollStartPos.Center.X, Regions.TrollStartPos.Center.Y);
+      if (GetLocalPlayer() == Player(8))
+        SetCameraPosition(Regions.TrollStartPos.Center.X, Regions.TrollStartPos.Center.Y);
       _factionPicked = true;
       ConcludeFactionPick();
     }
