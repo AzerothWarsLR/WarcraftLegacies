@@ -6560,6 +6560,12 @@ STRING 1093
 Train Hippogryph Rider
 }
 
+STRING 1094
+// Units: Nalc (Baron of Gadgetzan), Ubertip (Tooltip - Extended)
+{
+Alchemist Hero, strong at defensive and offensive combat.|n|cfff5962dCan learn:|R Exploding Cocktail, Healing Spray, Wise Council, Toxic Waste|n|n|cffffcc00Attacks land units.|R
+}
+
 STRING 1095
 // Units: h0AO (Bombard), Tip (Tooltip - Basic)
 {
@@ -43761,7 +43767,7 @@ Summons 24 small Spiders that have poison attacks.|nLasts <ACs7,Dur1> seconds.|n
 }
 
 STRING 7292
-// Abilities: A0WO (Robo-Goblin), EditorSuffix (Editor Suffix)
+// Units: n0DM (Toxic Cloud), EditorSuffix (Name - Editor Suffix)
 {
 (level 3)
 }
@@ -45413,7 +45419,7 @@ Summons 3 Spiders that have Web. and poison attacks.|nLasts <ACs7,Dur1> seconds.
 }
 
 STRING 7567
-// Abilities: A0UO (Robo-Goblin), EditorSuffix (Editor Suffix)
+// Units: n0DL (Toxic Cloud), EditorSuffix (Name - Editor Suffix)
 {
 (level 2)
 }
@@ -48011,7 +48017,7 @@ Q
 }
 
 STRING 8000
-// Abilities: A0RW (Robo-Goblin), EditorSuffix (Editor Suffix)
+// Units: n0DJ (Toxic Cloud), EditorSuffix (Name - Editor Suffix)
 {
 (level 1)
 }
@@ -48179,7 +48185,7 @@ Light Cavalry Head
 }
 
 STRING 8028
-// Abilities: A0RS (Cluster Rockets), EditorSuffix (Editor Suffix)
+// Abilities: A0WO (Robo-Goblin), EditorSuffix (Editor Suffix)
 {
 (level 3)
 }
@@ -48263,7 +48269,7 @@ Q
 }
 
 STRING 8042
-// Abilities: A0RQ (Cluster Rockets), EditorSuffix (Editor Suffix)
+// Abilities: A0UO (Robo-Goblin), EditorSuffix (Editor Suffix)
 {
 (level 2)
 }
@@ -48335,7 +48341,7 @@ Bombards an area with rockets, dealing up to 150 damage to nearby enemy units an
 }
 
 STRING 8054
-// Abilities: A0RP (Cluster Rockets), EditorSuffix (Editor Suffix)
+// Abilities: A0RW (Robo-Goblin), EditorSuffix (Editor Suffix)
 {
 (level 1)
 }
@@ -114327,6 +114333,12 @@ STRING 19057
 Mass Unholy Armor - [|cffffcc00Level 4|r]
 }
 
+STRING 19058
+// Units: n0DJ (Toxic Cloud), Name (Name)
+{
+Toxic Cloud
+}
+
 STRING 19059
 // Upgrades: Renb (Nature's Blessing), Hotkey (Hotkey)
 {
@@ -118481,7 +118493,7 @@ Q
 }
 
 STRING 19751
-// Upgrades: Rosp (Spiked Barricades,Improved Spiked Barricades,Advanced Spiked Barricades), Hotkey (Hotkey)
+// Abilities: A11W (Toxic Cloud), Hotkey (Hotkey - Normal)
 {
 R
 }
@@ -120407,7 +120419,7 @@ W
 }
 
 STRING 20072
-// Upgrades: Rosp (Spiked Barricades,Improved Spiked Barricades,Advanced Spiked Barricades), Hotkey (Hotkey)
+// Abilities: A11W (Toxic Cloud), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -121541,19 +121553,19 @@ This unit is caught within a Black Hole; its movement speed has been reduced tem
 }
 
 STRING 20261
-// Upgrades: Ropg (Pillage), Hotkey (Hotkey)
+// Upgrades: Rosp (Spiked Barricades,Improved Spiked Barricades,Advanced Spiked Barricades), Hotkey (Hotkey)
 {
 R
 }
 
 STRING 20262
-// Upgrades: Rews (Well Spring), Hotkey (Hotkey)
+// Upgrades: Rosp (Spiked Barricades,Improved Spiked Barricades,Advanced Spiked Barricades), Hotkey (Hotkey)
 {
 R
 }
 
 STRING 20263
-// Upgrades: R00N (Storm Hammers), Hotkey (Hotkey)
+// Upgrades: Ropg (Pillage), Hotkey (Hotkey)
 {
 R
 }
@@ -122398,6 +122410,12 @@ STRING 20403
 S
 }
 
+STRING 20404
+// Units: n0DL (Toxic Cloud), Name (Name)
+{
+Toxic Cloud
+}
+
 STRING 20405
 // Upgrades: R08P (Naga Siren Adept Training,Naga Siren Master Training), Hotkey (Hotkey)
 {
@@ -122422,10 +122440,22 @@ STRING 20408
 C
 }
 
+STRING 20409
+// Units: n0DM (Toxic Cloud), Name (Name)
+{
+Toxic Cloud
+}
+
 STRING 20410
 // Upgrades: R07M (Shaman Adept Training,Shaman Master Training), Tip (Tooltip)
 {
 Research Alchemist Grandmaster Training
+}
+
+STRING 20411
+// Abilities: A0RS (Cluster Rockets), EditorSuffix (Editor Suffix)
+{
+(level 3)
 }
 
 STRING 20412
@@ -122468,12 +122498,6 @@ STRING 20418
 // Units: edcm (Bear), Ubertip (Tooltip - Extended)
 {
 Powerful frontline melee unit. |n|cfff5962dAbilities:|R Roar, Animal Fury|n|n|cffffcc00Attacks land units.|r
-}
-
-STRING 20419
-// Units: Nalc (Baron of Gadgetzan), Ubertip (Tooltip - Extended)
-{
-Alchemist Hero, strong at defensive and offensive combat.|n|cfff5962dCan learn:|R Exploding Cocktail, Healing Spray, Wise Council, Chemical Rage|n|n|cffffcc00Attacks land units.|R
 }
 
 STRING 20420
@@ -122540,5 +122564,119 @@ STRING 20430
 // Upgrades: R004 (Magic Sentry), Hotkey (Hotkey)
 {
 Z
+}
+
+STRING 20431
+// Abilities: A0RQ (Cluster Rockets), EditorSuffix (Editor Suffix)
+{
+(level 2)
+}
+
+STRING 20432
+// Abilities: A0RP (Cluster Rockets), EditorSuffix (Editor Suffix)
+{
+(level 1)
+}
+
+STRING 20433
+// Abilities: A11T (Building Damage Aura), EditorSuffix (Editor Suffix)
+{
+(toxic cloud 1)
+}
+
+STRING 20434
+// Abilities: A11U (Building Damage Aura), EditorSuffix (Editor Suffix)
+{
+(toxic cloud 2)
+}
+
+STRING 20435
+// Abilities: A11V (Building Damage Aura), EditorSuffix (Editor Suffix)
+{
+(toxic cloud 3)
+}
+
+STRING 20436
+// Abilities: A11W (Toxic Cloud), Researchubertip (Tooltip - Learn - Extended)
+{
+Summon an immobile cloud of toxic waste. The cloud will damage enemies as long as they remain inside it. |n|n|cffffcc00Level 1|r - 50 damage per second, 20 seconds duration.|n|cffffcc00Level 2|r - 75 damage per second, 35 seconds duration.|n|cffffcc00Level 3|r - 100 damage per second 50 seconds duration.
+}
+
+STRING 20437
+// Abilities: A11W (Toxic Cloud), Tip (Tooltip - Normal)
+{
+Pocket Factory - [|cffffcc00Level 4|r]
+}
+
+STRING 20438
+// Abilities: A11W (Toxic Cloud), Ubertip (Tooltip - Normal - Extended)
+{
+Summon an immobile cloud of toxic waste. The cloud will damage enemies as long as they remain inside it for 50 damage a second. Lasts 20 seconds
+}
+
+STRING 20439
+// Abilities: A11W (Toxic Cloud), Ubertip (Tooltip - Normal - Extended)
+{
+Summon an immobile cloud of toxic waste. The cloud will damage enemies as long as they remain inside it for 75 damage a second. Lasts 35 seconds
+}
+
+STRING 20440
+// Abilities: A11W (Toxic Cloud), Ubertip (Tooltip - Normal - Extended)
+{
+Summon an immobile cloud of toxic waste. The cloud will damage enemies as long as they remain inside it for 100 damage a second. Lasts 50 seconds
+}
+
+STRING 20441
+// Abilities: A11W (Toxic Cloud), Ubertip (Tooltip - Normal - Extended)
+{
+Creates a factory which automatically constructs Clockwerk Goblins.|n|nClockwerk Goblins have 1050 hit points, deal 37 - 39 damage, and explode upon death, causing up to 180 damage to nearby enemy units.|nFactory lasts 40 seconds. |n|n|cffffcc00Clockwerk Goblins attack land units only.|r
+}
+
+STRING 20442
+// Abilities: A11W (Toxic Cloud), EditorSuffix (Editor Suffix)
+{
+(noggenfogger)
+}
+
+STRING 20443
+// Abilities: A11W (Toxic Cloud), Name (Name)
+{
+Toxic Cloud
+}
+
+STRING 20444
+// Abilities: A11W (Toxic Cloud), Researchtip (Tooltip - Learn)
+{
+Learn Toxic Cloud - [|cffffcc00Level %d|r]
+}
+
+STRING 20445
+// Abilities: A11W (Toxic Cloud), Tip (Tooltip - Normal)
+{
+Toxic Cloud - [|cffffcc00Level 1|r]
+}
+
+STRING 20446
+// Abilities: A11W (Toxic Cloud), Tip (Tooltip - Normal)
+{
+Toxic Cloud - [|cffffcc00Level 2|r]
+}
+
+STRING 20447
+// Abilities: A11W (Toxic Cloud), Tip (Tooltip - Normal)
+{
+Toxic Cloud - [|cffffcc00Level 3|r]
+}
+
+STRING 20448
+// Upgrades: Rews (Well Spring), Hotkey (Hotkey)
+{
+R
+}
+
+STRING 20449
+// Upgrades: R00N (Storm Hammers), Hotkey (Hotkey)
+{
+R
 }
 
