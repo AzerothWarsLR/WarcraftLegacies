@@ -20051,12 +20051,6 @@ STRING 3342
 (Creep)
 }
 
-STRING 3343
-// Abilities: A0KY (Power Sources), Ubertip (Tooltip - Normal - Extended)
-{
-The Generator will need one of the following power sources to power the Dimensional Ship:|n-The Eye of Sargeras|n-The Book of Medivh|n-A Vial of the Sunwell|n-The Crown of the Triumvirate
-}
-
 STRING 3344
 // Units: h025 (Stormwind Cannon), Name (Name)
 {
@@ -105217,6 +105211,12 @@ STRING 17539
 // Abilities: A0WF (Herald of Destruction), Hotkey (Hotkey - Normal)
 {
 R
+}
+
+STRING 17540
+// Abilities: A0KY (Power Sources), Ubertip (Tooltip - Normal - Extended)
+{
+The Generator will need one of the following power sources to power the Dimensional Ship:|n-The Eye of Sargeras|n-The Book of Medivh|n-A Vial of the Sunwell|n-The Crown of the Triumvirate|n-Sulfuras, Hand of Ragnaros|n-The Helm of Domination
 }
 
 STRING 17545
