@@ -2,6 +2,7 @@
 using System.Linq;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
+using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.QuestSystem;
 using WarcraftLegacies.Source.Setup;
@@ -17,7 +18,6 @@ namespace WarcraftLegacies.Source.Quests.Zandalar
   /// </summary>
   public sealed class QuestZulfarrak : QuestData
   {
-    private const int _ghazrilla_id = Constants.UNIT_H06Q_DEMIGOD_WARSONG;
     private readonly List<unit> _rescueUnits;
     private readonly List<unit> _killUnits;
     private readonly AllLegendSetup _legendSetup;
@@ -27,16 +27,15 @@ namespace WarcraftLegacies.Source.Quests.Zandalar
     /// </summary>
     /// <param name="rescueRect"></param>
     /// <param name="legendSetup"></param>
-    public QuestZulfarrak(Rectangle rescueRect, AllLegendSetup legendSetup) : base("Fury of the Sands",
+    public QuestZulfarrak(Rectangle rescueRect, Capital zulfarrak, LegendaryHero zul) : base("Fury of the Sands",
       "The Sandfury Trolls of Zul'farrak are openly hostile to visitors, but they share a common heritage with the Zandalari Trolls. An adequate display of force could bring them around.",
       "ReplaceableTextures\\CommandButtons\\BTNDarkTroll.blp")
     {
       ResearchId = Constants.UPGRADE_R02F_QUEST_COMPLETED_FURY_OF_THE_SANDS_WARSONG;
-      AddObjective(new ObjectiveControlCapital(legendSetup.Neutral.Zulfarrak, false));
-      AddObjective(new ObjectiveLegendReachRect(LegendTroll.LEGEND_PRIEST, rescueRect, "Zul'Farrak"));
+      AddObjective(new ObjectiveControlCapital(zulfarrak, false));
+      AddObjective(new ObjectiveLegendReachRect(zul, rescueRect, "Zul'Farrak"));
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
       _killUnits = CreateGroup().EnumUnitsInRect(rescueRect).EmptyToList().Where(x => x.OwningPlayer() == Player(PLAYER_NEUTRAL_AGGRESSIVE)).ToList();
-      _legendSetup = legendSetup;
     }
 
     /// <inheritdoc/>
@@ -58,12 +57,6 @@ namespace WarcraftLegacies.Source.Quests.Zandalar
         foreach (var unit in _killUnits)
           unit.Kill();    
       }
-    }
-
-    /// <inheritdoc/>
-    protected override void OnAdd(Faction whichFaction)
-    {
-      whichFaction.ModObjectLimit(_ghazrilla_id, 1);
     }
   }
 }

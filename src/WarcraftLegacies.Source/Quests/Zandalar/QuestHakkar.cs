@@ -1,4 +1,4 @@
-using MacroTools.ArtifactSystem;
+﻿using MacroTools.ArtifactSystem;
 using MacroTools.ControlPointSystem;
 using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives.ArtifactBased;
@@ -37,8 +37,6 @@ namespace WarcraftLegacies.Source.Quests.Zandalar
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
     {
-      LegendTroll.LEGEND_HAKKAR.ForceCreate(completingFaction.Player, Regions.DrownedTemple.Center, 270);
-      SetHeroLevel(LegendTroll.LEGEND_HAKKAR.Unit, 12, false);
     }
   }
 }
