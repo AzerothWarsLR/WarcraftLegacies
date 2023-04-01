@@ -1,7 +1,9 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
+using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.FactionBased;
+using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
@@ -21,12 +23,11 @@ namespace WarcraftLegacies.Source.Quests.Zandalar
     /// Initializes a new instance of the <see cref="QuestZandalar"/> class
     /// </summary>
     /// <param name="rescueRect"></param>
-    public QuestZandalar(Rectangle rescueRect) : base("City of Gold", "We need to regain control of our land.",
+    public QuestZandalar(Capital feathermoon, Rectangle rescueRect) : base("City of Gold", "We need to regain control of our land.",
       "ReplaceableTextures\\CommandButtons\\BTNBloodTrollMage.blp")
     {
-      AddObjective(new ObjectiveResearch(Constants.UPGRADE_R04R_FORTIFIED_HULLS_UNIVERSAL_UPGRADE, Constants.UNIT_O03Z_FORTRESS_ZANDALARI_T3));
+      AddObjective(new ObjectiveCapitalDead(feathermoon));
       AddObjective(new ObjectiveUpgrade(Constants.UNIT_O03Z_FORTRESS_ZANDALARI_T3, Constants.UNIT_O03Y_STRONGHOLD_ZANDALARI_T2));
-      AddObjective(new ObjectiveExpire(900, Title));
       AddObjective(new ObjectiveSelfExists());
       ResearchId = Constants.UPGRADE_R04W_QUEST_COMPLETED_CITY_OF_GOLD;
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable);
