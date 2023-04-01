@@ -2332,7 +2332,6 @@ u = BlzCreateUnitWithSkin(p, FourCC("Ulic"), -10588.1, -23253.4, 324.370, FourCC
 SetUnitColor(u, ConvertPlayerColor(20))
 u = BlzCreateUnitWithSkin(p, FourCC("Nman"), -10348.4, -23402.1, 297.354, FourCC("Nman"))
 u = BlzCreateUnitWithSkin(p, FourCC("Osam"), -10650.2, -23509.4, 271.051, FourCC("Osam"))
-u = BlzCreateUnitWithSkin(p, FourCC("Nalc"), -22745.9, -23631.0, 30.499, FourCC("Nalc"))
 end
 
 function CreateBuildingsForPlayer1()
