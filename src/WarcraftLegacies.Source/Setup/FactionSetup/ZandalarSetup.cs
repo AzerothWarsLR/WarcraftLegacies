@@ -16,6 +16,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
       {
         StartingGold = 200,
         StartingLumber = 700,
+        ControlPointDefenderUnitTypeId = Constants.UNIT_H0C1_CONTROL_POINT_DEFENDER_ZANDALAR,
         IntroText = @"You are playing as the mighty |cffe1946cZandalari Empire|r.
 
 You start off on Zandalar. Raise an army and deal with the uprising in Nazmir, then head West to Crestfall to claim more gold mines. 
@@ -66,6 +67,7 @@ Once the human menace has been dealt with, sail West and help the Horde in Kalim
       Zandalar.ModObjectLimit(FourCC("O026"), 1); //Rasthakan
       Zandalar.ModObjectLimit(FourCC("O01J"), 1); //Zul
       Zandalar.ModObjectLimit(FourCC("U023"), 1); //Hakkar
+      Zandalar.ModObjectLimit(FourCC("H06Q"), 1); //Gazrilla
 
       Zandalar.ModObjectLimit(FourCC("Rers"), Faction.UNLIMITED); //Resistant Skin
       Zandalar.ModObjectLimit(FourCC("R00H"), Faction.UNLIMITED); //Animal Companion
