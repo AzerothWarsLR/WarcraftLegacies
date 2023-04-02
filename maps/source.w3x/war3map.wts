@@ -100077,12 +100077,6 @@ STRING 16682
 Revive Azil
 }
 
-STRING 16683
-// Units: e01Z (Throne of War), Ubertip (Tooltip - Extended)
-{
-Living Battering Rams. Extremely resilient beast with siege attack.|n|cfff5962dAbilities:|R Barrage|n|n|cff99b4d1Can only train 3.|r|n|cffffcc00Attacks land and air units.|r
-}
-
 STRING 16684
 // Units: n07R (War Turtle), EditorSuffix (Name - Editor Suffix)
 {
@@ -100093,6 +100087,12 @@ STRING 16685
 // Units: n09E (Storm Wyrm), Ubertip (Tooltip - Extended)
 {
 Heavy ranged unit that hurls bolts of lightning. Can cast Chain Lightning and Lightning Shield.|n|cff99b4d1Can only train 2.|r|n|cffffcc00Attacks land units.|r
+}
+
+STRING 16686
+// Units: e01Z (Throne of War), Ubertip (Tooltip - Extended)
+{
+Living Battering Rams. Extremely resilient beast with siege attack.|n|cfff5962dAbilities:|R Barrage, Scout's Rider, Thick Skin|n|n|cff99b4d1Can only train 3.|r|n|cffffcc00Attacks land and air units.|r
 }
 
 STRING 16687
@@ -122686,6 +122686,12 @@ STRING 20450
 Dinosaur Breeding Ground for the Zandalari.|n|cfff5962dTrains:|R Direhorn and Storm Wyrm
 }
 
+STRING 20451
+// Abilities: A11Y (Troll Handler), EditorSuffix (Editor Suffix)
+{
+(zandalar)
+}
+
 STRING 20452
 // Units: e01Z (Throne of War), Name (Name)
 {
@@ -122732,5 +122738,77 @@ STRING 20459
 // Upgrades: R097 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 E
+}
+
+STRING 20460
+// Abilities: A11Y (Troll Handler), Name (Name)
+{
+Troll Handler
+}
+
+STRING 20461
+// Abilities: A11Z (Scout's Rider), Ubertip (Tooltip - Normal - Extended)
+{
+The Throne of War has 2 Scouts riding it, They will fire projectiles at nearby enemies and jump out when the Throne of War is destroyed.
+}
+
+STRING 20462
+// Abilities: A11Z (Scout's Rider), Ubertip (Tooltip - Normal - Extended)
+{
+Increases the rate at which this unit gathers lumber.
+}
+
+STRING 20463
+// Abilities: A11Z (Scout's Rider), Name (Name)
+{
+Scout's Rider
+}
+
+STRING 20464
+// Abilities: A11Z (Scout's Rider), Tip (Tooltip - Normal)
+{
+Scout's Rider
+}
+
+STRING 20465
+// Abilities: A11Z (Scout's Rider), EditorSuffix (Editor Suffix)
+{
+(zandalar)
+}
+
+STRING 20466
+// Abilities: A120 (Scout's Fire 1), EditorSuffix (Editor Suffix)
+{
+(zandalar)
+}
+
+STRING 20467
+// Abilities: A120 (Scout's Fire 1), Tip (Tooltip - Normal)
+{
+Scout's Fire 1
+}
+
+STRING 20468
+// Abilities: A120 (Scout's Fire 1), Name (Name)
+{
+Scout's Fire 1
+}
+
+STRING 20469
+// Abilities: A121 (Scout's Fire 2), EditorSuffix (Editor Suffix)
+{
+(zandalar)
+}
+
+STRING 20470
+// Abilities: A121 (Scout's Fire 2), Tip (Tooltip - Normal)
+{
+Scout's Fire 2
+}
+
+STRING 20471
+// Abilities: A121 (Scout's Fire 2), Name (Name)
+{
+Scout's Fire 2
 }
 
