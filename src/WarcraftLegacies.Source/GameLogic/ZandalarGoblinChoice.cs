@@ -102,16 +102,16 @@ namespace WarcraftLegacies.Source.GameLogic
       var gobUnits = Regions.GoblinStartPos.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
       var zandaUnits = Regions.TrollStartPos.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
       RemoveFaction(ZandalarSetup.Zandalar, zandaUnits);
-      AssignFaction(GoblinSetup.Goblin, zandaUnits);
+      AssignFaction(GoblinSetup.Goblin, gobUnits);
       _factionPicked = true;
       ConcludeFactionPick();
     }
 
-    private static void RemoveFaction(Faction faction, List<unit> gobUnits)
+    private static void RemoveFaction(Faction faction, List<unit> units)
     {
       faction.ScoreStatus = ScoreStatus.Defeated;
       faction.RemoveGoldMines();
-      foreach (var unit in gobUnits)
+      foreach (var unit in units)
       {
         if (ControlPointManager.Instance.UnitIsControlPoint(unit))
         {
