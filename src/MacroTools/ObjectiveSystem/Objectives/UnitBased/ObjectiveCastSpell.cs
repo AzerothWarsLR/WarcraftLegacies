@@ -35,7 +35,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
     private void OnCast()
     {
       if (Progress != QuestProgress.Complete &&
-          (!_holderOnly || EligibleFactions.Contains(GetOwningPlayer(GetTriggerUnit()))))
+          (!_holderOnly || EligibleFactions.Contains(GetOwningPlayer(GetTriggerUnit())) is true))
       {
         Caster = GetTriggerUnit();
         Progress = QuestProgress.Complete;

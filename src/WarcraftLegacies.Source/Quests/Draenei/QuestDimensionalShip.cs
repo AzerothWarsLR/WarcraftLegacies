@@ -42,7 +42,9 @@ namespace WarcraftLegacies.Source.Quests.Draenei
         Constants.ITEM_I006_BOOK_OF_MEDIVH,
         Constants.ITEM_I003_EYE_OF_SARGERAS,
         Constants.ITEM_I011_CROWN_OF_THE_TRIUMVIRATE,
-        Constants.ITEM_I018_VIAL_OF_THE_SUNWELL
+        Constants.ITEM_I018_VIAL_OF_THE_SUNWELL,
+        Constants.ITEM_I00H_SULFURAS_HAND_OF_RAGNAROS,
+        Constants.ITEM_I01Y_HELM_OF_DOMINATION
       });
       AddObjective(_objectivePowerSource);
       AddObjective(new ObjectiveSelfExists());

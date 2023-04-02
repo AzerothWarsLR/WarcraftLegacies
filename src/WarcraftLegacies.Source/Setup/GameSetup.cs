@@ -28,7 +28,6 @@ namespace WarcraftLegacies.Source.Setup
     /// </summary>
     public static void Setup()
     {
-      TestMode.Setup();
       var displayIntroText = new DisplayIntroText(10);
       var cinematicMode = new CinematicMode(59, displayIntroText);
       var goblinZandalarPick = new ZandalarGoblinChoiceDialogue(10);

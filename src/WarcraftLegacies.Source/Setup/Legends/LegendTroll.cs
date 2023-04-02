@@ -1,34 +1,47 @@
+﻿using MacroTools;
 using MacroTools.LegendSystem;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup.Legends
 {
-  public static class LegendTroll
+  public sealed class LegendTroll
   {
-    public static LegendaryHero LEGEND_PRIEST { get; private set; }
-    public static LegendaryHero LEGEND_RASTAKHAN { get; private set; }
-    public static LegendaryHero LEGEND_HAKKAR { get; private set; }
+    public LegendaryHero Zul { get; }
+    public LegendaryHero Rastakhan { get; }
+    public LegendaryHero Hakkar { get; }
+    public LegendaryHero Gahzrilla { get; }
 
-    public static void Setup()
+    public LegendTroll()
     {
-      LEGEND_PRIEST = new LegendaryHero("Zul")
+      Zul = new LegendaryHero("Zul")
       {
         UnitType = FourCC("O01J")
       };
-      LegendaryHeroManager.Register(LEGEND_PRIEST);
 
-      LEGEND_HAKKAR = new LegendaryHero("Hakkar the Soulflayer")
+      Gahzrilla = new LegendaryHero("Gahz'rilla")
       {
-        UnitType = FourCC("U023")
-      };
-      LegendaryHeroManager.Register(LEGEND_HAKKAR);
-
-      LEGEND_RASTAKHAN = new LegendaryHero("Rastakhan")
-      {
-        UnitType = FourCC("O026"),
+        UnitType = FourCC("H06Q"),
         StartingXp = 2800
       };
-      LegendaryHeroManager.Register(LEGEND_RASTAKHAN);
+
+      Hakkar = new LegendaryHero("Hakkar the Soulflayer")
+      {
+        UnitType = FourCC("U023"),
+        StartingXp = 10800
+      };
+
+      Rastakhan = new LegendaryHero("Rastakhan")
+      {
+        UnitType = FourCC("O026"),
+        StartingXp = 6800
+      };
+    }
+    public void RegisterLegends()
+    {
+      LegendaryHeroManager.Register(Zul);
+      LegendaryHeroManager.Register(Hakkar);
+      LegendaryHeroManager.Register(Rastakhan);
+      LegendaryHeroManager.Register(Gahzrilla);
     }
   }
 }

@@ -78,7 +78,7 @@ public static class Regions
 	public static Rectangle TwistingNether { get; set; } = new Rectangle(18432f, -26528f, 20480f, -23488f);
 	public static Rectangle Vandermar_Village { get; set; } = new Rectangle(6592f, 6656f, 7840f, 8864f);
 	public static Rectangle West_Thandol { get; set; } = new Rectangle(14656f, -160f, 14848f, 64f);
-	public static Rectangle Zulfarrak { get; set; } = new Rectangle(-12352f, -14272f, -10592f, -12064f);
+	public static Rectangle Zulfarrak { get; set; } = new Rectangle(-12352f, -14272f, -10528f, -12064f);
 	public static Rectangle East_of_Azeroth { get; set; } = new Rectangle(22144f, -9888f, 22592f, -9376f);
 	public static Rectangle West_of_Kalimdor { get; set; } = new Rectangle(-20864f, 4576f, -20256f, 5216f);
 	public static Rectangle FTSummon { get; set; } = new Rectangle(-3392f, 20384f, -3232f, 20512f);
@@ -319,7 +319,7 @@ public static class Regions
 	public static Rectangle IslandBlocker5 { get; set; } = new Rectangle(512f, -9216f, 800f, -8416f);
 	public static Rectangle IllidariUnlockSA { get; set; } = new Rectangle(12000f, -22816f, 13376f, -21280f);
 	public static Rectangle BootyBayQuest { get; set; } = new Rectangle(9696f, -24160f, 12032f, -22304f);
-	public static Rectangle KaliRock8 { get; set; } = new Rectangle(-14400f, -9472f, -13632f, -8768f);
+	public static Rectangle KaliRock8 { get; set; } = new Rectangle(-14400f, -9536f, -13632f, -8768f);
 	public static Rectangle ShadowmoonBaseUnlock { get; set; } = new Rectangle(1696f, -31776f, 3936f, -28896f);
 	public static Rectangle MaelstromChannel { get; set; } = new Rectangle(-1120f, -1504f, 96f, -640f);
 	public static Rectangle FeathermoonCreeps { get; set; } = new Rectangle(-22464f, -12128f, -18368f, -7584f);

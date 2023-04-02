@@ -1,4 +1,4 @@
-using MacroTools.Extensions;
+﻿using MacroTools.Extensions;
 using MacroTools.QuestSystem;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -35,7 +35,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
 
     private void OnUnitDeath()
     {
-      Progress = IsPlayerOnSameTeamAsAnyEligibleFaction(GetKillingUnit().OwningPlayer())
+      Progress = IsPlayerOnSameTeamAsAnyEligibleFaction(GetKillingUnit().OwningPlayer()) is true or null
         ? QuestProgress.Complete
         : QuestProgress.Failed;
     }

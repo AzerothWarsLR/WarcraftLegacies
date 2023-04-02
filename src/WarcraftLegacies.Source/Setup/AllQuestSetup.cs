@@ -23,6 +23,7 @@ namespace WarcraftLegacies.Source.Setup
       KultirasQuestSetup.Setup(preplacedUnitSystem, allLegendSetup);
       GoblinQuestSetup.Setup(allLegendSetup);
       DraeneiQuestSetup.Setup(preplacedUnitSystem, allLegendSetup);
+      ZandalarQuestSetup.Setup(artifactSetup, preplacedUnitSystem, allLegendSetup);
       SharedQuestSetup.Setup(preplacedUnitSystem, artifactSetup, allLegendSetup);
       
     }
