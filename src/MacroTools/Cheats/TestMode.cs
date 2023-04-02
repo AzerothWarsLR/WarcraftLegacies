@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using MacroTools.CommandSystem;
+using System.Linq;
 using WCSharp.Shared;
 using static War3Api.Common;
 
@@ -23,13 +24,29 @@ namespace MacroTools.Cheats
       return triggerPlayerName is "YakaryBovine#6863" or "Lordsebas#11619" || AreCheatsActive;
     }
 
+    private static void CreateInfoQuests(CommandManager commandManager)
+    {
+      var newQuest = CreateQuest();
+      QuestSetTitle(newQuest, "Test Commands");
+      var description = commandManager.GetAllCommands().Aggregate("",
+        (current, command) => $"{current} -{command.CommandText}: {command.Description}\n");
+      QuestSetDescription(newQuest, description);
+      QuestSetDiscovered(newQuest, true);
+      QuestSetRequired(newQuest, true);
+      QuestSetIconPath(newQuest, "ReplaceableTextures\\CommandButtons\\BTNStaffOfTeleportation.blp");
+      QuestSetCompleted(newQuest, false);
+    }
+
     /// <summary>
     /// Sets up <see cref="TestMode"/>.
     /// </summary>
-    public static void Setup()
+    public static void Setup(CommandManager commandManager)
     {
       AreCheatsActive = Util.EnumeratePlayers().Count(player =>
         GetPlayerSlotState(player) == PLAYER_SLOT_STATE_PLAYING && GetPlayerController(player) == MAP_CONTROL_USER) < 2;
+
+      if (AreCheatsActive)
+        CreateInfoQuests(commandManager);
 
     }
   }
