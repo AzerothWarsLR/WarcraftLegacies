@@ -53,6 +53,7 @@ Once the human menace has been dealt with, sail West and help the Horde in Kalim
       Zandalar.ModObjectLimit(FourCC("o021"), 12); //Ravager
       Zandalar.ModObjectLimit(FourCC("nftk"), 12); //Warlord
       Zandalar.ModObjectLimit(FourCC("o02K"), 6); //Bear Rider
+      Zandalar.ModObjectLimit(FourCC("n0Dn"), 6); //Medium
       Zandalar.ModObjectLimit(FourCC("e01Z"), 3); //Throne of War
 
       //Ship

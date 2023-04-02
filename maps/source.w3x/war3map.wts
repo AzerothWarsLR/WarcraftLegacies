@@ -56393,6 +56393,12 @@ STRING 9395
 Inject Spiderlings
 }
 
+STRING 9396
+// Units: o043 (Spirit Spire), Ubertip (Tooltip - Extended)
+{
+Spiritual Hut for the casters of the Zandalari.|n|cfff5962dTrains:|r Haruspex, Hex Doctor, Medium|n|cfff5962dResearches:|R Haruspex Training, Hex Doctor Training
+}
+
 STRING 9397
 // Abilities: A0RS (Cluster Rockets), Researchhotkey (Hotkey - Learn)
 {
@@ -64797,6 +64803,12 @@ STRING 10797
 // Abilities: A09U (Healing Wave), Ubertip (Tooltip - Normal - Extended)
 {
 Calls forth a wave of healing energy that bounces up to 5 times, healing 85 damage on the primary target. Each jump heals less damage.
+}
+
+STRING 10798
+// Units: n0DN (Loa Medium), Ubertip (Tooltip - Extended)
+{
+Crazed medium that speak through the other world. |n|cfff5962dAbilities:|R Dark Regeneration, Siphon Mana, Inject Spiderling|n|n|cff99b4d1Can only train 6.|n|cffffcc00Attacks land and air units.|r
 }
 
 STRING 10799
@@ -99423,12 +99435,6 @@ STRING 16575
 Train Tinker
 }
 
-STRING 16576
-// Units: o043 (Spirit Spire), Ubertip (Tooltip - Extended)
-{
-Spiritual Hut for the casters of the Zandalari.|n|cfff5962dTrains:|r Haruspex, Hex Doctor|n|cfff5962dResearches:|R Haruspex Training, Hex Doctor Training
-}
-
 STRING 16577
 // Abilities: A0T9 (Unload), Hotkey (Hotkey - Normal)
 {
@@ -100081,6 +100087,12 @@ STRING 16685
 // Units: n09E (Storm Wyrm), Ubertip (Tooltip - Extended)
 {
 Heavy ranged unit that hurls bolts of lightning. Can cast Chain Lightning and Lightning Shield.|n|cff99b4d1Can only train 2.|r|n|cffffcc00Attacks land units.|r
+}
+
+STRING 16686
+// Abilities: A0GU (Inject Spiderlings), Ubertip (Tooltip - Normal - Extended)
+{
+The spider inject her young into the target which causes 5 damage per second for 50 seconds. If the afflicted unit dies while under the effect of this spell, 2 spiderlings will spawn from the corpse.
 }
 
 STRING 16687
@@ -122792,18 +122804,6 @@ STRING 20474
 // Units: n0DN (Loa Medium), Tip (Tooltip - Basic)
 {
 Train Loa Medium
-}
-
-STRING 20475
-// Units: n0DN (Loa Medium), Ubertip (Tooltip - Extended)
-{
-The Old Death Knights from the second war. |n|cfff5962dAbilities:|R Dark Regeneration, Anti-magic Shell, Animate Dead|n|n|cff99b4d1Can only train 6.|n|cffffcc00Attacks land and air units.|r
-}
-
-STRING 20476
-// Abilities: A0GU (Inject Spiderlings), Ubertip (Tooltip - Normal - Extended)
-{
-The spider inject her young into the target which causes 5 damage per second for 50 seconds. If the afflicted unit dies while under the effect o this spell, spiderlings will spawn from the corpse.
 }
 
 STRING 20477
