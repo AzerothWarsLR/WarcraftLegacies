@@ -35,7 +35,7 @@ namespace WarcraftLegacies.Source.Quests.Zandalar
       AddObjective(new ObjectiveControlCapital(zulfarrak, false));
       AddObjective(new ObjectiveLegendReachRect(zul, rescueRect, "Zul'Farrak"));
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
-      _killUnits = CreateGroup().EnumUnitsInRect(rescueRect).EmptyToList().Where(x => x.OwningPlayer() == Player(PLAYER_NEUTRAL_AGGRESSIVE)).ToList();
+      _killUnits = CreateGroup().EnumUnitsInRect(rescueRect).EmptyToList().Where(x => x.OwningPlayer() == Player(PLAYER_NEUTRAL_AGGRESSIVE)&& x != zulfarrak.Unit).ToList();
       Required = true;
     }
 
@@ -56,7 +56,7 @@ namespace WarcraftLegacies.Source.Quests.Zandalar
         completingFaction.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, 300);
         completingFaction.Player.RescueGroup(_rescueUnits);
         foreach (var unit in _killUnits)
-          unit.Kill();    
+          unit.Kill();
       }
     }
   }
