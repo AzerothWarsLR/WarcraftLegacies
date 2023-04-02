@@ -22,6 +22,7 @@ namespace WarcraftLegacies.Source.Quests.Zandalar
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestZandalar"/> class
     /// </summary>
+    /// <param name="feathermoon"></param>
     /// <param name="rescueRect"></param>
     public QuestZandalar(Capital feathermoon, Rectangle rescueRect) : base("City of Gold", "We need to regain control of our land.",
       "ReplaceableTextures\\CommandButtons\\BTNBloodTrollMage.blp")

@@ -5,8 +5,6 @@ using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.QuestSystem;
-using WarcraftLegacies.Source.Setup;
-using WarcraftLegacies.Source.Setup.Legends;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
@@ -20,22 +18,25 @@ namespace WarcraftLegacies.Source.Quests.Zandalar
   {
     private readonly List<unit> _rescueUnits;
     private readonly List<unit> _killUnits;
-    private readonly AllLegendSetup _legendSetup;
+    private readonly Capital _zulfarrak;
 
     /// <summary>
-    /// Initializes a new instance of the <see cref="QuestZulfarrak"/> class
+    /// Initializes a new instance of the <see cref="QuestZulfarrak"/> class.
     /// </summary>
     /// <param name="rescueRect"></param>
-    /// <param name="legendSetup"></param>
+    /// <param name="zulfarrak"></param>
+    /// <param name="zul"></param>
     public QuestZulfarrak(Rectangle rescueRect, Capital zulfarrak, LegendaryHero zul) : base("Fury of the Sands",
       "The Sandfury Trolls of Zul'farrak are openly hostile to visitors, but they share a common heritage with the Zandalari Trolls. An adequate display of force could bring them around.",
       "ReplaceableTextures\\CommandButtons\\BTNDarkTroll.blp")
     {
+      _zulfarrak = zulfarrak;
       ResearchId = Constants.UPGRADE_R02F_QUEST_COMPLETED_FURY_OF_THE_SANDS_WARSONG;
       AddObjective(new ObjectiveControlCapital(zulfarrak, false));
       AddObjective(new ObjectiveLegendReachRect(zul, rescueRect, "Zul'Farrak"));
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
       _killUnits = CreateGroup().EnumUnitsInRect(rescueRect).EmptyToList().Where(x => x.OwningPlayer() == Player(PLAYER_NEUTRAL_AGGRESSIVE)).ToList();
+      Required = true;
     }
 
     /// <inheritdoc/>
@@ -51,7 +52,7 @@ namespace WarcraftLegacies.Source.Quests.Zandalar
     {
       if (completingFaction.Player != null)
       {
-        SetUnitOwner(_legendSetup.Neutral.Zulfarrak.Unit, completingFaction.Player, true);
+        SetUnitOwner(_zulfarrak.Unit, completingFaction.Player, true);
         completingFaction.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, 300);
         completingFaction.Player.RescueGroup(_rescueUnits);
         foreach (var unit in _killUnits)

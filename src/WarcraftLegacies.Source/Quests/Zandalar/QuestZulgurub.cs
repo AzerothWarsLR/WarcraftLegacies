@@ -27,7 +27,6 @@ namespace WarcraftLegacies.Source.Quests.Zandalar
       AddObjective(new ObjectiveControlCapital(allLegendSetup.Neutral.Zulgurub, false));
     }
 
-
     /// <inheritdoc/>
     protected override string RewardFlavour => "Zul'gurub has fallen. The Gurubashi trolls lend their might to the Zandalari.";
 
