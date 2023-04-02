@@ -98175,12 +98175,6 @@ STRING 16365
 Train Hex Doctor
 }
 
-STRING 16366
-// Units: U023 (The Soulflayer), Awakentip (Tooltip - Awaken)
-{
-Revive Defiler
-}
-
 STRING 16367
 // Abilities: A0SE (Suppression), Hotkey (Hotkey - Normal)
 {
@@ -99111,12 +99105,6 @@ STRING 16521
 Z
 }
 
-STRING 16522
-// Units: U023 (The Soulflayer), Revivetip (Tooltip - Revive)
-{
-Revive Defiler
-}
-
 STRING 16523
 // Units: e00S (Glaive Warrior), Tip (Tooltip - Basic)
 {
@@ -99433,6 +99421,12 @@ STRING 16575
 // Units: o04Q (Tinker), Tip (Tooltip - Basic)
 {
 Train Tinker
+}
+
+STRING 16576
+// Units: U023 (The Soulflayer), Awakentip (Tooltip - Awaken)
+{
+Revive Hakkar
 }
 
 STRING 16577
@@ -100327,6 +100321,12 @@ STRING 16725
 // Upgrades: R03X (Magic Sentry), Ubertip (Tooltip - Extended)
 {
 Enables the training of |cffcece00Conjurers|r, limited to 6, with the following abilities:|n|n|cffcece00Firestorm|r - Calls down a storm of fire to strike enemy units for 30 damage in a large area. Lasts 15 seconds.|n|n|cffcece00Summon Scorpions |r- Summons 4 scorpions which have poisonous attacks. Each scorpion has 380 hit points and deal 28 -37 damage. Lasts 45 seconds.|n|n|cffcece00Invisibility|r - Makes a unit invisible. If the unit attacks, uses an ability or casts a spell, it will become visible. Lasts 120 seconds. |n|n|cffffff00Summon Reef Elemental|r|r|r - Summons 2 Reef Elementals that have the Crushing Wave Ability. Lasts 90 seconds.
+}
+
+STRING 16726
+// Units: U023 (The Soulflayer), Revivetip (Tooltip - Revive)
+{
+Revive Hakkar
 }
 
 STRING 16727
@@ -122336,6 +122336,18 @@ STRING 20393
 // Upgrades: R05O (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 S
+}
+
+STRING 20394
+// Units: U023 (The Soulflayer), Ubertip (Tooltip - Extended)
+{
+Warrior Hero, excels at melee combat.|n|cfff5962dAbilities:|r Evasion|n|cfff5962dCan Learn:|R Impale, Mass Enrage, Vampiric Aura, Corrupted Lightning|n|n|cffffcc00Attacks land units.|R
+}
+
+STRING 20395
+// Units: U023 (The Soulflayer), Tip (Tooltip - Basic)
+{
+Summon Hakkar
 }
 
 STRING 20396
