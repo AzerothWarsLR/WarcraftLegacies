@@ -10,6 +10,9 @@ namespace MacroTools.Cheats
     public override string CommandText => "vision";
     
     /// <inheritdoc />
+    public override bool Exact => false;
+    
+    /// <inheritdoc />
     public override int MinimumParameterCount => 1;
     
     /// <inheritdoc />

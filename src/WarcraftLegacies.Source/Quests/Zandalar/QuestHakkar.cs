@@ -1,11 +1,9 @@
-using MacroTools.ArtifactSystem;
+﻿using MacroTools.ArtifactSystem;
 using MacroTools.ControlPointSystem;
 using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives.ArtifactBased;
 using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
 using MacroTools.QuestSystem;
-using WarcraftLegacies.Source.Setup.Legends;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Zandalar
 {
@@ -26,6 +24,7 @@ namespace WarcraftLegacies.Source.Quests.Zandalar
         "The Drowned Temple"));
       AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N00U_SWAMP_OF_SORROWS_10GOLD_MIN)));
       Global = true;
+      ResearchId = Constants.UPGRADE_R06W_QUEST_COMPLETED_THE_BINDING_OF_THE_SOULFLAYER;
     }
 
     /// <inheritdoc/>
@@ -37,8 +36,6 @@ namespace WarcraftLegacies.Source.Quests.Zandalar
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
     {
-      LegendTroll.LEGEND_HAKKAR.ForceCreate(completingFaction.Player, Regions.DrownedTemple.Center, 270);
-      SetHeroLevel(LegendTroll.LEGEND_HAKKAR.Unit, 12, false);
     }
   }
 }

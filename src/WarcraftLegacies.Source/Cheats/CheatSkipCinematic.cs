@@ -1,18 +1,33 @@
-using System;
+﻿using System;
 using MacroTools.Cheats;
 using WarcraftLegacies.Source.GameLogic;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Cheats
 {
-  public static class CheatSkipCinematic
+
+  /// <summary>
+  /// 
+  /// </summary>
+  public class CheatSkipCinematic
   {
-    private static void Actions()
+    private readonly CinematicMode _cinematicMode;
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="cinematicMode"></param>
+    public CheatSkipCinematic(CinematicMode cinematicMode)
+    {
+      _cinematicMode = cinematicMode;
+    }
+
+    private  void Actions()
     {
       if (!TestMode.CheatCondition()) return;
       try
       {
-        CinematicMode.EndEarly();
+        _cinematicMode.EndEarly();
       }
       catch (Exception ex)
       {
@@ -24,7 +39,7 @@ namespace WarcraftLegacies.Source.Cheats
       }
     }
 
-    private static void DelayedSetup()
+    private void DelayedSetup()
     {
       var trig = CreateTrigger();
       foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
@@ -32,7 +47,10 @@ namespace WarcraftLegacies.Source.Cheats
       TriggerAddAction(trig, Actions);
     }
 
-    public static void Setup()
+    /// <summary>
+    /// 
+    /// </summary>
+    public void Init()
     {
       var timer = CreateTimer();
       TimerStart(timer, 1, false, DelayedSetup);

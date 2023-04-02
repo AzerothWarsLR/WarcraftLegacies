@@ -13,6 +13,9 @@ namespace MacroTools.Cheats
   {
     /// <inheritdoc />
     public override string CommandText => "shores";
+    
+    /// <inheritdoc />
+    public override bool Exact => true;
 
     /// <inheritdoc />
     public override int MinimumParameterCount => 0;

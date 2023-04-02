@@ -110,11 +110,20 @@ namespace MacroTools.ObjectiveSystem
     /// </summary>
     protected string PingPath { get; init; } = "MinimapQuestObjectivePrimary";
 
-    protected bool IsPlayerOnSameTeamAsAnyEligibleFaction(player whichPlayer)
+    protected bool? IsPlayerOnSameTeamAsAnyEligibleFaction(player whichPlayer)
     {
+
       foreach (var eligibleFaction in EligibleFactions)
       {
-        if (eligibleFaction.Player?.GetTeam() == whichPlayer.GetTeam())
+        if (eligibleFaction.Player == null)
+        {
+          return null;
+        }
+        else if (eligibleFaction.Player == Player(PLAYER_NEUTRAL_PASSIVE) || eligibleFaction.Player == Player(PLAYER_NEUTRAL_AGGRESSIVE))
+        {
+          return null;
+        }
+        else if (eligibleFaction.Player.GetTeam() == whichPlayer.GetTeam())
           return true;
       }
 
@@ -165,7 +174,7 @@ namespace MacroTools.ObjectiveSystem
         string effectPath;
         if (MapEffectPath != null && _mapEffect == null)
         {
-          effectPath = EligibleFactions.Contains(GetLocalPlayer()) ? MapEffectPath : "";
+          effectPath = EligibleFactions.Contains(GetLocalPlayer()) is true ? MapEffectPath : "";
           _mapEffect = AddSpecialEffect(effectPath, Position.X, Position.Y);
           BlzSetSpecialEffectColorByPlayer(_mapEffect, EligibleFactions.First().Player);
           BlzSetSpecialEffectHeight(_mapEffect, 100 + Environment.GetPositionZ(Position));
@@ -173,7 +182,7 @@ namespace MacroTools.ObjectiveSystem
 
         if (OverheadEffectPath != null && _overheadEffect == null && TargetWidget != null)
         {
-          effectPath = EligibleFactions.Contains(GetLocalPlayer()) ? OverheadEffectPath : "";
+          effectPath = EligibleFactions.Contains(GetLocalPlayer()) is true ? OverheadEffectPath : "";
           _overheadEffect = AddSpecialEffectTarget(effectPath, TargetWidget, "overhead");
         }
       }

@@ -13,6 +13,9 @@ namespace MacroTools.Commands
   {
     /// <inheritdoc />
     public override string CommandText => "limited";
+    
+    /// <inheritdoc />
+    public override bool Exact => true;
   
     /// <inheritdoc />
     public override int MinimumParameterCount => 0;

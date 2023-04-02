@@ -13,10 +13,10 @@ namespace MacroTools.ObjectiveSystem.Objectives.ControlPointBased
   {
     private readonly ControlPoint _target;
     private readonly int _requiredLevel;
-    
+
     /// <inheritdoc/>
     public override Point Position => new(GetUnitX(_target.Unit), GetUnitY(_target.Unit));
-    
+
     /// <summary>
     /// Initializes a new instance of the <see cref="ObjectiveControlLevel"/> class.
     /// </summary>
@@ -32,7 +32,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.ControlPointBased
       TargetWidget = target.Unit;
       DisplaysPosition = true;
     }
-    
+
     internal override void OnAdd(FactionSystem.Faction whichFaction)
     {
       RefreshDescription();
@@ -44,17 +44,26 @@ namespace MacroTools.ObjectiveSystem.Objectives.ControlPointBased
       RefreshDescription();
       RefreshProgress();
     }
-    
-    private void RefreshDescription() => Description =
-      IsPlayerOnSameTeamAsAnyEligibleFaction(_target.Owner)
-        ? $"{_target.Name} is Control Level {_requiredLevel} or higher ({(int)_target.ControlLevel}/{_requiredLevel})"
-        : $"{_target.Name} is Control Level {_requiredLevel} or higher";
+
+    private void RefreshDescription()
+    {
+      var isOnSameTeam = IsPlayerOnSameTeamAsAnyEligibleFaction(_target.Owner);
+      Description = isOnSameTeam is false or null
+        ? $"{_target.Name} is Control Level {_requiredLevel} or higher"
+        : $"{_target.Name} is Control Level {_requiredLevel} or higher ({(int)_target.ControlLevel}/{_requiredLevel})";
+    }
 
     private void RefreshProgress()
     {
-      Progress = _target.ControlLevel >= _requiredLevel && IsPlayerOnSameTeamAsAnyEligibleFaction(_target.Owner)
-        ? QuestProgress.Complete 
-        : QuestProgress.Incomplete;
+      var isOnSameTeam = IsPlayerOnSameTeamAsAnyEligibleFaction(_target.Owner);
+      if (isOnSameTeam == null)
+      {
+        Progress = QuestProgress.Incomplete;
+      }
+      else
+      {
+        Progress = _target.ControlLevel >= _requiredLevel && isOnSameTeam == true ? QuestProgress.Complete : QuestProgress.Incomplete;
+      }
     }
   }
 }

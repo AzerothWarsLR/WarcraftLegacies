@@ -11,6 +11,9 @@ namespace MacroTools.Cheats
 
     /// <inheritdoc />
     public override string CommandText => "gold";
+    
+    /// <inheritdoc />
+    public override bool Exact => false;
 
     /// <inheritdoc />
     public override int MinimumParameterCount => 1;

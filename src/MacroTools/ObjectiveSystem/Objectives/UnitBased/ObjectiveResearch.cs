@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using MacroTools.QuestSystem;
 using WCSharp.Events;
 using static War3Api.Common;
@@ -17,7 +17,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
     {
       try
       {
-        if (EligibleFactions.Contains(GetOwningPlayer(GetTriggerUnit())))
+        if (EligibleFactions.Contains(GetOwningPlayer(GetTriggerUnit())) is true)
           Progress = QuestProgress.Complete;
       }
       catch (Exception ex)

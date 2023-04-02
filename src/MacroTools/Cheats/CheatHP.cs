@@ -12,6 +12,9 @@ namespace MacroTools.Cheats
  
     /// <inheritdoc />
     public override string CommandText => "hp";
+    
+    /// <inheritdoc />
+    public override bool Exact => false;
 
     /// <inheritdoc />
     public override int MinimumParameterCount => 1;

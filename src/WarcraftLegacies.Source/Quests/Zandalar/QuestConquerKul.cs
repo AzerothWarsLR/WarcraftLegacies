@@ -69,10 +69,6 @@ namespace WarcraftLegacies.Source.Quests.Zandalar
         _completeOnFailQuest.Progress = QuestProgress.Complete;
         _failOnFailQuest.Progress = QuestProgress.Failed;
 
-        LegendTroll.LEGEND_PRIEST.ForceCreate(completingFaction.Player,
-          new Point(_onFailSpawnRect.Center.X, _onFailSpawnRect.Center.Y), 110);
-        LegendTroll.LEGEND_RASTAKHAN.ForceCreate(completingFaction.Player,
-          new Point(_onFailSpawnRect.Center.X, _onFailSpawnRect.Center.Y), 110);
         if (GetLocalPlayer() == completingFaction.Player)
           SetCameraPosition(_onFailSpawnRect.Center.X, _onFailSpawnRect.Center.Y);
         completingFaction.Player.AddGold(1500);

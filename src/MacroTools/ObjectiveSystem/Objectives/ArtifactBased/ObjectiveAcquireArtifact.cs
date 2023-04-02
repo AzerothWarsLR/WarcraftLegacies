@@ -1,4 +1,4 @@
-using MacroTools.ArtifactSystem;
+﻿using MacroTools.ArtifactSystem;
 using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using static War3Api.Common;
@@ -21,14 +21,14 @@ namespace MacroTools.ObjectiveSystem.Objectives.ArtifactBased
       Description = $"Acquire {GetItemName(target.Item)}";
       _target = target;
       target.PickedUp += (_, _) =>
-        Progress = EligibleFactions.Contains(_target.OwningPlayer) ? QuestProgress.Complete : QuestProgress.Incomplete;
+        Progress = EligibleFactions.Contains(_target.OwningPlayer) is true ? QuestProgress.Complete : QuestProgress.Incomplete;
       target.Dropped += (_, _) => Progress = QuestProgress.Incomplete;
       target.Disposed += (_, _) => Progress = QuestProgress.Failed;
     }
 
     internal override void OnAdd(Faction whichFaction)
     {
-      if (EligibleFactions.Contains(_target.OwningPlayer))
+      if (EligibleFactions.Contains(_target.OwningPlayer) is true)
         Progress = QuestProgress.Complete;
     }
   }

@@ -142,5 +142,8 @@ namespace MacroTools.Libraries
       RegionAddRect(rectRegion, whichRect);
       return rectRegion;
     }
+    
+    /// @CSharpLua.Template = "BlzGetAbilityId({0})"
+    public static extern int BlzGetAbilityId(ability whichAbility);
   }
 }

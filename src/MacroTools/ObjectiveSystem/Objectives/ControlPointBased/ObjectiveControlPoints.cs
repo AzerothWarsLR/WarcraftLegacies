@@ -44,7 +44,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.ControlPointBased
         cp.ChangedOwner += OnTargetChangeOwner;
         cp.Owner.GetPlayerData().PlayerJoinedTeam += OnFactionTeamJoin;
         cp.Owner.GetPlayerData().PlayerLeftTeam += OnFactionTeamLeave;
-        if (IsPlayerOnSameTeamAsAnyEligibleFaction(cp.Unit.OwningPlayer()))
+        if (IsPlayerOnSameTeamAsAnyEligibleFaction(cp.Unit.OwningPlayer()) is true)
           ControlPointCount++;
       }
     }
@@ -53,7 +53,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.ControlPointBased
     {
       foreach (var cp in _controlPoints)
       {
-        if (IsPlayerOnSameTeamAsAnyEligibleFaction(cp.Unit.OwningPlayer()))
+        if (IsPlayerOnSameTeamAsAnyEligibleFaction(cp.Unit.OwningPlayer()) is true)
           ControlPointCount++;
       }
 
@@ -65,9 +65,9 @@ namespace MacroTools.ObjectiveSystem.Objectives.ControlPointBased
       var cp = controlPointOwnerChangeEventArgs.ControlPoint;
       if (_controlPoints.Select(cp => cp.UnitType).Contains(cp.UnitType))
       {
-        if (!IsPlayerOnSameTeamAsAnyEligibleFaction(controlPointOwnerChangeEventArgs.FormerOwner) && IsPlayerOnSameTeamAsAnyEligibleFaction(cp.Unit.OwningPlayer()))
+        if (!IsPlayerOnSameTeamAsAnyEligibleFaction(controlPointOwnerChangeEventArgs.FormerOwner) is true && IsPlayerOnSameTeamAsAnyEligibleFaction(cp.Unit.OwningPlayer()) is true)
           ControlPointCount++;
-        else if (IsPlayerOnSameTeamAsAnyEligibleFaction(controlPointOwnerChangeEventArgs.FormerOwner) && !IsPlayerOnSameTeamAsAnyEligibleFaction(cp.Unit.OwningPlayer()))
+        else if (IsPlayerOnSameTeamAsAnyEligibleFaction(controlPointOwnerChangeEventArgs.FormerOwner) is true && !IsPlayerOnSameTeamAsAnyEligibleFaction(cp.Unit.OwningPlayer()) is true)
           ControlPointCount--;
       }
 

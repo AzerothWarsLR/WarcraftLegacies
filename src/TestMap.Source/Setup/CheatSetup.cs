@@ -1,4 +1,5 @@
-﻿using MacroTools.Cheats;
+﻿using System;
+using MacroTools.Cheats;
 using MacroTools.CommandSystem;
 using MacroTools.QuestSystem;
 
@@ -38,6 +39,8 @@ namespace TestMap.Source.Setup
       commandManager.Register(new CheatDestroy());
       commandManager.Register(new CheatGod());
       commandManager.Register(new CheatPosition());
+      commandManager.Register(new CheatGetUnitAbilities());
+      commandManager.Register(new CheatRemoveAllAbilities());
       TestMode.Setup(commandManager);
     }
   }
