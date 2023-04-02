@@ -24,6 +24,7 @@ namespace WarcraftLegacies.Source.Quests.Zandalar
         "The Drowned Temple"));
       AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N00U_SWAMP_OF_SORROWS_10GOLD_MIN)));
       Global = true;
+      ResearchId = Constants.UPGRADE_R06W_QUEST_COMPLETED_THE_BINDING_OF_THE_SOULFLAYER;
     }
 
     /// <inheritdoc/>

@@ -98175,6 +98175,12 @@ STRING 16365
 Train Hex Doctor
 }
 
+STRING 16366
+// Upgrades: R06W (Chaos), Name (Name)
+{
+Quest Completed: The Binding of the Soulflayer
+}
+
 STRING 16367
 // Abilities: A0SE (Suppression), Hotkey (Hotkey - Normal)
 {
@@ -100045,12 +100051,6 @@ STRING 16679
 // Units: H08Q (High Priestess), Awakentip (Tooltip - Awaken)
 {
 Revive Azil
-}
-
-STRING 16680
-// Upgrades: R06W (Chaos), Name (Name)
-{
-Quest Completed: The Golden Fleet
 }
 
 STRING 16681
