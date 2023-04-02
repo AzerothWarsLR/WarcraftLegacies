@@ -1,4 +1,4 @@
-using MacroTools.QuestSystem;
+﻿using MacroTools.QuestSystem;
 using WCSharp.Events;
 using static War3Api.Common;
 
@@ -43,7 +43,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
     {
       if (GetUnitTypeId(GetTrainedUnit()) != _objectId) return;
 
-      if (!ProgressLocked && EligibleFactions.Contains(GetOwningPlayer(GetTrainedUnit())))
+      if (!ProgressLocked && EligibleFactions.Contains(GetOwningPlayer(GetTrainedUnit())) is true)
       {
         CurrentTrainCount = _currentTrainCount + 1;
         if (_currentTrainCount == _targetTrainCount)

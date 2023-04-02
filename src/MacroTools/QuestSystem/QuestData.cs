@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
@@ -363,12 +363,12 @@ namespace MacroTools.QuestSystem
           case QuestProgress.Undiscovered:
             break;
           case QuestProgress.Incomplete:
-            if (objective.EligibleFactions.Contains(GetLocalPlayer()))
+            if (objective.EligibleFactions.Contains(GetLocalPlayer()) is true)
               objective.ShowLocal(Progress);
             objective.ShowSync(Progress);
             break;
           case QuestProgress.Complete:
-            if (objective.EligibleFactions.Contains(GetLocalPlayer()))
+            if (objective.EligibleFactions.Contains(GetLocalPlayer()) is true)
               objective.HideLocal();
             objective.HideSync();
             break;

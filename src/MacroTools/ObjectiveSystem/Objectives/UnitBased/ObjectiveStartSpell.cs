@@ -36,7 +36,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
     {
       if (Progress == QuestProgress.Complete ||
           (_requiredLegend != null && LegendaryHeroManager.GetFromUnit(GetTriggerUnit()) != _requiredLegend) ||
-          (_holderOnly && !EligibleFactions.Contains(GetOwningPlayer(GetTriggerUnit())))) 
+          (_holderOnly && !EligibleFactions.Contains(GetOwningPlayer(GetTriggerUnit())) is true)) 
         return;
       Caster = GetTriggerUnit();
       Progress = QuestProgress.Complete;
