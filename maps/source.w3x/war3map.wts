@@ -10111,24 +10111,6 @@ STRING 1685
 R
 }
 
-STRING 1686
-// Units: n07M (Voidlord Demon Gate), Ubertip (Tooltip - Extended)
-{
-Gateway attuned to the Voidlords of the Burning Crusade, summoning 1 every 130 seconds. |n|n|cfff5962dAbilities:|R Frost Attack, Soul Ritual|n|cff99b4d1Can only build 1 gate. |r
-}
-
-STRING 1687
-// Units: n07D (Maiden of Dominance Demon Gate), Ubertip (Tooltip - Extended)
-{
-Gateway attuned to the Maidens of Dominance of the Burning Crusade, summoning 1 every 100 seconds. |n|n|cfff5962dAbilities:|R Spell Steal|n|cff99b4d1Can only build 1 gate. |r
-}
-
-STRING 1688
-// Units: n07B (Queen of Suffering Demon Gate), Ubertip (Tooltip - Extended)
-{
-Gateway attuned to the Queens of Suffering of the Burning Crusade, summoning 1 every 120 seconds. |n|n|cfff5962dAbilities:|R Unholy Aura|n|cff99b4d1Can only build 1 gate. |r
-}
-
 STRING 1689
 // Units: h04C (Pikeman), EditorSuffix (Name - Editor Suffix)
 {
@@ -12028,12 +12010,6 @@ STRING 2005
 // Units: n05S (Covenant of Witch Demon Gate), Tip (Tooltip - Basic)
 {
 Upgrade to Covenant of Witch Demon Gate
-}
-
-STRING 2006
-// Units: n05S (Covenant of Witch Demon Gate), Ubertip (Tooltip - Extended)
-{
-Gateway attuned to the Covenant of Eredar Witch of the Burning Crusade, summoning 3 every 80 seconds. |n|n|cfff5962dAbilities:|R Curse
 }
 
 STRING 2007
@@ -20145,12 +20121,6 @@ STRING 3358
 // Units: E005 (The Prophet), Hotkey (Hotkey)
 {
 Q
-}
-
-STRING 3359
-// Units: n06G (Voidcrusher Demon Gate), Ubertip (Tooltip - Extended)
-{
-Gateway attuned to the Voidcrushers of the Burning Crusade, summoning 1 every 80 seconds. |n|n|cfff5962dAbilities:|R Frost Attack
 }
 
 STRING 3360
@@ -99111,6 +99081,12 @@ STRING 16521
 Z
 }
 
+STRING 16522
+// Units: n07M (Voidlord Demon Gate), Ubertip (Tooltip - Extended)
+{
+Gateway attuned to the Voidlords of the Burning Crusade, summoning 1 every 60 seconds. |n|n|cfff5962dAbilities:|R Frost Attack, Soul Ritual|n|cff99b4d1Can only build 1 gate. |r
+}
+
 STRING 16523
 // Units: e00S (Glaive Warrior), Tip (Tooltip - Basic)
 {
@@ -100051,6 +100027,12 @@ STRING 16679
 // Units: H08Q (High Priestess), Awakentip (Tooltip - Awaken)
 {
 Revive Azil
+}
+
+STRING 16680
+// Units: n07D (Maiden of Dominance Demon Gate), Ubertip (Tooltip - Extended)
+{
+Gateway attuned to the Maidens of Dominance of the Burning Crusade, summoning 1 every 90 seconds. |n|n|cfff5962dAbilities:|R Spell Steal|n|cff99b4d1Can only build 1 gate. |r
 }
 
 STRING 16681
@@ -122674,6 +122656,12 @@ STRING 20449
 R
 }
 
+STRING 20450
+// Units: n07B (Queen of Suffering Demon Gate), Ubertip (Tooltip - Extended)
+{
+Gateway attuned to the Queens of Suffering of the Burning Crusade, summoning 1 every 90 seconds. |n|n|cfff5962dAbilities:|R Unholy Aura|n|cff99b4d1Can only build 1 gate. |r
+}
+
 STRING 20451
 // Abilities: A11X (Barrage), EditorSuffix (Editor Suffix)
 {
@@ -122818,6 +122806,18 @@ STRING 20474
 Train Loa Medium
 }
 
+STRING 20475
+// Units: n06G (Voidcrusher Demon Gate), Ubertip (Tooltip - Extended)
+{
+Gateway attuned to the Voidcrushers of the Burning Crusade, summoning 1 every 60 seconds. |n|n|cfff5962dAbilities:|R Frost Attack
+}
+
+STRING 20476
+// Units: n05S (Covenant of Witch Demon Gate), Ubertip (Tooltip - Extended)
+{
+Gateway attuned to the Covenant of Eredar Witch of the Burning Crusade, summoning 3 every 90 seconds. |n|n|cfff5962dAbilities:|R Curse
+}
+
 STRING 20477
 // Abilities: A0UM (Fishing Net), EditorSuffix (Editor Suffix)
 {
@@ -122852,5 +122852,11 @@ STRING 20482
 // Upgrades: R097 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 E
+}
+
+STRING 20483
+// Units: H09N (Matriarch of Tirisfal), Ubertip (Tooltip - Extended)
+{
+Mystical hero, adept at dealing magical damage.|n|cfff5962dCan Learn:|R Time's Shield, Reborn Through Time, Enchanted Bolts, Comet Strike|n|n|cffffcc00Attacks land and air units.|R
 }
 
