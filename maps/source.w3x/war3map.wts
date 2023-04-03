@@ -4828,12 +4828,6 @@ STRING 805
 Quest Completed: The Drakkari Fortress
 }
 
-STRING 806
-// Units: nftk (Warlord), Ubertip (Tooltip - Extended)
-{
-Deadly leader of the Drakkari tribe.|n|cfff5962dAbilities:|R Berserk, Command Aura, Vitality Aura|n|cfff5962dCan Learn:|R Troll Regeneration |n |n|cff99b4d1Can only train 12.|r|n|cffffcc00Attacks land and air units.|r
-}
-
 STRING 807
 // Abilities: ANwk (Wind Walk), Ubertip (Tooltip - Normal - Extended)
 {
@@ -10109,6 +10103,18 @@ STRING 1685
 // Units: h06D (Royal Harbour), Hotkey (Hotkey)
 {
 R
+}
+
+STRING 1686
+// Units: nftk (Warlord), Ubertip (Tooltip - Extended)
+{
+Deadly leader of the Drakkari tribe.|n|cfff5962dAbilities:|R Berserk, Command Aura, Vitality Aura, Troll Regeneration |n |n|cff99b4d1Can only train 12.|r|n|cffffcc00Attacks land and air units.|r
+}
+
+STRING 1687
+// Units: U023 (The Soulflayer), Ubertip (Tooltip - Extended)
+{
+Warrior Hero, excels at melee combat.|n|cfff5962dAbilities:|r Evasion|n|cfff5962dCan Learn:|R Impale, Demonic Shield, Vampiric Aura, Corrupted Lightning|n|n|cffffcc00Attacks land units.|R
 }
 
 STRING 1689
@@ -122318,12 +122324,6 @@ STRING 20393
 // Upgrades: R05O (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 S
-}
-
-STRING 20394
-// Units: U023 (The Soulflayer), Ubertip (Tooltip - Extended)
-{
-Warrior Hero, excels at melee combat.|n|cfff5962dAbilities:|r Evasion|n|cfff5962dCan Learn:|R Impale, Mass Enrage, Vampiric Aura, Corrupted Lightning|n|n|cffffcc00Attacks land units.|R
 }
 
 STRING 20395
