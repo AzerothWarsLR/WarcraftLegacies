@@ -121,6 +121,11 @@ namespace MacroTools.FactionSystem
     /// </summary>
     public int? ControlPointDefenderUnitTypeId { get; init; }
 
+    /// <summary>
+    /// Check to see if <see cref="Faction"/> has any living essential legends
+    /// </summary>
+    public bool HasEssentialLegend => GetEssentialLegends().Count > 0;
+
     public int StartingGold { get; set; }
 
     public int StartingLumber { get; set; }
@@ -259,6 +264,30 @@ namespace MacroTools.FactionSystem
           SetPlayerTechResearched(player, _undefeatedResearch, 1);
       }
       get => _undefeatedResearch;
+    }
+
+    /// <summary>
+    /// Gets a list of legends that are flagged as essential and alive that the faction currently has
+    /// </summary>
+    private List<Legend> GetEssentialLegends()
+    {
+      var essentialLegends = new List<Legend>();
+      foreach (var legend in LegendaryHeroManager.GetAll())
+      {
+        if (legend.Essential && legend.OwningPlayer == Player && legend.Unit.IsAlive())
+        {
+          essentialLegends.Add(legend);
+        }
+      }
+      foreach (var capital in CapitalManager.GetAll())
+      {
+        if (capital.Essential && capital.OwningPlayer == Player && capital.Unit.IsAlive())
+        {
+          essentialLegends.Add(capital);
+        }
+      }
+      
+      return essentialLegends;
     }
 
     /// <summary>

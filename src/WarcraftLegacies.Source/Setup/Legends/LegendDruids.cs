@@ -51,7 +51,8 @@ namespace WarcraftLegacies.Source.Setup.Legends
       Nordrassil = new Capital
       {
         Unit = preplacedUnitSystem.GetUnit(FourCC("n002")),
-        Capturable = true
+        Capturable = true,
+        Essential = true
       };
 
       Darnassus = new Capital

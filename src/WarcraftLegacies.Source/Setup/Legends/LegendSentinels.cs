@@ -29,12 +29,14 @@ namespace WarcraftLegacies.Source.Setup.Legends
 
       Auberdine = new Capital
       {
-        Unit = preplacedUnitSystem.GetUnit(FourCC("e00J"))
+        Unit = preplacedUnitSystem.GetUnit(FourCC("e00J")),
+        Essential = true
       };
 
       Feathermoon = new Capital
       {
-        Unit = preplacedUnitSystem.GetUnit(FourCC("e00M"))
+        Unit = preplacedUnitSystem.GetUnit(FourCC("e00M")),
+        Essential = true
       };
 
       Tyrande = new LegendaryHero("Tyrande Whisperwind")

@@ -39,7 +39,8 @@ namespace WarcraftLegacies.Source.Setup.Legends
       GreatForge = new Capital()
       {
         Unit = preplacedUnitSystem.GetUnit(FourCC("h001")),
-        DeathMessage = "The Great Forge has been extinguished." //Todo: mediocre flavour
+        DeathMessage = "The Great Forge has been extinguished.", //Todo: mediocre flavour
+        Essential = true
       };
       GreatForge.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_H07K_IMPROVED_CANNON_TOWER_IRONFORGE_TOWER, new Point(10509, -5976)));
       GreatForge.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_H07K_IMPROVED_CANNON_TOWER_IRONFORGE_TOWER, new Point(10710, -5974)));

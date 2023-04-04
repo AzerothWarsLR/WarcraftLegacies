@@ -60,7 +60,8 @@ namespace WarcraftLegacies.Source.Setup.Legends
       CapitalPalace = new Capital
       {
         Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_H000_CAPITAL_PALACE_LORDAERON),
-        DeathMessage = "The capital city of Lordaeron has been razed, and King Terenas is dead."
+        DeathMessage = "The capital city of Lordaeron has been razed, and King Terenas is dead.",
+        Essential = true
       };
       CapitalPalace.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_H006_IMPROVED_GUARD_TOWER_LORDAERON_TOWER, new Point(8686, 8862)));
       CapitalPalace.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_H006_IMPROVED_GUARD_TOWER_LORDAERON_TOWER, new Point(9476, 8843)));
@@ -84,7 +85,8 @@ namespace WarcraftLegacies.Source.Setup.Legends
       Stratholme = new Capital
       {
         Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_H01G_STRATHOLME_CASTLE_LORDAERON_OTHER),
-        DeathMessage = "The majestic city of Stratholme has been destroyed."
+        DeathMessage = "The majestic city of Stratholme has been destroyed.",
+        Essential = true
       };
       Stratholme.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_H006_IMPROVED_GUARD_TOWER_LORDAERON_TOWER, new Point(14067, 12242)));
       Stratholme.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_H006_IMPROVED_GUARD_TOWER_LORDAERON_TOWER, new Point(14553, 11593)));
@@ -93,7 +95,8 @@ namespace WarcraftLegacies.Source.Setup.Legends
       TyrsHand = new Capital
       {
         Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_H030_TYR_S_HAND_CITADEL_LORDAERON_OTHER),
-        DeathMessage = "Tyr's Hand, the bastion of human power in Lordaeron, has fallen."
+        DeathMessage = "Tyr's Hand, the bastion of human power in Lordaeron, has fallen.",
+        Essential = true
       };
       TyrsHand.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_HCTW_CANNON_TOWER_LORDAERON_TOWER, new Point(20652, 8057)));
       TyrsHand.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_H007_IMPROVED_CANNON_TOWER_LORDAERON_TOWER, new Point(20024, 8123)));

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using MacroTools.Extensions;
+using MacroTools.LegendSystem;
 using static War3Api.Common;
 
 namespace MacroTools.FactionSystem
@@ -167,6 +168,23 @@ namespace MacroTools.FactionSystem
     public bool Contains(player whichPlayer)
     {
       return _members.Contains(whichPlayer);
+    }
+    
+    
+    /// <summary>
+    ///   Checks whether or not any <see cref="player" />'s faction in the <see cref="Team" /> has an Essential <see cref="Legend" />.
+    /// </summary>
+    /// <returns></returns>
+    public bool DoesTeamHaveEssentialLegend()
+    {
+      foreach (var player in _members)
+      {
+        if (player.GetFaction()!.HasEssentialLegend)
+        {
+          return true;
+        }
+      }
+      return false;
     }
   }
 }

@@ -46,13 +46,15 @@ namespace WarcraftLegacies.Source.Setup.Legends
       StonemaulKeep = new Capital
       {
         Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_O004_STONEMAUL_KEEP),
-        DeathMessage = "The fortress of the Stonemaul Clan has fallen."
+        DeathMessage = "The fortress of the Stonemaul Clan has fallen.",
+        Essential = true
       };
 
       Orgrimmar = new Capital
       {
         Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_O01B_ORGRIMMAR_WARSONG),
-        DeathMessage = "Orgrimmar has been demolished and with it die the hopes and dreams of a wartorn race seeking refuge in a new world."
+        DeathMessage = "Orgrimmar has been demolished and with it die the hopes and dreams of a wartorn race seeking refuge in a new world.",
+        Essential = true
       };
     }
     
