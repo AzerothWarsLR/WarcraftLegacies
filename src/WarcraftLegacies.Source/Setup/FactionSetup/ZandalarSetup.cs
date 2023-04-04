@@ -75,6 +75,7 @@ Once the human menace has been dealt with, sail West and help the Horde in Kalim
       Zandalar.ModObjectLimit(FourCC("R00H"), Faction.UNLIMITED); //Animal Companion
       Zandalar.ModObjectLimit(FourCC("R070"), Faction.UNLIMITED); //Haruspex Training
       Zandalar.ModObjectLimit(FourCC("R071"), Faction.UNLIMITED); //Hex Training
+      Zandalar.ModObjectLimit(FourCC("R023"), Faction.UNLIMITED); //Spiritual Infusion
 
       Zandalar.AddGoldMine(preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-8900, -17000)));
 

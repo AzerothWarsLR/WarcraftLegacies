@@ -41,7 +41,7 @@ namespace WarcraftLegacies.Source.Quests.Zandalar
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
-      "Control of all units in Dazar'alor and enables the Golden Fleet to be built";
+      "Control of all units in Dazar'alor and enables the Rasthakan to be trained";
 
     /// <inheritdoc/>
     protected override void OnFail(Faction completingFaction)

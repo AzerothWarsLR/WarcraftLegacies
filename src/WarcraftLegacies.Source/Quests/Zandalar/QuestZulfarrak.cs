@@ -17,7 +17,6 @@ namespace WarcraftLegacies.Source.Quests.Zandalar
   public sealed class QuestZulfarrak : QuestData
   {
     private readonly List<unit> _rescueUnits;
-    private readonly List<unit> _killUnits;
     private readonly Capital _zulfarrak;
 
     /// <summary>
@@ -35,7 +34,6 @@ namespace WarcraftLegacies.Source.Quests.Zandalar
       AddObjective(new ObjectiveControlCapital(zulfarrak, false));
       AddObjective(new ObjectiveLegendReachRect(zul, rescueRect, "Zul'Farrak"));
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
-      _killUnits = CreateGroup().EnumUnitsInRect(rescueRect).EmptyToList().Where(x => x.OwningPlayer() == Player(PLAYER_NEUTRAL_AGGRESSIVE)&& x != zulfarrak.Unit).ToList();
       Required = true;
     }
 
@@ -55,8 +53,6 @@ namespace WarcraftLegacies.Source.Quests.Zandalar
         SetUnitOwner(_zulfarrak.Unit, completingFaction.Player, true);
         completingFaction.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, 300);
         completingFaction.Player.RescueGroup(_rescueUnits);
-        foreach (var unit in _killUnits)
-          unit.Kill();
       }
     }
   }

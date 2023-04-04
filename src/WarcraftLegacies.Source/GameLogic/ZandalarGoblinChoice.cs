@@ -64,25 +64,34 @@ namespace WarcraftLegacies.Source.GameLogic
       TriggerRegisterDialogButtonEvent(yesTrigger, YesButton);
       TriggerAddAction(noTrigger, PickZandalar);
       TriggerAddAction(yesTrigger, PickGoblin);
+      Console.WriteLine("0");
 
-      DialogDisplay(Player(8), PickDialogue, true);
+      //DialogDisplay(Player(8), PickDialogue, true);
     }
 
     private void ConcludeFactionPick()
     {
+      Console.WriteLine("1");
       if (!_factionPicked)
       {
-        PickZandalar();
+        PickGoblin();
         return;
       }
-
+      Console.WriteLine("5");
       DialogDisplay(Player(8), PickDialogue, false);
+      Console.WriteLine("6");
       DialogClear(PickDialogue);
+      Console.WriteLine("7");
       DialogDestroy(PickDialogue);
+      Console.WriteLine("8");
       DestroyTrigger(YesTrigger);
+      Console.WriteLine("9");
       DestroyTrigger(NoTrigger);
+      Console.WriteLine("10");
       DestroyTimer(_timer);
+      Console.WriteLine("11");
       OnTimerEnds?.Invoke(this, new EventArgs());
+      Console.WriteLine("12");
     }
 
     private void PickZandalar()
@@ -101,8 +110,11 @@ namespace WarcraftLegacies.Source.GameLogic
     {
       var gobUnits = Regions.GoblinStartPos.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
       var zandaUnits = Regions.TrollStartPos.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
+      Console.WriteLine("2");
       RemoveFaction(ZandalarSetup.Zandalar, zandaUnits);
+      Console.WriteLine("3");
       AssignFaction(GoblinSetup.Goblin, gobUnits);
+      Console.WriteLine("4");
       _factionPicked = true;
       ConcludeFactionPick();
     }

@@ -4829,9 +4829,9 @@ Quest Completed: The Drakkari Fortress
 }
 
 STRING 806
-// Units: nftk (Warlord), Ubertip (Tooltip - Extended)
+// Abilities: A0N8 (Citadel Shield), Ubertip (Tooltip - Normal - Extended)
 {
-Deadly leader of the Drakkari tribe.|n|cfff5962dAbilities:|R Berserk, Command Aura, Vitality Aura|n|cfff5962dCan Learn:|R Troll Regeneration |n |n|cff99b4d1Can only train 12.|r|n|cffffcc00Attacks land and air units.|r
+Channel the Citadel Shield for up to 15 seconds. It will deal 12 damage per second in a 1000 area of effect. It will also buff friendly buildings in the area giving them 10 additional armor. Has a 180 seconds cooldown and 10 seconds casting time.
 }
 
 STRING 807
@@ -10112,21 +10112,21 @@ R
 }
 
 STRING 1686
-// Units: n07M (Voidlord Demon Gate), Ubertip (Tooltip - Extended)
+// Units: nftk (Warlord), Ubertip (Tooltip - Extended)
 {
-Gateway attuned to the Voidlords of the Burning Crusade, summoning 1 every 130 seconds. |n|n|cfff5962dAbilities:|R Frost Attack, Soul Ritual|n|cff99b4d1Can only build 1 gate. |r
+Deadly leader of the Drakkari tribe.|n|cfff5962dAbilities:|R Berserk, Command Aura, Vitality Aura, Troll Regeneration |n |n|cff99b4d1Can only train 12.|r|n|cffffcc00Attacks land and air units.|r
 }
 
 STRING 1687
-// Units: n07D (Maiden of Dominance Demon Gate), Ubertip (Tooltip - Extended)
+// Units: U023 (The Soulflayer), Ubertip (Tooltip - Extended)
 {
-Gateway attuned to the Maidens of Dominance of the Burning Crusade, summoning 1 every 100 seconds. |n|n|cfff5962dAbilities:|R Spell Steal|n|cff99b4d1Can only build 1 gate. |r
+Warrior Hero, excels at melee combat.|n|cfff5962dAbilities:|r Evasion|n|cfff5962dCan Learn:|R Impale, Demonic Shield, Vampiric Aura, Corrupted Lightning|n|n|cffffcc00Attacks land units.|R
 }
 
 STRING 1688
-// Units: n07B (Queen of Suffering Demon Gate), Ubertip (Tooltip - Extended)
+// Abilities: A0N8 (Citadel Shield), Ubertip (Tooltip - Normal - Extended)
 {
-Gateway attuned to the Queens of Suffering of the Burning Crusade, summoning 1 every 120 seconds. |n|n|cfff5962dAbilities:|R Unholy Aura|n|cff99b4d1Can only build 1 gate. |r
+Channel the Citadel Shield for up to 45 seconds. It will deal 12 damage per second in a 1000 area of effect. It will also buff friendly buildings in the area giving them 10 additional armor. Has a 180 seconds cooldown and 9 seconds casting time.
 }
 
 STRING 1689
@@ -12031,9 +12031,9 @@ Upgrade to Covenant of Witch Demon Gate
 }
 
 STRING 2006
-// Units: n05S (Covenant of Witch Demon Gate), Ubertip (Tooltip - Extended)
+// Abilities: A0N8 (Citadel Shield), Ubertip (Tooltip - Normal - Extended)
 {
-Gateway attuned to the Covenant of Eredar Witch of the Burning Crusade, summoning 3 every 80 seconds. |n|n|cfff5962dAbilities:|R Curse
+Channel the Citadel Shield for up to 90 seconds. It will deal 12 damage per second in a 1000 area of effect. It will also buff friendly buildings in the area giving them 10 additional armor. Has a 180 seconds cooldown and 8 seconds casting time.
 }
 
 STRING 2007
@@ -20148,9 +20148,9 @@ Q
 }
 
 STRING 3359
-// Units: n06G (Voidcrusher Demon Gate), Ubertip (Tooltip - Extended)
+// Abilities: A0N8 (Citadel Shield), Ubertip (Tooltip - Normal - Extended)
 {
-Gateway attuned to the Voidcrushers of the Burning Crusade, summoning 1 every 80 seconds. |n|n|cfff5962dAbilities:|R Frost Attack
+Channel the Citadel Shield for up to 180 seconds. It will deal 12 damage per second in a 1000 area of effect. It will also buff friendly buildings in the area giving them 10 additional armor. Has a 180 seconds cooldown and 7 seconds casting time.
 }
 
 STRING 3360
@@ -99111,6 +99111,12 @@ STRING 16521
 Z
 }
 
+STRING 16522
+// Units: n07M (Voidlord Demon Gate), Ubertip (Tooltip - Extended)
+{
+Gateway attuned to the Voidlords of the Burning Crusade, summoning 1 every 60 seconds. |n|n|cfff5962dAbilities:|R Frost Attack, Soul Ritual|n|cff99b4d1Can only build 1 gate. |r
+}
+
 STRING 16523
 // Units: e00S (Glaive Warrior), Tip (Tooltip - Basic)
 {
@@ -100051,6 +100057,12 @@ STRING 16679
 // Units: H08Q (High Priestess), Awakentip (Tooltip - Awaken)
 {
 Revive Azil
+}
+
+STRING 16680
+// Units: n07D (Maiden of Dominance Demon Gate), Ubertip (Tooltip - Extended)
+{
+Gateway attuned to the Maidens of Dominance of the Burning Crusade, summoning 1 every 90 seconds. |n|n|cfff5962dAbilities:|R Spell Steal|n|cff99b4d1Can only build 1 gate. |r
 }
 
 STRING 16681
@@ -122338,12 +122350,6 @@ STRING 20393
 S
 }
 
-STRING 20394
-// Units: U023 (The Soulflayer), Ubertip (Tooltip - Extended)
-{
-Warrior Hero, excels at melee combat.|n|cfff5962dAbilities:|r Evasion|n|cfff5962dCan Learn:|R Impale, Mass Enrage, Vampiric Aura, Corrupted Lightning|n|n|cffffcc00Attacks land units.|R
-}
-
 STRING 20395
 // Units: U023 (The Soulflayer), Tip (Tooltip - Basic)
 {
@@ -122524,30 +122530,6 @@ STRING 20424
 Channel the Citadel Shield. The shield will deal 12 damage per second to enemies in a 1000 area of effect and increase the armor of friendly buildings by 10. |n|n|cffffcc00Level 1|r - Cast range 100. Maximum channeling duration 15 seconds. |n|cffffcc00Level 2|r - Cast range 150. Maximum channeling duration 45 seconds. |n|cffffcc00Level 3|r - Cast range 225. Maximum channeling duration 90 seconds. |n|cffffcc00Level 4|r - Cast range 350. Maximum channeling duration 180 seconds.
 }
 
-STRING 20425
-// Abilities: A0N8 (Citadel Shield), Ubertip (Tooltip - Normal - Extended)
-{
-Channel the Citadel Shield for up to 15 seconds. It will deal 12 damage per second in a 1000 area of effect. It will also buff friendly buildings in the area giving them 10 additional armor. Has a 180 seconds cooldown and 100 casting range.
-}
-
-STRING 20426
-// Abilities: A0N8 (Citadel Shield), Ubertip (Tooltip - Normal - Extended)
-{
-Channel the Citadel Shield for up to 45 seconds. It will deal 12 damage per second in a 1000 area of effect. It will also buff friendly buildings in the area giving them 10 additional armor. Has a 180 seconds cooldown and 150 casting range.
-}
-
-STRING 20427
-// Abilities: A0N8 (Citadel Shield), Ubertip (Tooltip - Normal - Extended)
-{
-Channel the Citadel Shield for up to 90 seconds. It will deal 12 damage per second in a 1000 area of effect. It will also buff friendly buildings in the area giving them 10 additional armor. Has a 180 seconds cooldown and 225 casting range.
-}
-
-STRING 20428
-// Abilities: A0N8 (Citadel Shield), Ubertip (Tooltip - Normal - Extended)
-{
-Channel the Citadel Shield for up to 180 seconds. It will deal 12 damage per second in a 1000 area of effect. It will also buff friendly buildings in the area giving them 10 additional armor. Has a 180 seconds cooldown and 350 casting range.
-}
-
 STRING 20429
 // Upgrades: R07M (Shaman Adept Training,Shaman Master Training), Ubertip (Tooltip - Extended)
 {
@@ -122672,6 +122654,12 @@ STRING 20449
 // Upgrades: R00N (Storm Hammers), Hotkey (Hotkey)
 {
 R
+}
+
+STRING 20450
+// Units: n07B (Queen of Suffering Demon Gate), Ubertip (Tooltip - Extended)
+{
+Gateway attuned to the Queens of Suffering of the Burning Crusade, summoning 1 every 90 seconds. |n|n|cfff5962dAbilities:|R Unholy Aura|n|cff99b4d1Can only build 1 gate. |r
 }
 
 STRING 20451
@@ -122818,6 +122806,18 @@ STRING 20474
 Train Loa Medium
 }
 
+STRING 20475
+// Units: n06G (Voidcrusher Demon Gate), Ubertip (Tooltip - Extended)
+{
+Gateway attuned to the Voidcrushers of the Burning Crusade, summoning 1 every 60 seconds. |n|n|cfff5962dAbilities:|R Frost Attack
+}
+
+STRING 20476
+// Units: n05S (Covenant of Witch Demon Gate), Ubertip (Tooltip - Extended)
+{
+Gateway attuned to the Covenant of Eredar Witch of the Burning Crusade, summoning 3 every 90 seconds. |n|n|cfff5962dAbilities:|R Curse
+}
+
 STRING 20477
 // Abilities: A0UM (Fishing Net), EditorSuffix (Editor Suffix)
 {
@@ -122852,5 +122852,11 @@ STRING 20482
 // Upgrades: R097 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 E
+}
+
+STRING 20483
+// Units: H09N (Matriarch of Tirisfal), Ubertip (Tooltip - Extended)
+{
+Mystical hero, adept at dealing magical damage.|n|cfff5962dCan Learn:|R Time's Shield, Reborn Through Time, Enchanted Bolts, Comet Strike|n|n|cffffcc00Attacks land and air units.|R
 }
 

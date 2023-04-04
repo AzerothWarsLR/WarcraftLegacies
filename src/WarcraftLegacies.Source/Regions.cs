@@ -130,7 +130,7 @@ public static class Regions
 	public static Rectangle WinterspringAmbient1 { get; set; } = new Rectangle(-11904f, 9152f, -8480f, 12032f);
 	public static Rectangle WinterspringAmbient2 { get; set; } = new Rectangle(-9792f, 5792f, -8416f, 9088f);
 	public static Rectangle AshenvaleAmbient3 { get; set; } = new Rectangle(-19424f, 512f, -17344f, 2080f);
-	public static Rectangle RanazjarAmbient { get; set; } = new Rectangle(-21344f, -3040f, -19488f, -1248f);
+	public static Rectangle RanazjarAmbient { get; set; } = new Rectangle(-21344f, -5536f, -19424f, -1248f);
 	public static Rectangle AshenvaleAmbient4 { get; set; } = new Rectangle(-19072f, 2080f, -17856f, 7584f);
 	public static Rectangle Queltalas_2 { get; set; } = new Rectangle(16256f, 11936f, 20224f, 14016f);
 	public static Rectangle StratholmeAmbient { get; set; } = new Rectangle(13056f, 11136f, 16288f, 14112f);
@@ -339,5 +339,7 @@ public static class Regions
 	public static Rectangle StranglethornBaseBuild { get; set; } = new Rectangle(6848f, -24704f, 11936f, -17920f);
 	public static Rectangle TrollStartPos { get; set; } = new Rectangle(-9824f, -18400f, -8544f, -16832f);
 	public static Rectangle ExodarBaseUnlock { get; set; } = new Rectangle(-23872f, 5792f, -21248f, 8416f);
+	public static Rectangle DesolaceUnlock { get; set; } = new Rectangle(-19456f, -4896f, -17152f, -2976f);
+	public static Rectangle DraeneiQuestKill { get; set; } = new Rectangle(-20160f, -5376f, -16640f, -2624f);
 
 }

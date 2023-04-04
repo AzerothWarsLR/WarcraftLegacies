@@ -22,15 +22,15 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
     /// </summary>
     /// <param name="area">Units in this area will be made invulnerable, then made hostile when the quest is completed.</param>
     /// <param name="scepterOfTheQueen">Reward for completing the quest.</param>
-    /// <param name="feathermoonStronghold">Must be destroyed to complete the quest.</param>
-    public QuestScepterOfTheQueenWarsong(Rectangle area, Artifact scepterOfTheQueen, Capital feathermoonStronghold) : base("Royal Plunder",
+    /// <param name="auberdine">Must be destroyed to complete the quest.</param>
+    public QuestScepterOfTheQueenWarsong(Rectangle area, Artifact scepterOfTheQueen, Capital auberdine) : base("Royal Plunder",
       "Remnants of the ancient Highborne survive within the ruins of the Athenaeum. If Feathermoon Stronghold falls, it would become a simple matter to slaughter the Highborne and plunder their artifacts.",
       "ReplaceableTextures\\CommandButtons\\BTNNagaWeaponUp2.blp")
     {
       _highBourneArea = area;
       _scepterOfTheQueen = scepterOfTheQueen;
       _highBourneAreaUnits = _highBourneArea.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
-      AddObjective(new ObjectiveCapitalDead(feathermoonStronghold));
+      AddObjective(new ObjectiveCapitalDead(auberdine));
       AddObjective(new ObjectiveKillAllInArea(new[]{area}, "outside the Athenaeum"));
       _anyUnitInRect = new ObjectiveAnyUnitInRect(_highBourneArea, "Dire Maul", true);
       AddObjective(_anyUnitInRect);
