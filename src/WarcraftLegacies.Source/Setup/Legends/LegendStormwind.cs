@@ -49,7 +49,8 @@ namespace WarcraftLegacies.Source.Setup.Legends
       StormwindKeep = new Capital
       {
         Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_H00X_STORMWIND_KEEP_STORMWIND_OTHER),
-        DeathMessage = "Stormwind Keep, the capitol of the nation of Stormwind, has been destroyed!"
+        DeathMessage = "Stormwind Keep, the capitol of the nation of Stormwind, has been destroyed!",
+        Essential = true
       };
       StormwindKeep.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_H070_IMPROVED_GUARD_TOWER_STORMWIND_TOWER, new Point(9530, -10941)));
       StormwindKeep.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_H070_IMPROVED_GUARD_TOWER_STORMWIND_TOWER, new Point(10177, -10952)));

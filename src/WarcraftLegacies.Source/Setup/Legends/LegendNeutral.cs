@@ -86,7 +86,8 @@ namespace WarcraftLegacies.Source.Setup.Legends
       Dazaralor = new Capital
       {
         Capturable = true,
-        Unit = preplacedUnitSystem.GetUnit(FourCC("o00V"))
+        Unit = preplacedUnitSystem.GetUnit(FourCC("o00V")),
+        Essential = true
       };
 
       Gundrak = new Capital

@@ -17,7 +17,7 @@ namespace WarcraftLegacies.Source.GameLogic
   /// <summary>
   /// A Dialogue where a player can choose between Zandalar and Goblin
   /// </summary>
-  public class ZandalarGoblinChoiceDialogue : ITimer
+  public class ZandalarGoblinChoiceDialogue
   {
     /// <inheritdoc/>
     public EventHandler? OnTimerEnds { get; set; }
@@ -90,7 +90,6 @@ namespace WarcraftLegacies.Source.GameLogic
       Console.WriteLine("10");
       DestroyTimer(_timer);
       Console.WriteLine("11");
-      OnTimerEnds?.Invoke(this, new EventArgs());
       Console.WriteLine("12");
     }
 

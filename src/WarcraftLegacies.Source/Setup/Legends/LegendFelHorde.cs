@@ -80,19 +80,22 @@ namespace WarcraftLegacies.Source.Setup.Legends
       KilsorrowFortress = new Capital
       {
         Unit = preplacedUnitSystem.GetUnit(FourCC("o017")),
-        DeathMessage = "Kilsorrow Fortress has been razed."
+        DeathMessage = "Kilsorrow Fortress has been razed.",
+        Essential = true
       };
 
       BlackTemple = new Capital
       {
         Unit = preplacedUnitSystem.GetUnit(FourCC("o00F")),
+        Essential = true
       };
       BlackTemple.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_NPGR_POWER_GENERATOR_TEAL, new Point(5511.9f, -29688.2f)));
       BlackTemple.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_NPGR_POWER_GENERATOR_TEAL, new Point(5513.1f, -30467.4f)));
 
       HellfireCitadel = new Capital
       {
-        Unit = preplacedUnitSystem.GetUnit(FourCC("o008"))
+        Unit = preplacedUnitSystem.GetUnit(FourCC("o008")),
+        Essential = true
       };
     }
     

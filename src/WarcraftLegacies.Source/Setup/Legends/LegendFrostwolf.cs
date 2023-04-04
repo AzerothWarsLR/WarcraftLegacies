@@ -37,12 +37,14 @@ namespace WarcraftLegacies.Source.Setup.Legends
       {
         Unit = preplacedUnitSystem.GetUnit(FourCC("o00J")),
         DeathMessage =
-          "The mesas of Thunderbluff have been swept clean of the Tauren. The Bloodhoof are without a home."
+          "The mesas of Thunderbluff have been swept clean of the Tauren. The Bloodhoof are without a home.",
+        Essential = true
       };
 
       DarkspearHold = new Capital
       {
-        Unit = preplacedUnitSystem.GetUnit(FourCC("o02D"))
+        Unit = preplacedUnitSystem.GetUnit(FourCC("o02D")),
+        Essential = true
       };
 
       Rexxar = new LegendaryHero("Rexxar")

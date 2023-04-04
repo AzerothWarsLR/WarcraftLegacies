@@ -11,6 +11,8 @@ namespace WarcraftLegacies.Source.Setup.Legends
     public LegendaryHero Anetheron { get; }
     public LegendaryHero Tichondrius { get; }
     public LegendaryHero Malganis { get; }
+    
+    public Capital LegionStronghold { get; }
 
     public LegendLegion(PreplacedUnitSystem preplacedUnitSystem)
     {
@@ -41,6 +43,14 @@ namespace WarcraftLegacies.Source.Setup.Legends
         UnitType = FourCC("Umal"),
         PlayerColor = PLAYER_COLOR_GREEN
       };
+
+      LegionStronghold = new Capital()
+      {
+        Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_U00G_LEGION_STRONGHOLD_LEGION_OTHER),
+        DeathMessage =
+          "The great Stronghold of the Legian has fallen",
+        Essential = true
+      };
     }
     
     public void RegisterLegends()
@@ -49,6 +59,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
       LegendaryHeroManager.Register(Anetheron);
       LegendaryHeroManager.Register(Tichondrius);
       LegendaryHeroManager.Register(Malganis);
+      CapitalManager.Register(LegionStronghold);
     }
   }
 }
