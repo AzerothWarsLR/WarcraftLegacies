@@ -32,7 +32,6 @@ namespace MacroTools.Extensions
     private readonly Dictionary<int, int> _objectLimits = new();
     private float _baseIncome; //Gold per minute
     private float _bonusIncome;
-    private int _controlPointCount;
 
     private Team? _team;
     private Faction? _faction;
@@ -43,6 +42,7 @@ namespace MacroTools.Extensions
     private PlayerData(player player)
     {
       Player = player;
+      EliminationTurns = 0;
     }
 
     private player Player { get; }
@@ -110,6 +110,8 @@ namespace MacroTools.Extensions
       }
     }
 
+    public int EliminationTurns { get; set; }
+    
     public float LumberIncome { get; set; }
 
     /// <summary>

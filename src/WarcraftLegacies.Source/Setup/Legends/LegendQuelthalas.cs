@@ -24,7 +24,8 @@ namespace WarcraftLegacies.Source.Setup.Legends
       Silvermoon = new Capital
       {
         Unit = preplacedUnitSystem.GetUnit(FourCC("h003")),
-        DeathMessage = "The grand city of the high elves, Silvermoon, has been crushed by her enemies."
+        DeathMessage = "The grand city of the high elves, Silvermoon, has been crushed by her enemies.",
+        Essential = true
       };
       Silvermoon.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_H00D_ELVEN_RUNESTONE_QUEL_THALAS_TOWER, new Point(20479, 17477)));
       Silvermoon.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_H00D_ELVEN_RUNESTONE_QUEL_THALAS_TOWER, new Point(17415, 13196)));

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using static War3Api.Common;
 
 namespace MacroTools.LegendSystem
@@ -10,6 +11,7 @@ namespace MacroTools.LegendSystem
   public static class CapitalManager
   {
     private static readonly Dictionary<unit, Capital> ByUnit = new();
+    private static readonly List<Capital> AllCapitals = new();
 
     /// <summary>
     /// Registers a <see cref="Capital"/> to the <see cref="CapitalManager"/>.
@@ -21,6 +23,7 @@ namespace MacroTools.LegendSystem
       if (ByUnit.ContainsKey(capital.Unit))
         throw new Exception($"Tried to register {nameof(Capital)} {capital.Name} but it is already registered.");
       ByUnit.Add(capital.Unit, capital);
+      AllCapitals.Add(capital);
     }
 
     /// <summary>
@@ -31,5 +34,10 @@ namespace MacroTools.LegendSystem
     {
       return ByUnit.ContainsKey(whichUnit) ? ByUnit[whichUnit] : null;
     }
+    
+    /// <summary>
+    /// Returns all registered <see cref="Capital"/>s.
+    /// </summary>
+    public static ReadOnlyCollection<Capital> GetAll() => AllCapitals.AsReadOnly();
   }
 }

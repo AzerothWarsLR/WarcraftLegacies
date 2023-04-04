@@ -1,5 +1,9 @@
-﻿using MacroTools.Timer;
+using MacroTools.Timer;
 using System;
+using System;
+using System.Linq;
+using MacroTools.Extensions;
+using MacroTools.FactionSystem;
 using static War3Api.Common;
 
 namespace MacroTools
@@ -64,6 +68,34 @@ namespace MacroTools
     {
       _turnCount += 1;
       TimerDialogSetTitle(_turnTimerDialog, $"Turn {I2S(_turnCount)}");
+      if (_turnCount >= 20)
+      {
+        foreach (var player in WCSharp.Shared.Util.EnumeratePlayers(PLAYER_SLOT_STATE_PLAYING,MAP_CONTROL_USER))
+        {
+          var faction = player.GetFaction();
+          var meetEliminationThreshold = player.GetControlPoints().Count <= 4 && player.GetFoodUsed() <= 35 && !player.GetTeam()!.DoesTeamHaveEssentialLegend();
+          if (meetEliminationThreshold)
+          {
+            if (PlayerData.ByHandle(player).EliminationTurns >= 5)
+            {
+              if (faction != null)
+                faction.ScoreStatus = ScoreStatus.Defeated;
+            }
+            else
+            {
+              DisplayTextToPlayer(player, 0, 0,
+                PlayerData.ByHandle(player).EliminationTurns == 4
+                  ? $"You have met the threshold for being eliminated from the game. Unless you increase your cp count to above 4, raise food used above 35 or your team retake/gain an essential Legend you will be defeated in {5 - PlayerData.ByHandle(player).EliminationTurns} turn."
+                  : $"You have met the threshold for being eliminated from the game. Unless you increase your cp count to above 4, raise food used above 35 or your team retake/gain an essential Legend you will be defeated in {5 - PlayerData.ByHandle(player).EliminationTurns} turns.");
+            }
+            PlayerData.ByHandle(player).EliminationTurns++;
+          }
+          else
+          {
+            PlayerData.ByHandle(player).EliminationTurns = 0;
+          }
+        }
+      }
       TurnEnded?.Invoke(null, EventArgs.Empty);
       OnTimerEnds?.Invoke(null, EventArgs.Empty);
     }
