@@ -17,7 +17,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       frostwolf.AddQuest(new QuestDrektharsSpellbook(allLegendSetup.Druids.Nordrassil, allLegendSetup.Frostwolf.Thrall));
       frostwolf.AddQuest(new QuestFreeNerzhul(allLegendSetup.Scourge.TheFrozenThrone, allLegendSetup.Frostwolf.Thrall));
       frostwolf.AddQuest(new QuestWorldShaman(allLegendSetup.Frostwolf.Thrall));
-      frostwolf.AddQuest(new QuestScepterOfTheQueenWarsong(Regions.TheAthenaeum, artifactSetup.ScepterOfTheQueen, allLegendSetup.Sentinels.Feathermoon));
+      frostwolf.AddQuest(new QuestScepterOfTheQueenWarsong(Regions.TheAthenaeum, artifactSetup.ScepterOfTheQueen, allLegendSetup.Sentinels.Auberdine));
     }
   }
 }
