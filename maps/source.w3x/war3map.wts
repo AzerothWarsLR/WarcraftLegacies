@@ -4828,6 +4828,12 @@ STRING 805
 Quest Completed: The Drakkari Fortress
 }
 
+STRING 806
+// Abilities: A0N8 (Citadel Shield), Ubertip (Tooltip - Normal - Extended)
+{
+Channel the Citadel Shield for up to 15 seconds. It will deal 12 damage per second in a 1000 area of effect. It will also buff friendly buildings in the area giving them 10 additional armor. Has a 180 seconds cooldown and 10 seconds casting time.
+}
+
 STRING 807
 // Abilities: ANwk (Wind Walk), Ubertip (Tooltip - Normal - Extended)
 {
@@ -10117,6 +10123,12 @@ STRING 1687
 Warrior Hero, excels at melee combat.|n|cfff5962dAbilities:|r Evasion|n|cfff5962dCan Learn:|R Impale, Demonic Shield, Vampiric Aura, Corrupted Lightning|n|n|cffffcc00Attacks land units.|R
 }
 
+STRING 1688
+// Abilities: A0N8 (Citadel Shield), Ubertip (Tooltip - Normal - Extended)
+{
+Channel the Citadel Shield for up to 45 seconds. It will deal 12 damage per second in a 1000 area of effect. It will also buff friendly buildings in the area giving them 10 additional armor. Has a 180 seconds cooldown and 9 seconds casting time.
+}
+
 STRING 1689
 // Units: h04C (Pikeman), EditorSuffix (Name - Editor Suffix)
 {
@@ -12016,6 +12028,12 @@ STRING 2005
 // Units: n05S (Covenant of Witch Demon Gate), Tip (Tooltip - Basic)
 {
 Upgrade to Covenant of Witch Demon Gate
+}
+
+STRING 2006
+// Abilities: A0N8 (Citadel Shield), Ubertip (Tooltip - Normal - Extended)
+{
+Channel the Citadel Shield for up to 90 seconds. It will deal 12 damage per second in a 1000 area of effect. It will also buff friendly buildings in the area giving them 10 additional armor. Has a 180 seconds cooldown and 8 seconds casting time.
 }
 
 STRING 2007
@@ -20127,6 +20145,12 @@ STRING 3358
 // Units: E005 (The Prophet), Hotkey (Hotkey)
 {
 Q
+}
+
+STRING 3359
+// Abilities: A0N8 (Citadel Shield), Ubertip (Tooltip - Normal - Extended)
+{
+Channel the Citadel Shield for up to 180 seconds. It will deal 12 damage per second in a 1000 area of effect. It will also buff friendly buildings in the area giving them 10 additional armor. Has a 180 seconds cooldown and 7 seconds casting time.
 }
 
 STRING 3360
@@ -122504,30 +122528,6 @@ STRING 20424
 // Abilities: A0N8 (Citadel Shield), Researchubertip (Tooltip - Learn - Extended)
 {
 Channel the Citadel Shield. The shield will deal 12 damage per second to enemies in a 1000 area of effect and increase the armor of friendly buildings by 10. |n|n|cffffcc00Level 1|r - Cast range 100. Maximum channeling duration 15 seconds. |n|cffffcc00Level 2|r - Cast range 150. Maximum channeling duration 45 seconds. |n|cffffcc00Level 3|r - Cast range 225. Maximum channeling duration 90 seconds. |n|cffffcc00Level 4|r - Cast range 350. Maximum channeling duration 180 seconds.
-}
-
-STRING 20425
-// Abilities: A0N8 (Citadel Shield), Ubertip (Tooltip - Normal - Extended)
-{
-Channel the Citadel Shield for up to 15 seconds. It will deal 12 damage per second in a 1000 area of effect. It will also buff friendly buildings in the area giving them 10 additional armor. Has a 180 seconds cooldown and 100 casting range.
-}
-
-STRING 20426
-// Abilities: A0N8 (Citadel Shield), Ubertip (Tooltip - Normal - Extended)
-{
-Channel the Citadel Shield for up to 45 seconds. It will deal 12 damage per second in a 1000 area of effect. It will also buff friendly buildings in the area giving them 10 additional armor. Has a 180 seconds cooldown and 150 casting range.
-}
-
-STRING 20427
-// Abilities: A0N8 (Citadel Shield), Ubertip (Tooltip - Normal - Extended)
-{
-Channel the Citadel Shield for up to 90 seconds. It will deal 12 damage per second in a 1000 area of effect. It will also buff friendly buildings in the area giving them 10 additional armor. Has a 180 seconds cooldown and 225 casting range.
-}
-
-STRING 20428
-// Abilities: A0N8 (Citadel Shield), Ubertip (Tooltip - Normal - Extended)
-{
-Channel the Citadel Shield for up to 180 seconds. It will deal 12 damage per second in a 1000 area of effect. It will also buff friendly buildings in the area giving them 10 additional armor. Has a 180 seconds cooldown and 350 casting range.
 }
 
 STRING 20429
