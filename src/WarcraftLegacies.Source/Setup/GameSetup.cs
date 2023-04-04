@@ -30,7 +30,7 @@ namespace WarcraftLegacies.Source.Setup
     {
       var displayIntroText = new DisplayIntroText(10);
       var cinematicMode = new CinematicMode(59, displayIntroText);
-      var goblinZandalarPick = new ZandalarGoblinChoiceDialogue(10);
+      var goblinZandalarPick = new ZandalarGoblinChoiceDialogue(15);
       var gameTime = new GameTime();
       SetupControlPointManager();
       var preplacedUnitSystem = new PreplacedUnitSystem();
