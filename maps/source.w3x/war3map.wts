@@ -43352,38 +43352,14 @@ STRING 7222
 E
 }
 
-STRING 7223
-// Abilities: A000 (Mass Teleport), Researchtip (Tooltip - Learn)
-{
-Learn Mass Teleport - [|cffffcc00Level %d|r]
-}
-
 STRING 7224
 // Units: n0BG (Krokuun (10gold/min)), Name (Name)
 {
 Krokuun (10gold/min)
 }
 
-STRING 7225
-// Abilities: A000 (Mass Teleport), Tip (Tooltip - Normal)
-{
-Mass Teleport- [|cffffcc00Level 1|r]
-}
-
-STRING 7226
-// Abilities: A000 (Mass Teleport), Tip (Tooltip - Normal)
-{
-Mass Teleport- [|cffffcc00Level 2|r]
-}
-
-STRING 7227
-// Abilities: A000 (Mass Teleport), Tip (Tooltip - Normal)
-{
-Mass Teleport- [|cffffcc00Level 3|r]
-}
-
 STRING 7228
-// Abilities: A000 (Mass Teleport), Tip (Tooltip - Normal)
+// Abilities: A000 (Glimpse), Tip (Tooltip - Normal)
 {
 Mass Teleport- [|cffffcc00Level 4|r]
 }
@@ -75316,7 +75292,7 @@ Lightning Rain
 }
 
 STRING 12548
-// Abilities: A000 (Mass Teleport), Hotkey (Hotkey - Normal)
+// Abilities: A000 (Glimpse), Hotkey (Hotkey - Normal)
 {
 R
 }
@@ -75664,7 +75640,7 @@ STRING 12605
 }
 
 STRING 12606
-// Abilities: A000 (Mass Teleport), Researchhotkey (Hotkey - Learn)
+// Abilities: A000 (Glimpse), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -78148,12 +78124,6 @@ STRING 13019
 Summons a Black Hole that slows enemy units' movement speed by 90% and damages enemy units for 15 damage per second. If they within 200 range of the Black Hole, they take 100 damage per second.
 }
 
-STRING 13020
-// Abilities: A000 (Mass Teleport), EditorSuffix (Editor Suffix)
-{
-(Dark Green mediv)
-}
-
 STRING 13021
 // Units: o01K (Tidal Serpent), Name (Name)
 {
@@ -78170,12 +78140,6 @@ STRING 13023
 // Abilities: A0O0 (A Close), Tip (Tooltip - Normal)
 {
 Close Gate
-}
-
-STRING 13024
-// Abilities: A000 (Mass Teleport), Researchubertip (Tooltip - Learn - Extended)
-{
-Teleports units, including the caster, to a friendly building or unit. |n|cffffcc00Level 1|r - Teleports 60 units.|n|cffffcc00Level 2|r - Teleports 72 units.|n|cffffcc00Level 3|r - Teleports 84 units.
 }
 
 STRING 13025
@@ -78202,26 +78166,8 @@ STRING 13028
 Open Gate
 }
 
-STRING 13029
-// Abilities: A000 (Mass Teleport), Ubertip (Tooltip - Normal - Extended)
-{
-Teleports 60 of the player's nearby units, including Jaina, to a friendly ground unit or structure.
-}
-
-STRING 13030
-// Abilities: A000 (Mass Teleport), Ubertip (Tooltip - Normal - Extended)
-{
-Teleports 72 of the player's nearby units, including Jaina, to a friendly ground unit or structure.
-}
-
-STRING 13031
-// Abilities: A000 (Mass Teleport), Ubertip (Tooltip - Normal - Extended)
-{
-Teleports 84 of the player's nearby units, including Jaina, to a friendly ground unit or structure.
-}
-
 STRING 13032
-// Abilities: A000 (Mass Teleport), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A000 (Glimpse), Ubertip (Tooltip - Normal - Extended)
 {
 Teleports 96 of the player's nearby units, including Jaina, to a friendly ground unit or structure.
 }
@@ -121504,12 +121450,6 @@ STRING 20252
 (khadgar)
 }
 
-STRING 20253
-// Units: Hant (Grand Magus of the Kirin Tor), Ubertip (Tooltip - Extended)
-{
-Mystical Hero, adept at conjuring and long range damaging spells.|n|cfff5962dAbilities:|r Counterspell |n|cfff5962dCan learn:|R Arcane Bombardment, Mass Simulacrum, Citadel Shield, Frostfall|n|n|cffffcc00Attacks land and air units.|R
-}
-
 STRING 20254
 // Abilities: A11S (Napalm), Ubertip (Tooltip - Normal - Extended)
 {
@@ -122542,6 +122482,24 @@ STRING 20425
 R
 }
 
+STRING 20426
+// Units: Hant (Grand Magus of the Kirin Tor), Ubertip (Tooltip - Extended)
+{
+Mystical Hero, adept at conjuring and long range damaging spells.|n|cfff5962dAbilities:|r Counterspell |n|cfff5962dCan learn:|R Arcane Bombardment, Mass Simulacrum, Citadel Shield, Glimpse|n|n|cffffcc00Attacks land and air units.|R
+}
+
+STRING 20427
+// Abilities: A000 (Glimpse), EditorSuffix (Editor Suffix)
+{
+(antonidas)
+}
+
+STRING 20428
+// Abilities: A000 (Glimpse), Researchtip (Tooltip - Learn)
+{
+Learn Glimpse - [|cffffcc00Level %d|r]
+}
+
 STRING 20429
 // Upgrades: R07M (Shaman Adept Training,Shaman Master Training), Ubertip (Tooltip - Extended)
 {
@@ -122848,15 +122806,63 @@ STRING 20479
 E
 }
 
+STRING 20480
+// Abilities: A000 (Glimpse), Researchubertip (Tooltip - Learn - Extended)
+{
+Instantly teleport units, including the caster, to any building or unit in range. |n|cffffcc00Level 1|r - Teleports 60 units, 1000 range, 30 second cooldown.|n|cffffcc00Level 2|r - Teleports 72 units, 1500 range, 25 second cooldown.|n|cffffcc00Level 3|r - Teleports 84 units, 2000 range, 20 second cooldown.
+}
+
 STRING 20481
 // Upgrades: R071 (Witch Doctor Adept Training,Witch Doctor Master Training), EditorSuffix (Editor Suffix)
 {
 (troll)
 }
 
+STRING 20482
+// Abilities: A000 (Glimpse), Tip (Tooltip - Normal)
+{
+Glimpse - [|cffffcc00Level 1|r]
+}
+
 STRING 20483
 // Units: H09N (Matriarch of Tirisfal), Ubertip (Tooltip - Extended)
 {
 Mystical hero, adept at dealing magical damage.|n|cfff5962dCan Learn:|R Time's Shield, Reborn Through Time, Enchanted Bolts, Comet Strike|n|n|cffffcc00Attacks land and air units.|R
+}
+
+STRING 20484
+// Abilities: A000 (Glimpse), Tip (Tooltip - Normal)
+{
+Glimpse - [|cffffcc00Level 2|r]
+}
+
+STRING 20485
+// Abilities: A000 (Glimpse), Tip (Tooltip - Normal)
+{
+Glimpse - [|cffffcc00Level 3|r]
+}
+
+STRING 20486
+// Abilities: A000 (Glimpse), Ubertip (Tooltip - Normal - Extended)
+{
+Teleports 72 of the player's nearby units, including the caster, to a ground unit or structure in 1250 range.
+}
+
+STRING 20487
+// Abilities: A000 (Glimpse), Ubertip (Tooltip - Normal - Extended)
+{
+Teleports 84 of the player's nearby units, including the caster, to a ground unit or structure in 1500 range.
+}
+
+STRING 20488
+// Abilities: A000 (Glimpse), Name (Name)
+{
+Glimpse
+}
+
+STRING 20489
+// Abilities: A000 (Glimpse), Ubertip (Tooltip - Normal - Extended)
+{
+Teleports 60 of the player's nearby units, including the caster, to a ground unit or structure in 1000 range.
 }
 
