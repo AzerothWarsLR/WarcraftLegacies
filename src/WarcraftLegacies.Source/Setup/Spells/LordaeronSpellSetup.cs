@@ -58,12 +58,12 @@ namespace WarcraftLegacies.Source.Setup.Spells
       };
       SpellSystem.Register(exactJustice);
 
-      var willoftheAshbringer = new SpellOnAttack(Constants.UNIT_N0CX_LIGHTFORGED_WARFRAME_DRAENEI,
+      var willoftheAshbringer = new SpellOnAttack(Constants.UNIT_H01J_THE_ASHBRINGER_LORDAERON,
         Constants.ABILITY_A103_HOLY_SHOCKWAVE_DRAENEI)
       {
-        DummyAbilityId = Constants.ABILITY_A104_SHOCKWAVE_WARFRAME_DUMMY,
+        DummyAbilityId = Constants.ABILITY_A122,
         DummyOrderString = "ressurection",
-        ProcChance = 0.
+        ProcChance = 0.2f
       };
       PassiveAbilityManager.Register(willoftheAshbringer);
     }

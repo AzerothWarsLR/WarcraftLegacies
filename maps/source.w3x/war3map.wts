@@ -22048,6 +22048,12 @@ STRING 3675
 Revive - Naisha
 }
 
+STRING 3676
+// Abilities: A122 (Will of the Ashbringer), Researchubertip (Tooltip - Learn - Extended)
+{
+When this hero attacks, it has a 20% chance to revive nearby ally units. |n|cffffcc00Level 1|r - 3 units. |n|cffffcc00Level 2|r - 6 units. |n|cffffcc00Level 3|r - 9 units.
+}
+
 STRING 3677
 // Upgrades: Rhst (Sorceress Adept Training,Sorceress Master Training), EditorSuffix (Editor Suffix)
 {
@@ -43358,22 +43364,10 @@ STRING 7224
 Krokuun (10gold/min)
 }
 
-STRING 7225
-// Abilities: A122 (Will of the Ashbringer), Researchubertip (Tooltip - Learn - Extended)
-{
-When this hero attacks, it has a chance to revive 3 nearby ally units. |n|cffffcc00Level 1|r - 10% chance. |n|cffffcc00Level 2|r - 20% chance. |n|cffffcc00Level 3|r - 30% chance.
-}
-
 STRING 7226
-// Abilities: A122 (Will of the Ashbringer), Tip (Tooltip - Normal)
+// Abilities: A0SF (Illusionary Lance), Tip (Tooltip - Normal)
 {
 Thunder Fists - [|cffffcc00Level 4|r]
-}
-
-STRING 7227
-// Abilities: A122 (Will of the Ashbringer), Ubertip (Tooltip - Normal - Extended)
-{
-When this hero attacks, it has a 10% chance to revive 3 nearby ally units.
 }
 
 STRING 7228
@@ -69188,6 +69182,12 @@ STRING 11527
 Fires a volley of chemical rockets, lighting nearby enemies on fire. Deals 20 initial damage and 5 damage per second for 10 seconds to any units hit.
 }
 
+STRING 11528
+// Abilities: A122 (Will of the Ashbringer), Ubertip (Tooltip - Normal - Extended)
+{
+When this hero attacks, it has a 20% chance to revive 6 nearby ally units.
+}
+
 STRING 11529
 // Abilities: A096 (Summon Water Elemental), Researchhotkey (Hotkey - Learn)
 {
@@ -78160,12 +78160,6 @@ STRING 13023
 Close Gate
 }
 
-STRING 13024
-// Abilities: A122 (Will of the Ashbringer), Ubertip (Tooltip - Normal - Extended)
-{
-When this hero attacks, it has a 30% chance to revive 3 nearby ally units.
-}
-
 STRING 13025
 // Abilities: A0NZ (A Close), Tip (Tooltip - Normal)
 {
@@ -78191,7 +78185,7 @@ Open Gate
 }
 
 STRING 13029
-// Abilities: A122 (Will of the Ashbringer), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A0LN (Thunder Fists), Ubertip (Tooltip - Normal - Extended)
 {
 When this hero attacks, it has a 15% chance to hurl lightning at <A024,DataB4> targets, dealing <A024,DataA4> damage to each of them.
 }
@@ -78656,6 +78650,12 @@ STRING 13106
 // Abilities: A0HV (Ignore Pain), Tip (Tooltip - Normal)
 {
 Ignore Pain - [|cffffcc00Level 2|r]
+}
+
+STRING 13107
+// Abilities: A122 (Will of the Ashbringer), Ubertip (Tooltip - Normal - Extended)
+{
+When this hero attacks, it has a 20% chance to revive 9 nearby ally units.
 }
 
 STRING 13109
@@ -96154,7 +96154,7 @@ STRING 16033
 }
 
 STRING 16034
-// Abilities: A0LN (Thunder Fists), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A0SF (Illusionary Lance), Ubertip (Tooltip - Normal - Extended)
 {
 When this hero attacks, it has a 15% chance to hurl lightning at <A024,DataB4> targets, dealing <A024,DataA4> damage to each of them.
 }
@@ -105052,7 +105052,7 @@ STRING 17516
 }
 
 STRING 17517
-// Abilities: A0SF (Illusionary Lance), Tip (Tooltip - Normal)
+// Abilities: A103 (Holy Shockwave), Tip (Tooltip - Normal)
 {
 Thunder Fists - [|cffffcc00Level 4|r]
 }
@@ -105076,7 +105076,7 @@ Mage Armor
 }
 
 STRING 17521
-// Abilities: A0SF (Illusionary Lance), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A103 (Holy Shockwave), Ubertip (Tooltip - Normal - Extended)
 {
 When this hero attacks, it has a 15% chance to hurl lightning at <A024,DataB4> targets, dealing <A024,DataA4> damage to each of them.
 }
@@ -116309,7 +116309,7 @@ STRING 19391
 }
 
 STRING 19392
-// Abilities: A103 (Holy Shockwave), Tip (Tooltip - Normal)
+// Abilities: A10J (Master of Lightning), Tip (Tooltip - Normal)
 {
 Thunder Fists - [|cffffcc00Level 4|r]
 }
@@ -116525,7 +116525,7 @@ When this hero attacks, it has a 15% chance to hurl lightning at <A024,DataB3> t
 }
 
 STRING 19428
-// Abilities: A103 (Holy Shockwave), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A10J (Master of Lightning), Ubertip (Tooltip - Normal - Extended)
 {
 When this hero attacks, it has a 15% chance to hurl lightning at <A024,DataB4> targets, dealing <A024,DataA4> damage to each of them.
 }
@@ -118793,7 +118793,7 @@ STRING 19805
 }
 
 STRING 19806
-// Abilities: A10J (Master of Lightning), Tip (Tooltip - Normal)
+// Abilities: A122 (Will of the Ashbringer), Tip (Tooltip - Normal)
 {
 Thunder Fists - [|cffffcc00Level 4|r]
 }
@@ -119933,7 +119933,7 @@ When this hero attacks, it has a 15% chance to hurl lightning at <A024,DataB3> t
 }
 
 STRING 19996
-// Abilities: A10J (Master of Lightning), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A122 (Will of the Ashbringer), Ubertip (Tooltip - Normal - Extended)
 {
 When this hero attacks, it has a 15% chance to hurl lightning at <A024,DataB4> targets, dealing <A024,DataA4> damage to each of them.
 }
