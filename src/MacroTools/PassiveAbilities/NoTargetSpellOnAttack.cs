@@ -46,7 +46,6 @@ namespace MacroTools.PassiveAbilities
         return;
 
       var caster = GetEventDamageSource();
-      var target = GetTriggerUnit();
       if (GetRandomReal(0, 1) < ProcChance)
       {
         DoSpellNoTarget(caster);
