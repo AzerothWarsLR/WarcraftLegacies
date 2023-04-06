@@ -4828,12 +4828,6 @@ STRING 805
 Quest Completed: The Drakkari Fortress
 }
 
-STRING 806
-// Abilities: A0N8 (Citadel Shield), Ubertip (Tooltip - Normal - Extended)
-{
-Channel the Citadel Shield for up to 15 seconds. It will deal 12 damage per second in a 1000 area of effect. It will also buff friendly buildings in the area giving them 10 additional armor. Has a 180 seconds cooldown and 10 seconds casting time.
-}
-
 STRING 807
 // Abilities: ANwk (Wind Walk), Ubertip (Tooltip - Normal - Extended)
 {
@@ -10123,12 +10117,6 @@ STRING 1687
 Warrior Hero, excels at melee combat.|n|cfff5962dAbilities:|r Evasion|n|cfff5962dCan Learn:|R Impale, Demonic Shield, Vampiric Aura, Corrupted Lightning|n|n|cffffcc00Attacks land units.|R
 }
 
-STRING 1688
-// Abilities: A0N8 (Citadel Shield), Ubertip (Tooltip - Normal - Extended)
-{
-Channel the Citadel Shield for up to 45 seconds. It will deal 12 damage per second in a 1000 area of effect. It will also buff friendly buildings in the area giving them 10 additional armor. Has a 180 seconds cooldown and 9 seconds casting time.
-}
-
 STRING 1689
 // Units: h04C (Pikeman), EditorSuffix (Name - Editor Suffix)
 {
@@ -12028,12 +12016,6 @@ STRING 2005
 // Units: n05S (Covenant of Witch Demon Gate), Tip (Tooltip - Basic)
 {
 Upgrade to Covenant of Witch Demon Gate
-}
-
-STRING 2006
-// Abilities: A0N8 (Citadel Shield), Ubertip (Tooltip - Normal - Extended)
-{
-Channel the Citadel Shield for up to 90 seconds. It will deal 12 damage per second in a 1000 area of effect. It will also buff friendly buildings in the area giving them 10 additional armor. Has a 180 seconds cooldown and 8 seconds casting time.
 }
 
 STRING 2007
@@ -20145,12 +20127,6 @@ STRING 3358
 // Units: E005 (The Prophet), Hotkey (Hotkey)
 {
 Q
-}
-
-STRING 3359
-// Abilities: A0N8 (Citadel Shield), Ubertip (Tooltip - Normal - Extended)
-{
-Channel the Citadel Shield for up to 180 seconds. It will deal 12 damage per second in a 1000 area of effect. It will also buff friendly buildings in the area giving them 10 additional armor. Has a 180 seconds cooldown and 7 seconds casting time.
 }
 
 STRING 3360
@@ -78172,6 +78148,12 @@ STRING 13023
 Close Gate
 }
 
+STRING 13024
+// Abilities: A0N8 (Citadel Shield), Ubertip (Tooltip - Normal - Extended)
+{
+Channel the Citadel Shield for up to 15 seconds. It will deal 12 damage per second in a 1000 area of effect. It will also buff friendly buildings in the area giving them 10 additional armor. Has a 180 seconds cooldown and 8 seconds casting time.
+}
+
 STRING 13025
 // Abilities: A0NZ (A Close), Tip (Tooltip - Normal)
 {
@@ -78668,6 +78650,12 @@ STRING 13107
 // Abilities: A122 (Will of the Ashbringer), Ubertip (Tooltip - Normal - Extended)
 {
 When this hero attacks, it has a 20% chance to revive 9 nearby ally units.
+}
+
+STRING 13108
+// Abilities: A0N8 (Citadel Shield), Ubertip (Tooltip - Normal - Extended)
+{
+Channel the Citadel Shield for up to 45 seconds. It will deal 12 damage per second in a 1000 area of effect. It will also buff friendly buildings in the area giving them 10 additional armor. Has a 180 seconds cooldown and 7 seconds casting time.
 }
 
 STRING 13109
@@ -79208,6 +79196,12 @@ STRING 13198
 // Buffs/Effects: B07E (), Bufftip (Tooltip)
 {
 Holy Radiance
+}
+
+STRING 13199
+// Abilities: A0N8 (Citadel Shield), Ubertip (Tooltip - Normal - Extended)
+{
+Channel the Citadel Shield for up to 90 seconds. It will deal 12 damage per second in a 1000 area of effect. It will also buff friendly buildings in the area giving them 10 additional armor. Has a 180 seconds cooldown and 6 seconds casting time.
 }
 
 STRING 13200
@@ -107602,6 +107596,12 @@ STRING 17939
 // Upgrades: R078 (Spirit Walker Adept Training,Spirit Walker Master Training), Ubertip (Tooltip - Extended)
 {
 Increases Elementalist' mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Frost Armor.
+}
+
+STRING 17940
+// Abilities: A0N8 (Citadel Shield), Ubertip (Tooltip - Normal - Extended)
+{
+Channel the Citadel Shield for up to 180 seconds. It will deal 12 damage per second in a 1000 area of effect. It will also buff friendly buildings in the area giving them 10 additional armor. Has a 180 seconds cooldown and 5 seconds casting time.
 }
 
 STRING 17941
