@@ -58,6 +58,19 @@ namespace MacroTools.SpellSystem
         .RemoveAbility(abilId);
     }
 
+    public static void DummyCastNoTarget(unit caster, int abilId, string orderId, int level)
+    {
+      DummyCaster.DummyUnit
+        .SetOwner(caster.OwningPlayer())
+        .SetPosition(caster.GetPosition())
+        .AddAbility(abilId)
+        .SetAbilityLevel(abilId, level);
+
+      DummyCaster.DummyUnit
+        .IssueOrder(orderId)
+        .RemoveAbility(abilId);
+    }
+
     /// <summary>
     /// Causes the specified spell to be cast at a particular point.
     /// </summary>

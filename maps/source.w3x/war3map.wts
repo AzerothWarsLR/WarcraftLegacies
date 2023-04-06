@@ -43364,10 +43364,22 @@ STRING 7224
 Krokuun (10gold/min)
 }
 
+STRING 7225
+// Units: n06P (Sentinel Enclave), Ubertip (Tooltip - Extended)
+{
+Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Wisp, Priestess of the Moon|n|cfff5962dAbilities:|R Ancestral Spirits|n|cfff5962dResearches:|R Full Scale Escalation
+}
+
 STRING 7226
 // Abilities: A0SF (Illusionary Lance), Tip (Tooltip - Normal)
 {
 Thunder Fists - [|cffffcc00Level 4|r]
+}
+
+STRING 7227
+// Units: h04L (Priestess of the Moon), Ubertip (Tooltip - Extended)
+{
+Warrior priestess of Elune.|n|cfff5962dAbilities:|R Light of the Goddess, Slow Poison, Scout, Shadowmeld, Resistant Skin, Elune Blessing |n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land and air units.|r
 }
 
 STRING 7228
@@ -107592,12 +107604,6 @@ STRING 17939
 Increases Elementalist' mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Frost Armor.
 }
 
-STRING 17940
-// Units: n06P (Sentinel Enclave), Ubertip (Tooltip - Extended)
-{
-Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Wisp, Priestess of the Moon|n|cfff5962dAbilities:|R Ancestral Spirits|n|cfff5962dResearches:|R Elune's Blessing, Full Scale Escalation
-}
-
 STRING 17941
 // Buffs/Effects: B04S (), Buffubertip (Tooltip - Extended)
 {
@@ -107680,12 +107686,6 @@ STRING 17954
 // Abilities: A0UI (Siege Form), Ubertip (Tooltip - Normal - Extended)
 {
 Immobilizes the Azerite Siege Engine to grant it a powerful ranged attack.
-}
-
-STRING 17955
-// Units: h04L (Priestess of the Moon), Ubertip (Tooltip - Extended)
-{
-Warrior priestess of Elune.|n|cfff5962dAbilities:|R Light of the Goddess, Slow Poison, Scout, Shadowmeld, Resistant Skin|n|cfff5962dCan learn:|R Elune's Blessing |n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land and air units.|r
 }
 
 STRING 17956
