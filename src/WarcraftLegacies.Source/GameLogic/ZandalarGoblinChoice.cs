@@ -62,8 +62,8 @@ namespace WarcraftLegacies.Source.GameLogic
       var noTrigger = CreateTrigger();
       TriggerRegisterDialogButtonEvent(noTrigger, NoButton);
       TriggerRegisterDialogButtonEvent(yesTrigger, YesButton);
-      TriggerAddAction(noTrigger, () => Console.WriteLine("Zandalar"));
-      TriggerAddAction(yesTrigger, () => Console.WriteLine("Goblin"));
+      TriggerAddAction(noTrigger, PickZandalar);
+      TriggerAddAction(yesTrigger, PickGoblin);
 
       DialogDisplay(Player(8), PickDialogue, true);
     }
@@ -72,7 +72,7 @@ namespace WarcraftLegacies.Source.GameLogic
     {
       if (!_factionPicked)
       {
-        Console.WriteLine("Goblin");
+        PickGoblin();
         return;
       }
       DialogDisplay(Player(8), PickDialogue, false);
