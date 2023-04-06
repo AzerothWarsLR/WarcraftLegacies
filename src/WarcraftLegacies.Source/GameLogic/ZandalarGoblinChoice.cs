@@ -1,15 +1,9 @@
-﻿using MacroTools;
-using MacroTools.ControlPointSystem;
+﻿using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
-using MacroTools.QuestSystem;
-using MacroTools.Timer;
-using System;
 using System.Collections.Generic;
 using WarcraftLegacies.Source.Setup;
 using WarcraftLegacies.Source.Setup.FactionSetup;
-using WCSharp.Shared.Data;
-using static System.Collections.Specialized.BitVector32;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.GameLogic
@@ -17,110 +11,81 @@ namespace WarcraftLegacies.Source.GameLogic
   /// <summary>
   /// A Dialogue where a player can choose between Zandalar and Goblin
   /// </summary>
-  public class ZandalarGoblinChoiceDialogue
+  public static class ZandalarGoblinChoiceDialogue
   {
-    /// <inheritdoc/>
-    public EventHandler? OnTimerEnds { get; set; }
-
-    private readonly dialog? PickDialogue;
-    private readonly button? NoButton;
-    private readonly button? YesButton;
-    private readonly trigger? YesTrigger;
-    private readonly trigger? NoTrigger;
-    private readonly float _duration;
-
-    private bool _factionPicked;
-    private timer? _timer;
+    private static readonly dialog? PickDialogue = DialogCreate();
+    private static readonly button? NoButton = DialogAddButton(PickDialogue, "Zandalari", 0);
+    private static readonly button? YesButton = DialogAddButton(PickDialogue, "Goblins", 0);
+    private static readonly trigger? YesTrigger = CreateTrigger();
+    private static readonly trigger? NoTrigger = CreateTrigger();
+    private static bool _factionPicked;
 
     /// <summary>
-    /// 
+    /// Sets up <see cref="ZandalarGoblinChoiceDialogue"/>.
     /// </summary>
-    /// <param name="duration"></param>
-    public ZandalarGoblinChoiceDialogue(float duration)
+    public static void Setup()
     {
-      PickDialogue = DialogCreate();
-      NoButton = DialogAddButton(PickDialogue, "Zandalari", 0);
-      YesButton = DialogAddButton(PickDialogue, "Goblins", 0);
-      YesTrigger = CreateTrigger();
-      NoTrigger = CreateTrigger();
-      _duration = duration;
       DialogSetMessage(PickDialogue, "Pick your Faction");
+      var timer = CreateTimer();
+      TimerStart(timer, 3, false, StartFactionPick);
+      var concludeTimer = CreateTimer();
+      TimerStart(concludeTimer, 15, false, ConcludeFactionPick);
+    }
+    
+    private static void ConcludeFactionPick()
+    {
+      if (GetLocalPlayer() == Player(8))
+        DialogDisplay(GetLocalPlayer(), PickDialogue, false);
+      DialogClear(PickDialogue);
+      DialogDestroy(PickDialogue);
+      DestroyTrigger(YesTrigger);
+      DestroyTrigger(NoTrigger);
+      DestroyTimer(GetExpiredTimer());
 
+      if (_factionPicked)
+      {
+        PickZandalar();
+      }
+      else
+      {
+        PickGoblin();
+      }
     }
 
-    /// <inheritdoc/>
-    public void StartTimer()
+    private static void StartFactionPick()
     {
-      StartFactionPick();
-      _timer = CreateTimer();
-      TimerStart(_timer, _duration, false, ConcludeFactionPick);
-    }
+      if (GetLocalPlayer() == Player(8))
+        DialogDisplay(GetLocalPlayer(), PickDialogue, true);
 
-    private void StartFactionPick()
-    {
       var yesTrigger = CreateTrigger();
       var noTrigger = CreateTrigger();
       TriggerRegisterDialogButtonEvent(noTrigger, NoButton);
       TriggerRegisterDialogButtonEvent(yesTrigger, YesButton);
-      TriggerAddAction(noTrigger, PickZandalar);
-      TriggerAddAction(yesTrigger, PickGoblin);
-      Console.WriteLine("0");
-
-      //DialogDisplay(Player(8), PickDialogue, true);
+      TriggerAddAction(noTrigger, () => { _factionPicked = true;});
+      TriggerAddAction(yesTrigger, () => { _factionPicked = false;});
+      DestroyTimer(GetExpiredTimer());
     }
-
-    private void ConcludeFactionPick()
-    {
-      Console.WriteLine("1");
-      if (!_factionPicked)
-      {
-        PickGoblin();
-        return;
-      }
-      Console.WriteLine("5");
-      DialogDisplay(Player(8), PickDialogue, false);
-      Console.WriteLine("6");
-      DialogClear(PickDialogue);
-      Console.WriteLine("7");
-      DialogDestroy(PickDialogue);
-      Console.WriteLine("8");
-      DestroyTrigger(YesTrigger);
-      Console.WriteLine("9");
-      DestroyTrigger(NoTrigger);
-      Console.WriteLine("10");
-      DestroyTimer(_timer);
-      Console.WriteLine("11");
-      Console.WriteLine("12");
-    }
-
-    private void PickZandalar()
+    
+    private static void PickZandalar()
     {
       var gobUnits = Regions.GoblinStartPos.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
       var zandaUnits = Regions.TrollStartPos.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
-      RemoveFaction(GoblinSetup.Goblin, gobUnits);
       AssignFaction(ZandalarSetup.Zandalar, zandaUnits);
+      RemoveFaction(GoblinSetup.Goblin, gobUnits);
       if (GetLocalPlayer() == Player(8))
         SetCameraPosition(Regions.TrollStartPos.Center.X, Regions.TrollStartPos.Center.Y);
-      _factionPicked = true;
-      ConcludeFactionPick();
     }
 
-    private void PickGoblin()
+    private static void PickGoblin()
     {
       var gobUnits = Regions.GoblinStartPos.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
       var zandaUnits = Regions.TrollStartPos.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
-      Console.WriteLine("2");
-      RemoveFaction(ZandalarSetup.Zandalar, zandaUnits);
-      Console.WriteLine("3");
       AssignFaction(GoblinSetup.Goblin, gobUnits);
-      Console.WriteLine("4");
-      _factionPicked = true;
-      ConcludeFactionPick();
+      RemoveFaction(ZandalarSetup.Zandalar, zandaUnits);
     }
 
     private static void RemoveFaction(Faction faction, List<unit> units)
     {
-      faction.ScoreStatus = ScoreStatus.Defeated;
       faction.RemoveGoldMines();
       foreach (var unit in units)
       {
@@ -142,6 +107,5 @@ namespace WarcraftLegacies.Source.GameLogic
       Player(8).SetTeam(TeamSetup.Horde);
       Player(8).RescueGroup(units, true);
     }
-
   }
 }
