@@ -1,4 +1,5 @@
-﻿using MacroTools.Spells;
+﻿using MacroTools.PassiveAbilities;
+using MacroTools.Spells;
 using MacroTools.Spells.ExactJustice;
 using MacroTools.SpellSystem;
 
@@ -56,6 +57,15 @@ namespace WarcraftLegacies.Source.Setup.Spells
         }
       };
       SpellSystem.Register(exactJustice);
+
+      var willoftheAshbringer = new SpellOnAttack(Constants.UNIT_N0CX_LIGHTFORGED_WARFRAME_DRAENEI,
+        Constants.ABILITY_A103_HOLY_SHOCKWAVE_DRAENEI)
+      {
+        DummyAbilityId = Constants.ABILITY_A104_SHOCKWAVE_WARFRAME_DUMMY,
+        DummyOrderString = "ressurection",
+        ProcChance = 0.
+      };
+      PassiveAbilityManager.Register(willoftheAshbringer);
     }
   }
 }
