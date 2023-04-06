@@ -63,10 +63,7 @@ namespace MacroTools.BookSystem.Powers
 
     private void OnPlayerChangedFaction(object? sender, PlayerFactionChangeEventArgs args)
     {
-      if (args.Player == GetLocalPlayer())
-      {
-        TrackedFaction = args.Player.GetFaction();
-      }
+      TrackedFaction = args.Player.GetFaction();
     }
 
     private void OnFactionRemovePower(object? sender, FactionPowerEventArgs factionPowerEventArgs)

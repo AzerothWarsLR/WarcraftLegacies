@@ -1,4 +1,5 @@
-﻿using MacroTools;
+﻿using System;
+using MacroTools;
 using MacroTools.Cheats;
 using MacroTools.CommandSystem;
 using MacroTools.ControlPointSystem;
@@ -30,7 +31,6 @@ namespace WarcraftLegacies.Source.Setup
     {
       var displayIntroText = new DisplayIntroText(10);
       var cinematicMode = new CinematicMode(59, displayIntroText);
-      var goblinZandalarPick = new ZandalarGoblinChoiceDialogue(15);
       var gameTime = new GameTime();
       SetupControlPointManager();
       var preplacedUnitSystem = new PreplacedUnitSystem();
@@ -45,7 +45,7 @@ namespace WarcraftLegacies.Source.Setup
       AllFactionSetup.Setup(preplacedUnitSystem, artifactSetup);
       SharedFactionConfigSetup.Setup();
       PlayerSetup.Setup();
-      goblinZandalarPick.StartTimer();
+      ZandalarGoblinChoiceDialogue.Setup();
       NeutralHostileSetup.Setup();
       AllQuestSetup.Setup(preplacedUnitSystem, artifactSetup, allLegendSetup);
       ObserverSetup.Setup(new[] { Player(21) });
