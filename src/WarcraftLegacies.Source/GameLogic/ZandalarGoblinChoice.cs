@@ -27,9 +27,9 @@ namespace WarcraftLegacies.Source.GameLogic
     {
       DialogSetMessage(PickDialogue, "Pick your Faction");
       var timer = CreateTimer();
-      TimerStart(timer, 3, false, StartFactionPick);
+      TimerStart(timer, 4, false, StartFactionPick);
       var concludeTimer = CreateTimer();
-      TimerStart(concludeTimer, 15, false, ConcludeFactionPick);
+      TimerStart(concludeTimer, 24, false, ConcludeFactionPick);
     }
     
     private static void ConcludeFactionPick()
