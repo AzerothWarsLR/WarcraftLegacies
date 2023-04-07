@@ -43,6 +43,9 @@ namespace WarcraftLegacies.Source.GameLogic
 
       _musicTimer = CreateTimer();
       TimerStart(_musicTimer, 2.1f, false, PlayFactionMusic);
+      
+      FogEnable(false);
+      FogMaskEnable(false);
 
       foreach (var player in WCSharp.Shared.Util.EnumeratePlayers().Where(p => p != Player(PLAYER_NEUTRAL_PASSIVE) || p != Player(PLAYER_NEUTRAL_AGGRESSIVE)))
         foreach (var unit in CreateGroup().EnumUnitsOfPlayer(player).EmptyToList())
@@ -71,6 +74,8 @@ namespace WarcraftLegacies.Source.GameLogic
     {
       if (_state != CinematicState.Active)
         return;
+      
+      FogEnable(true);
 
       SetMapMusic("music", true, 0);
       SetCameraField(CAMERA_FIELD_TARGET_DISTANCE, 2400f, 1f);
