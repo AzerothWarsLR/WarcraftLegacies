@@ -89,12 +89,12 @@ namespace MacroTools.PassiveAbilities
 
       var reanimatedUnit = CreateUnit(castingPlayer, whichUnit.GetTypeId(), whichUnitPosition.X,
           whichUnitPosition.Y, whichUnit.GetFacing())
+        .RemoveAllAbilities(new List<int>{1096905835,1097690998,1112498531})
         .SetTimedLife(Duration, BuffId)
         .SetColor(200, 50, 50, 255)
         .SetExplodeOnDeath(true)
         .AddType(UNIT_TYPE_UNDEAD)
-        .AddType(UNIT_TYPE_SUMMONED)
-        .RemoveAllAbilities(new List<int>{1096905835,1097690998,1112498531});
+        .AddType(UNIT_TYPE_SUMMONED);
       
       whichUnit.Remove();
       
