@@ -29,7 +29,7 @@ namespace WarcraftLegacies.Source.Setup
     /// </summary>
     public static void Setup()
     {
-      var displayIntroText = new DisplayIntroText(10);
+      var displayIntroText = new DisplayIntroText(25);
       var cinematicMode = new CinematicMode(59, displayIntroText);
       var gameTime = new GameTime();
       SetupControlPointManager();
