@@ -2,6 +2,7 @@
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.QuestSystem;
+using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Legion
 {
@@ -19,12 +20,12 @@ namespace WarcraftLegacies.Source.Quests.Legion
     protected override string RewardFlavour => "The Monastery has been corrupted and plundered. A secret demon gate has now been formed inside.";
 
     /// <inheritdoc/>
-    protected override string RewardDescription => "Unlock the Monastery as a troop production building and 500 gold. Completing any of the three infiltration quest will enable the Alterac Portal to be opened.";
+    protected override string RewardDescription => "Unlock the Monastery as a troop production building and able to build 1 more Summoning Circle. Completing any of the three infiltration quest will enable the Alterac Portal to be opened.";
 
     /// <inheritdoc/>
     protected override void OnComplete(Faction whichFaction)
     {
-      whichFaction.Gold += 500;
+      whichFaction.ModObjectLimit(FourCC("u006"), 3); //Summoning Circle
     }
   }
 }
