@@ -1,4 +1,4 @@
-using MacroTools.Timer;
+﻿using MacroTools.Timer;
 using System;
 using System;
 using System.Linq;
@@ -73,10 +73,10 @@ namespace MacroTools
         foreach (var player in WCSharp.Shared.Util.EnumeratePlayers(PLAYER_SLOT_STATE_PLAYING,MAP_CONTROL_USER))
         {
           var faction = player.GetFaction();
-          var meetEliminationThreshold = player.GetControlPoints().Count <= 4 && player.GetFoodUsed() <= 35 && !player.GetTeam()!.DoesTeamHaveEssentialLegend();
+          var meetEliminationThreshold = player.GetControlPoints().Count <= 4 && player.GetFoodUsed() <= 105 && !player.GetTeam()!.DoesTeamHaveEssentialLegend();
           if (meetEliminationThreshold)
           {
-            if (PlayerData.ByHandle(player).EliminationTurns >= 5)
+            if (PlayerData.ByHandle(player).EliminationTurns >= 3)
             {
               if (faction != null)
                 faction.ScoreStatus = ScoreStatus.Defeated;
