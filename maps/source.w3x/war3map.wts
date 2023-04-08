@@ -10123,6 +10123,12 @@ STRING 1687
 Warrior Hero, excels at melee combat.|n|cfff5962dAbilities:|r Evasion|n|cfff5962dCan Learn:|R Impale, Demonic Shield, Vampiric Aura, Corrupted Lightning|n|n|cffffcc00Attacks land units.|R
 }
 
+STRING 1688
+// Upgrades: R04H (Chaos), Name (Name)
+{
+Quest Completed: Any of the Three Infiltration Quests
+}
+
 STRING 1689
 // Units: h04C (Pikeman), EditorSuffix (Name - Editor Suffix)
 {

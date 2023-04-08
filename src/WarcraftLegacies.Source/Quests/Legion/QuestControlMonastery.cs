@@ -1,31 +1,29 @@
-using MacroTools.FactionSystem;
+﻿using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.QuestSystem;
 
-namespace WarcraftLegacies.Source.Quests.Dalaran
+namespace WarcraftLegacies.Source.Quests.Legion
 {
-  public sealed class QuestKarazhan : QuestData
+  public sealed class QuestControlMonastery : QuestData
   {
-    public QuestKarazhan(Capital karazhan) : base("Secrets of Karazhan",
-      "The spire of Medivh stands mysteriously idle. Dalaran could make use of its grand magicks.",
-      "ReplaceableTextures\\CommandButtons\\BTNTomeBrown.blp")
+    public QuestControlMonastery(Capital monastery) : base("Corrupting the Monastery",
+      "The mind of humans are feeble and easily corruptable, the Scarlet Monastery will be a perfect ground for a secret demon portal",
+      "ReplaceableTextures\\CommandButtons\\BTNLordaeronMageTower.blp")
     {
-      AddObjective(new ObjectiveControlCapital(karazhan, false));
+      AddObjective(new ObjectiveControlCapital(monastery, false));
+      ResearchId = Constants.UPGRADE_R04H_QUEST_COMPLETED_ANY_OF_THE_THREE_INFILTRATION_QUESTS;
     }
     
     /// <inheritdoc/>
-    protected override string RewardFlavour => "Karazhan has been captured. Dalaran's archivists scour its halls for arcane resources.";
+    protected override string RewardFlavour => "The Monastery has been corrupted and plundered. A secret demon gate has now been formed inside.";
 
     /// <inheritdoc/>
-    protected override string RewardDescription => "Learn to research three powerful upgrades at Karazhan.";
+    protected override string RewardDescription => "Unlock the Monastery as a troop production building and 500 gold. Completing any of the three infiltration quest will enable the Alterac Portal to be opened.";
 
     /// <inheritdoc/>
-    protected override void OnAdd(Faction whichFaction)
+    protected override void OnComplete(Faction whichFaction)
     {
-      whichFaction.ModObjectLimit(Constants.UPGRADE_R020_RAIN_AN_AMALGAM_DALARAN_KARAZHAN, Faction.UNLIMITED);
-      whichFaction.ModObjectLimit(Constants.UPGRADE_R03M_METHODS_OF_NEGATION_DALARAN_KARAZHAN, Faction.UNLIMITED);
-      whichFaction.ModObjectLimit(Constants.UPGRADE_R01B_A_TREATISE_ON_BARRIERS_DALARAN_KARAZHAN, Faction.UNLIMITED);
+      whichFaction.Gold += 500;
     }
-  }
 }
