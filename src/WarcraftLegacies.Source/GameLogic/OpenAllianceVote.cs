@@ -27,9 +27,9 @@ namespace WarcraftLegacies.Source.GameLogic
     {
       DialogSetMessage(VoteDialogue, "Activate open alliances?");
       var timer = CreateTimer();
-      TimerStart(timer, 63, false, StartVote);
+      TimerStart(timer, 49, false, StartVote);
       var concludeTimer = CreateTimer();
-      TimerStart(concludeTimer, 72, false, ConcludeVote);
+      TimerStart(concludeTimer, 59, false, ConcludeVote);
     }
     
     private static void ConcludeVote()

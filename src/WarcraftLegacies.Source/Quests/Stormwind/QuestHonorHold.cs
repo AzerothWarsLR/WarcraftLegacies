@@ -34,7 +34,7 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
-      "Control of all units at Honor Hold";
+      "Control of all units at Honor Hold and the ability to train Siege Towers";
 
     /// <inheritdoc/>
     protected override void OnFail(Faction completingFaction)
