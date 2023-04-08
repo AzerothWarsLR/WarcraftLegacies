@@ -57,6 +57,7 @@ Your primary objective is to summon the great host of the Burning Legion. Invade
       Legion.ModObjectLimit(FourCC("n0DO"), 12); //Doom Guard
       Legion.ModObjectLimit(FourCC("n04O"), 6); //Doom lord
       Legion.ModObjectLimit(FourCC("n04L"), 6); //Infernal Juggernaut
+      Legion.ModObjectLimit(FourCC("o04P"), 6); //Nathrezim
       Legion.ModObjectLimit(FourCC("ninf"), 8); //Infernal
       Legion.ModObjectLimit(FourCC("n04H"), Faction.UNLIMITED); //Fel Guard
       Legion.ModObjectLimit(FourCC("n04U"), 4); //Dragon
@@ -83,6 +84,7 @@ Your primary objective is to summon the great host of the Burning Legion. Invade
       Legion.ModObjectLimit(FourCC("R02C"), Faction.UNLIMITED); //Acute Sensors
       Legion.ModObjectLimit(FourCC("R02A"), Faction.UNLIMITED); //Chaos Infusion
       Legion.ModObjectLimit(FourCC("R028"), Faction.UNLIMITED); //Shadow Priest Adept Training
+      Legion.ModObjectLimit(FourCC("R042"), Faction.UNLIMITED); //Nathrezim Adept Training
       Legion.ModObjectLimit(FourCC("R027"), Faction.UNLIMITED); //Warlock Adept Training
       Legion.ModObjectLimit(FourCC("R01Y"), Faction.UNLIMITED); //Astral Walk
       Legion.ModObjectLimit(FourCC("R04G"), Faction.UNLIMITED); //Improved Carrion Swarm
