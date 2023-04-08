@@ -14,7 +14,7 @@ namespace WarcraftLegacies.Source.Quests.Legion
       AddObjective(new ObjectiveControlCapital(monastery, false));
       ResearchId = Constants.UPGRADE_R04H_QUEST_COMPLETED_ANY_OF_THE_THREE_INFILTRATION_QUESTS;
     }
-    
+
     /// <inheritdoc/>
     protected override string RewardFlavour => "The Monastery has been corrupted and plundered. A secret demon gate has now been formed inside.";
 
@@ -26,4 +26,5 @@ namespace WarcraftLegacies.Source.Quests.Legion
     {
       whichFaction.Gold += 500;
     }
+  }
 }

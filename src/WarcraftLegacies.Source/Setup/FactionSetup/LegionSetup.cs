@@ -92,7 +92,6 @@ Your primary objective is to summon the great host of the Burning Legion. Invade
       Legion.ModObjectLimit(FourCC("R040"), Faction.UNLIMITED); //Flying horrors
       Legion.ModObjectLimit(Constants.UPGRADE_R096_REMATERIALIZATION_LEGION, 1);
       Legion.ModObjectLimit(Constants.UPGRADE_R04R_FORTIFIED_HULLS_UNIVERSAL_UPGRADE, 1);
-      Legion.SetObjectLevel(Constants.UPGRADE_R04R_FORTIFIED_HULLS_UNIVERSAL_UPGRADE, 1);
 
       //Heroes
       Legion.ModObjectLimit(FourCC("U00L"), 1); //Anetheron

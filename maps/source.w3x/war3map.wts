@@ -8792,7 +8792,7 @@ Increases the hit points of Silver Hand Squires by 200.
 }
 
 STRING 1466
-// Abilities: A05I (Poison Claws), EditorSuffix (Editor Suffix)
+// Units: o04P (Nathrezim Infiltrator), EditorSuffix (Name - Editor Suffix)
 {
 (legion)
 }
@@ -12487,7 +12487,7 @@ Upgrade to Voidlord Demon Gate
 }
 
 STRING 2082
-// Upgrades: R03Z (Magic Sentry), EditorSuffix (Editor Suffix)
+// Abilities: A05I (Poison Claws), EditorSuffix (Editor Suffix)
 {
 (legion)
 }
@@ -12989,7 +12989,7 @@ A
 }
 
 STRING 2166
-// Upgrades: R040 (Magic Sentry), EditorSuffix (Editor Suffix)
+// Upgrades: R03Z (Magic Sentry), EditorSuffix (Editor Suffix)
 {
 (legion)
 }
@@ -13001,7 +13001,7 @@ Steadfast Rangers of the Kul'tiras Navy.|n|cfff5962dAbilities:|R Bombing Run, Fi
 }
 
 STRING 2168
-// Upgrades: R08H (Iron Plating,Steel Plating,Mithril Plating), EditorSuffix (Editor Suffix)
+// Upgrades: R040 (Magic Sentry), EditorSuffix (Editor Suffix)
 {
 (legion)
 }
@@ -36637,7 +36637,7 @@ Summons an Owl Scout, which can be used to scout.|nCan see invisible units. |nLa
 }
 
 STRING 6107
-// Units: o04P (Nathrezim Infiltrator), EditorSuffix (Name - Editor Suffix)
+// Abilities: A08B (Burning Oil), EditorSuffix (Editor Suffix)
 {
 (Fel Horde)
 }
@@ -66648,7 +66648,7 @@ Every attack that does damage to an enemy unit or building will yield some resou
 }
 
 STRING 11105
-// Abilities: A08B (Burning Oil), EditorSuffix (Editor Suffix)
+// Upgrades: Robf (Burning Oil), EditorSuffix (Editor Suffix)
 {
 (Fel Horde)
 }
@@ -83723,7 +83723,7 @@ Improves Grunts by increasing their hit points by 225 and attack damage by 3.
 }
 
 STRING 13949
-// Upgrades: Robf (Burning Oil), EditorSuffix (Editor Suffix)
+// Upgrades: R069 (Chaos), EditorSuffix (Editor Suffix)
 {
 (Fel Horde)
 }
@@ -85457,7 +85457,7 @@ Quest Completed: To Tame a Land
 }
 
 STRING 14238
-// Upgrades: R069 (Chaos), EditorSuffix (Editor Suffix)
+// Upgrades: R066 (Burning Oil), EditorSuffix (Editor Suffix)
 {
 (Fel Horde)
 }
@@ -85481,7 +85481,7 @@ Turn 6 has passed
 }
 
 STRING 14242
-// Upgrades: R066 (Burning Oil), EditorSuffix (Editor Suffix)
+// Upgrades: R05Z (Chaos), EditorSuffix (Editor Suffix)
 {
 (Fel Horde)
 }
@@ -85583,7 +85583,7 @@ Stormwind exists
 }
 
 STRING 14259
-// Upgrades: R05Z (Chaos), EditorSuffix (Editor Suffix)
+// Upgrades: R03I (Shaman Adept Training,Shaman Master Training), EditorSuffix (Editor Suffix)
 {
 (Fel Horde)
 }
@@ -86806,7 +86806,7 @@ Alows Archers, Huntresses, Moonhunters, Priestesses, and Hippogryph Riders to be
 }
 
 STRING 14463
-// Upgrades: R03I (Shaman Adept Training,Shaman Master Training), EditorSuffix (Editor Suffix)
+// Upgrades: R036 (Pillage), EditorSuffix (Editor Suffix)
 {
 (Fel Horde)
 }
@@ -86992,7 +86992,7 @@ Q
 }
 
 STRING 14494
-// Upgrades: R036 (Pillage), EditorSuffix (Editor Suffix)
+// Upgrades: R024 (Necromancer Adept Training,Necromancer Master Training), EditorSuffix (Editor Suffix)
 {
 (Fel Horde)
 }
@@ -87268,7 +87268,7 @@ Quest Completed: The Wandering Brewmaster
 }
 
 STRING 14540
-// Upgrades: R024 (Necromancer Adept Training,Necromancer Master Training), EditorSuffix (Editor Suffix)
+// Upgrades: R011 (Chaos), EditorSuffix (Editor Suffix)
 {
 (Fel Horde)
 }
@@ -87713,7 +87713,7 @@ Quest Completed: Return to the Fold
 }
 
 STRING 14614
-// Upgrades: R011 (Chaos), EditorSuffix (Editor Suffix)
+// Upgrades: R00Y (Magic Sentry), EditorSuffix (Editor Suffix)
 {
 (Fel Horde)
 }
@@ -88247,7 +88247,7 @@ Quest Completed: Sapphiron
 }
 
 STRING 14703
-// Upgrades: R00Y (Magic Sentry), EditorSuffix (Editor Suffix)
+// Upgrades: R00O (Ensnare), EditorSuffix (Editor Suffix)
 {
 (Fel Horde)
 }
@@ -89297,7 +89297,7 @@ Quest Completed: Secrets of Karazhan
 }
 
 STRING 14878
-// Upgrades: R00O (Ensnare), EditorSuffix (Editor Suffix)
+// Upgrades: R00M (Shaman Adept Training,Shaman Master Training), EditorSuffix (Editor Suffix)
 {
 (Fel Horde)
 }
@@ -89375,7 +89375,7 @@ Causes Riflemen to deal <A0F4,DataB1,%>% increased damage to units with Heavy ar
 }
 
 STRING 14891
-// Upgrades: R00M (Shaman Adept Training,Shaman Master Training), EditorSuffix (Editor Suffix)
+// Upgrades: R041 (Chaos), EditorSuffix (Editor Suffix)
 {
 (Fel Horde)
 }
@@ -89717,7 +89717,7 @@ C
 }
 
 STRING 14948
-// Upgrades: R041 (Chaos), EditorSuffix (Editor Suffix)
+// Upgrades: R03G (Chaos), EditorSuffix (Editor Suffix)
 {
 (Fel Horde)
 }
@@ -89789,7 +89789,7 @@ Improves the Swig ability by causing it to restore <A09J,DataA2> hit points.
 }
 
 STRING 14960
-// Upgrades: R03G (Chaos), EditorSuffix (Editor Suffix)
+// Upgrades: R07N (Necromancer Adept Training,Necromancer Master Training), EditorSuffix (Editor Suffix)
 {
 (Fel Horde)
 }
@@ -91704,7 +91704,7 @@ Primary defensive structure. |n|cfff5962dCan learn:|R Magic Sentry |n|n|cffffcc0
 }
 
 STRING 15287
-// Upgrades: R07N (Necromancer Adept Training,Necromancer Master Training), EditorSuffix (Editor Suffix)
+// Upgrades: R098 (Burning Oil), EditorSuffix (Editor Suffix)
 {
 (Fel Horde)
 }
@@ -123004,16 +123004,16 @@ STRING 20502
 Q
 }
 
+STRING 20503
+// Upgrades: R08H (Iron Plating,Steel Plating,Mithril Plating), EditorSuffix (Editor Suffix)
+{
+(legion)
+}
+
 STRING 20504
 // Upgrades: R03O (Animal War Training), Hotkey (Hotkey)
 {
 E
-}
-
-STRING 20505
-// Upgrades: R098 (Burning Oil), EditorSuffix (Editor Suffix)
-{
-(Fel Horde)
 }
 
 STRING 20507

@@ -26,4 +26,5 @@ namespace WarcraftLegacies.Source.Quests.Legion
     {
       whichFaction.Gold += 500;
     }
+  }
 }
