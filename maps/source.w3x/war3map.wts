@@ -4149,12 +4149,6 @@ STRING 692
 Train Infernal
 }
 
-STRING 693
-// Units: ninf (Infernal), Ubertip (Tooltip - Extended)
-{
-Forged demon cloaked in flames of fel magic.|n|cfff5962dAbilities:|R Spell Immunity, Permanent Immoliation, Resistant Skin|n|n|cff99b4d1Can only train 12.|r|n|cffffcc00Attacks land units.|r
-}
-
 STRING 694
 // Units: ninc (Burning Archer), EditorSuffix (Name - Editor Suffix)
 {
@@ -7952,6 +7946,12 @@ STRING 1325
 Z
 }
 
+STRING 1326
+// Units: ninf (Infernal), Ubertip (Tooltip - Extended)
+{
+Forged demon cloaked in flames of fel magic.|n|cfff5962dAbilities:|R Spell Immunity, Permanent Immoliation, Resistant Skin|n|n|cff99b4d1Can only train 8.|r|n|cffffcc00Attacks land units.|r
+}
+
 STRING 1327
 // Units: Haah (The Fallen Guardian), Propernames (Proper Names)
 {
@@ -10117,12 +10117,6 @@ STRING 1687
 Warrior Hero, excels at melee combat.|n|cfff5962dAbilities:|r Evasion|n|cfff5962dCan Learn:|R Impale, Demonic Shield, Vampiric Aura, Corrupted Lightning|n|n|cffffcc00Attacks land units.|R
 }
 
-STRING 1688
-// Units: n0DO (Doom Guard), Ubertip (Tooltip - Extended)
-{
-Elite fighters of the Legion.|n|cfff5962dAbilities:|R |n|n|cff99b4d1Can only summon 12.|r|n|cffffcc00Attacks land and air units.|r
-}
-
 STRING 1689
 // Units: h04C (Pikeman), EditorSuffix (Name - Editor Suffix)
 {
@@ -12025,7 +12019,7 @@ Upgrade to Covenant of Witch Demon Gate
 }
 
 STRING 2006
-// Upgrades: R096 (Defend), EditorSuffix (Editor Suffix)
+// Units: U00L (Envoy of Archimonde), EditorSuffix (Name - Editor Suffix)
 {
 (Legion)
 }
@@ -12067,7 +12061,7 @@ STRING 2012
 }
 
 STRING 2013
-// Units: U00L (Envoy of Archimonde), EditorSuffix (Name - Editor Suffix)
+// Units: U004 (The Deceiver), EditorSuffix (Name - Editor Suffix)
 {
 (Legion)
 }
@@ -12553,7 +12547,7 @@ Nether Pit
 }
 
 STRING 2094
-// Units: U004 (The Deceiver), EditorSuffix (Name - Editor Suffix)
+// Units: n03L (Sky Barge), EditorSuffix (Name - Editor Suffix)
 {
 (Legion)
 }
@@ -12565,7 +12559,7 @@ D
 }
 
 STRING 2096
-// Units: n03L (Sky Barge), EditorSuffix (Name - Editor Suffix)
+// Units: U023 (The Soulflayer), EditorSuffix (Name - Editor Suffix)
 {
 (Legion)
 }
@@ -12905,7 +12899,7 @@ Menethil Harbour (10gold/min)
 }
 
 STRING 2153
-// Units: U023 (The Soulflayer), EditorSuffix (Name - Editor Suffix)
+// Units: u01U (Control Point Defender), EditorSuffix (Name - Editor Suffix)
 {
 (Legion)
 }
@@ -12965,7 +12959,7 @@ Fire Elemental
 }
 
 STRING 2163
-// Units: u01U (Control Point Defender), EditorSuffix (Name - Editor Suffix)
+// Units: n0DO (Doom Guard), EditorSuffix (Name - Editor Suffix)
 {
 (Legion)
 }
@@ -14254,7 +14248,7 @@ Northern Highlands (10gold/min)
 }
 
 STRING 2378
-// Units: n0DO (Doom Guard), EditorSuffix (Name - Editor Suffix)
+// Abilities: Anh2 (Heal), EditorSuffix (Editor Suffix)
 {
 (Legion)
 }
@@ -14302,7 +14296,7 @@ STRING 2385
 }
 
 STRING 2386
-// Abilities: Anh2 (Heal), EditorSuffix (Editor Suffix)
+// Abilities: ACmf (Mana Shield), EditorSuffix (Editor Suffix)
 {
 (Legion)
 }
@@ -14369,7 +14363,7 @@ STRING 2396
 }
 
 STRING 2397
-// Abilities: ACmf (Mana Shield), EditorSuffix (Editor Suffix)
+// Abilities: ACdm (Abolish Magic), EditorSuffix (Editor Suffix)
 {
 (Legion)
 }
@@ -14405,7 +14399,7 @@ STRING 2402
 }
 
 STRING 2403
-// Abilities: ACdm (Abolish Magic), EditorSuffix (Editor Suffix)
+// Abilities: ACcs (Curse), EditorSuffix (Editor Suffix)
 {
 (Legion)
 }
@@ -14429,7 +14423,7 @@ Manipulative demon of the nether. |n|cfff5962dAbilities:|R Shadow Infusion|n|cff
 }
 
 STRING 2407
-// Abilities: ACcs (Curse), EditorSuffix (Editor Suffix)
+// Abilities: A0AZ (Paralyse), EditorSuffix (Editor Suffix)
 {
 (Legion)
 }
@@ -14483,7 +14477,7 @@ Legion Bastion
 }
 
 STRING 2416
-// Abilities: A0AZ (Paralyse), EditorSuffix (Editor Suffix)
+// Abilities: A07G (Trueshot Aura), EditorSuffix (Editor Suffix)
 {
 (Legion)
 }
@@ -14717,7 +14711,7 @@ Abyssal
 }
 
 STRING 2455
-// Abilities: A07G (Trueshot Aura), EditorSuffix (Editor Suffix)
+// Abilities: A08A (Inferno), EditorSuffix (Editor Suffix)
 {
 (Legion)
 }
@@ -17253,7 +17247,7 @@ Flying bastion of Legion's reign.|n|cfff5962dAbilities:|R Curse Aura, Multishot 
 }
 
 STRING 2878
-// Abilities: A08A (Inferno), EditorSuffix (Editor Suffix)
+// Buffs/Effects: B022 (), EditorSuffix (Editor Suffix)
 {
 (Legion)
 }
@@ -20141,6 +20135,12 @@ STRING 3358
 Q
 }
 
+STRING 3359
+// Units: ndmg (Demon Gate), Ubertip (Tooltip - Extended)
+{
+Gateway that allows the Legion to bring its greater demons into Azeroth.|r|n|cff99b4d1Can only build 6.|r|n|cfff5962dTrains:|R Doom Guard, Doom Lord, Nether Dragon
+}
+
 STRING 3360
 // Units: H00Q (King of Quel`Thalas), Tip (Tooltip - Basic)
 {
@@ -20628,7 +20628,7 @@ Basic worker unit.|n|cfff5962dAbilities:|r Repair, Gather|n|cfff5962dCan Learn:|
 }
 
 STRING 3441
-// Buffs/Effects: B022 (), EditorSuffix (Editor Suffix)
+// Buffs/Effects: B040 (), EditorSuffix (Editor Suffix)
 {
 (Legion)
 }
@@ -20802,7 +20802,7 @@ Improved Trueshot Aura
 }
 
 STRING 3470
-// Buffs/Effects: B040 (), EditorSuffix (Editor Suffix)
+// Buffs/Effects: B0AK (), EditorSuffix (Editor Suffix)
 {
 (Legion)
 }
@@ -22271,7 +22271,7 @@ Revive Necromancer
 }
 
 STRING 3715
-// Buffs/Effects: B0AK (), EditorSuffix (Editor Suffix)
+// Upgrades: R04G (Magic Sentry), EditorSuffix (Editor Suffix)
 {
 (Legion)
 }
@@ -27127,7 +27127,7 @@ Agave
 }
 
 STRING 4524
-// Upgrades: R04G (Magic Sentry), EditorSuffix (Editor Suffix)
+// Upgrades: R028 (Banshee Adept Training,Banshee Master Training), EditorSuffix (Editor Suffix)
 {
 (Legion)
 }
@@ -29755,7 +29755,7 @@ STRING 4961
 }
 
 STRING 4962
-// Upgrades: R028 (Banshee Adept Training,Banshee Master Training), EditorSuffix (Editor Suffix)
+// Upgrades: R027 (Necromancer Adept Training,Necromancer Master Training), EditorSuffix (Editor Suffix)
 {
 (Legion)
 }
@@ -37975,7 +37975,7 @@ Calls down a storm of lightning to strike enemy units for 40 damage in a medium 
 }
 
 STRING 6332
-// Upgrades: R027 (Necromancer Adept Training,Necromancer Master Training), EditorSuffix (Editor Suffix)
+// Upgrades: R01Y (Magic Sentry), EditorSuffix (Editor Suffix)
 {
 (Legion)
 }
@@ -38281,7 +38281,7 @@ Life Drain
 }
 
 STRING 6383
-// Upgrades: R01Y (Magic Sentry), EditorSuffix (Editor Suffix)
+// Upgrades: R003 (Cannibalize), EditorSuffix (Editor Suffix)
 {
 (Legion)
 }
@@ -38443,7 +38443,7 @@ STRING 6409
 }
 
 STRING 6410
-// Upgrades: R003 (Cannibalize), EditorSuffix (Editor Suffix)
+// Upgrades: R096 (Defend), EditorSuffix (Editor Suffix)
 {
 (Legion)
 }
@@ -85972,12 +85972,6 @@ STRING 14325
 Summon Water Elemental
 }
 
-STRING 14326
-// Units: u006 (Summoning Circle), Ubertip (Tooltip - Extended)
-{
-Summoning site for the Void demons of the Burning Legion.|n|cfff5962dTrains:|R Eredar Summoner, Succubus|n|cfff5962dResearches:|R Eredar Summoner Training, Succubus Training
-}
-
 STRING 14327
 // Units: n06C (Moonhunter), Casterupgradetip (Caster Upgrade Tips)
 {
@@ -94183,12 +94177,6 @@ STRING 15702
 // Units: n0BC (Control Point Defender), Ubertip (Tooltip - Extended)
 {
 Tower infused with the magic of the Sunwell.|n|cfff5962dCan learn:|R Magic Sentry|n|n|cffffcc00Attacks land and air units.|r
-}
-
-STRING 15703
-// Units: ndmg (Demon Gate), Ubertip (Tooltip - Extended)
-{
-Gateway that allows the Legion to bring its greater demons into Azeroth.|n|cfff5962dTrains:|R Greater Doom Guard, Infernal, Nether Dragon
 }
 
 STRING 15704
@@ -106366,6 +106354,12 @@ STRING 17732
 Mainstay soldier of the Legion.|n|cfff5962dAbilities:|R Combat Experience, War Plating, Charge|n|n|cffffcc00Attacks land units.|r
 }
 
+STRING 17733
+// Units: u006 (Summoning Circle), Ubertip (Tooltip - Extended)
+{
+Summoning site for the Void demons of the Burning Legion.|r|n|cff99b4d1Can only build 2 before the Legion has been summoned|n|cfff5962dTrains:|R Eredar Summoner, Succubus|n|cfff5962dResearches:|R Eredar Summoner Training, Succubus Training
+}
+
 STRING 17734
 // Abilities: ANrc (Rain of Chaos), Researchubertip (Tooltip - Learn - Extended)
 {
@@ -107692,6 +107686,12 @@ STRING 17954
 // Abilities: A0UI (Siege Form), Ubertip (Tooltip - Normal - Extended)
 {
 Immobilizes the Azerite Siege Engine to grant it a powerful ranged attack.
+}
+
+STRING 17955
+// Units: n0DO (Doom Guard), Ubertip (Tooltip - Extended)
+{
+Elite fighters of the Legion.|n|cfff5962dAbilities: |RSummon Fel Hounds|n|n|cff99b4d1Can only summon 12.|r|n|cffffcc00Attacks land and air units.|r
 }
 
 STRING 17956
@@ -111285,7 +111285,7 @@ Q
 }
 
 STRING 18554
-// Upgrades: Rume (Unholy Strength,Improved Unholy Strength,Advanced Unholy Strength), Hotkey (Hotkey)
+// Abilities: A123 (Summon Fel Hounds), Hotkey (Hotkey - Normal)
 {
 Q
 }
@@ -111766,7 +111766,7 @@ Learn Herald of Destruction
 }
 
 STRING 18634
-// Upgrades: Rume (Unholy Strength,Improved Unholy Strength,Advanced Unholy Strength), Hotkey (Hotkey)
+// Abilities: A123 (Summon Fel Hounds), Researchhotkey (Hotkey - Learn)
 {
 Q
 }
@@ -111796,7 +111796,7 @@ Q
 }
 
 STRING 18639
-// Upgrades: Rome (Steel Melee Weapons,Thorium Melee Weapons,Arcanite Melee Weapons), Hotkey (Hotkey)
+// Upgrades: Rume (Unholy Strength,Improved Unholy Strength,Advanced Unholy Strength), Hotkey (Hotkey)
 {
 Q
 }
@@ -113176,7 +113176,7 @@ STRING 18868
 }
 
 STRING 18869
-// Upgrades: Rome (Steel Melee Weapons,Thorium Melee Weapons,Arcanite Melee Weapons), Hotkey (Hotkey)
+// Upgrades: Rume (Unholy Strength,Improved Unholy Strength,Advanced Unholy Strength), Hotkey (Hotkey)
 {
 Q
 }
@@ -114970,7 +114970,7 @@ STRING 19167
 }
 
 STRING 19168
-// Upgrades: Rhme (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Hotkey (Hotkey)
+// Upgrades: Rome (Steel Melee Weapons,Thorium Melee Weapons,Arcanite Melee Weapons), Hotkey (Hotkey)
 {
 Q
 }
@@ -115063,6 +115063,12 @@ STRING 19183
 // Abilities: A0BZ (Critical Strike), EditorSuffix (Editor Suffix)
 {
 (Draenei)
+}
+
+STRING 19184
+// Units: h0C2 (Windrunner Spire), EditorSuffix (Name - Editor Suffix)
+{
+(Quelthalas)
 }
 
 STRING 19185
@@ -115575,6 +115581,12 @@ STRING 19269
 (sentinel) 2
 }
 
+STRING 19270
+// Units: h0C2 (Windrunner Spire), Name (Name)
+{
+Windrunner Spire
+}
+
 STRING 19271
 // Abilities: A101 (Army of Light Golem summon), EditorSuffix (Editor Suffix)
 {
@@ -115633,6 +115645,12 @@ STRING 19280
 // Units: e01P (Coral of Life), Tip (Tooltip - Basic)
 {
 Build Coral of Life
+}
+
+STRING 19281
+// Abilities: A123 (Summon Fel Hounds), EditorSuffix (Editor Suffix)
+{
+(Doom guard)
 }
 
 STRING 19282
@@ -116009,7 +116027,7 @@ R
 }
 
 STRING 19344
-// Upgrades: Rhme (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Hotkey (Hotkey)
+// Upgrades: Rome (Steel Melee Weapons,Thorium Melee Weapons,Arcanite Melee Weapons), Hotkey (Hotkey)
 {
 Q
 }
@@ -118739,7 +118757,7 @@ Opens a two-way portal to the target location within a range of <A00D,Rng3>. The
 }
 
 STRING 19799
-// Upgrades: Resw (Strength of the Wild,Improved Strength of the Wild,Advanced Strength of the Wil), Hotkey (Hotkey)
+// Upgrades: Rhme (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Hotkey (Hotkey)
 {
 Q
 }
@@ -120257,7 +120275,7 @@ STRING 20051
 }
 
 STRING 20052
-// Upgrades: Resw (Strength of the Wild,Improved Strength of the Wild,Advanced Strength of the Wil), Hotkey (Hotkey)
+// Upgrades: Rhme (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Hotkey (Hotkey)
 {
 Q
 }
@@ -121037,13 +121055,13 @@ Fires an enchanted bolt at every enemy unit in the target area, dealing <A0GL,Da
 }
 
 STRING 20182
-// Upgrades: Resm (Strength of the Moon,Improved Strength of the Moon,Advanced Strength of the Moo), Hotkey (Hotkey)
+// Upgrades: Resw (Strength of the Wild,Improved Strength of the Wild,Advanced Strength of the Wil), Hotkey (Hotkey)
 {
 Q
 }
 
 STRING 20183
-// Upgrades: Resm (Strength of the Moon,Improved Strength of the Moon,Advanced Strength of the Moo), Hotkey (Hotkey)
+// Upgrades: Resw (Strength of the Wild,Improved Strength of the Wild,Advanced Strength of the Wil), Hotkey (Hotkey)
 {
 Q
 }
@@ -122261,13 +122279,13 @@ Trade-house
 }
 
 STRING 20386
-// Upgrades: R020 (Defend), Hotkey (Hotkey)
+// Upgrades: Resm (Strength of the Moon,Improved Strength of the Moon,Advanced Strength of the Moo), Hotkey (Hotkey)
 {
 Q
 }
 
 STRING 20387
-// Upgrades: R014 (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
+// Upgrades: Resm (Strength of the Moon,Improved Strength of the Moon,Advanced Strength of the Moo), Hotkey (Hotkey)
 {
 Q
 }
@@ -122638,6 +122656,12 @@ STRING 20448
 R
 }
 
+STRING 20449
+// Abilities: A123 (Summon Fel Hounds), Researchubertip (Tooltip - Learn - Extended)
+{
+Summons Fel Hounds to attack the Hero's enemies. |nLasts 40 seconds.|r |n|n|cffffcc00Level 1|r - Summons <A0X5,DataA1> Fel Hounds|n|cffffcc00Level 2|r - Summons <A0X5,DataA2> Fel Hounds.|n|cffffcc00Level 3|r - Summons <A0X5,DataA3> Fel Hounds.|n|cffffcc00Level 4|r - Summons <A0X5,DataA4> Fel Hounds
+}
+
 STRING 20450
 // Units: n07B (Queen of Suffering Demon Gate), Ubertip (Tooltip - Extended)
 {
@@ -122879,6 +122903,78 @@ Teleports 60 of the player's nearby units, including the caster, to a ground uni
 }
 
 STRING 20490
+// Upgrades: R020 (Defend), Hotkey (Hotkey)
+{
+Q
+}
+
+STRING 20491
+// Abilities: A123 (Summon Fel Hounds), Tip (Tooltip - Normal)
+{
+Summon Fel Hound - [|cffffcc00Level 4|r]
+}
+
+STRING 20492
+// Abilities: A123 (Summon Fel Hounds), Ubertip (Tooltip - Normal - Extended)
+{
+Summons 2 Fel Hounds with Mana Burn to attack the summoner's enemies. |n|n|cffffcc00Attacks land units.|r
+}
+
+STRING 20493
+// Abilities: A123 (Summon Fel Hounds), Ubertip (Tooltip - Normal - Extended)
+{
+Summons <A0X5,DataA2> Fel Hounds with Mana Burn to attack the Hero's enemies. |n|n|cffffcc00Attacks land units.|r
+}
+
+STRING 20494
+// Abilities: A123 (Summon Fel Hounds), Ubertip (Tooltip - Normal - Extended)
+{
+Summons <A0X5,DataA3> Fel Hounds with Mana Burn to attack the Hero's enemies. |n|n|cffffcc00Attacks land units.|r
+}
+
+STRING 20495
+// Abilities: A123 (Summon Fel Hounds), Ubertip (Tooltip - Normal - Extended)
+{
+Summons <A0X4,DataA1> Fel Hounds with Mana Burn to attack the Hero's enemies. |n|n|cffffcc00Attacks land units.|r
+}
+
+STRING 20496
+// Abilities: A123 (Summon Fel Hounds), Tip (Tooltip - Normal)
+{
+Summon Fel Hound
+}
+
+STRING 20497
+// Abilities: A123 (Summon Fel Hounds), Tip (Tooltip - Normal)
+{
+Summon Fel Hound - [|cffffcc00Level 2|r]
+}
+
+STRING 20498
+// Abilities: A123 (Summon Fel Hounds), Tip (Tooltip - Normal)
+{
+Summon Fel Hound - [|cffffcc00Level 3|r]
+}
+
+STRING 20499
+// Abilities: A123 (Summon Fel Hounds), Researchtip (Tooltip - Learn)
+{
+Learn Summon Fel Hounds - [|cffffcc00Level %d|r]
+}
+
+STRING 20500
+// Abilities: A123 (Summon Fel Hounds), Name (Name)
+{
+Summon Fel Hounds
+}
+
+STRING 20501
+// Upgrades: R014 (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
+{
+Q
+}
+
+STRING 20502
 // Upgrades: R00X (Magic Sentry), Hotkey (Hotkey)
 {
 Q

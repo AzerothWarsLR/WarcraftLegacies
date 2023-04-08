@@ -21,6 +21,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
     public Capital CapitalPalace { get; }
     public Capital Stratholme { get; }
     public Capital TyrsHand { get; }
+    public Capital Monastery { get; }
 
     /// <summary>
     /// Sets up all Lordaeron <see cref="Legend"/>s.
@@ -115,7 +116,15 @@ namespace WarcraftLegacies.Source.Setup.Legends
       {
         UnitType = Constants.UNIT_HART_CROWN_PRINCE_OF_LORDAERON_LORDAERON
       };
+
+      Monastery = new Capital
+      {
+        Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_H00T_SCARLET_MONASTERY_SCARLET_LORDAERON),
+        Capturable = true
+      };
     }
+
+
 
     public void RegisterLegends()
     {
@@ -128,6 +137,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
       CapitalManager.Register(CapitalPalace);
       CapitalManager.Register(Stratholme);
       CapitalManager.Register(TyrsHand);
+      CapitalManager.Register(Monastery);
     }
   }
 }

@@ -17,6 +17,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
     public LegendaryHero Kalecgos { get; }
     public LegendaryHero Aegwynn { get; }
     public Capital Dalaran { get; }
+    public Capital Shadowfang { get; }
 
     /// <summary>
     /// Sets up all Dalaran <see cref="Legend"/>s.
@@ -64,6 +65,12 @@ namespace WarcraftLegacies.Source.Setup.Legends
         DeathMessage =
           "Archmage Antonidas has been cut down, his vast knowledge forever lost with his death. The mages of Dalaran have lost their brightest mind."
       };
+
+      Shadowfang = new Capital
+      {
+        Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_H058_SHADOWFANG_KEEP_DALARAN_OTHER),
+        Capturable = true
+      };
     }
     
     public void RegisterLegends()
@@ -74,6 +81,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
       LegendaryHeroManager.Register(Medivh);
       LegendaryHeroManager.Register(Aegwynn);
       CapitalManager.Register(Dalaran);
+      CapitalManager.Register(Shadowfang);
     }
   }
 }

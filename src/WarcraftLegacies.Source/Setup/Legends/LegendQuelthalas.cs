@@ -18,6 +18,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
     public LegendaryHero Pathaleon { get; }
     public Capital Silvermoon { get; }
     public Capital Sunwell { get; }
+    public Capital Spire { get; }
 
     public LegendQuelthalas(PreplacedUnitSystem preplacedUnitSystem)
     {
@@ -92,6 +93,12 @@ namespace WarcraftLegacies.Source.Setup.Legends
         DeathMessage =
           "Kil'jaeden the Deceiver has been annihilated, but it is too late for the Blood Elves, who will continue to live and die with demonic taint coursing through their veins."
       };
+
+      Spire = new Capital
+      {
+        Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_H0C2),
+        Capturable = true
+      };
     }
     
     public void RegisterLegends()
@@ -106,6 +113,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
       LegendaryHeroManager.Register(Pathaleon);
       CapitalManager.Register(Silvermoon);
       CapitalManager.Register(Sunwell);
+      CapitalManager.Register(Spire);
     }
   }
 }
