@@ -4828,12 +4828,6 @@ STRING 805
 Quest Completed: The Drakkari Fortress
 }
 
-STRING 806
-// Units: n04Q (Nether Pit), Ubertip (Tooltip - Extended)
-{
-Summoning site for minor demons.|n|cfff5962dTrains:|R Fel Guard, Burning Archer, Infernal|n|cfff5962dResearches:|R War Plating
-}
-
 STRING 807
 // Abilities: ANwk (Wind Walk), Ubertip (Tooltip - Normal - Extended)
 {
@@ -123014,6 +123008,12 @@ STRING 20504
 // Upgrades: R03O (Animal War Training), Hotkey (Hotkey)
 {
 E
+}
+
+STRING 20505
+// Units: n04Q (Nether Pit), Ubertip (Tooltip - Extended)
+{
+Summoning site for minor demons.|r|n|cff99b4d1Can only build 2 before the Legion has been summoned|n|cfff5962dTrains:|R Fel Guard, Burning Archer, Infernal|n|cfff5962dResearches:|R War Plating
 }
 
 STRING 20507
