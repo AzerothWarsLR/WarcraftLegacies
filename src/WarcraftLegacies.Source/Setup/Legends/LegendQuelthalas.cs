@@ -96,7 +96,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
 
       Spire = new Capital
       {
-        Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_H0C2),
+        Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_H0C2_WINDRUNNER_SPIRE_QUELTHALAS),
         Capturable = true
       };
     }
