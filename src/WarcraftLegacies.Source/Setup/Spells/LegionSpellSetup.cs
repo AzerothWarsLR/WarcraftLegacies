@@ -61,6 +61,12 @@ namespace WarcraftLegacies.Source.Setup.Spells
         TargetLocation = new Point(21606, -28467),
         Color = new Color(255, 50, 50, 255)
       });
+
+      SpellSystem.Register(new InstantKill(Constants.ABILITY_A126_DESTROY_SHARED)
+      {
+        Target = InstantKill.KillTarget.Self
+      });
+        
     }
   }
 }

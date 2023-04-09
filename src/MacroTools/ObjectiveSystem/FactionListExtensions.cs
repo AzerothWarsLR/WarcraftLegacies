@@ -21,7 +21,7 @@ namespace MacroTools.ObjectiveSystem
       {
         if (faction.Player == null)
         {
-          return null;
+          continue;
         }
         else if (faction.Player == Player(PLAYER_NEUTRAL_PASSIVE) || faction.Player == Player(PLAYER_NEUTRAL_AGGRESSIVE))
         {

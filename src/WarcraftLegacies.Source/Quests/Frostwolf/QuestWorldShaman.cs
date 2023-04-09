@@ -52,7 +52,7 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
       _thrall.Unit?.SetName("World-Shaman")
         .AddHeroAttributes(0, 10, 0)
         .AddExperience(2000);
-      completingFaction.AddPower(new MaelstromWeapon(0.05f, 100)
+      completingFaction.AddPower(new MaelstromWeapon(0.12f, 100)
       {
         Effect = @"Doodads\Cinematic\Lightningbolt\Lightningbolt",
         ValidUnitTypes = new[]

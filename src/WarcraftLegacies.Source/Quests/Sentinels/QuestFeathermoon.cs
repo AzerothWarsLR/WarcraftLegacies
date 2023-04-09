@@ -3,7 +3,6 @@ using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.FactionBased;
-using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
@@ -12,27 +11,28 @@ using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Sentinels
 {
+  /// <summary>
+  /// Unlocks Feathermoon Stronghold upon securing the area and bringing a hero to it.
+  /// </summary>
   public sealed class QuestFeathermoon : QuestData
   {
     private readonly List<unit> _rescueUnits = new();
-
+    
+    /// <summary>
+    /// Initializes a new instance of <see cref="QuestFeathermoon"/>.
+    /// </summary>
+    /// <param name="rescueRect"></param>
+    /// <param name="shandris"></param>
     public QuestFeathermoon(Rectangle rescueRect, LegendaryHero shandris) : base("Shores of Feathermoon",
       "Feathermoon Stronghold stood guard for ten thousand years, it is time to relieve the guards from their duty.",
       "ReplaceableTextures\\CommandButtons\\BTNBearDen.blp")
     {
-      AddObjective(new ObjectiveLegendReachRect(shandris, Regions.FeathermoonUnlock,
-        "Feathermoon Stronghold"));
+      AddObjective(new ObjectiveAnyUnitInRect(rescueRect, "Feathermoon Stronghold", true));
       AddObjective(new ObjectiveKillAllInArea(new List<Rectangle> { Regions.FeathermoonCreeps }, "around Feathermoon Stronghold"));
       AddObjective(new ObjectiveExpire(1485, Title));
       AddObjective(new ObjectiveSelfExists());
       ResearchId = Constants.UPGRADE_R06M_QUEST_COMPLETED_FEATHERMOON_STRONGHOLD;
-      foreach (var unit in CreateGroup().EnumUnitsInRect(rescueRect).EmptyToList())
-        if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))
-        {
-          SetUnitInvulnerable(unit, true);
-          _rescueUnits.Add(unit);
-        }
-
+      _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable);
       Required = true;
     }
 
@@ -47,13 +47,15 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
     /// <inheritdoc />
     protected override void OnFail(Faction completingFaction)
     {
-      foreach (var unit in _rescueUnits) unit.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      Player(PLAYER_NEUTRAL_AGGRESSIVE).RescueGroup(_rescueUnits);
     }
 
     /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)
     {
-      foreach (var unit in _rescueUnits) unit.Rescue(completingFaction.Player);
+      if (completingFaction.Player != null)
+        completingFaction.Player.RescueGroup(_rescueUnits);
+
       if (GetLocalPlayer() == completingFaction.Player) PlayThematicMusic("war3mapImported\\SentinelTheme.mp3");
     }
   }

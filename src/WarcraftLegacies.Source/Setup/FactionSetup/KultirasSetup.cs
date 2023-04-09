@@ -21,8 +21,6 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
 
 You begin on Balor island, separated from your main forces in Kul Tiras. Unite your forces by eliminating your enemies in Tiragarde, Drustvar and Stormsong Valley.
 
-Illidan's Naga have established a base in the Broken Isles, and are preparing to invade your islands from the North.
-
 Stormwind is preparing for an invasion through the Dark Portal in the South. Muster the Admiralty and help them, or you may lose your strongest ally."
         };
 

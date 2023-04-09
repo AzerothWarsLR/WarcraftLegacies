@@ -25,7 +25,7 @@ namespace WarcraftLegacies.Source.Quests.Legion
     /// <inheritdoc/>
     protected override void OnComplete(Faction whichFaction)
     {
-      whichFaction.ModObjectLimit(FourCC("n04Q"), 3); //Nether Pit
+      whichFaction.ModObjectLimit(FourCC("n04Q"), 4); //Nether Pit
     }
   }
 }

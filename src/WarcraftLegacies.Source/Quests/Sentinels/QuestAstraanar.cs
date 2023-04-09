@@ -2,10 +2,8 @@
 using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
-using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
 using MacroTools.ObjectiveSystem.Objectives.FactionBased;
-using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
@@ -14,11 +12,18 @@ using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Sentinels
 {
+  /// <summary>
+  /// Unlocks Abuderine 
+  /// </summary>
   public sealed class QuestAstranaar : QuestData
   {
     private readonly List<unit> _rescueUnits = new();
 
-    public QuestAstranaar(List<Rectangle> rescueRects, LegendaryHero shandris) : base("Daughters of the Moon",
+    /// <summary>
+    /// Initializes a new instance of <see cref="QuestAstranaar"/>.
+    /// </summary>
+    /// <param name="rescueRects"></param>
+    public QuestAstranaar(List<Rectangle> rescueRects) : base("Daughters of the Moon",
       "Shandris need to warn the Sentinels in Auberdine of the Horde invadors by sending a messenger.",
       "ReplaceableTextures\\CommandButtons\\BTNShandris.blp")
     {
@@ -31,13 +36,8 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
       ResearchId = Constants.UPGRADE_R03N_QUEST_COMPLETED_DAUGHTERS_OF_THE_MOON;
 
       foreach (var rectangle in rescueRects)
-      foreach (var unit in CreateGroup().EnumUnitsInRect(rectangle.Rect).EmptyToList())
-        if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))
-        {
-          SetUnitInvulnerable(unit, true);
-          _rescueUnits.Add(unit);
-        }
-
+        _rescueUnits.AddRange(rectangle.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable));
+     
       Required = true;
     }
 
@@ -51,7 +51,7 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
     /// <inheritdoc />
     protected override void OnFail(Faction completingFaction)
     {
-      foreach (var unit in _rescueUnits) unit.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      Player(PLAYER_NEUTRAL_AGGRESSIVE).RescueGroup(_rescueUnits);
     }
 
     /// <inheritdoc />

@@ -40,6 +40,7 @@ namespace WarcraftLegacies.Source.Quests
       AddObjective(new ObjectiveCapitalDead(dalaran));
       _skullOfGuldanBuilding = skullOfGuldanBuilding;
       _skullOfGuldan = skullOfGuldan;
+      Shared = true;
     }
 
     /// <inheritdoc/>
