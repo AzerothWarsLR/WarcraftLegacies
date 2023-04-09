@@ -13270,6 +13270,12 @@ STRING 2212
 Opens a two-way portal to the target location within a range of <A00D,Rng3>. The portal becomes useable after 5 seconds, and closes 10 seconds after the caster stops channeling.
 }
 
+STRING 2213
+// Abilities: A126 (Destroy), EditorSuffix (Editor Suffix)
+{
+(shared)
+}
+
 STRING 2214
 // Units: n06E (Shadowleaf), EditorSuffix (Name - Editor Suffix)
 {
@@ -18116,6 +18122,12 @@ STRING 3021
 // Units: h04O (Bomber), Tip (Tooltip - Basic)
 {
 Train Bomber
+}
+
+STRING 3022
+// Abilities: A126 (Destroy), Name (Name)
+{
+Destroy
 }
 
 STRING 3023
@@ -42572,6 +42584,12 @@ STRING 7094
 E
 }
 
+STRING 7095
+// Abilities: A126 (Destroy), Tip (Tooltip - Normal)
+{
+Destroy
+}
+
 STRING 7096
 // Abilities: ANbf (Blast of Fire), Hotkey (Hotkey - Normal)
 {
@@ -49280,6 +49298,12 @@ STRING 8213
 // Upgrades: R05C (Sorceress Adept Training,Sorceress Master Training), Ubertip (Tooltip - Extended)
 {
 Increases Archivists' mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Summon Zombie.
+}
+
+STRING 8214
+// Abilities: A126 (Destroy), Ubertip (Tooltip - Normal - Extended)
+{
+Kill the caster
 }
 
 STRING 8216
