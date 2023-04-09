@@ -19,11 +19,11 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
         ControlPointDefenderUnitTypeId = Constants.UNIT_H0C1_CONTROL_POINT_DEFENDER_ZANDALAR,
         IntroText = @"You are playing as the mighty |cffe1946cZandalari Empire|r.
 
-You start off on Zandalar. Raise an army and deal with the uprising in Nazmir, then head West to Crestfall to claim more gold mines. 
+You start off at the southern coast of Tanaris, seperated from your allies. Raise an army and deal with the rogue Trolls in Zul'Farrak.
 
-The Kul'tiran Navy is mounting an assault on you from the North, brace for a tough fight and counter-attack. 
+The Night Elves are mounting an assault on you and your allies from the North.
 
-Once the human menace has been dealt with, sail West and help the Horde in Kalimdor."
+Join up with your allies and brace for a tough fight and counter-attack. "
       };
 
       Zandalar.ModObjectLimit(FourCC("o03R"), Faction.UNLIMITED); //Great Hall
