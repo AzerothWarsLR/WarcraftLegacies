@@ -61,6 +61,13 @@ namespace WarcraftLegacies.Source.Setup.Spells
         TargetLocation = new Point(21606, -28467),
         Color = new Color(255, 50, 50, 255)
       });
+
+      // TODO: Uncomment and put SpellID in the constructor of InstantKill 
+      //SpellSystem.Register(new InstantKill()
+      //{
+      //  Target = InstantKill.KillTarget.Self
+      //});
+        
     }
   }
 }
