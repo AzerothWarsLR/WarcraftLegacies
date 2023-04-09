@@ -49306,6 +49306,12 @@ STRING 8214
 Kill the caster
 }
 
+STRING 8215
+// Units: u006 (Summoning Circle), Ubertip (Tooltip - Extended)
+{
+Summoning site for the Void demons of the Burning Legion.|r|n|cff99b4d1Can only build 3 before the Legion has been summoned|n|cfff5962dTrains:|R Eredar Summoner, Succubus|n|cfff5962dResearches:|R Eredar Summoner Training, Succubus Training
+}
+
 STRING 8216
 // Abilities: A0QP (Immolation), EditorSuffix (Editor Suffix)
 {
@@ -67809,6 +67815,12 @@ STRING 11299
 // Abilities: A04I (Call of the Void), Researchhotkey (Hotkey - Learn)
 {
 R
+}
+
+STRING 11300
+// Units: n04Q (Nether Pit), Ubertip (Tooltip - Extended)
+{
+Summoning site for minor demons.|r|n|cff99b4d1Can only build 3 before the Legion has been summoned|n|cfff5962dTrains:|R Fel Guard, Burning Archer, Infernal|n|cfff5962dResearches:|R War Plating
 }
 
 STRING 11301
@@ -106366,12 +106378,6 @@ STRING 17732
 Mainstay soldier of the Legion.|n|cfff5962dAbilities:|R Combat Experience, War Plating, Charge|n|n|cffffcc00Attacks land units.|r
 }
 
-STRING 17733
-// Units: u006 (Summoning Circle), Ubertip (Tooltip - Extended)
-{
-Summoning site for the Void demons of the Burning Legion.|r|n|cff99b4d1Can only build 2 before the Legion has been summoned|n|cfff5962dTrains:|R Eredar Summoner, Succubus|n|cfff5962dResearches:|R Eredar Summoner Training, Succubus Training
-}
-
 STRING 17734
 // Abilities: ANrc (Rain of Chaos), Researchubertip (Tooltip - Learn - Extended)
 {
@@ -123002,12 +123008,6 @@ STRING 20504
 // Upgrades: R03O (Animal War Training), Hotkey (Hotkey)
 {
 E
-}
-
-STRING 20505
-// Units: n04Q (Nether Pit), Ubertip (Tooltip - Extended)
-{
-Summoning site for minor demons.|r|n|cff99b4d1Can only build 2 before the Legion has been summoned|n|cfff5962dTrains:|R Fel Guard, Burning Archer, Infernal|n|cfff5962dResearches:|R War Plating
 }
 
 STRING 20506

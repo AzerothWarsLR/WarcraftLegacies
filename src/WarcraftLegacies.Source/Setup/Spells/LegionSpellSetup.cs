@@ -62,7 +62,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
         Color = new Color(255, 50, 50, 255)
       });
 
-      SpellSystem.Register(new InstantKill((Constants.ABILITY_A126_ )
+      SpellSystem.Register(new InstantKill(Constants.ABILITY_A126_DESTROY_SHARED)
       {
         Target = InstantKill.KillTarget.Self
       });
