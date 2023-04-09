@@ -2,6 +2,7 @@
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using System.Collections.Generic;
+using System.Linq;
 using WarcraftLegacies.Source.Setup;
 using WarcraftLegacies.Source.Setup.FactionSetup;
 using static War3Api.Common;
@@ -31,7 +32,7 @@ namespace WarcraftLegacies.Source.GameLogic
       var concludeTimer = CreateTimer();
       TimerStart(concludeTimer, 24, false, ConcludeFactionPick);
     }
-    
+
     private static void ConcludeFactionPick()
     {
       if (GetLocalPlayer() == Player(8))
@@ -61,11 +62,11 @@ namespace WarcraftLegacies.Source.GameLogic
       var noTrigger = CreateTrigger();
       TriggerRegisterDialogButtonEvent(noTrigger, NoButton);
       TriggerRegisterDialogButtonEvent(yesTrigger, YesButton);
-      TriggerAddAction(noTrigger, () => { _factionPicked = true;});
-      TriggerAddAction(yesTrigger, () => { _factionPicked = false;});
+      TriggerAddAction(noTrigger, () => { _factionPicked = true; });
+      TriggerAddAction(yesTrigger, () => { _factionPicked = false; });
       DestroyTimer(GetExpiredTimer());
     }
-    
+
     private static void PickZandalar()
     {
       var gobUnits = Regions.GoblinStartPos.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
@@ -97,6 +98,10 @@ namespace WarcraftLegacies.Source.GameLogic
         else
         {
           unit.Remove();
+        }
+        foreach (var quest in faction.GetAllQuests().Where(q => q.Shared is false))
+        {
+          quest.Progress = MacroTools.QuestSystem.QuestProgress.Failed;
         }
       }
     }

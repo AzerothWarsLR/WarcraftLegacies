@@ -57,7 +57,7 @@ namespace WarcraftLegacies.Source.Quests
       AddObjective(new ObjectiveKillUnit(nightmareDragonEk));
       AddObjective(new ObjectiveTime(1800));
       _timer = CreateTimer().Start(1800, false, OnTimeElapsed);
-
+      Shared = true;
     }
 
     private void OnTimeElapsed()
