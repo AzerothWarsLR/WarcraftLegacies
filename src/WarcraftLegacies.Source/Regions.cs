@@ -209,7 +209,7 @@ public static class Regions
 	public static Rectangle KulAttack { get; set; } = new Rectangle(3776f, -11136f, 4096f, -10912f);
 	public static Rectangle KulTarget { get; set; } = new Rectangle(3904f, -13440f, 3936f, -13408f);
 	public static Rectangle BlademasterUnlock { get; set; } = new Rectangle(4352f, -10496f, 5024f, -10112f);
-	public static Rectangle ZandalarUnlock { get; set; } = new Rectangle(-5440f, -17088f, -2400f, -14656f);
+	public static Rectangle ZandalarUnlock { get; set; } = new Rectangle(-5440f, -17152f, -2400f, -14656f);
 	public static Rectangle TwilightOutside { get; set; } = new Rectangle(17984f, -8224f, 21696f, -4896f);
 	public static Rectangle ShipInside { get; set; } = new Rectangle(8928f, -31168f, 9472f, -30720f);
 	public static Rectangle ShipAmbient { get; set; } = new Rectangle(8608f, -31424f, 9984f, -28768f);

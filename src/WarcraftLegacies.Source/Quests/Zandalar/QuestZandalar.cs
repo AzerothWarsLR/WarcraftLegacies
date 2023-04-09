@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using MacroTools;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
@@ -23,7 +24,8 @@ namespace WarcraftLegacies.Source.Quests.Zandalar
     /// </summary>
     /// <param name="feathermoon"></param>
     /// <param name="rescueRect"></param>
-    public QuestZandalar(Capital feathermoon, Rectangle rescueRect) : base("City of Gold", "We need to regain control of our land.",
+    /// <param name="preplacedUnitSystem"></param>
+    public QuestZandalar(Capital feathermoon, Rectangle rescueRect, PreplacedUnitSystem preplacedUnitSystem) : base("City of Gold", "We need to regain control of our land.",
       "ReplaceableTextures\\CommandButtons\\BTNBloodTrollMage.blp")
     {
       AddObjective(new ObjectiveCapitalDead(feathermoon));
@@ -31,6 +33,8 @@ namespace WarcraftLegacies.Source.Quests.Zandalar
       AddObjective(new ObjectiveSelfExists());
       ResearchId = Constants.UPGRADE_R04W_QUEST_COMPLETED_CITY_OF_GOLD;
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable);
+      //For some reason that one dock just does not get rescured even though it is inside the rect so we add it manually here.
+      _rescueUnits.Add(preplacedUnitSystem.GetUnit(Constants.UNIT_O049_GOLDEN_DOCK_ZANDALARI_SHIPYARD, new Point(-3738, -16911)));
       Required = true;
     }
 

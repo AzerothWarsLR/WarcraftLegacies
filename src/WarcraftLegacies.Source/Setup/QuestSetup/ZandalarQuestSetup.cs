@@ -21,7 +21,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       var questZulFarrak = new QuestZulfarrak(Regions.Zulfarrak, allLegendSetup.Neutral.Zulfarrak, allLegendSetup.Troll.Zul);
       zandalar.StartingQuest = questZulFarrak;
       zandalar.AddQuest(questZulFarrak);
-      zandalar.AddQuest(new QuestZandalar(allLegendSetup.Sentinels.Feathermoon, Regions.ZandalarUnlock));
+      zandalar.AddQuest(new QuestZandalar(allLegendSetup.Sentinels.Feathermoon, Regions.ZandalarUnlock, preplacedUnitSystem));
       zandalar.AddQuest(new QuestGundrak(allLegendSetup));
       zandalar.AddQuest(new QuestJinthaAlor(allLegendSetup));
       zandalar.AddQuest(new QuestZulgurub(allLegendSetup));
