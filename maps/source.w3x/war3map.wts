@@ -13270,12 +13270,6 @@ STRING 2212
 Opens a two-way portal to the target location within a range of <A00D,Rng3>. The portal becomes useable after 5 seconds, and closes 10 seconds after the caster stops channeling.
 }
 
-STRING 2213
-// Units: n034 (Guild Ranger), Ubertip (Tooltip - Extended)
-{
-Agile, deadly and skilled Archers of the Sentinels.|n|cfff5962dAbilities: |RResistant Skin, Elune's Grace, Shadowmeld|n|n|cff99b4d1Can only train 12.|r|n|cffffcc00Attacks land and air units.|r
-}
-
 STRING 2214
 // Units: n06E (Shadowleaf), EditorSuffix (Name - Editor Suffix)
 {
@@ -18122,12 +18116,6 @@ STRING 3021
 // Units: h04O (Bomber), Tip (Tooltip - Basic)
 {
 Train Bomber
-}
-
-STRING 3022
-// Units: nnmg (Redeemed Highborne), Ubertip (Tooltip - Extended)
-{
-Ranged caster unit.|n|cfff5962dAbilities:|r Forked Lightning, Mana Shield|n|n|cff99b4d1Can only build 12.|r|n|cffffcc00Attacks land and air units.|R
 }
 
 STRING 3023
@@ -31135,7 +31123,7 @@ STRING 5189
 }
 
 STRING 5190
-// Abilities: Acny (Cyclone), EditorSuffix (Editor Suffix)
+// Abilities: A0Y6 (Inner Will), EditorSuffix (Editor Suffix)
 {
 (C'thun Tolvir Statue)
 }
@@ -42549,7 +42537,7 @@ D
 }
 
 STRING 7089
-// Abilities: A0Y6 (Inner Will), EditorSuffix (Editor Suffix)
+// Abilities: A0Y5 (Shadow Storm), EditorSuffix (Editor Suffix)
 {
 (C'thun Tolvir Statue)
 }
@@ -42582,12 +42570,6 @@ STRING 7094
 // Abilities: Ainf (Inner Fire), Unhotkey (Hotkey - Turn Off)
 {
 E
-}
-
-STRING 7095
-// Abilities: A0Y5 (Shadow Storm), EditorSuffix (Editor Suffix)
-{
-(C'thun Tolvir Statue)
 }
 
 STRING 7096
@@ -49265,7 +49247,7 @@ Primary structure, used to train workers and gather resources.|n|cfff5962dTrains
 }
 
 STRING 8208
-// Abilities: A0QQ (Aimed Shot), EditorSuffix (Editor Suffix)
+// Abilities: A0OG (Devour Magic), EditorSuffix (Editor Suffix)
 {
 (unused)
 }
@@ -49298,18 +49280,6 @@ STRING 8213
 // Upgrades: R05C (Sorceress Adept Training,Sorceress Master Training), Ubertip (Tooltip - Extended)
 {
 Increases Archivists' mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Summon Zombie.
-}
-
-STRING 8214
-// Abilities: A0QQ (Aimed Shot), Tip (Tooltip - Normal)
-{
-Aimed Shot (|cffffcc00Q|r)
-}
-
-STRING 8215
-// Abilities: A0QQ (Aimed Shot), Ubertip (Tooltip - Normal - Extended)
-{
-Fires an enchanted arrow at an enemy target, dealing 80 damage and stunning the target for 4(0.2) seconds. 800 range. |n Has a 1.5 second cast time.
 }
 
 STRING 8216
@@ -50069,7 +50039,7 @@ Q
 }
 
 STRING 8342
-// Abilities: A0PK (Aimed Shot), Name (Name)
+// Abilities: A0QQ (Aimed Shot), Tip (Tooltip - Normal)
 {
 Aimed Shot
 }
@@ -50711,7 +50681,7 @@ Item Attack Nature Attack bonus
 }
 
 STRING 8449
-// Abilities: A0OG (Devour Magic), EditorSuffix (Editor Suffix)
+// Abilities: A0MO (Nature's Grasp), EditorSuffix (Editor Suffix)
 {
 (unused)
 }
@@ -51563,7 +51533,7 @@ A poison attack that deals <Aspo,DataA1> damage per second, and slows the target
 }
 
 STRING 8591
-// Abilities: A0MO (Nature's Grasp), EditorSuffix (Editor Suffix)
+// Abilities: A0KD (Holy Power), EditorSuffix (Editor Suffix)
 {
 (unused)
 }
@@ -51881,7 +51851,7 @@ Unit Inventory (Cthun)
 }
 
 STRING 8644
-// Abilities: A0KD (Holy Power), EditorSuffix (Editor Suffix)
+// Abilities: A06F (Wind Walk), EditorSuffix (Editor Suffix)
 {
 (unused)
 }
@@ -53208,7 +53178,7 @@ The Thane drinks a powerful brew of ale, healing him for 400.
 }
 
 STRING 8865
-// Abilities: A06F (Wind Walk), EditorSuffix (Editor Suffix)
+// Abilities: A068 (Toughened Hides), EditorSuffix (Editor Suffix)
 {
 (unused)
 }
@@ -53520,7 +53490,7 @@ Gives 4 additional armor to friendly units in a large area.
 }
 
 STRING 8917
-// Abilities: A068 (Toughened Hides), EditorSuffix (Editor Suffix)
+// Abilities: A05Q (Exorcism), EditorSuffix (Editor Suffix)
 {
 (unused)
 }
@@ -63960,7 +63930,7 @@ W
 }
 
 STRING 10657
-// Abilities: A05Q (Exorcism), EditorSuffix (Editor Suffix)
+// Abilities: A03M (Wind Walk), EditorSuffix (Editor Suffix)
 {
 (unused)
 }
@@ -63990,7 +63960,7 @@ Shadowpriest Master Training
 }
 
 STRING 10662
-// Abilities: A03M (Wind Walk), EditorSuffix (Editor Suffix)
+// Abilities: A00R (Burst of Speed), EditorSuffix (Editor Suffix)
 {
 (unused)
 }
@@ -65100,7 +65070,7 @@ Consumes the Pack Kodo to build a Spirit Lodge.
 }
 
 STRING 10847
-// Abilities: A00R (Burst of Speed), EditorSuffix (Editor Suffix)
+// Upgrades: R02P (Backpack), EditorSuffix (Editor Suffix)
 {
 (unused)
 }
@@ -67815,12 +67785,6 @@ STRING 11299
 // Abilities: A04I (Call of the Void), Researchhotkey (Hotkey - Learn)
 {
 R
-}
-
-STRING 11300
-// Upgrades: R02P (Backpack), EditorSuffix (Editor Suffix)
-{
-(unused)
 }
 
 STRING 11301
@@ -123022,6 +122986,12 @@ STRING 20505
 Summoning site for minor demons.|r|n|cff99b4d1Can only build 2 before the Legion has been summoned|n|cfff5962dTrains:|R Fel Guard, Burning Archer, Infernal|n|cfff5962dResearches:|R War Plating
 }
 
+STRING 20506
+// Units: nnmg (Redeemed Highborne), Ubertip (Tooltip - Extended)
+{
+Ranged caster unit.|n|cfff5962dAbilities:|r Forked Lightning, Cyclone, Mana Shield|n|n|cff99b4d1Can only build 12.|r|n|cffffcc00Attacks land and air units.|R
+}
+
 STRING 20507
 // Units: e026 (Nathrezim Infiltrator), Name (Name)
 {
@@ -123032,6 +123002,12 @@ STRING 20508
 // Abilities: A124 (Take Flight), EditorSuffix (Editor Suffix)
 {
 (Nathrezim)
+}
+
+STRING 20509
+// Units: n034 (Guild Ranger), Ubertip (Tooltip - Extended)
+{
+Agile, deadly and skilled Archers of the Sentinels.|n|cfff5962dAbilities: |RAimed Shot, Resistant Skin, Elune's Grace, Shadowmeld|n|cfff5962dCan Learn:|R Wind Walk|n|n|cff99b4d1Can only train 12.|r|n|cffffcc00Attacks land and air units.|r
 }
 
 STRING 20510
@@ -123050,6 +123026,12 @@ STRING 20512
 // Abilities: A124 (Take Flight), Untip (Tooltip - Turn Off)
 {
 Land
+}
+
+STRING 20513
+// Abilities: Acny (Cyclone), EditorSuffix (Editor Suffix)
+{
+(Redeemed Highborn, Cthun Statue)
 }
 
 STRING 20514
@@ -123074,6 +123056,12 @@ STRING 20517
 // Units: o04P (Nathrezim Infiltrator), Casterupgradetip (Caster Upgrade Tips)
 {
 - Dark Regeneration,- Dark Regeneration|n- Charm,- Dark Regeneration|n- Charm|n- Take Flight
+}
+
+STRING 20518
+// Abilities: A0QQ (Aimed Shot), EditorSuffix (Editor Suffix)
+{
+(Guild Ranger)
 }
 
 STRING 20519
@@ -123164,5 +123152,17 @@ STRING 20533
 // Upgrades: R042 (Shaman Adept Training,Shaman Master Training), Ubertip (Tooltip - Extended)
 {
 Increases Nathrezims' mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Take Flight.
+}
+
+STRING 20534
+// Abilities: A0QQ (Aimed Shot), Ubertip (Tooltip - Normal - Extended)
+{
+Fires an enchanted arrow at an enemy target, dealing 80 damage and stunning the target for 4(0.2) seconds. 800 range. |nHas a 1.5 second cast time.
+}
+
+STRING 20535
+// Abilities: A0PK (Aimed Shot), Name (Name)
+{
+Aimed Shot
 }
 
