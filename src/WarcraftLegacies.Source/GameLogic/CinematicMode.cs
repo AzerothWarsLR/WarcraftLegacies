@@ -51,12 +51,6 @@ namespace WarcraftLegacies.Source.GameLogic
         foreach (var unit in CreateGroup().EnumUnitsOfPlayer(player).EmptyToList())
           PauseUnit(unit, true);
         
-  
-      Player(21).ApplyCameraField(CAMERA_FIELD_TARGET_DISTANCE, 2400, 1.00f);
-      Player(19).ApplyCameraField(CAMERA_FIELD_TARGET_DISTANCE, 2400, 1.00f);
-      Player(8).ApplyCameraField(CAMERA_FIELD_TARGET_DISTANCE, 2400, 1.00f);
-
-
       _state = CinematicState.Active;
       _linkedTimer.StartTimer();
     }
