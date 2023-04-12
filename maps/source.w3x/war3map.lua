@@ -522,6 +522,7 @@ gg_snd_DoorCloseRemix = nil
 gg_snd_DoorOpenRemix = nil
 gg_snd_NuclearLaunchDetected = nil
 gg_snd_IllidansTheme = ""
+gg_rct_FountainUnlock = nil
 function InitGlobals()
 end
 
@@ -8537,6 +8538,7 @@ gg_rct_TrollStartPos = Rect(-10016.0, -18400.0, -8544.0, -16832.0)
 gg_rct_ExodarBaseUnlock = Rect(-23872.0, 5792.0, -21248.0, 8416.0)
 gg_rct_DesolaceUnlock = Rect(-19456.0, -4896.0, -17152.0, -2976.0)
 gg_rct_DraeneiQuestKill = Rect(-20160.0, -5376.0, -16640.0, -2624.0)
+gg_rct_FountainUnlock = Rect(-10688.0, 4384.0, -10144.0, 4800.0)
 end
 
 function InitUpgrades_Player0()

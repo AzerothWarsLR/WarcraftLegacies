@@ -341,5 +341,6 @@ public static class Regions
 	public static Rectangle ExodarBaseUnlock { get; set; } = new Rectangle(-23872f, 5792f, -21248f, 8416f);
 	public static Rectangle DesolaceUnlock { get; set; } = new Rectangle(-19456f, -4896f, -17152f, -2976f);
 	public static Rectangle DraeneiQuestKill { get; set; } = new Rectangle(-20160f, -5376f, -16640f, -2624f);
+	public static Rectangle FountainUnlock { get; set; } = new Rectangle(-10688f, 4384f, -10144f, 4800f);
 
 }

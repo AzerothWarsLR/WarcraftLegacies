@@ -4828,12 +4828,6 @@ STRING 805
 Quest Completed: The Drakkari Fortress
 }
 
-STRING 806
-// Units: o04P (Nathrezim Infiltrator), Ubertip (Tooltip - Extended)
-{
-Shadowy Nathrezim Agents.|n|cfff5962dAbilities:|R Dark Regeneration, Resistant Skin, Permanent Invisibility |n|cfff5962dCan learn:|R Charm, Take Flight|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land units.|r
-}
-
 STRING 807
 // Abilities: ANwk (Wind Walk), Ubertip (Tooltip - Normal - Extended)
 {
@@ -4946,12 +4940,6 @@ STRING 825
 // Units: ninc (Burning Archer), Tip (Tooltip - Basic)
 {
 Train Burning Archer
-}
-
-STRING 826
-// Abilities: A0GZ (Vampiric Attack), Ubertip (Tooltip - Normal - Extended)
-{
-This unit gains 35% of damage done as health.
 }
 
 STRING 827
@@ -106378,6 +106366,12 @@ STRING 17732
 Mainstay soldier of the Legion.|n|cfff5962dAbilities:|R Combat Experience, War Plating, Charge|n|n|cffffcc00Attacks land units.|r
 }
 
+STRING 17733
+// Units: o04P (Nathrezim Infiltrator), Ubertip (Tooltip - Extended)
+{
+Shadowy Nathrezim Agents.|n|cfff5962dAbilities:|R Vampiric Attack, Dark Regeneration, Resistant Skin, Permanent Invisibility |n|cfff5962dCan learn:|R Charm, Take Flight|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land units.|r
+}
+
 STRING 17734
 // Abilities: ANrc (Rain of Chaos), Researchubertip (Tooltip - Learn - Extended)
 {
@@ -123008,6 +123002,12 @@ STRING 20504
 // Upgrades: R03O (Animal War Training), Hotkey (Hotkey)
 {
 E
+}
+
+STRING 20505
+// Abilities: A0GZ (Vampiric Attack), Ubertip (Tooltip - Normal - Extended)
+{
+This unit gains 50% of damage done as health.
 }
 
 STRING 20506
