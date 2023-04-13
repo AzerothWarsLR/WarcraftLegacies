@@ -306,10 +306,10 @@ public static class Regions
 	public static Rectangle SatyrCamp { get; set; } = new Rectangle(-14816f, 6080f, -13888f, 6912f);
 	public static Rectangle FountainOfHealthAlterac { get; set; } = new Rectangle(10656f, 5536f, 11104f, 6016f);
 	public static Rectangle Nazjatar { get; set; } = new Rectangle(-5792f, -3680f, -5024f, -2752f);
-	public static Rectangle Wrathgate_Portal_1 { get; set; } = new Rectangle(-3040f, 18304f, -2752f, 18560f);
-	public static Rectangle Scholomance_Exterior_1 { get; set; } = new Rectangle(14528f, 7616f, 14912f, 7872f);
-	public static Rectangle Scholomance_Exterior_2 { get; set; } = new Rectangle(15232f, 6720f, 15552f, 7136f);
-	public static Rectangle Wrathgate_Portal_2 { get; set; } = new Rectangle(-2400f, 18848f, -2112f, 19136f);
+	public static Rectangle Wrathgate_Portal_1 { get; set; } = new Rectangle(-3040f, 18016f, -2464f, 18560f);
+	public static Rectangle Scholomance_Exterior_1 { get; set; } = new Rectangle(14368f, 7264f, 14944f, 7872f);
+	public static Rectangle Scholomance_Exterior_2 { get; set; } = new Rectangle(15008f, 6560f, 15552f, 7168f);
+	public static Rectangle Wrathgate_Portal_2 { get; set; } = new Rectangle(-2464f, 18528f, -1888f, 19136f);
 	public static Rectangle AlteracLegionLanding { get; set; } = new Rectangle(11168f, 5632f, 11552f, 5984f);
 	public static Rectangle NorthrendLegionLanding { get; set; } = new Rectangle(3392f, 20512f, 3776f, 20864f);
 	public static Rectangle IslandBlocker1 { get; set; } = new Rectangle(416f, 2048f, 1440f, 2336f);
@@ -337,9 +337,10 @@ public static class Regions
 	public static Rectangle RiseBaseUnlock { get; set; } = new Rectangle(-13056f, 5440f, -11072f, 7488f);
 	public static Rectangle ShrineBaseUnlock { get; set; } = new Rectangle(-13184f, 7648f, -9632f, 9568f);
 	public static Rectangle StranglethornBaseBuild { get; set; } = new Rectangle(6848f, -24704f, 11936f, -17920f);
-	public static Rectangle TrollStartPos { get; set; } = new Rectangle(-9824f, -18400f, -8544f, -16832f);
+	public static Rectangle TrollStartPos { get; set; } = new Rectangle(-10016f, -18400f, -8544f, -16832f);
 	public static Rectangle ExodarBaseUnlock { get; set; } = new Rectangle(-23872f, 5792f, -21248f, 8416f);
 	public static Rectangle DesolaceUnlock { get; set; } = new Rectangle(-19456f, -4896f, -17152f, -2976f);
 	public static Rectangle DraeneiQuestKill { get; set; } = new Rectangle(-20160f, -5376f, -16640f, -2624f);
+	public static Rectangle FountainUnlock { get; set; } = new Rectangle(-10688f, 4384f, -10144f, 4800f);
 
 }

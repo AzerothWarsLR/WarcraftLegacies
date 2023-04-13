@@ -47,8 +47,8 @@ namespace WarcraftLegacies.Source.Quests.Legion
     /// <inheritdoc />
     protected override void OnComplete(Faction whichFaction)
     {
-      whichFaction.ModObjectLimit(FourCC("u006"), Faction.UNLIMITED); //Summoning Circle
-      whichFaction.ModObjectLimit(FourCC("n04Q"), Faction.UNLIMITED); //Nether Pit
+      whichFaction.ModObjectLimit(FourCC("u006"), 12); //Summoning Circle
+      whichFaction.ModObjectLimit(FourCC("n04Q"), 12); //Nether Pit
       foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
         SetPlayerAbilityAvailable(player, Constants.ABILITY_A00J_SUMMON_THE_BURNING_LEGION_ALL_FACTIONS, false);
       if (whichFaction.Player != null)

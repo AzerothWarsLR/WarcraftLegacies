@@ -62,11 +62,10 @@ namespace WarcraftLegacies.Source.Setup.Spells
         Color = new Color(255, 50, 50, 255)
       });
 
-      // TODO: Uncomment and put SpellID in the constructor of InstantKill 
-      //SpellSystem.Register(new InstantKill()
-      //{
-      //  Target = InstantKill.KillTarget.Self
-      //});
+      SpellSystem.Register(new InstantKill(Constants.ABILITY_A126_DESTROY_SHARED)
+      {
+        Target = InstantKill.KillTarget.Self
+      });
         
     }
   }

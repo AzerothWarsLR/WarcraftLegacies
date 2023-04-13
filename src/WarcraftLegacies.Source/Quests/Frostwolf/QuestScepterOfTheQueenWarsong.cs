@@ -32,7 +32,7 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
       _highBourneAreaUnits = _highBourneArea.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
       AddObjective(new ObjectiveCapitalDead(auberdine));
       AddObjective(new ObjectiveKillAllInArea(new[]{area}, "outside the Athenaeum"));
-      _anyUnitInRect = new ObjectiveAnyUnitInRect(_highBourneArea, "Dire Maul", true);
+      _anyUnitInRect = new ObjectiveAnyUnitInRect(_highBourneArea, "Dire Maul", false);
       AddObjective(_anyUnitInRect);
       AddObjective(new ObjectiveNoOtherPlayerGetsArtifact(scepterOfTheQueen));
     }

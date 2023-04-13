@@ -25,7 +25,7 @@ namespace WarcraftLegacies.Source.Quests.Legion
     /// <inheritdoc/>
     protected override void OnComplete(Faction whichFaction)
     {
-      whichFaction.ModObjectLimit(FourCC("u006"), 3); //Summoning Circle
+      whichFaction.ModObjectLimit(FourCC("u006"), 4); //Summoning Circle
     }
   }
 }

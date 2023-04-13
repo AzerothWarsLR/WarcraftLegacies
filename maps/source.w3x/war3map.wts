@@ -4829,9 +4829,9 @@ Quest Completed: The Drakkari Fortress
 }
 
 STRING 806
-// Units: o04P (Nathrezim Infiltrator), Ubertip (Tooltip - Extended)
+// Units: uabo (Abomination), Ubertip (Tooltip - Extended)
 {
-Shadowy Nathrezim Agents.|n|cfff5962dAbilities:|R Dark Regeneration, Resistant Skin, Permanent Invisibility |n|cfff5962dCan learn:|R Charm, Take Flight|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land units.|r
+Amalgamation of corpses stiched into a foul creature.|n|cfff5962dAbilities:|R Demolish, Disease Cloud|n|n|cffffcc00Attacks land units.|r
 }
 
 STRING 807
@@ -4949,9 +4949,9 @@ Train Burning Archer
 }
 
 STRING 826
-// Abilities: A0GZ (Vampiric Attack), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A127 (Demolish), EditorSuffix (Editor Suffix)
 {
-This unit gains 35% of damage done as health.
+(abomination)
 }
 
 STRING 827
@@ -13271,9 +13271,9 @@ Opens a two-way portal to the target location within a range of <A00D,Rng3>. The
 }
 
 STRING 2213
-// Units: n034 (Guild Ranger), Ubertip (Tooltip - Extended)
+// Abilities: A126 (Destroy), EditorSuffix (Editor Suffix)
 {
-Agile, deadly and skilled Archers of the Sentinels.|n|cfff5962dAbilities: |RResistant Skin, Elune's Grace, Shadowmeld|n|n|cff99b4d1Can only train 12.|r|n|cffffcc00Attacks land and air units.|r
+(shared)
 }
 
 STRING 2214
@@ -18125,9 +18125,9 @@ Train Bomber
 }
 
 STRING 3022
-// Units: nnmg (Redeemed Highborne), Ubertip (Tooltip - Extended)
+// Abilities: A126 (Destroy), Name (Name)
 {
-Ranged caster unit.|n|cfff5962dAbilities:|r Forked Lightning, Mana Shield|n|n|cff99b4d1Can only build 12.|r|n|cffffcc00Attacks land and air units.|R
+Destroy
 }
 
 STRING 3023
@@ -31135,7 +31135,7 @@ STRING 5189
 }
 
 STRING 5190
-// Abilities: Acny (Cyclone), EditorSuffix (Editor Suffix)
+// Abilities: A0Y6 (Inner Will), EditorSuffix (Editor Suffix)
 {
 (C'thun Tolvir Statue)
 }
@@ -42549,7 +42549,7 @@ D
 }
 
 STRING 7089
-// Abilities: A0Y6 (Inner Will), EditorSuffix (Editor Suffix)
+// Abilities: A0Y5 (Shadow Storm), EditorSuffix (Editor Suffix)
 {
 (C'thun Tolvir Statue)
 }
@@ -42585,9 +42585,9 @@ E
 }
 
 STRING 7095
-// Abilities: A0Y5 (Shadow Storm), EditorSuffix (Editor Suffix)
+// Abilities: A126 (Destroy), Tip (Tooltip - Normal)
 {
-(C'thun Tolvir Statue)
+Destroy
 }
 
 STRING 7096
@@ -49265,7 +49265,7 @@ Primary structure, used to train workers and gather resources.|n|cfff5962dTrains
 }
 
 STRING 8208
-// Abilities: A0QQ (Aimed Shot), EditorSuffix (Editor Suffix)
+// Abilities: A0OG (Devour Magic), EditorSuffix (Editor Suffix)
 {
 (unused)
 }
@@ -49301,15 +49301,15 @@ Increases Archivists' mana capacity, mana regeneration rate, attack damage and g
 }
 
 STRING 8214
-// Abilities: A0QQ (Aimed Shot), Tip (Tooltip - Normal)
+// Abilities: A126 (Destroy), Ubertip (Tooltip - Normal - Extended)
 {
-Aimed Shot (|cffffcc00Q|r)
+Kill the caster
 }
 
 STRING 8215
-// Abilities: A0QQ (Aimed Shot), Ubertip (Tooltip - Normal - Extended)
+// Units: u006 (Summoning Circle), Ubertip (Tooltip - Extended)
 {
-Fires an enchanted arrow at an enemy target, dealing 80 damage and stunning the target for 4(0.2) seconds. 800 range. |n Has a 1.5 second cast time.
+Summoning site for the Void demons of the Burning Legion.|r|n|cff99b4d1Can only build 3 before the Legion has been summoned|n|cfff5962dTrains:|R Eredar Summoner, Succubus|n|cfff5962dResearches:|R Eredar Summoner Training, Succubus Training
 }
 
 STRING 8216
@@ -50069,7 +50069,7 @@ Q
 }
 
 STRING 8342
-// Abilities: A0PK (Aimed Shot), Name (Name)
+// Abilities: A0QQ (Aimed Shot), Tip (Tooltip - Normal)
 {
 Aimed Shot
 }
@@ -50711,7 +50711,7 @@ Item Attack Nature Attack bonus
 }
 
 STRING 8449
-// Abilities: A0OG (Devour Magic), EditorSuffix (Editor Suffix)
+// Abilities: A0MO (Nature's Grasp), EditorSuffix (Editor Suffix)
 {
 (unused)
 }
@@ -51563,7 +51563,7 @@ A poison attack that deals <Aspo,DataA1> damage per second, and slows the target
 }
 
 STRING 8591
-// Abilities: A0MO (Nature's Grasp), EditorSuffix (Editor Suffix)
+// Abilities: A0KD (Holy Power), EditorSuffix (Editor Suffix)
 {
 (unused)
 }
@@ -51881,7 +51881,7 @@ Unit Inventory (Cthun)
 }
 
 STRING 8644
-// Abilities: A0KD (Holy Power), EditorSuffix (Editor Suffix)
+// Abilities: A06F (Wind Walk), EditorSuffix (Editor Suffix)
 {
 (unused)
 }
@@ -53208,7 +53208,7 @@ The Thane drinks a powerful brew of ale, healing him for 400.
 }
 
 STRING 8865
-// Abilities: A06F (Wind Walk), EditorSuffix (Editor Suffix)
+// Abilities: A068 (Toughened Hides), EditorSuffix (Editor Suffix)
 {
 (unused)
 }
@@ -53520,7 +53520,7 @@ Gives 4 additional armor to friendly units in a large area.
 }
 
 STRING 8917
-// Abilities: A068 (Toughened Hides), EditorSuffix (Editor Suffix)
+// Abilities: A05Q (Exorcism), EditorSuffix (Editor Suffix)
 {
 (unused)
 }
@@ -63960,7 +63960,7 @@ W
 }
 
 STRING 10657
-// Abilities: A05Q (Exorcism), EditorSuffix (Editor Suffix)
+// Abilities: A03M (Wind Walk), EditorSuffix (Editor Suffix)
 {
 (unused)
 }
@@ -63990,7 +63990,7 @@ Shadowpriest Master Training
 }
 
 STRING 10662
-// Abilities: A03M (Wind Walk), EditorSuffix (Editor Suffix)
+// Abilities: A00R (Burst of Speed), EditorSuffix (Editor Suffix)
 {
 (unused)
 }
@@ -65100,7 +65100,7 @@ Consumes the Pack Kodo to build a Spirit Lodge.
 }
 
 STRING 10847
-// Abilities: A00R (Burst of Speed), EditorSuffix (Editor Suffix)
+// Upgrades: R02P (Backpack), EditorSuffix (Editor Suffix)
 {
 (unused)
 }
@@ -67818,9 +67818,9 @@ R
 }
 
 STRING 11300
-// Upgrades: R02P (Backpack), EditorSuffix (Editor Suffix)
+// Units: n04Q (Nether Pit), Ubertip (Tooltip - Extended)
 {
-(unused)
+Summoning site for minor demons.|r|n|cff99b4d1Can only build 3 before the Legion has been summoned|n|cfff5962dTrains:|R Fel Guard, Burning Archer, Infernal|n|cfff5962dResearches:|R War Plating
 }
 
 STRING 11301
@@ -106379,9 +106379,9 @@ Mainstay soldier of the Legion.|n|cfff5962dAbilities:|R Combat Experience, War P
 }
 
 STRING 17733
-// Units: u006 (Summoning Circle), Ubertip (Tooltip - Extended)
+// Units: o04P (Nathrezim Infiltrator), Ubertip (Tooltip - Extended)
 {
-Summoning site for the Void demons of the Burning Legion.|r|n|cff99b4d1Can only build 2 before the Legion has been summoned|n|cfff5962dTrains:|R Eredar Summoner, Succubus|n|cfff5962dResearches:|R Eredar Summoner Training, Succubus Training
+Shadowy Nathrezim Agents.|n|cfff5962dAbilities:|R Vampiric Attack, Dark Regeneration, Resistant Skin, Permanent Invisibility |n|cfff5962dCan learn:|R Charm, Take Flight|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land units.|r
 }
 
 STRING 17734
@@ -111474,12 +111474,6 @@ STRING 18581
 // Units: uban (Banshee), Ubertip (Tooltip - Extended)
 {
 A risen Elf spirit enslaved to the Scourge.|n|cfff5962dAbilities:|R Curse|n|cfff5962dCan Learn:|R Anti-magic Shell, Possession|n|n|cffffcc00Attacks land and air units.|R
-}
-
-STRING 18582
-// Units: uabo (Abomination), Ubertip (Tooltip - Extended)
-{
-Amalgamation of corpses stiched into a foul creature.|n|cfff5962dAbilities:|R Disease Cloud|n|n|cffffcc00Attacks land units.|r
 }
 
 STRING 18583
@@ -123017,9 +123011,15 @@ E
 }
 
 STRING 20505
-// Units: n04Q (Nether Pit), Ubertip (Tooltip - Extended)
+// Abilities: A0GZ (Vampiric Attack), Ubertip (Tooltip - Normal - Extended)
 {
-Summoning site for minor demons.|r|n|cff99b4d1Can only build 2 before the Legion has been summoned|n|cfff5962dTrains:|R Fel Guard, Burning Archer, Infernal|n|cfff5962dResearches:|R War Plating
+This unit gains 50% of damage done as health.
+}
+
+STRING 20506
+// Units: nnmg (Redeemed Highborne), Ubertip (Tooltip - Extended)
+{
+Ranged caster unit.|n|cfff5962dAbilities:|r Forked Lightning, Cyclone, Mana Shield|n|n|cff99b4d1Can only build 12.|r|n|cffffcc00Attacks land and air units.|R
 }
 
 STRING 20507
@@ -123032,6 +123032,12 @@ STRING 20508
 // Abilities: A124 (Take Flight), EditorSuffix (Editor Suffix)
 {
 (Nathrezim)
+}
+
+STRING 20509
+// Units: n034 (Guild Ranger), Ubertip (Tooltip - Extended)
+{
+Agile, deadly and skilled Archers of the Sentinels.|n|cfff5962dAbilities: |RAimed Shot, Resistant Skin, Elune's Grace, Shadowmeld|n|cfff5962dCan Learn:|R Wind Walk|n|n|cff99b4d1Can only train 12.|r|n|cffffcc00Attacks land and air units.|r
 }
 
 STRING 20510
@@ -123050,6 +123056,12 @@ STRING 20512
 // Abilities: A124 (Take Flight), Untip (Tooltip - Turn Off)
 {
 Land
+}
+
+STRING 20513
+// Abilities: Acny (Cyclone), EditorSuffix (Editor Suffix)
+{
+(Redeemed Highborn, Cthun Statue)
 }
 
 STRING 20514
@@ -123074,6 +123086,12 @@ STRING 20517
 // Units: o04P (Nathrezim Infiltrator), Casterupgradetip (Caster Upgrade Tips)
 {
 - Dark Regeneration,- Dark Regeneration|n- Charm,- Dark Regeneration|n- Charm|n- Take Flight
+}
+
+STRING 20518
+// Abilities: A0QQ (Aimed Shot), EditorSuffix (Editor Suffix)
+{
+(Guild Ranger)
 }
 
 STRING 20519
@@ -123164,5 +123182,29 @@ STRING 20533
 // Upgrades: R042 (Shaman Adept Training,Shaman Master Training), Ubertip (Tooltip - Extended)
 {
 Increases Nathrezims' mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Take Flight.
+}
+
+STRING 20534
+// Abilities: A0QQ (Aimed Shot), Ubertip (Tooltip - Normal - Extended)
+{
+Fires an enchanted arrow at an enemy target, dealing 80 damage and stunning the target for 4(0.2) seconds. 800 range. |nHas a 1.5 second cast time.
+}
+
+STRING 20535
+// Abilities: A0PK (Aimed Shot), Name (Name)
+{
+Aimed Shot
+}
+
+STRING 20536
+// Abilities: A127 (Demolish), Ubertip (Tooltip - Normal - Extended)
+{
+Causes attacks to do double damage to buildings.
+}
+
+STRING 20537
+// Upgrades: R068 (Chaos), Name (Name)
+{
+Quest Completed: Navigation
 }
 
