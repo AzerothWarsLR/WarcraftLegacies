@@ -334,6 +334,7 @@ gg_rct_TrollStartPos = nil
 gg_rct_ExodarBaseUnlock = nil
 gg_rct_DesolaceUnlock = nil
 gg_rct_DraeneiQuestKill = nil
+gg_rct_FountainUnlock = nil
 gg_snd_ArcaneObservatoryWhat1 = nil
 gg_snd_ArrangedTeamInvitation = nil
 gg_snd_ClanInvitation = nil
@@ -522,7 +523,6 @@ gg_snd_DoorCloseRemix = nil
 gg_snd_DoorOpenRemix = nil
 gg_snd_NuclearLaunchDetected = nil
 gg_snd_IllidansTheme = ""
-gg_rct_FountainUnlock = nil
 function InitGlobals()
 end
 

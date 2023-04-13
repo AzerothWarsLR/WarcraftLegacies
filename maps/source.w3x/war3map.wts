@@ -4828,6 +4828,12 @@ STRING 805
 Quest Completed: The Drakkari Fortress
 }
 
+STRING 806
+// Units: uabo (Abomination), Ubertip (Tooltip - Extended)
+{
+Amalgamation of corpses stiched into a foul creature.|n|cfff5962dAbilities:|R Demolish, Disease Cloud|n|n|cffffcc00Attacks land units.|r
+}
+
 STRING 807
 // Abilities: ANwk (Wind Walk), Ubertip (Tooltip - Normal - Extended)
 {
@@ -4940,6 +4946,12 @@ STRING 825
 // Units: ninc (Burning Archer), Tip (Tooltip - Basic)
 {
 Train Burning Archer
+}
+
+STRING 826
+// Abilities: A127 (Demolish), EditorSuffix (Editor Suffix)
+{
+(abomination)
 }
 
 STRING 827
@@ -111464,12 +111476,6 @@ STRING 18581
 A risen Elf spirit enslaved to the Scourge.|n|cfff5962dAbilities:|R Curse|n|cfff5962dCan Learn:|R Anti-magic Shell, Possession|n|n|cffffcc00Attacks land and air units.|R
 }
 
-STRING 18582
-// Units: uabo (Abomination), Ubertip (Tooltip - Extended)
-{
-Amalgamation of corpses stiched into a foul creature.|n|cfff5962dAbilities:|R Disease Cloud|n|n|cffffcc00Attacks land units.|r
-}
-
 STRING 18583
 // Units: oshm (Shaman), Ubertip (Tooltip - Extended)
 {
@@ -123188,5 +123194,17 @@ STRING 20535
 // Abilities: A0PK (Aimed Shot), Name (Name)
 {
 Aimed Shot
+}
+
+STRING 20536
+// Abilities: A127 (Demolish), Ubertip (Tooltip - Normal - Extended)
+{
+Causes attacks to do double damage to buildings.
+}
+
+STRING 20537
+// Upgrades: R068 (Chaos), Name (Name)
+{
+Quest Completed: Navigation
 }
 
