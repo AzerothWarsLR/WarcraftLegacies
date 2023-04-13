@@ -12060,6 +12060,12 @@ STRING 2010
 (Legion - Archer)
 }
 
+STRING 2011
+// Abilities: A129 (Exhume Corpses), EditorSuffix (Editor Suffix)
+{
+(Red - Flesh Titan)
+}
+
 STRING 2012
 // Units: h02O (Bladesman), EditorSuffix (Name - Editor Suffix)
 {
@@ -16619,6 +16625,12 @@ STRING 2772
 // Units: h07S (Guard Tower), Hotkey (Hotkey)
 {
 Z
+}
+
+STRING 2773
+// Abilities: A129 (Exhume Corpses), Ubertip (Tooltip - Normal - Extended)
+{
+Generates a corpse within the Plague Titan every <Aexh,Dur1> seconds.
 }
 
 STRING 2774
@@ -59817,6 +59829,12 @@ STRING 9968
 // Abilities: A0DQ (Poisonous Attacks), Ubertip (Tooltip - Normal - Extended)
 {
 Deals 5 poison damage per second and slows attack speed by 40%. |nLasts 10 seconds. 3 seconds on heroes
+}
+
+STRING 9969
+// Abilities: S00L (Cargo Hold), EditorSuffix (Editor Suffix)
+{
+(Red - Plague Titan)
 }
 
 STRING 9970
