@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Metadata;
 using MacroTools;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
@@ -84,11 +85,17 @@ namespace WarcraftLegacies.Source.Quests.Scourge
         : Player(PLAYER_NEUTRAL_AGGRESSIVE))
                          ?? Player(PLAYER_NEUTRAL_AGGRESSIVE);
 
+      var legion = FactionManager.GetFromName(FactionNames.Legion);
+
+      var plaguePlayer2 = (legion != null && legion.Player != null && legion.ScoreStatus != ScoreStatus.Defeated) ? legion.Player : Player(PLAYER_NEUTRAL_AGGRESSIVE) ?? Player(PLAYER_NEUTRAL_AGGRESSIVE);
+
       foreach (var plagueRect in _plagueRects)
       {
+
         var position = plagueRect.GetRandomPoint();
-        var plagueCauldron = CreateUnit(plaguePlayer, _plagueCauldronUnitTypeId, position.X, position.Y, 0)
-          .SetTimedLife(_duration);
+        var plagueCauldron = CreateUnit(plaguePlayer, _plagueCauldronUnitTypeId, position.X, position.Y, 0).SetTimedLife(_duration);
+
+        CreateUnit(plaguePlayer2, Constants.UNIT_U00D_LEGION_HERALD_LEGION_WORKER, position.X, position.Y, 0);
 
         var attackTarget = _attackTargets.OrderBy(x => MathEx.GetDistanceBetweenPoints(position, x)).First();
 
