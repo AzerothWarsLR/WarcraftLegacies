@@ -36,6 +36,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
     private readonly int _plagueCauldronUnitTypeId;
     private readonly List<Rectangle> _plagueRects;
     private readonly List<Point> _attackTargets;
+    private readonly unit _gilneasDoor;
 
     /// <summary>
     /// When completed, the quest holder initiates the Plague, creating Plague Cauldrons around Lordaeron
@@ -49,6 +50,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
       "The Cult of the Damned is prepared to unleash a devastating zombifying plague across the lands of Lordaeron.",
       "ReplaceableTextures\\CommandButtons\\BTNPlagueBarrel.blp")
     {
+      _gilneasDoor = preplacedUnitSystem.GetUnit(Constants.UNIT_H02K_GREYMANE_S_GATE_CLOSED).SetInvulnerable(true);
       _plagueVictim = plagueVictim;
       _plagueRects = plagueParameters.PlagueRects;
       _plagueCauldronUnitTypeId = plagueParameters.PlagueCauldronUnitTypeId;
@@ -123,6 +125,8 @@ namespace WarcraftLegacies.Source.Quests.Scourge
       if (completingFaction.Player != null)
         CreatePlagueCauldrons(completingFaction);
       completingFaction.AddPower(plaguePower);
+      _gilneasDoor
+        .SetInvulnerable(false);
       ResetLordaeronCpLevel();
       _portalController1.SetInvulnerable(false);
       _portalController2.SetInvulnerable(false);

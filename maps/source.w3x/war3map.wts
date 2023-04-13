@@ -12060,12 +12060,6 @@ STRING 2010
 (Legion - Archer)
 }
 
-STRING 2011
-// Abilities: A04V (Searing Arrows), Ubertip (Tooltip - Normal - Extended)
-{
-Adds <ACsa,DataA1> bonus fire damage to an attack against enemies
-}
-
 STRING 2012
 // Units: h02O (Bladesman), EditorSuffix (Name - Editor Suffix)
 {
@@ -16625,12 +16619,6 @@ STRING 2772
 // Units: h07S (Guard Tower), Hotkey (Hotkey)
 {
 Z
-}
-
-STRING 2773
-// Units: h09U (Elekk Knight), Ubertip (Tooltip - Extended)
-{
-Powerful Rider of the Exodar.|n|cfff5962dAbilities:|R Charge, Thick Skin|n |n|cff99b4d1Can only train 4.|n|cffffcc00Attacks land units and trees.|r
 }
 
 STRING 2774
@@ -23826,7 +23814,7 @@ Rain of Light - [|cffffcc00Level 2|r]
 }
 
 STRING 3972
-// Abilities: A0JQ (Rain of Light), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A0CX (Rain of Light), Ubertip (Tooltip - Normal - Extended)
 {
 Heal all friendly units in the target area for 130 hit points.
 }
@@ -24096,7 +24084,7 @@ Summon Ursoc
 }
 
 STRING 4017
-// Abilities: A0CX (Rain of Light), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A0JQ (Rain of Light), Ubertip (Tooltip - Normal - Extended)
 {
 Heal all friendly units in the target area for 100 hit points.
 }
@@ -59831,12 +59819,6 @@ STRING 9968
 Deals 5 poison damage per second and slows attack speed by 40%. |nLasts 10 seconds. 3 seconds on heroes
 }
 
-STRING 9969
-// Abilities: A0DP (Rain of Arrows), EditorSuffix (Editor Suffix)
-{
-(Nathanos)
-}
-
 STRING 9970
 // Abilities: A0HI (Taunt), Hotkey (Hotkey - Normal)
 {
@@ -59859,60 +59841,6 @@ STRING 9973
 // Abilities: A0DP (Rain of Arrows), Researchtip (Tooltip - Learn)
 {
 Learn Rain of Arrows
-}
-
-STRING 9974
-// Abilities: A0DP (Rain of Arrows), Researchubertip (Tooltip - Learn - Extended)
-{
-Bombards an area with arrows, stunning enemy land units for 1 second and damaging them. 1200 range. |n|n|cffffcc00Level 1|r - 200 total damage.|n|cffffcc00Level 2|r - 300 total damage.|n|cffffcc00Level 3|r - 400 total damage.|n|cffffcc00Level 4|r - 500 total damage.
-}
-
-STRING 9975
-// Abilities: A0DP (Rain of Arrows), Tip (Tooltip - Normal)
-{
-Rain of Arrows (|cffffff00Q|r)- [|cffffcc00Level 1|r]
-}
-
-STRING 9976
-// Abilities: A0DP (Rain of Arrows), Tip (Tooltip - Normal)
-{
-Rain of Arrows (|cffffff00Q|r)- [|cffffcc00Level 2|r]
-}
-
-STRING 9977
-// Abilities: A0DP (Rain of Arrows), Tip (Tooltip - Normal)
-{
-Rain of Arrows (|cffffff00Q|r)- [|cffffcc00Level 3|r]
-}
-
-STRING 9978
-// Abilities: A0DP (Rain of Arrows), Tip (Tooltip - Normal)
-{
-Rain of Arrows (|cffffff00Q|r)- [|cffffcc00Level 4|r]
-}
-
-STRING 9979
-// Abilities: A0DP (Rain of Arrows), Ubertip (Tooltip - Normal - Extended)
-{
-Bombards an area with arrows, dealing up to 200 damage to nearby enemy land units and stunning them for 1 seconds.
-}
-
-STRING 9980
-// Abilities: A0DP (Rain of Arrows), Ubertip (Tooltip - Normal - Extended)
-{
-Bombards an area with arrows, dealing up to 300 damage to nearby enemy land units and stunning them for 1 seconds.
-}
-
-STRING 9981
-// Abilities: A0DP (Rain of Arrows), Ubertip (Tooltip - Normal - Extended)
-{
-Bombards an area with arrows, dealing up to 400 damage to nearby enemy land units and stunning them for 1 seconds.
-}
-
-STRING 9982
-// Abilities: A0DP (Rain of Arrows), Ubertip (Tooltip - Normal - Extended)
-{
-Bombards an area with arrows, dealing up to 500 damage to nearby enemy land units and stunning them for 1 seconds.
 }
 
 STRING 9983
@@ -94330,27 +94258,21 @@ V
 }
 
 STRING 15725
-// Abilities: A0JQ (Rain of Light), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A0S7 (Rain of Light), Ubertip (Tooltip - Normal - Extended)
 {
 Heal all friendly units in the target area for 100 hit points.
 }
 
 STRING 15726
-// Abilities: A0JQ (Rain of Light), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A02W (Mass Unholy Frenzy), Ubertip (Tooltip - Normal - Extended)
 {
 Heal all friendly units in the target area for 100 hit points.
 }
 
 STRING 15727
-// Abilities: A0S7 (Rain of Light), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A0JQ (Rain of Light), Ubertip (Tooltip - Normal - Extended)
 {
 Heal all friendly units in the target area for 130 hit points.
-}
-
-STRING 15728
-// Abilities: A0S7 (Rain of Light), Ubertip (Tooltip - Normal - Extended)
-{
-Heal all friendly units in the target area for 100 hit points.
 }
 
 STRING 15729
@@ -99376,7 +99298,7 @@ STRING 16565
 }
 
 STRING 16566
-// Abilities: A0S7 (Rain of Light), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A0JQ (Rain of Light), Ubertip (Tooltip - Normal - Extended)
 {
 Heal all friendly units in the target area for 130 hit points.
 }
@@ -100174,7 +100096,7 @@ Sleek vessel of naval prowess, guardian of the lands.|n|cfff5962dAbilities:|R Re
 }
 
 STRING 16699
-// Abilities: A02W (Mass Unholy Frenzy), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A0S7 (Rain of Light), Ubertip (Tooltip - Normal - Extended)
 {
 Heal all friendly units in the target area for 130 hit points.
 }
@@ -103375,12 +103297,6 @@ STRING 17232
 // Units: n0CD (Bloodkin), Casterupgradename (Caster Upgrade Names)
 {
 Initiate,Adept,Master
-}
-
-STRING 17233
-// Abilities: A02W (Mass Unholy Frenzy), Ubertip (Tooltip - Normal - Extended)
-{
-Heal all friendly units in the target area for 100 hit points.
 }
 
 STRING 17234
@@ -111476,6 +111392,12 @@ STRING 18581
 A risen Elf spirit enslaved to the Scourge.|n|cfff5962dAbilities:|R Curse|n|cfff5962dCan Learn:|R Anti-magic Shell, Possession|n|n|cffffcc00Attacks land and air units.|R
 }
 
+STRING 18582
+// Units: nfgl (Plague Titan), Ubertip (Tooltip - Extended)
+{
+Massive Flesh Golem, the ultimate fleshwork creation.|n|cfff5962dAbilities:|R Create Corpse, Disease Cloud, Spawn Plagueling|n|n|cff99b4d1Can only train 2.|r|n|cffffcc00Attacks land units.|r
+}
+
 STRING 18583
 // Units: oshm (Shaman), Ubertip (Tooltip - Extended)
 {
@@ -111499,12 +111421,6 @@ STRING 18586
 // Units: nska (Skeleton Archer), Ubertip (Tooltip - Extended)
 {
 Reanimated archer of the Scourge.|n|cfff5962dAbilities:|R Skeletal Frame|n|cfff5962dCan Learn:|R Cold Arrows|n|n|cffffcc00Attacks land and air units.|r
-}
-
-STRING 18587
-// Units: nfgl (Plague Titan), Ubertip (Tooltip - Extended)
-{
-Massive Flesh Golem, the ultimate fleshwork creation.|n|cfff5962dAbilities:|R Disease Cloud, Spawn Plagueling|n|n|cff99b4d1Can only train 2.|r|n|cffffcc00Attacks land units.|r
 }
 
 STRING 18588
@@ -123206,5 +123122,95 @@ STRING 20537
 // Upgrades: R068 (Chaos), Name (Name)
 {
 Quest Completed: Navigation
+}
+
+STRING 20538
+// Units: h09U (Elekk Knight), Ubertip (Tooltip - Extended)
+{
+Powerful Rider of the Exodar.|n|cfff5962dAbilities:|R Charge, Thick Skin, Resistant Skin|n |n|cff99b4d1Can only train 4.|n|cffffcc00Attacks land units and trees.|r
+}
+
+STRING 20539
+// Abilities: A0DP (Rain of Arrows), EditorSuffix (Editor Suffix)
+{
+(Tyrande - Nathanos)
+}
+
+STRING 20540
+// Abilities: A0DP (Rain of Arrows), Researchubertip (Tooltip - Learn - Extended)
+{
+Bombards an area with arrows, stunning enemy land units for 2 second and damaging them. 1200 range. |n|n|cffffcc00Level 1|r - 200 total damage.|n|cffffcc00Level 2|r - 300 total damage.|n|cffffcc00Level 3|r - 400 total damage.|n|cffffcc00Level 4|r - 500 total damage.
+}
+
+STRING 20541
+// Abilities: A0DP (Rain of Arrows), Tip (Tooltip - Normal)
+{
+Rain of Arrows - [|cffffcc00Level 1|r]
+}
+
+STRING 20542
+// Abilities: A0DP (Rain of Arrows), Tip (Tooltip - Normal)
+{
+Rain of Arrows - [|cffffcc00Level 2|r]
+}
+
+STRING 20543
+// Abilities: A0DP (Rain of Arrows), Tip (Tooltip - Normal)
+{
+Rain of Arrows - [|cffffcc00Level 3|r]
+}
+
+STRING 20544
+// Abilities: A0DP (Rain of Arrows), Tip (Tooltip - Normal)
+{
+Rain of Arrows - [|cffffcc00Level 4|r]
+}
+
+STRING 20545
+// Abilities: A0DP (Rain of Arrows), Ubertip (Tooltip - Normal - Extended)
+{
+Bombards an area with arrows, dealing up to 200 damage to nearby enemy land units and stunning them for 2 seconds.
+}
+
+STRING 20546
+// Abilities: A0DP (Rain of Arrows), Ubertip (Tooltip - Normal - Extended)
+{
+Bombards an area with arrows, dealing up to 300 damage to nearby enemy land units and stunning them for 2 seconds.
+}
+
+STRING 20547
+// Abilities: A0DP (Rain of Arrows), Ubertip (Tooltip - Normal - Extended)
+{
+Bombards an area with arrows, dealing up to 400 damage to nearby enemy land units and stunning them for 2 seconds.
+}
+
+STRING 20548
+// Abilities: A0DP (Rain of Arrows), Ubertip (Tooltip - Normal - Extended)
+{
+Bombards an area with arrows, dealing up to 500 damage to nearby enemy land units and stunning them for 2 seconds.
+}
+
+STRING 20549
+// Abilities: A04V (Searing Arrows), Ubertip (Tooltip - Normal - Extended)
+{
+Adds 24 bonus fire damage to an attack against enemies
+}
+
+STRING 20550
+// Abilities: A0S7 (Rain of Light), Ubertip (Tooltip - Normal - Extended)
+{
+Heal all friendly units in the target area for 130 hit points.
+}
+
+STRING 20551
+// Abilities: A02W (Mass Unholy Frenzy), Ubertip (Tooltip - Normal - Extended)
+{
+Heal all friendly units in the target area for 130 hit points.
+}
+
+STRING 20552
+// Abilities: A128 (Create Corpse), EditorSuffix (Editor Suffix)
+{
+(Flesh Titan)
 }
 
