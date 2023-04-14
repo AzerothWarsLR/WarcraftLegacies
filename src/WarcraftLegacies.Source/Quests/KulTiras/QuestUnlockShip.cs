@@ -10,6 +10,8 @@ using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using System.Linq;
+using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
+using MacroTools.ControlPointSystem;
 
 namespace WarcraftLegacies.Source.Quests.KulTiras
 {
@@ -34,6 +36,7 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
       "ReplaceableTextures\\CommandButtons\\BTNGalleonIcon.blp")
     {
       AddObjective(new ObjectiveControlCapital(legendBoralus, false));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N09K_CRESTFALL_10GOLD_MIN)));
       AddObjective(new ObjectiveControlLegend(daelinProudmoore, false));
       AddObjective(new ObjectiveResearch(Constants.UPGRADE_R05J_STRANGLETHORN_EXPEDITION_KULTIRAS, Constants.UNIT_H046_BORALUS_KEEP_KUL_TIRAS));
       AddObjective(new ObjectiveSelfExists());

@@ -49306,12 +49306,6 @@ STRING 8214
 Kill the caster
 }
 
-STRING 8215
-// Units: u006 (Summoning Circle), Ubertip (Tooltip - Extended)
-{
-Summoning site for the Void demons of the Burning Legion.|r|n|cff99b4d1Can only build 3 before the Legion has been summoned|n|cfff5962dTrains:|R Eredar Summoner, Succubus|n|cfff5962dResearches:|R Eredar Summoner Training, Succubus Training
-}
-
 STRING 8216
 // Abilities: A0QP (Immolation), EditorSuffix (Editor Suffix)
 {
@@ -67815,12 +67809,6 @@ STRING 11299
 // Abilities: A04I (Call of the Void), Researchhotkey (Hotkey - Learn)
 {
 R
-}
-
-STRING 11300
-// Units: n04Q (Nether Pit), Ubertip (Tooltip - Extended)
-{
-Summoning site for minor demons.|r|n|cff99b4d1Can only build 3 before the Legion has been summoned|n|cfff5962dTrains:|R Fel Guard, Burning Archer, Infernal|n|cfff5962dResearches:|R War Plating
 }
 
 STRING 11301
@@ -106372,6 +106360,12 @@ STRING 17731
 Elite Nathrezim, handpicked by Tichondrius himself.|n|cfff5962dAbilities:|R Carrion Swarm, Sleep, Vampiric Attack|n|cfff5962dCan Learn:|R Astral Walk, Sight of Sargeras|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land units.|r
 }
 
+STRING 17732
+// Units: u006 (Summoning Circle), Ubertip (Tooltip - Extended)
+{
+Summoning site for the Void demons of the Burning Legion.|r|n|cff99b4d1Can only build 2 before the Legion has been summoned. 12 post-summon.|n|cfff5962dTrains:|R Eredar Summoner, Succubus|n|cfff5962dResearches:|R Eredar Summoner Training, Succubus Training
+}
+
 STRING 17733
 // Units: o04P (Nathrezim Infiltrator), Ubertip (Tooltip - Extended)
 {
@@ -111351,7 +111345,7 @@ STRING 18561
 }
 
 STRING 18562
-// Upgrades: Rora (Steel Ranged Weapons,Thorium Ranged Weapons,Arcanite Ranged Weapons), Hotkey (Hotkey)
+// Abilities: A12B (Hound Companion), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -111381,7 +111375,7 @@ Gilneas Cathedral
 }
 
 STRING 18567
-// Upgrades: Rora (Steel Ranged Weapons,Thorium Ranged Weapons,Arcanite Ranged Weapons), Hotkey (Hotkey)
+// Abilities: A12B (Hound Companion), Unhotkey (Hotkey - Turn Off)
 {
 W
 }
@@ -114292,7 +114286,7 @@ Mass Unholy Armor - [|cffffcc00Level 2|r]
 }
 
 STRING 19052
-// Upgrades: Rhra (Black Gunpowder,Refined Gunpowder,Imbued Gunpowder), Hotkey (Hotkey)
+// Upgrades: Rora (Steel Ranged Weapons,Thorium Ranged Weapons,Arcanite Ranged Weapons), Hotkey (Hotkey)
 {
 W
 }
@@ -115072,7 +115066,7 @@ Medium dragon of the Dragonmaw Clan.|n|r|n|cffffcc00Attacks land and air units.|
 }
 
 STRING 19182
-// Upgrades: Rhra (Black Gunpowder,Refined Gunpowder,Imbued Gunpowder), Hotkey (Hotkey)
+// Upgrades: Rora (Steel Ranged Weapons,Thorium Ranged Weapons,Arcanite Ranged Weapons), Hotkey (Hotkey)
 {
 W
 }
@@ -118823,7 +118817,7 @@ Thunder Fists - [|cffffcc00Level 4|r]
 }
 
 STRING 19807
-// Upgrades: Rhac (Improved Masonry,Advanced Masonry,Imbued Masonry), Hotkey (Hotkey)
+// Upgrades: Rhra (Black Gunpowder,Refined Gunpowder,Imbued Gunpowder), Hotkey (Hotkey)
 {
 W
 }
@@ -119807,7 +119801,7 @@ STRING 19970
 }
 
 STRING 19971
-// Upgrades: Rhac (Improved Masonry,Advanced Masonry,Imbued Masonry), Hotkey (Hotkey)
+// Upgrades: Rhra (Black Gunpowder,Refined Gunpowder,Imbued Gunpowder), Hotkey (Hotkey)
 {
 W
 }
@@ -121115,7 +121109,7 @@ Enchanted Bolt
 }
 
 STRING 20189
-// Upgrades: R01B (Defend), Hotkey (Hotkey)
+// Upgrades: Rhac (Improved Masonry,Advanced Masonry,Imbued Masonry), Hotkey (Hotkey)
 {
 W
 }
@@ -121229,7 +121223,7 @@ This unit is under the effects of Time's Shield, and is invulnerable.
 }
 
 STRING 20208
-// Abilities: A12B (Hound Companion), Hotkey (Hotkey - Normal)
+// Upgrades: Rhlh (Improved Lumber Harvesting,Advanced Lumber Harvesting), Hotkey (Hotkey)
 {
 E
 }
@@ -121241,7 +121235,7 @@ STRING 20209
 }
 
 STRING 20210
-// Abilities: A12B (Hound Companion), Unhotkey (Hotkey - Turn Off)
+// Upgrades: Rhlh (Improved Lumber Harvesting,Advanced Lumber Harvesting), Hotkey (Hotkey)
 {
 E
 }
@@ -121439,13 +121433,13 @@ Time's Shield
 }
 
 STRING 20243
-// Upgrades: Rhlh (Improved Lumber Harvesting,Advanced Lumber Harvesting), Hotkey (Hotkey)
+// Upgrades: Renb (Nature's Blessing), Hotkey (Hotkey)
 {
 E
 }
 
 STRING 20244
-// Upgrades: Rhlh (Improved Lumber Harvesting,Advanced Lumber Harvesting), Hotkey (Hotkey)
+// Upgrades: Renb (Nature's Blessing), Hotkey (Hotkey)
 {
 E
 }
@@ -121457,7 +121451,7 @@ E
 }
 
 STRING 20246
-// Upgrades: Renb (Nature's Blessing), Hotkey (Hotkey)
+// Upgrades: R06K (Defend), Hotkey (Hotkey)
 {
 E
 }
@@ -121661,7 +121655,7 @@ Arcane Absorption - [|cffffcc00Level 3|r]
 }
 
 STRING 20280
-// Upgrades: Renb (Nature's Blessing), Hotkey (Hotkey)
+// Upgrades: R06G (Defend), Hotkey (Hotkey)
 {
 E
 }
@@ -121721,7 +121715,7 @@ Innacurate bombardment of an area with 30 waves of one cannonball. Each ball dea
 }
 
 STRING 20290
-// Upgrades: R07I (Necromancer Adept Training,Necromancer Master Training), Hotkey (Hotkey)
+// Upgrades: Rhac (Improved Masonry,Advanced Masonry,Imbued Masonry), Hotkey (Hotkey)
 {
 W
 }
@@ -122333,7 +122327,7 @@ D
 }
 
 STRING 20392
-// Upgrades: R06K (Defend), Hotkey (Hotkey)
+// Upgrades: R06F (Defend), Hotkey (Hotkey)
 {
 E
 }
@@ -122735,7 +122729,7 @@ STRING 20458
 }
 
 STRING 20459
-// Upgrades: R06G (Defend), Hotkey (Hotkey)
+// Upgrades: R064 (Nature's Blessing), Hotkey (Hotkey)
 {
 E
 }
@@ -122855,7 +122849,7 @@ STRING 20478
 }
 
 STRING 20479
-// Upgrades: R06F (Defend), Hotkey (Hotkey)
+// Upgrades: R03M (Defend), Hotkey (Hotkey)
 {
 E
 }
@@ -123005,7 +122999,7 @@ STRING 20503
 }
 
 STRING 20504
-// Upgrades: R064 (Nature's Blessing), Hotkey (Hotkey)
+// Upgrades: R02P (Backpack), Hotkey (Hotkey)
 {
 E
 }
@@ -123065,19 +123059,19 @@ STRING 20513
 }
 
 STRING 20514
-// Upgrades: R03M (Defend), Hotkey (Hotkey)
+// Upgrades: R03O (Animal War Training), Hotkey (Hotkey)
 {
 E
 }
 
 STRING 20515
-// Upgrades: R07I (Necromancer Adept Training,Necromancer Master Training), Hotkey (Hotkey)
+// Upgrades: R01B (Defend), Hotkey (Hotkey)
 {
 W
 }
 
 STRING 20516
-// Upgrades: R02P (Backpack), Hotkey (Hotkey)
+// Upgrades: R03O (Animal War Training), Hotkey (Hotkey)
 {
 E
 }
@@ -123335,7 +123329,7 @@ STRING 20558
 }
 
 STRING 20559
-// Upgrades: R03O (Animal War Training), Hotkey (Hotkey)
+// Upgrades: R097 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 E
 }
@@ -123358,21 +123352,27 @@ STRING 20562
 Summon a Fel Stalker to fight for 60 seconds.
 }
 
-STRING 20563
-// Upgrades: R03O (Animal War Training), Hotkey (Hotkey)
-{
-E
-}
-
-STRING 20564
-// Upgrades: R097 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
-{
-E
-}
-
 STRING 20565
 // Units: n04H (Fel Guard), Ubertip (Tooltip - Extended)
 {
 Mainstay soldier of the Legion.|n|cfff5962dAbilities:|R Hound Companion, Combat Experience, War Plating, Charge|n|n|cffffcc00Attacks land units.|r
+}
+
+STRING 20566
+// Units: n04Q (Nether Pit), Ubertip (Tooltip - Extended)
+{
+Summoning site for minor demons.|r|n|cff99b4d1Can only build 2 before the Legion has been summoned. 12 post-summon.|n|cfff5962dTrains:|R Fel Guard, Burning Archer, Infernal|n|cfff5962dResearches:|R War Plating
+}
+
+STRING 20567
+// Upgrades: R07I (Necromancer Adept Training,Necromancer Master Training), Hotkey (Hotkey)
+{
+W
+}
+
+STRING 20568
+// Upgrades: R07I (Necromancer Adept Training,Necromancer Master Training), Hotkey (Hotkey)
+{
+W
 }
 
