@@ -106372,12 +106372,6 @@ STRING 17731
 Elite Nathrezim, handpicked by Tichondrius himself.|n|cfff5962dAbilities:|R Carrion Swarm, Sleep, Vampiric Attack|n|cfff5962dCan Learn:|R Astral Walk, Sight of Sargeras|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land units.|r
 }
 
-STRING 17732
-// Units: n04H (Fel Guard), Ubertip (Tooltip - Extended)
-{
-Mainstay soldier of the Legion.|n|cfff5962dAbilities:|R Combat Experience, War Plating, Charge|n|n|cffffcc00Attacks land units.|r
-}
-
 STRING 17733
 // Units: o04P (Nathrezim Infiltrator), Ubertip (Tooltip - Extended)
 {
@@ -123374,5 +123368,11 @@ STRING 20564
 // Upgrades: R097 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 E
+}
+
+STRING 20565
+// Units: n04H (Fel Guard), Ubertip (Tooltip - Extended)
+{
+Mainstay soldier of the Legion.|n|cfff5962dAbilities:|R Hound Companion, Combat Experience, War Plating, Charge|n|n|cffffcc00Attacks land units.|r
 }
 
