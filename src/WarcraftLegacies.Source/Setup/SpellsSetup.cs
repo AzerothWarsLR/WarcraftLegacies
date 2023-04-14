@@ -214,6 +214,7 @@ namespace WarcraftLegacies.Source.Setup
       IronforgeSpellSetup.Setup();
       SentinelSpellSetup.Setup();
       DalaranSpellSetup.Setup();
+      TrollSpellSetup.Setup();
       SharedSpellSetup.Setup();
     }
   }

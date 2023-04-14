@@ -1,8 +1,10 @@
 ﻿using System.Collections.Generic;
 using MacroTools;
+using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
+using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
 using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
@@ -25,10 +27,12 @@ namespace WarcraftLegacies.Source.Quests.Zandalar
     /// <param name="feathermoon"></param>
     /// <param name="rescueRect"></param>
     /// <param name="preplacedUnitSystem"></param>
-    public QuestZandalar(Capital feathermoon, Rectangle rescueRect, PreplacedUnitSystem preplacedUnitSystem) : base("City of Gold", "We need to regain control of our land.",
+    public QuestZandalar(Rectangle rescueRect, PreplacedUnitSystem preplacedUnitSystem) : base("City of Gold", "We need to regain control of our land.",
       "ReplaceableTextures\\CommandButtons\\BTNBloodTrollMage.blp")
     {
-      AddObjective(new ObjectiveCapitalDead(feathermoon));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N092_ZUL_FARRAK_10GOLD_MIN)));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N0BK_LOST_CITY_OF_THE_TOL_VIR_25GOLD_MIN)));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N047_SILITHUS_10GOLD_MIN)));
       AddObjective(new ObjectiveUpgrade(Constants.UNIT_O03Z_FORTRESS_ZANDALARI_T3, Constants.UNIT_O03Y_STRONGHOLD_ZANDALARI_T2));
       AddObjective(new ObjectiveSelfExists());
       ResearchId = Constants.UPGRADE_R04W_QUEST_COMPLETED_CITY_OF_GOLD;

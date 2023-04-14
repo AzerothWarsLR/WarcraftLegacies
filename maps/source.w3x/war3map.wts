@@ -11682,12 +11682,6 @@ STRING 1947
 Learn Slipstream - [|cffffcc00Level %d|r]
 }
 
-STRING 1948
-// Units: n092 (Zul'Farrak (10gold/min)), Name (Name)
-{
-Zul'Farrak (10gold/min)
-}
-
 STRING 1949
 // Units: n091 (Doomfire Abyssal), EditorSuffix (Name - Editor Suffix)
 {
@@ -14013,12 +14007,6 @@ STRING 2336
 Summoned golem of fel flames.|n|cfff5962dAbilities:|R Spell Immunity, Permanent Immoliation, Resistant Skin|n|r|n|cffffcc00Attacks land units.|r
 }
 
-STRING 2337
-// Units: n05C (Gadgetzan (10gold/min)), Name (Name)
-{
-Gadgetzan (10gold/min)
-}
-
 STRING 2338
 // Units: h03X (Sentinel Tower), Hotkey (Hotkey)
 {
@@ -14444,6 +14432,18 @@ STRING 2408
 // Units: h065 (Refuge), Hotkey (Hotkey)
 {
 Q
+}
+
+STRING 2409
+// Units: nwgs (Couatl), Ubertip (Tooltip - Extended)
+{
+Agile flying creature of the Illidari.|n|cfff5962dAbilities:|R Prioritise.|n |n|cff99b4d1Can only train 8.|r|n|cffffcc00Attacks land and air units.|r
+}
+
+STRING 2410
+// Units: n092 (Zul'Farrak (20gold/min)), Name (Name)
+{
+Zul'Farrak (20gold/min)
 }
 
 STRING 2411
@@ -18960,6 +18960,12 @@ STRING 3162
 Q
 }
 
+STRING 3163
+// Units: n05C (Gadgetzan (25gold/min)), Name (Name)
+{
+Gadgetzan (25gold/min)
+}
+
 STRING 3164
 // Abilities: A029 (Summon Water Elemental), Ubertip (Tooltip - Normal - Extended)
 {
@@ -23068,12 +23074,6 @@ STRING 3848
 Revive Envoy of Archimonde
 }
 
-STRING 3849
-// Units: nwgs (Couatl), Ubertip (Tooltip - Extended)
-{
-Agile flying creature of the Illidari.|n|cfff5962dAbilities:|R Prioritise.|n |n|cff99b4d1Can only train 12.|r|n|cffffcc00Attacks land and air units.|r
-}
-
 STRING 3850
 // Units: Ubal (Envoy of Archimonde), Tip (Tooltip - Basic)
 {
@@ -25185,12 +25185,6 @@ STRING 4201
 // Items: I01V (Gorehowl), Tip (Tooltip - Basic)
 {
 The axe of Grom Hellscream has sown terror across hundreds of battlefields.
-}
-
-STRING 4202
-// Items: I01V (Gorehowl), Ubertip (Tooltip - Extended)
-{
-|cffff8c00Artifact|r|nIncreases the Agillity of the hero by 6, attack damage by 15 and attack speed by 15%.|nOn activation, increases the attackspeed by 65% but the Hero also takes more damage for 10 seconds.|n|cffffcc00Lore|r|n|cffffdeadThe axe has sown terror across hundreds of battlefields. When swung, the axe sings its own sickening battle cry.|r
 }
 
 STRING 4203
@@ -65361,12 +65355,6 @@ STRING 10893
 // Abilities: A0D6 (Chain of the Void), Hotkey (Hotkey - Normal)
 {
 Q
-}
-
-STRING 10894
-// Abilities: A097 (Exact Justice), Researchubertip (Tooltip - Learn - Extended)
-{
-Uther channels the Light for 6 seconds, preventing all nearby friendly units from taking damage. When Divine Justice finishes casting, all nearby enemy units take damage. If Divine Justice is interrupted, it instead deals damage proportional to how long it was channeled for.|n|n|cffffcc00Level 1|r - Deals 150 damage. |n|cffffcc00Level 2|r - Deals 350 damage. |n|cffffcc00Level 3|r - Deals 600 damage.
 }
 
 STRING 10895
@@ -123352,6 +123340,12 @@ STRING 20563
 Summons an Imp. Has <n04J,realHP> hit points and deals <n04J,mindmg1> - <n04J,maxdmg1> damage. |nLasts <A0AT,Dur1> seconds.|n|n|cfff5962dAbilities:|R Mana Burn, Feedback, Spell Resistance |n|n|cffffcc00Attacks land units.|r
 }
 
+STRING 20564
+// Items: I01V (Gorehowl), Ubertip (Tooltip - Extended)
+{
+|cffff8c00Artifact|r|nIncreases the Agillity of the hero by 6, attack damage by 15 and attack speed by 15%.|nOn activation, increases the attackspeed by 65% but the Hero also takes more damage for 15 seconds.|n|cffffcc00Lore|r|n|cffffdeadThe axe has sown terror across hundreds of battlefields. When swung, the axe sings its own sickening battle cry.|r
+}
+
 STRING 20565
 // Units: n04H (Fel Guard), Ubertip (Tooltip - Extended)
 {
@@ -123374,5 +123368,11 @@ STRING 20568
 // Upgrades: R07I (Necromancer Adept Training,Necromancer Master Training), Hotkey (Hotkey)
 {
 W
+}
+
+STRING 20569
+// Abilities: A097 (Exact Justice), Researchubertip (Tooltip - Learn - Extended)
+{
+The hero channels the Light for 6 seconds, preventing all nearby friendly units from taking damage. When Divine Justice finishes casting, all nearby enemy units take damage. If Divine Justice is interrupted, it instead deals damage proportional to how long it was channeled for.|n|n|cffffcc00Level 1|r - Deals 150 damage. |n|cffffcc00Level 2|r - Deals 350 damage. |n|cffffcc00Level 3|r - Deals 600 damage.
 }
 

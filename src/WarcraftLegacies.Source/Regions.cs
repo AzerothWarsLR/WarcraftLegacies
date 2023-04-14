@@ -315,7 +315,7 @@ public static class Regions
 	public static Rectangle IslandBlocker1 { get; set; } = new Rectangle(416f, 2048f, 1440f, 2336f);
 	public static Rectangle IslandBlocker2 { get; set; } = new Rectangle(-2048f, 2048f, -1024f, 2336f);
 	public static Rectangle IslandBlocker3 { get; set; } = new Rectangle(1536f, -3456f, 2560f, -3168f);
-	public static Rectangle IslandBlocker4 { get; set; } = new Rectangle(768f, -10496f, 1792f, -10208f);
+	public static Rectangle IslandBlocker4 { get; set; } = new Rectangle(-960f, -15104f, -512f, -14144f);
 	public static Rectangle IslandBlocker5 { get; set; } = new Rectangle(512f, -9216f, 800f, -8416f);
 	public static Rectangle IllidariUnlockSA { get; set; } = new Rectangle(12000f, -22816f, 13376f, -21280f);
 	public static Rectangle BootyBayQuest { get; set; } = new Rectangle(9696f, -24160f, 12032f, -22304f);

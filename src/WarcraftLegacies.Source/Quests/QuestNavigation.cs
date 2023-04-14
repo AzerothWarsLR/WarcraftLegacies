@@ -18,7 +18,7 @@ namespace WarcraftLegacies.Source.Quests
       "The rough waters of Azeroth will require time to master.",
       @"ReplaceableTextures\CommandButtons\BTNHumanTransport.blp")
     {
-      AddObjective(new ObjectiveTime(900));
+      AddObjective(new ObjectiveTime(780));
       Shared = true;
       ResearchId = Constants.UPGRADE_R068_QUEST_COMPLETED_NAVIGATION;
     }
@@ -27,7 +27,7 @@ namespace WarcraftLegacies.Source.Quests
     protected override string RewardDescription => "Boats will be trainable.";
 
     /// <inheritdoc/>
-    protected override string RewardFlavour => "Navigation will become available.";
+    protected override string RewardFlavour => "Navigation has become available.";
 
   }
 }
