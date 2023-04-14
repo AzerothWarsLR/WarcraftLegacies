@@ -8930,7 +8930,7 @@ Teleports the hero a short distance, allowing him to move in and out of combat.
 }
 
 STRING 1489
-// Units: n04J (Fel Creeper), EditorSuffix (Name - Editor Suffix)
+// Units: n04J (Imp), EditorSuffix (Name - Editor Suffix)
 {
 (Legion)
 }
@@ -13523,7 +13523,7 @@ STRING 2254
 }
 
 STRING 2255
-// Units: n04J (Fel Creeper), Hotkey (Hotkey)
+// Units: n04J (Imp), Hotkey (Hotkey)
 {
 Q
 }
@@ -14446,20 +14446,8 @@ STRING 2408
 Q
 }
 
-STRING 2409
-// Units: n04J (Fel Creeper), Name (Name)
-{
-Fel Creeper
-}
-
-STRING 2410
-// Units: n04J (Fel Creeper), Tip (Tooltip - Basic)
-{
-Summon Fel Creeper
-}
-
 STRING 2411
-// Units: n04J (Fel Creeper), Ubertip (Tooltip - Extended)
+// Units: n04J (Imp), Ubertip (Tooltip - Extended)
 {
 Demonic beast, hunter of mages and all magic.|n|cfff5962dAbilities:|R Mana Burn, Feedback, Spell Resistance|n|cfff5962dCan Learn:|R Acute Senses |n|n|cffffcc00Attacks land units.|r
 }
@@ -18970,12 +18958,6 @@ STRING 3162
 // Units: h018 (Defender), Hotkey (Hotkey)
 {
 Q
-}
-
-STRING 3163
-// Abilities: A0AT (Summon Minion), Ubertip (Tooltip - Normal - Extended)
-{
-Summons a Fel Creeper. Has <n04J,realHP> hit points and deals <n04J,mindmg1> - <n04J,maxdmg1> damage. |nLasts <A0AT,Dur1> seconds.|n|n|cfff5962dAbilities:|R Mana Burn, Feedback, Spell Resistance|n|cfff5962dCan learn:|R Acute Senses |n|n|cffffcc00Attacks land units.|r
 }
 
 STRING 3164
@@ -49306,6 +49288,12 @@ STRING 8214
 Kill the caster
 }
 
+STRING 8215
+// Units: n04J (Imp), Name (Name)
+{
+Imp
+}
+
 STRING 8216
 // Abilities: A0QP (Immolation), EditorSuffix (Editor Suffix)
 {
@@ -67809,6 +67797,12 @@ STRING 11299
 // Abilities: A04I (Call of the Void), Researchhotkey (Hotkey - Learn)
 {
 R
+}
+
+STRING 11300
+// Units: n04J (Imp), Tip (Tooltip - Basic)
+{
+Summon Imp
 }
 
 STRING 11301
@@ -123350,6 +123344,12 @@ STRING 20562
 // Abilities: A12B (Hound Companion), Ubertip (Tooltip - Normal - Extended)
 {
 Summon a Fel Stalker to fight for 60 seconds.
+}
+
+STRING 20563
+// Abilities: A0AT (Summon Minion), Ubertip (Tooltip - Normal - Extended)
+{
+Summons an Imp. Has <n04J,realHP> hit points and deals <n04J,mindmg1> - <n04J,maxdmg1> damage. |nLasts <A0AT,Dur1> seconds.|n|n|cfff5962dAbilities:|R Mana Burn, Feedback, Spell Resistance |n|n|cffffcc00Attacks land units.|r
 }
 
 STRING 20565
