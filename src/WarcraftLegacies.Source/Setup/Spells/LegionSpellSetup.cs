@@ -66,7 +66,15 @@ namespace WarcraftLegacies.Source.Setup.Spells
       {
         Target = InstantKill.KillTarget.Self
       });
-        
+
+      var summonFelHounds = new SummonUnits(Constants.ABILITY_A12B_HOUND_COMPANION_LEGION_FELGUARD)
+      {
+        SummonUnitTypeId = Constants.UNIT_NFEL_FEL_STALKER_SUMMONER_WARLOCK_EYE_OF_SARGERAS,
+        SummonCount = 1,
+        Duration = 60,
+        Radius = 50,
+      };
+      SpellSystem.Register(summonFelHounds);
     }
   }
 }

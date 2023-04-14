@@ -47164,6 +47164,12 @@ STRING 7857
 Greater Holy Light
 }
 
+STRING 7858
+// Abilities: A12B (Hound Companion), EditorSuffix (Editor Suffix)
+{
+(legion - Felguard)
+}
+
 STRING 7859
 // Abilities: A0T6 (Light's Judgement), EditorSuffix (Editor Suffix)
 {
@@ -103107,6 +103113,12 @@ STRING 17188
 Dark Iron Building 1
 }
 
+STRING 17189
+// Abilities: A12B (Hound Companion), Name (Name)
+{
+Hound Companion
+}
+
 STRING 17190
 // Units: O00Y (Dragonmaw Chieftain), Ubertip (Tooltip - Extended)
 {
@@ -121223,7 +121235,7 @@ This unit is under the effects of Time's Shield, and is invulnerable.
 }
 
 STRING 20208
-// Upgrades: Rhlh (Improved Lumber Harvesting,Advanced Lumber Harvesting), Hotkey (Hotkey)
+// Abilities: A12B (Hound Companion), Hotkey (Hotkey - Normal)
 {
 E
 }
@@ -121235,7 +121247,7 @@ STRING 20209
 }
 
 STRING 20210
-// Upgrades: Rhlh (Improved Lumber Harvesting,Advanced Lumber Harvesting), Hotkey (Hotkey)
+// Abilities: A12B (Hound Companion), Unhotkey (Hotkey - Turn Off)
 {
 E
 }
@@ -121433,13 +121445,13 @@ Time's Shield
 }
 
 STRING 20243
-// Upgrades: Renb (Nature's Blessing), Hotkey (Hotkey)
+// Upgrades: Rhlh (Improved Lumber Harvesting,Advanced Lumber Harvesting), Hotkey (Hotkey)
 {
 E
 }
 
 STRING 20244
-// Upgrades: Renb (Nature's Blessing), Hotkey (Hotkey)
+// Upgrades: Rhlh (Improved Lumber Harvesting,Advanced Lumber Harvesting), Hotkey (Hotkey)
 {
 E
 }
@@ -121451,7 +121463,7 @@ E
 }
 
 STRING 20246
-// Upgrades: R06K (Defend), Hotkey (Hotkey)
+// Upgrades: Renb (Nature's Blessing), Hotkey (Hotkey)
 {
 E
 }
@@ -121655,7 +121667,7 @@ Arcane Absorption - [|cffffcc00Level 3|r]
 }
 
 STRING 20280
-// Upgrades: R06G (Defend), Hotkey (Hotkey)
+// Upgrades: Renb (Nature's Blessing), Hotkey (Hotkey)
 {
 E
 }
@@ -122327,7 +122339,7 @@ D
 }
 
 STRING 20392
-// Upgrades: R06F (Defend), Hotkey (Hotkey)
+// Upgrades: R06K (Defend), Hotkey (Hotkey)
 {
 E
 }
@@ -122729,7 +122741,7 @@ STRING 20458
 }
 
 STRING 20459
-// Upgrades: R064 (Nature's Blessing), Hotkey (Hotkey)
+// Upgrades: R06G (Defend), Hotkey (Hotkey)
 {
 E
 }
@@ -122849,7 +122861,7 @@ STRING 20478
 }
 
 STRING 20479
-// Upgrades: R03M (Defend), Hotkey (Hotkey)
+// Upgrades: R06F (Defend), Hotkey (Hotkey)
 {
 E
 }
@@ -122999,7 +123011,7 @@ STRING 20503
 }
 
 STRING 20504
-// Upgrades: R02P (Backpack), Hotkey (Hotkey)
+// Upgrades: R064 (Nature's Blessing), Hotkey (Hotkey)
 {
 E
 }
@@ -123059,7 +123071,7 @@ STRING 20513
 }
 
 STRING 20514
-// Upgrades: R03O (Animal War Training), Hotkey (Hotkey)
+// Upgrades: R03M (Defend), Hotkey (Hotkey)
 {
 E
 }
@@ -123071,7 +123083,7 @@ W
 }
 
 STRING 20516
-// Upgrades: R03O (Animal War Training), Hotkey (Hotkey)
+// Upgrades: R02P (Backpack), Hotkey (Hotkey)
 {
 E
 }
@@ -123329,7 +123341,7 @@ STRING 20558
 }
 
 STRING 20559
-// Upgrades: R097 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R03O (Animal War Training), Hotkey (Hotkey)
 {
 E
 }
@@ -123338,5 +123350,29 @@ STRING 20560
 // Abilities: A043 (Holy Light), Ubertip (Tooltip - Normal - Extended)
 {
 A holy light that can heal a friendly living unit for 300 or deal half damage to an enemy Undead unit.
+}
+
+STRING 20561
+// Abilities: A12B (Hound Companion), Tip (Tooltip - Normal)
+{
+Hound Companion
+}
+
+STRING 20562
+// Abilities: A12B (Hound Companion), Ubertip (Tooltip - Normal - Extended)
+{
+Summon a Fel Stalker to fight for 60 seconds.
+}
+
+STRING 20563
+// Upgrades: R03O (Animal War Training), Hotkey (Hotkey)
+{
+E
+}
+
+STRING 20564
+// Upgrades: R097 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+{
+E
 }
 
