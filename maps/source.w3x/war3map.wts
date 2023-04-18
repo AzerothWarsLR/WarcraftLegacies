@@ -11682,6 +11682,11 @@ STRING 1947
 Learn Slipstream - [|cffffcc00Level %d|r]
 }
 
+STRING 1948
+{
+CrisisCaptain
+}
+
 STRING 1949
 // Units: n091 (Doomfire Abyssal), EditorSuffix (Name - Editor Suffix)
 {
@@ -14007,6 +14012,11 @@ STRING 2336
 Summoned golem of fel flames.|n|cfff5962dAbilities:|R Spell Immunity, Permanent Immoliation, Resistant Skin|n|r|n|cffffcc00Attacks land units.|r
 }
 
+STRING 2337
+{
+CrisisFootman
+}
+
 STRING 2338
 // Units: h03X (Sentinel Tower), Hotkey (Hotkey)
 {
@@ -15696,11 +15706,6 @@ Transforms the Druid into a Bear. |n|cfff5962dAbilities:|R Charge!, Animal Fury,
 STRING 2619
 {
 Ironforge, Stormwind, Kultiras
-}
-
-STRING 2620
-{
-Druids, Draenei, Sentinels
 }
 
 STRING 2621
@@ -23072,6 +23077,11 @@ STRING 3848
 // Units: U00L (Envoy of Archimonde), Revivetip (Tooltip - Revive)
 {
 Revive Envoy of Archimonde
+}
+
+STRING 3849
+{
+Druids, Draenei, Sentinels, Obs
 }
 
 STRING 3850

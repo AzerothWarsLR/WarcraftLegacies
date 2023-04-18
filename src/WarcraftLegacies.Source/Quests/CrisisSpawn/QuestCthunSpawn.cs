@@ -1,9 +1,9 @@
-﻿using MacroTools.FactionSystem;
-using MacroTools.LegendSystem;
-using MacroTools.Libraries;
-using MacroTools.ObjectiveSystem.Objectives.LegendBased;
+﻿using MacroTools.Extensions;
+using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
+using WarcraftLegacies.Source.Setup;
+using WarcraftLegacies.Source.Setup.FactionSetup;
 using WCSharp.Shared.Data;
 using static MacroTools.Libraries.GeneralHelpers;
 using static War3Api.Common; 
@@ -40,18 +40,25 @@ namespace WarcraftLegacies.Source.Quests.CrisisSpawn
       KillNeutralHostileUnitsInRadius(-17512, -16776, 2000);
       if(completingFaction.Player != null)
       {
-        CreateStructureForced(completingFaction.Player, Constants.UNIT_H01C_HUNTSMAN_LORDAERON, -18477, -18214, 0, 256);
         var spawn = _spawnLocation.Center;
-        GeneralHelpers.CreateUnits(completingFaction.Player, Constants.UNIT_U00J_ARCANE_WAGON_QUEL_THALAS, spawn.X, spawn.Y, 270, 2);
-      }
-    
-      completingFaction.ModObjectLimit(ResearchId, -Faction.UNLIMITED);
-    }
 
-    /// <inheritdoc/>
-    protected override void OnAdd(Faction whichFaction)
-    {
-      whichFaction.ModObjectLimit(ResearchId, Faction.UNLIMITED);
+        CreateStructureForced(completingFaction.Player, Constants.UNIT_N05A_VAULT_OF_THE_ETERNAL_PALACE_ILLIDARI_OTHER, -18477, -18214, 0, 256);
+        CreateUnits(completingFaction.Player, Constants.UNIT_U019_DRONE_C_THUN_WORKER, spawn.X, spawn.Y, 270, 12);
+
+        CreateUnits(completingFaction.Player, Constants.UNIT_N06I_SILITHID_WARRIOR_C_THUN_SILITHID_WARRIOR, spawn.X, spawn.Y, 270, 12);
+        CreateUnits(completingFaction.Player, Constants.UNIT_O00L_SILITHID_REAVER_C_THUN_SILITHID_REAVER, spawn.X, spawn.Y, 270, 12);
+        CreateUnits(completingFaction.Player, Constants.UNIT_N05V_SHADOW_WEAVER_C_THUN_FACELESS_SHADOW_WEAVER, spawn.X, spawn.Y, 270, 12);
+        CreateUnits(completingFaction.Player, Constants.UNIT_N060_SILITHID_TUNNELER_C_THUN_SILITHID_TUNNELER, spawn.X, spawn.Y, 270, 12);
+
+        CreateUnits(completingFaction.Player, Constants.UNIT_U00R_OLD_GOD, spawn.X, spawn.Y, 270, 1);
+
+        completingFaction.Player.SetTeam(TeamSetup.Horde);
+
+        if (GetLocalPlayer() == completingFaction.Player)
+          SetCameraPosition(spawn.X, spawn.Y);
+
+        completingFaction.Player.SetFaction(ZandalarSetup.Zandalar);
+      }
     }
   }
 }

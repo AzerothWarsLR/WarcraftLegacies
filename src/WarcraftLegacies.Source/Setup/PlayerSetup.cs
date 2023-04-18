@@ -52,6 +52,12 @@ namespace WarcraftLegacies.Source.Setup
 
       Player(23).SetFaction(LegionSetup.Legion);
       Player(23).SetTeam(TeamSetup.Legion);
+
+      Player(16).SetFaction(CrisisCaptainSetup.CrisisCaptain);
+      Player(16).SetTeam(TeamSetup.Crisis);
+
+      Player(19).SetFaction(CrisisFootmanSetup.CrisisFootman);
+      Player(19).SetTeam(TeamSetup.Crisis);
     }
   }
 }

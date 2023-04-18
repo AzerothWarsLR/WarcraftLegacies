@@ -24,7 +24,7 @@ namespace WarcraftLegacies.Source.Quests.Goblin
       "The island of Kezan should be the first expansion of our trade empire.",
       "ReplaceableTextures\\CommandButtons\\BTNIronHordeMerchant.blp")
     {
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N092_ZUL_FARRAK_10GOLD_MIN)));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N092_ZUL_FARRAK_20GOLD_MIN)));
       AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N0BK_LOST_CITY_OF_THE_TOL_VIR_25GOLD_MIN)));
       AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N047_SILITHUS_10GOLD_MIN)));
       AddObjective(new ObjectiveSelfExists());

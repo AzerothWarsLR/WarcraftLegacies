@@ -14,10 +14,10 @@
 //  13	Draenei
 //  14	Empty
 //  15	Illidan
-//  16	Empty
+//  16	CrisisCaptain
 //  17  Empty
 //  18	Sentinels
-//  19  Empty
+//  19  CrisisFootman
 //  20  Empty
 //  21  Observer
 //  22  Kultiras

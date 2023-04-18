@@ -25,6 +25,7 @@ namespace WarcraftLegacies.Source.Setup
       DraeneiQuestSetup.Setup(preplacedUnitSystem, allLegendSetup);
       ZandalarQuestSetup.Setup(artifactSetup, preplacedUnitSystem, allLegendSetup);
       SharedQuestSetup.Setup(preplacedUnitSystem, artifactSetup, allLegendSetup);
+      CrisisQuestSetup.Setup();
       
     }
   }
