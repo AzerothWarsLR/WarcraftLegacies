@@ -1,6 +1,7 @@
 ﻿using MacroTools;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
+using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.MetaBased;
 using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
@@ -21,12 +22,14 @@ namespace WarcraftLegacies.Source.Quests.CrisisSpawn
     private readonly Rectangle _spawnLocation;
     private readonly unit _picker;
     private readonly unit _secondpick;
+    private readonly LegendaryHero _cthun;
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestNzothSpawnFootman"/> class.
     /// </summary>
-    public QuestNzothSpawnFootman(PreplacedUnitSystem preplacedUnitSystem, Rectangle spawnLocation) : base("Pick Nzoth", "Blabla", "ReplaceableTextures\\CommandButtons\\BTNNzothIcon.blp")
+    public QuestNzothSpawnFootman(PreplacedUnitSystem preplacedUnitSystem, Rectangle spawnLocation, LegendaryHero cthun) : base("Pick Nzoth", "Blabla", "ReplaceableTextures\\CommandButtons\\BTNNzothIcon.blp")
     {
       _spawnLocation = spawnLocation;
+      _cthun = cthun;
       _picker = preplacedUnitSystem.GetUnit(Constants.UNIT_N0DR_CRISIS_FACTION_PICKER_OLD_GODS, new Point(13068, -29532));
       _secondpick = preplacedUnitSystem.GetUnit(Constants.UNIT_N0DR_CRISIS_FACTION_PICKER_OLD_GODS, new Point(12700, -29532));
       AddObjective(new ObjectiveResearch(Constants.UPGRADE_R07E_FORTIFIED_HULLS, Constants.UNIT_N0DR_CRISIS_FACTION_PICKER_OLD_GODS));
@@ -67,7 +70,7 @@ namespace WarcraftLegacies.Source.Quests.CrisisSpawn
         CreateUnits(completingFaction.Player, Constants.UNIT_N05V_SHADOW_WEAVER_C_THUN_FACELESS_SHADOW_WEAVER, spawn.X, spawn.Y, 270, 12);
         CreateUnits(completingFaction.Player, Constants.UNIT_N060_SILITHID_TUNNELER_C_THUN_SILITHID_TUNNELER, spawn.X, spawn.Y, 270, 12);
 
-        CreateUnits(completingFaction.Player, Constants.UNIT_U00R_OLD_GOD, spawn.X, spawn.Y, 270, 1);
+        _cthun.ForceCreate(completingFaction.Player, spawn, 270);
 
         completingFaction.Player.SetTeam(TeamSetup.Oldgods);
         completingFaction.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, 2000);

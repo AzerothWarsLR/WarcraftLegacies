@@ -12,16 +12,10 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
     
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
-      Nzoth = new Faction(FactionNames.Nzoth, PLAYER_COLOR_PURPLE, "|cffaaa050",
-        "ReplaceableTextures\\CommandButtons\\BTNCthunIcon.blp")
+      Nzoth = new Faction(FactionNames.Nzoth, PLAYER_COLOR_PURPLE, "|c00540081",
+        "ReplaceableTextures\\CommandButtons\\BTNNzothIcon.blp")
       {
         ControlPointDefenderUnitTypeId = Constants.UNIT_N0B6_CONTROL_POINT_DEFENDER_FROSTWOLF,
-        IntroText = @"You are playing as the honorable |cffff0000Frostwolf Clan|r.
-
-You begin in the Salt Flats, separated from your ally, the Warsong Clan in the North.
-
-Salvage the wrecked ships, establish a base and gather your troops to move inland and assist your ally against the Night Elf threat."
-
       };
 
       Nzoth.ModObjectLimit(Constants.UNIT_OGRE_GREAT_HALL_FROSTWOLF_T1, Faction.UNLIMITED);
