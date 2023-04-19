@@ -31,5 +31,6 @@
     public static string Crisis => "Crisis 1";
     public static string Crisis2 => "Crisis 2";
     public static string Cthun => "Ahn'Qiraj";
+    public static string Nzoth => "Nazjatar";
   }
 }

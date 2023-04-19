@@ -110232,6 +110232,12 @@ STRING 18374
 W
 }
 
+STRING 18375
+// Upgrades: R07E (Iron Plating,Steel Plating,Mithril Plating), Name (Name)
+{
+Pick N'zoth
+}
+
 STRING 18376
 // Upgrades: R08J (Chaos), Name (Name)
 {
@@ -123488,12 +123494,6 @@ STRING 20584
 C
 }
 
-STRING 20585
-// Upgrades: R07E (Iron Plating,Steel Plating,Mithril Plating), Name (Name)
-{
-Pick C'thun
-}
-
 STRING 20586
 // Upgrades: R07E (Iron Plating,Steel Plating,Mithril Plating), Name (Name)
 {
@@ -123506,12 +123506,6 @@ STRING 20587
 Fortified Hulls
 }
 
-STRING 20588
-// Upgrades: R07E (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
-{
-Pick C'thun
-}
-
 STRING 20589
 // Upgrades: R07E (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
 {
@@ -123522,12 +123516,6 @@ STRING 20590
 // Upgrades: R07E (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
 {
 Research Fortified Hulls
-}
-
-STRING 20591
-// Upgrades: R07E (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
-{
-Pick the C'thun
 }
 
 STRING 20592
@@ -123630,5 +123618,17 @@ STRING 20608
 // Upgrades: R08I (Chaos), Name (Name)
 {
 Turn 25 has passed
+}
+
+STRING 20609
+// Upgrades: R07E (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
+{
+Pick N'zoth
+}
+
+STRING 20610
+// Upgrades: R07E (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
+{
+Pick N'zoth
 }
 

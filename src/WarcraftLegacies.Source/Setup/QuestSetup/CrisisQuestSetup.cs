@@ -14,9 +14,9 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
 
       crisis.AddQuest(new QuestOldGodPick(preplacedUnitSystem));
       
-      crisis.AddQuest(new QuestCthunSpawnCaptain(preplacedUnitSystem, Regions.Silithus_Bug_Exterior));
+      crisis.AddQuest(new QuestNzothSpawnCaptain(preplacedUnitSystem, Regions.NzothStartPosition));
 
-      crisis2.AddQuest(new QuestCthunSpawnFootman(preplacedUnitSystem, Regions.Silithus_Bug_Exterior));
+      crisis2.AddQuest(new QuestNzothSpawnFootman(preplacedUnitSystem, Regions.NzothStartPosition));
 
     }
   }

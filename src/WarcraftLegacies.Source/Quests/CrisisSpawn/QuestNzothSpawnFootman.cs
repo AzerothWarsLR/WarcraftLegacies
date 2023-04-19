@@ -16,20 +16,20 @@ namespace WarcraftLegacies.Source.Quests.CrisisSpawn
   /// <summary>
   /// Research 'Northrend Expidition' to gain a base at the shores of Dragonblight.
   /// </summary>
-  public sealed class QuestCthunSpawnCaptain : QuestData
+  public sealed class QuestNzothSpawnFootman : QuestData
   {
     private readonly Rectangle _spawnLocation;
     private readonly unit _picker;
+    private readonly unit _secondpick;
     /// <summary>
-    /// Initializes a new instance of the <see cref="QuestCthunSpawCaptain"/> class.
+    /// Initializes a new instance of the <see cref="QuestNzothSpawnFootman"/> class.
     /// </summary>
-    public QuestCthunSpawnCaptain(PreplacedUnitSystem preplacedUnitSystem, Rectangle spawnLocation) : base("Pick Cthun", "Blabla", "ReplaceableTextures\\CommandButtons\\BTNHumanTransport.blp")
+    public QuestNzothSpawnFootman(PreplacedUnitSystem preplacedUnitSystem, Rectangle spawnLocation) : base("Pick Nzoth", "Blabla", "ReplaceableTextures\\CommandButtons\\BTNNzothIcon.blp")
     {
       _spawnLocation = spawnLocation;
-      _picker = preplacedUnitSystem.GetUnit(Constants.UNIT_N0DR_CRISIS_FACTION_PICKER_OLD_GODS, new Point(12700, -29532));
-      AddObjective(new ObjectiveEitherOf(
-        new ObjectiveResearch(Constants.UPGRADE_R07E_FORTIFIED_HULLS, Constants.UNIT_N0DR_CRISIS_FACTION_PICKER_OLD_GODS),
-        new ObjectiveTime(1590)));
+      _picker = preplacedUnitSystem.GetUnit(Constants.UNIT_N0DR_CRISIS_FACTION_PICKER_OLD_GODS, new Point(13068, -29532));
+      _secondpick = preplacedUnitSystem.GetUnit(Constants.UNIT_N0DR_CRISIS_FACTION_PICKER_OLD_GODS, new Point(12700, -29532));
+      AddObjective(new ObjectiveResearch(Constants.UPGRADE_R07E_FORTIFIED_HULLS, Constants.UNIT_N0DR_CRISIS_FACTION_PICKER_OLD_GODS));
       Shared = true;
     }
 
@@ -44,15 +44,22 @@ namespace WarcraftLegacies.Source.Quests.CrisisSpawn
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
     {
-      KillNeutralHostileUnitsInRadius(-17512, -16776, 2000);
+      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
+      {
+        SetPlayerTechMaxAllowed(player, Constants.UPGRADE_R07E_FORTIFIED_HULLS, 0);
+      }
+
+      KillNeutralHostileUnitsInRadius(-4200, 2450, 2000);
 
       RemoveUnit(_picker);
+
+      SetUnitOwner(_secondpick, Player(16), true);
 
       if (completingFaction.Player != null)
       {
         var spawn = _spawnLocation.Center;
 
-        CreateStructureForced(completingFaction.Player, Constants.UNIT_N05A_VAULT_OF_THE_ETERNAL_PALACE_ILLIDARI_OTHER, -18477, -18214, 0, 256);
+        CreateStructureForced(completingFaction.Player, Constants.UNIT_N05A_VAULT_OF_THE_ETERNAL_PALACE_ILLIDARI_OTHER, -4200, 2450, 0, 256);
         CreateUnits(completingFaction.Player, Constants.UNIT_U019_DRONE_C_THUN_WORKER, spawn.X, spawn.Y, 270, 12);
 
         CreateUnits(completingFaction.Player, Constants.UNIT_N06I_SILITHID_WARRIOR_C_THUN_SILITHID_WARRIOR, spawn.X, spawn.Y, 270, 12);
@@ -69,7 +76,7 @@ namespace WarcraftLegacies.Source.Quests.CrisisSpawn
         if (GetLocalPlayer() == completingFaction.Player)
           SetCameraPosition(spawn.X, spawn.Y);
 
-        completingFaction.Player.SetFaction(CthunSetup.Cthun);
+        completingFaction.Player.SetFaction(NzothSetup.Nzoth);
       }
     }
   }

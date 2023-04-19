@@ -342,5 +342,6 @@ public static class Regions
 	public static Rectangle DraeneiQuestKill { get; set; } = new Rectangle(-20160f, -5376f, -16640f, -2624f);
 	public static Rectangle FountainUnlock { get; set; } = new Rectangle(-10688f, 4384f, -10144f, 4800f);
 	public static Rectangle EntireMap { get; set; } = new Rectangle(-24512f, -31872f, 24096f, 25056f);
+	public static Rectangle NzothStartPosition { get; set; } = new Rectangle(-4192f, 1344f, -3360f, 1792f);
 
 }
