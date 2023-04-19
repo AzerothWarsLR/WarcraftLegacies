@@ -1,5 +1,7 @@
 ﻿using MacroTools.Extensions;
 using MacroTools.FactionSystem;
+using MacroTools.ObjectiveSystem.Objectives.MetaBased;
+using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
 using WarcraftLegacies.Source.Setup;
@@ -22,7 +24,9 @@ namespace WarcraftLegacies.Source.Quests.CrisisSpawn
     public QuestCthunSpawn(Rectangle spawnLocation) : base("Pick Cthun", "Blabla", "ReplaceableTextures\\CommandButtons\\BTNHumanTransport.blp")
     {
       _spawnLocation = spawnLocation;
-      AddObjective(new ObjectiveResearch(Constants.UPGRADE_R06F_NORTHREND_EXPEDITION_LORDAERON, Constants.UNIT_HSHY_SHIPYARD_LORDAERON_SHIPYARD));
+      AddObjective(new ObjectiveEitherOf(
+        new ObjectiveResearch(Constants.UPGRADE_R07E_FORTIFIED_HULLS, Constants.UNIT_N0DR_CRISIS_FACTION_PICKER_OLD_GODS),
+        new ObjectiveTime(180)));
       Shared = true;
     }
 

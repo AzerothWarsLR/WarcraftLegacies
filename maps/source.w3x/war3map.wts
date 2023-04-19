@@ -65205,6 +65205,12 @@ STRING 10864
 Shock
 }
 
+STRING 10865
+// Units: n0DQ (Crisis Team Picker), Name (Name)
+{
+Crisis Team Picker
+}
+
 STRING 10866
 // Abilities: A09C (Shock), Ubertip (Tooltip - Normal - Extended)
 {
@@ -75971,6 +75977,12 @@ STRING 12658
 // Abilities: A10K (Hideous Appendages), Ubertip (Tooltip - Normal - Extended)
 {
 The Old God has Tentacles which attack nearby enemy units autonomosly. Each Tentacle has the same attack damage as the hero.
+}
+
+STRING 12659
+// Units: n0DR (Crisis Faction Picker), Name (Name)
+{
+Crisis Faction Picker
 }
 
 STRING 12660
@@ -110220,12 +110232,6 @@ STRING 18374
 W
 }
 
-STRING 18375
-// Upgrades: R08I (Chaos), Name (Name)
-{
-Turn 22 has passed
-}
-
 STRING 18376
 // Upgrades: R08J (Chaos), Name (Name)
 {
@@ -123426,5 +123432,203 @@ STRING 20575
 // Units: h01K (Silithid Overlord), Tip (Tooltip - Basic)
 {
 Train - Silithid Overlord
+}
+
+STRING 20576
+// Units: n0DR (Crisis Faction Picker), EditorSuffix (Name - Editor Suffix)
+{
+(old gods)
+}
+
+STRING 20577
+// Units: n0DS (Crisis Faction Picker), Name (Name)
+{
+Crisis Faction Picker
+}
+
+STRING 20578
+// Units: n0DS (Crisis Faction Picker), EditorSuffix (Name - Editor Suffix)
+{
+(NA)
+}
+
+STRING 20579
+// Upgrades: R06D (Chaos), Name (Name)
+{
+Team Picked: Old Gods
+}
+
+STRING 20580
+// Upgrades: R076 (Chaos), Name (Name)
+{
+Team Picked: Scarlet
+}
+
+STRING 20581
+// Upgrades: R07A (Chaos), Name (Name)
+{
+Team Picked: Ashen Verdict
+}
+
+STRING 20582
+// Upgrades: R07E (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+{
+Q
+}
+
+STRING 20583
+// Upgrades: R07E (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+{
+C
+}
+
+STRING 20584
+// Upgrades: R07E (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+{
+C
+}
+
+STRING 20585
+// Upgrades: R07E (Iron Plating,Steel Plating,Mithril Plating), Name (Name)
+{
+Pick C'thun
+}
+
+STRING 20586
+// Upgrades: R07E (Iron Plating,Steel Plating,Mithril Plating), Name (Name)
+{
+Fortified Hulls
+}
+
+STRING 20587
+// Upgrades: R07E (Iron Plating,Steel Plating,Mithril Plating), Name (Name)
+{
+Fortified Hulls
+}
+
+STRING 20588
+// Upgrades: R07E (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
+{
+Pick C'thun
+}
+
+STRING 20589
+// Upgrades: R07E (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
+{
+Research Fortified Hulls
+}
+
+STRING 20590
+// Upgrades: R07E (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
+{
+Research Fortified Hulls
+}
+
+STRING 20591
+// Upgrades: R07E (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
+{
+Pick the C'thun
+}
+
+STRING 20592
+// Upgrades: R07E (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
+{
+Further increases the armor of all Naval Units.
+}
+
+STRING 20593
+// Upgrades: R07E (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
+{
+Further increases the armor of all Naval Units.
+}
+
+STRING 20594
+// Upgrades: R07E (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+{
+C
+}
+
+STRING 20595
+// Upgrades: R07L (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+{
+Q
+}
+
+STRING 20596
+// Upgrades: R07L (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+{
+C
+}
+
+STRING 20597
+// Upgrades: R07L (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+{
+C
+}
+
+STRING 20598
+// Upgrades: R07L (Iron Plating,Steel Plating,Mithril Plating), Name (Name)
+{
+Pick Old Gods
+}
+
+STRING 20599
+// Upgrades: R07L (Iron Plating,Steel Plating,Mithril Plating), Name (Name)
+{
+Fortified Hulls
+}
+
+STRING 20600
+// Upgrades: R07L (Iron Plating,Steel Plating,Mithril Plating), Name (Name)
+{
+Fortified Hulls
+}
+
+STRING 20601
+// Upgrades: R07L (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
+{
+Pick Old Gods
+}
+
+STRING 20602
+// Upgrades: R07L (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
+{
+Research Fortified Hulls
+}
+
+STRING 20603
+// Upgrades: R07L (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
+{
+Research Fortified Hulls
+}
+
+STRING 20604
+// Upgrades: R07L (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
+{
+Pick Old Gods
+}
+
+STRING 20605
+// Upgrades: R07L (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
+{
+Further increases the armor of all Naval Units.
+}
+
+STRING 20606
+// Upgrades: R07L (Iron Plating,Steel Plating,Mithril Plating), Ubertip (Tooltip - Extended)
+{
+Further increases the armor of all Naval Units.
+}
+
+STRING 20607
+// Upgrades: R07L (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+{
+C
+}
+
+STRING 20608
+// Upgrades: R08I (Chaos), Name (Name)
+{
+Turn 25 has passed
 }
 

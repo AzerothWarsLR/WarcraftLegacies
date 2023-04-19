@@ -2689,6 +2689,19 @@ u = BlzCreateUnitWithSkin(p, FourCC("nmpe"), 293.8, 5893.3, 323.590, FourCC("nmp
 u = BlzCreateUnitWithSkin(p, FourCC("nmpe"), 498.7, 5978.0, 323.590, FourCC("nmpe"))
 end
 
+function CreateBuildingsForPlayer16()
+local p = Player(16)
+local u
+local unitID
+local t
+local life
+
+u = BlzCreateUnitWithSkin(p, FourCC("n0DQ"), 12736.0, -29120.0, 270.000, FourCC("n0DQ"))
+SetUnitColor(u, ConvertPlayerColor(0))
+u = BlzCreateUnitWithSkin(p, FourCC("n0DS"), 12352.0, -30144.0, 270.000, FourCC("n0DS"))
+u = BlzCreateUnitWithSkin(p, FourCC("n0DR"), 12352.0, -29568.0, 270.000, FourCC("n0DR"))
+end
+
 function CreateBuildingsForPlayer18()
 local p = Player(18)
 local u
@@ -2714,6 +2727,17 @@ u = BlzCreateUnitWithSkin(p, FourCC("ewsp"), -22865.9, -13570.7, 62.075, FourCC(
 u = BlzCreateUnitWithSkin(p, FourCC("ewsp"), -22777.2, -13446.4, 143.629, FourCC("ewsp"))
 u = BlzCreateUnitWithSkin(p, FourCC("ewsp"), -22871.3, -13446.6, 143.629, FourCC("ewsp"))
 u = BlzCreateUnitWithSkin(p, FourCC("ewsp"), -22799.6, -13656.8, 143.629, FourCC("ewsp"))
+end
+
+function CreateBuildingsForPlayer19()
+local p = Player(19)
+local u
+local unitID
+local t
+local life
+
+u = BlzCreateUnitWithSkin(p, FourCC("n0DS"), 13056.0, -30144.0, 270.000, FourCC("n0DS"))
+u = BlzCreateUnitWithSkin(p, FourCC("n0DR"), 13056.0, -29568.0, 270.000, FourCC("n0DR"))
 end
 
 function CreateBuildingsForPlayer20()
@@ -7887,7 +7911,7 @@ u = BlzCreateUnitWithSkin(p, FourCC("earc"), -4984.0, -27558.6, 247.464, FourCC(
 u = BlzCreateUnitWithSkin(p, FourCC("h01N"), -13989.3, -24534.7, 341.323, FourCC("h01N"))
 SetUnitColor(u, ConvertPlayerColor(16))
 u = BlzCreateUnitWithSkin(p, FourCC("e01B"), 1874.4, -19312.3, 255.110, FourCC("e01B"))
-u = BlzCreateUnitWithSkin(p, FourCC("h01K"), -14240.8, -24559.8, -73.319, FourCC("h01K"))
+u = BlzCreateUnitWithSkin(p, FourCC("h01K"), -14240.8, -24559.8, 286.681, FourCC("h01K"))
 SetUnitColor(u, ConvertPlayerColor(16))
 u = BlzCreateUnitWithSkin(p, FourCC("o000"), -13853.9, -24126.3, 280.017, FourCC("o000"))
 u = BlzCreateUnitWithSkin(p, FourCC("o00L"), -15067.5, -24530.6, 329.358, FourCC("o00L"))
@@ -8202,7 +8226,9 @@ CreateBuildingsForPlayer10()
 CreateBuildingsForPlayer11()
 CreateBuildingsForPlayer13()
 CreateBuildingsForPlayer15()
+CreateBuildingsForPlayer16()
 CreateBuildingsForPlayer18()
+CreateBuildingsForPlayer19()
 CreateBuildingsForPlayer20()
 CreateBuildingsForPlayer22()
 CreateBuildingsForPlayer23()
@@ -32814,10 +32840,10 @@ DefineStartLocation(9, 7104.0, -15616.0)
 DefineStartLocation(10, -9344.0, 10560.0)
 DefineStartLocation(11, -20608.0, 8512.0)
 DefineStartLocation(12, 384.0, 5952.0)
-DefineStartLocation(13, 12416.0, -29568.0)
+DefineStartLocation(13, 12352.0, -29568.0)
 DefineStartLocation(14, -22592.0, -13696.0)
-DefineStartLocation(15, 12672.0, -29120.0)
-DefineStartLocation(16, 12928.0, -29568.0)
+DefineStartLocation(15, 13056.0, -29568.0)
+DefineStartLocation(16, 12736.0, -29120.0)
 DefineStartLocation(17, 3904.0, -13440.0)
 DefineStartLocation(18, 18816.0, -30784.0)
 InitCustomPlayerSlots()
