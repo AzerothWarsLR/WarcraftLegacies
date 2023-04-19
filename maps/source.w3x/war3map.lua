@@ -2698,8 +2698,6 @@ local life
 
 u = BlzCreateUnitWithSkin(p, FourCC("n0DQ"), 12736.0, -29120.0, 270.000, FourCC("n0DQ"))
 SetUnitColor(u, ConvertPlayerColor(0))
-u = BlzCreateUnitWithSkin(p, FourCC("n0DS"), 12352.0, -30144.0, 270.000, FourCC("n0DS"))
-u = BlzCreateUnitWithSkin(p, FourCC("n0DR"), 12352.0, -29568.0, 270.000, FourCC("n0DR"))
 end
 
 function CreateBuildingsForPlayer18()
@@ -2727,17 +2725,6 @@ u = BlzCreateUnitWithSkin(p, FourCC("ewsp"), -22865.9, -13570.7, 62.075, FourCC(
 u = BlzCreateUnitWithSkin(p, FourCC("ewsp"), -22777.2, -13446.4, 143.629, FourCC("ewsp"))
 u = BlzCreateUnitWithSkin(p, FourCC("ewsp"), -22871.3, -13446.6, 143.629, FourCC("ewsp"))
 u = BlzCreateUnitWithSkin(p, FourCC("ewsp"), -22799.6, -13656.8, 143.629, FourCC("ewsp"))
-end
-
-function CreateBuildingsForPlayer19()
-local p = Player(19)
-local u
-local unitID
-local t
-local life
-
-u = BlzCreateUnitWithSkin(p, FourCC("n0DS"), 13056.0, -30144.0, 270.000, FourCC("n0DS"))
-u = BlzCreateUnitWithSkin(p, FourCC("n0DR"), 13056.0, -29568.0, 270.000, FourCC("n0DR"))
 end
 
 function CreateBuildingsForPlayer20()
@@ -7400,6 +7387,10 @@ u = BlzCreateUnitWithSkin(p, FourCC("o053"), -17440.0, -4128.0, 270.000, FourCC(
 u = BlzCreateUnitWithSkin(p, FourCC("o056"), -19200.0, -3328.0, 270.000, FourCC("o056"))
 u = BlzCreateUnitWithSkin(p, FourCC("o056"), -18688.0, -4096.0, 270.000, FourCC("o056"))
 u = BlzCreateUnitWithSkin(p, FourCC("o056"), -18304.0, -3456.0, 270.000, FourCC("o056"))
+u = BlzCreateUnitWithSkin(p, FourCC("n0DS"), 12352.0, -30144.0, 270.000, FourCC("n0DS"))
+u = BlzCreateUnitWithSkin(p, FourCC("n0DS"), 13056.0, -30144.0, 270.000, FourCC("n0DS"))
+u = BlzCreateUnitWithSkin(p, FourCC("n0DR"), 12352.0, -29568.0, 270.000, FourCC("n0DR"))
+u = BlzCreateUnitWithSkin(p, FourCC("n0DR"), 13056.0, -29568.0, 270.000, FourCC("n0DR"))
 u = BlzCreateUnitWithSkin(p, FourCC("ncbf"), 8320.0, 8256.0, 47.022, FourCC("ncbf"))
 u = BlzCreateUnitWithSkin(p, FourCC("ngol"), -8576.0, -12864.0, 270.000, FourCC("ngol"))
 SetResourceAmount(u, 800)
@@ -8228,7 +8219,6 @@ CreateBuildingsForPlayer13()
 CreateBuildingsForPlayer15()
 CreateBuildingsForPlayer16()
 CreateBuildingsForPlayer18()
-CreateBuildingsForPlayer19()
 CreateBuildingsForPlayer20()
 CreateBuildingsForPlayer22()
 CreateBuildingsForPlayer23()

@@ -16,6 +16,7 @@ namespace WarcraftLegacies.Source.Setup
     public static Team Scourge { get; private set; }
     public static Team Crisis { get; private set; }
     public static Team Draenei { get; private set; }
+    public static Team Oldgods { get; private set; }
 
 
     public static void Setup( ){
@@ -90,6 +91,12 @@ namespace WarcraftLegacies.Source.Setup
         VictoryMusic = "DarkVictory"
       };
       FactionManager.Register(Crisis);
+
+      Oldgods = new Team("Old Gods")
+      {
+        VictoryMusic = "DarkVictory"
+      };
+      FactionManager.Register(Oldgods);
 
       Draenei = new Team("Draenei")
       {
