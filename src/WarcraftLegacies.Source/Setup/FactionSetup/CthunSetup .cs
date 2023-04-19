@@ -15,8 +15,6 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
       Cthun = new Faction(FactionNames.Cthun, PLAYER_COLOR_WHEAT, "|cffaaa050",
         "ReplaceableTextures\\CommandButtons\\BTNCthunIcon.blp")
       {
-        StartingGold = 2000,
-        StartingLumber = 7000,
         ControlPointDefenderUnitTypeId = Constants.UNIT_N0B6_CONTROL_POINT_DEFENDER_FROSTWOLF,
         IntroText = @"You are playing as the honorable |cffff0000Frostwolf Clan|r.
 

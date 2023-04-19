@@ -63,6 +63,8 @@ namespace WarcraftLegacies.Source.Quests.CrisisSpawn
         CreateUnits(completingFaction.Player, Constants.UNIT_U00R_OLD_GOD, spawn.X, spawn.Y, 270, 1);
 
         completingFaction.Player.SetTeam(TeamSetup.Oldgods);
+        completingFaction.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, 2000);
+        completingFaction.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_LUMBER, 8000);
 
         if (GetLocalPlayer() == completingFaction.Player)
           SetCameraPosition(spawn.X, spawn.Y);
