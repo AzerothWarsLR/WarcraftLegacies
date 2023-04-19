@@ -39,7 +39,8 @@ namespace WarcraftLegacies.Source.Quests.CrisisSpawn
     protected override void OnComplete(Faction completingFaction)
     {
       foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
-        SetPlayerTechResearched(player, Constants.UPGRADE_R07L_FORTIFIED_HULLS, 1);
+        SetPlayerTechResearched(player, Constants.UPGRADE_R06D_TEAM_PICKED_OLD_GODS, 1);
+
     }
   }
-}
+ }
