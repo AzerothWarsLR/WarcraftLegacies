@@ -334,6 +334,7 @@ gg_rct_ExodarBaseUnlock = nil
 gg_rct_DesolaceUnlock = nil
 gg_rct_DraeneiQuestKill = nil
 gg_rct_FountainUnlock = nil
+gg_rct_EntireMap = nil
 gg_snd_ArcaneObservatoryWhat1 = nil
 gg_snd_ArrangedTeamInvitation = nil
 gg_snd_ClanInvitation = nil
@@ -522,7 +523,6 @@ gg_snd_DoorCloseRemix = nil
 gg_snd_DoorOpenRemix = nil
 gg_snd_NuclearLaunchDetected = nil
 gg_snd_IllidansTheme = ""
-gg_rct_EntireMap = nil
 function InitGlobals()
 end
 
@@ -2273,6 +2273,7 @@ u = BlzCreateUnitWithSkin(p, FourCC("U004"), -21981.4, -24653.8, 22.259, FourCC(
 SetUnitColor(u, ConvertPlayerColor(1))
 u = BlzCreateUnitWithSkin(p, FourCC("n09S"), -22029.8, -24460.2, 358.956, FourCC("n09S"))
 u = BlzCreateUnitWithSkin(p, FourCC("n02F"), -21707.0, -24418.0, 24.357, FourCC("n02F"))
+u = BlzCreateUnitWithSkin(p, FourCC("U02S"), -15111.7, -25095.7, 263.250, FourCC("U02S"))
 end
 
 function CreateBuildingsForPlayer1()
@@ -7886,7 +7887,7 @@ u = BlzCreateUnitWithSkin(p, FourCC("earc"), -4984.0, -27558.6, 247.464, FourCC(
 u = BlzCreateUnitWithSkin(p, FourCC("h01N"), -13989.3, -24534.7, 341.323, FourCC("h01N"))
 SetUnitColor(u, ConvertPlayerColor(16))
 u = BlzCreateUnitWithSkin(p, FourCC("e01B"), 1874.4, -19312.3, 255.110, FourCC("e01B"))
-u = BlzCreateUnitWithSkin(p, FourCC("h01K"), -14240.8, -24559.8, 49.264, FourCC("h01K"))
+u = BlzCreateUnitWithSkin(p, FourCC("h01K"), -14240.8, -24559.8, -73.319, FourCC("h01K"))
 SetUnitColor(u, ConvertPlayerColor(16))
 u = BlzCreateUnitWithSkin(p, FourCC("o000"), -13853.9, -24126.3, 280.017, FourCC("o000"))
 u = BlzCreateUnitWithSkin(p, FourCC("o00L"), -15067.5, -24530.6, 329.358, FourCC("o00L"))
@@ -7992,12 +7993,12 @@ SetUnitColor(u, ConvertPlayerColor(16))
 u = BlzCreateUnitWithSkin(p, FourCC("o02N"), -14098.7, -24501.6, 187.498, FourCC("o02N"))
 u = BlzCreateUnitWithSkin(p, FourCC("U00Z"), -14436.8, -25086.7, 260.204, FourCC("U00Z"))
 SetUnitColor(u, ConvertPlayerColor(16))
-u = BlzCreateUnitWithSkin(p, FourCC("U02A"), -14634.8, -25072.1, 259.593, FourCC("U02A"))
+u = BlzCreateUnitWithSkin(p, FourCC("U02A"), -20017.2, -25331.3, 259.593, FourCC("U02A"))
 u = BlzCreateUnitWithSkin(p, FourCC("E005"), -14789.8, -25076.7, 271.613, FourCC("E005"))
 SetUnitColor(u, ConvertPlayerColor(0))
 u = BlzCreateUnitWithSkin(p, FourCC("n0DK"), 8691.5, 4783.4, 280.810, FourCC("n0DK"))
 SetUnitAcquireRange(u, 200.0)
-u = BlzCreateUnitWithSkin(p, FourCC("U00P"), -20288.8, -25264.0, 270.000, FourCC("U00P"))
+u = BlzCreateUnitWithSkin(p, FourCC("U00P"), -17476.4, -25211.0, 270.000, FourCC("U00P"))
 u = BlzCreateUnitWithSkin(p, FourCC("earc"), -16264.6, 9167.3, 352.980, FourCC("earc"))
 u = BlzCreateUnitWithSkin(p, FourCC("e006"), -16792.3, 10083.2, 317.854, FourCC("e006"))
 u = BlzCreateUnitWithSkin(p, FourCC("e006"), -15720.3, 9476.2, 234.312, FourCC("e006"))
