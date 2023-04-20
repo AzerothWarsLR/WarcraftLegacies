@@ -33,7 +33,7 @@ namespace WarcraftLegacies.Source.Quests.CrisisSpawn
       _picker = preplacedUnitSystem.GetUnit(Constants.UNIT_N0DR_CRISIS_FACTION_PICKER_OLD_GODS, new Point(13068, -29532));
       _secondpick = preplacedUnitSystem.GetUnit(Constants.UNIT_N0DR_CRISIS_FACTION_PICKER_OLD_GODS, new Point(12700, -29532));
       AddObjective(new ObjectiveEitherOf(
-       new ObjectiveResearch(Constants.UPGRADE_R07E_FORTIFIED_HULLS, Constants.UNIT_N0DR_CRISIS_FACTION_PICKER_OLD_GODS),
+       new ObjectiveResearch(Constants.UPGRADE_R07W_FORTIFIED_HULLS, Constants.UNIT_N0DR_CRISIS_FACTION_PICKER_OLD_GODS),
        new ObjectiveTime(1590)));
       Shared = true;
     }
