@@ -58,7 +58,7 @@ namespace WarcraftLegacies.Source.Quests.CrisisSpawn
         CreateStructureForced(completingFaction.Player, Constants.UNIT_N045_TEMPLE_OF_AZSHARA_NZOTH_OTHER, -4200, 2450, 0, 256);
         
         CreateUnits(completingFaction.Player, Constants.UNIT_N0D7_DEEP_FORAGER_N_ZOTH_WORKER, spawn.X, spawn.Y, 270, 12);
-        CreateUnits(completingFaction.Player, Constants.UNIT_N0DT, spawn.X, spawn.Y, 270, 6);
+        CreateUnits(completingFaction.Player, Constants.UNIT_N0DT_TIDEMISTRESS_NZOTH, spawn.X, spawn.Y, 270, 6);
 
         CreateUnits(completingFaction.Player, Constants.UNIT_N0CA_NAGA_INCURSOR_NZOTH, spawn.X, spawn.Y, 270, 12);
         CreateUnits(completingFaction.Player, Constants.UNIT_N0CE_HATCHLING_NZOTH, spawn.X, spawn.Y, 270, 12);
@@ -67,7 +67,7 @@ namespace WarcraftLegacies.Source.Quests.CrisisSpawn
         CreateUnits(completingFaction.Player, Constants.UNIT_N0CB_DEEPSEER_NZOTH, spawn.X, spawn.Y, 270, 12);
         CreateUnits(completingFaction.Player, Constants.UNIT_N0CD_BLOODKIN_NZOTH, spawn.X, spawn.Y, 270, 12);
 
-        CreateUnits(completingFaction.Player, Constants.UNIT_o060, spawn.X, spawn.Y, 270, 6);
+        CreateUnits(completingFaction.Player, Constants.UNIT_O060_RIPTIDE_DRAKE_NZOTH, spawn.X, spawn.Y, 270, 6);
         CreateUnits(completingFaction.Player, Constants.UNIT_U02J_TIDAL_TERROR_NZOTH, spawn.X, spawn.Y, 270, 4);
 
         CreateUnits(completingFaction.Player, Constants.UNIT_H01Q_IMMORTAL_GUARDIAN_NZOTH, spawn.X, spawn.Y, 270, 4);
