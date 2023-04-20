@@ -26,7 +26,7 @@ namespace WarcraftLegacies.Source.Setup
       ZandalarSetup.Setup(preplacedUnitSystem);
 
       CthunSetup.Setup(preplacedUnitSystem);
-      NzothSetup.Setup(preplacedUnitSystem);
+      NazjatarSetup.Setup(preplacedUnitSystem);
 
       CrisisCaptainSetup.Setup(preplacedUnitSystem);
       CrisisFootmanSetup.Setup(preplacedUnitSystem);
