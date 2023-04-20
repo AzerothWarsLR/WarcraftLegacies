@@ -64,23 +64,22 @@ namespace WarcraftLegacies.Source.Quests.CrisisSpawn
       if (completingFaction.Player != null)
       {
 
-        CreateStructureForced(completingFaction.Player, Constants.UNIT_N045_TEMPLE_OF_AZSHARA_NZOTH_OTHER, -1000, -1050, 0, 256);
+        CreateStructureForced(completingFaction.Player, Constants.UNIT_N0DU_PYRAMID_OF_MADNESS_NZOTH_OTHER, -1000, -1050, 0, 256);
 
-        CreateUnits(completingFaction.Player, Constants.UNIT_N0D7_DEEP_FORAGER_N_ZOTH_WORKER, spawn.X, spawn.Y, 270, 12);
-        CreateUnits(completingFaction.Player, Constants.UNIT_N0DT_TIDEMISTRESS_NZOTH, spawn.X, spawn.Y, 270, 6);
+        CreateUnits(completingFaction.Player, Constants.UNIT_N0B5_SCAVENGER_YOGG_WORKER, spawn.X, spawn.Y, 270, 12);
+        CreateUnits(completingFaction.Player, Constants.UNIT_N0B4_REAPER_YOGG, spawn.X, spawn.Y, 270, 6);
 
-        CreateUnits(completingFaction.Player, Constants.UNIT_N0CA_NAGA_INCURSOR_NZOTH, spawn.X, spawn.Y, 270, 12);
-        CreateUnits(completingFaction.Player, Constants.UNIT_N0CE_HATCHLING_NZOTH, spawn.X, spawn.Y, 270, 12);
-        CreateUnits(completingFaction.Player, Constants.UNIT_N0CL_GARGANTUAN_SEA_TURTLE_NZOTH, spawn.X, spawn.Y, 270, 8);
+        CreateUnits(completingFaction.Player, Constants.UNIT_O01G_FACELESS_MARAUDER_YOGG, spawn.X, spawn.Y, 270, 12);
+        CreateUnits(completingFaction.Player, Constants.UNIT_O04V_SOUL_HUNTER_YOGG, spawn.X, spawn.Y, 270, 12);
+        CreateUnits(completingFaction.Player, Constants.UNIT_U029_STYGIAN_HULK_YOGG, spawn.X, spawn.Y, 270, 12);
 
-        CreateUnits(completingFaction.Player, Constants.UNIT_N0CB_DEEPSEER_NZOTH, spawn.X, spawn.Y, 270, 12);
-        CreateUnits(completingFaction.Player, Constants.UNIT_N0CD_BLOODKIN_NZOTH, spawn.X, spawn.Y, 270, 12);
+        CreateUnits(completingFaction.Player, Constants.UNIT_N077_SORCERER_YOGG, spawn.X, spawn.Y, 270, 12);
+        CreateUnits(completingFaction.Player, Constants.UNIT_O04Y_FATEWEAVER_YOGG, spawn.X, spawn.Y, 270, 12);
+        CreateUnits(completingFaction.Player, Constants.UNIT_U02F_FORGOTTEN_ONE_YOGG, spawn.X, spawn.Y, 270, 2);
 
-        CreateUnits(completingFaction.Player, Constants.UNIT_O060_RIPTIDE_DRAKE_NZOTH, spawn.X, spawn.Y, 270, 6);
-        CreateUnits(completingFaction.Player, Constants.UNIT_U02J_TIDAL_TERROR_NZOTH, spawn.X, spawn.Y, 270, 4);
-
-        CreateUnits(completingFaction.Player, Constants.UNIT_H01Q_IMMORTAL_GUARDIAN_NZOTH, spawn.X, spawn.Y, 270, 4);
-        CreateUnits(completingFaction.Player, Constants.UNIT_N0CO_TRENCH_HYDRA_NZOTH, spawn.X, spawn.Y, 270, 2);
+        CreateUnits(completingFaction.Player, Constants.UNIT_O04Z_FLYING_HORROR_YOGG, spawn.X, spawn.Y, 270, 12);
+        CreateUnits(completingFaction.Player, Constants.UNIT_N0AH_DEFORMED_CHIMERA_YOGG, spawn.X, spawn.Y, 270, 4);
+        CreateUnits(completingFaction.Player, Constants.UNIT_H09F_GLADIATOR_YOGG, spawn.X, spawn.Y, 270, 12);
 
         _nzoth.ForceCreate(completingFaction.Player, spawn, 270);
 

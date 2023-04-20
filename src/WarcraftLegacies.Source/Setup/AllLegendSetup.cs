@@ -92,6 +92,7 @@ namespace WarcraftLegacies.Source.Setup
     public LegendTroll Troll { get; }
     public LegendCthun Cthun { get; }
     public LegendNazjatar Nazjatar { get; }
+    public LegendBlackEmpire BlackEmpire { get; }
 
     /// <summary>
     /// Contains references to all Neutral <see cref="Legend"/>s.
@@ -123,6 +124,7 @@ namespace WarcraftLegacies.Source.Setup
       Neutral = new LegendNeutral(preplacedUnitSystem);
       Cthun = new LegendCthun();
       Nazjatar = new LegendNazjatar();
+      BlackEmpire = new LegendBlackEmpire();
     }
 
     /// <summary>
@@ -149,6 +151,7 @@ namespace WarcraftLegacies.Source.Setup
       Troll.RegisterLegends();
       Cthun.RegisterLegends();
       Nazjatar.RegisterLegends();
+      BlackEmpire.RegisterLegends();
       Neutral.RegisterLegends();
     }
   }

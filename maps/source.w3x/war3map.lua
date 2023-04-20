@@ -7854,7 +7854,7 @@ u = BlzCreateUnitWithSkin(p, FourCC("nsnp"), -2916.6, -26051.0, 95.672, FourCC("
 u = BlzCreateUnitWithSkin(p, FourCC("nsnp"), -2786.6, -25970.7, 175.787, FourCC("nsnp"))
 u = BlzCreateUnitWithSkin(p, FourCC("nchg"), 707.9, -26371.2, 23.923, FourCC("nchg"))
 SetUnitAcquireRange(u, 200.0)
-u = BlzCreateUnitWithSkin(p, FourCC("U01Z"), -18701.8, -25066.8, 273.710, FourCC("U01Z"))
+u = BlzCreateUnitWithSkin(p, FourCC("U01Z"), -18699.3, -25224.0, 273.710, FourCC("U01Z"))
 u = BlzCreateUnitWithSkin(p, FourCC("H0A5"), -17039.1, -25109.1, 274.311, FourCC("H0A5"))
 u = BlzCreateUnitWithSkin(p, FourCC("H08U"), -17231.0, -25120.5, 266.888, FourCC("H08U"))
 SetUnitColor(u, ConvertPlayerColor(9))

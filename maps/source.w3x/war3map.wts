@@ -105308,13 +105308,13 @@ STRING 17554
 }
 
 STRING 17555
-// Units: n077 (Sorcerer), Ubertip (Tooltip - Extended)
+// Units: n08Z (Whipping Wind), Ubertip (Tooltip - Extended)
 {
 Dark Arcanist from Ny'alotha.|n|cfff5962dAbilities:|R Magic Missile|n|cfff5962dCan Learn:|R Devour Magic, Arcane Barrage |n|n|cffd5d500Attacks land and air units.|r
 }
 
 STRING 17556
-// Units: o04Y (Fateweaver), Ubertip (Tooltip - Extended)
+// Units: o05E (Lurking Tempest), Ubertip (Tooltip - Extended)
 {
 Master of magics from Ny'alotha.|n|cfff5962dAbilities:|R Parasite|n|cfff5962dCan Learn:|R Anti-magic Shell, Suppression|n|n|cffffcc00Attacks land and air units.|R
 
@@ -110189,13 +110189,6 @@ STRING 18367
 (Tolvir)
 }
 
-STRING 18368
-// Units: o05E (Lurking Tempest), Ubertip (Tooltip - Extended)
-{
-Master of magics from Ny'alotha.|n|cfff5962dAbilities:|R Parasite|n|cfff5962dCan Learn:|R Anti-magic Shell, Suppression|n|n|cffffcc00Attacks land and air units.|R
-
-}
-
 STRING 18369
 // Abilities: A0V6 (Pulverize), EditorSuffix (Editor Suffix)
 {
@@ -110230,6 +110223,12 @@ STRING 18374
 // Abilities: A0Z7 (Earth's Grace), Researchhotkey (Hotkey - Learn)
 {
 W
+}
+
+STRING 18375
+// Units: n077 (Sorcerer), Ubertip (Tooltip - Extended)
+{
+Dark Arcanist from Ny'alotha.|n|cfff5962dAbilities:|R Magic Missile, Devour Magic, Arcane Barrage |n|n|cffd5d500Attacks land and air units.|r
 }
 
 STRING 18376
@@ -110470,12 +110469,6 @@ STRING 18415
 // Units: n08Z (Whipping Wind), Tip (Tooltip - Basic)
 {
 Train Sorcerer
-}
-
-STRING 18416
-// Units: n08Z (Whipping Wind), Ubertip (Tooltip - Extended)
-{
-Dark Arcanist from Ny'alotha.|n|cfff5962dAbilities:|R Magic Missile|n|cfff5962dCan Learn:|R Devour Magic, Arcane Barrage |n|n|cffd5d500Attacks land and air units.|r
 }
 
 STRING 18417
@@ -123632,6 +123625,19 @@ STRING 20608
 Turn 25 has passed
 }
 
+STRING 20609
+// Units: o04Y (Fateweaver), Ubertip (Tooltip - Extended)
+{
+Master of magics from Ny'alotha.|n|cfff5962dAbilities:|R Parasite, Anti-magic Shell, Suppression|n|n|cffffcc00Attacks land and air units.|R
+
+}
+
+STRING 20610
+// Units: n0DU (Pyramid of Madness), EditorSuffix (Name - Editor Suffix)
+{
+ (Nzoth Other)
+}
+
 STRING 20611
 // Units: o060 (Riptide Drake), EditorSuffix (Name - Editor Suffix)
 {
@@ -123894,5 +123900,17 @@ STRING 20654
 // Upgrades: R08K (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 C
+}
+
+STRING 20655
+// Units: n0DU (Pyramid of Madness), Name (Name)
+{
+Pyramid of Madness
+}
+
+STRING 20656
+// Units: n0DU (Pyramid of Madness), Tip (Tooltip - Basic)
+{
+Build Pyramid of Madness
 }
 

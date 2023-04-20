@@ -15,7 +15,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       crisis.AddQuest(new QuestOldGodPick(preplacedUnitSystem));
       
       crisis.AddQuest(new QuestNazjatarSpawnCaptain(preplacedUnitSystem, Regions.NzothStartPosition, allLegendSetup.Nazjatar.Azshara));
-      crisis.AddQuest(new QuestBlackEmpireSpawnCaptain(preplacedUnitSystem, Regions.MaelstromChannel, allLegendSetup.Nazjatar.Azshara));
+      crisis.AddQuest(new QuestBlackEmpireSpawnCaptain(preplacedUnitSystem, Regions.MaelstromChannel, allLegendSetup.BlackEmpire.Nzoth));
 
       crisis2.AddQuest(new QuestNazjatarSpawnFootman(preplacedUnitSystem, Regions.NzothStartPosition, allLegendSetup.Nazjatar.Azshara));
 
