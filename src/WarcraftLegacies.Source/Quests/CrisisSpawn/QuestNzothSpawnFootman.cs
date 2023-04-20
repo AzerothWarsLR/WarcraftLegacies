@@ -26,7 +26,7 @@ namespace WarcraftLegacies.Source.Quests.CrisisSpawn
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestNzothSpawnFootman"/> class.
     /// </summary>
-    public QuestNzothSpawnFootman(PreplacedUnitSystem preplacedUnitSystem, Rectangle spawnLocation, LegendaryHero cthun) : base("Pick Nzoth", "Blabla", "ReplaceableTextures\\CommandButtons\\BTNNzothIcon.blp")
+    public QuestNzothSpawnFootman(PreplacedUnitSystem preplacedUnitSystem, Rectangle spawnLocation, LegendaryHero cthun) : base("Pick Nzoth", "The Old God N'zoth will awaken.", "ReplaceableTextures\\CommandButtons\\BTNNzothIcon.blp")
     {
       _spawnLocation = spawnLocation;
       _cthun = cthun;
@@ -38,11 +38,11 @@ namespace WarcraftLegacies.Source.Quests.CrisisSpawn
 
     /// <inheritdoc/>
     protected override string RewardFlavour =>
-      "Crown Prince Arthas, and what remains of his forces, have landed on the shores of Northrend and established a base camp.";
+      "The old god N'zoth and his forces awaken from the Abyss.";
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
-      "A new base near Dragonblight in Northrend, and Arthas revives there";
+      "You will spawn with N'zoth and an army in the Abyss.";
 
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)

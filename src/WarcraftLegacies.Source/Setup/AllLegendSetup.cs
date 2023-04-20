@@ -91,6 +91,7 @@ namespace WarcraftLegacies.Source.Setup
 
     public LegendTroll Troll { get; }
     public LegendCthun Cthun { get; }
+    public LegendNzoth Nzoth { get; }
 
     /// <summary>
     /// Contains references to all Neutral <see cref="Legend"/>s.
@@ -121,6 +122,7 @@ namespace WarcraftLegacies.Source.Setup
       Warsong = new LegendWarsong(preplacedUnitSystem);
       Neutral = new LegendNeutral(preplacedUnitSystem);
       Cthun = new LegendCthun();
+      Nzoth = new LegendNzoth();
     }
 
     /// <summary>
@@ -146,6 +148,7 @@ namespace WarcraftLegacies.Source.Setup
       Warsong.RegisterLegends();
       Troll.RegisterLegends();
       Cthun.RegisterLegends();
+      Nzoth.RegisterLegends();
       Neutral.RegisterLegends();
     }
   }

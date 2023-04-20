@@ -23,7 +23,7 @@ namespace WarcraftLegacies.Source.Quests.CrisisSpawn
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestOldGodPick"/> class.
     /// </summary>
-    public QuestOldGodPick(PreplacedUnitSystem preplacedUnitSystem) : base("Pick Old'Gods team", "Blabla", "ReplaceableTextures\\CommandButtons\\BTNHumanTransport.blp")
+    public QuestOldGodPick(PreplacedUnitSystem preplacedUnitSystem) : base("Pick Old'Gods team", "Enable selecting the Old God factions.", "ReplaceableTextures\\CommandButtons\\BTNHumanTransport.blp")
     {
       _picker = preplacedUnitSystem.GetUnit(Constants.UNIT_N0DQ_CRISIS_TEAM_PICKER);
       _firstpick = preplacedUnitSystem.GetUnit(Constants.UNIT_N0DR_CRISIS_FACTION_PICKER_OLD_GODS, new Point(13068, -29532));
@@ -34,11 +34,11 @@ namespace WarcraftLegacies.Source.Quests.CrisisSpawn
 
     /// <inheritdoc/>
     protected override string RewardFlavour =>
-      "Crown Prince Arthas, and what remains of his forces, have landed on the shores of Northrend and established a base camp.";
+      "Pick the Old Gods team to be the crisis.";
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
-      "A new base near Dragonblight in Northrend, and Arthas revives there";
+      "You will have the Old God factions to pick from when the Crisis happens";
 
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)

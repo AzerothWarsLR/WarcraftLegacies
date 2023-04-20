@@ -21,14 +21,14 @@ namespace WarcraftLegacies.Source.Quests.CrisisSpawn
   {
     private readonly Rectangle _spawnLocation;
     private readonly unit _picker;
-    private readonly LegendaryHero _cthun;
+    private readonly LegendaryHero _nzoth;
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestNzothSpawCaptain"/> class.
     /// </summary>
-    public QuestNzothSpawnCaptain(PreplacedUnitSystem preplacedUnitSystem, Rectangle spawnLocation, LegendaryHero cthun) : base("Pick Nzoth", "Blabla", "ReplaceableTextures\\CommandButtons\\BTNNzothIcon.blp")
+    public QuestNzothSpawnCaptain(PreplacedUnitSystem preplacedUnitSystem, Rectangle spawnLocation, LegendaryHero nzoth) : base("Pick Nzoth", "The Old God N'zoth will awaken.", "ReplaceableTextures\\CommandButtons\\BTNNzothIcon.blp")
     {
       _spawnLocation = spawnLocation;
-      _cthun = cthun;
+      _nzoth = nzoth;
       _picker = preplacedUnitSystem.GetUnit(Constants.UNIT_N0DR_CRISIS_FACTION_PICKER_OLD_GODS, new Point(12700, -29532));
       AddObjective(new ObjectiveEitherOf(
         new ObjectiveResearch(Constants.UPGRADE_R07E_FORTIFIED_HULLS, Constants.UNIT_N0DR_CRISIS_FACTION_PICKER_OLD_GODS),
@@ -38,11 +38,11 @@ namespace WarcraftLegacies.Source.Quests.CrisisSpawn
 
     /// <inheritdoc/>
     protected override string RewardFlavour =>
-      "Crown Prince Arthas, and what remains of his forces, have landed on the shores of Northrend and established a base camp.";
+      "The old god N'zoth and his forces awaken from the Abyss.";
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
-      "A new base near Dragonblight in Northrend, and Arthas revives there";
+      "You will spawn with N'zoth and an army in the Abyss.";
 
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
@@ -55,15 +55,25 @@ namespace WarcraftLegacies.Source.Quests.CrisisSpawn
       {
         var spawn = _spawnLocation.Center;
 
-        CreateStructureForced(completingFaction.Player, Constants.UNIT_N05A_VAULT_OF_THE_ETERNAL_PALACE_ILLIDARI_OTHER, -4200, 2450, 0, 256);
-        CreateUnits(completingFaction.Player, Constants.UNIT_U019_DRONE_C_THUN_WORKER, spawn.X, spawn.Y, 270, 12);
+        CreateStructureForced(completingFaction.Player, Constants.UNIT_N045_TEMPLE_OF_AZSHARA_NZOTH_OTHER, -4200, 2450, 0, 256);
+        
+        CreateUnits(completingFaction.Player, Constants.UNIT_N0D7_DEEP_FORAGER_N_ZOTH_WORKER, spawn.X, spawn.Y, 270, 12);
+        CreateUnits(completingFaction.Player, Constants.UNIT_N0DT, spawn.X, spawn.Y, 270, 6);
 
-        CreateUnits(completingFaction.Player, Constants.UNIT_N06I_SILITHID_WARRIOR_C_THUN_SILITHID_WARRIOR, spawn.X, spawn.Y, 270, 12);
-        CreateUnits(completingFaction.Player, Constants.UNIT_O00L_SILITHID_REAVER_C_THUN_SILITHID_REAVER, spawn.X, spawn.Y, 270, 12);
-        CreateUnits(completingFaction.Player, Constants.UNIT_N05V_SHADOW_WEAVER_C_THUN_FACELESS_SHADOW_WEAVER, spawn.X, spawn.Y, 270, 12);
-        CreateUnits(completingFaction.Player, Constants.UNIT_N060_SILITHID_TUNNELER_C_THUN_SILITHID_TUNNELER, spawn.X, spawn.Y, 270, 12);
+        CreateUnits(completingFaction.Player, Constants.UNIT_N0CA_NAGA_INCURSOR_NZOTH, spawn.X, spawn.Y, 270, 12);
+        CreateUnits(completingFaction.Player, Constants.UNIT_N0CE_HATCHLING_NZOTH, spawn.X, spawn.Y, 270, 12);
+        CreateUnits(completingFaction.Player, Constants.UNIT_N0CL_GARGANTUAN_SEA_TURTLE_NZOTH, spawn.X, spawn.Y, 270, 8);
+        
+        CreateUnits(completingFaction.Player, Constants.UNIT_N0CB_DEEPSEER_NZOTH, spawn.X, spawn.Y, 270, 12);
+        CreateUnits(completingFaction.Player, Constants.UNIT_N0CD_BLOODKIN_NZOTH, spawn.X, spawn.Y, 270, 12);
 
-        _cthun.ForceCreate(completingFaction.Player, spawn, 270);
+        CreateUnits(completingFaction.Player, Constants.UNIT_o060, spawn.X, spawn.Y, 270, 6);
+        CreateUnits(completingFaction.Player, Constants.UNIT_U02J_TIDAL_TERROR_NZOTH, spawn.X, spawn.Y, 270, 4);
+
+        CreateUnits(completingFaction.Player, Constants.UNIT_H01Q_IMMORTAL_GUARDIAN_NZOTH, spawn.X, spawn.Y, 270, 4);
+        CreateUnits(completingFaction.Player, Constants.UNIT_N0CO_TRENCH_HYDRA_NZOTH, spawn.X, spawn.Y, 270, 2);
+
+        _nzoth.ForceCreate(completingFaction.Player, spawn, 270);
 
         completingFaction.Player.SetTeam(TeamSetup.Oldgods);
         completingFaction.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, 2000);
