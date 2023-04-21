@@ -32,7 +32,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
       BlackEmpire.ModObjectLimit(Constants.UNIT_N08L_TEMPLE_PROTECTOR_TOLVIR_TOWER, Faction.UNLIMITED);
       BlackEmpire.ModObjectLimit(Constants.UNIT_N08N_IMPROVED_TEMPLE_PROTECTOR_TOLVIR_TOWER, Faction.UNLIMITED);
 
-      /// All Nzoth Units listed below - with total limits 
+      // All Nzoth Units listed below - with total limits 
 
       BlackEmpire.ModObjectLimit(Constants.UNIT_N0D7_DEEP_FORAGER_N_ZOTH_WORKER, Faction.UNLIMITED);
       BlackEmpire.ModObjectLimit(Constants.UNIT_N0DT_TIDEMISTRESS_NZOTH, 6);
@@ -48,7 +48,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
       BlackEmpire.ModObjectLimit(Constants.UNIT_H01Q_IMMORTAL_GUARDIAN_NZOTH, 4);
       BlackEmpire.ModObjectLimit(Constants.UNIT_N0CO_TRENCH_HYDRA_NZOTH, 2);
 
-      /// All Nzoth Ships
+     // All Nzoth Ships
 
       BlackEmpire.ModObjectLimit(FourCC("ushp"), Faction.UNLIMITED); //Undead Shipyard
       BlackEmpire.ModObjectLimit(FourCC("ubot"), Faction.UNLIMITED); //Undead Transport Ship
@@ -61,7 +61,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
       BlackEmpire.ModObjectLimit(FourCC("h0B9"), 6); //Bombard
 
 
-      /// All Nzoth Heroes listed below - with total limits
+      // All Nzoth Heroes listed below - with total limits
 
       BlackEmpire.ModObjectLimit(Constants.UNIT_U00P_C_THRAX_ABERRATION, 1);
       BlackEmpire.ModObjectLimit(Constants.UNIT_H08U_EMPRESS_OF_NAZJATAR_NZOTH, 1);

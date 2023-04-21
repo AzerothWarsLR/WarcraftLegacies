@@ -1385,6 +1385,12 @@ STRING 230
 Increases Apothecary's mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Raise Plagueling
 }
 
+STRING 231
+// Units: h01N (Vile Corrupter), Ubertip (Tooltip - Extended)
+{
+Flying aoe attacker. Has the Seed of Evil and Parasite abilities.|n|cff99b4d1Can only train 4.|r|n|cffffcc00Attacks land units.|r
+}
+
 STRING 232
 // Units: h08N (Dreadguard), Ubertip (Tooltip - Extended)
 {
@@ -91663,12 +91669,6 @@ STRING 15283
 // Abilities: A0H0 (Healing Surge), Tip (Tooltip - Normal)
 {
 Healing Surge
-}
-
-STRING 15284
-// Units: h01N (Vile Corrupter), Ubertip (Tooltip - Extended)
-{
-Flying Range unit. Has the Seed of Evil and Parasite abilities.|n|cff99b4d1Can only train 4.|r|n|cffffcc00Attacks land units.|r
 }
 
 STRING 15285
