@@ -223,7 +223,7 @@ public static class Regions
 	public static Rectangle DragonmawUnlock { get; set; } = new Rectangle(20832f, -5088f, 23168f, -2720f);
 	public static Rectangle SouthshoreUnlock { get; set; } = new Rectangle(10784f, 1632f, 12096f, 2656f);
 	public static Rectangle MaievStartUnlock { get; set; } = new Rectangle(-6016f, -28416f, -4896f, -27104f);
-	public static Rectangle Silithus_Bug_Exterior { get; set; } = new Rectangle(-16352f, -17504f, -16096f, -17120f);
+	public static Rectangle CthunSpawn { get; set; } = new Rectangle(-16992f, -17440f, -16512f, -16992f);
 	public static Rectangle EchoUnlock { get; set; } = new Rectangle(-8608f, -6816f, -6208f, -3968f);
 	public static Rectangle StrahnbradUnlock { get; set; } = new Rectangle(12544f, 4992f, 13408f, 5824f);
 	public static Rectangle ZeppelinReturn { get; set; } = new Rectangle(-960f, -5824f, -320f, -5216f);

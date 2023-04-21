@@ -1385,12 +1385,6 @@ STRING 230
 Increases Apothecary's mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Raise Plagueling
 }
 
-STRING 231
-// Units: n05A (Vault of the Eternal Palace), EditorSuffix (Name - Editor Suffix)
-{
- (Illidari Other)
-}
-
 STRING 232
 // Units: h08N (Dreadguard), Ubertip (Tooltip - Extended)
 {
@@ -3699,7 +3693,7 @@ War Stomp
 }
 
 STRING 618
-// Units: n05A (Vault of the Eternal Palace), Ubertip (Tooltip - Extended)
+// Units: n0C2 (Pillar of Waves), Ubertip (Tooltip - Extended)
 {
 Primary structure, used to train Mur'gul Slaves, Royal Guards and receive gathered resources. Also contains the Submerge upgrade.
 }
@@ -12402,7 +12396,7 @@ Adds <A03S,DataA3> bonus damage to the unit and causes its attacks to heal it fo
 }
 
 STRING 2068
-// Units: n0C2 (Pillar of Waves), Ubertip (Tooltip - Extended)
+// Units: n0C8 (Monument of the Deep), Ubertip (Tooltip - Extended)
 {
 Primary structure, used to train Mur'gul Slaves, Royal Guards and receive gathered resources. Also contains the Submerge upgrade.
 }
@@ -14892,18 +14886,6 @@ STRING 2483
 // Units: h01Q (Immortal Guardian), Tip (Tooltip - Basic)
 {
 Train - Immortal Guardian
-}
-
-STRING 2484
-// Units: h01N (Faceless Corrupter), Name (Name)
-{
-Faceless Corrupter
-}
-
-STRING 2485
-// Units: h01N (Faceless Corrupter), Tip (Tooltip - Basic)
-{
-Train Faceless Corrupter
 }
 
 STRING 2486
@@ -18462,7 +18444,7 @@ STRING 3077
 }
 
 STRING 3078
-// Units: h01N (Faceless Corrupter), Hotkey (Hotkey)
+// Units: h01N (Vile Corrupter), Hotkey (Hotkey)
 {
 E
 }
@@ -20405,7 +20387,7 @@ Shadowforge City
 }
 
 STRING 3402
-// Units: h01N (Faceless Corrupter), EditorSuffix (Name - Editor Suffix)
+// Units: h01N (Vile Corrupter), EditorSuffix (Name - Editor Suffix)
 {
 (C'thun Faceless Corruptor)
 }
@@ -22846,7 +22828,7 @@ STRING 3808
 }
 
 STRING 3809
-// Units: n05A (Vault of the Eternal Palace), Hotkey (Hotkey)
+// Units: O038 (Worgen Blood Shaman), Hotkey (Hotkey)
 {
 C
 }
@@ -23896,7 +23878,7 @@ Elite Guardrian of the Lordaeron Royal Family.|n|n|cffffcc00Attacks land units.|
 }
 
 STRING 3984
-// Units: O038 (Worgen Blood Shaman), Hotkey (Hotkey)
+// Units: h064 (Keep), Hotkey (Hotkey)
 {
 C
 }
@@ -23938,13 +23920,13 @@ R
 }
 
 STRING 3991
-// Units: h064 (Keep), Hotkey (Hotkey)
+// Units: h06I (Castle), Hotkey (Hotkey)
 {
 C
 }
 
 STRING 3992
-// Units: h06I (Castle), Hotkey (Hotkey)
+// Units: n07H (Trade-house), Hotkey (Hotkey)
 {
 C
 }
@@ -24274,7 +24256,7 @@ E
 }
 
 STRING 4047
-// Units: n07H (Trade-house), Hotkey (Hotkey)
+// Units: o03A (Stronghold), Hotkey (Hotkey)
 {
 C
 }
@@ -24298,7 +24280,7 @@ X
 }
 
 STRING 4051
-// Units: o03A (Stronghold), Hotkey (Hotkey)
+// Units: o03B (Fortress), Hotkey (Hotkey)
 {
 C
 }
@@ -24364,7 +24346,7 @@ E
 }
 
 STRING 4062
-// Units: o03B (Fortress), Hotkey (Hotkey)
+// Units: u00Y (Black Vault), Hotkey (Hotkey)
 {
 C
 }
@@ -24598,7 +24580,7 @@ Learn Seismic Shard- [|cffffcc00Level %d|r]
 }
 
 STRING 4101
-// Units: u00Y (Black Vault), Hotkey (Hotkey)
+// Units: o03M (Stronghold), Hotkey (Hotkey)
 {
 C
 }
@@ -25036,7 +25018,7 @@ Regenerates <AIp6,DataA1> hit points and <AIp6,DataB1> mana of the Hero over <AI
 }
 
 STRING 4174
-// Units: o03M (Stronghold), Hotkey (Hotkey)
+// Units: o03N (Fortress), Hotkey (Hotkey)
 {
 C
 }
@@ -25408,7 +25390,7 @@ Summons Druidic Wisps
 }
 
 STRING 4236
-// Units: o03N (Fortress), Hotkey (Hotkey)
+// Units: o03X (Auction House), Hotkey (Hotkey)
 {
 C
 }
@@ -25480,7 +25462,7 @@ Summons workers.
 }
 
 STRING 4248
-// Units: o03X (Auction House), Hotkey (Hotkey)
+// Units: o03Y (Stronghold), Hotkey (Hotkey)
 {
 C
 }
@@ -25528,7 +25510,7 @@ Summons an Acolyte.
 }
 
 STRING 4256
-// Units: o03Y (Stronghold), Hotkey (Hotkey)
+// Units: o03Z (Fortress), Hotkey (Hotkey)
 {
 C
 }
@@ -25636,7 +25618,7 @@ Summons an Herald
 }
 
 STRING 4274
-// Units: o03Z (Fortress), Hotkey (Hotkey)
+// Units: o047 (Bazaar), Hotkey (Hotkey)
 {
 C
 }
@@ -25780,7 +25762,7 @@ Summons Human Workers.
 }
 
 STRING 4298
-// Units: o047 (Bazaar), Hotkey (Hotkey)
+// Units: h086 (Field Stockpile), Hotkey (Hotkey)
 {
 C
 }
@@ -25810,7 +25792,7 @@ Summons workers.
 }
 
 STRING 4303
-// Units: h086 (Field Stockpile), Hotkey (Hotkey)
+// Units: h08A (Grim Estate), Hotkey (Hotkey)
 {
 C
 }
@@ -25840,7 +25822,7 @@ Summons Orc Workers.
 }
 
 STRING 4308
-// Units: h08A (Grim Estate), Hotkey (Hotkey)
+// Units: h08B (Haunted Castle), Hotkey (Hotkey)
 {
 C
 }
@@ -25870,7 +25852,7 @@ Summons Elven Workers.
 }
 
 STRING 4313
-// Units: h08B (Haunted Castle), Hotkey (Hotkey)
+// Units: u017 (Undertaker's Vault), Hotkey (Hotkey)
 {
 C
 }
@@ -26014,7 +25996,7 @@ Activate Battle Trance - [|cffffcc00Level 3|r]
 }
 
 STRING 4337
-// Units: u017 (Undertaker's Vault), Hotkey (Hotkey)
+// Units: h090 (Trade Prince Guard), Hotkey (Hotkey)
 {
 C
 }
@@ -26068,7 +26050,7 @@ Rain of Light - [|cffffcc00Level 2|r]
 }
 
 STRING 4346
-// Units: h090 (Trade Prince Guard), Hotkey (Hotkey)
+// Units: n0AS (Whispering Labyrinth), Hotkey (Hotkey)
 {
 C
 }
@@ -26140,7 +26122,7 @@ Summons Mur'gul Workers.
 }
 
 STRING 4358
-// Units: n0AS (Whispering Labyrinth), Hotkey (Hotkey)
+// Units: n0AT (Cathedral of Madness), Hotkey (Hotkey)
 {
 C
 }
@@ -26170,7 +26152,7 @@ Summons Dwarven Workers.
 }
 
 STRING 4363
-// Units: n0AT (Cathedral of Madness), Hotkey (Hotkey)
+// Units: n0B2 (Ominous Vault), Hotkey (Hotkey)
 {
 C
 }
@@ -26206,7 +26188,7 @@ Field of Blood - [|cffffcc00Level 2|r]
 }
 
 STRING 4369
-// Units: n0B2 (Ominous Vault), Hotkey (Hotkey)
+// Units: o050 (Metropolis), Hotkey (Hotkey)
 {
 C
 }
@@ -27671,7 +27653,7 @@ Dalaran Dungeon Statue
 }
 
 STRING 4613
-// Units: n0C8 (Monument of the Deep), Ubertip (Tooltip - Extended)
+// Units: n0C9 (Temple of Tides), Ubertip (Tooltip - Extended)
 {
 Primary structure, used to train Mur'gul Slaves, Royal Guards and receive gathered resources. Also contains the Submerge upgrade.
 }
@@ -35573,13 +35555,13 @@ Summon Water Elemental - [|cffffcc00Level 4|r]
 }
 
 STRING 5930
-// Units: o050 (Metropolis), Hotkey (Hotkey)
+// Units: o051 (Divine Citadel), Hotkey (Hotkey)
 {
 C
 }
 
 STRING 5931
-// Units: o051 (Divine Citadel), Hotkey (Hotkey)
+// Units: o057 (Vault of Relics), Hotkey (Hotkey)
 {
 C
 }
@@ -39449,7 +39431,7 @@ STRING 6575
 }
 
 STRING 6576
-// Units: o057 (Vault of Relics), Hotkey (Hotkey)
+// Units: h0A1 (Admiral Guard), Hotkey (Hotkey)
 {
 C
 }
@@ -40055,7 +40037,7 @@ Learn N'zoth Pressure Aura  - [|cffffcc00Level %d|r]
 }
 
 STRING 6677
-// Units: h0A1 (Admiral Guard), Hotkey (Hotkey)
+// Units: n0BZ (Deep Vault), Hotkey (Hotkey)
 {
 C
 }
@@ -42781,7 +42763,7 @@ Chain Fence
 }
 
 STRING 7128
-// Units: n0BZ (Deep Vault), Hotkey (Hotkey)
+// Units: n0C8 (Monument of the Deep), Hotkey (Hotkey)
 {
 C
 }
@@ -51609,7 +51591,7 @@ Build Shipyard
 }
 
 STRING 8599
-// Units: n0C9 (Temple of Tides), Ubertip (Tooltip - Extended)
+// Units: n05Q (Pillar of Waves), Ubertip (Tooltip - Extended)
 {
 Primary structure, used to train Mur'gul Slaves, Royal Guards and receive gathered resources. Also contains the Submerge upgrade.
 }
@@ -52845,7 +52827,7 @@ STRING 8804
 }
 
 STRING 8805
-// Units: n0C8 (Monument of the Deep), Hotkey (Hotkey)
+// Units: n0C9 (Temple of Tides), Hotkey (Hotkey)
 {
 C
 }
@@ -55840,7 +55822,7 @@ STRING 9303
 }
 
 STRING 9304
-// Units: n0C9 (Temple of Tides), Hotkey (Hotkey)
+// Units: o064 (Stronghold), Hotkey (Hotkey)
 {
 C
 }
@@ -61168,7 +61150,7 @@ STRING 10191
 }
 
 STRING 10192
-// Units: o064 (Stronghold), Hotkey (Hotkey)
+// Units: o065 (Fortress), Hotkey (Hotkey)
 {
 C
 }
@@ -61192,7 +61174,7 @@ Increases a nearby friendly tower's damage by 40% for 60 seconds. 4 seconds cool
 }
 
 STRING 10196
-// Units: o065 (Fortress), Hotkey (Hotkey)
+// Units: u02N (Treasure Hoard), Hotkey (Hotkey)
 {
 C
 }
@@ -63670,7 +63652,7 @@ STRING 10608
 }
 
 STRING 10609
-// Units: n05Q (Pillar of Waves), Ubertip (Tooltip - Extended)
+// Units: n05W (Monument of the Deep), Ubertip (Tooltip - Extended)
 {
 Primary structure, used to train Mur'gul Slaves, Royal Guards and receive gathered resources. Also contains the Submerge upgrade.
 }
@@ -63820,7 +63802,7 @@ Transforms Fandral into a Night Elf, losing his defensive bonuses but returning 
 }
 
 STRING 10634
-// Units: u02N (Treasure Hoard), Hotkey (Hotkey)
+// Units: e01Q (Coral of Ages), Hotkey (Hotkey)
 {
 C
 }
@@ -64018,7 +64000,7 @@ Hurls a shadowy bolt that stuns a target enemy unit for 3 seconds, dealing 75 da
 }
 
 STRING 10667
-// Units: n05W (Monument of the Deep), Ubertip (Tooltip - Extended)
+// Units: n06R (Temple of Tides), Ubertip (Tooltip - Extended)
 {
 Primary structure, used to train Mur'gul Slaves, Royal Guards and receive gathered resources. Also contains the Submerge upgrade.
 }
@@ -64216,7 +64198,7 @@ E
 }
 
 STRING 10700
-// Units: e01Q (Coral of Ages), Hotkey (Hotkey)
+// Units: e01R (Coral of Eternity), Hotkey (Hotkey)
 {
 C
 }
@@ -65314,13 +65296,13 @@ A
 }
 
 STRING 10883
-// Units: e01R (Coral of Eternity), Hotkey (Hotkey)
+// Units: n0CU (Deep Sea Vault), Hotkey (Hotkey)
 {
 C
 }
 
 STRING 10884
-// Units: n0CU (Deep Sea Vault), Hotkey (Hotkey)
+// Units: h05X (Control Point Defender), Hotkey (Hotkey)
 {
 C
 }
@@ -71547,7 +71529,7 @@ STRING 11919
 }
 
 STRING 11920
-// Units: h05X (Control Point Defender), Hotkey (Hotkey)
+// Units: h0AO (Bombard), Hotkey (Hotkey)
 {
 C
 }
@@ -75986,9 +75968,9 @@ Crisis Faction Picker
 }
 
 STRING 12660
-// Units: h01N (Faceless Corrupter), Ubertip (Tooltip - Extended)
+// Units: h01N (Vile Corrupter), Name (Name)
 {
-Support Range unit. Has the Seed of Evil and Parasite abilities.|n|cff99b4d1Can only train 8.|r|n|cffffcc00Attacks land units.|r
+Vile Corrupter
 }
 
 STRING 12661
@@ -79941,7 +79923,7 @@ Smoke Cloud
 }
 
 STRING 13319
-// Units: h0AO (Bombard), Hotkey (Hotkey)
+// Units: h0B7 (Bombard), Hotkey (Hotkey)
 {
 C
 }
@@ -79953,7 +79935,7 @@ This unit has been affected by Impaling Strike. It is taking damage over time an
 }
 
 STRING 13321
-// Units: h0B7 (Bombard), Hotkey (Hotkey)
+// Units: h0B8 (Bombard), Hotkey (Hotkey)
 {
 C
 }
@@ -80961,7 +80943,7 @@ This unit is being trampled by an Outrider; its movement speed is reduced.
 }
 
 STRING 13489
-// Units: h0B8 (Bombard), Hotkey (Hotkey)
+// Units: h0B9 (Bombard), Hotkey (Hotkey)
 {
 C
 }
@@ -81939,7 +81921,7 @@ A
 }
 
 STRING 13652
-// Units: h0B9 (Bombard), Hotkey (Hotkey)
+// Units: n05W (Monument of the Deep), Hotkey (Hotkey)
 {
 C
 }
@@ -82827,7 +82809,7 @@ STRING 13799
 }
 
 STRING 13800
-// Units: n05W (Monument of the Deep), Hotkey (Hotkey)
+// Units: n06R (Temple of Tides), Hotkey (Hotkey)
 {
 C
 }
@@ -83097,13 +83079,13 @@ Communion
 }
 
 STRING 13845
-// Units: n06R (Temple of Tides), Hotkey (Hotkey)
+// Units: n07J (Deep Vault), Hotkey (Hotkey)
 {
 C
 }
 
 STRING 13846
-// Units: n07J (Deep Vault), Hotkey (Hotkey)
+// Units: o05R (Warsong Lumber Camp), Hotkey (Hotkey)
 {
 C
 }
@@ -83757,7 +83739,7 @@ Research Demonic Flux
 }
 
 STRING 13955
-// Units: o05R (Warsong Lumber Camp), Hotkey (Hotkey)
+// Units: h080 (Fortfied Holdfast), Hotkey (Hotkey)
 {
 C
 }
@@ -84327,7 +84309,7 @@ STRING 14049
 }
 
 STRING 14050
-// Units: h080 (Fortfied Holdfast), Hotkey (Hotkey)
+// Units: h081 (Great Trelleborg), Hotkey (Hotkey)
 {
 C
 }
@@ -84525,7 +84507,7 @@ STRING 14082
 }
 
 STRING 14083
-// Units: h081 (Great Trelleborg), Hotkey (Hotkey)
+// Units: n09Z (Titan Vault), Hotkey (Hotkey)
 {
 C
 }
@@ -85167,7 +85149,7 @@ rlev
 }
 
 STRING 14190
-// Units: n09Z (Titan Vault), Hotkey (Hotkey)
+// Units: h09P (Keep), Hotkey (Hotkey)
 {
 C
 }
@@ -85197,7 +85179,7 @@ STRING 14194
 }
 
 STRING 14195
-// Units: h09P (Keep), Hotkey (Hotkey)
+// Units: h09Q (Castle), Hotkey (Hotkey)
 {
 C
 }
@@ -85227,7 +85209,7 @@ Train Navy Sniper
 }
 
 STRING 14200
-// Units: h09Q (Castle), Hotkey (Hotkey)
+// Units: n0D1 (Trade-house), Hotkey (Hotkey)
 {
 C
 }
@@ -85485,7 +85467,7 @@ STRING 14242
 }
 
 STRING 14243
-// Units: n0D1 (Trade-house), Hotkey (Hotkey)
+// Units: h0BN (Keep), Hotkey (Hotkey)
 {
 C
 }
@@ -85623,7 +85605,7 @@ rhpx
 }
 
 STRING 14266
-// Units: h0BN (Keep), Hotkey (Hotkey)
+// Units: h0BO (Castle), Hotkey (Hotkey)
 {
 C
 }
@@ -85965,7 +85947,7 @@ Tunneler Master Training
 }
 
 STRING 14323
-// Units: h0BO (Castle), Hotkey (Hotkey)
+// Units: n0D8 (Trade-house), Hotkey (Hotkey)
 {
 C
 }
@@ -86228,7 +86210,7 @@ rhpx
 }
 
 STRING 14367
-// Units: n0D8 (Trade-house), Hotkey (Hotkey)
+// Items: vddl (Voodoo Doll), Hotkey (Hotkey)
 {
 C
 }
@@ -86246,7 +86228,7 @@ Research Seal of Righteousness
 }
 
 STRING 14370
-// Items: vddl (Voodoo Doll), Hotkey (Hotkey)
+// Items: srrc (Scroll of Resurrection), Hotkey (Hotkey)
 {
 C
 }
@@ -86258,13 +86240,13 @@ STRING 14371
 }
 
 STRING 14372
-// Items: srrc (Scroll of Resurrection), Hotkey (Hotkey)
+// Items: sman (Scroll of Mana), Hotkey (Hotkey)
 {
 C
 }
 
 STRING 14373
-// Items: sman (Scroll of Mana), Hotkey (Hotkey)
+// Items: sand (Scroll of Animate Dead), Hotkey (Hotkey)
 {
 C
 }
@@ -86810,13 +86792,13 @@ STRING 14463
 }
 
 STRING 14464
-// Items: sand (Scroll of Animate Dead), Hotkey (Hotkey)
+// Items: rej5 (Lesser Scroll of Replenishment ), Hotkey (Hotkey)
 {
 C
 }
 
 STRING 14465
-// Items: rej5 (Lesser Scroll of Replenishment ), Hotkey (Hotkey)
+// Items: ratf (Claws of Attack +15), Hotkey (Hotkey)
 {
 C
 }
@@ -87110,7 +87092,7 @@ X
 }
 
 STRING 14514
-// Items: ratf (Claws of Attack +15), Hotkey (Hotkey)
+// Items: dust (Dust of Appearance), Hotkey (Hotkey)
 {
 C
 }
@@ -87278,7 +87260,7 @@ ratr
 }
 
 STRING 14542
-// Items: dust (Dust of Appearance), Hotkey (Hotkey)
+// Items: I00B (Summon Mur'gul Workers ), Hotkey (Hotkey)
 {
 C
 }
@@ -87627,7 +87609,7 @@ Further increases the armor of all Naval Units.
 }
 
 STRING 14600
-// Items: I00B (Summon Mur'gul Workers ), Hotkey (Hotkey)
+// Abilities: AeoK (Summon Eye of Grillok), Hotkey (Hotkey - Normal)
 {
 C
 }
@@ -87645,7 +87627,7 @@ Revive Dark Prophet
 }
 
 STRING 14603
-// Abilities: AeoK (Summon Eye of Grillok), Hotkey (Hotkey - Normal)
+// Abilities: A0L3 (Animate Dead), Hotkey (Hotkey - Normal)
 {
 C
 }
@@ -87849,7 +87831,7 @@ Observation tower.|n|r|cfff5962dUpgrades into:|R Guard Tower, Cannon Tower
 }
 
 STRING 14637
-// Abilities: A0L3 (Animate Dead), Hotkey (Hotkey - Normal)
+// Abilities: A0HO (Auberdine Navy), Hotkey (Hotkey - Normal)
 {
 C
 }
@@ -87975,7 +87957,7 @@ Upgrade to Improved Guard Tower
 }
 
 STRING 14658
-// Abilities: A0HO (Auberdine Navy), Hotkey (Hotkey - Normal)
+// Abilities: A0CY (Powered Up Ammunition), Hotkey (Hotkey - Normal)
 {
 C
 }
@@ -88551,13 +88533,13 @@ Tech wise Goblin.|n|cfff5962dAbilities:|R Rocket Bombardment, Pocket Factory, Me
 }
 
 STRING 14754
-// Abilities: A0CY (Powered Up Ammunition), Hotkey (Hotkey - Normal)
+// Abilities: A0CY (Powered Up Ammunition), Unhotkey (Hotkey - Turn Off)
 {
 C
 }
 
 STRING 14755
-// Abilities: A0CY (Powered Up Ammunition), Unhotkey (Hotkey - Turn Off)
+// Abilities: A04T (Mass Animate Dead), Hotkey (Hotkey - Normal)
 {
 C
 }
@@ -88755,9 +88737,9 @@ The hero progenerates Carrion Beetle from a target corpse to attack the hero's e
 }
 
 STRING 14788
-// Units: n05A (Vault of the Eternal Palace), Name (Name)
+// Units: h01N (Vile Corrupter), Tip (Tooltip - Basic)
 {
-Vault of the Eternal Palace
+Train Vile Corrupter
 }
 
 STRING 14789
@@ -89163,7 +89145,7 @@ STRING 14855
 }
 
 STRING 14856
-// Abilities: A04T (Mass Animate Dead), Hotkey (Hotkey - Normal)
+// Upgrades: Rusf (Stone Form), Hotkey (Hotkey)
 {
 C
 }
@@ -89535,7 +89517,7 @@ STRING 14917
 }
 
 STRING 14918
-// Upgrades: Rusf (Stone Form), Hotkey (Hotkey)
+// Upgrades: Rowt (Spirit Walker Adept Training,Spirit Walker Master Training), Hotkey (Hotkey)
 {
 C
 }
@@ -89709,7 +89691,7 @@ X
 }
 
 STRING 14947
-// Upgrades: Rowt (Spirit Walker Adept Training,Spirit Walker Master Training), Hotkey (Hotkey)
+// Upgrades: Rolf (Liquid Fire), Hotkey (Hotkey)
 {
 C
 }
@@ -89757,7 +89739,7 @@ STRING 14954
 }
 
 STRING 14955
-// Upgrades: Rolf (Liquid Fire), Hotkey (Hotkey)
+// Upgrades: Rhfs (Fragmentation Shards), Hotkey (Hotkey)
 {
 C
 }
@@ -89949,7 +89931,7 @@ rhpo
 }
 
 STRING 14987
-// Upgrades: Rhfs (Fragmentation Shards), Hotkey (Hotkey)
+// Upgrades: Rhan (Animal War Training), Hotkey (Hotkey)
 {
 C
 }
@@ -91684,9 +91666,9 @@ Healing Surge
 }
 
 STRING 15284
-// Units: n06R (Temple of Tides), Ubertip (Tooltip - Extended)
+// Units: h01N (Vile Corrupter), Ubertip (Tooltip - Extended)
 {
-Primary structure, used to train Mur'gul Slaves, Royal Guards and receive gathered resources. Also contains the Submerge upgrade.
+Flying Range unit. Has the Seed of Evil and Parasite abilities.|n|cff99b4d1Can only train 4.|r|n|cffffcc00Attacks land units.|r
 }
 
 STRING 15285
@@ -92480,7 +92462,7 @@ STRING 15416
 }
 
 STRING 15417
-// Upgrades: Rhan (Animal War Training), Hotkey (Hotkey)
+// Upgrades: Rers (Resistant Skin), Hotkey (Hotkey)
 {
 C
 }
@@ -93740,7 +93722,7 @@ Guarding Light - [|cffffcc00Level 2|r]
 }
 
 STRING 15627
-// Upgrades: Rers (Resistant Skin), Hotkey (Hotkey)
+// Upgrades: R06L (Magic Sentry), Hotkey (Hotkey)
 {
 C
 }
@@ -93860,7 +93842,7 @@ Orgrimmar
 }
 
 STRING 15647
-// Upgrades: R06L (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: R066 (Burning Oil), Hotkey (Hotkey)
 {
 C
 }
@@ -93890,7 +93872,7 @@ Research Power Infusion 2
 }
 
 STRING 15652
-// Upgrades: R066 (Burning Oil), Hotkey (Hotkey)
+// Upgrades: R05X (Mark of the Claw), Hotkey (Hotkey)
 {
 C
 }
@@ -95624,7 +95606,7 @@ Q
 }
 
 STRING 15941
-// Upgrades: R05X (Mark of the Claw), Hotkey (Hotkey)
+// Upgrades: R04D (Magic Sentry), Hotkey (Hotkey)
 {
 C
 }
@@ -95642,7 +95624,7 @@ E
 }
 
 STRING 15944
-// Upgrades: R04D (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: R04C (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
 {
 C
 }
@@ -96104,7 +96086,7 @@ F
 }
 
 STRING 16021
-// Upgrades: R04C (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
+// Upgrades: R03X (Magic Sentry), Hotkey (Hotkey)
 {
 C
 }
@@ -96194,7 +96176,7 @@ STRING 16035
 }
 
 STRING 16036
-// Upgrades: R03X (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: R03I (Shaman Adept Training,Shaman Master Training), Hotkey (Hotkey)
 {
 C
 }
@@ -96394,7 +96376,7 @@ C
 }
 
 STRING 16069
-// Upgrades: R03I (Shaman Adept Training,Shaman Master Training), Hotkey (Hotkey)
+// Upgrades: R036 (Pillage), Hotkey (Hotkey)
 {
 C
 }
@@ -96406,7 +96388,7 @@ E
 }
 
 STRING 16071
-// Upgrades: R036 (Pillage), Hotkey (Hotkey)
+// Upgrades: R02G (Corrosive Breath), Hotkey (Hotkey)
 {
 C
 }
@@ -96652,7 +96634,7 @@ Gives <AHad,DataA3,.> additional armor to nearby friendly units in 450 range.
 }
 
 STRING 16112
-// Upgrades: R02G (Corrosive Breath), Hotkey (Hotkey)
+// Upgrades: R01V (Sorceress Adept Training,Sorceress Master Training), Hotkey (Hotkey)
 {
 C
 }
@@ -96670,7 +96652,7 @@ E
 }
 
 STRING 16115
-// Upgrades: R01V (Sorceress Adept Training,Sorceress Master Training), Hotkey (Hotkey)
+// Upgrades: R01D (Freezing Breath), Hotkey (Hotkey)
 {
 C
 }
@@ -96898,13 +96880,13 @@ Q
 }
 
 STRING 16153
-// Upgrades: R01D (Freezing Breath), Hotkey (Hotkey)
+// Upgrades: R00T (Long Rifles), Hotkey (Hotkey)
 {
 C
 }
 
 STRING 16154
-// Upgrades: R00T (Long Rifles), Hotkey (Hotkey)
+// Upgrades: R00D (Envenomed Spears), Hotkey (Hotkey)
 {
 C
 }
@@ -96916,7 +96898,7 @@ E
 }
 
 STRING 16156
-// Upgrades: R00D (Envenomed Spears), Hotkey (Hotkey)
+// Upgrades: R006 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 C
 }
@@ -97214,7 +97196,7 @@ Further increases the armor of all Naval Units.
 }
 
 STRING 16206
-// Upgrades: R006 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R01O (Defend), Hotkey (Hotkey)
 {
 C
 }
@@ -97454,7 +97436,7 @@ Revive Bolvar Fordragon
 }
 
 STRING 16246
-// Upgrades: R01O (Defend), Hotkey (Hotkey)
+// Upgrades: R01T (Defend), Hotkey (Hotkey)
 {
 C
 }
@@ -97466,7 +97448,7 @@ When killed, the Paladin will come back to life in 6 seconds. Reincarnation has 
 }
 
 STRING 16248
-// Upgrades: R01T (Defend), Hotkey (Hotkey)
+// Upgrades: R04R (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 C
 }
@@ -97646,7 +97628,7 @@ The hero has been toughened immensely by his experience, softening the blows of 
 }
 
 STRING 16278
-// Upgrades: R04R (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R03K (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 C
 }
@@ -103322,7 +103304,7 @@ C
 }
 
 STRING 17224
-// Upgrades: R03K (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R03P (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 C
 }
@@ -106739,7 +106721,7 @@ D
 }
 
 STRING 17793
-// Upgrades: R03P (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R05O (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 C
 }
@@ -107753,7 +107735,7 @@ Further increases the armor of all Naval Units.
 }
 
 STRING 17962
-// Upgrades: R05O (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R080 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 C
 }
@@ -108569,7 +108551,7 @@ Gives the War Station the ability to fire multiple arrows at its enemies.
 }
 
 STRING 18098
-// Upgrades: R080 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R088 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 C
 }
@@ -109199,7 +109181,7 @@ Further increases the armor of all Naval Units.
 }
 
 STRING 18203
-// Upgrades: R088 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R08E (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 C
 }
@@ -109848,7 +109830,7 @@ C
 }
 
 STRING 18311
-// Upgrades: R08E (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R08F (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 C
 }
@@ -109932,7 +109914,7 @@ C
 }
 
 STRING 18325
-// Upgrades: R08F (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R08H (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 C
 }
@@ -110187,6 +110169,12 @@ STRING 18367
 // Units: o05E (Lurking Tempest), EditorSuffix (Name - Editor Suffix)
 {
 (Tolvir)
+}
+
+STRING 18368
+// Units: n05A (Temple of Ahn'Qiraj), EditorSuffix (Name - Editor Suffix)
+{
+ (Cthun Other)
 }
 
 STRING 18369
@@ -110469,6 +110457,12 @@ STRING 18415
 // Units: n08Z (Whipping Wind), Tip (Tooltip - Basic)
 {
 Train Sorcerer
+}
+
+STRING 18416
+// Units: n05A (Temple of Ahn'Qiraj), Name (Name)
+{
+Temple of Ahn'Qiraj
 }
 
 STRING 18417
@@ -110814,7 +110808,7 @@ C
 }
 
 STRING 18474
-// Upgrades: R08H (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R08Q (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 C
 }
@@ -113485,7 +113479,7 @@ E
 }
 
 STRING 18919
-// Upgrades: R08Q (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R08R (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 C
 }
@@ -113929,7 +113923,7 @@ Further increases the armor of all Naval Units.
 }
 
 STRING 18993
-// Upgrades: R08R (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R08S (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 C
 }
@@ -114025,7 +114019,7 @@ Magma Hold
 }
 
 STRING 19009
-// Upgrades: R08S (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R092 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 C
 }
@@ -122420,7 +122414,7 @@ C
 }
 
 STRING 20408
-// Upgrades: R092 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R097 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 C
 }
@@ -122456,7 +122450,7 @@ C
 }
 
 STRING 20414
-// Upgrades: R097 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R042 (Shaman Adept Training,Shaman Master Training), Hotkey (Hotkey)
 {
 C
 }
@@ -123134,7 +123128,7 @@ C
 }
 
 STRING 20527
-// Upgrades: R042 (Shaman Adept Training,Shaman Master Training), Hotkey (Hotkey)
+// Upgrades: R07E (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 C
 }
@@ -123536,7 +123530,7 @@ Further increases the armor of all Naval Units.
 }
 
 STRING 20594
-// Upgrades: R07E (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R07L (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 C
 }
@@ -123614,7 +123608,7 @@ Further increases the armor of all Naval Units.
 }
 
 STRING 20607
-// Upgrades: R07L (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R07W (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 C
 }
@@ -123741,7 +123735,7 @@ Further increases the armor of all Naval Units.
 }
 
 STRING 20628
-// Upgrades: R07W (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R086 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 C
 }
@@ -123819,7 +123813,7 @@ Further increases the armor of all Naval Units.
 }
 
 STRING 20641
-// Upgrades: R086 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R08K (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 C
 }
@@ -123896,12 +123890,6 @@ STRING 20653
 Further increases the armor of all Naval Units.
 }
 
-STRING 20654
-// Upgrades: R08K (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
-{
-C
-}
-
 STRING 20655
 // Units: n0DU (Pyramid of Madness), Name (Name)
 {
@@ -123912,5 +123900,11 @@ STRING 20656
 // Units: n0DU (Pyramid of Madness), Tip (Tooltip - Basic)
 {
 Build Pyramid of Madness
+}
+
+STRING 20657
+// Units: n05A (Temple of Ahn'Qiraj), Tip (Tooltip - Basic)
+{
+Build Temple of Ahn'Qiraj
 }
 

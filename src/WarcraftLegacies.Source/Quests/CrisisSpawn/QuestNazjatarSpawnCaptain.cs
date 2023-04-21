@@ -57,9 +57,7 @@ namespace WarcraftLegacies.Source.Quests.CrisisSpawn
 
       KillNeutralHostileUnitsInRadius(-4200, 2450, 2000);
 
-      RemoveUnit(_picker);
-
-      SetUnitOwner(_secondpick, Player(16), true);
+      RemoveUnit(_secondpick);
 
       if (completingFaction.Player != null)
       {
