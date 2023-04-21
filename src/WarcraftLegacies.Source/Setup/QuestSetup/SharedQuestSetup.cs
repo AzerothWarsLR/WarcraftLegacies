@@ -25,9 +25,10 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       var ragnarosQuest = CreateRagnarosQuest(preplacedUnitSystem, allLegendSetup);
       var dragonsOfNightmareOne = CreateDragonsOfNightmareQuestOne(preplacedUnitSystem);
       var dragonsOfNightmareTwo = CreateDragonsOfNightmareQuestTwo(preplacedUnitSystem);
+      var navigation = new QuestNavigation();
       foreach (var faction in FactionManager.GetAllFactions())
       {
-    
+        faction.AddQuest(navigation);
         faction.AddQuest(tombOfSargerasQuest);
         faction.AddQuest(new QuestZinrokhAssembly(new List<Artifact>
         {

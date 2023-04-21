@@ -24,6 +24,13 @@ namespace WarcraftLegacies.Source.Setup
       GoblinSetup.Setup(preplacedUnitSystem);
       DraeneiSetup.Setup();
       ZandalarSetup.Setup(preplacedUnitSystem);
+
+      CthunSetup.Setup(preplacedUnitSystem);
+      NazjatarSetup.Setup(preplacedUnitSystem);
+      BlackEmpireSetup.Setup(preplacedUnitSystem);
+
+      CrisisCaptainSetup.Setup(preplacedUnitSystem);
+      CrisisFootmanSetup.Setup(preplacedUnitSystem);
     }
   }
 }

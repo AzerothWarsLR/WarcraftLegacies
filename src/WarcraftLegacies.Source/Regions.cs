@@ -223,7 +223,6 @@ public static class Regions
 	public static Rectangle DragonmawUnlock { get; set; } = new Rectangle(20832f, -5088f, 23168f, -2720f);
 	public static Rectangle SouthshoreUnlock { get; set; } = new Rectangle(10784f, 1632f, 12096f, 2656f);
 	public static Rectangle MaievStartUnlock { get; set; } = new Rectangle(-6016f, -28416f, -4896f, -27104f);
-	public static Rectangle Silithus_Stone_Exterior { get; set; } = new Rectangle(-18816f, -18464f, -18496f, -18048f);
 	public static Rectangle Silithus_Bug_Exterior { get; set; } = new Rectangle(-16352f, -17504f, -16096f, -17120f);
 	public static Rectangle EchoUnlock { get; set; } = new Rectangle(-8608f, -6816f, -6208f, -3968f);
 	public static Rectangle StrahnbradUnlock { get; set; } = new Rectangle(12544f, 4992f, 13408f, 5824f);
@@ -264,7 +263,7 @@ public static class Regions
 	public static Rectangle GilneasUnlock2 { get; set; } = new Rectangle(6624f, -3264f, 8032f, -2400f);
 	public static Rectangle GilneasUnlock3 { get; set; } = new Rectangle(3968f, 416f, 5376f, 2656f);
 	public static Rectangle GilneasUnlock4 { get; set; } = new Rectangle(3392f, -2656f, 5504f, -320f);
-	public static Rectangle GilneasUnlock5 { get; set; } = new Rectangle(6496f, 2144f, 7360f, 2784f);
+	public static Rectangle GilneasUnlock5 { get; set; } = new Rectangle(6432f, 2112f, 7456f, 2816f);
 	public static Rectangle DragonmawPathUnlock { get; set; } = new Rectangle(18592f, -7744f, 19456f, -5600f);
 	public static Rectangle DragonmawPortal { get; set; } = new Rectangle(22176f, -4896f, 22720f, -4576f);
 	public static Rectangle ScarletHarbor { get; set; } = new Rectangle(-9728f, 21984f, -7872f, 23648f);
@@ -315,7 +314,7 @@ public static class Regions
 	public static Rectangle IslandBlocker1 { get; set; } = new Rectangle(416f, 2048f, 1440f, 2336f);
 	public static Rectangle IslandBlocker2 { get; set; } = new Rectangle(-2048f, 2048f, -1024f, 2336f);
 	public static Rectangle IslandBlocker3 { get; set; } = new Rectangle(1536f, -3456f, 2560f, -3168f);
-	public static Rectangle IslandBlocker4 { get; set; } = new Rectangle(768f, -10496f, 1792f, -10208f);
+	public static Rectangle IslandBlocker4 { get; set; } = new Rectangle(-960f, -15104f, -512f, -14144f);
 	public static Rectangle IslandBlocker5 { get; set; } = new Rectangle(512f, -9216f, 800f, -8416f);
 	public static Rectangle IllidariUnlockSA { get; set; } = new Rectangle(12000f, -22816f, 13376f, -21280f);
 	public static Rectangle BootyBayQuest { get; set; } = new Rectangle(9696f, -24160f, 12032f, -22304f);
@@ -341,5 +340,8 @@ public static class Regions
 	public static Rectangle ExodarBaseUnlock { get; set; } = new Rectangle(-23872f, 5792f, -21248f, 8416f);
 	public static Rectangle DesolaceUnlock { get; set; } = new Rectangle(-19456f, -4896f, -17152f, -2976f);
 	public static Rectangle DraeneiQuestKill { get; set; } = new Rectangle(-20160f, -5376f, -16640f, -2624f);
+	public static Rectangle FountainUnlock { get; set; } = new Rectangle(-10688f, 4384f, -10144f, 4800f);
+	public static Rectangle EntireMap { get; set; } = new Rectangle(-24512f, -31872f, 24096f, 25056f);
+	public static Rectangle NzothStartPosition { get; set; } = new Rectangle(-4192f, 1344f, -3360f, 1792f);
 
 }

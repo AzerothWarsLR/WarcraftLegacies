@@ -14,8 +14,9 @@ namespace WarcraftLegacies.Source.Setup
     public static Team ScarletCrusade { get; private set; }
     public static Team Forsaken { get; private set; }
     public static Team Scourge { get; private set; }
-    public static Team Dragonmaw { get; private set; }
+    public static Team Crisis { get; private set; }
     public static Team Draenei { get; private set; }
+    public static Team Oldgods { get; private set; }
 
 
     public static void Setup( ){
@@ -85,11 +86,17 @@ namespace WarcraftLegacies.Source.Setup
       };
       FactionManager.Register(Scourge);
 
-      Dragonmaw = new Team("Dragonmaw")
+      Crisis = new Team("Crisis")
       {
         VictoryMusic = "DarkVictory"
       };
-      FactionManager.Register(Dragonmaw);
+      FactionManager.Register(Crisis);
+
+      Oldgods = new Team("Old Gods")
+      {
+        VictoryMusic = "DarkVictory"
+      };
+      FactionManager.Register(Oldgods);
 
       Draenei = new Team("Draenei")
       {

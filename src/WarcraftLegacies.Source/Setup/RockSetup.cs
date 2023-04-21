@@ -29,6 +29,8 @@ namespace WarcraftLegacies.Source.Setup
       RockSystem.Register(new RockGroup(Regions.KaliRock7, ForestChunkId, 540));
       RockSystem.Register(new RockGroup(Regions.KaliRock10, ForestChunkId, 540));
       RockSystem.Register(new RockGroup(Regions.KaliRock11, ForestChunkId, 540));
+
+      RockSystem.Register(new RockGroup(Regions.GilneasUnlock5, RockChunkId, 660));
     }
   }
 }

@@ -47,6 +47,8 @@ namespace WarcraftLegacies.Source.GameLogic
         Hint.Register(
           new Hint("You can change alliances by using the commands -invite, -uninvite, -join, and -unally."));
         AreAlliancesOpen = true;
+        //foreach (var player in WCSharp.Shared.Util.EnumeratePlayers()) ;
+          // set quest Navigation progress to complete
       }
       else
       {

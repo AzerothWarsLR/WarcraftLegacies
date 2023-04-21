@@ -56,7 +56,7 @@ If you survive the Plague, sail to the frozen wasteland of Northrend and take th
       Lordaeron.ModObjectLimit(FourCC("nwe2"), 6); //Thunder Eagle
       Lordaeron.ModObjectLimit(FourCC("h01C"), Faction.UNLIMITED); //Longbowman
       Lordaeron.ModObjectLimit(FourCC("n03K"), Faction.UNLIMITED); //Chaplain
-      Lordaeron.ModObjectLimit(FourCC("hcth"), Faction.UNLIMITED); //Silver Hand Squire
+      Lordaeron.ModObjectLimit(FourCC("hcth"), 12); //Silver Hand Squire
       Lordaeron.ModObjectLimit(FourCC("h02Q"), 6); //Pegasus Knight
       Lordaeron.ModObjectLimit(FourCC("e017"), 8); //Scorpion
       Lordaeron.ModObjectLimit(FourCC("o02F"), 6); //Mangonel

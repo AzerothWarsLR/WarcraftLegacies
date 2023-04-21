@@ -26,7 +26,7 @@ namespace MacroTools.Spells
         var casterX = GetUnitX(caster);
         var casterY = GetUnitY(caster);
         var angle = AngleOffset;
-        for (var i = 0; i < 4; i++)
+        for (var i = 0; i < SummonCount; i++)
         {
           angle += 360f / SummonCount;
           var summonX = MathEx.GetPolarOffsetX(casterX, Radius, angle);

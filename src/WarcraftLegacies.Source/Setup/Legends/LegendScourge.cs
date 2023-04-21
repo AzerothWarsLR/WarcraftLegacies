@@ -43,7 +43,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
       Rivendare = new LegendaryHero("Baron Rivendare")
       {
         UnitType = FourCC("U00A"),
-        StartingXp = 1000
+        StartingXp = 2800
       };
 
       Arthas = new LegendaryHero("Arthas Menethil")
