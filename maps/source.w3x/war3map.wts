@@ -8155,12 +8155,6 @@ STRING 1359
 (Dragonmaw)
 }
 
-STRING 1360
-// Abilities: A0BW (Glimpse of the Old Gods), Ubertip (Tooltip - Normal - Extended)
-{
-Target enemy worker becomes mad from visions and joins your cause, granting you a small gold income. Once the hour of Doomsday has come, they will join you.
-}
-
 STRING 1361
 // Abilities: A0IP (Go to Outland and build Tempest Keep), Ubertip (Tooltip - Normal - Extended)
 {
@@ -14892,6 +14886,12 @@ STRING 2483
 // Units: h01Q (Immortal Guardian), Tip (Tooltip - Basic)
 {
 Train - Immortal Guardian
+}
+
+STRING 2484
+// Units: u01T (Herald), Ubertip (Tooltip - Extended)
+{
+Support caster of the Twilight hammer.|n|cfff5962dAbilities:|R Shadow Infusion, Devour Magic, Lightning Shield |n|n|cffffcc00Attacks land and air units.|r
 }
 
 STRING 2486
@@ -39160,12 +39160,6 @@ STRING 6529
 Goblin Shredders.|n|cfff5962dAbilities:|R Gather, Emergency Repairs, Oil Lubrification, Goblin Pilot, Oil Consumer|n|cfff5962dCan Learn:|R Cleaving Attack|n|n|cff99b4d1Can only build 12.|n|cffffcc00Attacks land units and trees.|r
 }
 
-STRING 6530
-// Abilities: A0BW (Glimpse of the Old Gods), Tip (Tooltip - Normal)
-{
-Glimpse of the Old Gods
-}
-
 STRING 6531
 // Abilities: S008 (Cripple), EditorSuffix (Editor Suffix)
 {
@@ -39488,12 +39482,6 @@ STRING 6584
 // Abilities: A11I (Water Elemental), Ubertip (Tooltip - Normal - Extended)
 {
 Summons a water elemental to attack the Wizard's enemies. Has 600 hit points and lasts 90 seconds. |n|n|cffffcc00Attacks land and air units.|r
-}
-
-STRING 6585
-// Abilities: A0BW (Glimpse of the Old Gods), Name (Name)
-{
-Glimpse of the Old Gods
 }
 
 STRING 6586
@@ -76929,7 +76917,7 @@ Mass Animate Dead
 }
 
 STRING 12819
-// Abilities: A0BW (Glimpse of the Old Gods), Hotkey (Hotkey - Normal)
+// Abilities: A0RY (Materialisation), Hotkey (Hotkey - Normal)
 {
 D
 }
@@ -80421,7 +80409,7 @@ Fel Orc Grunt
 }
 
 STRING 13401
-// Abilities: A0RY (Materialisation), Hotkey (Hotkey - Normal)
+// Abilities: A0RY (Materialisation), Researchhotkey (Hotkey - Learn)
 {
 D
 }
@@ -81885,7 +81873,7 @@ This unit is Demonically possessed. It has increased attack and movement speed a
 }
 
 STRING 13645
-// Abilities: A0RY (Materialisation), Researchhotkey (Hotkey - Learn)
+// Abilities: A0UN (Board), Hotkey (Hotkey - Normal)
 {
 D
 }
@@ -84327,7 +84315,7 @@ Shrine to Malorne (10gold/min)
 }
 
 STRING 14052
-// Abilities: A0UN (Board), Hotkey (Hotkey - Normal)
+// Abilities: A0XA (Enrage), Hotkey (Hotkey - Normal)
 {
 D
 }
@@ -85773,7 +85761,7 @@ Summon an Arcane Phantom for 30 seconds. 3 seconds cooldown
 }
 
 STRING 14293
-// Abilities: A0XA (Enrage), Hotkey (Hotkey - Normal)
+// Abilities: A0XA (Enrage), Unhotkey (Hotkey - Turn Off)
 {
 D
 }
@@ -86930,7 +86918,7 @@ rarm
 }
 
 STRING 14486
-// Abilities: A0XA (Enrage), Unhotkey (Hotkey - Turn Off)
+// Abilities: A06Q (Force of Nature), Hotkey (Hotkey - Normal)
 {
 D
 }
@@ -87224,7 +87212,7 @@ Z
 }
 
 STRING 14535
-// Abilities: A06Q (Force of Nature), Hotkey (Hotkey - Normal)
+// Abilities: A0A9 (Build Defias Guild), Hotkey (Hotkey - Normal)
 {
 D
 }
@@ -87999,7 +87987,7 @@ rarm
 }
 
 STRING 14664
-// Abilities: A0A9 (Build Defias Guild), Hotkey (Hotkey - Normal)
+// Abilities: A0YM (Build Murloc Gathering), Hotkey (Hotkey - Normal)
 {
 D
 }
@@ -88155,19 +88143,19 @@ Causes the Fel Grunt to transform into a Skeletal Grunt upon death, allowing it 
 }
 
 STRING 14690
-// Abilities: A0YM (Build Murloc Gathering), Hotkey (Hotkey - Normal)
-{
-D
-}
-
-STRING 14691
 // Abilities: A0YN (Build Gnoll Kennel), Hotkey (Hotkey - Normal)
 {
 D
 }
 
-STRING 14692
+STRING 14691
 // Abilities: A0ZJ (Portal to Nagrand), Hotkey (Hotkey - Normal)
+{
+D
+}
+
+STRING 14692
+// Abilities: A06L (Mana Shield), Researchhotkey (Hotkey - Learn)
 {
 D
 }
@@ -88197,7 +88185,7 @@ rarm
 }
 
 STRING 14697
-// Abilities: A06L (Mana Shield), Researchhotkey (Hotkey - Learn)
+// Abilities: A06L (Mana Shield), Hotkey (Hotkey - Normal)
 {
 D
 }
@@ -88299,7 +88287,7 @@ rarm
 }
 
 STRING 14714
-// Abilities: A06L (Mana Shield), Hotkey (Hotkey - Normal)
+// Abilities: A06L (Mana Shield), Unhotkey (Hotkey - Turn Off)
 {
 D
 }
@@ -88899,7 +88887,7 @@ Barbaric boulder tossing siege weaponry.|n|n|cff99b4d1Can only build 6. |r|n|cff
 }
 
 STRING 14814
-// Abilities: A06L (Mana Shield), Unhotkey (Hotkey - Turn Off)
+// Abilities: A0RB (Dimensional Jump to Argus), Hotkey (Hotkey - Normal)
 {
 D
 }
@@ -89391,7 +89379,7 @@ Research Improved Self-Bloodlust
 }
 
 STRING 14896
-// Abilities: A0RB (Dimensional Jump to Argus), Hotkey (Hotkey - Normal)
+// Abilities: A0D7 (Wraith Form), Hotkey (Hotkey - Normal)
 {
 D
 }
@@ -89643,7 +89631,7 @@ Further increases the armor of all Naval Units.
 }
 
 STRING 14938
-// Abilities: A0D7 (Wraith Form), Hotkey (Hotkey - Normal)
+// Abilities: A10B (Archimonde Spellbook), Hotkey (Hotkey - Normal)
 {
 D
 }
@@ -89871,7 +89859,7 @@ Q
 }
 
 STRING 14976
-// Abilities: A10B (Archimonde Spellbook), Hotkey (Hotkey - Normal)
+// Upgrades: Rhfl (Flare), Hotkey (Hotkey)
 {
 D
 }
@@ -90375,7 +90363,7 @@ rhpx
 }
 
 STRING 15060
-// Upgrades: Rhfl (Flare), Hotkey (Hotkey)
+// Upgrades: Rehs (Hardened Skin), Hotkey (Hotkey)
 {
 D
 }
@@ -91022,7 +91010,7 @@ X
 }
 
 STRING 15176
-// Upgrades: Rehs (Hardened Skin), Hotkey (Hotkey)
+// Upgrades: Rusl (Skeletal Longevity), Hotkey (Hotkey)
 {
 D
 }
@@ -91250,7 +91238,7 @@ Z
 }
 
 STRING 15214
-// Upgrades: Rusl (Skeletal Longevity), Hotkey (Hotkey)
+// Upgrades: R02A (Animal War Training), Hotkey (Hotkey)
 {
 D
 }
@@ -96170,7 +96158,7 @@ When this hero attacks, it has a 15% chance to hurl lightning at <A024,DataB4> t
 }
 
 STRING 16035
-// Abilities: A0BW (Glimpse of the Old Gods), EditorSuffix (Editor Suffix)
+// Abilities: A0NH (Searing Breath), EditorSuffix (Editor Suffix)
 {
 (twilight)
 }
@@ -96194,7 +96182,7 @@ Revives slain Heroes and Demi-heros.
 }
 
 STRING 16039
-// Abilities: A0NH (Searing Breath), EditorSuffix (Editor Suffix)
+// Abilities: A0O5 (Lightning Shield), EditorSuffix (Editor Suffix)
 {
 (twilight)
 }
@@ -96212,13 +96200,13 @@ Short range medium ship.|n|r|n|cffffcc00Attacks land units.|r|nStrong versus Fri
 }
 
 STRING 16042
-// Abilities: A0O5 (Lightning Shield), EditorSuffix (Editor Suffix)
+// Abilities: A0OO (Burning Vengeance), EditorSuffix (Editor Suffix)
 {
 (twilight)
 }
 
 STRING 16043
-// Abilities: A0OO (Burning Vengeance), EditorSuffix (Editor Suffix)
+// Upgrades: R06X (Shaman Adept Training,Shaman Master Training), EditorSuffix (Editor Suffix)
 {
 (twilight)
 }
@@ -96230,7 +96218,7 @@ STRING 16044
 }
 
 STRING 16045
-// Upgrades: R06X (Shaman Adept Training,Shaman Master Training), EditorSuffix (Editor Suffix)
+// Upgrades: R06Z (Necromancer Adept Training,Necromancer Master Training), EditorSuffix (Editor Suffix)
 {
 (twilight)
 }
@@ -96242,7 +96230,7 @@ E
 }
 
 STRING 16047
-// Upgrades: R06Z (Necromancer Adept Training,Necromancer Master Training), EditorSuffix (Editor Suffix)
+// Upgrades: R08R (Iron Plating,Steel Plating,Mithril Plating), EditorSuffix (Editor Suffix)
 {
 (twilight)
 }
@@ -96254,7 +96242,7 @@ STRING 16048
 }
 
 STRING 16049
-// Upgrades: R08R (Iron Plating,Steel Plating,Mithril Plating), EditorSuffix (Editor Suffix)
+// Upgrades: R08S (Iron Plating,Steel Plating,Mithril Plating), EditorSuffix (Editor Suffix)
 {
 (twilight)
 }
@@ -96275,12 +96263,6 @@ STRING 16052
 // Abilities: A0OK (Corrupt Blood), Researchtip (Tooltip - Learn)
 {
 Learn Corrupt Blood - [|cffffcc00Level %d|r]
-}
-
-STRING 16053
-// Upgrades: R08S (Iron Plating,Steel Plating,Mithril Plating), EditorSuffix (Editor Suffix)
-{
-(twilight)
 }
 
 STRING 16054
@@ -97286,7 +97268,7 @@ D
 }
 
 STRING 16221
-// Upgrades: R02A (Animal War Training), Hotkey (Hotkey)
+// Upgrades: R026 (Animal War Training), Hotkey (Hotkey)
 {
 D
 }
@@ -100541,12 +100523,6 @@ STRING 16763
 // Units: u01T (Herald), Casterupgradetip (Caster Upgrade Tips)
 {
 - Shadow Infusion,- Shadow Infusion|n- Devour Magic,- Shadow Infusion|n- Devour Magic|n- Lightning Shield
-}
-
-STRING 16764
-// Units: u01T (Herald), Ubertip (Tooltip - Extended)
-{
-Support caster of the Twilight hammer.|n|cfff5962dAbilities:|R Shadow Infusion|n|cfff5962dCan Learn:|R Devour Magic, Lightning Shield |n|n|cffffcc00Attacks land and air units.|r
 }
 
 STRING 16765
@@ -104828,7 +104804,7 @@ STRING 17477
 }
 
 STRING 17478
-// Upgrades: R026 (Animal War Training), Hotkey (Hotkey)
+// Upgrades: R023 (Animal War Training), Hotkey (Hotkey)
 {
 D
 }
@@ -109668,7 +109644,7 @@ Q
 }
 
 STRING 18284
-// Upgrades: R023 (Animal War Training), Hotkey (Hotkey)
+// Upgrades: R01H (Animal War Training), Hotkey (Hotkey)
 {
 D
 }
@@ -115087,7 +115063,7 @@ STRING 19186
 }
 
 STRING 19187
-// Upgrades: R01H (Animal War Training), Hotkey (Hotkey)
+// Upgrades: R00Q (Magic Sentry), Hotkey (Hotkey)
 {
 D
 }
@@ -115177,7 +115153,7 @@ This unit's attacks combust 10(30 for Heroes) mana per hit dealing damage to the
 }
 
 STRING 19202
-// Upgrades: R00Q (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: R00K (Animal War Training), Hotkey (Hotkey)
 {
 D
 }
@@ -122306,12 +122282,6 @@ D
 }
 
 STRING 20390
-// Upgrades: R00K (Animal War Training), Hotkey (Hotkey)
-{
-D
-}
-
-STRING 20391
 // Upgrades: R034 (Improved Bows), Hotkey (Hotkey)
 {
 D

@@ -264,7 +264,7 @@ public static class Regions
 	public static Rectangle GilneasUnlock3 { get; set; } = new Rectangle(3968f, 416f, 5376f, 2656f);
 	public static Rectangle GilneasUnlock4 { get; set; } = new Rectangle(3392f, -2656f, 5504f, -320f);
 	public static Rectangle GilneasUnlock5 { get; set; } = new Rectangle(6432f, 2112f, 7456f, 2816f);
-	public static Rectangle DragonmawPathUnlock { get; set; } = new Rectangle(18592f, -7744f, 19456f, -5600f);
+	public static Rectangle TwilightUnlock { get; set; } = new Rectangle(18592f, -6848f, 19456f, -6048f);
 	public static Rectangle DragonmawPortal { get; set; } = new Rectangle(22176f, -4896f, 22720f, -4576f);
 	public static Rectangle ScarletHarbor { get; set; } = new Rectangle(-9728f, 21984f, -7872f, 23648f);
 	public static Rectangle ShadowvaultUnlock { get; set; } = new Rectangle(-4480f, 23424f, -3168f, 24224f);

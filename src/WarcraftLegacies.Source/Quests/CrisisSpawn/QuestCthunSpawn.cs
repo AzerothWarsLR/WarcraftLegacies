@@ -78,7 +78,7 @@ namespace WarcraftLegacies.Source.Quests.CrisisSpawn
 
         CreateUnits(completingFaction.Player, Constants.UNIT_H01K_SILITHID_OVERLORD_C_THUN_OVERLORD, spawn.X, spawn.Y, 270, 12);
         CreateUnits(completingFaction.Player, Constants.UNIT_O02N_SILITHID_WASP_CTHUN, spawn.X, spawn.Y, 270, 24);
-        CreateUnits(completingFaction.Player, Constants.UNIT_H01N_FACELESS_CORRUPTER_C_THUN_FACELESS_CORRUPTOR, spawn.X, spawn.Y, 270, 4);
+        CreateUnits(completingFaction.Player, Constants.UNIT_H01N_VILE_CORRUPTER_C_THUN_FACELESS_CORRUPTOR, spawn.X, spawn.Y, 270, 4);
 
         _cthun.ForceCreate(completingFaction.Player, spawn, 270);
 
