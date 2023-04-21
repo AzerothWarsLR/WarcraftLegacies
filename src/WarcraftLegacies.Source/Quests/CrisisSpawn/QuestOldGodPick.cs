@@ -30,6 +30,7 @@ namespace WarcraftLegacies.Source.Quests.CrisisSpawn
       AddObjective(new ObjectiveEitherOf(
         new ObjectiveResearch(Constants.UPGRADE_R07L_FORTIFIED_HULLS, Constants.UNIT_N0DQ_CRISIS_TEAM_PICKER),
         new ObjectiveTime(1560)));
+      Required = true;
     }
 
     /// <inheritdoc/>

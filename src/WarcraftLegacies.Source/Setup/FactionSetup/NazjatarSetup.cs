@@ -13,7 +13,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
       Nazjatar = new Faction(FactionNames.Nazjatar, PLAYER_COLOR_PURPLE, "|c00540081",
-        "ReplaceableTextures\\CommandButtons\\BTNNzothIcon.blp")
+        "ReplaceableTextures\\CommandButtons\\BTNNagaSummoner.blp")
       {
         ControlPointDefenderUnitTypeId = Constants.UNIT_N0B6_CONTROL_POINT_DEFENDER_FROSTWOLF,
       };
@@ -50,6 +50,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
 
       /// All Nzoth Ships
 
+      Nazjatar.ModObjectLimit(FourCC("ushp"), Faction.UNLIMITED); //Undead Shipyard
       Nazjatar.ModObjectLimit(FourCC("ubot"), Faction.UNLIMITED); //Undead Transport Ship
       Nazjatar.ModObjectLimit(FourCC("h0AT"), Faction.UNLIMITED); //Scout
       Nazjatar.ModObjectLimit(FourCC("h0AW"), Faction.UNLIMITED); //Frigate

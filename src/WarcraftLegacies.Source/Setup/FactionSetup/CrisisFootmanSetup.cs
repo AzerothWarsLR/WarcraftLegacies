@@ -21,6 +21,8 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
       FactionManager.Register(CrisisFootman);
 
       CrisisFootman.ModObjectLimit(Constants.UPGRADE_R06D_TEAM_PICKED_OLD_GODS, Faction.UNLIMITED);
+      CrisisFootman.ModObjectLimit(Constants.UPGRADE_R07W_FORTIFIED_HULLS, Faction.UNLIMITED);
+      CrisisFootman.ModObjectLimit(Constants.UPGRADE_R07E_FORTIFIED_HULLS, Faction.UNLIMITED);
 
 
 

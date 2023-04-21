@@ -36,6 +36,7 @@ namespace WarcraftLegacies.Source.Quests.CrisisSpawn
        new ObjectiveResearch(Constants.UPGRADE_R07E_FORTIFIED_HULLS, Constants.UNIT_N0DR_CRISIS_FACTION_PICKER_OLD_GODS),
        new ObjectiveTime(1590)));
       Shared = true;
+      Required = true;
     }
 
     /// <inheritdoc/>
