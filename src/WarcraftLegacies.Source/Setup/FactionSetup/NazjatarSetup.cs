@@ -35,9 +35,12 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
       /// All Nzoth Units listed below - with total limits 
 
       Nazjatar.ModObjectLimit(Constants.UNIT_N0D7_DEEP_FORAGER_N_ZOTH_WORKER, Faction.UNLIMITED);
-      Nazjatar.ModObjectLimit(Constants.UNIT_N0DT_TIDEMISTRESS_NZOTH, Faction.UNLIMITED);
+      Nazjatar.ModObjectLimit(Constants.UNIT_N0DT_TIDEMISTRESS_NZOTH, 6);
+      
       Nazjatar.ModObjectLimit(Constants.UNIT_N0CA_NAGA_INCURSOR_NZOTH, Faction.UNLIMITED);
       Nazjatar.ModObjectLimit(Constants.UNIT_N0CE_HATCHLING_NZOTH, Faction.UNLIMITED);
+      Nazjatar.ModObjectLimit(Constants.UNIT_N0CL_GARGANTUAN_SEA_TURTLE_NZOTH, 8);
+
       Nazjatar.ModObjectLimit(Constants.UNIT_N0CB_DEEPSEER_NZOTH, Faction.UNLIMITED);
       Nazjatar.ModObjectLimit(Constants.UNIT_N0CD_BLOODKIN_NZOTH, Faction.UNLIMITED);
       Nazjatar.ModObjectLimit(Constants.UNIT_O060_RIPTIDE_DRAKE_NZOTH, 6);
@@ -59,6 +62,12 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
 
       /// All Nzoth Heroes listed below - with total limits
 
+      Nazjatar.ModObjectLimit(Constants.UNIT_U00P_C_THRAX_ABERRATION, 1);
+      Nazjatar.ModObjectLimit(Constants.UNIT_H08U_EMPRESS_OF_NAZJATAR_NZOTH, 1);
+      Nazjatar.ModObjectLimit(Constants.UNIT_H0A5_SEA_WITCH_NZOTH, 1);
+      //Nazjatar.ModObjectLimit(Constants.UNIT_N0CO_TRENCH_HYDRA_NZOTH, 1);
+
+      Nazjatar.ModObjectLimit(FourCC("R00K"), Faction.UNLIMITED); //Power Infusion
 
       FactionManager.Register(Nazjatar);
     }
