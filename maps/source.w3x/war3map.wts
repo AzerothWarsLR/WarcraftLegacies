@@ -8155,6 +8155,12 @@ STRING 1359
 (Dragonmaw)
 }
 
+STRING 1360
+// Units: hcth (Silver Hand Squire), Ubertip (Tooltip - Extended)
+{
+Light-infused warrior immune to plague and undeath.|n|cfff5962dAbilities:|R Charge, Spell Resistance, Pure Soul, Flaming Sword|n|cfff5962dCan Learn:|R Seal of Righteousness|n|n|cff99b4d1Can only train 12|n|cffffcc00Attacks land units.|r
+}
+
 STRING 1361
 // Abilities: A0IP (Go to Outland and build Tempest Keep), Ubertip (Tooltip - Normal - Extended)
 {
@@ -39160,6 +39166,12 @@ STRING 6529
 Goblin Shredders.|n|cfff5962dAbilities:|R Gather, Emergency Repairs, Oil Lubrification, Goblin Pilot, Oil Consumer|n|cfff5962dCan Learn:|R Cleaving Attack|n|n|cff99b4d1Can only build 12.|n|cffffcc00Attacks land units and trees.|r
 }
 
+STRING 6530
+// Abilities: A0LP (Frost Nova), Researchubertip (Tooltip - Learn - Extended)
+{
+Blasts enemy units around a target enemy unit with a wave of damaging plague that slows movement for 4 seconds. |n|n|cffffcc00Level 1|r - 100 target damage, 100 nova damage. |n|cffffcc00Level 2|r - 125 target damage, 125 nova damage. |n|cffffcc00Level 3|r - 150 target damage, 150 nova damage. |n|cffffcc00Level 4|r - 175 target damage, 200 nova damage.
+}
+
 STRING 6531
 // Abilities: S008 (Cripple), EditorSuffix (Editor Suffix)
 {
@@ -39482,6 +39494,12 @@ STRING 6584
 // Abilities: A11I (Water Elemental), Ubertip (Tooltip - Normal - Extended)
 {
 Summons a water elemental to attack the Wizard's enemies. Has 600 hit points and lasts 90 seconds. |n|n|cffffcc00Attacks land and air units.|r
+}
+
+STRING 6585
+// Abilities: A0DO (Smite), Ubertip (Tooltip - Normal - Extended)
+{
+Fires a bolt of holy energy at a target enemy unit, dealing 60 damage and stunning the target for 3 seconds.
 }
 
 STRING 6586
@@ -52383,7 +52401,7 @@ Learn Corpse Explosion (|cffffcc00Q|r) - [|cffffcc00Level %d|r]
 }
 
 STRING 8732
-// Abilities: A0LP (Frost Nova), Researchubertip (Tooltip - Learn - Extended)
+// Abilities: A0Z9 (Bile Shot), Researchubertip (Tooltip - Learn - Extended)
 {
 Blasts enemy units around a target enemy unit with a wave of damaging plague that slows movement for 4 seconds. |n|n|cffffcc00Level 1|r - 100 target damage, 100 nova damage. |n|cffffcc00Level 2|r - 125 target damage, 150 nova damage. |n|cffffcc00Level 3|r - 150 target damage, 200 nova damage. |n|cffffcc00Level 4|r - 175 target damage, 250 nova damage.
 }
@@ -59836,9 +59854,9 @@ Learn Rain of Arrows
 }
 
 STRING 9974
-// Units: hcth (Silver Hand Squire), Ubertip (Tooltip - Extended)
+// Units: H00R (King of Stormwind), Ubertip (Tooltip - Extended)
 {
-Light-infused warrior immune to plague and undeath.|n|cfff5962dAbilities:|R Charge, Spell Resistance, Pure Soul|n|cfff5962dCan Learn:|R Seal of Righteousness|n|n|cff99b4d1Can only train 12|n|cffffcc00Attacks land units.|r
+Warrior Hero, exceptional at melee combat and bolstering nearby troops.|n|cfff5962dAbilities:|r Command Aura, Heavy Armor|n|cfff5962dCan Learn:|R Shockwave, Lo'gosh Fury, Battle Experience, Legendary Warrior|n|n|cffffcc00Attacks land units.|R
 }
 
 STRING 9975
@@ -59911,12 +59929,6 @@ STRING 9986
 // Abilities: A0DO (Smite), Tip (Tooltip - Normal)
 {
 Smite
-}
-
-STRING 9987
-// Abilities: A0DO (Smite), Ubertip (Tooltip - Normal - Extended)
-{
-Fires a bolt of holy energy at a target enemy unit, dealing 40 damage and stunning the target for 3 seconds.
 }
 
 STRING 9988
@@ -91659,6 +91671,12 @@ STRING 15283
 Healing Surge
 }
 
+STRING 15284
+// Abilities: A0BW (Flaming Sword), EditorSuffix (Editor Suffix)
+{
+(Silver Hand Squire)
+}
+
 STRING 15285
 // Abilities: A0V1 (Healing Surge), Name (Name)
 {
@@ -96265,6 +96283,12 @@ STRING 16052
 Learn Corrupt Blood - [|cffffcc00Level %d|r]
 }
 
+STRING 16053
+// Abilities: A0BW (Flaming Sword), Name (Name)
+{
+Flaming Sword
+}
+
 STRING 16054
 // Abilities: A0OK (Corrupt Blood), Researchubertip (Tooltip - Learn - Extended)
 {
@@ -100523,6 +100547,12 @@ STRING 16763
 // Units: u01T (Herald), Casterupgradetip (Caster Upgrade Tips)
 {
 - Shadow Infusion,- Shadow Infusion|n- Devour Magic,- Shadow Infusion|n- Devour Magic|n- Lightning Shield
+}
+
+STRING 16764
+// Abilities: A0BW (Flaming Sword), Tip (Tooltip - Normal)
+{
+Flaming Sword
 }
 
 STRING 16765
@@ -115981,12 +116011,6 @@ STRING 19339
 Calls an Infernal down from the sky, dealing <AUin,DataA2> damage and stunning enemy land units for <AUin,Dur2> seconds in an area. The Infernal lasts <AUin,DataB2> seconds.
 }
 
-STRING 19340
-// Abilities: A0Z9 (Bile Shot), Researchubertip (Tooltip - Learn - Extended)
-{
-Blasts enemy units around a target enemy unit with a wave of damaging plague that slows movement for 4 seconds. |n|n|cffffcc00Level 1|r - 100 target damage, 100 nova damage. |n|cffffcc00Level 2|r - 125 target damage, 150 nova damage. |n|cffffcc00Level 3|r - 150 target damage, 200 nova damage. |n|cffffcc00Level 4|r - 175 target damage, 250 nova damage.
-}
-
 STRING 19341
 // Abilities: A0Z9 (Bile Shot), Tip (Tooltip - Normal)
 {
@@ -121190,7 +121214,7 @@ This unit is under the effects of Time's Shield, and is invulnerable.
 }
 
 STRING 20208
-// Upgrades: Rhlh (Improved Lumber Harvesting,Advanced Lumber Harvesting), Hotkey (Hotkey)
+// Abilities: A0BW (Flaming Sword), Hotkey (Hotkey - Normal)
 {
 E
 }
@@ -121202,7 +121226,7 @@ STRING 20209
 }
 
 STRING 20210
-// Upgrades: Rhlh (Improved Lumber Harvesting,Advanced Lumber Harvesting), Hotkey (Hotkey)
+// Abilities: A0BW (Flaming Sword), Unhotkey (Hotkey - Turn Off)
 {
 E
 }
@@ -121400,25 +121424,25 @@ Time's Shield
 }
 
 STRING 20243
-// Upgrades: Renb (Nature's Blessing), Hotkey (Hotkey)
+// Abilities: A12D (Legendary Warrior), Hotkey (Hotkey - Normal)
 {
 E
 }
 
 STRING 20244
-// Upgrades: Renb (Nature's Blessing), Hotkey (Hotkey)
+// Abilities: A12D (Legendary Warrior), Researchhotkey (Hotkey - Learn)
 {
 E
 }
 
 STRING 20245
-// Upgrades: Renb (Nature's Blessing), Hotkey (Hotkey)
+// Upgrades: Rhlh (Improved Lumber Harvesting,Advanced Lumber Harvesting), Hotkey (Hotkey)
 {
 E
 }
 
 STRING 20246
-// Upgrades: R06K (Defend), Hotkey (Hotkey)
+// Upgrades: Rhlh (Improved Lumber Harvesting,Advanced Lumber Harvesting), Hotkey (Hotkey)
 {
 E
 }
@@ -121514,7 +121538,7 @@ R
 }
 
 STRING 20262
-// Upgrades: Rosp (Spiked Barricades,Improved Spiked Barricades,Advanced Spiked Barricades), Hotkey (Hotkey)
+// Abilities: A12C (Legendary Warrior), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -121567,12 +121591,6 @@ STRING 20270
 Arcane Absorption - [|cffffcc00Level 4|r]
 }
 
-STRING 20271
-// Units: H00R (King of Stormwind), Ubertip (Tooltip - Extended)
-{
-Warrior Hero, exceptional at melee combat and bolstering nearby troops.|n|cfff5962dAbilities:|r Command Aura, Heavy Armor|n|cfff5962dCan Learn:|R Shockwave, Lo'gosh Fury, Battle Experience, Exact Justice|n|n|cffffcc00Attacks land units.|R
-}
-
 STRING 20272
 // Units: n0CZ (Dreadnaught), Tip (Tooltip - Basic)
 {
@@ -121622,7 +121640,7 @@ Arcane Absorption - [|cffffcc00Level 3|r]
 }
 
 STRING 20280
-// Upgrades: R06G (Defend), Hotkey (Hotkey)
+// Upgrades: Renb (Nature's Blessing), Hotkey (Hotkey)
 {
 E
 }
@@ -122287,8 +122305,14 @@ STRING 20390
 D
 }
 
+STRING 20391
+// Abilities: A0BW (Flaming Sword), Tip (Tooltip - Normal)
+{
+Phase Blade - [|cffffcc00Level 2|r]
+}
+
 STRING 20392
-// Upgrades: R06F (Defend), Hotkey (Hotkey)
+// Upgrades: Renb (Nature's Blessing), Hotkey (Hotkey)
 {
 E
 }
@@ -122300,7 +122324,7 @@ S
 }
 
 STRING 20394
-// Upgrades: Ropg (Pillage), Hotkey (Hotkey)
+// Upgrades: Rosp (Spiked Barricades,Improved Spiked Barricades,Advanced Spiked Barricades), Hotkey (Hotkey)
 {
 R
 }
@@ -122486,7 +122510,7 @@ Channel the Citadel Shield. The shield will deal 12 damage per second to enemies
 }
 
 STRING 20425
-// Upgrades: Rews (Well Spring), Hotkey (Hotkey)
+// Upgrades: Ropg (Pillage), Hotkey (Hotkey)
 {
 R
 }
@@ -122624,7 +122648,7 @@ Toxic Cloud - [|cffffcc00Level 3|r]
 }
 
 STRING 20448
-// Upgrades: R00N (Storm Hammers), Hotkey (Hotkey)
+// Upgrades: Rews (Well Spring), Hotkey (Hotkey)
 {
 R
 }
@@ -122690,7 +122714,7 @@ STRING 20458
 }
 
 STRING 20459
-// Upgrades: R064 (Nature's Blessing), Hotkey (Hotkey)
+// Upgrades: Renb (Nature's Blessing), Hotkey (Hotkey)
 {
 E
 }
@@ -122810,7 +122834,7 @@ STRING 20478
 }
 
 STRING 20479
-// Upgrades: R03M (Defend), Hotkey (Hotkey)
+// Upgrades: R06K (Defend), Hotkey (Hotkey)
 {
 E
 }
@@ -122960,7 +122984,7 @@ STRING 20503
 }
 
 STRING 20504
-// Upgrades: R02P (Backpack), Hotkey (Hotkey)
+// Upgrades: R06G (Defend), Hotkey (Hotkey)
 {
 E
 }
@@ -123020,7 +123044,7 @@ STRING 20513
 }
 
 STRING 20514
-// Upgrades: R03O (Animal War Training), Hotkey (Hotkey)
+// Upgrades: R06F (Defend), Hotkey (Hotkey)
 {
 E
 }
@@ -123032,7 +123056,7 @@ W
 }
 
 STRING 20516
-// Upgrades: R03O (Animal War Training), Hotkey (Hotkey)
+// Upgrades: R064 (Nature's Blessing), Hotkey (Hotkey)
 {
 E
 }
@@ -123266,7 +123290,7 @@ Summon Raptors
 }
 
 STRING 20555
-// Upgrades: R03O (Animal War Training), Hotkey (Hotkey)
+// Upgrades: R03M (Defend), Hotkey (Hotkey)
 {
 E
 }
@@ -123290,7 +123314,7 @@ STRING 20558
 }
 
 STRING 20559
-// Upgrades: R097 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R02P (Backpack), Hotkey (Hotkey)
 {
 E
 }
@@ -123711,7 +123735,7 @@ C
 }
 
 STRING 20629
-// Upgrades: R086 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R03O (Animal War Training), Hotkey (Hotkey)
 {
 E
 }
@@ -123860,6 +123884,12 @@ STRING 20653
 Further increases the armor of all Naval Units.
 }
 
+STRING 20654
+// Abilities: A0BW (Flaming Sword), Ubertip (Tooltip - Normal - Extended)
+{
+Adds 20 bonus damage to an attack against enemies.
+}
+
 STRING 20655
 // Units: n0DU (Pyramid of Madness), Name (Name)
 {
@@ -123876,5 +123906,197 @@ STRING 20657
 // Units: n05A (Temple of Ahn'Qiraj), Tip (Tooltip - Basic)
 {
 Build Temple of Ahn'Qiraj
+}
+
+STRING 20658
+// Abilities: A0BW (Flaming Sword), Ubertip (Tooltip - Normal - Extended)
+{
+Adds <A057,DataA2> bonus damage to an attack against enemies, but drains mana with each attack made.
+}
+
+STRING 20659
+// Abilities: A12C (Legendary Warrior), EditorSuffix (Editor Suffix)
+{
+(varian)
+}
+
+STRING 20660
+// Abilities: A12C (Legendary Warrior), Researchubertip (Tooltip - Learn - Extended)
+{
+When this hero attacks, it has a 15% chance to make all units in a small area invulnerable. |n|cffffcc00Level 1|r - 1 second duration. 200 AOE |n|cffffcc00Level 2|r - 1.5 second duration. 400 AOE |n|cffffcc00Level 3|r - 2 second duration. 600 AOE
+}
+
+STRING 20661
+// Abilities: A12C (Legendary Warrior), Tip (Tooltip - Normal)
+{
+Thunder Fists - [|cffffcc00Level 4|r]
+}
+
+STRING 20662
+// Abilities: A12C (Legendary Warrior), Ubertip (Tooltip - Normal - Extended)
+{
+When this hero attacks, it has a 15% chance to make units in a 200 area of effect invulnerable for 1 second.
+}
+
+STRING 20663
+// Abilities: A12C (Legendary Warrior), Ubertip (Tooltip - Normal - Extended)
+{
+When this hero attacks, it has a 15% chance to make units in a 400 area of effect invulnerable for 1.5 second.
+}
+
+STRING 20664
+// Abilities: A12C (Legendary Warrior), Ubertip (Tooltip - Normal - Extended)
+{
+When this hero attacks, it has a 15% chance to make units in a 600 area of effect invulnerable for 3 second.
+}
+
+STRING 20665
+// Abilities: A12C (Legendary Warrior), Ubertip (Tooltip - Normal - Extended)
+{
+When this hero attacks, it has a 15% chance to hurl lightning at <A024,DataB4> targets, dealing <A024,DataA4> damage to each of them.
+}
+
+STRING 20666
+// Abilities: A12C (Legendary Warrior), Name (Name)
+{
+Legendary Warrior
+}
+
+STRING 20667
+// Abilities: A12C (Legendary Warrior), Researchtip (Tooltip - Learn)
+{
+Learn Legendary Warrior - [|cffffcc00Level %d|r]
+}
+
+STRING 20668
+// Abilities: A12C (Legendary Warrior), Tip (Tooltip - Normal)
+{
+Legendary Warrior - [|cffffcc00Level 1|r]
+}
+
+STRING 20669
+// Abilities: A12C (Legendary Warrior), Tip (Tooltip - Normal)
+{
+Legendary Warrior - [|cffffcc00Level 2|r]
+}
+
+STRING 20670
+// Abilities: A12C (Legendary Warrior), Tip (Tooltip - Normal)
+{
+Legendary Warrior - [|cffffcc00Level 3|r]
+}
+
+STRING 20671
+// Abilities: A12D (Legendary Warrior), EditorSuffix (Editor Suffix)
+{
+(stormwind - dummy)
+}
+
+STRING 20672
+// Abilities: A12D (Legendary Warrior), Tip (Tooltip - Normal)
+{
+Time's Shield - [|cffffcc00Level 1|r]
+}
+
+STRING 20673
+// Abilities: A12D (Legendary Warrior), Tip (Tooltip - Normal)
+{
+Time's Shield - [|cffffcc00Level 2|r]
+}
+
+STRING 20674
+// Abilities: A12D (Legendary Warrior), Tip (Tooltip - Normal)
+{
+Time's Shield - [|cffffcc00Level 3|r]
+}
+
+STRING 20675
+// Abilities: A12D (Legendary Warrior), Tip (Tooltip - Normal)
+{
+Time's Shield - [|cffffcc00Level 4|r]
+}
+
+STRING 20676
+// Abilities: A12D (Legendary Warrior), Ubertip (Tooltip - Normal - Extended)
+{
+Turns all friendly units invulnerable in an area around Aegwynn. |nLasts 1 seconds.
+}
+
+STRING 20677
+// Abilities: A12D (Legendary Warrior), Ubertip (Tooltip - Normal - Extended)
+{
+Turns all friendly units invulnerable in an area around Aegwynn. |nLasts 2 seconds.
+}
+
+STRING 20678
+// Abilities: A12D (Legendary Warrior), Ubertip (Tooltip - Normal - Extended)
+{
+Turns all friendly units invulnerable in an area around Aegwynn. |nLasts 3 seconds.
+}
+
+STRING 20679
+// Abilities: A12D (Legendary Warrior), Ubertip (Tooltip - Normal - Extended)
+{
+Turns all friendly units invulnerable in an area around Aegwynn. |nLasts 4 seconds.
+}
+
+STRING 20680
+// Abilities: A12D (Legendary Warrior), Researchtip (Tooltip - Learn)
+{
+Learn Time's Shield
+}
+
+STRING 20681
+// Abilities: A12D (Legendary Warrior), Name (Name)
+{
+Legendary Warrior
+}
+
+STRING 20682
+// Abilities: A12D (Legendary Warrior), Researchubertip (Tooltip - Learn - Extended)
+{
+Turns all friendly units invulnerable in an area around Aegwynn. |nLasts 1/2/3/4 seconds. |n|cffffcc00Level 1|r - 1 second duration. |n|cffffcc00Level 2|r - 2 seconds duration. |n|cffffcc00Level 3|r - 3 seconds duration.|n|cffffcc00Level 4|r - 4 seconds duration.
+}
+
+STRING 20683
+// Buffs/Effects: B0B6 (), Bufftip (Tooltip)
+{
+Legendary Warrior
+}
+
+STRING 20684
+// Buffs/Effects: B0B6 (), Buffubertip (Tooltip - Extended)
+{
+This unit is under the effects of Legendary Warrior, and is invulnerable.
+}
+
+STRING 20685
+// Upgrades: R00N (Storm Hammers), Hotkey (Hotkey)
+{
+R
+}
+
+STRING 20686
+// Upgrades: R03O (Animal War Training), Hotkey (Hotkey)
+{
+E
+}
+
+STRING 20687
+// Upgrades: R03O (Animal War Training), Hotkey (Hotkey)
+{
+E
+}
+
+STRING 20688
+// Upgrades: R097 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+{
+E
+}
+
+STRING 20689
+// Upgrades: R086 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+{
+E
 }
 

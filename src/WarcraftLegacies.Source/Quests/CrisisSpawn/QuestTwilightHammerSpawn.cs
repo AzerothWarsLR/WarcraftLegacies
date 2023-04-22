@@ -36,11 +36,11 @@ namespace WarcraftLegacies.Source.Quests.CrisisSpawn
 
     /// <inheritdoc/>
     protected override string RewardFlavour =>
-      "The Ahn'qiraj Kingdom and it's forces awaken.";
+      "The Twilight Hammer clan will reveal themselves in the Twilight Highlands";
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
-      "You will spawn with C'thun and an army in Ahn'qiraj.";
+      "You will spawn with Cho'gall and an army in the Twilight Highlands.";
 
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
