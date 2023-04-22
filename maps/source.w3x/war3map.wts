@@ -11777,12 +11777,6 @@ STRING 1963
 Teleports the unit a short distance, allowing her to move in and out of combat. |n12 second cooldown.                             
 }
 
-STRING 1964
-// Abilities: A0S0 (Multishot), EditorSuffix (Editor Suffix)
-{
-(defender Draenei)
-}
-
 STRING 1965
 // Units: n08M (Southshore (15gold/min)), Name (Name)
 {
@@ -11790,7 +11784,7 @@ Southshore (15gold/min)
 }
 
 STRING 1966
-// Abilities: A0S0 (Multishot), Name (Name)
+// Abilities: A0S8 (Multishot), Name (Name)
 {
 Multishot
 }
@@ -14898,6 +14892,12 @@ STRING 2484
 // Units: u01T (Herald), Ubertip (Tooltip - Extended)
 {
 Support caster of the Twilight hammer.|n|cfff5962dAbilities:|R Shadow Infusion, Devour Magic, Lightning Shield |n|n|cffffcc00Attacks land and air units.|r
+}
+
+STRING 2485
+// Units: u02T (Control Point Defender), EditorSuffix (Name - Editor Suffix)
+{
+(Nazjatar)
 }
 
 STRING 2486
@@ -19475,7 +19475,7 @@ STRING 3247
 }
 
 STRING 3248
-// Abilities: A0S0 (Multishot), Tip (Tooltip - Normal)
+// Abilities: A0S8 (Multishot), Tip (Tooltip - Normal)
 {
 Multishot
 }
@@ -59931,6 +59931,12 @@ STRING 9986
 Smite
 }
 
+STRING 9987
+// Units: u02T (Control Point Defender), Name (Name)
+{
+Control Point Defender
+}
+
 STRING 9988
 // Abilities: A0DO (Smite), Ubertip (Tooltip - Normal - Extended)
 {
@@ -83199,7 +83205,7 @@ Learn Slipstream - [|cffffcc00Level %d|r]
 }
 
 STRING 13864
-// Items: tret (Tome of Retraining), Hotkey (Hotkey)
+// Units: u02T (Control Point Defender), Hotkey (Hotkey)
 {
 Z
 }
@@ -83211,7 +83217,7 @@ Shadowspawn
 }
 
 STRING 13866
-// Items: oven (Orb of Venom), Hotkey (Hotkey)
+// Items: tret (Tome of Retraining), Hotkey (Hotkey)
 {
 Z
 }
@@ -83229,13 +83235,13 @@ Opens a two-way portal to the target location. The portal becomes useable after 
 }
 
 STRING 13869
-// Items: oslo (Orb of Slow), Hotkey (Hotkey)
+// Items: oven (Orb of Venom), Hotkey (Hotkey)
 {
 Z
 }
 
 STRING 13870
-// Items: olig (Orb of Lightning), Hotkey (Hotkey)
+// Items: oslo (Orb of Slow), Hotkey (Hotkey)
 {
 Z
 }
@@ -83649,7 +83655,7 @@ rlev
 }
 
 STRING 13939
-// Items: oli2 (Orb of Arcane), Hotkey (Hotkey)
+// Items: olig (Orb of Lightning), Hotkey (Hotkey)
 {
 Z
 }
@@ -83697,7 +83703,7 @@ STRING 13946
 }
 
 STRING 13947
-// Items: ofro (Orb of Frost), Hotkey (Hotkey)
+// Items: oli2 (Orb of Arcane), Hotkey (Hotkey)
 {
 Z
 }
@@ -83727,7 +83733,7 @@ rhpr
 }
 
 STRING 13952
-// Items: ofir (Orb of Fire), Hotkey (Hotkey)
+// Items: ofro (Orb of Frost), Hotkey (Hotkey)
 {
 Z
 }
@@ -83919,7 +83925,7 @@ STRING 13983
 }
 
 STRING 13984
-// Items: ocor (Orb of Corruption), Hotkey (Hotkey)
+// Items: ofir (Orb of Fire), Hotkey (Hotkey)
 {
 Z
 }
@@ -84033,13 +84039,13 @@ STRING 14002
 }
 
 STRING 14003
-// Items: ofr2 (Orb of Fire), Hotkey (Hotkey)
+// Items: ocor (Orb of Corruption), Hotkey (Hotkey)
 {
 Z
 }
 
 STRING 14004
-// Items: I01P (Tech-Orb 4000), Hotkey (Hotkey)
+// Items: ofr2 (Orb of Fire), Hotkey (Hotkey)
 {
 Z
 }
@@ -84303,7 +84309,7 @@ The unit strikes with such force that 15% of their damage strikes through to ene
 }
 
 STRING 14048
-// Items: I00S (Orb of Light), Hotkey (Hotkey)
+// Items: I01P (Tech-Orb 4000), Hotkey (Hotkey)
 {
 Z
 }
@@ -84621,7 +84627,7 @@ STRING 14100
 }
 
 STRING 14101
-// Abilities: Amic (Call To Arms), Hotkey (Hotkey - Normal)
+// Items: I00S (Orb of Light), Hotkey (Hotkey)
 {
 Z
 }
@@ -84975,13 +84981,13 @@ STRING 14159
 }
 
 STRING 14160
-// Abilities: A0W8 (Recall), Hotkey (Hotkey - Normal)
+// Abilities: Amic (Call To Arms), Hotkey (Hotkey - Normal)
 {
 Z
 }
 
 STRING 14161
-// Abilities: A0PF (Fel Energy), Hotkey (Hotkey - Normal)
+// Abilities: A0W8 (Recall), Hotkey (Hotkey - Normal)
 {
 Z
 }
@@ -85011,13 +85017,13 @@ STRING 14165
 }
 
 STRING 14166
-// Abilities: A0LJ (Hellfire), Hotkey (Hotkey - Normal)
+// Abilities: A0PF (Fel Energy), Hotkey (Hotkey - Normal)
 {
 Z
 }
 
 STRING 14167
-// Abilities: A0K4 (Explore Map), Hotkey (Hotkey - Normal)
+// Abilities: A0LJ (Hellfire), Hotkey (Hotkey - Normal)
 {
 Z
 }
@@ -85119,7 +85125,7 @@ rlev
 }
 
 STRING 14184
-// Abilities: A0GM (For The Horde!), Hotkey (Hotkey - Normal)
+// Abilities: A0K4 (Explore Map), Hotkey (Hotkey - Normal)
 {
 Z
 }
@@ -85245,7 +85251,7 @@ A
 }
 
 STRING 14205
-// Abilities: A0G9 (Force of Nature), Hotkey (Hotkey - Normal)
+// Abilities: A0GM (For The Horde!), Hotkey (Hotkey - Normal)
 {
 Z
 }
@@ -85347,7 +85353,7 @@ STRING 14221
 }
 
 STRING 14222
-// Abilities: A0EP (Summon Granite Golems), Hotkey (Hotkey - Normal)
+// Abilities: A0G9 (Force of Nature), Hotkey (Hotkey - Normal)
 {
 Z
 }
@@ -85377,7 +85383,7 @@ STRING 14226
 }
 
 STRING 14227
-// Abilities: A0EP (Summon Granite Golems), Researchhotkey (Hotkey - Learn)
+// Abilities: A0EP (Summon Granite Golems), Hotkey (Hotkey - Normal)
 {
 Z
 }
@@ -85995,7 +86001,7 @@ rlev
 }
 
 STRING 14330
-// Abilities: A0DE (Force of Nature), Hotkey (Hotkey - Normal)
+// Abilities: A0EP (Summon Granite Golems), Researchhotkey (Hotkey - Learn)
 {
 Z
 }
@@ -86402,7 +86408,7 @@ STRING 14397
 }
 
 STRING 14398
-// Abilities: A07O (Reveal), Hotkey (Hotkey - Normal)
+// Abilities: A0DE (Force of Nature), Hotkey (Hotkey - Normal)
 {
 Z
 }
@@ -86474,7 +86480,7 @@ ratx
 }
 
 STRING 14410
-// Abilities: A05V (Toggle Summoning), Hotkey (Hotkey - Normal)
+// Abilities: A07O (Reveal), Hotkey (Hotkey - Normal)
 {
 Z
 }
@@ -86534,7 +86540,7 @@ STRING 14419
 }
 
 STRING 14420
-// Abilities: A05V (Toggle Summoning), Unhotkey (Hotkey - Turn Off)
+// Abilities: A05V (Toggle Summoning), Hotkey (Hotkey - Normal)
 {
 Z
 }
@@ -86660,7 +86666,7 @@ rlev
 }
 
 STRING 14441
-// Abilities: A03Q (Watcher's Eye), Hotkey (Hotkey - Normal)
+// Abilities: A05V (Toggle Summoning), Unhotkey (Hotkey - Turn Off)
 {
 Z
 }
@@ -86852,13 +86858,13 @@ Q
 }
 
 STRING 14473
-// Abilities: A019 (Begin Anew), Hotkey (Hotkey - Normal)
+// Abilities: A03Q (Watcher's Eye), Hotkey (Hotkey - Normal)
 {
 Z
 }
 
 STRING 14474
-// Abilities: A04V (Searing Arrows), Hotkey (Hotkey - Normal)
+// Abilities: A019 (Begin Anew), Hotkey (Hotkey - Normal)
 {
 Z
 }
@@ -86966,7 +86972,7 @@ rlev
 }
 
 STRING 14492
-// Abilities: A04V (Searing Arrows), Unhotkey (Hotkey - Turn Off)
+// Abilities: A04V (Searing Arrows), Hotkey (Hotkey - Normal)
 {
 Z
 }
@@ -87218,7 +87224,7 @@ rlev
 }
 
 STRING 14534
-// Abilities: A0LR (Sacrifice), Hotkey (Hotkey - Normal)
+// Abilities: A04V (Searing Arrows), Unhotkey (Hotkey - Turn Off)
 {
 Z
 }
@@ -87296,7 +87302,7 @@ Resource harvesting center and producer of Draenei enhancements. |n|cfff5962dRes
 }
 
 STRING 14547
-// Abilities: A0WW (Summon Zelemar), Unhotkey (Hotkey - Turn Off)
+// Abilities: A0LR (Sacrifice), Hotkey (Hotkey - Normal)
 {
 Z
 }
@@ -87356,7 +87362,7 @@ Bombard
 }
 
 STRING 14557
-// Abilities: A0T3 (Titanforge Artifact), Hotkey (Hotkey - Normal)
+// Abilities: A0WW (Summon Zelemar), Unhotkey (Hotkey - Turn Off)
 {
 Z
 }
@@ -87398,7 +87404,7 @@ STRING 14563
 }
 
 STRING 14564
-// Upgrades: Rune (Necromancer Adept Training,Necromancer Master Training), Hotkey (Hotkey)
+// Abilities: A0T3 (Titanforge Artifact), Hotkey (Hotkey - Normal)
 {
 Z
 }
@@ -87488,7 +87494,7 @@ Summon Fel Hound - [|cffffcc00Level 1|r]
 }
 
 STRING 14579
-// Upgrades: Rows (Pulverize Damage Increase), Hotkey (Hotkey)
+// Upgrades: Rune (Necromancer Adept Training,Necromancer Master Training), Hotkey (Hotkey)
 {
 Z
 }
@@ -87531,7 +87537,7 @@ rlev
 }
 
 STRING 14586
-// Upgrades: Rotr (Troll Regeneration,Improved Troll Regeneration,Advanced Troll Regeneration), Hotkey (Hotkey)
+// Upgrades: Rows (Pulverize Damage Increase), Hotkey (Hotkey)
 {
 Z
 }
@@ -87567,7 +87573,7 @@ Dimensional Jump to Tempest Keep
 }
 
 STRING 14592
-// Upgrades: Rost (Shaman Adept Training,Shaman Master Training), Hotkey (Hotkey)
+// Upgrades: Rotr (Troll Regeneration,Improved Troll Regeneration,Advanced Troll Regeneration), Hotkey (Hotkey)
 {
 Z
 }
@@ -87933,7 +87939,7 @@ rlev
 }
 
 STRING 14653
-// Upgrades: Roen (Ensnare), Hotkey (Hotkey)
+// Upgrades: Rost (Shaman Adept Training,Shaman Master Training), Hotkey (Hotkey)
 {
 Z
 }
@@ -88029,13 +88035,13 @@ The unit takes aim and fires at an enemy unit, causing 75 damage and stunning th
 }
 
 STRING 14669
-// Upgrades: Robf (Burning Oil), Hotkey (Hotkey)
+// Upgrades: Roen (Ensnare), Hotkey (Hotkey)
 {
 Z
 }
 
 STRING 14670
-// Upgrades: Rnsw (Naga Siren Adept Training,Naga Siren Master Training), Hotkey (Hotkey)
+// Upgrades: Robf (Burning Oil), Hotkey (Hotkey)
 {
 Z
 }
@@ -88143,7 +88149,7 @@ Z
 }
 
 STRING 14688
-// Upgrades: Rhss (Control Magic), Hotkey (Hotkey)
+// Upgrades: Rnsw (Naga Siren Adept Training,Naga Siren Master Training), Hotkey (Hotkey)
 {
 Z
 }
@@ -88239,7 +88245,7 @@ STRING 14703
 }
 
 STRING 14704
-// Upgrades: Rhpt (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
+// Upgrades: Rhss (Control Magic), Hotkey (Hotkey)
 {
 Z
 }
@@ -88455,7 +88461,7 @@ rmvx
 }
 
 STRING 14740
-// Upgrades: Rhhb (Storm Hammers), Hotkey (Hotkey)
+// Upgrades: Rhpt (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
 {
 Z
 }
@@ -88485,13 +88491,13 @@ Control Point Defender
 }
 
 STRING 14745
-// Upgrades: Reuv (Ultravision), Hotkey (Hotkey)
+// Upgrades: Rhhb (Storm Hammers), Hotkey (Hotkey)
 {
 Z
 }
 
 STRING 14746
-// Upgrades: Redt (Druid of the Talon Adept Training,Druid of the Talon Master Training), Hotkey (Hotkey)
+// Upgrades: Reuv (Ultravision), Hotkey (Hotkey)
 {
 Z
 }
@@ -89121,7 +89127,7 @@ Slipstream - [|cffffcc00Level 3|r]
 }
 
 STRING 14851
-// Upgrades: Redc (Druid of the Claw Adept Training,Druid of the Claw Master Training), Hotkey (Hotkey)
+// Upgrades: Redt (Druid of the Talon Adept Training,Druid of the Talon Master Training), Hotkey (Hotkey)
 {
 Z
 }
@@ -89307,7 +89313,7 @@ Opens a two-way portal to the target location within a range of <A00D,Rng3>. The
 }
 
 STRING 14882
-// Upgrades: R06O (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: Redc (Druid of the Claw Adept Training,Druid of the Claw Master Training), Hotkey (Hotkey)
 {
 Z
 }
@@ -89715,7 +89721,7 @@ Altruis the Sufferer
 }
 
 STRING 14950
-// Upgrades: R04V (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: R06O (Magic Sentry), Hotkey (Hotkey)
 {
 Z
 }
@@ -89973,7 +89979,7 @@ ratx
 }
 
 STRING 14993
-// Upgrades: R04F (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
+// Upgrades: R04V (Magic Sentry), Hotkey (Hotkey)
 {
 Z
 }
@@ -90087,7 +90093,7 @@ Empower nearby friendly units, increasing their damage by <A0M2,DataA1,%>% and a
 }
 
 STRING 15012
-// Upgrades: R03V (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: R04F (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
 {
 Z
 }
@@ -90117,7 +90123,7 @@ Fast moving flying machine. Excellent at scouting, and effective against air uni
 }
 
 STRING 15017
-// Upgrades: R03Q (Shaman Adept Training,Shaman Master Training), Hotkey (Hotkey)
+// Upgrades: R03V (Magic Sentry), Hotkey (Hotkey)
 {
 Z
 }
@@ -90297,7 +90303,7 @@ Research Blood Runes
 }
 
 STRING 15047
-// Upgrades: R03H (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
+// Upgrades: R03Q (Shaman Adept Training,Shaman Master Training), Hotkey (Hotkey)
 {
 Z
 }
@@ -90501,7 +90507,7 @@ Z
 }
 
 STRING 15081
-// Upgrades: R030 (Defend), Hotkey (Hotkey)
+// Upgrades: R03H (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
 {
 Z
 }
@@ -90914,7 +90920,7 @@ Revive Demigod
 }
 
 STRING 15158
-// Upgrades: R02W (Defend), Hotkey (Hotkey)
+// Upgrades: R030 (Defend), Hotkey (Hotkey)
 {
 Z
 }
@@ -90998,7 +91004,7 @@ STRING 15171
 }
 
 STRING 15172
-// Upgrades: R029 (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
+// Upgrades: R02W (Defend), Hotkey (Hotkey)
 {
 Z
 }
@@ -92960,7 +92966,7 @@ Power Infusion 1
 }
 
 STRING 15499
-// Upgrades: R027 (Necromancer Adept Training,Necromancer Master Training), Hotkey (Hotkey)
+// Upgrades: R029 (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
 {
 Z
 }
@@ -94550,7 +94556,7 @@ STRING 15763
 }
 
 STRING 15764
-// Upgrades: R024 (Necromancer Adept Training,Necromancer Master Training), Hotkey (Hotkey)
+// Upgrades: R027 (Necromancer Adept Training,Necromancer Master Training), Hotkey (Hotkey)
 {
 Z
 }
@@ -95090,7 +95096,7 @@ Z
 }
 
 STRING 15854
-// Upgrades: R01X (Disease Cloud), Hotkey (Hotkey)
+// Upgrades: R024 (Necromancer Adept Training,Necromancer Master Training), Hotkey (Hotkey)
 {
 Z
 }
@@ -95360,7 +95366,7 @@ Absord Nexus
 }
 
 STRING 15899
-// Upgrades: R01W (Druid of the Talon Adept Training,Druid of the Talon Master Training), Hotkey (Hotkey)
+// Upgrades: R01X (Disease Cloud), Hotkey (Hotkey)
 {
 Z
 }
@@ -96062,13 +96068,13 @@ W
 }
 
 STRING 16016
-// Upgrades: R01Q (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: R01W (Druid of the Talon Adept Training,Druid of the Talon Master Training), Hotkey (Hotkey)
 {
 Z
 }
 
 STRING 16017
-// Upgrades: R01J (Ensnare), Hotkey (Hotkey)
+// Upgrades: R01Q (Magic Sentry), Hotkey (Hotkey)
 {
 Z
 }
@@ -96104,13 +96110,13 @@ Short range medium ship.|n|r|n|cffffcc00Attacks land units.|r|nStrong versus Fri
 }
 
 STRING 16023
-// Upgrades: R017 (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: R01J (Ensnare), Hotkey (Hotkey)
 {
 Z
 }
 
 STRING 16024
-// Upgrades: R010 (Control Magic), Hotkey (Hotkey)
+// Upgrades: R017 (Magic Sentry), Hotkey (Hotkey)
 {
 Z
 }
@@ -96412,7 +96418,7 @@ Open the Scholomance
 }
 
 STRING 16074
-// Upgrades: R00O (Ensnare), Hotkey (Hotkey)
+// Upgrades: R010 (Control Magic), Hotkey (Hotkey)
 {
 Z
 }
@@ -97352,7 +97358,7 @@ X
 }
 
 STRING 16231
-// Upgrades: R00I (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
+// Upgrades: R00O (Ensnare), Hotkey (Hotkey)
 {
 Z
 }
@@ -97370,7 +97376,7 @@ X
 }
 
 STRING 16234
-// Upgrades: R00F (Control Magic), Hotkey (Hotkey)
+// Upgrades: R00I (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
 {
 Z
 }
@@ -97496,7 +97502,7 @@ E
 }
 
 STRING 16255
-// Upgrades: R00E (Sorceress Adept Training,Sorceress Master Training), Hotkey (Hotkey)
+// Upgrades: R00F (Control Magic), Hotkey (Hotkey)
 {
 Z
 }
@@ -97507,14 +97513,8 @@ STRING 16256
 Revive Warlord Maiden
 }
 
-STRING 16257
-// Abilities: A0S8 (Multishot), EditorSuffix (Editor Suffix)
-{
-(defender Sentinel)
-}
-
 STRING 16258
-// Abilities: A0S0 (Multishot), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A0S8 (Multishot), Ubertip (Tooltip - Normal - Extended)
 {
 This tower fires up to 9 additional projectiles that deal 10 damage each to nearby enemies
 }
@@ -98696,7 +98696,7 @@ Gives <A0B2,DataA1,.> additional armor to nearby friendly units in 600 range.
 }
 
 STRING 16455
-// Upgrades: R00B (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: R00E (Sorceress Adept Training,Sorceress Master Training), Hotkey (Hotkey)
 {
 Z
 }
@@ -99092,7 +99092,7 @@ Glaive Warrior
 }
 
 STRING 16521
-// Upgrades: R00A (Mark of the Claw), Hotkey (Hotkey)
+// Upgrades: R00B (Magic Sentry), Hotkey (Hotkey)
 {
 Z
 }
@@ -99506,7 +99506,7 @@ STRING 16589
 }
 
 STRING 16590
-// Upgrades: R005 (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
+// Upgrades: R00A (Mark of the Claw), Hotkey (Hotkey)
 {
 Z
 }
@@ -100202,7 +100202,7 @@ Seismic Shard
 }
 
 STRING 16706
-// Upgrades: R000 (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
+// Upgrades: R005 (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
 {
 Z
 }
@@ -100754,7 +100754,7 @@ Z
 }
 
 STRING 16798
-// Upgrades: R01U (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: R000 (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
 {
 Z
 }
@@ -100976,7 +100976,7 @@ STRING 16834
 }
 
 STRING 16835
-// Upgrades: R03Z (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: R01U (Magic Sentry), Hotkey (Hotkey)
 {
 Z
 }
@@ -101648,7 +101648,7 @@ Summon Living Tornado - [|cffffcc00Level 1|r]
 }
 
 STRING 16947
-// Upgrades: R04O (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
+// Upgrades: R03Z (Magic Sentry), Hotkey (Hotkey)
 {
 Z
 }
@@ -105188,7 +105188,7 @@ The Goblin pilot makes emergency repairs to his machine. Restores 500 hitpoints.
 }
 
 STRING 17537
-// Upgrades: R051 (Necromancer Adept Training,Necromancer Master Training), Hotkey (Hotkey)
+// Upgrades: R04O (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
 {
 Z
 }
@@ -105459,7 +105459,7 @@ Elemental Fire - [|cffffcc00Level 3|r]
 }
 
 STRING 17582
-// Upgrades: R06Z (Necromancer Adept Training,Necromancer Master Training), Hotkey (Hotkey)
+// Upgrades: R051 (Necromancer Adept Training,Necromancer Master Training), Hotkey (Hotkey)
 {
 Z
 }
@@ -105567,7 +105567,7 @@ X
 }
 
 STRING 17600
-// Upgrades: R070 (Druid of the Talon Adept Training,Druid of the Talon Master Training), Hotkey (Hotkey)
+// Upgrades: R06Z (Necromancer Adept Training,Necromancer Master Training), Hotkey (Hotkey)
 {
 Z
 }
@@ -106961,7 +106961,7 @@ R
 }
 
 STRING 17832
-// Upgrades: R07J (Banshee Adept Training,Banshee Master Training), Hotkey (Hotkey)
+// Upgrades: R070 (Druid of the Talon Adept Training,Druid of the Talon Master Training), Hotkey (Hotkey)
 {
 Z
 }
@@ -113305,7 +113305,7 @@ Crooked Inn Tavern
 }
 
 STRING 18889
-// Upgrades: R07M (Shaman Adept Training,Shaman Master Training), Hotkey (Hotkey)
+// Upgrades: R07J (Banshee Adept Training,Banshee Master Training), Hotkey (Hotkey)
 {
 Z
 }
@@ -113545,7 +113545,7 @@ C
 }
 
 STRING 18929
-// Abilities: A0S8 (Multishot), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A0ZK (Multishot), Ubertip (Tooltip - Normal - Extended)
 {
 This tower fires up to 9 additional projectiles that deal 10 damage each to nearby enemies
 }
@@ -113659,7 +113659,7 @@ The hero burns with a withering heat, searing and slowing nearby enemies.|n|n|cf
 }
 
 STRING 18948
-// Upgrades: R07O (Witch Doctor Adept Training,Witch Doctor Master Training), Hotkey (Hotkey)
+// Upgrades: R07M (Shaman Adept Training,Shaman Master Training), Hotkey (Hotkey)
 {
 Z
 }
@@ -113827,7 +113827,7 @@ Creates a small cloud that slows units by 50% and give them a 15% chance to miss
 }
 
 STRING 18976
-// Abilities: A0S8 (Multishot), Name (Name)
+// Abilities: A0ZK (Multishot), Name (Name)
 {
 Multishot
 }
@@ -115033,7 +115033,7 @@ Activates a shield that absorbs <A06L,DataA1> damage per point of mana.
 }
 
 STRING 19177
-// Abilities: A0S8 (Multishot), Tip (Tooltip - Normal)
+// Abilities: A0ZK (Multishot), Tip (Tooltip - Normal)
 {
 Multishot
 }
@@ -115927,12 +115927,6 @@ STRING 19325
 Train - Murloc Mutant
 }
 
-STRING 19326
-// Abilities: A0ZK (Multishot), EditorSuffix (Editor Suffix)
-{
-(defender Druid)
-}
-
 STRING 19327
 // Units: n0DE (Murloc Mutant), Name (Name)
 {
@@ -116011,6 +116005,12 @@ STRING 19339
 Calls an Infernal down from the sky, dealing <AUin,DataA2> damage and stunning enemy land units for <AUin,Dur2> seconds in an area. The Infernal lasts <AUin,DataB2> seconds.
 }
 
+STRING 19340
+// Units: u02T (Control Point Defender), Tip (Tooltip - Basic)
+{
+Upgrade to Soul Tower
+}
+
 STRING 19341
 // Abilities: A0Z9 (Bile Shot), Tip (Tooltip - Normal)
 {
@@ -116072,7 +116072,7 @@ STRING 19350
 }
 
 STRING 19351
-// Abilities: A0ZK (Multishot), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A0ZL (Multishot), Ubertip (Tooltip - Normal - Extended)
 {
 This tower fires up to 9 additional projectiles that deal 10 damage each to nearby enemies
 }
@@ -117356,13 +117356,13 @@ Summon Naisha
 }
 
 STRING 19565
-// Abilities: A0ZK (Multishot), Name (Name)
+// Abilities: A0ZL (Multishot), Name (Name)
 {
 Multishot
 }
 
 STRING 19566
-// Abilities: A0ZK (Multishot), Tip (Tooltip - Normal)
+// Abilities: A0ZL (Multishot), Tip (Tooltip - Normal)
 {
 Multishot
 }
@@ -117379,313 +117379,145 @@ STRING 19568
 (Naisha)
 }
 
-STRING 19569
-// Abilities: A0ZL (Multishot), EditorSuffix (Editor Suffix)
-{
-(defender Illidari)
-}
-
 STRING 19570
-// Abilities: A0ZL (Multishot), Ubertip (Tooltip - Normal - Extended)
-{
-This tower fires up to 9 additional projectiles that deal 10 damage each to nearby enemies
-}
-
-STRING 19571
-// Abilities: A0ZL (Multishot), Name (Name)
-{
-Multishot
-}
-
-STRING 19572
-// Abilities: A0ZL (Multishot), Tip (Tooltip - Normal)
-{
-Multishot
-}
-
-STRING 19573
-// Abilities: A0ZM (Multishot), EditorSuffix (Editor Suffix)
-{
-(defender Fel)
-}
-
-STRING 19574
 // Abilities: A0ZM (Multishot), Ubertip (Tooltip - Normal - Extended)
 {
 This tower fires up to 9 additional projectiles that deal 10 damage each to nearby enemies
 }
 
-STRING 19575
+STRING 19571
 // Abilities: A0ZM (Multishot), Name (Name)
 {
 Multishot
 }
 
-STRING 19576
+STRING 19572
 // Abilities: A0ZM (Multishot), Tip (Tooltip - Normal)
 {
 Multishot
 }
 
-STRING 19577
-// Abilities: A0ZN (Multishot), EditorSuffix (Editor Suffix)
-{
-(defender Legion)
-}
-
-STRING 19578
-// Abilities: A0ZN (Multishot), Ubertip (Tooltip - Normal - Extended)
-{
-This tower fires up to 9 additional projectiles that deal 10 damage each to nearby enemies
-}
-
-STRING 19579
-// Abilities: A0ZN (Multishot), Name (Name)
-{
-Multishot
-}
-
-STRING 19580
-// Abilities: A0ZN (Multishot), Tip (Tooltip - Normal)
-{
-Multishot
-}
-
-STRING 19581
-// Abilities: A0ZO (Multishot), EditorSuffix (Editor Suffix)
-{
-(defender Scourge)
-}
-
-STRING 19582
+STRING 19574
 // Abilities: A0ZO (Multishot), Ubertip (Tooltip - Normal - Extended)
 {
 This tower fires up to 9 additional projectiles that deal 10 damage each to nearby enemies
 }
 
-STRING 19583
+STRING 19575
 // Abilities: A0ZO (Multishot), Name (Name)
 {
 Multishot
 }
 
-STRING 19584
+STRING 19576
 // Abilities: A0ZO (Multishot), Tip (Tooltip - Normal)
 {
 Multishot
 }
 
-STRING 19585
-// Abilities: A0ZP (Multishot), EditorSuffix (Editor Suffix)
-{
-(defender Frostwolf)
-}
-
-STRING 19586
-// Abilities: A0ZP (Multishot), Ubertip (Tooltip - Normal - Extended)
-{
-This tower fires up to 9 additional projectiles that deal 10 damage each to nearby enemies
-}
-
-STRING 19587
-// Abilities: A0ZP (Multishot), Name (Name)
-{
-Multishot
-}
-
-STRING 19588
-// Abilities: A0ZP (Multishot), Tip (Tooltip - Normal)
-{
-Multishot
-}
-
-STRING 19589
-// Abilities: A0ZQ (Multishot), EditorSuffix (Editor Suffix)
-{
-(defender Warsong)
-}
-
-STRING 19590
+STRING 19578
 // Abilities: A0ZQ (Multishot), Ubertip (Tooltip - Normal - Extended)
 {
 This tower fires up to 9 additional projectiles that deal 10 damage each to nearby enemies
 }
 
-STRING 19591
+STRING 19579
 // Abilities: A0ZQ (Multishot), Name (Name)
 {
 Multishot
 }
 
-STRING 19592
+STRING 19580
 // Abilities: A0ZQ (Multishot), Tip (Tooltip - Normal)
 {
 Multishot
 }
 
-STRING 19593
-// Abilities: A0ZR (Multishot), EditorSuffix (Editor Suffix)
-{
-(defender Goblin)
-}
-
-STRING 19594
+STRING 19582
 // Abilities: A0ZR (Multishot), Ubertip (Tooltip - Normal - Extended)
 {
 This tower fires up to 9 additional projectiles that deal 10 damage each to nearby enemies
 }
 
-STRING 19595
+STRING 19583
 // Abilities: A0ZR (Multishot), Name (Name)
 {
 Multishot
 }
 
-STRING 19596
+STRING 19584
 // Abilities: A0ZR (Multishot), Tip (Tooltip - Normal)
 {
 Multishot
 }
 
-STRING 19597
-// Abilities: A0ZS (Multishot), EditorSuffix (Editor Suffix)
-{
-(defender Lordaeron)
-}
-
-STRING 19598
+STRING 19586
 // Abilities: A0ZS (Multishot), Ubertip (Tooltip - Normal - Extended)
 {
 This tower fires up to 9 additional projectiles that deal 10 damage each to nearby enemies
 }
 
-STRING 19599
+STRING 19587
 // Abilities: A0ZS (Multishot), Name (Name)
 {
 Multishot
 }
 
-STRING 19600
+STRING 19588
 // Abilities: A0ZS (Multishot), Tip (Tooltip - Normal)
 {
 Multishot
 }
 
-STRING 19601
-// Abilities: A0ZT (Multishot), EditorSuffix (Editor Suffix)
-{
-(defender Ironforge)
-}
-
-STRING 19602
+STRING 19590
 // Abilities: A0ZT (Multishot), Ubertip (Tooltip - Normal - Extended)
 {
 This tower fires up to 9 additional projectiles that deal 10 damage each to nearby enemies
 }
 
-STRING 19603
+STRING 19591
 // Abilities: A0ZT (Multishot), Name (Name)
 {
 Multishot
 }
 
-STRING 19604
+STRING 19592
 // Abilities: A0ZT (Multishot), Tip (Tooltip - Normal)
 {
 Multishot
 }
 
-STRING 19605
-// Abilities: A0ZU (Multishot), EditorSuffix (Editor Suffix)
-{
-(defender Kultiras)
-}
-
-STRING 19606
-// Abilities: A0ZU (Multishot), Ubertip (Tooltip - Normal - Extended)
-{
-This tower fires up to 9 additional projectiles that deal 10 damage each to nearby enemies
-}
-
-STRING 19607
-// Abilities: A0ZU (Multishot), Name (Name)
-{
-Multishot
-}
-
-STRING 19608
-// Abilities: A0ZU (Multishot), Tip (Tooltip - Normal)
-{
-Multishot
-}
-
-STRING 19609
-// Abilities: A0ZV (Multishot), EditorSuffix (Editor Suffix)
-{
-(defender stormwind)
-}
-
-STRING 19610
+STRING 19594
 // Abilities: A0ZV (Multishot), Ubertip (Tooltip - Normal - Extended)
 {
 This tower fires up to 9 additional projectiles that deal 10 damage each to nearby enemies
 }
 
-STRING 19611
+STRING 19595
 // Abilities: A0ZV (Multishot), Name (Name)
 {
 Multishot
 }
 
-STRING 19612
+STRING 19596
 // Abilities: A0ZV (Multishot), Tip (Tooltip - Normal)
 {
 Multishot
 }
 
-STRING 19613
-// Abilities: A0ZW (Multishot), EditorSuffix (Editor Suffix)
-{
-(defender quelthalas)
-}
-
-STRING 19614
-// Abilities: A0ZW (Multishot), Ubertip (Tooltip - Normal - Extended)
-{
-This tower fires up to 9 additional projectiles that deal 10 damage each to nearby enemies
-}
-
-STRING 19615
-// Abilities: A0ZW (Multishot), Name (Name)
-{
-Multishot
-}
-
-STRING 19616
-// Abilities: A0ZW (Multishot), Tip (Tooltip - Normal)
-{
-Multishot
-}
-
-STRING 19617
-// Abilities: A0ZX (Multishot), EditorSuffix (Editor Suffix)
-{
-(defender Dalaran)
-}
-
-STRING 19618
+STRING 19598
 // Abilities: A0ZX (Multishot), Ubertip (Tooltip - Normal - Extended)
 {
 This tower fires up to 9 additional projectiles that deal 10 damage each to nearby enemies
 }
 
-STRING 19619
+STRING 19599
 // Abilities: A0ZX (Multishot), Name (Name)
 {
 Multishot
 }
 
-STRING 19620
+STRING 19600
 // Abilities: A0ZX (Multishot), Tip (Tooltip - Normal)
 {
 Multishot
@@ -121591,6 +121423,12 @@ STRING 20270
 Arcane Absorption - [|cffffcc00Level 4|r]
 }
 
+STRING 20271
+// Abilities: A0S8 (Multishot), EditorSuffix (Editor Suffix)
+{
+(defender green bird missile)
+}
+
 STRING 20272
 // Units: n0CZ (Dreadnaught), Tip (Tooltip - Basic)
 {
@@ -122336,13 +122174,13 @@ Summon Hakkar
 }
 
 STRING 20396
-// Upgrades: R07V (Control Magic), Hotkey (Hotkey)
+// Upgrades: R07O (Witch Doctor Adept Training,Witch Doctor Master Training), Hotkey (Hotkey)
 {
 Z
 }
 
 STRING 20397
-// Upgrades: R07C (Spirit Walker Adept Training,Spirit Walker Master Training), Hotkey (Hotkey)
+// Upgrades: R07V (Control Magic), Hotkey (Hotkey)
 {
 Z
 }
@@ -122354,7 +122192,7 @@ Z
 }
 
 STRING 20399
-// Upgrades: R08E (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R07C (Spirit Walker Adept Training,Spirit Walker Master Training), Hotkey (Hotkey)
 {
 Z
 }
@@ -122366,13 +122204,13 @@ X
 }
 
 STRING 20401
-// Upgrades: R08H (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R08E (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 Z
 }
 
 STRING 20402
-// Upgrades: R08P (Naga Siren Adept Training,Naga Siren Master Training), Hotkey (Hotkey)
+// Upgrades: R08H (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 Z
 }
@@ -122450,7 +122288,7 @@ C
 }
 
 STRING 20415
-// Upgrades: R08S (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R08P (Naga Siren Adept Training,Naga Siren Master Training), Hotkey (Hotkey)
 {
 Z
 }
@@ -122540,7 +122378,7 @@ Increases Alchemist mana capacity, mana regeneration rate, attack damage and giv
 }
 
 STRING 20430
-// Upgrades: R004 (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: R08S (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 Z
 }
@@ -124098,5 +123936,71 @@ STRING 20689
 // Upgrades: R086 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 E
+}
+
+STRING 20690
+// Abilities: A0ZK (Multishot), EditorSuffix (Editor Suffix)
+{
+(defender ancient protector rock)
+}
+
+STRING 20691
+// Abilities: A0ZL (Multishot), EditorSuffix (Editor Suffix)
+{
+(defender far seer missile)
+}
+
+STRING 20692
+// Abilities: A0ZM (Multishot), EditorSuffix (Editor Suffix)
+{
+(defender Fireball missile)
+}
+
+STRING 20693
+// Abilities: A0ZO (Multishot), EditorSuffix (Editor Suffix)
+{
+(defender spirit tower missile)
+}
+
+STRING 20694
+// Abilities: A0ZQ (Multishot), EditorSuffix (Editor Suffix)
+{
+(defender boat missile)
+}
+
+STRING 20695
+// Abilities: A0ZR (Multishot), EditorSuffix (Editor Suffix)
+{
+(defender barrage missile
+}
+
+STRING 20696
+// Abilities: A0ZS (Multishot), EditorSuffix (Editor Suffix)
+{
+(defender arrow missile)
+}
+
+STRING 20697
+// Abilities: A0ZT (Multishot), EditorSuffix (Editor Suffix)
+{
+(defender cannon tower missile)
+}
+
+STRING 20698
+// Abilities: A0ZV (Multishot), EditorSuffix (Editor Suffix)
+{
+(defender arcane tower missile)
+}
+
+STRING 20699
+// Abilities: A0ZX (Multishot), EditorSuffix (Editor Suffix)
+{
+(defender WitchDoctor missile)
+}
+
+STRING 20700
+// Upgrades: R004 (Magic Sentry), Hotkey (Hotkey)
+{
+Z
 }
 
