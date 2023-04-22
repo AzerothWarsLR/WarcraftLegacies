@@ -15,7 +15,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
       Nazjatar = new Faction(FactionNames.Nazjatar, PLAYER_COLOR_PURPLE, "|c00540081",
         "ReplaceableTextures\\CommandButtons\\BTNNagaSummoner.blp")
       {
-        ControlPointDefenderUnitTypeId = Constants.UNIT_N0B6_CONTROL_POINT_DEFENDER_FROSTWOLF,
+        ControlPointDefenderUnitTypeId = Constants.UNIT_U02T_CONTROL_POINT_DEFENDER_NAZJATAR,
       };
 
       Nazjatar.ModObjectLimit(Constants.UNIT_N0C2_PILLAR_OF_WAVES_NZOTH_T1, Faction.UNLIMITED);

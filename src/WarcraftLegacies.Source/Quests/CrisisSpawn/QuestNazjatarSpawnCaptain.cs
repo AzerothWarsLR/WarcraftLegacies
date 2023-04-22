@@ -20,7 +20,6 @@ namespace WarcraftLegacies.Source.Quests.CrisisSpawn
   public sealed class QuestNazjatarSpawnCaptain : QuestData
   {
     private readonly Rectangle _spawnLocation;
-    private readonly unit _picker;
     private readonly unit _secondpick;
     private readonly LegendaryHero _azshara;
     /// <summary>
