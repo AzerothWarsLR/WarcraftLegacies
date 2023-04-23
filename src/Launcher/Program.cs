@@ -200,8 +200,8 @@ namespace Launcher
         unit.CombatAttack1DamageNumberOfDice = 1;
         unit.CombatAttack1DamageSidesPerDie = 1;
         unit.CombatAttacksEnabled = AttackBits.Attack1Only;
-        unit.CombatAttack1Range = 600;
-        unit.CombatAcquisitionRange = 600;
+        unit.CombatAttack1Range = 900;
+        unit.CombatAcquisitionRange = 900;
         unit.CombatAttack1TargetsAllowed = new[] { Target.Bridge };
         unit.EditorDisplayAsNeutralHostile = true;
         unit.StatsLevel = 0;

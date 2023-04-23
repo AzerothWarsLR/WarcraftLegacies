@@ -62,10 +62,10 @@ namespace MacroTools.PassiveAbilities
     /// <inheritdoc />
     public void OnDealsDamage()
     {
-      if (!BlzGetEventIsAttack())
+      var caster = GetEventDamageSource();
+      if (!BlzGetEventIsAttack() || GetUnitAbilityLevel(caster, AbilityTypeId) == 0 )
         return;
 
-      var caster = GetEventDamageSource();
       if (GetRandomReal(0, 1) < ProcChance)
       {
         ChannelNoTarget(caster);
