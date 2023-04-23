@@ -59,6 +59,13 @@ namespace WarcraftLegacies.Source.Setup.Spells
         DamageMultStructure = 1
       });
 
+      PassiveAbilityManager.Register(new Execute(Constants.UNIT_N0B4_REAPER_YOGG)
+      {
+        DamageMultNonResistant = 4,
+        DamageMultResistant = 2,
+        DamageMultStructure = 1
+      });
+
       SpellSystem.Register(new Devour(Constants.ABILITY_A0TU_DEVOUR_BLACK_DRAKE)
       {
         PercentageOfMaxHealth = 0.5f
