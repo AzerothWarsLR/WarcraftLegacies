@@ -125,7 +125,7 @@ namespace WarcraftLegacies.Source.Setup
       Neutral = new LegendNeutral(preplacedUnitSystem);
       Cthun = new LegendCthun();
       Nazjatar = new LegendNazjatar();
-      BlackEmpire = new LegendBlackEmpire();
+      BlackEmpire = new LegendBlackEmpire(preplacedUnitSystem);
       Twilight = new LegendTwilight();
     }
 
