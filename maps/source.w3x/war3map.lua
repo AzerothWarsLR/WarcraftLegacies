@@ -2265,6 +2265,7 @@ local unitID
 local t
 local life
 
+u = BlzCreateUnitWithSkin(p, FourCC("O06M"), -16764.5, -27096.8, 264.257, FourCC("O06M"))
 u = BlzCreateUnitWithSkin(p, FourCC("opeo"), -9087.0, -11200.4, 267.384, FourCC("opeo"))
 u = BlzCreateUnitWithSkin(p, FourCC("opeo"), -8973.2, -11133.8, 273.156, FourCC("opeo"))
 u = BlzCreateUnitWithSkin(p, FourCC("opeo"), -9082.9, -11070.7, 267.812, FourCC("opeo"))
@@ -8130,7 +8131,7 @@ u = BlzCreateUnitWithSkin(p, FourCC("Nman"), -10348.4, -23402.1, 297.354, FourCC
 u = BlzCreateUnitWithSkin(p, FourCC("Osam"), -10650.2, -23509.4, 271.051, FourCC("Osam"))
 u = BlzCreateUnitWithSkin(p, FourCC("nvlw"), 11756.4, 8521.0, 329.551, FourCC("nvlw"))
 u = BlzCreateUnitWithSkin(p, FourCC("nvil"), 6948.8, 7227.2, 232.330, FourCC("nvil"))
-u = BlzCreateUnitWithSkin(p, FourCC("U02S"), -15111.7, -25095.7, 263.250, FourCC("U02S"))
+u = BlzCreateUnitWithSkin(p, FourCC("U02S"), -15397.5, -25036.0, 263.250, FourCC("U02S"))
 u = BlzCreateUnitWithSkin(p, FourCC("nvil"), 5961.5, 3868.5, 232.330, FourCC("nvil"))
 u = BlzCreateUnitWithSkin(p, FourCC("nvil"), 6256.1, 3442.7, 85.021, FourCC("nvil"))
 u = BlzCreateUnitWithSkin(p, FourCC("nvil"), 10436.0, 4025.8, 232.335, FourCC("nvil"))

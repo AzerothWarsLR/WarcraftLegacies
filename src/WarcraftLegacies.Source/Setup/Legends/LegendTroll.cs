@@ -33,7 +33,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
       Rastakhan = new LegendaryHero("Rastakhan")
       {
         UnitType = FourCC("O026"),
-        StartingXp = 6800
+        StartingXp = 2800
       };
     }
     public void RegisterLegends()

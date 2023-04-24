@@ -15,7 +15,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
       Cthun = new Faction(FactionNames.Cthun, PLAYER_COLOR_WHEAT, "|cffaaa050",
         "ReplaceableTextures\\CommandButtons\\BTNCthunIcon.blp")
       {
-        ControlPointDefenderUnitTypeId = Constants.UNIT_N0B6_CONTROL_POINT_DEFENDER_FROSTWOLF,
+        ControlPointDefenderUnitTypeId = Constants.UNIT_N0DW_CONTROL_POINT_DEFENDER_CTHUN_TOWER,
       };
 
       Cthun.ModObjectLimit(Constants.UNIT_U020_MONUMENT_C_THUN_BUILDING, Faction.UNLIMITED);
