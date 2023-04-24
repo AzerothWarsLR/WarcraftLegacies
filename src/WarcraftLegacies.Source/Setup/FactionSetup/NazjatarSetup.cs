@@ -48,17 +48,16 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
       Nazjatar.ModObjectLimit(Constants.UNIT_H01Q_IMMORTAL_GUARDIAN_NZOTH, 4);
       Nazjatar.ModObjectLimit(Constants.UNIT_N0CO_TRENCH_HYDRA_NZOTH, 2);
 
-      // All Nzoth Ships
-
-      Nazjatar.ModObjectLimit(FourCC("ushp"), Faction.UNLIMITED); //Undead Shipyard
-      Nazjatar.ModObjectLimit(FourCC("ubot"), Faction.UNLIMITED); //Undead Transport Ship
-      Nazjatar.ModObjectLimit(FourCC("h0AT"), Faction.UNLIMITED); //Scout
-      Nazjatar.ModObjectLimit(FourCC("h0AW"), Faction.UNLIMITED); //Frigate
-      Nazjatar.ModObjectLimit(FourCC("h0AM"), Faction.UNLIMITED); //Fireship
-      Nazjatar.ModObjectLimit(FourCC("h0AZ"), Faction.UNLIMITED); //Galley
-      Nazjatar.ModObjectLimit(FourCC("h0AQ"), Faction.UNLIMITED); //Boarding
-      Nazjatar.ModObjectLimit(FourCC("h0BB"), Faction.UNLIMITED); //Juggernaut
-      Nazjatar.ModObjectLimit(FourCC("h0B9"), 6); //Bombard
+      Nazjatar.ModObjectLimit(FourCC("e020"), Faction.UNLIMITED); //Shipyard
+      //Ships
+      Nazjatar.ModObjectLimit(FourCC("etrs"), Faction.UNLIMITED); //Night Elf Transport Ship
+      Nazjatar.ModObjectLimit(FourCC("h0AU"), Faction.UNLIMITED); // Scout
+      Nazjatar.ModObjectLimit(FourCC("h0AV"), Faction.UNLIMITED); // Frigate
+      Nazjatar.ModObjectLimit(FourCC("h0B1"), Faction.UNLIMITED); // Fireship
+      Nazjatar.ModObjectLimit(FourCC("h057"), Faction.UNLIMITED); // Galley
+      Nazjatar.ModObjectLimit(FourCC("h0B4"), Faction.UNLIMITED); // Boarding
+      Nazjatar.ModObjectLimit(FourCC("h0BA"), Faction.UNLIMITED); // Juggernaut
+      Nazjatar.ModObjectLimit(FourCC("h0B8"), 6); // Bombard
 
 
       // All Nzoth Heroes listed below - with total limits

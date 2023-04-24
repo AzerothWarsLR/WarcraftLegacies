@@ -117644,7 +117644,7 @@ Teleports the Hero and any of its nearby troops to a target friendly unit or str
 }
 
 STRING 19610
-// Upgrades: R00N (Storm Hammers), Hotkey (Hotkey)
+// Abilities: A11S (Napalm), Hotkey (Hotkey - Normal)
 {
 R
 }
@@ -118430,7 +118430,7 @@ Q
 }
 
 STRING 19751
-// Abilities: A11S (Napalm), Hotkey (Hotkey - Normal)
+// Abilities: A11W (Toxic Cloud), Hotkey (Hotkey - Normal)
 {
 R
 }
@@ -120356,7 +120356,7 @@ W
 }
 
 STRING 20072
-// Abilities: A11W (Toxic Cloud), Hotkey (Hotkey - Normal)
+// Abilities: A11W (Toxic Cloud), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -121490,19 +121490,19 @@ This unit is caught within a Black Hole; its movement speed has been reduced tem
 }
 
 STRING 20261
-// Abilities: A11W (Toxic Cloud), Researchhotkey (Hotkey - Learn)
-{
-R
-}
-
-STRING 20262
 // Abilities: A122 (Will of the Ashbringer), Researchhotkey (Hotkey - Learn)
 {
 R
 }
 
-STRING 20263
+STRING 20262
 // Abilities: A12C (Legendary Warrior), Researchhotkey (Hotkey - Learn)
+{
+R
+}
+
+STRING 20263
+// Upgrades: Rosp (Spiked Barricades,Improved Spiked Barricades,Advanced Spiked Barricades), Hotkey (Hotkey)
 {
 R
 }
@@ -122474,7 +122474,7 @@ Channel the Citadel Shield. The shield will deal 12 damage per second to enemies
 }
 
 STRING 20425
-// Upgrades: Rosp (Spiked Barricades,Improved Spiked Barricades,Advanced Spiked Barricades), Hotkey (Hotkey)
+// Upgrades: Ropg (Pillage), Hotkey (Hotkey)
 {
 R
 }
@@ -122612,7 +122612,7 @@ Toxic Cloud - [|cffffcc00Level 3|r]
 }
 
 STRING 20448
-// Upgrades: Ropg (Pillage), Hotkey (Hotkey)
+// Upgrades: Rews (Well Spring), Hotkey (Hotkey)
 {
 R
 }
@@ -124023,7 +124023,7 @@ This unit is under the effects of Legendary Warrior, and is invulnerable.
 }
 
 STRING 20685
-// Upgrades: Rews (Well Spring), Hotkey (Hotkey)
+// Upgrades: R00N (Storm Hammers), Hotkey (Hotkey)
 {
 R
 }

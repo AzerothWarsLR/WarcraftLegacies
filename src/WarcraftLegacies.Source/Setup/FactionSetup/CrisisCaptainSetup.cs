@@ -22,7 +22,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
                       
                       Different factions will unlock depending on the game state.
 
-                      After 30 seconds of your pick being available, you will be attributed the Nazjatar empire by default. 
+                      After 30 seconds of your pick being available, you will be attributed the Old God team by default.
   
                       Carefully select which faction to play depending on how the game is going, you have global vision to help you in your decision
 

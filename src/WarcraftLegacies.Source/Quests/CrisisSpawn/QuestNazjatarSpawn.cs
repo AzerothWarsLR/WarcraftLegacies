@@ -17,16 +17,16 @@ namespace WarcraftLegacies.Source.Quests.CrisisSpawn
   /// <summary>
   /// Research 'Northrend Expidition' to gain a base at the shores of Dragonblight.
   /// </summary>
-  public sealed class QuestNazjatarSpawnFootman : QuestData
+  public sealed class QuestNazjatarSpawn : QuestData
   {
     private readonly Rectangle _spawnLocation;
     private readonly unit _picker;
     private readonly unit _secondpick;
     private readonly LegendaryHero _azshara;
     /// <summary>
-    /// Initializes a new instance of the <see cref="QuestNazjatarSpawnFootman"/> class.
+    /// Initializes a new instance of the <see cref="QuestNazjatarSpawn"/> class.
     /// </summary>
-    public QuestNazjatarSpawnFootman(PreplacedUnitSystem preplacedUnitSystem, Rectangle spawnLocation, LegendaryHero azshara) : base("Pick Nazjatar", "The empire of Nazjatar will awaken.", "ReplaceableTextures\\CommandButtons\\BTNNagaSummoner.blp")
+    public QuestNazjatarSpawn(PreplacedUnitSystem preplacedUnitSystem, Rectangle spawnLocation, LegendaryHero azshara) : base("Pick Nazjatar", "The empire of Nazjatar will awaken.", "ReplaceableTextures\\CommandButtons\\BTNNagaSummoner.blp")
     {
       _spawnLocation = spawnLocation;
       _azshara = azshara;
