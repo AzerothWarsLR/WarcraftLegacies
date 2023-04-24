@@ -23,9 +23,9 @@ namespace WarcraftLegacies.Source.Quests.Naga
     }
 
     /// <inheritdoc/>
-    protected override string RewardFlavour => "The powerful Summoners are serving their Master once again. The ancient Highborn shipyards can now be constructed";
+    protected override string RewardFlavour => "The powerful Summoners are serving their Master once again.";
 
     /// <inheritdoc/>
-    protected override string RewardDescription => $"Summoners can be trained from the Archives and you can build shipyards";
+    protected override string RewardDescription => $"Summoners can be trained from the Archives.";
   }
 }
