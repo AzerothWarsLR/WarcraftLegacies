@@ -14,6 +14,16 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
 
       crisis.AddQuest(new QuestOldGodPick(preplacedUnitSystem));
       
+      crisis.AddQuest(new QuestElfDead());
+      crisis.AddQuest(new QuestHordeDead());
+      crisis.AddQuest(new QuestSADead());
+      crisis.AddQuest(new QuestIllidariDead());
+
+      crisis2.AddQuest(new QuestElfDead());
+      crisis2.AddQuest(new QuestHordeDead());
+      crisis2.AddQuest(new QuestSADead());
+      crisis2.AddQuest(new QuestIllidariDead());
+
       crisis.AddQuest(new QuestNazjatarSpawn(preplacedUnitSystem, Regions.NzothStartPosition, allLegendSetup.Nazjatar.Azshara));
       crisis.AddQuest(new QuestBlackEmpireSpawnCaptain(preplacedUnitSystem, Regions.MaelstromChannel, allLegendSetup.BlackEmpire.Nzoth));
       crisis.AddQuest(new QuestCthunSpawn(preplacedUnitSystem, Regions.CthunSpawn, allLegendSetup.Cthun.Cthun));

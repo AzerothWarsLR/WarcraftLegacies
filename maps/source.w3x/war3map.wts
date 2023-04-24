@@ -78171,6 +78171,12 @@ STRING 13023
 Close Gate
 }
 
+STRING 13024
+// Upgrades: R091 (Chaos), Name (Name)
+{
+Quest Completed: Horde or Night Elf Defeated
+}
+
 STRING 13025
 // Abilities: A0NZ (A Close), Tip (Tooltip - Normal)
 {
@@ -78667,6 +78673,12 @@ STRING 13107
 // Abilities: A122 (Will of the Ashbringer), Ubertip (Tooltip - Normal - Extended)
 {
 When this hero attacks, it has a 20% chance to revive 9 nearby ally units.
+}
+
+STRING 13108
+// Upgrades: R09B (Chaos), Name (Name)
+{
+Quest Completed: South Alliance or Illidari defeated
 }
 
 STRING 13109
