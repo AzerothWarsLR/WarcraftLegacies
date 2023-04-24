@@ -16,17 +16,16 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
         "ReplaceableTextures\\WorldEditUI\\Editor-Random-Unit.blp")
       {
         CinematicMusic = "SadMystery",
-        IntroText = @"You are playing as the second Crisis. 
-        
-        At turn 25, your captain will choose your crisis team. Then you will pick your crisis faction, and then your teamate will choose their crisis faction. 
+        IntroText = @"You are playing as the second Crisis|r. 
 
-        Different factions will unlock depending on the game state. 
+At turn 25, your captain will choose your crisis team. Then you will pick your crisis faction, and then your teamate will choose their crisis faction. 
+Different factions will unlock depending on the game state. 
 
-        After 30 seconds of your pick being available, you will be attributed the Black Empire by default. 
+After 30 seconds of your pick being available, you will be attributed the Black Empire by default. 
+Carefully select which faction to play depending on how the game is going, you have global vision to help you in your decision
 
-        Carefully select which faction to play depending on how the game is going, you have global vision to help you in your decision
-
-        You will spawn with a big army but no base, quickly start building infrastructure and securing the surrounding lands. Your shop sells Scrolls of Teleportation at a discount, use them to join your ally quickly"
+You will spawn with a big army but no base, quickly start building infrastructure and securing the surrounding lands. 
+Your shop sells Scrolls of Teleportation at a discount, use them to join your ally quickly"
       };
       FactionManager.Register(CrisisFootman);
 

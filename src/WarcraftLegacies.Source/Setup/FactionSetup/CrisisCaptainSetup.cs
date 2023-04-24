@@ -16,19 +16,16 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
         "ReplaceableTextures\\WorldEditUI\\Editor-Random-Unit.blp")
       {
         CinematicMusic = "SadMystery",
-        IntroText = @"You are playing as the Crisis captain.
-                      
-                      At turn 25, you will choose your crisis team. Then your teamate will pick their crisis faction, and then you will choose your crisis faction.
-                      
-                      Different factions will unlock depending on the game state.
+        IntroText = @"You are playing as the Crisis captain|r.
 
-                      After 30 seconds of your pick being available, you will be attributed the Old God team by default.
-  
-                      Carefully select which faction to play depending on how the game is going, you have global vision to help you in your decision
+At turn 25, you will choose your crisis team. Then your teamate will pick their crisis faction, and then you will choose your crisis faction.                    
+Different factions will unlock depending on the game state.
 
-                      You will spawn with a big army but no base, quickly start building infrastructure and securing the surrounding lands. 
-      
-                      Your shop sells Scrolls of Teleportation at a discount, use them to join your ally quickly"
+After 30 seconds of your pick being available, you will be attributed the Old God team by default.
+Carefully select which faction to play depending on how the game is going, you have global vision to help you in your decision
+
+You will spawn with a big army but no base, quickly start building infrastructure and securing the surrounding lands. 
+Your shop sells Scrolls of Teleportation at a discount, use them to join your ally quickly"
       };
       FactionManager.Register(CrisisCaptain);
 

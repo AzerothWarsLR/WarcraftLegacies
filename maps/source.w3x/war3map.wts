@@ -33064,22 +33064,10 @@ STRING 5511
 Creates images of Hero to fight enemies and dispels all magic from Hero.|n|n|cffffcc00Level 1|r - Creates 3 images which deal 50% the damage of Hero and take 200% the damage. |n|cffffcc00Level 2|r - Creates 5 images which deal 50% the damage of Hero and take 200% the damage. |n|cffffcc00Level 3|r - Creates 7 images which deal 50% the damage of Hero and take 200% the damage.
 }
 
-STRING 5512
-// Abilities: AOmi (Mirror Image), Ubertip (Tooltip - Normal - Extended)
-{
-Creates 3 images which deal 100% the damage of the Heror and take 200% the damage. Dispels all magic from the Hero. |nLasts 30 seconds.
-}
-
 STRING 5513
 // Abilities: AOmi (Mirror Image), Ubertip (Tooltip - Normal - Extended)
 {
 Creates 5 images which deal 100% the damage of the Hero and take 200% the damage. Dispels all magic from the Hero. |nLasts 30 seconds.
-}
-
-STRING 5514
-// Abilities: AOmi (Mirror Image), Ubertip (Tooltip - Normal - Extended)
-{
-Creates 7 images which deal 100% the damage of the Heror and take 200% the damage. Dispels all magic from the Hero. |nLasts 30 seconds.
 }
 
 STRING 5515
@@ -62787,12 +62775,6 @@ STRING 10461
 Surge of Power - [|cffffcc00Level 4|r]
 }
 
-STRING 10462
-// Units: U02A (N'raqi Aberration), Ubertip (Tooltip - Extended)
-{
-Cunning Hero, adept at illusion and deception.|n|cfff5962dAbilities:|r Permanent Invisibility |n|cfff5962dCan learn:|R Power Surge, Barbed Net, Simulacrum, Illusionary Lance |n|n|cffffcc00Attacks land and air units.|R
-}
-
 STRING 10463
 // Units: U02B (Yogg-Saron Champion), Ubertip (Tooltip - Extended)
 {
@@ -79219,6 +79201,12 @@ STRING 13198
 // Buffs/Effects: B07E (), Bufftip (Tooltip)
 {
 Holy Radiance
+}
+
+STRING 13199
+// Units: U02A (N'raqi Aberration), Ubertip (Tooltip - Extended)
+{
+Cunning Hero, adept at illusion and deception.|n|cfff5962dAbilities:|r Wind Walk |n|cfff5962dCan learn:|R Power Surge, Accelerated Vitality, Simulacrum, Mirror Image |n|n|cffffcc00Attacks land and air units.|R
 }
 
 STRING 13200
@@ -104462,12 +104450,6 @@ STRING 17414
 Learn Stoneform - [|cffffcc00Level %d|r]
 }
 
-STRING 17415
-// Abilities: A02G (Stoneform), Researchubertip (Tooltip - Learn - Extended)
-{
-The hero can transform into stone, greatly reducing physical damage taken. |n|n|cffffcc00Level 1|r - Blocks 14 damage to a minimum of 5 damage.|n|cffffcc00Level 2|r - Blocks 20 damage to a minimum of 7 damage.|n|cffffcc00Level 3|r - Blocks 26 damage to a minimum of 9 damage.|n|cffffcc00Level 4|r - Blocks 32 damage to a minimum of 11 damage.
-}
-
 STRING 17416
 // Abilities: A02G (Stoneform), Tip (Tooltip - Normal)
 {
@@ -107613,6 +107595,12 @@ STRING 17939
 // Upgrades: R078 (Spirit Walker Adept Training,Spirit Walker Master Training), Ubertip (Tooltip - Extended)
 {
 Increases Elementalist' mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Frost Armor.
+}
+
+STRING 17940
+// Units: U02S (Ancient Sand Worm), Ubertip (Tooltip - Extended)
+{
+Warrior Hero, excels at enduring. |n|cfff5962dCan learn:|R Impale, Devour, Toughness, Roar of Despair|n|n|cffffcc00Attacks land units.|R
 }
 
 STRING 17941
@@ -113150,7 +113138,7 @@ STRING 18862
 }
 
 STRING 18863
-// Upgrades: Rora (Steel Ranged Weapons,Thorium Ranged Weapons,Arcanite Ranged Weapons), Hotkey (Hotkey)
+// Abilities: A0S0 (Devour), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -114152,7 +114140,7 @@ An impenetrable shield surrounds the Paladin, protecting him from all damage and
 }
 
 STRING 19030
-// Upgrades: Rora (Steel Ranged Weapons,Thorium Ranged Weapons,Arcanite Ranged Weapons), Hotkey (Hotkey)
+// Abilities: A0S0 (Devour), Researchhotkey (Hotkey - Learn)
 {
 W
 }
@@ -115064,7 +115052,7 @@ Medium dragon of the Dragonmaw Clan.|n|r|n|cffffcc00Attacks land and air units.|
 }
 
 STRING 19182
-// Upgrades: Rhra (Black Gunpowder,Refined Gunpowder,Imbued Gunpowder), Hotkey (Hotkey)
+// Upgrades: Rora (Steel Ranged Weapons,Thorium Ranged Weapons,Arcanite Ranged Weapons), Hotkey (Hotkey)
 {
 W
 }
@@ -116745,7 +116733,7 @@ Thunder Fists - [|cffffcc00Level 3|r]
 }
 
 STRING 19462
-// Upgrades: Rhra (Black Gunpowder,Refined Gunpowder,Imbued Gunpowder), Hotkey (Hotkey)
+// Upgrades: Rora (Steel Ranged Weapons,Thorium Ranged Weapons,Arcanite Ranged Weapons), Hotkey (Hotkey)
 {
 W
 }
@@ -117689,12 +117677,6 @@ STRING 19619
 // Units: O06M (Ascendant Councillor of Flame), Name (Name)
 {
 Ascendant Councillor of Flame
-}
-
-STRING 19620
-// Units: O06M (Ascendant Councillor of Flame), Ubertip (Tooltip - Extended)
-{
-Fighter Hero, Adept at augmenting the offensive potential of your army. |n|cfff5962dCan learn:|R Blast of Fire, Ritual of Fire, Dilligence Aura, Burning Vengeance|n|r|n|cffffcc00Attacks land units.
 }
 
 STRING 19621
@@ -118814,7 +118796,7 @@ Thunder Fists - [|cffffcc00Level 4|r]
 }
 
 STRING 19807
-// Upgrades: Rhac (Improved Masonry,Advanced Masonry,Imbued Masonry), Hotkey (Hotkey)
+// Upgrades: Rhra (Black Gunpowder,Refined Gunpowder,Imbued Gunpowder), Hotkey (Hotkey)
 {
 W
 }
@@ -119798,7 +119780,7 @@ STRING 19970
 }
 
 STRING 19971
-// Upgrades: Rhac (Improved Masonry,Advanced Masonry,Imbued Masonry), Hotkey (Hotkey)
+// Upgrades: Rhra (Black Gunpowder,Refined Gunpowder,Imbued Gunpowder), Hotkey (Hotkey)
 {
 W
 }
@@ -121106,7 +121088,7 @@ Enchanted Bolt
 }
 
 STRING 20189
-// Upgrades: R01B (Defend), Hotkey (Hotkey)
+// Upgrades: Rhac (Improved Masonry,Advanced Masonry,Imbued Masonry), Hotkey (Hotkey)
 {
 W
 }
@@ -121712,7 +121694,7 @@ Innacurate bombardment of an area with 30 waves of one cannonball. Each ball dea
 }
 
 STRING 20290
-// Upgrades: R07I (Necromancer Adept Training,Necromancer Master Training), Hotkey (Hotkey)
+// Upgrades: Rhac (Improved Masonry,Advanced Masonry,Imbued Masonry), Hotkey (Hotkey)
 {
 W
 }
@@ -123062,7 +123044,7 @@ E
 }
 
 STRING 20515
-// Upgrades: R07I (Necromancer Adept Training,Necromancer Master Training), Hotkey (Hotkey)
+// Upgrades: R01B (Defend), Hotkey (Hotkey)
 {
 W
 }
@@ -123374,7 +123356,7 @@ Summoning site for minor demons.|r|n|cff99b4d1Can only build 2 before the Legion
 }
 
 STRING 20567
-// Upgrades: R07W (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R07I (Necromancer Adept Training,Necromancer Master Training), Hotkey (Hotkey)
 {
 W
 }
@@ -123401,12 +123383,6 @@ STRING 20571
 // Units: U02S (Ancient Sand Worm), Tip (Tooltip - Basic)
 {
 Summon Ouro
-}
-
-STRING 20572
-// Units: U02S (Ancient Sand Worm), Ubertip (Tooltip - Extended)
-{
-Warrior Hero, adept at enduring and strengthening nearby allies.|n|cfff5962dAbilities:|r Unholy Plating |n|cfff5962dCan learn:|R Dark Burst, General's Order, Dread Aura, Reincarnation|n|n|cffffcc00Attacks land units.|R
 }
 
 STRING 20573
@@ -124224,5 +124200,113 @@ STRING 20708
 // Abilities: A0N8 (Citadel Shield), Ubertip (Tooltip - Normal - Extended)
 {
 Channel the Citadel Shield for up to 180 seconds. It will deal 12 damage per second in a 1000 area of effect. It will also buff friendly buildings in the area giving them 10 additional armor. Has a 180 seconds cooldown and 1 seconds casting time.
+}
+
+STRING 20709
+// Units: O06M (Ascendant Councillor of Flame), Ubertip (Tooltip - Extended)
+{
+Fighter Hero, Adept frontline damage. |n|cfff5962dCan learn:|R Bladestorm, Stoneform, Endurance Aura, Flame Inferno|n|r|n|cffffcc00Attacks land units.
+}
+
+STRING 20710
+// Abilities: AOmi (Mirror Image), Ubertip (Tooltip - Normal - Extended)
+{
+Creates 3 images which deal 100% the damage of the Hero and take 200% the damage. Dispels all magic from the Hero. |nLasts 30 seconds.
+}
+
+STRING 20711
+// Abilities: AOmi (Mirror Image), Ubertip (Tooltip - Normal - Extended)
+{
+Creates 7 images which deal 100% the damage of the Hero and take 200% the damage. Dispels all magic from the Hero. |nLasts 30 seconds.
+}
+
+STRING 20712
+// Abilities: A02G (Stoneform), Researchubertip (Tooltip - Learn - Extended)
+{
+The hero transform into stone, greatly reducing physical damage taken. |n|n|cffffcc00Level 1|r - Blocks 14 damage to a minimum of 5 damage.|n|cffffcc00Level 2|r - Blocks 20 damage to a minimum of 7 damage.|n|cffffcc00Level 3|r - Blocks 26 damage to a minimum of 9 damage.|n|cffffcc00Level 4|r - Blocks 32 damage to a minimum of 11 damage.
+}
+
+STRING 20713
+// Abilities: A0S0 (Devour), EditorSuffix (Editor Suffix)
+{
+(ouro)
+}
+
+STRING 20714
+// Abilities: A0S0 (Devour), Tip (Tooltip - Normal)
+{
+Devour - [|cffffcc00Level 1|r]
+}
+
+STRING 20715
+// Abilities: A0S0 (Devour), Ubertip (Tooltip - Normal - Extended)
+{
+Consumes an enemy unit, dealing 200 damage if it's a hero and killing it instantly otherwise. Heals the caster caster for 50% of its hit points.
+}
+
+STRING 20716
+// Abilities: A0S0 (Devour), Name (Name)
+{
+Devour
+}
+
+STRING 20717
+// Abilities: A0S0 (Devour), Researchubertip (Tooltip - Learn - Extended)
+{
+Consumes an enemy unit, dealing damage if it's a hero and killing it instantly otherwise. Heals the caster caster for 50% of its hit points. |n|n|cffffcc00Level 1|r - 200 damage, 60 second cooldown. |n|cffffcc00Level 2|r - 300 damage, 45 second cooldown. |n|cffffcc00Level 3|r - 400 damage, 30 second cooldown. |n|cffffcc00Level 4|r - 500 damage, 15 second cooldown.
+}
+
+STRING 20718
+// Abilities: A0S0 (Devour), Researchtip (Tooltip - Learn)
+{
+Learn Devour - [|cffffcc00Level %d|r]
+}
+
+STRING 20719
+// Abilities: A0S0 (Devour), Tip (Tooltip - Normal)
+{
+Devour - [|cffffcc00Level 2|r]
+}
+
+STRING 20720
+// Abilities: A0S0 (Devour), Tip (Tooltip - Normal)
+{
+Devour - [|cffffcc00Level 3|r]
+}
+
+STRING 20721
+// Abilities: A0S0 (Devour), Tip (Tooltip - Normal)
+{
+Devour - [|cffffcc00Level 4|r]
+}
+
+STRING 20722
+// Abilities: A0S0 (Devour), Ubertip (Tooltip - Normal - Extended)
+{
+Consumes an enemy unit, dealing 300 damage if it's a hero and killing it instantly otherwise. Heals the caster caster for 50% of its hit points.
+}
+
+STRING 20723
+// Abilities: A0S0 (Devour), Ubertip (Tooltip - Normal - Extended)
+{
+Consumes an enemy unit, dealing 400 damage if it's a hero and killing it instantly otherwise. Heals the caster caster for 50% of its hit points.
+}
+
+STRING 20724
+// Abilities: A0S0 (Devour), Ubertip (Tooltip - Normal - Extended)
+{
+Consumes an enemy unit, dealing 500 damage if it's a hero and killing it instantly otherwise. Heals the caster caster for 50% of its hit points.
+}
+
+STRING 20725
+// Upgrades: R07I (Necromancer Adept Training,Necromancer Master Training), Hotkey (Hotkey)
+{
+W
+}
+
+STRING 20726
+// Upgrades: R07W (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+{
+W
 }
 
