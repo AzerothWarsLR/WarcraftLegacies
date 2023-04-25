@@ -158,7 +158,7 @@ namespace MacroTools.ControlPointSystem
     private static void RegisterIncome(ControlPoint controlPoint)
     {
       var controlPointOwner = PlayerData.ByHandle(controlPoint.Owner);
-      controlPointOwner.ControlPoints.Add(controlPoint);
+      controlPointOwner.AddControlPoint(controlPoint);
       controlPointOwner.BaseIncome = controlPoint.Owner.GetBaseIncome() + controlPoint.Value;
     }
 
@@ -194,11 +194,11 @@ namespace MacroTools.ControlPointSystem
           try
           {
             var previousOwner = PlayerData.ByHandle(GetChangingUnitPrevOwner());
-            previousOwner.ControlPoints.Remove(controlPoint);
+            previousOwner.RemoveControlPoint(controlPoint);
             previousOwner.BaseIncome -= controlPoint.Value;
 
             var newOwner = PlayerData.ByHandle(GetTriggerUnit().OwningPlayer());
-            newOwner.ControlPoints.Add(controlPoint);
+            newOwner.AddControlPoint(controlPoint);
             newOwner.BaseIncome += controlPoint.Value;
             controlPoint.Unit
               .AddAbility(RegenerationAbility)
