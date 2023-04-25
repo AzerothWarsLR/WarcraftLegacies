@@ -15,7 +15,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
       Nazjatar = new Faction(FactionNames.Nazjatar, PLAYER_COLOR_PURPLE, "|c00540081",
         "ReplaceableTextures\\CommandButtons\\BTNNagaSummoner.blp")
       {
-        ControlPointDefenderUnitTypeId = Constants.UNIT_N0B6_CONTROL_POINT_DEFENDER_FROSTWOLF,
+        ControlPointDefenderUnitTypeId = Constants.UNIT_U02T_CONTROL_POINT_DEFENDER_NAZJATAR,
       };
 
       Nazjatar.ModObjectLimit(Constants.UNIT_N0C2_PILLAR_OF_WAVES_NZOTH_T1, Faction.UNLIMITED);
@@ -32,7 +32,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
       Nazjatar.ModObjectLimit(Constants.UNIT_N08L_TEMPLE_PROTECTOR_TOLVIR_TOWER, Faction.UNLIMITED);
       Nazjatar.ModObjectLimit(Constants.UNIT_N08N_IMPROVED_TEMPLE_PROTECTOR_TOLVIR_TOWER, Faction.UNLIMITED);
 
-      /// All Nzoth Units listed below - with total limits 
+      // All Nzoth Units listed below - with total limits 
 
       Nazjatar.ModObjectLimit(Constants.UNIT_N0D7_DEEP_FORAGER_N_ZOTH_WORKER, Faction.UNLIMITED);
       Nazjatar.ModObjectLimit(Constants.UNIT_N0DT_TIDEMISTRESS_NZOTH, 6);
@@ -48,25 +48,24 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
       Nazjatar.ModObjectLimit(Constants.UNIT_H01Q_IMMORTAL_GUARDIAN_NZOTH, 4);
       Nazjatar.ModObjectLimit(Constants.UNIT_N0CO_TRENCH_HYDRA_NZOTH, 2);
 
-      /// All Nzoth Ships
+      Nazjatar.ModObjectLimit(FourCC("e020"), Faction.UNLIMITED); //Shipyard
+      //Ships
+      Nazjatar.ModObjectLimit(FourCC("etrs"), Faction.UNLIMITED); //Night Elf Transport Ship
+      Nazjatar.ModObjectLimit(FourCC("h0AU"), Faction.UNLIMITED); // Scout
+      Nazjatar.ModObjectLimit(FourCC("h0AV"), Faction.UNLIMITED); // Frigate
+      Nazjatar.ModObjectLimit(FourCC("h0B1"), Faction.UNLIMITED); // Fireship
+      Nazjatar.ModObjectLimit(FourCC("h057"), Faction.UNLIMITED); // Galley
+      Nazjatar.ModObjectLimit(FourCC("h0B4"), Faction.UNLIMITED); // Boarding
+      Nazjatar.ModObjectLimit(FourCC("h0BA"), Faction.UNLIMITED); // Juggernaut
+      Nazjatar.ModObjectLimit(FourCC("h0B8"), 6); // Bombard
 
-      Nazjatar.ModObjectLimit(FourCC("ushp"), Faction.UNLIMITED); //Undead Shipyard
-      Nazjatar.ModObjectLimit(FourCC("ubot"), Faction.UNLIMITED); //Undead Transport Ship
-      Nazjatar.ModObjectLimit(FourCC("h0AT"), Faction.UNLIMITED); //Scout
-      Nazjatar.ModObjectLimit(FourCC("h0AW"), Faction.UNLIMITED); //Frigate
-      Nazjatar.ModObjectLimit(FourCC("h0AM"), Faction.UNLIMITED); //Fireship
-      Nazjatar.ModObjectLimit(FourCC("h0AZ"), Faction.UNLIMITED); //Galley
-      Nazjatar.ModObjectLimit(FourCC("h0AQ"), Faction.UNLIMITED); //Boarding
-      Nazjatar.ModObjectLimit(FourCC("h0BB"), Faction.UNLIMITED); //Juggernaut
-      Nazjatar.ModObjectLimit(FourCC("h0B9"), 6); //Bombard
 
-
-      /// All Nzoth Heroes listed below - with total limits
+      // All Nzoth Heroes listed below - with total limits
 
       Nazjatar.ModObjectLimit(Constants.UNIT_U00P_C_THRAX_ABERRATION, 1);
       Nazjatar.ModObjectLimit(Constants.UNIT_H08U_EMPRESS_OF_NAZJATAR_NZOTH, 1);
       Nazjatar.ModObjectLimit(Constants.UNIT_H0A5_SEA_WITCH_NZOTH, 1);
-      //Nazjatar.ModObjectLimit(Constants.UNIT_N0CO_TRENCH_HYDRA_NZOTH, 1);
+      Nazjatar.ModObjectLimit(Constants.UNIT_U02U_ABYSSAL_COMMANDER_NAZJATAR, 1);
 
       Nazjatar.ModObjectLimit(FourCC("R00K"), Faction.UNLIMITED); //Power Infusion
 

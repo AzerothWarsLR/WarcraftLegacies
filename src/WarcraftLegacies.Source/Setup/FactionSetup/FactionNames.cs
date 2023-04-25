@@ -28,10 +28,11 @@
     public static string Stormwind => "Stormwind";
     public static string Warsong => "Warsong";
     public static string Zandalar => "Zandalar";
-    public static string Crisis => "Crisis 1";
-    public static string Crisis2 => "Crisis 2";
+    public static string Crisis => "CrisisCaptain";
+    public static string Crisis2 => "Crisis";
     public static string Cthun => "Ahn'Qiraj";
     public static string Nazjatar => "Nazjatar";
     public static string BlackEmpire => "BlackEmpire";
+    public static string TwilightHammer => "TwilightHammer";
   }
 }

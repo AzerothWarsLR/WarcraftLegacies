@@ -17,6 +17,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
         UndefeatedResearch = FourCC("R04T"),
         StartingGold = 200,
         StartingLumber = 700,
+        FoodMaximum = 250,
         CinematicMusic = "DarkAgents",
         ControlPointDefenderUnitTypeId = Constants.UNIT_U01U_CONTROL_POINT_DEFENDER_LEGION,
         IntroText = @"You are playing as the mighty |cffa2722dBurning Legion|r.

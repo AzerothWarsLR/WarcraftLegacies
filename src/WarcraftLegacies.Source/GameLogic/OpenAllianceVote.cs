@@ -43,12 +43,16 @@ namespace WarcraftLegacies.Source.GameLogic
 
       if (_voteCount > 0)
       {
-        DisplayTextToPlayer(GetLocalPlayer(), 0, 0, "Alliances are open!");
+        DisplayTextToPlayer(GetLocalPlayer(), 0, 0, "Alliances are open! Boats are now available from the start");
         Hint.Register(
           new Hint("You can change alliances by using the commands -invite, -uninvite, -join, and -unally."));
         AreAlliancesOpen = true;
+        foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
+        {
+          SetPlayerTechResearched(player, Constants.UPGRADE_R068_QUEST_COMPLETED_NAVIGATION, 1);
+        }
         //foreach (var player in WCSharp.Shared.Util.EnumeratePlayers()) ;
-          // set quest Navigation progress to complete
+        // set quest Navigation progress to complete
       }
       else
       {

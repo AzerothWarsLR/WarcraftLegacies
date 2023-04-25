@@ -15,40 +15,42 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
       BlackEmpire = new Faction(FactionNames.BlackEmpire, PLAYER_COLOR_TURQUOISE, "|C0000FFFF",
         "ReplaceableTextures\\CommandButtons\\BTNNzothIcon.blp")
       {
-        ControlPointDefenderUnitTypeId = Constants.UNIT_N0B6_CONTROL_POINT_DEFENDER_FROSTWOLF,
+        ControlPointDefenderUnitTypeId = Constants.UNIT_N0DV_CONTROL_POINT_DEFENDER_BLACK_EMPIRE_TOWER,
       };
 
-      BlackEmpire.ModObjectLimit(Constants.UNIT_N0C2_PILLAR_OF_WAVES_NZOTH_T1, Faction.UNLIMITED);
-      BlackEmpire.ModObjectLimit(Constants.UNIT_N0C8_MONUMENT_OF_THE_DEEP_NZOTH_T2, Faction.UNLIMITED);
-      BlackEmpire.ModObjectLimit(Constants.UNIT_N0C9_TEMPLE_OF_TIDES_NZOTH_T3, Faction.UNLIMITED);
-      BlackEmpire.ModObjectLimit(Constants.UNIT_N0C1_CORAL_BED_NZOTH_FARM, Faction.UNLIMITED);
-      BlackEmpire.ModObjectLimit(Constants.UNIT_H0A4_CORAL_FORGE_NZOTH_RESEARCH, Faction.UNLIMITED);
-      BlackEmpire.ModObjectLimit(Constants.UNIT_N0C4_SPAWNING_GROUNDS_NZOTH_BARRACKS, Faction.UNLIMITED);
-      BlackEmpire.ModObjectLimit(Constants.UNIT_N0C7_ROYAL_TEMPLE_NZOTH_MAGIC, Faction.UNLIMITED);
-      BlackEmpire.ModObjectLimit(Constants.UNIT_N0C3_SHRINE_OF_AZSHARA_NZOTH_SPECIALIST, Faction.UNLIMITED);
-      BlackEmpire.ModObjectLimit(Constants.UNIT_N08V_PORTAL_OF_THE_DEEP_NZOTH_SPECIALIST, Faction.UNLIMITED);
-      BlackEmpire.ModObjectLimit(Constants.UNIT_N0BZ_DEEP_VAULT_NZOTH_SHOP, Faction.UNLIMITED);
-      BlackEmpire.ModObjectLimit(Constants.UNIT_N0C0_ALTAR_OF_THE_QUEEN_NZOTH_ALTAR, Faction.UNLIMITED);
-      BlackEmpire.ModObjectLimit(Constants.UNIT_N08L_TEMPLE_PROTECTOR_TOLVIR_TOWER, Faction.UNLIMITED);
-      BlackEmpire.ModObjectLimit(Constants.UNIT_N08N_IMPROVED_TEMPLE_PROTECTOR_TOLVIR_TOWER, Faction.UNLIMITED);
+      BlackEmpire.ModObjectLimit(Constants.UNIT_N0AR_TWISTING_HALLS_YOGG_T1, Faction.UNLIMITED);
+      BlackEmpire.ModObjectLimit(Constants.UNIT_N0AS_WHISPERING_LABYRINTH_YOGG_T2, Faction.UNLIMITED);
+      BlackEmpire.ModObjectLimit(Constants.UNIT_N0AT_CATHEDRAL_OF_MADNESS_YOGG_T3, Faction.UNLIMITED);
+      BlackEmpire.ModObjectLimit(Constants.UNIT_N0AU_PULSATING_PORTAL_YOGG_FARM, Faction.UNLIMITED);
+      BlackEmpire.ModObjectLimit(Constants.UNIT_H06U_SIPHONING_CRYSTAL_YOGG_RESEARCH, Faction.UNLIMITED);
+      BlackEmpire.ModObjectLimit(Constants.UNIT_N0AW_INCUBATION_POOL_YOGG_BARRACKS, Faction.UNLIMITED);
+      BlackEmpire.ModObjectLimit(Constants.UNIT_N0B3_SHADOW_LAIR_YOGG_MAGIC, Faction.UNLIMITED);
+      BlackEmpire.ModObjectLimit(Constants.UNIT_N0AX_PIT_OF_TORMENT_YOGG_SPECIALIST, Faction.UNLIMITED);
+      BlackEmpire.ModObjectLimit(Constants.UNIT_N0B2_OMINOUS_VAULT_YOGG_SHOP, Faction.UNLIMITED);
+      BlackEmpire.ModObjectLimit(Constants.UNIT_N0AV_ALTAR_OF_MADNESS_YOGG_ALTAR, Faction.UNLIMITED);
+      BlackEmpire.ModObjectLimit(Constants.UNIT_H09E_MADNESS_POOL_YOGG_TOWER, Faction.UNLIMITED);
+      BlackEmpire.ModObjectLimit(Constants.UNIT_N0AY_ACID_SPITTER_YOGG_TOWER, Faction.UNLIMITED);
+      BlackEmpire.ModObjectLimit(Constants.UNIT_N0B0_IMPROVED_ACID_SPITTER_YOGG_TOWER, Faction.UNLIMITED);
+      BlackEmpire.ModObjectLimit(Constants.UNIT_N0AZ_SLEEPLESS_WATCHER_YOGG_TOWER, Faction.UNLIMITED);
+      BlackEmpire.ModObjectLimit(Constants.UNIT_N0B1_IMPROVED_SLEEPLESS_WATCHER_YOGG_TOWER, Faction.UNLIMITED);
 
-      /// All Nzoth Units listed below - with total limits 
+      // All Nzoth Units listed below - with total limits 
 
-      BlackEmpire.ModObjectLimit(Constants.UNIT_N0D7_DEEP_FORAGER_N_ZOTH_WORKER, Faction.UNLIMITED);
-      BlackEmpire.ModObjectLimit(Constants.UNIT_N0DT_TIDEMISTRESS_NZOTH, 6);
+      BlackEmpire.ModObjectLimit(Constants.UNIT_N0B5_SCAVENGER_YOGG_WORKER, Faction.UNLIMITED);
+      BlackEmpire.ModObjectLimit(Constants.UNIT_N0B4_REAPER_YOGG, 6);
 
-      BlackEmpire.ModObjectLimit(Constants.UNIT_N0CA_NAGA_INCURSOR_NZOTH, Faction.UNLIMITED);
-      BlackEmpire.ModObjectLimit(Constants.UNIT_N0CE_HATCHLING_NZOTH, Faction.UNLIMITED);
-      BlackEmpire.ModObjectLimit(Constants.UNIT_N0CL_GARGANTUAN_SEA_TURTLE_NZOTH, 8);
+      BlackEmpire.ModObjectLimit(Constants.UNIT_O01G_FACELESS_MARAUDER_YOGG, Faction.UNLIMITED);
+      BlackEmpire.ModObjectLimit(Constants.UNIT_O04V_SOUL_HUNTER_YOGG, Faction.UNLIMITED);
+      BlackEmpire.ModObjectLimit(Constants.UNIT_U029_STYGIAN_HULK_YOGG, 12);
 
-      BlackEmpire.ModObjectLimit(Constants.UNIT_N0CB_DEEPSEER_NZOTH, Faction.UNLIMITED);
-      BlackEmpire.ModObjectLimit(Constants.UNIT_N0CD_BLOODKIN_NZOTH, Faction.UNLIMITED);
-      BlackEmpire.ModObjectLimit(Constants.UNIT_O060_RIPTIDE_DRAKE_NZOTH, 6);
-      BlackEmpire.ModObjectLimit(Constants.UNIT_U02J_TIDAL_TERROR_NZOTH, 4);
-      BlackEmpire.ModObjectLimit(Constants.UNIT_H01Q_IMMORTAL_GUARDIAN_NZOTH, 4);
-      BlackEmpire.ModObjectLimit(Constants.UNIT_N0CO_TRENCH_HYDRA_NZOTH, 2);
+      BlackEmpire.ModObjectLimit(Constants.UNIT_N077_SORCERER_YOGG, Faction.UNLIMITED);
+      BlackEmpire.ModObjectLimit(Constants.UNIT_O04Y_FATEWEAVER_YOGG, Faction.UNLIMITED);
+      BlackEmpire.ModObjectLimit(Constants.UNIT_U02F_FORGOTTEN_ONE_YOGG, 2);
+      BlackEmpire.ModObjectLimit(Constants.UNIT_O04Z_FLYING_HORROR_YOGG, 12);
+      BlackEmpire.ModObjectLimit(Constants.UNIT_N0AH_DEFORMED_CHIMERA_YOGG, 4);
+      BlackEmpire.ModObjectLimit(Constants.UNIT_H09F_GLADIATOR_YOGG, Faction.UNLIMITED  );
 
-      /// All Nzoth Ships
+     // All Nzoth Ships
 
       BlackEmpire.ModObjectLimit(FourCC("ushp"), Faction.UNLIMITED); //Undead Shipyard
       BlackEmpire.ModObjectLimit(FourCC("ubot"), Faction.UNLIMITED); //Undead Transport Ship
@@ -61,12 +63,11 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
       BlackEmpire.ModObjectLimit(FourCC("h0B9"), 6); //Bombard
 
 
-      /// All Nzoth Heroes listed below - with total limits
+      // All Nzoth Heroes listed below - with total limits
 
-      BlackEmpire.ModObjectLimit(Constants.UNIT_U00P_C_THRAX_ABERRATION, 1);
-      BlackEmpire.ModObjectLimit(Constants.UNIT_H08U_EMPRESS_OF_NAZJATAR_NZOTH, 1);
-      BlackEmpire.ModObjectLimit(Constants.UNIT_H0A5_SEA_WITCH_NZOTH, 1);
-      //Nazjatar.ModObjectLimit(Constants.UNIT_N0CO_TRENCH_HYDRA_NZOTH, 1);
+      BlackEmpire.ModObjectLimit(Constants.UNIT_U02A_N_RAQI_ABERRATION_YOGG, 1);
+      BlackEmpire.ModObjectLimit(Constants.UNIT_U02B_YOGG_SARON_CHAMPION, 1);
+      BlackEmpire.ModObjectLimit(Constants.UNIT_E01D_N_RAQI_ARCANIST_YOGG, 1);
 
       BlackEmpire.ModObjectLimit(FourCC("R00K"), Faction.UNLIMITED); //Power Infusion
 

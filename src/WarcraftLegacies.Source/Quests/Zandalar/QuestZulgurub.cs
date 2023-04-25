@@ -1,6 +1,7 @@
 ﻿using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
+using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.QuestSystem;
 using WarcraftLegacies.Source.Setup;
 using WarcraftLegacies.Source.Setup.Legends;
@@ -25,6 +26,7 @@ namespace WarcraftLegacies.Source.Quests.Zandalar
       "ReplaceableTextures\\CommandButtons\\BTNTrollRavager.blp")
     {
       AddObjective(new ObjectiveControlCapital(allLegendSetup.Neutral.Zulgurub, false));
+      AddObjective(new ObjectiveTime(900));
     }
 
     /// <inheritdoc/>

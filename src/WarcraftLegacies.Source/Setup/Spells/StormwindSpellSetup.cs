@@ -33,6 +33,17 @@ namespace WarcraftLegacies.Source.Setup.Spells
         },
         Effect = "Abilities\\Spells\\Undead\\ReplenishMana\\SpiritTouchTarget.mdl"
       });
+
+      var legendaryWarrior = new ChannelSpellOnAttack(Constants.UNIT_H00R_KING_OF_STORMWIND_DARK_GREEN,
+        Constants.ABILITY_A12C_LEGENDARY_WARRIOR_VARIAN)
+      {
+        DummyAbilityId = Constants.ABILITY_A12D_LEGENDARY_WARRIOR_STORMWIND_DUMMY,
+        DummyOrderString = "voodoo",
+        ProcChance = 0.15f,
+        DurationBase = (int)0.5,
+        DurationLevel = (int)0.5
+      };
+      PassiveAbilityManager.Register(legendaryWarrior);
     }
   }
 }

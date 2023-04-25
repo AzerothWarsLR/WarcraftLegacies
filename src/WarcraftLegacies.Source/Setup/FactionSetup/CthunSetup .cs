@@ -15,58 +15,53 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
       Cthun = new Faction(FactionNames.Cthun, PLAYER_COLOR_WHEAT, "|cffaaa050",
         "ReplaceableTextures\\CommandButtons\\BTNCthunIcon.blp")
       {
-        ControlPointDefenderUnitTypeId = Constants.UNIT_N0B6_CONTROL_POINT_DEFENDER_FROSTWOLF,
-        IntroText = @"You are playing as the honorable |cffff0000Frostwolf Clan|r.
-
-You begin in the Salt Flats, separated from your ally, the Warsong Clan in the North.
-
-Salvage the wrecked ships, establish a base and gather your troops to move inland and assist your ally against the Night Elf threat."
-
+        ControlPointDefenderUnitTypeId = Constants.UNIT_N0DW_CONTROL_POINT_DEFENDER_CTHUN_TOWER,
       };
 
-      Cthun.ModObjectLimit(Constants.UNIT_OGRE_GREAT_HALL_FROSTWOLF_T1, Faction.UNLIMITED);
-      Cthun.ModObjectLimit(Constants.UNIT_OSTR_STRONGHOLD_FROSTWOLF_T2, Faction.UNLIMITED);
-      Cthun.ModObjectLimit(Constants.UNIT_OFRT_FORTRESS_FROSTWOLF_T3, Faction.UNLIMITED);
-      Cthun.ModObjectLimit(Constants.UNIT_OALT_ALTAR_OF_STORMS_FROSTWOLF_ALTAR, Faction.UNLIMITED);
-      Cthun.ModObjectLimit(Constants.UNIT_OBAR_WAR_CAMP_FROSTWOLF_BARRACKS, Faction.UNLIMITED);
-      Cthun.ModObjectLimit(Constants.UNIT_OFOR_WAR_MILL_FROSTWOLF_RESEARCH, Faction.UNLIMITED);
-      Cthun.ModObjectLimit(Constants.UNIT_OTTO_TAUREN_TOTEM_FROSTWOLF_SPECIALIST, Faction.UNLIMITED);
-      Cthun.ModObjectLimit(Constants.UNIT_OSLD_SPIRIT_LODGE_FROSTWOLF_MAGIC, Faction.UNLIMITED);
-      Cthun.ModObjectLimit(Constants.UNIT_OTRB_BURROW_FROSTWOLF_FARM, Faction.UNLIMITED);
-      Cthun.ModObjectLimit(Constants.UNIT_OWTW_WATCH_TOWER_FROSTWOLF_TOWER, Faction.UNLIMITED);
-      Cthun.ModObjectLimit(Constants.UNIT_O002_IMPROVED_WATCH_TOWER_FROSTWOLF_TOWER_2, Faction.UNLIMITED);
-      Cthun.ModObjectLimit(Constants.UNIT_OVLN_VOODOO_LOUNGE_FROSTWOLF_SHOP, Faction.UNLIMITED);
-      Cthun.ModObjectLimit(Constants.UNIT_OSHY_HORDE_PIER_FROSTWOLF_SHIPYARD, Faction.UNLIMITED);
-      Cthun.ModObjectLimit(Constants.UNIT_OOSC_PACK_KODO_FROSTWOLF, Faction.UNLIMITED);
+      Cthun.ModObjectLimit(Constants.UNIT_U020_MONUMENT_C_THUN_BUILDING, Faction.UNLIMITED);
+      Cthun.ModObjectLimit(Constants.UNIT_U021_RUINED_TEMPLE_C_THUN_BUILDING, Faction.UNLIMITED);
+      Cthun.ModObjectLimit(Constants.UNIT_U022_NEXUS_C_THUN_BUILDING, Faction.UNLIMITED);
+      Cthun.ModObjectLimit(Constants.UNIT_N071_PILLAR_OF_C_THUN_C_THUN_PILLARS, Faction.UNLIMITED);
+      Cthun.ModObjectLimit(Constants.UNIT_U01G_SPIRIT_HALL_C_THUN_BUILDING, Faction.UNLIMITED);
+      Cthun.ModObjectLimit(Constants.UNIT_O00R_HATCHERY_C_THUN_BUILDING, Faction.UNLIMITED);
+      Cthun.ModObjectLimit(Constants.UNIT_O00D_PYRAMID_C_THUN_BUILDING, Faction.UNLIMITED);
+      Cthun.ModObjectLimit(Constants.UNIT_U01H_ANCIENT_CATACOMBS_C_THUN_BUILDING, Faction.UNLIMITED);
+      Cthun.ModObjectLimit(Constants.UNIT_U01I_CHAMBER_OF_WONDERS_C_THUN_BUILDING_ITEM, Faction.UNLIMITED);
+      Cthun.ModObjectLimit(Constants.UNIT_U01F_ALTAR_OF_THE_OLD_ONES_C_THUN_BUILDING, Faction.UNLIMITED);
 
-      Cthun.ModObjectLimit(FourCC("opeo"), Faction.UNLIMITED); //Peon
-      Cthun.ModObjectLimit(FourCC("ogru"), Faction.UNLIMITED); //Grunt
-      Cthun.ModObjectLimit(FourCC("otau"), Faction.UNLIMITED); //Tauren
-      Cthun.ModObjectLimit(FourCC("ohun"), Faction.UNLIMITED); //Troll Headhunter
-      Cthun.ModObjectLimit(FourCC("ocat"), 6); //Catapult
-      Cthun.ModObjectLimit(FourCC("otbr"), 12); //Troll Batrider
-      Cthun.ModObjectLimit(FourCC("odoc"), Faction.UNLIMITED); //Troll Witch Doctor
-      Cthun.ModObjectLimit(FourCC("oshm"), Faction.UNLIMITED); //Shaman
-      Cthun.ModObjectLimit(FourCC("ospw"), Faction.UNLIMITED); //Spirit Walker
-      Cthun.ModObjectLimit(FourCC("o00A"), 6); //Far Seer
-      Cthun.ModObjectLimit(FourCC("obot"), Faction.UNLIMITED); //Transport Ship
 
-      //Ship
-      Cthun.ModObjectLimit(FourCC("obot"), Faction.UNLIMITED); //Transport Ship
-      Cthun.ModObjectLimit(FourCC("h0AS"), Faction.UNLIMITED); //Scout
-      Cthun.ModObjectLimit(FourCC("h0AP"), Faction.UNLIMITED); //Frigate
-      Cthun.ModObjectLimit(FourCC("h0B2"), Faction.UNLIMITED); //Fireship
-      Cthun.ModObjectLimit(FourCC("h0AY"), Faction.UNLIMITED); //Galley
-      Cthun.ModObjectLimit(FourCC("h0B5"), Faction.UNLIMITED); //Boarding
-      Cthun.ModObjectLimit(FourCC("h0BC"), Faction.UNLIMITED); //Juggernaut
-      Cthun.ModObjectLimit(FourCC("h0AO"), 6); //Bombard
+      Cthun.ModObjectLimit(Constants.UNIT_U019_DRONE_C_THUN_WORKER, Faction.UNLIMITED);
+      Cthun.ModObjectLimit(Constants.UNIT_O000_SILITHID_COLOSSUS_C_THUN_ELITES, 6);
 
-      Cthun.ModObjectLimit(FourCC("Othr"), 1); //Thrall
-      Cthun.ModObjectLimit(FourCC("Ocbh"), 1); //Cairne
-      Cthun.ModObjectLimit(FourCC("Orkn"), 1); //Voljin
-      Cthun.ModObjectLimit(FourCC("Orex"), 1); //Rexxar
+      Cthun.ModObjectLimit(Constants.UNIT_N06I_SILITHID_WARRIOR_C_THUN_SILITHID_WARRIOR, Faction.UNLIMITED);
+      Cthun.ModObjectLimit(Constants.UNIT_O00L_SILITHID_REAVER_C_THUN_SILITHID_REAVER, Faction.UNLIMITED);
+      Cthun.ModObjectLimit(Constants.UNIT_U013_GIANT_SCARAB_C_THUN_GIANT_SCARAB, Faction.UNLIMITED);
 
-      
+      Cthun.ModObjectLimit(Constants.UNIT_N060_SILITHID_TUNNELER_C_THUN_SILITHID_TUNNELER, Faction.UNLIMITED);
+      Cthun.ModObjectLimit(Constants.UNIT_N05V_SHADOW_WEAVER_C_THUN_FACELESS_SHADOW_WEAVER, Faction.UNLIMITED);
+      Cthun.ModObjectLimit(Constants.UNIT_O001_TOL_VIR_STATUE_C_THUN_TOL_VIR_STATUE, 6);
+
+      Cthun.ModObjectLimit(Constants.UNIT_H01K_SILITHID_OVERLORD_C_THUN_OVERLORD, 12);
+      Cthun.ModObjectLimit(Constants.UNIT_O02N_SILITHID_WASP_CTHUN, 24);
+      Cthun.ModObjectLimit(Constants.UNIT_H01N_VILE_CORRUPTER_C_THUN_FACELESS_CORRUPTOR, 4);
+
+      Cthun.ModObjectLimit(FourCC("ushp"), Faction.UNLIMITED); //Undead Shipyard
+      Cthun.ModObjectLimit(FourCC("ubot"), Faction.UNLIMITED); //Undead Transport Ship
+      Cthun.ModObjectLimit(FourCC("h0AT"), Faction.UNLIMITED); //Scout
+      Cthun.ModObjectLimit(FourCC("h0AW"), Faction.UNLIMITED); //Frigate
+      Cthun.ModObjectLimit(FourCC("h0AM"), Faction.UNLIMITED); //Fireship
+      Cthun.ModObjectLimit(FourCC("h0AZ"), Faction.UNLIMITED); //Galley
+      Cthun.ModObjectLimit(FourCC("h0AQ"), Faction.UNLIMITED); //Boarding
+      Cthun.ModObjectLimit(FourCC("h0BB"), Faction.UNLIMITED); //Juggernaut
+      Cthun.ModObjectLimit(FourCC("h0B9"), 6); //Bombard
+
+      Cthun.ModObjectLimit(Constants.UNIT_U02S_ANCIENT_SAND_WORM, 1);
+      Cthun.ModObjectLimit(Constants.UNIT_E005_THE_PROPHET, 1);
+      Cthun.ModObjectLimit(Constants.UNIT_U00Z_OBSIDIAN_DESTROYER, 1);
+
+      Cthun.ModObjectLimit(FourCC("R00K"), Faction.UNLIMITED); //Power Infusion
+
+
       FactionManager.Register(Cthun);
     }
   }
