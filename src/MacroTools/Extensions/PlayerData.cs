@@ -155,6 +155,28 @@ namespace MacroTools.Extensions
     public List<ControlPoint> ControlPoints { get; set; } = new();
 
     /// <summary>
+    /// Adds <see cref="ControlPoint" /> to list of this <see cref="player" />'s controlpoints, updates the <see cref="Team" /> total and fires any events subscribed to ControlPointsChanged
+    /// </summary>
+    /// <param name="controlPoint"></param>
+    public void AddControlPoint(ControlPoint controlPoint)
+    {
+      ControlPoints.Add(controlPoint);
+      Team?.AddControlPoint(controlPoint);
+      ControlPointsChanged?.Invoke(this, this);
+    }
+    
+    /// <summary>
+    /// Removes <see cref="ControlPoint" /> from list of this <see cref="player" />'s controlpoints, updates the <see cref="Team" /> total and fires any events subscribed to ControlPointsChanged
+    /// </summary>
+    /// <param name="controlPoint"></param>
+    public void RemoveControlPoint(ControlPoint controlPoint)
+    {
+      ControlPoints.Remove(controlPoint);
+      Team?.AddControlPoint(controlPoint);
+      ControlPointsChanged?.Invoke(this, this);
+    }
+
+    /// <summary>
     /// The number of extra <see cref="ControlPoint.ControlLevel"/>s the player gets each turn.
     /// </summary>
     public float ControlLevelPerTurnBonus { get; set; }
@@ -163,6 +185,11 @@ namespace MacroTools.Extensions
     /// Fired when the player's income changes.
     /// </summary>
     public event EventHandler<PlayerData>? IncomeChanged;
+    
+    /// <summary>
+    /// Fired when the <see cref="player" />'s <see cref="ControlPoint" />s change
+    /// </summary>
+    public event EventHandler<PlayerData>? ControlPointsChanged;
 
     /// <summary>
     /// Fired when any player changes <see cref="Faction"/>.

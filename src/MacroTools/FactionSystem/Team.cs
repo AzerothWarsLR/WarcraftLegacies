@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
 using MacroTools.LegendSystem;
 using static War3Api.Common;
@@ -20,17 +21,35 @@ namespace MacroTools.FactionSystem
       Name = name;
     }
 
-    public int ControlPointCount
-    {
-      get
-      {
-        var total = 0;
-        foreach (var player in _members)
-          total += player.GetControlPointCount();
+    /// <summary>
+    /// Control points the team own
+    /// </summary>
+    public List<ControlPoint> ControlPoints { get; } = new();
 
-        return total;
-      }
+    /// <summary>
+    /// Adds <see cref="ControlPoint" /> to list of this <see cref="Team" />'s controlpoints and fires any events subscribed to ControlPointsChanged
+    /// </summary>
+    /// <param name="controlPoint"></param>
+    public void AddControlPoint(ControlPoint controlPoint)
+    {
+      ControlPoints.Add(controlPoint);
+      ControlPointsChanged?.Invoke(this, this);
     }
+    
+    /// <summary>
+    /// Removes <see cref="ControlPoint" /> from list of this <see cref="Team" />'s controlpoints and fires any events subscribed to ControlPointsChanged
+    /// </summary>
+    /// <param name="controlPoint"></param>
+    public void RemoveControlPoint(ControlPoint controlPoint)
+    {
+      ControlPoints.Remove(controlPoint);
+      ControlPointsChanged?.Invoke(this, this);
+    }
+    
+    /// <summary>
+    /// Fired when the <see cref="Team" />'s <see cref="ControlPoint" />s change
+    /// </summary>
+    public event EventHandler<Team>? ControlPointsChanged;
 
     public string Name { get; }
 
@@ -48,6 +67,7 @@ namespace MacroTools.FactionSystem
     ///   Music that plays when this <see cref="Team" /> wins the game.
     /// </summary>
     public string? VictoryMusic { get; init; }
+    
 
     /// <summary>
     ///   Creates a <see cref="force" /> containing all <see cref="player" />s within this <see cref="Team" />.
