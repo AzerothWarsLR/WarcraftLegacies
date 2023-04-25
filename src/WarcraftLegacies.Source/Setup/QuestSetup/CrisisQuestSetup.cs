@@ -20,13 +20,27 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       QuestNADead naDead = new();
       QuestScourgeDead scourgeDead = new();
 
+      QuestElfDead elfDead2 = new();
+      QuestHordeDead hordeDead2 = new();
+      QuestSADead saDead2 = new();
+      QuestIllidariDead illidariDead2 = new();
+      QuestNADead naDead2 = new();
+      QuestScourgeDead scourgeDead2 = new();
+
       elfDead.AddObjective(new ObjectiveDontCompleteQuest(hordeDead));
       hordeDead.AddObjective(new ObjectiveDontCompleteQuest(elfDead));
       saDead.AddObjective(new ObjectiveDontCompleteQuest(illidariDead));
       illidariDead.AddObjective(new ObjectiveDontCompleteQuest(saDead));
       naDead.AddObjective(new ObjectiveDontCompleteQuest(scourgeDead));
       scourgeDead.AddObjective(new ObjectiveDontCompleteQuest(naDead));
-      
+
+      elfDead2.AddObjective(new ObjectiveDontCompleteQuest(hordeDead2));
+      hordeDead2.AddObjective(new ObjectiveDontCompleteQuest(elfDead2));
+      saDead2.AddObjective(new ObjectiveDontCompleteQuest(illidariDead2));
+      illidariDead2.AddObjective(new ObjectiveDontCompleteQuest(saDead2));
+      naDead2.AddObjective(new ObjectiveDontCompleteQuest(scourgeDead2));
+      scourgeDead2.AddObjective(new ObjectiveDontCompleteQuest(naDead2));
+
       crisis.AddQuest(hordeDead);
       crisis.AddQuest(elfDead);
       crisis.AddQuest(illidariDead);
@@ -34,12 +48,12 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       crisis.AddQuest(scourgeDead);
       crisis.AddQuest(naDead);
 
-      crisis2.AddQuest(hordeDead);
-      crisis2.AddQuest(elfDead);
-      crisis2.AddQuest(illidariDead);
-      crisis2.AddQuest(saDead);
-      crisis2.AddQuest(scourgeDead);
-      crisis2.AddQuest(naDead);
+      crisis2.AddQuest(hordeDead2);
+      crisis2.AddQuest(elfDead2);
+      crisis2.AddQuest(illidariDead2);
+      crisis2.AddQuest(saDead2);
+      crisis2.AddQuest(scourgeDead2);
+      crisis2.AddQuest(naDead2);
 
       crisis.AddQuest(new QuestTurn25OG());
       crisis.AddQuest(new QuestOldGodPick(preplacedUnitSystem));
