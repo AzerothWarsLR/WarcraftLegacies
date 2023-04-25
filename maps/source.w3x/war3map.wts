@@ -33064,10 +33064,22 @@ STRING 5511
 Creates images of Hero to fight enemies and dispels all magic from Hero.|n|n|cffffcc00Level 1|r - Creates 3 images which deal 50% the damage of Hero and take 200% the damage. |n|cffffcc00Level 2|r - Creates 5 images which deal 50% the damage of Hero and take 200% the damage. |n|cffffcc00Level 3|r - Creates 7 images which deal 50% the damage of Hero and take 200% the damage.
 }
 
+STRING 5512
+// Upgrades: R09C (Chaos), Name (Name)
+{
+Quest Completed: Scourge or NA Defeated
+}
+
 STRING 5513
 // Abilities: AOmi (Mirror Image), Ubertip (Tooltip - Normal - Extended)
 {
 Creates 5 images which deal 100% the damage of the Hero and take 200% the damage. Dispels all magic from the Hero. |nLasts 30 seconds.
+}
+
+STRING 5514
+// Upgrades: R09D (Chaos), Name (Name)
+{
+Turn 25 has passed or Old Gods are pickable
 }
 
 STRING 5515
@@ -62773,6 +62785,12 @@ STRING 10461
 // Abilities: A0BR (Surge of Power), Tip (Tooltip - Normal)
 {
 Surge of Power - [|cffffcc00Level 4|r]
+}
+
+STRING 10462
+// Units: h05U (Twilight Citadel), EditorSuffix (Name - Editor Suffix)
+{
+ (Twilight other)
 }
 
 STRING 10463
@@ -120107,12 +120125,6 @@ STRING 20025
 // Units: h00O (Utgarde Keep), EditorSuffix (Name - Editor Suffix)
 {
  (Scourge Other)
-}
-
-STRING 20026
-// Units: h05U (Twilight Citadel), EditorSuffix (Name - Editor Suffix)
-{
- (Twilight T3)
 }
 
 STRING 20027

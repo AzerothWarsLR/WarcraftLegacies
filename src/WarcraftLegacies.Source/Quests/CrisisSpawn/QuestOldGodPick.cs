@@ -5,10 +5,7 @@ using MacroTools.ObjectiveSystem.Objectives.MetaBased;
 using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
-using WarcraftLegacies.Source.Setup;
-using WarcraftLegacies.Source.Setup.FactionSetup;
 using WCSharp.Shared.Data;
-using static MacroTools.Libraries.GeneralHelpers;
 using static War3Api.Common; 
 
 namespace WarcraftLegacies.Source.Quests.CrisisSpawn

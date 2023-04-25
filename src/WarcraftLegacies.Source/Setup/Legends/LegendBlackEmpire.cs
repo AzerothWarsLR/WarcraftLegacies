@@ -19,7 +19,8 @@ namespace WarcraftLegacies.Source.Setup.Legends
       Nzoth = new LegendaryHero("N'zoth")
       {
         UnitType = Constants.UNIT_U01Z_OLD_GOD_NZOTH,
-         StartingXp = 10000,
+        PermaDies = true,
+        StartingXp = 10000,
       };
 
       Vezax = new LegendaryHero("General Vezax")

@@ -1,4 +1,5 @@
 ﻿using MacroTools;
+using MacroTools.ObjectiveSystem.Objectives.QuestBased;
 using WarcraftLegacies.Source.Quests.CrisisSpawn;
 using WarcraftLegacies.Source.Setup.FactionSetup;
 
@@ -12,17 +13,50 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       var crisis = CrisisCaptainSetup.CrisisCaptain;
       var crisis2 = CrisisFootmanSetup.CrisisFootman;
 
-      crisis.AddQuest(new QuestOldGodPick(preplacedUnitSystem));
-      
-      crisis.AddQuest(new QuestElfDead());
-      crisis.AddQuest(new QuestHordeDead());
-      crisis.AddQuest(new QuestSADead());
-      crisis.AddQuest(new QuestIllidariDead());
+      QuestElfDead elfDead = new();
+      QuestHordeDead hordeDead = new();
+      QuestSADead saDead = new();
+      QuestIllidariDead illidariDead = new();
+      QuestNADead naDead = new();
+      QuestScourgeDead scourgeDead = new();
 
-      crisis2.AddQuest(new QuestElfDead());
-      crisis2.AddQuest(new QuestHordeDead());
-      crisis2.AddQuest(new QuestSADead());
-      crisis2.AddQuest(new QuestIllidariDead());
+      QuestElfDead elfDead2 = new();
+      QuestHordeDead hordeDead2 = new();
+      QuestSADead saDead2 = new();
+      QuestIllidariDead illidariDead2 = new();
+      QuestNADead naDead2 = new();
+      QuestScourgeDead scourgeDead2 = new();
+
+      elfDead.AddObjective(new ObjectiveDontCompleteQuest(hordeDead));
+      hordeDead.AddObjective(new ObjectiveDontCompleteQuest(elfDead));
+      saDead.AddObjective(new ObjectiveDontCompleteQuest(illidariDead));
+      illidariDead.AddObjective(new ObjectiveDontCompleteQuest(saDead));
+      naDead.AddObjective(new ObjectiveDontCompleteQuest(scourgeDead));
+      scourgeDead.AddObjective(new ObjectiveDontCompleteQuest(naDead));
+
+      elfDead2.AddObjective(new ObjectiveDontCompleteQuest(hordeDead2));
+      hordeDead2.AddObjective(new ObjectiveDontCompleteQuest(elfDead2));
+      saDead2.AddObjective(new ObjectiveDontCompleteQuest(illidariDead2));
+      illidariDead2.AddObjective(new ObjectiveDontCompleteQuest(saDead2));
+      naDead2.AddObjective(new ObjectiveDontCompleteQuest(scourgeDead2));
+      scourgeDead2.AddObjective(new ObjectiveDontCompleteQuest(naDead2));
+
+      crisis.AddQuest(hordeDead);
+      crisis.AddQuest(elfDead);
+      crisis.AddQuest(illidariDead);
+      crisis.AddQuest(saDead);
+      crisis.AddQuest(scourgeDead);
+      crisis.AddQuest(naDead);
+
+      crisis2.AddQuest(hordeDead2);
+      crisis2.AddQuest(elfDead2);
+      crisis2.AddQuest(illidariDead2);
+      crisis2.AddQuest(saDead2);
+      crisis2.AddQuest(scourgeDead2);
+      crisis2.AddQuest(naDead2);
+
+      crisis.AddQuest(new QuestTurn25OG());
+      crisis.AddQuest(new QuestOldGodPick(preplacedUnitSystem));
 
       crisis.AddQuest(new QuestNazjatarSpawn(preplacedUnitSystem, Regions.NzothStartPosition, allLegendSetup.Nazjatar.Azshara));
       crisis.AddQuest(new QuestBlackEmpireSpawnCaptain(preplacedUnitSystem, Regions.MaelstromChannel, allLegendSetup.BlackEmpire.Nzoth));

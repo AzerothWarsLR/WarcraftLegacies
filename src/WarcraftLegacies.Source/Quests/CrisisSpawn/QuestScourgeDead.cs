@@ -1,8 +1,4 @@
-﻿using MacroTools.Extensions;
-using MacroTools.FactionSystem;
-using MacroTools.LegendSystem;
-using MacroTools.ObjectiveSystem.Objectives.FactionBased;
-using MacroTools.ObjectiveSystem.Objectives.LegendBased;
+﻿using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives.TeamBased;
 using MacroTools.QuestSystem;
 using WarcraftLegacies.Source.Setup;
@@ -13,24 +9,24 @@ namespace WarcraftLegacies.Source.Quests.CrisisSpawn
   /// <summary>
   /// With South Alliance destroyed, The Twilight Hammer can reveal themselves in the Highlands
   /// </summary>
-  public sealed class QuestSADead : QuestData
+  public sealed class QuestScourgeDead : QuestData
   {
     /// <inheritdoc/>
-    protected override string RewardFlavour => "The South Alliance are defeated, a crisis can be picked in South Alliance";
+    protected override string RewardFlavour => "The Scourge are defeated, a crisis can be picked in the North";
 
     /// <inheritdoc/>
-    protected override string RewardDescription => "The South Alliance crisis are available";
+    protected override string RewardDescription => "The North crisis are available";
 
     /// <summary>
-    /// Initializes a new instance of the <see cref="QuestSADead"/> class.
+    /// Initializes a new instance of the <see cref="QuestScourgeDead"/> class.
     /// </summary>
-    public QuestSADead() : base("South Alliance is Defeated",
+    public QuestScourgeDead() : base("South Alliance is Defeated",
       "With the South Alliance eliminated, The Twilight Highlands have a raise in activity",
       "ReplaceableTextures\\CommandButtons\\BTNFountainOfLife.blp")
     {
-      AddObjective(new ObjectiveTeamContolPointAmountLessThan(TeamSetup.SouthAlliance, 10));
-      AddObjective(new ObjectiveTeamContolPointAmountGreaterThan(TeamSetup.Illidari, 40));
-      ResearchId = Constants.UPGRADE_R09B_QUEST_COMPLETED_SOUTH_ALLIANCE_OR_ILLIDARI_DEFEATED;
+      AddObjective(new ObjectiveTeamContolPointAmountLessThan(TeamSetup.NorthAlliance, 40));
+      AddObjective(new ObjectiveTeamContolPointAmountGreaterThan(TeamSetup.Scourge, 10));
+      ResearchId = Constants.UPGRADE_R09C_QUEST_COMPLETED_SCOURGE_OR_NA_DEFEATED;
       Required = true;
     }
 
@@ -41,5 +37,6 @@ namespace WarcraftLegacies.Source.Quests.CrisisSpawn
         SetPlayerTechResearched(player, Constants.UPGRADE_R09D_TURN_25_HAS_PASSED_OR_OLD_GODS_ARE_PICKABLE, 1);
       }
     }
+
   }
 }
