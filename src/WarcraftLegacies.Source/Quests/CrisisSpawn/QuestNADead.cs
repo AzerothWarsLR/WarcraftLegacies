@@ -24,12 +24,12 @@ namespace WarcraftLegacies.Source.Quests.CrisisSpawn
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestNADead"/> class.
     /// </summary>
-    public QuestNADead() : base("South Alliance is Defeated",
+    public QuestNADead() : base("North Alliance is Defeated",
       "With the South Alliance eliminated, The Twilight Highlands have a raise in activity",
       "ReplaceableTextures\\CommandButtons\\BTNFountainOfLife.blp")
     {
       AddObjective(new ObjectiveTeamContolPointAmountLessThan(TeamSetup.NorthAlliance, 10));
-      AddObjective(new ObjectiveTeamContolPointAmountGreaterThan(TeamSetup.Scourge, 40));
+      AddObjective(new ObjectiveTeamContolPointAmountGreaterThan(TeamSetup.Legion, 40));
       ResearchId = Constants.UPGRADE_R09C_QUEST_COMPLETED_SCOURGE_OR_NA_DEFEATED;
       Required = true;
     }
