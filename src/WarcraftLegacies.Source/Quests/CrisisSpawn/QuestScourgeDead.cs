@@ -24,8 +24,8 @@ namespace WarcraftLegacies.Source.Quests.CrisisSpawn
       "With the South Alliance eliminated, The Twilight Highlands have a raise in activity",
       "ReplaceableTextures\\CommandButtons\\BTNFountainOfLife.blp")
     {
-      AddObjective(new ObjectiveTeamContolPointAmountLessThan(TeamSetup.NorthAlliance, 40));
-      AddObjective(new ObjectiveTeamContolPointAmountGreaterThan(TeamSetup.Legion, 10));
+      AddObjective(new ObjectiveTeamContolPointAmountLessThan(TeamSetup.Legion, 10));
+      AddObjective(new ObjectiveTeamContolPointAmountGreaterThan(TeamSetup.NorthAlliance, 40));
       ResearchId = Constants.UPGRADE_R09C_QUEST_COMPLETED_SCOURGE_OR_NA_DEFEATED;
       Required = true;
     }
