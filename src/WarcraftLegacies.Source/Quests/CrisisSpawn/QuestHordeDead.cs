@@ -29,9 +29,6 @@ namespace WarcraftLegacies.Source.Quests.CrisisSpawn
     {
       AddObjective(new ObjectiveFactionDefeated(WarsongSetup.WarsongClan));
       AddObjective(new ObjectiveFactionDefeated(FrostwolfSetup.Frostwolf));
-      AddObjective(new ObjectiveEitherOf(
-        new ObjectiveFactionDefeated(GoblinSetup.Goblin),
-        new ObjectiveFactionDefeated(ZandalarSetup.Zandalar)));
       ResearchId = Constants.UPGRADE_R091_QUEST_COMPLETED_HORDE_OR_NIGHT_ELF_DEFEATED;
       Required = true;
     }

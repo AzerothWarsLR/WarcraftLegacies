@@ -27,7 +27,6 @@ namespace WarcraftLegacies.Source.Quests.CrisisSpawn
       "ReplaceableTextures\\CommandButtons\\BTNFountainOfLife.blp")
     {
       AddObjective(new ObjectiveFactionDefeated(FelHordeSetup.FelHorde));
-      AddObjective(new ObjectiveFactionDefeated(IllidariSetup.Illidari));
       ResearchId = Constants.UPGRADE_R09B_QUEST_COMPLETED_SOUTH_ALLIANCE_OR_ILLIDARI_DEFEATED;
       Required = true;
     }

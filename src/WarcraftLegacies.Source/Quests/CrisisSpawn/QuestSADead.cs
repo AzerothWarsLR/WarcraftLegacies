@@ -28,7 +28,6 @@ namespace WarcraftLegacies.Source.Quests.CrisisSpawn
     {
       AddObjective(new ObjectiveFactionDefeated(IronforgeSetup.Ironforge));
       AddObjective(new ObjectiveFactionDefeated(StormwindSetup.Stormwind));
-      AddObjective(new ObjectiveFactionDefeated(KultirasSetup.Kultiras));
       ResearchId = Constants.UPGRADE_R09B_QUEST_COMPLETED_SOUTH_ALLIANCE_OR_ILLIDARI_DEFEATED;
       Required = true;
     }
