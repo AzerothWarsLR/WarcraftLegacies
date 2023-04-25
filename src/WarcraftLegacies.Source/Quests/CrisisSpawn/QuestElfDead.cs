@@ -1,10 +1,8 @@
-﻿using MacroTools.Extensions;
-using MacroTools.FactionSystem;
-using MacroTools.LegendSystem;
-using MacroTools.ObjectiveSystem.Objectives.FactionBased;
-using MacroTools.ObjectiveSystem.Objectives.LegendBased;
+﻿using MacroTools.FactionSystem;
+using MacroTools.ObjectiveSystem.Objectives.TeamBased;
 using MacroTools.QuestSystem;
-using WarcraftLegacies.Source.Setup.FactionSetup;
+using WarcraftLegacies.Source.Setup;
+using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.CrisisSpawn
 {
@@ -14,10 +12,10 @@ namespace WarcraftLegacies.Source.Quests.CrisisSpawn
   public sealed class QuestElfDead : QuestData
   {
     /// <inheritdoc/>
-    protected override string RewardFlavour => "The Night Elves are defeated, C'thun is awakening in the sands of Ahn'qiraj";
+    protected override string RewardFlavour => "The Night Elves are defeated, a crisis can be picked in Kalimdor";
 
     /// <inheritdoc/>
-    protected override string RewardDescription => "The C'thun faction will become available to pick as a crisis";
+    protected override string RewardDescription => "The Kalimdor crisis are available";
 
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestElfDead"/> class.
@@ -26,12 +24,18 @@ namespace WarcraftLegacies.Source.Quests.CrisisSpawn
       "With the Night Elves eliminated, something stirs in the sands of Ahn'qiraj",
       "ReplaceableTextures\\CommandButtons\\BTNFountainOfLife.blp")
     {
-      AddObjective(new ObjectiveFactionDefeated(DruidsSetup.Druids));
-      AddObjective(new ObjectiveFactionDefeated(SentinelsSetup.Sentinels));
-      AddObjective(new ObjectiveFactionDefeated(DraeneiSetup.Draenei));
+      AddObjective(new ObjectiveTeamContolPointAmountLessThan(TeamSetup.NightElves, 10));
+      AddObjective(new ObjectiveTeamContolPointAmountGreaterThan(TeamSetup.Horde, 40));
       ResearchId = Constants.UPGRADE_R091_QUEST_COMPLETED_HORDE_OR_NIGHT_ELF_DEFEATED;
       Required = true;
     }
 
+    protected override void OnComplete(Faction completingFaction)
+    {
+      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
+      {
+        SetPlayerTechResearched(player, Constants.UPGRADE_R09D_TURN_25_HAS_PASSED_OR_OLD_GODS_ARE_PICKABLE, 1);
+      }
+    }
   }
 }

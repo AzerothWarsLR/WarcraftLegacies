@@ -17,7 +17,8 @@ namespace WarcraftLegacies.Source.Setup.Legends
       Cthun = new LegendaryHero("C'thun")
       {
         UnitType = Constants.UNIT_U00R_OLD_GOD,
-         StartingXp = 10000,
+        PermaDies = true,
+        StartingXp = 10000,
       };
 
       Moam = new LegendaryHero("Moam")

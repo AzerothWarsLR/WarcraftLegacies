@@ -3,7 +3,6 @@ using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
-using MacroTools.ObjectiveSystem.Objectives.MetaBased;
 using MacroTools.ObjectiveSystem.Objectives.TeamBased;
 using MacroTools.QuestSystem;
 using WarcraftLegacies.Source.Setup;
@@ -12,26 +11,26 @@ using static War3Api.Common;
 namespace WarcraftLegacies.Source.Quests.CrisisSpawn
 {
   /// <summary>
-  /// Once the horde is dead, Cthun becomes available.
+  /// With South Alliance destroyed, The Twilight Hammer can reveal themselves in the Highlands
   /// </summary>
-  public sealed class QuestHordeDead : QuestData
+  public sealed class QuestNADead : QuestData
   {
     /// <inheritdoc/>
-    protected override string RewardFlavour => "The Horde is defeated, a crisis can be picked in Kalimdor";
+    protected override string RewardFlavour => "The North Alliance are defeated, a crisis can be picked in the North";
 
     /// <inheritdoc/>
-    protected override string RewardDescription => "The Kalimdor crisis are available";
+    protected override string RewardDescription => "The North crisis are available";
 
     /// <summary>
-    /// Initializes a new instance of the <see cref="QuestHordeDead"/> class.
+    /// Initializes a new instance of the <see cref="QuestNADead"/> class.
     /// </summary>
-    public QuestHordeDead() : base("Horde is Defeated",
-      "With the Horde eliminated, something stirs in the sands of Ahn'qiraj",
+    public QuestNADead() : base("South Alliance is Defeated",
+      "With the South Alliance eliminated, The Twilight Highlands have a raise in activity",
       "ReplaceableTextures\\CommandButtons\\BTNFountainOfLife.blp")
     {
-      AddObjective(new ObjectiveTeamContolPointAmountLessThan(TeamSetup.NightElves, 40));
-      AddObjective(new ObjectiveTeamContolPointAmountGreaterThan(TeamSetup.Horde, 10));
-      ResearchId = Constants.UPGRADE_R091_QUEST_COMPLETED_HORDE_OR_NIGHT_ELF_DEFEATED;
+      AddObjective(new ObjectiveTeamContolPointAmountLessThan(TeamSetup.NorthAlliance, 10));
+      AddObjective(new ObjectiveTeamContolPointAmountGreaterThan(TeamSetup.Scourge, 40));
+      ResearchId = Constants.UPGRADE_R09C_QUEST_COMPLETED_SCOURGE_OR_NA_DEFEATED;
       Required = true;
     }
 

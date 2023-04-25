@@ -3,8 +3,10 @@ using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
+using MacroTools.ObjectiveSystem.Objectives.TeamBased;
 using MacroTools.QuestSystem;
-using WarcraftLegacies.Source.Setup.FactionSetup;
+using WarcraftLegacies.Source.Setup;
+using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.CrisisSpawn
 {
@@ -14,10 +16,10 @@ namespace WarcraftLegacies.Source.Quests.CrisisSpawn
   public sealed class QuestIllidariDead : QuestData
   {
     /// <inheritdoc/>
-    protected override string RewardFlavour => "The Twilight Hammer can reveal themselves in the Twilight Highlands";
+    protected override string RewardFlavour => "The Illidari are defeated, a crisis can be picked in South Alliance";
 
     /// <inheritdoc/>
-    protected override string RewardDescription => "The Twilight Hammer faction will become available to pick as a crisis";
+    protected override string RewardDescription => "The South Alliance crisis are available";
 
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestIllidariDead"/> class.
@@ -26,10 +28,18 @@ namespace WarcraftLegacies.Source.Quests.CrisisSpawn
       "With the Illidari eliminated, The Twiligh Highlands have a raise in activity",
       "ReplaceableTextures\\CommandButtons\\BTNFountainOfLife.blp")
     {
-      AddObjective(new ObjectiveFactionDefeated(FelHordeSetup.FelHorde));
+      AddObjective(new ObjectiveTeamContolPointAmountLessThan(TeamSetup.SouthAlliance, 40));
+      AddObjective(new ObjectiveTeamContolPointAmountGreaterThan(TeamSetup.Illidari, 10));
       ResearchId = Constants.UPGRADE_R09B_QUEST_COMPLETED_SOUTH_ALLIANCE_OR_ILLIDARI_DEFEATED;
       Required = true;
     }
 
+    protected override void OnComplete(Faction completingFaction)
+    {
+      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
+      {
+        SetPlayerTechResearched(player, Constants.UPGRADE_R09D_TURN_25_HAS_PASSED_OR_OLD_GODS_ARE_PICKABLE, 1);
+      }
+    }
   }
 }
