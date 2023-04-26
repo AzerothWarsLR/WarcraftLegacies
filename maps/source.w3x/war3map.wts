@@ -104468,6 +104468,12 @@ STRING 17414
 Learn Stoneform - [|cffffcc00Level %d|r]
 }
 
+STRING 17415
+// Units: n0DY (Dragozer - 8v8 season 1 champion), Name (Name)
+{
+Dragozer - 8v8 season 1 champion
+}
+
 STRING 17416
 // Abilities: A02G (Stoneform), Tip (Tooltip - Normal)
 {
@@ -117695,6 +117701,12 @@ STRING 19619
 // Units: O06M (Ascendant Councillor of Flame), Name (Name)
 {
 Ascendant Councillor of Flame
+}
+
+STRING 19620
+// Units: n0DY (Dragozer - 8v8 season 1 champion), EditorSuffix (Name - Editor Suffix)
+{
+8v8 winner
 }
 
 STRING 19621

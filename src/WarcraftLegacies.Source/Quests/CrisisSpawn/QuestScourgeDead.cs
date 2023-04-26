@@ -1,6 +1,7 @@
 ﻿using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives.MetaBased;
 using MacroTools.ObjectiveSystem.Objectives.TeamBased;
+using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.QuestSystem;
 using WarcraftLegacies.Source.Setup;
 using static War3Api.Common;
@@ -25,6 +26,7 @@ namespace WarcraftLegacies.Source.Quests.CrisisSpawn
       "With the South Alliance eliminated, The Twilight Highlands have a raise in activity",
       "ReplaceableTextures\\CommandButtons\\BTNFountainOfLife.blp")
     {
+      AddObjective(new ObjectiveTime(600));
       AddObjective(new ObjectiveTeamControlPointAmountLessThan(TeamSetup.Legion, 10));
       AddObjective(new ObjectiveEitherOf(
         new ObjectiveTeamControlPointAmountGreaterThan(TeamSetup.NorthAlliance, 40),

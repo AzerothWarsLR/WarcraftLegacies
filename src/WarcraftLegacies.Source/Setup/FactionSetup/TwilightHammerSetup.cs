@@ -67,6 +67,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
       TwilightHammer.ModObjectLimit(Constants.UNIT_H08Q_HIGH_PRIESTESS_TWILIGHT_HAMMER, 1);
       TwilightHammer.ModObjectLimit(Constants.UNIT_O04H_CHAMPION_OF_THE_TWILIGHT_S_HAMMER_TWILIGHT, 1);
       TwilightHammer.ModObjectLimit(Constants.UNIT_O06M_ASCENDANT_COUNCILLOR_OF_FLAME_TWILIGHT, 1);
+      TwilightHammer.ModObjectLimit(Constants.UNIT_O01P_LEADER_OF_THE_TWILIGHT_S_HAMMER_TWILIGHT_HAMMER, 1);
 
       TwilightHammer.ModObjectLimit(FourCC("R00K"), Faction.UNLIMITED); //Power Infusion
 

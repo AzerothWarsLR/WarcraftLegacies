@@ -82,6 +82,8 @@ namespace WarcraftLegacies.Source.Quests.CrisisSpawn
         CreateUnits(completingFaction.Player, Constants.UNIT_N07X_OGRE_MAGI_TWILIGHT, spawn.X, spawn.Y, 270, 12);
         CreateUnits(completingFaction.Player, Constants.UNIT_N09O_ORCISH_DEATH_KNIGHT_TWILIGHT, spawn.X, spawn.Y, 270, 6);
 
+        CreateUnits(completingFaction.Player, Constants.UNIT_U01Y_DEATHWING_TWILIGHT, spawn.X, spawn.Y, 270, 1);
+
         CreateUnits(completingFaction.Player, Constants.UNIT_N083_TWILIGHT_DRAGONSPAWN_TWILIGHT, spawn.X, spawn.Y, 270, 12);
         CreateUnits(completingFaction.Player, Constants.UNIT_N051_NETHER_DRAGON_TWILIGHT, spawn.X, spawn.Y, 270, 4);
         CreateUnits(completingFaction.Player, Constants.UNIT_O04J_VOID_RIDER_TWILIGHT, spawn.X, spawn.Y, 270, 8);

@@ -34,7 +34,8 @@ namespace WarcraftLegacies.Source.Setup.Legends
       Sunwell = new Capital
       {
         Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_N001_THE_SUNWELL_QUEL_THALAS_OTHER),
-        Capturable = true
+        Capturable = true,
+        Essential = true
       };
       Sunwell.AddProtector(Silvermoon.Unit);
 
