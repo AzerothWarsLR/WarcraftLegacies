@@ -20,6 +20,8 @@ namespace MacroTools.ObjectiveSystem.Objectives.FactionBased
     {
       if (playerData.ControlPoints.Count > _controlPointCount)
         Progress = QuestProgress.Complete;
+      if (playerData.ControlPoints.Count <= _controlPointCount)
+        Progress = QuestProgress.Incomplete;
     }
   }
 }

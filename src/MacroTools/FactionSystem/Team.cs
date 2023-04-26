@@ -24,33 +24,15 @@ namespace MacroTools.FactionSystem
     /// <summary>
     /// Control points the team own
     /// </summary>
-    public List<ControlPoint> ControlPoints { get; } = new();
-
-    /// <summary>
-    /// Adds <see cref="ControlPoint" /> to list of this <see cref="Team" />'s controlpoints and fires any events subscribed to ControlPointsChanged
-    /// </summary>
-    /// <param name="controlPoint"></param>
-    public void AddControlPoint(ControlPoint controlPoint)
-    {
-      ControlPoints.Add(controlPoint);
-      ControlPointsChanged?.Invoke(this, this);
+    public List<ControlPoint> ControlPoints {
+      get
+      {
+        var tempList = new List<ControlPoint>();
+        _members.ForEach(x=> tempList.AddRange(x.GetControlPoints()));
+        return tempList;
+      }
     }
     
-    /// <summary>
-    /// Removes <see cref="ControlPoint" /> from list of this <see cref="Team" />'s controlpoints and fires any events subscribed to ControlPointsChanged
-    /// </summary>
-    /// <param name="controlPoint"></param>
-    public void RemoveControlPoint(ControlPoint controlPoint)
-    {
-      ControlPoints.Remove(controlPoint);
-      ControlPointsChanged?.Invoke(this, this);
-    }
-    
-    /// <summary>
-    /// Fired when the <see cref="Team" />'s <see cref="ControlPoint" />s change
-    /// </summary>
-    public event EventHandler<Team>? ControlPointsChanged;
-
     public string Name { get; }
 
     /// <summary>
