@@ -23,13 +23,19 @@ namespace WarcraftLegacies.Source.Quests.CrisisSpawn
     private readonly unit _picker;
     private readonly unit _secondpick;
     private readonly LegendaryHero _azshara;
+    private readonly LegendaryHero _sivara;
+    private readonly LegendaryHero _zakajz;
+    private readonly LegendaryHero _nazjar;
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestNazjatarSpawn"/> class.
     /// </summary>
-    public QuestNazjatarSpawn(PreplacedUnitSystem preplacedUnitSystem, Rectangle spawnLocation, LegendaryHero azshara) : base("Pick Nazjatar", "The empire of Nazjatar will awaken.", "ReplaceableTextures\\CommandButtons\\BTNNagaSummoner.blp")
+    public QuestNazjatarSpawn(PreplacedUnitSystem preplacedUnitSystem, Rectangle spawnLocation, LegendaryHero azshara, LegendaryHero sivara, LegendaryHero zakajz, LegendaryHero nazjar) : base("Pick Nazjatar", "The empire of Nazjatar will awaken.", "ReplaceableTextures\\CommandButtons\\BTNNagaSummoner.blp")
     {
       _spawnLocation = spawnLocation;
       _azshara = azshara;
+      _sivara = sivara;
+      _zakajz = zakajz;
+      _nazjar = nazjar;
       _picker = preplacedUnitSystem.GetUnit(Constants.UNIT_N0DR_CRISIS_FACTION_PICKER_OLD_GODS, new Point(13068, -29532));
       _secondpick = preplacedUnitSystem.GetUnit(Constants.UNIT_N0DR_CRISIS_FACTION_PICKER_OLD_GODS, new Point(12700, -29532));
       AddObjective(new ObjectiveResearch(Constants.UPGRADE_R07E_FORTIFIED_HULLS, Constants.UNIT_N0DR_CRISIS_FACTION_PICKER_OLD_GODS));
@@ -81,6 +87,10 @@ namespace WarcraftLegacies.Source.Quests.CrisisSpawn
         CreateUnits(completingFaction.Player, Constants.UNIT_H01Q_IMMORTAL_GUARDIAN_NZOTH, spawn.X, spawn.Y, 270, 4);
         CreateUnits(completingFaction.Player, Constants.UNIT_N0CO_TRENCH_HYDRA_NZOTH, spawn.X, spawn.Y, 270, 2);
 
+        _nazjar.StartingXp = (int)(GameTime.GetGameTime() * 6);
+        _zakajz.StartingXp = (int)(GameTime.GetGameTime() * 6);
+        _sivara.StartingXp = (int)(GameTime.GetGameTime() * 6);
+        _azshara.StartingXp = (int)(GameTime.GetGameTime() * 7);
         _azshara.ForceCreate(completingFaction.Player, spawn, 270);
 
         completingFaction.Player.SetTeam(TeamSetup.Oldgods);

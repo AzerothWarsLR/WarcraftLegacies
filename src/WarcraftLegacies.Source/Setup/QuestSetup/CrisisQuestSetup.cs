@@ -58,15 +58,15 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       crisis.AddQuest(new QuestTurn25OG());
       crisis.AddQuest(new QuestOldGodPick(preplacedUnitSystem));
 
-      crisis.AddQuest(new QuestNazjatarSpawn(preplacedUnitSystem, Regions.NzothStartPosition, allLegendSetup.Nazjatar.Azshara));
-      crisis.AddQuest(new QuestBlackEmpireSpawnCaptain(preplacedUnitSystem, Regions.MaelstromChannel, allLegendSetup.BlackEmpire.Nzoth));
-      crisis.AddQuest(new QuestCthunSpawn(preplacedUnitSystem, Regions.CthunSpawn, allLegendSetup.Cthun.Cthun));
-      crisis.AddQuest(new QuestTwilightHammerSpawn(preplacedUnitSystem, Regions.TwilightUnlock, allLegendSetup.Twilight.Chogall));
+      crisis.AddQuest(new QuestNazjatarSpawn(preplacedUnitSystem, Regions.NzothStartPosition, allLegendSetup.Nazjatar.Azshara, allLegendSetup.Nazjatar.Sivara, allLegendSetup.Nazjatar.Zakajz, allLegendSetup.Nazjatar.Nazjar));
+      crisis.AddQuest(new QuestBlackEmpireSpawnCaptain(preplacedUnitSystem, Regions.MaelstromChannel, allLegendSetup.BlackEmpire.Nzoth, allLegendSetup.BlackEmpire.Vezax, allLegendSetup.BlackEmpire.Volazj, allLegendSetup.BlackEmpire.Yorsahj));
+      crisis.AddQuest(new QuestCthunSpawn(preplacedUnitSystem, Regions.CthunSpawn, allLegendSetup.Cthun.Cthun, allLegendSetup.Cthun.Moam, allLegendSetup.Cthun.Skeram, allLegendSetup.Cthun.Ouro));
+      crisis.AddQuest(new QuestTwilightHammerSpawn(preplacedUnitSystem, Regions.TwilightUnlock, allLegendSetup.Twilight.Chogall, allLegendSetup.Twilight.Azil, allLegendSetup.Twilight.Emberscar, allLegendSetup.Twilight.Ignacious));
 
-      crisis2.AddQuest(new QuestNazjatarSpawn(preplacedUnitSystem, Regions.NzothStartPosition, allLegendSetup.Nazjatar.Azshara));
-      crisis2.AddQuest(new QuestBlackEmpireSpawnFootman(preplacedUnitSystem, Regions.MaelstromChannel, allLegendSetup.BlackEmpire.Nzoth));
-      crisis2.AddQuest(new QuestCthunSpawn(preplacedUnitSystem, Regions.CthunSpawn, allLegendSetup.Cthun.Cthun));
-      crisis2.AddQuest(new QuestTwilightHammerSpawn(preplacedUnitSystem, Regions.TwilightUnlock, allLegendSetup.Twilight.Chogall));
+      crisis2.AddQuest(new QuestNazjatarSpawn(preplacedUnitSystem, Regions.NzothStartPosition, allLegendSetup.Nazjatar.Azshara, allLegendSetup.Nazjatar.Sivara, allLegendSetup.Nazjatar.Zakajz, allLegendSetup.Nazjatar.Nazjar));
+      crisis2.AddQuest(new QuestBlackEmpireSpawnFootman(preplacedUnitSystem, Regions.MaelstromChannel, allLegendSetup.BlackEmpire.Nzoth, allLegendSetup.BlackEmpire.Vezax, allLegendSetup.BlackEmpire.Volazj, allLegendSetup.BlackEmpire.Yorsahj));
+      crisis2.AddQuest(new QuestCthunSpawn(preplacedUnitSystem, Regions.CthunSpawn, allLegendSetup.Cthun.Cthun, allLegendSetup.Cthun.Moam, allLegendSetup.Cthun.Skeram, allLegendSetup.Cthun.Ouro));
+      crisis2.AddQuest(new QuestTwilightHammerSpawn(preplacedUnitSystem, Regions.TwilightUnlock, allLegendSetup.Twilight.Chogall, allLegendSetup.Twilight.Azil, allLegendSetup.Twilight.Emberscar, allLegendSetup.Twilight.Ignacious));
 
     }
   }

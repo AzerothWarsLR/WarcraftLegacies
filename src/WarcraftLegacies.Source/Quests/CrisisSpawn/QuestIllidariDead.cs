@@ -3,6 +3,7 @@ using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
+using MacroTools.ObjectiveSystem.Objectives.MetaBased;
 using MacroTools.ObjectiveSystem.Objectives.TeamBased;
 using MacroTools.QuestSystem;
 using WarcraftLegacies.Source.Setup;
@@ -29,7 +30,9 @@ namespace WarcraftLegacies.Source.Quests.CrisisSpawn
       "ReplaceableTextures\\CommandButtons\\BTNFountainOfLife.blp")
     {
       AddObjective(new ObjectiveTeamContolPointAmountLessThan(TeamSetup.Illidari, 10));
-      AddObjective(new ObjectiveTeamContolPointAmountGreaterThan(TeamSetup.SouthAlliance, 40));
+      AddObjective(new ObjectiveEitherOf(
+new ObjectiveTeamContolPointAmountGreaterThan(TeamSetup.SouthAlliance, 40),
+new ObjectiveTeamDefeated(TeamSetup.Illidari)));
       ResearchId = Constants.UPGRADE_R09B_QUEST_COMPLETED_SOUTH_ALLIANCE_OR_ILLIDARI_DEFEATED;
       Required = true;
     }
