@@ -20,13 +20,19 @@ namespace WarcraftLegacies.Source.Quests.CrisisSpawn
     private readonly unit _picker;
     private readonly unit _secondpick;
     private readonly LegendaryHero _cho;
+    private readonly LegendaryHero _azil;
+    private readonly LegendaryHero _emberscar;
+    private readonly LegendaryHero _ignacious;
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestCthunSpawn"/> class.
     /// </summary>
-    public QuestTwilightHammerSpawn(PreplacedUnitSystem preplacedUnitSystem, Rectangle spawnLocation, LegendaryHero cho) : base("Pick the Twilight Hammer Clan", "Cho'gall and his Twilight Hammer clan will spawn in the Twilight Highlands", "ReplaceableTextures\\CommandButtons\\BTNChogall.blp")
+    public QuestTwilightHammerSpawn(PreplacedUnitSystem preplacedUnitSystem, Rectangle spawnLocation, LegendaryHero cho, LegendaryHero azil, LegendaryHero emberscar, LegendaryHero ignacious) : base("Pick the Twilight Hammer Clan", "Cho'gall and his Twilight Hammer clan will spawn in the Twilight Highlands", "ReplaceableTextures\\CommandButtons\\BTNChogall.blp")
     {
       _spawnLocation = spawnLocation;
       _cho = cho;
+      _azil = azil;
+      _emberscar = emberscar;
+      _ignacious = ignacious;
       _picker = preplacedUnitSystem.GetUnit(Constants.UNIT_N0DR_CRISIS_FACTION_PICKER_OLD_GODS, new Point(13068, -29532));
       _secondpick = preplacedUnitSystem.GetUnit(Constants.UNIT_N0DR_CRISIS_FACTION_PICKER_OLD_GODS, new Point(12700, -29532));
       AddObjective(new ObjectiveResearch(Constants.UPGRADE_R08K_FORTIFIED_HULLS, Constants.UNIT_N0DR_CRISIS_FACTION_PICKER_OLD_GODS));
@@ -80,6 +86,10 @@ namespace WarcraftLegacies.Source.Quests.CrisisSpawn
         CreateUnits(completingFaction.Player, Constants.UNIT_N051_NETHER_DRAGON_TWILIGHT, spawn.X, spawn.Y, 270, 4);
         CreateUnits(completingFaction.Player, Constants.UNIT_O04J_VOID_RIDER_TWILIGHT, spawn.X, spawn.Y, 270, 8);
 
+        _azil.StartingXp = (int)(GameTime.GetGameTime() * 6);
+        _emberscar.StartingXp = (int)(GameTime.GetGameTime() * 6);
+        _ignacious.StartingXp = (int)(GameTime.GetGameTime() * 6);
+        _cho.StartingXp = (int)(GameTime.GetGameTime() * 7);
         _cho.ForceCreate(completingFaction.Player, spawn, 270);
 
         completingFaction.Player.SetTeam(TeamSetup.Oldgods);

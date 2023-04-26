@@ -3,11 +3,11 @@ using MacroTools.QuestSystem;
 
 namespace MacroTools.ObjectiveSystem.Objectives.TeamBased
 {
-  public sealed class ObjectiveTeamContolPointAmountGreaterThan : Objective
+  public sealed class ObjectiveTeamControlPointAmountGreaterThan : Objective
   {
     private int _controlPointCount;
     
-    public ObjectiveTeamContolPointAmountGreaterThan(Team whichTeam, int cpAmount)
+    public ObjectiveTeamControlPointAmountGreaterThan(Team whichTeam, int cpAmount)
     {
       Description = $"{whichTeam.Name} has more than {cpAmount} ControlPoints";
       _controlPointCount = cpAmount;

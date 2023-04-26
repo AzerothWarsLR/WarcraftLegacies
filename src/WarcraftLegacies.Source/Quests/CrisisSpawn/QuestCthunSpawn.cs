@@ -20,13 +20,19 @@ namespace WarcraftLegacies.Source.Quests.CrisisSpawn
     private readonly unit _picker;
     private readonly unit _secondpick;
     private readonly LegendaryHero _cthun;
+    private readonly LegendaryHero _moam;
+    private readonly LegendaryHero _skeram;
+    private readonly LegendaryHero _ouro;
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestCthunSpawn"/> class.
     /// </summary>
-    public QuestCthunSpawn(PreplacedUnitSystem preplacedUnitSystem, Rectangle spawnLocation, LegendaryHero cthun) : base("Pick the Ahn'Qiraj Kingdom", "The old god C'thun will awaken in Ahn'qiraj", "ReplaceableTextures\\CommandButtons\\BTNCthunIcon.blp")
+    public QuestCthunSpawn(PreplacedUnitSystem preplacedUnitSystem, Rectangle spawnLocation, LegendaryHero cthun, LegendaryHero moam, LegendaryHero skeram, LegendaryHero ouro) : base("Pick the Ahn'Qiraj Kingdom", "The old god C'thun will awaken in Ahn'qiraj", "ReplaceableTextures\\CommandButtons\\BTNCthunIcon.blp")
     {
       _spawnLocation = spawnLocation;
       _cthun = cthun;
+      _moam = moam;
+      _skeram = skeram;
+      _ouro = ouro;
       _picker = preplacedUnitSystem.GetUnit(Constants.UNIT_N0DR_CRISIS_FACTION_PICKER_OLD_GODS, new Point(13068, -29532));
       _secondpick = preplacedUnitSystem.GetUnit(Constants.UNIT_N0DR_CRISIS_FACTION_PICKER_OLD_GODS, new Point(12700, -29532));
       AddObjective(new ObjectiveResearch(Constants.UPGRADE_R086_FORTIFIED_HULLS, Constants.UNIT_N0DR_CRISIS_FACTION_PICKER_OLD_GODS));
@@ -80,6 +86,10 @@ namespace WarcraftLegacies.Source.Quests.CrisisSpawn
         CreateUnits(completingFaction.Player, Constants.UNIT_O02N_SILITHID_WASP_CTHUN, spawn.X, spawn.Y, 270, 24);
         CreateUnits(completingFaction.Player, Constants.UNIT_H01N_VILE_CORRUPTER_C_THUN_FACELESS_CORRUPTOR, spawn.X, spawn.Y, 270, 4);
 
+        _moam.StartingXp = (int)(GameTime.GetGameTime() * 6);
+        _skeram.StartingXp = (int)(GameTime.GetGameTime() * 6);
+        _ouro.StartingXp = (int)(GameTime.GetGameTime() * 6);
+        _cthun.StartingXp = (int)(GameTime.GetGameTime() * 7);
         _cthun.ForceCreate(completingFaction.Player, spawn, 270);
 
         completingFaction.Player.SetTeam(TeamSetup.Oldgods);

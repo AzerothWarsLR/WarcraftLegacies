@@ -3,6 +3,7 @@ using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
+using MacroTools.ObjectiveSystem.Objectives.MetaBased;
 using MacroTools.ObjectiveSystem.Objectives.TeamBased;
 using MacroTools.QuestSystem;
 using WarcraftLegacies.Source.Setup;
@@ -28,8 +29,10 @@ namespace WarcraftLegacies.Source.Quests.CrisisSpawn
       "With the South Alliance eliminated, The Twilight Highlands have a raise in activity",
       "ReplaceableTextures\\CommandButtons\\BTNFountainOfLife.blp")
     {
-      AddObjective(new ObjectiveTeamContolPointAmountLessThan(TeamSetup.SouthAlliance, 10));
-      AddObjective(new ObjectiveTeamContolPointAmountGreaterThan(TeamSetup.Illidari, 40));
+      AddObjective(new ObjectiveTeamControlPointAmountLessThan(TeamSetup.SouthAlliance, 10));
+      AddObjective(new ObjectiveEitherOf(
+  new ObjectiveTeamControlPointAmountGreaterThan(TeamSetup.Illidari, 40),
+  new ObjectiveTeamDefeated(TeamSetup.SouthAlliance)));
       ResearchId = Constants.UPGRADE_R09B_QUEST_COMPLETED_SOUTH_ALLIANCE_OR_ILLIDARI_DEFEATED;
       Required = true;
     }

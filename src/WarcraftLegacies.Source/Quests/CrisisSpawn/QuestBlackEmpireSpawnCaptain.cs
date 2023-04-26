@@ -8,6 +8,7 @@ using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
 using WarcraftLegacies.Source.Setup;
 using WarcraftLegacies.Source.Setup.FactionSetup;
+using WarcraftLegacies.Source.Setup.Legends;
 using WCSharp.Shared.Data;
 using static MacroTools.Libraries.GeneralHelpers;
 using static War3Api.Common; 
@@ -23,13 +24,19 @@ namespace WarcraftLegacies.Source.Quests.CrisisSpawn
     private readonly unit _picker;
     private readonly unit _secondpick;
     private readonly LegendaryHero _nzoth;
+    private readonly LegendaryHero _vezax;
+    private readonly LegendaryHero _volazj;
+    private readonly LegendaryHero _yorsahj;
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestBlackEmpireSpawnCaptain"/> class.
     /// </summary>
-    public QuestBlackEmpireSpawnCaptain(PreplacedUnitSystem preplacedUnitSystem, Rectangle spawnLocation, LegendaryHero nzoth) : base("Pick the Black Empire", "The Black Empire will awaken.", "ReplaceableTextures\\CommandButtons\\BTNNzothIcon.blp")
+    public QuestBlackEmpireSpawnCaptain(PreplacedUnitSystem preplacedUnitSystem, Rectangle spawnLocation, LegendaryHero nzoth, LegendaryHero vezax, LegendaryHero volazj, LegendaryHero yorsahj) : base("Pick the Black Empire", "The Black Empire will awaken.", "ReplaceableTextures\\CommandButtons\\BTNNzothIcon.blp")
     {
       _spawnLocation = spawnLocation;
       _nzoth = nzoth;
+      _vezax = vezax;
+      _volazj = volazj;
+      _yorsahj = yorsahj;
       _picker = preplacedUnitSystem.GetUnit(Constants.UNIT_N0DR_CRISIS_FACTION_PICKER_OLD_GODS, new Point(13068, -29532));
       _secondpick = preplacedUnitSystem.GetUnit(Constants.UNIT_N0DR_CRISIS_FACTION_PICKER_OLD_GODS, new Point(12700, -29532));
       AddObjective(new ObjectiveResearch(Constants.UPGRADE_R07W_FORTIFIED_HULLS, Constants.UNIT_N0DR_CRISIS_FACTION_PICKER_OLD_GODS));
@@ -78,7 +85,12 @@ namespace WarcraftLegacies.Source.Quests.CrisisSpawn
         CreateUnits(completingFaction.Player, Constants.UNIT_N0AH_DEFORMED_CHIMERA_YOGG, spawn.X, spawn.Y, 270, 4);
         CreateUnits(completingFaction.Player, Constants.UNIT_H09F_GLADIATOR_YOGG, spawn.X, spawn.Y, 270, 12);
 
+        _yorsahj.StartingXp = (int)(GameTime.GetGameTime() * 6);
+        _vezax.StartingXp = (int)(GameTime.GetGameTime() * 6);
+        _volazj.StartingXp = (int)(GameTime.GetGameTime() * 6);
+        _nzoth.StartingXp = (int)(GameTime.GetGameTime() * 7);
         _nzoth.ForceCreate(completingFaction.Player, spawn, 270);
+
 
         completingFaction.Player.SetTeam(TeamSetup.Oldgods);
         completingFaction.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, (int)((GameTime.GetGameTime() / 60) * 100));
