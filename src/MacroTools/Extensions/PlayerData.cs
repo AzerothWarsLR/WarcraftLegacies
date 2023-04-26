@@ -161,7 +161,6 @@ namespace MacroTools.Extensions
     public void AddControlPoint(ControlPoint controlPoint)
     {
       ControlPoints.Add(controlPoint);
-      Team?.AddControlPoint(controlPoint);
       ControlPointsChanged?.Invoke(this, this);
     }
     
@@ -172,7 +171,6 @@ namespace MacroTools.Extensions
     public void RemoveControlPoint(ControlPoint controlPoint)
     {
       ControlPoints.Remove(controlPoint);
-      Team?.RemoveControlPoint(controlPoint);
       ControlPointsChanged?.Invoke(this, this);
     }
 

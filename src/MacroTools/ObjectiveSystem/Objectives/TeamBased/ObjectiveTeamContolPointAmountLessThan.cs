@@ -1,4 +1,5 @@
-﻿using MacroTools.FactionSystem;
+﻿using MacroTools.Extensions;
+using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 
 namespace MacroTools.ObjectiveSystem.Objectives.TeamBased
@@ -11,12 +12,16 @@ namespace MacroTools.ObjectiveSystem.Objectives.TeamBased
     {
       Description = $"{whichTeam.Name} has less than {cpAmount} ControlPoints";
       _controlPointCount = cpAmount;
-      whichTeam.ControlPointsChanged += OnTeamControlPointsChanged;
+      foreach (var faction in whichTeam.GetAllFactions())
+      {
+        if (faction.Player != null)
+          PlayerData.ByHandle(faction.Player).ControlPointsChanged += OnTeamControlPointsChanged;
+      }
     }
     
-    private  void OnTeamControlPointsChanged(object? sender, Team team)
+    private  void OnTeamControlPointsChanged(object? sender, PlayerData playerData)
     {
-      if (team.ControlPoints.Count < _controlPointCount)
+      if (playerData.Team != null && playerData.Team.ControlPoints.Count < _controlPointCount)
         Progress = QuestProgress.Complete;
     }
   }
