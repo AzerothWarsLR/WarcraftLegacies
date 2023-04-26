@@ -23,6 +23,8 @@ namespace MacroTools.ObjectiveSystem.Objectives.TeamBased
     {
       if (playerData.Team != null && playerData.Team.ControlPoints.Count > _controlPointCount)
         Progress = QuestProgress.Complete;
+      if (playerData.Team != null && playerData.Team.ControlPoints.Count <= _controlPointCount)
+        Progress = QuestProgress.Incomplete;
     }
   }
 }
