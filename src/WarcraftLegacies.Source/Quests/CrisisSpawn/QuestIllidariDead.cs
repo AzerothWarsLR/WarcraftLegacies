@@ -29,6 +29,7 @@ namespace WarcraftLegacies.Source.Quests.CrisisSpawn
       "With the Illidari eliminated, The Twiligh Highlands have a raise in activity",
       "ReplaceableTextures\\CommandButtons\\BTNFountainOfLife.blp")
     {
+      AddObjective(new ObjectiveTime(600));
       AddObjective(new ObjectiveTeamControlPointAmountLessThan(TeamSetup.Illidari, 10));
       AddObjective(new ObjectiveEitherOf(
 new ObjectiveTeamControlPointAmountGreaterThan(TeamSetup.SouthAlliance, 40),

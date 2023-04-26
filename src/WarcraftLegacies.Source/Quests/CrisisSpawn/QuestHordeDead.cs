@@ -29,6 +29,7 @@ namespace WarcraftLegacies.Source.Quests.CrisisSpawn
       "With the Horde eliminated, something stirs in the sands of Ahn'qiraj",
       "ReplaceableTextures\\CommandButtons\\BTNFountainOfLife.blp")
     {
+      AddObjective(new ObjectiveTime(600));
       AddObjective(new ObjectiveTeamControlPointAmountLessThan(TeamSetup.Horde, 10));
       AddObjective(new ObjectiveEitherOf(
 new ObjectiveTeamControlPointAmountGreaterThan(TeamSetup.NightElves, 40),
