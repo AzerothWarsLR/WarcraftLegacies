@@ -28,8 +28,8 @@ namespace WarcraftLegacies.Source.Quests.CrisisSpawn
       "With the Illidari eliminated, The Twiligh Highlands have a raise in activity",
       "ReplaceableTextures\\CommandButtons\\BTNFountainOfLife.blp")
     {
-      AddObjective(new ObjectiveTeamContolPointAmountLessThan(TeamSetup.SouthAlliance, 40));
-      AddObjective(new ObjectiveTeamContolPointAmountGreaterThan(TeamSetup.Illidari, 10));
+      AddObjective(new ObjectiveTeamContolPointAmountLessThan(TeamSetup.Illidari, 10));
+      AddObjective(new ObjectiveTeamContolPointAmountGreaterThan(TeamSetup.SouthAlliance, 40));
       ResearchId = Constants.UPGRADE_R09B_QUEST_COMPLETED_SOUTH_ALLIANCE_OR_ILLIDARI_DEFEATED;
       Required = true;
     }

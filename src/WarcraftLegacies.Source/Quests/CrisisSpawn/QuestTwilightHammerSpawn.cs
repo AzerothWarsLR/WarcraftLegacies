@@ -83,7 +83,7 @@ namespace WarcraftLegacies.Source.Quests.CrisisSpawn
         _cho.ForceCreate(completingFaction.Player, spawn, 270);
 
         completingFaction.Player.SetTeam(TeamSetup.Oldgods);
-        completingFaction.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, 2000);
+        completingFaction.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, (int)((GameTime.GetGameTime() / 60) * 100));
         completingFaction.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_LUMBER, 8000);
 
         if (GetLocalPlayer() == completingFaction.Player)
