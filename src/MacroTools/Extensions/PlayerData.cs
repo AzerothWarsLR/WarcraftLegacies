@@ -172,7 +172,7 @@ namespace MacroTools.Extensions
     public void RemoveControlPoint(ControlPoint controlPoint)
     {
       ControlPoints.Remove(controlPoint);
-      Team?.AddControlPoint(controlPoint);
+      Team?.RemoveControlPoint(controlPoint);
       ControlPointsChanged?.Invoke(this, this);
     }
 
