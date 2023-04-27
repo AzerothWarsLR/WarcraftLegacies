@@ -120139,6 +120139,12 @@ STRING 20025
  (Scourge Other)
 }
 
+STRING 20026
+// Upgrades: R09E (Chaos), Name (Name)
+{
+Quest Completed: Blackrock and Roll
+}
+
 STRING 20027
 // Units: n0C3 (Shrine of Azshara), EditorSuffix (Name - Editor Suffix)
 {

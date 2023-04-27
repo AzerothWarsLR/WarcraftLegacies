@@ -69,7 +69,7 @@ namespace WarcraftLegacies.Source.Quests.CrisisSpawn
       if (completingFaction.Player != null)
       {
 
-        CreateStructureForced(completingFaction.Player, Constants.UNIT_H05U_TWILIGHT_CITADEL_TWILIGHT_T3, 19087, -7370, 180, 256);
+        CreateStructureForced(completingFaction.Player, Constants.UNIT_H05U_TWILIGHT_CITADEL_TWILIGHT_OTHER, 19087, -7370, 180, 256);
 
         CreateUnits(completingFaction.Player, Constants.UNIT_O04B_CULTIST_TWILIGHT_HAMMER_WORKER, spawn.X, spawn.Y, 270, 12);
         CreateUnits(completingFaction.Player, Constants.UNIT_O04I_BATTLEMASTER_TWILIGHT, spawn.X, spawn.Y, 270, 6);
