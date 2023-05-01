@@ -18,26 +18,22 @@ namespace WarcraftLegacies.Source.Quests.Quelthalas
   public sealed class QuestTheBloodElves : QuestData
   {
     private readonly Rectangle _secondChanceRect;
-    private readonly LegendaryHero _anasterian;
-    private readonly LegendaryHero _kael;
+    private readonly LegendaryHero _rommath;
     private const int QuestResearchId = Constants.UPGRADE_R04Q_QUEST_COMPLETED_THE_BLOOD_ELVES_QUEL_THALAS;
     private const int UnittypeId = Constants.UNIT_N048_BLOOD_MAGE_QUEL_THALAS;
     private const int BuildingId = Constants.UNIT_N0A2_CONSORTIUM_QUEL_THALAS_MAGIC;
-    private const int HeroId = Constants.UNIT_HKAL_PRINCE_OF_QUEL_THALAS_QUEL_THALAS;
     private const int GoldOnFail = 500;
     private const int LumberOnFail = 750;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestTheBloodElves"/> class.
     /// </summary>
-    public QuestTheBloodElves(Rectangle secondChanceRect, Capital draktharonKeep, Capital sunwell,
-      LegendaryHero anasterian, LegendaryHero kael) : base("The Blood Elves",
+    public QuestTheBloodElves(Rectangle secondChanceRect, Capital draktharonKeep, Capital sunwell, LegendaryHero rommath) : base("The Blood Elves",
       "The Elves of Quel'thalas have a deep reliance on the Sunwell's magic. Without it, they would have to turn to darker magicks to sate themselves.",
       "ReplaceableTextures\\CommandButtons\\BTNHeroBloodElfPrince.blp")
     {
       _secondChanceRect = secondChanceRect;
-      _anasterian = anasterian;
-      _kael = kael;
+      _rommath = rommath;
       AddObjective(new ObjectiveControlCapital(draktharonKeep, false));
       AddObjective(new ObjectiveControlLevel(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N030_DRAK_THARON_KEEP_30GOLD_MIN), 10));
       AddObjective(new ObjectiveControlCapital(sunwell, true));
@@ -54,11 +50,11 @@ namespace WarcraftLegacies.Source.Quests.Quelthalas
 
     /// <inheritdoc />
     protected override string RewardDescription =>
-      $"Learn to train {GetObjectName(UnittypeId)}s from the Consortium, and you can summon Prince Kael'thas from the Altar of Prowess";
+      $"Learn to train {GetObjectName(UnittypeId)}s from the Consortium, and you can summon Magister Rommath from the Altar of Prowess";
 
     /// <inheritdoc />
     protected override string PenaltyDescription =>
-      $"You lose everything you control, but you gain Prince Kael'thas at the Dalaran Dungeons, you can train {GetObjectName(UnittypeId)}s from the Consortium, you gain the Mana Addiction power, and you receive 500 gold and 750 lumber";
+      $"You lose everything you control, but you gain Magister Rommath at the Dalaran Dungeons, you can train {GetObjectName(UnittypeId)}s from the Consortium, you gain the Mana Addiction power, and you receive 500 gold and 750 lumber";
 
     /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)
@@ -71,7 +67,6 @@ namespace WarcraftLegacies.Source.Quests.Quelthalas
     /// <inheritdoc />
     protected override void OnFail(Faction completingFaction)
     {
-      _kael.StartingXp = GetHeroXP(_anasterian.Unit);
       completingFaction.Obliterate();
       if (completingFaction.ScoreStatus == ScoreStatus.Defeated) 
         return;
@@ -89,7 +84,6 @@ namespace WarcraftLegacies.Source.Quests.Quelthalas
     {
       whichFaction.ModObjectLimit(QuestResearchId, Faction.UNLIMITED);
       whichFaction.ModObjectLimit(UnittypeId, 6);
-      whichFaction.ModObjectLimit(HeroId, 1);
     }
 
     private void CreateSecondChanceUnits(Faction whichFaction)
@@ -102,11 +96,10 @@ namespace WarcraftLegacies.Source.Quests.Quelthalas
       GeneralHelpers.CreateUnits(whichPlayer, Constants.UNIT_N048_BLOOD_MAGE_QUEL_THALAS, spawn.X, spawn.Y, 270, 6);
       GeneralHelpers.CreateUnits(whichPlayer, Constants.UNIT_HHES_SWORDSMAN_QUEL_THALAS, spawn.X, spawn.Y, 270, 12);
       GeneralHelpers.CreateUnits(whichPlayer, Constants.UNIT_NHEA_RANGER_QUEL_THALAS, spawn.X, spawn.Y, 270, 12);
-      _kael.StartingXp = GetHeroXP(_anasterian.Unit);
-      _kael.ForceCreate(whichPlayer, _secondChanceRect.Center, 270);
-      UnitAddItem(_kael.Unit,
-        CreateItem(Constants.ITEM_I00M_SUMMON_ELVEN_WORKERS, GetUnitX(_kael.Unit),
-          GetUnitY(_kael.Unit)));
+      _rommath.ForceCreate(whichPlayer, _secondChanceRect.Center, 270);
+      UnitAddItem(_rommath.Unit,
+        CreateItem(Constants.ITEM_I00M_SUMMON_ELVEN_WORKERS, GetUnitX(_rommath.Unit),
+          GetUnitY(_rommath.Unit)));
     }
     
     private static void GrantPower(Faction whichFaction)

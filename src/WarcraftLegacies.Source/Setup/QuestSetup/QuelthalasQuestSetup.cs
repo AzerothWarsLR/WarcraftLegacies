@@ -15,8 +15,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
         preplacedUnitSystem, allLegendSetup.Quelthalas.Silvermoon, allLegendSetup.Quelthalas.Sunwell));
       quelthalas.StartingQuest = newQuest;
       quelthalas.AddQuest(new QuestTheBloodElves(Regions.BloodElfSecondChanceSpawn,
-        allLegendSetup.Neutral.DraktharonKeep, allLegendSetup.Quelthalas.Sunwell,
-        allLegendSetup.Quelthalas.Anasterian, allLegendSetup.Quelthalas.Kael));
+        allLegendSetup.Neutral.DraktharonKeep, allLegendSetup.Quelthalas.Sunwell, allLegendSetup.Quelthalas.Rommath));
       quelthalas.AddQuest(new QuestQueldanil(Regions.QuelDanil_Lodge, allLegendSetup.Neutral.Caerdarrow));
       quelthalas.AddQuest(new QuestQueensArchive(allLegendSetup.Quelthalas.Kael));
       quelthalas.AddQuest(new QuestForgottenKnowledge(Regions.IllidanStartingPosition));
