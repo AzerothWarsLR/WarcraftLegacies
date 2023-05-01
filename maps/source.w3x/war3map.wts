@@ -108107,12 +108107,6 @@ STRING 18024
 Shimmering Flats (10gold/min)
 }
 
-STRING 18025
-// Units: n0BO (Razorfen Downs (15gold/min)), Name (Name)
-{
-Razorfen Downs (15gold/min)
-}
-
 STRING 18026
 // Abilities: A0U5 (Greater Storm Bolt), EditorSuffix (Editor Suffix)
 {
