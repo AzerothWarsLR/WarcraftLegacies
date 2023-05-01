@@ -333,6 +333,9 @@ gg_rct_DraeneiQuestKill = nil
 gg_rct_FountainUnlock = nil
 gg_rct_EntireMap = nil
 gg_rct_NzothStartPosition = nil
+gg_rct_Biodome1 = nil
+gg_rct_Biodome3 = nil
+gg_rct_Biodome2 = nil
 gg_snd_ArcaneObservatoryWhat1 = nil
 gg_snd_ArrangedTeamInvitation = nil
 gg_snd_ClanInvitation = nil
@@ -521,9 +524,6 @@ gg_snd_DoorCloseRemix = nil
 gg_snd_DoorOpenRemix = nil
 gg_snd_NuclearLaunchDetected = nil
 gg_snd_IllidansTheme = ""
-gg_rct_Biodome1 = nil
-gg_rct_Biodome3 = nil
-gg_rct_Biodome2 = nil
 function InitGlobals()
 end
 
@@ -2638,7 +2638,7 @@ u = BlzCreateUnitWithSkin(p, FourCC("h0C9"), -22848.0, -23616.0, 270.000, FourCC
 u = BlzCreateUnitWithSkin(p, FourCC("h0C8"), -21344.0, -23136.0, 270.000, FourCC("h0C8"))
 u = BlzCreateUnitWithSkin(p, FourCC("h0CA"), -21920.0, -23648.0, 270.000, FourCC("h0CA"))
 u = BlzCreateUnitWithSkin(p, FourCC("h0CB"), -22368.0, -23648.0, 270.000, FourCC("h0CB"))
-u = BlzCreateUnitWithSkin(p, FourCC("n0DZ"), -21504.0, -23616.0, 270.000, FourCC("n0DZ"))
+u = BlzCreateUnitWithSkin(p, FourCC("n0DZ"), -21440.0, -23616.0, 270.000, FourCC("n0DZ"))
 u = BlzCreateUnitWithSkin(p, FourCC("h0CC"), -22400.0, -24192.0, 270.000, FourCC("h0CC"))
 u = BlzCreateUnitWithSkin(p, FourCC("h0CD"), -22016.0, -24192.0, 270.000, FourCC("h0CD"))
 u = BlzCreateUnitWithSkin(p, FourCC("n0E0"), -22208.0, -24192.0, 270.000, FourCC("n0E0"))
@@ -2652,18 +2652,13 @@ local unitID
 local t
 local life
 
-u = BlzCreateUnitWithSkin(p, FourCC("n0E2"), -22691.3, -23287.0, -83.646, FourCC("n0E2"))
-u = BlzCreateUnitWithSkin(p, FourCC("Hkal"), -22801.0, -24434.2, -83.111, FourCC("Hkal"))
-SetUnitState(u, UNIT_STATE_MANA, 0)
+u = BlzCreateUnitWithSkin(p, FourCC("n0E2"), -22691.3, -23287.0, 276.354, FourCC("n0E2"))
+u = BlzCreateUnitWithSkin(p, FourCC("Hkal"), -22801.0, -24434.2, 276.889, FourCC("Hkal"))
 u = BlzCreateUnitWithSkin(p, FourCC("U004"), -22563.5, -24441.7, 267.248, FourCC("U004"))
-SetUnitState(u, UNIT_STATE_MANA, 0)
 SetUnitColor(u, ConvertPlayerColor(1))
 u = BlzCreateUnitWithSkin(p, FourCC("H098"), -22947.9, -24439.6, 274.350, FourCC("H098"))
-SetUnitState(u, UNIT_STATE_MANA, 0)
 u = BlzCreateUnitWithSkin(p, FourCC("n09S"), -21601.7, -24674.6, 263.562, FourCC("n09S"))
-SetUnitState(u, UNIT_STATE_MANA, 0)
-u = BlzCreateUnitWithSkin(p, FourCC("n02F"), -21453.4, -24673.8, -88.231, FourCC("n02F"))
-SetUnitState(u, UNIT_STATE_MANA, 0)
+u = BlzCreateUnitWithSkin(p, FourCC("n02F"), -21453.4, -24673.8, 271.770, FourCC("n02F"))
 end
 
 function CreateBuildingsForPlayer13()

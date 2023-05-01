@@ -78375,6 +78375,12 @@ STRING 13057
 Arrow Volley (effect)
 }
 
+STRING 13058
+// Units: n0CI (Goliathon), Name (Name)
+{
+Goliathon
+}
+
 STRING 13059
 // Buffs/Effects: X007 (Arcane Burst (Effect)), EditorName (Name (Editor Only))
 {
@@ -82645,24 +82651,6 @@ STRING 13770
 // Abilities: A0I0 (Rounds for Everyone), Ubertip (Tooltip - Normal - Extended)
 {
 Restores 300 hit points to friendly units in a large radius.
-}
-
-STRING 13771
-// Abilities: A0WW (Summon Zelemar), Ubertip (Tooltip - Normal - Extended)
-{
-Summons Zelemar the Wrathful, a strong demon champion to aid the hero in battle.|n|nLasts <A0WW,Dur1> seconds|n|cffffcc00Attacks land and air units.|r
-}
-
-STRING 13772
-// Abilities: A0WW (Summon Zelemar), Ubertip (Tooltip - Normal - Extended)
-{
-Summons Zelemar the Wrathful, a mighty demon champion to aid the hero in battle.|n|nLasts <A0WW,Dur2> seconds|n|cffffcc00Attacks land and air units.|r
-}
-
-STRING 13773
-// Abilities: A0WW (Summon Zelemar), Ubertip (Tooltip - Normal - Extended)
-{
-Summons Zelemar the Wrathful, an unstoppable demon champion to aid the hero in battle.|n|nLasts <A0WW,Dur3> seconds|n|cffffcc00Attacks land and air units.|r
 }
 
 STRING 13774
@@ -87574,7 +87562,7 @@ Dimensional Jump to Tempest Keep
 }
 
 STRING 14592
-// Abilities: A0WW (Summon Zelemar), Unhotkey (Hotkey - Turn Off)
+// Abilities: A0WW (Summon Goliathon), Unhotkey (Hotkey - Turn Off)
 {
 Z
 }
@@ -109308,7 +109296,7 @@ Q
 }
 
 STRING 18222
-// Abilities: A0WW (Summon Zelemar), Researchhotkey (Hotkey - Learn)
+// Abilities: A0WW (Summon Goliathon), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -110389,7 +110377,7 @@ Viral Plague
 }
 
 STRING 18402
-// Abilities: A0WW (Summon Zelemar), Hotkey (Hotkey - Normal)
+// Abilities: A0WW (Summon Goliathon), Hotkey (Hotkey - Normal)
 {
 R
 }
@@ -111973,14 +111961,8 @@ STRING 18665
 Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Mason, Thane |n|cfff5962dAbilities:|R Dwarven Masonry, Powered Up Ammunition|n|cfff5962dResearches:|R Full Scale Escalation
 }
 
-STRING 18666
-// Units: n0CI (Zelemar the Wrathful), Name (Name)
-{
-Zelemar the Wrathful
-}
-
 STRING 18667
-// Units: n0CI (Zelemar the Wrathful), EditorSuffix (Name - Editor Suffix)
+// Units: n0CI (Goliathon), EditorSuffix (Name - Editor Suffix)
 {
  (2)
 }
@@ -112291,26 +112273,14 @@ STRING 18718
 Provides 8 food, which increases the maximum number of units that can be trained and can heal nearby friendly units.|n|n|cfff5962dAbilities:|r Swig
 }
 
-STRING 18719
-// Units: n0CJ (Zelemar the Wrathful), Name (Name)
-{
-Zelemar the Wrathful
-}
-
 STRING 18720
-// Units: n0CJ (Zelemar the Wrathful), EditorSuffix (Name - Editor Suffix)
+// Units: n0CJ (Goliathon), EditorSuffix (Name - Editor Suffix)
 {
  (1)
 }
 
-STRING 18721
-// Units: n0CK (Zelemar the Wrathful), Name (Name)
-{
-Zelemar the Wrathful
-}
-
 STRING 18722
-// Units: n0CK (Zelemar the Wrathful), EditorSuffix (Name - Editor Suffix)
+// Units: n0CK (Goliathon), EditorSuffix (Name - Editor Suffix)
 {
  (3)
 }
@@ -112471,40 +112441,10 @@ STRING 18748
 - Frost Bite,- Frost Bite|n- Frost Shell,- Frost Bite|n- Frost Shell|n - Parasite
 }
 
-STRING 18749
-// Abilities: A0WW (Summon Zelemar), Name (Name)
-{
-Summon Zelemar
-}
-
-STRING 18750
-// Abilities: A0WW (Summon Zelemar), Researchtip (Tooltip - Learn)
-{
-Learn Summon Zelemar  - [|cffffcc00Level %d|r]
-}
-
 STRING 18751
 // Buffs/Effects: B0AD (), Bufftip (Tooltip)
 {
 Serrated Bite
-}
-
-STRING 18752
-// Abilities: A0WW (Summon Zelemar), Tip (Tooltip - Normal)
-{
-Summon Zelemar
-}
-
-STRING 18753
-// Abilities: A0WW (Summon Zelemar), Tip (Tooltip - Normal)
-{
-Summon Zelemar
-}
-
-STRING 18754
-// Abilities: A0WW (Summon Zelemar), Tip (Tooltip - Normal)
-{
-Summon Zelemar
 }
 
 STRING 18755
@@ -112525,32 +112465,14 @@ STRING 18757
 R
 }
 
-STRING 18758
-// Abilities: A0WW (Summon Zelemar), Untip (Tooltip - Turn Off)
-{
-Banish Zelemar
-}
-
-STRING 18759
-// Abilities: A0WW (Summon Zelemar), Untip (Tooltip - Turn Off)
-{
-Banish Zelemar
-}
-
-STRING 18760
-// Abilities: A0WW (Summon Zelemar), Untip (Tooltip - Turn Off)
-{
-Banish Zelemar
-}
-
 STRING 18761
-// Abilities: A0WW (Summon Zelemar), EditorSuffix (Editor Suffix)
+// Abilities: A0WX (Curse of Flame), EditorSuffix (Editor Suffix)
 {
  (Jergosh, Warsong)
 }
 
 STRING 18762
-// Abilities: A0WX (Curse of Flame), EditorSuffix (Editor Suffix)
+// Abilities: A0WY (Banish), EditorSuffix (Editor Suffix)
 {
  (Jergosh, Warsong)
 }
@@ -112607,12 +112529,6 @@ STRING 18771
 // Buffs/Effects: B0AT (), Bufftip (Tooltip)
 {
 Curse of Flame
-}
-
-STRING 18772
-// Abilities: A0WY (Banish), EditorSuffix (Editor Suffix)
-{
- (Jergosh, Warsong)
 }
 
 STRING 18773
@@ -113291,12 +113207,6 @@ STRING 18885
 // Abilities: A0VW (Wrath of Ragnaros), Ubertip (Tooltip - Normal - Extended)
 {
 Heaves a wave of fire at enemy units, dealing <A0VW,DataA1> damage.
-}
-
-STRING 18886
-// Abilities: A0WW (Summon Zelemar), Researchubertip (Tooltip - Learn - Extended)
-{
-Summons Zelemar the Wrathful to fight as the Hero's champion.|n|n|cffffcc00Level 1|r - Summons a Strong to aid the hero in battle. Lasts <A0WW,Dur1> seconds.|n|cffffcc00Level 2|r - Summons a Mighty Demon to aid the hero in battle. Lasts <A0WW,Dur2> seconds.|n|cffffcc00Level 3|r - Summons an Unstoppable Demon to aid the hero in battle. Lasts <A0WW,Dur3> seconds.
 }
 
 STRING 18887
@@ -122330,7 +122240,7 @@ Phase Blade - [|cffffcc00Level 2|r]
 }
 
 STRING 20392
-// Upgrades: Rhlh (Improved Lumber Harvesting,Advanced Lumber Harvesting), Hotkey (Hotkey)
+// Abilities: A0ZN (Crystal Strike), Hotkey (Hotkey - Normal)
 {
 E
 }
@@ -122852,7 +122762,7 @@ STRING 20478
 }
 
 STRING 20479
-// Upgrades: Renb (Nature's Blessing), Hotkey (Hotkey)
+// Upgrades: Rhlh (Improved Lumber Harvesting,Advanced Lumber Harvesting), Hotkey (Hotkey)
 {
 E
 }
@@ -123074,7 +122984,7 @@ W
 }
 
 STRING 20516
-// Upgrades: R06K (Defend), Hotkey (Hotkey)
+// Upgrades: Renb (Nature's Blessing), Hotkey (Hotkey)
 {
 E
 }
@@ -123308,7 +123218,7 @@ Summon Raptors
 }
 
 STRING 20555
-// Upgrades: R06G (Defend), Hotkey (Hotkey)
+// Upgrades: R06K (Defend), Hotkey (Hotkey)
 {
 E
 }
@@ -123332,7 +123242,7 @@ STRING 20558
 }
 
 STRING 20559
-// Upgrades: R06F (Defend), Hotkey (Hotkey)
+// Upgrades: R06G (Defend), Hotkey (Hotkey)
 {
 E
 }
@@ -123753,7 +123663,7 @@ C
 }
 
 STRING 20629
-// Upgrades: R064 (Nature's Blessing), Hotkey (Hotkey)
+// Upgrades: R06F (Defend), Hotkey (Hotkey)
 {
 E
 }
@@ -124095,19 +124005,19 @@ R
 }
 
 STRING 20686
-// Upgrades: R03M (Defend), Hotkey (Hotkey)
+// Upgrades: R064 (Nature's Blessing), Hotkey (Hotkey)
 {
 E
 }
 
 STRING 20687
-// Upgrades: R02P (Backpack), Hotkey (Hotkey)
+// Upgrades: R03M (Defend), Hotkey (Hotkey)
 {
 E
 }
 
 STRING 20688
-// Upgrades: R03O (Animal War Training), Hotkey (Hotkey)
+// Upgrades: R02P (Backpack), Hotkey (Hotkey)
 {
 E
 }
@@ -124598,6 +124508,12 @@ STRING 20769
 D
 }
 
+STRING 20770
+// Units: n0CJ (Goliathon), Name (Name)
+{
+Goliathon
+}
+
 STRING 20771
 // Upgrades: R02V (Naga Siren Adept Training,Naga Siren Master Training), Hotkey (Hotkey)
 {
@@ -124623,7 +124539,7 @@ W
 }
 
 STRING 20775
-// Upgrades: R097 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R03O (Animal War Training), Hotkey (Hotkey)
 {
 E
 }
@@ -124749,6 +124665,102 @@ Q
 }
 
 STRING 20796
+// Upgrades: R097 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+{
+E
+}
+
+STRING 20797
+// Units: n0CK (Goliathon), Name (Name)
+{
+Goliathon
+}
+
+STRING 20798
+// Abilities: A0WW (Summon Goliathon), Name (Name)
+{
+Summon Goliathon
+}
+
+STRING 20799
+// Abilities: A0WW (Summon Goliathon), Researchtip (Tooltip - Learn)
+{
+Learn Summon Goliathon- [|cffffcc00Level %d|r]
+}
+
+STRING 20800
+// Abilities: A0WW (Summon Goliathon), Researchubertip (Tooltip - Learn - Extended)
+{
+Summons Goliathon to fight as the Hero's champion.|n|n|cffffcc00Level 1|r - Has the following abilities: Spell Immunity, War Stomp, Pulverize, Hurl Boulder. Lasts <A0WW,Dur1> seconds.|n|cffffcc00Level 2|r - Has the aditional ability: Crystal Strike. Lasts <A0WW,Dur2> seconds.|n|cffffcc00Level 3|r - Goliathon is now much harder to kill and lasts much longer. Lasts <A0WW,Dur3> seconds.
+}
+
+STRING 20801
+// Abilities: A0WW (Summon Goliathon), Tip (Tooltip - Normal)
+{
+Summon Goliathon
+}
+
+STRING 20802
+// Abilities: A0WW (Summon Goliathon), Tip (Tooltip - Normal)
+{
+Summon Goliathon
+}
+
+STRING 20803
+// Abilities: A0WW (Summon Goliathon), Tip (Tooltip - Normal)
+{
+Summon Goliathon
+}
+
+STRING 20804
+// Abilities: A0WW (Summon Goliathon), Ubertip (Tooltip - Normal - Extended)
+{
+Summons Goliathon, a strong golem to aid the hero in battle.|n|cfff5962dAbilities:|R Hurl Boulder, War Stomp, Spell Immunity, Pulverize.|n|nLasts <A0WW,Dur1> seconds|n|cffffcc00Attacks land and air units.|r
+}
+
+STRING 20805
+// Abilities: A0WW (Summon Goliathon), Ubertip (Tooltip - Normal - Extended)
+{
+Summons Goliathon, a strong golem to aid the hero in battle.|n|cfff5962dAbilities:|R Hurl Boulder, War Stomp, Crystal Strike, Spell Immunity, Pulverize.|n|nLasts <A0WW,Dur2> seconds|n|cffffcc00Attacks land and air units.|r
+}
+
+STRING 20806
+// Abilities: A0WW (Summon Goliathon), Ubertip (Tooltip - Normal - Extended)
+{
+Summons Goliathon, an extremely strong golem to aid the hero in battle.|n|cfff5962dAbilities:|R Hurl Boulder, War Stomp, Crystal Strike, Spell Immunity, Pulverize.|n|nLasts <A0WW,Dur3> seconds|n|cffffcc00Attacks land and air units.|r
+}
+
+STRING 20807
+// Abilities: A0WW (Summon Goliathon), EditorSuffix (Editor Suffix)
+{
+(Pathaleon)
+}
+
+STRING 20808
+// Abilities: A0ZN (Crystal Strike), EditorSuffix (Editor Suffix)
+{
+(Goliathon)
+}
+
+STRING 20809
+// Abilities: A0ZN (Crystal Strike), Name (Name)
+{
+Crystal Strike
+}
+
+STRING 20810
+// Abilities: A0ZN (Crystal Strike), Tip (Tooltip - Normal)
+{
+Crystal Strike
+}
+
+STRING 20811
+// Abilities: A0ZN (Crystal Strike), Ubertip (Tooltip - Normal - Extended)
+{
+Instantly turns a creature inside-out. Dealing 700 damage.
+}
+
+STRING 20812
 // Upgrades: R086 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 E
