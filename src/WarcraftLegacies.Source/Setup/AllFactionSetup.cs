@@ -24,6 +24,7 @@ namespace WarcraftLegacies.Source.Setup
       GoblinSetup.Setup(preplacedUnitSystem);
       DraeneiSetup.Setup();
       ZandalarSetup.Setup(preplacedUnitSystem);
+      SunfurySetup.Setup(preplacedUnitSystem);
 
       CthunSetup.Setup(preplacedUnitSystem);
       NazjatarSetup.Setup(preplacedUnitSystem);

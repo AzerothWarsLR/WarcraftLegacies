@@ -14,16 +14,16 @@ namespace WarcraftLegacies.Source.GameLogic
     /// </summary>
     public static void Run()
     {
-      var areas = new Rectangle[]
-      {
-        Regions.TempestKeepHide2
-      };
-      foreach (var area in areas)
-      {
-        foreach (var unit in CreateGroup().EnumUnitsInRect(area).EmptyToList())
-          unit.Remove();
-        EnumDestructablesInRect(area.Rect, null, () => { RemoveDestructable(GetEnumDestructable()); });
-      }
+      //var areas = new Rectangle[]
+      //{
+      //  Regions.TempestKeepHide2
+      //};
+      //foreach (var area in areas)
+      //{
+      //  foreach (var unit in CreateGroup().EnumUnitsInRect(area).EmptyToList())
+      //    unit.Remove();
+      //  EnumDestructablesInRect(area.Rect, null, () => { RemoveDestructable(GetEnumDestructable()); });
+      //}
     }
   }
 }

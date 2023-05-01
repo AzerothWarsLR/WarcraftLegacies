@@ -20129,7 +20129,7 @@ Q
 }
 
 STRING 3357
-// Units: h0C9 (Military Quarter), Hotkey (Hotkey)
+// Units: h0C9 (Training Quarter), Hotkey (Hotkey)
 {
 A
 }
@@ -21682,7 +21682,7 @@ STRING 3615
 }
 
 STRING 3616
-// Units: h0CB (Arcane Sanctum), Hotkey (Hotkey)
+// Units: h0CB (Lyceum Arcanum), Hotkey (Hotkey)
 {
 S
 }
@@ -28601,7 +28601,7 @@ STRING 4768
 }
 
 STRING 4769
-// Units: n0DZ (Consortium), Hotkey (Hotkey)
+// Units: n0DZ (The Infinity Fountain), Hotkey (Hotkey)
 {
 F
 }
@@ -30209,7 +30209,7 @@ STRING 5036
 }
 
 STRING 5037
-// Units: h0CI (Workshop), Hotkey (Hotkey)
+// Units: h0CI (Tempest-Forge), Hotkey (Hotkey)
 {
 F
 }
@@ -31337,7 +31337,7 @@ STRING 5224
 }
 
 STRING 5225
-// Units: h02P (Steading), Hotkey (Hotkey)
+// Units: h02P (Holding), Hotkey (Hotkey)
 {
 Q
 }
@@ -31349,7 +31349,7 @@ STRING 5226
 }
 
 STRING 5227
-// Units: n0E2 (Architect), Hotkey (Hotkey)
+// Units: n0E2 (Technician), Hotkey (Hotkey)
 {
 Q
 }
@@ -31601,7 +31601,7 @@ NE/Red
 }
 
 STRING 5269
-// Units: n09S (Sunfury Warrior), Hotkey (Hotkey)
+// Units: n09S (Centurion), Hotkey (Hotkey)
 {
 Q
 }
@@ -31613,7 +31613,7 @@ Abolish Magic (|cffffcc00Q|r)
 }
 
 STRING 5271
-// Units: h0CH (Tidesage), Hotkey (Hotkey)
+// Units: h0CH (Astromancer), Hotkey (Hotkey)
 {
 Q
 }
@@ -31877,13 +31877,13 @@ Raises 1 Plagueling from a corpse for 45 seconds.
 }
 
 STRING 5315
-// Units: n0E4 (Infernal Juggernaut), Hotkey (Hotkey)
+// Units: n0E4 (Tempest-Forge Scorpion), Hotkey (Hotkey)
 {
 Q
 }
 
 STRING 5316
-// Units: n0E6 (Doom Guard), Hotkey (Hotkey)
+// Units: n0E6 (Shivarra), Hotkey (Hotkey)
 {
 Q
 }
@@ -35111,7 +35111,7 @@ STRING 5853
 }
 
 STRING 5854
-// Units: h0CF (Marksman), Hotkey (Hotkey)
+// Units: h0CF (Bowman), Hotkey (Hotkey)
 {
 W
 }
@@ -35219,13 +35219,13 @@ STRING 5871
 }
 
 STRING 5872
-// Units: h0CG (Arcanist), Hotkey (Hotkey)
+// Units: h0CG (Flamekeeper), Hotkey (Hotkey)
 {
 W
 }
 
 STRING 5873
-// Units: n0E7 (Kirin Tor), Hotkey (Hotkey)
+// Units: n0E7 (Bloodwarder), Hotkey (Hotkey)
 {
 W
 }
@@ -35597,7 +35597,7 @@ STRING 5934
 }
 
 STRING 5935
-// Units: n0E8 (Sky Barge), Hotkey (Hotkey)
+// Units: n0E8 (Skyship), Hotkey (Hotkey)
 {
 W
 }
@@ -38627,7 +38627,7 @@ STRING 6439
 }
 
 STRING 6440
-// Units: h0CA (Academy), Hotkey (Hotkey)
+// Units: h0CA (Void Well), Hotkey (Hotkey)
 {
 D
 }
@@ -40397,7 +40397,7 @@ Calls forth a wave of energy that heals a target and bounces to nearby friendlie
 }
 
 STRING 6735
-// Units: h0C8 (Artisan's Hall), Hotkey (Hotkey)
+// Units: h0C8 (Forge), Hotkey (Hotkey)
 {
 E
 }
@@ -40871,7 +40871,7 @@ Brute Strength
 }
 
 STRING 6814
-// Units: n0E5 (Infernal), Hotkey (Hotkey)
+// Units: n0E5 (Void Reaver), Hotkey (Hotkey)
 {
 E
 }
@@ -48987,7 +48987,7 @@ Holy Fire
 }
 
 STRING 8163
-// Units: h0C6 (Altar of Prowess), Hotkey (Hotkey)
+// Units: h0C6 (Altar of Blood), Hotkey (Hotkey)
 {
 X
 }
@@ -83656,7 +83656,7 @@ rlev
 }
 
 STRING 13939
-// Units: n0E0 (Sun Tower), Hotkey (Hotkey)
+// Units: n0E0 (Sky-Fury Tower), Hotkey (Hotkey)
 {
 Z
 }
@@ -83704,7 +83704,7 @@ STRING 13946
 }
 
 STRING 13947
-// Units: n0E1 (Improved Sun Tower), Hotkey (Hotkey)
+// Units: n0E1 (Improved Sky-Fury Tower), Hotkey (Hotkey)
 {
 Z
 }
@@ -86217,7 +86217,7 @@ rhpx
 }
 
 STRING 14367
-// Units: h0C4 (Mansion), Hotkey (Hotkey)
+// Units: h0C4 (Covenant), Hotkey (Hotkey)
 {
 C
 }
@@ -86235,7 +86235,7 @@ Research Seal of Righteousness
 }
 
 STRING 14370
-// Units: h0C5 (Palace), Hotkey (Hotkey)
+// Units: h0C5 (Sanctuary), Hotkey (Hotkey)
 {
 C
 }
@@ -86247,7 +86247,7 @@ STRING 14371
 }
 
 STRING 14372
-// Units: h0CC (Arcane Vault), Hotkey (Hotkey)
+// Units: h0CC (Aether Vault), Hotkey (Hotkey)
 {
 C
 }
@@ -112472,21 +112472,9 @@ Serrated Bite
 }
 
 STRING 18752
-// Units: n09S (Sunfury Warrior), EditorSuffix (Name - Editor Suffix)
+// Units: n09S (Centurion), EditorSuffix (Name - Editor Suffix)
 {
 (sunfury)
-}
-
-STRING 18753
-// Units: n09S (Sunfury Warrior), Name (Name)
-{
-Sunfury Warrior
-}
-
-STRING 18754
-// Units: n09S (Sunfury Warrior), Tip (Tooltip - Basic)
-{
-Train Sunfury Warrior
 }
 
 STRING 18755
@@ -112508,21 +112496,15 @@ R
 }
 
 STRING 18758
-// Units: n09S (Sunfury Warrior), Ubertip (Tooltip - Extended)
+// Units: n09S (Centurion), Ubertip (Tooltip - Extended)
 {
 Stout protector of Quel'Thalas.|n|cfff5962dAbilities:|R Charge, Defend, Combat Experience, Spell Resistance, Feedback|n|n|cffffcc00Attacks land units.|r
 }
 
 STRING 18759
-// Units: h0CF (Marksman), EditorSuffix (Name - Editor Suffix)
+// Units: h0CF (Bowman), EditorSuffix (Name - Editor Suffix)
 {
 (sunfury)
-}
-
-STRING 18760
-// Units: h0CF (Marksman), Name (Name)
-{
-Marksman
 }
 
 STRING 18761
@@ -112589,12 +112571,6 @@ STRING 18771
 // Buffs/Effects: B0AT (), Bufftip (Tooltip)
 {
 Curse of Flame
-}
-
-STRING 18772
-// Units: h0CF (Marksman), Tip (Tooltip - Basic)
-{
-Train Marksman
 }
 
 STRING 18773
@@ -113276,7 +113252,7 @@ Heaves a wave of fire at enemy units, dealing <A0VW,DataA1> damage.
 }
 
 STRING 18886
-// Units: h0CF (Marksman), Ubertip (Tooltip - Extended)
+// Units: h0CF (Bowman), Ubertip (Tooltip - Extended)
 {
 One of the few Elves to return from Outland, ready again to defend Azeroth.|n|cfff5962dAbilities:|R Fire Arrows, Critical strike, Feedback|n|n|cffffcc00Attacks land and air units.|r
 }
@@ -123392,7 +123368,7 @@ Summon Ouro
 }
 
 STRING 20572
-// Units: h02P (Steading), EditorSuffix (Name - Editor Suffix)
+// Units: h02P (Holding), EditorSuffix (Name - Editor Suffix)
 {
 (Sunfury T1)
 }
@@ -124322,92 +124298,56 @@ STRING 20726
 W
 }
 
-STRING 20727
-// Units: h02P (Steading), Name (Name)
-{
-Steading
-}
-
 STRING 20728
-// Units: h02P (Steading), Tip (Tooltip - Basic)
+// Units: h02P (Holding), Tip (Tooltip - Basic)
 {
 Build Steading
 }
 
 STRING 20729
-// Units: h02P (Steading), Ubertip (Tooltip - Extended)
+// Units: h02P (Holding), Ubertip (Tooltip - Extended)
 {
 Main gathering structure.|n|cfff5962dTrains:|R Architect
 }
 
 STRING 20730
-// Units: h0C4 (Mansion), EditorSuffix (Name - Editor Suffix)
+// Units: h0C4 (Covenant), EditorSuffix (Name - Editor Suffix)
 {
 (Sunfury T2)
 }
 
-STRING 20731
-// Units: h0C4 (Mansion), Name (Name)
-{
-Mansion
-}
-
 STRING 20732
-// Units: h0C4 (Mansion), Tip (Tooltip - Basic)
+// Units: h0C5 (Sanctuary), Tip (Tooltip - Basic)
 {
 Upgrade to Sanctuary
 }
 
 STRING 20733
-// Units: h0C4 (Mansion), Ubertip (Tooltip - Extended)
+// Units: h0C4 (Covenant), Ubertip (Tooltip - Extended)
 {
 Main gathering structure.|n|cfff5962dTrains:|R Architect
 }
 
 STRING 20734
-// Units: h0C5 (Palace), EditorSuffix (Name - Editor Suffix)
+// Units: h0C5 (Sanctuary), EditorSuffix (Name - Editor Suffix)
 {
 (Sunfury T3)
 }
 
-STRING 20735
-// Units: h0C5 (Palace), Name (Name)
-{
-Palace
-}
-
-STRING 20736
-// Units: h0C5 (Palace), Tip (Tooltip - Basic)
-{
-Upgrade to Palace
-}
-
 STRING 20737
-// Units: h0C5 (Palace), Ubertip (Tooltip - Extended)
+// Units: h0C5 (Sanctuary), Ubertip (Tooltip - Extended)
 {
 Main gathering structure.|n|cfff5962dTrains:|R Architect, Farstrider|n|cfff5962dResearches:|R Feint, Full Scale Escalation
 }
 
 STRING 20738
-// Units: h0C6 (Altar of Prowess), EditorSuffix (Name - Editor Suffix)
+// Units: h0C6 (Altar of Blood), EditorSuffix (Name - Editor Suffix)
 {
 (Sunfury Altar)
 }
 
-STRING 20739
-// Units: h0C6 (Altar of Prowess), Name (Name)
-{
-Altar of Prowess
-}
-
-STRING 20740
-// Units: h0C6 (Altar of Prowess), Tip (Tooltip - Basic)
-{
-Build Altar of Prowess
-}
-
 STRING 20741
-// Units: h0C6 (Altar of Prowess), Ubertip (Tooltip - Extended)
+// Units: h0C6 (Altar of Blood), Ubertip (Tooltip - Extended)
 {
 Revives slain Heroes and Demi-heroes.
 }
@@ -124437,121 +124377,73 @@ Build Biodome
 }
 
 STRING 20746
-// Units: h0C8 (Artisan's Hall), EditorSuffix (Name - Editor Suffix)
+// Units: h0C8 (Forge), EditorSuffix (Name - Editor Suffix)
 {
 (Sunfury Research)
 }
 
-STRING 20747
-// Units: h0C8 (Artisan's Hall), Name (Name)
-{
-Artisan's Hall
-}
-
-STRING 20748
-// Units: h0C8 (Artisan's Hall), Tip (Tooltip - Basic)
-{
-Build Artisan's Hall
-}
-
 STRING 20749
-// Units: h0C8 (Artisan's Hall), Ubertip (Tooltip - Extended)
+// Units: h0C8 (Forge), Ubertip (Tooltip - Extended)
 {
 An exclusive place of ingenuity for those clever enough to work there.|n|cfff5962dResearches: |RForged Weaponry, Armor Plating, Power Infusion, Improved Cannons, Fortified Hulls
 }
 
 STRING 20750
-// Units: h0C9 (Military Quarter), EditorSuffix (Name - Editor Suffix)
+// Units: h0C9 (Training Quarter), EditorSuffix (Name - Editor Suffix)
 {
 (Sunfury Barracks)
 }
 
-STRING 20751
-// Units: h0C9 (Military Quarter), Name (Name)
-{
-Military Quarter
-}
-
-STRING 20752
-// Units: h0C9 (Military Quarter), Tip (Tooltip - Basic)
-{
-Build Military Quarter
-}
-
 STRING 20753
-// Units: h0C9 (Military Quarter), Ubertip (Tooltip - Extended)
+// Units: h0C9 (Training Quarter), Ubertip (Tooltip - Extended)
 {
 Section of Dalaran dedicated to military personnel.|n|cfff5962dTrains:|R Battlemage, Initiate Mage|n|cfff5962dResearches:|R Improved Phase Blade, Improved Slow
 }
 
 STRING 20754
-// Units: h0CA (Academy), EditorSuffix (Name - Editor Suffix)
+// Units: h0CA (Void Well), EditorSuffix (Name - Editor Suffix)
 {
 (Sunfury Specialist)
 }
 
-STRING 20755
-// Units: h0CA (Academy), Name (Name)
-{
-Academy
-}
-
-STRING 20756
-// Units: h0CA (Academy), Tip (Tooltip - Basic)
-{
-Build Academy
-}
-
 STRING 20757
-// Units: h0CA (Academy), Ubertip (Tooltip - Extended)
+// Units: h0CA (Void Well), Ubertip (Tooltip - Extended)
 {
 Training institution for elite Elven warriors.|n|cfff5962dTrains:|R Spell Breaker, Dragonhawk Rider, Arcane Annihilator|n|cfff5962dResearches:|R Control Magic, Cloud, Improved Glaives
 }
 
 STRING 20758
-// Units: h0CB (Arcane Sanctum), EditorSuffix (Name - Editor Suffix)
+// Units: h0CB (Lyceum Arcanum), EditorSuffix (Name - Editor Suffix)
 {
 (Sunfury Magic)
 }
 
 STRING 20759
-// Units: h0CB (Arcane Sanctum), Ubertip (Tooltip - Extended)
+// Units: h0CB (Lyceum Arcanum), Ubertip (Tooltip - Extended)
 {
 Sanctum for the spellcasters of Quel'thalas.|n|cfff5962dTrains:|R Priest, Sorceress, Arcane Wagon|n|cfff5962dResearches:|R Priest Training, Sorceress Training, Magic Sentry
 }
 
 STRING 20760
-// Units: n0DZ (Consortium), EditorSuffix (Name - Editor Suffix)
+// Units: n0DZ (The Infinity Fountain), EditorSuffix (Name - Editor Suffix)
 {
 (Sunfury Magic)
 }
 
-STRING 20761
-// Units: n0DZ (Consortium), Name (Name)
-{
-Consortium
-}
-
-STRING 20762
-// Units: n0DZ (Consortium), Tip (Tooltip - Basic)
-{
-Build Consortium
-}
-
 STRING 20763
-// Units: n0DZ (Consortium), Ubertip (Tooltip - Extended)
+// Units: n0DZ (The Infinity Fountain), Ubertip (Tooltip - Extended)
 {
 Gathering place for Quel'thalas' most prestigious spellcasters.|n|cfff5962dTrains:|R Magus, Blood Mage, Warlock|n|cfff5962dResearches:|R Magus Training
 }
 
 STRING 20764
-// Units: h0CC (Arcane Vault), EditorSuffix (Name - Editor Suffix)
+// Units: h0CC (Aether Vault), EditorSuffix (Name - Editor Suffix)
 {
  (Sunfury Shop)
 }
 
 STRING 20765
-// Units: h0CC (Arcane Vault), Ubertip (Tooltip - Extended)
+// Units: h0CC (Aether Vault), Ubertip (Tooltip - Extended)
 {
 Creates a shop with purchasable items.
 }
@@ -124640,74 +124532,38 @@ STRING 20779
 C
 }
 
-STRING 20780
-// Units: n0E0 (Sun Tower), Name (Name)
-{
-Sun Tower
-}
-
-STRING 20781
-// Units: n0E0 (Sun Tower), Tip (Tooltip - Basic)
-{
-Build Sun Tower
-}
-
 STRING 20782
-// Units: n0E0 (Sun Tower), Ubertip (Tooltip - Extended)
+// Units: n0E0 (Sky-Fury Tower), Ubertip (Tooltip - Extended)
 {
 Tower infused with the magic of the Sunwell.|n|cfff5962dCan learn:|R Magic Sentry|n|cfff5962dUpgrades Into:|R Improved Sun Tower|n|n|cffffcc00Attacks land and air units.|r
 }
 
 STRING 20783
-// Units: n0E0 (Sun Tower), EditorSuffix (Name - Editor Suffix)
+// Units: n0E0 (Sky-Fury Tower), EditorSuffix (Name - Editor Suffix)
 {
 (sunfury tower)
 }
 
-STRING 20784
-// Units: n0E1 (Improved Sun Tower), Name (Name)
-{
-Improved Sun Tower
-}
-
-STRING 20785
-// Units: n0E1 (Improved Sun Tower), Tip (Tooltip - Basic)
-{
-Upgrade to Improved Sun Tower
-}
-
 STRING 20786
-// Units: n0E1 (Improved Sun Tower), Ubertip (Tooltip - Extended)
+// Units: n0E1 (Improved Sky-Fury Tower), Ubertip (Tooltip - Extended)
 {
 Sunwell infused stone and steel, built to defend Quel'Thalas.|n|cfff5962dCan learn:|R Magic Sentry|n|n|cffffcc00Attacks land and air units.|r
 }
 
 STRING 20787
-// Units: n0E1 (Improved Sun Tower), EditorSuffix (Name - Editor Suffix)
+// Units: n0E1 (Improved Sky-Fury Tower), EditorSuffix (Name - Editor Suffix)
 {
 (sunfury tower)
 }
 
 STRING 20788
-// Units: n0E2 (Architect), EditorSuffix (Name - Editor Suffix)
+// Units: n0E2 (Technician), EditorSuffix (Name - Editor Suffix)
 {
 (Sunfury Worker)
 }
 
-STRING 20789
-// Units: n0E2 (Architect), Name (Name)
-{
-Architect
-}
-
-STRING 20790
-// Units: n0E2 (Architect), Tip (Tooltip - Basic)
-{
-Train Architect
-}
-
 STRING 20791
-// Units: n0E2 (Architect), Ubertip (Tooltip - Extended)
+// Units: n0E2 (Technician), Ubertip (Tooltip - Extended)
 {
 Intelligent builder of Thalassian structures.|n|cfff5962dAbilities:|r Repair, Gather|n|n|cffffcc00Attacks land units and trees.
 }
@@ -124839,181 +124695,109 @@ E
 }
 
 STRING 20813
-// Units: h0CG (Arcanist), Casterupgradetip (Caster Upgrade Tips)
+// Units: h0CG (Flamekeeper), Casterupgradetip (Caster Upgrade Tips)
 {
 - Magic Missile,- Magic Missile|n- Dispel Magic,- Magic Missile|n- Dispel Magic|n- Flame Shield
 }
 
 STRING 20814
-// Units: h0CG (Arcanist), EditorSuffix (Name - Editor Suffix)
+// Units: h0CG (Flamekeeper), EditorSuffix (Name - Editor Suffix)
 {
 (sunfury)
 }
 
-STRING 20815
-// Units: h0CG (Arcanist), Name (Name)
-{
-Arcanist
-}
-
-STRING 20816
-// Units: h0CG (Arcanist), Tip (Tooltip - Basic)
-{
-Train Arcanist
-}
-
 STRING 20817
-// Units: h0CG (Arcanist), Ubertip (Tooltip - Extended)
+// Units: h0CG (Flamekeeper), Ubertip (Tooltip - Extended)
 {
 Well-versed sorceress in the arcane arts.|n|cfff5962dAbilities:|R Magic Missile|n|cfff5962dCan Learn:|R Dispel Magic, Flame Shield|n|n|cffffcc00Attacks land and air units.|R
 }
 
 STRING 20818
-// Units: h0CH (Tidesage), Casterupgradetip (Caster Upgrade Tips)
+// Units: h0CH (Astromancer), Casterupgradetip (Caster Upgrade Tips)
 {
 - Frost Bolt,- Frost Bolt|n- Summon Sea Elemental,- Frost Bolt|n- Summon Sea Elemental|n- Whirlpool
 }
 
 STRING 20819
-// Units: h0CH (Tidesage), EditorSuffix (Name - Editor Suffix)
+// Units: h0CH (Astromancer), EditorSuffix (Name - Editor Suffix)
 {
 (sunfury)
 }
 
-STRING 20820
-// Units: h0CH (Tidesage), Name (Name)
-{
-Tidesage
-}
-
-STRING 20821
-// Units: h0CH (Tidesage), Tip (Tooltip - Basic)
-{
-Train Tidesage
-}
-
 STRING 20822
-// Units: h0CH (Tidesage), Ubertip (Tooltip - Extended)
+// Units: h0CH (Astromancer), Ubertip (Tooltip - Extended)
 {
 Offensive caster.|n|cfff5962dAbilities:|R Frost Bolt|n|cfff5962dCan Learn:|R Summon Sea Elemental, Whirlpool|n|n|cffffcc00Attacks land and air units.|R
 }
 
 STRING 20823
-// Units: n0E4 (Infernal Juggernaut), EditorSuffix (Name - Editor Suffix)
+// Units: n0E4 (Tempest-Forge Scorpion), EditorSuffix (Name - Editor Suffix)
 {
 (sunfury)
 }
 
-STRING 20824
-// Units: n0E4 (Infernal Juggernaut), Tip (Tooltip - Basic)
-{
-Build Infernal Juggernaut
-}
-
 STRING 20825
-// Units: n0E4 (Infernal Juggernaut), Ubertip (Tooltip - Extended)
+// Units: n0E4 (Tempest-Forge Scorpion), Ubertip (Tooltip - Extended)
 {
 Hellforged engine of doom.|n|cfff5962dCan learn:|R Inferno|n|n|cff99b4d1Can only build 6.|r|n|cffffcc00Attacks land units.|r
 }
 
 STRING 20826
-// Units: n0E5 (Infernal), EditorSuffix (Name - Editor Suffix)
+// Units: n0E5 (Void Reaver), EditorSuffix (Name - Editor Suffix)
 {
 (sunfury)
 }
 
-STRING 20827
-// Units: n0E5 (Infernal), Tip (Tooltip - Basic)
-{
-Train Infernal
-}
-
 STRING 20828
-// Units: n0E5 (Infernal), Ubertip (Tooltip - Extended)
+// Units: n0E5 (Void Reaver), Ubertip (Tooltip - Extended)
 {
 Forged demon cloaked in flames of fel magic.|n|cfff5962dAbilities:|R Spell Immunity, Permanent Immoliation, Resistant Skin|n|n|cff99b4d1Can only train 8.|r|n|cffffcc00Attacks land units.|r
 }
 
 STRING 20829
-// Units: n0E6 (Doom Guard), EditorSuffix (Name - Editor Suffix)
+// Units: n0E6 (Shivarra), EditorSuffix (Name - Editor Suffix)
 {
 (sunfury)
 }
 
 STRING 20830
-// Units: n0E6 (Doom Guard), Ubertip (Tooltip - Extended)
+// Units: n0E6 (Shivarra), Ubertip (Tooltip - Extended)
 {
 Elite fighters of the Legion.|n|cfff5962dAbilities: |RSummon Fel Hounds|n|n|cff99b4d1Can only summon 12.|r|n|cffffcc00Attacks land and air units.|r
 }
 
 STRING 20831
-// Units: n0E7 (Kirin Tor), EditorSuffix (Name - Editor Suffix)
+// Units: n0E7 (Bloodwarder), EditorSuffix (Name - Editor Suffix)
 {
 (sunfury)
 }
 
-STRING 20832
-// Units: n0E7 (Kirin Tor), Name (Name)
-{
-Kirin Tor
-}
-
-STRING 20833
-// Units: n0E7 (Kirin Tor), Tip (Tooltip - Basic)
-{
-Train Kirin Tor
-}
-
 STRING 20834
-// Units: n0E7 (Kirin Tor), Ubertip (Tooltip - Extended)
+// Units: n0E7 (Bloodwarder), Ubertip (Tooltip - Extended)
 {
 A powerful mage of Dalaran.|n|cfff5962dAbilities:|R Forked Lightning, Mana Shield, Arcane Combustion, Teleport, Counterspell, Spell Shield, Resistant Skin|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land and air units.
 }
 
 STRING 20835
-// Units: h0CI (Workshop), EditorSuffix (Name - Editor Suffix)
+// Units: h0CI (Tempest-Forge), EditorSuffix (Name - Editor Suffix)
 {
 (Sunfury Specialist)
 }
 
-STRING 20836
-// Units: h0CI (Workshop), Name (Name)
-{
-Workshop
-}
-
-STRING 20837
-// Units: h0CI (Workshop), Tip (Tooltip - Basic)
-{
-Build Academy
-}
-
 STRING 20838
-// Units: h0CI (Workshop), Ubertip (Tooltip - Extended)
+// Units: h0CI (Tempest-Forge), Ubertip (Tooltip - Extended)
 {
 Training institution for elite Elven warriors.|n|cfff5962dTrains:|R Spell Breaker, Dragonhawk Rider, Arcane Annihilator|n|cfff5962dResearches:|R Control Magic, Cloud, Improved Glaives
 }
 
 STRING 20839
-// Units: n0E8 (Sky Barge), EditorSuffix (Name - Editor Suffix)
+// Units: n0E8 (Skyship), EditorSuffix (Name - Editor Suffix)
 {
 (sunfury)
 }
 
-STRING 20840
-// Units: n0E8 (Sky Barge), Tip (Tooltip - Basic)
-{
-Train Sky Barge
-}
-
-STRING 20841
-// Units: n0E8 (Sky Barge), Name (Name)
-{
-Sky Barge
-}
-
 STRING 20842
-// Units: n0E8 (Sky Barge), Ubertip (Tooltip - Extended)
+// Units: n0E8 (Skyship), Ubertip (Tooltip - Extended)
 {
 Flying attack gunship.|n|cfff5962dAbilities:|R Rocket Barrage, Unholy Boosters|n|n|cff99b4d1Can only train 4.|r|n|cffffcc00Attacks land and air units.|r
 }
@@ -125160,5 +124944,269 @@ STRING 20866
 // Upgrades: R086 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 E
+}
+
+STRING 20867
+// Units: h02P (Holding), Name (Name)
+{
+Holding
+}
+
+STRING 20868
+// Units: h0C4 (Covenant), Name (Name)
+{
+Covenant
+}
+
+STRING 20869
+// Units: h0C4 (Covenant), Tip (Tooltip - Basic)
+{
+Upgrade to Covenant
+}
+
+STRING 20870
+// Units: h0C5 (Sanctuary), Name (Name)
+{
+Sanctuary
+}
+
+STRING 20871
+// Units: h0C6 (Altar of Blood), Name (Name)
+{
+Altar of Blood
+}
+
+STRING 20872
+// Units: h0C6 (Altar of Blood), Tip (Tooltip - Basic)
+{
+Build Altar of Blood
+}
+
+STRING 20873
+// Units: h0C8 (Forge), Name (Name)
+{
+Forge
+}
+
+STRING 20874
+// Units: h0C8 (Forge), Tip (Tooltip - Basic)
+{
+Build Forge
+}
+
+STRING 20875
+// Units: h0C9 (Training Quarter), Name (Name)
+{
+Training Quarter
+}
+
+STRING 20876
+// Units: h0C9 (Training Quarter), Tip (Tooltip - Basic)
+{
+Build Training Quarter
+}
+
+STRING 20877
+// Units: h0CA (Void Well), Name (Name)
+{
+Void Well
+}
+
+STRING 20878
+// Units: h0CA (Void Well), Tip (Tooltip - Basic)
+{
+Build Void Well
+}
+
+STRING 20879
+// Units: h0CB (Lyceum Arcanum), Name (Name)
+{
+Lyceum Arcanum
+}
+
+STRING 20880
+// Units: h0CB (Lyceum Arcanum), Tip (Tooltip - Basic)
+{
+Build Lyceum Arcanum
+}
+
+STRING 20881
+// Units: n0DZ (The Infinity Fountain), Name (Name)
+{
+The Infinity Fountain
+}
+
+STRING 20882
+// Units: n0DZ (The Infinity Fountain), Tip (Tooltip - Basic)
+{
+Build the Infinity Fountain
+}
+
+STRING 20883
+// Units: h0CC (Aether Vault), Name (Name)
+{
+Aether Vault
+}
+
+STRING 20884
+// Units: h0CC (Aether Vault), Tip (Tooltip - Basic)
+{
+Build Aether Vault
+}
+
+STRING 20885
+// Units: n0E0 (Sky-Fury Tower), Name (Name)
+{
+Sky-Fury Tower
+}
+
+STRING 20886
+// Units: n0E0 (Sky-Fury Tower), Tip (Tooltip - Basic)
+{
+Build Sky-Fury Tower
+}
+
+STRING 20887
+// Units: n0E1 (Improved Sky-Fury Tower), Name (Name)
+{
+Improved Sky-Fury Tower
+}
+
+STRING 20888
+// Units: n0E1 (Improved Sky-Fury Tower), Tip (Tooltip - Basic)
+{
+Upgrade to Improved Sky-FuryTower
+}
+
+STRING 20889
+// Units: n0E2 (Technician), Name (Name)
+{
+Technician
+}
+
+STRING 20890
+// Units: n0E2 (Technician), Tip (Tooltip - Basic)
+{
+Train Technician
+}
+
+STRING 20891
+// Units: n09S (Centurion), Name (Name)
+{
+Centurion
+}
+
+STRING 20892
+// Units: n09S (Centurion), Tip (Tooltip - Basic)
+{
+Train Centurion
+}
+
+STRING 20893
+// Units: h0CF (Bowman), Name (Name)
+{
+Bowman
+}
+
+STRING 20894
+// Units: h0CF (Bowman), Tip (Tooltip - Basic)
+{
+Train Bowman
+}
+
+STRING 20895
+// Units: h0CG (Flamekeeper), Name (Name)
+{
+Flamekeeper
+}
+
+STRING 20896
+// Units: h0CG (Flamekeeper), Tip (Tooltip - Basic)
+{
+Train Flamekeeper
+}
+
+STRING 20897
+// Units: h0CH (Astromancer), Name (Name)
+{
+Astromancer
+}
+
+STRING 20898
+// Units: h0CH (Astromancer), Tip (Tooltip - Basic)
+{
+Train Astromancer
+}
+
+STRING 20899
+// Units: n0E4 (Tempest-Forge Scorpion), Tip (Tooltip - Basic)
+{
+Build Tempest-Forge Scorpion
+}
+
+STRING 20900
+// Units: n0E4 (Tempest-Forge Scorpion), Name (Name)
+{
+Tempest-Forge Scorpion
+}
+
+STRING 20901
+// Units: n0E5 (Void Reaver), Tip (Tooltip - Basic)
+{
+Train Void Reaver
+}
+
+STRING 20902
+// Units: n0E5 (Void Reaver), Name (Name)
+{
+Void Reaver
+}
+
+STRING 20903
+// Units: n0E6 (Shivarra), Name (Name)
+{
+Shivarra
+}
+
+STRING 20904
+// Units: n0E6 (Shivarra), Tip (Tooltip - Basic)
+{
+Summon Shivarra
+}
+
+STRING 20905
+// Units: n0E7 (Bloodwarder), Name (Name)
+{
+Bloodwarder
+}
+
+STRING 20906
+// Units: n0E7 (Bloodwarder), Tip (Tooltip - Basic)
+{
+Train Bloodwarder
+}
+
+STRING 20907
+// Units: h0CI (Tempest-Forge), Name (Name)
+{
+Tempest-Forge
+}
+
+STRING 20908
+// Units: h0CI (Tempest-Forge), Tip (Tooltip - Basic)
+{
+Build Tempest-Forge
+}
+
+STRING 20909
+// Units: n0E8 (Skyship), Tip (Tooltip - Basic)
+{
+Train Skyship
+}
+
+STRING 20910
+// Units: n0E8 (Skyship), Name (Name)
+{
+Skyship
 }
 
