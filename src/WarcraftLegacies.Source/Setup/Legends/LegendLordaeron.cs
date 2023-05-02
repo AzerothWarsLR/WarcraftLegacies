@@ -109,7 +109,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
         DeathMessage =
           "Uther the Lightbringer makes his last stand, perishing in the defense of the light. Lordaeron, and humanity itself, has lost one of its finest exemplars in this dark hour.",
         PlayerColor = PLAYER_COLOR_LIGHT_BLUE,
-        StartingXp = 1000
+        StartingXp = 2800
       };
 
       Arthas = new LegendaryHero("Arthas Menethil")

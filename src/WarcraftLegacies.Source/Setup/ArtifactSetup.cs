@@ -97,6 +97,10 @@ namespace WarcraftLegacies.Source.Setup
       UnitAddItem(preplacedUnitSystem.GetUnit(FourCC("n021")), CrownOfStormwind.Item); //Hogger
       ArtifactManager.Register(CrownOfStormwind);
 
+      SkullOfGuldan = new Artifact(CreateItem(FourCC("I007"), DummyX, DummyY)); //Skull of Guldan
+      UnitAddItem(preplacedUnitSystem.GetUnit(FourCC("n03Y")), SkullOfGuldan.Item); //Drakthul
+      ArtifactManager.Register(SkullOfGuldan);
+
       EyeOfSargeras = new Artifact(CreateItem(Constants.ITEM_I003_EYE_OF_SARGERAS, -77.9f, 10910.4f));
       ArtifactManager.Register(EyeOfSargeras);
 
@@ -125,12 +129,6 @@ namespace WarcraftLegacies.Source.Setup
       UnitAddAbility(preplacedUnitSystem.GetUnit(Constants.UNIT_NBSM_BOOK_OF_MEDIVH), Artifact.ArtifactHolderAbilId);
       UnitAddItem(preplacedUnitSystem.GetUnit(Constants.UNIT_NBSM_BOOK_OF_MEDIVH), BookOfMedivh.Item);
       ArtifactManager.Register(BookOfMedivh);
-
-      SkullOfGuldan = new Artifact(CreateItem(FourCC("I007"), DummyX, DummyY)); //Skull of Guldan
-      UnitAddAbility(preplacedUnitSystem.GetUnit(FourCC("n0DK")),
-        Artifact.ArtifactHolderAbilId); //Skull Pedestal
-      UnitAddItem(preplacedUnitSystem.GetUnit(FourCC("n0DK")), SkullOfGuldan.Item);
-      ArtifactManager.Register(SkullOfGuldan);
 
       ZinRokh = new Artifact(CreateItem(FourCC("I016"), DummyX, DummyY))
       {

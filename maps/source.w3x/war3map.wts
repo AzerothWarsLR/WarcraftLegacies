@@ -15134,6 +15134,12 @@ STRING 2523
 Train Guild Ranger
 }
 
+STRING 2524
+// Abilities: A0DH (Web), Ubertip (Tooltip - Normal - Extended)
+{
+Binds a target enemy unit in webbing, forcing it to the ground. Webbed units can be hit as though they were land units. |nLasts <Aweb,Dur1> seconds.
+}
+
 STRING 2525
 // Units: h04M (Cleric), Hotkey (Hotkey)
 {
@@ -60292,7 +60298,7 @@ Web
 }
 
 STRING 10047
-// Abilities: A0DH (Web), Ubertip (Tooltip - Normal - Extended)
+// Abilities: Aweb (Web), Ubertip (Tooltip - Normal - Extended)
 {
 Binds a target enemy unit in webbing, forcing it to the ground. Webbed units can be hit as though they were land units. |nLasts <Aweb,Dur1> seconds.
 }
@@ -84031,6 +84037,12 @@ STRING 14001
 // Upgrades: Rhra (Black Gunpowder,Refined Gunpowder,Imbued Gunpowder), Ubertip (Tooltip - Extended)
 {
 Further increases the ranged attack damage of Riflemen, Mortar Teams, Siege Engines, Engineers, Flying Machines, Brann Bronzebeard, and Gelbin Mekkatorque.
+}
+
+STRING 14002
+// Upgrades: R09F (Chaos), Name (Name)
+{
+Quest Completed: Return from Exile
 }
 
 STRING 14003

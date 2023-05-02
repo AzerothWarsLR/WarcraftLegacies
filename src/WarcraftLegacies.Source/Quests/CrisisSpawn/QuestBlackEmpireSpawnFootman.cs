@@ -43,6 +43,7 @@ namespace WarcraftLegacies.Source.Quests.CrisisSpawn
        new ObjectiveTime(1590)));
       Shared = true;
       Required = true;
+      Global = true;
     }
 
     /// <inheritdoc/>

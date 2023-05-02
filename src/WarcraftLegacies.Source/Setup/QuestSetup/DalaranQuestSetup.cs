@@ -43,6 +43,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
 
       dalaran.AddQuest(crystalGolem);
       dalaran.AddQuest(fallenGuardian);
+      dalaran.AddQuest(new QuestAegwynn(allLegendSetup.Dalaran.Jaina, allLegendSetup.Dalaran.Antonidas));
       dalaran.AddQuest(newGuardian);
       dalaran.AddQuest(theNexus);
     }

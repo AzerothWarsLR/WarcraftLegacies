@@ -45,9 +45,9 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
       _goldmine2 = preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(7704, 11660));
       _goldmine3 = preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(7403, 6983));
 
-      _goldmine1.Show(false);
-      _goldmine2.Show(false);
-      _goldmine3.Show(false);
+      //_goldmine1.Show(false);
+      //_goldmine2.Show(false);
+      //_goldmine3.Show(false);
 
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
       ResearchId = Constants.UPGRADE_R09E_QUEST_COMPLETED_BLACKROCK_AND_ROLL;
@@ -58,7 +58,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
     protected override string RewardFlavour =>
       "Stratholme has been liberated, and its military is now free to assist the Kingdom of Lordaeron.";
     /// <inheritdoc/>
-    protected override string RewardDescription => "Control of all units in Stratholme and discover 3 gold mines around the land of Lordaeron";
+    protected override string RewardDescription => "Control of all units in Stratholme and you can now build Town Halls";
 
     /// <inheritdoc/>
     protected override void OnFail(Faction completingFaction)
@@ -72,9 +72,9 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
     {
       completingFaction.Player.RescueGroup(_rescueUnits);
       _arthas.AddUnitDependency(_stratholme.Unit);
-      _goldmine1.Show(true);
-      _goldmine2.Show(true);
-      _goldmine3.Show(true);
+      //_goldmine1.Show(true);
+      //_goldmine2.Show(true);
+      //_goldmine3.Show(true);
     }
   }
 }

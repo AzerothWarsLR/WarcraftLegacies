@@ -91,7 +91,7 @@ Once you have secured your holdings, gather your army and destroy the Orcish Hor
 
       //Powers
       var dummyPower = new DummyPower("Unspoiled Wilderness",
-        "Every control point tower has a 30% movement speed aura in a 1800 area of effect",
+        "Every control point tower has a 24% movement speed aura in a 2500 area of effect",
         "ANA_HealingButterfliesFixed");
       Sentinels.AddPower(dummyPower);
 

@@ -50,7 +50,7 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
-      "Control of all units in Dalaran and enables Antonidas to be trained at the Altar";
+      "Control of all units in Dalaran, enables Antonidas to be trained at the Altar and you can now build Refuges";
 
     /// <inheritdoc/>
     protected override void OnFail(Faction completingFaction) => 
