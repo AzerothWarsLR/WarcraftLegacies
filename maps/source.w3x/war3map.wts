@@ -15135,7 +15135,7 @@ Train Guild Ranger
 }
 
 STRING 2524
-// Abilities: A0DH (Web), Ubertip (Tooltip - Normal - Extended)
+// Abilities: Aweb (Web), Ubertip (Tooltip - Normal - Extended)
 {
 Binds a target enemy unit in webbing, forcing it to the ground. Webbed units can be hit as though they were land units. |nLasts <Aweb,Dur1> seconds.
 }
@@ -60298,7 +60298,7 @@ Web
 }
 
 STRING 10047
-// Abilities: Aweb (Web), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A0DH (Web), Ubertip (Tooltip - Normal - Extended)
 {
 Binds a target enemy unit in webbing, forcing it to the ground. Webbed units can be hit as though they were land units. |nLasts <Aweb,Dur1> seconds.
 }
@@ -102206,10 +102206,22 @@ STRING 17037
 (Nexus)
 }
 
+STRING 17038
+// Units: e01K (Polybolos), EditorSuffix (Name - Editor Suffix)
+{
+(draenei)
+}
+
 STRING 17039
 // Abilities: A0RX (Raise Plaguelings), Tip (Tooltip - Normal)
 {
 Raise Plaguelings
+}
+
+STRING 17040
+// Abilities: A0ZP (Charge Mana), EditorSuffix (Editor Suffix)
+{
+(Arcane Well)
 }
 
 STRING 17041
@@ -106932,7 +106944,7 @@ Increases a target friendly unit's damage by 20 %, armor by 5 and hp regen by 1.
 }
 
 STRING 17827
-// Units: e01K (Polybolos), EditorSuffix (Name - Editor Suffix)
+// Units: h09U (Elekk Knight), EditorSuffix (Name - Editor Suffix)
 {
 (draenei)
 }
@@ -106998,7 +107010,7 @@ Q
 }
 
 STRING 17838
-// Units: h09U (Elekk Knight), EditorSuffix (Name - Editor Suffix)
+// Units: o05D (Elementalist), EditorSuffix (Name - Editor Suffix)
 {
 (draenei)
 }
@@ -107028,7 +107040,7 @@ Fortified stronghold of the Alliance Nations.|n|cfff5962dTrains:|R Peasant, Pala
 }
 
 STRING 17843
-// Units: o05D (Elementalist), EditorSuffix (Name - Editor Suffix)
+// Units: n00E (Dimensional Generator), EditorSuffix (Name - Editor Suffix)
 {
 (draenei)
 }
@@ -107196,7 +107208,7 @@ W
 }
 
 STRING 17871
-// Units: n00E (Dimensional Generator), EditorSuffix (Name - Editor Suffix)
+// Abilities: A0SD (Consecrated Slam), EditorSuffix (Editor Suffix)
 {
 (draenei)
 }
@@ -107244,7 +107256,7 @@ Train Elementalist
 }
 
 STRING 17879
-// Abilities: A0SD (Consecrated Slam), EditorSuffix (Editor Suffix)
+// Abilities: A0TG (Renewal), EditorSuffix (Editor Suffix)
 {
 (draenei)
 }
@@ -107262,9 +107274,9 @@ Kaldorei hall of enhancements, where the defenders of Kalimdor grow in strength.
 }
 
 STRING 17882
-// Abilities: A0TG (Renewal), EditorSuffix (Editor Suffix)
+// Abilities: A0ZP (Charge Mana), Tip (Tooltip - Normal)
 {
-(draenei)
+Charge Mana
 }
 
 STRING 17883
@@ -108117,6 +108129,12 @@ STRING 18024
 // Units: n0BN (Shimmering Flats (10gold/min)), Name (Name)
 {
 Shimmering Flats (10gold/min)
+}
+
+STRING 18025
+// Abilities: A0ZP (Charge Mana), Ubertip (Tooltip - Normal - Extended)
+{
+Replenish the life and mana of a target friendly unit. |n|nRestores 0.5 health and 2 mana to the unit for every point of mana spent.
 }
 
 STRING 18026
@@ -112483,6 +112501,18 @@ STRING 18752
 (sunfury)
 }
 
+STRING 18753
+// Abilities: A10O (Enchanted Bolt), Hotkey (Hotkey - Normal)
+{
+Q
+}
+
+STRING 18754
+// Abilities: A10O (Enchanted Bolt), Researchhotkey (Hotkey - Learn)
+{
+Q
+}
+
 STRING 18755
 // Buffs/Effects: B0AD (), Buffubertip (Tooltip - Extended)
 {
@@ -112511,6 +112541,12 @@ STRING 18759
 // Units: h0CF (Bowman), EditorSuffix (Name - Editor Suffix)
 {
 (sunfury)
+}
+
+STRING 18760
+// Abilities: A0ZP (Charge Mana), Name (Name)
+{
+Charge Mana
 }
 
 STRING 18761
@@ -113156,7 +113192,7 @@ STRING 18868
 }
 
 STRING 18869
-// Abilities: A10O (Enchanted Bolt), Hotkey (Hotkey - Normal)
+// Abilities: A0QL (Explosive Potion), Hotkey (Hotkey - Normal)
 {
 Q
 }
@@ -114056,7 +114092,7 @@ When this hero attacks, it has a 15% chance to hurl lightning at <A024,DataB1> t
 }
 
 STRING 19019
-// Abilities: A10O (Enchanted Bolt), Researchhotkey (Hotkey - Learn)
+// Abilities: A0KA (Resurrection DUMMY), Hotkey (Hotkey - Normal)
 {
 Q
 }
@@ -114950,7 +114986,7 @@ STRING 19167
 }
 
 STRING 19168
-// Abilities: A0QL (Explosive Potion), Hotkey (Hotkey - Normal)
+// Abilities: A123 (Summon Fel Hounds), Hotkey (Hotkey - Normal)
 {
 Q
 }
@@ -116007,7 +116043,7 @@ R
 }
 
 STRING 19344
-// Abilities: A0KA (Resurrection DUMMY), Hotkey (Hotkey - Normal)
+// Abilities: A123 (Summon Fel Hounds), Researchhotkey (Hotkey - Learn)
 {
 Q
 }
@@ -116019,7 +116055,7 @@ Blasts enemy units with a wave of plague that deals 50 damage to the target, and
 }
 
 STRING 19346
-// Abilities: A123 (Summon Fel Hounds), Hotkey (Hotkey - Normal)
+// Abilities: A0KJ (Chain Lightning), Hotkey (Hotkey - Normal)
 {
 Q
 }
@@ -116061,7 +116097,7 @@ STRING 19352
 }
 
 STRING 19353
-// Abilities: A123 (Summon Fel Hounds), Researchhotkey (Hotkey - Learn)
+// Abilities: A0ZP (Charge Mana), Hotkey (Hotkey - Normal)
 {
 Q
 }
@@ -117129,7 +117165,7 @@ Wyrmrest
 }
 
 STRING 19531
-// Abilities: A0KJ (Chain Lightning), Hotkey (Hotkey - Normal)
+// Abilities: A0ZP (Charge Mana), Unhotkey (Hotkey - Turn Off)
 {
 Q
 }
@@ -124304,6 +124340,12 @@ STRING 20726
 W
 }
 
+STRING 20727
+// Upgrades: R08P (Naga Siren Adept Training,Naga Siren Master Training), Hotkey (Hotkey)
+{
+Z
+}
+
 STRING 20728
 // Units: h02P (Holding), Tip (Tooltip - Basic)
 {
@@ -124491,7 +124533,7 @@ X
 }
 
 STRING 20772
-// Upgrades: R08P (Naga Siren Adept Training,Naga Siren Master Training), Hotkey (Hotkey)
+// Upgrades: R08S (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 Z
 }
@@ -124581,12 +124623,6 @@ Slows a target enemy unit's attack rate by <A0E9,DataB2,%>% and movement speed b
 }
 
 STRING 20793
-// Upgrades: R08S (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
-{
-Z
-}
-
-STRING 20794
 // Upgrades: R004 (Magic Sentry), Hotkey (Hotkey)
 {
 Z
