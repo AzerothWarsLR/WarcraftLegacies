@@ -3,6 +3,7 @@ using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
+using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
@@ -31,6 +32,7 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
       AddObjective(
         new ObjectiveControlPoint(
           ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N00L_BOOTY_BAY_10GOLD_MIN)));
+      AddObjective(new ObjectiveSelfExists());
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
     }
 
@@ -41,6 +43,11 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
     /// <inheritdoc/>
     protected override string RewardDescription =>
       $"Gain control of High Bank, earn 700 gold, and {_katherine.Name} gains 3000 experience";
+
+    protected override void OnFail(Faction completingFaction)
+    {
+      Player(PLAYER_NEUTRAL_AGGRESSIVE).RescueGroup(_rescueUnits);
+    }
 
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
