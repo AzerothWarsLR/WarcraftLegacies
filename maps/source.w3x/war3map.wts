@@ -112483,6 +112483,12 @@ STRING 18749
 Train Hawkstrider Knight
 }
 
+STRING 18750
+// Upgrades: R09I (Chaos), Name (Name)
+{
+Quest Completed: Eco-domes
+}
+
 STRING 18751
 // Buffs/Effects: B0AD (), Bufftip (Tooltip)
 {

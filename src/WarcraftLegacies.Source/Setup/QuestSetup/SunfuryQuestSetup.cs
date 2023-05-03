@@ -1,0 +1,20 @@
+﻿using MacroTools;
+using WarcraftLegacies.Source.Quests.Quelthalas;
+using WarcraftLegacies.Source.Quests.Sunfury;
+using WarcraftLegacies.Source.Setup.FactionSetup;
+using WCSharp.Shared.Data;
+
+namespace WarcraftLegacies.Source.Setup.QuestSetup
+{
+  public static class SunfuryQuestSetup
+  {
+    public static void Setup(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup)
+    {
+      var sunfury = SunfurySetup.Sunfury;
+      var newQuest = sunfury.AddQuest(new QuestTempestKeep(Regions.TempestKeep, Regions.Biodome1, Regions.Biodome2, Regions.Biodome3));
+      sunfury.StartingQuest = newQuest;
+
+      sunfury.AddQuest(new QuestForgottenKnowledge(Regions.IllidanStartingPosition));
+    }
+  }
+}
