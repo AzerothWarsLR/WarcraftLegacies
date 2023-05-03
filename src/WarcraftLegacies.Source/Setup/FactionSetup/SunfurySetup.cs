@@ -59,6 +59,7 @@ The Plague of Undeath is coming and Lordaeron will need your help with the Scour
       Sunfury.ModObjectLimit(FourCC("n0E7"), 6); //Bloodwarder
       Sunfury.ModObjectLimit(FourCC("n0E5"), 12); //Fel Reaver
       Sunfury.ModObjectLimit(FourCC("n0E6"), 4); //Shivarra
+      Sunfury.ModObjectLimit(FourCC("e01B"), 6); //Arcane Annihilator
 
       //Ships
       Sunfury.ModObjectLimit(FourCC("hbot"), Faction.UNLIMITED); //Alliance Transport Ship
@@ -77,8 +78,8 @@ The Plague of Undeath is coming and Lordaeron will need your help with the Scour
 
       //Upgrades
       Sunfury.ModObjectLimit(FourCC("R00K"), Faction.UNLIMITED); //Power Infusion
-      Sunfury.ModObjectLimit(FourCC("Rhpt"), Faction.UNLIMITED); //Priest Adept Training
-      Sunfury.ModObjectLimit(FourCC("Rhst"), Faction.UNLIMITED); //Sorceress Adept Training
+      Sunfury.ModObjectLimit(FourCC("R09H"), Faction.UNLIMITED); //Priest Adept Training
+      Sunfury.ModObjectLimit(FourCC("R09G"), Faction.UNLIMITED); //Flamekeeper Adept Training
 
       Sunfury.AddGoldMine(preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(17716, 13000)));
 

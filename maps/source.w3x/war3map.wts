@@ -7869,9 +7869,9 @@ Revive Crown Prince
 }
 
 STRING 1312
-// Abilities: A0SL (Minor Holy Light), EditorSuffix (Editor Suffix)
+// Units: n0E7 (Bloodwarder), Ubertip (Tooltip - Extended)
 {
-(scarlet Monk)
+The strongest lieutenants of Kael. Powerful versus magic users.|n|cfff5962dAbilities:|R Spell Steal, Phoenix, Mana Shield, Feedback, Mana Shield, Arcane Absorption, Resistant Skin|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land and air units.
 }
 
 STRING 1313
@@ -10560,6 +10560,12 @@ STRING 1760
 // Units: o00G (Blademaster), Tip (Tooltip - Basic)
 {
 Train Blademaster
+}
+
+STRING 1761
+// Units: h0C7 (Biodome), Ubertip (Tooltip - Extended)
+{
+Closed environement of lush life in this desolate plane.|nProvides 100 food, which increases the maximum number of units that can be trained. |n|n|cffff0000Make sure to build them at each Bio area in Netherstorm.|r|n|cff99b4d1Can only train 3.|r|
 }
 
 STRING 1762
@@ -66346,9 +66352,9 @@ When this hero deals damage, it will regain a portion of the damage dealt as man
 }
 
 STRING 11056
-// Abilities: A11N (Arcane Absorption), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A12H (Feedback), Ubertip (Tooltip - Normal - Extended)
 {
-When this hero deals damage, 40% of the damage will be gained as mana
+Attacks destroy 60 mana per hit (35 on heroes). The mana combusts, dealing damage to the attacked unit.
 }
 
 STRING 11057
@@ -88581,6 +88587,12 @@ STRING 14759
 Research Geomancer Master Training
 }
 
+STRING 14760
+// Units: h0C9 (Training Quarter), Ubertip (Tooltip - Extended)
+{
+Training grounds for the Sunfury Military.|n|cfff5962dTrains:|R Centurion, Bowman, Hawkstrider Knight|n|cfff5962dResearches:|R 
+}
+
 STRING 14761
 // Upgrades: R01V (Sorceress Adept Training,Sorceress Master Training), Ubertip (Tooltip - Extended)
 {
@@ -90034,7 +90046,7 @@ X
 }
 
 STRING 15003
-// Upgrades: R00H (Envenomed Spears), Name (Name)
+// Abilities: A0ZW (Animal Companion), Name (Name)
 {
 Animal Companion
 }
@@ -94968,6 +94980,12 @@ STRING 15833
 // Units: h072 (Homestead), Ubertip (Tooltip - Extended)
 {
 Civilian farmstead supplying food for the Kingdom.|nProvides 8 food, which increases the maximum number of units that can be trained.
+}
+
+STRING 15834
+// Units: h0CA (Void Well), Ubertip (Tooltip - Extended)
+{
+Summoning Well for Demons.|n|cfff5962dTrains:|R Fel Reaver, Shivarra|n|cfff5962dResearches:|R |n|r|cfff5962dUpgrades into:|R Infinity Fountain
 }
 
 STRING 15835
@@ -108113,6 +108131,12 @@ STRING 18024
 Shimmering Flats (10gold/min)
 }
 
+STRING 18025
+// Units: h0CB (Lyceum Arcanum), Ubertip (Tooltip - Extended)
+{
+Sanctum for the spellcasters of the Sunfury.|n|cfff5962dTrains:|R Astromancer, Flamekeeper, Warlock|n|cfff5962dResearches:|R Astromancer Training, Flamekeeper Training
+}
+
 STRING 18026
 // Abilities: A0U5 (Greater Storm Bolt), EditorSuffix (Editor Suffix)
 {
@@ -112459,12 +112483,6 @@ STRING 18749
 Train Hawkstrider Knight
 }
 
-STRING 18750
-// Units: h0CE (Hawkstrider Knight), Ubertip (Tooltip - Extended)
-{
-Strong melee Knight of Arathor.|n|cfff5962dAbilities:|R Charge, War Plating, Trample, Demolish, Bolster|n|cfff5962dCan Learn:|R Animal War Training, Code of Chivalry|n|n|cffffcc00Attacks land units.|r
-}
-
 STRING 18751
 // Buffs/Effects: B0AD (), Bufftip (Tooltip)
 {
@@ -112505,12 +112523,6 @@ STRING 18757
 // Abilities: A0SR (Dimensional Jump to Tempest Keep), Researchhotkey (Hotkey - Learn)
 {
 R
-}
-
-STRING 18758
-// Units: n09S (Centurion), Ubertip (Tooltip - Extended)
-{
-Stout protector of Quel'Thalas.|n|cfff5962dAbilities:|R Charge, Defend, Combat Experience, Spell Resistance, Feedback|n|n|cffffcc00Attacks land units.|r
 }
 
 STRING 18759
@@ -112748,13 +112760,13 @@ Control Point Defender
 }
 
 STRING 18798
-// Buffs/Effects: B03E (Flame Shield (Ragnaros)), Bufftip (Tooltip)
+// Abilities: A12E (Flame Shield), Name (Name)
 {
 Flame Shield
 }
 
 STRING 18799
-// Buffs/Effects: B01I (), Bufftip (Tooltip)
+// Abilities: A12E (Flame Shield), Tip (Tooltip - Normal)
 {
 Flame Shield
 }
@@ -113273,12 +113285,6 @@ STRING 18885
 // Abilities: A0VW (Wrath of Ragnaros), Ubertip (Tooltip - Normal - Extended)
 {
 Heaves a wave of fire at enemy units, dealing <A0VW,DataA1> damage.
-}
-
-STRING 18886
-// Units: h0CF (Bowman), Ubertip (Tooltip - Extended)
-{
-One of the few Elves to return from Outland, ready again to defend Azeroth.|n|cfff5962dAbilities:|R Fire Arrows, Critical strike, Feedback|n|n|cffffcc00Attacks land and air units.|r
 }
 
 STRING 18887
@@ -117171,7 +117177,7 @@ Control Point Defender
 }
 
 STRING 19535
-// Upgrades: Rume (Unholy Strength,Improved Unholy Strength,Advanced Unholy Strength), Hotkey (Hotkey)
+// Abilities: A0ZW (Animal Companion), Hotkey (Hotkey - Normal)
 {
 Q
 }
@@ -117447,7 +117453,7 @@ Multishot
 }
 
 STRING 19581
-// Upgrades: Rome (Steel Melee Weapons,Thorium Melee Weapons,Arcanite Melee Weapons), Hotkey (Hotkey)
+// Upgrades: Rume (Unholy Strength,Improved Unholy Strength,Advanced Unholy Strength), Hotkey (Hotkey)
 {
 Q
 }
@@ -118754,7 +118760,7 @@ Opens a two-way portal to the target location within a range of <A00D,Rng3>. The
 }
 
 STRING 19799
-// Upgrades: Rhme (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Hotkey (Hotkey)
+// Upgrades: Rome (Steel Melee Weapons,Thorium Melee Weapons,Arcanite Melee Weapons), Hotkey (Hotkey)
 {
 Q
 }
@@ -118802,7 +118808,7 @@ Thunder Fists - [|cffffcc00Level 4|r]
 }
 
 STRING 19807
-// Upgrades: Rora (Steel Ranged Weapons,Thorium Ranged Weapons,Arcanite Ranged Weapons), Hotkey (Hotkey)
+// Abilities: A12F (Dispel Magic), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -121094,7 +121100,7 @@ Enchanted Bolt
 }
 
 STRING 20189
-// Upgrades: Rhra (Black Gunpowder,Refined Gunpowder,Imbued Gunpowder), Hotkey (Hotkey)
+// Upgrades: Rora (Steel Ranged Weapons,Thorium Ranged Weapons,Arcanite Ranged Weapons), Hotkey (Hotkey)
 {
 W
 }
@@ -122972,7 +122978,7 @@ Q
 }
 
 STRING 20502
-// Upgrades: Resw (Strength of the Wild,Improved Strength of the Wild,Advanced Strength of the Wil), Hotkey (Hotkey)
+// Upgrades: Rhme (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Hotkey (Hotkey)
 {
 Q
 }
@@ -123290,7 +123296,7 @@ Summon Raptors
 }
 
 STRING 20555
-// Upgrades: Rhlh (Improved Lumber Harvesting,Advanced Lumber Harvesting), Hotkey (Hotkey)
+// Abilities: A12E (Flame Shield), Hotkey (Hotkey - Normal)
 {
 E
 }
@@ -123362,7 +123368,7 @@ Summoning site for minor demons.|r|n|cff99b4d1Can only build 2 before the Legion
 }
 
 STRING 20567
-// Upgrades: Rhac (Improved Masonry,Advanced Masonry,Imbued Masonry), Hotkey (Hotkey)
+// Upgrades: Rhra (Black Gunpowder,Refined Gunpowder,Imbued Gunpowder), Hotkey (Hotkey)
 {
 W
 }
@@ -123663,7 +123669,7 @@ C
 }
 
 STRING 20617
-// Upgrades: Resm (Strength of the Moon,Improved Strength of the Moon,Advanced Strength of the Moo), Hotkey (Hotkey)
+// Upgrades: Resw (Strength of the Wild,Improved Strength of the Wild,Advanced Strength of the Wil), Hotkey (Hotkey)
 {
 Q
 }
@@ -123735,7 +123741,7 @@ C
 }
 
 STRING 20629
-// Upgrades: Renb (Nature's Blessing), Hotkey (Hotkey)
+// Upgrades: Rhlh (Improved Lumber Harvesting,Advanced Lumber Harvesting), Hotkey (Hotkey)
 {
 E
 }
@@ -124089,13 +124095,13 @@ E
 }
 
 STRING 20688
-// Upgrades: R06K (Defend), Hotkey (Hotkey)
+// Upgrades: Renb (Nature's Blessing), Hotkey (Hotkey)
 {
 E
 }
 
 STRING 20689
-// Upgrades: R06G (Defend), Hotkey (Hotkey)
+// Upgrades: R06K (Defend), Hotkey (Hotkey)
 {
 E
 }
@@ -124203,7 +124209,7 @@ Q
 }
 
 STRING 20707
-// Upgrades: R06F (Defend), Hotkey (Hotkey)
+// Upgrades: R06G (Defend), Hotkey (Hotkey)
 {
 E
 }
@@ -124418,12 +124424,6 @@ STRING 20742
 (Sunfury Farm)
 }
 
-STRING 20743
-// Units: h0C7 (Biodome), Ubertip (Tooltip - Extended)
-{
-Fisherman's house strung with nets and harpoons.|nProvides 8 food, which increases the maximum number of units that can be trained.
-}
-
 STRING 20744
 // Units: h0C7 (Biodome), Name (Name)
 {
@@ -124478,12 +124478,6 @@ STRING 20752
 Charge 1 mana per mana point used to a Divine Citadel directly next to the Arcane Well
 }
 
-STRING 20753
-// Units: h0C9 (Training Quarter), Ubertip (Tooltip - Extended)
-{
-Section of Dalaran dedicated to military personnel.|n|cfff5962dTrains:|R Battlemage, Initiate Mage|n|cfff5962dResearches:|R Improved Phase Blade, Improved Slow
-}
-
 STRING 20754
 // Units: h0CA (Void Well), EditorSuffix (Name - Editor Suffix)
 {
@@ -124496,10 +124490,10 @@ STRING 20755
 Cast this to gain 100 gold
 }
 
-STRING 20757
-// Units: h0CA (Void Well), Ubertip (Tooltip - Extended)
+STRING 20756
+// Units: n0DZ (The Infinity Fountain), Ubertip (Tooltip - Extended)
 {
-Training institution for elite Elven warriors.|n|cfff5962dTrains:|R Spell Breaker, Dragonhawk Rider, Arcane Annihilator|n|cfff5962dResearches:|R Control Magic, Cloud, Improved Glaives
+An artificially created pool of eternity.|n|cfff5962dTrains:|R Magus, Blood Mage, Warlock|n|cfff5962dResearches:|R Magus Training
 }
 
 STRING 20758
@@ -124508,22 +124502,22 @@ STRING 20758
 (Sunfury Magic)
 }
 
-STRING 20759
-// Units: h0CB (Lyceum Arcanum), Ubertip (Tooltip - Extended)
-{
-Sanctum for the spellcasters of Quel'thalas.|n|cfff5962dTrains:|R Priest, Sorceress, Arcane Wagon|n|cfff5962dResearches:|R Priest Training, Sorceress Training, Magic Sentry
-}
-
 STRING 20760
 // Units: n0DZ (The Infinity Fountain), EditorSuffix (Name - Editor Suffix)
 {
 (Sunfury Magic)
 }
 
-STRING 20763
-// Units: n0DZ (The Infinity Fountain), Ubertip (Tooltip - Extended)
+STRING 20761
+// Units: h0CD (Scout Tower), Ubertip (Tooltip - Extended)
 {
-Gathering place for Quel'thalas' most prestigious spellcasters.|n|cfff5962dTrains:|R Magus, Blood Mage, Warlock|n|cfff5962dResearches:|R Magus Training
+Observation tower.|n|r|cfff5962dUpgrades into:|R Sky-fury Tower
+}
+
+STRING 20762
+// Units: n0E0 (Sky-Fury Tower), Ubertip (Tooltip - Extended)
+{
+Tower of the Sunfury.|n|cfff5962dUpgrades Into:|R Improved Sky-fury Tower|n|n|cffffcc00Attacks land and air units.|r
 }
 
 STRING 20764
@@ -124542,12 +124536,6 @@ STRING 20766
 // Units: h0CD (Scout Tower), EditorSuffix (Name - Editor Suffix)
 {
  (Sunfury Tower)
-}
-
-STRING 20767
-// Units: h0CD (Scout Tower), Ubertip (Tooltip - Extended)
-{
-Observation tower.|n|r|cfff5962dCan learn:|R Magic Sentry|n|r|cfff5962dUpgrades into:|R Sun Tower, Arcane Tower
 }
 
 STRING 20768
@@ -124587,13 +124575,13 @@ Q
 }
 
 STRING 20774
-// Upgrades: R01B (Defend), Hotkey (Hotkey)
+// Upgrades: Rhac (Improved Masonry,Advanced Masonry,Imbued Masonry), Hotkey (Hotkey)
 {
 W
 }
 
 STRING 20775
-// Upgrades: R064 (Nature's Blessing), Hotkey (Hotkey)
+// Upgrades: R06F (Defend), Hotkey (Hotkey)
 {
 E
 }
@@ -124622,10 +124610,16 @@ STRING 20779
 C
 }
 
-STRING 20782
-// Units: n0E0 (Sky-Fury Tower), Ubertip (Tooltip - Extended)
+STRING 20780
+// Units: n0E1 (Improved Sky-Fury Tower), Ubertip (Tooltip - Extended)
 {
-Tower infused with the magic of the Sunwell.|n|cfff5962dCan learn:|R Magic Sentry|n|cfff5962dUpgrades Into:|R Improved Sun Tower|n|n|cffffcc00Attacks land and air units.|r
+Towers of the Sunfury.|n|n|cffffcc00Attacks land and air units.|r
+}
+
+STRING 20781
+// Units: h0CE (Hawkstrider Knight), Ubertip (Tooltip - Extended)
+{
+Knights of the Sunfury.|n|cfff5962dAbilities:|R Charge, War Plating|n|n|cffffcc00Attacks land units.|r
 }
 
 STRING 20783
@@ -124634,10 +124628,16 @@ STRING 20783
 (sunfury tower)
 }
 
-STRING 20786
-// Units: n0E1 (Improved Sky-Fury Tower), Ubertip (Tooltip - Extended)
+STRING 20784
+// Units: n09S (Centurion), Ubertip (Tooltip - Extended)
 {
-Sunwell infused stone and steel, built to defend Quel'Thalas.|n|cfff5962dCan learn:|R Magic Sentry|n|n|cffffcc00Attacks land and air units.|r
+Warrior of the Sunfury.|n|cfff5962dAbilities:|R Charge, Defend, Spell Resistance, Feedback|n|n|cffffcc00Attacks land units.|r
+}
+
+STRING 20785
+// Units: h0CF (Bowman), Ubertip (Tooltip - Extended)
+{
+Rangers exiled from their Kin.|n|cfff5962dAbilities:|R Animal Companion, Fire Arrows|n|n|cffffcc00Attacks land and air units.|r
 }
 
 STRING 20787
@@ -124650,6 +124650,18 @@ STRING 20788
 // Units: n0E2 (Technician), EditorSuffix (Name - Editor Suffix)
 {
 (Sunfury Worker)
+}
+
+STRING 20789
+// Units: h0CG (Flamekeeper), Casterupgradetip (Caster Upgrade Tips)
+{
+- Cremate,- Cremate|n- Minor Holy Light,- Cremate|n- Minor Holy Light|n- Flame Shield
+}
+
+STRING 20790
+// Units: h0CG (Flamekeeper), Ubertip (Tooltip - Extended)
+{
+Well-versed wizard in the fire arts.|n|cfff5962dAbilities:|R Cremate|n|cfff5962dCan Learn:|R Minor Holy Light, Flame Shield|n|n|cffffcc00Attacks land and air units.|R
 }
 
 STRING 20791
@@ -124670,14 +124682,20 @@ STRING 20793
 Z
 }
 
+STRING 20794
+// Units: h0CH (Astromancer), Casterupgradetip (Caster Upgrade Tips)
+{
+- Magic Missile,- Magic Missile|n- Dispel Magic,- Magic Missile|n- Dispel Magic|n- Suppression
+}
+
 STRING 20795
-// Upgrades: R020 (Defend), Hotkey (Hotkey)
+// Upgrades: Resm (Strength of the Moon,Improved Strength of the Moon,Advanced Strength of the Moo), Hotkey (Hotkey)
 {
 Q
 }
 
 STRING 20796
-// Upgrades: R03M (Defend), Hotkey (Hotkey)
+// Upgrades: R064 (Nature's Blessing), Hotkey (Hotkey)
 {
 E
 }
@@ -124773,15 +124791,9 @@ Instantly turns a creature inside-out. Dealing 700 damage.
 }
 
 STRING 20812
-// Upgrades: R02P (Backpack), Hotkey (Hotkey)
+// Upgrades: R03M (Defend), Hotkey (Hotkey)
 {
 E
-}
-
-STRING 20813
-// Units: h0CG (Flamekeeper), Casterupgradetip (Caster Upgrade Tips)
-{
-- Magic Missile,- Magic Missile|n- Dispel Magic,- Magic Missile|n- Dispel Magic|n- Flame Shield
 }
 
 STRING 20814
@@ -124790,16 +124802,10 @@ STRING 20814
 (sunfury)
 }
 
-STRING 20817
-// Units: h0CG (Flamekeeper), Ubertip (Tooltip - Extended)
+STRING 20815
+// Units: h0CH (Astromancer), Ubertip (Tooltip - Extended)
 {
-Well-versed sorceress in the arcane arts.|n|cfff5962dAbilities:|R Magic Missile|n|cfff5962dCan Learn:|R Dispel Magic, Flame Shield|n|n|cffffcc00Attacks land and air units.|R
-}
-
-STRING 20818
-// Units: h0CH (Astromancer), Casterupgradetip (Caster Upgrade Tips)
-{
-- Frost Bolt,- Frost Bolt|n- Summon Sea Elemental,- Frost Bolt|n- Summon Sea Elemental|n- Whirlpool
+Offensive caster.|n|cfff5962dAbilities:|R Magic Missile|n|cfff5962dCan Learn:|R Dispel Magic, Suppression|n|n|cffffcc00Attacks land and air units.|R
 }
 
 STRING 20819
@@ -124808,16 +124814,28 @@ STRING 20819
 (sunfury)
 }
 
-STRING 20822
-// Units: h0CH (Astromancer), Ubertip (Tooltip - Extended)
+STRING 20820
+// Units: h0CI (Tempest-Forge), Ubertip (Tooltip - Extended)
 {
-Offensive caster.|n|cfff5962dAbilities:|R Frost Bolt|n|cfff5962dCan Learn:|R Summon Sea Elemental, Whirlpool|n|n|cffffcc00Attacks land and air units.|R
+Construction facilities for the Sunfury war machines.|n|cfff5962dTrains:|R Skyship, Tempest-forged Scorpion, Arcane Annihiliator|n|cfff5962dResearches:|R 
+}
+
+STRING 20821
+// Abilities: A0SL (Minor Holy Light), EditorSuffix (Editor Suffix)
+{
+(Flamekeeper
 }
 
 STRING 20823
 // Units: n0E4 (Tempest-Forge Scorpion), EditorSuffix (Name - Editor Suffix)
 {
 (sunfury)
+}
+
+STRING 20824
+// Abilities: A11N (Arcane Absorption), Ubertip (Tooltip - Normal - Extended)
+{
+When this unit deals damage, 40% of the damage will be gained as mana
 }
 
 STRING 20825
@@ -124830,6 +124848,12 @@ STRING 20826
 // Units: n0E5 (Void Reaver), EditorSuffix (Name - Editor Suffix)
 {
 (sunfury)
+}
+
+STRING 20827
+// Abilities: A0ZW (Animal Companion), EditorSuffix (Editor Suffix)
+{
+(Sunfury)
 }
 
 STRING 20828
@@ -124856,10 +124880,16 @@ STRING 20831
 (sunfury)
 }
 
-STRING 20834
-// Units: n0E7 (Bloodwarder), Ubertip (Tooltip - Extended)
+STRING 20832
+// Abilities: A0ZW (Animal Companion), Tip (Tooltip - Normal)
 {
-A powerful mage of Dalaran.|n|cfff5962dAbilities:|R Forked Lightning, Mana Shield, Arcane Combustion, Teleport, Counterspell, Spell Shield, Resistant Skin|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land and air units.
+Animal Companion
+}
+
+STRING 20833
+// Abilities: A0ZW (Animal Companion), Ubertip (Tooltip - Normal - Extended)
+{
+Summons a panther companion with True Sight. |nLasts 45 seconds. |n|n|cffffcc00Attacks land units.|r
 }
 
 STRING 20835
@@ -124868,14 +124898,32 @@ STRING 20835
 (Sunfury Specialist)
 }
 
-STRING 20838
-// Units: h0CI (Tempest-Forge), Ubertip (Tooltip - Extended)
+STRING 20836
+// Abilities: A12E (Flame Shield), EditorSuffix (Editor Suffix)
 {
-Training institution for elite Elven warriors.|n|cfff5962dTrains:|R Spell Breaker, Dragonhawk Rider, Arcane Annihilator|n|cfff5962dResearches:|R Control Magic, Cloud, Improved Glaives
+(Flamekeeper-Sunfury )
+}
+
+STRING 20837
+// Abilities: A12E (Flame Shield), Ubertip (Tooltip - Normal - Extended)
+{
+Forms a shield of flames around a target unit, dealing 20 damage per second to units around it. |nLasts 20 seconds. Lasts 10 seconds on heroes.
 }
 
 STRING 20839
 // Units: n0E8 (Skyship), EditorSuffix (Name - Editor Suffix)
+{
+(sunfury)
+}
+
+STRING 20840
+// Units: h0CJ (War Panther), EditorSuffix (Name - Editor Suffix)
+{
+(sunfury)
+}
+
+STRING 20841
+// Units: U02V (High Astromancer), EditorSuffix (Name - Editor Suffix)
 {
 (sunfury)
 }
@@ -124887,7 +124935,7 @@ Flying attack gunship.|n|cfff5962dAbilities:|R Rocket Barrage, Unholy Boosters|n
 }
 
 STRING 20843
-// Units: h0CJ (War Panther), EditorSuffix (Name - Editor Suffix)
+// Abilities: A12F (Dispel Magic), EditorSuffix (Editor Suffix)
 {
 (sunfury)
 }
@@ -124917,7 +124965,7 @@ Revive Meredith
 }
 
 STRING 20848
-// Units: U02V (High Astromancer), EditorSuffix (Name - Editor Suffix)
+// Abilities: A12G (Suppression), EditorSuffix (Editor Suffix)
 {
 (sunfury)
 }
@@ -124953,13 +125001,13 @@ Summon Meredith
 }
 
 STRING 20854
-// Upgrades: R014 (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
+// Upgrades: R020 (Defend), Hotkey (Hotkey)
 {
 Q
 }
 
 STRING 20855
-// Upgrades: R00X (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: R014 (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
 {
 Q
 }
@@ -124971,7 +125019,7 @@ F
 }
 
 STRING 20857
-// Upgrades: R03O (Animal War Training), Hotkey (Hotkey)
+// Upgrades: R02P (Backpack), Hotkey (Hotkey)
 {
 E
 }
@@ -124989,7 +125037,7 @@ E
 }
 
 STRING 20860
-// Upgrades: R07I (Necromancer Adept Training,Necromancer Master Training), Hotkey (Hotkey)
+// Upgrades: R01B (Defend), Hotkey (Hotkey)
 {
 W
 }
@@ -125001,31 +125049,31 @@ W
 }
 
 STRING 20862
-// Upgrades: R097 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R03O (Animal War Training), Hotkey (Hotkey)
 {
 E
 }
 
 STRING 20863
-// Upgrades: R07E (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R00X (Magic Sentry), Hotkey (Hotkey)
 {
 Q
 }
 
 STRING 20864
-// Upgrades: R07L (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R07E (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 Q
 }
 
 STRING 20865
-// Upgrades: R07W (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R07I (Necromancer Adept Training,Necromancer Master Training), Hotkey (Hotkey)
 {
 W
 }
 
 STRING 20866
-// Upgrades: R086 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R097 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 E
 }
@@ -125292,5 +125340,173 @@ STRING 20910
 // Units: n0E8 (Skyship), Name (Name)
 {
 Skyship
+}
+
+STRING 20911
+// Abilities: A12G (Suppression), Name (Name)
+{
+Suppression
+}
+
+STRING 20912
+// Abilities: A12G (Suppression), Tip (Tooltip - Normal)
+{
+Suppression
+}
+
+STRING 20913
+// Abilities: A12G (Suppression), Ubertip (Tooltip - Normal - Extended)
+{
+Suppresses all enemy ranged units in a target area from attacking for 4 seconds.
+}
+
+STRING 20914
+// Abilities: A12H (Feedback), EditorSuffix (Editor Suffix)
+{
+(Bloodwarder)
+}
+
+STRING 20916
+// Buffs/Effects: B03E (Flame Shield (Ragnaros)), Bufftip (Tooltip)
+{
+Flame Shield
+}
+
+STRING 20917
+// Buffs/Effects: B01I (), Bufftip (Tooltip)
+{
+Flame Shield
+}
+
+STRING 20918
+// Upgrades: R00H (Envenomed Spears), Name (Name)
+{
+Animal Companion
+}
+
+STRING 20919
+// Upgrades: R07L (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+{
+Q
+}
+
+STRING 20920
+// Upgrades: R07W (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+{
+W
+}
+
+STRING 20921
+// Upgrades: R086 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+{
+E
+}
+
+STRING 20922
+// Upgrades: R09G (Sorceress Adept Training,Sorceress Master Training), EditorSuffix (Editor Suffix)
+{
+(sunfury)
+}
+
+STRING 20923
+// Upgrades: R09G (Sorceress Adept Training,Sorceress Master Training), Hotkey (Hotkey)
+{
+X
+}
+
+STRING 20924
+// Upgrades: R09G (Sorceress Adept Training,Sorceress Master Training), Hotkey (Hotkey)
+{
+X
+}
+
+STRING 20925
+// Upgrades: R09G (Sorceress Adept Training,Sorceress Master Training), Ubertip (Tooltip - Extended)
+{
+Increases Flamekeeper's mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Minor Holy Light.
+}
+
+STRING 20926
+// Upgrades: R09G (Sorceress Adept Training,Sorceress Master Training), Ubertip (Tooltip - Extended)
+{
+Increases Flamekeeper's mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Soul Burn.
+}
+
+STRING 20927
+// Upgrades: R09G (Sorceress Adept Training,Sorceress Master Training), Name (Name)
+{
+Flamekeeper Adept Training
+}
+
+STRING 20928
+// Upgrades: R09G (Sorceress Adept Training,Sorceress Master Training), Name (Name)
+{
+Flamekeeper Master Training
+}
+
+STRING 20929
+// Upgrades: R09G (Sorceress Adept Training,Sorceress Master Training), Tip (Tooltip)
+{
+Flamekeeper Adept Training
+}
+
+STRING 20930
+// Upgrades: R09G (Sorceress Adept Training,Sorceress Master Training), Tip (Tooltip)
+{
+Flamekeeper Master Training
+}
+
+STRING 20931
+// Upgrades: R09H (Priest Adept Training,Priest Master Training), EditorSuffix (Editor Suffix)
+{
+(sunfury)
+}
+
+STRING 20932
+// Upgrades: R09H (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
+{
+Z
+}
+
+STRING 20933
+// Upgrades: R09H (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
+{
+Z
+}
+
+STRING 20934
+// Upgrades: R09H (Priest Adept Training,Priest Master Training), Ubertip (Tooltip - Extended)
+{
+Increases Astromancer's mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Dispel Magic.
+}
+
+STRING 20935
+// Upgrades: R09H (Priest Adept Training,Priest Master Training), Ubertip (Tooltip - Extended)
+{
+Increases Astromancer 's mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Inner Fire.
+}
+
+STRING 20936
+// Upgrades: R09H (Priest Adept Training,Priest Master Training), Name (Name)
+{
+Astromancer Adept Training
+}
+
+STRING 20937
+// Upgrades: R09H (Priest Adept Training,Priest Master Training), Tip (Tooltip)
+{
+Astromancer Adept Training
+}
+
+STRING 20938
+// Upgrades: R09H (Priest Adept Training,Priest Master Training), Name (Name)
+{
+Astromancer Master Training
+}
+
+STRING 20939
+// Upgrades: R09H (Priest Adept Training,Priest Master Training), Tip (Tooltip)
+{
+Astromancer Master Training
 }
 
