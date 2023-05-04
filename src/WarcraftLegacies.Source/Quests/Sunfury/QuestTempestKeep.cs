@@ -33,7 +33,7 @@ namespace WarcraftLegacies.Source.Quests.Sunfury
       AddObjective(new ObjectiveExpire(1430, Title));
       AddObjective(new ObjectiveSelfExists());
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
-      ResearchId = Constants.UPGRADE_R09I;
+      ResearchId = Constants.UPGRADE_R09I_QUEST_COMPLETED_ECO_DOMES;
     }
 
     protected override void OnFail(Faction completingFaction) =>
