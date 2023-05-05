@@ -23,6 +23,7 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestTheramore"/> class.
     /// </summary>
+    /// <param name="dalaran"></param>
     /// <param name="theramoreRect">All units in this area will be made neutral, then rescued when the quest is completed.</param>
     public QuestTheramore(Capital dalaran, Rectangle theramoreRect) : base("Theramore",
       "The distant lands of Kalimdor remain untouched by human civilization. If the Third War proceeds poorly, it may become necessary to establish a forward base there.",

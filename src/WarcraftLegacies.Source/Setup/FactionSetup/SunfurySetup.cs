@@ -57,9 +57,10 @@ The Plague of Undeath is coming and Lordaeron will need your help with the Scour
       Sunfury.ModObjectLimit(FourCC("n0E4"), 6); //Elven Ballista
       Sunfury.ModObjectLimit(FourCC("n0E8"), 3); //Skyship
       Sunfury.ModObjectLimit(FourCC("n0E7"), 6); //Bloodwarder
-      Sunfury.ModObjectLimit(FourCC("n0E5"), 12); //Fel Reaver
+      Sunfury.ModObjectLimit(FourCC("n0E5"), 8); //Fel Reaver
       Sunfury.ModObjectLimit(FourCC("n0E6"), 4); //Shivarra
       Sunfury.ModObjectLimit(FourCC("e01B"), 6); //Arcane Annihilator
+      Sunfury.ModObjectLimit(FourCC("n006"), 2); //Ancient of the Arcane
 
       //Ships
       Sunfury.ModObjectLimit(FourCC("hbot"), Faction.UNLIMITED); //Alliance Transport Ship
