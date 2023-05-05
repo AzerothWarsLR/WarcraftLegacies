@@ -95846,6 +95846,12 @@ STRING 15977
 A nauseating tear in reality.|nProvides food, which increases the maximum number of units that can be trained.
 }
 
+STRING 15978
+// Abilities: A0ZN (Crystal Strike), Ubertip (Tooltip - Normal - Extended)
+{
+Instantly turns a creature inside-out. Dealing 1000 damage.
+}
+
 STRING 15979
 // Abilities: AOcl (Chain Lightning), Tip (Tooltip - Normal)
 {
@@ -124844,12 +124850,6 @@ STRING 20810
 Crystal Strike
 }
 
-STRING 20811
-// Abilities: A0ZN (Crystal Strike), Ubertip (Tooltip - Normal - Extended)
-{
-Instantly turns a creature inside-out. Dealing 700 damage.
-}
-
 STRING 20812
 // Upgrades: R02P (Backpack), Hotkey (Hotkey)
 {
@@ -125060,6 +125060,12 @@ STRING 20846
 Train War Panther
 }
 
+STRING 20847
+// Abilities: A12O (Felsteel Plating), EditorSuffix (Editor Suffix)
+{
+(void reaver)
+}
+
 STRING 20848
 // Abilities: A030 (Call Treants), EditorSuffix (Editor Suffix)
 {
@@ -125072,6 +125078,12 @@ STRING 20849
 High Astromancer
 }
 
+STRING 20850
+// Abilities: A12O (Felsteel Plating), Name (Name)
+{
+Felsteel Plating
+}
+
 STRING 20851
 // Abilities: A0FA (Siphoning Ritual), Ubertip (Tooltip - Normal - Extended)
 {
@@ -125082,6 +125094,12 @@ STRING 20852
 // Units: U02V (High Astromancer), Propernames (Proper Names)
 {
 Solarian
+}
+
+STRING 20853
+// Abilities: A12O (Felsteel Plating), Tip (Tooltip - Normal)
+{
+Felsteel Plating
 }
 
 STRING 20854
@@ -125760,5 +125778,23 @@ STRING 20966
 // Upgrades: R09H (Priest Adept Training,Priest Master Training), EditorSuffix (Editor Suffix)
 {
 (sunfury)
+}
+
+STRING 20967
+// Abilities: A12O (Felsteel Plating), Ubertip (Tooltip - Normal - Extended)
+{
+Gives a 25% chance for an attack to be absorbed reducing damage taken by 40 damage. Attacks cannot be reduced below 3 damage.
+}
+
+STRING 20968
+// Abilities: A12O (Felsteel Plating), Ubertip (Tooltip - Normal - Extended)
+{
+Gives a 35% chance for an attack to be absorbed reducing damage taken by 40 damage. Attacks cannot be reduced below 3 damage.
+}
+
+STRING 20969
+// Abilities: A12O (Felsteel Plating), Tip (Tooltip - Normal)
+{
+Felsteel Plating
 }
 

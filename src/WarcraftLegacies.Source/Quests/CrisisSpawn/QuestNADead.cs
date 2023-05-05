@@ -33,7 +33,7 @@ namespace WarcraftLegacies.Source.Quests.CrisisSpawn
       AddObjective(new ObjectiveTime(600));
       AddObjective(new ObjectiveTeamControlPointAmountLessThan(TeamSetup.NorthAlliance, 10));
       AddObjective(new ObjectiveEitherOf(
-        new ObjectiveTeamControlPointAmountGreaterThan(TeamSetup.Legion, 40),
+        new ObjectiveTeamControlPointAmountGreaterThan(TeamSetup.Legion, 30),
         new ObjectiveTeamDefeated(TeamSetup.NorthAlliance)));
       ResearchId = Constants.UPGRADE_R09C_QUEST_COMPLETED_SCOURGE_OR_NA_DEFEATED;
       Required = true;

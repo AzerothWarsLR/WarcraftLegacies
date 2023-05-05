@@ -29,7 +29,7 @@ namespace WarcraftLegacies.Source.Quests.CrisisSpawn
       AddObjective(new ObjectiveTime(600));
       AddObjective(new ObjectiveTeamControlPointAmountLessThan(TeamSetup.NightElves, 10));
       AddObjective(new ObjectiveEitherOf(
-new ObjectiveTeamControlPointAmountGreaterThan(TeamSetup.Horde, 40),
+new ObjectiveTeamControlPointAmountGreaterThan(TeamSetup.Horde, 30),
 new ObjectiveTeamDefeated(TeamSetup.NightElves)));
       ResearchId = Constants.UPGRADE_R091_QUEST_COMPLETED_HORDE_OR_NIGHT_ELF_DEFEATED;
       Required = true;

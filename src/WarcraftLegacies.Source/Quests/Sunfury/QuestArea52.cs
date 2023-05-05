@@ -12,26 +12,25 @@ using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using System.Collections.Generic;
 using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 
-namespace WarcraftLegacies.Source.Quests.Draenei
+namespace WarcraftLegacies.Source.Quests.Sunfury
 {
   /// <summary>
   /// Build various structures inside <see cref="Regions.AzuremystAmbient"/>
   /// </summary>
-  public sealed class QuestRebuildCivilisation : QuestData
+  public sealed class QuestArea52 : QuestData
   {
     private readonly List<unit> _rescueUnits;
     /// <summary>
-    /// Initializes a new instance of the <see cref="QuestRebuildCivilisation"/> class.
+    /// Initializes a new instance of the <see cref="QuestArea52"/> class.
     /// </summary>
-    public QuestRebuildCivilisation(Rectangle rescueRect, LegendaryHero velen) : base("The Way Forward", "The Draenei will need to rebuild their civilisation in Azeroth. Desolace seems like a perfect place for the birth of the second Draenei settlement.", "ReplaceableTextures\\CommandButtons\\BTNDraeneiDivineCitadel.blp")
+    public QuestArea52(Rectangle rescueRect) : base("The Way Forward", "The Draenei will need to rebuild their civilisation in Azeroth. Desolace seems like a perfect place for the birth of the second Draenei settlement.", "ReplaceableTextures\\CommandButtons\\BTNDraeneiDivineCitadel.blp")
     {
       Required = true;
       AddObjective(new ObjectiveKillAllInArea(new List<Rectangle> { Regions.DraeneiQuestKill }, "in Desolace"));
-      AddObjective(new ObjectiveLegendReachRect(velen, Regions.DesolaceUnlock, "Desolace"));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N0BF_ANTORAN_WASTES_10GOLD_MIN)));
       AddObjective(new ObjectiveExpire(1430, Title));
       AddObjective(new ObjectiveSelfExists());
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
-      ResearchId = Constants.UPGRADE_R082_QUEST_COMPLETED_THE_WAY_FORWARD;
     }
 
     /// <inheritdoc/>

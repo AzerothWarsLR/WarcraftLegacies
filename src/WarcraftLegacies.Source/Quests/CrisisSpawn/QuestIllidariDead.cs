@@ -33,7 +33,7 @@ namespace WarcraftLegacies.Source.Quests.CrisisSpawn
       AddObjective(new ObjectiveTime(600));
       AddObjective(new ObjectiveTeamControlPointAmountLessThan(TeamSetup.Outland, 10));
       AddObjective(new ObjectiveEitherOf(
-new ObjectiveTeamControlPointAmountGreaterThan(TeamSetup.SouthAlliance, 40),
+new ObjectiveTeamControlPointAmountGreaterThan(TeamSetup.SouthAlliance, 30),
 new ObjectiveTeamDefeated(TeamSetup.Outland)));
       ResearchId = Constants.UPGRADE_R09B_QUEST_COMPLETED_SOUTH_ALLIANCE_OR_ILLIDARI_DEFEATED;
       Required = true;

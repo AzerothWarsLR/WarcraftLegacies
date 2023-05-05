@@ -33,7 +33,7 @@ namespace WarcraftLegacies.Source.Quests.CrisisSpawn
       AddObjective(new ObjectiveTime(600));
       AddObjective(new ObjectiveTeamControlPointAmountLessThan(TeamSetup.Horde, 10));
       AddObjective(new ObjectiveEitherOf(
-new ObjectiveTeamControlPointAmountGreaterThan(TeamSetup.NightElves, 40),
+new ObjectiveTeamControlPointAmountGreaterThan(TeamSetup.NightElves, 30),
 new ObjectiveTeamDefeated(TeamSetup.Horde)));
 
 
