@@ -15,19 +15,19 @@ using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 namespace WarcraftLegacies.Source.Quests.Sunfury
 {
   /// <summary>
-  /// Build various structures inside <see cref="Regions.Area52Unlock"/>
+  /// Build various structures inside <see cref="Regions.UpperNetherstorm"/>
   /// </summary>
-  public sealed class QuestArea52 : QuestData
+  public sealed class QuestUpperNetherstorm : QuestData
   {
     private readonly List<unit> _rescueUnits;
     /// <summary>
-    /// Initializes a new instance of the <see cref="QuestArea52"/> class.
+    /// Initializes a new instance of the <see cref="QuestUpperNetherstorm"/> class.
     /// </summary>
-    public QuestArea52(Rectangle rescueRect) : base("Area 52", "The Sunfury will need to settle the surrounding lands, Area 52 is a perfect target", "ReplaceableTextures\\CommandButtons\\BTNLordaeronPalace.blp")
+    public QuestUpperNetherstorm(Rectangle rescueRect) : base("Upper Netherstorm", "The Sunfury will need to settle the surrounding lands, Upper Netherstorm is ripe for the taking", "ReplaceableTextures\\CommandButtons\\BTNArcaneCastle.blp")
     {
       Required = true;
-      AddObjective(new ObjectiveKillAllInArea(new List<Rectangle> { Regions.Area52Unlock }, "in Area 52"));
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N07Q_AREA_52_10GOLD_MIN)));
+      AddObjective(new ObjectiveKillAllInArea(new List<Rectangle> { Regions.UpperNetherstorm }, "in upper Netherstorm"));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N0CW_FARAHLON_10GOLD_MIN)));
       AddObjective(new ObjectiveExpire(1430, Title));
       AddObjective(new ObjectiveSelfExists());
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
@@ -46,10 +46,10 @@ namespace WarcraftLegacies.Source.Quests.Sunfury
     }
 
     /// <inheritdoc/>
-    protected override string RewardFlavour => "The Area 52 is now settled by the Sunfury";
+    protected override string RewardFlavour => "The Upper Netherstorm area is now settled by the Sunfury";
 
     /// <inheritdoc/>
-    protected override string RewardDescription => "Gain 400 Gold, 200 Lumber and a base in Area 52.";
+    protected override string RewardDescription => "Gain 400 Gold, 200 Lumber and a base in Upper Netherstorm.";
 
    }
  }

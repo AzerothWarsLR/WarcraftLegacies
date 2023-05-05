@@ -345,5 +345,7 @@ public static class Regions
 	public static Rectangle SunfuryStartingPosition { get; set; } = new Rectangle(1888f, -23424f, 3616f, -22048f);
 	public static Rectangle Netherstorm { get; set; } = new Rectangle(-544f, -23712f, 3680f, -18528f);
 	public static Rectangle KilSummon { get; set; } = new Rectangle(14176f, -17536f, 14272f, -17440f);
+	public static Rectangle UpperNetherstorm { get; set; } = new Rectangle(832f, -20832f, 3776f, -18400f);
+	public static Rectangle Area52Unlock { get; set; } = new Rectangle(-96f, -22720f, 1728f, -20800f);
 
 }

@@ -14,6 +14,8 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       var newQuest = sunfury.AddQuest(new QuestTempestKeep(Regions.TempestKeep, Regions.Biodome1, Regions.Biodome2, Regions.Biodome3));
       sunfury.StartingQuest = newQuest;
 
+      sunfury.AddQuest(new QuestArea52(Regions.Area52Unlock));
+      sunfury.AddQuest(new QuestUpperNetherstorm(Regions.UpperNetherstorm));
       sunfury.AddQuest(new QuestSolarian(artifactSetup.EssenceofMurmur));
       sunfury.AddQuest(new QuestSummonKil(allLegendSetup.Stormwind.StormwindKeep, allLegendSetup.Neutral.Karazhan, allLegendSetup.Quelthalas.Kael));
       sunfury.AddQuest(new QuestForgottenKnowledge(Regions.IllidanStartingPosition));

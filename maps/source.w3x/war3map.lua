@@ -338,6 +338,8 @@ gg_rct_Biodome2 = nil
 gg_rct_SunfuryStartingPosition = nil
 gg_rct_Netherstorm = nil
 gg_rct_KilSummon = nil
+gg_rct_UpperNetherstorm = nil
+gg_rct_Area52Unlock = nil
 gg_snd_ArcaneObservatoryWhat1 = nil
 gg_snd_ArrangedTeamInvitation = nil
 gg_snd_ClanInvitation = nil
@@ -526,8 +528,6 @@ gg_snd_DoorCloseRemix = nil
 gg_snd_DoorOpenRemix = nil
 gg_snd_NuclearLaunchDetected = nil
 gg_snd_IllidansTheme = ""
-gg_rct_UpperNetherstorm = nil
-gg_rct_Area52Unlock = nil
 function InitGlobals()
 end
 
@@ -8434,7 +8434,7 @@ gg_rct_TombOfSargerasInteriorG = Rect(352.0, 9920.0, 608.0, 10176.0)
 gg_rct_TombOfSargerasInteriorH = Rect(-1216.0, 8768.0, -288.0, 8992.0)
 gg_rct_BrokenIslesB = Rect(544.0, 8960.0, 3296.0, 10368.0)
 gg_rct_GuldansCorpse = Rect(-800.0, 9792.0, -544.0, 10080.0)
-gg_rct_KaliRock7 = Rect(-13056.0, 512.0, -12448.0, 1472.0)
+gg_rct_KaliRock7 = Rect(-13056.0, 352.0, -12448.0, 1472.0)
 gg_rct_BookRetrieval = Rect(9728.0, 5248.0, 10016.0, 5472.0)
 gg_rct_SkullRetrieval = Rect(8576.0, 4672.0, 8832.0, 4928.0)
 gg_rct_KezanUnlock = Rect(-2400.0, -8000.0, 608.0, -5184.0)
@@ -8468,7 +8468,7 @@ gg_rct_HinterEmeraldPortal = Rect(17344.0, 6368.0, 17792.0, 6624.0)
 gg_rct_DuskwoodEmeraldPortal = Rect(11008.0, -15968.0, 11456.0, -15712.0)
 gg_rct_FeralasEmeraldPortal = Rect(-18144.0, -6464.0, -17696.0, -6208.0)
 gg_rct_AshenvaleEmeraldPortal = Rect(-8576.0, 8992.0, -8128.0, 9280.0)
-gg_rct_KaliRock10 = Rect(-11296.0, 2688.0, -10144.0, 3424.0)
+gg_rct_KaliRock10 = Rect(-11296.0, 2688.0, -9952.0, 3424.0)
 gg_rct_KaliRock11 = Rect(-12800.0, 3392.0, -12032.0, 4736.0)
 gg_rct_KaliRock12 = Rect(-9472.0, -1888.0, -8256.0, -1248.0)
 gg_rct_LumberCampUnlock = Rect(-11648.0, 864.0, -9472.0, 3296.0)
