@@ -344,5 +344,6 @@ public static class Regions
 	public static Rectangle Biodome2 { get; set; } = new Rectangle(1824f, -21248f, 2368f, -20736f);
 	public static Rectangle SunfuryStartingPosition { get; set; } = new Rectangle(1888f, -23424f, 3616f, -22048f);
 	public static Rectangle Netherstorm { get; set; } = new Rectangle(-544f, -23712f, 3680f, -18528f);
+	public static Rectangle KilSummon { get; set; } = new Rectangle(14176f, -17536f, 14272f, -17440f);
 
 }

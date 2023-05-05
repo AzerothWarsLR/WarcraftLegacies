@@ -43,11 +43,11 @@ namespace WarcraftLegacies.Source.Setup.Spells
       
       var siphoningRitual = new SiphoningRitualSpell(Constants.ABILITY_A0FA_SIPHONING_RITUAL_QUEL_THALAS_KAEL_THAS)
       {
-        TargetCountBase = 7,
+        TargetCountBase = 24,
         TargetCountLevel = 0,
-        LifeDrainedPerSecondBase = 10,
+        LifeDrainedPerSecondBase = 30,
         LifeDrainedPerSecondLevel = 10,
-        ManaDrainedPerSecondBase = 5,
+        ManaDrainedPerSecondBase = 15,
         ManaDrainedPerSecondLevel = 5,
         Range = 500,
         Radius = 225,

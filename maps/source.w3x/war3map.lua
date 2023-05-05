@@ -337,6 +337,7 @@ gg_rct_Biodome3 = nil
 gg_rct_Biodome2 = nil
 gg_rct_SunfuryStartingPosition = nil
 gg_rct_Netherstorm = nil
+gg_rct_KilSummon = nil
 gg_snd_ArcaneObservatoryWhat1 = nil
 gg_snd_ArrangedTeamInvitation = nil
 gg_snd_ClanInvitation = nil
@@ -525,7 +526,6 @@ gg_snd_DoorCloseRemix = nil
 gg_snd_DoorOpenRemix = nil
 gg_snd_NuclearLaunchDetected = nil
 gg_snd_IllidansTheme = ""
-gg_rct_KilSummon = nil
 function InitGlobals()
 end
 
@@ -7760,6 +7760,7 @@ function CreateNeutralPassive()
     SetUnitAcquireRange(u, 200.0)
     u = BlzCreateUnitWithSkin(p, FourCC("nhym"), -7399.2, -9649.3, 39.310, FourCC("nhym"))
     u = BlzCreateUnitWithSkin(p, FourCC("nhym"), -7221.2, -9569.6, 94.485, FourCC("nhym"))
+    u = BlzCreateUnitWithSkin(p, FourCC("E00F"), -22899.4, -24636.8, 110.270, FourCC("E00F"))
     u = BlzCreateUnitWithSkin(p, FourCC("o04A"), -3888.4, -15711.6, 30.243, FourCC("o04A"))
     u = BlzCreateUnitWithSkin(p, FourCC("o04A"), -3797.7, -15774.3, 45.536, FourCC("o04A"))
     u = BlzCreateUnitWithSkin(p, FourCC("o04A"), -9072.3, -17544.9, 290.553, FourCC("o04A"))

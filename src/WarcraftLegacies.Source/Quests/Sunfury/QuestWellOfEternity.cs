@@ -19,7 +19,7 @@ namespace WarcraftLegacies.Source.Quests.Sunfury
       "ReplaceableTextures\\CommandButtons\\BTNFountainOfLife.blp")
     {
       _kiljaeden = kiljaeden;
-      _well = preplacedUnitSystem.GetUnit(Constants.UNIT_N0DZ_THE_INFINITY_FOUNTAIN_SUNFURY_MAGIC).Show(false);
+      _well = preplacedUnitSystem.GetUnit(Constants.UNIT_N0DZ_THE_WELL_OF_ETERNITY_SUNFURY_MAGIC).Show(false);
       AddObjective(new ObjectiveChannelRect(Regions.MaelstromChannel, "The Maelstrom", _kiljaeden, 420, 90, Title));
       Global = true;
     }

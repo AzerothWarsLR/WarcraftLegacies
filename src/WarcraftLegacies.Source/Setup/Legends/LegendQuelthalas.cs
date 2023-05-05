@@ -77,8 +77,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
       Kael = new LegendaryHero("Kael'thas Sunstrider")
       {
         PlayerColor = PLAYER_COLOR_RED,
-        UnitType = Constants.UNIT_HKAL_PRINCE_OF_QUEL_THALAS_QUEL_THALAS,
-        StartingXp = 1800
+        UnitType = Constants.UNIT_HKAL_PRINCE_OF_QUEL_THALAS_QUEL_THALAS
       };
 
       Lorthemar = new LegendaryHero("Lor'themar Theron")
