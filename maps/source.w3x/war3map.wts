@@ -24033,6 +24033,12 @@ STRING 4006
  (Evil Morphed Level 3)
 }
 
+STRING 4007
+// Units: U02V (High Astromancer), Ubertip (Tooltip - Extended)
+{
+Mystical Hero, has potent offensive and disruptive abilities.|n|cfff5962dCan Learn:|R Forked Lightning, Arcane Bombardment, Mana Shield, Consumed by the Void|n|n|cffffcc00Attacks land and air units.|R
+}
+
 STRING 4008
 // Units: E00E (Demon Hunter), EditorSuffix (Name - Editor Suffix)
 {
@@ -93320,30 +93326,6 @@ STRING 15557
 Turns all non-mechanical unit in the target area ethereal and slows their movement speed by <A0FE,DataA4,%>% for <A0FE,Dur4> seconds. Lasts <A0FE,HeroDur4> second on Heroes. Ethereal creatures cannot attack, but they can cast spells and certain spells cast upon them will have a greater effect.
 }
 
-STRING 15558
-// Abilities: A0FA (Siphoning Ritual), Researchubertip (Tooltip - Learn - Extended)
-{
-Drains hit points and mana each second from up to 7 units in the target area for <A0FA,DataA2> seconds. Only drains hit points and mana from friendly units if the caster needs it.|n|n|cffffcc00Level 1|r - Drains 20 hit points and 10 mana per second. |n|cffffcc00Level 2|r - Drains 30 hit points and 15 mana per second. |n|cffffcc00Level 3|r - Drains 40 hit points and 20 mana per second.
-}
-
-STRING 15559
-// Abilities: A0FA (Siphoning Ritual), Ubertip (Tooltip - Normal - Extended)
-{
-Drains 20 hit points and 10 mana per second from up to 7 units in the target area for <A0FA,DataA1> seconds. Only drains hit points and mana from friendly units if the caster needs it.
-}
-
-STRING 15560
-// Abilities: A0FA (Siphoning Ritual), Ubertip (Tooltip - Normal - Extended)
-{
-Drains 30 hit points and 15 mana per second from up to 7 units in the target area for <A0FA,DataA2> seconds. Only drains hit points and mana from friendly units if the caster needs it.
-}
-
-STRING 15561
-// Abilities: A0FA (Siphoning Ritual), Ubertip (Tooltip - Normal - Extended)
-{
-Drains 40 hit points and 20 mana per second from up to 7 units in the target area for <A0FA,DataA3> seconds. Only drains hit points and mana from friendly units if the caster needs it.
-}
-
 STRING 15562
 // Abilities: A001 (Frost Nova), Ubertip (Tooltip - Normal - Extended)
 {
@@ -102230,12 +102212,6 @@ STRING 17042
 Warrior Hero, exceptional at absorbing damage and melee combat.|n|cfff5962dAbilities:|r Reincarnation|n|cfff5962dCan learn:|R Shockwave, War Stomp, Ancestors' Blessing, Totemic Spirits|n|n|cffffcc00Attacks land units.|R
 }
 
-STRING 17043
-// Units: U02V (High Astromancer), Ubertip (Tooltip - Extended)
-{
-Mystical Hero, has potent offensive and disruptive abilities.|n|cfff5962dCan Learn:|R Forked Lightning, Devour Magic, Mana Shield, Consumed by the Void|n|n|cffffcc00Attacks land and air units.|R
-}
-
 STRING 17044
 // Units: Huth (Leader of the Silver Hand), Ubertip (Tooltip - Extended)
 {
@@ -103026,6 +103002,12 @@ STRING 17175
 // Units: h099 (Zealot), Ubertip (Tooltip - Extended)
 {
 Fighter of the Blue Dragonkin.|n|cfff5962dAbilities: |RCharge, Unholy Plating, Elite Combat Experience |n|n|cffffcc00Attacks land units.|r
+}
+
+STRING 17176
+// Abilities: A0FA (Siphoning Ritual), Researchubertip (Tooltip - Learn - Extended)
+{
+Drains hit points and mana each second from up to 24 units in the target area for <A0FA,DataA2> seconds. Only drains hit points and mana from friendly units if the caster needs it.|n|n|cffffcc00Level 1|r - Drains 40 hit points and 20 mana per second. |n|cffffcc00Level 2|r - Drains 50 hit points and 25 mana per second. |n|cffffcc00Level 3|r - Drains 60 hit points and 30 mana per second.
 }
 
 STRING 17177
@@ -107262,7 +107244,7 @@ Kaldorei hall of enhancements, where the defenders of Kalimdor grow in strength.
 }
 
 STRING 17882
-// Units: U02V (High Astromancer), Propernames (Proper Names)
+// Units: E00F (Voidlord), Propernames (Proper Names)
 {
 Solarian
 }
@@ -125078,8 +125060,14 @@ STRING 20850
 Revive Meredith
 }
 
+STRING 20851
+// Abilities: A0FA (Siphoning Ritual), Ubertip (Tooltip - Normal - Extended)
+{
+Drains 40 hit points and 20 mana per second from up to 24 units in the target area for <A0FA,DataA1> seconds. Only drains hit points and mana from friendly units if the caster needs it.
+}
+
 STRING 20852
-// Units: E00F (Voidlord), Propernames (Proper Names)
+// Units: U02V (High Astromancer), Propernames (Proper Names)
 {
 Solarian
 }
@@ -125736,6 +125724,18 @@ STRING 20961
 // Upgrades: R07L (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 Q
+}
+
+STRING 20962
+// Abilities: A0FA (Siphoning Ritual), Ubertip (Tooltip - Normal - Extended)
+{
+Drains 50 hit points and 25 mana per second from up to 24 units in the target area for <A0FA,DataA2> seconds. Only drains hit points and mana from friendly units if the caster needs it.
+}
+
+STRING 20963
+// Abilities: A0FA (Siphoning Ritual), Ubertip (Tooltip - Normal - Extended)
+{
+Drains 60 hit points and 30 mana per second from up to 24 units in the target area for <A0FA,DataA3> seconds. Only drains hit points and mana from friendly units if the caster needs it.
 }
 
 STRING 20964
