@@ -41,6 +41,8 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       dalaran.AddQuest(new QuestBlueDragons(allLegendSetup.Neutral.TheNexus));
       dalaran.AddQuest(new QuestKarazhan(allLegendSetup.Neutral.Karazhan));
 
+      dalaran.AddQuest(new QuestTheramore(allLegendSetup.Dalaran.Dalaran, Regions.Theramore));
+
       dalaran.AddQuest(crystalGolem);
       dalaran.AddQuest(fallenGuardian);
       dalaran.AddQuest(new QuestAegwynn(allLegendSetup.Dalaran.Jaina, allLegendSetup.Dalaran.Antonidas));

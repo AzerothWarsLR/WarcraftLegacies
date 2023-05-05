@@ -124395,7 +124395,7 @@ STRING 20742
 }
 
 STRING 20743
-// Upgrades: R09G (Sorceress Adept Training,Sorceress Master Training), Hotkey (Hotkey)
+// Upgrades: R08R (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 X
 }
@@ -124455,7 +124455,7 @@ Charge 1 mana per mana point used to a Divine Citadel directly next to the Arcan
 }
 
 STRING 20753
-// Upgrades: R09G (Sorceress Adept Training,Sorceress Master Training), Hotkey (Hotkey)
+// Upgrades: R02V (Naga Siren Adept Training,Naga Siren Master Training), Hotkey (Hotkey)
 {
 X
 }
@@ -124533,7 +124533,7 @@ Goliathon
 }
 
 STRING 20771
-// Upgrades: R08R (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R02V (Naga Siren Adept Training,Naga Siren Master Training), Hotkey (Hotkey)
 {
 X
 }
@@ -125373,13 +125373,13 @@ STRING 20922
 }
 
 STRING 20923
-// Upgrades: R02V (Naga Siren Adept Training,Naga Siren Master Training), Hotkey (Hotkey)
+// Upgrades: R09G (Sorceress Adept Training,Sorceress Master Training), Hotkey (Hotkey)
 {
 X
 }
 
 STRING 20924
-// Upgrades: R02V (Naga Siren Adept Training,Naga Siren Master Training), Hotkey (Hotkey)
+// Upgrades: R09G (Sorceress Adept Training,Sorceress Master Training), Hotkey (Hotkey)
 {
 X
 }
