@@ -36,7 +36,7 @@ namespace WarcraftLegacies.Source.Quests.Sunfury
     
     /// <inheritdoc />
     protected override string RewardDescription =>
-      "Kil'jaeden is now trainable at the Altar";
+      "Kil'jaeden is now trainable at the Altar and you can train Warlocks";
 
     /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)
