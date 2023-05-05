@@ -21,19 +21,17 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
         ControlPointDefenderUnitTypeId = Constants.UNIT_N0BC_CONTROL_POINT_DEFENDER_QUELTHALAS,
         IntroText = @"You are playing as the power-hungry |cffff0000Sunfury|r.
 
-You begin in Tranquilien, separated from Silvermoon.
-The Trolls of Zul'Aman have laid siege to the city, and are preparing attacks on your base.
+You begin in Netherstorm, your first mission is to build three biodomes in the green areas protected by a bubble.
+Unite with your fel ally to push through the Dark Portal and destroy Stormwind. 
 
-Train soldiers to repel the attacks, then gather enough strength to besiege Zul'Aman and take the head of Zul'jin.
-
-The Plague of Undeath is coming and Lordaeron will need your help with the Scourge soon. Be ready to join them as once you have secured Silvermoon and dealt with the Amani invasion."
+Your main goal is to summon Kil'jaeden and destroy your enemies."
       };
 
       //Structures
       Sunfury.ModObjectLimit(FourCC("h02P"), Faction.UNLIMITED); //t1
       Sunfury.ModObjectLimit(FourCC("h0C4"), Faction.UNLIMITED); //t2
       Sunfury.ModObjectLimit(FourCC("h0C5"), Faction.UNLIMITED); //t3
-      Sunfury.ModObjectLimit(FourCC("h0C7"), Faction.UNLIMITED); //house
+      Sunfury.ModObjectLimit(FourCC("h0C7"), 3); //house
       Sunfury.ModObjectLimit(FourCC("h0C8"), Faction.UNLIMITED); //forge
       Sunfury.ModObjectLimit(FourCC("h0C9"), Faction.UNLIMITED); //barrack
       Sunfury.ModObjectLimit(FourCC("h0CB"), Faction.UNLIMITED); //magic
@@ -84,7 +82,7 @@ The Plague of Undeath is coming and Lordaeron will need your help with the Scour
       Sunfury.ModObjectLimit(FourCC("R09H"), Faction.UNLIMITED); //Priest Adept Training
       Sunfury.ModObjectLimit(FourCC("R09G"), Faction.UNLIMITED); //Flamekeeper Adept Training
 
-      Sunfury.AddGoldMine(preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(17716, 13000)));
+      Sunfury.AddGoldMine(preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(3295, -22670)));
 
       FactionManager.Register(Sunfury);
     }

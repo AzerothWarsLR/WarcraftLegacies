@@ -93332,6 +93332,24 @@ STRING 15558
 Quest Completed: The High Astromancer
 }
 
+STRING 15559
+// Units: U02V (High Astromancer), Awakentip (Tooltip - Awaken)
+{
+Revive Solarian
+}
+
+STRING 15560
+// Units: U02V (High Astromancer), Revivetip (Tooltip - Revive)
+{
+Revive Solarian
+}
+
+STRING 15561
+// Units: U02V (High Astromancer), Tip (Tooltip - Basic)
+{
+Summon Solarian
+}
+
 STRING 15562
 // Abilities: A001 (Frost Nova), Ubertip (Tooltip - Normal - Extended)
 {
@@ -95826,12 +95844,6 @@ STRING 15977
 // Units: n0AU (Pulsating Portal), Ubertip (Tooltip - Extended)
 {
 A nauseating tear in reality.|nProvides food, which increases the maximum number of units that can be trained.
-}
-
-STRING 15978
-// Units: o056 (Arcane Well), Ubertip (Tooltip - Extended)
-{
-Font of Arcane energy.|nProvides 10 food, which increases the maximum number of units that can be trained.
 }
 
 STRING 15979
@@ -102216,6 +102228,12 @@ STRING 17042
 // Units: Ocbh (Chieftain of the Bloodhoof), Ubertip (Tooltip - Extended)
 {
 Warrior Hero, exceptional at absorbing damage and melee combat.|n|cfff5962dAbilities:|r Reincarnation|n|cfff5962dCan learn:|R Shockwave, War Stomp, Ancestors' Blessing, Totemic Spirits|n|n|cffffcc00Attacks land units.|R
+}
+
+STRING 17043
+// Units: o056 (Arcane Well), Ubertip (Tooltip - Extended)
+{
+Font of Arcane energy.|nProvides 10 food, which increases the maximum number of units that can be trained.|n|r|n|cff99b4d1Can only build 48.
 }
 
 STRING 17044
@@ -125042,12 +125060,6 @@ STRING 20846
 Train War Panther
 }
 
-STRING 20847
-// Units: U02V (High Astromancer), Awakentip (Tooltip - Awaken)
-{
-Revive Meredith
-}
-
 STRING 20848
 // Abilities: A030 (Call Treants), EditorSuffix (Editor Suffix)
 {
@@ -125060,12 +125072,6 @@ STRING 20849
 High Astromancer
 }
 
-STRING 20850
-// Units: U02V (High Astromancer), Revivetip (Tooltip - Revive)
-{
-Revive Meredith
-}
-
 STRING 20851
 // Abilities: A0FA (Siphoning Ritual), Ubertip (Tooltip - Normal - Extended)
 {
@@ -125076,12 +125082,6 @@ STRING 20852
 // Units: U02V (High Astromancer), Propernames (Proper Names)
 {
 Solarian
-}
-
-STRING 20853
-// Units: U02V (High Astromancer), Tip (Tooltip - Basic)
-{
-Summon Meredith
 }
 
 STRING 20854
