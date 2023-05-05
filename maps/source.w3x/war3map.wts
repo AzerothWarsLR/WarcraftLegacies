@@ -93326,6 +93326,12 @@ STRING 15557
 Turns all non-mechanical unit in the target area ethereal and slows their movement speed by <A0FE,DataA4,%>% for <A0FE,Dur4> seconds. Lasts <A0FE,HeroDur4> second on Heroes. Ethereal creatures cannot attack, but they can cast spells and certain spells cast upon them will have a greater effect.
 }
 
+STRING 15558
+// Upgrades: R09K (Chaos), Name (Name)
+{
+Quest Completed: The High Astromancer
+}
+
 STRING 15562
 // Abilities: A001 (Frost Nova), Ubertip (Tooltip - Normal - Extended)
 {

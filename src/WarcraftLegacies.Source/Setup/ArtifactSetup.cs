@@ -42,7 +42,12 @@ namespace WarcraftLegacies.Source.Setup
     /// Powerful tome left behind by the Guardian Medivh.
     /// </summary>
     public Artifact BookOfMedivh { get; }
-    
+
+    /// <summary>
+    /// Essence of a powerful voidlord.
+    /// </summary>
+    public Artifact EssenceofMurmur { get; }
+
     /// <summary>
     /// Horn that can be used to call a bunch of wisps.
     /// </summary>
@@ -181,9 +186,9 @@ namespace WarcraftLegacies.Source.Setup
       UnitAddItem(preplacedUnitSystem.GetUnit(FourCC("hmtm"), new Point(15109, -895)), tempArtifact.Item);
       ArtifactManager.Register(tempArtifact);
 
-      tempArtifact = new Artifact(CreateItem(FourCC("I00K"), DummyX, DummyY)); //Essence
+      EssenceofMurmur = new Artifact(CreateItem(FourCC("I00K"), DummyX, DummyY)); //Essence
       UnitAddItem(preplacedUnitSystem.GetUnit(FourCC("n03T")), tempArtifact.Item); //Murmur
-      ArtifactManager.Register(tempArtifact);
+      ArtifactManager.Register(EssenceofMurmur);
 
       ScytheOfElune = new Artifact(CreateItem(Constants.ITEM_I00R_SCYTHE_OF_ELUNE, DummyX, DummyX));
       var worgenBloodShamanHero = preplacedUnitSystem.GetUnit(Constants.UNIT_O038_WORGEN_BLOOD_SHAMAN_WORGEN_HERO,
