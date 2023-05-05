@@ -77,6 +77,7 @@ The Plague of Undeath is coming and Lordaeron will need your help with the Scour
       Sunfury.ModObjectLimit(FourCC("H098"), 1); //Pathaleon
       Sunfury.ModObjectLimit(FourCC("U02V"), 1); //Solarian
       Sunfury.ModObjectLimit(FourCC("Hkal"), 1); //Kael
+      Sunfury.ModObjectLimit(FourCC("U004"), 1); //Kil
 
       //Upgrades
       Sunfury.ModObjectLimit(FourCC("R00K"), Faction.UNLIMITED); //Power Infusion

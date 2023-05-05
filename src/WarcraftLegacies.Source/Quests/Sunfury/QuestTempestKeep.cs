@@ -52,7 +52,7 @@ namespace WarcraftLegacies.Source.Quests.Sunfury
     protected override string RewardFlavour => "With enough food, we can settle Tempest Keep and start growing Ancients of the Arcane";
 
     /// <inheritdoc/>
-    protected override string RewardDescription => "Unlock Tempest Keep and the ability to train Ancients of the Arcane";
+    protected override string RewardDescription => "Unlock Tempest Keep, build Void Wells and Tempest-forges and the ability to train Ancients of the Arcane";
 
    }
  }

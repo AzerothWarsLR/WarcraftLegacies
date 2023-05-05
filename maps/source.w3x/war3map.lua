@@ -336,6 +336,7 @@ gg_rct_Biodome1 = nil
 gg_rct_Biodome3 = nil
 gg_rct_Biodome2 = nil
 gg_rct_SunfuryStartingPosition = nil
+gg_rct_Netherstorm = nil
 gg_snd_ArcaneObservatoryWhat1 = nil
 gg_snd_ArrangedTeamInvitation = nil
 gg_snd_ClanInvitation = nil
@@ -524,7 +525,7 @@ gg_snd_DoorCloseRemix = nil
 gg_snd_DoorOpenRemix = nil
 gg_snd_NuclearLaunchDetected = nil
 gg_snd_IllidansTheme = ""
-gg_rct_Netherstorm = nil
+gg_rct_KilSummon = nil
 function InitGlobals()
 end
 
@@ -8434,6 +8435,7 @@ function CreateRegions()
     gg_rct_Biodome2 = Rect(1824.0, -21248.0, 2368.0, -20736.0)
     gg_rct_SunfuryStartingPosition = Rect(1888.0, -23424.0, 3616.0, -22048.0)
     gg_rct_Netherstorm = Rect(-544.0, -23712.0, 3680.0, -18528.0)
+    gg_rct_KilSummon = Rect(14176.0, -17536.0, 14272.0, -17440.0)
 end
 
 function InitUpgrades_Player0()

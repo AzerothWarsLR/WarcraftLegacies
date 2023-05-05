@@ -10,7 +10,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
   {
     public LegendaryHero Anasterian { get; }
     public LegendaryHero Rommath { get; }
-    public LegendaryHero Jennalla { get; }
+    public LegendaryHero Solarian { get; }
     public LegendaryHero Sylvanas { get; }
     public LegendaryHero Kael { get; }
     public LegendaryHero Lorthemar { get; }
@@ -56,9 +56,10 @@ namespace WarcraftLegacies.Source.Setup.Legends
         StartingXp = 1800
       };
 
-      Jennalla = new LegendaryHero("Jennalla")
+      Solarian = new LegendaryHero("Solarian")
       {
-        UnitType = Constants.UNIT_H02B_ARCANE_PHANTOM_KHADGAR
+        UnitType = Constants.UNIT_U02V_HIGH_ASTROMANCER_SUNFURY,
+        StartingXp = 2800
       };
 
       Pathaleon = new LegendaryHero("Pathaleon")
@@ -106,7 +107,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
     {
       LegendaryHeroManager.Register(Anasterian);
       LegendaryHeroManager.Register(Rommath);
-      LegendaryHeroManager.Register(Jennalla);
+      LegendaryHeroManager.Register(Solarian);
       LegendaryHeroManager.Register(Sylvanas);
       LegendaryHeroManager.Register(Kael);
       LegendaryHeroManager.Register(Lorthemar);

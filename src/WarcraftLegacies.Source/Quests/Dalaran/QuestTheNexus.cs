@@ -10,7 +10,7 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
   {
     private readonly LegendaryHero _jaina;
 
-    public QuestTheNexus(LegendaryHero jaina, Capital lichKing, Capital theNexus) : base("The Nexus",
+    public QuestTheNexus(LegendaryHero jaina, Capital lichKing, Capital theNexus, Capital dalaran) : base("The Nexus",
       "The Nexus is a tower of powerful arcane energy, Jaina could absord it to gain it's power",
       "ReplaceableTextures\\CommandButtons\\BTNBlueDragonNexus.blp")
     {
@@ -18,6 +18,7 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
       AddObjective(new ObjectiveChannelRect(Regions.JainaChannel, "The Nexus", jaina, 60, 270, Title));
       AddObjective(new ObjectiveControlLegend(jaina, true));
       AddObjective(new ObjectiveCapitalDead(lichKing));
+      AddObjective(new ObjectiveCapitalDead(dalaran));
       AddObjective(new ObjectiveControlCapital(theNexus, false));
       ResearchId = Constants.UPGRADE_R03Y_QUEST_COMPLETED_THE_NEXUS;
       Global = true;
