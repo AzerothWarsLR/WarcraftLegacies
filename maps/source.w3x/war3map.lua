@@ -6812,7 +6812,7 @@ u = BlzCreateUnitWithSkin(p, FourCC("o03T"), -1152.0, -5888.0, 270.000, FourCC("
 u = BlzCreateUnitWithSkin(p, FourCC("o03T"), -1728.0, -6528.0, 270.000, FourCC("o03T"))
 u = BlzCreateUnitWithSkin(p, FourCC("h06R"), 8832.0, -29504.0, 270.000, FourCC("h06R"))
 u = BlzCreateUnitWithSkin(p, FourCC("o03T"), -1600.0, -5632.0, 270.000, FourCC("o03T"))
-u = BlzCreateUnitWithSkin(p, FourCC("ngol"), -3008.0, 24064.0, 270.000, FourCC("ngol"))
+u = BlzCreateUnitWithSkin(p, FourCC("ngol"), -3200.0, 24000.0, 270.000, FourCC("ngol"))
 SetResourceAmount(u, 800)
 u = BlzCreateUnitWithSkin(p, FourCC("o03T"), 0.0, -7168.0, 270.000, FourCC("o03T"))
 u = BlzCreateUnitWithSkin(p, FourCC("o03U"), -1408.0, -6656.0, 270.000, FourCC("o03U"))

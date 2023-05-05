@@ -78,7 +78,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
 
     /// <inheritdoc />
     protected override string RewardDescription =>
-      "All villagers in Lordaeron are transformed into Zombies, and several Plague Cauldrons spawn throughout Lordaeron, which periodically spawn Zombies. A portal opens between Dragonblight and Scholomance";
+      "All villagers in Lordaeron are transformed into Zombies, and several Plague Cauldrons spawn throughout Lordaeron, which periodically spawn Zombies. A portal opens between Dragonblight and Scholomance. You can now build Necropolis.";
 
     private void CreatePlagueCauldrons(Faction completingFaction)
     {
