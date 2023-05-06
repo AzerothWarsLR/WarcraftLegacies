@@ -26,7 +26,8 @@ namespace WarcraftLegacies.Source.Quests.Sunfury
     public QuestTempestKeep(Rectangle rescueRect, Rectangle questRect1, Rectangle questRect2, Rectangle questRect3) : base("Eco-domes", "The Sunfury will need to adapt to the hostile environement of Netherstorm. The existing eco-domes are perfect for food production.", "ReplaceableTextures\\CommandButtons\\BTNFeatherMoonAura.blp")
     {
       Required = true;
-      AddObjective(new ObjectiveKillAllInArea(new List<Rectangle> { Regions.Netherstorm }, "in Netherstorm"));
+      AddObjective(new ObjectiveUpgrade(Constants.UNIT_H0C5_SANCTUARY_SUNFURY_T3,
+        Constants.UNIT_H02P_HOLDING_SUNFURY_T1));
       AddObjective(new ObjectiveBuildInRect(questRect1, "in one of the 3 Eco-dome in Netherstorm", Constants.UNIT_H0C7_BIODOME_SUNFURY_FARM, 1));
       AddObjective(new ObjectiveBuildInRect(questRect2, "in one of the 3 Eco-dome in Netherstorm", Constants.UNIT_H0C7_BIODOME_SUNFURY_FARM, 1));
       AddObjective(new ObjectiveBuildInRect(questRect3, "in one of the 3 Eco-dome in Netherstorm", Constants.UNIT_H0C7_BIODOME_SUNFURY_FARM, 1));
