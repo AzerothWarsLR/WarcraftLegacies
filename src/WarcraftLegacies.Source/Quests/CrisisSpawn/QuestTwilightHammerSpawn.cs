@@ -6,6 +6,7 @@ using MacroTools.ObjectiveSystem.Objectives.MetaBased;
 using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
+using System;
 using WarcraftLegacies.Source.Setup;
 using WarcraftLegacies.Source.Setup.FactionSetup;
 using WCSharp.Shared.Data;
@@ -53,6 +54,9 @@ namespace WarcraftLegacies.Source.Quests.CrisisSpawn
     protected override void OnComplete(Faction completingFaction)
     {
       var spawn = _spawnLocation.Center;
+
+      Console.WriteLine("DEBUG: Twilight hammerSpawn");
+
       foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
       {
         SetPlayerTechMaxAllowed(player, Constants.UPGRADE_R08K_FORTIFIED_HULLS, 0);

@@ -5,6 +5,7 @@ using MacroTools.ObjectiveSystem.Objectives.MetaBased;
 using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
+using System;
 using WCSharp.Shared.Data;
 using static War3Api.Common; 
 
@@ -41,9 +42,10 @@ namespace WarcraftLegacies.Source.Quests.CrisisSpawn
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
     {
+      Console.WriteLine("DEBUG: OLD GOD PICK 1");
       RemoveUnit(_picker);
       SetUnitOwner(_firstpick, Player(19), true);
-
+      Console.WriteLine("DEBUG: OLD GOD PICK 2 ");
       foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
       {
         SetPlayerTechResearched(player, Constants.UPGRADE_R06D_TEAM_PICKED_OLD_GODS, 1);

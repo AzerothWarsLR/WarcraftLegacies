@@ -6,6 +6,7 @@ using MacroTools.ObjectiveSystem.Objectives.MetaBased;
 using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
+using System;
 using WarcraftLegacies.Source.Setup;
 using WarcraftLegacies.Source.Setup.FactionSetup;
 using WCSharp.Shared.Data;
@@ -63,11 +64,15 @@ namespace WarcraftLegacies.Source.Quests.CrisisSpawn
         SetPlayerTechMaxAllowed(player, Constants.UPGRADE_R07W_FORTIFIED_HULLS, 0);
       }
 
+      Console.WriteLine("DEBUG: BlackEmpireSpawnFootman Set research level");
+
       KillNeutralHostileUnitsInRadius(spawn.X, spawn.Y, 2000);
 
       RemoveUnit(_picker);
 
       SetUnitOwner(_secondpick, Player(16), true);
+
+      Console.WriteLine("DEBUG: BlackEmpireSpawnFootman Set owner, remove unit, kill hostile");
 
       if (completingFaction.Player != null)
       {
@@ -95,12 +100,18 @@ namespace WarcraftLegacies.Source.Quests.CrisisSpawn
         _nzoth.StartingXp = (int)(GameTime.GetGameTime() * 7);
         _nzoth.ForceCreate(completingFaction.Player, spawn, 270);
 
+        Console.WriteLine("DEBUG: BlackEmpireSpawnFootman Set exp spawn units");
+
         completingFaction.Player.SetTeam(TeamSetup.Oldgods);
         completingFaction.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, (int)((GameTime.GetGameTime() / 60) * 100));
         completingFaction.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_LUMBER, 8000);
 
+        Console.WriteLine("DEBUG: BlackEmpireSpawnFootman ressources and team");
+
         if (GetLocalPlayer() == completingFaction.Player)
           SetCameraPosition(spawn.X, spawn.Y);
+
+        Console.WriteLine("DEBUG: BlackEmpireSpawnFootman Set camera");
 
         completingFaction.Player.SetFaction(BlackEmpireSetup.BlackEmpire);
       }
