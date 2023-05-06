@@ -22,7 +22,7 @@ namespace WarcraftLegacies.Source.Quests.CrisisSpawn
       "The time has come for the Crisis to pick their fate.",
       @"ReplaceableTextures\\CommandButtons\\BTNSleep.blp")
     {
-      AddObjective(new ObjectiveTime(100));
+      AddObjective(new ObjectiveTime(1500));
       Shared = true;
     }
 
