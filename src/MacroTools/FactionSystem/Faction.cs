@@ -174,11 +174,13 @@ namespace MacroTools.FactionSystem
           {
             SetPlayerTechResearched(player, _defeatedResearch, 1);
             SetPlayerTechResearched(player, _undefeatedResearch, 0);
+            Console.WriteLine("DEBUG: A FACTION IS DEFEATED");
           }
 
         //Remove player from game if necessary
         if (value == ScoreStatus.Defeated && Player != null)
         {
+          Console.WriteLine("DEBUG: FACTION IS DEFEATED AND PLAYER NOT NULL");
           FogModifierStart(CreateFogModifierRect(Player, FOG_OF_WAR_VISIBLE,
             WCSharp.Shared.Data.Rectangle.WorldBounds.Rect, false, false));
           RemovePlayer(Player, PLAYER_GAME_RESULT_DEFEAT);
