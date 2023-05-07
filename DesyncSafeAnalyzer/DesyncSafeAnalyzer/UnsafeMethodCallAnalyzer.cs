@@ -82,6 +82,7 @@ namespace DesyncSafeAnalyzer
     {
       "BlzSetSpecialEffectColor",
       "BlzSetSpecialEffectColorByPlayer",
+      "StartSound"
     };
   }
 }

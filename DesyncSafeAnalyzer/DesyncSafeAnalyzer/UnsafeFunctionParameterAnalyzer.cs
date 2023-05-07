@@ -58,7 +58,7 @@ namespace DesyncSafeAnalyzer
         return;
       
       var desyncSafeAttribute =
-        actionMethod.GetAttributes().FirstOrDefault(attr => attr.AttributeClass?.Name == "DesyncSafe");
+        actionMethod.GetAttributes().FirstOrDefault(attr => attr.AttributeClass.Name.Contains("DesyncSafe"));
       if (desyncSafeAttribute != null)
         return;
 
