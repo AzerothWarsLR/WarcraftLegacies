@@ -55,7 +55,7 @@ namespace DesyncSafeAnalyzer
       
       var callerMethodAttributes = context.SemanticModel.GetDeclaredSymbol(callerMethodSymbol).GetAttributes();
       
-      if (callerMethodAttributes.Any(attr => attr.AttributeClass.Name.Contains("DesyncSafe")))
+      if (!callerMethodAttributes.Any(attr => attr.AttributeClass.Name.Contains("DesyncSafe")))
         return;
 
       if (MethodIsDesyncSafe(context, invocation))
