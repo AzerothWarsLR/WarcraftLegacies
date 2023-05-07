@@ -1,4 +1,5 @@
-﻿using System.Collections.Immutable;
+﻿using System.Collections.Generic;
+using System.Collections.Immutable;
 using System.Linq;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
@@ -10,23 +11,23 @@ namespace DesyncSafeAnalyzer
   [DiagnosticAnalyzer(LanguageNames.CSharp)]
   public class UnsafeFunctionParameterAnalyzer : DiagnosticAnalyzer
   {
-    private static readonly DiagnosticDescriptor Rule1 = new DiagnosticDescriptor(
+    private static readonly DiagnosticDescriptor AnonymousFunctionRule = new DiagnosticDescriptor(
       "AN001",
-      "Anonymous functions are not allowed",
-      "Anonymous functions are not allowed as parameters to InvokeForClient method.",
+      "Unsafe use of Action parameter",
+      "Lambda expressions passed to InvokeForClient should only contain functions marked with the [DesyncSafe] attribute.",
       "Usage",
-      DiagnosticSeverity.Error,
+      DiagnosticSeverity.Warning,
       true);
 
-    private static readonly DiagnosticDescriptor Rule2 = new DiagnosticDescriptor(
+    private static readonly DiagnosticDescriptor ConcreteFunctionRule = new DiagnosticDescriptor(
       "AN002",
       "Unsafe use of Action parameter",
-      "Actions passed as parameters to InvokeForClient method must be marked with the [DesyncSafe] attribute.",
+      "Concrete function passed to InvokeForClient must be marked with the [DesyncSafe] attribute.",
       "Usage",
       DiagnosticSeverity.Error,
       true);
 
-    public override ImmutableArray<DiagnosticDescriptor> SupportedDiagnostics => ImmutableArray.Create(Rule1, Rule2);
+    public override ImmutableArray<DiagnosticDescriptor> SupportedDiagnostics => ImmutableArray.Create(AnonymousFunctionRule, ConcreteFunctionRule);
 
     public override void Initialize(AnalysisContext context)
     {
@@ -37,24 +38,58 @@ namespace DesyncSafeAnalyzer
 
     private static void AnalyzeInvocation(SyntaxNodeAnalysisContext context)
     {
+      CheckAnonymousRule(context);
+      CheckConcreteRule(context);
+    }
+
+    private static void CheckAnonymousRule(SyntaxNodeAnalysisContext context)
+    {
       if (!(context.Node is InvocationExpressionSyntax invocation) ||
           !(invocation.Expression is MemberAccessExpressionSyntax memberAccess) ||
           memberAccess.Name.Identifier.Text != "InvokeForClient")
         return;
 
       var argumentList = invocation.ArgumentList;
-
-      if (argumentList.Arguments[0].Expression is AnonymousFunctionExpressionSyntax)
-      {
-        var diagnostic1 = Diagnostic.Create(Rule1, argumentList.Arguments[0].GetLocation());
-        context.ReportDiagnostic(diagnostic1);
-        return;
-      }
-
       var actionArg = argumentList.Arguments[0].Expression as IdentifierNameSyntax;
       var actionSymbol = context.SemanticModel.GetSymbolInfo(actionArg).Symbol;
 
-      if (!(actionSymbol is IMethodSymbol actionMethod))
+      if (!(actionSymbol is IMethodSymbol actionMethod)) 
+        return;
+      
+      var unsafeFunctions = new List<string>();
+      foreach (var parameter in actionMethod.Parameters)
+      {
+        if (!(parameter.Type is INamedTypeSymbol namedType) ||
+            namedType.ConstructedFrom.ToString() != "System.Action`1" ||
+            namedType.TypeArguments.Length != 1) 
+          continue;
+          
+        var functionType = namedType.TypeArguments[0];
+        if (!HasDesyncSafeAttribute(functionType)) 
+          unsafeFunctions.Add(parameter.Name);
+      }
+
+      if (!unsafeFunctions.Any()) 
+        return;
+      
+      var message =
+        $"The following functions within the '{actionArg.Identifier.Text}' parameter are not marked with the [DesyncSafe] attribute: {string.Join(", ", unsafeFunctions)}.";
+      var diagnostic = Diagnostic.Create(AnonymousFunctionRule, actionArg.GetLocation(), message);
+      context.ReportDiagnostic(diagnostic);
+    }
+
+    private static void CheckConcreteRule(SyntaxNodeAnalysisContext context)
+    {
+      if (!(context.Node is InvocationExpressionSyntax invocation) ||
+          !(invocation.Expression is MemberAccessExpressionSyntax memberAccess) ||
+          memberAccess.Name.Identifier.Text != "InvokeForClient")
+        return;
+
+      var argumentList = invocation.ArgumentList;
+      var actionArg = argumentList.Arguments[0].Expression as IdentifierNameSyntax;
+      var actionSymbol = context.SemanticModel.GetSymbolInfo(actionArg).Symbol;
+
+      if (!(actionSymbol is IMethodSymbol actionMethod)) 
         return;
       
       var desyncSafeAttribute =
@@ -62,8 +97,11 @@ namespace DesyncSafeAnalyzer
       if (desyncSafeAttribute != null)
         return;
 
-      var diagnostic2 = Diagnostic.Create(Rule2, actionArg?.GetLocation());
+      var diagnostic2 = Diagnostic.Create(ConcreteFunctionRule, actionArg?.GetLocation());
       context.ReportDiagnostic(diagnostic2);
     }
+    
+    private static bool HasDesyncSafeAttribute(ISymbol typeSymbol) =>
+      typeSymbol.GetAttributes().Any(attr => attr.AttributeClass.Name.Contains("DesyncSafe"));
   }
 }
