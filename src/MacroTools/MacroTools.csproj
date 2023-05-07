@@ -17,6 +17,14 @@
         <PackageReference Include="WCSharp.Shared" Version="2.1.0-rc1" />
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\..\DesyncSafeAnalyzer.Attributes\DesyncSafeAnalyzer.Attributes.csproj" />
+      <ProjectReference Include="..\..\DesyncSafeAnalyzer\DesyncSafeAnalyzer\DesyncSafeAnalyzer.csproj">
+          <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+          <OutputItemType>Analyzer</OutputItemType>
+      </ProjectReference>
+    </ItemGroup>
+
     <PropertyGroup>
         <GenerateDocumentationFile>true</GenerateDocumentationFile>
     </PropertyGroup>

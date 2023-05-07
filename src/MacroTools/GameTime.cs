@@ -1,4 +1,5 @@
 using System;
+using DesyncSafeAnalyzer.Attributes;
 using static War3Api.Common;
 
 namespace MacroTools
@@ -30,7 +31,7 @@ namespace MacroTools
     {
       return _currentTime;
     }
-
+    
     private static void EndTurn()
     {
       _turnCount += 1;
