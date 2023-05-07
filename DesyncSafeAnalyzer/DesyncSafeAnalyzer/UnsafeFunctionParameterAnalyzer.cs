@@ -118,20 +118,20 @@ namespace DesyncSafeAnalyzer
     {
       var argumentSyntax = (ArgumentSyntax)context.Node;
 
-      if (!(argumentSyntax.Expression is LambdaExpressionSyntax lambdaExpressionSyntax))
+      if (!(argumentSyntax.Expression is LambdaExpressionSyntax lambda))
         return;
 
-      if (!(argumentSyntax.Parent is ArgumentListSyntax argumentListSyntax))
+      if (!(argumentSyntax.Parent is ArgumentListSyntax argumentList))
         return;
 
-      if (!(argumentListSyntax.Parent is InvocationExpressionSyntax invocationExpressionSyntax))
+      if (!(argumentList.Parent is InvocationExpressionSyntax parentInvocation))
         return;
 
-      if (!(invocationExpressionSyntax.Expression is IdentifierNameSyntax identifierNameSyntax) ||
-          identifierNameSyntax.Identifier.ValueText != "InvokeForClient")
+      if (!(parentInvocation.Expression is MemberAccessExpressionSyntax parentIdentifierNameSyntax) ||
+          parentIdentifierNameSyntax.Name.Identifier.Text != "InvokeForClient")
         return;
 
-      var containsUnsafeMethod = ContainsUnsafeMethod(lambdaExpressionSyntax);
+      var containsUnsafeMethod = ContainsUnsafeMethod(lambda);
 
       if (!containsUnsafeMethod) 
         return;
