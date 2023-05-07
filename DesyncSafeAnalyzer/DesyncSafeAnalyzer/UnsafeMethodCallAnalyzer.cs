@@ -9,7 +9,7 @@ using System.Linq;
 namespace DesyncSafeAnalyzer
 {
   [DiagnosticAnalyzer(LanguageNames.CSharp)]
-  public class DesyncSafeAnalyzer : DiagnosticAnalyzer
+  public class UnsafeMethodCallAnalyzer : DiagnosticAnalyzer
   {
     private const string Category = "Usage";
     private const string Title = "DesyncSafe method usage warning";
