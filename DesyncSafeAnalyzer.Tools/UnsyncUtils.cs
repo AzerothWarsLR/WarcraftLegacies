@@ -14,7 +14,7 @@ namespace DesyncSafeAnalyzer.Attributes
     /// <param name="functionToExecute">The function to be executed.</param>
     /// <param name="whichPlayer">The client to execute the function for.</param>
     [DesyncSafe]
-    public static void InvokeUnsync(Action functionToExecute, player whichPlayer)
+    public static void InvokeForClient(Action functionToExecute, player whichPlayer)
     {
       if (GetLocalPlayer() == whichPlayer)
         functionToExecute();
