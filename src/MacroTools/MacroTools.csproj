@@ -18,7 +18,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\..\DesyncSafeAnalyzer.Attributes\DesyncSafeAnalyzer.Attributes.csproj" />
+      <ProjectReference Include="..\..\DesyncSafeAnalyzer.Tools\DesyncSafeAnalyzer.Tools.csproj" />
       <ProjectReference Include="..\..\DesyncSafeAnalyzer\DesyncSafeAnalyzer\DesyncSafeAnalyzer.csproj">
           <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
           <OutputItemType>Analyzer</OutputItemType>

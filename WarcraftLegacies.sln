@@ -21,7 +21,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "analyzers", "analyzers", "{
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesyncSafeAnalyzer", "DesyncSafeAnalyzer\DesyncSafeAnalyzer\DesyncSafeAnalyzer.csproj", "{60F696EA-63B6-4CD1-9A11-F5C3AA5697E6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesyncSafeAnalyzer.Attributes", "DesyncSafeAnalyzer.Attributes\DesyncSafeAnalyzer.Attributes.csproj", "{55D65182-BEA7-473D-86AC-A83AD936336A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesyncSafeAnalyzer.Tools", "DesyncSafeAnalyzer.Tools\DesyncSafeAnalyzer.Tools.csproj", "{55D65182-BEA7-473D-86AC-A83AD936336A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

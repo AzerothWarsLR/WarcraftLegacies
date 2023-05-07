@@ -1,9 +1,9 @@
-﻿using Microsoft.CodeAnalysis;
+﻿using System.Collections.Generic;
+using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.CodeAnalysis.Diagnostics;
 using System.Collections.Immutable;
-using System.Diagnostics;
 using System.Linq;
 
 namespace DesyncSafeAnalyzer
@@ -41,31 +41,47 @@ namespace DesyncSafeAnalyzer
       context.RegisterSyntaxNodeAction(AnalyzeNode, SyntaxKind.InvocationExpression);
     }
 
-    private void AnalyzeNode(SyntaxNodeAnalysisContext context)
+    private static void AnalyzeNode(SyntaxNodeAnalysisContext context)
     {
       var invocation = (InvocationExpressionSyntax)context.Node;
       var methodSymbol = context.SemanticModel.GetSymbolInfo(invocation).Symbol;
 
       if (methodSymbol == null)
-      {
         return;
-      }
       
-      var calledMethodAttributes = methodSymbol.GetAttributes();
       var callerMethodSymbol = invocation.Ancestors().OfType<MethodDeclarationSyntax>().FirstOrDefault();
       if (callerMethodSymbol == null)
         return;
       
       var callerMethodAttributes = context.SemanticModel.GetDeclaredSymbol(callerMethodSymbol).GetAttributes();
+      
       if (callerMethodAttributes.Any(attr => attr.AttributeClass.Name.Contains("DesyncSafe")))
         return;
-      
-      if (!calledMethodAttributes.Any(attr => attr.AttributeClass.Name.Contains("DesyncSafe")))
+
+      if (MethodIsDesyncSafe(context, invocation))
         return;
-      
+
       var methodName = methodSymbol.ToDisplayString(MethodDisplayFormat);
       var diagnostic = Diagnostic.Create(Rule, invocation.GetLocation(), methodName);
       context.ReportDiagnostic(diagnostic);
     }
+
+    private static bool MethodIsDesyncSafe(SyntaxNodeAnalysisContext context, InvocationExpressionSyntax invocation)
+    {
+      var methodSymbol = context.SemanticModel.GetSymbolInfo(invocation).Symbol;
+      var methodAttributes = methodSymbol.GetAttributes();
+
+      if (invocation.Expression is IdentifierNameSyntax identifier &&
+          SafeFunctions.Contains(identifier.Identifier.ValueText))
+        return true;
+      
+      return methodAttributes.Any(attr => attr.AttributeClass.Name.Contains("DesyncSafe"));
+    }
+    
+    private static readonly List<string> SafeFunctions = new List<string>
+    {
+      "BlzSetSpecialEffectColor",
+      "BlzSetSpecialEffectColorByPlayer",
+    };
   }
 }

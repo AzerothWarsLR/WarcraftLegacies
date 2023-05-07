@@ -8,7 +8,7 @@
         <OutputType>Library</OutputType>
         <AppDesignerFolder>Properties</AppDesignerFolder>
         <RootNamespace>DesyncSafeAnalyzer.Attributes</RootNamespace>
-        <AssemblyName>DesyncSafeAnalyzer.Attributes</AssemblyName>
+        <AssemblyName>DesyncSafeAnalyzer.Tools</AssemblyName>
         <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
         <FileAlignment>512</FileAlignment>
     </PropertyGroup>
