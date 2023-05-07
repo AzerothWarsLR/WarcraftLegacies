@@ -9,13 +9,14 @@ namespace DesyncSafeAnalyzer.Attributes
   public static class UnsyncUtils
   {
     /// <summary>
-    /// Executes the specified function for player clients that meet a particular condition.
+    /// Executes the specified function for a specific client.
     /// </summary>
     /// <param name="functionToExecute">The function to be executed.</param>
-    /// <param name="condition">The condition that the local machine must meet in order for the function to be executed.</param>
-    public static void InvokeUnsync(Action functionToExecute, Func<player, bool> condition)
+    /// <param name="whichPlayer">The client to execute the function for.</param>
+    [DesyncSafe]
+    public static void InvokeUnsync(Action functionToExecute, player whichPlayer)
     {
-      if (condition.Invoke(GetLocalPlayer()))
+      if (GetLocalPlayer() == whichPlayer)
         functionToExecute();
     }
   }
