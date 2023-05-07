@@ -23,6 +23,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesyncSafeAnalyzer", "Desyn
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesyncSafeAnalyzer.Tools", "DesyncSafeAnalyzer.Tools\DesyncSafeAnalyzer.Tools.csproj", "{55D65182-BEA7-473D-86AC-A83AD936336A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{BF9B2461-1406-42B6-A638-46A4A46F8EBF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesyncSafeAnalyzer.Test", "test\DesyncSafeAnalyzer.Test\DesyncSafeAnalyzer.Test.csproj", "{99717FEF-44CD-4261-9D59-C0290066F238}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -61,6 +65,10 @@ Global
 		{55D65182-BEA7-473D-86AC-A83AD936336A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{55D65182-BEA7-473D-86AC-A83AD936336A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{55D65182-BEA7-473D-86AC-A83AD936336A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99717FEF-44CD-4261-9D59-C0290066F238}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99717FEF-44CD-4261-9D59-C0290066F238}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99717FEF-44CD-4261-9D59-C0290066F238}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99717FEF-44CD-4261-9D59-C0290066F238}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -74,6 +82,7 @@ Global
 		{BD465133-F515-4436-BDCD-31861A3D0DDD} = {626B90E8-C679-4658-88F5-2EDE97F940DE}
 		{60F696EA-63B6-4CD1-9A11-F5C3AA5697E6} = {64F5E60B-AAB4-4278-A79E-CD7E853366AA}
 		{55D65182-BEA7-473D-86AC-A83AD936336A} = {64F5E60B-AAB4-4278-A79E-CD7E853366AA}
+		{99717FEF-44CD-4261-9D59-C0290066F238} = {BF9B2461-1406-42B6-A638-46A4A46F8EBF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {13F798B6-A816-403B-92A1-31B188E801A2}

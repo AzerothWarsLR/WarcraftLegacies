@@ -11,7 +11,7 @@ namespace DesyncSafeAnalyzer
   public class GetLocalPlayerAnalyzer : DiagnosticAnalyzer
   {
     private static readonly DiagnosticDescriptor Rule = new DiagnosticDescriptor(
-      "GetLocalPlayerAnalyzer",
+      "ZB000",
       "Do not call GetLocalPlayer method",
       "Calling GetLocalPlayer method is not allowed",
       "Naming",
