@@ -22,7 +22,7 @@ class Program
 ";
   
     [Fact]
-    public async void SingleUseOfGetLocalPlayer_DisplaysError()
+    public async void SingleUseOfGetLocalPlayer_DiagnosesError()
     {
       var analyzerTest = new CSharpAnalyzerTest<GetLocalPlayerAnalyzer, MSTestVerifier>
       {

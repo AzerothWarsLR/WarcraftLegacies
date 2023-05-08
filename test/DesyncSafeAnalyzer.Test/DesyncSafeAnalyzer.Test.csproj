@@ -51,6 +51,7 @@
         <Compile Include="DesyncSafeMethodRestrictionsAnalyzerTests.cs" />
         <Compile Include="GetLocalPlayerAnalyzerTest.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
+        <Compile Include="UnsafeFunctionParameterAnalyzerTests.cs" />
     </ItemGroup>
     <ItemGroup>
       <None Include="packages.config" />

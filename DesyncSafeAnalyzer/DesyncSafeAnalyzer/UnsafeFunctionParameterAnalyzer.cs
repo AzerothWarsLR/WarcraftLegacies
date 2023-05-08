@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.Linq;
 using Microsoft.CodeAnalysis;
@@ -15,7 +14,7 @@ namespace DesyncSafeAnalyzer
     private const string DesyncSafeAttributeName = "DesyncSafe";
     
     private static readonly DiagnosticDescriptor AnonymousFunctionRule = new DiagnosticDescriptor(
-      "AN001",
+      "ZB003",
       "Unsafe use of Action parameter",
       "Lambda expressions passed to InvokeForClient should only contain functions marked with the [DesyncSafe] attribute.",
       "Usage",
@@ -23,7 +22,7 @@ namespace DesyncSafeAnalyzer
       true);
 
     private static readonly DiagnosticDescriptor ConcreteFunctionRule = new DiagnosticDescriptor(
-      "AN002",
+      "ZB004",
       "Unsafe use of Action parameter",
       "Concrete function passed to InvokeForClient must be marked with the [DesyncSafe] attribute.",
       "Usage",
@@ -32,7 +31,7 @@ namespace DesyncSafeAnalyzer
 
     private static readonly DiagnosticDescriptor AnonymousFunctionContainsUnsafeMethod =
       new DiagnosticDescriptor(
-        id: "AN003",
+        id: "ZB005",
         title: "Anonymous function contains unsafe method",
         messageFormat: "Anonymous function passed to 'InvokeForClient' contains a method that is not marked as [DesyncSafe]",
         category: "Usage",

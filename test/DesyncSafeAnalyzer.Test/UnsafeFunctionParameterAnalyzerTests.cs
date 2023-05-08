@@ -6,30 +6,28 @@ using Xunit;
 
 namespace DesyncSafeAnalyzer.Test
 {
-  public sealed class DesyncSafeMethodRestrictionsAnalyzerTests
+  public sealed class UnsafeFunctionParameterAnalyzerTests
   {
     private const string SourceCode = @"
-
 using System;
 
 class Program
 {
-    [DesyncSafe]
     public static void Main()
     {
-        GetLocalPlayer();
+        Program.InvokeForClient(Beans, string.Empty);
     }
 
-    public static void GetLocalPlayer() {}
-}
+    public static void Beans() {}
 
-class DesyncSafeAttribute : Attribute { }
+    public static void InvokeForClient(Action action, string nothing) {}
+}
 ";
   
     [Fact]
-    public async void CallingNonDesyncSafeMethodFromDesyncSafeMethod_DiagnosesError()
+    public async void PassingNonDesyncSafeFunctionToInvokeForClient_DiagnosesError()
     {
-      var analyzerTest = new CSharpAnalyzerTest<DesyncSafeMethodRestrictionsAnalyzer, MSTestVerifier>
+      var analyzerTest = new CSharpAnalyzerTest<UnsafeFunctionParameterAnalyzer, MSTestVerifier>
       {
         TestState =
         {
@@ -38,9 +36,9 @@ class DesyncSafeAttribute : Attribute { }
       };
       analyzerTest.ExpectedDiagnostics.Add(new DiagnosticResult
       (
-        "ZB001",
+        "ZB004",
         DiagnosticSeverity.Error
-      ).WithLocation(10, 9));
+      ).WithLocation(8, 33));
       await analyzerTest.RunAsync();
     }
   }
