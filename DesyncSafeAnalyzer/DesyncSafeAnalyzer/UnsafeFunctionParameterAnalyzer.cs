@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Collections.Immutable;
+﻿using System.Collections.Immutable;
 using System.Linq;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
@@ -12,40 +11,33 @@ namespace DesyncSafeAnalyzer
   public class UnsafeFunctionParameterAnalyzer : DiagnosticAnalyzer
   {
     private const string DesyncSafeAttributeName = "DesyncSafe";
-    
-    private static readonly DiagnosticDescriptor AnonymousFunctionRule = new DiagnosticDescriptor(
+
+    private static readonly DiagnosticDescriptor LambdaExpressionRule = new DiagnosticDescriptor(
       "ZB003",
-      "Unsafe use of Action parameter",
-      "Lambda expressions passed to InvokeForClient should only contain functions marked with the [DesyncSafe] attribute.",
+      "Unsafe use of InvokeForClient",
+      "Lambda expressions passed to InvokeForClient can only call functions marked with the [DesyncSafe] attribute.",
       "Usage",
-      DiagnosticSeverity.Warning,
+      DiagnosticSeverity.Error,
       true);
 
     private static readonly DiagnosticDescriptor ConcreteFunctionRule = new DiagnosticDescriptor(
       "ZB004",
-      "Unsafe use of Action parameter",
+      "Unsafe use of InvokeForClient",
       "Concrete function passed to InvokeForClient must be marked with the [DesyncSafe] attribute.",
       "Usage",
       DiagnosticSeverity.Error,
       true);
 
-    private static readonly DiagnosticDescriptor AnonymousFunctionContainsUnsafeMethod =
-      new DiagnosticDescriptor(
-        id: "ZB005",
-        title: "Anonymous function contains unsafe method",
-        messageFormat: "Anonymous function passed to 'InvokeForClient' contains a method that is not marked as [DesyncSafe]",
-        category: "Usage",
-        defaultSeverity: DiagnosticSeverity.Error,
-        isEnabledByDefault: true);
-
-    public override ImmutableArray<DiagnosticDescriptor> SupportedDiagnostics => ImmutableArray.Create(AnonymousFunctionRule, ConcreteFunctionRule, AnonymousFunctionContainsUnsafeMethod);
+    public override ImmutableArray<DiagnosticDescriptor> SupportedDiagnostics =>
+      ImmutableArray.Create(LambdaExpressionRule, ConcreteFunctionRule);
 
     public override void Initialize(AnalysisContext context)
     {
       context.EnableConcurrentExecution();
       context.ConfigureGeneratedCodeAnalysis(GeneratedCodeAnalysisFlags.None);
       context.RegisterSyntaxNodeAction(AnalyzeInvocation, SyntaxKind.InvocationExpression);
-      context.RegisterSyntaxNodeAction(AnalyzeSyntaxNode, SyntaxKind.Argument);
+      context.RegisterSyntaxNodeAction(AnalyzeLambdaExpressions, SyntaxKind.ParenthesizedLambdaExpression,
+        SyntaxKind.SimpleLambdaExpression);
     }
 
     private static void AnalyzeInvocation(SyntaxNodeAnalysisContext context)
@@ -65,60 +57,57 @@ namespace DesyncSafeAnalyzer
 
       if (!(actionExpression is IdentifierNameSyntax actionArg))
         return;
-      
+
       var actionSymbol = context.SemanticModel.GetSymbolInfo(actionArg).Symbol;
 
-      if (!(actionSymbol is IMethodSymbol actionMethod)) 
+      if (!(actionSymbol is IMethodSymbol actionMethod))
         return;
-      
+
       var desyncSafeAttribute =
-        actionMethod.GetAttributes().FirstOrDefault(attr => attr.AttributeClass.Name.Contains("DesyncSafe"));
+        actionMethod.GetAttributes().FirstOrDefault(attr => attr.AttributeClass.Name.Contains(DesyncSafeAttributeName));
       if (desyncSafeAttribute != null)
         return;
 
       var diagnostic2 = Diagnostic.Create(ConcreteFunctionRule, actionArg?.GetLocation());
       context.ReportDiagnostic(diagnostic2);
     }
-    
-    private static void AnalyzeSyntaxNode(SyntaxNodeAnalysisContext context)
+
+    private static void AnalyzeLambdaExpressions(SyntaxNodeAnalysisContext context)
     {
-      var argumentSyntax = (ArgumentSyntax)context.Node;
+      var lambda = (LambdaExpressionSyntax)context.Node;
 
-      if (!(argumentSyntax.Expression is LambdaExpressionSyntax lambda))
+      // Check if the lambda is an argument to InvokeForClient.
+      var invokeForClientInvocation = lambda.Ancestors()
+        .OfType<InvocationExpressionSyntax>()
+        .FirstOrDefault(invocation => invocation.Expression is MemberAccessExpressionSyntax identifier &&
+                                      identifier.Name.Identifier.ValueText.Contains("InvokeForClient"));
+
+      if (invokeForClientInvocation == null)
+      {
+        return;
+      }
+
+      // Collect all invoked method symbols within the lambda.
+      var invokedMethodSymbols = lambda.DescendantNodes()
+        .OfType<InvocationExpressionSyntax>()
+        .Select(invocation => context.SemanticModel.GetSymbolInfo(invocation.Expression).Symbol)
+        .OfType<IMethodSymbol>()
+        .ToList();
+
+      // Check if any invoked methods are missing the DesyncSafe attribute.
+      var violatingMethods = invokedMethodSymbols
+        .Where(method => !method.GetAttributes().Any(attribute => attribute.AttributeClass.Name == DesyncSafeAttributeName))
+        .ToList();
+
+      if (!violatingMethods.Any())
         return;
 
-      if (!(argumentSyntax.Parent is ArgumentListSyntax argumentList))
-        return;
-
-      if (!(argumentList.Parent is InvocationExpressionSyntax parentInvocation))
-        return;
-
-      if (!(parentInvocation.Expression is MemberAccessExpressionSyntax parentIdentifierNameSyntax) ||
-          parentIdentifierNameSyntax.Name.Identifier.Text != "InvokeForClient")
-        return;
-
-      var containsUnsafeMethod = ContainsUnsafeMethod(lambda);
-
-      if (!containsUnsafeMethod) 
-        return;
-      
-      var diagnostic = Diagnostic.Create(
-        AnonymousFunctionContainsUnsafeMethod,
-        argumentSyntax.GetLocation());
-
-      context.ReportDiagnostic(diagnostic);
+      var location = lambda.GetLocation();
+      foreach (var method in violatingMethods)
+      {
+        var diagnostic = Diagnostic.Create(LambdaExpressionRule, location, method.Name);
+        context.ReportDiagnostic(diagnostic);
+      }
     }
-
-    private static bool ContainsUnsafeMethod(SyntaxNode lambdaExpressionSyntax)
-    {
-      var descendantMethods = lambdaExpressionSyntax.DescendantNodes().OfType<MethodDeclarationSyntax>();
-
-      return descendantMethods.Any(method => !method.AttributeLists
-        .Any(attributeList => attributeList.Attributes
-          .Any(attribute => attribute.Name.ToString().Contains(DesyncSafeAttributeName))));
-    }
-    
-    private static bool HasDesyncSafeAttribute(ISymbol typeSymbol) =>
-      typeSymbol.GetAttributes().Any(attr => attr.AttributeClass.Name.Contains(DesyncSafeAttributeName));
   }
 }
