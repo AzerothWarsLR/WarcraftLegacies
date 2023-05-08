@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using DesyncSafeAnalyzer.Attributes;
 using MacroTools.ControlPointSystem;
 using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
@@ -38,51 +39,44 @@ namespace MacroTools.Extensions
     /// <returns>The same player that was passed in.</returns>
     public static player PingLocation(this player whichPlayer, Point position, float duration)
     {
-      if (GetLocalPlayer() == whichPlayer)
-        PingMinimap(position.X, position.Y, duration);
+      UnsyncUtils.InvokeForClient(() => { PingMinimap(position.X, position.Y, duration); }, whichPlayer);
       return whichPlayer;
     }
 
     /// <summary>
     /// Replaces the minimap background texture with the specified one.
     /// </summary>
-    public static void ChangeMinimapTerrainTexture(this player whichPlayer, string texturePath)
-    {
-      if (GetLocalPlayer() == whichPlayer)
-        BlzChangeMinimapTerrainTex(texturePath);
-    }
+    public static void ChangeMinimapTerrainTexture(this player whichPlayer, string texturePath) =>
+      UnsyncUtils.InvokeForClient(() => { BlzChangeMinimapTerrainTex(texturePath); }, whichPlayer);
 
     /// <summary>
     /// Applies a particular camera field to the player's view.
     /// </summary>
     public static void ApplyCameraField(this player whichPlayer, camerafield whichField, float value, float duration)
     {
-      if (GetLocalPlayer() != whichPlayer)
-        return;
-      SetCameraField(whichField, value, duration);
+      UnsyncUtils.InvokeForClient(() => { SetCameraField(whichField, value, duration); }, whichPlayer);
     }
 
     /// <summary>
     ///   Changes the player's view to come out of a certain camera.
     /// </summary>
-    public static void SetupCamera(this player whichPlayer, camerasetup whichSetup, bool doPan, float duration)
-    {
-      if (GetLocalPlayer() != whichPlayer)
-        return;
-      CameraSetupApplyForceDuration(whichSetup, doPan, duration);
-    }
+    public static void SetupCamera(this player whichPlayer, camerasetup whichSetup, bool doPan, float duration) =>
+      UnsyncUtils.InvokeForClient(
+        () => { CameraSetupApplyForceDuration(whichSetup, doPan, duration); }, whichPlayer);
 
     /// <summary>
     ///   Prevents the player from moving their camera out of the provided area.
     /// </summary>
     public static void SetCameraLimits(this player whichPlayer, rect rect)
     {
-      if (GetLocalPlayer() != whichPlayer) return;
-      var minX = GetRectMinX(rect);
-      var minY = GetRectMinY(rect);
-      var maxX = GetRectMaxX(rect);
-      var maxY = GetRectMaxY(rect);
-      SetCameraBounds(minX, minY, minX, maxY, maxX, maxY, maxX, minY);
+      UnsyncUtils.InvokeForClient(() =>
+      {
+        var minX = GetRectMinX(rect);
+        var minY = GetRectMinY(rect);
+        var maxX = GetRectMaxX(rect);
+        var maxY = GetRectMaxY(rect);
+        SetCameraBounds(minX, minY, minX, maxY, maxX, maxY, maxX, minY);
+      }, whichPlayer);
     }
 
     /// <summary>
@@ -299,8 +293,7 @@ namespace MacroTools.Extensions
     public static void DisplayHint(this player whichPlayer, string msg)
     {
       DisplayTextToPlayer(whichPlayer, 0, 0, $"\n|cff00ff00HINT|r - {msg}");
-      if (GetLocalPlayer() == whichPlayer)
-        StartSound(SoundLibrary.Hint);
+      UnsyncUtils.InvokeForClient(() => { StartSound(SoundLibrary.Hint); }, whichPlayer);
     }
 
     /// <summary>
@@ -319,10 +312,7 @@ namespace MacroTools.Extensions
       if (experience > 0)
         display = $"{display}\n+{experience} Experience";
       DisplayTextToPlayer(GetOwningPlayer(whichUnit), 0, 0, display);
-      if (GetLocalPlayer() == GetOwningPlayer(whichUnit))
-      {
-        StartSound(SoundLibrary.Hint);
-      }
+      UnsyncUtils.InvokeForClient(() => { StartSound(SoundLibrary.Hint); }, GetOwningPlayer(whichUnit));
     }
 
     /// <summary>
@@ -332,8 +322,7 @@ namespace MacroTools.Extensions
     {
       DisplayTextToPlayer(whichFaction.Player, 0, 0,
         $"\n|cff00ff00UNIT LIMIT CHANGED - {GetObjectName(unitTypeId)}|r\nYou can now train up to {whichFaction.GetObjectLimit(unitTypeId)} {GetObjectName(unitTypeId)}s.");
-      if (GetLocalPlayer() == whichFaction.Player)
-        StartSound(SoundLibrary.Hint);
+      UnsyncUtils.InvokeForClient(() => { StartSound(SoundLibrary.Hint); }, whichFaction.Player);
     }
 
     /// <summary>
@@ -343,8 +332,7 @@ namespace MacroTools.Extensions
     {
       DisplayTextToPlayer(whichPlayer, 0, 0,
         $"\n|cff00ff00RESEARCH ACQUIRED - {GetObjectName(researchId)}|r\n{BlzGetAbilityExtendedTooltip(researchId, researchLevel)}");
-      if (GetLocalPlayer() == whichPlayer)
-        StartSound(SoundLibrary.Hint);
+      UnsyncUtils.InvokeForClient(() => { StartSound(SoundLibrary.Hint); }, whichPlayer);
     }
 
     /// <summary>
@@ -354,8 +342,7 @@ namespace MacroTools.Extensions
     {
       DisplayTextToPlayer(whichPlayer, 0, 0,
         $"\n|cff00ff00NEW UNIT ACQUIRED - {GetObjectName(unitId)}\n|r{flavor}");
-      if (GetLocalPlayer() == whichPlayer)
-        StartSound(SoundLibrary.Hint);
+      UnsyncUtils.InvokeForClient(() => { StartSound(SoundLibrary.Hint); }, whichPlayer);
     }
 
     /// <summary>
@@ -374,8 +361,7 @@ namespace MacroTools.Extensions
     {
       DisplayTextToPlayer(whichPlayer, 0, 0,
         $"\n|cff00ff00NEW POWER ACQUIRED - {power.Name}\n|r{power.Description}");
-      if (GetLocalPlayer() == whichPlayer)
-        StartSound(SoundLibrary.Hint);
+      UnsyncUtils.InvokeForClient(() => { StartSound(SoundLibrary.Hint); }, whichPlayer);
     }
 
     /// <summary>

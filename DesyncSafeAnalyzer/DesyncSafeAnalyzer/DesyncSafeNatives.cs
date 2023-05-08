@@ -9,7 +9,16 @@ namespace DesyncSafeAnalyzer
     {
       "BlzSetSpecialEffectColor",
       "BlzSetSpecialEffectColorByPlayer",
-      "StartSound"
+      "StartSound",
+      "PingMinimap",
+      "SetCameraField",
+      "GetRectMinX",
+      "GetRectMinY",
+      "GetRectMaxX",
+      "GetRectMaxY",
+      "SetCameraBounds",
+      "BlzChangeMinimapTerrainTex",
+      "CameraSetupApplyForceDuration"
     };
     
     /// <summary>
