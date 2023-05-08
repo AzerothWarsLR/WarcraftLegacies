@@ -9,7 +9,7 @@ namespace DesyncSafeAnalyzer.Test
   public sealed class UnsafeFunctionParameterAnalyzerTests
   {
     [Fact]
-    public async void InvokeForClient_NonDesyncSafeLambdaExpression_DiagnosesError()
+    public async void InvokeForClient_LambdaExpressionCallingNonDesyncSafeFunction_DiagnosesError()
     {
       const string sourceCode = @"
 using System;
@@ -43,7 +43,7 @@ class Program
     }
     
     [Fact]
-    public async void InvokeForClient_DesyncSafeLambdaExpression_NoDiagnosis()
+    public async void InvokeForClient_LambdaExpressionCallingDesyncSafeCustomFunction_NoDiagnosis()
     {
       const string sourceCode = @"
 using System;
@@ -75,7 +75,38 @@ class Program
     }
 
     [Fact]
-    public async void InvokeForClient_NonDesyncSafeConcreteFunction_DiagnosesError()
+    public async void InvokeForClient_LambdaExpressionCallingDesyncSafeNative_NoDiagnosis()
+    {
+      const string sourceCode = @"
+using System;
+
+class DesyncSafeAttribute : Attribute {}
+
+class Program
+{
+    public static void Main()
+    {
+        Program.InvokeForClient(() => { StartSound(); }, string.Empty);
+    }
+
+    public static void StartSound() {}
+
+    public static void InvokeForClient(Action action, string nothing) {}
+}
+";
+
+      var analyzerTest = new CSharpAnalyzerTest<UnsafeFunctionParameterAnalyzer, MSTestVerifier>
+      {
+        TestState =
+        {
+          Sources = { sourceCode }
+        }
+      };
+      await analyzerTest.RunAsync();
+    }
+    
+    [Fact]
+    public async void InvokeForClient_ConcreteFunctionNonDesyncSafe_DiagnosesError()
     {
       const string sourceCode = @"
 using System;
