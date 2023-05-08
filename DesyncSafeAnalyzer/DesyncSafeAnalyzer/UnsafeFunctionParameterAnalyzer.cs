@@ -50,44 +50,7 @@ namespace DesyncSafeAnalyzer
 
     private static void AnalyzeInvocation(SyntaxNodeAnalysisContext context)
     {
-      CheckAnonymousRule(context);
       CheckConcreteRule(context);
-    }
-
-    private static void CheckAnonymousRule(SyntaxNodeAnalysisContext context)
-    {
-      if (!(context.Node is InvocationExpressionSyntax invocation) ||
-          !(invocation.Expression is MemberAccessExpressionSyntax memberAccess) ||
-          memberAccess.Name.Identifier.Text != "InvokeForClient")
-        return;
-
-      var argumentList = invocation.ArgumentList;
-      var actionArg = argumentList.Arguments[0].Expression as IdentifierNameSyntax;
-      var actionSymbol = context.SemanticModel.GetSymbolInfo(actionArg).Symbol;
-
-      if (!(actionSymbol is IMethodSymbol actionMethod)) 
-        return;
-      
-      var unsafeFunctions = new List<string>();
-      foreach (var parameter in actionMethod.Parameters)
-      {
-        if (!(parameter.Type is INamedTypeSymbol namedType) ||
-            namedType.ConstructedFrom.ToString() != "System.Action`1" ||
-            namedType.TypeArguments.Length != 1) 
-          continue;
-          
-        var functionType = namedType.TypeArguments[0];
-        if (!HasDesyncSafeAttribute(functionType)) 
-          unsafeFunctions.Add(parameter.Name);
-      }
-
-      if (!unsafeFunctions.Any()) 
-        return;
-      
-      var message =
-        $"The following functions within the '{actionArg.Identifier.Text}' parameter are not marked with the [DesyncSafe] attribute: {string.Join(", ", unsafeFunctions)}.";
-      var diagnostic = Diagnostic.Create(AnonymousFunctionRule, actionArg.GetLocation(), message);
-      context.ReportDiagnostic(diagnostic);
     }
 
     private static void CheckConcreteRule(SyntaxNodeAnalysisContext context)
@@ -98,7 +61,11 @@ namespace DesyncSafeAnalyzer
         return;
 
       var argumentList = invocation.ArgumentList;
-      var actionArg = argumentList.Arguments[0].Expression as IdentifierNameSyntax;
+      var actionExpression = argumentList.Arguments[0].Expression;
+
+      if (!(actionExpression is IdentifierNameSyntax actionArg))
+        return;
+      
       var actionSymbol = context.SemanticModel.GetSymbolInfo(actionArg).Symbol;
 
       if (!(actionSymbol is IMethodSymbol actionMethod)) 
