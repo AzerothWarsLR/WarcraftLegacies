@@ -8,7 +8,44 @@ namespace DesyncSafeAnalyzer.Test
 {
   public sealed class UnsafeFunctionParameterAnalyzerTests
   {
-    private const string SourceCode = @"
+    [Fact]
+    public async void InvokeForClient_NonDesyncSafeLambdaExpression_DiagnosesError()
+    {
+      const string sourceCode = @"
+using System;
+
+class Program
+{
+    public static void Main()
+    {
+        Program.InvokeForClient(() => { Beans(); }, string.Empty);
+    }
+
+    public static void Beans() {}
+
+    public static void InvokeForClient(Action action, string nothing) {}
+}
+";
+
+      var analyzerTest = new CSharpAnalyzerTest<UnsafeFunctionParameterAnalyzer, MSTestVerifier>
+      {
+        TestState =
+        {
+          Sources = { sourceCode }
+        }
+      };
+      analyzerTest.ExpectedDiagnostics.Add(new DiagnosticResult
+      (
+        "ZB005",
+        DiagnosticSeverity.Error
+      ).WithLocation(8, 33));
+      await analyzerTest.RunAsync();
+    }
+
+    [Fact]
+    public async void InvokeForClient_NonDesyncSafeConcreteFunction_DiagnosesError()
+    {
+      const string sourceCode = @"
 using System;
 
 class Program
@@ -23,15 +60,12 @@ class Program
     public static void InvokeForClient(Action action, string nothing) {}
 }
 ";
-  
-    [Fact]
-    public async void PassingNonDesyncSafeFunctionToInvokeForClient_DiagnosesError()
-    {
+
       var analyzerTest = new CSharpAnalyzerTest<UnsafeFunctionParameterAnalyzer, MSTestVerifier>
       {
         TestState =
         {
-          Sources = { SourceCode }
+          Sources = { sourceCode }
         }
       };
       analyzerTest.ExpectedDiagnostics.Add(new DiagnosticResult
