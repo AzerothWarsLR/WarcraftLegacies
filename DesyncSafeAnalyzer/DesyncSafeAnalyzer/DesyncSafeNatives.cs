@@ -23,7 +23,10 @@ namespace DesyncSafeAnalyzer
       "GetUnitX",
       "GetUnitY",
       "GetItemX",
-      "GetItemY"
+      "GetItemY",
+      "ElementAt",
+      "GetRandomInt",
+      "Remove"
     };
     
     /// <summary>

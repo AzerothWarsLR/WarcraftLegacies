@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Linq;
+using DesyncSafeAnalyzer.Attributes;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using static War3Api.Common;
@@ -28,29 +29,24 @@ namespace MacroTools.HintSystem
       Unread.Add(hint);
     }
 
+    [DesyncSafe]
     private void Display()
     {
       GetLocalPlayer().DisplayHint(_msg);
       Unread.Remove(this);
     }
 
+    [DesyncSafe]
     private static void DisplayRandom()
     {
-      if (Unread.Count > 0)
-      {
+      if (Unread.Count > 0) 
         Unread.ElementAt(GetRandomInt(0, Unread.Count - 1)).Display();
-      }
     }
 
     private static void DisplayRandomHints()
     {
-      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
-      {
-        if (GetLocalPlayer() == player)
-        {
-          DisplayRandom();
-        }
-      }
+      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers()) 
+        UnsyncUtils.InvokeForClient(DisplayRandom, player);
     }
 
     private static void Initialize()
