@@ -37,13 +37,14 @@ namespace MacroTools.DialogueSystem
     {
       if (players != null)
       {
-        Sound.Play(players.Contains, true);
+        Sound.Play(players, true);
         foreach (var player in players) 
           DisplayTextToPlayer(player, 0, 0, $"|cffffcc00{_speaker}:|r {_caption}");
       }
       else
       {
-        DisplayTextToPlayer(GetLocalPlayer(), 0, 0, $"|cffffcc00{_speaker}:|r {_caption}");
+        foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
+          DisplayTextToPlayer(player, 0, 0, $"|cffffcc00{_speaker}:|r {_caption}");
         Sound.Play(true);
       }
     }

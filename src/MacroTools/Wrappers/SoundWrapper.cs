@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using DesyncSafeAnalyzer.Attributes;
 using static War3Api.Common;
 
 namespace MacroTools.Wrappers
@@ -44,22 +46,20 @@ namespace MacroTools.Wrappers
     }
 
     /// <summary>
-    /// Plays the sound for players meeting a condition.
+    /// Plays the sound for the provided players.
     /// </summary>
-    /// <param name="playCondition">The sound only plays if <see cref="GetLocalPlayer"/> meets this condition.</param>
+    /// <param name="players">The players to play the sound to.</param>
     /// <param name="disposeAfter">Whether or not to dispose of the sound after it's finished playing.</param>
     /// <exception cref="ObjectDisposedException">Thrown if the sound is already disposed.</exception>
-    public void Play(PlayCondition playCondition, bool disposeAfter)
+    public void Play(List<player> players, bool disposeAfter)
     {
       if (_disposed)
       {
         throw new ObjectDisposedException(nameof(SoundWrapper));
       }
 
-      if (playCondition(GetLocalPlayer()))
-      {
-        StartSound(Sound);
-      }
+      foreach (var player in players)
+        UnsyncUtils.InvokeForClient(() => StartSound(Sound), player);
 
       if (disposeAfter)
       {
