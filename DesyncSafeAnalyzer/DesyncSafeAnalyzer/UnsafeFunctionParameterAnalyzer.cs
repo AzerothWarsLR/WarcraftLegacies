@@ -10,7 +10,7 @@ namespace DesyncSafeAnalyzer
   [DiagnosticAnalyzer(LanguageNames.CSharp)]
   public class UnsafeFunctionParameterAnalyzer : DiagnosticAnalyzer
   {
-    private const string DesyncSafeAttributeName = "DesyncSafe";
+    private const string DesyncSafeAttributeName = "DesyncSafeAttribute";
 
     private static readonly DiagnosticDescriptor LambdaExpressionRule = new DiagnosticDescriptor(
       "ZB003",
@@ -64,7 +64,7 @@ namespace DesyncSafeAnalyzer
         return;
 
       var desyncSafeAttribute =
-        actionMethod.GetAttributes().FirstOrDefault(attr => attr.AttributeClass.Name.Contains(DesyncSafeAttributeName));
+        actionMethod.GetAttributes().FirstOrDefault(attr => attr.AttributeClass.Name == DesyncSafeAttributeName);
       if (desyncSafeAttribute != null)
         return;
 
