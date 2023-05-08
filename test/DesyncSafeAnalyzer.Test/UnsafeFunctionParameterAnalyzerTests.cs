@@ -36,9 +36,41 @@ class Program
       };
       analyzerTest.ExpectedDiagnostics.Add(new DiagnosticResult
       (
-        "ZB005",
+        "ZB003",
         DiagnosticSeverity.Error
       ).WithLocation(8, 33));
+      await analyzerTest.RunAsync();
+    }
+    
+    [Fact]
+    public async void InvokeForClient_DesyncSafeLambdaExpression_NoDiagnosis()
+    {
+      const string sourceCode = @"
+using System;
+
+class DesyncSafeAttribute : Attribute {}
+
+class Program
+{
+    public static void Main()
+    {
+        Program.InvokeForClient(() => { Beans(); }, string.Empty);
+    }
+
+    [DesyncSafe]
+    public static void Beans() {}
+
+    public static void InvokeForClient(Action action, string nothing) {}
+}
+";
+
+      var analyzerTest = new CSharpAnalyzerTest<UnsafeFunctionParameterAnalyzer, MSTestVerifier>
+      {
+        TestState =
+        {
+          Sources = { sourceCode }
+        }
+      };
       await analyzerTest.RunAsync();
     }
 
