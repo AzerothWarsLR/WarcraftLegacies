@@ -204,9 +204,7 @@ namespace MacroTools.QuestSystem
       else
         foreach (var questItem in _objectives)
         {
-          if (GetLocalPlayer() == whichFaction.Player)
-            questItem.ShowLocal(Progress);
-
+          UnsyncUtils.InvokeForClient(() => { questItem.ShowLocal(Progress); }, whichFaction.Player);
           questItem.ShowSync(Progress);
         }
     }
@@ -257,6 +255,7 @@ namespace MacroTools.QuestSystem
     /// <summary>
     ///   Disables the local aspects of all child QuestItems.
     /// </summary>
+    [DesyncSafe]
     internal void HideLocal()
     {
       QuestSetEnabled(Quest, false);
@@ -305,8 +304,7 @@ namespace MacroTools.QuestSystem
 
       DisplayTextToPlayer(faction.Player, 0, 0, display);
       var sound = SoundLibrary.Failed;
-      if (GetLocalPlayer() == faction.Player)
-        StartSound(sound);
+      UnsyncUtils.InvokeForClient(() => { StartSound(sound); }, faction.Player);
     }
 
     private void DisplayCompleted(Faction faction)
@@ -317,8 +315,7 @@ namespace MacroTools.QuestSystem
           display = $"{display} - |cff808080{questItem.Description} (Completed)|r\n";
       DisplayTextToPlayer(faction.Player, 0, 0, display);
       var sound = SoundLibrary.Completed;
-      if (GetLocalPlayer() == faction.Player) 
-        StartSound(sound);
+      UnsyncUtils.InvokeForClient(() => { StartSound(sound); }, faction.Player);
     }
 
     /// <summary>
@@ -337,8 +334,7 @@ namespace MacroTools.QuestSystem
         }
       DisplayTextToPlayer(faction.Player, 0, 0, display);
       var sound = SoundLibrary.Discovered;
-      if (GetLocalPlayer() == faction.Player) 
-        StartSound(sound);
+      UnsyncUtils.InvokeForClient(() => { StartSound(sound); }, faction.Player);
     }
 
     private void OnQuestItemProgressChanged(object? sender, Objective changedObjective)

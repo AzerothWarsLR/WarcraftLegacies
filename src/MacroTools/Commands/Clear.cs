@@ -1,4 +1,5 @@
-﻿using MacroTools.CommandSystem;
+﻿using DesyncSafeAnalyzer.Attributes;
+using MacroTools.CommandSystem;
 using static War3Api.Common;
 
 namespace MacroTools.Commands
@@ -33,8 +34,7 @@ namespace MacroTools.Commands
     /// <inheritdoc />
     public override string Execute(player commandUser, params string[] parameters)
     {
-      if (GetLocalPlayer() == commandUser)
-        ClearTextMessages();
+      UnsyncUtils.InvokeForClient(ClearTextMessages, commandUser);
       return "Clearing messages.";
     }
   }

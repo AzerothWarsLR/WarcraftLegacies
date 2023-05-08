@@ -26,7 +26,11 @@ namespace DesyncSafeAnalyzer
       "GetItemY",
       "ElementAt",
       "GetRandomInt",
-      "Remove"
+      "Remove",
+      "CreateMinimapIcon",
+      "SkinManagerGetLocalPath",
+      "QuestSetEnabled",
+      "ClearTextMessages"
     };
     
     /// <summary>

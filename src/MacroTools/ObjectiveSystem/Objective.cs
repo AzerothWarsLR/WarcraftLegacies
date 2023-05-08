@@ -134,7 +134,8 @@ namespace MacroTools.ObjectiveSystem
     {
     }
 
-    //Shows the local aspects of this QuestItem, namely the minimap icon.
+    /// <summary>Shows the local aspects of this QuestItem, namely the minimap icon.</summary>
+    [DesyncSafe]
     internal void ShowLocal(QuestProgress parentQuestProgress)
     {
       if (Progress == QuestProgress.Incomplete &&

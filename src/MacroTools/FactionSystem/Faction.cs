@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using DesyncSafeAnalyzer.Attributes;
 using MacroTools.Augments;
 using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
@@ -586,8 +587,7 @@ namespace MacroTools.FactionSystem
     {
       foreach (var quest in _questsByName.Values)
       {
-        if (GetLocalPlayer() == Player) quest.HideLocal();
-
+        UnsyncUtils.InvokeForClient(() => { quest.HideLocal(); }, Player);
         quest.HideSync();
       }
     }

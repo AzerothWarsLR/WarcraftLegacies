@@ -96,8 +96,9 @@ namespace MacroTools.LegendSystem
         return;
       if (Hivemind && OwningPlayer != null)
         OwningPlayer.GetFaction()?.Obliterate();
-      
-      DisplayTextToPlayer(GetLocalPlayer(), 0, 0, $"\n|cffffcc00CAPITAL DESTROYED|r\n{DeathMessage}");
+
+      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
+        DisplayTextToPlayer(player, 0, 0, $"\n|cffffcc00CAPITAL DESTROYED|r\n{DeathMessage}");
     }
   }
 }

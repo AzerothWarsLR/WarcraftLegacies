@@ -26,8 +26,11 @@ namespace MacroTools.Cheats
 
     private static void Warning()
     {
-      DisplayTextToPlayer(GetLocalPlayer(), 0, 0, "This map is in test mode and contains |cffD27575CHEATS|r.");
-      DisplayTextToPlayer(GetLocalPlayer(), 0, 0, "To use these |cffD27575CHEATS|r, refer to the Quest menu.");
+      foreach (var player in Util.EnumeratePlayers())
+      {
+        DisplayTextToPlayer(player, 0, 0, "This map is in test mode and contains |cffD27575CHEATS|r.");
+        DisplayTextToPlayer(player, 0, 0, "To use these |cffD27575CHEATS|r, refer to the Quest menu.");
+      }
     }
 
     private static void CreateInfoQuests(CommandManager commandManager)
