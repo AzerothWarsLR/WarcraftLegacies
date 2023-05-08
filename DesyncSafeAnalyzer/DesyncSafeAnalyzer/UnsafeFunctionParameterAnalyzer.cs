@@ -96,7 +96,8 @@ namespace DesyncSafeAnalyzer
 
       // Check if any invoked methods are missing the DesyncSafe attribute.
       var violatingMethods = invokedMethodSymbols
-        .Where(method => !method.GetAttributes().Any(attribute => attribute.AttributeClass.Name == DesyncSafeAttributeName))
+        .Where(method => !(method.GetAttributes().Any(attribute => attribute.AttributeClass.Name == DesyncSafeAttributeName) 
+                         || DesyncSafeNatives.IsSafe(method.Name)))
         .ToList();
 
       if (!violatingMethods.Any())

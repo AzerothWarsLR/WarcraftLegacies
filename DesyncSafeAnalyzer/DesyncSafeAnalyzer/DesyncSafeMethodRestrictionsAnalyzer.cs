@@ -71,18 +71,10 @@ namespace DesyncSafeAnalyzer
       var methodSymbol = context.SemanticModel.GetSymbolInfo(invocation).Symbol;
       var methodAttributes = methodSymbol.GetAttributes();
 
-      if (invocation.Expression is IdentifierNameSyntax identifier &&
-          SafeFunctions.Contains(identifier.Identifier.ValueText))
+      if (invocation.Expression is IdentifierNameSyntax identifier && DesyncSafeNatives.IsSafe(identifier.Identifier.ValueText))
         return true;
       
       return methodAttributes.Any(attr => attr.AttributeClass.Name == "DesyncSafeAttribute");
     }
-    
-    private static readonly List<string> SafeFunctions = new List<string>
-    {
-      "BlzSetSpecialEffectColor",
-      "BlzSetSpecialEffectColorByPlayer",
-      "StartSound"
-    };
   }
 }
