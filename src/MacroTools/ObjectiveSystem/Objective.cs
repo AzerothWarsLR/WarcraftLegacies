@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using DesyncSafeAnalyzer.Attributes;
 using MacroTools.DialogueSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
@@ -174,6 +175,7 @@ namespace MacroTools.ObjectiveSystem
     /// <summary>
     ///   Hides the synchronous aspects of this QuestItem, namely the minimap icon.
     /// </summary>
+    [DesyncSafe]
     internal void HideLocal()
     {
       if (_minimapIcon != null) SetMinimapIconVisible(_minimapIcon, false);

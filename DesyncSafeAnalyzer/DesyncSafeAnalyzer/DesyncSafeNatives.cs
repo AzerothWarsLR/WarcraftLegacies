@@ -18,7 +18,12 @@ namespace DesyncSafeAnalyzer
       "GetRectMaxY",
       "SetCameraBounds",
       "BlzChangeMinimapTerrainTex",
-      "CameraSetupApplyForceDuration"
+      "CameraSetupApplyForceDuration",
+      "SetMinimapIconVisible",
+      "GetUnitX",
+      "GetUnitY",
+      "GetItemX",
+      "GetItemY"
     };
     
     /// <summary>

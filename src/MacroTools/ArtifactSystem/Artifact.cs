@@ -1,4 +1,5 @@
 using System;
+using DesyncSafeAnalyzer.Attributes;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using WCSharp.Events;
@@ -164,14 +165,15 @@ namespace MacroTools.ArtifactSystem
     /// </summary>
     public void Ping(player whichPlayer)
     {
-      if (GetLocalPlayer() != whichPlayer) 
-        return;
-      if (_locationType == ArtifactLocationType.Special)
-        PingMinimap(FalsePosition.X, FalsePosition.Y, 3);
-      else if (_owningUnit != null)
-        PingMinimap(GetUnitX(_owningUnit), GetUnitY(_owningUnit), 3);
-      else
-        PingMinimap(GetItemX(Item), GetItemY(Item), 3);
+      UnsyncUtils.InvokeForClient(() =>
+      {
+        if (_locationType == ArtifactLocationType.Special)
+          PingMinimap(FalsePosition.X, FalsePosition.Y, 3);
+        else if (_owningUnit != null)
+          PingMinimap(GetUnitX(_owningUnit), GetUnitY(_owningUnit), 3);
+        else
+          PingMinimap(GetItemX(Item), GetItemY(Item), 3);
+      }, whichPlayer);
     }
 
     private void SetOwningPlayer(player? value)

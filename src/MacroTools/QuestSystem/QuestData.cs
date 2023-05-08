@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using DesyncSafeAnalyzer.Attributes;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem;
@@ -197,9 +198,7 @@ namespace MacroTools.QuestSystem
       if (Progress != QuestProgress.Incomplete)
         foreach (var questItem in _objectives)
         {
-          if (GetLocalPlayer() == whichFaction.Player)
-            questItem.HideLocal();
-
+          UnsyncUtils.InvokeForClient(questItem.HideLocal, whichFaction.Player);
           questItem.HideSync();
         }
       else
