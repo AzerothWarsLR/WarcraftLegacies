@@ -9,14 +9,14 @@ using System.Linq;
 namespace DesyncSafeAnalyzer
 {
   [DiagnosticAnalyzer(LanguageNames.CSharp)]
-  public class UnsafeMethodCallAnalyzer : DiagnosticAnalyzer
+  public class DesyncSafeMethodRestrictionsAnalyzer : DiagnosticAnalyzer
   {
     private const string Category = "Usage";
-    private const string Title = "DesyncSafe method usage warning";
-    private const string Message = "Calling a DesyncSafe method from a non-DesyncSafe method.";
+    private const string Title = "DesyncSafe method restrictions";
+    private const string Message = "Cannot call a non-DesyncSafe method from a DesyncSafe method.";
 
     private static readonly DiagnosticDescriptor Rule = new DiagnosticDescriptor(
-      "DS001",
+      "ZB001",
       Title,
       Message,
       Category,
