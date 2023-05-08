@@ -12,8 +12,8 @@ namespace DesyncSafeAnalyzer
   public class DesyncSafeMethodRestrictionsAnalyzer : DiagnosticAnalyzer
   {
     private const string Category = "Usage";
-    private const string Title = "DesyncSafe method restrictions";
-    private const string Message = "Cannot call a non-DesyncSafe method from a DesyncSafe method.";
+    private const string Title = "DesyncSafe functions restrictions";
+    private const string Message = "DesyncSafe functions can only call desync safe natives or other DesyncSafe functions.";
 
     private static readonly DiagnosticDescriptor Rule = new DiagnosticDescriptor(
       "ZB001",

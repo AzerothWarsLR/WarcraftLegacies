@@ -1,5 +1,4 @@
 ﻿using System.Collections.Immutable;
-using System.Diagnostics;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
@@ -13,7 +12,7 @@ namespace DesyncSafeAnalyzer
     private static readonly DiagnosticDescriptor Rule = new DiagnosticDescriptor(
       "ZB000",
       "Do not call GetLocalPlayer method",
-      "Calling GetLocalPlayer method is not allowed",
+      "Do not use GetLocalPlayer; use UnsyncUtils.InvokeForClient instead.",
       "Naming",
       DiagnosticSeverity.Error,
       true);

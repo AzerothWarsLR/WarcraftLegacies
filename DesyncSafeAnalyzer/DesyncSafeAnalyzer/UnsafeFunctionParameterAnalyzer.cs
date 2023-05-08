@@ -15,7 +15,7 @@ namespace DesyncSafeAnalyzer
     private static readonly DiagnosticDescriptor LambdaExpressionRule = new DiagnosticDescriptor(
       "ZB003",
       "Unsafe use of InvokeForClient",
-      "Lambda expressions passed to InvokeForClient can only call functions marked with the [DesyncSafe] attribute.",
+      "Lambda expressions passed to InvokeForClient can only call native desync-safe functions or custom functions marked with the [DesyncSafe] attribute.",
       "Usage",
       DiagnosticSeverity.Error,
       true);
