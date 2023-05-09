@@ -38,6 +38,7 @@
         </Reference>
     </ItemGroup>
     <ItemGroup>
+        <Compile Include="Desynchronizable.cs" />
         <Compile Include="DesyncSafeAttribute.cs" />
         <Compile Include="UnsyncUtils.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
