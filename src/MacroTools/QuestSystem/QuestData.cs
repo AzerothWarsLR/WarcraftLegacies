@@ -238,10 +238,12 @@ namespace MacroTools.QuestSystem
     /// <summary>
     ///   Enables the local aspects of all child QuestItems.
     /// </summary>
+    [DesyncSafe]
     internal void ShowLocal()
     {
       QuestSetEnabled(Quest, true);
-      foreach (var questItem in _objectives) questItem.ShowLocal(Progress);
+      foreach (var questItem in _objectives) 
+        questItem.ShowLocal(Progress);
     }
 
     /// <summary>

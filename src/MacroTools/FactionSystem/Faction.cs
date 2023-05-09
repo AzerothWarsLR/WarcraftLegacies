@@ -401,8 +401,7 @@ namespace MacroTools.FactionSystem
     {
       questData.Add(this);
       _questsByName.Add(questData.Title, questData);
-      if (GetLocalPlayer() == Player)
-        questData.ShowLocal();
+      UnsyncUtils.InvokeForClient(questData.ShowLocal, Player);
       questData.ShowSync();
       questData.ProgressChanged += OnQuestProgressChanged;
       return questData;
@@ -576,8 +575,7 @@ namespace MacroTools.FactionSystem
     {
       foreach (var quest in _questsByName.Values)
       {
-        if (GetLocalPlayer() == Player) quest.ShowLocal();
-
+        UnsyncUtils.InvokeForClient(quest.ShowLocal, Player);
         quest.ShowSync();
       }
     }
