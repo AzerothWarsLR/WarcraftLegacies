@@ -37,7 +37,8 @@ namespace DesyncSafeAnalyzer
     {
       "ElementAt",
       "Contains",
-      "TryGetValue"
+      "TryGetValue",
+      "First"
     };
     
     /// <summary>

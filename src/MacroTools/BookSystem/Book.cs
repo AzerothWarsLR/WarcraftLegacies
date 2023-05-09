@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using DesyncSafeAnalyzer.Attributes;
 using MacroTools.Extensions;
 using MacroTools.Frames;
 using WCSharp.Shared.Data;
@@ -41,7 +42,7 @@ namespace MacroTools.BookSystem
         Width = 0.03f,
         Height = 0.03f,
         Text = "x",
-        OnClick = Exit
+        OnClick = clickingPlayer => { UnsyncUtils.InvokeForClient(Exit, clickingPlayer); }
       };
       ExitButton.SetPoint(FRAMEPOINT_CENTER, this, FRAMEPOINT_TOPRIGHT, -0.015f, -0.015f);
       AddFrame(ExitButton);
@@ -79,12 +80,7 @@ namespace MacroTools.BookSystem
       
       CreateTrigger()
         .RegisterSharedKeyEvent(OSKEY_ESCAPE, BlzGetTriggerPlayerMetaKey(), false)
-        .AddAction(() =>
-      {
-        if (GetTriggerPlayer() != GetLocalPlayer())
-          return;
-        Exit(GetLocalPlayer());
-      });
+        .AddAction(() => UnsyncUtils.InvokeForClient(Exit, GetTriggerPlayer()));
     }
 
     /// <summary>
@@ -144,10 +140,10 @@ namespace MacroTools.BookSystem
     /// <summary>
     /// <inheritdoc/>
     /// </summary>
-    /// <param name="triggerPlayer"></param>
-    public void Exit(player triggerPlayer)
+    [DesyncSafe]
+    public void Exit()
     {
-      if (triggerPlayer != GetLocalPlayer() || !Visible || LauncherButton.Visible)
+      if (!Visible || LauncherButton.Visible)
         return;
       Visible = false;
       LauncherButton.Visible = true;
@@ -161,8 +157,7 @@ namespace MacroTools.BookSystem
     {
       try
       {
-        if (GetLocalPlayer() == triggerPlayer)
-          ActivePageIndex++;
+        UnsyncUtils.InvokeForClient(() => { ActivePageIndex++; }, triggerPlayer);
       }
       catch (Exception ex)
       {
@@ -178,8 +173,7 @@ namespace MacroTools.BookSystem
     {
       try
       {
-        if (GetLocalPlayer() == triggerPlayer)
-          ActivePageIndex--;
+        UnsyncUtils.InvokeForClient(() => { ActivePageIndex--; }, triggerPlayer);
       }
       catch (Exception ex)
       {
@@ -195,18 +189,19 @@ namespace MacroTools.BookSystem
     {
       try
       {
-        if (triggerPlayer != GetLocalPlayer())
-          return;
-        Visible = true;
-        LauncherButton.Visible = false;
-        foreach (var page in Pages)
+        UnsyncUtils.InvokeForClient(() =>
         {
-          page.Visible = false;
-        }
+          Visible = true;
+          LauncherButton.Visible = false;
+          foreach (var page in Pages)
+          {
+            page.Visible = false;
+          }
 
-        Pages.First().Visible = true;
-        _activePageIndex = 0;
-        RefreshNavigationButtonVisiblity();
+          Pages.First().Visible = true;
+          _activePageIndex = 0;
+          RefreshNavigationButtonVisiblity();
+        }, triggerPlayer);
       }
       catch (Exception ex)
       {
@@ -237,6 +232,7 @@ namespace MacroTools.BookSystem
     ///    Makes the Previous button visible if there are any pages to navigate back to,
     ///    and makes the Next button visible if there are any pages to navigate forward to.
     /// </summary>
+    [DesyncSafe]
     private void RefreshNavigationButtonVisiblity()
     {
       var pageCount = Pages.Count;

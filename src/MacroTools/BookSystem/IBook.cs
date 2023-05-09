@@ -50,8 +50,7 @@ namespace MacroTools.BookSystem
     /// <summary>
     ///  Exits the book
     /// </summary>
-    /// <param name="triggerPlayer">the player that wants to close the book</param>
-    public void Exit(player triggerPlayer);
+    public void Exit();
 
     /// <summary>
     ///  Moves to the next page of the book
