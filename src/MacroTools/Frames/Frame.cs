@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using DesyncSafeAnalyzer.Attributes;
 using static War3Api.Common;
 
 namespace MacroTools.Frames
@@ -43,6 +44,7 @@ namespace MacroTools.Frames
       }
     }
 
+    [Desynchronizable]
     public bool Visible
     {
       get => BlzFrameIsVisible(Handle);

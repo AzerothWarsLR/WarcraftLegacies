@@ -40,7 +40,7 @@ class Program
         };
         analyzerTest.ExpectedDiagnostics.Add(new DiagnosticResult
         (
-          "ZB004",
+          "ZB005",
           DiagnosticSeverity.Error
         ).WithLocation(13, 9));
         await analyzerTest.RunAsync();

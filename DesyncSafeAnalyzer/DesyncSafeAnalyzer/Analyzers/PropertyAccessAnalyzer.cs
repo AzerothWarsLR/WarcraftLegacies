@@ -12,7 +12,7 @@ namespace DesyncSafeAnalyzer.Analyzers
   public sealed class PropertyAccessAnalyzer : DiagnosticAnalyzer
   {
     private static readonly DiagnosticDescriptor Rule = new DiagnosticDescriptor(
-      "ZB004",
+      "ZB005",
       "Property access may cause desynchronization",
       "Functions marked with the [DesyncSafe] attribute cannot set properties that are not marked with the [Desynchronizable] attribute.",
       "Usage",
