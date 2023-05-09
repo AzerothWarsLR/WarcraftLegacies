@@ -42,7 +42,7 @@ namespace MacroTools.BookSystem
         Width = 0.03f,
         Height = 0.03f,
         Text = "x",
-        OnClick = clickingPlayer => { UnsyncUtils.InvokeForClient(Exit, clickingPlayer); }
+        OnClick = Exit
       };
       ExitButton.SetPoint(FRAMEPOINT_CENTER, this, FRAMEPOINT_TOPRIGHT, -0.015f, -0.015f);
       AddFrame(ExitButton);
@@ -80,7 +80,7 @@ namespace MacroTools.BookSystem
       
       CreateTrigger()
         .RegisterSharedKeyEvent(OSKEY_ESCAPE, BlzGetTriggerPlayerMetaKey(), false)
-        .AddAction(() => UnsyncUtils.InvokeForClient(Exit, GetTriggerPlayer()));
+        .AddAction(() => Exit(GetTriggerPlayer()));
     }
 
     /// <summary>
@@ -140,13 +140,15 @@ namespace MacroTools.BookSystem
     /// <summary>
     /// <inheritdoc/>
     /// </summary>
-    [DesyncSafe]
-    public void Exit()
+    public void Exit(player whichPlayer)
     {
-      if (!Visible || LauncherButton.Visible)
-        return;
-      Visible = false;
-      LauncherButton.Visible = true;
+      UnsyncUtils.InvokeForClient(() =>
+      {
+        if (!Visible || LauncherButton.Visible)
+          return;
+        Visible = false;
+        LauncherButton.Visible = true;
+      }, whichPlayer);
     }
 
     /// <summary>

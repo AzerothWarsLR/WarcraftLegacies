@@ -26,12 +26,7 @@ namespace MacroTools.BookSystem.ArtifactSystem
       Position = new Point(0.4f, 0.35f);
       CreateTrigger()
         .RegisterSharedKeyEvent(OSKEY_F7, BlzGetTriggerPlayerMetaKey(), false)
-        .AddAction(() =>
-        {
-          if (GetTriggerPlayer() != GetLocalPlayer())
-            return;
-          Open(GetLocalPlayer());
-        });
+        .AddAction(() => Open(GetTriggerPlayer()));
     }
 
     private void AddArtifact(Artifact artifact)

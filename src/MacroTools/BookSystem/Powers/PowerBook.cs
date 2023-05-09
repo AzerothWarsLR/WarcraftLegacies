@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using DesyncSafeAnalyzer.Attributes;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using WCSharp.Shared.Data;
@@ -63,10 +64,7 @@ namespace MacroTools.BookSystem.Powers
 
     private void OnPlayerChangedFaction(object? sender, PlayerFactionChangeEventArgs args)
     {
-      if (args.Player == GetLocalPlayer())
-      {
-        TrackedFaction = args.Player.GetFaction();
-      }
+      UnsyncUtils.InvokeForClient(() => { TrackedFaction = args.Player.GetFaction(); }, args.Player);
     }
 
     private void OnFactionRemovePower(object? sender, FactionPowerEventArgs factionPowerEventArgs)

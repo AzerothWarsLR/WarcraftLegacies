@@ -162,6 +162,7 @@ namespace MacroTools.Extensions
     /// <summary>
     /// Returns the player's <see cref="Faction"/>.
     /// </summary>
+    [DesyncSafe]
     public static Faction? GetFaction(this player player) => PlayerData.ByHandle(player).Faction;
 
     /// <summary>

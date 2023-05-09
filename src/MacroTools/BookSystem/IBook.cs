@@ -50,7 +50,7 @@ namespace MacroTools.BookSystem
     /// <summary>
     ///  Exits the book
     /// </summary>
-    public void Exit();
+    public void Exit(player whichPlayer);
 
     /// <summary>
     ///  Moves to the next page of the book
