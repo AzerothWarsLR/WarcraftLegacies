@@ -63,12 +63,15 @@ namespace DesyncSafeAnalyzer
       if (!(actionSymbol is IMethodSymbol actionMethod))
         return;
 
+      if (DesyncSafeNatives.IsSafe(actionMethod.Name))
+        return;
+      
       var desyncSafeAttribute =
         actionMethod.GetAttributes().FirstOrDefault(attr => attr.AttributeClass.Name == DesyncSafeAttributeName);
       if (desyncSafeAttribute != null)
         return;
 
-      var diagnostic2 = Diagnostic.Create(ConcreteFunctionRule, actionArg?.GetLocation());
+      var diagnostic2 = Diagnostic.Create(ConcreteFunctionRule, actionArg.GetLocation());
       context.ReportDiagnostic(diagnostic2);
     }
 
