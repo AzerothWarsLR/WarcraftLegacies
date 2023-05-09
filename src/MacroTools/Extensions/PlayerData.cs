@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using DesyncSafeAnalyzer.Attributes;
 using MacroTools.ControlPointSystem;
 using MacroTools.FactionSystem;
 using static War3Api.Common;
@@ -264,9 +265,11 @@ namespace MacroTools.Extensions
     /// <summary>
     ///   Retrieves the <see cref="PlayerData" /> object which contains information about the given <see cref="player" />.
     /// </summary>
+    [DesyncSafe]
     public static PlayerData ByHandle(player whichPlayer)
     {
-      if (ById.TryGetValue(GetPlayerId(whichPlayer), out var person)) return person;
+      if (ById.TryGetValue(GetPlayerId(whichPlayer), out var person)) 
+        return person;
 
       var newPerson = new PlayerData(whichPlayer);
       Register(newPerson);

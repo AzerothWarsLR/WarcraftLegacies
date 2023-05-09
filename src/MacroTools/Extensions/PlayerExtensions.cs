@@ -151,6 +151,7 @@ namespace MacroTools.Extensions
     /// <summary>
     /// Returns the player's <see cref="Team"/>.
     /// </summary>
+    [DesyncSafe]
     public static Team? GetTeam(this player player) => PlayerData.ByHandle(player).Team;
 
     /// <summary>

@@ -276,11 +276,13 @@ namespace MacroTools.QuestSystem
     private void DisplayCompletedGlobal(player whichPlayer)
     {
       var soundCompleted = SoundLibrary.Completed;
-      var soundFailed = SoundLibrary.Failed;
-      StartSound(GetLocalPlayer().GetTeam()?.Contains(whichPlayer) == true
-        ? soundCompleted
-        : soundFailed);
+      UnsyncUtils.InvokeForClients(() => { StartSound(soundCompleted); },
+        localPlayer => { return localPlayer.GetTeam().Contains(whichPlayer); });
       
+      var soundFailed = SoundLibrary.Failed;
+      UnsyncUtils.InvokeForClients(() => { StartSound(soundFailed); },
+        localPlayer => { return !localPlayer.GetTeam().Contains(whichPlayer); });
+
       foreach (var enumPlayer in WCSharp.Shared.Util.EnumeratePlayers())
         if (enumPlayer != whichPlayer)
           DisplayTextToPlayer(enumPlayer, 0, 0,
@@ -358,13 +360,13 @@ namespace MacroTools.QuestSystem
           case QuestProgress.Undiscovered:
             break;
           case QuestProgress.Incomplete:
-            if (objective.EligibleFactions.Contains(GetLocalPlayer()))
-              objective.ShowLocal(Progress);
+            UnsyncUtils.InvokeForClients(() => { objective.ShowLocal(Progress); },
+              localPlayer => objective.EligibleFactions.Contains(localPlayer));
             objective.ShowSync(Progress);
             break;
           case QuestProgress.Complete:
-            if (objective.EligibleFactions.Contains(GetLocalPlayer()))
-              objective.HideLocal();
+            UnsyncUtils.InvokeForClients(() => { objective.HideLocal(); },
+              localPlayer => objective.EligibleFactions.Contains(localPlayer));
             objective.HideSync();
             break;
           case QuestProgress.Failed:

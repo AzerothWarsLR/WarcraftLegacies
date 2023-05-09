@@ -20,6 +20,17 @@ namespace DesyncSafeAnalyzer.Attributes
     }
 
     /// <summary>
+    /// Invokes the specified function for clients matching a provided condition.
+    /// </summary>
+    /// <param name="functionToExecute">The function to be executed.</param>
+    /// <param name="condition">The condition a client must pass for the function to be executed.</param>
+    public static void InvokeForClients(Action functionToExecute, Func<player, bool> condition)
+    {
+      if (condition(GetLocalPlayer()))
+        functionToExecute();
+    }
+    
+    /// <summary>
     /// Creates and returns a special effect, which can have a different model per client.
     /// </summary>
     /// <param name="modelNameFunction">A function that determines the model of the effect based on characteristics of the local player.</param>

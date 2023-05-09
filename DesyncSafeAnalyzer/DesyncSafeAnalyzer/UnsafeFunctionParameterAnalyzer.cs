@@ -49,7 +49,7 @@ namespace DesyncSafeAnalyzer
     {
       if (!(context.Node is InvocationExpressionSyntax invocation) ||
           !(invocation.Expression is MemberAccessExpressionSyntax memberAccess) ||
-          memberAccess.Name.Identifier.Text != "InvokeForClient")
+          (memberAccess.Name.Identifier.Text != "InvokeForClient" && memberAccess.Name.Identifier.Text != "InvokeForClients"))
         return;
 
       var argumentList = invocation.ArgumentList;

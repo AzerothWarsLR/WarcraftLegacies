@@ -5,7 +5,7 @@ namespace DesyncSafeAnalyzer
   
   public static class DesyncSafeNatives
   {
-    private static readonly List<string> SafeFunctions = new List<string>
+    private static readonly List<string> SafeWc3Natives = new List<string>
     {
       "BlzSetSpecialEffectColor",
       "BlzSetSpecialEffectColorByPlayer",
@@ -26,16 +26,23 @@ namespace DesyncSafeAnalyzer
       "GetItemY",
       "ElementAt",
       "GetRandomInt",
-      "Remove",
       "CreateMinimapIcon",
       "SkinManagerGetLocalPath",
       "QuestSetEnabled",
-      "ClearTextMessages"
+      "ClearTextMessages",
+      "GetPlayerId"
+    };
+
+    private static readonly List<string> SafeDotNetNatives = new List<string>
+    {
+      "ElementAt",
+      "Contains",
+      "TryGetValue"
     };
     
     /// <summary>
     /// Returns true if the provided native function name is desync safe.
     /// </summary>
-    public static bool IsSafe(string nativeFunctionName) => SafeFunctions.Contains(nativeFunctionName);
+    public static bool IsSafe(string functionName) => SafeWc3Natives.Contains(functionName) || SafeDotNetNatives.Contains(functionName);
   }
 }
