@@ -58,23 +58,12 @@ namespace DesyncSafeAnalyzer.Analyzers
       if (!callerMethodAttributes.Any(attr => attr.AttributeClass.Name == nameof(DesyncSafeAttribute)))
         return;
 
-      if (MethodIsDesyncSafe(context, invocation))
+      if (Shared.IsMethodDesyncSafe(context.SemanticModel.GetSymbolInfo(invocation).Symbol as IMethodSymbol))
         return;
 
       var methodName = methodSymbol.ToDisplayString(MethodDisplayFormat);
       var diagnostic = Diagnostic.Create(Rule, invocation.GetLocation(), methodName);
       context.ReportDiagnostic(diagnostic);
-    }
-
-    private static bool MethodIsDesyncSafe(SyntaxNodeAnalysisContext context, InvocationExpressionSyntax invocation)
-    {
-      var methodSymbol = context.SemanticModel.GetSymbolInfo(invocation).Symbol;
-      var methodAttributes = methodSymbol.GetAttributes();
-
-      if (invocation.Expression is IdentifierNameSyntax identifier && Shared.IsSafe(identifier.Identifier.ValueText))
-        return true;
-      
-      return methodAttributes.Any(attr => attr.AttributeClass.Name == nameof(DesyncSafeAttribute));
     }
   }
 }
