@@ -33,9 +33,6 @@
     </PropertyGroup>
     <ItemGroup>
         <Reference Include="System" />
-        <Reference Include="System.Core" />
-        <Reference Include="System.Data" />
-        <Reference Include="System.Xml" />
         <Reference Include="War3Api.Common">
           <HintPath>..\..\..\.nuget\packages\war3api.common\1.32.9\lib\netstandard2.0\War3Api.Common.dll</HintPath>
         </Reference>
