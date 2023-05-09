@@ -154,22 +154,21 @@ namespace MacroTools.ObjectiveSystem
     /// </summary>
     internal void ShowSync(QuestProgress parentQuestProgress)
     {
-      if (Progress == QuestProgress.Incomplete && parentQuestProgress == QuestProgress.Incomplete)
+      if (Progress != QuestProgress.Incomplete || parentQuestProgress != QuestProgress.Incomplete) 
+        return;
+      
+      if (MapEffectPath != null && _mapEffect == null)
       {
-        string effectPath;
-        if (MapEffectPath != null && _mapEffect == null)
-        {
-          effectPath = EligibleFactions.Contains(GetLocalPlayer()) ? MapEffectPath : "";
-          _mapEffect = AddSpecialEffect(effectPath, Position.X, Position.Y);
-          BlzSetSpecialEffectColorByPlayer(_mapEffect, EligibleFactions.First().Player);
-          BlzSetSpecialEffectHeight(_mapEffect, 100 + Environment.GetPositionZ(Position));
-        }
+        _mapEffect = UnsyncUtils.AddSpecialEffectUnsync(localPlayer => EligibleFactions.Contains(localPlayer) ? MapEffectPath : "",
+          Position.X, Position.Y);
+        BlzSetSpecialEffectColorByPlayer(_mapEffect, EligibleFactions.First().Player);
+        BlzSetSpecialEffectHeight(_mapEffect, 100 + Environment.GetPositionZ(Position));
+      }
 
-        if (OverheadEffectPath != null && _overheadEffect == null && TargetWidget != null)
-        {
-          effectPath = EligibleFactions.Contains(GetLocalPlayer()) ? OverheadEffectPath : "";
-          _overheadEffect = AddSpecialEffectTarget(effectPath, TargetWidget, "overhead");
-        }
+      if (OverheadEffectPath != null && _overheadEffect == null && TargetWidget != null)
+      {
+        _overheadEffect = UnsyncUtils.AddSpecialEffectTargetUnsync(
+          localPlayer => EligibleFactions.Contains(localPlayer) ? OverheadEffectPath : "", TargetWidget, "overhead");
       }
     }
 
