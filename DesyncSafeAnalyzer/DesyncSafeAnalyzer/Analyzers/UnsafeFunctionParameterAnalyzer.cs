@@ -5,10 +5,10 @@ using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.CodeAnalysis.Diagnostics;
 
-namespace DesyncSafeAnalyzer
+namespace DesyncSafeAnalyzer.Analyzers
 {
   [DiagnosticAnalyzer(LanguageNames.CSharp)]
-  public class UnsafeFunctionParameterAnalyzer : DiagnosticAnalyzer
+  public sealed class UnsafeFunctionParameterAnalyzer : DiagnosticAnalyzer
   {
     private const string DesyncSafeAttributeName = "DesyncSafeAttribute";
 
@@ -49,8 +49,8 @@ namespace DesyncSafeAnalyzer
     {
       if (!(context.Node is InvocationExpressionSyntax invocation) ||
           !(invocation.Expression is MemberAccessExpressionSyntax memberAccess) ||
-          (memberAccess.Name.Identifier.Text != "InvokeForClient" && memberAccess.Name.Identifier.Text != "InvokeForClients"))
-        return;
+          !Shared.IsProtectedMethod(memberAccess.Name.Identifier.Text))
+      return;
 
       var argumentList = invocation.ArgumentList;
       var actionExpression = argumentList.Arguments[0].Expression;
@@ -63,7 +63,7 @@ namespace DesyncSafeAnalyzer
       if (!(actionSymbol is IMethodSymbol actionMethod))
         return;
 
-      if (DesyncSafeNatives.IsSafe(actionMethod.Name))
+      if (Shared.IsSafe(actionMethod.Name))
         return;
       
       var desyncSafeAttribute =
@@ -83,12 +83,10 @@ namespace DesyncSafeAnalyzer
       var invokeForClientInvocation = lambda.Ancestors()
         .OfType<InvocationExpressionSyntax>()
         .FirstOrDefault(invocation => invocation.Expression is MemberAccessExpressionSyntax identifier &&
-                                      identifier.Name.Identifier.ValueText.Contains("InvokeForClient"));
+                                      Shared.IsProtectedMethod(identifier.Name.Identifier.ValueText));
 
       if (invokeForClientInvocation == null)
-      {
         return;
-      }
 
       // Collect all invoked method symbols within the lambda.
       var invokedMethodSymbols = lambda.DescendantNodes()
@@ -96,11 +94,9 @@ namespace DesyncSafeAnalyzer
         .Select(invocation => context.SemanticModel.GetSymbolInfo(invocation.Expression).Symbol)
         .OfType<IMethodSymbol>()
         .ToList();
-
-      // Check if any invoked methods are missing the DesyncSafe attribute.
+      
       var violatingMethods = invokedMethodSymbols
-        .Where(method => !(method.GetAttributes().Any(attribute => attribute.AttributeClass.Name == DesyncSafeAttributeName) 
-                         || DesyncSafeNatives.IsSafe(method.Name)))
+        .Where(invokedMethod => !Shared.IsMethodDesyncSafe(invokedMethod))
         .ToList();
 
       if (!violatingMethods.Any())

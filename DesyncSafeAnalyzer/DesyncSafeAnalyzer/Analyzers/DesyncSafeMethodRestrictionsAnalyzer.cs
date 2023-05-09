@@ -1,15 +1,15 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections.Immutable;
+using System.Linq;
+using DesyncSafeAnalyzer.Attributes;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.CodeAnalysis.Diagnostics;
-using System.Collections.Immutable;
-using System.Linq;
 
-namespace DesyncSafeAnalyzer
+namespace DesyncSafeAnalyzer.Analyzers
 {
   [DiagnosticAnalyzer(LanguageNames.CSharp)]
-  public class DesyncSafeMethodRestrictionsAnalyzer : DiagnosticAnalyzer
+  public sealed class DesyncSafeMethodRestrictionsAnalyzer : DiagnosticAnalyzer
   {
     private const string Category = "Usage";
     private const string Title = "DesyncSafe functions restrictions";
@@ -55,7 +55,7 @@ namespace DesyncSafeAnalyzer
       
       var callerMethodAttributes = context.SemanticModel.GetDeclaredSymbol(callerMethodSymbol).GetAttributes();
       
-      if (!callerMethodAttributes.Any(attr => attr.AttributeClass.Name == "DesyncSafeAttribute"))
+      if (!callerMethodAttributes.Any(attr => attr.AttributeClass.Name == nameof(DesyncSafeAttribute)))
         return;
 
       if (MethodIsDesyncSafe(context, invocation))
@@ -71,10 +71,10 @@ namespace DesyncSafeAnalyzer
       var methodSymbol = context.SemanticModel.GetSymbolInfo(invocation).Symbol;
       var methodAttributes = methodSymbol.GetAttributes();
 
-      if (invocation.Expression is IdentifierNameSyntax identifier && DesyncSafeNatives.IsSafe(identifier.Identifier.ValueText))
+      if (invocation.Expression is IdentifierNameSyntax identifier && Shared.IsSafe(identifier.Identifier.ValueText))
         return true;
       
-      return methodAttributes.Any(attr => attr.AttributeClass.Name == "DesyncSafeAttribute");
+      return methodAttributes.Any(attr => attr.AttributeClass.Name == nameof(DesyncSafeAttribute));
     }
   }
 }

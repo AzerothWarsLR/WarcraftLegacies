@@ -4,10 +4,10 @@ using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.CodeAnalysis.Diagnostics;
 
-namespace DesyncSafeAnalyzer
+namespace DesyncSafeAnalyzer.Analyzers
 {
   [DiagnosticAnalyzer(LanguageNames.CSharp)]
-  public class GetLocalPlayerAnalyzer : DiagnosticAnalyzer
+  public sealed class GetLocalPlayerAnalyzer : DiagnosticAnalyzer
   {
     private static readonly DiagnosticDescriptor Rule = new DiagnosticDescriptor(
       "ZB000",

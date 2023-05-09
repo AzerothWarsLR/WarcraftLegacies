@@ -1,4 +1,5 @@
-﻿using Microsoft.CodeAnalysis;
+﻿using DesyncSafeAnalyzer.Analyzers;
+using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp.Testing;
 using Microsoft.CodeAnalysis.Testing;
 using Microsoft.CodeAnalysis.Testing.Verifiers;
@@ -106,7 +107,7 @@ class Program
     }
     
     [Fact]
-    public async void InvokeForClient_ConcreteFunctionNonDesyncSafe_DiagnosesError()
+    public async void InvokeForClient_CallingNonDesyncSafeConcreteFunction_DiagnosesError()
     {
       const string sourceCode = @"
 using System;
