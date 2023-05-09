@@ -1,5 +1,6 @@
 ﻿using MacroTools.CommandSystem;
 using MacroTools.ControlPointSystem;
+using MacroTools.Extensions;
 using MacroTools.Mechanics;
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.ResearchSystems;
@@ -16,6 +17,7 @@ namespace TestMap.Source.Setup
       SetPlayerState(Player(0), PLAYER_STATE_RESOURCE_GOLD, 10000);
       SetPlayerState(Player(0), PLAYER_STATE_RESOURCE_LUMBER, 10000);
 
+      PlayerData.Initialize();
       ControlPointManager.Instance = new ControlPointManager();
       LegendSetup.Setup();
       TeamSetup.Setup();

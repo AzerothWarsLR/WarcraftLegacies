@@ -10,7 +10,7 @@ namespace MacroTools.Extensions
   /// <summary>
   /// Provides extra information about players that is not already tracked by the Warcraft 3 engine.
   /// </summary>
-  internal sealed class PlayerData
+  public sealed class PlayerData
   {
     /// <summary>
     /// Fired when the player leaves a team.
@@ -266,15 +266,7 @@ namespace MacroTools.Extensions
     ///   Retrieves the <see cref="PlayerData" /> object which contains information about the given <see cref="player" />.
     /// </summary>
     [DesyncSafe]
-    public static PlayerData ByHandle(player whichPlayer)
-    {
-      if (ById.TryGetValue(GetPlayerId(whichPlayer), out var person)) 
-        return person;
-
-      var newPerson = new PlayerData(whichPlayer);
-      Register(newPerson);
-      return newPerson;
-    }
+    public static PlayerData ByHandle(player whichPlayer) => ById[GetPlayerId(whichPlayer)];
 
     /// <summary>
     ///   Register a <see cref="PlayerData" /> to the Person system.
@@ -282,6 +274,15 @@ namespace MacroTools.Extensions
     private static void Register(PlayerData playerData)
     {
       ById.Add(GetPlayerId(playerData.Player), playerData);
+    }
+
+    /// <summary>
+    /// Sets up all <see cref="PlayerData"/> objects.
+    /// </summary>
+    public static void Initialize()
+    {
+      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
+        Register(new PlayerData(player));
     }
   }
 }
