@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using DesyncSafeAnalyzer.Attributes;
 using MacroTools.Extensions;
 using MacroTools.Frames;
 using static War3Api.Common;
@@ -26,12 +27,15 @@ namespace MacroTools.BookSystem
       {
         Width = book.LauncherParent.GetWidth(),
         Height = book.LauncherParent.GetHeight(),
-        Text = book.Title,
-        Visible = whichPlayer == null || whichPlayer == GetLocalPlayer()
+        Text = book.Title
       };
       book.LauncherButton.SetPoint(FRAMEPOINT_TOP, book.LauncherParent, FRAMEPOINT_BOTTOM, 0, 0);
       book.LauncherButton.OnClick = book.Open;
-      
+
+      if (whichPlayer == null)
+        book.Visible = true;
+      else
+        UnsyncUtils.InvokeForClient(() => { book.Visible = true; }, whichPlayer);
     }
 
     private static void LoadToc(string tocFilePath)
