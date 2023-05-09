@@ -15,6 +15,10 @@ namespace MacroTools.HintSystem
     private readonly string _msg;
     private static bool _initialized;
 
+    /// <summary>
+    /// Initializes a new instance of the <see cref="Hint"/> class.
+    /// </summary>
+    /// <param name="msg">The message to display to all players when the hint is triggered.</param>
     public Hint(string msg)
     {
       _msg = msg;
@@ -22,31 +26,22 @@ namespace MacroTools.HintSystem
 
     public static void Register(Hint hint)
     {
-      if (!_initialized)
-      {
+      if (!_initialized) 
         Initialize();
-      }
       Unread.Add(hint);
     }
-
-    [DesyncSafe]
-    private void Display()
-    {
-      GetLocalPlayer().DisplayHint(_msg);
-      Unread.Remove(this);
-    }
-
-    [DesyncSafe]
-    private static void DisplayRandom()
-    {
-      if (Unread.Count > 0) 
-        Unread.ElementAt(GetRandomInt(0, Unread.Count - 1)).Display();
-    }
+    
+    private void Display(player whichPlayer) => whichPlayer.DisplayHint(_msg);
 
     private static void DisplayRandomHints()
     {
-      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers()) 
-        UnsyncUtils.InvokeForClient(DisplayRandom, player);
+      if (Unread.Count == 0)
+        return;
+      
+      var hint = Unread.ElementAt(GetRandomInt(0, Unread.Count - 1));
+      Unread.Remove(hint);
+      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
+        hint.Display(player);
     }
 
     private static void Initialize()
