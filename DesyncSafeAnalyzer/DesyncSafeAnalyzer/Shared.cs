@@ -44,11 +44,6 @@ namespace DesyncSafeAnalyzer
     };
     
     /// <summary>
-    /// Returns true if the provided native function name is desync safe.
-    /// </summary>
-    public static bool IsSafe(string functionName) => SafeWc3Natives.Contains(functionName) || SafeDotNetNatives.Contains(functionName);
-    
-    /// <summary>
     /// True if the method can be safely called nonsynchronously with no chance of causing desynchronizations.
     /// </summary>
     public static bool IsMethodDesyncSafe(IMethodSymbol method)

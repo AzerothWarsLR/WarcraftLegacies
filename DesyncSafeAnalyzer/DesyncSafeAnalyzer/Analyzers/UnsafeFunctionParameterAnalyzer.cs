@@ -63,7 +63,7 @@ namespace DesyncSafeAnalyzer.Analyzers
       if (!(actionSymbol is IMethodSymbol actionMethod))
         return;
 
-      if (Shared.IsSafe(actionMethod.Name))
+      if (Shared.IsMethodDesyncSafe(actionMethod))
         return;
       
       var desyncSafeAttribute =
