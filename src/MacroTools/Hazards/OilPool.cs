@@ -1,4 +1,5 @@
 ﻿using System;
+using DesyncSafeAnalyzer.Attributes;
 using MacroTools.Extensions;
 using MacroTools.Powers;
 using MacroTools.SpellSystem;
@@ -44,10 +45,11 @@ namespace MacroTools.Hazards
       position.Y)
     {
       OilPower = oilPower;
-      _effectOil = AddSpecialEffect(owner == GetLocalPlayer() ? effectPath : "", position.X, position.Y)
+
+      _effectOil = UnsyncUtils.AddSpecialEffectUnsync(localPlayer => owner == localPlayer ? effectPath : "", position.X, position.Y)
         .SetScale(2);
-      _effectCircle = AddSpecialEffect(owner == GetLocalPlayer() ? @"buildings\other\CircleOfPower\CircleOfPower" : "",
-          position.X, position.Y)
+      _effectCircle = UnsyncUtils.AddSpecialEffectUnsync(localPlayer =>
+        owner == localPlayer ? @"buildings\other\CircleOfPower\CircleOfPower" : "", position.X, position.Y)
         .SetScale(2)
         .SetHeight(Libraries.Environment.GetPositionZ(position))
         .SetColor(Player(20));
