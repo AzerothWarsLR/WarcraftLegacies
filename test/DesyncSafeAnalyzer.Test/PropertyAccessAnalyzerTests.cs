@@ -45,6 +45,47 @@ class Program
         ).WithLocation(13, 9));
         await analyzerTest.RunAsync();
       }
+      
+      [Fact]
+      public async void GettingDesynchronizablePropertyFromNonDesyncSafeMethod_DiagnosesError()
+      {
+        const string sourceCode = @"
+using System;
+
+class DesynchronizableAttribute : Attribute {}
+
+class Test { 
+  public int ExampleProperty { get; set; } = 0;
+}
+
+class Program
+{
+    [Desynchronizable]
+    public static int ExampleProperty { get; set; }
+
+    public static void Main()
+    {
+        var test = ExampleProperty;
+        var beans = new Test();
+        var x = beans.ExampleProperty;
+    }
+}
+";
+
+        var analyzerTest = new CSharpAnalyzerTest<PropertyAccessAnalyzer, MSTestVerifier>
+        {
+          TestState =
+          {
+            Sources = { sourceCode }
+          }
+        };
+        analyzerTest.ExpectedDiagnostics.Add(new DiagnosticResult
+        (
+          "ZB006",
+          DiagnosticSeverity.Error
+        ).WithLocation(13, 9));
+        await analyzerTest.RunAsync();
+      }
     }
   }
 }

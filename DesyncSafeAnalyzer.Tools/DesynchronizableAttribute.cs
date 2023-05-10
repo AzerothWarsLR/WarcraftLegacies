@@ -7,7 +7,7 @@ namespace DesyncSafeAnalyzer.Attributes
   /// <para>Accessing this variable from a function that is not desync-safe may cause a desynchronization.</para>
   /// </summary>
   [AttributeUsage(AttributeTargets.Property | AttributeTargets.Field)]
-  public sealed class Desynchronizable : Attribute
+  public sealed class DesynchronizableAttribute : Attribute
   {
   }
 }

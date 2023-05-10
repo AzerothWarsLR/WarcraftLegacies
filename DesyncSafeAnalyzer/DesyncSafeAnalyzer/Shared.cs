@@ -32,7 +32,8 @@ namespace DesyncSafeAnalyzer
       "SkinManagerGetLocalPath",
       "QuestSetEnabled",
       "ClearTextMessages",
-      "GetPlayerId"
+      "GetPlayerId",
+      "FourCC"
     };
 
     private static readonly List<string> SafeDotNetNatives = new List<string>
