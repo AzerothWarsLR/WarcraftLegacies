@@ -7,7 +7,7 @@ using Xunit;
 
 namespace DesyncSafeAnalyzer.Test
 {
-  public sealed class GetLocalPlayerAnalyzerTest
+  public sealed class GetLocalPlayerAnalyzerTests
   {
     private const string SourceCode = @"
 
