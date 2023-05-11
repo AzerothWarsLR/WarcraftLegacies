@@ -43,8 +43,7 @@ namespace MacroTools.Frames
         BlzFrameSetSize(Handle, _width, _height);
       }
     }
-
-    [Desynchronizable]
+    
     public bool Visible
     {
       get => BlzFrameIsVisible(Handle);
