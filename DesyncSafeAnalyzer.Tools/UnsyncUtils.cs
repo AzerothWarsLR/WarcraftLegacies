@@ -1,7 +1,7 @@
 ﻿using System;
 using static War3Api.Common;
 
-namespace DesyncSafeAnalyzer.Attributes
+namespace DesyncSafeAnalyzer.Tools
 {
   /// <summary>
   /// Provides methods that make it easier to safely call unsynchronized code.

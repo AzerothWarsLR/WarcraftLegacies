@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using DesyncSafeAnalyzer.Attributes;
+using DesyncSafeAnalyzer.Tools;
 using MacroTools.ControlPointSystem;
 using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;

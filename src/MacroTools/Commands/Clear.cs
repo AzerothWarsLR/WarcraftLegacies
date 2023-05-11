@@ -1,4 +1,4 @@
-﻿using DesyncSafeAnalyzer.Attributes;
+﻿using DesyncSafeAnalyzer.Tools;
 using MacroTools.CommandSystem;
 using static War3Api.Common;
 

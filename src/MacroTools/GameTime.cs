@@ -1,7 +1,6 @@
 ﻿using MacroTools.Timer;
 using System;
 using System;
-using DesyncSafeAnalyzer.Attributes;
 using System.Linq;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;

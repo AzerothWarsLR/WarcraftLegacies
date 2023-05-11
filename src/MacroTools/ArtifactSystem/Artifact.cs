@@ -1,5 +1,5 @@
 using System;
-using DesyncSafeAnalyzer.Attributes;
+using DesyncSafeAnalyzer.Tools;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using WCSharp.Events;

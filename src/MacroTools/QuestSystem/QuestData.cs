@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using DesyncSafeAnalyzer.Attributes;
+using DesyncSafeAnalyzer.Tools;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem;
