@@ -17,11 +17,10 @@ namespace DesyncSafeAnalyzer.Analyzers
     private static readonly DiagnosticDescriptor Rule = new DiagnosticDescriptor(
       DiagnosticId,
       "Do not access or modify properties from functions with the [DesyncSafe] attribute",
-      "The property '{0}' should only be accessed or modified from functions marked with the DesyncSafe attribute",
+      "Do not access property '{0}' from a function marked as [DesyncSafe]",
       Category,
       DiagnosticSeverity.Error,
-      isEnabledByDefault: true,
-      description: "Avoid accessing or modifying properties from functions without DesyncSafe attribute.");
+      isEnabledByDefault: true);
 
     public override ImmutableArray<DiagnosticDescriptor> SupportedDiagnostics => ImmutableArray.Create(Rule);
 
