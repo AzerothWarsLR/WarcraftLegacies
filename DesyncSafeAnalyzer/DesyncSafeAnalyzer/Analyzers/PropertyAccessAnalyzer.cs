@@ -17,7 +17,7 @@ namespace DesyncSafeAnalyzer.Analyzers
     private static readonly DiagnosticDescriptor Rule = new DiagnosticDescriptor(
       DiagnosticId,
       "Do not modify properties from functions with the [DesyncSafe] attribute",
-      "DesyncSafe function {1} cannot modify synchronized property {0}",
+      "DesyncSafe function {0} cannot modify synchronized property {1}",
       Category,
       DiagnosticSeverity.Error,
       isEnabledByDefault: true);
@@ -57,7 +57,7 @@ namespace DesyncSafeAnalyzer.Analyzers
       if (desyncSafeAttribute == null)
         return;
 
-      var diagnostic = Diagnostic.Create(Rule, assignmentExpression.GetLocation());
+      var diagnostic = Diagnostic.Create(Rule, identifier.GetLocation(), containingMethod.Identifier, propertySymbol.Name);
       context.ReportDiagnostic(diagnostic);
     }
     
