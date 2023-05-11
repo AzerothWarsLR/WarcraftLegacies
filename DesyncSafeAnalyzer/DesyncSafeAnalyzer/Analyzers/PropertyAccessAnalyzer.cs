@@ -1,6 +1,6 @@
-﻿using System.Collections.Immutable;
+﻿using System.Collections.Generic;
+using System.Collections.Immutable;
 using System.Linq;
-using DesyncSafeAnalyzer.Attributes;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
@@ -11,73 +11,61 @@ namespace DesyncSafeAnalyzer.Analyzers
   [DiagnosticAnalyzer(LanguageNames.CSharp)]
   public sealed class PropertyAccessAnalyzer : DiagnosticAnalyzer
   {
-    private static readonly DiagnosticDescriptor NonDesynchronizableAccessRule = new DiagnosticDescriptor(
-      "ZB005",
-      "Property access may cause desynchronization",
-      "Functions marked with the [DesyncSafe] attribute cannot set properties that are not marked with the [Desynchronizable] attribute.",
-      "Usage",
-      DiagnosticSeverity.Error,
-      true);
-    
-    private static readonly DiagnosticDescriptor DesynchronizableAccessRule = new DiagnosticDescriptor(
-      "ZB006",
-      "Property access may cause desynchronization",
-      "Functions not marked with the [DesyncSafe] attribute cannot get properties that are marked with the [Desynchronizable] attribute.",
-      "Usage",
-      DiagnosticSeverity.Error,
-      true);
+    private const string DiagnosticId = "ZB005";
+    private const string Category = "Usage";
 
-    public override ImmutableArray<DiagnosticDescriptor> SupportedDiagnostics =>
-      ImmutableArray.Create(NonDesynchronizableAccessRule, DesynchronizableAccessRule);
+    private static readonly DiagnosticDescriptor Rule = new DiagnosticDescriptor(
+      DiagnosticId,
+      "Do not access or modify properties from functions with the [DesyncSafe] attribute",
+      "The property '{0}' should only be accessed or modified from functions marked with the DesyncSafe attribute",
+      Category,
+      DiagnosticSeverity.Error,
+      isEnabledByDefault: true,
+      description: "Avoid accessing or modifying properties from functions without DesyncSafe attribute.");
+
+    public override ImmutableArray<DiagnosticDescriptor> SupportedDiagnostics => ImmutableArray.Create(Rule);
 
     public override void Initialize(AnalysisContext context)
     {
       context.EnableConcurrentExecution();
       context.ConfigureGeneratedCodeAnalysis(GeneratedCodeAnalysisFlags.None);
-      context.RegisterSyntaxNodeAction(AnalyzeNonDesynchronizableAttribute, SyntaxKind.SimpleAssignmentExpression);
-      context.RegisterSyntaxNodeAction(AnalyzeDesynchronizableAttribute, SyntaxKind.SimpleMemberAccessExpression);
+      context.RegisterSyntaxNodeAction(AnalyzeNode, SyntaxKind.PropertyDeclaration);
     }
 
-    private static void AnalyzeNonDesynchronizableAttribute(SyntaxNodeAnalysisContext context)
+    private static void AnalyzeNode(SyntaxNodeAnalysisContext context)
     {
-      var assignment = (AssignmentExpressionSyntax)context.Node;
-      
-      if (!(context.SemanticModel.GetSymbolInfo(assignment.Left).Symbol is IPropertySymbol propertySymbol))
-        return;
-      
-      if (propertySymbol.GetAttributes().Any(ad => ad.AttributeClass.Name == nameof(DesynchronizableAttribute)))
-        return;
-      
-      if (!(context.ContainingSymbol is IMethodSymbol methodSymbol) || !methodSymbol.GetAttributes().Any(ad => ad.AttributeClass.Name == nameof(DesyncSafeAttribute)))
-        return;
-      
-      var diagnostic = Diagnostic.Create(NonDesynchronizableAccessRule, assignment.GetLocation());
-      context.ReportDiagnostic(diagnostic);
+      var propertyDeclaration = (PropertyDeclarationSyntax)context.Node;
+
+      var referencingMethods = GetReferencingMethods(propertyDeclaration, context.Compilation);
+      foreach (var referencingMethod in referencingMethods)
+      {
+        if (HasDesyncSafeAttribute(referencingMethod))
+          context.ReportDiagnostic(Diagnostic.Create(Rule, referencingMethod.Identifier.GetLocation(),
+            propertyDeclaration.Identifier));
+      }
     }
 
-    private static void AnalyzeDesynchronizableAttribute(SyntaxNodeAnalysisContext context)
+    private static bool HasDesyncSafeAttribute(MethodDeclarationSyntax methodDeclaration)
     {
-      if (!(context.Node is MemberAccessExpressionSyntax memberAccess))
-        return;
+      return methodDeclaration.AttributeLists
+        .SelectMany(list => list.Attributes)
+        .Any(attribute =>
+          attribute.Name.ToString() == "DesyncSafe");
+    }
 
-      if (!(memberAccess.Expression is IdentifierNameSyntax identifierName))
-        return;
-
-      if (!(context.SemanticModel.GetSymbolInfo(identifierName).Symbol is IPropertySymbol propertySymbol))
-        return;
-
-      if (!propertySymbol.GetAttributes().Any(attr => attr.AttributeClass?.Name == "DesynchronizableAttribute"))
-        return;
-
-      var enclosingMethod = memberAccess.Ancestors().OfType<MethodDeclarationSyntax>().FirstOrDefault();
-      if (enclosingMethod == null)
-        return;
-
-      if (enclosingMethod.AttributeLists.SelectMany(al => al.Attributes).Any(attr => attr.Name.ToString() == "DesyncSafeAttribute")) 
-        return;
+    private static IEnumerable<MethodDeclarationSyntax> GetReferencingMethods(PropertyDeclarationSyntax propertyDeclaration, Compilation compilation)
+    {
+      var symbol = compilation.GetSemanticModel(propertyDeclaration.SyntaxTree).GetDeclaredSymbol(propertyDeclaration);
+      if (symbol == null) 
+        return Enumerable.Empty<MethodDeclarationSyntax>();
       
-      var diagnostic = Diagnostic.Create(DesynchronizableAccessRule, memberAccess.GetLocation(), propertySymbol.Name);
-      context.ReportDiagnostic(diagnostic);
+      var referencingMethods = compilation.SyntaxTrees
+        .SelectMany(tree => tree.GetRoot().DescendantNodes().OfType<MethodDeclarationSyntax>())
+        .Where(method =>
+          method.Body != null && // Skip methods without a body
+          method.Body.DescendantNodes().OfType<IdentifierNameSyntax>().Any(identifier =>
+            SymbolEqualityComparer.Default.Equals(compilation.GetSemanticModel(method.SyntaxTree).GetSymbolInfo(identifier).Symbol, symbol)));
+      return referencingMethods;
     }
   }
 }

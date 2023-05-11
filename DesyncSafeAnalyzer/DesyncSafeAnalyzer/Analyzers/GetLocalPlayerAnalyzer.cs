@@ -12,8 +12,8 @@ namespace DesyncSafeAnalyzer.Analyzers
     private static readonly DiagnosticDescriptor Rule = new DiagnosticDescriptor(
       "ZB000",
       "Do not call GetLocalPlayer method",
-      "Do not use GetLocalPlayer; use UnsyncUtils.InvokeForClient instead.",
-      "Naming",
+      "Do not use GetLocalPlayer; use UnsyncUtils.InvokeForClient instead",
+      "Desynchronizations",
       DiagnosticSeverity.Error,
       true);
 

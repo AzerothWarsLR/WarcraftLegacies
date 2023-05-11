@@ -1,5 +1,6 @@
 ﻿using System.Collections.Immutable;
 using System.Linq;
+using DesyncSafeAnalyzer.Attributes;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
@@ -10,21 +11,19 @@ namespace DesyncSafeAnalyzer.Analyzers
   [DiagnosticAnalyzer(LanguageNames.CSharp)]
   public sealed class UnsafeFunctionParameterAnalyzer : DiagnosticAnalyzer
   {
-    private const string DesyncSafeAttributeName = "DesyncSafeAttribute";
-
     private static readonly DiagnosticDescriptor LambdaExpressionRule = new DiagnosticDescriptor(
       "ZB003",
       "Unsafe use of InvokeForClient",
-      "Lambda expressions passed to InvokeForClient can only call native desync-safe functions or custom functions marked with the [DesyncSafe] attribute.",
-      "Usage",
+      "Lambda expressions passed to InvokeForClient can only call native desync-safe functions or custom functions marked with the [DesyncSafe] attribute",
+      "Desynchronizations",
       DiagnosticSeverity.Error,
       true);
 
     private static readonly DiagnosticDescriptor ConcreteFunctionRule = new DiagnosticDescriptor(
       "ZB004",
       "Unsafe use of InvokeForClient",
-      "Concrete function passed to InvokeForClient must be marked with the [DesyncSafe] attribute.",
-      "Usage",
+      "Concrete function passed to InvokeForClient must be marked with the [DesyncSafe] attribute",
+      "Desynchronizations",
       DiagnosticSeverity.Error,
       true);
 
@@ -67,7 +66,7 @@ namespace DesyncSafeAnalyzer.Analyzers
         return;
       
       var desyncSafeAttribute =
-        actionMethod.GetAttributes().FirstOrDefault(attr => attr.AttributeClass.Name == DesyncSafeAttributeName);
+        actionMethod.GetAttributes().FirstOrDefault(attr => attr.AttributeClass.Name == nameof(DesyncSafeAttribute));
       if (desyncSafeAttribute != null)
         return;
 

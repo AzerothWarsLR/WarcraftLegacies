@@ -9,12 +9,10 @@ namespace DesyncSafeAnalyzer.Test
 {
   public sealed class PropertyAccessAnalyzerTests
   {
-    public sealed class UnsafeFunctionParameterAnalyzerTests
+    [Fact]
+    public async void SettingNormalPropertyFromDesyncSafeMethod_DiagnosesError()
     {
-      [Fact]
-      public async void SettingNormalPropertyFromDesyncSafeMethod_DiagnosesError()
-      {
-        const string sourceCode = @"
+      const string sourceCode = @"
 using System;
 
 class DesyncSafeAttribute : Attribute {}
@@ -31,61 +29,19 @@ class Program
 }
 ";
 
-        var analyzerTest = new CSharpAnalyzerTest<PropertyAccessAnalyzer, MSTestVerifier>
-        {
-          TestState =
-          {
-            Sources = { sourceCode }
-          }
-        };
-        analyzerTest.ExpectedDiagnostics.Add(new DiagnosticResult
-        (
-          "ZB005",
-          DiagnosticSeverity.Error
-        ).WithLocation(13, 9));
-        await analyzerTest.RunAsync();
-      }
-      
-      [Fact]
-      public async void GettingDesynchronizablePropertyFromNonDesyncSafeMethod_DiagnosesError()
+      var analyzerTest = new CSharpAnalyzerTest<PropertyAccessAnalyzer, MSTestVerifier>
       {
-        const string sourceCode = @"
-using System;
-
-class DesynchronizableAttribute : Attribute {}
-
-class Test { 
-  public int ExampleProperty { get; set; } = 0;
-}
-
-class Program
-{
-    [Desynchronizable]
-    public static int ExampleProperty { get; set; }
-
-    public static void Main()
-    {
-        var test = ExampleProperty;
-        var beans = new Test();
-        var x = beans.ExampleProperty;
-    }
-}
-";
-
-        var analyzerTest = new CSharpAnalyzerTest<PropertyAccessAnalyzer, MSTestVerifier>
+        TestState =
         {
-          TestState =
-          {
-            Sources = { sourceCode }
-          }
-        };
-        analyzerTest.ExpectedDiagnostics.Add(new DiagnosticResult
-        (
-          "ZB006",
-          DiagnosticSeverity.Error
-        ).WithLocation(13, 9));
-        await analyzerTest.RunAsync();
-      }
+          Sources = { sourceCode }
+        }
+      };
+      analyzerTest.ExpectedDiagnostics.Add(new DiagnosticResult
+      (
+        "ZB005",
+        DiagnosticSeverity.Error
+      ).WithLocation(11, 24));
+      await analyzerTest.RunAsync();
     }
   }
 }

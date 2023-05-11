@@ -11,9 +11,9 @@ namespace DesyncSafeAnalyzer.Analyzers
   [DiagnosticAnalyzer(LanguageNames.CSharp)]
   public sealed class DesyncSafeMethodRestrictionsAnalyzer : DiagnosticAnalyzer
   {
-    private const string Category = "Usage";
+    private const string Category = "Desynchronizations";
     private const string Title = "DesyncSafe functions restrictions";
-    private const string Message = "DesyncSafe functions can only call desync safe natives or other DesyncSafe functions.";
+    private const string Message = "DesyncSafe functions can only call desync safe natives or other DesyncSafe functions";
 
     private static readonly DiagnosticDescriptor Rule = new DiagnosticDescriptor(
       "ZB001",
