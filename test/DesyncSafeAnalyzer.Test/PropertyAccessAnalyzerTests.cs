@@ -43,7 +43,7 @@ class Program
       (
         "ZB005",
         DiagnosticSeverity.Error
-      ).WithLocation(16, 9));
+      ).WithLocation(16, 11));
       await analyzerTest.RunAsync();
     }
     
