@@ -1,4 +1,4 @@
-using MacroTools;
+﻿using MacroTools;
 using MacroTools.Extensions;
 using MacroTools.ResearchSystems;
 using static War3Api.Common;
@@ -48,12 +48,12 @@ namespace WarcraftLegacies.Source.Researches.Ironforge
       _tramToIronforge?
         .SetOwner(recipient)
         .SetWaygateDestination(Regions.Ironforge.Center)
-        .SetInvulnerable(true);
+        .SetInvulnerable(false);
 
       _tramToStormwind?
         .SetOwner(recipient)
         .SetWaygateDestination(Regions.Stormwind.Center)
-        .SetInvulnerable(true);
+        .SetInvulnerable(false);
       
       StormwindSetup.Stormwind?.SetObjectLevel(ResearchId, 1);
       IronforgeSetup.Ironforge?.SetObjectLevel(ResearchId, 1);

@@ -1,4 +1,4 @@
-using MacroTools.ControlPointSystem;
+﻿using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.Libraries;
@@ -56,7 +56,7 @@ namespace WarcraftLegacies.Source.Quests.Warsong
       CreateStructureForced(completingFaction.Player, FourCC("o02M"), -8065, 15788, -0.08624744f * MathEx.DegToRad, 128);
       CreateStructureForced(completingFaction.Player, FourCC("o028"), -7936, 16768, 4.712389f * MathEx.DegToRad, 128);
       CreateStructureForced(completingFaction.Player, FourCC("o02T"), -6752, 14880, 4.712389f * MathEx.DegToRad, 128);
-      CreateStructureForced(completingFaction.Player, FourCC("odes"), -8633, 15012, -1.101598f * MathEx.DegToRad, 128);
+      CreateStructureForced(completingFaction.Player, FourCC("h0AP"), -8633, 15012, -1.101598f * MathEx.DegToRad, 128);
       CreateStructureForced(completingFaction.Player, FourCC("o020"), -6976, 15552, 4.712389f * MathEx.DegToRad, 128);
       CreateStructureForced(completingFaction.Player, FourCC("n03E"), -8064, 15360, 4.712389f * MathEx.DegToRad, 128);
       CreateStructureForced(completingFaction.Player, FourCC("n03E"), -8320, 16000, 4.712389f * MathEx.DegToRad, 128);

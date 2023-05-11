@@ -15,19 +15,17 @@ namespace WarcraftLegacies.Source.Quests.Draenei
   /// </summary>
   public sealed class QuestRepairExodarHull : QuestData
   {
-    private readonly Capital _exodar;
     private readonly List<unit> _rescueUnits;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestRepairExodarHull"/> class.
     /// </summary>
-    public QuestRepairExodarHull(Rectangle rescueRect, Capital exodar, Capital exodarGenerator) : base("A New Home",
+    public QuestRepairExodarHull(Rectangle rescueRect, Capital exodar) : base("A New Home",
       "After the disastrous voyage through the Twisting Nether, the Exodar crash-landed on Azuremyst Isle. Its hull must be repaired in order to get inside.",
       "ReplaceableTextures\\CommandButtons\\BTNDraeneiVaultOfRelics.blp")
     {
-      _exodar = exodar;
       Required = true;
-      AddObjective(new ObjectiveUnitAlive(exodar.Unit));
+      AddObjective(new ObjectiveUpgrade(Constants.UNIT_O051_DIVINE_CITADEL_DRAENEI_T3, Constants.UNIT_O02P_CRYSTAL_HALL_DRAENEI_T1));
       AddObjective(new ObjectiveUnitReachesFullHealth(exodar.Unit));
       AddObjective(new ObjectiveKillAllInArea(new List<Rectangle> { Regions.AzuremystAmbient }, "on Azuremyst Isle"));
       AddObjective(new ObjectiveSelfExists());
@@ -53,7 +51,6 @@ namespace WarcraftLegacies.Source.Quests.Draenei
         whichFaction.Player.RescueGroup(_rescueUnits);
       else
         Player(PLAYER_NEUTRAL_AGGRESSIVE).RescueGroup(_rescueUnits);
-      SetUnitTimeScale(_exodar.Unit, 1);
     }
   }
 }

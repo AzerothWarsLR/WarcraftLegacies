@@ -1,10 +1,9 @@
 ﻿using MacroTools.Augments;
-using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 
 namespace TestMap.Source.Setup
 {
-   public static class AugmentSetup
+  public static class AugmentSetup
    {
       public static void Setup()
       {

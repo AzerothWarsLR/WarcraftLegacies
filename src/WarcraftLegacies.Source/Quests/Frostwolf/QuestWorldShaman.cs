@@ -1,9 +1,12 @@
-﻿using MacroTools.Extensions;
+﻿using MacroTools.ControlPointSystem;
+using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
+using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.Powers;
 using MacroTools.QuestSystem;
+using System.Collections.Generic;
 
 namespace WarcraftLegacies.Source.Quests.Frostwolf
 {
@@ -20,8 +23,19 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
       @"ReplaceableTextures\CommandButtons\BTN_Lightning_Orc.blp")
     {
       _thrall = thrall;
-      AddObjective(new ObjectiveLegendLevel(_thrall, 12));
-      AddObjective(new ObjectiveLegendInRect(_thrall, Regions.MaelstromAmbient, "the Maelstrom"));
+      var CPs = new List<ControlPoint>
+      {
+        ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N028_DROWNED_REACHES_10GOLD_MIN),
+        ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N02P_MAK_ARA_10GOLD_MIN),
+        ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N04B_GISHAN_CAVERNS_10GOLD_MIN),
+        ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N05Y_AZSUNA_15GOLD_MIN),
+        ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N032_SURAMAR_20GOLD_MIN),
+        ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N053_VAL_SHARAH_15GOLD_MIN),
+        ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N05Z_STORMHEIM_15GOLD_MIN),
+      };
+      AddObjective(new ObjectiveLegendLevel(_thrall, 8));
+      AddObjective(new ObjectiveChannelRect(Regions.MaelstromChannel, "the Maelstrom", _thrall, 120, 120, "Taming Maelstrom Power"));
+      AddObjective(new ObjectiveControlPoints(CPs, "The Broken Isles and the Maelstrom"));
     }
 
     /// <inheritdoc />
@@ -38,7 +52,7 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
       _thrall.Unit?.SetName("World-Shaman")
         .AddHeroAttributes(0, 10, 0)
         .AddExperience(2000);
-      completingFaction.AddPower(new MaelstromWeapon(0.05f, 100)
+      completingFaction.AddPower(new MaelstromWeapon(0.12f, 100)
       {
         Effect = @"Doodads\Cinematic\Lightningbolt\Lightningbolt",
         ValidUnitTypes = new[]

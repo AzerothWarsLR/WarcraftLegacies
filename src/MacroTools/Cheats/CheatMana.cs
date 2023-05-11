@@ -11,6 +11,9 @@ namespace MacroTools.Cheats
     public override string CommandText => "mana";
     
     /// <inheritdoc />
+    public override bool Exact => false;
+    
+    /// <inheritdoc />
     public override int MinimumParameterCount => 1;
     
     /// <inheritdoc />

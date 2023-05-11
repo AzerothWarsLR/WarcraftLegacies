@@ -25,15 +25,10 @@ namespace WarcraftLegacies.Source.Quests.Ironforge
       AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(FourCC("n014"))));
       AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(FourCC("n013"))));
       AddObjective(new ObjectiveUpgrade(FourCC("h07G"), FourCC("h07E")));
-      AddObjective(new ObjectiveExpire(1462));
+      AddObjective(new ObjectiveExpire(1462, Title));
       AddObjective(new ObjectiveSelfExists());
       ResearchId = FourCC("R043");
-      foreach (var unit in CreateGroup().EnumUnitsInRect(rescueRect).EmptyToList())
-        if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))
-        {
-          SetUnitInvulnerable(unit, true);
-          _rescueUnits.Add(unit);
-        }
+      _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable);
       Required = true;
     }
 

@@ -1,4 +1,6 @@
 ﻿using MacroTools;
+using MacroTools.PassiveAbilities;
+using MacroTools.PassiveAbilitySystem;
 using MacroTools.Spells.Slipstream;
 using MacroTools.SpellSystem;
 
@@ -21,6 +23,27 @@ namespace WarcraftLegacies.Source.Setup.Spells
         ClosingDelay = 10,
         Color = new Color(40, 40, 255, 255)
       });
+
+      PassiveAbilityManager.Register(new RestoreManaFromDamage(Constants.UNIT_H05Y_LORD_WIZARD_STORMWIND, Constants.ABILITY_A11N_ARCANE_ABSORPTION_KHADGAR)
+      {
+        ManaPerDamage = new LeveledAbilityField<float>
+        {
+          Base = 0.20f,
+          PerLevel = 0.20f
+        },
+        Effect = "Abilities\\Spells\\Undead\\ReplenishMana\\SpiritTouchTarget.mdl"
+      });
+
+      var legendaryWarrior = new ChannelSpellOnAttack(Constants.UNIT_H00R_KING_OF_STORMWIND_DARK_GREEN,
+        Constants.ABILITY_A12C_LEGENDARY_WARRIOR_VARIAN)
+      {
+        DummyAbilityId = Constants.ABILITY_A12D_LEGENDARY_WARRIOR_STORMWIND_DUMMY,
+        DummyOrderString = "voodoo",
+        ProcChance = 0.15f,
+        DurationBase = (int)0.5,
+        DurationLevel = (int)0.5
+      };
+      PassiveAbilityManager.Register(legendaryWarrior);
     }
   }
 }

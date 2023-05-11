@@ -1,4 +1,4 @@
-using MacroTools.Extensions;
+﻿using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using MacroTools.QuestSystem;
@@ -29,13 +29,13 @@ namespace MacroTools.ObjectiveSystem.Objectives.LegendBased
 
     internal override void OnAdd(Faction whichFaction)
     {
-      if (_target.Unit != null && IsPlayerOnSameTeamAsAnyEligibleFaction(_target.Unit.OwningPlayer()))
+      if (_target.Unit != null && IsPlayerOnSameTeamAsAnyEligibleFaction(_target.Unit.OwningPlayer()) is true)
         Progress = QuestProgress.Complete;
     }
 
     private void OnTargetChangeOwner(object? sender, LegendChangeOwnerEventArgs legendChangeOwnerEventArgs)
     {
-      if (_target.Unit != null && IsPlayerOnSameTeamAsAnyEligibleFaction(_target.Unit.OwningPlayer()))
+      if (_target.Unit != null && IsPlayerOnSameTeamAsAnyEligibleFaction(_target.Unit.OwningPlayer()) is true)
         Progress = QuestProgress.Complete;
       else
         Progress = _canFail ? QuestProgress.Failed : QuestProgress.Incomplete;
@@ -43,10 +43,19 @@ namespace MacroTools.ObjectiveSystem.Objectives.LegendBased
     
     private void OnFactionTeamJoin(object? sender, PlayerChangeTeamEventArgs playerChangeTeamEventArgs)
     {
-      if (_target.Unit != null && IsPlayerOnSameTeamAsAnyEligibleFaction(_target.Unit.OwningPlayer()))
+      var isOnSameTeam = IsPlayerOnSameTeamAsAnyEligibleFaction(_target.Unit.OwningPlayer());
+      if (_target.Unit != null && isOnSameTeam is true)
+      {
         Progress = QuestProgress.Complete;
+      }
+      else if (isOnSameTeam is null)
+      {
+        Progress = QuestProgress.Incomplete;
+      }
       else
+      {
         Progress = _canFail ? QuestProgress.Failed : QuestProgress.Incomplete;
+      }
     }
 
     private void OnTargetDeath(object? sender, Legend legend)

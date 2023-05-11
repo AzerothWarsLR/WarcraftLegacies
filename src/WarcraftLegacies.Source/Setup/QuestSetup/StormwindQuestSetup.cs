@@ -1,4 +1,4 @@
-using MacroTools;
+﻿using MacroTools;
 using WarcraftLegacies.Source.Quests.Stormwind;
 using WarcraftLegacies.Source.Setup.FactionSetup;
 using WCSharp.Shared.Data;
@@ -19,7 +19,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       stormwind.AddQuest(new QuestGoldshire(Regions.ElwinForestAmbient,
         preplacedUnitSystem.GetUnit(Constants.UNIT_N021_HOGGER)));
       stormwind.AddQuest(new QuestStormwindCity(Regions.StormwindUnlock));
-      stormwind.AddQuest(new QuestNethergarde(allLegendSetup.Stormwind.Varian));
+      stormwind.AddQuest(new QuestNethergarde(preplacedUnitSystem, allLegendSetup.Stormwind.Varian));
       stormwind.AddQuest(new QuestStromgarde(Regions.Stromgarde));
       stormwind.AddQuest(new QuestHonorHold(Regions.HonorHold, allLegendSetup.FelHorde.HellfireCitadel));
       stormwind.AddQuest(new QuestKhadgar(allLegendSetup.FelHorde.BlackTemple));

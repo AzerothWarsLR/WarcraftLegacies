@@ -1,4 +1,4 @@
-using MacroTools;
+﻿using MacroTools;
 using MacroTools.LegendSystem;
 using static War3Api.Common;
 #pragma warning disable CS1591
@@ -13,7 +13,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
     public LegendaryHero Maiev { get; }
     public LegendaryHero Tyrande { get; }
     public LegendaryHero Shandris { get; }
-    public LegendaryHero Jarod { get; }
+    public LegendaryHero Naisha { get; }
     public Capital Auberdine { get; }
     public Capital Feathermoon { get; }
     public Capital VaultOfTheWardens { get; }
@@ -23,35 +23,38 @@ namespace WarcraftLegacies.Source.Setup.Legends
     {
       Maiev = new LegendaryHero("Maiev Shadowsong")
       {
-        UnitType = FourCC("Ewrd")
+        UnitType = FourCC("Ewrd"),
+        StartingXp = 1800
       };
 
       Auberdine = new Capital
       {
-        Unit = preplacedUnitSystem.GetUnit(FourCC("e00J"))
+        Unit = preplacedUnitSystem.GetUnit(FourCC("e00J")),
+        Essential = true
       };
 
       Feathermoon = new Capital
       {
-        Unit = preplacedUnitSystem.GetUnit(FourCC("e00M"))
+        Unit = preplacedUnitSystem.GetUnit(FourCC("e00M")),
+        Essential = true
       };
 
       Tyrande = new LegendaryHero("Tyrande Whisperwind")
       {
         UnitType = FourCC("Etyr"),
-        PlayerColor = PLAYER_COLOR_CYAN
+        PlayerColor = PLAYER_COLOR_CYAN,
+      };
+
+      Naisha = new LegendaryHero("Naisha")
+      {
+        UnitType = FourCC("E025"),
+        PlayerColor = PLAYER_COLOR_PINK,
+        StartingXp = 1800
       };
 
       Shandris = new LegendaryHero("Shandris Feathermoon")
       {
         UnitType = FourCC("E002"),
-        StartingXp = 1000
-      };
-
-      Jarod = new LegendaryHero("Jarod Shadowsong")
-      {
-        UnitType = FourCC("O02E"),
-        StartingXp = 4000
       };
 
       VaultOfTheWardens = new Capital
@@ -70,7 +73,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
       LegendaryHeroManager.Register(Maiev);
       LegendaryHeroManager.Register(Tyrande);
       LegendaryHeroManager.Register(Shandris);
-      LegendaryHeroManager.Register(Jarod);
+      LegendaryHeroManager.Register(Naisha);
       CapitalManager.Register(Auberdine);
       CapitalManager.Register(Feathermoon);
       CapitalManager.Register(BlackrookHold);

@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
@@ -22,7 +22,7 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
     {
       AddObjective(new ObjectiveUnitIsDead(hogger)); //Hogger
       AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(FourCC("n00Z"))));
-      AddObjective(new ObjectiveExpire(1335));
+      AddObjective(new ObjectiveExpire(1335, Title));
       AddObjective(new ObjectiveSelfExists());
       foreach (var unit in CreateGroup().EnumUnitsInRect(rescueRect).EmptyToList())
         if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))

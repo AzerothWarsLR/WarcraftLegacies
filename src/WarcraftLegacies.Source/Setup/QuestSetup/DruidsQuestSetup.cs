@@ -1,4 +1,4 @@
-using MacroTools.QuestSystem;
+﻿using MacroTools.QuestSystem;
 using WarcraftLegacies.Source.Quests.Druids;
 
 namespace WarcraftLegacies.Source.Setup.QuestSetup
@@ -14,10 +14,12 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
     public static void Setup(ArtifactSetup artifactSetup, AllLegendSetup allLegendSetup)
     {
       var druids = FactionSetup.DruidsSetup.Druids;
-      var newQuest = druids.AddQuest(new QuestMalfurionAwakens(Regions.MoongladeVillage,
+      var newQuest = druids.AddQuest(new QuestMalfurionAwakens(Regions.MoongladeVillage, Regions.TeldrassilUnlock,
         allLegendSetup.Druids.Nordrassil.Unit, artifactSetup.HornOfCenarius,
         allLegendSetup.Druids.Malfurion));
       druids.StartingQuest = newQuest;
+      druids.AddQuest(new QuestShrineBase(Regions.ShrineBaseUnlock));
+      druids.AddQuest(new QuestRiseBase(Regions.RiseBaseUnlock));
       druids.AddQuest(new QuestAshenvale(Regions.AshenvaleUnlock, allLegendSetup.Druids.Malfurion));
       druids.AddQuest(new QuestDruidsKillFrostwolf(allLegendSetup.Frostwolf.ThunderBluff));
       druids.AddQuest(new QuestDruidsKillWarsong());

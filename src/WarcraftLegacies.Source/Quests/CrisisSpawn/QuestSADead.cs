@@ -1,0 +1,52 @@
+﻿using MacroTools.Extensions;
+using MacroTools.FactionSystem;
+using MacroTools.LegendSystem;
+using MacroTools.ObjectiveSystem.Objectives.FactionBased;
+using MacroTools.ObjectiveSystem.Objectives.LegendBased;
+using MacroTools.ObjectiveSystem.Objectives.MetaBased;
+using MacroTools.ObjectiveSystem.Objectives.TeamBased;
+using MacroTools.ObjectiveSystem.Objectives.TimeBased;
+using MacroTools.QuestSystem;
+using System;
+using WarcraftLegacies.Source.Setup;
+using static War3Api.Common;
+
+namespace WarcraftLegacies.Source.Quests.CrisisSpawn
+{
+  /// <summary>
+  /// With South Alliance destroyed, The Twilight Hammer can reveal themselves in the Highlands
+  /// </summary>
+  public sealed class QuestSADead : QuestData
+  {
+    /// <inheritdoc/>
+    protected override string RewardFlavour => "The South Alliance are defeated, a crisis can be picked in South Alliance";
+
+    /// <inheritdoc/>
+    protected override string RewardDescription => "The South Alliance crisis are available";
+
+    /// <summary>
+    /// Initializes a new instance of the <see cref="QuestSADead"/> class.
+    /// </summary>
+    public QuestSADead() : base("South Alliance is Defeated",
+      "With the South Alliance eliminated, The Twilight Highlands have a raise in activity",
+      "ReplaceableTextures\\CommandButtons\\BTNFountainOfLife.blp")
+    {
+      AddObjective(new ObjectiveTime(600));
+      AddObjective(new ObjectiveTeamControlPointAmountLessThan(TeamSetup.SouthAlliance, 10));
+      AddObjective(new ObjectiveEitherOf(
+  new ObjectiveTeamControlPointAmountGreaterThan(TeamSetup.Outland, 30),
+  new ObjectiveTeamDefeated(TeamSetup.SouthAlliance)));
+      ResearchId = Constants.UPGRADE_R09B_QUEST_COMPLETED_SOUTH_ALLIANCE_OR_ILLIDARI_DEFEATED;
+      Required = true;
+    }
+
+    protected override void OnComplete(Faction completingFaction)
+    {
+      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
+      {
+        Console.WriteLine("DEBUG: SA Dead quest ");
+        SetPlayerTechResearched(player, Constants.UPGRADE_R09D_TURN_25_HAS_PASSED_OR_OLD_GODS_ARE_PICKABLE, 1);
+      }
+    }
+  }
+}

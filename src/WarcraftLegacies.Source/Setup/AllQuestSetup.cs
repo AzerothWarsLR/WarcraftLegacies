@@ -11,19 +11,23 @@ namespace WarcraftLegacies.Source.Setup
       DalaranQuestSetup.Setup(preplacedUnitSystem, artifactSetup, allLegendSetup);
       DruidsQuestSetup.Setup(artifactSetup, allLegendSetup);
       FelHordeQuestSetup.Setup(preplacedUnitSystem, allLegendSetup);
-      FrostwolfQuestSetup.Setup(preplacedUnitSystem, allLegendSetup);
+      FrostwolfQuestSetup.Setup(preplacedUnitSystem, artifactSetup, allLegendSetup);
       IronforgeQuestSetup.Setup(preplacedUnitSystem, allLegendSetup);
       LegionQuestSetup.Setup(preplacedUnitSystem, allLegendSetup);
       LordaeronQuestSetup.Setup(preplacedUnitSystem, artifactSetup, allLegendSetup);
       ScourgeQuestSetup.Setup(preplacedUnitSystem, artifactSetup, allLegendSetup);
       SentinelsQuestSetup.Setup(artifactSetup, allLegendSetup);
       StormwindQuestSetup.Setup(preplacedUnitSystem, artifactSetup, allLegendSetup);
-      WarsongQuestSetup.Setup(preplacedUnitSystem, artifactSetup, allLegendSetup);
+      WarsongQuestSetup.Setup(preplacedUnitSystem, allLegendSetup);
       NagaQuestSetup.Setup(artifactSetup, allLegendSetup);
       KultirasQuestSetup.Setup(preplacedUnitSystem, allLegendSetup);
       GoblinQuestSetup.Setup(allLegendSetup);
       DraeneiQuestSetup.Setup(preplacedUnitSystem, allLegendSetup);
+      ZandalarQuestSetup.Setup(artifactSetup, preplacedUnitSystem, allLegendSetup);
+      SunfuryQuestSetup.Setup(artifactSetup, preplacedUnitSystem, allLegendSetup);
       SharedQuestSetup.Setup(preplacedUnitSystem, artifactSetup, allLegendSetup);
+      CrisisQuestSetup.Setup(preplacedUnitSystem, allLegendSetup);
+      
     }
   }
 }

@@ -1,7 +1,8 @@
-﻿using MacroTools.Spells;
+﻿using MacroTools.PassiveAbilities;
+using MacroTools.PassiveAbilitySystem;
+using MacroTools.Spells;
 using MacroTools.Spells.ExactJustice;
 using MacroTools.SpellSystem;
-using WarcraftLegacies.Source.Spells;
 
 namespace WarcraftLegacies.Source.Setup.Spells
 {
@@ -35,8 +36,6 @@ namespace WarcraftLegacies.Source.Setup.Spells
         EffectHealPath = @"Abilities\Spells\Human\Heal\HealTarget.mdl"
       };
       SpellSystem.Register(solarJudgement);
-      
-      SpellSystem.Register(new WeaponEmpowerment(Constants.ABILITY_A0JZ_WEAPON_EMPOWERMENT_PURPLE_ALEXANDROS_SPELL));
 
       var exactJustice = new ExactJusticeSpell(Constants.ABILITY_A097_EXACT_JUSTICE_PURPLE_UTHER)
       {
@@ -59,6 +58,15 @@ namespace WarcraftLegacies.Source.Setup.Spells
         }
       };
       SpellSystem.Register(exactJustice);
+
+      var willoftheAshbringer = new NoTargetSpellOnAttack(Constants.UNIT_H01J_THE_ASHBRINGER_LORDAERON,
+        Constants.ABILITY_A122_WILL_OF_THE_ASHBRINGER_MOGRAINE)
+      {
+        DummyAbilityId = Constants.ABILITY_A0KA_RESURRECTION_DUMMY_MOGRAINE,
+        DummyOrderString = "resurrection",
+        ProcChance = 0.2f
+      };
+      PassiveAbilityManager.Register(willoftheAshbringer);
     }
   }
 }

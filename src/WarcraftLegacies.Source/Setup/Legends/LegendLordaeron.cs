@@ -21,6 +21,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
     public Capital CapitalPalace { get; }
     public Capital Stratholme { get; }
     public Capital TyrsHand { get; }
+    public Capital Monastery { get; }
 
     /// <summary>
     /// Sets up all Lordaeron <see cref="Legend"/>s.
@@ -35,7 +36,8 @@ namespace WarcraftLegacies.Source.Setup.Legends
        .RegisterUnitEvent(Terenas.Unit, EVENT_UNIT_DEATH)
        .AddAction(() =>
        {
-         artifactSetup.CrownOfLordaeron.Item.SetPosition(Regions.King_Arthas_crown.Center);
+         if (artifactSetup.CrownOfLordaeron.OwningUnit == Terenas.Unit)
+           artifactSetup.CrownOfLordaeron.Item.SetPosition(Regions.King_Arthas_crown.Center);
        });
 
       Mograine = new LegendaryHero("Alexandros Mograine")
@@ -59,7 +61,8 @@ namespace WarcraftLegacies.Source.Setup.Legends
       CapitalPalace = new Capital
       {
         Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_H000_CAPITAL_PALACE_LORDAERON),
-        DeathMessage = "The capital city of Lordaeron has been razed, and King Terenas is dead."
+        DeathMessage = "The capital city of Lordaeron has been razed, and King Terenas is dead.",
+        Essential = true
       };
       CapitalPalace.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_H006_IMPROVED_GUARD_TOWER_LORDAERON_TOWER, new Point(8686, 8862)));
       CapitalPalace.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_H006_IMPROVED_GUARD_TOWER_LORDAERON_TOWER, new Point(9476, 8843)));
@@ -83,7 +86,8 @@ namespace WarcraftLegacies.Source.Setup.Legends
       Stratholme = new Capital
       {
         Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_H01G_STRATHOLME_CASTLE_LORDAERON_OTHER),
-        DeathMessage = "The majestic city of Stratholme has been destroyed."
+        DeathMessage = "The majestic city of Stratholme has been destroyed.",
+        Essential = true
       };
       Stratholme.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_H006_IMPROVED_GUARD_TOWER_LORDAERON_TOWER, new Point(14067, 12242)));
       Stratholme.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_H006_IMPROVED_GUARD_TOWER_LORDAERON_TOWER, new Point(14553, 11593)));
@@ -92,7 +96,8 @@ namespace WarcraftLegacies.Source.Setup.Legends
       TyrsHand = new Capital
       {
         Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_H030_TYR_S_HAND_CITADEL_LORDAERON_OTHER),
-        DeathMessage = "Tyr's Hand, the bastion of human power in Lordaeron, has fallen."
+        DeathMessage = "Tyr's Hand, the bastion of human power in Lordaeron, has fallen.",
+        Essential = true
       };
       TyrsHand.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_HCTW_CANNON_TOWER_LORDAERON_TOWER, new Point(20652, 8057)));
       TyrsHand.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_H007_IMPROVED_CANNON_TOWER_LORDAERON_TOWER, new Point(20024, 8123)));
@@ -104,15 +109,23 @@ namespace WarcraftLegacies.Source.Setup.Legends
         DeathMessage =
           "Uther the Lightbringer makes his last stand, perishing in the defense of the light. Lordaeron, and humanity itself, has lost one of its finest exemplars in this dark hour.",
         PlayerColor = PLAYER_COLOR_LIGHT_BLUE,
-        StartingXp = 1000
+        StartingXp = 2800
       };
 
       Arthas = new LegendaryHero("Arthas Menethil")
       {
         UnitType = Constants.UNIT_HART_CROWN_PRINCE_OF_LORDAERON_LORDAERON
       };
+
+      Monastery = new Capital
+      {
+        Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_H00T_SCARLET_MONASTERY_SCARLET_LORDAERON),
+        Capturable = true
+      };
     }
-    
+
+
+
     public void RegisterLegends()
     {
       LegendaryHeroManager.Register(Terenas);
@@ -124,6 +137,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
       CapitalManager.Register(CapitalPalace);
       CapitalManager.Register(Stratholme);
       CapitalManager.Register(TyrsHand);
+      CapitalManager.Register(Monastery);
     }
   }
 }

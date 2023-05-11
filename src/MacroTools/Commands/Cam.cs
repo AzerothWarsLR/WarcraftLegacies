@@ -1,7 +1,6 @@
 ﻿using System;
 using MacroTools.CommandSystem;
 using MacroTools.Extensions;
-using MacroTools.FactionSystem;
 using static War3Api.Common;
 
 namespace MacroTools.Commands
@@ -13,6 +12,9 @@ namespace MacroTools.Commands
   {
     /// <inheritdoc />
     public override string CommandText => "cam";
+    
+    /// <inheritdoc />
+    public override bool Exact => false;
   
     /// <inheritdoc />
     public override int MinimumParameterCount => 1;

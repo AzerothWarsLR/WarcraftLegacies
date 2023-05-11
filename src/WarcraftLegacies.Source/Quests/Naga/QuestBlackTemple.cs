@@ -27,7 +27,7 @@ namespace WarcraftLegacies.Source.Quests.Naga
       "ReplaceableTextures\\CommandButtons\\BTNWarpPortal.blp")
     {
       AddObjective(new ObjectiveLegendInRect(illidan, Regions.IllidanBlackTempleUnlock, "Black Temple"));
-      AddObjective(new ObjectiveExpire(1250));
+      AddObjective(new ObjectiveExpire(1250, Title));
       AddObjective(new ObjectiveSelfExists());
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
       Required = true;

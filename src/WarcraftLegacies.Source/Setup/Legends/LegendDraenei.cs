@@ -9,6 +9,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
   {
     public LegendaryHero Velen { get; }
     public LegendaryHero Maraad { get; }
+    public LegendaryHero Adal { get; }
     public LegendaryHero LegendNobundo { get; }
     public Capital LegendExodar { get; }
     public Capital LegendExodarGenerator { get; }
@@ -23,12 +24,12 @@ namespace WarcraftLegacies.Source.Setup.Legends
       LegendNobundo = new LegendaryHero("Nobundo")
       {
         UnitType = Constants.UNIT_E01J_HIGH_SHAMAN_DRUIDS,
-        StartingXp = 1800
       };
 
       LegendExodar = new Capital
       {
-        Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_E01X_EXODAR_REGALIS_DRAENEI_SPACESHIP)
+        Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_E01X_EXODAR_REGALIS_DRAENEI_SPACESHIP),
+        Essential = true
       };
 
       LegendExodarGenerator = new Capital
@@ -38,7 +39,15 @@ namespace WarcraftLegacies.Source.Setup.Legends
 
       Maraad = new LegendaryHero("Maraad")
       {
-        UnitType = FourCC("H09S")
+        UnitType = FourCC("H09S"),
+        StartingXp = 1000
+      };
+
+      Adal = new LegendaryHero("A'dal")
+      {
+        UnitType = FourCC("H09M"),
+        PlayerColor = PLAYER_COLOR_BLUE,
+        StartingXp = 10800
       };
 
       Velen = new LegendaryHero("Velen")
@@ -66,6 +75,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
     {
       LegendaryHeroManager.Register(Velen);
       LegendaryHeroManager.Register(Maraad);
+      LegendaryHeroManager.Register(Adal);
       LegendaryHeroManager.Register(LegendNobundo);
       CapitalManager.Register(LegendExodar);
       CapitalManager.Register(LegendExodarGenerator);

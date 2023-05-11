@@ -1,4 +1,4 @@
-using MacroTools.ShoreSystem;
+﻿using MacroTools.ShoreSystem;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Setup
@@ -22,7 +22,7 @@ namespace WarcraftLegacies.Source.Setup
       ShoreManager.Register(new Shore(new Point(-8139, -2722), "Durotar"));
       ShoreManager.Register(new Shore(new Point(-7733, 3702), "Azshara Coast"));
       ShoreManager.Register(new Shore(new Point(-18333, 5412), "South of Darkshore"));
-      ShoreManager.Register(new Shore(new Point(-19550, -12319), "Silithus"));
+      ShoreManager.Register(new Shore(new Point(-19415, -12319), "Silithus"));
 
       ShoreManager.Register(new Shore(new Point(-5335, -7333), "Alcaz Isle"));
       ShoreManager.Register(new Shore(new Point(307, -1955), "Maelstrom"));

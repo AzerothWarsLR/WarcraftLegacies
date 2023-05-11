@@ -14,8 +14,9 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
     {
       var dalaran = DalaranSetup.Dalaran;
 
-      QuestNewGuardian newGuardian = new(artifactSetup.BookOfMedivh, allLegendSetup.Dalaran.Jaina);
-      QuestTheNexus theNexus = new(allLegendSetup.Dalaran.Jaina, allLegendSetup.Scourge.TheFrozenThrone, allLegendSetup.Neutral.TheNexus);
+      QuestNewGuardian newGuardian = new(artifactSetup.BookOfMedivh, allLegendSetup.Dalaran.Jaina, allLegendSetup.Dalaran.Dalaran
+        );
+      QuestTheNexus theNexus = new(allLegendSetup.Dalaran.Jaina, allLegendSetup.Scourge.TheFrozenThrone, allLegendSetup.Neutral.TheNexus, allLegendSetup.Dalaran.Dalaran);
       QuestCrystalGolem crystalGolem = new(allLegendSetup.Neutral.DraktharonKeep);
       QuestFallenGuardian fallenGuardian = new(allLegendSetup.Neutral.Karazhan);
 
@@ -40,8 +41,11 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       dalaran.AddQuest(new QuestBlueDragons(allLegendSetup.Neutral.TheNexus));
       dalaran.AddQuest(new QuestKarazhan(allLegendSetup.Neutral.Karazhan));
 
+      dalaran.AddQuest(new QuestTheramore(allLegendSetup.Dalaran.Dalaran, Regions.Theramore));
+
       dalaran.AddQuest(crystalGolem);
       dalaran.AddQuest(fallenGuardian);
+      dalaran.AddQuest(new QuestAegwynn(allLegendSetup.Dalaran.Jaina, allLegendSetup.Dalaran.Antonidas));
       dalaran.AddQuest(newGuardian);
       dalaran.AddQuest(theNexus);
     }

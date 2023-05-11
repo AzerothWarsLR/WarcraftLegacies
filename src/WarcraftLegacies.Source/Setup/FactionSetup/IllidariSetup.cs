@@ -9,20 +9,21 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
     
     public static void Setup()
     {
-      Illidari = new Faction("Illidan", PLAYER_COLOR_VIOLET, "|cffff00ff",
+      Illidari = new Faction(FactionNames.Illidan, PLAYER_COLOR_VIOLET, "|cffff00ff",
         "ReplaceableTextures\\CommandButtons\\BTNEvilIllidan.blp")
       {
         UndefeatedResearch = FourCC("R02L"),
         StartingGold = 200,
-        StartingLumber = 500,
+        StartingLumber = 700,
+        FoodMaximum = 250,
         ControlPointDefenderUnitTypeId = Constants.UNIT_N0BB_CONTROL_POINT_DEFENDER_ILLIDARI_TOWER,
         IntroText = @"You are playing as the Betrayer, Illidan|r|r.
 
 You begin on the Broken Isles, ready to plunder the tombs for artifacts to empower Illidan.
 
-Unfortunately, you cannot progress further in the Islands. Use Illidan's mastery of portals to travel to Outland push with your fel allu
+Unfortunately, you cannot progress further in the Islands. Use Illidan's mastery of portals to travel to Outland and join forces with your ally.
 
-Support your ally in Outland by unlocking bases and coordinating with his push out of the Dark Portal"
+Support your ally in Outland by unlocking bases and coordinating with his push out of the Dark Portal."
       };
 
       Illidari.ModObjectLimit(FourCC("nntt"), Faction.UNLIMITED); //Pillar of Waves

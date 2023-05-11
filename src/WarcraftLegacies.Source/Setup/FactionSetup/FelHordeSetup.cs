@@ -12,12 +12,12 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
 
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
-      FelHorde = new Faction("Fel Horde", PLAYER_COLOR_GREEN, "|c0020c000",
+      FelHorde = new Faction(FactionNames.FelHorde, PLAYER_COLOR_GREEN, "|c0020c000",
         "ReplaceableTextures\\CommandButtons\\BTNPitLord.blp")
       {
         UndefeatedResearch = FourCC("R05L"),
         StartingGold = 200,
-        StartingLumber = 500,
+        StartingLumber = 700,
         CinematicMusic = "Doom",
         ControlPointDefenderUnitTypeId = Constants.UNIT_N0AA_CONTROL_POINT_DEFENDER_FEL_HORDE,
         IntroText = @"You are playing as the bloodthirsty Fel Horde.
@@ -71,7 +71,6 @@ The Alliance is gathering outside the Dark Portal to stop you, so prepare to for
       FelHorde.ModObjectLimit(FourCC("h0AO"), 6); //Bombard
 
       FelHorde.ModObjectLimit(FourCC("n05T"), 1); //Kazzak
-      FelHorde.ModObjectLimit(FourCC("n064"), 1); //Voone
       FelHorde.ModObjectLimit(FourCC("n08A"), 1); //neltharaktu
       FelHorde.ModObjectLimit(FourCC("N03D"), 1); //Kargath
       FelHorde.ModObjectLimit(FourCC("Nbbc"), 1); //Rend

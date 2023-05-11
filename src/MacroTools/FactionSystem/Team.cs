@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
+using MacroTools.LegendSystem;
 using static War3Api.Common;
 
 namespace MacroTools.FactionSystem
@@ -19,18 +21,18 @@ namespace MacroTools.FactionSystem
       Name = name;
     }
 
-    public int ControlPointCount
-    {
+    /// <summary>
+    /// Control points the team own
+    /// </summary>
+    public List<ControlPoint> ControlPoints {
       get
       {
-        var total = 0;
-        foreach (var player in _members)
-          total += player.GetControlPointCount();
-
-        return total;
+        var tempList = new List<ControlPoint>();
+        _members.ForEach(x=> tempList.AddRange(x.GetControlPoints()));
+        return tempList;
       }
     }
-
+    
     public string Name { get; }
 
     /// <summary>
@@ -47,6 +49,7 @@ namespace MacroTools.FactionSystem
     ///   Music that plays when this <see cref="Team" /> wins the game.
     /// </summary>
     public string? VictoryMusic { get; init; }
+    
 
     /// <summary>
     ///   Creates a <see cref="force" /> containing all <see cref="player" />s within this <see cref="Team" />.
@@ -167,6 +170,23 @@ namespace MacroTools.FactionSystem
     public bool Contains(player whichPlayer)
     {
       return _members.Contains(whichPlayer);
+    }
+    
+    
+    /// <summary>
+    ///   Checks whether or not any <see cref="player" />'s faction in the <see cref="Team" /> has an Essential <see cref="Legend" />.
+    /// </summary>
+    /// <returns></returns>
+    public bool DoesTeamHaveEssentialLegend()
+    {
+      foreach (var player in _members)
+      {
+        if (player.GetFaction()!.HasEssentialLegend)
+        {
+          return true;
+        }
+      }
+      return false;
     }
   }
 }

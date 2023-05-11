@@ -1,16 +1,17 @@
-﻿using MacroTools.FactionSystem;
+﻿using MacroTools.ArtifactSystem;
+using MacroTools.FactionSystem;
 using MacroTools.Frames;
 using static War3Api.Common;
 
 namespace MacroTools.BookSystem.Powers
 {
-  public sealed class PowerCard : Card
+  public class PowerCard : Card
   {
     private const float BoxWidth = 0.32f;
     private const float BoxHeight = 0.092f;
     private readonly Power _power;
     private readonly TextFrame _textFrame;
-
+    private readonly Button _actionButton;
     public PowerCard(Power power, Frame parent) : base(parent, BoxWidth, BoxHeight)
     {
       _power = power;
@@ -40,6 +41,17 @@ namespace MacroTools.BookSystem.Powers
       _textFrame.SetPoint(FRAMEPOINT_BOTTOMLEFT, icon, FRAMEPOINT_BOTTOMRIGHT, 0.007f, 0);
       _textFrame.SetPoint(FRAMEPOINT_RIGHT, this, FRAMEPOINT_RIGHT, -0.007f, 0);
       AddFrame(_textFrame);
+
+      _actionButton = new Button("ScriptDialogButton", this, 0)
+      {
+        Width = 0.062f,
+        Height = 0.027f,
+        Text = "Use",
+        Visible = power.Usable,
+        OnClick = power.OnUse
+      };
+      _actionButton.SetPoint(FRAMEPOINT_BOTTOMRIGHT, this, FRAMEPOINT_BOTTOMRIGHT, -0.01f, 0.002f);
+      AddFrame(_actionButton);
 
       power.DescriptionChanged += OnPowerDescriptionChanged;
     }

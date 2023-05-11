@@ -34,7 +34,7 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
       AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N018_DURNHOLDE_15GOLD_MIN)));
       AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N01I_CAER_DARROW_15GOLD_MIN)));
       AddObjective(new ObjectiveUpgrade(Constants.UNIT_H068_OBSERVATORY_DALARAN_T3, Constants.UNIT_H065_REFUGE_DALARAN_T1));
-      AddObjective(new ObjectiveExpire(1445));
+      AddObjective(new ObjectiveExpire(1445, Title));
       AddObjective(new ObjectiveSelfExists());
       ResearchId = Constants.UPGRADE_R038_QUEST_COMPLETED_OUTSKIRTS;
 
@@ -50,7 +50,7 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
-      "Control of all units in Dalaran and enables Antonidas to be trained at the Altar";
+      "Control of all units in Dalaran, enables Antonidas to be trained at the Altar and you can now build Refuges";
 
     /// <inheritdoc/>
     protected override void OnFail(Faction completingFaction) => 

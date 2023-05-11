@@ -25,23 +25,17 @@ namespace WarcraftLegacies.Source.Quests.Warsong
       AddObjective(
         new ObjectiveUnitIsDead(preplacedUnitSystem.GetUnit(FourCC("nrzm"), rescueRect.Center))); //Razorman Medicine Man
       AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N01T_NORTHERN_BARRENS_15GOLD_MIN)));
-      AddObjective(new ObjectiveExpire(1460));
+      AddObjective(new ObjectiveExpire(1460, Title));
       AddObjective(new ObjectiveSelfExists());
       Required = true;
-
-      foreach (var unit in CreateGroup().EnumUnitsInRect(rescueRect).EmptyToList())
-        if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))
-        {
-          SetUnitInvulnerable(unit, true);
-          _rescueUnits.Add(unit);
-        }
+      _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
     }
 
     /// <inheritdoc/>
-    protected override string RewardFlavour => "The Crossroads have been constructed and the surrounding land has been harvested for wood.";
+    protected override string RewardFlavour => "The Crossroads have been constructed";
 
     /// <inheritdoc/>
-    protected override string RewardDescription => "Control of the Crossroads, +2000 Lumber";
+    protected override string RewardDescription => "Control of the Crossroads";
 
     private void GiveCrossroads(player whichPlayer)
     {
@@ -50,7 +44,6 @@ namespace WarcraftLegacies.Source.Quests.Warsong
       CreateUnit(whichPlayer, wardId, -12844, -1975, 0);
       CreateUnit(whichPlayer, wardId, -10876, -2066, 0);
       CreateUnit(whichPlayer, wardId, -11922, -824, 0);
-      whichPlayer.AdjustPlayerState(PLAYER_STATE_RESOURCE_LUMBER, 2000);
     }
 
     /// <inheritdoc/>

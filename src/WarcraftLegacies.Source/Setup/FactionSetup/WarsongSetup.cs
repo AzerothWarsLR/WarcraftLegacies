@@ -8,15 +8,15 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
   public static class WarsongSetup
   {
     public static Faction? WarsongClan { get; private set; }
-    
+
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
-      WarsongClan = new Faction("Warsong", PLAYER_COLOR_ORANGE, "|c00ff8000",
+      WarsongClan = new Faction(FactionNames.Warsong, PLAYER_COLOR_ORANGE, "|c00ff8000",
         "ReplaceableTextures\\CommandButtons\\BTNHellScream.blp")
       {
         UndefeatedResearch = FourCC("R05W"),
         StartingGold = 200,
-        StartingLumber = 500,
+        StartingLumber = 700,
         CinematicMusic = "DarkAgents",
         ControlPointDefenderUnitTypeId = Constants.UNIT_N0D6_CONTROL_POINT_DEFENDER_WARSONG,
         IntroText = @"You are playing as the brutal |cffd45e19Warsong clan|r.
@@ -69,7 +69,7 @@ The Night Elves are aware of your presence and are gathering a mighty host again
 
       WarsongClan.ModObjectLimit(FourCC("Ogrh"), 1); //Grom
       WarsongClan.ModObjectLimit(FourCC("Obla"), 1); //Varok
-      WarsongClan.ModObjectLimit(FourCC("O05O"), 1); //Varok
+      WarsongClan.ModObjectLimit(FourCC("O06L"), 1); //Garrosh
       WarsongClan.ModObjectLimit(FourCC("n0CN"), 1); //Gibbs
 
       WarsongClan.ModObjectLimit(FourCC("Robs"), Faction.UNLIMITED); //Berserker Strength
@@ -92,9 +92,9 @@ The Night Elves are aware of your presence and are gathering a mighty host again
       WarsongClan.ModAbilityAvailability(Constants.ABILITY_ANTR_TROLL_REGENERATION_PINK_WITCH_DOCTOR_TROLL_HEADHUNTER_TROLL_BATRIDER_DARKSPEAR_WARLORD_TROLL_BERSERKER_ICON, -1);
       WarsongClan.ModAbilityAvailability(Constants.ABILITY_ABTL_BATTLE_STATIONS_FROSTWOLF_WARSONG_BURROW, 1);
       WarsongClan.ModAbilityAvailability(Constants.ABILITY_A0M4_BATTLE_STATIONS_PINK_GREY_ORC_BURROW_BLOODPACT, -1);
-      
-      WarsongClan.AddGoldMine(preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-9755, 2277)));
-      
+
+      WarsongClan.AddGoldMine(preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-8455, -2777)));
+
       FactionManager.Register(WarsongClan);
     }
   }

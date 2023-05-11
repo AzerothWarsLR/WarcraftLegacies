@@ -1,7 +1,6 @@
 ﻿using MacroTools;
 using MacroTools.LegendSystem;
 using WCSharp.Shared.Data;
-#pragma warning disable CS1591
 
 namespace WarcraftLegacies.Source.Setup.Legends
 {
@@ -28,12 +27,11 @@ namespace WarcraftLegacies.Source.Setup.Legends
           Constants.ITEM_I00D_SHALAMAYNE
         }
       };
-      Varian.AddUnitDependency(preplacedUnitSystem.GetUnit(Constants.UNIT_H00X_STORMWIND_KEEP_STORMWIND_OTHER));
 
       Galen = new LegendaryHero("Galen Trollbane")
       {
         UnitType = Constants.UNIT_H00Z_CROWN_PRINCE_OF_STROMGARDE_STORMWIND,
-        StartingXp = 1000,
+        StartingXp = 7000,
         StartingArtifactItemTypeIds = new[] { Constants.ITEM_I01O_TROL_KALAR }
       };
 
@@ -51,7 +49,8 @@ namespace WarcraftLegacies.Source.Setup.Legends
       StormwindKeep = new Capital
       {
         Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_H00X_STORMWIND_KEEP_STORMWIND_OTHER),
-        DeathMessage = "Stormwind Keep, the capitol of the nation of Stormwind, has been destroyed!"
+        DeathMessage = "Stormwind Keep, the capitol of the nation of Stormwind, has been destroyed!",
+        Essential = true
       };
       StormwindKeep.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_H070_IMPROVED_GUARD_TOWER_STORMWIND_TOWER, new Point(9530, -10941)));
       StormwindKeep.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_H070_IMPROVED_GUARD_TOWER_STORMWIND_TOWER, new Point(10177, -10952)));

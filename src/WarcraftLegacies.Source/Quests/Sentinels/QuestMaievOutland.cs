@@ -15,7 +15,7 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
     private readonly LegendaryHero _maiev;
     private readonly Capital _vaultOfTheWardens;
     private readonly List<unit> _rescueUnits = new();
-    
+
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestMaievOutland"/> class
     /// </summary>
@@ -28,13 +28,7 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
       AddObjective(new ObjectiveCastSpell(Constants.ABILITY_A0J5_CHASE_ILLIDAN_TO_OUTLAND_SENTINEL, true));
       AddObjective(new ObjectiveControlLegend(maiev, true));
       AddObjective(new ObjectiveControlCapital(vaultOfTheWardens, true));
-
-      foreach (var unit in CreateGroup().EnumUnitsInRect(rescueRect).EmptyToList())
-      {
-        SetUnitInvulnerable(unit, true);
-        ShowUnit(unit, false);
-        _rescueUnits.Add(unit);
-      }
+      _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
       Required = true;
     }
 
@@ -43,13 +37,20 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
 
     /// <inheritdoc/>
     protected override string RewardFlavour => "Maiev's Outland outpost have been constructed.";
-    
+
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
     {
       _maiev.Unit?.SetPosition(new Point(-5252, -27597));
       _vaultOfTheWardens.Unit?.RemoveAbility(Constants.ABILITY_A0J5_CHASE_ILLIDAN_TO_OUTLAND_SENTINEL);
-      foreach (var unit in _rescueUnits) unit.Rescue(completingFaction.Player);
+      completingFaction?.Player.RescueGroup(_rescueUnits);
+    }
+
+    /// <inheritdoc/>
+    protected override void OnFail(Faction completingFaction)
+    {
+      _vaultOfTheWardens.Unit?.RemoveAbility(Constants.ABILITY_A0J5_CHASE_ILLIDAN_TO_OUTLAND_SENTINEL);
+      Player(PLAYER_NEUTRAL_AGGRESSIVE).RescueGroup(_rescueUnits);
     }
   }
 }

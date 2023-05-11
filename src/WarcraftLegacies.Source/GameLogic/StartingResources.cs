@@ -1,4 +1,4 @@
-using MacroTools.Extensions;
+﻿using MacroTools.Extensions;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.GameLogic
@@ -14,7 +14,7 @@ namespace WarcraftLegacies.Source.GameLogic
     public static void Setup()
     {
       var trig = CreateTrigger();
-      TriggerRegisterTimerEvent(trig, 60, false);
+      TriggerRegisterTimerEvent(trig, 58, false);
       TriggerAddAction(trig, () =>
       {
         foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())

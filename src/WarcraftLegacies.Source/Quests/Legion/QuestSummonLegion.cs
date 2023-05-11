@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
@@ -42,12 +42,13 @@ namespace WarcraftLegacies.Source.Quests.Legion
 
     /// <inheritdoc />
     protected override string RewardDescription =>
-      "The hero Archimonde, control of all units in the Twisting Nether, learn to train Greater Demons, and 1000 gold";
+      "The hero Archimonde, control of all units in the Twisting Nether, learn to train Greater Demons, and can now build more Nether Pit and Summoning Circle";
 
     /// <inheritdoc />
     protected override void OnComplete(Faction whichFaction)
     {
-      whichFaction.Gold += 1000;
+      whichFaction.ModObjectLimit(FourCC("u006"), 12); //Summoning Circle
+      whichFaction.ModObjectLimit(FourCC("n04Q"), 12); //Nether Pit
       foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
         SetPlayerAbilityAvailable(player, Constants.ABILITY_A00J_SUMMON_THE_BURNING_LEGION_ALL_FACTIONS, false);
       if (whichFaction.Player != null)

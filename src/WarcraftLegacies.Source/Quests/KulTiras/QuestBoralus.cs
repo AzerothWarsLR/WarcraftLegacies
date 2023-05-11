@@ -10,6 +10,8 @@ using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.Powers;
+using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
+using MacroTools.ControlPointSystem;
 
 namespace WarcraftLegacies.Source.Quests.KulTiras
 {
@@ -26,17 +28,18 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
     /// </summary>
     /// <param name="preplacedUnitSystem">A system which can be used to find preplaced units.</param>
     /// <param name="rescueRect">All units in this area will be made neutral, then rescued when the quest is completed or made aggressive when the quest is failed.</param>
-    public QuestBoralus(Rectangle rescueRect, PreplacedUnitSystem preplacedUnitSystem) : base("The City at Sea",
-      "Proudmoore is stranded at sea. Rejoin Boralus to take control of the city.",
+    public QuestBoralus(Rectangle rescueRect, PreplacedUnitSystem preplacedUnitSystem) : base("The Admiralty of Kul Tiras",
+      "Kul Tiras has degenerated severely in contemporary times. Bandits and vile monsters threaten the islands and the noble houses have split apart. We must quell these threats and reunite the kingdom's various regions under Daelin Proudmoore's command.",
       "ReplaceableTextures\\CommandButtons\\BTNHumanShipyard.blp")
     {
-      AddObjective(new ObjectiveResearch(Constants.UPGRADE_R04R_FORTIFIED_HULLS_UNIVERSAL_UPGRADE, Constants.UNIT_H06I_CASTLE_KUL_TIRAS_T3));
       AddObjective(new ObjectiveUpgrade(Constants.UNIT_H06I_CASTLE_KUL_TIRAS_T3, Constants.UNIT_H062_TOWN_HALL_KUL_TIRAS_T1));
-      AddObjective(new ObjectiveExpire(900));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N0BX_TIRAGARDE_SOUND_10GOLD_MIN)));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N0BW_STORMSONG_VALLEY_10GOLD_MIN)));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N0BV_DRUSTVAR_10GOLD_MIN)));
+      AddObjective(new ObjectiveExpire(900, Title));
       AddObjective(new ObjectiveSelfExists());
       ResearchId = Constants.UPGRADE_R00L_QUEST_COMPLETED_THE_CITY_AT_SEA_KUL_TIRAS;
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
-      _rescueUnits.Remove(preplacedUnitSystem.GetUnit(Constants.UNIT_H05V_PROUDMOORE_FLAGSHIP_KUL_TIRAS)); // Proudmoore Capital Ship is not supposed to be rescued on this quest
       Required = true;
     }
 

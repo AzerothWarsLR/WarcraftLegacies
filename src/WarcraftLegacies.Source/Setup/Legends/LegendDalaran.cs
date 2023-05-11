@@ -15,7 +15,9 @@ namespace WarcraftLegacies.Source.Setup.Legends
     public LegendaryHero Medivh { get; }
     public LegendaryHero Jaina { get; }
     public LegendaryHero Kalecgos { get; }
+    public LegendaryHero Aegwynn { get; }
     public Capital Dalaran { get; }
+    public Capital Shadowfang { get; }
 
     /// <summary>
     /// Sets up all Dalaran <see cref="Legend"/>s.
@@ -39,11 +41,18 @@ namespace WarcraftLegacies.Source.Setup.Legends
         StartingXp = 9800
       };
 
+      Aegwynn = new LegendaryHero("Aegwynn")
+      {
+        UnitType = FourCC("H09N"),
+        StartingXp = 9800
+      };
+
       Dalaran = new Capital
       {
         Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_H002_THE_VIOLET_CITADEL_DALARAN_OTHER),
         DeathMessage =
-          "The Violet Citadel, the ultimate bastion of arcane knowledge in the Eastern Kingdoms, crumbles like a sand castle."
+          "The Violet Citadel, the ultimate bastion of arcane knowledge in the Eastern Kingdoms, crumbles like a sand castle.",
+        Essential = true
       };
       Dalaran.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_N03G_VIOLET_TOWER, new Point(9084, 4979)));
       Dalaran.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_N03G_VIOLET_TOWER, new Point(9008, 4092)));
@@ -56,7 +65,12 @@ namespace WarcraftLegacies.Source.Setup.Legends
         DeathMessage =
           "Archmage Antonidas has been cut down, his vast knowledge forever lost with his death. The mages of Dalaran have lost their brightest mind."
       };
-      Antonidas.AddUnitDependency(Dalaran.Unit);
+
+      Shadowfang = new Capital
+      {
+        Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_H058_SHADOWFANG_KEEP_DALARAN_OTHER),
+        Capturable = true
+      };
     }
     
     public void RegisterLegends()
@@ -65,7 +79,9 @@ namespace WarcraftLegacies.Source.Setup.Legends
       LegendaryHeroManager.Register(Jaina);
       LegendaryHeroManager.Register(Kalecgos);
       LegendaryHeroManager.Register(Medivh);
+      LegendaryHeroManager.Register(Aegwynn);
       CapitalManager.Register(Dalaran);
+      CapitalManager.Register(Shadowfang);
     }
   }
 }

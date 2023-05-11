@@ -1,9 +1,10 @@
 ﻿using MacroTools;
+using MacroTools.PassiveAbilities;
+using MacroTools.PassiveAbilitySystem;
 using MacroTools.Spells;
 using MacroTools.Spells.Slipstream;
 using MacroTools.SpellSystem;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup.Spells
 {
@@ -17,14 +18,6 @@ namespace WarcraftLegacies.Source.Setup.Spells
     /// </summary>
     public static void Setup()
     {
-      SpellSystem.Register(new WaygateOpen(Constants.ABILITY_A0N8_OPEN_EXODAR_EXODAR)
-      {
-        InteriorWaygateUnitTypeId = Constants.UNIT_H03V_ENTRANCE_PORTAL,
-        ExteriorWaygateUnitTypeId = Constants.UNIT_H05T_INSTANCE_ENTRANCE_PORTAL,
-        GetExteriorWaygatePosition = () => new Point(GetUnitX(GetTriggerUnit()) - 200, GetUnitY(GetTriggerUnit()) - 200),
-        GetInteriorWaygatePosition = () => Regions.Exodar_South_Interior.Center
-      });
-
       //Azuremyst
       SpellSystem.Register(new SlipstreamSpellSpecificLocation(Constants.ABILITY_A0P9_DIMENSIONAL_JUMP_TO_AZUREMYST_DRAENEI_AZUREMYST)
       {
@@ -54,6 +47,34 @@ namespace WarcraftLegacies.Source.Setup.Spells
         TargetLocation = new Point(2649, -22845),
         Color = new Color(55, 50, 250, 255)
       });
+
+      var holyShockwave = new SpellOnAttack(Constants.UNIT_N0CX_LIGHTFORGED_WARFRAME_DRAENEI,
+        Constants.ABILITY_A103_HOLY_SHOCKWAVE_DRAENEI)
+      {
+        DummyAbilityId = Constants.ABILITY_A104_SHOCKWAVE_WARFRAME_DUMMY,
+        DummyOrderString = "carrionswarm",
+        ProcChance = 1
+      };
+      PassiveAbilityManager.Register(holyShockwave);
+
+      var warStompAdal = new Stomp(Constants.ABILITY_A105_BLINDING_STARLIGHT_ADAL)
+      {
+        Radius = 1000,
+        DamageBase = 00,
+        DamageLevel = 00,
+        DurationBase = 6,
+        DurationLevel = 3,
+        StunAbilityId = Constants.ABILITY_A106_CURSE_DRAENEI,
+        StunOrderString = "curse",
+        SpecialEffect = @"war3mapImported\FrostNova.mdx"
+      };
+      SpellSystem.Register(warStompAdal);
+
+      var crystallization = new GoldOnCast(Constants.ABILITY_A045_CRYSTALLIZATION_ALL)
+      {
+        GoldToGrant = 100
+      };
+      SpellSystem.Register(crystallization);
     }
   }
 }

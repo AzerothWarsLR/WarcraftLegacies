@@ -88,7 +88,13 @@ namespace WarcraftLegacies.Source.Setup
     /// Contains references to all Warsong <see cref="Legend"/>s.
     /// </summary>
     public LegendWarsong Warsong { get; }
-    
+
+    public LegendTroll Troll { get; }
+    public LegendCthun Cthun { get; }
+    public LegendNazjatar Nazjatar { get; }
+    public LegendBlackEmpire BlackEmpire { get; }
+    public LegendTwilight Twilight { get; }
+
     /// <summary>
     /// Contains references to all Neutral <see cref="Legend"/>s.
     /// </summary>
@@ -114,8 +120,13 @@ namespace WarcraftLegacies.Source.Setup
       Scourge = new LegendScourge(preplacedUnitSystem);
       Sentinels = new LegendSentinels(preplacedUnitSystem);
       Stormwind = new LegendStormwind(preplacedUnitSystem);
+      Troll = new LegendTroll();
       Warsong = new LegendWarsong(preplacedUnitSystem);
       Neutral = new LegendNeutral(preplacedUnitSystem);
+      Cthun = new LegendCthun();
+      Nazjatar = new LegendNazjatar();
+      BlackEmpire = new LegendBlackEmpire(preplacedUnitSystem);
+      Twilight = new LegendTwilight();
     }
 
     /// <summary>
@@ -139,6 +150,11 @@ namespace WarcraftLegacies.Source.Setup
       Sentinels.RegisterLegends();
       Stormwind.RegisterLegends();
       Warsong.RegisterLegends();
+      Troll.RegisterLegends();
+      Cthun.RegisterLegends();
+      Nazjatar.RegisterLegends();
+      BlackEmpire.RegisterLegends();
+      Twilight.RegisterLegends();
       Neutral.RegisterLegends();
     }
   }

@@ -1,4 +1,4 @@
-using MacroTools.ControlPointSystem;
+﻿using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
@@ -18,7 +18,7 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
     {
       AddObjective(new ObjectiveUnitIsDead(gnollToKill));
       AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(FourCC("n00V"))));
-      AddObjective(new ObjectiveExpire(1425));
+      AddObjective(new ObjectiveExpire(1425, Title));
       AddObjective(new ObjectiveSelfExists());
       Required = true;
     }

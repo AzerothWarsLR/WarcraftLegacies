@@ -49,6 +49,11 @@ namespace MacroTools.LegendSystem
     }
 
     /// <summary>
+    ///   If true, this <see cref="Legend"/> is essential for parent faction to avoid elimination
+    /// </summary>
+    public bool Essential{ get; set; }
+
+    /// <summary>
     /// Invoked when the <see cref="Unit"/> value changes.
     /// </summary>
     public event EventHandler<LegendChangeUnitEventArgs>? UnitChanged;
@@ -65,6 +70,7 @@ namespace MacroTools.LegendSystem
         Unit = trainedUnit;
         ChangedOwner?.Invoke(this, new LegendChangeOwnerEventArgs(this));
       });
+      Essential = false;
     }
     
     /// <summary>

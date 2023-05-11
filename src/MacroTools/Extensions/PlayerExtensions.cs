@@ -136,7 +136,12 @@ namespace MacroTools.Extensions
     /// <summary>
     /// Returns the number of <see cref="ControlPoint"/>s a player controls.
     /// </summary>
-    public static int GetControlPointCount(this player player) => PlayerData.ByHandle(player).ControlPointCount;
+    public static int GetControlPointCount(this player player) => PlayerData.ByHandle(player).ControlPoints.Count;
+
+    /// <summary>
+    /// Returns the number of <see cref="ControlPoint"/>s a player controls.
+    /// </summary>
+    public static List<ControlPoint> GetControlPoints(this player player) => PlayerData.ByHandle(player).ControlPoints;
 
     /// <summary>
     /// Adds an amount of gold to a player.
@@ -191,11 +196,6 @@ namespace MacroTools.Extensions
     public static float GetLumberIncome(this player player) => PlayerData.ByHandle(player).LumberIncome;
 
     /// <summary>
-    /// Sets the player's base income, ignoring any bonuses.
-    /// </summary>
-    public static void SetBaseIncome(this player player, float value) => PlayerData.ByHandle(player).BaseIncome = value;
-
-    /// <summary>
     /// Modifies the player's bonus income.
     /// </summary>
     public static void AddBonusIncome(this player player, float value) =>
@@ -209,22 +209,19 @@ namespace MacroTools.Extensions
       PlayerData.ByHandle(player).LumberIncome += value;
     }
 
-    internal static void SetControlPointCount(this player player, int value)
-    {
-      PlayerData.ByHandle(player).ControlPointCount = value;
-    }
-
     /// <summary>
     /// Rescues all <paramref name="units"/> for <paramref name="newOwningPlayer"/>.
     /// </summary>
     /// <param name="newOwningPlayer">The player who should own the units after being rescued</param>
     /// <param name="units">The units to rescue.</param>
-    public static void RescueGroup(this player? newOwningPlayer, List<unit> units)
+    /// <param name="pause"></param>
+    public static void RescueGroup(this player? newOwningPlayer, List<unit> units, bool pause = false)
     {
       newOwningPlayer ??= Player(PLAYER_NEUTRAL_AGGRESSIVE);
 
       foreach (var unit in units)
-        unit.Rescue(newOwningPlayer);
+      
+        unit.Rescue(newOwningPlayer, pause);
     }
 
     /// <summary>

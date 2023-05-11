@@ -14,9 +14,8 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       kultiras.AddQuest(new QuestUnlockShip(Regions.ShipAmbient,
         preplacedUnitSystem.GetUnit(Constants.UNIT_H05V_PROUDMOORE_FLAGSHIP_KUL_TIRAS), allLegendSetup.Kultiras.LegendBoralus, allLegendSetup.Kultiras.LegendAdmiral));
       kultiras.AddQuest(new QuestOldHatreds(allLegendSetup.Kultiras.LegendAdmiral));
-      kultiras.AddQuest(new QuestWestfallOutpost(Regions.SentinelTowerAmbient));
+      kultiras.AddQuest(new QuestWestfallOutpost(Regions.StranglethornBaseBuild));
       kultiras.AddQuest(new QuestHighBank(Regions.HighbankUnlock, allLegendSetup.Kultiras.LegendKatherine));
-      kultiras.AddQuest(new QuestTheramore(Regions.Theramore));
       kultiras.AddQuest(new QuestBeyondPortal(allLegendSetup.FelHorde.HellfireCitadel, allLegendSetup.FelHorde.KilsorrowFortress));
     }
   }

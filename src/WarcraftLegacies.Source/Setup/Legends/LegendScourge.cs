@@ -43,7 +43,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
       Rivendare = new LegendaryHero("Baron Rivendare")
       {
         UnitType = FourCC("U00A"),
-        StartingXp = 1000
+        StartingXp = 2800
       };
 
       Arthas = new LegendaryHero("Arthas Menethil")
@@ -63,7 +63,8 @@ namespace WarcraftLegacies.Source.Setup.Legends
         Unit = preplacedUnitSystem.GetUnit(FourCC("u000")),
         Hivemind = true,
         DeathMessage =
-          "The great Lich King has been destroyed. With no central mind to command them, the forces of the Undead have gone rogue."
+          "The great Lich King has been destroyed. With no central mind to command them, the forces of the Undead have gone rogue.",
+        Essential = true
       };
     }
     

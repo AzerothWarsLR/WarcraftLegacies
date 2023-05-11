@@ -1,11 +1,10 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using DesyncSafeAnalyzer.Attributes;
 using MacroTools.DialogueSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
-using MacroTools.ObjectiveSystem.Objectives;
 using MacroTools.QuestSystem;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -57,7 +56,7 @@ namespace MacroTools.ObjectiveSystem
     internal questitem QuestItem { get; set; }
 
     /// <summary>
-    ///   Whether or not this can be seen as a bullet point in the quest log.
+    ///  Whether or not this can be seen as a bullet point in the quest log.
     /// </summary>
     public bool ShowsInQuestLog { get; protected init; } = true;
 
@@ -93,6 +92,9 @@ namespace MacroTools.ObjectiveSystem
       }
     }
 
+    /// <summary>
+    /// Describes what must be done in order to complete the <see cref="Objective"/>
+    /// </summary>
     public string Description
     {
       get => _description;
@@ -109,11 +111,20 @@ namespace MacroTools.ObjectiveSystem
     /// </summary>
     protected string PingPath { get; init; } = "MinimapQuestObjectivePrimary";
 
-    protected bool IsPlayerOnSameTeamAsAnyEligibleFaction(player whichPlayer)
+    protected bool? IsPlayerOnSameTeamAsAnyEligibleFaction(player whichPlayer)
     {
+
       foreach (var eligibleFaction in EligibleFactions)
       {
-        if (eligibleFaction.Player?.GetTeam() == whichPlayer.GetTeam())
+        if (eligibleFaction.Player == null)
+        {
+          return null;
+        }
+        else if (eligibleFaction.Player == Player(PLAYER_NEUTRAL_PASSIVE) || eligibleFaction.Player == Player(PLAYER_NEUTRAL_AGGRESSIVE))
+        {
+          return null;
+        }
+        else if (eligibleFaction.Player.GetTeam() == whichPlayer.GetTeam())
           return true;
       }
 
@@ -125,6 +136,9 @@ namespace MacroTools.ObjectiveSystem
       EligibleFactions.Add(faction);
     }
 
+    /// <summary>
+    /// Fires after the <see cref="Progress"/> of this quest has changed
+    /// </summary>
     public event EventHandler<Objective>? ProgressChanged;
 
     /// <summary>
@@ -159,7 +173,7 @@ namespace MacroTools.ObjectiveSystem
       
       if (MapEffectPath != null && _mapEffect == null)
       {
-        _mapEffect = UnsyncUtils.AddSpecialEffectUnsync(localPlayer => EligibleFactions.Contains(localPlayer) ? MapEffectPath : "",
+        _mapEffect = UnsyncUtils.AddSpecialEffectUnsync(localPlayer => EligibleFactions.Contains(localPlayer) is true ? MapEffectPath : "",
           Position.X, Position.Y);
         BlzSetSpecialEffectColorByPlayer(_mapEffect, EligibleFactions.First().Player);
         BlzSetSpecialEffectHeight(_mapEffect, 100 + Environment.GetPositionZ(Position));
@@ -168,7 +182,7 @@ namespace MacroTools.ObjectiveSystem
       if (OverheadEffectPath != null && _overheadEffect == null && TargetWidget != null)
       {
         _overheadEffect = UnsyncUtils.AddSpecialEffectTargetUnsync(
-          localPlayer => EligibleFactions.Contains(localPlayer) ? OverheadEffectPath : "", TargetWidget, "overhead");
+          localPlayer => EligibleFactions.Contains(localPlayer) is true ? OverheadEffectPath : "", TargetWidget, "overhead");
       }
     }
 

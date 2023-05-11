@@ -12,12 +12,12 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
     
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
-      Frostwolf = new Faction("Frostwolf", PLAYER_COLOR_RED, "|c00ff0303",
+      Frostwolf = new Faction(FactionNames.Frostwolf, PLAYER_COLOR_RED, "|c00ff0303",
         "ReplaceableTextures\\CommandButtons\\BTNThrall.blp")
       {
         UndefeatedResearch = Constants.UPGRADE_R05V_FROSTWOLF_EXISTS,
         StartingGold = 200,
-        StartingLumber = 500,
+        StartingLumber = 700,
         CinematicMusic = "SadMystery",
         ControlPointDefenderUnitTypeId = Constants.UNIT_N0B6_CONTROL_POINT_DEFENDER_FROSTWOLF,
         IntroText = @"You are playing as the honorable |cffff0000Frostwolf Clan|r.
@@ -93,7 +93,6 @@ Salvage the wrecked ships, establish a base and gather your troops to move inlan
       Frostwolf.AddGoldMine(preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-8793, -11350)));
       Frostwolf.AddGoldMine(preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-14457, -4701)));
       
-      FrostwolfStructurePackingConfig.Setup();
       FactionManager.Register(Frostwolf);
     }
   }

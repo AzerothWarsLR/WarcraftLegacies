@@ -13,6 +13,9 @@ namespace MacroTools.Commands
   {
     /// <inheritdoc />
     public override string CommandText => "limited";
+    
+    /// <inheritdoc />
+    public override bool Exact => true;
   
     /// <inheritdoc />
     public override int MinimumParameterCount => 0;
@@ -27,7 +30,7 @@ namespace MacroTools.Commands
     public override string Execute(player commandUser, params string[] parameters)
     {
       var limitedUnits = CreateGroup().EnumUnitsOfPlayer(commandUser).EmptyToList().Where(
-        x => commandUser.GetObjectLimit(x.GetTypeId()) is > 0 and < Faction.UNLIMITED);
+        u => commandUser.GetObjectLimit(u.GetTypeId()) is > 0 and < Faction.UNLIMITED && u.IsAlive() == true);
       foreach (var unit in limitedUnits) 
         commandUser.PingLocation(unit.GetPosition(), 5f);
 

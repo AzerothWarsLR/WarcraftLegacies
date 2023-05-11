@@ -32,7 +32,7 @@ namespace MacroTools.CommandSystem
       _registeredCommands.Add(command);
       command.OnRegister();
       CreateTrigger()
-        .RegisterSharedChatEvent(Prefix + command.CommandText, false)
+        .RegisterSharedChatEvent(Prefix + command.CommandText, command.Exact)
         .AddAction(() =>
         {
           try

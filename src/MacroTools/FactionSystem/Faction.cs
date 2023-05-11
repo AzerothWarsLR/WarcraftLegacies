@@ -122,6 +122,11 @@ namespace MacroTools.FactionSystem
     /// </summary>
     public int? ControlPointDefenderUnitTypeId { get; init; }
 
+    /// <summary>
+    /// Check to see if <see cref="Faction"/> has any living essential legends
+    /// </summary>
+    public bool HasEssentialLegend => GetEssentialLegends().Count > 0;
+
     public int StartingGold { get; set; }
 
     public int StartingLumber { get; set; }
@@ -170,11 +175,13 @@ namespace MacroTools.FactionSystem
           {
             SetPlayerTechResearched(player, _defeatedResearch, 1);
             SetPlayerTechResearched(player, _undefeatedResearch, 0);
+            Console.WriteLine("DEBUG: A FACTION IS DEFEATED");
           }
 
         //Remove player from game if necessary
         if (value == ScoreStatus.Defeated && Player != null)
         {
+          Console.WriteLine("DEBUG: FACTION IS DEFEATED AND PLAYER NOT NULL");
           FogModifierStart(CreateFogModifierRect(Player, FOG_OF_WAR_VISIBLE,
             WCSharp.Shared.Data.Rectangle.WorldBounds.Rect, false, false));
           RemovePlayer(Player, PLAYER_GAME_RESULT_DEFEAT);
@@ -260,6 +267,30 @@ namespace MacroTools.FactionSystem
           SetPlayerTechResearched(player, _undefeatedResearch, 1);
       }
       get => _undefeatedResearch;
+    }
+
+    /// <summary>
+    /// Gets a list of legends that are flagged as essential and alive that the faction currently has
+    /// </summary>
+    private List<Legend> GetEssentialLegends()
+    {
+      var essentialLegends = new List<Legend>();
+      foreach (var legend in LegendaryHeroManager.GetAll())
+      {
+        if (legend.Essential && legend.OwningPlayer == Player && legend.Unit.IsAlive())
+        {
+          essentialLegends.Add(legend);
+        }
+      }
+      foreach (var capital in CapitalManager.GetAll())
+      {
+        if (capital.Essential && capital.OwningPlayer == Player && capital.Unit.IsAlive())
+        {
+          essentialLegends.Add(capital);
+        }
+      }
+      
+      return essentialLegends;
     }
 
     /// <summary>
@@ -366,6 +397,18 @@ namespace MacroTools.FactionSystem
       PowerRemoved?.Invoke(this, new FactionPowerEventArgs(this, power));
     }
 
+    /// <summary>
+    ///   Removes a <see cref="Power" /> from this <see cref="Faction" />.
+    /// </summary>
+    public void RemovePowerByName(string name)
+    {
+      var power = _powers.Where(x => x.Name == name).FirstOrDefault();
+      if (power == null)
+        throw new ArgumentException($"Unable to find power with name {name}");
+      _powers.Remove(power);
+      if (Player != null) power.OnRemove(Player);
+      PowerRemoved?.Invoke(this, new FactionPowerEventArgs(this, power));
+    }
     /// <summary>
     ///   Gets the first <see cref="Power" /> this <see cref="Faction" /> has with the provided type.
     /// </summary>
@@ -676,7 +719,7 @@ namespace MacroTools.FactionSystem
     ///   This should get used any time a player exits the game without being defeated;
     ///   IE they left, went afk, became an observer, or triggered an event that causes this.
     /// </summary>
-    private void Leave()
+    public void Leave()
     {
       var eligiblePlayers = Player?
         .GetTeam()?
@@ -701,7 +744,10 @@ namespace MacroTools.FactionSystem
       LeftGame?.Invoke(this, this);
     }
 
-    private void RemoveGoldMines()
+    /// <summary>
+    /// Removes all gold mines assigned to the faction
+    /// </summary>
+    public void RemoveGoldMines()
     {
       foreach (var unit in _goldMines) KillUnit(unit);
       _goldMines.Clear();

@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using DesyncSafeAnalyzer.Attributes;
 using MacroTools.Extensions;
@@ -43,6 +43,12 @@ namespace MacroTools.QuestSystem
     {
       set => QuestSetRequired(Quest, value);
     }
+
+
+    /// <summary>
+    /// Indicates that multiple players have this quest. Setting this does not actually cause the quest to be shared.
+    /// </summary>
+    public bool Shared { get; set; }
 
     /// <summary>
     /// A user-friendly name for the quest.

@@ -11,12 +11,13 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
     
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
-      Legion = new Faction("Legion", PLAYER_COLOR_PEANUT, "|CFFBF8F4F",
+      Legion = new Faction(FactionNames.Legion, PLAYER_COLOR_PEANUT, "|CFFBF8F4F",
         "ReplaceableTextures\\CommandButtons\\BTNKiljaedin.blp")
       {
         UndefeatedResearch = FourCC("R04T"),
         StartingGold = 200,
-        StartingLumber = 500,
+        StartingLumber = 700,
+        FoodMaximum = 250,
         CinematicMusic = "DarkAgents",
         ControlPointDefenderUnitTypeId = Constants.UNIT_U01U_CONTROL_POINT_DEFENDER_LEGION,
         IntroText = @"You are playing as the mighty |cffa2722dBurning Legion|r.
@@ -39,10 +40,10 @@ Your primary objective is to summon the great host of the Burning Legion. Invade
       Legion.ModObjectLimit(FourCC("u00E"), Faction.UNLIMITED); //Generator
       Legion.ModObjectLimit(FourCC("u01N"), Faction.UNLIMITED); //Burning Altar
       Legion.ModObjectLimit(FourCC("u015"), Faction.UNLIMITED); //Unholy Reliquary
-      Legion.ModObjectLimit(FourCC("u006"), Faction.UNLIMITED); //Void Summoning Spire
-      Legion.ModObjectLimit(FourCC("ndmg"), Faction.UNLIMITED); //Demon Gate
+      Legion.ModObjectLimit(FourCC("ndmg"), 6); //Demon Gate
       Legion.ModObjectLimit(FourCC("n04N"), Faction.UNLIMITED); //Infernal Machine Factory
-      Legion.ModObjectLimit(FourCC("n04Q"), Faction.UNLIMITED); //Nether Pit
+      Legion.ModObjectLimit(FourCC("u006"), 2); //Summoning Circle
+      Legion.ModObjectLimit(FourCC("n04Q"), 2); //Nether Pit
       Legion.ModObjectLimit(Constants.UNIT_U00F_DORMANT_SPIRE_LEGION_T1, Faction.UNLIMITED);
       Legion.ModObjectLimit(Constants.UNIT_U00C_LEGION_BASTION_LEGION_T2, Faction.UNLIMITED);
       Legion.ModObjectLimit(Constants.UNIT_U00N_BURNING_CITADEL_LEGION_T3, Faction.UNLIMITED);
@@ -54,10 +55,11 @@ Your primary objective is to summon the great host of the Burning Legion. Invade
       Legion.ModObjectLimit(FourCC("ninc"), Faction.UNLIMITED); //Burning archer
       Legion.ModObjectLimit(FourCC("n04K"), Faction.UNLIMITED); //Succubus
       Legion.ModObjectLimit(FourCC("n04J"), Faction.UNLIMITED); //Felstalker
-      Legion.ModObjectLimit(FourCC("o060"), Faction.UNLIMITED); //Annihilan GUard
-      Legion.ModObjectLimit(FourCC("n04O"), 6); //Doomguard
+      Legion.ModObjectLimit(FourCC("n0DO"), 12); //Doom Guard
+      Legion.ModObjectLimit(FourCC("n04O"), 6); //Doom lord
       Legion.ModObjectLimit(FourCC("n04L"), 6); //Infernal Juggernaut
-      Legion.ModObjectLimit(FourCC("ninf"), 12); //Infernal
+      Legion.ModObjectLimit(FourCC("o04P"), 6); //Nathrezim
+      Legion.ModObjectLimit(FourCC("ninf"), 8); //Infernal
       Legion.ModObjectLimit(FourCC("n04H"), Faction.UNLIMITED); //Fel Guard
       Legion.ModObjectLimit(FourCC("n04U"), 4); //Dragon
       Legion.ModObjectLimit(FourCC("n03L"), 4); //Barge
@@ -66,7 +68,7 @@ Your primary objective is to summon the great host of the Burning Legion. Invade
       Legion.ModObjectLimit(FourCC("ubot"), Faction.UNLIMITED); //Undead Transport Ship
       Legion.ModObjectLimit(FourCC("h0AT"), Faction.UNLIMITED); //Scout
       Legion.ModObjectLimit(FourCC("h0AW"), Faction.UNLIMITED); //Frigate
-      Legion.ModObjectLimit(FourCC("h0SM"), Faction.UNLIMITED); //Fireship
+      Legion.ModObjectLimit(FourCC("h0AM"), Faction.UNLIMITED); //Fireship
       Legion.ModObjectLimit(FourCC("h0AZ"), Faction.UNLIMITED); //Galley
       Legion.ModObjectLimit(FourCC("h0AQ"), Faction.UNLIMITED); //Boarding
       Legion.ModObjectLimit(FourCC("h0BB"), Faction.UNLIMITED); //Juggernaut
@@ -83,6 +85,7 @@ Your primary objective is to summon the great host of the Burning Legion. Invade
       Legion.ModObjectLimit(FourCC("R02C"), Faction.UNLIMITED); //Acute Sensors
       Legion.ModObjectLimit(FourCC("R02A"), Faction.UNLIMITED); //Chaos Infusion
       Legion.ModObjectLimit(FourCC("R028"), Faction.UNLIMITED); //Shadow Priest Adept Training
+      Legion.ModObjectLimit(FourCC("R042"), Faction.UNLIMITED); //Nathrezim Adept Training
       Legion.ModObjectLimit(FourCC("R027"), Faction.UNLIMITED); //Warlock Adept Training
       Legion.ModObjectLimit(FourCC("R01Y"), Faction.UNLIMITED); //Astral Walk
       Legion.ModObjectLimit(FourCC("R04G"), Faction.UNLIMITED); //Improved Carrion Swarm
@@ -90,7 +93,6 @@ Your primary objective is to summon the great host of the Burning Legion. Invade
       Legion.ModObjectLimit(FourCC("R040"), Faction.UNLIMITED); //Flying horrors
       Legion.ModObjectLimit(Constants.UPGRADE_R096_REMATERIALIZATION_LEGION, 1);
       Legion.ModObjectLimit(Constants.UPGRADE_R04R_FORTIFIED_HULLS_UNIVERSAL_UPGRADE, 1);
-      Legion.SetObjectLevel(Constants.UPGRADE_R04R_FORTIFIED_HULLS_UNIVERSAL_UPGRADE, 1);
 
       //Heroes
       Legion.ModObjectLimit(FourCC("U00L"), 1); //Anetheron

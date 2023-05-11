@@ -42,7 +42,9 @@ namespace WarcraftLegacies.Source.Quests.Draenei
         Constants.ITEM_I006_BOOK_OF_MEDIVH,
         Constants.ITEM_I003_EYE_OF_SARGERAS,
         Constants.ITEM_I011_CROWN_OF_THE_TRIUMVIRATE,
-        Constants.ITEM_I018_VIAL_OF_THE_SUNWELL
+        Constants.ITEM_I018_VIAL_OF_THE_SUNWELL,
+        Constants.ITEM_I00H_SULFURAS_HAND_OF_RAGNAROS,
+        Constants.ITEM_I01Y_HELM_OF_DOMINATION
       });
       AddObjective(_objectivePowerSource);
       AddObjective(new ObjectiveSelfExists());
@@ -60,10 +62,10 @@ namespace WarcraftLegacies.Source.Quests.Draenei
 
     /// <inheritdoc/>
     protected override string RewardFlavour =>
-      "With the acquisition of a replacement power source, the Exodar's gemcrafters set to work reigniting the ship's planar engines. The Dimensional Generator can now now be used to travel the planes once more.";
+      "With the acquisition of a replacement power source, the Exodar's gemcrafters set to work reigniting the ship's dimensional portals. The Dimensional Generator can now now be used to travel the planes once more.";
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
-      "The Exodar gains the ability to move and the Dimensional Generator gains the ability to channel portals to Argus, Azuremyst, and Outland, but the power source used is locked within the Dimensional Generator";
+      "The Dimensional Generator gains the ability to channel portals to Argus, Azuremyst, and Outland. The Lightforged units and A'dal will become available";
   }
 }

@@ -1,10 +1,10 @@
 ﻿using System.Collections.Generic;
-using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
-using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
+using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.FactionBased;
-using MacroTools.ObjectiveSystem.Objectives.TimeBased;
+using MacroTools.ObjectiveSystem.Objectives.LegendBased;
+using MacroTools.ObjectiveSystem.Objectives.MetaBased;
 using MacroTools.QuestSystem;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -21,14 +21,17 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestTyrHand"/> class.
     /// </summary>
+    /// <param name="capitalCity"></param>
+    /// <param name="stratholme"></param>
     /// <param name="rescueRect">Units in this area will start invulnerable and be rescued when the quest is complete.</param>
-    public QuestTyrHand(Rectangle rescueRect) : base("The Fortified City",
+    /// <param name="lichKing"></param>
+    public QuestTyrHand(Capital capitalCity, Capital stratholme, Rectangle rescueRect, Capital lichKing) : base("The Fortified City",
       "The city of Tyr's Hand is considered impregnable, but they will be reluctant to join the war",
       "ReplaceableTextures\\CommandButtons\\BTNHumanBarracks.blp")
     {
-      AddObjective(new ObjectiveControlLevel(
-        ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N03P_CORIN_S_CROSSING_10GOLD_MIN), 20));
-      AddObjective(new ObjectiveExpire(1435));
+      AddObjective(new ObjectiveEitherOf(
+        new ObjectiveEitherOf(new ObjectiveCapitalDead(capitalCity),new ObjectiveCapitalDead(stratholme)),
+        new ObjectiveCapitalDead(lichKing)));
       AddObjective(new ObjectiveSelfExists());
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
       Required = true;
@@ -38,7 +41,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
     protected override string RewardFlavour => "The city-fortress of Tyr's Hand has decided to join us!";
 
     /// <inheritdoc />
-    protected override string RewardDescription => "Control of all units in Tyr's Hand";
+    protected override string RewardDescription => "Control of all units in Tyr's Hand and Garithos is trainable";
 
     /// <inheritdoc />
     protected override void OnFail(Faction completingFaction) => 

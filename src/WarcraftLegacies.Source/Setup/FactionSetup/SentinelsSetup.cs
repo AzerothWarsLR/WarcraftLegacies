@@ -1,5 +1,6 @@
 ﻿using MacroTools;
 using MacroTools.FactionSystem;
+using MacroTools.Powers;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
@@ -8,15 +9,15 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
   public static class SentinelsSetup
   {
     public static Faction? Sentinels { get; private set; }
-    
+
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
-      Sentinels = new Faction("Sentinels", PLAYER_COLOR_MINT, "|CFFBFFF80",
+      Sentinels = new Faction(FactionNames.Sentinels, PLAYER_COLOR_MINT, "|CFFBFFF80",
         "ReplaceableTextures\\CommandButtons\\BTNPriestessOfTheMoon.blp")
       {
         UndefeatedResearch = FourCC("R05Y"),
         StartingGold = 200,
-        StartingLumber = 500,
+        StartingLumber = 700,
         CinematicMusic = "Comradeship",
         ControlPointDefenderUnitTypeId = Constants.UNIT_H03F_CONTROL_POINT_DEFENDER_SENTINELS,
         IntroText = @"You are playing as the ever-watchful Sentinels.
@@ -55,6 +56,7 @@ Once you have secured your holdings, gather your army and destroy the Orcish Hor
       Sentinels.ModObjectLimit(FourCC("n034"), 12); //Guild Ranger
       Sentinels.ModObjectLimit(FourCC("nwat"), Faction.UNLIMITED); //Nightblade
       Sentinels.ModObjectLimit(FourCC("nnmg"), 12); //Redeemed Highborne
+      Sentinels.ModObjectLimit(FourCC("e022"), 2); //Moon Rider
       Sentinels.ModObjectLimit(Constants.UNIT_ECHM_CHIMAERA_SENTINELS, 4);
 
       //Ships
@@ -67,11 +69,10 @@ Once you have secured your holdings, gather your army and destroy the Orcish Hor
       Sentinels.ModObjectLimit(FourCC("h0BA"), Faction.UNLIMITED); // Juggernaut
       Sentinels.ModObjectLimit(FourCC("h0B8"), 6); // Bombard
 
-      Sentinels.ModObjectLimit(FourCC("e009"), 1); //Naisha
+      Sentinels.ModObjectLimit(FourCC("E025"), 1); //Naisha
       Sentinels.ModObjectLimit(FourCC("Etyr"), 1); //Tyrande
       Sentinels.ModObjectLimit(FourCC("E002"), 1); //Shandris
       Sentinels.ModObjectLimit(FourCC("Ewrd"), 1); //Maiev
-      Sentinels.ModObjectLimit(FourCC("O02E"), 1); //Jarod
 
       Sentinels.ModObjectLimit(FourCC("R00S"), Faction.UNLIMITED); //Priestess Adept Training
       Sentinels.ModObjectLimit(FourCC("R064"), Faction.UNLIMITED); //Sentinel Fortifications
@@ -84,11 +85,16 @@ Once you have secured your holdings, gather your army and destroy the Orcish Hor
       Sentinels.ModObjectLimit(FourCC("R04E"), Faction.UNLIMITED); //Ysera's Gift (World Tree upgrade)
       Sentinels.ModObjectLimit(FourCC("R002"), Faction.UNLIMITED); //Blackwald Enhancement
       Sentinels.ModObjectLimit(FourCC("R03J"), Faction.UNLIMITED); //Wind Walk
-      Sentinels.ModObjectLimit(FourCC("R013"), Faction.UNLIMITED); //Elune's Blessing
       Sentinels.ModObjectLimit(FourCC("R018"), Faction.UNLIMITED); //Lightning Barrage
 
-      Sentinels.AddGoldMine(preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-16516, 10513)));
-      
+      Sentinels.AddGoldMine(preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-22721, -13570)));
+
+      //Powers
+      var dummyPower = new DummyPower("Unspoiled Wilderness",
+        "Every control point tower has a 24% movement speed aura in a 2500 area of effect",
+        "ANA_HealingButterfliesFixed");
+      Sentinels.AddPower(dummyPower);
+
       FactionManager.Register(Sentinels);
     }
   }

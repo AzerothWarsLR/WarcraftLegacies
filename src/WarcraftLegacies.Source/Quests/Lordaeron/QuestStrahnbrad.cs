@@ -29,7 +29,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
       AddObjective(
         new ObjectiveControlPoint(
           ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N01C_STRAHNBRAD_10GOLD_MIN)));
-      AddObjective(new ObjectiveExpire(1170));
+      AddObjective(new ObjectiveExpire(1170, Title));
       AddObjective(new ObjectiveSelfExists());
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
       Required = true;

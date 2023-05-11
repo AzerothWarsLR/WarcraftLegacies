@@ -52,11 +52,16 @@ namespace MacroTools.ControlPointSystem
     /// All <see cref="ControlPoint"/>s are given this many hitpoints.
     /// </summary>
     public int StartingMaxHitPoints { get; init; }
-    
+
     /// <summary>
     /// All Neutral Hostile <see cref="ControlPoint"/>s start with this many hit points.
     /// </summary>
     public int HostileStartingCurrentHitPoints { get; init; }
+
+    /// <summary>
+    /// This ability can be used to give a <see cref="ControlPoint"/> hit point regeneration
+    /// </summary>
+    public int RegenerationAbility { get; init; }
 
     /// <summary>
     /// Determines the settings for the <see cref="ControlPoint.Defender"/> units that defend <see cref="ControlPoint"/>s.
@@ -90,7 +95,7 @@ namespace MacroTools.ControlPointSystem
         }, _increaseControlLevelAbilityTypeId);
       }
     }
-    
+
     /// <summary>
     ///   How often players receive income.
     ///   Changing this will not affect the total amount of income they receive.
@@ -107,7 +112,7 @@ namespace MacroTools.ControlPointSystem
     /// Returns all registered <see cref="ControlPoint"/>s.
     /// </summary>
     public List<ControlPoint> GetAllControlPoints() => _byUnit.Values.ToList();
-    
+
     /// <summary>
     ///   Whether or not the given unit is a <see cref="ControlPoint" />.
     /// </summary>
@@ -118,7 +123,7 @@ namespace MacroTools.ControlPointSystem
     /// </summary>
     public ControlPoint GetFromUnitType(int unitType)
     {
-      if (_byUnitType.TryGetValue(unitType, out var controlPoint)) 
+      if (_byUnitType.TryGetValue(unitType, out var controlPoint))
         return controlPoint;
       throw new KeyNotFoundException(
         $"There is no {nameof(ControlPoint)} with unit type ID {GeneralHelpers.DebugIdInteger2IdString(unitType)}");
@@ -135,7 +140,7 @@ namespace MacroTools.ControlPointSystem
           $"There are two Control Points with the same ID of {GeneralHelpers.DebugIdInteger2IdString(controlPoint.UnitType)}.");
       else
         _byUnitType.Add(controlPoint.UnitType, controlPoint);
-      
+
       controlPoint.Unit
         .SetMaximumHitpoints(StartingMaxHitPoints)
         .AddAbility(IncreaseControlLevelAbilityTypeId)
@@ -146,14 +151,17 @@ namespace MacroTools.ControlPointSystem
       RegisterControlLevelChangeTrigger(controlPoint);
       RegisterControlLevelGrowthOverTime(controlPoint);
       ConfigureControlPointStats(controlPoint, true);
+      if (controlPoint.Unit.OwningPlayer() != Player(PLAYER_NEUTRAL_AGGRESSIVE))
+        controlPoint.Unit.AddAbility(RegenerationAbility);
     }
 
     private static void RegisterIncome(ControlPoint controlPoint)
     {
-      controlPoint.Owner.SetBaseIncome(controlPoint.Owner.GetBaseIncome() + controlPoint.Value);
-      controlPoint.Owner.SetControlPointCount(controlPoint.Owner.GetControlPointCount() + 1);
+      var controlPointOwner = PlayerData.ByHandle(controlPoint.Owner);
+      controlPointOwner.AddControlPoint(controlPoint);
+      controlPointOwner.BaseIncome = controlPoint.Owner.GetBaseIncome() + controlPoint.Value;
     }
-    
+
     private static void RegisterDamageTrigger(ControlPoint controlPoint)
     {
       CreateTrigger()
@@ -164,7 +172,7 @@ namespace MacroTools.ControlPointSystem
           {
             var attacker = GetEventDamageSource();
             var hitPoints = GetUnitState(controlPoint.Unit, UNIT_STATE_LIFE) - GetEventDamage();
-            if (hitPoints > 1) 
+            if (hitPoints > 1)
               return;
             BlzSetEventDamage(0);
             SetUnitOwner(controlPoint.Unit, GetOwningPlayer(attacker), true);
@@ -176,7 +184,7 @@ namespace MacroTools.ControlPointSystem
           }
         });
     }
-    
+
     private void RegisterOwnershipChangeTrigger(ControlPoint controlPoint)
     {
       CreateTrigger()
@@ -186,14 +194,14 @@ namespace MacroTools.ControlPointSystem
           try
           {
             var previousOwner = PlayerData.ByHandle(GetChangingUnitPrevOwner());
-            previousOwner.ControlPointCount -= 1;
+            previousOwner.RemoveControlPoint(controlPoint);
             previousOwner.BaseIncome -= controlPoint.Value;
 
             var newOwner = PlayerData.ByHandle(GetTriggerUnit().OwningPlayer());
-            newOwner.ControlPointCount += 1;
+            newOwner.AddControlPoint(controlPoint);
             newOwner.BaseIncome += controlPoint.Value;
-
             controlPoint.Unit
+              .AddAbility(RegenerationAbility)
               .SetLifePercent(100);
             controlPoint.ControlLevel = 0;
             controlPoint.SignalOwnershipChange(new ControlPointOwnerChangeEventArgs(controlPoint, GetChangingUnitPrevOwner()));
@@ -204,7 +212,7 @@ namespace MacroTools.ControlPointSystem
           }
         });
     }
-    
+
     private void RegisterControlLevelChangeTrigger(ControlPoint controlPoint)
     {
       controlPoint.ControlLevelChanged += (_, _) =>
@@ -232,7 +240,7 @@ namespace MacroTools.ControlPointSystem
         if (controlPoint.Owner == Player(PLAYER_NEUTRAL_AGGRESSIVE) ||
             controlPoint.Owner == Player(PLAYER_NEUTRAL_PASSIVE) ||
             controlPoint.Owner == Player(bj_PLAYER_NEUTRAL_VICTIM) ||
-            controlPoint.ControlLevel >= ControlLevelSettings.ControlLevelMaximum) 
+            controlPoint.ControlLevel >= ControlLevelSettings.ControlLevelMaximum)
           return;
         controlPoint.ControlLevel += 1 + controlPoint.Owner.GetControlLevelPerTurnBonus();
         AddSpecialEffect(@"Abilities\Spells\Items\AIlm\AIlmTarget.mdl", GetUnitX(controlPoint.Unit),
@@ -247,7 +255,7 @@ namespace MacroTools.ControlPointSystem
       var flooredLevel = (int)controlPoint.ControlLevel;
       var maxHitPoints = StartingMaxHitPoints + flooredLevel * ControlLevelSettings.HitPointsPerControlLevel;
       var lifePercent = Math.Max(controlPoint.Unit.GetLifePercent(), 1);
-      
+
       controlPoint.Unit
         .SetMaximumHitpoints(maxHitPoints)
         .SetArmor(ControlLevelSettings.ArmorPerControlLevel * ControlLevelSettings.ArmorPerControlLevel)
@@ -266,7 +274,7 @@ namespace MacroTools.ControlPointSystem
     private void CreateOrUpdateDefender(ControlPoint controlPoint)
     {
       var flooredLevel = (int)controlPoint.ControlLevel;
-      
+
       var defenderUnitTypeId = controlPoint.Owner.GetFaction()?.ControlPointDefenderUnitTypeId ??
                                ControlLevelSettings.DefaultDefenderUnitTypeId;
       controlPoint.Defender ??= CreateUnit(controlPoint.Owner, defenderUnitTypeId, GetUnitX(controlPoint.Unit), GetUnitY(controlPoint.Unit), 270);
@@ -291,7 +299,7 @@ namespace MacroTools.ControlPointSystem
       whichUnit
         .SetDamageBase(controlLevel == 0
           ? -1
-          : ControlLevelSettings.DamageBase-1 + controlLevel * ControlLevelSettings.DamagePerControlLevel)
+          : ControlLevelSettings.DamageBase - 1 + controlLevel * ControlLevelSettings.DamagePerControlLevel)
         .SetDamageDiceNumber(1)
         .SetDamageDiceSides(1)
         .SetAttackType(5);

@@ -1,6 +1,5 @@
 ﻿using MacroTools;
 using MacroTools.FactionSystem;
-using MacroTools.Powers;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
@@ -12,17 +11,17 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
 
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
-      Lordaeron = new Faction("Lordaeron", PLAYER_COLOR_BLUE, "|c000042ff",
+      Lordaeron = new Faction(FactionNames.Lordaeron, PLAYER_COLOR_BLUE, "|c000042ff",
         "ReplaceableTextures\\CommandButtons\\BTNArthas.blp")
       {
         StartingGold = 200,
-        StartingLumber = 500,
+        StartingLumber = 700,
         UndefeatedResearch = FourCC("R05M"),
         CinematicMusic = "Comradeship",
         ControlPointDefenderUnitTypeId = Constants.UNIT_H03W_CONTROL_POINT_DEFENDER_LORDAERON,
         IntroText = @"You are playing as the great |cff4242ebKingdom of Lordaeron|r.
 
-You begin in Andorhal, isolated from your forces in the rest of the Kingdom, and the Plague of Undeadh is coming.
+You begin in Andorhal, isolated from your forces in the rest of the Kingdom, and the Plague of Undeath is coming.
 
 Secure your major settlements by clearing out clusters of enemies and fortify your Kingdom as much as possible.
 
@@ -57,7 +56,7 @@ If you survive the Plague, sail to the frozen wasteland of Northrend and take th
       Lordaeron.ModObjectLimit(FourCC("nwe2"), 6); //Thunder Eagle
       Lordaeron.ModObjectLimit(FourCC("h01C"), Faction.UNLIMITED); //Longbowman
       Lordaeron.ModObjectLimit(FourCC("n03K"), Faction.UNLIMITED); //Chaplain
-      Lordaeron.ModObjectLimit(FourCC("hcth"), Faction.UNLIMITED); //Silver Hand Squire
+      Lordaeron.ModObjectLimit(FourCC("hcth"), 12); //Silver Hand Squire
       Lordaeron.ModObjectLimit(FourCC("h02Q"), 6); //Pegasus Knight
       Lordaeron.ModObjectLimit(FourCC("e017"), 8); //Scorpion
       Lordaeron.ModObjectLimit(FourCC("o02F"), 6); //Mangonel
@@ -79,6 +78,7 @@ If you survive the Plague, sail to the frozen wasteland of Northrend and take th
       Lordaeron.ModObjectLimit(FourCC("Hart"), 1); //Arthas
       Lordaeron.ModObjectLimit(FourCC("Huth"), 1); //Uther
       Lordaeron.ModObjectLimit(FourCC("H01J"), 1); //Mograine
+      Lordaeron.ModObjectLimit(FourCC("Hlgr"), 1); //Garithos
 
       Lordaeron.ModObjectLimit(FourCC("Harf"), 1); //Arthas
 
@@ -101,9 +101,6 @@ If you survive the Plague, sail to the frozen wasteland of Northrend and take th
       Lordaeron.ModObjectLimit(Constants.UPGRADE_R08F_GARITHOS_MIND_CONTROL_LORDAERON, Faction.UNLIMITED);
 
       //Todo: these probably should be in some kind of ability library, not here
-      Lordaeron.ModAbilityAvailability(Constants.ABILITY_A0KC_INCINERATE_ALEXANDROS, -1);
-      Lordaeron.ModAbilityAvailability(Constants.ABILITY_A0MQ_PULVERIZE_ALEXANDROS, -1);
-      Lordaeron.ModAbilityAvailability(Constants.ABILITY_A0DL_COMMUNION_ALEXANDROS, -1);
       Lordaeron.ModAbilityAvailability(Constants.ABILITY_A0N2_GRASPING_VINES_TREANTS, -1);
       Lordaeron.ModAbilityAvailability(Constants.ABILITY_A0GD_SUMMON_GARRISON_STORMWIND, -1);
       Lordaeron.ModAbilityAvailability(Constants.ABILITY_A0GC_REPLENISH_MANA_ORANGE_KEEPS_CAPITALS, -1);

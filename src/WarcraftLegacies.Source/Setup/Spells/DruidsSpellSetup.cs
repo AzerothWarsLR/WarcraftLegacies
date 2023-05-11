@@ -20,10 +20,20 @@ namespace WarcraftLegacies.Source.Setup.Spells
       
       SpellSystem.Register(new RegrowTrees(Constants.ABILITY_A04C_SEED_GROWTH)
       {
-        Radius = 600
+        Radius = 1200
       });
 
       SpellSystem.Register(new Devour(Constants.ABILITY_A0NP_DEVOUR_TORTOLLA)
+      {
+        PercentageOfMaxHealth = 0.5f,
+        Damage = new LeveledAbilityField<float>
+        {
+          Base = 100,
+          PerLevel = 100
+        }
+      });
+
+      SpellSystem.Register(new Devour(Constants.ABILITY_A0S0_DEVOUR_OURO)
       {
         PercentageOfMaxHealth = 0.5f,
         Damage = new LeveledAbilityField<float>

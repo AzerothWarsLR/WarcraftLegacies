@@ -1,4 +1,6 @@
-﻿using MacroTools;
+﻿using System;
+using MacroTools;
+using MacroTools.Cheats;
 using MacroTools.CommandSystem;
 using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
@@ -10,7 +12,6 @@ using WarcraftLegacies.Source.GameLogic;
 using WarcraftLegacies.Source.GameLogic.GameEnd;
 using WarcraftLegacies.Source.Mechanics.Druids;
 using WarcraftLegacies.Source.Mechanics.Frostwolf;
-using WarcraftLegacies.Source.Mechanics.Quelthalas;
 using WarcraftLegacies.Source.Mechanics.Scourge;
 using WarcraftLegacies.Source.Mechanics.Scourge.Blight;
 using WarcraftLegacies.Source.Setup.FactionSetup;
@@ -30,21 +31,10 @@ namespace WarcraftLegacies.Source.Setup
     public static void Setup()
     {
       PlayerData.Initialize();
-      ControlPointManager.Instance = new ControlPointManager
-      {
-        StartingMaxHitPoints = 1400,
-        HostileStartingCurrentHitPoints = 1000,
-        IncreaseControlLevelAbilityTypeId = Constants.ABILITY_A0A8_FORTIFY_CONTROL_POINTS_SHARED,
-        ControlLevelSettings = new ControlLevelSettings
-        {
-          DefaultDefenderUnitTypeId = Constants.UNIT_H03W_CONTROL_POINT_DEFENDER_LORDAERON,
-          DamageBase = 18,
-          DamagePerControlLevel = 1,
-          ArmorPerControlLevel = 1,
-          HitPointsPerControlLevel = 70,
-          ControlLevelMaximum = 20
-        }
-      };
+      var displayIntroText = new DisplayIntroText(25);
+      var cinematicMode = new CinematicMode(59, displayIntroText);
+      var gameTime = new GameTime();
+      SetupControlPointManager();
       var preplacedUnitSystem = new PreplacedUnitSystem();
       SoundLibrary.Setup();
       var artifactSetup = new ArtifactSetup(preplacedUnitSystem);
@@ -57,16 +47,15 @@ namespace WarcraftLegacies.Source.Setup
       AllFactionSetup.Setup(preplacedUnitSystem, artifactSetup);
       SharedFactionConfigSetup.Setup();
       PlayerSetup.Setup();
+      ZandalarGoblinChoiceDialogue.Setup();
+      IllidariSunfuryChoiceDialogue.Setup();
       NeutralHostileSetup.Setup();
       AllQuestSetup.Setup(preplacedUnitSystem, artifactSetup, allLegendSetup);
       ObserverSetup.Setup(new[] { Player(21) });
       SpellsSetup.Setup();
       var commandManager = new CommandManager();
-      CheatSetup.Setup(commandManager);
       CommandSetup.Setup(commandManager);
       ControlPointVictory.Setup();
-      SilvermoonDies.Setup(allLegendSetup.Quelthalas.Sunwell);
-      GameTime.Setup();
       FactionMultiboard.Setup();
       BookSetup.Setup();
       HintConfig.Setup();
@@ -74,9 +63,10 @@ namespace WarcraftLegacies.Source.Setup
       BlightSystem.Setup(ScourgeSetup.Scourge);
       BlightSetup.Setup(preplacedUnitSystem);
       QuestMenuSetup.Setup();
-      CinematicMode.Start(59);
+      cinematicMode.StartTimer();
+      gameTime.StartTimer();
+      CheatSetup.Setup(commandManager, cinematicMode);
       DialogueSetup.Setup(preplacedUnitSystem, allLegendSetup);
-      DisplayIntroText.Setup(10);
       GameSettings.Setup();
       InfoQuests.Setup();
       DestructibleSetup.Setup(preplacedUnitSystem);
@@ -140,6 +130,26 @@ namespace WarcraftLegacies.Source.Setup
       CenariusGhost.Setup(allLegendSetup.Druids);
       HelmOfDominationDropsWhenScourgeLeaves.Setup(artifactSetup.HelmOfDomination, allLegendSetup.Scourge.TheFrozenThrone);
       TagSummonedUnits.Setup();
+    }
+
+    private static void SetupControlPointManager()
+    {
+      ControlPointManager.Instance = new ControlPointManager
+      {
+        StartingMaxHitPoints = 1400,
+        HostileStartingCurrentHitPoints = 1000,
+        RegenerationAbility = Constants.ABILITY_A0UT_CP_LIFE_REGEN,
+        IncreaseControlLevelAbilityTypeId = Constants.ABILITY_A0A8_FORTIFY_CONTROL_POINTS_SHARED,
+        ControlLevelSettings = new ControlLevelSettings
+        {
+          DefaultDefenderUnitTypeId = Constants.UNIT_H03W_CONTROL_POINT_DEFENDER_LORDAERON,
+          DamageBase = 18,
+          DamagePerControlLevel = 1,
+          ArmorPerControlLevel = 1,
+          HitPointsPerControlLevel = 70,
+          ControlLevelMaximum = 20
+        }
+      };
     }
   }
 }

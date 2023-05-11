@@ -1,5 +1,4 @@
 ﻿using MacroTools.CommandSystem;
-using System;
 using System.Collections.Generic;
 using WCSharp.Events;
 using static War3Api.Common;
@@ -16,6 +15,9 @@ namespace MacroTools.Cheats
 
     /// <inheritdoc />
     public override string CommandText => "build";
+    
+    /// <inheritdoc />
+    public override bool Exact => false;
 
     /// <inheritdoc />
     public override int MinimumParameterCount => 1;

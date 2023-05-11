@@ -1,4 +1,4 @@
-using MacroTools.Extensions;
+﻿using MacroTools.Extensions;
 using MacroTools.QuestSystem;
 using WCSharp.Events;
 using WCSharp.Shared.Data;
@@ -24,7 +24,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
 
     private void OnUnitChangeOwner()
     {
-      if (IsPlayerOnSameTeamAsAnyEligibleFaction(_target.OwningPlayer()))
+      if (IsPlayerOnSameTeamAsAnyEligibleFaction(_target.OwningPlayer()) is true)
         Progress = QuestProgress.Complete;
     }
   }

@@ -28,6 +28,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
       Magtheridon = new LegendaryHero("Magtheridon")
       {
         UnitType = Constants.UNIT_NMAG_LORD_OF_OUTLAND_FEL_HORDE,
+        StartingXp = 1800,
         DeathMessage = "Magtheridon’s eternal demon soul has been consumed, and his life permanently extinguished. The Lord of Outland has fallen."
       };
 
@@ -79,19 +80,22 @@ namespace WarcraftLegacies.Source.Setup.Legends
       KilsorrowFortress = new Capital
       {
         Unit = preplacedUnitSystem.GetUnit(FourCC("o017")),
-        DeathMessage = "Kilsorrow Fortress has been razed."
+        DeathMessage = "Kilsorrow Fortress has been razed.",
+        Essential = true
       };
 
       BlackTemple = new Capital
       {
         Unit = preplacedUnitSystem.GetUnit(FourCC("o00F")),
+        Essential = true
       };
       BlackTemple.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_NPGR_POWER_GENERATOR_TEAL, new Point(5511.9f, -29688.2f)));
       BlackTemple.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_NPGR_POWER_GENERATOR_TEAL, new Point(5513.1f, -30467.4f)));
 
       HellfireCitadel = new Capital
       {
-        Unit = preplacedUnitSystem.GetUnit(FourCC("o008"))
+        Unit = preplacedUnitSystem.GetUnit(FourCC("o008")),
+        Essential = true
       };
     }
     

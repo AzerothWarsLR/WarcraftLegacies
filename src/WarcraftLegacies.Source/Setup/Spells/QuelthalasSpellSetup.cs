@@ -43,11 +43,11 @@ namespace WarcraftLegacies.Source.Setup.Spells
       
       var siphoningRitual = new SiphoningRitualSpell(Constants.ABILITY_A0FA_SIPHONING_RITUAL_QUEL_THALAS_KAEL_THAS)
       {
-        TargetCountBase = 7,
+        TargetCountBase = 24,
         TargetCountLevel = 0,
-        LifeDrainedPerSecondBase = 10,
+        LifeDrainedPerSecondBase = 30,
         LifeDrainedPerSecondLevel = 10,
-        ManaDrainedPerSecondBase = 5,
+        ManaDrainedPerSecondBase = 15,
         ManaDrainedPerSecondLevel = 5,
         Range = 500,
         Radius = 225,
@@ -60,9 +60,9 @@ namespace WarcraftLegacies.Source.Setup.Spells
         OrbitRadius = 350,
         OrbitalPeriod = 4,
         OrbEffectPath = @"war3mapImported\OrbFireX.mdx",
-        Damage = new LeveledAbilityField<float> { Base = 25, PerLevel = 50 },
-        CollisionRadius = new LeveledAbilityField<float> { Base = 150, PerLevel = 0},
-        OrbDuration = 45,
+        Damage = new LeveledAbilityField<float> { Base = 25, PerLevel = 25 },
+        CollisionRadius = new LeveledAbilityField<float> { Base = 100, PerLevel = 0},
+        OrbDuration = 30,
         AbilityWhitelist = new List<int>
         {
           Constants.ABILITY_A04J_ARCANE_BURST_HIGH_ELVES_ANASTERIAN,
@@ -70,7 +70,22 @@ namespace WarcraftLegacies.Source.Setup.Spells
           Constants.ABILITY_AHPX_ASHES_OF_AL_AR_QUEL_THALAS_ANASTERIAN_KAEL_THAS
         }
       });
-      
+
+      PassiveAbilityManager.Register(new RestoreManaFromDamage(Constants.UNIT_N0E7_BLOODWARDER_SUNFURY, Constants.ABILITY_A11N_ARCANE_ABSORPTION_KHADGAR)
+      {
+        ManaPerDamage = new LeveledAbilityField<float>
+        {
+          Base = 0.20f,
+          PerLevel = 0.20f
+        },
+        Effect = "Abilities\\Spells\\Undead\\ReplenishMana\\SpiritTouchTarget.mdl"
+      });
+
+      SpellSystem.Register(new RegrowTrees(Constants.ABILITY_A12L_REGROW_TREES_DOMES)
+      {
+        Radius = 1500
+      });
+
       //Todo: create an "Extract Vial" spell for the Sunwell and assign it below
       SpellSystem.Register(new ExtractSunwellVial(Constants.ABILITY_A0OC_EXTRACT_VIAL_ALL, Constants.ITEM_I018_VIAL_OF_THE_SUNWELL));
     }

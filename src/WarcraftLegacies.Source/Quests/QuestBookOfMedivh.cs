@@ -45,6 +45,7 @@ namespace WarcraftLegacies.Source.Quests
         AddObjective(new ObjectiveCapitalDead(dalaran));
       _bookOfMedivhPedestal = bookOfMedivhPedestal;
       Required = bypassLevelRequirement;
+      Shared = true;
     }
 
     /// <inheritdoc/>

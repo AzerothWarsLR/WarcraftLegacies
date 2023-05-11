@@ -1,7 +1,5 @@
 ﻿using MacroTools;
-using MacroTools.Extensions;
 using MacroTools.FactionSystem;
-using MacroTools.Powers;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
@@ -14,17 +12,14 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
       Kultiras =
-        new Faction(
-          "Kul'tiras", PLAYER_COLOR_EMERALD, "|cff00781e", "ReplaceableTextures\\CommandButtons\\BTNProudmoore.blp")
-          {
-            StartingGold = 200,
-            StartingLumber = 500,
-            ControlPointDefenderUnitTypeId = Constants.UNIT_H09W_CONTROL_POINT_DEFENDER_KUL_TIRAS,
-            IntroText = @"You are playing as the maritime |cff008000Kingdom of Kul'tiras|r.
+        new Faction(FactionNames.KulTiras, PLAYER_COLOR_EMERALD, "|cff00781e", "ReplaceableTextures\\CommandButtons\\BTNProudmoore.blp")
+        {
+          StartingGold = 200,
+          StartingLumber = 700,
+          ControlPointDefenderUnitTypeId = Constants.UNIT_H09W_CONTROL_POINT_DEFENDER_KUL_TIRAS,
+          IntroText = @"You are playing as the maritime |cff008000Kingdom of Kul'tiras|r.
 
 You begin on Balor island, separated from your main forces in Kul Tiras. Unite your forces by eliminating your enemies in Tiragarde, Drustvar and Stormsong Valley.
-
-Illidan's Naga have established a base in the Broken Isles, and are preparing to invade your islands from the North.
 
 Stormwind is preparing for an invasion through the Dark Portal in the South. Muster the Admiralty and help them, or you may lose your strongest ally."
         };
@@ -87,6 +82,7 @@ Stormwind is preparing for an invasion through the Dark Portal in the South. Mus
       Kultiras.ModObjectLimit(FourCC("Rhac"), Faction.UNLIMITED); //Improved Masonry
       Kultiras.ModObjectLimit(FourCC("R08B"), Faction.UNLIMITED); //Long Rifles
       Kultiras.ModObjectLimit(FourCC("R00K"), Faction.UNLIMITED); //Power Infusion
+      Kultiras.ModObjectLimit(FourCC("R05J"), Faction.UNLIMITED); //Expedition
 
       //Heroes
       Kultiras.ModObjectLimit(FourCC("Hapm"), 1); //Admiral

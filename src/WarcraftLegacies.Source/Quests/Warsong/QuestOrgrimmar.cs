@@ -11,6 +11,7 @@ using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Warsong
 {
+
   public sealed class QuestOrgrimmar : QuestData
   {
     private readonly List<unit> _rescueUnits = new();
@@ -21,17 +22,11 @@ namespace WarcraftLegacies.Source.Quests.Warsong
       "ReplaceableTextures\\CommandButtons\\BTNFortress.blp")
     {
       AddObjective(new ObjectiveResearch(RequiredResearchId, Constants.UNIT_O02S_FORTRESS_WARSONG_T3));
-      AddObjective(new ObjectiveExpire(1500));
+      AddObjective(new ObjectiveExpire(1500, Title));
       AddObjective(new ObjectiveSelfExists());
       ResearchId = Constants.UPGRADE_R05R_QUEST_COMPLETED_TO_TAME_A_LAND;
       Required = true;
-
-      foreach (var unit in CreateGroup().EnumUnitsInRect(rescueRect).EmptyToList())
-        if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))
-        {
-          SetUnitInvulnerable(unit, true);
-          _rescueUnits.Add(unit);
-        }
+      _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
     }
 
     /// <inheritdoc/>

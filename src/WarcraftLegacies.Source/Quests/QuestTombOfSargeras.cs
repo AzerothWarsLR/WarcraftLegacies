@@ -36,13 +36,14 @@ namespace WarcraftLegacies.Source.Quests
       CreateRegion();
       _entrance = entrance;
       guldanRemains.SetAnimation("death").SetInvulnerable(true);
-      AddObjective(new ObjectiveTime(900));
+      //AddObjective(new ObjectiveTime(900));
       _enterTombOfSargerasRegion =
         new ObjectiveAnyHeroWithLevelReachRect(10, Regions.Sargeras_Entrance, "the Tomb of Sargeras' entrance");
       AddObjective(_enterTombOfSargerasRegion);
       _preventAccessTriggers = CreatePreventAccessTriggers(interiorRects);
       HideUnitsInsideTomb(interiorRects);
       _entranceDoor = entranceDoor.SetInvulnerable(true);
+      Shared = true;
     }
 
     /// <inheritdoc />

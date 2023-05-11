@@ -1,5 +1,4 @@
-﻿using MacroTools.Extensions;
-using MacroTools.FactionSystem;
+﻿using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.QuestSystem;
@@ -12,7 +11,6 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
   /// </summary>
   public sealed class QuestSentinelsKillFrostwolf : QuestData
   {
-    private const int AmaraId = Constants.UNIT_H03I_MOON_PRIESTESS_AMARA_SENTINELS_DEMI;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestSentinelsKillFrostwolf"/> class.
@@ -27,22 +25,20 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
     }
     /// <inheritdoc/>
     protected override string RewardFlavour =>
-      "The Frostwolves have been ousted from Kalimdor, along with their Tauren allies. They will !be missed.";
+      "The Frostwolves have been ousted from Kalimdor, along with their Tauren allies. They will not be missed.";
 
     /// <inheritdoc/>
-    protected override string RewardDescription => "The demihero Amara and the hero Jarod Shadowsong are now trainable at the Altar of Watches";
+    protected override string RewardDescription => "Moon Riders are trainable at the Roost";
 
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
     {
       SetPlayerTechResearched(completingFaction.Player, ResearchId, 1);
-      completingFaction.Player?.DisplayUnitTypeAcquired(AmaraId, "You can now revive Amara from the Altar of Elders.");
 
     }
     /// <inheritdoc/>
     protected override void OnAdd(Faction whichFaction)
     {
-      whichFaction.ModObjectLimit(AmaraId, 1);
       whichFaction.ModObjectLimit(ResearchId, Faction.UNLIMITED);
     }
   }

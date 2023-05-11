@@ -11,12 +11,12 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
 
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
-      Dalaran = new Faction("Dalaran", PLAYER_COLOR_PINK, "|c00e55bb0",
+      Dalaran = new Faction(FactionNames.Dalaran, PLAYER_COLOR_PINK, "|c00e55bb0",
         "ReplaceableTextures\\CommandButtons\\BTNJaina.blp")
       {
         UndefeatedResearch = FourCC("R05N"),
         StartingGold = 200,
-        StartingLumber = 500,
+        StartingLumber = 700,
         CinematicMusic = "SadMystery",
         ControlPointDefenderUnitTypeId = Constants.UNIT_N00N_CONTROL_POINT_DEFENDER_DALARAN,
         IntroText = @"You are playing the wise |cffff8080Council of Dalaran|r.
@@ -74,6 +74,7 @@ Your mages are the finest in Azeroth, be sure to utilize them alongside your her
       Dalaran.ModObjectLimit(FourCC("njks"), 1); //Jailor Kassan
       Dalaran.ModObjectLimit(FourCC("Hjai"), 1); //jaina
       Dalaran.ModObjectLimit(FourCC("Hant"), 1); //antonidas
+      Dalaran.ModObjectLimit(FourCC("H09N"), 1); //aegwynn
 
       //Upgrades
       Dalaran.ModObjectLimit(FourCC("R01I"), Faction.UNLIMITED); //Arcanist Adept Training
@@ -98,7 +99,7 @@ Your mages are the finest in Azeroth, be sure to utilize them alongside your her
       Dalaran.ModAbilityAvailability(Constants.ABILITY_A0K5_DWARVEN_MASONRY_CASTLES_YELLOW, -1);
 
       Dalaran.AddGoldMine(preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(9204, 2471)));
-      
+
       FactionManager.Register(Dalaran);
     }
   }

@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using MacroTools;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
@@ -6,6 +7,7 @@ using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.QuestSystem;
+using WCSharp.Shared.Data;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Stormwind
@@ -13,15 +15,17 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
   public sealed class QuestNethergarde : QuestData
   {
     private readonly List<unit> _rescueUnits;
+    private readonly unit _gate;
 
-    public QuestNethergarde(LegendaryHero varian) : base("Nethergarde Relief",
+    public QuestNethergarde(PreplacedUnitSystem preplacedUnitSystem, LegendaryHero varian) : base("Nethergarde Relief",
       "Nethergarde Keep fort is holding down the Dark Portal, they will need to be reinforced soon!",
       "ReplaceableTextures\\CommandButtons\\BTNStormwindGuardTower.blp")
     {
       AddObjective(new ObjectiveLegendInRect(varian, Regions.NethergardeUnlock, "Nethergarde"));
-      AddObjective(new ObjectiveExpire(1440));
+      AddObjective(new ObjectiveExpire(1440, Title));
       AddObjective(new ObjectiveSelfExists());
       _rescueUnits = Regions.NethergardeUnlock.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
+      _gate = preplacedUnitSystem.GetUnit(Constants.UNIT_H00L_HORIZONTAL_WOODEN_GATE_OPEN, new Point(17140, -18000));
     }
 
     /// <inheritdoc />
@@ -40,6 +44,7 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
     protected override void OnComplete(Faction completingFaction)
     {
       completingFaction.Player.RescueGroup(_rescueUnits);
+      SetUnitOwner(_gate, completingFaction.Player, true);
     }
   }
 }

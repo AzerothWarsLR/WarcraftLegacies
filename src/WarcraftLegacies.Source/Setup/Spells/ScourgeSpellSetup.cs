@@ -2,6 +2,7 @@
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.Spells;
 using MacroTools.SpellSystem;
+using System.Collections.Generic;
 using WarcraftLegacies.Source.Mechanics.Scourge;
 
 namespace WarcraftLegacies.Source.Setup.Spells
@@ -19,7 +20,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
       SpellSystem.Register(new SingleTargetRecall(Constants.ABILITY_A0W8_RECALL_FROZEN_THRONE));
 
       PassiveAbilityManager.Register(new PersistentSoul(Constants.UNIT_N009_REVENANT_SCOURGE,
-        Constants.ABILITY_A05L_PERSISTENT_SOUL_SCOURGE_REVENANT)
+        Constants.ABILITY_A05L_PERSISTENT_SOUL_SCOURGE_REVENANT, new List<int>{ Constants.ABILITY_ACRK_RESISTANT_SKIN_1_1_POSITION, Constants.ABILITY_ACSK_RESISTANT_SKIN_2_1_POSITION, Constants.ABILITY_A08P_RESISTANT_SKIN_3_1_POSITION, Constants.ABILITY_ARSK_RESISTANT_SKIN_BROWN_MOUNTAIN_GIANT })
       {
         ReanimationCountLevel = 1,
         Duration = 40,

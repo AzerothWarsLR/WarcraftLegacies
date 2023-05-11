@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using DesyncSafeAnalyzer.Attributes;
 using MacroTools.ControlPointSystem;
@@ -33,7 +33,6 @@ namespace MacroTools.Extensions
     private readonly Dictionary<int, int> _objectLimits = new();
     private float _baseIncome; //Gold per minute
     private float _bonusIncome;
-    private int _controlPointCount;
 
     private Team? _team;
     private Faction? _faction;
@@ -44,6 +43,7 @@ namespace MacroTools.Extensions
     private PlayerData(player player)
     {
       Player = player;
+      EliminationTurns = 0;
     }
 
     private player Player { get; }
@@ -111,6 +111,8 @@ namespace MacroTools.Extensions
       }
     }
 
+    public int EliminationTurns { get; set; }
+    
     public float LumberIncome { get; set; }
 
     /// <summary>
@@ -148,17 +150,29 @@ namespace MacroTools.Extensions
       }
     }
 
-    public int ControlPointCount
-    {
-      get => _controlPointCount;
-      set
-      {
-        if (value < 0)
-          throw new ArgumentOutOfRangeException(
-            $"Tried to assign a negative {nameof(ControlPointCount)} to + {GetPlayerName(Player)}");
+    /// <summary>
+    /// Control points the player owns
+    /// </summary>
+    public List<ControlPoint> ControlPoints { get; set; } = new();
 
-        _controlPointCount = value;
-      }
+    /// <summary>
+    /// Adds <see cref="ControlPoint" /> to list of this <see cref="player" />'s controlpoints, updates the <see cref="Team" /> total and fires any events subscribed to ControlPointsChanged
+    /// </summary>
+    /// <param name="controlPoint"></param>
+    public void AddControlPoint(ControlPoint controlPoint)
+    {
+      ControlPoints.Add(controlPoint);
+      ControlPointsChanged?.Invoke(this, this);
+    }
+    
+    /// <summary>
+    /// Removes <see cref="ControlPoint" /> from list of this <see cref="player" />'s controlpoints, updates the <see cref="Team" /> total and fires any events subscribed to ControlPointsChanged
+    /// </summary>
+    /// <param name="controlPoint"></param>
+    public void RemoveControlPoint(ControlPoint controlPoint)
+    {
+      ControlPoints.Remove(controlPoint);
+      ControlPointsChanged?.Invoke(this, this);
     }
 
     /// <summary>
@@ -170,6 +184,11 @@ namespace MacroTools.Extensions
     /// Fired when the player's income changes.
     /// </summary>
     public event EventHandler<PlayerData>? IncomeChanged;
+    
+    /// <summary>
+    /// Fired when the <see cref="player" />'s <see cref="ControlPoint" />s change
+    /// </summary>
+    public event EventHandler<PlayerData>? ControlPointsChanged;
 
     /// <summary>
     /// Fired when any player changes <see cref="Faction"/>.
