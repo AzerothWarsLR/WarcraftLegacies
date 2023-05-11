@@ -1,6 +1,6 @@
-﻿using System.Collections.Generic;
-using System.Collections.Immutable;
+﻿using System.Collections.Immutable;
 using System.Linq;
+using DesyncSafeAnalyzer.Attributes;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
@@ -9,7 +9,7 @@ using Microsoft.CodeAnalysis.Diagnostics;
 namespace DesyncSafeAnalyzer.Analyzers
 {
   [DiagnosticAnalyzer(LanguageNames.CSharp)]
-  public sealed class PropertyAccessAnalyzer : DiagnosticAnalyzer
+  public class PropertyAccessAnalyzer : DiagnosticAnalyzer
   {
     private const string DiagnosticId = "ZB005";
     private const string Category = "Usage";
@@ -27,44 +27,55 @@ namespace DesyncSafeAnalyzer.Analyzers
     public override void Initialize(AnalysisContext context)
     {
       context.EnableConcurrentExecution();
-      context.ConfigureGeneratedCodeAnalysis(GeneratedCodeAnalysisFlags.None);
-      context.RegisterSyntaxNodeAction(AnalyzeNode, SyntaxKind.PropertyDeclaration);
+      context.ConfigureGeneratedCodeAnalysis(GeneratedCodeAnalysisFlags.Analyze |
+                                             GeneratedCodeAnalysisFlags.ReportDiagnostics);
+      context.RegisterSyntaxNodeAction(AnalyzeSyntaxNode, SyntaxKind.SimpleAssignmentExpression);
     }
 
-    private static void AnalyzeNode(SyntaxNodeAnalysisContext context)
+    private static void AnalyzeSyntaxNode(SyntaxNodeAnalysisContext context)
     {
-      var propertyDeclaration = (PropertyDeclarationSyntax)context.Node;
+      var assignmentExpression = (AssignmentExpressionSyntax)context.Node;
 
-      var referencingMethods = GetReferencingMethods(propertyDeclaration, context.Compilation);
-      foreach (var referencingMethod in referencingMethods)
-      {
-        if (HasDesyncSafeAttribute(referencingMethod))
-          context.ReportDiagnostic(Diagnostic.Create(Rule, referencingMethod.Identifier.GetLocation(),
-            propertyDeclaration.Identifier, referencingMethod.Identifier));
-      }
-    }
+      var identifier = GetAssignedPropertyIdentifier(assignmentExpression);
+      if (identifier == null)
+        return;
 
-    private static bool HasDesyncSafeAttribute(MethodDeclarationSyntax methodDeclaration)
-    {
-      return methodDeclaration.AttributeLists
+      var symbol = context.SemanticModel.GetSymbolInfo(identifier).Symbol;
+
+      if (symbol?.Kind != SymbolKind.Property)
+        return;
+
+      var propertySymbol = (IPropertySymbol)symbol;
+      if (propertySymbol.SetMethod == null)
+        return;
+
+      var containingMethod = identifier.FirstAncestorOrSelf<MethodDeclarationSyntax>();
+      var desyncSafeAttribute = containingMethod?.AttributeLists
         .SelectMany(list => list.Attributes)
-        .Any(attribute =>
-          attribute.Name.ToString() == "DesyncSafe");
-    }
+        .FirstOrDefault(attr => attr.Name.ToString() == "DesyncSafe");
 
-    private static IEnumerable<MethodDeclarationSyntax> GetReferencingMethods(PropertyDeclarationSyntax propertyDeclaration, Compilation compilation)
+      if (desyncSafeAttribute == null)
+        return;
+
+      var diagnostic = Diagnostic.Create(Rule, assignmentExpression.GetLocation());
+      context.ReportDiagnostic(diagnostic);
+    }
+    
+    /// <summary>
+    /// Gets the property being assigned within a property assignment.
+    /// </summary>
+    private static IdentifierNameSyntax GetAssignedPropertyIdentifier(AssignmentExpressionSyntax assignmentExpression)
     {
-      var symbol = compilation.GetSemanticModel(propertyDeclaration.SyntaxTree).GetDeclaredSymbol(propertyDeclaration);
-      if (symbol == null) 
-        return Enumerable.Empty<MethodDeclarationSyntax>();
-      
-      var referencingMethods = compilation.SyntaxTrees
-        .SelectMany(tree => tree.GetRoot().DescendantNodes().OfType<MethodDeclarationSyntax>())
-        .Where(method =>
-          method.Body != null && // Skip methods without a body
-          method.Body.DescendantNodes().OfType<IdentifierNameSyntax>().Any(identifier =>
-            SymbolEqualityComparer.Default.Equals(compilation.GetSemanticModel(method.SyntaxTree).GetSymbolInfo(identifier).Symbol, symbol)));
-      return referencingMethods;
+      var leftOperand = assignmentExpression.Left;
+      switch (leftOperand)
+      {
+        case MemberAccessExpressionSyntax memberAccessExpression when memberAccessExpression.Name is IdentifierNameSyntax propertySyntax:
+          return propertySyntax;
+        case IdentifierNameSyntax propertySyntax:
+          return propertySyntax;
+        default:
+          return null;
+      }
     }
   }
 }
