@@ -12,7 +12,8 @@ namespace MacroTools.Frames
     private float _height;
     private float _width;
 
-    protected framehandle Handle { get; }
+    /// <summary>The actual WC3 frame object this object is representing.</summary>
+    public framehandle Handle { get; }
 
     public Frame Parent
     {
