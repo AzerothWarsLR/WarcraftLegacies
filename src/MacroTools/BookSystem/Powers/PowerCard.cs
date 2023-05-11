@@ -1,4 +1,5 @@
 ﻿using MacroTools.ArtifactSystem;
+using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.Frames;
 using static War3Api.Common;
@@ -47,9 +48,9 @@ namespace MacroTools.BookSystem.Powers
         Width = 0.062f,
         Height = 0.027f,
         Text = "Use",
-        Visible = power.Usable,
         OnClick = power.OnUse
       };
+      _actionButton.Handle.SetVisible(power.Usable);
       _actionButton.SetPoint(FRAMEPOINT_BOTTOMRIGHT, this, FRAMEPOINT_BOTTOMRIGHT, -0.01f, 0.002f);
       AddFrame(_actionButton);
 

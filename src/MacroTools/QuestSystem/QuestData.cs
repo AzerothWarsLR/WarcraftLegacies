@@ -369,12 +369,12 @@ namespace MacroTools.QuestSystem
             break;
           case QuestProgress.Incomplete:
             UnsyncUtils.InvokeForClients(() => { objective.ShowLocal(Progress); },
-              localPlayer => objective.EligibleFactions.Contains(localPlayer));
+              localPlayer => objective.EligibleFactions.Contains(localPlayer) == true);
             objective.ShowSync(Progress);
             break;
           case QuestProgress.Complete:
             UnsyncUtils.InvokeForClients(() => { objective.HideLocal(); },
-              localPlayer => objective.EligibleFactions.Contains(localPlayer));
+              localPlayer => objective.EligibleFactions.Contains(localPlayer) == true);
             objective.HideSync();
             break;
           case QuestProgress.Failed:
