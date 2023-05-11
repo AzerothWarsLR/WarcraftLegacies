@@ -1,4 +1,5 @@
-﻿using static War3Api.Common;
+﻿using DesyncSafeAnalyzer.Attributes;
+using static War3Api.Common;
 
 namespace MacroTools.Extensions
 {
@@ -16,5 +17,11 @@ namespace MacroTools.Extensions
     /// Returns the framehandle's height.
     /// </summary>
     public static float GetHeight(this framehandle frameHandle) => BlzFrameGetHeight(frameHandle);
+
+    /// <summary>
+    /// Determines whether or not the frame is visible.
+    /// </summary>
+    [DesyncSafe]
+    public static void SetVisible(this framehandle frameHandle, bool visible) => BlzFrameSetVisible(frameHandle, visible);
   }
 }

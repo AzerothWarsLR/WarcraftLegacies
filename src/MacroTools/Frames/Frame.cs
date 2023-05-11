@@ -47,7 +47,6 @@ namespace MacroTools.Frames
     public bool Visible
     {
       get => BlzFrameIsVisible(Handle);
-      set => BlzFrameSetVisible(Handle, value);
     }
 
     public string Texture
