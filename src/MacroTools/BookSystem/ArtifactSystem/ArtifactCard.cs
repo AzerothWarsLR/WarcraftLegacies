@@ -58,9 +58,9 @@ namespace MacroTools.BookSystem.ArtifactSystem
         Width = 0.062f,
         Height = 0.027f,
         Text = "Ping",
-        Visible = false,
         OnClick = artifact.Ping
       };
+      _pingButton.Handle.SetVisible(false);
       _pingButton.SetPoint(FRAMEPOINT_LEFT, this, FRAMEPOINT_LEFT, 0.057f, -0.009f);
       AddFrame(_pingButton);
 
@@ -82,27 +82,27 @@ namespace MacroTools.BookSystem.ArtifactSystem
         case ArtifactLocationType.Unit:
           if (_artifact.OwningPlayer?.GetFaction() != null)
           {
-            _text.Visible = true;
-            _pingButton.Visible = false;
+            _text.Handle.SetVisible(true);
+            _pingButton.Handle.SetVisible(false);
             _text.Text = $"Owned by {_artifact.OwningPlayer?.GetFaction()?.ColoredName}";
           }
           else
           {
-            _text.Visible = false;
-            _pingButton.Visible = true;
+            _text.Handle.SetVisible(false);
+            _pingButton.Handle.SetVisible(true);
           }
           break;
         case ArtifactLocationType.Ground:
-          _text.Visible = false;
-          _pingButton.Visible = true;
+          _text.Handle.SetVisible(false);
+          _pingButton.Handle.SetVisible(true);
           break;
         case ArtifactLocationType.Special:
-          _text.Visible = false;
-          _pingButton.Visible = true;
+          _text.Handle.SetVisible(false);
+          _pingButton.Handle.SetVisible(true);
           break;
         case ArtifactLocationType.Hidden:
-          _text.Visible = true;
-          _pingButton.Visible = false;
+          _text.Handle.SetVisible(true);
+          _pingButton.Handle.SetVisible(false);
           _text.Text = _artifact.LocationDescription;
           break;
         default:

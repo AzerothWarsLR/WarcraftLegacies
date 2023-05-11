@@ -35,7 +35,7 @@ namespace MacroTools.BookSystem
     {
       Width = width;
       Height = height;
-      Visible = false;
+      Handle.SetVisible(false);
 
       ExitButton = new Button("ScriptDialogButton", this, 0)
       {
@@ -52,9 +52,9 @@ namespace MacroTools.BookSystem
         Width = 0.09f,
         Height = 0.037f,
         Text = "Next",
-        OnClick = MoveNext,
-        Visible = true
+        OnClick = MoveNext
       };
+      MoveNextButton.Handle.SetVisible(true);
       MoveNextButton.SetPoint(FRAMEPOINT_BOTTOMRIGHT, this, FRAMEPOINT_BOTTOMRIGHT, -bottomButtonXOffset,
         bottomButtonYOffset);
       AddFrame(MoveNextButton);
@@ -64,9 +64,9 @@ namespace MacroTools.BookSystem
         Width = 0.09f,
         Height = 0.037f,
         Text = "Previous",
-        OnClick = MovePrevious,
-        Visible = true
+        OnClick = MovePrevious
       };
+      MovePreviousButton.Handle.SetVisible(true);
       MovePreviousButton.SetPoint(FRAMEPOINT_BOTTOMLEFT, this, FRAMEPOINT_BOTTOMLEFT, bottomButtonXOffset,
         bottomButtonYOffset);
       AddFrame(MovePreviousButton);
@@ -130,9 +130,9 @@ namespace MacroTools.BookSystem
       {
         if (value >= Pages.Count || value < 0)
           return;
-        Pages[_activePageIndex].Visible = false;
+        Pages[_activePageIndex].Handle.SetVisible(false);
         _activePageIndex = value;
-        Pages[_activePageIndex].Visible = true;
+        Pages[_activePageIndex].Handle.SetVisible(true);
         RefreshNavigationButtonVisiblity();
       }
     }
@@ -146,8 +146,8 @@ namespace MacroTools.BookSystem
       {
         if (!Visible || LauncherButton.Visible)
           return;
-        Visible = false;
-        LauncherButton.Visible = true;
+        Handle.SetVisible(false);
+        LauncherButton.Handle.SetVisible(true);
       }, whichPlayer);
     }
 
@@ -193,14 +193,14 @@ namespace MacroTools.BookSystem
       {
         UnsyncUtils.InvokeForClient(() =>
         {
-          Visible = true;
-          LauncherButton.Visible = false;
+          Handle.SetVisible(true);
+          LauncherButton.Handle.SetVisible(false);
           foreach (var page in Pages)
           {
-            page.Visible = false;
+            page.Handle.SetVisible(false);
           }
 
-          Pages.First().Visible = true;
+          Pages.First().Handle.SetVisible(true);
           _activePageIndex = 0;
           RefreshNavigationButtonVisiblity();
         }, triggerPlayer);
@@ -238,8 +238,8 @@ namespace MacroTools.BookSystem
     private void RefreshNavigationButtonVisiblity()
     {
       var pageCount = Pages.Count;
-      MoveNextButton.Visible = pageCount > ActivePageIndex + 1;
-      MovePreviousButton.Visible = ActivePageIndex > 0;
+      MoveNextButton.Handle.SetVisible(pageCount > ActivePageIndex + 1);
+      MovePreviousButton.Handle.SetVisible(ActivePageIndex > 0);
     }
   }
 }

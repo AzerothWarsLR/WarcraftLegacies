@@ -14,7 +14,10 @@ namespace MacroTools.BookSystem
     /// <summary>
     /// Determines whether or not the book is visible.
     /// </summary>
-    public bool Visible { get; set; }
+    public bool Visible { get; }
+    
+    /// <summary>The actual WC3 frame object this book is represented by.</summary>
+    public framehandle Handle { get; }
       
     /// <summary>
     /// The name of the Book's launcher Button.

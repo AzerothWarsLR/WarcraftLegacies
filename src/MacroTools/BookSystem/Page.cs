@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using MacroTools.Extensions;
 using MacroTools.Frames;
 using static War3Api.Common;
 
@@ -31,7 +32,7 @@ namespace MacroTools.BookSystem
       _pageNumberFrame.SetPoint(FRAMEPOINT_CENTER, this, FRAMEPOINT_TOPRIGHT, -0.05f, -0.025f);
       AddFrame(_pageNumberFrame);
 
-      Visible = false;
+      Handle.SetVisible(false);
     }
 
     /// <summary>

@@ -33,9 +33,9 @@ namespace MacroTools.BookSystem
       book.LauncherButton.OnClick = book.Open;
 
       if (whichPlayer == null)
-        book.Visible = true;
+        book.Handle.SetVisible(true);
       else
-        UnsyncUtils.InvokeForClient(() => { book.Visible = true; }, whichPlayer);
+        UnsyncUtils.InvokeForClient(() => { book.Handle.SetVisible(true); }, whichPlayer);
     }
 
     private static void LoadToc(string tocFilePath)

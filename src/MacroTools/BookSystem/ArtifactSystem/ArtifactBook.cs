@@ -52,7 +52,7 @@ namespace MacroTools.BookSystem.ArtifactSystem
     {
       foreach (var page in Pages)
       {
-        page.Visible = false; //This avoid a crash to desktop when rerendering a Book that a player has open.
+        page.Handle.SetVisible(false); //This avoid a crash to desktop when rerendering a Book that a player has open.
         page.Dispose();
       }
 
@@ -64,7 +64,7 @@ namespace MacroTools.BookSystem.ArtifactSystem
     private void AddPagesAndArtifacts()
     {
       var firstPage = AddPage();
-      firstPage.Visible = true;
+      firstPage.Handle.SetVisible(true);
       AddAllArtifacts();
     }
 

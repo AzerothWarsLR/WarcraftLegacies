@@ -23,7 +23,7 @@ namespace MacroTools.BookSystem.Powers
     public PowerBook(player trackedPlayer) : base(0.34f, 0.39f, 0.02f, 0.015f)
     {
       var firstPage = AddPage();
-      firstPage.Visible = true;
+      firstPage.Handle.SetVisible(true);
       Title = "Powers";
       LauncherParent = BlzGetFrameByName("UpperButtonBarMenuButton", 0);
       Position = new Point(0.36f, 0.35f);
@@ -88,7 +88,7 @@ namespace MacroTools.BookSystem.Powers
     {
       foreach (var page in Pages)
       {
-        page.Visible = false; //This avoids a crash to desktop when rerendering a Book that a player has open.
+        page.Handle.SetVisible(false); //This avoids a crash to desktop when rerendering a Book that a player has open.
         page.Dispose();
       }
       _pagesByPower.Clear();
@@ -99,7 +99,7 @@ namespace MacroTools.BookSystem.Powers
     private void AddPagesAndPowers()
     {
       var firstPage = AddPage();
-      firstPage.Visible = true;
+      firstPage.Handle.SetVisible(true);
       if (_trackedFaction != null)
         AddAllPowers(_trackedFaction);
     }
