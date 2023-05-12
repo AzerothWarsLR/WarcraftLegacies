@@ -38,6 +38,7 @@ namespace WarcraftLegacies.Source.Quests.CrisisSpawn
       AddObjective(new ObjectiveResearch(Constants.UPGRADE_R08K_FORTIFIED_HULLS, Constants.UNIT_N0DR_CRISIS_FACTION_PICKER_OLD_GODS));
       Shared = true;
       Required = true;
+      Global = true;
     }
 
     /// <inheritdoc/>
@@ -69,7 +70,7 @@ namespace WarcraftLegacies.Source.Quests.CrisisSpawn
       if (completingFaction.Player != null)
       {
 
-        CreateStructureForced(completingFaction.Player, Constants.UNIT_H05U_TWILIGHT_CITADEL_TWILIGHT_T3, 19087, -7370, 180, 256);
+        CreateStructureForced(completingFaction.Player, Constants.UNIT_H05U_TWILIGHT_CITADEL_TWILIGHT_OTHER, 19087, -7370, 180, 256);
 
         CreateUnits(completingFaction.Player, Constants.UNIT_O04B_CULTIST_TWILIGHT_HAMMER_WORKER, spawn.X, spawn.Y, 270, 12);
         CreateUnits(completingFaction.Player, Constants.UNIT_O04I_BATTLEMASTER_TWILIGHT, spawn.X, spawn.Y, 270, 6);
@@ -81,6 +82,8 @@ namespace WarcraftLegacies.Source.Quests.CrisisSpawn
         CreateUnits(completingFaction.Player, Constants.UNIT_U01T_HERALD_TWILIGHT, spawn.X, spawn.Y, 270, 12);
         CreateUnits(completingFaction.Player, Constants.UNIT_N07X_OGRE_MAGI_TWILIGHT, spawn.X, spawn.Y, 270, 12);
         CreateUnits(completingFaction.Player, Constants.UNIT_N09O_ORCISH_DEATH_KNIGHT_TWILIGHT, spawn.X, spawn.Y, 270, 6);
+
+        CreateUnits(completingFaction.Player, Constants.UNIT_U01Y_DEATHWING_TWILIGHT, spawn.X, spawn.Y, 270, 1);
 
         CreateUnits(completingFaction.Player, Constants.UNIT_N083_TWILIGHT_DRAGONSPAWN_TWILIGHT, spawn.X, spawn.Y, 270, 12);
         CreateUnits(completingFaction.Player, Constants.UNIT_N051_NETHER_DRAGON_TWILIGHT, spawn.X, spawn.Y, 270, 4);

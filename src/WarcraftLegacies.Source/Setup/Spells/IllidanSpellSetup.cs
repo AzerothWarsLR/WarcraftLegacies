@@ -22,7 +22,6 @@ namespace WarcraftLegacies.Source.Setup.Spells
         Constants.UNIT_EEVM_DEMON_HUNTER_EVIL_MORPHED,
         Constants.UNIT_EILM_DEMON_HUNTER,
         Constants.UNIT_EEVI_BETRAYER_ILLIDARI,
-        Constants.UNIT_E00F_DEMON_HUNTER_EVIL_MORPHED_LEVEL_2,
         Constants.UNIT_E00G_DEMON_HUNTER_EVIL_MORPHED_LEVEL_3,
         Constants.UNIT_E00E_DEMON_HUNTER_MORPHED_LEVEL_2,
         Constants.UNIT_E00D_DEMON_HUNTER_MORPHED_LEVEL_3

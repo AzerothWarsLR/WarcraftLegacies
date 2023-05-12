@@ -27,11 +27,11 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
 
     /// <inheritdoc/>
     protected override string RewardFlavour =>
-      "Dalaran has empowered Jaina to be the new Guardian of Tirisfal, endowing her with a portion of the Council of Tirisfal's power. Aegwynn will come back from exile to mentor Jaina in her new functions as Guardian.";
+      "Dalaran has empowered Jaina to be the new Guardian of Tirisfal, endowing her with a portion of the Council of Tirisfal's power.";
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
-      "Grant Jaina Chaos Damage, 20 additional Intelligence, Teleport, and Mana Shield. Aegwynn will also be trainable at the altar.";
+      "Grant Jaina Chaos Damage, 20 additional Intelligence, Teleport, and Mana Shield.";
 
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)

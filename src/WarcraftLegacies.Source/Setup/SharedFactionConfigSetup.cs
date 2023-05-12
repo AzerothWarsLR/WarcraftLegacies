@@ -19,6 +19,7 @@ namespace WarcraftLegacies.Source.Setup
         faction.ModObjectLimit(Constants.UPGRADE_R04R_FORTIFIED_HULLS_UNIVERSAL_UPGRADE, Faction.UNLIMITED); //Actually Full Scale Escalation
         faction.ModObjectLimit(Constants.UPGRADE_R00C_IMPROVED_CANNONS_ALL_TEAMS, Faction.UNLIMITED);
         faction.ModObjectLimit(Constants.UPGRADE_R006_FORTIFIED_HULLS_UNIVERSAL_UPGRADE, Faction.UNLIMITED);
+        faction.ModObjectLimit(Constants.UPGRADE_R07L_FORTIFIED_HULLS, Faction.UNLIMITED); //path of the old gods
       }
     }
   }

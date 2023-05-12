@@ -22,6 +22,9 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
     private readonly LegendaryHero _arthas;
     private readonly Capital _stratholme;
     private readonly List<unit> _rescueUnits;
+    private readonly unit _goldmine1;
+    private readonly unit _goldmine2;
+    private readonly unit _goldmine3;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestStratholme"/> class.
@@ -37,7 +40,17 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
       AddObjective(new ObjectiveUpgrade(Constants.UNIT_HCAS_CASTLE_LORDAERON_T3, Constants.UNIT_HTOW_TOWN_HALL_LORDAERON_T1));
       AddObjective(new ObjectiveExpire(1470, Title));
       AddObjective(new ObjectiveSelfExists());
+
+      _goldmine1 = preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(17204, 8197));
+      _goldmine2 = preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(7704, 11660));
+      _goldmine3 = preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(7403, 6983));
+
+      //_goldmine1.Show(false);
+      //_goldmine2.Show(false);
+      //_goldmine3.Show(false);
+
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
+      ResearchId = Constants.UPGRADE_R09E_QUEST_COMPLETED_BLACKROCK_AND_ROLL;
       Required = true;
     }
 
@@ -45,7 +58,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
     protected override string RewardFlavour =>
       "Stratholme has been liberated, and its military is now free to assist the Kingdom of Lordaeron.";
     /// <inheritdoc/>
-    protected override string RewardDescription => "Control of all units in Stratholme";
+    protected override string RewardDescription => "Control of all units in Stratholme and you can now build Town Halls";
 
     /// <inheritdoc/>
     protected override void OnFail(Faction completingFaction)
@@ -59,6 +72,9 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
     {
       completingFaction.Player.RescueGroup(_rescueUnits);
       _arthas.AddUnitDependency(_stratholme.Unit);
+      //_goldmine1.Show(true);
+      //_goldmine2.Show(true);
+      //_goldmine3.Show(true);
     }
   }
 }

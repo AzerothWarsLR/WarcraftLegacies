@@ -18,7 +18,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
       Illidan = new LegendaryHero("Illidan")
       {
         UnitType = Constants.UNIT_EEVI_BETRAYER_ILLIDARI,
-        PlayerColor = PLAYER_COLOR_PURPLE
+        PlayerColor = PLAYER_COLOR_PURPLE,
       };
 
       Vashj = new LegendaryHero("Lady Vashj")

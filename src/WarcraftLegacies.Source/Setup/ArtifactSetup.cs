@@ -42,7 +42,12 @@ namespace WarcraftLegacies.Source.Setup
     /// Powerful tome left behind by the Guardian Medivh.
     /// </summary>
     public Artifact BookOfMedivh { get; }
-    
+
+    /// <summary>
+    /// Essence of a powerful voidlord.
+    /// </summary>
+    public Artifact EssenceofMurmur { get; }
+
     /// <summary>
     /// Horn that can be used to call a bunch of wisps.
     /// </summary>
@@ -97,6 +102,10 @@ namespace WarcraftLegacies.Source.Setup
       UnitAddItem(preplacedUnitSystem.GetUnit(FourCC("n021")), CrownOfStormwind.Item); //Hogger
       ArtifactManager.Register(CrownOfStormwind);
 
+      SkullOfGuldan = new Artifact(CreateItem(FourCC("I007"), DummyX, DummyY)); //Skull of Guldan
+      UnitAddItem(preplacedUnitSystem.GetUnit(FourCC("n03Y")), SkullOfGuldan.Item); //Drakthul
+      ArtifactManager.Register(SkullOfGuldan);
+
       EyeOfSargeras = new Artifact(CreateItem(Constants.ITEM_I003_EYE_OF_SARGERAS, -77.9f, 10910.4f));
       ArtifactManager.Register(EyeOfSargeras);
 
@@ -125,12 +134,6 @@ namespace WarcraftLegacies.Source.Setup
       UnitAddAbility(preplacedUnitSystem.GetUnit(Constants.UNIT_NBSM_BOOK_OF_MEDIVH), Artifact.ArtifactHolderAbilId);
       UnitAddItem(preplacedUnitSystem.GetUnit(Constants.UNIT_NBSM_BOOK_OF_MEDIVH), BookOfMedivh.Item);
       ArtifactManager.Register(BookOfMedivh);
-
-      SkullOfGuldan = new Artifact(CreateItem(FourCC("I007"), DummyX, DummyY)); //Skull of Guldan
-      UnitAddAbility(preplacedUnitSystem.GetUnit(FourCC("n0DK")),
-        Artifact.ArtifactHolderAbilId); //Skull Pedestal
-      UnitAddItem(preplacedUnitSystem.GetUnit(FourCC("n0DK")), SkullOfGuldan.Item);
-      ArtifactManager.Register(SkullOfGuldan);
 
       ZinRokh = new Artifact(CreateItem(FourCC("I016"), DummyX, DummyY))
       {
@@ -163,6 +166,10 @@ namespace WarcraftLegacies.Source.Setup
         AzureFragment.Item);
       ArtifactManager.Register(AzureFragment);
 
+      EssenceofMurmur = new Artifact(CreateItem(FourCC("I00K"), DummyX, DummyY)); //Essence
+      UnitAddItem(preplacedUnitSystem.GetUnit(FourCC("n03T")), EssenceofMurmur.Item); //Murmur
+      ArtifactManager.Register(EssenceofMurmur);
+
       EmeraldFragment = new Artifact(CreateItem(Constants.ITEM_I01K_EMERALD_FRAGMENT, DummyX, DummyY));
       UnitAddItem(preplacedUnitSystem.GetUnit(Constants.UNIT_O00O_CHIEFTAN_OF_THE_AMANI_TRIBE_CREEP_ZUL_AMAN),
         EmeraldFragment.Item);
@@ -181,10 +188,6 @@ namespace WarcraftLegacies.Source.Setup
 
       tempArtifact = new Artifact(CreateItem(FourCC("kgal"), DummyX, DummyY)); //Keg of Thunderwater
       UnitAddItem(preplacedUnitSystem.GetUnit(FourCC("hmtm"), new Point(15109, -895)), tempArtifact.Item);
-      ArtifactManager.Register(tempArtifact);
-
-      tempArtifact = new Artifact(CreateItem(FourCC("I00K"), DummyX, DummyY)); //Essence
-      UnitAddItem(preplacedUnitSystem.GetUnit(FourCC("n03T")), tempArtifact.Item); //Murmur
       ArtifactManager.Register(tempArtifact);
 
       ScytheOfElune = new Artifact(CreateItem(Constants.ITEM_I00R_SCYTHE_OF_ELUNE, DummyX, DummyX));

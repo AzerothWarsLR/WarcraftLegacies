@@ -27,7 +27,7 @@ namespace WarcraftLegacies.Source.Setup
       Player(5).SetTeam(TeamSetup.Horde);
 
       Player(6).SetFaction(FelHordeSetup.FelHorde);
-      Player(6).SetTeam(TeamSetup.Illidari);
+      Player(6).SetTeam(TeamSetup.Outland);
 
       Player(7).SetFaction(DalaranSetup.Dalaran);
       Player(7).SetTeam(TeamSetup.NorthAlliance);
@@ -40,9 +40,6 @@ namespace WarcraftLegacies.Source.Setup
 
       Player(13).SetFaction(DraeneiSetup.Draenei);
       Player(13).SetTeam(TeamSetup.NightElves);
-
-      Player(15).SetFaction(IllidariSetup.Illidari);
-      Player(15).SetTeam(TeamSetup.Illidari);
 
       Player(18).SetFaction(SentinelsSetup.Sentinels);
       Player(18).SetTeam(TeamSetup.NightElves);

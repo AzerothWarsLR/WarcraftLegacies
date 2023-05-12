@@ -9,7 +9,7 @@ namespace WarcraftLegacies.Source.Setup
     public static Team SouthAlliance { get; private set; }
     public static Team Horde { get; private set; }
     public static Team NightElves { get; private set; }
-    public static Team Illidari { get; private set; }
+    public static Team Outland { get; private set; }
     public static Team Gilneas { get; private set; }
     public static Team ScarletCrusade { get; private set; }
     public static Team Forsaken { get; private set; }
@@ -56,11 +56,11 @@ namespace WarcraftLegacies.Source.Setup
       };
       FactionManager.Register(NightElves);
 
-      Illidari = new Team("Illidari")
+      Outland = new Team("Outland")
       {
         VictoryMusic = "DarkVictory"
       };
-      FactionManager.Register(Illidari);
+      FactionManager.Register(Outland);
       
       Gilneas = new Team("Gilneas")
       {

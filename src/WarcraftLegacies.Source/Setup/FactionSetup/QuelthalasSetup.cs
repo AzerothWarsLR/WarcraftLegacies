@@ -77,7 +77,6 @@ The Plague of Undeath is coming and Lordaeron will need your help with the Scour
       Quelthalas.ModObjectLimit(FourCC("n075"), 1); //Vareesa
       Quelthalas.ModObjectLimit(FourCC("Hvwd"), 1); //Sylvanas
       Quelthalas.ModObjectLimit(FourCC("H00Q"), 1); //Anasterian
-      Quelthalas.ModObjectLimit(FourCC("H098"), 1); //Pathaleone
       Quelthalas.ModObjectLimit(FourCC("H04F"), 1); //Rommath
       Quelthalas.ModObjectLimit(FourCC("H02E"), 1); //Lorthemar
 

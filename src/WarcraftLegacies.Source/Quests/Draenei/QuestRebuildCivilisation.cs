@@ -38,7 +38,7 @@ namespace WarcraftLegacies.Source.Quests.Draenei
     protected override void OnComplete(Faction whichFaction)
     {
       if (whichFaction.Player != null)
-        whichFaction.Player.AddGold(500);
+        whichFaction.Player.AddGold(200);
         whichFaction.Player.AddLumber(200);
       if (whichFaction.Player != null)
         whichFaction.Player.RescueGroup(_rescueUnits);
@@ -50,7 +50,7 @@ namespace WarcraftLegacies.Source.Quests.Draenei
     protected override string RewardFlavour => "Maraad joins the Draenai and the new settlement is born";
 
     /// <inheritdoc/>
-    protected override string RewardDescription => "Gain 500 Gold, 200 Lumber, an Outpost in Desolace and Maraad is now trainable at the altar.";
+    protected override string RewardDescription => "Gain 200 Gold, 200 Lumber, an Outpost in Desolace and Maraad is now trainable at the altar.";
 
    }
  }

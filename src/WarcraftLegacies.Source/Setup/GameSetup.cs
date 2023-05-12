@@ -46,6 +46,7 @@ namespace WarcraftLegacies.Source.Setup
       SharedFactionConfigSetup.Setup();
       PlayerSetup.Setup();
       ZandalarGoblinChoiceDialogue.Setup();
+      IllidariSunfuryChoiceDialogue.Setup();
       NeutralHostileSetup.Setup();
       AllQuestSetup.Setup(preplacedUnitSystem, artifactSetup, allLegendSetup);
       ObserverSetup.Setup(new[] { Player(21) });

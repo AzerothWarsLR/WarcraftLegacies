@@ -34,5 +34,6 @@
     public static string Nazjatar => "Nazjatar";
     public static string BlackEmpire => "BlackEmpire";
     public static string TwilightHammer => "TwilightHammer";
+    public static string Sunfury => "Sunfury";
   }
 }

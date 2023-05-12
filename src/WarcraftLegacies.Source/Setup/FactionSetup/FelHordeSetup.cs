@@ -71,7 +71,6 @@ The Alliance is gathering outside the Dark Portal to stop you, so prepare to for
       FelHorde.ModObjectLimit(FourCC("h0AO"), 6); //Bombard
 
       FelHorde.ModObjectLimit(FourCC("n05T"), 1); //Kazzak
-      FelHorde.ModObjectLimit(FourCC("n064"), 1); //Voone
       FelHorde.ModObjectLimit(FourCC("n08A"), 1); //neltharaktu
       FelHorde.ModObjectLimit(FourCC("N03D"), 1); //Kargath
       FelHorde.ModObjectLimit(FourCC("Nbbc"), 1); //Rend

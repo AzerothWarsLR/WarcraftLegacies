@@ -1,6 +1,7 @@
 ﻿using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives.MetaBased;
 using MacroTools.ObjectiveSystem.Objectives.TeamBased;
+using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.QuestSystem;
 using WarcraftLegacies.Source.Setup;
 using static War3Api.Common;
@@ -25,9 +26,10 @@ namespace WarcraftLegacies.Source.Quests.CrisisSpawn
       "With the Night Elves eliminated, something stirs in the sands of Ahn'qiraj",
       "ReplaceableTextures\\CommandButtons\\BTNFountainOfLife.blp")
     {
+      AddObjective(new ObjectiveTime(600));
       AddObjective(new ObjectiveTeamControlPointAmountLessThan(TeamSetup.NightElves, 10));
       AddObjective(new ObjectiveEitherOf(
-new ObjectiveTeamControlPointAmountGreaterThan(TeamSetup.Horde, 40),
+new ObjectiveTeamControlPointAmountGreaterThan(TeamSetup.Horde, 30),
 new ObjectiveTeamDefeated(TeamSetup.NightElves)));
       ResearchId = Constants.UPGRADE_R091_QUEST_COMPLETED_HORDE_OR_NIGHT_ELF_DEFEATED;
       Required = true;

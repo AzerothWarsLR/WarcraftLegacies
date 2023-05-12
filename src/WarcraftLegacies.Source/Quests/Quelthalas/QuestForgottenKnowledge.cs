@@ -22,8 +22,6 @@ namespace WarcraftLegacies.Source.Quests.Quelthalas
     {
       AddObjective(new ObjectiveControlLevel(
         ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N032_SURAMAR_20GOLD_MIN), 10));
-      AddObjective(new ObjectiveBuildInRect(questRect, "in Suramar Ruins", Constants.UNIT_H02Y_ARTISAN_S_HALL_QUEL_THALAS_RESEARCH));
-      AddObjective(new ObjectiveBuildInRect(questRect, "in Suramar Ruins", Constants.UNIT_H03J_ACADEMY_QUEL_THALAS_SPECIALIST));
       ResearchId = Constants.UPGRADE_R08Z_QUEST_COMPLETED_FORGOTTEN_KNOWLEDGE;
     }
 

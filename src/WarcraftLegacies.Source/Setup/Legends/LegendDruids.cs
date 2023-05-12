@@ -63,7 +63,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
       Tortolla = new LegendaryHero("Tortolla")
       {
         UnitType = FourCC("H04U"),
-        StartingXp = 1800
+        StartingXp = 4000
       };
     }
     
