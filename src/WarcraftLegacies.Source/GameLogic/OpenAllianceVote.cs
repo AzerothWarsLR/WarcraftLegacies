@@ -55,6 +55,7 @@ namespace WarcraftLegacies.Source.GameLogic
           new Hint("You can change alliances by using the commands -invite, -uninvite, -join, and -unally."));
         AreAlliancesOpen = true;
         ControlPointVictory.CpsVictory = 1000;
+        ControlPointVictory.CpsWarning = 1000;
         foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
         {
           SetPlayerTechResearched(player, Constants.UPGRADE_R068_QUEST_COMPLETED_NAVIGATION, 1);
