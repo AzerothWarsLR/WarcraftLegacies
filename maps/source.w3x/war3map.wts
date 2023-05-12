@@ -94983,7 +94983,7 @@ Civilian farmstead supplying food for the Kingdom.|nProvides 8 food, which incre
 }
 
 STRING 15834
-// Abilities: A12T (Summon Bear), EditorSuffix (Editor Suffix)
+// Units: n07R (War Turtle), EditorSuffix (Name - Editor Suffix)
 {
 (Druid)
 }
@@ -100071,7 +100071,7 @@ Dinosaur Breeding Ground for the Zandalari.|n|cfff5962dTrains:|R Direhorn, Thron
 }
 
 STRING 16684
-// Units: n07R (War Turtle), EditorSuffix (Name - Editor Suffix)
+// Abilities: A12T (Summon Bear), EditorSuffix (Editor Suffix)
 {
 (Druid)
 }
@@ -124497,7 +124497,7 @@ STRING 20754
 }
 
 STRING 20755
-// Upgrades: R07L (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: Rhme (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Hotkey (Hotkey)
 {
 Q
 }
@@ -124653,7 +124653,7 @@ Towers of the Sunfury.|n|n|cffffcc00Attacks land and air units.|r
 }
 
 STRING 20781
-// Upgrades: R086 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R064 (Nature's Blessing), Hotkey (Hotkey)
 {
 E
 }
@@ -124725,7 +124725,7 @@ Q
 }
 
 STRING 20796
-// Upgrades: R064 (Nature's Blessing), Hotkey (Hotkey)
+// Upgrades: R03M (Defend), Hotkey (Hotkey)
 {
 E
 }
@@ -124821,7 +124821,7 @@ Mystical hero, adept at dealing magical damage.|n|cfff5962dAbilities:|r Mana Shi
 }
 
 STRING 20812
-// Upgrades: R03M (Defend), Hotkey (Hotkey)
+// Upgrades: R02P (Backpack), Hotkey (Hotkey)
 {
 E
 }
@@ -125055,7 +125055,7 @@ Felsteel Plating
 }
 
 STRING 20854
-// Upgrades: Rhme (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Hotkey (Hotkey)
+// Upgrades: Resw (Strength of the Wild,Improved Strength of the Wild,Advanced Strength of the Wil), Hotkey (Hotkey)
 {
 Q
 }
@@ -125073,7 +125073,7 @@ F
 }
 
 STRING 20857
-// Upgrades: R02P (Backpack), Hotkey (Hotkey)
+// Upgrades: R03O (Animal War Training), Hotkey (Hotkey)
 {
 E
 }
@@ -125103,7 +125103,7 @@ W
 }
 
 STRING 20862
-// Upgrades: R03O (Animal War Training), Hotkey (Hotkey)
+// Upgrades: R097 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 E
 }
@@ -125115,7 +125115,7 @@ Q
 }
 
 STRING 20864
-// Upgrades: Resw (Strength of the Wild,Improved Strength of the Wild,Advanced Strength of the Wil), Hotkey (Hotkey)
+// Upgrades: Resm (Strength of the Moon,Improved Strength of the Moon,Advanced Strength of the Moo), Hotkey (Hotkey)
 {
 Q
 }
@@ -125127,7 +125127,7 @@ W
 }
 
 STRING 20866
-// Upgrades: R097 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R086 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 E
 }
@@ -125997,19 +125997,19 @@ Sends a gigantic wave which deals <A01T,DataA2> damage to each enemy land unit i
 }
 
 STRING 21017
-// Upgrades: Resm (Strength of the Moon,Improved Strength of the Moon,Advanced Strength of the Moo), Hotkey (Hotkey)
-{
-Q
-}
-
-STRING 21018
 // Upgrades: R020 (Defend), Hotkey (Hotkey)
 {
 Q
 }
 
-STRING 21019
+STRING 21018
 // Upgrades: R014 (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
+{
+Q
+}
+
+STRING 21019
+// Upgrades: R00X (Magic Sentry), Hotkey (Hotkey)
 {
 Q
 }
@@ -126033,13 +126033,13 @@ D
 }
 
 STRING 21023
-// Upgrades: R00X (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: R07E (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 Q
 }
 
 STRING 21024
-// Upgrades: R07E (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R07L (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 Q
 }

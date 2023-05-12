@@ -40,7 +40,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
       Maraad = new LegendaryHero("Maraad")
       {
         UnitType = FourCC("H09S"),
-        StartingXp = 1000
+        StartingXp = 1800
       };
 
       Adal = new LegendaryHero("A'dal")
