@@ -72,7 +72,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
 
       var crystallization = new GoldOnCast(Constants.ABILITY_A045_CRYSTALLIZATION_ALL)
       {
-        GoldToGrant = 100
+        GoldToGrant = 25
       };
       SpellSystem.Register(crystallization);
     }
