@@ -3,7 +3,6 @@ using MacroTools.ObjectiveSystem.Objectives.MetaBased;
 using MacroTools.ObjectiveSystem.Objectives.TeamBased;
 using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.QuestSystem;
-using System;
 using WarcraftLegacies.Source.Setup;
 using static War3Api.Common;
 
@@ -38,7 +37,6 @@ namespace WarcraftLegacies.Source.Quests.CrisisSpawn
 
     protected override void OnComplete(Faction completingFaction)
     {
-      Console.WriteLine("DEBUG: Scourge Dead quest ");
       foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
       {
         SetPlayerTechResearched(player, Constants.UPGRADE_R09D_TURN_25_HAS_PASSED_OR_OLD_GODS_ARE_PICKABLE, 1);

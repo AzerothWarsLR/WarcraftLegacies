@@ -49,7 +49,7 @@ Your main goal is to summon Kil'jaeden and destroy your enemies."
       Sunfury.ModObjectLimit(FourCC("n0E2"), Faction.UNLIMITED); //worker
       Sunfury.ModObjectLimit(FourCC("n09S"), Faction.UNLIMITED); //Elven Warrior
       Sunfury.ModObjectLimit(FourCC("h0CF"), Faction.UNLIMITED); //Elven Ranger
-      Sunfury.ModObjectLimit(FourCC("h0CE"), Faction.UNLIMITED); //Knight
+      Sunfury.ModObjectLimit(FourCC("u02W"), 2); //Energy Wagon
       Sunfury.ModObjectLimit(FourCC("h0CH"), Faction.UNLIMITED); //Astromancer
       Sunfury.ModObjectLimit(FourCC("h0CG"), Faction.UNLIMITED); //Flamekeeper
       Sunfury.ModObjectLimit(FourCC("n0E3"), 6); //Warlock

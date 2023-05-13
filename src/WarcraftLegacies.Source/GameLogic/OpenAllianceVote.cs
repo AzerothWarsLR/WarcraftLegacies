@@ -1,5 +1,6 @@
 ﻿using MacroTools.Extensions;
 using MacroTools.HintSystem;
+using WarcraftLegacies.Source.GameLogic.GameEnd;
 using WarcraftLegacies.Source.Setup;
 using static War3Api.Common;
 
@@ -53,6 +54,8 @@ namespace WarcraftLegacies.Source.GameLogic
         Hint.Register(
           new Hint("You can change alliances by using the commands -invite, -uninvite, -join, and -unally."));
         AreAlliancesOpen = true;
+        ControlPointVictory.CpsVictory = 1000;
+        ControlPointVictory.CpsWarning = 1000;
         foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
         {
           SetPlayerTechResearched(player, Constants.UPGRADE_R068_QUEST_COMPLETED_NAVIGATION, 1);
