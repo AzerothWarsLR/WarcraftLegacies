@@ -11,7 +11,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\..\DesyncSafeAnalyzer.Tools\DesyncSafeAnalyzer.Tools.csproj" />
+      <ProjectReference Include="..\DesyncSafeAnalyzer.Tools\DesyncSafeAnalyzer.Tools.csproj" />
     </ItemGroup>
 
 </Project>

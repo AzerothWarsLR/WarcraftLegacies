@@ -23,7 +23,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\..\DesyncSafeAnalyzer\DesyncSafeAnalyzer\DesyncSafeAnalyzer.csproj" />
+      <ProjectReference Include="..\..\analyzers\DesyncSafeAnalyzer\DesyncSafeAnalyzer.csproj" />
     </ItemGroup>
 
 </Project>

@@ -19,9 +19,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "War3Api.Object", "src\War3A
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "analyzers", "analyzers", "{64F5E60B-AAB4-4278-A79E-CD7E853366AA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesyncSafeAnalyzer", "DesyncSafeAnalyzer\DesyncSafeAnalyzer\DesyncSafeAnalyzer.csproj", "{60F696EA-63B6-4CD1-9A11-F5C3AA5697E6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesyncSafeAnalyzer", "analyzers\DesyncSafeAnalyzer\DesyncSafeAnalyzer.csproj", "{60F696EA-63B6-4CD1-9A11-F5C3AA5697E6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesyncSafeAnalyzer.Tools", "DesyncSafeAnalyzer.Tools\DesyncSafeAnalyzer.Tools.csproj", "{55D65182-BEA7-473D-86AC-A83AD936336A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesyncSafeAnalyzer.Tools", "analyzers\DesyncSafeAnalyzer.Tools\DesyncSafeAnalyzer.Tools.csproj", "{55D65182-BEA7-473D-86AC-A83AD936336A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{BF9B2461-1406-42B6-A638-46A4A46F8EBF}"
 EndProject
