@@ -4,6 +4,7 @@ using DesyncSafeAnalyzer.Tools;
 using MacroTools.ControlPointSystem;
 using MacroTools.FactionSystem;
 using static War3Api.Common;
+using Environment = MacroTools.Libraries.Environment;
 
 namespace MacroTools.Extensions
 {
@@ -285,14 +286,27 @@ namespace MacroTools.Extensions
     ///   Retrieves the <see cref="PlayerData" /> object which contains information about the given <see cref="player" />.
     /// </summary>
     [DesyncSafe]
-    public static PlayerData ByHandle(player whichPlayer) => ById[GetPlayerId(whichPlayer)];
+    public static PlayerData ByHandle(player whichPlayer)
+    {
+      if (ById.TryGetValue(GetPlayerId(whichPlayer), out var playerData))
+        return playerData;
+
+      throw new KeyNotFoundException($"There is no {nameof(PlayerData)} recorded for player {GetPlayerName(whichPlayer)}.");
+    }
 
     /// <summary>
     ///   Register a <see cref="PlayerData" /> to the Person system.
     /// </summary>
     private static void Register(PlayerData playerData)
     {
-      ById.Add(GetPlayerId(playerData.Player), playerData);
+      try
+      {
+        ById.Add(GetPlayerId(playerData.Player), playerData);
+      }
+      catch
+      {
+        Console.WriteLine($"Failed to register {nameof(PlayerData)} for player {GetPlayerName(playerData.Player)}");
+      }
     }
 
     /// <summary>
@@ -300,8 +314,8 @@ namespace MacroTools.Extensions
     /// </summary>
     public static void Initialize()
     {
-      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
-        Register(new PlayerData(player));
+      for (var i = 0; i < Environment.MAX_PLAYERS!; i++) 
+        Register(new PlayerData(Player(i)));
     }
   }
 }
