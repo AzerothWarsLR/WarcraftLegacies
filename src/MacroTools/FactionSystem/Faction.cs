@@ -442,8 +442,7 @@ namespace MacroTools.FactionSystem
     {
       questData.Add(this);
       _questsByName.Add(questData.Title, questData);
-      UnsyncUtils.InvokeForClient(questData.ShowLocal, Player);
-      questData.ShowSync();
+      questData.Show(Player);
       questData.ProgressChanged += OnQuestProgressChanged;
       return questData;
     }
@@ -614,21 +613,17 @@ namespace MacroTools.FactionSystem
     /// </summary>
     private void ShowAllQuests()
     {
-      foreach (var quest in _questsByName.Values)
-      {
-        UnsyncUtils.InvokeForClient(quest.ShowLocal, Player);
-        quest.ShowSync();
-      }
+      foreach (var quest in _questsByName.Values) 
+        quest.Show(Player);
     }
 
-    //Hides all of the Faction)s quests.
+    /// <summary>
+    /// Hides all of the <see cref="Faction"/>'s <see cref="QuestData"/>s from them.
+    /// </summary>
     private void HideAllQuests()
     {
-      foreach (var quest in _questsByName.Values)
-      {
-        UnsyncUtils.InvokeForClient(() => { quest.HideLocal(); }, Player);
-        quest.HideSync();
-      }
+      foreach (var quest in _questsByName.Values) 
+        quest.Hide(Player);
     }
 
     private void OnQuestProgressChanged(object? sender, QuestProgressChangedEventArgs args)

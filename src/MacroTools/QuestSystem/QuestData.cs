@@ -10,7 +10,7 @@ using static War3Api.Common;
 namespace MacroTools.QuestSystem
 {
   /// <summary>
-  /// A heavily cutomized implementation of Warcraft 3 quests which supports <see cref="Objective"/>s, rewards, and penalties.
+  /// A heavily customized implementation of Warcraft 3 quests which supports <see cref="Objective"/>s, rewards, and penalties.
   /// </summary>
   public abstract class QuestData
   {
@@ -242,42 +242,50 @@ namespace MacroTools.QuestSystem
     }
 
     /// <summary>
+    /// Reveals all child <see cref="Objective"/>s.
+    /// </summary>
+    /// <param name="toPlayer">The player to whom to reveal the objectives.</param>
+    internal void Show(player toPlayer)
+    {
+      foreach (var objective in _objectives) 
+        objective.ShowSync(Progress);
+      
+      UnsyncUtils.InvokeForClient(ShowLocal, toPlayer);
+    }
+
+    /// <summary>
+    ///   Hides all child <see cref="Objective"/>s.
+    /// </summary>
+    internal void Hide(player fromPlayer)
+    {
+      foreach (var objective in _objectives) 
+        objective.HideSync();
+      
+      UnsyncUtils.InvokeForClient(HideLocal, fromPlayer);
+    }
+    
+    /// <summary>
     ///   Enables the local aspects of all child QuestItems.
     /// </summary>
     [DesyncSafe]
-    internal void ShowLocal()
+    private void ShowLocal()
     {
       QuestSetEnabled(Quest, true);
       foreach (var questItem in _objectives) 
         questItem.ShowLocal(Progress);
     }
-
-    /// <summary>
-    ///   Enables the synchronous aspects of all child QuestItems.
-    /// </summary>
-    internal void ShowSync()
-    {
-      foreach (var questItem in _objectives) questItem.ShowSync(Progress);
-    }
-
+    
     /// <summary>
     ///   Disables the local aspects of all child QuestItems.
     /// </summary>
     [DesyncSafe]
-    internal void HideLocal()
+    private void HideLocal()
     {
       QuestSetEnabled(Quest, false);
-      foreach (var questItem in _objectives) questItem.HideLocal();
+      foreach (var questItem in _objectives) 
+        questItem.HideLocal();
     }
-
-    /// <summary>
-    ///   Disables the synchronous aspects of all child QuestItems.
-    /// </summary>
-    internal void HideSync()
-    {
-      foreach (var questItem in _objectives) questItem.HideSync();
-    }
-
+    
     /// <summary>
     ///   Displays a warning message to everyone except the player that completed the <see cref="QuestData" />.
     /// </summary>
@@ -285,11 +293,11 @@ namespace MacroTools.QuestSystem
     {
       var soundCompleted = SoundLibrary.Completed;
       UnsyncUtils.InvokeForClients(() => { StartSound(soundCompleted); },
-        localPlayer => { return localPlayer.GetTeam().Contains(whichPlayer); });
+        localPlayer => localPlayer.GetTeam()?.Contains(whichPlayer) == true);
       
       var soundFailed = SoundLibrary.Failed;
       UnsyncUtils.InvokeForClients(() => { StartSound(soundFailed); },
-        localPlayer => { return !localPlayer.GetTeam().Contains(whichPlayer); });
+        localPlayer => localPlayer.GetTeam()?.Contains(whichPlayer) == false);
 
       foreach (var enumPlayer in WCSharp.Shared.Util.EnumeratePlayers())
         if (enumPlayer != whichPlayer)
