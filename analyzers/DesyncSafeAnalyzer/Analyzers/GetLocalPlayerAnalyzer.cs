@@ -9,7 +9,7 @@ namespace DesyncSafeAnalyzer.Analyzers
   [DiagnosticAnalyzer(LanguageNames.CSharp)]
   public sealed class GetLocalPlayerAnalyzer : DiagnosticAnalyzer
   {
-    private static readonly DiagnosticDescriptor Rule = new DiagnosticDescriptor(
+    private static readonly DiagnosticDescriptor Rule = new(
       "ZB000",
       "Do not call GetLocalPlayer method",
       "Do not use GetLocalPlayer; use UnsyncUtils.InvokeForClient instead",

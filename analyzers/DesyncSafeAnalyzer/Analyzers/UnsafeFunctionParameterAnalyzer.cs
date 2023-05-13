@@ -11,7 +11,7 @@ namespace DesyncSafeAnalyzer.Analyzers
   [DiagnosticAnalyzer(LanguageNames.CSharp)]
   public sealed class UnsafeFunctionParameterAnalyzer : DiagnosticAnalyzer
   {
-    private static readonly DiagnosticDescriptor LambdaExpressionRule = new DiagnosticDescriptor(
+    private static readonly DiagnosticDescriptor LambdaExpressionRule = new(
       "ZB003",
       "Unsafe use of InvokeForClient",
       "Lambda expressions passed to InvokeForClient can only call native desync-safe functions or custom functions marked with the [DesyncSafe] attribute",
@@ -19,7 +19,7 @@ namespace DesyncSafeAnalyzer.Analyzers
       DiagnosticSeverity.Error,
       true);
 
-    private static readonly DiagnosticDescriptor ConcreteFunctionRule = new DiagnosticDescriptor(
+    private static readonly DiagnosticDescriptor ConcreteFunctionRule = new(
       "ZB004",
       "Unsafe use of InvokeForClient",
       "Concrete function passed to InvokeForClient must be marked with the [DesyncSafe] attribute",
@@ -46,20 +46,20 @@ namespace DesyncSafeAnalyzer.Analyzers
 
     private static void CheckConcreteRule(SyntaxNodeAnalysisContext context)
     {
-      if (!(context.Node is InvocationExpressionSyntax invocation) ||
-          !(invocation.Expression is MemberAccessExpressionSyntax memberAccess) ||
+      if (context.Node is not InvocationExpressionSyntax invocation ||
+          invocation.Expression is not MemberAccessExpressionSyntax memberAccess ||
           !Shared.IsProtectedMethod(memberAccess.Name.Identifier.Text))
       return;
 
       var argumentList = invocation.ArgumentList;
       var actionExpression = argumentList.Arguments[0].Expression;
 
-      if (!(actionExpression is IdentifierNameSyntax actionArg))
+      if (actionExpression is not IdentifierNameSyntax actionArg)
         return;
 
       var actionSymbol = context.SemanticModel.GetSymbolInfo(actionArg).Symbol;
 
-      if (!(actionSymbol is IMethodSymbol actionMethod))
+      if (actionSymbol is not IMethodSymbol actionMethod)
         return;
 
       if (Shared.IsMethodDesyncSafe(actionMethod))

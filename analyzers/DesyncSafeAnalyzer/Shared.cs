@@ -7,7 +7,7 @@ namespace DesyncSafeAnalyzer
 {
   public static class Shared
   {
-    private static readonly List<string> SafeWc3Natives = new List<string>
+    private static readonly List<string> SafeWc3Natives = new()
     {
       "BlzSetSpecialEffectColor",
       "BlzSetSpecialEffectColorByPlayer",
@@ -38,7 +38,7 @@ namespace DesyncSafeAnalyzer
       "GetPlayerName"
     };
 
-    private static readonly List<string> SafeDotNetNatives = new List<string>
+    private static readonly List<string> SafeDotNetNatives = new()
     {
       "ElementAt",
       "Contains",
