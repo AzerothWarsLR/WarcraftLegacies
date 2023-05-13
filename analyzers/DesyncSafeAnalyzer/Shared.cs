@@ -34,7 +34,8 @@ namespace DesyncSafeAnalyzer
       "ClearTextMessages",
       "GetPlayerId",
       "FourCC",
-      "BlzFrameSetVisible"
+      "BlzFrameSetVisible",
+      "GetPlayerName"
     };
 
     private static readonly List<string> SafeDotNetNatives = new List<string>
