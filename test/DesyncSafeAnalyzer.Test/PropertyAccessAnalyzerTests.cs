@@ -81,7 +81,8 @@ class Program
       ).WithLocation(13, 9));
       await analyzerTest.RunAsync();
     }
-    
+
+        
     [Fact]
     public async void GetPropertyFromDesyncSafeMethod_RaisesNoError()
     {
@@ -98,6 +99,109 @@ class Program
     public static void Main()
     {
         var x = ExampleProperty;
+    }
+}
+";
+
+      var analyzerTest = new CSharpAnalyzerTest<PropertyAccessAnalyzer, MSTestVerifier>
+      {
+        TestState =
+        {
+          Sources = { sourceCode }
+        }
+      };
+      await analyzerTest.RunAsync();
+    }
+    
+    [Fact]
+    public async void SetOwnFieldFromDesyncSafeMethod_DiagnosesError()
+    {
+      const string sourceCode = @"
+using System;
+
+class DesyncSafeAttribute : Attribute {}
+
+class OtherObject {
+    public int _exampleProperty;
+}
+
+class Program
+{
+    [DesyncSafe]
+    public static void Main()
+    {
+        var x = new OtherObject();
+        x._exampleProperty = 1;
+    }
+}
+";
+
+      var analyzerTest = new CSharpAnalyzerTest<PropertyAccessAnalyzer, MSTestVerifier>
+      {
+        TestState =
+        {
+          Sources = { sourceCode }
+        }
+      };
+      analyzerTest.ExpectedDiagnostics.Add(new DiagnosticResult
+      (
+        "ZB005",
+        DiagnosticSeverity.Error
+      ).WithLocation(16, 11));
+      await analyzerTest.RunAsync();
+    }
+    
+    [Fact]
+    public async void SetExternalFieldFromDesyncSafeMethod_DiagnosesError()
+    {
+      const string sourceCode = @"
+using System;
+
+class DesyncSafeAttribute : Attribute {}
+
+class Program
+{
+    public static int _exampleProperty;
+
+    [DesyncSafe]
+    public static void Main()
+    {
+        _exampleProperty = 1;
+    }
+}
+";
+
+      var analyzerTest = new CSharpAnalyzerTest<PropertyAccessAnalyzer, MSTestVerifier>
+      {
+        TestState =
+        {
+          Sources = { sourceCode }
+        }
+      };
+      analyzerTest.ExpectedDiagnostics.Add(new DiagnosticResult
+      (
+        "ZB005",
+        DiagnosticSeverity.Error
+      ).WithLocation(13, 9));
+      await analyzerTest.RunAsync();
+    }
+    
+    [Fact]
+    public async void GetFieldFromDesyncSafeMethod_RaisesNoError()
+    {
+      const string sourceCode = @"
+using System;
+
+class DesyncSafeAttribute : Attribute {}
+
+class Program
+{
+    public static int _exampleProperty;
+
+    [DesyncSafe]
+    public static void Main()
+    {
+        var x = _exampleProperty;
     }
 }
 ";

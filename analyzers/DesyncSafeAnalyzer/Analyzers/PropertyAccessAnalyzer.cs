@@ -8,12 +8,12 @@ using Microsoft.CodeAnalysis.Diagnostics;
 namespace DesyncSafeAnalyzer.Analyzers
 {
   [DiagnosticAnalyzer(LanguageNames.CSharp)]
-  public class PropertyAccessAnalyzer : DiagnosticAnalyzer
+  public sealed class PropertyAccessAnalyzer : DiagnosticAnalyzer
   {
     private const string DiagnosticId = "ZB005";
     private const string Category = "Usage";
 
-    private static readonly DiagnosticDescriptor Rule = new DiagnosticDescriptor(
+    private static readonly DiagnosticDescriptor Rule = new(
       DiagnosticId,
       "Do not modify properties from functions with the [DesyncSafe] attribute",
       "DesyncSafe function {0} cannot modify synchronized property {1}",
@@ -41,12 +41,8 @@ namespace DesyncSafeAnalyzer.Analyzers
 
       var symbol = context.SemanticModel.GetSymbolInfo(identifier).Symbol;
 
-      if (symbol?.Kind != SymbolKind.Property)
-        return;
-
-      var propertySymbol = (IPropertySymbol)symbol;
-      if (propertySymbol.SetMethod == null)
-        return;
+      if (symbol?.Kind != SymbolKind.Field &&
+          (symbol?.Kind != SymbolKind.Property || ((IPropertySymbol)symbol).SetMethod == null)) return;
 
       var containingMethod = identifier.FirstAncestorOrSelf<MethodDeclarationSyntax>();
       var desyncSafeAttribute = containingMethod?.AttributeLists
@@ -56,25 +52,22 @@ namespace DesyncSafeAnalyzer.Analyzers
       if (desyncSafeAttribute == null)
         return;
 
-      var diagnostic = Diagnostic.Create(Rule, identifier.GetLocation(), containingMethod.Identifier, propertySymbol.Name);
+      var diagnostic = Diagnostic.Create(Rule, identifier.GetLocation(), containingMethod?.Identifier, symbol.Name);
       context.ReportDiagnostic(diagnostic);
     }
     
     /// <summary>
     /// Gets the property being assigned within a property assignment.
     /// </summary>
-    private static IdentifierNameSyntax GetAssignedPropertyIdentifier(AssignmentExpressionSyntax assignmentExpression)
+    private static IdentifierNameSyntax? GetAssignedPropertyIdentifier(AssignmentExpressionSyntax assignmentExpression)
     {
       var leftOperand = assignmentExpression.Left;
-      switch (leftOperand)
+      return leftOperand switch
       {
-        case MemberAccessExpressionSyntax memberAccessExpression when memberAccessExpression.Name is IdentifierNameSyntax propertySyntax:
-          return propertySyntax;
-        case IdentifierNameSyntax propertySyntax:
-          return propertySyntax;
-        default:
-          return null;
-      }
+        MemberAccessExpressionSyntax { Name: IdentifierNameSyntax propertySyntax } => propertySyntax,
+        IdentifierNameSyntax propertySyntax => propertySyntax,
+        _ => null
+      };
     }
   }
 }
