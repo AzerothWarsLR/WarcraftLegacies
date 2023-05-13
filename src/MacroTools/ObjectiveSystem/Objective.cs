@@ -152,15 +152,14 @@ namespace MacroTools.ObjectiveSystem
     [DesyncSafe]
     internal void ShowLocal(QuestProgress parentQuestProgress)
     {
-      if (Progress == QuestProgress.Incomplete &&
-          parentQuestProgress == QuestProgress.Incomplete)
-      {
-        if (_minimapIcon == null && DisplaysPosition)
-          _minimapIcon = CreateMinimapIcon(Position.X, Position.Y, 255, 255, 0, SkinManagerGetLocalPath(PingPath),
-            FOG_OF_WAR_MASKED);
-        else if (_minimapIcon != null)
-          SetMinimapIconVisible(_minimapIcon, true);
-      }
+      if (Progress != QuestProgress.Incomplete || parentQuestProgress != QuestProgress.Incomplete) 
+        return;
+      
+      if (_minimapIcon == null && DisplaysPosition)
+        _minimapIcon = CreateMinimapIcon(Position.X, Position.Y, 255, 255, 0, SkinManagerGetLocalPath(PingPath),
+          FOG_OF_WAR_MASKED);
+      else
+        _minimapIcon?.SetVisible(true);
     }
 
     /// <summary>
