@@ -15,8 +15,11 @@ namespace WarcraftLegacies.Source.GameLogic.GameEnd
     /// The number of <see cref="ControlPoint"/>s a <see cref="Team"/> must acquire to win the game.
     /// </summary>
     public static int CpsVictory = 90;
-    
-    private const int CpsWarning = 80; //How many Control Points to start the warning at
+
+    /// <summary>
+    /// The number of <see cref="ControlPoint"/>s a <see cref="Team"/> must acquire before a global warning is given.
+    /// </summary>
+    public static int CpsWarning = 80; //How many Control Points to start the warning at
     private const string VictoryColor = "|cff911499";
     private static bool _gameWon;
 
