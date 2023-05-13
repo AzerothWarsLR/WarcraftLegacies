@@ -13,9 +13,9 @@ namespace DesyncSafeAnalyzer.Analyzers
   {
     private const string Category = "Desynchronizations";
     private const string Title = "DesyncSafe functions restrictions";
-    private const string Message = "DesyncSafe functions can only call desync safe natives or other DesyncSafe functions";
+    private const string Message = "DesyncSafe functions can only call desync-safe natives or other DesyncSafe functions; {0} is not desync-safe.";
 
-    private static readonly DiagnosticDescriptor Rule = new DiagnosticDescriptor(
+    private static readonly DiagnosticDescriptor Rule = new(
       "ZB001",
       Title,
       Message,
@@ -23,8 +23,7 @@ namespace DesyncSafeAnalyzer.Analyzers
       DiagnosticSeverity.Error,
       isEnabledByDefault: true);
 
-    private static readonly SymbolDisplayFormat MethodDisplayFormat =
-      new SymbolDisplayFormat(
+    private static readonly SymbolDisplayFormat MethodDisplayFormat = new(
         typeQualificationStyle: SymbolDisplayTypeQualificationStyle.NameAndContainingTypesAndNamespaces,
         genericsOptions: SymbolDisplayGenericsOptions.IncludeTypeParameters,
         parameterOptions: SymbolDisplayParameterOptions.IncludeName | SymbolDisplayParameterOptions.IncludeType,
