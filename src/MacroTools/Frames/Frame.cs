@@ -12,7 +12,7 @@ namespace MacroTools.Frames
     private float _width;
 
     /// <summary>The actual WC3 frame object this object is representing.</summary>
-    public framehandle Handle { get; }
+    public framehandle Handle { get; protected set; }
 
     public Frame Parent
     {

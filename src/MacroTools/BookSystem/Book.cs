@@ -22,6 +22,7 @@ namespace MacroTools.BookSystem
 
     private readonly TextFrame _title;
     private int _activePageIndex;
+    private framehandle _handle;
 
     /// <summary>
     /// Creates a new Book.>.
