@@ -132,14 +132,15 @@ namespace MacroTools.QuestSystem
       QuestSetFailed(Quest, false);
       QuestSetDiscovered(Quest, true);
       DisplayCompleted(whichFaction);
-      if (Global) DisplayCompletedGlobal(whichFaction.Player);
+      if (Global) 
+        DisplayCompletedGlobal(whichFaction.Player);
       
-      if (ResearchId != 0) SetPlayerTechResearched(whichFaction.Player, ResearchId, 1);
+      if (ResearchId != 0) 
+        SetPlayerTechResearched(whichFaction.Player, ResearchId, 1);
       
-      foreach (var objective in _objectives)
-      {
+      foreach (var objective in _objectives) 
         objective.ProgressLocked = true;
-      }
+      
       OnComplete(whichFaction);
     }
 
@@ -203,16 +204,10 @@ namespace MacroTools.QuestSystem
       //If the quest is incomplete, show its markers. Otherwise, hide them.
       if (Progress != QuestProgress.Incomplete)
         foreach (var questItem in _objectives)
-        {
-          UnsyncUtils.InvokeForClient(questItem.HideLocal, whichFaction.Player);
-          questItem.HideSync();
-        }
+          questItem.Hide(whichFaction.Player);
       else
         foreach (var questItem in _objectives)
-        {
-          UnsyncUtils.InvokeForClient(() => { questItem.ShowLocal(Progress); }, whichFaction.Player);
-          questItem.ShowSync(Progress);
-        }
+          questItem.Show(whichFaction.Player, Progress);
     }
 
     /// <summary>
@@ -247,10 +242,9 @@ namespace MacroTools.QuestSystem
     /// <param name="toPlayer">The player to whom to reveal the objectives.</param>
     internal void Show(player toPlayer)
     {
+      UnsyncUtils.InvokeForClient(() => QuestSetEnabled(Quest, true), toPlayer);
       foreach (var objective in _objectives) 
-        objective.ShowSync(Progress);
-      
-      UnsyncUtils.InvokeForClient(ShowLocal, toPlayer);
+        objective.Show(toPlayer, Progress);
     }
 
     /// <summary>
@@ -258,34 +252,11 @@ namespace MacroTools.QuestSystem
     /// </summary>
     internal void Hide(player fromPlayer)
     {
+      UnsyncUtils.InvokeForClient(() => QuestSetEnabled(Quest, false), fromPlayer);
       foreach (var objective in _objectives) 
-        objective.HideSync();
-      
-      UnsyncUtils.InvokeForClient(HideLocal, fromPlayer);
+        objective.Hide(fromPlayer);
     }
-    
-    /// <summary>
-    ///   Enables the local aspects of all child QuestItems.
-    /// </summary>
-    [DesyncSafe]
-    private void ShowLocal()
-    {
-      QuestSetEnabled(Quest, true);
-      foreach (var questItem in _objectives) 
-        questItem.ShowLocal(Progress);
-    }
-    
-    /// <summary>
-    ///   Disables the local aspects of all child QuestItems.
-    /// </summary>
-    [DesyncSafe]
-    private void HideLocal()
-    {
-      QuestSetEnabled(Quest, false);
-      foreach (var questItem in _objectives) 
-        questItem.HideLocal();
-    }
-    
+
     /// <summary>
     ///   Displays a warning message to everyone except the player that completed the <see cref="QuestData" />.
     /// </summary>
@@ -320,6 +291,9 @@ namespace MacroTools.QuestSystem
             _ => $"{display} - {questItem.Description}\n"
           };
 
+      if (faction.Player == null) 
+        return;
+      
       DisplayTextToPlayer(faction.Player, 0, 0, display);
       var sound = SoundLibrary.Failed;
       UnsyncUtils.InvokeForClient(() => { StartSound(sound); }, faction.Player);
@@ -331,9 +305,13 @@ namespace MacroTools.QuestSystem
       foreach (var questItem in _objectives)
         if (questItem.ShowsInQuestLog)
           display = $"{display} - |cff808080{questItem.Description} (Completed)|r\n";
-      DisplayTextToPlayer(faction.Player, 0, 0, display);
+      
+      if (faction.Player == null) 
+        return;
+      
       var sound = SoundLibrary.Completed;
       UnsyncUtils.InvokeForClient(() => { StartSound(sound); }, faction.Player);
+      DisplayTextToPlayer(faction.Player, 0, 0, display);
     }
 
     /// <summary>
@@ -350,6 +328,10 @@ namespace MacroTools.QuestSystem
             ? $"{display} - |cff808080{questItem.Description} (Completed)|r\n"
             : $"{display} - {questItem.Description}\n";
         }
+
+      if (faction.Player == null) 
+        return;
+      
       DisplayTextToPlayer(faction.Player, 0, 0, display);
       var sound = SoundLibrary.Discovered;
       UnsyncUtils.InvokeForClient(() => { StartSound(sound); }, faction.Player);
@@ -368,7 +350,8 @@ namespace MacroTools.QuestSystem
           allComplete = false;
           if (objective.Progress == QuestProgress.Failed)
             anyFailed = true;
-          else if (objective.Progress == QuestProgress.Undiscovered) anyUndiscovered = true;
+          else if (objective.Progress == QuestProgress.Undiscovered) 
+            anyUndiscovered = true;
         }
 
         switch (objective.Progress)
@@ -376,14 +359,12 @@ namespace MacroTools.QuestSystem
           case QuestProgress.Undiscovered:
             break;
           case QuestProgress.Incomplete:
-            UnsyncUtils.InvokeForClients(() => { objective.ShowLocal(Progress); },
-              localPlayer => objective.EligibleFactions.Contains(localPlayer) == true);
-            objective.ShowSync(Progress);
+            foreach (var faction in objective.EligibleFactions)
+              objective.Show(faction.Player, Progress);
             break;
           case QuestProgress.Complete:
-            UnsyncUtils.InvokeForClients(() => { objective.HideLocal(); },
-              localPlayer => objective.EligibleFactions.Contains(localPlayer) == true);
-            objective.HideSync();
+            foreach (var faction in objective.EligibleFactions)
+              objective.Hide(faction.Player);
             break;
           case QuestProgress.Failed:
             break;

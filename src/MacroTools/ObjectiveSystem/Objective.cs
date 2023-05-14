@@ -113,18 +113,16 @@ namespace MacroTools.ObjectiveSystem
 
     protected bool? IsPlayerOnSameTeamAsAnyEligibleFaction(player whichPlayer)
     {
-
       foreach (var eligibleFaction in EligibleFactions)
       {
         if (eligibleFaction.Player == null)
-        {
           return null;
-        }
-        else if (eligibleFaction.Player == Player(PLAYER_NEUTRAL_PASSIVE) || eligibleFaction.Player == Player(PLAYER_NEUTRAL_AGGRESSIVE))
-        {
+
+        if (eligibleFaction.Player == Player(PLAYER_NEUTRAL_PASSIVE) ||
+            eligibleFaction.Player == Player(PLAYER_NEUTRAL_AGGRESSIVE))
           return null;
-        }
-        else if (eligibleFaction.Player.GetTeam() == whichPlayer.GetTeam())
+
+        if (eligibleFaction.Player.GetTeam() == whichPlayer.GetTeam())
           return true;
       }
 
@@ -148,68 +146,71 @@ namespace MacroTools.ObjectiveSystem
     {
     }
 
-    /// <summary>Shows the local aspects of this QuestItem, namely the minimap icon.</summary>
-    [DesyncSafe]
-    internal void ShowLocal(QuestProgress parentQuestProgress)
-    {
-      if (Progress != QuestProgress.Incomplete || parentQuestProgress != QuestProgress.Incomplete) 
-        return;
-      
-      if (_minimapIcon == null && DisplaysPosition)
-        _minimapIcon = CreateMinimapIcon(Position.X, Position.Y, 255, 255, 0, SkinManagerGetLocalPath(PingPath),
-          FOG_OF_WAR_MASKED);
-      else
-        _minimapIcon?.SetVisible(true);
-    }
-
     /// <summary>
-    ///   Shows the synchronous aspects of this QuestItem, namely the visible target circle.
+    /// Reveals the in-world and minimap indicators for this <see cref="Objective"/>.
     /// </summary>
-    internal void ShowSync(QuestProgress parentQuestProgress)
+    /// <param name="toPlayer">The player who should see the indicators.</param>
+    /// <param name="parentQuestProgress">The current <see cref="QuestProgress"/> of the <see cref="Objective"/>'s parent.</param>
+    internal void Show(player toPlayer, QuestProgress parentQuestProgress)
     {
-      if (Progress != QuestProgress.Incomplete || parentQuestProgress != QuestProgress.Incomplete) 
+      if (Progress != QuestProgress.Incomplete || parentQuestProgress != QuestProgress.Incomplete)
         return;
-      
+
       if (MapEffectPath != null && _mapEffect == null)
       {
-        _mapEffect = UnsyncUtils.AddSpecialEffectUnsync(localPlayer => EligibleFactions.Contains(localPlayer) is true ? MapEffectPath : "",
+        _mapEffect = UnsyncUtils.AddSpecialEffectUnsync(
+          localPlayer => EligibleFactions.Contains(localPlayer) is true ? MapEffectPath : "",
           Position.X, Position.Y);
         BlzSetSpecialEffectColorByPlayer(_mapEffect, EligibleFactions.First().Player);
         BlzSetSpecialEffectHeight(_mapEffect, 100 + Environment.GetPositionZ(Position));
       }
 
       if (OverheadEffectPath != null && _overheadEffect == null && TargetWidget != null)
-      {
         _overheadEffect = UnsyncUtils.AddSpecialEffectTargetUnsync(
-          localPlayer => EligibleFactions.Contains(localPlayer) is true ? OverheadEffectPath : "", TargetWidget, "overhead");
-      }
+          localPlayer => EligibleFactions.Contains(localPlayer) is true ? OverheadEffectPath : "", TargetWidget,
+          "overhead");
+
+      if (_minimapIcon == null && DisplaysPosition)
+        _minimapIcon = CreateMinimapIcon(Position.X, Position.Y, 255, 255, 0, SkinManagerGetLocalPath(PingPath),
+          FOG_OF_WAR_MASKED).SetVisible(false);
+
+      UnsyncUtils.InvokeForClient(() => { ShowLocal(parentQuestProgress); }, toPlayer);
     }
 
     /// <summary>
-    ///   Hides the synchronous aspects of this QuestItem, namely the minimap icon.
+    /// Hides the in-world and minimap indicators for this <see cref="Objective"/>.
     /// </summary>
-    [DesyncSafe]
-    internal void HideLocal()
-    {
-      if (_minimapIcon != null) SetMinimapIconVisible(_minimapIcon, false);
-    }
-
-    /// <summary>
-    ///   Hides the synchronous aspects of this QuestItem, namely the map effect.
-    /// </summary>
-    internal void HideSync()
+    /// <param name="fromPlayer">The player from whom to hide the indicators.</param>
+    internal void Hide(player fromPlayer)
     {
       if (_mapEffect != null)
       {
-        DestroyEffect(_mapEffect);
+        _mapEffect.Destroy();
         _mapEffect = null;
       }
 
-      if (OverheadEffectPath != null)
+      if (_overheadEffect != null)
       {
-        DestroyEffect(_overheadEffect);
+        _overheadEffect.Destroy();
         _overheadEffect = null;
       }
+
+      UnsyncUtils.InvokeForClient(HideLocal, fromPlayer);
     }
+
+    /// <summary>Shows the local aspects of this QuestItem, namely the minimap icon.</summary>
+    [DesyncSafe]
+    private void ShowLocal(QuestProgress parentQuestProgress)
+    {
+      if (Progress != QuestProgress.Incomplete || parentQuestProgress != QuestProgress.Incomplete)
+        return;
+      _minimapIcon?.SetVisible(true);
+    }
+
+    /// <summary>
+    /// Hides the synchronous aspects of this QuestItem, namely the minimap icon.
+    /// </summary>
+    [DesyncSafe]
+    private void HideLocal() => _minimapIcon?.SetVisible(false);
   }
 }
