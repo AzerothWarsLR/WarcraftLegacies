@@ -46,6 +46,12 @@ namespace MacroTools.Extensions
       TriggerRegisterUnitEvent(whichTrigger, whichUnit, whichEvent);
       return whichTrigger;
     }
+
+    public static trigger RegisterFrameEvent(this trigger whichTrigger, framehandle frame, frameeventtype frameEventType)
+    {
+      BlzTriggerRegisterFrameEvent(whichTrigger, frame, frameEventType);
+      return whichTrigger;
+    }
     
     public static trigger AddAction(this trigger whichTrigger, Action actionFunc)
     {

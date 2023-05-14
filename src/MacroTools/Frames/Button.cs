@@ -1,4 +1,4 @@
-﻿using MacroTools.Wrappers;
+﻿using MacroTools.Extensions;
 using static War3Api.Common;
 
 namespace MacroTools.Frames
@@ -10,7 +10,7 @@ namespace MacroTools.Frames
    /// </summary>
    public sealed class Button : Frame
    {
-      private TriggerWrapper _onClickTrigger;
+      private trigger? _onClickTrigger;
 
       public Button(string name, framehandle parent, int priority) : base(name, parent,
          priority)
@@ -37,9 +37,14 @@ namespace MacroTools.Frames
       {
          set
          {
-            _onClickTrigger = new TriggerWrapper();
-            _onClickTrigger.RegisterFrameEvent(Handle, FRAMEEVENT_CONTROL_CLICK);
-            _onClickTrigger.AddAction(() => value(GetTriggerPlayer()));
+           if (_onClickTrigger != null)
+           {
+             _onClickTrigger.Destroy();
+             _onClickTrigger = null;
+           }
+           _onClickTrigger = CreateTrigger()
+             .RegisterFrameEvent(Handle, FRAMEEVENT_CONTROL_CLICK)
+             .AddAction(() => value(GetTriggerPlayer()));
          }
       }
 
@@ -47,6 +52,13 @@ namespace MacroTools.Frames
       {
          get => BlzFrameGetText(Handle);
          set => BlzFrameSetText(Handle, value);
+      }
+
+      /// <inheritdoc />
+      public override void Dispose()
+      {
+        _onClickTrigger?.Destroy();
+        base.Dispose();
       }
    }
 }

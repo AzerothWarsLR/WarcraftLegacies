@@ -32,10 +32,10 @@ namespace MacroTools.BookSystem
       book.LauncherButton.SetPoint(FRAMEPOINT_TOP, book.LauncherParent, FRAMEPOINT_BOTTOM, 0, 0);
       book.LauncherButton.OnClick = book.Open;
 
-      if (whichPlayer == null)
-        book.Handle.SetVisible(true);
-      else
-        UnsyncUtils.InvokeForClient(() => { book.Handle.SetVisible(true); }, whichPlayer);
+      if (whichPlayer == null) return;
+      
+      book.LauncherButton.Handle.SetVisible(false);
+      UnsyncUtils.InvokeForClient(() => { book.LauncherButton.Handle.SetVisible(true); }, whichPlayer);
     }
 
     private static void LoadToc(string tocFilePath)

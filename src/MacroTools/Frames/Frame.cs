@@ -12,7 +12,7 @@ namespace MacroTools.Frames
     private float _width;
 
     /// <summary>The actual WC3 frame object this object is representing.</summary>
-    public framehandle Handle { get; protected set; }
+    public framehandle Handle { get; set; }
 
     public Frame Parent
     {
@@ -44,10 +44,7 @@ namespace MacroTools.Frames
       }
     }
     
-    public bool Visible
-    {
-      get => BlzFrameIsVisible(Handle);
-    }
+    public bool Visible => BlzFrameIsVisible(Handle);
 
     public string Texture
     {
@@ -123,7 +120,7 @@ namespace MacroTools.Frames
     }
 
     /// <inheritdoc />
-    public void Dispose()
+    public virtual void Dispose()
     {
       if (_disposed) return;
       _disposed = true;
