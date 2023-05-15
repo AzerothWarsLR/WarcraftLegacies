@@ -60,11 +60,6 @@ namespace WarcraftLegacies.Source.Setup.Legends
         Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_H0AH_SHATTRAH_DRAENEI_OTHER)
       };
 
-      Farahlon = new Capital
-      {
-        Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_H0AF_FARAHLON_DRAENEI_OTHER)
-      };
-
       Halaar = new Capital
       {
         Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_H0AE_HALAAR_DRAENEI_OTHER)
