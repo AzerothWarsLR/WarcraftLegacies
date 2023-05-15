@@ -18183,6 +18183,12 @@ STRING 3031
 Train Geomancer
 }
 
+STRING 3032
+// Units: n0E5 (Void Reaver), Ubertip (Tooltip - Extended)
+{
+Mechanical Demon brought from the Void.|n|cfff5962dAbilities: |R Arcane Combustion, Mana Shield|n|n|cff99b4d1Can only train 8.|r|n|cffffcc00Attacks land units.|r
+}
+
 STRING 3033
 // Units: h04L (Priestess of the Moon), EditorSuffix (Name - Editor Suffix)
 {
@@ -114535,12 +114541,6 @@ STRING 19100
 Halaar
 }
 
-STRING 19101
-// Units: h0AF (Farahlon), Name (Name)
-{
-Farahlon
-}
-
 STRING 19102
 // Units: n0CW (Farahlon (10gold/min)), Name (Name)
 {
@@ -120674,12 +120674,6 @@ STRING 20124
 }
 
 STRING 20125
-// Units: h0AF (Farahlon), EditorSuffix (Name - Editor Suffix)
-{
-(Draenei Other)
-}
-
-STRING 20126
 // Units: h0AH (Shattrah), EditorSuffix (Name - Editor Suffix)
 {
 (Draenei Other)
@@ -125532,12 +125526,6 @@ STRING 20940
 // Units: n0E4 (Scorpion), Ubertip (Tooltip - Extended)
 {
 Tempest-forged machine of war.|n|n|cff99b4d1Can only build 6.|r|n|cffffcc00Attacks land units.|r
-}
-
-STRING 20941
-// Units: n0E5 (Void Reaver), Ubertip (Tooltip - Extended)
-{
-Mechanical Demon brought from the Void.|n|cfff5962dAbilities: |R Arcane Combustion, Felsteel Plating|n|n|cff99b4d1Can only train 8.|r|n|cffffcc00Attacks land units.|r
 }
 
 STRING 20942
