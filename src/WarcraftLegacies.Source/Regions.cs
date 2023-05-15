@@ -290,7 +290,7 @@ public static class Regions
 	public static Rectangle TombOfSargerasInteriorH { get; set; } = new Rectangle(-1216f, 8768f, -288f, 8992f);
 	public static Rectangle BrokenIslesB { get; set; } = new Rectangle(544f, 8960f, 3296f, 10368f);
 	public static Rectangle GuldansCorpse { get; set; } = new Rectangle(-800f, 9792f, -544f, 10080f);
-	public static Rectangle KaliRock7 { get; set; } = new Rectangle(-13056f, 512f, -12448f, 1472f);
+	public static Rectangle KaliRock7 { get; set; } = new Rectangle(-13056f, 352f, -12128f, 1472f);
 	public static Rectangle BookRetrieval { get; set; } = new Rectangle(9728f, 5248f, 10016f, 5472f);
 	public static Rectangle SkullRetrieval { get; set; } = new Rectangle(8576f, 4672f, 8832f, 4928f);
 	public static Rectangle KezanUnlock { get; set; } = new Rectangle(-2400f, -8000f, 608f, -5184f);
@@ -324,8 +324,8 @@ public static class Regions
 	public static Rectangle DuskwoodEmeraldPortal { get; set; } = new Rectangle(11008f, -15968f, 11456f, -15712f);
 	public static Rectangle FeralasEmeraldPortal { get; set; } = new Rectangle(-18144f, -6464f, -17696f, -6208f);
 	public static Rectangle AshenvaleEmeraldPortal { get; set; } = new Rectangle(-8576f, 8992f, -8128f, 9280f);
-	public static Rectangle KaliRock10 { get; set; } = new Rectangle(-11296f, 2688f, -10144f, 3424f);
-	public static Rectangle KaliRock11 { get; set; } = new Rectangle(-12800f, 3392f, -12032f, 4736f);
+	public static Rectangle KaliRock10 { get; set; } = new Rectangle(-11296f, 2688f, -10048f, 3424f);
+	public static Rectangle KaliRock11 { get; set; } = new Rectangle(-12640f, 3360f, -11872f, 4704f);
 	public static Rectangle KaliRock12 { get; set; } = new Rectangle(-9472f, -1888f, -8256f, -1248f);
 	public static Rectangle LumberCampUnlock { get; set; } = new Rectangle(-11648f, 864f, -9472f, 3296f);
 	public static Rectangle UpperBarrenCreeps { get; set; } = new Rectangle(-14464f, -3104f, -10336f, -32f);
@@ -347,5 +347,8 @@ public static class Regions
 	public static Rectangle KilSummon { get; set; } = new Rectangle(14176f, -17536f, 14272f, -17440f);
 	public static Rectangle UpperNetherstorm { get; set; } = new Rectangle(832f, -20832f, 3776f, -18400f);
 	public static Rectangle Area52Unlock { get; set; } = new Rectangle(-96f, -22720f, 1728f, -20800f);
+	public static Rectangle KaliRock13 { get; set; } = new Rectangle(-12992f, 1472f, -12096f, 2496f);
+	public static Rectangle KaliRock14 { get; set; } = new Rectangle(-10080f, 2432f, -9408f, 3584f);
+	public static Rectangle KaliRock15 { get; set; } = new Rectangle(-8192f, 1056f, -7264f, 1568f);
 
 }

@@ -69,12 +69,6 @@ namespace WarcraftLegacies.Source.Setup.Spells
         SpecialEffect = @"war3mapImported\FrostNova.mdx"
       };
       SpellSystem.Register(warStompAdal);
-
-      var crystallization = new GoldOnCast(Constants.ABILITY_A045_CRYSTALLIZATION_ALL)
-      {
-        GoldToGrant = 25
-      };
-      SpellSystem.Register(crystallization);
     }
   }
 }

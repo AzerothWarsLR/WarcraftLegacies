@@ -18,7 +18,8 @@ namespace WarcraftLegacies.Source.Setup
       RockSystem.Register(new RockGroup(Regions.KaliRock4, RockChunkId, 480));
       RockSystem.Register(new RockGroup(Regions.KaliRock8, RockChunkId, 660));
       RockSystem.Register(new RockGroup(Regions.KaliRock9, RockChunkId, 660));
-      RockSystem.Register(new RockGroup(Regions.KaliRock12, RockChunkId, 360));
+      RockSystem.Register(new RockGroup(Regions.KaliRock12, RockChunkId, 420));
+      RockSystem.Register(new RockGroup(Regions.KaliRock15, RockChunkId, 420));
 
       RockSystem.Register(new RockGroup(Regions.IslandBlocker1, IslandChunkId, 1200));
       RockSystem.Register(new RockGroup(Regions.IslandBlocker2, IslandChunkId, 1200));
@@ -29,6 +30,7 @@ namespace WarcraftLegacies.Source.Setup
       RockSystem.Register(new RockGroup(Regions.KaliRock7, ForestChunkId, 420));
       RockSystem.Register(new RockGroup(Regions.KaliRock10, ForestChunkId, 420));
       RockSystem.Register(new RockGroup(Regions.KaliRock11, ForestChunkId, 420));
+      RockSystem.Register(new RockGroup(Regions.KaliRock13, ForestChunkId, 420));
 
       RockSystem.Register(new RockGroup(Regions.GilneasUnlock5, RockChunkId, 660));
     }

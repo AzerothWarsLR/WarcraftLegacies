@@ -16,7 +16,7 @@ namespace WarcraftLegacies.Source.Quests.Zandalar
   {
     private const int _zulgurubResearch = Constants.UPGRADE_R02M_QUEST_COMPLETED_THE_HEART_OF_HAKKAR_WARSONG;
     private const int _trollShrineId = Constants.UNIT_O04X_LOA_SHRINE_ZANDALARI_SPECIALIST;
-    private const int _ravagerId = Constants.UNIT_O021_RAVAGER_WARSONG;
+    private const int _ravagerId = Constants.UNIT_O021_RAVAGER_ZANDALAR;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestZulgurub"/> class
