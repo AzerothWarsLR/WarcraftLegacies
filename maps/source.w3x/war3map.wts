@@ -95187,7 +95187,7 @@ Primary structure, used to train workers and gather resources.|n|cfff5962dTrains
 }
 
 STRING 15872
-// Abilities: A11Z (Scout's Rider), EditorSuffix (Editor Suffix)
+// Units: H06Q (Demigod), EditorSuffix (Name - Editor Suffix)
 {
 (zandalar)
 }
@@ -99987,7 +99987,7 @@ Primary structure, used to train workers and gather resources.|n|cfff5962dTrains
 }
 
 STRING 16672
-// Units: H06Q (Demigod), EditorSuffix (Name - Editor Suffix)
+// Units: o021 (Ravager), EditorSuffix (Name - Editor Suffix)
 {
 (zandalar)
 }
@@ -107970,7 +107970,7 @@ W
 }
 
 STRING 18003
-// Units: o021 (Ravager), EditorSuffix (Name - Editor Suffix)
+// Units: o02K (Bear Rider), EditorSuffix (Name - Editor Suffix)
 {
 (zandalar)
 }
@@ -113864,7 +113864,7 @@ STRING 18988
 }
 
 STRING 18989
-// Abilities: A120 (Scout's Fire 1), EditorSuffix (Editor Suffix)
+// Units: o04W (Golden Vessel), EditorSuffix (Name - Editor Suffix)
 {
 (zandalar)
 }
@@ -122630,7 +122630,7 @@ Gateway attuned to the Queens of Suffering of the Burning Crusade, summoning 1 e
 }
 
 STRING 20451
-// Units: o02K (Bear Rider), EditorSuffix (Name - Editor Suffix)
+// Abilities: A0TR (Soul Voodoo), EditorSuffix (Editor Suffix)
 {
 (zandalar)
 }
@@ -122648,7 +122648,7 @@ Train Throne of War
 }
 
 STRING 20454
-// Units: o04W (Golden Vessel), EditorSuffix (Name - Editor Suffix)
+// Abilities: A11X (Barrage), EditorSuffix (Editor Suffix)
 {
 (zandalar)
 }
@@ -122714,13 +122714,13 @@ Scout's Rider
 }
 
 STRING 20465
-// Abilities: A0TR (Soul Voodoo), EditorSuffix (Editor Suffix)
+// Abilities: A11Y (Troll Handler), EditorSuffix (Editor Suffix)
 {
 (zandalar)
 }
 
 STRING 20466
-// Abilities: A11X (Barrage), EditorSuffix (Editor Suffix)
+// Abilities: A11Z (Scout's Rider), EditorSuffix (Editor Suffix)
 {
 (zandalar)
 }
@@ -122738,7 +122738,7 @@ Scout's Fire 1
 }
 
 STRING 20469
-// Abilities: A11Y (Troll Handler), EditorSuffix (Editor Suffix)
+// Abilities: A120 (Scout's Fire 1), EditorSuffix (Editor Suffix)
 {
 (zandalar)
 }
