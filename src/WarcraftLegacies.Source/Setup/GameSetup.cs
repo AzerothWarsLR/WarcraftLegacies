@@ -127,7 +127,7 @@ namespace WarcraftLegacies.Source.Setup
       BlackPortalControlNexusSetup.Setup(preplacedUnitSystem);
       CenariusGhost.Setup(allLegendSetup.Druids);
       HelmOfDominationDropsWhenScourgeLeaves.Setup(artifactSetup.HelmOfDomination, allLegendSetup.Scourge.TheFrozenThrone);
-      TagSummonedUnits.Setup();
+      //TagSummonedUnits.Setup();
     }
 
     private static void SetupControlPointManager()

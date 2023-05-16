@@ -41218,6 +41218,12 @@ STRING 6870
 Gives a 25% chance that an attack will deal 50 damage to nearby units.
 }
 
+STRING 6871
+// Units: h09U (Elekk Knight), Ubertip (Tooltip - Extended)
+{
+Powerful Rider of the Exodar.|n|cfff5962dAbilities:|R Charge, Thick Skin, Salvation, Resistant Skin|n |n|cff99b4d1Can only train 4.|n|cffffcc00Attacks land units and trees.|r
+}
+
 STRING 6872
 // Abilities: A0UF (Spike Aura), Name (Name)
 {
@@ -42184,12 +42190,6 @@ STRING 7029
 // Units: o03E (Grim Totem), Name (Name)
 {
 Grim Totem
-}
-
-STRING 7030
-// Units: h09R (Vindicator), Ubertip (Tooltip - Extended)
-{
-Holy warrior of the Light.|n|cfff5962dAbilities:|r Holy Light, Divine Shield, Consecrated Slam, Consecrated Strikes, War Plating, Resistant Skin|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land units.|r
 }
 
 STRING 7031
@@ -72566,6 +72566,12 @@ STRING 12090
 Calls forth a cone of energy utterly destroying enemies, hitting up to 6 enemies for 650 damage each. Cannot be used on heroes.
 }
 
+STRING 12091
+// Abilities: A045 (Gateway Reinforcements), Ubertip (Tooltip - Normal - Extended)
+{
+Opens a gateway, allowing 1 Draenei to step through and reinforce Azeroth from other worlds. |n|nPossible units: Lightforged Dragoon, Lightforged Warframe.
+}
+
 STRING 12092
 // Abilities: A07V (Bolster), Hotkey (Hotkey - Normal)
 {
@@ -74280,6 +74286,12 @@ STRING 12377
 // Abilities: A0Z5 (Driven by Vengance), Researchubertip (Tooltip - Learn - Extended)
 {
 Galen has always been an adept commander and his skills give his armies increased mobility. Increases the movement speed of all nearby friendly units.|n|n|cffffcc00Level 1|r - 15% increased movement speed. |n|cffffcc00Level 2|r - 20% increased movement speed. |n|cffffcc00Level 3|r - 25% increased movement speed. |n|cffffcc00Level 4|r - 30% increased movement speed. |n
+}
+
+STRING 12378
+// Abilities: A12U (Salvation), EditorSuffix (Editor Suffix)
+{
+(Elekk Knight)
 }
 
 STRING 12379
@@ -105110,6 +105122,12 @@ STRING 17524
 Font of arcane power. Provides 8 food, which increases the maximum number of units that can be trained.|n|cfff5962dAbilities:|R Charge Mana|n|n|cff99b4d1Can only train 48
 }
 
+STRING 17525
+// Abilities: A12U (Salvation), Name (Name)
+{
+Salvation
+}
+
 STRING 17526
 // Abilities: A0SQ (Spawn Horror), EditorSuffix (Editor Suffix)
 {
@@ -108443,6 +108461,12 @@ STRING 18080
 Build Siege Workshop
 }
 
+STRING 18081
+// Abilities: A12U (Salvation), Tip (Tooltip - Normal)
+{
+Salvation
+}
+
 STRING 18083
 // Abilities: A0UF (Spike Aura), Researchubertip (Tooltip - Learn - Extended)
 {
@@ -108543,6 +108567,18 @@ STRING 18099
 // Abilities: A0WW (Summon Goliathon), Hotkey (Hotkey - Normal)
 {
 R
+}
+
+STRING 18100
+// Abilities: A0HG (Unholy Armor), Tip (Tooltip - Normal)
+{
+Unholy Armor
+}
+
+STRING 18101
+// Abilities: A0HG (Unholy Armor), Tip (Tooltip - Normal)
+{
+Unholy Armor
 }
 
 STRING 18102
@@ -111842,7 +111878,7 @@ STRING 18650
 }
 
 STRING 18651
-// Abilities: A0HG (Unholy Armor), Tip (Tooltip - Normal)
+// Abilities: A12U (Salvation), Tip (Tooltip - Normal)
 {
 Unholy Armor
 }
@@ -111956,7 +111992,7 @@ Curse of Executus
 }
 
 STRING 18670
-// Abilities: A0HG (Unholy Armor), Tip (Tooltip - Normal)
+// Abilities: A12U (Salvation), Tip (Tooltip - Normal)
 {
 Unholy Armor
 }
@@ -114344,7 +114380,7 @@ Quest Completed: Ruins of Stonemaul
 }
 
 STRING 19068
-// Buffs/Effects: B02P (), Bufftip (Tooltip)
+// Abilities: A12U (Salvation), Tip (Tooltip - Normal)
 {
 Unholy Armor
 }
@@ -114539,6 +114575,12 @@ STRING 19100
 // Units: h0AE (Halaar), Name (Name)
 {
 Halaar
+}
+
+STRING 19101
+// Abilities: A12U (Salvation), Ubertip (Tooltip - Normal - Extended)
+{
+Increases a target friendly unit's armor by <A0HG,DataB2> for <A0HG,Dur2> seconds at the cost of 6% of its current hit points.
 }
 
 STRING 19102
@@ -116709,7 +116751,7 @@ W
 }
 
 STRING 19463
-// Upgrades: R078 (Spirit Walker Adept Training,Spirit Walker Master Training), EditorSuffix (Editor Suffix)
+// Abilities: A12V (Blessed Ground), EditorSuffix (Editor Suffix)
 {
 (Draenei)
 }
@@ -117159,7 +117201,7 @@ Build Hunter Tower
 }
 
 STRING 19538
-// Upgrades: R07C (Spirit Walker Adept Training,Spirit Walker Master Training), EditorSuffix (Editor Suffix)
+// Upgrades: R078 (Spirit Walker Adept Training,Spirit Walker Master Training), EditorSuffix (Editor Suffix)
 {
 (Draenei)
 }
@@ -119887,6 +119929,12 @@ STRING 19992
 Execute
 }
 
+STRING 19993
+// Abilities: A12U (Salvation), Ubertip (Tooltip - Normal - Extended)
+{
+Increases a target friendly unit's armor by <A0HG,DataB3> for <A0HG,Dur3> seconds at the cost of 6% of its current hit points.
+}
+
 STRING 19994
 // Abilities: A12J (Frenzy), EditorSuffix (Editor Suffix)
 {
@@ -120350,7 +120398,7 @@ Thunder Fists - [|cffffcc00Level 3|r]
 }
 
 STRING 20071
-// Upgrades: Rora (Steel Ranged Weapons,Thorium Ranged Weapons,Arcanite Ranged Weapons), Hotkey (Hotkey)
+// Abilities: A12V (Blessed Ground), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -120677,6 +120725,12 @@ STRING 20125
 // Units: h0AH (Shattrah), EditorSuffix (Name - Editor Suffix)
 {
 (Draenei Other)
+}
+
+STRING 20126
+// Abilities: A12U (Salvation), Ubertip (Tooltip - Normal - Extended)
+{
+Increases a target friendly unit's armor by <A0HG,DataB4> for <A0HG,Dur4> seconds at the cost of 6% of its current hit points.
 }
 
 STRING 20127
@@ -121496,7 +121550,7 @@ R
 }
 
 STRING 20263
-// Upgrades: Rosp (Spiked Barricades,Improved Spiked Barricades,Advanced Spiked Barricades), Hotkey (Hotkey)
+// Abilities: A12V (Blessed Ground), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -122468,7 +122522,7 @@ Channel the Citadel Shield. The shield will deal 12 damage per second to enemies
 }
 
 STRING 20425
-// Upgrades: Ropg (Pillage), Hotkey (Hotkey)
+// Upgrades: Rosp (Spiked Barricades,Improved Spiked Barricades,Advanced Spiked Barricades), Hotkey (Hotkey)
 {
 R
 }
@@ -123008,7 +123062,7 @@ E
 }
 
 STRING 20515
-// Upgrades: Rhra (Black Gunpowder,Refined Gunpowder,Imbued Gunpowder), Hotkey (Hotkey)
+// Upgrades: Rora (Steel Ranged Weapons,Thorium Ranged Weapons,Arcanite Ranged Weapons), Hotkey (Hotkey)
 {
 W
 }
@@ -123146,9 +123200,9 @@ Quest Completed: Navigation
 }
 
 STRING 20538
-// Units: h09U (Elekk Knight), Ubertip (Tooltip - Extended)
+// Units: h09R (Vindicator), Ubertip (Tooltip - Extended)
 {
-Powerful Rider of the Exodar.|n|cfff5962dAbilities:|R Charge, Thick Skin, Resistant Skin|n |n|cff99b4d1Can only train 4.|n|cffffcc00Attacks land units and trees.|r
+Holy warrior of the Light.|n|cfff5962dAbilities:|r Holy Light, Blessed Ground, Consecrated Slam, Consecrated Strikes, Naaru's Shield, Resistant Skin|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land units.|r
 }
 
 STRING 20539
@@ -123272,7 +123326,7 @@ STRING 20558
 }
 
 STRING 20559
-// Upgrades: Rhlh (Improved Lumber Harvesting,Advanced Lumber Harvesting), Hotkey (Hotkey)
+// Abilities: A12U (Salvation), Hotkey (Hotkey - Normal)
 {
 E
 }
@@ -123693,7 +123747,7 @@ C
 }
 
 STRING 20629
-// Upgrades: Rhlh (Improved Lumber Harvesting,Advanced Lumber Harvesting), Hotkey (Hotkey)
+// Abilities: A12U (Salvation), Unhotkey (Hotkey - Turn Off)
 {
 E
 }
@@ -124035,13 +124089,13 @@ Consumed by the Void - [|cffffcc00Level 3|r]
 }
 
 STRING 20686
-// Upgrades: Renb (Nature's Blessing), Hotkey (Hotkey)
+// Upgrades: Rhlh (Improved Lumber Harvesting,Advanced Lumber Harvesting), Hotkey (Hotkey)
 {
 E
 }
 
 STRING 20687
-// Upgrades: Renb (Nature's Blessing), Hotkey (Hotkey)
+// Upgrades: Rhlh (Improved Lumber Harvesting,Advanced Lumber Harvesting), Hotkey (Hotkey)
 {
 E
 }
@@ -124053,7 +124107,7 @@ E
 }
 
 STRING 20689
-// Upgrades: R06K (Defend), Hotkey (Hotkey)
+// Upgrades: Renb (Nature's Blessing), Hotkey (Hotkey)
 {
 E
 }
@@ -124161,7 +124215,7 @@ Q
 }
 
 STRING 20707
-// Upgrades: R06G (Defend), Hotkey (Hotkey)
+// Upgrades: Renb (Nature's Blessing), Hotkey (Hotkey)
 {
 E
 }
@@ -124275,7 +124329,7 @@ W
 }
 
 STRING 20726
-// Upgrades: Rhac (Improved Masonry,Advanced Masonry,Imbued Masonry), Hotkey (Hotkey)
+// Upgrades: Rhra (Black Gunpowder,Refined Gunpowder,Imbued Gunpowder), Hotkey (Hotkey)
 {
 W
 }
@@ -124569,7 +124623,7 @@ W
 }
 
 STRING 20775
-// Upgrades: R06F (Defend), Hotkey (Hotkey)
+// Upgrades: R06K (Defend), Hotkey (Hotkey)
 {
 E
 }
@@ -124605,7 +124659,7 @@ Towers of the Sunfury.|n|n|cffffcc00Attacks land and air units.|r
 }
 
 STRING 20781
-// Upgrades: R064 (Nature's Blessing), Hotkey (Hotkey)
+// Upgrades: R06G (Defend), Hotkey (Hotkey)
 {
 E
 }
@@ -124695,7 +124749,7 @@ Q
 }
 
 STRING 20796
-// Upgrades: R03M (Defend), Hotkey (Hotkey)
+// Upgrades: R06F (Defend), Hotkey (Hotkey)
 {
 E
 }
@@ -124791,9 +124845,15 @@ Mystical hero, adept at dealing magical damage.|n|cfff5962dAbilities:|r Mana Shi
 }
 
 STRING 20812
-// Upgrades: R02P (Backpack), Hotkey (Hotkey)
+// Upgrades: R064 (Nature's Blessing), Hotkey (Hotkey)
 {
 E
+}
+
+STRING 20813
+// Buffs/Effects: B02P (), Bufftip (Tooltip)
+{
+Unholy Armor
 }
 
 STRING 20814
@@ -124941,9 +125001,9 @@ Forms a shield of flames around a target unit, dealing 20 damage per second to u
 }
 
 STRING 20838
-// Abilities: A045 (Gateway Reinforcements), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A12U (Salvation), Ubertip (Tooltip - Normal - Extended)
 {
-Opens a gateway, allowing 1 Draenei to step through and reinforce Azeroth from other worlds. |n|nPossible units: Defender, Elekk, Elekk Knight, Lightforged Dragoon, Rangari, Lightforged Warframe.
+Increases a target non-hero friendly unit's armor by 1000 and health regeneration by 200 for 10 seconds.
 }
 
 STRING 20839
@@ -125055,13 +125115,13 @@ F
 }
 
 STRING 20857
-// Upgrades: R03O (Animal War Training), Hotkey (Hotkey)
+// Upgrades: R03M (Defend), Hotkey (Hotkey)
 {
 E
 }
 
 STRING 20858
-// Upgrades: R03O (Animal War Training), Hotkey (Hotkey)
+// Upgrades: R02P (Backpack), Hotkey (Hotkey)
 {
 E
 }
@@ -125073,19 +125133,19 @@ E
 }
 
 STRING 20860
-// Upgrades: R01B (Defend), Hotkey (Hotkey)
+// Upgrades: Rhac (Improved Masonry,Advanced Masonry,Imbued Masonry), Hotkey (Hotkey)
 {
 W
 }
 
 STRING 20861
-// Upgrades: R07I (Necromancer Adept Training,Necromancer Master Training), Hotkey (Hotkey)
+// Upgrades: R01B (Defend), Hotkey (Hotkey)
 {
 W
 }
 
 STRING 20862
-// Upgrades: R097 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R03O (Animal War Training), Hotkey (Hotkey)
 {
 E
 }
@@ -125109,7 +125169,7 @@ W
 }
 
 STRING 20866
-// Upgrades: R086 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R03O (Animal War Training), Hotkey (Hotkey)
 {
 E
 }
@@ -125307,9 +125367,15 @@ Train Astromancer
 }
 
 STRING 20899
-// Upgrades: R080 (Iron Plating,Steel Plating,Mithril Plating), EditorSuffix (Editor Suffix)
+// Upgrades: R07C (Spirit Walker Adept Training,Spirit Walker Master Training), EditorSuffix (Editor Suffix)
 {
 (Draenei)
+}
+
+STRING 20900
+// Buffs/Effects: B0B8 (), Buffubertip (Tooltip - Extended)
+{
+This unit has Salvation; its armor and life regeneration are increased.
 }
 
 STRING 20901
@@ -125427,13 +125493,13 @@ Q
 }
 
 STRING 20920
-// Upgrades: R07W (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R07I (Necromancer Adept Training,Necromancer Master Training), Hotkey (Hotkey)
 {
 W
 }
 
 STRING 20921
-// Upgrades: Rews (Well Spring), Hotkey (Hotkey)
+// Upgrades: Ropg (Pillage), Hotkey (Hotkey)
 {
 R
 }
@@ -125454,6 +125520,18 @@ STRING 20924
 // Upgrades: R09G (Sorceress Adept Training,Sorceress Master Training), Hotkey (Hotkey)
 {
 X
+}
+
+STRING 20925
+// Buffs/Effects: B0B8 (), Bufftip (Tooltip)
+{
+Salvation
+}
+
+STRING 20926
+// Upgrades: R097 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+{
+E
 }
 
 STRING 20927
@@ -125498,6 +125576,18 @@ STRING 20933
 Z
 }
 
+STRING 20934
+// Upgrades: R086 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+{
+E
+}
+
+STRING 20935
+// Abilities: A12V (Blessed Ground), Name (Name)
+{
+Blessed Ground
+}
+
 STRING 20936
 // Upgrades: R09H (Priest Adept Training,Priest Master Training), Name (Name)
 {
@@ -125528,6 +125618,12 @@ STRING 20940
 Tempest-forged machine of war.|n|n|cff99b4d1Can only build 6.|r|n|cffffcc00Attacks land units.|r
 }
 
+STRING 20941
+// Abilities: A12V (Blessed Ground), Researchtip (Tooltip - Learn)
+{
+Learn Field of Blood - [|cffffcc00Level %d|r]
+}
+
 STRING 20942
 // Units: n0E6 (Shivarra), Ubertip (Tooltip - Extended)
 {
@@ -125535,7 +125631,7 @@ Elite fighters of the Legion.|n|cfff5962dAbilities: |RWind Walk, Mirror Image, C
 }
 
 STRING 20943
-// Upgrades: R00N (Storm Hammers), Hotkey (Hotkey)
+// Upgrades: Rews (Well Spring), Hotkey (Hotkey)
 {
 R
 }
@@ -125658,6 +125754,12 @@ STRING 20963
 // Abilities: A0FA (Siphoning Ritual), Ubertip (Tooltip - Normal - Extended)
 {
 Drains 60 hit points and 30 mana per second from up to 24 units in the target area for <A0FA,DataA3> seconds. Only drains hit points and mana from friendly units if the caster needs it.
+}
+
+STRING 20964
+// Abilities: A12V (Blessed Ground), Researchubertip (Tooltip - Learn - Extended)
+{
+Conjures a field of churning blood which heals allied ground units in a target area over time. |n|n|cffffcc00Level 1|r - Heals 150 hitpoints over 5 seconds, then 10 hitpoint every 1 seconds for 35 seconds.|n|cffffcc00Level 2|r - Heals 200 hitpoints over 5 seconds, then 15 hitpoint every 1 seconds for 35 seconds.|n|cffffcc00Level 3|r - Heals 250 hitpoints over 5 seconds, then 20 hitpoint every 1 seconds for 35 seconds.|n
 }
 
 STRING 20965
@@ -125784,6 +125886,12 @@ STRING 20985
 // Units: u02W (Energy Wagon), Ubertip (Tooltip - Extended)
 {
 Forged in the Tempest-Forges, these mana batteries keep the Sunfury addiction to magic at bay.|n|cfff5962dAbilities:|R Energy Grid, Absord Mana|n|n|cff99b4d1Can only build 2.|r|n|cffffcc00Attacks land and air units.|r
+}
+
+STRING 20986
+// Abilities: A12V (Blessed Ground), Tip (Tooltip - Normal)
+{
+Blessed Ground
 }
 
 STRING 20987
@@ -126048,5 +126156,95 @@ STRING 21030
 // Upgrades: R09H (Priest Adept Training,Priest Master Training), Ubertip (Tooltip - Extended)
 {
 Increases Astromancer 's mana capacity, attack damage and gives them the ability to cast Inner Fire.
+}
+
+STRING 21031
+// Abilities: A12V (Blessed Ground), Tip (Tooltip - Normal)
+{
+Field of Blood - [|cffffcc00Level 2|r]
+}
+
+STRING 21032
+// Abilities: A12V (Blessed Ground), Tip (Tooltip - Normal)
+{
+Field of Blood - [|cffffcc00Level 3|r]
+}
+
+STRING 21033
+// Abilities: A12V (Blessed Ground), Ubertip (Tooltip - Normal - Extended)
+{
+Conjures a Blessed Cricle which Heals allied ground units in a target area over time. |n|nHeals 150 hitpoints over 5 seconds, then 10 hitpoint every 1 seconds for 35 seconds.|n
+}
+
+STRING 21034
+// Abilities: A12V (Blessed Ground), Ubertip (Tooltip - Normal - Extended)
+{
+Conjures a Field of Blood which Heals allied ground units in a target area over time. |n|nHeals 200 hitpoints over 5 seconds, then 15 hitpoint every 1 seconds for 35 seconds.|n
+}
+
+STRING 21035
+// Abilities: A12V (Blessed Ground), Ubertip (Tooltip - Normal - Extended)
+{
+Conjures a Field of Blood which Heals allied ground units in a target area over time. |n|cffffcc00|n|rHeals 250 hitpoints over 5 seconds, then 20 hitpoint every 1 seconds for 35 seconds.
+}
+
+STRING 21036
+// Abilities: A12W (Naaru's Shield), EditorSuffix (Editor Suffix)
+{
+(vindicator)
+}
+
+STRING 21037
+// Abilities: A12W (Naaru's Shield), Name (Name)
+{
+Naaru's Shield
+}
+
+STRING 21038
+// Abilities: A12W (Naaru's Shield), Tip (Tooltip - Normal)
+{
+Naaru's Shield
+}
+
+STRING 21039
+// Abilities: A12W (Naaru's Shield), Ubertip (Tooltip - Normal - Extended)
+{
+Reduces the damage taken from Piercing attacks to 0%
+}
+
+STRING 21040
+// Buffs/Effects: X000 (Blessed Ground (Effect)), EditorName (Name (Editor Only))
+{
+Blessed Ground (Effect)
+}
+
+STRING 21041
+// Buffs/Effects: B0B9 (), Bufftip (Tooltip)
+{
+Blessed Ground
+}
+
+STRING 21042
+// Buffs/Effects: B0B9 (), Buffubertip (Tooltip - Extended)
+{
+This unit is in a Blessed Ground. It's health is rapidly replenishing.
+}
+
+STRING 21043
+// Upgrades: R00N (Storm Hammers), Hotkey (Hotkey)
+{
+R
+}
+
+STRING 21044
+// Upgrades: R080 (Iron Plating,Steel Plating,Mithril Plating), EditorSuffix (Editor Suffix)
+{
+(Draenei)
+}
+
+STRING 21045
+// Upgrades: R07W (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+{
+W
 }
 
