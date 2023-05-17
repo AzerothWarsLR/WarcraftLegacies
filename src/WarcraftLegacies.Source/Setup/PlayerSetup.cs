@@ -14,9 +14,6 @@ namespace WarcraftLegacies.Source.Setup
       Player(1).SetFaction(LordaeronSetup.Lordaeron);
       Player(1).SetTeam(TeamSetup.NorthAlliance);
 
-      Player(2).SetFaction(QuelthalasSetup.Quelthalas);
-      Player(2).SetTeam(TeamSetup.NorthAlliance);
-
       Player(3).SetFaction(ScourgeSetup.Scourge);
       Player(3).SetTeam(TeamSetup.Legion);
 

@@ -14,7 +14,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       gilneas.AddQuest(new QuestKeelHarbor());
       gilneas.AddQuest(new QuestTempestReach());
       gilneas.AddQuest(new QuestGilneasCity());
-      gilneas.AddQuest(new QuestGoldrinnHumanPath(artifactSetup.HornOfCenarius));
+      //gilneas.AddQuest(new QuestGoldrinnHumanPath(artifactSetup.HornOfCenarius));
     }
   }
 }
