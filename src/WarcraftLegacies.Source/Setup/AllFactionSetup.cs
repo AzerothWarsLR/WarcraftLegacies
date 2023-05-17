@@ -25,6 +25,7 @@ namespace WarcraftLegacies.Source.Setup
       DraeneiSetup.Setup();
       ZandalarSetup.Setup(preplacedUnitSystem);
       SunfurySetup.Setup(preplacedUnitSystem);
+      GilneasSetup.Setup(preplacedUnitSystem);
 
       CthunSetup.Setup(preplacedUnitSystem);
       NazjatarSetup.Setup(preplacedUnitSystem);

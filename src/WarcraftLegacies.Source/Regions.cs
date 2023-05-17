@@ -346,9 +346,11 @@ public static class Regions
 	public static Rectangle Netherstorm { get; set; } = new Rectangle(-544f, -23712f, 3680f, -18528f);
 	public static Rectangle KilSummon { get; set; } = new Rectangle(14176f, -17536f, 14272f, -17440f);
 	public static Rectangle UpperNetherstorm { get; set; } = new Rectangle(832f, -20832f, 3776f, -18400f);
-	public static Rectangle Area52Unlock { get; set; } = new Rectangle(-96f, -22720f, 1728f, -20800f);
+	public static Rectangle Area52Unlock { get; set; } = new Rectangle(-96f, -22720f, 1024f, -20608f);
 	public static Rectangle KaliRock13 { get; set; } = new Rectangle(-12992f, 1472f, -12096f, 2496f);
 	public static Rectangle KaliRock14 { get; set; } = new Rectangle(-10080f, 2432f, -9408f, 3584f);
 	public static Rectangle KaliRock15 { get; set; } = new Rectangle(-8192f, 1056f, -7264f, 1568f);
+	public static Rectangle GilneasStartPos { get; set; } = new Rectangle(7936f, 1472f, 8928f, 2112f);
+	public static Rectangle QuelStartPos { get; set; } = new Rectangle(16928f, 12288f, 17856f, 12960f);
 
 }
