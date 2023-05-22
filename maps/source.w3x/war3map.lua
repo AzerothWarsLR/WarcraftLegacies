@@ -344,6 +344,7 @@ gg_rct_KaliRock13 = nil
 gg_rct_KaliRock14 = nil
 gg_rct_GilneasStartPos = nil
 gg_rct_QuelStartPos = nil
+gg_rct_KaliRock15 = nil
 gg_snd_ArcaneObservatoryWhat1 = nil
 gg_snd_ArrangedTeamInvitation = nil
 gg_snd_ClanInvitation = nil
@@ -532,7 +533,6 @@ gg_snd_DoorCloseRemix = nil
 gg_snd_DoorOpenRemix = nil
 gg_snd_NuclearLaunchDetected = nil
 gg_snd_IllidansTheme = ""
-gg_rct_KaliRock15 = nil
 function InitGlobals()
 end
 
