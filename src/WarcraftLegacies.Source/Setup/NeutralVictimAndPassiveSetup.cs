@@ -20,6 +20,11 @@ namespace WarcraftLegacies.Source.Setup
       {
         Unally(player, Player(bj_PLAYER_NEUTRAL_VICTIM));
         Unally(Player(bj_PLAYER_NEUTRAL_VICTIM), player);
+        SetPlayerAlliance(player, Player(27), ALLIANCE_PASSIVE, true);
+        SetPlayerAlliance(player, Player(27), ALLIANCE_SHARED_VISION, false);
+        SetPlayerAlliance(player, Player(26), ALLIANCE_PASSIVE, true);
+        SetPlayerAlliance(player, Player(26), ALLIANCE_SHARED_VISION, false);
+
       }
     }
   }

@@ -11682,11 +11682,6 @@ STRING 1947
 Learn Slipstream - [|cffffcc00Level %d|r]
 }
 
-STRING 1948
-{
-CrisisCaptain
-}
-
 STRING 1949
 // Units: n091 (Doomfire Abyssal), EditorSuffix (Name - Editor Suffix)
 {
@@ -14010,11 +14005,6 @@ STRING 2336
 // Units: n05D (Infernal), Ubertip (Tooltip - Extended)
 {
 Summoned golem of fel flames.|n|cfff5962dAbilities:|R Spell Immunity, Permanent Immoliation, Resistant Skin|n|r|n|cffffcc00Attacks land units.|r
-}
-
-STRING 2337
-{
-CrisisFootman
 }
 
 STRING 2338
