@@ -394,6 +394,12 @@ STRING 65
 Kill a target worker, requires channeling next to the target
 }
 
+STRING 66
+// Units: o056 (Arcane Well), Ubertip (Tooltip - Extended)
+{
+Font of Arcane energy.|nProvides 10 food, which increases the maximum number of units that can be trained.|n|r|n|cff99b4d1Can only build 48.
+}
+
 STRING 67
 // Abilities: A0N9 (Assasinate), Tip (Tooltip - Normal)
 {
@@ -11407,7 +11413,7 @@ Maelstrom Pass
 }
 
 STRING 1903
-// Buffs/Effects: B02Q (), Bufftip (Tooltip)
+// Abilities: A0EN (Fear Aura), Name (Name)
 {
 Fear Aura
 }
@@ -12759,6 +12765,12 @@ STRING 2128
 // Units: n06C (Moonhunter), Hotkey (Hotkey)
 {
 Q
+}
+
+STRING 2129
+// Abilities: A045 (Gateway Reinforcements), Ubertip (Tooltip - Normal - Extended)
+{
+Opens a gateway, allowing 1 Defender to step through and reinforce Azeroth from other worlds.
 }
 
 STRING 2130
@@ -58678,7 +58690,7 @@ STRING 9788
 }
 
 STRING 9789
-// Abilities: A0EN (Fear Aura), Name (Name)
+// Buffs/Effects: B02Q (), Bufftip (Tooltip)
 {
 Fear Aura
 }
@@ -72468,12 +72480,6 @@ STRING 12090
 // Abilities: A046 (Finger of Death), Ubertip (Tooltip - Normal - Extended)
 {
 Calls forth a cone of energy utterly destroying enemies, hitting up to 6 enemies for 650 damage each. Cannot be used on heroes.
-}
-
-STRING 12091
-// Abilities: A045 (Gateway Reinforcements), Ubertip (Tooltip - Normal - Extended)
-{
-Opens a gateway, allowing 1 Draenei to step through and reinforce Azeroth from other worlds. |n|nPossible units: Lightforged Dragoon, Lightforged Warframe.
 }
 
 STRING 12092
@@ -125376,12 +125382,6 @@ STRING 20971
 // Units: H098 (Sunfury Mastermind), Ubertip (Tooltip - Extended)
 {
 Warrior Hero, adept at disrupting enemies and offensive magic.|n|cfff5962dAbilities:|r Mana Shield|n|cfff5962dCan Learn:|R Burst of Energy, Silence, Retribution Aura, Summon Goliathon|n|n|cffffcc00Attacks land units.|R
-}
-
-STRING 20972
-// Units: o056 (Arcane Well), Ubertip (Tooltip - Extended)
-{
-Font of Arcane energy.|nProvides 10 food, which increases the maximum number of units that can be trained.|n|r|n|cff99b4d1Can only build 96.
 }
 
 STRING 20973
