@@ -19073,6 +19073,12 @@ STRING 3179
 Ysondre
 }
 
+STRING 3180
+// Units: n0BI (Shrine to Malorne (20gold/min)), Name (Name)
+{
+Shrine to Malorne (20gold/min)
+}
+
 STRING 3181
 // Units: o02J (Worgen), Ubertip (Tooltip - Extended)
 {
@@ -23653,6 +23659,12 @@ STRING 3944
 // Units: H00Z (Crown Prince of Stromgarde), Awakentip (Tooltip - Awaken)
 {
 Revive Crown Prince of Stromgarde
+}
+
+STRING 3945
+// Units: n0A0 (Ascendant's Rise (15gold/min)), Name (Name)
+{
+Ascendant's Rise (15gold/min)
 }
 
 STRING 3946
@@ -28610,6 +28622,12 @@ STRING 4771
 // Units: u020 (Monument), Hotkey (Hotkey)
 {
 Q
+}
+
+STRING 4772
+// Units: n064 (Grove of the Ancients (15gold/min)), Name (Name)
+{
+Grove of the Ancients (15gold/min)
 }
 
 STRING 4773
@@ -39482,6 +39500,12 @@ STRING 6584
 // Abilities: A11I (Water Elemental), Ubertip (Tooltip - Normal - Extended)
 {
 Summons a water elemental to attack the Wizard's enemies. Has 600 hit points and lasts 90 seconds. |n|n|cffffcc00Attacks land and air units.|r
+}
+
+STRING 6585
+// Units: n06Q (Dire Maul(20gold/min)), Name (Name)
+{
+Dire Maul(20gold/min)
 }
 
 STRING 6586
@@ -60859,12 +60883,6 @@ STRING 10151
 // Abilities: A0D5 (Keep Commander Aura), Ubertip (Tooltip - Normal - Extended)
 {
 Gives 5% extra damage to the attacks of nearby friendly units.
-}
-
-STRING 10152
-// Units: n0A0 (Ascendant's Rise (10gold/min)), Name (Name)
-{
-Ascendant's Rise (10gold/min)
 }
 
 STRING 10153
@@ -83989,12 +84007,6 @@ STRING 14050
 // Units: h081 (Great Trelleborg), Hotkey (Hotkey)
 {
 C
-}
-
-STRING 14051
-// Units: n0BI (Shrine to Malorne (10gold/min)), Name (Name)
-{
-Shrine to Malorne (10gold/min)
 }
 
 STRING 14052
