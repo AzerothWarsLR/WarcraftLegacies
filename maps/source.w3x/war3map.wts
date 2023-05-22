@@ -394,12 +394,6 @@ STRING 65
 Kill a target worker, requires channeling next to the target
 }
 
-STRING 66
-// Buffs/Effects: B09M (), Buffubertip (Tooltip - Extended)
-{
-This unit is being assasinated
-}
-
 STRING 67
 // Abilities: A0N9 (Assasinate), Tip (Tooltip - Normal)
 {
@@ -11412,6 +11406,12 @@ STRING 1902
 Maelstrom Pass
 }
 
+STRING 1903
+// Buffs/Effects: B02Q (), Bufftip (Tooltip)
+{
+Fear Aura
+}
+
 STRING 1904
 // Abilities: A0AR (Shadow Infusion), Ubertip (Tooltip - Normal - Extended)
 {
@@ -12759,12 +12759,6 @@ STRING 2128
 // Units: n06C (Moonhunter), Hotkey (Hotkey)
 {
 Q
-}
-
-STRING 2129
-// Buffs/Effects: B02Q (), Bufftip (Tooltip)
-{
-|cffff0000Fear Aura|r
 }
 
 STRING 2130
@@ -19067,12 +19061,6 @@ STRING 3179
 Ysondre
 }
 
-STRING 3180
-// Buffs/Effects: B07D (), Buffubertip (Tooltip - Extended)
-{
-This unit has drastically increased attack speed and is ignoring incoming damage.
-}
-
 STRING 3181
 // Units: o02J (Worgen), Ubertip (Tooltip - Extended)
 {
@@ -23614,7 +23602,7 @@ F
 }
 
 STRING 3938
-// Buffs/Effects: B060 (Dragon's Fury), EditorSuffix (Editor Suffix)
+// Buffs/Effects: B05W (Holy fire (Bishop)), EditorSuffix (Editor Suffix)
 {
 (Dark Green)
 }
@@ -23653,12 +23641,6 @@ STRING 3944
 // Units: H00Z (Crown Prince of Stromgarde), Awakentip (Tooltip - Awaken)
 {
 Revive Crown Prince of Stromgarde
-}
-
-STRING 3945
-// Buffs/Effects: B05W (Holy fire (Bishop)), EditorSuffix (Editor Suffix)
-{
-(Dark Green)
 }
 
 STRING 3946
@@ -47000,22 +46982,10 @@ STRING 7834
 Gives nearby friendly units a 6 armor bonus for 45 seconds.
 }
 
-STRING 7835
-// Buffs/Effects: B06B (), EditorSuffix (Editor Suffix)
-{
-(Purple Bishop)
-}
-
 STRING 7836
 // Abilities: ANsw (Summon Hawk), Researchhotkey (Hotkey - Learn)
 {
 E
-}
-
-STRING 7837
-// Buffs/Effects: B06B (), Bufftip (Tooltip)
-{
-Curse of Ages
 }
 
 STRING 7838
@@ -47040,12 +47010,6 @@ STRING 7841
 // Abilities: AHta (Reveal), Hotkey (Hotkey - Normal)
 {
 W
-}
-
-STRING 7842
-// Buffs/Effects: B06A (), Bufftip (Tooltip)
-{
-Blinding Light
 }
 
 STRING 7843
@@ -47928,18 +47892,6 @@ STRING 7989
 // Abilities: AEst (Scout), Hotkey (Hotkey - Normal)
 {
 W
-}
-
-STRING 7990
-// Buffs/Effects: B060 (Dragon's Fury), Bufftip (Tooltip)
-{
-Dragon's Fury
-}
-
-STRING 7991
-// Buffs/Effects: B060 (Dragon's Fury), EditorName (Name (Editor Only))
-{
-Dragon's Fury
 }
 
 STRING 7992
@@ -56890,7 +56842,7 @@ Vereesa Windrunner
 }
 
 STRING 9483
-// Buffs/Effects: B06X (Permanent Immolation), EditorSuffix (Editor Suffix)
+// Buffs/Effects: B064 (), EditorSuffix (Editor Suffix)
 {
 (Purple)
 }
@@ -59623,12 +59575,6 @@ STRING 9938
 // Abilities: A0C7 (Monsoon), Researchhotkey (Hotkey - Learn)
 {
 R
-}
-
-STRING 9939
-// Buffs/Effects: B09M (), Bufftip (Tooltip)
-{
-Assasinate
 }
 
 STRING 9940
@@ -64719,12 +64665,6 @@ STRING 10789
 Grants nearby friendly units a bonus 45 point to attack damage and a 12 point bonus to defense. |nLasts 25 seconds.
 }
 
-STRING 10790
-// Buffs/Effects: B08O (Permanent Immolation), EditorSuffix (Editor Suffix)
-{
-(Scythe)
-}
-
 STRING 10791
 // Abilities: A09W (Permanent Immolation), Ubertip (Tooltip - Normal - Extended)
 {
@@ -68506,12 +68446,6 @@ STRING 11419
 // Abilities: A04B (Demon Call), Hotkey (Hotkey - Normal)
 {
 R
-}
-
-STRING 11420
-// Buffs/Effects: B08I (), Bufftip (Tooltip)
-{
-Borrowed Time
 }
 
 STRING 11421
@@ -78699,28 +78633,10 @@ STRING 13119
 This unit is under the effects of Nature Aura; it has reduced movement speed and attack rate.
 }
 
-STRING 13120
-// Buffs/Effects: B08J (), Bufftip (Tooltip)
-{
-Toggle Unholy Defense
-}
-
-STRING 13121
-// Buffs/Effects: B08J (), EditorSuffix (Editor Suffix)
-{
-(Scourge-Frozen Throne)
-}
-
 STRING 13122
 // Units: h05T (Instance Entrance), Name (Name)
 {
 Instance Entrance
-}
-
-STRING 13123
-// Buffs/Effects: B08I (), Buffubertip (Tooltip - Extended)
-{
-This unit is under the effect of Borrowed Time; it is healing instead of taking damage.
 }
 
 STRING 13124
@@ -79084,13 +79000,13 @@ This unit is in a Desert Storm
 }
 
 STRING 13184
-// Buffs/Effects: B07K ((Purple - Inquisitor)), Buffubertip (Tooltip - Extended)
+// Buffs/Effects: B07K (), Buffubertip (Tooltip - Extended)
 {
 This unit has Bloodlust; its attack rate is increased.
 }
 
 STRING 13185
-// Buffs/Effects: B07K ((Purple - Inquisitor)), EditorName (Name (Editor Only))
+// Buffs/Effects: B07K (), EditorSuffix (Editor Suffix)
 {
 (Purple - Inquisitor)
 }
@@ -79179,12 +79095,6 @@ STRING 13199
 Cunning Hero, adept at illusion and deception.|n|cfff5962dAbilities:|r Wind Walk |n|cfff5962dCan learn:|R Power Surge, Accelerated Vitality, Simulacrum, Mirror Image |n|n|cffffcc00Attacks land and air units.|R
 }
 
-STRING 13200
-// Buffs/Effects: B07D (), Bufftip (Tooltip)
-{
-Will of the Ashbringer
-}
-
 STRING 13201
 // Abilities: A007 (Starfall), Ubertip (Tooltip - Normal - Extended)
 {
@@ -79192,15 +79102,9 @@ Calls down waves of falling stars that damage nearby enemy units. Each wave deal
 }
 
 STRING 13202
-// Buffs/Effects: B07C (), Bufftip (Tooltip)
+// Buffs/Effects: B00D (), Bufftip (Tooltip)
 {
 Holy Power
-}
-
-STRING 13203
-// Buffs/Effects: B07C (), Buffubertip (Tooltip - Extended)
-{
-This unit is under the effect of Holy Power; its movement speed and attack speed are increased.
 }
 
 STRING 13204
@@ -79378,21 +79282,9 @@ Mass Bloodlust
 }
 
 STRING 13233
-// Buffs/Effects: B064 (), EditorSuffix (Editor Suffix)
+// Buffs/Effects: B063 (), EditorSuffix (Editor Suffix)
 {
 (Purple)
-}
-
-STRING 13234
-// Buffs/Effects: B06W (), Bufftip (Tooltip)
-{
-Light's Fury
-}
-
-STRING 13235
-// Buffs/Effects: B06W (), Buffubertip (Tooltip - Extended)
-{
-This unit is infused by the power of the Light. It moves faster and damages every enemy around.
 }
 
 STRING 13236
@@ -79405,18 +79297,6 @@ STRING 13237
 // Units: E021 (Matriarch of the Waycrest Familiy), Name (Name)
 {
 Matriarch of the Waycrest Familiy
-}
-
-STRING 13238
-// Buffs/Effects: B06U (), Bufftip (Tooltip)
-{
-Forest Path
-}
-
-STRING 13239
-// Buffs/Effects: B06U (), Buffubertip (Tooltip - Extended)
-{
-This unit as a mouvement speed buff and is Silenced; it cannot cast spells.
 }
 
 STRING 13240
@@ -79473,36 +79353,6 @@ STRING 13248
 This unit is afraid of Elune; it deals less damage for a duration.
 }
 
-STRING 13249
-// Buffs/Effects: B06O (), Bufftip (Tooltip)
-{
-Curse of the Woods
-}
-
-STRING 13250
-// Buffs/Effects: B06O (), Buffubertip (Tooltip - Extended)
-{
-This unit has been stricken with the Curse of the Woods; it cannot cast spells and will take 15 damage per second for 15 seconds. If the unit dies while under the effect
-}
-
-STRING 13251
-// Buffs/Effects: B06O (), EditorSuffix (Editor Suffix)
-{
-(Minion)
-}
-
-STRING 13252
-// Buffs/Effects: B06N (), Bufftip (Tooltip)
-{
-Curse of the Woods
-}
-
-STRING 13253
-// Buffs/Effects: B06N (), Buffubertip (Tooltip - Extended)
-{
-This unit has been stricken with the Curse of the Woods; it cannot cast spells and will take 15 damage per second for 15 seconds. If the unit dies while under the effect
-}
-
 STRING 13254
 // Buffs/Effects: B06M (), Bufftip (Tooltip)
 {
@@ -79537,24 +79387,6 @@ STRING 13259
 // Buffs/Effects: B06J (), Bufftip (Tooltip)
 {
 Mui
-}
-
-STRING 13260
-// Buffs/Effects: B06I (Blink), Bufftip (Tooltip)
-{
-Blink
-}
-
-STRING 13261
-// Buffs/Effects: B06I (Blink), Buffubertip (Tooltip - Extended)
-{
-This unit will move with lightspeed.
-}
-
-STRING 13262
-// Buffs/Effects: B06I (Blink), EditorName (Name (Editor Only))
-{
-Blink
 }
 
 STRING 13263
@@ -79635,12 +79467,6 @@ STRING 13275
 Open Ship
 }
 
-STRING 13276
-// Buffs/Effects: B06B (), Buffubertip (Tooltip - Extended)
-{
-This unit is Cursed with Old Age; its movement speed
-}
-
 STRING 13277
 // Abilities: A0LM (Open Ship), Ubertip (Tooltip - Normal - Extended)
 {
@@ -79651,18 +79477,6 @@ STRING 13278
 // Abilities: A0ZP (Charge Mana), Name (Name)
 {
 Charge Mana
-}
-
-STRING 13279
-// Buffs/Effects: B06A (), Buffubertip (Tooltip - Extended)
-{
-This unit is Blinded; it can miss when it attacks.
-}
-
-STRING 13280
-// Buffs/Effects: B06A (), EditorSuffix (Editor Suffix)
-{
-(human Bishop)
 }
 
 STRING 13281
@@ -79755,12 +79569,6 @@ STRING 13295
 This unit has the Holy Fire Blessing
 }
 
-STRING 13296
-// Buffs/Effects: B063 (), EditorSuffix (Editor Suffix)
-{
-(Purple)
-}
-
 STRING 13297
 // Buffs/Effects: B063 (), Bufftip (Tooltip)
 {
@@ -79797,12 +79605,6 @@ STRING 13302
 Defense Orbs deal 125 damage per orb to each unit it collides with.
 }
 
-STRING 13303
-// Buffs/Effects: B060 (Dragon's Fury), Buffubertip (Tooltip - Extended)
-{
-This unit has Dragon's Fury; its attack rate and movement speed are increased.
-}
-
 STRING 13304
 // Abilities: A055 (Defensive Orbs), Tip (Tooltip - Normal)
 {
@@ -79837,18 +79639,6 @@ STRING 13309
 // Buffs/Effects: B05Y (), EditorSuffix (Editor Suffix)
 {
 (Benedictus)
-}
-
-STRING 13310
-// Buffs/Effects: B05X (), Bufftip (Tooltip)
-{
-Power Word Shield
-}
-
-STRING 13311
-// Buffs/Effects: B05X (), Buffubertip (Tooltip - Extended)
-{
-This unit has Power World Shield - it is absorbing spell damage.
 }
 
 STRING 13312
@@ -80023,18 +79813,6 @@ STRING 13340
 // Buffs/Effects: B05L (), Buffubertip (Tooltip - Extended)
 {
 This unit is under the effects of Nexus Empowerment; it's mana regen is increased by 0.5 per second.
-}
-
-STRING 13341
-// Buffs/Effects: B05K (), Bufftip (Tooltip)
-{
-Nexus Empowerment
-}
-
-STRING 13342
-// Buffs/Effects: B05K (), Buffubertip (Tooltip - Extended)
-{
-This unit is under the effects of Nexus Empowerment. It regenerates an additional 0.5 mana per second.
 }
 
 STRING 13343
@@ -80337,18 +80115,6 @@ STRING 13392
 This unit is under the effects of Boundless Rage; it has an increased movement speed and attack rate.
 }
 
-STRING 13393
-// Buffs/Effects: B04Y (), Bufftip (Tooltip)
-{
-Forced Atonment
-}
-
-STRING 13394
-// Buffs/Effects: B04Y (), Buffubertip (Tooltip - Extended)
-{
-This unit is under the effects of Forced Atonment; part of the damage the unit deals
-}
-
 STRING 13395
 // Buffs/Effects: B04X (), Bufftip (Tooltip)
 {
@@ -80359,12 +80125,6 @@ STRING 13396
 // Buffs/Effects: B04X (), Buffubertip (Tooltip - Extended)
 {
 This unit is under the effects of Tarnished Ambience; it has an increased movement speed and hit point regeneration.
-}
-
-STRING 13397
-// Buffs/Effects: B04W (), Bufftip (Tooltip)
-{
-Curse of the Satyr
 }
 
 STRING 13398
@@ -80419,18 +80179,6 @@ STRING 13406
 // Abilities: A0DL (Communion), EditorSuffix (Editor Suffix)
 {
 (Alexandros)
-}
-
-STRING 13407
-// Buffs/Effects: B04R (), Bufftip (Tooltip)
-{
-Power Word: Shield
-}
-
-STRING 13408
-// Buffs/Effects: B04R (), Buffubertip (Tooltip - Extended)
-{
-This unit has Power Word: Shield; damage spells must destroy the shell to affect the unit.
 }
 
 STRING 13409
@@ -80557,18 +80305,6 @@ STRING 13429
 // Buffs/Effects: B04I (Fel Battleplate), EditorName (Name (Editor Only))
 {
 Fel Battleplate
-}
-
-STRING 13430
-// Buffs/Effects: B04H (), Bufftip (Tooltip)
-{
-Arcane Brilliance
-}
-
-STRING 13431
-// Buffs/Effects: B04H (), Buffubertip (Tooltip - Extended)
-{
-This unit is affected by a Arcane Brilliance; its armor is temporarily increased.
 }
 
 STRING 13432
@@ -82425,24 +82161,6 @@ STRING 13740
 Demonic Energies
 }
 
-STRING 13741
-// Buffs/Effects: B00N (Corruption of Sargeras), Bufftip (Tooltip)
-{
-Corruption of Sargeras
-}
-
-STRING 13742
-// Buffs/Effects: B00N (Corruption of Sargeras), Buffubertip (Tooltip - Extended)
-{
-This unit is losing 2% hit points per second due to the corrupting influence of Sargeras' energies.
-}
-
-STRING 13743
-// Buffs/Effects: B00N (Corruption of Sargeras), EditorName (Name (Editor Only))
-{
-Corruption of Sargeras
-}
-
 STRING 13744
 // Buffs/Effects: B00M (Grenade), Bufftip (Tooltip)
 {
@@ -82555,24 +82273,6 @@ STRING 13762
 // Buffs/Effects: B00F (), Buffubertip (Tooltip - Extended)
 {
 This unit is under the effects of The Shadow Labyrinth; it has reduced armor.
-}
-
-STRING 13763
-// Buffs/Effects: B00E (), Bufftip (Tooltip)
-{
-Corrupting Aura
-}
-
-STRING 13764
-// Buffs/Effects: B00E (), Buffubertip (Tooltip - Extended)
-{
-This unit is under the effects of Corrupting Aura; it will constantly lose health.
-}
-
-STRING 13765
-// Buffs/Effects: B00D (), Bufftip (Tooltip)
-{
-Holy Power
 }
 
 STRING 13766
@@ -85417,12 +85117,6 @@ STRING 14239
 // Upgrades: R069 (Chaos), Name (Name)
 {
 Quest Completed: Recruit the Dragonmaw Clan
-}
-
-STRING 14240
-// Buffs/Effects: B07D (), EditorSuffix (Editor Suffix)
-{
-(Alexandros)
 }
 
 STRING 14241
@@ -89811,12 +89505,6 @@ STRING 14971
 Increases Fel Warlocks' mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Life Drain.
 }
 
-STRING 14972
-// Buffs/Effects: B00A (Mage Armor), Bufftip (Tooltip)
-{
-Mage Armor
-}
-
 STRING 14973
 // Abilities: A003 (Discordant Cadenza), Tip (Tooltip - Normal)
 {
@@ -90067,12 +89755,6 @@ STRING 15014
 // Upgrades: R00F (Control Magic), Tip (Tooltip)
 {
 Research Mithril Plated Armor
-}
-
-STRING 15015
-// Buffs/Effects: B00A (Mage Armor), Buffubertip (Tooltip - Extended)
-{
-This unit has Mage Armor, it's armor is increased by 7.
 }
 
 STRING 15016
@@ -91076,12 +90758,6 @@ STRING 15190
 Slow melee unit capable of devastating area of effect attacks.|n|cfff5962dAbilities:|R Pulverize|n|cfff5962dCan learn:|R Crushing Wave|n|n|cff99b4d1Can only train 12.|r|n|cffffcc00Attacks land units.|r
 }
 
-STRING 15191
-// Buffs/Effects: B00A (Mage Armor), EditorName (Name (Editor Only))
-{
-Mage Armor
-}
-
 STRING 15192
 // Upgrades: R001 (Defend), EditorSuffix (Editor Suffix)
 {
@@ -91676,12 +91352,6 @@ STRING 15290
 // Abilities: A0H3 (Mass Ice Armor), Tip (Tooltip - Normal)
 {
 Mass Ice Armor - [|cffffcc00Level 1|r]
-}
-
-STRING 15291
-// Buffs/Effects: B00A (Mage Armor), EditorSuffix (Editor Suffix)
-{
- (Dalaran)
 }
 
 STRING 15292
@@ -96622,12 +96292,6 @@ STRING 16118
 (Kul'tiras - Storm Sorcerer, Illidan - Sea Witch)
 }
 
-STRING 16119
-// Buffs/Effects: B09L (), Bufftip (Tooltip)
-{
-Corrupted
-}
-
 STRING 16120
 // Abilities: A0MN (Oil Consumer), Tip (Tooltip - Normal)
 {
@@ -97110,12 +96774,6 @@ STRING 16200
 // Upgrades: R006 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 C
-}
-
-STRING 16201
-// Buffs/Effects: B09L (), Buffubertip (Tooltip - Extended)
-{
-This unit is corrupted
 }
 
 STRING 16202
@@ -101364,12 +101022,6 @@ STRING 16911
 // Buffs/Effects: B09P (), Buffubertip (Tooltip - Extended)
 {
 This unit is under the effects of Spirit of the Crusade; it has increased attack damage.
-}
-
-STRING 16912
-// Buffs/Effects: B0AG (), EditorSuffix (Editor Suffix)
-{
-1
 }
 
 STRING 16913
