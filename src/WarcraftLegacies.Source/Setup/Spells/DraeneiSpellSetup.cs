@@ -69,6 +69,14 @@ namespace WarcraftLegacies.Source.Setup.Spells
         SpecialEffect = @"war3mapImported\FrostNova.mdx"
       };
       SpellSystem.Register(warStompAdal);
+
+      var summonGateway = new SummonUnitsTarget(Constants.ABILITY_A0LX_GATEWAY_REINFORCEMENTS_DRAENEI)
+      {
+        SummonUnitTypeId = Constants.UNIT_O05B_DEFENDER_DRAENEI,
+        SummonCount = 1,
+        Radius = 50,
+      };
+      SpellSystem.Register(summonGateway);
     }
   }
 }

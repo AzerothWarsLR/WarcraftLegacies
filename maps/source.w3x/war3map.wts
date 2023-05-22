@@ -12763,9 +12763,9 @@ Q
 }
 
 STRING 2129
-// Abilities: A045 (Gateway Reinforcements), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A0LX (Gateway Reinforcements), Ubertip (Tooltip - Normal - Extended)
 {
-Opens a gateway, allowing 1 Defender to step through and reinforce Azeroth from other worlds.
+Summon a Defender to a target unit location
 }
 
 STRING 2130
@@ -14007,6 +14007,12 @@ STRING 2336
 Summoned golem of fel flames.|n|cfff5962dAbilities:|R Spell Immunity, Permanent Immoliation, Resistant Skin|n|r|n|cffffcc00Attacks land units.|r
 }
 
+STRING 2337
+// Units: e00R (Altar of Watchers), Hotkey (Hotkey)
+{
+X
+}
+
 STRING 2338
 // Units: h03X (Sentinel Tower), Hotkey (Hotkey)
 {
@@ -14050,7 +14056,7 @@ Z
 }
 
 STRING 2345
-// Units: e00R (Altar of Watchers), Hotkey (Hotkey)
+// Units: E00A (Ancient Guardian), Hotkey (Hotkey)
 {
 X
 }
@@ -14158,7 +14164,7 @@ Summon Garrison
 }
 
 STRING 2363
-// Units: E00A (Ancient Guardian), Hotkey (Hotkey)
+// Units: h07M (Altar of Admirals), Hotkey (Hotkey)
 {
 X
 }
@@ -16113,7 +16119,7 @@ STRING 2688
 }
 
 STRING 2689
-// Units: h07M (Altar of Admirals), Hotkey (Hotkey)
+// Units: h07U (Cannon Tower), Hotkey (Hotkey)
 {
 X
 }
@@ -16269,7 +16275,7 @@ Mighty defender of the Anvilrage Clan.|n|cfff5962dAbilities:|R Charge, Defend|n|
 }
 
 STRING 2715
-// Units: h07U (Cannon Tower), Hotkey (Hotkey)
+// Units: o03C (Altar of Visions), Hotkey (Hotkey)
 {
 X
 }
@@ -16593,7 +16599,7 @@ Build Treasury
 }
 
 STRING 2769
-// Units: o03C (Altar of Visions), Hotkey (Hotkey)
+// Units: o03O (Altar of Industry), Hotkey (Hotkey)
 {
 X
 }
@@ -16659,7 +16665,7 @@ Dark Enclave
 }
 
 STRING 2780
-// Units: o03O (Altar of Industry), Hotkey (Hotkey)
+// Units: o040 (Altar of Loa), Hotkey (Hotkey)
 {
 X
 }
@@ -17392,7 +17398,7 @@ Q
 }
 
 STRING 2902
-// Units: o040 (Altar of Loa), Hotkey (Hotkey)
+// Units: u010 (Altar of the Queen), Hotkey (Hotkey)
 {
 X
 }
@@ -18482,7 +18488,7 @@ STRING 3082
 }
 
 STRING 3083
-// Units: u010 (Altar of the Queen), Hotkey (Hotkey)
+// Units: h011 (Intercontinental Artillery), Hotkey (Hotkey)
 {
 X
 }
@@ -19190,7 +19196,7 @@ Worgen Blood Shaman
 }
 
 STRING 3201
-// Units: h011 (Intercontinental Artillery), Hotkey (Hotkey)
+// Units: n0AV (Altar of Madness), Hotkey (Hotkey)
 {
 X
 }
@@ -19513,7 +19519,7 @@ Revive |cffffcc00Z|ruluhed the Whacked
 }
 
 STRING 3255
-// Units: n0AV (Altar of Madness), Hotkey (Hotkey)
+// Units: o058 (Altar of Light), Hotkey (Hotkey)
 {
 X
 }
@@ -20557,7 +20563,7 @@ Build Voidforge
 }
 
 STRING 3429
-// Units: o058 (Altar of Light), Hotkey (Hotkey)
+// Units: n0C0 (Altar of the Queen), Hotkey (Hotkey)
 {
 X
 }
@@ -21798,7 +21804,7 @@ STRING 3635
 }
 
 STRING 3636
-// Units: n0C0 (Altar of the Queen), Hotkey (Hotkey)
+// Units: o066 (Altar of Dragons), Hotkey (Hotkey)
 {
 X
 }
@@ -23520,7 +23526,7 @@ STRING 3922
 }
 
 STRING 3923
-// Units: o066 (Altar of Dragons), Hotkey (Hotkey)
+// Units: e01S (Altar of the Depth), Hotkey (Hotkey)
 {
 X
 }
@@ -23568,7 +23574,7 @@ STRING 3930
 }
 
 STRING 3931
-// Units: e01S (Altar of the Depth), Hotkey (Hotkey)
+// Units: n0AA (Control Point Defender), Hotkey (Hotkey)
 {
 X
 }
@@ -23658,7 +23664,7 @@ Ascendant's Rise (15gold/min)
 }
 
 STRING 3946
-// Units: n0AA (Control Point Defender), Hotkey (Hotkey)
+// Units: n0B6 (Control Point Defender), Hotkey (Hotkey)
 {
 X
 }
@@ -24240,7 +24246,7 @@ Creates a phantom double of a unit.
 }
 
 STRING 4043
-// Units: n0B6 (Control Point Defender), Hotkey (Hotkey)
+// Units: h09W (Control Point Defender), Hotkey (Hotkey)
 {
 X
 }
@@ -24282,7 +24288,7 @@ Increases the Intelligence of the Hero by 6 when carried.
 }
 
 STRING 4050
-// Units: h09W (Control Point Defender), Hotkey (Hotkey)
+// Units: h0AL (Control Point Defender), Hotkey (Hotkey)
 {
 X
 }
@@ -24510,7 +24516,7 @@ Animates the dead to fight for you, for a mere 9 seconds. These summoned by this
 }
 
 STRING 4088
-// Units: h0AL (Control Point Defender), Hotkey (Hotkey)
+// Units: h0AN (Juggernaut), Hotkey (Hotkey)
 {
 X
 }
@@ -24954,7 +24960,7 @@ STRING 4161
 }
 
 STRING 4162
-// Units: h0AN (Juggernaut), Hotkey (Hotkey)
+// Units: h0BA (Juggernaut), Hotkey (Hotkey)
 {
 X
 }
@@ -25734,7 +25740,7 @@ Orb of Light
 }
 
 STRING 4292
-// Units: h0BA (Juggernaut), Hotkey (Hotkey)
+// Units: h0BB (Juggernaut), Hotkey (Hotkey)
 {
 X
 }
@@ -25890,7 +25896,7 @@ Regrows trees nearby the caster. Also, restores 50 mana to the caster.
 }
 
 STRING 4318
-// Units: h0BB (Juggernaut), Hotkey (Hotkey)
+// Units: h0BC (Juggernaut), Hotkey (Hotkey)
 {
 X
 }
@@ -27151,7 +27157,7 @@ Column Semi Circle Silithid
 }
 
 STRING 4528
-// Units: h0BC (Juggernaut), Hotkey (Hotkey)
+// Units: n078 (Altar of the Queen), Hotkey (Hotkey)
 {
 X
 }
@@ -28393,7 +28399,7 @@ STRING 4734
 }
 
 STRING 4735
-// Units: n078 (Altar of the Queen), Hotkey (Hotkey)
+// Units: h083 (Altar of Cataclysm), Hotkey (Hotkey)
 {
 X
 }
@@ -28957,7 +28963,7 @@ Q
 }
 
 STRING 4829
-// Units: h083 (Altar of Cataclysm), Hotkey (Hotkey)
+// Units: h08R (Cannon Tower), Hotkey (Hotkey)
 {
 X
 }
@@ -29923,7 +29929,7 @@ Call all nearby Peasants to the this building to be converted to Militia. |n|cff
 }
 
 STRING 4990
-// Units: h08R (Cannon Tower), Hotkey (Hotkey)
+// Units: h09X (Altar of Kings), Hotkey (Hotkey)
 {
 X
 }
@@ -30799,7 +30805,7 @@ STRING 5135
 }
 
 STRING 5136
-// Units: h09X (Altar of Kings), Hotkey (Hotkey)
+// Units: h0BI (Cannon Tower), Hotkey (Hotkey)
 {
 X
 }
@@ -36751,7 +36757,7 @@ STRING 6127
 }
 
 STRING 6128
-// Units: h0BI (Cannon Tower), Hotkey (Hotkey)
+// Units: h0BQ (Altar of Kings), Hotkey (Hotkey)
 {
 X
 }
@@ -39265,7 +39271,7 @@ STRING 6546
 }
 
 STRING 6547
-// Units: h0BQ (Altar of Kings), Hotkey (Hotkey)
+// Units: h0BZ (Cannon Tower), Hotkey (Hotkey)
 {
 X
 }
@@ -39355,7 +39361,7 @@ STRING 6561
 }
 
 STRING 6562
-// Units: h0BZ (Cannon Tower), Hotkey (Hotkey)
+// Units: n0DX (Control Point Defender), Hotkey (Hotkey)
 {
 X
 }
@@ -40540,6 +40546,11 @@ STRING 6759
 // Units: h08W (Demon Hunter), Ubertip (Tooltip - Extended)
 {
 Illidari Elite Warrior, specialises in killing spellcasters. Has the mana burn, magic resistance and evasion abilities.|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land units.|r
+}
+
+STRING 6760
+{
+Pierce: |cffffff00100%|r|nSiege: |cffffff00100%|r|nNormal: |cffffff00100%|r|r|nHero: |cffffff00100%|r|nSpell: |cffffff00100%|r|nChaos: |cffff0000110%|r|nMagic: |cffff0000180%|r
 }
 
 STRING 6761
@@ -47008,10 +47019,20 @@ STRING 7834
 Gives nearby friendly units a 6 armor bonus for 45 seconds.
 }
 
+STRING 7835
+{
+Pierce: |cffffff00100%|r|nSiege: |cffffff00100%|r|nNormal: |cffffff00100%|r|r|nHero: |cffffff00100%|r|nSpell: |cffffff00100%|r|nChaos: |cffff0000110%|r|nMagic: |cffff0000180%|r
+}
+
 STRING 7836
 // Abilities: ANsw (Summon Hawk), Researchhotkey (Hotkey - Learn)
 {
 E
+}
+
+STRING 7837
+{
+Pierce: |cffffff00100%|r|nSiege: |cffffff00100%|r|nNormal: |cffffff00100%|r|r|nHero: |cffffff00100%|r|nSpell: |cffffff00100%|r|nChaos: |cffff0000110%|r|nMagic: |cffff0000180%|r
 }
 
 STRING 7838
@@ -47036,6 +47057,11 @@ STRING 7841
 // Abilities: AHta (Reveal), Hotkey (Hotkey - Normal)
 {
 W
+}
+
+STRING 7842
+{
+Heavy: |cff00ff00180%|r|NLight: |cff00ff00125%|r|NUnarmored: |cffffff00100%|r|NMedium: |cffff000075%|r|NHero: |cffff000050%|r|NFortified: |cffff000035%|r
 }
 
 STRING 7843
@@ -47920,6 +47946,16 @@ STRING 7989
 W
 }
 
+STRING 7990
+{
+Heavy: |cff00ff00180%|r|NLight: |cff00ff00125%|r|NUnarmored: |cffffff00100%|r|NMedium: |cffff000075%|r|NHero: |cffff000050%|r|NFortified: |cffff000035%|r
+}
+
+STRING 7991
+{
+Heavy: |cff00ff00180%|r|NLight: |cff00ff00125%|r|NUnarmored: |cffffff00100%|r|NMedium: |cffff000075%|r|NHero: |cffff000050%|r|NFortified: |cffff000035%|r
+}
+
 STRING 7992
 // Upgrades: R006 (Iron Plating,Steel Plating,Mithril Plating), Tip (Tooltip)
 {
@@ -47957,7 +47993,7 @@ STRING 7997
 }
 
 STRING 7998
-// Units: n0DX (Control Point Defender), Hotkey (Hotkey)
+// Units: h0C6 (Altar of Blood), Hotkey (Hotkey)
 {
 X
 }
@@ -48947,7 +48983,7 @@ Holy Fire
 }
 
 STRING 8163
-// Units: h0C6 (Altar of Blood), Hotkey (Hotkey)
+// Items: dsum (Diamond of Summoning), Hotkey (Hotkey)
 {
 X
 }
@@ -54684,7 +54720,7 @@ STRING 9118
 }
 
 STRING 9119
-// Items: dsum (Diamond of Summoning), Hotkey (Hotkey)
+// Items: amrc (Amulet of Recall), Hotkey (Hotkey)
 {
 X
 }
@@ -56514,7 +56550,7 @@ STRING 9423
 }
 
 STRING 9424
-// Items: amrc (Amulet of Recall), Hotkey (Hotkey)
+// Items: I01G (Summon Wisps), Hotkey (Hotkey)
 {
 X
 }
@@ -56970,7 +57006,7 @@ STRING 9499
 }
 
 STRING 9500
-// Items: I01G (Summon Wisps), Hotkey (Hotkey)
+// Items: I013 (Summon Acolyte), Hotkey (Hotkey)
 {
 X
 }
@@ -61956,7 +61992,7 @@ STRING 10333
 }
 
 STRING 10334
-// Items: I013 (Summon Acolyte), Hotkey (Hotkey)
+// Items: I00W (Summon Herald), Hotkey (Hotkey)
 {
 X
 }
@@ -61986,7 +62022,7 @@ Raises 6 skeletons from a corpse for 85 seconds.
 }
 
 STRING 10339
-// Items: I00W (Summon Herald), Hotkey (Hotkey)
+// Items: I00Q (Summon Human Workers), Hotkey (Hotkey)
 {
 X
 }
@@ -62442,7 +62478,7 @@ STRING 10414
 }
 
 STRING 10415
-// Items: I00Q (Summon Human Workers), Hotkey (Hotkey)
+// Items: I00P (Summon Fel Orc Workers), Hotkey (Hotkey)
 {
 X
 }
@@ -67170,7 +67206,7 @@ STRING 11204
 }
 
 STRING 11205
-// Items: I00P (Summon Fel Orc Workers), Hotkey (Hotkey)
+// Items: I00O (Summon Orc Workers), Hotkey (Hotkey)
 {
 X
 }
@@ -70167,7 +70203,7 @@ Forms a shield of healing energies around a target unit, healing 15 damage per s
 }
 
 STRING 11704
-// Items: I00O (Summon Orc Workers), Hotkey (Hotkey)
+// Items: I00M (Summon Elven Workers), Hotkey (Hotkey)
 {
 X
 }
@@ -74471,7 +74507,7 @@ Instill Rage
 }
 
 STRING 12423
-// Items: I00M (Summon Elven Workers), Hotkey (Hotkey)
+// Items: I00G (Summon Farmers), Hotkey (Hotkey)
 {
 X
 }
@@ -76392,7 +76428,7 @@ STRING 12742
 }
 
 STRING 12743
-// Items: I00G (Summon Farmers), Hotkey (Hotkey)
+// Items: I00A (Summon Dwarven Workers), Hotkey (Hotkey)
 {
 X
 }
@@ -76884,7 +76920,7 @@ STRING 12824
 }
 
 STRING 12825
-// Items: I00A (Summon Dwarven Workers), Hotkey (Hotkey)
+// Items: I005 (Summon Warsong Workers), Hotkey (Hotkey)
 {
 X
 }
@@ -78030,7 +78066,7 @@ W
 }
 
 STRING 13017
-// Items: I005 (Summon Warsong Workers), Hotkey (Hotkey)
+// Items: I008 (Summon Cultist), Hotkey (Hotkey)
 {
 X
 }
@@ -82482,7 +82518,7 @@ STRING 13797
 }
 
 STRING 13798
-// Items: I008 (Summon Cultist), Hotkey (Hotkey)
+// Items: I009 (Summon Gatherer), Hotkey (Hotkey)
 {
 X
 }
@@ -82644,7 +82680,7 @@ STRING 13824
 }
 
 STRING 13825
-// Items: I009 (Summon Gatherer), Hotkey (Hotkey)
+// Items: I00E (Summon Deckhand), Hotkey (Hotkey)
 {
 X
 }
@@ -82656,13 +82692,13 @@ STRING 13826
 }
 
 STRING 13827
-// Items: I00E (Summon Deckhand), Hotkey (Hotkey)
+// Items: I00N (Summon Forsaken Acolyte), Hotkey (Hotkey)
 {
 X
 }
 
 STRING 13828
-// Items: I00N (Summon Forsaken Acolyte), Hotkey (Hotkey)
+// Items: I00X (Summon Engineer), Hotkey (Hotkey)
 {
 X
 }
@@ -82836,13 +82872,13 @@ Open a portal to Northrend
 }
 
 STRING 13857
-// Items: I00X (Summon Engineer), Hotkey (Hotkey)
+// Items: I00Y (Summon Drone), Hotkey (Hotkey)
 {
 X
 }
 
 STRING 13858
-// Items: I00Y (Summon Drone), Hotkey (Hotkey)
+// Items: I010 (Summon Gemcrafter), Hotkey (Hotkey)
 {
 X
 }
@@ -83304,7 +83340,7 @@ STRING 13934
 }
 
 STRING 13935
-// Items: I010 (Summon Gemcrafter), Hotkey (Hotkey)
+// Abilities: Sshm (Shadow Meld), Hotkey (Hotkey - Normal)
 {
 X
 }
@@ -83568,13 +83604,13 @@ STRING 13978
 }
 
 STRING 13979
-// Abilities: Sshm (Shadow Meld), Hotkey (Hotkey - Normal)
+// Abilities: Ashm (Shadow Meld), Hotkey (Hotkey - Normal)
 {
 X
 }
 
 STRING 13980
-// Abilities: Ashm (Shadow Meld), Hotkey (Hotkey - Normal)
+// Abilities: Amic (Call To Arms), Unhotkey (Hotkey - Turn Off)
 {
 X
 }
@@ -83628,7 +83664,7 @@ Ashenvale Lights
 }
 
 STRING 13989
-// Abilities: Amic (Call To Arms), Unhotkey (Hotkey - Turn Off)
+// Abilities: Aeat (Eat Tree), Hotkey (Hotkey - Normal)
 {
 X
 }
@@ -84012,7 +84048,7 @@ STRING 14053
 }
 
 STRING 14054
-// Abilities: Aeat (Eat Tree), Hotkey (Hotkey - Normal)
+// Abilities: AEsb (Skyfall), Hotkey (Hotkey - Normal)
 {
 X
 }
@@ -84432,7 +84468,7 @@ STRING 14123
 }
 
 STRING 14124
-// Abilities: AEsb (Skyfall), Hotkey (Hotkey - Normal)
+// Abilities: S003 (Shadow Meld), Hotkey (Hotkey - Normal)
 {
 X
 }
@@ -84462,7 +84498,7 @@ Jaina Proudmoore
 }
 
 STRING 14129
-// Abilities: S003 (Shadow Meld), Hotkey (Hotkey - Normal)
+// Abilities: LEgn (Legend), Hotkey (Hotkey - Normal)
 {
 X
 }
@@ -84612,7 +84648,7 @@ STRING 14153
 }
 
 STRING 14154
-// Abilities: LEgn (Legend), Hotkey (Hotkey - Normal)
+// Abilities: A0J4 (Ambush), Hotkey (Hotkey - Normal)
 {
 X
 }
@@ -84954,7 +84990,7 @@ rlev
 }
 
 STRING 14211
-// Abilities: A0J4 (Ambush), Hotkey (Hotkey - Normal)
+// Abilities: A0GN (Ancestral Spirits), Hotkey (Hotkey - Normal)
 {
 X
 }
@@ -85206,7 +85242,7 @@ rlev
 }
 
 STRING 14254
-// Abilities: A0GN (Ancestral Spirits), Hotkey (Hotkey - Normal)
+// Abilities: A0GC (Replenish Mana), Hotkey (Hotkey - Normal)
 {
 X
 }
@@ -85356,13 +85392,13 @@ The hero summons a fierce controllable Hurricane that slows enemy units and rand
 }
 
 STRING 14279
-// Abilities: A0GC (Replenish Mana), Hotkey (Hotkey - Normal)
+// Abilities: A0GC (Replenish Mana), Unhotkey (Hotkey - Turn Off)
 {
 X
 }
 
 STRING 14280
-// Abilities: A0GC (Replenish Mana), Unhotkey (Hotkey - Turn Off)
+// Abilities: A0G8 (Sacred Ground), Hotkey (Hotkey - Normal)
 {
 X
 }
@@ -85769,7 +85805,7 @@ Tower - Lordaeron Round
 }
 
 STRING 14348
-// Abilities: A0G8 (Sacred Ground), Hotkey (Hotkey - Normal)
+// Abilities: A0C8 (Raise Dead), Hotkey (Hotkey - Normal)
 {
 X
 }
@@ -86039,7 +86075,7 @@ STRING 14392
 }
 
 STRING 14393
-// Abilities: A0C8 (Raise Dead), Hotkey (Hotkey - Normal)
+// Abilities: A0C8 (Raise Dead), Unhotkey (Hotkey - Turn Off)
 {
 X
 }
@@ -86105,7 +86141,7 @@ ratx
 }
 
 STRING 14404
-// Abilities: A0C8 (Raise Dead), Unhotkey (Hotkey - Turn Off)
+// Abilities: A0BX (Guardian of Tirisfal), Hotkey (Hotkey - Normal)
 {
 X
 }
@@ -86171,7 +86207,7 @@ STRING 14414
 }
 
 STRING 14415
-// Abilities: A0BX (Guardian of Tirisfal), Hotkey (Hotkey - Normal)
+// Abilities: A07W (Libram), Hotkey (Hotkey - Normal)
 {
 X
 }
@@ -86237,7 +86273,7 @@ STRING 14425
 }
 
 STRING 14426
-// Abilities: A07W (Libram), Hotkey (Hotkey - Normal)
+// Abilities: A01A (Regrow Trees), Hotkey (Hotkey - Normal)
 {
 X
 }
@@ -86267,13 +86303,13 @@ STRING 14430
 }
 
 STRING 14431
-// Abilities: A01A (Regrow Trees), Hotkey (Hotkey - Normal)
+// Abilities: A00Z (Lich King Spellbook), Hotkey (Hotkey - Normal)
 {
 X
 }
 
 STRING 14432
-// Abilities: A00Z (Lich King Spellbook), Hotkey (Hotkey - Normal)
+// Abilities: A001 (Frost Nova), Hotkey (Hotkey - Normal)
 {
 X
 }
@@ -86405,7 +86441,7 @@ STRING 14453
 }
 
 STRING 14454
-// Abilities: A001 (Frost Nova), Hotkey (Hotkey - Normal)
+// Abilities: A0QM (Spellbook and Alliance Event), Hotkey (Hotkey - Normal)
 {
 X
 }
@@ -86663,7 +86699,7 @@ STRING 14496
 }
 
 STRING 14497
-// Abilities: A0QM (Spellbook and Alliance Event), Hotkey (Hotkey - Normal)
+// Abilities: A0OC (Extract Vial), Hotkey (Hotkey - Normal)
 {
 X
 }
@@ -86717,7 +86753,7 @@ rlev
 }
 
 STRING 14506
-// Abilities: A0OC (Extract Vial), Hotkey (Hotkey - Normal)
+// Abilities: A0PY (Summon Ragnaros), Hotkey (Hotkey - Normal)
 {
 X
 }
@@ -86759,7 +86795,7 @@ rlev
 }
 
 STRING 14513
-// Abilities: A0PY (Summon Ragnaros), Hotkey (Hotkey - Normal)
+// Abilities: A0LX (Gateway Reinforcements), Hotkey (Hotkey - Normal)
 {
 X
 }
@@ -86801,7 +86837,7 @@ rtma
 }
 
 STRING 14520
-// Abilities: A045 (Gateway Reinforcements), Hotkey (Hotkey - Normal)
+// Abilities: A0LX (Gateway Reinforcements), Unhotkey (Hotkey - Turn Off)
 {
 X
 }
@@ -90261,11 +90297,6 @@ STRING 15098
 Pierce: |cff00ff0050%|r|NSiege: |cff00ff0050%|r|NMagic: |cff00ff0050%|r|nSpell: |cff00ff0070%|r|NNormal: |cffffff00100%|r|NHero: |cffffff00100%|r|NChaos: |cffff0000110%|r
 }
 
-STRING 15099
-{
-Pierce: |cffffff00100%|r|nSiege: |cffffff00100%|r|nNormal: |cffffff00100%|r|r|nHero: |cffffff00100%|r|nSpell: |cffffff00100%|r|nChaos: |cffff0000110%|r|nMagic: |cffff0000200%|r
-}
-
 STRING 15100
 {
 Siege: |cff00ff0050%|r|NPierce: |cff00ff0075%|r|NMagic: |cff00ff0075%|r|NSpell: |cffffff00100%|r|NHero: |cffffff00100%|r|NChaos: |cffff0000110%|r|NNormal: |cffff0000150%|r
@@ -90301,11 +90332,6 @@ STRING 15106
 Pierce: |cff00ff0050%|r|NSiege: |cff00ff0050%|r|NMagic: |cff00ff0050%|r|nSpell: |cff00ff0070%|r|NNormal: |cffffff00100%|r|NHero: |cffffff00100%|r|NChaos: |cffff0000110%|r
 }
 
-STRING 15107
-{
-Pierce: |cffffff00100%|r|nSiege: |cffffff00100%|r|nNormal: |cffffff00100%|r|r|nHero: |cffffff00100%|r|nSpell: |cffffff00100%|r|nChaos: |cffff0000110%|r|nMagic: |cffff0000200%|r
-}
-
 STRING 15108
 {
 Normal: |cffffff00100%|r|NSiege: |cffffff00100%|r|NSpell: |cffffff00100%|r|NHero: |cffffff00100%|r|NChaos: |cffff0000110%|r|NMagic: |cffff0000125%|r|NPierce: |cffff0000200%|r
@@ -90329,11 +90355,6 @@ Pierce: |cff00ff0035%|r|nMagic: |cff00ff0035%|r|nNormal: |cff00ff0070%|r|nHero: 
 STRING 15112
 {
 Pierce: |cff00ff0050%|r|NSiege: |cff00ff0050%|r|NMagic: |cff00ff0050%|r|nSpell: |cff00ff0070%|r|NNormal: |cffffff00100%|r|NHero: |cffffff00100%|r|NChaos: |cffff0000110%|r
-}
-
-STRING 15113
-{
-Pierce: |cffffff00100%|r|nSiege: |cffffff00100%|r|nNormal: |cffffff00100%|r|r|nHero: |cffffff00100%|r|nSpell: |cffffff00100%|r|nChaos: |cffff0000110%|r|nMagic: |cffff0000200%|r
 }
 
 STRING 15114
@@ -90386,11 +90407,6 @@ STRING 15123
 Medium: |cff00ff00150%|r|NUnarmored: |cffffff00100%|r|NLight: |cffffff00100%|r|NHeavy: |cffffff00100%|r|NHero: |cffffff00100%|r|NFortified: |cffff000070%|r
 }
 
-STRING 15124
-{
-Heavy: |cff00ff00200%|r|NLight: |cff00ff00125%|r|NUnarmored: |cffffff00100%|r|NMedium: |cffff000075%|r|NHero: |cffff000050%|r|NFortified: |cffff000035%|r
-}
-
 STRING 15125
 {
 Light: |cff00ff00200%|r|NUnarmored: |cff00ff00150%|r|NHeavy: |cffffff00100%|r|NMedium: |cffff000075%|r|NHero: |cffff000050%|r|NFortified: |cffff000035%|r
@@ -90421,11 +90437,6 @@ STRING 15130
 Medium: |cff00ff00150%|r|NUnarmored: |cffffff00100%|r|NLight: |cffffff00100%|r|NHeavy: |cffffff00100%|r|NHero: |cffffff00100%|r|NFortified: |cffff000070%|r
 }
 
-STRING 15131
-{
-Heavy: |cff00ff00200%|r|NLight: |cff00ff00125%|r|NUnarmored: |cffffff00100%|r|NMedium: |cffff000075%|r|NHero: |cffff000050%|r|NFortified: |cffff000035%|r
-}
-
 STRING 15132
 {
 Light: |cff00ff00200%|r|NUnarmored: |cff00ff00150%|r|NHeavy: |cffffff00100%|r|NMedium: |cffff000075%|r|NHero: |cffff000050%|r|NFortified: |cffff000035%|r
@@ -90454,11 +90465,6 @@ Medium: |cff00ff00150%|r|NUnarmored: |cffffff00100%|r|NLight: |cffffff00100%|r|N
 STRING 15137
 {
 Medium: |cff00ff00150%|r|NUnarmored: |cffffff00100%|r|NLight: |cffffff00100%|r|NHeavy: |cffffff00100%|r|NHero: |cffffff00100%|r|NFortified: |cffff000070%|r
-}
-
-STRING 15138
-{
-Heavy: |cff00ff00200%|r|NLight: |cff00ff00125%|r|NUnarmored: |cffffff00100%|r|NMedium: |cffff000075%|r|NHero: |cffff000050%|r|NFortified: |cffff000035%|r
 }
 
 STRING 15139
@@ -115685,7 +115691,7 @@ Q
 }
 
 STRING 19354
-// Abilities: A045 (Gateway Reinforcements), EditorSuffix (Editor Suffix)
+// Abilities: A12V (Blessed Ground), EditorSuffix (Editor Suffix)
 {
 (Draenei)
 }
@@ -116339,7 +116345,7 @@ W
 }
 
 STRING 19463
-// Abilities: A12V (Blessed Ground), EditorSuffix (Editor Suffix)
+// Abilities: A0LX (Gateway Reinforcements), EditorSuffix (Editor Suffix)
 {
 (Draenei)
 }
@@ -124265,7 +124271,7 @@ STRING 20784
 }
 
 STRING 20785
-// Abilities: A045 (Gateway Reinforcements), Name (Name)
+// Abilities: A0LX (Gateway Reinforcements), Name (Name)
 {
 Gateway Reinforcements
 }
@@ -124292,12 +124298,6 @@ STRING 20789
 // Units: h0CG (Flamekeeper), Casterupgradetip (Caster Upgrade Tips)
 {
 - Cremate,- Cremate|n- Minor Holy Light,- Cremate|n- Minor Holy Light|n- Flame Shield
-}
-
-STRING 20790
-// Abilities: A045 (Gateway Reinforcements), Researchtip (Tooltip - Learn)
-{
-Learn Demoncall
 }
 
 STRING 20791
@@ -124444,12 +124444,6 @@ STRING 20814
 (sunfury)
 }
 
-STRING 20815
-// Abilities: A045 (Gateway Reinforcements), Researchubertip (Tooltip - Learn - Extended)
-{
-Opens a portal, allowing demons to step through and do the Caster's bidding.
-}
-
 STRING 20816
 // Upgrades: Rhme (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Hotkey (Hotkey)
 {
@@ -124475,7 +124469,7 @@ STRING 20819
 }
 
 STRING 20820
-// Abilities: A045 (Gateway Reinforcements), Tip (Tooltip - Normal)
+// Abilities: A0LX (Gateway Reinforcements), Tip (Tooltip - Normal)
 {
 Gateway Reinforcements
 }
