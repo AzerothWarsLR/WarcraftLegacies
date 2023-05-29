@@ -78732,7 +78732,7 @@ Instance Entrance
 }
 
 STRING 13123
-// Upgrades: R09G (Sorceress Adept Training,Sorceress Master Training), EditorSuffix (Editor Suffix)
+// Units: n006 (Ancient of the Arcane), EditorSuffix (Name - Editor Suffix)
 {
 (sunfury)
 }
@@ -79194,7 +79194,7 @@ Cunning Hero, adept at illusion and deception.|n|cfff5962dAbilities:|r Wind Walk
 }
 
 STRING 13200
-// Upgrades: R09H (Priest Adept Training,Priest Master Training), EditorSuffix (Editor Suffix)
+// Units: n0E3 (Warlock), EditorSuffix (Name - Editor Suffix)
 {
 (sunfury)
 }
@@ -82410,7 +82410,7 @@ Restores 300 hit points to friendly units in a large radius.
 }
 
 STRING 13771
-// Units: n006 (Ancient of the Arcane), EditorSuffix (Name - Editor Suffix)
+// Units: n09S (Centurion), EditorSuffix (Name - Editor Suffix)
 {
 (sunfury)
 }
@@ -111928,7 +111928,7 @@ Provides 8 food, which increases the maximum number of units that can be trained
 }
 
 STRING 18719
-// Units: n0E3 (Warlock), EditorSuffix (Name - Editor Suffix)
+// Units: h0CF (Bowman), EditorSuffix (Name - Editor Suffix)
 {
 (sunfury)
 }
@@ -112126,7 +112126,7 @@ Serrated Bite
 }
 
 STRING 18752
-// Units: n09S (Centurion), EditorSuffix (Name - Editor Suffix)
+// Units: h0CG (Flamekeeper), EditorSuffix (Name - Editor Suffix)
 {
 (sunfury)
 }
@@ -112168,7 +112168,7 @@ STRING 18758
 }
 
 STRING 18759
-// Units: h0CF (Bowman), EditorSuffix (Name - Editor Suffix)
+// Units: h0CH (Astromancer), EditorSuffix (Name - Editor Suffix)
 {
 (sunfury)
 }
@@ -124481,7 +124481,7 @@ Unholy Armor
 }
 
 STRING 20814
-// Units: h0CG (Flamekeeper), EditorSuffix (Name - Editor Suffix)
+// Units: n0E4 (Scorpion), EditorSuffix (Name - Editor Suffix)
 {
 (sunfury)
 }
@@ -124505,7 +124505,7 @@ W
 }
 
 STRING 20819
-// Units: h0CH (Astromancer), EditorSuffix (Name - Editor Suffix)
+// Units: n0E5 (Void Reaver), EditorSuffix (Name - Editor Suffix)
 {
 (sunfury)
 }
@@ -124529,7 +124529,7 @@ Ancient of the Arcane
 }
 
 STRING 20823
-// Units: n0E4 (Scorpion), EditorSuffix (Name - Editor Suffix)
+// Units: n0E6 (Shivarra), EditorSuffix (Name - Editor Suffix)
 {
 (sunfury)
 }
@@ -124547,7 +124547,7 @@ Transforms the hero into a powerful Voidlord with a ranged attack. Gives 175 bon
 }
 
 STRING 20826
-// Units: n0E5 (Void Reaver), EditorSuffix (Name - Editor Suffix)
+// Units: n0E7 (Bloodwarder), EditorSuffix (Name - Editor Suffix)
 {
 (sunfury)
 }
@@ -124565,7 +124565,7 @@ Transforms the hero into a powerful Voidlord with a ranged attack. Gives 300 bon
 }
 
 STRING 20829
-// Units: n0E6 (Shivarra), EditorSuffix (Name - Editor Suffix)
+// Units: n0E8 (Skyship), EditorSuffix (Name - Editor Suffix)
 {
 (sunfury)
 }
@@ -124577,7 +124577,7 @@ Transforms the hero into a powerful Voidlord with a ranged attack. Gives 525 bon
 }
 
 STRING 20831
-// Units: n0E7 (Bloodwarder), EditorSuffix (Name - Editor Suffix)
+// Units: h0CJ (War Panther), EditorSuffix (Name - Editor Suffix)
 {
 (sunfury)
 }
@@ -124625,19 +124625,19 @@ Increases a target non-hero friendly unit's armor by 1000 and health regeneratio
 }
 
 STRING 20839
-// Units: n0E8 (Skyship), EditorSuffix (Name - Editor Suffix)
+// Units: U02V (High Astromancer), EditorSuffix (Name - Editor Suffix)
 {
 (sunfury)
 }
 
 STRING 20840
-// Units: h0CJ (War Panther), EditorSuffix (Name - Editor Suffix)
+// Units: u02W (Energy Wagon), EditorSuffix (Name - Editor Suffix)
 {
 (sunfury)
 }
 
 STRING 20841
-// Units: U02V (High Astromancer), EditorSuffix (Name - Editor Suffix)
+// Units: o06N (Arcane Ward), EditorSuffix (Name - Editor Suffix)
 {
 (sunfury)
 }
@@ -124649,7 +124649,7 @@ STRING 20842
 }
 
 STRING 20843
-// Units: u02W (Energy Wagon), EditorSuffix (Name - Editor Suffix)
+// Abilities: A030 (Call Treants), EditorSuffix (Editor Suffix)
 {
 (sunfury)
 }
@@ -124679,7 +124679,7 @@ STRING 20847
 }
 
 STRING 20848
-// Units: o06N (Arcane Ward), EditorSuffix (Name - Editor Suffix)
+// Abilities: A12F (Dispel Magic), EditorSuffix (Editor Suffix)
 {
 (sunfury)
 }
@@ -125123,7 +125123,7 @@ R
 }
 
 STRING 20922
-// Abilities: A030 (Call Treants), EditorSuffix (Editor Suffix)
+// Abilities: A12G (Suppression), EditorSuffix (Editor Suffix)
 {
 (sunfury)
 }
@@ -125177,7 +125177,7 @@ Flamekeeper Master Training
 }
 
 STRING 20931
-// Abilities: A12F (Dispel Magic), EditorSuffix (Editor Suffix)
+// Abilities: A12K (Arcane Combustion), EditorSuffix (Editor Suffix)
 {
 (sunfury)
 }
@@ -125327,7 +125327,7 @@ Bombards an area with arcane missiles, dealing up to 600 damage to nearby enemy 
 }
 
 STRING 20957
-// Abilities: A12G (Suppression), EditorSuffix (Editor Suffix)
+// Abilities: A12P (Energy Grid), EditorSuffix (Editor Suffix)
 {
 (sunfury)
 }
@@ -125375,13 +125375,13 @@ Conjures a field of churning blood which heals allied ground units in a target a
 }
 
 STRING 20965
-// Abilities: A12K (Arcane Combustion), EditorSuffix (Editor Suffix)
+// Abilities: A12Q (Mana Shield), EditorSuffix (Editor Suffix)
 {
 (sunfury)
 }
 
 STRING 20966
-// Abilities: A12P (Energy Grid), EditorSuffix (Editor Suffix)
+// Abilities: A12X (Arcane Ward), EditorSuffix (Editor Suffix)
 {
 (sunfury)
 }
@@ -125705,7 +125705,7 @@ Q
 }
 
 STRING 21025
-// Abilities: A12Q (Mana Shield), EditorSuffix (Editor Suffix)
+// Upgrades: R09G (Sorceress Adept Training,Sorceress Master Training), EditorSuffix (Editor Suffix)
 {
 (sunfury)
 }
@@ -125717,7 +125717,7 @@ Increases Flamekeeper's mana capacity, attack damage and gives them the ability 
 }
 
 STRING 21028
-// Abilities: A12X (Arcane Ward), EditorSuffix (Editor Suffix)
+// Upgrades: R09H (Priest Adept Training,Priest Master Training), EditorSuffix (Editor Suffix)
 {
 (sunfury)
 }

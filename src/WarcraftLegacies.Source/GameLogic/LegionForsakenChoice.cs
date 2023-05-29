@@ -10,19 +10,19 @@ using static War3Api.Common;
 namespace WarcraftLegacies.Source.GameLogic
 {
   /// <summary>
-  /// A Dialogue where a player can choose between Gilneas and Quel
+  /// A Dialogue where a player can choose between Forsaken and Legion
   /// </summary>
-  public static class QuelGilneasChoiceDialogue
+  public static class LegionForsakenChoiceDialogue
   {
     private static readonly dialog? PickDialogue = DialogCreate();
-    private static readonly button? NoButton = DialogAddButton(PickDialogue, "Gilneas", 0);
-    private static readonly button? YesButton = DialogAddButton(PickDialogue, "Quel'thalas", 0);
+    private static readonly button? NoButton = DialogAddButton(PickDialogue, "Cult", 0);
+    private static readonly button? YesButton = DialogAddButton(PickDialogue, "Legion", 0);
     private static readonly trigger? YesTrigger = CreateTrigger();
     private static readonly trigger? NoTrigger = CreateTrigger();
     private static bool _factionPicked;
 
     /// <summary>
-    /// Sets up <see cref="QuelGilneasChoiceDialogue"/>.
+    /// Sets up <see cref="LegionForsakenChoiceDialogue"/>.
     /// </summary>
     public static void Setup()
     {
@@ -35,7 +35,7 @@ namespace WarcraftLegacies.Source.GameLogic
 
     private static void ConcludeFactionPick()
     {
-      if (GetLocalPlayer() == Player(2))
+      if (GetLocalPlayer() == Player(23))
         DialogDisplay(GetLocalPlayer(), PickDialogue, false);
       DialogClear(PickDialogue);
       DialogDestroy(PickDialogue);
@@ -45,17 +45,17 @@ namespace WarcraftLegacies.Source.GameLogic
 
       if (_factionPicked)
       {
-        PickGilneas();
+        PickForsaken();
       }
       else
       {
-        PickQuel();
+        PickLegion();
       }
     }
 
     private static void StartFactionPick()
     {
-      if (GetLocalPlayer() == Player(2))
+      if (GetLocalPlayer() == Player(23))
         DialogDisplay(GetLocalPlayer(), PickDialogue, true);
 
       var yesTrigger = CreateTrigger();
@@ -67,22 +67,22 @@ namespace WarcraftLegacies.Source.GameLogic
       DestroyTimer(GetExpiredTimer());
     }
 
-    private static void PickGilneas()
+    private static void PickForsaken()
     {
-      var quelUnits = Regions.QuelStartPos.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
-      var gilneasUnits = Regions.GilneasStartPos.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
-      AssignFaction(GilneasSetup.Gilneas, gilneasUnits);
-      RemoveFaction(QuelthalasSetup.Quelthalas, quelUnits);
-      if (GetLocalPlayer() == Player(2))
-        SetCameraPosition(Regions.GilneasStartPos.Center.X, Regions.GilneasStartPos.Center.Y);
+      var legionUnits = Regions.LegionStartPos.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
+      var forsakenUnits = Regions.ForsakenStartPos.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
+      AssignFaction(ForsakenSetup.Forsaken, forsakenUnits);
+      RemoveFaction(LegionSetup.Legion, legionUnits);
+      if (GetLocalPlayer() == Player(23))
+        SetCameraPosition(Regions.ForsakenStartPos.Center.X, Regions.ForsakenStartPos.Center.Y);
     }
 
-    private static void PickQuel()
+    private static void PickLegion()
     {
-      var quelUnits = Regions.QuelStartPos.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
-      var gilneasUnits = Regions.GilneasStartPos.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
-      AssignFaction(QuelthalasSetup.Quelthalas, quelUnits);
-      RemoveFaction(GilneasSetup.Gilneas, gilneasUnits);
+      var legionUnits = Regions.LegionStartPos.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
+      var forsakenUnits = Regions.ForsakenStartPos.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
+      AssignFaction(LegionSetup.Legion, legionUnits);
+      RemoveFaction(ForsakenSetup.Forsaken, forsakenUnits);
     }
 
     private static void RemoveFaction(Faction faction, List<unit> units)
@@ -108,9 +108,9 @@ namespace WarcraftLegacies.Source.GameLogic
 
     private static void AssignFaction(Faction faction, List<unit> units)
     {
-      Player(2).SetFaction(faction);
-      Player(2).SetTeam(TeamSetup.NorthAlliance);
-      Player(2).RescueGroup(units, true);
+      Player(23).SetFaction(faction);
+      Player(23).SetTeam(TeamSetup.Legion);
+      Player(23).RescueGroup(units, true);
     }
   }
 }

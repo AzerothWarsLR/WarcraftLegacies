@@ -235,9 +235,7 @@ public static class Regions
 	public static Rectangle Trader3 { get; set; } = new Rectangle(8864f, -22720f, 9184f, -22432f);
 	public static Rectangle GoblinStartPos { get; set; } = new Rectangle(-9248f, -13984f, -8160f, -12896f);
 	public static Rectangle TempestKeepSpawn { get; set; } = new Rectangle(3808f, -21856f, 4224f, -21504f);
-	public static Rectangle SummonObeliskTarget { get; set; } = new Rectangle(3232f, 22752f, 3648f, 23168f);
 	public static Rectangle NyTanaris { get; set; } = new Rectangle(-15136f, -17888f, -14656f, -17376f);
-	public static Rectangle NyNorth { get; set; } = new Rectangle(3808f, 23072f, 4160f, 23520f);
 	public static Rectangle UldumAmbiance { get; set; } = new Rectangle(-15712f, -20576f, -11552f, -15232f);
 	public static Rectangle KaliRock1 { get; set; } = new Rectangle(-16864f, -2336f, -15456f, -1280f);
 	public static Rectangle KaliRock4 { get; set; } = new Rectangle(-10304f, -12960f, -9408f, -12384f);
@@ -350,7 +348,9 @@ public static class Regions
 	public static Rectangle KaliRock13 { get; set; } = new Rectangle(-12992f, 1472f, -12096f, 2496f);
 	public static Rectangle KaliRock14 { get; set; } = new Rectangle(-8608f, 6720f, -7744f, 7936f);
 	public static Rectangle GilneasStartPos { get; set; } = new Rectangle(7936f, 1472f, 8928f, 2112f);
-	public static Rectangle QuelStartPos { get; set; } = new Rectangle(16928f, 12288f, 17856f, 12960f);
+	public static Rectangle QuelStartPos { get; set; } = new Rectangle(16224f, 11904f, 20992f, 17504f);
 	public static Rectangle KaliRock15 { get; set; } = new Rectangle(-15328f, -13120f, -14016f, -11872f);
+	public static Rectangle ForsakenStartPos { get; set; } = new Rectangle(3552f, 22848f, 4480f, 23776f);
+	public static Rectangle LegionStartPos { get; set; } = new Rectangle(18528f, -31232f, 19456f, -30304f);
 
 }
