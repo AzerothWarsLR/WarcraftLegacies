@@ -350,7 +350,7 @@ public static class Regions
 	public static Rectangle GilneasStartPos { get; set; } = new Rectangle(7936f, 1472f, 8928f, 2112f);
 	public static Rectangle QuelStartPos { get; set; } = new Rectangle(16224f, 11904f, 20992f, 17504f);
 	public static Rectangle KaliRock15 { get; set; } = new Rectangle(-15328f, -13120f, -14016f, -11872f);
-	public static Rectangle ForsakenStartPos { get; set; } = new Rectangle(3552f, 22848f, 4480f, 23776f);
+	public static Rectangle ForsakenStartPos { get; set; } = new Rectangle(3296f, 22784f, 4480f, 23776f);
 	public static Rectangle LegionStartPos { get; set; } = new Rectangle(18528f, -31232f, 19456f, -30304f);
 
 }

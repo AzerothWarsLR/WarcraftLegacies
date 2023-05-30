@@ -72,6 +72,24 @@ namespace MacroTools.SpellSystem
     }
 
     /// <summary>
+    /// Causes the specified spell to be cast on a particular point.
+    /// </summary>
+    public static void DummyCastNoTargetOnUnit(unit caster, int abilId, string orderId, int level, unit target)
+    {
+
+      DummyCaster.DummyUnit
+        .SetOwner(caster.OwningPlayer())
+        .SetPosition(target.GetPosition())
+        .AddAbility(abilId)
+        .SetAbilityLevel(abilId, level);
+
+      DummyCaster.DummyUnit
+        .IssueOrder(orderId)
+        .RemoveAbility(abilId);
+
+    }
+
+    /// <summary>
     /// Causes the specified spell to be cast at a particular point.
     /// </summary>
     public static void DummyCastPoint(player whichPlayer, int abilId, string orderId, int level, Point target)

@@ -65,7 +65,7 @@ namespace TestMap.Source.Setup
         var spellResistanceAura = new SpellResistanceAura(FourCC("Huth"));
         PassiveAbilityManager.Register(spellResistanceAura);
 
-        var resurrectionAura = new ResurrectionAura(FourCC("Huth"));
+        var resurrectionAura = new ResurrectionAura(FourCC("h05F"));
         PassiveAbilityManager.Register(resurrectionAura);
 
         var summonLegion = new SummonLegionSpell(FourCC("AHdr"), FourCC("ACm2"));
