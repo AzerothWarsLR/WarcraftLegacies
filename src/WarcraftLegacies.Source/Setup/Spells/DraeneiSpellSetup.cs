@@ -70,11 +70,13 @@ namespace WarcraftLegacies.Source.Setup.Spells
       };
       SpellSystem.Register(warStompAdal);
 
-      var crystallization = new GoldOnCast(Constants.ABILITY_A045_CRYSTALLIZATION_ALL)
+      var summonGateway = new SummonUnitsTarget(Constants.ABILITY_A0LX_GATEWAY_REINFORCEMENTS_DRAENEI)
       {
-        GoldToGrant = 25
+        SummonUnitTypeId = Constants.UNIT_O05B_DEFENDER_DRAENEI,
+        SummonCount = 1,
+        Radius = 50,
       };
-      SpellSystem.Register(crystallization);
+      SpellSystem.Register(summonGateway);
     }
   }
 }

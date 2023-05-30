@@ -23,6 +23,7 @@ namespace WarcraftLegacies.Source.GameLogic
           if (faction == null) continue;
           SetPlayerState(player, PLAYER_STATE_RESOURCE_GOLD, faction.StartingGold);
           SetPlayerState(player, PLAYER_STATE_RESOURCE_LUMBER, faction.StartingLumber);
+          SetPlayerState(player, PLAYER_STATE_RESOURCE_HERO_TOKENS, 1);
         }
       });
     }

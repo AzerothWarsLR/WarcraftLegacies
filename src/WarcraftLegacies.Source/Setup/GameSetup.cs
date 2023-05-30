@@ -47,6 +47,8 @@ namespace WarcraftLegacies.Source.Setup
       PlayerSetup.Setup();
       ZandalarGoblinChoiceDialogue.Setup();
       IllidariSunfuryChoiceDialogue.Setup();
+      QuelGilneasChoiceDialogue.Setup();
+      LegionForsakenChoiceDialogue.Setup();
       NeutralHostileSetup.Setup();
       AllQuestSetup.Setup(preplacedUnitSystem, artifactSetup, allLegendSetup);
       ObserverSetup.Setup(new[] { Player(21) });
@@ -127,14 +129,14 @@ namespace WarcraftLegacies.Source.Setup
       BlackPortalControlNexusSetup.Setup(preplacedUnitSystem);
       CenariusGhost.Setup(allLegendSetup.Druids);
       HelmOfDominationDropsWhenScourgeLeaves.Setup(artifactSetup.HelmOfDomination, allLegendSetup.Scourge.TheFrozenThrone);
-      TagSummonedUnits.Setup();
+      //TagSummonedUnits.Setup();
     }
 
     private static void SetupControlPointManager()
     {
       ControlPointManager.Instance = new ControlPointManager
       {
-        StartingMaxHitPoints = 1400,
+        StartingMaxHitPoints = 1900,
         HostileStartingCurrentHitPoints = 1000,
         RegenerationAbility = Constants.ABILITY_A0UT_CP_LIFE_REGEN,
         IncreaseControlLevelAbilityTypeId = Constants.ABILITY_A0A8_FORTIFY_CONTROL_POINTS_SHARED,

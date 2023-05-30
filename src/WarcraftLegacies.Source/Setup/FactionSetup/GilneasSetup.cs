@@ -1,4 +1,6 @@
-﻿using MacroTools.FactionSystem;
+﻿using MacroTools;
+using MacroTools.FactionSystem;
+using WCSharp.Shared.Data;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup.FactionSetup
@@ -7,13 +9,13 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
   {
     public static Faction? Gilneas { get; private set; }
     
-    public static void Setup()
+    public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
       Gilneas = new Faction(FactionNames.Gilneas, PLAYER_COLOR_COAL, "|cff808080",
         "ReplaceableTextures\\CommandButtons\\BTNGreymane.blp")
       {
         StartingGold = 200,
-        StartingLumber = 200,
+        StartingLumber = 700,
         IntroText = @"You are playing as the accursed |cff646464Kingdom of Gilneas|r|r.
 
 You start isolated behind the Greymane Wall, the only way for an enemy to reach you is through the Greymane Gate or via the coast.

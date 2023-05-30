@@ -13,10 +13,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
     public LegendaryHero LegendNobundo { get; }
     public Capital LegendExodar { get; }
     public Capital LegendExodarGenerator { get; }
-    public Capital Shattrah { get; }
-    
-    public Capital Farahlon { get; }
-    
+    public Capital Shattrah { get; }   
     public Capital Halaar { get; }
     
     public LegendDraenei(PreplacedUnitSystem preplacedUnitSystem)
@@ -60,11 +57,6 @@ namespace WarcraftLegacies.Source.Setup.Legends
         Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_H0AH_SHATTRAH_DRAENEI_OTHER)
       };
 
-      Farahlon = new Capital
-      {
-        Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_H0AF_FARAHLON_DRAENEI_OTHER)
-      };
-
       Halaar = new Capital
       {
         Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_H0AE_HALAAR_DRAENEI_OTHER)
@@ -80,7 +72,6 @@ namespace WarcraftLegacies.Source.Setup.Legends
       CapitalManager.Register(LegendExodar);
       CapitalManager.Register(LegendExodarGenerator);
       CapitalManager.Register(Shattrah);
-      CapitalManager.Register(Farahlon);
       CapitalManager.Register(Halaar);
     }
   }

@@ -36,7 +36,6 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
       "ReplaceableTextures\\CommandButtons\\BTNGalleonIcon.blp")
     {
       AddObjective(new ObjectiveControlCapital(legendBoralus, false));
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N09K_CRESTFALL_10GOLD_MIN)));
       AddObjective(new ObjectiveControlLegend(daelinProudmoore, false));
       AddObjective(new ObjectiveResearch(Constants.UPGRADE_R05J_STRANGLETHORN_EXPEDITION_KULTIRAS, Constants.UNIT_H046_BORALUS_KEEP_KUL_TIRAS));
       AddObjective(new ObjectiveSelfExists());
@@ -76,11 +75,11 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
       foreach (var unit in CreateGroup().EnumUnitsInRect(Rectangle.WorldBounds).EmptyToList().Where(x => x.OwningPlayer() == whichPlayer))
       {
         if (!IsUnitType(unit, UNIT_TYPE_STRUCTURE) && !IsUnitType(unit, UNIT_TYPE_ANCIENT) && !IsUnitType(unit, UNIT_TYPE_PEON))
-          SetUnitPosition(unit, 9755, -21510);
+          SetUnitPosition(unit, 6864, -17176);
       }
 
       if (GetLocalPlayer() == whichPlayer)
-        SetCameraPosition(9755, -21510);
+        SetCameraPosition(6864, -17176);
     }
 
     /// <inheritdoc/>

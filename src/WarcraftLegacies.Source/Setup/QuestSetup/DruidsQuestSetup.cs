@@ -20,7 +20,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       druids.StartingQuest = newQuest;
       druids.AddQuest(new QuestShrineBase(Regions.ShrineBaseUnlock));
       druids.AddQuest(new QuestRiseBase(Regions.RiseBaseUnlock));
-      druids.AddQuest(new QuestAshenvale(Regions.AshenvaleUnlock, allLegendSetup.Druids.Malfurion));
+      druids.AddQuest(new QuestAshenvale(Regions.AshenvaleUnlock));
       druids.AddQuest(new QuestDruidsKillFrostwolf(allLegendSetup.Frostwolf.ThunderBluff));
       druids.AddQuest(new QuestDruidsKillWarsong());
       druids.AddQuest(new QuestAndrassil(allLegendSetup.Scourge.TheFrozenThrone));

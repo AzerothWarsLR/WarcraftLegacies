@@ -15,7 +15,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
     /// </summary>
     public static void Setup()
     {
-      PassiveAbilityManager.Register(new Execute(Constants.UNIT_O021_RAVAGER_WARSONG)
+      PassiveAbilityManager.Register(new Execute(Constants.UNIT_O021_RAVAGER_ZANDALAR)
       {
         DamageMultNonResistant = 4,
         DamageMultResistant = 2,
