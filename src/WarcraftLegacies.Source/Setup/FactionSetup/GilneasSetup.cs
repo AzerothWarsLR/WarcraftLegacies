@@ -54,7 +54,7 @@ Once you have reclaimed Gilneas, open Greymane's Gate and march North to assist 
       Gilneas.ModObjectLimit(FourCC("h03L"), Faction.UNLIMITED); //Shotgunner
       Gilneas.ModObjectLimit(FourCC("n067"), Faction.UNLIMITED); //Spider summon
       Gilneas.ModObjectLimit(FourCC("o04U"), 6); //Cyclone Cannon
-      Gilneas.ModObjectLimit(FourCC("Repl"), 6); //Worgen Shaman
+      Gilneas.ModObjectLimit(FourCC("o06P"), 6); //Worgen Shaman
       Gilneas.ModObjectLimit(FourCC("h04X"), 6); //HarvestWitch
 
       Gilneas.ModObjectLimit(FourCC("E01E"), 1); //Goldrinn
