@@ -25,7 +25,7 @@ namespace WarcraftLegacies.Source.Setup
 
       var thunderClap = new Stomp(FourCC("A0QC"))
       {
-        Radius = 225,
+        Radius = 300,
         DamageBase = 65,
         DurationBase = 1,
         StunAbilityId = FourCC("S00H"),
