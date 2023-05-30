@@ -43,7 +43,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.LegendBased
     
     private void OnFactionTeamJoin(object? sender, PlayerChangeTeamEventArgs playerChangeTeamEventArgs)
     {
-      var isOnSameTeam = IsPlayerOnSameTeamAsAnyEligibleFaction(_target.Unit.OwningPlayer());
+      var isOnSameTeam = IsPlayerOnSameTeamAsAnyEligibleFaction(_target.OwningPlayer);
       if (_target.Unit != null && isOnSameTeam is true)
       {
         Progress = QuestProgress.Complete;
