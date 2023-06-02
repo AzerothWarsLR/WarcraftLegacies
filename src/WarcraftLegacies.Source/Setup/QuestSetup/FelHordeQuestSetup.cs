@@ -17,7 +17,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
         preplacedUnitSystem.GetUnit(Constants.UNIT_N036_DARK_PORTAL_WAYGATE, Regions.Dark_Portal_Exit_1.Center),
         preplacedUnitSystem.GetUnit(Constants.UNIT_N036_DARK_PORTAL_WAYGATE, Regions.Dark_Portal_Exit_2.Center),
         preplacedUnitSystem.GetUnit(Constants.UNIT_N036_DARK_PORTAL_WAYGATE, Regions.Dark_Portal_Exit_3.Center)));
-      FelHorde.AddQuest(new QuestBlackrock(Regions.BlackrockUnlock, new[] { questHellfireCitadel }));
+      FelHorde.AddQuest(new QuestBlackrock(Regions.BlackrockUnlock, Regions.DarkPortalUnlock, new[] { questHellfireCitadel }));
       FelHorde.AddQuest(new QuestFelHordeKillIronforge(allLegendSetup.Ironforge.GreatForge));
       FelHorde.AddQuest(new QuestFelHordeKillStormwind(allLegendSetup.Stormwind.StormwindKeep));
       FelHorde.AddQuest(new QuestGuldansLegacy());

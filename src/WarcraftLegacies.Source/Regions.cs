@@ -169,7 +169,7 @@ public static class Regions
 	public static Rectangle DarkshireAmbient1 { get; set; } = new Rectangle(8672f, -17440f, 13600f, -14816f);
 	public static Rectangle DarkshireAmbient2 { get; set; } = new Rectangle(13600f, -18208f, 14912f, -14720f);
 	public static Rectangle DarkshireAmbient3 { get; set; } = new Rectangle(13408f, -14752f, 17952f, -12672f);
-	public static Rectangle BlastedlandAmbient { get; set; } = new Rectangle(14912f, -22176f, 19200f, -16896f);
+	public static Rectangle BlastedlandAmbient { get; set; } = new Rectangle(14912f, -22208f, 20224f, -16896f);
 	public static Rectangle SwampofSorrowsAmbient { get; set; } = new Rectangle(14944f, -16896f, 19424f, -14784f);
 	public static Rectangle BurningSteppesAmbient { get; set; } = new Rectangle(11712f, -12704f, 17984f, -7552f);
 	public static Rectangle BurningSteppeAmbient2 { get; set; } = new Rectangle(17952f, -14720f, 19872f, -9504f);
@@ -352,5 +352,6 @@ public static class Regions
 	public static Rectangle KaliRock15 { get; set; } = new Rectangle(-15328f, -13120f, -14016f, -11872f);
 	public static Rectangle ForsakenStartPos { get; set; } = new Rectangle(3296f, 22784f, 4480f, 23776f);
 	public static Rectangle LegionStartPos { get; set; } = new Rectangle(18528f, -31232f, 19456f, -30304f);
+	public static Rectangle DarkPortalUnlock { get; set; } = new Rectangle(17824f, -21792f, 19808f, -19648f);
 
 }
