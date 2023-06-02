@@ -299,10 +299,10 @@ public static class Regions
 	public static Rectangle SatyrCamp { get; set; } = new Rectangle(-14816f, 6080f, -13888f, 6912f);
 	public static Rectangle FountainOfHealthAlterac { get; set; } = new Rectangle(10656f, 5536f, 11104f, 6016f);
 	public static Rectangle Nazjatar { get; set; } = new Rectangle(-5792f, -3680f, -5024f, -2752f);
-	public static Rectangle Wrathgate_Portal_1 { get; set; } = new Rectangle(-3040f, 18016f, -2464f, 18560f);
+	public static Rectangle Wrathgate_Portal_1 { get; set; } = new Rectangle(-4352f, 15584f, -3776f, 16128f);
 	public static Rectangle Scholomance_Exterior_1 { get; set; } = new Rectangle(14368f, 7264f, 14944f, 7872f);
 	public static Rectangle Scholomance_Exterior_2 { get; set; } = new Rectangle(15008f, 6560f, 15552f, 7168f);
-	public static Rectangle Wrathgate_Portal_2 { get; set; } = new Rectangle(-2464f, 18528f, -1888f, 19136f);
+	public static Rectangle Wrathgate_Portal_2 { get; set; } = new Rectangle(-3456f, 15968f, -2880f, 16576f);
 	public static Rectangle AlteracLegionLanding { get; set; } = new Rectangle(11168f, 5632f, 11552f, 5984f);
 	public static Rectangle NorthrendLegionLanding { get; set; } = new Rectangle(3392f, 20512f, 3776f, 20864f);
 	public static Rectangle IslandBlocker1 { get; set; } = new Rectangle(416f, 2048f, 1440f, 2336f);
