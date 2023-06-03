@@ -94,6 +94,7 @@ namespace WarcraftLegacies.Source.Setup
     public LegendNazjatar Nazjatar { get; }
     public LegendBlackEmpire BlackEmpire { get; }
     public LegendTwilight Twilight { get; }
+    public LegendGilneas Gilneas { get; }
 
     /// <summary>
     /// Contains references to all Neutral <see cref="Legend"/>s.
@@ -123,6 +124,7 @@ namespace WarcraftLegacies.Source.Setup
       Troll = new LegendTroll();
       Warsong = new LegendWarsong(preplacedUnitSystem);
       Neutral = new LegendNeutral(preplacedUnitSystem);
+      Gilneas = new LegendGilneas();
       Cthun = new LegendCthun();
       Nazjatar = new LegendNazjatar();
       BlackEmpire = new LegendBlackEmpire(preplacedUnitSystem);
@@ -156,6 +158,7 @@ namespace WarcraftLegacies.Source.Setup
       BlackEmpire.RegisterLegends();
       Twilight.RegisterLegends();
       Neutral.RegisterLegends();
+      Gilneas.RegisterLegends();
     }
   }
 }

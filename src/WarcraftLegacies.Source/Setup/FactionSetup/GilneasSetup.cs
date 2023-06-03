@@ -16,6 +16,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
       {
         StartingGold = 200,
         StartingLumber = 700,
+        ControlPointDefenderUnitTypeId = Constants.UNIT_H0AF_CONTROL_POINT_DEFENDER_GILNEAS,
         IntroText = @"You are playing as the accursed |cff646464Kingdom of Gilneas|r|r.
 
 You start isolated behind the Greymane Wall, the only way for an enemy to reach you is through the Greymane Gate or via the coast.
@@ -55,7 +56,7 @@ Once you have reclaimed Gilneas, open Greymane's Gate and march North to assist 
       Gilneas.ModObjectLimit(FourCC("n067"), Faction.UNLIMITED); //Spider summon
       Gilneas.ModObjectLimit(FourCC("o04U"), 6); //Cyclone Cannon
       Gilneas.ModObjectLimit(FourCC("o06P"), 6); //Worgen Shaman
-      Gilneas.ModObjectLimit(FourCC("h04X"), 6); //HarvestWitch
+      Gilneas.ModObjectLimit(FourCC("h04X"), 8); //HarvestWitch
 
       Gilneas.ModObjectLimit(FourCC("E01E"), 1); //Goldrinn
       Gilneas.ModObjectLimit(FourCC("Ewar"), 1); //Tess
@@ -79,6 +80,7 @@ Once you have reclaimed Gilneas, open Greymane's Gate and march North to assist 
       Gilneas.ModObjectLimit(FourCC("Rhlh"), Faction.UNLIMITED); //Improved Lumber Harvesting
       Gilneas.ModObjectLimit(FourCC("Rhac"), Faction.UNLIMITED); //Improved Masonry
       Gilneas.ModObjectLimit(FourCC("R09L"), Faction.UNLIMITED); //Worgen Shaman training
+      Gilneas.ModObjectLimit(FourCC("R09M"), Faction.UNLIMITED); //harvestWitch training
 
       FactionManager.Register(Gilneas);
     }

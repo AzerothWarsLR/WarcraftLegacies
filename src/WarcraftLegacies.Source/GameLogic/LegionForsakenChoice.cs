@@ -15,7 +15,7 @@ namespace WarcraftLegacies.Source.GameLogic
   public static class LegionForsakenChoiceDialogue
   {
     private static readonly dialog? PickDialogue = DialogCreate();
-    private static readonly button? NoButton = DialogAddButton(PickDialogue, "Cult", 0);
+    //private static readonly button? NoButton = DialogAddButton(PickDialogue, "Cult", 0);
     private static readonly button? YesButton = DialogAddButton(PickDialogue, "Legion", 0);
     private static readonly trigger? YesTrigger = CreateTrigger();
     private static readonly trigger? NoTrigger = CreateTrigger();
@@ -59,10 +59,10 @@ namespace WarcraftLegacies.Source.GameLogic
         DialogDisplay(GetLocalPlayer(), PickDialogue, true);
 
       var yesTrigger = CreateTrigger();
-      var noTrigger = CreateTrigger();
-      TriggerRegisterDialogButtonEvent(noTrigger, NoButton);
+      //var noTrigger = CreateTrigger();
+      //TriggerRegisterDialogButtonEvent(noTrigger, NoButton);
       TriggerRegisterDialogButtonEvent(yesTrigger, YesButton);
-      TriggerAddAction(noTrigger, () => { _factionPicked = true; });
+      //TriggerAddAction(noTrigger, () => { _factionPicked = true; });
       TriggerAddAction(yesTrigger, () => { _factionPicked = false; });
       DestroyTimer(GetExpiredTimer());
     }

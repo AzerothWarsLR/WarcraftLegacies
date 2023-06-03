@@ -1,11 +1,12 @@
-﻿using WarcraftLegacies.Source.Quests.Gilneas;
+﻿using MacroTools;
+using WarcraftLegacies.Source.Quests.Gilneas;
 using WarcraftLegacies.Source.Setup.FactionSetup;
 
 namespace WarcraftLegacies.Source.Setup.QuestSetup
 {
   public static class GilneasQuestSetup
   {
-    public static void Setup(ArtifactSetup artifactSetup)
+    public static void Setup(ArtifactSetup artifactSetup, PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup)
     {
       var gilneas = GilneasSetup.Gilneas;
 
@@ -13,8 +14,8 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       gilneas.AddQuest(new QuestStormglen());
       gilneas.AddQuest(new QuestKeelHarbor());
       gilneas.AddQuest(new QuestTempestReach());
-      gilneas.AddQuest(new QuestGilneasCity());
-      //gilneas.AddQuest(new QuestGoldrinnHumanPath(artifactSetup.HornOfCenarius));
+      gilneas.AddQuest(new QuestGilneasCity(preplacedUnitSystem));
+      gilneas.AddQuest(new QuestGoldrinnHumanPath(allLegendSetup.Gilneas.Tess, artifactSetup.ScytheOfElune));
     }
   }
 }
