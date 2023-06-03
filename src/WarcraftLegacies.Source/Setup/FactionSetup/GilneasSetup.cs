@@ -78,7 +78,7 @@ Once you have reclaimed Gilneas, open Greymane's Gate and march North to assist 
       Gilneas.ModObjectLimit(FourCC("R00K"), Faction.UNLIMITED); //Power Infusion
       Gilneas.ModObjectLimit(FourCC("Rhlh"), Faction.UNLIMITED); //Improved Lumber Harvesting
       Gilneas.ModObjectLimit(FourCC("Rhac"), Faction.UNLIMITED); //Improved Masonry
-      Gilneas.ModObjectLimit(FourCC("Ro9L"), Faction.UNLIMITED); //Worgen Shaman training
+      Gilneas.ModObjectLimit(FourCC("R09L"), Faction.UNLIMITED); //Worgen Shaman training
 
       FactionManager.Register(Gilneas);
     }

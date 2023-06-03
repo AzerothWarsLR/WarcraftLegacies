@@ -25,7 +25,7 @@ namespace WarcraftLegacies.Source.Setup
         var newOwner = GetTriggerUnit().OwningPlayer();
         preplacedUnitSystem.GetUnit(Constants.UNIT_N03H_DEATH_GATE_WAYGATE, Regions.Scholomance_Exterior_1.Center).SetOwner(newOwner);
         preplacedUnitSystem.GetUnit(Constants.UNIT_N03H_DEATH_GATE_WAYGATE, Regions.Scholomance_Exterior_2.Center).SetOwner(newOwner);
-      }, preplacedUnitSystem.GetUnit(Constants.UNIT_N03J_BLACK_PORTAL_AURA_CONTROL_NEXUS, new Point(-1546, 18236)));
+      }, preplacedUnitSystem.GetUnit(Constants.UNIT_N03J_BLACK_PORTAL_AURA_CONTROL_NEXUS, new Point(-4137, 16957)));
 
       //Control Nexus in NA
       PlayerUnitEvents.Register(UnitEvent.ChangesOwner, () =>
