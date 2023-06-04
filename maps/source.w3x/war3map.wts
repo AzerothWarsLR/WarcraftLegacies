@@ -15435,6 +15435,12 @@ STRING 2573
 Arathi Highlands (15gold/min)
 }
 
+STRING 2574
+// Upgrades: R09N (Priest Adept Training,Priest Master Training), Tip (Tooltip)
+{
+Establish the Flight Path
+}
+
 STRING 2576
 // Units: n01W (Boralus (25gold/min)), Name (Name)
 {
@@ -89139,12 +89145,6 @@ STRING 14866
 // Abilities: A0KX (Burning Crash), Researchhotkey (Hotkey - Learn)
 {
 Q
-}
-
-STRING 14868
-// Upgrades: R09N (Priest Adept Training,Priest Master Training), Tip (Tooltip)
-{
-Research Functional Deeprun Tram
 }
 
 STRING 14869
