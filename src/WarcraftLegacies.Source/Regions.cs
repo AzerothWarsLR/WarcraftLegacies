@@ -353,5 +353,7 @@ public static class Regions
 	public static Rectangle ForsakenStartPos { get; set; } = new Rectangle(3296f, 22784f, 4480f, 23776f);
 	public static Rectangle LegionStartPos { get; set; } = new Rectangle(18528f, -31232f, 19456f, -30304f);
 	public static Rectangle DarkPortalUnlock { get; set; } = new Rectangle(17824f, -21792f, 19808f, -19648f);
+	public static Rectangle OrgrimmarFlight { get; set; } = new Rectangle(-9728f, -800f, -9568f, -640f);
+	public static Rectangle ThunderbluffFlight { get; set; } = new Rectangle(-14656f, -4128f, -14496f, -3968f);
 
 }

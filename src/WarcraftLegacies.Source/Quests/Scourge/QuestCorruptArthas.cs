@@ -84,7 +84,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
     /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)
     {
-      //completingFaction.AddPower(new PingPower(_arthas, "Eye of the Lich King", 5, 60));
+      completingFaction.AddPower(new PingPower(_arthas, "Eye of the Lich King", 5, 60));
     }
   }
 }
