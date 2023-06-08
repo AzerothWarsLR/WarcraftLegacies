@@ -125,7 +125,7 @@ namespace WarcraftLegacies.Source.Setup
         Constants.ABILITY_A017_TAKE_VENGEANCE_SENTINELS_MAIEV)
       {
         AlternateFormId = Constants.UNIT_ESPV_AVATAR_OF_VENGEANCE_SENTINELS_MAIEV,
-        HitsReviveThreshold = 5,
+        HitsReviveThreshold = 9,
         HealBase = 900,
         HealLevel = 300,
         BonusDamageBase = 20,

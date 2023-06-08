@@ -15441,6 +15441,12 @@ STRING 2574
 Establish the Flight Path
 }
 
+STRING 2575
+// Abilities: ACdc (Death Coil), Ubertip (Tooltip - Normal - Extended)
+{
+A coil of death that can heal a friendly Undead unit for 280 hit points, or deal half damage to an enemy living unit.
+}
+
 STRING 2576
 // Units: n01W (Boralus (25gold/min)), Name (Name)
 {
@@ -15457,6 +15463,12 @@ STRING 2578
 // Units: n01U (Stonetalon Peak (15gold/min)), Name (Name)
 {
 Stonetalon Peak (15gold/min)
+}
+
+STRING 2579
+// Abilities: A0J8 (Stun Mine), Ubertip (Tooltip - Normal - Extended)
+{
+Summons an invisible and immovable mine that stuns enemy land units around it. The mine activates when an enemy land unit approaches and destroys all other stun mines in its area of effect. |nThe mine lasts 60 seconds. |nThe stun lasts 4 seconds.
 }
 
 STRING 2580
@@ -18931,6 +18943,12 @@ STRING 3157
 Z
 }
 
+STRING 3158
+// Abilities: A03E (Stasis Trap), Ubertip (Tooltip - Normal - Extended)
+{
+Summons an invisible and immovable ward that stuns enemy land units around it. The trap activates when an enemy land unit approaches and destroys all other stasis wards in its area of effect. |nThe trap lasts 60 seconds. |nThe stun lasts 4 seconds. |n 7 second activation delay.
+}
+
 STRING 3159
 // Units: n06F (Silvermyst Island (10gold/min)), Name (Name)
 {
@@ -18953,6 +18971,12 @@ STRING 3162
 // Units: h018 (Warrior), Hotkey (Hotkey)
 {
 Q
+}
+
+STRING 3163
+// Abilities: A017 (Take Vengeance), Ubertip (Tooltip - Normal - Extended)
+{
+If Maiev would die, she instead regains 1200 health and becomes an Avatar of Vengeance for 20 seconds, increasing her attack damage by 40. If Maiev attacks 9 times in this form, she revives instantly. Otherwise, she dies.
 }
 
 STRING 3164
@@ -19049,6 +19073,12 @@ STRING 3179
 // Units: n04X (Ysondre), Name (Name)
 {
 Ysondre
+}
+
+STRING 3180
+// Abilities: A017 (Take Vengeance), Ubertip (Tooltip - Normal - Extended)
+{
+If Maiev would die, she instead regains 1500 health and becomes an Avatar of Vengeance for 20 seconds, increasing her attack damage by 60. If Maiev attacks 9 times in this form, she revives instantly. Otherwise, she dies.
 }
 
 STRING 3181
@@ -23631,6 +23661,12 @@ STRING 3944
 // Units: H00Z (Crown Prince of Stromgarde), Awakentip (Tooltip - Awaken)
 {
 Revive Crown Prince of Stromgarde
+}
+
+STRING 3945
+// Abilities: A017 (Take Vengeance), Ubertip (Tooltip - Normal - Extended)
+{
+If Maiev would die, she instead regains 1800 health and becomes an Avatar of Vengeance for 20 seconds, increasing her attack damage by 80. If Maiev attacks 9 times in this form, she revives instantly. Otherwise, she dies.
 }
 
 STRING 3946
@@ -38296,12 +38332,6 @@ STRING 6390
 // Abilities: Afae (Faerie Fire), Hotkey (Hotkey - Normal)
 {
 Q
-}
-
-STRING 6391
-// Abilities: ACdc (Death Coil), Ubertip (Tooltip - Normal - Extended)
-{
-A coil of death that can heal a friendly Undead unit for 250 hit points, or deal half damage to an enemy living unit.
 }
 
 STRING 6392
@@ -54563,12 +54593,6 @@ STRING 9102
 Stun Mine
 }
 
-STRING 9103
-// Abilities: A0J8 (Stun Mine), Ubertip (Tooltip - Normal - Extended)
-{
-Summons an invisible and immovable mine that stuns enemy land units around it. The mine activates when an enemy land unit approaches and destroys all other stun mines in its area of effect. |nThe mine lasts 150 seconds. |nThe stun lasts 6 seconds.
-}
-
 STRING 9104
 // Abilities: A0J7 (Move your Arse!), EditorSuffix (Editor Suffix)
 {
@@ -65579,24 +65603,6 @@ STRING 10939
 R
 }
 
-STRING 10940
-// Abilities: A017 (Take Vengeance), Ubertip (Tooltip - Normal - Extended)
-{
-If Maiev would die, she instead regains 1200 health and becomes an Avatar of Vengeance for 20 seconds, increasing her attack damage by 40. If Maiev attacks 5 times in this form, she revives instantly. Otherwise, she dies.
-}
-
-STRING 10941
-// Abilities: A017 (Take Vengeance), Ubertip (Tooltip - Normal - Extended)
-{
-If Maiev would die, she instead regains 1500 health and becomes an Avatar of Vengeance for 20 seconds, increasing her attack damage by 60. If Maiev attacks 5 times in this form, she revives instantly. Otherwise, she dies.
-}
-
-STRING 10942
-// Abilities: A017 (Take Vengeance), Ubertip (Tooltip - Normal - Extended)
-{
-If Maiev would die, she instead regains 1800 health and becomes an Avatar of Vengeance for 20 seconds, increasing her attack damage by 80. If Maiev attacks 5 times in this form, she revives instantly. Otherwise, she dies.
-}
-
 STRING 10943
 // Abilities: A0DA (Summon Mur'gul), Hotkey (Hotkey - Normal)
 {
@@ -73310,18 +73316,6 @@ STRING 12227
 // Abilities: A04R (Greater Doom), Hotkey (Hotkey - Normal)
 {
 Q
-}
-
-STRING 12228
-// Abilities: A03E (Stasis Trap), Tip (Tooltip - Normal)
-{
-Stasis Trap (|cffffcc00Q|r)
-}
-
-STRING 12229
-// Abilities: A03E (Stasis Trap), Ubertip (Tooltip - Normal - Extended)
-{
-Summons an invisible and immovable ward that stuns enemy land units around it. The trap activates when an enemy land unit approaches and destroys all other stasis wards in its area of effect. |nThe trap lasts 150 seconds. |nThe stun lasts 6 seconds. |n 10 second activation delay.
 }
 
 STRING 12230
