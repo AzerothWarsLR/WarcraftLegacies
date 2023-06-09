@@ -46,7 +46,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
     private static void AddDragonsOfNightmareQuests(QuestDragonsOfNightmare dragonsOfNightmareOne)
     {
       // These quests should only show up once they become relevant
-      TimerStart(CreateTimer(), 60, false, () =>
+      TimerStart(CreateTimer(), 360, false, () =>
       {
         foreach (var faction in FactionManager.GetAllFactions())
         {
