@@ -7952,12 +7952,6 @@ STRING 1325
 Z
 }
 
-STRING 1326
-// Units: o04P (Nathrezim Infiltrator), Ubertip (Tooltip - Extended)
-{
-Shadowy Nathrezim Agents.|n|cfff5962dAbilities:|R Vampiric Attack, Dark Regeneration, Resistant Skin, Permanent Invisibility, Magic Resistance |n|cfff5962dCan learn:|R Charm, Corruption, Astral Walk|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land units.|r
-}
-
 STRING 1327
 // Units: Haah (The Fallen Guardian), Propernames (Proper Names)
 {
@@ -38340,6 +38334,12 @@ STRING 6390
 Q
 }
 
+STRING 6391
+// Units: o04P (Nathrezim Infiltrator), Casterupgradetip (Caster Upgrade Tips)
+{
+- Dark Regeneration,- Dark Regeneration|n- Sight of Sargeras,- Dark Regeneration|n- Sight of Sargeras|n- Charm
+}
+
 STRING 6392
 // Abilities: ACdc (Death Coil), Ubertip (Tooltip - Normal - Extended)
 {
@@ -39496,12 +39496,6 @@ STRING 6584
 // Abilities: A11I (Water Elemental), Ubertip (Tooltip - Normal - Extended)
 {
 Summons a water elemental to attack the Wizard's enemies. Has 600 hit points and lasts 90 seconds. |n|n|cffffcc00Attacks land and air units.|r
-}
-
-STRING 6585
-// Units: o04P (Nathrezim Infiltrator), Casterupgradetip (Caster Upgrade Tips)
-{
-- Dark Regeneration,- Dark Regeneration|n- Charm,- Dark Regeneration|n- Charm|n- Corruption
 }
 
 STRING 6586
@@ -68358,6 +68352,12 @@ STRING 11390
 // Destructibles: B020 (Building - Troll Hut), Name (Name)
 {
 Building - Troll Hut
+}
+
+STRING 11391
+// Units: o04P (Nathrezim Infiltrator), Ubertip (Tooltip - Extended)
+{
+Shadowy Nathrezim Agents.|n|cfff5962dAbilities:|R Vampiric Attack, Dark Regeneration, Resistant Skin, Permanent Invisibility, Magic Resistance |n|cfff5962dCan learn:|R Charm, Sight of Sargeras, Astral Walk|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land units.|r
 }
 
 STRING 11392
