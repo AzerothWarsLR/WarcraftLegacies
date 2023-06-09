@@ -256,7 +256,7 @@ public static class Regions
 	public static Rectangle ClosePortal { get; set; } = new Rectangle(16512f, -19456f, 16800f, -19200f);
 	public static Rectangle GarithosCrusadeSpawn { get; set; } = new Rectangle(19168f, 7520f, 19776f, 8160f);
 	public static Rectangle GilneasUnlock6 { get; set; } = new Rectangle(6272f, -928f, 8672f, 1312f);
-	public static Rectangle GilneasUnlock1 { get; set; } = new Rectangle(8480f, -2368f, 9824f, -832f);
+	public static Rectangle GilneasUnlock1 { get; set; } = new Rectangle(8288f, -2368f, 9824f, -832f);
 	public static Rectangle GilneasUnlock2 { get; set; } = new Rectangle(6624f, -3264f, 8032f, -2400f);
 	public static Rectangle GilneasUnlock3 { get; set; } = new Rectangle(3968f, 416f, 5376f, 2656f);
 	public static Rectangle GilneasUnlock4 { get; set; } = new Rectangle(3392f, -2656f, 5504f, -320f);
@@ -348,12 +348,13 @@ public static class Regions
 	public static Rectangle KaliRock13 { get; set; } = new Rectangle(-12992f, 1472f, -12096f, 2496f);
 	public static Rectangle KaliRock14 { get; set; } = new Rectangle(-8608f, 6720f, -7744f, 7936f);
 	public static Rectangle GilneasStartPos { get; set; } = new Rectangle(7936f, 1472f, 8928f, 2112f);
-	public static Rectangle QuelStartPos { get; set; } = new Rectangle(16224f, 11904f, 20992f, 17504f);
 	public static Rectangle KaliRock15 { get; set; } = new Rectangle(-15328f, -13120f, -14016f, -11872f);
 	public static Rectangle ForsakenStartPos { get; set; } = new Rectangle(3296f, 22784f, 4480f, 23776f);
 	public static Rectangle LegionStartPos { get; set; } = new Rectangle(18528f, -31232f, 19456f, -30304f);
-	public static Rectangle DarkPortalUnlock { get; set; } = new Rectangle(17824f, -21792f, 19808f, -19648f);
+	public static Rectangle DarkPortalUnlock { get; set; } = new Rectangle(17792f, -21856f, 19808f, -19648f);
 	public static Rectangle OrgrimmarFlight { get; set; } = new Rectangle(-9728f, -800f, -9568f, -640f);
 	public static Rectangle ThunderbluffFlight { get; set; } = new Rectangle(-14656f, -4128f, -14496f, -3968f);
+	public static Rectangle IslandBlocker6 { get; set; } = new Rectangle(-2912f, -3904f, -1792f, -2816f);
+	public static Rectangle DalaStartPos { get; set; } = new Rectangle(8768f, 2112f, 10464f, 3488f);
 
 }
