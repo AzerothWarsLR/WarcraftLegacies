@@ -318,8 +318,6 @@ public static class Regions
 	public static Rectangle FeathermoonCreeps { get; set; } = new Rectangle(-22464f, -12128f, -18368f, -7584f);
 	public static Rectangle AuberdineUnlock { get; set; } = new Rectangle(-18784f, 8608f, -14784f, 11104f);
 	public static Rectangle KaliRock9 { get; set; } = new Rectangle(-14848f, -11808f, -13632f, -10432f);
-	public static Rectangle HinterEmeraldPortal { get; set; } = new Rectangle(17344f, 6368f, 17792f, 6624f);
-	public static Rectangle DuskwoodEmeraldPortal { get; set; } = new Rectangle(11008f, -15968f, 11456f, -15712f);
 	public static Rectangle FeralasEmeraldPortal { get; set; } = new Rectangle(-18144f, -6464f, -17696f, -6208f);
 	public static Rectangle AshenvaleEmeraldPortal { get; set; } = new Rectangle(-8576f, 8992f, -8128f, 9280f);
 	public static Rectangle KaliRock10 { get; set; } = new Rectangle(-11296f, 2688f, -10048f, 3424f);
@@ -356,5 +354,6 @@ public static class Regions
 	public static Rectangle ThunderbluffFlight { get; set; } = new Rectangle(-14656f, -4128f, -14496f, -3968f);
 	public static Rectangle IslandBlocker6 { get; set; } = new Rectangle(-2912f, -3904f, -1792f, -2816f);
 	public static Rectangle DalaStartPos { get; set; } = new Rectangle(8768f, 2112f, 10464f, 3488f);
+	public static Rectangle CenarionHoldUnlock { get; set; } = new Rectangle(-18272f, -14400f, -15680f, -12768f);
 
 }

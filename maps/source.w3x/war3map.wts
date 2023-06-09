@@ -7952,12 +7952,6 @@ STRING 1325
 Z
 }
 
-STRING 1326
-// Units: ninf (Infernal), Ubertip (Tooltip - Extended)
-{
-Forged demon cloaked in flames of fel magic.|n|cfff5962dAbilities:|R Spell Immunity, Permanent Immoliation, Resistant Skin|n|n|cff99b4d1Can only train 8.|r|n|cffffcc00Attacks land units.|r
-}
-
 STRING 1327
 // Units: Haah (The Fallen Guardian), Propernames (Proper Names)
 {
@@ -12989,7 +12983,7 @@ A
 }
 
 STRING 2166
-// Upgrades: R03Z (Magic Sentry), EditorSuffix (Editor Suffix)
+// Abilities: A136 (Corruption), EditorSuffix (Editor Suffix)
 {
 (legion)
 }
@@ -13001,7 +12995,7 @@ Steadfast Rangers of the Kul'tiras Navy.|n|cfff5962dAbilities:|R Bombing Run, Fi
 }
 
 STRING 2168
-// Upgrades: R040 (Magic Sentry), EditorSuffix (Editor Suffix)
+// Upgrades: R03Z (Magic Sentry), EditorSuffix (Editor Suffix)
 {
 (legion)
 }
@@ -28626,6 +28620,12 @@ STRING 4771
 Q
 }
 
+STRING 4772
+// Units: ninf (Infernal), Ubertip (Tooltip - Extended)
+{
+Forged demon cloaked in flames of fel magic.|n|cfff5962dAbilities:|R Spell Immunity, Permanent Immoliation, Resistant Skin|n|n|cff99b4d1Can only train 6, 12 after summoning legion.|r|n|cffffcc00Attacks land units.|r
+}
+
 STRING 4773
 // Abilities: Aweb (Web), EditorSuffix (Editor Suffix)
 {
@@ -38334,6 +38334,12 @@ STRING 6390
 Q
 }
 
+STRING 6391
+// Units: u007 (Dreadlord), Ubertip (Tooltip - Extended)
+{
+Elite Nathrezim, handpicked by Tichondrius himself.|n|cfff5962dAbilities:|R Carrion Swarm, Sleep, Vampiric Attack, Magic Resistance|n|cfff5962dCan Learn:|R Astral Walk, Sight of Sargeras|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land units.|r
+}
+
 STRING 6392
 // Abilities: ACdc (Death Coil), Ubertip (Tooltip - Normal - Extended)
 {
@@ -39490,6 +39496,12 @@ STRING 6584
 // Abilities: A11I (Water Elemental), Ubertip (Tooltip - Normal - Extended)
 {
 Summons a water elemental to attack the Wizard's enemies. Has 600 hit points and lasts 90 seconds. |n|n|cffffcc00Attacks land and air units.|r
+}
+
+STRING 6585
+// Units: o04P (Nathrezim Infiltrator), Casterupgradetip (Caster Upgrade Tips)
+{
+- Dark Regeneration,- Dark Regeneration|n- Charm,- Dark Regeneration|n- Charm|n- Corruption
 }
 
 STRING 6586
@@ -53189,6 +53201,24 @@ STRING 8865
 (unused)
 }
 
+STRING 8866
+// Units: o04P (Nathrezim Infiltrator), Ubertip (Tooltip - Extended)
+{
+Shadowy Nathrezim Agents.|n|cfff5962dAbilities:|R Vampiric Attack, Dark Regeneration, Resistant Skin, Permanent Invisibility, Magic Resistance |n|cfff5962dCan learn:|R Charm, Corruption|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land units.|r
+}
+
+STRING 8867
+// Abilities: A136 (Corruption), Name (Name)
+{
+Corruption
+}
+
+STRING 8868
+// Abilities: A136 (Corruption), Researchtip (Tooltip - Learn)
+{
+Learn Doom - [|cffffcc00Level %d|r]
+}
+
 STRING 8869
 // Abilities: A0KN (Earth's Grace), EditorSuffix (Editor Suffix)
 {
@@ -54591,6 +54621,12 @@ STRING 9102
 // Abilities: A0J8 (Stun Mine), Tip (Tooltip - Normal)
 {
 Stun Mine
+}
+
+STRING 9103
+// Abilities: A136 (Corruption), Researchubertip (Tooltip - Learn - Extended)
+{
+Marks a target unit for the manifestation of a Demon. The afflicted unit cannot cast spells and will take <ANdo,DataA1> damage per second until it dies. Upon its death, a great Demon will spawn from its corpse. Doom cannot be dispelled or cancelled. |n|cffffcc00Level 1|r - 40 damage per second and 1 Elite Doom Guard summoned.|n|cffffcc00Level 2|r - 70 damage per second and 2 Elite Doom Guards summoned. |n|cffffcc00Level 3|r - 100 damage per second and 4 Elite Doom Guards summoned.
 }
 
 STRING 9104
@@ -65075,6 +65111,12 @@ STRING 10850
 Goblin Land Mine
 }
 
+STRING 10851
+// Abilities: A136 (Corruption), Tip (Tooltip - Normal)
+{
+Corruption
+}
+
 STRING 10852
 // Abilities: A09F (Life Regeneration Aura), EditorSuffix (Editor Suffix)
 {
@@ -65601,6 +65643,24 @@ STRING 10939
 // Abilities: A06I (Perfect Avatar), Unhotkey (Hotkey - Turn Off)
 {
 R
+}
+
+STRING 10940
+// Abilities: A136 (Corruption), Ubertip (Tooltip - Normal - Extended)
+{
+Curse a targetwith the plague. The afflicted unit cannot cast spells and will die instantly after 1 second transforming into a Zombie. This curse cannot be dispelled.
+}
+
+STRING 10941
+// Upgrades: R00N (Storm Hammers), Hotkey (Hotkey)
+{
+R
+}
+
+STRING 10942
+// Upgrades: R08H (Iron Plating,Steel Plating,Mithril Plating), EditorSuffix (Editor Suffix)
+{
+(legion)
 }
 
 STRING 10943
@@ -68298,6 +68358,12 @@ STRING 11390
 // Destructibles: B020 (Building - Troll Hut), Name (Name)
 {
 Building - Troll Hut
+}
+
+STRING 11391
+// Upgrades: R042 (Shaman Adept Training,Shaman Master Training), Ubertip (Tooltip - Extended)
+{
+Increases Nathrezims' mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Corruption.
 }
 
 STRING 11392
@@ -73316,6 +73382,12 @@ STRING 12227
 // Abilities: A04R (Greater Doom), Hotkey (Hotkey - Normal)
 {
 Q
+}
+
+STRING 12228
+// Upgrades: R086 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+{
+E
 }
 
 STRING 12230
@@ -106271,22 +106343,10 @@ STRING 17730
 Basic worker. Can summon and restore structures.|n|n|cffffcc00Attacks land units.|r
 }
 
-STRING 17731
-// Units: u007 (Dreadlord), Ubertip (Tooltip - Extended)
-{
-Elite Nathrezim, handpicked by Tichondrius himself.|n|cfff5962dAbilities:|R Carrion Swarm, Sleep, Vampiric Attack|n|cfff5962dCan Learn:|R Astral Walk, Sight of Sargeras|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land units.|r
-}
-
 STRING 17732
 // Units: u006 (Summoning Circle), Ubertip (Tooltip - Extended)
 {
 Summoning site for the Void demons of the Burning Legion.|r|n|cff99b4d1Can only build 2 before the Legion has been summoned. 12 post-summon.|n|cfff5962dTrains:|R Eredar Summoner, Succubus|n|cfff5962dResearches:|R Eredar Summoner Training, Succubus Training
-}
-
-STRING 17733
-// Units: o04P (Nathrezim Infiltrator), Ubertip (Tooltip - Extended)
-{
-Shadowy Nathrezim Agents.|n|cfff5962dAbilities:|R Vampiric Attack, Dark Regeneration, Resistant Skin, Permanent Invisibility |n|cfff5962dCan learn:|R Charm, Take Flight|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land units.|r
 }
 
 STRING 17734
@@ -122248,7 +122308,7 @@ S
 }
 
 STRING 20394
-// Upgrades: Rosp (Spiked Barricades,Improved Spiked Barricades,Advanced Spiked Barricades), Hotkey (Hotkey)
+// Abilities: A136 (Corruption), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -122902,7 +122962,7 @@ Q
 }
 
 STRING 20503
-// Upgrades: R08H (Iron Plating,Steel Plating,Mithril Plating), EditorSuffix (Editor Suffix)
+// Upgrades: R040 (Magic Sentry), EditorSuffix (Editor Suffix)
 {
 (legion)
 }
@@ -122983,12 +123043,6 @@ STRING 20516
 // Abilities: A12U (Salvation), Unhotkey (Hotkey - Turn Off)
 {
 E
-}
-
-STRING 20517
-// Units: o04P (Nathrezim Infiltrator), Casterupgradetip (Caster Upgrade Tips)
-{
-- Dark Regeneration,- Dark Regeneration|n- Charm,- Dark Regeneration|n- Charm|n- Take Flight
 }
 
 STRING 20518
@@ -123079,12 +123133,6 @@ STRING 20532
 // Upgrades: R042 (Shaman Adept Training,Shaman Master Training), Ubertip (Tooltip - Extended)
 {
 Increases Nathrezims' mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Charm.
-}
-
-STRING 20533
-// Upgrades: R042 (Shaman Adept Training,Shaman Master Training), Ubertip (Tooltip - Extended)
-{
-Increases Nathrezims' mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Take Flight.
 }
 
 STRING 20534
@@ -124007,7 +124055,7 @@ E
 }
 
 STRING 20687
-// Upgrades: Rhlh (Improved Lumber Harvesting,Advanced Lumber Harvesting), Hotkey (Hotkey)
+// Abilities: A136 (Corruption), Hotkey (Hotkey - Normal)
 {
 E
 }
@@ -124019,7 +124067,7 @@ E
 }
 
 STRING 20689
-// Upgrades: Renb (Nature's Blessing), Hotkey (Hotkey)
+// Upgrades: Rhlh (Improved Lumber Harvesting,Advanced Lumber Harvesting), Hotkey (Hotkey)
 {
 E
 }
@@ -124571,7 +124619,7 @@ Towers of the Sunfury.|n|n|cffffcc00Attacks land and air units.|r
 }
 
 STRING 20781
-// Upgrades: R06K (Defend), Hotkey (Hotkey)
+// Upgrades: Renb (Nature's Blessing), Hotkey (Hotkey)
 {
 E
 }
@@ -124661,7 +124709,7 @@ Q
 }
 
 STRING 20796
-// Upgrades: R06G (Defend), Hotkey (Hotkey)
+// Upgrades: R06K (Defend), Hotkey (Hotkey)
 {
 E
 }
@@ -124757,7 +124805,7 @@ Mystical hero, adept at dealing magical damage.|n|cfff5962dAbilities:|r Mana Shi
 }
 
 STRING 20812
-// Upgrades: R06F (Defend), Hotkey (Hotkey)
+// Upgrades: R06G (Defend), Hotkey (Hotkey)
 {
 E
 }
@@ -125027,19 +125075,19 @@ F
 }
 
 STRING 20857
-// Upgrades: R064 (Nature's Blessing), Hotkey (Hotkey)
+// Upgrades: R06F (Defend), Hotkey (Hotkey)
 {
 E
 }
 
 STRING 20858
-// Upgrades: R03M (Defend), Hotkey (Hotkey)
+// Upgrades: R064 (Nature's Blessing), Hotkey (Hotkey)
 {
 E
 }
 
 STRING 20859
-// Upgrades: R02P (Backpack), Hotkey (Hotkey)
+// Upgrades: R03M (Defend), Hotkey (Hotkey)
 {
 E
 }
@@ -125057,7 +125105,7 @@ W
 }
 
 STRING 20862
-// Upgrades: R03O (Animal War Training), Hotkey (Hotkey)
+// Upgrades: R02P (Backpack), Hotkey (Hotkey)
 {
 E
 }
@@ -125411,7 +125459,7 @@ Powerful Worgen Shaman in service of Gilneas.|n|cfff5962dAbilities:|R Wolf Compa
 }
 
 STRING 20921
-// Upgrades: Ropg (Pillage), Hotkey (Hotkey)
+// Upgrades: Rosp (Spiked Barricades,Improved Spiked Barricades,Advanced Spiked Barricades), Hotkey (Hotkey)
 {
 R
 }
@@ -125543,7 +125591,7 @@ Elite fighters of the Legion.|n|cfff5962dAbilities: |RWind Walk, Mirror Image, C
 }
 
 STRING 20943
-// Upgrades: Rews (Well Spring), Hotkey (Hotkey)
+// Upgrades: Ropg (Pillage), Hotkey (Hotkey)
 {
 R
 }
@@ -126047,7 +126095,7 @@ Increases Flamekeeper's mana capacity, attack damage and gives them the ability 
 }
 
 STRING 21027
-// Upgrades: R097 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R03O (Animal War Training), Hotkey (Hotkey)
 {
 E
 }
@@ -126143,7 +126191,7 @@ This unit is in a Blessed Ground. It's health is rapidly replenishing.
 }
 
 STRING 21043
-// Upgrades: R00N (Storm Hammers), Hotkey (Hotkey)
+// Upgrades: Rews (Well Spring), Hotkey (Hotkey)
 {
 R
 }
@@ -126197,7 +126245,7 @@ Increases Astromancer 's mana capacity, attack damage and gives them the ability
 }
 
 STRING 21052
-// Upgrades: R086 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R097 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 E
 }
