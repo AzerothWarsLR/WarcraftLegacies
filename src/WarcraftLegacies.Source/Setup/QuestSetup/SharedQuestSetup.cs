@@ -58,7 +58,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
     {
       var waygateOne = preplacedUnitSystem.GetUnit(Constants.UNIT_N07F_EMERALD_PORTAL_DRAGON_PORTALS, Regions.FeralasEmeraldPortal.Center).Show(false);
       var waygateTwo = preplacedUnitSystem.GetUnit(Constants.UNIT_N07F_EMERALD_PORTAL_DRAGON_PORTALS, Regions.AshenvaleEmeraldPortal.Center).Show(false);
-      var dragonEk = preplacedUnitSystem.GetUnit(Constants.UNIT_N05O_LETHON);
+      var dragonEk = preplacedUnitSystem.GetUnit(Constants.UNIT_N04X_YSONDRE);
       var dragonKalimdor = preplacedUnitSystem.GetUnit(Constants.UNIT_N04S_TAERAR);
       return new QuestDragonsOfNightmare(dragonKalimdor, dragonEk, "Feralas", "Ashenvale", waygateOne, waygateTwo, Regions.AshenvaleEmeraldPortal, Regions.FeralasEmeraldPortal, "BTNWarpPortalGreen");
     }

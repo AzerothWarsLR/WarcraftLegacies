@@ -311,8 +311,6 @@ gg_rct_MaelstromChannel = nil
 gg_rct_FeathermoonCreeps = nil
 gg_rct_AuberdineUnlock = nil
 gg_rct_KaliRock9 = nil
-gg_rct_HinterEmeraldPortal = nil
-gg_rct_DuskwoodEmeraldPortal = nil
 gg_rct_FeralasEmeraldPortal = nil
 gg_rct_AshenvaleEmeraldPortal = nil
 gg_rct_KaliRock10 = nil
@@ -5119,8 +5117,6 @@ u = BlzCreateUnitWithSkin(p, FourCC("nsc2"), 1725.7, 7090.0, 359.659, FourCC("ns
 SetUnitAcquireRange(u, 200.0)
 u = BlzCreateUnitWithSkin(p, FourCC("nsgh"), 1027.2, 8125.6, 256.572, FourCC("nsgh"))
 SetUnitAcquireRange(u, 200.0)
-u = BlzCreateUnitWithSkin(p, FourCC("n054"), 17543.0, 6501.6, 59.500, FourCC("n054"))
-SetUnitAcquireRange(u, 200.0)
 u = BlzCreateUnitWithSkin(p, FourCC("nwlt"), -19315.2, -6544.1, 216.641, FourCC("nwlt"))
 SetUnitAcquireRange(u, 200.0)
 u = BlzCreateUnitWithSkin(p, FourCC("ntrh"), 18247.3, -15732.1, 216.077, FourCC("ntrh"))
@@ -5195,8 +5191,6 @@ u = BlzCreateUnitWithSkin(p, FourCC("otbk"), 12910.1, -19802.2, 323.722, FourCC(
 SetUnitAcquireRange(u, 200.0)
 u = BlzCreateUnitWithSkin(p, FourCC("nthl"), -9889.5, -2334.4, 118.750, FourCC("nthl"))
 SetUnitState(u, UNIT_STATE_MANA, 400)
-SetUnitAcquireRange(u, 200.0)
-u = BlzCreateUnitWithSkin(p, FourCC("n05O"), 11195.4, -15801.2, 293.680, FourCC("n05O"))
 SetUnitAcquireRange(u, 200.0)
 u = BlzCreateUnitWithSkin(p, FourCC("nenc"), -15247.0, -12262.3, 266.000, FourCC("nenc"))
 SetUnitAcquireRange(u, 200.0)
@@ -6232,7 +6226,6 @@ u = BlzCreateUnitWithSkin(p, FourCC("ndfl"), 4864.0, -31488.0, 270.000, FourCC("
 SetUnitState(u, UNIT_STATE_MANA, 1000)
 u = BlzCreateUnitWithSkin(p, FourCC("o028"), -8000.0, 320.0, 270.000, FourCC("o028"))
 u = BlzCreateUnitWithSkin(p, FourCC("h05P"), 10240.0, 4864.0, 270.000, FourCC("h05P"))
-u = BlzCreateUnitWithSkin(p, FourCC("n07F"), 11135.4, -15639.6, 270.000, FourCC("n07F"))
 u = BlzCreateUnitWithSkin(p, FourCC("h034"), 17696.0, 21856.0, 270.000, FourCC("h034"))
 u = BlzCreateUnitWithSkin(p, FourCC("n06Z"), -9728.0, -704.0, 270.000, FourCC("n06Z"))
 u = BlzCreateUnitWithSkin(p, FourCC("o028"), -9344.0, -1024.0, 270.000, FourCC("o028"))
@@ -6529,7 +6522,6 @@ u = BlzCreateUnitWithSkin(p, FourCC("h07V"), 1472.0, -5696.0, 270.000, FourCC("h
 u = BlzCreateUnitWithSkin(p, FourCC("nct2"), -12512.0, -4256.0, 270.000, FourCC("nct2"))
 u = BlzCreateUnitWithSkin(p, FourCC("nct1"), -13024.0, -4256.0, 270.000, FourCC("nct1"))
 u = BlzCreateUnitWithSkin(p, FourCC("u02L"), -3872.0, 24096.0, 270.000, FourCC("u02L"))
-u = BlzCreateUnitWithSkin(p, FourCC("n07F"), 17535.4, 6696.4, 270.000, FourCC("n07F"))
 u = BlzCreateUnitWithSkin(p, FourCC("h05E"), 17856.0, -17920.0, 156.286, FourCC("h05E"))
 SetUnitState(u, UNIT_STATE_MANA, 200)
 u = BlzCreateUnitWithSkin(p, FourCC("h06F"), 11808.0, -13728.0, 270.000, FourCC("h06F"))
@@ -8473,8 +8465,6 @@ gg_rct_MaelstromChannel = Rect(-672.0, -1504.0, 96.0, -960.0)
 gg_rct_FeathermoonCreeps = Rect(-22464.0, -12128.0, -18368.0, -7584.0)
 gg_rct_AuberdineUnlock = Rect(-18784.0, 8608.0, -14784.0, 11104.0)
 gg_rct_KaliRock9 = Rect(-14848.0, -11808.0, -13632.0, -10432.0)
-gg_rct_HinterEmeraldPortal = Rect(17344.0, 6368.0, 17792.0, 6624.0)
-gg_rct_DuskwoodEmeraldPortal = Rect(11008.0, -15968.0, 11456.0, -15712.0)
 gg_rct_FeralasEmeraldPortal = Rect(-18144.0, -6464.0, -17696.0, -6208.0)
 gg_rct_AshenvaleEmeraldPortal = Rect(-8576.0, 8992.0, -8128.0, 9280.0)
 gg_rct_KaliRock10 = Rect(-11296.0, 2688.0, -10048.0, 3424.0)
