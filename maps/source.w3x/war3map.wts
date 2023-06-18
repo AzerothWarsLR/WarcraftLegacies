@@ -7952,6 +7952,12 @@ STRING 1325
 Z
 }
 
+STRING 1326
+// Abilities: A029 (Summon Water Elemental), Ubertip (Tooltip - Normal - Extended)
+{
+Summons a water elemental. Has <h00U,realHP> hit points and deals <h00U,mindmg1> - <h00U,maxdmg1> damage. |nLasts <A029,Dur1> seconds. Elemental are affected by Power Infusion upgrades. |n|n|cffffcc00Attacks land and air units.|r
+}
+
 STRING 1327
 // Units: Haah (The Fallen Guardian), Propernames (Proper Names)
 {
@@ -18971,12 +18977,6 @@ STRING 3163
 // Abilities: A017 (Take Vengeance), Ubertip (Tooltip - Normal - Extended)
 {
 If Maiev would die, she instead regains 1200 health and becomes an Avatar of Vengeance for 20 seconds, increasing her attack damage by 40. If Maiev attacks 9 times in this form, she revives instantly. Otherwise, she dies.
-}
-
-STRING 3164
-// Abilities: A029 (Summon Water Elemental), Ubertip (Tooltip - Normal - Extended)
-{
-Summons a water elemental. Has <h00U,realHP> hit points and deals <h00U,mindmg1> - <h00U,maxdmg1> damage. |nLasts <A029,Dur1> seconds. |n|n|cffffcc00Attacks land and air units.|r
 }
 
 STRING 3165
@@ -39496,6 +39496,12 @@ STRING 6584
 // Abilities: A11I (Water Elemental), Ubertip (Tooltip - Normal - Extended)
 {
 Summons a water elemental to attack the Wizard's enemies. Has 600 hit points and lasts 90 seconds. |n|n|cffffcc00Attacks land and air units.|r
+}
+
+STRING 6585
+// Abilities: A0ZU (Summon Mud Golem), Ubertip (Tooltip - Normal - Extended)
+{
+Summons 1 Mud golem with spell immunity for 30 seconds. Mud Golem are affected by Power Infusion upgrades. |n|n|cffffcc00Attacks land units.|r
 }
 
 STRING 6586
@@ -89219,6 +89225,12 @@ STRING 14867
 E
 }
 
+STRING 14868
+// Abilities: A0B1 (Spell Absorption), EditorSuffix (Editor Suffix)
+{
+(dalaran golem)
+}
+
 STRING 14869
 // Upgrades: R014 (Priest Adept Training,Priest Master Training), Ubertip (Tooltip - Extended)
 {
@@ -106349,10 +106361,22 @@ STRING 17730
 Basic worker. Can summon and restore structures.|n|n|cffffcc00Attacks land units.|r
 }
 
+STRING 17731
+// Abilities: A0B1 (Spell Absorption), Name (Name)
+{
+Spell Absorption
+}
+
 STRING 17732
 // Units: u006 (Summoning Circle), Ubertip (Tooltip - Extended)
 {
 Summoning site for the Void demons of the Burning Legion.|r|n|cff99b4d1Can only build 2 before the Legion has been summoned. 12 post-summon.|n|cfff5962dTrains:|R Eredar Summoner, Succubus|n|cfff5962dResearches:|R Eredar Summoner Training, Succubus Training
+}
+
+STRING 17733
+// Abilities: A0B1 (Spell Absorption), Tip (Tooltip - Normal)
+{
+Spell Absorption
 }
 
 STRING 17734
@@ -106491,6 +106515,12 @@ STRING 17756
 // Units: n0C5 (Temple Protector), Name (Name)
 {
 Temple Protector
+}
+
+STRING 17757
+// Abilities: A0B1 (Spell Absorption), Ubertip (Tooltip - Normal - Extended)
+{
+Reduces the damage taken from Magic attacks and Spells by 100%.
 }
 
 STRING 17758
@@ -114225,34 +114255,10 @@ STRING 19045
 Small Whelps of the Dragonmaw Clan.|n|r|n|cffffcc00Attacks land and air units.|r
 }
 
-STRING 19046
-// Abilities: A0B1 (Spell Resistance), EditorSuffix (Editor Suffix)
-{
-(Battle Brothers)
-}
-
 STRING 19047
 // Abilities: A0OJ (Mass Unholy Armor), Tip (Tooltip - Normal)
 {
 Mass Unholy Armor - [|cffffcc00Level 1|r]
-}
-
-STRING 19048
-// Abilities: A0B1 (Spell Resistance), Name (Name)
-{
-Spell Resistance
-}
-
-STRING 19049
-// Abilities: A0B1 (Spell Resistance), Tip (Tooltip - Normal)
-{
-Spell Resistance
-}
-
-STRING 19050
-// Abilities: A0B1 (Spell Resistance), Ubertip (Tooltip - Normal - Extended)
-{
-Reduces the damage taken from Magic attacks and Spells by 70%.
 }
 
 STRING 19051
@@ -124376,12 +124382,6 @@ STRING 20739
 // Abilities: A0ZU (Summon Mud Golem), Tip (Tooltip - Normal)
 {
 Summon Mud Golem
-}
-
-STRING 20740
-// Abilities: A0ZU (Summon Mud Golem), Ubertip (Tooltip - Normal - Extended)
-{
-Summons 1 Mud golem with spell immunity for 30 seconds. |n|n|cffffcc00Attacks land units.|r
 }
 
 STRING 20741

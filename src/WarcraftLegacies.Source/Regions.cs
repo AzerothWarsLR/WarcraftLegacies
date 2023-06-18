@@ -253,7 +253,7 @@ public static class Regions
 	public static Rectangle TyrsFall { get; set; } = new Rectangle(5120f, 9056f, 5408f, 9344f);
 	public static Rectangle DuskwoodCrypt { get; set; } = new Rectangle(9376f, -16032f, 9728f, -15616f);
 	public static Rectangle OutlandToArgus { get; set; } = new Rectangle(22848f, -28224f, 23360f, -27808f);
-	public static Rectangle ClosePortal { get; set; } = new Rectangle(16512f, -19456f, 16800f, -19200f);
+	public static Rectangle ClosePortal { get; set; } = new Rectangle(16736f, -20256f, 17024f, -20000f);
 	public static Rectangle GarithosCrusadeSpawn { get; set; } = new Rectangle(19168f, 7520f, 19776f, 8160f);
 	public static Rectangle GilneasUnlock6 { get; set; } = new Rectangle(6272f, -928f, 8672f, 1312f);
 	public static Rectangle GilneasUnlock1 { get; set; } = new Rectangle(8288f, -2368f, 9824f, -832f);
@@ -355,5 +355,6 @@ public static class Regions
 	public static Rectangle IslandBlocker6 { get; set; } = new Rectangle(-2912f, -3904f, -1792f, -2816f);
 	public static Rectangle DalaStartPos { get; set; } = new Rectangle(8768f, 2112f, 10464f, 3488f);
 	public static Rectangle CenarionHoldUnlock { get; set; } = new Rectangle(-18272f, -14400f, -15680f, -12768f);
+	public static Rectangle WindrunnerSpireUnlock { get; set; } = new Rectangle(16416f, 13888f, 16640f, 14176f);
 
 }

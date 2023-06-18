@@ -14,6 +14,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
         preplacedUnitSystem.GetUnit(Constants.UNIT_H00D_ELVEN_RUNESTONE_QUEL_THALAS_TOWER, new Point(20477, 17447)),
         preplacedUnitSystem, allLegendSetup.Quelthalas.Silvermoon, allLegendSetup.Quelthalas.Sunwell));
       quelthalas.StartingQuest = newQuest;
+      quelthalas.AddQuest(new QuestUnlockSpire(Regions.WindrunnerSpireUnlock, allLegendSetup.Quelthalas.Sylvanas));
       quelthalas.AddQuest(new QuestTheBloodElves(Regions.BloodElfSecondChanceSpawn,
         allLegendSetup.Neutral.DraktharonKeep, allLegendSetup.Quelthalas.Sunwell, allLegendSetup.Quelthalas.Rommath));
       quelthalas.AddQuest(new QuestQueldanil(Regions.QuelDanil_Lodge, allLegendSetup.Neutral.Caerdarrow));

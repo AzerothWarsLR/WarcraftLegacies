@@ -536,6 +536,7 @@ gg_snd_DoorCloseRemix = nil
 gg_snd_DoorOpenRemix = nil
 gg_snd_NuclearLaunchDetected = nil
 gg_snd_IllidansTheme = ""
+gg_rct_WindrunnerSpireUnlock = nil
 function InitGlobals()
 end
 
@@ -2415,7 +2416,6 @@ u = BlzCreateUnitWithSkin(p, FourCC("negt"), 18368.0, 12736.0, 270.000, FourCC("
 u = BlzCreateUnitWithSkin(p, FourCC("h077"), 16736.0, 16416.0, 270.000, FourCC("h077"))
 u = BlzCreateUnitWithSkin(p, FourCC("nef0"), 16640.0, 15808.0, 270.000, FourCC("nef0"))
 u = BlzCreateUnitWithSkin(p, FourCC("nefm"), 19776.0, 16448.0, 81.951, FourCC("nefm"))
-u = BlzCreateUnitWithSkin(p, FourCC("h0C2"), 16512.0, 14016.0, 270.000, FourCC("h0C2"))
 u = BlzCreateUnitWithSkin(p, FourCC("nef5"), 16832.0, 13888.0, 157.916, FourCC("nef5"))
 u = BlzCreateUnitWithSkin(p, FourCC("n003"), 20736.0, 17152.0, 270.000, FourCC("n003"))
 end
@@ -7334,6 +7334,7 @@ u = BlzCreateUnitWithSkin(p, FourCC("ngol"), -8576.0, -12864.0, 270.000, FourCC(
 SetResourceAmount(u, 800)
 u = BlzCreateUnitWithSkin(p, FourCC("ngol"), 16320.0, 19904.0, 270.000, FourCC("ngol"))
 SetResourceAmount(u, 1000)
+u = BlzCreateUnitWithSkin(p, FourCC("h0C2"), 16512.0, 14016.0, 270.000, FourCC("h0C2"))
 u = BlzCreateUnitWithSkin(p, FourCC("nshp"), -10432.0, -3904.0, 270.000, FourCC("nshp"))
 u = BlzCreateUnitWithSkin(p, FourCC("nshp"), -7872.0, -13376.0, 270.000, FourCC("nshp"))
 u = BlzCreateUnitWithSkin(p, FourCC("ncbf"), 13824.0, 11904.0, 45.497, FourCC("ncbf"))
@@ -8399,7 +8400,7 @@ gg_rct_AshbringerForge = Rect(10240.0, -5440.0, 10368.0, -5312.0)
 gg_rct_TyrsFall = Rect(5120.0, 9056.0, 5408.0, 9344.0)
 gg_rct_DuskwoodCrypt = Rect(9376.0, -16032.0, 9728.0, -15616.0)
 gg_rct_OutlandToArgus = Rect(22848.0, -28224.0, 23360.0, -27808.0)
-gg_rct_ClosePortal = Rect(16512.0, -19456.0, 16800.0, -19200.0)
+gg_rct_ClosePortal = Rect(16736.0, -20256.0, 17024.0, -20000.0)
 gg_rct_GarithosCrusadeSpawn = Rect(19168.0, 7520.0, 19776.0, 8160.0)
 gg_rct_GilneasUnlock6 = Rect(6272.0, -928.0, 8672.0, 1312.0)
 gg_rct_GilneasUnlock1 = Rect(8288.0, -2368.0, 9824.0, -832.0)
@@ -8501,6 +8502,7 @@ gg_rct_ThunderbluffFlight = Rect(-14656.0, -4128.0, -14496.0, -3968.0)
 gg_rct_IslandBlocker6 = Rect(-2912.0, -3904.0, -1792.0, -2816.0)
 gg_rct_DalaStartPos = Rect(8768.0, 2112.0, 10464.0, 3488.0)
 gg_rct_CenarionHoldUnlock = Rect(-18272.0, -14400.0, -15680.0, -12768.0)
+gg_rct_WindrunnerSpireUnlock = Rect(16416.0, 13888.0, 16640.0, 14176.0)
 end
 
 function InitUpgrades_Player0()
