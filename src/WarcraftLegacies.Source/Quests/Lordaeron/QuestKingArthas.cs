@@ -17,7 +17,6 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
     private readonly unit _terenas;
     private readonly Artifact _crownOfLordaeron;
     private readonly LegendaryHero _arthas;
-    private const int CompletionExperienceBonus = 2000;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestKingArthas"/> class.
@@ -43,15 +42,14 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
-      $"Arthas gains {CompletionExperienceBonus} experience and the Crown of Lordaeron, and he can no longer permanently die";
+      "Arthas becomes the King of Lordaeron, gains the Crown of Lordaeron, and he can no longer permanently die";
 
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
     {
+      _arthas.UnitType = Constants.UNIT_HARF_HIGH_KING_LORDAERON_HIGH_KING;
       _arthas.ClearUnitDependencies();
       _arthas.Unit?
-        .SetName("King of Lordaeron")
-        .AddExperience(CompletionExperienceBonus)
         .AddItemSafe(_crownOfLordaeron.Item);
       _terenas.SetName("King Emeritus Terenas Menethil");
     }

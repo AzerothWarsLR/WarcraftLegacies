@@ -18979,6 +18979,12 @@ STRING 3163
 If Maiev would die, she instead regains 1200 health and becomes an Avatar of Vengeance for 20 seconds, increasing her attack damage by 40. If Maiev attacks 9 times in this form, she revives instantly. Otherwise, she dies.
 }
 
+STRING 3164
+// Abilities: A04M (The Power of Frostmourne), EditorSuffix (Editor Suffix)
+{
+(Red - Lich King, DK Arthas)
+}
+
 STRING 3165
 // Abilities: A0AT (Summon Minion), Name (Name)
 {
@@ -71782,12 +71788,6 @@ STRING 11960
 Blasts enemies with a large explosion dealing 460 damage with 160 splash damage.
 }
 
-STRING 11961
-// Abilities: A04M (The Power of Frostmourne), EditorSuffix (Editor Suffix)
-{
-(Red - Lich King, DK Arthas, Purple - King Arthas)
-}
-
 STRING 11962
 // Abilities: A04M (The Power of Frostmourne), Name (Name)
 {
@@ -114255,10 +114255,34 @@ STRING 19045
 Small Whelps of the Dragonmaw Clan.|n|r|n|cffffcc00Attacks land and air units.|r
 }
 
+STRING 19046
+// Abilities: A137 (King of Lordaeron sword), EditorSuffix (Editor Suffix)
+{
+(King Arthas)
+}
+
 STRING 19047
 // Abilities: A0OJ (Mass Unholy Armor), Tip (Tooltip - Normal)
 {
 Mass Unholy Armor - [|cffffcc00Level 1|r]
+}
+
+STRING 19048
+// Abilities: A137 (King of Lordaeron sword), Name (Name)
+{
+King of Lordaeron sword
+}
+
+STRING 19049
+// Abilities: A137 (King of Lordaeron sword), Researchhotkey (Hotkey - Learn)
+{
+T
+}
+
+STRING 19050
+// Abilities: A137 (King of Lordaeron sword), Researchtip (Tooltip - Learn)
+{
+Learn |cffffcc00T|rhe Power of Frostmourne - [|cffffcc00Level %d|r]
 }
 
 STRING 19051
@@ -123057,6 +123081,12 @@ STRING 20516
 E
 }
 
+STRING 20517
+// Abilities: A137 (King of Lordaeron sword), Researchubertip (Tooltip - Learn - Extended)
+{
+Frostmourne gives the power for Arthas to hit multiple enemies with one swing of his sword .|n|n|cffffcc00Level 1|r - 25% of damage is splash. |n|cffffcc00Level 2|r - 40% of damage is splash. |n|cffffcc00Level 3|r - 55% of damage is splash.
+}
+
 STRING 20518
 // Abilities: A0QQ (Aimed Shot), EditorSuffix (Editor Suffix)
 {
@@ -123145,6 +123175,12 @@ STRING 20532
 // Upgrades: R042 (Shaman Adept Training,Shaman Master Training), Ubertip (Tooltip - Extended)
 {
 Increases Nathrezims' mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Charm.
+}
+
+STRING 20533
+// Abilities: A137 (King of Lordaeron sword), Tip (Tooltip - Normal)
+{
+King of Lordaeron sword
 }
 
 STRING 20534
@@ -124382,6 +124418,12 @@ STRING 20739
 // Abilities: A0ZU (Summon Mud Golem), Tip (Tooltip - Normal)
 {
 Summon Mud Golem
+}
+
+STRING 20740
+// Abilities: A137 (King of Lordaeron sword), Ubertip (Tooltip - Normal - Extended)
+{
+A specially forged sword by his father gives Arthas the power to do 40% of his damage to enemies near the primary attacked unit.
 }
 
 STRING 20741

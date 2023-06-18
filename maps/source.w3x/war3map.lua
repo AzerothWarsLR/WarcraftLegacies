@@ -348,6 +348,8 @@ gg_rct_ThunderbluffFlight = nil
 gg_rct_IslandBlocker6 = nil
 gg_rct_DalaStartPos = nil
 gg_rct_CenarionHoldUnlock = nil
+gg_rct_WindrunnerSpireUnlock = nil
+gg_rct_ArthasRandomPoint = nil
 gg_snd_ArcaneObservatoryWhat1 = nil
 gg_snd_ArrangedTeamInvitation = nil
 gg_snd_ClanInvitation = nil
@@ -536,7 +538,6 @@ gg_snd_DoorCloseRemix = nil
 gg_snd_DoorOpenRemix = nil
 gg_snd_NuclearLaunchDetected = nil
 gg_snd_IllidansTheme = ""
-gg_rct_WindrunnerSpireUnlock = nil
 function InitGlobals()
 end
 
@@ -8503,6 +8504,7 @@ gg_rct_IslandBlocker6 = Rect(-2912.0, -3904.0, -1792.0, -2816.0)
 gg_rct_DalaStartPos = Rect(8768.0, 2112.0, 10464.0, 3488.0)
 gg_rct_CenarionHoldUnlock = Rect(-18272.0, -14400.0, -15680.0, -12768.0)
 gg_rct_WindrunnerSpireUnlock = Rect(16416.0, 13888.0, 16640.0, 14176.0)
+gg_rct_ArthasRandomPoint = Rect(5664.0, 3520.0, 22304.0, 10048.0)
 end
 
 function InitUpgrades_Player0()
