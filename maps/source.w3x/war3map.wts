@@ -4209,6 +4209,12 @@ STRING 702
 Initiate,Adept,Master
 }
 
+STRING 703
+// Units: nhym (Hydromancer), Casterupgradetip (Caster Upgrade Tips)
+{
+- Purge,- Purge|n- Summon Water Elemental,- Purge|n- Summon Water Elemental|n- Frost Cell,- Purge|n- Summon Water Elemental|n- Frost Celll|n- Freezing Shots
+}
+
 STRING 704
 // Units: nhym (Hydromancer), EditorSuffix (Name - Editor Suffix)
 {
@@ -4219,6 +4225,13 @@ STRING 705
 // Units: nchr (Fel Raider), Hotkey (Hotkey)
 {
 Q
+}
+
+STRING 706
+// Units: nhym (Hydromancer), Ubertip (Tooltip - Extended)
+{
+Adept mage of the frost arcanum.|n|cfff5962dAbilities:|R Purge|n|cfff5962dCan Learn:|R Summon Water Elemental, Frost Cell, Freezing Shots|n|n|cffffcc00Attacks land and air units.|R
+
 }
 
 STRING 707
@@ -65908,6 +65921,12 @@ STRING 10984
 Units near Marshal take up defensive formations, decreasing nearby enemy units attack damage by 10%.
 }
 
+STRING 10985
+// Abilities: A138 (Freezing Shots), Ubertip (Tooltip - Normal - Extended)
+{
+The freezing shots, imbued with arcane magic, slow the target's movement by 15% and attack speed by 80% for 3 seconds.
+}
+
 STRING 10986
 // Abilities: A0EK (Phoenix), Hotkey (Hotkey - Normal)
 {
@@ -72529,19 +72548,6 @@ STRING 12087
 // Units: nhym (Hydromancer), Casterupgradename (Caster Upgrade Names)
 {
 Initiate,Adept,Master,Grandmaster
-}
-
-STRING 12088
-// Units: nhym (Hydromancer), Casterupgradetip (Caster Upgrade Tips)
-{
-- Purge,- Purge|n- Summon Water Elemental,- Purge|n- Summon Water Elemental|n- Frost Cell,- Purge|n- Summon Water Elemental|n- Frost Celll|n- Bash
-}
-
-STRING 12089
-// Units: nhym (Hydromancer), Ubertip (Tooltip - Extended)
-{
-Adept mage of the frost arcanum.|n|cfff5962dAbilities:|R Purge|n|cfff5962dCan Learn:|R Summon Water Elemental, Frost Cell, Bash|n|n|cffffcc00Attacks land and air units.|R
-
 }
 
 STRING 12090
@@ -86380,6 +86386,12 @@ STRING 14395
 Engulfs an enemy in searing flame, dealing 75 initial damage, and 15 damage every <ACss,Cast1> seconds for <ACss,Dur1> seconds. The fire slows attack rate and movement speed by 50%. Lasts 12(3) seconds.
 }
 
+STRING 14396
+// Abilities: A138 (Freezing Shots), Name (Name)
+{
+Freezing Shots
+}
+
 STRING 14397
 // Upgrades: R031 (Defend), EditorSuffix (Editor Suffix)
 {
@@ -90129,6 +90141,12 @@ STRING 15021
 // Upgrades: R00E (Sorceress Adept Training,Sorceress Master Training), Tip (Tooltip)
 {
 Research Hydromancer Master Training
+}
+
+STRING 15022
+// Abilities: A138 (Freezing Shots), Tip (Tooltip - Normal)
+{
+Freezing Shots
 }
 
 STRING 15023
@@ -99520,6 +99538,12 @@ STRING 16594
 (goblin)
 }
 
+STRING 16595
+// Upgrades: Rews (Well Spring), Hotkey (Hotkey)
+{
+R
+}
+
 STRING 16596
 // Units: o01M (Engineer's Guild), Name (Name)
 {
@@ -103718,6 +103742,12 @@ STRING 17295
 // Abilities: A06E (Avatar), Tip (Tooltip - Normal)
 {
 Avatar - [|cffffcc00Level 1|r]
+}
+
+STRING 17296
+// Upgrades: R00N (Storm Hammers), Hotkey (Hotkey)
+{
+R
 }
 
 STRING 17297
@@ -110412,6 +110442,12 @@ STRING 18411
 // Abilities: A0MJ (Parasite), Unubertip (Tooltip - Turn Off - Extended)
 {
 |cffc3dbffRight-click to deactivate auto-casting.|r
+}
+
+STRING 18412
+// Upgrades: R00E (Sorceress Adept Training,Sorceress Master Training), Ubertip (Tooltip - Extended)
+{
+Increases Hydromancers' mana capacity, mana regeneration rate, attack damage and gives them the ability Freezing Shots.
 }
 
 STRING 18413
@@ -126179,7 +126215,7 @@ This unit is in a Blessed Ground. It's health is rapidly replenishing.
 }
 
 STRING 21043
-// Upgrades: Rosp (Spiked Barricades,Improved Spiked Barricades,Advanced Spiked Barricades), Hotkey (Hotkey)
+// Abilities: A138 (Freezing Shots), Hotkey (Hotkey - Normal)
 {
 R
 }
@@ -126407,15 +126443,9 @@ Initiate, Adept, Master, Grandmaster
 }
 
 STRING 21081
-// Abilities: A138 (Bash), EditorSuffix (Editor Suffix)
+// Abilities: A138 (Freezing Shots), EditorSuffix (Editor Suffix)
 {
 (Hydromancer)
-}
-
-STRING 21082
-// Abilities: A138 (Bash), Ubertip (Tooltip - Normal - Extended)
-{
-Gives a 10% chance that an attack will do 20 bonus damage and stun a non-hero opponent for 2 seconds.
 }
 
 STRING 21083
@@ -126425,19 +126455,19 @@ STRING 21083
 }
 
 STRING 21084
-// Upgrades: Rosp (Spiked Barricades,Improved Spiked Barricades,Advanced Spiked Barricades), Hotkey (Hotkey)
+// Abilities: A138 (Freezing Shots), Unhotkey (Hotkey - Turn Off)
 {
 R
 }
 
 STRING 21085
-// Upgrades: Ropg (Pillage), Hotkey (Hotkey)
+// Upgrades: Rosp (Spiked Barricades,Improved Spiked Barricades,Advanced Spiked Barricades), Hotkey (Hotkey)
 {
 R
 }
 
 STRING 21086
-// Upgrades: Rews (Well Spring), Hotkey (Hotkey)
+// Upgrades: Rosp (Spiked Barricades,Improved Spiked Barricades,Advanced Spiked Barricades), Hotkey (Hotkey)
 {
 R
 }
@@ -126479,7 +126509,7 @@ Increases Arcanists' mana capacity, mana regeneration rate, attack damage and gi
 }
 
 STRING 21093
-// Upgrades: R00N (Storm Hammers), Hotkey (Hotkey)
+// Upgrades: Ropg (Pillage), Hotkey (Hotkey)
 {
 R
 }
@@ -126500,12 +126530,6 @@ STRING 21096
 // Upgrades: R00E (Sorceress Adept Training,Sorceress Master Training), Tip (Tooltip)
 {
 Research Hydromancer Grandmaster Training
-}
-
-STRING 21097
-// Upgrades: R00E (Sorceress Adept Training,Sorceress Master Training), Ubertip (Tooltip - Extended)
-{
-Increases Hydromancers' mana capacity, mana regeneration rate, attack damage and gives them the ability Bash.
 }
 
 STRING 21098
