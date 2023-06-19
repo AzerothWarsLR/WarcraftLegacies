@@ -2254,9 +2254,6 @@ function CreateUnitsForPlayer0()
     u = BlzCreateUnitWithSkin(p, FourCC("opeo"), -9082.9, -11070.7, 267.812, FourCC("opeo"))
     u = BlzCreateUnitWithSkin(p, FourCC("opeo"), -8761.7, -10712.7, 104.990, FourCC("opeo"))
     u = BlzCreateUnitWithSkin(p, FourCC("opeo"), -8623.5, -10824.6, 0.828, FourCC("opeo"))
-    u = BlzCreateUnitWithSkin(p, FourCC("Nman"), -16933.3, -25349.5, 264.330, FourCC("Nman"))
-    SetHeroLevel(u, 20, false)
-    u = BlzCreateUnitWithSkin(p, FourCC("n007"), -17285.2, -25382.1, 314.625, FourCC("n007"))
 end
 
 function CreateBuildingsForPlayer1()

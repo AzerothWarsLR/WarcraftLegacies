@@ -1,5 +1,6 @@
 ﻿using MacroTools.Extensions;
 using MacroTools.FactionSystem;
+using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.MetaBased;
 using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
@@ -11,18 +12,19 @@ namespace WarcraftLegacies.Source.Quests.Warsong
 {
   public sealed class QuestBloodpact : QuestData
   {
-
+    private readonly LegendaryHero _mannoroth;
 
     /// <summary>
     /// Initializes a new instance of the class <see cref="QuestBloodpact"/>.
     /// </summary>
-    public QuestBloodpact()
+    public QuestBloodpact(LegendaryHero Mannoroth)
       : base("The Bloodpact",
         "The Warsong is still vulnerable to the tentation of Mannoroth's Blood. If they drink it from the Fountain, they would have a surge of power. Although, Thrall would certainly hurry to save his friend Grom from the corruption.",
         "ReplaceableTextures\\CommandButtons\\BTNBloodFury.blp")
     {
       AddObjective(new ObjectiveResearch(Constants.UPGRADE_R09O_DRINK_THE_BLOOD_OF_MANNOROTH, Constants.UNIT_NBFL_FOUNTAIN_OF_BLOOD_BLOODPACT));
       Global = true;
+      _mannoroth = Mannoroth;
     }
 
     /// <inheritdoc/>
@@ -35,11 +37,16 @@ namespace WarcraftLegacies.Source.Quests.Warsong
     /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)
     {
+      _mannoroth.ForceCreate(completingFaction.Player, Regions.FountainUnlock.Center, 270);
+
       TimerStart(CreateTimer(), 240, false, () =>
       {
         completingFaction.SetObjectLimit(Constants.UPGRADE_R09O_DRINK_THE_BLOOD_OF_MANNOROTH, -1);
         completingFaction.SetObjectLevel(Constants.UPGRADE_R09O_DRINK_THE_BLOOD_OF_MANNOROTH, -1);
         completingFaction.SetObjectLevel(Constants.UPGRADE_R09P_REVERT_BLOODPACT, 1);
+
+        _mannoroth.ForceCreate(Player(PLAYER_NEUTRAL_AGGRESSIVE), Regions.FountainUnlock.Center, 270);
+
       });
     }
   }
