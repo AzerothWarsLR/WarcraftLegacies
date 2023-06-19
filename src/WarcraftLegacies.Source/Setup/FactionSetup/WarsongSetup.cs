@@ -96,6 +96,9 @@ The Night Elves are aware of your presence and are gathering a mighty host again
       WarsongClan.ModAbilityAvailability(Constants.ABILITY_ABTL_BATTLE_STATIONS_FROSTWOLF_WARSONG_BURROW, 1);
       WarsongClan.ModAbilityAvailability(Constants.ABILITY_A0M4_BATTLE_STATIONS_PINK_GREY_ORC_BURROW_BLOODPACT, -1);
 
+      WarsongClan.ModObjectLimit(Constants.UPGRADE_R09O_DRINK_THE_BLOOD_OF_MANNOROTH, 1);
+      WarsongClan.ModObjectLimit(Constants.UPGRADE_R09P_REVERT_BLOODPACT, 1);
+
       WarsongClan.AddGoldMine(preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-8455, -2777)));
 
       FactionManager.Register(WarsongClan);

@@ -17,27 +17,29 @@ namespace WarcraftLegacies.Source.Quests.Warsong
     /// Initializes a new instance of the class <see cref="QuestBloodpact"/>.
     /// </summary>
     public QuestBloodpact()
-      : base("The Dark Portal",
-        "Following the Second War, the archmage Khadgar and his fellow magi sealed the Dark Portal so that it would never again be used to threaten Azeroth. Little did they know that their magicks were only temporary, and that the portal would open again in time.",
+      : base("The Bloodpact",
+        "The Warsong is still vulnerable to the tentation of Mannoroth's Blood. If they drink it from the Fountain, they would have a surge of power. Although, Thrall would certainly hurry to save his friend Grom from the corruption.",
         "ReplaceableTextures\\CommandButtons\\BTNBloodFury.blp")
     {
-      AddObjective(new ObjectiveResearch(Constants.UPGRADE_R09O, Constants.UNIT_NBFL_FOUNTAIN_OF_BLOOD_BLOODPACT));
+      AddObjective(new ObjectiveResearch(Constants.UPGRADE_R09O_DRINK_THE_BLOOD_OF_MANNOROTH, Constants.UNIT_NBFL_FOUNTAIN_OF_BLOOD_BLOODPACT));
       Global = true;
     }
 
     /// <inheritdoc/>
-    protected override string RewardFlavour => "The Warsong has accepted drunk the blood of Mannoroth. It will take Thrall 4 minutes to save Grom and purify the Warsong Clan orcs.";
+    protected override string RewardFlavour => "The Warsong has drunk the blood of Mannoroth. It will take Thrall 4 minutes to save Grom and purify the Warsong Clan orcs.";
 
     /// <inheritdoc />
     protected override string RewardDescription =>
-      "You will gain Mannoroth as a temporary unit, all your orcs except your Kor'kron Elites will gain 200 hit points and chaos damage.";
+      "You will gain Mannoroth as a temporary unit, all your orcs except your Kor'kron Elites will gain 200 hit points and chaos damage. After 4 min, your units will revert to normal and Mannoroth will become hostile.";
 
     /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)
     {
       TimerStart(CreateTimer(), 240, false, () =>
       {
-        
+        completingFaction.SetObjectLimit(Constants.UPGRADE_R09O_DRINK_THE_BLOOD_OF_MANNOROTH, -1);
+        completingFaction.SetObjectLevel(Constants.UPGRADE_R09O_DRINK_THE_BLOOD_OF_MANNOROTH, -1);
+        completingFaction.SetObjectLevel(Constants.UPGRADE_R09P_REVERT_BLOODPACT, 1);
       });
     }
   }

@@ -5146,6 +5146,12 @@ STRING 858
 Tavern Selector
 }
 
+STRING 859
+// Abilities: S00O (Chaos), EditorSuffix (Editor Suffix)
+{
+(revert bloodpact - Grom)
+}
+
 STRING 860
 // Units: nbdm (Blackrock Dragonkin), Hotkey (Hotkey)
 {
@@ -10339,6 +10345,12 @@ STRING 1724
 Healing Totem
 }
 
+STRING 1725
+// Abilities: S00O (Chaos), Name (Name)
+{
+Chaos
+}
+
 STRING 1726
 // Units: o01F (Marauder), Hotkey (Hotkey)
 {
@@ -10355,6 +10367,12 @@ STRING 1728
 // Units: o00S (Chaos Raider), Tip (Tooltip - Basic)
 {
 Train Chaos Raider
+}
+
+STRING 1729
+// Abilities: S00P (Chaos), EditorSuffix (Editor Suffix)
+{
+(revert bloodpact - Grunt)
 }
 
 STRING 1730
@@ -10393,10 +10411,34 @@ STRING 1735
 Shrine of Ula-Tek
 }
 
+STRING 1736
+// Abilities: S00P (Chaos), Name (Name)
+{
+Chaos
+}
+
 STRING 1737
 // Units: o014 (Terrorguard), Hotkey (Hotkey)
 {
 Q
+}
+
+STRING 1738
+// Abilities: S00Q (Chaos), EditorSuffix (Editor Suffix)
+{
+(revert bloodpact - Blademaster)
+}
+
+STRING 1739
+// Abilities: S00Q (Chaos), Name (Name)
+{
+Chaos
+}
+
+STRING 1740
+// Abilities: S00R (Chaos), EditorSuffix (Editor Suffix)
+{
+(revert bloodpact - Raider)
 }
 
 STRING 1741
@@ -14788,6 +14830,24 @@ STRING 2472
 A
 }
 
+STRING 2473
+// Abilities: S00R (Chaos), Name (Name)
+{
+Chaos
+}
+
+STRING 2474
+// Abilities: S00S (Chaos), EditorSuffix (Editor Suffix)
+{
+(revert bloodpact - Warlock)
+}
+
+STRING 2475
+// Abilities: S00S (Chaos), Name (Name)
+{
+Chaos
+}
+
 STRING 2476
 // Units: n03Q (Water Passageway 2), Name (Name)
 {
@@ -14918,6 +14978,12 @@ STRING 2497
 // Units: n03G (Violet Tower), Name (Name)
 {
 Violet Tower
+}
+
+STRING 2498
+// Abilities: S00U (Chaos), EditorSuffix (Editor Suffix)
+{
+(revert bloodpact - Kodo)
 }
 
 STRING 2499
@@ -39010,6 +39076,12 @@ STRING 6513
 // Abilities: S00H (Thunder Clap), Tip (Tooltip - Normal)
 {
 Thunder Clap
+}
+
+STRING 6514
+// Abilities: S00U (Chaos), Name (Name)
+{
+Chaos
 }
 
 STRING 6515
@@ -124570,6 +124642,12 @@ STRING 20775
 E
 }
 
+STRING 20776
+// Upgrades: R09P (Defend), Name (Name)
+{
+Revert Bloodpact
+}
+
 STRING 20777
 // Upgrades: R09L (Shaman Adept Training,Shaman Master Training), Hotkey (Hotkey)
 {
@@ -126662,5 +126740,17 @@ STRING 21125
 // Upgrades: R09O (Defend), Ubertip (Tooltip - Extended)
 {
 Drink the Blood of Mannoroth
+}
+
+STRING 21126
+// Upgrades: R09P (Defend), Tip (Tooltip)
+{
+Revert Bloodpact
+}
+
+STRING 21127
+// Upgrades: R09P (Defend), Ubertip (Tooltip - Extended)
+{
+Revert Bloodpact
 }
 
