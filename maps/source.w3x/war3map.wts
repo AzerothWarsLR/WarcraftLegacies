@@ -10346,7 +10346,7 @@ Healing Totem
 }
 
 STRING 1725
-// Abilities: S00O (Chaos), Name (Name)
+// Abilities: S01I (Chaos), Name (Name)
 {
 Chaos
 }
@@ -10412,7 +10412,7 @@ Shrine of Ula-Tek
 }
 
 STRING 1736
-// Abilities: S00P (Chaos), Name (Name)
+// Abilities: S011 (Chaos), Name (Name)
 {
 Chaos
 }
@@ -10430,7 +10430,7 @@ STRING 1738
 }
 
 STRING 1739
-// Abilities: S00Q (Chaos), Name (Name)
+// Abilities: S00W (Chaos), Name (Name)
 {
 Chaos
 }
@@ -14831,7 +14831,7 @@ A
 }
 
 STRING 2473
-// Abilities: S00R (Chaos), Name (Name)
+// Abilities: S00T (Chaos), Name (Name)
 {
 Chaos
 }
@@ -14843,7 +14843,7 @@ STRING 2474
 }
 
 STRING 2475
-// Abilities: S00S (Chaos), Name (Name)
+// Abilities: S00G (Chaos), Name (Name)
 {
 Chaos
 }
@@ -38797,7 +38797,7 @@ STRING 6466
 }
 
 STRING 6467
-// Abilities: S01I (Chaos), Name (Name)
+// Abilities: S00F (Chaos), Name (Name)
 {
 Chaos
 }
@@ -38809,7 +38809,7 @@ STRING 6468
 }
 
 STRING 6469
-// Abilities: S011 (Chaos), Name (Name)
+// Abilities: S00C (Chaos), Name (Name)
 {
 Chaos
 }
@@ -38857,7 +38857,7 @@ Gateway attuned to the Voidwalkers of the Burning Crusade, summoning 1 every 60 
 }
 
 STRING 6477
-// Abilities: S00W (Chaos), Name (Name)
+// Abilities: S001 (Chaos), Name (Name)
 {
 Chaos
 }
@@ -38869,7 +38869,7 @@ STRING 6478
 }
 
 STRING 6479
-// Abilities: S00T (Chaos), Name (Name)
+// Abilities: S006 (Chaos), Name (Name)
 {
 Chaos
 }
@@ -38911,7 +38911,7 @@ STRING 6485
 }
 
 STRING 6486
-// Abilities: S00G (Chaos), Name (Name)
+// Abilities: S007 (Chaos), Name (Name)
 {
 Chaos
 }
@@ -38923,7 +38923,7 @@ Healing Surge
 }
 
 STRING 6488
-// Abilities: S00F (Chaos), Name (Name)
+// Abilities: S009 (Chaos), Name (Name)
 {
 Chaos
 }
@@ -38935,7 +38935,7 @@ STRING 6489
 }
 
 STRING 6490
-// Abilities: S00C (Chaos), Name (Name)
+// Abilities: S00M (Chaos), Name (Name)
 {
 Chaos
 }
@@ -38947,7 +38947,7 @@ STRING 6491
 }
 
 STRING 6492
-// Abilities: S001 (Chaos), Name (Name)
+// Abilities: S00N (Chaos), Name (Name)
 {
 Chaos
 }
@@ -38959,7 +38959,7 @@ STRING 6493
 }
 
 STRING 6494
-// Abilities: S006 (Chaos), Name (Name)
+// Abilities: S00O (Chaos), Name (Name)
 {
 Chaos
 }
@@ -38971,7 +38971,7 @@ Deactivate Battle Trance
 }
 
 STRING 6496
-// Abilities: S007 (Chaos), Name (Name)
+// Abilities: S00P (Chaos), Name (Name)
 {
 Chaos
 }
@@ -39079,7 +39079,7 @@ Thunder Clap
 }
 
 STRING 6514
-// Abilities: S00U (Chaos), Name (Name)
+// Abilities: S00Q (Chaos), Name (Name)
 {
 Chaos
 }
@@ -55626,7 +55626,7 @@ E
 }
 
 STRING 9269
-// Abilities: S009 (Chaos), Name (Name)
+// Abilities: S00R (Chaos), Name (Name)
 {
 Chaos
 }
@@ -126653,7 +126653,7 @@ STRING 21110
 }
 
 STRING 21111
-// Abilities: S00M (Chaos), Name (Name)
+// Abilities: S00S (Chaos), Name (Name)
 {
 Chaos
 }
@@ -126665,7 +126665,7 @@ STRING 21112
 }
 
 STRING 21113
-// Abilities: S00N (Chaos), Name (Name)
+// Abilities: S00U (Chaos), Name (Name)
 {
 Chaos
 }
@@ -126752,5 +126752,17 @@ STRING 21127
 // Upgrades: R09P (Defend), Ubertip (Tooltip - Extended)
 {
 Revert Bloodpact
+}
+
+STRING 21128
+// Buffs/Effects: B00A (), Bufftip (Tooltip)
+{
+Mage Armor
+}
+
+STRING 21129
+// Buffs/Effects: B00A (), Buffubertip (Tooltip - Extended)
+{
+This unit has Mage Armor; its armor is increased.
 }
 
