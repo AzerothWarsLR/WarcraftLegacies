@@ -71788,6 +71788,12 @@ STRING 11960
 Blasts enemies with a large explosion dealing 460 damage with 160 splash damage.
 }
 
+STRING 11961
+// Units: U004 (The Deceiver), Ubertip (Tooltip - Extended)
+{
+Caster hero, exceptional at area of effect damage.|n|cfff5962dAbilities:|r Spell Immunity, Dark Pact|n|cfff5962dCan Learn:|R Rain of Fire, Fear Aura, Finger of Death, Rain of Meteors|n|n|cffffcc00Attacks land and air units.|R
+}
+
 STRING 11962
 // Abilities: A04M (The Power of Frostmourne), Name (Name)
 {
@@ -72536,30 +72542,6 @@ STRING 12086
 // Abilities: A046 (Finger of Death), Tip (Tooltip - Normal)
 {
 Finger of Death - [|cffffcc00Level 4|r]
-}
-
-STRING 12087
-// Abilities: A046 (Finger of Death), Ubertip (Tooltip - Normal - Extended)
-{
-Calls forth a cone of energy utterly destroying enemies, hitting up to 5 enemies for 300 damage each. Cannot be used on heroes.
-}
-
-STRING 12088
-// Abilities: A046 (Finger of Death), Ubertip (Tooltip - Normal - Extended)
-{
-Calls forth a cone of energy utterly destroying enemies, hitting up to 5 enemies for 400 damage each. Cannot be used on heroes.
-}
-
-STRING 12089
-// Abilities: A046 (Finger of Death), Ubertip (Tooltip - Normal - Extended)
-{
-Calls forth a cone of energy utterly destroying enemies, hitting up to 6 enemies for 500 damage each. Cannot be used on heroes.
-}
-
-STRING 12090
-// Abilities: A046 (Finger of Death), Ubertip (Tooltip - Normal - Extended)
-{
-Calls forth a cone of energy utterly destroying enemies, hitting up to 6 enemies for 650 damage each. Cannot be used on heroes.
 }
 
 STRING 12091
@@ -73778,12 +73760,6 @@ STRING 12293
 // Abilities: A0QY (Summon Gatherer), Ubertip (Tooltip - Normal - Extended)
 {
 Summons a water elemental to attack the Hydromancer's enemies. Has <hwat,realHP> hit points and deals <hwat,mindmg1> - <hwat,maxdmg1> damage. |nLasts <AHwe,Dur1> seconds. |n|n|cffffcc00Attacks land and air units.|r
-}
-
-STRING 12294
-// Units: U004 (The Deceiver), Ubertip (Tooltip - Extended)
-{
-Caster hero, exceptional at area of effect damage.|n|cfff5962dAbilities:|r Spell Immunity|n|cfff5962dCan Learn:|R Rain of Fire, Fear Aura, Finger of Death, Rain of Meteors|n|n|cffffcc00Attacks land and air units.|R
 }
 
 STRING 12295
@@ -113781,12 +113757,6 @@ STRING 18966
 Increases a friendly unit's attack rate by 30% and movement speed by 20%. |nLasts <A0XC,Dur1> seconds.
 }
 
-STRING 18967
-// Units: h04X (Harvest-Witch), Ubertip (Tooltip - Extended)
-{
-Witch of Gilneas.|n|cfff5962dAbilities:|R Spiritual Guidance, Slow Poison |n|cfff5962dCan learn:|R Healing Wave, Far Sight|n|cff99b4d1Can only train 8.|r|n|cffffcc00Attacks land and air units.|r
-}
-
 STRING 18968
 // Abilities: A0XJ (Tsunami), Tip (Tooltip - Normal)
 {
@@ -126416,5 +126386,35 @@ STRING 21072
 // Units: n06Q (Dire Maul(15gold/min)), Name (Name)
 {
 Dire Maul(15gold/min)
+}
+
+STRING 21073
+// Units: h04X (Harvest-Witch), Ubertip (Tooltip - Extended)
+{
+Witch of Gilneas.|n|cfff5962dAbilities:|R Spiritual Guidance, Slow Poison |n|cfff5962dCan learn:|R Healing Wave, Far Sight|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land and air units.|r
+}
+
+STRING 21074
+// Abilities: A046 (Finger of Death), Ubertip (Tooltip - Normal - Extended)
+{
+Calls forth a cone of energy utterly destroying enemies, hitting up to 8 enemies for 300 damage each. Cannot be used on heroes.
+}
+
+STRING 21075
+// Abilities: A046 (Finger of Death), Ubertip (Tooltip - Normal - Extended)
+{
+Calls forth a cone of energy utterly destroying enemies, hitting up to 10 enemies for 400 damage each. Cannot be used on heroes.
+}
+
+STRING 21076
+// Abilities: A046 (Finger of Death), Ubertip (Tooltip - Normal - Extended)
+{
+Calls forth a cone of energy utterly destroying enemies, hitting up to 12 enemies for 500 damage each. Cannot be used on heroes.
+}
+
+STRING 21077
+// Abilities: A046 (Finger of Death), Ubertip (Tooltip - Normal - Extended)
+{
+Calls forth a cone of energy utterly destroying enemies, hitting up to 14 enemies for 650 damage each. Cannot be used on heroes.
 }
 
