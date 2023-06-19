@@ -13,11 +13,12 @@ namespace WarcraftLegacies.Source.Quests.Warsong
   public sealed class QuestBloodpact : QuestData
   {
     private readonly LegendaryHero _mannoroth;
+    private readonly LegendaryHero _grom;
 
     /// <summary>
     /// Initializes a new instance of the class <see cref="QuestBloodpact"/>.
     /// </summary>
-    public QuestBloodpact(LegendaryHero Mannoroth)
+    public QuestBloodpact(LegendaryHero Mannoroth, LegendaryHero grom)
       : base("The Bloodpact",
         "The Warsong is still vulnerable to the tentation of Mannoroth's Blood. If they drink it from the Fountain, they would have a surge of power. Although, Thrall would certainly hurry to save his friend Grom from the corruption.",
         "ReplaceableTextures\\CommandButtons\\BTNBloodFury.blp")
@@ -25,6 +26,7 @@ namespace WarcraftLegacies.Source.Quests.Warsong
       AddObjective(new ObjectiveResearch(Constants.UPGRADE_R09O_DRINK_THE_BLOOD_OF_MANNOROTH, Constants.UNIT_NBFL_FOUNTAIN_OF_BLOOD_BLOODPACT));
       Global = true;
       _mannoroth = Mannoroth;
+      _grom = grom;
     }
 
     /// <inheritdoc/>
@@ -38,6 +40,7 @@ namespace WarcraftLegacies.Source.Quests.Warsong
     protected override void OnComplete(Faction completingFaction)
     {
       _mannoroth.ForceCreate(completingFaction.Player, Regions.FountainUnlock.Center, 270);
+      _grom.UnitType = Constants.UNIT_OPGH_CORRUPTOR_OF_THE_WARSONG_CLAN_WARSONG_BLOODPACT ;
 
       TimerStart(CreateTimer(), 240, false, () =>
       {
@@ -46,6 +49,7 @@ namespace WarcraftLegacies.Source.Quests.Warsong
         completingFaction.SetObjectLevel(Constants.UPGRADE_R09P_REVERT_BLOODPACT, 1);
 
         _mannoroth.ForceCreate(Player(PLAYER_NEUTRAL_AGGRESSIVE), Regions.FountainUnlock.Center, 270);
+        _grom.UnitType = Constants.UNIT_OGRH_CHIEFTAIN_OF_THE_WARSONG_CLAN_WARSONG;
 
       });
     }
