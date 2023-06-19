@@ -65850,7 +65850,7 @@ Units near Marshal take up defensive formations, decreasing nearby enemy units a
 }
 
 STRING 10985
-// Units: n0E9 (Chaos Warlock), Casterupgradename (Caster Upgrade Names)
+// Units: n068 (Inquisitor), Casterupgradename (Caster Upgrade Names)
 {
 Initiate,Adept,Master
 }
@@ -88152,7 +88152,7 @@ Research Elune's Infusion
 }
 
 STRING 14700
-// Units: n068 (Inquisitor), Casterupgradename (Caster Upgrade Names)
+// Units: n077 (Sorcerer), Casterupgradename (Caster Upgrade Names)
 {
 Initiate,Adept,Master
 }
@@ -94511,7 +94511,7 @@ Restores 180 hit points to friendly units in a large radius.
 }
 
 STRING 15767
-// Units: n077 (Sorcerer), Casterupgradename (Caster Upgrade Names)
+// Units: n0CB (Deepseer), Casterupgradename (Caster Upgrade Names)
 {
 Initiate,Adept,Master
 }
@@ -94829,7 +94829,7 @@ Grants Unholy Armor to all friendly unit in a large area of effect. Lasts 60 sec
 }
 
 STRING 15820
-// Units: n0CB (Deepseer), Casterupgradename (Caster Upgrade Names)
+// Units: n0CD (Bloodkin), Casterupgradename (Caster Upgrade Names)
 {
 Initiate,Adept,Master
 }
@@ -98297,7 +98297,7 @@ Build Plague Catapult
 }
 
 STRING 16398
-// Units: n0CD (Bloodkin), Casterupgradename (Caster Upgrade Names)
+// Units: n08Z (Whipping Wind), Casterupgradename (Caster Upgrade Names)
 {
 Initiate,Adept,Master
 }
@@ -103301,7 +103301,7 @@ N'raqi Arcanist
 }
 
 STRING 17232
-// Units: n08Z (Whipping Wind), Casterupgradename (Caster Upgrade Names)
+// Units: n0E9 (Chaos Warlock), Casterupgradename (Caster Upgrade Names)
 {
 Initiate,Adept,Master
 }
