@@ -65921,12 +65921,6 @@ STRING 10984
 Units near Marshal take up defensive formations, decreasing nearby enemy units attack damage by 10%.
 }
 
-STRING 10985
-// Abilities: A138 (Freezing Shots), Ubertip (Tooltip - Normal - Extended)
-{
-The freezing shots, imbued with arcane magic, slow the target's movement by 15% and attack speed by 80% for 3 seconds.
-}
-
 STRING 10986
 // Abilities: A0EK (Phoenix), Hotkey (Hotkey - Normal)
 {
@@ -72548,6 +72542,12 @@ STRING 12087
 // Units: nhym (Hydromancer), Casterupgradename (Caster Upgrade Names)
 {
 Initiate,Adept,Master,Grandmaster
+}
+
+STRING 12088
+// Abilities: A138 (Freezing Shots), Ubertip (Tooltip - Normal - Extended)
+{
+The freezing shots, imbued with arcane magic, slow the target's attack speed by 80% for 3 seconds.
 }
 
 STRING 12090
@@ -99539,7 +99539,7 @@ STRING 16594
 }
 
 STRING 16595
-// Upgrades: Rews (Well Spring), Hotkey (Hotkey)
+// Abilities: A0V0 (Snipe), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -99827,7 +99827,7 @@ Warrior Hero, excels at augmenting nearby friendly troops.|n|cfff5962dCan learn:
 }
 
 STRING 16643
-// Abilities: A0V0 (Snipe), Researchhotkey (Hotkey - Learn)
+// Abilities: A0VC (Viral Plague), Hotkey (Hotkey - Normal)
 {
 R
 }
@@ -103745,7 +103745,7 @@ Avatar - [|cffffcc00Level 1|r]
 }
 
 STRING 17296
-// Upgrades: R00N (Storm Hammers), Hotkey (Hotkey)
+// Abilities: A0VC (Viral Plague), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -104351,7 +104351,7 @@ STRING 17396
 }
 
 STRING 17397
-// Abilities: A0VC (Viral Plague), Hotkey (Hotkey - Normal)
+// Abilities: A0WF (Herald of Destruction), Hotkey (Hotkey - Normal)
 {
 R
 }
@@ -104363,7 +104363,7 @@ Q
 }
 
 STRING 17399
-// Abilities: A0VC (Viral Plague), Researchhotkey (Hotkey - Learn)
+// Abilities: A0WF (Herald of Destruction), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -105203,7 +105203,7 @@ Z
 }
 
 STRING 17539
-// Abilities: A0WF (Herald of Destruction), Hotkey (Hotkey - Normal)
+// Abilities: A0WQ (Locust Swarm), Hotkey (Hotkey - Normal)
 {
 R
 }
@@ -105816,7 +105816,7 @@ Crimson Cathedral
 }
 
 STRING 17641
-// Abilities: A0WF (Herald of Destruction), Researchhotkey (Hotkey - Learn)
+// Abilities: A0WQ (Locust Swarm), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -106958,7 +106958,7 @@ Upgrade to Improved Crystal Protector
 }
 
 STRING 17831
-// Abilities: A0WQ (Locust Swarm), Hotkey (Hotkey - Normal)
+// Abilities: A0WS (Aegis of Ragaros), Hotkey (Hotkey - Normal)
 {
 R
 }
@@ -107978,7 +107978,7 @@ V
 }
 
 STRING 18001
-// Abilities: A0WQ (Locust Swarm), Researchhotkey (Hotkey - Learn)
+// Abilities: A0WS (Aegis of Ragaros), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -108056,7 +108056,7 @@ Q
 }
 
 STRING 18014
-// Abilities: A0WS (Aegis of Ragaros), Hotkey (Hotkey - Normal)
+// Abilities: A0WW (Summon Goliathon), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -108410,7 +108410,7 @@ Q
 }
 
 STRING 18073
-// Abilities: A0WS (Aegis of Ragaros), Researchhotkey (Hotkey - Learn)
+// Abilities: A0WW (Summon Goliathon), Hotkey (Hotkey - Normal)
 {
 R
 }
@@ -108566,7 +108566,7 @@ C
 }
 
 STRING 18099
-// Abilities: A0WW (Summon Goliathon), Researchhotkey (Hotkey - Learn)
+// Abilities: A00D (Slipstream), Hotkey (Hotkey - Normal)
 {
 R
 }
@@ -109304,7 +109304,7 @@ Q
 }
 
 STRING 18222
-// Abilities: A0WW (Summon Goliathon), Hotkey (Hotkey - Normal)
+// Abilities: A00D (Slipstream), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -110385,25 +110385,25 @@ Viral Plague
 }
 
 STRING 18402
-// Abilities: A00D (Slipstream), Hotkey (Hotkey - Normal)
-{
-R
-}
-
-STRING 18403
-// Abilities: A00D (Slipstream), Researchhotkey (Hotkey - Learn)
-{
-R
-}
-
-STRING 18404
 // Abilities: A0ZA (Warsong Battle Standard), Hotkey (Hotkey - Normal)
 {
 R
 }
 
-STRING 18405
+STRING 18403
 // Abilities: A0ZA (Warsong Battle Standard), Researchhotkey (Hotkey - Learn)
+{
+R
+}
+
+STRING 18404
+// Abilities: A0ZJ (Portal to Nagrand), Researchhotkey (Hotkey - Learn)
+{
+R
+}
+
+STRING 18405
+// Abilities: A0ZY (Multi Shot), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -111423,7 +111423,7 @@ Revive Ragnaros
 }
 
 STRING 18575
-// Abilities: A0ZJ (Portal to Nagrand), Researchhotkey (Hotkey - Learn)
+// Abilities: A0KT (Arcane Recall), Hotkey (Hotkey - Normal)
 {
 R
 }
@@ -111934,7 +111934,7 @@ Elemental Fire
 }
 
 STRING 18660
-// Abilities: A0ZY (Multi Shot), Researchhotkey (Hotkey - Learn)
+// Abilities: A0P9 (Dimensional Jump to Azuremyst), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -111958,7 +111958,7 @@ STRING 18663
 }
 
 STRING 18664
-// Abilities: A0KT (Arcane Recall), Hotkey (Hotkey - Normal)
+// Abilities: A0RB (Dimensional Jump to Argus), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -112246,7 +112246,7 @@ Curse of Executus
 }
 
 STRING 18712
-// Abilities: A0P9 (Dimensional Jump to Azuremyst), Researchhotkey (Hotkey - Learn)
+// Abilities: A0SR (Dimensional Jump to Tempest Keep), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -112270,7 +112270,7 @@ Titan Vault
 }
 
 STRING 18716
-// Abilities: A0RB (Dimensional Jump to Argus), Researchhotkey (Hotkey - Learn)
+// Abilities: A07D (Portal to Black Temple), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -112510,13 +112510,13 @@ This unit was hit by a Serrated Bite; its armor is temporarily reduced.
 }
 
 STRING 18756
-// Abilities: A0SR (Dimensional Jump to Tempest Keep), Researchhotkey (Hotkey - Learn)
+// Abilities: A0JB (Summon Gallywix Personal Transport), Hotkey (Hotkey - Normal)
 {
 R
 }
 
 STRING 18757
-// Abilities: A07D (Portal to Black Temple), Researchhotkey (Hotkey - Learn)
+// Abilities: A0JB (Summon Gallywix Personal Transport), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -112588,7 +112588,7 @@ Mustering Hall
 }
 
 STRING 18769
-// Abilities: A0JB (Summon Gallywix Personal Transport), Hotkey (Hotkey - Normal)
+// Abilities: A0UB (Open a portal to Northrend), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -112792,7 +112792,7 @@ Icecrown Citadel (30gold/min)
 }
 
 STRING 18803
-// Abilities: A0JB (Summon Gallywix Personal Transport), Researchhotkey (Hotkey - Learn)
+// Abilities: A0UC (Open a portal to Alterac), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -114226,7 +114226,7 @@ Battle Brothers
 }
 
 STRING 19042
-// Abilities: A0UB (Open a portal to Northrend), Researchhotkey (Hotkey - Learn)
+// Abilities: A0D7 (Wraith Form), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -114592,7 +114592,7 @@ Farahlon (10gold/min)
 }
 
 STRING 19103
-// Abilities: A0UC (Open a portal to Alterac), Researchhotkey (Hotkey - Learn)
+// Abilities: A101 (Army of Light Golem summon), Hotkey (Hotkey - Normal)
 {
 R
 }
@@ -115354,7 +115354,7 @@ STRING 19229
 }
 
 STRING 19230
-// Abilities: A0D7 (Wraith Form), Researchhotkey (Hotkey - Learn)
+// Abilities: A101 (Army of Light Golem summon), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -115871,7 +115871,7 @@ The hero unleashes a mortal axe strike, dealing 750 damage after a short delay.
 }
 
 STRING 19316
-// Abilities: A101 (Army of Light Golem summon), Hotkey (Hotkey - Normal)
+// Abilities: A10C (Open a portal to Argus), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -115883,7 +115883,7 @@ Causes a bladestorm of destructive force around the Blademaster, rendering him i
 }
 
 STRING 19318
-// Abilities: A101 (Army of Light Golem summon), Researchhotkey (Hotkey - Learn)
+// Abilities: A11O (Black Hole), Hotkey (Hotkey - Normal)
 {
 R
 }
@@ -115973,7 +115973,7 @@ Build Oil Rig
 }
 
 STRING 19333
-// Abilities: A10C (Open a portal to Argus), Researchhotkey (Hotkey - Learn)
+// Abilities: A11O (Black Hole), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -116033,7 +116033,7 @@ Calls an Infernal down from the sky, dealing <AUin,DataA3> damage and stunning e
 }
 
 STRING 19343
-// Abilities: A11O (Black Hole), Hotkey (Hotkey - Normal)
+// Abilities: A11S (Napalm), Hotkey (Hotkey - Normal)
 {
 R
 }
@@ -116057,7 +116057,7 @@ Q
 }
 
 STRING 19347
-// Abilities: A11O (Black Hole), Researchhotkey (Hotkey - Learn)
+// Abilities: A11W (Toxic Cloud), Hotkey (Hotkey - Normal)
 {
 R
 }
@@ -116243,7 +116243,7 @@ Build Coral of Wind
 }
 
 STRING 19378
-// Abilities: A11S (Napalm), Hotkey (Hotkey - Normal)
+// Abilities: A11W (Toxic Cloud), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -117635,7 +117635,7 @@ Teleports the Hero and any of its nearby troops to a target friendly unit or str
 }
 
 STRING 19610
-// Abilities: A11W (Toxic Cloud), Hotkey (Hotkey - Normal)
+// Abilities: A122 (Will of the Ashbringer), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -118480,7 +118480,7 @@ Q
 }
 
 STRING 19751
-// Abilities: A11W (Toxic Cloud), Researchhotkey (Hotkey - Learn)
+// Abilities: A12C (Legendary Warrior), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -120406,7 +120406,7 @@ W
 }
 
 STRING 20072
-// Abilities: A122 (Will of the Ashbringer), Researchhotkey (Hotkey - Learn)
+// Abilities: A12N (Consumed by the Void), Hotkey (Hotkey - Normal)
 {
 R
 }
@@ -121540,19 +121540,19 @@ This unit is caught within a Black Hole; its movement speed has been reduced tem
 }
 
 STRING 20261
-// Abilities: A12C (Legendary Warrior), Researchhotkey (Hotkey - Learn)
+// Abilities: A12N (Consumed by the Void), Researchhotkey (Hotkey - Learn)
 {
 R
 }
 
 STRING 20262
-// Abilities: A12N (Consumed by the Void), Hotkey (Hotkey - Normal)
+// Abilities: A12V (Blessed Ground), Researchhotkey (Hotkey - Learn)
 {
 R
 }
 
 STRING 20263
-// Abilities: A12N (Consumed by the Void), Researchhotkey (Hotkey - Learn)
+// Abilities: A136 (Corruption), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -122338,7 +122338,7 @@ S
 }
 
 STRING 20394
-// Abilities: A12V (Blessed Ground), Researchhotkey (Hotkey - Learn)
+// Abilities: A139 (Spell Steal), Hotkey (Hotkey - Normal)
 {
 R
 }
@@ -122524,7 +122524,7 @@ Channel the Citadel Shield. The shield will deal 12 damage per second to enemies
 }
 
 STRING 20425
-// Abilities: A136 (Corruption), Researchhotkey (Hotkey - Learn)
+// Abilities: A139 (Spell Steal), Unhotkey (Hotkey - Turn Off)
 {
 R
 }
@@ -125489,7 +125489,7 @@ Powerful Worgen Shaman in service of Gilneas.|n|cfff5962dAbilities:|R Wolf Compa
 }
 
 STRING 20921
-// Abilities: A139 (Spell Steal), Hotkey (Hotkey - Normal)
+// Abilities: A138 (Freezing Shots), Hotkey (Hotkey - Normal)
 {
 R
 }
@@ -125621,7 +125621,7 @@ Elite fighters of the Legion.|n|cfff5962dAbilities: |RWind Walk, Mirror Image, C
 }
 
 STRING 20943
-// Abilities: A139 (Spell Steal), Unhotkey (Hotkey - Turn Off)
+// Abilities: A138 (Freezing Shots), Unhotkey (Hotkey - Turn Off)
 {
 R
 }
@@ -126215,7 +126215,7 @@ This unit is in a Blessed Ground. It's health is rapidly replenishing.
 }
 
 STRING 21043
-// Abilities: A138 (Freezing Shots), Hotkey (Hotkey - Normal)
+// Upgrades: Rosp (Spiked Barricades,Improved Spiked Barricades,Advanced Spiked Barricades), Hotkey (Hotkey)
 {
 R
 }
@@ -126455,19 +126455,19 @@ STRING 21083
 }
 
 STRING 21084
-// Abilities: A138 (Freezing Shots), Unhotkey (Hotkey - Turn Off)
+// Upgrades: Rosp (Spiked Barricades,Improved Spiked Barricades,Advanced Spiked Barricades), Hotkey (Hotkey)
 {
 R
 }
 
 STRING 21085
-// Upgrades: Rosp (Spiked Barricades,Improved Spiked Barricades,Advanced Spiked Barricades), Hotkey (Hotkey)
+// Upgrades: Ropg (Pillage), Hotkey (Hotkey)
 {
 R
 }
 
 STRING 21086
-// Upgrades: Rosp (Spiked Barricades,Improved Spiked Barricades,Advanced Spiked Barricades), Hotkey (Hotkey)
+// Upgrades: Rews (Well Spring), Hotkey (Hotkey)
 {
 R
 }
@@ -126509,7 +126509,7 @@ Increases Arcanists' mana capacity, mana regeneration rate, attack damage and gi
 }
 
 STRING 21093
-// Upgrades: Ropg (Pillage), Hotkey (Hotkey)
+// Upgrades: R00N (Storm Hammers), Hotkey (Hotkey)
 {
 R
 }
