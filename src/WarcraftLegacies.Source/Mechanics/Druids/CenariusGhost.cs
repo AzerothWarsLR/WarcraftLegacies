@@ -1,4 +1,4 @@
-using MacroTools.LegendSystem;
+﻿using MacroTools.LegendSystem;
 using WarcraftLegacies.Source.Setup.FactionSetup;
 using WarcraftLegacies.Source.Setup.Legends;
 using WCSharp.Shared.Data;
@@ -14,6 +14,7 @@ namespace WarcraftLegacies.Source.Mechanics.Druids
       cenarius.UnitType = LegendDruids.UnittypeCenariusGhost;
       cenarius.PermaDies = false;
       cenarius.ClearUnitDependencies();
+      cenarius.StartingXp = 5400;
       cenarius.ForceCreate(DruidsSetup.Druids.Player, new Point(Regions.Cenarius.Center.X, Regions.Cenarius.Center.Y),
         270);
     }

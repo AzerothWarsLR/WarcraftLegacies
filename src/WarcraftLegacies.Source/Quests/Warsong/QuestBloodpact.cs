@@ -46,7 +46,6 @@ namespace WarcraftLegacies.Source.Quests.Warsong
 
       TimerStart(timerBloodpact, 180, false, () =>
       {
-        Console.WriteLine("DEBUG: BLOODPACT SHOULD REVERT NOW");
         completingFaction.SetObjectLimit(Constants.UPGRADE_R09O_DRINK_THE_BLOOD_OF_MANNOROTH, -1);
         completingFaction.SetObjectLevel(Constants.UPGRADE_R09O_DRINK_THE_BLOOD_OF_MANNOROTH, -1);
         completingFaction.SetObjectLevel(Constants.UPGRADE_R09P_REVERT_BLOODPACT, 1);

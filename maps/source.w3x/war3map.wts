@@ -22967,12 +22967,6 @@ STRING 3828
 Sends a horde of bats to deal <ACca,DataA3> damage to each enemy unit in a line, up to a total of <ACca,DataB3> damage.
 }
 
-STRING 3829
-// Upgrades: R04G (Magic Sentry), Ubertip (Tooltip - Extended)
-{
-Improves Dreadlords' Carrion Swarm by increasing its damage to 85 and max damage to 750
-}
-
 STRING 3830
 // Units: N03D (Warchief of the Fel Horde), Awakentip (Tooltip - Awaken)
 {
@@ -26666,12 +26660,6 @@ STRING 4445
 // Destructibles: B00H (Red Tree), Name (Name)
 {
 Red Tree
-}
-
-STRING 4446
-// Upgrades: R04G (Magic Sentry), Ubertip (Tooltip - Extended)
-{
-Improves Dreadlords' Carrion Swarm by increasing its damage to 100 and max damage to 900
 }
 
 STRING 4447
@@ -126776,5 +126764,17 @@ STRING 21131
 // Upgrades: R00N (Storm Hammers), Hotkey (Hotkey)
 {
 R
+}
+
+STRING 21132
+// Upgrades: R04G (Magic Sentry), Ubertip (Tooltip - Extended)
+{
+Improves Dreadlords' Carrion Swarm by increasing its damage to 95 and max damage to 850. Also reduces the cooldown.
+}
+
+STRING 21133
+// Upgrades: R04G (Magic Sentry), Ubertip (Tooltip - Extended)
+{
+Improves Dreadlords' Carrion Swarm by increasing its damage to 105 and max damage to 100. Also reduces the cooldown.
 }
 
