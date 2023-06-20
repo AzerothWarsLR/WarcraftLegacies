@@ -5,6 +5,7 @@ using MacroTools.ObjectiveSystem.Objectives.MetaBased;
 using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
+using System;
 using WarcraftLegacies.Source.Setup.FactionSetup;
 using static War3Api.Common;
 
@@ -39,11 +40,13 @@ namespace WarcraftLegacies.Source.Quests.Warsong
     /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)
     {
+      var timerBloodpact = CreateTimer();
       _mannoroth.ForceCreate(completingFaction.Player, Regions.FountainUnlock.Center, 270);
       _grom.UnitType = Constants.UNIT_OPGH_CORRUPTOR_OF_THE_WARSONG_CLAN_WARSONG_BLOODPACT ;
 
-      TimerStart(CreateTimer(), 240, false, () =>
+      TimerStart(timerBloodpact, 180, false, () =>
       {
+        Console.WriteLine("DEBUG: BLOODPACT SHOULD REVERT NOW");
         completingFaction.SetObjectLimit(Constants.UPGRADE_R09O_DRINK_THE_BLOOD_OF_MANNOROTH, -1);
         completingFaction.SetObjectLevel(Constants.UPGRADE_R09O_DRINK_THE_BLOOD_OF_MANNOROTH, -1);
         completingFaction.SetObjectLevel(Constants.UPGRADE_R09P_REVERT_BLOODPACT, 1);
