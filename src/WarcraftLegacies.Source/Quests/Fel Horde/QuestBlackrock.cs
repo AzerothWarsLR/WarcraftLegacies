@@ -16,23 +16,27 @@ namespace WarcraftLegacies.Source.Quests.Fel_Horde
   /// </summary>
   public sealed class QuestBlackrock : QuestData
   {
-    private readonly List<unit> _rescueUnits;
+    private readonly List<unit> _rescueUnits1;
+    private readonly List<unit> _rescueUnits2;
+    private Rectangle _rescueRect;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestBlackrock"/> class.
     /// </summary>
-    public QuestBlackrock(Rectangle rescueRect, IEnumerable<QuestData> prequisites) : base("Blackrock Unification",
+    public QuestBlackrock(Rectangle rescueRect1, Rectangle rescueRect2, IEnumerable<QuestData> prequisites) : base("Blackrock Unification",
       "Make contact with the Blackrock clan and convince them to join Magtheridon",
       "ReplaceableTextures\\CommandButtons\\BTNBlackhand.blp")
     {
       foreach (var prequisite in prequisites) 
         AddObjective(new ObjectiveCompleteQuest(prequisite));
       AddObjective(new ObjectiveResearch(Constants.UPGRADE_R090_ACTIVATE_THE_BLACKROCK_CLAN_FEL, Constants.UNIT_O008_HELLFIRE_CITADEL_FEL_HORDE));
-      AddObjective(new ObjectiveTime(480));
+      AddObjective(new ObjectiveTime(540));
       AddObjective(new ObjectiveExpire(1451, Title));
       AddObjective(new ObjectiveSelfExists());
       ResearchId = Constants.UPGRADE_R03C_QUEST_COMPLETED_BLACKROCK_UNIFICATION;
-      _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
+      _rescueUnits1 = rescueRect1.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
+      _rescueUnits2 = rescueRect2.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
+      _rescueRect = rescueRect1;
       Required = true;
     }
 
@@ -43,15 +47,22 @@ namespace WarcraftLegacies.Source.Quests.Fel_Horde
 
     /// <inheritdoc />
     protected override string RewardDescription =>
-      "Control of all units in Blackrock Citadel and enable Dal'rend Blackhand to be trained at the altar";
+      "Control of all units in Blackrock Citadel, a small outpost near the Dark Portal and enable Dal'rend Blackhand to be trained at the altar";
 
     /// <inheritdoc />
     protected override void OnFail(Faction completingFaction) => 
-      Player(PLAYER_NEUTRAL_AGGRESSIVE).RescueGroup(_rescueUnits);
+      Player(PLAYER_NEUTRAL_AGGRESSIVE).RescueGroup(_rescueUnits1);
 
     /// <inheritdoc />
-    protected override void OnComplete(Faction completingFaction) => 
-      completingFaction.Player.RescueGroup(_rescueUnits);
+    protected override void OnComplete(Faction completingFaction)
+    {
+      completingFaction.Player.RescueGroup(_rescueUnits1);
+      completingFaction.Player.RescueGroup(_rescueUnits2);
+      foreach (var unit in _rescueUnits1)
+        if (!unit.IsType(UNIT_TYPE_PEON))
+          unit.IssueOrder("attack", new Point(14131.0f, -13207.0f));
+    }
+    
 
     /// <inheritdoc />
     protected override void OnAdd(Faction whichFaction) => 

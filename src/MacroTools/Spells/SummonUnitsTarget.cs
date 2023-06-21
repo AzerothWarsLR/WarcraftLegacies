@@ -34,7 +34,6 @@ namespace MacroTools.Spells
           var summonFacing = MathEx.GetAngleBetweenPoints(summonX, summonY, targetX, targetY);
           var summonedUnit = CreateUnit(GetOwningPlayer(caster), SummonUnitTypeId, summonX, summonY, summonFacing);
           UnitApplyTimedLife(summonedUnit, 0, Duration);
-          UnitAddType(summonedUnit, UNIT_TYPE_SUMMONED);
           SetUnitAnimation(summonedUnit, "birth");
           QueueUnitAnimation(summonedUnit, "stand");
           DestroyEffect(AddSpecialEffect(Effect, summonX, summonY));

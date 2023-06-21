@@ -1,7 +1,5 @@
 ﻿using MacroTools.Timer;
 using System;
-using System;
-using System.Linq;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using static War3Api.Common;

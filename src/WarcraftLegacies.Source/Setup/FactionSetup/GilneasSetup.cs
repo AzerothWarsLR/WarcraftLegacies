@@ -16,6 +16,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
       {
         StartingGold = 200,
         StartingLumber = 700,
+        ControlPointDefenderUnitTypeId = Constants.UNIT_H0AF_CONTROL_POINT_DEFENDER_GILNEAS,
         IntroText = @"You are playing as the accursed |cff646464Kingdom of Gilneas|r|r.
 
 You start isolated behind the Greymane Wall, the only way for an enemy to reach you is through the Greymane Gate or via the coast.
@@ -45,18 +46,17 @@ Once you have reclaimed Gilneas, open Greymane's Gate and march North to assist 
 
       //Units
       Gilneas.ModObjectLimit(FourCC("hpea"), Faction.UNLIMITED); //Peasant
-      Gilneas.ModObjectLimit(FourCC("n06K"), Faction.UNLIMITED); //Wildsoul
+      Gilneas.ModObjectLimit(FourCC("n06K"), Faction.UNLIMITED); //Druid of the Scythe
       Gilneas.ModObjectLimit(FourCC("h04M"), Faction.UNLIMITED); //Cleric
       Gilneas.ModObjectLimit(FourCC("h04E"), Faction.UNLIMITED); //Protector
       Gilneas.ModObjectLimit(FourCC("n06L"), Faction.UNLIMITED); //Armored Wolf
       Gilneas.ModObjectLimit(FourCC("o01V"), 6); //Greyguard
-      Gilneas.ModObjectLimit(FourCC("n029"), 12); //Sea Giant
+      Gilneas.ModObjectLimit(FourCC("o02J"), 8); //Worgen
       Gilneas.ModObjectLimit(FourCC("h03L"), Faction.UNLIMITED); //Shotgunner
-      Gilneas.ModObjectLimit(FourCC("nsgt"), Faction.UNLIMITED); //Spider
-      Gilneas.ModObjectLimit(FourCC("n067"), Faction.UNLIMITED); //Spider
-      Gilneas.ModObjectLimit(FourCC("o04U"), 6); //Mangonel
-      Gilneas.ModObjectLimit(FourCC("n06Z"), 6); //Gunship
-      Gilneas.ModObjectLimit(FourCC("n06Q"), 12); //Royal Guard
+      Gilneas.ModObjectLimit(FourCC("n067"), Faction.UNLIMITED); //Spider summon
+      Gilneas.ModObjectLimit(FourCC("o04U"), 6); //Cyclone Cannon
+      Gilneas.ModObjectLimit(FourCC("o06P"), 6); //Worgen Shaman
+      Gilneas.ModObjectLimit(FourCC("h04X"), 6); //HarvestWitch
 
       Gilneas.ModObjectLimit(FourCC("E01E"), 1); //Goldrinn
       Gilneas.ModObjectLimit(FourCC("Ewar"), 1); //Tess
@@ -79,6 +79,8 @@ Once you have reclaimed Gilneas, open Greymane's Gate and march North to assist 
       Gilneas.ModObjectLimit(FourCC("R00K"), Faction.UNLIMITED); //Power Infusion
       Gilneas.ModObjectLimit(FourCC("Rhlh"), Faction.UNLIMITED); //Improved Lumber Harvesting
       Gilneas.ModObjectLimit(FourCC("Rhac"), Faction.UNLIMITED); //Improved Masonry
+      Gilneas.ModObjectLimit(FourCC("R09L"), Faction.UNLIMITED); //Worgen Shaman training
+      Gilneas.ModObjectLimit(FourCC("R09M"), Faction.UNLIMITED); //harvestWitch training
 
       FactionManager.Register(Gilneas);
     }

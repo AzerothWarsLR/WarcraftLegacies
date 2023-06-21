@@ -32,7 +32,7 @@ namespace MacroTools.Commands
       if (!int.TryParse(cameraHeight, out var cameraHeightInt))
         return "You must specify a number as the first parameter.";
       
-      cameraHeightInt = Math.Clamp(cameraHeightInt, 700, 2400);
+      cameraHeightInt = Math.Clamp(cameraHeightInt, 700, 2701);
       commandUser.ApplyCameraField(CAMERA_FIELD_TARGET_DISTANCE, cameraHeightInt, 1);
       return $"Setting camera height to {cameraHeightInt}.";
     }

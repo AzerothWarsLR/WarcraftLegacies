@@ -27,8 +27,6 @@ namespace WarcraftLegacies.Source.Quests.Sunfury
       "ReplaceableTextures\\CommandButtons\\BTNSpell_Shadow_SummonVoidWalker.blp")
     {
       AddObjective(new ObjectiveAcquireArtifact(essence));
-      AddObjective(new ObjectiveArtifactInRect(essence, Regions.TempestKeep,
-        "Tempest Keep"));
       Required = true;
       ResearchId = Constants.UPGRADE_R09K_QUEST_COMPLETED_THE_HIGH_ASTROMANCER;
     }

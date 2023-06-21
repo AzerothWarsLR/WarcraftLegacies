@@ -49,6 +49,7 @@ namespace WarcraftLegacies.Source.Quests.Legion
     {
       whichFaction.ModObjectLimit(FourCC("u006"), 12); //Summoning Circle
       whichFaction.ModObjectLimit(FourCC("n04Q"), 12); //Nether Pit
+      whichFaction.ModObjectLimit(FourCC("ninf"), 12); //Infernal
       foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
         SetPlayerAbilityAvailable(player, Constants.ABILITY_A00J_SUMMON_THE_BURNING_LEGION_ALL_FACTIONS, false);
       if (whichFaction.Player != null)

@@ -36,7 +36,7 @@ namespace WarcraftLegacies.Source.Quests.Draenei
         AddObjective(new ObjectiveCompleteQuest(quest));   
       AddObjective(new ObjectiveBuildInRect(questRect, "inside the Exodar", Constants.UNIT_O056_ARCANE_WELL_DRAENEI_FARM, 10));
       AddObjective(new ObjectiveControlLevel(
-        ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N0BL_EXODAR_REGALIS_25GOLD_MIN), 20));
+        ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N0BL_EXODAR_REGALIS_15GOLD_MIN), 20));
       _objectivePowerSource = new ObjectivePowerSource(_dimensionalGenerator, new[]
       {
         Constants.ITEM_I006_BOOK_OF_MEDIVH,

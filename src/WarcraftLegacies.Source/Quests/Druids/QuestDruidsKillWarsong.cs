@@ -22,7 +22,7 @@ namespace WarcraftLegacies.Source.Quests.Druids
       AddObjective(new ObjectiveControlLevel(
         ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N05K_WARSONG_LUMBER_CAMP_15GOLD_MIN), 10));
       AddObjective(new ObjectiveControlLevel(
-        ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N09R_ELDARATH_15GOLD_MIN), 10));
+        ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N09R_ELDARATH_10GOLD_MIN), 10));
       AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N05K_WARSONG_LUMBER_CAMP_15GOLD_MIN)));
       ResearchId = FourCC("R05A");
     }

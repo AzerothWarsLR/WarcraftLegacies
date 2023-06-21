@@ -7,7 +7,7 @@ namespace MacroTools.PassiveAbilities
 {
   public sealed class ResurrectionAura : PassiveAbility
   {
-    public float ResurrectionChance { get; init; } = 0.35f;
+    public float ResurrectionChance { get; init; } = 0.99f;
     
     public ResurrectionAura(int unitTypeId) : base(unitTypeId)
     {

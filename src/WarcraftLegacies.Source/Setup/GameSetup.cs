@@ -47,7 +47,7 @@ namespace WarcraftLegacies.Source.Setup
       PlayerSetup.Setup();
       ZandalarGoblinChoiceDialogue.Setup();
       IllidariSunfuryChoiceDialogue.Setup();
-      QuelGilneasChoiceDialogue.Setup();
+      DalaGilneasChoiceDialogue.Setup();
       LegionForsakenChoiceDialogue.Setup();
       NeutralHostileSetup.Setup();
       AllQuestSetup.Setup(preplacedUnitSystem, artifactSetup, allLegendSetup);

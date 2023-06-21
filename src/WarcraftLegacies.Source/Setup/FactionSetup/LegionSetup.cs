@@ -59,7 +59,7 @@ Your primary objective is to summon the great host of the Burning Legion. Invade
       Legion.ModObjectLimit(FourCC("n04O"), 6); //Doom lord
       Legion.ModObjectLimit(FourCC("n04L"), 6); //Infernal Juggernaut
       Legion.ModObjectLimit(FourCC("o04P"), 6); //Nathrezim
-      Legion.ModObjectLimit(FourCC("ninf"), 8); //Infernal
+      Legion.ModObjectLimit(FourCC("ninf"), 6); //Infernal
       Legion.ModObjectLimit(FourCC("n04H"), Faction.UNLIMITED); //Fel Guard
       Legion.ModObjectLimit(FourCC("n04U"), 4); //Dragon
       Legion.ModObjectLimit(FourCC("n03L"), 4); //Barge

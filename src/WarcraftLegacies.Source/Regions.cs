@@ -169,7 +169,7 @@ public static class Regions
 	public static Rectangle DarkshireAmbient1 { get; set; } = new Rectangle(8672f, -17440f, 13600f, -14816f);
 	public static Rectangle DarkshireAmbient2 { get; set; } = new Rectangle(13600f, -18208f, 14912f, -14720f);
 	public static Rectangle DarkshireAmbient3 { get; set; } = new Rectangle(13408f, -14752f, 17952f, -12672f);
-	public static Rectangle BlastedlandAmbient { get; set; } = new Rectangle(14912f, -22176f, 19200f, -16896f);
+	public static Rectangle BlastedlandAmbient { get; set; } = new Rectangle(14912f, -22208f, 20224f, -16896f);
 	public static Rectangle SwampofSorrowsAmbient { get; set; } = new Rectangle(14944f, -16896f, 19424f, -14784f);
 	public static Rectangle BurningSteppesAmbient { get; set; } = new Rectangle(11712f, -12704f, 17984f, -7552f);
 	public static Rectangle BurningSteppeAmbient2 { get; set; } = new Rectangle(17952f, -14720f, 19872f, -9504f);
@@ -253,10 +253,10 @@ public static class Regions
 	public static Rectangle TyrsFall { get; set; } = new Rectangle(5120f, 9056f, 5408f, 9344f);
 	public static Rectangle DuskwoodCrypt { get; set; } = new Rectangle(9376f, -16032f, 9728f, -15616f);
 	public static Rectangle OutlandToArgus { get; set; } = new Rectangle(22848f, -28224f, 23360f, -27808f);
-	public static Rectangle ClosePortal { get; set; } = new Rectangle(16512f, -19456f, 16800f, -19200f);
+	public static Rectangle ClosePortal { get; set; } = new Rectangle(16736f, -20256f, 17024f, -20000f);
 	public static Rectangle GarithosCrusadeSpawn { get; set; } = new Rectangle(19168f, 7520f, 19776f, 8160f);
 	public static Rectangle GilneasUnlock6 { get; set; } = new Rectangle(6272f, -928f, 8672f, 1312f);
-	public static Rectangle GilneasUnlock1 { get; set; } = new Rectangle(8480f, -2368f, 9824f, -832f);
+	public static Rectangle GilneasUnlock1 { get; set; } = new Rectangle(8288f, -2368f, 9824f, -832f);
 	public static Rectangle GilneasUnlock2 { get; set; } = new Rectangle(6624f, -3264f, 8032f, -2400f);
 	public static Rectangle GilneasUnlock3 { get; set; } = new Rectangle(3968f, 416f, 5376f, 2656f);
 	public static Rectangle GilneasUnlock4 { get; set; } = new Rectangle(3392f, -2656f, 5504f, -320f);
@@ -299,10 +299,10 @@ public static class Regions
 	public static Rectangle SatyrCamp { get; set; } = new Rectangle(-14816f, 6080f, -13888f, 6912f);
 	public static Rectangle FountainOfHealthAlterac { get; set; } = new Rectangle(10656f, 5536f, 11104f, 6016f);
 	public static Rectangle Nazjatar { get; set; } = new Rectangle(-5792f, -3680f, -5024f, -2752f);
-	public static Rectangle Wrathgate_Portal_1 { get; set; } = new Rectangle(-3040f, 18016f, -2464f, 18560f);
+	public static Rectangle Wrathgate_Portal_1 { get; set; } = new Rectangle(-4352f, 15584f, -3776f, 16128f);
 	public static Rectangle Scholomance_Exterior_1 { get; set; } = new Rectangle(14368f, 7264f, 14944f, 7872f);
 	public static Rectangle Scholomance_Exterior_2 { get; set; } = new Rectangle(15008f, 6560f, 15552f, 7168f);
-	public static Rectangle Wrathgate_Portal_2 { get; set; } = new Rectangle(-2464f, 18528f, -1888f, 19136f);
+	public static Rectangle Wrathgate_Portal_2 { get; set; } = new Rectangle(-3456f, 15968f, -2880f, 16576f);
 	public static Rectangle AlteracLegionLanding { get; set; } = new Rectangle(11168f, 5632f, 11552f, 5984f);
 	public static Rectangle NorthrendLegionLanding { get; set; } = new Rectangle(3392f, 20512f, 3776f, 20864f);
 	public static Rectangle IslandBlocker1 { get; set; } = new Rectangle(416f, 2048f, 1440f, 2336f);
@@ -318,8 +318,6 @@ public static class Regions
 	public static Rectangle FeathermoonCreeps { get; set; } = new Rectangle(-22464f, -12128f, -18368f, -7584f);
 	public static Rectangle AuberdineUnlock { get; set; } = new Rectangle(-18784f, 8608f, -14784f, 11104f);
 	public static Rectangle KaliRock9 { get; set; } = new Rectangle(-14848f, -11808f, -13632f, -10432f);
-	public static Rectangle HinterEmeraldPortal { get; set; } = new Rectangle(17344f, 6368f, 17792f, 6624f);
-	public static Rectangle DuskwoodEmeraldPortal { get; set; } = new Rectangle(11008f, -15968f, 11456f, -15712f);
 	public static Rectangle FeralasEmeraldPortal { get; set; } = new Rectangle(-18144f, -6464f, -17696f, -6208f);
 	public static Rectangle AshenvaleEmeraldPortal { get; set; } = new Rectangle(-8576f, 8992f, -8128f, 9280f);
 	public static Rectangle KaliRock10 { get; set; } = new Rectangle(-11296f, 2688f, -10048f, 3424f);
@@ -348,9 +346,16 @@ public static class Regions
 	public static Rectangle KaliRock13 { get; set; } = new Rectangle(-12992f, 1472f, -12096f, 2496f);
 	public static Rectangle KaliRock14 { get; set; } = new Rectangle(-8608f, 6720f, -7744f, 7936f);
 	public static Rectangle GilneasStartPos { get; set; } = new Rectangle(7936f, 1472f, 8928f, 2112f);
-	public static Rectangle QuelStartPos { get; set; } = new Rectangle(16224f, 11904f, 20992f, 17504f);
 	public static Rectangle KaliRock15 { get; set; } = new Rectangle(-15328f, -13120f, -14016f, -11872f);
-	public static Rectangle ForsakenStartPos { get; set; } = new Rectangle(3552f, 22848f, 4480f, 23776f);
+	public static Rectangle ForsakenStartPos { get; set; } = new Rectangle(3296f, 22784f, 4480f, 23776f);
 	public static Rectangle LegionStartPos { get; set; } = new Rectangle(18528f, -31232f, 19456f, -30304f);
+	public static Rectangle DarkPortalUnlock { get; set; } = new Rectangle(17792f, -21856f, 19808f, -19648f);
+	public static Rectangle OrgrimmarFlight { get; set; } = new Rectangle(-9728f, -800f, -9568f, -640f);
+	public static Rectangle ThunderbluffFlight { get; set; } = new Rectangle(-14656f, -4128f, -14496f, -3968f);
+	public static Rectangle IslandBlocker6 { get; set; } = new Rectangle(-2912f, -3904f, -1792f, -2816f);
+	public static Rectangle DalaStartPos { get; set; } = new Rectangle(8768f, 2112f, 10464f, 3488f);
+	public static Rectangle CenarionHoldUnlock { get; set; } = new Rectangle(-18272f, -14400f, -15680f, -12768f);
+	public static Rectangle WindrunnerSpireUnlock { get; set; } = new Rectangle(16416f, 13888f, 16640f, 14176f);
+	public static Rectangle ArthasRandomPoint { get; set; } = new Rectangle(5664f, 3520f, 22304f, 10048f);
 
 }

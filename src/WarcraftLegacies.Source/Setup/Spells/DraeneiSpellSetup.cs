@@ -75,6 +75,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
         SummonUnitTypeId = Constants.UNIT_O05B_DEFENDER_DRAENEI,
         SummonCount = 1,
         Radius = 50,
+        Duration = 0,
       };
       SpellSystem.Register(summonGateway);
     }

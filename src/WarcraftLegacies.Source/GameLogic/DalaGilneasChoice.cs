@@ -12,17 +12,17 @@ namespace WarcraftLegacies.Source.GameLogic
   /// <summary>
   /// A Dialogue where a player can choose between Gilneas and Quel
   /// </summary>
-  public static class QuelGilneasChoiceDialogue
+  public static class DalaGilneasChoiceDialogue
   {
     private static readonly dialog? PickDialogue = DialogCreate();
     private static readonly button? NoButton = DialogAddButton(PickDialogue, "Gilneas", 0);
-    private static readonly button? YesButton = DialogAddButton(PickDialogue, "Quel'thalas", 0);
+    private static readonly button? YesButton = DialogAddButton(PickDialogue, "Dalaran", 0);
     private static readonly trigger? YesTrigger = CreateTrigger();
     private static readonly trigger? NoTrigger = CreateTrigger();
     private static bool _factionPicked;
 
     /// <summary>
-    /// Sets up <see cref="QuelGilneasChoiceDialogue"/>.
+    /// Sets up <see cref="DalaGilneasChoiceDialogue"/>.
     /// </summary>
     public static void Setup()
     {
@@ -35,7 +35,7 @@ namespace WarcraftLegacies.Source.GameLogic
 
     private static void ConcludeFactionPick()
     {
-      if (GetLocalPlayer() == Player(2))
+      if (GetLocalPlayer() == Player(7))
         DialogDisplay(GetLocalPlayer(), PickDialogue, false);
       DialogClear(PickDialogue);
       DialogDestroy(PickDialogue);
@@ -49,13 +49,13 @@ namespace WarcraftLegacies.Source.GameLogic
       }
       else
       {
-        PickQuel();
+        PickDala();
       }
     }
 
     private static void StartFactionPick()
     {
-      if (GetLocalPlayer() == Player(2))
+      if (GetLocalPlayer() == Player(7))
         DialogDisplay(GetLocalPlayer(), PickDialogue, true);
 
       var yesTrigger = CreateTrigger();
@@ -69,19 +69,19 @@ namespace WarcraftLegacies.Source.GameLogic
 
     private static void PickGilneas()
     {
-      var quelUnits = Regions.QuelStartPos.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
+      var dalaUnits = Regions.DalaStartPos.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
       var gilneasUnits = Regions.GilneasStartPos.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
       AssignFaction(GilneasSetup.Gilneas, gilneasUnits);
-      RemoveFaction(QuelthalasSetup.Quelthalas, quelUnits);
-      if (GetLocalPlayer() == Player(2))
+      RemoveFaction(DalaranSetup.Dalaran, dalaUnits);
+      if (GetLocalPlayer() == Player(7))
         SetCameraPosition(Regions.GilneasStartPos.Center.X, Regions.GilneasStartPos.Center.Y);
     }
 
-    private static void PickQuel()
+    private static void PickDala()
     {
-      var quelUnits = Regions.QuelStartPos.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
+      var dalaUnits = Regions.DalaStartPos.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
       var gilneasUnits = Regions.GilneasStartPos.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
-      AssignFaction(QuelthalasSetup.Quelthalas, quelUnits);
+      AssignFaction(DalaranSetup.Dalaran, dalaUnits);
       RemoveFaction(GilneasSetup.Gilneas, gilneasUnits);
     }
 
@@ -108,9 +108,9 @@ namespace WarcraftLegacies.Source.GameLogic
 
     private static void AssignFaction(Faction faction, List<unit> units)
     {
-      Player(2).SetFaction(faction);
-      Player(2).SetTeam(TeamSetup.NorthAlliance);
-      Player(2).RescueGroup(units, true);
+      Player(7).SetFaction(faction);
+      Player(7).SetTeam(TeamSetup.NorthAlliance);
+      Player(7).RescueGroup(units, true);
     }
   }
 }

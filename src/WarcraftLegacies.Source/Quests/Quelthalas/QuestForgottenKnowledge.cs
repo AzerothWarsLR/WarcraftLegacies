@@ -1,6 +1,7 @@
 ﻿
 using MacroTools.ControlPointSystem;
 using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
+using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
 using WCSharp.Shared.Data;
@@ -22,6 +23,7 @@ namespace WarcraftLegacies.Source.Quests.Quelthalas
     {
       AddObjective(new ObjectiveControlLevel(
         ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N032_SURAMAR_20GOLD_MIN), 10));
+      AddObjective(new ObjectiveTime(1080));
       ResearchId = Constants.UPGRADE_R08Z_QUEST_COMPLETED_FORGOTTEN_KNOWLEDGE;
     }
 

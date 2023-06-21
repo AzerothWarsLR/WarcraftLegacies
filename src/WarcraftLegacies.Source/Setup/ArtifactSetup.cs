@@ -94,6 +94,11 @@ namespace WarcraftLegacies.Source.Setup
     public Artifact BronzeFragment { get; }
     
     /// <summary>
+    /// A fragment of Gorehowl.
+    /// </summary>
+    public Artifact Gorehowl { get; }
+
+    /// <summary>
     /// Sets up <see cref="ArtifactSetup"/>.
     /// </summary>
     public ArtifactSetup(PreplacedUnitSystem preplacedUnitSystem)
@@ -196,6 +201,9 @@ namespace WarcraftLegacies.Source.Setup
       UnitAddAbility(worgenBloodShamanHero, Artifact.ArtifactHolderAbilId);
       UnitAddItem(worgenBloodShamanHero, ScytheOfElune.Item);
       ArtifactManager.Register(ScytheOfElune);
+
+      Gorehowl = new Artifact(CreateItem(Constants.ITEM_I01V_GOREHOWL, -8173, -2870));
+      ArtifactManager.Register(Gorehowl);
     }
   }
 }
