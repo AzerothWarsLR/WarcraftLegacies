@@ -16,8 +16,10 @@ namespace WarcraftLegacies.Source.GameLogic
     {
       PlayerUnitEvents.Register(UnitTypeEvent.IsSummoned, () =>
       {
-        GetTriggerUnit().AddType(UNIT_TYPE_SUMMONED);
+        var unit = GetTriggerUnit(); 
+        if (IsUnitType(unit, UNIT_TYPE_UNDEAD))
+          GetTriggerUnit().AddType(UNIT_TYPE_SUMMONED);
       });
     }
   }
-}
+} 
