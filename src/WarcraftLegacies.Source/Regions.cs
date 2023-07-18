@@ -54,7 +54,7 @@ public static class Regions
 	public static Rectangle Northrend_ships { get; set; } = new Rectangle(-9216f, 19680f, 6048f, 24992f);
 	public static Rectangle Orgrimmar { get; set; } = new Rectangle(-9824f, -2080f, -5824f, 1248f);
 	public static Rectangle Plague_1 { get; set; } = new Rectangle(6368f, 6848f, 7840f, 10816f);
-	public static Rectangle Plague_2 { get; set; } = new Rectangle(12608f, 7968f, 15168f, 9120f);
+	public static Rectangle Plague_2 { get; set; } = new Rectangle(11392f, 8736f, 13952f, 9888f);
 	public static Rectangle Plague_3 { get; set; } = new Rectangle(15968f, 7744f, 18656f, 8960f);
 	public static Rectangle Plague_4 { get; set; } = new Rectangle(15328f, 8896f, 18496f, 10944f);
 	public static Rectangle Plague_5 { get; set; } = new Rectangle(7136f, 10272f, 9280f, 11840f);
@@ -357,6 +357,5 @@ public static class Regions
 	public static Rectangle CenarionHoldUnlock { get; set; } = new Rectangle(-18272f, -14400f, -15680f, -12768f);
 	public static Rectangle WindrunnerSpireUnlock { get; set; } = new Rectangle(16416f, 13888f, 16640f, 14176f);
 	public static Rectangle ArthasRandomPoint { get; set; } = new Rectangle(5664f, 3520f, 22304f, 10048f);
-	public static Rectangle TESTINGDEATH { get; set; } = new Rectangle(12800f, 9920f, 13344f, 10272f);
 
 }
