@@ -27,7 +27,6 @@ namespace WarcraftLegacies.Source.Setup
       SunfuryQuestSetup.Setup(artifactSetup, preplacedUnitSystem, allLegendSetup);
       GilneasQuestSetup.Setup(artifactSetup, preplacedUnitSystem, allLegendSetup);
       SharedQuestSetup.Setup(preplacedUnitSystem, artifactSetup, allLegendSetup);
-      CrisisQuestSetup.Setup(preplacedUnitSystem, allLegendSetup);
       
     }
   }

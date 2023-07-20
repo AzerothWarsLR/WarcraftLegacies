@@ -32,9 +32,6 @@ namespace WarcraftLegacies.Source.Setup
       NazjatarSetup.Setup(preplacedUnitSystem);
       BlackEmpireSetup.Setup(preplacedUnitSystem);
       TwilightHammerSetup.Setup(preplacedUnitSystem);
-
-      CrisisCaptainSetup.Setup(preplacedUnitSystem);
-      CrisisFootmanSetup.Setup(preplacedUnitSystem);
     }
   }
 }
