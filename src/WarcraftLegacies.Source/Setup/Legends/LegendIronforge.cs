@@ -26,7 +26,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
       Falstad = new LegendaryHero("Falstad Wildhammer")
       {
         UnitType = FourCC("H028"),
-        StartingXp = 7000
+        StartingXp = 2800
       };
 
       Magni = new LegendaryHero("Magni Bronzebeard")
