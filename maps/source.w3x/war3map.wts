@@ -31147,6 +31147,12 @@ STRING 5191
 W
 }
 
+STRING 5192
+// Upgrades: R09R (Chaos), Name (Name)
+{
+Quest Completed: Power Grows
+}
+
 STRING 5193
 // Abilities: Acn2 (Cannibalize), EditorSuffix (Editor Suffix)
 {
@@ -37799,6 +37805,12 @@ STRING 6301
 // Abilities: Amls (Aerial Shackles), Hotkey (Hotkey - Normal)
 {
 Q
+}
+
+STRING 6302
+// Upgrades: R09S (Steel Ranged Weapons,Thorium Ranged Weapons,Arcanite Ranged Weapons), Name (Name)
+{
+Quest Complete: Secrets of the Ethereal Realm
 }
 
 STRING 6303
@@ -54100,6 +54112,12 @@ STRING 9016
 // Abilities: A10R (Brute Strength), Researchhotkey (Hotkey - Learn)
 {
 E
+}
+
+STRING 9017
+// Upgrades: R09T (Chaos), Name (Name)
+{
+Quest Completed: Unleash the Swarm
 }
 
 STRING 9018
