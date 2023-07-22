@@ -13,6 +13,8 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       LegionSetup.Legion.StartingQuest = newQuest;
       LegionSetup.Legion.AddQuest(new QuestControlMonastery(allLegendSetup.Lordaeron.Monastery));
       LegionSetup.Legion.AddQuest(new QuestControlSpire(allLegendSetup.Quelthalas.Spire));
+      LegionSetup.Legion.AddQuest(new QuestUnlockAstral(allLegendSetup.Neutral.Caerdarrow));
+      LegionSetup.Legion.AddQuest(new QuestKillCapitalPalace(allLegendSetup.Lordaeron.CapitalPalace));
       LegionSetup.Legion.AddQuest(new QuestControlShadowfang(allLegendSetup.Dalaran.Shadowfang));
       LegionSetup.Legion.AddQuest(new QuestAlteracBase(Regions.AlteracAmbient));
       LegionSetup.Legion.AddQuest(new QuestLegionCaptureSunwell(allLegendSetup.Quelthalas.Sunwell));
