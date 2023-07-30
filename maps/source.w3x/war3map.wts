@@ -94578,12 +94578,6 @@ STRING 15765
 Greyguard
 }
 
-STRING 15766
-// Abilities: A0H1 (Storming Brew), Ubertip (Tooltip - Normal - Extended)
-{
-Restores 180 hit points to friendly units in a large radius.
-}
-
 STRING 15767
 // Units: n0CB (Deepseer), Casterupgradename (Caster Upgrade Names)
 {
@@ -107509,6 +107503,12 @@ STRING 17920
 // Abilities: A0TG (Renewal), Ubertip (Tooltip - Normal - Extended)
 {
 Heals a target friendly unit for <A07U,DataA3> hit points over <A07U,Dur3> seconds.
+}
+
+STRING 17921
+// Abilities: A0H1 (Storming Brew), Ubertip (Tooltip - Normal - Extended)
+{
+Restores 125 hit points to friendly units in a large radius.
 }
 
 STRING 17922
