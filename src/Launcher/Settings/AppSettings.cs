@@ -1,4 +1,4 @@
-﻿namespace Launcher
+﻿namespace Launcher.Settings
 {
   /// <summary>
   /// Dummy class used for serialization.

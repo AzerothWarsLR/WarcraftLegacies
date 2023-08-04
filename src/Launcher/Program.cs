@@ -7,6 +7,7 @@ using System.Text.Json;
 using System.Text.Json.Serialization;
 using CSharpLua;
 using Launcher.Services;
+using Launcher.Settings;
 using Microsoft.CodeAnalysis;
 using Microsoft.Extensions.Configuration;
 using War3Api.Object.Enums;
@@ -60,8 +61,9 @@ namespace Launcher
           new JsonToW3XConversionService().Convert();
           break;
         case LaunchMode.W3XToJson:
-          var outputFolderPath = config.GetRequiredSection(nameof(LaunchSettings)).Get<LaunchSettings>().OutputFolderPath;
-          new W3XToJsonConversionService().Convert(baseMapPath, outputFolderPath);
+          var launchSettings = config.GetRequiredSection(nameof(LaunchSettings)).Get<LaunchSettings>();
+          var mapSettings = config.GetRequiredSection(nameof(MapSettings)).Get<MapSettings>();
+          new W3XToJsonConversionService().Convert(baseMapPath, Path.Combine(launchSettings.MapDataFolderPath, mapSettings.Name));
           break;
         default:
           throw new ArgumentOutOfRangeException(nameof(args));

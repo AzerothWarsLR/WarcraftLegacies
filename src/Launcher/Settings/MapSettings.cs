@@ -1,4 +1,4 @@
-﻿namespace Launcher
+﻿namespace Launcher.Settings
 {
   public sealed class MapSettings
   {

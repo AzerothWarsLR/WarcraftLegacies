@@ -73,8 +73,13 @@ namespace Launcher.Services
 
     private void SerializeAndWrite<T>(T value, string outputFolderPath, string subPath)
     {
+      if (!Directory.Exists(outputFolderPath))
+        Directory.CreateDirectory(outputFolderPath!);
+      
       var asJson = JsonSerializer.Serialize(value, _jsonSerializerOptions);
-      File.WriteAllText(Path.Combine(outputFolderPath, subPath), asJson);
+      var fullPath = Path.Combine(outputFolderPath, subPath);
+      
+      File.WriteAllText(fullPath, asJson);
     }
   }
 }

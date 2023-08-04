@@ -1,4 +1,4 @@
-﻿namespace Launcher
+﻿namespace Launcher.Settings
 {
   public sealed class LaunchSettings
   {
@@ -11,6 +11,11 @@
     /// The path to your Warcraft 3 executable.
     /// </summary>
     public string Warcraft3ExecutablePath { get; set; }
+    
+    /// <summary>
+    /// The folder in which to store serialized .json data.
+    /// </summary>
+    public string MapDataFolderPath { get; set; }
     
     /// <summary>
     /// The folder where you want the published map to be saved to.
