@@ -6,6 +6,7 @@ using System.Text;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 using CSharpLua;
+using Launcher.Services;
 using Microsoft.CodeAnalysis;
 using Microsoft.Extensions.Configuration;
 using War3Api.Object.Enums;
@@ -35,22 +36,32 @@ namespace Launcher
     {
       var launchMode = Enum.Parse<LaunchMode>(args[0]);
       var baseMapPath = args[1];
-      var sourceCodeProjectFolderPath = args[2];
       var config = GetAppConfiguration();
+      string sourceCodeProjectFolderPath;
 
       switch (launchMode)
       {
         case LaunchMode.GenerateConstants:
+          sourceCodeProjectFolderPath = args[2];
           ConstantGenerator.Run(baseMapPath, sourceCodeProjectFolderPath, new ConstantGeneratorOptions
           {
             IncludeCode = true
           });
           break;
         case LaunchMode.Publish:
+          sourceCodeProjectFolderPath = args[2];
           Build(baseMapPath, sourceCodeProjectFolderPath, false, config);
           break;
         case LaunchMode.Test:
+          sourceCodeProjectFolderPath = args[2];
           Build(baseMapPath, sourceCodeProjectFolderPath, true, config);
+          break;
+        case LaunchMode.JsonToW3X:
+          new JsonToW3XConversionService().Convert();
+          break;
+        case LaunchMode.W3XToJson:
+          var outputFolderPath = config.GetRequiredSection(nameof(LaunchSettings)).Get<LaunchSettings>().OutputFolderPath;
+          new W3XToJsonConversionService().Convert(baseMapPath, outputFolderPath);
           break;
         default:
           throw new ArgumentOutOfRangeException(nameof(args));
@@ -104,7 +115,6 @@ namespace Launcher
 
       // Load existing map data
       var map = Map.Open(baseMapPath);
-      
       ConfigureControlPointData(map);
       if (launch)
         SetTestPlayerSlot(map, launchSettings.TestingPlayerSlot);

@@ -1,9 +1,10 @@
-﻿namespace Launcher
+﻿namespace Launcher;
+
+public enum LaunchMode
 {
-  public enum LaunchMode
-  {
-    GenerateConstants,
-    Publish,
-    Test
-  }
+  GenerateConstants,
+  Publish,
+  Test,
+  W3XToJson,
+  JsonToW3X
 }
