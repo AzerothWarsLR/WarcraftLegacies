@@ -62,7 +62,7 @@ namespace Launcher
         cfg.CreateMap<DoodadObjectDataDto, DoodadObjectData>();
         cfg.CreateMap<MapDoodadsDto, MapDoodads>();
         cfg.CreateMap<MapEnvironmentDto, MapEnvironment>();
-        cfg.CreateMap<MapImportedFilesDto, ImportedFiles>();
+        cfg.CreateMap<MapImportedFilesDto, MapImportedFiles>();
         cfg.CreateMap<ItemObjectDataDto, ItemObjectData>();
         cfg.CreateMap<MapInfoDto, MapInfo>();
         cfg.CreateMap<MapRegionsDto, MapRegions>();

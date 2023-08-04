@@ -1,14 +1,10 @@
-﻿namespace Launcher.DataTransferObjects
+﻿using War3Net.Build.Import;
+
+namespace Launcher.DataTransferObjects
 {
   public class MapImportedFilesDto
   {
     public int FormatVersion { get; set; }
-    public FileDto[] Files { get; set; }
-  }
-
-  public class FileDto
-  {
-    public int Flags { get; set; }
-    public string FullPath { get; set; }
+    public ImportedFile[] Files { get; set; }
   }
 }

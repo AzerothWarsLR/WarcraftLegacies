@@ -8,8 +8,4 @@ namespace Launcher.DataTransferObjects
     public bool Protected { get; set; }
     public Region[] Regions { get; set; }
   }
-
-  public class Color
-  {
-  }
 }
