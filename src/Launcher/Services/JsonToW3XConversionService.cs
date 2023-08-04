@@ -1,6 +1,5 @@
 ﻿using System.IO;
 using System.Text.Json;
-using War3Api.Object;
 using War3Net.Build;
 using War3Net.Build.Audio;
 using War3Net.Build.Environment;
