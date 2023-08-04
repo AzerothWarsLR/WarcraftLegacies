@@ -1,6 +1,6 @@
 ﻿namespace Launcher.DataTransferObjects
 {
-  public class RootObject
+  public class UpgradeObjectDataDto
   {
     public int FormatVersion { get; set; }
     public BaseUpgrades[] BaseUpgrades { get; set; }

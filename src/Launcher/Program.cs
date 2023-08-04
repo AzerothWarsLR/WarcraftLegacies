@@ -5,15 +5,23 @@ using System.Linq;
 using System.Text;
 using System.Text.Json;
 using System.Text.Json.Serialization;
+using AutoMapper;
 using CSharpLua;
+using Launcher.DataTransferObjects;
 using Launcher.Services;
 using Launcher.Settings;
 using Microsoft.CodeAnalysis;
 using Microsoft.Extensions.Configuration;
 using War3Api.Object.Enums;
 using War3Net.Build;
+using War3Net.Build.Common;
+using War3Net.Build.Environment;
 using War3Net.Build.Extensions;
+using War3Net.Build.Import;
 using War3Net.Build.Info;
+using War3Net.Build.Object;
+using War3Net.Build.Script;
+using War3Net.Build.Widget;
 using War3Net.IO.Mpq;
 using WCSharp.ConstantGenerator;
 using CoreSystemProvider = CSharpLua.CoreSystem.CoreSystemProvider;
@@ -42,6 +50,33 @@ namespace Launcher
 
       var launchSettings = config.GetRequiredSection(nameof(LaunchSettings)).Get<LaunchSettings>();
       var mapSettings = config.GetRequiredSection(nameof(MapSettings)).Get<MapSettings>();
+
+      var autoMapperConfig = new MapperConfiguration(cfg =>
+      {
+        cfg.CreateMap<AbilityObjectDataDto, AbilityObjectData>();
+        cfg.CreateMap<BuffObjectDataDto, BuffObjectData>();
+        cfg.CreateMap<CustomTextTriggersDto, MapCustomTextTriggers>();
+        cfg.CreateMap<DestructableObjectDataDto, DestructableObjectData>();
+        cfg.CreateMap<DoodadObjectDataDto, DoodadObjectData>();
+        cfg.CreateMap<DoodadObjectDataDto, DoodadObjectData>();
+        cfg.CreateMap<DoodadsDto, MapDoodads>();
+        cfg.CreateMap<EnvironmentDto, MapEnvironment>();
+        cfg.CreateMap<ImportedFilesDto, ImportedFiles>();
+        cfg.CreateMap<ItemObjectDataDto, ItemObjectData>();
+        cfg.CreateMap<MapInfoDto, MapInfo>();
+        cfg.CreateMap<MapRegionsDto, MapRegions>();
+        cfg.CreateMap<MapUnitsDto, MapUnits>();
+        cfg.CreateMap<ModificationDto, LevelObjectModification>();
+        cfg.CreateMap<PathingMapDto, MapPathingMap>();
+        cfg.CreateMap<PreviewIconsDto, MapPreviewIcons>();
+        cfg.CreateMap<QuadrilateralDto, Quadrilateral>();
+        cfg.CreateMap<ShadowMapDto, MapShadowMap>();
+        cfg.CreateMap<SoundsDto, Sounds>();
+        cfg.CreateMap<TriggerStringsDto, TriggerStrings>();
+        cfg.CreateMap<UnitObjectDataDto, UnitObjectData>();
+        cfg.CreateMap<UpgradeObjectDataDto, UpgradeObjectData>();
+      });
+      var mapper = new Mapper(autoMapperConfig);
       
       switch (launchMode)
       {
@@ -61,11 +96,11 @@ namespace Launcher
           Build(baseMapPath, sourceCodeProjectFolderPath, true, config);
           break;
         case LaunchMode.JsonToW3X:
-          new JsonToW3XConversionService().Convert(Path.Combine(launchSettings.MapDataFolderPath, mapSettings.Name),
+          new JsonToW3XConversionService(mapper).Convert(Path.Combine(launchSettings.MapDataFolderPath, mapSettings.Name),
             Path.Combine(launchSettings.MapFolderPath, mapSettings.Name));
           break;
         case LaunchMode.W3XToJson:
-          new W3XToJsonConversionService().Convert(baseMapPath, Path.Combine(launchSettings.MapDataFolderPath, mapSettings.Name));
+          new W3XToJsonConversionService(mapper).Convert(baseMapPath, Path.Combine(launchSettings.MapDataFolderPath, mapSettings.Name));
           break;
         default:
           throw new ArgumentOutOfRangeException(nameof(args));

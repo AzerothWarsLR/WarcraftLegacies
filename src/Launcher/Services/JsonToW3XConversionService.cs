@@ -1,9 +1,8 @@
 ﻿using System.IO;
 using System.Text.Json;
-using Launcher.DataTransferObjects;
+using AutoMapper;
 using War3Net.Build;
 using War3Net.Build.Audio;
-using War3Net.Build.Common;
 using War3Net.Build.Environment;
 using War3Net.Build.Import;
 using War3Net.Build.Info;
@@ -19,6 +18,8 @@ namespace Launcher.Services
   /// </summary>
   public sealed class JsonToW3XConversionService
   {
+    private readonly IMapper _mapper;
+
     private readonly JsonSerializerOptions _jsonSerializerOptions = new()
     {
       IgnoreReadOnlyProperties = true,
@@ -31,7 +32,12 @@ namespace Launcher.Services
       AttributesCreateMode = MpqFileCreateMode.Overwrite,
       ListFileCreateMode = MpqFileCreateMode.Overwrite
     };
-    
+
+    public JsonToW3XConversionService(IMapper mapper)
+    {
+      _mapper = mapper;
+    }
+
     private const string UpgradeObjectDataPath = "UpgradeObjectData.json";
     private const string UnitObjectDataPath = "UnitObjectData.json";
     private const string ItemObjectDataPath = "ItemObjectData.json";
@@ -57,62 +63,6 @@ namespace Launcher.Services
     /// </summary>
     public void Convert(string mapDataRootFolder, string outputFilePath)
     {
-      var mapInfoDto = DeserializeFromFile<MapInfoDto>(Path.Combine(mapDataRootFolder, InfoPath));
-      var mapInfo = new MapInfo(mapInfoDto.FormatVersion)
-      {
-        MapVersion = mapInfoDto.MapVersion,
-        EditorVersion = mapInfoDto.EditorVersion,
-        GameVersion = mapInfoDto.GameVersion,
-        MapName = mapInfoDto.MapName,
-        MapAuthor = mapInfoDto.MapAuthor,
-        MapDescription = mapInfoDto.MapDescription,
-        RecommendedPlayers = mapInfoDto.RecommendedPlayers,
-        Unk1 = mapInfoDto.Unk1,
-        Unk2 = mapInfoDto.Unk2,
-        Unk3 = mapInfoDto.Unk3,
-        Unk4 = mapInfoDto.Unk4,
-        Unk5 = mapInfoDto.Unk5,
-        Unk6 = mapInfoDto.Unk6,
-        CameraBounds = new Quadrilateral(mapInfoDto.CameraBounds.BottomLeft, mapInfoDto.CameraBounds.TopRight,
-          mapInfoDto.CameraBounds.TopLeft, mapInfoDto.CameraBounds.BottomRight),
-        CameraBoundsComplements = mapInfoDto.CameraBoundsComplements,
-        PlayableMapAreaWidth = mapInfoDto.PlayableMapAreaWidth,
-        PlayableMapAreaHeight = mapInfoDto.PlayableMapAreaHeight,
-        Unk7 = mapInfoDto.Unk7,
-        MapFlags = mapInfoDto.MapFlags,
-        Tileset = mapInfoDto.Tileset,
-        CampaignBackgroundNumber = mapInfoDto.CampaignBackgroundNumber,
-        LoadingScreenBackgroundNumber = mapInfoDto.LoadingScreenBackgroundNumber,
-        LoadingScreenPath = mapInfoDto.LoadingScreenPath,
-        LoadingScreenText = mapInfoDto.LoadingScreenText,
-        LoadingScreenTitle = mapInfoDto.LoadingScreenTitle,
-        LoadingScreenSubtitle = mapInfoDto.LoadingScreenSubtitle,
-        LoadingScreenNumber = mapInfoDto.LoadingScreenNumber,
-        GameDataSet = mapInfoDto.GameDataSet,
-        PrologueScreenPath = mapInfoDto.PrologueScreenPath,
-        PrologueScreenText = mapInfoDto.PrologueScreenText,
-        PrologueScreenTitle = mapInfoDto.PrologueScreenTitle,
-        PrologueScreenSubtitle = mapInfoDto.PrologueScreenSubtitle,
-        FogStyle = mapInfoDto.FogStyle,
-        FogStartZ = mapInfoDto.FogStartZ,
-        FogEndZ = mapInfoDto.FogEndZ,
-        FogDensity = mapInfoDto.FogDensity,
-        FogColor = mapInfoDto.FogColor,
-        GlobalWeather = mapInfoDto.GlobalWeather,
-        SoundEnvironment = mapInfoDto.SoundEnvironment,
-        LightEnvironment = mapInfoDto.LightEnvironment,
-        WaterTintingColor = mapInfoDto.WaterTintingColor,
-        ScriptLanguage = mapInfoDto.ScriptLanguage,
-        SupportedModes = mapInfoDto.SupportedModes,
-        GameDataVersion = mapInfoDto.GameDataVersion,
-        Players = mapInfoDto.Players,
-        Forces = mapInfoDto.Forces,
-        UpgradeData = mapInfoDto.UpgradeData,
-        TechData = mapInfoDto.TechData,
-        RandomUnitTables = mapInfoDto.RandomUnitTables,
-        RandomItemTables = null
-      };
-      
       var map = new Map
       {
         Sounds = DeserializeFromFile<MapSounds>(Path.Combine(mapDataRootFolder, SoundsPath)),
@@ -122,7 +72,7 @@ namespace Launcher.Services
         Regions = DeserializeFromFile<MapRegions>(Path.Combine(mapDataRootFolder, RegionsPath)),
         ShadowMap = DeserializeFromFile<MapShadowMap>(Path.Combine(mapDataRootFolder, ShadowMapPath)),
         ImportedFiles = DeserializeFromFile<MapImportedFiles>(Path.Combine(mapDataRootFolder, ImportedFilesPath)),
-        Info = mapInfo,
+        Info = _mapper.Map<MapInfo>(DeserializeFromFile<MapImportedFiles>(Path.Combine(mapDataRootFolder, InfoPath))),
         AbilityObjectData = DeserializeFromFile<AbilityObjectData>(Path.Combine(mapDataRootFolder, AbilityObjectDataPath)),
         BuffObjectData = DeserializeFromFile<BuffObjectData>(Path.Combine(mapDataRootFolder, BuffObjectDataPath)),
         DestructableObjectData = DeserializeFromFile<DestructableObjectData>(Path.Combine(mapDataRootFolder, DestructableObjectDataPath)),

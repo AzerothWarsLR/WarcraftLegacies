@@ -1,5 +1,6 @@
 ﻿using System.IO;
 using System.Text.Json;
+using AutoMapper;
 using War3Net.Build;
 using JsonSerializer = System.Text.Json.JsonSerializer;
 
@@ -10,12 +11,19 @@ namespace Launcher.Services
   /// </summary>
   public sealed class W3XToJsonConversionService
   {
+    private readonly IMapper _mapper;
+
     private readonly JsonSerializerOptions _jsonSerializerOptions = new()
     {
       IgnoreReadOnlyProperties = true,
       WriteIndented = true
     };
-    
+
+    public W3XToJsonConversionService(IMapper mapper)
+    {
+      _mapper = mapper;
+    }
+
     private const string UpgradeObjectDataPath = "UpgradeObjectData.json";
     private const string UnitObjectDataPath = "UnitObjectData.json";
     private const string ItemObjectDataPath = "ItemObjectData.json";
