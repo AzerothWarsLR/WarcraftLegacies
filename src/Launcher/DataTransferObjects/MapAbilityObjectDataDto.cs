@@ -1,6 +1,6 @@
 ﻿namespace Launcher.DataTransferObjects
 {
-  public class AbilityObjectDataDto
+  public class MapAbilityObjectDataDto
   {
     public int FormatVersion { get; set; }
     public BaseAbilities[] BaseAbilities { get; set; }

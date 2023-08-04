@@ -1,13 +1,13 @@
 ﻿namespace Launcher.DataTransferObjects
 {
-  public class UnitObjectDataDto
+  public class MapDestructableObjectDataDto
   {
     public int FormatVersion { get; set; }
-    public BaseUnits[] BaseUnits { get; set; }
-    public NewUnits[] NewUnits { get; set; }
+    public BaseDestructables[] BaseDestructables { get; set; }
+    public NewDestructables[] NewDestructables { get; set; }
   }
 
-  public class BaseUnits
+  public class BaseDestructables
   {
     public int OldId { get; set; }
     public int NewId { get; set; }
@@ -15,14 +15,7 @@
     public Modifications[] Modifications { get; set; }
   }
 
-  public class Modifications
-  {
-    public int Id { get; set; }
-    public int Type { get; set; }
-    public object Value { get; set; }
-  }
-
-  public class NewUnits
+  public class NewDestructables
   {
     public int OldId { get; set; }
     public int NewId { get; set; }

@@ -1,6 +1,6 @@
 ﻿namespace Launcher.DataTransferObjects
 {
-  public class TriggerStringsDto
+  public class MapTriggerStringsDto
   {
     public StringsDto[] Strings { get; set; }
   }

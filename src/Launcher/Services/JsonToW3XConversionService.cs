@@ -68,25 +68,25 @@ namespace Launcher.Services
       {
         Sounds = DeserializeFromFile<MapSounds, MapSoundsDto>(Path.Combine(mapDataRootFolder, SoundsPath)),
         Environment = DeserializeFromFile<MapEnvironment, MapEnvironmentDto>(Path.Combine(mapDataRootFolder, EnvironmentPath)),
-        PathingMap = DeserializeFromFile<MapPathingMap, PathingMapDto>(Path.Combine(mapDataRootFolder, PathingMapPath)),
+        PathingMap = DeserializeFromFile<MapPathingMap, MapPathingMapDto>(Path.Combine(mapDataRootFolder, PathingMapPath)),
         PreviewIcons = DeserializeFromFile<MapPreviewIcons, MapPreviewIconsDto>(Path.Combine(mapDataRootFolder, PreviewIconsPath)),
         Regions = DeserializeFromFile<MapRegions, MapRegionsDto>(Path.Combine(mapDataRootFolder, RegionsPath)),
         ShadowMap = DeserializeFromFile<MapShadowMap, MapShadowMapDto>(Path.Combine(mapDataRootFolder, ShadowMapPath)),
         ImportedFiles = DeserializeFromFile<MapImportedFiles, MapImportedFilesDto>(Path.Combine(mapDataRootFolder, ImportedFilesPath)),
         Info = DeserializeFromFile<MapInfo, MapInfoDto>(Path.Combine(mapDataRootFolder, InfoPath)),
-        AbilityObjectData = DeserializeFromFile<AbilityObjectData, AbilityObjectDataDto>(Path.Combine(mapDataRootFolder, AbilityObjectDataPath)),
-        BuffObjectData = DeserializeFromFile<BuffObjectData, BuffObjectDataDto>(Path.Combine(mapDataRootFolder, BuffObjectDataPath)),
-        DestructableObjectData = DeserializeFromFile<DestructableObjectData, DestructableObjectDataDto>(Path.Combine(mapDataRootFolder, DestructableObjectDataPath)),
-        DoodadObjectData = DeserializeFromFile<DoodadObjectData, DoodadObjectDataDto>(Path.Combine(mapDataRootFolder, DoodadObjectDataPath)),
-        ItemObjectData = DeserializeFromFile<ItemObjectData, ItemObjectDataDto>(Path.Combine(mapDataRootFolder, ItemObjectDataPath)),
-        UnitObjectData = DeserializeFromFile<UnitObjectData, UnitObjectDataDto>(Path.Combine(mapDataRootFolder, UnitObjectDataPath)),
-        UpgradeObjectData = DeserializeFromFile<UpgradeObjectData, UpgradeObjectDataDto>(Path.Combine(mapDataRootFolder, UpgradeObjectDataPath)),
+        AbilityObjectData = DeserializeFromFile<MapAbilityObjectData, MapAbilityObjectDataDto>(Path.Combine(mapDataRootFolder, AbilityObjectDataPath)),
+        BuffObjectData = DeserializeFromFile<MapBuffObjectData, MapBuffObjectDataDto>(Path.Combine(mapDataRootFolder, BuffObjectDataPath)),
+        DestructableObjectData = DeserializeFromFile<MapDestructableObjectData, MapDestructableObjectDataDto>(Path.Combine(mapDataRootFolder, DestructableObjectDataPath)),
+        DoodadObjectData = DeserializeFromFile<MapDoodadObjectData, MapDoodadObjectDataDto>(Path.Combine(mapDataRootFolder, DoodadObjectDataPath)),
+        ItemObjectData = DeserializeFromFile<MapItemObjectData, MapItemObjectDataDto>(Path.Combine(mapDataRootFolder, ItemObjectDataPath)),
+        UnitObjectData = DeserializeFromFile<MapUnitObjectData, MapUnitObjectDataDto>(Path.Combine(mapDataRootFolder, UnitObjectDataPath)),
+        UpgradeObjectData = DeserializeFromFile<MapUpgradeObjectData, MapUpgradeObjectDataDto>(Path.Combine(mapDataRootFolder, UpgradeObjectDataPath)),
         CustomTextTriggers = DeserializeFromFile<MapCustomTextTriggers, MapCustomTextTriggersDto>(Path.Combine(mapDataRootFolder, CustomTextTriggersPath)),
-        TriggerStrings = DeserializeFromFile<TriggerStrings, TriggerStringsDto>(Path.Combine(mapDataRootFolder, TriggerStringsPath)),
+        TriggerStrings = DeserializeFromFile<MapTriggerStrings, MapTriggerStringsDto>(Path.Combine(mapDataRootFolder, TriggerStringsPath)),
         Doodads = DeserializeFromFile<MapDoodads, MapDoodadsDto>(Path.Combine(mapDataRootFolder, DoodadsPath)),
         Units = DeserializeFromFile<MapUnits, MapUnitsDto>(Path.Combine(mapDataRootFolder, UnitsPath))
       };
-
+      
       var builder = new MapBuilder(map);
       builder.Build(outputFilePath, _archiveCreateOptions);
     }

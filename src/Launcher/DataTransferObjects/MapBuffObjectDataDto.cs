@@ -1,21 +1,21 @@
 ﻿namespace Launcher.DataTransferObjects
 {
-  public class DestructableObjectDataDto
+  public class MapBuffObjectDataDto
   {
     public int FormatVersion { get; set; }
-    public BaseDestructables[] BaseDestructables { get; set; }
-    public NewDestructables[] NewDestructables { get; set; }
+    public BaseBuffs[] BaseBuffs { get; set; }
+    public NewBuffs[] NewBuffs { get; set; }
   }
 
-  public class BaseDestructables
+  public class BaseBuffs
   {
     public int OldId { get; set; }
     public int NewId { get; set; }
     public int[] Unk { get; set; }
-    public Modifications[] Modifications { get; set; }
+    public object[] Modifications { get; set; }
   }
 
-  public class NewDestructables
+  public class NewBuffs
   {
     public int OldId { get; set; }
     public int NewId { get; set; }

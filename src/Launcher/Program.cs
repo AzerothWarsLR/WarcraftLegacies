@@ -54,28 +54,27 @@ namespace Launcher
 
       var autoMapperConfig = new MapperConfiguration(cfg =>
       {
-        cfg.CreateMap<AbilityObjectDataDto, AbilityObjectData>();
-        cfg.CreateMap<BuffObjectDataDto, BuffObjectData>();
+        cfg.CreateMap<MapAbilityObjectDataDto, MapAbilityObjectData>();
+        cfg.CreateMap<MapBuffObjectDataDto, MapBuffObjectData>();
         cfg.CreateMap<MapCustomTextTriggersDto, MapCustomTextTriggers>();
-        cfg.CreateMap<DestructableObjectDataDto, DestructableObjectData>();
-        cfg.CreateMap<DoodadObjectDataDto, DoodadObjectData>();
-        cfg.CreateMap<DoodadObjectDataDto, DoodadObjectData>();
+        cfg.CreateMap<MapDestructableObjectDataDto, MapDestructableObjectData>();
+        cfg.CreateMap<MapDoodadObjectDataDto, MapDoodadObjectData>();
         cfg.CreateMap<MapDoodadsDto, MapDoodads>();
         cfg.CreateMap<MapEnvironmentDto, MapEnvironment>();
         cfg.CreateMap<MapImportedFilesDto, MapImportedFiles>();
-        cfg.CreateMap<ItemObjectDataDto, ItemObjectData>();
+        cfg.CreateMap<MapItemObjectDataDto, MapItemObjectData>();
         cfg.CreateMap<MapInfoDto, MapInfo>();
         cfg.CreateMap<MapRegionsDto, MapRegions>();
         cfg.CreateMap<MapUnitsDto, MapUnits>();
         cfg.CreateMap<ModificationDto, LevelObjectModification>();
-        cfg.CreateMap<PathingMapDto, MapPathingMap>();
+        cfg.CreateMap<MapPathingMapDto, MapPathingMap>();
         cfg.CreateMap<MapPreviewIconsDto, MapPreviewIcons>();
         cfg.CreateMap<QuadrilateralDto, Quadrilateral>();
         cfg.CreateMap<MapShadowMapDto, MapShadowMap>();
         cfg.CreateMap<MapSoundsDto, MapSounds>();
-        cfg.CreateMap<TriggerStringsDto, TriggerStrings>();
-        cfg.CreateMap<UnitObjectDataDto, UnitObjectData>();
-        cfg.CreateMap<UpgradeObjectDataDto, UpgradeObjectData>();
+        cfg.CreateMap<MapTriggerStringsDto, MapTriggerStrings>();
+        cfg.CreateMap<MapUnitObjectDataDto, MapUnitObjectData>();
+        cfg.CreateMap<MapUpgradeObjectDataDto, MapUpgradeObjectData>();
 
         cfg.CreateMap<SoundDto, Sound>();
         cfg.CreateMap<TerrainTileDto, TerrainTile>();

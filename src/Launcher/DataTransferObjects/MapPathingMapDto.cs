@@ -3,7 +3,7 @@ using War3Net.Build.Environment;
 
 namespace Launcher.DataTransferObjects;
 
-public sealed class PathingMapDto
+public sealed class MapPathingMapDto
 {
   public int FormatVersion { get; set; }
   public int Width { get; set; }

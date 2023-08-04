@@ -1,13 +1,13 @@
 ﻿namespace Launcher.DataTransferObjects
 {
-  public class ItemObjectDataDto
+  public class MapDoodadObjectDataDto
   {
     public int FormatVersion { get; set; }
-    public BaseItems[] BaseItems { get; set; }
-    public NewItems[] NewItems { get; set; }
+    public BaseDoodads[] BaseDoodads { get; set; }
+    public NewDoodads[] NewDoodads { get; set; }
   }
 
-  public class BaseItems
+  public class BaseDoodads
   {
     public int OldId { get; set; }
     public int NewId { get; set; }
@@ -15,11 +15,12 @@
     public ModificationDto[] Modifications { get; set; }
   }
 
-  public class NewItems
+
+  public class NewDoodads
   {
     public int OldId { get; set; }
     public int NewId { get; set; }
     public int[] Unk { get; set; }
-    public ModificationDto Modifications { get; set; }
+    public ModificationDto[] Modifications { get; set; }
   }
 }
