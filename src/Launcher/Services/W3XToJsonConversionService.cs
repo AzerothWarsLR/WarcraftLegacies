@@ -44,6 +44,7 @@ namespace Launcher.Services
     private const string InfoPath = "Info.json";
     private const string EnvironmentPath = "Environment.json";
     private const string DoodadsPath = "Doodads.json";
+    private const string TriggersPath = "Triggers.json";
 
     /// <summary>
     /// Converts the provided Warcraft 3 map to JSON and saves it in the specified folder.
@@ -71,6 +72,7 @@ namespace Launcher.Services
       SerializeAndWrite(map.ItemObjectData, outputFolderPath, ItemObjectDataPath);
       SerializeAndWrite(map.UnitObjectData, outputFolderPath, UnitObjectDataPath);
       SerializeAndWrite(map.UpgradeObjectData, outputFolderPath, UpgradeObjectDataPath);
+      SerializeAndWrite(map.Triggers, outputFolderPath, TriggersPath);
       SerializeAndWrite(map.Script, outputFolderPath, ScriptPath);
     }
 

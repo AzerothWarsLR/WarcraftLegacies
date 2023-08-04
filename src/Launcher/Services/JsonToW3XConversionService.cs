@@ -107,6 +107,7 @@ namespace Launcher.Services
     private const string InfoPath = "Info.json";
     private const string EnvironmentPath = "Environment.json";
     private const string DoodadsPath = "Doodads.json";
+    private const string TriggersPath = "Triggers.json";
 
     /// <summary>
     /// Converts the provided JSON data into a Warcraft 3 map and saves it in the specified folder.
@@ -134,6 +135,7 @@ namespace Launcher.Services
         TriggerStrings = DeserializeFromFile<MapTriggerStrings, MapTriggerStringsDto>(Path.Combine(mapDataRootFolder, TriggerStringsPath)),
         Doodads = DeserializeFromFile<MapDoodads, MapDoodadsDto>(Path.Combine(mapDataRootFolder, DoodadsPath)),
         Units = DeserializeFromFile<MapUnits, MapUnitsDto>(Path.Combine(mapDataRootFolder, UnitsPath)),
+        //Triggers = DeserializeFromFile<MapTriggers, MapTriggersDto>(Path.Combine(mapDataRootFolder, UnitsPath)),
         Script = File.ReadAllText(Path.Combine(mapDataRootFolder, ScriptPath))
       };
 
