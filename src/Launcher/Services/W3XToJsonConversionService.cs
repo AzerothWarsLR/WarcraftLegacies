@@ -10,8 +10,12 @@ namespace Launcher.Services
   /// </summary>
   public sealed class W3XToJsonConversionService
   {
-    private readonly JsonSerializerOptions _jsonSerializerOptions;
-    private const string CamerasPath = "Cameras.json";
+    private readonly JsonSerializerOptions _jsonSerializerOptions = new()
+    {
+      IgnoreReadOnlyProperties = true,
+      WriteIndented = true
+    };
+    
     private const string UpgradeObjectDataPath = "UpgradeObjectData.json";
     private const string UnitObjectDataPath = "UnitObjectData.json";
     private const string ItemObjectDataPath = "ItemObjectData.json";
@@ -33,22 +37,12 @@ namespace Launcher.Services
     private const string EnvironmentPath = "Environment.json";
     private const string DoodadsPath = "Doodads.json";
 
-    public W3XToJsonConversionService()
-    {
-      _jsonSerializerOptions = new JsonSerializerOptions
-      {
-        IgnoreReadOnlyProperties = true,
-        WriteIndented = true
-      };
-    }
-    
     /// <summary>
     /// Converts the provided Warcraft 3 map to JSON and saves it in the specified folder.
     /// </summary>
     public void Convert(string baseMapPath, string outputFolderPath)
     {
       var map = Map.Open(baseMapPath);
-      SerializeAndWrite(map.Cameras, outputFolderPath, CamerasPath);
       SerializeAndWrite(map.Doodads, outputFolderPath, DoodadsPath);
       SerializeAndWrite(map.Environment, outputFolderPath, EnvironmentPath);
       SerializeAndWrite(map.Info, outputFolderPath, InfoPath);
