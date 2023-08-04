@@ -36,7 +36,7 @@ namespace Launcher
     private static void Main(string[] args)
     {
       var launchMode = Enum.Parse<LaunchMode>(args[0]);
-      var baseMapPath = args[1];
+      var baseMapPath = args.Length > 1 ? args[1] : "";
       var config = GetAppConfiguration();
       string sourceCodeProjectFolderPath;
 
