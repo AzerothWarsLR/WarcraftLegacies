@@ -82,6 +82,12 @@ Once you have reclaimed Gilneas, open Greymane's Gate and march North to assist 
       Gilneas.ModObjectLimit(FourCC("R09L"), Faction.UNLIMITED); //Worgen Shaman training
       Gilneas.ModObjectLimit(FourCC("R09M"), Faction.UNLIMITED); //harvestWitch training
 
+      Gilneas.AddGoldMine(preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(4236, 1321)));
+      Gilneas.AddGoldMine(preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(4477, -1449)));
+      Gilneas.AddGoldMine(preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(7709, -2853)));
+      Gilneas.AddGoldMine(preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(9392, -921)));
+
+
       FactionManager.Register(Gilneas);
     }
   }
