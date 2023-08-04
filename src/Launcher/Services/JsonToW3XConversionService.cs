@@ -134,7 +134,7 @@ namespace Launcher.Services
         TriggerStrings = DeserializeFromFile<MapTriggerStrings, MapTriggerStringsDto>(Path.Combine(mapDataRootFolder, TriggerStringsPath)),
         Doodads = DeserializeFromFile<MapDoodads, MapDoodadsDto>(Path.Combine(mapDataRootFolder, DoodadsPath)),
         Units = DeserializeFromFile<MapUnits, MapUnitsDto>(Path.Combine(mapDataRootFolder, UnitsPath)),
-        Script = File.ReadAllText(ScriptPath)
+        Script = File.ReadAllText(Path.Combine(mapDataRootFolder, ScriptPath))
       };
 
       var builder = new MapBuilder(map);
