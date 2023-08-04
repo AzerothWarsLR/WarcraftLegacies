@@ -40,6 +40,7 @@ namespace Launcher.Services
 
         cfg.CreateMap<SoundDto, Sound>();
         cfg.CreateMap<TerrainTileDto, TerrainTile>();
+        cfg.CreateMap<UnitDataDto, UnitData>();
       });
       return autoMapperConfig;
     }
