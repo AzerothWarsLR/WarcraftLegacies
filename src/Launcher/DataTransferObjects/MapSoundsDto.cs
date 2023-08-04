@@ -1,12 +1,14 @@
-﻿namespace Launcher.DataTransferObjects
+﻿using System.Numerics;
+
+namespace Launcher.DataTransferObjects
 {
   public class MapSoundsDto
   {
     public int FormatVersion { get; set; }
-    public Sounds[] Sounds { get; set; }
+    public SoundDto[] Sounds { get; set; }
   }
 
-  public class Sounds
+  public class SoundDto
   {
     public string Name { get; set; }
     public string FilePath { get; set; }
@@ -25,7 +27,7 @@
     public double ConeAngleInside { get; set; }
     public double ConeAngleOutside { get; set; }
     public int ConeOutsideVolume { get; set; }
-    public ConeOrientation ConeOrientation { get; set; }
+    public Vector3 ConeOrientation { get; set; }
     public string SoundName { get; set; }
     public int DialogueTextKey { get; set; }
     public string Unk2 { get; set; }
@@ -38,9 +40,5 @@
     public string FacialAnimationGroupLabel { get; set; }
     public string FacialAnimationSetFilepath { get; set; }
     public int Unk11 { get; set; }
-  }
-
-  public class ConeOrientation
-  {
   }
 }

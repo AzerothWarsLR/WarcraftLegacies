@@ -14,6 +14,7 @@ using Microsoft.CodeAnalysis;
 using Microsoft.Extensions.Configuration;
 using War3Api.Object.Enums;
 using War3Net.Build;
+using War3Net.Build.Audio;
 using War3Net.Build.Common;
 using War3Net.Build.Environment;
 using War3Net.Build.Extensions;
@@ -71,10 +72,13 @@ namespace Launcher
         cfg.CreateMap<MapPreviewIconsDto, MapPreviewIcons>();
         cfg.CreateMap<QuadrilateralDto, Quadrilateral>();
         cfg.CreateMap<MapShadowMapDto, MapShadowMap>();
-        cfg.CreateMap<MapSoundsDto, Sounds>();
+        cfg.CreateMap<MapSoundsDto, MapSounds>();
         cfg.CreateMap<TriggerStringsDto, TriggerStrings>();
         cfg.CreateMap<UnitObjectDataDto, UnitObjectData>();
         cfg.CreateMap<UpgradeObjectDataDto, UpgradeObjectData>();
+
+        cfg.CreateMap<SoundDto, Sound>();
+        cfg.CreateMap<TerrainTileDto, TerrainTile>();
       });
       var mapper = new Mapper(autoMapperConfig);
       

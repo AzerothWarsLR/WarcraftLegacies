@@ -1,9 +1,11 @@
-﻿namespace Launcher.DataTransferObjects;
+﻿using War3Net.Build.Common;
+
+namespace Launcher.DataTransferObjects;
 
 public sealed class MapEnvironmentDto
 {
   public int FormatVersion { get; set; }
-  public int Tileset { get; set; }
+  public Tileset Tileset { get; set; }
   public bool IsCustomTileset { get; set; }
   public int[] TerrainTypes { get; set; }
   public int[] CliffTypes { get; set; }
@@ -11,12 +13,12 @@ public sealed class MapEnvironmentDto
   public int Height { get; set; }
   public int Left { get; set; }
   public int Bottom { get; set; }
-  public TerrainTilesDto[] TerrainTiles { get; set; }
+  public TerrainTileDto[] TerrainTiles { get; set; }
   public int Right { get; set; }
   public int Top { get; set; }
 }
 
-public sealed class TerrainTilesDto
+public sealed class TerrainTileDto
 {
   public double Height { get; set; }
   public double WaterHeight { get; set; }

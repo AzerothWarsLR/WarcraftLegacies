@@ -1,9 +1,12 @@
-﻿namespace Launcher.DataTransferObjects;
+﻿using System.Collections.Generic;
+using War3Net.Build.Environment;
+
+namespace Launcher.DataTransferObjects;
 
 public sealed class PathingMapDto
 {
   public int FormatVersion { get; set; }
   public int Width { get; set; }
   public int Height { get; set; }
-  public int[] Cells { get; set; }
+  public List<PathingType> Cell { get; set; }
 }
