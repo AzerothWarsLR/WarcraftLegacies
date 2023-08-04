@@ -64,30 +64,32 @@ namespace Launcher.Services
     {
       var map = new Map
       {
-        Sounds = JsonSerializer.Deserialize<MapSounds>(Path.Combine(mapDataRootFolder, SoundsPath), _jsonSerializerOptions),
-        Cameras = JsonSerializer.Deserialize<MapCameras>(Path.Combine(mapDataRootFolder, CamerasPath), _jsonSerializerOptions),
-        Environment = JsonSerializer.Deserialize<MapEnvironment>(Path.Combine(mapDataRootFolder, EnvironmentPath), _jsonSerializerOptions),
-        PathingMap = JsonSerializer.Deserialize<MapPathingMap>(Path.Combine(mapDataRootFolder, PathingMapPath), _jsonSerializerOptions),
-        PreviewIcons = JsonSerializer.Deserialize<MapPreviewIcons>(Path.Combine(mapDataRootFolder, PreviewIconsPath), _jsonSerializerOptions),
-        Regions = JsonSerializer.Deserialize<MapRegions>(Path.Combine(mapDataRootFolder, RegionsPath), _jsonSerializerOptions),
-        ShadowMap = JsonSerializer.Deserialize<MapShadowMap>(Path.Combine(mapDataRootFolder, ShadowMapPath), _jsonSerializerOptions),
-        ImportedFiles = JsonSerializer.Deserialize<MapImportedFiles>(Path.Combine(mapDataRootFolder, ImportedFilesPath), _jsonSerializerOptions),
-        Info = JsonSerializer.Deserialize<MapInfo>(Path.Combine(mapDataRootFolder, InfoPath), _jsonSerializerOptions),
-        AbilityObjectData = JsonSerializer.Deserialize<AbilityObjectData>(Path.Combine(mapDataRootFolder, AbilityObjectDataPath), _jsonSerializerOptions),
-        BuffObjectData = JsonSerializer.Deserialize<BuffObjectData>(Path.Combine(mapDataRootFolder, BuffObjectDataPath), _jsonSerializerOptions),
-        DestructableObjectData = JsonSerializer.Deserialize<DestructableObjectData>(Path.Combine(mapDataRootFolder, DestructableObjectDataPath), _jsonSerializerOptions),
-        DoodadObjectData = JsonSerializer.Deserialize<DoodadObjectData>(Path.Combine(mapDataRootFolder, DoodadObjectDataPath), _jsonSerializerOptions),
-        ItemObjectData = JsonSerializer.Deserialize<ItemObjectData>(Path.Combine(mapDataRootFolder, ItemObjectDataPath), _jsonSerializerOptions),
-        UnitObjectData = JsonSerializer.Deserialize<UnitObjectData>(Path.Combine(mapDataRootFolder, UnitObjectDataPath), _jsonSerializerOptions),
-        UpgradeObjectData = JsonSerializer.Deserialize<UpgradeObjectData>(Path.Combine(mapDataRootFolder, UpgradeObjectDataPath), _jsonSerializerOptions),
-        CustomTextTriggers = JsonSerializer.Deserialize<MapCustomTextTriggers>(Path.Combine(mapDataRootFolder, CustomTextTriggersPath), _jsonSerializerOptions),
-        TriggerStrings = JsonSerializer.Deserialize<TriggerStrings>(Path.Combine(mapDataRootFolder, TriggerStringsPath), _jsonSerializerOptions),
-        Doodads = JsonSerializer.Deserialize<MapDoodads>(Path.Combine(mapDataRootFolder, DoodadsPath), _jsonSerializerOptions),
-        Units = JsonSerializer.Deserialize<MapUnits>(Path.Combine(mapDataRootFolder, UnitsPath), _jsonSerializerOptions)
+        Sounds = DeserializeFromFile<MapSounds>(Path.Combine(mapDataRootFolder, SoundsPath)),
+        Cameras = DeserializeFromFile<MapCameras>(Path.Combine(mapDataRootFolder, CamerasPath)),
+        Environment = DeserializeFromFile<MapEnvironment>(Path.Combine(mapDataRootFolder, EnvironmentPath)),
+        PathingMap = DeserializeFromFile<MapPathingMap>(Path.Combine(mapDataRootFolder, PathingMapPath)),
+        PreviewIcons = DeserializeFromFile<MapPreviewIcons>(Path.Combine(mapDataRootFolder, PreviewIconsPath)),
+        Regions = DeserializeFromFile<MapRegions>(Path.Combine(mapDataRootFolder, RegionsPath)),
+        ShadowMap = DeserializeFromFile<MapShadowMap>(Path.Combine(mapDataRootFolder, ShadowMapPath)),
+        ImportedFiles = DeserializeFromFile<MapImportedFiles>(Path.Combine(mapDataRootFolder, ImportedFilesPath)),
+        Info = DeserializeFromFile<MapInfo>(Path.Combine(mapDataRootFolder, InfoPath)),
+        AbilityObjectData = DeserializeFromFile<AbilityObjectData>(Path.Combine(mapDataRootFolder, AbilityObjectDataPath)),
+        BuffObjectData = DeserializeFromFile<BuffObjectData>(Path.Combine(mapDataRootFolder, BuffObjectDataPath)),
+        DestructableObjectData = DeserializeFromFile<DestructableObjectData>(Path.Combine(mapDataRootFolder, DestructableObjectDataPath)),
+        DoodadObjectData = DeserializeFromFile<DoodadObjectData>(Path.Combine(mapDataRootFolder, DoodadObjectDataPath)),
+        ItemObjectData = DeserializeFromFile<ItemObjectData>(Path.Combine(mapDataRootFolder, ItemObjectDataPath)),
+        UnitObjectData = DeserializeFromFile<UnitObjectData>(Path.Combine(mapDataRootFolder, UnitObjectDataPath)),
+        UpgradeObjectData = DeserializeFromFile<UpgradeObjectData>(Path.Combine(mapDataRootFolder, UpgradeObjectDataPath)),
+        CustomTextTriggers = DeserializeFromFile<MapCustomTextTriggers>(Path.Combine(mapDataRootFolder, CustomTextTriggersPath)),
+        TriggerStrings = DeserializeFromFile<TriggerStrings>(Path.Combine(mapDataRootFolder, TriggerStringsPath)),
+        Doodads = DeserializeFromFile<MapDoodads>(Path.Combine(mapDataRootFolder, DoodadsPath)),
+        Units = DeserializeFromFile<MapUnits>(Path.Combine(mapDataRootFolder, UnitsPath))
       };
 
       var builder = new MapBuilder(map);
       builder.Build(outputFilePath, _archiveCreateOptions);
     }
+
+    private T DeserializeFromFile<T>(string filePath) => JsonSerializer.Deserialize<T>(File.ReadAllText(filePath), _jsonSerializerOptions);
   }
 }
