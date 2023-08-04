@@ -71,6 +71,7 @@ namespace Launcher.Services
       SerializeAndWrite(map.ItemObjectData, outputFolderPath, ItemObjectDataPath);
       SerializeAndWrite(map.UnitObjectData, outputFolderPath, UnitObjectDataPath);
       SerializeAndWrite(map.UpgradeObjectData, outputFolderPath, UpgradeObjectDataPath);
+      SerializeAndWrite(map.Script, outputFolderPath, ScriptPath);
     }
 
     private void SerializeAndWrite<T>(T value, string outputFolderPath, string subPath)
