@@ -1,5 +1,10 @@
-﻿using System.IO;
+﻿#nullable enable
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
 using System.Text.Json;
+using System.Text.Json.Serialization.Metadata;
 using AutoMapper;
 using Launcher.DataTransferObjects;
 using War3Net.Build;
@@ -19,12 +24,44 @@ namespace Launcher.Services
   /// </summary>
   public sealed class JsonToW3XConversionService
   {
+    private static void IncrementCounterModifier(JsonTypeInfo typeInfo)
+    {
+      foreach (var propertyInfo in typeInfo.Properties)
+      {
+        if (propertyInfo.Name != "Modifications")
+          continue;
+        
+        var setProperty = propertyInfo.Set;
+        if (setProperty is not null)
+        {
+          propertyInfo.Set = (obj, value) =>
+          {
+            if (value != null)
+            {
+              if (value is List<SimpleObjectDataModification> modificationSet)
+              {
+                foreach (var modification in modificationSet)
+                {
+                  modification.Value = modification.GetCastedValue();
+                }
+              }
+            }
+            setProperty(obj, value);
+          };
+        }
+      }
+    }
+    
     private readonly IMapper _mapper;
 
     private readonly JsonSerializerOptions _jsonSerializerOptions = new()
     {
       IgnoreReadOnlyProperties = true,
-      WriteIndented = true
+      WriteIndented = true,
+      TypeInfoResolver = new DefaultJsonTypeInfoResolver
+      {
+        Modifiers = { IncrementCounterModifier }
+      }
     };
     
     private readonly MpqArchiveCreateOptions _archiveCreateOptions = new()
