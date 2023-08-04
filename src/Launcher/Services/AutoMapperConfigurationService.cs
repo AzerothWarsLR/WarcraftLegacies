@@ -37,6 +37,7 @@ namespace Launcher.Services
         cfg.CreateMap<MapTriggerStringsDto, MapTriggerStrings>();
         cfg.CreateMap<MapUnitObjectDataDto, MapUnitObjectData>();
         cfg.CreateMap<MapUpgradeObjectDataDto, MapUpgradeObjectData>();
+        cfg.CreateMap<MapTriggersDto, MapTriggers>();
 
         cfg.CreateMap<SoundDto, Sound>();
         cfg.CreateMap<TerrainTileDto, TerrainTile>();
