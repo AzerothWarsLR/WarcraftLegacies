@@ -66,7 +66,6 @@ namespace Launcher
         cfg.CreateMap<MapInfoDto, MapInfo>();
         cfg.CreateMap<MapRegionsDto, MapRegions>();
         cfg.CreateMap<MapUnitsDto, MapUnits>();
-        cfg.CreateMap<ModificationDto, LevelObjectModification>();
         cfg.CreateMap<MapPathingMapDto, MapPathingMap>();
         cfg.CreateMap<MapPreviewIconsDto, MapPreviewIcons>();
         cfg.CreateMap<QuadrilateralDto, Quadrilateral>();

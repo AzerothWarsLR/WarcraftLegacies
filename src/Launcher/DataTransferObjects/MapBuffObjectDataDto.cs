@@ -1,25 +1,11 @@
-﻿namespace Launcher.DataTransferObjects
+﻿using War3Net.Build.Object;
+
+namespace Launcher.DataTransferObjects
 {
   public class MapBuffObjectDataDto
   {
     public int FormatVersion { get; set; }
-    public BaseBuffs[] BaseBuffs { get; set; }
-    public NewBuffs[] NewBuffs { get; set; }
-  }
-
-  public class BaseBuffs
-  {
-    public int OldId { get; set; }
-    public int NewId { get; set; }
-    public int[] Unk { get; set; }
-    public object[] Modifications { get; set; }
-  }
-
-  public class NewBuffs
-  {
-    public int OldId { get; set; }
-    public int NewId { get; set; }
-    public int[] Unk { get; set; }
-    public ModificationDto[] Modifications { get; set; }
+    public SimpleObjectModification[] BaseBuffs { get; set; }
+    public SimpleObjectModification[] NewBuffs { get; set; }
   }
 }
