@@ -18,6 +18,11 @@
     public string MapDataFolderPath { get; set; }
     
     /// <summary>
+    /// The folder in which Warcraft 3 maps are stored.
+    /// </summary>
+    public string MapFolderPath { get; set; }
+    
+    /// <summary>
     /// The folder where you want the published map to be saved to.
     /// </summary>
     public string OutputFolderPath { get; set; }

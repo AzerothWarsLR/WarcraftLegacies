@@ -40,6 +40,9 @@ namespace Launcher
       var config = GetAppConfiguration();
       string sourceCodeProjectFolderPath;
 
+      var launchSettings = config.GetRequiredSection(nameof(LaunchSettings)).Get<LaunchSettings>();
+      var mapSettings = config.GetRequiredSection(nameof(MapSettings)).Get<MapSettings>();
+      
       switch (launchMode)
       {
         case LaunchMode.GenerateConstants:
@@ -58,11 +61,10 @@ namespace Launcher
           Build(baseMapPath, sourceCodeProjectFolderPath, true, config);
           break;
         case LaunchMode.JsonToW3X:
-          new JsonToW3XConversionService().Convert();
+          new JsonToW3XConversionService().Convert(Path.Combine(launchSettings.MapDataFolderPath, mapSettings.Name),
+            Path.Combine(launchSettings.MapFolderPath, mapSettings.Name));
           break;
         case LaunchMode.W3XToJson:
-          var launchSettings = config.GetRequiredSection(nameof(LaunchSettings)).Get<LaunchSettings>();
-          var mapSettings = config.GetRequiredSection(nameof(MapSettings)).Get<MapSettings>();
           new W3XToJsonConversionService().Convert(baseMapPath, Path.Combine(launchSettings.MapDataFolderPath, mapSettings.Name));
           break;
         default:

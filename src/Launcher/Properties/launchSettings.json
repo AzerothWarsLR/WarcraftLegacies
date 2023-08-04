@@ -16,9 +16,13 @@
       "commandName": "Project",
       "commandLineArgs": "GenerateConstants \"..\\..\\..\\..\\..\\maps\\source.w3x\" \"..\\..\\..\\..\\WarcraftLegacies.Source\""
     },
-    "WarcraftLegacies: W3X to Json": {
+    "WarcraftLegacies: Convert W3X to Json": {
       "commandName": "Project",
       "commandLineArgs": "W3XToJson \"..\\..\\..\\..\\..\\maps\\source.w3x\""
+    },
+    "WarcraftLegacies: Convert Json to W3X": {
+      "commandName": "Project",
+      "commandLineArgs": "JsonToW3X"
     }
   }
 }
