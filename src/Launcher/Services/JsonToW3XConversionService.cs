@@ -1,6 +1,7 @@
 ﻿using System.IO;
 using System.Text.Json;
 using AutoMapper;
+using Launcher.DataTransferObjects;
 using War3Net.Build;
 using War3Net.Build.Audio;
 using War3Net.Build.Environment;
@@ -72,7 +73,7 @@ namespace Launcher.Services
         Regions = DeserializeFromFile<MapRegions>(Path.Combine(mapDataRootFolder, RegionsPath)),
         ShadowMap = DeserializeFromFile<MapShadowMap>(Path.Combine(mapDataRootFolder, ShadowMapPath)),
         ImportedFiles = DeserializeFromFile<MapImportedFiles>(Path.Combine(mapDataRootFolder, ImportedFilesPath)),
-        Info = _mapper.Map<MapInfo>(DeserializeFromFile<MapImportedFiles>(Path.Combine(mapDataRootFolder, InfoPath))),
+        Info = _mapper.Map<MapInfo>(DeserializeFromFile<MapInfoDto>(Path.Combine(mapDataRootFolder, InfoPath))),
         AbilityObjectData = DeserializeFromFile<AbilityObjectData>(Path.Combine(mapDataRootFolder, AbilityObjectDataPath)),
         BuffObjectData = DeserializeFromFile<BuffObjectData>(Path.Combine(mapDataRootFolder, BuffObjectDataPath)),
         DestructableObjectData = DeserializeFromFile<DestructableObjectData>(Path.Combine(mapDataRootFolder, DestructableObjectDataPath)),
