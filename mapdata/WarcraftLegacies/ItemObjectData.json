@@ -1,0 +1,5463 @@
+{
+  "FormatVersion": 3,
+  "BaseItems": [
+    {
+      "OldId": 1685549943,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 60
+        },
+        {
+          "Id": 1702065513,
+          "Type": 0,
+          "Value": 3
+        }
+      ]
+    },
+    {
+      "OldId": 1936551799,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 22
+        }
+      ]
+    },
+    {
+      "OldId": 1819044215,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 45
+        },
+        {
+          "Id": 1919250537,
+          "Type": 0,
+          "Value": 0
+        },
+        {
+          "Id": 1702065513,
+          "Type": 0,
+          "Value": 0
+        },
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Purchasable"
+        }
+      ]
+    },
+    {
+      "OldId": 1684826487,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 40
+        },
+        {
+          "Id": 1635021673,
+          "Type": 0,
+          "Value": 6
+        },
+        {
+          "Id": 1702065513,
+          "Type": 0,
+          "Value": 3
+        }
+      ]
+    },
+    {
+      "OldId": 1685547127,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 30
+        },
+        {
+          "Id": 1635021673,
+          "Type": 0,
+          "Value": 9
+        },
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Purchasable"
+        }
+      ]
+    },
+    {
+      "OldId": 1818518646,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1768055145,
+          "Type": 3,
+          "Value": "AIi6"
+        },
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 90
+        }
+      ]
+    },
+    {
+      "OldId": 1886216566,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 45
+        },
+        {
+          "Id": 1635021673,
+          "Type": 0,
+          "Value": 4
+        },
+        {
+          "Id": 1702065513,
+          "Type": 0,
+          "Value": 3
+        },
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Miscellaneous"
+        }
+      ]
+    },
+    {
+      "OldId": 1952674676,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 5
+        },
+        {
+          "Id": 1902473845,
+          "Type": 3,
+          "Value": ""
+        },
+        {
+          "Id": 1635021673,
+          "Type": 0,
+          "Value": 5
+        }
+      ]
+    },
+    {
+      "OldId": 1952805492,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 75
+        },
+        {
+          "Id": 1635021673,
+          "Type": 0,
+          "Value": 1
+        }
+      ]
+    },
+    {
+      "OldId": 1668509044,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 200
+        },
+        {
+          "Id": 1920234345,
+          "Type": 0,
+          "Value": 400
+        }
+      ]
+    },
+    {
+      "OldId": 1836412020,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 0
+        },
+        {
+          "Id": 2002874473,
+          "Type": 0,
+          "Value": 0
+        }
+      ]
+    },
+    {
+      "OldId": 1869507444,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Permanent"
+        }
+      ]
+    },
+    {
+      "OldId": 1752328052,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1869767785,
+          "Type": 0,
+          "Value": 0
+        },
+        {
+          "Id": 2002874473,
+          "Type": 0,
+          "Value": 0
+        },
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Miscellaneous"
+        }
+      ]
+    },
+    {
+      "OldId": 1918984820,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 2002874473,
+          "Type": 0,
+          "Value": 0
+        },
+        {
+          "Id": 1635021673,
+          "Type": 0,
+          "Value": 3
+        }
+      ]
+    },
+    {
+      "OldId": 1886876787,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1768055145,
+          "Type": 3,
+          "Value": "A002"
+        },
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 185
+        },
+        {
+          "Id": 1902473845,
+          "Type": 3,
+          "Value": "R04R"
+        },
+        {
+          "Id": 1635021673,
+          "Type": 0,
+          "Value": 3
+        },
+        {
+          "Id": 1953723241,
+          "Type": 0,
+          "Value": 900
+        }
+      ]
+    },
+    {
+      "OldId": 1635218547,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1768055145,
+          "Type": 3,
+          "Value": "AIt9,Asal"
+        },
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 90
+        }
+      ]
+    },
+    {
+      "OldId": 1818588275,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1869767785,
+          "Type": 0,
+          "Value": 0
+        },
+        {
+          "Id": 1886677097,
+          "Type": 0,
+          "Value": 500000
+        },
+        {
+          "Id": 2002874473,
+          "Type": 0,
+          "Value": 0
+        },
+        {
+          "Id": 1818588009,
+          "Type": 0,
+          "Value": 0
+        }
+      ]
+    },
+    {
+      "OldId": 1818850163,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1886545001,
+          "Type": 0,
+          "Value": 1
+        },
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 0
+        },
+        {
+          "Id": 1886677097,
+          "Type": 0,
+          "Value": 500000
+        },
+        {
+          "Id": 2002874473,
+          "Type": 0,
+          "Value": 0
+        },
+        {
+          "Id": 1818588009,
+          "Type": 0,
+          "Value": 0
+        }
+      ]
+    },
+    {
+      "OldId": 1851880307,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 30
+        },
+        {
+          "Id": 1902473845,
+          "Type": 3,
+          "Value": ""
+        },
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Miscellaneous"
+        }
+      ]
+    },
+    {
+      "OldId": 1668444787,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 64
+        },
+        {
+          "Id": 1635021673,
+          "Type": 0,
+          "Value": 3
+        }
+      ]
+    },
+    {
+      "OldId": 1919906419,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1768055145,
+          "Type": 3,
+          "Value": "A0DY"
+        },
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 20
+        },
+        {
+          "Id": 1635021673,
+          "Type": 0,
+          "Value": 2
+        },
+        {
+          "Id": 1702065513,
+          "Type": 0,
+          "Value": 4
+        }
+      ]
+    },
+    {
+      "OldId": 1936028275,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1768055145,
+          "Type": 3,
+          "Value": "AIdb"
+        },
+        {
+          "Id": 1886545001,
+          "Type": 0,
+          "Value": 1
+        },
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 50
+        },
+        {
+          "Id": 2002874473,
+          "Type": 0,
+          "Value": 0
+        },
+        {
+          "Id": 1635021673,
+          "Type": 0,
+          "Value": 2
+        }
+      ]
+    },
+    {
+      "OldId": 1734701683,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 20
+        },
+        {
+          "Id": 1635021673,
+          "Type": 0,
+          "Value": 3
+        }
+      ]
+    },
+    {
+      "OldId": 1752395891,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 125
+        },
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Purchasable"
+        }
+      ]
+    },
+    {
+      "OldId": 1869770867,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 20
+        },
+        {
+          "Id": 1635021673,
+          "Type": 0,
+          "Value": 3
+        }
+      ]
+    },
+    {
+      "OldId": 1701998707,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 25
+        },
+        {
+          "Id": 1902473845,
+          "Type": 3,
+          "Value": ""
+        },
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Purchasable"
+        }
+      ]
+    },
+    {
+      "OldId": 1851878771,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 20
+        },
+        {
+          "Id": 1769107561,
+          "Type": 0,
+          "Value": 75
+        },
+        {
+          "Id": 1635021673,
+          "Type": 0,
+          "Value": 3
+        },
+        {
+          "Id": 1869902697,
+          "Type": 0,
+          "Value": 2
+        },
+        {
+          "Id": 1920234345,
+          "Type": 0,
+          "Value": 200
+        },
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Miscellaneous"
+        }
+      ]
+    },
+    {
+      "OldId": 1819634547,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 5
+        },
+        {
+          "Id": 1635021673,
+          "Type": 0,
+          "Value": 3
+        },
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Miscellaneous"
+        }
+      ]
+    },
+    {
+      "OldId": 1836345459,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1768055145,
+          "Type": 3,
+          "Value": "AIi3,AIps"
+        },
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Artifact"
+        },
+        {
+          "Id": 1886677097,
+          "Type": 0,
+          "Value": 500000
+        }
+      ]
+    },
+    {
+      "OldId": 1634035827,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 85
+        },
+        {
+          "Id": 1902473845,
+          "Type": 3,
+          "Value": ""
+        },
+        {
+          "Id": 1635021673,
+          "Type": 0,
+          "Value": 3
+        }
+      ]
+    },
+    {
+      "OldId": 1935763571,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 30
+        },
+        {
+          "Id": 1635021673,
+          "Type": 0,
+          "Value": 3
+        },
+        {
+          "Id": 1869902697,
+          "Type": 0,
+          "Value": 2
+        }
+      ]
+    },
+    {
+      "OldId": 1735353971,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1768055145,
+          "Type": 3,
+          "Value": "AIx2,AIfg"
+        },
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Artifact"
+        },
+        {
+          "Id": 1886545001,
+          "Type": 0,
+          "Value": 1
+        },
+        {
+          "Id": 1886677097,
+          "Type": 0,
+          "Value": 500000
+        },
+        {
+          "Id": 2002874473,
+          "Type": 0,
+          "Value": 0
+        },
+        {
+          "Id": 1818588009,
+          "Type": 0,
+          "Value": 0
+        }
+      ]
+    },
+    {
+      "OldId": 1818780531,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Artifact"
+        },
+        {
+          "Id": 1886545001,
+          "Type": 0,
+          "Value": 1
+        },
+        {
+          "Id": 1886677097,
+          "Type": 0,
+          "Value": 500000
+        },
+        {
+          "Id": 2002874473,
+          "Type": 0,
+          "Value": 0
+        },
+        {
+          "Id": 1818588009,
+          "Type": 0,
+          "Value": 0
+        }
+      ]
+    },
+    {
+      "OldId": 1684955507,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 40
+        }
+      ]
+    },
+    {
+      "OldId": 2053732210,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 50
+        },
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Purchasable"
+        }
+      ]
+    },
+    {
+      "OldId": 1937010546,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1768055145,
+          "Type": 3,
+          "Value": "AIwm"
+        },
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 60
+        }
+      ]
+    },
+    {
+      "OldId": 1667591794,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 15
+        },
+        {
+          "Id": 1635021673,
+          "Type": 0,
+          "Value": 3
+        },
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Miscellaneous"
+        }
+      ]
+    },
+    {
+      "OldId": 1718185074,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 150
+        },
+        {
+          "Id": 1886677097,
+          "Type": 0,
+          "Value": 500000
+        },
+        {
+          "Id": 1920234345,
+          "Type": 0,
+          "Value": 300
+        }
+      ]
+    },
+    {
+      "OldId": 1685350770,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 25
+        },
+        {
+          "Id": 1635021673,
+          "Type": 0,
+          "Value": 6
+        },
+        {
+          "Id": 1869902697,
+          "Type": 0,
+          "Value": 2
+        },
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Miscellaneous"
+        }
+      ]
+    },
+    {
+      "OldId": 912942450,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 100
+        }
+      ]
+    },
+    {
+      "OldId": 896165234,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 35
+        },
+        {
+          "Id": 1869902697,
+          "Type": 0,
+          "Value": 1
+        }
+      ]
+    },
+    {
+      "OldId": 879388018,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 60
+        }
+      ]
+    },
+    {
+      "OldId": 862282866,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 100
+        },
+        {
+          "Id": 1920234345,
+          "Type": 0,
+          "Value": 600
+        },
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Purchasable"
+        },
+        {
+          "Id": 1953723241,
+          "Type": 0,
+          "Value": 140
+        }
+      ]
+    },
+    {
+      "OldId": 1718903154,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Permanent"
+        },
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 250
+        }
+      ]
+    },
+    {
+      "OldId": 1953919600,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 85
+        },
+        {
+          "Id": 1920234345,
+          "Type": 0,
+          "Value": 600
+        },
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Purchasable"
+        },
+        {
+          "Id": 1953723241,
+          "Type": 0,
+          "Value": 140
+        }
+      ]
+    },
+    {
+      "OldId": 1936028272,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 100
+        },
+        {
+          "Id": 1635021673,
+          "Type": 0,
+          "Value": 5
+        }
+      ]
+    },
+    {
+      "OldId": 1852665712,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 180
+        },
+        {
+          "Id": 1920234345,
+          "Type": 0,
+          "Value": 300
+        },
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Purchasable"
+        }
+      ]
+    },
+    {
+      "OldId": 1970695792,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 50
+        }
+      ]
+    },
+    {
+      "OldId": 1819700848,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 30
+        },
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Miscellaneous"
+        }
+      ]
+    },
+    {
+      "OldId": 1851878768,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 20
+        },
+        {
+          "Id": 1902473845,
+          "Type": 3,
+          "Value": ""
+        },
+        {
+          "Id": 1635021673,
+          "Type": 0,
+          "Value": 5
+        },
+        {
+          "Id": 1869902697,
+          "Type": 0,
+          "Value": 3
+        }
+      ]
+    },
+    {
+      "OldId": 1818455152,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 7
+        },
+        {
+          "Id": 1635021673,
+          "Type": 0,
+          "Value": 3
+        },
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Miscellaneous"
+        }
+      ]
+    },
+    {
+      "OldId": 1634035824,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 16
+        },
+        {
+          "Id": 1902473845,
+          "Type": 3,
+          "Value": ""
+        },
+        {
+          "Id": 1635021673,
+          "Type": 0,
+          "Value": 5
+        }
+      ]
+    },
+    {
+      "OldId": 1634559856,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 40
+        },
+        {
+          "Id": 1635021673,
+          "Type": 0,
+          "Value": 5
+        },
+        {
+          "Id": 1869902697,
+          "Type": 0,
+          "Value": 3
+        },
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Purchasable"
+        }
+      ]
+    },
+    {
+      "OldId": 1701341040,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 30
+        },
+        {
+          "Id": 1635021673,
+          "Type": 0,
+          "Value": 5
+        },
+        {
+          "Id": 1869902697,
+          "Type": 0,
+          "Value": 3
+        },
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Purchasable"
+        }
+      ]
+    },
+    {
+      "OldId": 1986618480,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 25
+        },
+        {
+          "Id": 1635021673,
+          "Type": 0,
+          "Value": 5
+        },
+        {
+          "Id": 1920234345,
+          "Type": 0,
+          "Value": 240
+        },
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Purchasable"
+        }
+      ]
+    },
+    {
+      "OldId": 1936548208,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 20
+        },
+        {
+          "Id": 1902473845,
+          "Type": 3,
+          "Value": ""
+        },
+        {
+          "Id": 1635021673,
+          "Type": 0,
+          "Value": 3
+        },
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Purchasable"
+        }
+      ]
+    },
+    {
+      "OldId": 1852143215,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 50
+        },
+        {
+          "Id": 1902473845,
+          "Type": 3,
+          "Value": ""
+        },
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Purchasable"
+        }
+      ]
+    },
+    {
+      "OldId": 1869378415,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1768055145,
+          "Type": 3,
+          "Value": "AIsb,A0NA"
+        },
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 50
+        }
+      ]
+    },
+    {
+      "OldId": 1734962287,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 50
+        },
+        {
+          "Id": 1902473845,
+          "Type": 3,
+          "Value": ""
+        },
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Purchasable"
+        }
+      ]
+    },
+    {
+      "OldId": 845769839,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1768055145,
+          "Type": 3,
+          "Value": "AIt6,A0E5"
+        },
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 50
+        },
+        {
+          "Id": 1902473845,
+          "Type": 3,
+          "Value": ""
+        },
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Purchasable"
+        }
+      ]
+    },
+    {
+      "OldId": 1869768303,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Purchasable"
+        },
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 50
+        }
+      ]
+    },
+    {
+      "OldId": 1919510127,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 50
+        },
+        {
+          "Id": 1902473845,
+          "Type": 3,
+          "Value": ""
+        },
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Purchasable"
+        }
+      ]
+    },
+    {
+      "OldId": 1717920879,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 7500
+        },
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Artifact"
+        },
+        {
+          "Id": 1886677097,
+          "Type": 0,
+          "Value": 500000
+        },
+        {
+          "Id": 1818588009,
+          "Type": 0,
+          "Value": 0
+        },
+        {
+          "Id": 2002874473,
+          "Type": 0,
+          "Value": 0
+        },
+        {
+          "Id": 1886545001,
+          "Type": 0,
+          "Value": 1
+        },
+        {
+          "Id": 1852993641,
+          "Type": 0,
+          "Value": 0
+        }
+      ]
+    },
+    {
+      "OldId": 1919902575,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 50
+        },
+        {
+          "Id": 1902473845,
+          "Type": 3,
+          "Value": ""
+        },
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Purchasable"
+        }
+      ]
+    },
+    {
+      "OldId": 1852796781,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 35
+        },
+        {
+          "Id": 1635021673,
+          "Type": 0,
+          "Value": 3
+        },
+        {
+          "Id": 1702065513,
+          "Type": 0,
+          "Value": 0
+        },
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Miscellaneous"
+        }
+      ]
+    },
+    {
+      "OldId": 1952739181,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Purchasable"
+        },
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 80
+        }
+      ]
+    },
+    {
+      "OldId": 1953721965,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1768055145,
+          "Type": 3,
+          "Value": "AIm1,AIrn"
+        },
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 30
+        },
+        {
+          "Id": 1635021673,
+          "Type": 0,
+          "Value": 1
+        }
+      ]
+    },
+    {
+      "OldId": 1769104237,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1635021673,
+          "Type": 0,
+          "Value": 3
+        },
+        {
+          "Id": 1920234345,
+          "Type": 0,
+          "Value": 180
+        },
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Miscellaneous"
+        }
+      ]
+    },
+    {
+      "OldId": 1919053164,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1768055145,
+          "Type": 3,
+          "Value": "A03D"
+        },
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 175
+        },
+        {
+          "Id": 1818588009,
+          "Type": 0,
+          "Value": 1
+        }
+      ]
+    },
+    {
+      "OldId": 1836217451,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1768055145,
+          "Type": 3,
+          "Value": "AIm1,AIrm,AIlz,AI2m"
+        },
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Artifact"
+        },
+        {
+          "Id": 1684628329,
+          "Type": 3,
+          "Value": "A0U8"
+        },
+        {
+          "Id": 1886545001,
+          "Type": 0,
+          "Value": 1
+        },
+        {
+          "Id": 1886677097,
+          "Type": 0,
+          "Value": 500000
+        },
+        {
+          "Id": 1634956649,
+          "Type": 0,
+          "Value": 1
+        }
+      ]
+    },
+    {
+      "OldId": 1835887723,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Artifact"
+        },
+        {
+          "Id": 1886545001,
+          "Type": 0,
+          "Value": 1
+        },
+        {
+          "Id": 1886677097,
+          "Type": 0,
+          "Value": 500000
+        },
+        {
+          "Id": 2002874473,
+          "Type": 0,
+          "Value": 0
+        },
+        {
+          "Id": 1818588009,
+          "Type": 0,
+          "Value": 0
+        }
+      ]
+    },
+    {
+      "OldId": 1818322795,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1768055145,
+          "Type": 3,
+          "Value": "AIre,AIrm,Arel"
+        },
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Artifact"
+        },
+        {
+          "Id": 1886545001,
+          "Type": 0,
+          "Value": 1
+        },
+        {
+          "Id": 1886677097,
+          "Type": 0,
+          "Value": 500000
+        },
+        {
+          "Id": 2002874473,
+          "Type": 0,
+          "Value": 0
+        },
+        {
+          "Id": 1818588009,
+          "Type": 0,
+          "Value": 0
+        },
+        {
+          "Id": 1634956649,
+          "Type": 0,
+          "Value": 1
+        }
+      ]
+    },
+    {
+      "OldId": 1936092777,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1768055145,
+          "Type": 3,
+          "Value": "A07Y"
+        },
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 50
+        },
+        {
+          "Id": 1635021673,
+          "Type": 0,
+          "Value": 3
+        },
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Purchasable"
+        }
+      ]
+    },
+    {
+      "OldId": 1986818920,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 10
+        },
+        {
+          "Id": 1635021673,
+          "Type": 0,
+          "Value": 9
+        }
+      ]
+    },
+    {
+      "OldId": 1953721448,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1768055145,
+          "Type": 3,
+          "Value": "AIhx,Arll"
+        },
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 35
+        },
+        {
+          "Id": 1635021673,
+          "Type": 0,
+          "Value": 1
+        }
+      ]
+    },
+    {
+      "OldId": 1970238311,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1768055145,
+          "Type": 3,
+          "Value": "A0U7,AIi6,AIl1"
+        },
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Artifact"
+        },
+        {
+          "Id": 1886545001,
+          "Type": 0,
+          "Value": 1
+        },
+        {
+          "Id": 1886677097,
+          "Type": 0,
+          "Value": 500000
+        },
+        {
+          "Id": 1919250537,
+          "Type": 0,
+          "Value": 0
+        },
+        {
+          "Id": 1702065513,
+          "Type": 0,
+          "Value": 0
+        }
+      ]
+    },
+    {
+      "OldId": 1835167591,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 25
+        },
+        {
+          "Id": 1635021673,
+          "Type": 0,
+          "Value": 2
+        }
+      ]
+    },
+    {
+      "OldId": 1868852327,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 50
+        }
+      ]
+    },
+    {
+      "OldId": 1953326439,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1920234345,
+          "Type": 0,
+          "Value": 400
+        }
+      ]
+    },
+    {
+      "OldId": 1734898278,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1768055145,
+          "Type": 3,
+          "Value": "S00A,A0LV"
+        },
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Permanent"
+        },
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 350
+        },
+        {
+          "Id": 1886677097,
+          "Type": 0,
+          "Value": 500000
+        }
+      ]
+    },
+    {
+      "OldId": 1684501094,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Artifact"
+        },
+        {
+          "Id": 1886545001,
+          "Type": 0,
+          "Value": 1
+        },
+        {
+          "Id": 1886677097,
+          "Type": 0,
+          "Value": 500000
+        },
+        {
+          "Id": 2002874473,
+          "Type": 0,
+          "Value": 0
+        },
+        {
+          "Id": 1818588009,
+          "Type": 0,
+          "Value": 0
+        }
+      ]
+    },
+    {
+      "OldId": 1735550822,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1869767785,
+          "Type": 0,
+          "Value": 0
+        },
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 30
+        },
+        {
+          "Id": 2002874473,
+          "Type": 0,
+          "Value": 0
+        },
+        {
+          "Id": 1818588009,
+          "Type": 0,
+          "Value": 0
+        },
+        {
+          "Id": 1635021673,
+          "Type": 0,
+          "Value": 3
+        }
+      ]
+    },
+    {
+      "OldId": 1819571813,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 55
+        },
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Purchasable"
+        }
+      ]
+    },
+    {
+      "OldId": 1819700837,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 180
+        },
+        {
+          "Id": 1768055145,
+          "Type": 3,
+          "Value": "AIp6"
+        }
+      ]
+    },
+    {
+      "OldId": 1953723748,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 10
+        },
+        {
+          "Id": 1635021673,
+          "Type": 0,
+          "Value": 3
+        },
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Purchasable"
+        }
+      ]
+    },
+    {
+      "OldId": 1651733604,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1768055145,
+          "Type": 3,
+          "Value": "A0AD,AImv,AIsr"
+        },
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Artifact"
+        },
+        {
+          "Id": 1886545001,
+          "Type": 0,
+          "Value": 1
+        },
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 50
+        },
+        {
+          "Id": 1886677097,
+          "Type": 0,
+          "Value": 500000
+        },
+        {
+          "Id": 2002874473,
+          "Type": 0,
+          "Value": 0
+        },
+        {
+          "Id": 1818588009,
+          "Type": 0,
+          "Value": 0
+        }
+      ]
+    },
+    {
+      "OldId": 1836413796,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Purchasable"
+        },
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 45
+        },
+        {
+          "Id": 1702065513,
+          "Type": 0,
+          "Value": 3
+        },
+        {
+          "Id": 1953723241,
+          "Type": 0,
+          "Value": 600
+        }
+      ]
+    },
+    {
+      "OldId": 1668506980,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Permanent"
+        },
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 0
+        }
+      ]
+    },
+    {
+      "OldId": 1952739939,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Artifact"
+        },
+        {
+          "Id": 1886545001,
+          "Type": 0,
+          "Value": 1
+        },
+        {
+          "Id": 1886677097,
+          "Type": 0,
+          "Value": 500000
+        },
+        {
+          "Id": 2002874473,
+          "Type": 0,
+          "Value": 0
+        },
+        {
+          "Id": 1818588009,
+          "Type": 0,
+          "Value": 0
+        }
+      ]
+    },
+    {
+      "OldId": 1819504483,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Artifact"
+        },
+        {
+          "Id": 1886545001,
+          "Type": 0,
+          "Value": 1
+        },
+        {
+          "Id": 1886677097,
+          "Type": 0,
+          "Value": 500000
+        },
+        {
+          "Id": 2002874473,
+          "Type": 0,
+          "Value": 0
+        },
+        {
+          "Id": 1818588009,
+          "Type": 0,
+          "Value": 0
+        }
+      ]
+    },
+    {
+      "OldId": 1852337763,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Artifact"
+        },
+        {
+          "Id": 1886545001,
+          "Type": 0,
+          "Value": 1
+        },
+        {
+          "Id": 1886677097,
+          "Type": 0,
+          "Value": 500000
+        }
+      ]
+    },
+    {
+      "OldId": 1835428963,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 50
+        }
+      ]
+    },
+    {
+      "OldId": 1735289699,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Permanent"
+        }
+      ]
+    },
+    {
+      "OldId": 1936025699,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1886545001,
+          "Type": 0,
+          "Value": 1
+        },
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 0
+        }
+      ]
+    },
+    {
+      "OldId": 1685091170,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 75
+        },
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Purchasable"
+        }
+      ]
+    },
+    {
+      "OldId": 1667330658,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 60
+        },
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Purchasable"
+        }
+      ]
+    },
+    {
+      "OldId": 1919449697,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1768055145,
+          "Type": 3,
+          "Value": "A096"
+        },
+        {
+          "Id": 1684628329,
+          "Type": 3,
+          "Value": "AIsp"
+        },
+        {
+          "Id": 1886677097,
+          "Type": 0,
+          "Value": 500000
+        },
+        {
+          "Id": 1634956649,
+          "Type": 0,
+          "Value": 1
+        }
+      ]
+    },
+    {
+      "OldId": 1818391393,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Artifact"
+        },
+        {
+          "Id": 1886545001,
+          "Type": 0,
+          "Value": 1
+        },
+        {
+          "Id": 1886677097,
+          "Type": 0,
+          "Value": 500000
+        },
+        {
+          "Id": 2002874473,
+          "Type": 0,
+          "Value": 0
+        },
+        {
+          "Id": 1818588009,
+          "Type": 0,
+          "Value": 0
+        }
+      ]
+    },
+    {
+      "OldId": 1752396385,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1768055145,
+          "Type": 3,
+          "Value": "A07C,AId5,AIdd"
+        },
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Artifact"
+        },
+        {
+          "Id": 1886545001,
+          "Type": 0,
+          "Value": 1
+        },
+        {
+          "Id": 1886677097,
+          "Type": 0,
+          "Value": 500000
+        },
+        {
+          "Id": 2002874473,
+          "Type": 0,
+          "Value": 0
+        },
+        {
+          "Id": 1818588009,
+          "Type": 0,
+          "Value": 0
+        }
+      ]
+    },
+    {
+      "OldId": 1751871073,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1869767785,
+          "Type": 0,
+          "Value": 0
+        },
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 0
+        },
+        {
+          "Id": 2002874473,
+          "Type": 0,
+          "Value": 0
+        },
+        {
+          "Id": 1818588009,
+          "Type": 0,
+          "Value": 0
+        },
+        {
+          "Id": 1635021673,
+          "Type": 0,
+          "Value": 2
+        }
+      ]
+    },
+    {
+      "OldId": 846358127,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 1853061483,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 0
+        },
+        {
+          "Id": 1886677097,
+          "Type": 0,
+          "Value": 9999
+        }
+      ]
+    },
+    {
+      "OldId": 1919705968,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Miscellaneous"
+        }
+      ]
+    },
+    {
+      "OldId": 1986947440,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Miscellaneous"
+        }
+      ]
+    },
+    {
+      "OldId": 1969581687,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Miscellaneous"
+        }
+      ]
+    },
+    {
+      "OldId": 1802266995,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Miscellaneous"
+        }
+      ]
+    },
+    {
+      "OldId": 1935762292,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Miscellaneous"
+        }
+      ]
+    },
+    {
+      "OldId": 1734700663,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Miscellaneous"
+        }
+      ]
+    },
+    {
+      "OldId": 1769105763,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Purchasable"
+        },
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 90
+        }
+      ]
+    },
+    {
+      "OldId": 1684170598,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Purchasable"
+        },
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 35
+        },
+        {
+          "Id": 1920234345,
+          "Type": 0,
+          "Value": 180
+        },
+        {
+          "Id": 1953723241,
+          "Type": 0,
+          "Value": 300
+        }
+      ]
+    },
+    {
+      "OldId": 1734700659,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Miscellaneous"
+        }
+      ]
+    },
+    {
+      "OldId": 828858738,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Purchasable"
+        },
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 35
+        },
+        {
+          "Id": 1768055145,
+          "Type": 3,
+          "Value": "AIa4"
+        },
+        {
+          "Id": 1684628329,
+          "Type": 3,
+          "Value": "AIa4"
+        }
+      ]
+    },
+    {
+      "OldId": 1668443489,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 45
+        },
+        {
+          "Id": 1702065513,
+          "Type": 0,
+          "Value": 2
+        },
+        {
+          "Id": 1953723241,
+          "Type": 0,
+          "Value": 600
+        }
+      ]
+    }
+  ],
+  "NewItems": [
+    {
+      "OldId": 1869507444,
+      "NewId": 808595529,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1768055145,
+          "Type": 3,
+          "Value": ""
+        },
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Permanent"
+        },
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 350
+        },
+        {
+          "Id": 1886677097,
+          "Type": 0,
+          "Value": 999999
+        },
+        {
+          "Id": 1836412009,
+          "Type": 0,
+          "Value": 1000
+        }
+      ]
+    },
+    {
+      "OldId": 1818850163,
+      "NewId": 1496395849,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1768055145,
+          "Type": 3,
+          "Value": "A082,A03X,Atru"
+        },
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Artifact"
+        },
+        {
+          "Id": 1684628329,
+          "Type": 3,
+          "Value": "AIrr"
+        },
+        {
+          "Id": 1886545001,
+          "Type": 0,
+          "Value": 1
+        },
+        {
+          "Id": 1886677097,
+          "Type": 0,
+          "Value": 500000
+        },
+        {
+          "Id": 2002874473,
+          "Type": 0,
+          "Value": 0
+        }
+      ]
+    },
+    {
+      "OldId": 1668506980,
+      "NewId": 1446064201,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1768055145,
+          "Type": 3,
+          "Value": "A0I7,AItf,AIsx,AIa6"
+        },
+        {
+          "Id": 1684628329,
+          "Type": 3,
+          "Value": "A02X"
+        },
+        {
+          "Id": 1886545001,
+          "Type": 0,
+          "Value": 1
+        },
+        {
+          "Id": 1886677097,
+          "Type": 0,
+          "Value": 500000
+        },
+        {
+          "Id": 2002874473,
+          "Type": 0,
+          "Value": 0
+        },
+        {
+          "Id": 1818588009,
+          "Type": 0,
+          "Value": 0
+        }
+      ]
+    },
+    {
+      "OldId": 1735289699,
+      "NewId": 1412509769,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1768055145,
+          "Type": 3,
+          "Value": "AIx2,AIs4,AIa3,A09W"
+        },
+        {
+          "Id": 1886545001,
+          "Type": 0,
+          "Value": 1
+        },
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 250
+        },
+        {
+          "Id": 1886677097,
+          "Type": 0,
+          "Value": 500000
+        },
+        {
+          "Id": 2002874473,
+          "Type": 0,
+          "Value": 0
+        },
+        {
+          "Id": 1818588009,
+          "Type": 0,
+          "Value": 0
+        },
+        {
+          "Id": 1920234345,
+          "Type": 0,
+          "Value": 600
+        },
+        {
+          "Id": 1953723241,
+          "Type": 0,
+          "Value": 800
+        }
+      ]
+    },
+    {
+      "OldId": 1734962287,
+      "NewId": 1345400905,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1768055145,
+          "Type": 3,
+          "Value": "A0MB"
+        },
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 50
+        },
+        {
+          "Id": 1902473845,
+          "Type": 3,
+          "Value": ""
+        },
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Purchasable"
+        }
+      ]
+    },
+    {
+      "OldId": 1668506980,
+      "NewId": 1328623689,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1768055145,
+          "Type": 3,
+          "Value": "A09O,AItx"
+        },
+        {
+          "Id": 1684628329,
+          "Type": 3,
+          "Value": "A02X"
+        },
+        {
+          "Id": 1886545001,
+          "Type": 0,
+          "Value": 1
+        },
+        {
+          "Id": 1886677097,
+          "Type": 0,
+          "Value": 500000
+        },
+        {
+          "Id": 2002874473,
+          "Type": 0,
+          "Value": 0
+        }
+      ]
+    },
+    {
+      "OldId": 1735289699,
+      "NewId": 1295069257,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1768055145,
+          "Type": 3,
+          "Value": "A0HD"
+        },
+        {
+          "Id": 1684628329,
+          "Type": 3,
+          "Value": "AIfu"
+        },
+        {
+          "Id": 1886545001,
+          "Type": 0,
+          "Value": 1
+        },
+        {
+          "Id": 1886677097,
+          "Type": 0,
+          "Value": 500000
+        },
+        {
+          "Id": 2002874473,
+          "Type": 0,
+          "Value": 0
+        }
+      ]
+    },
+    {
+      "OldId": 1735289699,
+      "NewId": 1278292041,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1768055145,
+          "Type": 3,
+          "Value": "A0HE"
+        },
+        {
+          "Id": 1684628329,
+          "Type": 3,
+          "Value": "AIfu"
+        },
+        {
+          "Id": 1886545001,
+          "Type": 0,
+          "Value": 1
+        },
+        {
+          "Id": 1886677097,
+          "Type": 0,
+          "Value": 500000
+        },
+        {
+          "Id": 2002874473,
+          "Type": 0,
+          "Value": 0
+        }
+      ]
+    },
+    {
+      "OldId": 1735289699,
+      "NewId": 1261514825,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1768055145,
+          "Type": 3,
+          "Value": "AIaz"
+        },
+        {
+          "Id": 1684628329,
+          "Type": 3,
+          "Value": "AIfu"
+        },
+        {
+          "Id": 1886545001,
+          "Type": 0,
+          "Value": 1
+        },
+        {
+          "Id": 1886677097,
+          "Type": 0,
+          "Value": 500000
+        },
+        {
+          "Id": 2002874473,
+          "Type": 0,
+          "Value": 0
+        }
+      ]
+    },
+    {
+      "OldId": 1735289699,
+      "NewId": 1244737609,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1768055145,
+          "Type": 3,
+          "Value": "A0AL"
+        },
+        {
+          "Id": 1684628329,
+          "Type": 3,
+          "Value": "AIfu"
+        },
+        {
+          "Id": 1886545001,
+          "Type": 0,
+          "Value": 1
+        },
+        {
+          "Id": 1886677097,
+          "Type": 0,
+          "Value": 500000
+        },
+        {
+          "Id": 2002874473,
+          "Type": 0,
+          "Value": 0
+        }
+      ]
+    },
+    {
+      "OldId": 1735289699,
+      "NewId": 1227960393,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1768055145,
+          "Type": 3,
+          "Value": "A0F6,AIi1"
+        },
+        {
+          "Id": 1684628329,
+          "Type": 3,
+          "Value": "AIfu"
+        },
+        {
+          "Id": 1886545001,
+          "Type": 0,
+          "Value": 1
+        },
+        {
+          "Id": 1886677097,
+          "Type": 0,
+          "Value": 500000
+        },
+        {
+          "Id": 2002874473,
+          "Type": 0,
+          "Value": 0
+        }
+      ]
+    },
+    {
+      "OldId": 1685217655,
+      "NewId": 1194405961,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1768055145,
+          "Type": 3,
+          "Value": "A0PS"
+        },
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Purchasable"
+        },
+        {
+          "Id": 1684628329,
+          "Type": 3,
+          "Value": "Amls"
+        },
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 80
+        },
+        {
+          "Id": 1919250537,
+          "Type": 0,
+          "Value": 1
+        },
+        {
+          "Id": 1634956649,
+          "Type": 0,
+          "Value": 1
+        },
+        {
+          "Id": 1702065513,
+          "Type": 0,
+          "Value": 3
+        },
+        {
+          "Id": 2002874473,
+          "Type": 0,
+          "Value": 0
+        },
+        {
+          "Id": 1953723241,
+          "Type": 0,
+          "Value": 720
+        }
+      ]
+    },
+    {
+      "OldId": 1886876787,
+      "NewId": 1110519881,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1768055145,
+          "Type": 3,
+          "Value": "AIi4,A00M"
+        },
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Permanent"
+        },
+        {
+          "Id": 1684628329,
+          "Type": 3,
+          "Value": "AIsp"
+        },
+        {
+          "Id": 1886545001,
+          "Type": 0,
+          "Value": 1
+        },
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 1250
+        },
+        {
+          "Id": 1886677097,
+          "Type": 0,
+          "Value": 250000
+        },
+        {
+          "Id": 1986358377,
+          "Type": 0,
+          "Value": 6
+        },
+        {
+          "Id": 2002874473,
+          "Type": 0,
+          "Value": 0
+        },
+        {
+          "Id": 1919250537,
+          "Type": 0,
+          "Value": 0
+        },
+        {
+          "Id": 1902473845,
+          "Type": 3,
+          "Value": ""
+        },
+        {
+          "Id": 1869902697,
+          "Type": 0,
+          "Value": 1
+        },
+        {
+          "Id": 1920234345,
+          "Type": 0,
+          "Value": 3600
+        },
+        {
+          "Id": 1702065513,
+          "Type": 0,
+          "Value": 0
+        }
+      ]
+    },
+    {
+      "OldId": 1735289699,
+      "NewId": 1093742665,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1768055145,
+          "Type": 3,
+          "Value": "A0HF,AIx5,AIl2,AI2m"
+        },
+        {
+          "Id": 1684628329,
+          "Type": 3,
+          "Value": "AIwm"
+        },
+        {
+          "Id": 1886545001,
+          "Type": 0,
+          "Value": 1
+        },
+        {
+          "Id": 1869767785,
+          "Type": 0,
+          "Value": 0
+        },
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 0
+        },
+        {
+          "Id": 1886677097,
+          "Type": 0,
+          "Value": 500000
+        },
+        {
+          "Id": 2002874473,
+          "Type": 0,
+          "Value": 0
+        },
+        {
+          "Id": 1818588009,
+          "Type": 0,
+          "Value": 0
+        },
+        {
+          "Id": 1634956649,
+          "Type": 0,
+          "Value": 1
+        }
+      ]
+    },
+    {
+      "OldId": 1735289699,
+      "NewId": 875638857,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1768055145,
+          "Type": 3,
+          "Value": "AIi6"
+        },
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Permanent"
+        },
+        {
+          "Id": 1684628329,
+          "Type": 3,
+          "Value": "AIfu"
+        },
+        {
+          "Id": 1886545001,
+          "Type": 0,
+          "Value": 1
+        },
+        {
+          "Id": 1886677097,
+          "Type": 0,
+          "Value": 500000
+        },
+        {
+          "Id": 2002874473,
+          "Type": 0,
+          "Value": 0
+        }
+      ]
+    },
+    {
+      "OldId": 1936092777,
+      "NewId": 858861641,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1768055145,
+          "Type": 3,
+          "Value": "A0PM"
+        },
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Purchasable"
+        },
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 80
+        },
+        {
+          "Id": 1702065513,
+          "Type": 0,
+          "Value": 3
+        },
+        {
+          "Id": 2002874473,
+          "Type": 0,
+          "Value": 0
+        },
+        {
+          "Id": 1953723241,
+          "Type": 0,
+          "Value": 720
+        }
+      ]
+    },
+    {
+      "OldId": 1936092777,
+      "NewId": 1462775881,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1768055145,
+          "Type": 3,
+          "Value": "A0CP"
+        },
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Purchasable"
+        },
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 80
+        },
+        {
+          "Id": 1702065513,
+          "Type": 0,
+          "Value": 3
+        },
+        {
+          "Id": 2002874473,
+          "Type": 0,
+          "Value": 0
+        },
+        {
+          "Id": 1953723241,
+          "Type": 0,
+          "Value": 720
+        }
+      ]
+    },
+    {
+      "OldId": 1818588275,
+      "NewId": 1445998665,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1768055145,
+          "Type": 3,
+          "Value": "A0CS"
+        },
+        {
+          "Id": 1869767785,
+          "Type": 0,
+          "Value": 0
+        },
+        {
+          "Id": 1886677097,
+          "Type": 0,
+          "Value": 500000
+        },
+        {
+          "Id": 2002874473,
+          "Type": 0,
+          "Value": 0
+        },
+        {
+          "Id": 1818588009,
+          "Type": 0,
+          "Value": 0
+        }
+      ]
+    },
+    {
+      "OldId": 1735289699,
+      "NewId": 1429221449,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1768055145,
+          "Type": 3,
+          "Value": "A0BF,A0A1"
+        },
+        {
+          "Id": 1886545001,
+          "Type": 0,
+          "Value": 1
+        },
+        {
+          "Id": 1886677097,
+          "Type": 0,
+          "Value": 500000
+        },
+        {
+          "Id": 2002874473,
+          "Type": 0,
+          "Value": 0
+        },
+        {
+          "Id": 1634956649,
+          "Type": 0,
+          "Value": 1
+        }
+      ]
+    },
+    {
+      "OldId": 1919705968,
+      "NewId": 1412444233,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1768055145,
+          "Type": 3,
+          "Value": "AIlm"
+        },
+        {
+          "Id": 1684628329,
+          "Type": 3,
+          "Value": "AIem"
+        },
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 225
+        },
+        {
+          "Id": 1986358377,
+          "Type": 0,
+          "Value": 2
+        },
+        {
+          "Id": 2003791977,
+          "Type": 0,
+          "Value": 1
+        },
+        {
+          "Id": 1769107561,
+          "Type": 0,
+          "Value": 200
+        },
+        {
+          "Id": 1902473845,
+          "Type": 3,
+          "Value": "R00J"
+        },
+        {
+          "Id": 1869902697,
+          "Type": 0,
+          "Value": 1
+        },
+        {
+          "Id": 1920234345,
+          "Type": 0,
+          "Value": 480
+        },
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Charged"
+        }
+      ]
+    },
+    {
+      "OldId": 1919510127,
+      "NewId": 1395667017,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1768055145,
+          "Type": 3,
+          "Value": "A0MC"
+        },
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 50
+        },
+        {
+          "Id": 1902473845,
+          "Type": 3,
+          "Value": ""
+        },
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Purchasable"
+        }
+      ]
+    },
+    {
+      "OldId": 1735289699,
+      "NewId": 1378889801,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1768055145,
+          "Type": 3,
+          "Value": "A028,A0F6"
+        },
+        {
+          "Id": 1684628329,
+          "Type": 3,
+          "Value": "A028"
+        },
+        {
+          "Id": 1886545001,
+          "Type": 0,
+          "Value": 1
+        },
+        {
+          "Id": 1886677097,
+          "Type": 0,
+          "Value": 500000
+        },
+        {
+          "Id": 2002874473,
+          "Type": 0,
+          "Value": 0
+        },
+        {
+          "Id": 1634956649,
+          "Type": 0,
+          "Value": 1
+        }
+      ]
+    },
+    {
+      "OldId": 1685217655,
+      "NewId": 1362112585,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1768055145,
+          "Type": 3,
+          "Value": "A0PP"
+        },
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Purchasable"
+        },
+        {
+          "Id": 1684628329,
+          "Type": 3,
+          "Value": "Amls"
+        },
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 80
+        },
+        {
+          "Id": 1919250537,
+          "Type": 0,
+          "Value": 1
+        },
+        {
+          "Id": 1634956649,
+          "Type": 0,
+          "Value": 1
+        },
+        {
+          "Id": 1702065513,
+          "Type": 0,
+          "Value": 3
+        },
+        {
+          "Id": 2002874473,
+          "Type": 0,
+          "Value": 0
+        },
+        {
+          "Id": 1953723241,
+          "Type": 0,
+          "Value": 720
+        }
+      ]
+    },
+    {
+      "OldId": 1685217655,
+      "NewId": 1345335369,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1768055145,
+          "Type": 3,
+          "Value": "A0PU"
+        },
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Purchasable"
+        },
+        {
+          "Id": 1684628329,
+          "Type": 3,
+          "Value": "Amls"
+        },
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 80
+        },
+        {
+          "Id": 1919250537,
+          "Type": 0,
+          "Value": 1
+        },
+        {
+          "Id": 1634956649,
+          "Type": 0,
+          "Value": 1
+        },
+        {
+          "Id": 1702065513,
+          "Type": 0,
+          "Value": 3
+        },
+        {
+          "Id": 2002874473,
+          "Type": 0,
+          "Value": 0
+        },
+        {
+          "Id": 1953723241,
+          "Type": 0,
+          "Value": 720
+        }
+      ]
+    },
+    {
+      "OldId": 1685217655,
+      "NewId": 1328558153,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1768055145,
+          "Type": 3,
+          "Value": "A0PR"
+        },
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Purchasable"
+        },
+        {
+          "Id": 1684628329,
+          "Type": 3,
+          "Value": "Amls"
+        },
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 80
+        },
+        {
+          "Id": 1919250537,
+          "Type": 0,
+          "Value": 1
+        },
+        {
+          "Id": 1634956649,
+          "Type": 0,
+          "Value": 1
+        },
+        {
+          "Id": 1702065513,
+          "Type": 0,
+          "Value": 3
+        },
+        {
+          "Id": 2002874473,
+          "Type": 0,
+          "Value": 0
+        },
+        {
+          "Id": 1953723241,
+          "Type": 0,
+          "Value": 720
+        }
+      ]
+    },
+    {
+      "OldId": 1685217655,
+      "NewId": 1295003721,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1768055145,
+          "Type": 3,
+          "Value": "A0PN"
+        },
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Purchasable"
+        },
+        {
+          "Id": 1684628329,
+          "Type": 3,
+          "Value": "Amls"
+        },
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 80
+        },
+        {
+          "Id": 1919250537,
+          "Type": 0,
+          "Value": 1
+        },
+        {
+          "Id": 1634956649,
+          "Type": 0,
+          "Value": 1
+        },
+        {
+          "Id": 1702065513,
+          "Type": 0,
+          "Value": 3
+        },
+        {
+          "Id": 2002874473,
+          "Type": 0,
+          "Value": 0
+        },
+        {
+          "Id": 1953723241,
+          "Type": 0,
+          "Value": 720
+        }
+      ]
+    },
+    {
+      "OldId": 1684826487,
+      "NewId": 1278226505,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1768055145,
+          "Type": 3,
+          "Value": "A04C"
+        },
+        {
+          "Id": 1684628329,
+          "Type": 3,
+          "Value": "AIpl"
+        },
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 35
+        },
+        {
+          "Id": 1635021673,
+          "Type": 0,
+          "Value": 9
+        },
+        {
+          "Id": 1869902697,
+          "Type": 0,
+          "Value": 3
+        },
+        {
+          "Id": 1920234345,
+          "Type": 0,
+          "Value": 240
+        },
+        {
+          "Id": 1702065513,
+          "Type": 0,
+          "Value": 3
+        },
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Purchasable"
+        },
+        {
+          "Id": 1953723241,
+          "Type": 0,
+          "Value": 600
+        }
+      ]
+    },
+    {
+      "OldId": 862282866,
+      "NewId": 1261449289,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1768055145,
+          "Type": 3,
+          "Value": "A0GF,AI2m,AIrm"
+        },
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Artifact"
+        },
+        {
+          "Id": 1886545001,
+          "Type": 0,
+          "Value": 1
+        },
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 250
+        },
+        {
+          "Id": 1886677097,
+          "Type": 0,
+          "Value": 500000
+        },
+        {
+          "Id": 2002874473,
+          "Type": 0,
+          "Value": 0
+        },
+        {
+          "Id": 1818588009,
+          "Type": 0,
+          "Value": 0
+        },
+        {
+          "Id": 1920234345,
+          "Type": 0,
+          "Value": 600
+        },
+        {
+          "Id": 1953723241,
+          "Type": 0,
+          "Value": 800
+        }
+      ]
+    },
+    {
+      "OldId": 1919510127,
+      "NewId": 1244672073,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1768055145,
+          "Type": 3,
+          "Value": "A02X,AItx,AIi4,AIlf"
+        },
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Artifact"
+        },
+        {
+          "Id": 1886545001,
+          "Type": 0,
+          "Value": 1
+        },
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 50
+        },
+        {
+          "Id": 1886677097,
+          "Type": 0,
+          "Value": 500000
+        },
+        {
+          "Id": 2002874473,
+          "Type": 0,
+          "Value": 0
+        },
+        {
+          "Id": 1902473845,
+          "Type": 3,
+          "Value": ""
+        },
+        {
+          "Id": 1818588009,
+          "Type": 0,
+          "Value": 0
+        },
+        {
+          "Id": 1634956649,
+          "Type": 0,
+          "Value": 1
+        }
+      ]
+    },
+    {
+      "OldId": 1735289699,
+      "NewId": 1227894857,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1768055145,
+          "Type": 3,
+          "Value": "AIdb,A03Y"
+        },
+        {
+          "Id": 1886545001,
+          "Type": 0,
+          "Value": 1
+        },
+        {
+          "Id": 1886677097,
+          "Type": 0,
+          "Value": 500000
+        },
+        {
+          "Id": 2002874473,
+          "Type": 0,
+          "Value": 0
+        },
+        {
+          "Id": 1634956649,
+          "Type": 0,
+          "Value": 1
+        }
+      ]
+    },
+    {
+      "OldId": 1735289699,
+      "NewId": 1211117641,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1768055145,
+          "Type": 3,
+          "Value": "A03X"
+        },
+        {
+          "Id": 1886545001,
+          "Type": 0,
+          "Value": 1
+        },
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 250
+        },
+        {
+          "Id": 1886677097,
+          "Type": 0,
+          "Value": 500000
+        },
+        {
+          "Id": 2002874473,
+          "Type": 0,
+          "Value": 0
+        },
+        {
+          "Id": 1902473845,
+          "Type": 3,
+          "Value": "R01W"
+        },
+        {
+          "Id": 1818588009,
+          "Type": 0,
+          "Value": 0
+        },
+        {
+          "Id": 1920234345,
+          "Type": 0,
+          "Value": 600
+        },
+        {
+          "Id": 1953723241,
+          "Type": 0,
+          "Value": 800
+        }
+      ]
+    },
+    {
+      "OldId": 1685217655,
+      "NewId": 1194340425,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1768055145,
+          "Type": 3,
+          "Value": "A07S"
+        },
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Purchasable"
+        },
+        {
+          "Id": 1684628329,
+          "Type": 3,
+          "Value": "Amls"
+        },
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 80
+        },
+        {
+          "Id": 1919250537,
+          "Type": 0,
+          "Value": 1
+        },
+        {
+          "Id": 1634956649,
+          "Type": 0,
+          "Value": 1
+        },
+        {
+          "Id": 1702065513,
+          "Type": 0,
+          "Value": 3
+        },
+        {
+          "Id": 2002874473,
+          "Type": 0,
+          "Value": 0
+        },
+        {
+          "Id": 1953723241,
+          "Type": 0,
+          "Value": 720
+        }
+      ]
+    },
+    {
+      "OldId": 862282866,
+      "NewId": 1177563209,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1768055145,
+          "Type": 3,
+          "Value": "A0I7,AIa6"
+        },
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Artifact"
+        },
+        {
+          "Id": 1886545001,
+          "Type": 0,
+          "Value": 1
+        },
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 250
+        },
+        {
+          "Id": 1886677097,
+          "Type": 0,
+          "Value": 500000
+        },
+        {
+          "Id": 2002874473,
+          "Type": 0,
+          "Value": 0
+        },
+        {
+          "Id": 1818588009,
+          "Type": 0,
+          "Value": 0
+        },
+        {
+          "Id": 1920234345,
+          "Type": 0,
+          "Value": 600
+        },
+        {
+          "Id": 1953723241,
+          "Type": 0,
+          "Value": 800
+        },
+        {
+          "Id": 1634956649,
+          "Type": 0,
+          "Value": 1
+        }
+      ]
+    },
+    {
+      "OldId": 1835887723,
+      "NewId": 1144008777,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1768055145,
+          "Type": 3,
+          "Value": "Aspp,AItx,AIva"
+        },
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Artifact"
+        },
+        {
+          "Id": 1684628329,
+          "Type": 3,
+          "Value": "Aspp"
+        },
+        {
+          "Id": 1886545001,
+          "Type": 0,
+          "Value": 1
+        },
+        {
+          "Id": 1886677097,
+          "Type": 0,
+          "Value": 500000
+        },
+        {
+          "Id": 1986358377,
+          "Type": 0,
+          "Value": 8
+        },
+        {
+          "Id": 2002874473,
+          "Type": 0,
+          "Value": 0
+        },
+        {
+          "Id": 1769107561,
+          "Type": 0,
+          "Value": 200
+        },
+        {
+          "Id": 1818588009,
+          "Type": 0,
+          "Value": 0
+        },
+        {
+          "Id": 1634956649,
+          "Type": 0,
+          "Value": 1
+        }
+      ]
+    },
+    {
+      "OldId": 1668506980,
+      "NewId": 1127231561,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1768055145,
+          "Type": 3,
+          "Value": "A0CN,AIa3,AIi6,AIs3"
+        },
+        {
+          "Id": 1684628329,
+          "Type": 3,
+          "Value": "A0CN"
+        },
+        {
+          "Id": 1886545001,
+          "Type": 0,
+          "Value": 1
+        },
+        {
+          "Id": 1886677097,
+          "Type": 0,
+          "Value": 500000
+        },
+        {
+          "Id": 2002874473,
+          "Type": 0,
+          "Value": 0
+        }
+      ]
+    },
+    {
+      "OldId": 1685217655,
+      "NewId": 1110454345,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1768055145,
+          "Type": 3,
+          "Value": "A0PQ"
+        },
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Purchasable"
+        },
+        {
+          "Id": 1684628329,
+          "Type": 3,
+          "Value": "Amls"
+        },
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 80
+        },
+        {
+          "Id": 1919250537,
+          "Type": 0,
+          "Value": 1
+        },
+        {
+          "Id": 1634956649,
+          "Type": 0,
+          "Value": 1
+        },
+        {
+          "Id": 1702065513,
+          "Type": 0,
+          "Value": 3
+        },
+        {
+          "Id": 2002874473,
+          "Type": 0,
+          "Value": 0
+        },
+        {
+          "Id": 1953723241,
+          "Type": 0,
+          "Value": 720
+        }
+      ]
+    },
+    {
+      "OldId": 1685217655,
+      "NewId": 1093677129,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1768055145,
+          "Type": 3,
+          "Value": "A0PO"
+        },
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Purchasable"
+        },
+        {
+          "Id": 1684628329,
+          "Type": 3,
+          "Value": "Amls"
+        },
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 80
+        },
+        {
+          "Id": 1919250537,
+          "Type": 0,
+          "Value": 1
+        },
+        {
+          "Id": 1634956649,
+          "Type": 0,
+          "Value": 1
+        },
+        {
+          "Id": 1702065513,
+          "Type": 0,
+          "Value": 3
+        },
+        {
+          "Id": 2002874473,
+          "Type": 0,
+          "Value": 0
+        },
+        {
+          "Id": 1953723241,
+          "Type": 0,
+          "Value": 720
+        }
+      ]
+    },
+    {
+      "OldId": 1668506980,
+      "NewId": 925904969,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1768055145,
+          "Type": 3,
+          "Value": "ANdo,A0W0"
+        },
+        {
+          "Id": 1886545001,
+          "Type": 0,
+          "Value": 1
+        },
+        {
+          "Id": 1886677097,
+          "Type": 0,
+          "Value": 500000
+        },
+        {
+          "Id": 2002874473,
+          "Type": 0,
+          "Value": 0
+        }
+      ]
+    },
+    {
+      "OldId": 1735289699,
+      "NewId": 909127753,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1768055145,
+          "Type": 3,
+          "Value": "A0BT,A0W0"
+        },
+        {
+          "Id": 1684628329,
+          "Type": 3,
+          "Value": "AIse"
+        },
+        {
+          "Id": 1886545001,
+          "Type": 0,
+          "Value": 1
+        },
+        {
+          "Id": 1886677097,
+          "Type": 0,
+          "Value": 500000
+        },
+        {
+          "Id": 2002874473,
+          "Type": 0,
+          "Value": 0
+        },
+        {
+          "Id": 1634956649,
+          "Type": 0,
+          "Value": 1
+        }
+      ]
+    },
+    {
+      "OldId": 1818850163,
+      "NewId": 875573321,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1768055145,
+          "Type": 3,
+          "Value": "AIrr,AIi4,AIs4"
+        },
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Artifact"
+        },
+        {
+          "Id": 1684628329,
+          "Type": 3,
+          "Value": "AIrr"
+        },
+        {
+          "Id": 1886545001,
+          "Type": 0,
+          "Value": 1
+        },
+        {
+          "Id": 1886677097,
+          "Type": 0,
+          "Value": 500000
+        },
+        {
+          "Id": 2002874473,
+          "Type": 0,
+          "Value": 0
+        }
+      ]
+    },
+    {
+      "OldId": 1735289699,
+      "NewId": 858796105,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1768055145,
+          "Type": 3,
+          "Value": "A049,A048"
+        },
+        {
+          "Id": 1684628329,
+          "Type": 3,
+          "Value": "Ashs"
+        },
+        {
+          "Id": 1886545001,
+          "Type": 0,
+          "Value": 1
+        },
+        {
+          "Id": 1886677097,
+          "Type": 0,
+          "Value": 500000
+        },
+        {
+          "Id": 2002874473,
+          "Type": 0,
+          "Value": 0
+        },
+        {
+          "Id": 1634956649,
+          "Type": 0,
+          "Value": 1
+        }
+      ]
+    },
+    {
+      "OldId": 1735289699,
+      "NewId": 842018889,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1768055145,
+          "Type": 3,
+          "Value": "AIdb,AIx5"
+        },
+        {
+          "Id": 1886545001,
+          "Type": 0,
+          "Value": 1
+        },
+        {
+          "Id": 1886677097,
+          "Type": 0,
+          "Value": 500000
+        },
+        {
+          "Id": 2002874473,
+          "Type": 0,
+          "Value": 0
+        },
+        {
+          "Id": 1634956649,
+          "Type": 0,
+          "Value": 1
+        }
+      ]
+    },
+    {
+      "OldId": 1735289699,
+      "NewId": 825241673,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1768055145,
+          "Type": 3,
+          "Value": "AIdb,AIx5"
+        },
+        {
+          "Id": 1886545001,
+          "Type": 0,
+          "Value": 1
+        },
+        {
+          "Id": 1886677097,
+          "Type": 0,
+          "Value": 500000
+        },
+        {
+          "Id": 2002874473,
+          "Type": 0,
+          "Value": 0
+        },
+        {
+          "Id": 1634956649,
+          "Type": 0,
+          "Value": 1
+        }
+      ]
+    },
+    {
+      "OldId": 1886876787,
+      "NewId": 808464457,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1768055145,
+          "Type": 3,
+          "Value": "A00M"
+        },
+        {
+          "Id": 1684628329,
+          "Type": 3,
+          "Value": "AIsp"
+        },
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 300
+        },
+        {
+          "Id": 1902473845,
+          "Type": 3,
+          "Value": ""
+        },
+        {
+          "Id": 1635021673,
+          "Type": 0,
+          "Value": 3
+        },
+        {
+          "Id": 1953723241,
+          "Type": 0,
+          "Value": 1560
+        }
+      ]
+    },
+    {
+      "OldId": 1685217655,
+      "NewId": 892350537,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1768055145,
+          "Type": 3,
+          "Value": "A0QO"
+        },
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Purchasable"
+        },
+        {
+          "Id": 1684628329,
+          "Type": 3,
+          "Value": "Amls"
+        },
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 80
+        },
+        {
+          "Id": 1919250537,
+          "Type": 0,
+          "Value": 1
+        },
+        {
+          "Id": 1634956649,
+          "Type": 0,
+          "Value": 1
+        },
+        {
+          "Id": 1702065513,
+          "Type": 0,
+          "Value": 3
+        },
+        {
+          "Id": 2002874473,
+          "Type": 0,
+          "Value": 0
+        },
+        {
+          "Id": 1953723241,
+          "Type": 0,
+          "Value": 720
+        }
+      ]
+    },
+    {
+      "OldId": 1685217655,
+      "NewId": 942682185,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1768055145,
+          "Type": 3,
+          "Value": "A0QT"
+        },
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Purchasable"
+        },
+        {
+          "Id": 1684628329,
+          "Type": 3,
+          "Value": "Amls"
+        },
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 80
+        },
+        {
+          "Id": 1919250537,
+          "Type": 0,
+          "Value": 1
+        },
+        {
+          "Id": 1634956649,
+          "Type": 0,
+          "Value": 1
+        },
+        {
+          "Id": 1702065513,
+          "Type": 0,
+          "Value": 3
+        },
+        {
+          "Id": 2002874473,
+          "Type": 0,
+          "Value": 0
+        },
+        {
+          "Id": 1953723241,
+          "Type": 0,
+          "Value": 720
+        }
+      ]
+    },
+    {
+      "OldId": 1685217655,
+      "NewId": 959459401,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1768055145,
+          "Type": 3,
+          "Value": "A0QY"
+        },
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Purchasable"
+        },
+        {
+          "Id": 1684628329,
+          "Type": 3,
+          "Value": "Amls"
+        },
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 80
+        },
+        {
+          "Id": 1919250537,
+          "Type": 0,
+          "Value": 1
+        },
+        {
+          "Id": 1634956649,
+          "Type": 0,
+          "Value": 1
+        },
+        {
+          "Id": 1702065513,
+          "Type": 0,
+          "Value": 3
+        },
+        {
+          "Id": 2002874473,
+          "Type": 0,
+          "Value": 0
+        },
+        {
+          "Id": 1953723241,
+          "Type": 0,
+          "Value": 720
+        }
+      ]
+    },
+    {
+      "OldId": 1685217655,
+      "NewId": 1160785993,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1768055145,
+          "Type": 3,
+          "Value": "A0QX"
+        },
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Purchasable"
+        },
+        {
+          "Id": 1684628329,
+          "Type": 3,
+          "Value": "Amls"
+        },
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 80
+        },
+        {
+          "Id": 1919250537,
+          "Type": 0,
+          "Value": 1
+        },
+        {
+          "Id": 1634956649,
+          "Type": 0,
+          "Value": 1
+        },
+        {
+          "Id": 1702065513,
+          "Type": 0,
+          "Value": 3
+        },
+        {
+          "Id": 2002874473,
+          "Type": 0,
+          "Value": 0
+        },
+        {
+          "Id": 1953723241,
+          "Type": 0,
+          "Value": 720
+        }
+      ]
+    },
+    {
+      "OldId": 1936092777,
+      "NewId": 1311780937,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1768055145,
+          "Type": 3,
+          "Value": "A035"
+        },
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Purchasable"
+        },
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 80
+        },
+        {
+          "Id": 1702065513,
+          "Type": 0,
+          "Value": 3
+        },
+        {
+          "Id": 2002874473,
+          "Type": 0,
+          "Value": 0
+        },
+        {
+          "Id": 1953723241,
+          "Type": 0,
+          "Value": 720
+        }
+      ]
+    },
+    {
+      "OldId": 1685217655,
+      "NewId": 1479553097,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1768055145,
+          "Type": 3,
+          "Value": "A0R0"
+        },
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Purchasable"
+        },
+        {
+          "Id": 1684628329,
+          "Type": 3,
+          "Value": "Amls"
+        },
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 80
+        },
+        {
+          "Id": 1919250537,
+          "Type": 0,
+          "Value": 1
+        },
+        {
+          "Id": 1634956649,
+          "Type": 0,
+          "Value": 1
+        },
+        {
+          "Id": 1702065513,
+          "Type": 0,
+          "Value": 3
+        },
+        {
+          "Id": 2002874473,
+          "Type": 0,
+          "Value": 0
+        },
+        {
+          "Id": 1953723241,
+          "Type": 0,
+          "Value": 720
+        }
+      ]
+    },
+    {
+      "OldId": 1685217655,
+      "NewId": 1496330313,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1768055145,
+          "Type": 3,
+          "Value": "A0YI"
+        },
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Purchasable"
+        },
+        {
+          "Id": 1684628329,
+          "Type": 3,
+          "Value": "Amls"
+        },
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 80
+        },
+        {
+          "Id": 1919250537,
+          "Type": 0,
+          "Value": 1
+        },
+        {
+          "Id": 1634956649,
+          "Type": 0,
+          "Value": 1
+        },
+        {
+          "Id": 1702065513,
+          "Type": 0,
+          "Value": 3
+        },
+        {
+          "Id": 2002874473,
+          "Type": 0,
+          "Value": 0
+        },
+        {
+          "Id": 1953723241,
+          "Type": 0,
+          "Value": 720
+        }
+      ]
+    },
+    {
+      "OldId": 1835887723,
+      "NewId": 1513107529,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1768055145,
+          "Type": 3,
+          "Value": "AItx,AIcl"
+        },
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Artifact"
+        },
+        {
+          "Id": 1684628329,
+          "Type": 3,
+          "Value": "AIcl"
+        },
+        {
+          "Id": 1886545001,
+          "Type": 0,
+          "Value": 1
+        },
+        {
+          "Id": 1886677097,
+          "Type": 0,
+          "Value": 500000
+        },
+        {
+          "Id": 1986358377,
+          "Type": 0,
+          "Value": 8
+        },
+        {
+          "Id": 2002874473,
+          "Type": 0,
+          "Value": 0
+        },
+        {
+          "Id": 1769107561,
+          "Type": 0,
+          "Value": 200
+        },
+        {
+          "Id": 1818588009,
+          "Type": 0,
+          "Value": 0
+        },
+        {
+          "Id": 1634956649,
+          "Type": 0,
+          "Value": 1
+        }
+      ]
+    },
+    {
+      "OldId": 1685217655,
+      "NewId": 808529993,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1768055145,
+          "Type": 3,
+          "Value": "A098"
+        },
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Purchasable"
+        },
+        {
+          "Id": 1684628329,
+          "Type": 3,
+          "Value": "Amls"
+        },
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 80
+        },
+        {
+          "Id": 1919250537,
+          "Type": 0,
+          "Value": 1
+        },
+        {
+          "Id": 1634956649,
+          "Type": 0,
+          "Value": 1
+        },
+        {
+          "Id": 1702065513,
+          "Type": 0,
+          "Value": 3
+        },
+        {
+          "Id": 2002874473,
+          "Type": 0,
+          "Value": 0
+        },
+        {
+          "Id": 1902473845,
+          "Type": 3,
+          "Value": "R081"
+        },
+        {
+          "Id": 1953723241,
+          "Type": 0,
+          "Value": 720
+        }
+      ]
+    },
+    {
+      "OldId": 1735289699,
+      "NewId": 825307209,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1768055145,
+          "Type": 3,
+          "Value": "A0BF,A0A1"
+        },
+        {
+          "Id": 1886545001,
+          "Type": 0,
+          "Value": 1
+        },
+        {
+          "Id": 1886677097,
+          "Type": 0,
+          "Value": 500000
+        },
+        {
+          "Id": 2002874473,
+          "Type": 0,
+          "Value": 0
+        },
+        {
+          "Id": 1634956649,
+          "Type": 0,
+          "Value": 1
+        }
+      ]
+    },
+    {
+      "OldId": 1835887723,
+      "NewId": 842084425,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1768055145,
+          "Type": 3,
+          "Value": "A0AL,AIvl,AItx"
+        },
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Artifact"
+        },
+        {
+          "Id": 1684628329,
+          "Type": 3,
+          "Value": "AIvl"
+        },
+        {
+          "Id": 1886545001,
+          "Type": 0,
+          "Value": 1
+        },
+        {
+          "Id": 1886677097,
+          "Type": 0,
+          "Value": 500000
+        },
+        {
+          "Id": 1986358377,
+          "Type": 0,
+          "Value": 8
+        },
+        {
+          "Id": 2002874473,
+          "Type": 0,
+          "Value": 0
+        },
+        {
+          "Id": 1769107561,
+          "Type": 0,
+          "Value": 200
+        },
+        {
+          "Id": 1818588009,
+          "Type": 0,
+          "Value": 0
+        },
+        {
+          "Id": 1634956649,
+          "Type": 0,
+          "Value": 1
+        },
+        {
+          "Id": 1869767785,
+          "Type": 0,
+          "Value": 0
+        }
+      ]
+    },
+    {
+      "OldId": 1835887723,
+      "NewId": 892416073,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1768055145,
+          "Type": 3,
+          "Value": "A03V,AIlf,AIa5,A0F6"
+        },
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Artifact"
+        },
+        {
+          "Id": 1684628329,
+          "Type": 3,
+          "Value": "AIin"
+        },
+        {
+          "Id": 1886545001,
+          "Type": 0,
+          "Value": 1
+        },
+        {
+          "Id": 1886677097,
+          "Type": 0,
+          "Value": 500000
+        },
+        {
+          "Id": 1986358377,
+          "Type": 0,
+          "Value": 8
+        },
+        {
+          "Id": 2002874473,
+          "Type": 0,
+          "Value": 0
+        },
+        {
+          "Id": 1769107561,
+          "Type": 0,
+          "Value": 200
+        },
+        {
+          "Id": 1818588009,
+          "Type": 0,
+          "Value": 0
+        },
+        {
+          "Id": 1634956649,
+          "Type": 0,
+          "Value": 1
+        }
+      ]
+    },
+    {
+      "OldId": 1919510127,
+      "NewId": 909193289,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1768055145,
+          "Type": 3,
+          "Value": "A0FY,A0U9,A0HE,A0HD"
+        },
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Artifact"
+        },
+        {
+          "Id": 1886545001,
+          "Type": 0,
+          "Value": 1
+        },
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 50
+        },
+        {
+          "Id": 1886677097,
+          "Type": 0,
+          "Value": 500000
+        },
+        {
+          "Id": 2002874473,
+          "Type": 0,
+          "Value": 0
+        },
+        {
+          "Id": 1902473845,
+          "Type": 3,
+          "Value": ""
+        },
+        {
+          "Id": 1818588009,
+          "Type": 0,
+          "Value": 0
+        },
+        {
+          "Id": 1634956649,
+          "Type": 0,
+          "Value": 1
+        }
+      ]
+    },
+    {
+      "OldId": 1886876787,
+      "NewId": 925970505,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1768055145,
+          "Type": 3,
+          "Value": "A0ZJ"
+        },
+        {
+          "Id": 1684628329,
+          "Type": 3,
+          "Value": "AIsp"
+        },
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 0
+        },
+        {
+          "Id": 1902473845,
+          "Type": 3,
+          "Value": ""
+        },
+        {
+          "Id": 1635021673,
+          "Type": 0,
+          "Value": 1
+        },
+        {
+          "Id": 1953723241,
+          "Type": 0,
+          "Value": 0
+        },
+        {
+          "Id": 1634493289,
+          "Type": 3,
+          "Value": "Charged"
+        }
+      ]
+    },
+    {
+      "OldId": 1735289699,
+      "NewId": 942747721,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1768055145,
+          "Type": 3,
+          "Value": "A0JJ,A0F6"
+        },
+        {
+          "Id": 1684628329,
+          "Type": 3,
+          "Value": "A0JJ"
+        },
+        {
+          "Id": 1886545001,
+          "Type": 0,
+          "Value": 1
+        },
+        {
+          "Id": 1886677097,
+          "Type": 0,
+          "Value": 500000
+        },
+        {
+          "Id": 2002874473,
+          "Type": 0,
+          "Value": 0
+        },
+        {
+          "Id": 1634956649,
+          "Type": 0,
+          "Value": 1
+        }
+      ]
+    },
+    {
+      "OldId": 1886876787,
+      "NewId": 959524937,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1768055145,
+          "Type": 3,
+          "Value": "A00M"
+        },
+        {
+          "Id": 1684628329,
+          "Type": 3,
+          "Value": "AIsp"
+        },
+        {
+          "Id": 1819240297,
+          "Type": 0,
+          "Value": 200
+        },
+        {
+          "Id": 1902473845,
+          "Type": 3,
+          "Value": ""
+        },
+        {
+          "Id": 1635021673,
+          "Type": 0,
+          "Value": 3
+        },
+        {
+          "Id": 1953723241,
+          "Type": 0,
+          "Value": 1
+        }
+      ]
+    }
+  ]
+}

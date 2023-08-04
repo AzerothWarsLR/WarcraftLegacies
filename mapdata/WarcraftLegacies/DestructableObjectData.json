@@ -1,0 +1,4067 @@
+{
+  "FormatVersion": 3,
+  "BaseDestructables": [
+    {
+      "OldId": 863458394,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 1
+        },
+        {
+          "Id": 1918989410,
+          "Type": 3,
+          "Value": "bridge"
+        }
+      ]
+    },
+    {
+      "OldId": 846681178,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 1
+        },
+        {
+          "Id": 1918989410,
+          "Type": 3,
+          "Value": "bridge"
+        }
+      ]
+    },
+    {
+      "OldId": 829903962,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 1
+        },
+        {
+          "Id": 1918989410,
+          "Type": 3,
+          "Value": "bridge"
+        }
+      ]
+    },
+    {
+      "OldId": 813126746,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 1
+        },
+        {
+          "Id": 1918989410,
+          "Type": 3,
+          "Value": "bridge"
+        }
+      ]
+    },
+    {
+      "OldId": 2004112474,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 100
+        },
+        {
+          "Id": 1668181858,
+          "Type": 0,
+          "Value": 1
+        }
+      ]
+    },
+    {
+      "OldId": 1668568154,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 100
+        },
+        {
+          "Id": 1668181858,
+          "Type": 0,
+          "Value": 1
+        }
+      ]
+    },
+    {
+      "OldId": 2020824154,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 1735611482,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 863130714,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 846353498,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 829576282,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 812799066,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 99999
+        }
+      ]
+    },
+    {
+      "OldId": 1668174938,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 879187034,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 862409818,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 845632602,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 828855386,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 946099290,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 929322074,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 912544858,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 895767642,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 878990426,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 862213210,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 845435994,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 828658778,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 1953977433,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 100
+        },
+        {
+          "Id": 1668181858,
+          "Type": 0,
+          "Value": 1
+        }
+      ]
+    },
+    {
+      "OldId": 1953715289,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 100
+        },
+        {
+          "Id": 1668181858,
+          "Type": 0,
+          "Value": 1
+        }
+      ]
+    },
+    {
+      "OldId": 1952863321,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 100
+        },
+        {
+          "Id": 1668181858,
+          "Type": 0,
+          "Value": 1
+        }
+      ]
+    },
+    {
+      "OldId": 2019775577,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1818326882,
+          "Type": 0,
+          "Value": 1
+        }
+      ]
+    },
+    {
+      "OldId": 1952666713,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 100
+        },
+        {
+          "Id": 1668181858,
+          "Type": 0,
+          "Value": 1
+        },
+        {
+          "Id": 1751347042,
+          "Type": 2,
+          "Value": 0
+        }
+      ]
+    },
+    {
+      "OldId": 1701008473,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 828593241,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 825578585,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 808801369,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 959730777,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 942953561,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 926176345,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 909399129,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 892621913,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 875844697,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 859067481,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 842290265,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 1
+        }
+      ]
+    },
+    {
+      "OldId": 825513049,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 808735833,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 959665241,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 942888025,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 926110809,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 909333593,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 1
+        }
+      ]
+    },
+    {
+      "OldId": 892556377,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 875779161,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 859001945,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 842224729,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 825447513,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 808670297,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 959599705,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 942822489,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 926045273,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 909268057,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 892490841,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 875713625,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 858936409,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 842159193,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 825381977,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 808604761,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 959534169,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 942756953,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 1
+        }
+      ]
+    },
+    {
+      "OldId": 925979737,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 909202521,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 892425305,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 875648089,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 858870873,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 842093657,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 1
+        }
+      ]
+    },
+    {
+      "OldId": 825316441,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 808539225,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 959468633,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 942691417,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 925914201,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 909136985,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 892359769,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 875582553,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 858805337,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 842028121,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 825250905,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 808473689,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 1667519321,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 1
+        }
+      ]
+    },
+    {
+      "OldId": 1650742105,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 1
+        }
+      ]
+    },
+    {
+      "OldId": 897078360,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 1953911896,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1668181858,
+          "Type": 0,
+          "Value": 1
+        }
+      ]
+    },
+    {
+      "OldId": 2020430936,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 100
+        }
+      ]
+    },
+    {
+      "OldId": 1886213208,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 20
+        }
+      ]
+    },
+    {
+      "OldId": 896357464,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 1684165720,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1668181858,
+          "Type": 0,
+          "Value": 1
+        }
+      ]
+    },
+    {
+      "OldId": 1953189720,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 845893464,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 829116248,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 2004112471,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 100
+        },
+        {
+          "Id": 1668181858,
+          "Type": 0,
+          "Value": 1
+        }
+      ]
+    },
+    {
+      "OldId": 1953715287,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 100
+        },
+        {
+          "Id": 1668181858,
+          "Type": 0,
+          "Value": 1
+        }
+      ]
+    },
+    {
+      "OldId": 1668050774,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1668181858,
+          "Type": 0,
+          "Value": 1
+        }
+      ]
+    },
+    {
+      "OldId": 1953256534,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 100
+        },
+        {
+          "Id": 1668181858,
+          "Type": 0,
+          "Value": 1
+        }
+      ]
+    },
+    {
+      "OldId": 2004112463,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 100
+        },
+        {
+          "Id": 1668181858,
+          "Type": 0,
+          "Value": 1
+        }
+      ]
+    },
+    {
+      "OldId": 1886606415,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1702061922,
+          "Type": 0,
+          "Value": 0
+        },
+        {
+          "Id": 1918989410,
+          "Type": 3,
+          "Value": ""
+        }
+      ]
+    },
+    {
+      "OldId": 1936282703,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 1
+        }
+      ]
+    },
+    {
+      "OldId": 1885951055,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 1
+        }
+      ]
+    },
+    {
+      "OldId": 1935955023,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1869375074,
+          "Type": 0,
+          "Value": 1
+        },
+        {
+          "Id": 1769367138,
+          "Type": 0,
+          "Value": 1
+        },
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 10000
+        },
+        {
+          "Id": 1751347042,
+          "Type": 2,
+          "Value": 999
+        },
+        {
+          "Id": 1918989410,
+          "Type": 3,
+          "Value": "invulnerable"
+        }
+      ]
+    },
+    {
+      "OldId": 2004112462,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 100
+        },
+        {
+          "Id": 1668181858,
+          "Type": 0,
+          "Value": 1
+        }
+      ]
+    },
+    {
+      "OldId": 1668568142,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 100
+        },
+        {
+          "Id": 1668181858,
+          "Type": 0,
+          "Value": 1
+        }
+      ]
+    },
+    {
+      "OldId": 1684165710,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1668181858,
+          "Type": 0,
+          "Value": 1
+        }
+      ]
+    },
+    {
+      "OldId": 863458380,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 1
+        },
+        {
+          "Id": 1918989410,
+          "Type": 3,
+          "Value": "bridge"
+        }
+      ]
+    },
+    {
+      "OldId": 846681164,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 1
+        },
+        {
+          "Id": 1918989410,
+          "Type": 3,
+          "Value": "bridge"
+        }
+      ]
+    },
+    {
+      "OldId": 829903948,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 1
+        },
+        {
+          "Id": 1918989410,
+          "Type": 3,
+          "Value": "bridge"
+        }
+      ]
+    },
+    {
+      "OldId": 813126732,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 1
+        },
+        {
+          "Id": 1918989410,
+          "Type": 3,
+          "Value": "bridge"
+        }
+      ]
+    },
+    {
+      "OldId": 2020889676,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 1668568140,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 896816204,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 880038988,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 863261772,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 846484556,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 829707340,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 812930124,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 947082316,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 930305100,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 913527884,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 896750668,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 879973452,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 863196236,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 846419020,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 829641804,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 1953649740,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 1668437068,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 1
+        },
+        {
+          "Id": 1918989410,
+          "Type": 3,
+          "Value": "decoration"
+        },
+        {
+          "Id": 1702061922,
+          "Type": 0,
+          "Value": 0
+        }
+      ]
+    },
+    {
+      "OldId": 947016780,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 930239564,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 913462348,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 896685132,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 879907916,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 863130700,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 846353484,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 829576268,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 1953256524,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 100
+        },
+        {
+          "Id": 1668181858,
+          "Type": 0,
+          "Value": 1
+        }
+      ]
+    },
+    {
+      "OldId": 879187020,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 2000
+        }
+      ]
+    },
+    {
+      "OldId": 862409804,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 2000
+        }
+      ]
+    },
+    {
+      "OldId": 845632588,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 2000
+        }
+      ]
+    },
+    {
+      "OldId": 828855372,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 400
+        }
+      ]
+    },
+    {
+      "OldId": 2019906636,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 879055948,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 2000
+        }
+      ]
+    },
+    {
+      "OldId": 862278732,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 2000
+        }
+      ]
+    },
+    {
+      "OldId": 845501516,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 2000
+        }
+      ]
+    },
+    {
+      "OldId": 828724300,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 2000
+        }
+      ]
+    },
+    {
+      "OldId": 1919112268,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 2019710028,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 1935823948,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 1919046732,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 1633834060,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 825316428,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 808539212,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 959468620,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 942691404,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 925914188,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 909136972,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 892359756,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 875582540,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 858805324,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 1
+        }
+      ]
+    },
+    {
+      "OldId": 842028108,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 1
+        }
+      ]
+    },
+    {
+      "OldId": 825250892,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 1
+        }
+      ]
+    },
+    {
+      "OldId": 808473676,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 1
+        }
+      ]
+    },
+    {
+      "OldId": 1734561612,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1668181858,
+          "Type": 0,
+          "Value": 1
+        }
+      ]
+    },
+    {
+      "OldId": 2004112459,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 100
+        },
+        {
+          "Id": 1668181858,
+          "Type": 0,
+          "Value": 1
+        }
+      ]
+    },
+    {
+      "OldId": 2004112458,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 100
+        },
+        {
+          "Id": 1668181858,
+          "Type": 0,
+          "Value": 1
+        }
+      ]
+    },
+    {
+      "OldId": 1952666698,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 100
+        },
+        {
+          "Id": 1668181858,
+          "Type": 0,
+          "Value": 1
+        }
+      ]
+    },
+    {
+      "OldId": 880301129,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 863523913,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 846746697,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 829969481,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 863458377,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 1
+        },
+        {
+          "Id": 1918989410,
+          "Type": 3,
+          "Value": "bridge"
+        }
+      ]
+    },
+    {
+      "OldId": 846681161,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 1
+        },
+        {
+          "Id": 1918989410,
+          "Type": 3,
+          "Value": "bridge"
+        }
+      ]
+    },
+    {
+      "OldId": 829903945,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 1
+        },
+        {
+          "Id": 1918989410,
+          "Type": 3,
+          "Value": "bridge"
+        }
+      ]
+    },
+    {
+      "OldId": 813126729,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 1
+        },
+        {
+          "Id": 1918989410,
+          "Type": 3,
+          "Value": "bridge"
+        }
+      ]
+    },
+    {
+      "OldId": 2004112457,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 100
+        },
+        {
+          "Id": 1668181858,
+          "Type": 0,
+          "Value": 1
+        }
+      ]
+    },
+    {
+      "OldId": 1735677001,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1818850402,
+          "Type": 3,
+          "Value": "I,*"
+        },
+        {
+          "Id": 1918989410,
+          "Type": 3,
+          "Value": ""
+        },
+        {
+          "Id": 1702061922,
+          "Type": 0,
+          "Value": 0
+        }
+      ]
+    },
+    {
+      "OldId": 1668568137,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 100
+        },
+        {
+          "Id": 1668181858,
+          "Type": 0,
+          "Value": 1
+        }
+      ]
+    },
+    {
+      "OldId": 1734956105,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 1651070025,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 879318089,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 862540873,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 845763657,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 879187017,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 862409801,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 845632585,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 828855369,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 879121481,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 1
+        }
+      ]
+    },
+    {
+      "OldId": 862344265,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 1
+        }
+      ]
+    },
+    {
+      "OldId": 845567049,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 1
+        }
+      ]
+    },
+    {
+      "OldId": 828789833,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 1
+        }
+      ]
+    },
+    {
+      "OldId": 1919112265,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 99999
+        },
+        {
+          "Id": 1918989410,
+          "Type": 3,
+          "Value": "debris,invulnerable"
+        }
+      ]
+    },
+    {
+      "OldId": 1734431817,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 846483273,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 829706057,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 812928841,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 1752388679,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 100
+        },
+        {
+          "Id": 1668181858,
+          "Type": 0,
+          "Value": 1
+        }
+      ]
+    },
+    {
+      "OldId": 2004112454,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 100
+        },
+        {
+          "Id": 1668181858,
+          "Type": 0,
+          "Value": 1
+        }
+      ]
+    },
+    {
+      "OldId": 2003201860,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 99999
+        }
+      ]
+    },
+    {
+      "OldId": 1986424644,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 99999
+        }
+      ]
+    },
+    {
+      "OldId": 1886606404,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 1752388676,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 100
+        },
+        {
+          "Id": 1668181858,
+          "Type": 0,
+          "Value": 1
+        },
+        {
+          "Id": 1751347042,
+          "Type": 2,
+          "Value": 0
+        }
+      ]
+    },
+    {
+      "OldId": 863196228,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 1
+        }
+      ]
+    },
+    {
+      "OldId": 846419012,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 1
+        }
+      ]
+    },
+    {
+      "OldId": 829641796,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 1
+        }
+      ]
+    },
+    {
+      "OldId": 2020758596,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 1718768708,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 1668437060,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 1000
+        }
+      ]
+    },
+    {
+      "OldId": 1986810948,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 946295876,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 929518660,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 2000
+        }
+      ]
+    },
+    {
+      "OldId": 912741444,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 895964228,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 879187012,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 2000
+        }
+      ]
+    },
+    {
+      "OldId": 862409796,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 99999
+        }
+      ]
+    },
+    {
+      "OldId": 845632580,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 2000
+        }
+      ]
+    },
+    {
+      "OldId": 828855364,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 2000
+        }
+      ]
+    },
+    {
+      "OldId": 2019972164,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 1885754436,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 1936020548,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1668181858,
+          "Type": 0,
+          "Value": 1
+        }
+      ]
+    },
+    {
+      "OldId": 1885688900,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 845370436,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 828593220,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 1920226371,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 100
+        },
+        {
+          "Id": 1668181858,
+          "Type": 0,
+          "Value": 1
+        }
+      ]
+    },
+    {
+      "OldId": 1668568131,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 100
+        },
+        {
+          "Id": 1668181858,
+          "Type": 0,
+          "Value": 1
+        }
+      ]
+    },
+    {
+      "OldId": 2004112450,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 100
+        },
+        {
+          "Id": 1668181858,
+          "Type": 0,
+          "Value": 1
+        }
+      ]
+    },
+    {
+      "OldId": 1668568130,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 100
+        },
+        {
+          "Id": 1668181858,
+          "Type": 0,
+          "Value": 1
+        }
+      ]
+    },
+    {
+      "OldId": 1668502594,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 2020758594,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 1936872514,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 1719096385,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 9999
+        },
+        {
+          "Id": 1702061922,
+          "Type": 0,
+          "Value": 1
+        },
+        {
+          "Id": 1918989410,
+          "Type": 3,
+          "Value": "invulnerable"
+        }
+      ]
+    },
+    {
+      "OldId": 1920226369,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 100
+        },
+        {
+          "Id": 1668181858,
+          "Type": 0,
+          "Value": 1
+        }
+      ]
+    },
+    {
+      "OldId": 1668568129,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 100
+        },
+        {
+          "Id": 1668181858,
+          "Type": 0,
+          "Value": 1
+        }
+      ]
+    },
+    {
+      "OldId": 829707329,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 812930113,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 879187009,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 3000
+        }
+      ]
+    },
+    {
+      "OldId": 862409793,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 845632577,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 828855361,
+      "NewId": 0,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    }
+  ],
+  "NewDestructables": [
+    {
+      "OldId": 1668050774,
+      "NewId": 1886217588,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 1668568131,
+      "NewId": 1446064194,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 100
+        },
+        {
+          "Id": 1668181858,
+          "Type": 0,
+          "Value": 1
+        }
+      ]
+    },
+    {
+      "OldId": 1920226371,
+      "NewId": 1429286978,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 100
+        },
+        {
+          "Id": 1668181858,
+          "Type": 0,
+          "Value": 1
+        }
+      ]
+    },
+    {
+      "OldId": 1920226369,
+      "NewId": 1412509762,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 99999
+        },
+        {
+          "Id": 1918989410,
+          "Type": 3,
+          "Value": "invulnerable"
+        },
+        {
+          "Id": 1818850402,
+          "Type": 3,
+          "Value": "A,L"
+        }
+      ]
+    },
+    {
+      "OldId": 812799066,
+      "NewId": 1395732546,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 9999
+        }
+      ]
+    },
+    {
+      "OldId": 1936020548,
+      "NewId": 1378955330,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 9999
+        },
+        {
+          "Id": 1702061922,
+          "Type": 0,
+          "Value": 0
+        },
+        {
+          "Id": 1918989410,
+          "Type": 3,
+          "Value": "invulnerable"
+        }
+      ]
+    },
+    {
+      "OldId": 863130714,
+      "NewId": 1362178114,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 2004112454,
+      "NewId": 1345400898,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 99999
+        },
+        {
+          "Id": 1668181858,
+          "Type": 0,
+          "Value": 1
+        }
+      ]
+    },
+    {
+      "OldId": 2004112462,
+      "NewId": 1328623682,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 100
+        },
+        {
+          "Id": 1668181858,
+          "Type": 0,
+          "Value": 1
+        },
+        {
+          "Id": 1918989410,
+          "Type": 3,
+          "Value": "invulnerable"
+        }
+      ]
+    },
+    {
+      "OldId": 842028108,
+      "NewId": 1311846466,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 1
+        }
+      ]
+    },
+    {
+      "OldId": 858805324,
+      "NewId": 1295069250,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 1
+        }
+      ]
+    },
+    {
+      "OldId": 875582540,
+      "NewId": 1261514818,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 1
+        }
+      ]
+    },
+    {
+      "OldId": 858805324,
+      "NewId": 1244737602,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 1
+        }
+      ]
+    },
+    {
+      "OldId": 1935823948,
+      "NewId": 1227960386,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 99999
+        },
+        {
+          "Id": 1702061922,
+          "Type": 0,
+          "Value": 0
+        }
+      ]
+    },
+    {
+      "OldId": 2004112450,
+      "NewId": 1211183170,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 100
+        },
+        {
+          "Id": 1818850402,
+          "Type": 3,
+          "Value": "*"
+        }
+      ]
+    },
+    {
+      "OldId": 2004112450,
+      "NewId": 1194405954,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 100
+        },
+        {
+          "Id": 1818850402,
+          "Type": 3,
+          "Value": "O"
+        }
+      ]
+    },
+    {
+      "OldId": 2004112450,
+      "NewId": 1177628738,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 100
+        }
+      ]
+    },
+    {
+      "OldId": 909333593,
+      "NewId": 1160851522,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 1
+        }
+      ]
+    },
+    {
+      "OldId": 1668437068,
+      "NewId": 1144074306,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 1500
+        }
+      ]
+    },
+    {
+      "OldId": 1936020548,
+      "NewId": 1127297090,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 909333593,
+      "NewId": 1110519874,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 1
+        }
+      ]
+    },
+    {
+      "OldId": 895964228,
+      "NewId": 1093742658,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 9001
+        }
+      ]
+    },
+    {
+      "OldId": 1953256524,
+      "NewId": 959524930,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 99999
+        },
+        {
+          "Id": 1668181858,
+          "Type": 0,
+          "Value": 1
+        }
+      ]
+    },
+    {
+      "OldId": 2004112457,
+      "NewId": 942747714,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 100
+        },
+        {
+          "Id": 1668181858,
+          "Type": 0,
+          "Value": 1
+        },
+        {
+          "Id": 1818850402,
+          "Type": 3,
+          "Value": "I,*"
+        }
+      ]
+    },
+    {
+      "OldId": 1935823948,
+      "NewId": 925970498,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 99999
+        },
+        {
+          "Id": 1702061922,
+          "Type": 0,
+          "Value": 0
+        },
+        {
+          "Id": 1918989410,
+          "Type": 3,
+          "Value": "invulnerable"
+        }
+      ]
+    },
+    {
+      "OldId": 913527884,
+      "NewId": 909193282,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 1
+        }
+      ]
+    },
+    {
+      "OldId": 896685132,
+      "NewId": 892416066,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 1
+        }
+      ]
+    },
+    {
+      "OldId": 1650873433,
+      "NewId": 825307202,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 1953256524,
+      "NewId": 808529986,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 99999
+        }
+      ]
+    },
+    {
+      "OldId": 909333593,
+      "NewId": 1513107522,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 1
+        }
+      ]
+    },
+    {
+      "OldId": 1719096385,
+      "NewId": 1496330306,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1952539490,
+          "Type": 3,
+          "Value": "D"
+        },
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 1
+        },
+        {
+          "Id": 1918989410,
+          "Type": 3,
+          "Value": "decoration"
+        }
+      ]
+    },
+    {
+      "OldId": 829641796,
+      "NewId": 1479553090,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 1
+        },
+        {
+          "Id": 1818850402,
+          "Type": 3,
+          "Value": "D,G,*"
+        },
+        {
+          "Id": 1836212578,
+          "Type": 3,
+          "Value": "Ethereal"
+        }
+      ]
+    },
+    {
+      "OldId": 1953189720,
+      "NewId": 1445998658,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 2004112463,
+      "NewId": 1429221442,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 100
+        },
+        {
+          "Id": 1818850402,
+          "Type": 3,
+          "Value": "D,O"
+        }
+      ]
+    },
+    {
+      "OldId": 2004112450,
+      "NewId": 1412444226,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 100
+        }
+      ]
+    },
+    {
+      "OldId": 1752388679,
+      "NewId": 1395667010,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 100
+        }
+      ]
+    },
+    {
+      "OldId": 1935823948,
+      "NewId": 1378889794,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1702061922,
+          "Type": 0,
+          "Value": 0
+        }
+      ]
+    },
+    {
+      "OldId": 1952666713,
+      "NewId": 1362112578,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 100
+        },
+        {
+          "Id": 1818850402,
+          "Type": 3,
+          "Value": "A,C"
+        }
+      ]
+    },
+    {
+      "OldId": 1953256524,
+      "NewId": 1345335362,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 100
+        },
+        {
+          "Id": 1818850402,
+          "Type": 3,
+          "Value": "A,C"
+        }
+      ]
+    },
+    {
+      "OldId": 1953256524,
+      "NewId": 1328558146,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 100
+        },
+        {
+          "Id": 1818850402,
+          "Type": 3,
+          "Value": "A,C"
+        }
+      ]
+    },
+    {
+      "OldId": 2004112457,
+      "NewId": 1311780930,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 100
+        }
+      ]
+    },
+    {
+      "OldId": 2004112457,
+      "NewId": 1295003714,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 100
+        }
+      ]
+    },
+    {
+      "OldId": 1953715287,
+      "NewId": 1278226498,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 100
+        }
+      ]
+    },
+    {
+      "OldId": 1920226369,
+      "NewId": 1261449282,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 100
+        }
+      ]
+    },
+    {
+      "OldId": 2004112474,
+      "NewId": 1244672066,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 100
+        }
+      ]
+    },
+    {
+      "OldId": 1920226371,
+      "NewId": 1227894850,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 100
+        }
+      ]
+    },
+    {
+      "OldId": 2004112462,
+      "NewId": 1211117634,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 100
+        },
+        {
+          "Id": 1818850402,
+          "Type": 3,
+          "Value": "K,N,O"
+        }
+      ]
+    },
+    {
+      "OldId": 2004112462,
+      "NewId": 1177563202,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 100
+        }
+      ]
+    },
+    {
+      "OldId": 1920226369,
+      "NewId": 1127231554,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 100
+        },
+        {
+          "Id": 1818850402,
+          "Type": 3,
+          "Value": "A,L"
+        }
+      ]
+    },
+    {
+      "OldId": 2004112454,
+      "NewId": 1110454338,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 100
+        }
+      ]
+    },
+    {
+      "OldId": 1668306009,
+      "NewId": 1093677122,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 1668306009,
+      "NewId": 959459394,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 1953715287,
+      "NewId": 925904962,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 100
+        }
+      ]
+    },
+    {
+      "OldId": 1953256524,
+      "NewId": 909127746,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 100
+        },
+        {
+          "Id": 1668181858,
+          "Type": 0,
+          "Value": 1
+        }
+      ]
+    },
+    {
+      "OldId": 2004112450,
+      "NewId": 892350530,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 99999
+        },
+        {
+          "Id": 1918989410,
+          "Type": 3,
+          "Value": "decoration"
+        }
+      ]
+    },
+    {
+      "OldId": 2004112454,
+      "NewId": 875573314,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 100
+        },
+        {
+          "Id": 1818850402,
+          "Type": 3,
+          "Value": "A,B,K,Y,X,J,D,C,I,F,L,W,N,O,Z,G,V,Q,*"
+        }
+      ]
+    },
+    {
+      "OldId": 1953911896,
+      "NewId": 858796098,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1952539490,
+          "Type": 3,
+          "Value": "P"
+        },
+        {
+          "Id": 1918989410,
+          "Type": 3,
+          "Value": ""
+        }
+      ]
+    },
+    {
+      "OldId": 812799066,
+      "NewId": 842018882,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 1
+        }
+      ]
+    },
+    {
+      "OldId": 812799066,
+      "NewId": 825241666,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 1
+        }
+      ]
+    },
+    {
+      "OldId": 1668437068,
+      "NewId": 808464450,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 1
+        },
+        {
+          "Id": 1702061922,
+          "Type": 0,
+          "Value": 0
+        },
+        {
+          "Id": 1918989410,
+          "Type": 3,
+          "Value": "decoration"
+        }
+      ]
+    },
+    {
+      "OldId": 2019710028,
+      "NewId": 1194340418,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1702061922,
+          "Type": 0,
+          "Value": 0
+        },
+        {
+          "Id": 1918989410,
+          "Type": 3,
+          "Value": ""
+        },
+        {
+          "Id": 1818326882,
+          "Type": 0,
+          "Value": 1
+        }
+      ]
+    },
+    {
+      "OldId": 1919046732,
+      "NewId": 1462775874,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1918989410,
+          "Type": 3,
+          "Value": ""
+        },
+        {
+          "Id": 1702061922,
+          "Type": 0,
+          "Value": 0
+        }
+      ]
+    },
+    {
+      "OldId": 1734561612,
+      "NewId": 1479618626,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1918989410,
+          "Type": 3,
+          "Value": ""
+        },
+        {
+          "Id": 1702061922,
+          "Type": 0,
+          "Value": 0
+        },
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 2000
+        },
+        {
+          "Id": 1818326882,
+          "Type": 0,
+          "Value": 1
+        }
+      ]
+    },
+    {
+      "OldId": 1734561612,
+      "NewId": 1496395842,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1918989410,
+          "Type": 3,
+          "Value": ""
+        },
+        {
+          "Id": 1702061922,
+          "Type": 0,
+          "Value": 0
+        },
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 2000
+        },
+        {
+          "Id": 1818326882,
+          "Type": 0,
+          "Value": 1
+        }
+      ]
+    },
+    {
+      "OldId": 1935823948,
+      "NewId": 1462841410,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1918989410,
+          "Type": 3,
+          "Value": ""
+        },
+        {
+          "Id": 1702061922,
+          "Type": 0,
+          "Value": 0
+        }
+      ]
+    },
+    {
+      "OldId": 1935823948,
+      "NewId": 1513173058,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1918989410,
+          "Type": 3,
+          "Value": ""
+        },
+        {
+          "Id": 1702061922,
+          "Type": 0,
+          "Value": 0
+        }
+      ]
+    },
+    {
+      "OldId": 1935823948,
+      "NewId": 808595522,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1918989410,
+          "Type": 3,
+          "Value": ""
+        },
+        {
+          "Id": 1702061922,
+          "Type": 0,
+          "Value": 0
+        }
+      ]
+    },
+    {
+      "OldId": 1919046732,
+      "NewId": 825372738,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1918989410,
+          "Type": 3,
+          "Value": ""
+        },
+        {
+          "Id": 1702061922,
+          "Type": 0,
+          "Value": 0
+        }
+      ]
+    },
+    {
+      "OldId": 2019710028,
+      "NewId": 842149954,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1918989410,
+          "Type": 3,
+          "Value": ""
+        },
+        {
+          "Id": 1836212578,
+          "Type": 3,
+          "Value": "Stone"
+        },
+        {
+          "Id": 1818326882,
+          "Type": 0,
+          "Value": 1
+        },
+        {
+          "Id": 1702061922,
+          "Type": 0,
+          "Value": 0
+        }
+      ]
+    },
+    {
+      "OldId": 1719096385,
+      "NewId": 858927170,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1952539490,
+          "Type": 3,
+          "Value": "D"
+        },
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 1
+        },
+        {
+          "Id": 1918989410,
+          "Type": 3,
+          "Value": "decoration"
+        }
+      ]
+    },
+    {
+      "OldId": 1668437068,
+      "NewId": 1278292034,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 1000
+        }
+      ]
+    },
+    {
+      "OldId": 2004112450,
+      "NewId": 875704386,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 100
+        },
+        {
+          "Id": 1668181858,
+          "Type": 0,
+          "Value": 1
+        }
+      ]
+    },
+    {
+      "OldId": 2019710028,
+      "NewId": 892481602,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1702061922,
+          "Type": 0,
+          "Value": 0
+        },
+        {
+          "Id": 1918989410,
+          "Type": 3,
+          "Value": "tree"
+        },
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 200
+        }
+      ]
+    },
+    {
+      "OldId": 1919046732,
+      "NewId": 1144008770,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1918989410,
+          "Type": 3,
+          "Value": ""
+        },
+        {
+          "Id": 1702061922,
+          "Type": 0,
+          "Value": 0
+        },
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 2000
+        }
+      ]
+    },
+    {
+      "OldId": 2019710028,
+      "NewId": 842084418,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 1920226369,
+      "NewId": 1160785986,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 700
+        },
+        {
+          "Id": 1668181858,
+          "Type": 0,
+          "Value": 1
+        }
+      ]
+    },
+    {
+      "OldId": 1668437068,
+      "NewId": 858861634,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 1000
+        }
+      ]
+    },
+    {
+      "OldId": 1668437068,
+      "NewId": 942682178,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1936746594,
+          "Type": 2,
+          "Value": 1000
+        }
+      ]
+    }
+  ]
+}
