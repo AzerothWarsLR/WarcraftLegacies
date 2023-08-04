@@ -1,13 +1,12 @@
 ﻿using System;
 using System.Text.Json;
-using System.Text.Json.Nodes;
 using War3Net.Build.Object;
 
-namespace Launcher
+namespace Launcher.Extensions
 {
-  public static class SimpleObjectDataModificationExtensions
+  public static class ObjectDataModificationExtensions
   {
-    public static object GetCastedValue(this SimpleObjectDataModification modification)
+    public static object GetCastedValue(this ObjectDataModification modification)
     {
       if (modification.Value is not JsonElement jsonElement) 
         throw new InvalidOperationException();
@@ -17,9 +16,9 @@ namespace Launcher
         case ObjectDataType.Int:
           return jsonElement.GetInt32();
         case ObjectDataType.Real:
-          return jsonElement.GetDecimal();
+          return jsonElement.GetSingle();
         case ObjectDataType.Unreal:
-          return jsonElement.GetDecimal();
+          return jsonElement.GetSingle();
         case ObjectDataType.String:
           return jsonElement.GetString();
         default:

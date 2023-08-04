@@ -7,6 +7,7 @@ using System.Text.Json;
 using System.Text.Json.Serialization.Metadata;
 using AutoMapper;
 using Launcher.DataTransferObjects;
+using Launcher.Extensions;
 using War3Net.Build;
 using War3Net.Build.Audio;
 using War3Net.Build.Environment;
@@ -24,7 +25,11 @@ namespace Launcher.Services
   /// </summary>
   public sealed class JsonToW3XConversionService
   {
-    private static void IncrementCounterModifier(JsonTypeInfo typeInfo)
+    /// <summary>
+    /// Data stored as <see cref="ObjectDataModification"/> or anything deriving from it has an object field which
+    /// needs to be manually given a type by interpreting the object's Type field.
+    /// </summary>
+    private static void CastModificationSets(JsonTypeInfo typeInfo)
     {
       foreach (var propertyInfo in typeInfo.Properties)
       {
@@ -36,16 +41,22 @@ namespace Launcher.Services
         {
           propertyInfo.Set = (obj, value) =>
           {
-            if (value != null)
-            {
-              if (value is List<SimpleObjectDataModification> modificationSet)
-              {
-                foreach (var modification in modificationSet)
-                {
-                  modification.Value = modification.GetCastedValue();
-                }
-              }
-            }
+            if (value is List<ObjectDataModification> modificationSet)
+              foreach (var modification in modificationSet)
+                modification.Value = modification.GetCastedValue();
+            
+            if (value is List<LevelObjectDataModification> levelObjectDataModificationSet)
+              foreach (var modification in levelObjectDataModificationSet)
+                modification.Value = modification.GetCastedValue();
+            
+            if (value is List<SimpleObjectDataModification> simpleObjectDataModificationSet)
+              foreach (var modification in simpleObjectDataModificationSet)
+                modification.Value = modification.GetCastedValue();
+            
+            if (value is List<VariationObjectDataModification> variationObjectDataModificationSet)
+              foreach (var modification in variationObjectDataModificationSet)
+                modification.Value = modification.GetCastedValue();
+
             setProperty(obj, value);
           };
         }
@@ -60,7 +71,7 @@ namespace Launcher.Services
       WriteIndented = true,
       TypeInfoResolver = new DefaultJsonTypeInfoResolver
       {
-        Modifiers = { IncrementCounterModifier }
+        Modifiers = { CastModificationSets }
       }
     };
     
@@ -101,26 +112,28 @@ namespace Launcher.Services
     /// </summary>
     public void Convert(string mapDataRootFolder, string outputFilePath)
     {
-      var map = new Map();
-      map.Sounds = DeserializeFromFile<MapSounds, MapSoundsDto>(Path.Combine(mapDataRootFolder, SoundsPath));
-      map.Environment = DeserializeFromFile<MapEnvironment, MapEnvironmentDto>(Path.Combine(mapDataRootFolder, EnvironmentPath));
-      map.PathingMap = DeserializeFromFile<MapPathingMap, MapPathingMapDto>(Path.Combine(mapDataRootFolder, PathingMapPath));
-      map.PreviewIcons = DeserializeFromFile<MapPreviewIcons, MapPreviewIconsDto>(Path.Combine(mapDataRootFolder, PreviewIconsPath));
-      map.Regions = DeserializeFromFile<MapRegions, MapRegionsDto>(Path.Combine(mapDataRootFolder, RegionsPath));
-      map.ShadowMap = DeserializeFromFile<MapShadowMap, MapShadowMapDto>(Path.Combine(mapDataRootFolder, ShadowMapPath));
-      map.ImportedFiles = DeserializeFromFile<MapImportedFiles, MapImportedFilesDto>(Path.Combine(mapDataRootFolder, ImportedFilesPath));
-      map.Info = DeserializeFromFile<MapInfo, MapInfoDto>(Path.Combine(mapDataRootFolder, InfoPath));
-      map.AbilityObjectData = DeserializeFromFile<MapAbilityObjectData, MapAbilityObjectDataDto>(Path.Combine(mapDataRootFolder, AbilityObjectDataPath));
-      map.BuffObjectData = DeserializeFromFile<MapBuffObjectData, MapBuffObjectDataDto>(Path.Combine(mapDataRootFolder, BuffObjectDataPath));
-      map.DestructableObjectData = DeserializeFromFile<MapDestructableObjectData, MapDestructableObjectDataDto>(Path.Combine(mapDataRootFolder, DestructableObjectDataPath));
-      map.DoodadObjectData = DeserializeFromFile<MapDoodadObjectData, MapDoodadObjectDataDto>(Path.Combine(mapDataRootFolder, DoodadObjectDataPath));
-      map.ItemObjectData = DeserializeFromFile<MapItemObjectData, MapItemObjectDataDto>(Path.Combine(mapDataRootFolder, ItemObjectDataPath));
-      map.UnitObjectData = DeserializeFromFile<MapUnitObjectData, MapUnitObjectDataDto>(Path.Combine(mapDataRootFolder, UnitObjectDataPath));
-      map.UpgradeObjectData = DeserializeFromFile<MapUpgradeObjectData, MapUpgradeObjectDataDto>(Path.Combine(mapDataRootFolder, UpgradeObjectDataPath));
-      map.CustomTextTriggers = DeserializeFromFile<MapCustomTextTriggers, MapCustomTextTriggersDto>(Path.Combine(mapDataRootFolder, CustomTextTriggersPath));
-      map.TriggerStrings = DeserializeFromFile<MapTriggerStrings, MapTriggerStringsDto>(Path.Combine(mapDataRootFolder, TriggerStringsPath));
-      map.Doodads = DeserializeFromFile<MapDoodads, MapDoodadsDto>(Path.Combine(mapDataRootFolder, DoodadsPath));
-      map.Units = DeserializeFromFile<MapUnits, MapUnitsDto>(Path.Combine(mapDataRootFolder, UnitsPath));
+      var map = new Map
+      {
+        Sounds = DeserializeFromFile<MapSounds, MapSoundsDto>(Path.Combine(mapDataRootFolder, SoundsPath)),
+        Environment = DeserializeFromFile<MapEnvironment, MapEnvironmentDto>(Path.Combine(mapDataRootFolder, EnvironmentPath)),
+        PathingMap = DeserializeFromFile<MapPathingMap, MapPathingMapDto>(Path.Combine(mapDataRootFolder, PathingMapPath)),
+        PreviewIcons = DeserializeFromFile<MapPreviewIcons, MapPreviewIconsDto>(Path.Combine(mapDataRootFolder, PreviewIconsPath)),
+        Regions = DeserializeFromFile<MapRegions, MapRegionsDto>(Path.Combine(mapDataRootFolder, RegionsPath)),
+        ShadowMap = DeserializeFromFile<MapShadowMap, MapShadowMapDto>(Path.Combine(mapDataRootFolder, ShadowMapPath)),
+        ImportedFiles = DeserializeFromFile<MapImportedFiles, MapImportedFilesDto>(Path.Combine(mapDataRootFolder, ImportedFilesPath)),
+        Info = DeserializeFromFile<MapInfo, MapInfoDto>(Path.Combine(mapDataRootFolder, InfoPath)),
+        AbilityObjectData = DeserializeFromFile<MapAbilityObjectData, MapAbilityObjectDataDto>(Path.Combine(mapDataRootFolder, AbilityObjectDataPath)),
+        BuffObjectData = DeserializeFromFile<MapBuffObjectData, MapBuffObjectDataDto>(Path.Combine(mapDataRootFolder, BuffObjectDataPath)),
+        DestructableObjectData = DeserializeFromFile<MapDestructableObjectData, MapDestructableObjectDataDto>(Path.Combine(mapDataRootFolder, DestructableObjectDataPath)),
+        DoodadObjectData = DeserializeFromFile<MapDoodadObjectData, MapDoodadObjectDataDto>(Path.Combine(mapDataRootFolder, DoodadObjectDataPath)),
+        ItemObjectData = DeserializeFromFile<MapItemObjectData, MapItemObjectDataDto>(Path.Combine(mapDataRootFolder, ItemObjectDataPath)),
+        UnitObjectData = DeserializeFromFile<MapUnitObjectData, MapUnitObjectDataDto>(Path.Combine(mapDataRootFolder, UnitObjectDataPath)),
+        UpgradeObjectData = DeserializeFromFile<MapUpgradeObjectData, MapUpgradeObjectDataDto>(Path.Combine(mapDataRootFolder, UpgradeObjectDataPath)),
+        CustomTextTriggers = DeserializeFromFile<MapCustomTextTriggers, MapCustomTextTriggersDto>(Path.Combine(mapDataRootFolder, CustomTextTriggersPath)),
+        TriggerStrings = DeserializeFromFile<MapTriggerStrings, MapTriggerStringsDto>(Path.Combine(mapDataRootFolder, TriggerStringsPath)),
+        Doodads = DeserializeFromFile<MapDoodads, MapDoodadsDto>(Path.Combine(mapDataRootFolder, DoodadsPath)),
+        Units = DeserializeFromFile<MapUnits, MapUnitsDto>(Path.Combine(mapDataRootFolder, UnitsPath))
+      };
 
       var builder = new MapBuilder(map);
       builder.Build(outputFilePath, _archiveCreateOptions);
