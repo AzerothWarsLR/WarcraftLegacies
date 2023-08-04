@@ -1,6 +1,6 @@
 ﻿namespace Launcher.DataTransferObjects
 {
-  public class ShadowMapDto
+  public class MapShadowMapDto
   {
     public int[] Cells { get; set; }
   }

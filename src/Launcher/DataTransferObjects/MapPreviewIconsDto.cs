@@ -1,6 +1,6 @@
 ﻿namespace Launcher.DataTransferObjects
 {
-  public class PreviewIconsDto
+  public class MapPreviewIconsDto
   {
     public int FormatVersion { get; set; }
     public Icons[] Icons { get; set; }

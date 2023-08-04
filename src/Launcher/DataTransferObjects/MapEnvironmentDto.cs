@@ -1,6 +1,6 @@
 ﻿namespace Launcher.DataTransferObjects;
 
-public sealed class EnvironmentDto
+public sealed class MapEnvironmentDto
 {
   public int FormatVersion { get; set; }
   public int Tileset { get; set; }

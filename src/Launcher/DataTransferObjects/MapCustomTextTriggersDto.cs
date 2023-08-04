@@ -1,6 +1,6 @@
 ﻿namespace Launcher.DataTransferObjects
 {
-  public class CustomTextTriggersDto
+  public class MapCustomTextTriggersDto
   {
     public int FormatVersion { get; set; }
     public int SubVersion { get; set; }

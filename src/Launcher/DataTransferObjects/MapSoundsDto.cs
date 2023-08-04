@@ -1,6 +1,6 @@
 ﻿namespace Launcher.DataTransferObjects
 {
-  public class SoundsDto
+  public class MapSoundsDto
   {
     public int FormatVersion { get; set; }
     public Sounds[] Sounds { get; set; }

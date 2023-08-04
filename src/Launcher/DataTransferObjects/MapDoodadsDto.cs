@@ -5,12 +5,12 @@
     public int FormatVersion { get; set; }
     public int SubVersion { get; set; }
     public bool UseNewFormat { get; set; }
-    public DoodadsDto[] Doodads { get; set; }
+    public MapDoodadsDto[] Doodads { get; set; }
     public int SpecialDoodadVersion { get; set; }
     public object[] SpecialDoodads { get; set; }
   }
 
-  public class DoodadsDto
+  public class MapDoodadsDto
   {
     public int State { get; set; }
     public int Life { get; set; }

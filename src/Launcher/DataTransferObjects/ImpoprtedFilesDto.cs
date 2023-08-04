@@ -1,6 +1,6 @@
 ﻿namespace Launcher.DataTransferObjects
 {
-  public class ImportedFilesDto
+  public class MapImportedFilesDto
   {
     public int FormatVersion { get; set; }
     public FileDto[] Files { get; set; }
