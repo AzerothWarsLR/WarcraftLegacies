@@ -73,6 +73,7 @@ namespace Launcher.Services
     private const string EnvironmentPath = "Environment.json";
     private const string DoodadsPath = "Doodads.json";
     private const string TriggersPath = "Triggers.json";
+    private const string ImportsPath = "Imports";
 
     /// <summary>
     /// Converts the provided JSON data into a Warcraft 3 map and saves it in the specified folder.
@@ -104,6 +105,7 @@ namespace Launcher.Services
       };
 
       var builder = new MapBuilder(map);
+      builder.AddFiles($@"{mapDataRootFolder}\{ImportsPath}");
       builder.Build(outputFilePath, _archiveCreateOptions);
     }
 
