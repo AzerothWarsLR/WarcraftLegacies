@@ -49,7 +49,6 @@ namespace Launcher.Services
       if (launch)
         SetTestPlayerSlot(map, launchSettings.TestingPlayerSlot);
       SetMapTitles(map, mapSettings.Version);
-      var builder = new MapBuilder(map);
 
       // Set debug options if necessary, configure compiler
       const string csc = Debug ? "-debug -define:DEBUG" : null;
@@ -96,7 +95,7 @@ namespace Launcher.Services
         ? $"{Path.Combine(launchSettings.OutputFolderPath, mapSettings.Name)}Test.w3x"
         : $"{Path.Combine(launchSettings.OutputFolderPath, mapSettings.Name)}{mapSettings.Version}.w3x";
 
-      builder.Build(mapFilePath, archiveCreateOptions);
+      mapBuilder.Build(mapFilePath, archiveCreateOptions);
       if (launch)
         LaunchGame(launchSettings.Warcraft3ExecutablePath, mapFilePath);
     }
