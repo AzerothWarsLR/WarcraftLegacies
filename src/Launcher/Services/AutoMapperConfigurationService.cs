@@ -21,15 +21,15 @@ namespace Launcher.Services
     {
       var autoMapperConfig = new MapperConfiguration(cfg =>
       {
-        cfg.CreateMap<MapAbilityObjectDataDto, MapAbilityObjectData>().ReverseMap();
-        cfg.CreateMap<MapBuffObjectDataDto, MapBuffObjectData>().ReverseMap();
+        cfg.CreateMap<MapAbilityObjectDataDto, AbilityObjectData>().ReverseMap();
+        cfg.CreateMap<MapBuffObjectDataDto, BuffObjectData>().ReverseMap();
         cfg.CreateMap<MapCustomTextTriggersDto, MapCustomTextTriggers>().ReverseMap();
-        cfg.CreateMap<MapDestructableObjectDataDto, MapDestructableObjectData>().ReverseMap();
-        cfg.CreateMap<MapDoodadObjectDataDto, MapDoodadObjectData>().ReverseMap();
+        cfg.CreateMap<MapDestructableObjectDataDto,DestructableObjectData>().ReverseMap();
+        cfg.CreateMap<MapDoodadObjectDataDto, DoodadObjectData>().ReverseMap();
         cfg.CreateMap<MapDoodadsDto, MapDoodads>().ReverseMap();
         cfg.CreateMap<MapEnvironmentDto, MapEnvironment>().ReverseMap();
-        cfg.CreateMap<MapImportedFilesDto, MapImportedFiles>().ReverseMap();
-        cfg.CreateMap<MapItemObjectDataDto, MapItemObjectData>().ReverseMap();
+        cfg.CreateMap<MapImportedFilesDto, ImportedFiles>().ReverseMap();
+        cfg.CreateMap<MapItemObjectDataDto, ItemObjectData>().ReverseMap();
         cfg.CreateMap<MapInfoDto, MapInfo>().ReverseMap();
         cfg.CreateMap<MapRegionsDto, MapRegions>().ReverseMap();
         cfg.CreateMap<MapUnitsDto, MapUnits>().ReverseMap();
@@ -38,9 +38,9 @@ namespace Launcher.Services
         cfg.CreateMap<QuadrilateralDto, Quadrilateral>().ReverseMap();
         cfg.CreateMap<MapShadowMapDto, MapShadowMap>().ReverseMap();
         cfg.CreateMap<MapSoundsDto, MapSounds>().ReverseMap();
-        cfg.CreateMap<MapTriggerStringsDto, MapTriggerStrings>().ReverseMap();
-        cfg.CreateMap<MapUnitObjectDataDto, MapUnitObjectData>().ReverseMap();
-        cfg.CreateMap<MapUpgradeObjectDataDto, MapUpgradeObjectData>().ReverseMap();
+        cfg.CreateMap<MapTriggerStringsDto, TriggerStrings>().ReverseMap();
+        cfg.CreateMap<MapUnitObjectDataDto, UnitObjectData>().ReverseMap();
+        cfg.CreateMap<MapUpgradeObjectDataDto, UpgradeObjectData>().ReverseMap();
         cfg.CreateMap<MapTriggersDto, MapTriggers>()
           .ForMember(dest => dest.TriggerItems, opt 
             => opt.MapFrom<TriggerItemValueResolver>())

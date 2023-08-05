@@ -71,19 +71,19 @@ namespace Launcher.Services
       SerializeAndWrite<MapRegions, MapRegionsDto>(map.Regions, outputFolderPath, RegionsPath);
       SerializeAndWrite<MapSounds, MapSoundsDto>(map.Sounds, outputFolderPath, SoundsPath);
       SerializeAndWrite<MapUnits, MapUnitsDto>(map.Units, outputFolderPath, UnitsPath);
-      SerializeAndWrite<MapImportedFiles, MapImportedFilesDto>(map.ImportedFiles, outputFolderPath, ImportedFilesPath);
+      SerializeAndWrite<ImportedFiles, MapImportedFilesDto>(map.ImportedFiles, outputFolderPath, ImportedFilesPath);
       SerializeAndWrite<MapPathingMap, MapPathingMapDto>(map.PathingMap, outputFolderPath, PathingMapPath);
       SerializeAndWrite<MapPreviewIcons, MapPreviewIconsDto>(map.PreviewIcons, outputFolderPath, PreviewIconsPath);
       SerializeAndWrite<MapShadowMap, MapShadowMapDto>(map.ShadowMap, outputFolderPath, ShadowMapPath);
-      SerializeAndWrite<MapTriggerStrings, TriggerStrings, MapTriggerStringsDto>(map.TriggerStrings, outputFolderPath, TriggerStringsPath);
-      SerializeAndWrite<MapAbilityObjectData, AbilityObjectData, MapAbilityObjectDataDto>(map.AbilityObjectData, outputFolderPath, AbilityObjectDataPath);
-      SerializeAndWrite<MapBuffObjectData, BuffObjectData, MapBuffObjectDataDto>(map.BuffObjectData, outputFolderPath, BuffObjectDataPath);
+      SerializeAndWrite<TriggerStrings, MapTriggerStringsDto>(map.TriggerStrings, outputFolderPath, TriggerStringsPath);
+      SerializeAndWrite<AbilityObjectData, MapAbilityObjectDataDto>(map.AbilityObjectData, outputFolderPath, AbilityObjectDataPath);
+      SerializeAndWrite<BuffObjectData, MapBuffObjectDataDto>(map.BuffObjectData, outputFolderPath, BuffObjectDataPath);
       SerializeAndWrite<MapCustomTextTriggers, MapCustomTextTriggersDto>(map.CustomTextTriggers, outputFolderPath, CustomTextTriggersPath);
-      SerializeAndWrite<MapDestructableObjectData, DestructableObjectData, MapDestructableObjectDataDto>(map.DestructableObjectData, outputFolderPath, DestructableObjectDataPath);
-      SerializeAndWrite<MapDoodadObjectData, DoodadObjectData, MapDoodadObjectDataDto>(map.DoodadObjectData, outputFolderPath, DoodadObjectDataPath);
-      SerializeAndWrite<MapItemObjectData, ItemObjectData, MapItemObjectDataDto>(map.ItemObjectData, outputFolderPath, ItemObjectDataPath);
-      SerializeAndWrite<MapUnitObjectData, UnitObjectData, MapUnitObjectDataDto>(map.UnitObjectData, outputFolderPath, UnitObjectDataPath);
-      SerializeAndWrite<MapUpgradeObjectData, UpgradeObjectData, MapUpgradeObjectDataDto>(map.UpgradeObjectData, outputFolderPath, UpgradeObjectDataPath);
+      SerializeAndWrite<DestructableObjectData, MapDestructableObjectDataDto>(map.DestructableObjectData, outputFolderPath, DestructableObjectDataPath);
+      SerializeAndWrite<DoodadObjectData, MapDoodadObjectDataDto>(map.DoodadObjectData, outputFolderPath, DoodadObjectDataPath);
+      SerializeAndWrite<ItemObjectData, MapItemObjectDataDto>(map.ItemObjectData, outputFolderPath, ItemObjectDataPath);
+      SerializeAndWrite<UnitObjectData, MapUnitObjectDataDto>(map.UnitObjectData, outputFolderPath, UnitObjectDataPath);
+      SerializeAndWrite<UpgradeObjectData, MapUpgradeObjectDataDto>(map.UpgradeObjectData, outputFolderPath, UpgradeObjectDataPath);
       SerializeAndWrite<MapTriggers, MapTriggersDto>(map.Triggers, outputFolderPath, TriggersPath);
       SerializeAndWrite(map.Script, outputFolderPath, ScriptPath);
     }
