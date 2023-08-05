@@ -45,7 +45,8 @@ namespace Launcher.Services
       Directory.CreateDirectory(launchSettings.OutputFolderPath);
       
       var map = mapBuilder.Map;
-      // ConfigureControlPointData(map); Todo: put this back
+      mapBuilder.AddFiles(launchSettings.AssetsFolderPath);
+      // ConfigureControlPointData(map); todo: put this back
       if (launch)
         SetTestPlayerSlot(map, launchSettings.TestingPlayerSlot);
       SetMapTitles(map, mapSettings.Version);
