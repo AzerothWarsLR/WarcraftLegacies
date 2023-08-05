@@ -1,4 +1,5 @@
-﻿using AutoMapper;
+﻿using System.Numerics;
+using AutoMapper;
 using Launcher.DataTransferObjects;
 using War3Net.Build.Audio;
 using War3Net.Build.Common;
@@ -42,6 +43,9 @@ namespace Launcher.Services
         cfg.CreateMap<SoundDto, Sound>().ReverseMap();
         cfg.CreateMap<TerrainTileDto, TerrainTile>().ReverseMap();
         cfg.CreateMap<UnitDataDto, UnitData>().ReverseMap();
+        cfg.CreateMap<DoodadDataDto, DoodadData>().ReverseMap();
+        cfg.CreateMap<Vector3Dto, Vector3>().ReverseMap();
+        cfg.CreateMap<Vector2Dto, Vector2>().ReverseMap();
       });
       return autoMapperConfig;
     }

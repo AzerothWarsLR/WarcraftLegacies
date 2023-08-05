@@ -1,6 +1,4 @@
-﻿using System.Numerics;
-
-namespace Launcher.DataTransferObjects
+﻿namespace Launcher.DataTransferObjects
 {
   public class MapSoundsDto
   {
@@ -27,7 +25,7 @@ namespace Launcher.DataTransferObjects
     public double ConeAngleInside { get; set; }
     public double ConeAngleOutside { get; set; }
     public int ConeOutsideVolume { get; set; }
-    public Vector3 ConeOrientation { get; set; }
+    public Vector3Dto ConeOrientation { get; set; }
     public string SoundName { get; set; }
     public int DialogueTextKey { get; set; }
     public string Unk2 { get; set; }

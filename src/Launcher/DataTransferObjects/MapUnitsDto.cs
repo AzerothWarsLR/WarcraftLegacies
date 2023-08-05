@@ -1,5 +1,4 @@
-﻿using System.Numerics;
-using War3Net.Build.Common;
+﻿using War3Net.Build.Common;
 using War3Net.Build.Widget;
 
 namespace Launcher.DataTransferObjects
@@ -32,9 +31,9 @@ namespace Launcher.DataTransferObjects
     public int WaygateDestinationRegionId { get; set; }
     public int TypeId { get; set; }
     public int Variation { get; set; }
-    public Vector3 Position { get; set; }
+    public Vector3Dto Position { get; set; }
     public double Rotation { get; set; }
-    public Vector3 Scale { get; set; }
+    public Vector3Dto Scale { get; set; }
     public int SkinId { get; set; }
     public int MapItemTableId { get; set; }
     public RandomItemSet[] ItemTableSets { get; set; }
