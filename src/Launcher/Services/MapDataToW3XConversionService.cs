@@ -1,4 +1,5 @@
 ﻿#nullable enable
+using System;
 using System.IO;
 using System.Text.Json;
 using System.Text.Json.Serialization;
@@ -73,6 +74,14 @@ namespace Launcher.Services
     private const string EnvironmentPath = "Environment.json";
     private const string DoodadsPath = "Doodads.json";
     private const string TriggersPath = "Triggers.json";
+    private const string UpgradeSkinObjectDataPath = "UpgradeSkinObjectData.json";
+    private const string UnitSkinObjectDataPath = "UnitSkinObjectData.json";
+    private const string ItemSkinObjectDataPath = "ItemSkinObjectData.json";
+    private const string DoodadSkinObjectDataPath = "DoodadSkinObjectData.json";
+    private const string DestructableSkinObjectDataPath = "DestructableSkinObjectData.json";
+    private const string BuffSkinObjectDataPath = "BuffSkinObjectData.json";
+    private const string AbilitySkinObjectDataPath = "AbilitySkinObjectData.json";
+    
     private const string ImportsPath = "Imports";
 
     /// <summary>
@@ -102,7 +111,19 @@ namespace Launcher.Services
         Doodads = DeserializeFromFile<MapDoodads, MapDoodadsDto>(Path.Combine(mapDataRootFolder, DoodadsPath)),
         Units = DeserializeFromFile<MapUnits, MapUnitsDto>(Path.Combine(mapDataRootFolder, UnitsPath)),
         Triggers = DeserializeFromFile<MapTriggers, MapTriggersDto>(Path.Combine(mapDataRootFolder, TriggersPath)),
+        AbilitySkinObjectData = DeserializeFromFile<AbilityObjectData, MapAbilityObjectDataDto>(Path.Combine(mapDataRootFolder, AbilitySkinObjectDataPath)),
+        BuffSkinObjectData = DeserializeFromFile<BuffObjectData, MapBuffObjectDataDto>(Path.Combine(mapDataRootFolder, BuffSkinObjectDataPath)),
+        DestructableSkinObjectData = DeserializeFromFile<DestructableObjectData, MapDestructableObjectDataDto>(Path.Combine(mapDataRootFolder, DestructableSkinObjectDataPath)),
+        DoodadSkinObjectData = DeserializeFromFile<DoodadObjectData, MapDoodadObjectDataDto>(Path.Combine(mapDataRootFolder, DoodadSkinObjectDataPath)),
+        ItemSkinObjectData = DeserializeFromFile<ItemObjectData, MapItemObjectDataDto>(Path.Combine(mapDataRootFolder, ItemSkinObjectDataPath)),
+        UnitSkinObjectData = DeserializeFromFile<UnitObjectData, MapUnitObjectDataDto>(Path.Combine(mapDataRootFolder, UnitSkinObjectDataPath)),
+        UpgradeSkinObjectData = DeserializeFromFile<UpgradeObjectData, MapUpgradeObjectDataDto>(Path.Combine(mapDataRootFolder, UpgradeSkinObjectDataPath)),
       };
+      
+      var unitObjectData = map.UnitSkinObjectData;
+      foreach (var newUnit in unitObjectData.NewUnits)
+      foreach (var mod in newUnit.Modifications)
+        Console.WriteLine(mod.Value);
 
       var builder = new MapBuilder(map);
       builder.AddFiles($@"{mapDataRootFolder}\{ImportsPath}");

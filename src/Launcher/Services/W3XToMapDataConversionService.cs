@@ -57,8 +57,16 @@ namespace Launcher.Services
     private const string EnvironmentPath = "Environment.json";
     private const string DoodadsPath = "Doodads.json";
     private const string TriggersPath = "Triggers.json";
-    private const string ImportsPath = "Imports";
+    private const string UpgradeSkinObjectDataPath = "UpgradeSkinObjectData.json";
+    private const string UnitSkinObjectDataPath = "UnitSkinObjectData.json";
+    private const string ItemSkinObjectDataPath = "ItemSkinObjectData.json";
+    private const string DoodadSkinObjectDataPath = "DoodadSkinObjectData.json";
+    private const string DestructableSkinObjectDataPath = "DestructableSkinObjectData.json";
+    private const string BuffSkinObjectDataPath = "BuffSkinObjectData.json";
+    private const string AbilitySkinObjectDataPath = "AbilitySkinObjectData.json";
 
+    private const string ImportsPath = "Imports";
+    
     /// <summary>
     /// Converts the provided Warcraft 3 map to JSON and saves it in the specified folder.
     /// </summary>
@@ -80,7 +88,7 @@ namespace Launcher.Services
       {
         var sourceFileName = $@"{baseMapPath}\{file.FullPath}";
         var destinationFileName = $@"{outputFolderPath}\{ImportsPath}\{file.FullPath}";
-        Directory.CreateDirectory(Path.GetDirectoryName(destinationFileName));
+        Directory.CreateDirectory(Path.GetDirectoryName(destinationFileName)!);
         File.Copy(sourceFileName, destinationFileName, true);
       }
     }
@@ -107,8 +115,16 @@ namespace Launcher.Services
       SerializeAndWrite<UnitObjectData, MapUnitObjectDataDto>(map.UnitObjectData, outputFolderPath, UnitObjectDataPath);
       SerializeAndWrite<UpgradeObjectData, MapUpgradeObjectDataDto>(map.UpgradeObjectData, outputFolderPath, UpgradeObjectDataPath);
       SerializeAndWrite<MapTriggers, MapTriggersDto>(map.Triggers, outputFolderPath, TriggersPath);
+      
+      SerializeAndWrite<AbilityObjectData, MapAbilityObjectDataDto>(map.AbilitySkinObjectData, outputFolderPath, AbilitySkinObjectDataPath);
+      SerializeAndWrite<BuffObjectData, MapBuffObjectDataDto>(map.BuffSkinObjectData, outputFolderPath, BuffSkinObjectDataPath);
+      SerializeAndWrite<DestructableObjectData, MapDestructableObjectDataDto>(map.DestructableSkinObjectData, outputFolderPath, DestructableSkinObjectDataPath);
+      SerializeAndWrite<DoodadObjectData, MapDoodadObjectDataDto>(map.DoodadSkinObjectData, outputFolderPath, DoodadSkinObjectDataPath);
+      SerializeAndWrite<ItemObjectData, MapItemObjectDataDto>(map.ItemSkinObjectData, outputFolderPath, ItemSkinObjectDataPath);
+      SerializeAndWrite<UnitObjectData, MapUnitObjectDataDto>(map.UnitSkinObjectData, outputFolderPath, UnitSkinObjectDataPath);
+      SerializeAndWrite<UpgradeObjectData, MapUpgradeObjectDataDto>(map.UpgradeSkinObjectData, outputFolderPath, UpgradeSkinObjectDataPath);
     }
-    
+
     /// <summary>
     /// Converts the provided input into a Data Transfer Object, then serializes it, then writes it.
     /// </summary>
