@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using Launcher.DataTransferObjects;
 using War3Net.Build.Script;
 
@@ -35,7 +36,7 @@ namespace Launcher.Extensions
         IsCustomTextTrigger = triggerItemDto.IsCustomTextTrigger,
         IsInitiallyOn = triggerItemDto.IsInitiallyOn,
         RunOnMapInit = triggerItemDto.RunOnMapInit,
-        Functions = triggerItemDto.Functions
+        Functions = triggerItemDto.Functions ?? new List<TriggerFunction>()
       };
     }
 
@@ -60,6 +61,5 @@ namespace Launcher.Extensions
         ParentId = triggerItemDto.ParentId
       };
     }
-    
   }
 }

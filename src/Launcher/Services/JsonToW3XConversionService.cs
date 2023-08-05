@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Text.Json;
+using System.Text.Json.Serialization;
 using System.Text.Json.Serialization.Metadata;
 using AutoMapper;
 using Launcher.DataTransferObjects;
@@ -67,6 +68,7 @@ namespace Launcher.Services
     private readonly JsonSerializerOptions _jsonSerializerOptions = new()
     {
       IgnoreReadOnlyProperties = true,
+      DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingDefault,
       WriteIndented = true,
       TypeInfoResolver = new DefaultJsonTypeInfoResolver
       {

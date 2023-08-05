@@ -1,20 +1,16 @@
 {
-  "FormatVersion": 0,
   "Icons": [
     {
-      "IconType": 0,
       "X": 190,
       "Y": 73,
       "Color": "#FFFFff"
     },
     {
-      "IconType": 0,
       "X": 90,
       "Y": 188,
       "Color": "#FFFFff"
     },
     {
-      "IconType": 0,
       "X": 183,
       "Y": 124,
       "Color": "#FFFFff"
@@ -26,7 +22,6 @@
       "Color": "#FFFFff"
     },
     {
-      "IconType": 0,
       "X": 36,
       "Y": 73,
       "Color": "#FFFFff"
@@ -38,13 +33,11 @@
       "Color": "#FFFFff"
     },
     {
-      "IconType": 0,
       "X": 141,
       "Y": 198,
       "Color": "#FFFFff"
     },
     {
-      "IconType": 0,
       "X": 170,
       "Y": 101,
       "Color": "#FFFFff"
@@ -62,7 +55,6 @@
       "Color": "#FFFFff"
     },
     {
-      "IconType": 0,
       "X": 65,
       "Y": 133,
       "Color": "#FFFFff"
@@ -74,13 +66,11 @@
       "Color": "#FFFFff"
     },
     {
-      "IconType": 0,
       "X": 107,
       "Y": 27,
       "Color": "#FFFFff"
     },
     {
-      "IconType": 0,
       "X": 144,
       "Y": 213,
       "Color": "#FFFFff"
@@ -92,13 +82,11 @@
       "Color": "#FFFFff"
     },
     {
-      "IconType": 0,
       "X": 164,
       "Y": 60,
       "Color": "#FFFFff"
     },
     {
-      "IconType": 0,
       "X": 88,
       "Y": 111,
       "Color": "#FFFFff"
@@ -110,37 +98,31 @@
       "Color": "#FFFFff"
     },
     {
-      "IconType": 0,
       "X": 91,
       "Y": 170,
       "Color": "#FFFFff"
     },
     {
-      "IconType": 0,
       "X": 150,
       "Y": 170,
       "Color": "#FFFFff"
     },
     {
-      "IconType": 0,
       "X": 27,
       "Y": 82,
       "Color": "#FFFFff"
     },
     {
-      "IconType": 0,
       "X": 234,
       "Y": 249,
       "Color": "#FFFFff"
     },
     {
-      "IconType": 0,
       "X": 155,
       "Y": 243,
       "Color": "#FFFFff"
     },
     {
-      "IconType": 0,
       "X": 160,
       "Y": 179,
       "Color": "#FFFFff"
@@ -152,7 +134,6 @@
       "Color": "#FFFFff"
     },
     {
-      "IconType": 0,
       "X": 202,
       "Y": 23,
       "Color": "#FFFFff"
@@ -188,13 +169,11 @@
       "Color": "#FFFFff"
     },
     {
-      "IconType": 0,
       "X": 117,
       "Y": 248,
       "Color": "#FFFFff"
     },
     {
-      "IconType": 0,
       "X": 206,
       "Y": 75,
       "Color": "#FFFFff"
@@ -212,13 +191,11 @@
       "Color": "#FFFFff"
     },
     {
-      "IconType": 0,
       "X": 162,
       "Y": 81,
       "Color": "#FFFFff"
     },
     {
-      "IconType": 0,
       "X": 29,
       "Y": 172,
       "Color": "#FFFFff"
@@ -236,7 +213,6 @@
       "Color": "#FFFFff"
     },
     {
-      "IconType": 0,
       "X": 93,
       "Y": 123,
       "Color": "#FFFFff"
@@ -248,13 +224,11 @@
       "Color": "#FFFFff"
     },
     {
-      "IconType": 0,
       "X": 208,
       "Y": 54,
       "Color": "#FFFFff"
     },
     {
-      "IconType": 0,
       "X": 89,
       "Y": 62,
       "Color": "#FFFFff"
@@ -272,43 +246,36 @@
       "Color": "#FFFFff"
     },
     {
-      "IconType": 0,
       "X": 90,
       "Y": 163,
       "Color": "#FFFFff"
     },
     {
-      "IconType": 0,
       "X": 132,
       "Y": 210,
       "Color": "#FFFFff"
     },
     {
-      "IconType": 0,
       "X": 216,
       "Y": 249,
       "Color": "#FFFFff"
     },
     {
-      "IconType": 0,
       "X": 133,
       "Y": 84,
       "Color": "#FFFFff"
     },
     {
-      "IconType": 0,
       "X": 143,
       "Y": 243,
       "Color": "#FFFFff"
     },
     {
-      "IconType": 0,
       "X": 39,
       "Y": 163,
       "Color": "#FFFFff"
     },
     {
-      "IconType": 0,
       "X": 115,
       "Y": 4,
       "Color": "#FFFFff"
@@ -332,7 +299,6 @@
       "Color": "#FFFFff"
     },
     {
-      "IconType": 0,
       "X": 51,
       "Y": 41,
       "Color": "#FFFFff"

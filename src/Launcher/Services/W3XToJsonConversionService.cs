@@ -1,5 +1,6 @@
 ﻿using System.IO;
 using System.Text.Json;
+using System.Text.Json.Serialization;
 using AutoMapper;
 using Launcher.DataTransferObjects;
 using Launcher.JsonConverters;
@@ -21,6 +22,7 @@ namespace Launcher.Services
     private readonly JsonSerializerOptions _jsonSerializerOptions = new()
     {
       IgnoreReadOnlyProperties = true,
+      DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingDefault,
       WriteIndented = true,
       Converters = { new ColorJsonConverter() }
     };

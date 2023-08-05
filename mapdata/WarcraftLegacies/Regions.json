@@ -1,6 +1,5 @@
 {
   "FormatVersion": 5,
-  "Protected": false,
   "Regions": [
     {
       "Left": 6400,
@@ -8,14 +7,10 @@
       "Right": 7808,
       "Top": 10592,
       "Name": "Solliden Farmstead",
-      "CreationNumber": 0,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
-        "R": 255,
-        "G": 0,
-        "B": 0
+        "R": 255
       }
     },
     {
@@ -25,7 +20,6 @@
       "Top": 1408,
       "Name": "Arathi Ships",
       "CreationNumber": 1,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -41,7 +35,6 @@
       "Top": 5312,
       "Name": "Auberdine Ships",
       "CreationNumber": 2,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -57,7 +50,6 @@
       "Top": 11840,
       "Name": "Auberdine Ships 2",
       "CreationNumber": 3,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -73,13 +65,11 @@
       "Top": 19008,
       "Name": "Borean Tundra",
       "CreationNumber": 9,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 128,
-        "G": 128,
-        "B": 0
+        "G": 128
       }
     },
     {
@@ -89,13 +79,10 @@
       "Top": 11648,
       "Name": "Brill",
       "CreationNumber": 10,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
-        "R": 255,
-        "G": 0,
-        "B": 0
+        "R": 255
       }
     },
     {
@@ -105,11 +92,9 @@
       "Top": 8992,
       "Name": "BrokenIslesA",
       "CreationNumber": 11,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
-        "R": 0,
         "G": 128,
         "B": 128
       }
@@ -121,11 +106,9 @@
       "Top": 11424,
       "Name": "CaerDarrowShipyard",
       "CreationNumber": 12,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
-        "R": 0,
         "G": 255,
         "B": 255
       }
@@ -169,13 +152,10 @@
       "Top": 10944,
       "Name": "Corins Crossing",
       "CreationNumber": 17,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
-        "R": 255,
-        "G": 0,
-        "B": 0
+        "R": 255
       }
     },
     {
@@ -185,7 +165,6 @@
       "Top": -1568,
       "Name": "Crossroads",
       "CreationNumber": 18,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -201,13 +180,11 @@
       "Top": 5600,
       "Name": "Dalaran",
       "CreationNumber": 19,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 255,
-        "B": 0
+        "G": 255
       }
     },
     {
@@ -217,12 +194,10 @@
       "Top": -19936,
       "Name": "Dark Portal Entrance 1",
       "CreationNumber": 24,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 0,
         "B": 255
       }
     },
@@ -233,12 +208,10 @@
       "Top": -24672,
       "Name": "Dark Portal Exit 1",
       "CreationNumber": 25,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 0,
         "B": 255
       }
     },
@@ -249,13 +222,10 @@
       "Top": 8480,
       "Name": "Darrowshire",
       "CreationNumber": 27,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
-        "R": 255,
-        "G": 0,
-        "B": 0
+        "R": 255
       }
     },
     {
@@ -265,11 +235,9 @@
       "Top": -22016,
       "Name": "Demongate 1",
       "CreationNumber": 28,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
-        "R": 0,
         "G": 255,
         "B": 255
       }
@@ -281,7 +249,6 @@
       "Top": -25024,
       "Name": "DemonGate3",
       "CreationNumber": 30,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -297,7 +264,6 @@
       "Top": -3488,
       "Name": "Desolace Ships",
       "CreationNumber": 31,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -313,7 +279,6 @@
       "Top": -7968,
       "Name": "TheAthenaeum",
       "CreationNumber": 32,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -329,7 +294,6 @@
       "Top": -4992,
       "Name": "Dun Morogh Ships",
       "CreationNumber": 35,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -345,7 +309,6 @@
       "Top": -6144,
       "Name": "Dustwallow Ships",
       "CreationNumber": 36,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -356,12 +319,10 @@
     },
     {
       "Left": 16736,
-      "Bottom": 0,
       "Right": 16928,
       "Top": 224,
       "Name": "East Thandol",
       "CreationNumber": 37,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -377,13 +338,10 @@
       "Top": 22304,
       "Name": "Eastern Northrend",
       "CreationNumber": 38,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
-        "R": 128,
-        "G": 0,
-        "B": 0
+        "R": 128
       }
     },
     {
@@ -409,7 +367,6 @@
       "Top": 8128,
       "Name": "Fenris ships",
       "CreationNumber": 42,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -425,11 +382,9 @@
       "Top": 20320,
       "Name": "Fjord",
       "CreationNumber": 43,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
-        "R": 0,
         "G": 255,
         "B": 255
       }
@@ -441,13 +396,10 @@
       "Top": 2624,
       "Name": "Gilneas",
       "CreationNumber": 44,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
-        "R": 255,
-        "G": 0,
-        "B": 0
+        "R": 255
       }
     },
     {
@@ -457,7 +409,6 @@
       "Top": 2624,
       "Name": "Gilneas Canals",
       "CreationNumber": 45,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -473,7 +424,6 @@
       "Top": -4960,
       "Name": "Gnomergan",
       "CreationNumber": 46,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -489,13 +439,11 @@
       "Top": -2048,
       "Name": "Grim Batol",
       "CreationNumber": 47,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 255,
-        "B": 0
+        "G": 255
       }
     },
     {
@@ -505,7 +453,6 @@
       "Top": -2784,
       "Name": "Grim Batol Tunnel Entrance",
       "CreationNumber": 48,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -521,7 +468,6 @@
       "Top": -2400,
       "Name": "Grim Batol Tunnel Top",
       "CreationNumber": 49,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -537,7 +483,6 @@
       "Top": 9472,
       "Name": "Havenshire",
       "CreationNumber": 50,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -553,13 +498,10 @@
       "Top": 11744,
       "Name": "Hearthglen",
       "CreationNumber": 51,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
-        "R": 255,
-        "G": 0,
-        "B": 0
+        "R": 255
       }
     },
     {
@@ -569,7 +511,6 @@
       "Top": -26016,
       "Name": "HonorHold",
       "CreationNumber": 53,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -589,9 +530,7 @@
       "AmbientSound": "",
       "Color": {
         "A": 255,
-        "R": 255,
-        "G": 0,
-        "B": 0
+        "R": 255
       }
     },
     {
@@ -617,7 +556,6 @@
       "Top": -5536,
       "Name": "Ironforge",
       "CreationNumber": 58,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -633,7 +571,6 @@
       "Top": 5600,
       "Name": "Kali Ships",
       "CreationNumber": 60,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -649,7 +586,6 @@
       "Top": -4672,
       "Name": "Kultiras",
       "CreationNumber": 61,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -665,7 +601,6 @@
       "Top": 20704,
       "Name": "LichKing",
       "CreationNumber": 62,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -681,7 +616,6 @@
       "Top": -1536,
       "Name": "Loch Modan Ships",
       "CreationNumber": 63,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -697,7 +631,6 @@
       "Top": 14112,
       "Name": "Lordaeron East",
       "CreationNumber": 64,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -713,7 +646,6 @@
       "Top": 10656,
       "Name": "Moonglade",
       "CreationNumber": 66,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -729,7 +661,6 @@
       "Top": 8800,
       "Name": "Northern Kali Ships",
       "CreationNumber": 72,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -745,7 +676,6 @@
       "Top": 24992,
       "Name": "Northrend ships",
       "CreationNumber": 73,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -761,7 +691,6 @@
       "Top": 1248,
       "Name": "Orgrimmar",
       "CreationNumber": 75,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -777,13 +706,11 @@
       "Top": 10816,
       "Name": "Plague 1",
       "CreationNumber": 76,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 255,
-        "B": 0
+        "G": 255
       }
     },
     {
@@ -793,13 +720,11 @@
       "Top": 9888,
       "Name": "Plague 2",
       "CreationNumber": 77,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 255,
-        "B": 0
+        "G": 255
       }
     },
     {
@@ -809,13 +734,11 @@
       "Top": 8960,
       "Name": "Plague 3",
       "CreationNumber": 78,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 255,
-        "B": 0
+        "G": 255
       }
     },
     {
@@ -825,13 +748,11 @@
       "Top": 10944,
       "Name": "Plague 4",
       "CreationNumber": 79,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 255,
-        "B": 0
+        "G": 255
       }
     },
     {
@@ -841,13 +762,11 @@
       "Top": 11840,
       "Name": "Plague 5",
       "CreationNumber": 80,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 255,
-        "B": 0
+        "G": 255
       }
     },
     {
@@ -857,13 +776,11 @@
       "Top": 5728,
       "Name": "Plague 6",
       "CreationNumber": 81,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 255,
-        "B": 0
+        "G": 255
       }
     },
     {
@@ -873,13 +790,11 @@
       "Top": 3008,
       "Name": "Plague 7",
       "CreationNumber": 82,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 255,
-        "B": 0
+        "G": 255
       }
     },
     {
@@ -889,7 +804,6 @@
       "Top": 17568,
       "Name": "Quel Ships 1",
       "CreationNumber": 83,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -905,7 +819,6 @@
       "Top": 17568,
       "Name": "Quel Ships 2",
       "CreationNumber": 84,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -921,7 +834,6 @@
       "Top": 15584,
       "Name": "Quel Ships 3",
       "CreationNumber": 85,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -937,7 +849,6 @@
       "Top": 23168,
       "Name": "Quelthalas",
       "CreationNumber": 86,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -953,7 +864,6 @@
       "Top": 8576,
       "Name": "Sargeras Entrance",
       "CreationNumber": 87,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -969,7 +879,6 @@
       "Top": -12288,
       "Name": "South EK Ships",
       "CreationNumber": 96,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -985,7 +894,6 @@
       "Top": -7904,
       "Name": "StonemaulKeep",
       "CreationNumber": 97,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -1017,7 +925,6 @@
       "Top": -10016,
       "Name": "Stormwind",
       "CreationNumber": 99,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -1033,7 +940,6 @@
       "Top": 11712,
       "Name": "StratholmeShipyard",
       "CreationNumber": 102,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -1049,7 +955,6 @@
       "Top": 1632,
       "Name": "Stromgarde",
       "CreationNumber": 103,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -1065,7 +970,6 @@
       "Top": -9344,
       "Name": "Stromwind antiship",
       "CreationNumber": 104,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -1081,7 +985,6 @@
       "Top": -17600,
       "Name": "STV Ships",
       "CreationNumber": 105,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -1097,7 +1000,6 @@
       "Top": 9536,
       "Name": "Terenas",
       "CreationNumber": 106,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -1113,13 +1015,10 @@
       "Top": 22336,
       "Name": "The Basin",
       "CreationNumber": 107,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
-        "R": 0,
-        "G": 255,
-        "B": 0
+        "G": 255
       }
     },
     {
@@ -1129,11 +1028,9 @@
       "Top": -23488,
       "Name": "TwistingNether",
       "CreationNumber": 116,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
-        "R": 0,
         "G": 128,
         "B": 128
       }
@@ -1145,13 +1042,10 @@
       "Top": 8864,
       "Name": "Vandermar Village",
       "CreationNumber": 117,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
-        "R": 255,
-        "G": 0,
-        "B": 0
+        "R": 255
       }
     },
     {
@@ -1161,7 +1055,6 @@
       "Top": 64,
       "Name": "West Thandol",
       "CreationNumber": 119,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -1177,7 +1070,6 @@
       "Top": -12064,
       "Name": "Zulfarrak",
       "CreationNumber": 123,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -1193,7 +1085,6 @@
       "Top": -9376,
       "Name": "East of Azeroth",
       "CreationNumber": 124,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -1209,7 +1100,6 @@
       "Top": 5216,
       "Name": "West of Kalimdor",
       "CreationNumber": 125,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -1225,7 +1115,6 @@
       "Top": 20512,
       "Name": "FTSummon",
       "CreationNumber": 128,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -1241,7 +1130,6 @@
       "Top": 8512,
       "Name": "King Arthas crown",
       "CreationNumber": 130,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -1257,7 +1145,6 @@
       "Top": 11328,
       "Name": "Drekthars Spellbook",
       "CreationNumber": 131,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -1273,13 +1160,10 @@
       "Top": 8512,
       "Name": "Andorhal",
       "CreationNumber": 148,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
-        "R": 255,
-        "G": 0,
-        "B": 0
+        "R": 255
       }
     },
     {
@@ -1289,7 +1173,6 @@
       "Top": 5184,
       "Name": "Aerie Peak",
       "CreationNumber": 149,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -1305,7 +1188,6 @@
       "Top": -21184,
       "Name": "TempestKeep",
       "CreationNumber": 151,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -1321,7 +1203,6 @@
       "Top": 22048,
       "Name": "Sunwell",
       "CreationNumber": 152,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -1337,12 +1218,10 @@
       "Top": -25312,
       "Name": "Dark Portal Exit 2",
       "CreationNumber": 170,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 0,
         "B": 255
       }
     },
@@ -1353,12 +1232,10 @@
       "Top": -25888,
       "Name": "Dark Portal Exit 3",
       "CreationNumber": 171,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 0,
         "B": 255
       }
     },
@@ -1369,12 +1246,10 @@
       "Top": -19520,
       "Name": "Dark Portal Entrance 2",
       "CreationNumber": 172,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 0,
         "B": 255
       }
     },
@@ -1385,12 +1260,10 @@
       "Top": -19616,
       "Name": "Dark Portal Entrance 3",
       "CreationNumber": 173,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 0,
         "B": 255
       }
     },
@@ -1401,7 +1274,6 @@
       "Top": -5024,
       "Name": "Chen",
       "CreationNumber": 174,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -1417,7 +1289,6 @@
       "Top": 5888,
       "Name": "QuelDanil Lodge",
       "CreationNumber": 175,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -1433,7 +1304,6 @@
       "Top": 18816,
       "Name": "Andrassil",
       "CreationNumber": 177,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -1449,7 +1319,6 @@
       "Top": 4160,
       "Name": "VaultoftheWardens",
       "CreationNumber": 178,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -1465,7 +1334,6 @@
       "Top": -7776,
       "Name": "Theramore",
       "CreationNumber": 179,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -1481,13 +1349,10 @@
       "Top": 10880,
       "Name": "Terrordale",
       "CreationNumber": 180,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
-        "R": 255,
-        "G": 0,
-        "B": 0
+        "R": 255
       }
     },
     {
@@ -1497,13 +1362,10 @@
       "Top": 14688,
       "Name": "Dreadscar 1",
       "CreationNumber": 181,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
-        "R": 255,
-        "G": 0,
-        "B": 0
+        "R": 255
       }
     },
     {
@@ -1513,13 +1375,10 @@
       "Top": 21408,
       "Name": "Dreadscar 3",
       "CreationNumber": 183,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
-        "R": 255,
-        "G": 0,
-        "B": 0
+        "R": 255
       }
     },
     {
@@ -1529,13 +1388,10 @@
       "Top": 17376,
       "Name": "Dreadscar 2",
       "CreationNumber": 185,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
-        "R": 255,
-        "G": 0,
-        "B": 0
+        "R": 255
       }
     },
     {
@@ -1545,13 +1401,11 @@
       "Top": 10784,
       "Name": "Cenarius",
       "CreationNumber": 229,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 255,
-        "B": 0
+        "G": 255
       }
     },
     {
@@ -1561,7 +1415,6 @@
       "Top": -3072,
       "Name": "ThunderBluff",
       "CreationNumber": 231,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -1577,7 +1430,6 @@
       "Top": -10752,
       "Name": "ThrallLanding",
       "CreationNumber": 232,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -1593,7 +1445,6 @@
       "Top": -10688,
       "Name": "CairneStart",
       "CreationNumber": 233,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -1609,7 +1460,6 @@
       "Top": 19232,
       "Name": "GrizzlyHills",
       "CreationNumber": 239,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -1625,12 +1475,10 @@
       "Top": 24736,
       "Name": "Northrend Ambiance",
       "CreationNumber": 240,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 0,
         "B": 255
       }
     },
@@ -1641,12 +1489,10 @@
       "Top": 16544,
       "Name": "TeldrassilAmbient",
       "CreationNumber": 241,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 0,
         "B": 255
       }
     },
@@ -1657,7 +1503,6 @@
       "Top": 12192,
       "Name": "MoongladeVillage",
       "CreationNumber": 242,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -1673,12 +1518,10 @@
       "Top": 11136,
       "Name": "AzuremystAmbient",
       "CreationNumber": 243,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 0,
         "B": 255
       }
     },
@@ -1689,12 +1532,10 @@
       "Top": 9152,
       "Name": "AshenvaleAmbient",
       "CreationNumber": 244,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 0,
         "B": 255
       }
     },
@@ -1705,12 +1546,10 @@
       "Top": 384,
       "Name": "BarrenAmbient1",
       "CreationNumber": 245,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 0,
         "B": 255
       }
     },
@@ -1721,12 +1560,10 @@
       "Top": -5472,
       "Name": "BarrenAmbient2",
       "CreationNumber": 246,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 0,
         "B": 255
       }
     },
@@ -1737,12 +1574,10 @@
       "Top": -7840,
       "Name": "BarrenAmbient3",
       "CreationNumber": 247,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 0,
         "B": 255
       }
     },
@@ -1753,12 +1588,10 @@
       "Top": -10048,
       "Name": "BarrenAmbient4",
       "CreationNumber": 248,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 0,
         "B": 255
       }
     },
@@ -1769,12 +1602,10 @@
       "Top": -11712,
       "Name": "BarrenAmbient5",
       "CreationNumber": 249,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 0,
         "B": 255
       }
     },
@@ -1785,12 +1616,10 @@
       "Top": -11744,
       "Name": "SilithusAmbient",
       "CreationNumber": 250,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 0,
         "B": 255
       }
     },
@@ -1801,12 +1630,10 @@
       "Top": -11680,
       "Name": "UngoroAmbient",
       "CreationNumber": 251,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 0,
         "B": 255
       }
     },
@@ -1817,12 +1644,10 @@
       "Top": -7904,
       "Name": "FeralasAmbient1",
       "CreationNumber": 252,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 0,
         "B": 255
       }
     },
@@ -1833,12 +1658,10 @@
       "Top": -5536,
       "Name": "FeralasAmbient2",
       "CreationNumber": 253,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 0,
         "B": 255
       }
     },
@@ -1849,12 +1672,10 @@
       "Top": 3712,
       "Name": "AszharaAmbient1",
       "CreationNumber": 254,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 0,
         "B": 255
       }
     },
@@ -1865,12 +1686,10 @@
       "Top": 6112,
       "Name": "AzsharaAmbient2",
       "CreationNumber": 255,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 0,
         "B": 255
       }
     },
@@ -1881,12 +1700,10 @@
       "Top": -5728,
       "Name": "DusthallowAmbient",
       "CreationNumber": 256,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 0,
         "B": 255
       }
     },
@@ -1897,12 +1714,10 @@
       "Top": -4064,
       "Name": "EchoIsleAmbient",
       "CreationNumber": 257,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 0,
         "B": 255
       }
     },
@@ -1913,12 +1728,10 @@
       "Top": -10368,
       "Name": "ZulfarrakAmbient",
       "CreationNumber": 258,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 0,
         "B": 255
       }
     },
@@ -1929,12 +1742,10 @@
       "Top": -5184,
       "Name": "KezanAmbient",
       "CreationNumber": 259,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 0,
         "B": 255
       }
     },
@@ -1945,12 +1756,10 @@
       "Top": 12704,
       "Name": "AshenvaleAmbient2",
       "CreationNumber": 260,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 0,
         "B": 255
       }
     },
@@ -1961,12 +1770,10 @@
       "Top": 12032,
       "Name": "WinterspringAmbient1",
       "CreationNumber": 261,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 0,
         "B": 255
       }
     },
@@ -1977,12 +1784,10 @@
       "Top": 9088,
       "Name": "WinterspringAmbient2",
       "CreationNumber": 262,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 0,
         "B": 255
       }
     },
@@ -1993,12 +1798,10 @@
       "Top": 2080,
       "Name": "AshenvaleAmbient3",
       "CreationNumber": 263,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 0,
         "B": 255
       }
     },
@@ -2009,12 +1812,10 @@
       "Top": -1248,
       "Name": "RanazjarAmbient",
       "CreationNumber": 264,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 0,
         "B": 255
       }
     },
@@ -2025,12 +1826,10 @@
       "Top": 7584,
       "Name": "AshenvaleAmbient4",
       "CreationNumber": 265,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 0,
         "B": 255
       }
     },
@@ -2041,7 +1840,6 @@
       "Top": 14016,
       "Name": "Queltalas 2",
       "CreationNumber": 266,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -2057,12 +1855,10 @@
       "Top": 14112,
       "Name": "StratholmeAmbient",
       "CreationNumber": 267,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 0,
         "B": 255
       }
     },
@@ -2073,12 +1869,10 @@
       "Top": 11712,
       "Name": "LordaeronAmbient1",
       "CreationNumber": 268,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 0,
         "B": 255
       }
     },
@@ -2089,12 +1883,10 @@
       "Top": 9952,
       "Name": "TyrHandAmbient",
       "CreationNumber": 269,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 0,
         "B": 255
       }
     },
@@ -2105,12 +1897,10 @@
       "Top": 11040,
       "Name": "LordaeronAmbient2",
       "CreationNumber": 270,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 0,
         "B": 255
       }
     },
@@ -2121,12 +1911,10 @@
       "Top": 12192,
       "Name": "LordaeronAmbient3",
       "CreationNumber": 271,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 0,
         "B": 255
       }
     },
@@ -2137,12 +1925,10 @@
       "Top": 17440,
       "Name": "ZulAman trolls",
       "CreationNumber": 272,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 0,
         "B": 255
       }
     },
@@ -2153,12 +1939,10 @@
       "Top": 12224,
       "Name": "LordaeronAmbient4",
       "CreationNumber": 273,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 0,
         "B": 255
       }
     },
@@ -2169,12 +1953,10 @@
       "Top": 10688,
       "Name": "LordaeronAmbient5",
       "CreationNumber": 274,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 0,
         "B": 255
       }
     },
@@ -2185,12 +1967,10 @@
       "Top": 17440,
       "Name": "QuelthalasAmbient",
       "CreationNumber": 275,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 0,
         "B": 255
       }
     },
@@ -2201,12 +1981,10 @@
       "Top": 23104,
       "Name": "SunwellAmbient",
       "CreationNumber": 276,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 0,
         "B": 255
       }
     },
@@ -2217,12 +1995,10 @@
       "Top": 8160,
       "Name": "ShadowfangAmbient",
       "CreationNumber": 277,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 0,
         "B": 255
       }
     },
@@ -2233,12 +2009,10 @@
       "Top": 7680,
       "Name": "LordamereLakeAmbient",
       "CreationNumber": 278,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 0,
         "B": 255
       }
     },
@@ -2249,12 +2023,10 @@
       "Top": 3904,
       "Name": "SouthshoreAmbient",
       "CreationNumber": 279,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 0,
         "B": 255
       }
     },
@@ -2265,12 +2037,10 @@
       "Top": 7104,
       "Name": "AlteracAmbient",
       "CreationNumber": 280,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 0,
         "B": 255
       }
     },
@@ -2281,12 +2051,10 @@
       "Top": 7072,
       "Name": "ScholomanceAmbient2",
       "CreationNumber": 281,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 0,
         "B": 255
       }
     },
@@ -2297,12 +2065,10 @@
       "Top": 8416,
       "Name": "ScholomanceAmbient1",
       "CreationNumber": 282,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 0,
         "B": 255
       }
     },
@@ -2313,12 +2079,10 @@
       "Top": 4608,
       "Name": "SouthshoreAmbient2",
       "CreationNumber": 283,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 0,
         "B": 255
       }
     },
@@ -2329,12 +2093,10 @@
       "Top": 5472,
       "Name": "SouthshoreAmbient3",
       "CreationNumber": 284,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 0,
         "B": 255
       }
     },
@@ -2345,12 +2107,10 @@
       "Top": 2976,
       "Name": "SouthshoreAmbient4",
       "CreationNumber": 285,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 0,
         "B": 255
       }
     },
@@ -2361,12 +2121,10 @@
       "Top": 1920,
       "Name": "SouthshoreAmbient5",
       "CreationNumber": 286,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 0,
         "B": 255
       }
     },
@@ -2377,12 +2135,10 @@
       "Top": 736,
       "Name": "BridgeAmbient",
       "CreationNumber": 287,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 0,
         "B": 255
       }
     },
@@ -2393,12 +2149,10 @@
       "Top": 7840,
       "Name": "ScholomanceAmbient3",
       "CreationNumber": 288,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 0,
         "B": 255
       }
     },
@@ -2409,12 +2163,10 @@
       "Top": 5408,
       "Name": "HinterlandAmbient1",
       "CreationNumber": 289,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 0,
         "B": 255
       }
     },
@@ -2425,12 +2177,10 @@
       "Top": 7040,
       "Name": "HinterlandAmbient2",
       "CreationNumber": 290,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 0,
         "B": 255
       }
     },
@@ -2441,7 +2191,6 @@
       "Top": 5184,
       "Name": "Aerie Peak Copy",
       "CreationNumber": 291,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -2457,12 +2206,10 @@
       "Top": 1568,
       "Name": "TolbaradAmbient",
       "CreationNumber": 292,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 0,
         "B": 255
       }
     },
@@ -2473,12 +2220,10 @@
       "Top": -10112,
       "Name": "BalorAmbient",
       "CreationNumber": 293,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 0,
         "B": 255
       }
     },
@@ -2489,12 +2234,10 @@
       "Top": -8544,
       "Name": "StormwindAmbient2",
       "CreationNumber": 294,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 0,
         "B": 255
       }
     },
@@ -2505,12 +2248,10 @@
       "Top": -14304,
       "Name": "SentinelTowerAmbient",
       "CreationNumber": 295,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 0,
         "B": 255
       }
     },
@@ -2521,12 +2262,10 @@
       "Top": -17472,
       "Name": "StranglethornAmbient1",
       "CreationNumber": 296,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 0,
         "B": 255
       }
     },
@@ -2537,12 +2276,10 @@
       "Top": -18272,
       "Name": "StranglethornAmbient2",
       "CreationNumber": 297,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 0,
         "B": 255
       }
     },
@@ -2553,12 +2290,10 @@
       "Top": -19168,
       "Name": "StranglethornAmbient3",
       "CreationNumber": 298,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 0,
         "B": 255
       }
     },
@@ -2569,12 +2304,10 @@
       "Top": -12672,
       "Name": "ElwinForestAmbient",
       "CreationNumber": 299,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 0,
         "B": 255
       }
     },
@@ -2585,12 +2318,10 @@
       "Top": -14816,
       "Name": "DarkshireAmbient1",
       "CreationNumber": 300,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 0,
         "B": 255
       }
     },
@@ -2601,12 +2332,10 @@
       "Top": -14720,
       "Name": "DarkshireAmbient2",
       "CreationNumber": 301,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 0,
         "B": 255
       }
     },
@@ -2617,12 +2346,10 @@
       "Top": -12672,
       "Name": "DarkshireAmbient3",
       "CreationNumber": 302,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 0,
         "B": 255
       }
     },
@@ -2633,12 +2360,10 @@
       "Top": -16896,
       "Name": "BlastedlandAmbient",
       "CreationNumber": 303,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 0,
         "B": 255
       }
     },
@@ -2649,12 +2374,10 @@
       "Top": -14784,
       "Name": "SwampofSorrowsAmbient",
       "CreationNumber": 304,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 0,
         "B": 255
       }
     },
@@ -2665,12 +2388,10 @@
       "Top": -7552,
       "Name": "BurningSteppesAmbient",
       "CreationNumber": 305,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 0,
         "B": 255
       }
     },
@@ -2681,12 +2402,10 @@
       "Top": -9504,
       "Name": "BurningSteppeAmbient2",
       "CreationNumber": 306,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 0,
         "B": 255
       }
     },
@@ -2697,12 +2416,10 @@
       "Top": -4160,
       "Name": "IronforgeAmbient",
       "CreationNumber": 307,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 0,
         "B": 255
       }
     },
@@ -2713,12 +2430,10 @@
       "Top": -4096,
       "Name": "DunmoroghAmbient1",
       "CreationNumber": 308,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 0,
         "B": 255
       }
     },
@@ -2729,12 +2444,10 @@
       "Top": -6656,
       "Name": "DunmoroghAmbient2",
       "CreationNumber": 309,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 0,
         "B": 255
       }
     },
@@ -2745,12 +2458,10 @@
       "Top": -4032,
       "Name": "DunmoroghAmbient3",
       "CreationNumber": 310,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 0,
         "B": 255
       }
     },
@@ -2761,12 +2472,10 @@
       "Top": -4032,
       "Name": "LochModanAmbient",
       "CreationNumber": 311,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 0,
         "B": 255
       }
     },
@@ -2777,12 +2486,10 @@
       "Top": 160,
       "Name": "WetlandAmbient1",
       "CreationNumber": 312,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 0,
         "B": 255
       }
     },
@@ -2793,12 +2500,10 @@
       "Top": -2272,
       "Name": "WetlandAmbient2",
       "CreationNumber": 313,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 0,
         "B": 255
       }
     },
@@ -2809,12 +2514,10 @@
       "Top": -256,
       "Name": "GrimBatolAmbient1",
       "CreationNumber": 314,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 0,
         "B": 255
       }
     },
@@ -2825,12 +2528,10 @@
       "Top": 576,
       "Name": "GrimBatolAmbient2",
       "CreationNumber": 315,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 0,
         "B": 255
       }
     },
@@ -2841,11 +2542,9 @@
       "Top": 3520,
       "Name": "LightningBolt2",
       "CreationNumber": 329,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
-        "R": 0,
         "G": 255,
         "B": 255
       }
@@ -2857,11 +2556,9 @@
       "Top": 3616,
       "Name": "LightningBolt3",
       "CreationNumber": 330,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
-        "R": 0,
         "G": 255,
         "B": 255
       }
@@ -2873,7 +2570,6 @@
       "Top": 3904,
       "Name": "WaveCrash",
       "CreationNumber": 331,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -2889,7 +2585,6 @@
       "Top": 7616,
       "Name": "IllidanBoat2",
       "CreationNumber": 346,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -2905,7 +2600,6 @@
       "Top": 7136,
       "Name": "IllidanBoat3",
       "CreationNumber": 347,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -2921,7 +2615,6 @@
       "Top": 3200,
       "Name": "IllidanBoat4",
       "CreationNumber": 348,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -2937,7 +2630,6 @@
       "Top": 6624,
       "Name": "IllidanDalaExit",
       "CreationNumber": 354,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -2953,7 +2645,6 @@
       "Top": 3744,
       "Name": "IllidanLast",
       "CreationNumber": 355,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -2974,7 +2665,6 @@
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 0,
         "B": 255
       }
     },
@@ -2985,7 +2675,6 @@
       "Top": 8192,
       "Name": "Undercity Exterior 1",
       "CreationNumber": 365,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -3001,7 +2690,6 @@
       "Top": 8192,
       "Name": "Undercity Exterior 2",
       "CreationNumber": 366,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -3017,7 +2705,6 @@
       "Top": 8672,
       "Name": "Undercity Escape",
       "CreationNumber": 368,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -3033,13 +2720,11 @@
       "Top": -15072,
       "Name": "DarkshireUnlock",
       "CreationNumber": 369,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 255,
-        "B": 0
+        "G": 255
       }
     },
     {
@@ -3049,7 +2734,6 @@
       "Top": -8576,
       "Name": "StormwindUnlock",
       "CreationNumber": 370,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -3065,13 +2749,11 @@
       "Top": -12608,
       "Name": "LakeshireUnlock",
       "CreationNumber": 371,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 255,
-        "B": 0
+        "G": 255
       }
     },
     {
@@ -3081,13 +2763,11 @@
       "Top": -16960,
       "Name": "NethergardeUnlock",
       "CreationNumber": 372,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 255,
-        "B": 0
+        "G": 255
       }
     },
     {
@@ -3097,7 +2777,6 @@
       "Top": 14144,
       "Name": "StratholmeUnlock",
       "CreationNumber": 373,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -3113,7 +2792,6 @@
       "Top": 9696,
       "Name": "TyrUnlock",
       "CreationNumber": 374,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -3129,7 +2807,6 @@
       "Top": 4768,
       "Name": "ShadowfangUnlock",
       "CreationNumber": 375,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -3145,7 +2822,6 @@
       "Top": 12480,
       "Name": "TrollAttackSpawn",
       "CreationNumber": 376,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -3161,7 +2837,6 @@
       "Top": 12512,
       "Name": "TrollTarget",
       "CreationNumber": 377,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -3177,7 +2852,6 @@
       "Top": -30752,
       "Name": "KilsorrowUnlock",
       "CreationNumber": 378,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -3193,7 +2867,6 @@
       "Top": -24736,
       "Name": "HellfireUnlock",
       "CreationNumber": 379,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -3209,13 +2882,11 @@
       "Top": -4768,
       "Name": "ThelUnlock",
       "CreationNumber": 381,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 255,
-        "B": 0
+        "G": 255
       }
     },
     {
@@ -3225,7 +2896,6 @@
       "Top": -10912,
       "Name": "KulAttack",
       "CreationNumber": 382,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -3241,7 +2911,6 @@
       "Top": -13408,
       "Name": "KulTarget",
       "CreationNumber": 383,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -3257,7 +2926,6 @@
       "Top": -10112,
       "Name": "BlademasterUnlock",
       "CreationNumber": 384,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -3273,7 +2941,6 @@
       "Top": -14656,
       "Name": "ZandalarUnlock",
       "CreationNumber": 385,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -3289,7 +2956,6 @@
       "Top": -4896,
       "Name": "TwilightOutside",
       "CreationNumber": 390,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -3305,7 +2971,6 @@
       "Top": -30720,
       "Name": "ShipInside",
       "CreationNumber": 391,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -3321,7 +2986,6 @@
       "Top": -28768,
       "Name": "ShipAmbient",
       "CreationNumber": 392,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -3337,7 +3001,6 @@
       "Top": -10496,
       "Name": "ShipTarget",
       "CreationNumber": 393,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -3353,7 +3016,6 @@
       "Top": 12000,
       "Name": "Kalimdor",
       "CreationNumber": 396,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -3369,7 +3031,6 @@
       "Top": -7840,
       "Name": "FeathermoonUnlock",
       "CreationNumber": 397,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -3385,7 +3046,6 @@
       "Top": 2496,
       "Name": "AstranaarUnlock",
       "CreationNumber": 398,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -3401,7 +3061,6 @@
       "Top": 4576,
       "Name": "AshenvaleUnlock",
       "CreationNumber": 399,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -3417,7 +3076,6 @@
       "Top": -15520,
       "Name": "DrownedTemple",
       "CreationNumber": 400,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -3433,13 +3091,11 @@
       "Top": -2720,
       "Name": "DragonmawUnlock",
       "CreationNumber": 402,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 255,
-        "B": 0
+        "G": 255
       }
     },
     {
@@ -3449,7 +3105,6 @@
       "Top": 2656,
       "Name": "SouthshoreUnlock",
       "CreationNumber": 403,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -3465,7 +3120,6 @@
       "Top": -27104,
       "Name": "MaievStartUnlock",
       "CreationNumber": 404,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -3481,7 +3135,6 @@
       "Top": -16992,
       "Name": "CthunSpawn",
       "CreationNumber": 408,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -3497,7 +3150,6 @@
       "Top": -3968,
       "Name": "EchoUnlock",
       "CreationNumber": 409,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -3513,7 +3165,6 @@
       "Top": 5824,
       "Name": "StrahnbradUnlock",
       "CreationNumber": 410,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -3529,7 +3180,6 @@
       "Top": -5216,
       "Name": "ZeppelinReturn",
       "CreationNumber": 414,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -3545,7 +3195,6 @@
       "Top": -22816,
       "Name": "Trade1",
       "CreationNumber": 415,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -3561,7 +3210,6 @@
       "Top": 8256,
       "Name": "Trade2",
       "CreationNumber": 416,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -3577,7 +3225,6 @@
       "Top": -3392,
       "Name": "Trade3",
       "CreationNumber": 417,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -3593,7 +3240,6 @@
       "Top": -9600,
       "Name": "Trade4",
       "CreationNumber": 418,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -3609,7 +3255,6 @@
       "Top": 15776,
       "Name": "Trader1",
       "CreationNumber": 419,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -3625,7 +3270,6 @@
       "Top": -13024,
       "Name": "Trader2",
       "CreationNumber": 420,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -3641,7 +3285,6 @@
       "Top": -22432,
       "Name": "Trader3",
       "CreationNumber": 421,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -3657,7 +3300,6 @@
       "Top": -12896,
       "Name": "GoblinStartPos",
       "CreationNumber": 422,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -3673,7 +3315,6 @@
       "Top": -21504,
       "Name": "TempestKeepSpawn",
       "CreationNumber": 434,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -3689,7 +3330,6 @@
       "Top": 23168,
       "Name": "SummonObeliskTarget",
       "CreationNumber": 435,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -3705,7 +3345,6 @@
       "Top": -17376,
       "Name": "NyTanaris",
       "CreationNumber": 437,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -3721,7 +3360,6 @@
       "Top": 23520,
       "Name": "NyNorth",
       "CreationNumber": 438,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -3737,7 +3375,6 @@
       "Top": -15232,
       "Name": "UldumAmbiance",
       "CreationNumber": 439,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -3753,7 +3390,6 @@
       "Top": -1280,
       "Name": "KaliRock1",
       "CreationNumber": 443,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -3769,7 +3405,6 @@
       "Top": -12384,
       "Name": "KaliRock4",
       "CreationNumber": 446,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -3785,7 +3420,6 @@
       "Top": 16512,
       "Name": "TeldrassilUnlock",
       "CreationNumber": 449,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -3801,7 +3435,6 @@
       "Top": 21696,
       "Name": "KaelSunwellChannel",
       "CreationNumber": 452,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -3817,7 +3450,6 @@
       "Top": 17728,
       "Name": "JainaChannel",
       "CreationNumber": 453,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -3833,7 +3465,6 @@
       "Top": -23360,
       "Name": "MonolithNoBuild",
       "CreationNumber": 454,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -3849,7 +3480,6 @@
       "Top": 20960,
       "Name": "DrakUnlock",
       "CreationNumber": 455,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -3865,7 +3495,6 @@
       "Top": 10880,
       "Name": "ArchimondeChannel",
       "CreationNumber": 457,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -3881,7 +3510,6 @@
       "Top": -20064,
       "Name": "AkamaUnlock",
       "CreationNumber": 459,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -3897,7 +3525,6 @@
       "Top": 17824,
       "Name": "WyrmrestTemple",
       "CreationNumber": 461,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -3913,7 +3540,6 @@
       "Top": -11040,
       "Name": "WorldTunnelExit",
       "CreationNumber": 463,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -3929,7 +3555,6 @@
       "Top": 5472,
       "Name": "StrahnbradTaxe",
       "CreationNumber": 464,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -3945,7 +3570,6 @@
       "Top": -5312,
       "Name": "AshbringerForge",
       "CreationNumber": 470,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -3961,7 +3585,6 @@
       "Top": 9344,
       "Name": "TyrsFall",
       "CreationNumber": 471,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -3977,7 +3600,6 @@
       "Top": -15616,
       "Name": "DuskwoodCrypt",
       "CreationNumber": 472,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -3993,7 +3615,6 @@
       "Top": -27808,
       "Name": "OutlandToArgus",
       "CreationNumber": 473,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -4009,7 +3630,6 @@
       "Top": -19200,
       "Name": "ClosePortal",
       "CreationNumber": 474,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -4025,7 +3645,6 @@
       "Top": 8160,
       "Name": "GarithosCrusadeSpawn",
       "CreationNumber": 476,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -4041,7 +3660,6 @@
       "Top": 1312,
       "Name": "GilneasUnlock6",
       "CreationNumber": 480,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -4057,7 +3675,6 @@
       "Top": -832,
       "Name": "GilneasUnlock1",
       "CreationNumber": 481,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -4073,7 +3690,6 @@
       "Top": -2400,
       "Name": "GilneasUnlock2",
       "CreationNumber": 482,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -4089,7 +3705,6 @@
       "Top": 2656,
       "Name": "GilneasUnlock3",
       "CreationNumber": 483,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -4105,7 +3720,6 @@
       "Top": -320,
       "Name": "GilneasUnlock4",
       "CreationNumber": 484,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -4121,7 +3735,6 @@
       "Top": 2816,
       "Name": "GilneasUnlock5",
       "CreationNumber": 485,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -4137,7 +3750,6 @@
       "Top": -6048,
       "Name": "TwilightUnlock",
       "CreationNumber": 486,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -4153,7 +3765,6 @@
       "Top": -4576,
       "Name": "DragonmawPortal",
       "CreationNumber": 489,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -4169,7 +3780,6 @@
       "Top": 23648,
       "Name": "ScarletHarbor",
       "CreationNumber": 491,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -4185,7 +3795,6 @@
       "Top": 24224,
       "Name": "ShadowvaultUnlock",
       "CreationNumber": 495,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -4201,7 +3810,6 @@
       "Top": 5344,
       "Name": "RuinOfDalaran",
       "CreationNumber": 502,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -4217,12 +3825,9 @@
       "Top": -25376,
       "Name": "TelredorUnlock",
       "CreationNumber": 508,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
-        "R": 0,
-        "G": 0,
         "B": 255
       }
     },
@@ -4233,12 +3838,9 @@
       "Top": -28000,
       "Name": "Shattrah",
       "CreationNumber": 509,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
-        "R": 0,
-        "G": 0,
         "B": 255
       }
     },
@@ -4249,12 +3851,9 @@
       "Top": -28736,
       "Name": "Halaar",
       "CreationNumber": 510,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
-        "R": 0,
-        "G": 0,
         "B": 255
       }
     },
@@ -4265,12 +3864,9 @@
       "Top": -28384,
       "Name": "Tuurem",
       "CreationNumber": 511,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
-        "R": 0,
-        "G": 0,
         "B": 255
       }
     },
@@ -4281,11 +3877,9 @@
       "Top": -18208,
       "Name": "InstanceOutland",
       "CreationNumber": 352,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
-        "R": 0,
         "G": 128,
         "B": 128
       }
@@ -4297,7 +3891,6 @@
       "Top": -18208,
       "Name": "Outland Ships",
       "CreationNumber": 353,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -4313,7 +3906,6 @@
       "Top": 6720,
       "Name": "IllidanStartingPosition",
       "CreationNumber": 5,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -4329,7 +3921,6 @@
       "Top": 24800,
       "Name": "ArtifactDummyInstance",
       "CreationNumber": 13,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -4345,7 +3936,6 @@
       "Top": -8320,
       "Name": "Shadowforge City",
       "CreationNumber": 4,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -4361,7 +3951,6 @@
       "Top": -10208,
       "Name": "BlackrockUnlock",
       "CreationNumber": 8,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -4377,11 +3966,9 @@
       "Top": 3936,
       "Name": "BloodElfSecondChanceSpawn",
       "CreationNumber": 21,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
-        "R": 0,
         "G": 255,
         "B": 255
       }
@@ -4393,7 +3980,6 @@
       "Top": 8064,
       "Name": "CaerDarrow",
       "CreationNumber": 22,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -4409,12 +3995,10 @@
       "Top": 11168,
       "Name": "TombOfSargerasInteriorA",
       "CreationNumber": 23,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 0,
         "B": 255
       }
     },
@@ -4425,28 +4009,23 @@
       "Top": 10176,
       "Name": "TombOfSargerasInteriorB",
       "CreationNumber": 26,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 0,
         "B": 255
       }
     },
     {
       "Left": -1536,
       "Bottom": 8960,
-      "Right": 0,
       "Top": 9184,
       "Name": "TombOfSargerasInteriorC",
       "CreationNumber": 29,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 0,
         "B": 255
       }
     },
@@ -4457,12 +4036,10 @@
       "Top": 10304,
       "Name": "TombOfSargerasInteriorD",
       "CreationNumber": 33,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 0,
         "B": 255
       }
     },
@@ -4473,12 +4050,10 @@
       "Top": 10176,
       "Name": "TombOfSargerasInteriorE",
       "CreationNumber": 34,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 0,
         "B": 255
       }
     },
@@ -4489,12 +4064,10 @@
       "Top": 10592,
       "Name": "TombOfSargerasInteriorF",
       "CreationNumber": 39,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 0,
         "B": 255
       }
     },
@@ -4505,12 +4078,10 @@
       "Top": 10176,
       "Name": "TombOfSargerasInteriorG",
       "CreationNumber": 41,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 0,
         "B": 255
       }
     },
@@ -4521,12 +4092,10 @@
       "Top": 8992,
       "Name": "TombOfSargerasInteriorH",
       "CreationNumber": 52,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 0,
         "B": 255
       }
     },
@@ -4537,11 +4106,9 @@
       "Top": 10368,
       "Name": "BrokenIslesB",
       "CreationNumber": 54,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
-        "R": 0,
         "G": 128,
         "B": 128
       }
@@ -4553,7 +4120,6 @@
       "Top": 10080,
       "Name": "GuldansCorpse",
       "CreationNumber": 57,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -4569,7 +4135,6 @@
       "Top": 2400,
       "Name": "KaliRock7",
       "CreationNumber": 59,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -4585,7 +4150,6 @@
       "Top": 5472,
       "Name": "BookRetrieval",
       "CreationNumber": 65,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -4601,7 +4165,6 @@
       "Top": 4928,
       "Name": "SkullRetrieval",
       "CreationNumber": 67,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -4617,7 +4180,6 @@
       "Top": -5184,
       "Name": "KezanUnlock",
       "CreationNumber": 6,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -4633,7 +4195,6 @@
       "Top": -6848,
       "Name": "HighbankUnlock",
       "CreationNumber": 69,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -4649,7 +4210,6 @@
       "Top": -10464,
       "Name": "RagnarosSummon",
       "CreationNumber": 71,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -4665,7 +4225,6 @@
       "Top": -28480,
       "Name": "IllidanBlackTempleUnlock",
       "CreationNumber": 68,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -4681,7 +4240,6 @@
       "Top": -28288,
       "Name": "BlackTempleBase",
       "CreationNumber": 74,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -4697,7 +4255,6 @@
       "Top": 6912,
       "Name": "SatyrCamp",
       "CreationNumber": 88,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -4713,7 +4270,6 @@
       "Top": 6016,
       "Name": "FountainOfHealthAlterac",
       "CreationNumber": 89,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -4729,7 +4285,6 @@
       "Top": -2752,
       "Name": "Nazjatar",
       "CreationNumber": 90,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -4745,7 +4300,6 @@
       "Top": 18560,
       "Name": "Wrathgate Portal 1",
       "CreationNumber": 91,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -4761,7 +4315,6 @@
       "Top": 7872,
       "Name": "Scholomance Exterior 1",
       "CreationNumber": 92,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -4777,7 +4330,6 @@
       "Top": 7168,
       "Name": "Scholomance Exterior 2",
       "CreationNumber": 93,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -4793,7 +4345,6 @@
       "Top": 19136,
       "Name": "Wrathgate Portal 2",
       "CreationNumber": 94,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -4809,7 +4360,6 @@
       "Top": 5984,
       "Name": "AlteracLegionLanding",
       "CreationNumber": 95,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -4825,7 +4375,6 @@
       "Top": 20864,
       "Name": "NorthrendLegionLanding",
       "CreationNumber": 100,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -4841,7 +4390,6 @@
       "Top": 2336,
       "Name": "IslandBlocker1",
       "CreationNumber": 70,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -4857,7 +4405,6 @@
       "Top": 2336,
       "Name": "IslandBlocker2",
       "CreationNumber": 101,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -4873,7 +4420,6 @@
       "Top": -3168,
       "Name": "IslandBlocker3",
       "CreationNumber": 108,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -4889,7 +4435,6 @@
       "Top": -14144,
       "Name": "IslandBlocker4",
       "CreationNumber": 109,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -4905,7 +4450,6 @@
       "Top": -8416,
       "Name": "IslandBlocker5",
       "CreationNumber": 110,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -4921,13 +4465,11 @@
       "Top": -21280,
       "Name": "IllidariUnlockSA",
       "CreationNumber": 111,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 255,
-        "B": 0
+        "G": 255
       }
     },
     {
@@ -4937,7 +4479,6 @@
       "Top": -22304,
       "Name": "BootyBayQuest",
       "CreationNumber": 112,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -4953,7 +4494,6 @@
       "Top": -8768,
       "Name": "KaliRock8",
       "CreationNumber": 113,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -4969,13 +4509,11 @@
       "Top": -28896,
       "Name": "ShadowmoonBaseUnlock",
       "CreationNumber": 114,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 255,
-        "B": 0
+        "G": 255
       }
     },
     {
@@ -4985,7 +4523,6 @@
       "Top": -960,
       "Name": "MaelstromChannel",
       "CreationNumber": 115,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -5001,7 +4538,6 @@
       "Top": -7584,
       "Name": "FeathermoonCreeps",
       "CreationNumber": 118,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -5017,7 +4553,6 @@
       "Top": 11104,
       "Name": "AuberdineUnlock",
       "CreationNumber": 120,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -5033,7 +4568,6 @@
       "Top": -10240,
       "Name": "KaliRock9",
       "CreationNumber": 121,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -5049,13 +4583,10 @@
       "Top": 6624,
       "Name": "HinterEmeraldPortal",
       "CreationNumber": 122,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
-        "R": 0,
-        "G": 255,
-        "B": 0
+        "G": 255
       }
     },
     {
@@ -5065,13 +4596,10 @@
       "Top": -15712,
       "Name": "DuskwoodEmeraldPortal",
       "CreationNumber": 126,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
-        "R": 0,
-        "G": 255,
-        "B": 0
+        "G": 255
       }
     },
     {
@@ -5081,13 +4609,10 @@
       "Top": -6208,
       "Name": "FeralasEmeraldPortal",
       "CreationNumber": 127,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
-        "R": 0,
-        "G": 255,
-        "B": 0
+        "G": 255
       }
     },
     {
@@ -5097,13 +4622,10 @@
       "Top": 9280,
       "Name": "AshenvaleEmeraldPortal",
       "CreationNumber": 129,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
-        "R": 0,
-        "G": 255,
-        "B": 0
+        "G": 255
       }
     },
     {
@@ -5113,7 +4635,6 @@
       "Top": 3424,
       "Name": "KaliRock10",
       "CreationNumber": 132,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -5129,7 +4650,6 @@
       "Top": 4736,
       "Name": "KaliRock11",
       "CreationNumber": 133,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -5145,7 +4665,6 @@
       "Top": -1248,
       "Name": "KaliRock12",
       "CreationNumber": 134,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -5161,7 +4680,6 @@
       "Top": 3296,
       "Name": "LumberCampUnlock",
       "CreationNumber": 135,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -5177,7 +4695,6 @@
       "Top": -32,
       "Name": "UpperBarrenCreeps",
       "CreationNumber": 136,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -5193,7 +4710,6 @@
       "Top": 7488,
       "Name": "RiseBaseUnlock",
       "CreationNumber": 137,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -5209,7 +4725,6 @@
       "Top": 9568,
       "Name": "ShrineBaseUnlock",
       "CreationNumber": 138,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -5225,7 +4740,6 @@
       "Top": -17920,
       "Name": "StranglethornBaseBuild",
       "CreationNumber": 139,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -5241,7 +4755,6 @@
       "Top": -16832,
       "Name": "TrollStartPos",
       "CreationNumber": 140,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -5257,12 +4770,10 @@
       "Top": 8416,
       "Name": "ExodarBaseUnlock",
       "CreationNumber": 7,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
         "R": 255,
-        "G": 0,
         "B": 255
       }
     },
@@ -5273,7 +4784,6 @@
       "Top": -2976,
       "Name": "DesolaceUnlock",
       "CreationNumber": 16,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -5289,7 +4799,6 @@
       "Top": -2624,
       "Name": "DraeneiQuestKill",
       "CreationNumber": 20,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -5305,7 +4814,6 @@
       "Top": 4800,
       "Name": "FountainUnlock",
       "CreationNumber": 141,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -5321,13 +4829,9 @@
       "Top": 25056,
       "Name": "EntireMap",
       "CreationNumber": 142,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
-        "A": 255,
-        "R": 0,
-        "G": 0,
-        "B": 0
+        "A": 255
       }
     },
     {
@@ -5337,7 +4841,6 @@
       "Top": 1792,
       "Name": "NzothStartPosition",
       "CreationNumber": 143,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -5353,7 +4856,6 @@
       "Top": -18880,
       "Name": "Biodome1",
       "CreationNumber": 144,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -5369,7 +4871,6 @@
       "Top": -20000,
       "Name": "Biodome3",
       "CreationNumber": 145,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -5385,7 +4886,6 @@
       "Top": -20736,
       "Name": "Biodome2",
       "CreationNumber": 146,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -5401,7 +4901,6 @@
       "Top": -22048,
       "Name": "SunfuryStartingPosition",
       "CreationNumber": 147,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -5417,7 +4916,6 @@
       "Top": -18528,
       "Name": "Netherstorm",
       "CreationNumber": 150,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -5433,7 +4931,6 @@
       "Top": -17440,
       "Name": "KilSummon",
       "CreationNumber": 153,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -5449,7 +4946,6 @@
       "Top": -18400,
       "Name": "UpperNetherstorm",
       "CreationNumber": 154,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -5465,7 +4961,6 @@
       "Top": -20800,
       "Name": "Area52Unlock",
       "CreationNumber": 155,
-      "WeatherType": 0,
       "AmbientSound": "",
       "Color": {
         "A": 255,
