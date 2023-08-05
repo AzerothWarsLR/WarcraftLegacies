@@ -25,7 +25,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
       "The capital of Lordaeron has fallen, weakening Lordaeron's Champion.";
 
     /// <inheritdoc/>
-    protected override string RewardDescription => "Uther will lose 25 strength";
+    protected override string RewardDescription => "Uther will no longer be able to revive at an Altar and be weakened";
 
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)

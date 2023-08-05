@@ -28,7 +28,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestCapitalCity"/> class.
     /// </summary>
-    public QuestCapitalCity(Rectangle rescueRect, unit unitToMakeInvulnerable, LegendaryHero uther, Capital caerDarrow, Capital capitalPalace, IEnumerable<QuestData> prequisites) :
+    public QuestCapitalCity(Rectangle rescueRect, unit unitToMakeInvulnerable, LegendaryHero uther, LegendaryHero arthas, Capital caerDarrow, Capital capitalPalace, IEnumerable<QuestData> prequisites) :
       base("Hearthlands",
         "The territories of Lordaeron are fragmented. Regain control of the old Alliance's hold to secure the kingdom.",
         "ReplaceableTextures\\CommandButtons\\BTNCastle.blp")
@@ -36,6 +36,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
       AddObjective(new ObjectiveControlCapital(caerDarrow, false));
       foreach (var prequisite in prequisites)
         AddObjective(new ObjectiveCompleteQuest(prequisite));
+      AddObjective(new ObjectiveControlLegend(arthas, false));
       AddObjective(new ObjectiveExpire(1472, Title));
       AddObjective(new ObjectiveSelfExists());
       ResearchId = Constants.UPGRADE_R04Y_QUEST_COMPLETED_HEARTHLANDS;
@@ -49,10 +50,10 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
 
     /// <inheritdoc/>
     protected override string RewardFlavour =>
-      "The Capital City of Lordaeron has been literated.";
+      "The Capital City of Lordaeron has joined Arthas.";
 
     /// <inheritdoc/>
-    protected override string RewardDescription => $"Gain control of all units in the Capital City, and acquire the {RewardPowerName} Power";
+    protected override string RewardDescription => $"Gain control of all units in the Capital City, Gain Uther, and acquire the {RewardPowerName} Power";
 
     /// <inheritdoc/>
     protected override void OnFail(Faction completingFaction)
@@ -71,8 +72,16 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
       
       completingFaction.AddPower(rewardPower);
       completingFaction.Player?.DisplayPowerAcquired(rewardPower);
-      
-      completingFaction.Player?.RescueGroup(_rescueUnits);
+
+      if (_uther.Unit == null)
+      {
+        _uther.ForceCreate(completingFaction.Player, Regions.King_Arthas_crown.Center,
+          90);
+        _uther.Unit?
+          .SetLevel(5, false);
+      }
+
+        completingFaction.Player?.RescueGroup(_rescueUnits);
       SetUnitInvulnerable(_unitToMakeInvulnerable, true);
       if (GetLocalPlayer() == completingFaction.Player)
         PlayThematicMusic("war3mapImported\\CapitalCity.mp3");

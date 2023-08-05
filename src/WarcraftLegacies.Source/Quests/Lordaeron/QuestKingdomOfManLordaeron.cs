@@ -20,6 +20,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
     private readonly Artifact _crownOfStormwind;
     private readonly LegendaryHero _arthas;
     private const int RewardResearchId = Constants.UPGRADE_R01N_ARATHORIAN_LEGACY_LORDAERON_STORMWIND_QUEST;
+    private const int CompletionExperienceBonus = 10000;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestKingdomOfManLordaeron"/> class.
@@ -48,7 +49,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
-      "You gain a research improving all of your units, the Crowns of Lordaeron and Stormwind are merged, and Arthas becomes High King";
+      $"You gain a research improving all of your units, the Crowns of Lordaeron and Stormwind are merged, and Arthas gains {CompletionExperienceBonus} experience";
 
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
@@ -56,8 +57,8 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
       SetPlayerTechResearched(completingFaction.Player, RewardResearchId, 1);
       completingFaction.Player?.DisplayResearchAcquired(RewardResearchId, 1);
 
-      _arthas.UnitType = Constants.UNIT_HARF_HIGH_KING_LORDAERON_HIGH_KING;
-      _arthas.ClearUnitDependencies();
+      _arthas.Unit?
+      .AddExperience(CompletionExperienceBonus);
 
       var crownHolder = _crownOfStormwind.OwningUnit;
 

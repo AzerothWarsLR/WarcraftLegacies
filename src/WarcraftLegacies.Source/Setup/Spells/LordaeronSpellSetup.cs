@@ -12,7 +12,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
     {
       var consecration = new Stomp(Constants.ABILITY_A0WE_CONSECRATION_LORDAERON_UTHER)
       {
-        Radius = 225,
+        Radius = 350,
         DamageBase = 0,
         DamageLevel = 60,
         DurationBase = 1,

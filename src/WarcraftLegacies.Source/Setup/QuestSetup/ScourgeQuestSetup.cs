@@ -32,8 +32,8 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       {
         new(2, Constants.UNIT_UNEC_NECROMANCER_SCOURGE),
         new(2, Constants.UNIT_UACO_ACOLYTE_SCOURGE_WORKER),
-        new(4, Constants.UNIT_UGHO_GHOUL_SCOURGE),
-        new(4, Constants.UNIT_UCRY_CRYPT_FIEND_SCOURGE),
+        new(3, Constants.UNIT_UGHO_GHOUL_SCOURGE),
+        new(2, Constants.UNIT_UCRY_CRYPT_FIEND_SCOURGE),
         new(1, Constants.UNIT_UABO_ABOMINATION_SCOURGE),
       };
       plagueParameters.PlagueCauldronUnitTypeId = Constants.UNIT_H02W_PLAGUE_CAULDRON_SCOURGE_OTHER;

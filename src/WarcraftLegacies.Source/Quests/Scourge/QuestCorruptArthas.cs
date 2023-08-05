@@ -8,6 +8,7 @@ using MacroTools.ObjectiveSystem.Objectives.QuestBased;
 using MacroTools.QuestSystem;
 using WarcraftLegacies.Source.Powers;
 using WarcraftLegacies.Source.Setup.FactionSetup;
+using WCSharp.Shared.Data;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Scourge
@@ -75,6 +76,9 @@ namespace WarcraftLegacies.Source.Quests.Scourge
       Required = true;
     }
 
+    private bool IsPointValidForArthas(Point whichPoint) =>
+      !whichPoint.IsPathable(PATHING_TYPE_FLOATABILITY) && whichPoint.IsPathable(PATHING_TYPE_WALKABILITY);
+
     /// <inheritdoc />
     protected override string RewardFlavour => "Prince Arthas could not protect the people of Stratholme. The Lich King's hold over him grows stronger.";
 
@@ -84,7 +88,15 @@ namespace WarcraftLegacies.Source.Quests.Scourge
     /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)
     {
-      //completingFaction.AddPower(new PingPower(_arthas, "Eye of the Lich King", 5, 60));
+      completingFaction.AddPower(new PingPower(_arthas, "Eye of the Lich King", 5, 60));
+
+      Point randomPoint;
+      do
+      {
+        randomPoint = Regions.ArthasRandomPoint.GetRandomPoint();
+      } while (!IsPointValidForArthas(randomPoint));
+
+      ReviveHero(_arthas.Unit, randomPoint.X, randomPoint.Y, true);
     }
   }
 }

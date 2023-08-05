@@ -32,7 +32,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
         UnitType = FourCC("U001"),
         PermaDies = true,
         DeathSfx = "Abilities\\Spells\\Undead\\DeathCoil\\DeathCoilSpecialArt.mdl",
-        StartingXp = 1000
+        StartingXp = 2800
       };
 
       Anubarak = new LegendaryHero("Anub'arak")

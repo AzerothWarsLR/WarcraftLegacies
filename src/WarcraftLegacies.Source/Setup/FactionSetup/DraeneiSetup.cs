@@ -33,7 +33,7 @@ The Exodar is a mighty fortress-base with the ability to move around the map, bu
       Draenei.ModObjectLimit(FourCC("o053"), Faction.UNLIMITED); //Smithery
       Draenei.ModObjectLimit(FourCC("o054"), Faction.UNLIMITED); //Astral Sanctum
       Draenei.ModObjectLimit(FourCC("o055"), Faction.UNLIMITED); //Crystal Spire
-      Draenei.ModObjectLimit(FourCC("o056"), 96); //Arcane Well
+      Draenei.ModObjectLimit(FourCC("o056"), 48); //Arcane Well
       Draenei.ModObjectLimit(FourCC("o057"), Faction.UNLIMITED); //Vaults of Relic
       Draenei.ModObjectLimit(FourCC("u00U"), Faction.UNLIMITED); //Crystal Protector
       Draenei.ModObjectLimit(FourCC("u01Q"), Faction.UNLIMITED); //Crystal Protector improved
@@ -76,7 +76,7 @@ The Exodar is a mighty fortress-base with the ability to move around the map, bu
 
       //Powers
       var dummyPower = new DummyPower("Crystallization",
-        "Arcane Wells placed directly near Divine Citadels will generate mana for them over time. You can then convert that mana into Gold. The maximum number of Arcane Well around a Divine Citadel is 12 if placed optimally",
+        "Arcane Wells placed directly near Divine Citadels will generate mana for them over time. You can then convert that mana into units. The maximum number of Arcane Well around a Divine Citadel is 12 if placed optimally",
         "ManaGem.blp");
       Draenei.AddPower(dummyPower);
 

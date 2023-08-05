@@ -25,14 +25,13 @@ namespace WarcraftLegacies.Source.Setup
       DraeneiSetup.Setup();
       ZandalarSetup.Setup(preplacedUnitSystem);
       SunfurySetup.Setup(preplacedUnitSystem);
+      GilneasSetup.Setup(preplacedUnitSystem);
+      ForsakenSetup.Setup();
 
       CthunSetup.Setup(preplacedUnitSystem);
       NazjatarSetup.Setup(preplacedUnitSystem);
       BlackEmpireSetup.Setup(preplacedUnitSystem);
       TwilightHammerSetup.Setup(preplacedUnitSystem);
-
-      CrisisCaptainSetup.Setup(preplacedUnitSystem);
-      CrisisFootmanSetup.Setup(preplacedUnitSystem);
     }
   }
 }

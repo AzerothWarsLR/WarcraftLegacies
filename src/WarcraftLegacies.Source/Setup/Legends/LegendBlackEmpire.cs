@@ -11,8 +11,6 @@ namespace WarcraftLegacies.Source.Setup.Legends
     public LegendaryHero Vezax { get; }
     public LegendaryHero Volazj { get; }
     public LegendaryHero Yorsahj { get; }
-    public Capital ObeliskCaptain { get; }
-    public Capital ObeliskFootman { get; }
 
     public LegendBlackEmpire(PreplacedUnitSystem preplacedUnitSystem)
     {
@@ -40,19 +38,6 @@ namespace WarcraftLegacies.Source.Setup.Legends
         UnitType = Constants.UNIT_U02A_N_RAQI_ABERRATION_YOGG,
         StartingXp = 7000,
       };
-
-      ObeliskCaptain = new Capital
-      {
-        Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_N0BA_NY_ALOTHA_OBELISK_NZOTH_OTHER, new Point(12313, -29094)),
-        Essential = true
-      };
-
-      ObeliskFootman = new Capital
-      {
-        Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_N0BA_NY_ALOTHA_OBELISK_NZOTH_OTHER, new Point(13184, -29094)),
-        Essential = true
-      };
-
     }
     public void RegisterLegends()
     {
@@ -60,8 +45,6 @@ namespace WarcraftLegacies.Source.Setup.Legends
       LegendaryHeroManager.Register(Vezax);
       LegendaryHeroManager.Register(Volazj);
       LegendaryHeroManager.Register(Yorsahj);
-      CapitalManager.Register(ObeliskFootman);
-      CapitalManager.Register(ObeliskCaptain);
     }
   }
 }

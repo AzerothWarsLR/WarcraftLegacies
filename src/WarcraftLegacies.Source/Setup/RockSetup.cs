@@ -16,19 +16,25 @@ namespace WarcraftLegacies.Source.Setup
     {
       RockSystem.Register(new RockGroup(Regions.KaliRock1, RockChunkId, 480));
       RockSystem.Register(new RockGroup(Regions.KaliRock4, RockChunkId, 480));
-      RockSystem.Register(new RockGroup(Regions.KaliRock8, RockChunkId, 660));
-      RockSystem.Register(new RockGroup(Regions.KaliRock9, RockChunkId, 660));
-      RockSystem.Register(new RockGroup(Regions.KaliRock12, RockChunkId, 360));
+
+      //south rocks
+      RockSystem.Register(new RockGroup(Regions.KaliRock8, RockChunkId, 480));
+      RockSystem.Register(new RockGroup(Regions.KaliRock9, RockChunkId, 480));
+      RockSystem.Register(new RockGroup(Regions.KaliRock15, RockChunkId, 480));
+      RockSystem.Register(new RockGroup(Regions.KaliRock12, RockChunkId, 300));
+      RockSystem.Register(new RockGroup(Regions.KaliRock14, RockChunkId, 480));
 
       RockSystem.Register(new RockGroup(Regions.IslandBlocker1, IslandChunkId, 1200));
       RockSystem.Register(new RockGroup(Regions.IslandBlocker2, IslandChunkId, 1200));
       RockSystem.Register(new RockGroup(Regions.IslandBlocker3, IslandChunkId, 1200));
       RockSystem.Register(new RockGroup(Regions.IslandBlocker4, IslandChunkId, 1200));
       RockSystem.Register(new RockGroup(Regions.IslandBlocker5, IslandChunkId, 1200));
+      RockSystem.Register(new RockGroup(Regions.IslandBlocker6, IslandChunkId, 1200));
 
-      RockSystem.Register(new RockGroup(Regions.KaliRock7, ForestChunkId, 420));
-      RockSystem.Register(new RockGroup(Regions.KaliRock10, ForestChunkId, 420));
-      RockSystem.Register(new RockGroup(Regions.KaliRock11, ForestChunkId, 420));
+      RockSystem.Register(new RockGroup(Regions.KaliRock7, ForestChunkId, 480));
+      RockSystem.Register(new RockGroup(Regions.KaliRock10, ForestChunkId, 480));
+      RockSystem.Register(new RockGroup(Regions.KaliRock11, ForestChunkId, 480));
+      RockSystem.Register(new RockGroup(Regions.KaliRock13, ForestChunkId, 480));
 
       RockSystem.Register(new RockGroup(Regions.GilneasUnlock5, RockChunkId, 660));
     }

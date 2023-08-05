@@ -50,19 +50,18 @@ namespace WarcraftLegacies.Source.Powers
     }
 
     ///<inheritdoc/>
-    public override void OnUse(player whichPlayer)
+     public override void OnUse(player whichPlayer)
     {
-      if (GetLocalPlayer() != whichPlayer || OnCooldown)
+      if (OnCooldown)
         return;
-      if (_arthas.Unit != null && _arthas.Unit.IsAlive())
+      if (_arthas.Unit == null || !_arthas.Unit.IsAlive()) return;
+      OnCooldown = true;
+      _coodownTimer.Start(_cooldown, false, () =>
       {
+        OnCooldown = false;
+      });
+      if (GetLocalPlayer() == whichPlayer)
         PingMinimap(_arthas.Unit.GetPosition().X, _arthas.Unit.GetPosition().Y, _pingTime);
-        OnCooldown = true;
-        _coodownTimer.Start(_cooldown, false, () =>
-        {
-          OnCooldown = false;
-        });
-      }
     }
   }
 }

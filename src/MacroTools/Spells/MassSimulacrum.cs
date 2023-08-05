@@ -40,6 +40,7 @@ namespace MacroTools.Spells
     {
       var newUnit = CreateUnit(GetOwningPlayer(caster), GetUnitTypeId(target), GetUnitX(target), GetUnitY(target),
         GetUnitFacing(target));
+      UnitAddType(newUnit, UNIT_TYPE_SUMMONED);
       var level = GetAbilityLevel(caster);
       var buff = new SimulacrumBuff(caster, newUnit, 1 + DamageBonusBase + DamageBonusLevel * level,
         1 + HealthBonusBase + HealthBonusLevel * level, EffectTarget, EffectScaleTarget)

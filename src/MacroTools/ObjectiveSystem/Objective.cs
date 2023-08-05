@@ -110,23 +110,22 @@ namespace MacroTools.ObjectiveSystem
     /// </summary>
     protected string PingPath { get; init; } = "MinimapQuestObjectivePrimary";
 
-    protected bool? IsPlayerOnSameTeamAsAnyEligibleFaction(player whichPlayer)
+    protected bool? IsPlayerOnSameTeamAsAnyEligibleFaction(player? whichPlayer)
     {
-
+      if (whichPlayer == null)
+        return null;
+      
       foreach (var eligibleFaction in EligibleFactions)
       {
         if (eligibleFaction.Player == null)
-        {
           return null;
-        }
-        else if (eligibleFaction.Player == Player(PLAYER_NEUTRAL_PASSIVE) || eligibleFaction.Player == Player(PLAYER_NEUTRAL_AGGRESSIVE))
-        {
+
+        if (eligibleFaction.Player == Player(PLAYER_NEUTRAL_PASSIVE) || eligibleFaction.Player == Player(PLAYER_NEUTRAL_AGGRESSIVE))
           return null;
-        }
-        else if (eligibleFaction.Player.GetTeam() == whichPlayer.GetTeam())
+        
+        if (eligibleFaction.Player.GetTeam() == whichPlayer.GetTeam())
           return true;
       }
-
       return false;
     }
 

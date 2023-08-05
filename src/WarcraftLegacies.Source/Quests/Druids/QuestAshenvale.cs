@@ -25,15 +25,12 @@ namespace WarcraftLegacies.Source.Quests.Druids
     /// Initializes a new instance of the <see cref="QuestAshenvale"/> class.
     /// </summary>
     /// <param name="ashenvaleRect">Units in this rectangle start invulnerable and are rescued when the quest is completed.</param>
-    /// <param name="malfurion">Must be brought somewhere to complete the quest.</param>
-    public QuestAshenvale(Rectangle ashenvaleRect, LegendaryHero malfurion) : base("The Spirits of Ashenvale",
+    public QuestAshenvale(Rectangle ashenvaleRect) : base("The Spirits of Ashenvale",
       "The forest needs healing. Regain control of it to awaken it.",
       "ReplaceableTextures\\CommandButtons\\BTNKeeperC.blp")
     {
-      AddObjective(new ObjectiveLegendReachRect(malfurion, Regions.AshenvaleUnlock, "Ashenvale"));
       AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N07C_FELWOOD_10GOLD_MIN)));
       AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N01Q_NORTHERN_ASHENVALE_10GOLD_MIN)));
-      AddObjective(new ObjectiveUpgrade(Constants.UNIT_ETOE_TREE_OF_ETERNITY_DRUIDS, Constants.UNIT_ETOL_TREE_OF_LIFE_DRUIDS));
       AddObjective(new ObjectiveExpire(1440, Title));
       AddObjective(new ObjectiveSelfExists());
       ResearchId = Constants.UPGRADE_R06R_QUEST_COMPLETED_THE_SPIRITS_OF_ASHENVALE;

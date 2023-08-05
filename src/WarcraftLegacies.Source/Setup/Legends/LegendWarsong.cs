@@ -10,6 +10,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
     public LegendaryHero ChenStormstout { get; }
     public LegendaryHero Saurfang { get; }
     public LegendaryHero Garrosh { get; }
+    public LegendaryHero Mannoroth { get; }
     public Capital StonemaulKeep { get; }
     public Capital Orgrimmar { get; }
     
@@ -19,10 +20,6 @@ namespace WarcraftLegacies.Source.Setup.Legends
       GromHellscream = new LegendaryHero("Grom Hellscream")
       {
         UnitType = Constants.UNIT_OGRH_CHIEFTAIN_OF_THE_WARSONG_CLAN_WARSONG,
-        StartingArtifactItemTypeIds = new[]
-        {
-          Constants.ITEM_I01V_GOREHOWL
-        }
       };
       
       ChenStormstout = new LegendaryHero("Chen Stormstout")
@@ -35,6 +32,15 @@ namespace WarcraftLegacies.Source.Setup.Legends
       {
         UnitType = Constants.UNIT_OBLA_HIGH_OVERLORD_OF_THE_KOR_KRON_VASSAL,
         StartingXp = 2800
+      };
+
+      Mannoroth = new LegendaryHero("Mannoroth")
+      {
+        UnitType = Constants.UNIT_NMAN_THE_DESTROYER_WARSONG_BLOODPACT,
+        PermaDies = true,
+        DeathMessage =
+          "Mannoroth the Corrupter has fallen.",
+        StartingXp = 41800
       };
 
       Garrosh = new LegendaryHero("Garrosh Hellscream")
