@@ -19,9 +19,9 @@ using War3Net.IO.Mpq;
 namespace Launcher.Services
 {
   /// <summary>
-  /// Converts .json files into a playable Warcraft 3 map.
+  /// Converts collections of loose files into a playable Warcraft 3 map.
   /// </summary>
-  public sealed class JsonToW3XConversionService
+  public sealed class MapDataToW3XConversionService
   {
     private readonly IMapper _mapper;
     
@@ -36,7 +36,7 @@ namespace Launcher.Services
 
     private readonly JsonModifierProvider _jsonModifierProvider;
 
-    public JsonToW3XConversionService(IMapper mapper, JsonModifierProvider jsonModifierProvider)
+    public MapDataToW3XConversionService(IMapper mapper, JsonModifierProvider jsonModifierProvider)
     {
       _mapper = mapper;
       _jsonModifierProvider = jsonModifierProvider;

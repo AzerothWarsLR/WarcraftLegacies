@@ -1,12 +1,10 @@
-﻿using System;
+﻿using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 using AutoMapper;
 using Launcher.DataTransferObjects;
 using Launcher.JsonConverters;
-using War3Api.Object;
 using War3Net.Build;
 using War3Net.Build.Audio;
 using War3Net.Build.Environment;
@@ -20,9 +18,9 @@ using JsonSerializer = System.Text.Json.JsonSerializer;
 namespace Launcher.Services
 {
   /// <summary>
-  /// Converts a Warcraft 3 map into .json files so that they can be stored in version control.
+  /// Converts a Warcraft 3 map into a collection of loose files so that they can be stored in version control.
   /// </summary>
-  public sealed class W3XToJsonConversionService
+  public sealed class W3XToMapDataConversionService
   {
     private readonly IMapper _mapper;
 
@@ -34,7 +32,7 @@ namespace Launcher.Services
       Converters = { new ColorJsonConverter() }
     };
 
-    public W3XToJsonConversionService(IMapper mapper)
+    public W3XToMapDataConversionService(IMapper mapper)
     {
       _mapper = mapper;
     }
@@ -59,6 +57,7 @@ namespace Launcher.Services
     private const string EnvironmentPath = "Environment.json";
     private const string DoodadsPath = "Doodads.json";
     private const string TriggersPath = "Triggers.json";
+    private const string ImportsPath = "Imports";
 
     /// <summary>
     /// Converts the provided Warcraft 3 map to JSON and saves it in the specified folder.
@@ -66,7 +65,28 @@ namespace Launcher.Services
     public void Convert(string baseMapPath, string outputFolderPath)
     {
       var map = Map.Open(baseMapPath);
+      SerializeAndWriteJson(map, outputFolderPath);
+      
+      var importedFiles = map.ImportedFiles?.Files;
+      if (importedFiles == null) 
+        return;
+      
+      CopyImportedFiles(baseMapPath, importedFiles, outputFolderPath);
+    }
 
+    private void CopyImportedFiles(string baseMapPath, List<ImportedFile> files, string outputFolderPath)
+    {
+      foreach (var file in files)
+      {
+        var sourceFileName = $@"{baseMapPath}\{file.FullPath}";
+        var destinationFileName = $@"{outputFolderPath}\{ImportsPath}\{file.FullPath}";
+        Directory.CreateDirectory(Path.GetDirectoryName(destinationFileName));
+        File.Copy(sourceFileName, destinationFileName, true);
+      }
+    }
+    
+    private void SerializeAndWriteJson(Map map, string outputFolderPath)
+    {
       SerializeAndWrite<MapDoodads, MapDoodadsDto>(map.Doodads, outputFolderPath, DoodadsPath);
       SerializeAndWrite<MapEnvironment, MapEnvironmentDto>(map.Environment, outputFolderPath, EnvironmentPath);
       SerializeAndWrite<MapInfo, MapInfoDto>(map.Info, outputFolderPath, InfoPath);
