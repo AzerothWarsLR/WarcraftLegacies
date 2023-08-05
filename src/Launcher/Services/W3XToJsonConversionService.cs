@@ -1,4 +1,6 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
+using System.Linq;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 using AutoMapper;
@@ -65,6 +67,16 @@ namespace Launcher.Services
     public void Convert(string baseMapPath, string outputFolderPath)
     {
       var map = Map.Open(baseMapPath);
+
+      var unitObjectData = map.UnitObjectData;
+      foreach (var beans in unitObjectData.BaseUnits)
+      {
+        foreach (var mod in beans.Modifications)
+        {
+          Console.WriteLine(mod.Value);
+        }
+      }
+      
       SerializeAndWrite<MapDoodads, MapDoodadsDto>(map.Doodads, outputFolderPath, DoodadsPath);
       SerializeAndWrite<MapEnvironment, MapEnvironmentDto>(map.Environment, outputFolderPath, EnvironmentPath);
       SerializeAndWrite<MapInfo, MapInfoDto>(map.Info, outputFolderPath, InfoPath);
@@ -86,15 +98,6 @@ namespace Launcher.Services
       SerializeAndWrite<UpgradeObjectData, MapUpgradeObjectDataDto>(map.UpgradeObjectData, outputFolderPath, UpgradeObjectDataPath);
       SerializeAndWrite<MapTriggers, MapTriggersDto>(map.Triggers, outputFolderPath, TriggersPath);
       SerializeAndWrite(map.Script, outputFolderPath, ScriptPath);
-    }
-
-    /// <summary>
-    /// Converts the provided input value to a different type before mapping it to a Data Transfer Object, serializing, then writing it.
-    /// </summary>
-    private void SerializeAndWrite<TInputConcrete, TInputBase, TDataTransferObject>(TInputBase inputValue, string outputFolderPath, string subPath) where TInputConcrete : TInputBase
-    {
-      var convertedType = (TInputConcrete)System.Convert.ChangeType(inputValue, typeof(TInputConcrete));
-      SerializeAndWrite<TInputConcrete, TDataTransferObject>(convertedType, outputFolderPath, subPath);
     }
     
     /// <summary>
