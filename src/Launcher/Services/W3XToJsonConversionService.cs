@@ -4,11 +4,13 @@ using System.Text.Json.Serialization;
 using AutoMapper;
 using Launcher.DataTransferObjects;
 using Launcher.JsonConverters;
+using War3Api.Object;
 using War3Net.Build;
 using War3Net.Build.Audio;
 using War3Net.Build.Environment;
 using War3Net.Build.Import;
 using War3Net.Build.Info;
+using War3Net.Build.Object;
 using War3Net.Build.Script;
 using War3Net.Build.Widget;
 using JsonSerializer = System.Text.Json.JsonSerializer;
@@ -67,32 +69,46 @@ namespace Launcher.Services
       SerializeAndWrite<MapEnvironment, MapEnvironmentDto>(map.Environment, outputFolderPath, EnvironmentPath);
       SerializeAndWrite<MapInfo, MapInfoDto>(map.Info, outputFolderPath, InfoPath);
       SerializeAndWrite<MapRegions, MapRegionsDto>(map.Regions, outputFolderPath, RegionsPath);
-      SerializeAndWrite(map.Script, outputFolderPath, ScriptPath);
       SerializeAndWrite<MapSounds, MapSoundsDto>(map.Sounds, outputFolderPath, SoundsPath);
       SerializeAndWrite<MapUnits, MapUnitsDto>(map.Units, outputFolderPath, UnitsPath);
       SerializeAndWrite<MapImportedFiles, MapImportedFilesDto>(map.ImportedFiles, outputFolderPath, ImportedFilesPath);
       SerializeAndWrite<MapPathingMap, MapPathingMapDto>(map.PathingMap, outputFolderPath, PathingMapPath);
       SerializeAndWrite<MapPreviewIcons, MapPreviewIconsDto>(map.PreviewIcons, outputFolderPath, PreviewIconsPath);
       SerializeAndWrite<MapShadowMap, MapShadowMapDto>(map.ShadowMap, outputFolderPath, ShadowMapPath);
-      SerializeAndWrite(map.TriggerStrings, outputFolderPath, TriggerStringsPath);
-      SerializeAndWrite(map.AbilityObjectData, outputFolderPath, AbilityObjectDataPath);
-      SerializeAndWrite(map.BuffObjectData, outputFolderPath, BuffObjectDataPath);
-      SerializeAndWrite(map.CustomTextTriggers, outputFolderPath, CustomTextTriggersPath);
-      SerializeAndWrite(map.DestructableObjectData, outputFolderPath, DestructableObjectDataPath);
-      SerializeAndWrite(map.DoodadObjectData, outputFolderPath, DoodadObjectDataPath);
-      SerializeAndWrite(map.ItemObjectData, outputFolderPath, ItemObjectDataPath);
-      SerializeAndWrite(map.UnitObjectData, outputFolderPath, UnitObjectDataPath);
-      SerializeAndWrite(map.UpgradeObjectData, outputFolderPath, UpgradeObjectDataPath);
+      SerializeAndWrite<MapTriggerStrings, TriggerStrings, MapTriggerStringsDto>(map.TriggerStrings, outputFolderPath, TriggerStringsPath);
+      SerializeAndWrite<MapAbilityObjectData, AbilityObjectData, MapAbilityObjectDataDto>(map.AbilityObjectData, outputFolderPath, AbilityObjectDataPath);
+      SerializeAndWrite<MapBuffObjectData, BuffObjectData, MapBuffObjectDataDto>(map.BuffObjectData, outputFolderPath, BuffObjectDataPath);
+      SerializeAndWrite<MapCustomTextTriggers, MapCustomTextTriggersDto>(map.CustomTextTriggers, outputFolderPath, CustomTextTriggersPath);
+      SerializeAndWrite<MapDestructableObjectData, DestructableObjectData, MapDestructableObjectDataDto>(map.DestructableObjectData, outputFolderPath, DestructableObjectDataPath);
+      SerializeAndWrite<MapDoodadObjectData, DoodadObjectData, MapDoodadObjectDataDto>(map.DoodadObjectData, outputFolderPath, DoodadObjectDataPath);
+      SerializeAndWrite<MapItemObjectData, ItemObjectData, MapItemObjectDataDto>(map.ItemObjectData, outputFolderPath, ItemObjectDataPath);
+      SerializeAndWrite<MapUnitObjectData, UnitObjectData, MapUnitObjectDataDto>(map.UnitObjectData, outputFolderPath, UnitObjectDataPath);
+      SerializeAndWrite<MapUpgradeObjectData, UpgradeObjectData, MapUpgradeObjectDataDto>(map.UpgradeObjectData, outputFolderPath, UpgradeObjectDataPath);
       SerializeAndWrite<MapTriggers, MapTriggersDto>(map.Triggers, outputFolderPath, TriggersPath);
       SerializeAndWrite(map.Script, outputFolderPath, ScriptPath);
     }
 
+    /// <summary>
+    /// Converts the provided input value to a different type before mapping it to a Data Transfer Object, serializing, then writing it.
+    /// </summary>
+    private void SerializeAndWrite<TInputConcrete, TInputBase, TDataTransferObject>(TInputBase inputValue, string outputFolderPath, string subPath) where TInputConcrete : TInputBase
+    {
+      var convertedType = (TInputConcrete)System.Convert.ChangeType(inputValue, typeof(TInputConcrete));
+      SerializeAndWrite<TInputConcrete, TDataTransferObject>(convertedType, outputFolderPath, subPath);
+    }
+    
+    /// <summary>
+    /// Converts the provided input into a Data Transfer Object, then serializes it, then writes it.
+    /// </summary>
     private void SerializeAndWrite<TInput, TDataTransferObject>(TInput inputValue, string outputFolderPath, string subPath)
     {
       var dataTransferObject = _mapper.Map<TInput, TDataTransferObject>(inputValue);
       SerializeAndWrite(dataTransferObject, outputFolderPath, subPath);
     }
     
+    /// <summary>
+    /// Serializes then writes the provided input to the file system.
+    /// </summary>
     private void SerializeAndWrite<T>(T value, string outputFolderPath, string subPath)
     {
       if (!Directory.Exists(outputFolderPath))
