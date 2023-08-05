@@ -5,6 +5,7 @@ using Launcher.DataTransferObjects;
 using Launcher.JsonConverters;
 using War3Net.Build;
 using War3Net.Build.Environment;
+using War3Net.Build.Script;
 using War3Net.Build.Widget;
 using JsonSerializer = System.Text.Json.JsonSerializer;
 
@@ -77,7 +78,7 @@ namespace Launcher.Services
       SerializeAndWrite(map.ItemObjectData, outputFolderPath, ItemObjectDataPath);
       SerializeAndWrite(map.UnitObjectData, outputFolderPath, UnitObjectDataPath);
       SerializeAndWrite(map.UpgradeObjectData, outputFolderPath, UpgradeObjectDataPath);
-      SerializeAndWrite(map.Triggers, outputFolderPath, TriggersPath);
+      SerializeAndWrite<MapTriggers, MapTriggersDto>(map.Triggers, outputFolderPath, TriggersPath);
       SerializeAndWrite(map.Script, outputFolderPath, ScriptPath);
     }
 

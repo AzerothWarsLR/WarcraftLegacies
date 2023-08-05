@@ -7,17 +7,41 @@
     {
       "Name": "\u003CDELETED\u003E",
       "Id": 0,
-      "ParentId": -1
+      "ParentId": -1,
+      "Type": 8,
+      "IsDescription": null,
+      "IsComment": false,
+      "IsEnabled": false,
+      "IsCustomTextTrigger": false,
+      "IsInitiallyOn": false,
+      "RunOnMapInit": false,
+      "Functions": null
     },
     {
       "Name": "source.w3x",
       "Id": 0,
-      "ParentId": -1
+      "ParentId": -1,
+      "Type": 1,
+      "IsDescription": null,
+      "IsComment": false,
+      "IsEnabled": false,
+      "IsCustomTextTrigger": false,
+      "IsInitiallyOn": false,
+      "RunOnMapInit": false,
+      "Functions": null
     },
     {
       "Name": "Dummy",
       "Id": 33554432,
-      "ParentId": 0
+      "ParentId": 0,
+      "Type": 4,
+      "IsDescription": null,
+      "IsComment": false,
+      "IsEnabled": false,
+      "IsCustomTextTrigger": false,
+      "IsInitiallyOn": false,
+      "RunOnMapInit": false,
+      "Functions": null
     }
   ],
   "TriggerItemCounts": {

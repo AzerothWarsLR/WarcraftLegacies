@@ -2,6 +2,7 @@
 using System.Numerics;
 using AutoMapper;
 using Launcher.DataTransferObjects;
+using Launcher.ValueResolvers;
 using War3Net.Build.Audio;
 using War3Net.Build.Common;
 using War3Net.Build.Environment;
@@ -40,7 +41,10 @@ namespace Launcher.Services
         cfg.CreateMap<MapTriggerStringsDto, MapTriggerStrings>().ReverseMap();
         cfg.CreateMap<MapUnitObjectDataDto, MapUnitObjectData>().ReverseMap();
         cfg.CreateMap<MapUpgradeObjectDataDto, MapUpgradeObjectData>().ReverseMap();
-        cfg.CreateMap<MapTriggersDto, MapTriggers>().ReverseMap();
+        cfg.CreateMap<MapTriggersDto, MapTriggers>()
+          .ForMember(dest => dest.TriggerItems, opt 
+            => opt.MapFrom<TriggerItemValueResolver>())
+          .ReverseMap();
 
         cfg.CreateMap<SoundDto, Sound>().ReverseMap();
         cfg.CreateMap<TerrainTileDto, TerrainTile>().ReverseMap();
