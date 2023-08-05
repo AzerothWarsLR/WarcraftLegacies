@@ -1,7 +1,9 @@
 ﻿using System.IO;
 using System.Text.Json;
 using AutoMapper;
+using Launcher.DataTransferObjects;
 using War3Net.Build;
+using War3Net.Build.Widget;
 using JsonSerializer = System.Text.Json.JsonSerializer;
 
 namespace Launcher.Services
@@ -52,7 +54,7 @@ namespace Launcher.Services
     public void Convert(string baseMapPath, string outputFolderPath)
     {
       var map = Map.Open(baseMapPath);
-      SerializeAndWrite(map.Doodads, outputFolderPath, DoodadsPath);
+      SerializeAndWrite<MapDoodads, MapDoodadsDto>(map.Doodads, outputFolderPath, DoodadsPath);
       SerializeAndWrite(map.Environment, outputFolderPath, EnvironmentPath);
       SerializeAndWrite(map.Info, outputFolderPath, InfoPath);
       SerializeAndWrite(map.Regions, outputFolderPath, RegionsPath);
@@ -76,6 +78,12 @@ namespace Launcher.Services
       SerializeAndWrite(map.Script, outputFolderPath, ScriptPath);
     }
 
+    private void SerializeAndWrite<TInput, TDataTransferObject>(TInput inputValue, string outputFolderPath, string subPath)
+    {
+      var dataTransferObject = _mapper.Map<TInput, TDataTransferObject>(inputValue);
+      SerializeAndWrite(dataTransferObject, outputFolderPath, subPath);
+    }
+    
     private void SerializeAndWrite<T>(T value, string outputFolderPath, string subPath)
     {
       if (!Directory.Exists(outputFolderPath))

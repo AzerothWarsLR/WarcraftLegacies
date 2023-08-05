@@ -17,31 +17,31 @@ namespace Launcher.Services
     {
       var autoMapperConfig = new MapperConfiguration(cfg =>
       {
-        cfg.CreateMap<MapAbilityObjectDataDto, MapAbilityObjectData>();
-        cfg.CreateMap<MapBuffObjectDataDto, MapBuffObjectData>();
-        cfg.CreateMap<MapCustomTextTriggersDto, MapCustomTextTriggers>();
-        cfg.CreateMap<MapDestructableObjectDataDto, MapDestructableObjectData>();
-        cfg.CreateMap<MapDoodadObjectDataDto, MapDoodadObjectData>();
-        cfg.CreateMap<MapDoodadsDto, MapDoodads>();
-        cfg.CreateMap<MapEnvironmentDto, MapEnvironment>();
-        cfg.CreateMap<MapImportedFilesDto, MapImportedFiles>();
-        cfg.CreateMap<MapItemObjectDataDto, MapItemObjectData>();
-        cfg.CreateMap<MapInfoDto, MapInfo>();
-        cfg.CreateMap<MapRegionsDto, MapRegions>();
-        cfg.CreateMap<MapUnitsDto, MapUnits>();
-        cfg.CreateMap<MapPathingMapDto, MapPathingMap>();
-        cfg.CreateMap<MapPreviewIconsDto, MapPreviewIcons>();
-        cfg.CreateMap<QuadrilateralDto, Quadrilateral>();
-        cfg.CreateMap<MapShadowMapDto, MapShadowMap>();
-        cfg.CreateMap<MapSoundsDto, MapSounds>();
-        cfg.CreateMap<MapTriggerStringsDto, MapTriggerStrings>();
-        cfg.CreateMap<MapUnitObjectDataDto, MapUnitObjectData>();
-        cfg.CreateMap<MapUpgradeObjectDataDto, MapUpgradeObjectData>();
-        cfg.CreateMap<MapTriggersDto, MapTriggers>();
+        cfg.CreateMap<MapAbilityObjectDataDto, MapAbilityObjectData>().ReverseMap();
+        cfg.CreateMap<MapBuffObjectDataDto, MapBuffObjectData>().ReverseMap();
+        cfg.CreateMap<MapCustomTextTriggersDto, MapCustomTextTriggers>().ReverseMap();
+        cfg.CreateMap<MapDestructableObjectDataDto, MapDestructableObjectData>().ReverseMap();
+        cfg.CreateMap<MapDoodadObjectDataDto, MapDoodadObjectData>().ReverseMap();
+        cfg.CreateMap<MapDoodadsDto, MapDoodads>().ReverseMap();
+        cfg.CreateMap<MapEnvironmentDto, MapEnvironment>().ReverseMap();
+        cfg.CreateMap<MapImportedFilesDto, MapImportedFiles>().ReverseMap();
+        cfg.CreateMap<MapItemObjectDataDto, MapItemObjectData>().ReverseMap();
+        cfg.CreateMap<MapInfoDto, MapInfo>().ReverseMap();
+        cfg.CreateMap<MapRegionsDto, MapRegions>().ReverseMap();
+        cfg.CreateMap<MapUnitsDto, MapUnits>().ReverseMap();
+        cfg.CreateMap<MapPathingMapDto, MapPathingMap>().ReverseMap();
+        cfg.CreateMap<MapPreviewIconsDto, MapPreviewIcons>().ReverseMap();
+        cfg.CreateMap<QuadrilateralDto, Quadrilateral>().ReverseMap();
+        cfg.CreateMap<MapShadowMapDto, MapShadowMap>().ReverseMap();
+        cfg.CreateMap<MapSoundsDto, MapSounds>().ReverseMap();
+        cfg.CreateMap<MapTriggerStringsDto, MapTriggerStrings>().ReverseMap();
+        cfg.CreateMap<MapUnitObjectDataDto, MapUnitObjectData>().ReverseMap();
+        cfg.CreateMap<MapUpgradeObjectDataDto, MapUpgradeObjectData>().ReverseMap();
+        cfg.CreateMap<MapTriggersDto, MapTriggers>().ReverseMap();
 
-        cfg.CreateMap<SoundDto, Sound>();
-        cfg.CreateMap<TerrainTileDto, TerrainTile>();
-        cfg.CreateMap<UnitDataDto, UnitData>();
+        cfg.CreateMap<SoundDto, Sound>().ReverseMap();
+        cfg.CreateMap<TerrainTileDto, TerrainTile>().ReverseMap();
+        cfg.CreateMap<UnitDataDto, UnitData>().ReverseMap();
       });
       return autoMapperConfig;
     }
