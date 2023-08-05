@@ -68,15 +68,6 @@ namespace Launcher.Services
     {
       var map = Map.Open(baseMapPath);
 
-      var unitObjectData = map.UnitObjectData;
-      foreach (var beans in unitObjectData.BaseUnits)
-      {
-        foreach (var mod in beans.Modifications)
-        {
-          Console.WriteLine(mod.Value);
-        }
-      }
-      
       SerializeAndWrite<MapDoodads, MapDoodadsDto>(map.Doodads, outputFolderPath, DoodadsPath);
       SerializeAndWrite<MapEnvironment, MapEnvironmentDto>(map.Environment, outputFolderPath, EnvironmentPath);
       SerializeAndWrite<MapInfo, MapInfoDto>(map.Info, outputFolderPath, InfoPath);
