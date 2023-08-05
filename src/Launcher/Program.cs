@@ -65,7 +65,7 @@ namespace Launcher
           Build(baseMapPath, sourceCodeProjectFolderPath, true, config);
           break;
         case LaunchMode.JsonToW3X:
-          new JsonToW3XConversionService(mapper).Convert(Path.Combine(launchSettings.MapDataFolderPath, mapSettings.Name),
+          new JsonToW3XConversionService(mapper, new JsonModifierProvider()).Convert(Path.Combine(launchSettings.MapDataFolderPath, mapSettings.Name),
             Path.Combine(launchSettings.MapFolderPath, $"{mapSettings.Name}.w3x"));
           break;
         case LaunchMode.W3XToJson:

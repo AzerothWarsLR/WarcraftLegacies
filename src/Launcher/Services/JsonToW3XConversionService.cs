@@ -1,12 +1,10 @@
 ﻿#nullable enable
-using System.Collections.Generic;
 using System.IO;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 using System.Text.Json.Serialization.Metadata;
 using AutoMapper;
 using Launcher.DataTransferObjects;
-using Launcher.Extensions;
 using Launcher.JsonConverters;
 using War3Net.Build;
 using War3Net.Build.Audio;
@@ -25,57 +23,9 @@ namespace Launcher.Services
   /// </summary>
   public sealed class JsonToW3XConversionService
   {
-    /// <summary>
-    /// Data stored as <see cref="ObjectDataModification"/> or anything deriving from it has an object field which
-    /// needs to be manually given a type by interpreting the object's Type field.
-    /// </summary>
-    private static void CastModificationSets(JsonTypeInfo typeInfo)
-    {
-      foreach (var propertyInfo in typeInfo.Properties)
-      {
-        if (propertyInfo.Name != "Modifications")
-          continue;
-        
-        var setProperty = propertyInfo.Set;
-        if (setProperty is not null)
-        {
-          propertyInfo.Set = (obj, value) =>
-          {
-            if (value is List<ObjectDataModification> modificationSet)
-              foreach (var modification in modificationSet)
-                modification.Value = modification.GetCastedValue();
-            
-            if (value is List<LevelObjectDataModification> levelObjectDataModificationSet)
-              foreach (var modification in levelObjectDataModificationSet)
-                modification.Value = modification.GetCastedValue();
-            
-            if (value is List<SimpleObjectDataModification> simpleObjectDataModificationSet)
-              foreach (var modification in simpleObjectDataModificationSet)
-                modification.Value = modification.GetCastedValue();
-            
-            if (value is List<VariationObjectDataModification> variationObjectDataModificationSet)
-              foreach (var modification in variationObjectDataModificationSet)
-                modification.Value = modification.GetCastedValue();
-
-            setProperty(obj, value);
-          };
-        }
-      }
-    }
-    
     private readonly IMapper _mapper;
-
-    private readonly JsonSerializerOptions _jsonSerializerOptions = new()
-    {
-      IgnoreReadOnlyProperties = true,
-      DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingDefault,
-      WriteIndented = true,
-      TypeInfoResolver = new DefaultJsonTypeInfoResolver
-      {
-        Modifiers = { CastModificationSets }
-      },
-      Converters = { new ColorJsonConverter() }
-    };
+    
+    private readonly JsonSerializerOptions _jsonSerializerOptions;
     
     private readonly MpqArchiveCreateOptions _archiveCreateOptions = new()
     {
@@ -84,9 +34,23 @@ namespace Launcher.Services
       ListFileCreateMode = MpqFileCreateMode.Overwrite
     };
 
-    public JsonToW3XConversionService(IMapper mapper)
+    private readonly JsonModifierProvider _jsonModifierProvider;
+
+    public JsonToW3XConversionService(IMapper mapper, JsonModifierProvider jsonModifierProvider)
     {
       _mapper = mapper;
+      _jsonModifierProvider = jsonModifierProvider;
+      _jsonSerializerOptions = new()
+      {
+        IgnoreReadOnlyProperties = true,
+        DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingDefault,
+        WriteIndented = true,
+        TypeInfoResolver = new DefaultJsonTypeInfoResolver
+        {
+          Modifiers = { _jsonModifierProvider.CastModificationSets }
+        },
+        Converters = { new ColorJsonConverter() }
+      };
     }
 
     private const string UpgradeObjectDataPath = "UpgradeObjectData.json";
