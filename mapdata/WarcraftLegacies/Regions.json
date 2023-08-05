@@ -177,7 +177,7 @@
       "Left": 8608,
       "Bottom": 3872,
       "Right": 10336,
-      "Top": 5600,
+      "Top": 6048,
       "Name": "Dalaran",
       "CreationNumber": 19,
       "AmbientSound": "",
@@ -403,10 +403,10 @@
       }
     },
     {
-      "Left": 5600,
-      "Bottom": -1440,
-      "Right": 8832,
-      "Top": 2624,
+      "Left": 5568,
+      "Bottom": -1408,
+      "Right": 8800,
+      "Top": 2656,
       "Name": "Gilneas Canals",
       "CreationNumber": 45,
       "AmbientSound": "",
@@ -714,10 +714,10 @@
       }
     },
     {
-      "Left": 11392,
-      "Bottom": 8736,
-      "Right": 13952,
-      "Top": 9888,
+      "Left": 12608,
+      "Bottom": 7968,
+      "Right": 15168,
+      "Top": 9120,
       "Name": "Plague 2",
       "CreationNumber": 77,
       "AmbientSound": "",
@@ -1384,7 +1384,7 @@
     {
       "Left": 17856,
       "Bottom": 15392,
-      "Right": 19008,
+      "Right": 19360,
       "Top": 17376,
       "Name": "Dreadscar 2",
       "CreationNumber": 185,
@@ -2017,10 +2017,10 @@
       }
     },
     {
-      "Left": 8576,
-      "Bottom": 1600,
-      "Right": 13536,
-      "Top": 3904,
+      "Left": 9216,
+      "Bottom": 1216,
+      "Right": 14176,
+      "Top": 3520,
       "Name": "SouthshoreAmbient",
       "CreationNumber": 279,
       "AmbientSound": "",
@@ -2355,8 +2355,8 @@
     },
     {
       "Left": 14912,
-      "Bottom": -22176,
-      "Right": 19200,
+      "Bottom": -22208,
+      "Right": 20224,
       "Top": -16896,
       "Name": "BlastedlandAmbient",
       "CreationNumber": 303,
@@ -3324,42 +3324,12 @@
       }
     },
     {
-      "Left": 3232,
-      "Bottom": 22752,
-      "Right": 3648,
-      "Top": 23168,
-      "Name": "SummonObeliskTarget",
-      "CreationNumber": 435,
-      "AmbientSound": "",
-      "Color": {
-        "A": 255,
-        "R": 128,
-        "G": 128,
-        "B": 255
-      }
-    },
-    {
       "Left": -15136,
       "Bottom": -17888,
       "Right": -14656,
       "Top": -17376,
       "Name": "NyTanaris",
       "CreationNumber": 437,
-      "AmbientSound": "",
-      "Color": {
-        "A": 255,
-        "R": 128,
-        "G": 128,
-        "B": 255
-      }
-    },
-    {
-      "Left": 3808,
-      "Bottom": 23072,
-      "Right": 4160,
-      "Top": 23520,
-      "Name": "NyNorth",
-      "CreationNumber": 438,
       "AmbientSound": "",
       "Color": {
         "A": 255,
@@ -3624,10 +3594,10 @@
       }
     },
     {
-      "Left": 16512,
-      "Bottom": -19456,
-      "Right": 16800,
-      "Top": -19200,
+      "Left": 16736,
+      "Bottom": -20256,
+      "Right": 17024,
+      "Top": -20000,
       "Name": "ClosePortal",
       "CreationNumber": 474,
       "AmbientSound": "",
@@ -3654,10 +3624,10 @@
       }
     },
     {
-      "Left": 6272,
+      "Left": 6080,
       "Bottom": -928,
       "Right": 8672,
-      "Top": 1312,
+      "Top": 1696,
       "Name": "GilneasUnlock6",
       "CreationNumber": 480,
       "AmbientSound": "",
@@ -3669,7 +3639,7 @@
       }
     },
     {
-      "Left": 8480,
+      "Left": 8288,
       "Bottom": -2368,
       "Right": 9824,
       "Top": -832,
@@ -3804,10 +3774,10 @@
       }
     },
     {
-      "Left": 9312,
-      "Bottom": 5152,
-      "Right": 9472,
-      "Top": 5344,
+      "Left": 9408,
+      "Bottom": 5472,
+      "Right": 9568,
+      "Top": 5664,
       "Name": "RuinOfDalaran",
       "CreationNumber": 502,
       "AmbientSound": "",
@@ -4131,8 +4101,8 @@
     {
       "Left": -13056,
       "Bottom": 352,
-      "Right": -11904,
-      "Top": 2400,
+      "Right": -12128,
+      "Top": 1472,
       "Name": "KaliRock7",
       "CreationNumber": 59,
       "AmbientSound": "",
@@ -4144,10 +4114,10 @@
       }
     },
     {
-      "Left": 9728,
-      "Bottom": 5248,
-      "Right": 10016,
-      "Top": 5472,
+      "Left": 9792,
+      "Bottom": 5600,
+      "Right": 10080,
+      "Top": 5856,
       "Name": "BookRetrieval",
       "CreationNumber": 65,
       "AmbientSound": "",
@@ -4294,10 +4264,10 @@
       }
     },
     {
-      "Left": -3040,
-      "Bottom": 18016,
-      "Right": -2464,
-      "Top": 18560,
+      "Left": -4352,
+      "Bottom": 15584,
+      "Right": -3776,
+      "Top": 16128,
       "Name": "Wrathgate Portal 1",
       "CreationNumber": 91,
       "AmbientSound": "",
@@ -4339,10 +4309,10 @@
       }
     },
     {
-      "Left": -2464,
-      "Bottom": 18528,
-      "Right": -1888,
-      "Top": 19136,
+      "Left": -3456,
+      "Bottom": 15968,
+      "Right": -2880,
+      "Top": 16576,
       "Name": "Wrathgate Portal 2",
       "CreationNumber": 94,
       "AmbientSound": "",
@@ -4384,9 +4354,9 @@
       }
     },
     {
-      "Left": 416,
-      "Bottom": 2048,
-      "Right": 1440,
+      "Left": 352,
+      "Bottom": 1696,
+      "Right": 1536,
       "Top": 2336,
       "Name": "IslandBlocker1",
       "CreationNumber": 70,
@@ -4399,8 +4369,8 @@
       }
     },
     {
-      "Left": -2048,
-      "Bottom": 2048,
+      "Left": -2144,
+      "Bottom": 1792,
       "Right": -1024,
       "Top": 2336,
       "Name": "IslandBlocker2",
@@ -4429,10 +4399,10 @@
       }
     },
     {
-      "Left": -960,
-      "Bottom": -15104,
-      "Right": -512,
-      "Top": -14144,
+      "Left": 832,
+      "Bottom": -10624,
+      "Right": 1824,
+      "Top": -10112,
       "Name": "IslandBlocker4",
       "CreationNumber": 109,
       "AmbientSound": "",
@@ -4562,10 +4532,10 @@
       }
     },
     {
-      "Left": -15808,
-      "Bottom": -11072,
-      "Right": -14464,
-      "Top": -10240,
+      "Left": -14848,
+      "Bottom": -11808,
+      "Right": -13632,
+      "Top": -10432,
       "Name": "KaliRock9",
       "CreationNumber": 121,
       "AmbientSound": "",
@@ -4574,32 +4544,6 @@
         "R": 128,
         "G": 128,
         "B": 255
-      }
-    },
-    {
-      "Left": 17344,
-      "Bottom": 6368,
-      "Right": 17792,
-      "Top": 6624,
-      "Name": "HinterEmeraldPortal",
-      "CreationNumber": 122,
-      "AmbientSound": "",
-      "Color": {
-        "A": 255,
-        "G": 255
-      }
-    },
-    {
-      "Left": 11008,
-      "Bottom": -15968,
-      "Right": 11456,
-      "Top": -15712,
-      "Name": "DuskwoodEmeraldPortal",
-      "CreationNumber": 126,
-      "AmbientSound": "",
-      "Color": {
-        "A": 255,
-        "G": 255
       }
     },
     {
@@ -4631,7 +4575,7 @@
     {
       "Left": -11296,
       "Bottom": 2688,
-      "Right": -9952,
+      "Right": -10048,
       "Top": 3424,
       "Name": "KaliRock10",
       "CreationNumber": 132,
@@ -4644,10 +4588,10 @@
       }
     },
     {
-      "Left": -12800,
-      "Bottom": 3392,
-      "Right": -12032,
-      "Top": 4736,
+      "Left": -12640,
+      "Bottom": 3360,
+      "Right": -11872,
+      "Top": 4704,
       "Name": "KaliRock11",
       "CreationNumber": 133,
       "AmbientSound": "",
@@ -4734,10 +4678,10 @@
       }
     },
     {
-      "Left": 6848,
+      "Left": 5824,
       "Bottom": -24704,
       "Right": 11936,
-      "Top": -17920,
+      "Top": -14432,
       "Name": "StranglethornBaseBuild",
       "CreationNumber": 139,
       "AmbientSound": "",
@@ -4925,10 +4869,10 @@
       }
     },
     {
-      "Left": 14176,
-      "Bottom": -17536,
-      "Right": 14272,
-      "Top": -17440,
+      "Left": 14240,
+      "Bottom": -17216,
+      "Right": 14336,
+      "Top": -17120,
       "Name": "KilSummon",
       "CreationNumber": 153,
       "AmbientSound": "",
@@ -4957,10 +4901,220 @@
     {
       "Left": -96,
       "Bottom": -22720,
-      "Right": 1728,
-      "Top": -20800,
+      "Right": 1024,
+      "Top": -20608,
       "Name": "Area52Unlock",
       "CreationNumber": 155,
+      "AmbientSound": "",
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
+    },
+    {
+      "Left": -12992,
+      "Bottom": 1472,
+      "Right": -12096,
+      "Top": 2496,
+      "Name": "KaliRock13",
+      "CreationNumber": 156,
+      "AmbientSound": "",
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
+    },
+    {
+      "Left": -8608,
+      "Bottom": 6720,
+      "Right": -7744,
+      "Top": 7936,
+      "Name": "KaliRock14",
+      "CreationNumber": 157,
+      "AmbientSound": "",
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
+    },
+    {
+      "Left": 7936,
+      "Bottom": 1472,
+      "Right": 8928,
+      "Top": 2112,
+      "Name": "GilneasStartPos",
+      "CreationNumber": 159,
+      "AmbientSound": "",
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
+    },
+    {
+      "Left": -15328,
+      "Bottom": -13120,
+      "Right": -14016,
+      "Top": -11872,
+      "Name": "KaliRock15",
+      "CreationNumber": 158,
+      "AmbientSound": "",
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
+    },
+    {
+      "Left": 3296,
+      "Bottom": 22784,
+      "Right": 4480,
+      "Top": 23776,
+      "Name": "ForsakenStartPos",
+      "CreationNumber": 161,
+      "AmbientSound": "",
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
+    },
+    {
+      "Left": 18528,
+      "Bottom": -31232,
+      "Right": 19456,
+      "Top": -30304,
+      "Name": "LegionStartPos",
+      "CreationNumber": 162,
+      "AmbientSound": "",
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
+    },
+    {
+      "Left": 17792,
+      "Bottom": -21856,
+      "Right": 19808,
+      "Top": -19648,
+      "Name": "DarkPortalUnlock",
+      "CreationNumber": 163,
+      "AmbientSound": "",
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
+    },
+    {
+      "Left": -9728,
+      "Bottom": -800,
+      "Right": -9568,
+      "Top": -640,
+      "Name": "OrgrimmarFlight",
+      "CreationNumber": 164,
+      "AmbientSound": "",
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
+    },
+    {
+      "Left": -14656,
+      "Bottom": -4128,
+      "Right": -14496,
+      "Top": -3968,
+      "Name": "ThunderbluffFlight",
+      "CreationNumber": 165,
+      "AmbientSound": "",
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
+    },
+    {
+      "Left": -2912,
+      "Bottom": -3904,
+      "Right": -1792,
+      "Top": -2816,
+      "Name": "IslandBlocker6",
+      "CreationNumber": 166,
+      "AmbientSound": "",
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
+    },
+    {
+      "Left": 8768,
+      "Bottom": 2112,
+      "Right": 10464,
+      "Top": 3488,
+      "Name": "DalaStartPos",
+      "CreationNumber": 160,
+      "AmbientSound": "",
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
+    },
+    {
+      "Left": -18272,
+      "Bottom": -14400,
+      "Right": -15680,
+      "Top": -12768,
+      "Name": "CenarionHoldUnlock",
+      "CreationNumber": 122,
+      "AmbientSound": "",
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
+    },
+    {
+      "Left": 16416,
+      "Bottom": 13888,
+      "Right": 16640,
+      "Top": 14176,
+      "Name": "WindrunnerSpireUnlock",
+      "CreationNumber": 126,
+      "AmbientSound": "",
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
+    },
+    {
+      "Left": 5664,
+      "Bottom": 3520,
+      "Right": 22304,
+      "Top": 10048,
+      "Name": "ArthasRandomPoint",
+      "CreationNumber": 167,
       "AmbientSound": "",
       "Color": {
         "A": 255,

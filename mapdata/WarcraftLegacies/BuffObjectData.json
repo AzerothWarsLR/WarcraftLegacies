@@ -168,6 +168,132 @@
         0
       ],
       "Modifications": []
+    },
+    {
+      "OldId": 1684162626,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 1936083010,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 1719169090,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 1718575682,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 1836212546,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 1735553090,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 1651204418,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 1684297026,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 1819304258,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 1920222529,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 1918984770,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 1919902530,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 1634102594,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 1667845698,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 1835551042,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 1735543106,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 1717920834,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 1751404098,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
     }
   ],
   "NewBuffs": [
@@ -640,14 +766,6 @@
       "Modifications": []
     },
     {
-      "OldId": 1734963266,
-      "NewId": 1329082434,
-      "Unk": [
-        0
-      ],
-      "Modifications": []
-    },
-    {
       "OldId": 1650542658,
       "NewId": 1312305218,
       "Unk": [
@@ -678,28 +796,6 @@
         0
       ],
       "Modifications": []
-    },
-    {
-      "OldId": 1835615554,
-      "NewId": 1245196354,
-      "Unk": [
-        0
-      ],
-      "Modifications": []
-    },
-    {
-      "OldId": 2038064706,
-      "NewId": 1228419138,
-      "Unk": [
-        0
-      ],
-      "Modifications": [
-        {
-          "Id": 1667330662,
-          "Type": 3,
-          "Value": "undead"
-        }
-      ]
     },
     {
       "OldId": 1802723906,
@@ -1076,22 +1172,6 @@
       "Modifications": []
     },
     {
-      "OldId": 1935951938,
-      "NewId": 1144467522,
-      "Unk": [
-        0
-      ],
-      "Modifications": []
-    },
-    {
-      "OldId": 2038064706,
-      "NewId": 1127690306,
-      "Unk": [
-        0
-      ],
-      "Modifications": []
-    },
-    {
       "OldId": 1684097090,
       "NewId": 1110913090,
       "Unk": [
@@ -1228,30 +1308,6 @@
       "Modifications": []
     },
     {
-      "OldId": 1768967746,
-      "NewId": 1479946306,
-      "Unk": [
-        0
-      ],
-      "Modifications": []
-    },
-    {
-      "OldId": 1802723906,
-      "NewId": 1463169090,
-      "Unk": [
-        0
-      ],
-      "Modifications": []
-    },
-    {
-      "OldId": 1769164354,
-      "NewId": 1429614658,
-      "Unk": [
-        0
-      ],
-      "Modifications": []
-    },
-    {
       "OldId": 1969313090,
       "NewId": 1412837442,
       "Unk": [
@@ -1298,22 +1354,6 @@
       "Modifications": []
     },
     {
-      "OldId": 1768181314,
-      "NewId": 1328951362,
-      "Unk": [
-        0
-      ],
-      "Modifications": []
-    },
-    {
-      "OldId": 1868844610,
-      "NewId": 1312174146,
-      "Unk": [
-        0
-      ],
-      "Modifications": []
-    },
-    {
       "OldId": 1701659970,
       "NewId": 1295396930,
       "Unk": [
@@ -1346,20 +1386,6 @@
     {
       "OldId": 1650542658,
       "NewId": 1245065282,
-      "Unk": [
-        0
-      ],
-      "Modifications": [
-        {
-          "Id": 1667330662,
-          "Type": 3,
-          "Value": "naga"
-        }
-      ]
-    },
-    {
-      "OldId": 1936548162,
-      "NewId": 1228288066,
       "Unk": [
         0
       ],
@@ -1424,34 +1450,6 @@
         0
       ],
       "Modifications": []
-    },
-    {
-      "OldId": 1769104194,
-      "NewId": 1110847554,
-      "Unk": [
-        0
-      ],
-      "Modifications": [
-        {
-          "Id": 1667330662,
-          "Type": 3,
-          "Value": "human"
-        }
-      ]
-    },
-    {
-      "OldId": 1936876354,
-      "NewId": 1094070338,
-      "Unk": [
-        0
-      ],
-      "Modifications": [
-        {
-          "Id": 1667330662,
-          "Type": 3,
-          "Value": "human"
-        }
-      ]
     },
     {
       "OldId": 1685287746,
@@ -1542,20 +1540,6 @@
       "Modifications": []
     },
     {
-      "OldId": 1869374018,
-      "NewId": 808857666,
-      "Unk": [
-        0
-      ],
-      "Modifications": [
-        {
-          "Id": 1667330662,
-          "Type": 3,
-          "Value": "human"
-        }
-      ]
-    },
-    {
       "OldId": 1769169730,
       "NewId": 1513435202,
       "Unk": [
@@ -1572,14 +1556,6 @@
     {
       "OldId": 1918988098,
       "NewId": 1496657986,
-      "Unk": [
-        0
-      ],
-      "Modifications": []
-    },
-    {
-      "OldId": 1936548162,
-      "NewId": 1479880770,
       "Unk": [
         0
       ],
@@ -1706,14 +1682,6 @@
     {
       "OldId": 1650542658,
       "NewId": 1278554178,
-      "Unk": [
-        0
-      ],
-      "Modifications": []
-    },
-    {
-      "OldId": 1650542658,
-      "NewId": 1261776962,
       "Unk": [
         0
       ],
@@ -1906,24 +1874,8 @@
       "Modifications": []
     },
     {
-      "OldId": 1986090306,
-      "NewId": 1496592450,
-      "Unk": [
-        0
-      ],
-      "Modifications": []
-    },
-    {
       "OldId": 1969313090,
       "NewId": 1479815234,
-      "Unk": [
-        0
-      ],
-      "Modifications": []
-    },
-    {
-      "OldId": 1767993922,
-      "NewId": 1463038018,
       "Unk": [
         0
       ],
@@ -1954,14 +1906,6 @@
     {
       "OldId": 1718121794,
       "NewId": 1412706370,
-      "Unk": [
-        0
-      ],
-      "Modifications": []
-    },
-    {
-      "OldId": 846029122,
-      "NewId": 1379151938,
       "Unk": [
         0
       ],
@@ -2046,14 +1990,6 @@
     {
       "OldId": 1937003842,
       "NewId": 1228156994,
-      "Unk": [
-        0
-      ],
-      "Modifications": []
-    },
-    {
-      "OldId": 1717920834,
-      "NewId": 1211379778,
       "Unk": [
         0
       ],
@@ -3563,20 +3499,6 @@
       ]
     },
     {
-      "OldId": 1668899650,
-      "NewId": 1311780930,
-      "Unk": [
-        0
-      ],
-      "Modifications": [
-        {
-          "Id": 1667330662,
-          "Type": 3,
-          "Value": "creeps"
-        }
-      ]
-    },
-    {
       "OldId": 1650544194,
       "NewId": 1295003714,
       "Unk": [
@@ -3639,20 +3561,6 @@
       "Modifications": []
     },
     {
-      "OldId": 1836212546,
-      "NewId": 1160785986,
-      "Unk": [
-        0
-      ],
-      "Modifications": [
-        {
-          "Id": 1667330662,
-          "Type": 3,
-          "Value": "undead"
-        }
-      ]
-    },
-    {
       "OldId": 1700876098,
       "NewId": 1144008770,
       "Unk": [
@@ -3683,20 +3591,6 @@
     {
       "OldId": 1919045186,
       "NewId": 1110454338,
-      "Unk": [
-        0
-      ],
-      "Modifications": [
-        {
-          "Id": 1667330662,
-          "Type": 3,
-          "Value": "human"
-        }
-      ]
-    },
-    {
-      "OldId": 1634096450,
-      "NewId": 1093677122,
       "Unk": [
         0
       ],
@@ -3931,22 +3825,6 @@
     {
       "OldId": 1718830424,
       "NewId": 1378889816,
-      "Unk": [
-        0
-      ],
-      "Modifications": []
-    },
-    {
-      "OldId": 1718511938,
-      "NewId": 1278816322,
-      "Unk": [
-        0
-      ],
-      "Modifications": []
-    },
-    {
-      "OldId": 1953262914,
-      "NewId": 1295593538,
       "Unk": [
         0
       ],
@@ -4253,20 +4131,6 @@
         0
       ],
       "Modifications": []
-    },
-    {
-      "OldId": 1700876098,
-      "NewId": 1195454530,
-      "Unk": [
-        0
-      ],
-      "Modifications": [
-        {
-          "Id": 1667330662,
-          "Type": 3,
-          "Value": "human"
-        }
-      ]
     },
     {
       "OldId": 1700876098,
@@ -4661,6 +4525,44 @@
     {
       "OldId": 1785033282,
       "NewId": 927084610,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 1718511938,
+      "NewId": 943861826,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 1936083032,
+      "NewId": 808464472,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 1936083010,
+      "NewId": 960639042,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1667330662,
+          "Type": 3,
+          "Value": "orc"
+        }
+      ]
+    },
+    {
+      "OldId": 1718511938,
+      "NewId": 1093677122,
       "Unk": [
         0
       ],

@@ -1,9 +1,9 @@
 {
   "FormatVersion": 31,
-  "MapVersion": 28007,
+  "MapVersion": 28192,
   "EditorVersion": 6115,
-  "GameVersion": "1.36.0.20218",
-  "MapName": "TRIGSTR_15405",
+  "GameVersion": "1.36.0.20257",
+  "MapName": "Warcraft Legacies 3.6.0",
   "MapAuthor": "TRIGSTR_15408",
   "MapDescription": "TRIGSTR_15407",
   "RecommendedPlayers": "TRIGSTR_15406",
@@ -36,7 +36,7 @@
   "LoadingScreenBackgroundNumber": 99,
   "LoadingScreenPath": "",
   "LoadingScreenText": "TRIGSTR_11318",
-  "LoadingScreenTitle": "TRIGSTR_2316",
+  "LoadingScreenTitle": "Warcraft Legacies 3.6.0",
   "LoadingScreenSubtitle": "",
   "GameDataSet": 2,
   "PrologueScreenPath": "",
@@ -209,35 +209,11 @@
       "EnemyHighPriorityFlags": {}
     },
     {
-      "Id": 16,
-      "Controller": 1,
-      "Race": 3,
-      "Flags": 1,
-      "Name": "TRIGSTR_1948",
-      "StartPosition": {},
-      "AllyLowPriorityFlags": {},
-      "AllyHighPriorityFlags": {},
-      "EnemyLowPriorityFlags": {},
-      "EnemyHighPriorityFlags": {}
-    },
-    {
       "Id": 18,
       "Controller": 1,
       "Race": 4,
       "Flags": 1,
       "Name": "TRIGSTR_252",
-      "StartPosition": {},
-      "AllyLowPriorityFlags": {},
-      "AllyHighPriorityFlags": {},
-      "EnemyLowPriorityFlags": {},
-      "EnemyHighPriorityFlags": {}
-    },
-    {
-      "Id": 19,
-      "Controller": 1,
-      "Race": 3,
-      "Flags": 1,
-      "Name": "TRIGSTR_2337",
       "StartPosition": {},
       "AllyLowPriorityFlags": {},
       "AllyHighPriorityFlags": {},
@@ -2881,6 +2857,14 @@
     },
     {
       "Players": {},
+      "Id": 1378889811
+    },
+    {
+      "Players": {},
+      "Id": 1362112595
+    },
+    {
+      "Players": {},
       "Id": 2003793000
     },
     {
@@ -4525,10 +4509,6 @@
     },
     {
       "Players": {},
-      "Id": 875966574
-    },
-    {
-      "Players": {},
       "Id": 1412771950
     },
     {
@@ -4550,10 +4530,6 @@
     {
       "Players": {},
       "Id": 1160786031
-    },
-    {
-      "Players": {},
-      "Id": 1379086446
     },
     {
       "Players": {},
@@ -5370,10 +5346,6 @@
     {
       "Players": {},
       "Id": 1245065320
-    },
-    {
-      "Players": {},
-      "Id": 1513500782
     },
     {
       "Players": {},
@@ -6409,10 +6381,6 @@
     },
     {
       "Players": {},
-      "Id": 1278292069
-    },
-    {
-      "Players": {},
       "Id": 1295069285
     },
     {
@@ -7049,6 +7017,78 @@
     },
     {
       "Players": {},
+      "Id": 1178808424
+    },
+    {
+      "Players": {},
+      "Id": 860172398
+    },
+    {
+      "Players": {},
+      "Id": 1261842543
+    },
+    {
+      "Players": {},
+      "Id": 1462906997
+    },
+    {
+      "Players": {},
+      "Id": 1514352750
+    },
+    {
+      "Players": {},
+      "Id": 909127790
+    },
+    {
+      "Players": {},
+      "Id": 843395182
+    },
+    {
+      "Players": {},
+      "Id": 1212362856
+    },
+    {
+      "Players": {},
+      "Id": 1195585640
+    },
+    {
+      "Players": {},
+      "Id": 927281262
+    },
+    {
+      "Players": {},
+      "Id": 944058478
+    },
+    {
+      "Players": {},
+      "Id": 876949614
+    },
+    {
+      "Players": {},
+      "Id": 893726830
+    },
+    {
+      "Players": {},
+      "Id": 910504046
+    },
+    {
+      "Players": {},
+      "Id": 875966574
+    },
+    {
+      "Players": {},
+      "Id": 1513500782
+    },
+    {
+      "Players": {},
+      "Id": 1379086446
+    },
+    {
+      "Players": {},
+      "Id": 1278292069
+    },
+    {
+      "Players": {},
       "Id": 1312370792
     },
     {
@@ -7134,14 +7174,6 @@
     {
       "Players": {},
       "Id": 1211183177
-    },
-    {
-      "Players": {},
-      "Id": 1378889811
-    },
-    {
-      "Players": {},
-      "Id": 1362112595
     },
     {
       "Players": {},

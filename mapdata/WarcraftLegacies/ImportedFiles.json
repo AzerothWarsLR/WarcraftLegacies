@@ -315,10 +315,6 @@
     },
     {
       "Flags": 29,
-      "FullPath": "war3mapImported\\Ember.mdx"
-    },
-    {
-      "Flags": 29,
       "FullPath": "war3mapImported\\FarmPigFelOrcV1.01.mdx"
     },
     {
@@ -1115,10 +1111,6 @@
     },
     {
       "Flags": 29,
-      "FullPath": "war3mapImported\\GeneralGilneasHorseV1.01.mdx"
-    },
-    {
-      "Flags": 29,
       "FullPath": "war3mapImported\\GennGreymane.mdx"
     },
     {
@@ -1135,19 +1127,7 @@
     },
     {
       "Flags": 29,
-      "FullPath": "war3mapImported\\RiflemanGilneasV1.01.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\CaptainGilneasV1.03.mdx"
-    },
-    {
-      "Flags": 29,
       "FullPath": "war3mapImported\\Mangonel.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\MageGilneasV1.01.mdx"
     },
     {
       "Flags": 29,
@@ -1156,10 +1136,6 @@
     {
       "Flags": 29,
       "FullPath": "war3mapImported\\ArmoredDireWolfFeet3_Portrait.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\RoyalGuardGilneasV1.02.mdx"
     },
     {
       "Flags": 29,
@@ -1855,10 +1831,6 @@
     },
     {
       "Flags": 29,
-      "FullPath": "war3mapImported\\Ballista.mdx"
-    },
-    {
-      "Flags": 29,
       "FullPath": "war3mapImported\\battleship.mdx"
     },
     {
@@ -2435,19 +2407,7 @@
     },
     {
       "Flags": 29,
-      "FullPath": "war3mapImported\\citadel.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "Textures\\LordaeronSummerTree.blp"
-    },
-    {
-      "Flags": 29,
       "FullPath": "Textures\\Particle08.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "Textures\\townhallwall.blp"
     },
     {
       "Flags": 29,
@@ -3771,14 +3731,6 @@
     },
     {
       "Flags": 29,
-      "FullPath": "war3mapImported\\GoblinFeuerwerker.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\GoblinFeuerwerker_Portrait.mdx"
-    },
-    {
-      "Flags": 29,
       "FullPath": "war3mapImported\\Grenadier.mdx"
     },
     {
@@ -3871,10 +3823,6 @@
     },
     {
       "Flags": 29,
-      "FullPath": "war3mapImported\\Affliction040.mdx"
-    },
-    {
-      "Flags": 29,
       "FullPath": "war3mapImported\\WarGryphon.mdx"
     },
     {
@@ -3924,162 +3872,6 @@
     {
       "Flags": 29,
       "FullPath": "war3mapImported\\ManaAspect_v1.0.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ElekkKnight.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "Ember Shield I FX 3.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "FelGlow.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "FireDragonElemental.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "FireDragonElemental_Glow.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "FireSparks.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "FlyingMachineKulTirasV1.02.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "FMRunes.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "Fog.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "FootmanBanditV1.00.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "FootmanHeroHQ.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "FootmanStromgardeV1.04.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "Forest_Ashenvale.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "FrostmourneNew.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "Garrosh.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "GeneralV2.06.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "GeneralVezax.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "GLOWBALL.BLP"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "Goblin/CorsairMask.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "Goblin/Werker.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "GoliathFire2.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "GreenWake2.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "GreenWake3.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "GryphonRider.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "Hammer Missile.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "Heal Blue.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "HellscreamsFist.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "HeroChronomancer.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "HeroChronomancer_Portrait.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "HeroGlow.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "HeroNagaEnchantress.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "HeroNagaEnchantress_Portrait.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "HeroOwlMoonPriestess.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "HeroSlicer.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "HeroTinkerRock.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "Hero_Executus.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "Hobgoblin.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "Holy Light Royal.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "HumanMage.blp"
     },
     {
       "Flags": 29,
@@ -6047,10 +5839,6 @@
     },
     {
       "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtons/BTNGoblinFireworker.blp"
-    },
-    {
-      "Flags": 29,
       "FullPath": "ReplaceableTextures/CommandButtons/BTNGoblinFuelSpill.blp"
     },
     {
@@ -6199,7 +5987,7 @@
     },
     {
       "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtons/BTNHeroRanger.blp"
+      "FullPath": "ReplaceableTextures\\CommandButtons\\BTNHeroRange.blp"
     },
     {
       "Flags": 29,
@@ -10263,10 +10051,6 @@
     },
     {
       "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISBTNGoblinFireworker.blp"
-    },
-    {
-      "Flags": 29,
       "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISBTNGoblinFuelSpill.blp"
     },
     {
@@ -12995,10 +12779,6 @@
     },
     {
       "Flags": 29,
-      "FullPath": "galaxy.blp"
-    },
-    {
-      "Flags": 29,
       "FullPath": "PurpleRingGlow.blp"
     },
     {
@@ -13248,10 +13028,6 @@
     {
       "Flags": 29,
       "FullPath": "war3mapImported\\Hakkar_Portrait.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "Hakkar.blp"
     },
     {
       "Flags": 29,
@@ -13611,10 +13387,6 @@
     },
     {
       "Flags": 29,
-      "FullPath": "HeroElfDarkEnchanter.blp"
-    },
-    {
-      "Flags": 29,
       "FullPath": "war3mapImported\\HeroElfDarkEnchanter.mdx"
     },
     {
@@ -13688,6 +13460,138 @@
     {
       "Flags": 29,
       "FullPath": "ReplaceableTextures\\CommandButtonsDisabled\\DISBTNManaGem.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures\\CommandButtons\\BTNBurning_Mana.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures\\CommandButtonsDisabled\\DISBTNBurning_Mana.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\VoidWalkerSol.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures\\CommandButtons\\BTNSpell_Shadow_SummonVoidWalker.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures\\CommandButtonsDisabled\\DISBTNSpell_Shadow_SummonVoidWalker.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures\\CommandButtons\\BTNPhoenixFlame.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures\\CommandButtonsDisabled\\DISBTNPhoenixFlame.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\GilneasRifleman.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\Sir Ferdal(Gilneas).mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\StormwindBanner.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\Forsaken_Apothecary.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\Forsaken_Apothecary_Portrait.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\Genn Worgen.MDX"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures\\CommandButtons\\BTNWorgenHunt.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures\\CommandButtonsDisabled\\DISBTNWorgenHunt.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures\\CommandButtonsDisabled\\DISPASWorgenHotClaws.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures\\PassiveButtons\\PASWorgenHotClaws.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures\\CommandButtons\\BTNworg.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures\\CommandButtonsDisabled\\DISBTNworg.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\WorgenDruid3.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\WorgenDruid3_Portrait.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures\\CommandButtons\\BTNWorgen-Werewolf.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures\\CommandButtonsDisabled\\DISBTNWorgen-Werewolf.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures\\CommandButtons\\BTNHeroRangerGiln.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures\\CommandButtonsDisabled\\DISBTNHeroRangerGiln.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\VrykulHuntressRider.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\VrykulHuntressRider_Portrait.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\GilneasMage.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\Siege_Ballista.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\GoblinTank.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\GoblinTank_portrait.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures\\CommandButtons\\BTNGoblinAssaultTank.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures\\CommandButtonsDisabled\\DISBTNGoblinAssaultTank.blp"
     },
     {
       "Flags": 29,
@@ -13804,14 +13708,6 @@
     {
       "Flags": 29,
       "FullPath": "Buildings/Undead/Armory/Armory.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "Buildings/woodelf/citadel/citadel.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "Buildings/woodelf/citadel/ground.blp"
     },
     {
       "Flags": 29,
@@ -14043,35 +13939,167 @@
     },
     {
       "Flags": 29,
-      "FullPath": "war3mapImported\\RefreshingSurge.mdx"
+      "FullPath": "ElekkKnight.blp"
     },
     {
       "Flags": 29,
-      "FullPath": "ReplaceableTextures\\CommandButtons\\BTNBurning_Mana.blp"
+      "FullPath": "FelGlow.blp"
     },
     {
       "Flags": 29,
-      "FullPath": "ReplaceableTextures\\CommandButtonsDisabled\\DISBTNBurning_Mana.blp"
+      "FullPath": "FireDragonElemental.blp"
     },
     {
       "Flags": 29,
-      "FullPath": "war3mapImported\\VoidWalkerSol.mdx"
+      "FullPath": "FireDragonElemental_Glow.blp"
     },
     {
       "Flags": 29,
-      "FullPath": "ReplaceableTextures\\CommandButtons\\BTNSpell_Shadow_SummonVoidWalker.blp"
+      "FullPath": "FireSparks.blp"
     },
     {
       "Flags": 29,
-      "FullPath": "ReplaceableTextures\\CommandButtonsDisabled\\DISBTNSpell_Shadow_SummonVoidWalker.blp"
+      "FullPath": "FlyingMachineKulTirasV1.02.mdx"
     },
     {
-      "Flags": 21,
-      "FullPath": "ReplaceableTextures\\CommandButtons\\BTNPhoenixFlame.blp"
+      "Flags": 29,
+      "FullPath": "FMRunes.blp"
     },
     {
-      "Flags": 21,
-      "FullPath": "ReplaceableTextures\\CommandButtonsDisabled\\DISBTNPhoenixFlame.blp"
+      "Flags": 29,
+      "FullPath": "Fog.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "FootmanBanditV1.00.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "FootmanHeroHQ.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "FootmanStromgardeV1.04.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "Forest_Ashenvale.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "FrostmourneNew.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "galaxy.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "Garrosh.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "GeneralV2.06.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "GeneralVezax.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "GLOWBALL.BLP"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "Goblin/CorsairMask.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "Goblin/Werker.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "GoliathFire2.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "GreenWake2.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "GreenWake3.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "GryphonRider.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "Hakkar.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "Hammer Missile.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "Heal Blue.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "HellscreamsFist.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "HeroChronomancer.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "HeroChronomancer_Portrait.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "HeroElfDarkEnchanter.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "HeroGlow.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "HeroNagaEnchantress.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "HeroNagaEnchantress_Portrait.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "HeroOwlMoonPriestess.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "HeroSlicer.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "HeroTinkerRock.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "Hero_Executus.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "Hobgoblin.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "Holy Light Royal.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "HumanMage.blp"
     }
   ]
 }

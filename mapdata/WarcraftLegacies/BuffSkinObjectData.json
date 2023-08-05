@@ -78,6 +78,11 @@
           "Id": 1952543846,
           "Type": 3,
           "Value": ""
+        },
+        {
+          "Id": 1952543590,
+          "Type": 3,
+          "Value": ""
         }
       ]
     },
@@ -183,6 +188,11 @@
           "Id": 1953653094,
           "Type": 3,
           "Value": "ReplaceableTextures\\CommandButtons\\BTNFire.blp"
+        },
+        {
+          "Id": 1952543846,
+          "Type": 3,
+          "Value": ""
         }
       ]
     },
@@ -229,6 +239,11 @@
           "Id": 1952543846,
           "Type": 3,
           "Value": ""
+        },
+        {
+          "Id": 1952543590,
+          "Type": 3,
+          "Value": ""
         }
       ]
     },
@@ -268,6 +283,11 @@
           "Id": 1952543846,
           "Type": 3,
           "Value": "Abilities\\Spells\\Other\\ImmolationRed\\ImmolationRedTarget.mdl"
+        },
+        {
+          "Id": 1952543590,
+          "Type": 3,
+          "Value": ""
         }
       ]
     },
@@ -312,6 +332,11 @@
           "Id": 1700951398,
           "Type": 3,
           "Value": "TRIGSTR_13041"
+        },
+        {
+          "Id": 1952543846,
+          "Type": 3,
+          "Value": ""
         }
       ]
     },
@@ -324,7 +349,7 @@
         {
           "Id": 1952543846,
           "Type": 3,
-          "Value": "war3mapImported\\Effect_HealingWardTarget.mdx"
+          "Value": ""
         }
       ]
     },
@@ -398,6 +423,240 @@
           "Id": 1700951398,
           "Type": 3,
           "Value": "TRIGSTR_13356"
+        }
+      ]
+    },
+    {
+      "OldId": 1684162626,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1952543846,
+          "Type": 3,
+          "Value": ""
+        }
+      ]
+    },
+    {
+      "OldId": 1936083010,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1952543846,
+          "Type": 3,
+          "Value": ""
+        }
+      ]
+    },
+    {
+      "OldId": 1719169090,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1952543846,
+          "Type": 3,
+          "Value": ""
+        }
+      ]
+    },
+    {
+      "OldId": 1718575682,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1952543846,
+          "Type": 3,
+          "Value": ""
+        }
+      ]
+    },
+    {
+      "OldId": 1836212546,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1952543846,
+          "Type": 3,
+          "Value": ""
+        }
+      ]
+    },
+    {
+      "OldId": 1735553090,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1952543846,
+          "Type": 3,
+          "Value": ""
+        }
+      ]
+    },
+    {
+      "OldId": 1651204418,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1952543846,
+          "Type": 3,
+          "Value": ""
+        }
+      ]
+    },
+    {
+      "OldId": 1684297026,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1952543846,
+          "Type": 3,
+          "Value": ""
+        }
+      ]
+    },
+    {
+      "OldId": 1819304258,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1952543846,
+          "Type": 3,
+          "Value": ""
+        }
+      ]
+    },
+    {
+      "OldId": 1920222529,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1952543846,
+          "Type": 3,
+          "Value": ""
+        }
+      ]
+    },
+    {
+      "OldId": 1918984770,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1952543846,
+          "Type": 3,
+          "Value": ""
+        }
+      ]
+    },
+    {
+      "OldId": 1919902530,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1952543846,
+          "Type": 3,
+          "Value": ""
+        }
+      ]
+    },
+    {
+      "OldId": 1634102594,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1952543590,
+          "Type": 3,
+          "Value": ""
+        }
+      ]
+    },
+    {
+      "OldId": 1667845698,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1952543846,
+          "Type": 3,
+          "Value": ""
+        }
+      ]
+    },
+    {
+      "OldId": 1835551042,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1952543846,
+          "Type": 3,
+          "Value": ""
+        }
+      ]
+    },
+    {
+      "OldId": 1735543106,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1952543846,
+          "Type": 3,
+          "Value": ""
+        }
+      ]
+    },
+    {
+      "OldId": 1717920834,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1952543846,
+          "Type": 3,
+          "Value": ""
+        }
+      ]
+    },
+    {
+      "OldId": 1751404098,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1952543846,
+          "Type": 3,
+          "Value": ""
         }
       ]
     }
@@ -1523,30 +1782,6 @@
       ]
     },
     {
-      "OldId": 1734963266,
-      "NewId": 1329082434,
-      "Unk": [
-        0
-      ],
-      "Modifications": [
-        {
-          "Id": 1718840934,
-          "Type": 3,
-          "Value": "TRIGSTR_10790"
-        },
-        {
-          "Id": 1953526630,
-          "Type": 3,
-          "Value": "head"
-        },
-        {
-          "Id": 811693158,
-          "Type": 3,
-          "Value": "head"
-        }
-      ]
-    },
-    {
       "OldId": 1650542658,
       "NewId": 1312305218,
       "Unk": [
@@ -1571,7 +1806,7 @@
         {
           "Id": 1952543846,
           "Type": 3,
-          "Value": "Abilities\\Spells\\Items\\HealingSalve\\HealingSalveTarget.mdl"
+          "Value": ""
         }
       ]
     },
@@ -1648,95 +1883,12 @@
         {
           "Id": 1952543846,
           "Type": 3,
-          "Value": "Abilities\\Spells\\Human\\slow\\slowtarget.mdl"
+          "Value": ""
         },
         {
           "Id": 1718840934,
           "Type": 3,
           "Value": "TRIGSTR_17308"
-        }
-      ]
-    },
-    {
-      "OldId": 1835615554,
-      "NewId": 1245196354,
-      "Unk": [
-        0
-      ],
-      "Modifications": [
-        {
-          "Id": 1885959270,
-          "Type": 3,
-          "Value": "TRIGSTR_13120"
-        },
-        {
-          "Id": 1700951398,
-          "Type": 3,
-          "Value": ""
-        },
-        {
-          "Id": 1718840934,
-          "Type": 3,
-          "Value": "TRIGSTR_13121"
-        },
-        {
-          "Id": 1952543590,
-          "Type": 3,
-          "Value": "war3mapImported\\ImmolationBlueTarget.mdx"
-        },
-        {
-          "Id": 1953526630,
-          "Type": 3,
-          "Value": "sprite"
-        },
-        {
-          "Id": 1952543846,
-          "Type": 3,
-          "Value": "war3mapImported\\ImmolationBlueDamage.mdx"
-        },
-        {
-          "Id": 811693158,
-          "Type": 3,
-          "Value": "chest"
-        }
-      ]
-    },
-    {
-      "OldId": 2038064706,
-      "NewId": 1228419138,
-      "Unk": [
-        0
-      ],
-      "Modifications": [
-        {
-          "Id": 1953653094,
-          "Type": 3,
-          "Value": "ReplaceableTextures\\CommandButtons\\BTNhorrify.blp"
-        },
-        {
-          "Id": 1885959270,
-          "Type": 3,
-          "Value": "TRIGSTR_11420"
-        },
-        {
-          "Id": 1700951398,
-          "Type": 3,
-          "Value": "TRIGSTR_13123"
-        },
-        {
-          "Id": 1952543846,
-          "Type": 3,
-          "Value": "Abilities\\Spells\\Undead\\Unsummon\\UnsummonTarget.mdl"
-        },
-        {
-          "Id": 811693158,
-          "Type": 3,
-          "Value": "origin"
-        },
-        {
-          "Id": 828470374,
-          "Type": 3,
-          "Value": ""
         }
       ]
     },
@@ -1811,14 +1963,9 @@
           "Value": "TRIGSTR_13128"
         },
         {
-          "Id": 1952543590,
-          "Type": 3,
-          "Value": "Ember Shield I FX 3.mdx"
-        },
-        {
           "Id": 1952543846,
           "Type": 3,
-          "Value": "Ember Shield I FX 3.mdx"
+          "Value": ""
         },
         {
           "Id": 811693158,
@@ -1895,7 +2042,7 @@
         {
           "Id": 1952543846,
           "Type": 3,
-          "Value": "Objects\\Spawnmodels\\Human\\HumanBlood\\BloodElfSpellThiefBlood.mdl"
+          "Value": ""
         }
       ]
     },
@@ -1919,7 +2066,7 @@
         {
           "Id": 1952543846,
           "Type": 3,
-          "Value": "Objects\\Spawnmodels\\Human\\HumanBlood\\BloodElfSpellThiefBlood.mdl"
+          "Value": ""
         }
       ]
     },
@@ -2048,7 +2195,7 @@
         {
           "Id": 1952543846,
           "Type": 3,
-          "Value": "war3mapImported\\Soul Discharge Purple.mdx"
+          "Value": ""
         }
       ]
     },
@@ -2159,6 +2306,11 @@
           "Id": 1700951398,
           "Type": 3,
           "Value": "TRIGSTR_13151"
+        },
+        {
+          "Id": 1952543846,
+          "Type": 3,
+          "Value": ""
         }
       ]
     },
@@ -2298,7 +2450,7 @@
         {
           "Id": 1952543846,
           "Type": 3,
-          "Value": "Abilities\\Spells\\Items\\AIda\\AIdaTarget.mdl"
+          "Value": ""
         }
       ]
     },
@@ -2444,6 +2596,11 @@
           "Id": 1700951398,
           "Type": 3,
           "Value": "TRIGSTR_13173"
+        },
+        {
+          "Id": 1952543846,
+          "Type": 3,
+          "Value": ""
         }
       ]
     },
@@ -2472,7 +2629,7 @@
         {
           "Id": 1952543846,
           "Type": 3,
-          "Value": "Abilities\\Spells\\Undead\\DeathandDecay\\DeathandDecayDamage.mdl"
+          "Value": ""
         },
         {
           "Id": 811693158,
@@ -2492,11 +2649,6 @@
           "Id": 1835101798,
           "Type": 3,
           "Value": "TRIGSTR_13176"
-        },
-        {
-          "Id": 1952543846,
-          "Type": 3,
-          "Value": "war3mapImported\\ShadowAssault.mdx"
         }
       ]
     },
@@ -2545,6 +2697,11 @@
           "Id": 1700951398,
           "Type": 3,
           "Value": "TRIGSTR_13180"
+        },
+        {
+          "Id": 1952543846,
+          "Type": 3,
+          "Value": ""
         }
       ]
     },
@@ -2609,7 +2766,7 @@
           "Value": "TRIGSTR_13184"
         },
         {
-          "Id": 1835101798,
+          "Id": 1718840934,
           "Type": 3,
           "Value": "TRIGSTR_13185"
         }
@@ -2670,6 +2827,11 @@
           "Id": 1700951398,
           "Type": 3,
           "Value": "TRIGSTR_13189"
+        },
+        {
+          "Id": 1952543846,
+          "Type": 3,
+          "Value": ""
         }
       ]
     },
@@ -2738,6 +2900,11 @@
           "Id": 1835101798,
           "Type": 3,
           "Value": "TRIGSTR_13192"
+        },
+        {
+          "Id": 1952543846,
+          "Type": 3,
+          "Value": ""
         }
       ]
     },
@@ -2804,83 +2971,6 @@
         },
         {
           "Id": 1952543590,
-          "Type": 3,
-          "Value": "Abilities\\Spells\\Human\\Heal\\HealTarget.mdl"
-        }
-      ]
-    },
-    {
-      "OldId": 1935951938,
-      "NewId": 1144467522,
-      "Unk": [
-        0
-      ],
-      "Modifications": [
-        {
-          "Id": 1953653094,
-          "Type": 3,
-          "Value": "ReplaceableTextures\\CommandButtons\\BTNHolyStrikeRemake(Fix3).blp"
-        },
-        {
-          "Id": 1885959270,
-          "Type": 3,
-          "Value": "TRIGSTR_13200"
-        },
-        {
-          "Id": 1700951398,
-          "Type": 3,
-          "Value": "TRIGSTR_3180"
-        },
-        {
-          "Id": 1952543846,
-          "Type": 3,
-          "Value": "Divine Wings.mdx"
-        },
-        {
-          "Id": 1667331174,
-          "Value": 1
-        },
-        {
-          "Id": 1718840934,
-          "Type": 3,
-          "Value": "TRIGSTR_14240"
-        }
-      ]
-    },
-    {
-      "OldId": 2038064706,
-      "NewId": 1127690306,
-      "Unk": [
-        0
-      ],
-      "Modifications": [
-        {
-          "Id": 1953653094,
-          "Type": 3,
-          "Value": "ReplaceableTextures\\CommandButtons\\BTNTransmute.blp"
-        },
-        {
-          "Id": 1885959270,
-          "Type": 3,
-          "Value": "TRIGSTR_13202"
-        },
-        {
-          "Id": 1700951398,
-          "Type": 3,
-          "Value": "TRIGSTR_13203"
-        },
-        {
-          "Id": 1952543846,
-          "Type": 3,
-          "Value": "war3mapImported\\Sweep_Holy_Large.mdx"
-        },
-        {
-          "Id": 811693158,
-          "Type": 3,
-          "Value": "weapon"
-        },
-        {
-          "Id": 828470374,
           "Type": 3,
           "Value": ""
         }
@@ -3105,7 +3195,7 @@
         {
           "Id": 1952543846,
           "Type": 3,
-          "Value": "Objects\\Spawnmodels\\Human\\HumanBlood\\HeroBloodElfBlood.mdl"
+          "Value": ""
         }
       ]
     },
@@ -3182,7 +3272,7 @@
         {
           "Id": 1952543846,
           "Type": 3,
-          "Value": "Environment\\UndeadBuildingFire\\UndeadSmallBuildingFire2.mdl"
+          "Value": ""
         },
         {
           "Id": 811693158,
@@ -3274,7 +3364,7 @@
         {
           "Id": 1952543846,
           "Type": 3,
-          "Value": "Abilities\\Weapons\\LordofFlameMissile\\LordofFlameMissile.mdl"
+          "Value": ""
         },
         {
           "Id": 811693158,
@@ -3294,97 +3384,6 @@
           "Id": 1885959270,
           "Type": 3,
           "Value": "TRIGSTR_13232"
-        }
-      ]
-    },
-    {
-      "OldId": 1768967746,
-      "NewId": 1479946306,
-      "Unk": [
-        0
-      ],
-      "Modifications": [
-        {
-          "Id": 1718840934,
-          "Type": 3,
-          "Value": "TRIGSTR_9483"
-        },
-        {
-          "Id": 1952543590,
-          "Type": 3,
-          "Value": "war3mapImported\\HolyStrike.mdx"
-        },
-        {
-          "Id": 1953526630,
-          "Type": 3,
-          "Value": "origin"
-        }
-      ]
-    },
-    {
-      "OldId": 1802723906,
-      "NewId": 1463169090,
-      "Unk": [
-        0
-      ],
-      "Modifications": [
-        {
-          "Id": 1953653094,
-          "Type": 3,
-          "Value": "ReplaceableTextures\\CommandButtons\\BTNSpell_Holy_HolyNova.blp"
-        },
-        {
-          "Id": 1885959270,
-          "Type": 3,
-          "Value": "TRIGSTR_13234"
-        },
-        {
-          "Id": 1700951398,
-          "Type": 3,
-          "Value": "TRIGSTR_13235"
-        },
-        {
-          "Id": 1952543846,
-          "Type": 3,
-          "Value": "war3mapImported\\HolyTornado.mdx"
-        },
-        {
-          "Id": 811693158,
-          "Type": 3,
-          "Value": "origin"
-        },
-        {
-          "Id": 828470374,
-          "Type": 3,
-          "Value": ""
-        },
-        {
-          "Id": 1667331174,
-          "Value": 1
-        }
-      ]
-    },
-    {
-      "OldId": 1769164354,
-      "NewId": 1429614658,
-      "Unk": [
-        0
-      ],
-      "Modifications": [
-        {
-          "Id": 1953653094,
-          "Type": 3,
-          "Value": "ReplaceableTextures\\CommandButtons\\BTNWindWalkOn.blp"
-        },
-        {
-          "Id": 1885959270,
-          "Type": 3,
-          "Value": "TRIGSTR_13238"
-        },
-        {
-          "Id": 1700951398,
-          "Type": 3,
-          "Value": "TRIGSTR_13239"
         }
       ]
     },
@@ -3409,6 +3408,11 @@
           "Id": 1700951398,
           "Type": 3,
           "Value": "TRIGSTR_13241"
+        },
+        {
+          "Id": 1952543846,
+          "Type": 3,
+          "Value": ""
         }
       ]
     },
@@ -3427,7 +3431,7 @@
         {
           "Id": 1952543846,
           "Type": 3,
-          "Value": "Environment\\LargeBuildingFire\\LargeBuildingFire1.mdl"
+          "Value": ""
         }
       ]
     },
@@ -3514,74 +3518,6 @@
       ]
     },
     {
-      "OldId": 1768181314,
-      "NewId": 1328951362,
-      "Unk": [
-        0
-      ],
-      "Modifications": [
-        {
-          "Id": 1885959270,
-          "Type": 3,
-          "Value": "TRIGSTR_13249"
-        },
-        {
-          "Id": 1700951398,
-          "Type": 3,
-          "Value": "TRIGSTR_13250"
-        },
-        {
-          "Id": 1718840934,
-          "Type": 3,
-          "Value": "TRIGSTR_13251"
-        },
-        {
-          "Id": 1952540006,
-          "Type": 3,
-          "Value": "Abilities\\Spells\\NightElf\\EntanglingRoots\\EntanglingRootsTarget.mdl"
-        },
-        {
-          "Id": 1952543846,
-          "Type": 3,
-          "Value": ""
-        }
-      ]
-    },
-    {
-      "OldId": 1868844610,
-      "NewId": 1312174146,
-      "Unk": [
-        0
-      ],
-      "Modifications": [
-        {
-          "Id": 1953653094,
-          "Type": 3,
-          "Value": "ReplaceableTextures\\CommandButtons\\BTNCorruptedEnt.blp"
-        },
-        {
-          "Id": 1885959270,
-          "Type": 3,
-          "Value": "TRIGSTR_13252"
-        },
-        {
-          "Id": 1700951398,
-          "Type": 3,
-          "Value": "TRIGSTR_13253"
-        },
-        {
-          "Id": 1952543846,
-          "Type": 3,
-          "Value": "Units\\Undead\\PlagueCloud\\PlagueCloudtarget.mdl"
-        },
-        {
-          "Id": 811693158,
-          "Type": 3,
-          "Value": "overhead"
-        }
-      ]
-    },
-    {
       "OldId": 1701659970,
       "NewId": 1295396930,
       "Unk": [
@@ -3640,7 +3576,7 @@
         {
           "Id": 1952543846,
           "Type": 3,
-          "Value": "Abilities\\Spells\\Orc\\TrollBerserk\\HeadhunterWEAPONSLeft.mdl"
+          "Value": ""
         },
         {
           "Id": 811693158,
@@ -3717,78 +3653,6 @@
       ]
     },
     {
-      "OldId": 1936548162,
-      "NewId": 1228288066,
-      "Unk": [
-        0
-      ],
-      "Modifications": [
-        {
-          "Id": 1953653094,
-          "Type": 3,
-          "Value": "ReplaceableTextures\\CommandButtons\\BTNBearBlink.blp"
-        },
-        {
-          "Id": 1885959270,
-          "Type": 3,
-          "Value": "TRIGSTR_13260"
-        },
-        {
-          "Id": 1700951398,
-          "Type": 3,
-          "Value": "TRIGSTR_13261"
-        },
-        {
-          "Id": 1835101798,
-          "Type": 3,
-          "Value": "TRIGSTR_13262"
-        },
-        {
-          "Id": 1685091174,
-          "Value": 2
-        },
-        {
-          "Id": 1952543846,
-          "Type": 3,
-          "Value": "Abilities\\Weapons\\IllidanMissile\\IllidanMissile.mdl"
-        },
-        {
-          "Id": 811693158,
-          "Type": 3,
-          "Value": "hand,right"
-        },
-        {
-          "Id": 828470374,
-          "Type": 3,
-          "Value": "hand,left"
-        },
-        {
-          "Id": 845247590,
-          "Type": 3,
-          "Value": "overhead"
-        },
-        {
-          "Id": 862024806,
-          "Type": 3,
-          "Value": "foot,left"
-        },
-        {
-          "Id": 878802022,
-          "Type": 3,
-          "Value": "foot,right"
-        },
-        {
-          "Id": 895579238,
-          "Type": 3,
-          "Value": "chest"
-        },
-        {
-          "Id": 1667331174,
-          "Value": 6
-        }
-      ]
-    },
-    {
       "OldId": 1835615554,
       "NewId": 1211510850,
       "Unk": [
@@ -3808,7 +3672,7 @@
         {
           "Id": 1952543590,
           "Type": 3,
-          "Value": "Abilities\\Spells\\Human\\Heal\\HealTarget.mdl"
+          "Value": ""
         },
         {
           "Id": 1952543846,
@@ -3958,74 +3822,6 @@
       ]
     },
     {
-      "OldId": 1769104194,
-      "NewId": 1110847554,
-      "Unk": [
-        0
-      ],
-      "Modifications": [
-        {
-          "Id": 1953653094,
-          "Type": 3,
-          "Value": "ReplaceableTextures\\CommandButtons\\BTNLifeDrain.blp"
-        },
-        {
-          "Id": 1885959270,
-          "Type": 3,
-          "Value": "TRIGSTR_7837"
-        },
-        {
-          "Id": 1700951398,
-          "Type": 3,
-          "Value": "TRIGSTR_13276"
-        },
-        {
-          "Id": 1718840934,
-          "Type": 3,
-          "Value": "TRIGSTR_7835"
-        },
-        {
-          "Id": 1952543846,
-          "Type": 3,
-          "Value": "Abilities\\Spells\\Other\\Drain\\DrainTarget.mdl"
-        }
-      ]
-    },
-    {
-      "OldId": 1936876354,
-      "NewId": 1094070338,
-      "Unk": [
-        0
-      ],
-      "Modifications": [
-        {
-          "Id": 1953653094,
-          "Type": 3,
-          "Value": "ReplaceableTextures\\CommandButtons\\BTNBlueWhiteSpell.blp"
-        },
-        {
-          "Id": 1885959270,
-          "Type": 3,
-          "Value": "TRIGSTR_7842"
-        },
-        {
-          "Id": 1700951398,
-          "Type": 3,
-          "Value": "TRIGSTR_13279"
-        },
-        {
-          "Id": 1718840934,
-          "Type": 3,
-          "Value": "TRIGSTR_13280"
-        },
-        {
-          "Id": 1952543846,
-          "Type": 3,
-          "Value": "Abilities\\Spells\\Items\\AIso\\BIsvTarget.mdl"
-        }
-      ]
-    },
-    {
       "OldId": 1685287746,
       "NewId": 943075394,
       "Unk": [
@@ -4055,7 +3851,7 @@
         {
           "Id": 1952543846,
           "Type": 3,
-          "Value": "Objects\\Spawnmodels\\Human\\HumanBlood\\BloodElfSpellThiefBlood.mdl"
+          "Value": ""
         }
       ]
     },
@@ -4089,7 +3885,7 @@
         {
           "Id": 1952543846,
           "Type": 3,
-          "Value": "Objects\\Spawnmodels\\Human\\HumanBlood\\BloodElfSpellThiefBlood.mdl"
+          "Value": ""
         }
       ]
     },
@@ -4123,7 +3919,7 @@
         {
           "Id": 1952543846,
           "Type": 3,
-          "Value": "Abilities\\Spells\\Items\\AIta\\CrystalBallCaster.mdl"
+          "Value": ""
         }
       ]
     },
@@ -4181,12 +3977,12 @@
         {
           "Id": 1718840934,
           "Type": 3,
-          "Value": "TRIGSTR_13233"
+          "Value": "TRIGSTR_9483"
         },
         {
           "Id": 1952543846,
           "Type": 3,
-          "Value": "Abilities\\Spells\\Other\\BreathOfFire\\BreathOfFireDamage.mdl"
+          "Value": ""
         },
         {
           "Id": 811693158,
@@ -4220,7 +4016,7 @@
         {
           "Id": 1718840934,
           "Type": 3,
-          "Value": "TRIGSTR_13296"
+          "Value": "TRIGSTR_13233"
         },
         {
           "Id": 1952543846,
@@ -4288,45 +4084,6 @@
       ]
     },
     {
-      "OldId": 1869374018,
-      "NewId": 808857666,
-      "Unk": [
-        0
-      ],
-      "Modifications": [
-        {
-          "Id": 1953653094,
-          "Type": 3,
-          "Value": "ReplaceableTextures\\CommandButtons\\BTNTongueOfFlame.blp"
-        },
-        {
-          "Id": 1885959270,
-          "Type": 3,
-          "Value": "TRIGSTR_7990"
-        },
-        {
-          "Id": 1700951398,
-          "Type": 3,
-          "Value": "TRIGSTR_13303"
-        },
-        {
-          "Id": 1835101798,
-          "Type": 3,
-          "Value": "TRIGSTR_7991"
-        },
-        {
-          "Id": 1718840934,
-          "Type": 3,
-          "Value": "TRIGSTR_3938"
-        },
-        {
-          "Id": 1952543846,
-          "Type": 3,
-          "Value": "Abilities\\Weapons\\FireBallMissile\\FireBallMissile.mdl,Abilities\\Weapons\\FireBallMissile\\FireBallMissile.mdl"
-        }
-      ]
-    },
-    {
       "OldId": 1769169730,
       "NewId": 1513435202,
       "Unk": [
@@ -4385,45 +4142,11 @@
         {
           "Id": 1952543846,
           "Type": 3,
-          "Value": "Abilities\\Spells\\Other\\GeneralAuraTarget\\GeneralAuraTarget.mdl"
+          "Value": ""
         },
         {
           "Id": 1667331174,
           "Value": 1
-        }
-      ]
-    },
-    {
-      "OldId": 1936548162,
-      "NewId": 1479880770,
-      "Unk": [
-        0
-      ],
-      "Modifications": [
-        {
-          "Id": 1953653094,
-          "Type": 3,
-          "Value": "ReplaceableTextures\\CommandButtons\\BTNBarkskin.blp"
-        },
-        {
-          "Id": 1885959270,
-          "Type": 3,
-          "Value": "TRIGSTR_13310"
-        },
-        {
-          "Id": 1700951398,
-          "Type": 3,
-          "Value": "TRIGSTR_13311"
-        },
-        {
-          "Id": 1952543590,
-          "Type": 3,
-          "Value": "Abilities\\Spells\\Items\\StaffOfSanctuary\\Staff_Sanctuary_Target.mdl"
-        },
-        {
-          "Id": 1952543846,
-          "Type": 3,
-          "Value": "Abilities\\Spells\\Items\\StaffOfSanctuary\\Staff_Sanctuary_Target.mdl"
         }
       ]
     },
@@ -4457,12 +4180,12 @@
         {
           "Id": 1718840934,
           "Type": 3,
-          "Value": "TRIGSTR_3945"
+          "Value": "TRIGSTR_3938"
         },
         {
           "Id": 1952543846,
           "Type": 3,
-          "Value": "Environment\\SmallBuildingFire\\SmallBuildingFire2.mdl"
+          "Value": ""
         }
       ]
     },
@@ -4520,7 +4243,7 @@
         {
           "Id": 1952543846,
           "Type": 3,
-          "Value": "Objects\\Spawnmodels\\Human\\HumanBlood\\BloodElfSpellThiefBlood.mdl"
+          "Value": ""
         }
       ]
     },
@@ -4752,25 +4475,11 @@
           "Id": 1700951398,
           "Type": 3,
           "Value": "TRIGSTR_13340"
-        }
-      ]
-    },
-    {
-      "OldId": 1650542658,
-      "NewId": 1261776962,
-      "Unk": [
-        0
-      ],
-      "Modifications": [
-        {
-          "Id": 1885959270,
-          "Type": 3,
-          "Value": "TRIGSTR_13341"
         },
         {
-          "Id": 1700951398,
+          "Id": 1952543846,
           "Type": 3,
-          "Value": "TRIGSTR_13342"
+          "Value": ""
         }
       ]
     },
@@ -4790,6 +4499,16 @@
           "Id": 1700951398,
           "Type": 3,
           "Value": "TRIGSTR_13344"
+        },
+        {
+          "Id": 1952543846,
+          "Type": 3,
+          "Value": ""
+        },
+        {
+          "Id": 1952543590,
+          "Type": 3,
+          "Value": ""
         }
       ]
     },
@@ -4809,6 +4528,11 @@
           "Id": 1700951398,
           "Type": 3,
           "Value": "TRIGSTR_13346"
+        },
+        {
+          "Id": 1952543846,
+          "Type": 3,
+          "Value": ""
         }
       ]
     },
@@ -4828,6 +4552,11 @@
           "Id": 1700951398,
           "Type": 3,
           "Value": "TRIGSTR_13348"
+        },
+        {
+          "Id": 1952543846,
+          "Type": 3,
+          "Value": ""
         }
       ]
     },
@@ -4886,6 +4615,11 @@
           "Id": 1700951398,
           "Type": 3,
           "Value": "TRIGSTR_13354"
+        },
+        {
+          "Id": 1952543846,
+          "Type": 3,
+          "Value": ""
         }
       ]
     },
@@ -4946,7 +4680,7 @@
         {
           "Id": 1952543846,
           "Type": 3,
-          "Value": "Objects\\Spawnmodels\\Human\\HumanBlood\\BloodElfSpellThiefBlood.mdl"
+          "Value": ""
         }
       ]
     },
@@ -5095,7 +4829,7 @@
         {
           "Id": 1952543846,
           "Type": 3,
-          "Value": "Objects\\Spawnmodels\\Human\\HumanBlood\\BloodElfSpellThiefBlood.mdl"
+          "Value": ""
         }
       ]
     },
@@ -5347,51 +5081,12 @@
         {
           "Id": 1952543846,
           "Type": 3,
-          "Value": "Abilities\\Spells\\Orc\\Bloodlust\\BloodlustTarget.mdl"
+          "Value": ""
         },
         {
           "Id": 811693158,
           "Type": 3,
           "Value": "head"
-        }
-      ]
-    },
-    {
-      "OldId": 1986090306,
-      "NewId": 1496592450,
-      "Unk": [
-        0
-      ],
-      "Modifications": [
-        {
-          "Id": 1953653094,
-          "Type": 3,
-          "Value": "ReplaceableTextures\\PassiveButtons\\PASBTNGenericSpellImmunity.blp"
-        },
-        {
-          "Id": 1885959270,
-          "Type": 3,
-          "Value": "TRIGSTR_13393"
-        },
-        {
-          "Id": 1700951398,
-          "Type": 3,
-          "Value": "TRIGSTR_13394"
-        },
-        {
-          "Id": 1952543590,
-          "Type": 3,
-          "Value": "Abilities\\Spells\\Human\\Feedback\\ArcaneTowerAttack.mdl"
-        },
-        {
-          "Id": 1952543846,
-          "Type": 3,
-          "Value": ""
-        },
-        {
-          "Id": 811693158,
-          "Type": 3,
-          "Value": ""
         }
       ]
     },
@@ -5416,25 +5111,11 @@
           "Id": 1700951398,
           "Type": 3,
           "Value": "TRIGSTR_13396"
-        }
-      ]
-    },
-    {
-      "OldId": 1767993922,
-      "NewId": 1463038018,
-      "Unk": [
-        0
-      ],
-      "Modifications": [
-        {
-          "Id": 1953653094,
-          "Type": 3,
-          "Value": "ReplaceableTextures\\CommandButtons\\BTNSatyr.blp"
         },
         {
-          "Id": 1885959270,
+          "Id": 1952543846,
           "Type": 3,
-          "Value": "TRIGSTR_13397"
+          "Value": ""
         }
       ]
     },
@@ -5507,49 +5188,11 @@
           "Id": 1835101798,
           "Type": 3,
           "Value": "TRIGSTR_4732"
-        }
-      ]
-    },
-    {
-      "OldId": 846029122,
-      "NewId": 1379151938,
-      "Unk": [
-        0
-      ],
-      "Modifications": [
-        {
-          "Id": 1953653094,
-          "Type": 3,
-          "Value": "ReplaceableTextures\\CommandButtons\\BTNBarkskin.blp"
-        },
-        {
-          "Id": 1885959270,
-          "Type": 3,
-          "Value": "TRIGSTR_13407"
-        },
-        {
-          "Id": 1700951398,
-          "Type": 3,
-          "Value": "TRIGSTR_13408"
-        },
-        {
-          "Id": 1952543590,
-          "Type": 3,
-          "Value": "Abilities\\Spells\\Items\\StaffOfSanctuary\\Staff_Sanctuary_Target.mdl"
-        },
-        {
-          "Id": 1953526630,
-          "Type": 3,
-          "Value": "overhead"
-        },
-        {
-          "Id": 1685091174,
-          "Value": 2
         },
         {
           "Id": 1952543846,
           "Type": 3,
-          "Value": "Abilities\\Spells\\Items\\StaffOfSanctuary\\Staff_Sanctuary_Target.mdl"
+          "Value": ""
         }
       ]
     },
@@ -5859,35 +5502,6 @@
       ]
     },
     {
-      "OldId": 1717920834,
-      "NewId": 1211379778,
-      "Unk": [
-        0
-      ],
-      "Modifications": [
-        {
-          "Id": 1953653094,
-          "Type": 3,
-          "Value": "ReplaceableTextures\\CommandButtons\\BTNMagicalSentry.blp"
-        },
-        {
-          "Id": 1885959270,
-          "Type": 3,
-          "Value": "TRIGSTR_13430"
-        },
-        {
-          "Id": 1700951398,
-          "Type": 3,
-          "Value": "TRIGSTR_13431"
-        },
-        {
-          "Id": 1952543846,
-          "Type": 3,
-          "Value": "Abilities\\Spells\\Items\\AIco\\CrownOfCmndTarget.mdl"
-        }
-      ]
-    },
-    {
       "OldId": 1768910914,
       "NewId": 1177825346,
       "Unk": [
@@ -5920,11 +5534,6 @@
           "Value": "TRIGSTR_13438"
         },
         {
-          "Id": 1952543590,
-          "Type": 3,
-          "Value": "Abilities\\Spells\\NightElf\\Immolation\\ImmolationDamage.mdl"
-        },
-        {
           "Id": 1953526630,
           "Type": 3,
           "Value": "head"
@@ -5936,7 +5545,7 @@
         {
           "Id": 1952543846,
           "Type": 3,
-          "Value": "Abilities\\Spells\\Other\\ImmolationRed\\ImmolationRedDamage.mdl"
+          "Value": ""
         }
       ]
     },
@@ -6029,6 +5638,11 @@
           "Id": 1835101798,
           "Type": 3,
           "Value": "TRIGSTR_13448"
+        },
+        {
+          "Id": 1952543846,
+          "Type": 3,
+          "Value": ""
         }
       ]
     },
@@ -6336,6 +5950,11 @@
           "Id": 1700951398,
           "Type": 3,
           "Value": "TRIGSTR_13479"
+        },
+        {
+          "Id": 1952543846,
+          "Type": 3,
+          "Value": ""
         }
       ]
     },
@@ -6417,6 +6036,11 @@
           "Id": 1700951398,
           "Type": 3,
           "Value": "TRIGSTR_13484"
+        },
+        {
+          "Id": 1952543846,
+          "Type": 3,
+          "Value": ""
         }
       ]
     },
@@ -6445,7 +6069,7 @@
         {
           "Id": 1952543846,
           "Type": 3,
-          "Value": "Abilities\\Spells\\Items\\AIda\\AIdaTarget.mdl"
+          "Value": "war3mapImported\\Effect_ShieldBuff_Small.mdx"
         }
       ]
     },
@@ -6474,7 +6098,7 @@
         {
           "Id": 1952543846,
           "Type": 3,
-          "Value": "Abilities\\Spells\\Other\\Tornado\\Tornado_Target.mdl"
+          "Value": ""
         }
       ]
     },
@@ -6503,7 +6127,7 @@
         {
           "Id": 1952543846,
           "Type": 3,
-          "Value": "Abilities\\Spells\\Other\\Tornado\\Tornado_Target.mdl"
+          "Value": ""
         }
       ]
     },
@@ -6537,7 +6161,7 @@
         {
           "Id": 1952543846,
           "Type": 3,
-          "Value": "Objects\\Spawnmodels\\Human\\HumanBlood\\BloodElfSpellThiefBlood.mdl"
+          "Value": ""
         }
       ]
     },
@@ -6668,7 +6292,7 @@
         {
           "Id": 1952543846,
           "Type": 3,
-          "Value": "Environment\\LargeBuildingFire\\LargeBuildingFire2.mdl"
+          "Value": ""
         }
       ]
     },
@@ -6785,6 +6409,11 @@
           "Id": 1718840934,
           "Type": 3,
           "Value": "TRIGSTR_13515"
+        },
+        {
+          "Id": 1952543846,
+          "Type": 3,
+          "Value": ""
         }
       ]
     },
@@ -6896,6 +6525,11 @@
           "Id": 1952543846,
           "Type": 3,
           "Value": "Abilities\\Spells\\Other\\ImmolationRed\\ImmolationRedTarget.mdl"
+        },
+        {
+          "Id": 1952543590,
+          "Type": 3,
+          "Value": ""
         }
       ]
     },
@@ -6949,6 +6583,11 @@
           "Id": 1835101798,
           "Type": 3,
           "Value": "TRIGSTR_13530"
+        },
+        {
+          "Id": 1952543846,
+          "Type": 3,
+          "Value": ""
         }
       ]
     },
@@ -6987,7 +6626,7 @@
         {
           "Id": 1952543846,
           "Type": 3,
-          "Value": "Abilities\\Spells\\Undead\\UnholyFrenzy\\UnholyFrenzyTarget.mdl"
+          "Value": ""
         },
         {
           "Id": 811693158,
@@ -7331,7 +6970,7 @@
         {
           "Id": 1952543846,
           "Type": 3,
-          "Value": "Abilities\\Spells\\Human\\slow\\slowtarget.mdl"
+          "Value": ""
         }
       ]
     },
@@ -7374,7 +7013,7 @@
         {
           "Id": 1952543590,
           "Type": 3,
-          "Value": "Abilities\\Spells\\Human\\Heal\\HealTarget.mdl"
+          "Value": ""
         },
         {
           "Id": 1952543846,
@@ -7467,6 +7106,11 @@
           "Id": 1700951398,
           "Type": 3,
           "Value": "TRIGSTR_13574"
+        },
+        {
+          "Id": 1952543846,
+          "Type": 3,
+          "Value": ""
         }
       ]
     },
@@ -7572,12 +7216,17 @@
         {
           "Id": 1885959270,
           "Type": 3,
-          "Value": "TRIGSTR_2129"
+          "Value": "TRIGSTR_9789"
         },
         {
           "Id": 1700951398,
           "Type": 3,
           "Value": "TRIGSTR_17799"
+        },
+        {
+          "Id": 1952543846,
+          "Type": 3,
+          "Value": ""
         }
       ]
     },
@@ -7596,7 +7245,7 @@
         {
           "Id": 1885959270,
           "Type": 3,
-          "Value": "TRIGSTR_19068"
+          "Value": "TRIGSTR_20813"
         },
         {
           "Id": 1700951398,
@@ -7669,7 +7318,7 @@
         {
           "Id": 1952543846,
           "Type": 3,
-          "Value": "war3mapImported\\Ember.mdx"
+          "Value": ""
         },
         {
           "Id": 811693158,
@@ -7703,7 +7352,7 @@
         {
           "Id": 1952543846,
           "Type": 3,
-          "Value": "Abilities\\Spells\\Other\\BreathOfFire\\BreathOfFireDamage.mdl"
+          "Value": ""
         },
         {
           "Id": 811693158,
@@ -7732,7 +7381,7 @@
         {
           "Id": 1952543846,
           "Type": 3,
-          "Value": "Abilities\\Spells\\Undead\\PlagueCloud\\PlagueCloudCaster.mdl"
+          "Value": ""
         }
       ]
     },
@@ -7833,7 +7482,7 @@
         {
           "Id": 1952543846,
           "Type": 3,
-          "Value": "Abilities\\Spells\\Other\\Incinerate\\IncinerateBuff.mdl"
+          "Value": ""
         },
         {
           "Id": 811693158,
@@ -7954,7 +7603,7 @@
         {
           "Id": 1952543846,
           "Type": 3,
-          "Value": "Abilities\\Spells\\Human\\ManaFlare\\ManaFlareBase.mdl"
+          "Value": ""
         }
       ]
     },
@@ -8046,7 +7695,7 @@
         {
           "Id": 1952543846,
           "Type": 3,
-          "Value": "Objects\\Spawnmodels\\Human\\HumanBlood\\HumanBloodFootman.mdl"
+          "Value": ""
         }
       ]
     },
@@ -8133,7 +7782,7 @@
         {
           "Id": 1952543846,
           "Type": 3,
-          "Value": "Abilities\\Spells\\Other\\BreathOfFire\\BreathOfFireDamage.mdl"
+          "Value": ""
         }
       ]
     },
@@ -8196,7 +7845,7 @@
         {
           "Id": 1952543846,
           "Type": 3,
-          "Value": "war3mapImported\\Earth NovaTarget.mdx"
+          "Value": ""
         }
       ]
     },
@@ -8350,7 +7999,7 @@
         {
           "Id": 1952543846,
           "Type": 3,
-          "Value": "Abilities\\Spells\\NightElf\\shadowstrike\\shadowstrike.mdl"
+          "Value": "war3mapImported\\Effect_Weaken_Red.mdx"
         }
       ]
     },
@@ -8447,7 +8096,7 @@
         {
           "Id": 1952543846,
           "Type": 3,
-          "Value": "Abilities\\Spells\\Human\\slow\\slowtarget.mdl"
+          "Value": ""
         }
       ]
     },
@@ -8495,7 +8144,7 @@
         {
           "Id": 1952543846,
           "Type": 3,
-          "Value": "Abilities\\Spells\\Undead\\UnholyFrenzy\\UnholyFrenzyTarget.mdl"
+          "Value": ""
         },
         {
           "Id": 811693158,
@@ -8534,7 +8183,7 @@
         {
           "Id": 1952543846,
           "Type": 3,
-          "Value": "Abilities\\Spells\\Undead\\Possession\\PossessionTarget.mdl"
+          "Value": ""
         }
       ]
     },
@@ -8588,6 +8237,11 @@
           "Id": 1700951398,
           "Type": 3,
           "Value": "TRIGSTR_13669"
+        },
+        {
+          "Id": 1952543846,
+          "Type": 3,
+          "Value": ""
         }
       ]
     },
@@ -8645,7 +8299,7 @@
         {
           "Id": 1952543846,
           "Type": 3,
-          "Value": "Abilities\\Spells\\Human\\ManaFlare\\ManaFlareTarget.mdl"
+          "Value": ""
         }
       ]
     },
@@ -8670,6 +8324,11 @@
           "Id": 1835101798,
           "Type": 3,
           "Value": "TRIGSTR_13676"
+        },
+        {
+          "Id": 1952543846,
+          "Type": 3,
+          "Value": ""
         }
       ]
     },
@@ -8699,6 +8358,11 @@
           "Id": 1718840934,
           "Type": 3,
           "Value": "TRIGSTR_13679"
+        },
+        {
+          "Id": 1952543846,
+          "Type": 3,
+          "Value": ""
         }
       ]
     },
@@ -8741,7 +8405,7 @@
         {
           "Id": 1952543590,
           "Type": 3,
-          "Value": "Abilities\\Spells\\Other\\BreathOfFire\\BreathOfFireDamage.mdl"
+          "Value": ""
         },
         {
           "Id": 1952543846,
@@ -8829,6 +8493,11 @@
           "Id": 1700951398,
           "Type": 3,
           "Value": "TRIGSTR_13688"
+        },
+        {
+          "Id": 1952543846,
+          "Type": 3,
+          "Value": ""
         }
       ]
     },
@@ -8905,7 +8574,7 @@
         {
           "Id": 1952543846,
           "Type": 3,
-          "Value": "Abilities\\Spells\\Human\\Heal\\HealTarget.mdl"
+          "Value": ""
         }
       ]
     },
@@ -8987,7 +8656,7 @@
         {
           "Id": 1952543846,
           "Type": 3,
-          "Value": "Abilities\\Spells\\Human\\Heal\\HealTarget.mdl"
+          "Value": ""
         }
       ]
     },
@@ -9243,7 +8912,7 @@
         {
           "Id": 1952543846,
           "Type": 3,
-          "Value": "Objects\\Spawnmodels\\Human\\HumanBlood\\BloodElfSpellThiefBlood.mdl"
+          "Value": ""
         }
       ]
     },
@@ -9297,6 +8966,11 @@
           "Id": 1700951398,
           "Type": 3,
           "Value": "TRIGSTR_13722"
+        },
+        {
+          "Id": 1952543846,
+          "Type": 3,
+          "Value": ""
         }
       ]
     },
@@ -9325,7 +8999,7 @@
         {
           "Id": 1952543846,
           "Type": 3,
-          "Value": "Abilities\\Spells\\Other\\BreathOfFire\\BreathOfFireDamage.mdl"
+          "Value": ""
         }
       ]
     },
@@ -9532,50 +9206,7 @@
         {
           "Id": 1952543846,
           "Type": 3,
-          "Value": "Abilities\\Spells\\Human\\FlameStrike\\FlameStrikeDamageTarget.mdl"
-        }
-      ]
-    },
-    {
-      "OldId": 1668899650,
-      "NewId": 1311780930,
-      "Unk": [
-        0
-      ],
-      "Modifications": [
-        {
-          "Id": 1953653094,
-          "Type": 3,
-          "Value": "ReplaceableTextures\\CommandButtons\\BTNMindControl.blp"
-        },
-        {
-          "Id": 1885959270,
-          "Type": 3,
-          "Value": "TRIGSTR_13741"
-        },
-        {
-          "Id": 1700951398,
-          "Type": 3,
-          "Value": "TRIGSTR_13742"
-        },
-        {
-          "Id": 1835101798,
-          "Type": 3,
-          "Value": "TRIGSTR_13743"
-        },
-        {
-          "Id": 1952540006,
-          "Type": 3,
-          "Value": "Abilities\\Spells\\Undead\\DeathandDecay\\DeathandDecayDamage.mdl"
-        },
-        {
-          "Id": 1818649958,
-          "Type": 3,
-          "Value": "DrainLoop"
-        },
-        {
-          "Id": 1685091174,
-          "Value": 2
+          "Value": ""
         }
       ]
     },
@@ -9639,6 +9270,11 @@
           "Id": 1835101798,
           "Type": 3,
           "Value": "TRIGSTR_13749"
+        },
+        {
+          "Id": 1952543846,
+          "Type": 3,
+          "Value": ""
         }
       ]
     },
@@ -9774,40 +9410,11 @@
           "Id": 1700951398,
           "Type": 3,
           "Value": "TRIGSTR_13762"
-        }
-      ]
-    },
-    {
-      "OldId": 1836212546,
-      "NewId": 1160785986,
-      "Unk": [
-        0
-      ],
-      "Modifications": [
-        {
-          "Id": 1953653094,
-          "Type": 3,
-          "Value": "ReplaceableTextures\\CommandButtons\\BTNMedalionOfDarkness.blp"
-        },
-        {
-          "Id": 1885959270,
-          "Type": 3,
-          "Value": "TRIGSTR_13763"
-        },
-        {
-          "Id": 1700951398,
-          "Type": 3,
-          "Value": "TRIGSTR_13764"
-        },
-        {
-          "Id": 1818649958,
-          "Type": 3,
-          "Value": "DeathAndDecayLoop"
         },
         {
           "Id": 1952543846,
           "Type": 3,
-          "Value": "Abilities\\Spells\\Human\\Banish\\BanishTarget.mdl"
+          "Value": ""
         }
       ]
     },
@@ -9826,7 +9433,12 @@
         {
           "Id": 1885959270,
           "Type": 3,
-          "Value": "TRIGSTR_13765"
+          "Value": "TRIGSTR_13202"
+        },
+        {
+          "Id": 1952543846,
+          "Type": 3,
+          "Value": ""
         }
       ]
     },
@@ -9889,50 +9501,6 @@
       ]
     },
     {
-      "OldId": 1634096450,
-      "NewId": 1093677122,
-      "Unk": [
-        0
-      ],
-      "Modifications": [
-        {
-          "Id": 1953653094,
-          "Type": 3,
-          "Value": "ReplaceableTextures\\CommandButtons\\BTNBarkskin.blp"
-        },
-        {
-          "Id": 1885959270,
-          "Type": 3,
-          "Value": "TRIGSTR_14972"
-        },
-        {
-          "Id": 1700951398,
-          "Type": 3,
-          "Value": "TRIGSTR_15015"
-        },
-        {
-          "Id": 1835101798,
-          "Type": 3,
-          "Value": "TRIGSTR_15191"
-        },
-        {
-          "Id": 1952543590,
-          "Type": 3,
-          "Value": ""
-        },
-        {
-          "Id": 1952543846,
-          "Type": 3,
-          "Value": "Abilities\\Spells\\NightElf\\Barkskin\\BarkSkinTarget.mdl"
-        },
-        {
-          "Id": 1718840934,
-          "Type": 3,
-          "Value": "TRIGSTR_15291"
-        }
-      ]
-    },
-    {
       "OldId": 1667845698,
       "NewId": 942682178,
       "Unk": [
@@ -9967,7 +9535,7 @@
         {
           "Id": 1952543846,
           "Type": 3,
-          "Value": "Objects\\Spawnmodels\\Critters\\Albatross\\CritterBloodAlbatross.mdl"
+          "Value": ""
         }
       ]
     },
@@ -10315,6 +9883,11 @@
           "Id": 1700951398,
           "Type": 3,
           "Value": "TRIGSTR_12677"
+        },
+        {
+          "Id": 1952543846,
+          "Type": 3,
+          "Value": ""
         }
       ]
     },
@@ -10497,64 +10070,6 @@
           "Id": 1952540006,
           "Type": 3,
           "Value": "Abilities\\Spells\\Other\\Monsoon\\MonsoonBoltTarget.mdl"
-        }
-      ]
-    },
-    {
-      "OldId": 1718511938,
-      "NewId": 1278816322,
-      "Unk": [
-        0
-      ],
-      "Modifications": [
-        {
-          "Id": 1885959270,
-          "Type": 3,
-          "Value": "TRIGSTR_16119"
-        },
-        {
-          "Id": 1700951398,
-          "Type": 3,
-          "Value": "TRIGSTR_16201"
-        },
-        {
-          "Id": 1953653094,
-          "Type": 3,
-          "Value": "ReplaceableTextures\\CommandButtons\\BTNPlagueCloud.blp"
-        },
-        {
-          "Id": 1952543846,
-          "Type": 3,
-          "Value": "Abilities\\Spells\\NightElf\\Tranquility\\TranquilityTarget.mdl"
-        }
-      ]
-    },
-    {
-      "OldId": 1953262914,
-      "NewId": 1295593538,
-      "Unk": [
-        0
-      ],
-      "Modifications": [
-        {
-          "Id": 1700951398,
-          "Type": 3,
-          "Value": "TRIGSTR_066"
-        },
-        {
-          "Id": 1885959270,
-          "Type": 3,
-          "Value": "TRIGSTR_9939"
-        },
-        {
-          "Id": 1952543846,
-          "Type": 3,
-          "Value": "Objects\\Spawnmodels\\Human\\HumanBlood\\BloodElfSpellThiefBlood.mdl"
-        },
-        {
-          "Id": 1953653094,
-          "Type": 3,
-          "Value": "ReplaceableTextures\\CommandButtons\\BTNSacrifice.blp"
         }
       ]
     },
@@ -11313,7 +10828,7 @@
         {
           "Id": 1952543590,
           "Type": 3,
-          "Value": "Abilities\\Spells\\NightElf\\Immolation\\ImmolationDamage.mdl"
+          "Value": ""
         }
       ]
     },
@@ -11424,7 +10939,7 @@
         {
           "Id": 1952543846,
           "Type": 3,
-          "Value": "Abilities\\Spells\\Other\\ImmolationRed\\ImmolationRedDamage.mdl"
+          "Value": ""
         },
         {
           "Id": 1718840934,
@@ -11569,7 +11084,7 @@
         {
           "Id": 1952543846,
           "Type": 3,
-          "Value": "Abilities\\Weapons\\AvengerMissile\\AvengerMissile.mdl,Abilities\\Weapons\\AvengerMissile\\AvengerMissile.mdl"
+          "Value": ""
         },
         {
           "Id": 1885959270,
@@ -11580,40 +11095,6 @@
           "Id": 1953653094,
           "Type": 3,
           "Value": "ReplaceableTextures\\CommandButtons\\PASRefurbish.blp"
-        }
-      ]
-    },
-    {
-      "OldId": 1700876098,
-      "NewId": 1195454530,
-      "Unk": [
-        0
-      ],
-      "Modifications": [
-        {
-          "Id": 1953653094,
-          "Type": 3,
-          "Value": "ReplaceableTextures\\PassiveButtons\\PASANA_HealingButterfliesFixed.BLP"
-        },
-        {
-          "Id": 1885959270,
-          "Type": 3,
-          "Value": ""
-        },
-        {
-          "Id": 1700951398,
-          "Type": 3,
-          "Value": ""
-        },
-        {
-          "Id": 1952543846,
-          "Type": 3,
-          "Value": ""
-        },
-        {
-          "Id": 1718840934,
-          "Type": 3,
-          "Value": "TRIGSTR_16912"
         }
       ]
     },
@@ -11691,7 +11172,13 @@
       "Unk": [
         0
       ],
-      "Modifications": []
+      "Modifications": [
+        {
+          "Id": 1952543846,
+          "Type": 3,
+          "Value": ""
+        }
+      ]
     },
     {
       "OldId": 1785033282,
@@ -12097,7 +11584,7 @@
         {
           "Id": 1952543846,
           "Type": 3,
-          "Value": "Abilities\\Spells\\Other\\ImmolationRed\\ImmolationRedDamage.mdl"
+          "Value": ""
         },
         {
           "Id": 1718840934,
@@ -12160,7 +11647,7 @@
         {
           "Id": 1952543846,
           "Type": 3,
-          "Value": "Abilities\\Spells\\Orc\\SpiritLink\\SpiritLinkTarget.mdl"
+          "Value": "war3mapImported\\Effect_Weaken_Red.mdx"
         },
         {
           "Id": 1953653094,
@@ -12388,6 +11875,11 @@
           "Id": 1700951398,
           "Type": 3,
           "Value": "TRIGSTR_17899"
+        },
+        {
+          "Id": 1952543846,
+          "Type": 3,
+          "Value": ""
         }
       ]
     },
@@ -12435,7 +11927,7 @@
         {
           "Id": 1952543846,
           "Type": 3,
-          "Value": "Abilities\\Spells\\Human\\ManaFlare\\ManaFlareTarget.mdl"
+          "Value": ""
         }
       ]
     },
@@ -12449,7 +11941,7 @@
         {
           "Id": 1952543846,
           "Type": 3,
-          "Value": "war3mapImported\\Affliction040.mdx"
+          "Value": ""
         },
         {
           "Id": 1885959270,
@@ -12743,7 +12235,7 @@
         {
           "Id": 1952543846,
           "Type": 3,
-          "Value": "war3mapImported\\RefreshingSurge.mdx"
+          "Value": ""
         },
         {
           "Id": 811693158,
@@ -12754,6 +12246,122 @@
           "Id": 1953653094,
           "Type": 3,
           "Value": "ReplaceableTextures/CommandButtons/BTNBurning_Mana.blp"
+        }
+      ]
+    },
+    {
+      "OldId": 1718511938,
+      "NewId": 943861826,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1700951398,
+          "Type": 3,
+          "Value": "TRIGSTR_20900"
+        },
+        {
+          "Id": 811693158,
+          "Type": 3,
+          "Value": "chest"
+        },
+        {
+          "Id": 1885959270,
+          "Type": 3,
+          "Value": "TRIGSTR_20925"
+        },
+        {
+          "Id": 1952543846,
+          "Type": 3,
+          "Value": "war3mapImported\\Sacred Guard Gold.mdx"
+        },
+        {
+          "Id": 1953653094,
+          "Type": 3,
+          "Value": "ReplaceableTextures/CommandButtons/BTNSphereOfDivine.blp"
+        }
+      ]
+    },
+    {
+      "OldId": 1936083032,
+      "NewId": 808464472,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1835101798,
+          "Type": 3,
+          "Value": "TRIGSTR_21040"
+        },
+        {
+          "Id": 1952540006,
+          "Type": 3,
+          "Value": "Abilities\\Spells\\Human\\Heal\\HealTarget.mdl"
+        },
+        {
+          "Id": 1818649958,
+          "Type": 3,
+          "Value": "FountainLoop"
+        }
+      ]
+    },
+    {
+      "OldId": 1936083010,
+      "NewId": 960639042,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1953653094,
+          "Type": 3,
+          "Value": "ReplaceableTextures/CommandButtons/BTNHolyMaul.blp"
+        },
+        {
+          "Id": 1885959270,
+          "Type": 3,
+          "Value": "TRIGSTR_21041"
+        },
+        {
+          "Id": 1700951398,
+          "Type": 3,
+          "Value": "TRIGSTR_21042"
+        },
+        {
+          "Id": 1952543846,
+          "Type": 3,
+          "Value": ""
+        },
+        {
+          "Id": 811693158,
+          "Type": 3,
+          "Value": "overhead"
+        }
+      ]
+    },
+    {
+      "OldId": 1718511938,
+      "NewId": 1093677122,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1885959270,
+          "Type": 3,
+          "Value": "TRIGSTR_21128"
+        },
+        {
+          "Id": 1952543846,
+          "Type": 3,
+          "Value": ""
+        },
+        {
+          "Id": 1700951398,
+          "Type": 3,
+          "Value": "TRIGSTR_21129"
         }
       ]
     }

@@ -123,14 +123,13 @@
       "Color": "#FFFFff"
     },
     {
-      "X": 160,
-      "Y": 179,
+      "X": 171,
+      "Y": 116,
       "Color": "#FFFFff"
     },
     {
-      "IconType": 1,
-      "X": 188,
-      "Y": 244,
+      "X": 160,
+      "Y": 179,
       "Color": "#FFFFff"
     },
     {
@@ -213,6 +212,11 @@
       "Color": "#FFFFff"
     },
     {
+      "X": 148,
+      "Y": 7,
+      "Color": "#FFFFff"
+    },
+    {
       "X": 93,
       "Y": 123,
       "Color": "#FFFFff"
@@ -266,6 +270,36 @@
       "Color": "#FFFFff"
     },
     {
+      "X": 148,
+      "Y": 106,
+      "Color": "#FFFFff"
+    },
+    {
+      "X": 149,
+      "Y": 118,
+      "Color": "#FFFFff"
+    },
+    {
+      "X": 164,
+      "Y": 124,
+      "Color": "#FFFFff"
+    },
+    {
+      "X": 169,
+      "Y": 103,
+      "Color": "#FFFFff"
+    },
+    {
+      "X": 38,
+      "Y": 64,
+      "Color": "#FFFFff"
+    },
+    {
+      "X": 86,
+      "Y": 106,
+      "Color": "#FFFFff"
+    },
+    {
       "X": 143,
       "Y": 243,
       "Color": "#FFFFff"
@@ -281,27 +315,15 @@
       "Color": "#FFFFff"
     },
     {
-      "IconType": 1,
-      "X": 184,
-      "Y": 244,
-      "Color": "#FFFFff"
-    },
-    {
-      "IconType": 1,
-      "X": 188,
-      "Y": 247,
-      "Color": "#FFFFff"
-    },
-    {
-      "IconType": 1,
-      "X": 184,
-      "Y": 247,
-      "Color": "#FFFFff"
-    },
-    {
       "X": 51,
       "Y": 41,
       "Color": "#FFFFff"
+    },
+    {
+      "IconType": 2,
+      "X": 184,
+      "Y": 234,
+      "Color": "#ECF0ff"
     },
     {
       "IconType": 2,
@@ -326,12 +348,6 @@
       "X": 131,
       "Y": 85,
       "Color": "#BD00ff"
-    },
-    {
-      "IconType": 2,
-      "X": 186,
-      "Y": 242,
-      "Color": "#ECF0ff"
     },
     {
       "IconType": 2,
@@ -362,6 +378,12 @@
       "X": 187,
       "Y": 74,
       "Color": "#0042ff"
+    },
+    {
+      "IconType": 2,
+      "X": 166,
+      "Y": 104,
+      "Color": "#4F5055"
     },
     {
       "IconType": 2,
@@ -404,18 +426,6 @@
       "X": 213,
       "Y": 250,
       "Color": "#A57034"
-    },
-    {
-      "IconType": 2,
-      "X": 188,
-      "Y": 244,
-      "Color": "#DCB9ec"
-    },
-    {
-      "IconType": 2,
-      "X": 184,
-      "Y": 244,
-      "Color": "#ECCE87"
     }
   ]
 }

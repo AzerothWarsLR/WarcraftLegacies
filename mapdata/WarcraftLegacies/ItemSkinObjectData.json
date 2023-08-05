@@ -10,7 +10,7 @@
         {
           "Id": 1953458293,
           "Type": 3,
-          "Value": "TRIGSTR_6003"
+          "Value": "TRIGSTR_5952"
         },
         {
           "Id": 1885959285,
@@ -45,7 +45,7 @@
         {
           "Id": 1953458293,
           "Type": 3,
-          "Value": "TRIGSTR_6004"
+          "Value": "TRIGSTR_6003"
         },
         {
           "Id": 1651864693,
@@ -88,7 +88,7 @@
         {
           "Id": 1953458293,
           "Type": 3,
-          "Value": "TRIGSTR_6012"
+          "Value": "TRIGSTR_6004"
         },
         {
           "Id": 2020631157,
@@ -136,7 +136,7 @@
         {
           "Id": 1953458293,
           "Type": 3,
-          "Value": "TRIGSTR_5337"
+          "Value": "TRIGSTR_5336"
         }
       ]
     },
@@ -157,7 +157,7 @@
         {
           "Id": 1953458293,
           "Type": 3,
-          "Value": "TRIGSTR_5369"
+          "Value": "TRIGSTR_5337"
         }
       ]
     },
@@ -170,7 +170,7 @@
         {
           "Id": 1953458293,
           "Type": 3,
-          "Value": "TRIGSTR_13952"
+          "Value": "TRIGSTR_13947"
         }
       ]
     },
@@ -330,7 +330,7 @@
         {
           "Id": 1953458293,
           "Type": 3,
-          "Value": "TRIGSTR_6014"
+          "Value": "TRIGSTR_6012"
         },
         {
           "Id": 1651864693,
@@ -419,7 +419,7 @@
         {
           "Id": 1953458293,
           "Type": 3,
-          "Value": "TRIGSTR_6015"
+          "Value": "TRIGSTR_6014"
         }
       ]
     },
@@ -432,7 +432,7 @@
         {
           "Id": 1953458293,
           "Type": 3,
-          "Value": "TRIGSTR_6022"
+          "Value": "TRIGSTR_6015"
         },
         {
           "Id": 2020631157,
@@ -462,7 +462,7 @@
         {
           "Id": 1953458293,
           "Type": 3,
-          "Value": "TRIGSTR_5370"
+          "Value": "TRIGSTR_5369"
         }
       ]
     },
@@ -548,7 +548,7 @@
         {
           "Id": 1953458293,
           "Type": 3,
-          "Value": "TRIGSTR_5375"
+          "Value": "TRIGSTR_5370"
         },
         {
           "Id": 2020631157,
@@ -626,7 +626,7 @@
         {
           "Id": 1953458293,
           "Type": 3,
-          "Value": "TRIGSTR_5376"
+          "Value": "TRIGSTR_5375"
         }
       ]
     },
@@ -709,7 +709,7 @@
         {
           "Id": 1953458293,
           "Type": 3,
-          "Value": "TRIGSTR_5436"
+          "Value": "TRIGSTR_5376"
         }
       ]
     },
@@ -761,7 +761,7 @@
         {
           "Id": 1953458293,
           "Type": 3,
-          "Value": "TRIGSTR_6025"
+          "Value": "TRIGSTR_6022"
         },
         {
           "Id": 1835101813,
@@ -801,7 +801,7 @@
         {
           "Id": 1953458293,
           "Type": 3,
-          "Value": "TRIGSTR_6982"
+          "Value": "TRIGSTR_7031"
         }
       ]
     },
@@ -874,7 +874,7 @@
         {
           "Id": 1953458293,
           "Type": 3,
-          "Value": "TRIGSTR_6039"
+          "Value": "TRIGSTR_6025"
         }
       ]
     },
@@ -887,7 +887,7 @@
         {
           "Id": 1953458293,
           "Type": 3,
-          "Value": "TRIGSTR_3408"
+          "Value": "TRIGSTR_3357"
         },
         {
           "Id": 1651864693,
@@ -926,7 +926,7 @@
         {
           "Id": 1953458293,
           "Type": 3,
-          "Value": "TRIGSTR_3473"
+          "Value": "TRIGSTR_3408"
         },
         {
           "Id": 2037408373,
@@ -958,7 +958,7 @@
         {
           "Id": 1953458293,
           "Type": 3,
-          "Value": "TRIGSTR_5437"
+          "Value": "TRIGSTR_5436"
         }
       ]
     },
@@ -975,7 +975,7 @@
         {
           "Id": 1953458293,
           "Type": 3,
-          "Value": "TRIGSTR_5587"
+          "Value": "TRIGSTR_5437"
         },
         {
           "Id": 2020631157,
@@ -992,7 +992,7 @@
         {
           "Id": 1953458293,
           "Type": 3,
-          "Value": "TRIGSTR_13984"
+          "Value": "TRIGSTR_13952"
         },
         {
           "Id": 1651864693,
@@ -1014,7 +1014,7 @@
         {
           "Id": 1953458293,
           "Type": 3,
-          "Value": "TRIGSTR_14003"
+          "Value": "TRIGSTR_13984"
         },
         {
           "Id": 1885959285,
@@ -1041,7 +1041,7 @@
         {
           "Id": 1953458293,
           "Type": 3,
-          "Value": "TRIGSTR_14004"
+          "Value": "TRIGSTR_14003"
         },
         {
           "Id": 1651864693,
@@ -1064,7 +1064,7 @@
         {
           "Id": 1953458293,
           "Type": 3,
-          "Value": "TRIGSTR_14048"
+          "Value": "TRIGSTR_14004"
         },
         {
           "Id": 1835101813,
@@ -1101,7 +1101,7 @@
         {
           "Id": 1953458293,
           "Type": 3,
-          "Value": "TRIGSTR_14101"
+          "Value": "TRIGSTR_14048"
         }
       ]
     },
@@ -1119,7 +1119,7 @@
         {
           "Id": 1953458293,
           "Type": 3,
-          "Value": "TRIGSTR_14160"
+          "Value": "TRIGSTR_14101"
         }
       ]
     },
@@ -1159,7 +1159,7 @@
         {
           "Id": 1953458293,
           "Type": 3,
-          "Value": "TRIGSTR_14161"
+          "Value": "TRIGSTR_14160"
         }
       ]
     },
@@ -1172,7 +1172,7 @@
         {
           "Id": 1953458293,
           "Type": 3,
-          "Value": "TRIGSTR_5588"
+          "Value": "TRIGSTR_5587"
         },
         {
           "Id": 1885959285,
@@ -1190,7 +1190,7 @@
         {
           "Id": 1953458293,
           "Type": 3,
-          "Value": "TRIGSTR_5589"
+          "Value": "TRIGSTR_5588"
         },
         {
           "Id": 1651864693,
@@ -1312,7 +1312,7 @@
         {
           "Id": 1953458293,
           "Type": 3,
-          "Value": "TRIGSTR_6040"
+          "Value": "TRIGSTR_6039"
         }
       ]
     },
@@ -1350,7 +1350,7 @@
         {
           "Id": 1953458293,
           "Type": 3,
-          "Value": "TRIGSTR_3541"
+          "Value": "TRIGSTR_3473"
         },
         {
           "Id": 1651864693,
@@ -1386,7 +1386,7 @@
         {
           "Id": 1953458293,
           "Type": 3,
-          "Value": "TRIGSTR_7028"
+          "Value": "TRIGSTR_7033"
         },
         {
           "Id": 2020631157,
@@ -1425,7 +1425,7 @@
         {
           "Id": 1953458293,
           "Type": 3,
-          "Value": "TRIGSTR_3608"
+          "Value": "TRIGSTR_3541"
         },
         {
           "Id": 1885959285,
@@ -1476,7 +1476,7 @@
         {
           "Id": 1953458293,
           "Type": 3,
-          "Value": "TRIGSTR_7031"
+          "Value": "TRIGSTR_7090"
         },
         {
           "Id": 1835101813,
@@ -1508,7 +1508,7 @@
         {
           "Id": 1953458293,
           "Type": 3,
-          "Value": "TRIGSTR_6101"
+          "Value": "TRIGSTR_6040"
         }
       ]
     },
@@ -1568,7 +1568,7 @@
         {
           "Id": 1953458293,
           "Type": 3,
-          "Value": "TRIGSTR_9119"
+          "Value": "TRIGSTR_8163"
         },
         {
           "Id": 2020631157,
@@ -1643,7 +1643,7 @@
         {
           "Id": 1953458293,
           "Type": 3,
-          "Value": "TRIGSTR_7033"
+          "Value": "TRIGSTR_7094"
         }
       ]
     },
@@ -1670,7 +1670,7 @@
         {
           "Id": 1953458293,
           "Type": 3,
-          "Value": "TRIGSTR_5626"
+          "Value": "TRIGSTR_5589"
         },
         {
           "Id": 1651864693,
@@ -1692,7 +1692,7 @@
         {
           "Id": 1953458293,
           "Type": 3,
-          "Value": "TRIGSTR_6187"
+          "Value": "TRIGSTR_6101"
         }
       ]
     },
@@ -1760,7 +1760,7 @@
         {
           "Id": 1953458293,
           "Type": 3,
-          "Value": "TRIGSTR_14166"
+          "Value": "TRIGSTR_14161"
         }
       ]
     },
@@ -1848,7 +1848,7 @@
         {
           "Id": 1953458293,
           "Type": 3,
-          "Value": "TRIGSTR_5628"
+          "Value": "TRIGSTR_5626"
         }
       ]
     },
@@ -1861,7 +1861,7 @@
         {
           "Id": 1953458293,
           "Type": 3,
-          "Value": "TRIGSTR_6188"
+          "Value": "TRIGSTR_6187"
         },
         {
           "Id": 2020631157,
@@ -1890,7 +1890,7 @@
         {
           "Id": 1953458293,
           "Type": 3,
-          "Value": "TRIGSTR_6218"
+          "Value": "TRIGSTR_6188"
         },
         {
           "Id": 1936024681,
@@ -1935,7 +1935,7 @@
         {
           "Id": 1953458293,
           "Type": 3,
-          "Value": "TRIGSTR_9424"
+          "Value": "TRIGSTR_9119"
         }
       ]
     }
@@ -2109,7 +2109,7 @@
         {
           "Id": 1953458293,
           "Type": 3,
-          "Value": "TRIGSTR_14167"
+          "Value": "TRIGSTR_14166"
         },
         {
           "Id": 1835101813,
@@ -2360,7 +2360,7 @@
         {
           "Id": 1953458293,
           "Type": 3,
-          "Value": "TRIGSTR_9500"
+          "Value": "TRIGSTR_9424"
         },
         {
           "Id": 1835101813,
@@ -2512,7 +2512,7 @@
         {
           "Id": 1953458293,
           "Type": 3,
-          "Value": "TRIGSTR_10334"
+          "Value": "TRIGSTR_9500"
         },
         {
           "Id": 1835101813,
@@ -2559,7 +2559,7 @@
         {
           "Id": 1953458293,
           "Type": 3,
-          "Value": "TRIGSTR_10339"
+          "Value": "TRIGSTR_10334"
         },
         {
           "Id": 1835101813,
@@ -2687,7 +2687,7 @@
         {
           "Id": 1953458293,
           "Type": 3,
-          "Value": "TRIGSTR_7090"
+          "Value": "TRIGSTR_7120"
         },
         {
           "Id": 1835101813,
@@ -2726,7 +2726,7 @@
         {
           "Id": 1953458293,
           "Type": 3,
-          "Value": "TRIGSTR_14184"
+          "Value": "TRIGSTR_14167"
         },
         {
           "Id": 1835101813,
@@ -2812,7 +2812,7 @@
         {
           "Id": 1953458293,
           "Type": 3,
-          "Value": "TRIGSTR_10415"
+          "Value": "TRIGSTR_10339"
         },
         {
           "Id": 1835101813,
@@ -2859,7 +2859,7 @@
         {
           "Id": 1953458293,
           "Type": 3,
-          "Value": "TRIGSTR_11205"
+          "Value": "TRIGSTR_10415"
         },
         {
           "Id": 1835101813,
@@ -2906,7 +2906,7 @@
         {
           "Id": 1953458293,
           "Type": 3,
-          "Value": "TRIGSTR_11704"
+          "Value": "TRIGSTR_11205"
         },
         {
           "Id": 1835101813,
@@ -2953,7 +2953,7 @@
         {
           "Id": 1953458293,
           "Type": 3,
-          "Value": "TRIGSTR_12423"
+          "Value": "TRIGSTR_11704"
         },
         {
           "Id": 1835101813,
@@ -2996,7 +2996,7 @@
         {
           "Id": 1953458293,
           "Type": 3,
-          "Value": "TRIGSTR_7094"
+          "Value": "TRIGSTR_7221"
         },
         {
           "Id": 1835101813,
@@ -3190,7 +3190,7 @@
         {
           "Id": 1953458293,
           "Type": 3,
-          "Value": "TRIGSTR_12743"
+          "Value": "TRIGSTR_12423"
         },
         {
           "Id": 1835101813,
@@ -3389,7 +3389,7 @@
         {
           "Id": 1953458293,
           "Type": 3,
-          "Value": "TRIGSTR_12825"
+          "Value": "TRIGSTR_12743"
         },
         {
           "Id": 1835101813,
@@ -3692,7 +3692,7 @@
         {
           "Id": 1953458293,
           "Type": 3,
-          "Value": "TRIGSTR_13017"
+          "Value": "TRIGSTR_12825"
         },
         {
           "Id": 1835101813,
@@ -3739,7 +3739,7 @@
         {
           "Id": 1953458293,
           "Type": 3,
-          "Value": "TRIGSTR_13798"
+          "Value": "TRIGSTR_13017"
         },
         {
           "Id": 1835101813,
@@ -3786,7 +3786,7 @@
         {
           "Id": 1953458293,
           "Type": 3,
-          "Value": "TRIGSTR_13825"
+          "Value": "TRIGSTR_13798"
         },
         {
           "Id": 1835101813,
@@ -3833,7 +3833,7 @@
         {
           "Id": 1953458293,
           "Type": 3,
-          "Value": "TRIGSTR_13827"
+          "Value": "TRIGSTR_13825"
         },
         {
           "Id": 1835101813,
@@ -3880,7 +3880,7 @@
         {
           "Id": 1953458293,
           "Type": 3,
-          "Value": "TRIGSTR_13828"
+          "Value": "TRIGSTR_13827"
         },
         {
           "Id": 1835101813,
@@ -3927,7 +3927,7 @@
         {
           "Id": 1953458293,
           "Type": 3,
-          "Value": "TRIGSTR_13857"
+          "Value": "TRIGSTR_13828"
         },
         {
           "Id": 1835101813,
@@ -3974,7 +3974,7 @@
         {
           "Id": 1953458293,
           "Type": 3,
-          "Value": "TRIGSTR_13858"
+          "Value": "TRIGSTR_13857"
         },
         {
           "Id": 1835101813,
@@ -4050,7 +4050,7 @@
         {
           "Id": 1953458293,
           "Type": 3,
-          "Value": "TRIGSTR_13935"
+          "Value": "TRIGSTR_13858"
         },
         {
           "Id": 1835101813,
