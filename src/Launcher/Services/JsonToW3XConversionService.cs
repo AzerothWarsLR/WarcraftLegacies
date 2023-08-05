@@ -104,7 +104,6 @@ namespace Launcher.Services
     private const string ImportedFilesPath = "ImportedFiles.json";
     private const string UnitsPath = "Units.json";
     private const string SoundsPath = "Sounds.json";
-    private const string ScriptPath = "Script.json";
     private const string RegionsPath = "Regions.json";
     private const string InfoPath = "Info.json";
     private const string EnvironmentPath = "Environment.json";
@@ -138,7 +137,6 @@ namespace Launcher.Services
         Doodads = DeserializeFromFile<MapDoodads, MapDoodadsDto>(Path.Combine(mapDataRootFolder, DoodadsPath)),
         Units = DeserializeFromFile<MapUnits, MapUnitsDto>(Path.Combine(mapDataRootFolder, UnitsPath)),
         Triggers = DeserializeFromFile<MapTriggers, MapTriggersDto>(Path.Combine(mapDataRootFolder, TriggersPath)),
-        Script = File.ReadAllText(Path.Combine(mapDataRootFolder, ScriptPath))
       };
 
       var builder = new MapBuilder(map);

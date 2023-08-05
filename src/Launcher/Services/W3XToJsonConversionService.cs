@@ -54,7 +54,6 @@ namespace Launcher.Services
     private const string ImportedFilesPath = "ImportedFiles.json";
     private const string UnitsPath = "Units.json";
     private const string SoundsPath = "Sounds.json";
-    private const string ScriptPath = "Script.json";
     private const string RegionsPath = "Regions.json";
     private const string InfoPath = "Info.json";
     private const string EnvironmentPath = "Environment.json";
@@ -88,7 +87,6 @@ namespace Launcher.Services
       SerializeAndWrite<UnitObjectData, MapUnitObjectDataDto>(map.UnitObjectData, outputFolderPath, UnitObjectDataPath);
       SerializeAndWrite<UpgradeObjectData, MapUpgradeObjectDataDto>(map.UpgradeObjectData, outputFolderPath, UpgradeObjectDataPath);
       SerializeAndWrite<MapTriggers, MapTriggersDto>(map.Triggers, outputFolderPath, TriggersPath);
-      SerializeAndWrite(map.Script, outputFolderPath, ScriptPath);
     }
     
     /// <summary>
