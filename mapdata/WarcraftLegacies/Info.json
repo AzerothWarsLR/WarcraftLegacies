@@ -8,10 +8,22 @@
   "MapDescription": "TRIGSTR_15407",
   "RecommendedPlayers": "TRIGSTR_15406",
   "CameraBounds": {
-    "BottomLeft": {},
-    "TopRight": {},
-    "TopLeft": {},
-    "BottomRight": {}
+    "BottomLeft": {
+      "X": -24064,
+      "Y": -32000
+    },
+    "TopRight": {
+      "X": 23296,
+      "Y": 24576
+    },
+    "TopLeft": {
+      "X": -24064,
+      "Y": 24576
+    },
+    "BottomRight": {
+      "X": 23296,
+      "Y": -32000
+    }
   },
   "CameraBoundsComplements": {
     "Right": 6,
