@@ -45,12 +45,12 @@ namespace Launcher.Services
       Directory.CreateDirectory(launchSettings.OutputFolderPath);
       
       var map = mapBuilder.Map;
-      ConfigureControlPointData(map);
+      // ConfigureControlPointData(map); Todo: put this back
       if (launch)
         SetTestPlayerSlot(map, launchSettings.TestingPlayerSlot);
       SetMapTitles(map, mapSettings.Version);
 
-      // Set debug options if necessary, configure compiler
+      //Set debug options if necessary, configure compiler
       const string csc = Debug ? "-debug -define:DEBUG" : null;
       var csproj = Directory.EnumerateFiles(projectFolderPath, "*.csproj", SearchOption.TopDirectoryOnly).Single();
       var compiler = new Compiler(csproj, launchSettings.OutputFolderPath, string.Empty, null!,
@@ -63,7 +63,7 @@ namespace Launcher.Services
         IsPreventDebugObject = true,
         IsCommentsDisabled = !Debug
       };
-
+      
       // Collect required paths and compile
       var coreSystemFiles = CoreSystemProvider.GetCoreSystemFiles();
       var blizzardJ = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments),
@@ -73,7 +73,7 @@ namespace Launcher.Services
       var mapScriptBuilder = new MapScriptBuilder();
       mapScriptBuilder.SetDefaultOptionsForCSharpLua();
       mapScriptBuilder.ForceGenerateGlobalDestructableVariable = false;
-
+      
       var compileResult = map.CompileScript(compiler, mapScriptBuilder, coreSystemFiles, blizzardJ, commonJ);
 
       // If compilation failed, output an error
