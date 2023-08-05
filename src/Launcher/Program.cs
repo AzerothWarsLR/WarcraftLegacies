@@ -12,14 +12,6 @@ namespace Launcher
 {
   internal static class Program
   {
-    // Warcraft III
-    private const string GraphicsApi = "Direct3D9";
-#if DEBUG
-    private const bool Debug = true;
-#else
-		private const bool Debug = false;
-#endif
-
     /// <summary>
     ///   Entry point for the program.
     /// </summary>
@@ -51,11 +43,13 @@ namespace Launcher
           break;
         case LaunchMode.Test:
           sourceCodeProjectFolderPath = args[2];
-          new MapBuilderService().Build(baseMapPath, sourceCodeProjectFolderPath, true, config);
+          var mapBuilderFromMapData = new MapDataToW3XConversionService(mapper, new JsonModifierProvider()).Convert(Path.Combine(launchSettings.MapDataFolderPath, mapSettings.Name));
+          new MapBuilderService().Build(mapBuilderFromMapData, sourceCodeProjectFolderPath, true, config);
           break;
         case LaunchMode.JsonToW3X:
-          new MapDataToW3XConversionService(mapper, new JsonModifierProvider()).Convert(Path.Combine(launchSettings.MapDataFolderPath, mapSettings.Name),
-            Path.Combine(launchSettings.MapFolderPath, $"{mapSettings.Name}.w3x"));
+          sourceCodeProjectFolderPath = args[2];
+          var mapBuilderFromMapData2 = new MapDataToW3XConversionService(mapper, new JsonModifierProvider()).Convert(Path.Combine(launchSettings.MapDataFolderPath, mapSettings.Name));
+          new MapBuilderService().Build(mapBuilderFromMapData2, sourceCodeProjectFolderPath, true, config);
           break;
         case LaunchMode.W3XToJson:
           new W3XToMapDataConversionService(mapper).Convert(baseMapPath, Path.Combine(launchSettings.MapDataFolderPath, mapSettings.Name));

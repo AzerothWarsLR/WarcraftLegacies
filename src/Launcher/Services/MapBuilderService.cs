@@ -12,6 +12,7 @@ using War3Net.Build;
 using War3Net.Build.Extensions;
 using War3Net.Build.Info;
 using War3Net.IO.Mpq;
+using CoreSystemProvider = CSharpLua.CoreSystem.CoreSystemProvider;
 
 namespace Launcher.Services
 {
@@ -29,22 +30,26 @@ namespace Launcher.Services
 
     public void Build(string baseMapPath, string projectFolderPath, bool launch, IConfiguration config)
     {
+      var map = Map.Open(baseMapPath);
+      var builder = new MapBuilder(map);
+      builder.AddFiles(baseMapPath, "*", SearchOption.AllDirectories);
+      Build(new MapBuilder(map), projectFolderPath, launch, config);
+    }
+    
+    public void Build(MapBuilder mapBuilder, string projectFolderPath, bool launch, IConfiguration config)
+    {
       var launchSettings = config.GetRequiredSection(nameof(LaunchSettings)).Get<LaunchSettings>();
       var mapSettings = config.GetRequiredSection(nameof(MapSettings)).Get<MapSettings>();
-
-      // Ensure these folders exist
+      
       Directory.CreateDirectory(launchSettings.AssetsFolderPath);
       Directory.CreateDirectory(launchSettings.OutputFolderPath);
-
-      // Load existing map data
-      var map = Map.Open(baseMapPath);
+      
+      var map = mapBuilder.Map;
       ConfigureControlPointData(map);
       if (launch)
         SetTestPlayerSlot(map, launchSettings.TestingPlayerSlot);
       SetMapTitles(map, mapSettings.Version);
       var builder = new MapBuilder(map);
-      builder.AddFiles(baseMapPath, "*", SearchOption.AllDirectories);
-      builder.AddFiles(launchSettings.AssetsFolderPath, "*", SearchOption.AllDirectories);
 
       // Set debug options if necessary, configure compiler
       const string csc = Debug ? "-debug -define:DEBUG" : null;

@@ -15,7 +15,6 @@ using War3Net.Build.Info;
 using War3Net.Build.Object;
 using War3Net.Build.Script;
 using War3Net.Build.Widget;
-using War3Net.IO.Mpq;
 
 namespace Launcher.Services
 {
@@ -27,20 +26,10 @@ namespace Launcher.Services
     private readonly IMapper _mapper;
     
     private readonly JsonSerializerOptions _jsonSerializerOptions;
-    
-    private readonly MpqArchiveCreateOptions _archiveCreateOptions = new()
-    {
-      BlockSize = 3,
-      AttributesCreateMode = MpqFileCreateMode.Overwrite,
-      ListFileCreateMode = MpqFileCreateMode.Overwrite
-    };
-
-    private readonly JsonModifierProvider _jsonModifierProvider;
 
     public MapDataToW3XConversionService(IMapper mapper, JsonModifierProvider jsonModifierProvider)
     {
       _mapper = mapper;
-      _jsonModifierProvider = jsonModifierProvider;
       _jsonSerializerOptions = new()
       {
         IgnoreReadOnlyProperties = true,
@@ -48,7 +37,7 @@ namespace Launcher.Services
         WriteIndented = true,
         TypeInfoResolver = new DefaultJsonTypeInfoResolver
         {
-          Modifiers = { _jsonModifierProvider.CastModificationSets }
+          Modifiers = { jsonModifierProvider.CastModificationSets }
         },
         Converters = { new ColorJsonConverter() }
       };
@@ -87,7 +76,7 @@ namespace Launcher.Services
     /// <summary>
     /// Converts the provided JSON data into a Warcraft 3 map and saves it in the specified folder.
     /// </summary>
-    public void Convert(string mapDataRootFolder, string outputFilePath)
+    public MapBuilder Convert(string mapDataRootFolder)
     {
       var map = new Map
       {
@@ -119,15 +108,10 @@ namespace Launcher.Services
         UnitSkinObjectData = DeserializeFromFile<UnitObjectData, MapUnitObjectDataDto>(Path.Combine(mapDataRootFolder, UnitSkinObjectDataPath)),
         UpgradeSkinObjectData = DeserializeFromFile<UpgradeObjectData, MapUpgradeObjectDataDto>(Path.Combine(mapDataRootFolder, UpgradeSkinObjectDataPath)),
       };
-      
-      var unitObjectData = map.UnitSkinObjectData;
-      foreach (var newUnit in unitObjectData.NewUnits)
-      foreach (var mod in newUnit.Modifications)
-        Console.WriteLine(mod.Value);
 
       var builder = new MapBuilder(map);
       builder.AddFiles($@"{mapDataRootFolder}\{ImportsPath}");
-      builder.Build(outputFilePath, _archiveCreateOptions);
+      return builder;
     }
 
     private TReturn DeserializeFromFile<TReturn, TDataTransferObject>(string filePath)
