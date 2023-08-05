@@ -1,13 +1,12 @@
 ﻿#nullable enable
-using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Text.Json;
 using System.Text.Json.Serialization.Metadata;
 using AutoMapper;
 using Launcher.DataTransferObjects;
 using Launcher.Extensions;
+using Launcher.JsonConverters;
 using War3Net.Build;
 using War3Net.Build.Audio;
 using War3Net.Build.Environment;
@@ -72,7 +71,8 @@ namespace Launcher.Services
       TypeInfoResolver = new DefaultJsonTypeInfoResolver
       {
         Modifiers = { CastModificationSets }
-      }
+      },
+      Converters = { new ColorJsonConverter() }
     };
     
     private readonly MpqArchiveCreateOptions _archiveCreateOptions = new()
@@ -135,7 +135,7 @@ namespace Launcher.Services
         TriggerStrings = DeserializeFromFile<MapTriggerStrings, MapTriggerStringsDto>(Path.Combine(mapDataRootFolder, TriggerStringsPath)),
         Doodads = DeserializeFromFile<MapDoodads, MapDoodadsDto>(Path.Combine(mapDataRootFolder, DoodadsPath)),
         Units = DeserializeFromFile<MapUnits, MapUnitsDto>(Path.Combine(mapDataRootFolder, UnitsPath)),
-        Triggers = DeserializeFromFile<MapTriggers, MapTriggersDto>(Path.Combine(mapDataRootFolder, UnitsPath)),
+        Triggers = DeserializeFromFile<MapTriggers, MapTriggersDto>(Path.Combine(mapDataRootFolder, TriggersPath)),
         Script = File.ReadAllText(Path.Combine(mapDataRootFolder, ScriptPath))
       };
 

@@ -1,11 +1,9 @@
-﻿using War3Net.Build.Environment;
-
-namespace Launcher.DataTransferObjects
+﻿namespace Launcher.DataTransferObjects
 {
-  public class MapRegionsDto
+  public sealed class MapRegionsDto
   {
     public int FormatVersion { get; set; }
     public bool Protected { get; set; }
-    public Region[] Regions { get; set; }
+    public RegionDto[] Regions { get; set; }
   }
 }

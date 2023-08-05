@@ -2,7 +2,9 @@
 using System.Text.Json;
 using AutoMapper;
 using Launcher.DataTransferObjects;
+using Launcher.JsonConverters;
 using War3Net.Build;
+using War3Net.Build.Environment;
 using War3Net.Build.Widget;
 using JsonSerializer = System.Text.Json.JsonSerializer;
 
@@ -18,7 +20,8 @@ namespace Launcher.Services
     private readonly JsonSerializerOptions _jsonSerializerOptions = new()
     {
       IgnoreReadOnlyProperties = true,
-      WriteIndented = true
+      WriteIndented = true,
+      Converters = { new ColorJsonConverter() }
     };
 
     public W3XToJsonConversionService(IMapper mapper)
@@ -57,10 +60,10 @@ namespace Launcher.Services
       SerializeAndWrite<MapDoodads, MapDoodadsDto>(map.Doodads, outputFolderPath, DoodadsPath);
       SerializeAndWrite(map.Environment, outputFolderPath, EnvironmentPath);
       SerializeAndWrite(map.Info, outputFolderPath, InfoPath);
-      SerializeAndWrite(map.Regions, outputFolderPath, RegionsPath);
+      SerializeAndWrite<MapRegions, MapRegionsDto>(map.Regions, outputFolderPath, RegionsPath);
       SerializeAndWrite(map.Script, outputFolderPath, ScriptPath);
       SerializeAndWrite(map.Sounds, outputFolderPath, SoundsPath);
-      SerializeAndWrite(map.Units, outputFolderPath, UnitsPath);
+      SerializeAndWrite<MapUnits, MapUnitsDto>(map.Units, outputFolderPath, UnitsPath);
       SerializeAndWrite(map.ImportedFiles, outputFolderPath, ImportedFilesPath);
       SerializeAndWrite(map.PathingMap, outputFolderPath, PathingMapPath);
       SerializeAndWrite(map.PreviewIcons, outputFolderPath, PreviewIconsPath);

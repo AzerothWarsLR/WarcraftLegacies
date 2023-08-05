@@ -11,7 +11,12 @@
       "CreationNumber": 0,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 0
+      }
     },
     {
       "Left": 17888,
@@ -22,7 +27,12 @@
       "CreationNumber": 1,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": -18272,
@@ -33,7 +43,12 @@
       "CreationNumber": 2,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": -16672,
@@ -44,7 +59,12 @@
       "CreationNumber": 3,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": -9152,
@@ -55,7 +75,12 @@
       "CreationNumber": 9,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 0
+      }
     },
     {
       "Left": 8064,
@@ -66,7 +91,12 @@
       "CreationNumber": 10,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 0
+      }
     },
     {
       "Left": -3680,
@@ -77,7 +107,12 @@
       "CreationNumber": 11,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 0,
+        "G": 128,
+        "B": 128
+      }
     },
     {
       "Left": 8608,
@@ -88,7 +123,12 @@
       "CreationNumber": 12,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 0,
+        "G": 255,
+        "B": 255
+      }
     },
     {
       "Left": -4160,
@@ -99,7 +139,12 @@
       "CreationNumber": 14,
       "WeatherType": 1936477779,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 128,
+        "B": 128
+      }
     },
     {
       "Left": -10656,
@@ -110,7 +155,12 @@
       "CreationNumber": 15,
       "WeatherType": 1936477779,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 16192,
@@ -121,7 +171,12 @@
       "CreationNumber": 17,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 0
+      }
     },
     {
       "Left": -12480,
@@ -132,7 +187,12 @@
       "CreationNumber": 18,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 8608,
@@ -143,7 +203,12 @@
       "CreationNumber": 19,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 255,
+        "B": 0
+      }
     },
     {
       "Left": 15840,
@@ -154,7 +219,12 @@
       "CreationNumber": 24,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 255
+      }
     },
     {
       "Left": 4096,
@@ -165,7 +235,12 @@
       "CreationNumber": 25,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 255
+      }
     },
     {
       "Left": 16096,
@@ -176,7 +251,12 @@
       "CreationNumber": 27,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 0
+      }
     },
     {
       "Left": -1248,
@@ -187,7 +267,12 @@
       "CreationNumber": 28,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 0,
+        "G": 255,
+        "B": 255
+      }
     },
     {
       "Left": 352,
@@ -198,7 +283,12 @@
       "CreationNumber": 30,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": -18720,
@@ -209,7 +299,12 @@
       "CreationNumber": 31,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": -17408,
@@ -220,7 +315,12 @@
       "CreationNumber": 32,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 7296,
@@ -231,7 +331,12 @@
       "CreationNumber": 35,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": -12416,
@@ -242,7 +347,12 @@
       "CreationNumber": 36,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 16736,
@@ -253,7 +363,12 @@
       "CreationNumber": 37,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": -2272,
@@ -264,7 +379,12 @@
       "CreationNumber": 38,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 0,
+        "B": 0
+      }
     },
     {
       "Left": 4608,
@@ -275,7 +395,12 @@
       "CreationNumber": 40,
       "WeatherType": 1936215635,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 212,
+        "G": 94,
+        "B": 25
+      }
     },
     {
       "Left": 5760,
@@ -286,7 +411,12 @@
       "CreationNumber": 42,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 1536,
@@ -297,7 +427,12 @@
       "CreationNumber": 43,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 0,
+        "G": 255,
+        "B": 255
+      }
     },
     {
       "Left": 2848,
@@ -308,7 +443,12 @@
       "CreationNumber": 44,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 0
+      }
     },
     {
       "Left": 5600,
@@ -319,7 +459,12 @@
       "CreationNumber": 45,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 7296,
@@ -330,7 +475,12 @@
       "CreationNumber": 46,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 16000,
@@ -341,7 +491,12 @@
       "CreationNumber": 47,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 255,
+        "B": 0
+      }
     },
     {
       "Left": 16480,
@@ -352,7 +507,12 @@
       "CreationNumber": 48,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 16608,
@@ -363,7 +523,12 @@
       "CreationNumber": 49,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 20128,
@@ -374,7 +539,12 @@
       "CreationNumber": 50,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 10624,
@@ -385,7 +555,12 @@
       "CreationNumber": 51,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 0
+      }
     },
     {
       "Left": 2208,
@@ -396,7 +571,12 @@
       "CreationNumber": 53,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": -4480,
@@ -407,7 +587,12 @@
       "CreationNumber": 55,
       "WeatherType": 1936477779,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 0
+      }
     },
     {
       "Left": -6976,
@@ -418,7 +603,12 @@
       "CreationNumber": 56,
       "WeatherType": 1936477779,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 255,
+        "B": 255
+      }
     },
     {
       "Left": 9792,
@@ -429,7 +619,12 @@
       "CreationNumber": 58,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": -17600,
@@ -440,7 +635,12 @@
       "CreationNumber": 60,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 704,
@@ -451,7 +651,12 @@
       "CreationNumber": 61,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": -3520,
@@ -462,7 +667,12 @@
       "CreationNumber": 62,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 14432,
@@ -473,7 +683,12 @@
       "CreationNumber": 63,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 12896,
@@ -484,7 +699,12 @@
       "CreationNumber": 64,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 128
+      }
     },
     {
       "Left": -12992,
@@ -495,7 +715,12 @@
       "CreationNumber": 66,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": -17344,
@@ -506,7 +731,12 @@
       "CreationNumber": 72,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": -9216,
@@ -517,7 +747,12 @@
       "CreationNumber": 73,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": -9824,
@@ -528,7 +763,12 @@
       "CreationNumber": 75,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 128,
+        "B": 128
+      }
     },
     {
       "Left": 6368,
@@ -539,7 +779,12 @@
       "CreationNumber": 76,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 255,
+        "B": 0
+      }
     },
     {
       "Left": 11392,
@@ -550,7 +795,12 @@
       "CreationNumber": 77,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 255,
+        "B": 0
+      }
     },
     {
       "Left": 15968,
@@ -561,7 +811,12 @@
       "CreationNumber": 78,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 255,
+        "B": 0
+      }
     },
     {
       "Left": 15328,
@@ -572,7 +827,12 @@
       "CreationNumber": 79,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 255,
+        "B": 0
+      }
     },
     {
       "Left": 7136,
@@ -583,7 +843,12 @@
       "CreationNumber": 80,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 255,
+        "B": 0
+      }
     },
     {
       "Left": 6560,
@@ -594,7 +859,12 @@
       "CreationNumber": 81,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 255,
+        "B": 0
+      }
     },
     {
       "Left": 9792,
@@ -605,7 +875,12 @@
       "CreationNumber": 82,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 255,
+        "B": 0
+      }
     },
     {
       "Left": 16384,
@@ -616,7 +891,12 @@
       "CreationNumber": 83,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 17216,
@@ -627,7 +907,12 @@
       "CreationNumber": 84,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 16288,
@@ -638,7 +923,12 @@
       "CreationNumber": 85,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 15136,
@@ -649,7 +939,12 @@
       "CreationNumber": 86,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": -1024,
@@ -660,7 +955,12 @@
       "CreationNumber": 87,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 7872,
@@ -671,7 +971,12 @@
       "CreationNumber": 96,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": -12096,
@@ -682,7 +987,12 @@
       "CreationNumber": 97,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": -1088,
@@ -693,7 +1003,12 @@
       "CreationNumber": 98,
       "WeatherType": 1936215635,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 192,
+        "G": 192,
+        "B": 192
+      }
     },
     {
       "Left": 10880,
@@ -704,7 +1019,12 @@
       "CreationNumber": 99,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 13696,
@@ -715,7 +1035,12 @@
       "CreationNumber": 102,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 128
+      }
     },
     {
       "Left": 12896,
@@ -726,7 +1051,12 @@
       "CreationNumber": 103,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 7968,
@@ -737,7 +1067,12 @@
       "CreationNumber": 104,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 10112,
@@ -748,7 +1083,12 @@
       "CreationNumber": 105,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 8096,
@@ -759,7 +1099,12 @@
       "CreationNumber": 106,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": -8288,
@@ -770,7 +1115,12 @@
       "CreationNumber": 107,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 0,
+        "G": 255,
+        "B": 0
+      }
     },
     {
       "Left": 18432,
@@ -781,7 +1131,12 @@
       "CreationNumber": 116,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 0,
+        "G": 128,
+        "B": 128
+      }
     },
     {
       "Left": 6592,
@@ -792,7 +1147,12 @@
       "CreationNumber": 117,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 0
+      }
     },
     {
       "Left": 14656,
@@ -803,7 +1163,12 @@
       "CreationNumber": 119,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": -12352,
@@ -814,7 +1179,12 @@
       "CreationNumber": 123,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 128
+      }
     },
     {
       "Left": 22144,
@@ -825,7 +1195,12 @@
       "CreationNumber": 124,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": -20864,
@@ -836,7 +1211,12 @@
       "CreationNumber": 125,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": -3392,
@@ -847,7 +1227,12 @@
       "CreationNumber": 128,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 8896,
@@ -858,7 +1243,12 @@
       "CreationNumber": 130,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": -10592,
@@ -869,7 +1259,12 @@
       "CreationNumber": 131,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 11136,
@@ -880,7 +1275,12 @@
       "CreationNumber": 148,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 0
+      }
     },
     {
       "Left": 13600,
@@ -891,7 +1291,12 @@
       "CreationNumber": 149,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 3584,
@@ -902,7 +1307,12 @@
       "CreationNumber": 151,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 18144,
@@ -913,7 +1323,12 @@
       "CreationNumber": 152,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 4160,
@@ -924,7 +1339,12 @@
       "CreationNumber": 170,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 255
+      }
     },
     {
       "Left": 4768,
@@ -935,7 +1355,12 @@
       "CreationNumber": 171,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 255
+      }
     },
     {
       "Left": 16544,
@@ -946,7 +1371,12 @@
       "CreationNumber": 172,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 255
+      }
     },
     {
       "Left": 17376,
@@ -957,7 +1387,12 @@
       "CreationNumber": 173,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 255
+      }
     },
     {
       "Left": -10592,
@@ -968,7 +1403,12 @@
       "CreationNumber": 174,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 15616,
@@ -979,7 +1419,12 @@
       "CreationNumber": 175,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 4992,
@@ -990,7 +1435,12 @@
       "CreationNumber": 177,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": -2432,
@@ -1001,7 +1451,12 @@
       "CreationNumber": 178,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": -8480,
@@ -1012,7 +1467,12 @@
       "CreationNumber": 179,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 14656,
@@ -1023,7 +1483,12 @@
       "CreationNumber": 180,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 0
+      }
     },
     {
       "Left": 18080,
@@ -1034,7 +1499,12 @@
       "CreationNumber": 181,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 0
+      }
     },
     {
       "Left": 18304,
@@ -1045,7 +1515,12 @@
       "CreationNumber": 183,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 0
+      }
     },
     {
       "Left": 17856,
@@ -1056,7 +1531,12 @@
       "CreationNumber": 185,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 0
+      }
     },
     {
       "Left": -10304,
@@ -1067,7 +1547,12 @@
       "CreationNumber": 229,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 255,
+        "B": 0
+      }
     },
     {
       "Left": -16544,
@@ -1078,7 +1563,12 @@
       "CreationNumber": 231,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": -9120,
@@ -1089,7 +1579,12 @@
       "CreationNumber": 232,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": -10496,
@@ -1100,7 +1595,12 @@
       "CreationNumber": 233,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 3456,
@@ -1111,7 +1611,12 @@
       "CreationNumber": 239,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": -10688,
@@ -1122,7 +1627,12 @@
       "CreationNumber": 240,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 255
+      }
     },
     {
       "Left": -20576,
@@ -1133,7 +1643,12 @@
       "CreationNumber": 241,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 255
+      }
     },
     {
       "Left": -14688,
@@ -1144,7 +1659,12 @@
       "CreationNumber": 242,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": -21408,
@@ -1155,7 +1675,12 @@
       "CreationNumber": 243,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 255
+      }
     },
     {
       "Left": -17856,
@@ -1166,7 +1691,12 @@
       "CreationNumber": 244,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 255
+      }
     },
     {
       "Left": -19424,
@@ -1177,7 +1707,12 @@
       "CreationNumber": 245,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 255
+      }
     },
     {
       "Left": -16448,
@@ -1188,7 +1723,12 @@
       "CreationNumber": 246,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 255
+      }
     },
     {
       "Left": -14208,
@@ -1199,7 +1739,12 @@
       "CreationNumber": 247,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 255
+      }
     },
     {
       "Left": -14272,
@@ -1210,7 +1755,12 @@
       "CreationNumber": 248,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 255
+      }
     },
     {
       "Left": -12480,
@@ -1221,7 +1771,12 @@
       "CreationNumber": 249,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 255
+      }
     },
     {
       "Left": -20768,
@@ -1232,7 +1787,12 @@
       "CreationNumber": 250,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 255
+      }
     },
     {
       "Left": -15616,
@@ -1243,7 +1803,12 @@
       "CreationNumber": 251,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 255
+      }
     },
     {
       "Left": -17408,
@@ -1254,7 +1819,12 @@
       "CreationNumber": 252,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 255
+      }
     },
     {
       "Left": -23808,
@@ -1265,7 +1835,12 @@
       "CreationNumber": 253,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 255
+      }
     },
     {
       "Left": -9856,
@@ -1276,7 +1851,12 @@
       "CreationNumber": 254,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 255
+      }
     },
     {
       "Left": -8704,
@@ -1287,7 +1867,12 @@
       "CreationNumber": 255,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 255
+      }
     },
     {
       "Left": -12256,
@@ -1298,7 +1883,12 @@
       "CreationNumber": 256,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 255
+      }
     },
     {
       "Left": -8576,
@@ -1309,7 +1899,12 @@
       "CreationNumber": 257,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 255
+      }
     },
     {
       "Left": -5952,
@@ -1320,7 +1915,12 @@
       "CreationNumber": 258,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 255
+      }
     },
     {
       "Left": -3200,
@@ -1331,7 +1931,12 @@
       "CreationNumber": 259,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 255
+      }
     },
     {
       "Left": -17760,
@@ -1342,7 +1947,12 @@
       "CreationNumber": 260,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 255
+      }
     },
     {
       "Left": -11904,
@@ -1353,7 +1963,12 @@
       "CreationNumber": 261,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 255
+      }
     },
     {
       "Left": -9792,
@@ -1364,7 +1979,12 @@
       "CreationNumber": 262,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 255
+      }
     },
     {
       "Left": -19424,
@@ -1375,7 +1995,12 @@
       "CreationNumber": 263,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 255
+      }
     },
     {
       "Left": -21344,
@@ -1386,7 +2011,12 @@
       "CreationNumber": 264,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 255
+      }
     },
     {
       "Left": -19072,
@@ -1397,7 +2027,12 @@
       "CreationNumber": 265,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 255
+      }
     },
     {
       "Left": 16256,
@@ -1408,7 +2043,12 @@
       "CreationNumber": 266,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 13056,
@@ -1419,7 +2059,12 @@
       "CreationNumber": 267,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 255
+      }
     },
     {
       "Left": 15968,
@@ -1430,7 +2075,12 @@
       "CreationNumber": 268,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 255
+      }
     },
     {
       "Left": 19008,
@@ -1441,7 +2091,12 @@
       "CreationNumber": 269,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 255
+      }
     },
     {
       "Left": 12928,
@@ -1452,7 +2107,12 @@
       "CreationNumber": 270,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 255
+      }
     },
     {
       "Left": 9792,
@@ -1463,7 +2123,12 @@
       "CreationNumber": 271,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 255
+      }
     },
     {
       "Left": 20256,
@@ -1474,7 +2139,12 @@
       "CreationNumber": 272,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 255
+      }
     },
     {
       "Left": 6848,
@@ -1485,7 +2155,12 @@
       "CreationNumber": 273,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 255
+      }
     },
     {
       "Left": 4544,
@@ -1496,7 +2171,12 @@
       "CreationNumber": 274,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 255
+      }
     },
     {
       "Left": 16224,
@@ -1507,7 +2187,12 @@
       "CreationNumber": 275,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 255
+      }
     },
     {
       "Left": 15168,
@@ -1518,7 +2203,12 @@
       "CreationNumber": 276,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 255
+      }
     },
     {
       "Left": 5344,
@@ -1529,7 +2219,12 @@
       "CreationNumber": 277,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 255
+      }
     },
     {
       "Left": 8320,
@@ -1540,7 +2235,12 @@
       "CreationNumber": 278,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 255
+      }
     },
     {
       "Left": 8576,
@@ -1551,7 +2251,12 @@
       "CreationNumber": 279,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 255
+      }
     },
     {
       "Left": 10432,
@@ -1562,7 +2267,12 @@
       "CreationNumber": 280,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 255
+      }
     },
     {
       "Left": 12128,
@@ -1573,7 +2283,12 @@
       "CreationNumber": 281,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 255
+      }
     },
     {
       "Left": 13728,
@@ -1584,7 +2299,12 @@
       "CreationNumber": 282,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 255
+      }
     },
     {
       "Left": 10336,
@@ -1595,7 +2315,12 @@
       "CreationNumber": 283,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 255
+      }
     },
     {
       "Left": 12128,
@@ -1606,7 +2331,12 @@
       "CreationNumber": 284,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 255
+      }
     },
     {
       "Left": 13504,
@@ -1617,7 +2347,12 @@
       "CreationNumber": 285,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 255
+      }
     },
     {
       "Left": 15296,
@@ -1628,7 +2363,12 @@
       "CreationNumber": 286,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 255
+      }
     },
     {
       "Left": 15232,
@@ -1639,7 +2379,12 @@
       "CreationNumber": 287,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 255
+      }
     },
     {
       "Left": 11200,
@@ -1650,7 +2395,12 @@
       "CreationNumber": 288,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 255
+      }
     },
     {
       "Left": 13600,
@@ -1661,7 +2411,12 @@
       "CreationNumber": 289,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 255
+      }
     },
     {
       "Left": 16256,
@@ -1672,7 +2427,12 @@
       "CreationNumber": 290,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 255
+      }
     },
     {
       "Left": 13600,
@@ -1683,7 +2443,12 @@
       "CreationNumber": 291,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 9792,
@@ -1694,7 +2459,12 @@
       "CreationNumber": 292,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 255
+      }
     },
     {
       "Left": 3104,
@@ -1705,7 +2475,12 @@
       "CreationNumber": 293,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 255
+      }
     },
     {
       "Left": 6624,
@@ -1716,7 +2491,12 @@
       "CreationNumber": 294,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 255
+      }
     },
     {
       "Left": 5696,
@@ -1727,7 +2507,12 @@
       "CreationNumber": 295,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 255
+      }
     },
     {
       "Left": 7680,
@@ -1738,7 +2523,12 @@
       "CreationNumber": 296,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 255
+      }
     },
     {
       "Left": 11968,
@@ -1749,7 +2539,12 @@
       "CreationNumber": 297,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 255
+      }
     },
     {
       "Left": 8224,
@@ -1760,7 +2555,12 @@
       "CreationNumber": 298,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 255
+      }
     },
     {
       "Left": 8704,
@@ -1771,7 +2571,12 @@
       "CreationNumber": 299,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 255
+      }
     },
     {
       "Left": 8672,
@@ -1782,7 +2587,12 @@
       "CreationNumber": 300,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 255
+      }
     },
     {
       "Left": 13600,
@@ -1793,7 +2603,12 @@
       "CreationNumber": 301,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 255
+      }
     },
     {
       "Left": 13408,
@@ -1804,7 +2619,12 @@
       "CreationNumber": 302,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 255
+      }
     },
     {
       "Left": 14912,
@@ -1815,7 +2635,12 @@
       "CreationNumber": 303,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 255
+      }
     },
     {
       "Left": 14944,
@@ -1826,7 +2651,12 @@
       "CreationNumber": 304,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 255
+      }
     },
     {
       "Left": 11712,
@@ -1837,7 +2667,12 @@
       "CreationNumber": 305,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 255
+      }
     },
     {
       "Left": 17952,
@@ -1848,7 +2683,12 @@
       "CreationNumber": 306,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 255
+      }
     },
     {
       "Left": 9504,
@@ -1859,7 +2699,12 @@
       "CreationNumber": 307,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 255
+      }
     },
     {
       "Left": 6688,
@@ -1870,7 +2715,12 @@
       "CreationNumber": 308,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 255
+      }
     },
     {
       "Left": 8320,
@@ -1881,7 +2731,12 @@
       "CreationNumber": 309,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 255
+      }
     },
     {
       "Left": 11680,
@@ -1892,7 +2747,12 @@
       "CreationNumber": 310,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 255
+      }
     },
     {
       "Left": 14432,
@@ -1903,7 +2763,12 @@
       "CreationNumber": 311,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 255
+      }
     },
     {
       "Left": 12608,
@@ -1914,7 +2779,12 @@
       "CreationNumber": 312,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 255
+      }
     },
     {
       "Left": 11296,
@@ -1925,7 +2795,12 @@
       "CreationNumber": 313,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 255
+      }
     },
     {
       "Left": 14720,
@@ -1936,7 +2811,12 @@
       "CreationNumber": 314,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 255
+      }
     },
     {
       "Left": 18048,
@@ -1947,7 +2827,12 @@
       "CreationNumber": 315,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 255
+      }
     },
     {
       "Left": -18528,
@@ -1958,7 +2843,12 @@
       "CreationNumber": 329,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 0,
+        "G": 255,
+        "B": 255
+      }
     },
     {
       "Left": -18784,
@@ -1969,7 +2859,12 @@
       "CreationNumber": 330,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 0,
+        "G": 255,
+        "B": 255
+      }
     },
     {
       "Left": -18912,
@@ -1980,7 +2875,12 @@
       "CreationNumber": 331,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 3616,
@@ -1991,7 +2891,12 @@
       "CreationNumber": 346,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 4416,
@@ -2002,7 +2907,12 @@
       "CreationNumber": 347,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": -5280,
@@ -2013,7 +2923,12 @@
       "CreationNumber": 348,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 8736,
@@ -2024,7 +2939,12 @@
       "CreationNumber": 354,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": -18720,
@@ -2035,7 +2955,12 @@
       "CreationNumber": 355,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": -5632,
@@ -2046,7 +2971,12 @@
       "CreationNumber": 360,
       "WeatherType": 1919697234,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 255
+      }
     },
     {
       "Left": 9248,
@@ -2057,7 +2987,12 @@
       "CreationNumber": 365,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 8576,
@@ -2068,7 +3003,12 @@
       "CreationNumber": 366,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 6048,
@@ -2079,7 +3019,12 @@
       "CreationNumber": 368,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 11904,
@@ -2090,7 +3035,12 @@
       "CreationNumber": 369,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 255,
+        "B": 0
+      }
     },
     {
       "Left": 6816,
@@ -2101,7 +3051,12 @@
       "CreationNumber": 370,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 13568,
@@ -2112,7 +3067,12 @@
       "CreationNumber": 371,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 255,
+        "B": 0
+      }
     },
     {
       "Left": 16576,
@@ -2123,7 +3083,12 @@
       "CreationNumber": 372,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 255,
+        "B": 0
+      }
     },
     {
       "Left": 13248,
@@ -2134,7 +3099,12 @@
       "CreationNumber": 373,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 18912,
@@ -2145,7 +3115,12 @@
       "CreationNumber": 374,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 5440,
@@ -2156,7 +3131,12 @@
       "CreationNumber": 375,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 20928,
@@ -2167,7 +3147,12 @@
       "CreationNumber": 376,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 17088,
@@ -2178,7 +3163,12 @@
       "CreationNumber": 377,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": -4224,
@@ -2189,7 +3179,12 @@
       "CreationNumber": 378,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": -128,
@@ -2200,7 +3195,12 @@
       "CreationNumber": 379,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 14432,
@@ -2211,7 +3211,12 @@
       "CreationNumber": 381,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 255,
+        "B": 0
+      }
     },
     {
       "Left": 3776,
@@ -2222,7 +3227,12 @@
       "CreationNumber": 382,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 3904,
@@ -2233,7 +3243,12 @@
       "CreationNumber": 383,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 4352,
@@ -2244,7 +3259,12 @@
       "CreationNumber": 384,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": -5440,
@@ -2255,7 +3275,12 @@
       "CreationNumber": 385,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 17984,
@@ -2266,7 +3291,12 @@
       "CreationNumber": 390,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 8928,
@@ -2277,7 +3307,12 @@
       "CreationNumber": 391,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 8608,
@@ -2288,7 +3323,12 @@
       "CreationNumber": 392,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 4608,
@@ -2299,7 +3339,12 @@
       "CreationNumber": 393,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": -21280,
@@ -2310,7 +3355,12 @@
       "CreationNumber": 396,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": -21376,
@@ -2321,7 +3371,12 @@
       "CreationNumber": 397,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": -16832,
@@ -2332,7 +3387,12 @@
       "CreationNumber": 398,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": -15552,
@@ -2343,7 +3403,12 @@
       "CreationNumber": 399,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 17248,
@@ -2354,7 +3419,12 @@
       "CreationNumber": 400,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 20832,
@@ -2365,7 +3435,12 @@
       "CreationNumber": 402,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 255,
+        "B": 0
+      }
     },
     {
       "Left": 10784,
@@ -2376,7 +3451,12 @@
       "CreationNumber": 403,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": -6016,
@@ -2387,7 +3467,12 @@
       "CreationNumber": 404,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": -16992,
@@ -2398,7 +3483,12 @@
       "CreationNumber": 408,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": -8608,
@@ -2409,7 +3499,12 @@
       "CreationNumber": 409,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 12544,
@@ -2420,7 +3515,12 @@
       "CreationNumber": 410,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": -960,
@@ -2431,7 +3531,12 @@
       "CreationNumber": 414,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 9952,
@@ -2442,7 +3547,12 @@
       "CreationNumber": 415,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": -8960,
@@ -2453,7 +3563,12 @@
       "CreationNumber": 416,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": -11008,
@@ -2464,7 +3579,12 @@
       "CreationNumber": 417,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 18816,
@@ -2475,7 +3595,12 @@
       "CreationNumber": 418,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 2144,
@@ -2486,7 +3611,12 @@
       "CreationNumber": 419,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": -7840,
@@ -2497,7 +3627,12 @@
       "CreationNumber": 420,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 8864,
@@ -2508,7 +3643,12 @@
       "CreationNumber": 421,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": -9248,
@@ -2519,7 +3659,12 @@
       "CreationNumber": 422,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 3808,
@@ -2530,7 +3675,12 @@
       "CreationNumber": 434,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 3232,
@@ -2541,7 +3691,12 @@
       "CreationNumber": 435,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": -15136,
@@ -2552,7 +3707,12 @@
       "CreationNumber": 437,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 3808,
@@ -2563,7 +3723,12 @@
       "CreationNumber": 438,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": -15712,
@@ -2574,7 +3739,12 @@
       "CreationNumber": 439,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": -16864,
@@ -2585,7 +3755,12 @@
       "CreationNumber": 443,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": -10304,
@@ -2596,7 +3771,12 @@
       "CreationNumber": 446,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": -20512,
@@ -2607,7 +3787,12 @@
       "CreationNumber": 449,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 18496,
@@ -2618,7 +3803,12 @@
       "CreationNumber": 452,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": -9888,
@@ -2629,7 +3819,12 @@
       "CreationNumber": 453,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 18208,
@@ -2640,7 +3835,12 @@
       "CreationNumber": 454,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 1120,
@@ -2651,7 +3851,12 @@
       "CreationNumber": 455,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": -9824,
@@ -2662,7 +3867,12 @@
       "CreationNumber": 457,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": -4416,
@@ -2673,7 +3883,12 @@
       "CreationNumber": 459,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": -928,
@@ -2684,7 +3899,12 @@
       "CreationNumber": 461,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 17472,
@@ -2695,7 +3915,12 @@
       "CreationNumber": 463,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 12896,
@@ -2706,7 +3931,12 @@
       "CreationNumber": 464,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 10240,
@@ -2717,7 +3947,12 @@
       "CreationNumber": 470,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 5120,
@@ -2728,7 +3963,12 @@
       "CreationNumber": 471,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 9376,
@@ -2739,7 +3979,12 @@
       "CreationNumber": 472,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 22848,
@@ -2750,7 +3995,12 @@
       "CreationNumber": 473,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 16512,
@@ -2761,7 +4011,12 @@
       "CreationNumber": 474,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 19168,
@@ -2772,7 +4027,12 @@
       "CreationNumber": 476,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 6272,
@@ -2783,7 +4043,12 @@
       "CreationNumber": 480,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 8480,
@@ -2794,7 +4059,12 @@
       "CreationNumber": 481,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 6624,
@@ -2805,7 +4075,12 @@
       "CreationNumber": 482,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 3968,
@@ -2816,7 +4091,12 @@
       "CreationNumber": 483,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 3392,
@@ -2827,7 +4107,12 @@
       "CreationNumber": 484,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 6432,
@@ -2838,7 +4123,12 @@
       "CreationNumber": 485,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 18592,
@@ -2849,7 +4139,12 @@
       "CreationNumber": 486,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 22176,
@@ -2860,7 +4155,12 @@
       "CreationNumber": 489,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": -9728,
@@ -2871,7 +4171,12 @@
       "CreationNumber": 491,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": -4480,
@@ -2882,7 +4187,12 @@
       "CreationNumber": 495,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 9312,
@@ -2893,7 +4203,12 @@
       "CreationNumber": 502,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": -3296,
@@ -2904,7 +4219,12 @@
       "CreationNumber": 508,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 0,
+        "G": 0,
+        "B": 255
+      }
     },
     {
       "Left": -2016,
@@ -2915,7 +4235,12 @@
       "CreationNumber": 509,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 0,
+        "G": 0,
+        "B": 255
+      }
     },
     {
       "Left": -4896,
@@ -2926,7 +4251,12 @@
       "CreationNumber": 510,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 0,
+        "G": 0,
+        "B": 255
+      }
     },
     {
       "Left": 704,
@@ -2937,7 +4267,12 @@
       "CreationNumber": 511,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 0,
+        "G": 0,
+        "B": 255
+      }
     },
     {
       "Left": -7104,
@@ -2948,7 +4283,12 @@
       "CreationNumber": 352,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 0,
+        "G": 128,
+        "B": 128
+      }
     },
     {
       "Left": -7104,
@@ -2959,7 +4299,12 @@
       "CreationNumber": 353,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": -640,
@@ -2970,7 +4315,12 @@
       "CreationNumber": 5,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 19584,
@@ -2981,7 +4331,12 @@
       "CreationNumber": 13,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 11488,
@@ -2992,7 +4347,12 @@
       "CreationNumber": 4,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 11840,
@@ -3003,7 +4363,12 @@
       "CreationNumber": 8,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 10432,
@@ -3014,7 +4379,12 @@
       "CreationNumber": 21,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 0,
+        "G": 255,
+        "B": 255
+      }
     },
     {
       "Left": 13952,
@@ -3025,7 +4395,12 @@
       "CreationNumber": 22,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 128,
+        "B": 128
+      }
     },
     {
       "Left": -832,
@@ -3036,7 +4411,12 @@
       "CreationNumber": 23,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 255
+      }
     },
     {
       "Left": -1632,
@@ -3047,7 +4427,12 @@
       "CreationNumber": 26,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 255
+      }
     },
     {
       "Left": -1536,
@@ -3058,7 +4443,12 @@
       "CreationNumber": 29,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 255
+      }
     },
     {
       "Left": -1824,
@@ -3069,7 +4459,12 @@
       "CreationNumber": 33,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 255
+      }
     },
     {
       "Left": 32,
@@ -3080,7 +4475,12 @@
       "CreationNumber": 34,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 255
+      }
     },
     {
       "Left": -1376,
@@ -3091,7 +4491,12 @@
       "CreationNumber": 39,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 255
+      }
     },
     {
       "Left": 352,
@@ -3102,7 +4507,12 @@
       "CreationNumber": 41,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 255
+      }
     },
     {
       "Left": -1216,
@@ -3113,7 +4523,12 @@
       "CreationNumber": 52,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 255
+      }
     },
     {
       "Left": 544,
@@ -3124,7 +4539,12 @@
       "CreationNumber": 54,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 0,
+        "G": 128,
+        "B": 128
+      }
     },
     {
       "Left": -800,
@@ -3135,7 +4555,12 @@
       "CreationNumber": 57,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": -13056,
@@ -3146,7 +4571,12 @@
       "CreationNumber": 59,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 9728,
@@ -3157,7 +4587,12 @@
       "CreationNumber": 65,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 8576,
@@ -3168,7 +4603,12 @@
       "CreationNumber": 67,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": -2400,
@@ -3179,7 +4619,12 @@
       "CreationNumber": 6,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 21664,
@@ -3190,7 +4635,12 @@
       "CreationNumber": 69,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 12192,
@@ -3201,7 +4651,12 @@
       "CreationNumber": 71,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 3680,
@@ -3212,7 +4667,12 @@
       "CreationNumber": 68,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 2112,
@@ -3223,7 +4683,12 @@
       "CreationNumber": 74,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": -14816,
@@ -3234,7 +4699,12 @@
       "CreationNumber": 88,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 10656,
@@ -3245,7 +4715,12 @@
       "CreationNumber": 89,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": -5792,
@@ -3256,7 +4731,12 @@
       "CreationNumber": 90,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": -3040,
@@ -3267,7 +4747,12 @@
       "CreationNumber": 91,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 14368,
@@ -3278,7 +4763,12 @@
       "CreationNumber": 92,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 15008,
@@ -3289,7 +4779,12 @@
       "CreationNumber": 93,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": -2464,
@@ -3300,7 +4795,12 @@
       "CreationNumber": 94,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 11168,
@@ -3311,7 +4811,12 @@
       "CreationNumber": 95,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 3392,
@@ -3322,7 +4827,12 @@
       "CreationNumber": 100,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 416,
@@ -3333,7 +4843,12 @@
       "CreationNumber": 70,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": -2048,
@@ -3344,7 +4859,12 @@
       "CreationNumber": 101,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 1536,
@@ -3355,7 +4875,12 @@
       "CreationNumber": 108,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": -960,
@@ -3366,7 +4891,12 @@
       "CreationNumber": 109,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 512,
@@ -3377,7 +4907,12 @@
       "CreationNumber": 110,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 12000,
@@ -3388,7 +4923,12 @@
       "CreationNumber": 111,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 255,
+        "B": 0
+      }
     },
     {
       "Left": 9696,
@@ -3399,7 +4939,12 @@
       "CreationNumber": 112,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": -14400,
@@ -3410,7 +4955,12 @@
       "CreationNumber": 113,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 1696,
@@ -3421,7 +4971,12 @@
       "CreationNumber": 114,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 255,
+        "B": 0
+      }
     },
     {
       "Left": -672,
@@ -3432,7 +4987,12 @@
       "CreationNumber": 115,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": -22464,
@@ -3443,7 +5003,12 @@
       "CreationNumber": 118,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": -18784,
@@ -3454,7 +5019,12 @@
       "CreationNumber": 120,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": -15808,
@@ -3465,7 +5035,12 @@
       "CreationNumber": 121,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 17344,
@@ -3476,7 +5051,12 @@
       "CreationNumber": 122,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 0,
+        "G": 255,
+        "B": 0
+      }
     },
     {
       "Left": 11008,
@@ -3487,7 +5067,12 @@
       "CreationNumber": 126,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 0,
+        "G": 255,
+        "B": 0
+      }
     },
     {
       "Left": -18144,
@@ -3498,7 +5083,12 @@
       "CreationNumber": 127,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 0,
+        "G": 255,
+        "B": 0
+      }
     },
     {
       "Left": -8576,
@@ -3509,7 +5099,12 @@
       "CreationNumber": 129,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 0,
+        "G": 255,
+        "B": 0
+      }
     },
     {
       "Left": -11296,
@@ -3520,7 +5115,12 @@
       "CreationNumber": 132,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": -12800,
@@ -3531,7 +5131,12 @@
       "CreationNumber": 133,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": -9472,
@@ -3542,7 +5147,12 @@
       "CreationNumber": 134,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": -11648,
@@ -3553,7 +5163,12 @@
       "CreationNumber": 135,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": -14464,
@@ -3564,7 +5179,12 @@
       "CreationNumber": 136,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": -13056,
@@ -3575,7 +5195,12 @@
       "CreationNumber": 137,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": -13184,
@@ -3586,7 +5211,12 @@
       "CreationNumber": 138,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 6848,
@@ -3597,7 +5227,12 @@
       "CreationNumber": 139,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": -10016,
@@ -3608,7 +5243,12 @@
       "CreationNumber": 140,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": -23872,
@@ -3619,7 +5259,12 @@
       "CreationNumber": 7,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 255,
+        "G": 0,
+        "B": 255
+      }
     },
     {
       "Left": -19456,
@@ -3630,7 +5275,12 @@
       "CreationNumber": 16,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": -20160,
@@ -3641,7 +5291,12 @@
       "CreationNumber": 20,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": -10688,
@@ -3652,7 +5307,12 @@
       "CreationNumber": 141,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": -24512,
@@ -3663,7 +5323,12 @@
       "CreationNumber": 142,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 0,
+        "G": 0,
+        "B": 0
+      }
     },
     {
       "Left": -4192,
@@ -3674,7 +5339,12 @@
       "CreationNumber": 143,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 1088,
@@ -3685,7 +5355,12 @@
       "CreationNumber": 144,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 864,
@@ -3696,7 +5371,12 @@
       "CreationNumber": 145,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 1824,
@@ -3707,7 +5387,12 @@
       "CreationNumber": 146,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 1888,
@@ -3718,7 +5403,12 @@
       "CreationNumber": 147,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": -544,
@@ -3729,7 +5419,12 @@
       "CreationNumber": 150,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 14176,
@@ -3740,7 +5435,12 @@
       "CreationNumber": 153,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": 832,
@@ -3751,7 +5451,12 @@
       "CreationNumber": 154,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     },
     {
       "Left": -96,
@@ -3762,7 +5467,12 @@
       "CreationNumber": 155,
       "WeatherType": 0,
       "AmbientSound": "",
-      "Color": {}
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
     }
   ]
 }

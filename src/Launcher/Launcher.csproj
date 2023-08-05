@@ -34,6 +34,7 @@
   </ItemGroup>
 
 
+
   <ProjectExtensions><VisualStudio><UserProperties appsettings_1trist_1json__JsonSchema="https://appsemble.app/api.json" /></VisualStudio></ProjectExtensions>
 
 </Project>
