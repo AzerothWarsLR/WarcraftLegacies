@@ -1,8 +1,10 @@
 ﻿using System;
+using System.CommandLine;
 using System.IO;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 using AutoMapper;
+using Launcher.Commands;
 using Launcher.Services;
 using Launcher.Settings;
 using Microsoft.Extensions.Configuration;
@@ -15,16 +17,20 @@ namespace Launcher
     /// <summary>
     ///   Entry point for the program.
     /// </summary>
-    private static void Main(string[] args)
+    private static int Main(string[] args)
     {
+      var rootCommand = new RootCommand();
+      rootCommand.RegisterPublishCommand();
+      return rootCommand.Invoke(args);
+
       var launchMode = Enum.Parse<LaunchMode>(args[0]);
       var baseMapPath = args.Length > 1 ? args[1] : "";
       var config = GetAppConfiguration();
       string sourceCodeProjectFolderPath;
-
+      
       var launchSettings = config.GetRequiredSection(nameof(LaunchSettings)).Get<LaunchSettings>();
       var mapSettings = config.GetRequiredSection(nameof(MapSettings)).Get<MapSettings>();
-
+      
       var autoMapperConfig = new AutoMapperConfigurationService().GetConfiguration();
       var mapper = new Mapper(autoMapperConfig);
       
@@ -36,10 +42,6 @@ namespace Launcher
           {
             IncludeCode = true
           });
-          break;
-        case LaunchMode.Publish:
-          sourceCodeProjectFolderPath = args[2];
-          new MapBuilderService().Build(baseMapPath, sourceCodeProjectFolderPath, false, config);
           break;
         case LaunchMode.Test:
           sourceCodeProjectFolderPath = args[2];
@@ -58,7 +60,7 @@ namespace Launcher
       }
     }
 
-    private static IConfiguration GetAppConfiguration()
+    public static IConfiguration GetAppConfiguration()
     {
       var userAppsettingsFileName = $"appsettings.{Environment.UserName}.json";
       var projectDir = Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory)?.Parent?.Parent;
