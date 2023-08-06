@@ -23,9 +23,8 @@ namespace MacroTools.ObjectiveSystem.Objectives.LegendBased
       target.ChangedOwner += OnTargetChangeOwner;
       target.PermanentlyDied += OnTargetDeath;
       target.OwningPlayer.GetPlayerData().PlayerJoinedTeam += OnFactionTeamJoin;
+      Position = new(GetUnitX(_target.Unit), GetUnitY(_target.Unit));
     }
-
-    public override Point Position => new(GetUnitX(_target.Unit), GetUnitY(_target.Unit));
 
     internal override void OnAdd(Faction whichFaction)
     {

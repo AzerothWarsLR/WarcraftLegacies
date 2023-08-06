@@ -19,9 +19,8 @@ namespace MacroTools.ObjectiveSystem.Objectives.ControlPointBased
       target.ChangedOwner += OnTargetChangeOwner;
       target.Owner.GetPlayerData().PlayerJoinedTeam += OnFactionTeamJoin;
       DisplaysPosition = true;
+      Position = new(GetUnitX(_target.Unit), GetUnitY(_target.Unit));
     }
-
-    public override Point Position => new(GetUnitX(_target.Unit), GetUnitY(_target.Unit));
 
     internal override void OnAdd(Faction whichFaction)
     {

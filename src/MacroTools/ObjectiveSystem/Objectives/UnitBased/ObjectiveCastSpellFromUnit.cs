@@ -29,9 +29,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
       TargetWidget = caster;
       DisplaysPosition = true;
       _caster = caster;
+      Position = _caster.GetPosition();
     }
-
-    /// <inheritdoc />
-    public override Point Position => _caster.GetPosition();
   }
 }

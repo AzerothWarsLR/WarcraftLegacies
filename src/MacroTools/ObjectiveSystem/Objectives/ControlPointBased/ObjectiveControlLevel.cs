@@ -14,9 +14,6 @@ namespace MacroTools.ObjectiveSystem.Objectives.ControlPointBased
     private readonly ControlPoint _target;
     private readonly int _requiredLevel;
 
-    /// <inheritdoc/>
-    public override Point Position => new(GetUnitX(_target.Unit), GetUnitY(_target.Unit));
-
     /// <summary>
     /// Initializes a new instance of the <see cref="ObjectiveControlLevel"/> class.
     /// </summary>
@@ -31,6 +28,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.ControlPointBased
       _target.ControlLevelChanged += (_, _) => Refresh();
       TargetWidget = target.Unit;
       DisplaysPosition = true;
+      Position = new(GetUnitX(_target.Unit), GetUnitY(_target.Unit));
     }
 
     internal override void OnAdd(FactionSystem.Faction whichFaction)

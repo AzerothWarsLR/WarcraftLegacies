@@ -10,9 +10,6 @@ namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
   /// </summary>
   public sealed class ObjectiveUnitIsDead : Objective
   {
-    /// <inheritdoc />
-    public override Point Position => new(GetUnitX(Target), GetUnitY(Target));
-
     /// <summary>
     /// The unit that has to die to complete the objective.
     /// </summary>
@@ -41,6 +38,8 @@ namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
       InitializeDescription();
       DisplaysPosition = IsUnitType(Target, UNIT_TYPE_STRUCTURE) ||
                          GetOwningPlayer(Target) == Player(PLAYER_NEUTRAL_AGGRESSIVE);
+      
+      Position = new(GetUnitX(Target), GetUnitY(Target));
     }
     
     private void InitializeDescription()

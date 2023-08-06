@@ -16,9 +16,8 @@ namespace MacroTools.ObjectiveSystem.Objectives.MetaBased
       Description = $"{questItemA.Description} or {questItemB.Description}";
       questItemA.ProgressChanged += OnChildProgressChanged;
       questItemB.ProgressChanged += OnChildProgressChanged;
+      Position = ObjectiveA.Position;
     }
-
-    public override Point Position => new(ObjectiveA.Position.X, ObjectiveB.Position.Y);
 
     internal override void OnAdd(FactionSystem.Faction whichFaction)
     {
