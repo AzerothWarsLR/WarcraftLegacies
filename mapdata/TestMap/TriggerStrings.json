@@ -1,0 +1,149 @@
+{
+  "Strings": [
+    {
+      "Key": 1,
+      "KeyPrecision": 1,
+      "Value": "MostlyBlankMap"
+    },
+    {
+      "EmptyLineCount": 1,
+      "Key": 2,
+      "KeyPrecision": 1,
+      "Value": "Any"
+    },
+    {
+      "EmptyLineCount": 1,
+      "Key": 3,
+      "KeyPrecision": 1,
+      "Value": "Nondescript"
+    },
+    {
+      "EmptyLineCount": 1,
+      "Key": 4,
+      "KeyPrecision": 1,
+      "Value": "Unknown"
+    },
+    {
+      "EmptyLineCount": 1,
+      "Key": 5,
+      "KeyPrecision": 1,
+      "Value": "Player 1"
+    },
+    {
+      "EmptyLineCount": 1,
+      "Key": 6,
+      "KeyPrecision": 1,
+      "Value": "Force 1"
+    },
+    {
+      "EmptyLineCount": 1,
+      "Key": 7,
+      "KeyPrecision": 1,
+      "Comment": " Abilities: A000 (Income (\u002B10)), Name (Name)",
+      "Value": "Income (\u002B10)"
+    },
+    {
+      "EmptyLineCount": 1,
+      "Key": 8,
+      "KeyPrecision": 1,
+      "Comment": " Abilities: A001 (Income (\u002B5)), Name (Name)",
+      "Value": "Income (\u002B5)"
+    },
+    {
+      "EmptyLineCount": 1,
+      "Key": 9,
+      "KeyPrecision": 1,
+      "Comment": " Abilities: A002 (Income (\u002B15)), Name (Name)",
+      "Value": "Income (\u002B15)"
+    },
+    {
+      "EmptyLineCount": 1,
+      "Key": 10,
+      "KeyPrecision": 2,
+      "Value": "Player 2"
+    },
+    {
+      "EmptyLineCount": 1,
+      "Key": 11,
+      "KeyPrecision": 2,
+      "Value": "Player 3"
+    },
+    {
+      "EmptyLineCount": 1,
+      "Key": 12,
+      "KeyPrecision": 2,
+      "Value": "Player 4"
+    },
+    {
+      "EmptyLineCount": 1,
+      "Key": 13,
+      "KeyPrecision": 2,
+      "Value": "Player 5"
+    },
+    {
+      "EmptyLineCount": 1,
+      "Key": 14,
+      "KeyPrecision": 2,
+      "Value": "Player 6"
+    },
+    {
+      "EmptyLineCount": 1,
+      "Key": 15,
+      "KeyPrecision": 2,
+      "Value": "Player 7"
+    },
+    {
+      "EmptyLineCount": 1,
+      "Key": 16,
+      "KeyPrecision": 2,
+      "Value": "Player 8"
+    },
+    {
+      "EmptyLineCount": 1,
+      "Key": 17,
+      "KeyPrecision": 2,
+      "Value": "Player 9"
+    },
+    {
+      "EmptyLineCount": 1,
+      "Key": 18,
+      "KeyPrecision": 2,
+      "Value": "Player 10"
+    },
+    {
+      "EmptyLineCount": 1,
+      "Key": 19,
+      "KeyPrecision": 2,
+      "Value": "Player 11"
+    },
+    {
+      "EmptyLineCount": 1,
+      "Key": 20,
+      "KeyPrecision": 2,
+      "Value": "Player 12"
+    },
+    {
+      "EmptyLineCount": 1,
+      "Key": 21,
+      "KeyPrecision": 2,
+      "Value": "Force 2"
+    },
+    {
+      "EmptyLineCount": 1,
+      "Key": 22,
+      "KeyPrecision": 2,
+      "Comment": " Units: u00X (Dummy Caster), Name (Name)",
+      "Value": "Dummy Caster"
+    },
+    {
+      "EmptyLineCount": 1,
+      "Key": 23,
+      "KeyPrecision": 2,
+      "Comment": " Units: n003 (Dummy), Name (Name)",
+      "Value": "Dummy"
+    },
+    {
+      "EmptyLineCount": 1
+    }
+  ]
+}

@@ -1,0 +1,452 @@
+{
+  "FormatVersion": 8,
+  "SubVersion": 11,
+  "UseNewFormat": true,
+  "Units": [
+    {
+      "Flags": 2,
+      "HP": -1,
+      "MP": -1,
+      "GoldAmount": 12500,
+      "TargetAcquisition": -1,
+      "HeroLevel": 1,
+      "InventoryData": [],
+      "AbilityData": [],
+      "CustomPlayerColorId": -1,
+      "WaygateDestinationRegionId": -1,
+      "TypeId": 842018926,
+      "Position": {
+        "X": 1728,
+        "Y": -2432
+      },
+      "Rotation": 4.71238899230957,
+      "Scale": {
+        "X": 1,
+        "Y": 1,
+        "Z": 1
+      },
+      "SkinId": 842018926,
+      "MapItemTableId": -1,
+      "ItemTableSets": [],
+      "CreationNumber": 12
+    },
+    {
+      "Flags": 2,
+      "HP": -1,
+      "MP": -1,
+      "InventoryData": [],
+      "AbilityData": [],
+      "CustomPlayerColorId": -1,
+      "WaygateDestinationRegionId": -1,
+      "TypeId": 1668246643,
+      "Position": {
+        "X": 448,
+        "Y": -384
+      },
+      "Rotation": 4.71238899230957,
+      "Scale": {
+        "X": 1,
+        "Y": 1,
+        "Z": 1
+      },
+      "SkinId": 1668246643,
+      "MapItemTableId": -1,
+      "ItemTableSets": [],
+      "CreationNumber": 1
+    },
+    {
+      "Flags": 2,
+      "OwnerId": 24,
+      "HP": -1,
+      "MP": -1,
+      "GoldAmount": 12500,
+      "TargetAcquisition": -1,
+      "HeroLevel": 1,
+      "InventoryData": [],
+      "AbilityData": [],
+      "CustomPlayerColorId": -1,
+      "WaygateDestinationRegionId": -1,
+      "TypeId": 808464494,
+      "Position": {
+        "X": -1536,
+        "Y": 1024
+      },
+      "Rotation": 4.71238899230957,
+      "Scale": {
+        "X": 1,
+        "Y": 1,
+        "Z": 1
+      },
+      "SkinId": 808464494,
+      "MapItemTableId": -1,
+      "ItemTableSets": [],
+      "CreationNumber": 8
+    },
+    {
+      "Flags": 2,
+      "HP": -1,
+      "MP": -1,
+      "GoldAmount": 12500,
+      "TargetAcquisition": -1,
+      "HeroLevel": 1,
+      "InventoryData": [],
+      "AbilityData": [],
+      "CustomPlayerColorId": -1,
+      "WaygateDestinationRegionId": -1,
+      "TypeId": 825241710,
+      "Position": {
+        "X": 864,
+        "Y": 2080
+      },
+      "Rotation": 4.71238899230957,
+      "Scale": {
+        "X": 1,
+        "Y": 1,
+        "Z": 1
+      },
+      "SkinId": 825241710,
+      "MapItemTableId": -1,
+      "ItemTableSets": [],
+      "CreationNumber": 13
+    },
+    {
+      "Flags": 2,
+      "OwnerId": 1,
+      "HP": -1,
+      "MP": -1,
+      "InventoryData": [],
+      "AbilityData": [],
+      "CustomPlayerColorId": -1,
+      "WaygateDestinationRegionId": -1,
+      "TypeId": 1668246643,
+      "Variation": 1,
+      "Position": {
+        "X": -2496,
+        "Y": 256
+      },
+      "Rotation": 4.71238899230957,
+      "Scale": {
+        "X": 1,
+        "Y": 1,
+        "Z": 1
+      },
+      "SkinId": 1668246643,
+      "MapItemTableId": -1,
+      "ItemTableSets": []
+    },
+    {
+      "Flags": 2,
+      "OwnerId": 2,
+      "HP": -1,
+      "MP": -1,
+      "InventoryData": [],
+      "AbilityData": [],
+      "CustomPlayerColorId": -1,
+      "WaygateDestinationRegionId": -1,
+      "TypeId": 1668246643,
+      "Variation": 2,
+      "Position": {
+        "X": 576,
+        "Y": -2176
+      },
+      "Rotation": 4.71238899230957,
+      "Scale": {
+        "X": 1,
+        "Y": 1,
+        "Z": 1
+      },
+      "SkinId": 1668246643,
+      "MapItemTableId": -1,
+      "ItemTableSets": [],
+      "CreationNumber": 2
+    },
+    {
+      "Flags": 2,
+      "OwnerId": 3,
+      "HP": -1,
+      "MP": -1,
+      "InventoryData": [],
+      "AbilityData": [],
+      "CustomPlayerColorId": -1,
+      "WaygateDestinationRegionId": -1,
+      "TypeId": 1668246643,
+      "Variation": 3,
+      "Position": {
+        "X": -2688,
+        "Y": -1280
+      },
+      "Rotation": 4.71238899230957,
+      "Scale": {
+        "X": 1,
+        "Y": 1,
+        "Z": 1
+      },
+      "SkinId": 1668246643,
+      "MapItemTableId": -1,
+      "ItemTableSets": [],
+      "CreationNumber": 3
+    },
+    {
+      "Flags": 2,
+      "OwnerId": 4,
+      "HP": -1,
+      "MP": -1,
+      "InventoryData": [],
+      "AbilityData": [],
+      "CustomPlayerColorId": -1,
+      "WaygateDestinationRegionId": -1,
+      "TypeId": 1668246643,
+      "Variation": 4,
+      "Position": {
+        "X": -2176,
+        "Y": 1024
+      },
+      "Rotation": 4.71238899230957,
+      "Scale": {
+        "X": 1,
+        "Y": 1,
+        "Z": 1
+      },
+      "SkinId": 1668246643,
+      "MapItemTableId": -1,
+      "ItemTableSets": [],
+      "CreationNumber": 4
+    },
+    {
+      "Flags": 2,
+      "OwnerId": 5,
+      "HP": -1,
+      "MP": -1,
+      "InventoryData": [],
+      "AbilityData": [],
+      "CustomPlayerColorId": -1,
+      "WaygateDestinationRegionId": -1,
+      "TypeId": 1668246643,
+      "Variation": 5,
+      "Position": {
+        "X": -2112,
+        "Y": -1792
+      },
+      "Rotation": 4.71238899230957,
+      "Scale": {
+        "X": 1,
+        "Y": 1,
+        "Z": 1
+      },
+      "SkinId": 1668246643,
+      "MapItemTableId": -1,
+      "ItemTableSets": [],
+      "CreationNumber": 5
+    },
+    {
+      "Flags": 2,
+      "OwnerId": 6,
+      "HP": -1,
+      "MP": -1,
+      "InventoryData": [],
+      "AbilityData": [],
+      "CustomPlayerColorId": -1,
+      "WaygateDestinationRegionId": -1,
+      "TypeId": 1668246643,
+      "Variation": 6,
+      "Position": {
+        "X": 2176,
+        "Y": 1920
+      },
+      "Rotation": 4.71238899230957,
+      "Scale": {
+        "X": 1,
+        "Y": 1,
+        "Z": 1
+      },
+      "SkinId": 1668246643,
+      "MapItemTableId": -1,
+      "ItemTableSets": [],
+      "CreationNumber": 6
+    },
+    {
+      "Flags": 2,
+      "OwnerId": 7,
+      "HP": -1,
+      "MP": -1,
+      "InventoryData": [],
+      "AbilityData": [],
+      "CustomPlayerColorId": -1,
+      "WaygateDestinationRegionId": -1,
+      "TypeId": 1668246643,
+      "Variation": 7,
+      "Position": {
+        "X": -2112,
+        "Y": -1152
+      },
+      "Rotation": 4.71238899230957,
+      "Scale": {
+        "X": 1,
+        "Y": 1,
+        "Z": 1
+      },
+      "SkinId": 1668246643,
+      "MapItemTableId": -1,
+      "ItemTableSets": [],
+      "CreationNumber": 7
+    },
+    {
+      "Flags": 2,
+      "OwnerId": 8,
+      "HP": -1,
+      "MP": -1,
+      "InventoryData": [],
+      "AbilityData": [],
+      "CustomPlayerColorId": -1,
+      "WaygateDestinationRegionId": -1,
+      "TypeId": 1668246643,
+      "Variation": 8,
+      "Position": {
+        "X": 1920,
+        "Y": 1088
+      },
+      "Rotation": 4.71238899230957,
+      "Scale": {
+        "X": 1,
+        "Y": 1,
+        "Z": 1
+      },
+      "SkinId": 1668246643,
+      "MapItemTableId": -1,
+      "ItemTableSets": [],
+      "CreationNumber": 9
+    },
+    {
+      "Flags": 2,
+      "OwnerId": 9,
+      "HP": -1,
+      "MP": -1,
+      "InventoryData": [],
+      "AbilityData": [],
+      "CustomPlayerColorId": -1,
+      "WaygateDestinationRegionId": -1,
+      "TypeId": 1668246643,
+      "Variation": 9,
+      "Position": {
+        "X": 1408,
+        "Y": -1536
+      },
+      "Rotation": 4.71238899230957,
+      "Scale": {
+        "X": 1,
+        "Y": 1,
+        "Z": 1
+      },
+      "SkinId": 1668246643,
+      "MapItemTableId": -1,
+      "ItemTableSets": [],
+      "CreationNumber": 10
+    },
+    {
+      "Flags": 2,
+      "OwnerId": 10,
+      "HP": -1,
+      "MP": -1,
+      "InventoryData": [],
+      "AbilityData": [],
+      "CustomPlayerColorId": -1,
+      "WaygateDestinationRegionId": -1,
+      "TypeId": 1668246643,
+      "Variation": 10,
+      "Position": {
+        "X": 704,
+        "Y": -3008
+      },
+      "Rotation": 4.71238899230957,
+      "Scale": {
+        "X": 1,
+        "Y": 1,
+        "Z": 1
+      },
+      "SkinId": 1668246643,
+      "MapItemTableId": -1,
+      "ItemTableSets": [],
+      "CreationNumber": 11
+    },
+    {
+      "Flags": 2,
+      "OwnerId": 11,
+      "HP": -1,
+      "MP": -1,
+      "InventoryData": [],
+      "AbilityData": [],
+      "CustomPlayerColorId": -1,
+      "WaygateDestinationRegionId": -1,
+      "TypeId": 1668246643,
+      "Variation": 11,
+      "Position": {
+        "X": -1280,
+        "Y": 2048
+      },
+      "Rotation": 4.71238899230957,
+      "Scale": {
+        "X": 1,
+        "Y": 1,
+        "Z": 1
+      },
+      "SkinId": 1668246643,
+      "MapItemTableId": -1,
+      "ItemTableSets": [],
+      "CreationNumber": 14
+    },
+    {
+      "Flags": 2,
+      "HP": -1,
+      "MP": -1,
+      "GoldAmount": 12500,
+      "TargetAcquisition": -1,
+      "HeroLevel": 1,
+      "InventoryData": [],
+      "AbilityData": [],
+      "CustomPlayerColorId": -1,
+      "WaygateDestinationRegionId": -1,
+      "TypeId": 1918984808,
+      "Position": {
+        "X": -64,
+        "Y": -192
+      },
+      "Rotation": 4.71238899230957,
+      "Scale": {
+        "X": 1,
+        "Y": 1,
+        "Z": 1
+      },
+      "SkinId": 1918984808,
+      "MapItemTableId": -1,
+      "ItemTableSets": [],
+      "CreationNumber": 15
+    },
+    {
+      "Flags": 2,
+      "HP": -1,
+      "MP": -1,
+      "GoldAmount": 12500,
+      "TargetAcquisition": -1,
+      "HeroLevel": 1,
+      "InventoryData": [],
+      "AbilityData": [],
+      "CustomPlayerColorId": -1,
+      "WaygateDestinationRegionId": -1,
+      "TypeId": 1918984808,
+      "Position": {
+        "X": -64,
+        "Y": -576
+      },
+      "Rotation": 4.71238899230957,
+      "Scale": {
+        "X": 1,
+        "Y": 1,
+        "Z": 1
+      },
+      "SkinId": 1918984808,
+      "MapItemTableId": -1,
+      "ItemTableSets": [],
+      "CreationNumber": 16
+    }
+  ]
+}

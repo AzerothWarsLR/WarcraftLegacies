@@ -1,0 +1,33 @@
+{
+  "FormatVersion": 7,
+  "SubVersion": -2147483644,
+  "GameVersion": 2,
+  "Variables": [],
+  "TriggerItems": [
+    {
+      "Name": "\u003CDELETED\u003E",
+      "ParentId": -1,
+      "Type": 4
+    },
+    {
+      "Name": "\u003CDELETED\u003E",
+      "ParentId": -1,
+      "Type": 8
+    },
+    {
+      "Name": "testsource.w3x",
+      "ParentId": -1,
+      "Type": 1
+    }
+  ],
+  "TriggerItemCounts": {
+    "RootCategory": 1,
+    "UNK1": 0,
+    "Category": 1,
+    "Gui": 1,
+    "Comment": 0,
+    "Script": 0,
+    "Variable": 0,
+    "UNK7": 0
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "FormatVersion": 3,
+  "BaseUpgrades": [
+    {
+      "OldId": 1851877458,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 1769105490,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    }
+  ],
+  "NewUpgrades": []
+}

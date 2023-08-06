@@ -27,15 +27,16 @@ namespace Launcher.Services
 #else
 		private const bool Debug = false;
 #endif
-    
+
     /// <summary>
     /// Builds a Warcraft 3 map based on the provided inputs.
     /// </summary>
     /// <param name="mapBuilder">An in-progress <see cref="MapBuilder"/>, which will be supplemented and used to build the map.</param>
+    /// <param name="mapName">What to call the resulting map file.</param>
     /// <param name="sourceCodeProjectFolderPath">C# code in this directory will be transpiled to Lua and included in the map.</param>
     /// <param name="launch">Whether or not to launch the map after building.</param>
     /// <param name="config">Additional configuration.</param>
-    public void Build(MapBuilder mapBuilder, string sourceCodeProjectFolderPath, bool launch, IConfiguration config)
+    public void Build(MapBuilder mapBuilder, string mapName, string sourceCodeProjectFolderPath, bool launch, IConfiguration config)
     {
       var launchSettings = config.GetRequiredSection(nameof(LaunchSettings)).Get<LaunchSettings>();
       var mapSettings = config.GetRequiredSection(nameof(MapSettings)).Get<MapSettings>();
@@ -62,8 +63,8 @@ namespace Launcher.Services
       };
 
       var mapFilePath = launch
-        ? $"{Path.Combine(launchSettings.OutputFolderPath, mapSettings.Name)}Test.w3x"
-        : $"{Path.Combine(launchSettings.OutputFolderPath, mapSettings.Name)}{mapSettings.Version}.w3x";
+        ? $"{Path.Combine(launchSettings.OutputFolderPath, mapName)}Test.w3x"
+        : $"{Path.Combine(launchSettings.OutputFolderPath, mapName)}{mapSettings.Version}.w3x";
 
       mapBuilder.Build(mapFilePath, archiveCreateOptions);
       if (launch)

@@ -1,0 +1,126 @@
+{
+  "FormatVersion": 3,
+  "BaseUnits": [
+    {
+      "OldId": 1953259880,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    },
+    {
+      "OldId": 1684499784,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
+    }
+  ],
+  "NewUnits": [
+    {
+      "OldId": 1886348142,
+      "NewId": 808464494,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1935827317,
+          "Type": 3,
+          "Value": ""
+        }
+      ]
+    },
+    {
+      "OldId": 846226286,
+      "NewId": 825241710,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1935827317,
+          "Type": 3,
+          "Value": ""
+        }
+      ]
+    },
+    {
+      "OldId": 863003502,
+      "NewId": 842018926,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1935827317,
+          "Type": 3,
+          "Value": ""
+        }
+      ]
+    },
+    {
+      "OldId": 1684566901,
+      "NewId": 1479553141,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1818520949,
+          "Type": 3,
+          "Value": "Doodads\\Terrain\\LOSBlocker\\IntentionallyLeftBlank.mdl"
+        },
+        {
+          "Id": 1835101813,
+          "Type": 3,
+          "Value": "TRIGSTR_022"
+        },
+        {
+          "Id": 1969779573,
+          "Type": 3,
+          "Value": ""
+        }
+      ]
+    },
+    {
+      "OldId": 1751344494,
+      "NewId": 858796142,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1935827317,
+          "Type": 3,
+          "Value": ""
+        },
+        {
+          "Id": 1818520949,
+          "Type": 3,
+          "Value": "Doodads\\Terrain\\LOSBlocker\\IntentionallyLeftBlank.mdl"
+        },
+        {
+          "Id": 1885959285,
+          "Type": 3,
+          "Value": ""
+        },
+        {
+          "Id": 1651864693,
+          "Type": 3,
+          "Value": ""
+        },
+        {
+          "Id": 1969779573,
+          "Type": 3,
+          "Value": ""
+        },
+        {
+          "Id": 1835101813,
+          "Type": 3,
+          "Value": "TRIGSTR_023"
+        }
+      ]
+    }
+  ]
+}
