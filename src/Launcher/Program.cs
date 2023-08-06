@@ -21,6 +21,10 @@ namespace Launcher
     {
       var rootCommand = new RootCommand();
       rootCommand.RegisterPublishCommand();
+      rootCommand.RegisterGenerateConstantsCommand();
+      rootCommand.RegisterMapDataToW3XCommand();
+      rootCommand.RegisterW3XToMapDataCommand();
+      rootCommand.RegisterTestCommand();
       return rootCommand.Invoke(args);
 
       var launchMode = Enum.Parse<LaunchMode>(args[0]);
@@ -36,13 +40,6 @@ namespace Launcher
       
       switch (launchMode)
       {
-        case LaunchMode.GenerateConstants:
-          sourceCodeProjectFolderPath = args[2];
-          ConstantGenerator.Run(baseMapPath, sourceCodeProjectFolderPath, new ConstantGeneratorOptions
-          {
-            IncludeCode = true
-          });
-          break;
         case LaunchMode.Test:
           sourceCodeProjectFolderPath = args[2];
           var mapBuilderFromMapData = new MapDataToW3XConversionService(mapper, new JsonModifierProvider()).Convert(Path.Combine(launchSettings.MapDataFolderPath, mapSettings.Name));
