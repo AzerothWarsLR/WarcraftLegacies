@@ -8,7 +8,6 @@ using Launcher.Commands;
 using Launcher.Services;
 using Launcher.Settings;
 using Microsoft.Extensions.Configuration;
-using WCSharp.ConstantGenerator;
 
 namespace Launcher
 {
@@ -20,11 +19,9 @@ namespace Launcher
     private static int Main(string[] args)
     {
       var rootCommand = new RootCommand();
-      rootCommand.RegisterPublishCommand();
       rootCommand.RegisterGenerateConstantsCommand();
       rootCommand.RegisterMapDataToW3XCommand();
       rootCommand.RegisterW3XToMapDataCommand();
-      rootCommand.RegisterTestCommand();
       return rootCommand.Invoke(args);
 
       var launchMode = Enum.Parse<LaunchMode>(args[0]);

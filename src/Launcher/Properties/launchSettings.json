@@ -2,15 +2,15 @@
   "profiles": {
     "TestMap: Test": {
       "commandName": "Project",
-      "commandLineArgs": "test \"..\\..\\..\\..\\..\\maps\\testsource.w3x\" \"..\\..\\..\\..\\TestMap.Source\""
+      "commandLineArgs": "mapdata-to-w3x true --sourecodepath \"..\\..\\..\\..\\WarcraftLegacies.Source\""
     },
     "WarcraftLegacies: Test": {
       "commandName": "Project",
-      "commandLineArgs": "test \"..\\..\\..\\..\\..\\maps\\source.w3x\" \"..\\..\\..\\..\\WarcraftLegacies.Source\""
+      "commandLineArgs": "mapdata-to-w3x true --sourecodepath \"..\\..\\..\\..\\WarcraftLegacies.Source\""
     },
     "WarcraftLegacies: Publish": {
       "commandName": "Project",
-      "commandLineArgs": "publish \"..\\..\\..\\..\\..\\maps\\source.w3x\" \"..\\..\\..\\..\\WarcraftLegacies.Source\""
+      "commandLineArgs": "mapdata-to-w3x false --sourecodepath \"..\\..\\..\\..\\WarcraftLegacies.Source\""
     },
     "WarcraftLegacies: Generate Constants": {
       "commandName": "Project",

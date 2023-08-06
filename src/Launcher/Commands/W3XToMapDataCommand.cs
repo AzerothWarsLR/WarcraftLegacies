@@ -1,4 +1,9 @@
 ﻿using System.CommandLine;
+using System.IO;
+using AutoMapper;
+using Launcher.Services;
+using Launcher.Settings;
+using Microsoft.Extensions.Configuration;
 
 namespace Launcher.Commands
 {
@@ -11,20 +16,20 @@ namespace Launcher.Commands
 
       var baseMapPathArgument = new Argument<string>(
         name: "basemappath",
-        description: "The Warcraft 3 map to use as a base.");
+        description: "The Warcraft 3 map to convert into map data.");
       command.AddArgument(baseMapPathArgument);
-      
-      var sourceCodeFolderPathArgument = new Argument<string>(
-        name: "sourcecodepath",
-        description: "A directory containing the C# code to be included in the map.");
-      command.AddArgument(sourceCodeFolderPathArgument);
 
-      command.SetHandler(Run, baseMapPathArgument, sourceCodeFolderPathArgument);
+      command.SetHandler(Run, baseMapPathArgument);
     }
 
-    private static void Run()
+    private static void Run(string baseMapPath)
     {
-      
+      var config = Program.GetAppConfiguration();
+      var launchSettings = config.GetRequiredSection(nameof(LaunchSettings)).Get<LaunchSettings>();
+      var mapSettings = config.GetRequiredSection(nameof(MapSettings)).Get<MapSettings>();
+      var autoMapperConfig = new AutoMapperConfigurationService().GetConfiguration();
+      var mapper = new Mapper(autoMapperConfig);
+      new W3XToMapDataConversionService(mapper).Convert(baseMapPath, Path.Combine(launchSettings.MapDataFolderPath, mapSettings.Name));
     }
   }
 }
