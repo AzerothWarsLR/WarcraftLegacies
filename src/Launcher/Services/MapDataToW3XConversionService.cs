@@ -111,7 +111,10 @@ namespace Launcher.Services
 
       var builder = new MapBuilder(map);
       builder.AddFiles($"{mapDataRootFolder}", "*war3mapMap.blp");
-      builder.AddFiles($@"{mapDataRootFolder}\{ImportsPath}", "*", SearchOption.AllDirectories);
+      var importsDirectory = $@"{mapDataRootFolder}\{ImportsPath}";
+      if (Directory.Exists(importsDirectory))
+        builder.AddFiles(importsDirectory, "*", SearchOption.AllDirectories);
+      
       return builder;
     }
 

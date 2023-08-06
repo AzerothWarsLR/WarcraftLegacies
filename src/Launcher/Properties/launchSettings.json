@@ -2,7 +2,7 @@
   "profiles": {
     "TestMap: Test": {
       "commandName": "Project",
-      "commandLineArgs": "mapdata-to-w3x TestMap true --sourecodepath \"..\\..\\..\\..\\WarcraftLegacies.Source\""
+      "commandLineArgs": "mapdata-to-w3x TestMap true --sourecodepath \"..\\..\\..\\..\\TestMap.Source\""
     },
     "TestMap: Convert W3X to MapData": {
       "commandName": "Project",
