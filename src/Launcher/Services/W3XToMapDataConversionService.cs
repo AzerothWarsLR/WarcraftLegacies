@@ -80,7 +80,7 @@ namespace Launcher.Services
         return;
       
       CopyImportedFiles(baseMapPath, importedFiles, outputFolderPath);
-      File.Copy($"{baseMapPath}/war3mapMap.blp", $@"{outputFolderPath}\war3mapMap.blp");
+      File.Copy($"{baseMapPath}/war3mapMap.blp", $@"{outputFolderPath}\war3mapMap.blp", true);
     }
 
     private void CopyImportedFiles(string baseMapPath, List<ImportedFile> files, string outputFolderPath)
