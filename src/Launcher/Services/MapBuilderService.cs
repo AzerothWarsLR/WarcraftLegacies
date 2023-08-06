@@ -27,16 +27,15 @@ namespace Launcher.Services
 #else
 		private const bool Debug = false;
 #endif
-
-    public void Build(string baseMapPath, string projectFolderPath, bool launch, IConfiguration config)
-    {
-      var map = Map.Open(baseMapPath);
-      var builder = new MapBuilder(map);
-      builder.AddFiles(baseMapPath, "*", SearchOption.AllDirectories);
-      Build(new MapBuilder(map), projectFolderPath, launch, config);
-    }
     
-    public void Build(MapBuilder mapBuilder, string projectFolderPath, bool launch, IConfiguration config)
+    /// <summary>
+    /// Builds a Warcraft 3 map based on the provided inputs.
+    /// </summary>
+    /// <param name="mapBuilder">An in-progress <see cref="MapBuilder"/>, which will be supplemented and used to build the map.</param>
+    /// <param name="sourceCodeProjectFolderPath">C# code in this directory will be transpiled to Lua and included in the map.</param>
+    /// <param name="launch">Whether or not to launch the map after building.</param>
+    /// <param name="config">Additional configuration.</param>
+    public void Build(MapBuilder mapBuilder, string sourceCodeProjectFolderPath, bool launch, IConfiguration config)
     {
       var launchSettings = config.GetRequiredSection(nameof(LaunchSettings)).Get<LaunchSettings>();
       var mapSettings = config.GetRequiredSection(nameof(MapSettings)).Get<MapSettings>();
@@ -46,13 +45,13 @@ namespace Launcher.Services
       
       var map = mapBuilder.Map;
       mapBuilder.AddFiles(launchSettings.AssetsFolderPath);
-      // ConfigureControlPointData(map); todo: put this back
+      //ConfigureControlPointData(map);
       if (launch)
         SetTestPlayerSlot(map, launchSettings.TestingPlayerSlot);
       SetMapTitles(map, mapSettings.Version);
 
-      if (projectFolderPath != null)
-        AddCSharpCode(map, projectFolderPath, launchSettings);
+      if (sourceCodeProjectFolderPath != null)
+        AddCSharpCode(map, sourceCodeProjectFolderPath, launchSettings);
 
       // Build w3x file
       var archiveCreateOptions = new MpqArchiveCreateOptions
@@ -138,22 +137,22 @@ namespace Launcher.Services
     private static void ConfigureControlPointData(Map map)
     {
       var objectDatabase = map.GetObjectDatabaseFromMap();
-      foreach (var unit in objectDatabase.GetUnits().Where(IsControlPoint))
-      {
-        unit.CombatAttack1DamageBase = -1;
-        unit.CombatAttack1DamageNumberOfDice = 1;
-        unit.CombatAttack1DamageSidesPerDie = 1;
-        unit.CombatAttacksEnabled = AttackBits.Attack1Only;
-        unit.CombatAttack1Range = 900;
-        unit.CombatAcquisitionRange = 900;
-        unit.CombatAttack1TargetsAllowed = new[] { Target.Bridge };
-        unit.EditorDisplayAsNeutralHostile = true;
-        unit.StatsLevel = 0;
-        unit.StatsRace = UnitRace.Creeps;
-        unit.StatsCanBeBuiltOn = false;
-        unit.PathingPathingMap = @"PathTextures\4x4SimpleSolid.tga";
-        unit.StatsHitPointsRegenerationRate = 0;
-      }
+      // foreach (var unit in objectDatabase.GetUnits().Where(IsControlPoint))
+      // {
+      //   unit.CombatAttack1DamageBase = -1;
+      //   unit.CombatAttack1DamageNumberOfDice = 1;
+      //   unit.CombatAttack1DamageSidesPerDie = 1;
+      //   unit.CombatAttacksEnabled = AttackBits.Attack1Only;
+      //   unit.CombatAttack1Range = 900;
+      //   unit.CombatAcquisitionRange = 900;
+      //   unit.CombatAttack1TargetsAllowed = new[] { Target.Bridge };
+      //   unit.EditorDisplayAsNeutralHostile = true;
+      //   unit.StatsLevel = 0;
+      //   unit.StatsRace = UnitRace.Creeps;
+      //   unit.StatsCanBeBuiltOn = false;
+      //   unit.PathingPathingMap = @"PathTextures\4x4SimpleSolid.tga";
+      //   unit.StatsHitPointsRegenerationRate = 0;
+      // }
 
       map.UnitObjectData = objectDatabase.GetAllData().UnitData;
     }
