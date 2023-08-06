@@ -8,6 +8,10 @@
       "commandName": "Project",
       "commandLineArgs": "w3x-to-mapdata TestMap \"..\\..\\..\\..\\..\\maps\\testsource.w3x\""
     },
+    "TestMap: Convert MapData to W3X": {
+      "commandName": "Project",
+      "commandLineArgs": "mapdata-to-w3x TestMap false"
+    },
     "WarcraftLegacies: Test": {
       "commandName": "Project",
       "commandLineArgs": "mapdata-to-w3x WarcraftLegacies true --sourecodepath \"..\\..\\..\\..\\WarcraftLegacies.Source\""
