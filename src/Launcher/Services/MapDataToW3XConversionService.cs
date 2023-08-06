@@ -111,7 +111,7 @@ namespace Launcher.Services
       };
 
       var builder = new MapBuilder(map);
-      builder.AddFiles($@"{mapDataRootFolder}\{ImportsPath}");
+      builder.AddFiles($@"{mapDataRootFolder}\{ImportsPath}", "*", SearchOption.AllDirectories);
       return builder;
     }
 
