@@ -8,5 +8,5 @@ public sealed class MapPathingMapDto
   public int FormatVersion { get; set; }
   public int Width { get; set; }
   public int Height { get; set; }
-  public List<PathingType> Cell { get; set; }
+  public List<PathingType> Cells { get; set; }
 }
