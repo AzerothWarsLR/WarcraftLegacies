@@ -47,9 +47,8 @@ namespace Launcher
           new MapBuilderService().Build(mapBuilderFromMapData, sourceCodeProjectFolderPath, true, config);
           break;
         case LaunchMode.JsonToW3X:
-          sourceCodeProjectFolderPath = args[2];
           var mapBuilderFromMapData2 = new MapDataToW3XConversionService(mapper, new JsonModifierProvider()).Convert(Path.Combine(launchSettings.MapDataFolderPath, mapSettings.Name));
-          new MapBuilderService().Build(mapBuilderFromMapData2, sourceCodeProjectFolderPath, true, config);
+          new MapBuilderService().Build(mapBuilderFromMapData2, null, false, config);
           break;
         case LaunchMode.W3XToJson:
           new W3XToMapDataConversionService(mapper).Convert(baseMapPath, Path.Combine(launchSettings.MapDataFolderPath, mapSettings.Name));

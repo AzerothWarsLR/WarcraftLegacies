@@ -51,6 +51,28 @@ namespace Launcher.Services
         SetTestPlayerSlot(map, launchSettings.TestingPlayerSlot);
       SetMapTitles(map, mapSettings.Version);
 
+      if (projectFolderPath != null)
+        AddCSharpCode(map, projectFolderPath, launchSettings);
+
+      // Build w3x file
+      var archiveCreateOptions = new MpqArchiveCreateOptions
+      {
+        BlockSize = 3,
+        AttributesCreateMode = MpqFileCreateMode.Overwrite,
+        ListFileCreateMode = MpqFileCreateMode.Overwrite
+      };
+
+      var mapFilePath = launch
+        ? $"{Path.Combine(launchSettings.OutputFolderPath, mapSettings.Name)}Test.w3x"
+        : $"{Path.Combine(launchSettings.OutputFolderPath, mapSettings.Name)}{mapSettings.Version}.w3x";
+
+      mapBuilder.Build(mapFilePath, archiveCreateOptions);
+      if (launch)
+        LaunchGame(launchSettings.Warcraft3ExecutablePath, mapFilePath);
+    }
+
+    private static void AddCSharpCode(Map map, string projectFolderPath, LaunchSettings launchSettings)
+    {
       //Set debug options if necessary, configure compiler
       const string csc = Debug ? "-debug -define:DEBUG" : null;
       var csproj = Directory.EnumerateFiles(projectFolderPath, "*.csproj", SearchOption.TopDirectoryOnly).Single();
@@ -83,24 +105,8 @@ namespace Launcher.Services
 
       // Update war3map.lua so you can inspect the generated Lua code easily
       File.WriteAllText(Path.Combine(launchSettings.OutputFolderPath, launchSettings.OutputScriptName), map.Script);
-
-      // Build w3x file
-      var archiveCreateOptions = new MpqArchiveCreateOptions
-      {
-        BlockSize = 3,
-        AttributesCreateMode = MpqFileCreateMode.Overwrite,
-        ListFileCreateMode = MpqFileCreateMode.Overwrite
-      };
-
-      var mapFilePath = launch
-        ? $"{Path.Combine(launchSettings.OutputFolderPath, mapSettings.Name)}Test.w3x"
-        : $"{Path.Combine(launchSettings.OutputFolderPath, mapSettings.Name)}{mapSettings.Version}.w3x";
-
-      mapBuilder.Build(mapFilePath, archiveCreateOptions);
-      if (launch)
-        LaunchGame(launchSettings.Warcraft3ExecutablePath, mapFilePath);
     }
-
+    
     private static void SetMapTitles(Map map, string version)
     {
       if (map.Info == null)
