@@ -23,6 +23,7 @@ namespace Launcher
       return rootCommand.Invoke(args);
     }
 
+    //Todo: shouldn't be in Program.cs
     public static IConfiguration GetAppConfiguration()
     {
       var userAppsettingsFileName = $"appsettings.{Environment.UserName}.json";
