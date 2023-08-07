@@ -1,7 +1,7 @@
 ﻿using War3Api.Object;
 using War3Net.Build;
 
-namespace Launcher
+namespace Launcher.Extensions
 {
   /// <summary>
   /// A useful set of extension methods for the <see cref="Map"/> class.
