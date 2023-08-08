@@ -2352,6 +2352,7 @@ local unitID
 local t
 local life
 
+u = BlzCreateUnitWithSkin(p, FourCC("h0CE"), 1452.6, -22281.2, 43.650, FourCC("h0CE"))
 u = BlzCreateUnitWithSkin(p, FourCC("hpea"), 13182.5, 8719.0, 11.547, FourCC("hpea"))
 u = BlzCreateUnitWithSkin(p, FourCC("hpea"), 13212.6, 8629.8, 109.104, FourCC("hpea"))
 u = BlzCreateUnitWithSkin(p, FourCC("hpea"), 13298.5, 8752.3, 213.526, FourCC("hpea"))
