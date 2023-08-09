@@ -156,25 +156,25 @@ namespace Launcher.Services
 
     private static void ConfigureControlPointData(Map map)
     {
-      var objectDatabase = map.GetObjectDatabaseFromMap();
-      foreach (var unit in objectDatabase.GetUnits().Where(IsControlPoint))
-      {
-        unit.CombatAttack1DamageBase = -1;
-        unit.CombatAttack1DamageNumberOfDice = 1;
-        unit.CombatAttack1DamageSidesPerDie = 1;
-        unit.CombatAttacksEnabled = AttackBits.Attack1Only;
-        unit.CombatAttack1Range = 900;
-        unit.CombatAcquisitionRange = 900;
-        unit.CombatAttack1TargetsAllowed = new[] { Target.Bridge };
-        unit.EditorDisplayAsNeutralHostile = true;
-        unit.StatsLevel = 0;
-        unit.StatsRace = UnitRace.Creeps;
-        unit.StatsCanBeBuiltOn = false;
-        unit.PathingPathingMap = @"PathTextures\4x4SimpleSolid.tga";
-        unit.StatsHitPointsRegenerationRate = 0;
-      }
-
-      map.UnitObjectData = objectDatabase.GetAllData().UnitData;
+      // var objectDatabase = map.GetObjectDatabaseFromMap();
+      // // foreach (var unit in objectDatabase.GetUnits().Where(IsControlPoint))
+      // // {
+      // //   unit.CombatAttack1DamageBase = -1;
+      // //   unit.CombatAttack1DamageNumberOfDice = 1;
+      // //   unit.CombatAttack1DamageSidesPerDie = 1;
+      // //   unit.CombatAttacksEnabled = AttackBits.Attack1Only;
+      // //   unit.CombatAttack1Range = 900;
+      // //   unit.CombatAcquisitionRange = 900;
+      // //   unit.CombatAttack1TargetsAllowed = new[] { Target.Bridge };
+      // //   unit.EditorDisplayAsNeutralHostile = true;
+      // //   unit.StatsLevel = 0;
+      // //   unit.StatsRace = UnitRace.Creeps;
+      // //   unit.StatsCanBeBuiltOn = false;
+      // //   unit.PathingPathingMap = @"PathTextures\4x4SimpleSolid.tga";
+      // //   unit.StatsHitPointsRegenerationRate = 0;
+      // // }
+      //
+      // map.UnitObjectData = objectDatabase.GetAllData().UnitData;
     }
 
     private static void LaunchGame(string warcraft3ExecutablePath, string mapFilePath)
