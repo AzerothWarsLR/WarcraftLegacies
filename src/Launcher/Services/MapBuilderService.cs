@@ -56,7 +56,7 @@ namespace Launcher.Services
       var map = mapBuilder.Map;
       Directory.CreateDirectory(_compilerSettings.SharedAssetsPath);
       mapBuilder.AddFiles(_compilerSettings.SharedAssetsPath);
-      //ConfigureControlPointData(map);
+      ConfigureControlPointData(map);
       if (launch)
         SetTestPlayerSlot(map, _compilerSettings.TestingPlayerSlot);
       SetMapTitles(map, _mapSettings.Version);
@@ -153,22 +153,22 @@ namespace Launcher.Services
     private static void ConfigureControlPointData(Map map)
     {
       var objectDatabase = map.GetObjectDatabaseFromMap();
-      // foreach (var unit in objectDatabase.GetUnits().Where(IsControlPoint))
-      // {
-      //   unit.CombatAttack1DamageBase = -1;
-      //   unit.CombatAttack1DamageNumberOfDice = 1;
-      //   unit.CombatAttack1DamageSidesPerDie = 1;
-      //   unit.CombatAttacksEnabled = AttackBits.Attack1Only;
-      //   unit.CombatAttack1Range = 900;
-      //   unit.CombatAcquisitionRange = 900;
-      //   unit.CombatAttack1TargetsAllowed = new[] { Target.Bridge };
-      //   unit.EditorDisplayAsNeutralHostile = true;
-      //   unit.StatsLevel = 0;
-      //   unit.StatsRace = UnitRace.Creeps;
-      //   unit.StatsCanBeBuiltOn = false;
-      //   unit.PathingPathingMap = @"PathTextures\4x4SimpleSolid.tga";
-      //   unit.StatsHitPointsRegenerationRate = 0;
-      // }
+      foreach (var unit in objectDatabase.GetUnits().Where(IsControlPoint))
+      {
+        unit.CombatAttack1DamageBase = -1;
+        unit.CombatAttack1DamageNumberOfDice = 1;
+        unit.CombatAttack1DamageSidesPerDie = 1;
+        unit.CombatAttacksEnabled = AttackBits.Attack1Only;
+        unit.CombatAttack1Range = 900;
+        unit.CombatAcquisitionRange = 900;
+        unit.CombatAttack1TargetsAllowed = new[] { Target.Bridge };
+        unit.EditorDisplayAsNeutralHostile = true;
+        unit.StatsLevel = 0;
+        unit.StatsRace = UnitRace.Creeps;
+        unit.StatsCanBeBuiltOn = false;
+        unit.PathingPathingMap = @"PathTextures\4x4SimpleSolid.tga";
+        unit.StatsHitPointsRegenerationRate = 0;
+      }
 
       map.UnitObjectData = objectDatabase.GetAllData().UnitData;
     }
