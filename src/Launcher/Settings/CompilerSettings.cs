@@ -11,11 +11,6 @@
     /// The path to your Warcraft 3 executable.
     /// </summary>
     public string Warcraft3ExecutablePath { get; set; }
-    
-    /// <summary>
-    /// The folder in which to store serialized .json data.
-    /// </summary>
-    public string MapDataPath { get; set; }
 
     /// <summary>
     /// The folder where artifacts created during launches are stored.

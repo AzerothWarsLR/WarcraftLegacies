@@ -25,6 +25,11 @@ namespace Launcher.Commands
         description: "Whether or not to launch the map after it's converted.");
       command.AddArgument(launchArgument);
       
+      var mapDataDirectoryArgument = new Argument<string>(
+        name: "mapDataPath",
+        description: "The location of the map data that will be used to build the map.");
+      command.AddArgument(mapDataDirectoryArgument);
+      
       var outputDirectoryArgument = new Argument<string>(
         name: "outputDirectory",
         description: "Where the fully built map should be saved.");
@@ -35,11 +40,11 @@ namespace Launcher.Commands
         description: "C# code included in this directory will be transpiled into Lua and included in the output.");
       command.AddOption(sourceCodeFolderPathOption);
 
-      command.SetHandler(Run, mapNameArgument, launchArgument, outputDirectoryArgument,
+      command.SetHandler(Run, mapNameArgument, launchArgument, mapDataDirectoryArgument, outputDirectoryArgument,
         sourceCodeFolderPathOption);
     }
 
-    private static void Run(string mapName, bool launch, string outputDirectory, string? sourceCodeFolderPath)
+    private static void Run(string mapName, bool launch, string mapDataDirectory, string outputDirectory, string? sourceCodeFolderPath)
     {
       var appConfiguration = Program.GetAppConfiguration();
       var compilerSettings = appConfiguration.GetRequiredSection(nameof(CompilerSettings)).Get<CompilerSettings>();
@@ -48,7 +53,7 @@ namespace Launcher.Commands
       var autoMapperConfig = new AutoMapperConfigurationService().GetConfiguration();
       var mapper = new Mapper(autoMapperConfig);
       var conversionService = new MapDataToW3XConversionService(mapper, new JsonModifierProvider());
-      var mapBuilderFromMapData = conversionService.Convert(Path.Combine(compilerSettings.MapDataPath, mapName));
+      var mapBuilderFromMapData = conversionService.Convert(mapDataDirectory);
       
       new MapBuilderService(compilerSettings, mapSettings)
         .BuildAndSave(mapBuilderFromMapData, mapName, sourceCodeFolderPath, launch, outputDirectory);

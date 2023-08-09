@@ -1,9 +1,6 @@
 ﻿using System.CommandLine;
-using System.IO;
 using AutoMapper;
 using Launcher.Services;
-using Launcher.Settings;
-using Microsoft.Extensions.Configuration;
 
 namespace Launcher.Commands
 {
@@ -14,26 +11,24 @@ namespace Launcher.Commands
       var command = new Command("w3x-to-mapdata", "Converts a Warcraft 3 map file into raw map data.");
       rootCommand.Add(command);
 
-      var mapNameArgument = new Argument<string>(
-        name: "mapname",
-        description: "What to call the map.");
-      command.AddArgument(mapNameArgument);
-      
       var baseMapPathArgument = new Argument<string>(
         name: "basemappath",
         description: "The Warcraft 3 map to convert into map data.");
       command.AddArgument(baseMapPathArgument);
+      
+      var outputDirectoryArgument = new Argument<string>(
+        name: "outputDirectory",
+        description: "A path to the directory in which the created map data will be stored.");
+      command.AddArgument(outputDirectoryArgument);
 
-      command.SetHandler(Run, mapNameArgument, baseMapPathArgument);
+      command.SetHandler(Run, baseMapPathArgument, outputDirectoryArgument);
     }
 
-    private static void Run(string mapName, string baseMapPath)
+    private static void Run(string baseMapPath, string outputDirectory)
     {
-      var config = Program.GetAppConfiguration();
-      var compilerSettings = config.GetRequiredSection(nameof(CompilerSettings)).Get<CompilerSettings>();
       var autoMapperConfig = new AutoMapperConfigurationService().GetConfiguration();
       var mapper = new Mapper(autoMapperConfig);
-      new W3XToMapDataConversionService(mapper).Convert(baseMapPath, Path.Combine(compilerSettings.MapDataPath, mapName));
+      new W3XToMapDataConversionService(mapper).Convert(baseMapPath, outputDirectory);
     }
   }
 }

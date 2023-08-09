@@ -2,23 +2,23 @@
   "profiles": {
     "TestMap: Test": {
       "commandName": "Project",
-      "commandLineArgs": "mapdata-to-w3x TestMap true false \"..\\..\\..\\..\\..\\maps\" --sourcecodepath \"..\\..\\..\\..\\TestMap.Source\""
+      "commandLineArgs": "mapdata-to-w3x TestMap true \"..\\..\\..\\..\\..\\mapdata\\TestMap\" \"..\\..\\..\\..\\..\\artifacts\" --sourcecodepath \"..\\..\\..\\..\\TestMap.Source\""
     },
     "TestMap: Convert W3X to MapData": {
       "commandName": "Project",
-      "commandLineArgs": "w3x-to-mapdata TestMap \"..\\..\\..\\..\\..\\maps\\testsource.w3x\""
+      "commandLineArgs": "w3x-to-mapdata \"..\\..\\..\\..\\..\\maps\\testsource.w3x\" \"..\\..\\..\\..\\..\\mapdata\\TestMap\""
     },
     "TestMap: Convert MapData to W3X": {
       "commandName": "Project",
-      "commandLineArgs": "mapdata-to-w3x TestMap false false \"..\\..\\..\\..\\..\\maps\\published\""
+      "commandLineArgs": "mapdata-to-w3x TestMap false \"..\\..\\..\\..\\..\\mapdata\\WarcraftLegacies\" \"..\\..\\..\\..\\..\\maps\\published\""
     },
     "WarcraftLegacies: Test": {
       "commandName": "Project",
-      "commandLineArgs": "mapdata-to-w3x WarcraftLegacies true false \"..\\..\\..\\..\\..\\artifacts\" --sourcecodepath \"..\\..\\..\\..\\WarcraftLegacies.Source\""
+      "commandLineArgs": "mapdata-to-w3x WarcraftLegacies true \"..\\..\\..\\..\\..\\mapdata\\WarcraftLegacies\" \"..\\..\\..\\..\\..\\artifacts\" --sourcecodepath \"..\\..\\..\\..\\WarcraftLegacies.Source\""
     },
     "WarcraftLegacies: Publish": {
       "commandName": "Project",
-      "commandLineArgs": "mapdata-to-w3x WarcraftLegacies false true \"..\\..\\..\\..\\..\\maps\\published\" --sourcecodepath \"..\\..\\..\\..\\WarcraftLegacies.Source\""
+      "commandLineArgs": "mapdata-to-w3x WarcraftLegacies false \"..\\..\\..\\..\\..\\mapdata\\WarcraftLegacies\" \"..\\..\\..\\..\\..\\maps\\published\" --sourcecodepath \"..\\..\\..\\..\\WarcraftLegacies.Source\""
     },
     "WarcraftLegacies: Generate Constants": {
       "commandName": "Project",
@@ -26,7 +26,7 @@
     },
     "WarcraftLegacies: Convert W3X to MapData": {
       "commandName": "Project",
-      "commandLineArgs": "w3x-to-mapdata WarcraftLegacies \"..\\..\\..\\..\\..\\maps\\source.w3x\""
+      "commandLineArgs": "w3x-to-mapdata WarcraftLegacies \"..\\..\\..\\..\\..\\maps\\source.w3x\" \"..\\..\\..\\..\\..\\mapdata\\WarcraftLegacies\""
     },
     "WarcraftLegacies: Convert MapData to W3X": {
       "commandName": "Project",
