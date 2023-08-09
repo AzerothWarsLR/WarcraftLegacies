@@ -2,7 +2,7 @@
   "profiles": {
     "TestMap: Test": {
       "commandName": "Project",
-      "commandLineArgs": "mapdata-to-w3x TestMap true --sourecodepath \"..\\..\\..\\..\\TestMap.Source\""
+      "commandLineArgs": "mapdata-to-w3x TestMap true false --sourecodepath \"..\\..\\..\\..\\TestMap.Source\""
     },
     "TestMap: Convert W3X to MapData": {
       "commandName": "Project",
@@ -14,11 +14,11 @@
     },
     "WarcraftLegacies: Test": {
       "commandName": "Project",
-      "commandLineArgs": "mapdata-to-w3x WarcraftLegacies true --sourecodepath \"..\\..\\..\\..\\WarcraftLegacies.Source\""
+      "commandLineArgs": "mapdata-to-w3x WarcraftLegacies true false --sourecodepath \"..\\..\\..\\..\\WarcraftLegacies.Source\""
     },
     "WarcraftLegacies: Publish": {
       "commandName": "Project",
-      "commandLineArgs": "mapdata-to-w3x WarcraftLegacies false --sourecodepath \"..\\..\\..\\..\\WarcraftLegacies.Source\""
+      "commandLineArgs": "mapdata-to-w3x WarcraftLegacies false true --sourecodepath \"..\\..\\..\\..\\WarcraftLegacies.Source\""
     },
     "WarcraftLegacies: Generate Constants": {
       "commandName": "Project",

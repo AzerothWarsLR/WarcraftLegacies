@@ -15,26 +15,26 @@
     /// <summary>
     /// The folder in which to store serialized .json data.
     /// </summary>
-    public string MapDataFolderPath { get; set; }
+    public string MapDataPath { get; set; }
     
     /// <summary>
     /// The folder in which Warcraft 3 maps are stored.
     /// </summary>
-    public string MapFolderPath { get; set; }
+    public string MapsPath { get; set; }
     
     /// <summary>
     /// The folder where you want the published map to be saved to.
     /// </summary>
-    public string OutputFolderPath { get; set; }
+    public string PublishedMapsPath { get; set; }
 
     /// <summary>
-    /// The name of the seperate map script that gets saved in <see cref="OutputFolderPath"/>.
+    /// The folder where artifacts created during launches are stored.
     /// </summary>
-    public string OutputScriptName { get; set; }
+    public string ArtifactsPath { get; set; }
     
     /// <summary>
     /// All files in this folder will be added to the published map.
     /// </summary>
-    public string AssetsFolderPath { get; set; }
+    public string SharedAssetsPath { get; set; }
   }
 }

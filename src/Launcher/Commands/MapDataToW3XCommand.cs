@@ -25,23 +25,34 @@ namespace Launcher.Commands
         description: "Whether or not to launch the map after it's converted.");
       command.AddArgument(launchArgument);
       
+      var publishArgument = new Argument<bool>(
+        name: "--publish",
+        description: "If true, the map will be saved in a directory for published maps.");
+      command.AddArgument(publishArgument);
+      
       var sourceCodeFolderPathOption = new Option<string>(
         name: "--sourecodepath",
         description: "C# code included in this directory will be transpiled into Lua and included in the output.");
       command.AddOption(sourceCodeFolderPathOption);
 
-      command.SetHandler(Run, mapNameArgument, launchArgument, sourceCodeFolderPathOption);
+      command.SetHandler(Run, mapNameArgument, launchArgument, publishArgument, sourceCodeFolderPathOption);
     }
 
-    private static void Run(string mapName, bool launch, string? sourceCodeFolderPath)
+    private static void Run(string mapName, bool launch, bool publish, string? sourceCodeFolderPath)
     {
-      var config = Program.GetAppConfiguration();
-      var launchSettings = config.GetRequiredSection(nameof(LaunchSettings)).Get<LaunchSettings>();
+      var appConfiguration = Program.GetAppConfiguration();
+      var launchSettings = appConfiguration.GetRequiredSection(nameof(LaunchSettings)).Get<LaunchSettings>();
+      var mapSettings = appConfiguration.GetRequiredSection(nameof(MapSettings)).Get<MapSettings>();
+      
       var autoMapperConfig = new AutoMapperConfigurationService().GetConfiguration();
       var mapper = new Mapper(autoMapperConfig);
       var conversionService = new MapDataToW3XConversionService(mapper, new JsonModifierProvider());
-      var mapBuilderFromMapData = conversionService.Convert(Path.Combine(launchSettings.MapDataFolderPath, mapName));
-      new MapBuilderService().Build(mapBuilderFromMapData, mapName, sourceCodeFolderPath, launch, config);
+      var mapBuilderFromMapData = conversionService.Convert(Path.Combine(launchSettings.MapDataPath, mapName));
+
+      var outputDirectory = publish ? launchSettings.PublishedMapsPath : launchSettings.ArtifactsPath;
+      
+      new MapBuilderService(launchSettings, mapSettings)
+        .BuildAndSave(mapBuilderFromMapData, mapName, sourceCodeFolderPath, launch, outputDirectory);
     }
   }
 }

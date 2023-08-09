@@ -33,7 +33,7 @@ namespace Launcher.Commands
       var launchSettings = config.GetRequiredSection(nameof(LaunchSettings)).Get<LaunchSettings>();
       var autoMapperConfig = new AutoMapperConfigurationService().GetConfiguration();
       var mapper = new Mapper(autoMapperConfig);
-      new W3XToMapDataConversionService(mapper).Convert(baseMapPath, Path.Combine(launchSettings.MapDataFolderPath, mapName));
+      new W3XToMapDataConversionService(mapper).Convert(baseMapPath, Path.Combine(launchSettings.MapDataPath, mapName));
     }
   }
 }

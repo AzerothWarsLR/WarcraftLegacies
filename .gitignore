@@ -340,7 +340,7 @@ ASALocalRun/
 healthchecksdb
 
 # Project specific
-/artifacts
+/artifacts/*
 
 # User specific appsettings
 appsettings.*.json
