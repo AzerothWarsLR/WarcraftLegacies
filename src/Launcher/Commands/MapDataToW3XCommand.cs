@@ -36,7 +36,7 @@ namespace Launcher.Commands
       command.AddArgument(outputDirectoryArgument);
       
       var sourceCodeFolderPathOption = new Option<string>(
-        name: "--sourecodepath",
+        name: "--sourcecodepath",
         description: "C# code included in this directory will be transpiled into Lua and included in the output.");
       command.AddOption(sourceCodeFolderPathOption);
 
