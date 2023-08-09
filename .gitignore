@@ -341,6 +341,7 @@ healthchecksdb
 
 # Project specific
 /artifacts/*
+/maps/*
 
 # User specific appsettings
 appsettings.*.json
