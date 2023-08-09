@@ -26,19 +26,25 @@ namespace Launcher.Commands
       command.AddArgument(launchArgument);
       
       var publishArgument = new Argument<bool>(
-        name: "--publish",
+        name: "publish",
         description: "If true, the map will be saved in a directory for published maps.");
       command.AddArgument(publishArgument);
+      
+      var outputDirectoryArgument = new Argument<string>(
+        name: "outputDirectory",
+        description: "Where the fully built map should be saved.");
+      command.AddArgument(outputDirectoryArgument);
       
       var sourceCodeFolderPathOption = new Option<string>(
         name: "--sourecodepath",
         description: "C# code included in this directory will be transpiled into Lua and included in the output.");
       command.AddOption(sourceCodeFolderPathOption);
 
-      command.SetHandler(Run, mapNameArgument, launchArgument, publishArgument, sourceCodeFolderPathOption);
+      command.SetHandler(Run, mapNameArgument, launchArgument, publishArgument, outputDirectoryArgument,
+        sourceCodeFolderPathOption);
     }
 
-    private static void Run(string mapName, bool launch, bool publish, string? sourceCodeFolderPath)
+    private static void Run(string mapName, bool launch, bool publish, string outputDirectory, string? sourceCodeFolderPath)
     {
       var appConfiguration = Program.GetAppConfiguration();
       var launchSettings = appConfiguration.GetRequiredSection(nameof(LaunchSettings)).Get<LaunchSettings>();
@@ -48,8 +54,6 @@ namespace Launcher.Commands
       var mapper = new Mapper(autoMapperConfig);
       var conversionService = new MapDataToW3XConversionService(mapper, new JsonModifierProvider());
       var mapBuilderFromMapData = conversionService.Convert(Path.Combine(launchSettings.MapDataPath, mapName));
-
-      var outputDirectory = publish ? launchSettings.PublishedMapsPath : launchSettings.ArtifactsPath;
       
       new MapBuilderService(launchSettings, mapSettings)
         .BuildAndSave(mapBuilderFromMapData, mapName, sourceCodeFolderPath, launch, outputDirectory);
