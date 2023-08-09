@@ -77,7 +77,7 @@ namespace Launcher.Services
       if (File.Exists(mapFilePath) && backupDirectory != null)
       {
         Directory.CreateDirectory(backupDirectory);
-        var backupName = $"{Path.GetFileNameWithoutExtension(mapFilePath)}{DateTime.Now:yyyyMMdd}.w3x";
+        var backupName = $"{Path.GetFileNameWithoutExtension(mapFilePath)}-{DateTime.Now:yyyyMMdd_HHmmss}.w3x";
         File.Copy(mapFilePath, Path.Combine(backupDirectory, backupName));
       }
 
