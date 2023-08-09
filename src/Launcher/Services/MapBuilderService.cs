@@ -71,8 +71,12 @@ namespace Launcher.Services
         AttributesCreateMode = MpqFileCreateMode.Overwrite,
         ListFileCreateMode = MpqFileCreateMode.Overwrite
       };
-      
-      var mapFilePath = $"{Path.Combine(outputDirectory, mapName)}{_mapSettings.Version}.w3x";
+
+      //Todo: there should be a better way to determine whether or not we want the version number.
+      //Probably just a command parameter.
+      var mapFilePath = sourceCodeProjectFolderPath != null
+        ? $"{Path.Combine(outputDirectory, mapName)}{_mapSettings.Version}.w3x"
+        : $"{Path.Combine(outputDirectory, mapName)}.w3x";
 
       if (File.Exists(mapFilePath) && backupDirectory != null)
       {
