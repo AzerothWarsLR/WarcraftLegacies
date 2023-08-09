@@ -1,4 +1,5 @@
-﻿using System;
+﻿#nullable enable
+using System;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
@@ -37,7 +38,7 @@ namespace Launcher.Services
       _compilerSettings = compilerSettings;
       _mapSettings = mapSettings;
     }
-    
+
     /// <summary>
     /// Builds a Warcraft 3 map based on the provided inputs and saves it to the file system.
     /// </summary>
@@ -46,7 +47,9 @@ namespace Launcher.Services
     /// <param name="sourceCodeProjectFolderPath">C# code in this directory will be transpiled to Lua and included in the map.</param>
     /// <param name="launch">Whether or not to launch the map after building.</param>
     /// <param name="outputDirectory">Where the final map will be saved to.</param>
-    public void BuildAndSave(MapBuilder mapBuilder, string mapName, string sourceCodeProjectFolderPath, bool launch, string outputDirectory)
+    /// <param name="backupDirectory">Any overwritten maps will be moved to this directory instead of being deleted.</param>
+    public void BuildAndSave(MapBuilder mapBuilder, string mapName, string? sourceCodeProjectFolderPath, bool launch,
+      string outputDirectory, string? backupDirectory)
     {
       Directory.CreateDirectory(_compilerSettings.ArtifactsPath);
       
@@ -68,8 +71,15 @@ namespace Launcher.Services
         AttributesCreateMode = MpqFileCreateMode.Overwrite,
         ListFileCreateMode = MpqFileCreateMode.Overwrite
       };
-
+      
       var mapFilePath = $"{Path.Combine(outputDirectory, mapName)}{_mapSettings.Version}.w3x";
+
+      if (File.Exists(mapFilePath) && backupDirectory != null)
+      {
+        Directory.CreateDirectory(backupDirectory);
+        var backupName = $"{Path.GetFileNameWithoutExtension(mapFilePath)}{DateTime.Now:yyyyMMdd}.w3x";
+        File.Copy(mapFilePath, Path.Combine(backupDirectory, backupName));
+      }
 
       mapBuilder.Build(mapFilePath, archiveCreateOptions);
       if (launch)

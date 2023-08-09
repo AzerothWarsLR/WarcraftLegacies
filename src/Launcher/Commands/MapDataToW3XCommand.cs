@@ -39,12 +39,17 @@ namespace Launcher.Commands
         name: "--sourcecodepath",
         description: "C# code included in this directory will be transpiled into Lua and included in the output.");
       command.AddOption(sourceCodeFolderPathOption);
+      
+      var backupDirectoryOption = new Option<string>(
+        name: "--backup-directory",
+        description: "Any overwritten maps will be moved to this directory instead of being deleted.");
+      command.AddOption(backupDirectoryOption);
 
       command.SetHandler(Run, mapNameArgument, launchArgument, mapDataDirectoryArgument, outputDirectoryArgument,
-        sourceCodeFolderPathOption);
+        sourceCodeFolderPathOption, backupDirectoryOption);
     }
 
-    private static void Run(string mapName, bool launch, string mapDataDirectory, string outputDirectory, string? sourceCodeFolderPath)
+    private static void Run(string mapName, bool launch, string mapDataDirectory, string outputDirectory, string? sourceCodeFolderPath, string? backupDirectory)
     {
       var appConfiguration = Program.GetAppConfiguration();
       var compilerSettings = appConfiguration.GetRequiredSection(nameof(CompilerSettings)).Get<CompilerSettings>();
@@ -56,7 +61,7 @@ namespace Launcher.Commands
       var mapBuilderFromMapData = conversionService.Convert(mapDataDirectory);
       
       new MapBuilderService(compilerSettings, mapSettings)
-        .BuildAndSave(mapBuilderFromMapData, mapName, sourceCodeFolderPath, launch, outputDirectory);
+        .BuildAndSave(mapBuilderFromMapData, mapName, sourceCodeFolderPath, launch, outputDirectory, backupDirectory);
     }
   }
 }
