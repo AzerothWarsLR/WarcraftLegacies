@@ -30,10 +30,10 @@ namespace Launcher.Commands
     private static void Run(string mapName, string baseMapPath)
     {
       var config = Program.GetAppConfiguration();
-      var launchSettings = config.GetRequiredSection(nameof(LaunchSettings)).Get<LaunchSettings>();
+      var compilerSettings = config.GetRequiredSection(nameof(CompilerSettings)).Get<CompilerSettings>();
       var autoMapperConfig = new AutoMapperConfigurationService().GetConfiguration();
       var mapper = new Mapper(autoMapperConfig);
-      new W3XToMapDataConversionService(mapper).Convert(baseMapPath, Path.Combine(launchSettings.MapDataPath, mapName));
+      new W3XToMapDataConversionService(mapper).Convert(baseMapPath, Path.Combine(compilerSettings.MapDataPath, mapName));
     }
   }
 }

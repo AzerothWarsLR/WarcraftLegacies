@@ -1,6 +1,6 @@
 ﻿namespace Launcher.Settings
 {
-  public sealed class LaunchSettings
+  public sealed class CompilerSettings
   {
     /// <summary>
     /// The player slot to launch the testing player as.

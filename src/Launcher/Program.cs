@@ -49,7 +49,7 @@ namespace Launcher
       };
       File.WriteAllText(userAppsettingsFilePath, JsonSerializer.Serialize(new AppSettings()
       {
-        LaunchSettings = new LaunchSettings
+        CompilerSettings = new CompilerSettings
         {
           TestingPlayerSlot = 0,
           Warcraft3ExecutablePath = ""

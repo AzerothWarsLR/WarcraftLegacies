@@ -21,7 +21,7 @@ namespace Launcher.Services
   /// </summary>
   public sealed class MapBuilderService
   {
-    private readonly LaunchSettings _launchSettings;
+    private readonly CompilerSettings _compilerSettings;
     private readonly MapSettings _mapSettings;
     private const string War3MapLua = "war3map.lua";
     
@@ -32,9 +32,9 @@ namespace Launcher.Services
 		private const bool Debug = false;
 #endif
 
-    public MapBuilderService(LaunchSettings launchSettings, MapSettings mapSettings)
+    public MapBuilderService(CompilerSettings compilerSettings, MapSettings mapSettings)
     {
-      _launchSettings = launchSettings;
+      _compilerSettings = compilerSettings;
       _mapSettings = mapSettings;
     }
     
@@ -48,19 +48,19 @@ namespace Launcher.Services
     /// <param name="outputDirectory">Where the final map will be saved to.</param>
     public void BuildAndSave(MapBuilder mapBuilder, string mapName, string sourceCodeProjectFolderPath, bool launch, string outputDirectory)
     {
-      Directory.CreateDirectory(_launchSettings.SharedAssetsPath);
-      Directory.CreateDirectory(_launchSettings.ArtifactsPath);
-      Directory.CreateDirectory(_launchSettings.PublishedMapsPath);
+      Directory.CreateDirectory(_compilerSettings.SharedAssetsPath);
+      Directory.CreateDirectory(_compilerSettings.ArtifactsPath);
+      Directory.CreateDirectory(_compilerSettings.PublishedMapsPath);
       
       var map = mapBuilder.Map;
-      mapBuilder.AddFiles(_launchSettings.SharedAssetsPath);
+      mapBuilder.AddFiles(_compilerSettings.SharedAssetsPath);
       //ConfigureControlPointData(map);
       if (launch)
-        SetTestPlayerSlot(map, _launchSettings.TestingPlayerSlot);
+        SetTestPlayerSlot(map, _compilerSettings.TestingPlayerSlot);
       SetMapTitles(map, _mapSettings.Version);
 
       if (sourceCodeProjectFolderPath != null)
-        AddCSharpCode(map, sourceCodeProjectFolderPath, _launchSettings);
+        AddCSharpCode(map, sourceCodeProjectFolderPath, _compilerSettings);
 
       // Build w3x file
       var archiveCreateOptions = new MpqArchiveCreateOptions
@@ -74,15 +74,15 @@ namespace Launcher.Services
 
       mapBuilder.Build(mapFilePath, archiveCreateOptions);
       if (launch)
-        LaunchGame(_launchSettings.Warcraft3ExecutablePath, mapFilePath);
+        LaunchGame(_compilerSettings.Warcraft3ExecutablePath, mapFilePath);
     }
 
-    private static void AddCSharpCode(Map map, string projectFolderPath, LaunchSettings launchSettings)
+    private static void AddCSharpCode(Map map, string projectFolderPath, CompilerSettings compilerSettings)
     {
       //Set debug options if necessary, configure compiler
       const string csc = Debug ? "-debug -define:DEBUG" : null;
       var csproj = Directory.EnumerateFiles(projectFolderPath, "*.csproj", SearchOption.TopDirectoryOnly).Single();
-      var compiler = new Compiler(csproj, launchSettings.ArtifactsPath, string.Empty, null!,
+      var compiler = new Compiler(csproj, compilerSettings.ArtifactsPath, string.Empty, null!,
         "War3Api.*;WCSharp.*;MacroTools.*", "", csc, false, null,
         string.Empty)
       {
@@ -110,7 +110,7 @@ namespace Launcher.Services
         throw new Exception(compileResult.Diagnostics.First(x => x.Severity == DiagnosticSeverity.Error).GetMessage());
 
       // Update war3map.lua so you can inspect the generated Lua code easily
-      File.WriteAllText(Path.Combine(launchSettings.ArtifactsPath, War3MapLua), map.Script);
+      File.WriteAllText(Path.Combine(compilerSettings.ArtifactsPath, War3MapLua), map.Script);
     }
     
     private static void SetMapTitles(Map map, string version)

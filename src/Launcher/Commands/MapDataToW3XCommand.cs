@@ -47,15 +47,15 @@ namespace Launcher.Commands
     private static void Run(string mapName, bool launch, bool publish, string outputDirectory, string? sourceCodeFolderPath)
     {
       var appConfiguration = Program.GetAppConfiguration();
-      var launchSettings = appConfiguration.GetRequiredSection(nameof(LaunchSettings)).Get<LaunchSettings>();
+      var compilerSettings = appConfiguration.GetRequiredSection(nameof(CompilerSettings)).Get<CompilerSettings>();
       var mapSettings = appConfiguration.GetRequiredSection(nameof(MapSettings)).Get<MapSettings>();
       
       var autoMapperConfig = new AutoMapperConfigurationService().GetConfiguration();
       var mapper = new Mapper(autoMapperConfig);
       var conversionService = new MapDataToW3XConversionService(mapper, new JsonModifierProvider());
-      var mapBuilderFromMapData = conversionService.Convert(Path.Combine(launchSettings.MapDataPath, mapName));
+      var mapBuilderFromMapData = conversionService.Convert(Path.Combine(compilerSettings.MapDataPath, mapName));
       
-      new MapBuilderService(launchSettings, mapSettings)
+      new MapBuilderService(compilerSettings, mapSettings)
         .BuildAndSave(mapBuilderFromMapData, mapName, sourceCodeFolderPath, launch, outputDirectory);
     }
   }

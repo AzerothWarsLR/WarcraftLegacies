@@ -8,6 +8,6 @@
     /// <summary>
     /// Dummy property used for serialization.
     /// </summary>
-    public LaunchSettings LaunchSettings { get; set; }
+    public CompilerSettings CompilerSettings { get; set; }
   }
 }
