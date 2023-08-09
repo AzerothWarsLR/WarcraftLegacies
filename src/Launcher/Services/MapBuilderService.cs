@@ -48,11 +48,10 @@ namespace Launcher.Services
     /// <param name="outputDirectory">Where the final map will be saved to.</param>
     public void BuildAndSave(MapBuilder mapBuilder, string mapName, string sourceCodeProjectFolderPath, bool launch, string outputDirectory)
     {
-      Directory.CreateDirectory(_compilerSettings.SharedAssetsPath);
       Directory.CreateDirectory(_compilerSettings.ArtifactsPath);
-      Directory.CreateDirectory(_compilerSettings.PublishedMapsPath);
       
       var map = mapBuilder.Map;
+      Directory.CreateDirectory(_compilerSettings.SharedAssetsPath);
       mapBuilder.AddFiles(_compilerSettings.SharedAssetsPath);
       //ConfigureControlPointData(map);
       if (launch)

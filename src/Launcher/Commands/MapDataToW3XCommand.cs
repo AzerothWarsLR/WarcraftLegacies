@@ -25,11 +25,6 @@ namespace Launcher.Commands
         description: "Whether or not to launch the map after it's converted.");
       command.AddArgument(launchArgument);
       
-      var publishArgument = new Argument<bool>(
-        name: "publish",
-        description: "If true, the map will be saved in a directory for published maps.");
-      command.AddArgument(publishArgument);
-      
       var outputDirectoryArgument = new Argument<string>(
         name: "outputDirectory",
         description: "Where the fully built map should be saved.");
@@ -40,11 +35,11 @@ namespace Launcher.Commands
         description: "C# code included in this directory will be transpiled into Lua and included in the output.");
       command.AddOption(sourceCodeFolderPathOption);
 
-      command.SetHandler(Run, mapNameArgument, launchArgument, publishArgument, outputDirectoryArgument,
+      command.SetHandler(Run, mapNameArgument, launchArgument, outputDirectoryArgument,
         sourceCodeFolderPathOption);
     }
 
-    private static void Run(string mapName, bool launch, bool publish, string outputDirectory, string? sourceCodeFolderPath)
+    private static void Run(string mapName, bool launch, string outputDirectory, string? sourceCodeFolderPath)
     {
       var appConfiguration = Program.GetAppConfiguration();
       var compilerSettings = appConfiguration.GetRequiredSection(nameof(CompilerSettings)).Get<CompilerSettings>();
