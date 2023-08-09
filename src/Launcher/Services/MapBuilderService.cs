@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using CSharpLua;
+using Launcher.Extensions;
 using Launcher.Settings;
 using Microsoft.CodeAnalysis;
 using Microsoft.Extensions.Configuration;
