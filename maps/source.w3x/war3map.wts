@@ -111173,7 +111173,7 @@ W
 }
 
 STRING 18532
-// Abilities: A0S0 (Devour), Hotkey (Hotkey - Normal)
+// Abilities: A0BW (Flaming Sword), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -111215,7 +111215,7 @@ Flame Keeper
 }
 
 STRING 18539
-// Abilities: A0S0 (Devour), Researchhotkey (Hotkey - Learn)
+// Abilities: A0BW (Flaming Sword), Unhotkey (Hotkey - Turn Off)
 {
 W
 }
@@ -111233,7 +111233,7 @@ Train Bear Rider
 }
 
 STRING 18542
-// Abilities: A0ZU (Summon Mud Golem), Hotkey (Hotkey - Normal)
+// Abilities: A0S0 (Devour), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -111269,13 +111269,13 @@ E
 }
 
 STRING 18548
-// Abilities: A0ZU (Summon Mud Golem), Researchhotkey (Hotkey - Learn)
+// Abilities: A0S0 (Devour), Researchhotkey (Hotkey - Learn)
 {
 W
 }
 
 STRING 18549
-// Abilities: A0ZW (Animal Companion), Hotkey (Hotkey - Normal)
+// Abilities: A0ZU (Summon Mud Golem), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -111293,7 +111293,7 @@ Q
 }
 
 STRING 18552
-// Abilities: A12F (Dispel Magic), Hotkey (Hotkey - Normal)
+// Abilities: A0ZU (Summon Mud Golem), Researchhotkey (Hotkey - Learn)
 {
 W
 }
@@ -111323,13 +111323,13 @@ E
 }
 
 STRING 18557
-// Abilities: A12I (Call to Battle), Researchhotkey (Hotkey - Learn)
+// Abilities: A0ZW (Animal Companion), Hotkey (Hotkey - Normal)
 {
 W
 }
 
 STRING 18558
-// Abilities: A12J (Frenzy), Hotkey (Hotkey - Normal)
+// Abilities: A12F (Dispel Magic), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -111353,7 +111353,7 @@ STRING 18561
 }
 
 STRING 18562
-// Abilities: A12J (Frenzy), Unhotkey (Hotkey - Turn Off)
+// Abilities: A12I (Call to Battle), Researchhotkey (Hotkey - Learn)
 {
 W
 }
@@ -111383,7 +111383,7 @@ Gilneas Cathedral
 }
 
 STRING 18567
-// Abilities: A12V (Blessed Ground), Hotkey (Hotkey - Normal)
+// Abilities: A12J (Frenzy), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -113160,7 +113160,7 @@ STRING 18862
 }
 
 STRING 18863
-// Abilities: A12Y (Divine Salvation), Hotkey (Hotkey - Normal)
+// Abilities: A12J (Frenzy), Unhotkey (Hotkey - Turn Off)
 {
 W
 }
@@ -114162,7 +114162,7 @@ An impenetrable shield surrounds the Paladin, protecting him from all damage and
 }
 
 STRING 19030
-// Abilities: A12Y (Divine Salvation), Unhotkey (Hotkey - Turn Off)
+// Abilities: A12V (Blessed Ground), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -114294,7 +114294,7 @@ Mass Unholy Armor - [|cffffcc00Level 2|r]
 }
 
 STRING 19052
-// Abilities: A12Y (Divine Salvation), Researchhotkey (Hotkey - Learn)
+// Abilities: A12Y (Divine Salvation), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -115074,7 +115074,7 @@ Medium dragon of the Dragonmaw Clan.|n|r|n|cffffcc00Attacks land and air units.|
 }
 
 STRING 19182
-// Abilities: A130 (Resurrection), Hotkey (Hotkey - Normal)
+// Abilities: A12Y (Divine Salvation), Unhotkey (Hotkey - Turn Off)
 {
 W
 }
@@ -116755,7 +116755,7 @@ Thunder Fists - [|cffffcc00Level 3|r]
 }
 
 STRING 19462
-// Abilities: A0H1 (Storming Brew), Hotkey (Hotkey - Normal)
+// Abilities: A12Y (Divine Salvation), Researchhotkey (Hotkey - Learn)
 {
 W
 }
@@ -117595,7 +117595,7 @@ STRING 19601
 }
 
 STRING 19602
-// Abilities: A0N5 (Healing Wave), Hotkey (Hotkey - Normal)
+// Abilities: A130 (Resurrection), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -118824,7 +118824,7 @@ Thunder Fists - [|cffffcc00Level 4|r]
 }
 
 STRING 19807
-// Abilities: A133 (Wolf Companion), Researchhotkey (Hotkey - Learn)
+// Abilities: A0H1 (Storming Brew), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -119808,7 +119808,7 @@ STRING 19970
 }
 
 STRING 19971
-// Upgrades: Rora (Steel Ranged Weapons,Thorium Ranged Weapons,Arcanite Ranged Weapons), Hotkey (Hotkey)
+// Abilities: A0N5 (Healing Wave), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -120408,7 +120408,7 @@ Thunder Fists - [|cffffcc00Level 3|r]
 }
 
 STRING 20071
-// Upgrades: Rora (Steel Ranged Weapons,Thorium Ranged Weapons,Arcanite Ranged Weapons), Hotkey (Hotkey)
+// Abilities: A133 (Wolf Companion), Researchhotkey (Hotkey - Learn)
 {
 W
 }
@@ -121452,13 +121452,13 @@ E
 }
 
 STRING 20245
-// Abilities: A0BW (Flaming Sword), Hotkey (Hotkey - Normal)
+// Abilities: A12D (Legendary Warrior), Hotkey (Hotkey - Normal)
 {
 E
 }
 
 STRING 20246
-// Abilities: A0BW (Flaming Sword), Unhotkey (Hotkey - Turn Off)
+// Abilities: A12D (Legendary Warrior), Researchhotkey (Hotkey - Learn)
 {
 E
 }
@@ -121662,7 +121662,7 @@ Arcane Absorption - [|cffffcc00Level 3|r]
 }
 
 STRING 20280
-// Abilities: A12D (Legendary Warrior), Hotkey (Hotkey - Normal)
+// Abilities: A0ZN (Crystal Strike), Hotkey (Hotkey - Normal)
 {
 E
 }
@@ -121722,7 +121722,7 @@ Innacurate bombardment of an area with 30 waves of one cannonball. Each ball dea
 }
 
 STRING 20290
-// Upgrades: Rhra (Black Gunpowder,Refined Gunpowder,Imbued Gunpowder), Hotkey (Hotkey)
+// Upgrades: Rora (Steel Ranged Weapons,Thorium Ranged Weapons,Arcanite Ranged Weapons), Hotkey (Hotkey)
 {
 W
 }
@@ -122334,7 +122334,7 @@ Phase Blade - [|cffffcc00Level 2|r]
 }
 
 STRING 20392
-// Abilities: A12D (Legendary Warrior), Researchhotkey (Hotkey - Learn)
+// Abilities: A12E (Flame Shield), Hotkey (Hotkey - Normal)
 {
 E
 }
@@ -122736,7 +122736,7 @@ STRING 20458
 }
 
 STRING 20459
-// Abilities: A0ZN (Crystal Strike), Hotkey (Hotkey - Normal)
+// Abilities: A12T (Summon Bear), Hotkey (Hotkey - Normal)
 {
 E
 }
@@ -122856,7 +122856,7 @@ STRING 20478
 }
 
 STRING 20479
-// Abilities: A12E (Flame Shield), Hotkey (Hotkey - Normal)
+// Abilities: A12U (Salvation), Hotkey (Hotkey - Normal)
 {
 E
 }
@@ -123006,7 +123006,7 @@ STRING 20503
 }
 
 STRING 20504
-// Abilities: A12T (Summon Bear), Hotkey (Hotkey - Normal)
+// Abilities: A12U (Salvation), Unhotkey (Hotkey - Turn Off)
 {
 E
 }
@@ -123066,19 +123066,19 @@ STRING 20513
 }
 
 STRING 20514
-// Abilities: A12U (Salvation), Hotkey (Hotkey - Normal)
+// Abilities: A0H1 (Storming Brew), Researchhotkey (Hotkey - Learn)
 {
 E
 }
 
 STRING 20515
-// Upgrades: Rhra (Black Gunpowder,Refined Gunpowder,Imbued Gunpowder), Hotkey (Hotkey)
+// Upgrades: Rora (Steel Ranged Weapons,Thorium Ranged Weapons,Arcanite Ranged Weapons), Hotkey (Hotkey)
 {
 W
 }
 
 STRING 20516
-// Abilities: A12U (Salvation), Unhotkey (Hotkey - Turn Off)
+// Abilities: A135 (Bloodlust), Hotkey (Hotkey - Normal)
 {
 E
 }
@@ -123312,7 +123312,7 @@ Summon Raptors
 }
 
 STRING 20555
-// Abilities: A0H1 (Storming Brew), Researchhotkey (Hotkey - Learn)
+// Abilities: A135 (Bloodlust), Unhotkey (Hotkey - Turn Off)
 {
 E
 }
@@ -123336,7 +123336,7 @@ STRING 20558
 }
 
 STRING 20559
-// Abilities: A135 (Bloodlust), Hotkey (Hotkey - Normal)
+// Abilities: A0YZ (Far Sight), Hotkey (Hotkey - Normal)
 {
 E
 }
@@ -123757,7 +123757,7 @@ C
 }
 
 STRING 20629
-// Abilities: A135 (Bloodlust), Unhotkey (Hotkey - Turn Off)
+// Abilities: A136 (Corruption), Hotkey (Hotkey - Normal)
 {
 E
 }
@@ -124099,25 +124099,25 @@ Consumed by the Void - [|cffffcc00Level 3|r]
 }
 
 STRING 20686
-// Abilities: A0YZ (Far Sight), Hotkey (Hotkey - Normal)
-{
-E
-}
-
-STRING 20687
-// Abilities: A136 (Corruption), Hotkey (Hotkey - Normal)
-{
-E
-}
-
-STRING 20688
 // Abilities: A13D (Flaming Sword), Hotkey (Hotkey - Normal)
 {
 E
 }
 
-STRING 20689
+STRING 20687
 // Abilities: A13D (Flaming Sword), Unhotkey (Hotkey - Turn Off)
+{
+E
+}
+
+STRING 20688
+// Upgrades: Rhlh (Improved Lumber Harvesting,Advanced Lumber Harvesting), Hotkey (Hotkey)
+{
+E
+}
+
+STRING 20689
+// Upgrades: Rhlh (Improved Lumber Harvesting,Advanced Lumber Harvesting), Hotkey (Hotkey)
 {
 E
 }
@@ -124225,7 +124225,7 @@ Q
 }
 
 STRING 20707
-// Upgrades: Rhlh (Improved Lumber Harvesting,Advanced Lumber Harvesting), Hotkey (Hotkey)
+// Upgrades: Renb (Nature's Blessing), Hotkey (Hotkey)
 {
 E
 }
@@ -124333,13 +124333,13 @@ Consumes an enemy unit, dealing 500 damage if it's a hero and killing it instant
 }
 
 STRING 20725
-// Upgrades: Rhac (Improved Masonry,Advanced Masonry,Imbued Masonry), Hotkey (Hotkey)
+// Upgrades: Rhra (Black Gunpowder,Refined Gunpowder,Imbued Gunpowder), Hotkey (Hotkey)
 {
 W
 }
 
 STRING 20726
-// Upgrades: Rhac (Improved Masonry,Advanced Masonry,Imbued Masonry), Hotkey (Hotkey)
+// Upgrades: Rhra (Black Gunpowder,Refined Gunpowder,Imbued Gunpowder), Hotkey (Hotkey)
 {
 W
 }
@@ -124633,7 +124633,7 @@ W
 }
 
 STRING 20775
-// Upgrades: Rhlh (Improved Lumber Harvesting,Advanced Lumber Harvesting), Hotkey (Hotkey)
+// Upgrades: Renb (Nature's Blessing), Hotkey (Hotkey)
 {
 E
 }
@@ -124759,7 +124759,7 @@ Q
 }
 
 STRING 20796
-// Upgrades: Renb (Nature's Blessing), Hotkey (Hotkey)
+// Upgrades: R06K (Defend), Hotkey (Hotkey)
 {
 E
 }
@@ -124855,7 +124855,7 @@ Mystical hero, adept at dealing magical damage.|n|cfff5962dAbilities:|r Mana Shi
 }
 
 STRING 20812
-// Upgrades: Renb (Nature's Blessing), Hotkey (Hotkey)
+// Upgrades: R06G (Defend), Hotkey (Hotkey)
 {
 E
 }
@@ -124891,7 +124891,7 @@ Q
 }
 
 STRING 20818
-// Upgrades: R01B (Defend), Hotkey (Hotkey)
+// Upgrades: Rhac (Improved Masonry,Advanced Masonry,Imbued Masonry), Hotkey (Hotkey)
 {
 W
 }
@@ -125125,37 +125125,37 @@ F
 }
 
 STRING 20857
-// Upgrades: R06K (Defend), Hotkey (Hotkey)
-{
-E
-}
-
-STRING 20858
-// Upgrades: R06G (Defend), Hotkey (Hotkey)
-{
-E
-}
-
-STRING 20859
 // Upgrades: R06F (Defend), Hotkey (Hotkey)
 {
 E
 }
 
+STRING 20858
+// Upgrades: R064 (Nature's Blessing), Hotkey (Hotkey)
+{
+E
+}
+
+STRING 20859
+// Upgrades: R03M (Defend), Hotkey (Hotkey)
+{
+E
+}
+
 STRING 20860
-// Upgrades: R07I (Necromancer Adept Training,Necromancer Master Training), Hotkey (Hotkey)
+// Upgrades: Rhac (Improved Masonry,Advanced Masonry,Imbued Masonry), Hotkey (Hotkey)
 {
 W
 }
 
 STRING 20861
-// Upgrades: R07I (Necromancer Adept Training,Necromancer Master Training), Hotkey (Hotkey)
+// Upgrades: R01B (Defend), Hotkey (Hotkey)
 {
 W
 }
 
 STRING 20862
-// Upgrades: R064 (Nature's Blessing), Hotkey (Hotkey)
+// Upgrades: R02P (Backpack), Hotkey (Hotkey)
 {
 E
 }
@@ -125179,7 +125179,7 @@ Dark art mage of the horde.|n|cfff5962dAbilities:|R Firebolt|n|cfff5962dCan Lear
 }
 
 STRING 20866
-// Upgrades: R03M (Defend), Hotkey (Hotkey)
+// Upgrades: R03O (Animal War Training), Hotkey (Hotkey)
 {
 E
 }
@@ -125533,7 +125533,7 @@ Salvation
 }
 
 STRING 20926
-// Upgrades: R02P (Backpack), Hotkey (Hotkey)
+// Upgrades: R03O (Animal War Training), Hotkey (Hotkey)
 {
 E
 }
@@ -126289,7 +126289,7 @@ Increases Astromancer 's mana capacity, attack damage and gives them the ability
 }
 
 STRING 21052
-// Upgrades: R03O (Animal War Training), Hotkey (Hotkey)
+// Upgrades: R097 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 E
 }
@@ -126691,21 +126691,15 @@ STRING 21118
 }
 
 STRING 21119
-// Upgrades: R03O (Animal War Training), Hotkey (Hotkey)
+// Upgrades: R086 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 E
 }
 
 STRING 21120
-// Upgrades: R07W (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R07I (Necromancer Adept Training,Necromancer Master Training), Hotkey (Hotkey)
 {
 W
-}
-
-STRING 21121
-// Upgrades: R097 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
-{
-E
 }
 
 STRING 21122
@@ -126834,12 +126828,6 @@ STRING 21142
 R
 }
 
-STRING 21143
-// Upgrades: R086 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
-{
-E
-}
-
 STRING 21144
 // Upgrades: R09U (Magic Sentry), EditorSuffix (Editor Suffix)
 {
@@ -126894,10 +126882,22 @@ STRING 21153
 Sanctum for the spellcasters of the Sunfury.|n|cfff5962dTrains:|R Astromancer, Flamekeeper,Blood Knight Squire Warlock|n|cfff5962dResearches:|R Astromancer Training, Flamekeeper Training, Seal of Blood
 }
 
+STRING 21154
+// Upgrades: R07I (Necromancer Adept Training,Necromancer Master Training), Hotkey (Hotkey)
+{
+W
+}
+
 STRING 21155
 // Upgrades: R09U (Magic Sentry), effect1 (Effect 1)
 {
 rmnx
+}
+
+STRING 21157
+// Upgrades: R07W (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+{
+W
 }
 
 STRING 21158
