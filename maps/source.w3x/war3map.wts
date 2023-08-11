@@ -108129,12 +108129,6 @@ STRING 18024
 Shimmering Flats (10gold/min)
 }
 
-STRING 18025
-// Units: h0CE (Blood Knight Squire), Ubertip (Tooltip - Extended)
-{
-Light-infused warrior.|n|cfff5962dAbilities:|RCharge,Feedback,Flaming Sword,Mana Shield|n|cfff5962dCan Learn:|R Seal of Blood|n|n|cff99b4d1Can only train 12|n|cffffcc00Attacks land units.|r
-}
-
 STRING 18026
 // Abilities: A0U5 (Greater Storm Bolt), EditorSuffix (Editor Suffix)
 {
@@ -126934,5 +126928,11 @@ STRING 21163
 // Abilities: A13D (Flaming Sword), Ubertip (Tooltip - Normal - Extended)
 {
 Adds <A057,DataA2> bonus damage to an attack against enemies, but drains mana with each attack made.
+}
+
+STRING 21165
+// Units: h0CE (Blood Knight Squire), Ubertip (Tooltip - Extended)
+{
+Light-infused warrior.|n|cfff5962dAbilities:|R Charge,Flaming Sword, Mana Shield|n|cfff5962dCan Learn:|R Seal of Blood|n|n|cff99b4d1Can only train 12|n|cffffcc00Attacks land units.|r
 }
 
