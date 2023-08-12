@@ -52,13 +52,13 @@ Your main goal is to summon Kil'jaeden and destroy your enemies."
       Sunfury.ModObjectLimit(FourCC("u02W"), 2); //Energy Wagon
       Sunfury.ModObjectLimit(FourCC("h0CH"), Faction.UNLIMITED); //Astromancer
       Sunfury.ModObjectLimit(FourCC("h0CG"), Faction.UNLIMITED); //Flamekeeper
-      Sunfury.ModObjectLimit(Constants.UNIT_H0CE_BLOOD_KNIGHT_SQUIRE_SUNFURY_DUMMY, 12);
+      Sunfury.ModObjectLimit(Constants.UNIT_H0CE_BLOOD_KNIGHT_SQUIRE_SUNFURY, 12);
       Sunfury.ModObjectLimit(FourCC("n0E3"), 6); //Warlock
       Sunfury.ModObjectLimit(FourCC("n0E4"), 6); //Elven Ballista
       Sunfury.ModObjectLimit(FourCC("n0E8"), 3); //Skyship
       Sunfury.ModObjectLimit(FourCC("n0E7"), 6); //Bloodwarder
       //Sunfury.ModObjectLimit(FourCC("n0E5"), 8); //Fel Reaver
-      Sunfury.ModObjectLimit(FourCC("n0E6"), 4); //Shivarra
+      //Sunfury.ModObjectLimit(FourCC("n0E6"), 4); //Shivarra
       Sunfury.ModObjectLimit(FourCC("e01B"), 6); //Arcane Annihilator
       Sunfury.ModObjectLimit(FourCC("n006"), 2); //Ancient of the Arcane
 
