@@ -47503,28 +47503,10 @@ STRING 7914
 Q
 }
 
-STRING 7915
-// Abilities: A0SL (Minor Holy Light), Name (Name)
-{
-Minor Holy Light
-}
-
 STRING 7916
-// Abilities: A0SL (Minor Holy Light), Researchtip (Tooltip - Learn)
+// Abilities: A0SL (Crimson Renewal ), Researchtip (Tooltip - Learn)
 {
 |cff7777aaHoly Light|r |cff7777aa[E]|r
-}
-
-STRING 7917
-// Abilities: A0SL (Minor Holy Light), Tip (Tooltip - Normal)
-{
-Minor Holy Light
-}
-
-STRING 7918
-// Abilities: A0SL (Minor Holy Light), Ubertip (Tooltip - Normal - Extended)
-{
-A holy light that can heal a friendly living unit for 150 or deal half damage to an enemy Undead unit.
 }
 
 STRING 7919
@@ -56503,7 +56485,7 @@ STRING 9415
 }
 
 STRING 9416
-// Abilities: A0SL (Minor Holy Light), Hotkey (Hotkey - Normal)
+// Abilities: A0SL (Crimson Renewal ), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -124716,12 +124698,6 @@ STRING 20788
 (Sunfury Worker)
 }
 
-STRING 20789
-// Units: h0CG (Flamekeeper), Casterupgradetip (Caster Upgrade Tips)
-{
-- Cremate,- Cremate|n- Minor Holy Light,- Cremate|n- Minor Holy Light|n- Flame Shield
-}
-
 STRING 20790
 // Upgrades: R09L (Shaman Adept Training,Shaman Master Training), Ubertip (Tooltip - Extended)
 {
@@ -124906,12 +124882,6 @@ STRING 20820
 // Abilities: A0LX (Gateway Reinforcements), Tip (Tooltip - Normal)
 {
 Gateway Reinforcements
-}
-
-STRING 20821
-// Abilities: A0SL (Minor Holy Light), EditorSuffix (Editor Suffix)
-{
-(Flamekeeper
 }
 
 STRING 20822
@@ -125844,12 +125814,6 @@ STRING 20976
 Rangers exiled from their Kin.|n|cfff5962dAbilities:|R Animal Companion, Fire Arrows, Mana Shield|n|n|cffffcc00Attacks land and air units.|r
 }
 
-STRING 20977
-// Units: h0CG (Flamekeeper), Ubertip (Tooltip - Extended)
-{
-Well-versed wizard in the fire arts.|n|cfff5962dAbilities:|R Cremate, Mana Shield|n|cfff5962dCan Learn:|R Minor Holy Light, Flame Shield|n|n|cffffcc00Attacks land and air units.|R
-}
-
 STRING 20978
 // Units: h0CH (Astromancer), Ubertip (Tooltip - Extended)
 {
@@ -126136,12 +126100,6 @@ STRING 21025
 // Upgrades: R09G (Sorceress Adept Training,Sorceress Master Training), EditorSuffix (Editor Suffix)
 {
 (sunfury)
-}
-
-STRING 21026
-// Upgrades: R09G (Sorceress Adept Training,Sorceress Master Training), Ubertip (Tooltip - Extended)
-{
-Increases Flamekeeper's mana capacity, attack damage and gives them the ability to cast Minor Holy Light.
 }
 
 STRING 21027
@@ -127042,5 +127000,47 @@ STRING 21177
 // Upgrades: R09V (Magic Sentry), Ubertip (Tooltip - Extended)
 {
 Allows Druids of the Talon to transform into a flying unit, can attack land and air units.
+}
+
+STRING 21178
+// Units: h0CG (Flamekeeper), Casterupgradetip (Caster Upgrade Tips)
+{
+- Cremate,- Cremate|n- Crimson Renewal ,- Cremate|n- Crimson Renewal|n- Flame Shield
+}
+
+STRING 21179
+// Units: h0CG (Flamekeeper), Ubertip (Tooltip - Extended)
+{
+Well-versed wizard in the fire arts.|n|cfff5962dAbilities:|R Cremate, Mana Shield|n|cfff5962dCan Learn:|R Crimson Renewal, Flame Shield|n|n|cffffcc00Attacks land and air units.|R
+}
+
+STRING 21180
+// Abilities: A0SL (Crimson Renewal ), EditorSuffix (Editor Suffix)
+{
+(Flamekeeper)
+}
+
+STRING 21181
+// Abilities: A0SL (Crimson Renewal ), Name (Name)
+{
+Crimson Renewal 
+}
+
+STRING 21182
+// Abilities: A0SL (Crimson Renewal ), Tip (Tooltip - Normal)
+{
+Crimson Renewal 
+}
+
+STRING 21183
+// Abilities: A0SL (Crimson Renewal ), Ubertip (Tooltip - Normal - Extended)
+{
+A magical beam that can heal a friendly living unit for 150 or deal half damage to an enemy Undead unit.
+}
+
+STRING 21184
+// Upgrades: R09G (Sorceress Adept Training,Sorceress Master Training), Ubertip (Tooltip - Extended)
+{
+Increases Flamekeeper's mana capacity, attack damage and gives them the ability to cast Crimson Renewal.
 }
 
