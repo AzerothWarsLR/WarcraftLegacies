@@ -55494,12 +55494,6 @@ STRING 9246
 (Gilneas Scythe)
 }
 
-STRING 9247
-// Abilities: A08Z (Invoke Spiders), Ubertip (Tooltip - Normal - Extended)
-{
-The Druid summons 3 spiders from nearby. The spiders are untargetable and uncontrollable and will attack enemies in proximity.
-}
-
 STRING 9248
 // Abilities: A099 (Mass Anti-magic Shield), Name (Name)
 {
@@ -85008,6 +85002,12 @@ STRING 14163
 Increases Druid of the Talons' mana capacity, mana regeneration rate, hit points, and gives them the ability Dispel Magic.
 }
 
+STRING 14164
+// Abilities: A08Z (Invoke Spiders), Ubertip (Tooltip - Normal - Extended)
+{
+The Druid summons 3 spiders from a nearby corpse. The spiders are untargetable and uncontrollable and will attack enemies in proximity.
+}
+
 STRING 14165
 // Upgrades: R047 (Marksmanship), EditorSuffix (Editor Suffix)
 {
@@ -94306,6 +94306,12 @@ STRING 15721
 // Abilities: ANms (Mana Shield), Untip (Tooltip - Turn Off)
 {
 Deactivate Mana Shield
+}
+
+STRING 15722
+// Abilities: A13E (Invoke Spiders), Ubertip (Tooltip - Normal - Extended)
+{
+The Druid summons 2 spiders from a nearby corpse. The spiders are untargetable and uncontrollable and will attack enemies in proximity.
 }
 
 STRING 15723
@@ -126910,12 +126916,6 @@ STRING 21155
 // Upgrades: R09U (Magic Sentry), effect1 (Effect 1)
 {
 rmnx
-}
-
-STRING 21156
-// Abilities: A13E (Invoke Spiders), Ubertip (Tooltip - Normal - Extended)
-{
-The Druid summons 2 spiders from nearby. The spiders are untargetable and uncontrollable and will attack enemies in proximity.
 }
 
 STRING 21157
