@@ -3,6 +3,7 @@ using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
+using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.QuestSystem;
 using static War3Api.Common;
 
@@ -24,6 +25,7 @@ namespace WarcraftLegacies.Source.Quests.Ironforge
       "ReplaceableTextures\\CommandButtons\\BTNHeroGriffonWarrior.blp")
     {
       AddObjective(new ObjectiveLegendInRect(magni, Regions.Aerie_Peak, "Aerie Peak"));
+      AddObjective(new ObjectiveTime(900));
       ResearchId = Constants.UPGRADE_R01C_QUEST_COMPLETED_WILDHAMMER_ALLIANCE;
       _rescueUnits = Regions.Aerie_Peak.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
     }
