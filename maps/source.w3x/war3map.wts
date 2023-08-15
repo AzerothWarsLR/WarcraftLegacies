@@ -127236,3 +127236,21 @@ STRING 21209
 Q
 }
 
+STRING 21210
+// Abilities: A13G (Aura of the Reaver), Tip (Tooltip - Normal)
+{
+Aura of the Reaver
+}
+
+STRING 21211
+// Buffs/Effects: B00E (), Bufftip (Tooltip)
+{
+Aura of the Reaver
+}
+
+STRING 21212
+// Buffs/Effects: B00E (), Buffubertip (Tooltip - Extended)
+{
+This unit is under the effects of Aura of the reaver it has decreased armor.
+}
+
