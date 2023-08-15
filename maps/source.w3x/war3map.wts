@@ -78013,7 +78013,7 @@ Calls an onslaught of Gryphon Riders to attack enemies in a 800 radious. |n|cfff
 }
 
 STRING 12999
-// Abilities: A13F (Howl of Despair), EditorSuffix (Editor Suffix)
+// Abilities: A13F (Howl of Despair Test), EditorSuffix (Editor Suffix)
 {
  (Sunfury - Void Reaver)
 }
@@ -80623,7 +80623,7 @@ Removes all buffs from units in a target area and deals <Adis,DataB1> damage to 
 }
 
 STRING 13434
-// Abilities: A13F (Howl of Despair), Name (Name)
+// Abilities: A13F (Howl of Despair Test), Tip (Tooltip - Normal)
 {
 Howl of Despair
 }
@@ -118470,7 +118470,7 @@ STRING 19747
 }
 
 STRING 19748
-// Abilities: A13F (Howl of Despair), Hotkey (Hotkey - Normal)
+// Abilities: A13F (Howl of Despair Test), Hotkey (Hotkey - Normal)
 {
 Q
 }
@@ -118482,7 +118482,7 @@ STRING 19749
 }
 
 STRING 19750
-// Upgrades: Rume (Unholy Strength,Improved Unholy Strength,Advanced Unholy Strength), Hotkey (Hotkey)
+// Abilities: A13H (Howl of Despair), Hotkey (Hotkey - Normal)
 {
 Q
 }
@@ -120300,7 +120300,7 @@ Q
 }
 
 STRING 20053
-// Upgrades: Rome (Steel Melee Weapons,Thorium Melee Weapons,Arcanite Melee Weapons), Hotkey (Hotkey)
+// Upgrades: Rume (Unholy Strength,Improved Unholy Strength,Advanced Unholy Strength), Hotkey (Hotkey)
 {
 Q
 }
@@ -120408,7 +120408,7 @@ Thunder Fists - [|cffffcc00Level 3|r]
 }
 
 STRING 20071
-// Upgrades: Rora (Steel Ranged Weapons,Thorium Ranged Weapons,Arcanite Ranged Weapons), Hotkey (Hotkey)
+// Abilities: A13H (Howl of Despair), Researchhotkey (Hotkey - Learn)
 {
 W
 }
@@ -121512,7 +121512,7 @@ Conjures a pillar of flame that burns ground units for 15 damage a second for 2 
 }
 
 STRING 20255
-// Upgrades: Rhme (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Hotkey (Hotkey)
+// Upgrades: Rome (Steel Melee Weapons,Thorium Melee Weapons,Arcanite Melee Weapons), Hotkey (Hotkey)
 {
 Q
 }
@@ -123072,7 +123072,7 @@ E
 }
 
 STRING 20515
-// Upgrades: Rhra (Black Gunpowder,Refined Gunpowder,Imbued Gunpowder), Hotkey (Hotkey)
+// Upgrades: Rora (Steel Ranged Weapons,Thorium Ranged Weapons,Arcanite Ranged Weapons), Hotkey (Hotkey)
 {
 W
 }
@@ -124339,7 +124339,7 @@ W
 }
 
 STRING 20726
-// Upgrades: Rhac (Improved Masonry,Advanced Masonry,Imbued Masonry), Hotkey (Hotkey)
+// Upgrades: Rhra (Black Gunpowder,Refined Gunpowder,Imbued Gunpowder), Hotkey (Hotkey)
 {
 W
 }
@@ -124513,7 +124513,7 @@ STRING 20754
 }
 
 STRING 20755
-// Upgrades: Resw (Strength of the Wild,Improved Strength of the Wild,Advanced Strength of the Wil), Hotkey (Hotkey)
+// Upgrades: Rhme (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Hotkey (Hotkey)
 {
 Q
 }
@@ -124879,7 +124879,7 @@ STRING 20815
 }
 
 STRING 20816
-// Upgrades: Resm (Strength of the Moon,Improved Strength of the Moon,Advanced Strength of the Moo), Hotkey (Hotkey)
+// Upgrades: Resw (Strength of the Wild,Improved Strength of the Wild,Advanced Strength of the Wil), Hotkey (Hotkey)
 {
 Q
 }
@@ -125113,7 +125113,7 @@ Q
 }
 
 STRING 20855
-// Upgrades: R020 (Defend), Hotkey (Hotkey)
+// Upgrades: Resm (Strength of the Moon,Improved Strength of the Moon,Advanced Strength of the Moo), Hotkey (Hotkey)
 {
 Q
 }
@@ -125143,13 +125143,13 @@ E
 }
 
 STRING 20860
-// Upgrades: R01B (Defend), Hotkey (Hotkey)
+// Upgrades: Rhac (Improved Masonry,Advanced Masonry,Imbued Masonry), Hotkey (Hotkey)
 {
 W
 }
 
 STRING 20861
-// Upgrades: R07I (Necromancer Adept Training,Necromancer Master Training), Hotkey (Hotkey)
+// Upgrades: R01B (Defend), Hotkey (Hotkey)
 {
 W
 }
@@ -125161,13 +125161,13 @@ E
 }
 
 STRING 20863
-// Upgrades: R014 (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
+// Upgrades: R020 (Defend), Hotkey (Hotkey)
 {
 Q
 }
 
 STRING 20864
-// Upgrades: R00X (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: R014 (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
 {
 Q
 }
@@ -125497,7 +125497,7 @@ Animal Companion
 }
 
 STRING 20919
-// Upgrades: R07E (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R00X (Magic Sentry), Hotkey (Hotkey)
 {
 Q
 }
@@ -125749,7 +125749,7 @@ Wreaks an enemy unit in arcane energy which cause 60 damage per second, prevents
 }
 
 STRING 20961
-// Upgrades: R07L (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R07E (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 Q
 }
@@ -126085,13 +126085,13 @@ Sends a gigantic wave which deals <A01T,DataA2> damage to each enemy land unit i
 }
 
 STRING 21017
-// Upgrades: R09N (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
+// Upgrades: R07L (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 Q
 }
 
 STRING 21018
-// Abilities: A13F (Howl of Despair), Researchtip (Tooltip - Learn)
+// Abilities: A13F (Howl of Despair Test), Researchtip (Tooltip - Learn)
 {
 Learn Roar of Despair - [|cffffcc00Level %d|r]
 }
@@ -126901,7 +126901,7 @@ Sanctum for the spellcasters of the Sunfury.|n|cfff5962dTrains:|R Astromancer, F
 }
 
 STRING 21154
-// Upgrades: R07W (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R07I (Necromancer Adept Training,Necromancer Master Training), Hotkey (Hotkey)
 {
 W
 }
@@ -126919,7 +126919,7 @@ The Druid summons 2 spiders from nearby. The spiders are untargetable and uncont
 }
 
 STRING 21157
-// Abilities: A13F (Howl of Despair), Researchubertip (Tooltip - Learn - Extended)
+// Abilities: A13F (Howl of Despair Test), Researchubertip (Tooltip - Learn - Extended)
 {
 The hero unleashes devastating roar that reduces attack damage of all nearby enemy units by 200%. |n|n|cffffcc00Level 1|r - 6(3) seconds duration. |n|cffffcc00Level 2|r - 12(6) seconds duration. |n|cffffcc00Level 3|r - 18(9) seconds duration.
 }
@@ -127111,37 +127111,37 @@ D
 }
 
 STRING 21189
-// Abilities: A13F (Howl of Despair), Tip (Tooltip - Normal)
+// Abilities: A13H (Howl of Despair), Tip (Tooltip - Normal)
 {
 Howl of Despair
 }
 
 STRING 21190
-// Abilities: A13F (Howl of Despair), Tip (Tooltip - Normal)
+// Abilities: A13F (Howl of Despair Test), Tip (Tooltip - Normal)
 {
 Roar of Despair - [|cffffcc00Level 2|r]
 }
 
 STRING 21191
-// Abilities: A13F (Howl of Despair), Tip (Tooltip - Normal)
+// Abilities: A13F (Howl of Despair Test), Tip (Tooltip - Normal)
 {
 Roar of Despair - [|cffffcc00Level 3|r]
 }
 
 STRING 21192
-// Abilities: A13F (Howl of Despair), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A13F (Howl of Despair Test), Ubertip (Tooltip - Normal - Extended)
 {
 The Void Reaver unleashes devastating roar that reduces attack damage of all nearby enemy units by 25%. for 6 seconds. Lasts 3 second on heroes.
 }
 
 STRING 21193
-// Abilities: A13F (Howl of Despair), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A13F (Howl of Despair Test), Ubertip (Tooltip - Normal - Extended)
 {
 The hero unleashes devastating roar that reduces attack damage of all nearby enemy units by 200% for 12 seconds. Lasts 6 second on heroes.
 }
 
 STRING 21194
-// Abilities: A13F (Howl of Despair), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A13F (Howl of Despair Test), Ubertip (Tooltip - Normal - Extended)
 {
 The hero unleashes devastating roar that reduces attack damage of all nearby enemy units by 300% for 18 seconds. Lasts 9 second on heroes.
 }
@@ -127168,5 +127168,71 @@ STRING 21198
 // Upgrades: R08K (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 A
+}
+
+STRING 21199
+// Abilities: A13F (Howl of Despair Test), Name (Name)
+{
+Howl of Despair Test
+}
+
+STRING 21200
+// Abilities: A13H (Howl of Despair), EditorSuffix (Editor Suffix)
+{
+(Sunfury - Void Reaver)
+}
+
+STRING 21201
+// Abilities: A13H (Howl of Despair), Researchubertip (Tooltip - Learn - Extended)
+{
+Lets loose a terrifying howl that causes nearby enemy units to shiver in fear, reducing their attack damage. |nLasts <ANht,Dur1> seconds. |n|n|cffffcc00Level 1|r - 25% attack damage reduction. |n|cffffcc00Level 2|r - 40% attack damage reduction. |n|cffffcc00Level 3|r - 55% attack damage reduction. |n|cffffcc00Level 4|r - 70% attack damage reduction.
+}
+
+STRING 21202
+// Abilities: A13H (Howl of Despair), Tip (Tooltip - Normal)
+{
+Howl of Terror - [|cffffcc00Level 4|r]
+}
+
+STRING 21203
+// Abilities: A13H (Howl of Despair), Ubertip (Tooltip - Normal - Extended)
+{
+The Void Reaver lets loose a terrifying howl that reduces nearby enemy units' attack damage by 25% for <ANht,Dur1> seconds.
+}
+
+STRING 21204
+// Abilities: A13H (Howl of Despair), Ubertip (Tooltip - Normal - Extended)
+{
+The Hero lets loose a terrifying howl that reduces nearby enemy units' attack damage by 40% for <ANht,Dur2> seconds.
+}
+
+STRING 21205
+// Abilities: A13H (Howl of Despair), Ubertip (Tooltip - Normal - Extended)
+{
+The Hero lets loose a terrifying howl that reduces nearby enemy units' attack damage by 55% for <ANht,Dur3> seconds.
+}
+
+STRING 21206
+// Abilities: A13H (Howl of Despair), Ubertip (Tooltip - Normal - Extended)
+{
+The Hero lets loose a terrifying howl that reduces nearby enemy units' attack damage by 70% for <ANht,Dur4> seconds.
+}
+
+STRING 21207
+// Abilities: A13H (Howl of Despair), Name (Name)
+{
+Howl of Despair
+}
+
+STRING 21208
+// Upgrades: R07W (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+{
+W
+}
+
+STRING 21209
+// Upgrades: R09N (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
+{
+Q
 }
 

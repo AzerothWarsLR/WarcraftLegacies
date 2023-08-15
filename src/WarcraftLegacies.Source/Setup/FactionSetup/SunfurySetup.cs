@@ -77,6 +77,7 @@ Your main goal is to summon Kil'jaeden and destroy your enemies."
       Sunfury.ModObjectLimit(FourCC("U02V"), 1); //Solarian
       Sunfury.ModObjectLimit(FourCC("Hkal"), 1); //Kael
       Sunfury.ModObjectLimit(FourCC("U004"), 1); //Kil
+      Sunfury.ModObjectLimit(Constants.UNIT_N0E5_VOID_REAVER_SUNFURY_DEMI, 1); //Void Reaver
 
       //Upgrades
       Sunfury.ModObjectLimit(FourCC("R00K"), Faction.UNLIMITED); //Power Infusion
