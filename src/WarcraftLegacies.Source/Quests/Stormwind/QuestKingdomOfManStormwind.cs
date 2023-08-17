@@ -48,7 +48,7 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
-      "You gain a research improving all of your units, the Crowns of Lordaeron and Stormwind are merged, and Varian gains 2000 experience, 10 Strength, and 10 Agility";
+      "You gain a research improving all of your units, the Crowns of Lordaeron and Stormwind are merged, and Varian gains 10 Strength and 10 Agility";
 
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
