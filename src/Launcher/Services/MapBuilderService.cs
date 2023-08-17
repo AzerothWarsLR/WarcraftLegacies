@@ -12,6 +12,7 @@ using War3Api.Object.Enums;
 using War3Net.Build;
 using War3Net.Build.Extensions;
 using War3Net.Build.Info;
+using War3Net.Build.Object;
 using War3Net.IO.Mpq;
 using CoreSystemProvider = CSharpLua.CoreSystem.CoreSystemProvider;
 
@@ -174,7 +175,7 @@ namespace Launcher.Services
         unit.StatsHitPointsRegenerationRate = 0;
       }
 
-      map.UnitObjectData = objectDatabase.GetAllData().UnitData;
+      map.UnitObjectData = objectDatabase.GetAllData(ObjectDataFormatVersion.v2).UnitData;
     }
 
     private static void LaunchGame(string warcraft3ExecutablePath, string mapFilePath)
