@@ -350,6 +350,7 @@ gg_rct_DalaStartPos = nil
 gg_rct_CenarionHoldUnlock = nil
 gg_rct_WindrunnerSpireUnlock = nil
 gg_rct_ArthasRandomPoint = nil
+gg_rct_HideUnitBottomLeft = nil
 gg_snd_ArcaneObservatoryWhat1 = nil
 gg_snd_ArrangedTeamInvitation = nil
 gg_snd_ClanInvitation = nil
@@ -538,7 +539,6 @@ gg_snd_DoorCloseRemix = nil
 gg_snd_DoorOpenRemix = nil
 gg_snd_NuclearLaunchDetected = nil
 gg_snd_IllidansTheme = ""
-gg_rct_HideUnitBottomLeft = nil
 function InitGlobals()
 end
 
