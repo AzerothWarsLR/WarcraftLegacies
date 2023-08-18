@@ -30,7 +30,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
     {
-      _uther.Unit?.AddHeroAttributes(-25, 0, 0);
+      _uther.Unit?.AddHeroAttributes(-15, 0, 0);
     }
   }
 }

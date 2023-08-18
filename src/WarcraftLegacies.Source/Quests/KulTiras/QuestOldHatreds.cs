@@ -28,10 +28,10 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
       "Daelin stands before the Dark Portal, towering over the landscape like a twisted monument to the Orc's brutality. He vows that, this time, he won't merely drive the Orcs back - he'll follow them to their planet and slaughter them all.";
 
     /// <inheritdoc/>
-    protected override string RewardDescription => "Daelin Proudmoore gains 5000 experience";
+    protected override string RewardDescription => "Daelin Proudmoore gains 4000 experience";
 
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction) =>
-      _proudmoore.Unit?.AddExperience(5000);
+      _proudmoore.Unit?.AddExperience(4000);
   }
 }
