@@ -54702,12 +54702,6 @@ STRING 9115
 W
 }
 
-STRING 9116
-// Abilities: A0J6 (Safeguard), Untip (Tooltip - Turn Off)
-{
-Safe Guard
-}
-
 STRING 9117
 // Abilities: A0J6 (Safeguard), Unubertip (Tooltip - Turn Off - Extended)
 {
@@ -74813,12 +74807,6 @@ STRING 12465
 Increases a target friendly unit's damage by <Ainf,DataA1,%>% and armor by 7. |nLasts <Ainf,Dur1> seconds.
 }
 
-STRING 12466
-// Abilities: A02F (Inner Fire), Ubertip (Tooltip - Normal - Extended)
-{
-Increases a target friendly unit's damage by 15% and armor by 5. |nLasts 60 seconds.
-}
-
 STRING 12467
 // Abilities: A05E (Holy Aura), Researchhotkey (Hotkey - Learn)
 {
@@ -93942,12 +93930,6 @@ STRING 15663
 (Stormwind - Stormwind Champion)
 }
 
-STRING 15664
-// Abilities: A0J6 (Safeguard), Ubertip (Tooltip - Normal - Extended)
-{
-Activate to take only <A0J6,DataA1,%>% damage from incoming spells and Magic and Piercing attacks. While Safeguard is active, movement speed is reduced by <A0J6,DataC1,%>%.
-}
-
 STRING 15665
 // Abilities: A0IZ (Spyglass), Tip (Tooltip - Normal)
 {
@@ -104803,7 +104785,7 @@ STRING 17475
 }
 
 STRING 17476
-// Abilities: A0RZ (Arcane Bomb), Unubertip (Tooltip - Turn Off - Extended)
+// Abilities: A02F (Inner Fire), Unubertip (Tooltip - Turn Off - Extended)
 {
 |cffc3dbffRight-click to deactivate auto-casting.|r
 }
@@ -107686,7 +107668,7 @@ Increases Strength, Agility and Intelligence and can cast Crown Heal.
 }
 
 STRING 17957
-// Abilities: A0RZ (Arcane Bomb), Unubertip (Tooltip - Turn Off - Extended)
+// Abilities: A02F (Inner Fire), Unubertip (Tooltip - Turn Off - Extended)
 {
 |cffc3dbffRight-click to deactivate auto-casting.|r
 }
@@ -123036,7 +123018,7 @@ E
 }
 
 STRING 20515
-// Upgrades: Rora (Steel Ranged Weapons,Thorium Ranged Weapons,Arcanite Ranged Weapons), Hotkey (Hotkey)
+// Abilities: A13K (Defend), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -123348,7 +123330,7 @@ Summoning site for minor demons.|r|n|cff99b4d1Can only build 2 before the Legion
 }
 
 STRING 20567
-// Upgrades: Rora (Steel Ranged Weapons,Thorium Ranged Weapons,Arcanite Ranged Weapons), Hotkey (Hotkey)
+// Abilities: A13K (Defend), Unhotkey (Hotkey - Turn Off)
 {
 W
 }
@@ -124303,7 +124285,7 @@ W
 }
 
 STRING 20726
-// Upgrades: Rhra (Black Gunpowder,Refined Gunpowder,Imbued Gunpowder), Hotkey (Hotkey)
+// Upgrades: Rora (Steel Ranged Weapons,Thorium Ranged Weapons,Arcanite Ranged Weapons), Hotkey (Hotkey)
 {
 W
 }
@@ -124591,7 +124573,7 @@ Q
 }
 
 STRING 20774
-// Upgrades: Rhra (Black Gunpowder,Refined Gunpowder,Imbued Gunpowder), Hotkey (Hotkey)
+// Upgrades: Rora (Steel Ranged Weapons,Thorium Ranged Weapons,Arcanite Ranged Weapons), Hotkey (Hotkey)
 {
 W
 }
@@ -125107,13 +125089,13 @@ E
 }
 
 STRING 20860
-// Upgrades: Rhac (Improved Masonry,Advanced Masonry,Imbued Masonry), Hotkey (Hotkey)
+// Upgrades: Rhra (Black Gunpowder,Refined Gunpowder,Imbued Gunpowder), Hotkey (Hotkey)
 {
 W
 }
 
 STRING 20861
-// Upgrades: Rhac (Improved Masonry,Advanced Masonry,Imbued Masonry), Hotkey (Hotkey)
+// Upgrades: Rhra (Black Gunpowder,Refined Gunpowder,Imbued Gunpowder), Hotkey (Hotkey)
 {
 W
 }
@@ -126871,7 +126853,7 @@ Sanctum for the spellcasters of the Sunfury.|n|cfff5962dTrains:|R Astromancer, F
 }
 
 STRING 21154
-// Upgrades: R01B (Defend), Hotkey (Hotkey)
+// Upgrades: Rhac (Improved Masonry,Advanced Masonry,Imbued Masonry), Hotkey (Hotkey)
 {
 W
 }
@@ -127195,7 +127177,7 @@ Howl of Despair
 }
 
 STRING 21208
-// Upgrades: R07I (Necromancer Adept Training,Necromancer Master Training), Hotkey (Hotkey)
+// Upgrades: Rhac (Improved Masonry,Advanced Masonry,Imbued Masonry), Hotkey (Hotkey)
 {
 W
 }
@@ -127285,13 +127267,13 @@ Increases the unit's attack rate by <A0EH,DataA2,%>% and movement speed by <A0EH
 }
 
 STRING 21223
-// Upgrades: R07I (Necromancer Adept Training,Necromancer Master Training), Hotkey (Hotkey)
+// Upgrades: R01B (Defend), Hotkey (Hotkey)
 {
 W
 }
 
 STRING 21224
-// Upgrades: R07W (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R07I (Necromancer Adept Training,Necromancer Master Training), Hotkey (Hotkey)
 {
 W
 }
@@ -127309,13 +127291,13 @@ Unstable Concoction- [|cffffcc00Level 2|r]
 }
 
 STRING 21227
-// Abilities: A0MJ (Parasite), Untip (Tooltip - Turn Off)
+// Abilities: A02F (Inner Fire), Untip (Tooltip - Turn Off)
 {
 |cffc3dbffRight-click to activate auto-casting.|r
 }
 
 STRING 21228
-// Abilities: A0MJ (Parasite), Unubertip (Tooltip - Turn Off - Extended)
+// Abilities: A0RZ (Arcane Bomb), Unubertip (Tooltip - Turn Off - Extended)
 {
 |cffc3dbffRight-click to deactivate auto-casting.|r
 }
@@ -127402,5 +127384,95 @@ STRING 21243
 // Upgrades: R09H (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
 {
 Z
+}
+
+STRING 21244
+// Abilities: A0J6 (Safeguard), Untip (Tooltip - Turn Off)
+{
+Safeguard
+}
+
+STRING 21245
+// Abilities: A0J6 (Safeguard), Ubertip (Tooltip - Normal - Extended)
+{
+Activate to take only <A0J6,DataA1,%>% damage from incoming spells, Magic and Piercing attacks. While Safeguard is active, movement speed is reduced by <A0J6,DataC1,%>%.
+}
+
+STRING 21246
+// Abilities: A02F (Inner Fire), Ubertip (Tooltip - Normal - Extended)
+{
+Increases a target friendly unit's damage by 20% and armor by 8. |nLasts 60 seconds.
+}
+
+STRING 21247
+// Abilities: A02F (Inner Fire), Untip (Tooltip - Turn Off)
+{
+|cffc3dbffRight-click to activate auto-casting.|r
+}
+
+STRING 21248
+// Abilities: A02F (Inner Fire), Tip (Tooltip - Normal)
+{
+|cffffcc00(E)|r - Improved Inner Fire
+}
+
+STRING 21249
+// Abilities: A0RZ (Arcane Bomb), Unubertip (Tooltip - Turn Off - Extended)
+{
+|cffc3dbffRight-click to deactivate auto-casting.|r
+}
+
+STRING 21250
+// Abilities: A0MJ (Parasite), Untip (Tooltip - Turn Off)
+{
+|cffc3dbffRight-click to activate auto-casting.|r
+}
+
+STRING 21251
+// Abilities: A0MJ (Parasite), Unubertip (Tooltip - Turn Off - Extended)
+{
+|cffc3dbffRight-click to deactivate auto-casting.|r
+}
+
+STRING 21252
+// Abilities: A13K (Defend), EditorSuffix (Editor Suffix)
+{
+(Pikeman)
+}
+
+STRING 21253
+// Abilities: A13K (Defend), Ubertip (Tooltip - Normal - Extended)
+{
+Activate to have a <Adef,DataF1>% chance to reflect Piercing attacks upon the source, and to take only 35% of the damage from attacks that are not reflected. |nWhile Defend is active, move speed is reduced 30% and Magic damage taken is reduced by 20%.
+}
+
+STRING 21254
+// Abilities: A13K (Defend), Ubertip (Tooltip - Normal - Extended)
+{
+Activate to have a <Adef,DataF2>% chance to reflect Piercing attacks upon the source, and to take only 50% of the damage from attacks that are not reflected. |nWhile Defend is active, move speed is reduced by 30% and Magic damage taken is reduced by 20%.
+}
+
+STRING 21255
+// Abilities: A13K (Defend), Ubertip (Tooltip - Normal - Extended)
+{
+Activate to have a <Adef,DataF3>% chance to reflect Piercing attacks upon the source, and to take only 35% of the damage from attacks that are not reflected. |nWhile Defend is active, move speed is reduced by 30% and Magic damage taken is reduced by 40%.
+}
+
+STRING 21256
+// Abilities: A13K (Defend), Unubertip (Tooltip - Turn Off - Extended)
+{
+Deactivate to move at normal speed, but take regular damage from Piercing attacks and Magic damage.
+}
+
+STRING 21257
+// Upgrades: R07I (Necromancer Adept Training,Necromancer Master Training), Hotkey (Hotkey)
+{
+W
+}
+
+STRING 21258
+// Upgrades: R07W (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+{
+W
 }
 
