@@ -18186,6 +18186,12 @@ STRING 3031
 Train Geomancer
 }
 
+STRING 3032
+// Abilities: A0JA (Lightning Barrage), Ubertip (Tooltip - Normal - Extended)
+{
+Unleashes a flurry of attacks, increasing attack speed by 150%  for <A0JA,Dur1> seconds.
+}
+
 STRING 3033
 // Units: h04L (Priestess of the Moon), EditorSuffix (Name - Editor Suffix)
 {
@@ -87216,7 +87222,7 @@ STRING 14532
 }
 
 STRING 14533
-// Upgrades: R017 (Magic Sentry), effect1 (Effect 1)
+// Upgrades: R018 (Magic Sentry), effect1 (Effect 1)
 {
 rlev
 }
@@ -87390,7 +87396,7 @@ Train Bombard
 }
 
 STRING 14562
-// Upgrades: R013 (Mark of the Claw), effect1 (Effect 1)
+// Upgrades: R017 (Magic Sentry), effect1 (Effect 1)
 {
 rlev
 }
@@ -87438,13 +87444,13 @@ Increases damage dealt to enemy Boarding Vessels by 20.
 }
 
 STRING 14570
-// Upgrades: R010 (Control Magic), effect1 (Effect 1)
+// Upgrades: R013 (Mark of the Claw), effect1 (Effect 1)
 {
 rlev
 }
 
 STRING 14571
-// Upgrades: R00Y (Magic Sentry), effect3 (Effect 3)
+// Upgrades: R010 (Control Magic), effect1 (Effect 1)
 {
 rlev
 }
@@ -87480,7 +87486,7 @@ Q
 }
 
 STRING 14577
-// Upgrades: R00R (Magic Sentry), effect1 (Effect 1)
+// Upgrades: R00Y (Magic Sentry), effect3 (Effect 3)
 {
 rlev
 }
@@ -87523,13 +87529,13 @@ Entrance
 }
 
 STRING 14584
-// Upgrades: R00O (Ensnare), effect1 (Effect 1)
+// Upgrades: R00R (Magic Sentry), effect1 (Effect 1)
 {
 rlev
 }
 
 STRING 14585
-// Upgrades: R00N (Storm Hammers), effect1 (Effect 1)
+// Upgrades: R00O (Ensnare), effect1 (Effect 1)
 {
 rlev
 }
@@ -87931,7 +87937,7 @@ STRING 14651
 }
 
 STRING 14652
-// Upgrades: R00A (Mark of the Claw), effect1 (Effect 1)
+// Upgrades: R00N (Storm Hammers), effect1 (Effect 1)
 {
 rlev
 }
@@ -88447,7 +88453,7 @@ Q
 }
 
 STRING 14738
-// Upgrades: R01U (Magic Sentry), effect1 (Effect 1)
+// Upgrades: R00A (Mark of the Claw), effect1 (Effect 1)
 {
 rlev
 }
@@ -88633,7 +88639,7 @@ rats
 }
 
 STRING 14769
-// Upgrades: R035 (Chaos), effect1 (Effect 1)
+// Upgrades: R01U (Magic Sentry), effect1 (Effect 1)
 {
 rlev
 }
@@ -88699,7 +88705,7 @@ X
 }
 
 STRING 14780
-// Upgrades: R03L (Chaos), effect1 (Effect 1)
+// Upgrades: R035 (Chaos), effect1 (Effect 1)
 {
 rlev
 }
@@ -88807,7 +88813,7 @@ STRING 14797
 }
 
 STRING 14798
-// Upgrades: R03O (Animal War Training), effect1 (Effect 1)
+// Upgrades: R03L (Chaos), effect1 (Effect 1)
 {
 rlev
 }
@@ -89011,7 +89017,7 @@ STRING 14831
 }
 
 STRING 14832
-// Upgrades: R047 (Marksmanship), effect1 (Effect 1)
+// Upgrades: R03O (Animal War Training), effect1 (Effect 1)
 {
 rlev
 }
@@ -89059,7 +89065,7 @@ STRING 14839
 }
 
 STRING 14840
-// Upgrades: R048 (Marksmanship), effect1 (Effect 1)
+// Upgrades: R047 (Marksmanship), effect1 (Effect 1)
 {
 rlev
 }
@@ -89101,21 +89107,9 @@ X
 }
 
 STRING 14847
-// Upgrades: R018 (Magic Sentry), Name (Name)
+// Abilities: A0JA (Lightning Barrage), Tip (Tooltip - Normal)
 {
 Lightning Barrage
-}
-
-STRING 14848
-// Upgrades: R018 (Magic Sentry), Tip (Tooltip)
-{
-Research Lightning Barrage
-}
-
-STRING 14849
-// Upgrades: R018 (Magic Sentry), Ubertip (Tooltip - Extended)
-{
-Allows Chimaeras to gain a temporary burst of increased attack rate.
 }
 
 STRING 14850
@@ -89137,7 +89131,7 @@ STRING 14852
 }
 
 STRING 14853
-// Upgrades: R015 (Marksmanship), effect1 (Effect 1)
+// Upgrades: R048 (Marksmanship), effect1 (Effect 1)
 {
 rlev
 }
@@ -126150,6 +126144,12 @@ STRING 21027
 E
 }
 
+STRING 21028
+// Upgrades: R018 (Magic Sentry), Name (Name)
+{
+Improved Lightning Barrage
+}
+
 STRING 21029
 // Upgrades: R09H (Priest Adept Training,Priest Master Training), Ubertip (Tooltip - Extended)
 {
@@ -127252,5 +127252,23 @@ STRING 21212
 // Buffs/Effects: B00E (), Buffubertip (Tooltip - Extended)
 {
 This unit is under the effects of Aura of the reaver it has decreased armor.
+}
+
+STRING 21213
+// Upgrades: R018 (Magic Sentry), Tip (Tooltip)
+{
+Research Improved Lightning Barrage
+}
+
+STRING 21214
+// Upgrades: R018 (Magic Sentry), Ubertip (Tooltip - Extended)
+{
+Increases attack attack bursts temporary speed bonus to 250%
+}
+
+STRING 21215
+// Upgrades: R015 (Marksmanship), effect1 (Effect 1)
+{
+rlev
 }
 
