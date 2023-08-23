@@ -12678,12 +12678,6 @@ STRING 2113
 Ahn'Qiraj
 }
 
-STRING 2114
-// Units: h09H (Siege Walker), Ubertip (Tooltip - Extended)
-{
-Long range siege vehicle, adept at shooting down air units.|n|cfff5962dAbilities:|R Goblin Pilot, Emergency Repairs, Oil Consumer|n|n|cff99b4d1Can only build 5.|r|n|cffffcc00Attacks land and air units.|r
-}
-
 STRING 2115
 // Units: o04B (Cultist), EditorSuffix (Name - Editor Suffix)
 {
@@ -121110,7 +121104,7 @@ Enchanted Bolt
 }
 
 STRING 20189
-// Upgrades: Rora (Steel Ranged Weapons,Thorium Ranged Weapons,Arcanite Ranged Weapons), Hotkey (Hotkey)
+// Abilities: A13I (Overflow), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -121716,7 +121710,7 @@ Innacurate bombardment of an area with 30 waves of one cannonball. Each ball dea
 }
 
 STRING 20290
-// Upgrades: Rora (Steel Ranged Weapons,Thorium Ranged Weapons,Arcanite Ranged Weapons), Hotkey (Hotkey)
+// Abilities: A13I (Overflow), Unhotkey (Hotkey - Turn Off)
 {
 W
 }
@@ -123378,7 +123372,7 @@ Summoning site for minor demons.|r|n|cff99b4d1Can only build 2 before the Legion
 }
 
 STRING 20567
-// Upgrades: Rhra (Black Gunpowder,Refined Gunpowder,Imbued Gunpowder), Hotkey (Hotkey)
+// Upgrades: Rora (Steel Ranged Weapons,Thorium Ranged Weapons,Arcanite Ranged Weapons), Hotkey (Hotkey)
 {
 W
 }
@@ -124327,7 +124321,7 @@ Consumes an enemy unit, dealing 500 damage if it's a hero and killing it instant
 }
 
 STRING 20725
-// Upgrades: Rhra (Black Gunpowder,Refined Gunpowder,Imbued Gunpowder), Hotkey (Hotkey)
+// Upgrades: Rora (Steel Ranged Weapons,Thorium Ranged Weapons,Arcanite Ranged Weapons), Hotkey (Hotkey)
 {
 W
 }
@@ -124621,7 +124615,7 @@ Q
 }
 
 STRING 20774
-// Upgrades: Rhac (Improved Masonry,Advanced Masonry,Imbued Masonry), Hotkey (Hotkey)
+// Upgrades: Rhra (Black Gunpowder,Refined Gunpowder,Imbued Gunpowder), Hotkey (Hotkey)
 {
 W
 }
@@ -124885,7 +124879,7 @@ Q
 }
 
 STRING 20818
-// Upgrades: Rhac (Improved Masonry,Advanced Masonry,Imbued Masonry), Hotkey (Hotkey)
+// Upgrades: Rhra (Black Gunpowder,Refined Gunpowder,Imbued Gunpowder), Hotkey (Hotkey)
 {
 W
 }
@@ -125143,7 +125137,7 @@ W
 }
 
 STRING 20861
-// Upgrades: R01B (Defend), Hotkey (Hotkey)
+// Upgrades: Rhac (Improved Masonry,Advanced Masonry,Imbued Masonry), Hotkey (Hotkey)
 {
 W
 }
@@ -126697,7 +126691,7 @@ E
 }
 
 STRING 21120
-// Upgrades: R07I (Necromancer Adept Training,Necromancer Master Training), Hotkey (Hotkey)
+// Upgrades: Rhac (Improved Masonry,Advanced Masonry,Imbued Masonry), Hotkey (Hotkey)
 {
 W
 }
@@ -126901,7 +126895,7 @@ Sanctum for the spellcasters of the Sunfury.|n|cfff5962dTrains:|R Astromancer, F
 }
 
 STRING 21154
-// Upgrades: R07I (Necromancer Adept Training,Necromancer Master Training), Hotkey (Hotkey)
+// Upgrades: R01B (Defend), Hotkey (Hotkey)
 {
 W
 }
@@ -127225,7 +127219,7 @@ Howl of Despair
 }
 
 STRING 21208
-// Upgrades: R07W (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R07I (Necromancer Adept Training,Necromancer Master Training), Hotkey (Hotkey)
 {
 W
 }
@@ -127270,5 +127264,59 @@ STRING 21215
 // Upgrades: R015 (Marksmanship), effect1 (Effect 1)
 {
 rlev
+}
+
+STRING 21216
+// Units: h09H (Siege Walker), Ubertip (Tooltip - Extended)
+{
+Long range siege vehicle, adept at shooting down air units.|n|cfff5962dAbilities:|R Goblin Pilot, Emergency Repairs,Overflow, Oil Consumer|n|n|cff99b4d1Can only build 5.|r|n|cffffcc00Attacks land and air units.|r
+}
+
+STRING 21217
+// Abilities: A13I (Overflow), EditorSuffix (Editor Suffix)
+{
+(Self Cast - Goblin Siege Walker)
+}
+
+STRING 21218
+// Abilities: A13I (Overflow), Name (Name)
+{
+Overflow
+}
+
+STRING 21219
+// Abilities: A13I (Overflow), Tip (Tooltip - Normal)
+{
+Overflow
+}
+
+STRING 21220
+// Abilities: A13I (Overflow), Tip (Tooltip - Normal)
+{
+Self-Bloodlust - [|cffffcc00Level 2|r]
+}
+
+STRING 21221
+// Abilities: A13I (Overflow), Ubertip (Tooltip - Normal - Extended)
+{
+Causes the Siege Walker Pilot to suddenly flood his engine with oil, increasing movement speed by 100% for 3 seconds.
+}
+
+STRING 21222
+// Abilities: A13I (Overflow), Ubertip (Tooltip - Normal - Extended)
+{
+Increases the unit's attack rate by <A0EH,DataA2,%>% and movement speed by <A0EH,DataB2,%>% for <A0EH,Dur2> seconds.
+}
+
+STRING 21223
+// Upgrades: R07I (Necromancer Adept Training,Necromancer Master Training), Hotkey (Hotkey)
+{
+W
+}
+
+STRING 21224
+// Upgrades: R07W (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+{
+W
 }
 
