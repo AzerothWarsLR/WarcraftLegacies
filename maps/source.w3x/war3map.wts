@@ -11431,7 +11431,7 @@ Infuses an ally with dark magic, healing a target friendly non-mechanical wounde
 }
 
 STRING 1906
-// Abilities: ANpa (Parasite), Untip (Tooltip - Turn Off)
+// Abilities: Auco (Unstable Concoction), Untip (Tooltip - Turn Off)
 {
 |cffc3dbffRight-click to activate auto-casting.|r
 }
@@ -17525,7 +17525,7 @@ Q
 }
 
 STRING 2923
-// Abilities: ANpa (Parasite), Unubertip (Tooltip - Turn Off - Extended)
+// Abilities: Auco (Unstable Concoction), Unubertip (Tooltip - Turn Off - Extended)
 {
 |cffc3dbffRight-click to deactivate auto-casting.|r
 }
@@ -27416,7 +27416,7 @@ Scholo Dungeon Walls
 }
 
 STRING 4571
-// Upgrades: Roen (Ensnare), effect1 (Effect 1)
+// Upgrades: Rolf (Liquid Fire), effect1 (Effect 1)
 {
 rlev
 }
@@ -60709,7 +60709,7 @@ Coral Tree Wall
 }
 
 STRING 10117
-// Abilities: ANfa (Frost Arrows), Untip (Tooltip - Turn Off)
+// Abilities: ANpa (Parasite), Untip (Tooltip - Turn Off)
 {
 |cffc3dbffRight-click to activate auto-casting.|r
 }
@@ -81852,12 +81852,6 @@ STRING 13638
 Each attack made is enhanced with living flames that cling to the target. These flames add <A0KC,DataA3> damage on the first attack, twice as much on the second attack, three times as much on the third attack, etc.|n|nIf a unit dies while under this effect, it is incinerated, causing up to <A0KC,DataB3> damage to all nearby hostile units.
 }
 
-STRING 13639
-// Units: edos (Roost), Ubertip (Tooltip - Extended)
-{
-Resting perch for the wild allies of the Sentinels.|n|cfff5962dTrains:|R Hippogryph Rider, Chimaera, Moon Rider|n|cfff5962dResearches:|R Lightning Barrage
-}
-
 STRING 13640
 // Abilities: A0OA (Emergency Repairs), Name (Name)
 {
@@ -82777,7 +82771,7 @@ STRING 13792
 }
 
 STRING 13793
-// Upgrades: Rhme (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), effect2 (Effect 2)
+// Upgrades: Roen (Ensnare), effect1 (Effect 1)
 {
 rlev
 }
@@ -83275,7 +83269,7 @@ STRING 13875
 }
 
 STRING 13876
-// Upgrades: Rhme (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), effect3 (Effect 3)
+// Upgrades: Rhme (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), effect2 (Effect 2)
 {
 rlev
 }
@@ -83647,7 +83641,7 @@ Improves Abominations, Meat Wagons, Plague Titans, and Plaguelings by increasing
 }
 
 STRING 13938
-// Upgrades: Rhme (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), effect4 (Effect 4)
+// Upgrades: Rhme (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), effect3 (Effect 3)
 {
 rlev
 }
@@ -84067,19 +84061,19 @@ STRING 14007
 }
 
 STRING 14008
-// Upgrades: Rhlh (Improved Lumber Harvesting,Advanced Lumber Harvesting), effect1 (Effect 1)
+// Upgrades: Rhme (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), effect4 (Effect 4)
 {
 rlev
 }
 
 STRING 14009
-// Upgrades: Renb (Nature's Blessing), effect3 (Effect 3)
+// Upgrades: Rhlh (Improved Lumber Harvesting,Advanced Lumber Harvesting), effect1 (Effect 1)
 {
 rlev
 }
 
 STRING 14010
-// Upgrades: R06O (Magic Sentry), effect1 (Effect 1)
+// Upgrades: Renb (Nature's Blessing), effect3 (Effect 3)
 {
 rlev
 }
@@ -84841,7 +84835,7 @@ STRING 14136
 }
 
 STRING 14137
-// Upgrades: R06N (Freezing Breath), effect1 (Effect 1)
+// Upgrades: R06O (Magic Sentry), effect1 (Effect 1)
 {
 rlev
 }
@@ -85117,7 +85111,7 @@ Research Revenants
 }
 
 STRING 14183
-// Upgrades: R06J (Defend), effect1 (Effect 1)
+// Upgrades: R06N (Freezing Breath), effect1 (Effect 1)
 {
 rlev
 }
@@ -85153,7 +85147,7 @@ Weapon Empowerement
 }
 
 STRING 14189
-// Upgrades: R06C (Chaos), effect1 (Effect 1)
+// Upgrades: R06J (Defend), effect1 (Effect 1)
 {
 rlev
 }
@@ -85279,7 +85273,7 @@ STRING 14209
 }
 
 STRING 14210
-// Upgrades: R06B (Chaos), effect1 (Effect 1)
+// Upgrades: R06C (Chaos), effect1 (Effect 1)
 {
 rlev
 }
@@ -85411,7 +85405,7 @@ Druids exists
 }
 
 STRING 14232
-// Upgrades: R061 (Magic Sentry), effect1 (Effect 1)
+// Upgrades: R06B (Chaos), effect1 (Effect 1)
 {
 rlev
 }
@@ -85423,7 +85417,7 @@ Kaboom level up
 }
 
 STRING 14234
-// Upgrades: R04V (Magic Sentry), effect1 (Effect 1)
+// Upgrades: R061 (Magic Sentry), effect1 (Effect 1)
 {
 rlev
 }
@@ -85537,7 +85531,7 @@ Replaces Abominations with Revenants, which have the Persistent Soul ability and
 }
 
 STRING 14253
-// Upgrades: R04G (Magic Sentry), effect1 (Effect 1)
+// Upgrades: R04V (Magic Sentry), effect1 (Effect 1)
 {
 rlev
 }
@@ -85993,7 +85987,7 @@ STRING 14328
 }
 
 STRING 14329
-// Upgrades: R03M (Defend), effect2 (Effect 2)
+// Upgrades: R04G (Magic Sentry), effect1 (Effect 1)
 {
 rlev
 }
@@ -86077,7 +86071,7 @@ Build Hunter Tower
 }
 
 STRING 14343
-// Upgrades: R03D (Defend), effect3 (Effect 3)
+// Upgrades: R03M (Defend), effect2 (Effect 2)
 {
 rlev
 }
@@ -86658,7 +86652,7 @@ General research building.|n|cfff5962dResearches: |RForged Weaponry, Armor Plati
 }
 
 STRING 14440
-// Upgrades: R03D (Defend), effect4 (Effect 4)
+// Upgrades: R03D (Defend), effect3 (Effect 3)
 {
 rlev
 }
@@ -86700,7 +86694,7 @@ STRING 14446
 }
 
 STRING 14447
-// Upgrades: R02Z (Defend), effect1 (Effect 1)
+// Upgrades: R03D (Defend), effect4 (Effect 4)
 {
 rlev
 }
@@ -86964,7 +86958,7 @@ Resource harvesting center and producer of Twilight's Hammer enhancements. |n|cf
 }
 
 STRING 14491
-// Upgrades: R02W (Defend), effect2 (Effect 2)
+// Upgrades: R02Z (Defend), effect1 (Effect 1)
 {
 rlev
 }
@@ -87042,13 +87036,13 @@ rtma
 }
 
 STRING 14504
-// Upgrades: R02W (Defend), effect3 (Effect 3)
+// Upgrades: R02W (Defend), effect2 (Effect 2)
 {
 rlev
 }
 
 STRING 14505
-// Upgrades: R01X (Disease Cloud), effect1 (Effect 1)
+// Upgrades: R02W (Defend), effect3 (Effect 3)
 {
 rlev
 }
@@ -87084,13 +87078,13 @@ E
 }
 
 STRING 14511
-// Upgrades: R01R (Improved Bows), effect3 (Effect 3)
+// Upgrades: R01X (Disease Cloud), effect1 (Effect 1)
 {
 rlev
 }
 
 STRING 14512
-// Upgrades: R01P (Ensnare), effect1 (Effect 1)
+// Upgrades: R01R (Improved Bows), effect3 (Effect 3)
 {
 rlev
 }
@@ -87126,7 +87120,7 @@ Quest Completed: The Citadel
 }
 
 STRING 14518
-// Upgrades: R01J (Ensnare), effect1 (Effect 1)
+// Upgrades: R01P (Ensnare), effect1 (Effect 1)
 {
 rlev
 }
@@ -87168,13 +87162,13 @@ Monstrous melee unit.|n|cfff5962dAbilities:|R Charge, Cleaving Attack, Hardened 
 }
 
 STRING 14525
-// Upgrades: R01B (Defend), effect1 (Effect 1)
+// Upgrades: R01J (Ensnare), effect1 (Effect 1)
 {
 rlev
 }
 
 STRING 14526
-// Upgrades: R019 (Magic Sentry), effect1 (Effect 1)
+// Upgrades: R01B (Defend), effect1 (Effect 1)
 {
 rlev
 }
@@ -87216,7 +87210,7 @@ STRING 14532
 }
 
 STRING 14533
-// Upgrades: R018 (Magic Sentry), effect1 (Effect 1)
+// Upgrades: R019 (Magic Sentry), effect1 (Effect 1)
 {
 rlev
 }
@@ -87390,7 +87384,7 @@ Train Bombard
 }
 
 STRING 14562
-// Upgrades: R017 (Magic Sentry), effect1 (Effect 1)
+// Upgrades: R018 (Magic Sentry), effect1 (Effect 1)
 {
 rlev
 }
@@ -87438,13 +87432,13 @@ Increases damage dealt to enemy Boarding Vessels by 20.
 }
 
 STRING 14570
-// Upgrades: R013 (Mark of the Claw), effect1 (Effect 1)
+// Upgrades: R017 (Magic Sentry), effect1 (Effect 1)
 {
 rlev
 }
 
 STRING 14571
-// Upgrades: R010 (Control Magic), effect1 (Effect 1)
+// Upgrades: R013 (Mark of the Claw), effect1 (Effect 1)
 {
 rlev
 }
@@ -87480,7 +87474,7 @@ Q
 }
 
 STRING 14577
-// Upgrades: R00Y (Magic Sentry), effect3 (Effect 3)
+// Upgrades: R010 (Control Magic), effect1 (Effect 1)
 {
 rlev
 }
@@ -87523,13 +87517,13 @@ Entrance
 }
 
 STRING 14584
-// Upgrades: R00R (Magic Sentry), effect1 (Effect 1)
+// Upgrades: R00Y (Magic Sentry), effect3 (Effect 3)
 {
 rlev
 }
 
 STRING 14585
-// Upgrades: R00O (Ensnare), effect1 (Effect 1)
+// Upgrades: R00R (Magic Sentry), effect1 (Effect 1)
 {
 rlev
 }
@@ -87931,7 +87925,7 @@ STRING 14651
 }
 
 STRING 14652
-// Upgrades: R00N (Storm Hammers), effect1 (Effect 1)
+// Upgrades: R00O (Ensnare), effect1 (Effect 1)
 {
 rlev
 }
@@ -88447,7 +88441,7 @@ Q
 }
 
 STRING 14738
-// Upgrades: R00A (Mark of the Claw), effect1 (Effect 1)
+// Upgrades: R00N (Storm Hammers), effect1 (Effect 1)
 {
 rlev
 }
@@ -88633,7 +88627,7 @@ rats
 }
 
 STRING 14769
-// Upgrades: R01U (Magic Sentry), effect1 (Effect 1)
+// Upgrades: R00A (Mark of the Claw), effect1 (Effect 1)
 {
 rlev
 }
@@ -88699,7 +88693,7 @@ X
 }
 
 STRING 14780
-// Upgrades: R035 (Chaos), effect1 (Effect 1)
+// Upgrades: R01U (Magic Sentry), effect1 (Effect 1)
 {
 rlev
 }
@@ -88807,7 +88801,7 @@ STRING 14797
 }
 
 STRING 14798
-// Upgrades: R03L (Chaos), effect1 (Effect 1)
+// Upgrades: R035 (Chaos), effect1 (Effect 1)
 {
 rlev
 }
@@ -89011,7 +89005,7 @@ STRING 14831
 }
 
 STRING 14832
-// Upgrades: R03O (Animal War Training), effect1 (Effect 1)
+// Upgrades: R03L (Chaos), effect1 (Effect 1)
 {
 rlev
 }
@@ -89059,7 +89053,7 @@ STRING 14839
 }
 
 STRING 14840
-// Upgrades: R047 (Marksmanship), effect1 (Effect 1)
+// Upgrades: R03O (Animal War Training), effect1 (Effect 1)
 {
 rlev
 }
@@ -89125,7 +89119,7 @@ STRING 14852
 }
 
 STRING 14853
-// Upgrades: R048 (Marksmanship), effect1 (Effect 1)
+// Upgrades: R047 (Marksmanship), effect1 (Effect 1)
 {
 rlev
 }
@@ -90349,7 +90343,7 @@ STRING 15056
 }
 
 STRING 15057
-// Abilities: ANfa (Frost Arrows), Unubertip (Tooltip - Turn Off - Extended)
+// Abilities: ANpa (Parasite), Unubertip (Tooltip - Turn Off - Extended)
 {
 |cffc3dbffRight-click to deactivate auto-casting.|r
 }
@@ -91910,7 +91904,7 @@ Cycle of Rebirth
 }
 
 STRING 15324
-// Abilities: A0E9 (Slow), Untip (Tooltip - Turn Off)
+// Abilities: ANfa (Frost Arrows), Untip (Tooltip - Turn Off)
 {
 |cffc3dbffRight-click to activate auto-casting.|r
 }
@@ -92911,7 +92905,7 @@ This unit attacks slow enemy units on contact
 }
 
 STRING 15491
-// Abilities: A0E9 (Slow), Unubertip (Tooltip - Turn Off - Extended)
+// Abilities: ANfa (Frost Arrows), Unubertip (Tooltip - Turn Off - Extended)
 {
 |cffc3dbffRight-click to deactivate auto-casting.|r
 }
@@ -103866,12 +103860,6 @@ STRING 17316
 Ominous Vault
 }
 
-STRING 17317
-// Units: obar (War Camp), Ubertip (Tooltip - Extended)
-{
-Home to the warriors of the Horde.|n|cfff5962dTrains:|R Grunt, Headhunter, Bat Rider |n|cfff5962dResearches:|R Liquid Fire
-}
-
 STRING 17318
 // Units: Orkn (Chieftain of the Darkspear Tribe), Ubertip (Tooltip - Extended)
 {
@@ -103900,12 +103888,6 @@ STRING 17322
 // Abilities: A0LT (Feral Spirit), Ubertip (Tooltip - Normal - Extended)
 {
 Summons <A0LT,DataB1> Frost Wolf companions. Each wolf has <nwwf,realHP> hit points and deals <nwwf,mindmg1> - <nwwf,maxdmg1> damage. |nLasts <A0LT,Dur1> seconds. |n|n|cffffcc00Attacks land units.|r
-}
-
-STRING 17323
-// Upgrades: Rolf (Liquid Fire), Ubertip (Tooltip - Extended)
-{
-Gives Troll Batriders the Liquid Fire attack, which deals an additional 5 damage per second to buildings, stops them from being repaired, and reduces their attack rate by 50%.
 }
 
 STRING 17324
@@ -104023,7 +104005,7 @@ STRING 17342
 }
 
 STRING 17343
-// Abilities: A0AR (Shadow Infusion), Untip (Tooltip - Turn Off)
+// Abilities: A0E9 (Slow), Untip (Tooltip - Turn Off)
 {
 |cffc3dbffRight-click to activate auto-casting.|r
 }
@@ -104809,13 +104791,13 @@ STRING 17473
 }
 
 STRING 17474
-// Abilities: A0AR (Shadow Infusion), Unubertip (Tooltip - Turn Off - Extended)
+// Abilities: A0E9 (Slow), Unubertip (Tooltip - Turn Off - Extended)
 {
 |cffc3dbffRight-click to deactivate auto-casting.|r
 }
 
 STRING 17475
-// Abilities: A0RZ (Arcane Bomb), Unubertip (Tooltip - Turn Off - Extended)
+// Abilities: A0AR (Shadow Infusion), Unubertip (Tooltip - Turn Off - Extended)
 {
 |cffc3dbffRight-click to deactivate auto-casting.|r
 }
@@ -110417,7 +110399,7 @@ Titanforge Artifact
 }
 
 STRING 18408
-// Abilities: A0MJ (Parasite), Untip (Tooltip - Turn Off)
+// Abilities: A0AR (Shadow Infusion), Untip (Tooltip - Turn Off)
 {
 |cffc3dbffRight-click to activate auto-casting.|r
 }
@@ -110435,7 +110417,7 @@ Reduces nearby enemy units' attack damage by <A0WP,DataA4,%>% for <A0WP,Dur4> se
 }
 
 STRING 18411
-// Abilities: A0MJ (Parasite), Unubertip (Tooltip - Turn Off - Extended)
+// Abilities: A0RZ (Arcane Bomb), Unubertip (Tooltip - Turn Off - Extended)
 {
 |cffc3dbffRight-click to deactivate auto-casting.|r
 }
@@ -127261,7 +127243,7 @@ Increases attack attack bursts temporary speed bonus to 250%
 }
 
 STRING 21215
-// Upgrades: R015 (Marksmanship), effect1 (Effect 1)
+// Upgrades: R048 (Marksmanship), effect1 (Effect 1)
 {
 rlev
 }
@@ -127318,5 +127300,65 @@ STRING 21224
 // Upgrades: R07W (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 W
+}
+
+STRING 21225
+// Abilities: Auco (Unstable Concoction), Ubertip (Tooltip - Normal - Extended)
+{
+Causes a powerful explosion that deals 450 damage to a target air unit, and 100 damage to nearby enemy air units.
+}
+
+STRING 21226
+// Abilities: Auco (Unstable Concoction), Tip (Tooltip - Normal)
+{
+Unstable Concoction- [|cffffcc00Level 2|r]
+}
+
+STRING 21227
+// Abilities: A0MJ (Parasite), Untip (Tooltip - Turn Off)
+{
+|cffc3dbffRight-click to activate auto-casting.|r
+}
+
+STRING 21228
+// Abilities: A0MJ (Parasite), Unubertip (Tooltip - Turn Off - Extended)
+{
+|cffc3dbffRight-click to deactivate auto-casting.|r
+}
+
+STRING 21229
+// Upgrades: Rolf (Liquid Fire), Ubertip (Tooltip - Extended)
+{
+Improves Batriders' Unstable Concoction by increasing its initial damage to 750 and splash damage to 200.
+}
+
+STRING 21230
+// Upgrades: Rolf (Liquid Fire), Name (Name)
+{
+Airborne Toxins
+}
+
+STRING 21231
+// Upgrades: Rolf (Liquid Fire), Tip (Tooltip)
+{
+Research Airborne Toxins
+}
+
+STRING 21232
+// Upgrades: R015 (Marksmanship), effect1 (Effect 1)
+{
+rlev
+}
+
+STRING 21233
+// Units: obar (War Camp), Ubertip (Tooltip - Extended)
+{
+Home to the warriors of the Horde.|n|cfff5962dTrains:|R Grunt, Headhunter, Bat Rider |n|cfff5962dResearches:|R Airborne Toxins
+}
+
+STRING 21234
+// Units: edos (Roost), Ubertip (Tooltip - Extended)
+{
+Resting perch for the wild allies of the Sentinels.|n|cfff5962dTrains:|R Hippogryph Rider, Chimaera, Moon Rider|n|cfff5962dResearches:|R Improved Lightning Barrage
 }
 
