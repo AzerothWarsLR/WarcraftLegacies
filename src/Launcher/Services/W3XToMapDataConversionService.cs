@@ -76,10 +76,9 @@ namespace Launcher.Services
       SerializeAndWriteJson(map, outputFolderPath);
       
       var importedFiles = map.ImportedFiles?.Files;
-      if (importedFiles == null) 
-        return;
+      if (importedFiles != null) 
+        CopyImportedFiles(baseMapPath, importedFiles, outputFolderPath);
       
-      CopyImportedFiles(baseMapPath, importedFiles, outputFolderPath);
       File.Copy($"{baseMapPath}/war3mapMap.blp", $@"{outputFolderPath}\war3mapMap.blp", true);
     }
 
