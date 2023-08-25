@@ -20,13 +20,13 @@ namespace Launcher.Services
   /// <summary>
   /// Converts collections of loose files into a playable Warcraft 3 map.
   /// </summary>
-  public sealed class MapDataToW3XConversionService
+  public sealed class MapDataToMapBuilderConverter
   {
     private readonly IMapper _mapper;
     
     private readonly JsonSerializerOptions _jsonSerializerOptions;
 
-    public MapDataToW3XConversionService(IMapper mapper, JsonModifierProvider jsonModifierProvider)
+    public MapDataToMapBuilderConverter(IMapper mapper, JsonModifierProvider jsonModifierProvider)
     {
       _mapper = mapper;
       _jsonSerializerOptions = new()

@@ -20,7 +20,7 @@ namespace Launcher.Services
   /// <summary>
   /// Converts a Warcraft 3 map into a collection of loose files so that they can be stored in version control.
   /// </summary>
-  public sealed class W3XToMapDataConversionService
+  public sealed class W3XToMapDataConverter
   {
     private readonly IMapper _mapper;
 
@@ -32,7 +32,7 @@ namespace Launcher.Services
       Converters = { new ColorJsonConverter() }
     };
 
-    public W3XToMapDataConversionService(IMapper mapper)
+    public W3XToMapDataConverter(IMapper mapper)
     {
       _mapper = mapper;
     }

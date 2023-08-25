@@ -21,7 +21,7 @@ namespace Launcher.Services
   /// <summary>
   /// Builds a Warcraft 3 map based on inputs.
   /// </summary>
-  public sealed class MapBuilderService
+  public sealed class AdvancedMapBuilder
   {
     private readonly CompilerSettings _compilerSettings;
     private readonly MapSettings _mapSettings;
@@ -34,7 +34,7 @@ namespace Launcher.Services
 		private const bool Debug = false;
 #endif
 
-    public MapBuilderService(CompilerSettings compilerSettings, MapSettings mapSettings)
+    public AdvancedMapBuilder(CompilerSettings compilerSettings, MapSettings mapSettings)
     {
       _compilerSettings = compilerSettings;
       _mapSettings = mapSettings;

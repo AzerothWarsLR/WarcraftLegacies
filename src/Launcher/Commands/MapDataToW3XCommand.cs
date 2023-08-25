@@ -55,12 +55,12 @@ namespace Launcher.Commands
       var compilerSettings = appConfiguration.GetRequiredSection(nameof(CompilerSettings)).Get<CompilerSettings>();
       var mapSettings = appConfiguration.GetRequiredSection(nameof(MapSettings)).Get<MapSettings>();
       
-      var autoMapperConfig = new AutoMapperConfigurationService().GetConfiguration();
+      var autoMapperConfig = new AutoMapperConfigurationProvider().GetConfiguration();
       var mapper = new Mapper(autoMapperConfig);
-      var conversionService = new MapDataToW3XConversionService(mapper, new JsonModifierProvider());
+      var conversionService = new MapDataToMapBuilderConverter(mapper, new JsonModifierProvider());
       var mapBuilderFromMapData = conversionService.Convert(mapDataDirectory);
       
-      new MapBuilderService(compilerSettings, mapSettings)
+      new AdvancedMapBuilder(compilerSettings, mapSettings)
         .BuildAndSave(mapBuilderFromMapData, mapName, sourceCodeFolderPath, launch, outputDirectory, backupDirectory);
     }
   }

@@ -26,9 +26,9 @@ namespace Launcher.Commands
 
     private static void Run(string baseMapPath, string outputDirectory)
     {
-      var autoMapperConfig = new AutoMapperConfigurationService().GetConfiguration();
+      var autoMapperConfig = new AutoMapperConfigurationProvider().GetConfiguration();
       var mapper = new Mapper(autoMapperConfig);
-      new W3XToMapDataConversionService(mapper).Convert(baseMapPath, outputDirectory);
+      new W3XToMapDataConverter(mapper).Convert(baseMapPath, outputDirectory);
     }
   }
 }

@@ -15,7 +15,7 @@ using Region = War3Net.Build.Environment.Region;
 
 namespace Launcher.Services
 {
-  public sealed class AutoMapperConfigurationService
+  public sealed class AutoMapperConfigurationProvider
   {
     public MapperConfiguration GetConfiguration()
     {
