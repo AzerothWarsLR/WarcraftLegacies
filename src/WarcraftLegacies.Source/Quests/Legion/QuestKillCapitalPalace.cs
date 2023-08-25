@@ -22,7 +22,7 @@ namespace WarcraftLegacies.Source.Quests.Legion
       "The precious human capital has crumbled, and your Dreadlords feel their strength growing as the fate of the humanity is all but sealed.";
 
     /// <inheritdoc/>
-    protected override string RewardDescription => "You are now able to research the Greater Carrion Swarm upgrade.";
+    protected override string RewardDescription => "Gain the ability to research Greater Carrion Swarm from Black Citadels and capitals.";
     /// <inheritdoc/>
     protected override void OnComplete(Faction whichFaction)
     {
