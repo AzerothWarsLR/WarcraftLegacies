@@ -26,7 +26,7 @@
     },
     "WarcraftLegacies: Convert W3X to MapData": {
       "commandName": "Project",
-      "commandLineArgs": "w3x-to-mapdata WarcraftLegacies \"..\\..\\..\\..\\..\\maps\\source.w3x\" \"..\\..\\..\\..\\..\\mapdata\\WarcraftLegacies\""
+      "commandLineArgs": "w3x-to-mapdata \"..\\..\\..\\..\\..\\maps\\source.w3x\" \"..\\..\\..\\..\\..\\mapdata\\WarcraftLegacies\""
     },
     "WarcraftLegacies: Convert MapData to W3X": {
       "commandName": "Project",

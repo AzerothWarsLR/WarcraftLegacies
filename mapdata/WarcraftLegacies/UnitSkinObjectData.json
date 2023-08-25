@@ -646,12 +646,12 @@
         {
           "Id": 1651864693,
           "Type": 3,
-          "Value": "TRIGSTR_002"
+          "Value": "TRIGSTR_14164"
         },
         {
           "Id": 1953850229,
           "Type": 3,
-          "Value": "TRIGSTR_12999"
+          "Value": "TRIGSTR_15722"
         }
       ]
     },
@@ -14033,7 +14033,7 @@
         {
           "Id": 1953850229,
           "Type": 3,
-          "Value": "TRIGSTR_3647"
+          "Value": "TRIGSTR_15766"
         },
         {
           "Id": 1718840949,
@@ -14058,7 +14058,7 @@
         {
           "Id": 1651864693,
           "Type": 3,
-          "Value": "TRIGSTR_3863"
+          "Value": "TRIGSTR_18025"
         }
       ]
     },
@@ -14591,7 +14591,7 @@
         {
           "Id": 1651864693,
           "Type": 3,
-          "Value": "TRIGSTR_1666"
+          "Value": "TRIGSTR_21172"
         }
       ]
     },
@@ -92852,7 +92852,7 @@
         {
           "Id": 1651864693,
           "Type": 3,
-          "Value": "TRIGSTR_20915"
+          "Value": "TRIGSTR_21152"
         }
       ]
     },
@@ -92895,7 +92895,7 @@
         {
           "Id": 1651864693,
           "Type": 3,
-          "Value": "TRIGSTR_18025"
+          "Value": "TRIGSTR_21153"
         },
         {
           "Id": 1818520949,
@@ -93278,7 +93278,7 @@
         {
           "Id": 1953458293,
           "Type": 3,
-          "Value": "TRIGSTR_6652"
+          "Value": "TRIGSTR_4876"
         },
         {
           "Id": 1831952757,
@@ -93590,7 +93590,7 @@
         {
           "Id": 1953458293,
           "Type": 3,
-          "Value": "TRIGSTR_6659"
+          "Value": "TRIGSTR_4878"
         },
         {
           "Id": 2054188149,
@@ -93658,17 +93658,17 @@
         {
           "Id": 1718840949,
           "Type": 3,
-          "Value": "TRIGSTR_20819"
+          "Value": "TRIGSTR_002"
         },
         {
           "Id": 1953458293,
           "Type": 3,
-          "Value": "TRIGSTR_5269"
+          "Value": "TRIGSTR_3357"
         },
         {
           "Id": 1633907573,
           "Type": 1,
-          "Value": 0.75
+          "Value": 1.2
         },
         {
           "Id": 1885959285,
@@ -93678,7 +93678,7 @@
         {
           "Id": 1651864693,
           "Type": 3,
-          "Value": "TRIGSTR_3032"
+          "Value": "TRIGSTR_11802"
         },
         {
           "Id": 1868786037,
@@ -93707,12 +93707,12 @@
         {
           "Id": 1718840949,
           "Type": 3,
-          "Value": "TRIGSTR_20823"
+          "Value": "TRIGSTR_20819"
         },
         {
           "Id": 1953458293,
           "Type": 3,
-          "Value": "TRIGSTR_6735"
+          "Value": "TRIGSTR_6652"
         },
         {
           "Id": 1633907573,
@@ -93764,7 +93764,7 @@
         {
           "Id": 1718840949,
           "Type": 3,
-          "Value": "TRIGSTR_20826"
+          "Value": "TRIGSTR_20823"
         },
         {
           "Id": 1953458293,
@@ -93895,7 +93895,7 @@
         {
           "Id": 1718840949,
           "Type": 3,
-          "Value": "TRIGSTR_20829"
+          "Value": "TRIGSTR_20826"
         },
         {
           "Id": 1885959285,
@@ -93949,12 +93949,12 @@
         {
           "Id": 1718840949,
           "Type": 3,
-          "Value": "TRIGSTR_20831"
+          "Value": "TRIGSTR_20829"
         },
         {
           "Id": 1953458293,
           "Type": 3,
-          "Value": "TRIGSTR_6800"
+          "Value": "TRIGSTR_6659"
         },
         {
           "Id": 1633907573,
@@ -94027,7 +94027,7 @@
         {
           "Id": 1718840949,
           "Type": 3,
-          "Value": "TRIGSTR_20839"
+          "Value": "TRIGSTR_20831"
         },
         {
           "Id": 1818520949,
@@ -94037,7 +94037,7 @@
         {
           "Id": 1953458293,
           "Type": 3,
-          "Value": "TRIGSTR_6807"
+          "Value": "TRIGSTR_6735"
         },
         {
           "Id": 1831952757,
@@ -94199,7 +94199,7 @@
         {
           "Id": 1718840949,
           "Type": 3,
-          "Value": "TRIGSTR_20840"
+          "Value": "TRIGSTR_20839"
         },
         {
           "Id": 1818520949,
@@ -94209,7 +94209,7 @@
         {
           "Id": 1953458293,
           "Type": 3,
-          "Value": "TRIGSTR_5271"
+          "Value": "TRIGSTR_5269"
         },
         {
           "Id": 828468597,
@@ -94308,7 +94308,7 @@
         {
           "Id": 1718840949,
           "Type": 3,
-          "Value": "TRIGSTR_20841"
+          "Value": "TRIGSTR_20840"
         },
         {
           "Id": 1835101813,
@@ -94390,7 +94390,7 @@
         {
           "Id": 1953458293,
           "Type": 3,
-          "Value": "TRIGSTR_6814"
+          "Value": "TRIGSTR_6800"
         },
         {
           "Id": 828468597,
@@ -94478,7 +94478,7 @@
         {
           "Id": 1953458293,
           "Type": 3,
-          "Value": "TRIGSTR_6980"
+          "Value": "TRIGSTR_6807"
         },
         {
           "Id": 1835101813,
@@ -94708,7 +94708,7 @@
         {
           "Id": 1953458293,
           "Type": 3,
-          "Value": "TRIGSTR_6982"
+          "Value": "TRIGSTR_6814"
         },
         {
           "Id": 1633907573,
@@ -94762,7 +94762,7 @@
         {
           "Id": 1953458293,
           "Type": 3,
-          "Value": "TRIGSTR_5315"
+          "Value": "TRIGSTR_5271"
         },
         {
           "Id": 1633907573,
@@ -94806,7 +94806,7 @@
         {
           "Id": 1953458293,
           "Type": 3,
-          "Value": "TRIGSTR_5316"
+          "Value": "TRIGSTR_5315"
         },
         {
           "Id": 1633907573,
@@ -94874,7 +94874,7 @@
         {
           "Id": 1953458293,
           "Type": 3,
-          "Value": "TRIGSTR_7028"
+          "Value": "TRIGSTR_6980"
         },
         {
           "Id": 1633907573,
@@ -94900,6 +94900,76 @@
           "Id": 1684960117,
           "Type": 3,
           "Value": "HeroBladeMaster"
+        }
+      ]
+    },
+    {
+      "OldId": 1752458088,
+      "NewId": 1162031208,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1868786037,
+          "Type": 3,
+          "Value": "ReplaceableTextures\\CommandButtons\\BTNBloodElfDragonHawk.blp"
+        },
+        {
+          "Id": 1651270517,
+          "Value": 200
+        },
+        {
+          "Id": 2020631157,
+          "Value": 2
+        },
+        {
+          "Id": 1718840949,
+          "Type": 3,
+          "Value": "TRIGSTR_20827"
+        },
+        {
+          "Id": 1818520949,
+          "Type": 3,
+          "Value": "war3mapImported\\HawkStriderRider_A_003.mdl"
+        },
+        {
+          "Id": 1735156597,
+          "Value": 200
+        },
+        {
+          "Id": 1953458293,
+          "Type": 3,
+          "Value": "TRIGSTR_6982"
+        },
+        {
+          "Id": 1835101813,
+          "Type": 3,
+          "Value": "TRIGSTR_20998"
+        },
+        {
+          "Id": 1919705973,
+          "Value": 175
+        },
+        {
+          "Id": 1668510581,
+          "Type": 1,
+          "Value": 0.85
+        },
+        {
+          "Id": 1885959285,
+          "Type": 3,
+          "Value": "TRIGSTR_21141"
+        },
+        {
+          "Id": 1651864693,
+          "Type": 3,
+          "Value": "TRIGSTR_21165"
+        },
+        {
+          "Id": 1684960117,
+          "Type": 3,
+          "Value": "SpellBreaker"
         }
       ]
     }

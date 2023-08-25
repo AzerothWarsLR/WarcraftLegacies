@@ -2291,7 +2291,12 @@
         {
           "Id": 1634824801,
           "Type": 3,
-          "Value": "2"
+          "Value": "1"
+        },
+        {
+          "Id": 1902473825,
+          "Type": 3,
+          "Value": "R09V"
         }
       ]
     },
@@ -3221,7 +3226,22 @@
       "Unk": [
         0
       ],
-      "Modifications": []
+      "Modifications": [
+        {
+          "Level": 1,
+          "Pointer": 2,
+          "Id": 846488141,
+          "Type": 2,
+          "Value": 0.75
+        },
+        {
+          "Level": 1,
+          "Pointer": 1,
+          "Id": 829710925,
+          "Type": 2,
+          "Value": 2.2
+        }
+      ]
     },
     {
       "OldId": 1684172097,
@@ -16196,36 +16216,36 @@
           "Value": 450
         },
         {
-          "Level": 1,
-          "Pointer": 1,
-          "Id": 828662088,
-          "Type": 2,
-          "Value": 2.5
-        },
-        {
           "Level": 2,
           "Pointer": 1,
           "Id": 828662088,
           "Type": 2,
-          "Value": 5
+          "Value": 4
         },
         {
           "Level": 3,
           "Pointer": 1,
           "Id": 828662088,
           "Type": 2,
-          "Value": 7.5
+          "Value": 6
         },
         {
           "Level": 4,
           "Pointer": 1,
           "Id": 828662088,
           "Type": 2,
-          "Value": 10
+          "Value": 8
         },
         {
           "Id": 1986358369,
           "Value": 4
+        },
+        {
+          "Level": 1,
+          "Pointer": 1,
+          "Id": 828662088,
+          "Type": 2,
+          "Value": 2.5
         }
       ]
     },
@@ -33208,7 +33228,7 @@
           "Level": 1,
           "Id": 1852072801,
           "Type": 2,
-          "Value": 50
+          "Value": 35
         },
         {
           "Level": 1,
@@ -33357,7 +33377,7 @@
           "Level": 1,
           "Id": 1852072801,
           "Type": 2,
-          "Value": 50
+          "Value": 35
         },
         {
           "Level": 1,
@@ -33873,7 +33893,7 @@
           "Level": 1,
           "Id": 1852072801,
           "Type": 2,
-          "Value": 80
+          "Value": 65
         },
         {
           "Level": 1,
@@ -34196,7 +34216,7 @@
           "Level": 1,
           "Id": 1852072801,
           "Type": 2,
-          "Value": 65
+          "Value": 50
         },
         {
           "Level": 1,
@@ -76576,7 +76596,7 @@
           "Pointer": 1,
           "Id": 829449301,
           "Type": 2,
-          "Value": 0.3
+          "Value": 0.1
         },
         {
           "Id": 1919248481,
@@ -76585,6 +76605,19 @@
         {
           "Id": 1986358369,
           "Value": 1
+        },
+        {
+          "Level": 1,
+          "Pointer": 2,
+          "Id": 846226517,
+          "Type": 2,
+          "Value": 1.25
+        },
+        {
+          "Level": 1,
+          "Id": 1851880033,
+          "Type": 2,
+          "Value": 1000
         }
       ]
     },
@@ -93864,42 +93897,35 @@
           "Pointer": 1,
           "Id": 829386835,
           "Type": 2,
-          "Value": 2
+          "Value": 2.5
         },
         {
           "Level": 2,
           "Pointer": 1,
           "Id": 829386835,
           "Type": 2,
-          "Value": 2
+          "Value": 2.5
         },
         {
           "Level": 1,
           "Pointer": 2,
           "Id": 846164051,
           "Type": 2,
-          "Value": 0.3
+          "Value": 0.35
         },
         {
           "Level": 2,
           "Pointer": 2,
           "Id": 846164051,
           "Type": 2,
-          "Value": 0.4
-        },
-        {
-          "Level": 1,
-          "Pointer": 3,
-          "Id": 862941267,
-          "Type": 2,
-          "Value": 0.2
+          "Value": 0.45
         },
         {
           "Level": 2,
           "Pointer": 3,
           "Id": 862941267,
           "Type": 2,
-          "Value": 0.25
+          "Value": 0.35
         },
         {
           "Level": 1,
@@ -93946,21 +93972,21 @@
           "Pointer": 2,
           "Id": 846164051,
           "Type": 2,
-          "Value": 0.4
+          "Value": 0.45
         },
         {
           "Level": 3,
           "Pointer": 3,
           "Id": 862941267,
           "Type": 2,
-          "Value": 0.25
+          "Value": 0.4
         },
         {
           "Level": 3,
           "Pointer": 1,
           "Id": 829386835,
           "Type": 2,
-          "Value": 4
+          "Value": 5
         },
         {
           "Level": 3,
@@ -93991,6 +94017,13 @@
           "Pointer": 4,
           "Id": 879718483,
           "Value": 1
+        },
+        {
+          "Level": 1,
+          "Pointer": 3,
+          "Id": 862941267,
+          "Type": 2,
+          "Value": 0.3
         }
       ]
     },
@@ -98417,7 +98450,7 @@
           "Pointer": 1,
           "Id": 828466504,
           "Type": 2,
-          "Value": 35
+          "Value": 30
         }
       ]
     },
@@ -119254,6 +119287,11 @@
           "Id": 1918989409,
           "Type": 3,
           "Value": "air,ground,invulnerable,structure,tree,vulnerable,ward"
+        },
+        {
+          "Id": 1634824801,
+          "Type": 3,
+          "Value": "3"
         }
       ]
     },
@@ -124922,7 +124960,7 @@
           "Pointer": 1,
           "Id": 828466760,
           "Type": 2,
-          "Value": 20
+          "Value": 15
         },
         {
           "Level": 2,
@@ -127118,7 +127156,7 @@
           "Level": 1,
           "Id": 1852072801,
           "Type": 2,
-          "Value": 90
+          "Value": 60
         },
         {
           "Id": 1919248481,
@@ -129361,6 +129399,460 @@
           "Id": 829580111,
           "Type": 2,
           "Value": 15
+        }
+      ]
+    },
+    {
+      "OldId": 1634943809,
+      "NewId": 1144205633,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Level": 1,
+          "Id": 1935895905,
+          "Value": 0
+        },
+        {
+          "Level": 2,
+          "Id": 1935895905,
+          "Value": 12
+        },
+        {
+          "Level": 1,
+          "Pointer": 1,
+          "Id": 828466760,
+          "Type": 2,
+          "Value": 20
+        },
+        {
+          "Level": 2,
+          "Pointer": 1,
+          "Id": 828466760,
+          "Type": 2,
+          "Value": 35
+        },
+        {
+          "Id": 1667330657,
+          "Type": 3,
+          "Value": "human"
+        },
+        {
+          "Level": 1,
+          "Id": 1851880033,
+          "Type": 2,
+          "Value": 90
+        },
+        {
+          "Level": 2,
+          "Id": 1851880033,
+          "Type": 2,
+          "Value": 90
+        },
+        {
+          "Level": 1,
+          "Id": 1918989409,
+          "Type": 3,
+          "Value": "enemies,ground,neutral,structure"
+        },
+        {
+          "Level": 2,
+          "Id": 1918989409,
+          "Type": 3,
+          "Value": "enemies,ground,neutral,structure"
+        }
+      ]
+    },
+    {
+      "OldId": 1650677057,
+      "NewId": 1160982849,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Level": 2,
+          "Id": 1935895905,
+          "Value": 40
+        },
+        {
+          "Level": 4,
+          "Id": 1935895905,
+          "Value": 60
+        },
+        {
+          "Level": 4,
+          "Pointer": 5,
+          "Id": 895640405,
+          "Value": 12
+        },
+        {
+          "Id": 1986358369,
+          "Value": 1
+        },
+        {
+          "Id": 1919248481,
+          "Value": 0
+        },
+        {
+          "Level": 1,
+          "Pointer": 3,
+          "Id": 862544210,
+          "Type": 3,
+          "Value": "n067"
+        },
+        {
+          "Level": 1,
+          "Id": 1920296033,
+          "Type": 2,
+          "Value": 45
+        },
+        {
+          "Level": 1,
+          "Id": 1969514593,
+          "Type": 2,
+          "Value": 45
+        },
+        {
+          "Level": 1,
+          "Pointer": 5,
+          "Id": 895640405,
+          "Value": 99
+        },
+        {
+          "Id": 1634824801,
+          "Type": 3,
+          "Value": "2"
+        },
+        {
+          "Id": 1902473825,
+          "Type": 3,
+          "Value": "Redt"
+        }
+      ]
+    },
+    {
+      "OldId": 1919045185,
+      "NewId": 1177760065,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Level": 1,
+          "Id": 1701994849,
+          "Type": 2,
+          "Value": 1000
+        },
+        {
+          "Level": 2,
+          "Id": 1701994849,
+          "Type": 2,
+          "Value": 1000
+        },
+        {
+          "Level": 3,
+          "Id": 1701994849,
+          "Type": 2,
+          "Value": 1000
+        },
+        {
+          "Level": 2,
+          "Id": 1718968929,
+          "Type": 3,
+          "Value": "B076"
+        },
+        {
+          "Level": 3,
+          "Id": 1718968929,
+          "Type": 3,
+          "Value": "B076"
+        },
+        {
+          "Level": 1,
+          "Id": 1852072801,
+          "Type": 2,
+          "Value": 60
+        },
+        {
+          "Level": 2,
+          "Id": 1852072801,
+          "Type": 2,
+          "Value": 60
+        },
+        {
+          "Level": 3,
+          "Id": 1852072801,
+          "Type": 2,
+          "Value": 60
+        },
+        {
+          "Level": 1,
+          "Id": 1935895905,
+          "Value": 25
+        },
+        {
+          "Level": 2,
+          "Id": 1935895905,
+          "Value": 150
+        },
+        {
+          "Level": 3,
+          "Id": 1935895905,
+          "Value": 150
+        },
+        {
+          "Level": 1,
+          "Pointer": 1,
+          "Id": 829579854,
+          "Type": 2,
+          "Value": -25
+        },
+        {
+          "Level": 2,
+          "Pointer": 1,
+          "Id": 829579854,
+          "Type": 2,
+          "Value": -200
+        },
+        {
+          "Level": 3,
+          "Pointer": 1,
+          "Id": 829579854,
+          "Type": 2,
+          "Value": -200
+        },
+        {
+          "Level": 2,
+          "Id": 1920296033,
+          "Type": 2,
+          "Value": 15
+        },
+        {
+          "Level": 3,
+          "Id": 1920296033,
+          "Type": 2,
+          "Value": 20
+        },
+        {
+          "Level": 1,
+          "Id": 1969514593,
+          "Type": 2,
+          "Value": 5
+        },
+        {
+          "Level": 2,
+          "Id": 1969514593,
+          "Type": 2,
+          "Value": 7.5
+        },
+        {
+          "Id": 1986358369,
+          "Value": 1
+        },
+        {
+          "Id": 1802726497,
+          "Value": 5
+        },
+        {
+          "Id": 1667330657,
+          "Type": 3,
+          "Value": "nightelf"
+        },
+        {
+          "Id": 1986818657,
+          "Value": 10
+        },
+        {
+          "Level": 1,
+          "Id": 1918989409,
+          "Type": 3,
+          "Value": "air,enemies,ground,vulnerable"
+        },
+        {
+          "Level": 2,
+          "Id": 1918989409,
+          "Type": 3,
+          "Value": "air,enemies,ground,vulnerable"
+        },
+        {
+          "Level": 3,
+          "Id": 1918989409,
+          "Type": 3,
+          "Value": "air,enemies,ground,vulnerable"
+        },
+        {
+          "Id": 1919248481,
+          "Value": 0
+        },
+        {
+          "Level": 1,
+          "Id": 1718968929,
+          "Type": 3,
+          "Value": "BNht"
+        }
+      ]
+    },
+    {
+      "OldId": 1986085697,
+      "NewId": 1194537281,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Level": 1,
+          "Id": 1701994849,
+          "Type": 2,
+          "Value": 400
+        },
+        {
+          "Id": 1667330657,
+          "Type": 3,
+          "Value": "nightelf"
+        },
+        {
+          "Level": 1,
+          "Pointer": 1,
+          "Id": 828662088,
+          "Type": 2,
+          "Value": -0.2
+        },
+        {
+          "Level": 1,
+          "Pointer": 2,
+          "Id": 845439304,
+          "Value": 1
+        },
+        {
+          "Level": 1,
+          "Id": 1918989409,
+          "Type": 3,
+          "Value": "air,enemies,ground,neutral"
+        },
+        {
+          "Level": 1,
+          "Id": 1717986657,
+          "Type": 3,
+          "Value": "B00E"
+        },
+        {
+          "Level": 1,
+          "Id": 1718968929,
+          "Type": 3,
+          "Value": ""
+        }
+      ]
+    },
+    {
+      "OldId": 1952992833,
+      "NewId": 1211314497,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Level": 1,
+          "Id": 1701994849,
+          "Type": 2,
+          "Value": 600
+        },
+        {
+          "Level": 2,
+          "Id": 1701994849,
+          "Type": 2,
+          "Value": 600
+        },
+        {
+          "Level": 3,
+          "Id": 1701994849,
+          "Type": 2,
+          "Value": 600
+        },
+        {
+          "Level": 4,
+          "Id": 1701994849,
+          "Type": 2,
+          "Value": 600
+        },
+        {
+          "Level": 1,
+          "Id": 1935895905,
+          "Value": 0
+        },
+        {
+          "Level": 2,
+          "Id": 1935895905,
+          "Value": 90
+        },
+        {
+          "Level": 3,
+          "Id": 1935895905,
+          "Value": 90
+        },
+        {
+          "Level": 4,
+          "Id": 1935895905,
+          "Value": 90
+        },
+        {
+          "Level": 1,
+          "Pointer": 1,
+          "Id": 828469074,
+          "Type": 2,
+          "Value": 0.25
+        },
+        {
+          "Level": 3,
+          "Pointer": 1,
+          "Id": 828469074,
+          "Type": 2,
+          "Value": 0.55
+        },
+        {
+          "Level": 4,
+          "Pointer": 1,
+          "Id": 828469074,
+          "Type": 2,
+          "Value": 0.7
+        },
+        {
+          "Id": 1986358369,
+          "Value": 1
+        },
+        {
+          "Level": 1,
+          "Id": 1852072801,
+          "Type": 2,
+          "Value": 15
+        },
+        {
+          "Level": 2,
+          "Id": 1852072801,
+          "Type": 2,
+          "Value": 15
+        },
+        {
+          "Level": 3,
+          "Id": 1852072801,
+          "Type": 2,
+          "Value": 15
+        },
+        {
+          "Level": 4,
+          "Id": 1852072801,
+          "Type": 2,
+          "Value": 15
+        },
+        {
+          "Id": 1919248481,
+          "Value": 0
+        },
+        {
+          "Id": 1667330657,
+          "Type": 3,
+          "Value": "nightelf"
         }
       ]
     }

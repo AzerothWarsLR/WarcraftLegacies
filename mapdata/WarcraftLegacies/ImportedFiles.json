@@ -3875,6 +3875,1562 @@
     },
     {
       "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASAuraFire.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASAuraShadow.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASBeamsOfLight.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASBlightHorn.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASBoltBarrage.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASBridgeDown.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASBTNSlaughter.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASCenariusHand.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASCrushingWave.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASDarkness Shield.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASDeathOrder.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASDevastation.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASDevineBlessing.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASDivineClarity.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASDivineClarity2.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASDragonCarapace.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASDread.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASElephant.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASEnchantedBlade.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASFeatherMoonAura.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASFreezeField.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASFrostAura.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASFrostMourne2.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASFurbolgRage.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASGlaiveStorm.BLP"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASGloryAura.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASGoblinBruiser.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASGoblinCommando.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASGoblinFuelSpill.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASGoldPile.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASGolemCarapace.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASGrasping_Vines.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASGruntWarcry.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASGunPrecision.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASHatred.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASHeadshot.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASHealCannon.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASHolyCharge.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASHolyStrikeRemake(Fix3).blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASHordeRune.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASInfernalShower.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASKingStrideAura.BLP"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASLancelot_Plate.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASLeadershipAura.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASLight.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASMagicWand.BLP"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASmanaharvest.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASMetalPlatingLevel3.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASMoltenBoulder.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASMoonflies.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASNaturesBlessing2.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASNECatTransform.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASNecromancy.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASOil.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASOrbOfTheSun.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASOrcishAxe.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASoverlord.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASPlated Gauntlet2.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASPortal2.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASPurification.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASPurify.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASRefurbish.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASReincarnationTauren.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASReincarnationWarden.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASReptilesHand.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASRetriAura.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASRiflemanBurningShot.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASRoar.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASRondache2.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASRuneblade.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASRunicAura.BLP"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASSacredStrike.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASSatanicAura.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASSearingArrowAlt.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASShadowDance.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASShieldHumanLionMark.BLP"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASShockStorm.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASSkeletalOrcGrunt.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASSoulBinding.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASSpearOfJustice.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASSpiritCrusader.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASSPresence_Blood.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASSPresence_Frost.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASSPresence_Unholy.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASStoneShield.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASTenebriousArmor.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASTentacles.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASTrample.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASTriclyde.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASTripleShot.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASUnholy.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASUnholyPower.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASVR.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASWarglaive_of_Azzinoth.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASWarlockAura.BLP"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASWarpPortal.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASweapon_sword.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASWhirlPool.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASWorgenPoisonClaws.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASZeusStrike.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPAS_BloodCurseV2.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPAS_CR_Nagaswim.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPAS_CR_RuneRage.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPAS_CR_SEGGOLEM.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/PassiveButtons/PASArcaneEnergy.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/PassiveButtons/PASArthasLifeDrain.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/PassiveButtons/PASBoltBarrage.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/PassiveButtons/PASBridgeDown.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/PassiveButtons/PASCripplingVenom.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/PassiveButtons/PASDeathOrder.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/PassiveButtons/PASFortifiedDefenses.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/PassiveButtons/PASFreezeField.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/PassiveButtons/PASFrostMourne2.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/PassiveButtons/PASGlaiveStorm.BLP"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/PassiveButtons/PASGloryAura.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/PassiveButtons/PASGoblinCommando.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/PassiveButtons/PASGrasping_Vines.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/PassiveButtons/PASHealCannon.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/PassiveButtons/PASHolyStrikeRemake(Fix3).blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/PassiveButtons/PASKingStrideAura.BLP"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/PassiveButtons/PASLegionNexusBarrage.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/PassiveButtons/PASLethal_Venom.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/PassiveButtons/PASNavalAura.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/PassiveButtons/PASNECatTransform.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/PassiveButtons/PASOil.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/PassiveButtons/PASPlated Gauntlet2.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/PassiveButtons/PASRetriAura.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/PassiveButtons/PASRondache2.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/PassiveButtons/PASSacredStrike.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/PassiveButtons/PASScout.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/PassiveButtons/PASSearingArrowAlt.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/PassiveButtons/PASShadowDance.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/PassiveButtons/PASShockStorm.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/PassiveButtons/PASSpearOfJustice.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/PassiveButtons/PASStoneShield.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/PassiveButtons/PASWarlockAura.BLP"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/PassiveButtons/PASweapon_sword.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/PassiveButtons/PASWorgenPoisonClaws.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/PassiveButtons/PAS_BloodCurseV2.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/PassiveButtons/PAS_CR_Nagaswim.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/PassiveButtonsDisabled/DISPASNavalAura.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/SSHHeroChogall.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/SSHHeroXaviusSatyr.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "Royal Captain.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "Royal Captain_Portrait.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "Royal Prince Arthas.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "RoyalGlow02.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "RoyalGuard.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "RoyalGuard_Armor.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\AllianceSiegeTower.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\VioletPulse.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\BlackHole.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\2BlackHole.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\KhadgarOld.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\King Varian Wrynn.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\King Varian Wrynn_Portrait.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\DwarfDreadNaughtRocket.MDX"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\SkeletonBerserker.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\SkeletonBerserker_Portrait.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\Phase Disruptor.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures\\PassiveButtons\\PASANA_HealingButterfliesFixed.BLP"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\Danath.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\AlteracAltar.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\AlteracBlacksmith.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\AlteracFactory.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\AlteracFarm.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\AlteracGryphonAviary.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\AlteracMarketPlace.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\AlteracTower.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\AlteracTownHall.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\AlteracWizardTower.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\StromgardeAltar.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\StromgardeBarracks.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\StromgardeBlacksmith.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\StromgardecFarm.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\StromgardeGryphonRoost.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\StromgardeKeep.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\StromgardeTowerV1.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\StromgardeTradeHouse.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\StromgardeWizardSanctum.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\StromgardeWorkshop.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\Radioactivecloud.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "Textures\\Bubble.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\ThroneOfWar.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\ThroneOfWar_Missile.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures\\PassiveButtons\\PASTerrorTroll.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures\\CommandButtonsDisabled\\DISPASTerrorTroll.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures\\PassiveButtons\\PASArrowsSpears.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\TrollHexxer.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\TrollHexxer_Portrait.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\Hakkar_Portrait.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\Hakkar.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\KulTirasRifleman.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\Team Coloured Nathrezim.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\Black War Raptor.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\DISBTNRaptorLoyalty.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\Imp.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\GiantSandWorm.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\GiantSandWorm_Portrait.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\Silithid Devourer.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "Silithid Devourer.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\Silithid Devourer_Portrait.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\seadrake.MDX"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "TEAMCO.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\seadrake_portrait.MDX"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\warqueen.MDX"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "Warq.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\warqueen_portrait.MDX"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\Rhinolox.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\Sacred Guard Gold.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\ArchmageNagaCentaurV1.00.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\Hero_GoblinPrince.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\EliteTwilighAscendant2.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\EliteTwilighAscendant2_Portrait.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures\\CommandButtonsDISBTNNerubianZiggurat.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\HighElfSanctum.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\ElvenGarden.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\High Elven Altar.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\HighElfShop.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\DragonHawkAviary.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\Aether Vault 53.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\Lyceum Arcana 64.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\Altar of Starlight 69.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\Fountainhead 242.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\WorkerBloodElfV1.01.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\BloodElvenMagister.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\BloodElvenMagister_Portrait.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\DragonboneGolem.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\DragonboneGolem_Portrait.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\Emporium 13.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\EliteBloodElfSpellThief.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\EliteBloodElfSpellThief_Portrait.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\BloodElfRunnerV2.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\VoidReaver.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\FelShivarra.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\Bloodelf_Scorpion.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\Bloodelf_Scorpion_Portrait.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\BloodElf_Skyship_Test.MDX"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\BloodelfPhoenixArcher.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\BloodelfPhoenixArcher_Portrait.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\WatcherBloodElfV1.02.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\HeroElfDarkEnchanter_Portrait.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\HeroElfDarkEnchanter.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\Hero Wizard.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\Hero Wizard_portrait.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\VoidWalkerSol.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\GilneasRifleman.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\Sir Ferdal(Gilneas).mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\StormwindBanner.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\Forsaken_Apothecary.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\Forsaken_Apothecary_Portrait.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\Genn Worgen.MDX"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures\\CommandButtonsDisabled\\DISPASWorgenHotClaws.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures\\PassiveButtons\\PASWorgenHotClaws.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\WorgenDruid3.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\WorgenDruid3_Portrait.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\VrykulHuntressRider.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\VrykulHuntressRider_Portrait.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\GilneasMage.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\Siege_Ballista.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\GoblinTank.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "war3mapImported\\GoblinTank_portrait.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "6dr_siegedif.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "AbdomenGlow.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "AdmiralsEliteGuard.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "AdmiralsEliteGuardCape.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "Agave.MDX"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "AirElemental_Skin01.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ApothecaryWrap.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "Archer  Lordaeron_Light_Alter.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "Archer_Lordaeron_ArrowMissile.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "armorv2.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "Armor_Color.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "AtlanteanBTex.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "Base.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "Base2.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "BattlecastGlow.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "BearMount.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "Bishop.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "BlackHoleSkin04-64.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "BlackOrderArmour.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "BlackSmoke1.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "Blink Blue Caster.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "Blink Blue Target.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "Body_Color.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "BonechewerGrunt.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "BrillianceSmall.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "BTNDarkIronCaster.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "Buildings/Human/Blacksmith/NewBlacksmith.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "Buildings/LostTribe/MastersLodge/MastersLodge.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "Buildings/Undead/Armory/Armory.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "Buildings/woodelf/entgather/entgather.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "Building_StormwindMageTower.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "CaptainKulTirasV1.03.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "CatapultV1_by_Kitabatake.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "chains bent.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "Chogall.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "CoralofLife.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "CoreHoundTextureRed.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "CthunTexture.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "CW_Galen_Trollbane.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "CW_Gilneas_Buildings.BLP"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "Danath.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "DarkIronAltar.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "DarkIronArcaneHall.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "DarkIronBarrakcsV1.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "DarkIronBunkerV1.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "DarkIronCannonBunkerV1.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "DarkIronForge.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "DarkIronGuardBunkerV1.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "DarkIronGunBunkerV1.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "DarkIronHouse.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "DarkIronInfernoBunkerV1.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "DarkIronLair.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "DarkIronMillV1.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "DarkIronTavern.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "DarkIronTownHall.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "DarkIronWorkshopV1.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "DayLaborer.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "Deathwing.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "DeathWings.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "DemonRune1backup.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "DenOfWonders.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "DireHornGreen.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "Divine Wings.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "Draenei.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "DraeneiAdherent.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "DraeneiBuilding.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "DraeneiHuntress_by67chrome.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "DraeneiLightBlue.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "DraeneiLuminary.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "Drone.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "DruidoftheClawKulTirasV1.02.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "DUST2.BLP"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "DwarfShoveler.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "DwarfShoveler.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "DwarfShoveler_Portrait.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "Dwarven Round Tower.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "Dwarven Square Tower.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "DwarvenBuildingV1.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "DwarvenBuildingV2.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "DwarvenBuildingV3.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "DwarvenBuildingV4.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "DwarvenBuildingV5.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "DwarvenBuildingV6.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "DwarvenKingStatue1.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "EarthElementalTexture.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ElekkBrown.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ElekkKnight.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "FelGlow.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "FireDragonElemental.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "FireDragonElemental_Glow.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "FireSparks.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "FlyingMachineKulTirasV1.02.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "FMRunes.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "Fog.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "FootmanBanditV1.00.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "FootmanHeroHQ.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "FootmanStromgardeV1.04.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "Forest_Ashenvale.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "FrostmourneNew.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "galaxy.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "Garrosh.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "GeneralV2.06.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "GeneralVezax.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "GLOWBALL.BLP"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "Goblin/CorsairMask.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "Goblin/Werker.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "GoliathFire2.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "GreenWake2.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "GreenWake3.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "GryphonRider.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "Hakkar.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "Hammer Missile.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "Heal Blue.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "HellscreamsFist.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "HeroChronomancer.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "HeroChronomancer_Portrait.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "HeroElfDarkEnchanter.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "HeroGlow.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "HeroNagaEnchantress.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "HeroNagaEnchantress_Portrait.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "HeroOwlMoonPriestess.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "HeroSlicer.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "HeroTinkerRock.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "Hero_Executus.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "Hobgoblin.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "Holy Light Royal.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "HumanMage.blp"
+    },
+    {
+      "Flags": 29,
       "FullPath": "HunterKulTirasV1.12.mdx"
     },
     {
@@ -3896,6 +5452,10 @@
     {
       "Flags": 29,
       "FullPath": "Judgment_portrait.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "KhadgarOld.blp"
     },
     {
       "Flags": 29,
@@ -3979,6 +5539,10 @@
     },
     {
       "Flags": 29,
+      "FullPath": "nagawar.blp"
+    },
+    {
+      "Flags": 29,
       "FullPath": "NetherRayTC.blp"
     },
     {
@@ -4048,6 +5612,10 @@
     {
       "Flags": 29,
       "FullPath": "PsionicGlow.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "PurpleRingGlow.blp"
     },
     {
       "Flags": 29,
@@ -4288,6 +5856,10 @@
     {
       "Flags": 29,
       "FullPath": "ReplaceableTextures/CommandButtons/BTNAna.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtons/BTNANA_HealingButterfliesFixed.BLP"
     },
     {
       "Flags": 29,
@@ -4535,6 +6107,10 @@
     },
     {
       "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtons/BTNBlackHole.blp"
+    },
+    {
+      "Flags": 29,
       "FullPath": "ReplaceableTextures/CommandButtons/BTNBlackPlague.blp"
     },
     {
@@ -4563,11 +6139,27 @@
     },
     {
       "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtons/BTNBloodElfHeroRanger.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtons/BTNBloodelfPhoenixArcher.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtons/BTNBloodElfSorceress.blp"
+    },
+    {
+      "Flags": 29,
       "FullPath": "ReplaceableTextures/CommandButtons/BTNBloodElfWizard.blp"
     },
     {
       "Flags": 29,
       "FullPath": "ReplaceableTextures/CommandButtons/BTNBloodelf_Arcane_Annihilator.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtons/BTNBloodelf_Guard.blp"
     },
     {
       "Flags": 29,
@@ -4584,6 +6176,10 @@
     {
       "Flags": 29,
       "FullPath": "ReplaceableTextures/CommandButtons/BTNBloodFury.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtons/BTNBloodhuntress.blp"
     },
     {
       "Flags": 29,
@@ -4707,6 +6303,10 @@
     },
     {
       "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtons/BTNBurning_Mana.blp"
+    },
+    {
+      "Flags": 29,
       "FullPath": "ReplaceableTextures/CommandButtons/BTNCatapultWC1.blp"
     },
     {
@@ -4720,6 +6320,10 @@
     {
       "Flags": 29,
       "FullPath": "ReplaceableTextures/CommandButtons/BTNcenraiushd.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtons/BTNChaosBerserk.blp"
     },
     {
       "Flags": 29,
@@ -4824,6 +6428,10 @@
     {
       "Flags": 29,
       "FullPath": "ReplaceableTextures/CommandButtons/BTNDarionDeathKnight.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtons/BTNDarkElfArcher.blp"
     },
     {
       "Flags": 29,
@@ -5152,6 +6760,14 @@
     {
       "Flags": 29,
       "FullPath": "ReplaceableTextures/CommandButtons/BTNDread.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtons/BTNDreadlordInf.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtons/BTNDreadnaughtDwarf.blp"
     },
     {
       "Flags": 29,
@@ -5839,6 +7455,10 @@
     },
     {
       "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtons/BTNGoblinAssaultTank.blp"
+    },
+    {
+      "Flags": 29,
       "FullPath": "ReplaceableTextures/CommandButtons/BTNGoblinFuelSpill.blp"
     },
     {
@@ -5872,6 +7492,10 @@
     {
       "Flags": 29,
       "FullPath": "ReplaceableTextures/CommandButtons/BTNGoblin_AssaultTank.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtons/BTNGoldenArcherB.blp"
     },
     {
       "Flags": 29,
@@ -5955,6 +7579,10 @@
     },
     {
       "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtons/BTNHell Imp.blp"
+    },
+    {
+      "Flags": 29,
       "FullPath": "ReplaceableTextures/CommandButtons/BTNHellscreamBerserk.blp"
     },
     {
@@ -5987,7 +7615,11 @@
     },
     {
       "Flags": 29,
-      "FullPath": "ReplaceableTextures\\CommandButtons\\BTNHeroRange.blp"
+      "FullPath": "ReplaceableTextures/CommandButtons/BTNHeroRange.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtons/BTNHeroRangerGiln.blp"
     },
     {
       "Flags": 29,
@@ -6363,6 +7995,10 @@
     },
     {
       "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtons/BTNKhadgarW.blp"
+    },
+    {
+      "Flags": 29,
       "FullPath": "ReplaceableTextures/CommandButtons/BTNKingRagnar.blp"
     },
     {
@@ -6531,6 +8167,10 @@
     },
     {
       "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtons/BTNMaelstromEngine.blp"
+    },
+    {
+      "Flags": 29,
       "FullPath": "ReplaceableTextures/CommandButtons/BTNMage 01.blp"
     },
     {
@@ -6591,6 +8231,10 @@
     },
     {
       "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtons/BTNManaGem.blp"
+    },
+    {
+      "Flags": 29,
       "FullPath": "ReplaceableTextures/CommandButtons/BTNmanaharvest.blp"
     },
     {
@@ -6647,6 +8291,10 @@
     },
     {
       "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtons/BTNMindWorm.blp"
+    },
+    {
+      "Flags": 29,
       "FullPath": "ReplaceableTextures/CommandButtons/BTNMograine.blp"
     },
     {
@@ -6684,6 +8332,14 @@
     {
       "Flags": 29,
       "FullPath": "ReplaceableTextures/CommandButtons/BTNNagaRoyalVault.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtons/BTNNagaSeaWitchMelee.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtons/BTNNarwhall1.blp"
     },
     {
       "Flags": 29,
@@ -6727,7 +8383,19 @@
     },
     {
       "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtons/BTNNerubianHatchery.blp"
+    },
+    {
+      "Flags": 29,
       "FullPath": "ReplaceableTextures/CommandButtons/BTNNerubianSmasher.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtons/BTNNerubianZiggurat.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtons/BTNNetherShield.blp"
     },
     {
       "Flags": 29,
@@ -6891,6 +8559,10 @@
     },
     {
       "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtons/BTNPhoenixFlame.blp"
+    },
+    {
+      "Flags": 29,
       "FullPath": "ReplaceableTextures/CommandButtons/BTNpikeman.blp"
     },
     {
@@ -6971,6 +8643,10 @@
     },
     {
       "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtons/BTNRaptorLoyalty.blp"
+    },
+    {
+      "Flags": 29,
       "FullPath": "ReplaceableTextures/CommandButtons/BTNRaven_Shield.blp"
     },
     {
@@ -7012,6 +8688,10 @@
     {
       "Flags": 29,
       "FullPath": "ReplaceableTextures/CommandButtons/BTNrexxarhd.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtons/BTNRhinolox.BLP"
     },
     {
       "Flags": 29,
@@ -7235,6 +8915,10 @@
     },
     {
       "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtons/BTNSilithid.blp"
+    },
+    {
+      "Flags": 29,
       "FullPath": "ReplaceableTextures/CommandButtons/BTNSilithidDevourer.blp"
     },
     {
@@ -7356,6 +9040,10 @@
     {
       "Flags": 29,
       "FullPath": "ReplaceableTextures/CommandButtons/BTNSpell_Shadow_ShadowWordPain.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtons/BTNSpell_Shadow_SummonVoidWalker.blp"
     },
     {
       "Flags": 29,
@@ -7563,6 +9251,10 @@
     },
     {
       "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtons/BTNToxicGoo.blp"
+    },
+    {
+      "Flags": 29,
       "FullPath": "ReplaceableTextures/CommandButtons/BTNTransportShip1.blp"
     },
     {
@@ -7596,6 +9288,10 @@
     {
       "Flags": 29,
       "FullPath": "ReplaceableTextures/CommandButtons/BTNTrollConjurer.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtons/BTNtrollmedium.blp"
     },
     {
       "Flags": 29,
@@ -7676,6 +9372,10 @@
     {
       "Flags": 29,
       "FullPath": "ReplaceableTextures/CommandButtons/BTNVereesa_Windrunner.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtons/BTNVoidReaverIcon.blp"
     },
     {
       "Flags": 29,
@@ -7815,11 +9515,23 @@
     },
     {
       "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtons/BTNworg.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtons/BTNWorgen-Werewolf.blp"
+    },
+    {
+      "Flags": 29,
       "FullPath": "ReplaceableTextures/CommandButtons/BTNworgen.blp"
     },
     {
       "Flags": 29,
       "FullPath": "ReplaceableTextures/CommandButtons/BTNWorgenHunger.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtons/BTNWorgenHunt.blp"
     },
     {
       "Flags": 29,
@@ -7836,6 +9548,10 @@
     {
       "Flags": 29,
       "FullPath": "ReplaceableTextures/CommandButtons/BTNYogg-saronIcon.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtons/BTNZandalari Throne of War.blp"
     },
     {
       "Flags": 29,
@@ -7916,6 +9632,14 @@
     {
       "Flags": 29,
       "FullPath": "ReplaceableTextures/CommandButtons/BTN_MoonSight.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtons/BTN_NECastle.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtons/BTN_NETownHall.blp"
     },
     {
       "Flags": 29,
@@ -8315,6 +10039,34 @@
     },
     {
       "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsBTNNerubianAltar.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsBTNNerubianArcaneSanctum.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsBTNNerubianArmoury.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsBTNNerubianBarracks.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsBTNNerubianReliquary.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsBTNNerubianStronghold.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/BTN_NEKeep.blp"
+    },
+    {
+      "Flags": 29,
       "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISATCABTNHolyAura.blp"
     },
     {
@@ -8516,6 +10268,10 @@
     {
       "Flags": 29,
       "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISBTNAna.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISBTNANA_HealingButterfliesFixed.BLP"
     },
     {
       "Flags": 29,
@@ -8755,6 +10511,10 @@
     },
     {
       "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISBTNBlackHole.blp"
+    },
+    {
+      "Flags": 29,
       "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISBTNBlackPlague.blp"
     },
     {
@@ -8783,11 +10543,27 @@
     },
     {
       "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISBTNBloodElfHeroRanger.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISBTNBloodelfPhoenixArcher.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISBTNBloodElfSorceress.blp"
+    },
+    {
+      "Flags": 29,
       "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISBTNBloodElfWizard.blp"
     },
     {
       "Flags": 29,
       "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISBTNBloodelf_Arcane_Annihilator.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISBTNBloodelf_Guard.blp"
     },
     {
       "Flags": 29,
@@ -8804,6 +10580,10 @@
     {
       "Flags": 29,
       "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISBTNBloodFury.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISBTNBloodhuntress.blp"
     },
     {
       "Flags": 29,
@@ -8919,6 +10699,10 @@
     },
     {
       "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISBTNBurning_Mana.blp"
+    },
+    {
+      "Flags": 29,
       "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISBTNCatapultWC1.blp"
     },
     {
@@ -8932,6 +10716,10 @@
     {
       "Flags": 29,
       "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISBTNcenraiushd.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISBTNChaosBerserk.blp"
     },
     {
       "Flags": 29,
@@ -9040,6 +10828,10 @@
     {
       "Flags": 29,
       "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISBTNDarionDeathKnight.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISBTNDarkElfArcher.blp"
     },
     {
       "Flags": 29,
@@ -9376,6 +11168,14 @@
     {
       "Flags": 29,
       "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISBTNDread.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISBTNDreadlordInf.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISBTNDreadnaughtDwarf.blp"
     },
     {
       "Flags": 29,
@@ -10051,6 +11851,10 @@
     },
     {
       "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISBTNGoblinAssaultTank.blp"
+    },
+    {
+      "Flags": 29,
       "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISBTNGoblinFuelSpill.blp"
     },
     {
@@ -10084,6 +11888,10 @@
     {
       "Flags": 29,
       "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISBTNGoblin_AssaultTank.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISBTNGoldenArcherB.blp"
     },
     {
       "Flags": 29,
@@ -10167,6 +11975,10 @@
     },
     {
       "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISBTNHell Imp.blp"
+    },
+    {
+      "Flags": 29,
       "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISBTNHellscreamBerserk.blp"
     },
     {
@@ -10200,6 +12012,10 @@
     {
       "Flags": 29,
       "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISBTNHeroRanger.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISBTNHeroRangerGiln.blp"
     },
     {
       "Flags": 29,
@@ -10559,6 +12375,10 @@
     },
     {
       "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISBTNKhadgarW.blp"
+    },
+    {
+      "Flags": 29,
       "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISBTNKingRagnar.blp"
     },
     {
@@ -10727,6 +12547,10 @@
     },
     {
       "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISBTNMaelstromEngine.blp"
+    },
+    {
+      "Flags": 29,
       "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISBTNMage 01.blp"
     },
     {
@@ -10787,6 +12611,10 @@
     },
     {
       "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISBTNManaGem.blp"
+    },
+    {
+      "Flags": 29,
       "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISBTNmanaharvest.blp"
     },
     {
@@ -10839,6 +12667,10 @@
     },
     {
       "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISBTNMindWorm.blp"
+    },
+    {
+      "Flags": 29,
       "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISBTNMograine.blp"
     },
     {
@@ -10879,6 +12711,14 @@
     },
     {
       "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISBTNNagaSeaWitchMelee.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISBTNNarwhall1.blp"
+    },
+    {
+      "Flags": 29,
       "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISBTNNathanosBlightcaller.blp"
     },
     {
@@ -10915,11 +12755,43 @@
     },
     {
       "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISBTNNerubianAltar.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISBTNNerubianArcaneSanctum.blp"
+    },
+    {
+      "Flags": 29,
       "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISBTNNerubianArmory.blp"
     },
     {
       "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISBTNNerubianArmoury.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISBTNNerubianBarracks.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISBTNNerubianHatchery.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISBTNNerubianReliquary.blp"
+    },
+    {
+      "Flags": 29,
       "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISBTNNerubianSmasher.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISBTNNerubianStronghold.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISBTNNetherShield.blp"
     },
     {
       "Flags": 29,
@@ -11075,6 +12947,10 @@
     },
     {
       "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISBTNPhoenixFlame.blp"
+    },
+    {
+      "Flags": 29,
       "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISBTNpikeman.blp"
     },
     {
@@ -11159,6 +13035,10 @@
     },
     {
       "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISBTNRaptorLoyalty.blp"
+    },
+    {
+      "Flags": 29,
       "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISBTNRaven_Shield.blp"
     },
     {
@@ -11200,6 +13080,10 @@
     {
       "Flags": 29,
       "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISBTNrexxarhd.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISBTNRhinolox.BLP"
     },
     {
       "Flags": 29,
@@ -11427,6 +13311,10 @@
     },
     {
       "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISBTNSilithid.blp"
+    },
+    {
+      "Flags": 29,
       "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISBTNSilithidDevourer.blp"
     },
     {
@@ -11544,6 +13432,10 @@
     {
       "Flags": 29,
       "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISBTNSpell_Shadow_ShadowWordPain.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISBTNSpell_Shadow_SummonVoidWalker.blp"
     },
     {
       "Flags": 29,
@@ -11747,6 +13639,10 @@
     },
     {
       "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISBTNToxicGoo.blp"
+    },
+    {
+      "Flags": 29,
       "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISBTNTransportShip1.blp"
     },
     {
@@ -11780,6 +13676,10 @@
     {
       "Flags": 29,
       "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISBTNTrollConjurer.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISBTNtrollmedium.blp"
     },
     {
       "Flags": 29,
@@ -11860,6 +13760,10 @@
     {
       "Flags": 29,
       "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISBTNVereesa_Windrunner.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISBTNVoidReaverIcon.blp"
     },
     {
       "Flags": 29,
@@ -11999,11 +13903,23 @@
     },
     {
       "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISBTNworg.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISBTNWorgen-Werewolf.blp"
+    },
+    {
+      "Flags": 29,
       "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISBTNworgen.blp"
     },
     {
       "Flags": 29,
       "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISBTNWorgenHunger.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISBTNWorgenHunt.blp"
     },
     {
       "Flags": 29,
@@ -12020,6 +13936,10 @@
     {
       "Flags": 29,
       "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISBTNYogg-saronIcon.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISBTNZandalari Throne of War.blp"
     },
     {
       "Flags": 29,
@@ -12103,6 +14023,18 @@
     },
     {
       "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISBTN_NECastle.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISBTN_NEKeep.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISBTN_NETownhall.blp"
+    },
+    {
+      "Flags": 29,
       "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISBTN_PlatedFootman.blp"
     },
     {
@@ -12147,6 +14079,10 @@
     },
     {
       "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASANA_HealingButterfliesFixed.BLP"
+    },
+    {
+      "Flags": 29,
       "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASArcane.blp"
     },
     {
@@ -12159,1947 +14095,47 @@
     },
     {
       "Flags": 29,
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASArrowsSpears.blp"
+    },
+    {
+      "Flags": 29,
       "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASArthasLifeDrain.blp"
     },
     {
       "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASAuraFire.blp"
+      "FullPath": "war3mapImported\\HawkStriderRider_A_003.mdx"
     },
     {
       "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASAuraShadow.blp"
+      "FullPath": "ReplaceableTextures\\CommandButtons\\BTNBloodElfDragonHawk.blp"
     },
     {
       "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASBeamsOfLight.blp"
+      "FullPath": "ReplaceableTextures\\CommandButtonsDisabled\\DISBTNBloodElfDragonHawk.blp"
     },
     {
       "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASBlightHorn.blp"
+      "FullPath": "Abilities/Spells/Human/HolyBolt/BloodBoltMissile.mdx"
     },
     {
       "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASBoltBarrage.blp"
+      "FullPath": "Abilities/Spells/Human/HolyBolt/BloodBoltSpecialArt.mdx"
     },
     {
       "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASBridgeDown.blp"
+      "FullPath": "ReplaceableTextures/CommandButtons/ATCBTNSpiderblack_0.blp"
     },
     {
       "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASBTNSlaughter.blp"
+      "FullPath": "ReplaceableTextures/CommandButtons/BTNRedholylight.blp"
     },
     {
       "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASCenariusHand.blp"
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISATCBTNSpiderblack_0.blp"
     },
     {
       "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASCrushingWave.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASDarkness Shield.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASDeathOrder.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASDevastation.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASDevineBlessing.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASDivineClarity.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASDivineClarity2.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASDragonCarapace.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASDread.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASElephant.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASEnchantedBlade.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASFeatherMoonAura.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASFreezeField.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASFrostAura.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASFrostMourne2.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASFurbolgRage.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASGlaiveStorm.BLP"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASGloryAura.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASGoblinBruiser.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASGoblinCommando.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASGoblinFuelSpill.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASGoldPile.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASGolemCarapace.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASGrasping_Vines.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASGruntWarcry.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASGunPrecision.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASHatred.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASHeadshot.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASHealCannon.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASHolyCharge.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASHolyStrikeRemake(Fix3).blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASHordeRune.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASInfernalShower.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASKingStrideAura.BLP"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASLancelot_Plate.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASLeadershipAura.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASLight.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASMagicWand.BLP"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASmanaharvest.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASMetalPlatingLevel3.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASMoltenBoulder.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASMoonflies.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASNaturesBlessing2.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASNECatTransform.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASNecromancy.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASOil.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASOrbOfTheSun.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASOrcishAxe.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASoverlord.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASPlated Gauntlet2.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASPortal2.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASPurification.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASPurify.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASRefurbish.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASReincarnationTauren.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASReincarnationWarden.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASReptilesHand.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASRetriAura.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASRiflemanBurningShot.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASRoar.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASRondache2.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASRuneblade.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASRunicAura.BLP"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASSacredStrike.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASSatanicAura.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASSearingArrowAlt.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASShadowDance.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASShieldHumanLionMark.BLP"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASShockStorm.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASSkeletalOrcGrunt.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASSoulBinding.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASSpearOfJustice.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASSpiritCrusader.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASSPresence_Blood.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASSPresence_Frost.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASSPresence_Unholy.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASStoneShield.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASTenebriousArmor.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASTentacles.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASTrample.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASTriclyde.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASTripleShot.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASUnholy.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASUnholyPower.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASVR.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASWarglaive_of_Azzinoth.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASWarlockAura.BLP"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASWarpPortal.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASweapon_sword.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASWhirlPool.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASWorgenPoisonClaws.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPASZeusStrike.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPAS_BloodCurseV2.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPAS_CR_Nagaswim.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPAS_CR_RuneRage.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISPAS_CR_SEGGOLEM.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/PassiveButtons/PASArcaneEnergy.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/PassiveButtons/PASArthasLifeDrain.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/PassiveButtons/PASBoltBarrage.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/PassiveButtons/PASBridgeDown.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/PassiveButtons/PASCripplingVenom.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/PassiveButtons/PASDeathOrder.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/PassiveButtons/PASFortifiedDefenses.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/PassiveButtons/PASFreezeField.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/PassiveButtons/PASFrostMourne2.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/PassiveButtons/PASGlaiveStorm.BLP"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/PassiveButtons/PASGloryAura.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/PassiveButtons/PASGoblinCommando.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/PassiveButtons/PASGrasping_Vines.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/PassiveButtons/PASHealCannon.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/PassiveButtons/PASHolyStrikeRemake(Fix3).blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/PassiveButtons/PASKingStrideAura.BLP"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/PassiveButtons/PASLegionNexusBarrage.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/PassiveButtons/PASLethal_Venom.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/PassiveButtons/PASNavalAura.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/PassiveButtons/PASNECatTransform.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/PassiveButtons/PASOil.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/PassiveButtons/PASPlated Gauntlet2.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/PassiveButtons/PASRetriAura.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/PassiveButtons/PASRondache2.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/PassiveButtons/PASSacredStrike.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/PassiveButtons/PASScout.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/PassiveButtons/PASSearingArrowAlt.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/PassiveButtons/PASShadowDance.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/PassiveButtons/PASShockStorm.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/PassiveButtons/PASSpearOfJustice.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/PassiveButtons/PASStoneShield.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/PassiveButtons/PASWarlockAura.BLP"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/PassiveButtons/PASweapon_sword.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/PassiveButtons/PASWorgenPoisonClaws.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/PassiveButtons/PAS_BloodCurseV2.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/PassiveButtons/PAS_CR_Nagaswim.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/PassiveButtonsDisabled/DISPASNavalAura.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/SSHHeroChogall.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures/SSHHeroXaviusSatyr.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "Royal Captain.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "Royal Captain_Portrait.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "Royal Prince Arthas.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "RoyalGlow02.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "RoyalGuard.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "RoyalGuard_Armor.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\AllianceSiegeTower.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\VioletPulse.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures\\CommandButtons\\BTNBlackHole.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures\\CommandButtonsDisabled\\DISBTNBlackHole.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\BlackHole.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "PurpleRingGlow.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\2BlackHole.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\KhadgarOld.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "KhadgarOld.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\King Varian Wrynn.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\King Varian Wrynn_Portrait.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\DwarfDreadNaughtRocket.MDX"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures\\CommandButtons\\BTNDreadnaughtDwarf.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures\\CommandButtonsDisabled\\DISBTNDreadnaughtDwarf.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\SkeletonBerserker.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\SkeletonBerserker_Portrait.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures\\CommandButtons\\BTNNetherShield.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures\\CommandButtonsDisabled\\DISBTNNetherShield.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\Phase Disruptor.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures\\PassiveButtons\\PASANA_HealingButterfliesFixed.BLP"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures\\CommandButtonsDisabled\\DISPASANA_HealingButterfliesFixed.BLP"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures\\CommandButtons\\BTNANA_HealingButterfliesFixed.BLP"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures\\CommandButtonsDisabled\\DISBTNANA_HealingButterfliesFixed.BLP"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures\\CommandButtons\\BTN_NECastle.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures\\CommandButtonsDisabled\\BTN_NEKeep.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures\\CommandButtons\\BTN_NETownHall.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures\\CommandButtonsDisabled\\DISBTN_NECastle.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures\\CommandButtonsDisabled\\DISBTN_NEKeep.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures\\CommandButtonsDisabled\\DISBTN_NETownhall.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\Danath.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures\\CommandButtons\\BTNKhadgarW.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures\\CommandButtonsDisabled\\DISBTNKhadgarW.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\AlteracAltar.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\AlteracBlacksmith.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\AlteracFactory.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\AlteracFarm.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\AlteracGryphonAviary.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\AlteracMarketPlace.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\AlteracTower.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\AlteracTownHall.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\AlteracWizardTower.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\StromgardeAltar.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\StromgardeBarracks.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\StromgardeBlacksmith.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\StromgardecFarm.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\StromgardeGryphonRoost.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\StromgardeKeep.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\StromgardeTowerV1.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\StromgardeTradeHouse.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\StromgardeWizardSanctum.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\StromgardeWorkshop.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures\\CommandButtons\\BTNToxicGoo.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures\\CommandButtonsDisabled\\DISBTNToxicGoo.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\Radioactivecloud.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "Textures\\Bubble.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\ThroneOfWar.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\ThroneOfWar_Missile.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures\\CommandButtons\\BTNZandalari Throne of War.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures\\CommandButtonsDisabled\\DISBTNZandalari Throne of War.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures\\PassiveButtons\\PASTerrorTroll.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures\\CommandButtonsDisabled\\DISPASTerrorTroll.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures\\CommandButtonsDisabled\\DISPASArrowsSpears.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures\\PassiveButtons\\PASArrowsSpears.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\TrollHexxer.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\TrollHexxer_Portrait.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures\\CommandButtons\\BTNtrollmedium.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures\\CommandButtonsDisabled\\DISBTNtrollmedium.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\Hakkar_Portrait.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\Hakkar.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\KulTirasRifleman.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures\\CommandButtonsDisabled\\DISBTNGoldenArcherB.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures\\CommandButtons\\BTNGoldenArcherB.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\Team Coloured Nathrezim.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures\\CommandButtons\\BTNDreadlordInf.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures\\CommandButtonsDisabled\\DISBTNDreadlordInf.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\Black War Raptor.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures\\CommandButtons\\BTNRaptorLoyalty.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures\\CommandButtonsDisabled\\DISBTNRaptorLoyalty.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\DISBTNRaptorLoyalty.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures\\CommandButtons\\BTNHell Imp.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures\\CommandButtonsDisabled\\DISBTNHell Imp.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\Imp.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\GiantSandWorm.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\GiantSandWorm_Portrait.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures\\CommandButtons\\BTNMindWorm.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures\\CommandButtonsDisabled\\DISBTNMindWorm.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\Silithid Devourer.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "Silithid Devourer.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\Silithid Devourer_Portrait.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures\\CommandButtons\\BTNSilithid.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures\\CommandButtonsDisabled\\DISBTNSilithid.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\seadrake.MDX"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "TEAMCO.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\seadrake_portrait.MDX"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\warqueen.MDX"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "Warq.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "nagawar.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\warqueen_portrait.MDX"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\Rhinolox.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures\\CommandButtons\\BTNRhinolox.BLP"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures\\CommandButtonsDisabled\\DISBTNRhinolox.BLP"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\Sacred Guard Gold.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\ArchmageNagaCentaurV1.00.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures\\CommandButtons\\BTNNagaSeaWitchMelee.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures\\CommandButtonsDisabled\\DISBTNNagaSeaWitchMelee.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\Hero_GoblinPrince.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\EliteTwilighAscendant2.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\EliteTwilighAscendant2_Portrait.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures\\CommandButtons\\BTNChaosBerserk.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures\\CommandButtonsDisabled\\DISBTNChaosBerserk.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures\\CommandButtonsBTNNerubianAltar.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures\\CommandButtonsBTNNerubianArcaneSanctum.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures\\CommandButtonsBTNNerubianArmoury.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures\\CommandButtonsBTNNerubianBarracks.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures\\CommandButtonsBTNNerubianReliquary.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures\\CommandButtonsBTNNerubianStronghold.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures\\CommandButtons\\BTNNerubianZiggurat.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures\\CommandButtonsDisabled\\DISBTNNerubianAltar.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures\\CommandButtonsDisabled\\DISBTNNerubianArcaneSanctum.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures\\CommandButtonsDisabled\\DISBTNNerubianArmoury.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures\\CommandButtonsDisabled\\DISBTNNerubianBarracks.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures\\CommandButtonsDisabled\\DISBTNNerubianReliquary.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures\\CommandButtonsDisabled\\DISBTNNerubianStronghold.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures\\CommandButtonsDISBTNNerubianZiggurat.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures\\CommandButtonsDisabled\\DISBTNNerubianHatchery.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures\\CommandButtons\\BTNNerubianHatchery.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\HighElfSanctum.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\ElvenGarden.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\High Elven Altar.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\HighElfShop.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\DragonHawkAviary.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\Aether Vault 53.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\Lyceum Arcana 64.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\Altar of Starlight 69.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\Fountainhead 242.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\WorkerBloodElfV1.01.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\BloodElvenMagister.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\BloodElvenMagister_Portrait.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\DragonboneGolem.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\DragonboneGolem_Portrait.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\Emporium 13.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\EliteBloodElfSpellThief.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\EliteBloodElfSpellThief_Portrait.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\BloodElfRunnerV2.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\VoidReaver.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures\\CommandButtons\\BTNVoidReaverIcon.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures\\CommandButtonsDisabled\\DISBTNVoidReaverIcon.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\FelShivarra.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\Bloodelf_Scorpion.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\Bloodelf_Scorpion_Portrait.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\BloodElf_Skyship_Test.MDX"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures\\CommandButtons\\BTNNarwhall1.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures\\CommandButtonsDisabled\\DISBTNNarwhall1.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\BloodelfPhoenixArcher.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\BloodelfPhoenixArcher_Portrait.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\WatcherBloodElfV1.02.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\HeroElfDarkEnchanter_Portrait.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\HeroElfDarkEnchanter.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures\\CommandButtons\\BTNBloodElfHeroRanger.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures\\CommandButtonsDisabled\\DISBTNBloodElfHeroRanger.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures\\CommandButtons\\BTNBloodhuntress.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures\\CommandButtonsDisabled\\DISBTNBloodhuntress.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures\\CommandButtons\\BTNBloodelfPhoenixArcher.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures\\CommandButtonsDisabled\\DISBTNBloodelfPhoenixArcher.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures\\CommandButtons\\BTNBloodelf_Guard.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures\\CommandButtonsDisabled\\DISBTNBloodelf_Guard.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures\\CommandButtons\\BTNMaelstromEngine.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures\\CommandButtonsDisabled\\DISBTNMaelstromEngine.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures\\CommandButtons\\BTNBloodElfSorceress.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures\\CommandButtonsDisabled\\DISBTNBloodElfSorceress.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures\\CommandButtons\\BTNDarkElfArcher.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures\\CommandButtonsDisabled\\DISBTNDarkElfArcher.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\Hero Wizard.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\Hero Wizard_portrait.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures\\CommandButtons\\BTNManaGem.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures\\CommandButtonsDisabled\\DISBTNManaGem.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures\\CommandButtons\\BTNBurning_Mana.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures\\CommandButtonsDisabled\\DISBTNBurning_Mana.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\VoidWalkerSol.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures\\CommandButtons\\BTNSpell_Shadow_SummonVoidWalker.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures\\CommandButtonsDisabled\\DISBTNSpell_Shadow_SummonVoidWalker.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures\\CommandButtons\\BTNPhoenixFlame.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures\\CommandButtonsDisabled\\DISBTNPhoenixFlame.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\GilneasRifleman.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\Sir Ferdal(Gilneas).mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\StormwindBanner.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\Forsaken_Apothecary.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\Forsaken_Apothecary_Portrait.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\Genn Worgen.MDX"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures\\CommandButtons\\BTNWorgenHunt.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures\\CommandButtonsDisabled\\DISBTNWorgenHunt.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures\\CommandButtonsDisabled\\DISPASWorgenHotClaws.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures\\PassiveButtons\\PASWorgenHotClaws.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures\\CommandButtons\\BTNworg.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures\\CommandButtonsDisabled\\DISBTNworg.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\WorgenDruid3.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\WorgenDruid3_Portrait.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures\\CommandButtons\\BTNWorgen-Werewolf.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures\\CommandButtonsDisabled\\DISBTNWorgen-Werewolf.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures\\CommandButtons\\BTNHeroRangerGiln.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures\\CommandButtonsDisabled\\DISBTNHeroRangerGiln.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\VrykulHuntressRider.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\VrykulHuntressRider_Portrait.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\GilneasMage.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\Siege_Ballista.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\GoblinTank.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "war3mapImported\\GoblinTank_portrait.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures\\CommandButtons\\BTNGoblinAssaultTank.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ReplaceableTextures\\CommandButtonsDisabled\\DISBTNGoblinAssaultTank.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "6dr_siegedif.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "AbdomenGlow.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "AdmiralsEliteGuard.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "AdmiralsEliteGuardCape.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "Agave.MDX"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "AirElemental_Skin01.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ApothecaryWrap.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "Archer  Lordaeron_Light_Alter.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "Archer_Lordaeron_ArrowMissile.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "armorv2.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "Armor_Color.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "AtlanteanBTex.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "Base.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "Base2.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "BattlecastGlow.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "BearMount.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "Bishop.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "BlackHoleSkin04-64.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "BlackOrderArmour.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "BlackSmoke1.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "Blink Blue Caster.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "Blink Blue Target.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "Body_Color.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "BonechewerGrunt.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "BrillianceSmall.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "BTNDarkIronCaster.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "Buildings/Human/Blacksmith/NewBlacksmith.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "Buildings/LostTribe/MastersLodge/MastersLodge.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "Buildings/Undead/Armory/Armory.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "Buildings/woodelf/entgather/entgather.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "Building_StormwindMageTower.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "CaptainKulTirasV1.03.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "CatapultV1_by_Kitabatake.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "chains bent.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "Chogall.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "CoralofLife.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "CoreHoundTextureRed.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "CthunTexture.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "CW_Galen_Trollbane.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "CW_Gilneas_Buildings.BLP"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "Danath.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "DarkIronAltar.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "DarkIronArcaneHall.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "DarkIronBarrakcsV1.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "DarkIronBunkerV1.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "DarkIronCannonBunkerV1.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "DarkIronForge.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "DarkIronGuardBunkerV1.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "DarkIronGunBunkerV1.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "DarkIronHouse.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "DarkIronInfernoBunkerV1.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "DarkIronLair.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "DarkIronMillV1.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "DarkIronTavern.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "DarkIronTownHall.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "DarkIronWorkshopV1.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "DayLaborer.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "Deathwing.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "DeathWings.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "DemonRune1backup.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "DenOfWonders.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "DireHornGreen.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "Divine Wings.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "Draenei.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "DraeneiAdherent.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "DraeneiBuilding.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "DraeneiHuntress_by67chrome.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "DraeneiLightBlue.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "DraeneiLuminary.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "Drone.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "DruidoftheClawKulTirasV1.02.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "DUST2.BLP"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "DwarfShoveler.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "DwarfShoveler.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "DwarfShoveler_Portrait.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "Dwarven Round Tower.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "Dwarven Square Tower.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "DwarvenBuildingV1.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "DwarvenBuildingV2.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "DwarvenBuildingV3.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "DwarvenBuildingV4.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "DwarvenBuildingV5.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "DwarvenBuildingV6.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "DwarvenKingStatue1.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "EarthElementalTexture.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ElekkBrown.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "ElekkKnight.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "FelGlow.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "FireDragonElemental.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "FireDragonElemental_Glow.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "FireSparks.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "FlyingMachineKulTirasV1.02.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "FMRunes.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "Fog.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "FootmanBanditV1.00.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "FootmanHeroHQ.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "FootmanStromgardeV1.04.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "Forest_Ashenvale.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "FrostmourneNew.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "galaxy.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "Garrosh.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "GeneralV2.06.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "GeneralVezax.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "GLOWBALL.BLP"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "Goblin/CorsairMask.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "Goblin/Werker.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "GoliathFire2.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "GreenWake2.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "GreenWake3.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "GryphonRider.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "Hakkar.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "Hammer Missile.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "Heal Blue.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "HellscreamsFist.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "HeroChronomancer.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "HeroChronomancer_Portrait.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "HeroElfDarkEnchanter.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "HeroGlow.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "HeroNagaEnchantress.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "HeroNagaEnchantress_Portrait.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "HeroOwlMoonPriestess.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "HeroSlicer.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "HeroTinkerRock.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "Hero_Executus.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "Hobgoblin.blp"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "Holy Light Royal.mdx"
-    },
-    {
-      "Flags": 29,
-      "FullPath": "HumanMage.blp"
+      "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISBTNRedholylight.blp"
     }
   ]
 }

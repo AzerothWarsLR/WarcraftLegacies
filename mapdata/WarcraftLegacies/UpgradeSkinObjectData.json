@@ -67,7 +67,7 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_3794"
+          "Value": "TRIGSTR_3917"
         }
       ]
     },
@@ -148,13 +148,55 @@
           "Level": 1,
           "Id": 828536167,
           "Type": 3,
-          "Value": "TRIGSTR_13434"
+          "Value": "TRIGSTR_21179"
         },
         {
           "Level": 2,
           "Id": 828536167,
           "Type": 3,
           "Value": "TRIGSTR_13808"
+        },
+        {
+          "Level": 3,
+          "Id": 828536167,
+          "Type": 3,
+          "Value": "TRIGSTR_21180"
+        },
+        {
+          "Level": 3,
+          "Id": 829453415,
+          "Type": 3,
+          "Value": "TRIGSTR_21181"
+        },
+        {
+          "Level": 3,
+          "Id": 829122663,
+          "Type": 3,
+          "Value": "TRIGSTR_14669"
+        },
+        {
+          "Level": 3,
+          "Id": 1835101799,
+          "Type": 3,
+          "Value": "TRIGSTR_21182"
+        },
+        {
+          "Level": 2,
+          "Id": 1718840935,
+          "Type": 3,
+          "Value": "TRIGSTR_1979"
+        },
+        {
+          "Level": 3,
+          "Id": 1718840935,
+          "Type": 3,
+          "Value": "TRIGSTR_1985"
+        },
+        {
+          "Level": 3,
+          "Id": 829579623,
+          "Type": 3,
+          "Value": "ReplaceableTextures\\CommandButtons\\BTNTomeRed.blp"
         }
       ]
     },
@@ -246,7 +288,7 @@
           "Level": 1,
           "Id": 1718840935,
           "Type": 3,
-          "Value": "TRIGSTR_1979"
+          "Value": "TRIGSTR_2078"
         }
       ]
     },
@@ -264,13 +306,13 @@
           "Level": 1,
           "Id": 1718840935,
           "Type": 3,
-          "Value": "TRIGSTR_1985"
+          "Value": "TRIGSTR_3725"
         },
         {
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_3917"
+          "Value": "TRIGSTR_3960"
         },
         {
           "Level": 1,
@@ -294,7 +336,7 @@
           "Level": 1,
           "Id": 1718840935,
           "Type": 3,
-          "Value": "TRIGSTR_2078"
+          "Value": "TRIGSTR_3826"
         },
         {
           "Level": 1,
@@ -370,25 +412,25 @@
           "Level": 2,
           "Id": 1718840935,
           "Type": 3,
-          "Value": "TRIGSTR_3725"
+          "Value": "TRIGSTR_3837"
         },
         {
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_3960"
+          "Value": "TRIGSTR_3968"
         },
         {
           "Level": 2,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_3968"
+          "Value": "TRIGSTR_3982"
         },
         {
           "Level": 3,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_3982"
+          "Value": "TRIGSTR_4111"
         },
         {
           "Level": 1,
@@ -514,7 +556,7 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_14669"
+          "Value": "TRIGSTR_14670"
         },
         {
           "Level": 1,
@@ -626,7 +668,7 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_14670"
+          "Value": "TRIGSTR_14687"
         },
         {
           "Level": 1,
@@ -652,13 +694,13 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_14687"
+          "Value": "TRIGSTR_14688"
         },
         {
           "Level": 2,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_14688"
+          "Value": "TRIGSTR_14704"
         },
         {
           "Level": 1,
@@ -706,13 +748,13 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_21085"
+          "Value": "TRIGSTR_21093"
         },
         {
           "Level": 2,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_21086"
+          "Value": "TRIGSTR_21130"
         },
         {
           "Level": 1,
@@ -774,19 +816,19 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_19971"
+          "Value": "TRIGSTR_20189"
         },
         {
           "Level": 2,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_20071"
+          "Value": "TRIGSTR_20290"
         },
         {
           "Level": 3,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_20189"
+          "Value": "TRIGSTR_20515"
         },
         {
           "Level": 2,
@@ -925,7 +967,7 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_21093"
+          "Value": "TRIGSTR_21131"
         },
         {
           "Level": 1,
@@ -1151,7 +1193,7 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_14704"
+          "Value": "TRIGSTR_14705"
         },
         {
           "Level": 1,
@@ -1196,7 +1238,7 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_4111"
+          "Value": "TRIGSTR_4158"
         },
         {
           "Level": 1,
@@ -1240,7 +1282,7 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_14705"
+          "Value": "TRIGSTR_14740"
         },
         {
           "Level": 1,
@@ -1412,13 +1454,13 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_14740"
+          "Value": "TRIGSTR_14745"
         },
         {
           "Level": 2,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_14745"
+          "Value": "TRIGSTR_14746"
         }
       ]
     },
@@ -1488,7 +1530,7 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_14746"
+          "Value": "TRIGSTR_14775"
         }
       ]
     },
@@ -1574,19 +1616,19 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_20290"
+          "Value": "TRIGSTR_20567"
         },
         {
           "Level": 2,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_20515"
+          "Value": "TRIGSTR_20725"
         },
         {
           "Level": 3,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_20567"
+          "Value": "TRIGSTR_20726"
         },
         {
           "Level": 1,
@@ -1646,13 +1688,13 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_14775"
+          "Value": "TRIGSTR_14851"
         },
         {
           "Level": 2,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_14851"
+          "Value": "TRIGSTR_14861"
         },
         {
           "Level": 1,
@@ -1907,13 +1949,13 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_20689"
+          "Value": "TRIGSTR_20688"
         },
         {
           "Level": 2,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_20707"
+          "Value": "TRIGSTR_20689"
         },
         {
           "Level": 1,
@@ -2003,7 +2045,7 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_14861"
+          "Value": "TRIGSTR_14882"
         }
       ]
     },
@@ -2066,7 +2108,7 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_15176"
+          "Value": "TRIGSTR_16220"
         }
       ]
     },
@@ -2117,19 +2159,19 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_4158"
+          "Value": "TRIGSTR_4165"
         },
         {
           "Level": 2,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_4165"
+          "Value": "TRIGSTR_4182"
         },
         {
           "Level": 3,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_4182"
+          "Value": "TRIGSTR_4231"
         },
         {
           "Level": 1,
@@ -2273,43 +2315,43 @@
           "Level": 4,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_4231"
+          "Value": "TRIGSTR_6455"
         },
         {
           "Level": 5,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_6455"
+          "Value": "TRIGSTR_6788"
         },
         {
           "Level": 6,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_6788"
+          "Value": "TRIGSTR_7382"
         },
         {
           "Level": 7,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_7382"
+          "Value": "TRIGSTR_7604"
         },
         {
           "Level": 8,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_7604"
+          "Value": "TRIGSTR_7609"
         },
         {
           "Level": 9,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_7609"
+          "Value": "TRIGSTR_9004"
         },
         {
           "Level": 10,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_9004"
+          "Value": "TRIGSTR_9024"
         }
       ]
     },
@@ -2355,19 +2397,19 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_20725"
+          "Value": "TRIGSTR_20774"
         },
         {
           "Level": 2,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_20726"
+          "Value": "TRIGSTR_20818"
         },
         {
           "Level": 3,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_20774"
+          "Value": "TRIGSTR_20860"
         },
         {
           "Level": 1,
@@ -2429,7 +2471,7 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_21130"
+          "Value": "TRIGSTR_21142"
         },
         {
           "Level": 1,
@@ -2463,7 +2505,7 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_14882"
+          "Value": "TRIGSTR_14950"
         },
         {
           "Level": 1,
@@ -2659,19 +2701,19 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_9024"
+          "Value": "TRIGSTR_9828"
         },
         {
           "Level": 2,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_9828"
+          "Value": "TRIGSTR_10649"
         },
         {
           "Level": 3,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_10649"
+          "Value": "TRIGSTR_10882"
         },
         {
           "Level": 1,
@@ -2734,7 +2776,7 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_20775"
+          "Value": "TRIGSTR_20707"
         },
         {
           "Level": 1,
@@ -2764,13 +2806,13 @@
           "Level": 2,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_20781"
+          "Value": "TRIGSTR_20775"
         },
         {
           "Level": 3,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_20796"
+          "Value": "TRIGSTR_20781"
         }
       ]
     },
@@ -2794,7 +2836,7 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_10882"
+          "Value": "TRIGSTR_11308"
         }
       ]
     },
@@ -2928,13 +2970,13 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_14950"
+          "Value": "TRIGSTR_14993"
         },
         {
           "Level": 2,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_14993"
+          "Value": "TRIGSTR_14994"
         },
         {
           "Level": 2,
@@ -2952,7 +2994,7 @@
           "Level": 2,
           "Id": 828536167,
           "Type": 3,
-          "Value": "TRIGSTR_14164"
+          "Value": "TRIGSTR_5009"
         }
       ]
     },
@@ -2976,13 +3018,13 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_14994"
+          "Value": "TRIGSTR_15012"
         },
         {
           "Level": 2,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_15012"
+          "Value": "TRIGSTR_15017"
         },
         {
           "Level": 1,
@@ -3008,7 +3050,7 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_15214"
+          "Value": "TRIGSTR_16221"
         }
       ]
     },
@@ -3050,7 +3092,7 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_15277"
+          "Value": "TRIGSTR_16222"
         }
       ]
     }
@@ -3204,7 +3246,7 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_15017"
+          "Value": "TRIGSTR_15018"
         },
         {
           "Level": 1,
@@ -3247,7 +3289,7 @@
           "Level": 1,
           "Id": 1718840935,
           "Type": 3,
-          "Value": "TRIGSTR_3826"
+          "Value": "TRIGSTR_6755"
         },
         {
           "Level": 1,
@@ -3292,7 +3334,7 @@
           "Level": 1,
           "Id": 1718840935,
           "Type": 3,
-          "Value": "TRIGSTR_3837"
+          "Value": "TRIGSTR_7232"
         },
         {
           "Level": 1,
@@ -3343,7 +3385,7 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_20812"
+          "Value": "TRIGSTR_20796"
         },
         {
           "Level": 1,
@@ -3443,7 +3485,7 @@
           "Level": 1,
           "Id": 1718840935,
           "Type": 3,
-          "Value": "TRIGSTR_6755"
+          "Value": "TRIGSTR_8521"
         },
         {
           "Level": 1,
@@ -3467,7 +3509,7 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_11308"
+          "Value": "TRIGSTR_12438"
         }
       ]
     },
@@ -3521,7 +3563,7 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_20857"
+          "Value": "TRIGSTR_20812"
         },
         {
           "Level": 1,
@@ -3574,7 +3616,7 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_20858"
+          "Value": "TRIGSTR_20857"
         },
         {
           "Level": 1,
@@ -3751,7 +3793,7 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_20859"
+          "Value": "TRIGSTR_20858"
         },
         {
           "Level": 1,
@@ -4421,13 +4463,13 @@
           "Level": 1,
           "Id": 1718840935,
           "Type": 3,
-          "Value": "TRIGSTR_7232"
+          "Value": "TRIGSTR_12057"
         },
         {
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_15018"
+          "Value": "TRIGSTR_15047"
         },
         {
           "Level": 1,
@@ -4705,13 +4747,13 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_15047"
+          "Value": "TRIGSTR_15053"
         },
         {
           "Level": 2,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_15053"
+          "Value": "TRIGSTR_15080"
         },
         {
           "Level": 1,
@@ -5179,7 +5221,7 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_15080"
+          "Value": "TRIGSTR_15081"
         },
         {
           "Level": 1,
@@ -5228,7 +5270,7 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_12438"
+          "Value": "TRIGSTR_12500"
         },
         {
           "Level": 1,
@@ -5336,13 +5378,13 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_15081"
+          "Value": "TRIGSTR_15158"
         },
         {
           "Level": 2,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_15158"
+          "Value": "TRIGSTR_15172"
         },
         {
           "Level": 1,
@@ -5409,7 +5451,7 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_20862"
+          "Value": "TRIGSTR_20859"
         },
         {
           "Level": 1,
@@ -5596,13 +5638,13 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_15172"
+          "Value": "TRIGSTR_15213"
         },
         {
           "Level": 2,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_15213"
+          "Value": "TRIGSTR_15499"
         },
         {
           "Level": 1,
@@ -5662,7 +5704,7 @@
           "Level": 3,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_15499"
+          "Value": "TRIGSTR_15501"
         }
       ]
     },
@@ -5738,7 +5780,7 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_12500"
+          "Value": "TRIGSTR_13651"
         },
         {
           "Level": 1,
@@ -5933,7 +5975,7 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_15501"
+          "Value": "TRIGSTR_15764"
         },
         {
           "Level": 1,
@@ -6031,7 +6073,7 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_15764"
+          "Value": "TRIGSTR_15853"
         },
         {
           "Level": 1,
@@ -6080,7 +6122,7 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_20866"
+          "Value": "TRIGSTR_20862"
         },
         {
           "Level": 1,
@@ -6475,7 +6517,7 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_16184"
+          "Value": "TRIGSTR_16224"
         },
         {
           "Level": 1,
@@ -6499,19 +6541,19 @@
           "Level": 2,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_16220"
+          "Value": "TRIGSTR_17221"
         },
         {
           "Level": 3,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_16221"
+          "Value": "TRIGSTR_17478"
         },
         {
           "Level": 4,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_16222"
+          "Value": "TRIGSTR_17792"
         }
       ]
     },
@@ -6548,13 +6590,13 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_15853"
+          "Value": "TRIGSTR_15854"
         },
         {
           "Level": 2,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_15854"
+          "Value": "TRIGSTR_15899"
         },
         {
           "Level": 1,
@@ -6686,13 +6728,13 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_15899"
+          "Value": "TRIGSTR_15900"
         },
         {
           "Level": 2,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_15900"
+          "Value": "TRIGSTR_16016"
         },
         {
           "Level": 1,
@@ -6759,7 +6801,7 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_16224"
+          "Value": "TRIGSTR_18075"
         },
         {
           "Level": 1,
@@ -6783,19 +6825,19 @@
           "Level": 2,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_17221"
+          "Value": "TRIGSTR_18120"
         },
         {
           "Level": 3,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_17478"
+          "Value": "TRIGSTR_18284"
         },
         {
           "Level": 4,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_17792"
+          "Value": "TRIGSTR_18469"
         }
       ]
     },
@@ -6816,7 +6858,7 @@
           "Level": 1,
           "Id": 1718840935,
           "Type": 3,
-          "Value": "TRIGSTR_8521"
+          "Value": "TRIGSTR_13802"
         },
         {
           "Level": 1,
@@ -6843,13 +6885,13 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_16016"
+          "Value": "TRIGSTR_16017"
         },
         {
           "Level": 2,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_16017"
+          "Value": "TRIGSTR_16023"
         },
         {
           "Level": 1,
@@ -6916,7 +6958,7 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_18075"
+          "Value": "TRIGSTR_18770"
         },
         {
           "Level": 1,
@@ -6940,19 +6982,19 @@
           "Level": 2,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_18120"
+          "Value": "TRIGSTR_18887"
         },
         {
           "Level": 3,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_18284"
+          "Value": "TRIGSTR_19187"
         },
         {
           "Level": 4,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_18469"
+          "Value": "TRIGSTR_19202"
         }
       ]
     },
@@ -7145,13 +7187,13 @@
           "Level": 1,
           "Id": 1718840935,
           "Type": 3,
-          "Value": "TRIGSTR_12057"
+          "Value": "TRIGSTR_13820"
         },
         {
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_16023"
+          "Value": "TRIGSTR_16024"
         },
         {
           "Level": 1,
@@ -7206,13 +7248,13 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_16024"
+          "Value": "TRIGSTR_16074"
         },
         {
           "Level": 2,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_16074"
+          "Value": "TRIGSTR_16231"
         },
         {
           "Level": 1,
@@ -7486,7 +7528,7 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_16231"
+          "Value": "TRIGSTR_16232"
         },
         {
           "Level": 1,
@@ -7634,7 +7676,7 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_13651"
+          "Value": "TRIGSTR_13822"
         },
         {
           "Level": 1,
@@ -7688,7 +7730,7 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_16232"
+          "Value": "TRIGSTR_16234"
         },
         {
           "Level": 1,
@@ -7842,7 +7884,7 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_18770"
+          "Value": "TRIGSTR_19222"
         },
         {
           "Level": 1,
@@ -7866,19 +7908,19 @@
           "Level": 2,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_18887"
+          "Value": "TRIGSTR_20388"
         },
         {
           "Level": 3,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_19187"
+          "Value": "TRIGSTR_20389"
         },
         {
           "Level": 4,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_19202"
+          "Value": "TRIGSTR_21020"
         }
       ]
     },
@@ -7984,7 +8026,7 @@
           "Level": 1,
           "Id": 1718840935,
           "Type": 3,
-          "Value": "TRIGSTR_13802"
+          "Value": "TRIGSTR_13821"
         },
         {
           "Level": 1,
@@ -8060,7 +8102,7 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_20818"
+          "Value": "TRIGSTR_20861"
         },
         {
           "Level": 1,
@@ -8228,7 +8270,7 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_16234"
+          "Value": "TRIGSTR_16255"
         },
         {
           "Level": 1,
@@ -8427,7 +8469,7 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_16255"
+          "Value": "TRIGSTR_16305"
         },
         {
           "Level": 1,
@@ -8631,7 +8673,7 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_13822"
+          "Value": "TRIGSTR_13835"
         },
         {
           "Level": 1,
@@ -8947,13 +8989,13 @@
           "Level": 1,
           "Id": 1718840935,
           "Type": 3,
-          "Value": "TRIGSTR_13820"
+          "Value": "TRIGSTR_13824"
         },
         {
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_19222"
+          "Value": "TRIGSTR_21021"
         },
         {
           "Level": 1,
@@ -8992,7 +9034,7 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_16305"
+          "Value": "TRIGSTR_16455"
         },
         {
           "Level": 1,
@@ -9045,7 +9087,7 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_21131"
+          "Value": "TRIGSTR_21146"
         },
         {
           "Level": 1,
@@ -9224,7 +9266,7 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_20388"
+          "Value": "TRIGSTR_21022"
         },
         {
           "Level": 1,
@@ -9266,19 +9308,19 @@
           "Level": 2,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_20389"
+          "Value": "TRIGSTR_21170"
         },
         {
           "Level": 3,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_21020"
+          "Value": "TRIGSTR_21171"
         },
         {
           "Level": 4,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_21021"
+          "Value": "TRIGSTR_21187"
         },
         {
           "Level": 2,
@@ -9440,13 +9482,13 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_16455"
+          "Value": "TRIGSTR_16521"
         },
         {
           "Level": 2,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_16521"
+          "Value": "TRIGSTR_16590"
         },
         {
           "Level": 1,
@@ -9607,7 +9649,7 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_16590"
+          "Value": "TRIGSTR_16639"
         },
         {
           "Level": 1,
@@ -9658,13 +9700,13 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_16639"
+          "Value": "TRIGSTR_16706"
         },
         {
           "Level": 2,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_16706"
+          "Value": "TRIGSTR_16797"
         },
         {
           "Level": 1,
@@ -9712,7 +9754,7 @@
           "Level": 3,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_16797"
+          "Value": "TRIGSTR_16798"
         },
         {
           "Level": 3,
@@ -9937,7 +9979,7 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_16798"
+          "Value": "TRIGSTR_16835"
         },
         {
           "Level": 1,
@@ -9990,7 +10032,7 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_16835"
+          "Value": "TRIGSTR_16947"
         },
         {
           "Level": 1,
@@ -10179,13 +10221,13 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_16947"
+          "Value": "TRIGSTR_17250"
         },
         {
           "Level": 2,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_17250"
+          "Value": "TRIGSTR_17537"
         },
         {
           "Level": 1,
@@ -10326,13 +10368,13 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_17537"
+          "Value": "TRIGSTR_17538"
         },
         {
           "Level": 2,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_17538"
+          "Value": "TRIGSTR_17582"
         },
         {
           "Level": 1,
@@ -10407,7 +10449,7 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_13835"
+          "Value": "TRIGSTR_13836"
         },
         {
           "Level": 1,
@@ -10558,7 +10600,7 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_17582"
+          "Value": "TRIGSTR_17583"
         },
         {
           "Level": 1,
@@ -10773,7 +10815,7 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_21022"
+          "Value": "TRIGSTR_21188"
         },
         {
           "Level": 1,
@@ -10911,7 +10953,7 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_13836"
+          "Value": "TRIGSTR_14204"
         },
         {
           "Id": 2037408359,
@@ -10942,7 +10984,7 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_20926"
+          "Value": "TRIGSTR_20866"
         },
         {
           "Level": 1,
@@ -11002,13 +11044,13 @@
           "Level": 2,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_21027"
+          "Value": "TRIGSTR_20926"
         },
         {
           "Level": 3,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_21052"
+          "Value": "TRIGSTR_21027"
         },
         {
           "Level": 2,
@@ -11072,7 +11114,7 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_17583"
+          "Value": "TRIGSTR_17600"
         },
         {
           "Level": 1,
@@ -11182,7 +11224,7 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_14204"
+          "Value": "TRIGSTR_14573"
         },
         {
           "Level": 1,
@@ -11533,13 +11575,13 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_17600"
+          "Value": "TRIGSTR_17800"
         },
         {
           "Level": 2,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_17800"
+          "Value": "TRIGSTR_17832"
         },
         {
           "Level": 1,
@@ -11848,7 +11890,7 @@
           "Level": 1,
           "Id": 1718840935,
           "Type": 3,
-          "Value": "TRIGSTR_13821"
+          "Value": "TRIGSTR_13834"
         },
         {
           "Level": 1,
@@ -11872,7 +11914,7 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_14573"
+          "Value": "TRIGSTR_15534"
         }
       ]
     },
@@ -12432,19 +12474,19 @@
           "Level": 1,
           "Id": 1718840935,
           "Type": 3,
-          "Value": "TRIGSTR_13824"
+          "Value": "TRIGSTR_13983"
         },
         {
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_17832"
+          "Value": "TRIGSTR_18102"
         },
         {
           "Level": 2,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_18102"
+          "Value": "TRIGSTR_18889"
         },
         {
           "Level": 1,
@@ -13143,13 +13185,13 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_18889"
+          "Value": "TRIGSTR_18896"
         },
         {
           "Level": 2,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_18896"
+          "Value": "TRIGSTR_18911"
         },
         {
           "Level": 1,
@@ -13210,13 +13252,13 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_18911"
+          "Value": "TRIGSTR_18948"
         },
         {
           "Level": 2,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_18948"
+          "Value": "TRIGSTR_19196"
         },
         {
           "Level": 2,
@@ -13561,19 +13603,19 @@
           "Level": 1,
           "Id": 1718840935,
           "Type": 3,
-          "Value": "TRIGSTR_13834"
+          "Value": "TRIGSTR_14053"
         },
         {
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_20860"
+          "Value": "TRIGSTR_21120"
         },
         {
           "Level": 2,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_20861"
+          "Value": "TRIGSTR_21154"
         },
         {
           "Level": 1,
@@ -13634,13 +13676,13 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_19196"
+          "Value": "TRIGSTR_19605"
         },
         {
           "Level": 2,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_19605"
+          "Value": "TRIGSTR_20396"
         },
         {
           "Level": 1,
@@ -13722,13 +13764,13 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_20396"
+          "Value": "TRIGSTR_20397"
         },
         {
           "Level": 2,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_20397"
+          "Value": "TRIGSTR_20398"
         },
         {
           "Level": 1,
@@ -13782,7 +13824,7 @@
           "Level": 3,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_20398"
+          "Value": "TRIGSTR_20399"
         },
         {
           "Level": 3,
@@ -13894,13 +13936,13 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_20399"
+          "Value": "TRIGSTR_20401"
         },
         {
           "Level": 2,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_20401"
+          "Value": "TRIGSTR_20402"
         },
         {
           "Level": 1,
@@ -14097,7 +14139,7 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_20402"
+          "Value": "TRIGSTR_20405"
         },
         {
           "Level": 1,
@@ -14144,7 +14186,7 @@
           "Level": 1,
           "Id": 1718840935,
           "Type": 3,
-          "Value": "TRIGSTR_13983"
+          "Value": "TRIGSTR_21184"
         },
         {
           "Level": 1,
@@ -14362,13 +14404,13 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_20405"
+          "Value": "TRIGSTR_20415"
         },
         {
           "Level": 2,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_20415"
+          "Value": "TRIGSTR_20430"
         },
         {
           "Level": 1,
@@ -14443,7 +14485,7 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_15534"
+          "Value": "TRIGSTR_16236"
         },
         {
           "Level": 2,
@@ -14910,7 +14952,7 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_20430"
+          "Value": "TRIGSTR_20700"
         },
         {
           "Level": 2,
@@ -15159,7 +15201,7 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_20700"
+          "Value": "TRIGSTR_20705"
         },
         {
           "Level": 2,
@@ -15425,13 +15467,13 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_20705"
+          "Value": "TRIGSTR_20727"
         },
         {
           "Level": 2,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_20727"
+          "Value": "TRIGSTR_20772"
         }
       ]
     },
@@ -15704,7 +15746,7 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_20772"
+          "Value": "TRIGSTR_20793"
         },
         {
           "Level": 2,
@@ -15913,7 +15955,7 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_16236"
+          "Value": "TRIGSTR_16242"
         }
       ]
     },
@@ -15952,7 +15994,7 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_16242"
+          "Value": "TRIGSTR_18103"
         },
         {
           "Level": 2,
@@ -16097,7 +16139,7 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_18103"
+          "Value": "TRIGSTR_18949"
         },
         {
           "Id": 2037408359,
@@ -16219,7 +16261,7 @@
           "Level": 1,
           "Id": 1718840935,
           "Type": 3,
-          "Value": "TRIGSTR_14053"
+          "Value": "TRIGSTR_21185"
         },
         {
           "Level": 1,
@@ -16243,7 +16285,7 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_18949"
+          "Value": "TRIGSTR_19130"
         },
         {
           "Id": 2037408359,
@@ -16400,7 +16442,7 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_19130"
+          "Value": "TRIGSTR_19197"
         },
         {
           "Level": 1,
@@ -16461,7 +16503,7 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_21119"
+          "Value": "TRIGSTR_21052"
         },
         {
           "Level": 2,
@@ -16572,7 +16614,7 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_19197"
+          "Value": "TRIGSTR_20416"
         },
         {
           "Level": 1,
@@ -16684,7 +16726,7 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_20793"
+          "Value": "TRIGSTR_20932"
         },
         {
           "Level": 1,
@@ -16723,7 +16765,7 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_20416"
+          "Value": "TRIGSTR_20417"
         },
         {
           "Level": 1,
@@ -16907,7 +16949,7 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_20417"
+          "Value": "TRIGSTR_20642"
         },
         {
           "Level": 1,
@@ -17427,7 +17469,7 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_21120"
+          "Value": "TRIGSTR_21208"
         },
         {
           "Level": 2,
@@ -17540,7 +17582,7 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_21121"
+          "Value": "TRIGSTR_21119"
         },
         {
           "Level": 2,
@@ -17653,7 +17695,7 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_20642"
+          "Value": "TRIGSTR_21198"
         },
         {
           "Level": 2,
@@ -17864,7 +17906,7 @@
           "Level": 1,
           "Id": 1718840935,
           "Type": 3,
-          "Value": "TRIGSTR_21025"
+          "Value": "TRIGSTR_20966"
         },
         {
           "Level": 1,
@@ -17931,19 +17973,19 @@
           "Level": 1,
           "Id": 1718840935,
           "Type": 3,
-          "Value": "TRIGSTR_21028"
+          "Value": "TRIGSTR_21025"
         },
         {
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_20932"
+          "Value": "TRIGSTR_21100"
         },
         {
           "Level": 2,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_21100"
+          "Value": "TRIGSTR_21186"
         },
         {
           "Level": 1,
@@ -18235,7 +18277,7 @@
           "Level": 1,
           "Id": 829122663,
           "Type": 3,
-          "Value": "TRIGSTR_21018"
+          "Value": "TRIGSTR_21209"
         },
         {
           "Level": 1,
@@ -18396,6 +18438,104 @@
           "Id": 1835101799,
           "Type": 3,
           "Value": "TRIGSTR_9017"
+        }
+      ]
+    },
+    {
+      "OldId": 1702062162,
+      "NewId": 1429811282,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Level": 1,
+          "Id": 829579623,
+          "Type": 3,
+          "Value": "ReplaceableTextures\\CommandButtons\\BTNPotionOfVampirism.blp"
+        },
+        {
+          "Level": 1,
+          "Id": 1718840935,
+          "Type": 3,
+          "Value": "TRIGSTR_21148"
+        },
+        {
+          "Level": 1,
+          "Id": 829122663,
+          "Type": 3,
+          "Value": "TRIGSTR_21149"
+        },
+        {
+          "Level": 1,
+          "Id": 1835101799,
+          "Type": 3,
+          "Value": "TRIGSTR_21150"
+        },
+        {
+          "Level": 1,
+          "Id": 829453415,
+          "Type": 3,
+          "Value": "TRIGSTR_21145"
+        },
+        {
+          "Level": 1,
+          "Id": 828536167,
+          "Type": 3,
+          "Value": "TRIGSTR_21147"
+        }
+      ]
+    },
+    {
+      "OldId": 1702062162,
+      "NewId": 1446588498,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Level": 1,
+          "Id": 829579623,
+          "Type": 3,
+          "Value": "ReplaceableTextures\\CommandButtons\\BTNRavenForm.blp"
+        },
+        {
+          "Id": 2020631143,
+          "Value": 0
+        },
+        {
+          "Id": 2037408359,
+          "Value": 1
+        },
+        {
+          "Level": 1,
+          "Id": 1718840935,
+          "Type": 3,
+          "Value": "TRIGSTR_21173"
+        },
+        {
+          "Level": 1,
+          "Id": 829122663,
+          "Type": 3,
+          "Value": "TRIGSTR_21174"
+        },
+        {
+          "Level": 1,
+          "Id": 1835101799,
+          "Type": 3,
+          "Value": "TRIGSTR_21175"
+        },
+        {
+          "Level": 1,
+          "Id": 829453415,
+          "Type": 3,
+          "Value": "TRIGSTR_21176"
+        },
+        {
+          "Level": 1,
+          "Id": 828536167,
+          "Type": 3,
+          "Value": "TRIGSTR_21177"
         }
       ]
     }

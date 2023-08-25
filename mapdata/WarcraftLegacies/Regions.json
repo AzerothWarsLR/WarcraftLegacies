@@ -3671,7 +3671,7 @@
     {
       "Left": 3968,
       "Bottom": 416,
-      "Right": 5376,
+      "Right": 5408,
       "Top": 2656,
       "Name": "GilneasUnlock3",
       "CreationNumber": 483,
@@ -5115,6 +5115,21 @@
       "Top": 10048,
       "Name": "ArthasRandomPoint",
       "CreationNumber": 167,
+      "AmbientSound": "",
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
+    },
+    {
+      "Left": -24128,
+      "Bottom": -30848,
+      "Right": -9024,
+      "Top": -22688,
+      "Name": "HideUnitBottomLeft",
+      "CreationNumber": 168,
       "AmbientSound": "",
       "Color": {
         "A": 255,
