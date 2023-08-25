@@ -1,10 +1,14 @@
 ﻿using static War3Api.Common;
 using static War3Api.Blizzard;
+using System.Collections.Generic;
+using MacroTools.Extensions;
 
 namespace WarcraftLegacies.Source.Setup
 {
   public static class NeutralVictimAndPassiveSetup
   {
+    private static List<unit> _hideUnit;
+
     private static void Unally(player sourcePlayer, player otherPlayer)
     {
       SetPlayerAlliance(sourcePlayer, otherPlayer, ALLIANCE_PASSIVE, false);
@@ -16,6 +20,7 @@ namespace WarcraftLegacies.Source.Setup
     
     public static void Setup()
     {
+      _hideUnit = Regions.HideUnitBottomLeft.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
       foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
       {
         Unally(player, Player(bj_PLAYER_NEUTRAL_VICTIM));

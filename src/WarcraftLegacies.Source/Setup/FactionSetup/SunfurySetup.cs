@@ -52,12 +52,13 @@ Your main goal is to summon Kil'jaeden and destroy your enemies."
       Sunfury.ModObjectLimit(FourCC("u02W"), 2); //Energy Wagon
       Sunfury.ModObjectLimit(FourCC("h0CH"), Faction.UNLIMITED); //Astromancer
       Sunfury.ModObjectLimit(FourCC("h0CG"), Faction.UNLIMITED); //Flamekeeper
+      Sunfury.ModObjectLimit(Constants.UNIT_H0CE_BLOOD_KNIGHT_SQUIRE_SUNFURY, 12);
       Sunfury.ModObjectLimit(FourCC("n0E3"), 6); //Warlock
       Sunfury.ModObjectLimit(FourCC("n0E4"), 6); //Elven Ballista
       Sunfury.ModObjectLimit(FourCC("n0E8"), 3); //Skyship
       Sunfury.ModObjectLimit(FourCC("n0E7"), 6); //Bloodwarder
-      Sunfury.ModObjectLimit(FourCC("n0E5"), 8); //Fel Reaver
-      Sunfury.ModObjectLimit(FourCC("n0E6"), 4); //Shivarra
+      //Sunfury.ModObjectLimit(FourCC("n0E5"), 8); //Fel Reaver
+      //Sunfury.ModObjectLimit(FourCC("n0E6"), 4); //Shivarra
       Sunfury.ModObjectLimit(FourCC("e01B"), 6); //Arcane Annihilator
       Sunfury.ModObjectLimit(FourCC("n006"), 2); //Ancient of the Arcane
 
@@ -76,11 +77,13 @@ Your main goal is to summon Kil'jaeden and destroy your enemies."
       Sunfury.ModObjectLimit(FourCC("U02V"), 1); //Solarian
       Sunfury.ModObjectLimit(FourCC("Hkal"), 1); //Kael
       Sunfury.ModObjectLimit(FourCC("U004"), 1); //Kil
+      Sunfury.ModObjectLimit(Constants.UNIT_N0E5_VOID_REAVER_SUNFURY_DEMI, 1); //Void Reaver
 
       //Upgrades
       Sunfury.ModObjectLimit(FourCC("R00K"), Faction.UNLIMITED); //Power Infusion
       Sunfury.ModObjectLimit(FourCC("R09H"), Faction.UNLIMITED); //Priest Adept Training
       Sunfury.ModObjectLimit(FourCC("R09G"), Faction.UNLIMITED); //Flamekeeper Adept Training
+      Sunfury.ModObjectLimit(Constants.UPGRADE_R09U_SEAL_OF_BLOOD_SUNFURY, Faction.UNLIMITED); // Seal of Blood
 
       Sunfury.AddGoldMine(preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(3295, -22670)));
       Sunfury.AddGoldMine(preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(2529, -19141)));

@@ -350,6 +350,7 @@ gg_rct_DalaStartPos = nil
 gg_rct_CenarionHoldUnlock = nil
 gg_rct_WindrunnerSpireUnlock = nil
 gg_rct_ArthasRandomPoint = nil
+gg_rct_HideUnitBottomLeft = nil
 gg_snd_ArcaneObservatoryWhat1 = nil
 gg_snd_ArrangedTeamInvitation = nil
 gg_snd_ClanInvitation = nil
@@ -8289,7 +8290,7 @@ gg_rct_GarithosCrusadeSpawn = Rect(19168.0, 7520.0, 19776.0, 8160.0)
 gg_rct_GilneasUnlock6 = Rect(6080.0, -928.0, 8672.0, 1696.0)
 gg_rct_GilneasUnlock1 = Rect(8288.0, -2368.0, 9824.0, -832.0)
 gg_rct_GilneasUnlock2 = Rect(6624.0, -3264.0, 8032.0, -2400.0)
-gg_rct_GilneasUnlock3 = Rect(3968.0, 416.0, 5376.0, 2656.0)
+gg_rct_GilneasUnlock3 = Rect(3968.0, 416.0, 5408.0, 2656.0)
 gg_rct_GilneasUnlock4 = Rect(3392.0, -2656.0, 5504.0, -320.0)
 gg_rct_GilneasUnlock5 = Rect(6432.0, 2112.0, 7456.0, 2816.0)
 gg_rct_TwilightUnlock = Rect(18592.0, -6848.0, 19456.0, -6048.0)
@@ -8388,6 +8389,7 @@ gg_rct_DalaStartPos = Rect(8768.0, 2112.0, 10464.0, 3488.0)
 gg_rct_CenarionHoldUnlock = Rect(-18272.0, -14400.0, -15680.0, -12768.0)
 gg_rct_WindrunnerSpireUnlock = Rect(16416.0, 13888.0, 16640.0, 14176.0)
 gg_rct_ArthasRandomPoint = Rect(5664.0, 3520.0, 22304.0, 10048.0)
+gg_rct_HideUnitBottomLeft = Rect(-24128.0, -30848.0, -9024.0, -22688.0)
 end
 
 function InitUpgrades_Player0()
