@@ -93096,12 +93096,6 @@ STRING 15518
 Improves Necrolytes' Shadow Infusion by increasing its heal amount by 45 and reducing its mana cost to 0.
 }
 
-STRING 15519
-// Units: owar (Bonebreaker), Ubertip (Tooltip - Extended)
-{
-Strong mounted warrior of Outland.|n|cfff5962dAbilities:|R Charge, Self-Bloodlust, Pillage|n|cfff5962dCan learn:|R Felsteel Plating, Blood Runes|n|n|cffffcc00Attacks land units.|r
-}
-
 STRING 15520
 // Upgrades: R03O (Animal War Training), Ubertip (Tooltip - Extended)
 {
@@ -120306,7 +120300,7 @@ Q
 }
 
 STRING 20053
-// Upgrades: Rume (Unholy Strength,Improved Unholy Strength,Advanced Unholy Strength), Hotkey (Hotkey)
+// Abilities: A13P (Splintering Strike), Hotkey (Hotkey - Normal)
 {
 Q
 }
@@ -120911,12 +120905,6 @@ STRING 20153
 (Illidari Tower)
 }
 
-STRING 20154
-// Abilities: A00W (Comet Strike), Ubertip (Tooltip - Normal - Extended)
-{
-Call a comet from the sky, dealing 300 damage and stunning enemy land units for 2 seconds in an area.
-}
-
 STRING 20155
 // Units: o05R (Warsong Lumber Camp), EditorSuffix (Name - Editor Suffix)
 {
@@ -121001,12 +120989,6 @@ STRING 20168
 (Stormwind Marshal)
 }
 
-STRING 20169
-// Abilities: A00W (Comet Strike), Ubertip (Tooltip - Normal - Extended)
-{
-Call a comet from the sky, dealing 400 damage and stunning enemy land units for 2 seconds in an area.
-}
-
 STRING 20170
 // Abilities: A02D (First Strike), EditorSuffix (Editor Suffix)
 {
@@ -121080,7 +121062,7 @@ Fires an enchanted bolt at every enemy unit in the target area, dealing <A0GL,Da
 }
 
 STRING 20182
-// Upgrades: Rume (Unholy Strength,Improved Unholy Strength,Advanced Unholy Strength), Hotkey (Hotkey)
+// Abilities: A13P (Splintering Strike), Unhotkey (Hotkey - Turn Off)
 {
 Q
 }
@@ -121518,7 +121500,7 @@ Conjures a pillar of flame that burns ground units for 15 damage a second for 2 
 }
 
 STRING 20255
-// Upgrades: Rome (Steel Melee Weapons,Thorium Melee Weapons,Arcanite Melee Weapons), Hotkey (Hotkey)
+// Upgrades: Rume (Unholy Strength,Improved Unholy Strength,Advanced Unholy Strength), Hotkey (Hotkey)
 {
 Q
 }
@@ -121692,7 +121674,7 @@ The hero is an adept commander and his skills give his armies increased mobility
 }
 
 STRING 20284
-// Abilities: A13O (Summon Mystic Defenders ), Researchubertip (Tooltip - Learn - Extended)
+// Abilities: A0ZU (Summon Mud Golem), Researchubertip (Tooltip - Learn - Extended)
 {
 Summons <AOsf,DataB1> Spirit Wolves to fight the Far Seer's enemies. |nLasts <AOsf,Dur1> seconds. |n|n|cffffcc00Level 1|r - <osw1,realHP> hit points, <osw1,mindmg1> - <osw1,maxdmg1> damage. 2 wolves summoned.|n|cffffcc00Level 2|r - <osw2,realHP> hit points, <osw2,mindmg1> - <osw2,maxdmg1> damage and Critical Strike. 2 wolves summoned.|n|cffffcc00Level 3|r - <osw3,realHP> hit points, <osw3,mindmg1> - <osw3,maxdmg1> damage and Critical Strike. 2 wolves summoned.|n|cffffcc00Level 4|r - <osw3,realHP> hit points, <osw3,mindmg1> - <osw3,maxdmg1> damage, and Critical Strike. 4 wolves summoned.|n|cffffcc00Level 5|r - <osw3,realHP> hit points, <osw3,mindmg1> - <osw3,maxdmg1> damage and Critical Strike. 6 wolves summoned.|n
 }
@@ -122304,7 +122286,7 @@ Trade-house
 }
 
 STRING 20386
-// Upgrades: Rome (Steel Melee Weapons,Thorium Melee Weapons,Arcanite Melee Weapons), Hotkey (Hotkey)
+// Upgrades: Rume (Unholy Strength,Improved Unholy Strength,Advanced Unholy Strength), Hotkey (Hotkey)
 {
 Q
 }
@@ -122928,7 +122910,7 @@ Teleports 60 of the player's nearby units, including the caster, to a ground uni
 }
 
 STRING 20490
-// Upgrades: Rhme (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Hotkey (Hotkey)
+// Upgrades: Rome (Steel Melee Weapons,Thorium Melee Weapons,Arcanite Melee Weapons), Hotkey (Hotkey)
 {
 Q
 }
@@ -122994,7 +122976,7 @@ Summon Fel Hounds
 }
 
 STRING 20501
-// Upgrades: Rhme (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Hotkey (Hotkey)
+// Upgrades: Rome (Steel Melee Weapons,Thorium Melee Weapons,Arcanite Melee Weapons), Hotkey (Hotkey)
 {
 Q
 }
@@ -124117,13 +124099,13 @@ E
 }
 
 STRING 20688
-// Upgrades: Rhlh (Improved Lumber Harvesting,Advanced Lumber Harvesting), Hotkey (Hotkey)
+// Abilities: A13Q (Cascade Smash), Hotkey (Hotkey - Normal)
 {
 E
 }
 
 STRING 20689
-// Upgrades: Rhlh (Improved Lumber Harvesting,Advanced Lumber Harvesting), Hotkey (Hotkey)
+// Abilities: A13Q (Cascade Smash), Researchhotkey (Hotkey - Learn)
 {
 E
 }
@@ -124231,7 +124213,7 @@ Q
 }
 
 STRING 20707
-// Upgrades: Renb (Nature's Blessing), Hotkey (Hotkey)
+// Upgrades: Rhlh (Improved Lumber Harvesting,Advanced Lumber Harvesting), Hotkey (Hotkey)
 {
 E
 }
@@ -124405,7 +124387,7 @@ Summon Mud Golem
 }
 
 STRING 20736
-// Abilities: A0ZU (Summon Mud Golem), Researchubertip (Tooltip - Learn - Extended)
+// Abilities: A12I (Call to Battle), Researchubertip (Tooltip - Learn - Extended)
 {
 Summons <AOsf,DataB1> Spirit Wolves to fight the Far Seer's enemies. |nLasts <AOsf,Dur1> seconds. |n|n|cffffcc00Level 1|r - <osw1,realHP> hit points, <osw1,mindmg1> - <osw1,maxdmg1> damage. 2 wolves summoned.|n|cffffcc00Level 2|r - <osw2,realHP> hit points, <osw2,mindmg1> - <osw2,maxdmg1> damage and Critical Strike. 2 wolves summoned.|n|cffffcc00Level 3|r - <osw3,realHP> hit points, <osw3,mindmg1> - <osw3,maxdmg1> damage and Critical Strike. 2 wolves summoned.|n|cffffcc00Level 4|r - <osw3,realHP> hit points, <osw3,mindmg1> - <osw3,maxdmg1> damage, and Critical Strike. 4 wolves summoned.|n|cffffcc00Level 5|r - <osw3,realHP> hit points, <osw3,mindmg1> - <osw3,maxdmg1> damage and Critical Strike. 6 wolves summoned.|n
 }
@@ -124543,7 +124525,7 @@ STRING 20758
 }
 
 STRING 20759
-// Abilities: A12I (Call to Battle), Researchubertip (Tooltip - Learn - Extended)
+// Abilities: A13O (Summon Mystic Defenders ), Researchubertip (Tooltip - Learn - Extended)
 {
 Summons <AOsf,DataB1> Spirit Wolves to fight the Far Seer's enemies. |nLasts <AOsf,Dur1> seconds. |n|n|cffffcc00Level 1|r - <osw1,realHP> hit points, <osw1,mindmg1> - <osw1,maxdmg1> damage. 2 wolves summoned.|n|cffffcc00Level 2|r - <osw2,realHP> hit points, <osw2,mindmg1> - <osw2,maxdmg1> damage and Critical Strike. 2 wolves summoned.|n|cffffcc00Level 3|r - <osw3,realHP> hit points, <osw3,mindmg1> - <osw3,maxdmg1> damage and Critical Strike. 2 wolves summoned.|n|cffffcc00Level 4|r - <osw3,realHP> hit points, <osw3,mindmg1> - <osw3,maxdmg1> damage, and Critical Strike. 4 wolves summoned.|n|cffffcc00Level 5|r - <osw3,realHP> hit points, <osw3,mindmg1> - <osw3,maxdmg1> damage and Critical Strike. 6 wolves summoned.|n
 }
@@ -124639,7 +124621,7 @@ W
 }
 
 STRING 20775
-// Upgrades: Renb (Nature's Blessing), Hotkey (Hotkey)
+// Upgrades: Rhlh (Improved Lumber Harvesting,Advanced Lumber Harvesting), Hotkey (Hotkey)
 {
 E
 }
@@ -124765,7 +124747,7 @@ Q
 }
 
 STRING 20796
-// Upgrades: R06K (Defend), Hotkey (Hotkey)
+// Upgrades: Renb (Nature's Blessing), Hotkey (Hotkey)
 {
 E
 }
@@ -124861,7 +124843,7 @@ Mystical hero, adept at dealing magical damage.|n|cfff5962dAbilities:|r Mana Shi
 }
 
 STRING 20812
-// Upgrades: R06G (Defend), Hotkey (Hotkey)
+// Upgrades: Renb (Nature's Blessing), Hotkey (Hotkey)
 {
 E
 }
@@ -124885,13 +124867,13 @@ STRING 20815
 }
 
 STRING 20816
-// Upgrades: Resw (Strength of the Wild,Improved Strength of the Wild,Advanced Strength of the Wil), Hotkey (Hotkey)
+// Upgrades: Rhme (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Hotkey (Hotkey)
 {
 Q
 }
 
 STRING 20817
-// Upgrades: Resw (Strength of the Wild,Improved Strength of the Wild,Advanced Strength of the Wil), Hotkey (Hotkey)
+// Upgrades: Rhme (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Hotkey (Hotkey)
 {
 Q
 }
@@ -125119,7 +125101,7 @@ Q
 }
 
 STRING 20855
-// Upgrades: Resm (Strength of the Moon,Improved Strength of the Moon,Advanced Strength of the Moo), Hotkey (Hotkey)
+// Upgrades: Resw (Strength of the Wild,Improved Strength of the Wild,Advanced Strength of the Wil), Hotkey (Hotkey)
 {
 Q
 }
@@ -125131,19 +125113,19 @@ F
 }
 
 STRING 20857
-// Upgrades: R06F (Defend), Hotkey (Hotkey)
+// Upgrades: R06K (Defend), Hotkey (Hotkey)
 {
 E
 }
 
 STRING 20858
-// Upgrades: R064 (Nature's Blessing), Hotkey (Hotkey)
+// Upgrades: R06G (Defend), Hotkey (Hotkey)
 {
 E
 }
 
 STRING 20859
-// Upgrades: R03M (Defend), Hotkey (Hotkey)
+// Upgrades: R06F (Defend), Hotkey (Hotkey)
 {
 E
 }
@@ -125161,13 +125143,13 @@ W
 }
 
 STRING 20862
-// Upgrades: R02P (Backpack), Hotkey (Hotkey)
+// Upgrades: R064 (Nature's Blessing), Hotkey (Hotkey)
 {
 E
 }
 
 STRING 20863
-// Upgrades: Resm (Strength of the Moon,Improved Strength of the Moon,Advanced Strength of the Moo), Hotkey (Hotkey)
+// Upgrades: Resw (Strength of the Wild,Improved Strength of the Wild,Advanced Strength of the Wil), Hotkey (Hotkey)
 {
 Q
 }
@@ -125185,7 +125167,7 @@ Dark art mage of the horde.|n|cfff5962dAbilities:|R Firebolt|n|cfff5962dCan Lear
 }
 
 STRING 20866
-// Upgrades: R03O (Animal War Training), Hotkey (Hotkey)
+// Upgrades: R03M (Defend), Hotkey (Hotkey)
 {
 E
 }
@@ -125503,7 +125485,7 @@ Animal Companion
 }
 
 STRING 20919
-// Upgrades: R020 (Defend), Hotkey (Hotkey)
+// Upgrades: Resm (Strength of the Moon,Improved Strength of the Moon,Advanced Strength of the Moo), Hotkey (Hotkey)
 {
 Q
 }
@@ -125545,7 +125527,7 @@ Salvation
 }
 
 STRING 20926
-// Upgrades: R03O (Animal War Training), Hotkey (Hotkey)
+// Upgrades: R02P (Backpack), Hotkey (Hotkey)
 {
 E
 }
@@ -125755,7 +125737,7 @@ Wreaks an enemy unit in arcane energy which cause 60 damage per second, prevents
 }
 
 STRING 20961
-// Upgrades: R014 (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
+// Upgrades: Resm (Strength of the Moon,Improved Strength of the Moon,Advanced Strength of the Moo), Hotkey (Hotkey)
 {
 Q
 }
@@ -126091,7 +126073,7 @@ Sends a gigantic wave which deals <A01T,DataA2> damage to each enemy land unit i
 }
 
 STRING 21017
-// Upgrades: R00X (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: R020 (Defend), Hotkey (Hotkey)
 {
 Q
 }
@@ -126301,7 +126283,7 @@ Increases Astromancer 's mana capacity, attack damage and gives them the ability
 }
 
 STRING 21052
-// Upgrades: R097 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R03O (Animal War Training), Hotkey (Hotkey)
 {
 E
 }
@@ -126703,7 +126685,7 @@ STRING 21118
 }
 
 STRING 21119
-// Upgrades: R086 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R03O (Animal War Training), Hotkey (Hotkey)
 {
 E
 }
@@ -127243,7 +127225,7 @@ W
 }
 
 STRING 21209
-// Upgrades: R07E (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R014 (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
 {
 Q
 }
@@ -127573,7 +127555,7 @@ Damage Aura level 3
 }
 
 STRING 21264
-// Upgrades: R00G (Flare), EditorSuffix (Editor Suffix)
+// Upgrades: R01R (Improved Bows), EditorSuffix (Editor Suffix)
 {
 (Quel'Thalas)
 }
@@ -127582,6 +127564,12 @@ STRING 21265
 // Upgrades: R07W (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 W
+}
+
+STRING 21266
+// Abilities: A13P (Splintering Strike), EditorSuffix (Editor Suffix)
+{
+ (Bonebreaker)
 }
 
 STRING 21268
@@ -127615,7 +127603,7 @@ Damage Aura level 2
 }
 
 STRING 21273
-// Upgrades: R07L (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R00X (Magic Sentry), Hotkey (Hotkey)
 {
 Q
 }
@@ -127651,14 +127639,176 @@ Runestone Guardian
 }
 
 STRING 21279
-// Upgrades: R01R (Improved Bows), EditorSuffix (Editor Suffix)
+// Upgrades: R00G (Flare), EditorSuffix (Editor Suffix)
 {
 (Quel'Thalas)
 }
 
 STRING 21280
+// Upgrades: R07E (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+{
+Q
+}
+
+STRING 21281
+// Abilities: A13P (Splintering Strike), Tip (Tooltip - Normal)
+{
+Slow - [|cffffcc00Level 2|r]
+}
+
+STRING 21282
+// Abilities: A13P (Splintering Strike), Ubertip (Tooltip - Normal - Extended)
+{
+Slows a target enemy unit's attack rate by <A0E9,DataB1,%>% and movement speed by <A0E9,DataA1,%>%. |nLasts <A0E9,Dur1> seconds. Last on <A0E9,HeroDur1> Heroes
+}
+
+STRING 21283
+// Abilities: A13P (Splintering Strike), Ubertip (Tooltip - Normal - Extended)
+{
+Slows a target enemy unit's attack rate by <A0E9,DataB2,%>% and movement speed by <A0E9,DataA2,%>%. |nLasts <A0E9,Dur2> seconds.
+}
+
+STRING 21284
+// Abilities: A13P (Splintering Strike), Untip (Tooltip - Turn Off)
+{
+|cffc3dbffRight-click to activate auto-casting.|r
+}
+
+STRING 21285
+// Abilities: A13P (Splintering Strike), Unubertip (Tooltip - Turn Off - Extended)
+{
+|cffc3dbffRight-click to deactivate auto-casting.|r
+}
+
+STRING 21287
+// Upgrades: R07L (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+{
+Q
+}
+
+STRING 21288
 // Upgrades: R09N (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
 {
 Q
+}
+
+STRING 21289
+// Abilities: A13P (Splintering Strike), Tip (Tooltip - Normal)
+{
+Splintering Strike
+}
+
+STRING 21290
+// Abilities: A13P (Splintering Strike), Name (Name)
+{
+Splintering Strike
+}
+
+STRING 21291
+// Abilities: Anh1 (Heal), Ubertip (Tooltip - Normal - Extended)
+{
+Heals a target friendly non-mechanical wounded unit for 25 hitpoints.
+}
+
+STRING 21292
+// Units: owar (Bonebreaker), Ubertip (Tooltip - Extended)
+{
+Strong mounted warrior of Outland.|n|cfff5962dAbilities:|R Charge, Self-Bloodlust, Cascade Smash, Pillage|n|cfff5962dCan learn:|R Felsteel Plating, Blood Runes|n |n|cff99b4d1Can only train 12|n|cffffcc00Attacks land units.|r
+}
+
+STRING 21293
+// Abilities: A00W (Comet Strike), Ubertip (Tooltip - Normal - Extended)
+{
+Call a comet from the sky, dealing 150 damage and stunning enemy land units for 2 seconds in an area.
+}
+
+STRING 21294
+// Abilities: A00W (Comet Strike), Ubertip (Tooltip - Normal - Extended)
+{
+Call a comet from the sky, dealing 250 damage and stunning enemy land units for 2 seconds in an area.
+}
+
+STRING 21295
+// Abilities: A13Q (Cascade Smash), EditorSuffix (Editor Suffix)
+{
+(Fel Horde - Bonebreaker)
+}
+
+STRING 21296
+// Abilities: A13Q (Cascade Smash), Name (Name)
+{
+Cascade Smash
+}
+
+STRING 21297
+// Abilities: A13Q (Cascade Smash), Researchtip (Tooltip - Learn)
+{
+Learn Stormhammers  - [|cffffcc00Level %d|r]
+}
+
+STRING 21298
+// Abilities: A13Q (Cascade Smash), Researchubertip (Tooltip - Learn - Extended)
+{
+Gives Muradin a chance to deal damage to all foes around him.|n|n|cffffcc00Level 1|r - 20% chance to do 30 damage.|n|cffffcc00Level 2|r - 25% chance to do 50 damage.|n|cffffcc00Level 3|r - 30% chance to do 70 damage.|n|cffffcc00Level 4|r - 35% chance to do 90 damage.
+}
+
+STRING 21299
+// Abilities: A13Q (Cascade Smash), Tip (Tooltip - Normal)
+{
+Cascade Smash
+}
+
+STRING 21300
+// Abilities: A13Q (Cascade Smash), Tip (Tooltip - Normal)
+{
+Storm Hammers - [|cffffcc00Level 2|r]
+}
+
+STRING 21301
+// Abilities: A13Q (Cascade Smash), Tip (Tooltip - Normal)
+{
+Storm Hammers - [|cffffcc00Level 3|r]
+}
+
+STRING 21302
+// Abilities: A13Q (Cascade Smash), Tip (Tooltip - Normal)
+{
+Storm Hammers - [|cffffcc00Level 4|r]
+}
+
+STRING 21303
+// Abilities: A13Q (Cascade Smash), Ubertip (Tooltip - Normal - Extended)
+{
+Gives a 20% chance that an attack will deal 30  damage to nearby units.
+}
+
+STRING 21304
+// Abilities: A13Q (Cascade Smash), Ubertip (Tooltip - Normal - Extended)
+{
+Gives a 25% chance that an attack will deal 50 damage to nearby units.
+}
+
+STRING 21305
+// Abilities: A13Q (Cascade Smash), Ubertip (Tooltip - Normal - Extended)
+{
+Gives a 30% chance that an attack will deal 70 damage to nearby units.
+}
+
+STRING 21306
+// Abilities: A13Q (Cascade Smash), Ubertip (Tooltip - Normal - Extended)
+{
+Gives a 35% chance that an attack will deal 90 damage to nearby units.
+}
+
+STRING 21307
+// Upgrades: R097 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+{
+E
+}
+
+STRING 21308
+// Upgrades: R086 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+{
+E
 }
 
