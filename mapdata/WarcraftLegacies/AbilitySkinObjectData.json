@@ -598,12 +598,36 @@
           "Level": 1,
           "Id": 828536161,
           "Type": 3,
-          "Value": "TRIGSTR_4795"
+          "Value": "TRIGSTR_21225"
         },
         {
           "Id": 1802007905,
           "Type": 3,
           "Value": "TRIGSTR_5749"
+        },
+        {
+          "Level": 2,
+          "Id": 828536161,
+          "Type": 3,
+          "Value": "TRIGSTR_4795"
+        },
+        {
+          "Level": 2,
+          "Id": 829715809,
+          "Type": 3,
+          "Value": "TRIGSTR_1906"
+        },
+        {
+          "Level": 2,
+          "Id": 829781345,
+          "Type": 3,
+          "Value": "TRIGSTR_2923"
+        },
+        {
+          "Level": 2,
+          "Id": 829453409,
+          "Type": 3,
+          "Value": "TRIGSTR_21226"
         }
       ]
     },
@@ -2425,7 +2449,7 @@
         {
           "Id": 2037082209,
           "Type": 3,
-          "Value": "TRIGSTR_14184"
+          "Value": "TRIGSTR_14205"
         },
         {
           "Level": 1,
@@ -8005,13 +8029,13 @@
           "Level": 2,
           "Id": 829715809,
           "Type": 3,
-          "Value": "TRIGSTR_1906"
+          "Value": "TRIGSTR_10117"
         },
         {
           "Level": 2,
           "Id": 829781345,
           "Type": 3,
-          "Value": "TRIGSTR_2923"
+          "Value": "TRIGSTR_15057"
         }
       ]
     },
@@ -8818,37 +8842,37 @@
           "Level": 2,
           "Id": 829715809,
           "Type": 3,
-          "Value": "TRIGSTR_10117"
-        },
-        {
-          "Level": 3,
-          "Id": 829715809,
-          "Type": 3,
           "Value": "TRIGSTR_15000"
         },
         {
-          "Level": 4,
+          "Level": 3,
           "Id": 829715809,
           "Type": 3,
           "Value": "TRIGSTR_15056"
         },
         {
-          "Level": 3,
-          "Id": 829781345,
+          "Level": 4,
+          "Id": 829715809,
           "Type": 3,
-          "Value": "TRIGSTR_15057"
+          "Value": "TRIGSTR_15324"
         },
         {
-          "Level": 2,
+          "Level": 3,
           "Id": 829781345,
           "Type": 3,
           "Value": "TRIGSTR_15062"
         },
         {
-          "Level": 4,
+          "Level": 2,
           "Id": 829781345,
           "Type": 3,
           "Value": "TRIGSTR_15341"
+        },
+        {
+          "Level": 4,
+          "Id": 829781345,
+          "Type": 3,
+          "Value": "TRIGSTR_15491"
         }
       ]
     },
@@ -19659,7 +19683,7 @@
           "Level": 1,
           "Id": 828536161,
           "Type": 3,
-          "Value": "TRIGSTR_7018"
+          "Value": "TRIGSTR_9116"
         }
       ]
     },
@@ -22640,7 +22664,7 @@
         {
           "Id": 2037082209,
           "Type": 3,
-          "Value": "TRIGSTR_14205"
+          "Value": "TRIGSTR_14222"
         },
         {
           "Id": 1835101793,
@@ -26424,7 +26448,7 @@
         {
           "Id": 1835101793,
           "Type": 3,
-          "Value": "TRIGSTR_7915"
+          "Value": "TRIGSTR_21253"
         },
         {
           "Id": 1952805473,
@@ -26435,17 +26459,27 @@
           "Level": 1,
           "Id": 829453409,
           "Type": 3,
-          "Value": "TRIGSTR_7917"
+          "Value": "TRIGSTR_21259"
         },
         {
           "Level": 1,
           "Id": 828536161,
           "Type": 3,
-          "Value": "TRIGSTR_7918"
+          "Value": "TRIGSTR_21260"
         },
         {
           "Id": 2020631137,
           "Value": 1
+        },
+        {
+          "Id": 1952543841,
+          "Type": 3,
+          "Value": "Abilities/Spells/Human/HolyBolt/BloodBoltSpecialArt.mdx"
+        },
+        {
+          "Id": 1953653089,
+          "Type": 3,
+          "Value": "ReplaceableTextures/CommandButtons/BTNRedholylight.blp"
         }
       ]
     },
@@ -29947,7 +29981,7 @@
         {
           "Id": 2037082209,
           "Type": 3,
-          "Value": "TRIGSTR_14222"
+          "Value": "TRIGSTR_14227"
         },
         {
           "Id": 1835101793,
@@ -33129,7 +33163,7 @@
         {
           "Id": 2037082209,
           "Type": 3,
-          "Value": "TRIGSTR_14227"
+          "Value": "TRIGSTR_14330"
         },
         {
           "Id": 1835101793,
@@ -34723,7 +34757,7 @@
         {
           "Id": 2037082209,
           "Type": 3,
-          "Value": "TRIGSTR_14330"
+          "Value": "TRIGSTR_14398"
         },
         {
           "Id": 1835101793,
@@ -35606,6 +35640,18 @@
           "Level": 1,
           "Id": 828536161,
           "Type": 3,
+          "Value": "TRIGSTR_3032"
+        },
+        {
+          "Level": 2,
+          "Id": 829453409,
+          "Type": 3,
+          "Value": "TRIGSTR_14847"
+        },
+        {
+          "Level": 2,
+          "Id": 828536161,
+          "Type": 3,
           "Value": "TRIGSTR_320"
         }
       ]
@@ -35764,7 +35810,7 @@
           "Level": 1,
           "Id": 829715809,
           "Type": 3,
-          "Value": "TRIGSTR_9116"
+          "Value": "TRIGSTR_21244"
         },
         {
           "Level": 1,
@@ -35776,7 +35822,7 @@
           "Level": 1,
           "Id": 828536161,
           "Type": 3,
-          "Value": "TRIGSTR_15664"
+          "Value": "TRIGSTR_21245"
         }
       ]
     },
@@ -38457,7 +38503,7 @@
         {
           "Id": 2037082209,
           "Type": 3,
-          "Value": "TRIGSTR_14398"
+          "Value": "TRIGSTR_14410"
         },
         {
           "Id": 1835101793,
@@ -38993,7 +39039,7 @@
         {
           "Id": 2037082209,
           "Type": 3,
-          "Value": "TRIGSTR_14410"
+          "Value": "TRIGSTR_14420"
         },
         {
           "Id": 1802007137,
@@ -41549,7 +41595,7 @@
         {
           "Id": 2037082209,
           "Type": 3,
-          "Value": "TRIGSTR_14420"
+          "Value": "TRIGSTR_14441"
         },
         {
           "Id": 1835101793,
@@ -41568,7 +41614,7 @@
         {
           "Id": 1802007137,
           "Type": 3,
-          "Value": "TRIGSTR_14441"
+          "Value": "TRIGSTR_14473"
         },
         {
           "Id": 1952805473,
@@ -42275,13 +42321,13 @@
           "Level": 2,
           "Id": 829715809,
           "Type": 3,
-          "Value": "TRIGSTR_15324"
+          "Value": "TRIGSTR_17343"
         },
         {
           "Level": 2,
           "Id": 829781345,
           "Type": 3,
-          "Value": "TRIGSTR_15491"
+          "Value": "TRIGSTR_17474"
         }
       ]
     },
@@ -43962,7 +44008,7 @@
         {
           "Id": 2037082209,
           "Type": 3,
-          "Value": "TRIGSTR_14473"
+          "Value": "TRIGSTR_14474"
         },
         {
           "Id": 1802007137,
@@ -48473,13 +48519,13 @@
           "Level": 2,
           "Id": 829715809,
           "Type": 3,
-          "Value": "TRIGSTR_17343"
+          "Value": "TRIGSTR_18408"
         },
         {
           "Level": 2,
           "Id": 829781345,
           "Type": 3,
-          "Value": "TRIGSTR_17474"
+          "Value": "TRIGSTR_17475"
         }
       ]
     },
@@ -53576,7 +53622,7 @@
         {
           "Id": 2037082209,
           "Type": 3,
-          "Value": "TRIGSTR_14474"
+          "Value": "TRIGSTR_14492"
         }
       ]
     },
@@ -56564,7 +56610,7 @@
         {
           "Id": 2037082209,
           "Type": 3,
-          "Value": "TRIGSTR_14492"
+          "Value": "TRIGSTR_14534"
         },
         {
           "Id": 1835101793,
@@ -56590,7 +56636,7 @@
         {
           "Id": 1802007905,
           "Type": 3,
-          "Value": "TRIGSTR_14534"
+          "Value": "TRIGSTR_14547"
         },
         {
           "Level": 1,
@@ -60388,7 +60434,7 @@
         {
           "Id": 2037082209,
           "Type": 3,
-          "Value": "TRIGSTR_14547"
+          "Value": "TRIGSTR_14557"
         },
         {
           "Id": 1835101793,
@@ -62405,12 +62451,42 @@
           "Level": 3,
           "Id": 828536161,
           "Type": 3,
-          "Value": "TRIGSTR_12466"
+          "Value": "TRIGSTR_21246"
         },
         {
           "Id": 1802007905,
           "Type": 3,
           "Value": "TRIGSTR_12959"
+        },
+        {
+          "Level": 2,
+          "Id": 829715809,
+          "Type": 3,
+          "Value": "TRIGSTR_21227"
+        },
+        {
+          "Level": 3,
+          "Id": 829715809,
+          "Type": 3,
+          "Value": "TRIGSTR_21247"
+        },
+        {
+          "Level": 2,
+          "Id": 829781345,
+          "Type": 3,
+          "Value": "TRIGSTR_17476"
+        },
+        {
+          "Level": 3,
+          "Id": 829781345,
+          "Type": 3,
+          "Value": "TRIGSTR_17957"
+        },
+        {
+          "Level": 3,
+          "Id": 829453409,
+          "Type": 3,
+          "Value": "TRIGSTR_21248"
         }
       ]
     },
@@ -64489,7 +64565,7 @@
         {
           "Id": 2037082209,
           "Type": 3,
-          "Value": "TRIGSTR_14557"
+          "Value": "TRIGSTR_14564"
         },
         {
           "Id": 1835101793,
@@ -69219,7 +69295,7 @@
         {
           "Id": 2037082209,
           "Type": 3,
-          "Value": "TRIGSTR_14564"
+          "Value": "TRIGSTR_14572"
         },
         {
           "Id": 2019718497,
@@ -69228,7 +69304,7 @@
         {
           "Id": 1802007905,
           "Type": 3,
-          "Value": "TRIGSTR_14572"
+          "Value": "TRIGSTR_14579"
         },
         {
           "Level": 1,
@@ -71187,7 +71263,7 @@
         {
           "Id": 2037082209,
           "Type": 3,
-          "Value": "TRIGSTR_14579"
+          "Value": "TRIGSTR_14586"
         },
         {
           "Id": 1835101793,
@@ -75184,12 +75260,12 @@
         {
           "Id": 1953653089,
           "Type": 3,
-          "Value": "ReplaceableTextures\\CommandButtons\\BTNSpiderBlack.blp"
+          "Value": "ReplaceableTextures/CommandButtons/ATCBTNSpiderblack_0.blp"
         },
         {
           "Id": 1918989665,
           "Type": 3,
-          "Value": "ReplaceableTextures\\CommandButtons\\BTNSpiderBlack.blp"
+          "Value": "ReplaceableTextures/CommandButtonsDisabled/DISATCBTNSpiderblack_0.blp"
         }
       ]
     },
@@ -77280,19 +77356,19 @@
           "Level": 2,
           "Id": 829781345,
           "Type": 3,
-          "Value": "TRIGSTR_17475"
+          "Value": "TRIGSTR_18411"
         },
         {
           "Level": 3,
           "Id": 829781345,
           "Type": 3,
-          "Value": "TRIGSTR_17476"
+          "Value": "TRIGSTR_21228"
         },
         {
           "Level": 4,
           "Id": 829781345,
           "Type": 3,
-          "Value": "TRIGSTR_17957"
+          "Value": "TRIGSTR_21249"
         },
         {
           "Id": 1802007137,
@@ -81780,7 +81856,7 @@
         {
           "Id": 1802007905,
           "Type": 3,
-          "Value": "TRIGSTR_14586"
+          "Value": "TRIGSTR_14592"
         },
         {
           "Id": 1718840929,
@@ -82966,13 +83042,13 @@
           "Level": 2,
           "Id": 829715809,
           "Type": 3,
-          "Value": "TRIGSTR_18408"
+          "Value": "TRIGSTR_21250"
         },
         {
           "Level": 2,
           "Id": 829781345,
           "Type": 3,
-          "Value": "TRIGSTR_18411"
+          "Value": "TRIGSTR_21251"
         }
       ]
     },
@@ -87417,7 +87493,7 @@
         {
           "Id": 2037082209,
           "Type": 3,
-          "Value": "TRIGSTR_14592"
+          "Value": "TRIGSTR_14593"
         },
         {
           "Id": 2037408353,
@@ -94462,7 +94538,7 @@
           "Level": 1,
           "Id": 828536161,
           "Type": 3,
-          "Value": "TRIGSTR_17921"
+          "Value": "TRIGSTR_21238"
         },
         {
           "Level": 2,
@@ -95410,12 +95486,12 @@
         {
           "Id": 1953653089,
           "Type": 3,
-          "Value": "ReplaceableTextures\\CommandButtons\\BTNSpiderBlack.blp"
+          "Value": "ReplaceableTextures/CommandButtons/ATCBTNSpiderblack_0.blp"
         },
         {
           "Id": 1918989665,
           "Type": 3,
-          "Value": "ReplaceableTextures\\CommandButtons\\BTNSpiderBlack.blp"
+          "Value": "ReplaceableTextures/CommandButtonsDisabled/DISATCBTNSpiderblack_0.blp"
         }
       ]
     },
@@ -95627,6 +95703,241 @@
           "Id": 1835101793,
           "Type": 3,
           "Value": "TRIGSTR_21207"
+        }
+      ]
+    },
+    {
+      "OldId": 2038064705,
+      "NewId": 1228091713,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1718840929,
+          "Type": 3,
+          "Value": "TRIGSTR_21217"
+        },
+        {
+          "Id": 2037082209,
+          "Type": 3,
+          "Value": "TRIGSTR_20189"
+        },
+        {
+          "Id": 1835101793,
+          "Type": 3,
+          "Value": "TRIGSTR_21218"
+        },
+        {
+          "Level": 1,
+          "Id": 829453409,
+          "Type": 3,
+          "Value": "TRIGSTR_21219"
+        },
+        {
+          "Level": 2,
+          "Id": 829453409,
+          "Type": 3,
+          "Value": "TRIGSTR_21220"
+        },
+        {
+          "Level": 1,
+          "Id": 828536161,
+          "Type": 3,
+          "Value": "TRIGSTR_21221"
+        },
+        {
+          "Level": 2,
+          "Id": 828536161,
+          "Type": 3,
+          "Value": "TRIGSTR_21222"
+        },
+        {
+          "Id": 1802007905,
+          "Type": 3,
+          "Value": "TRIGSTR_20290"
+        },
+        {
+          "Id": 1953653089,
+          "Type": 3,
+          "Value": "ReplaceableTextures\\CommandButtons\\ATCRefurbish.blp"
+        },
+        {
+          "Id": 1918989665,
+          "Type": 3,
+          "Value": "ReplaceableTextures\\CommandButtons\\ATCRefurbish.blp"
+        },
+        {
+          "Id": 2020631137,
+          "Value": 1
+        },
+        {
+          "Id": 2019718497,
+          "Value": 1
+        }
+      ]
+    },
+    {
+      "OldId": 1919378753,
+      "NewId": 1244868929,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1953653089,
+          "Type": 3,
+          "Value": "ReplaceableTextures\\CommandButtons\\BTNSpellResistance.blp"
+        },
+        {
+          "Id": 2037408353,
+          "Value": 1
+        },
+        {
+          "Id": 1718840929,
+          "Type": 3,
+          "Value": "TRIGSTR_21239"
+        },
+        {
+          "Id": 1835101793,
+          "Type": 3,
+          "Value": "TRIGSTR_21240"
+        },
+        {
+          "Level": 1,
+          "Id": 829453409,
+          "Type": 3,
+          "Value": "TRIGSTR_21241"
+        },
+        {
+          "Level": 1,
+          "Id": 828536161,
+          "Type": 3,
+          "Value": "TRIGSTR_21242"
+        },
+        {
+          "Id": 2020631137,
+          "Value": 2
+        }
+      ]
+    },
+    {
+      "OldId": 1717920833,
+      "NewId": 1261646145,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 2020631137,
+          "Value": 1
+        },
+        {
+          "Id": 1718840929,
+          "Type": 3,
+          "Value": "TRIGSTR_21252"
+        },
+        {
+          "Id": 2037082209,
+          "Type": 3,
+          "Value": "TRIGSTR_20515"
+        },
+        {
+          "Level": 1,
+          "Id": 828536161,
+          "Type": 3,
+          "Value": "TRIGSTR_12466"
+        },
+        {
+          "Level": 2,
+          "Id": 828536161,
+          "Type": 3,
+          "Value": "TRIGSTR_21254"
+        },
+        {
+          "Level": 3,
+          "Id": 828536161,
+          "Type": 3,
+          "Value": "TRIGSTR_21255"
+        },
+        {
+          "Id": 2019718497,
+          "Value": 1
+        },
+        {
+          "Id": 1802007905,
+          "Type": 3,
+          "Value": "TRIGSTR_20567"
+        },
+        {
+          "Level": 1,
+          "Id": 829781345,
+          "Type": 3,
+          "Value": "TRIGSTR_21256"
+        }
+      ]
+    },
+    {
+      "OldId": 1650740801,
+      "NewId": 1278423361,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 2020631137,
+          "Value": 3
+        },
+        {
+          "Id": 1718840929,
+          "Type": 3,
+          "Value": "TRIGSTR_13639"
+        },
+        {
+          "Id": 1835101793,
+          "Type": 3,
+          "Value": "TRIGSTR_14848"
+        },
+        {
+          "Id": 1918988897,
+          "Type": 3,
+          "Value": "ReplaceableTextures\\CommandButtons\\BTNHeadHunterBerserker.blp"
+        },
+        {
+          "Level": 1,
+          "Id": 829453409,
+          "Type": 3,
+          "Value": "TRIGSTR_14849"
+        },
+        {
+          "Level": 2,
+          "Id": 829453409,
+          "Type": 3,
+          "Value": "TRIGSTR_15664"
+        },
+        {
+          "Level": 3,
+          "Id": 829453409,
+          "Type": 3,
+          "Value": "TRIGSTR_17317"
+        },
+        {
+          "Level": 1,
+          "Id": 828536161,
+          "Type": 3,
+          "Value": "TRIGSTR_17323"
+        },
+        {
+          "Level": 2,
+          "Id": 828536161,
+          "Type": 3,
+          "Value": "TRIGSTR_17921"
+        },
+        {
+          "Level": 3,
+          "Id": 828536161,
+          "Type": 3,
+          "Value": "TRIGSTR_21235"
         }
       ]
     }

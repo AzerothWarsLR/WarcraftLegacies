@@ -843,14 +843,58 @@
           "Pointer": 2,
           "Id": 845243460,
           "Type": 2,
-          "Value": 750
+          "Value": 400
         },
         {
           "Level": 1,
           "Pointer": 4,
           "Id": 878797892,
           "Type": 2,
+          "Value": 100
+        },
+        {
+          "Id": 1986358369,
+          "Value": 2
+        },
+        {
+          "Level": 2,
+          "Pointer": 6,
+          "Id": 913269589,
+          "Type": 2,
+          "Value": 300
+        },
+        {
+          "Level": 2,
+          "Pointer": 2,
+          "Id": 845243460,
+          "Type": 2,
+          "Value": 750
+        },
+        {
+          "Level": 2,
+          "Pointer": 4,
+          "Id": 878797892,
+          "Type": 2,
           "Value": 200
+        },
+        {
+          "Level": 2,
+          "Pointer": 3,
+          "Id": 862020676,
+          "Type": 2,
+          "Value": 200
+        },
+        {
+          "Level": 2,
+          "Id": 1851880033,
+          "Type": 2,
+          "Value": 400
+        },
+        {
+          "Level": 2,
+          "Id": 1918989409,
+          "Type": 3,
+          "Value": "air,neutral,enemy"
         }
       ]
     },
@@ -3381,6 +3425,11 @@
           "Id": 863070572,
           "Type": 2,
           "Value": 0.5
+        },
+        {
+          "Id": 1902473825,
+          "Type": 3,
+          "Value": ""
         }
       ]
     },
@@ -26693,7 +26742,7 @@
           "Pointer": 5,
           "Id": 895903044,
           "Type": 2,
-          "Value": 1
+          "Value": 0.85
         },
         {
           "Level": 1,
@@ -47627,7 +47676,7 @@
           "Pointer": 2,
           "Id": 845902690,
           "Type": 2,
-          "Value": 2.5
+          "Value": 1.5
         },
         {
           "Level": 1,
@@ -47651,7 +47700,46 @@
         {
           "Id": 1902473825,
           "Type": 3,
-          "Value": "R018"
+          "Value": ""
+        },
+        {
+          "Id": 1986358369,
+          "Value": 2
+        },
+        {
+          "Level": 2,
+          "Pointer": 2,
+          "Id": 845902690,
+          "Type": 2,
+          "Value": 2.5
+        },
+        {
+          "Level": 2,
+          "Id": 1718968929,
+          "Type": 3,
+          "Value": "B01R"
+        },
+        {
+          "Level": 2,
+          "Id": 1852072801,
+          "Type": 2,
+          "Value": 18
+        },
+        {
+          "Level": 2,
+          "Id": 1969514593,
+          "Type": 2,
+          "Value": 3
+        },
+        {
+          "Level": 2,
+          "Id": 1920296033,
+          "Type": 2,
+          "Value": 3
+        },
+        {
+          "Id": 1684562785,
+          "Value": 0
         }
       ]
     },
@@ -47774,7 +47862,7 @@
           "Pointer": 1,
           "Id": 828794180,
           "Type": 2,
-          "Value": 0.05
+          "Value": 0.2
         },
         {
           "Level": 1,
@@ -47788,7 +47876,7 @@
           "Pointer": 5,
           "Id": 895903044,
           "Type": 2,
-          "Value": 0.05
+          "Value": 0.15
         },
         {
           "Level": 1,
@@ -55978,7 +56066,7 @@
           "Pointer": 1,
           "Id": 829385811,
           "Type": 2,
-          "Value": 0.7
+          "Value": 0.5
         },
         {
           "Level": 1,
@@ -55992,7 +56080,7 @@
           "Pointer": 2,
           "Id": 846163027,
           "Type": 2,
-          "Value": 0.9
+          "Value": 0.7
         },
         {
           "Level": 1,
@@ -83741,7 +83829,7 @@
           "Level": 3,
           "Pointer": 2,
           "Id": 845573705,
-          "Value": 5
+          "Value": 8
         },
         {
           "Level": 2,
@@ -83813,6 +83901,24 @@
           "Id": 1918989409,
           "Type": 3,
           "Value": "air,ground,friend,neutral,self"
+        },
+        {
+          "Level": 1,
+          "Pointer": 2,
+          "Id": 845573705,
+          "Value": 6
+        },
+        {
+          "Level": 1,
+          "Pointer": 1,
+          "Id": 828796489,
+          "Type": 2,
+          "Value": 0.15
+        },
+        {
+          "Level": 1,
+          "Id": 1935895905,
+          "Value": 25
         }
       ]
     },
@@ -128393,7 +128499,7 @@
           "Level": 1,
           "Id": 1852072801,
           "Type": 2,
-          "Value": 45
+          "Value": 30
         },
         {
           "Level": 1,
@@ -128534,7 +128640,7 @@
         {
           "Level": 1,
           "Id": 1935895905,
-          "Value": 100
+          "Value": 75
         },
         {
           "Level": 2,
@@ -128578,6 +128684,12 @@
           "Level": 1,
           "Pointer": 2,
           "Id": 846227529,
+          "Value": 100
+        },
+        {
+          "Level": 1,
+          "Id": 1701994849,
+          "Type": 2,
           "Value": 125
         }
       ]
@@ -129853,6 +129965,355 @@
           "Id": 1667330657,
           "Type": 3,
           "Value": "nightelf"
+        }
+      ]
+    },
+    {
+      "OldId": 2038064705,
+      "NewId": 1228091713,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Level": 1,
+          "Id": 1718968929,
+          "Type": 3,
+          "Value": "B0AF"
+        },
+        {
+          "Level": 2,
+          "Id": 1718968929,
+          "Type": 3,
+          "Value": "Bblo"
+        },
+        {
+          "Level": 2,
+          "Id": 1852072801,
+          "Type": 2,
+          "Value": 20
+        },
+        {
+          "Level": 1,
+          "Pointer": 1,
+          "Id": 829385794,
+          "Type": 2,
+          "Value": 0
+        },
+        {
+          "Level": 2,
+          "Pointer": 1,
+          "Id": 829385794,
+          "Type": 2,
+          "Value": 0.4
+        },
+        {
+          "Level": 1,
+          "Pointer": 2,
+          "Id": 846163010,
+          "Type": 2,
+          "Value": 1
+        },
+        {
+          "Level": 2,
+          "Pointer": 2,
+          "Id": 846163010,
+          "Type": 2,
+          "Value": 0.3
+        },
+        {
+          "Level": 1,
+          "Pointer": 3,
+          "Id": 862940226,
+          "Type": 2,
+          "Value": 0
+        },
+        {
+          "Level": 2,
+          "Pointer": 3,
+          "Id": 862940226,
+          "Type": 2,
+          "Value": 0.3
+        },
+        {
+          "Level": 2,
+          "Id": 1920296033,
+          "Type": 2,
+          "Value": 20
+        },
+        {
+          "Level": 2,
+          "Id": 1969514593,
+          "Type": 2,
+          "Value": 20
+        },
+        {
+          "Id": 1667330657,
+          "Type": 3,
+          "Value": "orc"
+        },
+        {
+          "Level": 2,
+          "Id": 1918989409,
+          "Type": 3,
+          "Value": "air,ground,self"
+        },
+        {
+          "Level": 1,
+          "Id": 1969514593,
+          "Type": 2,
+          "Value": 10
+        },
+        {
+          "Level": 1,
+          "Id": 1920296033,
+          "Type": 2,
+          "Value": 10
+        },
+        {
+          "Level": 1,
+          "Id": 1852072801,
+          "Type": 2,
+          "Value": 10
+        },
+        {
+          "Level": 1,
+          "Id": 1935895905,
+          "Value": 150
+        }
+      ]
+    },
+    {
+      "OldId": 1919378753,
+      "NewId": 1244868929,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Level": 1,
+          "Pointer": 1,
+          "Id": 828794180,
+          "Type": 2,
+          "Value": 1
+        },
+        {
+          "Level": 1,
+          "Pointer": 5,
+          "Id": 895903044,
+          "Type": 2,
+          "Value": 0.85
+        },
+        {
+          "Id": 1667330657,
+          "Type": 3,
+          "Value": "commoner"
+        }
+      ]
+    },
+    {
+      "OldId": 1717920833,
+      "NewId": 1261646145,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Level": 1,
+          "Id": 1718968929,
+          "Type": 3,
+          "Value": "B08G"
+        },
+        {
+          "Level": 2,
+          "Id": 1718968929,
+          "Type": 3,
+          "Value": "B08G"
+        },
+        {
+          "Level": 3,
+          "Id": 1718968929,
+          "Type": 3,
+          "Value": "B08G"
+        },
+        {
+          "Level": 2,
+          "Pointer": 1,
+          "Id": 828794180,
+          "Type": 2,
+          "Value": 0.5
+        },
+        {
+          "Level": 3,
+          "Pointer": 1,
+          "Id": 828794180,
+          "Type": 2,
+          "Value": 0.35
+        },
+        {
+          "Level": 2,
+          "Pointer": 2,
+          "Id": 845571396,
+          "Type": 2,
+          "Value": 1
+        },
+        {
+          "Level": 3,
+          "Pointer": 2,
+          "Id": 845571396,
+          "Type": 2,
+          "Value": 1
+        },
+        {
+          "Level": 2,
+          "Pointer": 3,
+          "Id": 862348612,
+          "Type": 2,
+          "Value": 0.3
+        },
+        {
+          "Level": 3,
+          "Pointer": 3,
+          "Id": 862348612,
+          "Type": 2,
+          "Value": 0.3
+        },
+        {
+          "Level": 1,
+          "Pointer": 5,
+          "Id": 895903044,
+          "Type": 2,
+          "Value": 0.85
+        },
+        {
+          "Level": 2,
+          "Pointer": 5,
+          "Id": 895903044,
+          "Type": 2,
+          "Value": 0.8
+        },
+        {
+          "Level": 3,
+          "Pointer": 5,
+          "Id": 895903044,
+          "Type": 2,
+          "Value": 0.6
+        },
+        {
+          "Level": 2,
+          "Pointer": 6,
+          "Id": 912680260,
+          "Type": 2,
+          "Value": 35
+        },
+        {
+          "Level": 3,
+          "Pointer": 6,
+          "Id": 912680260,
+          "Type": 2,
+          "Value": 35
+        },
+        {
+          "Level": 2,
+          "Pointer": 8,
+          "Id": 946234692,
+          "Type": 2,
+          "Value": 1
+        },
+        {
+          "Level": 3,
+          "Pointer": 8,
+          "Id": 946234692,
+          "Type": 2,
+          "Value": 1
+        },
+        {
+          "Id": 1902473825,
+          "Type": 3,
+          "Value": ""
+        },
+        {
+          "Level": 2,
+          "Id": 1918989409,
+          "Type": 3,
+          "Value": "air,ground,structure,debris,neutral,enemy,ward,vuln,invu"
+        },
+        {
+          "Level": 3,
+          "Id": 1918989409,
+          "Type": 3,
+          "Value": "air,ground,structure,debris,neutral,enemy,ward,vuln,invu"
+        }
+      ]
+    },
+    {
+      "OldId": 1650740801,
+      "NewId": 1278423361,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Level": 3,
+          "Pointer": 1,
+          "Id": 829580111,
+          "Type": 2,
+          "Value": 15
+        },
+        {
+          "Level": 1,
+          "Pointer": 2,
+          "Id": 846357327,
+          "Type": 2,
+          "Value": 1.5
+        },
+        {
+          "Level": 2,
+          "Pointer": 2,
+          "Id": 846357327,
+          "Type": 2,
+          "Value": 1.5
+        },
+        {
+          "Level": 3,
+          "Pointer": 2,
+          "Id": 846357327,
+          "Type": 2,
+          "Value": 1.5
+        },
+        {
+          "Level": 1,
+          "Pointer": 4,
+          "Id": 879911759,
+          "Type": 2,
+          "Value": 0.1
+        },
+        {
+          "Level": 2,
+          "Pointer": 4,
+          "Id": 879911759,
+          "Type": 2,
+          "Value": 0.15
+        },
+        {
+          "Level": 3,
+          "Pointer": 4,
+          "Id": 879911759,
+          "Type": 2,
+          "Value": 0.1
+        },
+        {
+          "Id": 1919248481,
+          "Value": 0
+        },
+        {
+          "Id": 1667330657,
+          "Type": 3,
+          "Value": "human"
+        },
+        {
+          "Id": 1986358369,
+          "Value": 1
         }
       ]
     }
