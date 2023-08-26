@@ -18,7 +18,7 @@ using War3Net.Build.Widget;
 namespace Launcher.Services
 {
   /// <summary>
-  /// Converts collections of loose files into a playable Warcraft 3 map.
+  /// Converts collections of loose files into a <see cref="MapBuilder"/>, which can be used to produce a Warcraft 3 map.
   /// </summary>
   public sealed class MapDataToMapBuilderConverter
   {
