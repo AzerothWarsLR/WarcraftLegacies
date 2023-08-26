@@ -30,7 +30,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
       LegendMeredith = new LegendaryHero("Meredith Waycrest")
       {
         UnitType = Constants.UNIT_U026_MATRIARCH_OF_HOUSE_WAYCREST_KULTIRAS,
-        StartingXp = 4000
+        StartingXp = 2800
       };
 
       LegendKatherine = new LegendaryHero("Katherine Proudmoore")

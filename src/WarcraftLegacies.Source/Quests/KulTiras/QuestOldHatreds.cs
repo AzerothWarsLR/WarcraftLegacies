@@ -19,13 +19,13 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
       "ReplaceableTextures\\CommandButtons\\BTNProudmoore.blp")
     {
       _proudmoore = proudmoore;
-      AddObjective(new ObjectiveLegendInRect(proudmoore, Regions.NethergardeUnlock,
-        "Nethergarde, the door to Outland"));
+      AddObjective(new ObjectiveLegendInRect(proudmoore, Regions.HellfireUnlock,
+        "Hellfire, the belly of the beast"));
     }
 
     /// <inheritdoc/>
     protected override string RewardFlavour =>
-      "Daelin stands before the Dark Portal, towering over the landscape like a twisted monument to the Orc's brutality. He vows that, this time, he won't merely drive the Orcs back - he'll follow them to their planet and slaughter them all.";
+      "Daelin stands before the Hellfire Citadel, towering over the landscape like a twisted monument to the Orc's brutality. He vows that, this time, he won't merely drive the Orcs back - he'll lead his men to conquer these brutal lands and slaughter them all.";
 
     /// <inheritdoc/>
     protected override string RewardDescription => "Daelin Proudmoore gains 4000 experience";
