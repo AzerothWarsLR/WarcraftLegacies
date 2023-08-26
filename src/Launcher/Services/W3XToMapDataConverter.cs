@@ -131,19 +131,11 @@ namespace Launcher.Services
     /// </summary>
     private void SerializeAndWrite<TInput, TDataTransferObject>(TInput inputValue, string outputFolderPath, string subPath)
     {
-      var dataTransferObject = _mapper.Map<TInput, TDataTransferObject>(inputValue);
-      SerializeAndWrite(dataTransferObject, outputFolderPath, subPath);
-    }
-    
-    /// <summary>
-    /// Serializes then writes the provided input to the file system.
-    /// </summary>
-    private void SerializeAndWrite<T>(T value, string outputFolderPath, string subPath)
-    {
       if (!Directory.Exists(outputFolderPath))
         Directory.CreateDirectory(outputFolderPath!);
       
-      var asJson = JsonSerializer.Serialize(value, _jsonSerializerOptions);
+      var dataTransferObject = _mapper.Map<TInput, TDataTransferObject>(inputValue);
+      var asJson = JsonSerializer.Serialize(dataTransferObject, _jsonSerializerOptions);
       var fullPath = Path.Combine(outputFolderPath, subPath);
       
       File.WriteAllText(fullPath, asJson);
