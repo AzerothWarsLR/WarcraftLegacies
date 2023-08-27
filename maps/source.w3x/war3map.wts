@@ -128052,12 +128052,6 @@ STRING 21351
 X
 }
 
-STRING 21352
-// Abilities: Aam2 (Anti-magic Shell), Ubertip (Tooltip - Normal - Extended)
-{
-Creates a barrier that stops <Ams3,DataC1> points of spell, summon, or magic damage from affecting a target unit. |nLasts <Aam2,Dur1> seconds.
-}
-
 STRING 21353
 // Abilities: AUdr (Dark Ritual), Ubertip (Tooltip - Normal - Extended)
 {
@@ -128094,12 +128088,6 @@ STRING 21358
 A poison attack that deals <Aspo,DataA1> damage per second, and reduces an enemy units attack by <Aspo,DataC1,%>% for <Aspo,Dur1> seconds.
 }
 
-STRING 21359
-// Abilities: A0UE (Necromantic Cleansing), Ubertip (Tooltip - Normal - Extended)
-{
-Removes all buffs from units in a target area and deals <Adm2,DataB1> damage to summoned units.|r
-}
-
 STRING 21360
 // Abilities: A13V (Freezing Shield), Ubertip (Tooltip - Normal - Extended)
 {
@@ -128134,5 +128122,17 @@ STRING 21365
 // Buffs/Effects: B00N (Freezing Shield), Bufftip (Tooltip)
 {
 Freezing Shield
+}
+
+STRING 21366
+// Abilities: Aam2 (Anti-magic Shell), Ubertip (Tooltip - Normal - Extended)
+{
+Creates a barrier that stops 675 points of spell, summon, or magic damage from affecting a target unit. |nLasts <Aam2,Dur1> seconds.
+}
+
+STRING 21367
+// Abilities: A0UE (Necromantic Cleansing), Ubertip (Tooltip - Normal - Extended)
+{
+Removes all buffs from units in a target area and deals 400 damage to summoned units.|r
 }
 
