@@ -17261,7 +17261,7 @@ Flying bastion of Legion's reign.|n|cfff5962dAbilities:|R Curse Aura, Multishot 
 }
 
 STRING 2878
-// Buffs/Effects: B022 (), EditorSuffix (Editor Suffix)
+// Abilities: A13U (Shadow Veil), EditorSuffix (Editor Suffix)
 {
 (Legion)
 }
@@ -20642,7 +20642,7 @@ Basic worker unit.|n|cfff5962dAbilities:|r Repair, Gather|n|cfff5962dCan Learn:|
 }
 
 STRING 3441
-// Buffs/Effects: B040 (), EditorSuffix (Editor Suffix)
+// Buffs/Effects: B022 (), EditorSuffix (Editor Suffix)
 {
 (Legion)
 }
@@ -20816,7 +20816,7 @@ Improved Trueshot Aura
 }
 
 STRING 3470
-// Buffs/Effects: B0AK (), EditorSuffix (Editor Suffix)
+// Buffs/Effects: B040 (), EditorSuffix (Editor Suffix)
 {
 (Legion)
 }
@@ -22285,7 +22285,7 @@ Revive Necromancer
 }
 
 STRING 3715
-// Upgrades: R04G (Magic Sentry), EditorSuffix (Editor Suffix)
+// Buffs/Effects: B0AK (), EditorSuffix (Editor Suffix)
 {
 (Legion)
 }
@@ -27140,7 +27140,7 @@ Agave
 }
 
 STRING 4524
-// Upgrades: R028 (Banshee Adept Training,Banshee Master Training), EditorSuffix (Editor Suffix)
+// Upgrades: R04G (Magic Sentry), EditorSuffix (Editor Suffix)
 {
 (Legion)
 }
@@ -29768,7 +29768,7 @@ STRING 4961
 }
 
 STRING 4962
-// Upgrades: R027 (Necromancer Adept Training,Necromancer Master Training), EditorSuffix (Editor Suffix)
+// Upgrades: R028 (Banshee Adept Training,Banshee Master Training), EditorSuffix (Editor Suffix)
 {
 (Legion)
 }
@@ -37988,7 +37988,7 @@ Calls down a storm of lightning to strike enemy units for 40 damage in a medium 
 }
 
 STRING 6332
-// Upgrades: R01Y (Magic Sentry), EditorSuffix (Editor Suffix)
+// Upgrades: R027 (Necromancer Adept Training,Necromancer Master Training), EditorSuffix (Editor Suffix)
 {
 (Legion)
 }
@@ -38294,7 +38294,7 @@ Life Drain
 }
 
 STRING 6383
-// Upgrades: R003 (Cannibalize), EditorSuffix (Editor Suffix)
+// Upgrades: R01Y (Magic Sentry), EditorSuffix (Editor Suffix)
 {
 (Legion)
 }
@@ -38456,7 +38456,7 @@ STRING 6409
 }
 
 STRING 6410
-// Upgrades: R096 (Defend), EditorSuffix (Editor Suffix)
+// Upgrades: R003 (Cannibalize), EditorSuffix (Editor Suffix)
 {
 (Legion)
 }
@@ -68365,12 +68365,6 @@ STRING 11390
 // Destructibles: B020 (Building - Troll Hut), Name (Name)
 {
 Building - Troll Hut
-}
-
-STRING 11391
-// Units: o04P (Nathrezim Infiltrator), Ubertip (Tooltip - Extended)
-{
-Shadowy Nathrezim Agents.|n|cfff5962dAbilities:|R Vampiric Attack, Dark Regeneration, Resistant Skin, Permanent Invisibility, Magic Resistance |n|cfff5962dCan learn:|R Charm, Sight of Sargeras, Astral Walk|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land units.|r
 }
 
 STRING 11392
@@ -121086,7 +121080,7 @@ Q
 }
 
 STRING 20183
-// Upgrades: Rume (Unholy Strength,Improved Unholy Strength,Advanced Unholy Strength), Hotkey (Hotkey)
+// Abilities: A13U (Shadow Veil), Hotkey (Hotkey - Normal)
 {
 Q
 }
@@ -122310,7 +122304,7 @@ Q
 }
 
 STRING 20387
-// Upgrades: Rome (Steel Melee Weapons,Thorium Melee Weapons,Arcanite Melee Weapons), Hotkey (Hotkey)
+// Upgrades: Rume (Unholy Strength,Improved Unholy Strength,Advanced Unholy Strength), Hotkey (Hotkey)
 {
 Q
 }
@@ -123000,7 +122994,7 @@ Q
 }
 
 STRING 20502
-// Upgrades: Rhme (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Hotkey (Hotkey)
+// Upgrades: Rome (Steel Melee Weapons,Thorium Melee Weapons,Arcanite Melee Weapons), Hotkey (Hotkey)
 {
 Q
 }
@@ -123138,7 +123132,7 @@ Agile Knights of Zandalar.|n|cfff5962dAbilities:|R |n|n|cffffcc00Attacks land un
 }
 
 STRING 20525
-// Upgrades: R042 (Shaman Adept Training,Shaman Master Training), EditorSuffix (Editor Suffix)
+// Upgrades: R096 (Defend), EditorSuffix (Editor Suffix)
 {
 (Legion)
 }
@@ -125113,7 +125107,7 @@ Felsteel Plating
 }
 
 STRING 20854
-// Upgrades: Resw (Strength of the Wild,Improved Strength of the Wild,Advanced Strength of the Wil), Hotkey (Hotkey)
+// Upgrades: Rhme (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Hotkey (Hotkey)
 {
 Q
 }
@@ -125173,7 +125167,7 @@ Q
 }
 
 STRING 20864
-// Upgrades: Resm (Strength of the Moon,Improved Strength of the Moon,Advanced Strength of the Moo), Hotkey (Hotkey)
+// Upgrades: Resw (Strength of the Wild,Improved Strength of the Wild,Advanced Strength of the Wil), Hotkey (Hotkey)
 {
 Q
 }
@@ -126091,7 +126085,7 @@ Sends a gigantic wave which deals <A01T,DataA2> damage to each enemy land unit i
 }
 
 STRING 21017
-// Upgrades: R020 (Defend), Hotkey (Hotkey)
+// Upgrades: Resm (Strength of the Moon,Improved Strength of the Moon,Advanced Strength of the Moo), Hotkey (Hotkey)
 {
 Q
 }
@@ -127243,7 +127237,7 @@ W
 }
 
 STRING 21209
-// Upgrades: R014 (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
+// Upgrades: R020 (Defend), Hotkey (Hotkey)
 {
 Q
 }
@@ -127627,7 +127621,7 @@ Damage Aura level 2
 }
 
 STRING 21273
-// Upgrades: R00X (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: R014 (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
 {
 Q
 }
@@ -127669,7 +127663,7 @@ STRING 21279
 }
 
 STRING 21280
-// Upgrades: R07E (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R00X (Magic Sentry), Hotkey (Hotkey)
 {
 Q
 }
@@ -127711,13 +127705,13 @@ Mass Ice Armor - [|cffffcc00Level 2|r]
 }
 
 STRING 21287
-// Upgrades: R07L (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R07E (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 Q
 }
 
 STRING 21288
-// Upgrades: R09N (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
+// Upgrades: R07L (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 Q
 }
@@ -127924,5 +127918,65 @@ STRING 21322
 // Upgrades: R08T (Cannibalize), EditorSuffix (Editor Suffix)
 {
 (Scourge)
+}
+
+STRING 21323
+// Units: o04P (Nathrezim Infiltrator), Ubertip (Tooltip - Extended)
+{
+Shadowy Nathrezim Agents.|n|cfff5962dAbilities:|R Vampiric Attack, Dark Regeneration, Resistant Skin, Shadow Veil, Magic Resistance |n|cfff5962dCan learn:|R Charm, Sight of Sargeras, Astral Walk|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land units.|r
+}
+
+STRING 21324
+// Abilities: A13T (Vampiric Attack), EditorSuffix (Editor Suffix)
+{
+(Legion-Infiltrator)
+}
+
+STRING 21325
+// Abilities: A13T (Vampiric Attack), Name (Name)
+{
+Vampiric Attack
+}
+
+STRING 21326
+// Abilities: A13T (Vampiric Attack), Tip (Tooltip - Normal)
+{
+Vampiric Attack
+}
+
+STRING 21327
+// Abilities: A13T (Vampiric Attack), Ubertip (Tooltip - Normal - Extended)
+{
+This unit gains 50% of damage done as health.
+}
+
+STRING 21328
+// Abilities: A13U (Shadow Veil), Tip (Tooltip - Normal)
+{
+Shadow Veil
+}
+
+STRING 21329
+// Abilities: A13U (Shadow Veil), Ubertip (Tooltip - Normal - Extended)
+{
+Allows the unit to become invisible for 6 seconds.
+}
+
+STRING 21330
+// Abilities: A13U (Shadow Veil), Name (Name)
+{
+Shadow Veil
+}
+
+STRING 21331
+// Upgrades: R042 (Shaman Adept Training,Shaman Master Training), EditorSuffix (Editor Suffix)
+{
+(Legion)
+}
+
+STRING 21332
+// Upgrades: R09N (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
+{
+Q
 }
 
