@@ -8990,7 +8990,7 @@ Upgrade to Improved Nerubian Tower
 }
 
 STRING 1499
-// Upgrades: Rune (Necromancer Adept Training,Necromancer Master Training), EditorSuffix (Editor Suffix)
+// Abilities: A13R (Mass Frost Armor), EditorSuffix (Editor Suffix)
 {
 (Scourge)
 }
@@ -12463,7 +12463,7 @@ Z
 }
 
 STRING 2078
-// Upgrades: Rugf (Ghoul Frenzy), EditorSuffix (Editor Suffix)
+// Upgrades: Rune (Necromancer Adept Training,Necromancer Master Training), EditorSuffix (Editor Suffix)
 {
 (Scourge)
 }
@@ -22345,7 +22345,7 @@ Revive Scourge Commander
 }
 
 STRING 3725
-// Upgrades: Rufb (Freezing Breath), EditorSuffix (Editor Suffix)
+// Upgrades: Rugf (Ghoul Frenzy), EditorSuffix (Editor Suffix)
 {
 (Scourge)
 }
@@ -22951,7 +22951,7 @@ STRING 3825
 }
 
 STRING 3826
-// Upgrades: Ruex (Exhume Corpses), EditorSuffix (Editor Suffix)
+// Upgrades: Rufb (Freezing Breath), EditorSuffix (Editor Suffix)
 {
 (Scourge)
 }
@@ -23017,7 +23017,7 @@ Revive Lich King
 }
 
 STRING 3837
-// Upgrades: Ruar (Unholy Armor,Improved Unholy Armor,Advanced Unholy Armor), EditorSuffix (Editor Suffix)
+// Upgrades: Ruex (Exhume Corpses), EditorSuffix (Editor Suffix)
 {
 (Scourge)
 }
@@ -40526,7 +40526,7 @@ Z
 }
 
 STRING 6755
-// Upgrades: R06N (Freezing Breath), EditorSuffix (Editor Suffix)
+// Upgrades: Ruar (Unholy Armor,Improved Unholy Armor,Advanced Unholy Armor), EditorSuffix (Editor Suffix)
 {
 (Scourge)
 }
@@ -43407,7 +43407,7 @@ F
 }
 
 STRING 7232
-// Upgrades: R06L (Magic Sentry), EditorSuffix (Editor Suffix)
+// Upgrades: R06N (Freezing Breath), EditorSuffix (Editor Suffix)
 {
 (Scourge)
 }
@@ -51138,7 +51138,7 @@ Opens the gate.
 }
 
 STRING 8521
-// Upgrades: R06I (Defend), EditorSuffix (Editor Suffix)
+// Upgrades: R06L (Magic Sentry), EditorSuffix (Editor Suffix)
 {
 (Scourge)
 }
@@ -72366,7 +72366,7 @@ Learn Doom - [|cffffcc00Level %d|r]
 }
 
 STRING 12057
-// Upgrades: R04V (Magic Sentry), EditorSuffix (Editor Suffix)
+// Upgrades: R06I (Defend), EditorSuffix (Editor Suffix)
 {
 (Scourge)
 }
@@ -82837,7 +82837,7 @@ Research [|cffffcc00C|r] - Stone Form
 }
 
 STRING 13802
-// Upgrades: R025 (Chaos), EditorSuffix (Editor Suffix)
+// Upgrades: R04V (Magic Sentry), EditorSuffix (Editor Suffix)
 {
 (Scourge)
 }
@@ -82945,13 +82945,13 @@ Further increases the attack damage of Ghouls, Crypt Fiends, Zombies, Skeletal A
 }
 
 STRING 13820
-// Upgrades: R01X (Disease Cloud), EditorSuffix (Editor Suffix)
+// Upgrades: R025 (Chaos), EditorSuffix (Editor Suffix)
 {
 (Scourge)
 }
 
 STRING 13821
-// Upgrades: R01D (Freezing Breath), EditorSuffix (Editor Suffix)
+// Upgrades: R01X (Disease Cloud), EditorSuffix (Editor Suffix)
 {
 (Scourge)
 }
@@ -82969,7 +82969,7 @@ Causes Frost Wyrm attacks to temporarily stop production.
 }
 
 STRING 13824
-// Upgrades: R00Q (Magic Sentry), EditorSuffix (Editor Suffix)
+// Upgrades: R01D (Freezing Breath), EditorSuffix (Editor Suffix)
 {
 (Scourge)
 }
@@ -83029,7 +83029,7 @@ STRING 13833
 }
 
 STRING 13834
-// Upgrades: R02X (Defend), EditorSuffix (Editor Suffix)
+// Upgrades: R00Q (Magic Sentry), EditorSuffix (Editor Suffix)
 {
 (Scourge)
 }
@@ -83923,7 +83923,7 @@ Increases Sorceresses' mana capacity, mana regeneration rate, attack damage and 
 }
 
 STRING 13983
-// Upgrades: R051 (Necromancer Adept Training,Necromancer Master Training), EditorSuffix (Editor Suffix)
+// Upgrades: R02X (Defend), EditorSuffix (Editor Suffix)
 {
 (Scourge)
 }
@@ -84343,7 +84343,7 @@ D
 }
 
 STRING 14053
-// Upgrades: R07I (Necromancer Adept Training,Necromancer Master Training), EditorSuffix (Editor Suffix)
+// Upgrades: R051 (Necromancer Adept Training,Necromancer Master Training), EditorSuffix (Editor Suffix)
 {
 (Scourge)
 }
@@ -93094,6 +93094,12 @@ STRING 15518
 // Upgrades: R03L (Chaos), Ubertip (Tooltip - Extended)
 {
 Improves Necrolytes' Shadow Infusion by increasing its heal amount by 45 and reducing its mana cost to 0.
+}
+
+STRING 15519
+// Abilities: A13R (Mass Frost Armor), Name (Name)
+{
+Mass Frost Armor
 }
 
 STRING 15520
@@ -120905,6 +120911,12 @@ STRING 20153
 (Illidari Tower)
 }
 
+STRING 20154
+// Abilities: A13R (Mass Frost Armor), Researchtip (Tooltip - Learn)
+{
+Learn Mass Ice Armor - [|cffffcc00Level %d|r]
+}
+
 STRING 20155
 // Units: o05R (Warsong Lumber Camp), EditorSuffix (Name - Editor Suffix)
 {
@@ -120987,6 +120999,12 @@ STRING 20168
 // Abilities: A0IS (On Guard), EditorSuffix (Editor Suffix)
 {
 (Stormwind Marshal)
+}
+
+STRING 20169
+// Abilities: A13R (Mass Frost Armor), Researchubertip (Tooltip - Learn - Extended)
+{
+Grants Frost Armor to all friendly unit in a large area of effect. |n|n|cffffcc00Level 1|r - Lasts 60 seconds and grants 8 armor.|n|cffffcc00Level 2|r - Lasts 60 seconds and grants 12 armor.|n|cffffcc00Level 3|r - Lasts 60 seconds and grants 16 armor
 }
 
 STRING 20170
@@ -126529,7 +126547,7 @@ Increases Arcanists' mana capacity, mana regeneration rate, attack damage and gi
 }
 
 STRING 21093
-// Upgrades: Rosp (Spiked Barricades,Improved Spiked Barricades,Advanced Spiked Barricades), Hotkey (Hotkey)
+// Abilities: A13R (Mass Frost Armor), Hotkey (Hotkey - Normal)
 {
 R
 }
@@ -126751,13 +126769,13 @@ This unit has Mage Armor; its armor is increased.
 }
 
 STRING 21130
-// Upgrades: Rosp (Spiked Barricades,Improved Spiked Barricades,Advanced Spiked Barricades), Hotkey (Hotkey)
+// Abilities: A13R (Mass Frost Armor), Researchhotkey (Hotkey - Learn)
 {
 R
 }
 
 STRING 21131
-// Upgrades: Ropg (Pillage), Hotkey (Hotkey)
+// Abilities: A13S (Mass Frost Armour ), Hotkey (Hotkey - Normal)
 {
 R
 }
@@ -126823,7 +126841,7 @@ Train Blood Knight Squire
 }
 
 STRING 21142
-// Upgrades: Rews (Well Spring), Hotkey (Hotkey)
+// Upgrades: Rosp (Spiked Barricades,Improved Spiked Barricades,Advanced Spiked Barricades), Hotkey (Hotkey)
 {
 R
 }
@@ -126847,7 +126865,7 @@ Research Seal of Blood
 }
 
 STRING 21146
-// Upgrades: R00N (Storm Hammers), Hotkey (Hotkey)
+// Upgrades: Rosp (Spiked Barricades,Improved Spiked Barricades,Advanced Spiked Barricades), Hotkey (Hotkey)
 {
 R
 }
@@ -127075,13 +127093,13 @@ rmnr
 }
 
 STRING 21184
-// Upgrades: R07X (Defend), EditorSuffix (Editor Suffix)
+// Upgrades: R07I (Necromancer Adept Training,Necromancer Master Training), EditorSuffix (Editor Suffix)
 {
 (Scourge)
 }
 
 STRING 21185
-// Upgrades: R08T (Cannibalize), EditorSuffix (Editor Suffix)
+// Upgrades: R07X (Defend), EditorSuffix (Editor Suffix)
 {
 (Scourge)
 }
@@ -127572,6 +127590,12 @@ STRING 21266
  (Bonebreaker)
 }
 
+STRING 21267
+// Abilities: A13R (Mass Frost Armor), Tip (Tooltip - Normal)
+{
+Mass Frost Armor 
+}
+
 STRING 21268
 // Abilities: A11Q (Citadel Shield Aura), Ubertip (Tooltip - Normal - Extended)
 {
@@ -127678,6 +127702,12 @@ STRING 21285
 // Abilities: A13P (Splintering Strike), Unubertip (Tooltip - Turn Off - Extended)
 {
 |cffc3dbffRight-click to deactivate auto-casting.|r
+}
+
+STRING 21286
+// Abilities: A13R (Mass Frost Armor), Tip (Tooltip - Normal)
+{
+Mass Ice Armor - [|cffffcc00Level 2|r]
 }
 
 STRING 21287
@@ -127810,5 +127840,89 @@ STRING 21308
 // Upgrades: R086 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 E
+}
+
+STRING 21309
+// Abilities: A13R (Mass Frost Armor), Tip (Tooltip - Normal)
+{
+Mass Ice Armor - [|cffffcc00Level 3|r]
+}
+
+STRING 21310
+// Abilities: A13R (Mass Frost Armor), Tip (Tooltip - Normal)
+{
+Mass Banish - [|cffffcc00Level 4|r]
+}
+
+STRING 21311
+// Abilities: A13R (Mass Frost Armor), Ubertip (Tooltip - Normal - Extended)
+{
+Grants Frost Armor to all friendly unit in an area of effect, giving units +4 bonus armour and slowing units that attack them for 2 seconds. Lasts 60 seconds. |n
+}
+
+STRING 21312
+// Abilities: A13R (Mass Frost Armor), Ubertip (Tooltip - Normal - Extended)
+{
+Grants Ice Armor to all friendly unit in a large area of effect.|n|cffffcc00Level 2|r - Lasts 60 seconds and grants 12 armor
+}
+
+STRING 21313
+// Abilities: A13R (Mass Frost Armor), Ubertip (Tooltip - Normal - Extended)
+{
+Grants Ice Armor to all friendly unit in a large area of effect.|n|cffffcc00Level 3|r - Lasts 60 seconds and grants 16 armor
+}
+
+STRING 21314
+// Abilities: A13R (Mass Frost Armor), Ubertip (Tooltip - Normal - Extended)
+{
+Turns all non-mechanical unit in the target area ethereal and slows their movement speed by <A0FE,DataA4,%>% for <A0FE,Dur4> seconds. Lasts <A0FE,Dur4> second on Heroes. Ethereal creatures cannot attack, but they can cast spells and certain spells cast upon them will have a greater effect.
+}
+
+STRING 21315
+// Abilities: A13S (Mass Frost Armour ), EditorSuffix (Editor Suffix)
+{
+(Scourge - Dummy)
+}
+
+STRING 21316
+// Abilities: A13S (Mass Frost Armour ), Ubertip (Tooltip - Normal - Extended)
+{
+Creates a shield of frost around a target friendly unit. The shield adds 4 armor and slows melee units that attack it for 5 seconds. |nLasts 45 seconds.
+}
+
+STRING 21317
+// Abilities: A13S (Mass Frost Armour ), Tip (Tooltip - Normal)
+{
+Mass Frost Armor
+}
+
+STRING 21318
+// Abilities: A13S (Mass Frost Armour ), Name (Name)
+{
+Mass Frost Armour 
+}
+
+STRING 21319
+// Upgrades: Ropg (Pillage), Hotkey (Hotkey)
+{
+R
+}
+
+STRING 21320
+// Upgrades: Rews (Well Spring), Hotkey (Hotkey)
+{
+R
+}
+
+STRING 21321
+// Upgrades: R00N (Storm Hammers), Hotkey (Hotkey)
+{
+R
+}
+
+STRING 21322
+// Upgrades: R08T (Cannibalize), EditorSuffix (Editor Suffix)
+{
+(Scourge)
 }
 
