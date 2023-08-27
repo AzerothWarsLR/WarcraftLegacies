@@ -23881,7 +23881,7 @@ Train Trade Prince Guard
 }
 
 STRING 3981
-// Units: h02D (Geomancer), Casterupgradename (Caster Upgrade Names)
+// Units: uban (Banshee), Casterupgradename (Caster Upgrade Names)
 {
 Initiate, Adept, Master, Grandmaster
 }
@@ -32117,24 +32117,6 @@ STRING 5353
 // Abilities: AUdr (Dark Ritual), Tip (Tooltip - Normal)
 {
 Dark Ritual - [|cffffcc00Level 4|r]
-}
-
-STRING 5354
-// Abilities: AUdr (Dark Ritual), Ubertip (Tooltip - Normal - Extended)
-{
-Sacrifices a target friendly Undead unit to convert 33% of its hit points into mana for the Lich and 25% of its hit points into health for the Lich.
-}
-
-STRING 5355
-// Abilities: AUdr (Dark Ritual), Ubertip (Tooltip - Normal - Extended)
-{
-Sacrifices a target friendly Undead unit to convert 66% of its hit points into mana for the Lich and 50% of its hit points into health for the Lich.
-}
-
-STRING 5356
-// Abilities: AUdr (Dark Ritual), Ubertip (Tooltip - Normal - Extended)
-{
-Sacrifices a target friendly Undead unit to convert 100% of its hit points into mana for the Lich and 75% of its hit points into health for the Lich.
 }
 
 STRING 5357
@@ -68367,6 +68349,12 @@ STRING 11390
 Building - Troll Hut
 }
 
+STRING 11391
+// Units: uban (Banshee), Ubertip (Tooltip - Extended)
+{
+A risen Elf spirit enslaved to the Scourge.|n|cfff5962dAbilities:|R Curse|n|cfff5962dCan Learn:|R Anti-magic Shell, Freezing Shield, Possession|n|n|cffffcc00Attacks land and air units.|R
+}
+
 STRING 11392
 // Abilities: A0AS (Flame Shield), Hotkey (Hotkey - Normal)
 {
@@ -70090,9 +70078,9 @@ Z
 }
 
 STRING 11679
-// Abilities: A10W (Frost Bolt), EditorSuffix (Editor Suffix)
+// Units: uban (Banshee), Casterupgradetip (Caster Upgrade Tips)
 {
-(Lordaeron Mage, Tidesage)
+- Curse,- Curse|n- Anti-magic Shell,- Curse|n- Anti-magic Shell|n- Freezing Shield,- Curse|n- Anti-magic Shell|n- Freezing Shield|n- Possession
 }
 
 STRING 11680
@@ -78025,7 +78013,7 @@ R
 }
 
 STRING 13001
-// Abilities: A0UE (Dispel Magic), EditorSuffix (Editor Suffix)
+// Abilities: A0UE (Necromantic Cleansing), EditorSuffix (Editor Suffix)
 {
 (Scourge-Necro)
 }
@@ -82974,12 +82962,6 @@ STRING 13825
 X
 }
 
-STRING 13826
-// Upgrades: Ruba (Banshee Adept Training,Banshee Master Training), EditorSuffix (Editor Suffix)
-{
-(Red Research)
-}
-
 STRING 13827
 // Items: I00N (Summon Forsaken Acolyte), Hotkey (Hotkey)
 {
@@ -85003,9 +84985,9 @@ Increases Druid of the Talons' mana capacity, mana regeneration rate, hit points
 }
 
 STRING 14164
-// Units: unec (Necromancer), Ubertip (Tooltip - Extended)
+// Upgrades: Ruba (Banshee Adept Training,Banshee Master Training), EditorSuffix (Editor Suffix)
 {
-Practitioner of vile necrotic magic.|n|cfff5962dAbilities:|R Raise Dead|n|cfff5962dCan Learn:|R Unholy Frenzy, Soul Burn, Dispel Magic|n|n|cffffcc00Attacks land and air units.|R
+(Scourge Research)
 }
 
 STRING 14165
@@ -87781,7 +87763,7 @@ X
 }
 
 STRING 14627
-// Upgrades: Rowd (Witch Doctor Adept Training,Witch Doctor Master Training), Hotkey (Hotkey)
+// Upgrades: Ruba (Banshee Adept Training,Banshee Master Training), Hotkey (Hotkey)
 {
 X
 }
@@ -87877,7 +87859,7 @@ X
 }
 
 STRING 14643
-// Upgrades: Rovs (Envenomed Spears), Hotkey (Hotkey)
+// Upgrades: Rowd (Witch Doctor Adept Training,Witch Doctor Master Training), Hotkey (Hotkey)
 {
 X
 }
@@ -88087,7 +88069,7 @@ STRING 14677
 }
 
 STRING 14678
-// Upgrades: Rhst (Sorceress Adept Training,Sorceress Master Training), Hotkey (Hotkey)
+// Upgrades: Rovs (Envenomed Spears), Hotkey (Hotkey)
 {
 X
 }
@@ -88597,7 +88579,7 @@ STRING 14762
 }
 
 STRING 14763
-// Upgrades: Rhri (Long Rifles), Hotkey (Hotkey)
+// Upgrades: Rhst (Sorceress Adept Training,Sorceress Master Training), Hotkey (Hotkey)
 {
 X
 }
@@ -88693,7 +88675,7 @@ Allows the training of Pegasus Knights from the Aviary.
 }
 
 STRING 14779
-// Upgrades: Rhcd (Cloud), Hotkey (Hotkey)
+// Upgrades: Rhri (Long Rifles), Hotkey (Hotkey)
 {
 X
 }
@@ -88705,7 +88687,7 @@ rlev
 }
 
 STRING 14781
-// Upgrades: Reib (Improved Bows), Hotkey (Hotkey)
+// Upgrades: Rhcd (Cloud), Hotkey (Hotkey)
 {
 X
 }
@@ -88843,13 +88825,13 @@ Increases the Thornspeaker mana capacity, mana regeneration rate, attack damage 
 }
 
 STRING 14804
-// Upgrades: R06N (Freezing Breath), Hotkey (Hotkey)
+// Upgrades: Reib (Improved Bows), Hotkey (Hotkey)
 {
 X
 }
 
 STRING 14805
-// Upgrades: R06J (Defend), Hotkey (Hotkey)
+// Upgrades: R06N (Freezing Breath), Hotkey (Hotkey)
 {
 X
 }
@@ -88975,7 +88957,7 @@ Research Fortified Hulls
 }
 
 STRING 14826
-// Upgrades: R061 (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: R06J (Defend), Hotkey (Hotkey)
 {
 X
 }
@@ -89065,7 +89047,7 @@ rlev
 }
 
 STRING 14841
-// Upgrades: R05P (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
+// Upgrades: R061 (Magic Sentry), Hotkey (Hotkey)
 {
 X
 }
@@ -89461,7 +89443,7 @@ Empowers nearby friendly units, increasing their damage and armor for <A0M2,Dur1
 }
 
 STRING 14907
-// Upgrades: R04G (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: R05P (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
 {
 X
 }
@@ -89557,13 +89539,13 @@ Creates a shield that absorbs damage by using the hero's mana. |n|n|cffffcc00Lev
 }
 
 STRING 14923
-// Upgrades: R03W (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: R04G (Magic Sentry), Hotkey (Hotkey)
 {
 X
 }
 
 STRING 14924
-// Upgrades: R03E (Defend), Hotkey (Hotkey)
+// Upgrades: R03W (Magic Sentry), Hotkey (Hotkey)
 {
 X
 }
@@ -89617,7 +89599,7 @@ Heavy ranged amphibious unit with Heal, Dispel Magic and Binding Shackles. |n|n|
 }
 
 STRING 14933
-// Upgrades: R031 (Defend), Hotkey (Hotkey)
+// Upgrades: R03E (Defend), Hotkey (Hotkey)
 {
 X
 }
@@ -89695,7 +89677,7 @@ STRING 14945
 }
 
 STRING 14946
-// Upgrades: R02I (Shaman Adept Training,Shaman Master Training), Hotkey (Hotkey)
+// Upgrades: R031 (Defend), Hotkey (Hotkey)
 {
 X
 }
@@ -89791,7 +89773,7 @@ X
 }
 
 STRING 14962
-// Upgrades: R02E (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
+// Upgrades: R02I (Shaman Adept Training,Shaman Master Training), Hotkey (Hotkey)
 {
 X
 }
@@ -91026,7 +91008,7 @@ STRING 15174
 }
 
 STRING 15175
-// Upgrades: R02B (Control Magic), Hotkey (Hotkey)
+// Upgrades: R02E (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
 {
 X
 }
@@ -91140,7 +91122,7 @@ STRING 15193
 }
 
 STRING 15194
-// Upgrades: R028 (Banshee Adept Training,Banshee Master Training), Hotkey (Hotkey)
+// Upgrades: R02B (Control Magic), Hotkey (Hotkey)
 {
 X
 }
@@ -92156,7 +92138,7 @@ Charred Ancient
 }
 
 STRING 15363
-// Upgrades: R01S (Long Rifles), Hotkey (Hotkey)
+// Upgrades: R028 (Banshee Adept Training,Banshee Master Training), Hotkey (Hotkey)
 {
 X
 }
@@ -92348,7 +92330,7 @@ Improves the Ignore Pain ability, making it last 10 seconds, up from 5.
 }
 
 STRING 15395
-// Upgrades: R01P (Ensnare), Hotkey (Hotkey)
+// Upgrades: R01S (Long Rifles), Hotkey (Hotkey)
 {
 X
 }
@@ -92995,7 +92977,7 @@ Power Infusion 2
 }
 
 STRING 15503
-// Upgrades: R01I (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
+// Upgrades: R01P (Ensnare), Hotkey (Hotkey)
 {
 X
 }
@@ -93457,7 +93439,7 @@ Revive Lord Wizard
 }
 
 STRING 15580
-// Abilities: A0JL (Slow Poison), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A13W (Slow Poison), Ubertip (Tooltip - Normal - Extended)
 {
 A poison attack that deals <A0JL:aspo,DataA1> damage per second, and slows the target enemy's movement by <A0JL:aspo,DataB1,%>% and attack by <A0JL:aspo,DataC1,%>% for <A0JL:aspo,Dur1> seconds.
 }
@@ -93487,7 +93469,7 @@ A poison attack that deals <A0JL:aspo,DataA3> damage per second, and slows the t
 }
 
 STRING 15585
-// Abilities: A0JL (Slow Poison), Tip (Tooltip - Normal)
+// Abilities: A13W (Slow Poison), Tip (Tooltip - Normal)
 {
 Slow Poison - [|cffffcc00Level 1|r]
 }
@@ -93571,7 +93553,7 @@ Mana Flare - [|cffffcc00Level 1|r]
 }
 
 STRING 15599
-// Upgrades: R019 (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: R01I (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
 {
 X
 }
@@ -93769,7 +93751,7 @@ STRING 15631
 }
 
 STRING 15632
-// Upgrades: R018 (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: R019 (Magic Sentry), Hotkey (Hotkey)
 {
 X
 }
@@ -94507,7 +94489,7 @@ Void Exile
 }
 
 STRING 15755
-// Upgrades: R00Y (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: R018 (Magic Sentry), Hotkey (Hotkey)
 {
 X
 }
@@ -95485,7 +95467,7 @@ Boulder tossing siege weaponry.|n|n|cff99b4d1Can only build 6. |r|n|cffffcc00Att
 }
 
 STRING 15918
-// Upgrades: R00V (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
+// Upgrades: R00Y (Magic Sentry), Hotkey (Hotkey)
 {
 X
 }
@@ -97375,7 +97357,7 @@ Z
 }
 
 STRING 16233
-// Upgrades: R00S (Spirit Walker Adept Training,Spirit Walker Master Training), Hotkey (Hotkey)
+// Upgrades: R00V (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
 {
 X
 }
@@ -97423,7 +97405,7 @@ The hero progenerates Carrion Beetle from a target corpse to attack the hero's e
 }
 
 STRING 16241
-// Upgrades: R00R (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: R00S (Spirit Walker Adept Training,Spirit Walker Master Training), Hotkey (Hotkey)
 {
 X
 }
@@ -100435,7 +100417,7 @@ STRING 16742
 }
 
 STRING 16743
-// Upgrades: R00M (Shaman Adept Training,Shaman Master Training), Hotkey (Hotkey)
+// Upgrades: R00R (Magic Sentry), Hotkey (Hotkey)
 {
 X
 }
@@ -101041,13 +101023,13 @@ Increases nearby friendly units' movement speed by 15%. |nThis ability will stac
 }
 
 STRING 16844
-// Upgrades: R00H (Envenomed Spears), Hotkey (Hotkey)
+// Upgrades: R00M (Shaman Adept Training,Shaman Master Training), Hotkey (Hotkey)
 {
 X
 }
 
 STRING 16845
-// Upgrades: R00G (Flare), Hotkey (Hotkey)
+// Upgrades: R00H (Envenomed Spears), Hotkey (Hotkey)
 {
 X
 }
@@ -102535,7 +102517,7 @@ Summon Engineer
 }
 
 STRING 17093
-// Upgrades: R00C (Black Gunpowder,Refined Gunpowder,Imbued Gunpowder), Hotkey (Hotkey)
+// Upgrades: R00G (Flare), Hotkey (Hotkey)
 {
 X
 }
@@ -102559,19 +102541,19 @@ X
 }
 
 STRING 17097
-// Upgrades: R040 (Magic Sentry), Hotkey (Hotkey)
+// Upgrades: R00C (Black Gunpowder,Refined Gunpowder,Imbued Gunpowder), Hotkey (Hotkey)
 {
 X
 }
 
 STRING 17098
-// Upgrades: R047 (Marksmanship), Hotkey (Hotkey)
+// Upgrades: R040 (Magic Sentry), Hotkey (Hotkey)
 {
 X
 }
 
 STRING 17099
-// Upgrades: R015 (Marksmanship), Hotkey (Hotkey)
+// Upgrades: R047 (Marksmanship), Hotkey (Hotkey)
 {
 X
 }
@@ -105024,12 +105006,6 @@ STRING 17507
 (Forsaken 
 }
 
-STRING 17508
-// Abilities: A0UE (Dispel Magic), Ubertip (Tooltip - Normal - Extended)
-{
-Removes all buffs from units in a target area and deals <Adis,DataB1> damage to summoned units.|r
-}
-
 STRING 17509
 // Abilities: A0BR (Surge of Power), Researchubertip (Tooltip - Learn - Extended)
 {
@@ -105097,7 +105073,7 @@ STRING 17519
 }
 
 STRING 17520
-// Upgrades: R04P (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
+// Upgrades: R015 (Marksmanship), Hotkey (Hotkey)
 {
 X
 }
@@ -105259,7 +105235,7 @@ X
 }
 
 STRING 17547
-// Upgrades: R03P (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R04P (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
 {
 X
 }
@@ -105416,7 +105392,7 @@ Elemental Fire - [|cffffcc00Level 2|r]
 }
 
 STRING 17573
-// Upgrades: R05C (Sorceress Adept Training,Sorceress Master Training), Hotkey (Hotkey)
+// Upgrades: R03P (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 X
 }
@@ -105572,7 +105548,7 @@ Further increases the armor of all Naval Units.
 }
 
 STRING 17599
-// Upgrades: R05D (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
+// Upgrades: R05C (Sorceress Adept Training,Sorceress Master Training), Hotkey (Hotkey)
 {
 X
 }
@@ -107572,7 +107548,7 @@ Mystical Hero, adept at empowering your backline and dealing magic damage over t
 }
 
 STRING 17932
-// Upgrades: R05G (Druid of the Claw Adept Training,Druid of the Claw Master Training), Hotkey (Hotkey)
+// Upgrades: R05D (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
 {
 X
 }
@@ -107818,7 +107794,7 @@ Summon Water Elemental
 }
 
 STRING 17973
-// Upgrades: R06X (Shaman Adept Training,Shaman Master Training), Hotkey (Hotkey)
+// Upgrades: R05G (Druid of the Claw Adept Training,Druid of the Claw Master Training), Hotkey (Hotkey)
 {
 X
 }
@@ -109108,7 +109084,7 @@ Grants <A0WF,DataA1> bonus armor, <A0WF,DataB1> bonus hit points, <A0WF,DataC1> 
 }
 
 STRING 18188
-// Upgrades: R071 (Witch Doctor Adept Training,Witch Doctor Master Training), Hotkey (Hotkey)
+// Upgrades: R06X (Shaman Adept Training,Shaman Master Training), Hotkey (Hotkey)
 {
 X
 }
@@ -109456,7 +109432,7 @@ STRING 18245
 }
 
 STRING 18246
-// Upgrades: R07N (Necromancer Adept Training,Necromancer Master Training), Hotkey (Hotkey)
+// Upgrades: R071 (Witch Doctor Adept Training,Witch Doctor Master Training), Hotkey (Hotkey)
 {
 X
 }
@@ -110789,7 +110765,7 @@ Q
 }
 
 STRING 18468
-// Abilities: A0UE (Dispel Magic), Hotkey (Hotkey - Normal)
+// Abilities: A0UE (Necromantic Cleansing), Hotkey (Hotkey - Normal)
 {
 E
 }
@@ -111464,12 +111440,6 @@ STRING 18580
 // Units: ucry (Crypt Fiend), Ubertip (Tooltip - Extended)
 {
 Nerubian husk raised for the Scourge.|n|cfff5962dAbilities:|R Burrow|n|cfff5962dCan Learn:|R Web|n|n|cffffcc00Attacks land and air units.|r
-}
-
-STRING 18581
-// Units: uban (Banshee), Ubertip (Tooltip - Extended)
-{
-A risen Elf spirit enslaved to the Scourge.|n|cfff5962dAbilities:|R Curse|n|cfff5962dCan Learn:|R Anti-magic Shell, Possession|n|n|cffffcc00Attacks land and air units.|R
 }
 
 STRING 18582
@@ -113232,7 +113202,7 @@ Enhances the Pit Lord's chitinous armor with fel fire etchings, giving the Pit L
 }
 
 STRING 18875
-// Abilities: A0JL (Slow Poison), EditorSuffix (Editor Suffix)
+// Abilities: A13W (Slow Poison), EditorSuffix (Editor Suffix)
 {
  (Dryad, Deepseer)
 }
@@ -113478,7 +113448,7 @@ Summons <A0X4,DataA1> Fel Hounds with Mana Burn to attack the Hero's enemies. |n
 }
 
 STRING 18916
-// Upgrades: R078 (Spirit Walker Adept Training,Spirit Walker Master Training), Hotkey (Hotkey)
+// Upgrades: R07N (Necromancer Adept Training,Necromancer Master Training), Hotkey (Hotkey)
 {
 X
 }
@@ -114108,7 +114078,7 @@ You will start the game as normal playing the Twilight Hammer
 }
 
 STRING 19021
-// Upgrades: R08B (Long Rifles), Hotkey (Hotkey)
+// Upgrades: R078 (Spirit Walker Adept Training,Spirit Walker Master Training), Hotkey (Hotkey)
 {
 X
 }
@@ -122382,7 +122352,7 @@ Z
 }
 
 STRING 20400
-// Upgrades: R08F (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R08B (Long Rifles), Hotkey (Hotkey)
 {
 X
 }
@@ -124207,7 +124177,7 @@ STRING 20703
 }
 
 STRING 20704
-// Upgrades: R08O (Naga Siren Adept Training,Naga Siren Master Training), Hotkey (Hotkey)
+// Upgrades: R08F (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 X
 }
@@ -124225,7 +124195,7 @@ Q
 }
 
 STRING 20707
-// Upgrades: Rhlh (Improved Lumber Harvesting,Advanced Lumber Harvesting), Hotkey (Hotkey)
+// Abilities: A13V (Freezing Shield), Hotkey (Hotkey - Normal)
 {
 E
 }
@@ -124501,7 +124471,7 @@ Charge 1 mana per mana point used to a Divine Citadel directly next to the Arcan
 }
 
 STRING 20753
-// Upgrades: R08R (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R08O (Naga Siren Adept Training,Naga Siren Master Training), Hotkey (Hotkey)
 {
 X
 }
@@ -124609,7 +124579,7 @@ Goliathon
 }
 
 STRING 20771
-// Upgrades: R02V (Naga Siren Adept Training,Naga Siren Master Training), Hotkey (Hotkey)
+// Upgrades: R08R (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 X
 }
@@ -124669,7 +124639,7 @@ Towers of the Sunfury.|n|n|cffffcc00Attacks land and air units.|r
 }
 
 STRING 20781
-// Upgrades: Renb (Nature's Blessing), Hotkey (Hotkey)
+// Upgrades: Rhlh (Improved Lumber Harvesting,Advanced Lumber Harvesting), Hotkey (Hotkey)
 {
 E
 }
@@ -125125,19 +125095,19 @@ F
 }
 
 STRING 20857
-// Upgrades: R06K (Defend), Hotkey (Hotkey)
+// Upgrades: Renb (Nature's Blessing), Hotkey (Hotkey)
 {
 E
 }
 
 STRING 20858
-// Upgrades: R06G (Defend), Hotkey (Hotkey)
+// Upgrades: R06K (Defend), Hotkey (Hotkey)
 {
 E
 }
 
 STRING 20859
-// Upgrades: R06F (Defend), Hotkey (Hotkey)
+// Upgrades: R06G (Defend), Hotkey (Hotkey)
 {
 E
 }
@@ -125155,7 +125125,7 @@ W
 }
 
 STRING 20862
-// Upgrades: R064 (Nature's Blessing), Hotkey (Hotkey)
+// Upgrades: R06F (Defend), Hotkey (Hotkey)
 {
 E
 }
@@ -125179,7 +125149,7 @@ Dark art mage of the horde.|n|cfff5962dAbilities:|R Firebolt|n|cfff5962dCan Lear
 }
 
 STRING 20866
-// Upgrades: R03M (Defend), Hotkey (Hotkey)
+// Upgrades: R064 (Nature's Blessing), Hotkey (Hotkey)
 {
 E
 }
@@ -125527,7 +125497,7 @@ X
 }
 
 STRING 20924
-// Upgrades: R09G (Sorceress Adept Training,Sorceress Master Training), Hotkey (Hotkey)
+// Upgrades: R02V (Naga Siren Adept Training,Naga Siren Master Training), Hotkey (Hotkey)
 {
 X
 }
@@ -125539,7 +125509,7 @@ Salvation
 }
 
 STRING 20926
-// Upgrades: R02P (Backpack), Hotkey (Hotkey)
+// Upgrades: R03M (Defend), Hotkey (Hotkey)
 {
 E
 }
@@ -126145,7 +126115,7 @@ Train Bladesman
 }
 
 STRING 21027
-// Upgrades: R03O (Animal War Training), Hotkey (Hotkey)
+// Upgrades: R02P (Backpack), Hotkey (Hotkey)
 {
 E
 }
@@ -126457,13 +126427,13 @@ Well-versed sorceress in the arcane arts.|n|cfff5962dAbilities:|R Magic Missile|
 }
 
 STRING 21079
-// Units: h01I (Arcanist), Casterupgradename (Caster Upgrade Names)
+// Units: h02D (Geomancer), Casterupgradename (Caster Upgrade Names)
 {
 Initiate, Adept, Master, Grandmaster
 }
 
 STRING 21080
-// Units: o04O (Alchemist), Casterupgradename (Caster Upgrade Names)
+// Units: h01I (Arcanist), Casterupgradename (Caster Upgrade Names)
 {
 Initiate, Adept, Master, Grandmaster
 }
@@ -127063,9 +127033,9 @@ Increases Necromancers' mana capacity, mana regeneration rate, attack damage and
 }
 
 STRING 21180
-// Upgrades: Rune (Necromancer Adept Training,Necromancer Master Training), Ubertip (Tooltip - Extended)
+// Upgrades: Ruba (Banshee Adept Training,Banshee Master Training), Ubertip (Tooltip - Extended)
 {
-Increases Necromancers' mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Dispell.
+Increases Banshees' mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Freezing Shield.
 }
 
 STRING 21181
@@ -127825,13 +127795,13 @@ Gives a 35% chance that an attack will deal 90 damage to nearby units.
 }
 
 STRING 21307
-// Upgrades: R097 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R03O (Animal War Training), Hotkey (Hotkey)
 {
 E
 }
 
 STRING 21308
-// Upgrades: R086 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R097 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 E
 }
@@ -127978,5 +127948,191 @@ STRING 21332
 // Upgrades: R09N (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
 {
 Q
+}
+
+STRING 21333
+// Units: o04O (Alchemist), Casterupgradename (Caster Upgrade Names)
+{
+Initiate, Adept, Master, Grandmaster
+}
+
+STRING 21334
+// Abilities: Arpl (Essence of Blight), Ubertip (Tooltip - Normal - Extended)
+{
+Restores <Arpl,DataA1> hit points to a large number of nearby friendly units.
+}
+
+STRING 21335
+// Abilities: A10W (Frost Bolt), EditorSuffix (Editor Suffix)
+{
+(Lordaeron Mage, Tidesage, Banshee)
+}
+
+STRING 21336
+// Abilities: A0UE (Necromantic Cleansing), Tip (Tooltip - Normal)
+{
+Necromantic Cleansing
+}
+
+STRING 21337
+// Abilities: A0UE (Necromantic Cleansing), Name (Name)
+{
+Necromantic Cleansing
+}
+
+STRING 21338
+// Units: unec (Necromancer), Ubertip (Tooltip - Extended)
+{
+Practitioner of vile necrotic magic.|n|cfff5962dAbilities:|R Raise Dead|n|cfff5962dCan Learn:|R Unholy Frenzy, Soul Burn, Necromantic Cleansing|n|n|cffffcc00Attacks land and air units.|R
+}
+
+STRING 21339
+// Upgrades: Ruba (Banshee Adept Training,Banshee Master Training), Tip (Tooltip)
+{
+Research Banshee Grandmaster Training
+}
+
+STRING 21340
+// Abilities: A13V (Freezing Shield), Name (Name)
+{
+Freezing Shield
+}
+
+STRING 21343
+// Upgrades: Rune (Necromancer Adept Training,Necromancer Master Training), Ubertip (Tooltip - Extended)
+{
+Increases Necromancers' mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Necromantic Cleansing.
+}
+
+STRING 21344
+// Upgrades: R086 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+{
+E
+}
+
+STRING 21345
+// Abilities: A13V (Freezing Shield), EditorSuffix (Editor Suffix)
+{
+(Banshee)
+}
+
+STRING 21346
+// Abilities: A13V (Freezing Shield), Tip (Tooltip - Normal)
+{
+Freezing Shield
+}
+
+STRING 21347
+// Buffs/Effects: B00N (Freezing Shield), EditorSuffix (Editor Suffix)
+{
+(scourge- banshee)
+}
+
+STRING 21348
+// Buffs/Effects: B00N (Freezing Shield), EditorName (Name (Editor Only))
+{
+Freezing Shield
+}
+
+STRING 21349
+// Buffs/Effects: B00N (Freezing Shield), Buffubertip (Tooltip - Extended)
+{
+This unit has a Freezing Shield; nearby friendly and enemy units will take damage if they are next to this unit.
+}
+
+STRING 21350
+// Upgrades: Ruba (Banshee Adept Training,Banshee Master Training), Name (Name)
+{
+Banshee Grandmaster Training
+}
+
+STRING 21351
+// Upgrades: R09G (Sorceress Adept Training,Sorceress Master Training), Hotkey (Hotkey)
+{
+X
+}
+
+STRING 21352
+// Abilities: Aam2 (Anti-magic Shell), Ubertip (Tooltip - Normal - Extended)
+{
+Creates a barrier that stops <Ams3,DataC1> points of spell, summon, or magic damage from affecting a target unit. |nLasts <Aam2,Dur1> seconds.
+}
+
+STRING 21353
+// Abilities: AUdr (Dark Ritual), Ubertip (Tooltip - Normal - Extended)
+{
+Sacrifices a target friendly Undead unit to convert 35% of its hit points into mana for the Lich and 25% of its hit points into health for the Lich.
+}
+
+STRING 21354
+// Abilities: AUdr (Dark Ritual), Ubertip (Tooltip - Normal - Extended)
+{
+Sacrifices a target friendly Undead unit to convert 65% of its hit points into mana for the Lich and 50% of its hit points into health for the Lich.
+}
+
+STRING 21355
+// Abilities: AUdr (Dark Ritual), Ubertip (Tooltip - Normal - Extended)
+{
+Sacrifices a target friendly Undead unit to convert 90% of its hit points into mana for the Lich and 75% of its hit points into health for the Lich.
+}
+
+STRING 21356
+// Abilities: A0JL (Slow Poison), EditorSuffix (Editor Suffix)
+{
+ (Crypt Fiend)
+}
+
+STRING 21357
+// Abilities: A0JL (Slow Poison), Tip (Tooltip - Normal)
+{
+Slow Poison 
+}
+
+STRING 21358
+// Abilities: A0JL (Slow Poison), Ubertip (Tooltip - Normal - Extended)
+{
+A poison attack that deals <Aspo,DataA1> damage per second, and reduces an enemy units attack by <Aspo,DataC1,%>% for <Aspo,Dur1> seconds.
+}
+
+STRING 21359
+// Abilities: A0UE (Necromantic Cleansing), Ubertip (Tooltip - Normal - Extended)
+{
+Removes all buffs from units in a target area and deals <Adm2,DataB1> damage to summoned units.|r
+}
+
+STRING 21360
+// Abilities: A13V (Freezing Shield), Ubertip (Tooltip - Normal - Extended)
+{
+Forms a shield of ice around a target unit, dealing 20 damage per second to units around it. |nLasts 20 seconds. Lasts 10 seconds on heroes.
+}
+
+STRING 21361
+// Abilities: A13W (Slow Poison), Ubertip (Tooltip - Normal - Extended)
+{
+A poison attack that deals <A0JL:aspo,DataA2> damage per second, and slows the target enemy's movement by <A0JL:aspo,DataB2,%>% and attack by <A0JL:aspo,DataC2,%>% for <A0JL:aspo,Dur2> seconds.
+}
+
+STRING 21362
+// Abilities: A13W (Slow Poison), Tip (Tooltip - Normal)
+{
+Slow Poison - [|cffffcc00Level 2|r]
+}
+
+STRING 21363
+// Abilities: A13W (Slow Poison), Tip (Tooltip - Normal)
+{
+Slow Poison - [|cffffcc00Level 3|r]
+}
+
+STRING 21364
+// Abilities: A13W (Slow Poison), Ubertip (Tooltip - Normal - Extended)
+{
+A poison attack that deals <A0JL:aspo,DataA3> damage per second, and slows the target enemy's movement by <A0JL:aspo,DataB3,%>% and attack by <A0JL:aspo,DataC3,%>% for <A0JL:aspo,Dur3> seconds.
+}
+
+STRING 21365
+// Buffs/Effects: B00N (Freezing Shield), Bufftip (Tooltip)
+{
+Freezing Shield
 }
 
