@@ -23088,11 +23088,6 @@ STRING 3848
 Revive Envoy of Archimonde
 }
 
-STRING 3849
-{
-Druids, Draenei, Sentinels, Obs
-}
-
 STRING 3850
 // Units: Ubal (Envoy of Archimonde), Tip (Tooltip - Basic)
 {
@@ -32120,9 +32115,14 @@ Dark Ritual - [|cffffcc00Level 4|r]
 }
 
 STRING 5354
-// Upgrades: R015 (Marksmanship), effect1 (Effect 1)
+// Upgrades: Roen (Ensnare), effect1 (Effect 1)
 {
 rlev
+}
+
+STRING 5355
+{
+Druids, Draenei, Sentinels
 }
 
 STRING 5357
@@ -82771,7 +82771,7 @@ STRING 13792
 }
 
 STRING 13793
-// Upgrades: Roen (Ensnare), effect1 (Effect 1)
+// Upgrades: Rhme (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), effect2 (Effect 2)
 {
 rlev
 }
@@ -83263,7 +83263,7 @@ STRING 13875
 }
 
 STRING 13876
-// Upgrades: Rhme (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), effect2 (Effect 2)
+// Upgrades: Rhme (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), effect3 (Effect 3)
 {
 rlev
 }
@@ -83635,7 +83635,7 @@ Improves Abominations, Meat Wagons, Plague Titans, and Plaguelings by increasing
 }
 
 STRING 13938
-// Upgrades: Rhme (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), effect3 (Effect 3)
+// Upgrades: Rhme (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), effect4 (Effect 4)
 {
 rlev
 }
@@ -84055,19 +84055,19 @@ STRING 14007
 }
 
 STRING 14008
-// Upgrades: Rhme (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), effect4 (Effect 4)
-{
-rlev
-}
-
-STRING 14009
 // Upgrades: Rhlh (Improved Lumber Harvesting,Advanced Lumber Harvesting), effect1 (Effect 1)
 {
 rlev
 }
 
-STRING 14010
+STRING 14009
 // Upgrades: Renb (Nature's Blessing), effect3 (Effect 3)
+{
+rlev
+}
+
+STRING 14010
+// Upgrades: R06O (Magic Sentry), effect1 (Effect 1)
 {
 rlev
 }
@@ -84829,7 +84829,7 @@ STRING 14136
 }
 
 STRING 14137
-// Upgrades: R06O (Magic Sentry), effect1 (Effect 1)
+// Upgrades: R06N (Freezing Breath), effect1 (Effect 1)
 {
 rlev
 }
@@ -85105,7 +85105,7 @@ Research Revenants
 }
 
 STRING 14183
-// Upgrades: R06N (Freezing Breath), effect1 (Effect 1)
+// Upgrades: R06J (Defend), effect1 (Effect 1)
 {
 rlev
 }
@@ -85141,7 +85141,7 @@ Weapon Empowerement
 }
 
 STRING 14189
-// Upgrades: R06J (Defend), effect1 (Effect 1)
+// Upgrades: R06C (Chaos), effect1 (Effect 1)
 {
 rlev
 }
@@ -85267,7 +85267,7 @@ STRING 14209
 }
 
 STRING 14210
-// Upgrades: R06C (Chaos), effect1 (Effect 1)
+// Upgrades: R06B (Chaos), effect1 (Effect 1)
 {
 rlev
 }
@@ -85399,7 +85399,7 @@ Druids exists
 }
 
 STRING 14232
-// Upgrades: R06B (Chaos), effect1 (Effect 1)
+// Upgrades: R061 (Magic Sentry), effect1 (Effect 1)
 {
 rlev
 }
@@ -85411,7 +85411,7 @@ Kaboom level up
 }
 
 STRING 14234
-// Upgrades: R061 (Magic Sentry), effect1 (Effect 1)
+// Upgrades: R04V (Magic Sentry), effect1 (Effect 1)
 {
 rlev
 }
@@ -85525,7 +85525,7 @@ Replaces Abominations with Revenants, which have the Persistent Soul ability and
 }
 
 STRING 14253
-// Upgrades: R04V (Magic Sentry), effect1 (Effect 1)
+// Upgrades: R04G (Magic Sentry), effect1 (Effect 1)
 {
 rlev
 }
@@ -85981,7 +85981,7 @@ STRING 14328
 }
 
 STRING 14329
-// Upgrades: R04G (Magic Sentry), effect1 (Effect 1)
+// Upgrades: R03M (Defend), effect2 (Effect 2)
 {
 rlev
 }
@@ -86065,7 +86065,7 @@ Build Hunter Tower
 }
 
 STRING 14343
-// Upgrades: R03M (Defend), effect2 (Effect 2)
+// Upgrades: R03D (Defend), effect3 (Effect 3)
 {
 rlev
 }
@@ -86074,11 +86074,6 @@ STRING 14344
 // Abilities: A011 (Great Unholy Aura), Researchhotkey (Hotkey - Learn)
 {
 E
-}
-
-STRING 14345
-{
-Observer
 }
 
 STRING 14346
@@ -86646,7 +86641,7 @@ General research building.|n|cfff5962dResearches: |RForged Weaponry, Armor Plati
 }
 
 STRING 14440
-// Upgrades: R03D (Defend), effect3 (Effect 3)
+// Upgrades: R03D (Defend), effect4 (Effect 4)
 {
 rlev
 }
@@ -86688,7 +86683,7 @@ STRING 14446
 }
 
 STRING 14447
-// Upgrades: R03D (Defend), effect4 (Effect 4)
+// Upgrades: R02Z (Defend), effect1 (Effect 1)
 {
 rlev
 }
@@ -86952,7 +86947,7 @@ Resource harvesting center and producer of Twilight's Hammer enhancements. |n|cf
 }
 
 STRING 14491
-// Upgrades: R02Z (Defend), effect1 (Effect 1)
+// Upgrades: R02W (Defend), effect2 (Effect 2)
 {
 rlev
 }
@@ -87030,13 +87025,13 @@ rtma
 }
 
 STRING 14504
-// Upgrades: R02W (Defend), effect2 (Effect 2)
+// Upgrades: R02W (Defend), effect3 (Effect 3)
 {
 rlev
 }
 
 STRING 14505
-// Upgrades: R02W (Defend), effect3 (Effect 3)
+// Upgrades: R01X (Disease Cloud), effect1 (Effect 1)
 {
 rlev
 }
@@ -87072,13 +87067,13 @@ E
 }
 
 STRING 14511
-// Upgrades: R01X (Disease Cloud), effect1 (Effect 1)
+// Upgrades: R01R (Improved Bows), effect3 (Effect 3)
 {
 rlev
 }
 
 STRING 14512
-// Upgrades: R01R (Improved Bows), effect3 (Effect 3)
+// Upgrades: R01P (Ensnare), effect1 (Effect 1)
 {
 rlev
 }
@@ -87114,7 +87109,7 @@ Quest Completed: The Citadel
 }
 
 STRING 14518
-// Upgrades: R01P (Ensnare), effect1 (Effect 1)
+// Upgrades: R01J (Ensnare), effect1 (Effect 1)
 {
 rlev
 }
@@ -87156,13 +87151,13 @@ Monstrous melee unit.|n|cfff5962dAbilities:|R Charge, Cleaving Attack, Hardened 
 }
 
 STRING 14525
-// Upgrades: R01J (Ensnare), effect1 (Effect 1)
+// Upgrades: R01B (Defend), effect1 (Effect 1)
 {
 rlev
 }
 
 STRING 14526
-// Upgrades: R01B (Defend), effect1 (Effect 1)
+// Upgrades: R019 (Magic Sentry), effect1 (Effect 1)
 {
 rlev
 }
@@ -87204,7 +87199,7 @@ STRING 14532
 }
 
 STRING 14533
-// Upgrades: R019 (Magic Sentry), effect1 (Effect 1)
+// Upgrades: R018 (Magic Sentry), effect1 (Effect 1)
 {
 rlev
 }
@@ -87378,7 +87373,7 @@ Train Bombard
 }
 
 STRING 14562
-// Upgrades: R018 (Magic Sentry), effect1 (Effect 1)
+// Upgrades: R017 (Magic Sentry), effect1 (Effect 1)
 {
 rlev
 }
@@ -87426,13 +87421,13 @@ Increases damage dealt to enemy Boarding Vessels by 20.
 }
 
 STRING 14570
-// Upgrades: R017 (Magic Sentry), effect1 (Effect 1)
+// Upgrades: R013 (Mark of the Claw), effect1 (Effect 1)
 {
 rlev
 }
 
 STRING 14571
-// Upgrades: R013 (Mark of the Claw), effect1 (Effect 1)
+// Upgrades: R011 (Chaos), effect1 (Effect 1)
 {
 rlev
 }
@@ -87468,7 +87463,7 @@ Q
 }
 
 STRING 14577
-// Upgrades: R011 (Chaos), effect1 (Effect 1)
+// Upgrades: R010 (Control Magic), effect1 (Effect 1)
 {
 rlev
 }
@@ -87511,13 +87506,13 @@ Entrance
 }
 
 STRING 14584
-// Upgrades: R010 (Control Magic), effect1 (Effect 1)
+// Upgrades: R00Y (Magic Sentry), effect3 (Effect 3)
 {
 rlev
 }
 
 STRING 14585
-// Upgrades: R00Y (Magic Sentry), effect3 (Effect 3)
+// Upgrades: R00R (Magic Sentry), effect1 (Effect 1)
 {
 rlev
 }
@@ -87919,7 +87914,7 @@ STRING 14651
 }
 
 STRING 14652
-// Upgrades: R00R (Magic Sentry), effect1 (Effect 1)
+// Upgrades: R00O (Ensnare), effect1 (Effect 1)
 {
 rlev
 }
@@ -88435,7 +88430,7 @@ Q
 }
 
 STRING 14738
-// Upgrades: R00O (Ensnare), effect1 (Effect 1)
+// Upgrades: R00N (Storm Hammers), effect1 (Effect 1)
 {
 rlev
 }
@@ -88621,7 +88616,7 @@ rats
 }
 
 STRING 14769
-// Upgrades: R00N (Storm Hammers), effect1 (Effect 1)
+// Upgrades: R00A (Mark of the Claw), effect1 (Effect 1)
 {
 rlev
 }
@@ -88687,7 +88682,7 @@ X
 }
 
 STRING 14780
-// Upgrades: R00A (Mark of the Claw), effect1 (Effect 1)
+// Upgrades: R01U (Magic Sentry), effect1 (Effect 1)
 {
 rlev
 }
@@ -88795,7 +88790,7 @@ STRING 14797
 }
 
 STRING 14798
-// Upgrades: R01U (Magic Sentry), effect1 (Effect 1)
+// Upgrades: R035 (Chaos), effect1 (Effect 1)
 {
 rlev
 }
@@ -88999,7 +88994,7 @@ STRING 14831
 }
 
 STRING 14832
-// Upgrades: R035 (Chaos), effect1 (Effect 1)
+// Upgrades: R03L (Chaos), effect1 (Effect 1)
 {
 rlev
 }
@@ -89047,7 +89042,7 @@ STRING 14839
 }
 
 STRING 14840
-// Upgrades: R03L (Chaos), effect1 (Effect 1)
+// Upgrades: R03O (Animal War Training), effect1 (Effect 1)
 {
 rlev
 }
@@ -89125,7 +89120,7 @@ STRING 14852
 }
 
 STRING 14853
-// Upgrades: R03O (Animal War Training), effect1 (Effect 1)
+// Upgrades: R047 (Marksmanship), effect1 (Effect 1)
 {
 rlev
 }
@@ -127249,7 +127244,7 @@ Increases attack attack bursts temporary speed bonus to 250%
 }
 
 STRING 21215
-// Upgrades: R047 (Marksmanship), effect1 (Effect 1)
+// Upgrades: R048 (Marksmanship), effect1 (Effect 1)
 {
 rlev
 }
@@ -127351,7 +127346,7 @@ Research Airborne Toxins
 }
 
 STRING 21232
-// Upgrades: R048 (Marksmanship), effect1 (Effect 1)
+// Upgrades: R015 (Marksmanship), effect1 (Effect 1)
 {
 rlev
 }
