@@ -40,7 +40,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
       };
       SpellSystem.Register(massUnholyFrenzy);
 
-      var massFrostArmour = new MassAnySpell(Constants.ABILITY_A13R_MASS_FROST_ARMOR_SCOURGE)
+      var massFrostArmour2 = new MassAnySpell(Constants.ABILITY_A13R_MASS_FROST_ARMOR_SCOURGE)
       {
         DummyAbilityId = Constants.ABILITY_A13S_MASS_FROST_ARMOUR_SCOURGE_DUMMY,
         DummyAbilityOrderString = "frostarmoron",
@@ -48,7 +48,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
         CastFilter = CastFilters.IsTargetOrganicAndAlive,
         TargetType = SpellTargetType.Point
       };
-      SpellSystem.Register(massFrostArmour);
+      SpellSystem.Register(massFrostArmour2);
     }
   }
 }

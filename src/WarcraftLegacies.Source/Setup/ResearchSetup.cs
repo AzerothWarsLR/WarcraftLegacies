@@ -35,10 +35,6 @@ namespace WarcraftLegacies.Source.Setup
 
       ResearchManager.Register(new SunfuryWarrior(Constants.UPGRADE_R004_SUNFURY_TRAINING_QUEL_THALAS, 300, 300));
 
-      ResearchManager.RegisterIncompatibleSet(
-        new BasicResearch(Constants.UPGRADE_R01X_EPIDEMIC_SCOURGE, 150, 100),
-        new Revenants(Constants.UPGRADE_R08T_REVENANTS_SCOURGE, 150, 100));
-
       ResearchManager.Register(new PowerResearch(Constants.UPGRADE_R096_REMATERIALIZATION_LEGION, 150, 250,
         new Rematerialization(0.15f, new Point(20454.9f, -28873.6f), "Argus", Regions.MonolithNoBuild)
         {

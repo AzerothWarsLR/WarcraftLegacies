@@ -32119,6 +32119,12 @@ STRING 5353
 Dark Ritual - [|cffffcc00Level 4|r]
 }
 
+STRING 5354
+// Upgrades: R015 (Marksmanship), effect1 (Effect 1)
+{
+rlev
+}
+
 STRING 5357
 // Abilities: AUdr (Dark Ritual), Ubertip (Tooltip - Normal - Extended)
 {
@@ -87462,7 +87468,7 @@ Q
 }
 
 STRING 14577
-// Upgrades: R010 (Control Magic), effect1 (Effect 1)
+// Upgrades: R011 (Chaos), effect1 (Effect 1)
 {
 rlev
 }
@@ -87505,13 +87511,13 @@ Entrance
 }
 
 STRING 14584
-// Upgrades: R00Y (Magic Sentry), effect3 (Effect 3)
+// Upgrades: R010 (Control Magic), effect1 (Effect 1)
 {
 rlev
 }
 
 STRING 14585
-// Upgrades: R00R (Magic Sentry), effect1 (Effect 1)
+// Upgrades: R00Y (Magic Sentry), effect3 (Effect 3)
 {
 rlev
 }
@@ -87913,7 +87919,7 @@ STRING 14651
 }
 
 STRING 14652
-// Upgrades: R00O (Ensnare), effect1 (Effect 1)
+// Upgrades: R00R (Magic Sentry), effect1 (Effect 1)
 {
 rlev
 }
@@ -88429,7 +88435,7 @@ Q
 }
 
 STRING 14738
-// Upgrades: R00N (Storm Hammers), effect1 (Effect 1)
+// Upgrades: R00O (Ensnare), effect1 (Effect 1)
 {
 rlev
 }
@@ -88615,7 +88621,7 @@ rats
 }
 
 STRING 14769
-// Upgrades: R00A (Mark of the Claw), effect1 (Effect 1)
+// Upgrades: R00N (Storm Hammers), effect1 (Effect 1)
 {
 rlev
 }
@@ -88681,7 +88687,7 @@ X
 }
 
 STRING 14780
-// Upgrades: R01U (Magic Sentry), effect1 (Effect 1)
+// Upgrades: R00A (Mark of the Claw), effect1 (Effect 1)
 {
 rlev
 }
@@ -88789,7 +88795,7 @@ STRING 14797
 }
 
 STRING 14798
-// Upgrades: R035 (Chaos), effect1 (Effect 1)
+// Upgrades: R01U (Magic Sentry), effect1 (Effect 1)
 {
 rlev
 }
@@ -88993,7 +88999,7 @@ STRING 14831
 }
 
 STRING 14832
-// Upgrades: R03L (Chaos), effect1 (Effect 1)
+// Upgrades: R035 (Chaos), effect1 (Effect 1)
 {
 rlev
 }
@@ -89041,7 +89047,7 @@ STRING 14839
 }
 
 STRING 14840
-// Upgrades: R03O (Animal War Training), effect1 (Effect 1)
+// Upgrades: R03L (Chaos), effect1 (Effect 1)
 {
 rlev
 }
@@ -89119,7 +89125,7 @@ STRING 14852
 }
 
 STRING 14853
-// Upgrades: R047 (Marksmanship), effect1 (Effect 1)
+// Upgrades: R03O (Animal War Training), effect1 (Effect 1)
 {
 rlev
 }
@@ -127243,7 +127249,7 @@ Increases attack attack bursts temporary speed bonus to 250%
 }
 
 STRING 21215
-// Upgrades: R048 (Marksmanship), effect1 (Effect 1)
+// Upgrades: R047 (Marksmanship), effect1 (Effect 1)
 {
 rlev
 }
@@ -127345,7 +127351,7 @@ Research Airborne Toxins
 }
 
 STRING 21232
-// Upgrades: R015 (Marksmanship), effect1 (Effect 1)
+// Upgrades: R048 (Marksmanship), effect1 (Effect 1)
 {
 rlev
 }
