@@ -39,6 +39,16 @@ namespace WarcraftLegacies.Source.Setup.Spells
         TargetType = SpellTargetType.Point
       };
       SpellSystem.Register(massUnholyFrenzy);
+
+      var massFrostArmour = new MassAnySpell(Constants.ABILITY_A13R_MASS_FROST_ARMOR_SCOURGE)
+      {
+        DummyAbilityId = Constants.ABILITY_A13S_MASS_FROST_ARMOUR_SCOURGE_DUMMY,
+        DummyAbilityOrderString = "frostarmoron",
+        Radius = 250,
+        CastFilter = CastFilters.IsTargetOrganicAndAlive,
+        TargetType = SpellTargetType.Point
+      };
+      SpellSystem.Register(massFrostArmour);
     }
   }
 }
