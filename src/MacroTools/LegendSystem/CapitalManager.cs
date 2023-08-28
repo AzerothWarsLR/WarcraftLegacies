@@ -36,6 +36,11 @@ namespace MacroTools.LegendSystem
     }
     
     /// <summary>
+    ///   Whether or not the given unit is a <see cref="Capital" />.
+    /// </summary>
+    public static bool UnitIsCapital(unit unit) => ByUnit.ContainsKey(unit);
+    
+    /// <summary>
     /// Returns all registered <see cref="Capital"/>s.
     /// </summary>
     public static ReadOnlyCollection<Capital> GetAll() => AllCapitals.AsReadOnly();
