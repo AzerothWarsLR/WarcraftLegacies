@@ -30,8 +30,8 @@ namespace WarcraftLegacies.Source.Quests.Warsong
       _mannoroth = Mannoroth;
       _grom = grom;
     }
-    private bool IsPointValidForGrom(Point whichPoint) =>
-      !whichPoint.IsPathable(PATHING_TYPE_FLOATABILITY) && whichPoint.IsPathable(PATHING_TYPE_WALKABILITY);
+    //private bool IsPointValidForGrom(Point whichPoint) =>
+    //  !whichPoint.IsPathable(PATHING_TYPE_FLOATABILITY) && whichPoint.IsPathable(PATHING_TYPE_WALKABILITY);
 
     /// <inheritdoc/>
     protected override string RewardFlavour => "The Warsong has drunk the blood of Mannoroth. It will take Thrall 4 minutes to save Grom and purify the Warsong Clan orcs.";
