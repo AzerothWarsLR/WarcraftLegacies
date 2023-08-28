@@ -8,6 +8,7 @@ using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives;
 using MacroTools.QuestSystem;
 using MacroTools.ResearchSystems;
+using War3Api;
 using WCSharp.Events;
 using static War3Api.Common;
 
@@ -645,7 +646,7 @@ namespace MacroTools.FactionSystem
       }
     }
 
-    private void DistributeExperience(IEnumerable<player> playersToDistributeTo)
+    private void DistributeExperience(List<player?> playersToDistributeTo)
     {
       if (Player?.GetTeam() == null) return;
       foreach (var ally in playersToDistributeTo)
@@ -653,17 +654,18 @@ namespace MacroTools.FactionSystem
         var allyHeroes = CreateGroup().EnumUnitsOfPlayer(ally).EmptyToList()
           .FindAll(unit => IsUnitType(unit, UNIT_TYPE_HERO));
         foreach (var hero in allyHeroes)
-          AddHeroXP(hero, R2I(_xp / (Player.GetTeam().Size - 1) / allyHeroes.Count * ExperienceTransferMultiplier),
+          AddHeroXP(hero, R2I(_xp / (Player.GetTeam()!.Size - 1) / allyHeroes.Count * ExperienceTransferMultiplier),
             true);
       }
 
       _xp = 0;
     }
 
-    private void DistributeResources(List<player> playersToDistributeTo)
+    private void DistributeResources(List<player?> playersToDistributeTo)
     {
       foreach (var player in playersToDistributeTo)
       {
+        if (player == null) continue;
         player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, (int)(Gold / playersToDistributeTo.Count));
         player.AdjustPlayerState(PLAYER_STATE_RESOURCE_LUMBER, (int)(Lumber / playersToDistributeTo.Count));
       }
@@ -672,7 +674,7 @@ namespace MacroTools.FactionSystem
       Lumber = 0;
     }
 
-    private void DistributeUnits(IReadOnlyList<player> playersToDistributeTo)
+    private void DistributeUnits(IReadOnlyList<player?> playersToDistributeTo)
     {
       if (Player?.GetTeam() == null) return;
       var playerUnits = CreateGroup().EnumUnitsOfPlayer(Player).EmptyToList();
@@ -698,10 +700,13 @@ namespace MacroTools.FactionSystem
           continue;
         }
 
-        if (!IsUnitType(unit, UNIT_TYPE_STRUCTURE) && !loopUnitType.Meta)
+        if (!CapitalManager.UnitIsCapital(unit) && !ControlPointManager.Instance.UnitIsControlPoint(unit) && !loopUnitType.Meta)
         {
-          Gold += loopUnitType.GoldCost * RefundMultiplier;
-          Lumber += loopUnitType.LumberCost * RefundMultiplier;
+          if (!IsUnitType(unit, UNIT_TYPE_STRUCTURE))
+          {
+            Gold += loopUnitType.GoldCost * RefundMultiplier;
+            Lumber += loopUnitType.LumberCost * RefundMultiplier;
+          }
           unit
             .DropAllItems()
             .Remove();
@@ -721,26 +726,31 @@ namespace MacroTools.FactionSystem
     /// </summary>
     public void Leave()
     {
-      var eligiblePlayers = Player?
-        .GetTeam()?
-        .GetAllFactions()
-        .Where(x => x.ScoreStatus == ScoreStatus.Undefeated && x.Player != Player && Player != null)
-        .Select(x => x.Player)
-        .ToList();
-
-      if (eligiblePlayers != null && eligiblePlayers.Any() && GameTime.GetGameTime() > 60)
+      Player?.GetTeam()?.PlayersToDistribute.Enqueue(Player);
+      while (Player?.GetTeam()?.PlayersToDistribute.Count > 0 && !(bool)Player?.GetTeam()?.PrcessingDistributeQueue)
       {
-        DistributeUnits(eligiblePlayers);
-        DistributeResources(eligiblePlayers);
-        DistributeExperience(eligiblePlayers);
-        RemoveGoldMines();
+        if (Player != null) Player.GetTeam()!.PrcessingDistributeQueue = true;
+        var queueValue = Player?.GetTeam()?.PlayersToDistribute.Dequeue();
+        var eligiblePlayers = queueValue?
+          .GetTeam()?
+          .GetAllFactions()
+          .Where(x => x.ScoreStatus == ScoreStatus.Undefeated && x.Player != queueValue)
+          .Select(x => x.Player)
+          .ToList();
+        if (eligiblePlayers != null && eligiblePlayers.Any() && GameTime.GetGameTime() > 60)
+        {
+          queueValue?.GetFaction()?.DistributeUnits(eligiblePlayers);
+          queueValue?.GetFaction()?.DistributeResources(eligiblePlayers);
+          queueValue?.GetFaction()?.DistributeExperience(eligiblePlayers);
+          queueValue?.GetFaction()?.RemoveGoldMines();
+        }
+        else
+        {
+          queueValue?.GetFaction()?.RemoveGoldMines();
+          queueValue?.GetFaction()?.Obliterate();
+        }
       }
-      else
-      {
-        RemoveGoldMines();
-        Obliterate();
-      }
-
+      if (Player != null) Player.GetTeam()!.PrcessingDistributeQueue = false;
       LeftGame?.Invoke(this, this);
     }
 
