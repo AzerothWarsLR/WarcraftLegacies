@@ -11,6 +11,7 @@ using MacroTools.LegendSystem;
 using WarcraftLegacies.Source.Objectives;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
+using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 
 namespace WarcraftLegacies.Source.Quests.Draenei
 {
@@ -33,7 +34,8 @@ namespace WarcraftLegacies.Source.Quests.Draenei
       _dimensionalGenerator = dimensionalGenerator.Unit;
       Required = true;
       foreach (var quest in prerequisite)
-        AddObjective(new ObjectiveCompleteQuest(quest));   
+        AddObjective(new ObjectiveCompleteQuest(quest));
+      AddObjective(new ObjectiveTime(1200));
       AddObjective(new ObjectiveBuildInRect(questRect, "inside the Exodar", Constants.UNIT_O056_ARCANE_WELL_DRAENEI_FARM, 10));
       AddObjective(new ObjectiveControlLevel(
         ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N0BL_EXODAR_REGALIS_15GOLD_MIN), 20));
