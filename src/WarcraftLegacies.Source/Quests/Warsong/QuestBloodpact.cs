@@ -7,6 +7,7 @@ using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
 using System;
 using WarcraftLegacies.Source.Setup.FactionSetup;
+using WCSharp.Shared.Data;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Warsong
@@ -29,6 +30,8 @@ namespace WarcraftLegacies.Source.Quests.Warsong
       _mannoroth = Mannoroth;
       _grom = grom;
     }
+    private bool IsPointValidForGrom(Point whichPoint) =>
+      !whichPoint.IsPathable(PATHING_TYPE_FLOATABILITY) && whichPoint.IsPathable(PATHING_TYPE_WALKABILITY);
 
     /// <inheritdoc/>
     protected override string RewardFlavour => "The Warsong has drunk the blood of Mannoroth. It will take Thrall 4 minutes to save Grom and purify the Warsong Clan orcs.";
@@ -42,8 +45,7 @@ namespace WarcraftLegacies.Source.Quests.Warsong
     {
       var timerBloodpact = CreateTimer();
       _mannoroth.ForceCreate(completingFaction.Player, Regions.FountainUnlock.Center, 270);
-      _grom.UnitType = Constants.UNIT_OPGH_CORRUPTOR_OF_THE_WARSONG_CLAN_WARSONG_BLOODPACT ;
-
+      _grom.UnitType = Constants.UNIT_OPGH_CORRUPTOR_OF_THE_WARSONG_CLAN_WARSONG_BLOODPACT;
       TimerStart(timerBloodpact, 180, false, () =>
       {
         completingFaction.SetObjectLimit(Constants.UPGRADE_R09O_DRINK_THE_BLOOD_OF_MANNOROTH, -1);
@@ -54,6 +56,17 @@ namespace WarcraftLegacies.Source.Quests.Warsong
         _grom.UnitType = Constants.UNIT_OGRH_CHIEFTAIN_OF_THE_WARSONG_CLAN_WARSONG;
 
       });
+      // Grom Auto Revive towards end of bloodpact Uncomment if perma death becomes a thing again -Madsen
+      //var TimeRessGrom = CreateTimer();
+      //TimerStart(TimeRessGrom, 175, false, () =>
+      //{
+      //  Point randomgrompoint;
+      //  do
+      //  {
+      //    randomgrompoint = Regions.GromRandomPoint.GetRandomPoint();
+      //  } while (!IsPointValidForGrom(randomgrompoint));
+
+      //  ReviveHero(_grom.Unit, randomgrompoint.X, randomgrompoint.Y, true);
     }
   }
 }

@@ -539,6 +539,7 @@ gg_snd_DoorCloseRemix = nil
 gg_snd_DoorOpenRemix = nil
 gg_snd_NuclearLaunchDetected = nil
 gg_snd_IllidansTheme = ""
+gg_rct_GromRandomPoint = nil
 function InitGlobals()
 end
 
@@ -8396,6 +8397,7 @@ gg_rct_CenarionHoldUnlock = Rect(-18272.0, -14400.0, -15680.0, -12768.0)
 gg_rct_WindrunnerSpireUnlock = Rect(16416.0, 13888.0, 16640.0, 14176.0)
 gg_rct_ArthasRandomPoint = Rect(5664.0, 3520.0, 22304.0, 10048.0)
 gg_rct_HideUnitBottomLeft = Rect(-24128.0, -30848.0, -9024.0, -22688.0)
+gg_rct_GromRandomPoint = Rect(-9824.0, -3808.0, -8160.0, -1504.0)
 end
 
 function InitUpgrades_Player0()

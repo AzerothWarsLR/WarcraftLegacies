@@ -358,5 +358,6 @@ public static class Regions
 	public static Rectangle WindrunnerSpireUnlock { get; set; } = new Rectangle(16416f, 13888f, 16640f, 14176f);
 	public static Rectangle ArthasRandomPoint { get; set; } = new Rectangle(5664f, 3520f, 22304f, 10048f);
 	public static Rectangle HideUnitBottomLeft { get; set; } = new Rectangle(-24128f, -30848f, -9024f, -22688f);
+	public static Rectangle GromRandomPoint { get; set; } = new Rectangle(-9824f, -3808f, -8160f, -1504f);
 
 }
