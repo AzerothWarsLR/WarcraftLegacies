@@ -23088,6 +23088,12 @@ STRING 3848
 Revive Envoy of Archimonde
 }
 
+STRING 3849
+// Abilities: A13X (Tower Resitance), EditorSuffix (Editor Suffix)
+{
+(Control Point Tower)
+}
+
 STRING 3850
 // Units: Ubal (Envoy of Archimonde), Tip (Tooltip - Basic)
 {
@@ -32123,6 +32129,12 @@ rlev
 STRING 5355
 {
 Druids, Draenei, Sentinels
+}
+
+STRING 5356
+// Abilities: A13X (Tower Resitance), Name (Name)
+{
+Tower Resitance
 }
 
 STRING 5357
@@ -82968,6 +82980,12 @@ STRING 13825
 X
 }
 
+STRING 13826
+// Abilities: A13X (Tower Resitance), Ubertip (Tooltip - Normal - Extended)
+{
+Reduces the damage taken from Piercing attacks to <Aegr,DataA1,%>%,
+}
+
 STRING 13827
 // Items: I00N (Summon Forsaken Acolyte), Hotkey (Hotkey)
 {
@@ -86074,6 +86092,12 @@ STRING 14344
 // Abilities: A011 (Great Unholy Aura), Researchhotkey (Hotkey - Learn)
 {
 E
+}
+
+STRING 14345
+// Abilities: A13X (Tower Resitance), Tip (Tooltip - Normal)
+{
+Tower Resistance
 }
 
 STRING 14346
