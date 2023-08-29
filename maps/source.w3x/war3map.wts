@@ -23882,7 +23882,7 @@ Train Trade Prince Guard
 }
 
 STRING 3981
-// Units: uban (Banshee), Casterupgradename (Caster Upgrade Names)
+// Units: h02D (Geomancer), Casterupgradename (Caster Upgrade Names)
 {
 Initiate, Adept, Master, Grandmaster
 }
@@ -34151,6 +34151,12 @@ STRING 5692
 // Abilities: A0B9 (Fel Infused Skeleton), Tip (Tooltip - Normal)
 {
 Fel Infused Skeleton
+}
+
+STRING 5693
+// Units: uban (Banshee), Ubertip (Tooltip - Extended)
+{
+A risen Elf spirit enslaved to the Scourge.|n|cfff5962dAbilities:|R Curse|n|cfff5962dCan Learn:|R Anti-magic Shell, Possession|n|n|cffffcc00Attacks land and air units.|R
 }
 
 STRING 5694
@@ -68361,12 +68367,6 @@ STRING 11390
 Building - Troll Hut
 }
 
-STRING 11391
-// Units: uban (Banshee), Ubertip (Tooltip - Extended)
-{
-A risen Elf spirit enslaved to the Scourge.|n|cfff5962dAbilities:|R Curse|n|cfff5962dCan Learn:|R Anti-magic Shell, Freezing Shield, Possession|n|n|cffffcc00Attacks land and air units.|R
-}
-
 STRING 11392
 // Abilities: A0AS (Flame Shield), Hotkey (Hotkey - Normal)
 {
@@ -70089,12 +70089,6 @@ STRING 11678
 Z
 }
 
-STRING 11679
-// Units: uban (Banshee), Casterupgradetip (Caster Upgrade Tips)
-{
-- Curse,- Curse|n- Anti-magic Shell,- Curse|n- Anti-magic Shell|n- Freezing Shield,- Curse|n- Anti-magic Shell|n- Freezing Shield|n- Possession
-}
-
 STRING 11680
 // Abilities: A05V (Toggle Summoning), Unubertip (Tooltip - Turn Off - Extended)
 {
@@ -71265,6 +71259,12 @@ STRING 11874
 // Units: h07S (Guard Tower), Ubertip (Tooltip - Extended)
 {
 Archer filled tower defense.|n|cfff5962dUpgrades Into:|R Improved Guard Tower|n|n|cffffcc00Attacks land and air units.|r
+}
+
+STRING 11875
+// Upgrades: Ruba (Banshee Adept Training,Banshee Master Training), Ubertip (Tooltip - Extended)
+{
+Increases Banshees' mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Possession.
 }
 
 STRING 11876
@@ -126440,13 +126440,13 @@ Well-versed sorceress in the arcane arts.|n|cfff5962dAbilities:|R Magic Missile|
 }
 
 STRING 21079
-// Units: h02D (Geomancer), Casterupgradename (Caster Upgrade Names)
+// Units: h01I (Arcanist), Casterupgradename (Caster Upgrade Names)
 {
 Initiate, Adept, Master, Grandmaster
 }
 
 STRING 21080
-// Units: h01I (Arcanist), Casterupgradename (Caster Upgrade Names)
+// Units: o04O (Alchemist), Casterupgradename (Caster Upgrade Names)
 {
 Initiate, Adept, Master, Grandmaster
 }
@@ -127043,12 +127043,6 @@ STRING 21179
 // Upgrades: Rune (Necromancer Adept Training,Necromancer Master Training), Ubertip (Tooltip - Extended)
 {
 Increases Necromancers' mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Unholy Frenzy.
-}
-
-STRING 21180
-// Upgrades: Ruba (Banshee Adept Training,Banshee Master Training), Ubertip (Tooltip - Extended)
-{
-Increases Banshees' mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Freezing Shield.
 }
 
 STRING 21181
@@ -127961,12 +127955,6 @@ STRING 21332
 // Upgrades: R09N (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
 {
 Q
-}
-
-STRING 21333
-// Units: o04O (Alchemist), Casterupgradename (Caster Upgrade Names)
-{
-Initiate, Adept, Master, Grandmaster
 }
 
 STRING 21334
