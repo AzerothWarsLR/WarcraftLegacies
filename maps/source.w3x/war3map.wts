@@ -34153,12 +34153,6 @@ STRING 5692
 Fel Infused Skeleton
 }
 
-STRING 5693
-// Upgrades: Robf (Burning Oil), Ubertip (Tooltip - Extended)
-{
-Improves Fel Grunts, Crossbowmen and Bonecrushers by increasing their hit points by 15% and their hit point regeneration by 0.8.|n|n|cffffcc00Cannot be researched with Fel Infused Skeleton.|r
-}
-
 STRING 5694
 // Units: n00O (Skeletal Grunt), EditorSuffix (Name - Editor Suffix)
 {
@@ -71273,12 +71267,6 @@ STRING 11874
 Archer filled tower defense.|n|cfff5962dUpgrades Into:|R Improved Guard Tower|n|n|cffffcc00Attacks land and air units.|r
 }
 
-STRING 11875
-// Upgrades: R098 (Burning Oil), Ubertip (Tooltip - Extended)
-{
-Causes Fel Grunts to transform into Skeletal Grunts upon death, allowing them to continue fighting for 40 seconds.|n|n|cffffcc00Cannot be researched with Demonic Flux.|r
-}
-
 STRING 11876
 // Abilities: A04Z (Nether's Eye), Ubertip (Tooltip - Normal - Extended)
 {
@@ -83646,12 +83634,6 @@ STRING 13936
 Gives Dwarven Warriors, Thanes and Baelgun Flamebeard a <A02O,DataA1>% chance to reduce incoming damage by <A02O,DataC1>.
 }
 
-STRING 13937
-// Upgrades: R01X (Disease Cloud), Ubertip (Tooltip - Extended)
-{
-Improves Abominations, Meat Wagons, Plague Titans, and Plaguelings by increasing their movent speed by 35 and increasing Disease Cloud's duration by 30 seconds.|n|n|cffffcc00Cannot be researched with Revenants.|r
-}
-
 STRING 13938
 // Upgrades: Rhme (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), effect4 (Effect 4)
 {
@@ -85534,12 +85516,6 @@ STRING 14251
 // Abilities: A0N8 (Citadel Shield), Name (Name)
 {
 Citadel Shield
-}
-
-STRING 14252
-// Upgrades: R08T (Cannibalize), Ubertip (Tooltip - Extended)
-{
-Replaces Abominations with Revenants, which have the Persistent Soul ability and attack slightly faster.|n|n|cfff5962dPersistent Soul:|R When this unit dies, it reanimates the highest level nearby corpse for 40 seconds.|n|n|cffffcc00Cannot be researched with Epidemic.|r
 }
 
 STRING 14253
@@ -125797,6 +125773,18 @@ STRING 20967
 Gives a 25% chance for an attack to be absorbed reducing damage taken by 40 damage. Attacks cannot be reduced below 3 damage.
 }
 
+STRING 20968
+// Upgrades: Robf (Burning Oil), Ubertip (Tooltip - Extended)
+{
+Improves Fel Grunts, Crossbowmen and Bonecrushers by increasing their hit points by 15% and their hit point regeneration by 0.8.
+}
+
+STRING 20969
+// Upgrades: R01X (Disease Cloud), Ubertip (Tooltip - Extended)
+{
+Improves Abominations, Meat Wagons, Plague Titans, and Plaguelings by increasing their movent speed by 35 and increasing Disease Cloud's duration by 30 seconds.|n|n
+}
+
 STRING 20970
 // Abilities: A135 (Bloodlust), EditorSuffix (Editor Suffix)
 {
@@ -128225,5 +128213,17 @@ STRING 21374
 // Upgrades: R09W (Magic Sentry), EditorSuffix (Editor Suffix)
 {
 (Legion)
+}
+
+STRING 21375
+// Upgrades: R08T (Cannibalize), Ubertip (Tooltip - Extended)
+{
+Replaces Abominations with Revenants, which have the Persistent Soul ability and attack slightly faster.|n|n|cfff5962dPersistent Soul:|R When this unit dies, it reanimates the highest level nearby corpse for 40 seconds.|n|n|
+}
+
+STRING 21376
+// Upgrades: R098 (Burning Oil), Ubertip (Tooltip - Extended)
+{
+Causes Fel Grunts to transform into Skeletal Grunts upon death, allowing them to continue fighting for 40 seconds.|n|n
 }
 
