@@ -44,7 +44,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
       {
         DummyAbilityId = Constants.ABILITY_A13S_MASS_FROST_ARMOUR_SCOURGE_DUMMY,
         DummyAbilityOrderString = "frostarmor",
-        Radius = 250,
+        Radius = 200,
         CastFilter = CastFilters.IsTargetOrganicAndAlive,
         TargetType = SpellTargetType.Point
       };

@@ -5183,7 +5183,7 @@ Felsteel Plating
 }
 
 STRING 865
-// Abilities: A0I6 (Felsteel Plating), Tip (Tooltip - Normal)
+// Abilities: A12O (Felsteel Plating), Name (Name)
 {
 Felsteel Plating
 }
@@ -58657,7 +58657,7 @@ Gives a 25% chance for an attack to be absorbed reducing damage taken by 40 dama
 }
 
 STRING 9774
-// Abilities: A0I6 (Felsteel Plating), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A12O (Felsteel Plating), Ubertip (Tooltip - Normal - Extended)
 {
 Gives a 35% chance for an attack to be absorbed reducing damage taken by 40 damage. Attacks cannot be reduced below 3 damage.
 }
@@ -105031,6 +105031,12 @@ STRING 17507
 (Forsaken 
 }
 
+STRING 17508
+// Abilities: A0I6 (Felsteel Plating), Tip (Tooltip - Normal)
+{
+Lesser Felsteel Plating
+}
+
 STRING 17509
 // Abilities: A0BR (Surge of Power), Researchubertip (Tooltip - Learn - Extended)
 {
@@ -111465,6 +111471,12 @@ STRING 18580
 // Units: ucry (Crypt Fiend), Ubertip (Tooltip - Extended)
 {
 Nerubian husk raised for the Scourge.|n|cfff5962dAbilities:|R Burrow|n|cfff5962dCan Learn:|R Web|n|n|cffffcc00Attacks land and air units.|r
+}
+
+STRING 18581
+// Abilities: A0I6 (Felsteel Plating), Ubertip (Tooltip - Normal - Extended)
+{
+Gives a 10% chance for an attack to be absorbed reducing damage taken by 25 damage. Attacks cannot be reduced below 3 damage.
 }
 
 STRING 18582
@@ -125078,7 +125090,7 @@ High Astromancer
 }
 
 STRING 20850
-// Abilities: A12O (Felsteel Plating), Name (Name)
+// Abilities: A12O (Felsteel Plating), Tip (Tooltip - Normal)
 {
 Felsteel Plating
 }
@@ -125783,18 +125795,6 @@ STRING 20967
 // Abilities: A12O (Felsteel Plating), Ubertip (Tooltip - Normal - Extended)
 {
 Gives a 25% chance for an attack to be absorbed reducing damage taken by 40 damage. Attacks cannot be reduced below 3 damage.
-}
-
-STRING 20968
-// Abilities: A12O (Felsteel Plating), Ubertip (Tooltip - Normal - Extended)
-{
-Gives a 35% chance for an attack to be absorbed reducing damage taken by 40 damage. Attacks cannot be reduced below 3 damage.
-}
-
-STRING 20969
-// Abilities: A12O (Felsteel Plating), Tip (Tooltip - Normal)
-{
-Felsteel Plating
 }
 
 STRING 20970
@@ -128023,6 +128023,18 @@ STRING 21340
 Freezing Shield
 }
 
+STRING 21341
+// Upgrades: R09W (Magic Sentry), effect1 (Effect 1)
+{
+rlev
+}
+
+STRING 21342
+// Upgrades: R09W (Magic Sentry), EditorSuffix (Editor Suffix)
+{
+(Fel Horde)
+}
+
 STRING 21343
 // Upgrades: Rune (Necromancer Adept Training,Necromancer Master Training), Ubertip (Tooltip - Extended)
 {
@@ -128077,6 +128089,12 @@ STRING 21351
 X
 }
 
+STRING 21352
+// Upgrades: R09W (Magic Sentry), Hotkey (Hotkey)
+{
+X
+}
+
 STRING 21353
 // Abilities: AUdr (Dark Ritual), Ubertip (Tooltip - Normal - Extended)
 {
@@ -128111,6 +128129,12 @@ STRING 21358
 // Abilities: A0JL (Slow Poison), Ubertip (Tooltip - Normal - Extended)
 {
 A poison attack that deals <Aspo,DataA1> damage per second, and reduces an enemy units attack by <Aspo,DataC1,%>% for <Aspo,Dur1> seconds.
+}
+
+STRING 21359
+// Upgrades: R09W (Magic Sentry), Name (Name)
+{
+Felsteel Refining
 }
 
 STRING 21360
@@ -128159,5 +128183,47 @@ STRING 21367
 // Abilities: A0UE (Necromantic Cleansing), Ubertip (Tooltip - Normal - Extended)
 {
 Removes all buffs from units in a target area and deals 400 damage to summoned units.|r
+}
+
+STRING 21368
+// Upgrades: R09W (Magic Sentry), Tip (Tooltip)
+{
+Felsteel Refining
+}
+
+STRING 21369
+// Upgrades: R09W (Magic Sentry), Ubertip (Tooltip - Extended)
+{
+Improves Felsteel Plating, increasing its chance to reduce damage to 25%, and total damage reduced to 40.
+}
+
+STRING 21370
+// Upgrades: R09W (Magic Sentry), Name (Name)
+{
+Improved Greater Carrion Swarm
+}
+
+STRING 21371
+// Upgrades: R09W (Magic Sentry), Tip (Tooltip)
+{
+Improved Greater Carrion Swarm
+}
+
+STRING 21372
+// Upgrades: R09W (Magic Sentry), Ubertip (Tooltip - Extended)
+{
+Improves Dreadlords' Carrion Swarm by increasing its damage to 105 and max damage to 100. Also reduces the cooldown.
+}
+
+STRING 21373
+// Upgrades: R09W (Magic Sentry), Hotkey (Hotkey)
+{
+X
+}
+
+STRING 21374
+// Upgrades: R09W (Magic Sentry), EditorSuffix (Editor Suffix)
+{
+(Legion)
 }
 
