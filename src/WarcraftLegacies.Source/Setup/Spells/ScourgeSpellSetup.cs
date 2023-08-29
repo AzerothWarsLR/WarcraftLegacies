@@ -43,7 +43,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
       var massFrostArmour2 = new MassAnySpell(Constants.ABILITY_A13R_MASS_FROST_ARMOR_SCOURGE)
       {
         DummyAbilityId = Constants.ABILITY_A13S_MASS_FROST_ARMOUR_SCOURGE_DUMMY,
-        DummyAbilityOrderString = "frostarmoron",
+        DummyAbilityOrderString = "frostarmor",
         Radius = 250,
         CastFilter = CastFilters.IsTargetOrganicAndAlive,
         TargetType = SpellTargetType.Point

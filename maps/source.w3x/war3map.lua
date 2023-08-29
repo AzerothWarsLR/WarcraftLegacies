@@ -351,6 +351,7 @@ gg_rct_CenarionHoldUnlock = nil
 gg_rct_WindrunnerSpireUnlock = nil
 gg_rct_ArthasRandomPoint = nil
 gg_rct_HideUnitBottomLeft = nil
+gg_rct_GromRandomPoint = nil
 gg_snd_ArcaneObservatoryWhat1 = nil
 gg_snd_ArrangedTeamInvitation = nil
 gg_snd_ClanInvitation = nil
@@ -3639,7 +3640,7 @@ u = BlzCreateUnitWithSkin(p, FourCC("nrel"), -1856.7, 595.6, 328.908, FourCC("nr
 SetUnitAcquireRange(u, 200.0)
 u = BlzCreateUnitWithSkin(p, FourCC("oeye"), 11964.9, -18392.6, 8.370, FourCC("oeye"))
 SetUnitAcquireRange(u, 200.0)
-u = BlzCreateUnitWithSkin(p, FourCC("ncen"), -18673.5, -3830.0, 356.770, FourCC("ncen"))
+u = BlzCreateUnitWithSkin(p, FourCC("ncen"), -18679.2, -3878.7, 356.770, FourCC("ncen"))
 SetUnitAcquireRange(u, 200.0)
 IssueImmediateOrder(u, "")
 u = BlzCreateUnitWithSkin(p, FourCC("nmrm"), 11108.3, 2051.6, 302.375, FourCC("nmrm"))
@@ -6824,6 +6825,7 @@ u = BlzCreateUnitWithSkin(p, FourCC("h039"), 8384.0, -1152.0, 270.000, FourCC("h
 u = BlzCreateUnitWithSkin(p, FourCC("n07P"), -7360.0, 384.0, 270.000, FourCC("n07P"))
 u = BlzCreateUnitWithSkin(p, FourCC("ncb7"), 8320.0, -10368.0, 270.000, FourCC("ncb7"))
 u = BlzCreateUnitWithSkin(p, FourCC("ncb6"), 8256.0, -11968.0, 270.000, FourCC("ncb6"))
+u = BlzCreateUnitWithSkin(p, FourCC("o048"), -11392.0, -14016.0, 270.000, FourCC("o048"))
 u = BlzCreateUnitWithSkin(p, FourCC("h039"), 4288.0, 832.0, 270.000, FourCC("h039"))
 u = BlzCreateUnitWithSkin(p, FourCC("o00V"), -3008.0, -15552.0, 216.315, FourCC("o00V"))
 u = BlzCreateUnitWithSkin(p, FourCC("ncb0"), 16064.0, 12032.0, 270.000, FourCC("ncb0"))
@@ -6840,6 +6842,7 @@ u = BlzCreateUnitWithSkin(p, FourCC("e00L"), -15808.0, 2368.0, 270.000, FourCC("
 u = BlzCreateUnitWithSkin(p, FourCC("n06M"), -15488.0, 1920.0, 270.000, FourCC("n06M"))
 u = BlzCreateUnitWithSkin(p, FourCC("edob"), -16064.0, 1472.0, 270.000, FourCC("edob"))
 u = BlzCreateUnitWithSkin(p, FourCC("h063"), -7232.0, -8576.0, 270.000, FourCC("h063"))
+u = BlzCreateUnitWithSkin(p, FourCC("o048"), -10880.0, -13504.0, 270.000, FourCC("o048"))
 u = BlzCreateUnitWithSkin(p, FourCC("h063"), -7808.0, -8704.0, 270.000, FourCC("h063"))
 u = BlzCreateUnitWithSkin(p, FourCC("h07O"), 3680.0, -5152.0, 270.000, FourCC("h07O"))
 u = BlzCreateUnitWithSkin(p, FourCC("h063"), -6784.0, -9088.0, 270.000, FourCC("h063"))
@@ -6884,6 +6887,8 @@ u = BlzCreateUnitWithSkin(p, FourCC("etrp"), -14016.0, 4288.0, 270.000, FourCC("
 u = BlzCreateUnitWithSkin(p, FourCC("emow"), -15104.0, 2816.0, 270.000, FourCC("emow"))
 u = BlzCreateUnitWithSkin(p, FourCC("eaow"), -17856.0, -13504.0, 270.000, FourCC("eaow"))
 u = BlzCreateUnitWithSkin(p, FourCC("h0AH"), -1632.0, -28640.0, 270.000, FourCC("h0AH"))
+u = BlzCreateUnitWithSkin(p, FourCC("o048"), -11264.0, -12864.0, 270.000, FourCC("o048"))
+u = BlzCreateUnitWithSkin(p, FourCC("o048"), -11776.0, -13056.0, 270.000, FourCC("o048"))
 u = BlzCreateUnitWithSkin(p, FourCC("hbla"), 11232.0, 10720.0, 270.000, FourCC("hbla"))
 u = BlzCreateUnitWithSkin(p, FourCC("h094"), 12032.0, 11200.0, 270.000, FourCC("h094"))
 u = BlzCreateUnitWithSkin(p, FourCC("o002"), -15232.0, -4672.0, 270.000, FourCC("o002"))
@@ -7231,7 +7236,7 @@ u = BlzCreateUnitWithSkin(p, FourCC("h01R"), 4832.0, -1952.0, 270.000, FourCC("h
 u = BlzCreateUnitWithSkin(p, FourCC("h0C0"), -10752.0, -27008.0, 270.000, FourCC("h0C0"))
 u = BlzCreateUnitWithSkin(p, FourCC("n0D8"), -11712.0, -27136.0, 270.000, FourCC("n0D8"))
 u = BlzCreateUnitWithSkin(p, FourCC("o058"), -18080.0, -3680.0, 270.000, FourCC("o058"))
-u = BlzCreateUnitWithSkin(p, FourCC("o02P"), -18656.0, -3552.0, 270.000, FourCC("o02P"))
+u = BlzCreateUnitWithSkin(p, FourCC("o02P"), -18848.0, -3616.0, 270.000, FourCC("o02P"))
 u = BlzCreateUnitWithSkin(p, FourCC("o055"), -19264.0, -4032.0, 270.000, FourCC("o055"))
 u = BlzCreateUnitWithSkin(p, FourCC("u01Q"), -18304.0, -4480.0, 270.000, FourCC("u01Q"))
 u = BlzCreateUnitWithSkin(p, FourCC("u01Q"), -18816.0, -4096.0, 270.000, FourCC("u01Q"))
@@ -8396,6 +8401,7 @@ gg_rct_CenarionHoldUnlock = Rect(-18272.0, -14400.0, -15680.0, -12768.0)
 gg_rct_WindrunnerSpireUnlock = Rect(16416.0, 13888.0, 16640.0, 14176.0)
 gg_rct_ArthasRandomPoint = Rect(5664.0, 3520.0, 22304.0, 10048.0)
 gg_rct_HideUnitBottomLeft = Rect(-24128.0, -30848.0, -9024.0, -22688.0)
+gg_rct_GromRandomPoint = Rect(-9824.0, -3808.0, -8160.0, -1504.0)
 end
 
 function InitUpgrades_Player0()
