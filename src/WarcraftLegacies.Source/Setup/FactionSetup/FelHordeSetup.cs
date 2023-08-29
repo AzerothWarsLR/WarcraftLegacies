@@ -53,7 +53,7 @@ The Alliance is gathering outside the Dark Portal to stop you, so prepare to for
       FelHorde.ModObjectLimit(FourCC("nchg"), Faction.UNLIMITED); //Fel Orc Grunt
       FelHorde.ModObjectLimit(FourCC("nchr"), Faction.UNLIMITED); //Fel Orc Raider
       FelHorde.ModObjectLimit(FourCC("ncpn"), Faction.UNLIMITED); //Fel Orc Peon
-      FelHorde.ModObjectLimit(FourCC("owar"), Faction.UNLIMITED); //Horde Cavarly
+      FelHorde.ModObjectLimit(FourCC("owar"), 12); //Horde Cavarly
       FelHorde.ModObjectLimit(FourCC("o01L"), 6); //Executioner
       FelHorde.ModObjectLimit(FourCC("o01O"), 8); //Demolisher
       FelHorde.ModObjectLimit(FourCC("u018"), 10); //Eye of Grillok

@@ -64,6 +64,11 @@ namespace MacroTools.ControlPointSystem
     public int RegenerationAbility { get; init; }
 
     /// <summary>
+    /// This ability can be used to give a <see cref="ControlPoint"/> hit point regeneration
+    /// </summary>
+    public int PiercingdamageAbility { get; init; }
+
+    /// <summary>
     /// Determines the settings for the <see cref="ControlPoint.Defender"/> units that defend <see cref="ControlPoint"/>s.
     /// </summary>
     public ControlLevelSettings ControlLevelSettings { get; init; } = new();
@@ -145,15 +150,17 @@ namespace MacroTools.ControlPointSystem
         .SetMaximumHitpoints(StartingMaxHitPoints)
         .AddAbility(IncreaseControlLevelAbilityTypeId)
         .SetLifePercent(100)
-        .SetArmorType(1);
+        .SetArmorType(7);
       RegisterIncome(controlPoint);
       RegisterDamageTrigger(controlPoint);
       RegisterOwnershipChangeTrigger(controlPoint);
       RegisterControlLevelChangeTrigger(controlPoint);
       RegisterControlLevelGrowthOverTime(controlPoint);
       ConfigureControlPointStats(controlPoint, true);
+      controlPoint.Unit.AddAbility(PiercingdamageAbility);
       if (controlPoint.Unit.OwningPlayer() != Player(PLAYER_NEUTRAL_AGGRESSIVE))
         controlPoint.Unit.AddAbility(RegenerationAbility);
+
     }
 
     private static void RegisterIncome(ControlPoint controlPoint)
@@ -203,6 +210,7 @@ namespace MacroTools.ControlPointSystem
             newOwner.BaseIncome += controlPoint.Value;
             controlPoint.Unit
               .AddAbility(RegenerationAbility)
+              .AddAbility(PiercingdamageAbility)
               .SetLifePercent(100);
             controlPoint.ControlLevel = 0;
             controlPoint.SignalOwnershipChange(new ControlPointOwnerChangeEventArgs(controlPoint, GetChangingUnitPrevOwner()));

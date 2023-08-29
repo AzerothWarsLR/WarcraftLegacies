@@ -1,7 +1,8 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives.FactionBased;
+using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
 using WCSharp.Shared.Data;
@@ -20,6 +21,7 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
     {
       var objectiveAnyUnitInRect = new ObjectiveAnyUnitInRect(Regions.Stromgarde, "Stromgarde", true);
       AddObjective(objectiveAnyUnitInRect);
+      AddObjective(new ObjectiveTime(900));
       AddObjective(new ObjectiveSelfExists());
       ResearchId = Constants.UPGRADE_R01M_QUEST_COMPLETED_STROMGARDE_STORMWIND;
       foreach (var unit in CreateGroup().EnumUnitsInRect(rescueRect).EmptyToList())

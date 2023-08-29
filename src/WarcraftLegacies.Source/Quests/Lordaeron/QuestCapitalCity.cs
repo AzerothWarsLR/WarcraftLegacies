@@ -50,10 +50,10 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
 
     /// <inheritdoc/>
     protected override string RewardFlavour =>
-      "The Capital City of Lordaeron has been literated.";
+      "The Capital City of Lordaeron has joined Arthas.";
 
     /// <inheritdoc/>
-    protected override string RewardDescription => $"Gain control of all units in the Capital City, and acquire the {RewardPowerName} Power";
+    protected override string RewardDescription => $"Gain control of all units in the Capital City, Gain Uther, and acquire the {RewardPowerName} Power";
 
     /// <inheritdoc/>
     protected override void OnFail(Faction completingFaction)
@@ -72,8 +72,16 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
       
       completingFaction.AddPower(rewardPower);
       completingFaction.Player?.DisplayPowerAcquired(rewardPower);
-      
-      completingFaction.Player?.RescueGroup(_rescueUnits);
+
+      if (_uther.Unit == null)
+      {
+        _uther.ForceCreate(completingFaction.Player, Regions.King_Arthas_crown.Center,
+          90);
+        _uther.Unit?
+          .SetLevel(5, false);
+      }
+
+        completingFaction.Player?.RescueGroup(_rescueUnits);
       SetUnitInvulnerable(_unitToMakeInvulnerable, true);
       if (GetLocalPlayer() == completingFaction.Player)
         PlayThematicMusic("war3mapImported\\CapitalCity.mp3");

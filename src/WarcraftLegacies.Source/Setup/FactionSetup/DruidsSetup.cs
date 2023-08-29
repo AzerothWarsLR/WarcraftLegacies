@@ -90,8 +90,10 @@ Gather your forces and strike before the Horde can organize their efforts."
       Druids.ModObjectLimit(FourCC("R048"), Faction.UNLIMITED); //Deadly Poison
       Druids.ModObjectLimit(FourCC("R008"), Faction.UNLIMITED); //Improved Natures FuryR015
       Druids.ModObjectLimit(FourCC("R015"), Constants.UPGRADE_R015_IMPROVED_MANA_FLARE_DRUIDS);
+      Druids.ModObjectLimit(Constants.UPGRADE_R09V_STORM_CROW_FORM_DRUIDS, Faction.UNLIMITED);
 
       Druids.SetObjectLevel(Constants.UPGRADE_REWS_WELL_SPRING, 1);
+    
       
       Druids.AddGoldMine(preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-9200, 10742)));
       

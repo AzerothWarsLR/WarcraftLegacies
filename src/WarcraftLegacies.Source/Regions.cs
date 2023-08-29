@@ -33,7 +33,7 @@ public static class Regions
 	public static Rectangle Fenris_ships { get; set; } = new Rectangle(5760f, 4960f, 13024f, 8128f);
 	public static Rectangle Fjord { get; set; } = new Rectangle(1536f, 13408f, 8192f, 20320f);
 	public static Rectangle Gilneas { get; set; } = new Rectangle(2848f, -3264f, 9760f, 2624f);
-	public static Rectangle Gilneas_Canals { get; set; } = new Rectangle(5568f, -1408f, 8800f, 2656f);
+	public static Rectangle Gilneas_Canals { get; set; } = new Rectangle(6080f, -1376f, 8800f, 2656f);
 	public static Rectangle Gnomergan { get; set; } = new Rectangle(7296f, -6528f, 8672f, -4960f);
 	public static Rectangle Grim_Batol { get; set; } = new Rectangle(16000f, -4192f, 18336f, -2048f);
 	public static Rectangle Grim_Batol_Tunnel_Entrance { get; set; } = new Rectangle(16480f, -2944f, 16672f, -2784f);
@@ -258,7 +258,7 @@ public static class Regions
 	public static Rectangle GilneasUnlock6 { get; set; } = new Rectangle(6080f, -928f, 8672f, 1696f);
 	public static Rectangle GilneasUnlock1 { get; set; } = new Rectangle(8288f, -2368f, 9824f, -832f);
 	public static Rectangle GilneasUnlock2 { get; set; } = new Rectangle(6624f, -3264f, 8032f, -2400f);
-	public static Rectangle GilneasUnlock3 { get; set; } = new Rectangle(3968f, 416f, 5376f, 2656f);
+	public static Rectangle GilneasUnlock3 { get; set; } = new Rectangle(3968f, 416f, 5408f, 2656f);
 	public static Rectangle GilneasUnlock4 { get; set; } = new Rectangle(3392f, -2656f, 5504f, -320f);
 	public static Rectangle GilneasUnlock5 { get; set; } = new Rectangle(6432f, 2112f, 7456f, 2816f);
 	public static Rectangle TwilightUnlock { get; set; } = new Rectangle(18592f, -6848f, 19456f, -6048f);
@@ -357,5 +357,7 @@ public static class Regions
 	public static Rectangle CenarionHoldUnlock { get; set; } = new Rectangle(-18272f, -14400f, -15680f, -12768f);
 	public static Rectangle WindrunnerSpireUnlock { get; set; } = new Rectangle(16416f, 13888f, 16640f, 14176f);
 	public static Rectangle ArthasRandomPoint { get; set; } = new Rectangle(5664f, 3520f, 22304f, 10048f);
+	public static Rectangle HideUnitBottomLeft { get; set; } = new Rectangle(-24128f, -30848f, -9024f, -22688f);
+	public static Rectangle GromRandomPoint { get; set; } = new Rectangle(-9824f, -3808f, -8160f, -1504f);
 
 }
