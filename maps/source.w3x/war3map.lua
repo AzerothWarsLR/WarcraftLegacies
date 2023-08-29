@@ -269,7 +269,6 @@ gg_rct_IllidanStartingPosition = nil
 gg_rct_ArtifactDummyInstance = nil
 gg_rct_Shadowforge_City = nil
 gg_rct_BlackrockUnlock = nil
-gg_rct_BloodElfSecondChanceSpawn = nil
 gg_rct_CaerDarrow = nil
 gg_rct_TombOfSargerasInteriorA = nil
 gg_rct_TombOfSargerasInteriorB = nil
@@ -352,6 +351,7 @@ gg_rct_WindrunnerSpireUnlock = nil
 gg_rct_ArthasRandomPoint = nil
 gg_rct_HideUnitBottomLeft = nil
 gg_rct_GromRandomPoint = nil
+gg_rct_BloodElfSecondChanceSpawn = nil
 gg_snd_ArcaneObservatoryWhat1 = nil
 gg_snd_ArrangedTeamInvitation = nil
 gg_snd_ClanInvitation = nil
@@ -6019,7 +6019,6 @@ u = BlzCreateUnitWithSkin(p, FourCC("ostr"), 13408.0, -20640.0, 118.522, FourCC(
 u = BlzCreateUnitWithSkin(p, FourCC("oalt"), 13024.0, -20384.0, 270.000, FourCC("oalt"))
 u = BlzCreateUnitWithSkin(p, FourCC("ovln"), 14240.0, -19424.0, 114.992, FourCC("ovln"))
 u = BlzCreateUnitWithSkin(p, FourCC("h004"), 13888.0, -19008.0, 210.310, FourCC("h004"))
-u = BlzCreateUnitWithSkin(p, FourCC("n003"), 15808.0, 5440.0, 270.000, FourCC("n003"))
 u = BlzCreateUnitWithSkin(p, FourCC("h07W"), 4256.0, -6112.0, 270.000, FourCC("h07W"))
 u = BlzCreateUnitWithSkin(p, FourCC("n00I"), 5376.0, -30080.0, 270.000, FourCC("n00I"))
 u = BlzCreateUnitWithSkin(p, FourCC("nnfm"), 12800.0, -21440.0, 270.000, FourCC("nnfm"))
@@ -6486,7 +6485,6 @@ u = BlzCreateUnitWithSkin(p, FourCC("o044"), -11456.0, -12480.0, 270.000, FourCC
 u = BlzCreateUnitWithSkin(p, FourCC("o03U"), -1728.0, -5632.0, 270.000, FourCC("o03U"))
 u = BlzCreateUnitWithSkin(p, FourCC("n032"), 224.0, 6304.0, 270.000, FourCC("n032"))
 u = BlzCreateUnitWithSkin(p, FourCC("h03Q"), 7104.0, -64.0, 270.000, FourCC("h03Q"))
-u = BlzCreateUnitWithSkin(p, FourCC("h05C"), 16096.0, 5536.0, 203.339, FourCC("h05C"))
 u = BlzCreateUnitWithSkin(p, FourCC("nbt2"), -15360.0, -3968.0, 270.000, FourCC("nbt2"))
 u = BlzCreateUnitWithSkin(p, FourCC("o06B"), 21632.0, -2816.0, 270.000, FourCC("o06B"))
 u = BlzCreateUnitWithSkin(p, FourCC("o068"), 21600.0, -3744.0, 270.000, FourCC("o068"))
@@ -7494,7 +7492,7 @@ u = BlzCreateUnitWithSkin(p, FourCC("h08X"), -975.5, -5892.1, 292.706, FourCC("h
 u = BlzCreateUnitWithSkin(p, FourCC("o04O"), -1404.4, -5779.0, 328.490, FourCC("o04O"))
 u = BlzCreateUnitWithSkin(p, FourCC("h08Y"), -1302.2, -5852.5, 126.127, FourCC("h08Y"))
 u = BlzCreateUnitWithSkin(p, FourCC("nvil"), 12148.8, 2405.1, 255.032, FourCC("nvil"))
-u = BlzCreateUnitWithSkin(p, FourCC("nhea"), 15925.2, 5592.3, 213.440, FourCC("nhea"))
+u = BlzCreateUnitWithSkin(p, FourCC("nhea"), 17409.6, 6537.5, 213.440, FourCC("nhea"))
 SetUnitState(u, UNIT_STATE_MANA, 100)
 SetUnitAcquireRange(u, 200.0)
 u = BlzCreateUnitWithSkin(p, FourCC("n0CT"), -17166.1, 14783.2, 244.321, FourCC("n0CT"))
@@ -7547,7 +7545,7 @@ u = BlzCreateUnitWithSkin(p, FourCC("n058"), 12727.3, -11451.9, 59.555, FourCC("
 u = BlzCreateUnitWithSkin(p, FourCC("n058"), 12865.8, -11569.0, 61.786, FourCC("n058"))
 u = BlzCreateUnitWithSkin(p, FourCC("nogn"), -8229.6, -868.6, 158.573, FourCC("nogn"))
 u = BlzCreateUnitWithSkin(p, FourCC("n058"), 12800.2, -11518.3, 60.764, FourCC("n058"))
-u = BlzCreateUnitWithSkin(p, FourCC("nhea"), 16240.9, 5556.2, 260.711, FourCC("nhea"))
+u = BlzCreateUnitWithSkin(p, FourCC("nhea"), 17809.6, 6488.4, 260.711, FourCC("nhea"))
 SetUnitState(u, UNIT_STATE_MANA, 100)
 SetUnitAcquireRange(u, 200.0)
 u = BlzCreateUnitWithSkin(p, FourCC("n058"), 12948.8, -11639.0, 63.106, FourCC("n058"))
@@ -7584,7 +7582,7 @@ u = BlzCreateUnitWithSkin(p, FourCC("h00A"), 10734.3, -13984.7, 241.021, FourCC(
 u = BlzCreateUnitWithSkin(p, FourCC("h00A"), 9183.1, -14055.2, 241.021, FourCC("h00A"))
 u = BlzCreateUnitWithSkin(p, FourCC("n093"), 10319.9, -12948.8, 266.614, FourCC("n093"))
 SetUnitState(u, UNIT_STATE_MANA, 200)
-u = BlzCreateUnitWithSkin(p, FourCC("hhes"), 16027.2, 5401.9, 263.529, FourCC("hhes"))
+u = BlzCreateUnitWithSkin(p, FourCC("hhes"), 17558.1, 6556.4, 263.529, FourCC("hhes"))
 SetUnitAcquireRange(u, 200.0)
 u = BlzCreateUnitWithSkin(p, FourCC("otbk"), -9517.8, -864.8, 141.640, FourCC("otbk"))
 u = BlzCreateUnitWithSkin(p, FourCC("n099"), -340.7, -6002.0, 127.066, FourCC("n099"))
@@ -7638,7 +7636,7 @@ u = BlzCreateUnitWithSkin(p, FourCC("nvil"), 8061.5, 11766.2, 238.620, FourCC("n
 u = BlzCreateUnitWithSkin(p, FourCC("U02C"), -19283.7, -29004.0, 270.000, FourCC("U02C"))
 SetUnitColor(u, ConvertPlayerColor(16))
 u = BlzCreateUnitWithSkin(p, FourCC("u01K"), 4115.5, 23169.0, 101.627, FourCC("u01K"))
-u = BlzCreateUnitWithSkin(p, FourCC("hhes"), 16118.4, 5389.3, 263.529, FourCC("hhes"))
+u = BlzCreateUnitWithSkin(p, FourCC("hhes"), 17700.7, 6543.0, 263.529, FourCC("hhes"))
 SetUnitAcquireRange(u, 200.0)
 u = BlzCreateUnitWithSkin(p, FourCC("nvl2"), 8000.3, 9413.9, 154.351, FourCC("nvl2"))
 u = BlzCreateUnitWithSkin(p, FourCC("nvlw"), 6762.5, 9860.7, 318.286, FourCC("nvlw"))
@@ -8134,7 +8132,7 @@ gg_rct_Dark_Portal_Exit_3 = Rect(4768.0, -26272.0, 5152.0, -25888.0)
 gg_rct_Dark_Portal_Entrance_2 = Rect(16544.0, -19840.0, 16960.0, -19520.0)
 gg_rct_Dark_Portal_Entrance_3 = Rect(17376.0, -19936.0, 17792.0, -19616.0)
 gg_rct_Chen = Rect(-10592.0, -5568.0, -10144.0, -5024.0)
-gg_rct_QuelDanil_Lodge = Rect(15616.0, 5088.0, 16416.0, 5888.0)
+gg_rct_QuelDanil_Lodge = Rect(17056.0, 6080.0, 17920.0, 6944.0)
 gg_rct_Andrassil = Rect(4992.0, 18400.0, 5440.0, 18816.0)
 gg_rct_VaultoftheWardens = Rect(-2432.0, 3840.0, -2112.0, 4160.0)
 gg_rct_Theramore = Rect(-8480.0, -10304.0, -6016.0, -7776.0)
@@ -8319,7 +8317,6 @@ gg_rct_IllidanStartingPosition = Rect(-640.0, 5152.0, 1536.0, 6720.0)
 gg_rct_ArtifactDummyInstance = Rect(19584.0, 23232.0, 22688.0, 24800.0)
 gg_rct_Shadowforge_City = Rect(11488.0, -9728.0, 13248.0, -8320.0)
 gg_rct_BlackrockUnlock = Rect(11840.0, -12224.0, 13632.0, -10208.0)
-gg_rct_BloodElfSecondChanceSpawn = Rect(10432.0, 3520.0, 10816.0, 3936.0)
 gg_rct_CaerDarrow = Rect(13952.0, 6208.0, 15648.0, 8064.0)
 gg_rct_TombOfSargerasInteriorA = Rect(-832.0, 10144.0, 704.0, 11168.0)
 gg_rct_TombOfSargerasInteriorB = Rect(-1632.0, 9152.0, 64.0, 10176.0)
@@ -8402,6 +8399,7 @@ gg_rct_WindrunnerSpireUnlock = Rect(16416.0, 13888.0, 16640.0, 14176.0)
 gg_rct_ArthasRandomPoint = Rect(5664.0, 3520.0, 22304.0, 10048.0)
 gg_rct_HideUnitBottomLeft = Rect(-24128.0, -30848.0, -9024.0, -22688.0)
 gg_rct_GromRandomPoint = Rect(-9824.0, -3808.0, -8160.0, -1504.0)
+gg_rct_BloodElfSecondChanceSpawn = Rect(17376.0, 6144.0, 17760.0, 6560.0)
 end
 
 function InitUpgrades_Player0()
