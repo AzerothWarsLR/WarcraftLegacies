@@ -54,7 +54,7 @@ namespace Launcher.Services
         mapBuilder.AddFiles(_compilerSettings.SharedAssetsPath);
 
       foreach (var additionalFileDirectory in additionalFileDirectories)
-        mapBuilder.AddFiles(additionalFileDirectory.Path, additionalFileDirectory.SearchPattern ?? "*");
+        mapBuilder.AddFiles(additionalFileDirectory.Path, additionalFileDirectory.SearchPattern ?? "*", SearchOption.AllDirectories);
 
       var archiveCreateOptions = new MpqArchiveCreateOptions
       {
