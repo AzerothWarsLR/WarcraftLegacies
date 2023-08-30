@@ -118,7 +118,7 @@ namespace Launcher.Services
         ? Directory.EnumerateFiles(importsDirectory, "*", AllDirectories).Select(x => new PathData
         {
           AbsolutePath = x,
-          RelativePath = Path.GetRelativePath(mapDataRootDirectory, x)
+          RelativePath = Path.GetRelativePath(importsDirectory, x)
         }).ToList()
         : new List<PathData>();
       
