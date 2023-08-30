@@ -62,7 +62,7 @@ namespace Launcher.Extensions
       if (map.UnitObjectData != null) Write(destinationRootDirectory, UnitObjectData.MapFileName, map.UnitObjectData);
       if (map.UpgradeObjectData != null) Write(destinationRootDirectory, UpgradeObjectData.MapFileName, map.UpgradeObjectData);
       if (map.CustomTextTriggers != null) Write(destinationRootDirectory, MapCustomTextTriggers.FileName, map.CustomTextTriggers);
-      if (map.TriggerStrings != null) Write(destinationRootDirectory, TriggerStrings.MapFileName, map.TriggerStrings.ToString());
+      if (map.TriggerStrings != null) Write(destinationRootDirectory, TriggerStrings.MapFileName, map.TriggerStrings);
       if (map.Doodads != null) Write(destinationRootDirectory, MapDoodads.FileName, map.Doodads);
       if (map.Units != null) Write(destinationRootDirectory, MapUnits.FileName, map.Units);
       if (map.Triggers != null) Write(destinationRootDirectory, MapTriggers.FileName, map.Triggers);
@@ -85,6 +85,14 @@ namespace Launcher.Extensions
         Directory.CreateDirectory(Path.GetDirectoryName(destinationPath));
         File.Copy(file.AbsolutePath, Path.Combine(destinationRootDirectory, file.RelativePath), true);
       }
+    }
+
+    private static void Write(string rootFolderPath, string subFolderPath, TriggerStrings triggerStrings)
+    {
+      var path = Path.Combine(rootFolderPath, subFolderPath);
+      using var stream = File.Open(path, FileMode.Create);
+      using var writer = new StreamWriter(stream, Encoding.UTF8, leaveOpen: false);
+      writer.WriteTriggerStrings(triggerStrings);
     }
 
     private static void Write(string rootFolderPath, string subFolderPath, string rawText)
