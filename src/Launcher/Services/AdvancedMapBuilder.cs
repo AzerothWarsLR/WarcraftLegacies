@@ -43,14 +43,7 @@ namespace Launcher.Services
     /// <summary>
     /// Builds a Warcraft 3 map based on the provided inputs and saves it to the file system.
     /// </summary>
-    /// <param name="mapBuilder">An in-progress <see cref="MapBuilder"/>, which will be supplemented and used to build the map.</param>
-    /// <param name="mapName">What to call the resulting map file.</param>
-    /// <param name="sourceCodeProjectFolderPath">C# code in this directory will be transpiled to Lua and included in the map.</param>
-    /// <param name="launch">Whether or not to launch the map after building.</param>
-    /// <param name="outputDirectory">Where the final map will be saved to.</param>
-    /// <param name="backupDirectory">Any overwritten maps will be moved to this directory instead of being deleted.</param>
-    public void BuildAndSave(MapBuilder mapBuilder, string mapName, string? sourceCodeProjectFolderPath, bool launch,
-      string outputDirectory, string? backupDirectory)
+    public void BuildAndSave(MapBuilder mapBuilder, AdvancedMapBuilderOptions options)
     {
       Directory.CreateDirectory(_compilerSettings.ArtifactsPath);
       
@@ -58,12 +51,12 @@ namespace Launcher.Services
       Directory.CreateDirectory(_compilerSettings.SharedAssetsPath);
       mapBuilder.AddFiles(_compilerSettings.SharedAssetsPath);
       ConfigureControlPointData(map);
-      if (launch)
+      if (options.Launch)
         SetTestPlayerSlot(map, _compilerSettings.TestingPlayerSlot);
       SetMapTitles(map, _mapSettings.Version);
 
-      if (sourceCodeProjectFolderPath != null)
-        AddCSharpCode(map, sourceCodeProjectFolderPath, _compilerSettings);
+      if (options.SourceCodeProjectFolderPath != null)
+        AddCSharpCode(map, options.SourceCodeProjectFolderPath, _compilerSettings);
 
       // Build w3x file
       var archiveCreateOptions = new MpqArchiveCreateOptions
@@ -75,19 +68,19 @@ namespace Launcher.Services
 
       //Todo: there should be a better way to determine whether or not we want the version number.
       //Probably just a command parameter.
-      var mapFilePath = sourceCodeProjectFolderPath != null
-        ? $"{Path.Combine(outputDirectory, mapName)}{_mapSettings.Version}.w3x"
-        : $"{Path.Combine(outputDirectory, mapName)}.w3x";
+      var mapFilePath = options.SourceCodeProjectFolderPath != null
+        ? $"{Path.Combine(options.OutputDirectory, options.MapName)}{_mapSettings.Version}.w3x"
+        : $"{Path.Combine(options.OutputDirectory, options.MapName)}.w3x";
 
-      if (File.Exists(mapFilePath) && backupDirectory != null)
+      if (File.Exists(mapFilePath) && options.BackupDirectory != null)
       {
-        Directory.CreateDirectory(backupDirectory);
+        Directory.CreateDirectory(options.BackupDirectory);
         var backupName = $"{Path.GetFileNameWithoutExtension(mapFilePath)}-{DateTime.Now:yyyyMMdd_HHmmss}.w3x";
-        File.Copy(mapFilePath, Path.Combine(backupDirectory, backupName));
+        File.Copy(mapFilePath, Path.Combine(options.BackupDirectory, backupName));
       }
 
       mapBuilder.Build(mapFilePath, archiveCreateOptions);
-      if (launch)
+      if (options.Launch)
         LaunchGame(_compilerSettings.Warcraft3ExecutablePath, mapFilePath);
     }
 

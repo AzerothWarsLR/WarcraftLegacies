@@ -61,7 +61,15 @@ namespace Launcher.Commands
       var mapBuilderFromMapData = conversionService.Convert(mapDataDirectory);
       
       new AdvancedMapBuilder(compilerSettings, mapSettings)
-        .BuildAndSave(mapBuilderFromMapData, mapName, sourceCodeFolderPath, launch, outputDirectory, backupDirectory);
+        .BuildAndSave(mapBuilderFromMapData, new AdvancedMapBuilderOptions
+        {
+          MapName = mapName,
+          MapOutputType = MapOutputType.File,
+          OutputDirectory = outputDirectory,
+          SourceCodeProjectFolderPath = sourceCodeFolderPath,
+          Launch = launch,
+          BackupDirectory = backupDirectory
+        });
     }
   }
 }
