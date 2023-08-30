@@ -1,6 +1,6 @@
 {
   "FormatVersion": 31,
-  "MapVersion": 28249,
+  "MapVersion": 28295,
   "EditorVersion": 6115,
   "GameVersion": "1.36.0.20257",
   "MapName": "Warcraft Legacies 3.6.0",
@@ -221,18 +221,6 @@
       "EnemyHighPriorityFlags": {}
     },
     {
-      "Id": 21,
-      "Controller": 1,
-      "Race": 1,
-      "Flags": 1,
-      "Name": "TRIGSTR_14345",
-      "StartPosition": {},
-      "AllyLowPriorityFlags": {},
-      "AllyHighPriorityFlags": {},
-      "EnemyLowPriorityFlags": {},
-      "EnemyHighPriorityFlags": {}
-    },
-    {
       "Id": 22,
       "Controller": 1,
       "Race": 1,
@@ -281,7 +269,7 @@
     {
       "Flags": 11,
       "Players": {},
-      "Name": "TRIGSTR_3849"
+      "Name": "TRIGSTR_5355"
     },
     {
       "Players": {},

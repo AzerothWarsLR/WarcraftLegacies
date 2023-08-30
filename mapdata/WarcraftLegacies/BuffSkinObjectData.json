@@ -7893,7 +7893,7 @@
         {
           "Id": 1718840934,
           "Type": 3,
-          "Value": "TRIGSTR_2878"
+          "Value": "TRIGSTR_3441"
         },
         {
           "Id": 1952543846,
@@ -10045,7 +10045,7 @@
         {
           "Id": 1718840934,
           "Type": 3,
-          "Value": "TRIGSTR_3441"
+          "Value": "TRIGSTR_3470"
         },
         {
           "Id": 1953653094,
@@ -11267,7 +11267,7 @@
         {
           "Id": 1718840934,
           "Type": 3,
-          "Value": "TRIGSTR_3470"
+          "Value": "TRIGSTR_3715"
         },
         {
           "Id": 1953653094,
@@ -12391,6 +12391,35 @@
           "Id": 1953653094,
           "Type": 3,
           "Value": "ReplaceableTextures\\CommandButtons\\BTNPossession.blp"
+        }
+      ]
+    },
+    {
+      "OldId": 1634096450,
+      "NewId": 1311780930,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1835101798,
+          "Type": 3,
+          "Value": "TRIGSTR_21348"
+        },
+        {
+          "Id": 1718840934,
+          "Type": 3,
+          "Value": "TRIGSTR_21347"
+        },
+        {
+          "Id": 1885959270,
+          "Type": 3,
+          "Value": "TRIGSTR_21365"
+        },
+        {
+          "Id": 1700951398,
+          "Type": 3,
+          "Value": "TRIGSTR_21349"
         }
       ]
     }

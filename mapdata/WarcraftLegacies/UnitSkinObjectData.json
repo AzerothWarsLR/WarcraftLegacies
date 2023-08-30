@@ -646,7 +646,7 @@
         {
           "Id": 1651864693,
           "Type": 3,
-          "Value": "TRIGSTR_14164"
+          "Value": "TRIGSTR_21338"
         },
         {
           "Id": 1953850229,
@@ -1289,7 +1289,7 @@
         {
           "Id": 1651864693,
           "Type": 3,
-          "Value": "TRIGSTR_18581"
+          "Value": "TRIGSTR_5693"
         }
       ]
     },
@@ -1501,7 +1501,7 @@
         {
           "Id": 1651864693,
           "Type": 3,
-          "Value": "TRIGSTR_15519"
+          "Value": "TRIGSTR_21292"
         }
       ]
     },
@@ -19953,7 +19953,7 @@
         {
           "Id": 1868786037,
           "Type": 3,
-          "Value": "ReplaceableTextures\\CommandButtons\\BTNTichondrius.blp"
+          "Value": "ReplaceableTextures\\CommandButtons\\BTNHeroDreadLordB.blp"
         },
         {
           "Id": 1885430133,
@@ -88882,7 +88882,7 @@
         {
           "Id": 1835101813,
           "Type": 3,
-          "Value": "TRIGSTR_2375"
+          "Value": "TRIGSTR_7915"
         },
         {
           "Id": 1868786037,
@@ -91272,7 +91272,7 @@
         {
           "Id": 1651864693,
           "Type": 3,
-          "Value": "TRIGSTR_11391"
+          "Value": "TRIGSTR_21323"
         },
         {
           "Id": 1684960117,
@@ -95014,6 +95014,191 @@
           "Id": 1718840949,
           "Type": 3,
           "Value": "TRIGSTR_21237"
+        }
+      ]
+    },
+    {
+      "OldId": 1919906926,
+      "NewId": 1379086446,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1633907573,
+          "Type": 1,
+          "Value": 2
+        },
+        {
+          "Id": 1835101813,
+          "Type": 3,
+          "Value": "TRIGSTR_7917"
+        },
+        {
+          "Id": 1868786037,
+          "Type": 3,
+          "Value": "ReplaceableTextures\\CommandButtons\\BTNNetherShield.blp"
+        },
+        {
+          "Id": 1818520949,
+          "Type": 3,
+          "Value": "war3mapImported\\Dalaran Shield.mdl"
+        },
+        {
+          "Id": 1651270517,
+          "Value": 130
+        },
+        {
+          "Id": 1735156597,
+          "Value": 130
+        },
+        {
+          "Id": 1919705973,
+          "Value": 130
+        }
+      ]
+    },
+    {
+      "OldId": 1919906926,
+      "NewId": 1095053422,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1633907573,
+          "Type": 1,
+          "Value": 2
+        },
+        {
+          "Id": 1835101813,
+          "Type": 3,
+          "Value": "TRIGSTR_7918"
+        },
+        {
+          "Id": 1868786037,
+          "Type": 3,
+          "Value": "ReplaceableTextures\\CommandButtons\\BTNNetherShield.blp"
+        },
+        {
+          "Id": 1818520949,
+          "Type": 3,
+          "Value": "war3mapImported\\Dalaran Shield.mdl"
+        },
+        {
+          "Id": 1651270517,
+          "Value": 130
+        },
+        {
+          "Id": 1735156597,
+          "Value": 130
+        },
+        {
+          "Id": 1919705973,
+          "Value": 130
+        }
+      ]
+    },
+    {
+      "OldId": 1752458088,
+      "NewId": 1279471720,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1868786037,
+          "Type": 3,
+          "Value": "ReplaceableTextures\\CommandButtons\\BTNFootman.blp"
+        },
+        {
+          "Id": 1718840949,
+          "Type": 3,
+          "Value": "TRIGSTR_20789"
+        },
+        {
+          "Id": 1818520949,
+          "Type": 3,
+          "Value": "FootmanBanditV1.00.mdl"
+        },
+        {
+          "Id": 1953458293,
+          "Type": 3,
+          "Value": "TRIGSTR_5316"
+        },
+        {
+          "Id": 1633907573,
+          "Type": 1,
+          "Value": 0.95
+        },
+        {
+          "Id": 1835101813,
+          "Type": 3,
+          "Value": "TRIGSTR_20977"
+        },
+        {
+          "Id": 1885959285,
+          "Type": 3,
+          "Value": "TRIGSTR_21026"
+        },
+        {
+          "Id": 1651864693,
+          "Type": 3,
+          "Value": "TRIGSTR_21262"
+        },
+        {
+          "Id": 1684960117,
+          "Type": 3,
+          "Value": "Footman"
+        }
+      ]
+    },
+    {
+      "OldId": 1818848616,
+      "NewId": 1296248936,
+      "Unk": [
+        0
+      ],
+      "Modifications": [
+        {
+          "Id": 1718840949,
+          "Type": 3,
+          "Value": "TRIGSTR_2639"
+        },
+        {
+          "Id": 1633907573,
+          "Type": 1,
+          "Value": 0.75
+        },
+        {
+          "Id": 1935827317,
+          "Type": 3,
+          "Value": ""
+        },
+        {
+          "Id": 1953458293,
+          "Type": 3,
+          "Value": "TRIGSTR_5336"
+        },
+        {
+          "Id": 1835101813,
+          "Type": 3,
+          "Value": "TRIGSTR_21278"
+        },
+        {
+          "Id": 1818520949,
+          "Type": 3,
+          "Value": "ArmoredGhost.mdl"
+        },
+        {
+          "Id": 1684960117,
+          "Type": 3,
+          "Value": "SpellBreaker"
+        },
+        {
+          "Id": 1868786037,
+          "Type": 3,
+          "Value": "ReplaceableTextures\\CommandButtons\\BTNRevenant.blp"
         }
       ]
     }

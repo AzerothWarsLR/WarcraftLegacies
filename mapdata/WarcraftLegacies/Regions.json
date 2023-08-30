@@ -403,8 +403,8 @@
       }
     },
     {
-      "Left": 5568,
-      "Bottom": -1408,
+      "Left": 6080,
+      "Bottom": -1376,
       "Right": 8800,
       "Top": 2656,
       "Name": "Gilneas Canals",
@@ -1283,10 +1283,10 @@
       }
     },
     {
-      "Left": 15616,
-      "Bottom": 5088,
-      "Right": 16416,
-      "Top": 5888,
+      "Left": 17056,
+      "Bottom": 6080,
+      "Right": 17920,
+      "Top": 6944,
       "Name": "QuelDanil Lodge",
       "CreationNumber": 175,
       "AmbientSound": "",
@@ -3930,20 +3930,6 @@
       }
     },
     {
-      "Left": 10432,
-      "Bottom": 3520,
-      "Right": 10816,
-      "Top": 3936,
-      "Name": "BloodElfSecondChanceSpawn",
-      "CreationNumber": 21,
-      "AmbientSound": "",
-      "Color": {
-        "A": 255,
-        "G": 255,
-        "B": 255
-      }
-    },
-    {
       "Left": 13952,
       "Bottom": 6208,
       "Right": 15648,
@@ -5135,6 +5121,35 @@
         "A": 255,
         "R": 128,
         "G": 128,
+        "B": 255
+      }
+    },
+    {
+      "Left": -9824,
+      "Bottom": -3808,
+      "Right": -8160,
+      "Top": -1504,
+      "Name": "GromRandomPoint",
+      "CreationNumber": 169,
+      "AmbientSound": "",
+      "Color": {
+        "A": 255,
+        "R": 128,
+        "G": 128,
+        "B": 255
+      }
+    },
+    {
+      "Left": 17376,
+      "Bottom": 6144,
+      "Right": 17760,
+      "Top": 6560,
+      "Name": "BloodElfSecondChanceSpawn",
+      "CreationNumber": 21,
+      "AmbientSound": "",
+      "Color": {
+        "A": 255,
+        "G": 255,
         "B": 255
       }
     }

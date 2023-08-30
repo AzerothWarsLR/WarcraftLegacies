@@ -4585,6 +4585,14 @@
           "Value": "nightelf"
         }
       ]
+    },
+    {
+      "OldId": 1634096450,
+      "NewId": 1311780930,
+      "Unk": [
+        0
+      ],
+      "Modifications": []
     }
   ]
 }

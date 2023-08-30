@@ -14136,6 +14136,70 @@
     {
       "Flags": 29,
       "FullPath": "ReplaceableTextures/CommandButtonsDisabled/DISBTNRedholylight.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ArmoredGhost.mdx"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ArmoredGhostV2.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures\\CommandButtons\\ATCSplinteringStrike.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures\\CommandButtonsDisabled\\DISATCSplinteringStrike.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures\\CommandButtons\\BTNShadow.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures\\CommandButtonsDisabled\\DISBTNShadow.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures\\CommandButtons\\BTNNecromancy.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures\\CommandButtonsDisabled\\DISBTNNecromancy.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures\\CommandButtons\\BTNBookOfNecromancery.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures\\CommandButtonsDisabled\\DISBTNBookOfNecromancery.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures\\CommandButtons\\BTNFrostShield.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures\\CommandButtonsDisabled\\DISBTNFrostShield.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures\\CommandButtons\\BTNShamanScroll.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures\\CommandButtonsDisabled\\DISBTNShamanScroll.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures\\CommandButtons\\BTNHeroDreadLordB.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures\\CommandButtonsDisabled\\DISBTNHeroDreadLordB.blp"
     }
   ]
 }
