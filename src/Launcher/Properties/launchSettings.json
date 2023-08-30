@@ -10,7 +10,7 @@
     },
     "TestMap: Convert MapData to W3X": {
       "commandName": "Project",
-      "commandLineArgs": "mapdata-to-w3x TestMap false \"..\\..\\..\\..\\..\\mapdata\\TestMap\" \"..\\..\\..\\..\\..\\maps\" --backup-directory \"..\\..\\..\\..\\..\\maps\\backups\""
+      "commandLineArgs": "mapdata-to-w3x TestMap false \"..\\..\\..\\..\\..\\mapdata\\TestMap\" \"..\\..\\..\\..\\..\\maps\" --backup-directory \"..\\..\\..\\..\\..\\maps\\backups\" --output-type Folder"
     },
     "WarcraftLegacies: Test": {
       "commandName": "Project",
@@ -30,7 +30,7 @@
     },
     "WarcraftLegacies: Convert MapData to W3X": {
       "commandName": "Project",
-      "commandLineArgs": "mapdata-to-w3x WarcraftLegacies false \"..\\..\\..\\..\\..\\mapdata\\WarcraftLegacies\" \"..\\..\\..\\..\\..\\maps\" --backup-directory \"..\\..\\..\\..\\..\\maps\\backups\""
+      "commandLineArgs": "mapdata-to-w3x WarcraftLegacies false \"..\\..\\..\\..\\..\\mapdata\\WarcraftLegacies\" \"..\\..\\..\\..\\..\\maps\" --backup-directory \"..\\..\\..\\..\\..\\maps\\backups\" --output-type Folder"
     }
   }
 }

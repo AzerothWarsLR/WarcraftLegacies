@@ -1,6 +1,5 @@
 ﻿#nullable enable
 using System.CommandLine;
-using System.IO;
 using AutoMapper;
 using Launcher.Services;
 using Launcher.Settings;
@@ -44,12 +43,18 @@ namespace Launcher.Commands
         name: "--backup-directory",
         description: "Any overwritten maps will be moved to this directory instead of being deleted.");
       command.AddOption(backupDirectoryOption);
+      
+      var outputTypeOption = new Option<MapOutputType>(
+        name: "--output-type",
+        description: "Whether the output should be a .w3x file or a folder.");
+      command.AddOption(outputTypeOption);
 
       command.SetHandler(Run, mapNameArgument, launchArgument, mapDataDirectoryArgument, outputDirectoryArgument,
-        sourceCodeFolderPathOption, backupDirectoryOption);
+        sourceCodeFolderPathOption, backupDirectoryOption, outputTypeOption);
     }
 
-    private static void Run(string mapName, bool launch, string mapDataDirectory, string outputDirectory, string? sourceCodeFolderPath, string? backupDirectory)
+    private static void Run(string mapName, bool launch, string mapDataDirectory, string outputDirectory,
+      string? sourceCodeFolderPath, string? backupDirectory, MapOutputType mapOutputType = MapOutputType.File)
     {
       var appConfiguration = Program.GetAppConfiguration();
       var compilerSettings = appConfiguration.GetRequiredSection(nameof(CompilerSettings)).Get<CompilerSettings>();
@@ -64,7 +69,7 @@ namespace Launcher.Commands
         .BuildAndSave(mapBuilderFromMapData, new AdvancedMapBuilderOptions
         {
           MapName = mapName,
-          MapOutputType = MapOutputType.File,
+          MapOutputType = mapOutputType,
           OutputDirectory = outputDirectory,
           SourceCodeProjectFolderPath = sourceCodeFolderPath,
           Launch = launch,
