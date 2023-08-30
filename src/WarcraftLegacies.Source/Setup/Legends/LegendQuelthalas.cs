@@ -53,7 +53,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
       Rommath = new LegendaryHero("Grand Magister Rommath")
       {
         UnitType = Constants.UNIT_H04F_ARCHMAGE_GREEN,
-        StartingXp = 1800
+        StartingXp = 4000
       };
 
       Solarian = new LegendaryHero("Solarian")

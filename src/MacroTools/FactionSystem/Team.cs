@@ -15,6 +15,8 @@ namespace MacroTools.FactionSystem
   {
     private readonly List<player> _members = new();
     private readonly List<player> _invitees = new();
+    private readonly Queue<player> _playersToDistribute = new();
+    private bool _prcessingDistributeQueue;
 
     public Team(string name)
     {
@@ -58,6 +60,14 @@ namespace MacroTools.FactionSystem
     public List<player> GetAllPlayers()
     {
       return _members.ToList();
+    }
+    
+    public Queue<player> PlayersToDistribute => _playersToDistribute;
+
+    public bool PrcessingDistributeQueue
+    {
+      get => _prcessingDistributeQueue;
+      set => _prcessingDistributeQueue = value;
     }
 
     public IEnumerable<Faction> GetAllFactions()

@@ -53,7 +53,7 @@ The Alliance is gathering outside the Dark Portal to stop you, so prepare to for
       FelHorde.ModObjectLimit(FourCC("nchg"), Faction.UNLIMITED); //Fel Orc Grunt
       FelHorde.ModObjectLimit(FourCC("nchr"), Faction.UNLIMITED); //Fel Orc Raider
       FelHorde.ModObjectLimit(FourCC("ncpn"), Faction.UNLIMITED); //Fel Orc Peon
-      FelHorde.ModObjectLimit(FourCC("owar"), Faction.UNLIMITED); //Horde Cavarly
+      FelHorde.ModObjectLimit(FourCC("owar"), 12); //Horde Cavarly
       FelHorde.ModObjectLimit(FourCC("o01L"), 6); //Executioner
       FelHorde.ModObjectLimit(FourCC("o01O"), 8); //Demolisher
       FelHorde.ModObjectLimit(FourCC("u018"), 10); //Eye of Grillok
@@ -96,6 +96,7 @@ The Alliance is gathering outside the Dark Portal to stop you, so prepare to for
       FelHorde.ModObjectLimit(FourCC("R035"), Faction.UNLIMITED); //Improved Firebolt
       FelHorde.ModObjectLimit(FourCC("R01Z"), Faction.UNLIMITED); //Battle Stations
       FelHorde.ModObjectLimit(Constants.UPGRADE_R098_FEL_INFUSED_SKELETON_FEL_HORDE, Faction.UNLIMITED);
+      FelHorde.ModObjectLimit(Constants.UPGRADE_R09W_IMPROVED_GREATER_CARRION_SWARM_LEGION, Faction.UNLIMITED); 
       FelHorde.SetObjectLevel(FourCC("R01Z"), 1); //Battle Stations
       
       FelHorde.ModObjectLimit(FourCC("n05R"), 1); //Felguard
