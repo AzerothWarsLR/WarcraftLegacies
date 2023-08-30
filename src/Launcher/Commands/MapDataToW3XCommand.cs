@@ -63,7 +63,7 @@ namespace Launcher.Commands
       var autoMapperConfig = new AutoMapperConfigurationProvider().GetConfiguration();
       var mapper = new Mapper(autoMapperConfig);
       var conversionService = new MapDataToMapConverter(mapper, new JsonModifierProvider());
-      var (map, additionalFiles) = conversionService.Convert(mapDataDirectory);
+      
 
       var options = new AdvancedMapBuilderOptions
       {
@@ -78,10 +78,12 @@ namespace Launcher.Commands
       switch (mapOutputType)
       {
         case MapOutputType.File:
-          advancedMapBuilder.SaveMapFile(map, additionalFiles, options);
+          var (mapFile, additionalFiles) = conversionService.ConvertToMapAndAdditionalFileDirectories(mapDataDirectory);
+          advancedMapBuilder.SaveMapFile(mapFile, additionalFiles, options);
           break;
         case MapOutputType.Folder:
-          advancedMapBuilder.SaveMapDirectory(map, additionalFiles, options);
+          var (mapFolder, additionalFileDirectories) = conversionService.ConvertToMapAndAdditionalFiles(mapDataDirectory);
+          advancedMapBuilder.SaveMapDirectory(mapFolder, additionalFileDirectories, options);
           break;
       }
     }

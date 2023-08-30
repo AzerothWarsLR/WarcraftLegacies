@@ -44,7 +44,7 @@ namespace Launcher.Services
     /// <summary>
     /// Builds a Warcraft 3 map based on the provided inputs and saves it as a file.
     /// </summary>
-    public void SaveMapFile(Map map, IEnumerable<PathData> additionalFiles, AdvancedMapBuilderOptions options)
+    public void SaveMapFile(Map map, IEnumerable<DirectoryEnumerationOptions> additionalFileDirectories, AdvancedMapBuilderOptions options)
     {
       var mapFilePath = GetMapFullFilePath(options);
       SupplementMap(map, options, mapFilePath);
@@ -53,7 +53,8 @@ namespace Launcher.Services
       if (Directory.Exists(_compilerSettings.SharedAssetsPath))
         mapBuilder.AddFiles(_compilerSettings.SharedAssetsPath);
 
-      //mapBuilder.AddFiles(additionalFiles);
+      foreach (var additionalFileDirectory in additionalFileDirectories)
+        mapBuilder.AddFiles(additionalFileDirectory.Path, additionalFileDirectory.SearchPattern ?? "*");
 
       var archiveCreateOptions = new MpqArchiveCreateOptions
       {
