@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System.Collections.Generic;
+using System.IO;
 using System.Text;
 using War3Api.Object;
 using War3Net.Build;
@@ -37,42 +38,48 @@ namespace Launcher.Extensions
     /// <summary>
     /// Builds a folder containing a complete Warcraft 3 map, which can be opened by the editor.
     /// </summary>
-    public static void BuildFolder(this Map map, string rootFolderPath)
+    /// <param name="map">The map to build a folder from.</param>
+    /// <param name="destinationRootDirectory">The location of the output.</param>
+    /// <param name="additionalFiles">Any additional files to add into the output directory, such as texture imports.</param>
+    public static void BuildFolder(this Map map, string destinationRootDirectory, IEnumerable<PathData> additionalFiles)
     {
-      Directory.CreateDirectory(rootFolderPath);
-      if (map.Sounds != null) Write(rootFolderPath, MapSounds.FileName, map.Sounds);
-      if (map.Environment != null) Write(rootFolderPath, MapEnvironment.FileName, map.Environment);
-      if (map.PathingMap != null) Write(rootFolderPath, MapPathingMap.FileName, map.PathingMap);
-      if (map.PreviewIcons != null) Write(rootFolderPath, MapPreviewIcons.FileName, map.PreviewIcons);
-      if (map.Regions != null) Write(rootFolderPath, MapRegions.FileName, map.Regions);
-      if (map.ShadowMap != null) Write(rootFolderPath, MapShadowMap.FileName, map.ShadowMap);
-      if (map.ImportedFiles != null) Write(rootFolderPath, ImportedFiles.MapFileName, map.ImportedFiles);
-      if (map.Info != null) Write(rootFolderPath, MapInfo.FileName, map.Info);
-      if (map.AbilityObjectData != null) Write(rootFolderPath, AbilityObjectData.MapFileName, map.AbilityObjectData);
-      if (map.BuffObjectData != null) Write(rootFolderPath, BuffObjectData.MapFileName, map.BuffObjectData);
+      Directory.CreateDirectory(destinationRootDirectory);
+      if (map.Sounds != null) Write(destinationRootDirectory, MapSounds.FileName, map.Sounds);
+      if (map.Environment != null) Write(destinationRootDirectory, MapEnvironment.FileName, map.Environment);
+      if (map.PathingMap != null) Write(destinationRootDirectory, MapPathingMap.FileName, map.PathingMap);
+      if (map.PreviewIcons != null) Write(destinationRootDirectory, MapPreviewIcons.FileName, map.PreviewIcons);
+      if (map.Regions != null) Write(destinationRootDirectory, MapRegions.FileName, map.Regions);
+      if (map.ShadowMap != null) Write(destinationRootDirectory, MapShadowMap.FileName, map.ShadowMap);
+      if (map.ImportedFiles != null) Write(destinationRootDirectory, ImportedFiles.MapFileName, map.ImportedFiles);
+      if (map.Info != null) Write(destinationRootDirectory, MapInfo.FileName, map.Info);
+      if (map.AbilityObjectData != null) Write(destinationRootDirectory, AbilityObjectData.MapFileName, map.AbilityObjectData);
+      if (map.BuffObjectData != null) Write(destinationRootDirectory, BuffObjectData.MapFileName, map.BuffObjectData);
       if (map.DestructableObjectData != null)
-        Write(rootFolderPath, DestructableObjectData.MapFileName, map.DestructableObjectData);
-      if (map.DoodadObjectData != null) Write(rootFolderPath, DoodadObjectData.MapFileName, map.DoodadObjectData);
-      if (map.ItemObjectData != null) Write(rootFolderPath, ItemObjectData.MapFileName, map.ItemObjectData);
-      if (map.UnitObjectData != null) Write(rootFolderPath, UnitObjectData.MapFileName, map.UnitObjectData);
-      if (map.UpgradeObjectData != null) Write(rootFolderPath, UpgradeObjectData.MapFileName, map.UpgradeObjectData);
-      if (map.CustomTextTriggers != null) Write(rootFolderPath, MapCustomTextTriggers.FileName, map.CustomTextTriggers);
-      if (map.TriggerStrings != null) Write(rootFolderPath, TriggerStrings.MapFileName, map.TriggerStrings.ToString());
-      if (map.Doodads != null) Write(rootFolderPath, MapDoodads.FileName, map.Doodads);
-      if (map.Units != null) Write(rootFolderPath, MapUnits.FileName, map.Units);
-      if (map.Triggers != null) Write(rootFolderPath, MapTriggers.FileName, map.Triggers);
+        Write(destinationRootDirectory, DestructableObjectData.MapFileName, map.DestructableObjectData);
+      if (map.DoodadObjectData != null) Write(destinationRootDirectory, DoodadObjectData.MapFileName, map.DoodadObjectData);
+      if (map.ItemObjectData != null) Write(destinationRootDirectory, ItemObjectData.MapFileName, map.ItemObjectData);
+      if (map.UnitObjectData != null) Write(destinationRootDirectory, UnitObjectData.MapFileName, map.UnitObjectData);
+      if (map.UpgradeObjectData != null) Write(destinationRootDirectory, UpgradeObjectData.MapFileName, map.UpgradeObjectData);
+      if (map.CustomTextTriggers != null) Write(destinationRootDirectory, MapCustomTextTriggers.FileName, map.CustomTextTriggers);
+      if (map.TriggerStrings != null) Write(destinationRootDirectory, TriggerStrings.MapFileName, map.TriggerStrings.ToString());
+      if (map.Doodads != null) Write(destinationRootDirectory, MapDoodads.FileName, map.Doodads);
+      if (map.Units != null) Write(destinationRootDirectory, MapUnits.FileName, map.Units);
+      if (map.Triggers != null) Write(destinationRootDirectory, MapTriggers.FileName, map.Triggers);
       if (map.AbilitySkinObjectData != null)
-        Write(rootFolderPath, AbilityObjectData.MapSkinFileName, map.AbilitySkinObjectData);
-      if (map.BuffSkinObjectData != null) Write(rootFolderPath, BuffObjectData.MapSkinFileName, map.BuffSkinObjectData);
+        Write(destinationRootDirectory, AbilityObjectData.MapSkinFileName, map.AbilitySkinObjectData);
+      if (map.BuffSkinObjectData != null) Write(destinationRootDirectory, BuffObjectData.MapSkinFileName, map.BuffSkinObjectData);
       if (map.DestructableSkinObjectData != null)
-        Write(rootFolderPath, DestructableObjectData.MapSkinFileName, map.DestructableSkinObjectData);
+        Write(destinationRootDirectory, DestructableObjectData.MapSkinFileName, map.DestructableSkinObjectData);
       if (map.DoodadSkinObjectData != null)
-        Write(rootFolderPath, DoodadObjectData.MapSkinFileName, map.DoodadSkinObjectData);
-      if (map.ItemSkinObjectData != null) Write(rootFolderPath, ItemObjectData.MapSkinFileName, map.ItemSkinObjectData);
-      if (map.UnitSkinObjectData != null) Write(rootFolderPath, UnitObjectData.MapSkinFileName, map.UnitSkinObjectData);
+        Write(destinationRootDirectory, DoodadObjectData.MapSkinFileName, map.DoodadSkinObjectData);
+      if (map.ItemSkinObjectData != null) Write(destinationRootDirectory, ItemObjectData.MapSkinFileName, map.ItemSkinObjectData);
+      if (map.UnitSkinObjectData != null) Write(destinationRootDirectory, UnitObjectData.MapSkinFileName, map.UnitSkinObjectData);
       if (map.UpgradeSkinObjectData != null)
-        Write(rootFolderPath, UpgradeObjectData.MapSkinFileName, map.UpgradeSkinObjectData);
-      if (map.Script != null) Write(rootFolderPath, "war3map.lua", map.Script);
+        Write(destinationRootDirectory, UpgradeObjectData.MapSkinFileName, map.UpgradeSkinObjectData);
+      if (map.Script != null) Write(destinationRootDirectory, "war3map.lua", map.Script);
+
+      foreach (var file in additionalFiles)
+        File.Copy(file.AbsolutePath, Path.Combine(destinationRootDirectory, file.RelativePath));
     }
 
     private static void Write(string rootFolderPath, string subFolderPath, string rawText)

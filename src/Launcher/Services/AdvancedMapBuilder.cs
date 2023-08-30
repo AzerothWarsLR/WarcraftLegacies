@@ -44,7 +44,7 @@ namespace Launcher.Services
     /// <summary>
     /// Builds a Warcraft 3 map based on the provided inputs and saves it to the file system.
     /// </summary>
-    public void BuildAndSave(Map map, IEnumerable<string> additionalFiles, AdvancedMapBuilderOptions options)
+    public void BuildAndSave(Map map, IEnumerable<PathData> additionalFiles, AdvancedMapBuilderOptions options)
     {
       ConfigureControlPointData(map);
       SetMapTitles(map, _mapSettings.Version);
@@ -63,7 +63,7 @@ namespace Launcher.Services
       switch (options.MapOutputType)
       {
         case MapOutputType.Folder:
-          map.BuildFolder(@$"{mapFilePath}\");
+          map.BuildFolder(@$"{mapFilePath}\", additionalFiles);
           return;
         case MapOutputType.File:
         {
@@ -171,20 +171,20 @@ namespace Launcher.Services
     private static void BackupFiles(string backupDirectory, string mapFilePath)
     {
       if (!File.Exists(mapFilePath))
-        throw new FileNotFoundException(mapFilePath);
+        return;
       
       Directory.CreateDirectory(backupDirectory);
       var backupName = $"{Path.GetFileNameWithoutExtension(mapFilePath)}-{DateTime.Now:yyyyMMdd_HHmmss}.w3x";
       File.Copy(mapFilePath, Path.Combine(backupDirectory, backupName));
     }
 
-    private void SaveMapFile(Map map, IEnumerable<string> additionalFiles, AdvancedMapBuilderOptions options, string mapFilePath)
+    private void SaveMapFile(Map map, IEnumerable<PathData> additionalFiles, AdvancedMapBuilderOptions options, string mapFilePath)
     {
       var mapBuilder = new MapBuilder(map);
       if (Directory.Exists(_compilerSettings.SharedAssetsPath))
         mapBuilder.AddFiles(_compilerSettings.SharedAssetsPath);
 
-      mapBuilder.AddFiles(additionalFiles);
+      //mapBuilder.AddFiles(additionalFiles);
 
       var archiveCreateOptions = new MpqArchiveCreateOptions
       {

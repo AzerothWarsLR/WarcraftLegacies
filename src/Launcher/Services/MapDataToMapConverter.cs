@@ -78,46 +78,55 @@ namespace Launcher.Services
     /// <summary>
     /// Converts the provided JSON data into a <see cref="Map"/> and a set of additional files.
     /// </summary>
-    public (Map Map, IEnumerable<string> AdditionalFiles) Convert(string mapDataRootFolder)
+    public (Map Map, IEnumerable<PathData> AdditionalFiles) Convert(string mapDataRootDirectory)
     {
       var map = new Map
       {
-        Sounds = DeserializeFromFile<MapSounds, MapSoundsDto>(Path.Combine(mapDataRootFolder, SoundsPath)),
-        Environment = DeserializeFromFile<MapEnvironment, MapEnvironmentDto>(Path.Combine(mapDataRootFolder, EnvironmentPath)),
-        PathingMap = DeserializeFromFile<MapPathingMap, MapPathingMapDto>(Path.Combine(mapDataRootFolder, PathingMapPath)),
-        PreviewIcons = DeserializeFromFile<MapPreviewIcons, MapPreviewIconsDto>(Path.Combine(mapDataRootFolder, PreviewIconsPath)),
-        Regions = DeserializeFromFile<MapRegions, MapRegionsDto>(Path.Combine(mapDataRootFolder, RegionsPath)),
-        ShadowMap = DeserializeFromFile<MapShadowMap, MapShadowMapDto>(Path.Combine(mapDataRootFolder, ShadowMapPath)),
-        ImportedFiles = DeserializeFromFile<ImportedFiles, MapImportedFilesDto>(Path.Combine(mapDataRootFolder, ImportedFilesPath)),
-        Info = DeserializeFromFile<MapInfo, MapInfoDto>(Path.Combine(mapDataRootFolder, InfoPath)),
-        AbilityObjectData = DeserializeFromFile<AbilityObjectData, MapAbilityObjectDataDto>(Path.Combine(mapDataRootFolder, AbilityObjectDataPath)),
-        BuffObjectData = DeserializeFromFile<BuffObjectData, MapBuffObjectDataDto>(Path.Combine(mapDataRootFolder, BuffObjectDataPath)),
-        DestructableObjectData = DeserializeFromFile<DestructableObjectData, MapDestructableObjectDataDto>(Path.Combine(mapDataRootFolder, DestructableObjectDataPath)),
-        DoodadObjectData = DeserializeFromFile<DoodadObjectData, MapDoodadObjectDataDto>(Path.Combine(mapDataRootFolder, DoodadObjectDataPath)),
-        ItemObjectData = DeserializeFromFile<ItemObjectData, MapItemObjectDataDto>(Path.Combine(mapDataRootFolder, ItemObjectDataPath)),
-        UnitObjectData = DeserializeFromFile<UnitObjectData, MapUnitObjectDataDto>(Path.Combine(mapDataRootFolder, UnitObjectDataPath)),
-        UpgradeObjectData = DeserializeFromFile<UpgradeObjectData, MapUpgradeObjectDataDto>(Path.Combine(mapDataRootFolder, UpgradeObjectDataPath)),
-        CustomTextTriggers = DeserializeFromFile<MapCustomTextTriggers, MapCustomTextTriggersDto>(Path.Combine(mapDataRootFolder, CustomTextTriggersPath)),
-        TriggerStrings = DeserializeFromFile<TriggerStrings, MapTriggerStringsDto>(Path.Combine(mapDataRootFolder, TriggerStringsPath)),
-        Doodads = DeserializeFromFile<MapDoodads, MapDoodadsDto>(Path.Combine(mapDataRootFolder, DoodadsPath)),
-        Units = DeserializeFromFile<MapUnits, MapUnitsDto>(Path.Combine(mapDataRootFolder, UnitsPath)),
-        Triggers = DeserializeFromFile<MapTriggers, MapTriggersDto>(Path.Combine(mapDataRootFolder, TriggersPath)),
-        AbilitySkinObjectData = DeserializeFromFile<AbilityObjectData, MapAbilityObjectDataDto>(Path.Combine(mapDataRootFolder, AbilitySkinObjectDataPath)),
-        BuffSkinObjectData = DeserializeFromFile<BuffObjectData, MapBuffObjectDataDto>(Path.Combine(mapDataRootFolder, BuffSkinObjectDataPath)),
-        DestructableSkinObjectData = DeserializeFromFile<DestructableObjectData, MapDestructableObjectDataDto>(Path.Combine(mapDataRootFolder, DestructableSkinObjectDataPath)),
-        DoodadSkinObjectData = DeserializeFromFile<DoodadObjectData, MapDoodadObjectDataDto>(Path.Combine(mapDataRootFolder, DoodadSkinObjectDataPath)),
-        ItemSkinObjectData = DeserializeFromFile<ItemObjectData, MapItemObjectDataDto>(Path.Combine(mapDataRootFolder, ItemSkinObjectDataPath)),
-        UnitSkinObjectData = DeserializeFromFile<UnitObjectData, MapUnitObjectDataDto>(Path.Combine(mapDataRootFolder, UnitSkinObjectDataPath)),
-        UpgradeSkinObjectData = DeserializeFromFile<UpgradeObjectData, MapUpgradeObjectDataDto>(Path.Combine(mapDataRootFolder, UpgradeSkinObjectDataPath)),
-        Script = File.ReadAllText(Path.Combine(mapDataRootFolder, "Script.json"))
+        Sounds = DeserializeFromFile<MapSounds, MapSoundsDto>(Path.Combine(mapDataRootDirectory, SoundsPath)),
+        Environment = DeserializeFromFile<MapEnvironment, MapEnvironmentDto>(Path.Combine(mapDataRootDirectory, EnvironmentPath)),
+        PathingMap = DeserializeFromFile<MapPathingMap, MapPathingMapDto>(Path.Combine(mapDataRootDirectory, PathingMapPath)),
+        PreviewIcons = DeserializeFromFile<MapPreviewIcons, MapPreviewIconsDto>(Path.Combine(mapDataRootDirectory, PreviewIconsPath)),
+        Regions = DeserializeFromFile<MapRegions, MapRegionsDto>(Path.Combine(mapDataRootDirectory, RegionsPath)),
+        ShadowMap = DeserializeFromFile<MapShadowMap, MapShadowMapDto>(Path.Combine(mapDataRootDirectory, ShadowMapPath)),
+        ImportedFiles = DeserializeFromFile<ImportedFiles, MapImportedFilesDto>(Path.Combine(mapDataRootDirectory, ImportedFilesPath)),
+        Info = DeserializeFromFile<MapInfo, MapInfoDto>(Path.Combine(mapDataRootDirectory, InfoPath)),
+        AbilityObjectData = DeserializeFromFile<AbilityObjectData, MapAbilityObjectDataDto>(Path.Combine(mapDataRootDirectory, AbilityObjectDataPath)),
+        BuffObjectData = DeserializeFromFile<BuffObjectData, MapBuffObjectDataDto>(Path.Combine(mapDataRootDirectory, BuffObjectDataPath)),
+        DestructableObjectData = DeserializeFromFile<DestructableObjectData, MapDestructableObjectDataDto>(Path.Combine(mapDataRootDirectory, DestructableObjectDataPath)),
+        DoodadObjectData = DeserializeFromFile<DoodadObjectData, MapDoodadObjectDataDto>(Path.Combine(mapDataRootDirectory, DoodadObjectDataPath)),
+        ItemObjectData = DeserializeFromFile<ItemObjectData, MapItemObjectDataDto>(Path.Combine(mapDataRootDirectory, ItemObjectDataPath)),
+        UnitObjectData = DeserializeFromFile<UnitObjectData, MapUnitObjectDataDto>(Path.Combine(mapDataRootDirectory, UnitObjectDataPath)),
+        UpgradeObjectData = DeserializeFromFile<UpgradeObjectData, MapUpgradeObjectDataDto>(Path.Combine(mapDataRootDirectory, UpgradeObjectDataPath)),
+        CustomTextTriggers = DeserializeFromFile<MapCustomTextTriggers, MapCustomTextTriggersDto>(Path.Combine(mapDataRootDirectory, CustomTextTriggersPath)),
+        TriggerStrings = DeserializeFromFile<TriggerStrings, MapTriggerStringsDto>(Path.Combine(mapDataRootDirectory, TriggerStringsPath)),
+        Doodads = DeserializeFromFile<MapDoodads, MapDoodadsDto>(Path.Combine(mapDataRootDirectory, DoodadsPath)),
+        Units = DeserializeFromFile<MapUnits, MapUnitsDto>(Path.Combine(mapDataRootDirectory, UnitsPath)),
+        Triggers = DeserializeFromFile<MapTriggers, MapTriggersDto>(Path.Combine(mapDataRootDirectory, TriggersPath)),
+        AbilitySkinObjectData = DeserializeFromFile<AbilityObjectData, MapAbilityObjectDataDto>(Path.Combine(mapDataRootDirectory, AbilitySkinObjectDataPath)),
+        BuffSkinObjectData = DeserializeFromFile<BuffObjectData, MapBuffObjectDataDto>(Path.Combine(mapDataRootDirectory, BuffSkinObjectDataPath)),
+        DestructableSkinObjectData = DeserializeFromFile<DestructableObjectData, MapDestructableObjectDataDto>(Path.Combine(mapDataRootDirectory, DestructableSkinObjectDataPath)),
+        DoodadSkinObjectData = DeserializeFromFile<DoodadObjectData, MapDoodadObjectDataDto>(Path.Combine(mapDataRootDirectory, DoodadSkinObjectDataPath)),
+        ItemSkinObjectData = DeserializeFromFile<ItemObjectData, MapItemObjectDataDto>(Path.Combine(mapDataRootDirectory, ItemSkinObjectDataPath)),
+        UnitSkinObjectData = DeserializeFromFile<UnitObjectData, MapUnitObjectDataDto>(Path.Combine(mapDataRootDirectory, UnitSkinObjectDataPath)),
+        UpgradeSkinObjectData = DeserializeFromFile<UpgradeObjectData, MapUpgradeObjectDataDto>(Path.Combine(mapDataRootDirectory, UpgradeSkinObjectDataPath)),
+        Script = File.ReadAllText(Path.Combine(mapDataRootDirectory, "Script.json"))
       };
 
-      var importsDirectory = $@"{mapDataRootFolder}\{ImportsPath}";
-      var additionalFiles = Directory.EnumerateFiles(importsDirectory, "*", AllDirectories).ToList();
-
-      if (Directory.Exists(importsDirectory))
-        additionalFiles.Add(Path.Combine($"{mapDataRootFolder}", "*war3mapMap.blp"));
+      var importsDirectory = $@"{mapDataRootDirectory}\{ImportsPath}";
       
+      var additionalFiles = Directory.Exists(importsDirectory)
+        ? Directory.EnumerateFiles(importsDirectory, "*", AllDirectories).Select(x => new PathData
+        {
+          AbsolutePath = x,
+          RelativePath = Path.GetRelativePath(mapDataRootDirectory, x)
+        }).ToList()
+        : new List<PathData>();
+      
+      additionalFiles.Add(new PathData
+      {
+        AbsolutePath = Path.Combine(mapDataRootDirectory, "war3mapMap.blp"),
+        RelativePath = "war3mapMap.blp"
+      });
       return (map, additionalFiles);
     }
 
