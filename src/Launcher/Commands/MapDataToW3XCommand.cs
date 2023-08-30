@@ -62,11 +62,11 @@ namespace Launcher.Commands
       
       var autoMapperConfig = new AutoMapperConfigurationProvider().GetConfiguration();
       var mapper = new Mapper(autoMapperConfig);
-      var conversionService = new MapDataToMapBuilderConverter(mapper, new JsonModifierProvider());
-      var mapBuilderFromMapData = conversionService.Convert(mapDataDirectory);
+      var conversionService = new MapDataToMapConverter(mapper, new JsonModifierProvider());
+      var (map, additionalFiles) = conversionService.Convert(mapDataDirectory);
       
       new AdvancedMapBuilder(compilerSettings, mapSettings)
-        .BuildAndSave(mapBuilderFromMapData, new AdvancedMapBuilderOptions
+        .BuildAndSave(map, additionalFiles, new AdvancedMapBuilderOptions
         {
           MapName = mapName,
           MapOutputType = mapOutputType,

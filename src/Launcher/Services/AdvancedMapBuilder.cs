@@ -1,5 +1,6 @@
 ﻿#nullable enable
 using System;
+using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
@@ -43,57 +44,86 @@ namespace Launcher.Services
     /// <summary>
     /// Builds a Warcraft 3 map based on the provided inputs and saves it to the file system.
     /// </summary>
-    public void BuildAndSave(MapBuilder mapBuilder, AdvancedMapBuilderOptions options)
+    public void BuildAndSave(Map map, IEnumerable<string> additionalFiles, AdvancedMapBuilderOptions options)
     {
-      Directory.CreateDirectory(_compilerSettings.ArtifactsPath);
-      
-      var map = mapBuilder.Map;
-      Directory.CreateDirectory(_compilerSettings.SharedAssetsPath);
-      mapBuilder.AddFiles(_compilerSettings.SharedAssetsPath);
       ConfigureControlPointData(map);
+      SetMapTitles(map, _mapSettings.Version);
+      
       if (options.Launch)
         SetTestPlayerSlot(map, _compilerSettings.TestingPlayerSlot);
-      SetMapTitles(map, _mapSettings.Version);
 
       if (options.SourceCodeProjectFolderPath != null)
         AddCSharpCode(map, options.SourceCodeProjectFolderPath, _compilerSettings);
-
-      // Build w3x file
-      var archiveCreateOptions = new MpqArchiveCreateOptions
-      {
-        BlockSize = 3,
-        AttributesCreateMode = MpqFileCreateMode.Overwrite,
-        ListFileCreateMode = MpqFileCreateMode.Overwrite
-      };
-
-      //Todo: there should be a better way to determine whether or not we want the version number.
-      //Probably just a command parameter.
-      var mapFilePath = options.SourceCodeProjectFolderPath != null
-        ? $"{Path.Combine(options.OutputDirectory, options.MapName)}{_mapSettings.Version}.w3x"
-        : $"{Path.Combine(options.OutputDirectory, options.MapName)}.w3x";
       
-      if (File.Exists(mapFilePath) && options.BackupDirectory != null)
-      {
-        Directory.CreateDirectory(options.BackupDirectory);
-        var backupName = $"{Path.GetFileNameWithoutExtension(mapFilePath)}-{DateTime.Now:yyyyMMdd_HHmmss}.w3x";
-        File.Copy(mapFilePath, Path.Combine(options.BackupDirectory, backupName));
-      }
+      var mapFilePath = GetMapFullFilePath(options);
+
+      if (options.BackupDirectory != null)
+        BackupFiles(options.BackupDirectory, mapFilePath);
 
       switch (options.MapOutputType)
       {
         case MapOutputType.Folder:
-          mapBuilder.BuildFolder(@$"{mapFilePath}\");
+          map.BuildFolder(@$"{mapFilePath}\");
           return;
         case MapOutputType.File:
         {
-          mapBuilder.Build(mapFilePath, archiveCreateOptions);
-          if (options.Launch)
-            LaunchGame(_compilerSettings.Warcraft3ExecutablePath, mapFilePath);
+          SaveMapFile(map, additionalFiles, options, mapFilePath);
           break;
         }
       }
     }
 
+    private static void ConfigureControlPointData(Map map)
+    {
+      var objectDatabase = map.GetObjectDatabaseFromMap();
+      foreach (var unit in objectDatabase.GetUnits().Where(IsControlPoint))
+      {
+        unit.CombatAttack1DamageBase = -1;
+        unit.CombatAttack1DamageNumberOfDice = 1;
+        unit.CombatAttack1DamageSidesPerDie = 1;
+        unit.CombatAttacksEnabled = AttackBits.Attack1Only;
+        unit.CombatAttack1Range = 900;
+        unit.CombatAcquisitionRange = 900;
+        unit.CombatAttack1TargetsAllowed = new[] { Target.Bridge };
+        unit.EditorDisplayAsNeutralHostile = true;
+        unit.StatsLevel = 0;
+        unit.StatsRace = UnitRace.Creeps;
+        unit.StatsCanBeBuiltOn = false;
+        unit.PathingPathingMap = @"PathTextures\4x4SimpleSolid.tga";
+        unit.StatsHitPointsRegenerationRate = 0;
+      }
+
+      map.UnitObjectData = objectDatabase.GetAllData(ObjectDataFormatVersion.v2).UnitData;
+    }
+    
+    private static bool IsControlPoint(War3Api.Object.Unit unit)
+    {
+      return unit.IsStatsUnitClassificationModified &&
+             unit.StatsUnitClassification.Contains(UnitClassification.Sapper) &&
+             unit.StatsUnitClassification.Contains(UnitClassification.Ancient) &&
+             !unit.StatsUnitClassification.Contains(UnitClassification.Mechanical);
+    }
+    
+    private static void SetMapTitles(Map map, string version)
+    {
+      if (map.Info == null)
+        return;
+      map.Info.MapName = $"Warcraft Legacies {version}";
+      map.Info.LoadingScreenTitle = $"Warcraft Legacies {version}";
+    }
+    
+    /// <summary>
+    ///   Makes all players prior to the given player slot computers,
+    ///   so that the given player slot is what the tester will play as when the map is launched.
+    /// </summary>
+    private static void SetTestPlayerSlot(Map map, int playerSlot)
+    {
+      if (map.Info == null) return;
+      foreach (var player in map.Info.Players)
+        if (player.Id < playerSlot && player.Id != playerSlot && player.Controller != PlayerController.None)
+          player.Controller = PlayerController.Computer;
+    }
+    
     private static void AddCSharpCode(Map map, string projectFolderPath, CompilerSettings compilerSettings)
     {
       //Set debug options if necessary, configure compiler
@@ -127,58 +157,45 @@ namespace Launcher.Services
         throw new Exception(compileResult.Diagnostics.First(x => x.Severity == DiagnosticSeverity.Error).GetMessage());
 
       // Update war3map.lua so you can inspect the generated Lua code easily
+      Directory.CreateDirectory(compilerSettings.ArtifactsPath);
       File.WriteAllText(Path.Combine(compilerSettings.ArtifactsPath, War3MapLua), map.Script);
     }
     
-    private static void SetMapTitles(Map map, string version)
+    private string GetMapFullFilePath(AdvancedMapBuilderOptions options)
     {
-      if (map.Info == null)
-        return;
-      map.Info.MapName = $"Warcraft Legacies {version}";
-      map.Info.LoadingScreenTitle = $"Warcraft Legacies {version}";
+      return options.SourceCodeProjectFolderPath != null
+        ? $"{Path.Combine(options.OutputDirectory, options.MapName)}{_mapSettings.Version}.w3x"
+        : $"{Path.Combine(options.OutputDirectory, options.MapName)}.w3x";
+    }
+    
+    private static void BackupFiles(string backupDirectory, string mapFilePath)
+    {
+      if (!File.Exists(mapFilePath))
+        throw new FileNotFoundException(mapFilePath);
+      
+      Directory.CreateDirectory(backupDirectory);
+      var backupName = $"{Path.GetFileNameWithoutExtension(mapFilePath)}-{DateTime.Now:yyyyMMdd_HHmmss}.w3x";
+      File.Copy(mapFilePath, Path.Combine(backupDirectory, backupName));
     }
 
-    /// <summary>
-    ///   Makes all players prior to the given player slot computers,
-    ///   so that the given player slot is what the tester will play as when the map is launched.
-    /// </summary>
-    private static void SetTestPlayerSlot(Map map, int playerSlot)
+    private void SaveMapFile(Map map, IEnumerable<string> additionalFiles, AdvancedMapBuilderOptions options, string mapFilePath)
     {
-      if (map.Info == null) return;
-      foreach (var player in map.Info.Players)
-        if (player.Id < playerSlot && player.Id != playerSlot && player.Controller != PlayerController.None)
-          player.Controller = PlayerController.Computer;
-    }
+      var mapBuilder = new MapBuilder(map);
+      if (Directory.Exists(_compilerSettings.SharedAssetsPath))
+        mapBuilder.AddFiles(_compilerSettings.SharedAssetsPath);
 
-    private static bool IsControlPoint(War3Api.Object.Unit unit)
-    {
-      return unit.IsStatsUnitClassificationModified &&
-             unit.StatsUnitClassification.Contains(UnitClassification.Sapper) &&
-             unit.StatsUnitClassification.Contains(UnitClassification.Ancient) &&
-             !unit.StatsUnitClassification.Contains(UnitClassification.Mechanical);
-    }
+      mapBuilder.AddFiles(additionalFiles);
 
-    private static void ConfigureControlPointData(Map map)
-    {
-      var objectDatabase = map.GetObjectDatabaseFromMap();
-      foreach (var unit in objectDatabase.GetUnits().Where(IsControlPoint))
+      var archiveCreateOptions = new MpqArchiveCreateOptions
       {
-        unit.CombatAttack1DamageBase = -1;
-        unit.CombatAttack1DamageNumberOfDice = 1;
-        unit.CombatAttack1DamageSidesPerDie = 1;
-        unit.CombatAttacksEnabled = AttackBits.Attack1Only;
-        unit.CombatAttack1Range = 900;
-        unit.CombatAcquisitionRange = 900;
-        unit.CombatAttack1TargetsAllowed = new[] { Target.Bridge };
-        unit.EditorDisplayAsNeutralHostile = true;
-        unit.StatsLevel = 0;
-        unit.StatsRace = UnitRace.Creeps;
-        unit.StatsCanBeBuiltOn = false;
-        unit.PathingPathingMap = @"PathTextures\4x4SimpleSolid.tga";
-        unit.StatsHitPointsRegenerationRate = 0;
-      }
+        BlockSize = 3,
+        AttributesCreateMode = MpqFileCreateMode.Overwrite,
+        ListFileCreateMode = MpqFileCreateMode.Overwrite
+      };
 
-      map.UnitObjectData = objectDatabase.GetAllData(ObjectDataFormatVersion.v2).UnitData;
+      mapBuilder.Build(mapFilePath, archiveCreateOptions);
+      if (options.Launch)
+        LaunchGame(_compilerSettings.Warcraft3ExecutablePath, mapFilePath);
     }
 
     private static void LaunchGame(string warcraft3ExecutablePath, string mapFilePath)

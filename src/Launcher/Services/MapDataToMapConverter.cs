@@ -1,5 +1,7 @@
 ﻿#nullable enable
+using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 using System.Text.Json.Serialization.Metadata;
@@ -14,19 +16,20 @@ using War3Net.Build.Info;
 using War3Net.Build.Object;
 using War3Net.Build.Script;
 using War3Net.Build.Widget;
+using static System.IO.SearchOption;
 
 namespace Launcher.Services
 {
   /// <summary>
-  /// Converts collections of loose files into a <see cref="MapBuilder"/>, which can be used to produce a Warcraft 3 map.
+  /// Converts collections of loose files into a <see cref="Map"/>.
   /// </summary>
-  public sealed class MapDataToMapBuilderConverter
+  public sealed class MapDataToMapConverter
   {
     private readonly IMapper _mapper;
     
     private readonly JsonSerializerOptions _jsonSerializerOptions;
 
-    public MapDataToMapBuilderConverter(IMapper mapper, JsonModifierProvider jsonModifierProvider)
+    public MapDataToMapConverter(IMapper mapper, JsonModifierProvider jsonModifierProvider)
     {
       _mapper = mapper;
       _jsonSerializerOptions = new()
@@ -73,9 +76,9 @@ namespace Launcher.Services
     private const string ImportsPath = "Imports";
 
     /// <summary>
-    /// Converts the provided JSON data into a Warcraft 3 map and saves it in the specified folder.
+    /// Converts the provided JSON data into a <see cref="Map"/> and a set of additional files.
     /// </summary>
-    public MapBuilder Convert(string mapDataRootFolder)
+    public (Map Map, IEnumerable<string> AdditionalFiles) Convert(string mapDataRootFolder)
     {
       var map = new Map
       {
@@ -109,13 +112,13 @@ namespace Launcher.Services
         Script = File.ReadAllText(Path.Combine(mapDataRootFolder, "Script.json"))
       };
 
-      var builder = new MapBuilder(map);
-      builder.AddFiles($"{mapDataRootFolder}", "*war3mapMap.blp");
       var importsDirectory = $@"{mapDataRootFolder}\{ImportsPath}";
+      var additionalFiles = Directory.EnumerateFiles(importsDirectory, "*", AllDirectories).ToList();
+
       if (Directory.Exists(importsDirectory))
-        builder.AddFiles(importsDirectory, "*", SearchOption.AllDirectories);
+        additionalFiles.Add(Path.Combine($"{mapDataRootFolder}", "*war3mapMap.blp"));
       
-      return builder;
+      return (map, additionalFiles);
     }
 
     private TReturn DeserializeFromFile<TReturn, TDataTransferObject>(string filePath)
