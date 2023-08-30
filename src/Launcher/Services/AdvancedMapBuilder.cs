@@ -79,9 +79,19 @@ namespace Launcher.Services
         File.Copy(mapFilePath, Path.Combine(options.BackupDirectory, backupName));
       }
 
-      mapBuilder.Build(mapFilePath, archiveCreateOptions);
-      if (options.Launch)
-        LaunchGame(_compilerSettings.Warcraft3ExecutablePath, mapFilePath);
+      switch (options.MapOutputType)
+      {
+        case MapOutputType.Folder:
+          mapBuilder.BuildFolder(mapFilePath);
+          return;
+        case MapOutputType.File:
+        {
+          mapBuilder.Build(mapFilePath, archiveCreateOptions);
+          if (options.Launch)
+            LaunchGame(_compilerSettings.Warcraft3ExecutablePath, mapFilePath);
+          break;
+        }
+      }
     }
 
     private static void AddCSharpCode(Map map, string projectFolderPath, CompilerSettings compilerSettings)
