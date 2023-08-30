@@ -40,37 +40,56 @@ namespace Launcher.Services
       _compilerSettings = compilerSettings;
       _mapSettings = mapSettings;
     }
+    
+    /// <summary>
+    /// Builds a Warcraft 3 map based on the provided inputs and saves it as a file.
+    /// </summary>
+    public void SaveMapFile(Map map, IEnumerable<PathData> additionalFiles, AdvancedMapBuilderOptions options)
+    {
+      var mapFilePath = GetMapFullFilePath(options);
+      SupplementMap(map, options, mapFilePath);
+      
+      var mapBuilder = new MapBuilder(map);
+      if (Directory.Exists(_compilerSettings.SharedAssetsPath))
+        mapBuilder.AddFiles(_compilerSettings.SharedAssetsPath);
+
+      //mapBuilder.AddFiles(additionalFiles);
+
+      var archiveCreateOptions = new MpqArchiveCreateOptions
+      {
+        BlockSize = 3,
+        AttributesCreateMode = MpqFileCreateMode.Overwrite,
+        ListFileCreateMode = MpqFileCreateMode.Overwrite
+      };
+
+      mapBuilder.Build(mapFilePath, archiveCreateOptions);
+      if (options.Launch)
+        LaunchGame(_compilerSettings.Warcraft3ExecutablePath, mapFilePath);
+    }
 
     /// <summary>
-    /// Builds a Warcraft 3 map based on the provided inputs and saves it to the file system.
+    /// Builds a Warcraft 3 map based on the provided inputs and saves it as a directory.
     /// </summary>
-    public void BuildAndSave(Map map, IEnumerable<PathData> additionalFiles, AdvancedMapBuilderOptions options)
+    public void SaveMapDirectory(Map map, IEnumerable<PathData> additionalFiles, AdvancedMapBuilderOptions options)
+    {
+      var mapFilePath = GetMapFullFilePath(options);
+      SupplementMap(map, options, mapFilePath);
+      map.BuildDirectory(@$"{mapFilePath}\", additionalFiles);
+    }
+    
+    private void SupplementMap(Map map, AdvancedMapBuilderOptions options, string mapFilePath)
     {
       ConfigureControlPointData(map);
       SetMapTitles(map, _mapSettings.Version);
-      
+
       if (options.Launch)
         SetTestPlayerSlot(map, _compilerSettings.TestingPlayerSlot);
 
       if (options.SourceCodeProjectFolderPath != null)
         AddCSharpCode(map, options.SourceCodeProjectFolderPath, _compilerSettings);
-      
-      var mapFilePath = GetMapFullFilePath(options);
 
       if (options.BackupDirectory != null)
         BackupFiles(options.BackupDirectory, mapFilePath);
-
-      switch (options.MapOutputType)
-      {
-        case MapOutputType.Folder:
-          map.BuildFolder(@$"{mapFilePath}\", additionalFiles);
-          return;
-        case MapOutputType.File:
-        {
-          SaveMapFile(map, additionalFiles, options, mapFilePath);
-          break;
-        }
-      }
     }
 
     private static void ConfigureControlPointData(Map map)
@@ -176,26 +195,6 @@ namespace Launcher.Services
       Directory.CreateDirectory(backupDirectory);
       var backupName = $"{Path.GetFileNameWithoutExtension(mapFilePath)}-{DateTime.Now:yyyyMMdd_HHmmss}.w3x";
       File.Copy(mapFilePath, Path.Combine(backupDirectory, backupName));
-    }
-
-    private void SaveMapFile(Map map, IEnumerable<PathData> additionalFiles, AdvancedMapBuilderOptions options, string mapFilePath)
-    {
-      var mapBuilder = new MapBuilder(map);
-      if (Directory.Exists(_compilerSettings.SharedAssetsPath))
-        mapBuilder.AddFiles(_compilerSettings.SharedAssetsPath);
-
-      //mapBuilder.AddFiles(additionalFiles);
-
-      var archiveCreateOptions = new MpqArchiveCreateOptions
-      {
-        BlockSize = 3,
-        AttributesCreateMode = MpqFileCreateMode.Overwrite,
-        ListFileCreateMode = MpqFileCreateMode.Overwrite
-      };
-
-      mapBuilder.Build(mapFilePath, archiveCreateOptions);
-      if (options.Launch)
-        LaunchGame(_compilerSettings.Warcraft3ExecutablePath, mapFilePath);
     }
 
     private static void LaunchGame(string warcraft3ExecutablePath, string mapFilePath)

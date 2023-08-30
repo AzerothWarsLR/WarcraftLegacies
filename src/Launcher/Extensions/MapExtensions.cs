@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.IO;
 using System.Text;
+using Launcher.Services;
 using War3Api.Object;
 using War3Net.Build;
 using War3Net.Build.Audio;
@@ -38,10 +39,10 @@ namespace Launcher.Extensions
     /// <summary>
     /// Builds a folder containing a complete Warcraft 3 map, which can be opened by the editor.
     /// </summary>
-    /// <param name="map">The map to build a folder from.</param>
+    /// <param name="map">The map to build a directory from.</param>
     /// <param name="destinationRootDirectory">The location of the output.</param>
     /// <param name="additionalFiles">Any additional files to add into the output directory, such as texture imports.</param>
-    public static void BuildFolder(this Map map, string destinationRootDirectory, IEnumerable<PathData> additionalFiles)
+    public static void BuildDirectory(this Map map, string destinationRootDirectory, IEnumerable<PathData> additionalFiles)
     {
       Directory.CreateDirectory(destinationRootDirectory);
       if (map.Sounds != null) Write(destinationRootDirectory, MapSounds.FileName, map.Sounds);

@@ -10,11 +10,6 @@ namespace Launcher.Services
     public required string MapName { get; init; }
     
     /// <summary>
-    /// Whether or not the output should be a file or a folder.
-    /// </summary>
-    public required MapOutputType MapOutputType { get; init; }
-    
-    /// <summary>
     /// Where the final map will be saved to.
     /// </summary>
     public required string OutputDirectory { get; init; }

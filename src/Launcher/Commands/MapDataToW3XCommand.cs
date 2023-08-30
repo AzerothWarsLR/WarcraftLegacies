@@ -64,17 +64,26 @@ namespace Launcher.Commands
       var mapper = new Mapper(autoMapperConfig);
       var conversionService = new MapDataToMapConverter(mapper, new JsonModifierProvider());
       var (map, additionalFiles) = conversionService.Convert(mapDataDirectory);
+
+      var options = new AdvancedMapBuilderOptions
+      {
+        MapName = mapName,
+        OutputDirectory = outputDirectory,
+        SourceCodeProjectFolderPath = sourceCodeFolderPath,
+        Launch = launch,
+        BackupDirectory = backupDirectory
+      };
+      var advancedMapBuilder = new AdvancedMapBuilder(compilerSettings, mapSettings);
       
-      new AdvancedMapBuilder(compilerSettings, mapSettings)
-        .BuildAndSave(map, additionalFiles, new AdvancedMapBuilderOptions
-        {
-          MapName = mapName,
-          MapOutputType = mapOutputType,
-          OutputDirectory = outputDirectory,
-          SourceCodeProjectFolderPath = sourceCodeFolderPath,
-          Launch = launch,
-          BackupDirectory = backupDirectory
-        });
+      switch (mapOutputType)
+      {
+        case MapOutputType.File:
+          advancedMapBuilder.SaveMapFile(map, additionalFiles, options);
+          break;
+        case MapOutputType.Folder:
+          advancedMapBuilder.SaveMapDirectory(map, additionalFiles, options);
+          break;
+      }
     }
   }
 }
