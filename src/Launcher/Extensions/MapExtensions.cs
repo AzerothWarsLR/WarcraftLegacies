@@ -79,7 +79,11 @@ namespace Launcher.Extensions
       if (map.Script != null) Write(destinationRootDirectory, "war3map.lua", map.Script);
 
       foreach (var file in additionalFiles)
-        File.Copy(file.AbsolutePath, Path.Combine(destinationRootDirectory, file.RelativePath));
+      {
+        var destinationPath = Path.Combine(destinationRootDirectory, file.RelativePath);
+        Directory.CreateDirectory(Path.GetDirectoryName(destinationPath));
+        File.Copy(file.AbsolutePath, Path.Combine(destinationRootDirectory, file.RelativePath), true);
+      }
     }
 
     private static void Write(string rootFolderPath, string subFolderPath, string rawText)
