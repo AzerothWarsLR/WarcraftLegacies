@@ -71,7 +71,7 @@ namespace Launcher.Services
       var mapFilePath = options.SourceCodeProjectFolderPath != null
         ? $"{Path.Combine(options.OutputDirectory, options.MapName)}{_mapSettings.Version}.w3x"
         : $"{Path.Combine(options.OutputDirectory, options.MapName)}.w3x";
-
+      
       if (File.Exists(mapFilePath) && options.BackupDirectory != null)
       {
         Directory.CreateDirectory(options.BackupDirectory);
@@ -82,7 +82,7 @@ namespace Launcher.Services
       switch (options.MapOutputType)
       {
         case MapOutputType.Folder:
-          mapBuilder.BuildFolder(mapFilePath);
+          mapBuilder.BuildFolder(@$"{mapFilePath}\");
           return;
         case MapOutputType.File:
         {
