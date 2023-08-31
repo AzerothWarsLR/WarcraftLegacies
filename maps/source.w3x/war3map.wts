@@ -5183,7 +5183,7 @@ Felsteel Plating
 }
 
 STRING 865
-// Abilities: A0I6 (Felsteel Plating), Tip (Tooltip - Normal)
+// Abilities: A12O (Felsteel Plating), Name (Name)
 {
 Felsteel Plating
 }
@@ -23882,7 +23882,7 @@ Train Trade Prince Guard
 }
 
 STRING 3981
-// Units: uban (Banshee), Casterupgradename (Caster Upgrade Names)
+// Units: h02D (Geomancer), Casterupgradename (Caster Upgrade Names)
 {
 Initiate, Adept, Master, Grandmaster
 }
@@ -34154,9 +34154,9 @@ Fel Infused Skeleton
 }
 
 STRING 5693
-// Upgrades: Robf (Burning Oil), Ubertip (Tooltip - Extended)
+// Units: uban (Banshee), Ubertip (Tooltip - Extended)
 {
-Improves Fel Grunts, Crossbowmen and Bonecrushers by increasing their hit points by 15% and their hit point regeneration by 0.8.|n|n|cffffcc00Cannot be researched with Fel Infused Skeleton.|r
+A risen Elf spirit enslaved to the Scourge.|n|cfff5962dAbilities:|R Curse|n|cfff5962dCan Learn:|R Anti-magic Shell, Possession|n|n|cffffcc00Attacks land and air units.|R
 }
 
 STRING 5694
@@ -58657,7 +58657,7 @@ Gives a 25% chance for an attack to be absorbed reducing damage taken by 40 dama
 }
 
 STRING 9774
-// Abilities: A0I6 (Felsteel Plating), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A12O (Felsteel Plating), Ubertip (Tooltip - Normal - Extended)
 {
 Gives a 35% chance for an attack to be absorbed reducing damage taken by 40 damage. Attacks cannot be reduced below 3 damage.
 }
@@ -65652,12 +65652,6 @@ STRING 10939
 R
 }
 
-STRING 10940
-// Upgrades: R042 (Shaman Adept Training,Shaman Master Training), Ubertip (Tooltip - Extended)
-{
-Increases Nathrezims' mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Sight of Sargeras.
-}
-
 STRING 10941
 // Abilities: A08Q (Lightning Streak), Researchhotkey (Hotkey - Learn)
 {
@@ -68368,9 +68362,9 @@ Building - Troll Hut
 }
 
 STRING 11391
-// Units: uban (Banshee), Ubertip (Tooltip - Extended)
+// Units: o04P (Nathrezim Infiltrator), Ubertip (Tooltip - Extended)
 {
-A risen Elf spirit enslaved to the Scourge.|n|cfff5962dAbilities:|R Curse|n|cfff5962dCan Learn:|R Anti-magic Shell, Freezing Shield, Possession|n|n|cffffcc00Attacks land and air units.|R
+Shadowy Nathrezim Agents.|n|cfff5962dAbilities:|R Thirst for Blood, Dark Regeneration, Resistant Skin, Permanent Invisibility, Magic Resistance |n|cfff5962dCan learn:|R Charm, Sight of Sargeras, Astral Walk|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land units.|r
 }
 
 STRING 11392
@@ -70096,9 +70090,9 @@ Z
 }
 
 STRING 11679
-// Units: uban (Banshee), Casterupgradetip (Caster Upgrade Tips)
+// Abilities: A13Y (Thirst for Blood), EditorSuffix (Editor Suffix)
 {
-- Curse,- Curse|n- Anti-magic Shell,- Curse|n- Anti-magic Shell|n- Freezing Shield,- Curse|n- Anti-magic Shell|n- Freezing Shield|n- Possession
+(Nathrezim)
 }
 
 STRING 11680
@@ -71274,9 +71268,9 @@ Archer filled tower defense.|n|cfff5962dUpgrades Into:|R Improved Guard Tower|n|
 }
 
 STRING 11875
-// Upgrades: R098 (Burning Oil), Ubertip (Tooltip - Extended)
+// Upgrades: Ruba (Banshee Adept Training,Banshee Master Training), Ubertip (Tooltip - Extended)
 {
-Causes Fel Grunts to transform into Skeletal Grunts upon death, allowing them to continue fighting for 40 seconds.|n|n|cffffcc00Cannot be researched with Demonic Flux.|r
+Increases Banshees' mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Possession.
 }
 
 STRING 11876
@@ -83647,9 +83641,9 @@ Gives Dwarven Warriors, Thanes and Baelgun Flamebeard a <A02O,DataA1>% chance to
 }
 
 STRING 13937
-// Upgrades: R01X (Disease Cloud), Ubertip (Tooltip - Extended)
+// Abilities: A13Y (Thirst for Blood), Name (Name)
 {
-Improves Abominations, Meat Wagons, Plague Titans, and Plaguelings by increasing their movent speed by 35 and increasing Disease Cloud's duration by 30 seconds.|n|n|cffffcc00Cannot be researched with Revenants.|r
+Thirst for Blood
 }
 
 STRING 13938
@@ -85537,9 +85531,9 @@ Citadel Shield
 }
 
 STRING 14252
-// Upgrades: R08T (Cannibalize), Ubertip (Tooltip - Extended)
+// Abilities: A13Y (Thirst for Blood), Tip (Tooltip - Normal)
 {
-Replaces Abominations with Revenants, which have the Persistent Soul ability and attack slightly faster.|n|n|cfff5962dPersistent Soul:|R When this unit dies, it reanimates the highest level nearby corpse for 40 seconds.|n|n|cffffcc00Cannot be researched with Epidemic.|r
+Thirst for Blood
 }
 
 STRING 14253
@@ -105031,6 +105025,12 @@ STRING 17507
 (Forsaken 
 }
 
+STRING 17508
+// Abilities: A0I6 (Felsteel Plating), Tip (Tooltip - Normal)
+{
+Lesser Felsteel Plating
+}
+
 STRING 17509
 // Abilities: A0BR (Surge of Power), Researchubertip (Tooltip - Learn - Extended)
 {
@@ -111465,6 +111465,12 @@ STRING 18580
 // Units: ucry (Crypt Fiend), Ubertip (Tooltip - Extended)
 {
 Nerubian husk raised for the Scourge.|n|cfff5962dAbilities:|R Burrow|n|cfff5962dCan Learn:|R Web|n|n|cffffcc00Attacks land and air units.|r
+}
+
+STRING 18581
+// Abilities: A0I6 (Felsteel Plating), Ubertip (Tooltip - Normal - Extended)
+{
+Gives a 10% chance for an attack to be absorbed reducing damage taken by 25 damage. Attacks cannot be reduced below 3 damage.
 }
 
 STRING 18582
@@ -123168,12 +123174,6 @@ STRING 20531
 Research Nathrezim Master Training
 }
 
-STRING 20532
-// Upgrades: R042 (Shaman Adept Training,Shaman Master Training), Ubertip (Tooltip - Extended)
-{
-Increases Nathrezims' mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Charm.
-}
-
 STRING 20533
 // Abilities: A137 (King of Lordaeron sword), Tip (Tooltip - Normal)
 {
@@ -124628,7 +124628,7 @@ W
 }
 
 STRING 20775
-// Upgrades: Rhlh (Improved Lumber Harvesting,Advanced Lumber Harvesting), Hotkey (Hotkey)
+// Abilities: A13Y (Thirst for Blood), Hotkey (Hotkey - Normal)
 {
 E
 }
@@ -124754,7 +124754,7 @@ Q
 }
 
 STRING 20796
-// Upgrades: Renb (Nature's Blessing), Hotkey (Hotkey)
+// Upgrades: Rhlh (Improved Lumber Harvesting,Advanced Lumber Harvesting), Hotkey (Hotkey)
 {
 E
 }
@@ -125078,7 +125078,7 @@ High Astromancer
 }
 
 STRING 20850
-// Abilities: A12O (Felsteel Plating), Name (Name)
+// Abilities: A12O (Felsteel Plating), Tip (Tooltip - Normal)
 {
 Felsteel Plating
 }
@@ -125126,13 +125126,13 @@ E
 }
 
 STRING 20858
-// Upgrades: R06K (Defend), Hotkey (Hotkey)
+// Upgrades: Renb (Nature's Blessing), Hotkey (Hotkey)
 {
 E
 }
 
 STRING 20859
-// Upgrades: R06G (Defend), Hotkey (Hotkey)
+// Upgrades: R06K (Defend), Hotkey (Hotkey)
 {
 E
 }
@@ -125150,7 +125150,7 @@ W
 }
 
 STRING 20862
-// Upgrades: R06F (Defend), Hotkey (Hotkey)
+// Upgrades: R06G (Defend), Hotkey (Hotkey)
 {
 E
 }
@@ -125174,7 +125174,7 @@ Dark art mage of the horde.|n|cfff5962dAbilities:|R Firebolt|n|cfff5962dCan Lear
 }
 
 STRING 20866
-// Upgrades: R064 (Nature's Blessing), Hotkey (Hotkey)
+// Upgrades: R06F (Defend), Hotkey (Hotkey)
 {
 E
 }
@@ -125534,7 +125534,7 @@ Salvation
 }
 
 STRING 20926
-// Upgrades: R03M (Defend), Hotkey (Hotkey)
+// Upgrades: R064 (Nature's Blessing), Hotkey (Hotkey)
 {
 E
 }
@@ -125786,15 +125786,15 @@ Gives a 25% chance for an attack to be absorbed reducing damage taken by 40 dama
 }
 
 STRING 20968
-// Abilities: A12O (Felsteel Plating), Ubertip (Tooltip - Normal - Extended)
+// Upgrades: Robf (Burning Oil), Ubertip (Tooltip - Extended)
 {
-Gives a 35% chance for an attack to be absorbed reducing damage taken by 40 damage. Attacks cannot be reduced below 3 damage.
+Improves Fel Grunts, Crossbowmen and Bonecrushers by increasing their hit points by 15% and their hit point regeneration by 0.8.
 }
 
 STRING 20969
-// Abilities: A12O (Felsteel Plating), Tip (Tooltip - Normal)
+// Upgrades: R01X (Disease Cloud), Ubertip (Tooltip - Extended)
 {
-Felsteel Plating
+Improves Abominations, Meat Wagons, Plague Titans, and Plaguelings by increasing their movent speed by 35 and increasing Disease Cloud's duration by 30 seconds.|n|n
 }
 
 STRING 20970
@@ -126140,7 +126140,7 @@ Train Bladesman
 }
 
 STRING 21027
-// Upgrades: R02P (Backpack), Hotkey (Hotkey)
+// Upgrades: R03M (Defend), Hotkey (Hotkey)
 {
 E
 }
@@ -126290,7 +126290,7 @@ Increases Astromancer 's mana capacity, attack damage and gives them the ability
 }
 
 STRING 21052
-// Upgrades: R03O (Animal War Training), Hotkey (Hotkey)
+// Upgrades: R02P (Backpack), Hotkey (Hotkey)
 {
 E
 }
@@ -126452,13 +126452,13 @@ Well-versed sorceress in the arcane arts.|n|cfff5962dAbilities:|R Magic Missile|
 }
 
 STRING 21079
-// Units: h02D (Geomancer), Casterupgradename (Caster Upgrade Names)
+// Units: h01I (Arcanist), Casterupgradename (Caster Upgrade Names)
 {
 Initiate, Adept, Master, Grandmaster
 }
 
 STRING 21080
-// Units: h01I (Arcanist), Casterupgradename (Caster Upgrade Names)
+// Units: o04O (Alchemist), Casterupgradename (Caster Upgrade Names)
 {
 Initiate, Adept, Master, Grandmaster
 }
@@ -127058,9 +127058,9 @@ Increases Necromancers' mana capacity, mana regeneration rate, attack damage and
 }
 
 STRING 21180
-// Upgrades: Ruba (Banshee Adept Training,Banshee Master Training), Ubertip (Tooltip - Extended)
+// Abilities: A13Y (Thirst for Blood), Ubertip (Tooltip - Normal - Extended)
 {
-Increases Banshees' mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Freezing Shield.
+Adds 50 bonus damage to the unit and causes its attacks to heal it for 80% of damage dealt. |nLasts 15 seconds.
 }
 
 STRING 21181
@@ -127826,7 +127826,7 @@ E
 }
 
 STRING 21308
-// Upgrades: R097 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R03O (Animal War Training), Hotkey (Hotkey)
 {
 E
 }
@@ -127915,12 +127915,6 @@ STRING 21322
 (Scourge)
 }
 
-STRING 21323
-// Units: o04P (Nathrezim Infiltrator), Ubertip (Tooltip - Extended)
-{
-Shadowy Nathrezim Agents.|n|cfff5962dAbilities:|R Vampiric Attack, Dark Regeneration, Resistant Skin, Shadow Veil, Magic Resistance |n|cfff5962dCan learn:|R Charm, Sight of Sargeras, Astral Walk|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land units.|r
-}
-
 STRING 21324
 // Abilities: A13T (Vampiric Attack), EditorSuffix (Editor Suffix)
 {
@@ -127976,9 +127970,9 @@ Q
 }
 
 STRING 21333
-// Units: o04O (Alchemist), Casterupgradename (Caster Upgrade Names)
+// Upgrades: R042 (Shaman Adept Training,Shaman Master Training), Ubertip (Tooltip - Extended)
 {
-Initiate, Adept, Master, Grandmaster
+Increases Nathrezims' mana capacity, attack damage and gives them the ability to cast Sight of Sargeras.
 }
 
 STRING 21334
@@ -128023,6 +128017,18 @@ STRING 21340
 Freezing Shield
 }
 
+STRING 21341
+// Upgrades: R09W (Magic Sentry), effect1 (Effect 1)
+{
+rlev
+}
+
+STRING 21342
+// Upgrades: R09W (Magic Sentry), EditorSuffix (Editor Suffix)
+{
+(Fel Horde)
+}
+
 STRING 21343
 // Upgrades: Rune (Necromancer Adept Training,Necromancer Master Training), Ubertip (Tooltip - Extended)
 {
@@ -128030,7 +128036,7 @@ Increases Necromancers' mana capacity, mana regeneration rate, attack damage and
 }
 
 STRING 21344
-// Upgrades: R086 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R097 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 E
 }
@@ -128077,6 +128083,12 @@ STRING 21351
 X
 }
 
+STRING 21352
+// Upgrades: R09W (Magic Sentry), Hotkey (Hotkey)
+{
+X
+}
+
 STRING 21353
 // Abilities: AUdr (Dark Ritual), Ubertip (Tooltip - Normal - Extended)
 {
@@ -128111,6 +128123,12 @@ STRING 21358
 // Abilities: A0JL (Slow Poison), Ubertip (Tooltip - Normal - Extended)
 {
 A poison attack that deals <Aspo,DataA1> damage per second, and reduces an enemy units attack by <Aspo,DataC1,%>% for <Aspo,Dur1> seconds.
+}
+
+STRING 21359
+// Upgrades: R09W (Magic Sentry), Name (Name)
+{
+Felsteel Refining
 }
 
 STRING 21360
@@ -128159,5 +128177,71 @@ STRING 21367
 // Abilities: A0UE (Necromantic Cleansing), Ubertip (Tooltip - Normal - Extended)
 {
 Removes all buffs from units in a target area and deals 400 damage to summoned units.|r
+}
+
+STRING 21368
+// Upgrades: R09W (Magic Sentry), Tip (Tooltip)
+{
+Felsteel Refining
+}
+
+STRING 21369
+// Upgrades: R09W (Magic Sentry), Ubertip (Tooltip - Extended)
+{
+Improves Felsteel Plating, increasing its chance to reduce damage to 25%, and total damage reduced to 40.
+}
+
+STRING 21370
+// Upgrades: R09W (Magic Sentry), Name (Name)
+{
+Improved Greater Carrion Swarm
+}
+
+STRING 21371
+// Upgrades: R09W (Magic Sentry), Tip (Tooltip)
+{
+Improved Greater Carrion Swarm
+}
+
+STRING 21372
+// Upgrades: R09W (Magic Sentry), Ubertip (Tooltip - Extended)
+{
+Improves Dreadlords' Carrion Swarm by increasing its damage to 105 and max damage to 100. Also reduces the cooldown.
+}
+
+STRING 21373
+// Upgrades: R09W (Magic Sentry), Hotkey (Hotkey)
+{
+X
+}
+
+STRING 21374
+// Upgrades: R09W (Magic Sentry), EditorSuffix (Editor Suffix)
+{
+(Legion)
+}
+
+STRING 21375
+// Upgrades: R08T (Cannibalize), Ubertip (Tooltip - Extended)
+{
+Replaces Abominations with Revenants, which have the Persistent Soul ability and attack slightly faster.|n|n|cfff5962dPersistent Soul:|R When this unit dies, it reanimates the highest level nearby corpse for 40 seconds.|n|n|
+}
+
+STRING 21376
+// Upgrades: R098 (Burning Oil), Ubertip (Tooltip - Extended)
+{
+Causes Fel Grunts to transform into Skeletal Grunts upon death, allowing them to continue fighting for 40 seconds.|n|n
+}
+
+STRING 21377
+// Upgrades: R042 (Shaman Adept Training,Shaman Master Training), Ubertip (Tooltip - Extended)
+{
+Increases Nathrezims' mana capacity, attack damage and gives them the ability to cast Charm.
+}
+
+STRING 21378
+// Upgrades: R086 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+{
+E
 }
 

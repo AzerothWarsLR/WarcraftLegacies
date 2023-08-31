@@ -93,7 +93,7 @@ public static class Regions
 	public static Rectangle Dark_Portal_Entrance_2 { get; set; } = new Rectangle(16544f, -19840f, 16960f, -19520f);
 	public static Rectangle Dark_Portal_Entrance_3 { get; set; } = new Rectangle(17376f, -19936f, 17792f, -19616f);
 	public static Rectangle Chen { get; set; } = new Rectangle(-10592f, -5568f, -10144f, -5024f);
-	public static Rectangle QuelDanil_Lodge { get; set; } = new Rectangle(15616f, 5088f, 16416f, 5888f);
+	public static Rectangle QuelDanil_Lodge { get; set; } = new Rectangle(17056f, 6080f, 17920f, 6944f);
 	public static Rectangle Andrassil { get; set; } = new Rectangle(4992f, 18400f, 5440f, 18816f);
 	public static Rectangle VaultoftheWardens { get; set; } = new Rectangle(-2432f, 3840f, -2112f, 4160f);
 	public static Rectangle Theramore { get; set; } = new Rectangle(-8480f, -10304f, -6016f, -7776f);
@@ -276,7 +276,6 @@ public static class Regions
 	public static Rectangle ArtifactDummyInstance { get; set; } = new Rectangle(19584f, 23232f, 22688f, 24800f);
 	public static Rectangle Shadowforge_City { get; set; } = new Rectangle(11488f, -9728f, 13248f, -8320f);
 	public static Rectangle BlackrockUnlock { get; set; } = new Rectangle(11840f, -12224f, 13632f, -10208f);
-	public static Rectangle BloodElfSecondChanceSpawn { get; set; } = new Rectangle(10432f, 3520f, 10816f, 3936f);
 	public static Rectangle CaerDarrow { get; set; } = new Rectangle(13952f, 6208f, 15648f, 8064f);
 	public static Rectangle TombOfSargerasInteriorA { get; set; } = new Rectangle(-832f, 10144f, 704f, 11168f);
 	public static Rectangle TombOfSargerasInteriorB { get; set; } = new Rectangle(-1632f, 9152f, 64f, 10176f);
@@ -359,5 +358,6 @@ public static class Regions
 	public static Rectangle ArthasRandomPoint { get; set; } = new Rectangle(5664f, 3520f, 22304f, 10048f);
 	public static Rectangle HideUnitBottomLeft { get; set; } = new Rectangle(-24128f, -30848f, -9024f, -22688f);
 	public static Rectangle GromRandomPoint { get; set; } = new Rectangle(-9824f, -3808f, -8160f, -1504f);
+	public static Rectangle BloodElfSecondChanceSpawn { get; set; } = new Rectangle(17376f, 6144f, 17760f, 6560f);
 
 }
