@@ -15,7 +15,7 @@ namespace Launcher.ValueResolvers
     public Color Resolve(RegionDto source, Region destination, Color destMember, ResolutionContext context)
     {
       var sourceColor = source.Color;
-      return Color.FromArgb(sourceColor.A, sourceColor.B, sourceColor.G, sourceColor.B);
+      return Color.FromArgb(sourceColor.A, sourceColor.R, sourceColor.G, sourceColor.B);
     }
   }
 }
