@@ -113,7 +113,8 @@ namespace Launcher.Services
         unit.StatsHitPointsRegenerationRate = 0;
       }
 
-      map.UnitObjectData = objectDatabase.GetAllData(ObjectDataFormatVersion.v2).UnitData;
+      map.UnitObjectData = objectDatabase.GetAllData().UnitData;
+      map.UnitObjectData.FixUnkValues();
     }
     
     private static bool IsControlPoint(War3Api.Object.Unit unit)
