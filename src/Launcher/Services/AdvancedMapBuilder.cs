@@ -13,7 +13,6 @@ using War3Api.Object.Enums;
 using War3Net.Build;
 using War3Net.Build.Extensions;
 using War3Net.Build.Info;
-using War3Net.Build.Object;
 using War3Net.IO.Mpq;
 using CoreSystemProvider = CSharpLua.CoreSystem.CoreSystemProvider;
 
@@ -81,7 +80,9 @@ namespace Launcher.Services
     private void SupplementMap(Map map, AdvancedMapBuilderOptions options, string mapFilePath)
     {
       ConfigureControlPointData(map);
-      SetMapTitles(map, _mapSettings.Version);
+      
+      if (options.SetMapTitles)
+        SetMapTitles(map, _mapSettings.Version);
 
       if (options.Launch)
         SetTestPlayerSlot(map, _compilerSettings.TestingPlayerSlot);
@@ -184,7 +185,7 @@ namespace Launcher.Services
     
     private string GetMapFullFilePath(AdvancedMapBuilderOptions options)
     {
-      return options.SourceCodeProjectFolderPath != null
+      return options.SetMapTitles
         ? $"{Path.Combine(options.OutputDirectory, options.MapName)}{_mapSettings.Version}.w3x"
         : $"{Path.Combine(options.OutputDirectory, options.MapName)}.w3x";
     }

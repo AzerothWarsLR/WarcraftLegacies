@@ -14,11 +14,11 @@
     },
     "WarcraftLegacies: Test": {
       "commandName": "Project",
-      "commandLineArgs": "mapdata-to-w3x WarcraftLegacies true \"..\\..\\..\\..\\..\\mapdata\\WarcraftLegacies\" \"..\\..\\..\\..\\..\\artifacts\" --sourcecodepath \"..\\..\\..\\..\\WarcraftLegacies.Source\""
+      "commandLineArgs": "mapdata-to-w3x WarcraftLegacies true \"..\\..\\..\\..\\..\\mapdata\\WarcraftLegacies\" \"..\\..\\..\\..\\..\\artifacts\" --sourcecodepath \"..\\..\\..\\..\\WarcraftLegacies.Source\" --set-map-titles True"
     },
     "WarcraftLegacies: Publish": {
       "commandName": "Project",
-      "commandLineArgs": "mapdata-to-w3x WarcraftLegacies false \"..\\..\\..\\..\\..\\mapdata\\WarcraftLegacies\" \"..\\..\\..\\..\\..\\maps\\published\" --sourcecodepath \"..\\..\\..\\..\\WarcraftLegacies.Source\""
+      "commandLineArgs": "mapdata-to-w3x WarcraftLegacies false \"..\\..\\..\\..\\..\\mapdata\\WarcraftLegacies\" \"..\\..\\..\\..\\..\\maps\\published\" --sourcecodepath \"..\\..\\..\\..\\WarcraftLegacies.Source\" --set-map-titles True"
     },
     "WarcraftLegacies: Generate Constants": {
       "commandName": "Project",

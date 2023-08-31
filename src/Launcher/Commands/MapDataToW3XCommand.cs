@@ -44,17 +44,23 @@ namespace Launcher.Commands
         description: "Any overwritten maps will be moved to this directory instead of being deleted.");
       command.AddOption(backupDirectoryOption);
       
+      var setMapTitlesOption = new Option<bool>(
+        name: "--set-map-titles",
+        description: "Whether or not to adjust the map's title, file name, and loading screen title.");
+      command.AddOption(setMapTitlesOption);
+      
       var outputTypeOption = new Option<MapOutputType>(
         name: "--output-type",
         description: "Whether the output should be a .w3x file or a folder.");
       command.AddOption(outputTypeOption);
 
       command.SetHandler(Run, mapNameArgument, launchArgument, mapDataDirectoryArgument, outputDirectoryArgument,
-        sourceCodeFolderPathOption, backupDirectoryOption, outputTypeOption);
+        sourceCodeFolderPathOption, backupDirectoryOption, setMapTitlesOption, outputTypeOption);
     }
 
     private static void Run(string mapName, bool launch, string mapDataDirectory, string outputDirectory,
-      string? sourceCodeFolderPath, string? backupDirectory, MapOutputType mapOutputType = MapOutputType.File)
+      string? sourceCodeFolderPath, string? backupDirectory, bool setMapTitles,
+      MapOutputType mapOutputType = MapOutputType.File)
     {
       var appConfiguration = Program.GetAppConfiguration();
       var compilerSettings = appConfiguration.GetRequiredSection(nameof(CompilerSettings)).Get<CompilerSettings>();
@@ -71,7 +77,8 @@ namespace Launcher.Commands
         OutputDirectory = outputDirectory,
         SourceCodeProjectFolderPath = sourceCodeFolderPath,
         Launch = launch,
-        BackupDirectory = backupDirectory
+        BackupDirectory = backupDirectory,
+        SetMapTitles = setMapTitles
       };
       var advancedMapBuilder = new AdvancedMapBuilder(compilerSettings, mapSettings);
       

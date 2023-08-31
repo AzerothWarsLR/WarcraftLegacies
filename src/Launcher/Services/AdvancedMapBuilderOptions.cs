@@ -20,6 +20,11 @@ namespace Launcher.Services
     public string? SourceCodeProjectFolderPath { get; init; }
     
     /// <summary>
+    /// Whether or not to set the output map's title, loading screen title, and file name.
+    /// </summary>
+    public bool SetMapTitles { get; init; }
+    
+    /// <summary>
     /// Whether or not to launch the map after building.
     /// </summary>
     public bool Launch { get; init; }
