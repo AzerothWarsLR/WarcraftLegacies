@@ -53788,25 +53788,25 @@
           "Level": 1,
           "Id": 1852072801,
           "Type": 2,
-          "Value": 45
+          "Value": 60
         },
         {
           "Level": 2,
           "Id": 1852072801,
           "Type": 2,
-          "Value": 45
+          "Value": 60
         },
         {
           "Level": 3,
           "Id": 1852072801,
           "Type": 2,
-          "Value": 45
+          "Value": 60
         },
         {
           "Level": 4,
           "Id": 1852072801,
           "Type": 2,
-          "Value": 45
+          "Value": 60
         },
         {
           "Level": 1,
@@ -84299,6 +84299,24 @@
           "Id": 1920296033,
           "Type": 2,
           "Value": 0.5
+        },
+        {
+          "Level": 1,
+          "Id": 1852072801,
+          "Type": 2,
+          "Value": 180
+        },
+        {
+          "Level": 2,
+          "Id": 1852072801,
+          "Type": 2,
+          "Value": 160
+        },
+        {
+          "Level": 3,
+          "Id": 1852072801,
+          "Type": 2,
+          "Value": 140
         }
       ]
     },
@@ -126134,14 +126152,14 @@
           "Pointer": 3,
           "Id": 862675558,
           "Type": 2,
-          "Value": 35
+          "Value": 15
         },
         {
           "Level": 1,
           "Pointer": 1,
           "Id": 829121126,
           "Type": 2,
-          "Value": 60
+          "Value": 30
         }
       ]
     },
@@ -127176,19 +127194,19 @@
           "Level": 2,
           "Id": 1918989409,
           "Type": 3,
-          "Value": "ground,air,friend,self,invu,vuln"
+          "Value": "air,friend,ground,invulnerable,vulnerable"
         },
         {
           "Level": 3,
           "Id": 1918989409,
           "Type": 3,
-          "Value": "ground,air,friend,self,invu,vuln"
+          "Value": "air,friend,ground,invulnerable,vulnerable"
         },
         {
           "Level": 4,
           "Id": 1918989409,
           "Type": 3,
-          "Value": "ground,air,friend,self,invu,vuln"
+          "Value": "air,friend,ground,invulnerable,vulnerable"
         },
         {
           "Level": 1,
@@ -127219,6 +127237,12 @@
           "Pointer": 3,
           "Id": 846228809,
           "Value": 475
+        },
+        {
+          "Level": 1,
+          "Id": 1918989409,
+          "Type": 3,
+          "Value": "air,friend,ground,invulnerable,vulnerable"
         }
       ]
     },
@@ -127270,7 +127294,7 @@
           "Pointer": 2,
           "Id": 846422869,
           "Type": 2,
-          "Value": 950
+          "Value": 900
         },
         {
           "Level": 2,
