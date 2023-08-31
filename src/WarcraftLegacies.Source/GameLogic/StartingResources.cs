@@ -11,10 +11,10 @@ namespace WarcraftLegacies.Source.GameLogic
     /// <summary>
     /// After a period of time, gives all players their starting resources.
     /// </summary>
-    public static void Setup()
+    public static void Setup(int introSeconds)
     {
       var trig = CreateTrigger();
-      TriggerRegisterTimerEvent(trig, 58, false);
+      TriggerRegisterTimerEvent(trig, introSeconds, false);
       TriggerAddAction(trig, () =>
       {
         foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())

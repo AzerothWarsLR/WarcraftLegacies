@@ -24,13 +24,13 @@ namespace WarcraftLegacies.Source.GameLogic
     /// <summary>
     /// Sets up <see cref="ZandalarGoblinChoiceDialogue"/>.
     /// </summary>
-    public static void Setup()
+    public static void Setup(int introSeconds)
     {
       DialogSetMessage(PickDialogue, "Pick your Faction");
       var timer = CreateTimer();
-      TimerStart(timer, 4, false, StartFactionPick);
+      TimerStart(timer, 2, false, StartFactionPick);
       var concludeTimer = CreateTimer();
-      TimerStart(concludeTimer, 24, false, ConcludeFactionPick);
+      TimerStart(concludeTimer, introSeconds - 12, false, ConcludeFactionPick);
     }
 
     private static void ConcludeFactionPick()

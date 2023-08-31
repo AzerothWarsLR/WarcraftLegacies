@@ -29,13 +29,13 @@ namespace WarcraftLegacies.Source.GameLogic
     /// <summary>
     /// Sets up <see cref="OpenAllianceVote"/>.
     /// </summary>
-    public static void Setup()
+    public static void Setup(int introSeconds)
     {
       DialogSetMessage(VoteDialogue, "Vote Game Mode");
       var timer = CreateTimer();
-      TimerStart(timer, 49, false, StartVote);
+      TimerStart(timer, introSeconds - 11, false, StartVote);
       var concludeTimer = CreateTimer();
-      TimerStart(concludeTimer, 59, false, ConcludeVote);
+      TimerStart(concludeTimer, introSeconds - 1, false, ConcludeVote);
     }
     
     private static void ConcludeVote()
