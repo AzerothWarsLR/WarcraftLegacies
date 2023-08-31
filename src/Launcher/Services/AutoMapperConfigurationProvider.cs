@@ -53,7 +53,10 @@ namespace Launcher.Services
         cfg.CreateMap<Vector3Dto, Vector3>().ReverseMap();
         cfg.CreateMap<Vector2Dto, Vector2>().ReverseMap();
         cfg.CreateMap<ColorDto, Color>().ReverseMap();
-        cfg.CreateMap<RegionDto, Region>().ReverseMap();
+        cfg.CreateMap<RegionDto, Region>()
+          .ForMember(dest => dest.Color, opt
+          => opt.MapFrom<ColorValueResolver>())
+          .ReverseMap();
         cfg.CreateMap<TriggerItemDto, TriggerItem>().ReverseMap();
       });
       return autoMapperConfig;
