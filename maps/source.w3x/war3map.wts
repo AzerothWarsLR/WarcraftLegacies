@@ -65652,12 +65652,6 @@ STRING 10939
 R
 }
 
-STRING 10940
-// Upgrades: R042 (Shaman Adept Training,Shaman Master Training), Ubertip (Tooltip - Extended)
-{
-Increases Nathrezims' mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Sight of Sargeras.
-}
-
 STRING 10941
 // Abilities: A08Q (Lightning Streak), Researchhotkey (Hotkey - Learn)
 {
@@ -68367,6 +68361,12 @@ STRING 11390
 Building - Troll Hut
 }
 
+STRING 11391
+// Units: o04P (Nathrezim Infiltrator), Ubertip (Tooltip - Extended)
+{
+Shadowy Nathrezim Agents.|n|cfff5962dAbilities:|R Thirst for Blood, Dark Regeneration, Resistant Skin, Permanent Invisibility, Magic Resistance |n|cfff5962dCan learn:|R Charm, Sight of Sargeras, Astral Walk|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land units.|r
+}
+
 STRING 11392
 // Abilities: A0AS (Flame Shield), Hotkey (Hotkey - Normal)
 {
@@ -70087,6 +70087,12 @@ STRING 11678
 // Units: h0BG (Guard Tower), Hotkey (Hotkey)
 {
 Z
+}
+
+STRING 11679
+// Abilities: A13Y (Thirst for Blood), EditorSuffix (Editor Suffix)
+{
+(Nathrezim)
 }
 
 STRING 11680
@@ -83634,6 +83640,12 @@ STRING 13936
 Gives Dwarven Warriors, Thanes and Baelgun Flamebeard a <A02O,DataA1>% chance to reduce incoming damage by <A02O,DataC1>.
 }
 
+STRING 13937
+// Abilities: A13Y (Thirst for Blood), Name (Name)
+{
+Thirst for Blood
+}
+
 STRING 13938
 // Upgrades: Rhme (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), effect4 (Effect 4)
 {
@@ -85516,6 +85528,12 @@ STRING 14251
 // Abilities: A0N8 (Citadel Shield), Name (Name)
 {
 Citadel Shield
+}
+
+STRING 14252
+// Abilities: A13Y (Thirst for Blood), Tip (Tooltip - Normal)
+{
+Thirst for Blood
 }
 
 STRING 14253
@@ -123156,12 +123174,6 @@ STRING 20531
 Research Nathrezim Master Training
 }
 
-STRING 20532
-// Upgrades: R042 (Shaman Adept Training,Shaman Master Training), Ubertip (Tooltip - Extended)
-{
-Increases Nathrezims' mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Charm.
-}
-
 STRING 20533
 // Abilities: A137 (King of Lordaeron sword), Tip (Tooltip - Normal)
 {
@@ -124616,7 +124628,7 @@ W
 }
 
 STRING 20775
-// Upgrades: Rhlh (Improved Lumber Harvesting,Advanced Lumber Harvesting), Hotkey (Hotkey)
+// Abilities: A13Y (Thirst for Blood), Hotkey (Hotkey - Normal)
 {
 E
 }
@@ -124742,7 +124754,7 @@ Q
 }
 
 STRING 20796
-// Upgrades: Renb (Nature's Blessing), Hotkey (Hotkey)
+// Upgrades: Rhlh (Improved Lumber Harvesting,Advanced Lumber Harvesting), Hotkey (Hotkey)
 {
 E
 }
@@ -125114,13 +125126,13 @@ E
 }
 
 STRING 20858
-// Upgrades: R06K (Defend), Hotkey (Hotkey)
+// Upgrades: Renb (Nature's Blessing), Hotkey (Hotkey)
 {
 E
 }
 
 STRING 20859
-// Upgrades: R06G (Defend), Hotkey (Hotkey)
+// Upgrades: R06K (Defend), Hotkey (Hotkey)
 {
 E
 }
@@ -125138,7 +125150,7 @@ W
 }
 
 STRING 20862
-// Upgrades: R06F (Defend), Hotkey (Hotkey)
+// Upgrades: R06G (Defend), Hotkey (Hotkey)
 {
 E
 }
@@ -125162,7 +125174,7 @@ Dark art mage of the horde.|n|cfff5962dAbilities:|R Firebolt|n|cfff5962dCan Lear
 }
 
 STRING 20866
-// Upgrades: R064 (Nature's Blessing), Hotkey (Hotkey)
+// Upgrades: R06F (Defend), Hotkey (Hotkey)
 {
 E
 }
@@ -125522,7 +125534,7 @@ Salvation
 }
 
 STRING 20926
-// Upgrades: R03M (Defend), Hotkey (Hotkey)
+// Upgrades: R064 (Nature's Blessing), Hotkey (Hotkey)
 {
 E
 }
@@ -126128,7 +126140,7 @@ Train Bladesman
 }
 
 STRING 21027
-// Upgrades: R02P (Backpack), Hotkey (Hotkey)
+// Upgrades: R03M (Defend), Hotkey (Hotkey)
 {
 E
 }
@@ -126278,7 +126290,7 @@ Increases Astromancer 's mana capacity, attack damage and gives them the ability
 }
 
 STRING 21052
-// Upgrades: R03O (Animal War Training), Hotkey (Hotkey)
+// Upgrades: R02P (Backpack), Hotkey (Hotkey)
 {
 E
 }
@@ -127045,6 +127057,12 @@ STRING 21179
 Increases Necromancers' mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Unholy Frenzy.
 }
 
+STRING 21180
+// Abilities: A13Y (Thirst for Blood), Ubertip (Tooltip - Normal - Extended)
+{
+Adds 50 bonus damage to the unit and causes its attacks to heal it for 80% of damage dealt. |nLasts 15 seconds.
+}
+
 STRING 21181
 // Upgrades: Rune (Necromancer Adept Training,Necromancer Master Training), Tip (Tooltip)
 {
@@ -127808,7 +127826,7 @@ E
 }
 
 STRING 21308
-// Upgrades: R097 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R03O (Animal War Training), Hotkey (Hotkey)
 {
 E
 }
@@ -127897,12 +127915,6 @@ STRING 21322
 (Scourge)
 }
 
-STRING 21323
-// Units: o04P (Nathrezim Infiltrator), Ubertip (Tooltip - Extended)
-{
-Shadowy Nathrezim Agents.|n|cfff5962dAbilities:|R Vampiric Attack, Dark Regeneration, Resistant Skin, Shadow Veil, Magic Resistance |n|cfff5962dCan learn:|R Charm, Sight of Sargeras, Astral Walk|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land units.|r
-}
-
 STRING 21324
 // Abilities: A13T (Vampiric Attack), EditorSuffix (Editor Suffix)
 {
@@ -127955,6 +127967,12 @@ STRING 21332
 // Upgrades: R09N (Priest Adept Training,Priest Master Training), Hotkey (Hotkey)
 {
 Q
+}
+
+STRING 21333
+// Upgrades: R042 (Shaman Adept Training,Shaman Master Training), Ubertip (Tooltip - Extended)
+{
+Increases Nathrezims' mana capacity, attack damage and gives them the ability to cast Sight of Sargeras.
 }
 
 STRING 21334
@@ -128018,7 +128036,7 @@ Increases Necromancers' mana capacity, mana regeneration rate, attack damage and
 }
 
 STRING 21344
-// Upgrades: R086 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R097 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 E
 }
@@ -128213,5 +128231,17 @@ STRING 21376
 // Upgrades: R098 (Burning Oil), Ubertip (Tooltip - Extended)
 {
 Causes Fel Grunts to transform into Skeletal Grunts upon death, allowing them to continue fighting for 40 seconds.|n|n
+}
+
+STRING 21377
+// Upgrades: R042 (Shaman Adept Training,Shaman Master Training), Ubertip (Tooltip - Extended)
+{
+Increases Nathrezims' mana capacity, attack damage and gives them the ability to cast Charm.
+}
+
+STRING 21378
+// Upgrades: R086 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+{
+E
 }
 
