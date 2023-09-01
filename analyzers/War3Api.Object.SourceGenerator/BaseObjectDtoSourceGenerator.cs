@@ -14,6 +14,7 @@ namespace War3Api.Object.SourceGenerator;
 public class BaseObjectDtoSourceGenerator : ISourceGenerator
 {
   private const string BaseObjectTypeName = "War3Api.Object.BaseObject";
+  private const string OutputNamespace = "War3Api.Object.DataTransferObjects";
 
   /// <inheritdoc />
   public void Initialize(GeneratorInitializationContext context)
@@ -50,7 +51,7 @@ public class BaseObjectDtoSourceGenerator : ISourceGenerator
           .AddModifiers(SyntaxFactory.Token(SyntaxKind.PublicKeyword))
           .AddMembers(properties);
 
-        var dtoNamespace = SyntaxFactory.NamespaceDeclaration(SyntaxFactory.ParseName("Launcher.DataTransferObjects.Generated"))
+        var dtoNamespace = SyntaxFactory.NamespaceDeclaration(SyntaxFactory.ParseName(OutputNamespace))
           .AddUsings(SyntaxFactory.UsingDirective(SyntaxFactory.ParseName("System")))
           .AddMembers(dtoClass)
           .NormalizeWhitespace();
