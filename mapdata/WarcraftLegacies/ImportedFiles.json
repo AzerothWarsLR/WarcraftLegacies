@@ -14200,6 +14200,14 @@
     {
       "Flags": 29,
       "FullPath": "ReplaceableTextures\\CommandButtonsDisabled\\DISBTNHeroDreadLordB.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures\\CommandButtons\\BTNSpell_Shadow_LifeDrain.blp"
+    },
+    {
+      "Flags": 29,
+      "FullPath": "ReplaceableTextures\\CommandButtonsDisabled\\DISBTNSpell_Shadow_LifeDrain.blp"
     }
   ]
 }
