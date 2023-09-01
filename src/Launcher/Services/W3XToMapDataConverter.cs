@@ -56,7 +56,6 @@ namespace Launcher.Services
     private const string InfoPath = "Info.json";
     private const string EnvironmentPath = "Environment.json";
     private const string DoodadsPath = "Doodads.json";
-    private const string TriggersPath = "Triggers.json";
     private const string UpgradeSkinObjectDataPath = "UpgradeSkinObjectData.json";
     private const string UnitSkinObjectDataPath = "UnitSkinObjectData.json";
     private const string ItemSkinObjectDataPath = "ItemSkinObjectData.json";
@@ -114,8 +113,6 @@ namespace Launcher.Services
       SerializeAndWrite<ItemObjectData, MapItemObjectDataDto>(map.ItemObjectData, outputFolderPath, ItemObjectDataPath);
       SerializeAndWrite<UnitObjectData, MapUnitObjectDataDto>(map.UnitObjectData, outputFolderPath, UnitObjectDataPath);
       SerializeAndWrite<UpgradeObjectData, MapUpgradeObjectDataDto>(map.UpgradeObjectData, outputFolderPath, UpgradeObjectDataPath);
-      SerializeAndWrite<MapTriggers, MapTriggersDto>(map.Triggers, outputFolderPath, TriggersPath);
-      
       SerializeAndWrite<AbilityObjectData, MapAbilityObjectDataDto>(map.AbilitySkinObjectData, outputFolderPath, AbilitySkinObjectDataPath);
       SerializeAndWrite<BuffObjectData, MapBuffObjectDataDto>(map.BuffSkinObjectData, outputFolderPath, BuffSkinObjectDataPath);
       SerializeAndWrite<DestructableObjectData, MapDestructableObjectDataDto>(map.DestructableSkinObjectData, outputFolderPath, DestructableSkinObjectDataPath);

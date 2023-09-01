@@ -44,7 +44,6 @@ namespace Launcher.Services
     private const string InfoPath = "Info.json";
     private const string EnvironmentPath = "Environment.json";
     private const string DoodadsPath = "Doodads.json";
-    private const string TriggersPath = "Triggers.json";
     private const string UpgradeSkinObjectDataPath = "UpgradeSkinObjectData.json";
     private const string UnitSkinObjectDataPath = "UnitSkinObjectData.json";
     private const string ItemSkinObjectDataPath = "ItemSkinObjectData.json";
@@ -121,7 +120,7 @@ namespace Launcher.Services
         TriggerStrings = DeserializeFromFile<TriggerStrings, MapTriggerStringsDto>(Path.Combine(mapDataRootDirectory, TriggerStringsPath)),
         Doodads = DeserializeFromFile<MapDoodads, MapDoodadsDto>(Path.Combine(mapDataRootDirectory, DoodadsPath)),
         Units = DeserializeFromFile<MapUnits, MapUnitsDto>(Path.Combine(mapDataRootDirectory, UnitsPath)),
-        Triggers = DeserializeFromFile<MapTriggers, MapTriggersDto>(Path.Combine(mapDataRootDirectory, TriggersPath)),
+        Triggers = GenerateEmptyMapTriggers(),
         AbilitySkinObjectData = DeserializeFromFile<AbilityObjectData, MapAbilityObjectDataDto>(Path.Combine(mapDataRootDirectory, AbilitySkinObjectDataPath)),
         BuffSkinObjectData = DeserializeFromFile<BuffObjectData, MapBuffObjectDataDto>(Path.Combine(mapDataRootDirectory, BuffSkinObjectDataPath)),
         DestructableSkinObjectData = DeserializeFromFile<DestructableObjectData, MapDestructableObjectDataDto>(Path.Combine(mapDataRootDirectory, DestructableSkinObjectDataPath)),
@@ -181,6 +180,17 @@ namespace Launcher.Services
     {
       var dto = JsonSerializer.Deserialize<TDataTransferObject>(File.ReadAllText(filePath), _jsonSerializerOptions);
       return _mapper.Map<TReturn>(dto);
+    }
+
+    private static MapTriggers GenerateEmptyMapTriggers()
+    {
+      return new MapTriggers(MapTriggersFormatVersion.v7, MapTriggersSubVersion.v4)
+      {
+        GameVersion = 2,
+        Variables = new List<VariableDefinition>(),
+        TriggerItems = new List<TriggerItem>(),
+        TriggerItemCounts = new Dictionary<TriggerItemType, int>()
+      };
     }
   }
 }
