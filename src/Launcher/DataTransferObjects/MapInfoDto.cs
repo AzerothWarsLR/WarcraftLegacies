@@ -100,7 +100,7 @@ public sealed class MapInfoDto
 
   public GameDataVersion GameDataVersion { get; set; }
 
-  public List<PlayerData> Players { get; init; } = new();
+  public List<PlayerDataDto> Players { get; init; } = new();
 
   public List<ForceData> Forces { get; init; } = new();
 

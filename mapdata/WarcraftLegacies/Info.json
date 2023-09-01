@@ -58,6 +58,10 @@
       "Race": 2,
       "Flags": 1,
       "Name": "TRIGSTR_250",
+      "StartPosition": {
+        "X": -9344,
+        "Y": -11456
+      },
       "AllyLowPriorityFlags": {},
       "AllyHighPriorityFlags": {},
       "EnemyLowPriorityFlags": {},
@@ -69,6 +73,10 @@
       "Race": 1,
       "Flags": 1,
       "Name": "TRIGSTR_246",
+      "StartPosition": {
+        "X": 12928,
+        "Y": 8448
+      },
       "AllyLowPriorityFlags": {},
       "AllyHighPriorityFlags": {},
       "EnemyLowPriorityFlags": {},
@@ -80,6 +88,10 @@
       "Race": 4,
       "Flags": 1,
       "Name": "TRIGSTR_249",
+      "StartPosition": {
+        "X": 17728,
+        "Y": 12672
+      },
       "AllyLowPriorityFlags": {},
       "AllyHighPriorityFlags": {},
       "EnemyLowPriorityFlags": {},
@@ -91,6 +103,10 @@
       "Race": 3,
       "Flags": 1,
       "Name": "TRIGSTR_243",
+      "StartPosition": {
+        "X": -5504,
+        "Y": 18560
+      },
       "AllyLowPriorityFlags": {},
       "AllyHighPriorityFlags": {},
       "EnemyLowPriorityFlags": {},
@@ -102,6 +118,10 @@
       "Race": 1,
       "Flags": 1,
       "Name": "TRIGSTR_247",
+      "StartPosition": {
+        "X": 12160,
+        "Y": -3328
+      },
       "AllyLowPriorityFlags": {},
       "AllyHighPriorityFlags": {},
       "EnemyLowPriorityFlags": {},
@@ -113,6 +133,10 @@
       "Race": 2,
       "Flags": 1,
       "Name": "TRIGSTR_16174",
+      "StartPosition": {
+        "X": -8448,
+        "Y": -2752
+      },
       "AllyLowPriorityFlags": {},
       "AllyHighPriorityFlags": {},
       "EnemyLowPriorityFlags": {},
@@ -124,6 +148,10 @@
       "Race": 2,
       "Flags": 1,
       "Name": "TRIGSTR_245",
+      "StartPosition": {
+        "X": -3136,
+        "Y": -31040
+      },
       "AllyLowPriorityFlags": {},
       "AllyHighPriorityFlags": {},
       "EnemyLowPriorityFlags": {},
@@ -135,6 +163,10 @@
       "Race": 1,
       "Flags": 1,
       "Name": "TRIGSTR_248",
+      "StartPosition": {
+        "X": 9792,
+        "Y": 2816
+      },
       "AllyLowPriorityFlags": {},
       "AllyHighPriorityFlags": {},
       "EnemyLowPriorityFlags": {},
@@ -146,6 +178,10 @@
       "Race": 2,
       "Flags": 1,
       "Name": "TRIGSTR_1328",
+      "StartPosition": {
+        "X": -8896,
+        "Y": -13504
+      },
       "AllyLowPriorityFlags": {},
       "AllyHighPriorityFlags": {},
       "EnemyLowPriorityFlags": {},
@@ -157,6 +193,10 @@
       "Race": 1,
       "Flags": 1,
       "Name": "TRIGSTR_253",
+      "StartPosition": {
+        "X": 7104,
+        "Y": -15616
+      },
       "AllyLowPriorityFlags": {},
       "AllyHighPriorityFlags": {},
       "EnemyLowPriorityFlags": {},
@@ -168,6 +208,10 @@
       "Race": 4,
       "Flags": 1,
       "Name": "TRIGSTR_254",
+      "StartPosition": {
+        "X": -9344,
+        "Y": 10560
+      },
       "AllyLowPriorityFlags": {},
       "AllyHighPriorityFlags": {},
       "EnemyLowPriorityFlags": {},
@@ -179,6 +223,10 @@
       "Race": 4,
       "Flags": 1,
       "Name": "TRIGSTR_1877",
+      "StartPosition": {
+        "X": -20608,
+        "Y": 8512
+      },
       "AllyLowPriorityFlags": {},
       "AllyHighPriorityFlags": {},
       "EnemyLowPriorityFlags": {},
@@ -190,6 +238,10 @@
       "Race": 4,
       "Flags": 1,
       "Name": "TRIGSTR_3202",
+      "StartPosition": {
+        "X": 384,
+        "Y": 5952
+      },
       "AllyLowPriorityFlags": {},
       "AllyHighPriorityFlags": {},
       "EnemyLowPriorityFlags": {},
@@ -201,6 +253,10 @@
       "Race": 4,
       "Flags": 1,
       "Name": "TRIGSTR_252",
+      "StartPosition": {
+        "X": -22592,
+        "Y": -13696
+      },
       "AllyLowPriorityFlags": {},
       "AllyHighPriorityFlags": {},
       "EnemyLowPriorityFlags": {},
@@ -212,6 +268,10 @@
       "Race": 1,
       "Flags": 1,
       "Name": "TRIGSTR_15151",
+      "StartPosition": {
+        "X": 3904,
+        "Y": -13440
+      },
       "AllyLowPriorityFlags": {},
       "AllyHighPriorityFlags": {},
       "EnemyLowPriorityFlags": {},
@@ -223,6 +283,10 @@
       "Race": 3,
       "Flags": 1,
       "Name": "TRIGSTR_16176",
+      "StartPosition": {
+        "X": 18816,
+        "Y": -30784
+      },
       "AllyLowPriorityFlags": {},
       "AllyHighPriorityFlags": {},
       "EnemyLowPriorityFlags": {},
