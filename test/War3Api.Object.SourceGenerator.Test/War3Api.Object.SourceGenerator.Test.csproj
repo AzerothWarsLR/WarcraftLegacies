@@ -22,7 +22,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\..\src\Launcher.SourceGenerator\Launcher.SourceGenerator.csproj" />
+      <ProjectReference Include="..\..\src\War3Api.Object.SourceGenerator\War3Api.Object.SourceGenerator.csproj" />
     </ItemGroup>
 
 </Project>

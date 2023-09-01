@@ -17,11 +17,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestMap.Source", "src\TestM
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "War3Api.Object", "src\War3Api.Object\War3Api.Object.csproj", "{BD465133-F515-4436-BDCD-31861A3D0DDD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Launcher.SourceGenerator", "src\Launcher.SourceGenerator\Launcher.SourceGenerator.csproj", "{8007A95A-2D43-43AF-991E-D13E905C7CB5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "War3Api.Object.SourceGenerator", "src\War3Api.Object.SourceGenerator\War3Api.Object.SourceGenerator.csproj", "{8007A95A-2D43-43AF-991E-D13E905C7CB5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{6B44FC2C-85FD-4A18-81AB-80AEE97EC51E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Launcher.SourceGenerator.Test", "test\Launcher.SourceGenerator.Test\Launcher.SourceGenerator.Test.csproj", "{17AB2716-0E9A-4FE6-91EC-E7B975AD3E01}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "War3Api.Object.SourceGenerator.Test", "test\War3Api.Object.SourceGenerator.Test\War3Api.Object.SourceGenerator.Test.csproj", "{17AB2716-0E9A-4FE6-91EC-E7B975AD3E01}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -19,4 +19,8 @@
         <PackageReference Include="War3Net.Common" Version="5.6.1" />
     </ItemGroup>
 
+    <ItemGroup>
+        <ProjectReference Include="..\War3Api.Object.SourceGenerator\War3Api.Object.SourceGenerator.csproj" OutputItemType="Analyzer" />
+    </ItemGroup>
+
 </Project>

@@ -5,7 +5,7 @@ using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
 using Xunit;
 
-namespace Launcher.SourceGenerator.Test;
+namespace War3Api.Object.SourceGenerator.Test;
 
 public sealed class DtoGeneratorTests
 {
@@ -17,6 +17,8 @@ public sealed class DtoGeneratorTests
   {
     //Arrange
     const string sourceCode = $$"""
+                                 namespace War3Api.Object;
+                                 
                                  public class {{BaseObjectTypeName}}
                                  {
                                  }

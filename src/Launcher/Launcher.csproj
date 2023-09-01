@@ -27,13 +27,6 @@
     <ItemGroup>
         <ProjectReference Include="..\War3Api.Object\War3Api.Object.csproj"/>
     </ItemGroup>
-
-    <ItemGroup>
-        <ProjectReference 
-            Include="..\Launcher.SourceGenerator\Launcher.SourceGenerator.csproj"
-            OutputItemType="Analyzer"
-        />
-    </ItemGroup>
     
     <ItemGroup>
         <Content Include="appsettings.json">
