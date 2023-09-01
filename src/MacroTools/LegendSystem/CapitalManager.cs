@@ -32,13 +32,34 @@ namespace MacroTools.LegendSystem
     /// </summary>
     public static Capital? GetFromUnit(unit whichUnit)
     {
-      return ByUnit.ContainsKey(whichUnit) ? ByUnit[whichUnit] : null;
+      return ByUnit.TryGetValue(whichUnit, out var value) ? value : null;
     }
     
     /// <summary>
     ///   Whether or not the given unit is a <see cref="Capital" />.
     /// </summary>
     public static bool UnitIsCapital(unit unit) => ByUnit.ContainsKey(unit);
+
+    /// <summary>
+    ///   Whether or not the given unit is a <see cref="Protector" />.
+    /// </summary>
+    public static bool UnitIsProtector(unit unit)
+    {
+      foreach (var capital in AllCapitals)
+      {
+        if (capital.ProtectorsByUnit.ContainsKey(unit))
+          return true;
+      }
+      return false;
+    }
+    
+    /// <summary>
+    ///   Whether or not the given unit is a <see cref="Protector" /> of a given <see cref="Capital" />.
+    /// </summary>
+    public static bool UnitIsCapitalProtector(unit protector, unit capital)
+    {
+      return ByUnit[capital].ProtectorsByUnit.ContainsKey(protector);
+    }
     
     /// <summary>
     /// Returns all registered <see cref="Capital"/>s.

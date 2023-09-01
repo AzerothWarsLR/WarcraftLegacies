@@ -19,6 +19,13 @@ namespace MacroTools.LegendSystem
     /// The number of living <see cref="Protector"/> making this <see cref="Legend"/> invulnerable.
     /// </summary>
     public int ProtectorCount => _protectors.Count;
+    
+    /// <summary>
+    /// Get list of <see cref="Protector"/>s
+    /// </summary>
+    public List<Protector> Protectors => _protectors;
+    
+    public readonly Dictionary<unit, Protector> ProtectorsByUnit = new();
 
     /// <summary>
     /// A user-friendly name for the <see cref="Capital"/>.
@@ -56,6 +63,7 @@ namespace MacroTools.LegendSystem
     {
       var protector = new Protector(whichUnit);
       _protectors.Add(protector);
+      ProtectorsByUnit.Add(whichUnit,protector);
       Unit?.SetInvulnerable(true);
       protector.ProtectorDied += OnProtectorDeath;
     }
