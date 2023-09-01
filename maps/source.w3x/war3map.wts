@@ -65652,6 +65652,12 @@ STRING 10939
 R
 }
 
+STRING 10940
+// Units: ucry (Crypt Fiend), Ubertip (Tooltip - Extended)
+{
+Nerubian husk raised for the Scourge.|n|cfff5962dAbilities:|R Burrow, Slow Poison|n|cfff5962dCan Learn:|R Web|n|n|cffffcc00Attacks land and air units.|r
+}
+
 STRING 10941
 // Abilities: A08Q (Lightning Streak), Researchhotkey (Hotkey - Learn)
 {
@@ -91501,7 +91507,7 @@ Spiritual hall for the Exodar.|n|cfff5962dTrains:|r Luminarch, Elementalist|n|cf
 }
 
 STRING 15254
-// Abilities: A0MV (Greater Heal), Hotkey (Hotkey - Normal)
+// Abilities: A0MV (Heal), Hotkey (Hotkey - Normal)
 {
 Q
 }
@@ -92462,7 +92468,7 @@ Return Resources
 }
 
 STRING 15414
-// Abilities: A0MV (Greater Heal), Unhotkey (Hotkey - Turn Off)
+// Abilities: A0MV (Heal), Unhotkey (Hotkey - Turn Off)
 {
 Q
 }
@@ -93083,12 +93089,6 @@ STRING 15517
 // Upgrades: R03L (Chaos), Tip (Tooltip)
 {
 Research Improved Shadow Infusion
-}
-
-STRING 15518
-// Upgrades: R03L (Chaos), Ubertip (Tooltip - Extended)
-{
-Improves Necrolytes' Shadow Infusion by increasing its heal amount by 45 and reducing its mana cost to 0.
 }
 
 STRING 15519
@@ -95281,56 +95281,44 @@ STRING 15883
 (gilneas)
 }
 
-STRING 15884
-// Abilities: A0MV (Greater Heal), Tip (Tooltip - Normal)
-{
-Greater Heal
-}
-
 STRING 15885
-// Abilities: A0MV (Greater Heal), Tip (Tooltip - Normal)
+// Abilities: A0MV (Heal), Tip (Tooltip - Normal)
 {
 Heal - [|cffffcc00Level 2|r]
 }
 
 STRING 15886
-// Abilities: A0MV (Greater Heal), Tip (Tooltip - Normal)
+// Abilities: A0MV (Heal), Tip (Tooltip - Normal)
 {
 Heal - [|cffffcc00Level 3|r]
 }
 
 STRING 15887
-// Abilities: A0MV (Greater Heal), Tip (Tooltip - Normal)
+// Abilities: A0MV (Heal), Tip (Tooltip - Normal)
 {
 Heal - [|cffffcc00Level 4|r]
 }
 
 STRING 15888
-// Abilities: A0MV (Greater Heal), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A0MV (Heal), Ubertip (Tooltip - Normal - Extended)
 {
 Heals a target friendly non-mechanical wounded unit for <Ahea,DataA2> hit points.
 }
 
 STRING 15889
-// Abilities: A0MV (Greater Heal), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A0MV (Heal), Ubertip (Tooltip - Normal - Extended)
 {
 Heals a target friendly non-mechanical wounded unit for <Ahea,DataA3> hit points.
 }
 
 STRING 15890
-// Abilities: A0MV (Greater Heal), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A0MV (Heal), Ubertip (Tooltip - Normal - Extended)
 {
 Heals a target friendly non-mechanical wounded unit for <Ahea,DataA4> hit points.
 }
 
-STRING 15891
-// Abilities: A0MV (Greater Heal), Name (Name)
-{
-Greater Heal
-}
-
 STRING 15892
-// Abilities: A0MV (Greater Heal), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A0WU (Shadow Mend), Ubertip (Tooltip - Normal - Extended)
 {
 Heals a target friendly non-mechanical wounded unit for 35 hit points.
 }
@@ -101966,7 +101954,7 @@ The hero wraps target in shackles, rendering it immobile and dealing damage over
 }
 
 STRING 16998
-// Abilities: A0MV (Greater Heal), EditorSuffix (Editor Suffix)
+// Abilities: A0MV (Heal), EditorSuffix (Editor Suffix)
 {
 (gilneas)
 }
@@ -111048,19 +111036,19 @@ Pick Nazjatar
 }
 
 STRING 18511
-// Abilities: A0N8 (Citadel Shield), Hotkey (Hotkey - Normal)
+// Abilities: A12B (Hound Companion), Hotkey (Hotkey - Normal)
 {
 W
 }
 
 STRING 18512
-// Abilities: A0N8 (Citadel Shield), Researchhotkey (Hotkey - Learn)
+// Abilities: A12B (Hound Companion), Unhotkey (Hotkey - Turn Off)
 {
 W
 }
 
 STRING 18513
-// Abilities: A12B (Hound Companion), Hotkey (Hotkey - Normal)
+// Abilities: A0BW (Flaming Sword), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -111072,13 +111060,13 @@ Q
 }
 
 STRING 18515
-// Abilities: A12B (Hound Companion), Unhotkey (Hotkey - Turn Off)
+// Abilities: A0BW (Flaming Sword), Unhotkey (Hotkey - Turn Off)
 {
 W
 }
 
 STRING 18516
-// Abilities: A0BW (Flaming Sword), Hotkey (Hotkey - Normal)
+// Abilities: A0S0 (Devour), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -111168,13 +111156,13 @@ Summon Core Hound
 }
 
 STRING 18531
-// Abilities: A0BW (Flaming Sword), Unhotkey (Hotkey - Turn Off)
+// Abilities: A0S0 (Devour), Researchhotkey (Hotkey - Learn)
 {
 W
 }
 
 STRING 18532
-// Abilities: A0S0 (Devour), Hotkey (Hotkey - Normal)
+// Abilities: A0ZU (Summon Mud Golem), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -111216,7 +111204,7 @@ Flame Keeper
 }
 
 STRING 18539
-// Abilities: A0S0 (Devour), Researchhotkey (Hotkey - Learn)
+// Abilities: A0ZU (Summon Mud Golem), Researchhotkey (Hotkey - Learn)
 {
 W
 }
@@ -111234,7 +111222,7 @@ Train Bear Rider
 }
 
 STRING 18542
-// Abilities: A0ZU (Summon Mud Golem), Hotkey (Hotkey - Normal)
+// Abilities: A0ZW (Animal Companion), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -111270,13 +111258,13 @@ E
 }
 
 STRING 18548
-// Abilities: A0ZU (Summon Mud Golem), Researchhotkey (Hotkey - Learn)
+// Abilities: A12F (Dispel Magic), Hotkey (Hotkey - Normal)
 {
 W
 }
 
 STRING 18549
-// Abilities: A0ZW (Animal Companion), Hotkey (Hotkey - Normal)
+// Abilities: A12I (Call to Battle), Researchhotkey (Hotkey - Learn)
 {
 W
 }
@@ -111294,7 +111282,7 @@ Q
 }
 
 STRING 18552
-// Abilities: A12F (Dispel Magic), Hotkey (Hotkey - Normal)
+// Abilities: A12J (Frenzy), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -111324,13 +111312,13 @@ E
 }
 
 STRING 18557
-// Abilities: A12I (Call to Battle), Researchhotkey (Hotkey - Learn)
+// Abilities: A12J (Frenzy), Unhotkey (Hotkey - Turn Off)
 {
 W
 }
 
 STRING 18558
-// Abilities: A12J (Frenzy), Hotkey (Hotkey - Normal)
+// Abilities: A12V (Blessed Ground), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -111354,7 +111342,7 @@ STRING 18561
 }
 
 STRING 18562
-// Abilities: A12J (Frenzy), Unhotkey (Hotkey - Turn Off)
+// Abilities: A12Y (Divine Salvation), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -111384,7 +111372,7 @@ Gilneas Cathedral
 }
 
 STRING 18567
-// Abilities: A12V (Blessed Ground), Hotkey (Hotkey - Normal)
+// Abilities: A12Y (Divine Salvation), Unhotkey (Hotkey - Turn Off)
 {
 W
 }
@@ -111459,12 +111447,6 @@ STRING 18579
 // Units: n0CC (Shadowforge Titan), EditorSuffix (Name - Editor Suffix)
 {
  (Ragnaros)
-}
-
-STRING 18580
-// Units: ucry (Crypt Fiend), Ubertip (Tooltip - Extended)
-{
-Nerubian husk raised for the Scourge.|n|cfff5962dAbilities:|R Burrow|n|cfff5962dCan Learn:|R Web|n|n|cffffcc00Attacks land and air units.|r
 }
 
 STRING 18581
@@ -112446,12 +112428,6 @@ STRING 18743
 Shadow Mend
 }
 
-STRING 18744
-// Abilities: A0WU (Shadow Mend), Ubertip (Tooltip - Normal - Extended)
-{
-Heals a target friendly non-mechanical wounded unit for 35 hit points.
-}
-
 STRING 18745
 // Destructibles: B01O (Blackwald), EditorSuffix (Editor Suffix)
 {
@@ -113161,7 +113137,7 @@ STRING 18862
 }
 
 STRING 18863
-// Abilities: A12Y (Divine Salvation), Hotkey (Hotkey - Normal)
+// Abilities: A12Y (Divine Salvation), Researchhotkey (Hotkey - Learn)
 {
 W
 }
@@ -114163,7 +114139,7 @@ An impenetrable shield surrounds the Paladin, protecting him from all damage and
 }
 
 STRING 19030
-// Abilities: A12Y (Divine Salvation), Unhotkey (Hotkey - Turn Off)
+// Abilities: A130 (Resurrection), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -114295,7 +114271,7 @@ Mass Unholy Armor - [|cffffcc00Level 2|r]
 }
 
 STRING 19052
-// Abilities: A12Y (Divine Salvation), Researchhotkey (Hotkey - Learn)
+// Abilities: A0H1 (Storming Brew), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -115075,7 +115051,7 @@ Medium dragon of the Dragonmaw Clan.|n|r|n|cffffcc00Attacks land and air units.|
 }
 
 STRING 19182
-// Abilities: A130 (Resurrection), Hotkey (Hotkey - Normal)
+// Abilities: A0N5 (Healing Wave), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -116756,7 +116732,7 @@ Thunder Fists - [|cffffcc00Level 3|r]
 }
 
 STRING 19462
-// Abilities: A0H1 (Storming Brew), Hotkey (Hotkey - Normal)
+// Abilities: A133 (Wolf Companion), Researchhotkey (Hotkey - Learn)
 {
 W
 }
@@ -117596,7 +117572,7 @@ STRING 19601
 }
 
 STRING 19602
-// Abilities: A0N5 (Healing Wave), Hotkey (Hotkey - Normal)
+// Abilities: A13H (Howl of Despair), Researchhotkey (Hotkey - Learn)
 {
 W
 }
@@ -118489,7 +118465,7 @@ Q
 }
 
 STRING 19751
-// Abilities: A11S (Napalm), Hotkey (Hotkey - Normal)
+// Abilities: A0N8 (Citadel Shield), Hotkey (Hotkey - Normal)
 {
 R
 }
@@ -118825,7 +118801,7 @@ Thunder Fists - [|cffffcc00Level 4|r]
 }
 
 STRING 19807
-// Abilities: A133 (Wolf Companion), Researchhotkey (Hotkey - Learn)
+// Abilities: A13I (Overflow), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -119809,7 +119785,7 @@ STRING 19970
 }
 
 STRING 19971
-// Abilities: A13H (Howl of Despair), Researchhotkey (Hotkey - Learn)
+// Abilities: A13I (Overflow), Unhotkey (Hotkey - Turn Off)
 {
 W
 }
@@ -120409,13 +120385,13 @@ Thunder Fists - [|cffffcc00Level 3|r]
 }
 
 STRING 20071
-// Abilities: A13I (Overflow), Hotkey (Hotkey - Normal)
+// Abilities: A13K (Defend), Hotkey (Hotkey - Normal)
 {
 W
 }
 
 STRING 20072
-// Abilities: A11W (Toxic Cloud), Hotkey (Hotkey - Normal)
+// Abilities: A0N8 (Citadel Shield), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -121117,7 +121093,7 @@ Enchanted Bolt
 }
 
 STRING 20189
-// Abilities: A13I (Overflow), Unhotkey (Hotkey - Turn Off)
+// Abilities: A13K (Defend), Unhotkey (Hotkey - Turn Off)
 {
 W
 }
@@ -121549,19 +121525,19 @@ This unit is caught within a Black Hole; its movement speed has been reduced tem
 }
 
 STRING 20261
-// Abilities: A11W (Toxic Cloud), Researchhotkey (Hotkey - Learn)
+// Abilities: A11S (Napalm), Hotkey (Hotkey - Normal)
 {
 R
 }
 
 STRING 20262
-// Abilities: A122 (Will of the Ashbringer), Researchhotkey (Hotkey - Learn)
+// Abilities: A11W (Toxic Cloud), Hotkey (Hotkey - Normal)
 {
 R
 }
 
 STRING 20263
-// Abilities: A12C (Legendary Warrior), Researchhotkey (Hotkey - Learn)
+// Abilities: A11W (Toxic Cloud), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -121723,7 +121699,7 @@ Innacurate bombardment of an area with 30 waves of one cannonball. Each ball dea
 }
 
 STRING 20290
-// Abilities: A13K (Defend), Hotkey (Hotkey - Normal)
+// Abilities: A13O (Summon Mystic Defenders ), Researchhotkey (Hotkey - Learn)
 {
 W
 }
@@ -122347,7 +122323,7 @@ S
 }
 
 STRING 20394
-// Abilities: A12N (Consumed by the Void), Hotkey (Hotkey - Normal)
+// Abilities: A122 (Will of the Ashbringer), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -122533,7 +122509,7 @@ Summon Mystic Defenders
 }
 
 STRING 20425
-// Abilities: A12N (Consumed by the Void), Researchhotkey (Hotkey - Learn)
+// Abilities: A12C (Legendary Warrior), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -123073,7 +123049,7 @@ E
 }
 
 STRING 20515
-// Abilities: A13K (Defend), Unhotkey (Hotkey - Turn Off)
+// Abilities: A13Y (Thirst for Blood), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -123172,6 +123148,12 @@ STRING 20531
 // Upgrades: R042 (Shaman Adept Training,Shaman Master Training), Tip (Tooltip)
 {
 Research Nathrezim Master Training
+}
+
+STRING 20532
+// Abilities: A0MV (Heal), Ubertip (Tooltip - Normal - Extended)
+{
+Heals a target friendly non-mechanical wounded unit for 20 hit points.
 }
 
 STRING 20533
@@ -123379,7 +123361,7 @@ Summoning site for minor demons.|r|n|cff99b4d1Can only build 2 before the Legion
 }
 
 STRING 20567
-// Abilities: A13O (Summon Mystic Defenders ), Researchhotkey (Hotkey - Learn)
+// Upgrades: Rora (Steel Ranged Weapons,Thorium Ranged Weapons,Arcanite Ranged Weapons), Hotkey (Hotkey)
 {
 W
 }
@@ -124220,7 +124202,7 @@ Q
 }
 
 STRING 20707
-// Abilities: A13V (Freezing Shield), Hotkey (Hotkey - Normal)
+// Abilities: A13R (Mass Frost Armor), Hotkey (Hotkey - Normal)
 {
 E
 }
@@ -124328,7 +124310,7 @@ Consumes an enemy unit, dealing 500 damage if it's a hero and killing it instant
 }
 
 STRING 20725
-// Abilities: A13Y (Thirst for Blood), Hotkey (Hotkey - Normal)
+// Upgrades: Rora (Steel Ranged Weapons,Thorium Ranged Weapons,Arcanite Ranged Weapons), Hotkey (Hotkey)
 {
 W
 }
@@ -124622,13 +124604,13 @@ Q
 }
 
 STRING 20774
-// Upgrades: Rora (Steel Ranged Weapons,Thorium Ranged Weapons,Arcanite Ranged Weapons), Hotkey (Hotkey)
+// Upgrades: Rhra (Black Gunpowder,Refined Gunpowder,Imbued Gunpowder), Hotkey (Hotkey)
 {
 W
 }
 
 STRING 20775
-// Upgrades: Rhlh (Improved Lumber Harvesting,Advanced Lumber Harvesting), Hotkey (Hotkey)
+// Abilities: A13V (Freezing Shield), Hotkey (Hotkey - Normal)
 {
 E
 }
@@ -124754,7 +124736,7 @@ Q
 }
 
 STRING 20796
-// Upgrades: Renb (Nature's Blessing), Hotkey (Hotkey)
+// Upgrades: Rhlh (Improved Lumber Harvesting,Advanced Lumber Harvesting), Hotkey (Hotkey)
 {
 E
 }
@@ -124886,7 +124868,7 @@ Q
 }
 
 STRING 20818
-// Upgrades: Rora (Steel Ranged Weapons,Thorium Ranged Weapons,Arcanite Ranged Weapons), Hotkey (Hotkey)
+// Upgrades: Rhra (Black Gunpowder,Refined Gunpowder,Imbued Gunpowder), Hotkey (Hotkey)
 {
 W
 }
@@ -125126,13 +125108,13 @@ E
 }
 
 STRING 20858
-// Upgrades: R06K (Defend), Hotkey (Hotkey)
+// Upgrades: Renb (Nature's Blessing), Hotkey (Hotkey)
 {
 E
 }
 
 STRING 20859
-// Upgrades: R06G (Defend), Hotkey (Hotkey)
+// Upgrades: R06K (Defend), Hotkey (Hotkey)
 {
 E
 }
@@ -125144,13 +125126,13 @@ W
 }
 
 STRING 20861
-// Upgrades: Rhra (Black Gunpowder,Refined Gunpowder,Imbued Gunpowder), Hotkey (Hotkey)
+// Upgrades: Rhac (Improved Masonry,Advanced Masonry,Imbued Masonry), Hotkey (Hotkey)
 {
 W
 }
 
 STRING 20862
-// Upgrades: R06F (Defend), Hotkey (Hotkey)
+// Upgrades: R06G (Defend), Hotkey (Hotkey)
 {
 E
 }
@@ -125174,7 +125156,7 @@ Dark art mage of the horde.|n|cfff5962dAbilities:|R Firebolt|n|cfff5962dCan Lear
 }
 
 STRING 20866
-// Upgrades: R064 (Nature's Blessing), Hotkey (Hotkey)
+// Upgrades: R06F (Defend), Hotkey (Hotkey)
 {
 E
 }
@@ -125504,7 +125486,7 @@ Powerful Worgen Shaman in service of Gilneas.|n|cfff5962dAbilities:|R Wolf Compa
 }
 
 STRING 20921
-// Abilities: A12V (Blessed Ground), Researchhotkey (Hotkey - Learn)
+// Abilities: A12N (Consumed by the Void), Hotkey (Hotkey - Normal)
 {
 R
 }
@@ -125534,7 +125516,7 @@ Salvation
 }
 
 STRING 20926
-// Upgrades: R03M (Defend), Hotkey (Hotkey)
+// Upgrades: R064 (Nature's Blessing), Hotkey (Hotkey)
 {
 E
 }
@@ -125636,7 +125618,7 @@ Elite fighters of the Legion.|n|cfff5962dAbilities: |RWind Walk, Mirror Image, C
 }
 
 STRING 20943
-// Abilities: A136 (Corruption), Researchhotkey (Hotkey - Learn)
+// Abilities: A12N (Consumed by the Void), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -126140,7 +126122,7 @@ Train Bladesman
 }
 
 STRING 21027
-// Upgrades: R02P (Backpack), Hotkey (Hotkey)
+// Upgrades: R03M (Defend), Hotkey (Hotkey)
 {
 E
 }
@@ -126236,7 +126218,7 @@ This unit is in a Blessed Ground. It's health is rapidly replenishing.
 }
 
 STRING 21043
-// Abilities: A139 (Spell Steal), Hotkey (Hotkey - Normal)
+// Abilities: A12V (Blessed Ground), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -126290,7 +126272,7 @@ Increases Astromancer 's mana capacity, attack damage and gives them the ability
 }
 
 STRING 21052
-// Upgrades: R03O (Animal War Training), Hotkey (Hotkey)
+// Upgrades: R02P (Backpack), Hotkey (Hotkey)
 {
 E
 }
@@ -126482,19 +126464,19 @@ STRING 21083
 }
 
 STRING 21084
-// Abilities: A139 (Spell Steal), Unhotkey (Hotkey - Turn Off)
+// Abilities: A136 (Corruption), Researchhotkey (Hotkey - Learn)
 {
 R
 }
 
 STRING 21085
-// Abilities: A138 (Freezing Shots), Hotkey (Hotkey - Normal)
+// Abilities: A139 (Spell Steal), Hotkey (Hotkey - Normal)
 {
 R
 }
 
 STRING 21086
-// Abilities: A138 (Freezing Shots), Unhotkey (Hotkey - Turn Off)
+// Abilities: A139 (Spell Steal), Unhotkey (Hotkey - Turn Off)
 {
 R
 }
@@ -126536,7 +126518,7 @@ Increases Arcanists' mana capacity, mana regeneration rate, attack damage and gi
 }
 
 STRING 21093
-// Abilities: A13R (Mass Frost Armor), Hotkey (Hotkey - Normal)
+// Abilities: A138 (Freezing Shots), Hotkey (Hotkey - Normal)
 {
 R
 }
@@ -126698,7 +126680,7 @@ E
 }
 
 STRING 21120
-// Upgrades: Rhra (Black Gunpowder,Refined Gunpowder,Imbued Gunpowder), Hotkey (Hotkey)
+// Upgrades: Rhac (Improved Masonry,Advanced Masonry,Imbued Masonry), Hotkey (Hotkey)
 {
 W
 }
@@ -126758,13 +126740,13 @@ This unit has Mage Armor; its armor is increased.
 }
 
 STRING 21130
-// Abilities: A13R (Mass Frost Armor), Researchhotkey (Hotkey - Learn)
+// Abilities: A138 (Freezing Shots), Unhotkey (Hotkey - Turn Off)
 {
 R
 }
 
 STRING 21131
-// Abilities: A13S (Mass Frost Armour ), Hotkey (Hotkey - Normal)
+// Abilities: A13R (Mass Frost Armor), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -126830,7 +126812,7 @@ Train Blood Knight Squire
 }
 
 STRING 21142
-// Upgrades: Rosp (Spiked Barricades,Improved Spiked Barricades,Advanced Spiked Barricades), Hotkey (Hotkey)
+// Abilities: A13S (Mass Frost Armour ), Hotkey (Hotkey - Normal)
 {
 R
 }
@@ -127226,7 +127208,7 @@ Howl of Despair
 }
 
 STRING 21208
-// Upgrades: Rhac (Improved Masonry,Advanced Masonry,Imbued Masonry), Hotkey (Hotkey)
+// Upgrades: R01B (Defend), Hotkey (Hotkey)
 {
 W
 }
@@ -127316,13 +127298,13 @@ Increases the unit's attack rate by <A0EH,DataA2,%>% and movement speed by <A0EH
 }
 
 STRING 21223
-// Upgrades: Rhac (Improved Masonry,Advanced Masonry,Imbued Masonry), Hotkey (Hotkey)
+// Upgrades: R07I (Necromancer Adept Training,Necromancer Master Training), Hotkey (Hotkey)
 {
 W
 }
 
 STRING 21224
-// Upgrades: R01B (Defend), Hotkey (Hotkey)
+// Upgrades: R07I (Necromancer Adept Training,Necromancer Master Training), Hotkey (Hotkey)
 {
 W
 }
@@ -127520,13 +127502,7 @@ Deactivate to move at normal speed, but take regular damage from Piercing attack
 }
 
 STRING 21257
-// Upgrades: R07I (Necromancer Adept Training,Necromancer Master Training), Hotkey (Hotkey)
-{
-W
-}
-
-STRING 21258
-// Upgrades: R07I (Necromancer Adept Training,Necromancer Master Training), Hotkey (Hotkey)
+// Upgrades: R07W (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 W
 }
@@ -127565,12 +127541,6 @@ STRING 21264
 // Upgrades: R01R (Improved Bows), EditorSuffix (Editor Suffix)
 {
 (Quel'Thalas)
-}
-
-STRING 21265
-// Upgrades: R07W (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
-{
-W
 }
 
 STRING 21266
@@ -127826,7 +127796,7 @@ E
 }
 
 STRING 21308
-// Upgrades: R097 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R03O (Animal War Training), Hotkey (Hotkey)
 {
 E
 }
@@ -127892,19 +127862,19 @@ Mass Frost Armour
 }
 
 STRING 21319
-// Upgrades: Ropg (Pillage), Hotkey (Hotkey)
+// Upgrades: Rosp (Spiked Barricades,Improved Spiked Barricades,Advanced Spiked Barricades), Hotkey (Hotkey)
 {
 R
 }
 
 STRING 21320
-// Upgrades: Rews (Well Spring), Hotkey (Hotkey)
+// Upgrades: Ropg (Pillage), Hotkey (Hotkey)
 {
 R
 }
 
 STRING 21321
-// Upgrades: R00N (Storm Hammers), Hotkey (Hotkey)
+// Upgrades: Rews (Well Spring), Hotkey (Hotkey)
 {
 R
 }
@@ -127913,6 +127883,12 @@ STRING 21322
 // Upgrades: R08T (Cannibalize), EditorSuffix (Editor Suffix)
 {
 (Scourge)
+}
+
+STRING 21323
+// Upgrades: R00N (Storm Hammers), Hotkey (Hotkey)
+{
+R
 }
 
 STRING 21324
@@ -128036,7 +128012,7 @@ Increases Necromancers' mana capacity, mana regeneration rate, attack damage and
 }
 
 STRING 21344
-// Upgrades: R086 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+// Upgrades: R097 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
 {
 E
 }
@@ -128237,5 +128213,53 @@ STRING 21377
 // Upgrades: R042 (Shaman Adept Training,Shaman Master Training), Ubertip (Tooltip - Extended)
 {
 Increases Nathrezims' mana capacity, attack damage and gives them the ability to cast Charm.
+}
+
+STRING 21378
+// Upgrades: R03L (Chaos), Ubertip (Tooltip - Extended)
+{
+Improves Necrolytes' Shadow Infusion by increasing its heal amount by 30 and reducing its mana cost to 0.
+}
+
+STRING 21379
+// Upgrades: R086 (Iron Plating,Steel Plating,Mithril Plating), Hotkey (Hotkey)
+{
+E
+}
+
+STRING 21380
+// Upgrades: R09X (Chaos), effect1 (Effect 1)
+{
+rlev
+}
+
+STRING 21381
+// Upgrades: R09X (Chaos), EditorSuffix (Editor Suffix)
+{
+(Legion)
+}
+
+STRING 21382
+// Upgrades: R09X (Chaos), Name (Name)
+{
+Improved Shadow Infusion
+}
+
+STRING 21383
+// Upgrades: R09X (Chaos), Tip (Tooltip)
+{
+Research Improved Shadow Infusion
+}
+
+STRING 21384
+// Upgrades: R09X (Chaos), Ubertip (Tooltip - Extended)
+{
+Improves Necrolytes' Shadow Infusion by increasing its heal amount by 30 and reducing its mana cost to 0.
+}
+
+STRING 21385
+// Upgrades: R09X (Chaos), Hotkey (Hotkey)
+{
+A
 }
 
