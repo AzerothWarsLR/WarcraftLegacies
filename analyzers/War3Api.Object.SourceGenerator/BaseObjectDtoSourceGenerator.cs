@@ -1,9 +1,9 @@
-using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
+using static Microsoft.CodeAnalysis.CSharp.SyntaxFactory;
 
 namespace War3Api.Object.SourceGenerator;
 
@@ -47,12 +47,14 @@ public class BaseObjectDtoSourceGenerator : ISourceGenerator
         var dtoClassName = $"{classSymbol.Name}Dto";
         var properties = classDeclaration.Members.ToArray();
  
-        var dtoClass = SyntaxFactory.ClassDeclaration(dtoClassName)
-          .AddModifiers(SyntaxFactory.Token(SyntaxKind.PublicKeyword))
+        var dtoClass = ClassDeclaration(dtoClassName)
+          .WithModifiers(TokenList(
+            Token(SyntaxKind.PublicKeyword),
+            Token(SyntaxKind.SealedKeyword)))
           .AddMembers(properties);
 
-        var dtoNamespace = SyntaxFactory.NamespaceDeclaration(SyntaxFactory.ParseName(OutputNamespace))
-          .AddUsings(SyntaxFactory.UsingDirective(SyntaxFactory.ParseName("System")))
+        var dtoNamespace = NamespaceDeclaration(ParseName(OutputNamespace))
+          .AddUsings(UsingDirective(ParseName("System")))
           .AddMembers(dtoClass)
           .NormalizeWhitespace();
         
