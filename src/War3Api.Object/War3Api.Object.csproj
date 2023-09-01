@@ -20,7 +20,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\War3Api.Object.SourceGenerator\War3Api.Object.SourceGenerator.csproj" OutputItemType="Analyzer" />
+        <ProjectReference Include="..\..\analyzers\War3Api.Object.SourceGenerator\War3Api.Object.SourceGenerator.csproj" OutputItemType="Analyzer" />
     </ItemGroup>
 
 </Project>
