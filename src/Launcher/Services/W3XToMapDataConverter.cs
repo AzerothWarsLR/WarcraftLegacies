@@ -134,7 +134,6 @@ namespace Launcher.Services
       var dataTransferObject = _mapper.Map<TInput, TDataTransferObject>(inputValue);
       var asJson = JsonSerializer.Serialize(dataTransferObject, _jsonSerializerOptions);
       var fullPath = Path.Combine(outputFolderPath, subPath);
-      
       File.WriteAllText(fullPath, asJson);
     }
   }
