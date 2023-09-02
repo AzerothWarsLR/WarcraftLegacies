@@ -190,14 +190,21 @@ namespace Launcher.Services
         : $"{Path.Combine(options.OutputDirectory, options.MapName)}.w3x";
     }
     
-    private static void BackupFiles(string backupDirectory, string mapFilePath)
+    private static void BackupFiles(string backupDirectory, string mapPath)
     {
-      if (!File.Exists(mapFilePath))
-        return;
-      
-      Directory.CreateDirectory(backupDirectory);
-      var backupName = $"{Path.GetFileNameWithoutExtension(mapFilePath)}-{DateTime.Now:yyyyMMdd_HHmmss}.w3x";
-      File.Copy(mapFilePath, Path.Combine(backupDirectory, backupName));
+      if (File.Exists(mapPath))
+      {
+        Directory.CreateDirectory(backupDirectory);
+        var backupName = $"{Path.GetFileNameWithoutExtension(mapPath)}-{DateTime.Now:yyyyMMdd_HHmmss}.w3x";
+        File.Copy(mapPath, Path.Combine(backupDirectory, backupName));
+      }
+
+      if (Directory.Exists(mapPath))
+      {
+        Directory.CreateDirectory(backupDirectory);
+        var backupName = $"{Path.GetFileNameWithoutExtension(mapPath)}-{DateTime.Now:yyyyMMdd_HHmmss}.w3x";
+        DirectoryUtils.CopyDirectory(mapPath, Path.Combine(backupDirectory, backupName), true);
+      }
     }
 
     private static void LaunchGame(string warcraft3ExecutablePath, string mapFilePath)
