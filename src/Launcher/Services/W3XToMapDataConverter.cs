@@ -68,6 +68,8 @@ namespace Launcher.Services
     private const string BuffSkinObjectDataPath = "BuffSkinObjectData.json";
     private const string AbilitySkinObjectDataPath = "AbilitySkinObjectData.json";
 
+    private const string UnitDataDirectoryPath = "UnitData/";
+    
     private const string ImportsPath = "Imports";
     
     /// <summary>
@@ -135,7 +137,8 @@ namespace Launcher.Services
       foreach (var unit in units)
       {
         var unitDto = _mapper.Map<Unit, UnitDto>(unit);
-        File.WriteAllText(Path.Combine(outputFolderPath, "UnitData", Random.Shared.Next(0, 1000).ToString()), JsonSerializer.Serialize(unitDto, _jsonSerializerOptions));
+        var path = Path.Combine(outputFolderPath, UnitDataDirectoryPath, unitDto.NewId.ToString());
+        File.WriteAllText(path, JsonSerializer.Serialize(unitDto, _jsonSerializerOptions));
       }
     }
     

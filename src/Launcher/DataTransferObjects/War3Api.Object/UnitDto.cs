@@ -2,6 +2,8 @@
 {
   public sealed class UnitDto
     {
+        public int OldId { get; set; }
+        public int NewId { get; set; }
         public string ArtRequiredAnimationNamesRaw { get; set; }
         public string ArtIconGameInterfaceRaw { get; set; }
         public string ArtRequiredAnimationNamesAttachmentsRaw { get; set; }

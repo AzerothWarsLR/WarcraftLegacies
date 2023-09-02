@@ -4,6 +4,7 @@ using System.Linq;
 using System.Numerics;
 using AutoMapper;
 using Launcher.DataTransferObjects;
+using Launcher.Extensions;
 using Launcher.ValueResolvers;
 using War3Api.Object;
 using War3Net.Build.Audio;
@@ -71,25 +72,31 @@ namespace Launcher.Services
 
     private static Action<IMemberConfigurationExpression<Unit, UnitDto, object>> GetUnitPreCondition()
     {
-      return x => x.PreCondition((source, _) =>
+      return option => option.PreCondition((source, _) =>
       {
-        var destinationMemberName = x.DestinationMember.Name;
-        var isModifiedName = $"Is{destinationMemberName}Modified";
+        const string modified = "Modified";
+        const string raw = "Raw";
+        var destinationMemberName = option.DestinationMember.Name;
+        
+        if (destinationMemberName == "Modifications")
+          return false;
+        
+        var isModifiedName = destinationMemberName.EndsWith(raw)
+          ? $"Is{destinationMemberName.RemoveEnd(raw.Length)}{modified}"
+          : $"Is{destinationMemberName}{modified}";
+        
+        var allProperties = typeof(Unit).GetProperties();
+        if (allProperties.Select(property => property.Name).Contains($"{destinationMemberName}{raw}"))
+          return false;
+        
         var isModifiedProperty = typeof(Unit).GetProperty(isModifiedName);
           
         if (isModifiedProperty == null)
-          return false;
+          return true;
 
         if (isModifiedProperty.GetMethod == null)
           return false;
-
-        var allProperties = typeof(Unit).GetProperties();
-        if (allProperties.Select(property => property.Name).Contains($"{destinationMemberName}Raw"))
-          return false;
-
-        if (destinationMemberName == "Modifications")
-          return false;
-          
+        
         var result = isModifiedProperty.GetMethod.Invoke(source, null);
         if (result == null)
           return false;
