@@ -1,4 +1,5 @@
-﻿using System.Drawing;
+﻿using System;
+using System.Drawing;
 using System.Linq;
 using System.Numerics;
 using AutoMapper;
@@ -63,34 +64,39 @@ namespace Launcher.Services
           .ReverseMap();
         cfg.CreateMap<TriggerItemDto, TriggerItem>().ReverseMap();
         
-        cfg.CreateMap<Unit, UnitDto>().ForAllMembers(x => x.PreCondition((source, destination) =>
-        {
-          var destinationMemberName = x.DestinationMember.Name;
-          var isModifiedName = $"Is{destinationMemberName}Modified";
-          var isModifiedProperty = typeof(Unit).GetProperty(isModifiedName);
-          
-          if (isModifiedProperty == null)
-            return false;
-
-          if (isModifiedProperty.GetMethod == null)
-            return false;
-
-          var allProperties = typeof(Unit).GetProperties();
-          if (allProperties.Select(property => property.Name).Contains($"{destinationMemberName}Raw"))
-            return false;
-
-          if (destinationMemberName == "Modifications")
-            return false;
-          
-          var result = isModifiedProperty.GetMethod.Invoke(source, null);
-          if (result == null)
-            return false;
-          
-          var isModified = (bool)result;
-          return isModified;
-        }));
+        cfg.CreateMap<Unit, UnitDto>().ForAllMembers(GetUnitPreCondition());
       });
       return autoMapperConfig;
+    }
+
+    private static Action<IMemberConfigurationExpression<Unit, UnitDto, object>> GetUnitPreCondition()
+    {
+      return x => x.PreCondition((source, _) =>
+      {
+        var destinationMemberName = x.DestinationMember.Name;
+        var isModifiedName = $"Is{destinationMemberName}Modified";
+        var isModifiedProperty = typeof(Unit).GetProperty(isModifiedName);
+          
+        if (isModifiedProperty == null)
+          return false;
+
+        if (isModifiedProperty.GetMethod == null)
+          return false;
+
+        var allProperties = typeof(Unit).GetProperties();
+        if (allProperties.Select(property => property.Name).Contains($"{destinationMemberName}Raw"))
+          return false;
+
+        if (destinationMemberName == "Modifications")
+          return false;
+          
+        var result = isModifiedProperty.GetMethod.Invoke(source, null);
+        if (result == null)
+          return false;
+          
+        var isModified = (bool)result;
+        return isModified;
+      });
     }
   }
 }
