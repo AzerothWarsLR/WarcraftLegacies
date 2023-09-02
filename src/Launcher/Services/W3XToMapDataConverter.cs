@@ -14,6 +14,7 @@ using War3Net.Build.Object;
 using War3Net.Build.Script;
 using War3Net.Build.Widget;
 using JsonSerializer = System.Text.Json.JsonSerializer;
+using static Launcher.MapDataPaths;
 
 namespace Launcher.Services
 {
@@ -36,37 +37,6 @@ namespace Launcher.Services
     {
       _mapper = mapper;
     }
-
-    private const string UpgradeObjectDataPath = "UpgradeObjectData.json";
-    private const string UnitObjectDataPath = "UnitObjectData.json";
-    private const string ItemObjectDataPath = "ItemObjectData.json";
-    private const string DoodadObjectDataPath = "DoodadObjectData.json";
-    private const string DestructableObjectDataPath = "DestructableObjectData.json";
-    private const string CustomTextTriggersPath = "CustomTextTriggers.json";
-    private const string BuffObjectDataPath = "BuffObjectData.json";
-    private const string AbilityObjectDataPath = "AbilityObjectData.json";
-    private const string TriggerStringsPath = "TriggerStrings.json";
-    private const string ShadowMapPath = "ShadowMap.json";
-    private const string PreviewIconsPath = "PreviewIcons.json";
-    private const string PathingMapPath = "PathingMap.json";
-    private const string ImportedFilesPath = "ImportedFiles.json";
-    private const string UnitsPath = "Units.json";
-    private const string SoundsPath = "Sounds.json";
-    private const string RegionsPath = "Regions.json";
-    private const string InfoPath = "Info.json";
-    private const string EnvironmentPath = "Environment.json";
-    private const string DoodadsPath = "Doodads.json";
-    private const string UpgradeSkinObjectDataPath = "UpgradeSkinObjectData.json";
-    private const string UnitSkinObjectDataPath = "UnitSkinObjectData.json";
-    private const string ItemSkinObjectDataPath = "ItemSkinObjectData.json";
-    private const string DoodadSkinObjectDataPath = "DoodadSkinObjectData.json";
-    private const string DestructableSkinObjectDataPath = "DestructableSkinObjectData.json";
-    private const string BuffSkinObjectDataPath = "BuffSkinObjectData.json";
-    private const string AbilitySkinObjectDataPath = "AbilitySkinObjectData.json";
-
-    private const string UnitDataDirectoryPath = "UnitData/";
-    
-    private const string ImportsPath = "Imports";
     
     /// <summary>
     /// Converts the provided Warcraft 3 map to JSON and saves it in the specified folder.
