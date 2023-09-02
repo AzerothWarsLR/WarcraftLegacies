@@ -94,6 +94,6 @@ internal static class RoslynGeneratorExtensions{
   private static bool IsValidPropertyToCopy(ISymbol property, ICollection<string> otherPropertyNames)
   {
     var propertyName = property.Name;
-    return !propertyName.EndsWith("Modified") && !otherPropertyNames.Contains($"{propertyName}Raw");
+    return propertyName != "Modifications" && !propertyName.EndsWith("Modified") && !otherPropertyNames.Contains($"{propertyName}Raw");
   }
 }
