@@ -25,6 +25,8 @@
 
     public const string SkinDataDirectorySubPath = "Skin";
     public const string CoreDataDirectorySubPath = "Core";
+
+    public const string SoundsDirectoryPath = "Sounds";
     
     public const string ImportsPath = "Imports";
 

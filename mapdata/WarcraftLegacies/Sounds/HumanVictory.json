@@ -1,0 +1,32 @@
+{
+  "Name": "gg_snd_HumanVictory",
+  "FilePath": "Sound/Music/mp3Music/HumanVictory.flac",
+  "EaxSetting": "SpellsEAX",
+  "Flags": 14,
+  "Volume": 127,
+  "Pitch": 4294967296,
+  "PitchVariance": 1,
+  "Priority": 10,
+  "Channel": 13,
+  "MinDistance": 750,
+  "MaxDistance": 3000,
+  "DistanceCutoff": 4294967296,
+  "ConeAngleInside": 4294967296,
+  "ConeAngleOutside": 4294967296,
+  "ConeOutsideVolume": -1,
+  "ConeOrientation": {
+    "X": 4.2949673E+09,
+    "Y": 4.2949673E+09,
+    "Z": 4.2949673E+09
+  },
+  "SoundName": "HumanVictory",
+  "DialogueTextKey": -1,
+  "Unk2": "",
+  "DialogueSpeakerNameKey": -1,
+  "Unk6": "",
+  "Unk7": "",
+  "FacialAnimationLabel": "",
+  "FacialAnimationGroupLabel": "",
+  "FacialAnimationSetFilepath": "",
+  "Unk11": 1
+}

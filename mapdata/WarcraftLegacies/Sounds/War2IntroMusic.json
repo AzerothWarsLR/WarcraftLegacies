@@ -1,0 +1,19 @@
+{
+  "Name": "gg_snd_War2IntroMusic",
+  "FilePath": "Sound\\Music\\mp3Music\\War2IntroMusic.mp3",
+  "EaxSetting": "DefaultEAXON",
+  "Flags": 8,
+  "FadeInRate": 10,
+  "FadeOutRate": 10,
+  "ConeOrientation": {},
+  "SoundName": "",
+  "DialogueTextKey": -1,
+  "Unk2": "",
+  "DialogueSpeakerNameKey": -1,
+  "Unk6": "",
+  "Unk7": "",
+  "FacialAnimationLabel": "",
+  "FacialAnimationGroupLabel": "",
+  "FacialAnimationSetFilepath": "",
+  "Unk11": 1
+}

@@ -54,7 +54,7 @@ namespace Launcher.Services
       File.Copy($"{baseMapPath}/war3mapMap.blp", $@"{outputFolderPath}\war3mapMap.blp", true);
     }
 
-    private void CopyImportedFiles(string baseMapPath, List<ImportedFile> files, string outputFolderPath)
+    private static void CopyImportedFiles(string baseMapPath, List<ImportedFile> files, string outputFolderPath)
     {
       foreach (var file in files)
       {
@@ -75,8 +75,6 @@ namespace Launcher.Services
         SerializeAndWrite<MapInfo, MapInfoDto>(map.Info, outputFolderPath, InfoPath);
       if (map.Regions != null) 
         SerializeAndWrite<MapRegions, MapRegionsDto>(map.Regions, outputFolderPath, RegionsPath);
-      if (map.Sounds != null) 
-        SerializeAndWrite<MapSounds, MapSoundsDto>(map.Sounds, outputFolderPath, SoundsPath);
       if (map.Units != null) 
         SerializeAndWrite<MapUnits, MapUnitsDto>(map.Units, outputFolderPath, UnitsPath);
       if (map.ImportedFiles != null)
@@ -91,6 +89,8 @@ namespace Launcher.Services
         SerializeAndWrite<TriggerStrings, MapTriggerStringsDto>(map.TriggerStrings, outputFolderPath,TriggerStringsPath);
       if (map.CustomTextTriggers != null)
         SerializeAndWrite<MapCustomTextTriggers, MapCustomTextTriggersDto>(map.CustomTextTriggers, outputFolderPath,CustomTextTriggersPath);
+      if (map.Sounds != null)
+        SerializeAndWriteSounds(map.Sounds, Path.Combine(outputFolderPath, SoundsDirectoryPath));
 
       if (map.UnitObjectData != null)
         SerializeAndWriteUnitData(map.UnitObjectData, outputFolderPath, UnitDataDirectoryPath, CoreDataDirectorySubPath);
@@ -136,6 +136,12 @@ namespace Launcher.Services
       var asJson = JsonSerializer.Serialize(dataTransferObject, _jsonSerializerOptions);
       var fullPath = Path.Combine(outputDirectoryPath, fileName);
       File.WriteAllText(fullPath, asJson);
+    }
+
+    private void SerializeAndWriteSounds(MapSounds sounds, string path)
+    {
+      foreach (var sound in sounds.Sounds)
+        SerializeAndWrite<Sound, SoundDto>(sound, path, $"{sound.Name.Remove(0, 7)}.json");
     }
     
     private void SerializeAndWriteUnitData(UnitObjectData unitObjectData, params string[] paths)
