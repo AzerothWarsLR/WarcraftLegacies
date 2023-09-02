@@ -77,36 +77,22 @@ namespace Launcher.Services
       SerializeAndWrite<MapPreviewIcons, MapPreviewIconsDto>(map.PreviewIcons, outputFolderPath, PreviewIconsPath);
       SerializeAndWrite<MapShadowMap, MapShadowMapDto>(map.ShadowMap, outputFolderPath, ShadowMapPath);
       SerializeAndWrite<TriggerStrings, MapTriggerStringsDto>(map.TriggerStrings, outputFolderPath, TriggerStringsPath);
-      SerializeAndWrite<AbilityObjectData, MapAbilityObjectDataDto>(map.AbilityObjectData, outputFolderPath, AbilityObjectDataPath);
-      SerializeAndWrite<BuffObjectData, MapBuffObjectDataDto>(map.BuffObjectData, outputFolderPath, BuffObjectDataPath);
       SerializeAndWrite<MapCustomTextTriggers, MapCustomTextTriggersDto>(map.CustomTextTriggers, outputFolderPath, CustomTextTriggersPath);
-      SerializeAndWrite<DestructableObjectData, MapDestructableObjectDataDto>(map.DestructableObjectData, outputFolderPath, DestructableObjectDataPath);
-      SerializeAndWrite<DoodadObjectData, MapDoodadObjectDataDto>(map.DoodadObjectData, outputFolderPath, DoodadObjectDataPath);
-      SerializeAndWrite<ItemObjectData, MapItemObjectDataDto>(map.ItemObjectData, outputFolderPath, ItemObjectDataPath);
-      SerializeAndWrite<UnitObjectData, MapUnitObjectDataDto>(map.UnitObjectData, outputFolderPath, UnitObjectDataPath);
-      SerializeAndWrite<UpgradeObjectData, MapUpgradeObjectDataDto>(map.UpgradeObjectData, outputFolderPath, UpgradeObjectDataPath);
-      SerializeAndWrite<AbilityObjectData, MapAbilityObjectDataDto>(map.AbilitySkinObjectData, outputFolderPath, AbilitySkinObjectDataPath);
-      SerializeAndWrite<BuffObjectData, MapBuffObjectDataDto>(map.BuffSkinObjectData, outputFolderPath, BuffSkinObjectDataPath);
-      SerializeAndWrite<DestructableObjectData, MapDestructableObjectDataDto>(map.DestructableSkinObjectData, outputFolderPath, DestructableSkinObjectDataPath);
-      SerializeAndWrite<DoodadObjectData, MapDoodadObjectDataDto>(map.DoodadSkinObjectData, outputFolderPath, DoodadSkinObjectDataPath);
-      SerializeAndWrite<ItemObjectData, MapItemObjectDataDto>(map.ItemSkinObjectData, outputFolderPath, ItemSkinObjectDataPath);
-      SerializeAndWrite<UnitObjectData, MapUnitObjectDataDto>(map.UnitSkinObjectData, outputFolderPath, UnitSkinObjectDataPath);
-      SerializeAndWrite<UpgradeObjectData, MapUpgradeObjectDataDto>(map.UpgradeSkinObjectData, outputFolderPath, UpgradeSkinObjectDataPath);
       
-      SerializeAndWriteUnitData(map.UnitObjectData, outputFolderPath);
-      SerializeAndWriteUnitData(map.UnitSkinObjectData, outputFolderPath);
-      SerializeAndWriteAbilityData(map.AbilityObjectData, outputFolderPath);
-      SerializeAndWriteAbilityData(map.AbilitySkinObjectData, outputFolderPath);
-      SerializeAndWriteItemData(map.ItemObjectData, outputFolderPath);
-      SerializeAndWriteItemData(map.ItemSkinObjectData, outputFolderPath);
-      SerializeAndWriteDestructableData(map.DestructableObjectData, outputFolderPath);
-      SerializeAndWriteDestructableData(map.DestructableSkinObjectData, outputFolderPath);
-      SerializeAndWriteDoodadData(map.DoodadObjectData, outputFolderPath);
-      SerializeAndWriteDoodadData(map.DoodadSkinObjectData, outputFolderPath);
-      SerializeAndWriteBuffData(map.BuffObjectData, outputFolderPath);
-      SerializeAndWriteBuffData(map.BuffSkinObjectData, outputFolderPath);
-      SerializeAndWriteUpgradeData(map.UpgradeObjectData, outputFolderPath);
-      SerializeAndWriteUpgradeData(map.UpgradeSkinObjectData, outputFolderPath);
+      SerializeAndWriteUnitData(map.UnitObjectData, outputFolderPath, UnitDataDirectoryPath, CoreDataDirectorySubPath);
+      SerializeAndWriteUnitData(map.UnitSkinObjectData, outputFolderPath, UnitDataDirectoryPath, SkinDataDirectorySubPath);
+      SerializeAndWriteAbilityData(map.AbilityObjectData, outputFolderPath, AbilityDataDirectoryPath, CoreDataDirectorySubPath);
+      SerializeAndWriteAbilityData(map.AbilitySkinObjectData, outputFolderPath, AbilityDataDirectoryPath, SkinDataDirectorySubPath);
+      SerializeAndWriteItemData(map.ItemObjectData, outputFolderPath, ItemDataDirectoryPath, CoreDataDirectorySubPath);
+      SerializeAndWriteItemData(map.ItemSkinObjectData, outputFolderPath, ItemDataDirectoryPath, SkinDataDirectorySubPath);
+      SerializeAndWriteDestructableData(map.DestructableObjectData, outputFolderPath, DestructableDataDirectoryPath, CoreDataDirectorySubPath);
+      SerializeAndWriteDestructableData(map.DestructableSkinObjectData, outputFolderPath, DestructableDataDirectoryPath, SkinDataDirectorySubPath);
+      SerializeAndWriteDoodadData(map.DoodadObjectData, outputFolderPath, DoodadDataDirectoryPath, CoreDataDirectorySubPath);
+      SerializeAndWriteDoodadData(map.DoodadSkinObjectData, outputFolderPath, DoodadDataDirectoryPath, SkinDataDirectorySubPath);
+      SerializeAndWriteBuffData(map.BuffObjectData, outputFolderPath, BuffDataDirectoryPath, CoreDataDirectorySubPath);
+      SerializeAndWriteBuffData(map.BuffSkinObjectData, outputFolderPath, BuffDataDirectoryPath, SkinDataDirectorySubPath);
+      SerializeAndWriteUpgradeData(map.UpgradeObjectData, outputFolderPath, UpgradeDataDirectoryPath, CoreDataDirectorySubPath);
+      SerializeAndWriteUpgradeData(map.UpgradeSkinObjectData, outputFolderPath, UpgradeDataDirectoryPath, SkinDataDirectorySubPath);
       
       File.WriteAllText(Path.Combine(outputFolderPath, "Script.json"), map.Script);
     }
@@ -125,67 +111,67 @@ namespace Launcher.Services
       File.WriteAllText(fullPath, asJson);
     }
     
-    private void SerializeAndWriteUnitData(UnitObjectData unitObjectData, string outputFolderPath)
+    private void SerializeAndWriteUnitData(UnitObjectData unitObjectData, params string[] paths)
     {
       foreach (var unit in unitObjectData.BaseUnits) 
-        SerializeAndWriteSimpleObjectModification(unit, Path.Combine(outputFolderPath, BaseUnitsDataDirectoryPath));
+        SerializeAndWriteSimpleObjectModification(unit, Path.Combine(paths));
       
       foreach (var unit in unitObjectData.NewUnits) 
-        SerializeAndWriteSimpleObjectModification(unit, Path.Combine(outputFolderPath, NewUnitsDataDirectoryPath));
+        SerializeAndWriteSimpleObjectModification(unit, Path.Combine(paths));
     }
     
-    private void SerializeAndWriteBuffData(BuffObjectData buffObjectData, string outputFolderPath)
+    private void SerializeAndWriteBuffData(BuffObjectData buffObjectData, params string[] paths)
     {
       foreach (var buff in buffObjectData.BaseBuffs) 
-        SerializeAndWriteSimpleObjectModification(buff, Path.Combine(outputFolderPath, BaseBuffsDataDirectoryPath));
+        SerializeAndWriteSimpleObjectModification(buff, Path.Combine(paths));
       
       foreach (var buff in buffObjectData.NewBuffs) 
-        SerializeAndWriteSimpleObjectModification(buff, Path.Combine(outputFolderPath, BaseBuffsDataDirectoryPath));
+        SerializeAndWriteSimpleObjectModification(buff, Path.Combine(paths));
     }
 
-    private void SerializeAndWriteDoodadData(DoodadObjectData doodadObjectData, string outputFolderPath)
+    private void SerializeAndWriteDoodadData(DoodadObjectData doodadObjectData, params string[] paths)
     {
       foreach (var doodad in doodadObjectData.BaseDoodads) 
-        SerializeAndWriteVariationObjectModification(doodad, Path.Combine(outputFolderPath, BaseDoodadsDataDirectoryPath));
+        SerializeAndWriteVariationObjectModification(doodad, Path.Combine(paths));
       
       foreach (var doodad in doodadObjectData.NewDoodads) 
-        SerializeAndWriteVariationObjectModification(doodad, Path.Combine(outputFolderPath, NewDoodadsDataDirectoryPath));
+        SerializeAndWriteVariationObjectModification(doodad, Path.Combine(paths));
     }
 
-    private void SerializeAndWriteDestructableData(DestructableObjectData destructableObjectData, string outputFolderPath)
+    private void SerializeAndWriteDestructableData(DestructableObjectData destructableObjectData, params string[] paths)
     {
       foreach (var destructable in destructableObjectData.BaseDestructables) 
-        SerializeAndWriteSimpleObjectModification(destructable, Path.Combine(outputFolderPath, BaseDestructablesDataDirectoryPath));
+        SerializeAndWriteSimpleObjectModification(destructable, Path.Combine(paths));
       
       foreach (var destructable in destructableObjectData.NewDestructables) 
-        SerializeAndWriteSimpleObjectModification(destructable, Path.Combine(outputFolderPath, NewDestructablesDataDirectoryPath));
+        SerializeAndWriteSimpleObjectModification(destructable, Path.Combine(paths));
     }
 
-    private void SerializeAndWriteItemData(ItemObjectData itemObjectData, string outputFolderPath)
+    private void SerializeAndWriteItemData(ItemObjectData itemObjectData, params string[] paths)
     {
       foreach (var item in itemObjectData.BaseItems) 
-        SerializeAndWriteSimpleObjectModification(item, Path.Combine(outputFolderPath, BaseItemsDataDirectoryPath));
+        SerializeAndWriteSimpleObjectModification(item, Path.Combine(paths));
       
       foreach (var item in itemObjectData.NewItems) 
-        SerializeAndWriteSimpleObjectModification(item, Path.Combine(outputFolderPath, NewItemsDataDirectoryPath));
+        SerializeAndWriteSimpleObjectModification(item, Path.Combine(paths));
     }
 
-    private void SerializeAndWriteAbilityData(AbilityObjectData abilityObjectData, string outputFolderPath)
+    private void SerializeAndWriteAbilityData(AbilityObjectData abilityObjectData, params string[] paths)
     {
       foreach (var ability in abilityObjectData.BaseAbilities)
-        SerializeAndWriteLevelObjectModification(ability, Path.Combine(outputFolderPath, BaseAbilitiesDataDirectoryPath));
+        SerializeAndWriteLevelObjectModification(ability, Path.Combine(paths));
       
       foreach (var ability in abilityObjectData.NewAbilities)
-        SerializeAndWriteLevelObjectModification(ability, Path.Combine(outputFolderPath, NewAbilitiesDataDirectoryPath));
+        SerializeAndWriteLevelObjectModification(ability, Path.Combine(paths));
     }
     
-    private void SerializeAndWriteUpgradeData(UpgradeObjectData upgradeObjectData, string outputFolderPath)
+    private void SerializeAndWriteUpgradeData(UpgradeObjectData upgradeObjectData, params string[] paths)
     {
       foreach (var upgrade in upgradeObjectData.BaseUpgrades)
-        SerializeAndWriteLevelObjectModification(upgrade, Path.Combine(outputFolderPath, BaseUpgradesDataDirectoryPath));
+        SerializeAndWriteLevelObjectModification(upgrade, Path.Combine(paths));
       
       foreach (var upgrade in upgradeObjectData.NewUpgrades)
-        SerializeAndWriteLevelObjectModification(upgrade, Path.Combine(outputFolderPath, NewUpgradesDataDirectoryPath));
+        SerializeAndWriteLevelObjectModification(upgrade, Path.Combine(paths));
     }
     
     private void SerializeAndWriteSimpleObjectModification(SimpleObjectModification simpleObject, string outputDirectoryPath)

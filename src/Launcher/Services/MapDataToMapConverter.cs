@@ -16,7 +16,6 @@ using War3Net.Build.Info;
 using War3Net.Build.Object;
 using War3Net.Build.Script;
 using War3Net.Build.Widget;
-using static System.IO.SearchOption;
 using static Launcher.MapDataPaths;
 
 namespace Launcher.Services
@@ -81,28 +80,177 @@ namespace Launcher.Services
         ShadowMap = DeserializeFromFile<MapShadowMap, MapShadowMapDto>(Path.Combine(mapDataRootDirectory, ShadowMapPath)),
         ImportedFiles = DeserializeFromFile<ImportedFiles, MapImportedFilesDto>(Path.Combine(mapDataRootDirectory, ImportedFilesPath)),
         Info = DeserializeFromFile<MapInfo, MapInfoDto>(Path.Combine(mapDataRootDirectory, InfoPath)),
-        AbilityObjectData = DeserializeFromFile<AbilityObjectData, MapAbilityObjectDataDto>(Path.Combine(mapDataRootDirectory, AbilityObjectDataPath)),
-        BuffObjectData = DeserializeFromFile<BuffObjectData, MapBuffObjectDataDto>(Path.Combine(mapDataRootDirectory, BuffObjectDataPath)),
-        DestructableObjectData = DeserializeFromFile<DestructableObjectData, MapDestructableObjectDataDto>(Path.Combine(mapDataRootDirectory, DestructableObjectDataPath)),
-        DoodadObjectData = DeserializeFromFile<DoodadObjectData, MapDoodadObjectDataDto>(Path.Combine(mapDataRootDirectory, DoodadObjectDataPath)),
-        ItemObjectData = DeserializeFromFile<ItemObjectData, MapItemObjectDataDto>(Path.Combine(mapDataRootDirectory, ItemObjectDataPath)),
-        UnitObjectData = DeserializeFromFile<UnitObjectData, MapUnitObjectDataDto>(Path.Combine(mapDataRootDirectory, UnitObjectDataPath)),
-        UpgradeObjectData = DeserializeFromFile<UpgradeObjectData, MapUpgradeObjectDataDto>(Path.Combine(mapDataRootDirectory, UpgradeObjectDataPath)),
         CustomTextTriggers = DeserializeFromFile<MapCustomTextTriggers, MapCustomTextTriggersDto>(Path.Combine(mapDataRootDirectory, CustomTextTriggersPath)),
         TriggerStrings = DeserializeFromFile<TriggerStrings, MapTriggerStringsDto>(Path.Combine(mapDataRootDirectory, TriggerStringsPath)),
         Doodads = DeserializeFromFile<MapDoodads, MapDoodadsDto>(Path.Combine(mapDataRootDirectory, DoodadsPath)),
         Units = DeserializeFromFile<MapUnits, MapUnitsDto>(Path.Combine(mapDataRootDirectory, UnitsPath)),
         Triggers = GenerateEmptyMapTriggers(),
-        AbilitySkinObjectData = DeserializeFromFile<AbilityObjectData, MapAbilityObjectDataDto>(Path.Combine(mapDataRootDirectory, AbilitySkinObjectDataPath)),
-        BuffSkinObjectData = DeserializeFromFile<BuffObjectData, MapBuffObjectDataDto>(Path.Combine(mapDataRootDirectory, BuffSkinObjectDataPath)),
-        DestructableSkinObjectData = DeserializeFromFile<DestructableObjectData, MapDestructableObjectDataDto>(Path.Combine(mapDataRootDirectory, DestructableSkinObjectDataPath)),
-        DoodadSkinObjectData =DeserializeFromFile<DoodadObjectData, MapDoodadObjectDataDto>(Path.Combine(mapDataRootDirectory,DoodadSkinObjectDataPath)),
-        ItemSkinObjectData = DeserializeFromFile<ItemObjectData, MapItemObjectDataDto>(Path.Combine(mapDataRootDirectory, ItemSkinObjectDataPath)),
-        UnitSkinObjectData = DeserializeFromFile<UnitObjectData, MapUnitObjectDataDto>(Path.Combine(mapDataRootDirectory,UnitSkinObjectDataPath)),
-        UpgradeSkinObjectData = DeserializeFromFile<UpgradeObjectData, MapUpgradeObjectDataDto>(Path.Combine(mapDataRootDirectory, UpgradeSkinObjectDataPath)),
+        
+        AbilityObjectData = DeserializeAbilityDataFromDirectory(Path.Combine(mapDataRootDirectory, AbilityDataDirectoryPath, CoreDataDirectorySubPath)),
+        BuffObjectData = DeserializeBuffDataFromDirectory(Path.Combine(mapDataRootDirectory, BuffDataDirectoryPath, CoreDataDirectorySubPath)),
+        DestructableObjectData = DeserializeDestructableDataFromDirectory(Path.Combine(mapDataRootDirectory, DestructableDataDirectoryPath, CoreDataDirectorySubPath)),
+        DoodadObjectData = DeserializeDoodadDataFromDirectory(Path.Combine(mapDataRootDirectory, DoodadDataDirectoryPath, CoreDataDirectorySubPath)),
+        ItemObjectData = DeserializeItemDataFromDirectory(Path.Combine(mapDataRootDirectory, ItemDataDirectoryPath, CoreDataDirectorySubPath)),
+        UnitObjectData = DeserializeUnitDataFromDirectory(Path.Combine(mapDataRootDirectory, UnitDataDirectoryPath, CoreDataDirectorySubPath)),
+        UpgradeObjectData = DeserializeUpgradeDataFromDirectory(Path.Combine(mapDataRootDirectory, UpgradeDataDirectoryPath, CoreDataDirectorySubPath)),
+        
+        AbilitySkinObjectData = DeserializeAbilityDataFromDirectory(Path.Combine(mapDataRootDirectory, AbilityDataDirectoryPath, SkinDataDirectorySubPath)),
+        BuffSkinObjectData = DeserializeBuffDataFromDirectory(Path.Combine(mapDataRootDirectory, BuffDataDirectoryPath, SkinDataDirectorySubPath)),
+        DestructableSkinObjectData = DeserializeDestructableDataFromDirectory(Path.Combine(mapDataRootDirectory, DestructableDataDirectoryPath, SkinDataDirectorySubPath)),
+        DoodadSkinObjectData = DeserializeDoodadDataFromDirectory(Path.Combine(mapDataRootDirectory, DoodadDataDirectoryPath, SkinDataDirectorySubPath)),
+        ItemSkinObjectData = DeserializeItemDataFromDirectory(Path.Combine(mapDataRootDirectory, ItemDataDirectoryPath, SkinDataDirectorySubPath)),
+        UnitSkinObjectData = DeserializeUnitDataFromDirectory(Path.Combine(mapDataRootDirectory, UnitDataDirectoryPath, SkinDataDirectorySubPath)),
+        UpgradeSkinObjectData = DeserializeUpgradeDataFromDirectory(Path.Combine(mapDataRootDirectory, UpgradeDataDirectoryPath, SkinDataDirectorySubPath)),
         Script = File.ReadAllText(Path.Combine(mapDataRootDirectory, "Script.json"))
       };
       return map;
+    }
+
+    private UpgradeObjectData DeserializeUpgradeDataFromDirectory(string directory)
+    {
+      var objectData = new UpgradeObjectData(ObjectDataFormatVersion.v3);
+      var files = Directory.EnumerateFiles(directory, "*", SearchOption.AllDirectories);
+      foreach (var file in files)
+      {
+        var fileContents = File.ReadAllText(file);
+        var objectModification = JsonSerializer.Deserialize<LevelObjectModification>(fileContents, _jsonSerializerOptions);
+
+        if (objectModification == null)
+          throw new JsonException($"File {file} could not be serialized to {nameof(SimpleObjectModification)}.");
+        
+        if (objectModification.NewId == 0)
+          objectData.BaseUpgrades.Add(objectModification);
+        else
+          objectData.NewUpgrades.Add(objectModification);
+      }
+
+      return objectData;
+    }
+
+    private ItemObjectData DeserializeItemDataFromDirectory(string directory)
+    {
+      var objectData = new ItemObjectData(ObjectDataFormatVersion.v3);
+      var files = Directory.EnumerateFiles(directory, "*", SearchOption.AllDirectories);
+      foreach (var file in files)
+      {
+        var fileContents = File.ReadAllText(file);
+        var objectModification = JsonSerializer.Deserialize<SimpleObjectModification>(fileContents, _jsonSerializerOptions);
+
+        if (objectModification == null)
+          throw new JsonException($"File {file} could not be serialized to {nameof(SimpleObjectModification)}.");
+        
+        if (objectModification.NewId == 0)
+          objectData.BaseItems.Add(objectModification);
+        else
+          objectData.NewItems.Add(objectModification);
+      }
+
+      return objectData;
+    }
+
+    private DoodadObjectData DeserializeDoodadDataFromDirectory(string directory)
+    {
+      var objectData = new DoodadObjectData(ObjectDataFormatVersion.v3);
+      var files = Directory.EnumerateFiles(directory, "*", SearchOption.AllDirectories);
+      foreach (var file in files)
+      {
+        var fileContents = File.ReadAllText(file);
+        var objectModification = JsonSerializer.Deserialize<VariationObjectModification>(fileContents, _jsonSerializerOptions);
+
+        if (objectModification == null)
+          throw new JsonException($"File {file} could not be serialized to {nameof(SimpleObjectModification)}.");
+        
+        if (objectModification.NewId == 0)
+          objectData.BaseDoodads.Add(objectModification);
+        else
+          objectData.NewDoodads.Add(objectModification);
+      }
+
+      return objectData;
+    }
+
+    private DestructableObjectData DeserializeDestructableDataFromDirectory(string directory)
+    {
+      var objectData = new DestructableObjectData(ObjectDataFormatVersion.v3);
+      var files = Directory.EnumerateFiles(directory, "*", SearchOption.AllDirectories);
+      foreach (var file in files)
+      {
+        var fileContents = File.ReadAllText(file);
+        var objectModification = JsonSerializer.Deserialize<SimpleObjectModification>(fileContents, _jsonSerializerOptions);
+
+        if (objectModification == null)
+          throw new JsonException($"File {file} could not be serialized to {nameof(SimpleObjectModification)}.");
+        
+        if (objectModification.NewId == 0)
+          objectData.BaseDestructables.Add(objectModification);
+        else
+          objectData.NewDestructables.Add(objectModification);
+      }
+
+      return objectData;
+    }
+
+    private BuffObjectData DeserializeBuffDataFromDirectory(string directory)
+    {
+      var objectData = new BuffObjectData(ObjectDataFormatVersion.v3);
+      var files = Directory.EnumerateFiles(directory, "*", SearchOption.AllDirectories);
+      foreach (var file in files)
+      {
+        var fileContents = File.ReadAllText(file);
+        var objectModification = JsonSerializer.Deserialize<SimpleObjectModification>(fileContents, _jsonSerializerOptions);
+
+        if (objectModification == null)
+          throw new JsonException($"File {file} could not be serialized to {nameof(SimpleObjectModification)}.");
+        
+        if (objectModification.NewId == 0)
+          objectData.BaseBuffs.Add(objectModification);
+        else
+          objectData.NewBuffs.Add(objectModification);
+      }
+
+      return objectData;
+    }
+
+    private AbilityObjectData DeserializeAbilityDataFromDirectory(string directory)
+    {
+      var objectData = new AbilityObjectData(ObjectDataFormatVersion.v3);
+      var files = Directory.EnumerateFiles(directory, "*", SearchOption.AllDirectories);
+      foreach (var file in files)
+      {
+        var fileContents = File.ReadAllText(file);
+        var objectModification = JsonSerializer.Deserialize<LevelObjectModification>(fileContents, _jsonSerializerOptions);
+
+        if (objectModification == null)
+          throw new JsonException($"File {file} could not be serialized to {nameof(SimpleObjectModification)}.");
+        
+        if (objectModification.NewId == 0)
+          objectData.BaseAbilities.Add(objectModification);
+        else
+          objectData.NewAbilities.Add(objectModification);
+      }
+
+      return objectData;
+    }
+
+    private UnitObjectData DeserializeUnitDataFromDirectory(string directory)
+    {
+      var objectData = new UnitObjectData(ObjectDataFormatVersion.v3);
+      var files = Directory.EnumerateFiles(directory, "*", SearchOption.AllDirectories);
+      foreach (var file in files)
+      {
+        var fileContents = File.ReadAllText(file);
+        var objectModification = JsonSerializer.Deserialize<SimpleObjectModification>(fileContents, _jsonSerializerOptions);
+
+        if (objectModification == null)
+          throw new JsonException($"File {file} could not be serialized to {nameof(SimpleObjectModification)}.");
+        
+        if (objectModification.NewId == 0)
+          objectData.BaseUnits.Add(objectModification);
+        else
+          objectData.NewUnits.Add(objectModification);
+      }
+
+      return objectData;
     }
     
     private static IEnumerable<PathData> GetAdditionalFiles(string mapDataRootDirectory)
@@ -110,7 +258,7 @@ namespace Launcher.Services
       var importsDirectory = $@"{mapDataRootDirectory}\{ImportsPath}";
 
       var additionalFiles = Directory.Exists(importsDirectory)
-        ? Directory.EnumerateFiles(importsDirectory, "*", AllDirectories).Select(x => new PathData
+        ? Directory.EnumerateFiles(importsDirectory, "*", SearchOption.AllDirectories).Select(x => new PathData
         {
           AbsolutePath = x,
           RelativePath = Path.GetRelativePath(importsDirectory, x)
