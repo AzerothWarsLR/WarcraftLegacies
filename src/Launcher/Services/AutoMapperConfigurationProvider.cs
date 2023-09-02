@@ -34,7 +34,6 @@ namespace Launcher.Services
         cfg.CreateMap<MapPreviewIconsDto, MapPreviewIcons>().ReverseMap();
         cfg.CreateMap<QuadrilateralDto, Quadrilateral>().ReverseMap();
         cfg.CreateMap<MapShadowMapDto, MapShadowMap>().ReverseMap();
-        cfg.CreateMap<MapTriggerStringsDto, TriggerStrings>().ReverseMap();
         cfg.CreateMap<MapUnitObjectDataDto, UnitObjectData>().ReverseMap();
         cfg.CreateMap<MapUpgradeObjectDataDto, UpgradeObjectData>().ReverseMap();
         cfg.CreateMap<MapTriggersDto, MapTriggers>()

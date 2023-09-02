@@ -3,7 +3,6 @@
   public static class MapDataPaths
   {
     public const string CustomTextTriggersPath = "CustomTextTriggers.json";
-    public const string TriggerStringsPath = "TriggerStrings.json";
     public const string ShadowMapPath = "ShadowMap.json";
     public const string PreviewIconsPath = "PreviewIcons.json";
     public const string PathingMapPath = "PathingMap.json";
@@ -26,6 +25,7 @@
     public const string RegionsDirectoryPath = "Regions";
     public const string UnitsDirectoryPath = "Units";
     public const string DoodadsDirectoryPath = "Doodads";
+    public const string TriggerStringsDirectoryPath = "TriggerStrings";
     
     public const string ImportsPath = "Imports";
 

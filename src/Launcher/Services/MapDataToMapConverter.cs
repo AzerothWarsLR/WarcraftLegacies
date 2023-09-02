@@ -81,7 +81,7 @@ namespace Launcher.Services
         ImportedFiles = DeserializeFromFile<ImportedFiles, MapImportedFilesDto>(Path.Combine(mapDataRootDirectory, ImportedFilesPath)),
         Info = DeserializeFromFile<MapInfo, MapInfoDto>(Path.Combine(mapDataRootDirectory, InfoPath)),
         CustomTextTriggers = DeserializeFromFile<MapCustomTextTriggers, MapCustomTextTriggersDto>(Path.Combine(mapDataRootDirectory, CustomTextTriggersPath)),
-        TriggerStrings = DeserializeFromFile<TriggerStrings, MapTriggerStringsDto>(Path.Combine(mapDataRootDirectory, TriggerStringsPath)),
+        TriggerStrings = DeserializeTriggerStringsFromDirectory(Path.Combine(mapDataRootDirectory, TriggerStringsDirectoryPath)),
         Doodads = DeserializeDoodadsFromDirectory(Path.Combine(mapDataRootDirectory, DoodadsDirectoryPath)),
         Units = DeserializeUnitsFromDirectory(Path.Combine(mapDataRootDirectory, UnitsDirectoryPath)),
         Triggers = GenerateEmptyMapTriggers(),
@@ -104,6 +104,22 @@ namespace Launcher.Services
         Script = File.ReadAllText(Path.Combine(mapDataRootDirectory, ScriptPath))
       };
       return map;
+    }
+
+    private TriggerStrings? DeserializeTriggerStringsFromDirectory(string directory)
+    {
+      if (!Directory.Exists(directory))
+        return null;
+      
+      var triggerStrings = new TriggerStrings();
+      var files = Directory.EnumerateFiles(directory, "*", SearchOption.AllDirectories);
+      foreach (var file in files)
+      {
+        var fileContents = File.ReadAllText(file);
+        var triggerString = JsonSerializer.Deserialize<TriggerString>(fileContents, _jsonSerializerOptions);
+        triggerStrings.Strings.Add(triggerString);
+      }
+      return triggerStrings;
     }
 
     private MapDoodads DeserializeDoodadsFromDirectory(string directory)

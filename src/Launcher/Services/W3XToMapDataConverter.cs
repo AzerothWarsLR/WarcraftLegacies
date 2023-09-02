@@ -89,7 +89,7 @@ namespace Launcher.Services
       if (map.ShadowMap != null)
         SerializeAndWrite<MapShadowMap, MapShadowMapDto>(map.ShadowMap, outputFolderPath, ShadowMapPath);
       if (map.TriggerStrings != null)
-        SerializeAndWrite<TriggerStrings, MapTriggerStringsDto>(map.TriggerStrings, outputFolderPath,TriggerStringsPath);
+        SerializeAndWriteTriggerStrings(map.TriggerStrings, Path.Combine(outputFolderPath, TriggerStringsDirectoryPath));
       if (map.CustomTextTriggers != null)
         SerializeAndWrite<MapCustomTextTriggers, MapCustomTextTriggersDto>(map.CustomTextTriggers, outputFolderPath,CustomTextTriggersPath);
       if (map.Sounds != null)
@@ -187,6 +187,19 @@ namespace Launcher.Services
     {
       foreach (var sound in sounds.Sounds)
         SerializeAndWrite<Sound, SoundDto>(sound, path, $"{sound.Name.Remove(0, 7)}.json");
+    }
+    
+    private void SerializeAndWriteTriggerStrings(TriggerStrings triggerStrings, string path)
+    {
+      if (!Directory.Exists(path))
+        Directory.CreateDirectory(path);
+      
+      foreach (var triggerString in triggerStrings.Strings)
+      {
+        var asJson = JsonSerializer.Serialize(triggerString, _jsonSerializerOptions);
+        var fileName = Path.Combine(path, $"{triggerString.Key}.json");
+        File.WriteAllText(fileName, asJson);
+      }
     }
     
     private void SerializeAndWriteRegions(MapRegions regions, string path)
