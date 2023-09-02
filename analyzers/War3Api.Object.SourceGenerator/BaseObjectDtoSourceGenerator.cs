@@ -56,7 +56,7 @@ public sealed class BaseObjectDtoSourceGenerator : ISourceGenerator
 
     var dtoNamespace = WrapDeclarationInNamespace(dtoClass);
 
-    context.AddSource($"DataTransferObjects/{dtoClassName}.cs", dtoNamespace.GetText(Encoding.UTF8));
+    context.AddSource($"{dtoClassName}.cs", dtoNamespace.GetText(Encoding.UTF8));
   }
   
   private static NamespaceDeclarationSyntax WrapDeclarationInNamespace(MemberDeclarationSyntax declaration)
