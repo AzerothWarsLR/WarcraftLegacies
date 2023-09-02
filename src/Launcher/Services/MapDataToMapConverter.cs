@@ -104,7 +104,7 @@ namespace Launcher.Services
       };
       return map;
     }
-
+    
     private static IEnumerable<PathData> GetAdditionalFiles(string mapDataRootDirectory)
     {
       var importsDirectory = $@"{mapDataRootDirectory}\{ImportsPath}";

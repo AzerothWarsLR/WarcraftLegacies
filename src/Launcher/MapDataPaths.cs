@@ -29,6 +29,21 @@
     public const string BuffSkinObjectDataPath = "BuffSkinObjectData.json";
     public const string AbilitySkinObjectDataPath = "AbilitySkinObjectData.json";
     
+    public const string BaseUnitsDataDirectoryPath = "UnitData/BaseUnits";
+    public const string NewUnitsDataDirectoryPath = "UnitData/NewUnits";
+    public const string BaseDoodadsDataDirectoryPath = "DoodadData/BaseDoodads";
+    public const string NewDoodadsDataDirectoryPath = "DoodadData/NewDoodads";
+    public const string BaseAbilitiesDataDirectoryPath = "AbilityData/BaseAbilities";
+    public const string NewAbilitiesDataDirectoryPath = "AbilityData/NewAbilities";
+    public const string BaseUpgradesDataDirectoryPath = "UpgradeData/BaseUpgrades";
+    public const string NewUpgradesDataDirectoryPath = "UpgradeData/NewUpgrades";
+    public const string BaseItemsDataDirectoryPath = "ItemData/BaseItems";
+    public const string NewItemsDataDirectoryPath = "ItemData/NewItems";
+    public const string BaseDestructablesDataDirectoryPath = "DestructableData/BaseDestructables";
+    public const string NewDestructablesDataDirectoryPath = "DestructableData/NewDestructables";
+    public const string BaseBuffsDataDirectoryPath = "BuffData/BaseBuffs";
+    public const string NewBuffsDataDirectoryPath = "BuffData/NewBuffs";
+    
     public const string ImportsPath = "Imports";
   }
 }
