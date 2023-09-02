@@ -1,0 +1,15 @@
+{
+  "Left": -6016,
+  "Bottom": -28416,
+  "Right": -4896,
+  "Top": -27104,
+  "Name": "MaievStartUnlock",
+  "CreationNumber": 404,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

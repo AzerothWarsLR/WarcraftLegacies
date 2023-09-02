@@ -1,0 +1,15 @@
+{
+  "Left": -544,
+  "Bottom": -23712,
+  "Right": 3680,
+  "Top": -18528,
+  "Name": "Netherstorm",
+  "CreationNumber": 150,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

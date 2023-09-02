@@ -1,0 +1,15 @@
+{
+  "Left": -5440,
+  "Bottom": -17152,
+  "Right": -2400,
+  "Top": -14656,
+  "Name": "ZandalarUnlock",
+  "CreationNumber": 385,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "Left": 16224,
+  "Bottom": 11776,
+  "Right": 20224,
+  "Top": 17440,
+  "Name": "QuelthalasAmbient",
+  "CreationNumber": 275,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 255,
+    "B": 255
+  }
+}

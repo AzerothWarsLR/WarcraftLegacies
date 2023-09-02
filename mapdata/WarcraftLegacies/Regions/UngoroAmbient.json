@@ -1,0 +1,14 @@
+{
+  "Left": -15616,
+  "Bottom": -15200,
+  "Right": -12608,
+  "Top": -11680,
+  "Name": "UngoroAmbient",
+  "CreationNumber": 251,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 255,
+    "B": 255
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "Left": 20128,
+  "Bottom": 7040,
+  "Right": 22112,
+  "Top": 9472,
+  "Name": "Havenshire",
+  "CreationNumber": 50,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

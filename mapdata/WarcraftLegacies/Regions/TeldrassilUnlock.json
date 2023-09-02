@@ -1,0 +1,15 @@
+{
+  "Left": -20512,
+  "Bottom": 12256,
+  "Right": -16352,
+  "Top": 16512,
+  "Name": "TeldrassilUnlock",
+  "CreationNumber": 449,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

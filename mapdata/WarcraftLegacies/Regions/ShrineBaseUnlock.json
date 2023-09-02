@@ -1,0 +1,15 @@
+{
+  "Left": -13184,
+  "Bottom": 7648,
+  "Right": -9632,
+  "Top": 9568,
+  "Name": "ShrineBaseUnlock",
+  "CreationNumber": 138,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

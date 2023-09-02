@@ -1,0 +1,15 @@
+{
+  "Left": 18208,
+  "Bottom": -31584,
+  "Right": 23808,
+  "Top": -23360,
+  "Name": "MonolithNoBuild",
+  "CreationNumber": 454,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

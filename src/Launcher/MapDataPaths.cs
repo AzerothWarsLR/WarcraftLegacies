@@ -9,8 +9,6 @@
     public const string PathingMapPath = "PathingMap.json";
     public const string ImportedFilesPath = "ImportedFiles.json";
     public const string UnitsPath = "Units.json";
-    public const string SoundsPath = "Sounds.json";
-    public const string RegionsPath = "Regions.json";
     public const string InfoPath = "Info.json";
     public const string EnvironmentPath = "Environment.json";
     public const string DoodadsPath = "Doodads.json";
@@ -27,6 +25,7 @@
     public const string CoreDataDirectorySubPath = "Core";
 
     public const string SoundsDirectoryPath = "Sounds";
+    public const string RegionsDirectoryPath = "Regions";
     
     public const string ImportsPath = "Imports";
 

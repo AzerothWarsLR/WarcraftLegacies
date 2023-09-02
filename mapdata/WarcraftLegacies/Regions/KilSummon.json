@@ -1,0 +1,15 @@
+{
+  "Left": 14240,
+  "Bottom": -17216,
+  "Right": 14336,
+  "Top": -17120,
+  "Name": "KilSummon",
+  "CreationNumber": 153,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

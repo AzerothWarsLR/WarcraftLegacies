@@ -1,0 +1,15 @@
+{
+  "Left": -8608,
+  "Bottom": -6816,
+  "Right": -6208,
+  "Top": -3968,
+  "Name": "EchoUnlock",
+  "CreationNumber": 409,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "Left": 8608,
+  "Bottom": 3872,
+  "Right": 10336,
+  "Top": 6048,
+  "Name": "Dalaran",
+  "CreationNumber": 19,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 255,
+    "G": 255
+  }
+}

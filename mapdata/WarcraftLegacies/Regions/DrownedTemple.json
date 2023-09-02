@@ -1,0 +1,15 @@
+{
+  "Left": 17248,
+  "Bottom": -15936,
+  "Right": 17696,
+  "Top": -15520,
+  "Name": "DrownedTemple",
+  "CreationNumber": 400,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

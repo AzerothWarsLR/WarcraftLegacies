@@ -1,0 +1,15 @@
+{
+  "Left": -9824,
+  "Bottom": -2080,
+  "Right": -5824,
+  "Top": 1248,
+  "Name": "Orgrimmar",
+  "CreationNumber": 75,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 255,
+    "G": 128,
+    "B": 128
+  }
+}

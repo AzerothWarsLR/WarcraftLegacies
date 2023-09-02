@@ -1,0 +1,15 @@
+{
+  "Left": 9952,
+  "Bottom": -23200,
+  "Right": 10592,
+  "Top": -22816,
+  "Name": "Trade1",
+  "CreationNumber": 415,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

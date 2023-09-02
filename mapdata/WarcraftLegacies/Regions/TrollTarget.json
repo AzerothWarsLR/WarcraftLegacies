@@ -1,0 +1,15 @@
+{
+  "Left": 17088,
+  "Bottom": 12480,
+  "Right": 17120,
+  "Top": 12512,
+  "Name": "TrollTarget",
+  "CreationNumber": 377,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

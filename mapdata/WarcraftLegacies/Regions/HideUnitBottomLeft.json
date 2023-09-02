@@ -1,0 +1,15 @@
+{
+  "Left": -24128,
+  "Bottom": -30848,
+  "Right": -9024,
+  "Top": -22688,
+  "Name": "HideUnitBottomLeft",
+  "CreationNumber": 168,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "Left": -4160,
+  "Bottom": 15104,
+  "Right": 1952,
+  "Top": 20320,
+  "Name": "Central Northrend",
+  "CreationNumber": 14,
+  "WeatherType": 1936477779,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 255,
+    "G": 128,
+    "B": 128
+  }
+}

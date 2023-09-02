@@ -1,0 +1,14 @@
+{
+  "Left": 12000,
+  "Bottom": -22816,
+  "Right": 13376,
+  "Top": -21280,
+  "Name": "IllidariUnlockSA",
+  "CreationNumber": 111,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 255,
+    "G": 255
+  }
+}

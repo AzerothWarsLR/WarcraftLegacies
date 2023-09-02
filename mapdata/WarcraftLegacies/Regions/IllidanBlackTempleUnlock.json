@@ -1,0 +1,15 @@
+{
+  "Left": 3680,
+  "Bottom": -31680,
+  "Right": 6720,
+  "Top": -28480,
+  "Name": "IllidanBlackTempleUnlock",
+  "CreationNumber": 68,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

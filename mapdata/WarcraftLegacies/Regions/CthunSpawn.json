@@ -1,0 +1,15 @@
+{
+  "Left": -16992,
+  "Bottom": -17440,
+  "Right": -16512,
+  "Top": -16992,
+  "Name": "CthunSpawn",
+  "CreationNumber": 408,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

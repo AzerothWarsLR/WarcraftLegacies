@@ -1,0 +1,15 @@
+{
+  "Left": 7296,
+  "Bottom": -7872,
+  "Right": 14240,
+  "Top": -4992,
+  "Name": "Dun Morogh Ships",
+  "CreationNumber": 35,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

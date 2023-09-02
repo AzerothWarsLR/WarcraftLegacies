@@ -73,8 +73,8 @@ namespace Launcher.Services
         SerializeAndWrite<MapEnvironment, MapEnvironmentDto>(map.Environment, outputFolderPath, EnvironmentPath);
       if (map.Info != null) 
         SerializeAndWrite<MapInfo, MapInfoDto>(map.Info, outputFolderPath, InfoPath);
-      if (map.Regions != null) 
-        SerializeAndWrite<MapRegions, MapRegionsDto>(map.Regions, outputFolderPath, RegionsPath);
+      if (map.Regions != null)
+        SerializeAndWriteRegions(map.Regions, Path.Combine(outputFolderPath, RegionsDirectoryPath));
       if (map.Units != null) 
         SerializeAndWrite<MapUnits, MapUnitsDto>(map.Units, outputFolderPath, UnitsPath);
       if (map.ImportedFiles != null)
@@ -142,6 +142,12 @@ namespace Launcher.Services
     {
       foreach (var sound in sounds.Sounds)
         SerializeAndWrite<Sound, SoundDto>(sound, path, $"{sound.Name.Remove(0, 7)}.json");
+    }
+    
+    private void SerializeAndWriteRegions(MapRegions regions, string path)
+    {
+      foreach (var region in regions.Regions)
+        SerializeAndWrite<Region, RegionDto>(region, path, $"{region.Name}.json");
     }
     
     private void SerializeAndWriteUnitData(UnitObjectData unitObjectData, params string[] paths)

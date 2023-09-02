@@ -1,0 +1,15 @@
+{
+  "Left": 7872,
+  "Bottom": -18240,
+  "Right": 18880,
+  "Top": -12288,
+  "Name": "South EK Ships",
+  "CreationNumber": 96,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

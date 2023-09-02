@@ -1,0 +1,15 @@
+{
+  "Left": -13056,
+  "Bottom": 5440,
+  "Right": -11072,
+  "Top": 7488,
+  "Name": "RiseBaseUnlock",
+  "CreationNumber": 137,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

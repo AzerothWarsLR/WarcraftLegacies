@@ -1,0 +1,15 @@
+{
+  "Left": 19584,
+  "Bottom": 23232,
+  "Right": 22688,
+  "Top": 24800,
+  "Name": "ArtifactDummyInstance",
+  "CreationNumber": 13,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "Left": -12256,
+  "Bottom": -9920,
+  "Right": -8640,
+  "Top": -5728,
+  "Name": "DusthallowAmbient",
+  "CreationNumber": 256,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 255,
+    "B": 255
+  }
+}

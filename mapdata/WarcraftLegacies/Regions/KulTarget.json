@@ -1,0 +1,15 @@
+{
+  "Left": 3904,
+  "Bottom": -13440,
+  "Right": 3936,
+  "Top": -13408,
+  "Name": "KulTarget",
+  "CreationNumber": 383,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

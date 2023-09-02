@@ -1,0 +1,14 @@
+{
+  "Left": 9792,
+  "Bottom": -2176,
+  "Right": 12608,
+  "Top": 1568,
+  "Name": "TolbaradAmbient",
+  "CreationNumber": 292,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 255,
+    "B": 255
+  }
+}

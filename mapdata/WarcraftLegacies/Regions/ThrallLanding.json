@@ -1,0 +1,15 @@
+{
+  "Left": -9120,
+  "Bottom": -11040,
+  "Right": -8576,
+  "Top": -10752,
+  "Name": "ThrallLanding",
+  "CreationNumber": 232,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

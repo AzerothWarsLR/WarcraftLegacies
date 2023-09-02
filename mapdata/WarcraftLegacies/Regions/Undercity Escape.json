@@ -1,0 +1,15 @@
+{
+  "Left": 6048,
+  "Bottom": 8288,
+  "Right": 6400,
+  "Top": 8672,
+  "Name": "Undercity Escape",
+  "CreationNumber": 368,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

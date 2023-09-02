@@ -1,0 +1,15 @@
+{
+  "Left": -5792,
+  "Bottom": -3680,
+  "Right": -5024,
+  "Top": -2752,
+  "Name": "Nazjatar",
+  "CreationNumber": 90,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

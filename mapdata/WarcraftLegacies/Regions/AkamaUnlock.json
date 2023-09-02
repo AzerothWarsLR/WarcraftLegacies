@@ -1,0 +1,15 @@
+{
+  "Left": -4416,
+  "Bottom": -21088,
+  "Right": -3072,
+  "Top": -20064,
+  "Name": "AkamaUnlock",
+  "CreationNumber": 459,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

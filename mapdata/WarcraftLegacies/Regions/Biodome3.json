@@ -1,0 +1,15 @@
+{
+  "Left": 864,
+  "Bottom": -20512,
+  "Right": 1408,
+  "Top": -20000,
+  "Name": "Biodome3",
+  "CreationNumber": 145,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

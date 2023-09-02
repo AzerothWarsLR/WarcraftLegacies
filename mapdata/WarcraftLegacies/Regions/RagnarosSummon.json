@@ -1,0 +1,15 @@
+{
+  "Left": 12192,
+  "Bottom": -10784,
+  "Right": 12512,
+  "Top": -10464,
+  "Name": "RagnarosSummon",
+  "CreationNumber": 71,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

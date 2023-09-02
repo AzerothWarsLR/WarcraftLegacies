@@ -31,7 +31,6 @@ namespace Launcher.Services
         cfg.CreateMap<MapImportedFilesDto, ImportedFiles>().ReverseMap();
         cfg.CreateMap<MapItemObjectDataDto, ItemObjectData>().ReverseMap();
         cfg.CreateMap<MapInfoDto, MapInfo>().ReverseMap();
-        cfg.CreateMap<MapRegionsDto, MapRegions>().ReverseMap();
         cfg.CreateMap<MapUnitsDto, MapUnits>().ReverseMap();
         cfg.CreateMap<MapPathingMapDto, MapPathingMap>().ReverseMap();
         cfg.CreateMap<MapPreviewIconsDto, MapPreviewIcons>().ReverseMap();

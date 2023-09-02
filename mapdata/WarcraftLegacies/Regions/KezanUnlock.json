@@ -1,0 +1,15 @@
+{
+  "Left": -2400,
+  "Bottom": -8000,
+  "Right": 608,
+  "Top": -5184,
+  "Name": "KezanUnlock",
+  "CreationNumber": 6,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

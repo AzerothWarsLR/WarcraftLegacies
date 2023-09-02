@@ -1,0 +1,15 @@
+{
+  "Left": -15552,
+  "Bottom": 2464,
+  "Right": -13088,
+  "Top": 4576,
+  "Name": "AshenvaleUnlock",
+  "CreationNumber": 399,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

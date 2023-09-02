@@ -1,0 +1,15 @@
+{
+  "Left": -19456,
+  "Bottom": -4896,
+  "Right": -17152,
+  "Top": -2976,
+  "Name": "DesolaceUnlock",
+  "CreationNumber": 16,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

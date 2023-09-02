@@ -1,0 +1,15 @@
+{
+  "Left": -800,
+  "Bottom": 9792,
+  "Right": -544,
+  "Top": 10080,
+  "Name": "GuldansCorpse",
+  "CreationNumber": 57,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

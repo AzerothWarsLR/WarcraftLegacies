@@ -1,0 +1,15 @@
+{
+  "Left": -8480,
+  "Bottom": -10304,
+  "Right": -6016,
+  "Top": -7776,
+  "Name": "Theramore",
+  "CreationNumber": 179,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

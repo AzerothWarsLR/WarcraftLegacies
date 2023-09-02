@@ -1,0 +1,15 @@
+{
+  "Left": -2432,
+  "Bottom": 3840,
+  "Right": -2112,
+  "Top": 4160,
+  "Name": "VaultoftheWardens",
+  "CreationNumber": 178,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

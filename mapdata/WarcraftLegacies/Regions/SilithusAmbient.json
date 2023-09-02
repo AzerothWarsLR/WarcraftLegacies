@@ -1,0 +1,14 @@
+{
+  "Left": -20768,
+  "Bottom": -19744,
+  "Right": -15712,
+  "Top": -11744,
+  "Name": "SilithusAmbient",
+  "CreationNumber": 250,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 255,
+    "B": 255
+  }
+}
