@@ -29,7 +29,7 @@ namespace Launcher
     
     public const string ImportsPath = "Imports";
 
-    public const string ScriptPath = "Script.lua";
+    public const string ScriptPath = "war3map.lua";
     public const string MinimapPath = "war3mapMap.blp";
     public const string GameplayConstantsPath = "war3mapMisc.txt";
     public const string GameInterfacePath = "war3mapSkin.txt";
