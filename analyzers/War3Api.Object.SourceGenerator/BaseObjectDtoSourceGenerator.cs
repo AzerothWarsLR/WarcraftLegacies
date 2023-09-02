@@ -55,10 +55,7 @@ public sealed class BaseObjectDtoSourceGenerator : ISourceGenerator
         Token(SyntaxKind.SealedKeyword)))
       .AddSimplifiedCopiedProperties(classSymbol);
 
-    var dtoNamespace = NamespaceDeclaration(ParseName(OutputNamespace))
-      .AddUsings(UsingDirective(ParseName("System")))
-      .AddMembers(dtoClass)
-      .NormalizeWhitespace();
+    var dtoNamespace = WrapDeclarationInNamespace(dtoClass);
 
     context.AddSource($"DataTransferObjects/{dtoClassName}.cs", dtoNamespace.GetText(Encoding.UTF8));
   }
@@ -70,14 +67,60 @@ public sealed class BaseObjectDtoSourceGenerator : ISourceGenerator
     var dtoClass = ClassDeclaration(mapperClassName)
       .WithModifiers(TokenList(
         Token(SyntaxKind.PublicKeyword),
-        Token(SyntaxKind.SealedKeyword)));
+        Token(SyntaxKind.SealedKeyword)))
+      .WithMembers(
+        SingletonList<MemberDeclarationSyntax>(
+          MethodDeclaration(
+              IdentifierName("UnitDto"),
+              Identifier("UnitToUnitDto"))
+            .WithModifiers(
+              TokenList(
+                Token(SyntaxKind.PublicKeyword)))
+            .WithParameterList(
+              ParameterList(
+                SingletonSeparatedList(
+                  Parameter(
+                      Identifier("unit"))
+                    .WithType(
+                      IdentifierName("Unit")))))
+            .WithBody(
+              Block(
+                SingletonList<StatementSyntax>(
+                  ReturnStatement(
+                    ObjectCreationExpression(
+                        IdentifierName("UnitDto"))
+                      .WithInitializer(
+                        InitializerExpression(
+                          SyntaxKind.ObjectInitializerExpression,
+                          SeparatedList<ExpressionSyntax>(
+                            new SyntaxNodeOrToken[]{
+                              AssignmentExpression(
+                                SyntaxKind.SimpleAssignmentExpression,
+                                IdentifierName("Art"),
+                                ConditionalExpression(
+                                  MemberAccessExpression(
+                                    SyntaxKind.SimpleMemberAccessExpression,
+                                    IdentifierName("unit"),
+                                    IdentifierName("IsArtModified")),
+                                  MemberAccessExpression(
+                                    SyntaxKind.SimpleMemberAccessExpression,
+                                    IdentifierName("unit"),
+                                    IdentifierName("Art")),
+                                  LiteralExpression(
+                                    SyntaxKind.NullLiteralExpression))),
+                              Token(SyntaxKind.CommaToken)})))))))));
 
-    var dtoNamespace = NamespaceDeclaration(ParseName(OutputNamespace))
-      .AddUsings(UsingDirective(ParseName("System")))
-      .AddMembers(dtoClass)
-      .NormalizeWhitespace();
+    var dtoNamespace = WrapDeclarationInNamespace(dtoClass);
 
     context.AddSource($"Mappers/{mapperClassName}.cs", dtoNamespace.GetText(Encoding.UTF8));
+  }
+
+  private static NamespaceDeclarationSyntax WrapDeclarationInNamespace(MemberDeclarationSyntax declaration)
+  {
+    return NamespaceDeclaration(ParseName(OutputNamespace))
+      .AddUsings(UsingDirective(ParseName("System")))
+      .AddMembers(declaration)
+      .NormalizeWhitespace();
   }
 }
 
