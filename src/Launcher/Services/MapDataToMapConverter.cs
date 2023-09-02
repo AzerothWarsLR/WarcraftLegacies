@@ -11,7 +11,6 @@ using Launcher.JsonConverters;
 using War3Net.Build;
 using War3Net.Build.Audio;
 using War3Net.Build.Environment;
-using War3Net.Build.Import;
 using War3Net.Build.Info;
 using War3Net.Build.Object;
 using War3Net.Build.Script;
@@ -367,11 +366,15 @@ namespace Launcher.Services
         }).ToList()
         : new List<PathData>();
 
-      additionalFiles.Add(new PathData
+      foreach (var filePath in GetUnserializableFilePaths())
       {
-        AbsolutePath = Path.Combine(mapDataRootDirectory, "war3mapMap.blp"),
-        RelativePath = "war3mapMap.blp"
-      });
+        additionalFiles.Add(new PathData
+        {
+          AbsolutePath = Path.Combine(mapDataRootDirectory, filePath),
+          RelativePath = filePath
+        });
+      }
+
       return additionalFiles;
     }
     
@@ -389,12 +392,16 @@ namespace Launcher.Services
           }
         }
         : new List<DirectoryEnumerationOptions>();
-      
-      fileDirectories.Add(new DirectoryEnumerationOptions
+
+      foreach (var filePath in GetUnserializableFilePaths())
       {
-        Path = mapDataRootDirectory,
-        SearchPattern = "war3mapMap.blp"
-      });
+        fileDirectories.Add(new DirectoryEnumerationOptions
+        {
+          Path = mapDataRootDirectory,
+          SearchPattern = filePath
+        });
+      }
+      
       return fileDirectories;
     }
 
