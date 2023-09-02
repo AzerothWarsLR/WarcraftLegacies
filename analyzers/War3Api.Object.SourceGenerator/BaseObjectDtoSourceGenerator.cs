@@ -62,7 +62,10 @@ public sealed class BaseObjectDtoSourceGenerator : ISourceGenerator
   
   private static void GenerateMapperClass(GeneratorExecutionContext context, ISymbol classSymbol)
   {
-    var mapperClassName = $"{classSymbol.Name}DtoMapper";
+    var className = classSymbol.Name;
+    var parameterName = className.ToCamelCase();
+    var dtoClassName = $"{className}Dto";
+    var mapperClassName = $"{className}DtoMapper";
 
     var dtoClass = ClassDeclaration(mapperClassName)
       .WithModifiers(TokenList(
@@ -71,8 +74,8 @@ public sealed class BaseObjectDtoSourceGenerator : ISourceGenerator
       .WithMembers(
         SingletonList<MemberDeclarationSyntax>(
           MethodDeclaration(
-              IdentifierName("UnitDto"),
-              Identifier("UnitToUnitDto"))
+              IdentifierName(dtoClassName),
+              Identifier("ToDto"))
             .WithModifiers(
               TokenList(
                 Token(SyntaxKind.PublicKeyword)))
@@ -80,15 +83,15 @@ public sealed class BaseObjectDtoSourceGenerator : ISourceGenerator
               ParameterList(
                 SingletonSeparatedList(
                   Parameter(
-                      Identifier("unit"))
+                      Identifier(parameterName))
                     .WithType(
-                      IdentifierName("Unit")))))
+                      IdentifierName(className)))))
             .WithBody(
               Block(
                 SingletonList<StatementSyntax>(
                   ReturnStatement(
                     ObjectCreationExpression(
-                        IdentifierName("UnitDto"))
+                        IdentifierName(dtoClassName))
                       .WithInitializer(
                         InitializerExpression(
                           SyntaxKind.ObjectInitializerExpression,
@@ -100,11 +103,11 @@ public sealed class BaseObjectDtoSourceGenerator : ISourceGenerator
                                 ConditionalExpression(
                                   MemberAccessExpression(
                                     SyntaxKind.SimpleMemberAccessExpression,
-                                    IdentifierName("unit"),
+                                    IdentifierName(parameterName),
                                     IdentifierName("IsArtModified")),
                                   MemberAccessExpression(
                                     SyntaxKind.SimpleMemberAccessExpression,
-                                    IdentifierName("unit"),
+                                    IdentifierName(parameterName),
                                     IdentifierName("Art")),
                                   LiteralExpression(
                                     SyntaxKind.NullLiteralExpression))),
