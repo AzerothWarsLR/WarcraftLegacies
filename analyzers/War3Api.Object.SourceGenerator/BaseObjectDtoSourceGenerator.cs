@@ -36,7 +36,11 @@ public sealed class BaseObjectDtoSourceGenerator : ISourceGenerator
       var classDeclarations = root.DescendantNodes().OfType<ClassDeclarationSyntax>();
 
       foreach (var classDeclaration in classDeclarations)
+      {
         GenerateDtoClass(context, semanticModel, classDeclaration, baseObjectSymbol);
+        GenerateMapperClass(context, semanticModel, classDeclaration, baseObjectSymbol);
+      }
+      
     }
   }
 
@@ -61,6 +65,27 @@ public sealed class BaseObjectDtoSourceGenerator : ISourceGenerator
       .NormalizeWhitespace();
 
     context.AddSource($"{dtoClassName}.cs", dtoNamespace.GetText(Encoding.UTF8));
+  }
+  
+  private static void GenerateMapperClass(GeneratorExecutionContext context, SemanticModel semanticModel, ClassDeclarationSyntax classDeclaration, INamedTypeSymbol baseObjectSymbol)
+  {
+    var classSymbol = semanticModel.GetDeclaredSymbol(classDeclaration);
+    if (classSymbol?.BaseType == null || !SymbolEqualityComparer.Default.Equals(classSymbol.BaseType, baseObjectSymbol))
+      return;
+    
+    var mapperClassName = $"{classSymbol.Name}DtoMapper";
+
+    var dtoClass = ClassDeclaration(mapperClassName)
+      .WithModifiers(TokenList(
+        Token(SyntaxKind.PublicKeyword),
+        Token(SyntaxKind.SealedKeyword)));
+
+    var dtoNamespace = NamespaceDeclaration(ParseName(OutputNamespace))
+      .AddUsings(UsingDirective(ParseName("System")))
+      .AddMembers(dtoClass)
+      .NormalizeWhitespace();
+
+    context.AddSource($"{mapperClassName}.cs", dtoNamespace.GetText(Encoding.UTF8));
   }
 }
 
