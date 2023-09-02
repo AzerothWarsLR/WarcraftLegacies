@@ -101,7 +101,7 @@ namespace Launcher.Services
         ItemSkinObjectData = DeserializeItemDataFromDirectory(Path.Combine(mapDataRootDirectory, ItemDataDirectoryPath, SkinDataDirectorySubPath)),
         UnitSkinObjectData = DeserializeUnitDataFromDirectory(Path.Combine(mapDataRootDirectory, UnitDataDirectoryPath, SkinDataDirectorySubPath)),
         UpgradeSkinObjectData = DeserializeUpgradeDataFromDirectory(Path.Combine(mapDataRootDirectory, UpgradeDataDirectoryPath, SkinDataDirectorySubPath)),
-        Script = File.ReadAllText(Path.Combine(mapDataRootDirectory, "Script.json"))
+        Script = File.ReadAllText(Path.Combine(mapDataRootDirectory, ScriptPath))
       };
       return map;
     }

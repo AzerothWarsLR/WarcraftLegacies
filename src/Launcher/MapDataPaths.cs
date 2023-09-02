@@ -27,5 +27,7 @@
     public const string CoreDataDirectorySubPath = "Core";
     
     public const string ImportsPath = "Imports";
+
+    public const string ScriptPath = "Script.lua";
   }
 }

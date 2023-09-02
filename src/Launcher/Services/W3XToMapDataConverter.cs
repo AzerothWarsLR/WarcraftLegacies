@@ -121,7 +121,7 @@ namespace Launcher.Services
       if (map.UpgradeSkinObjectData != null) 
         SerializeAndWriteUpgradeData(map.UpgradeSkinObjectData, outputFolderPath, UpgradeDataDirectoryPath, SkinDataDirectorySubPath);
 
-      File.WriteAllText(Path.Combine(outputFolderPath, "Script.json"), map.Script);
+      File.WriteAllText(Path.Combine(outputFolderPath, ScriptPath), map.Script);
     }
 
     /// <summary>
