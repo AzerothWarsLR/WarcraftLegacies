@@ -24,7 +24,6 @@ public sealed class BaseObjectDtoSourceGenerator : ISourceGenerator
 
   public void Execute(GeneratorExecutionContext context)
   {
-    // Retrieve the syntax tree for the BaseObject class
     var baseObjectSymbol = context.Compilation.GetTypeByMetadataName(BaseObjectTypeName);
     if (baseObjectSymbol is null)
       return;
@@ -32,34 +31,36 @@ public sealed class BaseObjectDtoSourceGenerator : ISourceGenerator
     foreach (var syntaxTree in context.Compilation.SyntaxTrees)
     {
       var semanticModel = context.Compilation.GetSemanticModel(syntaxTree);
-
-      // Find classes that inherit from BaseObject
+      
       var root = syntaxTree.GetRoot();
       var classDeclarations = root.DescendantNodes().OfType<ClassDeclarationSyntax>();
 
       foreach (var classDeclaration in classDeclarations)
-      {
-        var classSymbol = semanticModel.GetDeclaredSymbol(classDeclaration);
-        if (classSymbol?.BaseType == null || !SymbolEqualityComparer.Default.Equals(classSymbol.BaseType, baseObjectSymbol)) 
-          continue;
-        
-        // Generate a DTO class with the same properties
-        var dtoClassName = $"{classSymbol.Name}Dto";
-
-        var dtoClass = ClassDeclaration(dtoClassName)
-          .WithModifiers(TokenList(
-            Token(SyntaxKind.PublicKeyword),
-            Token(SyntaxKind.SealedKeyword)))
-          .AddSimplifiedCopiedProperties(classSymbol);
-
-        var dtoNamespace = NamespaceDeclaration(ParseName(OutputNamespace))
-          .AddUsings(UsingDirective(ParseName("System")))
-          .AddMembers(dtoClass)
-          .NormalizeWhitespace();
-        
-        context.AddSource($"{dtoClassName}.cs", dtoNamespace.GetText(Encoding.UTF8));
-      }
+        GenerateDtoClass(context, semanticModel, classDeclaration, baseObjectSymbol);
     }
+  }
+
+  private static void GenerateDtoClass(GeneratorExecutionContext context, SemanticModel semanticModel,
+    BaseTypeDeclarationSyntax classDeclaration, ISymbol baseObjectSymbol)
+  {
+    var classSymbol = semanticModel.GetDeclaredSymbol(classDeclaration);
+    if (classSymbol?.BaseType == null || !SymbolEqualityComparer.Default.Equals(classSymbol.BaseType, baseObjectSymbol))
+      return;
+    
+    var dtoClassName = $"{classSymbol.Name}Dto";
+
+    var dtoClass = ClassDeclaration(dtoClassName)
+      .WithModifiers(TokenList(
+        Token(SyntaxKind.PublicKeyword),
+        Token(SyntaxKind.SealedKeyword)))
+      .AddSimplifiedCopiedProperties(classSymbol);
+
+    var dtoNamespace = NamespaceDeclaration(ParseName(OutputNamespace))
+      .AddUsings(UsingDirective(ParseName("System")))
+      .AddMembers(dtoClass)
+      .NormalizeWhitespace();
+
+    context.AddSource($"{dtoClassName}.cs", dtoNamespace.GetText(Encoding.UTF8));
   }
 }
 
