@@ -1,13 +1,8 @@
-﻿using System;
-using System.Drawing;
-using System.Linq;
+﻿using System.Drawing;
 using System.Numerics;
-using System.Reflection;
 using AutoMapper;
 using Launcher.DataTransferObjects;
-using Launcher.Extensions;
 using Launcher.ValueResolvers;
-using War3Api.Object;
 using War3Net.Build.Audio;
 using War3Net.Build.Common;
 using War3Net.Build.Environment;
@@ -17,16 +12,11 @@ using War3Net.Build.Object;
 using War3Net.Build.Script;
 using War3Net.Build.Widget;
 using Region = War3Net.Build.Environment.Region;
-using UnitDto = Launcher.DataTransferObjects.War3Api.Object.UnitDto;
 
 namespace Launcher.Services
 {
   public sealed class AutoMapperConfigurationProvider
   {
-    private static PropertyInfo[] _unitProperties;
-    private static PropertyInfo[] UnitProperties => _unitProperties ??= typeof(Unit).GetProperties();
-
-
     public MapperConfiguration GetConfiguration()
     {
       var autoMapperConfig = new MapperConfiguration(cfg =>
@@ -69,45 +59,8 @@ namespace Launcher.Services
           => opt.MapFrom<ColorValueResolver>())
           .ReverseMap();
         cfg.CreateMap<TriggerItemDto, TriggerItem>().ReverseMap();
-        
-        cfg.CreateMap<Unit, UnitDto>().ForAllMembers(GetUnitPreCondition());
       });
       return autoMapperConfig;
-    }
-
-    private static Action<IMemberConfigurationExpression<Unit, UnitDto, object>> GetUnitPreCondition()
-    {
-      return option => option.PreCondition((source, _) =>
-      {
-        const string modified = "Modified";
-        const string raw = "Raw";
-        var destinationMemberName = option.DestinationMember.Name;
-        
-        if (destinationMemberName == "Modifications")
-          return false;
-        
-        var isModifiedName = destinationMemberName.EndsWith(raw)
-          ? $"Is{destinationMemberName.RemoveEnd(raw.Length)}{modified}"
-          : $"Is{destinationMemberName}{modified}";
-        
-        if (UnitProperties.Select(property => property.Name).Contains($"{destinationMemberName}{raw}"))
-          return false;
-        
-        var isModifiedProperty = typeof(Unit).GetProperty(isModifiedName);
-          
-        if (isModifiedProperty == null)
-          return true;
-
-        if (isModifiedProperty.GetMethod == null)
-          return false;
-        
-        var result = isModifiedProperty.GetMethod.Invoke(source, null);
-        if (result == null)
-          return false;
-          
-        var isModified = (bool)result;
-        return isModified;
-      });
     }
   }
 }
