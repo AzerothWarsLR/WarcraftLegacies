@@ -1,10 +1,13 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 using AutoMapper;
 using Launcher.DataTransferObjects;
+using Launcher.Extensions;
 using Launcher.JsonConverters;
+using War3Api.Object;
 using War3Net.Build;
 using War3Net.Build.Audio;
 using War3Net.Build.Environment;
@@ -14,6 +17,7 @@ using War3Net.Build.Object;
 using War3Net.Build.Script;
 using War3Net.Build.Widget;
 using JsonSerializer = System.Text.Json.JsonSerializer;
+using UnitDto = Launcher.DataTransferObjects.War3Api.Object.UnitDto;
 
 namespace Launcher.Services
 {
@@ -120,9 +124,21 @@ namespace Launcher.Services
       SerializeAndWrite<ItemObjectData, MapItemObjectDataDto>(map.ItemSkinObjectData, outputFolderPath, ItemSkinObjectDataPath);
       SerializeAndWrite<UnitObjectData, MapUnitObjectDataDto>(map.UnitSkinObjectData, outputFolderPath, UnitSkinObjectDataPath);
       SerializeAndWrite<UpgradeObjectData, MapUpgradeObjectDataDto>(map.UpgradeSkinObjectData, outputFolderPath, UpgradeSkinObjectDataPath);
+      SerializeAndWriteUnitData(map, outputFolderPath);
       File.WriteAllText(Path.Combine(outputFolderPath, "Script.json"), map.Script);
     }
 
+    private void SerializeAndWriteUnitData(Map map, string outputFolderPath)
+    {
+      var objectDatabase = map.GetObjectDatabaseFromMap();
+      var units = objectDatabase.GetUnits();
+      foreach (var unit in units)
+      {
+        var unitDto = _mapper.Map<Unit, UnitDto>(unit);
+        File.WriteAllText(Path.Combine(outputFolderPath, "UnitData", Random.Shared.Next(0, 1000).ToString()), JsonSerializer.Serialize(unitDto, _jsonSerializerOptions));
+      }
+    }
+    
     /// <summary>
     /// Converts the provided input into a Data Transfer Object, then serializes it, then writes it.
     /// </summary>

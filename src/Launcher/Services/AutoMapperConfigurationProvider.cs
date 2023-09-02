@@ -1,8 +1,10 @@
 ﻿using System.Drawing;
+using System.Linq;
 using System.Numerics;
 using AutoMapper;
 using Launcher.DataTransferObjects;
 using Launcher.ValueResolvers;
+using War3Api.Object;
 using War3Net.Build.Audio;
 using War3Net.Build.Common;
 using War3Net.Build.Environment;
@@ -12,6 +14,7 @@ using War3Net.Build.Object;
 using War3Net.Build.Script;
 using War3Net.Build.Widget;
 using Region = War3Net.Build.Environment.Region;
+using UnitDto = Launcher.DataTransferObjects.War3Api.Object.UnitDto;
 
 namespace Launcher.Services
 {
@@ -59,6 +62,33 @@ namespace Launcher.Services
           => opt.MapFrom<ColorValueResolver>())
           .ReverseMap();
         cfg.CreateMap<TriggerItemDto, TriggerItem>().ReverseMap();
+        
+        cfg.CreateMap<Unit, UnitDto>().ForAllMembers(x => x.PreCondition((source, destination) =>
+        {
+          var destinationMemberName = x.DestinationMember.Name;
+          var isModifiedName = $"Is{destinationMemberName}Modified";
+          var isModifiedProperty = typeof(Unit).GetProperty(isModifiedName);
+          
+          if (isModifiedProperty == null)
+            return false;
+
+          if (isModifiedProperty.GetMethod == null)
+            return false;
+
+          var allProperties = typeof(Unit).GetProperties();
+          if (allProperties.Select(property => property.Name).Contains($"{destinationMemberName}Raw"))
+            return false;
+
+          if (destinationMemberName == "Modifications")
+            return false;
+          
+          var result = isModifiedProperty.GetMethod.Invoke(source, null);
+          if (result == null)
+            return false;
+          
+          var isModified = (bool)result;
+          return isModified;
+        }));
       });
       return autoMapperConfig;
     }
