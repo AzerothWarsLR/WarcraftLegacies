@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 14545,
+  "KeyPrecision": 5,
+  "Comment": " Upgrades: R036 (Pillage), Ubertip (Tooltip - Extended)",
+  "Value": "Improves Obsidian Drakes by causing their attacks to deal \u003CA0DS,DataA1\u003E additional damage on the first attack, twice as much on the second attack, three times as much on the third attack, etc.|n|nIf a unit dies while under this effect, it is incinerated, causing up to \u003CA0DS,DataB1\u003E damage to all nearby hostile units."
+}

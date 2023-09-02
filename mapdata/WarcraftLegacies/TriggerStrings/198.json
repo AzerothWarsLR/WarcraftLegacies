@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 198,
+  "KeyPrecision": 3,
+  "Comment": " Abilities: A0XL (Life Drain), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Absorbs the life essence of a target enemy unit by taking 40 hit points per second from it and giving them to the caster. |nLasts 10 seconds. (4 on heroes)"
+}

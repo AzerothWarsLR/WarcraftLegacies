@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 5662,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: ANrf (Rain of Fire), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Calls down waves of fire that damage units in an area. Each wave deals initial damage and then burns enemies for \u003CANrf,Dur1\u003E seconds. |n|n|cffffcc00Level 1|r - \u003CANrf,DataB1\u003E wave damage, \u003CANrf,DataA1\u003E waves, \u003CANrf,DataE1\u003E damage per second. |n|cffffcc00Level 2|r - \u003CANrf,DataB2\u003E wave damage, \u003CANrf,DataA2\u003E waves, \u003CANrf,DataE2\u003E damage per second. |n|cffffcc00Level 3|r - \u003CANrf,DataB3\u003E wave damage, \u003CANrf,DataA3\u003E waves, \u003CANrf,DataE3\u003E damage per second. |n|cffffcc00Level 4|r - \u003CANrf,DataB4\u003E wave damage, \u003CANrf,DataA4\u003E waves, \u003CANrf,DataE4\u003E damage per second."
+}

@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 14999,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: ANfa (Frost Arrows), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Adds a cold effect to each attack, dealing \u003CANfa,DataA4\u003E bonus damage, slowing a target enemy unit\u0027s attacks by \u003CANfa,DataB4,%\u003E% and movement by \u003CANfa,DataC4,%\u003E% for \u003CANfa,Dur4\u003E seconds."
+}

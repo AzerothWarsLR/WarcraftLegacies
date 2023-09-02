@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 18834,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A0ZB (Devotion Aura), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Gives additional armor to nearby friendly units. |n|n|cffffcc00Level 1|r - Increases base armor by 1.5. |n|cffffcc00Level 2|r - Increases base armor by 3. |n|cffffcc00Level 3|r - Increases base armor by 4.5. |n|cffffcc00Level 4|r - Increases base armor by 6."
+}

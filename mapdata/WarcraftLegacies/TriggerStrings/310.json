@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 310,
+  "KeyPrecision": 3,
+  "Comment": " Abilities: A05F (Mass Polymorph), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Turns all enemy units in a target area into a sheep. The targeted unit retains its hit points and armor, but cannot attack. |nDoes not affect Heroes. |n|n|cffffcc00Level 1|r - Lasts 250 aoe and 45 seconds cooldown.|n|cffffcc00Level 2|r - Lasts 300 aoe and 40 seconds cooldown.|n|cffffcc00Level 3|r - Lasts 350 aoe and 35 seconds cooldown.|n|cffffcc00Level 4|r - Lasts 400 aoe and 30 seconds cooldown."
+}

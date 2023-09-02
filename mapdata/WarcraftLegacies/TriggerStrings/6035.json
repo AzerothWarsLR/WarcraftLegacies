@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 6035,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: AHbz (Blizzard), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Calls down waves of freezing ice shards that damage units in a target area. |n|n|cffffcc00Level 1|r - \u003CAHbz,DataA1\u003E waves at \u003CAHbz,DataB1\u003E damage each. |n|cffffcc00Level 2|r - \u003CAHbz,DataA2\u003E waves at \u003CAHbz,DataB2\u003E damage each. |n|cffffcc00Level 3|r - \u003CAHbz,DataA3\u003E waves at \u003CAHbz,DataB3\u003E damage each. |n|cffffcc00Level 4|r - \u003CAHbz,DataA4\u003E waves at \u003CAHbz,DataB4\u003E damage each."
+}

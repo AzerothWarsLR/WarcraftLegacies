@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 12061,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A04A (Doom), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Marks a target unit for the manifestation of a Demon. The afflicted unit cannot cast spells and will take \u003CA04A,DataA1\u003E damage per second. Upon its death, 2 Lesser Doom Guards will spawn from its corpse. Doom cannot be dispelled or cancelled.|nLasts 8 seconds on heroes and indefinitely on units."
+}

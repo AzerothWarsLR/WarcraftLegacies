@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 3746,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: ANav (Battle Trance), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "When Battle Trance is activated, the Hero gains bonus armor, bonus hit points, bonus damage and spell immunity.|nLasts 15 seconds.|n|n|cffffcc00Level 1|r - 5 bonus armor, 15 bonus damage.|n|cffffcc00Level 2|r - 10 bonus armor, 30 bonus damage.|n|cffffcc00Level 3|r - 15 bonus armor, 45 bonus damage."
+}

@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 13522,
+  "KeyPrecision": 5,
+  "Comment": " Buffs/Effects: B03F (Fire attacks), Buffubertip (Tooltip - Extended)",
+  "Value": "This unit was hit by a Fire Attack; it has reduced movement speed and a chance to miss on attacks."
+}

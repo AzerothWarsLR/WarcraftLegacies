@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 6026,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: AHdr (Outland Portal Channel), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Transfers mana between the Mage and a target. Drains mana from an enemy, or transfers mana to an ally.|n|nSiphon Mana can push the Mage\u0027s mana over its maximum value, though excess mana drains off rapidly if not used.|nLasts \u003CAHdr,Dur1\u003E seconds.|n|n|cffffcc00Level 1|r - \u003CAHdr,DataB1\u003E mana drained per second. |n|cffffcc00Level 2|r - \u003CAHdr,DataB2\u003E mana drained per second. |n|cffffcc00Level 3|r - \u003CAHdr,DataB3\u003E mana drained per second. |n|cffffcc00Level 4|r - \u003CAHdr,DataB4\u003E mana drained per second."
+}

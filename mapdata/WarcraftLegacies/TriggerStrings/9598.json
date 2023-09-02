@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 9598,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: A0FQ (Banish), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Turns a non-mechanical unit ethereal and slows its movement speed by \u003CACbn,DataA1,%\u003E% for 12 seconds. Lasts 2 second on Heroes. Ethereal creatures cannot attack, but they can cast spells and certain spells cast upon them will have a greater effect."
+}

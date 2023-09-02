@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 12595,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A01U (Earth Bind), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Causes the ground to burst, immobilizing and damaging a target enemy temporarily. |n|n|cffffcc00Level 1|r - 25 damage per second for 5 seconds (1 seconds for Heroes). |n|cffffcc00Level 2|r - 30 damage per second for 6 seconds (1.75 seconds for Heroes). |n|cffffcc00Level 3|r - 40 damage per second for 8 seconds (2.50 seconds for Heroes). |n|cffffcc00Level 4|r - 50 damage per second for 10 seconds (3.25 seconds for Heroes)."
+}

@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 11923,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A010 (Mass Animate Dead), Researchtip (Tooltip - Learn)",
+  "Value": "Learn Mass Animate Dead - [|cffffcc00Level %d|r]"
+}

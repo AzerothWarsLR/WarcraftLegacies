@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 9168,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: A0BS (Murder of Crows), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Summons a swarm of Crows. Each Crow has \u003Ce00C,realHP\u003E hit points and deals \u003Ce00C,mindmg1\u003E - \u003Ce00C,maxdmg1\u003E damage. |nLasts \u003CA0BS,Dur1\u003E seconds. |n|n|cffffcc00Level 1|r - Summons \u003CA0BS,DataB1\u003E Crows. |n|cffffcc00Level 2|r - Summons \u003CA0BS,DataB2\u003E Crows. |n|cffffcc00Level 3|r - Summons \u003CA0BS,DataB3\u003E Crows.|n|cffffcc00Level 4|r - Summons \u003CA0BS,DataB4\u003E Crows."
+}

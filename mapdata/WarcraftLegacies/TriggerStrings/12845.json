@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 12845,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A00X (Defilement), Researchtip (Tooltip - Learn)",
+  "Value": "Learn Defilement - [|cffffcc00Level %d|r]"
+}

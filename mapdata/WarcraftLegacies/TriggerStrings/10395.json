@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 10395,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A0C2 (Arcane Barrage), Researchtip (Tooltip - Learn)",
+  "Value": "Learn Arcane Missiles - [|cffffcc00Level %d|r]"
+}

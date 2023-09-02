@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 10306,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A0CD (Unholy Plating), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Gives a chance to reduce damage from attacks.|n|n|cffffcc00Level 1|r - 15% chance to block, ignores 20 damage.|n|cffffcc00Level 2|r - 25% chance to block, ignores 35 damage.|n|cffffcc00Level 3|r - 35% chance to block, ignores 50 damage.|n|cffffcc00Level 4|r - 45% chance to block, ignores 65 damage."
+}

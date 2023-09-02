@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 4128,
+  "KeyPrecision": 4,
+  "Comment": " Items: oslo (Orb of Slow), Ubertip (Tooltip - Extended)",
+  "Value": "Adds 6 bonus damage to the attack of a Hero when carried. The Hero\u0027s attacks also become ranged when attacking air, and have a chance to slow a target enemy unit\u0027s movement speed by \u003CAIos,DataA1,%\u003E% and attack rate by \u003CAIos,DataB1,%\u003E% for 20 seconds. Lasts 3 seconds on Heroes."
+}

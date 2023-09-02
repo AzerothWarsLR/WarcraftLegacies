@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 12351,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A02Z (Healing Rain), Researchtip (Tooltip - Learn)",
+  "Value": "Learn Tranquility - [|cffffcc00Level %d|r]"
+}

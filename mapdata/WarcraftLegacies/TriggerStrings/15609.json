@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 15609,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A097 (Exact Justice), Researchtip (Tooltip - Learn)",
+  "Value": "Learn Exact Justice - [|cffffcc00Level %d|r]"
+}

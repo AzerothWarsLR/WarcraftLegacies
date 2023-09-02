@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 2067,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: A03S (Rampage), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Adds \u003CA03S,DataA3\u003E bonus damage to the unit and causes its attacks to heal it for \u003CA03S,DataB3,%\u003E% of damage dealt. |nLasts \u003CA03S,Dur3\u003E seconds."
+}

@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 11050,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A08M (Horn of Stormwind), Researchtip (Tooltip - Learn)",
+  "Value": "Learn Horn of Stormwind - [|cffffcc00Level %d|r]"
+}

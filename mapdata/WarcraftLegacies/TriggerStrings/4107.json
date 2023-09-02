@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 4107,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: Arsp (Frost Storm), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Calls an onslaught of frost missiles to attack enemies in a 800 radius. |n|cffffcc00Level 3|r -  Each missile deals 20 damage. |n|nLasts 30 seconds."
+}

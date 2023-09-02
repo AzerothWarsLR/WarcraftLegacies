@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 11120,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A087 (Warplate), Researchtip (Tooltip - Learn)",
+  "Value": "Learn King\u0027s Warplating - [|cffffcc00Level %d|r]"
+}

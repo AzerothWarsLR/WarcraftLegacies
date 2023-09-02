@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 12081,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A046 (Finger of Death), Researchtip (Tooltip - Learn)",
+  "Value": "Learn Finger of Death - [|cffffcc00Level %d|r]"
+}

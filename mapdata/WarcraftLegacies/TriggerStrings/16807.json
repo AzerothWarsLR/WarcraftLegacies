@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 16807,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A0OU (Spawn Totem), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "On death, the Boneseer will spawn a permanent totem at the location of it\u0027s body"
+}

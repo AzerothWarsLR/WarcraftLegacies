@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 8088,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: A0RM (Pocket Factory), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Creates a factory which automatically constructs Clockwerk Goblins.|n|nClockwerk Goblins have 650 hit points, deal 27 - 29 damage, and explode upon death, causing up to 90 damage to nearby enemy units.|nFactory lasts 40 seconds. |n|n|cffffcc00Clockwerk Goblins attack land units only.|r"
+}

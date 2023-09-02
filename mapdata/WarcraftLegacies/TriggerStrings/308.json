@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 308,
+  "KeyPrecision": 3,
+  "Comment": " Abilities: A05F (Mass Polymorph), Researchtip (Tooltip - Learn)",
+  "Value": "Learn Mass Polymorph - [|cffffcc00Level %d|r]"
+}

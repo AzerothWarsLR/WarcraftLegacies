@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 6603,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: A11E (Void Reinforcements), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Summons 2/4/8 creatures from the void. Every unit summoned has a specific percentages of being a certain unit of the following list: |nFaceless One, Faceless Corruptors, Faceless Deathbringer and Immortal Guardians. |n|n|cffffcc00Level 1|r - 2 units. 60% Faceless One, 20% Faceless Corruptor, 10% Deathbringer, 10% Immortal Guardian. |n|cffffcc00Level 2|r - 4 units. 40% Faceless One, 30% Faceless Corruptor, 20% Deathbringer, 10% Immortal Guardian. . |n|cffffcc00Level 3|r - 8 units. 30% Faceless One, 30% Faceless Corruptor, 20% Deathbringer, 20% Immortal Guardian. "
+}

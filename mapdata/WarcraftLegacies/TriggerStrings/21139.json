@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 21139,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: Acny (Cyclone), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Tosses a target non-mechanical enemy unit into the air, rendering it unable to move, attack or cast spells, and stopping others from attacking or casting on it. |nLasts 3 seconds. (0.5 for heroes)"
+}

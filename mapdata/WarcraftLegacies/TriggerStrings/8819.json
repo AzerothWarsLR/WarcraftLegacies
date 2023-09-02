@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 8819,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: A0L1 (Ice Lance), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Sends a lance of frost magic at an enemy unit, causing damage and stunning the target. |n|n|cffffcc00Level 1|r - 150 damage, 4 second stun. |n|cffffcc00Level 2|r - 225 damage, 5 second stun. |n|cffffcc00Level 3|r - 300 damage, 6 second stun. |n|cffffcc00Level 4|r - 375 damage, 7 second stun."
+}

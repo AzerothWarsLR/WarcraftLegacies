@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 8199,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: A0QS (Shield Block), Researchtip (Tooltip - Learn)",
+  "Value": "Learn Toughness - [|cffffcc00Level %d|r]"
+}

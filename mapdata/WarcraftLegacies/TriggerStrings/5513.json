@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 5513,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: AOmi (Mirror Image), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Creates 5 images which deal 100% the damage of the Hero and take 200% the damage. Dispels all magic from the Hero. |nLasts 30 seconds."
+}

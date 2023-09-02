@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 7121,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: A0Y0 (Death Aura), Researchtip (Tooltip - Learn)",
+  "Value": "Learn Death Aura - [|cffffcc00Level %d|r]"
+}

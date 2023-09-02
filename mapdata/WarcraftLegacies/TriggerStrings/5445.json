@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 5445,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: AOwk (Wind Walk), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Allows the Hero to become invisible, and move \u003CAOwk,DataB1,%\u003E% faster for \u003CAOwk,Dur1\u003E seconds. If the Hero attacks a unit to break invisibility, the attack will do \u003CAOwk,DataC1\u003E bonus damage."
+}

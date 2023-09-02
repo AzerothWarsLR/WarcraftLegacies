@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 20963,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A0FA (Siphoning Ritual), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Drains 60 hit points and 30 mana per second from up to 24 units in the target area for \u003CA0FA,DataA3\u003E seconds. Only drains hit points and mana from friendly units if the caster needs it."
+}

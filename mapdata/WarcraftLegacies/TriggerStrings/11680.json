@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 11680,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A05V (Toggle Summoning), Unubertip (Tooltip - Turn Off - Extended)",
+  "Value": "Deactivate to prevent this Demon Gate from spawning Demons when it reaches maximum mana."
+}

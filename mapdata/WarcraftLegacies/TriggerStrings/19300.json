@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 19300,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A101 (Army of Light Golem summon), Researchtip (Tooltip - Learn)",
+  "Value": "Learn Inferno - [|cffffcc00Level %d|r]"
+}

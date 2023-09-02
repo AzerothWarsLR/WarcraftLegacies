@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 18796,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A0VU (Magma Blast), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Throws a gobule of magma at a target enemy unit, dealing substantial damage and stunning it.|n|n|cffffcc00Level 1|r - Deals \u003CA0VU,DataA1\u003E damage, stuns heroes for \u003CA0VU,HeroDur1\u003E second and normal units for \u003CA0VU,Dur1\u003E second.|n|cffffcc00Level 2|r - Deals \u003CA0VU,DataA2\u003E damage, stuns heroes for \u003CA0VU,HeroDur2\u003E seconds and normal units for \u003CA0VU,Dur2\u003E seconds.|n|cffffcc00Level 3|r - Deals \u003CA0VU,DataA3\u003E damage, stuns heroes for \u003CA0VU,HeroDur3\u003E seconds and normal units for \u003CA0VU,Dur3\u003E seconds.|n|cffffcc00Level 4|r - Deals \u003CA0VU,DataA4\u003E damage, stuns heroes for \u003CA0VU,HeroDur4\u003E seconds and normal units for \u003CA0VU,Dur4\u003E seconds."
+}

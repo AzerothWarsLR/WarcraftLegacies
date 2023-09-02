@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 11506,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A06M (Divine Shield), Researchtip (Tooltip - Learn)",
+  "Value": "Learn Divine Shield - [|cffffcc00Level %d|r]"
+}

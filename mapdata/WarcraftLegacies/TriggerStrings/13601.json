@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 13601,
+  "KeyPrecision": 5,
+  "Comment": " Buffs/Effects: B02H (), Buffubertip (Tooltip - Extended)",
+  "Value": "This Ward dispels positive buffs from nearby enemy units and negative Buffs from friendly units."
+}

@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 8615,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: A007 (Starfall), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Calls down waves of starlight that damage nearby enemy units. Each wave deals \u003CA007,DataA3\u003E damage. |nLasts for \u003CA007,Dur3\u003E seconds."
+}

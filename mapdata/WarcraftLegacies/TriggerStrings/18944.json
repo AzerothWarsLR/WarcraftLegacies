@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 18944,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A0WR (Molten Strike), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Decreases armor by \u003CA0WR,DataC4\u003E; deals \u003CA0WR,DataD4\u003E damage per second to the primary target; deals slightly less damage to nearby targets.|nLasts \u003CA0WR,Dur4\u003E seconds."
+}

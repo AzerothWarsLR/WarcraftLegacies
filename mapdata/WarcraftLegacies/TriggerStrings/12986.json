@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 12986,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A005 (Deploy Barricades), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Deploy a solid barricade blocking the path of enemies. The barricade takes 15 damage per second until it is destroyed."
+}

@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 5614,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: ANso (Curse of Silence), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Wreaths an enemy unit in a curse which cause damage over time, prevent the casting of spells, reduce movement speed by 25% and reduce attack damage by 50%.|n|n|cffffcc00Level 1|r - 200 damage over 10 seconds.|n|cffffcc00Level 2|r - 480 damage over 12 seconds.|n|cffffcc00Level 3|r - 840 damage over 14 seconds.|n|nSoul Burn lasts twice as long on normal units."
+}

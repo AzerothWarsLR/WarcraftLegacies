@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 6050,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: AHbh (Bash), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Gives a \u003CAHbh,DataA2\u003E% chance that an attack will do \u003CAHbh,DataC2\u003E bonus damage and stun an opponent for \u003CAHbh,Dur2\u003E seconds."
+}

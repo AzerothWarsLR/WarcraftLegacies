@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 17610,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A02L (Aura of Madness), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Decreases the attack rate of nearby enemy units. |n|n|cffffcc00Level 1|r - 75% attack speed reduction, 200 range. |n|cffffcc00Level 2|r - 100% attack speed reduction, 250 range. |n|cffffcc00Level 3|r - 150% attack speed reduction, 300 range. "
+}

@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 5129,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: Aens (Ensnare), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Causes a target enemy unit to be bound to the ground so that it cannot move for \u003CAens,Dur2\u003E seconds. Air units that are ensnared can be attacked as though they were land units."
+}

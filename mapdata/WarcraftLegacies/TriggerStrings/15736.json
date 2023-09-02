@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 15736,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A10U (Mana Burn), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Sends a bolt of negative energy that burns a target enemy unit\u0027s mana. Burned mana combusts, dealing damage to the target equal to the amount of mana burned. |n|n|cffffcc00Level 1|r - Burns up to 240 mana. |n|cffffcc00Level 2|r - Burns up to 300 mana. |n|cffffcc00Level 3|r - Burns up to 360 mana.|n|cffffcc00Level 4|r - Burns up to 420 mana."
+}

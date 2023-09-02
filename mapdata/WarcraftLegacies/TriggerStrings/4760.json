@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 4760,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: SNin (Abyssal Strike), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Calls an Infernal down from the sky, dealing \u003CSNin,DataA2\u003E damage and stunning enemy land units for \u003CSNin,Dur2\u003E seconds in an area. The Infernal lasts \u003CSNin,DataB2\u003E seconds."
+}

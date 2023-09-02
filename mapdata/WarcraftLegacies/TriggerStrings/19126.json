@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 19126,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A07N (Maiming Strike), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Hero strikes with massive strength maiming his target and even other nearby enemies. Deals damage over time and reduces the targetted enemies\u0027 move and attack speed as well as reducing his armor.|n|n|cffffcc00Level 1|r - 150 damage, reduces attack speed by 20% and move speed by 10%, armor by 3, lasts 10 second (3 second for Heroes).|n|cffffcc00Level 2|r - 185 damage, reduces attack speed by 30% and move speed by 15%, armor by 4, lasts 11 second (3.5 seconds for Heroes).|n|cffffcc00Level 3|r - 225 damage, reduces attack speed by 40% and move speed by 20%, armor by 5, lasts 12 second (4 seconds for Heroes).|n|cffffcc00Level 4|r - 300 damage, reduces attack speed by 50% and move speed by 25%, armor by 6, lasts 13 second (4.5 seconds for Heroes)."
+}

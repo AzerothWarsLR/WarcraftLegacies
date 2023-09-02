@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 7258,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: A0XN (Incinerate), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Each attack made is enhanced with living flames that cling to the target. These flames add \u003CA0XN,DataA2\u003E damage on the first attack, twice as much on the second attack, three times as much on the third attack, etc.|n|nIf a unit dies while under this effect, it is incinerated, causing up to \u003CA0XN,DataB2\u003E damage to all nearby hostile units."
+}

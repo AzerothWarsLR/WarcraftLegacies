@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 2823,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: A091 (Seed of Burning Hatred), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Plant a seed of hatred onto a friendly building. The afflicted unit cannot uproot or train units and will take 300 damage per second until it dies. Upon its death, 1 mighty Charred Ancient will emerge from the host corpse permanently. The growth of the seed, once planted, cannot be stopped, dispelled, or cancelled."
+}

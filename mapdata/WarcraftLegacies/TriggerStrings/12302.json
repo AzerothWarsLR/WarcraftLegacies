@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 12302,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A015 (Roar of Despair), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "The hero unleashes devastating roar that reduces attack damage of all nearby enemy units by 300% for 18 seconds. Lasts 9 second on heroes."
+}

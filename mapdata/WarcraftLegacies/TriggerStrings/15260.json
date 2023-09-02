@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 15260,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A0GH (Barrage), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "This units attacks fire an extra projectile at every ranged unit nearby, up to \u003CA0GH,DataC2\u003E targets."
+}

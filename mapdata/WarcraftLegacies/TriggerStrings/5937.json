@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 5937,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: AHtc (Thunder Clap), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Slams the ground, dealing damage to and slowing the movement speed and attack rate of nearby enemy land units. |n|n|cffffcc00Level 1|r - \u003CAHtc,DataA1\u003E damage, \u003CAHtc,DataC1,%\u003E% move, \u003CAHtc,DataD1,%\u003E% attack. |n|cffffcc00Level 2|r - \u003CAHtc,DataA2\u003E damage, \u003CAHtc,DataC2,%\u003E% move, \u003CAHtc,DataD2,%\u003E% attack. |n|cffffcc00Level 3|r - \u003CAHtc,DataA3\u003E damage, \u003CAHtc,DataC3,%\u003E% move, \u003CAHtc,DataD3,%\u003E% attack. |n|cffffcc00Level 4|r - \u003CAHtc,DataA4\u003E damage, \u003CAHtc,DataC4,%\u003E% move, \u003CAHtc,DataD4,%\u003E% attack. |n|cffffcc00Level 5|r - \u003CAHtc,DataA5\u003E damage, \u003CAHtc,DataC5,%\u003E% move, \u003CAHtc,DataD5,%\u003E% attack. "
+}

@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 18938,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A0W9 (Elemental Fire), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Deals \u003CA0W9,DataA2\u003E initial damage, and \u003CA0W9,Cool2\u003E damage every \u003CA0W9,Cast2\u003E seconds for \u003CA0W9,Dur2\u003E seconds. Slows attack rate and movement speed. Lasts \u003CA0W9,Dur2\u003E seconds on normal units, and \u003CA0W9,HeroDur2\u003E seconds on heroes."
+}

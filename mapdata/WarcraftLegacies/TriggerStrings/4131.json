@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 4131,
+  "KeyPrecision": 4,
+  "Comment": " Items: olig (Orb of Lightning), Ubertip (Tooltip - Extended)",
+  "Value": "Adds 6 bonus damage to the attack of a Hero when carried. The Hero\u0027s attacks also become ranged when attacking air, dispel magic and slow the movement speed of the enemy for \u003CAIlp,Dur1\u003E seconds. |n|cffffcc00Deals \u003CAIlp,DataC1\u003E bonus damage to summoned units."
+}

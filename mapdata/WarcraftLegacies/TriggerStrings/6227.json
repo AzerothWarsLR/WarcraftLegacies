@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 6227,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: AEar (Trueshot Aura), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "An aura that gives friendly nearby units bonus damage to their ranged attacks. |n|n|cffffcc00Level 1|r - Increases base ranged damage by \u003CAEar,DataA1,%\u003E%. |n|cffffcc00Level 2|r - Increases base ranged damage by \u003CAEar,DataA2,%\u003E%. |n|cffffcc00Level 3|r - Increases base ranged damage by \u003CAEar,DataA3,%\u003E%.|n|cffffcc00Level 4|r - Increases base ranged damage by \u003CAEar,DataA4,%\u003E%."
+}

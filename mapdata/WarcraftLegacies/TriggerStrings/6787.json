@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 6787,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: A0QQ (Aimed Shot), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Fires and arrow that stuns the target and does significant damage.|n|n|cffffcc00Level 1|r - Deals 150 damage, stunning the target for 4 seconds. Lasts 1 second on heroes.|n|cffffcc00Level 2|r - Deals 225 damage, stunning the target for 5 seconds. Lasts 1 second on heroes.|n|cffffcc00Level 3|r - Deals 300 damage, stunning the target for 6 seconds. Lasts 1 second on heroes.|n|cffffcc00Level 4|r - Deals 375 damage, stunning the target for 7 seconds. Lasts 2 seconds on heroes."
+}

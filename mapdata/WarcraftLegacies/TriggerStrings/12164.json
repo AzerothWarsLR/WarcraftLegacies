@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 12164,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A03R (Incite Unholy Frenzy), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Sacrifices a target friendly unit. All nearby units gain Unholy Frenzy, increasing attack rate by \u003CAuuf,DataA1,%\u003E% but draining them of \u003CAuuf,DataB1\u003E hit points per second. |nLasts \u003CAuuf,Dur1\u003E seconds."
+}

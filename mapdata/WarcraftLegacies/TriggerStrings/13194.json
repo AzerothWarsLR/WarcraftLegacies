@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 13194,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A007 (Starfall), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Calls down waves of falling starst that damage nearby enemy units.|nLasts 30 seconds. |n|n|cffffcc00Level 1|r - Each wave deals \u003CAEsf,DataA1\u003E damage.|n|cffffcc00Level 2|r - Each wave deals \u003CAEsf,DataA2\u003E damage.|n|cffffcc00Level 3|r - Each wave deals \u003CAEsf,DataA3\u003E damage.|n|nLasts for \u003CAEsf,Dur1\u003E seconds.|n"
+}

@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 18040,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A0Z1 (Shout of the Crusader), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Saiden shouts giving nearby friendly units a bonus to attack damage and armor. Lasts 14/18/22/26 seconds.|n|n|cffffcc00Level 1|r - 5 bonus damage, 3 bonus armor.|n|cffffcc00Level 2|r - 10 bonus damage, 6 bonus armor. |n|cffffcc00Level 3|r - 15 bonus damage, 9 bonus armor. |n|cffffcc00Level 4|r - 20 bonus damage, 12 bonus armor."
+}

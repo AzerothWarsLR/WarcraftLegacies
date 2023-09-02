@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 5807,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: ANdb (Drunken Brawler), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Gives a percent chance to avoid attacks and a \u003CANdb,DataA1\u003E% chance to deal additional damage. |n|n|cffffcc00Level 1|r - \u003CANdb,DataD1,%\u003E% dodge, \u003CANdb,DataB1\u003E times normal damage. |n|cffffcc00Level 2|r - \u003CANdb,DataD2,%\u003E% dodge, \u003CANdb,DataB2\u003E times normal damage. |n|cffffcc00Level 3|r - \u003CANdb,DataD3,%\u003E% dodge, \u003CANdb,DataB3\u003E times normal damage.|n|cffffcc00Level 4|r - \u003CANdb,DataD4,%\u003E% dodge, \u003CANdb,DataB4\u003E times normal damage.|n|cffffcc00Level 3|r - \u003CANdb,DataD5,%\u003E% dodge, \u003CANdb,DataB5\u003E times normal damage."
+}

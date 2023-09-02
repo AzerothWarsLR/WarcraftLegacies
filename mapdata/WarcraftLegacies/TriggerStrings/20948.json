@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 20948,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A034 (Arcane Bombardment), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Bombards an area with arcane missile, stunning enemy land units for 1 second and damaging them. 1200 range. |n|n|cffffcc00Level 1|r - 300 total damage.|n|cffffcc00Level 2|r - 400 total damage.|n|cffffcc00Level 3|r - 500 total damage.|n|cffffcc00Level 4|r - 600 total damage."
+}

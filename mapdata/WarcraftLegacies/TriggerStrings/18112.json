@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 18112,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A0UF (Spike Aura), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "An aura that gives friendly nearby units a damage shield, which deals \u003CAEah,DataA4,%\u003E% of an enemy unit\u0027s melee attack damage back to it."
+}

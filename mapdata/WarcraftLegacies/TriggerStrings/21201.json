@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 21201,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A13H (Howl of Despair), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Lets loose a terrifying howl that causes nearby enemy units to shiver in fear, reducing their attack damage. |nLasts \u003CANht,Dur1\u003E seconds. |n|n|cffffcc00Level 1|r - 25% attack damage reduction. |n|cffffcc00Level 2|r - 40% attack damage reduction. |n|cffffcc00Level 3|r - 55% attack damage reduction. |n|cffffcc00Level 4|r - 70% attack damage reduction."
+}

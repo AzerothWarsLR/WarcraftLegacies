@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 18083,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A0UF (Spike Aura), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "An aura that gives friendly nearby units a damage shield, which returns a percentage of a melee attacker\u0027s damage back to it. |n|n|cffffcc00Level 1|r - Returns 8% damage. |n|cffffcc00Level 2|r - Returns 16% damage. |n|cffffcc00Level 3|r - Returns 24% damage.|n|cffffcc00Level 4|r - Returns 32% damage."
+}

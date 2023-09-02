@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 10113,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A09E (Spiritual Guidance), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Heals a target friendly unit for \u003CA09E,DataA2\u003E hit points over \u003CA09E,Dur2\u003E seconds."
+}

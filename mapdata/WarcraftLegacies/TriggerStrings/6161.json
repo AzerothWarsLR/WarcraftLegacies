@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 6161,
+  "KeyPrecision": 4,
+  "Comment": " Upgrades: R01D (Freezing Breath), Ubertip (Tooltip - Extended)",
+  "Value": "Enables Gargoyles to use Howl of Terror, which reduces the attack damage of nearby enemy units by \u003CA022,DataA1,%\u003E% for \u003CA022,Dur1\u003E seconds."
+}

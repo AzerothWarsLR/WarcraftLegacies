@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 18943,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A0WR (Molten Strike), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Delivers a fiery blow to a target and other around it, breaking their armour and burning them for a short period.|n|n|cffffcc00Level 1|r - Decreases armor by \u003CA0WR,DataC1\u003E; deals \u003CA0WR,DataD1\u003E damage per second to the primary target; deals slightly less damage to nearby targets.|nLasts \u003CA0WR,Dur1\u003E seconds.|n|cffffcc00Level 2|r - Decreases armor by \u003CA0WR,DataC2\u003E; deals \u003CA0WR,DataD2\u003E damage per second to the primary target; deals slightly less damage to nearby targets.|nLasts \u003CA0WR,Dur2\u003E seconds.|n|cffffcc00Level 3|r - Decreases armor by \u003CA0WR,DataC3\u003E; deals \u003CA0WR,DataD3\u003E damage per second to the primary target; deals slightly less damage to nearby targets.|nLasts \u003CA0WR,Dur3\u003E seconds.|n|cffffcc00Level 4|r - Decreases armor by \u003CA0WR,DataC4\u003E; deals \u003CA0WR,DataD4\u003E damage per second to the primary target; deals slightly less damage to nearby targets.|nLasts \u003CA0WR,Dur4\u003E seconds."
+}

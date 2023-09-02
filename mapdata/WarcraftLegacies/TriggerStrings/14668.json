@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 14668,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A0V0 (Snipe), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "The unit takes aim and fires at an enemy unit, causing 75 damage and stunning the targe for 4 seconds (0.5 on heroes)."
+}

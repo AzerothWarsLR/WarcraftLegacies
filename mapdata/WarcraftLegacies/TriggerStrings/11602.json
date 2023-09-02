@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 11602,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A069 (Weighted Spear), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Fires and arrow that stuns the target and does significant damage.|n|n|cffffcc00Level 1|r - Deals \u003CA0CJ:ACfb,DataA1\u003E damage, stunning the target for \u003CA0CJ:ACfb,Dur1\u003E seconds. Lasts \u003CA0CJ:ACfb,HeroDur1\u003E seconds on heroes.|n|cffffcc00Level 2|r - Deals \u003CA0CJ:ACfb,DataA2\u003E damage, stunning the target for \u003CA0CJ:ACfb,Dur2\u003E seconds. Lasts \u003CA0CJ:ACfb,HeroDur2\u003E seconds on heroes.|n|cffffcc00Level 3|r - Deals \u003CA0CJ:ACfb,DataA3\u003E damage, stunning the target for \u003CA0CJ:ACfb,Dur3\u003E seconds. Lasts \u003CA0CJ:ACfb,HeroDur3\u003E seconds on heroes.|n|cffffcc00Level 4|r - Deals \u003CA0CJ:ACfb,DataA4\u003E damage, stunning the target for \u003CA0CJ:ACfb,Dur4\u003E seconds. Lasts \u003CA0CJ:ACfb,HeroDur4\u003E seconds on heroes."
+}

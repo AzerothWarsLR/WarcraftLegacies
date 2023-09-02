@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 11932,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A04P (Doom), Researchtip (Tooltip - Learn)",
+  "Value": "Learn Doom - [|cffffcc00Level %d|r]"
+}

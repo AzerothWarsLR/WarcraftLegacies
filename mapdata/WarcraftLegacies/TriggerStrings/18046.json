@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 18046,
+  "KeyPrecision": 5,
+  "Comment": " Items: odef (Living Shadow), Ubertip (Tooltip - Extended)",
+  "Value": "|cffff8c00Artifact|r|nAdds \u003CAIdf,DataA1\u003E bonus damage to the attack of a Hero when carried. The Hero\u0027s attack also becomes ranged when attacking air and will create a Dark Minion when it is the killing blow on an enemy unit. The Dark Minion lasts \u003CANbs,DataC1\u003E seconds.|n|cffffcc00Lore|r|n|cffffdeadA dark crystal found on the body of a dead orc warlock."
+}

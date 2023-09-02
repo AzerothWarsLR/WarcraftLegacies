@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 6249,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: ACwe (Summon Scorpions), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Summons a group of \u003CACwe,DataA1\u003E Scorpions which have poisonous attacks. Each scorpion has 380 hit points and deal \u003Cnsel,mindmg1\u003E - \u003Cnsel,maxdmg1\u003E damage. |n|cffffcc00Lasts \u003CACwe,Dur1\u003E seconds."
+}

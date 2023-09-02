@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 9547,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: A0G1 (Pulverize), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Gives a \u003CA0G1,DataA1\u003E% chance that an attack will deal \u003CA0G1,DataB1\u003E damage to nearby units."
+}

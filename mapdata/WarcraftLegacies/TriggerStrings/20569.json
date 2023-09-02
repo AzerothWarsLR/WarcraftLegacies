@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 20569,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A097 (Exact Justice), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "The hero channels the Light for 6 seconds, preventing all nearby friendly units from taking damage. When Divine Justice finishes casting, all nearby enemy units take damage. If Divine Justice is interrupted, it instead deals damage proportional to how long it was channeled for.|n|n|cffffcc00Level 1|r - Deals 150 damage. |n|cffffcc00Level 2|r - Deals 350 damage. |n|cffffcc00Level 3|r - Deals 600 damage."
+}

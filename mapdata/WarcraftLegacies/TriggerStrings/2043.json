@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 2043,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: A07Z (Lightbringer\u0027s Strength), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Increases this units damage by \u003CA07Z,DataA2,%\u003E%, armor by \u003CA07Z,DataB2\u003E and hit point regeneration by \u003CA07Z,DataC2\u003E for \u003CA07Z,HeroDur2\u003E seconds."
+}

@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 20480,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A000 (Glimpse), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Instantly teleport units, including the caster, to any building or unit in range. |n|cffffcc00Level 1|r - Teleports 60 units, 1000 range, 30 second cooldown.|n|cffffcc00Level 2|r - Teleports 72 units, 1500 range, 25 second cooldown.|n|cffffcc00Level 3|r - Teleports 84 units, 2000 range, 20 second cooldown."
+}

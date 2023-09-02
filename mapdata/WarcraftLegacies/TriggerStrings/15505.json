@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 15505,
+  "KeyPrecision": 5,
+  "Comment": " Upgrades: R03Z (Magic Sentry), Ubertip (Tooltip - Extended)",
+  "Value": "Gives the Felguard a 25% chance for an attack to be absorbed reducing damage taken by 40 damage. Attacks cannot be reduced below 3 damage."
+}

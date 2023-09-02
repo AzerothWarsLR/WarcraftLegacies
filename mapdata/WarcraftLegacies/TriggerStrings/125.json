@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 125,
+  "KeyPrecision": 3,
+  "Comment": " Abilities: A0NL (Acid Rain), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Causes rains of acid energy to pour down in a large area, damaging enemy units.|nLasts \u003CAEtq,Dur1\u003E seconds. |n|n|cffffcc00Level 1|r - Deals 20 hit points per second. 180 seconds cooldown. |n|cffffcc00Level 2|r - Deals 25 hit points per second. 165 seconds cooldown. |n|cffffcc00Level 3|r - Deals 35 hit points per second. 150 seconds cooldown. "
+}

@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 5700,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: ANmo (Thunderstorm), Researchtip (Tooltip - Learn)",
+  "Value": "Learn Thunderstorm - [|cffffcc00Level %d|r]"
+}

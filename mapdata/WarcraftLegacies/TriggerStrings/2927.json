@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 2927,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: A0UB (Open a portal to Northrend), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Opens a two-way portal to Northrend at the target location. The portal becomes useable after 10 seconds, and closes 5 seconds after the caster stops channeling."
+}

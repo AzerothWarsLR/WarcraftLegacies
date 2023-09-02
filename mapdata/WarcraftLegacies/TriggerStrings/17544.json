@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 17544,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: AUdp (Death Pact), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Kills a target friendly Undead unit, giving a percentage of its hit points to the Death Knight. |n|n|cffffcc00Level 1|r - \u003CAUdp,DataB1,%\u003E% conversion. |n|cffffcc00Level 2|r - \u003CAUdp,DataB2,%\u003E% conversion. |n|cffffcc00Level 3|r - \u003CAUdp,DataB3,%\u003E% conversion. |n|cffffcc00Level 4|r - \u003CAUdp,DataB4,%\u003E% conversion."
+}

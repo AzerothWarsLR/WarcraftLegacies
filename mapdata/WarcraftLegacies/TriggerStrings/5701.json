@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 5701,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: ANmo (Thunderstorm), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Calls a storm of lightning bolts to strike enemy units for 20 seconds.|n |n|cffffcc00Level 1|r - 30 damage dealt by each lightning strike. |n|cffffcc00Level 2|r - 60 damage dealt by each lightning strike. |n|cffffcc00Level 3|r - 90 damage dealt by each lightning strike."
+}

@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 11260,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A07P (Fiery Aura), Researchtip (Tooltip - Learn)",
+  "Value": "Learn Fiery Aura  - [|cffffcc00Level %d|r]"
+}

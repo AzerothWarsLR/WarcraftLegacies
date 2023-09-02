@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 7892,
+  "KeyPrecision": 4,
+  "Comment": " Units: n05H (Sapling), Ubertip (Tooltip - Extended)",
+  "Value": "Basic melee unit that can reflect incoming melee damage.|n|cfff5962dAbilities:|R Thorns|n|cfff5962dCan learn:|R Grasping Vines|n|n|cffffcc00Attacks land units.|r"
+}

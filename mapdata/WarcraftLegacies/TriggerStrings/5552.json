@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 5552,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: AOcr (Critical Strike), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Gives a chance to do double damage on their attacks. |n|n|cffffcc00Level 1|r - \u003CAOcr,DataA1\u003E% chance. |n|cffffcc00Level 2|r - \u003CAOcr,DataA2\u003E% chance. |n|cffffcc00Level 3|r - \u003CAOcr,DataA3\u003E% chance.|n|cffffcc00Level 4|r - \u003CAOcr,DataA4\u003E% chance."
+}

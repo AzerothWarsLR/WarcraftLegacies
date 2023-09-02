@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 12991,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A004 (Gryphon Sky), Researchtip (Tooltip - Learn)",
+  "Value": "Learn |cffffcc00R|r Gryphon Sky - [|cffffcc00Level %d|r]"
+}

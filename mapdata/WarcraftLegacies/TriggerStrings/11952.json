@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 11952,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A04N (Explosion), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Blasts enemy units around a target enemy unit with a large explosion. |n|n|cffffcc00Level 1|r - 190 target damage. 40 splash damage.|n|cffffcc00Level 2|r - 280 target damage. 80 splash damage.|n|cffffcc00Level 3|r - 370 target damage. 120 splash damage.|n|cffffcc00Level 4|r - 460 target damage. 160 splash damage."
+}

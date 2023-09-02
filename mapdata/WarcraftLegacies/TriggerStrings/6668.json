@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 6668,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: A118 (Tidal Wave), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Sends a gigantic wave which deals damage to each enemy land unit in a line in a 2000 range.|n|n|cffffcc00Level 1|r - 500 damage, 5000 max damage. |n|cffffcc00Level 2|r - 700 damage, 6000 max damage. |n|cffffcc00Level 3|r - 750 damage, 7000 max damage."
+}

@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 6995,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: A0YT (Unleash Frostmourne), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Arthas channels Frostmourne\u0027s full power, periodically firing out bolts of necromantic energy at nearby hostile living, friendly undead, and corpse units. Each bolt has a different effect depending on the type of unit struck:\r\n - Hostile living: Damaged\r\n - Friendly undead: Healed by half damage amount\r\n - Corpse: Reanimated for 70 seconds\r\n\r\nFury of the Damned lasts \u003CA0YT,DataA1\u003E seconds. |n|n|cffffcc00Level 1|r - 100 damage per bolt. |n|cffffcc00Level 2|r - 140 damage per bolt. |n|cffffcc00Level 3|r - 180 damage per bolt."
+}

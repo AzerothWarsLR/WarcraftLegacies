@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 7444,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: A04A (Doom), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Marks a target for the manifestation of a Demon. The afflicted target cannot cast spells and will take damage per second. Upon its death, a Lesser Doom Guards will spawn from its corpse. Doom cannot be dispelled or cancelled.\r\nLasts 8 seconds on heroes and indefinitely on units.\r\n |n|cffffcc00Level 1|r - 40 damage per second and 2 Greater Doom Guards summoned.|n|cffffcc00Level 2|r - 70 damage per second and 4 Greater Doom Guards summoned. |n|cffffcc00Level 3|r - 100 damage per second and 6 Greater Doom Guards summoned."
+}

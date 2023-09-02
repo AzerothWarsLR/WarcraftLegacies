@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 7211,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: A0XS (Silence), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Stops all enemies in a target area from casting spells. The area of effect and duration increase with level. |n|n|cffffcc00Level 1|r - Small area, lasts 12 seconds (4 for Heroes). |n|cffffcc00Level 2|r - Medium area, lasts 14 seconds (5 for Heroes). |n|cffffcc00Level 3|r - Medium area, lasts 16 seconds (7 for Heroes). |n|cffffcc00Level 4|r - Large area, lasts 18 seconds (9 for Heroes)."
+}

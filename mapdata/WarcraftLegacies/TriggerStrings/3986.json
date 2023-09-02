@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 3986,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: A0PR (Summon Peons), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Summons a water elemental to attack the Hydromancer\u0027s enemies. Has \u003Chwat,realHP\u003E hit points and deals \u003Chwat,mindmg1\u003E - \u003Chwat,maxdmg1\u003E damage. |nLasts \u003CAHwe,Dur1\u003E seconds. |n|n|cffffcc00Attacks land and air units.|r"
+}

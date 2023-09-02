@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 11156,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A083 (Silence), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Stops all enemies in a medium target area from casting spells for 16 seconds. 6 seconds for Heroes."
+}

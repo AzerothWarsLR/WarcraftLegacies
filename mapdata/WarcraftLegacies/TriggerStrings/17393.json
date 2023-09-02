@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 17393,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A015 (Roar of Despair), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "The hero unleashes devastating roar that reduces attack damage of all nearby enemy units by 200%. |n|n|cffffcc00Level 1|r - 6(3) seconds duration. |n|cffffcc00Level 2|r - 12(6) seconds duration. |n|cffffcc00Level 3|r - 18(9) seconds duration."
+}

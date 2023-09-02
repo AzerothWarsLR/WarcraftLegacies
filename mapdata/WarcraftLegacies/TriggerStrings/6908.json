@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 6908,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: A0Z3 (Frost Storm), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Calls forth waves of ice to explode upon the caster\u0027s enemies.|nLasts \u003CA0Z3,Dur1\u003E seconds.|n |n|cffffcc00Level 1|r - Each explosion deals \u003CA0Z3,DataC1\u003E damage. |n|cffffcc00Level 2|r - Each explosion deals \u003CA0Z3,DataC2\u003E damage. |n|cffffcc00Level 3|r - Each explosion deals \u003CA0Z3,DataC3\u003E damage"
+}

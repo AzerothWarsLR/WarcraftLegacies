@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 6119,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: AEsf (Starfall), Researchtip (Tooltip - Learn)",
+  "Value": "Learn Starfall - [|cffffcc00Level %d|r]"
+}

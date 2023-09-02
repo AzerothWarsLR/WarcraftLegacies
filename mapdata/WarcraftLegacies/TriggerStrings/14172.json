@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 14172,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A055 (Defensive Orbs), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Anasterian generates an arcane orb whenver he casts a spell. The orb orbits around the caster for 30 seconds, dealing damage to enemy units it strikes.|n|n|cffffcc00Level 1|r - 50 damage|n|cffffcc00Level 2|r - 75 damage|n|cffffcc00Level 3|r - 100 damage|n|cffffcc00Level 4|r - 125 damage"
+}

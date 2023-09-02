@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 11561,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A06H (Moon Shards), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Calls down \u003CAHbz,DataA3\u003E moon shard waves; each wave deals \u003CAHbz,DataB3\u003E damage to units in an area."
+}

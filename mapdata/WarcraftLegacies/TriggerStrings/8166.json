@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 8166,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: ANav (Battle Trance), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Activate Battle Trance to give the Hero \u003CANav,DataA1\u003E bonus armor,  \u003CAHav,DataC1\u003E bonus damage and spell immunity. |nLasts 15 seconds."
+}

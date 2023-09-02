@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 12082,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A046 (Finger of Death), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Calls forth a cone of energy utterly destroying enemies. Cannot be used on heroes.|n|n|cffffcc00Level 1|r - Deals 200 damage to 5 targeted enemy units.|n|cffffcc00Level 2|r - Deals 350 damage to 5 targeted enemy units.|n|cffffcc00Level 3|r - Deals 500 damage to 6 targeted enemy units.|n|cffffcc00Level 4|r - Deals 650 damage to 6 targeted enemy units."
+}

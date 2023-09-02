@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 19573,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A0KJ (Chain Lightning), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Hurls a bolt of lightning that bounces up to \u003CACcl,DataB2\u003E times, dealing \u003CACcl,DataA2\u003E damage to the primary target. Each jump deals less damage."
+}

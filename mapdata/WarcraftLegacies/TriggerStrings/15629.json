@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 15629,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A0WX (Curse of Flame), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Engulfs an enemy in searing flame, dealing 150 initial damage, and 25 damage every \u003CACss,Cast1\u003E seconds for \u003CACss,Dur1\u003E seconds. The fire slows attack rate and movement speed by 50%. Lasts 12(3) seconds."
+}

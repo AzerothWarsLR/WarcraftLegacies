@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 4817,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: Aspo (Slow Poison), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "A poison attack that deals \u003CAspo,DataA2\u003E damage per second, and slows the target enemy\u0027s movement by \u003CAspo,DataB2,%\u003E% and attack by \u003CAspo,DataC2,%\u003E% for 3 seconds."
+}

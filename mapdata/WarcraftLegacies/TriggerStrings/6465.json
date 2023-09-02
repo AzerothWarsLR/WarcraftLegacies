@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 6465,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: Unho (Unholy Plating), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Attacks against this unit have a \u003CUnho,DataA1\u003E% to have their damage reduced by \u003CUnho,DataC1\u003E. Attacks cannot be reduced below \u003CUnho,DataB1\u003E damage."
+}

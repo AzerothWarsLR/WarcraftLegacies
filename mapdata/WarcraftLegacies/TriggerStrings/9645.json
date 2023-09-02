@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 9645,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: A0FI (Meteor), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Summons a fiery meteor from the sky, causing 100 damage to units in an area and stunning for 2 seconds on impact. Leaves behind 8 Lava Spawn which last for 10 seconds.|n|n 300 AoE, 12 second cooldown."
+}

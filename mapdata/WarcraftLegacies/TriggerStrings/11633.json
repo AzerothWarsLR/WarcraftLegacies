@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 11633,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A063 (Avatar of Vengeance), Researchtip (Tooltip - Learn)",
+  "Value": "Learn Avatar of Vengeance - [|cffffcc00Level %d|r]"
+}

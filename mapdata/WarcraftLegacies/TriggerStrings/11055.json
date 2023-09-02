@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 11055,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A11N (Arcane Absorption), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "When this hero deals damage, it will regain a portion of the damage dealt as mana. |n|n|cffffcc00Level 1|r - 40% of the damage gained as mana. |n|cffffcc00Level 2|r - 60% of the damage gained as mana.|n|cffffcc00Level 3|r - 80% of the damage gained as mana.|n|cffffcc00Level 4|r - 100% of the damage gained as mana."
+}

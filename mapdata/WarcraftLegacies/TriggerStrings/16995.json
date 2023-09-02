@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 16995,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A078 (Holy Shackles), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "The hero wraps target in shackles, rendering it immobile and dealing damage over time. Deals 75 per second for 20 seconds (4 for Heroes). |n|n|cffc4c4ffChanneling.|r"
+}

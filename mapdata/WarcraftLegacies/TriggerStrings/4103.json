@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 4103,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: A0OD (Seismic Shard), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Fires a huge shard of stone at every enemy unit in the target area, dealing damage and stunning each target for \u003CA0GL,Dur1\u003E seconds. |n|n|cffffcc00Level 1|r - Deals \u003CA0GL,DataA1\u003E damage.|n|cffffcc00Level 2|r - Deals \u003CA0GL,DataA2\u003E damage.|n|cffffcc00Level 3|r - Deals \u003CA0GL,DataA3\u003E damage.|n|cffffcc00Level 4|r - Deals \u003CA0GL,DataA4\u003E damage."
+}

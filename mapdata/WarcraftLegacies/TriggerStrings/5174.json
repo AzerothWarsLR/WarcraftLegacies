@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 5174,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: Acrs (Curse), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Curses a target enemy unit, causing it to have a \u003CAcrs,DataA2,%\u003E% chance to miss on an attack. |nLasts \u003CAcrs,Dur2\u003E seconds."
+}

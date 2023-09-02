@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 8808,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: A0L3 (Animate Dead), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Raises dead units in an area to fight for Arthas. Animated units inherit their previous upgrades and are vulnerable. |n|n|cffffcc00Level 1|r - Raises 6 units lasting 40 seconds. |n|cffffcc00Level 2|r - Raises 12 units lasting 60 seconds. |n|cffffcc00Level 3|r -  Raises 18 units lasting 80 seconds."
+}

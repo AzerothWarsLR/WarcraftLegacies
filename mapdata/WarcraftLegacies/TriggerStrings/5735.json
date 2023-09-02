@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 5735,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: ANht (Howl of Terror), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "The Pit Lord lets loose a terrifying howl that causes nearby enemy units to shiver in fear, reducing their attack damage. |nLasts \u003CANht,Dur1\u003E seconds. |n|n|cffffcc00Level 1|r - \u003CANht,DataA1,%\u003E% attack damage reduction. |n|cffffcc00Level 2|r - \u003CANht,DataA2,%\u003E% attack damage reduction. |n|cffffcc00Level 3|r - \u003CANht,DataA3,%\u003E% attack damage reduction. |n|cffffcc00Level 4|r - \u003CANht,DataA4,%\u003E% attack damage reduction. |n|cffffcc00Level 5|r - \u003CANht,DataA5,%\u003E% attack damage reduction. |n|cffffcc00Level 6|r - \u003CANht,DataA6,%\u003E% attack damage reduction."
+}

@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 103,
+  "KeyPrecision": 3,
+  "Comment": " Abilities: A0NK (Plague Strike), Researchtip (Tooltip - Learn)",
+  "Value": "Learn Plague Strike - [|cffffcc00Level %d|r]"
+}

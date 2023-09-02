@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 11245,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A07R (Dark Grip), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Dark magic wraps itself around the body of a foe, rendering it immobile and dealing damage over time. |n|n|cffffcc00Level 1|r - 75 damage a second for 6 seconds (2 for Heroes). |n|cffffcc00Level 2|r - 75 damage per second for 8 seconds (3 for Heroes). |n|cffffcc00Level 3|r - 75 damage per second for 10 seconds (4 for Heroes). |n|cffffcc00Level 4|r - 75 damage per second for 12 seconds (5 for Heroes). |n|n|cffc4c4ffChanneling.|r"
+}

@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 11078,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A08J (Chain Mana Burn), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Sends a stream of negative magic that reduces the mana of enemies. Requires units to have positive buffs. |n|n|cffffcc00Level 1|r - Destroys 200 mana and bounces 10 times. |n|cffffcc00Level 2|r - Destroys 300 mana and bounces 10 times. |n|cffffcc00Level 3|r - Destroys 400 mana and bounces 10 times."
+}

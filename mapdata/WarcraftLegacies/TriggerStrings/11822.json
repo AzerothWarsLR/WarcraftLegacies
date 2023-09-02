@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 11822,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A056 (Call Royal Guard), Researchtip (Tooltip - Learn)",
+  "Value": "Learn Call Royal Guard - [|cffffcc00Level %d|r]"
+}

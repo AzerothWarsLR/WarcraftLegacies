@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 10280,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A05X (Thorns), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "The Crypt Lord forms barbed layers of chitinous armor that increases its defense and returns damage to enemy melee attackers.  |n|n|cffffcc00Level 1|r - \u003CAUts,DataA1,%\u003E% damage returned, \u003CAUts,DataC1\u003E bonus armor. |n|cffffcc00Level 2|r -  \u003CAUts,DataA2,%\u003E% damage returned, \u003CAUts,DataC2\u003E bonus armor. |n|cffffcc00Level 3|r -  \u003CAUts,DataA3,%\u003E% damage returned, \u003CAUts,DataC3\u003E bonus armor.  |n|cffffcc00Level 4|r -  \u003CAUts,DataA4,%\u003E% damage returned, \u003CAUts,DataC4\u003E bonus armor.  |n|cffffcc00Level 5|r -  \u003CAUts,DataA5,%\u003E% damage returned, \u003CAUts,DataC5\u003E bonus armor.  "
+}

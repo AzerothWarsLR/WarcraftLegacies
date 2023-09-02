@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 7152,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: A0XX (Banish), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Turns a non-mechanical unit ethereal and slows its movement speed by \u003CAHbn,DataA1,%\u003E% for a short duration. Ethereal creatures cannot attack, but they can cast spells and certain spells cast upon them will have a greater effect. |n|n|cffffcc00Level 1|r - \u003CAHbn,Cost1\u003E mana, lasts \u003CAHbn,Dur1\u003E(3) seconds. |n|cffffcc00Level 2|r - \u003CAHbn,Cost2\u003E mana, lasts \u003CAHbn,Dur2\u003E(5) seconds. |n|cffffcc00Level 3|r - \u003CAHbn,Cost3\u003E mana, lasts \u003CAHbn,Dur3\u003E(7) seconds. |n|cffffcc00Level 4|r - \u003CAHbn,Cost4\u003E mana, lasts \u003CAHbn,Dur4\u003E(9) seconds."
+}

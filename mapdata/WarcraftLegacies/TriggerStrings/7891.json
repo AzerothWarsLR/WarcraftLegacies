@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 7891,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: A0SU (Righteous Blow), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "A righteous strike that is swung at an enemy unit, causing damage and stunning the target. 200 range.|n|n|cffffcc00Level 1|r - 250 damage, 4 second stun. 1 second on Heroes.|n|cffffcc00Level 2|r - 300 damage, 5 second stun. 1.5 seconds on Heroes.|n|cffffcc00Level 3|r - 350 damage, 6 second stun. 2 seconds on Heroes.|n|cffffcc00Level 4|r - 400 damage, 7 second stun. 2.5 seconds on Heroes"
+}

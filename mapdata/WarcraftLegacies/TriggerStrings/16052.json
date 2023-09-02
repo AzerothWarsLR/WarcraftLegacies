@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 16052,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A0OK (Corrupt Blood), Researchtip (Tooltip - Learn)",
+  "Value": "Learn Corrupt Blood - [|cffffcc00Level %d|r]"
+}

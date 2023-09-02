@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 12846,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A00X (Defilement), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Archimonde\u0027s dark magic defiles a targetted unit along with all nearby enemies. |nDecreases armor; slows movement speed and deals high damage over time to the targets. |nLasts 20 seconds.|n|n|cffffcc00Level 1|r - 10 max damage per second, reduces armor by 4. 5% Movement speed reduction.|n|cffffcc00Level 2|r - 20 max damage per second, reduces armor by 5. 10% Movement speed reduction.|n|cffffcc00Level 3|r - 30 max damage per second, reduces armor by 6. 15% Movement speed reduction.|n|cffffcc00Level 4|r - 40 max damage per second, reduces armor by 7. 20% Movement speed reduction."
+}

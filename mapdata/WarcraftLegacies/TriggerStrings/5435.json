@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 5435,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: AOws (War Stomp), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Slams the ground, dealing \u003CAOws,DataA4\u003E damage to nearby enemy land units and stunning them for \u003CAOws,Dur4\u003E seconds."
+}

@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 11934,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A04R (Greater Doom), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Marks a target unit for the manifestation of a Demon. The afflicted unit cannot cast spells and will take 40 damage per second until it dies. Upon its death, 1 Pit Fiend will spawn from its corpse. Doom cannot be dispelled or cancelled."
+}

@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 8415,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: A0P7 (Soul Burn), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Wreaths an enemy unit in magical flames which cause \u003CANso,DataA1\u003E damage per second, prevent the casting of spells, and reduce attack damage by \u003CANso,DataC1,%\u003E%.|nLasts 14 seconds. Lasts 6 seconds on Heroes."
+}

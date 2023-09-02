@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 10569,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A0B8 (Defend), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Activate to have a \u003CAdef,DataF1\u003E% chance to reflect Piercing attacks upon the source, and to take only \u003CAdef,DataA1,%\u003E% of the damage from attacks that are not reflected and also reduces magic damage by 20%. While Defend is active, move speed is reduced by \u003CAdef,DataC1,%\u003E%."
+}

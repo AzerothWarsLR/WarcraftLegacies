@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 1009,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: A0TZ (Voodoo Restoration), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Activate Voodoo Restoration, healing units within a range of 350 each second. |n|n|cffffcc00Level 1|r - 25 health per second. |n|cffffcc00Level 2|r - 35 health per second. |n|cffffcc00Level 3|r - 45 health per second.|n|cffffcc00Level 4 -|r 55 health per second."
+}

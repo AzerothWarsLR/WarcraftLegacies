@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 12252,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A03B (Nature Aura), Researchtip (Tooltip - Learn)",
+  "Value": "Learn Nature Aura - [|cffffcc00Level %d|r]"
+}

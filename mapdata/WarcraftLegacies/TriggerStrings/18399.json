@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 18399,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A0VC (Viral Plague), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Corrupt the blood of a target unit with a nasty plague. The afflicted unit cannot cast spells and will take \u003CA04A,DataA2\u003E damage per second. Upon its death, 2 Elite Abominations will spawn from its corpse. Viral Plague cannot be dispelled or cancelled.|nLasts 8 seconds on heroes and indefinitely on units."
+}

@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 12411,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A02M (Ritual of the Ancients), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Cenarius grows a tree at a target location which spawns Ancients every 1.4 seconds until it expires or is destroyed. |n|n|cffffcc00Level 1|r - Lasts 3 seconds. |n|cffffcc00Level 2|r - Lasts 5 seconds. |n|cffffcc00Level 3|r - Lasts 7 seconds. |n|cffffcc00Level 4|r - Lasts 9 seconds. |n|nTreants last 45 seconds."
+}

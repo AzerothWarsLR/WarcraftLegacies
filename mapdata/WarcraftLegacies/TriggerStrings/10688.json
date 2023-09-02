@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 10688,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: AHad (Devotion Aura), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Gives additional armor to nearby friendly units in 450 range. |n|n|cffffcc00Level 1|r - Increases armor by \u003CAHad,DataA1,.\u003E. |n|cffffcc00Level 2|r - Increases armor by \u003CAHad,DataA2,.\u003E. |n|cffffcc00Level 3|r - Increases armor by \u003CAHad,DataA3,.\u003E.|n|cffffcc00Level 4|r - Increases armor by \u003CAHad,DataA4,.\u003E."
+}

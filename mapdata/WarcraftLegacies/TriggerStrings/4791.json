@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 4791,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: Auhf (Unholy Frenzy), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Increases the attack rate of a target unit by \u003CAuhf,DataA2,%\u003E%, but drains \u003CAuhf,DataB2\u003E hit points per second. |nLasts \u003CAuhf,Dur2\u003E seconds."
+}

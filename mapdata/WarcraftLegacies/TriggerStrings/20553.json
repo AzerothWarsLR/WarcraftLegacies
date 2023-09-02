@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 20553,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A12A (Summon Raptors), Researchtip (Tooltip - Learn)",
+  "Value": "Learn Summon Raptors - [|cffffcc00Level %d|r]"
+}

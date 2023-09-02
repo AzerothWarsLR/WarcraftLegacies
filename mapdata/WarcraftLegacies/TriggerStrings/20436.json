@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 20436,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A11W (Toxic Cloud), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Summon an immobile cloud of toxic waste. The cloud will damage enemies as long as they remain inside it. |n|n|cffffcc00Level 1|r - 50 damage per second, 20 seconds duration.|n|cffffcc00Level 2|r - 75 damage per second, 35 seconds duration.|n|cffffcc00Level 3|r - 100 damage per second 50 seconds duration."
+}

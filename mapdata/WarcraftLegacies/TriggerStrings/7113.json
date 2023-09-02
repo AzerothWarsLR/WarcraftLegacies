@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 7113,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: A0Y2 (Locust Swarm), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Creates a swarm of angry locusts that bite and tear at nearby enemy units. As they chew the enemy flesh, they convert it into a substance that restores hit points to the Silithis Collosus when they return.|n|nSpawns 10 locusts. 50 damage return.|n|n|cffcece00|nAoE: 800.|nLasts 10 seconds.|n60 second cooldown.|r"
+}

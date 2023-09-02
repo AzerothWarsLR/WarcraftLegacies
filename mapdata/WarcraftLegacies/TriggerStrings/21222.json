@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 21222,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A13I (Overflow), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Increases the unit\u0027s attack rate by \u003CA0EH,DataA2,%\u003E% and movement speed by \u003CA0EH,DataB2,%\u003E% for \u003CA0EH,Dur2\u003E seconds."
+}

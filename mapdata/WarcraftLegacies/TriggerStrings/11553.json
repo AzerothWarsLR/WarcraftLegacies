@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 11553,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A06H (Moon Shards), Researchtip (Tooltip - Learn)",
+  "Value": "Learn Moon Shards - [|cffffcc00Level %d|r]"
+}

@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 17027,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A0QK (Mass Enrage), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Cause all allied units in the area of effect gain Unholy Frenzy, increasing attack rate by 100% but draining them of 10 hit points per second. Lasts 40 seconds.|n|n|cffffcc00Level 1|r - 100 AOE, cooldown 120, mana cost 200|n|cffffcc00Level 2|r - 150 AOE, cooldown 90, mana cost 180|n|cffffcc00Level 3|r - 200 AOE, cooldown 60, mana cost 160|n|cffffcc00Level 4|r - 250 AOE, cooldown 30, mana cost 140"
+}

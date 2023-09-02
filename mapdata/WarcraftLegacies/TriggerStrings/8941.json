@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 8941,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: A0KB (Divine Judgment), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Alexandros unleashes a wave of holy light that damages and stuns everyone in a target direction. Damage and stun duration increase with level. |n|n|cffffcc00Level 1|r - \u003CA0KB:AUim,DataC1\u003E damage, 1 second stun. |n|cffffcc00Level 2|r - \u003CA0KB:AUim,DataC2\u003E damage, 1.75(1.25) second stun. |n|cffffcc00Level 3|r - \u003CA0KB:AUim,DataC3\u003E damage, 2.5(1.5) second stun. |n|cffffcc00Level 4|r - \u003CA0KB:AUim,DataC4\u003E damage, 3.25(1.75) second stun."
+}

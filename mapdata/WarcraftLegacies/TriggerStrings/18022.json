@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 18022,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A0TX (Field Medkit), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Heals a target friendly unit for 600 hit points over 20 seconds."
+}

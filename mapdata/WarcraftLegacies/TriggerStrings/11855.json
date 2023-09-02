@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 11855,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A052 (Soul Drain), Researchtip (Tooltip - Learn)",
+  "Value": "Learn Soul Drain - [|cffffcc00Level %d|r]"
+}

@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 7200,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: A0XT (Desert Storm), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Conjures a fierce Desert Storm that attack all units in a target area over time. |n|n|cffffcc00Level 1|r - 50 damage every 0.1 second seconds. |n|cffffcc00Level 2|r - 60 damage every 0.1 second. |n|cffffcc00Level 3|r - 70 damage every 0.1 second."
+}

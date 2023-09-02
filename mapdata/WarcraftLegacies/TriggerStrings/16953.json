@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 16953,
+  "KeyPrecision": 5,
+  "Comment": " Upgrades: R02T (Well Spring), Ubertip (Tooltip - Extended)",
+  "Value": "Increases the amount of mana that can be stored in Moon Wells by 175, and their rate of mana regeneration by 5%."
+}

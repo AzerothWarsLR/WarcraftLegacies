@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 12173,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A03P (Primal Aura), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Increases the attack damage of friendly units within a radius of \u003CA03P,Area1\u003E by \u003CA03P,DataA1,%\u003E%."
+}

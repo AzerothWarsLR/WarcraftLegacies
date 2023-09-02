@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 5635,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: ANsb (Shadow Ball), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "A Shadow Ball is thrown at an enemy unit, dealing \u003CANsb,DataA1\u003E damage and stunning the target for \u003CANsb,Dur1\u003E seconds. (3 on heroes)"
+}

@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 11777,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A05E (Holy Aura), Researchtip (Tooltip - Learn)",
+  "Value": "Learn Holy Aura - [|cffffcc00Level %d|r]"
+}

@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 4075,
+  "KeyPrecision": 4,
+  "Comment": " Items: spre (Staff of Preservation), Ubertip (Tooltip - Extended)",
+  "Value": "Teleports a target friendly unit to its highest level town hall. Has a 2 second cast time. 90 second cooldown."
+}

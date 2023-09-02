@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 6203,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: AEfk (Fan of Knives), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "The Warden hurls a flurry of knives, damaging nearby enemies. |n|n|cffffcc00Level 1|r - \u003CAEfk,DataA1\u003E damage per target. |n|cffffcc00Level 2|r - \u003CAEfk,DataA2\u003E damage per target. |n|cffffcc00Level 3|r - \u003CAEfk,DataA3\u003E damage per target. |n|cffffcc00Level 4|r - \u003CAEfk,DataA4\u003E damage per target."
+}

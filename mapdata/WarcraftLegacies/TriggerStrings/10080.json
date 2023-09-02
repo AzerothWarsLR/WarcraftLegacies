@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 10080,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A0DD (Rejuvenation), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Heals a target friendly unit for 750 hit points over 10 seconds. Also Restores 100 mana to the Target."
+}

@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 17414,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A02G (Stoneform), Researchtip (Tooltip - Learn)",
+  "Value": "Learn Stoneform - [|cffffcc00Level %d|r]"
+}

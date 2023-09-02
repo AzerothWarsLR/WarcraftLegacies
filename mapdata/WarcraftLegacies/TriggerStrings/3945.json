@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 3945,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: A017 (Take Vengeance), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "If Maiev would die, she instead regains 1800 health and becomes an Avatar of Vengeance for 20 seconds, increasing her attack damage by 80. If Maiev attacks 9 times in this form, she revives instantly. Otherwise, she dies."
+}

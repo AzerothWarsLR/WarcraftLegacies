@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 9465,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: A0GE (Cluster Rockets), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Bombards an area with rockets, dealing up to \u003CA0GE,DataA1\u003E damage to nearby enemy ground units and stunning them for \u003CA0GE,Dur1\u003E second. Deals \u003CA0GE,DataE1,%\u003E damage to buildings."
+}

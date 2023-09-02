@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 12488,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A02B (Rain of Meteors), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Calls down \u003CA02B,DataB1\u003E meteors from the sky that deal \u003CA02N,DataA1\u003E damage and stun for \u003CA02N,DataB1\u003E seconds."
+}

@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 11115,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A089 (Breath of Fire), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Breathes a cone of fire at enemy units, dealing 75 damage and an additional 50 damage over 10 seconds."
+}

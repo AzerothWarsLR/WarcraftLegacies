@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 2288,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: AUcb (Carrion Beetles), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "The hero progenerates Carrion Beetle from a target corpse to attack the hero\u0027s enemies. Beetles are permanent. |n|n|cffffcc00Level 1|r - Spawns a level 1 Carrion Beetle. Max 6 Beetles. |n|cffffcc00Level 2|r - Spawns a level 2 Carrion Beetle. Max 6 Beetles. |n|cffffcc00Level 3|r - Spawns a level 3 Dire Carrion Beetle. Max 6 Beetles. |n|cffffcc00Level 4|r - Spawns a level 3 Dire Carrion Beetle. Max 12 Beetles."
+}
