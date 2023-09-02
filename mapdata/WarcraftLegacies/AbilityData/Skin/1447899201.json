@@ -16,12 +16,6 @@
       "Value": "TRIGSTR_15254"
     },
     {
-      "Level": 1,
-      "Id": 829453409,
-      "Type": 3,
-      "Value": "TRIGSTR_15884"
-    },
-    {
       "Level": 2,
       "Id": 829453409,
       "Type": 3,
@@ -63,15 +57,10 @@
       "Value": "TRIGSTR_15414"
     },
     {
-      "Id": 1835101793,
-      "Type": 3,
-      "Value": "TRIGSTR_15891"
-    },
-    {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_15892"
+      "Value": "TRIGSTR_20532"
     }
   ]
 }

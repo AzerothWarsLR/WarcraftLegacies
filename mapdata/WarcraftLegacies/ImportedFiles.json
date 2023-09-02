@@ -14208,6 +14208,14 @@
     {
       "Flags": 29,
       "FullPath": "ReplaceableTextures\\CommandButtonsDisabled\\DISBTNSpell_Shadow_LifeDrain.blp"
+    },
+    {
+      "Flags": 21,
+      "FullPath": "ReplaceableTextures\\CommandButtons\\PASCascadeSmash.blp"
+    },
+    {
+      "Flags": 21,
+      "FullPath": "ReplaceableTextures\\CommandButtonsDisabled\\DISPASCascadeSmash.blp"
     }
   ]
 }
