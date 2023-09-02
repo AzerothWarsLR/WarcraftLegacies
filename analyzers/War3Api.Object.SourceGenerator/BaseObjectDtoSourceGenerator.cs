@@ -39,7 +39,6 @@ public sealed class BaseObjectDtoSourceGenerator : ISourceGenerator
       {
         var classSymbol = semanticModel.GetDeclaredSymbol(classDeclaration);
         GenerateDtoClass(context, classSymbol);
-        GenerateMapperClass(context, classSymbol);
       }
       
     }
@@ -60,64 +59,6 @@ public sealed class BaseObjectDtoSourceGenerator : ISourceGenerator
     context.AddSource($"DataTransferObjects/{dtoClassName}.cs", dtoNamespace.GetText(Encoding.UTF8));
   }
   
-  private static void GenerateMapperClass(GeneratorExecutionContext context, ISymbol classSymbol)
-  {
-    var className = classSymbol.Name;
-    var parameterName = className.ToCamelCase();
-    var dtoClassName = $"{className}Dto";
-    var mapperClassName = $"{className}DtoMapper";
-
-    var dtoClass = ClassDeclaration(mapperClassName)
-      .WithModifiers(TokenList(
-        Token(SyntaxKind.PublicKeyword),
-        Token(SyntaxKind.SealedKeyword)))
-      .WithMembers(
-        SingletonList<MemberDeclarationSyntax>(
-          MethodDeclaration(
-              IdentifierName(dtoClassName),
-              Identifier("ToDto"))
-            .WithModifiers(
-              TokenList(
-                Token(SyntaxKind.PublicKeyword)))
-            .WithParameterList(
-              ParameterList(
-                SingletonSeparatedList(
-                  Parameter(
-                      Identifier(parameterName))
-                    .WithType(
-                      IdentifierName(className)))))
-            .WithBody(
-              Block(
-                SingletonList<StatementSyntax>(
-                  ReturnStatement(
-                    ObjectCreationExpression(
-                        IdentifierName(dtoClassName))
-                      .WithInitializer(
-                        InitializerExpression(
-                          SyntaxKind.ObjectInitializerExpression,
-                          SeparatedList<ExpressionSyntax>(
-                            new SyntaxNodeOrToken[]{
-                              AssignmentExpression(
-                                SyntaxKind.SimpleAssignmentExpression,
-                                IdentifierName("Art"),
-                                ConditionalExpression(
-                                  MemberAccessExpression(
-                                    SyntaxKind.SimpleMemberAccessExpression,
-                                    IdentifierName(parameterName),
-                                    IdentifierName("IsArtModified")),
-                                  MemberAccessExpression(
-                                    SyntaxKind.SimpleMemberAccessExpression,
-                                    IdentifierName(parameterName),
-                                    IdentifierName("Art")),
-                                  LiteralExpression(
-                                    SyntaxKind.NullLiteralExpression))),
-                              Token(SyntaxKind.CommaToken)})))))))));
-
-    var dtoNamespace = WrapDeclarationInNamespace(dtoClass);
-
-    context.AddSource($"Mappers/{mapperClassName}.cs", dtoNamespace.GetText(Encoding.UTF8));
-  }
-
   private static NamespaceDeclarationSyntax WrapDeclarationInNamespace(MemberDeclarationSyntax declaration)
   {
     return NamespaceDeclaration(ParseName(OutputNamespace))
