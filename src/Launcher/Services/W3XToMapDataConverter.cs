@@ -67,6 +67,8 @@ namespace Launcher.Services
     
     private void SerializeAndWriteMapData(Map map, string outputFolderPath)
     {
+      Directory.Delete(outputFolderPath, true);
+      
       if (map.Doodads != null) 
         SerializeAndWrite<MapDoodads, MapDoodadsDto>(map.Doodads, outputFolderPath, DoodadsPath);
       if (map.Environment != null) 
