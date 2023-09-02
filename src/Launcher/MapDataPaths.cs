@@ -8,7 +8,6 @@
     public const string PreviewIconsPath = "PreviewIcons.json";
     public const string PathingMapPath = "PathingMap.json";
     public const string ImportedFilesPath = "ImportedFiles.json";
-    public const string UnitsPath = "Units.json";
     public const string InfoPath = "Info.json";
     public const string EnvironmentPath = "Environment.json";
     public const string DoodadsPath = "Doodads.json";
@@ -26,9 +25,16 @@
 
     public const string SoundsDirectoryPath = "Sounds";
     public const string RegionsDirectoryPath = "Regions";
+    public const string UnitsDirectoryPath = "Units";
     
     public const string ImportsPath = "Imports";
 
     public const string ScriptPath = "Script.lua";
+
+    /// <summary>
+    /// Some positional data is seperated into different files based on position on the map.
+    /// Chunk size determines how large those square chunks should be.
+    /// </summary>
+    public const int ChunkSize = 512;
   }
 }

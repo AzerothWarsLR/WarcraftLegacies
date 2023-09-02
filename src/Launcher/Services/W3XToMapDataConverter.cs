@@ -75,8 +75,8 @@ namespace Launcher.Services
         SerializeAndWrite<MapInfo, MapInfoDto>(map.Info, outputFolderPath, InfoPath);
       if (map.Regions != null)
         SerializeAndWriteRegions(map.Regions, Path.Combine(outputFolderPath, RegionsDirectoryPath));
-      if (map.Units != null) 
-        SerializeAndWrite<MapUnits, MapUnitsDto>(map.Units, outputFolderPath, UnitsPath);
+      if (map.Units != null)
+        SerializeAndWriteUnits(map.Units, Path.Combine(outputFolderPath, UnitsDirectoryPath));
       if (map.ImportedFiles != null)
         SerializeAndWrite<ImportedFiles, MapImportedFilesDto>(map.ImportedFiles, outputFolderPath, ImportedFilesPath);
       if (map.PathingMap != null)
@@ -138,6 +138,27 @@ namespace Launcher.Services
       File.WriteAllText(fullPath, asJson);
     }
 
+    private void SerializeAndWriteUnits(MapUnits units, string path)
+    {
+      if (!Directory.Exists(path))
+        Directory.CreateDirectory(path);
+      
+      var positionallyChunkedUnitCollection = new PositionallyChunkedUnitSet(ChunkSize);
+
+      foreach (var unit in units.Units)
+      {
+        var asDto = _mapper.Map<UnitDataDto>(unit);
+        positionallyChunkedUnitCollection.Add(asDto);
+      }
+
+      foreach (var (chunk, unitSet) in positionallyChunkedUnitCollection.GetAll())
+      {
+        var fullPath = Path.Combine(path, $"{chunk.Item1}_{chunk.Item2}.json");
+        var asJson = JsonSerializer.Serialize(unitSet, _jsonSerializerOptions);
+        File.WriteAllText(fullPath, asJson);
+      }
+    }
+    
     private void SerializeAndWriteSounds(MapSounds sounds, string path)
     {
       foreach (var sound in sounds.Sounds)
