@@ -2,6 +2,7 @@
 using System.Drawing;
 using System.Linq;
 using System.Numerics;
+using System.Reflection;
 using AutoMapper;
 using Launcher.DataTransferObjects;
 using Launcher.Extensions;
@@ -22,6 +23,10 @@ namespace Launcher.Services
 {
   public sealed class AutoMapperConfigurationProvider
   {
+    private static PropertyInfo[] _unitProperties;
+    private static PropertyInfo[] UnitProperties => _unitProperties ??= typeof(Unit).GetProperties();
+
+
     public MapperConfiguration GetConfiguration()
     {
       var autoMapperConfig = new MapperConfiguration(cfg =>
@@ -85,8 +90,7 @@ namespace Launcher.Services
           ? $"Is{destinationMemberName.RemoveEnd(raw.Length)}{modified}"
           : $"Is{destinationMemberName}{modified}";
         
-        var allProperties = typeof(Unit).GetProperties();
-        if (allProperties.Select(property => property.Name).Contains($"{destinationMemberName}{raw}"))
+        if (UnitProperties.Select(property => property.Name).Contains($"{destinationMemberName}{raw}"))
           return false;
         
         var isModifiedProperty = typeof(Unit).GetProperty(isModifiedName);

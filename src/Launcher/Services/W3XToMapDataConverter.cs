@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.IO;
 using System.Text.Json;
 using System.Text.Json.Serialization;
@@ -132,12 +131,14 @@ namespace Launcher.Services
 
     private void SerializeAndWriteUnitData(Map map, string outputFolderPath)
     {
+      var unitDataDirectoryFullPath = Path.Combine(outputFolderPath, UnitDataDirectoryPath);
+      Directory.CreateDirectory(unitDataDirectoryFullPath);
       var objectDatabase = map.GetObjectDatabaseFromMap();
       var units = objectDatabase.GetUnits();
       foreach (var unit in units)
       {
         var unitDto = _mapper.Map<Unit, UnitDto>(unit);
-        var path = Path.Combine(outputFolderPath, UnitDataDirectoryPath, unitDto.NewId.ToString());
+        var path = Path.Combine(unitDataDirectoryFullPath, unitDto.NewId.ToString());
         File.WriteAllText(path, JsonSerializer.Serialize(unitDto, _jsonSerializerOptions));
       }
     }
