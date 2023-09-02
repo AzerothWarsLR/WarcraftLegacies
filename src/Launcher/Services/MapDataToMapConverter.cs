@@ -148,8 +148,11 @@ namespace Launcher.Services
       return mapUnits;
     }
 
-    private MapRegions DeserializeRegionsFromDirectory(string directory)
+    private MapRegions? DeserializeRegionsFromDirectory(string directory)
     {
+      if (!Directory.Exists(directory))
+        return null;
+      
       var regions = new MapRegions(MapRegionsFormatVersion.v5);
       var files = Directory.EnumerateFiles(directory, "*", SearchOption.AllDirectories);
       foreach (var file in files)
@@ -162,8 +165,11 @@ namespace Launcher.Services
       return regions;
     }
 
-    private MapSounds DeserializeSoundsFromDirectory(string directory)
+    private MapSounds? DeserializeSoundsFromDirectory(string directory)
     {
+      if (!Directory.Exists(directory))
+        return null;
+      
       var sounds = new MapSounds(MapSoundsFormatVersion.v3);
       var files = Directory.EnumerateFiles(directory, "*", SearchOption.AllDirectories);
       foreach (var file in files)
@@ -197,8 +203,11 @@ namespace Launcher.Services
       return objectData;
     }
 
-    private ItemObjectData DeserializeItemDataFromDirectory(string directory)
+    private ItemObjectData? DeserializeItemDataFromDirectory(string directory)
     {
+      if (!Directory.Exists(directory))
+        return null;
+      
       var objectData = new ItemObjectData(ObjectDataFormatVersion.v3);
       var files = Directory.EnumerateFiles(directory, "*", SearchOption.AllDirectories);
       foreach (var file in files)
@@ -218,8 +227,11 @@ namespace Launcher.Services
       return objectData;
     }
 
-    private DoodadObjectData DeserializeDoodadDataFromDirectory(string directory)
+    private DoodadObjectData? DeserializeDoodadDataFromDirectory(string directory)
     {
+      if (!Directory.Exists(directory))
+        return null;
+      
       var objectData = new DoodadObjectData(ObjectDataFormatVersion.v3);
       var files = Directory.EnumerateFiles(directory, "*", SearchOption.AllDirectories);
       foreach (var file in files)
@@ -239,8 +251,11 @@ namespace Launcher.Services
       return objectData;
     }
 
-    private DestructableObjectData DeserializeDestructableDataFromDirectory(string directory)
+    private DestructableObjectData? DeserializeDestructableDataFromDirectory(string directory)
     {
+      if (!Directory.Exists(directory))
+        return null;
+      
       var objectData = new DestructableObjectData(ObjectDataFormatVersion.v3);
       var files = Directory.EnumerateFiles(directory, "*", SearchOption.AllDirectories);
       foreach (var file in files)
@@ -260,8 +275,11 @@ namespace Launcher.Services
       return objectData;
     }
 
-    private BuffObjectData DeserializeBuffDataFromDirectory(string directory)
+    private BuffObjectData? DeserializeBuffDataFromDirectory(string directory)
     {
+      if (!Directory.Exists(directory))
+        return null;
+      
       var objectData = new BuffObjectData(ObjectDataFormatVersion.v3);
       var files = Directory.EnumerateFiles(directory, "*", SearchOption.AllDirectories);
       foreach (var file in files)
@@ -366,8 +384,11 @@ namespace Launcher.Services
       return fileDirectories;
     }
 
-    private TReturn DeserializeFromFile<TReturn, TDataTransferObject>(string filePath)
+    private TReturn? DeserializeFromFile<TReturn, TDataTransferObject>(string filePath)
     {
+      if (!File.Exists(filePath))
+        return default;
+      
       var dto = JsonSerializer.Deserialize<TDataTransferObject>(File.ReadAllText(filePath), _jsonSerializerOptions);
       return _mapper.Map<TReturn>(dto);
     }
