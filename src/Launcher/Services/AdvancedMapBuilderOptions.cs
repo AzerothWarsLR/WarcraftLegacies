@@ -7,12 +7,12 @@ namespace Launcher.Services
     /// <summary>
     /// What to call the resulting map file.
     /// </summary>
-    public required string MapName { get; init; }
+    public string MapName { get; init; }
     
     /// <summary>
     /// Where the final map will be saved to.
     /// </summary>
-    public required string OutputDirectory { get; init; }
+    public string OutputDirectory { get; init; }
     
     /// <summary>
     /// C# code in this directory will be transpiled to Lua and included in the map.
