@@ -82,7 +82,7 @@ namespace Launcher.Services
         Info = DeserializeFromFile<MapInfo, MapInfoDto>(Path.Combine(mapDataRootDirectory, InfoPath)),
         CustomTextTriggers = DeserializeFromFile<MapCustomTextTriggers, MapCustomTextTriggersDto>(Path.Combine(mapDataRootDirectory, CustomTextTriggersPath)),
         TriggerStrings = DeserializeFromFile<TriggerStrings, MapTriggerStringsDto>(Path.Combine(mapDataRootDirectory, TriggerStringsPath)),
-        Doodads = DeserializeFromFile<MapDoodads, MapDoodadsDto>(Path.Combine(mapDataRootDirectory, DoodadsPath)),
+        Doodads = null,
         Units = null,
         Triggers = GenerateEmptyMapTriggers(),
         

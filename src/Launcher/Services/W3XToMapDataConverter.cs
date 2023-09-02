@@ -71,7 +71,7 @@ namespace Launcher.Services
         Directory.Delete(outputFolderPath, true);
       
       if (map.Doodads != null) 
-        SerializeAndWrite<MapDoodads, MapDoodadsDto>(map.Doodads, outputFolderPath, DoodadsPath);
+        SerializeAndWriteDoodads(map.Doodads, Path.Combine(outputFolderPath, DoodadsDirectoryPath));
       if (map.Environment != null) 
         SerializeAndWrite<MapEnvironment, MapEnvironmentDto>(map.Environment, outputFolderPath, EnvironmentPath);
       if (map.Info != null) 
@@ -158,6 +158,27 @@ namespace Launcher.Services
       {
         var fullPath = Path.Combine(path, $"{chunk.Item1}_{chunk.Item2}.json");
         var asJson = JsonSerializer.Serialize(unitSet, _jsonSerializerOptions);
+        File.WriteAllText(fullPath, asJson);
+      }
+    }
+    
+    private void SerializeAndWriteDoodads(MapDoodads doodads, string path)
+    {
+      if (!Directory.Exists(path))
+        Directory.CreateDirectory(path);
+      
+      var positionallyChunkedUnitCollection = new PositionallyChunkedDoodadSet(ChunkSize);
+
+      foreach (var doodad in doodads.Doodads)
+      {
+        var asDto = _mapper.Map<DoodadDataDto>(doodad);
+        positionallyChunkedUnitCollection.Add(asDto);
+      }
+
+      foreach (var (chunk, doodadSet) in positionallyChunkedUnitCollection.GetAll())
+      {
+        var fullPath = Path.Combine(path, $"{chunk.Item1}_{chunk.Item2}.json");
+        var asJson = JsonSerializer.Serialize(doodadSet, _jsonSerializerOptions);
         File.WriteAllText(fullPath, asJson);
       }
     }

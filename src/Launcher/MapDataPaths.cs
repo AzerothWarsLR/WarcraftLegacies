@@ -10,7 +10,6 @@
     public const string ImportedFilesPath = "ImportedFiles.json";
     public const string InfoPath = "Info.json";
     public const string EnvironmentPath = "Environment.json";
-    public const string DoodadsPath = "Doodads.json";
 
     public const string UnitDataDirectoryPath = "UnitData";
     public const string DoodadDataDirectoryPath = "DoodadData";
@@ -26,6 +25,7 @@
     public const string SoundsDirectoryPath = "Sounds";
     public const string RegionsDirectoryPath = "Regions";
     public const string UnitsDirectoryPath = "Units";
+    public const string DoodadsDirectoryPath = "Doodads";
     
     public const string ImportsPath = "Imports";
 
