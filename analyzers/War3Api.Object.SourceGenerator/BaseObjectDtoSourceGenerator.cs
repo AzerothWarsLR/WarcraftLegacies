@@ -37,20 +37,15 @@ public sealed class BaseObjectDtoSourceGenerator : ISourceGenerator
 
       foreach (var classDeclaration in classDeclarations)
       {
-        GenerateDtoClass(context, semanticModel, classDeclaration, baseObjectSymbol);
-        GenerateMapperClass(context, semanticModel, classDeclaration, baseObjectSymbol);
+        var classSymbol = semanticModel.GetDeclaredSymbol(classDeclaration);
+        GenerateDtoClass(context, classSymbol!);
+        GenerateMapperClass(context, classSymbol!);
       }
-      
     }
   }
 
-  private static void GenerateDtoClass(GeneratorExecutionContext context, SemanticModel semanticModel,
-    BaseTypeDeclarationSyntax classDeclaration, ISymbol baseObjectSymbol)
+  private static void GenerateDtoClass(GeneratorExecutionContext context, INamespaceOrTypeSymbol classSymbol)
   {
-    var classSymbol = semanticModel.GetDeclaredSymbol(classDeclaration);
-    if (classSymbol?.BaseType == null || !SymbolEqualityComparer.Default.Equals(classSymbol.BaseType, baseObjectSymbol))
-      return;
-    
     var dtoClassName = $"{classSymbol.Name}Dto";
 
     var dtoClass = ClassDeclaration(dtoClassName)
@@ -67,12 +62,8 @@ public sealed class BaseObjectDtoSourceGenerator : ISourceGenerator
     context.AddSource($"DataTransferObjects/{dtoClassName}.cs", dtoNamespace.GetText(Encoding.UTF8));
   }
   
-  private static void GenerateMapperClass(GeneratorExecutionContext context, SemanticModel semanticModel, ClassDeclarationSyntax classDeclaration, INamedTypeSymbol baseObjectSymbol)
+  private static void GenerateMapperClass(GeneratorExecutionContext context, ISymbol classSymbol)
   {
-    var classSymbol = semanticModel.GetDeclaredSymbol(classDeclaration);
-    if (classSymbol?.BaseType == null || !SymbolEqualityComparer.Default.Equals(classSymbol.BaseType, baseObjectSymbol))
-      return;
-    
     var mapperClassName = $"{classSymbol.Name}DtoMapper";
 
     var dtoClass = ClassDeclaration(mapperClassName)
