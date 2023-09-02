@@ -82,8 +82,8 @@ namespace Launcher.Services
         Info = DeserializeFromFile<MapInfo, MapInfoDto>(Path.Combine(mapDataRootDirectory, InfoPath)),
         CustomTextTriggers = DeserializeFromFile<MapCustomTextTriggers, MapCustomTextTriggersDto>(Path.Combine(mapDataRootDirectory, CustomTextTriggersPath)),
         TriggerStrings = DeserializeFromFile<TriggerStrings, MapTriggerStringsDto>(Path.Combine(mapDataRootDirectory, TriggerStringsPath)),
-        Doodads = null,
-        Units = null,
+        Doodads = DeserializeDoodadsFromDirectory(Path.Combine(mapDataRootDirectory, DoodadsDirectoryPath)),
+        Units = DeserializeUnitsFromDirectory(Path.Combine(mapDataRootDirectory, UnitsDirectoryPath)),
         Triggers = GenerateEmptyMapTriggers(),
         
         AbilityObjectData = DeserializeAbilityDataFromDirectory(Path.Combine(mapDataRootDirectory, AbilityDataDirectoryPath, CoreDataDirectorySubPath)),
@@ -104,6 +104,48 @@ namespace Launcher.Services
         Script = File.ReadAllText(Path.Combine(mapDataRootDirectory, ScriptPath))
       };
       return map;
+    }
+
+    private MapDoodads DeserializeDoodadsFromDirectory(string directory)
+    {
+      var mapDoodads = new MapDoodads(MapWidgetsFormatVersion.v8, MapWidgetsSubVersion.v11, true);
+      var files = Directory.EnumerateFiles(directory, "*", SearchOption.AllDirectories);
+      foreach (var file in files)
+      {
+        var fileContents = File.ReadAllText(file);
+        var doodadDtoSet = JsonSerializer.Deserialize<HashSet<DoodadDataDto>>(fileContents, _jsonSerializerOptions);
+
+        if (doodadDtoSet == null)
+          throw new JsonException($"File {file} could not be serialized to {nameof(HashSet<DoodadDataDto>)}.");
+        
+        foreach (var doodadDto in doodadDtoSet)
+        {
+          var doodad = _mapper.Map<DoodadData>(doodadDto);
+          mapDoodads.Doodads.Add(doodad);
+        }
+      }
+      return mapDoodads;
+    }
+
+    private MapUnits DeserializeUnitsFromDirectory(string directory)
+    {
+      var mapUnits = new MapUnits(MapWidgetsFormatVersion.v8, MapWidgetsSubVersion.v11, true);
+      var files = Directory.EnumerateFiles(directory, "*", SearchOption.AllDirectories);
+      foreach (var file in files)
+      {
+        var fileContents = File.ReadAllText(file);
+        var unitDtoSet = JsonSerializer.Deserialize<HashSet<UnitDataDto>>(fileContents, _jsonSerializerOptions);
+
+        if (unitDtoSet == null)
+          throw new JsonException($"File {file} could not be serialized to {nameof(HashSet<UnitDataDto>)}.");
+        
+        foreach (var unitDto in unitDtoSet)
+        {
+          var unit = _mapper.Map<UnitData>(unitDto);
+          mapUnits.Units.Add(unit);
+        }
+      }
+      return mapUnits;
     }
 
     private MapRegions DeserializeRegionsFromDirectory(string directory)
