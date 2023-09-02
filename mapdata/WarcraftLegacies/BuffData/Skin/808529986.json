@@ -1,0 +1,24 @@
+{
+  "OldId": 1668050242,
+  "NewId": 808529986,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1835101798,
+      "Type": 3,
+      "Value": "TRIGSTR_13716"
+    },
+    {
+      "Id": 1952543846,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Items\\VampiricPotion\\VampPotionCaster.mdl"
+    },
+    {
+      "Id": 811693158,
+      "Type": 3,
+      "Value": "origin"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "OldId": 1953319233,
+  "NewId": 928591937,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1634034017,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Orc\\EarthQuake\\EarthQuakeTarget.mdl"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 1
+    },
+    {
+      "Id": 2037408353,
+      "Value": 1
+    },
+    {
+      "Id": 1952539489,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Orc\\EarthQuake\\EarthQuakeTarget.mdl"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "TRIGSTR_5255"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "TRIGSTR_9814"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "TRIGSTR_7086"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "TRIGSTR_7087"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "TRIGSTR_19093"
+    }
+  ]
+}

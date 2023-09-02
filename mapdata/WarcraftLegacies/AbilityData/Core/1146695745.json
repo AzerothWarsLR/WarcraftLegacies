@@ -1,0 +1,33 @@
+{
+  "OldId": 1634747201,
+  "NewId": 1146695745,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 912355406,
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 1,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 850
+    },
+    {
+      "Level": 1,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "enemies,ground,neutral,nonhero,organic"
+    },
+    {
+      "Level": 1,
+      "Id": 1970106473,
+      "Type": 3,
+      "Value": "nfgt"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "OldId": 1734692417,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "TRIGSTR_17056"
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "TRIGSTR_5782"
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "TRIGSTR_17059"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "TRIGSTR_17100"
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "TRIGSTR_17102"
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "TRIGSTR_17104"
+    }
+  ]
+}

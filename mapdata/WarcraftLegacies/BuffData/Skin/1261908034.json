@@ -1,0 +1,19 @@
+{
+  "OldId": 1869374018,
+  "NewId": 1261908034,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1700951398,
+      "Type": 3,
+      "Value": "TRIGSTR_13184"
+    },
+    {
+      "Id": 1718840934,
+      "Type": 3,
+      "Value": "TRIGSTR_13185"
+    }
+  ]
+}

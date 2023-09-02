@@ -1,0 +1,34 @@
+{
+  "OldId": 1719169089,
+  "NewId": 1431449665,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNRifleman.blp"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "TRIGSTR_8024"
+    },
+    {
+      "Id": 1667329377,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": 1952542049,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\ZigguratMissile\\ZigguratMissile.mdl"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "TRIGSTR_8025"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "OldId": 813127500,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1935764836,
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": 1936289124,
+      "Type": 2,
+      "Value": 0.01
+    },
+    {
+      "Variation": 1,
+      "Id": 828864100,
+      "Value": 200
+    },
+    {
+      "Variation": 1,
+      "Id": 829584996,
+      "Value": 200
+    },
+    {
+      "Id": 1818846820,
+      "Type": 3,
+      "Value": "war3mapImported\\Prop_WaterfallNOSPLASH.mdl"
+    }
+  ]
+}

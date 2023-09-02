@@ -1,0 +1,17 @@
+{
+  "OldId": 1718903154,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1634493289,
+      "Type": 3,
+      "Value": "Permanent"
+    },
+    {
+      "Id": 1819240297,
+      "Value": 250
+    }
+  ]
+}

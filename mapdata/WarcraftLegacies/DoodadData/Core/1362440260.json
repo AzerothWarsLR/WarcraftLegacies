@@ -1,0 +1,38 @@
+{
+  "OldId": 1651265369,
+  "NewId": 1362440260,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1818846820,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Other\\Volcano\\Volcano.mdl"
+    },
+    {
+      "Id": 1935764836,
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": 1835101796,
+      "Type": 3,
+      "Value": "TRIGSTR_1873"
+    },
+    {
+      "Id": 1718121316,
+      "Value": 1
+    },
+    {
+      "Variation": 1,
+      "Id": 828864100,
+      "Value": 155
+    },
+    {
+      "Variation": 1,
+      "Id": 828536420,
+      "Value": 155
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "OldId": 1314149186,
+  "NewId": 858796098,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1835101798,
+      "Type": 3,
+      "Value": "TRIGSTR_13788"
+    },
+    {
+      "Id": 1952543846,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Other\\Monsoon\\MonsoonBoltTarget.mdl"
+    }
+  ]
+}

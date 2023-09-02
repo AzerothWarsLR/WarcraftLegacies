@@ -1,0 +1,19 @@
+{
+  "OldId": 1702316098,
+  "NewId": 1295265858,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1953653094,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNGrunt.blp"
+    },
+    {
+      "Id": 1885959270,
+      "Type": 3,
+      "Value": "TRIGSTR_13421"
+    }
+  ]
+}

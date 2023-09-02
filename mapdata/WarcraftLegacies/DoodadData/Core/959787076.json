@@ -1,0 +1,38 @@
+{
+  "OldId": 2003193946,
+  "NewId": 959787076,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1818846820,
+      "Type": 3,
+      "Value": "Doodads\\Dalaran\\Terrain\\DalaranVioletCitadel\\DalaranVioletCitadel.mdl"
+    },
+    {
+      "Id": 1935764836,
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Id": 1936289124,
+      "Type": 2,
+      "Value": 0.01
+    },
+    {
+      "Id": 1835101796,
+      "Type": 3,
+      "Value": "TRIGSTR_4545"
+    },
+    {
+      "Id": 1918989924,
+      "Value": 1
+    },
+    {
+      "Variation": 1,
+      "Id": 828864100,
+      "Value": 200
+    }
+  ]
+}

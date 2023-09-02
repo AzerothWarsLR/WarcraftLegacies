@@ -1,0 +1,21 @@
+{
+  "OldId": 1685547127,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1819240297,
+      "Value": 30
+    },
+    {
+      "Id": 1635021673,
+      "Value": 9
+    },
+    {
+      "Id": 1634493289,
+      "Type": 3,
+      "Value": "Purchasable"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "OldId": 813126489,
+  "NewId": 1328754756,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1818846820,
+      "Type": 3,
+      "Value": "Doodads\\Ruins\\Terrain\\RuinsWall0\\RuinsWall03.mdl"
+    },
+    {
+      "Id": 1920493156,
+      "Type": 2,
+      "Value": -1
+    },
+    {
+      "Id": 1935764836,
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": 1936289124,
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Id": 1835101796,
+      "Type": 3,
+      "Value": "TRIGSTR_4599"
+    },
+    {
+      "Id": 2020896868,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Variation": 1,
+      "Id": 828536420,
+      "Value": 200
+    },
+    {
+      "Variation": 1,
+      "Id": 828864100,
+      "Value": 200
+    },
+    {
+      "Variation": 1,
+      "Id": 829584996,
+      "Value": 200
+    }
+  ]
+}

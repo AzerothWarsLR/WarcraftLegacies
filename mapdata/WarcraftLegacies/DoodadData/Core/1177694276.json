@@ -1,0 +1,39 @@
+{
+  "OldId": 2019644234,
+  "NewId": 1177694276,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1936289124,
+      "Type": 2,
+      "Value": 0.2
+    },
+    {
+      "Id": 1835101796,
+      "Type": 3,
+      "Value": "TRIGSTR_4641"
+    },
+    {
+      "Id": 2020896868,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Variation": 1,
+      "Id": 828536420,
+      "Value": 100
+    },
+    {
+      "Variation": 1,
+      "Id": 828864100,
+      "Value": 100
+    },
+    {
+      "Variation": 1,
+      "Id": 829584996,
+      "Value": 100
+    }
+  ]
+}

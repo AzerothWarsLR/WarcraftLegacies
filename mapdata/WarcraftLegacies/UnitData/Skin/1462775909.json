@@ -1,0 +1,36 @@
+{
+  "OldId": 1835230309,
+  "NewId": 1462775909,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNEnchantedBears.blp"
+    },
+    {
+      "Id": 1651270517,
+      "Value": 113
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "TRIGSTR_15923"
+    },
+    {
+      "Id": 1735156597,
+      "Value": 222
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "TRIGSTR_3621"
+    },
+    {
+      "Id": 1919705973,
+      "Value": 200
+    }
+  ]
+}

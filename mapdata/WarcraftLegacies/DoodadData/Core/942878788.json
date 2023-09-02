@@ -1,0 +1,28 @@
+{
+  "OldId": 2004045657,
+  "NewId": 942878788,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1718509924,
+      "Value": 1
+    },
+    {
+      "Id": 1818846820,
+      "Type": 3,
+      "Value": "Units\\Creeps\\HeroTinkerFactory\\HeroTinkerFactory.mdl"
+    },
+    {
+      "Id": 1835101796,
+      "Type": 3,
+      "Value": "TRIGSTR_4614"
+    },
+    {
+      "Id": 2020896868,
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "OldId": 1735222382,
+  "NewId": 1161965678,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDemonCrypt.blp"
+    },
+    {
+      "Id": 1651270517,
+      "Value": 175
+    },
+    {
+      "Id": 1651012469,
+      "Type": 3,
+      "Value": "BuildingShadowLarge"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 2
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "TRIGSTR_20078"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\LegionTransporter.mdl"
+    },
+    {
+      "Id": 1735156597,
+      "Value": 175
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "TRIGSTR_5394"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 2
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "TRIGSTR_1800"
+    },
+    {
+      "Id": 1919705973,
+      "Value": 175
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "TRIGSTR_17699"
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "TRIGSTR_20079"
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "Waygate"
+    },
+    {
+      "Id": 828468597,
+      "Type": 2,
+      "Value": 1
+    }
+  ]
+}

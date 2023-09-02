@@ -1,0 +1,49 @@
+{
+  "OldId": 1868918895,
+  "NewId": 1093939311,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "TRIGSTR_2060"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "TRIGSTR_3555"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.64
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "TRIGSTR_1586"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "TRIGSTR_259"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\TrollGathererAlternateV2.mdl"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNIceTrollWitchDoctor.blp"
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "IceTroll"
+    }
+  ]
+}

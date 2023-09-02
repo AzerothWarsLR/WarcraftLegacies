@@ -1,0 +1,184 @@
+{
+  "OldId": 1936872015,
+  "NewId": 1211183172,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1920493156,
+      "Type": 2,
+      "Value": -1
+    },
+    {
+      "Id": 1936289124,
+      "Type": 2,
+      "Value": 0.4
+    },
+    {
+      "Id": 1835101796,
+      "Type": 3,
+      "Value": "TRIGSTR_4675"
+    },
+    {
+      "Id": 2020896868,
+      "Type": 3,
+      "Value": "PathTextures\\4x4Default.tga"
+    },
+    {
+      "Id": 1818850404,
+      "Type": 3,
+      "Value": "D"
+    },
+    {
+      "Variation": 1,
+      "Id": 828536420,
+      "Value": 110
+    },
+    {
+      "Variation": 2,
+      "Id": 828536420,
+      "Value": 110
+    },
+    {
+      "Variation": 3,
+      "Id": 828536420,
+      "Value": 110
+    },
+    {
+      "Variation": 4,
+      "Id": 828536420,
+      "Value": 110
+    },
+    {
+      "Variation": 5,
+      "Id": 828536420,
+      "Value": 110
+    },
+    {
+      "Variation": 6,
+      "Id": 828536420,
+      "Value": 110
+    },
+    {
+      "Variation": 7,
+      "Id": 828536420,
+      "Value": 110
+    },
+    {
+      "Variation": 8,
+      "Id": 828536420,
+      "Value": 110
+    },
+    {
+      "Variation": 9,
+      "Id": 828536420,
+      "Value": 110
+    },
+    {
+      "Variation": 10,
+      "Id": 828536420,
+      "Value": 110
+    },
+    {
+      "Variation": 1,
+      "Id": 828864100,
+      "Value": 110
+    },
+    {
+      "Variation": 2,
+      "Id": 828864100,
+      "Value": 110
+    },
+    {
+      "Variation": 3,
+      "Id": 828864100,
+      "Value": 110
+    },
+    {
+      "Variation": 4,
+      "Id": 828864100,
+      "Value": 110
+    },
+    {
+      "Variation": 5,
+      "Id": 828864100,
+      "Value": 110
+    },
+    {
+      "Variation": 6,
+      "Id": 828864100,
+      "Value": 110
+    },
+    {
+      "Variation": 7,
+      "Id": 828864100,
+      "Value": 110
+    },
+    {
+      "Variation": 8,
+      "Id": 828864100,
+      "Value": 110
+    },
+    {
+      "Variation": 9,
+      "Id": 828864100,
+      "Value": 110
+    },
+    {
+      "Variation": 10,
+      "Id": 828864100,
+      "Value": 110
+    },
+    {
+      "Variation": 1,
+      "Id": 829584996,
+      "Value": 110
+    },
+    {
+      "Variation": 2,
+      "Id": 829584996,
+      "Value": 110
+    },
+    {
+      "Variation": 3,
+      "Id": 829584996,
+      "Value": 110
+    },
+    {
+      "Variation": 4,
+      "Id": 829584996,
+      "Value": 110
+    },
+    {
+      "Variation": 5,
+      "Id": 829584996,
+      "Value": 110
+    },
+    {
+      "Variation": 6,
+      "Id": 829584996,
+      "Value": 110
+    },
+    {
+      "Variation": 7,
+      "Id": 829584996,
+      "Value": 110
+    },
+    {
+      "Variation": 8,
+      "Id": 829584996,
+      "Value": 110
+    },
+    {
+      "Variation": 9,
+      "Id": 829584996,
+      "Value": 110
+    },
+    {
+      "Variation": 10,
+      "Id": 829584996,
+      "Value": 110
+    }
+  ]
+}

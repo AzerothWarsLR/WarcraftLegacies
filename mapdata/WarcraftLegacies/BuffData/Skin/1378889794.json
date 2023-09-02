@@ -1,0 +1,19 @@
+{
+  "OldId": 1651795010,
+  "NewId": 1378889794,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1835101798,
+      "Type": 3,
+      "Value": "TRIGSTR_13733"
+    },
+    {
+      "Id": 1952543846,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Undead\\DarkRitual\\DarkRitualTarget.mdl"
+    }
+  ]
+}
