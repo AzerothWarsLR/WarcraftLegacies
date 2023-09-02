@@ -23,7 +23,6 @@ public class BaseObjectDtoSourceGenerator : ISourceGenerator
 
   public void Execute(GeneratorExecutionContext context)
   {
-    
     // Retrieve the syntax tree for the BaseObject class
     var baseObjectSymbol = context.Compilation.GetTypeByMetadataName(BaseObjectTypeName);
     if (baseObjectSymbol is null)
@@ -45,13 +44,12 @@ public class BaseObjectDtoSourceGenerator : ISourceGenerator
         
         // Generate a DTO class with the same properties
         var dtoClassName = $"{classSymbol.Name}Dto";
-        var properties = classDeclaration.Members.ToArray();
- 
+
         var dtoClass = ClassDeclaration(dtoClassName)
           .WithModifiers(TokenList(
             Token(SyntaxKind.PublicKeyword),
             Token(SyntaxKind.SealedKeyword)))
-          .AddMembers(properties);
+          .AddSimplifiedCopiedProperties(classSymbol);
 
         var dtoNamespace = NamespaceDeclaration(ParseName(OutputNamespace))
           .AddUsings(UsingDirective(ParseName("System")))
@@ -61,5 +59,27 @@ public class BaseObjectDtoSourceGenerator : ISourceGenerator
         context.AddSource($"{dtoClassName}.cs", dtoNamespace.GetText(Encoding.UTF8));
       }
     }
+  }
+}
+
+internal static class RoslynGeneratorExtensions{
+  /// <summary>
+  /// Copies all properties from <paramref name="classSymbol"/>, reduces them down to auto-properties, and adds them
+  /// to <paramref name="classDeclarationSyntax"/>.
+  /// </summary>
+  internal static ClassDeclarationSyntax AddSimplifiedCopiedProperties(this ClassDeclarationSyntax classDeclarationSyntax, INamespaceOrTypeSymbol classSymbol)
+  {
+    return classSymbol.GetMembers()
+      .OfType<IPropertySymbol>()
+      .Select(property => PropertyDeclaration(ParseTypeName(property.Type.ToDisplayString()), property.Name)
+        .WithModifiers(TokenList(Token(SyntaxKind.PublicKeyword)))
+        .WithAccessorList(AccessorList(List(new[]
+        {
+          AccessorDeclaration(SyntaxKind.GetAccessorDeclaration)
+            .WithSemicolonToken(Token(SyntaxKind.SemicolonToken)),
+          AccessorDeclaration(SyntaxKind.SetAccessorDeclaration)
+            .WithSemicolonToken(Token(SyntaxKind.SemicolonToken))
+        }))))
+      .Aggregate(classDeclarationSyntax, (current, propertySyntax) => current.AddMembers(propertySyntax));
   }
 }
