@@ -64,7 +64,7 @@ public sealed class BaseObjectDtoSourceGenerator : ISourceGenerator
       .AddMembers(dtoClass)
       .NormalizeWhitespace();
 
-    context.AddSource($"{dtoClassName}.cs", dtoNamespace.GetText(Encoding.UTF8));
+    context.AddSource($"DataTransferObjects/{dtoClassName}.cs", dtoNamespace.GetText(Encoding.UTF8));
   }
   
   private static void GenerateMapperClass(GeneratorExecutionContext context, SemanticModel semanticModel, ClassDeclarationSyntax classDeclaration, INamedTypeSymbol baseObjectSymbol)
@@ -85,7 +85,7 @@ public sealed class BaseObjectDtoSourceGenerator : ISourceGenerator
       .AddMembers(dtoClass)
       .NormalizeWhitespace();
 
-    context.AddSource($"{mapperClassName}.cs", dtoNamespace.GetText(Encoding.UTF8));
+    context.AddSource($"Mappers/{mapperClassName}.cs", dtoNamespace.GetText(Encoding.UTF8));
   }
 }
 
