@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 7000,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: A0YT (Unleash Frostmourne), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Arthas channels Frostmourne\u0027s full power, periodically firing out bolts of necromantic energy at nearby hostile living, friendly undead, and corpse units. Each bolt has a different effect depending on the type of unit struck:\r\n - Hostile living: Damaged by 140\r\n - Friendly undead: Healed by 70\r\n - Corpse: Reanimated for 70 seconds\r\n\r\nUnleash Frostmourne lasts \u003CA0YT,DataA1\u003E seconds."
+}

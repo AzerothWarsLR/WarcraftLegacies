@@ -1,0 +1,75 @@
+{
+  "OldId": 1650869057,
+  "NewId": 928329793,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768841569,
+      "Type": 3,
+      "Value": "spell"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSoulGem.blp"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "TRIGSTR_7622"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1952542049,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Undead\\OrbOfDeath\\AnnihilationMissile.mdl"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "TRIGSTR_7623"
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNThoriumRanged.blp"
+    },
+    {
+      "Id": 2020635233,
+      "Value": 1
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "TRIGSTR_9090"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "TRIGSTR_6786"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "TRIGSTR_7626"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "TRIGSTR_7627"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "TRIGSTR_7628"
+    }
+  ]
+}

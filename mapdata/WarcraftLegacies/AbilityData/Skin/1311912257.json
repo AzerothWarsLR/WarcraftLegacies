@@ -1,0 +1,85 @@
+{
+  "OldId": 1816741185,
+  "NewId": 1311912257,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "TRIGSTR_20921"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "TRIGSTR_20943"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "TRIGSTR_18760"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "TRIGSTR_20390"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "TRIGSTR_20448"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "TRIGSTR_20612"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "TRIGSTR_20685"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "TRIGSTR_20825"
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "TRIGSTR_20828"
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "TRIGSTR_20830"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "TRIGSTR_20842"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "TRIGSTR_20881"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSpell_Shadow_SummonVoidWalker.blp"
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSpell_Shadow_SummonVoidWalker.blp"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 13410,
+  "KeyPrecision": 5,
+  "Comment": " Buffs/Effects: B04Q (Health Funnel), Buffubertip (Tooltip - Extended)",
+  "Value": "This unit has Health Funnel; it is healing hit points over time."
+}

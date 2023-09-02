@@ -1,0 +1,71 @@
+{
+  "OldId": 1868718453,
+  "NewId": 925905013,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHeroDreadLordB.blp"
+    },
+    {
+      "Id": 1885430133,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651270517,
+      "Value": 150
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "TRIGSTR_1484"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "units\\undead\\HeroDreadLord\\HeroDreadLord.mdl"
+    },
+    {
+      "Id": 1735156597,
+      "Value": 200
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "TRIGSTR_1246"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "TRIGSTR_1486"
+    },
+    {
+      "Id": 1919705973,
+      "Value": 200
+    },
+    {
+      "Id": 1634759541,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "TRIGSTR_1487"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "TRIGSTR_8866"
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "Varimathras"
+    }
+  ]
+}

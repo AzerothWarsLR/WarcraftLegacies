@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 9202,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: A0IE (Battleshout), Researchtip (Tooltip - Learn)",
+  "Value": "Learn Battleshout - [|cffffcc00Level %d|r]"
+}

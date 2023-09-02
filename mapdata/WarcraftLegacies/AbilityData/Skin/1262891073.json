@@ -1,0 +1,82 @@
+{
+  "OldId": 1650740801,
+  "NewId": 1262891073,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "TRIGSTR_9624"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "TRIGSTR_9625"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "TRIGSTR_10954"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "TRIGSTR_9627"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "TRIGSTR_9628"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "TRIGSTR_9629"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "TRIGSTR_9630"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "TRIGSTR_9631"
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "TRIGSTR_9632"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "TRIGSTR_9633"
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "TRIGSTR_9634"
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "TRIGSTR_9635"
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "TRIGSTR_9636"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "OldId": 1700876097,
+  "NewId": 1280323649,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\PASNaturesBlessing2.blp"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 0
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "TRIGSTR_8335"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "TRIGSTR_8336"
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "TRIGSTR_8337"
+    },
+    {
+      "Id": 1952543841,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "TRIGSTR_8338"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "TRIGSTR_15552"
+    }
+  ]
+}

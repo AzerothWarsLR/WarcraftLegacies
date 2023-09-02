@@ -1,0 +1,32 @@
+{
+  "Name": "gg_snd_ThunderClapCaster",
+  "FilePath": "Abilities/Spells/Human/ThunderClap/ThunderClapCaster.flac",
+  "EaxSetting": "SpellsEAX",
+  "Flags": 6,
+  "Volume": 127,
+  "Pitch": 4294967296,
+  "PitchVariance": 0.10000000894069672,
+  "Priority": 8,
+  "Channel": 11,
+  "MinDistance": 600,
+  "MaxDistance": 3500,
+  "DistanceCutoff": 4294967296,
+  "ConeAngleInside": 4294967296,
+  "ConeAngleOutside": 4294967296,
+  "ConeOutsideVolume": -1,
+  "ConeOrientation": {
+    "X": 4.2949673E+09,
+    "Y": 4.2949673E+09,
+    "Z": 4.2949673E+09
+  },
+  "SoundName": "ThunderClap",
+  "DialogueTextKey": -1,
+  "Unk2": "",
+  "DialogueSpeakerNameKey": -1,
+  "Unk6": "",
+  "Unk7": "",
+  "FacialAnimationLabel": "",
+  "FacialAnimationGroupLabel": "",
+  "FacialAnimationSetFilepath": "",
+  "Unk11": 1
+}

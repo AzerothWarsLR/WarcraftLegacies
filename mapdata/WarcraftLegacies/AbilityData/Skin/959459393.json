@@ -1,0 +1,51 @@
+{
+  "OldId": 1718511937,
+  "NewId": 959459393,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "TRIGSTR_12954"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "TRIGSTR_15326"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "TRIGSTR_11583"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "TRIGSTR_12956"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "TRIGSTR_12958"
+    },
+    {
+      "Id": 1802007905,
+      "Type": 3,
+      "Value": "TRIGSTR_15523"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\ATCRuneOfShielding.blp"
+    },
+    {
+      "Id": 1918989665,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\ATCRuneOfShielding.blp"
+    }
+  ]
+}

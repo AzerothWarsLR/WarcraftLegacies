@@ -1,0 +1,110 @@
+{
+  "OldId": 1936933697,
+  "NewId": 1482108993,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 2020631137,
+      "Value": 0
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "TRIGSTR_18761"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "TRIGSTR_17710"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "TRIGSTR_18763"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "TRIGSTR_14395"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "TRIGSTR_18765"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "TRIGSTR_18766"
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "TRIGSTR_18767"
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "TRIGSTR_14711"
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "TRIGSTR_15629"
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "TRIGSTR_16128"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNCurseofflame.blp"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "TRIGSTR_17486"
+    },
+    {
+      "Id": 1952542049,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\FireBallMissile\\FireBallMissile.mdl"
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNCurseofflame.blp"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "TRIGSTR_17789"
+    },
+    {
+      "Id": 2020635233,
+      "Value": 0
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "TRIGSTR_18931"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "TRIGSTR_18963"
+    }
+  ]
+}

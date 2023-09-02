@@ -1,0 +1,97 @@
+{
+  "OldId": 930300737,
+  "NewId": 859189313,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSpiritOfVengeance.blp"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "TRIGSTR_6200"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "TRIGSTR_12492"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "TRIGSTR_11631"
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSpiritOfVengeance.blp"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "TRIGSTR_12494"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "TRIGSTR_11633"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "TRIGSTR_11634"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "TRIGSTR_11635"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "TRIGSTR_11636"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "TRIGSTR_11637"
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "TRIGSTR_11638"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "TRIGSTR_11639"
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "TRIGSTR_11640"
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "TRIGSTR_11641"
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "TRIGSTR_11642"
+    }
+  ]
+}

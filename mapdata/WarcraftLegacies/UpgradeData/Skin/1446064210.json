@@ -1,0 +1,109 @@
+{
+  "OldId": 1953720402,
+  "NewId": 1446064210,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 829579623,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBarkskin.blp"
+    },
+    {
+      "Level": 2,
+      "Id": 829579623,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDH_Holy_Shields.blp"
+    },
+    {
+      "Id": 2020631143,
+      "Value": 2
+    },
+    {
+      "Level": 1,
+      "Id": 1718840935,
+      "Type": 3,
+      "Value": "TRIGSTR_3235"
+    },
+    {
+      "Level": 1,
+      "Id": 829122663,
+      "Type": 3,
+      "Value": "TRIGSTR_16113"
+    },
+    {
+      "Level": 2,
+      "Id": 829122663,
+      "Type": 3,
+      "Value": "TRIGSTR_16115"
+    },
+    {
+      "Level": 1,
+      "Id": 1835101799,
+      "Type": 3,
+      "Value": "TRIGSTR_14756"
+    },
+    {
+      "Level": 2,
+      "Id": 1835101799,
+      "Type": 3,
+      "Value": "TRIGSTR_14757"
+    },
+    {
+      "Level": 1,
+      "Id": 829453415,
+      "Type": 3,
+      "Value": "TRIGSTR_14758"
+    },
+    {
+      "Level": 2,
+      "Id": 829453415,
+      "Type": 3,
+      "Value": "TRIGSTR_14759"
+    },
+    {
+      "Level": 1,
+      "Id": 828536167,
+      "Type": 3,
+      "Value": "TRIGSTR_20747"
+    },
+    {
+      "Level": 2,
+      "Id": 828536167,
+      "Type": 3,
+      "Value": "TRIGSTR_14761"
+    },
+    {
+      "Level": 3,
+      "Id": 828536167,
+      "Type": 3,
+      "Value": "TRIGSTR_21087"
+    },
+    {
+      "Level": 3,
+      "Id": 829453415,
+      "Type": 3,
+      "Value": "TRIGSTR_21088"
+    },
+    {
+      "Level": 3,
+      "Id": 1835101799,
+      "Type": 3,
+      "Value": "TRIGSTR_21089"
+    },
+    {
+      "Level": 3,
+      "Id": 829122663,
+      "Type": 3,
+      "Value": "TRIGSTR_16153"
+    },
+    {
+      "Level": 3,
+      "Id": 829579623,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDH_Holy_Shields.blp"
+    }
+  ]
+}

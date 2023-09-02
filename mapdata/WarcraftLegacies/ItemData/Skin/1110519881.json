@@ -1,0 +1,42 @@
+{
+  "OldId": 1886876787,
+  "NewId": 1110519881,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1868786025,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNWandOfCyclone.blp"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 1
+    },
+    {
+      "Id": 2037408373,
+      "Value": 0
+    },
+    {
+      "Id": 1936024681,
+      "Type": 3,
+      "Value": "TRIGSTR_4240"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "TRIGSTR_4241"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "TRIGSTR_4242"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "TRIGSTR_4243"
+    }
+  ]
+}

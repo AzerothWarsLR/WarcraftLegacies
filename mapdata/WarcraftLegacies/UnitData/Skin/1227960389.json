@@ -1,0 +1,99 @@
+{
+  "OldId": 1852138309,
+  "NewId": 1227960389,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBOSSVelen.blp"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "TRIGSTR_3580"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "TRIGSTR_4927"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "TRIGSTR_17847"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "TRIGSTR_4230"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "TRIGSTR_17849"
+    },
+    {
+      "Id": 1869770869,
+      "Type": 3,
+      "Value": "TRIGSTR_17850"
+    },
+    {
+      "Id": 1919972469,
+      "Type": 3,
+      "Value": "TRIGSTR_17851"
+    },
+    {
+      "Id": 1953980789,
+      "Type": 3,
+      "Value": "TRIGSTR_17852"
+    },
+    {
+      "Id": 1769173877,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBOSSVelen.blp"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\Prophet_Velen.mdl"
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 1.5
+    },
+    {
+      "Id": 1751675765,
+      "Type": 1,
+      "Value": 180
+    },
+    {
+      "Id": 2003334005,
+      "Type": 1,
+      "Value": 180
+    },
+    {
+      "Id": 2036888437,
+      "Type": 1,
+      "Value": 66
+    },
+    {
+      "Id": 2020111221,
+      "Type": 1,
+      "Value": 66
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\WitchDoctorMissile\\WitchDoctorMissile.mdl"
+    }
+  ]
+}

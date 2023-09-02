@@ -1,0 +1,64 @@
+{
+  "OldId": 1919046465,
+  "NewId": 1228025924,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 2020896868,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1818850404,
+      "Type": 3,
+      "Value": "Y,X,J"
+    },
+    {
+      "Variation": 1,
+      "Id": 828536420,
+      "Value": 100
+    },
+    {
+      "Variation": 2,
+      "Id": 828536420,
+      "Value": 100
+    },
+    {
+      "Variation": 3,
+      "Id": 828536420,
+      "Value": 100
+    },
+    {
+      "Variation": 1,
+      "Id": 828864100,
+      "Value": 100
+    },
+    {
+      "Variation": 2,
+      "Id": 828864100,
+      "Value": 100
+    },
+    {
+      "Variation": 3,
+      "Id": 828864100,
+      "Value": 100
+    },
+    {
+      "Variation": 1,
+      "Id": 829584996,
+      "Value": 100
+    },
+    {
+      "Variation": 2,
+      "Id": 829584996,
+      "Value": 100
+    },
+    {
+      "Variation": 3,
+      "Id": 829584996,
+      "Value": 100
+    }
+  ]
+}

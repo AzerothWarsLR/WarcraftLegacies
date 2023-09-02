@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 4861,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: Arsw (Serpent Ward), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Summons immobile serpentine wards to attack the caster\u0027s enemies. The wards are immune to magic. |nLasts \u003CArsw,Dur1\u003E seconds. |n|n|cffffcc00Attacks land and air units.|r |n|n|cffffcc00Level 1|r - \u003CArsw,DataA1\u003E wards, \u003Cosp1,realHP\u003E hit points, \u003Cosp1,mindmg1\u003E - \u003Cosp1,maxdmg1\u003E damage. |n|cffffcc00Level 2|r - \u003CArsw,DataA2\u003E wards, \u003Cosp2,realHP\u003E hit points, \u003Cosp2,mindmg1\u003E - \u003Cosp2,maxdmg1\u003E damage. |n|cffffcc00Level 3|r - \u003CArsw,DataA3\u003E wards, \u003Cosp3,realHP\u003E hit points, \u003Cosp3,mindmg1\u003E - \u003Cosp3,maxdmg1\u003E damage. |n|cffffcc00Level 4|r - \u003CArsw,DataA4\u003E wards, \u003Cosp4,realHP\u003E hit points, \u003Cosp4,mindmg1\u003E - \u003Cosp4,maxdmg1\u003E damage."
+}

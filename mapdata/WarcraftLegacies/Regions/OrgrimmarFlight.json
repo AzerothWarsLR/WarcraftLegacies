@@ -1,0 +1,15 @@
+{
+  "Left": -9728,
+  "Bottom": -800,
+  "Right": -9568,
+  "Top": -640,
+  "Name": "OrgrimmarFlight",
+  "CreationNumber": 164,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

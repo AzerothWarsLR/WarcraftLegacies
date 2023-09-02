@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 1068,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: Arsp (Frost Storm), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Call a Frost storm, throwing ice missiles to your enemies. |n|n|cffffcc00Level 1|r -  Each missile deals 10 damage. |n|cffffcc00Level 2|r -  Each missile deals 15 damage. |n|cffffcc00Level 3|r -  Each missile deals 20 damage. |n|nLasts 30 seconds."
+}

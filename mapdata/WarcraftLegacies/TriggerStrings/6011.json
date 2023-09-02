@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 6011,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: AHfa (Searing Arrows), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Adds \u003CAHfa,DataA5\u003E bonus fire damage to an attack against enemies, but drains mana with each shot fired."
+}

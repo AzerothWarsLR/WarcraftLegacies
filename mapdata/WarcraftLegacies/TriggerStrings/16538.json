@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 16538,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A0RA (Overclock), Researchtip (Tooltip - Learn)",
+  "Value": "Learn Overclock - [|cffffcc00Level %d|r]"
+}

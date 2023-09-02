@@ -1,0 +1,45 @@
+{
+  "OldId": 1936286785,
+  "NewId": 1163210817,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "TRIGSTR_13001"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "TRIGSTR_18527"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "TRIGSTR_21367"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 2
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "TRIGSTR_21336"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "TRIGSTR_21337"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNNecromancy.blp"
+    }
+  ]
+}

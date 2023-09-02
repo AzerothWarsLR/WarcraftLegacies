@@ -1,0 +1,54 @@
+{
+  "OldId": 1667591797,
+  "NewId": 1378955381,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "TRIGSTR_3635"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "TRIGSTR_4156"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.6
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "TRIGSTR_17490"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "TRIGSTR_16408"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "TRIGSTR_16409"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNAcolyte.blp"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\Forsaken_Apothecary.mdl"
+    },
+    {
+      "Id": 1953850229,
+      "Type": 3,
+      "Value": "TRIGSTR_221"
+    }
+  ]
+}

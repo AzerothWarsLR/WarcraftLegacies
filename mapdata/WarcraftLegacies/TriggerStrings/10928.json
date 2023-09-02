@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 10928,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A093 (Frost Bite), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "The Lich King\u0027s attacks completely freeze enemy units stopping them from moving or attacking, and dealing damage to them while frozen. Duration is only 10% effective on heroes.|n|n|cffffcc00Level 1|r - Lasts 2 seconds on units, dealing 20 damage per second. |n|cffffcc00Level 2|r - Lasts 3 seconds on units, dealing 30 damage per second. |n|cffffcc00Level 3|r - Lasts 4 seconds on units, dealing 40 damage per second. |n|cffffcc00Level 4|r - Lasts 5 seconds on units, dealing 50 damage per second."
+}

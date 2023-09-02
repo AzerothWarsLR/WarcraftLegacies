@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 13033,
+  "KeyPrecision": 5,
+  "Comment": " Buffs/Effects: Binv (), Buffubertip (Tooltip - Extended)",
+  "Value": "This unit is invisible; enemy units cannot see it. If it attacks or casts a spell it will become visible."
+}

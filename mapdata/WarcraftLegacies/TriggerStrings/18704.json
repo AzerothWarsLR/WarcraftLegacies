@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 18704,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A0WV (Attribute Bonus), Researchtip (Tooltip - Learn)",
+  "Value": "Learn Attribute Bonus - [|cffffcc00Level %d|r]"
+}

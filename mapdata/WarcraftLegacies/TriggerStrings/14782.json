@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 14782,
+  "KeyPrecision": 5,
+  "Comment": " Upgrades: R01P (Ensnare), Ubertip (Tooltip - Extended)",
+  "Value": "Allows Huntsmen to use Ensnare, which causes a target enemy unit to be bound to the ground so that it cannot move for \u003CA0F3,Dur1\u003E seconds. Air units that are ensnared can be attacked as though they were land units."
+}

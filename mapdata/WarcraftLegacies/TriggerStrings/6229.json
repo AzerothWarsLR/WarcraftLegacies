@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 6229,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: AEar (Trueshot Aura), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "An aura that gives friendly nearby units a \u003CAEar,DataA4,%\u003E% bonus damage to their ranged attacks."
+}

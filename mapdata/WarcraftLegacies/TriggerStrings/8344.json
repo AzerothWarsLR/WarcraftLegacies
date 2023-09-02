@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 8344,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: A069 (Weighted Spear), Researchtip (Tooltip - Learn)",
+  "Value": "Learn Aimed Shot - [|cffffcc00Level %d|r]"
+}

@@ -1,0 +1,41 @@
+{
+  "OldId": 845243969,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "TRIGSTR_5108"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "TRIGSTR_6413"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "TRIGSTR_5110"
+    },
+    {
+      "Id": 1802007905,
+      "Type": 3,
+      "Value": "TRIGSTR_6428"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 1
+    },
+    {
+      "Id": 2037408353,
+      "Value": 1
+    },
+    {
+      "Id": 2036495713,
+      "Value": 0
+    }
+  ]
+}

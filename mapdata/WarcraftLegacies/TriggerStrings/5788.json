@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 5788,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: ANdr (Nullify), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Absorbs the life essence of a target enemy unit by taking hit points from it every second and giving them to the Hero. |nLasts \u003CANdr,Dur1\u003E seconds. |n|n|cffffcc00Level 1|r - \u003CANdr,DataA1\u003E hit point drain per second. |n|cffffcc00Level 2|r - \u003CANdr,DataA2\u003E hit point drain per second. |n|cffffcc00Level 3|r - \u003CANdr,DataA3\u003E hit point drain per second. |n|cffffcc00Level 4|r - \u003CANdr,DataA4\u003E hit point drain per second.|n|cffffcc00Level 5|r - \u003CANdr,DataA5\u003E hit point drain per second."
+}

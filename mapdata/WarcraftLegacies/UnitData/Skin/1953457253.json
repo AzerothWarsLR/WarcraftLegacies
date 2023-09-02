@@ -1,0 +1,42 @@
+{
+  "OldId": 1953457253,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 2020631157,
+      "Value": 0
+    },
+    {
+      "Id": 1953850229,
+      "Type": 3,
+      "Value": "TRIGSTR_15766"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "TRIGSTR_1109"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "TRIGSTR_1033"
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\ProcMissile\\ProcMissile.mdl"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "TRIGSTR_18025"
+    }
+  ]
+}

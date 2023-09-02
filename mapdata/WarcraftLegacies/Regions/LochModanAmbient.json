@@ -1,0 +1,14 @@
+{
+  "Left": 14432,
+  "Bottom": -7552,
+  "Right": 17888,
+  "Top": -4032,
+  "Name": "LochModanAmbient",
+  "CreationNumber": 311,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 255,
+    "B": 255
+  }
+}

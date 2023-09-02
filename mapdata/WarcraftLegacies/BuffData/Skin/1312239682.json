@@ -1,0 +1,29 @@
+{
+  "OldId": 1700876098,
+  "NewId": 1312239682,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1953653094,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNOrbOfCorruption.blp"
+    },
+    {
+      "Id": 1885959270,
+      "Type": 3,
+      "Value": "TRIGSTR_13179"
+    },
+    {
+      "Id": 1700951398,
+      "Type": 3,
+      "Value": "TRIGSTR_13180"
+    },
+    {
+      "Id": 1952543846,
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

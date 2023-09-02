@@ -1,0 +1,63 @@
+{
+  "OldId": 1852138597,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNGoldMine.blp"
+    },
+    {
+      "Id": 1651012469,
+      "Type": 3,
+      "Value": "ShadowHuntersHall"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "TRIGSTR_1128"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "DenOfWonders.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "TRIGSTR_1380"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.95
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "TRIGSTR_1130"
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 3
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "TRIGSTR_1131"
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "TRIGSTR_1132"
+    }
+  ]
+}

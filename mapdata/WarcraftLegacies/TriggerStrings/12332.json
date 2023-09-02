@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 12332,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A032 (Arcane Bombardment), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Bombards an area with arcane missiles, dealing up to 500 damage to nearby enemy land units and stunning them for 1 seconds."
+}

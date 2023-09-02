@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 16988,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A078 (Holy Shackles), Researchtip (Tooltip - Learn)",
+  "Value": "Learn Holy Shackles - [|cffffcc00Level %d|r]"
+}

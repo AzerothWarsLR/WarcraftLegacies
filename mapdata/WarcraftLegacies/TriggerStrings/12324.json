@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 12324,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A032 (Arcane Bombardment), Researchtip (Tooltip - Learn)",
+  "Value": "Learn Arcane Bombardment - [|cffffcc00Level %d|r]"
+}

@@ -1,0 +1,44 @@
+{
+  "OldId": 1752394818,
+  "NewId": 1345597506,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1953653094,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNCharm.blp"
+    },
+    {
+      "Id": 1885959270,
+      "Type": 3,
+      "Value": "TRIGSTR_13412"
+    },
+    {
+      "Id": 1700951398,
+      "Type": 3,
+      "Value": "TRIGSTR_13413"
+    },
+    {
+      "Id": 1835101798,
+      "Type": 3,
+      "Value": "TRIGSTR_13414"
+    },
+    {
+      "Id": 1952543590,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Undead\\DeathandDecay\\DeathandDecayTarget.mdl"
+    },
+    {
+      "Id": 1952543846,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Items\\AIso\\BIsvTarget.mdl"
+    },
+    {
+      "Id": 811693158,
+      "Type": 3,
+      "Value": "chest"
+    }
+  ]
+}

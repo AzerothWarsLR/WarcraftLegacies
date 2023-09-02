@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 6220,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: AEbl (Blink), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Short distance teleportation that allows the Hero to move in and out of combat. |n|n|cffffcc00Level 1|r - \u003CAEbl,Cool1\u003E second cooldown, \u003CAEbl,Cost1\u003E mana. |n|cffffcc00Level 2|r - \u003CAEbl,Cool2\u003E second cooldown, \u003CAEbl,Cost2\u003E mana. |n|cffffcc00Level 3|r - \u003CAEbl,Cool3\u003E second cooldown, \u003CAEbl,Cost3\u003E mana.  |n|cffffcc00Level 4|r - \u003CAEbl,Cool4\u003E second cooldown, \u003CAEbl,Cost4\u003E mana."
+}

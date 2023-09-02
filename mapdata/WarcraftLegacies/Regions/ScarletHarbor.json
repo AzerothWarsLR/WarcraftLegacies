@@ -1,0 +1,15 @@
+{
+  "Left": -9728,
+  "Bottom": 21984,
+  "Right": -7872,
+  "Top": 23648,
+  "Name": "ScarletHarbor",
+  "CreationNumber": 491,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

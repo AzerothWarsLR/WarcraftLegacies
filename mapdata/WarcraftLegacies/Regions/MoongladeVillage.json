@@ -1,0 +1,15 @@
+{
+  "Left": -14688,
+  "Bottom": 10048,
+  "Right": -12288,
+  "Top": 12192,
+  "Name": "MoongladeVillage",
+  "CreationNumber": 242,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

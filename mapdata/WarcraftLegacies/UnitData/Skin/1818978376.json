@@ -1,0 +1,57 @@
+{
+  "OldId": 1818978376,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\GennGreymane.mdl"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.95
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNGreymane.blp"
+    },
+    {
+      "Id": 1869770869,
+      "Type": 3,
+      "Value": "TRIGSTR_15760"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "TRIGSTR_15761"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "TRIGSTR_13874"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "TRIGSTR_16602"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "TRIGSTR_17050"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 2
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "TRIGSTR_1140"
+    }
+  ]
+}

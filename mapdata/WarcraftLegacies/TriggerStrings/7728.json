@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 7728,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: A0TV (Feedback), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Akama attacks destroy \u003CAfbt,DataA1\u003E mana per hit against any unit, causing bonus damage equal to the mana destroyed.|n|nAdditionally, attacks made by Akama cause \u003CAfbt,DataE1\u003E bonus damage against summoned units."
+}

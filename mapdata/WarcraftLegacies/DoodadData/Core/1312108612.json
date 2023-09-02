@@ -1,0 +1,54 @@
+{
+  "OldId": 1920356186,
+  "NewId": 1312108612,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1818846820,
+      "Type": 3,
+      "Value": "Doodads\\Ruins\\Props\\Ruins_NagaCircle\\Ruins_NagaCircle.mdl"
+    },
+    {
+      "Id": 1935764836,
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Id": 1936289124,
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Id": 1835101796,
+      "Type": 3,
+      "Value": "TRIGSTR_4532"
+    },
+    {
+      "Id": 2020896868,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1818850404,
+      "Type": 3,
+      "Value": "Z"
+    },
+    {
+      "Variation": 1,
+      "Id": 828536420,
+      "Value": 110
+    },
+    {
+      "Variation": 1,
+      "Id": 828864100,
+      "Value": 50
+    },
+    {
+      "Variation": 1,
+      "Id": 829584996,
+      "Value": 70
+    }
+  ]
+}

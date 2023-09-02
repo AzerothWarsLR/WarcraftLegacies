@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 15209,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A0GP (Scattershot), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Fires a cannonball at every enemy unit in the target area, dealing \u003CA0GL,DataA1\u003E damage and stunning each target for \u003CA0GL,Dur1\u003E seconds."
+}

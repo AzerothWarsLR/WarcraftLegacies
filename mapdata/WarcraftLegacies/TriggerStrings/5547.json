@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 5547,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: AOeq (Earthquake), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Makes the ground tremble and break, causing 50 damage per second to buildings and slowing units by 75% within the area of effect. |nLasts \u003CAOeq,Dur1\u003E seconds. |n|n|cffff0000Note: Using this ability will badly lag the game. Use with caution.|r"
+}

@@ -1,0 +1,14 @@
+{
+  "Left": -17856,
+  "Bottom": 384,
+  "Right": -9856,
+  "Top": 9152,
+  "Name": "AshenvaleAmbient",
+  "CreationNumber": 244,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 255,
+    "B": 255
+  }
+}

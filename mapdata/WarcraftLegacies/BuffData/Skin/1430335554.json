@@ -1,0 +1,29 @@
+{
+  "OldId": 1986086978,
+  "NewId": 1430335554,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1700951398,
+      "Type": 3,
+      "Value": "TRIGSTR_17528"
+    },
+    {
+      "Id": 1885959270,
+      "Type": 3,
+      "Value": "TRIGSTR_17592"
+    },
+    {
+      "Id": 1718840934,
+      "Type": 3,
+      "Value": "TRIGSTR_17593"
+    },
+    {
+      "Id": 1953653094,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHellscreamBerserk.blp"
+    }
+  ]
+}

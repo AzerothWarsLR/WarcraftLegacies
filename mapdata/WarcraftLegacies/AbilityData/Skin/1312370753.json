@@ -1,0 +1,19 @@
+{
+  "OldId": 1734963265,
+  "NewId": 1312370753,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBlueImmolationOff.blp"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "TRIGSTR_10820"
+    }
+  ]
+}

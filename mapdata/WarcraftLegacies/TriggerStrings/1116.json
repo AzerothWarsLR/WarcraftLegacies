@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 1116,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: A0VX (Elune\u0027s Gaze), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Turns target unit and every allied unit in a 350 area of effect invisible. If an invisible unit attacks, uses an ability or casts a spell, it will become visible. |nLasts 60 seconds."
+}

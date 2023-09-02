@@ -1,0 +1,67 @@
+{
+  "OldId": 845312072,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\Genn Worgen.mdl"
+    },
+    {
+      "Id": 1869770869,
+      "Type": 3,
+      "Value": "TRIGSTR_3854"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "TRIGSTR_15758"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.25
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 1.8
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "TRIGSTR_15015"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "TRIGSTR_16642"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "TRIGSTR_16665"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "TRIGSTR_1137"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 1
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures/CommandButtons/BTNWorgenHunt.blp"
+    },
+    {
+      "Id": 1769173877,
+      "Type": 3,
+      "Value": "ReplaceableTextures/CommandButtons/BTNWorgenHunt.blp"
+    }
+  ]
+}

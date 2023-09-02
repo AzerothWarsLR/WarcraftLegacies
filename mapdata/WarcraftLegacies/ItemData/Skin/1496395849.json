@@ -1,0 +1,34 @@
+{
+  "OldId": 1818850163,
+  "NewId": 1496395849,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1868786025,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHelmofdomination.blp"
+    },
+    {
+      "Id": 1936024681,
+      "Type": 3,
+      "Value": "TRIGSTR_4196"
+    },
+    {
+      "Id": 1818846825,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Undead\\DeathCoil\\DeathCoilMissile.mdl"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "TRIGSTR_4197"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "TRIGSTR_4198"
+    }
+  ]
+}

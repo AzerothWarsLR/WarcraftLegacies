@@ -1,0 +1,57 @@
+{
+  "OldId": 1735618158,
+  "NewId": 1094201454,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 2020631157,
+      "Value": 0
+    },
+    {
+      "Id": 2037408373,
+      "Value": 1
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "TRIGSTR_16456"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "TRIGSTR_3116"
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "TRIGSTR_16593"
+    },
+    {
+      "Id": 1651012469,
+      "Type": 3,
+      "Value": "ShadowOrcBarracks"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\Arabian town hall.mdl"
+    },
+    {
+      "Id": 1768841589,
+      "Type": 3,
+      "Value": "upgrade,second"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTN_Tolvir_Barracks.blp"
+    }
+  ]
+}

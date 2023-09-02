@@ -50,10 +50,8 @@ namespace MacroTools.ObjectiveSystem.Objectives.LegendBased
       TriggerRegisterEnterRegion(_entersRectTrig.Trigger, target, null);
       TriggerAddAction(_entersRectTrig.Trigger, OnRegionEnter);
       DisplaysPosition = true;
+      Position = new(GetRectCenterX(_targetRect), GetRectCenterY(_targetRect));
     }
-
-    /// <inheritdoc/>
-    public override Point Position => new(GetRectCenterX(_targetRect), GetRectCenterY(_targetRect));
     
     private void OnRegionEnter()
     {

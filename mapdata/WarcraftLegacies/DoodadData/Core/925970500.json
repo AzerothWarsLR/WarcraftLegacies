@@ -1,0 +1,69 @@
+{
+  "OldId": 1651659598,
+  "NewId": 925970500,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1818846820,
+      "Type": 3,
+      "Value": "Doodads\\Icecrown\\Terrain\\IceCrownWall0\\IceCrownWall02.mdl"
+    },
+    {
+      "Id": 1835101796,
+      "Type": 3,
+      "Value": "TRIGSTR_4685"
+    },
+    {
+      "Id": 2020896868,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Variation": 1,
+      "Id": 828536420,
+      "Value": 100
+    },
+    {
+      "Variation": 2,
+      "Id": 828536420,
+      "Value": 100
+    },
+    {
+      "Variation": 3,
+      "Id": 828536420,
+      "Value": 100
+    },
+    {
+      "Variation": 1,
+      "Id": 828864100,
+      "Value": 100
+    },
+    {
+      "Variation": 2,
+      "Id": 828864100,
+      "Value": 100
+    },
+    {
+      "Variation": 3,
+      "Id": 828864100,
+      "Value": 100
+    },
+    {
+      "Variation": 1,
+      "Id": 829584996,
+      "Value": 100
+    },
+    {
+      "Variation": 2,
+      "Id": 829584996,
+      "Value": 100
+    },
+    {
+      "Variation": 3,
+      "Id": 829584996,
+      "Value": 100
+    }
+  ]
+}

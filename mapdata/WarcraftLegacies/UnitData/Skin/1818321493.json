@@ -1,0 +1,62 @@
+{
+  "OldId": 1818321493,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHeroDreadLord.blp"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "TRIGSTR_1195"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "units\\undead\\HeroDreadLord\\HeroDreadLord.mdl"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "TRIGSTR_1197"
+    },
+    {
+      "Id": 1869770869,
+      "Type": 3,
+      "Value": "TRIGSTR_056"
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 1.5
+    },
+    {
+      "Id": 1953980789,
+      "Type": 3,
+      "Value": "TRIGSTR_3515"
+    },
+    {
+      "Id": 1919972469,
+      "Type": 3,
+      "Value": "TRIGSTR_3792"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "TRIGSTR_17729"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "TRIGSTR_3850"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 2
+    }
+  ]
+}

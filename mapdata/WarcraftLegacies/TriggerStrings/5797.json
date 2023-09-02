@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 5797,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: ANdo (Doom), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Marks a target unit for the manifestation of a Demon. The afflicted unit cannot cast spells and will take \u003CANdo,DataA1\u003E damage per second until it dies. Upon its death, 1 Elite Doom Guard will spawn from its corpse. Doom cannot be dispelled or cancelled."
+}

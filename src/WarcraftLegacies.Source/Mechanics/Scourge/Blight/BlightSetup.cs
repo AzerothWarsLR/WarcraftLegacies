@@ -7,7 +7,15 @@ namespace WarcraftLegacies.Source.Mechanics.Scourge.Blight
   {
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
-      BlightSystem.Register(preplacedUnitSystem.GetUnit(Constants.UNIT_HTOW_TOWN_HALL_LORDAERON_T1, Regions.Andorhal.Center),
+      SetupA(preplacedUnitSystem);
+      SetupB(preplacedUnitSystem);
+      SetupC(preplacedUnitSystem);
+    }
+
+    private static void SetupA(PreplacedUnitSystem preplacedUnitSystem)
+    {
+      BlightSystem.Register(
+        preplacedUnitSystem.GetUnit(Constants.UNIT_HTOW_TOWN_HALL_LORDAERON_T1, Regions.Andorhal.Center),
         new BlightParameters
         {
           PrimaryBlightRadius = 512,
@@ -35,7 +43,8 @@ namespace WarcraftLegacies.Source.Mechanics.Scourge.Blight
           RandomBlightRectangle = Regions.Darrowshire
         });
 
-      BlightSystem.Register(preplacedUnitSystem.GetUnit(Constants.UNIT_HHOU_FARM_LORDAERON_FARM, Regions.Terrordale.Center),
+      BlightSystem.Register(
+        preplacedUnitSystem.GetUnit(Constants.UNIT_HHOU_FARM_LORDAERON_FARM, Regions.Terrordale.Center),
         new BlightParameters
         {
           PrimaryBlightRadius = 512,
@@ -62,7 +71,10 @@ namespace WarcraftLegacies.Source.Mechanics.Scourge.Blight
           RandomBlightRadius = 200,
           RandomBlightRectangle = Regions.Brill
         });
+    }
 
+    private static void SetupB(PreplacedUnitSystem preplacedUnitSystem)
+    {
       BlightSystem.Register(
         preplacedUnitSystem.GetUnit(Constants.UNIT_H00I_WINDMILL_LORDAERON_OTHER, Regions.Vandermar_Village.Center),
         new BlightParameters
@@ -83,19 +95,22 @@ namespace WarcraftLegacies.Source.Mechanics.Scourge.Blight
           RandomBlightRectangle = Regions.Solliden_Farmstead
         });
 
-      BlightSystem.Register(preplacedUnitSystem.GetUnit(Constants.UNIT_HHOU_FARM_LORDAERON_FARM, new Point(11323, 9032)),
+      BlightSystem.Register(
+        preplacedUnitSystem.GetUnit(Constants.UNIT_HHOU_FARM_LORDAERON_FARM, new Point(11323, 9032)),
         new BlightParameters
         {
           PrimaryBlightRadius = 250
         });
 
-      BlightSystem.Register(preplacedUnitSystem.GetUnit(Constants.UNIT_HHOU_FARM_LORDAERON_FARM, new Point(11323, 9032)),
+      BlightSystem.Register(
+        preplacedUnitSystem.GetUnit(Constants.UNIT_HHOU_FARM_LORDAERON_FARM, new Point(11323, 9032)),
         new BlightParameters
         {
           PrimaryBlightRadius = 250
         });
 
-      BlightSystem.Register(preplacedUnitSystem.GetUnit(Constants.UNIT_HHOU_FARM_LORDAERON_FARM, new Point(11911, 9620)),
+      BlightSystem.Register(
+        preplacedUnitSystem.GetUnit(Constants.UNIT_HHOU_FARM_LORDAERON_FARM, new Point(11911, 9620)),
         new BlightParameters
         {
           PrimaryBlightRadius = 250
@@ -108,7 +123,8 @@ namespace WarcraftLegacies.Source.Mechanics.Scourge.Blight
           PrimaryBlightRadius = 300
         });
 
-      BlightSystem.Register(preplacedUnitSystem.GetUnit(Constants.UNIT_HHOU_FARM_LORDAERON_FARM, new Point(10417, 10194)),
+      BlightSystem.Register(
+        preplacedUnitSystem.GetUnit(Constants.UNIT_HHOU_FARM_LORDAERON_FARM, new Point(10417, 10194)),
         new BlightParameters
         {
           PrimaryBlightRadius = 250
@@ -119,8 +135,12 @@ namespace WarcraftLegacies.Source.Mechanics.Scourge.Blight
         {
           PrimaryBlightRadius = 400
         });
+    }
 
-      BlightSystem.Register(preplacedUnitSystem.GetUnit(Constants.UNIT_HHOU_FARM_LORDAERON_FARM, new Point(11307, 9735)),
+    private static void SetupC(PreplacedUnitSystem preplacedUnitSystem)
+    {
+      BlightSystem.Register(
+        preplacedUnitSystem.GetUnit(Constants.UNIT_HHOU_FARM_LORDAERON_FARM, new Point(11307, 9735)),
         new BlightParameters
         {
           PrimaryBlightRadius = 250
@@ -133,7 +153,8 @@ namespace WarcraftLegacies.Source.Mechanics.Scourge.Blight
           PrimaryBlightRadius = 300
         });
 
-      BlightSystem.Register(preplacedUnitSystem.GetUnit(Constants.UNIT_HHOU_FARM_LORDAERON_FARM, new Point(15485, 9804)),
+      BlightSystem.Register(
+        preplacedUnitSystem.GetUnit(Constants.UNIT_HHOU_FARM_LORDAERON_FARM, new Point(15485, 9804)),
         new BlightParameters
         {
           PrimaryBlightRadius = 250
@@ -146,7 +167,8 @@ namespace WarcraftLegacies.Source.Mechanics.Scourge.Blight
           PrimaryBlightRadius = 300
         });
 
-      BlightSystem.Register(preplacedUnitSystem.GetUnit(Constants.UNIT_HHOU_FARM_LORDAERON_FARM, new Point(17188, 10583)),
+      BlightSystem.Register(
+        preplacedUnitSystem.GetUnit(Constants.UNIT_HHOU_FARM_LORDAERON_FARM, new Point(17188, 10583)),
         new BlightParameters
         {
           PrimaryBlightRadius = 250

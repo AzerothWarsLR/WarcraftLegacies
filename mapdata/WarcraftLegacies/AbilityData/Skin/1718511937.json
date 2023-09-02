@@ -1,0 +1,35 @@
+{
+  "OldId": 1718511937,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "TRIGSTR_5026"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "TRIGSTR_7255"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "TRIGSTR_5028"
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "TRIGSTR_5029"
+    },
+    {
+      "Id": 1802007905,
+      "Type": 3,
+      "Value": "TRIGSTR_7280"
+    }
+  ]
+}

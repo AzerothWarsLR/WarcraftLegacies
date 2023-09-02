@@ -1,0 +1,15 @@
+{
+  "Left": 2112,
+  "Bottom": -31584,
+  "Right": 6496,
+  "Top": -28288,
+  "Name": "BlackTempleBase",
+  "CreationNumber": 74,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

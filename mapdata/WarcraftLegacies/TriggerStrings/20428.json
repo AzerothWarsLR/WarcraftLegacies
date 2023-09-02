@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 20428,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A000 (Glimpse), Researchtip (Tooltip - Learn)",
+  "Value": "Learn Glimpse - [|cffffcc00Level %d|r]"
+}

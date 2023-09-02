@@ -1,0 +1,15 @@
+{
+  "Left": 3296,
+  "Bottom": 22784,
+  "Right": 4480,
+  "Top": 23776,
+  "Name": "ForsakenStartPos",
+  "CreationNumber": 161,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

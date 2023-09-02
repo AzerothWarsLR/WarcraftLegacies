@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 10540,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A0BD (Moving Earth), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Damages enemy units in its area of effect by 4% of its base hit points per second. Also destroys trees. |nLasts 30 seconds."
+}

@@ -1,0 +1,109 @@
+{
+  "OldId": 1851877458,
+  "NewId": 1328754770,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 829579623,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNMage 01.blp"
+    },
+    {
+      "Level": 1,
+      "Id": 1718840935,
+      "Type": 3,
+      "Value": "TRIGSTR_1524"
+    },
+    {
+      "Level": 1,
+      "Id": 829122663,
+      "Type": 3,
+      "Value": "TRIGSTR_21119"
+    },
+    {
+      "Level": 1,
+      "Id": 1835101799,
+      "Type": 3,
+      "Value": "TRIGSTR_15007"
+    },
+    {
+      "Level": 1,
+      "Id": 829453415,
+      "Type": 3,
+      "Value": "TRIGSTR_15046"
+    },
+    {
+      "Level": 1,
+      "Id": 828536167,
+      "Type": 3,
+      "Value": "TRIGSTR_15520"
+    },
+    {
+      "Level": 2,
+      "Id": 829453415,
+      "Type": 3,
+      "Value": "TRIGSTR_15274"
+    },
+    {
+      "Level": 3,
+      "Id": 829453415,
+      "Type": 3,
+      "Value": "TRIGSTR_15429"
+    },
+    {
+      "Level": 2,
+      "Id": 828536167,
+      "Type": 3,
+      "Value": "TRIGSTR_15521"
+    },
+    {
+      "Level": 3,
+      "Id": 828536167,
+      "Type": 3,
+      "Value": "TRIGSTR_15522"
+    },
+    {
+      "Level": 2,
+      "Id": 1835101799,
+      "Type": 3,
+      "Value": "TRIGSTR_15343"
+    },
+    {
+      "Level": 3,
+      "Id": 1835101799,
+      "Type": 3,
+      "Value": "TRIGSTR_15372"
+    },
+    {
+      "Level": 2,
+      "Id": 829122663,
+      "Type": 3,
+      "Value": "TRIGSTR_21307"
+    },
+    {
+      "Level": 3,
+      "Id": 829122663,
+      "Type": 3,
+      "Value": "TRIGSTR_21308"
+    },
+    {
+      "Level": 2,
+      "Id": 829579623,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNMage 02.blp"
+    },
+    {
+      "Level": 3,
+      "Id": 829579623,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNMage 03.blp"
+    },
+    {
+      "Id": 2037408359,
+      "Value": 0
+    }
+  ]
+}

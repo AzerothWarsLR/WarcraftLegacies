@@ -1,0 +1,28 @@
+{
+  "OldId": 1651265369,
+  "NewId": 858992708,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1818846820,
+      "Type": 3,
+      "Value": "war3mapImported\\UrugarthVenomFissure.mdl"
+    },
+    {
+      "Id": 1935764836,
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": 1835101796,
+      "Type": 3,
+      "Value": "TRIGSTR_4619"
+    },
+    {
+      "Id": 1718121316,
+      "Value": 1
+    }
+  ]
+}

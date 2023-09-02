@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 11838,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A0VC (Viral Plague), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Corrupt the target blood with a nasty plague. The afflicted target cannot cast spells and will take damage per second. Upon its death, an Elite Abomination will spawn from its corpse. Corrupt Blood cannot be dispelled or cancelled.\r\nLasts 8 seconds on heroes and indefinitely on units.\r\n |n|cffffcc00Level 1|r - 40 damage per second and 2 Elite Abominations summoned.|n|cffffcc00Level 2|r - 70 damage per second and 4 Elite Abominations summoned. |n|cffffcc00Level 3|r - 100 damage per second and 6 Elite Abominations"
+}

@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 12886,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A0UQ (Curse of the Worgen), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Curse a target with a bite from the worgen. The afflicted unit cannot cast spells and take 30 damage per second for 20 seconds (2 on heroes). If the unit dies while under the curse, it will transform into a wolf. This curse cannot be dispelled."
+}

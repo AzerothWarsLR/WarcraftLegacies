@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 11964,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A04M (The Power of Frostmourne), Researchtip (Tooltip - Learn)",
+  "Value": "Learn |cffffcc00T|rhe Power of Frostmourne - [|cffffcc00Level %d|r]"
+}

@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 7286,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: A0X2 (Soul Transfer), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Transfers 50 life and 80 mana per second to a target allied units. Lasts up to 20 seconds. Can also cast on an enemy unit to steal 50 mana per seconds."
+}

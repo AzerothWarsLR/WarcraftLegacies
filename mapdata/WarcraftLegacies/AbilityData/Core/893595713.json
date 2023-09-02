@@ -1,0 +1,37 @@
+{
+  "OldId": 1953319233,
+  "NewId": 893595713,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": 846490952,
+      "Type": 2,
+      "Value": 6
+    },
+    {
+      "Id": 1702127969,
+      "Value": 0
+    },
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Level": 1,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "allies,ground,invulnerable,neutral,nonsapper,player,structure,vulnerable"
+    }
+  ]
+}

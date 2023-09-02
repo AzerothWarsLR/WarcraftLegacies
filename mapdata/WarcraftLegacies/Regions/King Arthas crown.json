@@ -1,0 +1,15 @@
+{
+  "Left": 8896,
+  "Bottom": 8320,
+  "Right": 9280,
+  "Top": 8512,
+  "Name": "King Arthas crown",
+  "CreationNumber": 130,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 2039,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: A07Z (Lightbringer\u0027s Strength), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Increases this units damage, armor, and hitpoint regeneration for a limited duration.|n|cffffcc00|nLevel 1|r - Grants \u003CA07Z,DataA1,%\u003E% damage, \u003CA07Z,DataB1\u003E armor, and \u003CA07Z,DataC1\u003E hit point regeneration for \u003CA07Z,HeroDur1\u003E seconds.|n|cffffcc00Level 2|r - Grants \u003CA07Z,DataA2,%\u003E% damage, \u003CA07Z,DataB2\u003E armor, and \u003CA07Z,DataC2\u003E hit point regeneration for \u003CA07Z,HeroDur2\u003E seconds.|n|cffffcc00Level 3|r - Grants \u003CA07Z,DataA3,%\u003E% damage, \u003CA07Z,DataB3\u003E armor, and \u003CA07Z,DataC3\u003E hit point regeneration for \u003CA07Z,HeroDur3\u003E seconds.|n|cffffcc00Level 4|r - Grants \u003CA07Z,DataA4,%\u003E% damage, \u003CA07Z,DataB4\u003E armor, and \u003CA07Z,DataC4\u003E hit point regeneration for \u003CA07Z,HeroDur4\u003E seconds."
+}

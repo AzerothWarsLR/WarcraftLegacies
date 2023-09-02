@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 15711,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A02W (Mass Unholy Frenzy), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "All non-mechanical units in the target area gain Unholy Frenzy, increasing attack rate by 40% but draining them of 2 hit points per second. |nLasts 45 seconds."
+}

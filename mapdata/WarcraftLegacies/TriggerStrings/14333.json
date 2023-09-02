@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 14333,
+  "KeyPrecision": 5,
+  "Comment": " Upgrades: R04V (Magic Sentry), Ubertip (Tooltip - Extended)",
+  "Value": "Improves Frost Wyrms\u0027 Hypothermic Breath by increasing its initial damage to \u003CA058,DataA2\u003E and damage per second to \u003CA058,DataE2\u003E."
+}

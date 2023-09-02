@@ -1,0 +1,15 @@
+{
+  "Left": 16384,
+  "Bottom": 16288,
+  "Right": 20096,
+  "Top": 17568,
+  "Name": "Quel Ships 1",
+  "CreationNumber": 83,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

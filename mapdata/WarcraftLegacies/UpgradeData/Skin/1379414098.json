@@ -1,0 +1,119 @@
+{
+  "OldId": 1918986322,
+  "NewId": 1379414098,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 829579623,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNNecroMagus.blp"
+    },
+    {
+      "Level": 2,
+      "Id": 829579623,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNArcaniteArchitecture.blp"
+    },
+    {
+      "Level": 3,
+      "Id": 829579623,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNArcaniteArchitecture.blp"
+    },
+    {
+      "Id": 2020631143,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": 1718840935,
+      "Type": 3,
+      "Value": "TRIGSTR_20702"
+    },
+    {
+      "Level": 1,
+      "Id": 829122663,
+      "Type": 3,
+      "Value": "TRIGSTR_20771"
+    },
+    {
+      "Level": 2,
+      "Id": 829122663,
+      "Type": 3,
+      "Value": "TRIGSTR_18919"
+    },
+    {
+      "Level": 3,
+      "Id": 829122663,
+      "Type": 3,
+      "Value": "TRIGSTR_18920"
+    },
+    {
+      "Level": 1,
+      "Id": 1835101799,
+      "Type": 3,
+      "Value": "TRIGSTR_19000"
+    },
+    {
+      "Level": 2,
+      "Id": 1835101799,
+      "Type": 3,
+      "Value": "TRIGSTR_18195"
+    },
+    {
+      "Level": 3,
+      "Id": 1835101799,
+      "Type": 3,
+      "Value": "TRIGSTR_18196"
+    },
+    {
+      "Level": 1,
+      "Id": 829453415,
+      "Type": 3,
+      "Value": "TRIGSTR_19003"
+    },
+    {
+      "Level": 2,
+      "Id": 829453415,
+      "Type": 3,
+      "Value": "TRIGSTR_18198"
+    },
+    {
+      "Level": 3,
+      "Id": 829453415,
+      "Type": 3,
+      "Value": "TRIGSTR_18199"
+    },
+    {
+      "Level": 1,
+      "Id": 828536167,
+      "Type": 3,
+      "Value": "TRIGSTR_19006"
+    },
+    {
+      "Level": 2,
+      "Id": 828536167,
+      "Type": 3,
+      "Value": "TRIGSTR_18201"
+    },
+    {
+      "Level": 3,
+      "Id": 828536167,
+      "Type": 3,
+      "Value": "TRIGSTR_18202"
+    },
+    {
+      "Level": 4,
+      "Id": 829122663,
+      "Type": 3,
+      "Value": "TRIGSTR_18928"
+    },
+    {
+      "Id": 2037408359,
+      "Value": 2
+    }
+  ]
+}

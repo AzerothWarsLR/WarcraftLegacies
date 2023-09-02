@@ -1,0 +1,68 @@
+{
+  "OldId": 1885698670,
+  "NewId": 944058478,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "war3mapImported\\Psionic Shot Green.mdl"
+    },
+    {
+      "Id": 1832018293,
+      "Type": 3,
+      "Value": "war3mapImported\\Psionic Shot Green.mdl"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 1
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "TRIGSTR_20826"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "TRIGSTR_20909"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "TRIGSTR_5935"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "TRIGSTR_20910"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNNarwhall1.blp"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\BloodElf_Skyship_Test.mdl"
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "InfernalMachine"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.8
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "TRIGSTR_10180"
+    }
+  ]
+}

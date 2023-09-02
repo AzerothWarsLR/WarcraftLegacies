@@ -1,0 +1,33 @@
+{
+  "OldId": 1651467365,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "TRIGSTR_714"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "TRIGSTR_1121"
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "TRIGSTR_17881"
+    }
+  ]
+}

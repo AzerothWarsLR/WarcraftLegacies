@@ -1,0 +1,38 @@
+{
+  "OldId": 2004045657,
+  "NewId": 1177759812,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1718509924,
+      "Value": 1
+    },
+    {
+      "Id": 1818846820,
+      "Type": 3,
+      "Value": "buildings\\orc\\WatchTower\\WatchTower.mdl"
+    },
+    {
+      "Id": 1935764836,
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Id": 1936289124,
+      "Type": 2,
+      "Value": 0.01
+    },
+    {
+      "Id": 1835101796,
+      "Type": 3,
+      "Value": "TRIGSTR_4607"
+    },
+    {
+      "Id": 2020896868,
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

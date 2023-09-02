@@ -1,0 +1,16 @@
+{
+  "Left": -1088,
+  "Bottom": 21088,
+  "Right": 4640,
+  "Top": 25088,
+  "Name": "Storm Peaks",
+  "CreationNumber": 98,
+  "WeatherType": 1936215635,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 192,
+    "G": 192,
+    "B": 192
+  }
+}

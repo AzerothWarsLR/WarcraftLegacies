@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 4827,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: Aslo (Slow), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Slows a target enemy unit\u0027s attack speed by \u003CAslo,DataB2,%\u003E% and movement speed by \u003CAslo,DataA2,%\u003E%. |n|cffffcc00Lasts \u003CAslo,Dur2\u003E(\u003CAslo,HeroDur2\u003E for Heros) seconds."
+}

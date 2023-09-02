@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 12759,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A017 (Take Vengeance), Researchtip (Tooltip - Learn)",
+  "Value": "Learn Take Vengeance - [|cffffcc00Level %d|r]"
+}

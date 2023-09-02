@@ -1,0 +1,61 @@
+{
+  "OldId": 2004121448,
+  "NewId": 1228222568,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1651270517,
+      "Value": 245
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "TRIGSTR_1343"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "Doodads\\Dalaran\\Terrain\\DalaranBuilding\\DalaranBuilding1.mdl"
+    },
+    {
+      "Id": 1735156597,
+      "Value": 235
+    },
+    {
+      "Id": 828468597,
+      "Type": 2,
+      "Value": 0.15
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\GuardTowerMissile\\GuardTowerMissile.mdl"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.84
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "TRIGSTR_2931"
+    },
+    {
+      "Id": 1919705973,
+      "Value": 211
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 2
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

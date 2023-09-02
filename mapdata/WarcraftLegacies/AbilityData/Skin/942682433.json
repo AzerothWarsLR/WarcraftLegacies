@@ -1,0 +1,76 @@
+{
+  "OldId": 1936215617,
+  "NewId": 942682433,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHumanMissileUpTwo.blp"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "TRIGSTR_7362"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "TRIGSTR_18467"
+    },
+    {
+      "Id": 1952542049,
+      "Type": 3,
+      "Value": "war3mapImported\\LowQualityCannonball.mdx"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "TRIGSTR_19554"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "TRIGSTR_18483"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "TRIGSTR_19555"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "TRIGSTR_19556"
+    },
+    {
+      "Id": 1952543585,
+      "Type": 3,
+      "Value": "war3mapImported\\LowQualityCannonball.mdx"
+    },
+    {
+      "Id": 1952543841,
+      "Type": 3,
+      "Value": "war3mapImported\\LowQualityCannonball.mdx"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "TRIGSTR_19557"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "TRIGSTR_20289"
+    },
+    {
+      "Id": 1667329377,
+      "Type": 2,
+      "Value": 0
+    }
+  ]
+}

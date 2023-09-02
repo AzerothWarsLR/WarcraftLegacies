@@ -1,0 +1,15 @@
+{
+  "Left": 3776,
+  "Bottom": -11136,
+  "Right": 4096,
+  "Top": -10912,
+  "Name": "KulAttack",
+  "CreationNumber": 382,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

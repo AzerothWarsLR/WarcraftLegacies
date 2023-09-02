@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 19252,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A0ZG (Blood Absorption), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "When this hero attacks, it will regain a portion of the damage dealt as mana. |n|n|cffffcc00Level 1|r - 50% of the damage gained as mana. |n|cffffcc00Level 2|r - 75% of the damage gained as mana.|n|cffffcc00Level 3|r - 100% of the damage gained as mana.|n|cffffcc00Level 4|r - 125% of the damage gained as mana."
+}

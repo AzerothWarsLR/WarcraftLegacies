@@ -1,0 +1,15 @@
+{
+  "Left": 8736,
+  "Bottom": 6432,
+  "Right": 8896,
+  "Top": 6624,
+  "Name": "IllidanDalaExit",
+  "CreationNumber": 354,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

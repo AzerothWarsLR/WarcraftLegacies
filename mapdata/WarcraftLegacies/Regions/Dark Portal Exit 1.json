@@ -1,0 +1,14 @@
+{
+  "Left": 4096,
+  "Bottom": -25120,
+  "Right": 4448,
+  "Top": -24672,
+  "Name": "Dark Portal Exit 1",
+  "CreationNumber": 25,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 255,
+    "B": 255
+  }
+}

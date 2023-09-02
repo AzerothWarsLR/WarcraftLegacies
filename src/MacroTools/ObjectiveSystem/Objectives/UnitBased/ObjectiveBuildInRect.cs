@@ -17,9 +17,6 @@ namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
     private int _currentBuildCount;
     private readonly int _targetBuildCount;
     private readonly string _areaName;
-
-    /// <inheritdoc />
-    public override Point Position => _targetRect.Center;
     
     private int CurrentBuildCount
     {
@@ -56,6 +53,8 @@ namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
         if (_currentBuildCount == _targetBuildCount) 
           Progress = QuestProgress.Complete;
       }, objectId);
+      
+      Position = _targetRect.Center;
     }
   }
 }

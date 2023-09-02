@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 13748,
+  "KeyPrecision": 5,
+  "Comment": " Buffs/Effects: B00L (Medical Expertise), Buffubertip (Tooltip - Extended)",
+  "Value": "This unit is under the effects of Medical Expertise; it has an increased hit point regeneration."
+}

@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 15625,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A05E (Holy Aura), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Increases the movement speed and life regeneration rate of nearby friendly units. |n|n|cffffcc00Level 1|r - 3% movement, 1 hit point regeneration. |n|cffffcc00Level 2|r - 6% movement, 1.4 hit point regeneration. |n|cffffcc00Level 3|r - 9% movement, 1.8 hit point regeneration. |n|cffffcc00Level 4|r - 12% movement, 2.2 hit point regeneration."
+}

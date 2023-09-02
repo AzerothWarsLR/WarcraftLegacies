@@ -1,0 +1,24 @@
+{
+  "OldId": 1700876098,
+  "NewId": 1144008770,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1953653094,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSpell_Holy_SealOfWrath.blp"
+    },
+    {
+      "Id": 1885959270,
+      "Type": 3,
+      "Value": "TRIGSTR_13202"
+    },
+    {
+      "Id": 1952543846,
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 9529,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: A0CA (Blight Aura), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Increases the hit point regeneration of friendly units within a range of \u003CA0CA,Area1\u003E by \u003CA0CA,DataB1\u003E."
+}

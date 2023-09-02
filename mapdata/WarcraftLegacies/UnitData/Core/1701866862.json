@@ -1,0 +1,57 @@
+{
+  "OldId": 1701866862,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1684824693,
+      "Value": 2
+    },
+    {
+      "Id": 1769300597,
+      "Type": 3,
+      "Value": "e020,n08H,n08W,nmrb,nnad,nnfm,nnsa,nnsg,nntt,nntg,h06S,n0A3,e01P,e01S,e01T,e01U,e01V,h0AD,n0CU,n09I,n0D5"
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": 1819240309,
+      "Value": 15
+    },
+    {
+      "Id": 1919903605,
+      "Value": 7
+    },
+    {
+      "Id": 1920298101,
+      "Value": 25
+    },
+    {
+      "Id": 1836348021,
+      "Value": 2
+    },
+    {
+      "Id": 1937141109,
+      "Value": 170
+    },
+    {
+      "Id": 1887007861,
+      "Type": 3,
+      "Value": "peon,sapper"
+    },
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "Arlm,ANha,Arep"
+    },
+    {
+      "Id": 1953918325,
+      "Type": 3,
+      "Value": "foot"
+    }
+  ]
+}

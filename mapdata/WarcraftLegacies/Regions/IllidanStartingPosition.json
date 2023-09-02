@@ -1,0 +1,15 @@
+{
+  "Left": -640,
+  "Bottom": 5152,
+  "Right": 1536,
+  "Top": 6720,
+  "Name": "IllidanStartingPosition",
+  "CreationNumber": 5,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

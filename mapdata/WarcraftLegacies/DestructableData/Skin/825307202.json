@@ -1,0 +1,19 @@
+{
+  "OldId": 1650873433,
+  "NewId": 825307202,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1835101794,
+      "Type": 3,
+      "Value": "TRIGSTR_4424"
+    },
+    {
+      "Id": 2020896866,
+      "Type": 3,
+      "Value": "PathTextures\\12x12Unflyable.tga"
+    }
+  ]
+}

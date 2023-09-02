@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 9842,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: A0ED (Heal), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Heals a target friendly non-mechanical wounded unit for 25 hit points."
+}

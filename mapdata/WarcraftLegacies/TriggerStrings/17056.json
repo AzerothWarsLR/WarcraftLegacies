@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 17056,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: ANeg (Engineering Upgrade), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Enhances the other Gazlowee abilities with each level learned:|n|n|cffffcc00Cluster Rockets|r - Larger Area.|n|cffffcc00Pocket Factory|r - Builds Clockwerk Goblins more quickly.|n|nAlso gives bonus damage and increases the Tinker\u0027s movement speed.|n|n|cffffcc00Level 1|r - \u002B\u003CANeg,DataB1\u003E damage, \u002B\u003CANeg,DataA1,%\u003E% movement.|n|cffffcc00Level 2|r - \u002B\u003CANeg,DataB2\u003E damage, \u002B\u003CANeg,DataA2,%\u003E% movement.|n|cffffcc00Level 3|r - \u002B\u003CANeg,DataB3\u003E damage, \u002B\u003CANeg,DataA3,%\u003E% movement.|n|cffffcc00Level 4|r - \u002B9 damage, \u002B40% movement."
+}

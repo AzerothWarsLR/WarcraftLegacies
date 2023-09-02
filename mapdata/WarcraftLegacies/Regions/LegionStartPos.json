@@ -1,0 +1,15 @@
+{
+  "Left": 18528,
+  "Bottom": -31232,
+  "Right": 19456,
+  "Top": -30304,
+  "Name": "LegionStartPos",
+  "CreationNumber": 162,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

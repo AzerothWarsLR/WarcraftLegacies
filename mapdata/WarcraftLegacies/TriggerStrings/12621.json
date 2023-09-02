@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 12621,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A01R (Shockwave), Researchtip (Tooltip - Learn)",
+  "Value": "Learn Shockwave - [|cffffcc00Level %d|r]"
+}

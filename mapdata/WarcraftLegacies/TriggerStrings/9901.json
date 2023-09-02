@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 9901,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: A0DZ (Warsong Offensive), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Increases the damage of friendly units within a range of \u003CA0DZ,Area1\u003E by \u003CA0DZ,DataA1,%\u003E%."
+}

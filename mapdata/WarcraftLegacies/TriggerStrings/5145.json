@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 5145,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: Adtn (Detonate), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Destroys the Wisp, dispelling all magical buffs and draining \u003CAdtn,DataA2\u003E mana from each unit in an area around the Wisp. |n|cffffcc00Deals \u003CAdtn,DataB2\u003E damage to summoned units.|r"
+}

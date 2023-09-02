@@ -1,0 +1,34 @@
+{
+  "OldId": 1986544449,
+  "NewId": 894316609,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "TRIGSTR_20934"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "TRIGSTR_14437"
+    },
+    {
+      "Id": 1952543841,
+      "Type": 3,
+      "Value": "war3mapImported\\Effect_HealingWave.mdx"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "TRIGSTR_19182"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 1
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 5483,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: AOsf (Feral Spirit), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Summons 3 Spirit Wolf companions that have Critical Strike. Each wolf has \u003Cosw2,realHP\u003E hit points and deals \u003Cosw2,mindmg1\u003E - \u003Cosw2,maxdmg1\u003E damage. |nLasts \u003CAOsf,Dur2\u003E seconds. |n|n|cffffcc00Attacks land units.|r"
+}

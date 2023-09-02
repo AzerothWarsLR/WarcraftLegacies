@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 10927,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A093 (Frost Bite), Researchtip (Tooltip - Learn)",
+  "Value": "Learn Frost Bite - [|cffffcc00Level %d|r]"
+}

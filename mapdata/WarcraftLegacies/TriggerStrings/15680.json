@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 15680,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A0A5 (To the Wind!), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Increases this unit\u0027s movemnt speed by \u003CA0A5,DataA1,%\u003E% for \u003CA0A5,Dur1\u003E seconds."
+}

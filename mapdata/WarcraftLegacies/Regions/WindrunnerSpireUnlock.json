@@ -1,0 +1,15 @@
+{
+  "Left": 16416,
+  "Bottom": 13888,
+  "Right": 16640,
+  "Top": 14176,
+  "Name": "WindrunnerSpireUnlock",
+  "CreationNumber": 126,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

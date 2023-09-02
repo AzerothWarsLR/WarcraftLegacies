@@ -1,0 +1,15 @@
+{
+  "Left": -3520,
+  "Bottom": 20224,
+  "Right": -3136,
+  "Top": 20704,
+  "Name": "LichKing",
+  "CreationNumber": 62,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

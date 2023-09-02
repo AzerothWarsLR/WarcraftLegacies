@@ -38,10 +38,9 @@ namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
           if (GetUnitState(_objectiveUnit, UNIT_STATE_LIFE) == GetUnitState(_objectiveUnit, UNIT_STATE_MAX_LIFE))
             Progress = QuestProgress.Complete;
         });
+      
+      Position = new(GetUnitX(_objectiveUnit), GetUnitY(_objectiveUnit));
     }
-
-    /// <inheritdoc/>
-    public override Point Position => new(GetUnitX(_objectiveUnit), GetUnitY(_objectiveUnit));
 
     internal override void OnAdd(FactionSystem.Faction faction)
     {

@@ -1,0 +1,18 @@
+{
+  "OldId": 1684097090,
+  "NewId": 1160785986,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1717986662,
+      "Value": 1
+    },
+    {
+      "Id": 1667330662,
+      "Type": 3,
+      "Value": "nightelf"
+    }
+  ]
+}

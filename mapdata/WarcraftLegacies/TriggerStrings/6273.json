@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 6273,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: ACss (), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Hurls a poisoned dagger with incredible force at an enemy, dealing 75 initial damage, and 15 damage every \u003CACss,Cast1\u003E seconds for \u003CACss,Dur1\u003E seconds. The poison slows attack rate and movement speed by 50%. Lasts 12(3) seconds."
+}

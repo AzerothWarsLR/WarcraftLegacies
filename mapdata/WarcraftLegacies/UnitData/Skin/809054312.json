@@ -1,0 +1,58 @@
+{
+  "OldId": 1752458088,
+  "NewId": 809054312,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 2020631157,
+      "Value": 3
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "TRIGSTR_16537"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "TRIGSTR_4337"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "TRIGSTR_3757"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "TRIGSTR_3980"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "TRIGSTR_3983"
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "GoblinSapper"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\HeroGoblinPrinceGuard01.mdl"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNGoblinAlch.blp"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.75
+    }
+  ]
+}

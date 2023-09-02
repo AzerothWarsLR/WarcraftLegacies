@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 10034,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A0DK (Shadow Missile), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "A Shadow Ball is thrown at an enemy unit, dealing \u003CANsb,DataA2\u003E damage and stunning the target for .1 seconds."
+}

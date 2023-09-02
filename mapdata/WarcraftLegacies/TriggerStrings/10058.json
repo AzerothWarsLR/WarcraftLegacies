@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 10058,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A0DG (Mass Simulacrum), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Creates a summoned copy of all friendly units in the target area. Each summoned unit has 30% reduced hit points and attack damage. Lasts 30 seconds."
+}

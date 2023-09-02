@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 9885,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: A0E2 (Evasion), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Gives a percent chance to avoid attacks. |n|n|cffffcc00Level 1|r - \u003CAEev,DataA1,%\u003E% chance that an opponent misses. |n|cffffcc00Level 2|r - \u003CAEev,DataA2,%\u003E% chance that an opponent misses. |n|cffffcc00Level 3|r - \u003CAEev,DataA3,%\u003E% chance that an opponent misses. |n|cffffcc00Level 3|r - 36% chance that an opponent misses. |n|cffffcc00Level 5|r - 42% chance that an opponent misses."
+}

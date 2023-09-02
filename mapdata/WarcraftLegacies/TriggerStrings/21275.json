@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 21275,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A0N8 (Citadel Shield), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Channel the Citadel Shield for up to 30 seconds. It will deal 20 damage per second in a 600 area of effect. It will also buff friendly units and buildings in the area giving them 4 additional armor. Has a 120 seconds cooldown and 2 seconds casting time."
+}

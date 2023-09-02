@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 8212,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: A0PK (Aimed Shot), Researchtip (Tooltip - Learn)",
+  "Value": "Learn Aimed Shot - [|cffffcc00Level %d|r]"
+}

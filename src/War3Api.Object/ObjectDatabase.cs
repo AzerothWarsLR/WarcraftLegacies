@@ -280,7 +280,7 @@ namespace War3Api.Object
             }
         }
 
-        public ObjectData GetAllData(ObjectDataFormatVersion formatVersion = ObjectDataFormatVersion.Normal)
+        public ObjectData GetAllData(ObjectDataFormatVersion formatVersion = ObjectDataFormatVersion.v3)
         {
             var units = GetUnits().Select(unit => (SimpleObjectModification)unit);
             var items = GetItems().Select(item => (SimpleObjectModification)item);
@@ -292,37 +292,37 @@ namespace War3Api.Object
 
             return new ObjectData(formatVersion)
             {
-                UnitData = units.Any() ? new MapUnitObjectData(formatVersion)
+                UnitData = units.Any() ? new UnitObjectData(formatVersion)
                 {
                     BaseUnits = units.Where(unit => unit.NewId == 0).ToList(),
                     NewUnits = units.Where(unit => unit.NewId != 0).ToList(),
                 } : null,
-                ItemData = items.Any() ? new MapItemObjectData(formatVersion)
+                ItemData = items.Any() ? new ItemObjectData(formatVersion)
                 {
                     BaseItems = items.Where(item => item.NewId == 0).ToList(),
                     NewItems = items.Where(item => item.NewId != 0).ToList(),
                 } : null,
-                DestructableData = destructables.Any() ? new MapDestructableObjectData(formatVersion)
+                DestructableData = destructables.Any() ? new DestructableObjectData(formatVersion)
                 {
                     BaseDestructables = destructables.Where(destructable => destructable.NewId == 0).ToList(),
                     NewDestructables = destructables.Where(destructable => destructable.NewId != 0).ToList(),
                 } : null,
-                DoodadData = doodads.Any() ? new MapDoodadObjectData(formatVersion)
+                DoodadData = doodads.Any() ? new DoodadObjectData(formatVersion)
                 {
                     BaseDoodads = doodads.Where(doodad => doodad.NewId == 0).ToList(),
                     NewDoodads = doodads.Where(doodad => doodad.NewId != 0).ToList(),
                 } : null,
-                AbilityData = abilities.Any() ? new MapAbilityObjectData(formatVersion)
+                AbilityData = abilities.Any() ? new AbilityObjectData(formatVersion)
                 {
                     BaseAbilities = abilities.Where(ability => ability.NewId == 0).ToList(),
                     NewAbilities = abilities.Where(ability => ability.NewId != 0).ToList(),
                 } : null,
-                BuffData = buffs.Any() ? new MapBuffObjectData(formatVersion)
+                BuffData = buffs.Any() ? new BuffObjectData(formatVersion)
                 {
                     BaseBuffs = buffs.Where(buff => buff.NewId == 0).ToList(),
                     NewBuffs = buffs.Where(buff => buff.NewId != 0).ToList(),
                 } : null,
-                UpgradeData = upgrades.Any() ? new MapUpgradeObjectData(formatVersion)
+                UpgradeData = upgrades.Any() ? new UpgradeObjectData(formatVersion)
                 {
                     BaseUpgrades = upgrades.Where(upgrade => upgrade.NewId == 0).ToList(),
                     NewUpgrades = upgrades.Where(upgrade => upgrade.NewId != 0).ToList(),

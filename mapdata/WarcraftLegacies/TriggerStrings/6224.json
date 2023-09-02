@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 6224,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: A0LI (Spell Mastery), Researchtip (Tooltip - Learn)",
+  "Value": "Learn Spell Mastery - [|cffffcc00Level %d|r]"
+}

@@ -1,0 +1,14 @@
+{
+  "Left": 16000,
+  "Bottom": -4192,
+  "Right": 18336,
+  "Top": -2048,
+  "Name": "Grim Batol",
+  "CreationNumber": 47,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 255,
+    "G": 255
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "OldId": 828655937,
+  "NewId": 1212559425,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "TRIGSTR_9622"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "TRIGSTR_9647"
+    },
+    {
+      "Id": 1952543841,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Items\\AIlb\\AIlbTarget.mdl"
+    },
+    {
+      "Id": 811693153,
+      "Type": 3,
+      "Value": "hand,right"
+    },
+    {
+      "Id": 1667331169,
+      "Value": 1
+    }
+  ]
+}

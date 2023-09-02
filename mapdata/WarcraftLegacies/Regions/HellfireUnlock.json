@@ -1,0 +1,15 @@
+{
+  "Left": -128,
+  "Bottom": -27488,
+  "Right": 2368,
+  "Top": -24736,
+  "Name": "HellfireUnlock",
+  "CreationNumber": 379,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

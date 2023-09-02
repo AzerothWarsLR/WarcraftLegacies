@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 5630,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: ANsb (Shadow Ball), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "A Shadow Ball is thrown at an enemy unit, causing damage and stunning the target. |n|n|cffffcc00Level 1|r - \u003CANsb,DataA1\u003E damage, \u003CANsb,Dur1\u003E second stun. |n|cffffcc00Level 2|r - \u003CANsb,DataA2\u003E damage, \u003CANsb,Dur2\u003E second stun. |n|cffffcc00Level 3|r - \u003CANsb,DataA3\u003E damage, \u003CANsb,Dur3\u003E second stun. |n|cffffcc00Level 4|r - \u003CANsb,DataA4\u003E damage, \u003CANsb,Dur4\u003E second stun."
+}

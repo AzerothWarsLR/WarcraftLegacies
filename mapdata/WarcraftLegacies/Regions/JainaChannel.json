@@ -1,0 +1,15 @@
+{
+  "Left": -9888,
+  "Bottom": 17632,
+  "Right": -9792,
+  "Top": 17728,
+  "Name": "JainaChannel",
+  "CreationNumber": 453,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

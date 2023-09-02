@@ -1,0 +1,43 @@
+{
+  "OldId": 1668566852,
+  "NewId": 1463038020,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1818846820,
+      "Type": 3,
+      "Value": "buildings\\other\\Tent\\Tent.mdl"
+    },
+    {
+      "Id": 1935764836,
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": 1936289124,
+      "Type": 2,
+      "Value": 0.01
+    },
+    {
+      "Id": 1835101796,
+      "Type": 3,
+      "Value": "TRIGSTR_4557"
+    },
+    {
+      "Id": 2003726180,
+      "Value": 1
+    },
+    {
+      "Id": 2020896868,
+      "Type": 3,
+      "Value": "PathTextures\\2x2Default.tga"
+    },
+    {
+      "Id": 1818850404,
+      "Type": 3,
+      "Value": "*"
+    }
+  ]
+}

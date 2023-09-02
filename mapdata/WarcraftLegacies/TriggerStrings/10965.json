@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 10965,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A08X (Aura of Dread), Researchtip (Tooltip - Learn)",
+  "Value": "Learn Aura of Dread - [|cffffcc00Level %d|r]"
+}

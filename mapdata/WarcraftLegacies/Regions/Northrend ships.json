@@ -1,0 +1,15 @@
+{
+  "Left": -9216,
+  "Bottom": 19680,
+  "Right": 6048,
+  "Top": 24992,
+  "Name": "Northrend ships",
+  "CreationNumber": 73,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

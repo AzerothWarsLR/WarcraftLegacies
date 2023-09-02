@@ -1,0 +1,15 @@
+{
+  "Left": -10688,
+  "Bottom": 4384,
+  "Right": -10144,
+  "Top": 4800,
+  "Name": "FountainUnlock",
+  "CreationNumber": 141,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

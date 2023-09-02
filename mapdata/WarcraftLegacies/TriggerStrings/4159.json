@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 4159,
+  "KeyPrecision": 4,
+  "Comment": " Items: hlst (Health Stone), Ubertip (Tooltip - Extended)",
+  "Value": "Increases the life regeneration rate of the Hero by \u003CArll,DataA1\u003E hit points per second. Can be consumed for \u003CAIhx,DataA1\u003E health."
+}

@@ -1,0 +1,15 @@
+{
+  "Left": 18144,
+  "Bottom": 21248,
+  "Right": 18976,
+  "Top": 22048,
+  "Name": "Sunwell",
+  "CreationNumber": 152,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

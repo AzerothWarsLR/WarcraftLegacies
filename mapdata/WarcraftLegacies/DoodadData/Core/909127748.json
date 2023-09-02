@@ -1,0 +1,73 @@
+{
+  "OldId": 1936936793,
+  "NewId": 909127748,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1936024676,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": 1818846820,
+      "Type": 3,
+      "Value": "war3mapImported\\Prop_DwarfStatue.mdl"
+    },
+    {
+      "Id": 1835101796,
+      "Type": 3,
+      "Value": "TRIGSTR_1041"
+    },
+    {
+      "Id": 1936289124,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": 1818850404,
+      "Type": 3,
+      "Value": "Y,X,J,*"
+    },
+    {
+      "Variation": 1,
+      "Id": 828536420,
+      "Value": 155
+    },
+    {
+      "Id": 2020896868,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1935764836,
+      "Type": 2,
+      "Value": 4
+    },
+    {
+      "Id": 1918989924,
+      "Value": 2
+    },
+    {
+      "Variation": 2,
+      "Id": 828536420,
+      "Value": 65
+    },
+    {
+      "Variation": 2,
+      "Id": 828864100,
+      "Value": 85
+    },
+    {
+      "Variation": 2,
+      "Id": 829584996,
+      "Value": 100
+    },
+    {
+      "Variation": 1,
+      "Id": 828864100,
+      "Value": 200
+    }
+  ]
+}

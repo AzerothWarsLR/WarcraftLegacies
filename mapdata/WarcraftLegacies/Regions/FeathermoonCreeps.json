@@ -1,0 +1,15 @@
+{
+  "Left": -22464,
+  "Bottom": -12128,
+  "Right": -18368,
+  "Top": -7584,
+  "Name": "FeathermoonCreeps",
+  "CreationNumber": 118,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "Left": 1888,
+  "Bottom": -23424,
+  "Right": 3616,
+  "Top": -22048,
+  "Name": "SunfuryStartingPosition",
+  "CreationNumber": 147,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

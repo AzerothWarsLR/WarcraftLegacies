@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 15552,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A0PL (Blessing of Seradane), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Empowers friendly units in a radius of \u003CA0PL,Area1\u003E, increasing their movement speed by \u003CA0PL,DataA1,%\u003E% and attack rate by \u003CA0PL,DataB1,%\u003E%."
+}

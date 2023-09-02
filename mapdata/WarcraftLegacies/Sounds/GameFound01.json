@@ -1,0 +1,30 @@
+{
+  "Name": "gg_snd_GameFound01",
+  "FilePath": "Sound/Interface/GameFound.flac",
+  "EaxSetting": "DefaultEAXON",
+  "Volume": 127,
+  "Pitch": 4294967296,
+  "PitchVariance": 1,
+  "Priority": 1000,
+  "Channel": 8,
+  "MinDistance": 4294967296,
+  "DistanceCutoff": 10000,
+  "ConeAngleInside": 4294967296,
+  "ConeAngleOutside": 4294967296,
+  "ConeOutsideVolume": -1,
+  "ConeOrientation": {
+    "X": 4.2949673E+09,
+    "Y": 4.2949673E+09,
+    "Z": 4.2949673E+09
+  },
+  "SoundName": "GameFound",
+  "DialogueTextKey": -1,
+  "Unk2": "",
+  "DialogueSpeakerNameKey": -1,
+  "Unk6": "",
+  "Unk7": "",
+  "FacialAnimationLabel": "",
+  "FacialAnimationGroupLabel": "",
+  "FacialAnimationSetFilepath": "",
+  "Unk11": 1
+}

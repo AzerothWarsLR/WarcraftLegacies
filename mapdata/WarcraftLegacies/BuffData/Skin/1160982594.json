@@ -1,0 +1,34 @@
+{
+  "OldId": 1835615554,
+  "NewId": 1160982594,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1885959270,
+      "Type": 3,
+      "Value": "TRIGSTR_20916"
+    },
+    {
+      "Id": 1700951398,
+      "Type": 3,
+      "Value": "TRIGSTR_13525"
+    },
+    {
+      "Id": 1835101798,
+      "Type": 3,
+      "Value": "TRIGSTR_13526"
+    },
+    {
+      "Id": 1952543846,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Other\\ImmolationRed\\ImmolationRedTarget.mdl"
+    },
+    {
+      "Id": 1952543590,
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

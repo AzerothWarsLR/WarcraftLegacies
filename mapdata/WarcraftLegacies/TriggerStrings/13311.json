@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 13311,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A0HT (Cycle of Rebirth), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Creates a Healing Bulb from a nearby friendly corpse that will heal nearby units for 10 seconds. They will heal for a maximum of 600 hitpoints each."
+}

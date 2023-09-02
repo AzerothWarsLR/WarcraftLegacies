@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 9627,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: A0FK (Battle Experience), Researchtip (Tooltip - Learn)",
+  "Value": "Learn Battle Experience - [|cffffcc00Level %d|r]"
+}

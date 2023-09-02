@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 5352,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: AUdr (Dark Ritual), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Sacrifices a target friendly Undead unit to convert its hit points into mana and health for the Lich. |n|n|cffffcc00Level 1|r - 33% of hit points to mana and 25% hit points to health. |n|cffffcc00Level 2|r - 66% of hit points to mana and 50% hit points to health. |n|cffffcc00Level 3|r - 100% of hit points to mana and 75% hit points to health. |n|cffffcc00Level 4|r - 133% of hit points to mana and 100% hit points to health."
+}

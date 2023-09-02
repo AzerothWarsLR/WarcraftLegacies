@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 5790,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: ANdr (Nullify), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Absorbs the essence of a target enemy unit by taking \u003CANdr,DataA1\u003E hit points per second and 10  mana points per second from it and giving them to the Voidwalker. |nLasts \u003CANdr,Dur1\u003E seconds."
+}

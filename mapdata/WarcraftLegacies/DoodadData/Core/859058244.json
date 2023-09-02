@@ -1,0 +1,29 @@
+{
+  "OldId": 2003193946,
+  "NewId": 859058244,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1818846820,
+      "Type": 3,
+      "Value": "Doodads\\Dalaran\\Terrain\\DalaranBuilding\\DalaranBuilding0.mdl"
+    },
+    {
+      "Id": 1935764836,
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Id": 1936289124,
+      "Type": 2,
+      "Value": 0.01
+    },
+    {
+      "Id": 1835101796,
+      "Type": 3,
+      "Value": "TRIGSTR_4585"
+    }
+  ]
+}

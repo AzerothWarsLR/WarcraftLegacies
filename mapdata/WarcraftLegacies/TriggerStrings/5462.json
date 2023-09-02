@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 5462,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: AOsw (Spawn Tentacles), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Summons an immobile Tentacles ward to attack the C\u0027thun\u0027s enemies. The ward is immune to magic. |nLasts \u003CAOsw,Dur1\u003E seconds. |n|n|cffffcc00Attacks land units.|r |n|n|cffffcc00Level 1|r - 6 Tentacles. |n|cffffcc00Level 2|r - 8 Tentacles. |n|cffffcc00Level 3|r - 10 tentacles.  |n|cffffcc00Level 4|r - 12 tentacles."
+}

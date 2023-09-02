@@ -1,0 +1,29 @@
+{
+  "OldId": 1919828801,
+  "NewId": 1262956609,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "TRIGSTR_9439"
+    },
+    {
+      "Id": 1952543841,
+      "Type": 3,
+      "Value": "HeroGlow.mdx"
+    },
+    {
+      "Id": 811693153,
+      "Type": 3,
+      "Value": "origin"
+    }
+  ]
+}

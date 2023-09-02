@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 9791,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: A0EN (Fear Aura), Researchtip (Tooltip - Learn)",
+  "Value": "Learn Fear Aura - [|cffffcc00Level %d|r]"
+}

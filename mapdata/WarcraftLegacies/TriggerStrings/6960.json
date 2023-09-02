@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 6960,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: A0YX (Ancestral Legion), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Whenever a Tauren unit dies anywhere on the map, Cairne remembers it. When Ancestral Legion is cast, Cairne summons a limited number of remembered Tauren as Ancestors for 60 seconds. Each Ancestor has additional damage and health. |n|n|cffffcc00Level 1|r - Summons up to 12 remembered Tauren with 30% additional damage and health. |n|cffffcc00Level 2|r - Summons up to 18 remembered Tauren with 40% additional damage and health. |n|cffffcc00Level 3|r - Summons up to 24 remembered Tauren with  50% additional damage and health."
+}

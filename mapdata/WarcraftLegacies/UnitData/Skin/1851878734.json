@@ -1,0 +1,52 @@
+{
+  "OldId": 1851878734,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1953980789,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 2037408373,
+      "Value": 1
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "TRIGSTR_1229"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "TRIGSTR_1174"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.2
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "TRIGSTR_18865"
+    },
+    {
+      "Id": 1919972469,
+      "Type": 3,
+      "Value": "TRIGSTR_1262"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "TRIGSTR_1263"
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "HeroPitLord"
+    }
+  ]
+}

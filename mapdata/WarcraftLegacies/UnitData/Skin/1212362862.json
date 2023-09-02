@@ -1,0 +1,78 @@
+{
+  "OldId": 1836673134,
+  "NewId": 1212362862,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBloodstoneMage.blp"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 1
+    },
+    {
+      "Id": 1635083125,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\UPGUPGheavenlydemolisher.blp"
+    },
+    {
+      "Id": 1853186933,
+      "Type": 3,
+      "Value": "TRIGSTR_15920"
+    },
+    {
+      "Id": 1953850229,
+      "Type": 3,
+      "Value": "TRIGSTR_18536"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "TRIGSTR_18609"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\BloodStoneMage.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "TRIGSTR_5277"
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\AncestralGuardianMissile\\AncestralGuardianMissile.mdl"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "TRIGSTR_18538"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "TRIGSTR_18544"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "TRIGSTR_15992"
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "HeroMountainKing"
+    }
+  ]
+}

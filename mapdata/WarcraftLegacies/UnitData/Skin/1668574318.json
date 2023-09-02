@@ -1,0 +1,18 @@
+{
+  "OldId": 1668574318,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNLobstrokkRed.blp"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "Units\\Creeps\\Lobstrokkred\\Lobstrokkred.mdl"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 17401,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A0RJ (Exploding Cocktail), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "An exploding cocktail is thrown at an enemy unit, causing damage and stunning the target. |n|n|cffffcc00Level 1|r - 150 damage, 4 second stun. 1 second on Heroes.|n|cffffcc00Level 2|r - 200 damage, 5 second stun. 1.5 seconds on Heroes.|n|cffffcc00Level 3|r - 300 damage, 6 second stun. 2 seconds on Heroes.|n|cffffcc00Level 4|r - 375 damage, 7 second stun. 2.5 seconds on Heroes"
+}

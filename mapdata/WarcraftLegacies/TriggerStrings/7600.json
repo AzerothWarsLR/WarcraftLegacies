@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 7600,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: A0UK (Fel Rift), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Sends forth a wave of fel energy in a line, dealing \u003CA0UK,DataC3\u003E damage and hurling enemy ground units into the air. Stuns units for \u003CA0UK,Dur3\u003E seconds and heroes for \u003CA0UK,HeroDur3\u003E seconds."
+}

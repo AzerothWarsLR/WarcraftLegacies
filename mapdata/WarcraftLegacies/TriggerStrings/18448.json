@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 18448,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A0WP (Curse of Executus), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Reduces nearby enemy units\u0027 attack damage by \u003CA0WP,DataA1,%\u003E% for \u003CA0WP,Dur1\u003E seconds."
+}

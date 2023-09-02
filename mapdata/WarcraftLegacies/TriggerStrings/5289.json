@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 5289,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: AUsl (Sleep), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Puts a target enemy unit to sleep for 35 seconds. A sleeping unit can be awoken by attacking it. Lasts 10 seconds on heroes."
+}

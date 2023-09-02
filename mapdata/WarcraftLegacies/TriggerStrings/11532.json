@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 11532,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A06J (Holy Blessing), Researchtip (Tooltip - Learn)",
+  "Value": "Learn Holy Blessing - [|cffffcc00Level %d|r]"
+}

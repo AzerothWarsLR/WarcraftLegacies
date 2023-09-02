@@ -1,0 +1,38 @@
+{
+  "OldId": 845769839,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1868786025,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNUsedSoulGem.blp"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "TRIGSTR_14048"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "TRIGSTR_4133"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "TRIGSTR_4208"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "TRIGSTR_4135"
+    },
+    {
+      "Id": 1936024681,
+      "Type": 3,
+      "Value": "TRIGSTR_4209"
+    }
+  ]
+}

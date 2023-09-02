@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 4135,
+  "KeyPrecision": 4,
+  "Comment": " Items: oli2 (Orb of Arcane), Ubertip (Tooltip - Extended)",
+  "Value": "Adds 6 bonus damage to the attack of a Hero when carried. The Hero\u0027s attacks also become ranged when attacking air, and burn 25 mana from the target with each attack. Burns 15 mana on heroes.|nCauses attacks to deal 200 damage total to summoned units."
+}

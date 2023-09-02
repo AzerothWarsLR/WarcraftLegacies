@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 5366,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: AUdd (Death And Decay), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Damages everything in its area of effect by \u003CAUdd,DataA2,%\u003E% of its base hit points per second. Also destroys trees. |nLasts \u003CAUdd,Dur2\u003E seconds."
+}

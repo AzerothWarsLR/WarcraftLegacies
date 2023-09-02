@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 9683,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: A0FC (Barbed Net), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "The hero ensnares an enemy with a Barbed Net, immobilizing and disarming a target enemy unit for \u003CAEer,Dur4\u003E seconds, and dealing \u003CAEer,DataA4\u003E damage per second. Lasts 4 seconds on heroes."
+}

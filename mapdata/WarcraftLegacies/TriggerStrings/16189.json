@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 16189,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A0D1 (Magic Missile), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Launches a magical missile at a target enemy unit, dealing 60 damage and stunning the target for \u003CA0D1,Dur1\u003E seconds. Lasts 0.1 seconds on heroes."
+}

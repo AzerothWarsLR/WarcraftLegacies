@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 12343,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A030 (Call Treants), Researchtip (Tooltip - Learn)",
+  "Value": "Learn Call Treant - [|cffffcc00Level %d|r]."
+}

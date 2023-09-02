@@ -1,0 +1,15 @@
+{
+  "Left": 16608,
+  "Bottom": -2496,
+  "Right": 16832,
+  "Top": -2400,
+  "Name": "Grim Batol Tunnel Top",
+  "CreationNumber": 49,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

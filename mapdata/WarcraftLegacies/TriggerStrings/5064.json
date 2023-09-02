@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 5064,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: Afsh (Fragmentation Shards), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Uses fragmentation mortars to increase damage dealt to Unarmored and Medium armor units. Deals \u003CAfsh,DataC1\u003E extra damage to primary target, \u003CAfsh,DataD1\u003E in medium AOE and \u003CAfsh,DataE1\u003E in large AOE."
+}

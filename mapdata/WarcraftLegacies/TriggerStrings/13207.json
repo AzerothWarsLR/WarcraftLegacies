@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 13207,
+  "KeyPrecision": 5,
+  "Comment": " Buffs/Effects: B07A (Holy Protection), Buffubertip (Tooltip - Extended)",
+  "Value": "This unit has Holy Protection; damage spells must destroy the shell to affect the unit."
+}

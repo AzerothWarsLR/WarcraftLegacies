@@ -1,0 +1,15 @@
+{
+  "Left": 17472,
+  "Bottom": -11584,
+  "Right": 17792,
+  "Top": -11040,
+  "Name": "WorldTunnelExit",
+  "CreationNumber": 463,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

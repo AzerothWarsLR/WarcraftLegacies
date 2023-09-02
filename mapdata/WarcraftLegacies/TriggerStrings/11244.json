@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 11244,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A07R (Dark Grip), Researchtip (Tooltip - Learn)",
+  "Value": "Learn Dark Grip - [|cffffcc00Level %d|r]"
+}

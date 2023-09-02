@@ -36,10 +36,9 @@ namespace MacroTools.ObjectiveSystem.Objectives.LegendBased
       CreateTrigger()
         .RegisterUnitEvent(target.Unit, EVENT_UNIT_DEATH)
         .AddAction(() => { if (_canFail) { Progress = QuestProgress.Failed; } });
+      
+      Position = new(GetUnitX(_target.Unit), GetUnitY(_target.Unit));
     }
-
-    /// <inheritdoc />
-    public override Point Position => new(GetUnitX(_target.Unit), GetUnitY(_target.Unit));
 
     internal override void OnAdd(Faction whichFaction)
     {

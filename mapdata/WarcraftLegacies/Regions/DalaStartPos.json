@@ -1,0 +1,15 @@
+{
+  "Left": 8768,
+  "Bottom": 2112,
+  "Right": 10464,
+  "Top": 3488,
+  "Name": "DalaStartPos",
+  "CreationNumber": 160,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

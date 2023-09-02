@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 4815,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: A099 (Mass Anti-magic Shield), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Creates a barrier that stops \u003CA0JN,DataC1\u003E points of spell damage from affecting all allied units in the area of effect. |nLasts \u003CA0JN,Dur1\u003E seconds."
+}

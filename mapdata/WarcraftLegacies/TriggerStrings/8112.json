@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 8112,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: A0RI (Flamethrower), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Blasts fire at enemy units in a cone in front of the steam tank, dealing \u003CA0RI,DataA1\u003E damage and \u003CA0RI,DataE1\u003E damage per second for \u003CA0RI,Dur1\u003E seconds."
+}

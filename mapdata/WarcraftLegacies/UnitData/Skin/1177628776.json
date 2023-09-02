@@ -1,0 +1,34 @@
+{
+  "OldId": 1953259880,
+  "NewId": 1177628776,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "Doodads\\Northrend\\Structures\\NorthrendCrypt\\NorthrendCrypt.mdl"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "TRIGSTR_3435"
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "TRIGSTR_3436"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "TRIGSTR_19858"
+    }
+  ]
+}

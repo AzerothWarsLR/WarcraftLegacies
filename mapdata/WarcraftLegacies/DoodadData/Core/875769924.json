@@ -1,0 +1,81 @@
+{
+  "OldId": 1651265369,
+  "NewId": 875769924,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1936024676,
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Id": 1818846820,
+      "Type": 3,
+      "Value": "Doodads\\LordaeronSummer\\Structures\\CityBridgeSmall\\CityBridgeSmall.mdl"
+    },
+    {
+      "Id": 1935764836,
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": 1936289124,
+      "Type": 2,
+      "Value": 0.01
+    },
+    {
+      "Id": 1835101796,
+      "Type": 3,
+      "Value": "TRIGSTR_4618"
+    },
+    {
+      "Id": 1718121316,
+      "Value": 1
+    },
+    {
+      "Variation": 1,
+      "Id": 828536420,
+      "Value": 100
+    },
+    {
+      "Variation": 1,
+      "Id": 828864100,
+      "Value": 100
+    },
+    {
+      "Variation": 1,
+      "Id": 829584996,
+      "Value": 100
+    },
+    {
+      "Id": 1952539492,
+      "Type": 3,
+      "Value": "S"
+    },
+    {
+      "Id": 1918989924,
+      "Value": 2
+    },
+    {
+      "Variation": 2,
+      "Id": 829584996,
+      "Value": 105
+    },
+    {
+      "Variation": 2,
+      "Id": 828864100,
+      "Value": 85
+    },
+    {
+      "Variation": 2,
+      "Id": 828536420,
+      "Value": 70
+    },
+    {
+      "Id": 1802270564,
+      "Value": 1
+    }
+  ]
+}

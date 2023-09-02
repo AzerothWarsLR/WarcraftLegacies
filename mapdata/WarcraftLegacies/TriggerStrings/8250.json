@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 8250,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: A0Q7 (Flame Strike), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Conjures a pillar of fire which damages ground units in a target area over time. |n|n|cffffcc00Level 1|r - 270 damage over 3 seconds, followed by minor damage for 6 seconds. |n|cffffcc00Level 2|r - 315 damage over 3 seconds, followed by light damage for 6 seconds. |n|cffffcc00Level 3|r - 360 damage over 3 seconds, followed by moderate damage for 6 seconds. |n|cffffcc00Level 4|r - 405 damage over 3 seconds, followed by major damage for 6 seconds."
+}

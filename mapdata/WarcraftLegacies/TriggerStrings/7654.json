@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 7654,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: A0U2 (Consecrated Strikes), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Gives a \u003CA0U2,DataA1\u003E% chance that an attack will deal \u003CA0U2,DataB1\u003E damage to nearby units."
+}

@@ -1,0 +1,54 @@
+{
+  "OldId": 1935830901,
+  "NewId": 1244672117,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBloodElfSupplyWagon.blp"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "TRIGSTR_1275"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "units\\other\\BloodElfWagon\\BloodElfWagon.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "TRIGSTR_1448"
+    },
+    {
+      "Id": 828468597,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\AncestralGuardianMissile\\AncestralGuardianMissile.mdl"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "TRIGSTR_1449"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "TRIGSTR_1450"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "TRIGSTR_1451"
+    }
+  ]
+}

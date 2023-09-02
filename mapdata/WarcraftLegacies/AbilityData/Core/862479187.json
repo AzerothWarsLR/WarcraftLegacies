@@ -1,0 +1,20 @@
+{
+  "OldId": 862479187,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "friend,ground,hero,invulnerable,organic,vulnerable"
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 829579587,
+      "Value": 1
+    }
+  ]
+}

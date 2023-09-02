@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 1194,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: A00D (Slipstream), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Opens a two-way portal to the target location within a range of \u003CA00D,Rng1\u003E. The portal becomes useable after 5 seconds, and closes 10 seconds after the caster stops channeling."
+}

@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 13649,
+  "KeyPrecision": 5,
+  "Comment": " Buffs/Effects: B01W (Mind Shield), Buffubertip (Tooltip - Extended)",
+  "Value": "This unit has Mind Shield; it cannot be targeted by spells. It can be dispelled."
+}

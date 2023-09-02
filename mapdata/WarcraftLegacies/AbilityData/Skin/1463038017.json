@@ -1,0 +1,138 @@
+{
+  "OldId": 1918990145,
+  "NewId": 1463038017,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNConsecretedStrikes.blp"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 3
+    },
+    {
+      "Id": 1952539489,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Human\\Defend\\DefendCaster.mdl"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "TRIGSTR_11883"
+    },
+    {
+      "Id": 1952540001,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Human\\Defend\\DefendCaster.mdl"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "TRIGSTR_11884"
+    },
+    {
+      "Id": 1667331169,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "TRIGSTR_11885"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "TRIGSTR_11886"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "TRIGSTR_11887"
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "TRIGSTR_11888"
+    },
+    {
+      "Level": 5,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "TRIGSTR_11889"
+    },
+    {
+      "Level": 6,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "TRIGSTR_11890"
+    },
+    {
+      "Level": 7,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "TRIGSTR_11891"
+    },
+    {
+      "Level": 8,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "TRIGSTR_11892"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "TRIGSTR_11893"
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "TRIGSTR_11894"
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "TRIGSTR_11895"
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "TRIGSTR_11896"
+    },
+    {
+      "Level": 5,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "TRIGSTR_11897"
+    },
+    {
+      "Level": 6,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "TRIGSTR_11898"
+    },
+    {
+      "Level": 7,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "TRIGSTR_11899"
+    },
+    {
+      "Level": 8,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "TRIGSTR_11900"
+    }
+  ]
+}

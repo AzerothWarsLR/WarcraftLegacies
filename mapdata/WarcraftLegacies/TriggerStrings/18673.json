@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 18673,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A0HG (Unholy Armor), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Increases a target friendly unit\u0027s armor by \u003CA0HG,DataB4\u003E for \u003CA0HG,Dur4\u003E seconds at the cost of 6% of its current hit points."
+}

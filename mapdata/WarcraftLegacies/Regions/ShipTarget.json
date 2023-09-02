@@ -1,0 +1,15 @@
+{
+  "Left": 4608,
+  "Bottom": -10528,
+  "Right": 4640,
+  "Top": -10496,
+  "Name": "ShipTarget",
+  "CreationNumber": 393,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

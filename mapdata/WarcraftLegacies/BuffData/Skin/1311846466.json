@@ -1,0 +1,29 @@
+{
+  "OldId": 1868844610,
+  "NewId": 1311846466,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1953653094,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBurnedAncient.blp"
+    },
+    {
+      "Id": 1700951398,
+      "Type": 3,
+      "Value": "TRIGSTR_13670"
+    },
+    {
+      "Id": 1835101798,
+      "Type": 3,
+      "Value": "TRIGSTR_14516"
+    },
+    {
+      "Id": 1952543846,
+      "Type": 3,
+      "Value": "war3mapImported\\Effect_BurningConversion.mdx,Abilities\\Spells\\Other\\Doom\\DoomTarget.mdl"
+    }
+  ]
+}

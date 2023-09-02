@@ -1,0 +1,29 @@
+{
+  "OldId": 1919181166,
+  "NewId": 1328885870,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.6
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "TRIGSTR_10014"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNRedDragon.blp"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "units\\creeps\\RedDragon\\RedDragon.mdl"
+    }
+  ]
+}

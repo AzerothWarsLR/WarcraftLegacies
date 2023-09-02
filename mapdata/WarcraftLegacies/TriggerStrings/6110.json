@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 6110,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: AEsh (Shadow Strike), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Hurls a poisoned dagger which deals large initial damage, and then deals damage over time. The poisoned unit has its movement speed slowed by 75% for it\u0027s duration. Lasts 15 seconds on units and Heroes.|n|n|cffffcc00Level 1|r - \u003CAEsh,DataE1\u003E strike damage, \u003CAEsh,DataA1\u003E duration damage. |n|cffffcc00Level 2|r - \u003CAEsh,DataE2\u003E strike damage, \u003CAEsh,DataA2\u003E duration damage. |n|cffffcc00Level 3|r - \u003CAEsh,DataE3\u003E strike damage, \u003CAEsh,DataA3\u003E duration damage.|n|cffffcc00Level 4|r - \u003CAEsh,DataE4\u003E strike damage, \u003CAEsh,DataA4\u003E duration damage."
+}

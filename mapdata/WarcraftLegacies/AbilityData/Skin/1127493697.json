@@ -1,0 +1,19 @@
+{
+  "OldId": 1819298113,
+  "NewId": 1127493697,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNNightElfBuild.blp"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "TRIGSTR_12045"
+    }
+  ]
+}

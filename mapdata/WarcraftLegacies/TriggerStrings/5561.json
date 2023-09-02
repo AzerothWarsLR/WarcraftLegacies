@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 5561,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: AOae (Endurance Aura), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Increases nearby friendly units\u0027 movement speed by \u003CAOae,DataA4,%\u003E% and attack rate by \u003CAOae,DataB4,%\u003E%."
+}

@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 8268,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: A017 (Take Vengeance), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "If Maiev would die, she instead regains some health and becomes an Avatar of Vengeance for 20 seconds. If Maiev attacks 5 times in this form, she revives instantly. Otherwise, she dies. |n|n|cffffcc00Level 1|r - Restores 1200 health and increases attack damage by 40.|n|cffffcc00Level 2|r - Restores 1500 health and increases attack damage by 60. |n|cffffcc00Level 3|r - Restores 1800 health and increases attack damage by 80."
+}

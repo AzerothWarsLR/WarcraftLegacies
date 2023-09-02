@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 9675,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: A0FC (Barbed Net), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "The hero ensnares an enemy with a Barbed Net, immobilizing, disarming and damaging that target  temporarily. |n|n|cffffcc00Level 1|r - \u003CAEer,DataA1\u003E damage per second for \u003CAEer,Dur1\u003E seconds. Lasts 2.5 seconds on heroes.|n|cffffcc00Level 2|r - \u003CAEer,DataA2\u003E damage per second for \u003CAEer,Dur2\u003E seconds. Lasts 3 seconds on heroes.|n|cffffcc00Level 3|r - \u003CAEer,DataA3\u003E damage per second for \u003CAEer,Dur3\u003E seconds. Lasts 3.5 seconds on heroes.|n|cffffcc00Level 4|r - \u003CAEer,DataA4\u003E damage per second for \u003CAEer,Dur4\u003E seconds. Lasts 4 seconds on heroes."
+}

@@ -1,0 +1,15 @@
+{
+  "Left": 3456,
+  "Bottom": 17184,
+  "Right": 5952,
+  "Top": 19232,
+  "Name": "GrizzlyHills",
+  "CreationNumber": 239,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

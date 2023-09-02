@@ -1,0 +1,15 @@
+{
+  "Left": 11840,
+  "Bottom": -12224,
+  "Right": 13632,
+  "Top": -10208,
+  "Name": "BlackrockUnlock",
+  "CreationNumber": 8,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

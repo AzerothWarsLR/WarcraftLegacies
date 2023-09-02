@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 15612,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A01F (Solar Judgement), Researchtip (Tooltip - Learn)",
+  "Value": "Learn Solar Judgement - [|cffffcc00Level %d|r]"
+}

@@ -1,0 +1,58 @@
+{
+  "OldId": 1936875880,
+  "NewId": 1429549160,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "TRIGSTR_10462"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\DarkShrineX2.mdl"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "TRIGSTR_6525"
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 8
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "Necropolis"
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "war3mapImported\\SoulArmor.mdl"
+    },
+    {
+      "Id": 2054188149,
+      "Type": 2,
+      "Value": 900
+    },
+    {
+      "Id": 1919705973,
+      "Value": 155
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.85
+    }
+  ]
+}

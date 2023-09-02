@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 6062,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: AHav (Avatar), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Activate Avatar to give the Mountain King \u003CAHav,DataA3\u003E bonus armor, \u003CAHav,DataB3\u003E bonus hit points, \u003CAHav,DataC3\u003E bonus damage and spell immunity. |nLasts \u003CAHav,Dur3\u003E seconds."
+}

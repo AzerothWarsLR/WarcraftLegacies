@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 9033,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: A0JW (Spectral Invocation), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "The Necromancer summons 20 evil spirits around the target enemy, each of which will attack the target for 65 damage. Cooldown and manacost decrease with levels. |n|n|cffffcc00Level 1|r - 80 seconds cooldown, 300 mana cost. |n|cffffcc00Level 2|r - 60 seconds cooldown, 250 mana cost. |n|cffffcc00Level 3|r - 40 seconds cooldown, 200 mana cost. |n|cffffcc00Level 4|r - 20 seconds cooldown, 150 mana cost."
+}

@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 17134,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A06L (Mana Shield), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Creates a shield that absorbs damage by using the hero\u0027s mana. |n|n|cffffcc00Level 1|r - \u003CANms,DataA1\u003E damage per point of mana. |n|cffffcc00Level 2|r - \u003CANms,DataA2\u003E damage per point of mana. |n|cffffcc00Level 3|r - \u003CANms,DataA3\u003E damage per point of mana. |n|cffffcc00Level 3|r - \u003CANms,DataA4\u003E damage per point of mana."
+}

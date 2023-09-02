@@ -1,0 +1,15 @@
+{
+  "Left": -12480,
+  "Bottom": -2592,
+  "Right": -11424,
+  "Top": -1568,
+  "Name": "Crossroads",
+  "CreationNumber": 18,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

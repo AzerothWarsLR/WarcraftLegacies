@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 2569,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: A07D (Portal to Black Temple), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Opens a two-way portal to Black Temple at the target location. The portal becomes useable after 20 seconds, and closes 15 seconds after the caster stops channeling."
+}

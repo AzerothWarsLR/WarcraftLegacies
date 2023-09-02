@@ -1,0 +1,29 @@
+{
+  "OldId": 1735289699,
+  "NewId": 1093742665,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1868786025,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBrokenAmulet.blp"
+    },
+    {
+      "Id": 1936024681,
+      "Type": 3,
+      "Value": "TRIGSTR_4244"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "TRIGSTR_4245"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "TRIGSTR_18059"
+    }
+  ]
+}

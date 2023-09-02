@@ -1,0 +1,39 @@
+{
+  "OldId": 829453167,
+  "NewId": 1479618671,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNNightElfCaptureFlag.blp"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "TRIGSTR_1623"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "Objects\\InventoryItems\\NightElfCaptureFlag\\NightElfCaptureFlag.mdl"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.4
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "TRIGSTR_1624"
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 1.55
+    }
+  ]
+}

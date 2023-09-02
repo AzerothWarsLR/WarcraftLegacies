@@ -1,0 +1,81 @@
+{
+  "OldId": 1852535375,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHeroVoljin.blp"
+    },
+    {
+      "Id": 1953980789,
+      "Type": 3,
+      "Value": "TRIGSTR_15458"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 1
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "TRIGSTR_420"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "units\\orc\\WitchDoctor\\WitchDoctor.mdl"
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\WitchDoctorMissile\\WitchDoctorMissile.mdl"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "TRIGSTR_1222"
+    },
+    {
+      "Id": 1869770869,
+      "Type": 3,
+      "Value": "TRIGSTR_162"
+    },
+    {
+      "Id": 1919972469,
+      "Type": 3,
+      "Value": "TRIGSTR_15463"
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 1.3
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "TRIGSTR_16916"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "TRIGSTR_17318"
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "WitchDoctor"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "TRIGSTR_1014"
+    },
+    {
+      "Id": 2037408373,
+      "Value": 0
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 6189,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: AEfn (Force of Nature), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Spawns Treants. Treants have \u003Cefon,realHP\u003E hit points and deal \u003Cefon,mindmg1\u003E - \u003Cefon,maxdmg1\u003E damage. Can learn Nature\u0027s Blessing and Nature\u0027s Gift.|n|n|cffffcc00Attacks land units.|r |n|n|cffffcc00Level 1|r - Raises \u003CAEfn,DataA1\u003E Treants for \u003CAEfn,Dur1\u003E seconds. |n|cffffcc00Level 2|r - Raises \u003CAEfn,DataA2\u003E Treants for \u003CAEfn,Dur2\u003E seconds. |n|cffffcc00Level 3|r - Raises \u003CAEfn,DataA3\u003E Treants for \u003CAEfn,Dur3\u003E seconds. |n|cffffcc00Level 4|r - Raises \u003CAEfn,DataA4\u003E Treants for \u003CAEfn,Dur4\u003E seconds."
+}

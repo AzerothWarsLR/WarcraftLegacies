@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 6124,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: AEsf (Starfall), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Calls down waves of falling stars that damage nearby enemy units. Each wave deals 45 damage. |nLasts for \u003CAEsf,Dur1\u003E seconds."
+}

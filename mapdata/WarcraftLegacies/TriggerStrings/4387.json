@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 4387,
+  "KeyPrecision": 4,
+  "Comment": " Items: I002 (Crown of Stormwind), Ubertip (Tooltip - Extended)",
+  "Value": "|cffff8c00Artifact|r|nIncreases Strength, Agility and Intelligence by 3. Can be used to cast Crown Heal, healing all nearby friendly units by \u003CAIdb,DataB1\u003E, restoring their mana by \u003CAIdb,DataC1\u003E, and increasing their armor by \u003CAIdb,DataA1\u003E for \u003CAIdb,Dur1\u003E seconds.|n|cffffcc00Lore|r|n|cffffdeadThe reefed crown of the Wrynn dynasty."
+}

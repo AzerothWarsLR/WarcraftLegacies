@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 6667,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: A118 (Tidal Wave), Researchtip (Tooltip - Learn)",
+  "Value": "Learn Tidal Wave - [|cffffcc00Level %d|r]"
+}

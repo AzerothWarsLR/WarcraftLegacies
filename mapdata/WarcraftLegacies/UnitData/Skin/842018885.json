@@ -1,0 +1,91 @@
+{
+  "OldId": 1869573445,
+  "NewId": 842018885,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNShandris.blp"
+    },
+    {
+      "Id": 1953980789,
+      "Type": 3,
+      "Value": "TRIGSTR_4024"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 0
+    },
+    {
+      "Id": 2037408373,
+      "Value": 0
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "TRIGSTR_2171"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "units\\nightelf\\Shandris\\Shandris.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "TRIGSTR_3337"
+    },
+    {
+      "Id": 828468597,
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.05
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "TRIGSTR_4027"
+    },
+    {
+      "Id": 1970434165,
+      "Value": 1
+    },
+    {
+      "Id": 1869770869,
+      "Type": 3,
+      "Value": "TRIGSTR_4028"
+    },
+    {
+      "Id": 1919972469,
+      "Type": 3,
+      "Value": "TRIGSTR_4029"
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 1.2
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "TRIGSTR_17210"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "TRIGSTR_17211"
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "Shandris"
+    }
+  ]
+}

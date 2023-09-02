@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 9610,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: A0FO (Siphon Mana), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Transfers Chaotic Energy between The Magus and a target. Drains 15 mana per second from an enemy, or transfers 10 mana per second to an ally.|n|nSiphon Mana can push the Magus\u0027 mana over its maximum value, though excess mana drains off rapidly if not used.|nLasts 6 seconds."
+}

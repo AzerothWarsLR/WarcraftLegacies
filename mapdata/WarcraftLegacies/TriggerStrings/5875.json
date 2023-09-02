@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 5875,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: ANba (Black Arrow), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Adds extra damage to attacks. Units killed while under the effect of Black Arrow will turn into skeletons. |n|n|cffffcc00Level 1|r - \u003CANba,DataA1\u003E bonus damage. |n|cffffcc00Level 2|r - \u003CANba,DataA2\u003E bonus damage. |n|cffffcc00Level 3|r - \u003CANba,DataA3\u003E bonus damage. |n|cffffcc00Level 4|r - \u003CANba,DataA4\u003E bonus damage."
+}

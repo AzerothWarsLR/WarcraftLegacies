@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 11194,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A07X (Rally), Researchtip (Tooltip - Learn)",
+  "Value": "Learn Rally - [|cffffcc00Level %d|r]"
+}

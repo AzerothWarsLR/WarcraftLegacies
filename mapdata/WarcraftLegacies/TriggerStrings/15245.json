@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 15245,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A0GW (Make It Rain), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Calls down waves of cannonballs that damage units in an area. Each wave deals \u003CA0GW,DataB4\u003E damage. |nLasts for \u003CA0GW,DataA4\u003E waves."
+}

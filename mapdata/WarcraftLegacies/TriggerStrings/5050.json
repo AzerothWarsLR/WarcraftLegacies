@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 5050,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: Ahea (Heal), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Heals a target friendly non-mechanical wounded unit for \u003CAhea,DataA3\u003E hit points."
+}

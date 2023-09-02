@@ -1,0 +1,15 @@
+{
+  "Left": 17792,
+  "Bottom": -21856,
+  "Right": 19808,
+  "Top": -19648,
+  "Name": "DarkPortalUnlock",
+  "CreationNumber": 163,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

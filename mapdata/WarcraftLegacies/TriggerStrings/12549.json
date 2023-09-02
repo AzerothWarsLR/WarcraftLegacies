@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 12549,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A01Z (Lightning Rain), Researchtip (Tooltip - Learn)",
+  "Value": "Learn Lightning Rain - [|cffffcc00Level %d|r]"
+}

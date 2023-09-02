@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 19036,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A0XR (Breath of Life), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Calls forth a wave of healing fire that bounces up to \u003CA0XR,DataB1\u003E times, healing \u003CA0XR,DataA1\u003E damage on the primary target. Each jump heals less damage."
+}

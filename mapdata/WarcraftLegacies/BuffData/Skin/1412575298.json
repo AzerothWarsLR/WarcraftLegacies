@@ -1,0 +1,29 @@
+{
+  "OldId": 1650673986,
+  "NewId": 1412575298,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1953653094,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNRiflemanBurningShot.blp"
+    },
+    {
+      "Id": 1885959270,
+      "Type": 3,
+      "Value": "TRIGSTR_13575"
+    },
+    {
+      "Id": 1700951398,
+      "Type": 3,
+      "Value": "TRIGSTR_13576"
+    },
+    {
+      "Id": 1835101798,
+      "Type": 3,
+      "Value": "TRIGSTR_13577"
+    }
+  ]
+}

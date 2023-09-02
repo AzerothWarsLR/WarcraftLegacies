@@ -1,0 +1,21 @@
+{
+  "OldId": 1953457774,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1633837685,
+      "Value": 50
+    },
+    {
+      "Id": 1869571701,
+      "Value": 0
+    },
+    {
+      "Id": 1731289461,
+      "Type": 3,
+      "Value": "air,enemies,ground,hero,structure"
+    }
+  ]
+}

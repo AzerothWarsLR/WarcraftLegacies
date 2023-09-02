@@ -1,0 +1,15 @@
+{
+  "Left": -672,
+  "Bottom": -1504,
+  "Right": 96,
+  "Top": -960,
+  "Name": "MaelstromChannel",
+  "CreationNumber": 115,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

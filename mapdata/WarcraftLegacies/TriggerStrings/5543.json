@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 5543,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: AOeq (Earthquake), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Makes the ground tremble and break, causing damage per second to buildings and slowing units within the area of effect. Lasts \u003CAOeq,Dur1\u003E seconds.|n|n|cffffcc00Level 1|r - Slows by 75%, lasts \u003CAOeq,Dur1\u003E seconds.|n|cffffcc00Level 2|r - Slows by 85%, lasts \u003CAOeq,Dur2\u003E seconds.|n|cffffcc00Level 3|r - Slows by 95%, lasts \u003CAOeq,Dur3\u003E seconds. |n|n|cffff0000Note: Using this ability will badly lag the game. Use with caution.|r"
+}

@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 11502,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A06N (Feedback), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Attacks combust \u003CA06N,DataA1\u003E(\u003CA06N,DataC1\u003E for Heros) mana per hit, dealing damage equal to the amount combusted."
+}

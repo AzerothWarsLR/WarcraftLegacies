@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 20172,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A10L (Enchanted Bolts), Researchtip (Tooltip - Learn)",
+  "Value": "Learn Enchanted Bolts - [|cffffcc00Level %d|r]"
+}

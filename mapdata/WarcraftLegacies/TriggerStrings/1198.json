@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 1198,
+  "KeyPrecision": 4,
+  "Comment": " Upgrades: R03V (Magic Sentry), Ubertip (Tooltip - Extended)",
+  "Value": "Providing teachings from the mages of Stromgarde allowing |cffcece00Clergymen|r to use |cffcece00Mana Burn|r.|n|n|cffcece00Mana Burn|r - Sends a bolt of negative energy that burns up to 55 points of a target enemy unit\u0027s mana. The mana combusts, dealing damage equal to the amount of mana burned.|n|nGrants an additional \u002B5 damage to |cffcece00Chaplains |rand |cffcece00Clergymen|r."
+}

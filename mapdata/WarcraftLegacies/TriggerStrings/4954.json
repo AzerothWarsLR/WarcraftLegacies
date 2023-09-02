@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 4954,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: Aply (Polymorph), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Turns a target enemy unit into a sheep. The targeted unit retains its hit points and armor, but cannot attack. |nCannot be cast on Heroes. |n|cffffcc00Lasts \u003CAply,Dur1\u003E seconds."
+}

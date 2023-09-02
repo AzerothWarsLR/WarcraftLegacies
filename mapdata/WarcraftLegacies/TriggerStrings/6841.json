@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 6841,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: A10M (Inspire Madness), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Takes control of 10 random enemy units in the target area. After 30 seconds, each unit controlled this way dies of madness."
+}

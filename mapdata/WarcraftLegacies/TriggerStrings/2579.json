@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 2579,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: A0J8 (Stun Mine), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Summons an invisible and immovable mine that stuns enemy land units around it. The mine activates when an enemy land unit approaches and destroys all other stun mines in its area of effect. |nThe mine lasts 60 seconds. |nThe stun lasts 4 seconds."
+}

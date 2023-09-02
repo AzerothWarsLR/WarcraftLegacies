@@ -1,0 +1,15 @@
+{
+  "Left": 10112,
+  "Bottom": -20032,
+  "Right": 14048,
+  "Top": -17600,
+  "Name": "STV Ships",
+  "CreationNumber": 105,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

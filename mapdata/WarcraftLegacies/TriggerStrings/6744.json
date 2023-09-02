@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 6744,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: A0RR (Energy Wave), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Calls forth a wave of healing energy that bounces up to \u003CANhw,DataB2\u003E times, healing \u003CANhw,DataA2\u003E damage on the primary target. Each jump heals 20% less."
+}

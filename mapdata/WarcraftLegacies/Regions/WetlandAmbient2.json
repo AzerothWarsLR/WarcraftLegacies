@@ -1,0 +1,14 @@
+{
+  "Left": 11296,
+  "Bottom": -3808,
+  "Right": 12576,
+  "Top": -2272,
+  "Name": "WetlandAmbient2",
+  "CreationNumber": 313,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 255,
+    "B": 255
+  }
+}

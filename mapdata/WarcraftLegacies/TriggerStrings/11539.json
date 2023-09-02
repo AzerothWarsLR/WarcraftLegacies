@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 11539,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A06J (Holy Blessing), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Blesses friendly units within a radius of \u003CA06J,Area2\u003E, increasing armor by \u003CA06J,DataB2\u003E and hit point regeneration per second by \u003CA06J,DataC2\u003E.|nLasts \u003CA06J,Dur2\u003E seconds."
+}

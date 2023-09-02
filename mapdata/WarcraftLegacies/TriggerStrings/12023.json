@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 12023,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A04H (Resurgent Flame Strike), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Conjures a pillar of flame that burns ground units for \u003CA0F9,HeroDur1\u003E seconds. The pillar of flame subsides after \u003CA0F9,Dur1\u003E seconds, during which units within continue to take a lesser amount of damage per second. The first two times the pillar subsides, it resurges again for the same duration. |n|n|cffffcc00Level 1|r - \u003CA0F9,DataA1\u003E damage per second initially, then \u003CA0F9,DataC1\u003E per second while subsiding.|n|cffffcc00Level 2|r - \u003CA0F9,DataA2\u003E damage per second initially, then \u003CA0F9,DataC2\u003E per second while subsiding.|n|cffffcc00Level 3|r - \u003CA0F9,DataA3\u003E damage per second initially, then \u003CA0F9,DataC3\u003E per second while subsiding.|n|cffffcc00Level 4|r - \u003CA0F9,DataA4\u003E damage per second initially, then \u003CA0F9,DataC4\u003E per second while subsiding."
+}

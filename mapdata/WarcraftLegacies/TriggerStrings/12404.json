@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 12404,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A02O (Mithril Plated Armor), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "This unit has a \u003CA02O,DataA1\u003E% chance to reduce incoming damage by \u003CA02O,DataC1\u003E."
+}

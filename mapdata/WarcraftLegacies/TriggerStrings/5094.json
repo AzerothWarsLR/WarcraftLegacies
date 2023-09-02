@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 5094,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: Afbk (Feedback), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "This unit\u0027s attacks combust \u003CAfbk,DataA1\u003E(\u003CAfbk,DataC1\u003E for Heros) mana per hit, dealing damage to the attacked unit equal to mana destroyed."
+}

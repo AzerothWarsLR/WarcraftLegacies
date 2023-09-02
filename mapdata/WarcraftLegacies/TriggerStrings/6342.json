@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 6342,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: AChx (Hex), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Transforms an enemy unit into a random critter for \u003CAChx,Dur1\u003E seconds. Lasts 1 second on heroes."
+}

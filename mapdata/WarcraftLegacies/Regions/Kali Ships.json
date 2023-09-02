@@ -1,0 +1,15 @@
+{
+  "Left": -17600,
+  "Bottom": -15296,
+  "Right": -10816,
+  "Top": 5600,
+  "Name": "Kali Ships",
+  "CreationNumber": 60,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

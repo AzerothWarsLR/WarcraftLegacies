@@ -1,0 +1,34 @@
+{
+  "OldId": 1802719041,
+  "NewId": 1110782020,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1818846820,
+      "Type": 3,
+      "Value": "war3mapImported\\Wooden Wall.mdl"
+    },
+    {
+      "Id": 1935764836,
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Id": 1835101796,
+      "Type": 3,
+      "Value": "TRIGSTR_10723"
+    },
+    {
+      "Id": 2020896868,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1818850404,
+      "Type": 3,
+      "Value": "*"
+    }
+  ]
+}

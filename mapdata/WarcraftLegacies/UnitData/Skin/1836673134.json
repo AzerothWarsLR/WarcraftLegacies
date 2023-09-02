@@ -1,0 +1,76 @@
+{
+  "OldId": 1836673134,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNMageWC2.blp"
+    },
+    {
+      "Id": 1635083125,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNCrushingWave.blp"
+    },
+    {
+      "Id": 1853186933,
+      "Type": 3,
+      "Value": "TRIGSTR_12087"
+    },
+    {
+      "Id": 1953850229,
+      "Type": 3,
+      "Value": "TRIGSTR_703"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "TRIGSTR_704"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "TRIGSTR_435"
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 1
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "TRIGSTR_706"
+    },
+    {
+      "Id": 1751675765,
+      "Type": 1,
+      "Value": 100
+    },
+    {
+      "Id": 2003334005,
+      "Type": 1,
+      "Value": 100
+    },
+    {
+      "Id": 2036888437,
+      "Type": 1,
+      "Value": 45
+    },
+    {
+      "Id": 2020111221,
+      "Type": 1,
+      "Value": 45
+    },
+    {
+      "Id": 1735156597,
+      "Value": 180
+    },
+    {
+      "Id": 1919705973,
+      "Value": 180
+    }
+  ]
+}

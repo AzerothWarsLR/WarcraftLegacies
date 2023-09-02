@@ -1,0 +1,27 @@
+{
+  "OldId": 1717920879,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 2037408373,
+      "Value": 2
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "TRIGSTR_3707"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "TRIGSTR_18046"
+    },
+    {
+      "Id": 1868786025,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNShadow Orb.blp"
+    }
+  ]
+}

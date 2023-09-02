@@ -1,0 +1,54 @@
+{
+  "OldId": 1651789658,
+  "NewId": 1278226500,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1835101796,
+      "Type": 3,
+      "Value": "TRIGSTR_4707"
+    },
+    {
+      "Id": 2020896868,
+      "Type": 3,
+      "Value": "PathTextures\\4x4Default.tga"
+    },
+    {
+      "Id": 1818850404,
+      "Type": 3,
+      "Value": "A,C"
+    },
+    {
+      "Variation": 1,
+      "Id": 828536420,
+      "Value": 110
+    },
+    {
+      "Variation": 2,
+      "Id": 828536420,
+      "Value": 110
+    },
+    {
+      "Variation": 1,
+      "Id": 828864100,
+      "Value": 110
+    },
+    {
+      "Variation": 2,
+      "Id": 828864100,
+      "Value": 110
+    },
+    {
+      "Variation": 1,
+      "Id": 829584996,
+      "Value": 110
+    },
+    {
+      "Variation": 2,
+      "Id": 829584996,
+      "Value": 110
+    }
+  ]
+}

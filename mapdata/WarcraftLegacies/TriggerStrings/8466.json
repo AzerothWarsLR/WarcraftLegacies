@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 8466,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: A134 (Spiritual Guidance), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Heals a target friendly unit for 800 mana over 20 seconds. Has a 60 seconds cooldown."
+}

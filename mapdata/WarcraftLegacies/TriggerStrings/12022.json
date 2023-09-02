@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 12022,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A04H (Resurgent Flame Strike), Researchtip (Tooltip - Learn)",
+  "Value": "Learn Resurgent Flame Strike - [|cffffcc00Level %d|r]"
+}

@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 5667,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: ANrf (Rain of Fire), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Calls down waves of fire that damage units in an area. Each wave deals \u003CANrf,DataB4\u003E initial damage and \u003CANrf,DataE4\u003E damage per second for \u003CANrf,Dur4\u003E seconds. |nLasts for \u003CANrf,DataA4\u003E waves."
+}

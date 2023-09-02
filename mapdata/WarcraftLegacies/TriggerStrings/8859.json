@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 8859,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: A0KS (Devour Magic), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Consumes all magical buffs from units in an area. Each unit that is devoured of magic gives the caster \u003CA0KS,DataA1\u003E hit points and \u003CA0KS,DataB1\u003E mana. |n|cffffcc00Deals \u003CA0KS,DataE1\u003E damage to summoned units.|r"
+}

@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 19363,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A0MU (Build Oil Rig), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Builds an Oil Rig at the target location.|n|n|cff99b4d1Must be built near an Oil deposit in the sea, and only one Oil Rig can be built at each deposit."
+}

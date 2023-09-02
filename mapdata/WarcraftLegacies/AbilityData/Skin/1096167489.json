@@ -1,0 +1,19 @@
+{
+  "OldId": 1852403009,
+  "NewId": 1096167489,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "TRIGSTR_8124"
+    },
+    {
+      "Id": 1936090465,
+      "Type": 3,
+      "Value": "ExplodingBarrelDeath"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 9540,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: A0G3 (Dispel Magic), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Removes all buffs from units in a target area and deals \u003CA0G3,DataB1\u003E damage to summoned units.|r"
+}

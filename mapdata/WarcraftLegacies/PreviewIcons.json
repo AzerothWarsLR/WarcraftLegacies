@@ -1,0 +1,431 @@
+{
+  "Icons": [
+    {
+      "X": 190,
+      "Y": 73,
+      "Color": "#FFFFff"
+    },
+    {
+      "X": 90,
+      "Y": 188,
+      "Color": "#FFFFff"
+    },
+    {
+      "X": 183,
+      "Y": 124,
+      "Color": "#FFFFff"
+    },
+    {
+      "IconType": 1,
+      "X": 52,
+      "Y": 110,
+      "Color": "#FFFFff"
+    },
+    {
+      "X": 36,
+      "Y": 73,
+      "Color": "#FFFFff"
+    },
+    {
+      "IconType": 1,
+      "X": 202,
+      "Y": 111,
+      "Color": "#FFFFff"
+    },
+    {
+      "X": 141,
+      "Y": 198,
+      "Color": "#FFFFff"
+    },
+    {
+      "X": 170,
+      "Y": 101,
+      "Color": "#FFFFff"
+    },
+    {
+      "IconType": 1,
+      "X": 140,
+      "Y": 39,
+      "Color": "#FFFFff"
+    },
+    {
+      "IconType": 1,
+      "X": 135,
+      "Y": 209,
+      "Color": "#FFFFff"
+    },
+    {
+      "X": 65,
+      "Y": 133,
+      "Color": "#FFFFff"
+    },
+    {
+      "IconType": 1,
+      "X": 196,
+      "Y": 112,
+      "Color": "#FFFFff"
+    },
+    {
+      "X": 107,
+      "Y": 27,
+      "Color": "#FFFFff"
+    },
+    {
+      "X": 144,
+      "Y": 213,
+      "Color": "#FFFFff"
+    },
+    {
+      "IconType": 1,
+      "X": 125,
+      "Y": 241,
+      "Color": "#FFFFff"
+    },
+    {
+      "X": 164,
+      "Y": 60,
+      "Color": "#FFFFff"
+    },
+    {
+      "X": 88,
+      "Y": 111,
+      "Color": "#FFFFff"
+    },
+    {
+      "IconType": 1,
+      "X": 88,
+      "Y": 171,
+      "Color": "#FFFFff"
+    },
+    {
+      "X": 91,
+      "Y": 170,
+      "Color": "#FFFFff"
+    },
+    {
+      "X": 150,
+      "Y": 170,
+      "Color": "#FFFFff"
+    },
+    {
+      "X": 27,
+      "Y": 82,
+      "Color": "#FFFFff"
+    },
+    {
+      "X": 234,
+      "Y": 249,
+      "Color": "#FFFFff"
+    },
+    {
+      "X": 155,
+      "Y": 243,
+      "Color": "#FFFFff"
+    },
+    {
+      "X": 171,
+      "Y": 116,
+      "Color": "#FFFFff"
+    },
+    {
+      "X": 160,
+      "Y": 179,
+      "Color": "#FFFFff"
+    },
+    {
+      "X": 202,
+      "Y": 23,
+      "Color": "#FFFFff"
+    },
+    {
+      "IconType": 1,
+      "X": 98,
+      "Y": 88,
+      "Color": "#FFFFff"
+    },
+    {
+      "IconType": 1,
+      "X": 178,
+      "Y": 215,
+      "Color": "#FFFFff"
+    },
+    {
+      "IconType": 1,
+      "X": 214,
+      "Y": 156,
+      "Color": "#FFFFff"
+    },
+    {
+      "IconType": 1,
+      "X": 180,
+      "Y": 68,
+      "Color": "#FFFFff"
+    },
+    {
+      "IconType": 1,
+      "X": 200,
+      "Y": 126,
+      "Color": "#FFFFff"
+    },
+    {
+      "X": 117,
+      "Y": 248,
+      "Color": "#FFFFff"
+    },
+    {
+      "X": 206,
+      "Y": 75,
+      "Color": "#FFFFff"
+    },
+    {
+      "IconType": 1,
+      "X": 173,
+      "Y": 103,
+      "Color": "#FFFFff"
+    },
+    {
+      "IconType": 1,
+      "X": 231,
+      "Y": 155,
+      "Color": "#FFFFff"
+    },
+    {
+      "X": 162,
+      "Y": 81,
+      "Color": "#FFFFff"
+    },
+    {
+      "X": 29,
+      "Y": 172,
+      "Color": "#FFFFff"
+    },
+    {
+      "IconType": 1,
+      "X": 118,
+      "Y": 146,
+      "Color": "#FFFFff"
+    },
+    {
+      "IconType": 1,
+      "X": 36,
+      "Y": 90,
+      "Color": "#FFFFff"
+    },
+    {
+      "X": 148,
+      "Y": 7,
+      "Color": "#FFFFff"
+    },
+    {
+      "X": 93,
+      "Y": 123,
+      "Color": "#FFFFff"
+    },
+    {
+      "IconType": 1,
+      "X": 91,
+      "Y": 75,
+      "Color": "#FFFFff"
+    },
+    {
+      "X": 208,
+      "Y": 54,
+      "Color": "#FFFFff"
+    },
+    {
+      "X": 89,
+      "Y": 62,
+      "Color": "#FFFFff"
+    },
+    {
+      "IconType": 1,
+      "X": 80,
+      "Y": 129,
+      "Color": "#FFFFff"
+    },
+    {
+      "IconType": 1,
+      "X": 100,
+      "Y": 34,
+      "Color": "#FFFFff"
+    },
+    {
+      "X": 90,
+      "Y": 163,
+      "Color": "#FFFFff"
+    },
+    {
+      "X": 132,
+      "Y": 210,
+      "Color": "#FFFFff"
+    },
+    {
+      "X": 216,
+      "Y": 249,
+      "Color": "#FFFFff"
+    },
+    {
+      "X": 133,
+      "Y": 84,
+      "Color": "#FFFFff"
+    },
+    {
+      "X": 148,
+      "Y": 106,
+      "Color": "#FFFFff"
+    },
+    {
+      "X": 149,
+      "Y": 118,
+      "Color": "#FFFFff"
+    },
+    {
+      "X": 164,
+      "Y": 124,
+      "Color": "#FFFFff"
+    },
+    {
+      "X": 169,
+      "Y": 103,
+      "Color": "#FFFFff"
+    },
+    {
+      "X": 38,
+      "Y": 64,
+      "Color": "#FFFFff"
+    },
+    {
+      "X": 86,
+      "Y": 106,
+      "Color": "#FFFFff"
+    },
+    {
+      "X": 143,
+      "Y": 243,
+      "Color": "#FFFFff"
+    },
+    {
+      "X": 39,
+      "Y": 163,
+      "Color": "#FFFFff"
+    },
+    {
+      "X": 115,
+      "Y": 4,
+      "Color": "#FFFFff"
+    },
+    {
+      "X": 51,
+      "Y": 41,
+      "Color": "#FFFFff"
+    },
+    {
+      "IconType": 2,
+      "X": 184,
+      "Y": 234,
+      "Color": "#ECF0ff"
+    },
+    {
+      "IconType": 2,
+      "X": 90,
+      "Y": 172,
+      "Color": "#949697"
+    },
+    {
+      "IconType": 2,
+      "X": 161,
+      "Y": 182,
+      "Color": "#106247"
+    },
+    {
+      "IconType": 2,
+      "X": 92,
+      "Y": 124,
+      "Color": "#FF8A0d"
+    },
+    {
+      "IconType": 2,
+      "X": 131,
+      "Y": 85,
+      "Color": "#BD00ff"
+    },
+    {
+      "IconType": 2,
+      "X": 37,
+      "Y": 74,
+      "Color": "#0000c3"
+    },
+    {
+      "IconType": 2,
+      "X": 147,
+      "Y": 172,
+      "Color": "#00781e"
+    },
+    {
+      "IconType": 2,
+      "X": 173,
+      "Y": 99,
+      "Color": "#E45Cb0"
+    },
+    {
+      "IconType": 2,
+      "X": 88,
+      "Y": 64,
+      "Color": "#4F2B05"
+    },
+    {
+      "IconType": 2,
+      "X": 187,
+      "Y": 74,
+      "Color": "#0042ff"
+    },
+    {
+      "IconType": 2,
+      "X": 166,
+      "Y": 104,
+      "Color": "#4F5055"
+    },
+    {
+      "IconType": 2,
+      "X": 115,
+      "Y": 251,
+      "Color": "#21C000"
+    },
+    {
+      "IconType": 2,
+      "X": 105,
+      "Y": 29,
+      "Color": "#550081"
+    },
+    {
+      "IconType": 2,
+      "X": 88,
+      "Y": 163,
+      "Color": "#FF0303"
+    },
+    {
+      "IconType": 2,
+      "X": 184,
+      "Y": 127,
+      "Color": "#FFFC00"
+    },
+    {
+      "IconType": 2,
+      "X": 28,
+      "Y": 173,
+      "Color": "#C0FF81"
+    },
+    {
+      "IconType": 2,
+      "X": 208,
+      "Y": 55,
+      "Color": "#1BE7ba"
+    },
+    {
+      "IconType": 2,
+      "X": 213,
+      "Y": 250,
+      "Color": "#A57034"
+    }
+  ]
+}

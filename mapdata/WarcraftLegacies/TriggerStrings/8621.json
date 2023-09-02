@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 8621,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: A0UD (Weapon Empowerement), Researchtip (Tooltip - Learn)",
+  "Value": "Learn Weapon Empowerement - [|cffffcc00Level %d|r]"
+}

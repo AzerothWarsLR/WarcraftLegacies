@@ -1,0 +1,14 @@
+{
+  "Left": 18432,
+  "Bottom": -26528,
+  "Right": 20480,
+  "Top": -23488,
+  "Name": "TwistingNether",
+  "CreationNumber": 116,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "G": 128,
+    "B": 128
+  }
+}

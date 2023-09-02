@@ -1,0 +1,15 @@
+{
+  "Left": 13952,
+  "Bottom": 6208,
+  "Right": 15648,
+  "Top": 8064,
+  "Name": "CaerDarrow",
+  "CreationNumber": 22,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 255,
+    "G": 128,
+    "B": 128
+  }
+}

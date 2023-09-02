@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 19011,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A09G (Goblin Land Mine), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Places a mine at a target point. Enemy units that move near the trap causes the trap to explode for 60 damage in a small area, and 30 damage in a large area. |nHas a 10 second activation timer."
+}

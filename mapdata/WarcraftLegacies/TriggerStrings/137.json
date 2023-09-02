@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 137,
+  "KeyPrecision": 3,
+  "Comment": " Abilities: AUsl (Sleep), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Puts a target enemy unit to sleep. A sleeping unit can be awoken by attacking it. |n|n|cffffcc00Level 1|r - \u003CAUsl,Dur1\u003E second sleep for \u003CAUsl,Cost1\u003E mana. |n|cffffcc00Level 2|r - \u003CAUsl,Dur2\u003E second sleep for \u003CAUsl,Cost2\u003E mana. |n|cffffcc00Level 3|r - \u003CAUsl,Dur3\u003E second sleep for \u003CAUsl,Cost3\u003E mana. |n|cffffcc00Level 4|r - \u003CAUsl,Dur4\u003E second sleep for \u003CAUsl,Cost4\u003E mana."
+}

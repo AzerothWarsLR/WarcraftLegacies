@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 18392,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A0WP (Curse of Executus), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "The Majordomo throws a curse of weakness on all nearby enemies, reducing their attack damage. |n|n|cffffcc00Level 1|r - \u003CA0WP,DataA1,%\u003E% attack damage reduction. |n|cffffcc00Level 2|r - \u003CA0WP,DataA2,%\u003E% attack damage reduction. |n|cffffcc00Level 3|r - \u003CA0WP,DataA3,%\u003E% attack damage reduction. |n|cffffcc00Level 4|r - \u003CA0WP,DataA4,%\u003E% attack damage reduction. "
+}

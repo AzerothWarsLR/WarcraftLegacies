@@ -1,0 +1,14 @@
+{
+  "Left": -7104,
+  "Bottom": -32256,
+  "Right": 6016,
+  "Top": -18208,
+  "Name": "InstanceOutland",
+  "CreationNumber": 352,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "G": 128,
+    "B": 128
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 9550,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: A0G0 (Crushing Wave), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Sends a gigantic wave which deals \u003CA0G0,DataA1\u003E damage to each enemy land unit in a line, up to \u003CA0G0,DataB1\u003E max damage."
+}

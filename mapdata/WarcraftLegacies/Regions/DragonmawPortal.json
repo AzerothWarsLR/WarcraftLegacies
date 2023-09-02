@@ -1,0 +1,15 @@
+{
+  "Left": 22176,
+  "Bottom": -4896,
+  "Right": 22720,
+  "Top": -4576,
+  "Name": "DragonmawPortal",
+  "CreationNumber": 489,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

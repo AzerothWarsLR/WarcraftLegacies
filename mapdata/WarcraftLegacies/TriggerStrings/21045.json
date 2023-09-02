@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 21045,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A006 (Rune of Wrath), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Launches a firey missile at a target enemy unit, dealing 60 damage and stunning the target for \u003CA006,Dur1\u003E seconds. Lasts 0.1 seconds on heroes."
+}

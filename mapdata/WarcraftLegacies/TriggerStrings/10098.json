@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 10098,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A0DB (Vampiric Aura), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Nearby friendly melee units gain hit points when they hit enemy units. |n|n|cffffcc00Level 1|r - Gains 10% of attack damage. |n|cffffcc00Level 2|r - Gains 15% of attack damage. |n|cffffcc00Level 3|r - Gains 20% of attack damage. |n|cffffcc00Level 4|r - Gains 25% of attack damage."
+}

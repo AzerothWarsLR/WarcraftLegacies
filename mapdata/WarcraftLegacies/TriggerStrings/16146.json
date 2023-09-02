@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 16146,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A0OK (Corrupt Blood), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Corrupt the blood of a target unit with the power of the Old Gods. The afflicted unit cannot cast spells and will take \u003CA04A,DataA1\u003E damage per second. Upon its death, 2 Faceless One Deathbringer will spawn from its corpse. Corrupt Blood cannot be dispelled or cancelled.|nLasts 8 seconds on heroes and indefinitely on units."
+}

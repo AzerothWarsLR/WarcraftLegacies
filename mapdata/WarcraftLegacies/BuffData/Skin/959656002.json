@@ -1,0 +1,29 @@
+{
+  "OldId": 1718121794,
+  "NewId": 959656002,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1885959270,
+      "Type": 3,
+      "Value": "TRIGSTR_13538"
+    },
+    {
+      "Id": 1700951398,
+      "Type": 3,
+      "Value": "TRIGSTR_13539"
+    },
+    {
+      "Id": 1835101798,
+      "Type": 3,
+      "Value": "TRIGSTR_13540"
+    },
+    {
+      "Id": 1952543846,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Orc\\StasisTrap\\StasisTotemTarget.mdl"
+    }
+  ]
+}

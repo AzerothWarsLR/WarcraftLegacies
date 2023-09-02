@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 5520,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: AOhx (Hex), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Transforms an enemy unit into a random critter, disabling special abilities. |n|n|cffffcc00Level 1|r - Lasts \u003CAOhx,Dur1\u003E seconds. |n|cffffcc00Level 2|r - Lasts \u003CAOhx,Dur2\u003E seconds. |n|cffffcc00Level 3|r - Lasts \u003CAOhx,Dur3\u003E seconds.|n|cffffcc00Level 4|r - Lasts \u003CAOhx,Dur4\u003E seconds.|n|cffffcc00Level 5|r - Lasts \u003CAOhx,Dur5\u003E seconds.|n|cffffcc00Level 6|r - Lasts \u003CAOhx,Dur6\u003E seconds."
+}

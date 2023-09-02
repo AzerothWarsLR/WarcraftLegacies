@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 6216,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: AEer (Entangling Roots), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Causes roots to burst from the ground, immobilizing and disarming a target enemy unit for \u003CAEer,Dur4\u003E seconds, and dealing \u003CAEer,DataA4\u003E damage per second."
+}

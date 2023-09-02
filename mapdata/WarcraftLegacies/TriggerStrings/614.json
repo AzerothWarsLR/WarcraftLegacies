@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 614,
+  "KeyPrecision": 3,
+  "Comment": " Upgrades: R019 (Magic Sentry), Ubertip (Tooltip - Extended)",
+  "Value": "Improves Kor\u0027kron Shockwave by increasing its damage dealt to \u003CA01T,DataA2\u003E and maximum damage to \u003CA01T,DataB2\u003E, and reducing its cooldown to \u003CA01T,Cool2\u003E seconds."
+}

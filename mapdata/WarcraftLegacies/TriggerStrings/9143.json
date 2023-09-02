@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 9143,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: A0BS (Murder of Crows), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Summons \u003CA0BS,DataB1\u003E Crows. Each Crow has \u003Ce00C,realHP\u003E hit points and deals \u003Ce00C,mindmg1\u003E - \u003Ce00C,maxdmg1\u003E damage. |nLasts \u003CA0BS,Dur1\u003E seconds. |n|n|cffffcc00Attacks land and air units.|r"
+}

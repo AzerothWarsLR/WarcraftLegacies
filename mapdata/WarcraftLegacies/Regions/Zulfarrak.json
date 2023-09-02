@@ -1,0 +1,15 @@
+{
+  "Left": -12352,
+  "Bottom": -14272,
+  "Right": -10528,
+  "Top": -12064,
+  "Name": "Zulfarrak",
+  "CreationNumber": 123,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 128
+  }
+}

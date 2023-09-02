@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 6048,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: AHbh (Bash), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Gives a chance that an attack will do \u003CAHbh,DataC1\u003E bonus damage and stun an opponent for \u003CAHbh,Dur1\u003E seconds. |n|n|cffffcc00Level 1|r - \u003CAHbh,DataA1\u003E% chance per attack. |n|cffffcc00Level 2|r - \u003CAHbh,DataA2\u003E% chance per attack. |n|cffffcc00Level 3|r - \u003CAHbh,DataA3\u003E% chance per attack. |n|cffffcc00Level 4|r - \u003CAHbh,DataA4\u003E% chance per attack."
+}

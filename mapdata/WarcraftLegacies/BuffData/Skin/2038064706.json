@@ -1,0 +1,47 @@
+{
+  "OldId": 2038064706,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1953653094,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNFrenzy.blp"
+    },
+    {
+      "Id": 1952543846,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Orc\\TrollBerserk\\TrollBeserkerTarget.mdl"
+    },
+    {
+      "Id": 1700951398,
+      "Type": 3,
+      "Value": "TRIGSTR_16175"
+    },
+    {
+      "Id": 1835101798,
+      "Type": 3,
+      "Value": "TRIGSTR_16757"
+    },
+    {
+      "Id": 1718840934,
+      "Type": 3,
+      "Value": "TRIGSTR_17166"
+    },
+    {
+      "Id": 811693158,
+      "Type": 3,
+      "Value": "head"
+    },
+    {
+      "Id": 828470374,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1667331174,
+      "Value": 1
+    }
+  ]
+}

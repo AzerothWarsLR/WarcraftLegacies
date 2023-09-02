@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 19029,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A06M (Divine Shield), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "An impenetrable shield surrounds the Paladin, protecting him from all damage and spells for a set amount of time. |n|n|cffffcc00Level 1|r - Lasts \u003CA06M,Dur1\u003E seconds. |n|cffffcc00Level 2|r - Lasts \u003CA06M,Dur2\u003E seconds. |n|cffffcc00Level 3|r - Lasts \u003CA06M,Dur3\u003E seconds. |n|cffffcc00Level 4|r - Lasts \u003CA06M,Dur4\u003E seconds."
+}

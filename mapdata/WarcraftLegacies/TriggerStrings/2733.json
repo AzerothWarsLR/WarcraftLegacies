@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 2733,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: A091 (Seed of Burning Hatred), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Plant a seed of hatred onto a friendly building. The afflicted unit cannot train units or uproot and  and will take damage until it dies. Upon its death, a mighty Ancient will emerge from the host corpse permanently. The growth of the seed, once planted, cannot be stopped, dispelled, or cancelled.|n|n|cffffcc00Level 1|r - 240 seconds cooldown.|n|cffffcc00Level 2|r - 120 seconds cooldown.|n|cffffcc00Level 3|r - 60 seconds cooldown."
+}

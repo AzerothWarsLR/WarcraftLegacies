@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 17127,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A0VU (Magma Blast), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Deals \u003CA0VU,DataA3\u003E damage, stuns heroes for \u003CA0VU,HeroDur3\u003E seconds and normal units for \u003CA0VU,Dur3\u003E seconds."
+}

@@ -1,0 +1,15 @@
+{
+  "Left": -21280,
+  "Bottom": -18816,
+  "Right": -5664,
+  "Top": 12000,
+  "Name": "Kalimdor",
+  "CreationNumber": 396,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

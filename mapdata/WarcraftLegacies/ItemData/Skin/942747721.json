@@ -1,0 +1,39 @@
+{
+  "OldId": 1735289699,
+  "NewId": 942747721,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1868786025,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNPoTN_Sanctity_Potion.blp"
+    },
+    {
+      "Id": 1936024681,
+      "Type": 3,
+      "Value": "TRIGSTR_1952"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "TRIGSTR_1954"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "TRIGSTR_19233"
+    }
+  ]
+}

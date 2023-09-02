@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 7014,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: A0YP (Silencing Glaive), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Throws a Magical Glaive at an enemy unit which cause 15 damage per second, prevent the casting of spells, and reduce attack damage by 50%.|nLasts 16 seconds. (4 for heroes)"
+}

@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 13942,
+  "KeyPrecision": 5,
+  "Comment": " Upgrades: Roen (Ensnare), Ubertip (Tooltip - Extended)",
+  "Value": "Increases the effectiveness of the ensnare ability. Lasts \u003CAens,Dur2\u003E seconds on units and increases cast range to \u003CAens,Rng2\u003E."
+}

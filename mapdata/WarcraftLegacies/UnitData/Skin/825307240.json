@@ -1,0 +1,73 @@
+{
+  "OldId": 2004121448,
+  "NewId": 825307240,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "TRIGSTR_3083"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 2.7
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 5
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "TRIGSTR_14886"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "TRIGSTR_20039"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "TRIGSTR_16478"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "TRIGSTR_18764"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\GoblinTinkerTurret_Artillery.mdl"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDwarfTurret.blp"
+    },
+    {
+      "Id": 1651012469,
+      "Type": 3,
+      "Value": "ShadowTrollBurrow"
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "CannonTower"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 1
+    }
+  ]
+}

@@ -18,9 +18,8 @@ namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
       DisplaysPosition = true;
 
       PlayerUnitEvents.Register(UnitTypeEvent.ChangesOwner, OnUnitChangeOwner);
+      Position = new(GetUnitX(_target), GetUnitY(_target));
     }
-
-    public override Point Position => new(GetUnitX(_target), GetUnitY(_target));
 
     private void OnUnitChangeOwner()
     {
