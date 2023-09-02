@@ -79,7 +79,6 @@ namespace Launcher.Services
         Regions = DeserializeRegionsFromDirectory(Path.Combine(mapDataRootDirectory, RegionsDirectoryPath)),
         ShadowMap = DeserializeFromFile<MapShadowMap, MapShadowMapDto>(Path.Combine(mapDataRootDirectory, ShadowMapPath)),
         Info = DeserializeFromFile<MapInfo, MapInfoDto>(Path.Combine(mapDataRootDirectory, InfoPath)),
-        CustomTextTriggers = DeserializeFromFile<MapCustomTextTriggers, MapCustomTextTriggersDto>(Path.Combine(mapDataRootDirectory, CustomTextTriggersPath)),
         TriggerStrings = DeserializeTriggerStringsFromDirectory(Path.Combine(mapDataRootDirectory, TriggerStringsDirectoryPath)),
         Doodads = DeserializeDoodadsFromDirectory(Path.Combine(mapDataRootDirectory, DoodadsDirectoryPath)),
         Units = DeserializeUnitsFromDirectory(Path.Combine(mapDataRootDirectory, UnitsDirectoryPath)),

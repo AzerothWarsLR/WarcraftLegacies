@@ -88,8 +88,6 @@ namespace Launcher.Services
         SerializeAndWrite<MapShadowMap, MapShadowMapDto>(map.ShadowMap, outputFolderPath, ShadowMapPath);
       if (map.TriggerStrings != null)
         SerializeAndWriteTriggerStrings(map.TriggerStrings, Path.Combine(outputFolderPath, TriggerStringsDirectoryPath));
-      if (map.CustomTextTriggers != null)
-        SerializeAndWrite<MapCustomTextTriggers, MapCustomTextTriggersDto>(map.CustomTextTriggers, outputFolderPath,CustomTextTriggersPath);
       if (map.Sounds != null)
         SerializeAndWriteSounds(map.Sounds, Path.Combine(outputFolderPath, SoundsDirectoryPath));
 

@@ -2,11 +2,9 @@
 {
   public static class MapDataPaths
   {
-    public const string CustomTextTriggersPath = "CustomTextTriggers.json";
     public const string ShadowMapPath = "ShadowMap.json";
     public const string PreviewIconsPath = "PreviewIcons.json";
     public const string PathingMapPath = "PathingMap.json";
-    public const string ImportedFilesPath = "ImportedFiles.json";
     public const string InfoPath = "Info.json";
     public const string EnvironmentPath = "Environment.json";
 

@@ -23,7 +23,6 @@ namespace Launcher.Services
       {
         cfg.CreateMap<MapAbilityObjectDataDto, AbilityObjectData>().ReverseMap();
         cfg.CreateMap<MapBuffObjectDataDto, BuffObjectData>().ReverseMap();
-        cfg.CreateMap<MapCustomTextTriggersDto, MapCustomTextTriggers>().ReverseMap();
         cfg.CreateMap<MapDestructableObjectDataDto,DestructableObjectData>().ReverseMap();
         cfg.CreateMap<MapDoodadObjectDataDto, DoodadObjectData>().ReverseMap();
         cfg.CreateMap<MapEnvironmentDto, MapEnvironment>().ReverseMap();
