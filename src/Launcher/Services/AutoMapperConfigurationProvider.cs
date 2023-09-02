@@ -27,7 +27,6 @@ namespace Launcher.Services
         cfg.CreateMap<MapDestructableObjectDataDto,DestructableObjectData>().ReverseMap();
         cfg.CreateMap<MapDoodadObjectDataDto, DoodadObjectData>().ReverseMap();
         cfg.CreateMap<MapEnvironmentDto, MapEnvironment>().ReverseMap();
-        cfg.CreateMap<MapImportedFilesDto, ImportedFiles>().ReverseMap();
         cfg.CreateMap<MapItemObjectDataDto, ItemObjectData>().ReverseMap();
         cfg.CreateMap<MapInfoDto, MapInfo>().ReverseMap();
         cfg.CreateMap<MapPathingMapDto, MapPathingMap>().ReverseMap();

@@ -80,8 +80,6 @@ namespace Launcher.Services
         SerializeAndWriteRegions(map.Regions, Path.Combine(outputFolderPath, RegionsDirectoryPath));
       if (map.Units != null)
         SerializeAndWriteUnits(map.Units, Path.Combine(outputFolderPath, UnitsDirectoryPath));
-      if (map.ImportedFiles != null)
-        SerializeAndWrite<ImportedFiles, MapImportedFilesDto>(map.ImportedFiles, outputFolderPath, ImportedFilesPath);
       if (map.PathingMap != null)
         SerializeAndWrite<MapPathingMap, MapPathingMapDto>(map.PathingMap, outputFolderPath, PathingMapPath);
       if (map.PreviewIcons != null)

@@ -78,7 +78,6 @@ namespace Launcher.Services
         PreviewIcons = DeserializeFromFile<MapPreviewIcons, MapPreviewIconsDto>(Path.Combine(mapDataRootDirectory, PreviewIconsPath)),
         Regions = DeserializeRegionsFromDirectory(Path.Combine(mapDataRootDirectory, RegionsDirectoryPath)),
         ShadowMap = DeserializeFromFile<MapShadowMap, MapShadowMapDto>(Path.Combine(mapDataRootDirectory, ShadowMapPath)),
-        ImportedFiles = DeserializeFromFile<ImportedFiles, MapImportedFilesDto>(Path.Combine(mapDataRootDirectory, ImportedFilesPath)),
         Info = DeserializeFromFile<MapInfo, MapInfoDto>(Path.Combine(mapDataRootDirectory, InfoPath)),
         CustomTextTriggers = DeserializeFromFile<MapCustomTextTriggers, MapCustomTextTriggersDto>(Path.Combine(mapDataRootDirectory, CustomTextTriggersPath)),
         TriggerStrings = DeserializeTriggerStringsFromDirectory(Path.Combine(mapDataRootDirectory, TriggerStringsDirectoryPath)),
