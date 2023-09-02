@@ -72,11 +72,11 @@ namespace Launcher.Services
     {
       var map = new Map
       {
-        Sounds = null,
+        Sounds = DeserializeSoundsFromDirectory(Path.Combine(mapDataRootDirectory, SoundsDirectoryPath)),
         Environment = DeserializeFromFile<MapEnvironment, MapEnvironmentDto>(Path.Combine(mapDataRootDirectory, EnvironmentPath)),
         PathingMap = DeserializeFromFile<MapPathingMap, MapPathingMapDto>(Path.Combine(mapDataRootDirectory, PathingMapPath)),
         PreviewIcons = DeserializeFromFile<MapPreviewIcons, MapPreviewIconsDto>(Path.Combine(mapDataRootDirectory, PreviewIconsPath)),
-        Regions = null,
+        Regions = DeserializeRegionsFromDirectory(Path.Combine(mapDataRootDirectory, RegionsDirectoryPath)),
         ShadowMap = DeserializeFromFile<MapShadowMap, MapShadowMapDto>(Path.Combine(mapDataRootDirectory, ShadowMapPath)),
         ImportedFiles = DeserializeFromFile<ImportedFiles, MapImportedFilesDto>(Path.Combine(mapDataRootDirectory, ImportedFilesPath)),
         Info = DeserializeFromFile<MapInfo, MapInfoDto>(Path.Combine(mapDataRootDirectory, InfoPath)),
@@ -104,6 +104,34 @@ namespace Launcher.Services
         Script = File.ReadAllText(Path.Combine(mapDataRootDirectory, ScriptPath))
       };
       return map;
+    }
+
+    private MapRegions DeserializeRegionsFromDirectory(string directory)
+    {
+      var regions = new MapRegions(MapRegionsFormatVersion.v5);
+      var files = Directory.EnumerateFiles(directory, "*", SearchOption.AllDirectories);
+      foreach (var file in files)
+      {
+        var fileContents = File.ReadAllText(file);
+        var dataTransferObject = JsonSerializer.Deserialize<RegionDto>(fileContents, _jsonSerializerOptions);
+        var region = _mapper.Map<Region>(dataTransferObject);
+        regions.Regions.Add(region);
+      }
+      return regions;
+    }
+
+    private MapSounds DeserializeSoundsFromDirectory(string directory)
+    {
+      var sounds = new MapSounds(MapSoundsFormatVersion.v3);
+      var files = Directory.EnumerateFiles(directory, "*", SearchOption.AllDirectories);
+      foreach (var file in files)
+      {
+        var fileContents = File.ReadAllText(file);
+        var dataTransferObject = JsonSerializer.Deserialize<SoundDto>(fileContents, _jsonSerializerOptions);
+        var sound = _mapper.Map<Sound>(dataTransferObject);
+        sounds.Sounds.Add(sound);
+      }
+      return sounds;
     }
 
     private UpgradeObjectData DeserializeUpgradeDataFromDirectory(string directory)
