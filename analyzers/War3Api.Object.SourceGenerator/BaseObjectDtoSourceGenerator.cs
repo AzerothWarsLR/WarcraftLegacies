@@ -38,9 +38,10 @@ public sealed class BaseObjectDtoSourceGenerator : ISourceGenerator
       foreach (var classDeclaration in classDeclarations)
       {
         var classSymbol = semanticModel.GetDeclaredSymbol(classDeclaration);
-        GenerateDtoClass(context, classSymbol!);
-        GenerateMapperClass(context, classSymbol!);
+        GenerateDtoClass(context, classSymbol);
+        GenerateMapperClass(context, classSymbol);
       }
+      
     }
   }
 
