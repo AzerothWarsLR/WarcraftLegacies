@@ -12,7 +12,7 @@ namespace WarcraftLegacies.Source.Quests.Gilneas
   /// <summary>
   /// Go to the Shrine of Goldrinn in Duskwood in order to unlock Goldrinn as a hero
   /// </summary>
-  public class QuestGoldrinnHumanPath : QuestData
+  public sealed class QuestGoldrinnHumanPath : QuestData
   {
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestGoldrinnHumanPath"/> class.

@@ -1,6 +1,6 @@
 ﻿namespace Launcher.DataTransferObjects
 {
-  public class SoundDto
+  public sealed class SoundDto
   {
     public string Name { get; set; }
     public string FilePath { get; set; }
