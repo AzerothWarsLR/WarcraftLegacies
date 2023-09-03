@@ -99,10 +99,8 @@ namespace WarcraftLegacies.Source.GameLogic
         {
           unit.Remove();
         }
-        foreach (var quest in faction.GetAllQuests().Where(q => q.Shared is false))
-        {
-          quest.Progress = MacroTools.QuestSystem.QuestProgress.Failed;
-        }
+
+        faction.Defeat();
       }
     }
 

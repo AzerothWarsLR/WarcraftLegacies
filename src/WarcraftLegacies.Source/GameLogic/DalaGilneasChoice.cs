@@ -96,13 +96,9 @@ namespace WarcraftLegacies.Source.GameLogic
           unit.SetOwner(Player(PLAYER_NEUTRAL_AGGRESSIVE));
         }
         else
-        {
           unit.Remove();
-        }
-        foreach (var quest in faction.GetAllQuests().Where(q => q.Shared is false))
-        {
-          quest.Progress = MacroTools.QuestSystem.QuestProgress.Failed;
-        }
+
+        faction.Defeat();
       }
     }
 
