@@ -1,4 +1,5 @@
-﻿using MacroTools.Extensions;
+﻿using System;
+using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using static War3Api.Common;
@@ -6,62 +7,117 @@ using static War3Api.Common;
 namespace WarcraftLegacies.Source.Powers
 {
   /// <summary>
-  /// Pings the specified <see cref="LegendaryHero"/> on the map
+  /// Pings the specified <see cref="LegendaryHero"/> on the map.
   /// </summary>
   public sealed class PingPower : Power
   {
-    private readonly LegendaryHero _arthas;
-    private timer _coodownTimer;
-    private int _pingTime;
+    private readonly LegendaryHero _targetHero;
+    private readonly timer _coodownTimer;
+    private readonly int _pingTime;
     private readonly int _cooldown;
-
-
-    /// <param name="heroToPing">The pinged hero</param>
-    /// <param name="name">Name of the power</param>
-    /// <param name="pingTime">The duration of the ping</param>
-    /// <param name="cooldown">The cooldown of the power in seconds</param>
+    private trigger? _loadTrigger;
+    private trigger? _unloadTrigger;
+    private trigger? _transportKilledTrigger;
+    private unit? _transportContainingHero;
+    
+    /// <param name="heroToPing">The <see cref="LegendaryHero"/> to ping.</param>
+    /// <param name="name">Name of the power.</param>
+    /// <param name="pingTime">How long the ping should remain on the minimap.</param>
+    /// <param name="cooldown">The cooldown of the power in seconds.</param>
     public PingPower(LegendaryHero heroToPing, string name, int pingTime, int cooldown)
     {
       Usable = true;
       _pingTime = pingTime;
       _cooldown = cooldown;
-      _arthas = heroToPing;
+      _targetHero = heroToPing;
       _coodownTimer = CreateTimer();
       Name = name;
       IconName = "HelmofDomination";
-      Description = $"Ping {heroToPing.Name} on the map {pingTime} for seconds.\n{cooldown} seconds cooldown.";
+      Description = $"Ping {heroToPing.Name} on the map {pingTime} for seconds.";
     }
 
     ///<inheritdoc/>
     public override void OnAdd(player whichPlayer)
     {
-      if (GetLocalPlayer() != whichPlayer)
+      if (_targetHero.Unit == null)
         return;
-      if (_arthas.Unit != null)
-      {
-        PingMinimap(_arthas.Unit.GetPosition().X, _arthas.Unit.GetPosition().Y, _pingTime);
-      }
+
+      _loadTrigger = CreateLoadTrigger(_targetHero.Unit);
     }
 
     ///<inheritdoc/>
     public override void OnRemove(player whichPlayer)
     {
       _coodownTimer.Destroy();
+      _loadTrigger?.Destroy();
+      _unloadTrigger?.Destroy();
+      _transportKilledTrigger?.Destroy();
     }
 
     ///<inheritdoc/>
-     public override void OnUse(player whichPlayer)
+    public override void OnUse(player whichPlayer)
     {
       if (OnCooldown)
         return;
-      if (_arthas.Unit == null || !_arthas.Unit.IsAlive()) return;
+
+      if (_targetHero.Unit == null || !_targetHero.Unit.IsAlive()) return;
       OnCooldown = true;
-      _coodownTimer.Start(_cooldown, false, () =>
-      {
-        OnCooldown = false;
-      });
+      _coodownTimer.Start(_cooldown, false, () => { OnCooldown = false; });
+
+      var pingTarget = _transportContainingHero ?? _targetHero.Unit;
+      if (pingTarget == null)
+        return;
+
       if (GetLocalPlayer() == whichPlayer)
-        PingMinimap(_arthas.Unit.GetPosition().X, _arthas.Unit.GetPosition().Y, _pingTime);
+        PingMinimap(pingTarget.GetPosition().X, pingTarget.GetPosition().Y, _pingTime);
+    }
+    
+    private trigger CreateLoadTrigger(unit target)
+    {
+      return CreateTrigger()
+        .RegisterUnitEvent(target, EVENT_UNIT_LOADED)
+        .AddAction(() =>
+        {
+          _unloadTrigger?.Destroy();
+          _transportKilledTrigger?.Destroy();
+          
+          _transportContainingHero = GetTransportUnit();
+          _unloadTrigger = CreateUnloadTrigger(_transportContainingHero);
+          _transportKilledTrigger = CreateTransportDestroyedTrigger(_transportContainingHero);
+        });
+    }
+
+    private trigger CreateUnloadTrigger(unit transport)
+    {
+      return CreateTrigger()
+        .RegisterUnitEvent(transport, EVENT_UNIT_ISSUED_TARGET_ORDER)
+        .RegisterUnitEvent(transport, EVENT_UNIT_ISSUED_POINT_ORDER)
+
+        .AddAction(() =>
+        {
+          if (WasTargetHeroUnloaded()) 
+            ClearTransportData();
+        });
+    }
+    
+    private trigger CreateTransportDestroyedTrigger(unit transport) =>
+      CreateTrigger()
+        .RegisterUnitEvent(transport, EVENT_UNIT_DEATH)
+        .AddAction(ClearTransportData);
+    
+    private bool WasTargetHeroUnloaded()
+    {
+      var issuedOrderName = OrderId2String(GetIssuedOrderId());
+      Console.WriteLine(issuedOrderName);
+      return issuedOrderName == "unloadall" ||
+             (issuedOrderName == "unload" && GetOrderTargetUnit() == _targetHero.Unit);
+    }
+    
+    private void ClearTransportData()
+    {
+      _transportContainingHero = null;
+      _unloadTrigger?.Destroy();
+      _transportKilledTrigger?.Destroy();
     }
   }
 }
