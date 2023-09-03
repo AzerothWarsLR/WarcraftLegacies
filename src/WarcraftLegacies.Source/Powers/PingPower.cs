@@ -108,7 +108,6 @@ namespace WarcraftLegacies.Source.Powers
     private bool WasTargetHeroUnloaded()
     {
       var issuedOrderName = OrderId2String(GetIssuedOrderId());
-      Console.WriteLine(issuedOrderName);
       return issuedOrderName == "unloadall" ||
              (issuedOrderName == "unload" && GetOrderTargetUnit() == _targetHero.Unit);
     }
