@@ -62,10 +62,10 @@
         "X": -9344,
         "Y": -11456
       },
-      "AllyLowPriorityFlags": {},
-      "AllyHighPriorityFlags": {},
-      "EnemyLowPriorityFlags": {},
-      "EnemyHighPriorityFlags": {}
+      "AllyLowPriorityFlags": 4456450,
+      "AllyHighPriorityFlags": 262432,
+      "EnemyLowPriorityFlags": 262176,
+      "EnemyHighPriorityFlags": 262144
     },
     {
       "Id": 1,
@@ -77,10 +77,8 @@
         "X": 12928,
         "Y": 8448
       },
-      "AllyLowPriorityFlags": {},
-      "AllyHighPriorityFlags": {},
-      "EnemyLowPriorityFlags": {},
-      "EnemyHighPriorityFlags": {}
+      "AllyLowPriorityFlags": 8650784,
+      "EnemyLowPriorityFlags": 32
     },
     {
       "Id": 2,
@@ -92,10 +90,10 @@
         "X": 17728,
         "Y": 12672
       },
-      "AllyLowPriorityFlags": {},
-      "AllyHighPriorityFlags": {},
-      "EnemyLowPriorityFlags": {},
-      "EnemyHighPriorityFlags": {}
+      "AllyLowPriorityFlags": 8388693,
+      "AllyHighPriorityFlags": 262157,
+      "EnemyLowPriorityFlags": 8388608,
+      "EnemyHighPriorityFlags": 32
     },
     {
       "Id": 3,
@@ -107,10 +105,10 @@
         "X": -5504,
         "Y": 18560
       },
-      "AllyLowPriorityFlags": {},
-      "AllyHighPriorityFlags": {},
-      "EnemyLowPriorityFlags": {},
-      "EnemyHighPriorityFlags": {}
+      "AllyLowPriorityFlags": 36,
+      "AllyHighPriorityFlags": 100,
+      "EnemyLowPriorityFlags": 270368,
+      "EnemyHighPriorityFlags": 8658944
     },
     {
       "Id": 4,
@@ -122,10 +120,9 @@
         "X": 12160,
         "Y": -3328
       },
-      "AllyLowPriorityFlags": {},
-      "AllyHighPriorityFlags": {},
-      "EnemyLowPriorityFlags": {},
-      "EnemyHighPriorityFlags": {}
+      "AllyLowPriorityFlags": 4456456,
+      "AllyHighPriorityFlags": 8651776,
+      "EnemyLowPriorityFlags": 262144
     },
     {
       "Id": 5,
@@ -137,10 +134,10 @@
         "X": -8448,
         "Y": -2752
       },
-      "AllyLowPriorityFlags": {},
-      "AllyHighPriorityFlags": {},
-      "EnemyLowPriorityFlags": {},
-      "EnemyHighPriorityFlags": {}
+      "AllyLowPriorityFlags": -1035730944,
+      "AllyHighPriorityFlags": 1174667264,
+      "EnemyLowPriorityFlags": -994050048,
+      "EnemyHighPriorityFlags": -1031798784
     },
     {
       "Id": 6,
@@ -152,10 +149,10 @@
         "X": -3136,
         "Y": -31040
       },
-      "AllyLowPriorityFlags": {},
-      "AllyHighPriorityFlags": {},
-      "EnemyLowPriorityFlags": {},
-      "EnemyHighPriorityFlags": {}
+      "AllyLowPriorityFlags": 262152,
+      "AllyHighPriorityFlags": 4194440,
+      "EnemyLowPriorityFlags": 262144,
+      "EnemyHighPriorityFlags": 262144
     },
     {
       "Id": 7,
@@ -167,10 +164,8 @@
         "X": 9792,
         "Y": 2816
       },
-      "AllyLowPriorityFlags": {},
-      "AllyHighPriorityFlags": {},
-      "EnemyLowPriorityFlags": {},
-      "EnemyHighPriorityFlags": {}
+      "AllyLowPriorityFlags": 262144,
+      "AllyHighPriorityFlags": 262152
     },
     {
       "Id": 8,
@@ -182,10 +177,7 @@
         "X": -8896,
         "Y": -13504
       },
-      "AllyLowPriorityFlags": {},
-      "AllyHighPriorityFlags": {},
-      "EnemyLowPriorityFlags": {},
-      "EnemyHighPriorityFlags": {}
+      "AllyHighPriorityFlags": 1
     },
     {
       "Id": 10,
@@ -197,10 +189,10 @@
         "X": 7104,
         "Y": -15616
       },
-      "AllyLowPriorityFlags": {},
-      "AllyHighPriorityFlags": {},
-      "EnemyLowPriorityFlags": {},
-      "EnemyHighPriorityFlags": {}
+      "AllyLowPriorityFlags": 262152,
+      "AllyHighPriorityFlags": 24,
+      "EnemyLowPriorityFlags": 262144,
+      "EnemyHighPriorityFlags": 262144
     },
     {
       "Id": 11,
@@ -212,10 +204,10 @@
         "X": -9344,
         "Y": 10560
       },
-      "AllyLowPriorityFlags": {},
-      "AllyHighPriorityFlags": {},
-      "EnemyLowPriorityFlags": {},
-      "EnemyHighPriorityFlags": {}
+      "AllyLowPriorityFlags": 262152,
+      "AllyHighPriorityFlags": 76,
+      "EnemyLowPriorityFlags": 262144,
+      "EnemyHighPriorityFlags": 262144
     },
     {
       "Id": 13,
@@ -227,10 +219,8 @@
         "X": -20608,
         "Y": 8512
       },
-      "AllyLowPriorityFlags": {},
-      "AllyHighPriorityFlags": {},
-      "EnemyLowPriorityFlags": {},
-      "EnemyHighPriorityFlags": {}
+      "AllyHighPriorityFlags": 32,
+      "EnemyLowPriorityFlags": 1200
     },
     {
       "Id": 15,
@@ -242,10 +232,8 @@
         "X": 384,
         "Y": 5952
       },
-      "AllyLowPriorityFlags": {},
-      "AllyHighPriorityFlags": {},
-      "EnemyLowPriorityFlags": {},
-      "EnemyHighPriorityFlags": {}
+      "AllyLowPriorityFlags": 4203520,
+      "AllyHighPriorityFlags": 264481
     },
     {
       "Id": 18,
@@ -257,10 +245,10 @@
         "X": -22592,
         "Y": -13696
       },
-      "AllyLowPriorityFlags": {},
-      "AllyHighPriorityFlags": {},
-      "EnemyLowPriorityFlags": {},
-      "EnemyHighPriorityFlags": {}
+      "AllyLowPriorityFlags": 4194321,
+      "AllyHighPriorityFlags": 262196,
+      "EnemyLowPriorityFlags": 4195504,
+      "EnemyHighPriorityFlags": 12582944
     },
     {
       "Id": 22,
@@ -272,10 +260,8 @@
         "X": 3904,
         "Y": -13440
       },
-      "AllyLowPriorityFlags": {},
-      "AllyHighPriorityFlags": {},
-      "EnemyLowPriorityFlags": {},
-      "EnemyHighPriorityFlags": {}
+      "AllyHighPriorityFlags": 1040,
+      "EnemyLowPriorityFlags": 32
     },
     {
       "Id": 23,
@@ -286,41 +272,37 @@
       "StartPosition": {
         "X": 18816,
         "Y": -30784
-      },
-      "AllyLowPriorityFlags": {},
-      "AllyHighPriorityFlags": {},
-      "EnemyLowPriorityFlags": {},
-      "EnemyHighPriorityFlags": {}
+      }
     }
   ],
   "Forces": [
     {
       "Flags": 11,
-      "Players": {},
+      "Players": -4500984,
       "Name": "TRIGSTR_3547"
     },
     {
       "Flags": 11,
-      "Players": {},
+      "Players": 134,
       "Name": "TRIGSTR_2539"
     },
     {
       "Flags": 11,
-      "Players": {},
+      "Players": 289,
       "Name": "TRIGSTR_4402"
     },
     {
       "Flags": 11,
-      "Players": {},
+      "Players": 4195344,
       "Name": "TRIGSTR_2619"
     },
     {
       "Flags": 11,
-      "Players": {},
+      "Players": 272384,
       "Name": "TRIGSTR_5355"
     },
     {
-      "Players": {},
+      "Players": 32832,
       "Name": "TRIGSTR_19611"
     }
   ],

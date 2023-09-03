@@ -102,7 +102,7 @@ public sealed class MapInfoDto
 
   public List<PlayerDataDto> Players { get; init; } = new();
 
-  public List<ForceData> Forces { get; init; } = new();
+  public List<ForceDataDto> Forces { get; init; } = new();
 
   public List<UpgradeData> UpgradeData { get; init; } = new();
 

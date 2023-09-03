@@ -52,6 +52,7 @@ namespace Launcher.Services
           => opt.MapFrom<ColorValueResolver>())
           .ReverseMap();
         cfg.CreateMap<TriggerItemDto, TriggerItem>().ReverseMap();
+        cfg.CreateMap<ForceDataDto, ForceData>().ReverseMap();
       });
       return autoMapperConfig;
     }
