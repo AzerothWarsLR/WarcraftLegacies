@@ -1,0 +1,15 @@
+{
+  "Left": -960,
+  "Bottom": -5824,
+  "Right": -320,
+  "Top": -5216,
+  "Name": "ZeppelinReturn",
+  "CreationNumber": 414,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

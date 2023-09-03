@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 100,
+  "KeyPrecision": 3,
+  "Comment": " Abilities: A09D (Acid Bomb), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Hurls a flask of acid at a target.  The flask breaks upon impact, splashing a powerful acid on nearby hostile units.|n|nDecreases armor by \u003CA09D,DataC1\u003E; deals 20 damage per second to the primary target; deals 6 damage to nearby targets.|n|cffffcc00Lasts 12(3 for Heroes) seconds."
+}

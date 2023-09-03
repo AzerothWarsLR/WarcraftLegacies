@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 15681,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A077 (Inferno), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Summons an Infernal from the sky, causing \u003CA077,DataA1\u003E damage to enemy units near the impact point. The Infernal lasts \u003CA077,Dur1\u003E seconds."
+}

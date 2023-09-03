@@ -1,0 +1,18 @@
+{
+  "OldId": 879578969,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1818846820,
+      "Type": 3,
+      "Value": "Doodads\\Dungeon\\Props\\MineCartEmpty\\MineCartEmpty.mdl"
+    },
+    {
+      "Id": 1936289124,
+      "Type": 2,
+      "Value": 0.1
+    }
+  ]
+}

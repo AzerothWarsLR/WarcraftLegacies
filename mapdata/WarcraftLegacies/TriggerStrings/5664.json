@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 5664,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: A0LI (Spell Mastery), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Give Khadgar a chance to cast a random spell from the following list when attacking an enemy unit. Khadgar Arcane Phantoms also have this ability. |n|n|cffffcc00Level 1|r - \u003CAEev,DataA1,%\u003E% chance that an opponent misses. |n|cffffcc00Level 2|r - \u003CAEev,DataA2,%\u003E% chance that an opponent misses. |n|cffffcc00Level 3|r - \u003CAEev,DataA3,%\u003E% chance that an opponent misses. |n|cffffcc00Level 3|r - 35% chance that an opponent misses."
+}

@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 2848,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: A033 (Wise Council), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "The hero utters mystical words, increasing the magical powers of nearby allies.|n|n|cffffcc00Level 1|r - Adds 50 mana to nearby friendly units. |n|cffffcc00Level 2|r - Adds 100 mana to nearby friendly units. |n|cffffcc00Level 3|r - Adds 150 mana to nearby friendly units. |n|cffffcc00Level 4|r - Adds 200 mana to nearby friendly units."
+}

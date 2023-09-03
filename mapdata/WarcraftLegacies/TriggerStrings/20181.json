@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 20181,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A10L (Enchanted Bolts), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Fires an enchanted bolt at every enemy unit in the target area, dealing \u003CA0GL,DataA4\u003E damage and stunning each target for \u003CA0GL,Dur4\u003E seconds."
+}

@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 12275,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A038 (Cavalry Onslaught), Researchtip (Tooltip - Learn)",
+  "Value": "Learn Cavalry Onslaught - [|cffffcc00Level %d|r]"
+}

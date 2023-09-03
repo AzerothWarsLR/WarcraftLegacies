@@ -1,0 +1,24 @@
+{
+  "OldId": 828655937,
+  "NewId": 826486849,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "TRIGSTR_10399"
+    },
+    {
+      "Id": 1952543841,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\FaerieDragonMissile\\FaerieDragonMissile.mdl"
+    },
+    {
+      "Id": 811693153,
+      "Type": 3,
+      "Value": "weapon"
+    }
+  ]
+}

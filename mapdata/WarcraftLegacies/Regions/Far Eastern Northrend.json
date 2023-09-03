@@ -1,0 +1,16 @@
+{
+  "Left": 4608,
+  "Bottom": 20064,
+  "Right": 7328,
+  "Top": 22944,
+  "Name": "Far Eastern Northrend",
+  "CreationNumber": 40,
+  "WeatherType": 1936215635,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 212,
+    "G": 94,
+    "B": 25
+  }
+}

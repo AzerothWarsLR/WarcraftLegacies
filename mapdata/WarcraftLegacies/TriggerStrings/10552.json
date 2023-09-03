@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 10552,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A0BB (Immolation), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Activate Immolation to engulf this unit in flames, causing 25 damage per second to nearby enemy land units. |nDrains mana until deactivated."
+}

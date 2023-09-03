@@ -1,0 +1,24 @@
+{
+  "OldId": 1684566901,
+  "NewId": 1261449333,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\ChimaeraLightningMissile\\ChimaeraLightningMissile.mdl"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "TRIGSTR_1446"
+    },
+    {
+      "Id": 1969779573,
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

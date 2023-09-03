@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 10074,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A0DD (Rejuvenation), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Restores a target units Health and Mana over 10 seconds.|n|n|cffffcc00Level 1|r - 500 Hitpoints 50 Mana.|n|cffffcc00Level 2|r - 750 Hitpoints 100 Mana.|n|cffffcc00Level 3|r - 1000 Hitpoints 150 Mana.|n|cffffcc00Level 4|r - 1250 Hitpoints 200 Mana."
+}

@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 5487,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: AOs2 (Shockwave), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "A wave of force that ripples out from the Hero, causing damage to land units in a line. |n|n|cffffcc00Level 1|r - \u003CAOs2,DataA1\u003E damage. |n|cffffcc00Level 2|r - \u003CAOs2,DataA2\u003E damage. |n|cffffcc00Level 3|r - \u003CAOs2,DataA3\u003E damage. |n|cffffcc00Level 4|r - \u003CAOs2,DataA4\u003E damage.|n|cffffcc00Level 5|r - \u003CAOs2,DataA5\u003E damage.|n|cffffcc00Level 6|r - \u003CAOs2,DataA6\u003E damage."
+}

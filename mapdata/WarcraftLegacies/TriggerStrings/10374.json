@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 10374,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A0C4 (Colossal Slam), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Grommash delivers a devastating blow with Gorehowl to a target and other around it. Deals damage over time and reduces the targetted enemies\u0027 armor and movement speed.|n|n|cffffcc00Level 1|r - 150 damage, reduces armor by 2 and move speed by 20%, lasts 10 seconds (3 second for Heroes).|n|cffffcc00Level 2|r - 185 damage, reduces armor by 3 and move speed by 30%, lasts 11 seconds (4 seconds for Heroes).|n|cffffcc00Level 3|r - 225 damage, reduces armor by 4 and move speed by 40%, lasts 12 seconds (5 seconds for Heroes).|n|cffffcc00Level 4|r - 300 damage, reduces armor by 5 and move speed by 50%, lasts 13 second (6 seconds for Heroes)."
+}

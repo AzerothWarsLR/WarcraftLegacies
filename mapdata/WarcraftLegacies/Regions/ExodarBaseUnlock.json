@@ -1,0 +1,14 @@
+{
+  "Left": -23872,
+  "Bottom": 5792,
+  "Right": -21248,
+  "Top": 8416,
+  "Name": "ExodarBaseUnlock",
+  "CreationNumber": 7,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 255,
+    "B": 255
+  }
+}

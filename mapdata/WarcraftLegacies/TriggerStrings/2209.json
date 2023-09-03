@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 2209,
+  "KeyPrecision": 4,
+  "Comment": " Items: I017 (Portal to Nagrand), Ubertip (Tooltip - Extended)",
+  "Value": "Opens a two-way portal to Nagrand at the target location within a range of \u003CA0ZJ,Rng1\u003E. The portal becomes useable after 5 seconds, and closes 10 seconds after the caster stops channeling."
+}

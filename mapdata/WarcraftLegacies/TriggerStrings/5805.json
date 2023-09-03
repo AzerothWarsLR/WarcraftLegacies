@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 5805,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: ANdh (Drunken Haze), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Drenches enemy units in alcohol, causing their movement speed to be reduced by 50%, and have a 50% chance to miss on attacks. When units with Drunken Haze cast on them are hit by Breath of Fire, they will ignite and take burn damage. |n|cffffcc00Lasts \u003CANdh,Dur3\u003E(5 for Heros) seconds."
+}

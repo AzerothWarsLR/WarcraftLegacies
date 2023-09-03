@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 1258,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: A05F (Mass Polymorph), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Turns all enemy units in a 250 area into a sheep. The targeted unit retains its hit points and armor, but cannot attack. |nDoes not affect Heroes."
+}

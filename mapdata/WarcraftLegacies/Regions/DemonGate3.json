@@ -1,0 +1,15 @@
+{
+  "Left": 352,
+  "Bottom": -25472,
+  "Right": 864,
+  "Top": -25024,
+  "Name": "DemonGate3",
+  "CreationNumber": 30,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 10219,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A0CV (Portable Turret), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Creates a factory which automatically constructs Clockwerk Goblins. These artificial Goblins, in addition to being potent attackers, explode upon death, causing damage to nearby enemy units. |n|n|cffffcc00Level 1|r - Explosion does 30 damage.|n|cffffcc00Level 2|r - Explosion does 60 damage.|n|cffffcc00Level 3|r - Explosion does 80 damage. |n|cffffcc00Level 4|r - Explosion does 100 damage.|nFactory lasts 40 seconds."
+}

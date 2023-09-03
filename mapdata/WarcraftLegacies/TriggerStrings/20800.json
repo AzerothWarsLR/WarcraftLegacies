@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 20800,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A0WW (Summon Goliathon), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Summons Goliathon to fight as the Hero\u0027s champion.|n|n|cffffcc00Level 1|r - Has the following abilities: Spell Immunity, War Stomp, Pulverize, Hurl Boulder. Lasts \u003CA0WW,Dur1\u003E seconds.|n|cffffcc00Level 2|r - Has the aditional ability: Crystal Strike. Lasts \u003CA0WW,Dur2\u003E seconds.|n|cffffcc00Level 3|r - Goliathon is now much harder to kill and lasts much longer. Lasts \u003CA0WW,Dur3\u003E seconds."
+}

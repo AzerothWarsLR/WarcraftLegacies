@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 2801,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: A0DG (Mass Simulacrum), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Creates a summoned copy of all friendly units in the target area. Lasts 30 seconds.|n|n|cffffcc00Level 1|r - Each summoned unit has 30% reduced hit points and attack damage. |n|cffffcc00Level 2|r - Each summoned unit has 10% reduced hit points and attack damage. |n|cffffcc00Level 3|r - Each summoned unit has 10% increased hit points and attack damage.  |n|cffffcc00Level 4|r - Each summoned unit has 30% increased hit points and attack damage."
+}

@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 7513,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: A0VB (Elven Trap), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Places a trap at a target point. Enemy units that move near the trap causes the trap to explode for 100 damage in a small area, and 33 damage in a large area."
+}

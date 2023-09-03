@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 18603,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A0MS (Mirror Image), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Creates 3 images which deal 20% the damage of the Hero and take 200% the damage. Dispels all magic from the Hero. |nLasts 30 seconds."
+}

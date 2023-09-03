@@ -1,0 +1,93 @@
+{
+  "OldId": 1668244591,
+  "NewId": 1328820335,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "TRIGSTR_16561"
+    },
+    {
+      "Id": 1751675765,
+      "Type": 1,
+      "Value": 80
+    },
+    {
+      "Id": 2003334005,
+      "Type": 1,
+      "Value": 80
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "TRIGSTR_3879"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "TRIGSTR_16563"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "TRIGSTR_16564"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\Hero_Goblin_Alchemist.mdl"
+    },
+    {
+      "Id": 2036888437,
+      "Type": 1,
+      "Value": 20
+    },
+    {
+      "Id": 2020111221,
+      "Type": 1,
+      "Value": 20
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNGoblinSlasher.blp"
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "HeroGoblinAlchemist"
+    },
+    {
+      "Id": 1953850229,
+      "Type": 3,
+      "Value": "TRIGSTR_3967"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.1
+    },
+    {
+      "Id": 1853186933,
+      "Type": 3,
+      "Value": "TRIGSTR_21080"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 0
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "TRIGSTR_4771"
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Other\\StrongDrink\\BrewmasterMissile.mdl"
+    }
+  ]
+}

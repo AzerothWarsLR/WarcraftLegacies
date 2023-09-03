@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 15672,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A0IQ (Trample), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "This units attacks reduce the target\u0027s movement speed by \u003CA0IQ,DataB2,%\u003E%  for \u003CA0IQ,Dur2\u003E seconds."
+}

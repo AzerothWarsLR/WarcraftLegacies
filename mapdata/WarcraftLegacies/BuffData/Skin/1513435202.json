@@ -1,0 +1,24 @@
+{
+  "OldId": 1769169730,
+  "NewId": 1513435202,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1953653094,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNArcaniteRanged.blp"
+    },
+    {
+      "Id": 1835101798,
+      "Type": 3,
+      "Value": "TRIGSTR_8193"
+    },
+    {
+      "Id": 1718840934,
+      "Type": 3,
+      "Value": "TRIGSTR_7972"
+    }
+  ]
+}

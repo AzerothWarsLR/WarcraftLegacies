@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 10305,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A0CD (Unholy Plating), Researchtip (Tooltip - Learn)",
+  "Value": "Learn Unholy Plating - [|cffffcc00Level %d|r]"
+}

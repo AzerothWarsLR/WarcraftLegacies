@@ -1,0 +1,15 @@
+{
+  "Left": -12416,
+  "Bottom": -8736,
+  "Right": -8768,
+  "Top": -6144,
+  "Name": "Dustwallow Ships",
+  "CreationNumber": 36,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

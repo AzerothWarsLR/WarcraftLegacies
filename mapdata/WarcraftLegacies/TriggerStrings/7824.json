@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 7824,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: A0TD (Invisibility), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Makes a unit invisible. If the unit attacks, uses an ability or casts a spell, it will become visible."
+}

@@ -1,38 +1,37 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <OutputType>Exe</OutputType>
-    <TargetFramework>net6.0</TargetFramework>
-    <RootNamespace>Launcher</RootNamespace>
-  </PropertyGroup>
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net6.0</TargetFramework>
+        <RootNamespace>Launcher</RootNamespace>
+    </PropertyGroup>
 
-  <PropertyGroup>
-    <GenerateProgramFile>false</GenerateProgramFile>
-  </PropertyGroup>
+    <PropertyGroup>
+        <GenerateProgramFile>false</GenerateProgramFile>
+    </PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="6.0.0" />
-    <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.1" />
-    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
-    <PackageReference Include="NLua" Version="1.6.0" />
-    <PackageReference Include="System.Configuration.ConfigurationManager" Version="6.0.1" />
-    <PackageReference Include="System.Security.Permissions" Version="6.0.0" />
-    <PackageReference Include="War3Net.Build" Version="5.5.7" />
-    <PackageReference Include="War3Net.Build.Core" Version="5.5.7" />
-    <PackageReference Include="War3Net.CSharpLua.CoreSystem" Version="1.7.18" />
-    <PackageReference Include="WCSharp.ConstantGenerator" Version="2.0.4" />
-  </ItemGroup>
+    <ItemGroup>
+        <PackageReference Include="AutoMapper" Version="12.0.1"/>
+        <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="7.0.0"/>
+        <PackageReference Include="Microsoft.Extensions.Hosting" Version="7.0.1"/>
+        <PackageReference Include="NLua" Version="1.6.3"/>
+        <PackageReference Include="System.Configuration.ConfigurationManager" Version="7.0.0"/>
+        <PackageReference Include="System.Security.Permissions" Version="7.0.0"/>
+        <PackageReference Include="War3Net.Build" Version="5.7.1"/>
+        <PackageReference Include="War3Net.Build.Core" Version="5.7.1"/>
+        <PackageReference Include="War3Net.CSharpLua.CoreSystem" Version="1.7.18"/>
+        <PackageReference Include="WCSharp.ConstantGenerator" Version="2.1.0"/>
+        <PackageReference Include="System.CommandLine" Version="2.0.0-beta4.22272.1"/>
+    </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\War3Api.Object\War3Api.Object.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Content Include="appsettings.json">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-  </ItemGroup>
-
-  <ProjectExtensions><VisualStudio><UserProperties /></VisualStudio></ProjectExtensions>
+    <ItemGroup>
+        <ProjectReference Include="..\War3Api.Object\War3Api.Object.csproj"/>
+    </ItemGroup>
+    
+    <ItemGroup>
+        <Content Include="appsettings.json">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Content>
+    </ItemGroup>
 
 </Project>

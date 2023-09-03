@@ -6,6 +6,12 @@ namespace WarcraftLegacies.Source.UnitTypes
   {
     public static void Setup()
     {
+      SubSetupA();
+      SubSetupB();
+    }
+
+    private static void SubSetupA()
+    {
       UnitType.Register(new UnitType(Constants.UNIT_HSHY_SHIPYARD_LORDAERON_SHIPYARD)
       {
         Category = UnitCategory.Shipyard
@@ -55,7 +61,10 @@ namespace WarcraftLegacies.Source.UnitTypes
       {
         Category = UnitCategory.Shipyard
       });
+    }
 
+    private static void SubSetupB()
+    {
       UnitType.Register(new UnitType(Constants.UNIT_O03I_SHIPYARD_TWILIGHT_DOCK)
       {
         Category = UnitCategory.Shipyard

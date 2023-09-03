@@ -1,0 +1,15 @@
+{
+  "Left": -4224,
+  "Bottom": -31904,
+  "Right": -2752,
+  "Top": -30752,
+  "Name": "KilsorrowUnlock",
+  "CreationNumber": 378,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

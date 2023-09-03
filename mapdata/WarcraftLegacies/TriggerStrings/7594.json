@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 7594,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: A0UK (Fel Rift), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Sends forth a wave of fel energy, damaging and stunning units in a straight line. |n|n|cffffcc00Level 1|r - \u003CA0UK,DataC1\u003E damage, \u003CA0UK,Dur1\u003E second stun. |n|cffffcc00Level 2|r - \u003CA0UK,DataC2\u003E damage, \u003CA0UK,Dur2\u003E second stun. |n|cffffcc00Level 3|r - \u003CA0UK,DataC3\u003E damage, \u003CA0UK,Dur3\u003E second stun."
+}

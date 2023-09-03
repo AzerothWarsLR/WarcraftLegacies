@@ -1,0 +1,15 @@
+{
+  "Left": 10240,
+  "Bottom": -5440,
+  "Right": 10368,
+  "Top": -5312,
+  "Name": "AshbringerForge",
+  "CreationNumber": 470,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

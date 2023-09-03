@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 6198,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: AEfn (Force of Nature), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Spawns \u003CAEfn,DataA4\u003E Treants. Treants have \u003Cefon,realHP\u003E hit points and deal \u003Cefon,mindmg1\u003E - \u003Cefon,maxdmg1\u003E damage. Can learn Nature\u0027s Blessing and Nature\u0027s Gift.|nLasts \u003CAEfn,Dur4\u003E seconds. |n|n|"
+}

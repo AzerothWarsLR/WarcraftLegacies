@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 15195,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A0GP (Scattershot), Researchtip (Tooltip - Learn)",
+  "Value": "Learn Scattershot - [|cffffcc00Level %d|r]"
+}

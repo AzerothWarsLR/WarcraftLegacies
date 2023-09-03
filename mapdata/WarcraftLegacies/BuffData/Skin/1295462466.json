@@ -1,0 +1,19 @@
+{
+  "OldId": 1785033282,
+  "NewId": 1295462466,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1885959270,
+      "Type": 3,
+      "Value": "TRIGSTR_13181"
+    },
+    {
+      "Id": 1952543846,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Human\\slow\\slowtarget.mdl"
+    }
+  ]
+}

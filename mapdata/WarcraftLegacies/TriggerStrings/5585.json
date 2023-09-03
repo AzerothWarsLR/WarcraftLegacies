@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 5585,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: ANtm (Transmute), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Kills a target unit instantly, transforming it into gold which is added to your available gold!|nTransmute cannot be used on Heroes, or creeps above level 9."
+}

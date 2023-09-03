@@ -1,0 +1,34 @@
+{
+  "OldId": 1953713995,
+  "NewId": 909324356,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1835101796,
+      "Type": 3,
+      "Value": "TRIGSTR_4616"
+    },
+    {
+      "Id": 2020896868,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Variation": 1,
+      "Id": 828536420,
+      "Value": 125
+    },
+    {
+      "Variation": 1,
+      "Id": 828864100,
+      "Value": 100
+    },
+    {
+      "Variation": 1,
+      "Id": 829584996,
+      "Value": 100
+    }
+  ]
+}

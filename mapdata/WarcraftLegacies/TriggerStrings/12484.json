@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 12484,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A02B (Rain of Meteors), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Calls down meteors from the sky within a target radius of \u003CA02B,Area1\u003E, dealing damage to enemy units and stunning them for \u003CA02N,DataB1\u003E seconds. |n|n|cffffcc00Level 1|r - \u003CA02B,DataB1\u003E meteors dealing \u003CA02N,DataA1\u003E damage each. |n|cffffcc00Level 2|r - \u003CA02B,DataB2\u003E meteors dealing \u003CA0FF,DataA1\u003E damage each. |n|cffffcc00Level 3|r - \u003CA02B,DataB3\u003E meteors dealing \u003CA0LG,DataA1\u003E damage each."
+}

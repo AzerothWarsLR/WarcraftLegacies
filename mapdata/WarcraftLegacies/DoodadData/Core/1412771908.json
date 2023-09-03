@@ -1,0 +1,29 @@
+{
+  "OldId": 1935822913,
+  "NewId": 1412771908,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1818846820,
+      "Type": 3,
+      "Value": "Doodads\\Ashenvale\\Structures\\PillarsRuined\\PillarsRuined.mdl"
+    },
+    {
+      "Id": 1935764836,
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": 1835101796,
+      "Type": 3,
+      "Value": "TRIGSTR_4526"
+    },
+    {
+      "Id": 2020896868,
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

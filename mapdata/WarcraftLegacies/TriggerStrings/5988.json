@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 5988,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: AHhb (Holy Light), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "A holy light that can heal a friendly living unit or damage an enemy Undead unit. |n|n|cffffcc00Level 1|r - Heals for 200 hit points. |n|cffffcc00Level 2|r - Heals for 400 hit points. |n|cffffcc00Level 3|r - Heals for 600 hit points. |n|cffffcc00Level 4|r - Heals for 800 hit points."
+}

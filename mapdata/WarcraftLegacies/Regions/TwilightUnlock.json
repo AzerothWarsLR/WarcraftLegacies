@@ -1,0 +1,15 @@
+{
+  "Left": 18592,
+  "Bottom": -6848,
+  "Right": 19456,
+  "Top": -6048,
+  "Name": "TwilightUnlock",
+  "CreationNumber": 486,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

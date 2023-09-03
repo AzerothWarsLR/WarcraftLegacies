@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 1827,
+  "KeyPrecision": 4,
+  "Comment": " Units: n0AP (Focal Demon Gate), Ubertip (Tooltip - Extended)",
+  "Value": "Unique gateway that causes units spawned from ordinary Demon Gates to appear at its location instead.|n|n|cff99b4d1Can only control 1. Building a second structure will destroy the older one.|r"
+}

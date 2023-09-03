@@ -1,0 +1,15 @@
+{
+  "Left": 9792,
+  "Bottom": 5600,
+  "Right": 10080,
+  "Top": 5856,
+  "Name": "BookRetrieval",
+  "CreationNumber": 65,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

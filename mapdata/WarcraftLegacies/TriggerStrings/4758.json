@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 4758,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: SNin (Abyssal Strike), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Calls an Infernal down from the sky, dealing damage and stunning enemy land units in an area. The Infernal lasts 180 seconds.  |n|n|cffffcc00Level 1|r - 90 damage in a 250 AoE on impact. The impact stuns enemy units for 2 seconds. Brings forth an Abyssal.|n|cffffcc00Level 2|r -  180 damage in a 300 AoE on impact. The impact stuns enemy units for 2.5 seconds. Brings forth a Doomfire Abyssal.   |n|cffffcc00Level 3|r -  270 damage in a 350 AoE on impact. The impact stuns enemy units for 3 seconds. Brings forth a Gargantuan Abyssal."
+}

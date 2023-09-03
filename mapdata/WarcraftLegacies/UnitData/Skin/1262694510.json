@@ -1,0 +1,38 @@
+{
+  "OldId": 845242990,
+  "NewId": 1262694510,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 2037408373,
+      "Value": 2
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "TRIGSTR_20797"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "TRIGSTR_18722"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures/CommandButtons/BTNCrystalGenerator.blp"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\DragonboneGolem.mdl"
+    },
+    {
+      "Id": 2054188149,
+      "Type": 2,
+      "Value": 120
+    }
+  ]
+}

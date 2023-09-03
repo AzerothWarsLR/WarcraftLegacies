@@ -1,0 +1,44 @@
+{
+  "OldId": 846029122,
+  "NewId": 1094135874,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1953653094,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHoly.blp"
+    },
+    {
+      "Id": 1885959270,
+      "Type": 3,
+      "Value": "TRIGSTR_13206"
+    },
+    {
+      "Id": 1700951398,
+      "Type": 3,
+      "Value": "TRIGSTR_13207"
+    },
+    {
+      "Id": 1835101798,
+      "Type": 3,
+      "Value": "TRIGSTR_13208"
+    },
+    {
+      "Id": 1718840934,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1952543846,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 811693158,
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

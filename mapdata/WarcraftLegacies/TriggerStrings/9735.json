@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 9735,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: A0F0 (Ensnare), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Causes a target unit to be bound to the ground so that it cannot move. Air units that are ensnared can be attacked as though they were land units. |nLasts 10(2) seconds."
+}

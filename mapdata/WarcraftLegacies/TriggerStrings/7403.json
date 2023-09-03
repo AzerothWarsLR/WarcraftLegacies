@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 7403,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: A0W4 (Lo\u0027gosh\u0027s Fury), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Spirit of Goldrinn comes to accompany Varian, increasing his attack rate and movement speed.|n|n|cffffcc00Level 1|r - \u003CA0W4,DataB1,%\u003E% attack rate increase, \u003CA0W4,DataA1,%\u003E% movement speed increase, lasts \u003CA0W4,Dur1\u003E seconds.|n|cffffcc00Level 2|r - \u003CA0W4,DataB2,%\u003E% attack rate increase, \u003CA0W4,DataA2,%\u003E% movement speed increase, lasts \u003CA0W4,Dur2\u003E seconds.|n|cffffcc00Level 3|r - \u003CA0W4,DataB3,%\u003E% attack rate increase, \u003CA0W4,DataA3,%\u003E% movement speed increase, lasts \u003CA0W4,Dur3\u003E seconds. |n|cffffcc00Level 4|r - \u003CA0W4,DataB4,%\u003E% attack rate increase, \u003CA0W4,DataA4,%\u003E% movement speed increase, lasts \u003CA0W4,Dur4\u003E seconds."
+}

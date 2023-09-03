@@ -2,7 +2,6 @@
 using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using MacroTools.QuestSystem;
-using WCSharp.Shared.Data;
 using static War3Api.Common;
 
 namespace MacroTools.ObjectiveSystem.Objectives.LegendBased
@@ -23,9 +22,8 @@ namespace MacroTools.ObjectiveSystem.Objectives.LegendBased
       target.ChangedOwner += OnTargetChangeOwner;
       target.PermanentlyDied += OnTargetDeath;
       target.OwningPlayer.GetPlayerData().PlayerJoinedTeam += OnFactionTeamJoin;
+      Position = new(GetUnitX(_target.Unit), GetUnitY(_target.Unit));
     }
-
-    public override Point Position => new(GetUnitX(_target.Unit), GetUnitY(_target.Unit));
 
     internal override void OnAdd(Faction whichFaction)
     {

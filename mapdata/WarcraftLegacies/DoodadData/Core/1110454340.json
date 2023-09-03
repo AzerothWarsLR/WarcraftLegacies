@@ -1,0 +1,44 @@
+{
+  "OldId": 1802719041,
+  "NewId": 1110454340,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1818846820,
+      "Type": 3,
+      "Value": "Doodads\\Northrend\\Structures\\AncientZiggurat\\AncientZiggurat0.mdl"
+    },
+    {
+      "Id": 1935764836,
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": 1835101796,
+      "Type": 3,
+      "Value": "TRIGSTR_4717"
+    },
+    {
+      "Id": 2020896868,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Variation": 1,
+      "Id": 828536420,
+      "Value": 130
+    },
+    {
+      "Variation": 1,
+      "Id": 828864100,
+      "Value": 110
+    },
+    {
+      "Variation": 1,
+      "Id": 829584996,
+      "Value": 100
+    }
+  ]
+}

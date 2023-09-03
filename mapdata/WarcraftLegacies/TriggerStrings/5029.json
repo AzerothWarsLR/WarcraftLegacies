@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 5029,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: Ainf (Inner Fire), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Increases a target friendly unit\u0027s damage by \u003CAinf,DataA2,%\u003E% and armor by \u003CAinf,DataB2\u003E. |nLasts \u003CAinf,Dur1\u003E seconds."
+}

@@ -1,0 +1,204 @@
+{
+  "FormatVersion": 31,
+  "MapVersion": 23,
+  "EditorVersion": 6114,
+  "GameVersion": "1.34.0.19632",
+  "MapName": "TRIGSTR_001",
+  "MapAuthor": "TRIGSTR_004",
+  "MapDescription": "TRIGSTR_003",
+  "RecommendedPlayers": "TRIGSTR_002",
+  "CameraBounds": {
+    "BottomLeft": {
+      "X": -2816,
+      "Y": -3328
+    },
+    "TopRight": {
+      "X": 2816,
+      "Y": 2816
+    },
+    "TopLeft": {
+      "X": -2816,
+      "Y": 2816
+    },
+    "BottomRight": {
+      "X": 2816,
+      "Y": -3328
+    }
+  },
+  "CameraBoundsComplements": {
+    "Left": 6,
+    "Right": 6,
+    "Bottom": 4,
+    "Top": 8
+  },
+  "PlayableMapAreaWidth": 52,
+  "PlayableMapAreaHeight": 52,
+  "MapFlags": 56432,
+  "Tileset": 90,
+  "LoadingScreenBackgroundNumber": -1,
+  "LoadingScreenPath": "",
+  "LoadingScreenText": "",
+  "LoadingScreenTitle": "",
+  "LoadingScreenSubtitle": "",
+  "PrologueScreenPath": "",
+  "PrologueScreenText": "",
+  "PrologueScreenTitle": "",
+  "PrologueScreenSubtitle": "",
+  "FogStartZ": 3000,
+  "FogEndZ": 5000,
+  "FogDensity": 0.5,
+  "FogColor": "#000000",
+  "SoundEnvironment": "",
+  "WaterTintingColor": "#FFFFff",
+  "ScriptLanguage": 1,
+  "SupportedModes": 1,
+  "GameDataVersion": 1,
+  "Players": [
+    {
+      "Controller": 1,
+      "Race": 1,
+      "Name": "TRIGSTR_005",
+      "StartPosition": {},
+      "AllyLowPriorityFlags": {},
+      "AllyHighPriorityFlags": {},
+      "EnemyLowPriorityFlags": {},
+      "EnemyHighPriorityFlags": {}
+    },
+    {
+      "Id": 1,
+      "Controller": 1,
+      "Race": 2,
+      "Name": "TRIGSTR_010",
+      "StartPosition": {},
+      "AllyLowPriorityFlags": {},
+      "AllyHighPriorityFlags": {},
+      "EnemyLowPriorityFlags": {},
+      "EnemyHighPriorityFlags": {}
+    },
+    {
+      "Id": 2,
+      "Controller": 1,
+      "Race": 3,
+      "Name": "TRIGSTR_011",
+      "StartPosition": {},
+      "AllyLowPriorityFlags": {},
+      "AllyHighPriorityFlags": {},
+      "EnemyLowPriorityFlags": {},
+      "EnemyHighPriorityFlags": {}
+    },
+    {
+      "Id": 3,
+      "Controller": 1,
+      "Race": 4,
+      "Name": "TRIGSTR_012",
+      "StartPosition": {},
+      "AllyLowPriorityFlags": {},
+      "AllyHighPriorityFlags": {},
+      "EnemyLowPriorityFlags": {},
+      "EnemyHighPriorityFlags": {}
+    },
+    {
+      "Id": 4,
+      "Controller": 1,
+      "Race": 1,
+      "Name": "TRIGSTR_013",
+      "StartPosition": {},
+      "AllyLowPriorityFlags": {},
+      "AllyHighPriorityFlags": {},
+      "EnemyLowPriorityFlags": {},
+      "EnemyHighPriorityFlags": {}
+    },
+    {
+      "Id": 5,
+      "Controller": 1,
+      "Race": 2,
+      "Name": "TRIGSTR_014",
+      "StartPosition": {},
+      "AllyLowPriorityFlags": {},
+      "AllyHighPriorityFlags": {},
+      "EnemyLowPriorityFlags": {},
+      "EnemyHighPriorityFlags": {}
+    },
+    {
+      "Id": 6,
+      "Controller": 1,
+      "Race": 3,
+      "Name": "TRIGSTR_015",
+      "StartPosition": {},
+      "AllyLowPriorityFlags": {},
+      "AllyHighPriorityFlags": {},
+      "EnemyLowPriorityFlags": {},
+      "EnemyHighPriorityFlags": {}
+    },
+    {
+      "Id": 7,
+      "Controller": 1,
+      "Race": 4,
+      "Name": "TRIGSTR_016",
+      "StartPosition": {},
+      "AllyLowPriorityFlags": {},
+      "AllyHighPriorityFlags": {},
+      "EnemyLowPriorityFlags": {},
+      "EnemyHighPriorityFlags": {}
+    },
+    {
+      "Id": 8,
+      "Controller": 1,
+      "Race": 1,
+      "Name": "TRIGSTR_017",
+      "StartPosition": {},
+      "AllyLowPriorityFlags": {},
+      "AllyHighPriorityFlags": {},
+      "EnemyLowPriorityFlags": {},
+      "EnemyHighPriorityFlags": {}
+    },
+    {
+      "Id": 9,
+      "Controller": 1,
+      "Race": 2,
+      "Name": "TRIGSTR_018",
+      "StartPosition": {},
+      "AllyLowPriorityFlags": {},
+      "AllyHighPriorityFlags": {},
+      "EnemyLowPriorityFlags": {},
+      "EnemyHighPriorityFlags": {}
+    },
+    {
+      "Id": 10,
+      "Controller": 1,
+      "Race": 3,
+      "Name": "TRIGSTR_019",
+      "StartPosition": {},
+      "AllyLowPriorityFlags": {},
+      "AllyHighPriorityFlags": {},
+      "EnemyLowPriorityFlags": {},
+      "EnemyHighPriorityFlags": {}
+    },
+    {
+      "Id": 11,
+      "Controller": 1,
+      "Race": 4,
+      "Name": "TRIGSTR_020",
+      "StartPosition": {},
+      "AllyLowPriorityFlags": {},
+      "AllyHighPriorityFlags": {},
+      "EnemyLowPriorityFlags": {},
+      "EnemyHighPriorityFlags": {}
+    }
+  ],
+  "Forces": [
+    {
+      "Players": {},
+      "Name": "TRIGSTR_006"
+    },
+    {
+      "Flags": 9,
+      "Players": {},
+      "Name": "TRIGSTR_021"
+    }
+  ],
+  "UpgradeData": [],
+  "TechData": [],
+  "RandomUnitTables": [],
+  "RandomItemTables": []
+}

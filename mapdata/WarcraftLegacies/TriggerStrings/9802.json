@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 9802,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: A0EM (Phoenix), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "The Phoenix spreads enchanted flames to nearby enemies, dealing \u003CA0EL,DataA1\u003E damage on impact and burning them for \u003CA0EL,DataB1\u003E per second over \u003CA0EL,Dur1\u003E seconds. Its flames burn with such intensity that the Phoenix damages itself as well."
+}

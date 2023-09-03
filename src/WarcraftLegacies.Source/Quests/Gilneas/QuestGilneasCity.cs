@@ -14,7 +14,7 @@ namespace WarcraftLegacies.Source.Quests.Gilneas
   /// <summary>
   /// Kill Worgen in and around Gilneas and upgrade the main building to Tier 3 in order to unlock Gilneas City and the Greymane Wall
   /// </summary>
-  public class QuestGilneasCity : QuestData
+  public sealed class QuestGilneasCity : QuestData
   {
     private readonly List<unit> _rescueUnits;
     private readonly unit _gilneasDoor;

@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 12410,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A02M (Ritual of the Ancients), Researchtip (Tooltip - Learn)",
+  "Value": "Learn Ritual of the Ancients - [|cffffcc00Level %d|r]"
+}

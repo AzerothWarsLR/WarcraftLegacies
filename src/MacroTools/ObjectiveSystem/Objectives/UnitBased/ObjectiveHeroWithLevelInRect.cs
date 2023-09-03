@@ -45,6 +45,8 @@ namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
           if (!IsValidUnitInRect()) 
             Progress = QuestProgress.Incomplete;
         });
+      
+      Position = new(GetRectCenterX(_targetRect), GetRectCenterY(_targetRect));
     }
 
     /// <inheritdoc />
@@ -52,9 +54,6 @@ namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
     
     /// <inheritdoc />
     public string CompletingUnitName => CompletingUnit != null ? CompletingUnit.GetProperName() : "an unknown hero";
-    
-    /// <inheritdoc/>
-    public override Point Position => new(GetRectCenterX(_targetRect), GetRectCenterY(_targetRect));
 
     private bool IsUnitValid(unit whichUnit) =>
       EligibleFactions.Contains(whichUnit.OwningPlayer()) is true && whichUnit.IsAlive() && IsUnitType(whichUnit, UNIT_TYPE_HERO) &&

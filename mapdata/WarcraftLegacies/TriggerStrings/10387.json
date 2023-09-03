@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 10387,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A0C3 (Mana Shield), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Creates a shield that absorbs damage by using the Caster\u0027s mana. |n|n|cffffcc00Level 1|r - 1 damage per point of mana. |n|cffffcc00Level 2|r - 1.5 damage per point of mana. |n|cffffcc00Level 3|r - 2 damage per point of mana. |n|cffffcc00Level 4|r - 2.5 damage per point of mana. |n|cffffcc00Level 5|r - 3 damage per point of mana."
+}

@@ -1,0 +1,33 @@
+{
+  "OldId": 828655937,
+  "NewId": 877670465,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "TRIGSTR_15348"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "TRIGSTR_8027"
+    },
+    {
+      "Id": 1952543841,
+      "Type": 3,
+      "Value": "war3mapImported\\Chain Coif.mdx"
+    },
+    {
+      "Id": 811693153,
+      "Type": 3,
+      "Value": "head"
+    },
+    {
+      "Id": 1667331169,
+      "Value": 1
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "Left": 7968,
+  "Bottom": -12768,
+  "Right": 11520,
+  "Top": -9344,
+  "Name": "Stromwind antiship",
+  "CreationNumber": 104,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

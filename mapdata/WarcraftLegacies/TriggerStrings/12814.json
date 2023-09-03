@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 12814,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A011 (Great Unholy Aura), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Massively increases the HP regeneration and movement speed of nearby units in a 1500 range radius.|n|n|cffffcc00Level 1|r - Increases life regeneration by 2 hit points per second, and movement speed by 10%. |n|cffffcc00Level 2|r - Increases life regeneration by 3 hit points per second, and movement speed by 15%. |n|cffffcc00Level 3|r - Increases life regeneration by 4 hit points per second, and movement speed by 20%. |n|cffffcc00Level 4|r - Increases life regeneration by 5 hit points per second, and movement speed by 25%."
+}

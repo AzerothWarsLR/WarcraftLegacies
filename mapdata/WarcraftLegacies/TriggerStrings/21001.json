@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 21001,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A12R (Burst of Energy), Researchtip (Tooltip - Learn)",
+  "Value": "Learn Burst of Energy - [|cffffcc00Level %d|r]"
+}

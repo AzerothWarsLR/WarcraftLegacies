@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 3158,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: A03E (Stasis Trap), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Summons an invisible and immovable ward that stuns enemy land units around it. The trap activates when an enemy land unit approaches and destroys all other stasis wards in its area of effect. |nThe trap lasts 60 seconds. |nThe stun lasts 4 seconds. |n 7 second activation delay."
+}

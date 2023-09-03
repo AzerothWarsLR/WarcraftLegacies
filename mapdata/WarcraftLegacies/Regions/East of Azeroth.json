@@ -1,0 +1,15 @@
+{
+  "Left": 22144,
+  "Bottom": -9888,
+  "Right": 22592,
+  "Top": -9376,
+  "Name": "East of Azeroth",
+  "CreationNumber": 124,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

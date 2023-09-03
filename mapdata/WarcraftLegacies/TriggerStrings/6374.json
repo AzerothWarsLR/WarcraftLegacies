@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 6374,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: ACen (Ensnare), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Causes a target unit to be bound to the ground so that it cannot move.|nLasts \u003CACen,Dur1\u003E seconds, \u003CACen,HeroDur1\u003E seconds for heroes."
+}

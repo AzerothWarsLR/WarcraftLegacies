@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 10966,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A08X (Aura of Dread), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Decreases armor of nearby enemy units in 600 AOE. |n|n|cffffcc00Level 1|r - Decreases armor by 1.5. |n|cffffcc00Level 2|r - Decreases armor by 3. |n|cffffcc00Level 3|r - Decreases armor by 4.5. |n|cffffcc00Level 4|r - Decreases armor by 6."
+}

@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 21274,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A0N8 (Citadel Shield), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Channel the Citadel Shield. The shield will deal 20 damage per second to enemies in a 600 area of effect and increase the armor of friendly units and buildings by 4, for a maximum of 30 seconds. |n|n|cffffcc00Level 1|r - 20 damage per second |n|cffffcc00Level 2|r - 40 damage per second  |n|cffffcc00Level 3|r - 60 damage per second"
+}

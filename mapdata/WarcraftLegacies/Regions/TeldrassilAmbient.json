@@ -1,0 +1,14 @@
+{
+  "Left": -20576,
+  "Bottom": 12160,
+  "Right": -16000,
+  "Top": 16544,
+  "Name": "TeldrassilAmbient",
+  "CreationNumber": 241,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 255,
+    "B": 255
+  }
+}

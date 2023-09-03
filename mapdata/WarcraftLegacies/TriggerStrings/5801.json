@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 5801,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: ANdh (Drunken Haze), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Drenches enemy units in alcohol, causing their movement speed to be reduced, and have a chance to miss on attacks. |n|cffffcc00Lasts \u003CANdh,Dur1\u003E(5 for Heros) seconds. |n|n|cffffcc00Level 1|r - 40% movement speed reduction, 30% miss chance. |n|cffffcc00Level 2|r - 45% movement speed reduction, 40% miss chance. |n|cffffcc00Level 3|r - 50% movement speed reduction, 50% miss chance. |n|cffffcc00Level 4|r - 55% movement speed reduction, 60% miss chance."
+}

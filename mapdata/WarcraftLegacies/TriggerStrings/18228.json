@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 18228,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A0FR (Transfusion), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Calls forth a wave of healing Blood that bounces up to \u003CANhw,DataB3\u003E times, healing \u003CANhw,DataA3\u003E damage on the primary target. Each jump heals less damage."
+}

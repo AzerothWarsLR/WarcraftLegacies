@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 13532,
+  "KeyPrecision": 5,
+  "Comment": " Buffs/Effects: B03B (Smoke Bomb), Buffubertip (Tooltip - Extended)",
+  "Value": "This unit was hit by a smoke bomb; it has reduced movement speed and a chance to miss on attacks."
+}

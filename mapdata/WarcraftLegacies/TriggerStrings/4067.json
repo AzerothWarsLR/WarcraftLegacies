@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 4067,
+  "KeyPrecision": 4,
+  "Comment": " Items: ssan (Staff of Sanctuary), Ubertip (Tooltip - Extended)",
+  "Value": "Teleports a target unit to your highest level town hall, stunning the unit and regenerating \u003CANsa,DataE1\u003E hit points per second. Has a 2 second cast time and 90 second cooldown. Lasts until the unit is fully healed."
+}

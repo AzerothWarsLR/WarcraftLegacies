@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 19472,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A072 (Acid Bomb), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Hurls a flask of plague at a target.  The flask breaks upon impact, splashing a powerful plague on nearby hostile units.|nDecreases armor; deals high damage over time to the primary target; deals slightly less damage over time to nearby targets.|nLasts 15 seconds.|n|n|cffffcc00Level 1|r - 15 max damage per second, reduces armor by 3 .|n|cffffcc00Level 2|r - 20 max damage per second, reduces armor by 4.|n|cffffcc00Level 3|r - 25 max damage per second, reduces armor by 5. |n|cffffcc00Level 4|r - 30 max damage per second, reduces armor by 6."
+}

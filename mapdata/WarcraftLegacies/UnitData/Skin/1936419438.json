@@ -1,0 +1,50 @@
+{
+  "OldId": 1936419438,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1651270517,
+      "Value": 100
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "TRIGSTR_684"
+    },
+    {
+      "Id": 1735156597,
+      "Value": 200
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "TRIGSTR_691"
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 1
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "TRIGSTR_686"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "TRIGSTR_643"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\Unit_JailorKassan.mdl"
+    },
+    {
+      "Id": 2037408373,
+      "Value": 1
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "OldId": 1920225100,
+  "NewId": 1127493700,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1818846820,
+      "Type": 3,
+      "Value": "Buildings\\Other\\BarrelsUnit\\BarrelsUnit.mdl"
+    },
+    {
+      "Id": 1935764836,
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": 1936289124,
+      "Type": 2,
+      "Value": 0.01
+    },
+    {
+      "Id": 1835101796,
+      "Type": 3,
+      "Value": "TRIGSTR_4576"
+    },
+    {
+      "Id": 2020896868,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1818588004,
+      "Type": 2,
+      "Value": 200
+    }
+  ]
+}

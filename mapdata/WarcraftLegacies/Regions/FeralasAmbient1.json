@@ -1,0 +1,14 @@
+{
+  "Left": -17408,
+  "Bottom": -11552,
+  "Right": -14336,
+  "Top": -7904,
+  "Name": "FeralasAmbient1",
+  "CreationNumber": 252,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 255,
+    "B": 255
+  }
+}

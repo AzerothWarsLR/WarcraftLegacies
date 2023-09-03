@@ -9,7 +9,7 @@ namespace WarcraftLegacies.Source.Cheats
   /// <summary>
   /// 
   /// </summary>
-  public class CheatSkipCinematic
+  public sealed class CheatSkipCinematic
   {
     private readonly CinematicMode _cinematicMode;
 

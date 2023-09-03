@@ -28,9 +28,8 @@ namespace MacroTools.ObjectiveSystem.Objectives.ArtifactBased
       TriggerAddAction(_exitsRect.Trigger, OnRegionExit);
 
       DisplaysPosition = true;
+      Position = new(_targetRect.Center.X, _targetRect.Center.Y);
     }
-
-    public override Point Position => new(_targetRect.Center.X, _targetRect.Center.Y);
 
     private static region RectToRegion(rect whichRect)
     {

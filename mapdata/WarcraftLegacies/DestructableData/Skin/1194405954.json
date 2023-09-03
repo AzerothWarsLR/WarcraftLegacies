@@ -1,0 +1,19 @@
+{
+  "OldId": 2004112450,
+  "NewId": 1194405954,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1835101794,
+      "Type": 3,
+      "Value": "TRIGSTR_4408"
+    },
+    {
+      "Id": 1719170146,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\AshenvaleTree\\AshenTree"
+    }
+  ]
+}

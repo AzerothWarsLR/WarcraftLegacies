@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 6071,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: AHab (Brilliance Aura), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Gives additional mana regeneration to nearby friendly units. |n|n|cffffcc00Level 1|r - Grants 0.8 per second.|n|cffffcc00Level 2|r - Grants 1.10 mana per second. |n|cffffcc00Level 3|r - Grants 1.40 mana per second. |n|cffffcc00Level 4|r - Grants 1.70 mana per second."
+}

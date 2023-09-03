@@ -13,7 +13,7 @@ namespace WarcraftLegacies.Source.Quests.Gilneas
   /// <summary>
   /// Capture control points close to Duskhaven to gain control of it.
   /// </summary>
-  public class QuestDuskhaven : QuestData
+  public sealed class QuestDuskhaven : QuestData
   {
     private List<unit> _rescueUnits { get;}
 

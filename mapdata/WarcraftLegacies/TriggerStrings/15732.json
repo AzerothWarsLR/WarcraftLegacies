@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 15732,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A0M1 (Tidal Serpent), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Summons \u003CArsw,DataA4\u003E immobile serpentine wards to attack enemies. The ward has \u003Cosp4,realHP\u003E hit points, is magic immune, and deals \u003Cosp4,mindmg1\u003E - \u003Cosp4,maxdmg1\u003E damage. |nLasts \u003CArsw,Dur4\u003E seconds. |n|n|cffffcc00Attacks land and air units.|r"
+}

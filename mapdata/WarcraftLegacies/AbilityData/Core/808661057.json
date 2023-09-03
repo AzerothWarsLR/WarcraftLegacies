@@ -1,0 +1,34 @@
+{
+  "OldId": 1718832961,
+  "NewId": 808661057,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": 845574991,
+      "Value": 3
+    },
+    {
+      "Id": 1919248481,
+      "Value": 0
+    },
+    {
+      "Id": 1986358369,
+      "Value": 1
+    },
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "nightelf"
+    },
+    {
+      "Level": 1,
+      "Id": 828797775,
+      "Type": 3,
+      "Value": "efon"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 10772,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A0A0 (Dark Pact), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Targets an area for solar bombardment, carpeting it with 28 bolts over the course of 14 seconds. Each bolt deals damage to enemy units and heals non-Undead allies for 150% of that amount. Undead enemies take 10% additional damage.  |n|n|cffffcc00Level 1|r - Each bolt deals 40 damage.|n|cffffcc00Level 2|r - Each bolt deals 60 damage. |n|cffffcc00Level 3|r - Each bolt deals 80 damage."
+}

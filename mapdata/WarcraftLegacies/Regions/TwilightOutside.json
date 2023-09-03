@@ -1,0 +1,15 @@
+{
+  "Left": 17984,
+  "Bottom": -8224,
+  "Right": 21696,
+  "Top": -4896,
+  "Name": "TwilightOutside",
+  "CreationNumber": 390,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

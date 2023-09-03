@@ -1,0 +1,82 @@
+{
+  "OldId": 1853059950,
+  "NewId": 1127624814,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNWarden2.blp"
+    },
+    {
+      "Id": 1651270517,
+      "Value": 200
+    },
+    {
+      "Id": 1635083125,
+      "Type": 3,
+      "Value": "war3mapImported\\UPGMoonhunterMastery.blp"
+    },
+    {
+      "Id": 1853186933,
+      "Type": 3,
+      "Value": "TRIGSTR_1811"
+    },
+    {
+      "Id": 1953850229,
+      "Type": 3,
+      "Value": "TRIGSTR_14327"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "TRIGSTR_1346"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "TRIGSTR_2065"
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\HarpyMissile\\HarpyMissile.mdl"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.7
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "TRIGSTR_2226"
+    },
+    {
+      "Id": 1919705973,
+      "Value": 230
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 1
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "TRIGSTR_2227"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "TRIGSTR_4960"
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "MaievLater"
+    }
+  ]
+}

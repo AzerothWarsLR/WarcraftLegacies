@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 13413,
+  "KeyPrecision": 5,
+  "Comment": " Buffs/Effects: B04P (Mind Spike), Buffubertip (Tooltip - Extended)",
+  "Value": "Hit by Mind Spike; nearby friendly and enemy units will take damage if they are next to this unit."
+}

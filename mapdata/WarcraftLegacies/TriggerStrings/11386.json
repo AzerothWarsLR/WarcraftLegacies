@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 11386,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A076 (Frost Armor), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Creates a shield of frost around a target friendly unit. The shield adds 8 armor and slows melee units that attack it for 5 seconds. |nLasts 60 seconds."
+}

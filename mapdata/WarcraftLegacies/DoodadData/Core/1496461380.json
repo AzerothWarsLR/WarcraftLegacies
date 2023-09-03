@@ -1,0 +1,116 @@
+{
+  "OldId": 1801867855,
+  "NewId": 1496461380,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1920493156,
+      "Type": 2,
+      "Value": -1
+    },
+    {
+      "Id": 1935764836,
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Id": 1936289124,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": 1835101796,
+      "Type": 3,
+      "Value": "TRIGSTR_7124"
+    },
+    {
+      "Id": 2020896868,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1818850404,
+      "Type": 3,
+      "Value": "*"
+    },
+    {
+      "Id": 1818846820,
+      "Type": 3,
+      "Value": "war3mapImported\\Water_Polluted.mdl"
+    },
+    {
+      "Id": 1751348580,
+      "Value": 1
+    },
+    {
+      "Id": 1952539492,
+      "Type": 3,
+      "Value": "Z"
+    },
+    {
+      "Id": 1718509924,
+      "Value": 1
+    },
+    {
+      "Variation": 4,
+      "Id": 828536420,
+      "Value": 15
+    },
+    {
+      "Variation": 4,
+      "Id": 828864100,
+      "Value": 40
+    },
+    {
+      "Id": 1918989924,
+      "Value": 3
+    },
+    {
+      "Variation": 5,
+      "Id": 828864100,
+      "Value": 0
+    },
+    {
+      "Variation": 5,
+      "Id": 828536420,
+      "Value": 0
+    },
+    {
+      "Variation": 3,
+      "Id": 828536420,
+      "Value": 0
+    },
+    {
+      "Variation": 3,
+      "Id": 828864100,
+      "Value": 0
+    },
+    {
+      "Variation": 2,
+      "Id": 828536420,
+      "Value": 50
+    },
+    {
+      "Variation": 2,
+      "Id": 828864100,
+      "Value": 30
+    },
+    {
+      "Variation": 2,
+      "Id": 829584996,
+      "Value": 10
+    },
+    {
+      "Variation": 1,
+      "Id": 828536420,
+      "Value": 75
+    },
+    {
+      "Variation": 3,
+      "Id": 829584996,
+      "Value": 100
+    }
+  ]
+}

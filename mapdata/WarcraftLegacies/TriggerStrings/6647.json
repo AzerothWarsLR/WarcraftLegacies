@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 6647,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: A11B (Tidal Storm), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Calls forth \u003CA11B,DataA1\u003E giant waves per second that explode upon enemies, dealing \u003CA11B,DataC1\u003E damage each.|nLasts \u003CA11B,Dur1\u003E seconds."
+}

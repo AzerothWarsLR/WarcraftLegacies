@@ -1,0 +1,23 @@
+{
+  "Name": "gg_snd_ZandalarTheme",
+  "FilePath": "war3mapImported/ZandalarTheme.mp3",
+  "EaxSetting": "DefaultEAXON",
+  "Flags": 24,
+  "Volume": 127,
+  "Pitch": 1,
+  "Priority": 100,
+  "MaxDistance": 10000,
+  "DistanceCutoff": 3000,
+  "ConeOutsideVolume": 127,
+  "ConeOrientation": {},
+  "SoundName": "",
+  "DialogueTextKey": -1,
+  "Unk2": "",
+  "DialogueSpeakerNameKey": -1,
+  "Unk6": "",
+  "Unk7": "",
+  "FacialAnimationLabel": "",
+  "FacialAnimationGroupLabel": "",
+  "FacialAnimationSetFilepath": "",
+  "Unk11": 1
+}

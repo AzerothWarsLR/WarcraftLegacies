@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 5542,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: AOeq (Earthquake), Researchtip (Tooltip - Learn)",
+  "Value": "Learn Earthquake - [|cffffcc00Level %d|r]"
+}

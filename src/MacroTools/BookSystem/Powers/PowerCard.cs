@@ -1,11 +1,10 @@
-﻿using MacroTools.ArtifactSystem;
-using MacroTools.FactionSystem;
+﻿using MacroTools.FactionSystem;
 using MacroTools.Frames;
 using static War3Api.Common;
 
 namespace MacroTools.BookSystem.Powers
 {
-  public class PowerCard : Card
+  public sealed class PowerCard : Card
   {
     private const float BoxWidth = 0.32f;
     private const float BoxHeight = 0.092f;

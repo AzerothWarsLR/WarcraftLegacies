@@ -1,0 +1,13 @@
+{
+  "OldId": 2003067246,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\LichMissile\\LichMissile.mdl"
+    }
+  ]
+}

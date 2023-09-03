@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 5378,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: AUcs (Carrion Swarm), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Sends a horde of bats to damage enemies. |n|n|cffffcc00Level 1|r - \u003CAUcs,DataA1\u003E damage per unit. |n|cffffcc00Level 2|r - \u003CAUcs,DataA2\u003E damage per unit. |n|cffffcc00Level 3|r - \u003CAUcs,DataA3\u003E damage per unit.|n|cffffcc00Level 4|r - \u003CAUcs,DataA4\u003E damage per unit."
+}

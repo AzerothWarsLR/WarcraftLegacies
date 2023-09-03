@@ -1,0 +1,23 @@
+{
+  "OldId": 2004045657,
+  "NewId": 959459396,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1718509924,
+      "Value": 1
+    },
+    {
+      "Id": 1818846820,
+      "Type": 3,
+      "Value": "buildings\\other\\GoldMine\\GoldMine.mdl"
+    },
+    {
+      "Id": 1835101796,
+      "Type": 3,
+      "Value": "TRIGSTR_4719"
+    }
+  ]
+}

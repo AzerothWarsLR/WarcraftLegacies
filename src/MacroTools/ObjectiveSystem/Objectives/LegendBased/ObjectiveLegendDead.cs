@@ -1,7 +1,6 @@
 using System;
 using MacroTools.LegendSystem;
 using MacroTools.QuestSystem;
-using WCSharp.Shared.Data;
 using static War3Api.Common;
 
 namespace MacroTools.ObjectiveSystem.Objectives.LegendBased
@@ -19,9 +18,6 @@ namespace MacroTools.ObjectiveSystem.Objectives.LegendBased
     /// </summary>
     public Func<Legend, bool> DeathFilter { get; init; } = _ => true;
 
-    /// <inheritdoc/>
-    public override Point Position => new(GetUnitX(_target.Unit), GetUnitY(_target.Unit));
-
     /// <summary>
     /// Initializes a new instance of the <see cref="ObjectiveLegendDead"/> class.
     /// </summary>
@@ -36,6 +32,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.LegendBased
       DisplaysPosition = IsUnitType(_target.Unit, UNIT_TYPE_STRUCTURE) ||
                          GetOwningPlayer(_target.Unit) == Player(PLAYER_NEUTRAL_AGGRESSIVE);
       target.PermanentlyDied += OnDeath;
+      Position = new(GetUnitX(_target.Unit), GetUnitY(_target.Unit));
     }
 
     private void OnDeath(object? sender, Legend legend) =>

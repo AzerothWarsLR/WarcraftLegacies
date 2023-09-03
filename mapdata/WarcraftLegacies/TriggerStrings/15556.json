@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 15556,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A0FD (Mass Banish), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Turns all non-mechanical unit in the target area ethereal and slows their movement speed by \u003CA0FE,DataA3,%\u003E% for \u003CA0FE,Dur3\u003E seconds. Lasts \u003CA0FE,HeroDur3\u003E second on Heroes. Ethereal creatures cannot attack, but they can cast spells and certain spells cast upon them will have a greater effect."
+}

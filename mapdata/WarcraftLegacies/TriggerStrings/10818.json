@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 10818,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A09P (Healing Shield), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Forms a shield of healing energies around a target unit, healing 30 damage per second to all units around it. |nLasts 20 seconds."
+}

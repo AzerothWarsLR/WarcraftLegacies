@@ -1,0 +1,15 @@
+{
+  "Left": 8576,
+  "Bottom": 4672,
+  "Right": 8832,
+  "Top": 4928,
+  "Name": "SkullRetrieval",
+  "CreationNumber": 67,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

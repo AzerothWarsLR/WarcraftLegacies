@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 9660,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: A0FD (Mass Banish), Researchtip (Tooltip - Learn)",
+  "Value": "Learn Mass Banish - [|cffffcc00Level %d|r]"
+}

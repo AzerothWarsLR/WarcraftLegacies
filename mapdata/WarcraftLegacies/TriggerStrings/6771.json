@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 6771,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: A10V (Rain of Brimstone), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Calls down \u003CAHbz,DataA1\u003E Burning shards waves; each wave deals \u003CAHbz,DataB1\u003E damage to units in an area."
+}

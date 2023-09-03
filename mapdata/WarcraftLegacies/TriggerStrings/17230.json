@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 17230,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A11B (Tidal Storm), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Calls forth giant waves that explode upon enemies.|nLasts \u003CA11B,Dur1\u003E seconds.|n|n|cffffcc00Level 1|r - \u003CA11B,DataA1\u003E waves per second dealing \u003CA11B,DataC1\u003E damage each. |n|cffffcc00Level 2|r - \u003CA11B,DataA2\u003E waves per second dealing \u003CA11B,DataC2\u003E damage each. |n|cffffcc00Level 3|r - \u003CA11B,DataA3\u003E waves per second dealing \u003CA11B,DataC3\u003E damage each."
+}

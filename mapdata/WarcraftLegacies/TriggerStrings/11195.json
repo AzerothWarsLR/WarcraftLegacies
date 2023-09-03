@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 11195,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A07X (Rally), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "The Hero rallies his men increasing their movespeed drastically for a short period of time. |n|n|cffffcc00Level 1|r - Increases movespeed by 40%. |n|cffffcc00Level 2|r - Increases movespeed by 60%. |n|cffffcc00Level 3|r - Increases movespeed by 80%. |n|cffffcc00Level 4|r - Increases movespeed by 100%.|n|nLasts 10 seconds."
+}

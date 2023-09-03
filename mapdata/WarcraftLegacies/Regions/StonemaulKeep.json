@@ -1,0 +1,15 @@
+{
+  "Left": -12096,
+  "Bottom": -10144,
+  "Right": -9216,
+  "Top": -7904,
+  "Name": "StonemaulKeep",
+  "CreationNumber": 97,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

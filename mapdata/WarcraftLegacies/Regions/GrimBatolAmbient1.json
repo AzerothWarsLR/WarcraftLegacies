@@ -1,0 +1,14 @@
+{
+  "Left": 14720,
+  "Bottom": -4032,
+  "Right": 17920,
+  "Top": -256,
+  "Name": "GrimBatolAmbient1",
+  "CreationNumber": 314,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 255,
+    "B": 255
+  }
+}

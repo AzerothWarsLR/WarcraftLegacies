@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 2524,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: Aweb (Web), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Binds a target enemy unit in webbing, forcing it to the ground. Webbed units can be hit as though they were land units. |nLasts \u003CAweb,Dur1\u003E seconds."
+}

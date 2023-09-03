@@ -1,0 +1,29 @@
+{
+  "OldId": 1802719055,
+  "NewId": 1395863620,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1818846820,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\NightElf\\MoonWell\\MoonWellTarget.mdl"
+    },
+    {
+      "Id": 1935764836,
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": 1936289124,
+      "Type": 2,
+      "Value": 0.01
+    },
+    {
+      "Id": 1835101796,
+      "Type": 3,
+      "Value": "TRIGSTR_4596"
+    }
+  ]
+}

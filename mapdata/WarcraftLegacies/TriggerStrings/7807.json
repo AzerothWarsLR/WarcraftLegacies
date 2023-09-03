@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 7807,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: A0QH (Rays of the New Dawn), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Causes rains of healing energy to pour down in a large area, healing friendly allied units.|nLasts \u003CAEtq,Dur1\u003E seconds. |n|n|cffffcc00Level 1|r - Heals \u003CAEtq,DataA1\u003E hit points per second. 180 seconds cooldown. |n|cffffcc00Level 2|r - Heals \u003CAEtq,DataA2\u003E hit points per second. 165 seconds cooldown. |n|cffffcc00Level 3|r - Heals \u003CAEtq,DataA3\u003E hit points per second. 150 seconds cooldown. "
+}

@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 13775,
+  "KeyPrecision": 5,
+  "Comment": " Buffs/Effects: B008 (Infected Wounds), Buffubertip (Tooltip - Extended)",
+  "Value": "This unit has Infected Wounds. Damage taken is increased when attacked."
+}

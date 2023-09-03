@@ -1,0 +1,23 @@
+{
+  "OldId": 1734963310,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "TRIGSTR_17649"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\BloodelfWizard.mdl"
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "HeroPaladin"
+    }
+  ]
+}

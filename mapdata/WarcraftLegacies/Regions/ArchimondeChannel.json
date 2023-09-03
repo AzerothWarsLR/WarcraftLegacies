@@ -1,0 +1,15 @@
+{
+  "Left": -9824,
+  "Bottom": 10720,
+  "Right": -9632,
+  "Top": 10880,
+  "Name": "ArchimondeChannel",
+  "CreationNumber": 457,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

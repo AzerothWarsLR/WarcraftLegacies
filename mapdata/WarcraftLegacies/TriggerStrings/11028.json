@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 11028,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A08O (Instant Revitalization), Researchtip (Tooltip - Learn)",
+  "Value": "Learn Instant Revitalization - [|cffffcc00Level %d|r]"
+}

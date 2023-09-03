@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 2917,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: A0P9 (Dimensional Jump to Azuremyst), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Opens a two-way portal to Azuremyst at the target location within a range of \u003CA00D,Rng1\u003E. The portal becomes useable after 20 seconds, and closes 10 seconds after the caster stops channeling."
+}

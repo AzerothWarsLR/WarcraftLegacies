@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 11233,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A04J (Arcane Burst), Researchtip (Tooltip - Learn)",
+  "Value": "Learn Arcane Burst - [|cffffcc00Level %d|r]"
+}

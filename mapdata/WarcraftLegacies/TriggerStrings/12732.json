@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 12732,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A01C (Mok\u0027Nathal Avatar), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Activate Avatar to give Rexxar \u003CA01C,DataA2\u003E bonus armor, \u003CA01C,DataB2\u003E bonus hit points, \u003CA01C,DataC2\u003E bonus damage and spell immunity. |nLasts \u003CA01C,Dur2\u003E seconds."
+}

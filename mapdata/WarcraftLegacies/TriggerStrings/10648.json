@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 10648,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A0AS (Flame Shield), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Forms a shield of flames around a target unit, dealing 15 damage per second to units around it. |nLasts 20 seconds. Lasts 10 seconds on heroes."
+}

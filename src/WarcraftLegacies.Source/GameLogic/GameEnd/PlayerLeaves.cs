@@ -23,7 +23,7 @@ namespace WarcraftLegacies.Source.GameLogic.GameEnd
             : $"{GetPlayerName(triggerPlayer)} has left the game.");
 
         if (playerFaction != null && playerFaction.ScoreStatus != ScoreStatus.Defeated)
-          playerFaction.ScoreStatus = ScoreStatus.Defeated;
+          playerFaction.Defeat();
       }
       catch (Exception ex)
       {

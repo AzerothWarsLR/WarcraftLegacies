@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 6715,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: A110 (Focus Prey), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "The hero marks a target as prey.|n|nDecreases armor, mouvement speed, attack speed and deals damage.|nLasts 15 seconds on heroes.|n|n|cffffcc00Level 1|r - 250 damage, reduces armor by 15, mouvement speed by 30% and attack speed by 40%.|n|cffffcc00Level 2|r - 350 damage, reduces armor by 20, mouvement speed by 40% and attack speed by 50%.|n|cffffcc00Level 3|r - 450 damage, reduces armor by 25, mouvement speed by 50% and attack speed by 60%."
+}

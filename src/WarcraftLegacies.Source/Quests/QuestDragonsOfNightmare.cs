@@ -13,7 +13,7 @@ namespace WarcraftLegacies.Source.Quests
   /// <summary>
   /// Spawns 2 dragons in different locations. Activates portals connecting the two locations after the dragons have been killed.
   /// </summary>
-  public class QuestDragonsOfNightmare : QuestData
+  public sealed class QuestDragonsOfNightmare : QuestData
   {
     private readonly unit _nightmareDragonKalimdor;
     private readonly unit _nightmareDragonEk;
@@ -57,7 +57,6 @@ namespace WarcraftLegacies.Source.Quests
       AddObjective(new ObjectiveKillUnit(nightmareDragonEk));
       AddObjective(new ObjectiveTime(360));
       _timer = CreateTimer().Start(360, false, OnTimeElapsed);
-      Shared = true;
     }
 
     private void OnTimeElapsed()

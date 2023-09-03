@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 13386,
+  "KeyPrecision": 5,
+  "Comment": " Buffs/Effects: B051 (Command Point 20 gold per minute), Buffubertip (Tooltip - Extended)",
+  "Value": "This unit is a 20 gold per minute CP. It increases your income by 20 gold."
+}

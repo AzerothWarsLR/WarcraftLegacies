@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 5313,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: AUin (Rain of Chaos\u0027 Abyssal Strike), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Calls an Infernal down from the sky, dealing \u003CAUin,DataA3\u003E damage and stunning enemy land units for \u003CAUin,Dur3\u003E seconds in an area. The Infernal lasts \u003CAUin,DataB3\u003E seconds."
+}

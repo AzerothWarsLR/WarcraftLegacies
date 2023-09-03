@@ -1,0 +1,15 @@
+{
+  "Left": -17408,
+  "Bottom": -8768,
+  "Right": -16576,
+  "Top": -7968,
+  "Name": "TheAthenaeum",
+  "CreationNumber": 32,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

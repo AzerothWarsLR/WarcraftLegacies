@@ -13,7 +13,7 @@ namespace WarcraftLegacies.Source.Quests.Gilneas
   /// <summary>
   /// Capture control points close to Tempest Reach to gain control of it.
   /// </summary>
-  public class QuestTempestReach: QuestData
+  public sealed class QuestTempestReach: QuestData
   {
     private List<unit> _rescueUnits { get; }
 

@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 10713,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A0AC (Rapid Fire), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Increases the unit\u0027s attack rate by \u003CA0AC,DataA1,%\u003E% for \u003CA0AC,Dur1\u003E seconds."
+}

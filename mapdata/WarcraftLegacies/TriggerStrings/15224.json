@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 15224,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A0T1 (Greater Holy Fire), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Blasts enemy units with a wave of holy fire that deals \u003CA0T1,DataB1\u003E damage to the target, and \u003CA0T1,DataA1\u003E nova damage."
+}

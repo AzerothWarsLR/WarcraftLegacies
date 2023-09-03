@@ -1,0 +1,70 @@
+{
+  "OldId": 1734894446,
+  "NewId": 1228288110,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHeroCryptLord.blp"
+    },
+    {
+      "Id": 1667462261,
+      "Value": 1
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "TRIGSTR_2196"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\NerubianGuard.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "TRIGSTR_2024"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.8
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "TRIGSTR_2198"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "TRIGSTR_2199"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "TRIGSTR_2200"
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "Arachnathid"
+    },
+    {
+      "Id": 1919705973,
+      "Value": 222
+    },
+    {
+      "Id": 1735156597,
+      "Value": 222
+    },
+    {
+      "Id": 1651270517,
+      "Value": 222
+    }
+  ]
+}

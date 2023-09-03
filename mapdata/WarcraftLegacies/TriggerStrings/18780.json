@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 18780,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A0WZ (Incinerate), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Each attack made is enhanced with living flames that cling to the target. These flames add a small amount of damage on the first attack, twice as much on the second attack, three times as much on the third attack, etc.|n|nIf a unit dies while under this effect, it is incinerated, causing 30 damage to all nearby hostile units."
+}

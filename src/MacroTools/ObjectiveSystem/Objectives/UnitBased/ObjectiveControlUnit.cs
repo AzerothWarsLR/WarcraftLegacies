@@ -1,7 +1,6 @@
 ﻿using MacroTools.Extensions;
 using MacroTools.QuestSystem;
 using WCSharp.Events;
-using WCSharp.Shared.Data;
 using static War3Api.Common;
 
 namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
@@ -18,9 +17,8 @@ namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
       DisplaysPosition = true;
 
       PlayerUnitEvents.Register(UnitTypeEvent.ChangesOwner, OnUnitChangeOwner);
+      Position = new(GetUnitX(_target), GetUnitY(_target));
     }
-
-    public override Point Position => new(GetUnitX(_target), GetUnitY(_target));
 
     private void OnUnitChangeOwner()
     {

@@ -100,7 +100,7 @@ namespace MacroTools.Powers
       _owners.Add(whichPlayer);
       _oilIncomePeriodicAction = new OilIncomePeriodicAction(this);
       OilIncomePeriodicTrigger.Add(_oilIncomePeriodicAction);
-
+      
       _oilTimer = CreateTimer().Start(150, true, GenerateOilPool);
       for (var i = 0; i < StartingOilPoolCount; i++)
         GenerateOilPool();
@@ -160,10 +160,15 @@ namespace MacroTools.Powers
 
     private Point GetRandomPointAtSea()
     {
+      const int callLimit = 200;
+      var callCount = 0;
       Point randomPoint;
       do
       {
         randomPoint = Rectangle.WorldBounds.GetRandomPoint();
+        callCount++;
+        if (callCount == callLimit)
+          throw new InvalidOperationException($"{nameof(GetRandomPointAtSea)} failed to find a point {callLimit} times.");
       } while (!IsPointValidForOilPool(randomPoint));
 
       return randomPoint;

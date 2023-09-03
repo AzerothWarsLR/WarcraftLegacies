@@ -1,0 +1,48 @@
+{
+  "OldId": 2003193946,
+  "NewId": 1479684164,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1818846820,
+      "Type": 3,
+      "Value": "Doodads\\Cityscape\\Structures\\City_LowWall_ShortEndCap\\City_LowWall_ShortEndCap.mdl"
+    },
+    {
+      "Id": 1935764836,
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": 1936289124,
+      "Type": 2,
+      "Value": 0.01
+    },
+    {
+      "Id": 1835101796,
+      "Type": 3,
+      "Value": "TRIGSTR_4625"
+    },
+    {
+      "Id": 1918989924,
+      "Value": 2
+    },
+    {
+      "Variation": 2,
+      "Id": 828864100,
+      "Value": 100
+    },
+    {
+      "Variation": 2,
+      "Id": 828536420,
+      "Value": 110
+    },
+    {
+      "Variation": 2,
+      "Id": 829584996,
+      "Value": 150
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 6234,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: AEah (Thorns Aura), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "An aura that gives friendly nearby units a damage shield, which deals \u003CAEah,DataA4,%\u003E% of an enemy unit\u0027s melee attack damage back to it."
+}

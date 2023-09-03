@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 5862,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: ANbf (Blast of Fire), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Blasts a cone of fire at enemy units which deals large damage and leaves enemies on fire. |nLasts \u003CANbf,Dur1\u003E seconds. |n|n|cffffcc00Level 1|r - 105 damage.|n|cffffcc00Level 2|r - 155 damage.|n|cffffcc00Level 3|r - 205 damage.|n|cffffcc00Level 4|r - 255 damage.|n|cffffcc00Level 5|r - 305 damage."
+}

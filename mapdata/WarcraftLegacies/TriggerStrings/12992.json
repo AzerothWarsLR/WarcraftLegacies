@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 12992,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A004 (Gryphon Sky), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Calls Gryphon Riders from the sky. |n|n|cffffcc00Level 1|r -  Each gryphon deals 10 damage. |n|cffffcc00Level 2|r -  Each gryphon deals 15 damage. |n|cffffcc00Level 3|r -  Each gryphon deals 20 damage. |n|nLasts 30 seconds."
+}

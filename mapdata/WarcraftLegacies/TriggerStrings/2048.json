@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 2048,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: A03S (Rampage), Researchtip (Tooltip - Learn)",
+  "Value": "Learn Rampage - [|cffffcc00Level %d|r]."
+}

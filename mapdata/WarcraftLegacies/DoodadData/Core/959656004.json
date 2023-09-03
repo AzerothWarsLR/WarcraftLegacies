@@ -1,0 +1,44 @@
+{
+  "OldId": 1633899353,
+  "NewId": 959656004,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1920493156,
+      "Type": 2,
+      "Value": -1
+    },
+    {
+      "Id": 1935764836,
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Id": 1936289124,
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Id": 1818850404,
+      "Type": 3,
+      "Value": "*"
+    },
+    {
+      "Id": 2020896868,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1835101796,
+      "Type": 3,
+      "Value": "TRIGSTR_18566"
+    },
+    {
+      "Id": 1818846820,
+      "Type": 3,
+      "Value": "war3mapImported\\GilneasCathedral.mdl"
+    }
+  ]
+}

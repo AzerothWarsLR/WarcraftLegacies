@@ -1,0 +1,56 @@
+{
+  "OldId": 1935762280,
+  "NewId": 842018920,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1651270517,
+      "Value": 200
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "TRIGSTR_19867"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "buildings\\other\\ArcaneObservatory\\ArcaneObservatory.mdl"
+    },
+    {
+      "Id": 1735156597,
+      "Value": 170
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\FarseerMissile\\FarseerMissile.mdl"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.2
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "TRIGSTR_3575"
+    },
+    {
+      "Id": 1919705973,
+      "Value": 250
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 6
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

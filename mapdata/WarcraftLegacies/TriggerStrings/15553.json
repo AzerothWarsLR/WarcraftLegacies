@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 15553,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A0FD (Mass Banish), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Turns all non-mechanical unit in the target area ethereal and slows their movement speed by \u003CA0FE,DataA1,%\u003E%. Ethereal creatures cannot attack, but they can cast spells and certain spells cast upon them will have a greater effect. |n|n|cffffcc00Level 1|r - Lasts \u003CA0FE,Dur1\u003E seconds on units and \u003CA0FE,HeroDur1\u003E seconds on heroes.|n|cffffcc00Level 2|r - Lasts \u003CA0FE,Dur2\u003E seconds on units and \u003CA0FE,HeroDur2\u003E seconds on heroes.|n|cffffcc00Level 3|r - Lasts \u003CA0FE,Dur3\u003E seconds on units and \u003CA0FE,HeroDur3\u003E seconds on heroes.|n|cffffcc00Level 4|r - Lasts \u003CA0FE,Dur4\u003E seconds on units and \u003CA0FE,HeroDur4\u003E seconds on heroes."
+}

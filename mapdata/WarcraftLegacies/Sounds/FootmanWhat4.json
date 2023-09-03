@@ -1,0 +1,32 @@
+{
+  "Name": "gg_snd_FootmanWhat4",
+  "FilePath": "Units/Human/Footman/FootmanWhat4.flac",
+  "EaxSetting": "DefaultEAXON",
+  "Flags": 6,
+  "Volume": 127,
+  "Pitch": 4294967296,
+  "PitchVariance": 0.010000000707805157,
+  "Priority": 1000,
+  "Channel": 1,
+  "MinDistance": 100000,
+  "MaxDistance": 100001,
+  "DistanceCutoff": 3.4028234663852886E+38,
+  "ConeAngleInside": 4294967296,
+  "ConeAngleOutside": 4294967296,
+  "ConeOutsideVolume": -1,
+  "ConeOrientation": {
+    "X": 4.2949673E+09,
+    "Y": 4.2949673E+09,
+    "Z": 4.2949673E+09
+  },
+  "SoundName": "FootmanWhat",
+  "DialogueTextKey": -1,
+  "Unk2": "",
+  "DialogueSpeakerNameKey": -1,
+  "Unk6": "",
+  "Unk7": "",
+  "FacialAnimationLabel": "",
+  "FacialAnimationGroupLabel": "",
+  "FacialAnimationSetFilepath": "",
+  "Unk11": 1
+}

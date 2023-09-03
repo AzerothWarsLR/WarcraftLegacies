@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 4881,
+  "KeyPrecision": 4,
+  "Comment": " Units: e012 (Siege Ancient), Ubertip (Tooltip - Extended)",
+  "Value": "Siege melee unit that can transform into an immobile ranged siege unit.|n|cfff5962dAbilities:|r Siege Form|n|cff99b4d1Can only train 6|n|cffffcc00Attacks land units.|r"
+}

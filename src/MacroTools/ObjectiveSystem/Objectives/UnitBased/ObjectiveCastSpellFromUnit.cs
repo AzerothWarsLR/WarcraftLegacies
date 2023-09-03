@@ -1,7 +1,6 @@
 ﻿using MacroTools.Extensions;
 using MacroTools.QuestSystem;
 using WCSharp.Events;
-using WCSharp.Shared.Data;
 using static War3Api.Common;
 
 namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
@@ -29,9 +28,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
       TargetWidget = caster;
       DisplaysPosition = true;
       _caster = caster;
+      Position = _caster.GetPosition();
     }
-
-    /// <inheritdoc />
-    public override Point Position => _caster.GetPosition();
   }
 }

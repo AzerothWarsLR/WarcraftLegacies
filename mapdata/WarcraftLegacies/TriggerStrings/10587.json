@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 10587,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A0B4 (Bloodlust Totem), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Summons a totem which casts Bloodlust on nearby allies. |nLasts \u003CAOsw,Dur1\u003E seconds.  |n|n|cffffcc00Level 1|r - Lasts 20 seconds, Provides 10% Attack speed and 15% Movement speed Bloodlust.|n|cffffcc00Level 2|r - Lasts 25 seconds, Provides 15% Attack speed and 20% Movement speed Bloodlust.|n|cffffcc00Level 3|r - Lasts 30 seconds, Provides 20% Attack speed and 25% movement speed Bloodlust. |n|cffffcc00Level 4|r - Lasts 35 seconds, Provides 25% Attack speed and 30% movement speed Bloodlust. Summon two Totems."
+}

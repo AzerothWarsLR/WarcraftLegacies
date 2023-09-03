@@ -24,9 +24,8 @@ namespace MacroTools.ObjectiveSystem.Objectives.LegendBased
       TriggerAddAction(_entersRect.Trigger, OnRegionEnter);
       PingPath = "MinimapQuestTurnIn";
       DisplaysPosition = true;
+      Position = new(GetRectCenterX(_targetRect), GetRectCenterY(_targetRect));
     }
-
-    public override Point Position => new(GetRectCenterX(_targetRect), GetRectCenterY(_targetRect));
 
     private static region RectToRegion(rect whichRect)
     {

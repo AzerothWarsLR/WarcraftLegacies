@@ -1,0 +1,15 @@
+{
+  "Left": -18784,
+  "Bottom": 8608,
+  "Right": -14784,
+  "Top": 11104,
+  "Name": "AuberdineUnlock",
+  "CreationNumber": 120,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

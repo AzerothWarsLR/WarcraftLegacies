@@ -1,0 +1,15 @@
+{
+  "Left": 1120,
+  "Bottom": 18592,
+  "Right": 3360,
+  "Top": 20960,
+  "Name": "DrakUnlock",
+  "CreationNumber": 455,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

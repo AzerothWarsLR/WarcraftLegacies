@@ -32,6 +32,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
       TriggerAddAction(_entersRect.Trigger, OnRegionEnter);
       PingPath = "MinimapQuestTurnIn";
       DisplaysPosition = true;
+      Position = new(GetRectCenterX(_targetRect), GetRectCenterY(_targetRect));
     }
 
     /// <inheritdoc />
@@ -39,9 +40,6 @@ namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
     
     /// <inheritdoc />
     public string CompletingUnitName => CompletingUnit != null ? CompletingUnit.GetProperName() : "an unknown hero";
-    
-    /// <inheritdoc/>
-    public override Point Position => new(GetRectCenterX(_targetRect), GetRectCenterY(_targetRect));
 
     private static region RectToRegion(rect whichRect)
     {

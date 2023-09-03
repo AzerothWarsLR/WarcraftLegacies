@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 6436,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: ACca (Carrion Swarm), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Sends a horde of bats to deal \u003CACca,DataA1\u003E damage to each enemy unit in a line, up to a total of \u003CACca,DataB1\u003E damage."
+}

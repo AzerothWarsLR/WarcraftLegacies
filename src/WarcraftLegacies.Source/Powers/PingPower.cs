@@ -8,7 +8,7 @@ namespace WarcraftLegacies.Source.Powers
   /// <summary>
   /// Pings the specified <see cref="LegendaryHero"/> on the map
   /// </summary>
-  public class PingPower : Power
+  public sealed class PingPower : Power
   {
     private readonly LegendaryHero _arthas;
     private timer _coodownTimer;

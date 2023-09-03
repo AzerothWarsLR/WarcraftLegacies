@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 9103,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: A04R (Greater Doom), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Marks a target unit for the manifestation of a Demon. The afflicted unit cannot cast spells and will take \u003CANdo,DataA1\u003E damage per second until it dies. Upon its death, a great Demon will spawn from its corpse. Doom cannot be dispelled or cancelled. |n|cffffcc00Level 1|r - 40 damage per second and 1 Elite Doom Guard summoned.|n|cffffcc00Level 2|r - 70 damage per second and 2 Elite Doom Guards summoned. |n|cffffcc00Level 3|r - 100 damage per second and 4 Elite Doom Guards summoned."
+}

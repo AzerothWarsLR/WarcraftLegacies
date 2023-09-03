@@ -1,0 +1,15 @@
+{
+  "Left": 11488,
+  "Bottom": -9728,
+  "Right": 13248,
+  "Top": -8320,
+  "Name": "Shadowforge City",
+  "CreationNumber": 4,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

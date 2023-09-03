@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 5034,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: Ahwd (Healing Ward), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Summons an immovable ward that heals 1% of a nearby friendly non-mechanical unit\u0027s hit points per second. |nLasts \u003CAhwd,Dur1\u003E seconds."
+}

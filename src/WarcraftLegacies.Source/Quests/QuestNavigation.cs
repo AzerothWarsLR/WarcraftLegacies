@@ -19,7 +19,6 @@ namespace WarcraftLegacies.Source.Quests
       @"ReplaceableTextures\CommandButtons\BTNHumanTransport.blp")
     {
       AddObjective(new ObjectiveTime(780));
-      Shared = true;
       ResearchId = Constants.UPGRADE_R068_QUEST_COMPLETED_NAVIGATION;
     }
 

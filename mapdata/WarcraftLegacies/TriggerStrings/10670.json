@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 10670,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A0AN (Fear the Goddess), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Induce the enemy units with a fear in Elune that reduces nearby their attack damage by \u003CAcht,DataA1,%\u003E% for \u003CAcht,Dur1\u003E seconds."
+}

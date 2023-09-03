@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 4300,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: A0TW (Field of Blood), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Conjures a Field of Blood which Heals allied ground units in a target area over time. |n|cffffcc00|n|rHeals 250 hitpoints over 5 seconds, then 20 hitpoint every 1 seconds for 35 seconds."
+}

@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 6142,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: AEme (Ascendance), Researchtip (Tooltip - Learn)",
+  "Value": "Learn Ascendance - [|cffffcc00Level %d|r]"
+}

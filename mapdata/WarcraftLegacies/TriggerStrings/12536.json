@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 12536,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A0VI (Thick Skin), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Reduces all ranged attacks on the unit by \u003CA0VI,DataC1\u003E damage. Attacks cannot be reduced below \u003CA0VI,DataB1\u003E damage."
+}

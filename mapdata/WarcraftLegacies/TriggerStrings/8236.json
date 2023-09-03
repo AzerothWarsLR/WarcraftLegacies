@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 8236,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: A0QC (Thunder Clap), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Slams the ground, dealing 65 damage to nearby enemy land units and slowing their movement by \u003CS00H,DataA1,%\u003E% and attack rate by \u003CS00H,DataB1,%\u003E%. Lasts \u003CS00H,Dur1\u003E seconds against units and \u003CS00H,HeroDur1\u003E seconds against heroes. "
+}

@@ -43,7 +43,6 @@ namespace WarcraftLegacies.Source.Quests
       _preventAccessTriggers = CreatePreventAccessTriggers(interiorRects);
       HideUnitsInsideTomb(interiorRects);
       _entranceDoor = entranceDoor.SetInvulnerable(true);
-      Shared = true;
     }
 
     /// <inheritdoc />

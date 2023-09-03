@@ -1,0 +1,47 @@
+{
+  "OldId": 1919380552,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1953980789,
+      "Type": 3,
+      "Value": "TRIGSTR_1288"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "TRIGSTR_2381"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "TRIGSTR_699"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "TRIGSTR_1291"
+    },
+    {
+      "Id": 1869770869,
+      "Type": 3,
+      "Value": "TRIGSTR_1292"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "TRIGSTR_1293"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "TRIGSTR_15304"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 3
+    }
+  ]
+}

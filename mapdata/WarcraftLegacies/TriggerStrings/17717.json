@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 17717,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A0XN (Incinerate), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Each attack made is enhanced with living flames that cling to the target. These flames add a small amount of damage on the first attack, twice as much on the second attack, three times as much on the third attack, etc. If a unit dies while under this effect, it is incinerated, causing damage to all nearby hostile units. |n|n|cffffcc00Level 1|r - 40 damage. |n|cffffcc00Level 2|r - 80 damage. |n|cffffcc00Level 3|r - 120 damage. |n|cffffcc00Level 4|r - 160 damage."
+}

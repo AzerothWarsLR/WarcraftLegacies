@@ -1,0 +1,15 @@
+{
+  "Left": 16736,
+  "Bottom": -20256,
+  "Right": 17024,
+  "Top": -20000,
+  "Name": "ClosePortal",
+  "CreationNumber": 474,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

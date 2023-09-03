@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 16419,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A0OQ (Bone Totem), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Summons \u003CArsw,DataA2\u003E immobile serpentine wards to attack enemies. The ward has \u003Cosp2,realHP\u003E hit points, is magic immune, and deals \u003Cosp2,mindmg1\u003E - \u003Cosp2,maxdmg1\u003E damage. |nLasts \u003CArsw,Dur2\u003E seconds. |n|n|cffffcc00Attacks land and air units.|r"
+}

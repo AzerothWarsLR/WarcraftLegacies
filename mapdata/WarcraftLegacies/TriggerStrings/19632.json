@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 19632,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A0MG (Quick Knives), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "The hero hurls a flurry of knives, damaging nearby enemies. Has a 8 seconds cooldown. |n|n|cffffcc00Level 1|r - 50 damage per target. 5 targets |n|cffffcc00Level 2|r - 75 damage per target. 6 targets |n|cffffcc00Level 3|r - 100 damage per target. 7 targets"
+}

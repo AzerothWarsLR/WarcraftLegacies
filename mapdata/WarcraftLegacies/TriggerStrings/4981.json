@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 4981,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: Amls (Aerial Shackles), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Stuns and deals \u003CAmls,DataA1\u003E damage per second to a target enemy air unit.|n|cffffcc00Lasts 10(1 for Heros) seconds."
+}

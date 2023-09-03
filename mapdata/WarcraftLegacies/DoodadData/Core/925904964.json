@@ -1,0 +1,43 @@
+{
+  "OldId": 2003193946,
+  "NewId": 925904964,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1935764836,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": 1818850404,
+      "Type": 3,
+      "Value": "*"
+    },
+    {
+      "Id": 1918989924,
+      "Value": 1
+    },
+    {
+      "Id": 1818846820,
+      "Type": 3,
+      "Value": "war3mapImported\\FlowerField.mdl"
+    },
+    {
+      "Id": 1835101796,
+      "Type": 3,
+      "Value": "TRIGSTR_696"
+    },
+    {
+      "Id": 1918987620,
+      "Type": 2,
+      "Value": 4
+    },
+    {
+      "Id": 1885433188,
+      "Type": 2,
+      "Value": 4
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 15156,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A0M2 (Promise of Fortune), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Empower nearby friendly units, increasing their damage by \u003CA0M2,DataA2,%\u003E% and armor by \u003CA0M2,DataB2\u003E for \u003CA0M2,Dur2\u003E seconds."
+}

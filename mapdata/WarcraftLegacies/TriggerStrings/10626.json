@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 10626,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A0LU (War Stomp), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Slams the ground, stunning and damaging nearby enemy land units. |n|n|cffffcc00Level 1|r - \u003CAOw2,DataA1\u003E damage, \u003CAOw2,Dur1\u003E second stun. |n|cffffcc00Level 2|r - \u003CAOw2,DataA2\u003E damage, \u003CAOw2,Dur2\u003E second stun. |n|cffffcc00Level 3|r - \u003CAOw2,DataA3\u003E damage, \u003CAOw2,Dur3\u003E second stun. |n|cffffcc00Level 4|r - \u003CAOw2,DataA4\u003E damage, \u003CAOw2,Dur4\u003E second stun."
+}

@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 6085,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: AEtq (Tranquility), Researchtip (Tooltip - Learn)",
+  "Value": "Learn Tranquility - [|cffffcc00Level %d|r]"
+}

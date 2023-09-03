@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 18963,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A0WX (Curse of Flame), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Engulfs an enemy unit in demonic flame.|n|n|cffffcc00Level 1|r - Deals \u003CA0W9,DataA1\u003E initial damage, and \u003CA0W9,Cool1\u003E damage every \u003CA0W9,Cast1\u003E seconds for \u003CA0W9,Dur1\u003E seconds. Slows attack rate and movement speed.|n|cffffcc00Level 2|r - Deals \u003CA0W9,DataA2\u003E initial damage, and \u003CA0W9,Cool2\u003E damage every \u003CA0W9,Cast2\u003E seconds for \u003CA0W9,Dur2\u003E seconds. Slows attack rate and movement speed.|n|cffffcc00Level 3|r - Deals \u003CA0W9,DataA3\u003E initial damage, and \u003CA0W9,Cool3\u003E damage every \u003CA0W9,Cast3\u003E seconds for \u003CA0W9,Dur3\u003E seconds. Slows attack rate and movement speed.|n|cffffcc00Level 4|r - Deals \u003CA0W9,DataA4\u003E initial damage, and \u003CA0W9,Cool4\u003E damage every \u003CA0W9,Cast4\u003E seconds for \u003CA0W9,Dur4\u003E seconds. Slows attack rate and movement speed."
+}

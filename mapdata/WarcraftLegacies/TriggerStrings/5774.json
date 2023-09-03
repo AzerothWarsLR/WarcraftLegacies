@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 5774,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: ANfa (Frost Arrows), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Adds a cold effect to each attack, causing bonus damage and slowing a target enemy unit\u0027s attacks and movement. |n|n|cffffcc00Level 1|r - \u003CANfa,DataB1,%\u003E% attack rate, \u003CANfa,DataC1,%\u003E% movement speed, \u003CANfa,DataA1\u003E bonus damage.|n|cffffcc00Level 2|r - \u003CANfa,DataB2,%\u003E% attack rate, \u003CANfa,DataC2,%\u003E% movement speed, \u003CANfa,DataA2\u003E bonus damage.|n|cffffcc00Level 3|r - \u003CANfa,DataB3,%\u003E% attack rate, \u003CANfa,DataC3,%\u003E% movement speed, \u003CANfa,DataA3\u003E bonus damage.|n|cffffcc00Level 4|r - \u003CANfa,DataB4,%\u003E% attack rate, \u003CANfa,DataC4,%\u003E% movement speed, \u003CANfa,DataA4\u003E bonus damage."
+}

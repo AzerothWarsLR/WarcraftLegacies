@@ -1,0 +1,109 @@
+{
+  "OldId": 1936872002,
+  "NewId": 858927172,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1935764836,
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Id": 1936289124,
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Id": 1835101796,
+      "Type": 3,
+      "Value": "TRIGSTR_4653"
+    },
+    {
+      "Id": 2020896868,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Variation": 1,
+      "Id": 828536420,
+      "Value": 180
+    },
+    {
+      "Variation": 2,
+      "Id": 828536420,
+      "Value": 180
+    },
+    {
+      "Variation": 3,
+      "Id": 828536420,
+      "Value": 180
+    },
+    {
+      "Variation": 4,
+      "Id": 828536420,
+      "Value": 180
+    },
+    {
+      "Variation": 5,
+      "Id": 828536420,
+      "Value": 180
+    },
+    {
+      "Variation": 6,
+      "Id": 828536420,
+      "Value": 180
+    },
+    {
+      "Variation": 7,
+      "Id": 828536420,
+      "Value": 180
+    },
+    {
+      "Variation": 8,
+      "Id": 828536420,
+      "Value": 180
+    },
+    {
+      "Variation": 1,
+      "Id": 828864100,
+      "Value": 180
+    },
+    {
+      "Variation": 2,
+      "Id": 828864100,
+      "Value": 180
+    },
+    {
+      "Variation": 3,
+      "Id": 828864100,
+      "Value": 180
+    },
+    {
+      "Variation": 4,
+      "Id": 828864100,
+      "Value": 180
+    },
+    {
+      "Variation": 5,
+      "Id": 828864100,
+      "Value": 180
+    },
+    {
+      "Variation": 6,
+      "Id": 828864100,
+      "Value": 180
+    },
+    {
+      "Variation": 7,
+      "Id": 828864100,
+      "Value": 180
+    },
+    {
+      "Variation": 8,
+      "Id": 828864100,
+      "Value": 180
+    }
+  ]
+}

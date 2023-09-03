@@ -1,0 +1,128 @@
+{
+  "OldId": 1918988114,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 1718840935,
+      "Type": 3,
+      "Value": "TRIGSTR_13910"
+    },
+    {
+      "Level": 2,
+      "Id": 1718840935,
+      "Type": 3,
+      "Value": "TRIGSTR_13881"
+    },
+    {
+      "Level": 2,
+      "Id": 1835101799,
+      "Type": 3,
+      "Value": "TRIGSTR_13958"
+    },
+    {
+      "Level": 3,
+      "Id": 1835101799,
+      "Type": 3,
+      "Value": "TRIGSTR_13959"
+    },
+    {
+      "Level": 4,
+      "Id": 1835101799,
+      "Type": 3,
+      "Value": "TRIGSTR_13960"
+    },
+    {
+      "Level": 5,
+      "Id": 1835101799,
+      "Type": 3,
+      "Value": "TRIGSTR_13961"
+    },
+    {
+      "Level": 6,
+      "Id": 1835101799,
+      "Type": 3,
+      "Value": "TRIGSTR_13962"
+    },
+    {
+      "Level": 7,
+      "Id": 1835101799,
+      "Type": 3,
+      "Value": "TRIGSTR_13963"
+    },
+    {
+      "Level": 8,
+      "Id": 1835101799,
+      "Type": 3,
+      "Value": "TRIGSTR_13964"
+    },
+    {
+      "Level": 1,
+      "Id": 829453415,
+      "Type": 3,
+      "Value": "TRIGSTR_13965"
+    },
+    {
+      "Level": 2,
+      "Id": 829453415,
+      "Type": 3,
+      "Value": "TRIGSTR_13966"
+    },
+    {
+      "Level": 3,
+      "Id": 829453415,
+      "Type": 3,
+      "Value": "TRIGSTR_13967"
+    },
+    {
+      "Level": 4,
+      "Id": 829453415,
+      "Type": 3,
+      "Value": "TRIGSTR_13968"
+    },
+    {
+      "Level": 5,
+      "Id": 829453415,
+      "Type": 3,
+      "Value": "TRIGSTR_13969"
+    },
+    {
+      "Level": 6,
+      "Id": 829453415,
+      "Type": 3,
+      "Value": "TRIGSTR_13970"
+    },
+    {
+      "Level": 7,
+      "Id": 829453415,
+      "Type": 3,
+      "Value": "TRIGSTR_13971"
+    },
+    {
+      "Level": 8,
+      "Id": 829453415,
+      "Type": 3,
+      "Value": "TRIGSTR_13972"
+    },
+    {
+      "Level": 1,
+      "Id": 828536167,
+      "Type": 3,
+      "Value": "TRIGSTR_13973"
+    },
+    {
+      "Level": 2,
+      "Id": 828536167,
+      "Type": 3,
+      "Value": "TRIGSTR_13974"
+    },
+    {
+      "Level": 3,
+      "Id": 828536167,
+      "Type": 3,
+      "Value": "TRIGSTR_13975"
+    }
+  ]
+}

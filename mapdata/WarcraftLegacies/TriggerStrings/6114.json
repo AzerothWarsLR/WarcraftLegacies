@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 6114,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: AEsh (Shadow Strike), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Hurls a poisoned dagger at a target enemy unit, dealing \u003CAEsh,DataE3\u003E initial damage, and \u003CAEsh,DataA3\u003E damage every \u003CAEsh,Cast3\u003E seconds for \u003CAEsh,Dur3\u003E seconds. The poison slows the movement speed of the targeted unit by 75% for it\u0027s duration."
+}

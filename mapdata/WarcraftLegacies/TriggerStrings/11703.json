@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 11703,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A05R (Healing Shield), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Forms a shield of healing energies around a target unit, healing 15 damage per second to all units around it. Lasts 20 seconds."
+}

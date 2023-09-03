@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 21178,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A059 (Death Pact), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Kills a target friendly Undead unit, giving 125% of its hit points to the Death Knight and 10% of it\u0027s hitpoints in mana."
+}

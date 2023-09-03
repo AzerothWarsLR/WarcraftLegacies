@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 5978,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: AHmt (Mass Teleport), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Teleports units, including the caster, to a friendly building or unit. |n|cffffcc00Level 1|r - Teleports 60 units.|n|cffffcc00Level 2|r - Teleports 72 units.|n|cffffcc00Level 3|r - Teleports 84 units."
+}

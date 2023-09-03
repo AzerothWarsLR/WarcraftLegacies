@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 12852,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A00X (Defilement), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Archimonde\u0027s dark magic defiles a targetted unit along with all nearby enemies. |n|nDecreases armor by 5; deals 25 damage per second to the primary target; deals slightly less damage to nearby targets. Also Reduces enemy Movement speed by 10%.|nLasts 15 seconds on units and 10 seconds on heroes."
+}

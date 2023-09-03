@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 2049,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: A03S (Rampage), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Adds bonus damage to the unit and causes its attacks to heal it for a percentage of damage dealt. |n|n|cffffcc00Level 1|r - 40% life steal, 10 bonus damage, lasts 8 seconds.|n|cffffcc00Level 2|r - 60% life steal, 20 bonus damage, lasts 10 seconds.|n|cffffcc00Level 3|r - 80% life steal, 30 bonus damage, lasts 12 seconds. |n|cffffcc00Level 4|r - 100% life steal, 40 bonus damage, lasts 14 seconds."
+}

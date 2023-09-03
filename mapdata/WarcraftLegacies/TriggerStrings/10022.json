@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 10022,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A0NP (Devour), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Consumes an enemy unit, dealing 500 damage if it\u0027s a hero and killing it instantly otherwise. Heals the caster caster for 50% of its hit points."
+}

@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 21349,
+  "KeyPrecision": 5,
+  "Comment": " Buffs/Effects: B00N (Freezing Shield), Buffubertip (Tooltip - Extended)",
+  "Value": "This unit has a Freezing Shield; nearby friendly and enemy units will take damage if they are next to this unit."
+}

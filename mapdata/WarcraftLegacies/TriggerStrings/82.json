@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 82,
+  "KeyPrecision": 2,
+  "Comment": " Abilities: A0ND (Poison Nova), Researchtip (Tooltip - Learn)",
+  "Value": "Learn Poison Nova - [|cffffcc00Level %d|r]"
+}

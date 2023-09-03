@@ -1,0 +1,24 @@
+{
+  "OldId": 1952666446,
+  "NewId": 875638852,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1818846820,
+      "Type": 3,
+      "Value": "buildings\\other\\NerubianZiggurat\\NerubianZiggurat.mdl"
+    },
+    {
+      "Id": 1835101796,
+      "Type": 3,
+      "Value": "TRIGSTR_4688"
+    },
+    {
+      "Id": 2020896868,
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

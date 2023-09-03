@@ -1,0 +1,15 @@
+{
+  "Left": -9248,
+  "Bottom": -13984,
+  "Right": -8160,
+  "Top": -12896,
+  "Name": "GoblinStartPos",
+  "CreationNumber": 422,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

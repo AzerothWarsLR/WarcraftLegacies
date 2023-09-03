@@ -1,6 +1,5 @@
 ﻿using MacroTools.Extensions;
 using MacroTools.QuestSystem;
-using WCSharp.Shared.Data;
 using static War3Api.Common;
 
 namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
@@ -38,10 +37,9 @@ namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
           if (GetUnitState(_objectiveUnit, UNIT_STATE_LIFE) == GetUnitState(_objectiveUnit, UNIT_STATE_MAX_LIFE))
             Progress = QuestProgress.Complete;
         });
+      
+      Position = new(GetUnitX(_objectiveUnit), GetUnitY(_objectiveUnit));
     }
-
-    /// <inheritdoc/>
-    public override Point Position => new(GetUnitX(_objectiveUnit), GetUnitY(_objectiveUnit));
 
     internal override void OnAdd(FactionSystem.Faction faction)
     {

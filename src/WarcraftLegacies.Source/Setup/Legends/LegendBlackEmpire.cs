@@ -1,6 +1,6 @@
 ﻿using MacroTools;
 using MacroTools.LegendSystem;
-using WCSharp.Shared.Data;
+
 #pragma warning disable CS1591
 
 namespace WarcraftLegacies.Source.Setup.Legends

@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 6214,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: AEer (Entangling Roots), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Causes roots to burst from the ground, immobilizing, disarming and damaging a target enemy temporarily. |n|n|cffffcc00Level 1|r - \u003CAEer,DataA1\u003E damage per second for \u003CAEer,Dur1\u003E seconds. |n|cffffcc00Level 2|r - \u003CAEer,DataA2\u003E damage per second for \u003CAEer,Dur2\u003E seconds. |n|cffffcc00Level 3|r - \u003CAEer,DataA3\u003E damage per second for \u003CAEer,Dur3\u003E seconds.|n|cffffcc00Level 4|r - \u003CAEer,DataA4\u003E damage per second for \u003CAEer,Dur4\u003E seconds."
+}

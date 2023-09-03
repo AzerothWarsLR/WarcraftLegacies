@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 10803,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A09T (Siphon Mana), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Transfers mana between the Minister and a target. Drains 15 mana per second from an enemy, or transfers 10 mana per second to an ally.|n|nSiphon Mana can push the Minister\u0027s mana over its maximum value, though excess mana drains off rapidly if not used.|nLasts 6 seconds."
+}

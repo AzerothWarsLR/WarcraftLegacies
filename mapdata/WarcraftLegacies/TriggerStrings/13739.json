@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 13739,
+  "KeyPrecision": 5,
+  "Comment": " Buffs/Effects: B00O (Demonic Energies), Buffubertip (Tooltip - Extended)",
+  "Value": "This unit has Demonic Energies; nearby enemy units will take damage over time."
+}

@@ -45,10 +45,8 @@ namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
           if (!IsValidUnitInRect()) 
             Progress = QuestProgress.Incomplete;
         });
+      Position = new(GetRectCenterX(_targetRect), GetRectCenterY(_targetRect));
     }
-
-    /// <inheritdoc />
-    public override Point Position => new(GetRectCenterX(_targetRect), GetRectCenterY(_targetRect));
 
     /// <inheritdoc />
     public unit? CompletingUnit { get; private set; }

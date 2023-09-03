@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 19400,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A0ZA (Warsong Battle Standard), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Places a battle standard, giving bonus regeneration and armor to friendly units next to the banner.|nLasts 25 seconds. |n|n|cffffcc00Level 1|r - 750 hit points gives a 50% regeneration increase and 10 armor. |n|cffffcc00Level 2|r - 950 hit points gives a 100% regeneration increase and 10 armor.|n|cffffcc00Level 3|r - 1250 hit points gives a 150% regeneration increase and 10 armor."
+}

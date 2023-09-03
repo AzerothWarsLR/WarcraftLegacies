@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 5096,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: Afbb (Feedback), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Attacks destroy \u003CAfbb,DataA1\u003E mana per hit. The mana combusts, dealing damage to the attacked unit."
+}

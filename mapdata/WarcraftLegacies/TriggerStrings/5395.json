@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 5395,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: AUav (Vampiric Aura), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Nearby friendly melee units gain hit points when they hit enemy units. |n|n|cffffcc00Level 1|r - Gains \u003CAUav,DataA1,%\u003E% of attack damage. |n|cffffcc00Level 2|r - Gains \u003CAUav,DataA2,%\u003E% of attack damage. |n|cffffcc00Level 3|r - Gains \u003CAUav,DataA3,%\u003E% of attack damage. |n|cffffcc00Level 4|r - Gains \u003CAUav,DataA4,%\u003E% of attack damage."
+}

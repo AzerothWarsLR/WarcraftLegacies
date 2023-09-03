@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 7767,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: A0TP (Shadow Strike), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Akama strikes a target from the shadows|n|nDecreases armor, mouvement speed, attack speed and deals damage.|nLasts 8 seconds on heroes.|n|n|cffffcc00Level 1|r - 150 damage, reduces armor by 3, mouvement speed by 30% and attack speed by 40%.|n|cffffcc00Level 2|r - 200 damage, reduces armor by 4, mouvement speed by 40% and attack speed by 50%.|n|cffffcc00Level 3|r - 250 damage, reduces armor by 5, mouvement speed by 50% and attack speed by 60%.|n|cffffcc00Level 4|r - 300 damage, reduces armor by 6, mouvement speed by 60% and attack speed by 70%."
+}

@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 14567,
+  "KeyPrecision": 5,
+  "Comment": " Upgrades: R02Z (Defend), Ubertip (Tooltip - Extended)",
+  "Value": "Upgrades |cffcece00Bladesman|r into |cffcece00Pikeman|r, providing the following changes:|n|n- Increases health by 100.|n|n- Increases movement speed by 15.|n|n- Increases armor by 1.|n|n- Increases range by 75.|n|n- Enables the|cffcece00 First Strike |rability, dealing 30 bonus damage on his first attack with a 30 second cooldown.|n|n- Improves |cffcece00Defend|r with an additional 5% more chance to reflect and 20% less magic damage taken while active."
+}

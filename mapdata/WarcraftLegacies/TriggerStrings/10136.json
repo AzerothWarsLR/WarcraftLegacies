@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 10136,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A0NP (Devour), Researchtip (Tooltip - Learn)",
+  "Value": "Learn Devour - [|cffffcc00Level %d|r]"
+}

@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 13416,
+  "KeyPrecision": 5,
+  "Comment": " Buffs/Effects: B04O (Orb of Deceleration), Buffubertip (Tooltip - Extended)",
+  "Value": "This unit has Orb of Deceletation; melee units that attack it will have their movement speed and attack rate reduced for a short duration."
+}

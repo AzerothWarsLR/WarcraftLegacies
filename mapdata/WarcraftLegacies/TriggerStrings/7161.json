@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 7161,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: A0XW (Presence of the Unspeakable), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Decreases the movement speed and attack rate of nearby enemy units. |n|n|cffffcc00Level 1|r - \u003CAOae,DataA1,%\u003E% movement, \u003CAOae,DataB1,%\u003E% attack. |n|cffffcc00Level 2|r - \u003CAOae,DataA2,%\u003E% movement, \u003CAOae,DataB2,%\u003E% attack. |n|cffffcc00Level 3|r - \u003CAOae,DataA3,%\u003E% movement, \u003CAOae,DataB3,%\u003E% attack.|n|cffffcc00Level 4|r - \u003CAOae,DataA4,%\u003E% movement, \u003CAOae,DataB4,%\u003E% attack."
+}

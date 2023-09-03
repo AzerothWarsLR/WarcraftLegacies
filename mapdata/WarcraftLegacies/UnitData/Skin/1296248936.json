@@ -1,0 +1,49 @@
+{
+  "OldId": 1818848616,
+  "NewId": 1296248936,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "TRIGSTR_2639"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.75
+    },
+    {
+      "Id": 1935827317,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "TRIGSTR_5336"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "TRIGSTR_21278"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "ArmoredGhost.mdl"
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "SpellBreaker"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNRevenant.blp"
+    }
+  ]
+}

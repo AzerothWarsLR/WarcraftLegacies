@@ -1,0 +1,33 @@
+{
+  "Name": "gg_snd_BattlenetDeath1",
+  "FilePath": "Sound/Interface/BattlenetDeath1.flac",
+  "EaxSetting": "DefaultEAXON",
+  "FadeInRate": 1,
+  "FadeOutRate": 1,
+  "Volume": 127,
+  "Pitch": 4294967296,
+  "PitchVariance": 4294967296,
+  "Priority": 5,
+  "Channel": -1,
+  "MinDistance": 1600,
+  "MaxDistance": 5500,
+  "DistanceCutoff": 5000,
+  "ConeAngleInside": 4294967296,
+  "ConeAngleOutside": 4294967296,
+  "ConeOutsideVolume": -1,
+  "ConeOrientation": {
+    "X": 4.2949673E+09,
+    "Y": 4.2949673E+09,
+    "Z": 4.2949673E+09
+  },
+  "SoundName": "GlueScreenBNetOpen",
+  "DialogueTextKey": -1,
+  "Unk2": "",
+  "DialogueSpeakerNameKey": -1,
+  "Unk6": "",
+  "Unk7": "",
+  "FacialAnimationLabel": "",
+  "FacialAnimationGroupLabel": "",
+  "FacialAnimationSetFilepath": "",
+  "Unk11": 1
+}

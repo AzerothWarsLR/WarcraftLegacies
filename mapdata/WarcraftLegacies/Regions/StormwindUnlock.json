@@ -1,0 +1,15 @@
+{
+  "Left": 6816,
+  "Bottom": -12640,
+  "Right": 11264,
+  "Top": -8576,
+  "Name": "StormwindUnlock",
+  "CreationNumber": 370,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

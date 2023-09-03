@@ -1,0 +1,15 @@
+{
+  "Left": -14656,
+  "Bottom": -4128,
+  "Right": -14496,
+  "Top": -3968,
+  "Name": "ThunderbluffFlight",
+  "CreationNumber": 165,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

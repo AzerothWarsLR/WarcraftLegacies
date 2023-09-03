@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 5347,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: AUfa (Frost Armor), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Creates a shield of frost around a target friendly unit. The shield adds \u003CAUfa,DataB3\u003E armor and slows melee units that attack it for \u003CAUfa,Dur3\u003E seconds. |nLasts \u003CAUfa,DataA3\u003E seconds."
+}

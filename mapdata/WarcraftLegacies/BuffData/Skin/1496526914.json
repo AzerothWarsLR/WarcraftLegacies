@@ -1,0 +1,19 @@
+{
+  "OldId": 1718832962,
+  "NewId": 1496526914,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1953653094,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNArachnathid.blp"
+    },
+    {
+      "Id": 1885959270,
+      "Type": 3,
+      "Value": "TRIGSTR_13477"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 12276,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A038 (Cavalry Onslaught), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Calls upon waves of brave knights to charge into enemy ranks. |n|n|cffffcc00Level 1|r -  Each charging Knight deals 40 damage. |n|cffffcc00Level 2|r -  Each charging Knight deals 70 damage. |n|cffffcc00Level 3|r -  Each charging Knight deals 100 damage. |n|nLasts 30 seconds."
+}

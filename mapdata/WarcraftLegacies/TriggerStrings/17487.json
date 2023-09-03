@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 17487,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A0FR (Transfusion), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Calls forth a wave of blood that heals a target and bounces to nearby friendlies. Each bounce heals less damage. |n|n|cffffcc00Level 1|r - Heals \u003CANhw,DataA1\u003E damage, jumps \u003CANhw,DataB1\u003E times. |n|cffffcc00Level 2|r - Heals \u003CANhw,DataA2\u003E damage, jumps \u003CANhw,DataB2\u003E times. |n|cffffcc00Level 3|r - Heals \u003CANhw,DataA3\u003E damage, jumps \u003CANhw,DataB3\u003E times. |n|cffffcc00Level 4|r - Heals \u003CANhw,DataA4\u003E damage, jumps \u003CANhw,DataB4\u003E times."
+}

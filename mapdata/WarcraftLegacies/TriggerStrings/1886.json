@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 1886,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: A0HL (Feathermoon Aura), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Increases the attack damage of friendly ranged units within a radius of \u003CA0HL,Area1\u003E by \u003CA0HL,DataA1,%\u003E%."
+}

@@ -1,0 +1,67 @@
+{
+  "OldId": 862143297,
+  "NewId": 1395798337,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNPhoenixFlame.blp"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "TRIGSTR_21011"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "TRIGSTR_19353"
+    },
+    {
+      "Id": 1952542049,
+      "Type": 3,
+      "Value": "units\\human\\phoenix\\phoenix.mdl"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "TRIGSTR_21012"
+    },
+    {
+      "Id": 1952543585,
+      "Type": 3,
+      "Value": "units\\human\\phoenix\\phoenix.mdl"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "TRIGSTR_21013"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "TRIGSTR_21014"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "TRIGSTR_21015"
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "TRIGSTR_21016"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 0
+    }
+  ]
+}

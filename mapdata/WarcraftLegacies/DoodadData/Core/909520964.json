@@ -1,0 +1,73 @@
+{
+  "OldId": 1802719041,
+  "NewId": 909520964,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1818846820,
+      "Type": 3,
+      "Value": "chains bent.mdl"
+    },
+    {
+      "Id": 1935764836,
+      "Type": 2,
+      "Value": 4
+    },
+    {
+      "Id": 1835101796,
+      "Type": 3,
+      "Value": "TRIGSTR_15678"
+    },
+    {
+      "Id": 2020896868,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1818850404,
+      "Type": 3,
+      "Value": "A,*"
+    },
+    {
+      "Id": 1918989924,
+      "Value": 3
+    },
+    {
+      "Variation": 2,
+      "Id": 829584996,
+      "Value": 125
+    },
+    {
+      "Variation": 2,
+      "Id": 828864100,
+      "Value": 100
+    },
+    {
+      "Variation": 2,
+      "Id": 828536420,
+      "Value": 125
+    },
+    {
+      "Variation": 3,
+      "Id": 829584996,
+      "Value": 100
+    },
+    {
+      "Variation": 3,
+      "Id": 828864100,
+      "Value": 100
+    },
+    {
+      "Variation": 3,
+      "Id": 828536420,
+      "Value": 100
+    },
+    {
+      "Id": 1936289124,
+      "Type": 2,
+      "Value": 0.1
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "OldId": 1735289699,
+  "NewId": 858796105,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1868786025,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNEyeOfSargeras.blp"
+    },
+    {
+      "Id": 1936024681,
+      "Type": 3,
+      "Value": "TRIGSTR_4382"
+    },
+    {
+      "Id": 1818846825,
+      "Type": 3,
+      "Value": "Doodads\\Cinematic\\EyeOfSargeras\\EyeOfSargeras.mdl"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "TRIGSTR_4383"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "TRIGSTR_4384"
+    }
+  ]
+}

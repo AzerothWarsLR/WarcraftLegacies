@@ -1,0 +1,15 @@
+{
+  "Left": 11168,
+  "Bottom": 5632,
+  "Right": 11552,
+  "Top": 5984,
+  "Name": "AlteracLegionLanding",
+  "CreationNumber": 95,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

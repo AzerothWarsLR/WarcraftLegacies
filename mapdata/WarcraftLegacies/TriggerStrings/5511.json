@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 5511,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: AOmi (Mirror Image), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Creates images of Hero to fight enemies and dispels all magic from Hero.|n|n|cffffcc00Level 1|r - Creates 3 images which deal 50% the damage of Hero and take 200% the damage. |n|cffffcc00Level 2|r - Creates 5 images which deal 50% the damage of Hero and take 200% the damage. |n|cffffcc00Level 3|r - Creates 7 images which deal 50% the damage of Hero and take 200% the damage."
+}

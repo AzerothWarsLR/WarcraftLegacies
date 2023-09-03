@@ -1,0 +1,83 @@
+{
+  "OldId": 1667392078,
+  "NewId": 1094987854,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNFelOrc_Warlord.blp"
+    },
+    {
+      "Id": 1953980789,
+      "Type": 3,
+      "Value": "TRIGSTR_9044"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "TRIGSTR_16625"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\FelOrcWarlord.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "TRIGSTR_5418"
+    },
+    {
+      "Id": 2053990773,
+      "Type": 2,
+      "Value": 90
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.95
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "TRIGSTR_16647"
+    },
+    {
+      "Id": 1869770869,
+      "Type": 3,
+      "Value": "TRIGSTR_16660"
+    },
+    {
+      "Id": 1919972469,
+      "Type": 3,
+      "Value": "TRIGSTR_16664"
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 1.35
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "TRIGSTR_19061"
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "Shaman"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "TRIGSTR_19065"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 1
+    }
+  ]
+}

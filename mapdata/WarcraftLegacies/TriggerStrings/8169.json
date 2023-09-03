@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 8169,
+  "KeyPrecision": 4,
+  "Comment": " Items: stwp (Town Portal Scroll), Ubertip (Tooltip - Extended)",
+  "Value": "Teleports the Hero and any of its nearby troops to a target owned structure.|n|n|cffe8e800Has a \u003CA002,DataB1\u003E second cast time.|r"
+}

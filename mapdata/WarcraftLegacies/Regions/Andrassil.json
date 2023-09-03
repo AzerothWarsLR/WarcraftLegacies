@@ -1,0 +1,15 @@
+{
+  "Left": 4992,
+  "Bottom": 18400,
+  "Right": 5440,
+  "Top": 18816,
+  "Name": "Andrassil",
+  "CreationNumber": 177,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

@@ -33,7 +33,7 @@ namespace MacroTools.ObjectiveSystem
     /// <summary>
     ///   Where the <see cref="Objective" /> can be completed.
     /// </summary>
-    public virtual Point Position { get; }
+    public Point? Position { get; protected init; }
 
     /// <summary>
     ///   Whether or not the <see cref="Objective" /> should display a position.

@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 4783,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: Aven (Envenomed Spears), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Deals 5 poison damage per second, poison damage stacks and slows movement speed by 25%. |nLasts \u003CAven,Dur1\u003E seconds."
+}

@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 10147,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A0D6 (Chain of the Void), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Hurls a bolt of lightning that bounces up to 6 times, dealing 75 damage to the primary target. Each jump deals 10% less damage."
+}

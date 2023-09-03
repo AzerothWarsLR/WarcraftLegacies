@@ -1,0 +1,157 @@
+{
+  "OldId": 1851877458,
+  "NewId": 1261449298,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 829579623,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSnazzyScroll.blp"
+    },
+    {
+      "Id": 2037408359,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": 1718840935,
+      "Type": 3,
+      "Value": "TRIGSTR_14974"
+    },
+    {
+      "Level": 1,
+      "Id": 829122663,
+      "Type": 3,
+      "Value": "TRIGSTR_21022"
+    },
+    {
+      "Level": 1,
+      "Id": 1835101799,
+      "Type": 3,
+      "Value": "TRIGSTR_15498"
+    },
+    {
+      "Level": 1,
+      "Id": 829453415,
+      "Type": 3,
+      "Value": "TRIGSTR_15500"
+    },
+    {
+      "Level": 1,
+      "Id": 828536167,
+      "Type": 3,
+      "Value": "TRIGSTR_14979"
+    },
+    {
+      "Level": 2,
+      "Id": 828536167,
+      "Type": 3,
+      "Value": "TRIGSTR_19438"
+    },
+    {
+      "Level": 3,
+      "Id": 828536167,
+      "Type": 3,
+      "Value": "TRIGSTR_19447"
+    },
+    {
+      "Level": 4,
+      "Id": 828536167,
+      "Type": 3,
+      "Value": "TRIGSTR_19448"
+    },
+    {
+      "Level": 2,
+      "Id": 829122663,
+      "Type": 3,
+      "Value": "TRIGSTR_21170"
+    },
+    {
+      "Level": 3,
+      "Id": 829122663,
+      "Type": 3,
+      "Value": "TRIGSTR_21171"
+    },
+    {
+      "Level": 4,
+      "Id": 829122663,
+      "Type": 3,
+      "Value": "TRIGSTR_21187"
+    },
+    {
+      "Level": 2,
+      "Id": 1835101799,
+      "Type": 3,
+      "Value": "TRIGSTR_15502"
+    },
+    {
+      "Level": 3,
+      "Id": 1835101799,
+      "Type": 3,
+      "Value": "TRIGSTR_15636"
+    },
+    {
+      "Level": 4,
+      "Id": 1835101799,
+      "Type": 3,
+      "Value": "TRIGSTR_15642"
+    },
+    {
+      "Level": 2,
+      "Id": 829453415,
+      "Type": 3,
+      "Value": "TRIGSTR_15651"
+    },
+    {
+      "Level": 3,
+      "Id": 829453415,
+      "Type": 3,
+      "Value": "TRIGSTR_15653"
+    },
+    {
+      "Level": 4,
+      "Id": 829453415,
+      "Type": 3,
+      "Value": "TRIGSTR_15654"
+    },
+    {
+      "Level": 2,
+      "Id": 829579623,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSnazzyScroll.blp"
+    },
+    {
+      "Level": 3,
+      "Id": 829579623,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSnazzyScroll.blp"
+    },
+    {
+      "Level": 4,
+      "Id": 829579623,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSnazzyScroll.blp"
+    },
+    {
+      "Level": 2,
+      "Id": 1718840935,
+      "Type": 3,
+      "Value": "TRIGSTR_15422"
+    },
+    {
+      "Level": 3,
+      "Id": 1718840935,
+      "Type": 3,
+      "Value": "TRIGSTR_15423"
+    },
+    {
+      "Level": 4,
+      "Id": 1718840935,
+      "Type": 3,
+      "Value": "TRIGSTR_15424"
+    }
+  ]
+}

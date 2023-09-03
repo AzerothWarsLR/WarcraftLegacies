@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 16277,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A066 (Toughness), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "The hero has been toughened immensely by his experience, softening the blows of all physical attacks. Attacks cannot be reduced below \u003CA066,DataB1\u003E damage. |n|n|cffffcc00Level 1|r - Blocks \u003CA066,DataC1\u003E damage.|n|cffffcc00Level 2|r - Blocks \u003CA066,DataC2\u003E damage.|n|cffffcc00Level 3|r - Blocks \u003CA066,DataC3\u003E damage. |n|cffffcc00Level 4|r - Blocks \u003CA066,DataC4\u003E damage"
+}

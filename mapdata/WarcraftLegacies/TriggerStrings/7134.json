@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 7134,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: A0XZ (Carrion Swarm), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Sends a horde of bats to deal \u003CA0XZ,DataA1\u003E damage to each enemy unit in a cone, up to a maximum of \u003CA0XZ,DataB1\u003E total damage. "
+}

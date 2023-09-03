@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 8921,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: A0KD (Holy Power), Researchtip (Tooltip - Learn)",
+  "Value": "Learn Holy Power - [|cffffcc00Level %d|r]"
+}

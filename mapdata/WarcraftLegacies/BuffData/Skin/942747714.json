@@ -1,0 +1,19 @@
+{
+  "OldId": 1685275969,
+  "NewId": 942747714,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1835101798,
+      "Type": 3,
+      "Value": "TRIGSTR_13701"
+    },
+    {
+      "Id": 1952543846,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Human\\Resurrect\\ResurrectCaster.mdl"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "Left": 5440,
+  "Bottom": 3104,
+  "Right": 6592,
+  "Top": 4768,
+  "Name": "ShadowfangUnlock",
+  "CreationNumber": 375,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

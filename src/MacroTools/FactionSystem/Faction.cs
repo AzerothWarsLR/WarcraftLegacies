@@ -8,7 +8,6 @@ using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives;
 using MacroTools.QuestSystem;
 using MacroTools.ResearchSystems;
-using War3Api;
 using WCSharp.Events;
 using static War3Api.Common;
 
@@ -59,7 +58,6 @@ namespace MacroTools.FactionSystem
     private string _icon;
     private string _name;
     private player? _player;
-    private ScoreStatus _scoreStatus = ScoreStatus.Undefeated;
     private int _undefeatedResearch;
     private int _xp; //Stored by DistributeUnits and given out again by DistributeResources
 
@@ -164,34 +162,10 @@ namespace MacroTools.FactionSystem
     /// </summary>
     public string CinematicMusic { get; init; }
 
-    public ScoreStatus ScoreStatus
-    {
-      get => _scoreStatus;
-      set
-      {
-        //Change defeated/undefeated researches
-        foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
-          if (value == ScoreStatus.Defeated)
-          {
-            SetPlayerTechResearched(player, _defeatedResearch, 1);
-            SetPlayerTechResearched(player, _undefeatedResearch, 0);
-          }
-
-        //Remove player from game if necessary
-        if (value == ScoreStatus.Defeated && Player != null)
-        {
-          FogModifierStart(CreateFogModifierRect(Player, FOG_OF_WAR_VISIBLE,
-            WCSharp.Shared.Data.Rectangle.WorldBounds.Rect, false, false));
-          RemovePlayer(Player, PLAYER_GAME_RESULT_DEFEAT);
-          SetPlayerState(Player, PLAYER_STATE_OBSERVER, 1);
-          Leave();
-        }
-
-        _scoreStatus = value;
-        StatusChanged?.Invoke(this, this);
-        ScoreStatusChanged?.Invoke(this, this);
-      }
-    }
+    /// <summary>
+    /// Whether or not the <see cref="Faction"/> has been defeated.
+    /// </summary>
+    public ScoreStatus ScoreStatus { get; private set; } = ScoreStatus.Undefeated;
 
     public string ColoredName => PrefixCol + _name + "|r";
 
@@ -339,6 +313,31 @@ namespace MacroTools.FactionSystem
     /// </summary>
     public event EventHandler<Faction>? StatusChanged;
 
+    /// <summary>
+    /// Defeats the player, making them an observer, and distributing their units and resources to allies if possible.
+    /// </summary>
+    public void Defeat()
+    {
+      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
+      {
+        SetPlayerTechResearched(player, _defeatedResearch, 1);
+        SetPlayerTechResearched(player, _undefeatedResearch, 0);
+      }
+      
+      if (Player != null)
+      {
+        FogModifierStart(CreateFogModifierRect(Player, FOG_OF_WAR_VISIBLE,
+          WCSharp.Shared.Data.Rectangle.WorldBounds.Rect, false, false));
+        RemovePlayer(Player, PLAYER_GAME_RESULT_DEFEAT);
+        SetPlayerState(Player, PLAYER_STATE_OBSERVER, 1);
+        Leave();
+      }
+
+      ScoreStatus = ScoreStatus.Defeated;
+      StatusChanged?.Invoke(this, this);
+      ScoreStatusChanged?.Invoke(this, this);
+    }
+    
     /// <summary>
     ///   Returns all unit types which this <see cref="Faction" /> can only train a limited number of.
     /// </summary>

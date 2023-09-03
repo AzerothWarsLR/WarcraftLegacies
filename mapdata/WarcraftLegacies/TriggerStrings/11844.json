@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 11844,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A054 (Arcane Artillery), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Calls down 10 Arcane waves; each wave deals 15 damage to units in a small area."
+}

@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 11987,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A04K (Mighty Guard), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "The defensive prowess of this hero give it a percent chance to block damage.|n|n|cffffcc00Level 1|r - 35% chance to block, ignores 20 damage.|n|cffffcc00Level 2|r - 40% chance to block, ignores 38 damage.|n|cffffcc00Level 3|r - 43% chance to block, ignores 56 damage.|n|cffffcc00Level 4|r - 47% chance to block, ignores 74 damage."
+}

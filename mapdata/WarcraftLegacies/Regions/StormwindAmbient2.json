@@ -1,0 +1,14 @@
+{
+  "Left": 6624,
+  "Bottom": -10528,
+  "Right": 8160,
+  "Top": -8544,
+  "Name": "StormwindAmbient2",
+  "CreationNumber": 294,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 255,
+    "B": 255
+  }
+}

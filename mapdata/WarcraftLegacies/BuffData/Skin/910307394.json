@@ -1,0 +1,34 @@
+{
+  "OldId": 1685475138,
+  "NewId": 910307394,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1952543846,
+      "Type": 3,
+      "Value": "war3mapImported\\Sacred Guard Gold.mdx"
+    },
+    {
+      "Id": 811693158,
+      "Type": 3,
+      "Value": "chest"
+    },
+    {
+      "Id": 1885959270,
+      "Type": 3,
+      "Value": "TRIGSTR_20683"
+    },
+    {
+      "Id": 1700951398,
+      "Type": 3,
+      "Value": "TRIGSTR_20684"
+    },
+    {
+      "Id": 1953653094,
+      "Type": 3,
+      "Value": "ReplaceableTextures/CommandButtons/BTNSphereOfDivine.blp"
+    }
+  ]
+}

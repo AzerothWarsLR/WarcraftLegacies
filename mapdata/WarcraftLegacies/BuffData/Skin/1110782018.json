@@ -1,0 +1,29 @@
+{
+  "OldId": 1819429186,
+  "NewId": 1110782018,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1953653094,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHeartOfAszune.blp"
+    },
+    {
+      "Id": 1700951398,
+      "Type": 3,
+      "Value": "TRIGSTR_13360"
+    },
+    {
+      "Id": 1835101798,
+      "Type": 3,
+      "Value": "TRIGSTR_13361"
+    },
+    {
+      "Id": 1952543846,
+      "Type": 3,
+      "Value": "SharedModels\\EntangleWisp"
+    }
+  ]
+}

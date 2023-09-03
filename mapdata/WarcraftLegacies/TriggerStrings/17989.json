@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 17989,
+  "KeyPrecision": 5,
+  "Comment": " Items: I011 (Crown of the Triumvirate), Ubertip (Tooltip - Extended)",
+  "Value": "|cffff8c00Artifact|r|nIncreases Strength, Agility and Intelligence by \u003CA0A1,DataA1\u003E. Can be used to cast Greater Crown Heal, healing all nearby friendly units by \u003CA0BF,DataB1\u003E, restoring their mana by \u003CA0BF,DataC1\u003E, and increasing their armor by \u003CA0BF,DataA1\u003E for \u003CA0BF,Dur1\u003E seconds.|n|cffffcc00Lore|r|n|cffffdeadForged from the 3 crystals of the Triumvirate"
+}

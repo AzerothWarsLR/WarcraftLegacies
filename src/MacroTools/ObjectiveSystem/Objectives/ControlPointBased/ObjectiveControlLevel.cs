@@ -1,7 +1,6 @@
 ﻿using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
 using MacroTools.QuestSystem;
-using WCSharp.Shared.Data;
 using static War3Api.Common;
 
 namespace MacroTools.ObjectiveSystem.Objectives.ControlPointBased
@@ -13,9 +12,6 @@ namespace MacroTools.ObjectiveSystem.Objectives.ControlPointBased
   {
     private readonly ControlPoint _target;
     private readonly int _requiredLevel;
-
-    /// <inheritdoc/>
-    public override Point Position => new(GetUnitX(_target.Unit), GetUnitY(_target.Unit));
 
     /// <summary>
     /// Initializes a new instance of the <see cref="ObjectiveControlLevel"/> class.
@@ -31,6 +27,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.ControlPointBased
       _target.ControlLevelChanged += (_, _) => Refresh();
       TargetWidget = target.Unit;
       DisplaysPosition = true;
+      Position = new(GetUnitX(_target.Unit), GetUnitY(_target.Unit));
     }
 
     internal override void OnAdd(FactionSystem.Faction whichFaction)

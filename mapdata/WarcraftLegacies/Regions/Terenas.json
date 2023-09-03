@@ -1,0 +1,15 @@
+{
+  "Left": 8096,
+  "Bottom": 7648,
+  "Right": 10048,
+  "Top": 9536,
+  "Name": "Terenas",
+  "CreationNumber": 106,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 20115,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A00W (Comet Strike), Researchtip (Tooltip - Learn)",
+  "Value": "Learn Comet Strike - [|cffffcc00Level %d|r]"
+}

@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 17566,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A0SN (Anti-magic Shell), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Creates a barrier that stops 800 points of spell damage from affecting a target unit. |nLasts \u003CAam2,Dur1\u003E seconds."
+}

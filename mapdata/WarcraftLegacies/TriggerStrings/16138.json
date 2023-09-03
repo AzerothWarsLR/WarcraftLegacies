@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 16138,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A0UC (Open a portal to Alterac), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Opens a two-way portal to the target location. The portal becomes useable after 5 seconds, and closes 10 seconds after the caster stops channeling.|n|n|cffffcc00Level 1|r - \u003CA00D,Rng1\u003E range. |n|cffffcc00Level 2|r - \u003CA00D,Rng2\u003E range. |n|cffffcc00Level 3|r - \u003CA00D,Rng3\u003E range."
+}

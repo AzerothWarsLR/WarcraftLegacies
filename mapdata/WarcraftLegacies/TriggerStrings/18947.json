@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 18947,
+  "KeyPrecision": 5,
+  "Comment": " Abilities: A0VR (Blazing Aura), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "The hero burns with a withering heat, searing and slowing nearby enemies.|n|n|cffffcc00Level 1|r - Deals \u003CA0VR,DataB1\u003E periodic damage to nearby enemy units and reduces their movement speed by \u003CA0VR,DataA1,%\u003E%|n|cffffcc00Level 2|r - Deals \u003CA0VR,DataB2\u003E periodic damage to nearby enemy units and reduces their movement speed by \u003CA0VR,DataA2,%\u003E%|n|cffffcc00Level 3|r - Deals \u003CA0VR,DataB3\u003E periodic damage to nearby enemy units and reduces their movement speed by \u003CA0VR,DataA3,%\u003E%|n|cffffcc00Level 4|r - Deals \u003CA0VR,DataB4\u003E periodic damage to nearby enemy units and reduces their movement speed by \u003CA0VR,DataA4,%\u003E%"
+}

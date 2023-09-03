@@ -1,0 +1,22 @@
+{
+  "OldId": 1735221576,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1836083317,
+      "Value": 2500
+    },
+    {
+      "Id": 1650550901,
+      "Type": 3,
+      "Value": "AHbz,AHab,AHmt"
+    },
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "A0L8,AInv"
+    }
+  ]
+}

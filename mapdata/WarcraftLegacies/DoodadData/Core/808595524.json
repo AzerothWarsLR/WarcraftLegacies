@@ -1,0 +1,71 @@
+{
+  "OldId": 1802719041,
+  "NewId": 808595524,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1818846820,
+      "Type": 3,
+      "Value": "war3mapImported\\Prop_AshenvaleLights.mdl"
+    },
+    {
+      "Id": 1935764836,
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Id": 1835101796,
+      "Type": 3,
+      "Value": "TRIGSTR_13988"
+    },
+    {
+      "Id": 2020896868,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1952539492,
+      "Type": 3,
+      "Value": "Z"
+    },
+    {
+      "Id": 1818850404,
+      "Type": 3,
+      "Value": "A,*"
+    },
+    {
+      "Id": 1751348580,
+      "Value": 1
+    },
+    {
+      "Id": 1953261156,
+      "Value": 1
+    },
+    {
+      "Id": 1918989924,
+      "Value": 3
+    },
+    {
+      "Variation": 2,
+      "Id": 828864100,
+      "Value": 25
+    },
+    {
+      "Variation": 2,
+      "Id": 828536420,
+      "Value": 0
+    },
+    {
+      "Variation": 3,
+      "Id": 829584996,
+      "Value": 0
+    },
+    {
+      "Variation": 3,
+      "Id": 828536420,
+      "Value": 0
+    }
+  ]
+}

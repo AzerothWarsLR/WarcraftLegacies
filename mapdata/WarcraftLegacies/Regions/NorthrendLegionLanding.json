@@ -1,0 +1,15 @@
+{
+  "Left": 3392,
+  "Bottom": 20512,
+  "Right": 3776,
+  "Top": 20864,
+  "Name": "NorthrendLegionLanding",
+  "CreationNumber": 100,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

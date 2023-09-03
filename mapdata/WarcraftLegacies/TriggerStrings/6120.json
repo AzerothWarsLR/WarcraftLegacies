@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 6120,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: AEsf (Starfall), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Calls down waves of falling stars that damage nearby enemy units.|nLasts for \u003CAEsf,Dur1\u003E seconds. |n|n|cffffcc00Level 1|r - 45 damage.|n|cffffcc00Level 2|r - 60 damage.|n|cffffcc00Level 3|r - 80 damage."
+}

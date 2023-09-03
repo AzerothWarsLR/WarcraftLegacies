@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 6001,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: AHfs (Flame Strike), Ubertip (Tooltip - Normal - Extended)",
+  "Value": "Conjures a pillar of flame that burns ground units for 99 damage over 3 seconds. As the pillar of flame subsides, units within the fire continue to take 120 damage over 6 seconds."
+}

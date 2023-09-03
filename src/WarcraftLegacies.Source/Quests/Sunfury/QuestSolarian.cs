@@ -1,14 +1,6 @@
-﻿using System.Collections.Generic;
-using MacroTools.ArtifactSystem;
-using MacroTools.Extensions;
-using MacroTools.FactionSystem;
-using MacroTools.LegendSystem;
+﻿using MacroTools.ArtifactSystem;
 using MacroTools.ObjectiveSystem.Objectives.ArtifactBased;
-using MacroTools.ObjectiveSystem.Objectives.FactionBased;
-using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.QuestSystem;
-using WCSharp.Shared.Data;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Sunfury
 {

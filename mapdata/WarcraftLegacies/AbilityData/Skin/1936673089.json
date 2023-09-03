@@ -1,0 +1,13 @@
+{
+  "OldId": 1936673089,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNOrbOfFrost.blp"
+    }
+  ]
+}

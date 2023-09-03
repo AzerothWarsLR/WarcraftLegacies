@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 5326,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: AUfu (Frost Armor), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Creates a shield of frost around a target friendly unit. The shield adds armor and slows melee units that attack it. |n|n|cffffcc00Level 1|r - Adds \u003CAUfu,DataB1\u003E armor. |n|cffffcc00Level 2|r - Adds \u003CAUfu,DataB2\u003E armor. |n|cffffcc00Level 3|r - Adds \u003CAUfu,DataB3\u003E armor.|n|cffffcc00Level 4|r - Adds \u003CAUfu,DataB4\u003E armor.|n|cffffcc00Level 5|r - Adds \u003CAUfu,DataB5\u003E armor.|n|cffffcc00Level 6|r - Adds \u003CAUfu,DataB6\u003E armor."
+}

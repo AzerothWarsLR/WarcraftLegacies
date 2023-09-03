@@ -1,0 +1,7 @@
+{
+  "EmptyLineCount": 1,
+  "Key": 5439,
+  "KeyPrecision": 4,
+  "Comment": " Abilities: AOwk (Wind Walk), Researchubertip (Tooltip - Learn - Extended)",
+  "Value": "Allows the Hero to become invisible, and move faster for a set amount of time. When the Hero attacks a unit to break invisibility, he will deal bonus damage. |n|n|cffffcc00Level 1|r - \u003CAOwk,DataB1,%\u003E% move, \u003CAOwk,DataC1\u003E bonus damage, \u003CAOwk,Dur1\u003E seconds. |n|cffffcc00Level 2|r - \u003CAOwk,DataB2,%\u003E% move, \u003CAOwk,DataC2\u003E bonus damage, \u003CAOwk,Dur2\u003E seconds. |n|cffffcc00Level 3|r - \u003CAOwk,DataB3,%\u003E% move, \u003CAOwk,DataC3\u003E bonus damage, \u003CAOwk,Dur3\u003E seconds.|n|cffffcc00Level 4|r - \u003CAOwk,DataB4,%\u003E% move, \u003CAOwk,DataC4\u003E bonus damage, \u003CAOwk,Dur4\u003E seconds.|n|cffffcc00Level 5|r - \u003CAOwk,DataB5,%\u003E% move, \u003CAOwk,DataC5\u003E bonus damage, \u003CAOwk,Dur5\u003E seconds."
+}
