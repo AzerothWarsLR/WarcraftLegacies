@@ -7,7 +7,7 @@ namespace MacroTools.LegendSystem
   /// <summary>
   /// A unit bestowing invulnerability on a <see cref="Legend"/>.
   /// </summary>
-  internal sealed class Protector
+  public sealed class Protector
   {
     public Protector(unit unit)
     {
