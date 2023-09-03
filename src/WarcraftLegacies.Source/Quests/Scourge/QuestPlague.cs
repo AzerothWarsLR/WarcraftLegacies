@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using System.Reflection.Metadata;
 using MacroTools;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;

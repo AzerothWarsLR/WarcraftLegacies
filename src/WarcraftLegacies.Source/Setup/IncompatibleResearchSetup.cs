@@ -1,6 +1,4 @@
-﻿using MacroTools.ResearchSystems;
-
-namespace WarcraftLegacies.Source.Setup
+﻿namespace WarcraftLegacies.Source.Setup
 {
   /// <summary>
   /// Responsible for registering all incompatible researches.

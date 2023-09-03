@@ -1,7 +1,6 @@
 ﻿using MacroTools.Extensions;
 using MacroTools.QuestSystem;
 using WCSharp.Events;
-using WCSharp.Shared.Data;
 using static War3Api.Common;
 
 namespace MacroTools.ObjectiveSystem.Objectives.UnitBased

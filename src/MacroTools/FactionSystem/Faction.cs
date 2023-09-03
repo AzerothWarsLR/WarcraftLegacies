@@ -8,7 +8,6 @@ using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives;
 using MacroTools.QuestSystem;
 using MacroTools.ResearchSystems;
-using War3Api;
 using WCSharp.Events;
 using static War3Api.Common;
 

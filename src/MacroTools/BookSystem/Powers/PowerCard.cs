@@ -1,5 +1,4 @@
-﻿using MacroTools.ArtifactSystem;
-using MacroTools.FactionSystem;
+﻿using MacroTools.FactionSystem;
 using MacroTools.Frames;
 using static War3Api.Common;
 

@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Launcher.Extensions;
+﻿namespace Launcher.Extensions;
 
 public static class StringExtensions
 {

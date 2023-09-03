@@ -1,5 +1,4 @@
-﻿using System;
-using MacroTools.Cheats;
+﻿using MacroTools.Cheats;
 using MacroTools.CommandSystem;
 using MacroTools.QuestSystem;
 

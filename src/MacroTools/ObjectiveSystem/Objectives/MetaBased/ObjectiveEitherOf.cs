@@ -1,5 +1,4 @@
 using MacroTools.QuestSystem;
-using WCSharp.Shared.Data;
 
 namespace MacroTools.ObjectiveSystem.Objectives.MetaBased
 {

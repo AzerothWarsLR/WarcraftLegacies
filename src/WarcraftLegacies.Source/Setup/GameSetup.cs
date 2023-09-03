@@ -1,6 +1,4 @@
-﻿using System;
-using MacroTools;
-using MacroTools.Cheats;
+﻿using MacroTools;
 using MacroTools.CommandSystem;
 using MacroTools.ControlPointSystem;
 using MacroTools.Mechanics;

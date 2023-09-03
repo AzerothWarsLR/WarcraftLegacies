@@ -1,5 +1,4 @@
 ﻿using MacroTools.Extensions;
-using MacroTools.Libraries;
 using MacroTools.SpellSystem;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
