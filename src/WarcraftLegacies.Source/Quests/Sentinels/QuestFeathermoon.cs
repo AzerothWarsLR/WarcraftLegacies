@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
-using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
@@ -16,16 +15,14 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
   /// </summary>
   public sealed class QuestFeathermoon : QuestData
   {
-    private readonly List<unit> _rescueUnits = new();
-    
+    private readonly List<unit> _rescueUnits;
+
     /// <summary>
     /// Initializes a new instance of <see cref="QuestFeathermoon"/>.
     /// </summary>
-    /// <param name="rescueRect"></param>
-    /// <param name="shandris"></param>
-    public QuestFeathermoon(Rectangle rescueRect, LegendaryHero shandris) : base("Shores of Feathermoon",
+    public QuestFeathermoon(Rectangle rescueRect) : base("Shores of Feathermoon",
       "Feathermoon Stronghold stood guard for ten thousand years, it is time to relieve the guards from their duty.",
-      "ReplaceableTextures\\CommandButtons\\BTNBearDen.blp")
+      @"ReplaceableTextures\CommandButtons\BTNBearDen.blp")
     {
       AddObjective(new ObjectiveAnyUnitInRect(rescueRect, "Feathermoon Stronghold", true));
       AddObjective(new ObjectiveKillAllInArea(new List<Rectangle> { Regions.FeathermoonCreeps }, "around Feathermoon Stronghold"));
@@ -53,10 +50,9 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
     /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)
     {
-      if (completingFaction.Player != null)
-        completingFaction.Player.RescueGroup(_rescueUnits);
-
-      if (GetLocalPlayer() == completingFaction.Player) PlayThematicMusic("war3mapImported\\SentinelTheme.mp3");
+      completingFaction.Player?.RescueGroup(_rescueUnits);
+      if (GetLocalPlayer() == completingFaction.Player) 
+        PlayThematicMusic("war3mapImported\\SentinelTheme.mp3");
     }
   }
 }
