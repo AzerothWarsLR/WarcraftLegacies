@@ -75,10 +75,7 @@ namespace MacroTools
           if (meetEliminationThreshold)
           {
             if (PlayerData.ByHandle(player).EliminationTurns >= 3)
-            {
-              if (faction != null)
-                faction.ScoreStatus = ScoreStatus.Defeated;
-            }
+              faction?.Defeat();
             else
             {
               DisplayTextToPlayer(player, 0, 0,
