@@ -18,13 +18,8 @@ namespace MacroTools.PassiveAbilities
     /// </summary>
     /// <param name="unitTypeId"><inheritdoc /></param>
     /// <param name="abilityTypeId">The ability ID that determines the effect's level.</param>
-    /// <param name="ignoredAbilityId">Units with these abilities are not affected by <see cref="PersistentSoul"/></param>
-    public PersistentSoul(int unitTypeId, int abilityTypeId, List<int> ignoredAbilityId) : base(unitTypeId)
-    {
-      _abilityTypeId = abilityTypeId;
-      IgnoredAbilityIds = ignoredAbilityId;
-    }
-    
+    public PersistentSoul(int unitTypeId, int abilityTypeId) : base(unitTypeId) => _abilityTypeId = abilityTypeId;
+
     /// <summary>
     /// How many units this ability reanimates per level.
     /// </summary>
@@ -45,8 +40,6 @@ namespace MacroTools.PassiveAbilities
     /// </summary>
     public float Radius { get; init; }
 
-    private List<int> IgnoredAbilityIds { get; } = new();
-
     /// <inheritdoc/>
     public override void OnDeath()
     {
@@ -56,7 +49,7 @@ namespace MacroTools.PassiveAbilities
 
       foreach (var unit in CreateGroup().EnumUnitsInRange(caster.GetPosition(), Radius)
                  .EmptyToList()
-                 .Where(x => IsReanimationCandidate(caster, x))
+                 .Where(x => IsUnitReanimationCandidate(caster, x))
                  .OrderByDescending(x => x.GetLevel())
                  .Take(ReanimationCountLevel * GetUnitAbilityLevel(caster, _abilityTypeId)))
       {
@@ -64,26 +57,22 @@ namespace MacroTools.PassiveAbilities
       }
     }
 
-    private bool IsReanimationCandidate(unit caster, unit target)
-    {
+    private static bool IsUnitReanimationCandidate(unit caster, unit target) =>
+      !UnitAlive(target)
+      && !IsUnitType(target, UNIT_TYPE_MECHANICAL)
+      && !IsUnitType(target, UNIT_TYPE_STRUCTURE)
+      && !IsUnitType(target, UNIT_TYPE_HERO)
+      && !IsUnitType(target, UNIT_TYPE_SUMMONED)
+      && !IsUnitType(target, UNIT_TYPE_FLYING)
+      && !IsUnitType(target, UNIT_TYPE_RESISTANT)
+      && !IsUnitIllusion(target)
+      && caster != target;
 
-      return !UnitAlive(target)
-             && !IsUnitType(target, UNIT_TYPE_MECHANICAL)
-             && !IsUnitType(target, UNIT_TYPE_STRUCTURE)
-             && !IsUnitType(target, UNIT_TYPE_HERO)
-             && !IsUnitType(target, UNIT_TYPE_SUMMONED)
-             && !IsUnitType(target, UNIT_TYPE_FLYING)
-             && !IsUnitIllusion(target)
-             && caster != target
-             && IgnoredAbilityIds.All(id =>  BlzGetUnitAbility(target, id) == null);
-
-    }
-    
     private void Reanimate(player castingPlayer, unit whichUnit)
     {
       var whichUnitPosition = whichUnit.GetPosition();
 
-      AddSpecialEffect("Abilities\\Spells\\Undead\\AnimateDead\\AnimateDeadTarget.mdl", GetUnitX(whichUnit),
+      AddSpecialEffect(@"Abilities\Spells\Undead\AnimateDead\AnimateDeadTarget.mdl", GetUnitX(whichUnit),
           GetUnitY(whichUnit))
         .SetLifespan();
 
