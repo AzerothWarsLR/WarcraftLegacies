@@ -75,7 +75,7 @@ namespace MacroTools.QuestSystem
     ///   Displayed to the player when the quest is completed.
     ///   Describes flavour, not mechanics.
     /// </summary>
-    protected abstract string RewardFlavour { get; }
+    protected virtual string RewardFlavour => string.Empty;
 
     /// <summary>
     ///   Displayed to the player when the quest is failed.
@@ -131,9 +131,11 @@ namespace MacroTools.QuestSystem
       QuestSetFailed(Quest, false);
       QuestSetDiscovered(Quest, true);
       DisplayCompleted(whichFaction);
-      if (Global) DisplayCompletedGlobal(whichFaction.Player);
+      if (Global)
+        DisplayCompletedGlobal(whichFaction.Player);
       
-      if (ResearchId != 0) SetPlayerTechResearched(whichFaction.Player, ResearchId, 1);
+      if (ResearchId != 0)
+        SetPlayerTechResearched(whichFaction.Player, ResearchId, 1);
       
       foreach (var objective in _objectives)
       {
