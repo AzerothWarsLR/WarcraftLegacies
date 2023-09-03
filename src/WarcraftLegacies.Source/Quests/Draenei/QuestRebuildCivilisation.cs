@@ -2,8 +2,6 @@
 using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using WCSharp.Shared.Data;
-using MacroTools.ControlPointSystem;
-using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using static War3Api.Common;
 using MacroTools.LegendSystem;

@@ -1,11 +1,7 @@
-﻿using System.Collections.Generic;
-using MacroTools.ControlPointSystem;
-using MacroTools.Extensions;
-using MacroTools.FactionSystem;
+﻿using MacroTools.ControlPointSystem;
 using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
 using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 using MacroTools.QuestSystem;
-using static War3Api.Common;
 
 
 namespace WarcraftLegacies.Source.Quests.Goblin

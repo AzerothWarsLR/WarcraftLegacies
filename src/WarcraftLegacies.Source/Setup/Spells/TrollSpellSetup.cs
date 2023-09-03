@@ -1,6 +1,5 @@
 ﻿using MacroTools.PassiveAbilities;
 using MacroTools.PassiveAbilitySystem;
-using MacroTools.Spells;
 using MacroTools.SpellSystem;
 
 namespace WarcraftLegacies.Source.Setup.Spells

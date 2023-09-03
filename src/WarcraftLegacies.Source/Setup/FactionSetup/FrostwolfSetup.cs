@@ -1,6 +1,5 @@
 ﻿using MacroTools;
 using MacroTools.FactionSystem;
-using WarcraftLegacies.Source.Mechanics.Frostwolf;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 

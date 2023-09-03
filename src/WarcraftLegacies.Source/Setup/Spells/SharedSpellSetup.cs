@@ -1,7 +1,4 @@
-﻿using MacroTools.Spells;
-using MacroTools.SpellSystem;
-
-namespace WarcraftLegacies.Source.Setup.Spells
+﻿namespace WarcraftLegacies.Source.Setup.Spells
 {
   public static class SharedSpellSetup
   {

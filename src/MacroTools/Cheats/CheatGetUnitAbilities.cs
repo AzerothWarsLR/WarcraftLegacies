@@ -1,5 +1,4 @@
-﻿using System;
-using System.Linq;
+﻿using System.Linq;
 using MacroTools.CommandSystem;
 using MacroTools.Extensions;
 using static War3Api.Common;

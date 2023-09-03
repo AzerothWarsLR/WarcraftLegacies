@@ -1,5 +1,4 @@
-﻿using MacroTools;
-using MacroTools.LegendSystem;
+﻿using MacroTools.LegendSystem;
 using static War3Api.Common;
 #pragma warning disable CS1591
 
