@@ -6,7 +6,6 @@ using Launcher.ValueResolvers;
 using War3Net.Build.Audio;
 using War3Net.Build.Common;
 using War3Net.Build.Environment;
-using War3Net.Build.Import;
 using War3Net.Build.Info;
 using War3Net.Build.Object;
 using War3Net.Build.Script;
@@ -52,6 +51,9 @@ namespace Launcher.Services
           => opt.MapFrom<ColorValueResolver>())
           .ReverseMap();
         cfg.CreateMap<TriggerItemDto, TriggerItem>().ReverseMap();
+        cfg.CreateMap<ForceDataDto, ForceData>().ReverseMap();
+        cfg.CreateMap<UpgradeDataDto, UpgradeData>().ReverseMap();
+        cfg.CreateMap<TechDataDto, TechData>().ReverseMap();
       });
       return autoMapperConfig;
     }

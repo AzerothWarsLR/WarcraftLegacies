@@ -51,20 +51,9 @@ namespace Launcher.Services
       if (importedFiles != null) 
         CopyImportedFiles(baseMapPath, importedFiles, outputFolderPath);
       
-      File.Copy($"{baseMapPath}/war3mapMap.blp", $@"{outputFolderPath}\war3mapMap.blp", true);
+      CopyUnserializableFiles(baseMapPath, outputFolderPath);
     }
 
-    private static void CopyImportedFiles(string baseMapPath, List<ImportedFile> files, string outputFolderPath)
-    {
-      foreach (var file in files)
-      {
-        var sourceFileName = $@"{baseMapPath}\{file.FullPath}";
-        var destinationFileName = $@"{outputFolderPath}\{ImportsPath}\{file.FullPath}";
-        Directory.CreateDirectory(Path.GetDirectoryName(destinationFileName)!);
-        File.Copy(sourceFileName, destinationFileName, true);
-      }
-    }
-    
     private void SerializeAndWriteMapData(Map map, string outputFolderPath)
     {
       if (Directory.Exists(outputFolderPath))
@@ -123,6 +112,23 @@ namespace Launcher.Services
       File.WriteAllText(Path.Combine(outputFolderPath, ScriptPath), map.Script);
     }
 
+    private static void CopyImportedFiles(string baseMapPath, List<ImportedFile> files, string outputFolderPath)
+    {
+      foreach (var file in files)
+      {
+        var sourceFileName = $@"{baseMapPath}\{file.FullPath}";
+        var destinationFileName = $@"{outputFolderPath}\{ImportsPath}\{file.FullPath}";
+        Directory.CreateDirectory(Path.GetDirectoryName(destinationFileName)!);
+        File.Copy(sourceFileName, destinationFileName, true);
+      }
+    }
+    
+    private static void CopyUnserializableFiles(string baseMapPath, string outputFolderPath)
+    {
+      foreach (var filePath in GetUnserializableFilePaths())
+        File.Copy($"{baseMapPath}/{filePath}", $@"{outputFolderPath}\{filePath}", true);
+    }
+    
     /// <summary>
     /// Converts the provided input into a Data Transfer Object, then serializes it, then writes it.
     /// </summary>

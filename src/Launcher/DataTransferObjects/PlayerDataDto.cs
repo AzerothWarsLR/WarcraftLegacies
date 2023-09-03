@@ -1,5 +1,4 @@
-﻿using War3Net.Build.Common;
-using War3Net.Build.Info;
+﻿using War3Net.Build.Info;
 
 namespace Launcher.DataTransferObjects
 {
@@ -17,13 +16,13 @@ namespace Launcher.DataTransferObjects
 
     public Vector2Dto StartPosition { get; set; }
 
-    public Bitmask32 AllyLowPriorityFlags { get; set; }
+    public int AllyLowPriorityFlags { get; set; }
 
-    public Bitmask32 AllyHighPriorityFlags { get; set; }
+    public int AllyHighPriorityFlags { get; set; }
 
-    public Bitmask32 EnemyLowPriorityFlags { get; set; }
+    public int EnemyLowPriorityFlags { get; set; }
 
-    public Bitmask32 EnemyHighPriorityFlags { get; set; }
+    public int EnemyHighPriorityFlags { get; set; }
 
     public override string ToString() => Name;
   }

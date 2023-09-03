@@ -1,4 +1,6 @@
-﻿namespace Launcher
+﻿using System.Collections.Generic;
+
+namespace Launcher
 {
   public static class MapDataPaths
   {
@@ -27,12 +29,27 @@
     
     public const string ImportsPath = "Imports";
 
-    public const string ScriptPath = "Script.lua";
-
+    public const string ScriptPath = "war3map.lua";
+    public const string MinimapPath = "war3mapMap.blp";
+    public const string GameplayConstantsPath = "war3mapMisc.txt";
+    public const string GameInterfacePath = "war3mapSkin.txt";
+    
     /// <summary>
     /// Some positional data is seperated into different files based on position on the map.
     /// Chunk size determines how large those square chunks should be.
     /// </summary>
     public const int ChunkSize = 512;
+
+    /// <summary>
+    /// Gets the paths to all files that need to be included in a map but which can't be serialized, such as plain text
+    /// files or images.
+    /// </summary>
+    public static IEnumerable<string> GetUnserializableFilePaths()
+    {
+      yield return ScriptPath;
+      yield return MinimapPath;
+      yield return GameplayConstantsPath;
+      yield return GameInterfacePath;
+    }
   }
 }

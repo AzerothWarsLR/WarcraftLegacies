@@ -102,11 +102,11 @@ public sealed class MapInfoDto
 
   public List<PlayerDataDto> Players { get; init; } = new();
 
-  public List<ForceData> Forces { get; init; } = new();
+  public List<ForceDataDto> Forces { get; init; } = new();
 
-  public List<UpgradeData> UpgradeData { get; init; } = new();
+  public List<UpgradeDataDto> UpgradeData { get; init; } = new();
 
-  public List<TechData> TechData { get; init; } = new();
+  public List<TechDataDto> TechData { get; init; } = new();
 
   public List<RandomUnitTable>? RandomUnitTables { get; init; } = new();
 
