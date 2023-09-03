@@ -13,7 +13,7 @@ namespace WarcraftLegacies.Source.Quests.Gilneas
   /// <summary>
   /// Capture control points close to Stormglen to gain control of it.
   /// </summary>
-  public class QuestStormglen : QuestData
+  public sealed class QuestStormglen : QuestData
   {
     private List<unit> _rescueUnits { get; }
 

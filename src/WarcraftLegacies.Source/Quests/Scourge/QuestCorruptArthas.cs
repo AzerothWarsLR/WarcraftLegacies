@@ -60,7 +60,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
   /// <summary>
   /// 
   /// </summary>
-  public class QuestDestroyStratholme : QuestData
+  public sealed class QuestDestroyStratholme : QuestData
   {
     private readonly LegendaryHero _arthas;
 

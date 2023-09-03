@@ -7,7 +7,7 @@ namespace MacroTools.Spells
   /// <summary>
   /// Instantly kills a unit.
   /// </summary>
-  public class InstantKill : Spell
+  public sealed class InstantKill : Spell
   {
     /// <summary>
     /// Defines which 

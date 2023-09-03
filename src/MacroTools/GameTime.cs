@@ -10,7 +10,7 @@ namespace MacroTools
   ///  Á Dialogue that counts the elapsed game time, displayed in number of turns passed.
   ///  One turn passes every 60 seconds.
   /// </summary>
-  public class GameTime: ITimer
+  public sealed class GameTime: ITimer
   {
     private const float TurnDuration = 60;
 

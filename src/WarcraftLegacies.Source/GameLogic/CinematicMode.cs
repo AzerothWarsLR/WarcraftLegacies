@@ -10,7 +10,7 @@ namespace WarcraftLegacies.Source.GameLogic
   /// Used to engage cinematic mode, which prevents players from taking actions and manipulates sound
   /// and weather effects for a cinematic experience.
   /// </summary>
-  public class CinematicMode : ITimer
+  public sealed class CinematicMode : ITimer
   {
     private timer _cinermaticTimer;
     private timer _musicTimer;

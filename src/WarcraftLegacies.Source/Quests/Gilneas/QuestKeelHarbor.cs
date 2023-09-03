@@ -13,7 +13,7 @@ namespace WarcraftLegacies.Source.Quests.Gilneas
   /// <summary>
   /// Capture control points close to Keel Harbor to gain control of it.
   /// </summary>
-  public class QuestKeelHarbor: QuestData
+  public sealed class QuestKeelHarbor: QuestData
   {
     private List<unit> _rescueUnits { get; }
 
