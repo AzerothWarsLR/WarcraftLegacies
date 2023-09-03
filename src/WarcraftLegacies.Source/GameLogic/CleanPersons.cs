@@ -27,7 +27,7 @@ namespace WarcraftLegacies.Source.GameLogic
           if (playerFaction == null) continue;
           if (GetPlayerSlotState(player) != PLAYER_SLOT_STATE_PLAYING &&
               playerFaction.ScoreStatus == ScoreStatus.Undefeated)
-            playerFaction.ScoreStatus = ScoreStatus.Defeated;
+            playerFaction.Defeat();
         }
       });
     }

@@ -35,7 +35,7 @@ namespace WarcraftLegacies.Source.Commands
           $"{GetPlayerName(GetTriggerPlayer())} tried to execute {nameof(ObserverCommand)}, but they don't have a {nameof(Faction)}.");
       }
       
-      triggerFaction.ScoreStatus = ScoreStatus.Defeated;
+      triggerFaction.Defeat();
       triggerFaction.Player?.SetTeam(_observers!);
     }
   }
