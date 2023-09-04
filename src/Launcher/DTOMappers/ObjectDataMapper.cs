@@ -153,7 +153,7 @@ namespace Launcher.DTOMappers
           0
         },
         Modifications = objectModification.Modifications
-          .Select(x => MapObjectDataModificationToDto(x, triggerStringDictionary))
+          .Select(x => MapLevelObjectDataModificationToDto(x, triggerStringDictionary))
           .ToList()
       };
       return dto;
@@ -171,24 +171,58 @@ namespace Launcher.DTOMappers
           0
         },
         Modifications = objectModification.Modifications
-          .Select(x => MapObjectDataModificationToDto(x, triggerStringDictionary))
+          .Select(x => MapVariationObjectDataModificationToDto(x, triggerStringDictionary))
           .ToList()
       };
       return dto;
     }
 
-    private static T MapObjectDataModificationToDto<T>(T simpleObjectDataModification,
-      IReadOnlyDictionary<uint, string>? triggerStrings) where T : ObjectDataModification, new()
+    private static SimpleObjectDataModification MapObjectDataModificationToDto(SimpleObjectDataModification objectDataModification,
+      IReadOnlyDictionary<uint, string>? triggerStrings)
     {
-      var value = triggerStrings != null && ValueIsTriggerString(simpleObjectDataModification)
-        ? triggerStrings[ParseTriggerStringAsKey((simpleObjectDataModification.Value as string)!)]
-        : simpleObjectDataModification.Value;
-
-      return new T
+      var value = triggerStrings != null && ValueIsTriggerString(objectDataModification)
+        ? triggerStrings[ParseTriggerStringAsKey((objectDataModification.Value as string)!)]
+        : objectDataModification.Value;
+      
+      return new SimpleObjectDataModification
       {
-        Id = simpleObjectDataModification.Id,
-        Type = simpleObjectDataModification.Type,
+        Id = objectDataModification.Id,
+        Type = objectDataModification.Type,
         Value = value
+      };
+    }
+    
+    private static LevelObjectDataModification MapLevelObjectDataModificationToDto(LevelObjectDataModification objectDataModification,
+      IReadOnlyDictionary<uint, string>? triggerStrings)
+    {
+      var value = triggerStrings != null && ValueIsTriggerString(objectDataModification)
+        ? triggerStrings[ParseTriggerStringAsKey((objectDataModification.Value as string)!)]
+        : objectDataModification.Value;
+      
+      return new LevelObjectDataModification
+      {
+        Id = objectDataModification.Id,
+        Type = objectDataModification.Type,
+        Value = value,
+        Level = objectDataModification.Level,
+        Pointer = objectDataModification.Level
+      };
+    }
+    
+    private static VariationObjectDataModification MapVariationObjectDataModificationToDto(VariationObjectDataModification objectDataModification,
+      IReadOnlyDictionary<uint, string>? triggerStrings)
+    {
+      var value = triggerStrings != null && ValueIsTriggerString(objectDataModification)
+        ? triggerStrings[ParseTriggerStringAsKey((objectDataModification.Value as string)!)]
+        : objectDataModification.Value;
+      
+      return new VariationObjectDataModification
+      {
+        Id = objectDataModification.Id,
+        Type = objectDataModification.Type,
+        Value = value,
+        Variation = objectDataModification.Variation,
+        Pointer = objectDataModification.Pointer
       };
     }
 
