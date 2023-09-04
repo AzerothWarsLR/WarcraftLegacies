@@ -142,7 +142,7 @@ namespace Launcher.Services
       File.WriteAllText(fullPath, asJson);
     }
 
-    private void SerializeAndWriteMapInfo(MapInfo mapInfo, Dictionary<uint, string> triggerStrings, string path)
+    private void SerializeAndWriteMapInfo(MapInfo mapInfo, TriggerStringDictionary triggerStrings, string path)
     {
       var dto = new MapInfoMapper(triggerStrings).MapToDto(mapInfo);
       var asJson = JsonSerializer.Serialize(dto, _jsonSerializerOptions);
@@ -203,7 +203,7 @@ namespace Launcher.Services
         SerializeAndWrite<Region, RegionDto>(region, path, $"{region.Name}.json");
     }
     
-    private void SerializeAndWriteUnitData(UnitObjectData unitObjectData, Dictionary<uint, string>? triggerStrings, params string[] paths)
+    private void SerializeAndWriteUnitData(UnitObjectData unitObjectData, TriggerStringDictionary? triggerStrings, params string[] paths)
     {
       var dto = ObjectDataMapper.MapToDto(unitObjectData, triggerStrings);
       
@@ -214,7 +214,7 @@ namespace Launcher.Services
         SerializeAndWriteSimpleObjectModification(unit, Path.Combine(paths));
     }
     
-    private void SerializeAndWriteBuffData(BuffObjectData buffObjectData, Dictionary<uint, string>? triggerStrings, params string[] paths)
+    private void SerializeAndWriteBuffData(BuffObjectData buffObjectData, TriggerStringDictionary? triggerStrings, params string[] paths)
     {
       var dto = ObjectDataMapper.MapToDto(buffObjectData, triggerStrings);
       
@@ -225,7 +225,7 @@ namespace Launcher.Services
         SerializeAndWriteSimpleObjectModification(buff, Path.Combine(paths));
     }
 
-    private void SerializeAndWriteDoodadData(DoodadObjectData doodadObjectData, Dictionary<uint, string>? triggerStrings, params string[] paths)
+    private void SerializeAndWriteDoodadData(DoodadObjectData doodadObjectData, TriggerStringDictionary? triggerStrings, params string[] paths)
     {
       var dto = ObjectDataMapper.MapToDto(doodadObjectData, triggerStrings);
       
@@ -236,7 +236,7 @@ namespace Launcher.Services
         SerializeAndWriteVariationObjectModification(doodad, Path.Combine(paths));
     }
 
-    private void SerializeAndWriteDestructableData(DestructableObjectData destructableObjectData, Dictionary<uint, string>? triggerStrings, params string[] paths)
+    private void SerializeAndWriteDestructableData(DestructableObjectData destructableObjectData, TriggerStringDictionary? triggerStrings, params string[] paths)
     {
       var dto = ObjectDataMapper.MapToDto(destructableObjectData, triggerStrings);
       
@@ -247,7 +247,7 @@ namespace Launcher.Services
         SerializeAndWriteSimpleObjectModification(destructable, Path.Combine(paths));
     }
 
-    private void SerializeAndWriteItemData(ItemObjectData itemObjectData, Dictionary<uint, string>? triggerStrings, params string[] paths)
+    private void SerializeAndWriteItemData(ItemObjectData itemObjectData, TriggerStringDictionary? triggerStrings, params string[] paths)
     {
       var dto = ObjectDataMapper.MapToDto(itemObjectData, triggerStrings);
       
@@ -258,7 +258,7 @@ namespace Launcher.Services
         SerializeAndWriteSimpleObjectModification(item, Path.Combine(paths));
     }
 
-    private void SerializeAndWriteAbilityData(AbilityObjectData abilityObjectData, Dictionary<uint, string>? triggerStrings, params string[] paths)
+    private void SerializeAndWriteAbilityData(AbilityObjectData abilityObjectData, TriggerStringDictionary? triggerStrings, params string[] paths)
     {
       var dto = ObjectDataMapper.MapToDto(abilityObjectData, triggerStrings);
       
@@ -269,7 +269,7 @@ namespace Launcher.Services
         SerializeAndWriteLevelObjectModification(ability, Path.Combine(paths));
     }
     
-    private void SerializeAndWriteUpgradeData(UpgradeObjectData upgradeObjectData, Dictionary<uint, string>? triggerStrings, params string[] paths)
+    private void SerializeAndWriteUpgradeData(UpgradeObjectData upgradeObjectData, TriggerStringDictionary? triggerStrings, params string[] paths)
     {
       var dto = ObjectDataMapper.MapToDto(upgradeObjectData, triggerStrings);
       

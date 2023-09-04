@@ -1,5 +1,4 @@
 ﻿#nullable enable
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using Launcher.DataTransferObjects;
@@ -18,7 +17,7 @@ namespace Launcher.DTOMappers
     /// <param name="objectData">The objects to convert.</param>
     /// <param name="triggerStrings">If supplied, unit data values that point to trigger string keys will instead be
     /// replaced with the value of those keys.</param>
-    public static UnitObjectDataDto MapToDto(UnitObjectData objectData, Dictionary<uint, string>? triggerStrings)
+    public static UnitObjectDataDto MapToDto(UnitObjectData objectData, TriggerStringDictionary? triggerStrings)
     {
       var dto = new UnitObjectDataDto
       {
@@ -32,8 +31,8 @@ namespace Launcher.DTOMappers
       };
       return dto;
     }
-    
-    public static MapBuffObjectDataDto MapToDto(BuffObjectData objectData, Dictionary<uint, string>? triggerStrings)
+
+    public static MapBuffObjectDataDto MapToDto(BuffObjectData objectData, TriggerStringDictionary? triggerStrings)
     {
       var dto = new MapBuffObjectDataDto
       {
@@ -47,8 +46,8 @@ namespace Launcher.DTOMappers
       };
       return dto;
     }
-    
-    public static MapDoodadObjectDataDto MapToDto(DoodadObjectData objectData, Dictionary<uint, string>? triggerStrings)
+
+    public static MapDoodadObjectDataDto MapToDto(DoodadObjectData objectData, TriggerStringDictionary? triggerStrings)
     {
       var dto = new MapDoodadObjectDataDto
       {
@@ -62,8 +61,9 @@ namespace Launcher.DTOMappers
       };
       return dto;
     }
-    
-    public static MapDestructableObjectDataDto MapToDto(DestructableObjectData objectData, Dictionary<uint, string>? triggerStrings)
+
+    public static MapDestructableObjectDataDto MapToDto(DestructableObjectData objectData,
+      TriggerStringDictionary? triggerStrings)
     {
       var dto = new MapDestructableObjectDataDto
       {
@@ -77,8 +77,8 @@ namespace Launcher.DTOMappers
       };
       return dto;
     }
-    
-    public static MapItemObjectDataDto MapToDto(ItemObjectData objectData, Dictionary<uint, string>? triggerStrings)
+
+    public static MapItemObjectDataDto MapToDto(ItemObjectData objectData, TriggerStringDictionary? triggerStrings)
     {
       var dto = new MapItemObjectDataDto
       {
@@ -92,8 +92,9 @@ namespace Launcher.DTOMappers
       };
       return dto;
     }
-    
-    public static MapAbilityObjectDataDto MapToDto(AbilityObjectData objectData, Dictionary<uint, string>? triggerStrings)
+
+    public static MapAbilityObjectDataDto MapToDto(AbilityObjectData objectData,
+      TriggerStringDictionary? triggerStrings)
     {
       var dto = new MapAbilityObjectDataDto
       {
@@ -107,8 +108,9 @@ namespace Launcher.DTOMappers
       };
       return dto;
     }
-    
-    public static MapUpgradeObjectDataDto MapToDto(UpgradeObjectData objectData, Dictionary<uint, string>? triggerStrings)
+
+    public static MapUpgradeObjectDataDto MapToDto(UpgradeObjectData objectData,
+      TriggerStringDictionary? triggerStrings)
     {
       var dto = new MapUpgradeObjectDataDto
       {
@@ -122,9 +124,9 @@ namespace Launcher.DTOMappers
       };
       return dto;
     }
-    
+
     private static SimpleObjectModification MapSimpleModificationToDto(
-      SimpleObjectModification simpleObjectModification, IReadOnlyDictionary<uint, string>? triggerStringDictionary)
+      SimpleObjectModification simpleObjectModification, TriggerStringDictionary? triggerStringDictionary)
     {
       var dto = new SimpleObjectModification
       {
@@ -140,9 +142,9 @@ namespace Launcher.DTOMappers
       };
       return dto;
     }
-    
+
     private static LevelObjectModification MapLevelModificationToDto(LevelObjectModification objectModification,
-      IReadOnlyDictionary<uint, string>? triggerStringDictionary)
+      TriggerStringDictionary? triggerStringDictionary)
     {
       var dto = new LevelObjectModification
       {
@@ -158,9 +160,10 @@ namespace Launcher.DTOMappers
       };
       return dto;
     }
-    
-    private static VariationObjectModification MapVariationModificationToDto(VariationObjectModification objectModification,
-      IReadOnlyDictionary<uint, string>? triggerStringDictionary)
+
+    private static VariationObjectModification MapVariationModificationToDto(
+      VariationObjectModification objectModification,
+      TriggerStringDictionary? triggerStringDictionary)
     {
       var dto = new VariationObjectModification
       {
@@ -177,13 +180,14 @@ namespace Launcher.DTOMappers
       return dto;
     }
 
-    private static SimpleObjectDataModification MapObjectDataModificationToDto(SimpleObjectDataModification objectDataModification,
-      IReadOnlyDictionary<uint, string>? triggerStrings)
+    private static SimpleObjectDataModification MapObjectDataModificationToDto(
+      SimpleObjectDataModification objectDataModification,
+      TriggerStringDictionary? triggerStrings)
     {
       var value = triggerStrings != null && ValueIsTriggerString(objectDataModification)
-        ? triggerStrings[TriggerStringParser.ParseTriggerStringAsKey((objectDataModification.Value as string)!)]
+        ? triggerStrings[TriggerStringDictionary.ParseTriggerStringAsKey((objectDataModification.Value as string)!)]
         : objectDataModification.Value;
-      
+
       return new SimpleObjectDataModification
       {
         Id = objectDataModification.Id,
@@ -191,14 +195,15 @@ namespace Launcher.DTOMappers
         Value = value
       };
     }
-    
-    private static LevelObjectDataModification MapLevelObjectDataModificationToDto(LevelObjectDataModification objectDataModification,
-      IReadOnlyDictionary<uint, string>? triggerStrings)
+
+    private static LevelObjectDataModification MapLevelObjectDataModificationToDto(
+      LevelObjectDataModification objectDataModification,
+      TriggerStringDictionary? triggerStrings)
     {
       var value = triggerStrings != null && ValueIsTriggerString(objectDataModification)
-        ? triggerStrings[TriggerStringParser.ParseTriggerStringAsKey((objectDataModification.Value as string)!)]
+        ? triggerStrings[TriggerStringDictionary.ParseTriggerStringAsKey((objectDataModification.Value as string)!)]
         : objectDataModification.Value;
-      
+
       return new LevelObjectDataModification
       {
         Id = objectDataModification.Id,
@@ -208,14 +213,15 @@ namespace Launcher.DTOMappers
         Pointer = objectDataModification.Level
       };
     }
-    
-    private static VariationObjectDataModification MapVariationObjectDataModificationToDto(VariationObjectDataModification objectDataModification,
-      IReadOnlyDictionary<uint, string>? triggerStrings)
+
+    private static VariationObjectDataModification MapVariationObjectDataModificationToDto(
+      VariationObjectDataModification objectDataModification,
+      TriggerStringDictionary? triggerStrings)
     {
       var value = triggerStrings != null && ValueIsTriggerString(objectDataModification)
-        ? triggerStrings[TriggerStringParser.ParseTriggerStringAsKey((objectDataModification.Value as string)!)]
+        ? triggerStrings[TriggerStringDictionary.ParseTriggerStringAsKey((objectDataModification.Value as string)!)]
         : objectDataModification.Value;
-      
+
       return new VariationObjectDataModification
       {
         Id = objectDataModification.Id,

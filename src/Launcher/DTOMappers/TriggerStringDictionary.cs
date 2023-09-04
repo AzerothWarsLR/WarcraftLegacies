@@ -3,15 +3,23 @@ using System.Collections.Generic;
 
 namespace Launcher.DTOMappers
 {
-  public static class TriggerStringParser
+  public sealed class TriggerStringDictionary
   {
+    private readonly Dictionary<uint, string> _triggerStrings = new();
+
+    public void Add(uint key, string value) => _triggerStrings.Add(key, value);
+
+    public string this[uint key] => _triggerStrings[key];
+
+    public string this[string key] => GetTriggerStringValueFromKey(key);
+
     /// <summary>
     /// Gets a value from a <see cref="Dictionary{TKey,TValue}"/> of TriggerString values indexed by a key.
     /// <para>If the provided key turns out to be invalid, this method will return the key back.</para> 
     /// </summary>
-    public static string GetTriggerStringValueFromKey(string key, Dictionary<uint, string> triggerStrings)
+    public string GetTriggerStringValueFromKey(string key)
     {
-      return !key.StartsWith("TRIGSTR_") ? key : triggerStrings[ParseTriggerStringAsKey(key)];
+      return !key.StartsWith("TRIGSTR_") ? key : _triggerStrings[ParseTriggerStringAsKey(key)];
     }
     
     public static uint ParseTriggerStringAsKey(string triggerString)
