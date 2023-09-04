@@ -9,11 +9,11 @@ namespace Launcher.DTOMappers
 {
   public sealed class MapInfoMapper
   {
-    private readonly Dictionary<uint, string> triggerStrings;
+    private readonly Dictionary<uint, string> _triggerStrings;
 
     public MapInfoMapper(Dictionary<uint, string> triggerStrings)
     {
-      this.triggerStrings = triggerStrings;
+      _triggerStrings = triggerStrings;
     }
     
     public MapInfoDto MapToDto(MapInfo mapInfo)
@@ -24,10 +24,10 @@ namespace Launcher.DTOMappers
         MapVersion = mapInfo.MapVersion,
         EditorVersion = mapInfo.EditorVersion,
         GameVersion = mapInfo.GameVersion,
-        MapName = triggerStrings[TriggerStringParser.ParseTriggerStringAsKey(mapInfo.MapName)],
-        MapAuthor = triggerStrings[TriggerStringParser.ParseTriggerStringAsKey(mapInfo.MapAuthor)],
-        MapDescription = triggerStrings[TriggerStringParser.ParseTriggerStringAsKey(mapInfo.MapDescription)],
-        RecommendedPlayers = triggerStrings[TriggerStringParser.ParseTriggerStringAsKey(mapInfo.RecommendedPlayers)],
+        MapName = TriggerStringParser.GetTriggerStringValueFromKey(mapInfo.MapName, _triggerStrings),
+        MapAuthor = TriggerStringParser.GetTriggerStringValueFromKey(mapInfo.MapAuthor, _triggerStrings),
+        MapDescription = TriggerStringParser.GetTriggerStringValueFromKey(mapInfo.MapDescription, _triggerStrings),
+        RecommendedPlayers = TriggerStringParser.GetTriggerStringValueFromKey(mapInfo.RecommendedPlayers, _triggerStrings),
         Unk1 = mapInfo.Unk1,
         Unk2 = mapInfo.Unk2,
         Unk3 = mapInfo.Unk3,
@@ -43,16 +43,16 @@ namespace Launcher.DTOMappers
         Tileset = mapInfo.Tileset,
         CampaignBackgroundNumber = mapInfo.CampaignBackgroundNumber,
         LoadingScreenBackgroundNumber = mapInfo.LoadingScreenBackgroundNumber,
-        LoadingScreenPath = triggerStrings[TriggerStringParser.ParseTriggerStringAsKey(mapInfo.LoadingScreenPath)],
-        LoadingScreenText = triggerStrings[TriggerStringParser.ParseTriggerStringAsKey(mapInfo.LoadingScreenText)],
-        LoadingScreenTitle = triggerStrings[TriggerStringParser.ParseTriggerStringAsKey(mapInfo.LoadingScreenTitle)],
-        LoadingScreenSubtitle = triggerStrings[TriggerStringParser.ParseTriggerStringAsKey(mapInfo.LoadingScreenSubtitle)],
+        LoadingScreenPath = TriggerStringParser.GetTriggerStringValueFromKey(mapInfo.LoadingScreenPath, _triggerStrings),
+        LoadingScreenText = TriggerStringParser.GetTriggerStringValueFromKey(mapInfo.LoadingScreenText, _triggerStrings),
+        LoadingScreenTitle = TriggerStringParser.GetTriggerStringValueFromKey(mapInfo.LoadingScreenTitle, _triggerStrings),
+        LoadingScreenSubtitle = TriggerStringParser.GetTriggerStringValueFromKey(mapInfo.LoadingScreenSubtitle, _triggerStrings),
         LoadingScreenNumber = mapInfo.LoadingScreenNumber,
         GameDataSet = mapInfo.GameDataSet,
         PrologueScreenPath = mapInfo.PrologueScreenPath,
-        PrologueScreenText = triggerStrings[TriggerStringParser.ParseTriggerStringAsKey(mapInfo.PrologueScreenText)],
-        PrologueScreenTitle = triggerStrings[TriggerStringParser.ParseTriggerStringAsKey(mapInfo.PrologueScreenTitle)],
-        PrologueScreenSubtitle = triggerStrings[TriggerStringParser.ParseTriggerStringAsKey(mapInfo.PrologueScreenSubtitle)],
+        PrologueScreenText = TriggerStringParser.GetTriggerStringValueFromKey(mapInfo.PrologueScreenText, _triggerStrings),
+        PrologueScreenTitle = TriggerStringParser.GetTriggerStringValueFromKey(mapInfo.PrologueScreenTitle, _triggerStrings),
+        PrologueScreenSubtitle = TriggerStringParser.GetTriggerStringValueFromKey(mapInfo.PrologueScreenSubtitle, _triggerStrings),
         FogStyle = mapInfo.FogStyle,
         FogStartZ = mapInfo.FogStartZ,
         FogEndZ = mapInfo.FogEndZ,
@@ -95,7 +95,7 @@ namespace Launcher.DTOMappers
         Controller = playerData.Controller,
         Race = playerData.Race,
         Flags = playerData.Flags,
-        Name = triggerStrings[TriggerStringParser.ParseTriggerStringAsKey(playerData.Name)],
+        Name = TriggerStringParser.GetTriggerStringValueFromKey(playerData.Name, _triggerStrings),
         StartPosition = Vector2ToDto(playerData.StartPosition),
         AllyLowPriorityFlags = playerData.AllyLowPriorityFlags,
         AllyHighPriorityFlags = playerData.AllyHighPriorityFlags,
@@ -111,7 +111,7 @@ namespace Launcher.DTOMappers
       {
         Flags = forceData.Flags,
         Players = forceData.Players,
-        Name = triggerStrings[TriggerStringParser.ParseTriggerStringAsKey(forceData.Name)]
+        Name = _triggerStrings[TriggerStringParser.ParseTriggerStringAsKey(forceData.Name)]
       };
       return dto;
     }
