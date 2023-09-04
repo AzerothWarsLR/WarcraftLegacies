@@ -36,7 +36,7 @@ namespace Launcher.Services
     }
     
     private static SimpleObjectModification ConvertSimpleModificationToDto(
-      SimpleObjectModification simpleObjectModification, Dictionary<uint, string>? triggerStringDictionary)
+      SimpleObjectModification simpleObjectModification, IReadOnlyDictionary<uint, string>? triggerStringDictionary)
     {
       var dto = new SimpleObjectModification
       {
@@ -52,7 +52,7 @@ namespace Launcher.Services
 
     private static SimpleObjectDataModification ConvertSimpleObjectDataModificationToDto(SimpleObjectDataModification simpleObjectDataModification, IReadOnlyDictionary<uint, string>? triggerStrings)
     {
-      var value = triggerStrings != null && simpleObjectDataModification.Type == ObjectDataType.String
+      var value = triggerStrings != null && ValueIsTriggerString(simpleObjectDataModification)
         ? triggerStrings[ParseTriggerStringAsKey((simpleObjectDataModification.Value as string)!)]
         : simpleObjectDataModification.Value;
 
@@ -64,6 +64,14 @@ namespace Launcher.Services
       };
     }
 
+    private static bool ValueIsTriggerString(ObjectDataModification modification)
+    {
+      if (modification.Type == ObjectDataType.String)
+        return false;
+
+      return modification.Value is string asString && asString.StartsWith("TRIGSTR_");
+    }
+    
     private static uint ParseTriggerStringAsKey(string triggerString)
     {
       var textAfterUnderscore = triggerString[(triggerString.LastIndexOf('_') + 1)..];
