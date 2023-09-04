@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using War3Net.Build.Script;
 
 namespace Launcher.Extensions;
