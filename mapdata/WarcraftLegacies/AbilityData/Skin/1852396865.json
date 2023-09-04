@@ -36,35 +36,30 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Inferno - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
       "Value": "Inferno - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
       "Value": "Inferno - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
       "Value": "Calls an Infernal down from the sky, dealing \u003CAUin,DataA2\u003E damage and stunning enemy land units for \u003CAUin,Dur2\u003E seconds in an area. The Infernal lasts \u003CAUin,DataB2\u003E seconds."
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
       "Value": "Calls an Infernal down from the sky, dealing \u003CAUin,DataA3\u003E damage and stunning enemy land units for \u003CAUin,Dur3\u003E seconds in an area. The Infernal lasts \u003CAUin,DataB3\u003E seconds."

@@ -7,7 +7,6 @@
   "Modifications": [
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829579623,
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNNightElfBuild.blp"
@@ -18,28 +17,24 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 1718840935,
       "Type": 3,
       "Value": "(Druids)"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 1835101799,
       "Type": 3,
       "Value": "Ysera\u0027s Gift"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453415,
       "Type": 3,
       "Value": "Research Ysera\u0027s Gift"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536167,
       "Type": 3,
       "Value": "Allows World Trees to use Begin Anew and Regrow Trees."

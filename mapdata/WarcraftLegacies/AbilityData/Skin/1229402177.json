@@ -12,14 +12,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Summons an immovable whirlpool that slows enemy units, reducing their attack speed by 15% and movement speed by 10%. |nLasts \u003CA0GI,Dur1\u003E seconds."
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Whirlpool"

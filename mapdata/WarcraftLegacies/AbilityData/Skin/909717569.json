@@ -55,56 +55,48 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Summon Water Elemental - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
       "Value": "Summon Water Elemental - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
       "Value": "Summon Water Elemental - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
-      "Pointer": 4,
       "Id": 829453409,
       "Type": 3,
       "Value": "Summon Water Elemental - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Summons 2 Water Elementals with Bash and Crushing Wave to attack Jaina\u0027s enemies. |n|n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
       "Value": "Summons 3 Water Elementals with Bash and Crushing Wave to attack Jaina\u0027s enemies. |n|n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
       "Value": "Summons 4 Water Elementals with Bash and Crushing Wave to attack Jaina\u0027s enemies. |n|n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Level": 4,
-      "Pointer": 4,
       "Id": 828536161,
       "Type": 3,
       "Value": "Summons 5 Water Elementals with Bash and Crushing Wave to attack Jaina\u0027s enemies. |n|n|cffffcc00Attacks land and air units.|r"

@@ -12,7 +12,6 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "The massive Void Reaver demoralize the enemy units reducing their armor by 20%"
@@ -33,7 +32,6 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Aura of the Reaver"

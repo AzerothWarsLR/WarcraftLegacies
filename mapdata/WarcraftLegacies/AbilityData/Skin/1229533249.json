@@ -32,14 +32,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Fire Bomb"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Throws a fire bomb at an enemy target burning them for \u003CA0II,DataD1\u003E damage per second. Additionally burns nearby enemy targets for \u003CA0II,DataE1\u003E damage per second.|nLasts \u003CA0II,Dur1\u003E seconds."

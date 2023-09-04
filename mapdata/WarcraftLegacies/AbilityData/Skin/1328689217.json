@@ -31,14 +31,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Mithril Plated Armor"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "This unit has a \u003CA02O,DataA1\u003E% chance to reduce incoming damage by \u003CA02O,DataC1\u003E."

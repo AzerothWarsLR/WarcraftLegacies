@@ -27,14 +27,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Activate Perfect Avatar"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "The Thanes, having perfected their avatar, will take almost no damage while in it. They also gain 20 bonus damage and 200 hit point bonus.|n|nLasts 15 seconds."
@@ -46,7 +44,6 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829715809,
       "Type": 3,
       "Value": "Deactivate Perfect A|cffffcc00v|ratar"

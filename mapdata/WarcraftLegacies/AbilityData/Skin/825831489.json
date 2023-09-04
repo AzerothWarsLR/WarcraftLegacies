@@ -47,42 +47,36 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Seed of Burning Hatred - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
       "Value": "Seed of Burning Hatred - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
       "Value": "Seed of Burning Hatred - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Plant a seed of hatred onto a friendly building. The afflicted unit cannot uproot or train units and will take 300 damage per second until it dies. Upon its death, 1 mighty Charred Ancient will emerge from the host corpse permanently. The growth of the seed, once planted, cannot be stopped, dispelled, or cancelled."
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
       "Value": "Plant a seed of hatred onto a friendly building. The afflicted unit cannot uproot or train units and will take 300 damage per second until it dies. Upon its death, 2 mighty Charred Ancient will emerge from the host corpse permanently. The growth of the seed, once planted, cannot be stopped, dispelled, or cancelled."
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
       "Value": "Plant a seed of hatred onto a friendly building. The afflicted unit cannot uproot or train units and will take 300 damage per second until it dies. Upon its death, 3 mighty Charred Ancient will emerge from the host corpse permanently. The growth of the seed, once planted, cannot be stopped, dispelled, or cancelled."

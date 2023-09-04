@@ -27,7 +27,6 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Unholy Armor"
@@ -44,7 +43,6 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Increases a target friendly unit\u0027s armor by \u003CA0F8,DataB1\u003E for \u003CA0F8,Dur1\u003E seconds at the cost of 6% of its current hit points."

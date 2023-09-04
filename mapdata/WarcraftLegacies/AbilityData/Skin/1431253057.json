@@ -17,14 +17,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Spawn Totem"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "On death, the Boneseer will spawn a permanent totem at the location of it\u0027s body"

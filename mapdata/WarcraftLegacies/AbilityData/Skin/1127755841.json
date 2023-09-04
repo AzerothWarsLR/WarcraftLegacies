@@ -16,14 +16,12 @@
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
       "Value": "Rape and Pillage"
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
       "Value": "Every attack that does damage to an enemy unit or building will yield some resource value. While now this version of pillage works on both units and buildings, the returns gotten from it are lessened."

@@ -22,14 +22,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Summon Earth Elemental"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Summons an earth elemental to attack the Elementalist enemies. |nLasts 60 seconds. |n|n|cffffcc00Attacks land and air units.|r"

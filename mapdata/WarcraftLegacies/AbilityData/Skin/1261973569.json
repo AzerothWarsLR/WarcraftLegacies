@@ -31,14 +31,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Activate Unholy Defense"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Activate to make Icecrown Obelisks invulnerable.|nDrains mana until deactivated."
@@ -59,14 +57,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829715809,
       "Type": 3,
       "Value": "Deactivate Unholy Defense"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829781345,
       "Type": 3,
       "Value": "Deactivate to stop draining mana, but make Icecrown Obelisks vulnerable."

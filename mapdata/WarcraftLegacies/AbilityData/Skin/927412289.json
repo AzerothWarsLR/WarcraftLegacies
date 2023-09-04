@@ -27,14 +27,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Natural Burial"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Raises a berry bush from a corpse for \u003CA0G7,Dur1\u003E seconds. The berry bush continously restores hit points to nearby friendly units."

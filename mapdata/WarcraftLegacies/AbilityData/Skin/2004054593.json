@@ -34,56 +34,48 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Serpent Ward (|cffffcc00Q|r) - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
       "Value": "Serpent Ward (|cffffcc00Q|r) - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
       "Value": "Serpent Ward (|cffffcc00Q|r) - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
-      "Pointer": 4,
       "Id": 829453409,
       "Type": 3,
       "Value": "Serpent Ward (|cffffcc00Q|r) - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Summons \u003CArsw,DataA1\u003E immobile serpentine wards to attack enemies. The ward has \u003Cosp2,realHP\u003E hit points, is magic immune, and deals \u003Cosp2,mindmg1\u003E - \u003Cosp2,maxdmg1\u003E damage. |nLasts \u003CArsw,Dur1\u003E seconds. |n|n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
       "Value": "Summons \u003CArsw,DataA2\u003E immobile serpentine wards to attack enemies. The ward has \u003Cosp2,realHP\u003E hit points, is magic immune, and deals \u003Cosp2,mindmg1\u003E - \u003Cosp2,maxdmg1\u003E damage. |nLasts \u003CArsw,Dur2\u003E seconds. |n|n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
       "Value": "Summons \u003CArsw,DataA3\u003E immobile serpentine wards to attack enemies. The ward has \u003Cosp3,realHP\u003E hit points, is magic immune, and deals \u003Cosp3,mindmg1\u003E - \u003Cosp3,maxdmg1\u003E damage. |nLasts \u003CArsw,Dur3\u003E seconds. |n|n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Level": 4,
-      "Pointer": 4,
       "Id": 828536161,
       "Type": 3,
       "Value": "Summons \u003CArsw,DataA4\u003E immobile serpentine wards to attack enemies. The ward has \u003Cosp4,realHP\u003E hit points, is magic immune, and deals \u003Cosp4,mindmg1\u003E - \u003Cosp4,maxdmg1\u003E damage. |nLasts \u003CArsw,Dur4\u003E seconds. |n|n|cffffcc00Attacks land and air units.|r"

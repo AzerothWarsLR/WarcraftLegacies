@@ -32,42 +32,36 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Doom - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
       "Value": "Doom - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
       "Value": "Doom - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Marks a target unit for the manifestation of a Demon. The afflicted unit cannot cast spells and will take \u003CA04A,DataA1\u003E damage per second. Upon its death, 2 Lesser Doom Guards will spawn from its corpse. Doom cannot be dispelled or cancelled.|nLasts 8 seconds on heroes and indefinitely on units."
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
       "Value": "Marks a target unit for the manifestation of a Demon. The afflicted unit cannot cast spells and will take \u003CA04A,DataA2\u003E damage per second. Upon its death, 4 Lesser Doom Guards will spawn from its corpse. Doom cannot be dispelled or cancelled.|nLasts 8 seconds on heroes and indefinitely on units."
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
       "Value": "Marks a target unit for the manifestation of a Demon. The afflicted unit cannot cast spells and will take \u003CA04A,DataA3\u003E damage per second. Upon its death, 6 Lesser Doom Guards will spawn from its corpse. Doom cannot be dispelled or cancelled.|nLasts 8 seconds on heroes and indefinitely on units."

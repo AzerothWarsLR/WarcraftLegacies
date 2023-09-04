@@ -22,14 +22,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Jintha\u0027Alor Aura"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Increases life regeneration rate by 1 health per second to friendly units and structures in a 5000 radius."

@@ -46,42 +46,36 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Mass Animate Dead  - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
       "Value": "Mass Animate Dead - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
       "Value": "Mass Animate Dead - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Animates 50 nearby corpses to fight for the Lich King. Lasts 60 seconds. Got 240 seconds cooldown."
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
       "Value": "Animates 100 nearby corpses to fight for the Lich King. Lasts 60 seconds. Got 180 seconds cooldown."
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
       "Value": "Animates 200 nearby corpses to fight for the Lich King. Lasts 60 seconds. Got 120 seconds cooldown."

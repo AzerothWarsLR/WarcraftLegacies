@@ -32,14 +32,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Shadow Infusion"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Infuses an ally with dark magic, healing a target friendly non-mechanical wounded unit for 25 hit points."

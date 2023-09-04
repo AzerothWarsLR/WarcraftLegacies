@@ -12,7 +12,6 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Communion"
@@ -24,7 +23,6 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Causes Alexandros to regenerate \u003CA0DL,DataB1,%\u003E% of his hit points per second."

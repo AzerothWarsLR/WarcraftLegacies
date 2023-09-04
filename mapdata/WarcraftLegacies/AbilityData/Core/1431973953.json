@@ -7,13 +7,12 @@
   "Modifications": [
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 1935895905,
       "Value": 120
     },
     {
       "Level": 1,
-      "Pointer": 1,
+      "Pointer": 2,
       "Id": 845574991,
       "Value": 1
     },
@@ -32,14 +31,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828797775,
       "Type": 3,
       "Value": "n0BO"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 1718968929,
       "Type": 3,
       "Value": "BFig"

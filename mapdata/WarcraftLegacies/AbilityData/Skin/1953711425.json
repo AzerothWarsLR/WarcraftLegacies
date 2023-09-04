@@ -35,14 +35,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Scout"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Summons an Owl Scout, which can be used to scout.|nCan see invisible units. |nLasts 40 seconds."

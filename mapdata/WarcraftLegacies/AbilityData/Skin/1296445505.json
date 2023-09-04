@@ -26,14 +26,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Wickerbeast Form"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Transforms the Thornspeaker into a Wickerbeast. |n|cfff5962dAbilities:|R Cleaving Attack|n|n|cffffcc00Attacks land units.|r"
@@ -49,7 +47,6 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829781345,
       "Type": 3,
       "Value": "Transforms the Thornspeaker into a human."

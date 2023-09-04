@@ -45,14 +45,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Summon Initiate Mage"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Summons \u003CA0JV,DataB1\u003E Initiate Mage for \u003CA0JV,Dur1\u003E seconds. |n|n|cffffcc00Attacks land and air units.|r"

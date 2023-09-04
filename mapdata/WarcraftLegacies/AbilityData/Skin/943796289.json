@@ -7,7 +7,6 @@
   "Modifications": [
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Fortify"
@@ -24,7 +23,6 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Increases this Control Point\u0027s Control Level, granting it increased hit points, attack damage, and armor."

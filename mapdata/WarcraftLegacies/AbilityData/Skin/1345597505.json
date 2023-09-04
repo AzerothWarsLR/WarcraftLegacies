@@ -36,7 +36,6 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Marks a target unit for the manifestation of a Demon. The afflicted unit cannot cast spells and will take30 damage per second until it dies. Upon its death, 2 Fel Hounds will spawn from its corpse. Doom cannot be dispelled or cancelled."

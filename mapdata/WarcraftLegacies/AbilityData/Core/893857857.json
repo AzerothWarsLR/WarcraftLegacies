@@ -7,21 +7,18 @@
   "Modifications": [
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 1852072801,
       "Type": 2,
       "Value": 60
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 1852072801,
       "Type": 2,
       "Value": 60
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 1852072801,
       "Type": 2,
       "Value": 60
@@ -35,14 +32,14 @@
     },
     {
       "Level": 2,
-      "Pointer": 2,
+      "Pointer": 1,
       "Id": 829645409,
       "Type": 2,
       "Value": 700
     },
     {
       "Level": 3,
-      "Pointer": 3,
+      "Pointer": 1,
       "Id": 829645409,
       "Type": 2,
       "Value": 1000
@@ -56,7 +53,7 @@
     },
     {
       "Level": 3,
-      "Pointer": 3,
+      "Pointer": 2,
       "Id": 846422625,
       "Type": 2,
       "Value": 99999
@@ -84,35 +81,30 @@
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 1851880033,
       "Type": 2,
       "Value": 900
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 1851880033,
       "Type": 2,
       "Value": 900
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 1918989409,
       "Type": 3,
       "Value": "enemies,hero,invulnerable,nonhero,organic,vulnerable"
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 1918989409,
       "Type": 3,
       "Value": "enemies,hero,invulnerable,nonhero,organic,vulnerable"
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 1918989409,
       "Type": 3,
       "Value": "enemies,hero,invulnerable,nonhero,organic,vulnerable"

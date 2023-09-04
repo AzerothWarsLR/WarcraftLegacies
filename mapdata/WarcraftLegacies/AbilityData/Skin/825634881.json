@@ -27,14 +27,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Fire Infused Quiver"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Flame infused arrows burn the target for \u003CA061,DataA1\u003E damage a second.|n|cffffcc00Lasts \u003CA061,Dur1\u003E seconds."

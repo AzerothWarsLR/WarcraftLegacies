@@ -11,13 +11,13 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
+      "Pointer": 3,
       "Id": 828798293,
       "Value": 0
     },
     {
       "Level": 1,
-      "Pointer": 1,
+      "Pointer": 8,
       "Id": 862352725,
       "Type": 3,
       "Value": "air,ground,invulnerable,player,vulnerable"

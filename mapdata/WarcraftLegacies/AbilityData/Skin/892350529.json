@@ -36,14 +36,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Deploy Barricades"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Deploy a solid barricade blocking the path of enemies. The barricade takes 15 damage per second until it is destroyed."

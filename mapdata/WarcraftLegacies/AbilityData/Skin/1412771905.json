@@ -61,14 +61,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Acid Spray"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Bombards an area with 3 waves of acid. Each wave deals 50 damage to all units in an area."

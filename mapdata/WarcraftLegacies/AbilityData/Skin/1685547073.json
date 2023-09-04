@@ -11,7 +11,6 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Summons an immovable ward that heals 1% of a nearby friendly non-mechanical unit\u0027s hit points per second. |nLasts \u003CAhwd,Dur1\u003E seconds."

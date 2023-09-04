@@ -69,56 +69,48 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Thunder Grip - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
       "Value": "Thunder Grip - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
       "Value": "Thunder Grip - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
-      "Pointer": 4,
       "Id": 829453409,
       "Type": 3,
       "Value": "Thunder Grip - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Lightning wraps itself around the body of a foe, rendering it immobile and dealing damage over time. Deals 75 per second for 6 seconds (2 for Heroes). |n|n|cffc4c4ffChanneling.|r"
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
       "Value": "Lightning wraps itself around the body of a foe, rendering it immobile and dealing damage over time. Deals 75 per second for 8 seconds (3 for Heroes). |n|n|cffc4c4ffChanneling.|r"
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
       "Value": "Lightning wraps itself around the body of a foe, rendering it immobile and dealing damage over time. Deals 75 per second for 10 seconds (4 for Heroes). |n|n|cffc4c4ffChanneling.|r"
     },
     {
       "Level": 4,
-      "Pointer": 4,
       "Id": 828536161,
       "Type": 3,
       "Value": "Lightning wraps itself around the body of a foe, rendering it immobile and dealing damage over time. Deals 75 per second for 12 seconds (5 for Heroes). |n|n|cffc4c4ffChanneling.|r"

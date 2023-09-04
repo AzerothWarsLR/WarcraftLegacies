@@ -27,56 +27,48 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Plague Bomb - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
       "Value": "Plague Bomb - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
       "Value": "Plague Bomb - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
-      "Pointer": 4,
       "Id": 829453409,
       "Type": 3,
       "Value": "Plague Bomb - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Decreases armor by \u003CA03Z:ANab,DataC1\u003E; deals \u003CA03Z:ANab,DataD1\u003E damage per second to the primary target; deals slightly less damage to nearby targets.|nLasts \u003CA03Z:ANab,Dur1\u003E seconds."
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
       "Value": "Decreases armor by \u003CA03Z:ANab,DataC2\u003E; deals \u003CA03Z:ANab,DataD2\u003E damage per second to the primary target; deals slightly less damage to nearby targets.|nLasts \u003CA03Z:ANab,Dur2\u003E seconds."
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
       "Value": "Decreases armor by \u003CA03Z:ANab,DataC3\u003E; deals \u003CA03Z:ANab,DataD3\u003E damage per second to the primary target; deals slightly less damage to nearby targets.|nLasts \u003CA03Z:ANab,Dur3\u003E seconds."
     },
     {
       "Level": 4,
-      "Pointer": 4,
       "Id": 828536161,
       "Type": 3,
       "Value": "Decreases armor by \u003CA03Z:ANab,DataC4\u003E; deals \u003CA03Z:ANab,DataD4\u003E damage per second to the primary target; deals slightly less damage to nearby targets.|nLasts \u003CA03Z:ANab,Dur4\u003E seconds."

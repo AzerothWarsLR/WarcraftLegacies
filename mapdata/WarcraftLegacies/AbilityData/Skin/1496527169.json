@@ -35,14 +35,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Thirst for Blood"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Adds 50 bonus damage to the unit and causes its attacks to heal it for 80% of damage dealt. |nLasts 15 seconds."

@@ -65,14 +65,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Earth Bind"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Causes the ground to burst, immobilizing a target enemy unit for 5(1 for Heroes), and dealing 25 damage per second."

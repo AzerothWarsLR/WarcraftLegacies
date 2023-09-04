@@ -50,42 +50,36 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Reborn through Time - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
       "Value": "Reborn through Time - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
       "Value": "Reborn through Time - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Aegwynn uses her immense arcane power to reset time for herself, instantly restoring herself to full health and reseting her cooldown.|n|cff99b4d1100 second cooldown|r"
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
       "Value": "Aegwynn uses her immense arcane power to reset time for herself, instantly restoring herself to full health and reseting her cooldown.|n|cff99b4d285 second cooldown|r"
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
       "Value": "Aegwynn uses her immense arcane power to reset time for herself, instantly restoring herself to full health and reseting her cooldown.|n|cff99b4d360 second cooldown|r"

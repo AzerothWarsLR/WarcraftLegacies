@@ -16,7 +16,6 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "A poison attack that deals 5 damage per second, and slows the target enemy\u0027s movement by 50% and attack by 30% for 5 seconds. Lasts 1 second on heroes."

@@ -46,14 +46,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Vindication"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "This unit enhances their attack with the Holy Light dealing 20 additional damage with every attack but draining mana with each hit."

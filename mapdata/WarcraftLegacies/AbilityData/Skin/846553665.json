@@ -11,14 +11,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Dig Tunnel"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "The Carrion Beetle digs through the ground and becomes invisible."
@@ -30,7 +28,6 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829715809,
       "Type": 3,
       "Value": "Resurface"

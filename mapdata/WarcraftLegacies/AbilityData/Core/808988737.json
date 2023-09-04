@@ -14,28 +14,28 @@
     },
     {
       "Level": 2,
-      "Pointer": 2,
+      "Pointer": 1,
       "Id": 828727631,
       "Type": 2,
       "Value": 0.06
     },
     {
       "Level": 3,
-      "Pointer": 3,
+      "Pointer": 1,
       "Id": 828727631,
       "Type": 2,
       "Value": 0.09
     },
     {
       "Level": 4,
-      "Pointer": 4,
+      "Pointer": 1,
       "Id": 828727631,
       "Type": 2,
       "Value": 0.12
     },
     {
       "Level": 4,
-      "Pointer": 4,
+      "Pointer": 2,
       "Id": 845504847,
       "Type": 2,
       "Value": 0.2

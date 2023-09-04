@@ -32,28 +32,24 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Swig - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
       "Value": "Swig - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Restores \u003CA09J,DataA1\u003E hit points to nearby friendly units with the invigorating power of alcohol."
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
       "Value": "Restores \u003CA09J,DataA2\u003E hit points to nearby friendly units with the invigorating power of alcohol."

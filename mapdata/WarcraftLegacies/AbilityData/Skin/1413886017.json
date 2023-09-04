@@ -17,14 +17,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Dispels positive buffs from enemy units, and negative buffs from friendly units. |n|cffffcc00Deals 350 damage to summoned units.|r"
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
       "Value": "Dispels positive buffs from enemy units, and negative buffs from friendly units. |n|cffffcc00Deals 500 damage to summoned units.|r"

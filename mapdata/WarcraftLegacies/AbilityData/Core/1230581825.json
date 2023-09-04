@@ -7,7 +7,6 @@
   "Modifications": [
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 1718968929,
       "Type": 3,
       "Value": "BOsf"
@@ -18,20 +17,17 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 1852072801,
       "Type": 2,
       "Value": 30
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 1935895905,
       "Value": 0
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 1920296033,
       "Type": 2,
       "Value": 0
@@ -42,7 +38,6 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 1969514593,
       "Type": 2,
       "Value": 0
@@ -57,7 +52,6 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828733256,
       "Type": 3,
       "Value": "u019"

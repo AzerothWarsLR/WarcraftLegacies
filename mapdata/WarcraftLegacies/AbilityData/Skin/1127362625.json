@@ -22,14 +22,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Summon Fire Elemental"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Summons a fire elemental to attack the Sorceress enemies. |nLasts 60 seconds. |n|n|cffffcc00Attacks land and air units.|r"

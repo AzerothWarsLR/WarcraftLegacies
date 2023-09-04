@@ -37,14 +37,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Ground Slam - [|cffffcc00Q|r]"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Slams the ground, shooting spiked tendrils out in a straight line, dealing 100 damage and hurling enemy ground units into the air in their wake, stunning them for 2 seconds. (0.5 for heroes)"

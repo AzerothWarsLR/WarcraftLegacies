@@ -6,60 +6,51 @@
   "Modifications": [
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 1701994849,
       "Type": 2,
       "Value": 800
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 1701994849,
       "Type": 2,
       "Value": 1200
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 1701994849,
       "Type": 2,
       "Value": 1600
     },
     {
       "Level": 4,
-      "Pointer": 4,
       "Id": 1701994849,
       "Type": 2,
       "Value": 2000
     },
     {
       "Level": 5,
-      "Pointer": 5,
       "Id": 1701994849,
       "Type": 2,
       "Value": 2400
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 1935895905,
       "Value": 75
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 1935895905,
       "Value": 75
     },
     {
       "Level": 4,
-      "Pointer": 4,
       "Id": 1935895905,
       "Value": 75
     },
     {
       "Level": 5,
-      "Pointer": 5,
       "Id": 1935895905,
       "Value": 75
     },
@@ -69,7 +60,6 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 1935895905,
       "Value": 75
     }

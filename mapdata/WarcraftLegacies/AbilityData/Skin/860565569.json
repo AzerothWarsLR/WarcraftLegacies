@@ -52,56 +52,48 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Seismic Slam (|cffffcc00Q|r) - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
       "Value": "Seismic Slam (|cffffcc00Q|r) - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
       "Value": "Seismic Slam (|cffffcc00Q|r) - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
-      "Pointer": 4,
       "Id": 829453409,
       "Type": 3,
       "Value": "Seismic Slam (|cffffcc00Q|r) - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Slams the ground with his massive weapon, shaking  the ground in a straight line, dealing 80 damage and hurling enemy ground units into the air in their wake, stunning them for 1 second."
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
       "Value": "Slams the ground with his massive weapon, shaking  the ground in a straight line, dealing 110 damage and hurling enemy ground units into the air in their wake, stunning them for 1.5(1.25) seconds."
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
       "Value": "Slams the ground with his massive weapon, shaking  the ground in a straight line, dealing 140 damage and hurling enemy ground units into the air in their wake, stunning them for 2(1.5) seconds."
     },
     {
       "Level": 4,
-      "Pointer": 4,
       "Id": 828536161,
       "Type": 3,
       "Value": "Slams the ground with his massive weapon, shaking  the ground in a straight line, dealing 170 damage and hurling enemy ground units into the air in their wake, stunning them for 2.5(1.75) seconds."

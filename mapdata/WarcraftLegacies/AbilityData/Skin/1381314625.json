@@ -32,14 +32,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Call of the Feral Wolves"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Summons 3 Feral Wolves that have Roar, Bash, and Critical Strike.|nLasts \u003CACs7,Dur2\u003E seconds.|n|n|cffffcc00Attacks land units.|r"

@@ -55,42 +55,36 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Void Reinforcements - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
       "Value": "Void Reinforcements - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
       "Value": "Void Reinforcements - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Summons 2 creatures from the void. Every unit summoned has a specific percentages of being a certain unit of the following list: |nFaceless One, Faceless Corruptors, Faceless Deathbringer and Immortal Guardians. |n|n|cffffcc00Level 1|r - 8 units. 60% Faceless One, 20% Faceless Corruptor, 10% Deathbringer, 10% Immortal Guardian."
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
       "Value": "Summons 4 creatures from the void. Every unit summoned has a specific percentages of being a certain unit of the following list: |nFaceless One, Faceless Corruptors, Faceless Deathbringer and Immortal Guardians. |n|n|cffffcc00Level 1|r - 8 units. 40% Faceless One, 30% Faceless Corruptor, 20% Deathbringer, 10% Immortal Guardian."
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
       "Value": "Summons 8 creatures from the void. Every unit summoned has a specific percentages of being a certain unit of the following list: |nFaceless One, Faceless Corruptors, Faceless Deathbringer and Immortal Guardians. |n|n|cffffcc00Level 1|r - 8 units. 30% Faceless One, 30% Faceless Corruptor, 20% Deathbringer, 20% Immortal Guardian."

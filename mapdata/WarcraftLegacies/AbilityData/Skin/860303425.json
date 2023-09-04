@@ -17,7 +17,6 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Removes all buffs from units in a target area and deals \u003CA0G3,DataB1\u003E damage to summoned units.|r"

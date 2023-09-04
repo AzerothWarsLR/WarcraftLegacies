@@ -50,14 +50,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Naval Aura."
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Enhances friendly ships within a radius of \u003CA0HN,Area1\u003E by increasing their movement speed by \u003CA0HN,DataA1,%\u003E and hit point regeneration per second by \u003CA0HN,DataB1\u003E."

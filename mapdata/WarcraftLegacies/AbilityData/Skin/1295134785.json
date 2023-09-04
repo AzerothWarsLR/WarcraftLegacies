@@ -60,56 +60,48 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Ritual of the Ancients - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
       "Value": "Ritual of the Ancients - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
       "Value": "Ritual of the Ancients - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
-      "Pointer": 4,
       "Id": 829453409,
       "Type": 3,
       "Value": "Ritual of the Ancients - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Cenarius grows a tree at a target location which spawns Ancients every 1.4 seconds until it expires or is destroyed. Lasts 3 seconds."
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
       "Value": "Cenarius grows a tree at a target location which spawns Ancients every 1.4 seconds until it expires or is destroyed. Lasts 5 seconds."
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
       "Value": "Cenarius grows a tree at a target location which spawns Ancients every 1.4 seconds until it expires or is destroyed. Lasts 7 seconds."
     },
     {
       "Level": 4,
-      "Pointer": 4,
       "Id": 828536161,
       "Type": 3,
       "Value": "Cenarius grows a tree at a target location which spawns Ancients every 1.4 seconds until it expires or is destroyed. Lasts 9 seconds."

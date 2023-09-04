@@ -36,14 +36,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Summon Garrison"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Summons \u003CA0GD,DataA1\u003E Brigadiers for \u003CA0GD,Dur1\u003E seconds."

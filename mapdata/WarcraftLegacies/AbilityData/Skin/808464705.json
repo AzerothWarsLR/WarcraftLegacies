@@ -12,14 +12,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Gives a 100% chance that an attack will stun an opponent for 0.4 seconds and deal 5 damage."
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Boarding"

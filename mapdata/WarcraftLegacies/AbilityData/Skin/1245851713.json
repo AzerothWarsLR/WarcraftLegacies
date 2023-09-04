@@ -21,7 +21,6 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Stuns and deals \u003CAmls,DataA1\u003E damage per second to a target enemy air unit.|n|cffffcc00Lasts 10(1 for Heros) seconds."

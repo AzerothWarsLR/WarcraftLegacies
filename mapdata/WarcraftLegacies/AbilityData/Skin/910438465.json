@@ -42,14 +42,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Chain of the Void (|cffffcc00Q|r)"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Hurls a bolt of lightning that bounces up to 6 times, dealing 75 damage to the primary target. Each jump deals 10% less damage."

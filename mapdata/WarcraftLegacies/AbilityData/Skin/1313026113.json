@@ -31,14 +31,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Entangling Roots"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Causes roots to burst from the ground, immobilizing and disarming a target enemy unit for 9(2) seconds, and dealing 75 damage per second."

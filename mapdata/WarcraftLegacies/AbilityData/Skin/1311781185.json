@@ -84,42 +84,36 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Reaping Hour - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
       "Value": "Reaping Hour - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
       "Value": "Reaping Hour - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Conjures 7 spectral horsemen that charge to the target location, dealing 100 damage to each enemy unit struck. Deals 1% additional damage for each 1% of hit points the damaged unit is missing."
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
       "Value": "Conjures 7 spectral horsemen that charge to the target location, dealing 150 damage to each enemy unit struck. Deals 1% additional damage for each 1% of hit points the damaged unit is missing."
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
       "Value": "Conjures 7 spectral horsemen that charge to the target location, dealing 200 damage to each enemy unit struck. Deals 1% additional damage for each 1% of hit points the damaged unit is missing."

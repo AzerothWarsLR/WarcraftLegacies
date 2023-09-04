@@ -12,7 +12,6 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Causes the Fel Grunt to transform into a Skeletal Grunt upon death, allowing it to continue fighting for 40 seconds."
@@ -24,7 +23,6 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Fel Infused Skeleton"

@@ -25,7 +25,6 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Calls down waves of fire that damage units in an area. Each wave deals 25 damage. |nLasts for \u003CACrf,DataA1\u003E waves."

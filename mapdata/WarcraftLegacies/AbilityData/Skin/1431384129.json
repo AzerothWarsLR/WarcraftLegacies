@@ -27,14 +27,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Impaling Strike"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Has a 15% chance on hit to slow an enemy unit by 60% for 10 seconds, dealing 10 damage every 2 seconds. Lasts 5 seconds on heroes."

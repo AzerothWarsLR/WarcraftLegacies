@@ -7,52 +7,47 @@
   "Modifications": [
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 1852072801,
       "Type": 2,
       "Value": 150
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 1852072801,
       "Type": 2,
       "Value": 150
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 1852072801,
       "Type": 2,
       "Value": 150
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 1935895905,
       "Value": 200
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 1935895905,
       "Value": 250
     },
     {
       "Level": 2,
-      "Pointer": 2,
+      "Pointer": 1,
       "Id": 829647957,
       "Value": 30
     },
     {
       "Level": 3,
-      "Pointer": 3,
+      "Pointer": 1,
       "Id": 829647957,
       "Value": 40
     },
     {
       "Level": 1,
-      "Pointer": 1,
+      "Pointer": 2,
       "Id": 846425173,
       "Type": 2,
       "Value": 0.1
@@ -66,14 +61,14 @@
     },
     {
       "Level": 3,
-      "Pointer": 3,
+      "Pointer": 2,
       "Id": 846425173,
       "Type": 2,
       "Value": 0.1
     },
     {
       "Level": 2,
-      "Pointer": 2,
+      "Pointer": 3,
       "Id": 863202389,
       "Value": 13
     },
@@ -85,21 +80,21 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
+      "Pointer": 4,
       "Id": 879979605,
       "Type": 2,
       "Value": 1
     },
     {
       "Level": 2,
-      "Pointer": 2,
+      "Pointer": 5,
       "Id": 896756821,
       "Type": 2,
       "Value": 27
     },
     {
       "Level": 3,
-      "Pointer": 3,
+      "Pointer": 5,
       "Id": 896756821,
       "Type": 2,
       "Value": 33
@@ -118,21 +113,18 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 1970498645,
       "Type": 3,
       "Value": "u00O"
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 1970498645,
       "Type": 3,
       "Value": "u00O"
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 1970498645,
       "Type": 3,
       "Value": "u00O"

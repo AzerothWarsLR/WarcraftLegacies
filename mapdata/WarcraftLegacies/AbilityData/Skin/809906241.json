@@ -17,7 +17,6 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Causes a target unit to be bound to the ground so that it cannot move. Air units that are ensnared can be attacked as though they were land units. |nLasts 10(2) seconds."

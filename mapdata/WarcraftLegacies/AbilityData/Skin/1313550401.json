@@ -40,56 +40,48 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Earth\u0027s Grace - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
       "Value": "Earth\u0027s Grace - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
       "Value": "Earth\u0027s Grace - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
-      "Pointer": 4,
       "Id": 829453409,
       "Type": 3,
       "Value": "Earth\u0027s Grace - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Sprays \u003CA0KN,DataF1\u003E waves of healing mist; each wave heals \u003CA0KN,DataA1\u003E damage to all friendly units in an area."
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
       "Value": "Sprays \u003CA0KN,DataF2\u003E waves of healing mist; each wave heals \u003CA0KN,DataA2\u003E damage to all friendly units in an area."
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
       "Value": "Sprays \u003CA0KN,DataF3\u003E waves of healing mist; each wave heals \u003CA0KN,DataA3\u003E damage to all friendly units in an area."
     },
     {
       "Level": 4,
-      "Pointer": 4,
       "Id": 828536161,
       "Type": 3,
       "Value": "Sprays \u003CA0KN,DataF4\u003E waves of healing mist; each wave heals \u003CA0KN,DataA4\u003E damage to all friendly units in an area."

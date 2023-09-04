@@ -62,35 +62,30 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Enveloping Winds (|cffffcc00Q|r)"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Magically binds a target enemy unit, so that it cannot move or attack and takes 30 damage per second. |nLasts 4 seconds."
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
       "Value": "Magically binds a target enemy unit, so that it cannot move or attack and takes 30 damage per second. |nLasts 5 seconds."
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
       "Value": "Magically binds a target enemy unit, so that it cannot move or attack and takes 30 damage per second. |nLasts 6 seconds."
     },
     {
       "Level": 4,
-      "Pointer": 4,
       "Id": 828536161,
       "Type": 3,
       "Value": "Magically binds a target enemy unit, so that it cannot move or attack and takes 30 damage per second. |nLasts 7 seconds."

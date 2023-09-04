@@ -11,49 +11,42 @@
     },
     {
       "Level": 4,
-      "Pointer": 4,
       "Id": 829453409,
       "Type": 3,
       "Value": "Wind Walk - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 5,
-      "Pointer": 5,
       "Id": 829453409,
       "Type": 3,
       "Value": "Wind Walk (|cffffcc00Q|r) - [|cffffcc00Level 5|r]"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Allows the Hero to become invisible, and move \u003CAOwk,DataB1,%\u003E% faster for \u003CAOwk,Dur1\u003E seconds. If the Hero attacks a unit to break invisibility, the attack will do \u003CAOwk,DataC1\u003E bonus damage."
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
       "Value": "Allows the Hero to become invisible, and move \u003CAOwk,DataB2,%\u003E% faster for \u003CAOwk,Dur2\u003E seconds. If the Hero attacks a unit to break invisibility, the attack will do \u003CAOwk,DataC2\u003E bonus damage."
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
       "Value": "Allows the Hero to become invisible, and move \u003CAOwk,DataB3,%\u003E% faster for \u003CAOwk,Dur3\u003E seconds. If the Hero attacks a unit to break invisibility, the attack will do \u003CAOwk,DataC3\u003E bonus damage."
     },
     {
       "Level": 4,
-      "Pointer": 4,
       "Id": 828536161,
       "Type": 3,
       "Value": "Allows the Hero to become invisible, and move \u003CAOwk,DataB4,%\u003E% faster for \u003CAOwk,Dur4\u003E seconds. If the Hero attacks a unit to break invisibility, the attack will do \u003CAOwk,DataC4\u003E bonus damage."
     },
     {
       "Level": 5,
-      "Pointer": 5,
       "Id": 828536161,
       "Type": 3,
       "Value": "Allows the Hero to become invisible, and move \u003CAOwk,DataB5,%\u003E% faster for \u003CAOwk,Dur5\u003E seconds. If the Hero attacks a unit to break invisibility, the attack will do \u003CAOwk,DataC5\u003E bonus damage."

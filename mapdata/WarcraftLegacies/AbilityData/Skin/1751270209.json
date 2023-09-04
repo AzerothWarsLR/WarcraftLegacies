@@ -11,7 +11,6 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Gives a 15% chance that an attack will do 60 bonus damage and stun an opponent for 2 seconds. (0.2 for heroes)"

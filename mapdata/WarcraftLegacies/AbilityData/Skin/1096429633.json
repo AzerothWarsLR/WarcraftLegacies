@@ -47,56 +47,48 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Warsong Battle Standard - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
       "Value": "Warsong Battle Standard - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
       "Value": "Warsong Battle Standard - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
-      "Pointer": 4,
       "Id": 829453409,
       "Type": 3,
       "Value": "Sentinel Standard |cffffcc00(E)|r - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Places a battle standard, giving a 50%  bonus regeneration and 10 armor to friendly units next to the banner. Has a range of 600.|nLasts 25 seconds"
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
       "Value": "Places a battle standard, giving a 100%  bonus regeneration and 10 armor to friendly units next to the banner. Has a range of 600.|nLasts 25 seconds"
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
       "Value": "Places a battle standard, giving a 150%  bonus regeneration and 10 armor to friendly units next to the banner. Has a range of 600.|nLasts 25 seconds"
     },
     {
       "Level": 4,
-      "Pointer": 4,
       "Id": 828536161,
       "Type": 3,
       "Value": "Places a battle standard, giving 30% bouns damage to friendly units next to the banner. Has a range of 300.|nLasts \u003CAOsw,Dur4\u003E seconds"

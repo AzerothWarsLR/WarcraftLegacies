@@ -17,7 +17,6 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Stops all enemies in a target area from casting spells for 10 (2) seconds."

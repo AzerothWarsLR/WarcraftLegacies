@@ -16,7 +16,6 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Replenish the life and mana of a target friendly unit. |n|nRestores 0.75 health and 2.2 mana to the unit for every point of mana spent."

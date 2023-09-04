@@ -16,7 +16,6 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Reduces movement speed by 75%, attack rate by 50%, and damage by 50% of a target enemy unit. |nLasts 60 seconds. Lasts 10 seconds on Heroes."

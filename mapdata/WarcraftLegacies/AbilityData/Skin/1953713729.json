@@ -56,28 +56,24 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Voodoo Spirits - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
       "Value": "Voodoo Spirits - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
       "Value": "Voodoo Spirits - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Rokhan calls forth waves of voodoo spirits that explode dealing damage to to the Shadowhunter\u0027s enemies. Each exploding spirit deals \u003CANst,DataC1\u003E damage. |nLasts \u003CANst,Dur1\u003E seconds."

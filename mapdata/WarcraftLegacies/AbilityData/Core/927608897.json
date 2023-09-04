@@ -7,7 +7,6 @@
   "Modifications": [
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 1718968929,
       "Type": 3,
       "Value": "B042"
@@ -25,14 +24,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 1920296033,
       "Type": 2,
       "Value": 4
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 1969514593,
       "Type": 2,
       "Value": 4
@@ -48,7 +45,6 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 1918989409,
       "Type": 3,
       "Value": "air,friend,ground,invulnerable,self,vulnerable"

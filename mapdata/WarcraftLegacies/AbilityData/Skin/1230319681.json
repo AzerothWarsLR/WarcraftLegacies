@@ -27,14 +27,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Siege Form"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Immobilizes the Azerite Siege Engine to grant it a powerful ranged attack."
@@ -51,14 +49,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829715809,
       "Type": 3,
       "Value": "Mobile Form"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829781345,
       "Type": 3,
       "Value": "Allows the Azerite Siege Engine to move again."

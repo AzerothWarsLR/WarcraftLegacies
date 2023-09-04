@@ -12,7 +12,6 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Summons an immovable ward that heals 3 mana to friendly units per second. |nLasts 10 seconds."
@@ -24,7 +23,6 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Arcane Ward"

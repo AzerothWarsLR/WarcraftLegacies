@@ -6,14 +6,12 @@
   "Modifications": [
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 1701994849,
       "Type": 2,
       "Value": 1300
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 1935762273,
       "Type": 2,
       "Value": 9
@@ -24,7 +22,6 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 1852072801,
       "Type": 2,
       "Value": 300
@@ -37,7 +34,6 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 1918989409,
       "Type": 3,
       "Value": "invulnerable,nonsapper,structure,vulnerable"

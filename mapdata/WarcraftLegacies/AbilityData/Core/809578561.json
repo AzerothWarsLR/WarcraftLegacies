@@ -7,14 +7,12 @@
   "Modifications": [
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 1852072801,
       "Type": 2,
       "Value": 120
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 1935895905,
       "Value": 250
     },
@@ -27,32 +25,32 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
+      "Pointer": 2,
       "Id": 845964110,
       "Value": 1
     },
     {
       "Level": 1,
-      "Pointer": 1,
+      "Pointer": 3,
       "Id": 862741326,
       "Value": 17
     },
     {
       "Level": 1,
-      "Pointer": 1,
+      "Pointer": 4,
       "Id": 879518542,
       "Type": 2,
       "Value": 1
     },
     {
       "Level": 1,
-      "Pointer": 1,
+      "Pointer": 5,
       "Id": 896295758,
       "Value": 0
     },
     {
       "Level": 1,
-      "Pointer": 1,
+      "Pointer": 6,
       "Id": 913072974,
       "Type": 3,
       "Value": "deathpact"
@@ -80,14 +78,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 1851880033,
       "Type": 2,
       "Value": 700
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 1918989409,
       "Type": 3,
       "Value": "air,ground,nonhero,organic,vulnerable"

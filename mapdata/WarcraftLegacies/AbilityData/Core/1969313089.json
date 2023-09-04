@@ -6,14 +6,12 @@
   "Modifications": [
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 1701994849,
       "Type": 2,
       "Value": 1000
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 1718968929,
       "Type": 3,
       "Value": "B04E"
@@ -31,7 +29,7 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
+      "Pointer": 2,
       "Id": 846553429,
       "Type": 2,
       "Value": 0
@@ -51,7 +49,6 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 1918989409,
       "Type": 3,
       "Value": "ground,air,organic,vuln,invu,friend,neutral"

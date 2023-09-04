@@ -6,42 +6,36 @@
   "Modifications": [
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 1701994849,
       "Type": 2,
       "Value": 500
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 1701994849,
       "Type": 2,
       "Value": 500
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 1701994849,
       "Type": 2,
       "Value": 500
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 1718968929,
       "Type": 3,
       "Value": "B0A7"
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 1718968929,
       "Type": 3,
       "Value": "B0A7"
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 1718968929,
       "Type": 3,
       "Value": "B0A7"
@@ -55,21 +49,21 @@
     },
     {
       "Level": 2,
-      "Pointer": 2,
+      "Pointer": 1,
       "Id": 829253957,
       "Type": 2,
       "Value": 60
     },
     {
       "Level": 3,
-      "Pointer": 3,
+      "Pointer": 1,
       "Id": 829253957,
       "Type": 2,
       "Value": 85
     },
     {
       "Level": 1,
-      "Pointer": 1,
+      "Pointer": 2,
       "Id": 846031173,
       "Type": 2,
       "Value": 30
@@ -83,7 +77,7 @@
     },
     {
       "Level": 3,
-      "Pointer": 3,
+      "Pointer": 2,
       "Id": 846031173,
       "Type": 2,
       "Value": 40
@@ -103,42 +97,36 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 1969514593,
       "Type": 2,
       "Value": 1
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 1969514593,
       "Type": 2,
       "Value": 1
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 1969514593,
       "Type": 2,
       "Value": 1
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 1920296033,
       "Type": 2,
       "Value": 1
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 1920296033,
       "Type": 2,
       "Value": 1
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 1920296033,
       "Type": 2,
       "Value": 1

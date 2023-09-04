@@ -12,7 +12,6 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "The Charred Ancients house tormented forest spirits that lash out at nearby enemies, dealing 10 damage on impact and burning them for 15 per second over 25 seconds."
@@ -24,7 +23,6 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Burning Spirits"

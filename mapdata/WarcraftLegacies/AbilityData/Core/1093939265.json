@@ -7,54 +7,49 @@
   "Modifications": [
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 1852072801,
       "Type": 2,
       "Value": 150
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 1852072801,
       "Type": 2,
       "Value": 150
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 1852072801,
       "Type": 2,
       "Value": 150
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 1935895905,
       "Value": 225
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 1935895905,
       "Value": 300
     },
     {
       "Level": 2,
-      "Pointer": 2,
+      "Pointer": 1,
       "Id": 829383758,
       "Type": 2,
       "Value": 70
     },
     {
       "Level": 3,
-      "Pointer": 3,
+      "Pointer": 1,
       "Id": 829383758,
       "Type": 2,
       "Value": 100
     },
     {
       "Level": 1,
-      "Pointer": 1,
+      "Pointer": 2,
       "Id": 846160974,
       "Value": 2
     },
@@ -66,13 +61,13 @@
     },
     {
       "Level": 3,
-      "Pointer": 3,
+      "Pointer": 2,
       "Id": 846160974,
       "Value": 6
     },
     {
       "Level": 2,
-      "Pointer": 2,
+      "Pointer": 3,
       "Id": 862938190,
       "Type": 2,
       "Value": 120
@@ -86,21 +81,18 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 1969514593,
       "Type": 2,
       "Value": 8
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 1969514593,
       "Type": 2,
       "Value": 8
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 1969514593,
       "Type": 2,
       "Value": 8
@@ -124,56 +116,49 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 1851880033,
       "Type": 2,
       "Value": 400
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 1918989409,
       "Type": 3,
       "Value": "air,ground,organic"
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 1918989409,
       "Type": 3,
       "Value": "air,ground,organic"
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 1918989409,
       "Type": 3,
       "Value": "air,ground,organic"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 1970234446,
       "Type": 3,
       "Value": "nbal"
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 1970234446,
       "Type": 3,
       "Value": "nbal"
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 1970234446,
       "Type": 3,
       "Value": "nbal"
     },
     {
       "Level": 1,
-      "Pointer": 1,
+      "Pointer": 5,
       "Id": 896492622,
       "Type": 2,
       "Value": 0

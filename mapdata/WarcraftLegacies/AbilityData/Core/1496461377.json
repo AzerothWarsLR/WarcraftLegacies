@@ -14,14 +14,14 @@
     },
     {
       "Level": 2,
-      "Pointer": 2,
+      "Pointer": 1,
       "Id": 829125459,
       "Type": 2,
       "Value": 60
     },
     {
       "Level": 3,
-      "Pointer": 3,
+      "Pointer": 1,
       "Id": 829125459,
       "Type": 2,
       "Value": 70
@@ -35,21 +35,21 @@
     },
     {
       "Level": 3,
-      "Pointer": 3,
+      "Pointer": 2,
       "Id": 845902675,
       "Type": 2,
       "Value": 3
     },
     {
       "Level": 1,
-      "Pointer": 1,
+      "Pointer": 3,
       "Id": 862679891,
       "Type": 2,
       "Value": 15
     },
     {
       "Level": 2,
-      "Pointer": 2,
+      "Pointer": 3,
       "Id": 862679891,
       "Type": 2,
       "Value": 15
@@ -63,25 +63,25 @@
     },
     {
       "Level": 2,
-      "Pointer": 2,
+      "Pointer": 4,
       "Id": 879457107,
       "Value": 1
     },
     {
       "Level": 3,
-      "Pointer": 3,
+      "Pointer": 4,
       "Id": 879457107,
       "Value": 1
     },
     {
       "Level": 2,
-      "Pointer": 2,
+      "Pointer": 5,
       "Id": 896234323,
       "Value": 1
     },
     {
       "Level": 3,
-      "Pointer": 3,
+      "Pointer": 5,
       "Id": 896234323,
       "Value": 1
     },
@@ -101,14 +101,12 @@
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 1918989409,
       "Type": 3,
       "Value": "enemy,ally"
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 1918989409,
       "Type": 3,
       "Value": "allies,enemies"

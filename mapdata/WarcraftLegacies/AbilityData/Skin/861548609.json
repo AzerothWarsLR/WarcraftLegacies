@@ -52,42 +52,36 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Frost Storm - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
       "Value": "Frost Storm - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
       "Value": "Frost Storm - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Calls forth waves of frost that explode dealing \u003CA0Z3,DataC1\u003E damage to enemies struck. Each exploding missile deals \u003CA0Z3,DataC1\u003E damage. |nLasts \u003CA0Z3,Dur1\u003E seconds."
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
       "Value": "Calls forth waves of frost that explode dealing \u003CA0Z3,DataC2\u003E damage to enemies struck. Each exploding missile deals \u003CA0Z3,DataC2\u003E damage. |nLasts \u003CA0Z3,Dur2\u003E seconds."
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
       "Value": "Calls forth waves of frost that explode dealing \u003CA0Z3,DataC3\u003E damage to enemies struck. Each exploding missile deals \u003CA0Z3,DataC3\u003E damage. |nLasts \u003CA0Z3,Dur3\u003E seconds."

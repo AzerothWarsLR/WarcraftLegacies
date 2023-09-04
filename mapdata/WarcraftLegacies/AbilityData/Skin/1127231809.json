@@ -76,42 +76,36 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Open a portal to Argus"
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
       "Value": "Slipstream - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
       "Value": "Slipstream - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Opens a two-way portal to Argus at the target location. The portal becomes useable after 10 seconds, and immediately after the caster stops channeling."
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
       "Value": "Opens a two-way portal to the target location within a range of \u003CA00D,Rng2\u003E. The portal becomes useable after 5 seconds, and closes 20 seconds after the caster stops channeling."
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
       "Value": "Opens a two-way portal to the target location within a range of \u003CA00D,Rng3\u003E. The portal becomes useable after 5 seconds, and closes 30 seconds after the caster stops channeling."

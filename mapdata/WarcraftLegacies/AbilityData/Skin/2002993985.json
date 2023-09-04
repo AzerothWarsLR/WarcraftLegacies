@@ -20,14 +20,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "(|cffffcc00W|r) Cold Arrows"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "The freezing arrows, imbued with arcane magics, fire forth, causing 6 additional damage and slowing the target\u0027s movement and attack speed by 30% and 25%, respectively."

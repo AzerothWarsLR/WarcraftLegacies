@@ -30,21 +30,18 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "The hero creates a gigantic Firestorm which causes fire to rain down from the sky burning enemy units. Deals 40 damage per hit for 20 seconds."
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
       "Value": "The hero creates a gigantic Firestorm which causes fire to rain down from the sky burning enemy units. Deals 70 damage per hit for 20 seconds."
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
       "Value": "The hero creates a gigantic Firestorm which causes fire to rain down from the sky burning enemy units. Deals 100 damage per hit for 20 seconds."

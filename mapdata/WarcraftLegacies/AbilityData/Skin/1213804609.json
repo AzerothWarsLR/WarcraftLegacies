@@ -36,14 +36,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Void Tide (|cffffcc00Q|r)"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Sends a gigantic wave which deals 150 damage to each enemy land unit in a line, up to 500 max damage."

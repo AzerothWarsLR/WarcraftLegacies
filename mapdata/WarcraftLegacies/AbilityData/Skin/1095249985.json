@@ -61,14 +61,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Rocket Bombardment"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Bombards an area with 8 waves of rockets. Each wave deals 17 damage to all units in an area."

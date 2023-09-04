@@ -21,7 +21,6 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Creates a shield of frost around a target friendly unit. The shield adds 7 armor and slows melee units that attack it for \u003CACfa,Dur1\u003E seconds. |nLasts \u003CACfa,DataA1\u003E seconds."

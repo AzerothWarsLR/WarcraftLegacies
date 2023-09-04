@@ -50,14 +50,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Mass Animate Dead"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Raises \u003CA04T,DataA1\u003E dead units in an area for \u003CA04T,Dur1\u003E seconds."

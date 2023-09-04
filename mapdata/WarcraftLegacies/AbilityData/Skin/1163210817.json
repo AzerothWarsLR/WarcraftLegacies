@@ -17,7 +17,6 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Removes all buffs from units in a target area and deals 400 damage to summoned units.|r"
@@ -28,7 +27,6 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Necromantic Cleansing"

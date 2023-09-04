@@ -78,14 +78,12 @@
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 1902473831,
       "Type": 3,
       "Value": ""
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 1902473831,
       "Type": 3,
       "Value": ""
@@ -100,7 +98,6 @@
     },
     {
       "Level": 4,
-      "Pointer": 4,
       "Id": 1902473831,
       "Type": 3,
       "Value": "R04R"

@@ -31,7 +31,6 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Safeguard"
@@ -52,21 +51,18 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829715809,
       "Type": 3,
       "Value": "Safeguard"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829781345,
       "Type": 3,
       "Value": "Deactivate to move at normal speed, but take regular damage."
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Activate to take only \u003CA0J6,DataA1,%\u003E% damage from incoming spells, Magic and Piercing attacks. While Safeguard is active, movement speed is reduced by \u003CA0J6,DataC1,%\u003E%."

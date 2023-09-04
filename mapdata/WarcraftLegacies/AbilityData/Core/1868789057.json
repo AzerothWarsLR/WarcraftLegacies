@@ -6,14 +6,14 @@
   "Modifications": [
     {
       "Level": 1,
-      "Pointer": 1,
+      "Pointer": 2,
       "Id": 845243460,
       "Type": 2,
       "Value": 400
     },
     {
       "Level": 1,
-      "Pointer": 1,
+      "Pointer": 4,
       "Id": 878797892,
       "Type": 2,
       "Value": 100
@@ -24,7 +24,7 @@
     },
     {
       "Level": 2,
-      "Pointer": 2,
+      "Pointer": 6,
       "Id": 913269589,
       "Type": 2,
       "Value": 300
@@ -38,28 +38,26 @@
     },
     {
       "Level": 2,
-      "Pointer": 2,
+      "Pointer": 4,
       "Id": 878797892,
       "Type": 2,
       "Value": 200
     },
     {
       "Level": 2,
-      "Pointer": 2,
+      "Pointer": 3,
       "Id": 862020676,
       "Type": 2,
       "Value": 200
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 1851880033,
       "Type": 2,
       "Value": 400
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 1918989409,
       "Type": 3,
       "Value": "air,neutral,enemy"

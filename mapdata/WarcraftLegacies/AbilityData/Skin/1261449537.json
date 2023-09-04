@@ -37,56 +37,48 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Hideous Appendages"
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
       "Value": "Hideous Appendages - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
       "Value": "Hideous Appendages - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
-      "Pointer": 4,
       "Id": 829453409,
       "Type": 3,
       "Value": "Hideous Appendages - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "The Old God has Tentacles which attack nearby enemy units autonomosly. Each Tentacle has the same attack damage as the hero."
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
       "Value": "N\u0027zoth has 6 Tentacles which attack nearby enemy units autonomosly. Each Tentacle has the same attack damage as N\u0027zoth."
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
       "Value": "N\u0027zoth has 7 Tentacles which attack nearby enemy units autonomosly. Each Tentacle has the same attack damage as N\u0027zoth."
     },
     {
       "Level": 4,
-      "Pointer": 4,
       "Id": 828536161,
       "Type": 3,
       "Value": "N\u0027zoth has 8 Tentacles which attack nearby enemy units autonomosly. Each Tentacle has the same attack damage as N\u0027zoth."

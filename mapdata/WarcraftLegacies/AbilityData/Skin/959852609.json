@@ -56,14 +56,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Weighted Spear"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Hurls a weighted spear at the target unit that deals \u003CA069,DataA1\u003E damage and stuns for \u003CA069,Dur1\u003E. Lasts \u003CA069,HeroDur1\u003E against heroes."

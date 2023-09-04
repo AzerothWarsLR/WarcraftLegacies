@@ -31,35 +31,30 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Death And Decay - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
       "Value": "Death And Decay - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
       "Value": "Death And Decay - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
       "Value": "Damages everything in its area of effect by \u003CAUdd,DataA2,%\u003E% of its base hit points per second. Also destroys trees. |nLasts \u003CAUdd,Dur2\u003E seconds."
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
       "Value": "Damages everything in its area of effect by \u003CAUdd,DataA3,%\u003E% of its base hit points per second. Also destroys trees. |nLasts \u003CAUdd,Dur3\u003E seconds."

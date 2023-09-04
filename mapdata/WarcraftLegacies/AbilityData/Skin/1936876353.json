@@ -16,7 +16,6 @@
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
       "Value": "Curses a target enemy unit, causing it to have a \u003CAcrs,DataA2,%\u003E% chance to miss on an attack. |nLasts \u003CAcrs,Dur2\u003E seconds."

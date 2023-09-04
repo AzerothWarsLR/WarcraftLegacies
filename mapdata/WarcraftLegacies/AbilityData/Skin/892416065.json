@@ -50,42 +50,36 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Roar of Despair - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
       "Value": "Roar of Despair - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
       "Value": "Roar of Despair - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "The hero unleashes devastating roar that reduces attack damage of all nearby enemy units by 200%. for 6 seconds. Lasts 3 second on heroes."
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
       "Value": "The hero unleashes devastating roar that reduces attack damage of all nearby enemy units by 200% for 12 seconds. Lasts 6 second on heroes."
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
       "Value": "The hero unleashes devastating roar that reduces attack damage of all nearby enemy units by 300% for 18 seconds. Lasts 9 second on heroes."

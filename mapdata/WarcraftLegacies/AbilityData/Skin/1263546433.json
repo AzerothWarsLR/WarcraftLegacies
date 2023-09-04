@@ -57,56 +57,48 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Aimed Shot - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
       "Value": "Aimed Shot - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
       "Value": "Aimed Shot - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
-      "Pointer": 4,
       "Id": 829453409,
       "Type": 3,
       "Value": "Aimed Shot - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Fires an enchanted arrow at an enemy target, dealing 150 damage and stunning the target for 4 seconds. Lasts 1 second on heroes."
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
       "Value": "Fires an enchanted arrow at an enemy target, dealing 225 damage and stunning the target for 5 seconds. Lasts 1.3 second on heroes."
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
       "Value": "Fires an enchanted arrow at an enemy target, dealing 300 damage and stunning the target for 6 seconds. Lasts 1.6 second on heroes."
     },
     {
       "Level": 4,
-      "Pointer": 4,
       "Id": 828536161,
       "Type": 3,
       "Value": "Fires an enchanted arrow at an enemy target, dealing 375 damage and stunning the target for 7 seconds. Lasts 2 seconds on heroes."

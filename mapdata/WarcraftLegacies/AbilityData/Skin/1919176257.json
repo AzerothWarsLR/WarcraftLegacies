@@ -35,14 +35,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Nullify - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Absorbs the essence of a target enemy unit by taking \u003CANdr,DataA1\u003E hit points per second and 10  mana points per second from it and giving them to the Voidwalker. |nLasts \u003CANdr,Dur1\u003E seconds."

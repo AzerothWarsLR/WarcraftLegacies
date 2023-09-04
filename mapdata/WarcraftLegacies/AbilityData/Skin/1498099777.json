@@ -7,14 +7,12 @@
   "Modifications": [
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "The Generator will need one of the following power sources to power the Dimensional Ship:|n-The Eye of Sargeras|n-The Book of Medivh|n-A Vial of the Sunwell|n-The Crown of the Triumvirate|n-Sulfuras, Hand of Ragnaros|n-The Helm of Domination"
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
       "Value": "Increases the rate at which this unit gathers lumber."
@@ -31,7 +29,6 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Power Sources"

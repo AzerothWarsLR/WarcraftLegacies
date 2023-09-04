@@ -6,70 +6,60 @@
   "Modifications": [
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829579642,
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNOrcMeleeUpOne.blp"
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 829579642,
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNOrcMeleeUpTwo.blp"
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 829579642,
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNOrcMeleeUpThree.blp"
     },
     {
       "Level": 4,
-      "Pointer": 4,
       "Id": 829579642,
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNOrcMeleeUpThree.blp"
     },
     {
       "Level": 5,
-      "Pointer": 5,
       "Id": 829579642,
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNOrcMeleeUpThree.blp"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 846356858,
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNOrcMeleeUpOne.blp"
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 846356858,
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNOrcMeleeUpTwo.blp"
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 846356858,
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNOrcMeleeUpThree.blp"
     },
     {
       "Level": 4,
-      "Pointer": 4,
       "Id": 846356858,
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNOrcMeleeUpThree.blp"
     },
     {
       "Level": 5,
-      "Pointer": 5,
       "Id": 846356858,
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNOrcMeleeUpThree.blp"
@@ -100,14 +90,12 @@
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 1902473831,
       "Type": 3,
       "Value": ""
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 1902473831,
       "Type": 3,
       "Value": ""

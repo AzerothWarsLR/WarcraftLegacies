@@ -17,7 +17,6 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Gives a \u003CA0G1,DataA1\u003E% chance that an attack will deal \u003CA0G1,DataB1\u003E damage to nearby units."

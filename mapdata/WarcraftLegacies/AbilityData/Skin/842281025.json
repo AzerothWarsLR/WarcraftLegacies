@@ -51,14 +51,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Summon Voidwalkers"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "The Voidcaller summons 3 Voidwalkers to fight for him. The Voidwalkers have Frost Attack"

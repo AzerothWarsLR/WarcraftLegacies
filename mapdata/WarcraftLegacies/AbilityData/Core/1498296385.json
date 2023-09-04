@@ -14,21 +14,20 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
+      "Pointer": 2,
       "Id": 845243460,
       "Type": 2,
       "Value": 225
     },
     {
       "Level": 1,
-      "Pointer": 1,
+      "Pointer": 4,
       "Id": 878797892,
       "Type": 2,
       "Value": 90
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 1918989409,
       "Type": 3,
       "Value": "debris,enemies,ground,player,structure"

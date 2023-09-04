@@ -16,28 +16,24 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Increases nearby friendly units\u0027 movement speed by 4% and attack rate by 4%."
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
       "Value": "Increases nearby friendly units\u0027 movement speed by 8% and attack rate by 8%."
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
       "Value": "Increases nearby friendly units\u0027 movement speed by 12% and attack rate by 12%."
     },
     {
       "Level": 4,
-      "Pointer": 4,
       "Id": 828536161,
       "Type": 3,
       "Value": "Increases nearby friendly units\u0027 movement speed by 16% and attack rate by 16%."

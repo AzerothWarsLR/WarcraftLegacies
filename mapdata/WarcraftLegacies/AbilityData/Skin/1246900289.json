@@ -32,35 +32,30 @@
     },
     {
       "Level": 4,
-      "Pointer": 4,
       "Id": 829453409,
       "Type": 3,
       "Value": "Exploding Cocktail - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Throws an exploding cocktail at a target enemy unit, dealing 150 damage and stunning the target for 4 seconds. Lasts 1 second on heroes."
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
       "Value": "Throws an exploding cocktail at a target enemy unit, dealing 225 damage and stunning the target for 5 seconds. Lasts 1.5 seconds on heroes."
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
       "Value": "Throws an exploding cocktail at a target enemy unit, dealing 300 damage and stunning the target for 6 seconds. Lasts 2 seconds on heroes."
     },
     {
       "Level": 4,
-      "Pointer": 4,
       "Id": 828536161,
       "Type": 3,
       "Value": "Throws an exploding cocktail at a target enemy unit, dealing 375 damage and stunning the target for 7 seconds. Lasts 2.5 seconds on heroes."
@@ -77,21 +72,18 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Exploding Cocktail - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
       "Value": "Exploding Cocktail - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
       "Value": "Exploding Cocktail - [|cffffcc00Level 3|r]"

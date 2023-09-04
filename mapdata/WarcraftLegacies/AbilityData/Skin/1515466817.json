@@ -47,49 +47,42 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Activate Voodoo Restoration - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
       "Value": "Activate Voodoo Restoration - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
       "Value": "Activate Voodoo Restoration - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
-      "Pointer": 4,
       "Id": 829453409,
       "Type": 3,
       "Value": "Activate Voodoo Restoration - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
       "Value": "Activate Voodoo Restoration, healing units within a range of 350 for 35 health per second.|nDrains mana until deactivated."
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
       "Value": "Activate Voodoo Restoration, healing units within a range of 350 for 45 health per second.|nDrains mana until deactivated."
     },
     {
       "Level": 4,
-      "Pointer": 4,
       "Id": 828536161,
       "Type": 3,
       "Value": "Activate Voodoo Restoration, healing units within a range of 350 for 55 health per second.|nDrains mana until deactivated."
@@ -106,21 +99,18 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829715809,
       "Type": 3,
       "Value": "Deactivate Voodoo Restoration"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829781345,
       "Type": 3,
       "Value": "Deactivate Voodoo Restoration to stop draining mana."
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Activate Voodoo Restoration, healing units within a range of 350 for 25 health per second.|nDrains mana until deactivated."

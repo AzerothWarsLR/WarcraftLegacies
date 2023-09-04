@@ -59,42 +59,36 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Activate Divine Storm - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
       "Value": "Activate Divine Storm - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
       "Value": "Activate Divine Storm - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Activate Divine Storm to engulf this unit in divine flames, causing 35 damage per second to nearby enemy land units. |nDrains mana until deactivated."
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
       "Value": "Activate Divine Storm to engulf this unit in divine flames, causing 60 damage per second to nearby enemy land units. |nDrains mana until deactivated."
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
       "Value": "Activate Divine Storm to engulf this unit in divine flames, causing 85 damage per second to nearby enemy land units. |nDrains mana until deactivated."
@@ -115,28 +109,24 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829715809,
       "Type": 3,
       "Value": "Deactivate Divine Storm - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 829715809,
       "Type": 3,
       "Value": "Deactivate Divine Storm - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 829715809,
       "Type": 3,
       "Value": "Deactivate Divine Storm - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829781345,
       "Type": 3,
       "Value": "Deactivate Divine Storm to stop draining mana."

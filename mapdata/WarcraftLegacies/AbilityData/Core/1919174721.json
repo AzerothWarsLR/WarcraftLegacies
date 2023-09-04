@@ -6,55 +6,52 @@
   "Modifications": [
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 1852072801,
       "Type": 2,
       "Value": 25
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 1935895905,
       "Value": 0
     },
     {
       "Level": 1,
-      "Pointer": 1,
+      "Pointer": 2,
       "Id": 846357582,
       "Type": 2,
       "Value": 0
     },
     {
       "Level": 1,
-      "Pointer": 1,
+      "Pointer": 3,
       "Id": 863134798,
       "Type": 2,
       "Value": 30
     },
     {
       "Level": 1,
-      "Pointer": 1,
+      "Pointer": 5,
       "Id": 896689230,
       "Type": 2,
       "Value": 0
     },
     {
       "Level": 1,
-      "Pointer": 1,
+      "Pointer": 8,
       "Id": 947020878,
       "Type": 2,
       "Value": 0
     },
     {
       "Level": 1,
-      "Pointer": 1,
+      "Pointer": 9,
       "Id": 963798094,
       "Type": 2,
       "Value": 0
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 1920296033,
       "Type": 2,
       "Value": 60
@@ -65,7 +62,6 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 1969514593,
       "Type": 2,
       "Value": 60
@@ -76,14 +72,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 1851880033,
       "Type": 2,
       "Value": 2000
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 1918989409,
       "Type": 3,
       "Value": "air,alive,allies,ancient,bridge,dead,debris,decoration,enemies,friend,ground,hero,invulnerable,item,mechanical,neutral,nonancient,nonhero,nonsapper,notself,organic,player,structure,sapper,terrain,vulnerable,wall,ward"

@@ -7,14 +7,12 @@
   "Modifications": [
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 1852072801,
       "Type": 2,
       "Value": 60
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 1935895905,
       "Value": 180
     },
@@ -27,13 +25,13 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
+      "Pointer": 3,
       "Id": 863200078,
       "Value": 8
     },
     {
       "Level": 1,
-      "Pointer": 1,
+      "Pointer": 4,
       "Id": 879977294,
       "Type": 2,
       "Value": 900
@@ -53,21 +51,19 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 1918989409,
       "Type": 3,
       "Value": "air,ground,organic"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 1851880033,
       "Type": 2,
       "Value": 700
     },
     {
       "Level": 1,
-      "Pointer": 1,
+      "Pointer": 6,
       "Id": 913533006,
       "Value": 8
     }

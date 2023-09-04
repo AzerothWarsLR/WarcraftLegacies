@@ -36,14 +36,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Greater Holy Fire"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Blasts enemy units with a wave of holy fire that deals \u003CA0T1,DataB1\u003E damage to the target, and \u003CA0T1,DataA1\u003E nova damage."

@@ -50,56 +50,48 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Murder of Crows - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
       "Value": "Murder of Crows - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
       "Value": "Murder of Crows - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
-      "Pointer": 4,
       "Id": 829453409,
       "Type": 3,
       "Value": "Murder of Crows - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
       "Value": "Summons \u003CA0BS,DataB2\u003E Crows. Each Crow has \u003Ce00C,realHP\u003E hit points and deals \u003Ce00C,mindmg2\u003E - \u003Ce00C,maxdmg2\u003E damage. |nLasts \u003CA0BS,Dur2\u003E seconds. |n|n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
       "Value": "Summons \u003CA0BS,DataB3\u003E Crows. Each Crow has \u003Ce00C,realHP\u003E hit points and deals \u003Ce00C,mindmg3\u003E - \u003Ce00C,maxdmg3\u003E damage. |nLasts \u003CA0BS,Dur3\u003E seconds. |n|n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Level": 4,
-      "Pointer": 4,
       "Id": 828536161,
       "Type": 3,
       "Value": "Summons \u003CA0BS,DataB4\u003E Crows. Each Crow has \u003Ce00C,realHP\u003E hit points and deals \u003Ce00C,mindmg4\u003E - \u003Ce00C,maxdmg4\u003E damage. |nLasts \u003CA0BS,Dur4\u003E seconds. |n|n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Summons \u003CA0BS,DataB1\u003E Crows. Each Crow has \u003Ce00C,realHP\u003E hit points and deals \u003Ce00C,mindmg1\u003E - \u003Ce00C,maxdmg1\u003E damage. |nLasts \u003CA0BS,Dur1\u003E seconds. |n|n|cffffcc00Attacks land and air units.|r"

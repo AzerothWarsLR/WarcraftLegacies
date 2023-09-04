@@ -32,14 +32,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Carrion Swarm"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Sends a horde of bats to deal \u003CA0XZ,DataA1\u003E damage to each enemy unit in a cone, up to a maximum of \u003CA0XZ,DataB1\u003E total damage. "

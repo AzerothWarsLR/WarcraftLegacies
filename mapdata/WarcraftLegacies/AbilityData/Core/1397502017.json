@@ -7,48 +7,43 @@
   "Modifications": [
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 1701994849,
       "Type": 2,
       "Value": 100
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 1718968929,
       "Type": 3,
       "Value": "BUcs"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 1852072801,
       "Type": 2,
       "Value": 15
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 1852072801,
       "Type": 2,
       "Value": 20
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 1935895905,
       "Value": 125
     },
     {
       "Level": 2,
-      "Pointer": 2,
+      "Pointer": 1,
       "Id": 829645653,
       "Type": 2,
       "Value": 125
     },
     {
       "Level": 1,
-      "Pointer": 1,
+      "Pointer": 2,
       "Id": 846422869,
       "Type": 2,
       "Value": 10000
@@ -62,14 +57,14 @@
     },
     {
       "Level": 2,
-      "Pointer": 2,
+      "Pointer": 3,
       "Id": 863200085,
       "Type": 2,
       "Value": 700
     },
     {
       "Level": 2,
-      "Pointer": 2,
+      "Pointer": 4,
       "Id": 879977301,
       "Type": 2,
       "Value": 300
@@ -81,21 +76,18 @@
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 1851880033,
       "Type": 2,
       "Value": 700
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 1918989409,
       "Type": 3,
       "Value": "enemies,ground,neutral,structure"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 1918989409,
       "Type": 3,
       "Value": "enemies,ground,neutral,structure"
@@ -109,7 +101,7 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
+      "Pointer": 4,
       "Id": 879977301,
       "Type": 2,
       "Value": 200
@@ -120,13 +112,11 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 1935895905,
       "Value": 0
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 1701994849,
       "Type": 2,
       "Value": 60

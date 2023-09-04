@@ -7,21 +7,18 @@
   "Modifications": [
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 1718968929,
       "Type": 3,
       "Value": "B0AE"
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 1718968929,
       "Type": 3,
       "Value": "B0AE"
     },
     {
       "Level": 4,
-      "Pointer": 4,
       "Id": 1718968929,
       "Type": 3,
       "Value": "BHds"
@@ -32,80 +29,68 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 1852072801,
       "Type": 2,
       "Value": 45
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 1852072801,
       "Type": 2,
       "Value": 45
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 1852072801,
       "Type": 2,
       "Value": 45
     },
     {
       "Level": 4,
-      "Pointer": 4,
       "Id": 1852072801,
       "Type": 2,
       "Value": 45
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 1935895905,
       "Value": 75
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 1935895905,
       "Value": 75
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 1935895905,
       "Value": 75
     },
     {
       "Level": 4,
-      "Pointer": 4,
       "Id": 1935895905,
       "Value": 75
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 1920296033,
       "Type": 2,
       "Value": 12
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 1920296033,
       "Type": 2,
       "Value": 18
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 1920296033,
       "Type": 2,
       "Value": 24
     },
     {
       "Level": 4,
-      "Pointer": 4,
       "Id": 1920296033,
       "Type": 2,
       "Value": 20
@@ -116,28 +101,24 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 1969514593,
       "Type": 2,
       "Value": 12
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 1969514593,
       "Type": 2,
       "Value": 18
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 1969514593,
       "Type": 2,
       "Value": 24
     },
     {
       "Level": 4,
-      "Pointer": 4,
       "Id": 1969514593,
       "Type": 2,
       "Value": 20
@@ -153,21 +134,18 @@
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 1918989409,
       "Type": 3,
       "Value": "vuln,invu"
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 1918989409,
       "Type": 3,
       "Value": "vuln,invu"
     },
     {
       "Level": 4,
-      "Pointer": 4,
       "Id": 1918989409,
       "Type": 3,
       "Value": "vuln,invu"
@@ -182,7 +160,6 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 1718968929,
       "Type": 3,
       "Value": "B0AE"

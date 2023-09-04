@@ -21,42 +21,36 @@
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
       "Value": "Harvests lumber from trees."
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 829715809,
       "Type": 3,
       "Value": "Return Resources"
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 829781345,
       "Type": 3,
       "Value": "Return the carried resources."
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
       "Value": "Gather"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Harvests lumber from trees."
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829781345,
       "Type": 3,
       "Value": "Return the carried resources."

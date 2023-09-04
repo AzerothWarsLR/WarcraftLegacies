@@ -46,14 +46,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Maelstrom Storm Aura"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Sailing near the Maelstrom degrades ships, decreasing their movement speed by 35%. Constant storms steadily damage ships. "

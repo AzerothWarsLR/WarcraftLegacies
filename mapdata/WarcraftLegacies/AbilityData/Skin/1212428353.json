@@ -32,14 +32,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Web"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Binds a target enemy unit in webbing, forcing it to the ground. Webbed units can be hit as though they were land units. |nLasts \u003CAweb,Dur1\u003E seconds."

@@ -7,7 +7,6 @@
   "Modifications": [
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829579623,
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNRanger.blp"
@@ -18,35 +17,30 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 1718840935,
       "Type": 3,
       "Value": "(Arathor-T3)"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829122663,
       "Type": 3,
       "Value": "X"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 1835101799,
       "Type": 3,
       "Value": "Expedition Survivors"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453415,
       "Type": 3,
       "Value": "Research Expedition Survivors"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536167,
       "Type": 3,
       "Value": "Survivors of the Alliance Expedition into Draenor, returning to arms to once again defend Azeroth.|n|n-Allows training of |cffcece00Marksmen |rin place of |cffcece00Spearmen|r with the following changes:|n|n- Damage increased by 9.|n|n- Range increased by 150.|n|n- Movement Speed increased by 20.|n|n- Health increased by 50.|n|n Marksmen have the following abilities:|n|n|cffcece00Critical Strike|r - Gives a 15% chance to do 2 times normal damage on an attack.|n|cffcece00|nFire Arrows|r - Deals 2 bonus damage and burns the target dealing 8 bonus fire damage every second for 4 seconds. |n|cffcece00|nFeedback|r - Attacks combust \u003CA0UJ,DataA1\u003E mana per hit dealing damage to the attacked unit equal to the mana destroyed."

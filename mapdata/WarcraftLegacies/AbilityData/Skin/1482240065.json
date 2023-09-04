@@ -84,42 +84,36 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Ancestral Legion - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
       "Value": "Ancestral Legion - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
       "Value": "Ancestral Legion - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Whenever a Tauren unit dies anywhere on the map, Cairne remembers it. When Ancestral Legion is cast, Cairne summons up to 18 remembered Tauren as Ancestors for 60 seconds. Each Ancestor has 30% additional damage and health."
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
       "Value": "Whenever a Tauren unit dies anywhere on the map, Cairne remembers it. When Ancestral Legion is cast, Cairne summons up to 24 remembered Tauren as Ancestors for 60 seconds. Each Ancestor has 40% additional damage and health."
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
       "Value": "Whenever a Tauren unit dies anywhere on the map, Cairne remembers it. When Ancestral Legion is cast,  Cairne summons up to 30 remembered Tauren as Ancestors for 60 seconds. Each Ancestor has 50% additional damage and health."

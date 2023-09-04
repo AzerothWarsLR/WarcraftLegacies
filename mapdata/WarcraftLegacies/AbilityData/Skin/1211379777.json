@@ -80,56 +80,48 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Resurgent Flame Strike - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
       "Value": "Resurgent Flame Strike - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
       "Value": "Resurgent Flame Strike - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
-      "Pointer": 4,
       "Id": 829453409,
       "Type": 3,
       "Value": "Resurgent Flame Strike - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Conjures a pillar of flame that burns ground units for \u003CA0F9,DataA1\u003E damage a second for \u003CA0F9,HeroDur1\u003E seconds. The pillar of flame subsides after \u003CA0F9,Dur1\u003E seconds, during which units within continue to take \u003CA0F9,DataC1\u003E damage per second. The first two times the pillar subsides, it resurges again for the same duration."
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
       "Value": "Conjures a pillar of flame that burns ground units for \u003CA0F9,DataA2\u003E damage a second for \u003CA0F9,HeroDur2\u003E seconds. The pillar of flame subsides after \u003CA0F9,Dur2\u003E seconds, during which units within continue to take \u003CA0F9,DataC2\u003E damage per second. The first two times the pillar subsides, it resurges again for the same duration."
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
       "Value": "Conjures a pillar of flame that burns ground units for \u003CA0F9,DataA3\u003E damage a second for \u003CA0F9,HeroDur3\u003E seconds. The pillar of flame subsides after \u003CA0F9,Dur3\u003E seconds, during which units within continue to take \u003CA0F9,DataC3\u003E damage per second. The first two times the pillar subsides, it resurges again for the same duration."
     },
     {
       "Level": 4,
-      "Pointer": 4,
       "Id": 828536161,
       "Type": 3,
       "Value": "Conjures a pillar of flame that burns ground units for \u003CA0F9,DataA4\u003E damage a second for \u003CA0F9,HeroDur4\u003E seconds. The pillar of flame subsides after \u003CA0F9,Dur4\u003E seconds, during which units within continue to take \u003CA0F9,DataC4\u003E damage per second. The first two times the pillar subsides, it resurges again for the same duration."

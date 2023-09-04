@@ -7,21 +7,18 @@
   "Modifications": [
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Gives 2 additional armor to nearby player units. |n|n|cffd45e19This aura stacks for each different type of unit that has it.|r"
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
       "Value": "\u002B2*2 armor"
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
       "Value": "\u002B2*3 armor"
@@ -38,7 +35,6 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "United for the Cause"

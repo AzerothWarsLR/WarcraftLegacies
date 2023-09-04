@@ -84,42 +84,36 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Siphoning Ritual - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
       "Value": "Siphoning Ritual - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
       "Value": "Siphoning Ritual - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Drains 40 hit points and 20 mana per second from up to 24 units in the target area for \u003CA0FA,DataA1\u003E seconds. Only drains hit points and mana from friendly units if the caster needs it."
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
       "Value": "Drains 50 hit points and 25 mana per second from up to 24 units in the target area for \u003CA0FA,DataA2\u003E seconds. Only drains hit points and mana from friendly units if the caster needs it."
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
       "Value": "Drains 60 hit points and 30 mana per second from up to 24 units in the target area for \u003CA0FA,DataA3\u003E seconds. Only drains hit points and mana from friendly units if the caster needs it."

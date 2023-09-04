@@ -51,14 +51,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Summon Reef Elementals"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Summons 2 Reef Elementals that have the Crushing Wave Ability. Lasts 90 seconds."

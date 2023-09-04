@@ -7,21 +7,18 @@
   "Modifications": [
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 1835101799,
       "Type": 3,
       "Value": "Improved Moonwells"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453415,
       "Type": 3,
       "Value": "Research Improved Moonwells"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829122663,
       "Type": 3,
       "Value": "F"
@@ -32,14 +29,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 1718840935,
       "Type": 3,
       "Value": "(Druids)"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536167,
       "Type": 3,
       "Value": "Increases the amount of mana that can be stored in Moon Wells by 175, and their rate of mana regeneration by 5%."

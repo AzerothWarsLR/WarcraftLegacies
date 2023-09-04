@@ -17,7 +17,6 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Sacrifices a target friendly unit. All nearby units gain Unholy Frenzy, increasing attack rate by \u003CAuuf,DataA1,%\u003E% but draining them of \u003CAuuf,DataB1\u003E hit points per second. |nLasts \u003CAuuf,Dur1\u003E seconds."

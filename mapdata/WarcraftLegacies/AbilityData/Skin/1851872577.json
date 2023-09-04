@@ -39,56 +39,48 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Animate Dead - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
       "Value": "Animate Dead - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
       "Value": "Animate Dead - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
-      "Pointer": 4,
       "Id": 829453409,
       "Type": 3,
       "Value": "Animate Dead - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Raises \u003CAUan,DataA1\u003E units in an area to fight for the caster for 60 seconds. Animated units retain upgrades and are vulnerable."
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
       "Value": "Raises \u003CAUan,DataA2\u003E units in an area to fight for the caster for 60 seconds. Animated units retain upgrades and are vulnerable."
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
       "Value": "Raises \u003CAUan,DataA3\u003E units in an area to fight for the caster for 60 seconds. Animated units retain upgrades and are vulnerable."
     },
     {
       "Level": 4,
-      "Pointer": 4,
       "Id": 828536161,
       "Type": 3,
       "Value": "Raises \u003CAUan,DataA4\u003E units in an area to fight for caster for 60 seconds. Animated units retain upgrades and are vulnerable."

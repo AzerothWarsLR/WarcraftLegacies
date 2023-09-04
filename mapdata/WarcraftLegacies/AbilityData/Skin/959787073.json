@@ -21,14 +21,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Death Pact"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Kills a target friendly Undead unit, giving 125% of its hit points to the Death Knight and 10% of it\u0027s hitpoints in mana."

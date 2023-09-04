@@ -50,56 +50,48 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Promise of Fortune - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
       "Value": "Promise of Fortune - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
       "Value": "Promise of Fortune - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
-      "Pointer": 4,
       "Id": 829453409,
       "Type": 3,
       "Value": "Promise of Fortune - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Empower nearby friendly units, increasing their damage by \u003CA0M2,DataA1,%\u003E% and armor by \u003CA0M2,DataB1\u003E for \u003CA0M2,Dur1\u003E seconds."
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
       "Value": "Empower nearby friendly units, increasing their damage by \u003CA0M2,DataA2,%\u003E% and armor by \u003CA0M2,DataB2\u003E for \u003CA0M2,Dur2\u003E seconds."
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
       "Value": "Empower nearby friendly units, increasing their damage by \u003CA0M2,DataA3,%\u003E% and armor by \u003CA0M2,DataB3\u003E for \u003CA0M2,Dur3\u003E seconds."
     },
     {
       "Level": 4,
-      "Pointer": 4,
       "Id": 828536161,
       "Type": 3,
       "Value": "Empower nearby friendly units, increasing their damage by \u003CA0M2,DataA4,%\u003E% and armor by \u003CA0M2,DataB4\u003E for \u003CA0M2,Dur4\u003E seconds."

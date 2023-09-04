@@ -15,14 +15,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Spirit of Vengeance - |cffffcc00(W)|r"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Raises an feral spirit from a corpse. Lasts \u003CAvng,Dur1\u003E seconds or until the avatar dies."

@@ -55,14 +55,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Warplate"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Reduces all attacks on the unit by \u003CA087,DataC1\u003E damage. Attacks cannot be reduced below \u003CA087,DataB1\u003E damage."

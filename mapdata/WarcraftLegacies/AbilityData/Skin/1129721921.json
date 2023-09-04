@@ -32,42 +32,36 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Viral Plague - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
       "Value": "Viral Plague - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
       "Value": "Viral Plague - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Corrupt the blood of a target unit with a nasty plague. The afflicted unit cannot cast spells and will take \u003CA04A,DataA1\u003E damage per second. Upon its death, 1 Elite Abomination will spawn from its corpse. Viral Plague cannot be dispelled or cancelled.|nLasts 8 seconds on heroes and indefinitely on units."
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
       "Value": "Corrupt the blood of a target unit with a nasty plague. The afflicted unit cannot cast spells and will take \u003CA04A,DataA2\u003E damage per second. Upon its death, 2 Elite Abominations will spawn from its corpse. Viral Plague cannot be dispelled or cancelled.|nLasts 8 seconds on heroes and indefinitely on units."
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
       "Value": "Corrupt the blood of a target unit with a nasty plague. The afflicted unit cannot cast spells and will take \u003CA04A,DataA3\u003E damage per second. Upon its death, 4 Elite Abominations will spawn from its corpse. Viral Plague cannot be dispelled or cancelled.|nLasts 8 seconds on heroes and indefinitely on units."

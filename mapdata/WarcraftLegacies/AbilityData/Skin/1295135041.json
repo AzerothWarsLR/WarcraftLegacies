@@ -16,7 +16,6 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Gives additional mana regeneration to nearby friendly units of 100 mana per second."

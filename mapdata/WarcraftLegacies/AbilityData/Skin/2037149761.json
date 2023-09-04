@@ -16,21 +16,18 @@
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
       "Value": "Enhanced Polymorph"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Turns a target enemy unit into a sheep. The targeted unit retains its hit points and armor, but cannot attack. |nCannot be cast on Heroes. |n|cffffcc00Lasts \u003CAply,Dur1\u003E seconds."
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
       "Value": "Turns a target enemy unit into a sheep. The targeted unit retains its hit points and armor, but cannot attack. |nCannot be cast on Heroes. |n|cffffcc00Lasts \u003CAply,Dur2\u003E seconds."

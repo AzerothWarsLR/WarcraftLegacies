@@ -17,14 +17,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Creates a shield of frost around a target friendly unit. The shield adds 4 armor and slows melee units that attack it for 5 seconds. |nLasts 45 seconds."
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Mass Frost Armor"

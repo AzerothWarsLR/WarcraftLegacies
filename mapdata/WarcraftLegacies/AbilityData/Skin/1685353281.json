@@ -11,7 +11,6 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Releases garrisoned units and has them return to their previous task."

@@ -22,7 +22,6 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Napalm"
@@ -33,7 +32,6 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Conjures a pillar of flame that burns ground units for 15 damage a second for 2 seconds. As the pillar of flame subsides, units within the fire continue to take minor damage."

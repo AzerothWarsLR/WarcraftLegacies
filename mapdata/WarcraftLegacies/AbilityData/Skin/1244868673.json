@@ -35,35 +35,30 @@
     },
     {
       "Level": 4,
-      "Pointer": 4,
       "Id": 829453409,
       "Type": 3,
       "Value": "Black Arrow - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Adds \u003CANba,DataA1\u003E bonus damage to attacks. Units killed while under the effect of Black Arrow will turn into 1 skeletons."
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
       "Value": "Adds \u003CANba,DataA2\u003E bonus damage to attacks. Units killed while under the effect of Black Arrow will turn into 2 skeletons."
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
       "Value": "Adds \u003CANba,DataA3\u003E bonus damage to attacks. Units killed while under the effect of Black Arrow will turn into 3 skeletons."
     },
     {
       "Level": 4,
-      "Pointer": 4,
       "Id": 828536161,
       "Type": 3,
       "Value": "Adds 20 bonus damage to attacks. Units killed while under the effect of Black Arrow will turn into 4 skeletons."

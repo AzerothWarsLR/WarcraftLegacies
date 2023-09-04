@@ -72,56 +72,48 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Bile Shot"
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
       "Value": "Corpse Explosion (|cffffcc00Q|r) - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
       "Value": "Corpse Explosion (|cffffcc00Q|r) - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
-      "Pointer": 4,
       "Id": 829453409,
       "Type": 3,
       "Value": "Corpse Explosion (|cffffcc00Q|r) - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Blasts enemy units with a wave of plague that deals 50 damage to the target, and 75 nova damage. Plague damage slows units\u0027 movement for 4 seconds."
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
       "Value": "Blasts enemy units with a wave of plague that deals 125 damage to the target, and 150 nova damage. Plague damage slows units\u0027 movement for 4 seconds."
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
       "Value": "Blasts enemy units with a wave of plague that deals 150 damage to the target, and 200 nova damage. Plague damage slows units\u0027 movement for 4 seconds."
     },
     {
       "Level": 4,
-      "Pointer": 4,
       "Id": 828536161,
       "Type": 3,
       "Value": "Blasts enemy units with a wave of plague that deals 175 damage to the target, and 250 nova damage. Plague damage slows units\u0027 movement for 4 seconds."

@@ -42,35 +42,30 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Make It Rain - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
       "Value": "Make It Rain - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
       "Value": "Make It Rain - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
-      "Pointer": 4,
       "Id": 829453409,
       "Type": 3,
       "Value": "Make It Rain - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 4,
-      "Pointer": 4,
       "Id": 828536161,
       "Type": 3,
       "Value": "Calls down waves of cannonballs that damage units in an area. Each wave deals \u003CA0GW,DataB4\u003E damage. |nLasts for \u003CA0GW,DataA4\u003E waves."
@@ -86,21 +81,18 @@
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
       "Value": "Calls down waves of cannonballs that damage units in an area. Each wave deals \u003CA0GW,DataB2\u003E damage. |nLasts for \u003CA0GW,DataA2\u003E waves."
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
       "Value": "Calls down waves of cannonballs that damage units in an area. Each wave deals \u003CA0GW,DataB3\u003E damage. |nLasts for \u003CA0GW,DataA3\u003E waves."
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Calls down waves of cannonballs that damage units in an area. Each wave deals \u003CA0GW,DataB1\u003E damage. |nLasts for \u003CA0GW,DataA1\u003E waves."

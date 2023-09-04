@@ -46,42 +46,36 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Mind Destruction - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Instantly turns a creature mind inside-out, destroying it utterly. |n|cffffcc00Level 1|r - 800 damage."
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
       "Value": "Instantly turns a creature mind inside-out, destroying it utterly. |n|cffffcc00Level 2|r - 950 damage."
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
       "Value": "Instantly turns a creature mind inside-out, destroying it utterly. |n|cffffcc00Level 3|r - 1100 damage."
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
       "Value": "Mind Destruction - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
       "Value": "Mind Destruction - [|cffffcc00Level 3|r]"

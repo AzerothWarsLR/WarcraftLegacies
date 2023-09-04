@@ -46,14 +46,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Portable Turret"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Creates a turret which automatically attack your enemies.|n|nTurrets have 300 hit points and deals piercing damage every 0.2 seconds. |nTurret lasts 40 seconds. |n|n|cffffcc00Turrets attack land and air units.|r"

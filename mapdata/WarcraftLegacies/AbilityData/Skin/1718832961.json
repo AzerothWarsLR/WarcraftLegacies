@@ -21,49 +21,42 @@
     },
     {
       "Level": 4,
-      "Pointer": 4,
       "Id": 829453409,
       "Type": 3,
       "Value": "Feral Spirit - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 5,
-      "Pointer": 5,
       "Id": 829453409,
       "Type": 3,
       "Value": "Feral Spirit - [|cffffcc00Level 5|r]"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Summons 2 Spirit Wolf companions. Each wolf has \u003Cosw1,realHP\u003E hit points and deals \u003Cosw1,mindmg1\u003E - \u003Cosw1,maxdmg1\u003E damage. |nLasts \u003CAOsf,Dur1\u003E seconds. |n|n|cffffcc00Attacks land units.|r"
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
       "Value": "Summons 3 Spirit Wolf companions that have Critical Strike. Each wolf has \u003Cosw2,realHP\u003E hit points and deals \u003Cosw2,mindmg1\u003E - \u003Cosw2,maxdmg1\u003E damage. |nLasts \u003CAOsf,Dur2\u003E seconds. |n|n|cffffcc00Attacks land units.|r"
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
       "Value": "Summons 2 Spirit Wolf companions that have Critical Strike. Each wolf has \u003Cosw3,realHP\u003E hit points and deals \u003Cosw3,mindmg1\u003E - \u003Cosw3,maxdmg1\u003E damage. |nLasts \u003CAOsf,Dur3\u003E seconds. |n|n|cffffcc00Attacks land units.|r"
     },
     {
       "Level": 4,
-      "Pointer": 4,
       "Id": 828536161,
       "Type": 3,
       "Value": "Summons 4 Spirit Wolf companions that have Critical Strike. Each wolf has \u003Cosw3,realHP\u003E hit points and deals \u003Cosw3,mindmg1\u003E - \u003Cosw3,maxdmg1\u003E damage. |nLasts \u003CAOsf,Dur3\u003E seconds. |n|n|cffffcc00Attacks land units.|r"
     },
     {
       "Level": 5,
-      "Pointer": 5,
       "Id": 828536161,
       "Type": 3,
       "Value": "Summons 6 Spirit Wolf companions that have Critical Strike. Each wolf has \u003Cosw3,realHP\u003E hit points and deals \u003Cosw3,mindmg1\u003E - \u003Cosw3,maxdmg1\u003E damage. |nLasts \u003CAOsf,Dur3\u003E seconds. |n|n|cffffcc00Attacks land units.|r"

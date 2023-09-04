@@ -17,14 +17,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Eye of Kilrogg"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Summons an invisible and immovable ward that provides vision in an area. |nCan see invisible units. |nLasts 10 minutes."

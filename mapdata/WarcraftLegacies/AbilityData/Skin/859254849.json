@@ -26,7 +26,6 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Hurls a poisoned dagger with incredible force at an enemy, dealing 50 initial damage, and \u003CACss,DataA1\u003E damage every \u003CACss,Cast1\u003E seconds for \u003CACss,Dur1\u003E seconds. The poison slows the attack rate and movement speed of the enemy for a short duration."

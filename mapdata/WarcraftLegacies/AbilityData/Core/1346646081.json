@@ -7,53 +7,45 @@
   "Modifications": [
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 1852072801,
       "Type": 2,
       "Value": 30
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 1852072801,
       "Type": 2,
       "Value": 30
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 1852072801,
       "Type": 2,
       "Value": 30
     },
     {
       "Level": 4,
-      "Pointer": 4,
       "Id": 1852072801,
       "Type": 2,
       "Value": 30
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 1935895905,
       "Value": 120
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 1935895905,
       "Value": 120
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 1935895905,
       "Value": 120
     },
     {
       "Level": 4,
-      "Pointer": 4,
       "Id": 1935895905,
       "Value": 120
     },
@@ -66,28 +58,28 @@
     },
     {
       "Level": 2,
-      "Pointer": 2,
+      "Pointer": 1,
       "Id": 829645646,
       "Type": 2,
       "Value": 300
     },
     {
       "Level": 3,
-      "Pointer": 3,
+      "Pointer": 1,
       "Id": 829645646,
       "Type": 2,
       "Value": 400
     },
     {
       "Level": 4,
-      "Pointer": 4,
+      "Pointer": 1,
       "Id": 829645646,
       "Type": 2,
       "Value": 500
     },
     {
       "Level": 1,
-      "Pointer": 1,
+      "Pointer": 2,
       "Id": 846422862,
       "Type": 2,
       "Value": 1
@@ -101,27 +93,27 @@
     },
     {
       "Level": 3,
-      "Pointer": 3,
+      "Pointer": 2,
       "Id": 846422862,
       "Type": 2,
       "Value": 1
     },
     {
       "Level": 4,
-      "Pointer": 4,
+      "Pointer": 2,
       "Id": 846422862,
       "Type": 2,
       "Value": 1
     },
     {
       "Level": 1,
-      "Pointer": 1,
+      "Pointer": 3,
       "Id": 863200078,
       "Value": 5
     },
     {
       "Level": 2,
-      "Pointer": 2,
+      "Pointer": 3,
       "Id": 863200078,
       "Value": 5
     },
@@ -133,27 +125,27 @@
     },
     {
       "Level": 4,
-      "Pointer": 4,
+      "Pointer": 3,
       "Id": 863200078,
       "Value": 5
     },
     {
       "Level": 1,
-      "Pointer": 1,
+      "Pointer": 4,
       "Id": 879977294,
       "Type": 2,
       "Value": 1000
     },
     {
       "Level": 2,
-      "Pointer": 2,
+      "Pointer": 4,
       "Id": 879977294,
       "Type": 2,
       "Value": 1100
     },
     {
       "Level": 3,
-      "Pointer": 3,
+      "Pointer": 4,
       "Id": 879977294,
       "Type": 2,
       "Value": 1200
@@ -167,56 +159,56 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
+      "Pointer": 5,
       "Id": 896754510,
       "Type": 2,
       "Value": 0
     },
     {
       "Level": 2,
-      "Pointer": 2,
+      "Pointer": 5,
       "Id": 896754510,
       "Type": 2,
       "Value": 0
     },
     {
       "Level": 3,
-      "Pointer": 3,
+      "Pointer": 5,
       "Id": 896754510,
       "Type": 2,
       "Value": 0
     },
     {
       "Level": 4,
-      "Pointer": 4,
+      "Pointer": 5,
       "Id": 896754510,
       "Type": 2,
       "Value": 0
     },
     {
       "Level": 1,
-      "Pointer": 1,
+      "Pointer": 6,
       "Id": 913531726,
       "Type": 2,
       "Value": 2
     },
     {
       "Level": 2,
-      "Pointer": 2,
+      "Pointer": 6,
       "Id": 913531726,
       "Type": 2,
       "Value": 2
     },
     {
       "Level": 3,
-      "Pointer": 3,
+      "Pointer": 6,
       "Id": 913531726,
       "Type": 2,
       "Value": 2
     },
     {
       "Level": 4,
-      "Pointer": 4,
+      "Pointer": 6,
       "Id": 913531726,
       "Type": 2,
       "Value": 2
@@ -232,112 +224,96 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 1851880033,
       "Type": 2,
       "Value": 1200
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 1851880033,
       "Type": 2,
       "Value": 1200
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 1851880033,
       "Type": 2,
       "Value": 1200
     },
     {
       "Level": 4,
-      "Pointer": 4,
       "Id": 1851880033,
       "Type": 2,
       "Value": 1200
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 1918989409,
       "Type": 3,
       "Value": "enemies,ground,neutral"
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 1918989409,
       "Type": 3,
       "Value": "enemies,ground,neutral"
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 1918989409,
       "Type": 3,
       "Value": "enemies,ground,neutral"
     },
     {
       "Level": 4,
-      "Pointer": 4,
       "Id": 1918989409,
       "Type": 3,
       "Value": "enemies,ground,neutral"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 1969514593,
       "Type": 2,
       "Value": 2
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 1969514593,
       "Type": 2,
       "Value": 2
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 1969514593,
       "Type": 2,
       "Value": 2
     },
     {
       "Level": 4,
-      "Pointer": 4,
       "Id": 1969514593,
       "Type": 2,
       "Value": 2
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 1920296033,
       "Type": 2,
       "Value": 2
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 1920296033,
       "Type": 2,
       "Value": 2
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 1920296033,
       "Type": 2,
       "Value": 2
     },
     {
       "Level": 4,
-      "Pointer": 4,
       "Id": 1920296033,
       "Type": 2,
       "Value": 2

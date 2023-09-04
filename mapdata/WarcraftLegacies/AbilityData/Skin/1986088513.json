@@ -41,35 +41,30 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Activate Battle Trance - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
       "Value": "Activate Battle Trance - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
       "Value": "Activate Battle Trance - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Activate Battle Trance to give the Hero \u003CANav,DataA1\u003E bonus armor,  \u003CAHav,DataC1\u003E bonus damage and spell immunity. |nLasts 15 seconds."
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
       "Value": "Activate Battle Trance to give the Hero \u003CANav,DataA2\u003E bonus armor,  \u003CAHav,DataC2\u003E bonus damage and spell immunity. |nLasts 15 seconds."
@@ -86,28 +81,24 @@
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
       "Value": "Activate Battle Trance to give the Hero \u003CANav,DataA3\u003E bonus armor, \u003CAHav,DataC3\u003E bonus damage and spell immunity. |nLasts 15 seconds."
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829715809,
       "Type": 3,
       "Value": "Deactivate Battle Trance"
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 829715809,
       "Type": 3,
       "Value": "Deactivate Battle Trance"
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 829715809,
       "Type": 3,
       "Value": "Deactivate Battle Trance"

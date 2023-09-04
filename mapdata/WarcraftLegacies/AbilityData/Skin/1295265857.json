@@ -50,14 +50,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "The Power of Frostmourne"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Frostmourne gives Arthas the power to do 25% of his damage to enemies near the primary attacked unit."

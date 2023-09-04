@@ -61,14 +61,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Aimed Shot"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Fires an enchanted arrow at an enemy target, dealing 80 damage and stunning the target for 4(0.2) seconds. 800 range. |nHas a 1.5 second cast time."

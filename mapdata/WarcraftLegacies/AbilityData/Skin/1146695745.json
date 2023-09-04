@@ -17,7 +17,6 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Afflicts a target enemy unit with a deadly parasite that deals 5 damage per second for 30 seconds. If the afflicted unit dies while under the effect of Parasite, a Tentacle will spawn from its corpse."

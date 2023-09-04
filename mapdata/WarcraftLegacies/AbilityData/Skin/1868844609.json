@@ -31,14 +31,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Doom - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Marks a target unit for the manifestation of a Demon. The afflicted unit cannot cast spells and will take \u003CANdo,DataA1\u003E damage per second until it dies. Upon its death, 1 Elite Doom Guard will spawn from its corpse. Doom cannot be dispelled or cancelled."

@@ -22,14 +22,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Feint (|cffffcc00Q|r)"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Makes the Farstrider invisible for 10 seconds and increases movement speed by 25%. Lasts 10 seconds."

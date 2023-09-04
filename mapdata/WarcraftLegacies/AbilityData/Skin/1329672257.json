@@ -32,14 +32,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Shadow Bolt"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Hurls a shadowy bolt that stuns a target enemy unit for 3 seconds, dealing 60 damage. Lasts 0.25 seconds on heroes."

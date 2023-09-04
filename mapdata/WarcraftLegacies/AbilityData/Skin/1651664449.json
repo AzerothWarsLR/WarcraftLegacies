@@ -19,14 +19,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Frost Breath"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Attacks slow enemies hit for \u003Cafrb,Dur1\u003E(Heros for \u003Cafrb,HeroDur1\u003E) seconds."

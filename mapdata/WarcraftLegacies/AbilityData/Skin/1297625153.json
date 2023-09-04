@@ -30,14 +30,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Self-Bloodlust"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Increases the unit\u0027s attack rate by 30% and movement speed by 20% for \u003CAfzy,Dur1\u003E seconds."

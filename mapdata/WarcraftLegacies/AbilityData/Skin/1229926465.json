@@ -22,14 +22,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Open Dragonmaw Gate"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Open the Dragonmaw Gate|n|n|cffff0000WARNING|n|cffd45e19Once open, the gate cannot be closed for the rest of the game. The gate will open automatically at Cataclysm"

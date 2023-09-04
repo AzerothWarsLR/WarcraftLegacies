@@ -45,14 +45,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Healing Blessing"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Sprays 4 waves of healing mist; each wave heals 40 damage to all friendly units in an area."

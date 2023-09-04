@@ -17,7 +17,6 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Links \u003CA0YR,DataB1\u003E units together in a chain. All units with Spirit Link on them will live longer, by distributing \u003CA0YR,DataA1,%\u003E% of the damage they take across other Spirit Linked units. |nLasts \u003CA0YR,Dur1\u003E seconds."

@@ -35,42 +35,36 @@
     },
     {
       "Level": 5,
-      "Pointer": 5,
       "Id": 829453409,
       "Type": 3,
       "Value": "Attribute Bonus - [|cffffcc00Level 5|r]"
     },
     {
       "Level": 5,
-      "Pointer": 5,
       "Id": 828536161,
       "Type": 3,
       "Value": "Gives a total of \u003CAamk,DataA5\u003E points to Intelligence, and Strength"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Gives a total of \u003CAamk,DataA1\u003E points to Intelligence, and Strength"
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
       "Value": "Gives a total of \u003CAamk,DataA2\u003E points to Intelligence, and Strength"
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
       "Value": "Gives a total of \u003CAamk,DataA3\u003E points to Intelligence, and Strength"
     },
     {
       "Level": 4,
-      "Pointer": 4,
       "Id": 828536161,
       "Type": 3,
       "Value": "Gives a total of \u003CAamk,DataA4\u003E points to Intelligence, and Strength"

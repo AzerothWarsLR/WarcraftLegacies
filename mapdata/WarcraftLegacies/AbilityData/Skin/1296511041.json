@@ -56,14 +56,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "For the Horde!"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Inspires the units in the targetted area, increases attack speed by 30% and movement speed by 20%. Lasts 60 seconds. "

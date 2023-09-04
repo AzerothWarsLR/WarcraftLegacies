@@ -22,35 +22,30 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Wrath of the Blood Elves - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
       "Value": "Wrath of the Blood Elves - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
       "Value": "Wrath of the Blood Elves - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
       "Value": "Calls down waves of starlight that damage nearby enemy units. Each wave deals \u003CA007,DataA2\u003E damage. |nLasts for \u003CA007,Dur2\u003E seconds."
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
       "Value": "Calls down waves of starlight that damage nearby enemy units. Each wave deals \u003CA007,DataA3\u003E damage. |nLasts for \u003CA007,Dur3\u003E seconds."
@@ -62,7 +57,6 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Calls down waves of falling stars that damage nearby enemy units. Each wave deals \u003CA007,DataA1\u003E damage. |nLasts for \u003CA007,Dur1\u003E seconds."

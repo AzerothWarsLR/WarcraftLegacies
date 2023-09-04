@@ -21,7 +21,6 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Hurls a bolt of lightning that bounces up to 5 times, dealing 75 damage to the primary target. Each jump deals 5% less damage."

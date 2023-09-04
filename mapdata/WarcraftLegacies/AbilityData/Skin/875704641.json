@@ -30,7 +30,6 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "The Nathrezim takes flight, giving him the ability to fly and a ranged attack, but losing his invisibility and Charm abilities. |n|n|cffffcc00Attacks land and air units.|r"
@@ -42,21 +41,18 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Take Flight"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829715809,
       "Type": 3,
       "Value": "Land"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829781345,
       "Type": 3,
       "Value": "The Nathrezim lands, regaining his Invisibility and Charm ability."

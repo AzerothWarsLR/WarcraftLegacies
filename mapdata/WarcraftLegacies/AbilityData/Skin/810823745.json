@@ -17,7 +17,6 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Increases a friendly unit\u0027s attack rate by 40%.|nLasts \u003CAblo,Dur1\u003E seconds."

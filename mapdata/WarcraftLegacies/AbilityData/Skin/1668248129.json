@@ -19,7 +19,6 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Fires powerful rockets at nearby enemy air units, dealing \u003CAroc,DataA1\u003E damage per target, up to a maximum of 9 targets."

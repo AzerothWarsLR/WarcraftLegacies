@@ -30,14 +30,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "|cffffcc00C|rhilling Strike"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Adds a cold effect to each attack, slowing a target enemy unit\u0027s attacks by 50% and movement by 70% for 5 seconds. (Half duration for heroes)"

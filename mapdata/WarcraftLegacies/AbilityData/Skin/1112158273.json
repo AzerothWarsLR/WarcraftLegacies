@@ -22,56 +22,48 @@
     },
     {
       "Level": 4,
-      "Pointer": 4,
       "Id": 829453409,
       "Type": 3,
       "Value": "Summon Fel Hound - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Gallywix calls his personnal transport to rain fire on his enemies and enable him to fly. Can transport 1 hero. 180 seconds cooldown"
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
       "Value": "Gallywix calls his personnal transport to rain fire on his enemies and enable him to fly. Can transport 1 hero. 100 seconds cooldown"
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
       "Value": "Gallywix calls his personnal transport to rain fire on his enemies and enable him to fly. Can transport 1 hero. 20 seconds cooldown"
     },
     {
       "Level": 4,
-      "Pointer": 4,
       "Id": 828536161,
       "Type": 3,
       "Value": "Summons \u003CA0X4,DataA1\u003E Fel Hounds with Mana Burn to attack the Hero\u0027s enemies. |n|n|cffffcc00Attacks land units.|r"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Summon Gallywix Personal Transport - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
       "Value": "Summon Gallywix Personal Transport - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
       "Value": "Summon Gallywix Personal Transport - [|cffffcc00Level 1|r]"

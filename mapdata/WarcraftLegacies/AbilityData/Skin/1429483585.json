@@ -55,56 +55,48 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Nature\u0027s Call (|cffffcc00Q|r) - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
       "Value": "Nature\u0027s Call (|cffffcc00Q|r) - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
       "Value": "Nature\u0027s Call (|cffffcc00Q|r) - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
-      "Pointer": 4,
       "Id": 829453409,
       "Type": 3,
       "Value": "Nature\u0027s Call (|cffffcc00Q|r) - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Summons 3 Spiders that have Web. and poison attacks.|nLasts \u003CACs7,Dur1\u003E seconds."
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
       "Value": "Summons 3 Feral Wolves that have Roar, Bash, and Critical Strike.|nLasts \u003CACs7,Dur2\u003E seconds."
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
       "Value": "Summons 3 Furbolg Elder Shaman companions that have Lightning Shield and Rejuvenation.|nLasts \u003CACs7,Dur3\u003E seconds. |n|n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Level": 4,
-      "Pointer": 4,
       "Id": 828536161,
       "Type": 3,
       "Value": "Summons Ysondre to fight for you. Has Lightning shield and Rejuvenation.|nLasts \u003CACs7,Dur4\u003E seconds."

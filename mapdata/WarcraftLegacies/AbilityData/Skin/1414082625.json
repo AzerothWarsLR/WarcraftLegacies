@@ -32,28 +32,24 @@
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
       "Value": "Activate Avatar - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
       "Value": "Activate Avatar - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
       "Value": "Activate Avatar to give the Mountain King \u003CAHav,DataA2\u003E bonus armor, \u003CAHav,DataB2\u003E bonus hit points, \u003CAHav,DataC2\u003E bonus damage and spell immunity. |nLasts \u003CAHav,Dur2\u003E seconds."
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
       "Value": "Activate Avatar to give the Mountain King \u003CAHav,DataA3\u003E bonus armor, \u003CAHav,DataB3\u003E bonus hit points, \u003CAHav,DataC3\u003E bonus damage and spell immunity. |nLasts \u003CAHav,Dur3\u003E seconds."
@@ -65,7 +61,6 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Activate Avatar to give the Battlemaster 20 bonus armor, 500 bonus hit points, 45 bonus damage and spell immunity. |nLasts 15 seconds."

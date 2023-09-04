@@ -55,56 +55,48 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Ritual of Fire - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
       "Value": "Ritual of Fire - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
       "Value": "Ritual of Fire - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
-      "Pointer": 4,
       "Id": 829453409,
       "Type": 3,
       "Value": "Ritual of Fire - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "The hero summons moderate fire elementals to fight by his side. The Fire Elementals have Incinerate and the Immolation abillity. Summons 3 Fire Elementals."
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
       "Value": "The hero summons moderate fire elementals to fight by his side. The Fire Elementals have Incinerate and the Immolation abillity. Summons 4 Fire Elementals."
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
       "Value": "The hero summons powerful fire elementals to fight by his side. The Fire Elementals have Immolation, Incinerate, and the Breath of Fire ability. Summons 4 strong Fire Elementals."
     },
     {
       "Level": 4,
-      "Pointer": 4,
       "Id": 828536161,
       "Type": 3,
       "Value": "The hero summons powerful fire elementals to fight by his side. The Fire Elementals have Incinerate, Immolation and the Breath of Fire abillity. Summons 5 strong Fire Elementals."

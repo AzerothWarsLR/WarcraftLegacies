@@ -21,7 +21,6 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Gives a 15% chance that an attack will do 20 bonus damage and stun an opponent for \u003CANb2,Dur1\u003E seconds."

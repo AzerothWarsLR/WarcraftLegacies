@@ -22,7 +22,6 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "An aura that gives nearby friendly units a damage shield, which deals 30% of an enemy unit\u0027s attack damage back to it."

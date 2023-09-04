@@ -27,14 +27,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Cluster Rockets"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Bombards an area with rockets, dealing up to \u003CA0GE,DataA1\u003E damage to nearby enemy ground units and stunning them for \u003CA0GE,Dur1\u003E second. Deals \u003CA0GE,DataE1,%\u003E damage to buildings."

@@ -37,42 +37,36 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Axestorm - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
       "Value": "Axestorm - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
       "Value": "Axestorm - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Causes an Axestorm of destructive force around the Nazgrimr, rendering him immune to magic and dealing damage to nearby enemy land units for 10 seconds. |n|cffffcc00Level 1|r - 100 damage."
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
       "Value": "Causes an Axestorm of destructive force around the Nazgrimr, rendering him immune to magic and dealing damage to nearby enemy land units for 10 seconds. |n|cffffcc00Level 2|r - 125 damage."
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
       "Value": "Causes an Axestorm of destructive force around the Nazgrimr, rendering him immune to magic and dealing damage to nearby enemy land units for 10 seconds. |n|cffffcc00Level 3|r - 150 damage."

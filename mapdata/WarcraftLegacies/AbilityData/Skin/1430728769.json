@@ -31,14 +31,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Inject Spiderlings"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "The spider inject her young into the target which causes 5 damage per second for 50 seconds. If the afflicted unit dies while under the effect of this spell, 2 spiderlings will spawn from the corpse."

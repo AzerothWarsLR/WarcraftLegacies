@@ -41,14 +41,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Healing Rain"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Causes rains of healing energy to pour down in a large area, healing friendly allied units for 20 hit points per second. |nLasts 10 seconds."

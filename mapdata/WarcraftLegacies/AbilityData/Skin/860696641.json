@@ -12,7 +12,6 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Gives a \u003CA0M3,DataA1\u003E% chance that an attack will do \u003CA0M3,DataC1\u003E bonus damage and stun the target for \u003CA0M3,Dur1\u003E seconds."

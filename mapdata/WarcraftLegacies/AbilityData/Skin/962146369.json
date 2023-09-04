@@ -21,14 +21,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "|cffffcc00Q|r Burrow"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "The Giant Scarab digs into the ground, becomes invisible, and gains a regeneration rate of 15 hit points per second. |nThe Scarab cannot attack while burrowed."
@@ -44,14 +42,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829715809,
       "Type": 3,
       "Value": "Resurface (|cffffcc00Q|r)"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829781345,
       "Type": 3,
       "Value": "The Scarab pops out of the ground and becomes visible again."

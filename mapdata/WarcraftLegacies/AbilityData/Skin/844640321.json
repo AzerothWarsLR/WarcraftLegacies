@@ -61,14 +61,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Soul Transfer "
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Transfers 50 life and 80 mana per second to a target allied units. Lasts up to 20 seconds. Can also cast on an enemy unit to steal 50 mana per seconds."

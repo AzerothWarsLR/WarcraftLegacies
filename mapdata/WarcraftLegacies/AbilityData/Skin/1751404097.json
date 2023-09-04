@@ -26,35 +26,30 @@
     },
     {
       "Level": 4,
-      "Pointer": 4,
       "Id": 829453409,
       "Type": 3,
       "Value": "Drunken Haze - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Drenches enemy units in alcohol, causing their movement speed to be reduced by 40%, and have a 30% chance to miss on attacks. When units with Drunken Haze cast on them are hit by Breath of Fire, they will ignite and take burn damage. |n|cffffcc00Lasts \u003CANdh,Dur1\u003E(5 for Heros) seconds."
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
       "Value": "Drenches enemy units in alcohol, causing their movement speed to be reduced by 45%, and have a 40% chance to miss on attacks. When units with Drunken Haze cast on them are hit by Breath of Fire, they will ignite and take burn damage. |n|cffffcc00Lasts \u003CANdh,Dur2\u003E(5 for Heros) seconds."
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
       "Value": "Drenches enemy units in alcohol, causing their movement speed to be reduced by 50%, and have a 50% chance to miss on attacks. When units with Drunken Haze cast on them are hit by Breath of Fire, they will ignite and take burn damage. |n|cffffcc00Lasts \u003CANdh,Dur3\u003E(5 for Heros) seconds."
     },
     {
       "Level": 4,
-      "Pointer": 4,
       "Id": 828536161,
       "Type": 3,
       "Value": "Drenches enemy units in alcohol, causing their movement speed to be reduced by 55%, and have a 60% chance to miss on attacks. When units with Drunken Haze cast on them are hit by Breath of Fire, they will ignite and take burn damage. |n|cffffcc00Lasts \u003CANdh,Dur4\u003E(5 for Heros) seconds."

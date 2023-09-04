@@ -12,14 +12,12 @@
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
       "Value": "Improved Trueshot Aura"
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
       "Value": "An aura that gives nearby friendly units a 15% bonus damage to their ranged attacks."
@@ -30,7 +28,6 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "An aura that gives nearby friendly units a 15% bonus damage to their ranged attacks."

@@ -22,14 +22,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Splintering Arrows"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "The Farstriders shoot their arrows with great force and precision, causes the Farstriders attacks to do area of effect damage. |n|nDeals half damage in a radius of 100 and slightly less beyond that."

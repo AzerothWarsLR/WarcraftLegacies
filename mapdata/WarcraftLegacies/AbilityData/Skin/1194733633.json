@@ -70,14 +70,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Barrage"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Shoots a long distance arrows, dealing maximum 200 damage to enemies with successful hit. Stuns non-Hero units for 0.75 seconds. Has a range of 1200."

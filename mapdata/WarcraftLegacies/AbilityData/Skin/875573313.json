@@ -57,42 +57,36 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "|cffffcc00R|r Gryphon Sky - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
       "Value": "|cffffcc00R|r Gryphon Sky - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
       "Value": "|cffffcc00R|r Gryphon Sky - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Calls an onslaught of Gryphon Riders to attack enemies in a 800 radious. |n|cffffcc00Level 1|r -  Each gryphon deals 10 damage. |n|nLasts 30 seconds."
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
       "Value": "Calls an onslaught of Gryphon Riders to attack enemies in a 800 radious. |n|cffffcc00Level 1|r -  Each gryphon deals 15 damage. |n|nLasts 30 seconds."
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
       "Value": "Calls an onslaught of Gryphon Riders to attack enemies in a 800 radious. |n|cffffcc00Level 1|r -  Each gryphon deals 20 damage. |n|nLasts 30 seconds."

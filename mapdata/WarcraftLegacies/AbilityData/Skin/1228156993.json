@@ -50,14 +50,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Call of the Void"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Calls down waves of Nether Energy that damage nearby enemy units. Each wave deals 30 damage. |nLasts for 10 seconds."

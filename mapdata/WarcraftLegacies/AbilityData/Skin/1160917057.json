@@ -17,21 +17,18 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "|cffffcc00(W)|r - Dispel Magic"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Removes all buffs from units in a target area. |n|cffffcc00Deals \u003CA02E,DataB1\u003E damage to summoned units.|r"
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
       "Value": "Removes all buffs from units in a target area. |n|cffffcc00Deals \u003CA02E,DataB2\u003E damage to summoned units.|r"

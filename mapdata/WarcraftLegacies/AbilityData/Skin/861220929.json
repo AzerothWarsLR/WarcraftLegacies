@@ -32,14 +32,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Summon the Furbolg Elder Shamans"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Summons 2 Furbolg Elder Shaman companions that have Lightning Shield and Rejuvenation.|nLasts \u003CACs7,Dur3\u003E seconds. |n|n|cffffcc00Attacks land and air units.|r"

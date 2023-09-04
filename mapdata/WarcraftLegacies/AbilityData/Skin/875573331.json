@@ -17,14 +17,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Increases the attack rate of a target unit by 75%, but drains 4 hit points per second. |nLasts 45 seconds."
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
       "Value": "Increases the attack rate of a target unit by 75%, but drains 1 hit points per second. |nLasts 45 seconds."

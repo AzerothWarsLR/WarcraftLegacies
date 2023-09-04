@@ -40,14 +40,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Consecrated Strikes"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Gives a \u003CA0U2,DataA1\u003E% chance that an attack will deal \u003CA0U2,DataB1\u003E damage to nearby units."

@@ -59,28 +59,24 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Gives nearby friendly units 7 bonus attack damage and 5 bonus armor. |nLasts 12 seconds."
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
       "Value": "Gives nearby friendly units 10 bonus attack damage and 10 bonus armor. |nLasts 12 seconds."
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
       "Value": "Gives nearby friendly units 13 bonus attack damage and 15 bonus armor. |nLasts 12 seconds."
     },
     {
       "Level": 4,
-      "Pointer": 4,
       "Id": 828536161,
       "Type": 3,
       "Value": "Gives nearby friendly units 16 bonus attack damage and 20 bonus armor. |nLasts 12 seconds."

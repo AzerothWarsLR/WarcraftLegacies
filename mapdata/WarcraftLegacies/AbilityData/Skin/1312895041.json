@@ -22,14 +22,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Fear the Goddess"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Induce the enemy units with a fear in Elune that reduces nearby their attack damage by \u003CAcht,DataA1,%\u003E% for \u003CAcht,Dur1\u003E seconds."

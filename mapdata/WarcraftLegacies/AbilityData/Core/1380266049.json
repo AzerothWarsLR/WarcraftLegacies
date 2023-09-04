@@ -14,7 +14,7 @@
     },
     {
       "Level": 2,
-      "Pointer": 2,
+      "Pointer": 1,
       "Id": 829125459,
       "Type": 2,
       "Value": 35
@@ -28,14 +28,14 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
+      "Pointer": 3,
       "Id": 862679891,
       "Type": 2,
       "Value": 40
     },
     {
       "Level": 2,
-      "Pointer": 2,
+      "Pointer": 3,
       "Id": 862679891,
       "Type": 2,
       "Value": 40
@@ -56,7 +56,6 @@
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 1918989409,
       "Type": 3,
       "Value": "enemy,ally"

@@ -26,14 +26,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Spiked Barricades"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "The Dwarven Keep Tower returns 60-80 damage to a meele unit that attacked the tower."

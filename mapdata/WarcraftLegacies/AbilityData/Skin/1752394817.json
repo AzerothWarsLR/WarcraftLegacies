@@ -16,21 +16,18 @@
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
       "Value": "Enhanced Lightning Shield"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Forms a shield of electricity around a target unit, dealing 20 damage per second to units around it. |n|cffffcc00Lasts 20 seconds."
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
       "Value": "Forms a shield of electricity around a target unit, dealing 30 damage per second to units around it. |n|cffffcc00Lasts 20 seconds."

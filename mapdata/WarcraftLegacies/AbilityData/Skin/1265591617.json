@@ -27,14 +27,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Summon Eyes of Grillok"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Summons 3 invulnerable Eyes of Grillok. |n|cffffcc00Lasts 180 seconds.|n240 second cooldown.|R |n|n|cffffcc00Attacks land units.|r"

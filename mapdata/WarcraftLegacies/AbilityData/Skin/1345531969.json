@@ -26,14 +26,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Primal Aura"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Increases the attack damage of friendly units within a radius of \u003CA03P,Area1\u003E by \u003CA03P,DataA1,%\u003E%."

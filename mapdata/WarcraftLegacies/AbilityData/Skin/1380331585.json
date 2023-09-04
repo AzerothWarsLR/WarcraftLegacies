@@ -22,28 +22,24 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Transfusion - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
       "Value": "Transfusion - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
       "Value": "Transfusion - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
-      "Pointer": 4,
       "Id": 829453409,
       "Type": 3,
       "Value": "Transfusion - [|cffffcc00Level 4|r]"
@@ -70,28 +66,24 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Calls forth a wave of healing Blood that bounces up to \u003CANhw,DataB1\u003E times, healing \u003CANhw,DataA1\u003E damage on the primary target. Each jump heals less damage."
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
       "Value": "Calls forth a wave of healing Blood that bounces up to \u003CANhw,DataB2\u003E times, healing \u003CANhw,DataA2\u003E damage on the primary target. Each jump heals less damage."
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
       "Value": "Calls forth a wave of healing Blood that bounces up to \u003CANhw,DataB3\u003E times, healing \u003CANhw,DataA3\u003E damage on the primary target. Each jump heals less damage."
     },
     {
       "Level": 4,
-      "Pointer": 4,
       "Id": 828536161,
       "Type": 3,
       "Value": "Calls forth a wave of healing Blood that bounces up to \u003CANhw,DataB4\u003E times, healing \u003CANhw,DataA4\u003E damage on the primary target. Each jump heals less damage."

@@ -45,56 +45,48 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Devour Magic - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
       "Value": "Devour Magic - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
       "Value": "Devour Magic - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
-      "Pointer": 4,
       "Id": 829453409,
       "Type": 3,
       "Value": "Devour Magic - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Consumes all magical buffs from units in an area. Each unit that is devoured of magic gives the caster 30 hit points and mana. |n|cffffcc00Deals 300 damage to summoned units.|r"
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
       "Value": "Consumes all magical buffs from units in an area. Each unit that is devoured of magic gives the caster 45 hit points and mana. |n|cffffcc00Deals 400 damage to summoned units.|r"
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
       "Value": "Consumes all magical buffs from units in an area. Each unit that is devoured of magic gives the caster 60 hit points and mana. |n|cffffcc00Deals 500 damage to summoned units.|r"
     },
     {
       "Level": 4,
-      "Pointer": 4,
       "Id": 828536161,
       "Type": 3,
       "Value": "Consumes all magical buffs from units in an area. Each unit that is devoured of magic gives the caster 75 hit points and mana. |n|cffffcc00Deals 600 damage to summoned units.|r"

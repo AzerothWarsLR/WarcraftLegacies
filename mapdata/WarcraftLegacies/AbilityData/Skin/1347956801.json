@@ -35,14 +35,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Bloodcraze"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Become enraged, causing attacks to steal 60% life and increasing damage by 10.|nLasts 30 seconds."

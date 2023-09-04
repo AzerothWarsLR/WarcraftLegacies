@@ -25,14 +25,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Fire Arrows"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Deals 2 bonus damage and burns the target dealing 8 bonus fire damage every second, but drains 8 mana per attack. |n|cffffcc00Last 4 seconds."

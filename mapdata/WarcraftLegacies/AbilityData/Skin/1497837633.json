@@ -22,14 +22,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Spiked Carapace"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Enhances the Brood Guardians armor with organic barbs, giving the Brood Guardian \u003CAUts,DataC1\u003E bonus armor and returning \u003CAUts,DataA1,%\u003E% of melee attack damage to enemies."

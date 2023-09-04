@@ -55,14 +55,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Mass Bloodlust"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Increases the attack speed by 30% and move speed by 10% of units inside the targetted area. |nLasts 60 seconds. "

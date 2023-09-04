@@ -46,14 +46,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Frost Bite"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "The Lich King\u0027s attacks stop a unit from attacking or moving for 3(0.3) seconds dealing 30 damage per second while frozen."

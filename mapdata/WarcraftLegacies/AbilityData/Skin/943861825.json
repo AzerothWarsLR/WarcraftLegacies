@@ -21,7 +21,6 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Activate to have a \u003CAdef,DataF1\u003E% chance to reflect Piercing attacks upon the source, and to take only \u003CAdef,DataA1,%\u003E% of the damage from attacks that are not reflected and also reduces magic damage by 20%. While Defend is active, move speed is reduced by \u003CAdef,DataC1,%\u003E%."
@@ -33,7 +32,6 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829781345,
       "Type": 3,
       "Value": "Deactivate to move at normal speed, but take regular damage from Piercing and Magic attacks."

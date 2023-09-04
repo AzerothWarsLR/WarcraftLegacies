@@ -50,14 +50,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Explore Map - (|cffffcc00Z|r)"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "The explores are filling out every black spot on the map, exploring every corner of Azeroth. |n|cffe8e800|nReveals the entire map.|nLasts 5 seconds.|r"

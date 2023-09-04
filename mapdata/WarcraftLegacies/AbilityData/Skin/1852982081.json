@@ -19,7 +19,6 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "When killed, this unit will come back to life. Reincarnation has a 240 second cooldown."

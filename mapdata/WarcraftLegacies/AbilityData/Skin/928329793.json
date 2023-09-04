@@ -61,14 +61,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Weighted Spear (|cffffcc00Q|r)"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Hurls a weighted spear at an enemy target, dealing 50 damage and stunning the target for 3 seconds. Lasts 1 second on heroes. 1 minute cooldown"

@@ -27,14 +27,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Ignore Pain - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "The Warsong Grunts ignore all pain, increasing this units armor by 1000 and grants magic immunity for 5 seconds."
@@ -46,7 +44,6 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829715809,
       "Type": 3,
       "Value": ""
@@ -71,14 +68,12 @@
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
       "Value": "Ignore Pain - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
       "Value": "The Warsong Grunts ignore all pain, increasing this units armor by 1000 and grants magic immunity for 10 seconds."

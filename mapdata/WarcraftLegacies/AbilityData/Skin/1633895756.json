@@ -26,14 +26,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Capital"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "This building is one of your Capitals. When your team controls no Capitals and fewer than 6 Control Points, you lose the game."

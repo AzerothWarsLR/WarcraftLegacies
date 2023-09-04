@@ -31,14 +31,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Gnomeregan Defense System"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Fires a volley of chemical rockets, lighting nearby enemies on fire. Deals 20 initial damage and 5 damage per second for 10 seconds to any units hit.|n|nAttack range of 1250."

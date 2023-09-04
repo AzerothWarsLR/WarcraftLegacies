@@ -40,14 +40,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Summon Mud Golem"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Summons 1 Mud golem with spell immunity for 30 seconds. Mud Golem are affected by Power Infusion upgrades. |n|n|cffffcc00Attacks land units.|r"

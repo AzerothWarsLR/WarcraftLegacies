@@ -16,7 +16,6 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "This unit\u0027s attacks combust \u003CA0UJ,DataA1\u003E(\u003CA0UJ,DataC1\u003E for Heroes) mana per hit dealing damage to the attacked unit equal to the mana destroyed."

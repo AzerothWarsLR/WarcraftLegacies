@@ -21,56 +21,48 @@
     },
     {
       "Level": 4,
-      "Pointer": 4,
       "Id": 829453409,
       "Type": 3,
       "Value": "Frost Armor - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 5,
-      "Pointer": 5,
       "Id": 829453409,
       "Type": 3,
       "Value": "Frost Armor - [|cffffcc00Level 5|r]"
     },
     {
       "Level": 6,
-      "Pointer": 6,
       "Id": 829453409,
       "Type": 3,
       "Value": "Frost Armor - [|cffffcc00Level 6|r]"
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
       "Value": "Creates a shield of frost around a target friendly unit. The shield adds \u003CAUfu,DataB2\u003E armor and slows melee units that attack it for \u003CAUfu,Dur2\u003E seconds. |nLasts \u003CAUfu,DataA2\u003E seconds."
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
       "Value": "Creates a shield of frost around a target friendly unit. The shield adds \u003CAUfu,DataB3\u003E armor and slows melee units that attack it for \u003CAUfu,Dur3\u003E seconds. |nLasts \u003CAUfu,DataA3\u003E seconds."
     },
     {
       "Level": 4,
-      "Pointer": 4,
       "Id": 828536161,
       "Type": 3,
       "Value": "Creates a shield of frost around a target friendly unit. The shield adds \u003CAUfu,DataB4\u003E armor and slows melee units that attack it for \u003CAUfu,Dur4\u003E seconds. |nLasts \u003CAUfu,DataA4\u003E seconds."
     },
     {
       "Level": 5,
-      "Pointer": 5,
       "Id": 828536161,
       "Type": 3,
       "Value": "Creates a shield of frost around a target friendly unit. The shield adds \u003CAUfu,DataB5\u003E armor and slows melee units that attack it for \u003CAUfu,Dur5\u003E seconds. |nLasts \u003CAUfu,DataA5\u003E seconds."
     },
     {
       "Level": 6,
-      "Pointer": 6,
       "Id": 828536161,
       "Type": 3,
       "Value": "Creates a shield of frost around a target friendly unit. The shield adds \u003CAUfu,DataB6\u003E armor and slows melee units that attack it for \u003CAUfu,Dur6\u003E seconds. |nLasts \u003CAUfu,DataA6\u003E seconds."

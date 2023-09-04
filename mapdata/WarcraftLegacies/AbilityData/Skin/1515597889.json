@@ -60,14 +60,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "For The Horde!"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Inspires friendly units in the targetted area, increasing their attack speed by 30% and movement speed by 20%. Lasts 30 seconds. "

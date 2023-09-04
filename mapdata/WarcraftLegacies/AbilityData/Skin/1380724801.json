@@ -76,56 +76,48 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Sacrifice"
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
       "Value": "Mass Simulacrum - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
       "Value": "Mass Simulacrum - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
-      "Pointer": 4,
       "Id": 829453409,
       "Type": 3,
       "Value": "Mass Simulacrum - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Permanently kills a target Hero under your control, allowing you to summon additional Heroes.|n|n|cffffcc00Sacrificed Heroes can never be reacquired."
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
       "Value": "Creates a summoned copy of all friendly units in the target area. Each summoned unit has 10% reduced hit points and attack damage. Lasts 30 seconds."
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
       "Value": "Creates a summoned copy of all friendly units in the target area. Each summoned unit has 10% increased hit points and attack damage. Lasts 30 seconds."
     },
     {
       "Level": 4,
-      "Pointer": 4,
       "Id": 828536161,
       "Type": 3,
       "Value": "Creates a summoned copy of all friendly units in the target area. Each summoned unit has 30% increased hit points and attack damage. Lasts 30 seconds."

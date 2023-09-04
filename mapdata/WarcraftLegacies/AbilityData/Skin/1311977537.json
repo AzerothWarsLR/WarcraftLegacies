@@ -47,28 +47,24 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Dragon Form"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Transforms the hero into a powerful Flying Dragon with a frost ranged attack and 1000 bonus hit points. |nLasts 25 seconds."
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
       "Value": "Transforms the hero into a powerful Flying Dragon with a frost ranged attack and 2000 bonus hit points. |nLasts 25 seconds."
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
       "Value": "Transforms the hero into a powerful Flying Dragon with a frost ranged attack and 3000 bonus hit points. |nLasts 25 seconds."

@@ -21,49 +21,42 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Elemental Fire - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
       "Value": "Elemental Fire - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
       "Value": "Elemental Fire - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
-      "Pointer": 4,
       "Id": 829453409,
       "Type": 3,
       "Value": "Elemental Fire - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
       "Value": "Deals \u003CA0W9,DataA2\u003E initial damage, and \u003CA0W9,Cool2\u003E damage every \u003CA0W9,Cast2\u003E seconds for \u003CA0W9,Dur2\u003E seconds. Slows attack rate and movement speed. Lasts \u003CA0W9,Dur2\u003E seconds on normal units, and \u003CA0W9,HeroDur2\u003E seconds on heroes."
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
       "Value": "Deals \u003CA0W9,DataA3\u003E initial damage, and \u003CA0W9,Cool3\u003E damage every \u003CA0W9,Cast3\u003E seconds for \u003CA0W9,Dur3\u003E seconds. Slows attack rate and movement speed. Lasts \u003CA0W9,Dur3\u003E seconds on normal units, and \u003CA0W9,HeroDur3\u003E seconds on heroes."
     },
     {
       "Level": 4,
-      "Pointer": 4,
       "Id": 828536161,
       "Type": 3,
       "Value": "Deals \u003CA0W9,DataA4\u003E initial damage, and \u003CA0W9,Cool4\u003E damage every \u003CA0W9,Cast4\u003E seconds for \u003CA0W9,Dur4\u003E seconds. Slows attack rate and movement speed. Lasts \u003CA0W9,Dur4\u003E seconds on normal units, and \u003CA0W9,HeroDur4\u003E seconds on heroes."
@@ -114,7 +107,6 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Deals \u003CA0W9,DataA1\u003E initial damage, and \u003CA0W9,Cool1\u003E damage every \u003CA0W9,Cast1\u003E seconds for \u003CA0W9,Dur1\u003E seconds. Slows attack rate and movement speed. Lasts \u003CA0W9,Dur1\u003E seconds on normal units, and \u003CA0W9,HeroDur1\u003E seconds on heroes."

@@ -26,14 +26,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Mind Flay"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Inflicts a curse upon the target unit, causing it to lose 10 hit points and 50 mana per second for the next \u003CA0EZ,Dur1\u003E seconds."

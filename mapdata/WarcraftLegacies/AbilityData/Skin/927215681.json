@@ -35,7 +35,6 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Transforms Meredith into a powerful Wraith with a ranged attack. Has 1000 bonus hit points, 60 bonus damage, 10 hp regeneration per second and 40 armor. Lasts for 15 seconds."
@@ -57,7 +56,6 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Wraith Form"

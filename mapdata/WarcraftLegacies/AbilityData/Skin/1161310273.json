@@ -22,14 +22,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Searing Weapons"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Increases a target friendly unit\u0027s attack rate by 20% and movement speed by 20% for \u003CACbl,Dur1\u003E seconds."

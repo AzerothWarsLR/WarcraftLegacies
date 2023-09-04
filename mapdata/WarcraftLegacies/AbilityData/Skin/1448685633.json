@@ -65,35 +65,30 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Soul Release "
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Unleashes \u003CA0YV,DataA1\u003E spirits from within Frostmourne to attack nearby enemies, slowing and draining enemy health to replenish the Lich King.|nLasts \u003CA0YV,HeroDur1\u003E seconds."
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
       "Value": "Unleashes \u003CA0YV,DataA2\u003E spirits from within Frostmourne to attack nearby enemies, slowing and draining enemy health to replenish the Lich King.|nLasts \u003CA0YV,HeroDur2\u003E seconds."
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
       "Value": "Unleashes \u003CA0YV,DataA3\u003E spirits from within Frostmourne to attack nearby enemies, slowing and draining enemy health to replenish the Lich King.|nLasts \u003CA0YV,HeroDur3\u003E seconds."
     },
     {
       "Level": 4,
-      "Pointer": 4,
       "Id": 828536161,
       "Type": 3,
       "Value": "Unleashes \u003CA0YV,DataA4\u003E spirits from within Frostmourne to attack nearby enemies, slowing and draining enemy health to replenish the Lich King.|nLasts \u003CA0YV,HeroDur4\u003E seconds."

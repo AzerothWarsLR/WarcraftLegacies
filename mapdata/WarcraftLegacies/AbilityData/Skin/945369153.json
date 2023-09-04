@@ -16,7 +16,6 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Causes this unit to shift out of existence whenever it takes damage, temporarily avoiding any further damage. |nLasts .5 seconds."

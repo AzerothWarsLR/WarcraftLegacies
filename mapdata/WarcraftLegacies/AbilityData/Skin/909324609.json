@@ -46,14 +46,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Corruption"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Curse a target with the plague. The afflicted unit will die instantly after 1 second transforming into a Zombie. This curse cannot be dispelled."

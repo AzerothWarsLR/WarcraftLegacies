@@ -7,40 +7,34 @@
   "Modifications": [
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 1852072801,
       "Type": 2,
       "Value": 240
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 1852072801,
       "Type": 2,
       "Value": 240
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 1852072801,
       "Type": 2,
       "Value": 240
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 1935895905,
       "Value": 200
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 1935895905,
       "Value": 250
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 1935895905,
       "Value": 300
     },
@@ -53,27 +47,27 @@
     },
     {
       "Level": 2,
-      "Pointer": 2,
+      "Pointer": 1,
       "Id": 829186894,
       "Type": 2,
       "Value": 14
     },
     {
       "Level": 3,
-      "Pointer": 3,
+      "Pointer": 1,
       "Id": 829186894,
       "Type": 2,
       "Value": 14
     },
     {
       "Level": 1,
-      "Pointer": 1,
+      "Pointer": 3,
       "Id": 862741326,
       "Value": 1
     },
     {
       "Level": 2,
-      "Pointer": 2,
+      "Pointer": 3,
       "Id": 862741326,
       "Value": 1
     },
@@ -85,39 +79,39 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
+      "Pointer": 5,
       "Id": 896295758,
       "Value": 0
     },
     {
       "Level": 2,
-      "Pointer": 2,
+      "Pointer": 5,
       "Id": 896295758,
       "Value": 0
     },
     {
       "Level": 3,
-      "Pointer": 3,
+      "Pointer": 5,
       "Id": 896295758,
       "Value": 0
     },
     {
       "Level": 1,
-      "Pointer": 1,
+      "Pointer": 6,
       "Id": 913072974,
       "Type": 3,
       "Value": "corrosivebreath"
     },
     {
       "Level": 2,
-      "Pointer": 2,
+      "Pointer": 6,
       "Id": 913072974,
       "Type": 3,
       "Value": "corrosivebreath"
     },
     {
       "Level": 3,
-      "Pointer": 3,
+      "Pointer": 6,
       "Id": 913072974,
       "Type": 3,
       "Value": "corrosivebreath"
@@ -137,21 +131,18 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 1851880033,
       "Type": 2,
       "Value": 0
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 1851880033,
       "Type": 2,
       "Value": 0
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 1851880033,
       "Type": 2,
       "Value": 0

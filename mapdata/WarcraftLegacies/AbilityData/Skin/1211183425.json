@@ -21,7 +21,6 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Takes control of an enemy summoned unit. The mana cost is 20% of the summoned unit\u0027s current hit points."

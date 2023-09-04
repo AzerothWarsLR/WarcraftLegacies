@@ -17,7 +17,6 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Consumes an enemy unit, killing it instantly. Heals the caster for 50% of its hit points."

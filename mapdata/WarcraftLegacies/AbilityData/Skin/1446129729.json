@@ -51,14 +51,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Summon Fire Elemental"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "The Mage summons 1 Fire Elemental. The Fire Elementals have Incinerate and the Immolation abillity."

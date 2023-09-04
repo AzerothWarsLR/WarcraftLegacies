@@ -27,35 +27,30 @@
     },
     {
       "Level": 4,
-      "Pointer": 4,
       "Id": 829453409,
       "Type": 3,
       "Value": "Howl of Terror - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "The Void Reaver lets loose a terrifying howl that reduces nearby enemy units\u0027 attack damage by 25% for \u003CANht,Dur1\u003E seconds."
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
       "Value": "The Hero lets loose a terrifying howl that reduces nearby enemy units\u0027 attack damage by 40% for \u003CANht,Dur2\u003E seconds."
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
       "Value": "The Hero lets loose a terrifying howl that reduces nearby enemy units\u0027 attack damage by 55% for \u003CANht,Dur3\u003E seconds."
     },
     {
       "Level": 4,
-      "Pointer": 4,
       "Id": 828536161,
       "Type": 3,
       "Value": "The Hero lets loose a terrifying howl that reduces nearby enemy units\u0027 attack damage by 70% for \u003CANht,Dur4\u003E seconds."
@@ -66,7 +61,6 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Howl of Despair"

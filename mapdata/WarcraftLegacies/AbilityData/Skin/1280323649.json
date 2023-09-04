@@ -46,14 +46,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Blessing of Seradane"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Empowers friendly units in a radius of \u003CA0PL,Area1\u003E, increasing their movement speed by \u003CA0PL,DataA1,%\u003E% and attack rate by \u003CA0PL,DataB1,%\u003E%."

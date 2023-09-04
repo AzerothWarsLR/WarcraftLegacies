@@ -36,14 +36,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Mana Burn"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Sends a bolt of negative energy that burns up to 40 points of a target enemy unit\u0027s mana. The mana combusts, dealing damage equal to the amount of mana burned."

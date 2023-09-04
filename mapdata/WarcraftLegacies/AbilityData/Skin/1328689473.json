@@ -30,28 +30,24 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Felsteel Plating"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Gives a 25% chance for an attack to be absorbed reducing damage taken by 40 damage. Attacks cannot be reduced below 3 damage."
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
       "Value": "Gives a 35% chance for an attack to be absorbed reducing damage taken by 40 damage. Attacks cannot be reduced below 3 damage."
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
       "Value": "Felsteel Plating"

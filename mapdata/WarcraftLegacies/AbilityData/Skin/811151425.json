@@ -51,35 +51,30 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Death Aura"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "C\u0027thun presence makes all units around him terribly frightened which decreases their combat capabillities. Decreases the armour of nearby troops by 3."
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
       "Value": "C\u0027thun presence makes all units around him terribly frightened which decreases their combat capabillities. Decreases the armour of nearby troops by 5."
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
       "Value": "C\u0027thun presence makes all units around him terribly frightened which decreases their combat capabillities. Decreases the armour of nearby troops by 7."
     },
     {
       "Level": 4,
-      "Pointer": 4,
       "Id": 828536161,
       "Type": 3,
       "Value": "C\u0027thun presence makes all units around him terribly frightened which decreases their combat capabillities. Decreases the armour of nearby troops by 9."

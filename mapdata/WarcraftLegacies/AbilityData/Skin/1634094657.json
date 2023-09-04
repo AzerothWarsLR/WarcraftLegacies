@@ -26,14 +26,12 @@
     },
     {
       "Level": 4,
-      "Pointer": 4,
       "Id": 829453409,
       "Type": 3,
       "Value": "Frost Arrows - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 4,
-      "Pointer": 4,
       "Id": 828536161,
       "Type": 3,
       "Value": "Adds a cold effect to each attack, dealing \u003CANfa,DataA4\u003E bonus damage, slowing a target enemy unit\u0027s attacks by \u003CANfa,DataB4,%\u003E% and movement by \u003CANfa,DataC4,%\u003E% for \u003CANfa,Dur4\u003E seconds."
@@ -45,42 +43,36 @@
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 829715809,
       "Type": 3,
       "Value": "|cffc3dbffRight-click to activate auto-casting.|r"
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 829715809,
       "Type": 3,
       "Value": "|cffc3dbffRight-click to activate auto-casting.|r"
     },
     {
       "Level": 4,
-      "Pointer": 4,
       "Id": 829715809,
       "Type": 3,
       "Value": "|cffc3dbffRight-click to activate auto-casting.|r"
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 829781345,
       "Type": 3,
       "Value": "|cffc3dbffRight-click to deactivate auto-casting.|r"
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 829781345,
       "Type": 3,
       "Value": "|cffc3dbffRight-click to deactivate auto-casting.|r"
     },
     {
       "Level": 4,
-      "Pointer": 4,
       "Id": 829781345,
       "Type": 3,
       "Value": "|cffc3dbffRight-click to deactivate auto-casting.|r"

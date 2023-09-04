@@ -21,14 +21,12 @@
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
       "Value": "Summons a more powerful Infernal from the sky, causing \u003CA08A,DataA2\u003E damage to enemy units near the impact point. The Infernal lasts 50 seconds."
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Summons an Infernal from the sky, causing \u003CA08A,DataA1\u003E damage to enemy units near the impact point. The Infernal lasts 50 seconds."

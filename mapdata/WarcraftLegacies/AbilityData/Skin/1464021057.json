@@ -32,14 +32,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Cleanse"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Removes all buffs from a target unit.|n|cffffcc00Deals \u003CApg2,DataC1\u003E damage to summoned units.|r"

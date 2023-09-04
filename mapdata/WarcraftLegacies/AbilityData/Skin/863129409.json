@@ -19,14 +19,12 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Reincarnation"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "When killed, this unit will come back to life. Reincarnation has a \u003CAOr3,Cool1\u003E second cooldown."

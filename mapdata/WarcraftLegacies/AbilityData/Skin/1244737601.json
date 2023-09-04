@@ -12,42 +12,36 @@
     },
     {
       "Level": 4,
-      "Pointer": 4,
       "Id": 828536161,
       "Type": 3,
       "Value": "Conjures a pillar of flame that burns ground units for 140 damage a second for 3 seconds. As the pillar of flame subsides, units within the fire continue to take major damage."
     },
     {
       "Level": 5,
-      "Pointer": 5,
       "Id": 828536161,
       "Type": 3,
       "Value": "Conjures a pillar of flame that burns ground units for 170 damage a second for 3 seconds. As the pillar of flame subsides, units within the fire continue to take heavy damage."
     },
     {
       "Level": 6,
-      "Pointer": 6,
       "Id": 828536161,
       "Type": 3,
       "Value": "Conjures a pillar of flame that burns ground units for 200 damage a second for 3 seconds. As the pillar of flame subsides, units within the fire continue to take great damage."
     },
     {
       "Level": 4,
-      "Pointer": 4,
       "Id": 829453409,
       "Type": 3,
       "Value": "Flame Strike (|cffffcc00Q|r) - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 5,
-      "Pointer": 5,
       "Id": 829453409,
       "Type": 3,
       "Value": "Flame Strike (|cffffcc00Q|r) - [|cffffcc00Level 5|r]"
     },
     {
       "Level": 6,
-      "Pointer": 6,
       "Id": 829453409,
       "Type": 3,
       "Value": "|cffffcc00F|rlame Strike - [|cffffcc00Level 6|r]"
@@ -69,21 +63,18 @@
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
       "Value": "Inferno Strike (|cffffcc00R|r) - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
       "Value": "Inferno Strike (|cffffcc00R|r) - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Inferno Strike (|cffffcc00R|r) - [|cffffcc00Level 1|r]"
@@ -95,21 +86,18 @@
     },
     {
       "Level": 1,
-      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Conjures forth a gigantic pillar of flame which deals 100 damage per second for 6 seconds."
     },
     {
       "Level": 2,
-      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
       "Value": "Conjures forth a gigantic pillar of flame which deals 150 damage per second for 6 seconds."
     },
     {
       "Level": 3,
-      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
       "Value": "Conjures forth a gigantic pillar of flame which deals 200 damage per second for 6 seconds."
