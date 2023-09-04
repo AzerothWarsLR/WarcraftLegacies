@@ -14,10 +14,8 @@ public static class TriggerStringsExtensions
     var dictionary = new Dictionary<uint, string>();
     foreach (var triggerString in triggerStrings.Strings)
     {
-      if (triggerString.Value == null)
-        throw new InvalidOperationException($"Cannot parse a {nameof(TriggerString)} with a null value.");
-        
-      dictionary.Add(triggerString.Key, triggerString.Value);
+      if (triggerString.Value != null)
+        dictionary.Add(triggerString.Key, triggerString.Value);
     } 
       
     return dictionary;
