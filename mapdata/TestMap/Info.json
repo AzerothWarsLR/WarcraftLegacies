@@ -59,10 +59,10 @@
       "Race": 1,
       "Name": "TRIGSTR_005",
       "StartPosition": {},
-      "AllyLowPriorityFlags": {},
-      "AllyHighPriorityFlags": {},
-      "EnemyLowPriorityFlags": {},
-      "EnemyHighPriorityFlags": {}
+      "AllyLowPriorityFlags": -1,
+      "AllyHighPriorityFlags": -1,
+      "EnemyLowPriorityFlags": -1,
+      "EnemyHighPriorityFlags": -1
     },
     {
       "Id": 1,
@@ -70,10 +70,10 @@
       "Race": 2,
       "Name": "TRIGSTR_010",
       "StartPosition": {},
-      "AllyLowPriorityFlags": {},
-      "AllyHighPriorityFlags": {},
-      "EnemyLowPriorityFlags": {},
-      "EnemyHighPriorityFlags": {}
+      "AllyLowPriorityFlags": -1,
+      "AllyHighPriorityFlags": -1,
+      "EnemyLowPriorityFlags": -1,
+      "EnemyHighPriorityFlags": -1
     },
     {
       "Id": 2,
@@ -81,10 +81,10 @@
       "Race": 3,
       "Name": "TRIGSTR_011",
       "StartPosition": {},
-      "AllyLowPriorityFlags": {},
-      "AllyHighPriorityFlags": {},
-      "EnemyLowPriorityFlags": {},
-      "EnemyHighPriorityFlags": {}
+      "AllyLowPriorityFlags": -1,
+      "AllyHighPriorityFlags": -1,
+      "EnemyLowPriorityFlags": -1,
+      "EnemyHighPriorityFlags": -1
     },
     {
       "Id": 3,
@@ -92,10 +92,10 @@
       "Race": 4,
       "Name": "TRIGSTR_012",
       "StartPosition": {},
-      "AllyLowPriorityFlags": {},
-      "AllyHighPriorityFlags": {},
-      "EnemyLowPriorityFlags": {},
-      "EnemyHighPriorityFlags": {}
+      "AllyLowPriorityFlags": -1,
+      "AllyHighPriorityFlags": -1,
+      "EnemyLowPriorityFlags": -1,
+      "EnemyHighPriorityFlags": -1
     },
     {
       "Id": 4,
@@ -103,10 +103,10 @@
       "Race": 1,
       "Name": "TRIGSTR_013",
       "StartPosition": {},
-      "AllyLowPriorityFlags": {},
-      "AllyHighPriorityFlags": {},
-      "EnemyLowPriorityFlags": {},
-      "EnemyHighPriorityFlags": {}
+      "AllyLowPriorityFlags": -1,
+      "AllyHighPriorityFlags": -1,
+      "EnemyLowPriorityFlags": -1,
+      "EnemyHighPriorityFlags": -1
     },
     {
       "Id": 5,
@@ -114,10 +114,10 @@
       "Race": 2,
       "Name": "TRIGSTR_014",
       "StartPosition": {},
-      "AllyLowPriorityFlags": {},
-      "AllyHighPriorityFlags": {},
-      "EnemyLowPriorityFlags": {},
-      "EnemyHighPriorityFlags": {}
+      "AllyLowPriorityFlags": -1,
+      "AllyHighPriorityFlags": -1,
+      "EnemyLowPriorityFlags": -1,
+      "EnemyHighPriorityFlags": -1
     },
     {
       "Id": 6,
@@ -125,10 +125,10 @@
       "Race": 3,
       "Name": "TRIGSTR_015",
       "StartPosition": {},
-      "AllyLowPriorityFlags": {},
-      "AllyHighPriorityFlags": {},
-      "EnemyLowPriorityFlags": {},
-      "EnemyHighPriorityFlags": {}
+      "AllyLowPriorityFlags": -1,
+      "AllyHighPriorityFlags": -1,
+      "EnemyLowPriorityFlags": -1,
+      "EnemyHighPriorityFlags": -1
     },
     {
       "Id": 7,
@@ -136,10 +136,10 @@
       "Race": 4,
       "Name": "TRIGSTR_016",
       "StartPosition": {},
-      "AllyLowPriorityFlags": {},
-      "AllyHighPriorityFlags": {},
-      "EnemyLowPriorityFlags": {},
-      "EnemyHighPriorityFlags": {}
+      "AllyLowPriorityFlags": -1,
+      "AllyHighPriorityFlags": -1,
+      "EnemyLowPriorityFlags": -1,
+      "EnemyHighPriorityFlags": -1
     },
     {
       "Id": 8,
@@ -147,10 +147,10 @@
       "Race": 1,
       "Name": "TRIGSTR_017",
       "StartPosition": {},
-      "AllyLowPriorityFlags": {},
-      "AllyHighPriorityFlags": {},
-      "EnemyLowPriorityFlags": {},
-      "EnemyHighPriorityFlags": {}
+      "AllyLowPriorityFlags": -1,
+      "AllyHighPriorityFlags": -1,
+      "EnemyLowPriorityFlags": -1,
+      "EnemyHighPriorityFlags": -1
     },
     {
       "Id": 9,
@@ -158,10 +158,10 @@
       "Race": 2,
       "Name": "TRIGSTR_018",
       "StartPosition": {},
-      "AllyLowPriorityFlags": {},
-      "AllyHighPriorityFlags": {},
-      "EnemyLowPriorityFlags": {},
-      "EnemyHighPriorityFlags": {}
+      "AllyLowPriorityFlags": -1,
+      "AllyHighPriorityFlags": -1,
+      "EnemyLowPriorityFlags": -1,
+      "EnemyHighPriorityFlags": -1
     },
     {
       "Id": 10,
@@ -169,10 +169,10 @@
       "Race": 3,
       "Name": "TRIGSTR_019",
       "StartPosition": {},
-      "AllyLowPriorityFlags": {},
-      "AllyHighPriorityFlags": {},
-      "EnemyLowPriorityFlags": {},
-      "EnemyHighPriorityFlags": {}
+      "AllyLowPriorityFlags": -1,
+      "AllyHighPriorityFlags": -1,
+      "EnemyLowPriorityFlags": -1,
+      "EnemyHighPriorityFlags": -1
     },
     {
       "Id": 11,
@@ -180,20 +180,20 @@
       "Race": 4,
       "Name": "TRIGSTR_020",
       "StartPosition": {},
-      "AllyLowPriorityFlags": {},
-      "AllyHighPriorityFlags": {},
-      "EnemyLowPriorityFlags": {},
-      "EnemyHighPriorityFlags": {}
+      "AllyLowPriorityFlags": -1,
+      "AllyHighPriorityFlags": -1,
+      "EnemyLowPriorityFlags": -1,
+      "EnemyHighPriorityFlags": -1
     }
   ],
   "Forces": [
     {
-      "Players": {},
+      "Players": -1,
       "Name": "TRIGSTR_006"
     },
     {
       "Flags": 9,
-      "Players": {},
+      "Players": -1,
       "Name": "TRIGSTR_021"
     }
   ],
