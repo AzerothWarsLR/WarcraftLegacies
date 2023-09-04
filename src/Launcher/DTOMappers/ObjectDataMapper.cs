@@ -205,7 +205,7 @@ namespace Launcher.DTOMappers
         Type = objectDataModification.Type,
         Value = value,
         Level = objectDataModification.Level,
-        Pointer = objectDataModification.Level
+        Pointer = objectDataModification.Pointer
       };
     }
 
