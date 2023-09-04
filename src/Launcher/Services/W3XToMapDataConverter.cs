@@ -100,7 +100,7 @@ namespace Launcher.Services
       if (map.DestructableSkinObjectData != null)
         SerializeAndWriteDestructableData(map.DestructableSkinObjectData, objectDataMapper, true, outputFolderPath, DestructableDataDirectoryPath, SkinDataDirectorySubPath);
       if (map.DoodadObjectData != null)
-        SerializeAndWriteDoodadData(map.DoodadObjectData, objectDataMapper, false, outputFolderPath, DoodadDataDirectoryPath, CoreDataDirectorySubPath);
+        SerializeAndWriteDoodadData(map.DoodadObjectData, objectDataMapper, true, outputFolderPath, DoodadDataDirectoryPath, CoreDataDirectorySubPath);
       if (map.DoodadSkinObjectData != null)
         SerializeAndWriteDoodadData(map.DoodadSkinObjectData, objectDataMapper, true, outputFolderPath, DoodadDataDirectoryPath, SkinDataDirectorySubPath);
       if (map.BuffObjectData != null)
@@ -108,7 +108,7 @@ namespace Launcher.Services
       if (map.BuffSkinObjectData != null)
         SerializeAndWriteBuffData(map.BuffSkinObjectData, objectDataMapper, true, outputFolderPath, BuffDataDirectoryPath, SkinDataDirectorySubPath);
       if (map.UpgradeObjectData != null)
-        SerializeAndWriteUpgradeData(map.UpgradeObjectData, objectDataMapper, false, outputFolderPath, UpgradeDataDirectoryPath, CoreDataDirectorySubPath);
+        SerializeAndWriteUpgradeData(map.UpgradeObjectData, objectDataMapper, true, outputFolderPath, UpgradeDataDirectoryPath, CoreDataDirectorySubPath);
       if (map.UpgradeSkinObjectData != null) 
         SerializeAndWriteUpgradeData(map.UpgradeSkinObjectData, objectDataMapper, true, outputFolderPath, UpgradeDataDirectoryPath, SkinDataDirectorySubPath);
     }
