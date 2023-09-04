@@ -70,7 +70,7 @@ namespace Launcher.Services
 
     private static bool ValueIsTriggerString(ObjectDataModification modification)
     {
-      if (modification.Type == ObjectDataType.String)
+      if (modification.Type != ObjectDataType.String)
         return false;
 
       return modification.Value is string asString && asString.StartsWith("TRIGSTR_");
