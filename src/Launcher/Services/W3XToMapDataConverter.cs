@@ -75,15 +75,13 @@ namespace Launcher.Services
         SerializeAndWrite<MapPreviewIcons, MapPreviewIconsDto>(map.PreviewIcons, outputFolderPath, PreviewIconsPath);
       if (map.ShadowMap != null)
         SerializeAndWrite<MapShadowMap, MapShadowMapDto>(map.ShadowMap, outputFolderPath, ShadowMapPath);
-      if (map.TriggerStrings != null)
-        SerializeAndWriteTriggerStrings(map.TriggerStrings, Path.Combine(outputFolderPath, TriggerStringsDirectoryPath));
       if (map.Sounds != null)
         SerializeAndWriteSounds(map.Sounds, Path.Combine(outputFolderPath, SoundsDirectoryPath));
 
       if (map.UnitObjectData != null)
-        SerializeAndWriteUnitData(map.UnitObjectData, outputFolderPath, UnitDataDirectoryPath, CoreDataDirectorySubPath);
+        SerializeAndWriteUnitData(map.UnitObjectData, map.TriggerStrings, outputFolderPath, UnitDataDirectoryPath, CoreDataDirectorySubPath);
       if (map.UnitSkinObjectData != null)
-        SerializeAndWriteUnitData(map.UnitSkinObjectData, outputFolderPath, UnitDataDirectoryPath, SkinDataDirectorySubPath);
+        SerializeAndWriteUnitData(map.UnitSkinObjectData, map.TriggerStrings, outputFolderPath, UnitDataDirectoryPath, SkinDataDirectorySubPath);
       if (map.AbilityObjectData != null)
         SerializeAndWriteAbilityData(map.AbilityObjectData, outputFolderPath, AbilityDataDirectoryPath, CoreDataDirectorySubPath);
       if (map.AbilitySkinObjectData != null)
@@ -191,31 +189,20 @@ namespace Launcher.Services
         SerializeAndWrite<Sound, SoundDto>(sound, path, $"{sound.Name.Remove(0, 7)}.json");
     }
     
-    private void SerializeAndWriteTriggerStrings(TriggerStrings triggerStrings, string path)
-    {
-      if (!Directory.Exists(path))
-        Directory.CreateDirectory(path);
-      
-      foreach (var triggerString in triggerStrings.Strings)
-      {
-        var asJson = JsonSerializer.Serialize(triggerString, _jsonSerializerOptions);
-        var fileName = Path.Combine(path, $"{triggerString.Key}.json");
-        File.WriteAllText(fileName, asJson);
-      }
-    }
-    
     private void SerializeAndWriteRegions(MapRegions regions, string path)
     {
       foreach (var region in regions.Regions)
         SerializeAndWrite<Region, RegionDto>(region, path, $"{region.Name}.json");
     }
     
-    private void SerializeAndWriteUnitData(UnitObjectData unitObjectData, params string[] paths)
+    private void SerializeAndWriteUnitData(UnitObjectData unitObjectData, TriggerStrings? triggerStrings, params string[] paths)
     {
-      foreach (var unit in unitObjectData.BaseUnits) 
+      var dto = new ObjectDataToDtoConverter().ConvertToDto(unitObjectData, triggerStrings);
+      
+      foreach (var unit in dto.BaseUnits) 
         SerializeAndWriteSimpleObjectModification(unit, Path.Combine(paths));
       
-      foreach (var unit in unitObjectData.NewUnits) 
+      foreach (var unit in dto.NewUnits) 
         SerializeAndWriteSimpleObjectModification(unit, Path.Combine(paths));
     }
     

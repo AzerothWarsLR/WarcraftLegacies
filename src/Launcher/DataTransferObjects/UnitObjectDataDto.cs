@@ -2,7 +2,7 @@
 
 namespace Launcher.DataTransferObjects
 {
-  public class MapUnitObjectDataDto
+  public class UnitObjectDataDto
   {
     public int FormatVersion { get; set; }
     public SimpleObjectModification[] BaseUnits { get; set; }
