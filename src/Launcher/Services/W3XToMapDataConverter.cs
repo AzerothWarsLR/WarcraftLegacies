@@ -79,7 +79,7 @@ namespace Launcher.Services
         SerializeAndWriteSounds(map.Sounds, Path.Combine(outputFolderPath, SoundsDirectoryPath));
 
       if (map.UnitObjectData != null)
-        SerializeAndWriteUnitData(map.UnitObjectData, map.TriggerStrings, outputFolderPath, UnitDataDirectoryPath, CoreDataDirectorySubPath);
+        SerializeAndWriteUnitData(map.UnitObjectData, null, outputFolderPath, UnitDataDirectoryPath, CoreDataDirectorySubPath);
       if (map.UnitSkinObjectData != null)
         SerializeAndWriteUnitData(map.UnitSkinObjectData, map.TriggerStrings, outputFolderPath, UnitDataDirectoryPath, SkinDataDirectorySubPath);
       if (map.AbilityObjectData != null)
