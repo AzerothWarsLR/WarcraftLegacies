@@ -18,7 +18,7 @@ namespace Launcher.DTOMappers
     /// <param name="objectData">The objects to convert.</param>
     /// <param name="triggerStrings">If supplied, unit data values that point to trigger string keys will instead be
     /// replaced with the value of those keys.</param>
-    public static UnitObjectDataDto MapToDto(UnitObjectData objectData, Dictionary<uint, string> triggerStrings)
+    public static UnitObjectDataDto MapToDto(UnitObjectData objectData, Dictionary<uint, string>? triggerStrings)
     {
       var dto = new UnitObjectDataDto
       {
@@ -33,7 +33,7 @@ namespace Launcher.DTOMappers
       return dto;
     }
     
-    public static MapBuffObjectDataDto MapToDto(BuffObjectData objectData, Dictionary<uint, string> triggerStrings)
+    public static MapBuffObjectDataDto MapToDto(BuffObjectData objectData, Dictionary<uint, string>? triggerStrings)
     {
       var dto = new MapBuffObjectDataDto
       {
@@ -48,7 +48,7 @@ namespace Launcher.DTOMappers
       return dto;
     }
     
-    public static MapDoodadObjectDataDto MapToDto(DoodadObjectData objectData, Dictionary<uint, string> triggerStrings)
+    public static MapDoodadObjectDataDto MapToDto(DoodadObjectData objectData, Dictionary<uint, string>? triggerStrings)
     {
       var dto = new MapDoodadObjectDataDto
       {
@@ -63,7 +63,7 @@ namespace Launcher.DTOMappers
       return dto;
     }
     
-    public static MapDestructableObjectDataDto MapToDto(DestructableObjectData objectData, Dictionary<uint, string> triggerStrings)
+    public static MapDestructableObjectDataDto MapToDto(DestructableObjectData objectData, Dictionary<uint, string>? triggerStrings)
     {
       var dto = new MapDestructableObjectDataDto
       {
@@ -78,7 +78,7 @@ namespace Launcher.DTOMappers
       return dto;
     }
     
-    public static MapItemObjectDataDto MapToDto(ItemObjectData objectData, Dictionary<uint, string> triggerStrings)
+    public static MapItemObjectDataDto MapToDto(ItemObjectData objectData, Dictionary<uint, string>? triggerStrings)
     {
       var dto = new MapItemObjectDataDto
       {
@@ -93,7 +93,7 @@ namespace Launcher.DTOMappers
       return dto;
     }
     
-    public static MapAbilityObjectDataDto MapToDto(AbilityObjectData objectData, Dictionary<uint, string> triggerStrings)
+    public static MapAbilityObjectDataDto MapToDto(AbilityObjectData objectData, Dictionary<uint, string>? triggerStrings)
     {
       var dto = new MapAbilityObjectDataDto
       {
@@ -108,7 +108,7 @@ namespace Launcher.DTOMappers
       return dto;
     }
     
-    public static MapUpgradeObjectDataDto MapToDto(UpgradeObjectData objectData, Dictionary<uint, string> triggerStrings)
+    public static MapUpgradeObjectDataDto MapToDto(UpgradeObjectData objectData, Dictionary<uint, string>? triggerStrings)
     {
       var dto = new MapUpgradeObjectDataDto
       {
