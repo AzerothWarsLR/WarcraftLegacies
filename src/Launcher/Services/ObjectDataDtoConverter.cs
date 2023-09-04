@@ -47,19 +47,20 @@ namespace Launcher.Services
           0
         },
         Modifications = simpleObjectModification.Modifications
-          .Select(x => ConvertSimpleObjectDataModificationToDto(x, triggerStringDictionary))
+          .Select(x => ConvertObjectDataModificationToDto(x, triggerStringDictionary))
           .ToList()
       };
       return dto;
     }
 
-    private static SimpleObjectDataModification ConvertSimpleObjectDataModificationToDto(SimpleObjectDataModification simpleObjectDataModification, IReadOnlyDictionary<uint, string>? triggerStrings)
+    private static T ConvertObjectDataModificationToDto<T>(T simpleObjectDataModification,
+      IReadOnlyDictionary<uint, string>? triggerStrings) where T : ObjectDataModification, new()
     {
       var value = triggerStrings != null && ValueIsTriggerString(simpleObjectDataModification)
         ? triggerStrings[ParseTriggerStringAsKey((simpleObjectDataModification.Value as string)!)]
         : simpleObjectDataModification.Value;
 
-      return new SimpleObjectDataModification
+      return new T
       {
         Id = simpleObjectDataModification.Id,
         Type = simpleObjectDataModification.Type,
