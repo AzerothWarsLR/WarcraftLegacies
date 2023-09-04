@@ -180,8 +180,8 @@ namespace Launcher.DTOMappers
     private static SimpleObjectDataModification MapObjectDataModificationToDto(SimpleObjectDataModification objectDataModification,
       IReadOnlyDictionary<uint, string>? triggerStrings)
     {
-      var value = triggerStrings != null && ValueIsTriggerString(objectDataModification)
-        ? triggerStrings[ParseTriggerStringAsKey((objectDataModification.Value as string)!)]
+      var value = triggerStrings != null && TriggerStringParser.ValueIsTriggerString(objectDataModification)
+        ? triggerStrings[TriggerStringParser.ParseTriggerStringAsKey((objectDataModification.Value as string)!)]
         : objectDataModification.Value;
       
       return new SimpleObjectDataModification
@@ -195,8 +195,8 @@ namespace Launcher.DTOMappers
     private static LevelObjectDataModification MapLevelObjectDataModificationToDto(LevelObjectDataModification objectDataModification,
       IReadOnlyDictionary<uint, string>? triggerStrings)
     {
-      var value = triggerStrings != null && ValueIsTriggerString(objectDataModification)
-        ? triggerStrings[ParseTriggerStringAsKey((objectDataModification.Value as string)!)]
+      var value = triggerStrings != null && TriggerStringParser.ValueIsTriggerString(objectDataModification)
+        ? triggerStrings[TriggerStringParser.ParseTriggerStringAsKey((objectDataModification.Value as string)!)]
         : objectDataModification.Value;
       
       return new LevelObjectDataModification
@@ -212,8 +212,8 @@ namespace Launcher.DTOMappers
     private static VariationObjectDataModification MapVariationObjectDataModificationToDto(VariationObjectDataModification objectDataModification,
       IReadOnlyDictionary<uint, string>? triggerStrings)
     {
-      var value = triggerStrings != null && ValueIsTriggerString(objectDataModification)
-        ? triggerStrings[ParseTriggerStringAsKey((objectDataModification.Value as string)!)]
+      var value = triggerStrings != null && TriggerStringParser.ValueIsTriggerString(objectDataModification)
+        ? triggerStrings[TriggerStringParser.ParseTriggerStringAsKey((objectDataModification.Value as string)!)]
         : objectDataModification.Value;
       
       return new VariationObjectDataModification
@@ -224,23 +224,6 @@ namespace Launcher.DTOMappers
         Variation = objectDataModification.Variation,
         Pointer = objectDataModification.Pointer
       };
-    }
-
-    private static bool ValueIsTriggerString(ObjectDataModification modification)
-    {
-      if (modification.Type != ObjectDataType.String)
-        return false;
-
-      return modification.Value is string asString && asString.StartsWith("TRIGSTR_");
-    }
-    
-    private static uint ParseTriggerStringAsKey(string triggerString)
-    {
-      var textAfterUnderscore = triggerString[(triggerString.LastIndexOf('_') + 1)..];
-      if (uint.TryParse(textAfterUnderscore, out var parsedKey))
-        return parsedKey;
-
-      throw new InvalidOperationException($"{triggerString} does not contain a valid TriggerString key.");
     }
   }
 }
