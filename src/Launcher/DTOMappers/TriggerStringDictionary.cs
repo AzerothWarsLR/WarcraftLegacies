@@ -19,13 +19,8 @@ namespace Launcher.DTOMappers
     /// Gets a value from a <see cref="Dictionary{TKey,TValue}"/> of TriggerString values indexed by a key.
     /// <para>If the provided key turns out to be invalid, this method will return the key back.</para> 
     /// </summary>
-    private string GetTriggerStringValueFromKey(string key)
-    {
-      if (!ObjectIsTriggerStringKey(key))
-        throw new ArgumentException($"{key} is not a valid TriggerString key.");
-      
-      return _triggerStrings[ParseTriggerStringAsKey(key)];
-    }
+    private string GetTriggerStringValueFromKey(string key) =>
+      !ObjectIsTriggerStringKey(key) ? key : _triggerStrings[ParseTriggerStringAsKey(key)];
 
     private static uint ParseTriggerStringAsKey(string triggerString)
     {
