@@ -202,7 +202,7 @@ namespace Launcher.Services
     
     private void SerializeAndWriteUnitData(UnitObjectData unitObjectData, Dictionary<uint, string> triggerStrings, params string[] paths)
     {
-      var dto = new ObjectDataToDtoMapper().MapToDto(unitObjectData, triggerStrings);
+      var dto = ObjectDataMapper.MapToDto(unitObjectData, triggerStrings);
       
       foreach (var unit in dto.BaseUnits) 
         SerializeAndWriteSimpleObjectModification(unit, Path.Combine(paths));
