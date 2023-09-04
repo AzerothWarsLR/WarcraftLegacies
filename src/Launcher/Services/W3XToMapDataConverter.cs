@@ -124,7 +124,8 @@ namespace Launcher.Services
     private static void CopyUnserializableFiles(string baseMapPath, string outputFolderPath)
     {
       foreach (var filePath in GetUnserializableFilePaths())
-        File.Copy($"{baseMapPath}/{filePath}", $@"{outputFolderPath}\{filePath}", true);
+        if (File.Exists($"{baseMapPath}/{filePath}"))
+          File.Copy($"{baseMapPath}/{filePath}", $@"{outputFolderPath}\{filePath}", true);
     }
     
     /// <summary>
