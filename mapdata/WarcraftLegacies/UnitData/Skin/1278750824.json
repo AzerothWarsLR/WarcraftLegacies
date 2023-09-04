@@ -13,7 +13,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_13230"
+      "Value": "(scarlet)"
     },
     {
       "Id": 1818520949,
@@ -23,7 +23,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_4046"
+      "Value": "E"
     },
     {
       "Id": 1633907573,
@@ -33,7 +33,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_16315"
+      "Value": "Cavalier"
     },
     {
       "Id": 1668510581,
@@ -43,12 +43,12 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_16316"
+      "Value": "Train Cavalier"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_3509"
+      "Value": "Crusader Knight for the Scarlet Cause.|n|cfff5962dAbilities:|R Charge, Trample, United for the Cause|n|n|cffffcc00Attacks land units.|r"
     }
   ]
 }

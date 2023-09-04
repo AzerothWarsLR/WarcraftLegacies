@@ -22,12 +22,12 @@
     {
       "Id": 1853186933,
       "Type": 3,
-      "Value": "TRIGSTR_693"
+      "Value": "Initiate, Adept, Master"
     },
     {
       "Id": 1953850229,
       "Type": 3,
-      "Value": "TRIGSTR_1812"
+      "Value": "- Shadow Storm,- Shadow Storm|n- Cyclone,- Shadow Storm|n- Cyclone|n- Inner Will"
     },
     {
       "Id": 1667462261,
@@ -36,7 +36,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_1813"
+      "Value": "(C\u0027thun Tol\u0027vir Statue)"
     },
     {
       "Id": 1818520949,
@@ -46,7 +46,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_1758"
+      "Value": "E"
     },
     {
       "Id": 2054188149,
@@ -66,7 +66,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_1815"
+      "Value": "Tol\u0027vir Statue"
     },
     {
       "Id": 1668510581,
@@ -80,12 +80,12 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_9203"
+      "Value": "Train - Tol\u0027vir Statue"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_17427"
+      "Value": "Ancient Animated Statue from the time of Old.|n|cffffcc00Casts:|r Shadow storm, Cyclone |n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Id": 1684960117,

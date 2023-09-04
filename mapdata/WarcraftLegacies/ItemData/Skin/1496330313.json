@@ -21,27 +21,27 @@
     {
       "Id": 1936024681,
       "Type": 3,
-      "Value": "TRIGSTR_17082"
+      "Value": "Summons Drone"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_13857"
+      "Value": "X"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_1220"
+      "Value": "Summon Drone"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_17083"
+      "Value": "Purchase Summon Drone"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_17084"
+      "Value": "Summons Drone"
     }
   ]
 }

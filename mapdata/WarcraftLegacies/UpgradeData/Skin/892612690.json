@@ -15,25 +15,25 @@
       "Level": 1,
       "Id": 1718840935,
       "Type": 3,
-      "Value": "TRIGSTR_14386"
+      "Value": "(Dalaran) (Quest)"
     },
     {
       "Level": 1,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "TRIGSTR_14387"
+      "Value": "Hard Crystal Constructs"
     },
     {
       "Level": 1,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_14388"
+      "Value": "Research Hard Crystal Constructs"
     },
     {
       "Level": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "TRIGSTR_14389"
+      "Value": "Transforms Earth Golems into Crystal Golems, increasing their hit points by 500 and attack damage by 20."
     }
   ]
 }

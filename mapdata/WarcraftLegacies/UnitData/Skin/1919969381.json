@@ -7,12 +7,12 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_1091"
+      "Value": "(Sentinels)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_1008"
+      "Value": "Q"
     },
     {
       "Id": 1633907573,
@@ -22,12 +22,12 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_1093"
+      "Value": "Train Hippogryph Rider"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_17880"
+      "Value": "Airborne archer of the Sentinels who strikes multiple foes.|n|cfff5962dAbilities:|R Multi Shot |n|cfff5962dCan learn:|R Wind Walk|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land and air units.|r"
     }
   ]
 }

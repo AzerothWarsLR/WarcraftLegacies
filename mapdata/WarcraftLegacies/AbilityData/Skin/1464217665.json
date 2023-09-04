@@ -17,29 +17,29 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_9571"
+      "Value": "(Dalaran-Geomancer)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_10800"
+      "Value": "E"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_9573"
+      "Value": "Healing Shield"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_9574"
+      "Value": "Healing Shield"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_10347"
+      "Value": "Forms a shield of healing energy around a target unit, restoring 15 health per second to all units around it. |n|cffffcc00Lasts 20 seconds."
     }
   ]
 }

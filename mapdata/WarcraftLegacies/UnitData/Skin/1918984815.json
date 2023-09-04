@@ -15,12 +15,12 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_2728"
+      "Value": "(Frostwolf Barracks)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_504"
+      "Value": "A"
     },
     {
       "Id": 1633907573,
@@ -30,12 +30,12 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_505"
+      "Value": "War Camp"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_506"
+      "Value": "Build War Camp"
     },
     {
       "Id": 1935832437,
@@ -45,7 +45,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_21233"
+      "Value": "Home to the warriors of the Horde.|n|cfff5962dTrains:|R Grunt, Headhunter, Bat Rider |n|cfff5962dResearches:|R Airborne Toxins"
     }
   ]
 }

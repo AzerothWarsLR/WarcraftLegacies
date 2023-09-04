@@ -13,17 +13,17 @@
     {
       "Id": 1885959270,
       "Type": 3,
-      "Value": "TRIGSTR_13521"
+      "Value": "Fire Attacks"
     },
     {
       "Id": 1700951398,
       "Type": 3,
-      "Value": "TRIGSTR_13522"
+      "Value": "This unit was hit by a Fire Attack; it has reduced movement speed and a chance to miss on attacks."
     },
     {
       "Id": 1835101798,
       "Type": 3,
-      "Value": "TRIGSTR_13523"
+      "Value": "Fire attacks"
     },
     {
       "Id": 1952543846,

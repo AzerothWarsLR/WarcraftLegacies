@@ -46,10 +46,8 @@ namespace Launcher
     /// </summary>
     public static IEnumerable<string> GetUnserializableFilePaths()
     {
-      yield return ScriptPath;
       yield return MinimapPath;
       yield return GameplayConstantsPath;
-      yield return GameInterfacePath;
     }
   }
 }

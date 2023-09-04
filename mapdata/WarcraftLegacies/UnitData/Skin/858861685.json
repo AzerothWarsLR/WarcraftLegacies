@@ -35,7 +35,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_1424"
+      "Value": "(C\u0027thun Giant Scarab)"
     },
     {
       "Id": 1818520949,
@@ -49,7 +49,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_1425"
+      "Value": "E"
     },
     {
       "Id": 2053990773,
@@ -64,7 +64,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_1426"
+      "Value": "Giant Scarab"
     },
     {
       "Id": 1668510581,
@@ -94,12 +94,12 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_1576"
+      "Value": "Train - Giant Scarab"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_1428"
+      "Value": "Heavy melee Siege unit. Has Cleaving attack and a high hit point regeneration.|r|n|cffffcc00Attacks land units and trees. |r"
     },
     {
       "Id": 1684960117,

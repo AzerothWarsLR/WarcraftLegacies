@@ -11,12 +11,12 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_1117"
+      "Value": "(Druids)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_1053"
+      "Value": "Q"
     },
     {
       "Id": 828468597,
@@ -41,12 +41,12 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_1312"
+      "Value": "Ranged supportive spellcaster. |n|cfff5962dAbilities:|R Roar |n|cfff5962dCan learn:|R Rejuvenation, Summon Bear|n|n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Id": 1953850229,
       "Type": 3,
-      "Value": "TRIGSTR_14760"
+      "Value": "- Roar,- Roar|n- Rejuvenation,- Roar|n- Rejuvenation|n- Summon Bear"
     }
   ]
 }

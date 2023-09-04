@@ -17,7 +17,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19732"
+      "Value": " (Ironforge T2)"
     },
     {
       "Id": 1818520949,
@@ -27,7 +27,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_2701"
+      "Value": "C"
     },
     {
       "Id": 1831952757,
@@ -52,17 +52,17 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_1251"
+      "Value": "Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Mason |n|cfff5962dAbilities:|R Powered Up Ammunition |n|cfff5962dUpgrades to:|R Castle"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_18661"
+      "Value": "Dwarf Hold"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_18662"
+      "Value": "Upgrade to Dwarf Hold"
     }
   ]
 }

@@ -8,17 +8,17 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_16060"
+      "Value": "(Night Elves)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_3093"
+      "Value": "S"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_16009"
+      "Value": "Fireship"
     },
     {
       "Id": 1668510581,
@@ -28,12 +28,12 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_16014"
+      "Value": "Build Fireship"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_16022"
+      "Value": "Short range medium ship.|n|r|n|cffffcc00Attacks land units.|r|nStrong versus Frigates, Weak to Galleys."
     },
     {
       "Id": 1633907573,

@@ -22,7 +22,7 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_11883"
+      "Value": "(Purple - Silverhand Paladin)"
     },
     {
       "Id": 1952540001,
@@ -32,7 +32,7 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_11884"
+      "Value": "Consecrated Strikes"
     },
     {
       "Id": 1667331169,
@@ -42,97 +42,97 @@
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_11885"
+      "Value": "Consecrated Strikes - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_11886"
+      "Value": "Consecrated Strikes - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_11887"
+      "Value": "Consecrated Strikes - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_11888"
+      "Value": "Consecrated Strikes - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 5,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_11889"
+      "Value": "Consecrated Strikes - [|cffffcc00Level 5|r]"
     },
     {
       "Level": 6,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_11890"
+      "Value": "Consecrated Strikes - [|cffffcc00Level 6|r]"
     },
     {
       "Level": 7,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_11891"
+      "Value": "Consecrated Strikes - [|cffffcc00Level 7|r]"
     },
     {
       "Level": 8,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_11892"
+      "Value": "Consecrated Strikes - [|cffffcc00Level 8|r]"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_11893"
+      "Value": "Gives a 20% chance that an attack will deal 35 damage to nearby units."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_11894"
+      "Value": "Gives a 20% chance that an attack will deal 40 damage to nearby units."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_11895"
+      "Value": "Gives a 20% chance that an attack will deal 45 damage to nearby units."
     },
     {
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_11896"
+      "Value": "Gives a 20% chance that an attack will deal 50 damage to nearby units."
     },
     {
       "Level": 5,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_11897"
+      "Value": "Gives a 20% chance that an attack will deal 55 damage to nearby units."
     },
     {
       "Level": 6,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_11898"
+      "Value": "Gives a 20% chance that an attack will deal 60 damage to nearby units."
     },
     {
       "Level": 7,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_11899"
+      "Value": "Gives a 20% chance that an attack will deal 65 damage to nearby units."
     },
     {
       "Level": 8,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_11900"
+      "Value": "Gives a 20% chance that an attack will deal 70 damage to nearby units."
     }
   ]
 }

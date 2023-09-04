@@ -17,7 +17,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19767"
+      "Value": "(Stormwind T3)"
     },
     {
       "Id": 1818520949,
@@ -27,7 +27,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_2792"
+      "Value": "C"
     },
     {
       "Id": 845245813,
@@ -62,7 +62,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_17642"
+      "Value": "Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Peasant, Stormwind Champion|n|cfff5962dResearches:|r Full Scale Escalation |n|cfff5962dAbilities:|R Summon Garrison, Call to Arms"
     }
   ]
 }

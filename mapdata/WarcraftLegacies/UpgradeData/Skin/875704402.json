@@ -9,55 +9,55 @@
       "Level": 1,
       "Id": 1718840935,
       "Type": 3,
-      "Value": "TRIGSTR_14494"
+      "Value": "(Fel Horde)"
     },
     {
       "Level": 1,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_16023"
+      "Value": "Z"
     },
     {
       "Level": 2,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_16024"
+      "Value": "Z"
     },
     {
       "Level": 1,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "TRIGSTR_14706"
+      "Value": "Necrolyte Adept Training"
     },
     {
       "Level": 2,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "TRIGSTR_14707"
+      "Value": "Necrolyte Master Training"
     },
     {
       "Level": 1,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_14708"
+      "Value": "Research Necrolyte Adept Training"
     },
     {
       "Level": 2,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_14709"
+      "Value": "Research Necrolyte Master Training"
     },
     {
       "Level": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "TRIGSTR_14710"
+      "Value": "Increases Necrolytes\u0027 mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Unholy Frenzy."
     },
     {
       "Level": 2,
       "Id": 828536167,
       "Type": 3,
-      "Value": "TRIGSTR_17208"
+      "Value": "Increases Necrolytes\u0027 mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Soul Burn."
     }
   ]
 }

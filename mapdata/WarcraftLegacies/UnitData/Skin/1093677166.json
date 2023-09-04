@@ -17,7 +17,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_818"
+      "Value": "(Quel\u0027Thalas-Elite)"
     },
     {
       "Id": 1818520949,
@@ -27,7 +27,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_2187"
+      "Value": "W"
     },
     {
       "Id": 2054188149,
@@ -52,7 +52,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_2641"
+      "Value": "Farstrider"
     },
     {
       "Id": 1668510581,
@@ -62,12 +62,12 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_2642"
+      "Value": "Train Farstrider"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_241"
+      "Value": "Agile, deadly and skilled Rangers of Quel\u0027Thalas.|n|cfff5962dAbilities:|R Splintering Arrows, Smoke Bomb, Spell Resistance, Resistant Skin, Precision Shots, Evasion|n|cfff5962dCan Learn:|R Feint, Improved Bows|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land and air units.|r"
     }
   ]
 }

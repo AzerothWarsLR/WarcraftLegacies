@@ -21,12 +21,12 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_18818"
+      "Value": " (Illidari)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_446"
+      "Value": "E"
     },
     {
       "Id": 1633907573,
@@ -41,12 +41,12 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_19234"
+      "Value": "Train Coilfang Summoner"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_10449"
+      "Value": "Proud powerful witches of the Illidari.|n|cfff5962dAbilities:|R Monsoon, Tidal Serpent and Wise Council.|n |n|cff99b4d1Can only train 6.|n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Id": 1831952757,
@@ -56,7 +56,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_19263"
+      "Value": "Coilfang Summoner"
     }
   ]
 }

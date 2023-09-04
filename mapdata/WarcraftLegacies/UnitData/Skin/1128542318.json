@@ -12,7 +12,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19253"
+      "Value": "(bandit)"
     },
     {
       "Id": 1633907573,
@@ -22,12 +22,12 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_5772"
+      "Value": "E"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_19254"
+      "Value": "Train Bandit Mage"
     },
     {
       "Id": 1751675765,
@@ -52,12 +52,12 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_1894"
+      "Value": "Ranged caster unit with Firebolt, Dispel Magic and Fire Elemental. |n|n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_19256"
+      "Value": "Bandit Mage"
     },
     {
       "Id": 1868786037,

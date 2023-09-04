@@ -7,24 +7,24 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_4820"
+      "Value": "(Teal - Kazzak)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_8617"
+      "Value": "E"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_6416"
+      "Value": "Cripple "
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_6417"
+      "Value": "Reduces movement speed by 75%, attack rate by 50%, and damage by 50% of a target enemy unit. |nLasts 45 seconds. Lasts 7 seconds on Heroes."
     }
   ]
 }

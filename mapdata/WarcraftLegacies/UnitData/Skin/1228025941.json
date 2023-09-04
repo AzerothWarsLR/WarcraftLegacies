@@ -13,12 +13,12 @@
     {
       "Id": 1953980789,
       "Type": 3,
-      "Value": "TRIGSTR_18287"
+      "Value": "Revive Necromancer"
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_16216"
+      "Value": "(Forsaken)"
     },
     {
       "Id": 1818520949,
@@ -28,7 +28,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_4959"
+      "Value": "Q"
     },
     {
       "Id": 1831952757,
@@ -43,12 +43,12 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_18289"
+      "Value": "Master of the Royal Apothecary Society"
     },
     {
       "Id": 1919972469,
       "Type": 3,
-      "Value": "TRIGSTR_18290"
+      "Value": "Revive Necromancer"
     },
     {
       "Id": 1668510581,
@@ -58,17 +58,17 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_18377"
+      "Value": "Mystical Hero, exceptional at area of effect magic and summoning.|n|cfff5962dCan Learn:|R Corpse Explosion, Plague Summons, Brilliance Aura, Viral Plague|n|n|cffffcc00Attacks land and air units.|R"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_18292"
+      "Value": "Summon Faranell"
     },
     {
       "Id": 1869770869,
       "Type": 3,
-      "Value": "TRIGSTR_18293"
+      "Value": "Master Apothecary Faranell"
     }
   ]
 }

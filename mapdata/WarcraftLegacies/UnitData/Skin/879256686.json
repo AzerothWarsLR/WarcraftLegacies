@@ -7,12 +7,12 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_841"
+      "Value": "(Green Draenei)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_522"
+      "Value": "R"
     },
     {
       "Id": 1633907573,
@@ -22,12 +22,12 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_843"
+      "Value": "Draenei Haven"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_844"
+      "Value": "Build Draenei Haven (|cffffff00R|r)"
     },
     {
       "Id": 1935832437,
@@ -37,7 +37,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_845"
+      "Value": "Produces Draenei units as well as offering upgrades for Draenei units."
     }
   ]
 }

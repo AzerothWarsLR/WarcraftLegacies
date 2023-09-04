@@ -12,7 +12,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_750"
+      "Value": "(Warsong)"
     },
     {
       "Id": 1818520949,
@@ -22,7 +22,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_496"
+      "Value": "Q"
     },
     {
       "Id": 1633907573,
@@ -32,7 +32,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_752"
+      "Value": "Warlord"
     },
     {
       "Id": 1668510581,
@@ -52,12 +52,12 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_753"
+      "Value": "Train Warlord"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_1686"
+      "Value": "Deadly leader of the Drakkari tribe.|n|cfff5962dAbilities:|R Berserk, Command Aura, Vitality Aura, Troll Regeneration |n |n|cff99b4d1Can only train 12.|r|n|cffffcc00Attacks land and air units.|r"
     }
   ]
 }

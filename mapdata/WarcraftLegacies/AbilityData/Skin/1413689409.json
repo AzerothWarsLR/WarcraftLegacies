@@ -17,13 +17,13 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_10223"
+      "Value": "(Furbolg)"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_10224"
+      "Value": "Gives a 15% chance that an attack will do 20 bonus damage and stun an opponent for \u003CANb2,Dur1\u003E seconds."
     }
   ]
 }

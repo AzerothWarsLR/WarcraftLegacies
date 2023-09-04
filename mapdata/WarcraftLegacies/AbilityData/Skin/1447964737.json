@@ -21,29 +21,29 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_8537"
+      "Value": "(Silvermoon)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_9702"
+      "Value": "Q"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_8515"
+      "Value": "A Close"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_14931"
+      "Value": "Close Gate"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_8525"
+      "Value": "Closes the gate."
     },
     {
       "Id": 1918989665,
@@ -61,19 +61,19 @@
     {
       "Id": 1802007905,
       "Type": 3,
-      "Value": "TRIGSTR_9724"
+      "Value": "Q"
     },
     {
       "Level": 1,
       "Id": 829715809,
       "Type": 3,
-      "Value": "TRIGSTR_15001"
+      "Value": "Open Gate"
     },
     {
       "Level": 1,
       "Id": 829781345,
       "Type": 3,
-      "Value": "TRIGSTR_8528"
+      "Value": "Opens the gate."
     }
   ]
 }

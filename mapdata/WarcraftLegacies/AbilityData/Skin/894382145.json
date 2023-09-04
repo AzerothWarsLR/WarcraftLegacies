@@ -8,18 +8,18 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_16043"
+      "Value": "(twilight)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_16155"
+      "Value": "E"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_16781"
+      "Value": "Forms a shield of electricity around a target unit, dealing 20 damage per second to units around it. |nLasts 20 seconds."
     },
     {
       "Id": 2020631137,

@@ -8,12 +8,12 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_20083"
+      "Value": "(Draenei T1)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_4900"
+      "Value": "Q"
     },
     {
       "Id": 1935832437,
@@ -23,7 +23,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_676"
+      "Value": "Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Gemcrafter"
     },
     {
       "Id": 1818520949,
@@ -43,12 +43,12 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_17802"
+      "Value": "Crystal Hall"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_17803"
+      "Value": "Build Crystal Hall"
     },
     {
       "Id": 1684960117,

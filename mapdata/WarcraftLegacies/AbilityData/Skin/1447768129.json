@@ -16,24 +16,24 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_8836"
+      "Value": "(Green - Sylvanas. Teal - Rend. Light Blue - Shandris. Grey - Grom. Red - Sylvanas)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_9910"
+      "Value": "D"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_11573"
+      "Value": "Wind Walk"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_8839"
+      "Value": "Allows the Hero to become invisible, and move 15% faster for 12 seconds."
     }
   ]
 }

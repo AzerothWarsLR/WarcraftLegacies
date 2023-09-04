@@ -18,7 +18,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_20140"
+      "Value": "(Dragonmaw Shop)"
     },
     {
       "Id": 1818520949,
@@ -28,7 +28,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_10196"
+      "Value": "C"
     },
     {
       "Id": 1633907573,
@@ -38,7 +38,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_8118"
+      "Value": "Treasure Hoard"
     },
     {
       "Id": 1668510581,
@@ -48,7 +48,7 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_8133"
+      "Value": "Build Treasure Hoard"
     },
     {
       "Id": 1935832437,
@@ -58,7 +58,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_20008"
+      "Value": "Creates a shop with purchasable items."
     }
   ]
 }

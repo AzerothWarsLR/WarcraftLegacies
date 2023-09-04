@@ -26,7 +26,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_3643"
+      "Value": "(Druids-Elite)"
     },
     {
       "Id": 1685218677,
@@ -45,7 +45,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_2971"
+      "Value": "W"
     },
     {
       "Id": 1831952757,
@@ -60,7 +60,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_3645"
+      "Value": "Keeper of the Grove"
     },
     {
       "Id": 1919705973,
@@ -99,12 +99,12 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_3646"
+      "Value": "Train Keeper of the Grove"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_17206"
+      "Value": "Powerful Druidic caster. |n|cfff5962dAbilities:|R Nature\u0027s Fury, Haste, Banish, Cyclone, Spell Resistance, Resistant Skin |n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land units, air units, and trees.|r"
     },
     {
       "Id": 1684960117,

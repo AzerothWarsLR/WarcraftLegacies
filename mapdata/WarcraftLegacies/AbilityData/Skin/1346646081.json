@@ -22,12 +22,12 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_20539"
+      "Value": "(Tyrande - Nathanos)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_10654"
+      "Value": "Q"
     },
     {
       "Id": 1667329377,
@@ -42,7 +42,7 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_9971"
+      "Value": "Rain of Arrows"
     },
     {
       "Id": 1918988897,
@@ -56,65 +56,65 @@
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_10663"
+      "Value": "Q"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_9973"
+      "Value": "Learn Rain of Arrows"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_20540"
+      "Value": "Bombards an area with arrows, stunning enemy land units for 2 second and damaging them. 1200 range. |n|n|cffffcc00Level 1|r - 200 total damage.|n|cffffcc00Level 2|r - 300 total damage.|n|cffffcc00Level 3|r - 400 total damage.|n|cffffcc00Level 4|r - 500 total damage."
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_20541"
+      "Value": "Rain of Arrows - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_20542"
+      "Value": "Rain of Arrows - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_20543"
+      "Value": "Rain of Arrows - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_20544"
+      "Value": "Rain of Arrows - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_20545"
+      "Value": "Bombards an area with arrows, dealing up to 200 damage to nearby enemy land units and stunning them for 2 seconds."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_20546"
+      "Value": "Bombards an area with arrows, dealing up to 300 damage to nearby enemy land units and stunning them for 2 seconds."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_20547"
+      "Value": "Bombards an area with arrows, dealing up to 400 damage to nearby enemy land units and stunning them for 2 seconds."
     },
     {
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_20548"
+      "Value": "Bombards an area with arrows, dealing up to 500 damage to nearby enemy land units and stunning them for 2 seconds."
     }
   ]
 }

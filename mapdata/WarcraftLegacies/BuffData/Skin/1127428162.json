@@ -13,17 +13,17 @@
     {
       "Id": 1885959270,
       "Type": 3,
-      "Value": "TRIGSTR_13528"
+      "Value": "Death Aura"
     },
     {
       "Id": 1700951398,
       "Type": 3,
-      "Value": "TRIGSTR_13529"
+      "Value": "This unit is under the effects of Death Aura; it has significally decreased armor."
     },
     {
       "Id": 1835101798,
       "Type": 3,
-      "Value": "TRIGSTR_13530"
+      "Value": "Death Aura"
     },
     {
       "Id": 1952543846,

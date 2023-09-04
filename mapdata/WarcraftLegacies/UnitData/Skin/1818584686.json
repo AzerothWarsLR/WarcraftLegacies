@@ -11,12 +11,12 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_773"
+      "Value": "(Summoner-Warlock-Eye of Sargeras)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_616"
+      "Value": "Q"
     },
     {
       "Id": 1633907573,
@@ -31,7 +31,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_775"
+      "Value": "Summoned hound. |n|n|cffffcc00Attacks land units.|r"
     }
   ]
 }

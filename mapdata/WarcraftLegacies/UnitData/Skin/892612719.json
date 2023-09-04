@@ -16,12 +16,12 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19974"
+      "Value": " (Zandalari Farm)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_4030"
+      "Value": "W"
     },
     {
       "Id": 1633907573,
@@ -36,7 +36,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_15934"
+      "Value": "Defensive hold for the Zandalari workers.|nProvides 10 food, which increases the maximum number of units that can be trained."
     },
     {
       "Id": 1818520949,
@@ -51,7 +51,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_19976"
+      "Value": "Dwelling"
     }
   ]
 }

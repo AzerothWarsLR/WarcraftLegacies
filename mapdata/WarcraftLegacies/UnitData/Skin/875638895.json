@@ -38,7 +38,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_1627"
+      "Value": "(Fel Horde-Portal)"
     },
     {
       "Id": 1818520949,
@@ -52,7 +52,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_1737"
+      "Value": "Q"
     },
     {
       "Id": 828468597,
@@ -67,7 +67,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_1704"
+      "Value": "Terrorguard"
     },
     {
       "Id": 1919705973,
@@ -81,12 +81,12 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_1705"
+      "Value": "Summon Terrorguard"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_1706"
+      "Value": "Winged demon-cousin of the Doomguard, and bringer of shadow and misery.|n|cfff5962dAbilities:|R Consume, Nether\u0027s Eye, Living Missile, Resistant Skin, True Sight|n|n|cff99b4d1Can only summon 4.|r|n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Id": 1684960117,

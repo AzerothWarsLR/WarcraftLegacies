@@ -8,23 +8,23 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_19994"
+      "Value": "(warsong)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_18552"
+      "Value": "W"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_20778"
+      "Value": "Increases the attack rate of the target unit by 70%.|nLasts 20 seconds."
     },
     {
       "Id": 1802007905,
       "Type": 3,
-      "Value": "TRIGSTR_18557"
+      "Value": "W"
     },
     {
       "Id": 2020631137,
@@ -37,7 +37,7 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_16544"
+      "Value": "Frenzy"
     },
     {
       "Id": 1953653089,

@@ -12,12 +12,12 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_1992"
+      "Value": "(Fel Horde-Portal)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_1946"
+      "Value": "W"
     },
     {
       "Id": 1633907573,
@@ -27,17 +27,17 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_2348"
+      "Value": "Fel Hound"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_2349"
+      "Value": "Summon Fel Hound"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_2350"
+      "Value": "Arcane thirsting hound of the Fel.|n|cfff5962dAbilities:|R Feedback |n|n|cffffcc00Attacks land units.|r"
     }
   ]
 }

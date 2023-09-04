@@ -16,12 +16,12 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19905"
+      "Value": " (Kul Tiras Shop)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_3992"
+      "Value": "C"
     },
     {
       "Id": 1633907573,
@@ -41,17 +41,17 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_12934"
+      "Value": "A shop of purchasable items."
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_19906"
+      "Value": "Trade-house"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_19907"
+      "Value": "Build Trade-house"
     },
     {
       "Id": 1818520949,

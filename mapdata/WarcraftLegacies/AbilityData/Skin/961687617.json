@@ -13,29 +13,29 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_7953"
+      "Value": "(Dark Green - Bishop of Light)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_9160"
+      "Value": "Q"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_8147"
+      "Value": "Warding of the Light"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_8148"
+      "Value": "(|cffffcc00Q|r) - Warding of the Light"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_8149"
+      "Value": "Protects a target unit from one spell every 2 seconds. Lasts 10 seconds."
     },
     {
       "Id": 1918989665,
@@ -45,7 +45,7 @@
     {
       "Id": 1802007905,
       "Type": 3,
-      "Value": "TRIGSTR_9162"
+      "Value": "Q"
     }
   ]
 }

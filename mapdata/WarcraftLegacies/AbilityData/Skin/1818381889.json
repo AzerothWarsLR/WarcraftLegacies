@@ -16,18 +16,18 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_1789"
+      "Value": "(Light Blue - Shadowleaf Sentinel, DG- SI:7)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_7751"
+      "Value": "W"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_1963"
+      "Value": "Teleports the unit a short distance, allowing her to move in and out of combat. |n12 second cooldown.                             "
     }
   ]
 }

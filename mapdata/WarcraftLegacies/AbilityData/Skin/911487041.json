@@ -22,12 +22,12 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_7859"
+      "Value": "(Lordaeron - Inquisitor)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_9393"
+      "Value": "W"
     },
     {
       "Id": 1952542049,
@@ -37,19 +37,19 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_7861"
+      "Value": "Light\u0027s Judgement"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_7862"
+      "Value": "Light\u0027s Judgement"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_7863"
+      "Value": "Throws a righteous bolt at an enemy flying enemy unit, dealing 150 damage and stunning the target for 6 seconds."
     }
   ]
 }

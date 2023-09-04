@@ -12,18 +12,18 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_18085"
+      "Value": "(summoner)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_9411"
+      "Value": "E"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_18086"
+      "Value": "Causes the Summoner to channel negative magical energies that damage nearby enemies when they cast spells. Also increases the Summoner\u0027s armor by 12. |nLasts \u003CAmfl,Dur1\u003E seconds."
     },
     {
       "Id": 2019718497,
@@ -32,7 +32,7 @@
     {
       "Id": 1802007905,
       "Type": 3,
-      "Value": "TRIGSTR_9418"
+      "Value": "E"
     }
   ]
 }

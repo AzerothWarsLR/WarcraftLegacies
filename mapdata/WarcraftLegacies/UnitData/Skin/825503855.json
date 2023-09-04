@@ -16,12 +16,12 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19963"
+      "Value": "(Zandalari Barracks)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_2215"
+      "Value": "A"
     },
     {
       "Id": 1633907573,
@@ -31,12 +31,12 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_19964"
+      "Value": "Training Ground"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_19965"
+      "Value": "Build Training Ground"
     },
     {
       "Id": 1935832437,
@@ -46,7 +46,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_20419"
+      "Value": "Training Camp for the Zandalari Warriors.|n|cfff5962dTrains:|R Watcher, Scout, Raptor Rider |n|cfff5962dResearches:|R Animal Companion"
     },
     {
       "Id": 1818520949,

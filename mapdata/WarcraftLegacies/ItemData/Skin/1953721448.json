@@ -11,12 +11,12 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_3541"
+      "Value": "A"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_4159"
+      "Value": "Increases the life regeneration rate of the Hero by \u003CArll,DataA1\u003E hit points per second. Can be consumed for \u003CAIhx,DataA1\u003E health."
     }
   ]
 }

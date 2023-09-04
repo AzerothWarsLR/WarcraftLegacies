@@ -7,12 +7,12 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_7979"
+      "Value": "(Dalaran Shop)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_988"
+      "Value": "C"
     },
     {
       "Id": 1633907573,
@@ -32,7 +32,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_949"
+      "Value": "Creates a shop with purchasable items."
     }
   ]
 }

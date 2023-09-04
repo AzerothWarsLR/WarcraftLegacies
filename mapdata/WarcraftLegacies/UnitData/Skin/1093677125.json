@@ -13,7 +13,7 @@
     {
       "Id": 1953980789,
       "Type": 3,
-      "Value": "TRIGSTR_3787"
+      "Value": "Revive Ancient Guardian"
     },
     {
       "Id": 1651270517,
@@ -26,7 +26,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_3208"
+      "Value": "(Druids)"
     },
     {
       "Id": 1818520949,
@@ -40,7 +40,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_2345"
+      "Value": "X"
     },
     {
       "Id": 828468597,
@@ -60,17 +60,17 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_4013"
+      "Value": "Ancient Guardian"
     },
     {
       "Id": 1869770869,
       "Type": 3,
-      "Value": "TRIGSTR_4014"
+      "Value": "Ursoc"
     },
     {
       "Id": 1919972469,
       "Type": 3,
-      "Value": "TRIGSTR_4010"
+      "Value": "Revive Ancient Guardian"
     },
     {
       "Id": 1668510581,
@@ -85,12 +85,12 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_4016"
+      "Value": "Summon Ursoc"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_17209"
+      "Value": "Ancient bear hero, adept at frontline melee combat.|n|cfff5962dAbilities:|r Cleaving Attack|n|cfff5962dCan Learn:|R Maiming Strike, War Stomp, Endurance Aura, Avatar|n|n|cffffcc00Attacks land units.|R"
     },
     {
       "Id": 1684960117,

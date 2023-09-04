@@ -12,7 +12,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19889"
+      "Value": "(Kul Tiras T3)"
     },
     {
       "Id": 1818520949,
@@ -22,7 +22,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_3991"
+      "Value": "C"
     },
     {
       "Id": 845245813,
@@ -52,7 +52,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_218"
+      "Value": "Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Deckhand, Musketeer, Fusillier|n|cfff5962dResearches:|r Full Scale Escalation\r\n |n|cfff5962dAbilities:|R Summon Garrison"
     },
     {
       "Id": 1633907573,

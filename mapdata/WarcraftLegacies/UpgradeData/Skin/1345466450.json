@@ -19,31 +19,31 @@
       "Level": 1,
       "Id": 1718840935,
       "Type": 3,
-      "Value": "TRIGSTR_21114"
+      "Value": "(unused)"
     },
     {
       "Level": 1,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_21052"
+      "Value": "E"
     },
     {
       "Level": 1,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "TRIGSTR_14609"
+      "Value": "Skeletal Empowerment"
     },
     {
       "Level": 1,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_14610"
+      "Value": "Research Skeletal Empowerment"
     },
     {
       "Level": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "TRIGSTR_14611"
+      "Value": "Increases the hit points of all skeletal units by 75.                            |n|n|cffd7d700Units Affected: Skeletal Grunt, Skeleton Warrior.|r"
     }
   ]
 }

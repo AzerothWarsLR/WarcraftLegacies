@@ -13,24 +13,24 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_8591"
+      "Value": "(unused)"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_8645"
+      "Value": "Nature\u0027s Grasp"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_8646"
+      "Value": "Nature\u0027s Grasp"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_8647"
+      "Value": "When an enemy strikes Broll they have a 20% chance to be caught by entangling roots."
     }
   ]
 }

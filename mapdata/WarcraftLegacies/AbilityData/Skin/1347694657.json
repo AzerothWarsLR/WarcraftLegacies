@@ -17,12 +17,12 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_7762"
+      "Value": "(Green Akama)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_8693"
+      "Value": "Q"
     },
     {
       "Id": 1667329377,
@@ -37,7 +37,7 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_7764"
+      "Value": "Shadow Strike"
     },
     {
       "Id": 2020635233,
@@ -46,65 +46,65 @@
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_8716"
+      "Value": "Q"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_17112"
+      "Value": "Learn Shadow Strike - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_7767"
+      "Value": "Akama strikes a target from the shadows|n|nDecreases armor, mouvement speed, attack speed and deals damage.|nLasts 8 seconds on heroes.|n|n|cffffcc00Level 1|r - 150 damage, reduces armor by 3, mouvement speed by 30% and attack speed by 40%.|n|cffffcc00Level 2|r - 200 damage, reduces armor by 4, mouvement speed by 40% and attack speed by 50%.|n|cffffcc00Level 3|r - 250 damage, reduces armor by 5, mouvement speed by 50% and attack speed by 60%.|n|cffffcc00Level 4|r - 300 damage, reduces armor by 6, mouvement speed by 60% and attack speed by 70%."
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_17113"
+      "Value": "Shadow Strike - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_17114"
+      "Value": "Shadow Strike - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_17115"
+      "Value": "Shadow Strike - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_17116"
+      "Value": "Shadow Strike - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_7772"
+      "Value": "Akama strikes a target from the shadows|n|nDecreases armor by 3, mouvement speed by 30%, attack speed by 40% and deals 150 damage |nLasts 8 seconds on heroes."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_7773"
+      "Value": "Akama strikes a target from the shadows|n|nDecreases armor by 4, mouvement speed by 40%, attack speed by 50% and deals 200 damage |nLasts 8 seconds on heroes."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_7774"
+      "Value": "Akama strikes a target from the shadows|n|nDecreases armor by 5, mouvement speed by 50%, attack speed by 60% and deals 250 damage |nLasts 8 seconds on heroes."
     },
     {
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_7775"
+      "Value": "Akama strikes a target from the shadows|n|nDecreases armor by 6, mouvement speed by 60%, attack speed by 70% and deals 300 damage |nLasts 8 seconds on heroes."
     },
     {
       "Id": 1953653089,

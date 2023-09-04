@@ -11,18 +11,18 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_5229"
+      "Value": "(Brown - Druid of the Claw)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_7320"
+      "Value": "E"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_2618"
+      "Value": "Transforms the Druid into a Bear. |n|cfff5962dAbilities:|R Charge!, Animal Fury, Cleaving Attack, Toughened Hides|n|n|cffffcc00Attacks land units.|r"
     },
     {
       "Id": 2019718497,
@@ -31,7 +31,7 @@
     {
       "Id": 1802007905,
       "Type": 3,
-      "Value": "TRIGSTR_7338"
+      "Value": "E"
     }
   ]
 }

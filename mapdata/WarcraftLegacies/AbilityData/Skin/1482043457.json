@@ -13,29 +13,29 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_2994"
+      "Value": "(Sentinels)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_8920"
+      "Value": "W"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_7443"
+      "Value": "Elune\u0027s Gaze"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_1116"
+      "Value": "Turns target unit and every allied unit in a 350 area of effect invisible. If an invisible unit attacks, uses an ability or casts a spell, it will become visible. |nLasts 60 seconds."
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_16644"
+      "Value": "Elune\u0027s Gaze"
     }
   ]
 }

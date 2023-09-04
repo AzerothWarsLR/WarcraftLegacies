@@ -13,7 +13,7 @@
     {
       "Id": 1953980789,
       "Type": 3,
-      "Value": "TRIGSTR_4024"
+      "Value": "Revive Sentinel General"
     },
     {
       "Id": 2020631157,
@@ -26,7 +26,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_2171"
+      "Value": "(Sentinels)"
     },
     {
       "Id": 1818520949,
@@ -36,7 +36,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_3337"
+      "Value": "Q"
     },
     {
       "Id": 828468597,
@@ -51,7 +51,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_4027"
+      "Value": "General of the Sentinel Army"
     },
     {
       "Id": 1970434165,
@@ -60,12 +60,12 @@
     {
       "Id": 1869770869,
       "Type": 3,
-      "Value": "TRIGSTR_4028"
+      "Value": "Shandris Feathermoon"
     },
     {
       "Id": 1919972469,
       "Type": 3,
-      "Value": "TRIGSTR_4029"
+      "Value": "Revive Sentinel General"
     },
     {
       "Id": 1668510581,
@@ -75,12 +75,12 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_17210"
+      "Value": "Summon Shandris"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_17211"
+      "Value": "Cunning Hero, exceptional at ranged combat and dealing damage from afar.|n|cfff5962dAbilities:|r Wind Walk, Shadow Meld|n|cfff5962dCan Learn:|R Aimed Shot, Piercing Arrow, Sentinel Standard, Multishot|n|n|cffffcc00Attacks land and air units.|R"
     },
     {
       "Id": 1684960117,

@@ -28,7 +28,7 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_3485"
+      "Value": "(All)"
     },
     {
       "Id": 1952540001,
@@ -38,12 +38,12 @@
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_14506"
+      "Value": "X"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_4238"
+      "Value": "Summon Ragnaros"
     },
     {
       "Id": 1952543841,
@@ -59,13 +59,13 @@
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_18573"
+      "Value": "Summon Ragnaros"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_3058"
+      "Value": "Call forth Ragnaros from the Firelands."
     },
     {
       "Id": 2037408353,

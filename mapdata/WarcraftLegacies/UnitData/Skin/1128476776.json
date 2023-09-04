@@ -8,12 +8,12 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_20764"
+      "Value": " (Sunfury Shop)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_14372"
+      "Value": "C"
     },
     {
       "Id": 1633907573,
@@ -28,7 +28,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_20765"
+      "Value": "Creates a shop with purchasable items."
     },
     {
       "Id": 1818520949,
@@ -38,12 +38,12 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_20883"
+      "Value": "Aether Vault"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_20884"
+      "Value": "Build Aether Vault"
     },
     {
       "Id": 1668510581,

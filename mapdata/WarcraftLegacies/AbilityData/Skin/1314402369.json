@@ -8,12 +8,12 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_7252"
+      "Value": "(Lor\u0027themar)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_9255"
+      "Value": "E"
     },
     {
       "Id": 1667329377,
@@ -28,42 +28,42 @@
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_9268"
+      "Value": "E"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_17717"
+      "Value": "Each attack made is enhanced with living flames that cling to the target. These flames add a small amount of damage on the first attack, twice as much on the second attack, three times as much on the third attack, etc. If a unit dies while under this effect, it is incinerated, causing damage to all nearby hostile units. |n|n|cffffcc00Level 1|r - 40 damage. |n|cffffcc00Level 2|r - 80 damage. |n|cffffcc00Level 3|r - 120 damage. |n|cffffcc00Level 4|r - 160 damage."
     },
     {
       "Level": 4,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_7256"
+      "Value": "Incinerate - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_7257"
+      "Value": "Each attack made is enhanced with living flames that cling to the target. These flames add \u003CA0XN,DataA1\u003E damage on the first attack, twice as much on the second attack, three times as much on the third attack, etc.|n|nIf a unit dies while under this effect, it is incinerated, causing up to \u003CA0XN,DataB1\u003E damage to all nearby hostile units."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_7258"
+      "Value": "Each attack made is enhanced with living flames that cling to the target. These flames add \u003CA0XN,DataA2\u003E damage on the first attack, twice as much on the second attack, three times as much on the third attack, etc.|n|nIf a unit dies while under this effect, it is incinerated, causing up to \u003CA0XN,DataB2\u003E damage to all nearby hostile units."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_7259"
+      "Value": "Each attack made is enhanced with living flames that cling to the target. These flames add \u003CA0XN,DataA3\u003E damage on the first attack, twice as much on the second attack, three times as much on the third attack, etc.|n|nIf a unit dies while under this effect, it is incinerated, causing up to \u003CA0XN,DataB3\u003E damage to all nearby hostile units."
     },
     {
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_7260"
+      "Value": "Each attack made is enhanced with living flames that cling to the target. These flames add \u003CA0XN,DataA4\u003E damage on the first attack, twice as much on the second attack, three times as much on the third attack, etc.|n|nIf a unit dies while under this effect, it is incinerated, causing up to \u003CA0XN,DataB4\u003E damage to all nearby hostile units."
     }
   ]
 }

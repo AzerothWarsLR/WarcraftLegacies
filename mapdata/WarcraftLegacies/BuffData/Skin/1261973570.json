@@ -13,12 +13,12 @@
     {
       "Id": 1885959270,
       "Type": 3,
-      "Value": "TRIGSTR_13118"
+      "Value": "Nature Aura"
     },
     {
       "Id": 1700951398,
       "Type": 3,
-      "Value": "TRIGSTR_13119"
+      "Value": "This unit is under the effects of Nature Aura; it has reduced movement speed and attack rate."
     },
     {
       "Id": 1952543846,
@@ -28,7 +28,7 @@
     {
       "Id": 1718840934,
       "Type": 3,
-      "Value": "TRIGSTR_17308"
+      "Value": "(Cenarius)"
     }
   ]
 }

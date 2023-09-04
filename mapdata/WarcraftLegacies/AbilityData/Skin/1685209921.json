@@ -16,7 +16,7 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_6306"
+      "Value": "(Pink - Stormreaver Warlock)"
     },
     {
       "Id": 1952540001,
@@ -26,19 +26,19 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_6307"
+      "Value": "Call Voidwalker"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_6308"
+      "Value": "(|cffffcc00R|r) - Call Voidwalker"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_6309"
+      "Value": "Calls forth a Greater Voidwalker using the soul of a dead unit.|n|nThe Voidwalker has 825 hit points and lasts 40 seconds."
     },
     {
       "Id": 1918989665,

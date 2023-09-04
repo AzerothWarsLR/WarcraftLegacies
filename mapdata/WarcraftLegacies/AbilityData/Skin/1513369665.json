@@ -22,29 +22,29 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_11872"
+      "Value": "(void hunter)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_12565"
+      "Value": "E"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_17560"
+      "Value": "Nether\u0027s Eye"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_17561"
+      "Value": "Nether\u0027s Eye"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_11876"
+      "Value": "Reveals an area of the map. |nDetects invisible units. |nLasts 12 seconds."
     }
   ]
 }

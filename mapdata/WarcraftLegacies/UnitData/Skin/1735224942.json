@@ -16,7 +16,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_639"
+      "Value": "(Sentinels)"
     },
     {
       "Id": 1818520949,
@@ -26,7 +26,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_469"
+      "Value": "E"
     },
     {
       "Id": 2053990773,
@@ -61,7 +61,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_641"
+      "Value": "Redeemed Highborne"
     },
     {
       "Id": 1650684789,
@@ -70,12 +70,12 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_642"
+      "Value": "Train Redeemed Highborne"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_20506"
+      "Value": "Ranged caster unit.|n|cfff5962dAbilities:|r Forked Lightning, Cyclone, Mana Shield|n|n|cff99b4d1Can only build 12.|r|n|cffffcc00Attacks land and air units.|R"
     },
     {
       "Id": 1684960117,

@@ -13,17 +13,17 @@
     {
       "Id": 1885959270,
       "Type": 3,
-      "Value": "TRIGSTR_13744"
+      "Value": "Grenade"
     },
     {
       "Id": 1700951398,
       "Type": 3,
-      "Value": "TRIGSTR_13745"
+      "Value": "This unit is under the effects of Grenade; it has reduced movement speed and will take damage over time."
     },
     {
       "Id": 1835101798,
       "Type": 3,
-      "Value": "TRIGSTR_13746"
+      "Value": "Grenade"
     },
     {
       "Id": 1952543846,

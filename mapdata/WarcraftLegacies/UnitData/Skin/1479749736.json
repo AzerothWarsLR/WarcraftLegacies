@@ -13,7 +13,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19803"
+      "Value": " (Stormwind Tower)"
     },
     {
       "Id": 1818520949,
@@ -27,12 +27,12 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_2177"
+      "Value": "Z"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_3112"
+      "Value": "Sentinel Tower"
     },
     {
       "Id": 1919705973,
@@ -51,7 +51,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_15295"
+      "Value": "Primary defensive structure. |n|cfff5962dCan learn:|R Magic Sentry |n|n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Id": 1633907573,

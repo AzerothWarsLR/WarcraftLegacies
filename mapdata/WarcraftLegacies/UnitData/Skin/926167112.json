@@ -13,7 +13,7 @@
     {
       "Id": 1953980789,
       "Type": 3,
-      "Value": "TRIGSTR_3891"
+      "Value": "Revive Xavius"
     },
     {
       "Id": 2020631157,
@@ -22,7 +22,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_3892"
+      "Value": "(Legion Vassal)"
     },
     {
       "Id": 1818520949,
@@ -32,7 +32,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_3279"
+      "Value": "W"
     },
     {
       "Id": 1633907573,
@@ -42,17 +42,17 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_3894"
+      "Value": "Lord of the Satyrs"
     },
     {
       "Id": 1869770869,
       "Type": 3,
-      "Value": "TRIGSTR_3895"
+      "Value": "Xavius"
     },
     {
       "Id": 1919972469,
       "Type": 3,
-      "Value": "TRIGSTR_3896"
+      "Value": "Revive Xavius"
     },
     {
       "Id": 1769173877,
@@ -62,12 +62,12 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_3897"
+      "Value": "Choose Vassal: Xavius"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_3898"
+      "Value": "|cffff0000You will lose your current faction and join the Legion as a new small 1 hero faction|r|n|nCruel Hero, adept at destroying opponents. Can train Satyr Warriors, Tricksters and Soul Stealer. |n|n|cffffcc00Attacks land units.|r"
     },
     {
       "Id": 1684960117,

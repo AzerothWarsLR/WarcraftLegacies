@@ -13,12 +13,12 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_10043"
+      "Value": "(Red - Crypt Fiend) (Not Auto)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_10843"
+      "Value": "Q"
     },
     {
       "Id": 1952542049,
@@ -28,19 +28,19 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_10045"
+      "Value": "Web"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_10046"
+      "Value": "Web"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_10047"
+      "Value": "Binds a target enemy unit in webbing, forcing it to the ground. Webbed units can be hit as though they were land units. |nLasts \u003CAweb,Dur1\u003E seconds."
     }
   ]
 }

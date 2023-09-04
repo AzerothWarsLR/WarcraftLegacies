@@ -17,18 +17,18 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_7472"
+      "Value": "(Purple - Alex ult)"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_7473"
+      "Value": "Permanent Immolation 3"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_7474"
+      "Value": "Burns nearby enemy units for 100 points of damage per second."
     }
   ]
 }

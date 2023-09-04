@@ -8,12 +8,12 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19795"
+      "Value": " (Quel\u0027thalas Shop)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_3005"
+      "Value": "C"
     },
     {
       "Id": 1633907573,
@@ -33,7 +33,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_1636"
+      "Value": "Creates a shop with purchasable items."
     }
   ]
 }

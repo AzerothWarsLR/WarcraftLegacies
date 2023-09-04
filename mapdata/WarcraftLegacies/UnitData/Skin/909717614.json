@@ -8,12 +8,12 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_1828"
+      "Value": "(Dalaran)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_1893"
+      "Value": "Q"
     },
     {
       "Id": 845245813,
@@ -28,17 +28,17 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_1936"
+      "Value": "Earth Golem"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_1937"
+      "Value": "Train Earth Golem"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_1938"
+      "Value": "Robust summon made from living rocks.|n|cfff5962dAbilities:|R Hurl Boulder, Living Fragments, Stone Armor|n |n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land units.|r"
     }
   ]
 }

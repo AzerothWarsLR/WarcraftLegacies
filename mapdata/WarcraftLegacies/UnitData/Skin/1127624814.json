@@ -22,22 +22,22 @@
     {
       "Id": 1853186933,
       "Type": 3,
-      "Value": "TRIGSTR_1811"
+      "Value": "Initiate, Adept, Master"
     },
     {
       "Id": 1953850229,
       "Type": 3,
-      "Value": "TRIGSTR_14327"
+      "Value": "- Paralysis,- Paralysis|n- Corrosive Strike,- Paralysis|n- Corrosive Strikel|n- Faerie Fire"
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_1346"
+      "Value": "(Sentinels)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_2065"
+      "Value": "Q"
     },
     {
       "Id": 1831952757,
@@ -52,7 +52,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_2226"
+      "Value": "Moonhunter"
     },
     {
       "Id": 1919705973,
@@ -66,12 +66,12 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_2227"
+      "Value": "Train Moonhunter"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_4960"
+      "Value": "Cunning trapper of prey, in service to the Sentinels.|n|cfff5962dAbilities:|R Shadow Strike, Elune\u0027s Grace|n|cfff5962dCan Learn:|R Acid Bomb, Faerie Fire, Wind Walk|n|n|cffffcc00Attacks land and air units."
     },
     {
       "Id": 1684960117,

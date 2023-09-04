@@ -17,7 +17,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19654"
+      "Value": " (Fel Horde Altar)"
     },
     {
       "Id": 1818520949,
@@ -27,7 +27,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_1313"
+      "Value": "X"
     },
     {
       "Id": 1633907573,
@@ -37,12 +37,12 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_1546"
+      "Value": "Altar of Domination"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_1547"
+      "Value": "Build Altar of Domination"
     },
     {
       "Id": 1935832437,
@@ -52,7 +52,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_10324"
+      "Value": "Revives slain Heroes and Demi-heros.|n|cfff5962dCan learn:|R Spiked Barricades"
     }
   ]
 }

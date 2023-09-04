@@ -13,12 +13,12 @@
     {
       "Id": 1953980789,
       "Type": 3,
-      "Value": "TRIGSTR_3830"
+      "Value": "Revive Fel Warchief"
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_3831"
+      "Value": "(Fel Horde)"
     },
     {
       "Id": 1818520949,
@@ -28,7 +28,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_3236"
+      "Value": "Q"
     },
     {
       "Id": 2053990773,
@@ -43,17 +43,17 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_3833"
+      "Value": "Warchief of the Fel Horde"
     },
     {
       "Id": 1869770869,
       "Type": 3,
-      "Value": "TRIGSTR_3834"
+      "Value": "Kargath Bladefist"
     },
     {
       "Id": 1919972469,
       "Type": 3,
-      "Value": "TRIGSTR_3835"
+      "Value": "Revive Fel Warchief"
     },
     {
       "Id": 1668510581,
@@ -63,7 +63,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_12285"
+      "Value": "Warrior Hero, adept at bolstering troups and melee combat.|n|cfff5962dAbilities:|r Command Aura|n|cfff5962dCan Learn:|R Breath of Fire, Dark Grip, Vampiric Aura, Field of Blood|n|n|cffffcc00Attacks land and air units.|R"
     },
     {
       "Id": 1684960117,
@@ -73,7 +73,7 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_14515"
+      "Value": "Summon Kargath"
     }
   ]
 }

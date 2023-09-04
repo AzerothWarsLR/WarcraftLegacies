@@ -11,12 +11,12 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_995"
+      "Value": "(Ironforge)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_675"
+      "Value": "W"
     },
     {
       "Id": 1633907573,
@@ -26,17 +26,17 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_997"
+      "Value": "Gyrocopter"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_998"
+      "Value": "Train Gyrocopter"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_15016"
+      "Value": "Fast moving flying machine. Excellent at scouting, and effective against air units. |n|cfff5962dAbilities:|R Truesight, Flak Cannons, Flying Machine Bombs|n|n|cff99b4d1Can only build 12.|r|n|cffffcc00Attacks land and air units.|r"
     }
   ]
 }

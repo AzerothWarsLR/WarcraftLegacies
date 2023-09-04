@@ -13,29 +13,29 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_8744"
+      "Value": "(Brown - Broll)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_10635"
+      "Value": "Q"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_9905"
+      "Value": "Mana Touch"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_9906"
+      "Value": "Mana Touch - (|cffffcc00Q|r)"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_9907"
+      "Value": "Restores 200 mana to a target friendly unit. 30 second cooldown."
     }
   ]
 }

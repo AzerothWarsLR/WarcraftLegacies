@@ -13,12 +13,12 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_7071"
+      "Value": "(C\u0027thun buildings)"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_7072"
+      "Value": "Ahn\u0027Qiraj Spirits"
     },
     {
       "Id": 1952543841,
@@ -29,13 +29,13 @@
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_7073"
+      "Value": "Ahn\u0027Qiraj Spirits"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_12654"
+      "Value": "Fires a vengeful soul every 2 second at enemies of the Old Gods. Deals 25 damage.|n|nAttack range is 800."
     }
   ]
 }

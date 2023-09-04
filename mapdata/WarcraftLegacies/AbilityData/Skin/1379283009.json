@@ -16,13 +16,13 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_11488"
+      "Value": "(Red - Varimathras Blue - Tichondrius)"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_11489"
+      "Value": "Attacks combust \u003CA06R,DataA1\u003E(\u003CA06R,DataC1\u003E for Heros) mana per hit, dealing damage equal to the amount combusted."
     }
   ]
 }

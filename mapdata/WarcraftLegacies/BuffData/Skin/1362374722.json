@@ -13,17 +13,17 @@
     {
       "Id": 1885959270,
       "Type": 3,
-      "Value": "TRIGSTR_13409"
+      "Value": "Health Funnel"
     },
     {
       "Id": 1700951398,
       "Type": 3,
-      "Value": "TRIGSTR_13410"
+      "Value": "This unit has Health Funnel; it is healing hit points over time."
     },
     {
       "Id": 1835101798,
       "Type": 3,
-      "Value": "TRIGSTR_13411"
+      "Value": "Health Funnel"
     },
     {
       "Id": 1952543846,

@@ -21,27 +21,27 @@
     {
       "Id": 1936024681,
       "Type": 3,
-      "Value": "TRIGSTR_16641"
+      "Value": "Summons Warsong Workers."
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_12825"
+      "Value": "X"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_17003"
+      "Value": "Summon Warsong Workers"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_17064"
+      "Value": "Purchase Summon Workers"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_17065"
+      "Value": "Summons workers."
     }
   ]
 }

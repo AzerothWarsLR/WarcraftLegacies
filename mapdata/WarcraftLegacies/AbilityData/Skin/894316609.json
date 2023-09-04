@@ -8,13 +8,13 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_20934"
+      "Value": "(Harvest Witch)"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_14437"
+      "Value": "Calls forth a wave of healing energy that bounces up to 5 times, healing 85 damage on the primary target. Each jump heals less damage."
     },
     {
       "Id": 1952543841,
@@ -24,7 +24,7 @@
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_19182"
+      "Value": "W"
     },
     {
       "Id": 2020631137,

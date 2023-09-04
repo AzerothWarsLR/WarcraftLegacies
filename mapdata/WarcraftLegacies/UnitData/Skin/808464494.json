@@ -22,7 +22,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_2675"
+      "Value": "(T1 Hounds)"
     },
     {
       "Id": 1735156597,
@@ -36,12 +36,12 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_2676"
+      "Value": "Fel Hound Demon Gate"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_2677"
+      "Value": "Upgrade to Fel Hound Demon Gate"
     },
     {
       "Id": 1935832437,
@@ -51,7 +51,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_6536"
+      "Value": "Gateway attuned to the Fel Hounds of the Burning Crusade, summoning 2 every 80 seconds. |n|n|cfff5962dAbilities:|R Mana Burn, Magic Resistance, Feedback|n|cfff5962dUpgrades Into:|R Fel Hound Pack , Felguard Demon Gate or Pit Fiend Gate"
     }
   ]
 }

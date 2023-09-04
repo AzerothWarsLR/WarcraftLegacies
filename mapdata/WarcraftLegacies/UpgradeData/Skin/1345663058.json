@@ -21,55 +21,55 @@
       "Level": 1,
       "Id": 1718840935,
       "Type": 3,
-      "Value": "TRIGSTR_3545"
+      "Value": "(Ironforge)"
     },
     {
       "Level": 1,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_14846"
+      "Value": "X"
     },
     {
       "Level": 2,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_14907"
+      "Value": "X"
     },
     {
       "Level": 1,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "TRIGSTR_14281"
+      "Value": "Tinkerer Adept Training"
     },
     {
       "Level": 2,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "TRIGSTR_14282"
+      "Value": "Tinkerer Master Training"
     },
     {
       "Level": 1,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_14283"
+      "Value": "Research Tinkerer Adept Training"
     },
     {
       "Level": 2,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_14284"
+      "Value": "Research Tinkerer Master Training"
     },
     {
       "Level": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "TRIGSTR_14285"
+      "Value": "Increases Tinkerers\u0027 mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Mech Kit."
     },
     {
       "Level": 2,
       "Id": 828536167,
       "Type": 3,
-      "Value": "TRIGSTR_14286"
+      "Value": "Increases Tinkerers\u0027 mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Overclock."
     }
   ]
 }

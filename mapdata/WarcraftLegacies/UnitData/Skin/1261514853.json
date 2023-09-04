@@ -13,7 +13,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_17038"
+      "Value": "(draenei)"
     },
     {
       "Id": 1818520949,
@@ -23,7 +23,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_5406"
+      "Value": "E"
     },
     {
       "Id": 1831952757,
@@ -33,7 +33,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_17902"
+      "Value": "Polybolos"
     },
     {
       "Id": 1668510581,
@@ -47,12 +47,12 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_17903"
+      "Value": "Train Polybolos"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_17904"
+      "Value": "Long-range percision siege weaponry.|n|n|cff99b4d1Can only build 3.|r|n|cffffcc00Attacks land units and trees.|r"
     }
   ]
 }

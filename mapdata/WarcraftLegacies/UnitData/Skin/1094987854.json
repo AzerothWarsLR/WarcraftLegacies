@@ -13,12 +13,12 @@
     {
       "Id": 1953980789,
       "Type": 3,
-      "Value": "TRIGSTR_9044"
+      "Value": "Revive Fel Warchief"
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_16625"
+      "Value": "(dragonmaw Quest)"
     },
     {
       "Id": 1818520949,
@@ -28,7 +28,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_5418"
+      "Value": "W"
     },
     {
       "Id": 2053990773,
@@ -43,17 +43,17 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_16647"
+      "Value": "Overlord"
     },
     {
       "Id": 1869770869,
       "Type": 3,
-      "Value": "TRIGSTR_16660"
+      "Value": "Mor\u0027ghor"
     },
     {
       "Id": 1919972469,
       "Type": 3,
-      "Value": "TRIGSTR_16664"
+      "Value": "Revive Fel Warchief"
     },
     {
       "Id": 1668510581,
@@ -63,7 +63,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_19061"
+      "Value": "Warrior Hero, adept at bolstering troups and melee combat.|n|cfff5962dAbilities:|r Command Aura|n|cfff5962dCan Learn:|R Breath of Fire, Dark Grip, Vampiric Aura, Field of Blood|n|n|cffffcc00Attacks land and air units.|R"
     },
     {
       "Id": 1684960117,
@@ -73,7 +73,7 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_19065"
+      "Value": "Summon Kargath"
     },
     {
       "Id": 2020631157,

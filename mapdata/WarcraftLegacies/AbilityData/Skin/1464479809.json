@@ -31,7 +31,7 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_9028"
+      "Value": "(Kelthuzad Ghost)"
     },
     {
       "Id": 1952540001,
@@ -41,12 +41,12 @@
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_9879"
+      "Value": "Q"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_9030"
+      "Value": "Spectral Invocation"
     },
     {
       "Id": 1918988897,
@@ -56,17 +56,17 @@
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_9904"
+      "Value": "Q"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_9032"
+      "Value": "Learn Spectral Invocation - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_9033"
+      "Value": "The Necromancer summons 20 evil spirits around the target enemy, each of which will attack the target for 65 damage. Cooldown and manacost decrease with levels. |n|n|cffffcc00Level 1|r - 80 seconds cooldown, 300 mana cost. |n|cffffcc00Level 2|r - 60 seconds cooldown, 250 mana cost. |n|cffffcc00Level 3|r - 40 seconds cooldown, 200 mana cost. |n|cffffcc00Level 4|r - 20 seconds cooldown, 150 mana cost."
     },
     {
       "Id": 1952543841,
@@ -77,31 +77,31 @@
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_9034"
+      "Value": "Spectral Invocation - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_9035"
+      "Value": "Spectral Invocation - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_9036"
+      "Value": "Spectral Invocation - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_9037"
+      "Value": "Spectral Invocation - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_9038"
+      "Value": "The Necromancer summons 20 evil spirits around the target enemy, each of which will attack the target for 65 damage."
     },
     {
       "Id": 1918989665,

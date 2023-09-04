@@ -13,7 +13,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_2740"
+      "Value": "Z"
     },
     {
       "Id": 1919447925,
@@ -27,7 +27,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_2877"
+      "Value": "Flying bastion of Legion\u0027s reign.|n|cfff5962dAbilities:|R Curse Aura, Multishot |n|cfff5962dTrains:|R Legion Herald, Dreadlord|n|cfff5962dResearches:|R Improved Carrion Swarm, Astral Walk, Rematerialization|n|n|cfff5962dUpgrades Into:|R Infernal Palace|R|n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Id": 1818520949,
@@ -37,12 +37,12 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19883"
+      "Value": "(Legion T3)"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_2097"
+      "Value": "Burning Citadel"
     },
     {
       "Id": 1633907573,
@@ -52,7 +52,7 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_2164"
+      "Value": "Upgrade to Burning Citadel"
     },
     {
       "Id": 1831952757,

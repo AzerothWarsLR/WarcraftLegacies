@@ -13,24 +13,24 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_8763"
+      "Value": "(level 4)(Light Blue - Shandris Standard)"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_8764"
+      "Value": "Sentinel Standard Aura"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_8765"
+      "Value": "Sentinel Standard Aura"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_8766"
+      "Value": "Gives 30% extra damage to the attacks of nearby friendly units."
     }
   ]
 }

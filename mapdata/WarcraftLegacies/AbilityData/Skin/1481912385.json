@@ -13,29 +13,29 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_1143"
+      "Value": "(muskateer)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_16471"
+      "Value": "W"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_5154"
+      "Value": "Field Medkit"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_18008"
+      "Value": "Field Medkit"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_18022"
+      "Value": "Heals a target friendly unit for 600 hit points over 20 seconds."
     }
   ]
 }

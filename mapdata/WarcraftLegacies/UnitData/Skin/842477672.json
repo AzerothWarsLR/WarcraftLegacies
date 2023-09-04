@@ -21,7 +21,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19755"
+      "Value": " (Stormwind Farm)"
     },
     {
       "Id": 1818520949,
@@ -31,7 +31,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_2317"
+      "Value": "W"
     },
     {
       "Id": 1633907573,
@@ -51,17 +51,17 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_15833"
+      "Value": "Civilian farmstead supplying food for the Kingdom.|nProvides 8 food, which increases the maximum number of units that can be trained."
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_19756"
+      "Value": "Homestead"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_19757"
+      "Value": "Build Homestead"
     }
   ]
 }

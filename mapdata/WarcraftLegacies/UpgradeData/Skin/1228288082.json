@@ -19,31 +19,31 @@
       "Level": 1,
       "Id": 1718840935,
       "Type": 3,
-      "Value": "TRIGSTR_12057"
+      "Value": "(Scourge)"
     },
     {
       "Level": 1,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "TRIGSTR_14216"
+      "Value": "Plague of Undeath"
     },
     {
       "Level": 1,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_14217"
+      "Value": "Research Plague of Undeath"
     },
     {
       "Level": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "TRIGSTR_14218"
+      "Value": "Gives the order for the Scourge\u0027s apothecaries to unleash a devastating plague upon Lordaeron.|n|n|cffffcc00Required to complete the quest Plague of Undeath."
     },
     {
       "Level": 1,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_12438"
+      "Value": "A"
     }
   ]
 }

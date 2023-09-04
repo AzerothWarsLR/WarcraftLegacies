@@ -13,7 +13,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_810"
+      "Value": "(Legion, Worker)"
     },
     {
       "Id": 1818520949,
@@ -23,7 +23,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_1675"
+      "Value": "Q"
     },
     {
       "Id": 1831952757,
@@ -38,17 +38,17 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_1474"
+      "Value": "Legion Herald"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_14368"
+      "Value": "Train Legion Herald"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_17730"
+      "Value": "Basic worker. Can summon and restore structures.|n|n|cffffcc00Attacks land units.|r"
     },
     {
       "Id": 1684960117,

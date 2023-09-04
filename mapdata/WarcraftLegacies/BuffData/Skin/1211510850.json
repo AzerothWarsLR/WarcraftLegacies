@@ -13,7 +13,7 @@
     {
       "Id": 1885959270,
       "Type": 3,
-      "Value": "TRIGSTR_13263"
+      "Value": "Voodoo Restoration"
     },
     {
       "Id": 1952543590,
@@ -28,7 +28,7 @@
     {
       "Id": 1700951398,
       "Type": 3,
-      "Value": "TRIGSTR_8258"
+      "Value": "This unit has Voodoo Restoration; nearby friendly ground units are being healed over time."
     }
   ]
 }

@@ -11,24 +11,24 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_5176"
+      "Value": "(Red - Necromancer)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_6757"
+      "Value": "Q"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_5178"
+      "Value": "Cripple (|cffffcc00Q|r)"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_5179"
+      "Value": "Reduces movement speed by 75%, attack rate by 50%, and damage by 50% of a target enemy unit. |nLasts 50 seconds. Lasts 5 seconds on Heroes."
     }
   ]
 }

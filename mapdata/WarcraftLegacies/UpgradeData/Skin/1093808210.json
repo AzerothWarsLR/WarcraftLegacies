@@ -19,49 +19,49 @@
       "Level": 1,
       "Id": 1718840935,
       "Type": 3,
-      "Value": "TRIGSTR_14662"
+      "Value": "(Scourge-Legion)"
     },
     {
       "Level": 1,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_16224"
+      "Value": "D"
     },
     {
       "Level": 1,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "TRIGSTR_14665"
+      "Value": "Chaos Infusion"
     },
     {
       "Level": 1,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_14666"
+      "Value": "Research Chaos Infusion"
     },
     {
       "Level": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "TRIGSTR_6775"
+      "Value": "Increases the hit points of all casters by 100 and increases armor by 2."
     },
     {
       "Level": 2,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_17221"
+      "Value": "D"
     },
     {
       "Level": 3,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_17478"
+      "Value": "D"
     },
     {
       "Level": 4,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_17792"
+      "Value": "D"
     }
   ]
 }

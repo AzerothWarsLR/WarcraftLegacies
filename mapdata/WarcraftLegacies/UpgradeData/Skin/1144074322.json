@@ -19,31 +19,31 @@
       "Level": 1,
       "Id": 1718840935,
       "Type": 3,
-      "Value": "TRIGSTR_13824"
+      "Value": "(Scourge)"
     },
     {
       "Level": 1,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_16154"
+      "Value": "C"
     },
     {
       "Level": 1,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "TRIGSTR_11497"
+      "Value": "Howl of Terror"
     },
     {
       "Level": 1,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_5681"
+      "Value": "Research Howl of Terror"
     },
     {
       "Level": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "TRIGSTR_6161"
+      "Value": "Enables Gargoyles to use Howl of Terror, which reduces the attack damage of nearby enemy units by \u003CA022,DataA1,%\u003E% for \u003CA022,Dur1\u003E seconds."
     }
   ]
 }

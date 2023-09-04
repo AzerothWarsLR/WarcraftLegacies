@@ -12,7 +12,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_2902"
+      "Value": "X"
     },
     {
       "Id": 1633907573,
@@ -27,12 +27,12 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_16219"
+      "Value": "Revives slain Heroes and demi-heroes."
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_20001"
+      "Value": "(Forsaken Altar)"
     },
     {
       "Id": 1818520949,
@@ -47,12 +47,12 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_15667"
+      "Value": "Altar of the Queen"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_16273"
+      "Value": "Summon Altar of the Queen"
     }
   ]
 }

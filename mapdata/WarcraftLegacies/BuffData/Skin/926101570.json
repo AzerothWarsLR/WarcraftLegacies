@@ -8,12 +8,12 @@
     {
       "Id": 1885959270,
       "Type": 3,
-      "Value": "TRIGSTR_13543"
+      "Value": "Feathermoon Aura"
     },
     {
       "Id": 1835101798,
       "Type": 3,
-      "Value": "TRIGSTR_13545"
+      "Value": "Feathermoon Aura"
     },
     {
       "Id": 1952543846,
@@ -28,7 +28,7 @@
     {
       "Id": 1700951398,
       "Type": 3,
-      "Value": "TRIGSTR_2361"
+      "Value": "This unit is under the effects of Feathermoon Aura; its ranged attacks will deal more damage."
     }
   ]
 }

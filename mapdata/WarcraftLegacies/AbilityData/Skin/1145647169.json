@@ -13,7 +13,7 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_9212"
+      "Value": "(Khaz Modan-Falstad)"
     },
     {
       "Id": 1952540001,
@@ -23,7 +23,7 @@
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_9990"
+      "Value": "Q"
     },
     {
       "Id": 1952542049,
@@ -33,7 +33,7 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_9214"
+      "Value": "Hammer Time!"
     },
     {
       "Id": 1918988897,
@@ -43,65 +43,65 @@
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_9991"
+      "Value": "Q"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_9216"
+      "Value": "Learn Hammer Time! - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_9217"
+      "Value": "Falstad throws hammers on his enemies dealing damage to them.|n|n|cffffcc00Level 1|r - \u003CA0ID,DataA1\u003E damage per target. |n|cffffcc00Level 2|r - \u003CA0ID,DataA2\u003E damage per target. |n|cffffcc00Level 3|r - \u003CA0ID,DataA3\u003E damage per target.|n|cffffcc00Level 4|r - \u003CA0ID,DataA4\u003E damage per target."
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_9218"
+      "Value": "Hammer Time! - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_9219"
+      "Value": "Hammer Time! - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_9220"
+      "Value": "Hammer Time! - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_9221"
+      "Value": "Hammer Time! - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_9222"
+      "Value": "Falstad throws hammers at enemies all around him. Each hammer does \u003CA0ID,DataA1\u003E damage. Does not stun enemies."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_9223"
+      "Value": "Falstad throws hammers at enemies all around him. Each hammer does \u003CA0ID,DataA2\u003E damage. Does not stun enemies."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_9224"
+      "Value": "Falstad throws hammers at enemies all around him. Each hammer does \u003CA0ID,DataA3\u003E damage. Does not stun enemies."
     },
     {
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_9225"
+      "Value": "Falstad throws hammers at enemies all around him. Each hammer does \u003CA0ID,DataA4\u003E damage. Does not stun enemies."
     }
   ]
 }

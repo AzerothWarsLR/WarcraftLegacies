@@ -13,12 +13,12 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_16782"
+      "Value": "(Twilight)"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_13172"
+      "Value": "Chilling Aura"
     },
     {
       "Id": 1918988897,
@@ -28,24 +28,24 @@
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_9332"
+      "Value": "Learn Chilling Aura - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_16784"
+      "Value": "Decreases the movement speed and attack rate of nearby enemy units. |n|n|cffffcc00Level 1|r - 10% movement. |n|cffffcc00Level 2|r - 15% movement. |n|cffffcc00Level 3|r - 20% movement.|n|cffffcc00Level 4|r - 25% movement."
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_16785"
+      "Value": "Chilling Aura - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_16786"
+      "Value": "Decreases nearby enemy units\u0027 movement speed by 10%."
     },
     {
       "Id": 1952543841,
@@ -56,37 +56,37 @@
       "Level": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_16787"
+      "Value": "Chilling Aura - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_16788"
+      "Value": "Chilling Aura - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_16789"
+      "Value": "Chilling Aura - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_16790"
+      "Value": "Decreases nearby enemy units\u0027 movement speed by 15%."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_16791"
+      "Value": "Decreases nearby enemy units\u0027 movement speed by 20%."
     },
     {
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_16792"
+      "Value": "Decreases nearby enemy units\u0027 movement speed by 25%."
     }
   ]
 }

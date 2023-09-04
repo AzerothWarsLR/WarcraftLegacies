@@ -20,7 +20,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_1633"
+      "Value": "C"
     },
     {
       "Id": 1633907573,
@@ -30,7 +30,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_1612"
+      "Value": "Elder Rise"
     },
     {
       "Id": 1935832437,
@@ -40,7 +40,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_1613"
+      "Value": "Mystical lounge with purchasable items."
     }
   ]
 }

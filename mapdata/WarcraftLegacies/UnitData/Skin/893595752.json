@@ -17,7 +17,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_20734"
+      "Value": "(Sunfury T3)"
     },
     {
       "Id": 1818520949,
@@ -27,7 +27,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_14370"
+      "Value": "C"
     },
     {
       "Id": 845245813,
@@ -47,7 +47,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_20870"
+      "Value": "Sanctuary"
     },
     {
       "Id": 1668510581,
@@ -57,7 +57,7 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_20732"
+      "Value": "Upgrade to Sanctuary"
     },
     {
       "Id": 1935832437,
@@ -67,7 +67,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_20737"
+      "Value": "Main gathering structure.|n|cfff5962dTrains:|R Architect, Farstrider|n|cfff5962dResearches:|R Feint, Full Scale Escalation"
     }
   ]
 }

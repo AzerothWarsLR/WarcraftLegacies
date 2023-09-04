@@ -8,12 +8,12 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_20030"
+      "Value": "(Zandalari Specialist)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_4069"
+      "Value": "F"
     },
     {
       "Id": 1935832437,
@@ -23,7 +23,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_16344"
+      "Value": "Shrine to honor the Troll Gods.|n|cfff5962dTrains:|R Warlords, Ravagers and Bear Riders"
     },
     {
       "Id": 1818520949,
@@ -38,12 +38,12 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_16346"
+      "Value": "Loa Shrine"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_16347"
+      "Value": "Build Loa Shrine"
     }
   ]
 }

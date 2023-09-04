@@ -22,7 +22,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_13869"
+      "Value": "Z"
     },
     {
       "Id": 1633907573,
@@ -32,7 +32,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_20885"
+      "Value": "Sky-Fury Tower"
     },
     {
       "Id": 1668510581,
@@ -42,7 +42,7 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_20886"
+      "Value": "Build Sky-Fury Tower"
     },
     {
       "Id": 1935832437,
@@ -52,12 +52,12 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_20762"
+      "Value": "Tower of the Sunfury.|n|cfff5962dUpgrades Into:|R Improved Sky-fury Tower|n|n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_20783"
+      "Value": "(sunfury tower)"
     }
   ]
 }

@@ -8,7 +8,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_3661"
+      "Value": "(Sentinels-Nightblade on death)"
     },
     {
       "Id": 828468597,
@@ -28,12 +28,12 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_3662"
+      "Value": "Spirit of Retribution"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_3663"
+      "Value": "A spirit of retribution, born of a Sentinel\u0027s unyielding soul.|n|cfff5962dAbilities:|R Evasion|n|n|cffffcc00Attacks land units."
     }
   ]
 }

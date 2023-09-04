@@ -13,23 +13,23 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_16560"
+      "Value": "(Dragonmaw Gorfax)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_18165"
+      "Value": "E"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_13584"
+      "Value": "Unholy Armor"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_16753"
+      "Value": "Unholy Armor"
     },
     {
       "Id": 1918989665,
@@ -39,49 +39,49 @@
     {
       "Id": 1802007905,
       "Type": 3,
-      "Value": "TRIGSTR_18191"
+      "Value": "E"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_16754"
+      "Value": "Increases a target friendly unit\u0027s armor by \u003CA0HG,DataB1\u003E for \u003CA0HG,Dur1\u003E seconds at the cost of 6% of its current hit points."
     },
     {
       "Level": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_16755"
+      "Value": "Unholy Armor"
     },
     {
       "Level": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_18100"
+      "Value": "Unholy Armor"
     },
     {
       "Level": 4,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_18101"
+      "Value": "Unholy Armor"
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_18671"
+      "Value": "Increases a target friendly unit\u0027s armor by \u003CA0HG,DataB2\u003E for \u003CA0HG,Dur2\u003E seconds at the cost of 6% of its current hit points."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_18672"
+      "Value": "Increases a target friendly unit\u0027s armor by \u003CA0HG,DataB3\u003E for \u003CA0HG,Dur3\u003E seconds at the cost of 6% of its current hit points."
     },
     {
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_18673"
+      "Value": "Increases a target friendly unit\u0027s armor by \u003CA0HG,DataB4\u003E for \u003CA0HG,Dur4\u003E seconds at the cost of 6% of its current hit points."
     }
   ]
 }

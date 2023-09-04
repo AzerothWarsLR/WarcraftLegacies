@@ -17,7 +17,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_199"
+      "Value": "(forsaken)"
     },
     {
       "Id": 1818520949,
@@ -27,7 +27,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_5152"
+      "Value": "W"
     },
     {
       "Id": 2054188149,
@@ -52,7 +52,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_209"
+      "Value": "Dark Ranger"
     },
     {
       "Id": 1668510581,
@@ -62,12 +62,12 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_18162"
+      "Value": "Train Dark Ranger"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_18307"
+      "Value": "Agile, deadly and skilled Rangers of the Forsaken.|n|cfff5962dAbilities:|R Knife Throw, Blink, Dark Arrow|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land and air units.|r"
     }
   ]
 }

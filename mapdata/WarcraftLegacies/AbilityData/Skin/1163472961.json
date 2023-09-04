@@ -12,12 +12,12 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_7053"
+      "Value": "(C\u0027thun Guardian, Bladelords)"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_234"
+      "Value": "Elite Combat Experience"
     },
     {
       "Id": 1918988897,
@@ -28,13 +28,13 @@
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_235"
+      "Value": "Elite Combat Experience"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_7056"
+      "Value": "Gives a 15% chance to dodge an attack and a 20% chance to deal 2x normal damage."
     }
   ]
 }

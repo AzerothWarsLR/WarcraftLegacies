@@ -22,17 +22,17 @@
     {
       "Id": 1853186933,
       "Type": 3,
-      "Value": "TRIGSTR_3135"
+      "Value": "Initiate, Adept, Master"
     },
     {
       "Id": 1953850229,
       "Type": 3,
-      "Value": "TRIGSTR_3687"
+      "Value": "- Heal,- Heal|n- Dispel Magic,- Heal|n- Dispel Magic- Light Burst"
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_2052"
+      "Value": "(Sentinels)"
     },
     {
       "Id": 1818520949,
@@ -42,7 +42,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_3034"
+      "Value": "W"
     },
     {
       "Id": 2054188149,
@@ -62,17 +62,17 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_3690"
+      "Value": "Priestess"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_3691"
+      "Value": "Train Priestess"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_17998"
+      "Value": "Divine priestess of Elune.|n|cfff5962dAbilities:|r Heal, Elune\u0027s Grace|n|cfff5962dCan Learn:|R Dispel Magic, Rain of Light, Wind Walk|n|n|cffffcc00Attacks land and air units.|R"
     }
   ]
 }

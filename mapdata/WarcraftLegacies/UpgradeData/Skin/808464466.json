@@ -13,55 +13,55 @@
       "Level": 1,
       "Id": 1718840935,
       "Type": 3,
-      "Value": "TRIGSTR_3097"
+      "Value": "(Kul\u0027tiras)"
     },
     {
       "Level": 1,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_17582"
+      "Value": "Z"
     },
     {
       "Level": 2,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_17583"
+      "Value": "Z"
     },
     {
       "Level": 1,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "TRIGSTR_15177"
+      "Value": "Tidesage Adept Training"
     },
     {
       "Level": 2,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "TRIGSTR_15178"
+      "Value": "Tidesage Master Training"
     },
     {
       "Level": 1,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_15179"
+      "Value": "Research Tidesage Adept Training"
     },
     {
       "Level": 2,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_15180"
+      "Value": "Research Tidesage Master Training"
     },
     {
       "Level": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "TRIGSTR_14701"
+      "Value": "Increases Tidesages\u0027 mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Summon Sea Elemental."
     },
     {
       "Level": 2,
       "Id": 828536167,
       "Type": 3,
-      "Value": "TRIGSTR_15182"
+      "Value": "Increases Tidesages\u0027 mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Whirlpool."
     },
     {
       "Level": 1,

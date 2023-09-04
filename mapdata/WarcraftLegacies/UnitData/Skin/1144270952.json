@@ -12,7 +12,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_3060"
+      "Value": "(Quel\u0027Thalas-Anasterian-Level 2)"
     },
     {
       "Id": 1735156597,
@@ -26,7 +26,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_3061"
+      "Value": "Al\u0027ar"
     },
     {
       "Id": 1919705973,
@@ -35,7 +35,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_3062"
+      "Value": "Loyal phoenix of the Sunstrider Dynasty.|n|cfff5962dAbilities:|R Sun Ray, Spell Immunity, Resistant Skin|n|n|cffffcc00Attacks land and air units.|R\r\n\r\n"
     }
   ]
 }

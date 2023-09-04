@@ -12,12 +12,12 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_2650"
+      "Value": "(Dalaran-Elite)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_2264"
+      "Value": "W"
     },
     {
       "Id": 1831952757,
@@ -27,17 +27,17 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_2652"
+      "Value": "Kirin Tor"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_2653"
+      "Value": "Train Kirin Tor"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_9067"
+      "Value": "A powerful mage of Dalaran.|n|cfff5962dAbilities:|R Forked Lightning, Mana Shield, Arcane Combustion, Teleport, Counterspell, Spell Shield, Resistant Skin|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land and air units."
     },
     {
       "Id": 1684960117,

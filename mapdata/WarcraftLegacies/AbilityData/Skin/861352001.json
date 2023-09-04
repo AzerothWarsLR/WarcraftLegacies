@@ -16,13 +16,13 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_7412"
+      "Value": "(Kargath, Thrall, Garithos)"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_7413"
+      "Value": "Gives 10% extra damage to the attacks of nearby friendly units."
     }
   ]
 }

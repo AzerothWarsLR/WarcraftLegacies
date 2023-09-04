@@ -11,18 +11,18 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_5272"
+      "Value": "(Scourge-Destroyer)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_7389"
+      "Value": "E"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_5274"
+      "Value": "Takes all mana from one of your units and gives it to the Caster."
     }
   ]
 }

@@ -17,7 +17,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_1974"
+      "Value": "(Sentinels)"
     },
     {
       "Id": 1818520949,
@@ -27,7 +27,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_2134"
+      "Value": "W"
     },
     {
       "Id": 2054188149,
@@ -52,7 +52,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_2522"
+      "Value": "Guild Ranger"
     },
     {
       "Id": 1668510581,
@@ -62,12 +62,12 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_2523"
+      "Value": "Train Guild Ranger"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_20509"
+      "Value": "Agile, deadly and skilled Archers of the Sentinels.|n|cfff5962dAbilities: |RAimed Shot, Resistant Skin, Elune\u0027s Grace, Shadowmeld|n|cfff5962dCan Learn:|R Wind Walk|n|n|cff99b4d1Can only train 12.|r|n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Id": 1831952757,

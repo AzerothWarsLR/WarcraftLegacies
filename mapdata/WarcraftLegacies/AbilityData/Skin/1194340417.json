@@ -17,24 +17,24 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_12925"
+      "Value": "(Legion Nexus)(Icon Only)"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_12926"
+      "Value": "Legion Nexus Defense"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_12927"
+      "Value": "Legion Nexus Defense"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_12928"
+      "Value": "The Legion Nexus will fire shadow energy to nearby enemies."
     }
   ]
 }

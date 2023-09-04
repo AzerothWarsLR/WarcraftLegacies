@@ -16,7 +16,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19670"
+      "Value": " (Warsong Barracks)"
     },
     {
       "Id": 1818520949,
@@ -26,7 +26,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_1226"
+      "Value": "A"
     },
     {
       "Id": 1633907573,
@@ -36,12 +36,12 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_1541"
+      "Value": "War Camp"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_1542"
+      "Value": "Build War Camp"
     },
     {
       "Id": 1935832437,
@@ -51,7 +51,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_6163"
+      "Value": "Brutal training ground for the Warsong warriors.|n|cfff5962dTrains:|r Grunt, Axe Thrower, Blademaster|n|cfff5962dResearches:|R Brute Strength"
     }
   ]
 }

@@ -7,12 +7,12 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_855"
+      "Value": "(Fel Horde)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_705"
+      "Value": "Q"
     },
     {
       "Id": 1633907573,
@@ -22,7 +22,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_872"
+      "Value": "Fel Raider"
     },
     {
       "Id": 1668510581,
@@ -32,12 +32,12 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_873"
+      "Value": "Train Fel Raider"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_1316"
+      "Value": "Mobile pillager infused with the blood of demons.|n|cfff5962dAbilities:|R Ensnare, Self-Bloodlust, Pillage, Demolish, Bleeding Blade|n|cfff5962dCan learn:|R Blood Runes|n|n|cffffcc00Attacks land units.|r"
     }
   ]
 }

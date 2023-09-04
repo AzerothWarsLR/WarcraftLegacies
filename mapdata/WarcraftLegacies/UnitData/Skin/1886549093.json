@@ -15,12 +15,12 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_1058"
+      "Value": "(Druids)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_378"
+      "Value": "Z"
     },
     {
       "Id": 1633907573,
@@ -30,7 +30,7 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_1060"
+      "Value": "Build Ancient Protector"
     },
     {
       "Id": 1935832437,
@@ -40,7 +40,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_1061"
+      "Value": "Defensive Ancient of the Kaldorei forests who hurls boulders at his foes|n|cfff5962dUpgraded Into:|R Improved Ancient Protector |n|n|cffffcc00Attacks land and air units.|r"
     }
   ]
 }

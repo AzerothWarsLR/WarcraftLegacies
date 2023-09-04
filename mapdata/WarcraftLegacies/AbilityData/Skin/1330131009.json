@@ -17,17 +17,17 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_9303"
+      "Value": "(Light Blue - Auberdine Summon)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_14755"
+      "Value": "C"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_9305"
+      "Value": "Auberdine Navy"
     },
     {
       "Id": 1918988897,
@@ -52,13 +52,13 @@
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_13541"
+      "Value": "Auberdine Navy"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_5171"
+      "Value": "Summons 4 Galleys which last 2 minutes.|n|n|cffe8e8004 minute cooldown.|r"
     }
   ]
 }

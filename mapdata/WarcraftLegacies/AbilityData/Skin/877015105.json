@@ -13,24 +13,24 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_3137"
+      "Value": "(Ironforge)"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_9720"
+      "Value": "Armor Penetration Rounds"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_9722"
+      "Value": "Increases damage dealt to enemy targets with Heavy armor by \u003CA0F4,DataB1,%\u003E%."
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_9721"
+      "Value": "Armor Penetration Rounds"
     }
   ]
 }

@@ -8,7 +8,7 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_11587"
+      "Value": "(Dummy)(unused)"
     },
     {
       "Id": 1952540001,
@@ -18,29 +18,29 @@
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_11999"
+      "Value": "Q"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_11589"
+      "Value": "Cleanse Dead"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_11590"
+      "Value": "Raise Dead (|cffffcc00Q|r)"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_11591"
+      "Value": "Raises a skeleton warrior from a corpse."
     },
     {
       "Id": 1802007905,
       "Type": 3,
-      "Value": "TRIGSTR_12005"
+      "Value": "Q"
     }
   ]
 }

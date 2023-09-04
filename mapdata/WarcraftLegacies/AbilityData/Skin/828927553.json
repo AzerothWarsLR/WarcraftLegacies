@@ -7,23 +7,23 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_8849"
+      "Value": " (Warsong Shadowpriest)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_6262"
+      "Value": "Q"
     },
     {
       "Id": 1802007905,
       "Type": 3,
-      "Value": "TRIGSTR_6271"
+      "Value": "Q"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_21291"
+      "Value": "Heals a target friendly non-mechanical wounded unit for 25 hitpoints."
     }
   ]
 }

@@ -21,7 +21,7 @@
     {
       "Id": 1936024681,
       "Type": 3,
-      "Value": "TRIGSTR_4284"
+      "Value": "Gives bonus experience points."
     },
     {
       "Id": 1818846825,
@@ -31,22 +31,22 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_7094"
+      "Value": "E"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_4286"
+      "Value": "Book of Experience"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_4287"
+      "Value": "Purchase Book of |cffffcc00E|rxperience"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_4288"
+      "Value": "Increases the level of the Hero by \u003CAIlm,DataA1\u003E when used."
     }
   ]
 }

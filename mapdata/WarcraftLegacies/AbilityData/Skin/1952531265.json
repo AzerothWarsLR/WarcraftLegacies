@@ -7,19 +7,19 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_6456"
+      "Value": "(Teal - Voone)"
     },
     {
       "Level": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_3469"
+      "Value": "Improved Trueshot Aura"
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_3511"
+      "Value": "An aura that gives nearby friendly units a 15% bonus damage to their ranged attacks."
     }
   ]
 }

@@ -13,7 +13,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_20057"
+      "Value": "(Yogg Research)"
     },
     {
       "Id": 1818520949,
@@ -23,7 +23,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_5232"
+      "Value": "E"
     },
     {
       "Id": 1633907573,
@@ -33,7 +33,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_17306"
+      "Value": "Siphoning Crystal"
     },
     {
       "Id": 1668510581,
@@ -43,7 +43,7 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_20058"
+      "Value": "Build Siphoning Crystal"
     },
     {
       "Id": 1935832437,
@@ -53,7 +53,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_14536"
+      "Value": "Primary research center. |n|cfff5962dResearches:|R Forged Weaponry, Armor Plating, Chaos Infusion, Improved Cannons, Fortified Hulls"
     }
   ]
 }

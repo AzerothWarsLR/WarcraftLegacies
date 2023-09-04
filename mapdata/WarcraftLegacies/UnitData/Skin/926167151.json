@@ -12,12 +12,12 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19970"
+      "Value": "(Zandalari Shop)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_4274"
+      "Value": "C"
     },
     {
       "Id": 1935832437,
@@ -27,7 +27,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_16062"
+      "Value": "Creates a shop with purchasable items."
     },
     {
       "Id": 1818520949,
@@ -42,12 +42,12 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_3653"
+      "Value": "Bazaar"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_3841"
+      "Value": "Build Bazaar"
     }
   ]
 }

@@ -21,7 +21,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19714"
+      "Value": " (Warsong T2)"
     },
     {
       "Id": 1818520949,
@@ -31,7 +31,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_1515"
+      "Value": "Z"
     },
     {
       "Id": 828468597,
@@ -56,12 +56,12 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_2504"
+      "Value": "Iron Keep"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_2505"
+      "Value": "Build Iron Keep"
     },
     {
       "Id": 1935832437,
@@ -71,7 +71,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_9854"
+      "Value": "Defensive fortification.|n|cfff5962dUpgrades Into:|R Improved Iron Keep|n|n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Id": 1868786037,

@@ -21,55 +21,55 @@
       "Level": 1,
       "Id": 1718840935,
       "Type": 3,
-      "Value": "TRIGSTR_14430"
+      "Value": "(Warsong)"
     },
     {
       "Level": 1,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_15172"
+      "Value": "Z"
     },
     {
       "Level": 2,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_15213"
+      "Value": "Z"
     },
     {
       "Level": 1,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "TRIGSTR_10660"
+      "Value": "Shadowpriest Adept Training"
     },
     {
       "Level": 2,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "TRIGSTR_10661"
+      "Value": "Shadowpriest Master Training"
     },
     {
       "Level": 1,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_12894"
+      "Value": "Research Shadowpriest Adept Training"
     },
     {
       "Level": 2,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_13156"
+      "Value": "Research Shadowpriest Master Training"
     },
     {
       "Level": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "TRIGSTR_13646"
+      "Value": "Increases Shadowpriests\u0027 mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Devour Magic."
     },
     {
       "Level": 2,
       "Id": 828536167,
       "Type": 3,
-      "Value": "TRIGSTR_20786"
+      "Value": "Increases Shadowpriests\u0027 mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Spiritual Guidance."
     }
   ]
 }

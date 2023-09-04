@@ -17,29 +17,29 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_11763"
+      "Value": "(Sky Barge)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_12467"
+      "Value": "E"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_11765"
+      "Value": "Unholy Booster"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_11766"
+      "Value": "Unholy Booster"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_11767"
+      "Value": "Causes this unit to move 200% faster.|n|nLasts 3 seconds|n95 second cooldown."
     }
   ]
 }

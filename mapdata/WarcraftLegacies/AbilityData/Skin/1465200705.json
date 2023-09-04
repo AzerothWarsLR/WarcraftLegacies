@@ -8,25 +8,25 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_18176"
+      "Value": "(Plague Flyer)"
     },
     {
       "Level": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_18177"
+      "Value": "Improved Disease Cloud"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_18178"
+      "Value": "Drops a Disease Cloud with each attack. Disease Cloud deals 2 damage per second. |nLasts 90 seconds."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_18179"
+      "Value": "Drops a Disease Cloud with each attack. Disease Cloud deals 2 damage per second. |nLasts 120 seconds."
     },
     {
       "Id": 2020631137,

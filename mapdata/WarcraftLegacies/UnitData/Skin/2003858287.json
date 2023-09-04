@@ -11,7 +11,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_385"
+      "Value": "(Frostwolf)"
     },
     {
       "Id": 1633907573,
@@ -21,17 +21,17 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_15278"
+      "Value": "Mystical Tauren shaman of the Bloodhoof Tribe.|n|cfff5962dAbilities:|R Ethereal Form, Healing Surge|n|cfff5962dCan Learn:|R Disenchant, Ancestral Spirit, Toughened Hides|n|n|cffffcc00Attacks land and air units.|R\r\n"
     },
     {
       "Id": 1953850229,
       "Type": 3,
-      "Value": "TRIGSTR_15279"
+      "Value": "- Ethereal Form|n- Healing Surge,- Ethereal Form|n- Healing Surge|n- Disenchant,- Ethereal Form|n- Healing Surge|n- Disenchant|n- Ancestral Spirit"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_185"
+      "Value": "E"
     }
   ]
 }

@@ -15,17 +15,17 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_650"
+      "Value": "T"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_651"
+      "Value": "Train Ne|cffffcc00t|rher Drake"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_652"
+      "Value": "Heavy ranged flying unit. |n|cff99b4d1Can only train 4.|r|n|cffffcc00Attacks land and air units.|r"
     }
   ]
 }

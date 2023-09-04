@@ -17,7 +17,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_1647"
+      "Value": "(Fel Horde)"
     },
     {
       "Id": 1818520949,
@@ -27,7 +27,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_1913"
+      "Value": "E"
     },
     {
       "Id": 1831952757,
@@ -42,17 +42,17 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_2139"
+      "Value": "Nether Drake"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_2140"
+      "Value": "Train Nether Drake"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_2141"
+      "Value": "Captured drake of from Outland.|n|cfff5962dAbilities:|R Soul Burn, Spell Resistance.|n|n|cff99b4d1Can only summon 6. |r|n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Id": 1684960117,

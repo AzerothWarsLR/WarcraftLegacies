@@ -7,18 +7,18 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_5122"
+      "Value": "(Brown - Druid of the Talon)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_6451"
+      "Value": "Q"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_14972"
+      "Value": "Causes roots to burst from the ground, immobilizing a target enemy unit for 12(0.20 heroes) seconds, and dealing 10 damage per second."
     }
   ]
 }

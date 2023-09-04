@@ -22,12 +22,12 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_9641"
+      "Value": "(Teal - Zuluhed)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_10964"
+      "Value": "E"
     },
     {
       "Id": 1952542049,
@@ -37,7 +37,7 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_9643"
+      "Value": "Meteor"
     },
     {
       "Id": 2020635233,
@@ -61,13 +61,13 @@
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_9644"
+      "Value": "Meteor"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_9645"
+      "Value": "Summons a fiery meteor from the sky, causing 100 damage to units in an area and stunning for 2 seconds on impact. Leaves behind 8 Lava Spawn which last for 10 seconds.|n|n 300 AoE, 12 second cooldown."
     }
   ]
 }

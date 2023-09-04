@@ -11,18 +11,18 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_5147"
+      "Value": "(Sentinels-Priestess)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_6474"
+      "Value": "W"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_5149"
+      "Value": "Removes all buffs from units in a target area and deals \u003CAdsm,DataB1\u003E damage to summoned units.|r"
     }
   ]
 }

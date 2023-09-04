@@ -13,12 +13,12 @@
     {
       "Id": 1885959270,
       "Type": 3,
-      "Value": "TRIGSTR_13595"
+      "Value": "Animal Fury"
     },
     {
       "Id": 1700951398,
       "Type": 3,
-      "Value": "TRIGSTR_13596"
+      "Value": "This unit has Animal Fury; its attack rate and movement speed are increased."
     }
   ]
 }

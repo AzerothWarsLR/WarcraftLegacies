@@ -13,7 +13,7 @@
     {
       "Id": 1953980789,
       "Type": 3,
-      "Value": "TRIGSTR_3750"
+      "Value": "Revive Jarod"
     },
     {
       "Id": 2020631157,
@@ -22,7 +22,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_3751"
+      "Value": "(Sentinel Vassal)"
     },
     {
       "Id": 1685218677,
@@ -37,7 +37,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_1881"
+      "Value": "R"
     },
     {
       "Id": 1633907573,
@@ -47,17 +47,17 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_3753"
+      "Value": "Guard Captain"
     },
     {
       "Id": 1869770869,
       "Type": 3,
-      "Value": "TRIGSTR_3754"
+      "Value": "Jarod Shadowsong"
     },
     {
       "Id": 1919972469,
       "Type": 3,
-      "Value": "TRIGSTR_3755"
+      "Value": "Revive Jarod"
     },
     {
       "Id": 1769173877,
@@ -77,12 +77,12 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_1976"
+      "Value": "Summon Jarod"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_10018"
+      "Value": "Ancient hero, adept at sustaining damage and producing units.|n|cfff5962dCan learn:|R Blood Fury, Mirror Image, Battle Experience, Bladestorm|n|n|cffffcc00Attacks land units.|R"
     },
     {
       "Id": 1684960117,

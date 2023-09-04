@@ -17,7 +17,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_1044"
+      "Value": "(Stormwind)"
     },
     {
       "Id": 1818520949,
@@ -27,7 +27,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_2398"
+      "Value": "E"
     },
     {
       "Id": 845245813,
@@ -42,7 +42,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_2870"
+      "Value": "Carrier Flagship"
     },
     {
       "Id": 1919705973,
@@ -51,12 +51,12 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_2871"
+      "Value": "Build Carrier Flagship"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_2872"
+      "Value": "Powerful flagship built from the combined genius of dwarven engineering and Stormwind ship building.|n|cfff5962dAbilities:|R Bombing Run, True Sight, Build Light House|n|n|cff00ffffCan transport 10 units.|R|n|cff99b4d1Can only build 3.|r|n|cffffcc00Attacks land units.|R\r\n"
     },
     {
       "Id": 1633907573,

@@ -7,80 +7,80 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_467"
+      "Value": "(Khadgar)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_7551"
+      "Value": "W"
     },
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_7624"
+      "Value": "W"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_5722"
+      "Value": "Transforms an enemy unit into a random critter, disabling special abilities. |n|n|cffffcc00Level 1|r - Lasts 60(2) seconds. |n|cffffcc00Level 2|r - Lasts 60(3) seconds. |n|cffffcc00Level 3|r - Lasts 60(4) seconds. |n|cffffcc00Level 4|r - Lasts 60(5) seconds."
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_5723"
+      "Value": "Transforms an enemy unit into a random critter for 60(2) seconds"
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_5724"
+      "Value": "Transforms an enemy unit into a random critter for 60(3) seconds"
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_5725"
+      "Value": "Transforms an enemy unit into a random critter for 60(4) seconds"
     },
     {
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_5726"
+      "Value": "Transforms an enemy unit into a random critter for 60(5) seconds"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_18229"
+      "Value": "Learn Polymorph - [|cffffcc00Level %d|r]"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_18230"
+      "Value": "Polymorph - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_18231"
+      "Value": "Polymorph - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_18232"
+      "Value": "Polymorph - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_18233"
+      "Value": "Polymorph - [|cffffcc00Level 4|r]"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_18234"
+      "Value": "Polymorph"
     },
     {
       "Id": 1953653089,

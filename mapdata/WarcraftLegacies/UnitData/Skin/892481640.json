@@ -31,7 +31,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_3344"
+      "Value": "Stormwind Cannon"
     },
     {
       "Id": 1919705973,
@@ -40,7 +40,7 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_3345"
+      "Value": "Upgrade to Improved |cffffcc00C|rannon Tower"
     },
     {
       "Id": 1935832437,
@@ -50,12 +50,12 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_3346"
+      "Value": "Heavy defensive structure. Particularly effective against clusters of troops.|n|cffffcc00Attacks land units and trees.|r"
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19846"
+      "Value": " (Stormwind Tower)"
     }
   ]
 }

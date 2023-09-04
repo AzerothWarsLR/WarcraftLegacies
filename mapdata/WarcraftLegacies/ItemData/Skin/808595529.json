@@ -13,22 +13,22 @@
     {
       "Id": 1936024681,
       "Type": 3,
-      "Value": "TRIGSTR_4192"
+      "Value": "Starts repairs on the Thandol Span bridge."
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_4193"
+      "Value": "Thandol Span Repairs"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_4194"
+      "Value": "Repair the Thandol Span bridge"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_4195"
+      "Value": "Workers will start repairing the Thandol Span bridge. It will take them 60 seconds to finish repairing the bridge and making it safe so that it can\u0027t be destroyed in the future."
     }
   ]
 }

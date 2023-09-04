@@ -8,18 +8,18 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_12665"
+      "Value": "(1000 range)"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_12666"
+      "Value": "Anti Portal Blocking (units)"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_12667"
+      "Value": "Burns nearby enemy units for 5 points of damage per second and 1 mana per second."
     }
   ]
 }

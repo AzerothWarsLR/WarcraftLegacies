@@ -8,22 +8,22 @@
     {
       "Id": 1835101798,
       "Type": 3,
-      "Value": "TRIGSTR_21348"
+      "Value": "Freezing Shield"
     },
     {
       "Id": 1718840934,
       "Type": 3,
-      "Value": "TRIGSTR_21347"
+      "Value": "(scourge- banshee)"
     },
     {
       "Id": 1885959270,
       "Type": 3,
-      "Value": "TRIGSTR_21365"
+      "Value": "Freezing Shield"
     },
     {
       "Id": 1700951398,
       "Type": 3,
-      "Value": "TRIGSTR_21349"
+      "Value": "This unit has a Freezing Shield; nearby friendly and enemy units will take damage if they are next to this unit."
     }
   ]
 }

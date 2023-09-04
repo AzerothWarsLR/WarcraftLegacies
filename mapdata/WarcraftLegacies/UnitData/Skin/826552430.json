@@ -21,7 +21,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_20326"
+      "Value": "(Onslaught Shop)"
     },
     {
       "Id": 1818520949,
@@ -31,7 +31,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_14200"
+      "Value": "C"
     },
     {
       "Id": 1633907573,
@@ -51,17 +51,17 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_20327"
+      "Value": "A shop of purchasable items."
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_20328"
+      "Value": "Build Trade-house"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_20329"
+      "Value": "Trade-house"
     }
   ]
 }

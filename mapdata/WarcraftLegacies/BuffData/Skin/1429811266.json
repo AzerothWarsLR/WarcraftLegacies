@@ -18,17 +18,17 @@
     {
       "Id": 1885959270,
       "Type": 3,
-      "Value": "TRIGSTR_16982"
+      "Value": "United for the Crusade"
     },
     {
       "Id": 1700951398,
       "Type": 3,
-      "Value": "TRIGSTR_16926"
+      "Value": "This unit is under the effects of Spirit of the Crusade; it has increased attack damage."
     },
     {
       "Id": 1718840934,
       "Type": 3,
-      "Value": "TRIGSTR_14752"
+      "Value": "2"
     }
   ]
 }

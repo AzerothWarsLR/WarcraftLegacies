@@ -13,7 +13,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19728"
+      "Value": "(Ironforge Tower)"
     },
     {
       "Id": 1818520949,
@@ -23,7 +23,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_1840"
+      "Value": "Z"
     },
     {
       "Id": 1633907573,
@@ -43,7 +43,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_8724"
+      "Value": "Observation tower.|n|r|cfff5962dUpgrades into:|R Guard Tower, Cannon Tower"
     }
   ]
 }

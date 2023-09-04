@@ -17,12 +17,12 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19951"
+      "Value": "(Goblin Shipyard)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_2735"
+      "Value": "R"
     },
     {
       "Id": 1633907573,
@@ -32,12 +32,12 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_19952"
+      "Value": "Bilgewater Harbor"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_19953"
+      "Value": "Build Bilgewater Harbor"
     },
     {
       "Id": 1935832437,
@@ -47,7 +47,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_3185"
+      "Value": "Boat construction facility.|n|cfff5962dTrains:|R Oil Rigs Constructor, Scout, Frigate, Fireship, Galley, Boarding Vessel, Juggernaut, Bombard|R|n|n|cff00c4c4Cannot be built near small inland water areas."
     }
   ]
 }

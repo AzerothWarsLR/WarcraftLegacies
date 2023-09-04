@@ -12,31 +12,31 @@
       "Level": 1,
       "Id": 1718840935,
       "Type": 3,
-      "Value": "TRIGSTR_14037"
+      "Value": "(Yellow/Purple/Orange/Green/Dark Green Research)"
     },
     {
       "Level": 1,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_20781"
+      "Value": "E"
     },
     {
       "Level": 2,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_20796"
+      "Value": "E"
     },
     {
       "Level": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "TRIGSTR_15564"
+      "Value": "Increases the rate at which workers gather lumber."
     },
     {
       "Level": 2,
       "Id": 828536167,
       "Type": 3,
-      "Value": "TRIGSTR_15565"
+      "Value": "Increases the rate at which workers gather lumber."
     }
   ]
 }

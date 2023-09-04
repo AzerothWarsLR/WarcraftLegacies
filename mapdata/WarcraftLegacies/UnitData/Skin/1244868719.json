@@ -13,7 +13,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19924"
+      "Value": " (Twilight Research)"
     },
     {
       "Id": 1818520949,
@@ -23,7 +23,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_3726"
+      "Value": "E"
     },
     {
       "Id": 1633907573,
@@ -38,17 +38,17 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_14490"
+      "Value": "Resource harvesting center and producer of Twilight\u0027s Hammer enhancements. |n|cfff5962dResearches:|R Forged Weaponry, Armor Plating, Spiked Barricades, Spiritual Infusion, Improved Cannons, Fortified Hulls"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_3400"
+      "Value": "Voidforge"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_3428"
+      "Value": "Build Voidforge"
     }
   ]
 }

@@ -19,31 +19,31 @@
       "Level": 1,
       "Id": 1718840935,
       "Type": 3,
-      "Value": "TRIGSTR_3688"
+      "Value": "(Sentinels)"
     },
     {
       "Level": 1,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_15755"
+      "Value": "X"
     },
     {
       "Level": 1,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "TRIGSTR_21028"
+      "Value": "Improved Lightning Barrage"
     },
     {
       "Level": 1,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_21213"
+      "Value": "Research Improved Lightning Barrage"
     },
     {
       "Level": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "TRIGSTR_21214"
+      "Value": "Increases attack attack bursts temporary speed bonus to 250%"
     }
   ]
 }

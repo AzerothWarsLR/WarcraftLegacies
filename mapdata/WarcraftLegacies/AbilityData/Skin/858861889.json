@@ -13,29 +13,29 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_6694"
+      "Value": "(Siege Ancients)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_6906"
+      "Value": "R"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_6696"
+      "Value": "Siege Form"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_6697"
+      "Value": "Siege Form"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_6698"
+      "Value": "Immobilizes the Siege Ancient to grant it a powerful ranged attack."
     },
     {
       "Id": 1918989665,
@@ -45,19 +45,19 @@
     {
       "Id": 1802007905,
       "Type": 3,
-      "Value": "TRIGSTR_6956"
+      "Value": "R"
     },
     {
       "Level": 1,
       "Id": 829715809,
       "Type": 3,
-      "Value": "TRIGSTR_6700"
+      "Value": "Mobile Form"
     },
     {
       "Level": 1,
       "Id": 829781345,
       "Type": 3,
-      "Value": "TRIGSTR_6701"
+      "Value": "Allows the Ancient to move again."
     }
   ]
 }

@@ -13,12 +13,12 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_20478"
+      "Value": "(Zandalar)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_14486"
+      "Value": "D"
     },
     {
       "Id": 1734962273,
@@ -28,19 +28,19 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_18111"
+      "Value": "Board"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_18116"
+      "Value": "Board"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_18117"
+      "Value": "The ship orders grappling hooks to be attached to an enemy vessel. Soldiers then board the vessel, this disables the ship temporarily and deals damage to it. |nLasts 20 seconds."
     },
     {
       "Id": 2020631137,

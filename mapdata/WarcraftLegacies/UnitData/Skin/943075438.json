@@ -17,17 +17,17 @@
     {
       "Id": 1853186933,
       "Type": 3,
-      "Value": "TRIGSTR_10985"
+      "Value": "Initiate,Adept,Master"
     },
     {
       "Id": 1953850229,
       "Type": 3,
-      "Value": "TRIGSTR_14352"
+      "Value": "- Smite,- Smite|n- Dispel,- Smite|n- Dispel|n- Holy Shackles"
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_3273"
+      "Value": "(Lordaeron)"
     },
     {
       "Id": 1818520949,
@@ -37,22 +37,22 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_4799"
+      "Value": "Q"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_6167"
+      "Value": "Inquisitor"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_12789"
+      "Value": "Train Inquisitor"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_14353"
+      "Value": "Inquisitive spellcaster of the Scarlet.|n|cfff5962dAbilities:|r Smite|n|cfff5962dCan learn:|R Dispel, Holy Shackles|n|n|cffffcc00Attacks land and air units.|R"
     },
     {
       "Id": 1684960117,

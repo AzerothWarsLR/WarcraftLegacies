@@ -8,45 +8,45 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_3846"
+      "Value": "(brigitte)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_13878"
+      "Value": "R"
     },
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_13907"
+      "Value": "R"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_3847"
+      "Value": "Guarding Light - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_15626"
+      "Value": "Guarding Light - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_16217"
+      "Value": "Guarding Light - [|cffffcc00Level 3|r]"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_16604"
+      "Value": "Guarding Light"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_16863"
+      "Value": "Learn Guarding Light"
     },
     {
       "Id": 1953653089,
@@ -61,13 +61,13 @@
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_16864"
+      "Value": "Turns all friendly units invulnerable in an area around the hero. |nThe hero does not turn invulnerable. |nLasts \u003CAOvd,Dur1\u003E seconds."
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_16865"
+      "Value": "Turns all friendly units invulnerable in an area around the hero. |nThe hero does not turn invulnerable. |nLasts \u003CAOvd,Dur1\u003E seconds."
     }
   ]
 }

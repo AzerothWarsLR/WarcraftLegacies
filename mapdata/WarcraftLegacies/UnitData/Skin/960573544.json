@@ -21,7 +21,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_20121"
+      "Value": "(Gilneas Other)"
     },
     {
       "Id": 1818520949,
@@ -31,7 +31,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_5253"
+      "Value": "W"
     },
     {
       "Id": 1668510581,
@@ -46,12 +46,12 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_2190"
+      "Value": "Provides 8 food, which increases the maximum number of units that can be trained."
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_18560"
+      "Value": "Manor"
     },
     {
       "Id": 1633907573,

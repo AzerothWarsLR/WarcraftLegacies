@@ -8,34 +8,34 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_9726"
+      "Value": " (Deeprun Tram)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_9727"
+      "Value": "R"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_9728"
+      "Value": "Self-Destroy"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_9729"
+      "Value": "Self-Destroy"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_15676"
+      "Value": "Destroys this unit to deal \u003CA0F2,DataB1\u003E damage to enemy units within a radius of \u003CA0F2,DataA1\u003E, and \u003CA0F2,DataD1\u003E damage to enemy units within a radius of \u003CA0F2,DataC1\u003E."
     },
     {
       "Id": 1802007905,
       "Type": 3,
-      "Value": "TRIGSTR_9731"
+      "Value": "R"
     }
   ]
 }

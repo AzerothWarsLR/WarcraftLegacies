@@ -17,22 +17,22 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_16872"
+      "Value": "Medium melee unit that poisons opponents. Can cast Frenzy. |n|n|cffffcc00Attacks land units.|r"
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_12981"
+      "Value": "(UNUSED"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_16873"
+      "Value": "Blackwald Spider"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_16874"
+      "Value": "Summon Blackwald Spider"
     },
     {
       "Id": 1818520949,
@@ -59,7 +59,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_415"
+      "Value": "E"
     },
     {
       "Id": 2020631157,

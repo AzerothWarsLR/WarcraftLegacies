@@ -7,19 +7,19 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_5678"
+      "Value": "(Teal - Infernal. Blue - Infernal)"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_5679"
+      "Value": "Burns nearby enemy units for 10 points of damage per second."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_5680"
+      "Value": "Burns nearby enemy units for 15 points of damage per second."
     }
   ]
 }

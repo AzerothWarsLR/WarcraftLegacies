@@ -8,7 +8,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_17838"
+      "Value": "(draenei)"
     },
     {
       "Id": 1751675765,
@@ -23,17 +23,17 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_17772"
+      "Value": "Shaman contected to the spirits of Nature.|n|cfff5962dAbilities:|R Frost Bolt|n|cfff5962dCan Learn:|R Summon Earth Elemental, Frost Armor|n|n|cffffcc00Attacks land and air units.|R\r\n"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_17877"
+      "Value": "Elementalist"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_17878"
+      "Value": "Train Elementalist"
     },
     {
       "Id": 1818520949,
@@ -63,7 +63,7 @@
     {
       "Id": 1953850229,
       "Type": 3,
-      "Value": "TRIGSTR_17774"
+      "Value": "- Frost Bolt,- Frost Bolt|n- Summon Earth Elemental,- Frost Bolt|n- Summon Earth Elemental|n- Frost Armor"
     }
   ]
 }

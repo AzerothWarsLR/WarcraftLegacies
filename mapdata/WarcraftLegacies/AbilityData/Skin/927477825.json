@@ -8,68 +8,68 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_2512"
+      "Value": "(Brown - Malfurion)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_9351"
+      "Value": "R"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_9352"
+      "Value": "Hurricane"
     },
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_9353"
+      "Value": "R"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_9354"
+      "Value": "Learn Hurricane"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_14278"
+      "Value": "The hero summons a fierce controllable Hurricane that slows enemy units and randomly throws them into the air while dealing damage in an area of effect around the Hurricane.|n|cffffcc00Level 1|r - Lasts 50 seconds.|n|cffffcc00Level 2|r - Deals increased damage and moves faster. Lasts 55 seconds.|n|cffffcc00Level 3|r - Deals increased damage and moves faster. Lasts 60 seconds."
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_9356"
+      "Value": "Hurricane  - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_9357"
+      "Value": "Hurricane - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_9358"
+      "Value": "Hurricane - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_9359"
+      "Value": "Summons a fierce controllable Hurricane that slows enemy units\u0027 movement speed, randomly tosses enemy ground units into the air and damages all units caught in its effect. |nLasts 50 seconds."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_9360"
+      "Value": "Summons a fierce controllable Hurricane that slows enemy units\u0027 movement speed, randomly tosses enemy ground units into the air and damages all units caught in its effect. |nLasts 55 seconds."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_9361"
+      "Value": "Summons a fierce controllable Hurricane that slows enemy units\u0027 movement speed, randomly tosses enemy ground units into the air and damages all units caught in its effect. |nLasts 60 seconds."
     }
   ]
 }

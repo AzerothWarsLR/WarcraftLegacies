@@ -15,12 +15,12 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_1314"
+      "Value": "(Frostwolf Farm)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_244"
+      "Value": "W"
     },
     {
       "Id": 1633907573,
@@ -35,7 +35,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_1366"
+      "Value": "Defensive hovel for peons to defend the territory.|nProvides 10 food, which increases the maximum number of units that can be trained.|n|cfff5962dAbilities:|R Battle Stations|n|cfff5962dCan Learn:|R Spiked Barricades|n|n|cffffcc00Attacks land and air units.|r"
     }
   ]
 }

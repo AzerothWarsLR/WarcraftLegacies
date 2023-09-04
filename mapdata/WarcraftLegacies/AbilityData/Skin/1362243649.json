@@ -12,29 +12,29 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_12392"
+      "Value": "(Red Sky Rider)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_12878"
+      "Value": "Q"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_12394"
+      "Value": "Frost Cloud"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_12395"
+      "Value": "Frost Cloud"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_12396"
+      "Value": "Creates a small cloud that slows units by 50% and give them a 15% chance to miss attacks. |nLasts \u003CAclf,Dur1\u003E seconds."
     }
   ]
 }

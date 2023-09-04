@@ -7,77 +7,77 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_5053"
+      "Value": "(Yellow/Red/DG/Purple/Orange/Pink/Grey/Blue Workers)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_6291"
+      "Value": "F"
     },
     {
       "Id": 1802007905,
       "Type": 3,
-      "Value": "TRIGSTR_7049"
+      "Value": "F"
     },
     {
       "Level": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_1493"
+      "Value": "Gather"
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_8531"
+      "Value": "Harvests lumber from trees."
     },
     {
       "Level": 2,
       "Id": 829715809,
       "Type": 3,
-      "Value": "TRIGSTR_8524"
+      "Value": "Return Resources"
     },
     {
       "Level": 2,
       "Id": 829781345,
       "Type": 3,
-      "Value": "TRIGSTR_8527"
+      "Value": "Returns carried lumber."
     },
     {
       "Level": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_8519"
+      "Value": "Gather"
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_8535"
+      "Value": "Harvests lumber from trees."
     },
     {
       "Level": 3,
       "Id": 829715809,
       "Type": 3,
-      "Value": "TRIGSTR_8532"
+      "Value": "Return Resources"
     },
     {
       "Level": 3,
       "Id": 829781345,
       "Type": 3,
-      "Value": "TRIGSTR_8533"
+      "Value": "Returns carried lumber."
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_11738"
+      "Value": "Harvests lumber from trees."
     },
     {
       "Level": 1,
       "Id": 829781345,
       "Type": 3,
-      "Value": "TRIGSTR_8536"
+      "Value": "Returns carried lumber."
     }
   ]
 }

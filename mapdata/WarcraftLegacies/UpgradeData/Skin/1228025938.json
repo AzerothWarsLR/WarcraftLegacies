@@ -25,55 +25,55 @@
       "Level": 1,
       "Id": 1718840935,
       "Type": 3,
-      "Value": "TRIGSTR_14625"
+      "Value": "(Warsong)"
     },
     {
       "Level": 1,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_14961"
+      "Value": "X"
     },
     {
       "Level": 2,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_14962"
+      "Value": "X"
     },
     {
       "Level": 1,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "TRIGSTR_16968"
+      "Value": "Warlock Adept Training"
     },
     {
       "Level": 2,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "TRIGSTR_16971"
+      "Value": "Warlock Master Training"
     },
     {
       "Level": 1,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_16972"
+      "Value": "Research Warlock Adept Training"
     },
     {
       "Level": 2,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_16973"
+      "Value": "Research Warlock Master Training"
     },
     {
       "Level": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "TRIGSTR_16974"
+      "Value": "Increases Warlock\u0027s mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Frenzy."
     },
     {
       "Level": 2,
       "Id": 828536167,
       "Type": 3,
-      "Value": "TRIGSTR_16975"
+      "Value": "Increases Warlock\u0027s mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Soulburn."
     }
   ]
 }

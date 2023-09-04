@@ -13,12 +13,12 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_12977"
+      "Value": "(Yellow Rune Priest)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_14115"
+      "Value": "Q"
     },
     {
       "Id": 1952542049,
@@ -28,19 +28,19 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_12979"
+      "Value": "Rune of Wrath"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_12980"
+      "Value": "Rune of Wrath"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_21045"
+      "Value": "Launches a firey missile at a target enemy unit, dealing 60 damage and stunning the target for \u003CA006,Dur1\u003E seconds. Lasts 0.1 seconds on heroes."
     }
   ]
 }

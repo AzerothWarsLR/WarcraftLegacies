@@ -13,7 +13,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19649"
+      "Value": " (Fel Horde T1)"
     },
     {
       "Id": 1818520949,
@@ -23,7 +23,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_1703"
+      "Value": "Q"
     },
     {
       "Id": 1935832437,
@@ -33,7 +33,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_7696"
+      "Value": "Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Peon |n|cfff5962dCan learn:|R Spiked Barricades"
     }
   ]
 }

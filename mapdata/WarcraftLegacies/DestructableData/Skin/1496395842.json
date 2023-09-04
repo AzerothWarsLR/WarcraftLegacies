@@ -8,7 +8,7 @@
     {
       "Id": 1835101794,
       "Type": 3,
-      "Value": "TRIGSTR_10260"
+      "Value": "Bridge Wide"
     },
     {
       "Id": 1818846818,
@@ -43,7 +43,7 @@
     {
       "Id": 1718973282,
       "Type": 3,
-      "Value": "TRIGSTR_15203"
+      "Value": "(Light)"
     }
   ]
 }

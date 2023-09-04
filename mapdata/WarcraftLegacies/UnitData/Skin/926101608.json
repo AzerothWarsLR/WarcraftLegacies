@@ -22,17 +22,17 @@
     {
       "Id": 1853186933,
       "Type": 3,
-      "Value": "TRIGSTR_3210"
+      "Value": "Initiate, Adept, Master, Guildmaster"
     },
     {
       "Id": 1953850229,
       "Type": 3,
-      "Value": "TRIGSTR_3211"
+      "Value": "- Mech Kit,- Mech Kit|n- EMP,- Mech Kit|n- EMP|n- Portable Turret,- Mech Kit|n- EMP|n- Portable Turret|n- Stun Mine"
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_2694"
+      "Value": "(Ironforge)"
     },
     {
       "Id": 1818520949,
@@ -42,7 +42,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_2555"
+      "Value": "Q"
     },
     {
       "Id": 2020633717,
@@ -72,17 +72,17 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_3214"
+      "Value": "Engineer"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_3215"
+      "Value": "Train Engineer"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_3216"
+      "Value": "Master of technomechanical tools.|n|cfff5962dAbilities:|R Mech Kit|n|cfff5962dCan Learn:|R EMP, Portable Turret, Stun Mine|n|n|cffffcc00Attacks land and air units.|R"
     }
   ]
 }

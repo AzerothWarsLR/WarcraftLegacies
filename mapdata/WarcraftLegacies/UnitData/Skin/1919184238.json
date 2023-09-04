@@ -7,17 +7,17 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_1959"
+      "Value": "(draenei)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_429"
+      "Value": "Q"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_17895"
+      "Value": "Train Brown Elekk"
     },
     {
       "Id": 1818520949,
@@ -37,12 +37,12 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_17896"
+      "Value": "Brown Elekk"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_12533"
+      "Value": "Heavy melee unit.|n|cfff5962dAbilities:|r Thick Skin |n|n|cffffcc00Attacks land units.|r"
     }
   ]
 }

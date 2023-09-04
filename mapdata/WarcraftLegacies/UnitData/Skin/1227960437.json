@@ -16,7 +16,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_1379"
+      "Value": "(C\u0027thun Building Item)"
     },
     {
       "Id": 1953523061,
@@ -39,7 +39,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_1420"
+      "Value": "C"
     },
     {
       "Id": 1633907573,
@@ -49,7 +49,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_1381"
+      "Value": "Chamber of Wonders"
     },
     {
       "Id": 1668510581,
@@ -59,7 +59,7 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_613"
+      "Value": "Summon - Chamber of Wonders"
     },
     {
       "Id": 1935832437,
@@ -69,7 +69,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_1383"
+      "Value": "Creates a shop with purchasable items."
     }
   ]
 }

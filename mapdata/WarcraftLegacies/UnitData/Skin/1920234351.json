@@ -11,12 +11,12 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_1846"
+      "Value": "(Frostwolf T2)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_409"
+      "Value": "C"
     },
     {
       "Id": 1935832437,
@@ -26,7 +26,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_3512"
+      "Value": "Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Peon|n|cfff5962dAbilities:|R For The Horde!"
     }
   ]
 }

@@ -22,12 +22,12 @@
     {
       "Id": 1853186933,
       "Type": 3,
-      "Value": "TRIGSTR_13741"
+      "Value": "Initiate, Adept, Master"
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_18597"
+      "Value": " (Ragnaros)"
     },
     {
       "Id": 1818520949,
@@ -37,7 +37,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_4985"
+      "Value": "Q"
     },
     {
       "Id": 2020633717,
@@ -67,17 +67,17 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_18523"
+      "Value": "Shadowcaster"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_18528"
+      "Value": "Train Shadowcaster"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_3546"
+      "Value": "Dark Iron practitioner of shadow magic.|n|cfff5962dAbilities:|R Shadow Mend, Dispel Magic, Summon Shadowspawn|n|n|cffffcc00Attacks land and air units.|R"
     }
   ]
 }

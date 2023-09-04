@@ -13,12 +13,12 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_7118"
+      "Value": "(Vezax  C\u0027thun)"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_7119"
+      "Value": "Death Aura"
     },
     {
       "Id": 1918988897,
@@ -32,17 +32,17 @@
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_9245"
+      "Value": "E"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_7121"
+      "Value": "Learn Death Aura - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_7122"
+      "Value": "Reduces nearby enemy units armor.|n|n|cffffcc00Level 1|r - 3 armor. |n|cffffcc00Level 2|r - 5 armor. |n|cffffcc00Level 3|r - 7 Armor. |n|cffffcc00Level 4|r - 9 Armor."
     },
     {
       "Id": 1952543841,
@@ -53,31 +53,31 @@
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_7123"
+      "Value": "Death Aura"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_15310"
+      "Value": "C\u0027thun presence makes all units around him terribly frightened which decreases their combat capabillities. Decreases the armour of nearby troops by 3."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_16037"
+      "Value": "C\u0027thun presence makes all units around him terribly frightened which decreases their combat capabillities. Decreases the armour of nearby troops by 5."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_16104"
+      "Value": "C\u0027thun presence makes all units around him terribly frightened which decreases their combat capabillities. Decreases the armour of nearby troops by 7."
     },
     {
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_16343"
+      "Value": "C\u0027thun presence makes all units around him terribly frightened which decreases their combat capabillities. Decreases the armour of nearby troops by 9."
     }
   ]
 }

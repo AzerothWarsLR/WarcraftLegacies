@@ -17,7 +17,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_18107"
+      "Value": "(tolvir)"
     },
     {
       "Id": 1818520949,
@@ -31,7 +31,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_5531"
+      "Value": "W"
     },
     {
       "Id": 1831952757,
@@ -41,7 +41,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_18108"
+      "Value": "Catapult"
     },
     {
       "Id": 1668510581,
@@ -51,12 +51,12 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_18113"
+      "Value": "Train Catapult"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_18126"
+      "Value": "Barbaric boulder tossing siege weaponry.|n|n|cff99b4d1Can only build 6. |r|n|cffffcc00Attacks land units and trees.|r"
     },
     {
       "Id": 1633907573,

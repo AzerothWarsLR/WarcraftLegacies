@@ -22,22 +22,22 @@
     {
       "Id": 1853186933,
       "Type": 3,
-      "Value": "TRIGSTR_14700"
+      "Value": "Initiate,Adept,Master"
     },
     {
       "Id": 1953850229,
       "Type": 3,
-      "Value": "TRIGSTR_17554"
+      "Value": "- Magic Missile,- Magic Missile|n- Devour Magic,- Magic Missile|n- Devour Magic|n - Arcane Barrage"
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_11503"
+      "Value": "(yogg)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_4999"
+      "Value": "W"
     },
     {
       "Id": 1831952757,
@@ -57,17 +57,17 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_17328"
+      "Value": "Train Sorcerer"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_18375"
+      "Value": "Dark Arcanist from Ny\u0027alotha.|n|cfff5962dAbilities:|R Magic Missile, Devour Magic, Arcane Barrage |n|n|cffd5d500Attacks land and air units.|r"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_17329"
+      "Value": "Sorcerer"
     },
     {
       "Id": 1818520949,

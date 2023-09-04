@@ -7,7 +7,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_307"
+      "Value": "Z"
     },
     {
       "Id": 1633907573,
@@ -27,12 +27,12 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_17828"
+      "Value": "Basic observation tower. Has no attack.|n|cfff5962dCan learn:|r Magic Sentry|n|cfff5962dUpgrades into:|r Guard Tower, Cannon Tower"
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_3599"
+      "Value": "(Lordaeron Tower)"
     }
   ]
 }

@@ -17,7 +17,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_20136"
+      "Value": "(Dragonmaw Magic)"
     },
     {
       "Id": 1818520949,
@@ -37,17 +37,17 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_3498"
+      "Value": "Grim gathering of the Dragonmaw masters of the Dark Arts.|n|cfff5962dTrains:|R Herald, Magi, Death Knight|n|cfff5962dResearches:|R Magi Training, Herald Training"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_6857"
+      "Value": "Dark Conclave"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_6861"
+      "Value": "Build Dark Conclave"
     }
   ]
 }

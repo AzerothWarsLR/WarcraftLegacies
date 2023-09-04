@@ -22,29 +22,29 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_7603"
+      "Value": "(Orange - Barracks - On)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_3654"
+      "Value": "A"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_7605"
+      "Value": "Phase Blade Auto-Cast"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_7606"
+      "Value": "(|cffffcc00A|r) - Turn On"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_7607"
+      "Value": "Enable auto-cast Phase Blades on newly-trained Battlemages."
     }
   ]
 }

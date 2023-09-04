@@ -12,18 +12,18 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_11661"
+      "Value": "(Yellow - Baelgun)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_12577"
+      "Value": "W"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_11663"
+      "Value": "Removes all buffs from units in a target area.  |n|cffffcc00Deals 600 damage to summoned units.|r"
     }
   ]
 }

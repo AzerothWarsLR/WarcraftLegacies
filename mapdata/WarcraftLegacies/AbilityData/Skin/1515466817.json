@@ -13,17 +13,17 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_4858"
+      "Value": "(Vol\u0027jin)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_9239"
+      "Value": "W"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_7685"
+      "Value": "Voodoo Restoration"
     },
     {
       "Id": 1918988897,
@@ -33,59 +33,59 @@
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_9240"
+      "Value": "W"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_7687"
+      "Value": "Learn Voodoo Restoration - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_1009"
+      "Value": "Activate Voodoo Restoration, healing units within a range of 350 each second. |n|n|cffffcc00Level 1|r - 25 health per second. |n|cffffcc00Level 2|r - 35 health per second. |n|cffffcc00Level 3|r - 45 health per second.|n|cffffcc00Level 4 -|r 55 health per second."
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_7689"
+      "Value": "Activate Voodoo Restoration - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_7690"
+      "Value": "Activate Voodoo Restoration - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_7691"
+      "Value": "Activate Voodoo Restoration - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_7692"
+      "Value": "Activate Voodoo Restoration - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_3410"
+      "Value": "Activate Voodoo Restoration, healing units within a range of 350 for 35 health per second.|nDrains mana until deactivated."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_3411"
+      "Value": "Activate Voodoo Restoration, healing units within a range of 350 for 45 health per second.|nDrains mana until deactivated."
     },
     {
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_3564"
+      "Value": "Activate Voodoo Restoration, healing units within a range of 350 for 55 health per second.|nDrains mana until deactivated."
     },
     {
       "Id": 1918989665,
@@ -95,25 +95,25 @@
     {
       "Id": 1802007905,
       "Type": 3,
-      "Value": "TRIGSTR_9241"
+      "Value": "W"
     },
     {
       "Level": 1,
       "Id": 829715809,
       "Type": 3,
-      "Value": "TRIGSTR_7698"
+      "Value": "Deactivate Voodoo Restoration"
     },
     {
       "Level": 1,
       "Id": 829781345,
       "Type": 3,
-      "Value": "TRIGSTR_7699"
+      "Value": "Deactivate Voodoo Restoration to stop draining mana."
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_6166"
+      "Value": "Activate Voodoo Restoration, healing units within a range of 350 for 25 health per second.|nDrains mana until deactivated."
     }
   ]
 }

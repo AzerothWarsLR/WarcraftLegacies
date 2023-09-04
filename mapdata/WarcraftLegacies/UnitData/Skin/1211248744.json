@@ -17,7 +17,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_3298"
+      "Value": "(Closed)"
     },
     {
       "Id": 1818520949,
@@ -32,12 +32,12 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_3311"
+      "Value": "Stormwind Harbour Gate"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_3053"
+      "Value": "Horizontal Wooden Gate"
     },
     {
       "Id": 1935832437,
@@ -47,7 +47,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_3264"
+      "Value": "Repairs the broken gate."
     },
     {
       "Id": 1684960117,

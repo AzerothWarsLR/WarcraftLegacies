@@ -22,17 +22,17 @@
     {
       "Id": 1853186933,
       "Type": 3,
-      "Value": "TRIGSTR_15920"
+      "Value": "Initiate, Adept, Master"
     },
     {
       "Id": 1953850229,
       "Type": 3,
-      "Value": "TRIGSTR_18536"
+      "Value": "- Rune of Wrath,- Rune of Wrath|n- Healing Shield,- Rune of Wrath|n- Healing Shield|n- Rune of Shielding"
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_18609"
+      "Value": " (Ragnaros)"
     },
     {
       "Id": 1818520949,
@@ -42,7 +42,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_5277"
+      "Value": "W"
     },
     {
       "Id": 1831952757,
@@ -57,17 +57,17 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_18538"
+      "Value": "Flame Keeper"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_18544"
+      "Value": "Train Flame Keeper"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_15992"
+      "Value": "Wielder of destructive elemental magic. |n|cfff5962dAbilities:|R Incinerate |n|cfff5962dCan learn:|R Cremate, Flame Shield|n|r|n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Id": 1684960117,

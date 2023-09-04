@@ -17,29 +17,29 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_9187"
+      "Value": "(Khaz Modan-Engineer"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_9984"
+      "Value": "Q"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_9189"
+      "Value": "Mech Kit"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_9190"
+      "Value": "Mech Kit"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_9191"
+      "Value": "Heals a target friendly structure or mechanical unit for \u003CA0IL,DataA1\u003E hit points over \u003CA0IL,Dur1\u003E seconds."
     }
   ]
 }

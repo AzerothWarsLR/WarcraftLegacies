@@ -8,17 +8,17 @@
     {
       "Id": 1885959270,
       "Type": 3,
-      "Value": "TRIGSTR_20916"
+      "Value": "Flame Shield"
     },
     {
       "Id": 1700951398,
       "Type": 3,
-      "Value": "TRIGSTR_13525"
+      "Value": "This unit is being burned it will take damage over time."
     },
     {
       "Id": 1835101798,
       "Type": 3,
-      "Value": "TRIGSTR_13526"
+      "Value": "Flame Shield (Ragnaros)"
     },
     {
       "Id": 1952543846,

@@ -13,7 +13,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_16633"
+      "Value": "(kulTiras)"
     },
     {
       "Id": 1818520949,
@@ -23,7 +23,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_4775"
+      "Value": "Q"
     },
     {
       "Id": 1633907573,
@@ -33,17 +33,17 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_16634"
+      "Value": "Ember Cleric"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_16635"
+      "Value": "Train Ember Cleric"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_7769"
+      "Value": "True and strong believer in the holy Light.|n|cfff5962dAbilities:|R Soul Burn, Revelation, Flame Shield.|n|n|cff99b4d1Can only train 12.|r|n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Id": 1831952757,

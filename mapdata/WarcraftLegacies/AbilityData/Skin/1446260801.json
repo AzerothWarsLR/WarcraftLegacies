@@ -12,12 +12,12 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_2010"
+      "Value": "(Legion - Archer)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_14572"
+      "Value": "Z"
     },
     {
       "Id": 2019718497,
@@ -26,13 +26,13 @@
     {
       "Id": 1802007905,
       "Type": 3,
-      "Value": "TRIGSTR_14579"
+      "Value": "Z"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_20549"
+      "Value": "Adds 24 bonus fire damage to an attack against enemies"
     }
   ]
 }

@@ -8,18 +8,18 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_12530"
+      "Value": "(1000 range)"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_12195"
+      "Value": "Anti Portal Blocking"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_12532"
+      "Value": "Burns nearby enemy structures for 75 points of damage per second."
     }
   ]
 }

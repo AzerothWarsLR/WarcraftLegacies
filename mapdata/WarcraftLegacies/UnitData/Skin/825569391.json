@@ -12,12 +12,12 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_20085"
+      "Value": "(Draenei T3)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_5930"
+      "Value": "C"
     },
     {
       "Id": 1935832437,
@@ -27,7 +27,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_15871"
+      "Value": "Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Gemcrafter, Vindicator|n|cfff5962dAbilities:|R Gateway Reinforcements|n|cfff5962dResearches:|R Full Scale Escalation"
     },
     {
       "Id": 1818520949,
@@ -47,12 +47,12 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_17806"
+      "Value": "Divine Citadel"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_17807"
+      "Value": "Upgrade to Divine Citadel"
     },
     {
       "Id": 1684960117,

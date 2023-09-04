@@ -17,17 +17,17 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_11905"
+      "Value": "(Brown - Cenarius)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_12186"
+      "Value": "Q"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_11907"
+      "Value": "Nature\u0027s Call"
     },
     {
       "Id": 1918988897,
@@ -41,65 +41,65 @@
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_12207"
+      "Value": "Q"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_11909"
+      "Value": "Learn Nature\u0027s Call (|cffffcc00Q|r) - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_11910"
+      "Value": "Summons animals of Ashenvale to fight Cenarius\u0027 enemies.|nLasts \u003CACs7,Dur1\u003E seconds. |n|n|cffffcc00Level 1|r - Summons 3 Spiders with Web and poison attacks.|n|cffffcc00Level 2|r - Summons 3 Wolves with Roar, Critical Strike, and Bash.|n|cffffcc00Level 3|r - Summons 3 Furbolg Elder Shamans with Lightning Shield and Rejuvenation.                                                       |cffffcc00Level 4|r - Summons Ysondre to fight for you. Has Rejuvenation and Lightning Shield."
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_11911"
+      "Value": "Nature\u0027s Call (|cffffcc00Q|r) - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_11912"
+      "Value": "Nature\u0027s Call (|cffffcc00Q|r) - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_11913"
+      "Value": "Nature\u0027s Call (|cffffcc00Q|r) - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_11914"
+      "Value": "Nature\u0027s Call (|cffffcc00Q|r) - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_11915"
+      "Value": "Summons 3 Spiders that have Web. and poison attacks.|nLasts \u003CACs7,Dur1\u003E seconds."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_11916"
+      "Value": "Summons 3 Feral Wolves that have Roar, Bash, and Critical Strike.|nLasts \u003CACs7,Dur2\u003E seconds."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_11917"
+      "Value": "Summons 3 Furbolg Elder Shaman companions that have Lightning Shield and Rejuvenation.|nLasts \u003CACs7,Dur3\u003E seconds. |n|n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_11918"
+      "Value": "Summons Ysondre to fight for you. Has Lightning shield and Rejuvenation.|nLasts \u003CACs7,Dur4\u003E seconds."
     }
   ]
 }

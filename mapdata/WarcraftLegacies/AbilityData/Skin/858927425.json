@@ -8,12 +8,12 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_19281"
+      "Value": "(Doom guard)"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_20449"
+      "Value": "Summons Fel Hounds to attack the Hero\u0027s enemies. |nLasts 40 seconds.|r |n|n|cffffcc00Level 1|r - Summons \u003CA0X5,DataA1\u003E Fel Hounds|n|cffffcc00Level 2|r - Summons \u003CA0X5,DataA2\u003E Fel Hounds.|n|cffffcc00Level 3|r - Summons \u003CA0X5,DataA3\u003E Fel Hounds.|n|cffffcc00Level 4|r - Summons \u003CA0X5,DataA4\u003E Fel Hounds"
     },
     {
       "Id": 1952543585,
@@ -24,59 +24,59 @@
       "Level": 4,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_20491"
+      "Value": "Summon Fel Hound - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_20492"
+      "Value": "Summons 2 Fel Hounds with Mana Burn to attack the summoner\u0027s enemies. |n|n|cffffcc00Attacks land units.|r"
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_20493"
+      "Value": "Summons \u003CA0X5,DataA2\u003E Fel Hounds with Mana Burn to attack the Hero\u0027s enemies. |n|n|cffffcc00Attacks land units.|r"
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_20494"
+      "Value": "Summons \u003CA0X5,DataA3\u003E Fel Hounds with Mana Burn to attack the Hero\u0027s enemies. |n|n|cffffcc00Attacks land units.|r"
     },
     {
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_20495"
+      "Value": "Summons \u003CA0X4,DataA1\u003E Fel Hounds with Mana Burn to attack the Hero\u0027s enemies. |n|n|cffffcc00Attacks land units.|r"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_20496"
+      "Value": "Summon Fel Hound"
     },
     {
       "Level": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_20497"
+      "Value": "Summon Fel Hound - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_20498"
+      "Value": "Summon Fel Hound - [|cffffcc00Level 3|r]"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_20499"
+      "Value": "Learn Summon Fel Hounds - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_20500"
+      "Value": "Summon Fel Hounds"
     },
     {
       "Id": 1953653089,
@@ -99,12 +99,12 @@
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_18546"
+      "Value": "Q"
     },
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_18550"
+      "Value": "Q"
     }
   ]
 }

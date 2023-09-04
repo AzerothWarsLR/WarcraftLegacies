@@ -16,12 +16,12 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_391"
+      "Value": "(Frostwolf)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_136"
+      "Value": "R"
     },
     {
       "Id": 1633907573,
@@ -31,7 +31,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_439"
+      "Value": "Pack Kodo"
     },
     {
       "Id": 1668510581,
@@ -61,12 +61,12 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_440"
+      "Value": "Pack Building"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_441"
+      "Value": "Packs this building into a Pack Kodo. The Pack Kodo can rebuild it anywhere."
     }
   ]
 }

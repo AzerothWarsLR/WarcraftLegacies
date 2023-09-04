@@ -21,27 +21,27 @@
     {
       "Id": 1936024681,
       "Type": 3,
-      "Value": "TRIGSTR_4312"
+      "Value": "Summons Elven Workers."
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_11704"
+      "Value": "X"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_4314"
+      "Value": "Summon Elven Workers"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_14863"
+      "Value": "Purchase Summon Workers"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_4306"
+      "Value": "Summons workers."
     }
   ]
 }

@@ -13,17 +13,17 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_19259"
+      "Value": "(Bandit Mage)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_12955"
+      "Value": "E"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_12478"
+      "Value": "Summon Fire Elemental"
     },
     {
       "Id": 1918988897,
@@ -37,29 +37,29 @@
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_13262"
+      "Value": "W"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_12374"
+      "Value": "Ritual of Fire - [|cffffcc00Level %d|r]."
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_12113"
+      "Value": "Dargan perfoms a ritual that opens a portal allowing Fire Elementals to fight his enemies. |nThe Fire Elementals last 60 seconds. |n|n|cffffcc00Level 1|r - 3 Fire Elementals with Immolation and Incinerate.|n|cffffcc00Level 2|r - 4 Fire Elementals with Immolation and Incinerate.|n|cffffcc00Level 3|r - 4 Strong Fire Elementals with Immolation, Incinerate, and Breath of Fire.|n|cffffcc00Level 4|r - 5 Strong Fire Elementals with Immolation, Incinerate, and Breath of Fire."
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_12479"
+      "Value": "Summon Fire Elemental"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_19260"
+      "Value": "The Mage summons 1 Fire Elemental. The Fire Elementals have Incinerate and the Immolation abillity."
     }
   ]
 }

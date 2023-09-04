@@ -13,17 +13,17 @@
     {
       "Id": 1885959270,
       "Type": 3,
-      "Value": "TRIGSTR_13080"
+      "Value": "Warsong Offensive"
     },
     {
       "Id": 1700951398,
       "Type": 3,
-      "Value": "TRIGSTR_13081"
+      "Value": "This unit is under the effects of Warsong Offensive; it has increased attack damage."
     },
     {
       "Id": 1835101798,
       "Type": 3,
-      "Value": "TRIGSTR_13082"
+      "Value": "Warsong Offensive"
     },
     {
       "Id": 1952543846,

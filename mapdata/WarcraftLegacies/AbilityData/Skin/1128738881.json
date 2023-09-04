@@ -8,34 +8,34 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_9473"
+      "Value": "(Orange - Keeps/Capitals)"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_9475"
+      "Value": "Replenish Mana"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_9476"
+      "Value": "Replenish Mana"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_9477"
+      "Value": "Restores 20 mana to 6 nearby friendly units."
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_14254"
+      "Value": "X"
     },
     {
       "Id": 1802007905,
       "Type": 3,
-      "Value": "TRIGSTR_14279"
+      "Value": "X"
     }
   ]
 }

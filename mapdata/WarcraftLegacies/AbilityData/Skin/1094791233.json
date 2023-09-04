@@ -8,19 +8,19 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_10720"
+      "Value": "Dalaran Phoenix Fire"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_10721"
+      "Value": "Dalaran Defense System"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_10722"
+      "Value": "Fires down a volley of chemical rockets, lighting nearby enemies on fire."
     }
   ]
 }

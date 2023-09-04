@@ -20,7 +20,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_1080"
+      "Value": "(UNUSED BECAUSE SCALING VALUE)"
     },
     {
       "Id": 1735156597,
@@ -29,17 +29,17 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_1040"
+      "Value": "A"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_1082"
+      "Value": "Revive - Naisha"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_1083"
+      "Value": "Lieutenant of the Watchers, Naisha is a strong leader and close confidant to Maeiv. She is the shield of the underside of the Sentinels and the rest of the Kaldorei"
     }
   ]
 }

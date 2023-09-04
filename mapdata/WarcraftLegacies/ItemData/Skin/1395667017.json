@@ -13,27 +13,27 @@
     {
       "Id": 1936024681,
       "Type": 3,
-      "Value": "TRIGSTR_4289"
+      "Value": "Attacks also do holy damage."
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_14184"
+      "Value": "Z"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_4291"
+      "Value": "Orb of Light"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_4260"
+      "Value": "Purchase Orb of Light"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_4293"
+      "Value": "Adds 6 bonus holy damage to the attack of a Hero when carried. The Hero\u0027s attacks also become ranged when attacking air and has 15% chance to stun his target for 2 seconds."
     }
   ]
 }

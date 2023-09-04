@@ -9,35 +9,35 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_17676"
+      "Value": "Gives 2 additional armor to nearby player units. |n|n|cffd45e19This aura stacks for each different type of unit that has it.|r"
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_16875"
+      "Value": "\u002B2*2 armor"
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_16876"
+      "Value": "\u002B2*3 armor"
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_16877"
+      "Value": "(crusade 1)"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_16878"
+      "Value": "United for the Cause"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_16879"
+      "Value": "United for the Cause"
     },
     {
       "Id": 1953653089,

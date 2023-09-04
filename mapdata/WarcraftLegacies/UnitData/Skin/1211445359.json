@@ -8,7 +8,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_187"
+      "Value": "(forsaken)"
     },
     {
       "Id": 1633907573,
@@ -18,22 +18,22 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_16281"
+      "Value": "Aerial scientist of the Forsaken. Has a small aoe attack.|n|cfff5962dAbilities:|R Disease Cloud|n |n|cff99b4d1Can only train 8.|r|n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_18174"
+      "Value": "Plague Flyer"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_18175"
+      "Value": "Train Plague Flyer"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_4941"
+      "Value": "Q"
     },
     {
       "Id": 2020631157,

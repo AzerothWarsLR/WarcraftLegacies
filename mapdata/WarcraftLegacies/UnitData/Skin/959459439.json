@@ -8,7 +8,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19678"
+      "Value": " (Warsong Research)"
     },
     {
       "Id": 1818520949,
@@ -18,17 +18,17 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_1751"
+      "Value": "E"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_1787"
+      "Value": "Refinery"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_1788"
+      "Value": "Build Refinery"
     },
     {
       "Id": 1935832437,
@@ -38,7 +38,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_8855"
+      "Value": "Resource harvesting center and producer of Horde enhancements. |n|cfff5962dResearches:|R Forged Weaponry, Armor Plating, Reinforced Defenses, Spiked Barricades, Spiritual Infusion, Improved Cannons, Fortified Hulls"
     }
   ]
 }

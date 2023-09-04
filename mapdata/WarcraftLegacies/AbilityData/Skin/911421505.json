@@ -17,18 +17,18 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_20164"
+      "Value": "(Stormwind Flagship)"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_7977"
+      "Value": "Crow\u0027s Nest Lookout"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_7978"
+      "Value": "This ship has increased sight radius and can detect invisible units."
     }
   ]
 }

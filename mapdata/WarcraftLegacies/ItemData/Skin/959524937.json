@@ -16,27 +16,27 @@
     {
       "Id": 1936024681,
       "Type": 3,
-      "Value": "TRIGSTR_19606"
+      "Value": "Transports troops to a friendly unit or structure."
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_5169"
+      "Value": "R"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_19607"
+      "Value": "Old Scroll of Teleportation"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_19608"
+      "Value": "Purchase Old Scroll of Teleportation"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_19609"
+      "Value": "Teleports the Hero and any of its nearby troops to a target friendly unit or structure.|n|n|cffe8e800Has a 9 second cast time.|r"
     }
   ]
 }

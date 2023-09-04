@@ -17,7 +17,7 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_20170"
+      "Value": "(Stormwind-Bladesman)"
     },
     {
       "Id": 1952542049,
@@ -27,19 +27,19 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_12474"
+      "Value": "First Strike"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_12475"
+      "Value": "First Strike"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_12476"
+      "Value": "The Bladesman has 30 bonus damage on his first attack. Cooldown 30 seconds."
     },
     {
       "Id": 1918989665,

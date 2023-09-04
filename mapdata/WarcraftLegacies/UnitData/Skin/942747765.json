@@ -21,7 +21,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_1264"
+      "Value": "(Fel Horde)"
     },
     {
       "Id": 1818520949,
@@ -31,7 +31,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_782"
+      "Value": "R"
     },
     {
       "Id": 1633907573,
@@ -41,7 +41,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_1416"
+      "Value": "Eye of Grillok"
     },
     {
       "Id": 1919705973,
@@ -55,12 +55,12 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_1417"
+      "Value": "Train Eye of Grillok"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_15707"
+      "Value": "Bleeding Hallow Clan\u0027s contribution to the war, used to scout the lands of its enemies.|n|cfff5962dAbilities:|R True Sight, Shade|n|n|cff99b4d1Can only train 10.|r"
     }
   ]
 }

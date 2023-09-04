@@ -8,7 +8,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_15644"
+      "Value": "(Druids - Cenarius Summon)"
     },
     {
       "Id": 1818520949,
@@ -18,17 +18,17 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_1970"
+      "Value": "Black Widow"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_1971"
+      "Value": "Black Widow"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_1972"
+      "Value": "Heavy melee unit that poisons opponents and carries its young into battle. Can cast Web."
     }
   ]
 }

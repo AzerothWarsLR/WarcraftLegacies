@@ -13,7 +13,7 @@
     {
       "Id": 1953980789,
       "Type": 3,
-      "Value": "TRIGSTR_17195"
+      "Value": "Revive Kalecgos"
     },
     {
       "Id": 2020631157,
@@ -22,7 +22,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_17131"
+      "Value": "(nexus)"
     },
     {
       "Id": 1818520949,
@@ -32,7 +32,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_5112"
+      "Value": "E"
     },
     {
       "Id": 1831952757,
@@ -42,12 +42,12 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_17150"
+      "Value": "Steward of Magic"
     },
     {
       "Id": 1919972469,
       "Type": 3,
-      "Value": "TRIGSTR_17196"
+      "Value": "Revive Kalecgos"
     },
     {
       "Id": 1668510581,
@@ -57,12 +57,12 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_1098"
+      "Value": "Mystical Hero, adept at long range damage and resilience.|n|cfff5962dCan Learn:|R Dragon Kin, Ice Lance, Mana Shield, Dragon Form|n|n|cffffcc00Attacks land and air units.|R"
     },
     {
       "Id": 1869770869,
       "Type": 3,
-      "Value": "TRIGSTR_2287"
+      "Value": "Kalecgos "
     },
     {
       "Id": 1684960117,
@@ -72,7 +72,7 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_17198"
+      "Value": "Summon Kalecgos"
     }
   ]
 }

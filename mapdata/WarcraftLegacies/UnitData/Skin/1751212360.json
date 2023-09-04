@@ -17,12 +17,12 @@
     {
       "Id": 1953980789,
       "Type": 3,
-      "Value": "TRIGSTR_240"
+      "Value": "Revive The Fallen Guardian"
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_1303"
+      "Value": "(Dalaran)"
     },
     {
       "Id": 1818520949,
@@ -32,7 +32,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_1038"
+      "Value": "E"
     },
     {
       "Id": 2054188149,
@@ -57,17 +57,17 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_304"
+      "Value": "The Fallen Guardian"
     },
     {
       "Id": 1869770869,
       "Type": 3,
-      "Value": "TRIGSTR_1327"
+      "Value": "Medivh"
     },
     {
       "Id": 1919972469,
       "Type": 3,
-      "Value": "TRIGSTR_5186"
+      "Value": "Revive The Fallen Guardian"
     },
     {
       "Id": 1769173877,
@@ -97,12 +97,12 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_1329"
+      "Value": "Summon Medivh"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_16583"
+      "Value": "Mystical Hero, adept at dealing magic damage through attacks.|n|cfff5962dAbilities:|r Banish|n|cfff5962dCan Learn:|R Murder of Crows, Surge of Power, Dragon Storm, Fel Rift|n|n|cffffcc00Attacks land and air units.|R"
     },
     {
       "Id": 1970434165,

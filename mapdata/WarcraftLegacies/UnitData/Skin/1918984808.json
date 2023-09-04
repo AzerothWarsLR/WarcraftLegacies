@@ -15,7 +15,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_925"
+      "Value": "A"
     },
     {
       "Id": 1633907573,
@@ -35,12 +35,12 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_16401"
+      "Value": " (Lordaeron Barracks)"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_17864"
+      "Value": "Housing for the defenders of Lordaeron.|n|n|r|cfff5962dTrains:|R Footman, Huntsman, Knight|n|cfff5962dResearches:|r Ensnare, Veteran Footman, Animal War Training, Rapid Fire"
     }
   ]
 }

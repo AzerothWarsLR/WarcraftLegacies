@@ -13,7 +13,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_3953"
+      "Value": "(Rise from the ashes)"
     },
     {
       "Id": 1818520949,
@@ -23,22 +23,22 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_2379"
+      "Value": "R"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_16223"
+      "Value": "Commander of the Scarlet Crusade"
     },
     {
       "Id": 1869770869,
       "Type": 3,
-      "Value": "TRIGSTR_16235"
+      "Value": "Brigitte Abbendis"
     },
     {
       "Id": 1919972469,
       "Type": 3,
-      "Value": "TRIGSTR_7791"
+      "Value": " Revive Paladin"
     },
     {
       "Id": 1769173877,
@@ -53,7 +53,7 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_7795"
+      "Value": "Summon Brigitte"
     },
     {
       "Id": 2020631157,
@@ -62,7 +62,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_16612"
+      "Value": "Warrior Hero, adept at melee combat and aggression.|n|cfff5962dAbilities:|r Divine Shield|n|cfff5962dCan Learn:|R Consecration, Blood Fury, Fiery Aura, Guarding Light|n|n|cffffcc00Attacks land units.|R"
     }
   ]
 }

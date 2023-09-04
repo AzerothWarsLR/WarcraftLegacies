@@ -8,7 +8,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_4138"
+      "Value": "Z"
     },
     {
       "Id": 1633907573,
@@ -28,17 +28,17 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_10465"
+      "Value": "Archer filled tower defense.|n|cfff5962dCan learn:|R Magic Sentry|n|cfff5962dUpgrades Into:|R Improved Guard Tower|n|n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_3433"
+      "Value": "(Lordaeron)"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_629"
+      "Value": "Control Point Defender"
     }
   ]
 }

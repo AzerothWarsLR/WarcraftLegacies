@@ -7,12 +7,12 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_311"
+      "Value": "(Scourge)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_089"
+      "Value": "Q"
     },
     {
       "Id": 1633907573,
@@ -22,7 +22,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_920"
+      "Value": "Horrid risen corpse reshaped from death.|n|cfff5962dAbilities:|R Charge, Skeletal Frame, Gather|n|cfff5962d|n|cffffcc00Attacks land units and trees.|r"
     }
   ]
 }

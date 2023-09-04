@@ -13,7 +13,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_2965"
+      "Value": "(Ironforge)"
     },
     {
       "Id": 1818520949,
@@ -23,7 +23,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_3098"
+      "Value": "Q"
     },
     {
       "Id": 1633907573,
@@ -33,17 +33,17 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_5783"
+      "Value": "Warrior"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_15291"
+      "Value": "Train Warrior"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_8857"
+      "Value": "Stout defender of Dun Morogh.|n|cfff5962dAbilities:|R Charge, Spell Resistance, Defend|n|cfff5962dCan Learn:|R Mithril Plated Armor|n|n|cffffcc00Attacks land units.|r"
     },
     {
       "Id": 1684960117,

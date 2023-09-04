@@ -8,7 +8,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_4313"
+      "Value": "C"
     },
     {
       "Id": 1935832437,
@@ -18,12 +18,12 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_16227"
+      "Value": "Creates a shop with purchasable items."
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_20009"
+      "Value": "(Forsaken Shop)"
     },
     {
       "Id": 1818520949,
@@ -48,12 +48,12 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_20010"
+      "Value": "Undertaker\u0027s Vault"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_20011"
+      "Value": "Summon Undertaker\u0027s Vault"
     },
     {
       "Id": 1868786037,

@@ -11,12 +11,12 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_15496"
+      "Value": " (Druids)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_892"
+      "Value": "W"
     },
     {
       "Id": 828468597,
@@ -31,7 +31,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_1107"
+      "Value": "Basic ranged attacker with a poison attack.|n|cfff5962dAbilities:|r Slow Poison, Resistant Skin|n|n|cffffcc00Attacks land and air units.|r"
     }
   ]
 }

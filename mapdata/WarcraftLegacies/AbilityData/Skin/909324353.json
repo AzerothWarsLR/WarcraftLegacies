@@ -13,24 +13,24 @@
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_12668"
+      "Value": "Q"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_15146"
+      "Value": "Open Gate"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_15147"
+      "Value": "Open Gate"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_12290"
+      "Value": "Opens this Gate"
     }
   ]
 }

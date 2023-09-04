@@ -18,17 +18,17 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_10452"
+      "Value": "(Medivh)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_11333"
+      "Value": "Q"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_10454"
+      "Value": "Surge of Power"
     },
     {
       "Id": 1918988897,
@@ -38,65 +38,65 @@
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_11359"
+      "Value": "Q"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_10456"
+      "Value": "Learn Surge of Power  - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_17509"
+      "Value": "The hero channels all his power, making him attack at an increased rate. Lasts 5 seconds.|n|n|cffffcc00Level 1|r - 200% attack rate increase.|n|cffffcc00Level 2|r - 300% attack rate increase.|n|cffffcc00Level 3|r - 400% attack rate increase.|n|cffffcc00Level 4|r - 500% attack rate increase."
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_10458"
+      "Value": "Surge of Power - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_10459"
+      "Value": "Surge of Power - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_10460"
+      "Value": "Surge of Power - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_10461"
+      "Value": "Surge of Power - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_17510"
+      "Value": "The hero channels all his power, giving him 200% attack speed for 5 seconds."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_17511"
+      "Value": "The hero channels all his power, giving him 300% attack speed for 5 seconds."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_17512"
+      "Value": "The hero channels all his power, giving him 400% attack speed for 5 seconds."
     },
     {
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_17513"
+      "Value": "The hero channels all his power, giving him 500% attack speed for 5 seconds."
     }
   ]
 }

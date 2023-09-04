@@ -12,24 +12,24 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_11328"
+      "Value": "(Blue - Overlord)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_12239"
+      "Value": "W"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_11330"
+      "Value": "Roar "
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_11331"
+      "Value": "Gives nearby friendly units a 50% bonus to damage. |nLasts 15 seconds."
     }
   ]
 }

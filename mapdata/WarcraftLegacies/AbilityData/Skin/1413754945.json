@@ -17,12 +17,12 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_7866"
+      "Value": "(Katherine)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_9938"
+      "Value": "R"
     },
     {
       "Id": 1667329377,
@@ -37,7 +37,7 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_063"
+      "Value": "Assasinate"
     },
     {
       "Id": 1918988897,
@@ -51,53 +51,53 @@
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_9940"
+      "Value": "R"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_9941"
+      "Value": "Learn Assasinate - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_9942"
+      "Value": "The hero takes aim and fires at an enemy unit, causing damage and stunning the target. |n|n|cffffcc00Level 1|r - 450 damage, 4 second stun. .8 second on Heroes.|n|cffffcc00Level 2|r - 600 damage, 5 second stun. .9 seconds on Heroes.|n|cffffcc00Level 3|r - 800 damage, 6 second stun. 1 seconds on Heroes."
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_9943"
+      "Value": "Assasinate - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_9944"
+      "Value": "Assasinate - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_9945"
+      "Value": "Assasinate - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_9946"
+      "Value": "The hero takes aim and fires at an enemy unit, causing damage and stunning the target. |n|n|cffffcc00Level 1|r - 450 damage, 4 second stun. .8 second on Heroes."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_9947"
+      "Value": "The hero takes aim and fires at an enemy unit, causing damage and stunning the target.|n|cffffcc00Level 2|r - 600 damage, 5 second stun. .9 seconds on Heroes."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_9948"
+      "Value": "The hero takes aim and fires at an enemy unit, causing damage and stunning the target. |n|cffffcc00Level 3|r - 800 damage, 6 second stun. 1 seconds on Heroes."
     }
   ]
 }

@@ -17,27 +17,27 @@
     {
       "Id": 1936024681,
       "Type": 3,
-      "Value": "TRIGSTR_4317"
+      "Value": "Regrows trees nearby the caster. Also, restores 50 mana to the caster. "
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_7120"
+      "Value": "E"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_4319"
+      "Value": "Seeds of Regrowth"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_4261"
+      "Value": "Purchase Seeds of Regrowth"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_4321"
+      "Value": "Regrows trees nearby the caster and regenerates 50 mana to the caster when used. |n|n|cffdaa520|nNote - this unit may not be used next to the Thandol Span.|r"
     }
   ]
 }

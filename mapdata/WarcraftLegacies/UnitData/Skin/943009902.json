@@ -17,7 +17,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_1823"
+      "Value": "(Fel Horde)"
     },
     {
       "Id": 1685218677,
@@ -32,7 +32,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_1978"
+      "Value": "W"
     },
     {
       "Id": 828468597,
@@ -47,7 +47,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_2353"
+      "Value": "Fel Crossbowman"
     },
     {
       "Id": 1751675765,
@@ -72,12 +72,12 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_2354"
+      "Value": "Train Fel Crossbowman"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_15486"
+      "Value": "Skilled shooter amongst the Orcs of Outland.|n|cfff5962dAbilities:|R Berserk, Self-Bloodlust|n|cfff5962dCan Learn:|R Blood Runes|n|n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Id": 1684960117,

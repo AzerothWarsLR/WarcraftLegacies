@@ -17,7 +17,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19805"
+      "Value": "(Quel\u0027thalas T3)"
     },
     {
       "Id": 1818520949,
@@ -27,7 +27,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_3074"
+      "Value": "C"
     },
     {
       "Id": 845245813,
@@ -52,7 +52,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_2181"
+      "Value": "Palace"
     },
     {
       "Id": 1668510581,
@@ -62,7 +62,7 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_2186"
+      "Value": "Upgrade to Palace"
     },
     {
       "Id": 1935832437,
@@ -72,7 +72,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_17702"
+      "Value": "Main gathering structure.|n|cfff5962dTrains:|R Architect, Farstrider|n|cfff5962dResearches:|R Feint, Full Scale Escalation"
     }
   ]
 }

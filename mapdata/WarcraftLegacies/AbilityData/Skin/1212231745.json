@@ -17,12 +17,12 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_10693"
+      "Value": "(Grey - Zeppelin)"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_10694"
+      "Value": "Goblin Repair Crew"
     },
     {
       "Id": 1918988897,
@@ -32,7 +32,7 @@
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_10695"
+      "Value": "Goblin Repair Crew"
     },
     {
       "Id": 1953854049,
@@ -43,13 +43,13 @@
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_10696"
+      "Value": "Goblin Repair Crew"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_10697"
+      "Value": "Increases this units hit point regeneration rate by 2 per second."
     }
   ]
 }

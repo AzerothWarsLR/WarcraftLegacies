@@ -25,55 +25,55 @@
       "Level": 1,
       "Id": 1718840935,
       "Type": 3,
-      "Value": "TRIGSTR_3492"
+      "Value": "(Lordaeron)"
     },
     {
       "Level": 1,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_3939"
+      "Value": "S"
     },
     {
       "Level": 2,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_3998"
+      "Value": "S"
     },
     {
       "Level": 1,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "TRIGSTR_14174"
+      "Value": "Paladin Adept Training"
     },
     {
       "Level": 2,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "TRIGSTR_14175"
+      "Value": "Paladin Master Training"
     },
     {
       "Level": 1,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_14176"
+      "Value": "Paladin Adept Training"
     },
     {
       "Level": 2,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_14177"
+      "Value": "Paladin Master Training"
     },
     {
       "Level": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "TRIGSTR_14178"
+      "Value": "Increases Paladins\u0027 mana capacity and regeneration rate and gives them the ability to cast Resurrection."
     },
     {
       "Level": 2,
       "Id": 828536167,
       "Type": 3,
-      "Value": "TRIGSTR_14179"
+      "Value": "Increases Paladins\u0027 mana capacity and regeneration rate and gives them the ability to revive upon death."
     }
   ]
 }

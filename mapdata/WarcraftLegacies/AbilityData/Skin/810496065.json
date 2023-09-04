@@ -21,29 +21,29 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_8497"
+      "Value": "(Greymane)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_9577"
+      "Value": "Q"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_8491"
+      "Value": "A Close"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_13023"
+      "Value": "Close Gate"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_8501"
+      "Value": "Closes the gate."
     },
     {
       "Id": 1918989665,
@@ -61,19 +61,19 @@
     {
       "Id": 1802007905,
       "Type": 3,
-      "Value": "TRIGSTR_9585"
+      "Value": "Q"
     },
     {
       "Level": 1,
       "Id": 829715809,
       "Type": 3,
-      "Value": "TRIGSTR_12288"
+      "Value": "Open Gate"
     },
     {
       "Level": 1,
       "Id": 829781345,
       "Type": 3,
-      "Value": "TRIGSTR_8504"
+      "Value": "Opens the gate."
     }
   ]
 }

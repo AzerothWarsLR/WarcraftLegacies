@@ -19,31 +19,31 @@
       "Level": 1,
       "Id": 1718840935,
       "Type": 3,
-      "Value": "TRIGSTR_15287"
+      "Value": "(Fel Horde)"
     },
     {
       "Level": 1,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_20416"
+      "Value": "A"
     },
     {
       "Level": 1,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "TRIGSTR_11302"
+      "Value": "Fel Infused Skeleton"
     },
     {
       "Level": 1,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_11837"
+      "Value": "Research Fel Infused Skeleton"
     },
     {
       "Level": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "TRIGSTR_21376"
+      "Value": "Causes Fel Grunts to transform into Skeletal Grunts upon death, allowing them to continue fighting for 40 seconds.|n|n"
     }
   ]
 }

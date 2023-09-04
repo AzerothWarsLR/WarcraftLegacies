@@ -17,7 +17,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_15995"
+      "Value": "(Ironforge Other)"
     },
     {
       "Id": 1818520949,
@@ -27,17 +27,17 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_4756"
+      "Value": "R"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_19223"
+      "Value": "Menethil Harbor"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_19224"
+      "Value": "Build Shipyard"
     },
     {
       "Id": 1935832437,
@@ -47,7 +47,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_2710"
+      "Value": "Boat construction facility for the Alliance.|n|cfff5962dTrains:|R Alliance Transport Ship, Destroyer, Battleship|R|n|n|cff00c4c4Cannot be built near small inland water areas."
     },
     {
       "Id": 1735156597,

@@ -11,18 +11,18 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_2421"
+      "Value": "(Sentinels)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_5762"
+      "Value": "R"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_807"
+      "Value": "Allows the Sentinel to become invisible, and move 10% faster for 10 seconds. If the Sentinel attacks a unit to break invisibility, the attack will do 30 bonus damage."
     }
   ]
 }

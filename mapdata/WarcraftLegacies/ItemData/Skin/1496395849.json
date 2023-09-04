@@ -13,7 +13,7 @@
     {
       "Id": 1936024681,
       "Type": 3,
-      "Value": "TRIGSTR_4196"
+      "Value": "Increases all stats. Provides True Sight and can be used to cast Far Sight."
     },
     {
       "Id": 1818846825,
@@ -23,12 +23,12 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_4197"
+      "Value": "Helm of Domination"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_4198"
+      "Value": "|cffff8c00Artifact|r|nIncreases Strength, Agility and Intelligence by 10. Gives True Sight. Can be used to cast Far Sight.|n|cffffcc00Lore|r|n|cffffdeadCrafted in the Twisting Nether by Kil\u0027jaeden to imprison Ner\u0027zhul after his crippling defeat on Draenor, the helm holds the very soul of the shaman."
     }
   ]
 }

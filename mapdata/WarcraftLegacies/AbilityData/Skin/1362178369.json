@@ -13,12 +13,12 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_20751"
+      "Value": "(dalaran)"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_20217"
+      "Value": "Citadel Shield Aura"
     },
     {
       "Id": 1952543841,
@@ -29,13 +29,13 @@
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_20282"
+      "Value": "Citadel Shield Aura"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_21268"
+      "Value": "Gives 4 bonus armor to friendly units and structures within a radius of 600."
     }
   ]
 }

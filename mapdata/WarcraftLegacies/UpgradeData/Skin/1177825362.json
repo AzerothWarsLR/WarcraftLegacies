@@ -25,55 +25,55 @@
       "Level": 1,
       "Id": 1718840935,
       "Type": 3,
-      "Value": "TRIGSTR_12791"
+      "Value": "(scarlet Crusade)"
     },
     {
       "Level": 1,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_15080"
+      "Value": "Z"
     },
     {
       "Level": 2,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_15081"
+      "Value": "Z"
     },
     {
       "Level": 1,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "TRIGSTR_14355"
+      "Value": "Inquisitor Initiate Training"
     },
     {
       "Level": 2,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "TRIGSTR_10604"
+      "Value": "Inquisitor Master Training"
     },
     {
       "Level": 1,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_14357"
+      "Value": "Inquisitor Initiate Training"
     },
     {
       "Level": 2,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_14356"
+      "Value": "Inquisitor Master Training"
     },
     {
       "Level": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "TRIGSTR_14354"
+      "Value": "Increases Inquisitor\u0027s mana capacity, mana regeneration rate, hit points, damage and gives them the dispel ability."
     },
     {
       "Level": 2,
       "Id": 828536167,
       "Type": 3,
-      "Value": "TRIGSTR_15185"
+      "Value": "Increases Inquisitor\u0027s mana capacity, mana regeneration rate, hit points, damage and gives them the Holy Shackles ability."
     }
   ]
 }

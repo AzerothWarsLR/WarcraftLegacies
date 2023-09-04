@@ -12,13 +12,13 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_9809"
+      "Value": "(40%) (Mannoroth,Maghteridon)"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_9810"
+      "Value": "This unit strikes with such force that 40% of their damage strikes through to enemies near the primary attacked unit."
     }
   ]
 }

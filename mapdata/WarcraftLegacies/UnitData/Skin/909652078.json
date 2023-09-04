@@ -21,7 +21,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_2014"
+      "Value": "(Fel Horde-Elite-Tier)"
     },
     {
       "Id": 1818520949,
@@ -35,7 +35,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_1882"
+      "Value": "E"
     },
     {
       "Id": 2053990773,
@@ -75,7 +75,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_2016"
+      "Value": "Fel Death Knight"
     },
     {
       "Id": 1919705973,
@@ -99,12 +99,12 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_2017"
+      "Value": "Train Fel Death Knight"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_16004"
+      "Value": "The Fel Death Knights of the Shadow Council are strong and cunning sorcerers. |n|cfff5962dAbilities:|R Dark Energy, Silence, Soul Funnel, Spell Resistance, Resistant Skin|n|n|cff99b4d1Can only train 6.|n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Id": 1684960117,

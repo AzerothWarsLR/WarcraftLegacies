@@ -15,17 +15,17 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_5040"
+      "Value": "F"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_4093"
+      "Value": "(|cffcece00F|r) Purchase Rod of Necromancy"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_4094"
+      "Value": "Creates six Skeleton Warriors from a corpse. |nContains \u003Crnec,uses\u003E charges."
     }
   ]
 }

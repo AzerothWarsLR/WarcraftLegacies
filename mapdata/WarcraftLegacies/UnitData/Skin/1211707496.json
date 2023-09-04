@@ -18,7 +18,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_16552"
+      "Value": "(goblin)"
     },
     {
       "Id": 1818520949,
@@ -42,17 +42,17 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_19023"
+      "Value": "Siege Walker"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_19026"
+      "Value": "Build Siege Walker"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_21216"
+      "Value": "Long range siege vehicle, adept at shooting down air units.|n|cfff5962dAbilities:|R Goblin Pilot, Emergency Repairs,Overflow, Oil Consumer|n|n|cff99b4d1Can only build 5.|r|n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Id": 1668510581,
@@ -72,7 +72,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_5714"
+      "Value": "W"
     },
     {
       "Id": 2020631157,

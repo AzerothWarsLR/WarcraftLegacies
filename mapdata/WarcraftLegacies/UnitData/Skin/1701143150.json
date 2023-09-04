@@ -7,12 +7,12 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_656"
+      "Value": "(Quel\u0027Thalas, Worker)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_819"
+      "Value": "Q"
     },
     {
       "Id": 1633907573,
@@ -22,17 +22,17 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_918"
+      "Value": "Architect"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_919"
+      "Value": "Train Architect"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_16139"
+      "Value": "Intelligent builder of Thalassian structures.|n|cfff5962dAbilities:|r Repair, Gather|n|n|cffffcc00Attacks land units and trees."
     }
   ]
 }

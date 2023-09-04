@@ -27,7 +27,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_1570"
+      "Value": "Z"
     },
     {
       "Id": 1831952757,
@@ -37,12 +37,12 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_2663"
+      "Value": "Improved Kirin Tor Tower"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_2664"
+      "Value": "Upgrade to Improved Kirin Tor Tower"
     },
     {
       "Id": 1935832437,
@@ -52,12 +52,12 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_2665"
+      "Value": "Erected tower of the Kirin Tor order.|n|cfff5962dCan Learn:|RMagic Sentry|n|n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19720"
+      "Value": " (Dalaran Tower)"
     }
   ]
 }

@@ -8,24 +8,24 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_9538"
+      "Value": "(Kul\u0027tiras - Tidesage)"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_15161"
+      "Value": "Summons an immovable whirlpool that slows enemy units, reducing their attack speed by 15% and movement speed by 10%. |nLasts \u003CA0GI,Dur1\u003E seconds."
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_15162"
+      "Value": "Whirlpool"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_15163"
+      "Value": "Whirlpool"
     },
     {
       "Id": 1953653089,

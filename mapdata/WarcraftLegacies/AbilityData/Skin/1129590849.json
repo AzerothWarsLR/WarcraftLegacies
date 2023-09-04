@@ -17,29 +17,29 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_7825"
+      "Value": "(Purple Cleric)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_9616"
+      "Value": "E"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_7827"
+      "Value": "Leap of Faith"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_7828"
+      "Value": "Leap of Faith (|cffffff00E|r)"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_7829"
+      "Value": "Instantly teleports target friendly unit to the caster\u0027s position.|n"
     }
   ]
 }

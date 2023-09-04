@@ -8,23 +8,23 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_7871"
+      "Value": "(Purple - Inquisitor)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_9620"
+      "Value": "E"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_7873"
+      "Value": "Increases a friendly unit\u0027s attack rate by 40%.|nLasts \u003CAblo,Dur1\u003E seconds."
     },
     {
       "Id": 1802007905,
       "Type": 3,
-      "Value": "TRIGSTR_9626"
+      "Value": "E"
     }
   ]
 }

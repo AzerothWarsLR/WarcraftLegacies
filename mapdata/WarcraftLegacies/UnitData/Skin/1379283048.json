@@ -16,7 +16,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19890"
+      "Value": "(Kul Tiras Barracks)"
     },
     {
       "Id": 1818520949,
@@ -26,7 +26,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_2122"
+      "Value": "A"
     },
     {
       "Id": 1633907573,
@@ -36,7 +36,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_3144"
+      "Value": "Garrison"
     },
     {
       "Id": 1668510581,
@@ -46,7 +46,7 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_3145"
+      "Value": "Build Garrison"
     },
     {
       "Id": 1935832437,
@@ -56,7 +56,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_2804"
+      "Value": "Primary troop production building.|n|cfff5962dTrains:|R Marine, Navy Snipers, Sea Giant|n|cfff5962dResearches:|R Long Rifles, Improved Crushing Wave"
     },
     {
       "Id": 1868786037,

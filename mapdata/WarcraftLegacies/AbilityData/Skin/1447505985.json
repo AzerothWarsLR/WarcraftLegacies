@@ -8,47 +8,47 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_15225"
+      "Value": "(Kul\u0027tiras - Lady Ashvane)"
     },
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_15633"
+      "Value": "E"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_15226"
+      "Value": "Gives attacks a chance to deal additional damage. |n|n|cffffcc00Level 1|r - \u003CA0GV,DataC1\u003E damage. |n|cffffcc00Level 2|r - \u003CA0GV,DataC2\u003E damage. |n|cffffcc00Level 3|r - \u003CA0GV,DataC3\u003E damage.|n|cffffcc00Level 4|r - \u003CA0GV,DataC4\u003E damage."
     },
     {
       "Level": 4,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_15227"
+      "Value": "Deadeye - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_11839"
+      "Value": "Gives attacks a \u003CA0GV,DataA1\u003E% chance to deal \u003CA0GV,DataC1\u003E additional damage."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_15229"
+      "Value": "Gives attacks a \u003CA0GV,DataA2\u003E% chance to deal \u003CA0GV,DataC2\u003E additional damage."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_15230"
+      "Value": "Gives attacks a \u003CA0GV,DataA3\u003E% chance to deal \u003CA0GV,DataC3\u003E additional damage."
     },
     {
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_15231"
+      "Value": "Gives attacks a \u003CA0GV,DataA4\u003E% chance to deal \u003CA0GV,DataC4\u003E additional damage."
     },
     {
       "Id": 1953653089,
@@ -63,54 +63,54 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_16386"
+      "Value": "Deadeye"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_15233"
+      "Value": "Learn Deadeye - [|cffffcc00Level %d|r]"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_15234"
+      "Value": "Deadeye - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_15235"
+      "Value": "Deadeye - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_15236"
+      "Value": "Deadeye - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 1,
       "Id": 829715809,
       "Type": 3,
-      "Value": "TRIGSTR_15228"
+      "Value": "Gives attacks a \u003CA0GV,DataA1\u003E% chance to deal \u003CA0GV,DataC1\u003E additional damage."
     },
     {
       "Level": 2,
       "Id": 829715809,
       "Type": 3,
-      "Value": "TRIGSTR_16676"
+      "Value": "Gives attacks a \u003CA0GV,DataA2\u003E% chance to deal \u003CA0GV,DataC2\u003E additional damage."
     },
     {
       "Level": 3,
       "Id": 829715809,
       "Type": 3,
-      "Value": "TRIGSTR_17950"
+      "Value": "Gives attacks a \u003CA0GV,DataA3\u003E% chance to deal \u003CA0GV,DataC3\u003E additional damage."
     },
     {
       "Level": 4,
       "Id": 829715809,
       "Type": 3,
-      "Value": "TRIGSTR_20292"
+      "Value": "Gives attacks a \u003CA0GV,DataA4\u003E% chance to deal \u003CA0GV,DataC4\u003E additional damage."
     }
   ]
 }

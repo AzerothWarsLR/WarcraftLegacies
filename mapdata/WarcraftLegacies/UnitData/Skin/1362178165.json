@@ -8,7 +8,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_3901"
+      "Value": "Z"
     },
     {
       "Id": 1935832437,
@@ -18,7 +18,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_17873"
+      "Value": "Infused tower with arcane energy that fires magic shards eminating offensive magic.|n|n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Id": 1668510581,
@@ -33,7 +33,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_20095"
+      "Value": "(Draenei Tower 2)"
     },
     {
       "Id": 1818520949,
@@ -43,12 +43,12 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_17829"
+      "Value": "Improved Crystal Protector"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_17830"
+      "Value": "Upgrade to Improved Crystal Protector"
     },
     {
       "Id": 1868786037,

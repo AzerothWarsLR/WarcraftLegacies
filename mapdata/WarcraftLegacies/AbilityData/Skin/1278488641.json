@@ -18,7 +18,7 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_11968"
+      "Value": "(Red - Lich King, Death Knight Arthas)"
     },
     {
       "Id": 1952540001,
@@ -28,7 +28,7 @@
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_12284"
+      "Value": "Q"
     },
     {
       "Id": 1952542049,
@@ -38,7 +38,7 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_11970"
+      "Value": "Taste of Death"
     },
     {
       "Id": 1918988897,
@@ -48,65 +48,65 @@
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_12287"
+      "Value": "Q"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_11972"
+      "Value": "Learn Taste of Death - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_1817"
+      "Value": "The hero launches coils of death in all directions at his enemies. |n|n|cffffcc00Level 1|r - 80 damage per target. |n|cffffcc00Level 2|r - 120 damage per target. |n|cffffcc00Level 3|r - 160 damage per target.|n|cffffcc00Level 4|r - 200 damage per target."
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_11974"
+      "Value": "Taste of Death - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_11975"
+      "Value": "Taste of Death - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_11976"
+      "Value": "Taste of Death - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_11977"
+      "Value": "Taste of Death - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_2237"
+      "Value": "The hero launches coils of death in all directions damaging nearby enemies. Each coil does 80 damage."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_5387"
+      "Value": "The hero launches coils of death in all directions damaging nearby enemies. Each coil does 120 damage."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_5390"
+      "Value": "The hero launches coils of death in all directions damaging nearby enemies. Each coil does 160 damage."
     },
     {
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_5391"
+      "Value": "The hero launches coils of death in all directions damaging nearby enemies. Each coil does 200 damage."
     }
   ]
 }

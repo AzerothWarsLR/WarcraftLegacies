@@ -26,7 +26,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_1658"
+      "Value": "(Fel Horde-Elite)"
     },
     {
       "Id": 1818520949,
@@ -40,7 +40,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_1513"
+      "Value": "W"
     },
     {
       "Id": 2053990773,
@@ -60,7 +60,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_1660"
+      "Value": "Executioner"
     },
     {
       "Id": 1919705973,
@@ -79,12 +79,12 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_1661"
+      "Value": "Train Executioner"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_15843"
+      "Value": "Powerful Orc champion in the service of the Shattered Hand.|n|cfff5962dAbilities:|R Execute, Thunder Clap, Self-Bloodlust, Rampage, Cleaving Attack, Resistant Skin|n|cfff5962dCan learn:|R Blood Runes, Felsteel Plating|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land units.|r"
     },
     {
       "Id": 1684960117,

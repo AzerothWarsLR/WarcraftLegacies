@@ -7,12 +7,12 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_268"
+      "Value": "(Scourge-Legion)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_046"
+      "Value": "E"
     },
     {
       "Id": 845245813,
@@ -27,7 +27,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_270"
+      "Value": "Dreadnought"
     },
     {
       "Id": 1668510581,
@@ -37,12 +37,12 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_271"
+      "Value": "Build Dreadnought"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_16687"
+      "Value": "The dread of the sea and the bane of any Navy.|n|cfff5962dAbilities:|R Repair|n|n|cff99b4d1Can only build 6.|r|n|cffffcc00Attacks land units.|r"
     },
     {
       "Id": 1633907573,

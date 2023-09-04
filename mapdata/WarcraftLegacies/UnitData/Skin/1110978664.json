@@ -12,7 +12,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_4308"
+      "Value": "C"
     },
     {
       "Id": 845245813,
@@ -47,12 +47,12 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_7582"
+      "Value": "Fortified stronghold of the Forsaken.|n|cfff5962dTrains:|R Acolytes, Dread Knights"
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19999"
+      "Value": "(Forsaken T3)"
     },
     {
       "Id": 1818520949,
@@ -67,12 +67,12 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_9252"
+      "Value": "Upgrade to Haunted Castle"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_10870"
+      "Value": "Haunted Castle"
     }
   ]
 }

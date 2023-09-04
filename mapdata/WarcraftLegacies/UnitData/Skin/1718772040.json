@@ -7,12 +7,12 @@
     {
       "Id": 1953980789,
       "Type": 3,
-      "Value": "TRIGSTR_2262"
+      "Value": "Revive High King"
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_2487"
+      "Value": "(Lordaeron-High King)"
     },
     {
       "Id": 1818520949,
@@ -27,27 +27,27 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_2492"
+      "Value": "High King"
     },
     {
       "Id": 1869770869,
       "Type": 3,
-      "Value": "TRIGSTR_1315"
+      "Value": "Arthas Menethil"
     },
     {
       "Id": 1919972469,
       "Type": 3,
-      "Value": "TRIGSTR_2654"
+      "Value": "Revive High King"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_17047"
+      "Value": "Warrior Hero, adept at destroying the enemy and enduring.|n|cfff5962dAbilities:|r Divine Shield |n|cfff5962dCan learn:|R Holy Nova, Call Royal Guard, Holy Aura, Solar Judgement|n|n|cffffcc00Attacks land units.|R"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_16518"
+      "Value": "Summon King"
     }
   ]
 }

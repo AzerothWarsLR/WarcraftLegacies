@@ -13,34 +13,34 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_7645"
+      "Value": "(Brown Cenarius)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_9604"
+      "Value": "E"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_7647"
+      "Value": "Summon the Furbolg Elder Shamans"
     },
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_9607"
+      "Value": "E"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_7649"
+      "Value": "Summon the Furbolg Elder Shamans"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_7650"
+      "Value": "Summons 2 Furbolg Elder Shaman companions that have Lightning Shield and Rejuvenation.|nLasts \u003CACs7,Dur3\u003E seconds. |n|n|cffffcc00Attacks land and air units.|r"
     }
   ]
 }

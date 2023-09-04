@@ -9,13 +9,13 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_2713"
+      "Value": "This unit\u0027s abilities consume Oil instead of mana."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_5231"
+      "Value": "Increases the rate at which this unit gathers lumber."
     },
     {
       "Id": 1953653089,
@@ -25,18 +25,18 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_13976"
+      "Value": "Oil Consumer"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_16120"
+      "Value": "Oil Consumer"
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_8648"
+      "Value": "(Goblin)"
     }
   ]
 }

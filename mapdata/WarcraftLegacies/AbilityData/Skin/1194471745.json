@@ -17,24 +17,24 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_20848"
+      "Value": "(sunfury)"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_20911"
+      "Value": "Suppression"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_20912"
+      "Value": "Suppression"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_20913"
+      "Value": "Suppresses all enemy ranged units in a target area from attacking for 4 seconds."
     }
   ]
 }

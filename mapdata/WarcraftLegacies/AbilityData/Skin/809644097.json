@@ -8,13 +8,13 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_18930"
+      "Value": "(Infernal, Legion)"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_10612"
+      "Value": "Burns nearby enemy units for 20 points of damage per second."
     }
   ]
 }

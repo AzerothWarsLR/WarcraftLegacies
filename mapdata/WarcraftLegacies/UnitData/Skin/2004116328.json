@@ -7,7 +7,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_654"
+      "Value": "X"
     },
     {
       "Id": 1633907573,
@@ -27,12 +27,12 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_1019"
+      "Value": "Cannon topped tower defense.|n|cfff5962dUpgrades Into:|R Improved Cannon Tower|n|n|cffffcc00Attacks land units and trees.|r"
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_16382"
+      "Value": " (Lordaeron Tower)"
     }
   ]
 }

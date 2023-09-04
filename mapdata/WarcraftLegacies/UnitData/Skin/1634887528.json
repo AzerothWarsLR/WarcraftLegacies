@@ -20,7 +20,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_688"
+      "Value": "F"
     },
     {
       "Id": 1633907573,
@@ -40,12 +40,12 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_5421"
+      "Value": "Fortified rookery for the gryphons of Ironforge.|n|cfff5962dTrains:|R Gryphon Rider, Stormrider|n|cfff5962dResearches:|R Storm Hammers, Gryphon Superior Breed"
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_15258"
+      "Value": " (Ironforge Specialist)"
     }
   ]
 }

@@ -22,17 +22,17 @@
     {
       "Id": 1853186933,
       "Type": 3,
-      "Value": "TRIGSTR_18535"
+      "Value": "Initiate, Adept, Master"
     },
     {
       "Id": 1953850229,
       "Type": 3,
-      "Value": "TRIGSTR_6391"
+      "Value": "- Dark Regeneration,- Dark Regeneration|n- Sight of Sargeras,- Dark Regeneration|n- Sight of Sargeras|n- Charm"
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_1466"
+      "Value": "(legion)"
     },
     {
       "Id": 1818520949,
@@ -42,12 +42,12 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_6587"
+      "Value": "E"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_14326"
+      "Value": "Nathrezim Infiltrator"
     },
     {
       "Id": 1668510581,
@@ -57,12 +57,12 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_2169"
+      "Value": "Train Nathrezim Infiltrator"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_11391"
+      "Value": "Shadowy Nathrezim Agents.|n|cfff5962dAbilities:|R Thirst for Blood, Dark Regeneration, Resistant Skin, Permanent Invisibility, Magic Resistance |n|cfff5962dCan learn:|R Charm, Sight of Sargeras, Astral Walk|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land units.|r"
     },
     {
       "Id": 1684960117,

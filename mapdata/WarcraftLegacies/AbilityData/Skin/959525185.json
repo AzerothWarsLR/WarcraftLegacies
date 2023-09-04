@@ -26,29 +26,29 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_6658"
+      "Value": "(LIght Blue Elites)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_8842"
+      "Value": "E"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_6660"
+      "Value": "Elune\u0027s Blessing"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_6661"
+      "Value": "Elune\u0027s Blessing"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_4738"
+      "Value": "Increases nearby units movement speed by 25% for 6 seconds."
     }
   ]
 }

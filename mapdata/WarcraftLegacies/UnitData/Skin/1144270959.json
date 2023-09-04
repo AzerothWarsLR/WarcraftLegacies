@@ -8,12 +8,12 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_16215"
+      "Value": "(Troll)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_4073"
+      "Value": "W"
     },
     {
       "Id": 1633907573,
@@ -33,17 +33,17 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_453"
+      "Value": "Versatile marksmen and a true believer of the Horde.|n|cfff5962dAbilities:|R Slow Poison|n|cfff5962dCan learn:|R Animal Companion|n|n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_212"
+      "Value": "Scout"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_16331"
+      "Value": "Train Scout"
     }
   ]
 }

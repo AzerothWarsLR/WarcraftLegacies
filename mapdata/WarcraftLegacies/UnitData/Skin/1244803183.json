@@ -22,7 +22,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_15810"
+      "Value": "(Gilneas)"
     },
     {
       "Id": 1818520949,
@@ -32,7 +32,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_3670"
+      "Value": "W"
     },
     {
       "Id": 2053990773,
@@ -52,7 +52,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_2527"
+      "Value": "Worgen"
     },
     {
       "Id": 1668510581,
@@ -67,12 +67,12 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_3181"
+      "Value": "Train Worgen"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_13431"
+      "Value": "Powerful Orc warrior that serves the Shattered Hand.|n|cfff5962dAbilities:|R Charge, Thunder Clap, Self-Bloodlust, Rampage, Cleaving Attack|n|cfff5962dCan learn:|R Blood Runes, Felsteel Plating|n|n|cff99b4d1Can only train 8.|r|n|cffffcc00Attacks land units.|r"
     },
     {
       "Id": 1684960117,

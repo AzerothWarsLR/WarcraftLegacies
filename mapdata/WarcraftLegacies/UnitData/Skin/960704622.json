@@ -8,12 +8,12 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_1530"
+      "Value": " (Nzoth T3)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_8805"
+      "Value": "C"
     },
     {
       "Id": 1935832437,
@@ -23,7 +23,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_4613"
+      "Value": "Primary structure, used to train Mur\u0027gul Slaves, Royal Guards and receive gathered resources. Also contains the Submerge upgrade."
     },
     {
       "Id": 1768841589,
@@ -51,7 +51,7 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_1533"
+      "Value": "Upgrade to Temple of Tides"
     }
   ]
 }

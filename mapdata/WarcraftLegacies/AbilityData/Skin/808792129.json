@@ -13,17 +13,17 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_11867"
+      "Value": "(void Hunter)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_12145"
+      "Value": "Q"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_11869"
+      "Value": "Consume"
     },
     {
       "Id": 1952543585,
@@ -34,13 +34,13 @@
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_11870"
+      "Value": "Consume"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_11871"
+      "Value": "Consumes an enemy land unit, slowly burning it\u0027s soul and dealing 60 damage per second to it. If the Void Hunter is killed while the consumed unit is still digesting, the unit that was consumed will be released."
     }
   ]
 }

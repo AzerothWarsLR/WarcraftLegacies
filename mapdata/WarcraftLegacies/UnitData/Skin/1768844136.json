@@ -7,12 +7,12 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_985"
+      "Value": "(Lordaeron)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_586"
+      "Value": "E"
     },
     {
       "Id": 1633907573,
@@ -22,7 +22,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_17833"
+      "Value": "Powerful mounted warrior.|n|cfff5962dAbilities:|R Charge, War Plating|n|n|cffffcc00Attacks land units.|r"
     }
   ]
 }

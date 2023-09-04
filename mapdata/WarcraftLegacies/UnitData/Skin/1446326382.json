@@ -27,12 +27,12 @@
     {
       "Id": 1853186933,
       "Type": 3,
-      "Value": "TRIGSTR_2282"
+      "Value": "Initiate,Adept,Master"
     },
     {
       "Id": 1953850229,
       "Type": 3,
-      "Value": "TRIGSTR_12455"
+      "Value": "- Shadow Infusion,- Shadow Infusion|n- Regeneration,- Shadow Infusion|n- Regeneration|n - Earth Shackles"
     },
     {
       "Id": 1667462261,
@@ -41,7 +41,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_2284"
+      "Value": "(C\u0027thun Faceless Shadow Weaver)"
     },
     {
       "Id": 1818520949,
@@ -51,7 +51,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_1845"
+      "Value": "W"
     },
     {
       "Id": 828468597,
@@ -71,7 +71,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_6847"
+      "Value": "Shadow Weaver"
     },
     {
       "Id": 1650684789,
@@ -85,12 +85,12 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_6851"
+      "Value": "Train - Shadow Weaver"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_12456"
+      "Value": "Powerful spellcaster. Deceitful and mysterious, these Faceless Shadow Weaver support their kin with Shadow spells.|n|cffffcc00Casts:|r Eye of C\u0027thun, Regeneration, Earth Shackles. |n|n|cffd5d500Attacks land and air units.|r"
     },
     {
       "Id": 1684960117,

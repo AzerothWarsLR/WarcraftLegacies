@@ -16,41 +16,41 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_9819"
+      "Value": "(Self Cast - Teal)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_10632"
+      "Value": "D"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_9821"
+      "Value": "Self-Bloodlust"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_9822"
+      "Value": "Self-Bloodlust - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_9823"
+      "Value": "Self-Bloodlust - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_9824"
+      "Value": "Increases the unit\u0027s attack rate by \u003CA0EH,DataA1,%\u003E% and movement speed by \u003CA0EH,DataB1,%\u003E% for \u003CA0EH,Dur1\u003E seconds."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_9825"
+      "Value": "Increases the unit\u0027s attack rate by \u003CA0EH,DataA2,%\u003E% and movement speed by \u003CA0EH,DataB2,%\u003E% for \u003CA0EH,Dur2\u003E seconds."
     },
     {
       "Id": 2019718497,
@@ -63,7 +63,7 @@
     {
       "Id": 1802007905,
       "Type": 3,
-      "Value": "TRIGSTR_10683"
+      "Value": "D"
     }
   ]
 }

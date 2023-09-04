@@ -13,17 +13,17 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_7170"
+      "Value": "(C\u0027thun - Ossirian)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_8761"
+      "Value": "W"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_7172"
+      "Value": "Accelerated Vitality"
     },
     {
       "Id": 1918988897,
@@ -37,65 +37,65 @@
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_8779"
+      "Value": "W"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_7174"
+      "Value": "Learn Accelerated Vitality - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_7175"
+      "Value": "Restores a target units Health over 10 seconds.|n|n|cffffcc00Level 1|r - 400 Hitpoints. |n|cffffcc00Level 2|r - 600 Hitpoints.|n|cffffcc00Level 3|r - 800 Hitpoints.|n|cffffcc00Level 4|r - 1000 Hitpoint."
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_7176"
+      "Value": "Accelerated Vitality - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_7177"
+      "Value": "Accelerated Vitality - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_7178"
+      "Value": "Accelerated Vitality - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_7179"
+      "Value": "Accelerated Vitality - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_7180"
+      "Value": "Heals a target friendly unit for 400 hit points over 10 seconds. "
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_7181"
+      "Value": "Heals a target friendly unit for 600 hit points over 10 seconds. "
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_7182"
+      "Value": "Heals a target friendly unit for 800 hit points over 10 seconds. "
     },
     {
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_7183"
+      "Value": "Heals a target friendly unit for 1000 hit points over 10 seconds. "
     }
   ]
 }

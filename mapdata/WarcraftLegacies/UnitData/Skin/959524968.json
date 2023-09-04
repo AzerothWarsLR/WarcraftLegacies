@@ -8,7 +8,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_15855"
+      "Value": "(Ironforge Worker)"
     },
     {
       "Id": 1818520949,
@@ -18,7 +18,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_3088"
+      "Value": "Q"
     },
     {
       "Id": 1633907573,
@@ -28,17 +28,17 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_3460"
+      "Value": "Mason"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_3461"
+      "Value": "Train Mason"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_3462"
+      "Value": "Skilled craftsman and designer of dwarven wonders.|n|cfff5962dAbilities:|r Repair, Gather|n|cfff5962dCan Learn:|R Improved Lumber Harvesting|n|n|cffffcc00Attacks land units and trees."
     }
   ]
 }

@@ -17,17 +17,17 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_21295"
+      "Value": "(Fel Horde - Bonebreaker)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_20688"
+      "Value": "E"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_21296"
+      "Value": "Cascade Smash"
     },
     {
       "Id": 1918988897,
@@ -41,17 +41,17 @@
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_20689"
+      "Value": "E"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_21297"
+      "Value": "Learn Stormhammers  - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_21298"
+      "Value": "Gives Muradin a chance to deal damage to all foes around him.|n|n|cffffcc00Level 1|r - 20% chance to do 30 damage.|n|cffffcc00Level 2|r - 25% chance to do 50 damage.|n|cffffcc00Level 3|r - 30% chance to do 70 damage.|n|cffffcc00Level 4|r - 35% chance to do 90 damage."
     },
     {
       "Id": 1952543841,
@@ -62,49 +62,49 @@
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_21299"
+      "Value": "Cascade Smash"
     },
     {
       "Level": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_21300"
+      "Value": "Storm Hammers - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_21301"
+      "Value": "Storm Hammers - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_21302"
+      "Value": "Storm Hammers - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_21303"
+      "Value": "Gives a 20% chance that an attack will deal 30  damage to nearby units."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_21304"
+      "Value": "Gives a 25% chance that an attack will deal 50 damage to nearby units."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_21305"
+      "Value": "Gives a 30% chance that an attack will deal 70 damage to nearby units."
     },
     {
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_21306"
+      "Value": "Gives a 35% chance that an attack will deal 90 damage to nearby units."
     }
   ]
 }

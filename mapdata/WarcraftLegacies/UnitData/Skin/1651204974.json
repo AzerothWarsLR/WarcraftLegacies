@@ -15,12 +15,12 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_4729"
+      "Value": "(unused)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_838"
+      "Value": "A"
     },
     {
       "Id": 1633907573,
@@ -30,17 +30,17 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_861"
+      "Value": "Kodo War Beast"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_862"
+      "Value": "Train Kodo War Beast"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_863"
+      "Value": "Beast mounted enthusiast of war, marching on for conquest.|n|cfff5962dAbilities:|R Devour, For The Horde, War Drums, Resistant Skin|n|cfff5962d|r|n|cffffcc00Attacks land and air units.|r"
     }
   ]
 }

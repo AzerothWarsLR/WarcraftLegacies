@@ -32,7 +32,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_17519"
+      "Value": "(Scourge Other)"
     },
     {
       "Id": 1953523061,
@@ -55,7 +55,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_1045"
+      "Value": "S"
     },
     {
       "Id": 1633907573,
@@ -65,7 +65,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_1376"
+      "Value": "Caer Darrow Keep"
     },
     {
       "Id": 1919705973,
@@ -84,7 +84,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_1377"
+      "Value": "Trains the spellcasters of the Legions Forces. Trains Shadow Priests and Warlocks. Contains upgrades for all three casters as well as a caster health research."
     }
   ]
 }

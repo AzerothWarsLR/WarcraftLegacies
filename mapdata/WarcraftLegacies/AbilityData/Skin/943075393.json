@@ -21,24 +21,24 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_8917"
+      "Value": "(unused)"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_11606"
+      "Value": "Toughened Hides"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_11607"
+      "Value": "Toughened Hides"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_11608"
+      "Value": "Tougher Hides reduces the damage dealt to the Ogre by 5 damage."
     },
     {
       "Id": 1918989665,

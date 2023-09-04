@@ -9,18 +9,18 @@
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_19208"
+      "Value": "Holy Arrows"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_19225"
+      "Value": "Increases damage dealt to Heavy Armor by 30."
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_19228"
+      "Value": "Holy Arrows"
     },
     {
       "Id": 1952539489,
@@ -44,7 +44,7 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_19186"
+      "Value": "(Draenei)"
     }
   ]
 }

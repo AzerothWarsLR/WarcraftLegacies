@@ -8,17 +8,17 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_18367"
+      "Value": "(Tolvir)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_5123"
+      "Value": "Q"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_17556"
+      "Value": "Master of magics from Ny\u0027alotha.|n|cfff5962dAbilities:|R Parasite|n|cfff5962dCan Learn:|R Anti-magic Shell, Suppression|n|n|cffffcc00Attacks land and air units.|R\r\n"
     },
     {
       "Id": 1868786037,
@@ -33,12 +33,12 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_18370"
+      "Value": "Train Fateweaver"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_18373"
+      "Value": "Lurking Tempest"
     },
     {
       "Id": 1684960117,
@@ -48,7 +48,7 @@
     {
       "Id": 1953850229,
       "Type": 3,
-      "Value": "TRIGSTR_18409"
+      "Value": "- Parasite,- Parasite|n- Anti-magic Shell,- Parasite|n- Anti-magic Shell|n- Suppression"
     }
   ]
 }

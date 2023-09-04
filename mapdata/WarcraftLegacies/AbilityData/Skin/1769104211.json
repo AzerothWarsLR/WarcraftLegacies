@@ -7,18 +7,18 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_4740"
+      "Value": "(Teal - Necrolyte)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_7221"
+      "Value": "E"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_4742"
+      "Value": "Reduces movement speed by 75%, attack rate by 50%, and damage by 50% of a target enemy unit. |nLasts 60 seconds. Lasts 10 seconds on Heroes."
     }
   ]
 }

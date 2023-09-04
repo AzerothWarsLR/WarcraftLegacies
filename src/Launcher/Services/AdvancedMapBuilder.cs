@@ -25,7 +25,7 @@ namespace Launcher.Services
   {
     private readonly CompilerSettings _compilerSettings;
     private readonly MapSettings _mapSettings;
-    private const string War3MapLua = "war3map.lua";
+    private const string War3MapLua = MapDataPaths.ScriptPath;
     
     private const string GraphicsApi = "Direct3D9";
 #if DEBUG

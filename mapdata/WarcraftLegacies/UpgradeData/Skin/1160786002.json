@@ -21,55 +21,55 @@
       "Level": 1,
       "Id": 1718840935,
       "Type": 3,
-      "Value": "TRIGSTR_20080"
+      "Value": "(Dalaran)"
     },
     {
       "Level": 1,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_16797"
+      "Value": "Z"
     },
     {
       "Level": 2,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_16798"
+      "Value": "Z"
     },
     {
       "Level": 1,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "TRIGSTR_15019"
+      "Value": "Hydromancer Adept Training"
     },
     {
       "Level": 2,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "TRIGSTR_15020"
+      "Value": "Hydromancer Master Training"
     },
     {
       "Level": 1,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_21094"
+      "Value": "Research Hydromancer Adept Training"
     },
     {
       "Level": 2,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_15021"
+      "Value": "Research Hydromancer Master Training"
     },
     {
       "Level": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "TRIGSTR_15023"
+      "Value": "Increases Hydromancers\u0027 mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Summon Water Elemental."
     },
     {
       "Level": 2,
       "Id": 828536167,
       "Type": 3,
-      "Value": "TRIGSTR_15024"
+      "Value": "Increases Hydromancers\u0027 mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Frost Cell."
     },
     {
       "Level": 3,
@@ -81,25 +81,25 @@
       "Level": 3,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_16835"
+      "Value": "Z"
     },
     {
       "Level": 3,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "TRIGSTR_21095"
+      "Value": "Hydromancer Grandmaster Training"
     },
     {
       "Level": 3,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_21096"
+      "Value": "Research Hydromancer Grandmaster Training"
     },
     {
       "Level": 3,
       "Id": 828536167,
       "Type": 3,
-      "Value": "TRIGSTR_18412"
+      "Value": "Increases Hydromancers\u0027 mana capacity, mana regeneration rate, attack damage and gives them the ability Freezing Shots."
     }
   ]
 }

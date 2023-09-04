@@ -23,7 +23,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_2706"
+      "Value": "(Ironforge)"
     },
     {
       "Id": 1919252085,
@@ -42,17 +42,17 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_3397"
+      "Value": "Steam Tank"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_3398"
+      "Value": "Build Steam Tank"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_3399"
+      "Value": "Extremely heavily armored vehicle.|n|cfff5962dAbilities:|R Flamethrower, Lockdown, Barrage|n|cfff5962dCan Learn:|R Overclock|n|n|cff00ffffCan transport 4 units.|n|cff99b4d1Can only build 3.|r|n|cffffcc00Attacks land and air units.|r"
     }
   ]
 }

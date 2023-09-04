@@ -21,7 +21,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19739"
+      "Value": " (Ironforge Barracks)"
     },
     {
       "Id": 1818520949,
@@ -31,7 +31,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_1339"
+      "Value": "A"
     },
     {
       "Id": 1633907573,
@@ -51,17 +51,17 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_5124"
+      "Value": "Primary troop production building.|n|cfff5962dTrains:|R Warrior, Rifleman, Mortar Team|n|cfff5962dResearches:|R Mithril Plated Armor, Long Rifles, Flare, Fragmentation Shards, Armor Penetration Rounds"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_18768"
+      "Value": "Mustering Hall"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_18776"
+      "Value": "Build Mustering Hall"
     }
   ]
 }

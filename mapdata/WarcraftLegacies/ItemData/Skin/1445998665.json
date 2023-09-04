@@ -21,17 +21,17 @@
     {
       "Id": 1936024681,
       "Type": 3,
-      "Value": "TRIGSTR_4055"
+      "Value": "Transports troops to a friendly unit or structure."
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_5441"
+      "Value": "Mercenary Staff of Town Portal"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_4059"
+      "Value": "Teleports the Hero and any of its nearby troops to a target friendly unit or structure.|n|n|cffe8e800Has a 9 second cast time.|r"
     }
   ]
 }

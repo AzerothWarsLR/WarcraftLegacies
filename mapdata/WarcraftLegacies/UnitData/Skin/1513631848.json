@@ -23,7 +23,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_16122"
+      "Value": "(goblin)"
     },
     {
       "Id": 1818520949,
@@ -47,17 +47,17 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_16558"
+      "Value": "Assault Tank"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_16559"
+      "Value": "Build Assault Tank"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_8657"
+      "Value": "Heavily armored vehicle, adept at shooting down air units.|n|cfff5962dAbilities:|R Barrage, Explosive Ammo, Goblin Pilot, Emergency Repairs, Oil Consumer|n|n|cff99b4d1Can only build 5.|r|n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Id": 1668510581,

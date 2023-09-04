@@ -12,12 +12,12 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_13639"
+      "Value": "(Veteran Footman -Lordaeron)"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_14848"
+      "Value": "Veteran\u0027s Insight"
     },
     {
       "Id": 1918988897,
@@ -28,37 +28,37 @@
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_14849"
+      "Value": "Veteran\u0027s Insight"
     },
     {
       "Level": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_15664"
+      "Value": "Combat Experience"
     },
     {
       "Level": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_17317"
+      "Value": "Combat Experience"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_17323"
+      "Value": "Gives a 15% chance to dodge an attack and a 15% chance to deal 1.5x normal damage."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_17921"
+      "Value": "Gives a 15% chance to dodge an attack and a 10% chance to deal 1.5x normal damage."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_21235"
+      "Value": "Gives a 10% chance to dodge an attack and a 15% chance to deal 1.5x normal damage."
     }
   ]
 }

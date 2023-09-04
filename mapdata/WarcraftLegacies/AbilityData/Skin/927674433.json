@@ -13,24 +13,24 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_8969"
+      "Value": "(Dark Green - Northshire Abbey, Cathedral of Light)"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_8970"
+      "Value": "Invigoration of the Light"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_8971"
+      "Value": "Invigoration of The Light"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_8972"
+      "Value": "Restores nearby unit\u0027s health by 1% per second."
     },
     {
       "Id": 1918989665,

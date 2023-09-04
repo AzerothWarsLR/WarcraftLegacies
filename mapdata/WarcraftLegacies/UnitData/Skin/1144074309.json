@@ -18,7 +18,7 @@
     {
       "Id": 1953980789,
       "Type": 3,
-      "Value": "TRIGSTR_17269"
+      "Value": "Revive"
     },
     {
       "Id": 1667462261,
@@ -62,17 +62,17 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_17231"
+      "Value": "N\u0027raqi Arcanist"
     },
     {
       "Id": 1869770869,
       "Type": 3,
-      "Value": "TRIGSTR_17276"
+      "Value": "Herald Volazj"
     },
     {
       "Id": 1919972469,
       "Type": 3,
-      "Value": "TRIGSTR_17272"
+      "Value": "Revive"
     },
     {
       "Id": 1769173877,
@@ -112,7 +112,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_4890"
+      "Value": "Q"
     },
     {
       "Id": 2037408373,
@@ -121,17 +121,17 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_17278"
+      "Value": "Summon Herald Volazj"
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_17240"
+      "Value": "(yogg)"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_17242"
+      "Value": "Mystical Hero, adept at disruption and ranged combat.|n|cfff5962dCan Learn:|R Arcane Bombardment, Banish, Arcane Bomb, Curse of Silence|n|n|cffffcc00Attacks land and air units.|R"
     }
   ]
 }

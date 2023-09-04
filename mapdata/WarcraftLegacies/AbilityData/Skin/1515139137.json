@@ -8,18 +8,18 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_16821"
+      "Value": "(troll - Zandalar)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_16025"
+      "Value": "W"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_8115"
+      "Value": "Removes all buffs from units in a target area and deals \u003CAdis,DataB1\u003E damage to summoned units.|r"
     }
   ]
 }

@@ -15,13 +15,13 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_5856"
+      "Value": "(Purple Veteran Paladin - Royal Guard -Fandral)"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_5857"
+      "Value": "Gives a 25% chance that an attack will do 25 bonus damage and stun an opponent for 2 seconds (0.5 seconds for heroes)."
     }
   ]
 }

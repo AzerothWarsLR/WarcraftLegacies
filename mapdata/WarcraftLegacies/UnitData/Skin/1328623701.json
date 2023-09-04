@@ -8,27 +8,27 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_808"
+      "Value": "(Forsaken)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_4114"
+      "Value": "W"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_7034"
+      "Value": "Grand Apothecary"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_17202"
+      "Value": "Mystical Hero, exceptional at area of effect damage over time.|n|cfff5962dCan Learn:|R Poison Nova, Plague Strike, Brilliance Aura, Acid Rain|n|n|cffffcc00Attacks land and air units.|R"
     },
     {
       "Id": 1869770869,
       "Type": 3,
-      "Value": "TRIGSTR_15034"
+      "Value": "Putress"
     },
     {
       "Id": 1868786037,
@@ -62,17 +62,17 @@
     {
       "Id": 1953980789,
       "Type": 3,
-      "Value": "TRIGSTR_17203"
+      "Value": "Revive Apothecary"
     },
     {
       "Id": 1919972469,
       "Type": 3,
-      "Value": "TRIGSTR_17204"
+      "Value": "Revive Apothecary"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_17205"
+      "Value": "Summon Putress"
     }
   ]
 }

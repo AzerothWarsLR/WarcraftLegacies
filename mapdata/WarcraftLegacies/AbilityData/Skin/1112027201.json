@@ -17,7 +17,7 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_15307"
+      "Value": "(Warsong - Gahz\u0027rilla)"
     },
     {
       "Id": 1952542049,
@@ -27,7 +27,7 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_15308"
+      "Value": "Multiple Heads"
     },
     {
       "Id": 1918988897,
@@ -41,65 +41,65 @@
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_14390"
+      "Value": "W"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_15309"
+      "Value": "Learn Multiple Heads - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_2400"
+      "Value": "Gahz\u0027rilla many heads enables it to attack his enemies. |n|n|cffffcc00Level 1|r - Enables the release of 2 ice bolt at once.|n|cffffcc00Level 2|r - Enables the release of 3 ice bolt at once.|n|cffffcc00Level 3|r - Enables the release of 4 ice bolt at once.|n|cffffcc00Level 4|r - Enables the release of 5 ice bolt at once."
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_15311"
+      "Value": "Multiple Heads - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_15312"
+      "Value": "Multiple Heads - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_15313"
+      "Value": "Multiple Heads - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_15314"
+      "Value": "Multiple Heads - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_15315"
+      "Value": "The hero fires multiple attacks at targets. \u003CA0BQ,DataC1\u003E extra attacks are made."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_15316"
+      "Value": "The hero fires multiple attacks at targets. \u003CA0BQ,DataC2\u003E extra attacks are made."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_15317"
+      "Value": "The hero fires multiple attacks at targets. \u003CA0BQ,DataC3\u003E extra attacks are made."
     },
     {
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_15318"
+      "Value": "The hero fires multiple attacks at targets. \u003CA0BQ,DataC4\u003E extra attacks are made."
     }
   ]
 }

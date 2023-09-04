@@ -11,12 +11,12 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_2251"
+      "Value": "(Frostwolf T3)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_466"
+      "Value": "C"
     },
     {
       "Id": 1935832437,
@@ -26,7 +26,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_17313"
+      "Value": "Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Peon, Far Seer|n|cfff5962dResearches:|R Improved Chain Lightning, Full Scale Escalation|n|cfff5962dAbilities:|R For The Horde!"
     }
   ]
 }

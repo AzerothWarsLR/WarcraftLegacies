@@ -13,12 +13,12 @@
     {
       "Id": 1885959270,
       "Type": 3,
-      "Value": "TRIGSTR_13683"
+      "Value": "Crown Heal"
     },
     {
       "Id": 1700951398,
       "Type": 3,
-      "Value": "TRIGSTR_13684"
+      "Value": "This unit is affected by a crown; its armor is temporarily increased and it had life and mana restored."
     },
     {
       "Id": 1952543846,

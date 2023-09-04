@@ -11,17 +11,17 @@
     {
       "Id": 1953850229,
       "Type": 3,
-      "Value": "TRIGSTR_15766"
+      "Value": "- Cycle of Rebirth,- Cycle of Rebirth|n- Dispel Magic,- Cycle of Rebirth|n- Dispel Magic|n- Invoke Spiders"
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_1109"
+      "Value": "(Druids)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_1033"
+      "Value": "Q"
     },
     {
       "Id": 1831952757,
@@ -36,7 +36,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_18025"
+      "Value": "Supporting spellcaster.|n|cfff5962dAbilities:|r Cycle of Rebirth|n|cfff5962dCan Learn:|r Dispel Magic, Invoke Spiders, Storm Crow Form|n|n|cffffcc00Attacks land and air units.|r"
     }
   ]
 }

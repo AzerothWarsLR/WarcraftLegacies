@@ -17,7 +17,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19776"
+      "Value": "(Dalaran T3)"
     },
     {
       "Id": 1818520949,
@@ -27,7 +27,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_2840"
+      "Value": "C"
     },
     {
       "Id": 845245813,
@@ -52,7 +52,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_2841"
+      "Value": "Observatory"
     },
     {
       "Id": 1668510581,
@@ -62,7 +62,7 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_2842"
+      "Value": "Upgrade to Observatory"
     },
     {
       "Id": 1935832437,
@@ -72,7 +72,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_7701"
+      "Value": "Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Farmer/Whelp, Kirin Tor/Crystal Lord|n|cfff5962dResearches:|R Improved Forked Lightning, Full Scale Escalation|n|cfff5962dAbilities:|R Replenish Mana, Summon Initiate Mage"
     }
   ]
 }

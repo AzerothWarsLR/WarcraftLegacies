@@ -28,7 +28,7 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_15451"
+      "Value": "(faction select)"
     },
     {
       "Id": 1952540001,
@@ -43,7 +43,7 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_15468"
+      "Value": "Warsong selection"
     },
     {
       "Id": 1952543841,
@@ -59,13 +59,13 @@
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_15469"
+      "Value": "Select the |cffd45e19Warsong|r"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_15470"
+      "Value": "Play as the fierce |cffd45e19Warsong|r clan. Your role is critical in the founding of the new Horde nation. This new continent will offer new opportunities for allies, and enemies.|n|n|cffd45e19Hard Faction|r"
     },
     {
       "Id": 2037408353,

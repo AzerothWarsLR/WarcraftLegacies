@@ -8,12 +8,12 @@
     {
       "Id": 1885959270,
       "Type": 3,
-      "Value": "TRIGSTR_13150"
+      "Value": "Time Aura"
     },
     {
       "Id": 1700951398,
       "Type": 3,
-      "Value": "TRIGSTR_13151"
+      "Value": "This unit is under the effects of Time Aura; it has decreased attack damage."
     },
     {
       "Id": 1952543846,

@@ -8,12 +8,12 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_7037"
+      "Value": "(C\u0027thun Guardian)"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_7050"
+      "Value": "Consuming Attack"
     },
     {
       "Id": 1952543841,
@@ -29,13 +29,13 @@
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_7051"
+      "Value": "Consuming Attack"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_7052"
+      "Value": "This unit gains 15% of damage done as health."
     }
   ]
 }

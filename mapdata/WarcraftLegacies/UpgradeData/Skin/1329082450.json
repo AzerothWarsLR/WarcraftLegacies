@@ -9,49 +9,49 @@
       "Level": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "TRIGSTR_18449"
+      "Value": "Increases Bloodkin\u0027s mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Dispel Magic."
     },
     {
       "Level": 2,
       "Id": 828536167,
       "Type": 3,
-      "Value": "TRIGSTR_18450"
+      "Value": "Increases Bloodkin\u0027s mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Bloodlust."
     },
     {
       "Level": 1,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "TRIGSTR_18983"
+      "Value": "Bloodkin Adept Training"
     },
     {
       "Level": 2,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "TRIGSTR_18984"
+      "Value": "Bloodkin Master Training"
     },
     {
       "Level": 1,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_18985"
+      "Value": "Research Bloodkin Adept Training"
     },
     {
       "Level": 2,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_18986"
+      "Value": "Research Bloodkin Master Training"
     },
     {
       "Level": 1,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_20743"
+      "Value": "X"
     },
     {
       "Level": 2,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_20753"
+      "Value": "X"
     },
     {
       "Id": 2020631143,

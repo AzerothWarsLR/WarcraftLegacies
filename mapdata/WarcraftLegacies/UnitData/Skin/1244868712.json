@@ -13,7 +13,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_175"
+      "Value": "(Quel\u0027thalas Specialist)"
     },
     {
       "Id": 1818520949,
@@ -23,7 +23,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_1596"
+      "Value": "D"
     },
     {
       "Id": 1633907573,
@@ -33,12 +33,12 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_3073"
+      "Value": "Academy"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_3091"
+      "Value": "Build Academy"
     },
     {
       "Id": 1935832437,
@@ -48,7 +48,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_16666"
+      "Value": "Training institution for elite Elven warriors.|n|cfff5962dTrains:|R Spell Breaker, Dragonhawk Rider, Arcane Annihilator|n|cfff5962dResearches:|R Control Magic, Cloud, Improved Glaives"
     }
   ]
 }

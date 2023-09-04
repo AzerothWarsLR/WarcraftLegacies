@@ -13,29 +13,29 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_20165"
+      "Value": " (Stormwind Dummy)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_8939"
+      "Value": "Q"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_7981"
+      "Value": "Bombing Run"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_7983"
+      "Value": "Sends a squadron of Gyro-Copters to a target area, bombing building and units for 15 seconds.|n|n90 second cooldown."
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_7982"
+      "Value": "Bombing Run"
     }
   ]
 }

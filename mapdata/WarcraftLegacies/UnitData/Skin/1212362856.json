@@ -17,12 +17,12 @@
     {
       "Id": 1953850229,
       "Type": 3,
-      "Value": "TRIGSTR_20794"
+      "Value": "- Magic Missile,- Magic Missile|n- Dispel Magic,- Magic Missile|n- Dispel Magic|n- Suppression"
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_18759"
+      "Value": "(sunfury)"
     },
     {
       "Id": 1818520949,
@@ -32,7 +32,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_5227"
+      "Value": "Q"
     },
     {
       "Id": 1831952757,
@@ -42,17 +42,17 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_20897"
+      "Value": "Astromancer"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_20898"
+      "Value": "Train Astromancer"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_20978"
+      "Value": "Offensive caster.|n|cfff5962dAbilities:|R Magic Missile, Mana Shield|n|cfff5962dCan Learn:|R Dispel Magic, Suppression|n|n|cffffcc00Attacks land and air units.|R"
     },
     {
       "Id": 1635083125,

@@ -8,23 +8,23 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_12212"
+      "Value": "(Quel\u0027Thalas-Ranger)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_12856"
+      "Value": "W"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_12214"
+      "Value": "The freezing arrows, imbued with arcane magic, slow the target\u0027s movement by 50% and attack speed by 40% for 3 seconds."
     },
     {
       "Id": 1802007905,
       "Type": 3,
-      "Value": "TRIGSTR_12858"
+      "Value": "W"
     }
   ]
 }

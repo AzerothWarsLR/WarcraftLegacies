@@ -8,68 +8,68 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_6722"
+      "Value": "(nazgrim)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_6993"
+      "Value": "R"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_6724"
+      "Value": "Axestorm"
     },
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_7026"
+      "Value": "R"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_6726"
+      "Value": "Learn Axestorm - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_6727"
+      "Value": "Causes an Axestorm of destructive force around the Nazgrimr, rendering him immune to magic and dealing damage to nearby enemy land units for 10 seconds. |n|cffffcc00Level 1|r - 100 damage. |n|cffffcc00Level 2|r - 125 damage. |n|cffffcc00Level 3|r - 150 damage."
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_6728"
+      "Value": "Axestorm - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_6729"
+      "Value": "Axestorm - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_6730"
+      "Value": "Axestorm - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_6731"
+      "Value": "Causes an Axestorm of destructive force around the Nazgrimr, rendering him immune to magic and dealing damage to nearby enemy land units for 10 seconds. |n|cffffcc00Level 1|r - 100 damage."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_6732"
+      "Value": "Causes an Axestorm of destructive force around the Nazgrimr, rendering him immune to magic and dealing damage to nearby enemy land units for 10 seconds. |n|cffffcc00Level 2|r - 125 damage."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_6733"
+      "Value": "Causes an Axestorm of destructive force around the Nazgrimr, rendering him immune to magic and dealing damage to nearby enemy land units for 10 seconds. |n|cffffcc00Level 3|r - 150 damage."
     }
   ]
 }

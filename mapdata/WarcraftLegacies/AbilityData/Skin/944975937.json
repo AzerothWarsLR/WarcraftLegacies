@@ -16,18 +16,18 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_20271"
+      "Value": "(defender green bird missile)"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_16258"
+      "Value": "This tower fires up to 9 additional projectiles that deal 10 damage each to nearby enemies"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_1966"
+      "Value": "Multishot"
     },
     {
       "Id": 1953653089,
@@ -43,7 +43,7 @@
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_3248"
+      "Value": "Multishot"
     }
   ]
 }

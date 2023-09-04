@@ -15,7 +15,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_647"
+      "Value": "W"
     },
     {
       "Id": 1633907573,
@@ -35,12 +35,12 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_14991"
+      "Value": "Civilian farmstead supplying food for the Kingdom.|nProvides 8 food, which increases the maximum number of units that can be trained."
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_16333"
+      "Value": " (Lordaeron Farm)"
     }
   ]
 }

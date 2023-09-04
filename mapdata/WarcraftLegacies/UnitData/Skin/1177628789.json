@@ -20,7 +20,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_1394"
+      "Value": "(C\u0027thun Building)"
     },
     {
       "Id": 1953523061,
@@ -38,17 +38,17 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_1050"
+      "Value": "X"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_1396"
+      "Value": "Altar of the Old Ones"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_1250"
+      "Value": "Summon - Altar of the Old Ones"
     },
     {
       "Id": 1935832437,
@@ -58,7 +58,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_1398"
+      "Value": "Revives slain Heroes."
     },
     {
       "Id": 1818520949,

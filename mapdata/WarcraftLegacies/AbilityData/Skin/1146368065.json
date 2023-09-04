@@ -12,18 +12,18 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_7822"
+      "Value": "(Dalaran - Jaina)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_9909"
+      "Value": "D"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_7824"
+      "Value": "Makes a unit invisible. If the unit attacks, uses an ability or casts a spell, it will become visible."
     }
   ]
 }

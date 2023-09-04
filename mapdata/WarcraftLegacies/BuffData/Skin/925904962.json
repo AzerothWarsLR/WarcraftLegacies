@@ -13,12 +13,12 @@
     {
       "Id": 1885959270,
       "Type": 3,
-      "Value": "TRIGSTR_13777"
+      "Value": "Rally"
     },
     {
       "Id": 1700951398,
       "Type": 3,
-      "Value": "TRIGSTR_13778"
+      "Value": "This unit has Rally; it moves more quickly than it normally does."
     }
   ]
 }

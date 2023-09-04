@@ -17,7 +17,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_16353"
+      "Value": "(Tolvir Magic)"
     },
     {
       "Id": 1818520949,
@@ -27,12 +27,12 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_19273"
+      "Value": "Royal Temple"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_20114"
+      "Value": "Build Royal Temple"
     },
     {
       "Id": 1935832437,
@@ -42,7 +42,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_16407"
+      "Value": "Primary production building for Spellcasters.|n|r|cfff5962dTrains:|R Bloodkin, Deepseer|n|cfff5962dResearches:|R Bloodkin Adept Training, Deepseer Adept Training"
     },
     {
       "Id": 1684960117,

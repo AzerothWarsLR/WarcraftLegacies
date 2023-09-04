@@ -22,17 +22,17 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_9954"
+      "Value": "(brann)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_10640"
+      "Value": "Q"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_9956"
+      "Value": "Move your Arse"
     },
     {
       "Id": 1918988897,
@@ -42,47 +42,47 @@
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_10650"
+      "Value": "Q"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_9958"
+      "Value": "Move your Arse - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_9959"
+      "Value": "Increases nearby units movement speed by 50% for 7/8/9/10 seconds."
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_9960"
+      "Value": "Move your Arse"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_9961"
+      "Value": "Increases nearby units movement speed by 50% for 7 seconds."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_9962"
+      "Value": "Increases nearby units movement speed by 50% for 8 seconds."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_9963"
+      "Value": "Increases nearby units movement speed by 50% for 9 seconds."
     },
     {
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_9964"
+      "Value": "Increases nearby units movement speed by 50% for 10 seconds."
     }
   ]
 }

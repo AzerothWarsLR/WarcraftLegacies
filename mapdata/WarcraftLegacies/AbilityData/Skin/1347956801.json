@@ -21,29 +21,29 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_7233"
+      "Value": "(Warsong-Nazgrel-Kor\u0027Kron)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_9253"
+      "Value": "E"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_7235"
+      "Value": "Bloodcraze"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_7236"
+      "Value": "Bloodcraze"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_7237"
+      "Value": "Become enraged, causing attacks to steal 60% life and increasing damage by 10.|nLasts 30 seconds."
     }
   ]
 }

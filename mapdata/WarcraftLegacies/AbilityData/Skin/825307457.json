@@ -13,22 +13,22 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_6704"
+      "Value": "(light blue priestess of the moon)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_8255"
+      "Value": "Q"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_6706"
+      "Value": "Light of the Goddess"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_6707"
+      "Value": "|cff7777aaHoly Light|r |cff7777aa[E]|r"
     },
     {
       "Id": 1952543841,
@@ -39,13 +39,13 @@
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_6708"
+      "Value": "Light of the Goddess"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_6709"
+      "Value": "A celestial light that can heal a friendly living unit for \u003CA111,DataA1\u003E or deal half damage to an enemy Undead unit."
     }
   ]
 }

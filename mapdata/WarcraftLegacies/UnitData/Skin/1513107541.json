@@ -18,7 +18,7 @@
     {
       "Id": 1953980789,
       "Type": 3,
-      "Value": "TRIGSTR_3698"
+      "Value": "Revive"
     },
     {
       "Id": 1667462261,
@@ -36,7 +36,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_3699"
+      "Value": "Obsidian Destroyer"
     },
     {
       "Id": 1970434165,
@@ -45,7 +45,7 @@
     {
       "Id": 1869770869,
       "Type": 3,
-      "Value": "TRIGSTR_3700"
+      "Value": "Moam"
     },
     {
       "Id": 1919705973,
@@ -54,7 +54,7 @@
     {
       "Id": 1919972469,
       "Type": 3,
-      "Value": "TRIGSTR_3701"
+      "Value": "Revive"
     },
     {
       "Id": 1769173877,
@@ -79,7 +79,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_3064"
+      "Value": "W"
     },
     {
       "Id": 2037408373,
@@ -92,7 +92,7 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_12647"
+      "Value": "Summon Moam"
     }
   ]
 }

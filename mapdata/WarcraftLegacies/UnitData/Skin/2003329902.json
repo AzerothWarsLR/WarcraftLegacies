@@ -16,12 +16,12 @@
     {
       "Id": 1953850229,
       "Type": 3,
-      "Value": "TRIGSTR_1855"
+      "Value": "- Firebolt,- Firebolt|n- Devour Magic,- Firebolt|n- Devour Magic|n- Unholy Armor"
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_852"
+      "Value": "(Fel Horde)"
     },
     {
       "Id": 1633907573,
@@ -31,17 +31,17 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_12289"
+      "Value": "Fel Warlock"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_16157"
+      "Value": "Train Fel Warlock"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_1856"
+      "Value": "Vile warlock of the various Outland clans.|n|cfff5962dAbilities:|R Firebolt|n|cfff5962dCan Learn:|R Devour Magic, Unholy Armor |n|n|cffffcc00Attacks land and air units.|r"
     }
   ]
 }

@@ -26,7 +26,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_1818"
+      "Value": "(C\u0027thun Elites)"
     },
     {
       "Id": 1685218677,
@@ -41,7 +41,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_1659"
+      "Value": "W"
     },
     {
       "Id": 2054188149,
@@ -61,7 +61,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_1820"
+      "Value": "Silithid Colossus"
     },
     {
       "Id": 1668510581,
@@ -96,12 +96,12 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_1821"
+      "Value": "Train [|cffffcc00W|r] - Silithid Colossus"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_1822"
+      "Value": "An incredibly powerful warrior. Can use Impale, Locus Swarm, Wind Walk and Bloodbath. |n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land units.|r"
     },
     {
       "Id": 1684960117,

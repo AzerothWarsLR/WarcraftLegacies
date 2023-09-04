@@ -9,17 +9,17 @@
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_18968"
+      "Value": "Tsunami"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_18969"
+      "Value": "Tsunami"
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_18970"
+      "Value": " (Storm Terror, Demolish)"
     },
     {
       "Id": 1953653089,
@@ -35,12 +35,12 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_18971"
+      "Value": "Causes attacks to do \u003CA0XJ,DataB1\u003E times normal damage to buildings."
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_18115"
+      "Value": "E"
     }
   ]
 }

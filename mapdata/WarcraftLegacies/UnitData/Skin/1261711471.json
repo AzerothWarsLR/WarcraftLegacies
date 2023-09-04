@@ -17,7 +17,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_16414"
+      "Value": "(Twilight)"
     },
     {
       "Id": 1818520949,
@@ -31,7 +31,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_4285"
+      "Value": "E"
     },
     {
       "Id": 1831952757,
@@ -41,7 +41,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_7025"
+      "Value": "Skull Catapult"
     },
     {
       "Id": 1668510581,
@@ -51,12 +51,12 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_7027"
+      "Value": "Train Skull Catapult"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_14813"
+      "Value": "Barbaric boulder tossing siege weaponry.|n|n|cff99b4d1Can only build 6. |r|n|cffffcc00Attacks land units and trees.|r"
     }
   ]
 }

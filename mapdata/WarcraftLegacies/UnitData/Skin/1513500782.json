@@ -13,7 +13,7 @@
     {
       "Id": 1936024681,
       "Type": 3,
-      "Value": "TRIGSTR_2460"
+      "Value": "Teleports units to the other Flight Path"
     },
     {
       "Id": 1818520949,
@@ -28,7 +28,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_2480"
+      "Value": "Flight Path"
     },
     {
       "Id": 1935832437,

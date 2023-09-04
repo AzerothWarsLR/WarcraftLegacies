@@ -8,43 +8,43 @@
       "Level": 1,
       "Id": 1718840935,
       "Type": 3,
-      "Value": "TRIGSTR_465"
+      "Value": "(Frostwolf)"
     },
     {
       "Level": 1,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_14642"
+      "Value": "X"
     },
     {
       "Level": 2,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_14643"
+      "Value": "X"
     },
     {
       "Level": 1,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_13859"
+      "Value": "Research Witch Doctor Adept Training"
     },
     {
       "Level": 2,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_13860"
+      "Value": "Research Witch Doctor Master Training"
     },
     {
       "Level": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "TRIGSTR_13861"
+      "Value": "Increases Witch Doctors\u0027 mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Stasis Trap."
     },
     {
       "Level": 2,
       "Id": 828536167,
       "Type": 3,
-      "Value": "TRIGSTR_13862"
+      "Value": "Increases Witch Doctors\u0027 mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Healing Ward."
     }
   ]
 }

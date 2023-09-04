@@ -7,17 +7,17 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_266"
+      "Value": "Z"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_901"
+      "Value": "Improved Boulder Tower"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_902"
+      "Value": "Upgrade to Improved Boulder Tower"
     },
     {
       "Id": 1935832437,
@@ -27,7 +27,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_903"
+      "Value": "Launch even larger boulders.|n|n|cffffcc00Attacks land units.|r"
     }
   ]
 }

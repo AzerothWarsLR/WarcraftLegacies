@@ -17,29 +17,29 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_7781"
+      "Value": "(Green - Blood Mage) (Ember Cleric)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_12190"
+      "Value": "E"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_10823"
+      "Value": "Flame Shield"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_10824"
+      "Value": "Flame Shield"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_10825"
+      "Value": "Forms a shield of flames around a target unit, dealing 20 damage per second to units around it. |nLasts 20 seconds. Lasts 10 seconds on heroes."
     }
   ]
 }

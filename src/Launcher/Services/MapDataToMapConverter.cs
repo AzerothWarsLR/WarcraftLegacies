@@ -97,8 +97,7 @@ namespace Launcher.Services
         DoodadSkinObjectData = DeserializeDoodadDataFromDirectory(Path.Combine(mapDataRootDirectory, DoodadDataDirectoryPath, SkinDataDirectorySubPath)),
         ItemSkinObjectData = DeserializeItemDataFromDirectory(Path.Combine(mapDataRootDirectory, ItemDataDirectoryPath, SkinDataDirectorySubPath)),
         UnitSkinObjectData = DeserializeUnitDataFromDirectory(Path.Combine(mapDataRootDirectory, UnitDataDirectoryPath, SkinDataDirectorySubPath)),
-        UpgradeSkinObjectData = DeserializeUpgradeDataFromDirectory(Path.Combine(mapDataRootDirectory, UpgradeDataDirectoryPath, SkinDataDirectorySubPath)),
-        Script = File.ReadAllText(Path.Combine(mapDataRootDirectory, ScriptPath))
+        UpgradeSkinObjectData = DeserializeUpgradeDataFromDirectory(Path.Combine(mapDataRootDirectory, UpgradeDataDirectoryPath, SkinDataDirectorySubPath))
       };
       return map;
     }
@@ -375,6 +374,12 @@ namespace Launcher.Services
         });
       }
 
+      additionalFiles.Add(new PathData()
+      {
+        AbsolutePath = Path.Combine(mapDataRootDirectory, GameInterfacePath),
+        RelativePath = GameInterfacePath
+      });
+
       return additionalFiles;
     }
     
@@ -401,6 +406,12 @@ namespace Launcher.Services
           SearchPattern = filePath
         });
       }
+
+      fileDirectories.Add(new DirectoryEnumerationOptions
+      {
+        Path = mapDataRootDirectory,
+        SearchPattern = GameInterfacePath
+      });
       
       return fileDirectories;
     }

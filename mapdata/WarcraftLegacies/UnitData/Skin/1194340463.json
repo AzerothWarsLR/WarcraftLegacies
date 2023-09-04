@@ -17,7 +17,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_1234"
+      "Value": "(Warsong)"
     },
     {
       "Id": 1818520949,
@@ -27,7 +27,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_1693"
+      "Value": "E"
     },
     {
       "Id": 1633907573,
@@ -37,17 +37,17 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_1759"
+      "Value": "Blademaster"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_1760"
+      "Value": "Train Blademaster"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_12390"
+      "Value": "Elite warrior trained according to the teachings of the Burning Blade clan.|n|cfff5962dAbilities:|R Wind Walk, Mirror Image, Critical Strike, Bladestorm|n|cfff5962dCan Learn:|R Self-Bloodlust|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land units.|r"
     },
     {
       "Id": 1684960117,

@@ -19,31 +19,31 @@
       "Level": 1,
       "Id": 1718840935,
       "Type": 3,
-      "Value": "TRIGSTR_14303"
+      "Value": "(Warsong-Quest)"
     },
     {
       "Level": 1,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_21048"
+      "Value": "V"
     },
     {
       "Level": 1,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "TRIGSTR_14722"
+      "Value": "Horde War Machine"
     },
     {
       "Level": 1,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_14723"
+      "Value": "Research Horde War Machine"
     },
     {
       "Level": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "TRIGSTR_14724"
+      "Value": "The massive amounts of Lumber aquired by the Warsong clan is funnelled into the Horde war effort.|n|n|cfff5962dUnlocks:|R 1 level of attack and defence upgrades and researches Reinforced Defences and Spiked Barricade"
     }
   ]
 }

@@ -19,103 +19,103 @@
       "Level": 1,
       "Id": 1718840935,
       "Type": 3,
-      "Value": "TRIGSTR_14974"
+      "Value": "(Shared)"
     },
     {
       "Level": 1,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_21022"
+      "Value": "D"
     },
     {
       "Level": 1,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "TRIGSTR_15498"
+      "Value": "Power Infusion 1"
     },
     {
       "Level": 1,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_15500"
+      "Value": "Research Power Infusion 1"
     },
     {
       "Level": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "TRIGSTR_14979"
+      "Value": "Improves caster units by increasing their hit points by 100 and armor by 2."
     },
     {
       "Level": 2,
       "Id": 828536167,
       "Type": 3,
-      "Value": "TRIGSTR_19438"
+      "Value": "Improves caster units by increasing their hit points by a further 100 and armor by 2."
     },
     {
       "Level": 3,
       "Id": 828536167,
       "Type": 3,
-      "Value": "TRIGSTR_19447"
+      "Value": "Improves caster units by increasing their hit points by a further 100 and armor by 2."
     },
     {
       "Level": 4,
       "Id": 828536167,
       "Type": 3,
-      "Value": "TRIGSTR_19448"
+      "Value": "Improves caster units by increasing their hit points by a further 100 and armor by 2."
     },
     {
       "Level": 2,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_21170"
+      "Value": "D"
     },
     {
       "Level": 3,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_21171"
+      "Value": "D"
     },
     {
       "Level": 4,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_21187"
+      "Value": "D"
     },
     {
       "Level": 2,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "TRIGSTR_15502"
+      "Value": "Power Infusion 2"
     },
     {
       "Level": 3,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "TRIGSTR_15636"
+      "Value": "Power Infusion 3"
     },
     {
       "Level": 4,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "TRIGSTR_15642"
+      "Value": "Power Infusion 4"
     },
     {
       "Level": 2,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_15651"
+      "Value": "Research Power Infusion 2"
     },
     {
       "Level": 3,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_15653"
+      "Value": "Research Power Infusion 3"
     },
     {
       "Level": 4,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_15654"
+      "Value": "Research Power Infusion 4"
     },
     {
       "Level": 2,
@@ -139,19 +139,19 @@
       "Level": 2,
       "Id": 1718840935,
       "Type": 3,
-      "Value": "TRIGSTR_15422"
+      "Value": "(Shared)"
     },
     {
       "Level": 3,
       "Id": 1718840935,
       "Type": 3,
-      "Value": "TRIGSTR_15423"
+      "Value": "(Shared)"
     },
     {
       "Level": 4,
       "Id": 1718840935,
       "Type": 3,
-      "Value": "TRIGSTR_15424"
+      "Value": "(Shared)"
     }
   ]
 }

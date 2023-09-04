@@ -8,24 +8,24 @@
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_9441"
+      "Value": "Q"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_8427"
+      "Value": "Kaboom! (|cffffcc00Q|r)"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_8428"
+      "Value": "Deals 300 damage in a 300 radius. Deals 3 times more damage against buildings. Can destroy trees."
     },
     {
       "Id": 1802007905,
       "Type": 3,
-      "Value": "TRIGSTR_9443"
+      "Value": "Q"
     }
   ]
 }

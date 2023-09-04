@@ -15,25 +15,25 @@
       "Level": 1,
       "Id": 1718840935,
       "Type": 3,
-      "Value": "TRIGSTR_14299"
+      "Value": "(Warsong)"
     },
     {
       "Level": 1,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "TRIGSTR_14300"
+      "Value": "Arms Race"
     },
     {
       "Level": 1,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_14301"
+      "Value": "Research Arms Race"
     },
     {
       "Level": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "TRIGSTR_14302"
+      "Value": "Allows Goblin Shredders to use Emergency Repairs, Pocket Factory, and Saw Bombardment."
     }
   ]
 }

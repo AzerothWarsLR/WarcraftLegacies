@@ -8,12 +8,12 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_10062"
+      "Value": "(Damage System)"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_10063"
+      "Value": "Life Gain"
     }
   ]
 }

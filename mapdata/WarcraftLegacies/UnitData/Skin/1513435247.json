@@ -8,17 +8,17 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19292"
+      "Value": "(Gnoll)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_5773"
+      "Value": "E"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_19293"
+      "Value": "Elementalist connected with the spirits of Azeroth.|n|cfff5962dAbilities:|R Purge|n|cfff5962dCan Learn:|R Lightning Shield, Bloodlust|n|n|cffffcc00Attacks land and air units.|R\r\n"
     },
     {
       "Id": 1953850229,
@@ -32,12 +32,12 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_19294"
+      "Value": "Gnoll Warden"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_19295"
+      "Value": "Train Gnoll Warden"
     },
     {
       "Id": 1868786037,

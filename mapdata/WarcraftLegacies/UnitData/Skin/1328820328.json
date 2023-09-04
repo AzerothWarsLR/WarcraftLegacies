@@ -12,7 +12,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_2644"
+      "Value": "(Kul\u0027tiras)"
     },
     {
       "Id": 1818520949,
@@ -22,7 +22,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_2456"
+      "Value": "E"
     },
     {
       "Id": 1633907573,
@@ -32,17 +32,17 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_3020"
+      "Value": "Bomber"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_3021"
+      "Value": "Train Bomber"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_2564"
+      "Value": "Kul\u0027tiras weapon of war designed to scout enemy bases and provide aerial support to ground forces.|n|cfff5962dAbilities:|R True Sight|n|cfff5962dCan learn:|R Cluster Rockets|n|n|cff99b4d1Can only build 12.|r|n|cffffcc00Attacks land units.|r"
     }
   ]
 }

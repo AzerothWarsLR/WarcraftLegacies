@@ -8,12 +8,12 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_17251"
+      "Value": "(yogg)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_9765"
+      "Value": "Q"
     },
     {
       "Id": 1952542049,
@@ -23,13 +23,13 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_8717"
+      "Value": "Rune of Wrath"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_8718"
+      "Value": "Rune of Wrath"
     }
   ]
 }

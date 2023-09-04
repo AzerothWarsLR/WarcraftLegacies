@@ -17,7 +17,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19760"
+      "Value": " (Stormwind Tower)"
     },
     {
       "Id": 1818520949,
@@ -27,7 +27,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_2075"
+      "Value": "Z"
     },
     {
       "Id": 1633907573,
@@ -37,12 +37,12 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_2763"
+      "Value": "Improved Arcane Tower"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_2764"
+      "Value": "Upgrade to (|cffffcc00Z|r) Improved Arcane Tower"
     },
     {
       "Id": 1935832437,
@@ -52,7 +52,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_17637"
+      "Value": "Mage filled defense tower. |n|cfff5962dAbilities:|R Magic Sentry, Feedback, Reveal |n|n|cffffcc00Attacks land and air units.|r"
     }
   ]
 }
