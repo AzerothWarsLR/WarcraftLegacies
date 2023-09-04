@@ -14,7 +14,7 @@ namespace Launcher.DTOMappers
     {
       _triggerStrings = triggerStrings;
     }
-    
+
     public MapInfoDto MapToDto(MapInfo mapInfo)
     {
       var dto = new MapInfoDto
@@ -23,10 +23,12 @@ namespace Launcher.DTOMappers
         MapVersion = mapInfo.MapVersion,
         EditorVersion = mapInfo.EditorVersion,
         GameVersion = mapInfo.GameVersion,
-        MapName = _triggerStrings[mapInfo.MapName],
-        MapAuthor = _triggerStrings[mapInfo.MapAuthor],
-        MapDescription = _triggerStrings[mapInfo.MapDescription],
-        RecommendedPlayers = _triggerStrings[mapInfo.RecommendedPlayers],
+        MapName = !string.IsNullOrEmpty(mapInfo.MapName) ? _triggerStrings[mapInfo.MapName] : "",
+        MapAuthor = !string.IsNullOrEmpty(mapInfo.MapAuthor) ? _triggerStrings[mapInfo.MapAuthor] : "",
+        MapDescription = !string.IsNullOrEmpty(mapInfo.MapDescription) ? _triggerStrings[mapInfo.MapDescription] : "",
+        RecommendedPlayers = !string.IsNullOrEmpty(mapInfo.RecommendedPlayers)
+          ? _triggerStrings[mapInfo.RecommendedPlayers]
+          : "",
         Unk1 = mapInfo.Unk1,
         Unk2 = mapInfo.Unk2,
         Unk3 = mapInfo.Unk3,
@@ -42,16 +44,30 @@ namespace Launcher.DTOMappers
         Tileset = mapInfo.Tileset,
         CampaignBackgroundNumber = mapInfo.CampaignBackgroundNumber,
         LoadingScreenBackgroundNumber = mapInfo.LoadingScreenBackgroundNumber,
-        LoadingScreenPath = _triggerStrings[mapInfo.LoadingScreenPath],
-        LoadingScreenText = _triggerStrings[mapInfo.LoadingScreenText],
-        LoadingScreenTitle = _triggerStrings[mapInfo.LoadingScreenTitle],
-        LoadingScreenSubtitle = _triggerStrings[mapInfo.LoadingScreenSubtitle],
+        LoadingScreenPath = !string.IsNullOrEmpty(mapInfo.LoadingScreenPath)
+          ? _triggerStrings[mapInfo.LoadingScreenPath]
+          : "",
+        LoadingScreenText = !string.IsNullOrEmpty(mapInfo.LoadingScreenText)
+          ? _triggerStrings[mapInfo.LoadingScreenText]
+          : "",
+        LoadingScreenTitle = !string.IsNullOrEmpty(mapInfo.LoadingScreenTitle)
+          ? _triggerStrings[mapInfo.LoadingScreenTitle]
+          : "",
+        LoadingScreenSubtitle = !string.IsNullOrEmpty(mapInfo.LoadingScreenSubtitle)
+          ? _triggerStrings[mapInfo.LoadingScreenSubtitle]
+          : "",
         LoadingScreenNumber = mapInfo.LoadingScreenNumber,
         GameDataSet = mapInfo.GameDataSet,
         PrologueScreenPath = mapInfo.PrologueScreenPath,
-        PrologueScreenText = _triggerStrings[mapInfo.PrologueScreenText],
-        PrologueScreenTitle = _triggerStrings[mapInfo.PrologueScreenTitle],
-        PrologueScreenSubtitle = _triggerStrings[mapInfo.PrologueScreenSubtitle],
+        PrologueScreenText = !string.IsNullOrEmpty(mapInfo.PrologueScreenText)
+          ? _triggerStrings[mapInfo.PrologueScreenText]
+          : "",
+        PrologueScreenTitle = !string.IsNullOrEmpty(mapInfo.PrologueScreenTitle)
+          ? _triggerStrings[mapInfo.PrologueScreenTitle]
+          : "",
+        PrologueScreenSubtitle = !string.IsNullOrEmpty(mapInfo.PrologueScreenSubtitle)
+          ? _triggerStrings[mapInfo.PrologueScreenSubtitle]
+          : "",
         FogStyle = mapInfo.FogStyle,
         FogStartZ = mapInfo.FogStartZ,
         FogEndZ = mapInfo.FogEndZ,
@@ -103,7 +119,7 @@ namespace Launcher.DTOMappers
       };
       return dto;
     }
-    
+
     private ForceDataDto MapForceDataToDto(ForceData forceData)
     {
       var dto = new ForceDataDto
@@ -114,7 +130,7 @@ namespace Launcher.DTOMappers
       };
       return dto;
     }
-    
+
     private static UpgradeDataDto MapUpgradeDataToDto(UpgradeData upgradeData)
     {
       var dto = new UpgradeDataDto
@@ -126,7 +142,7 @@ namespace Launcher.DTOMappers
       };
       return dto;
     }
-    
+
     private static TechDataDto MapTechDataToDto(TechData techData)
     {
       var dto = new TechDataDto
@@ -136,7 +152,7 @@ namespace Launcher.DTOMappers
       };
       return dto;
     }
-    
+
     private static Vector2Dto Vector2ToDto(Vector2 vector2)
     {
       return new Vector2Dto
