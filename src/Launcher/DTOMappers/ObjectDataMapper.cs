@@ -180,7 +180,7 @@ namespace Launcher.DTOMappers
     private static SimpleObjectDataModification MapObjectDataModificationToDto(SimpleObjectDataModification objectDataModification,
       IReadOnlyDictionary<uint, string>? triggerStrings)
     {
-      var value = triggerStrings != null && TriggerStringParser.ValueIsTriggerString(objectDataModification)
+      var value = triggerStrings != null && ValueIsTriggerString(objectDataModification)
         ? triggerStrings[TriggerStringParser.ParseTriggerStringAsKey((objectDataModification.Value as string)!)]
         : objectDataModification.Value;
       
@@ -195,7 +195,7 @@ namespace Launcher.DTOMappers
     private static LevelObjectDataModification MapLevelObjectDataModificationToDto(LevelObjectDataModification objectDataModification,
       IReadOnlyDictionary<uint, string>? triggerStrings)
     {
-      var value = triggerStrings != null && TriggerStringParser.ValueIsTriggerString(objectDataModification)
+      var value = triggerStrings != null && ValueIsTriggerString(objectDataModification)
         ? triggerStrings[TriggerStringParser.ParseTriggerStringAsKey((objectDataModification.Value as string)!)]
         : objectDataModification.Value;
       
@@ -212,7 +212,7 @@ namespace Launcher.DTOMappers
     private static VariationObjectDataModification MapVariationObjectDataModificationToDto(VariationObjectDataModification objectDataModification,
       IReadOnlyDictionary<uint, string>? triggerStrings)
     {
-      var value = triggerStrings != null && TriggerStringParser.ValueIsTriggerString(objectDataModification)
+      var value = triggerStrings != null && ValueIsTriggerString(objectDataModification)
         ? triggerStrings[TriggerStringParser.ParseTriggerStringAsKey((objectDataModification.Value as string)!)]
         : objectDataModification.Value;
       
@@ -224,6 +224,14 @@ namespace Launcher.DTOMappers
         Variation = objectDataModification.Variation,
         Pointer = objectDataModification.Pointer
       };
+    }
+
+    private static bool ValueIsTriggerString(ObjectDataModification modification)
+    {
+      if (modification.Type != ObjectDataType.String)
+        return false;
+
+      return modification.Value is string asString && asString.StartsWith("TRIGSTR_");
     }
   }
 }
