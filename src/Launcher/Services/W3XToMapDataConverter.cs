@@ -46,21 +46,22 @@ namespace Launcher.Services
     public void Convert(string baseMapPath, string outputFolderPath)
     {
       var map = Map.Open(baseMapPath);
-      SerializeAndWriteMapData(map, outputFolderPath);
+      var triggerStrings = map.TriggerStrings.ToDictionary();
+      SerializeAndWriteMapData(map, triggerStrings, outputFolderPath);
       
       var importedFiles = map.ImportedFiles?.Files;
       if (importedFiles != null) 
         CopyImportedFiles(baseMapPath, importedFiles, outputFolderPath);
       
       CopyUnserializableFiles(baseMapPath, outputFolderPath);
+      CopyGameInterface(baseMapPath, triggerStrings, outputFolderPath);
     }
 
-    private void SerializeAndWriteMapData(Map map, string outputFolderPath)
+    private void SerializeAndWriteMapData(Map map, TriggerStringDictionary triggerStrings, string outputFolderPath)
     {
       if (Directory.Exists(outputFolderPath))
         Directory.Delete(outputFolderPath, true);
-
-      var triggerStrings = map.TriggerStrings.ToDictionary();
+      
       var objectDataMapper = new ObjectDataMapper(triggerStrings);
       
       if (map.Doodads != null) 
@@ -128,6 +129,14 @@ namespace Launcher.Services
       foreach (var filePath in GetUnserializableFilePaths())
         if (File.Exists($"{baseMapPath}/{filePath}"))
           File.Copy($"{baseMapPath}/{filePath}", $@"{outputFolderPath}\{filePath}", true);
+    }
+    
+    private static void CopyGameInterface(string baseMapPath, TriggerStringDictionary triggerStringDictionary, string outputFolderPath)
+    {
+      if (!File.Exists($"{baseMapPath}/{GameInterfacePath}")) 
+        return;
+      var subtitutedText = triggerStringDictionary.SubstituteTriggerStringsInText(File.ReadAllText($"{baseMapPath}/{GameInterfacePath}"));
+      File.WriteAllText($@"{outputFolderPath}\{GameInterfacePath}", subtitutedText);
     }
     
     /// <summary>

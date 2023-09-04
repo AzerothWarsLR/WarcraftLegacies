@@ -1,5 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
+using System.Text;
+using System.Text.RegularExpressions;
 
 namespace Launcher.DTOMappers
 {
@@ -15,6 +18,21 @@ namespace Launcher.DTOMappers
 
     public bool ObjectIsTriggerStringKey(object obj) => obj is string asString && asString.StartsWith("TRIGSTR_");
 
+    /// <summary>
+    /// Finds all trigger string keys in the provided text and replaces them with their corresponding values.
+    /// </summary>
+    public string SubstituteTriggerStringsInText(string text)
+    {
+      using var stringReader = new StringReader(text);
+      var stringBuilder = new StringBuilder();
+      while (stringReader.ReadLine() is { } line)
+      {
+        var match = Regex.Match(line, "TRIGSTR_(.*)");
+        stringBuilder.Append(match.Success ? this[line] : line);
+      }
+      return stringBuilder.ToString();
+    }
+    
     /// <summary>
     /// Gets a value from a <see cref="Dictionary{TKey,TValue}"/> of TriggerString values indexed by a key.
     /// <para>If the provided key turns out to be invalid, this method will return the key back.</para> 

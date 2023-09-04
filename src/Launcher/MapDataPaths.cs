@@ -48,7 +48,6 @@ namespace Launcher
     {
       yield return MinimapPath;
       yield return GameplayConstantsPath;
-      yield return GameInterfacePath;
     }
   }
 }
