@@ -110,8 +110,6 @@ namespace Launcher.Services
         SerializeAndWriteUpgradeData(map.UpgradeObjectData, objectDataMapper, false, outputFolderPath, UpgradeDataDirectoryPath, CoreDataDirectorySubPath);
       if (map.UpgradeSkinObjectData != null) 
         SerializeAndWriteUpgradeData(map.UpgradeSkinObjectData, objectDataMapper, true, outputFolderPath, UpgradeDataDirectoryPath, SkinDataDirectorySubPath);
-
-      File.WriteAllText(Path.Combine(outputFolderPath, ScriptPath), map.Script);
     }
 
     private static void CopyImportedFiles(string baseMapPath, List<ImportedFile> files, string outputFolderPath)
