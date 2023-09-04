@@ -6,12 +6,12 @@ using Launcher.DataTransferObjects;
 using War3Net.Build.Object;
 using War3Net.Build.Script;
 
-namespace Launcher.Services
+namespace Launcher.DTOMappers
 {
   /// <summary>
   /// Responsible for converting ObjectData files to their Data Transfer Object equivalents.
   /// </summary>
-  public sealed class ObjectDataToDtoConverter
+  public sealed class ObjectDataToDtoMapper
   {
     /// <summary>
     /// Converts a <see cref="UnitObjectData"/> object to its <see cref="UnitObjectDataDto"/> equivalent.
@@ -19,23 +19,23 @@ namespace Launcher.Services
     /// <param name="unitObjectData">The object to convert.</param>
     /// <param name="triggerStrings">If supplied, unit data values that point to trigger string keys will instead be
     /// replaced with the value of those keys.</param>
-    public UnitObjectDataDto ConvertToDto(UnitObjectData unitObjectData, TriggerStrings? triggerStrings)
+    public UnitObjectDataDto MapToDto(UnitObjectData unitObjectData, TriggerStrings? triggerStrings)
     {
       var triggerStringsDictionary = ConvertTriggerStringsToDictionary(triggerStrings);
       var dto = new UnitObjectDataDto
       {
         FormatVersion = 0,
         BaseUnits = unitObjectData.BaseUnits
-          .Select(x => ConvertSimpleModificationToDto(x, triggerStringsDictionary))
+          .Select(x => MapSimpleModificationToDto(x, triggerStringsDictionary))
           .ToArray(),
         NewUnits = unitObjectData.NewUnits
-          .Select(x => ConvertSimpleModificationToDto(x, triggerStringsDictionary))
+          .Select(x => MapSimpleModificationToDto(x, triggerStringsDictionary))
           .ToArray()
       };
       return dto;
     }
     
-    private static SimpleObjectModification ConvertSimpleModificationToDto(
+    private static SimpleObjectModification MapSimpleModificationToDto(
       SimpleObjectModification simpleObjectModification, IReadOnlyDictionary<uint, string>? triggerStringDictionary)
     {
       var dto = new SimpleObjectModification
@@ -47,13 +47,13 @@ namespace Launcher.Services
           0
         },
         Modifications = simpleObjectModification.Modifications
-          .Select(x => ConvertObjectDataModificationToDto(x, triggerStringDictionary))
+          .Select(x => MapObjectDataModificationToDto(x, triggerStringDictionary))
           .ToList()
       };
       return dto;
     }
 
-    private static T ConvertObjectDataModificationToDto<T>(T simpleObjectDataModification,
+    private static T MapObjectDataModificationToDto<T>(T simpleObjectDataModification,
       IReadOnlyDictionary<uint, string>? triggerStrings) where T : ObjectDataModification, new()
     {
       var value = triggerStrings != null && ValueIsTriggerString(simpleObjectDataModification)

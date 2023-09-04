@@ -5,6 +5,7 @@ using System.Text.Json;
 using System.Text.Json.Serialization;
 using AutoMapper;
 using Launcher.DataTransferObjects;
+using Launcher.DTOMappers;
 using Launcher.JsonConverters;
 using War3Net.Build;
 using War3Net.Build.Audio;
@@ -198,7 +199,7 @@ namespace Launcher.Services
     
     private void SerializeAndWriteUnitData(UnitObjectData unitObjectData, TriggerStrings? triggerStrings, params string[] paths)
     {
-      var dto = new ObjectDataToDtoConverter().ConvertToDto(unitObjectData, triggerStrings);
+      var dto = new ObjectDataToDtoMapper().MapToDto(unitObjectData, triggerStrings);
       
       foreach (var unit in dto.BaseUnits) 
         SerializeAndWriteSimpleObjectModification(unit, Path.Combine(paths));
