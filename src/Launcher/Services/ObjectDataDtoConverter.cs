@@ -42,7 +42,10 @@ namespace Launcher.Services
       {
         OldId = simpleObjectModification.OldId,
         NewId = simpleObjectModification.NewId,
-        Unk = new List<int>(),
+        Unk = new List<int>
+        {
+          0
+        },
         Modifications = simpleObjectModification.Modifications
           .Select(x => ConvertSimpleObjectDataModificationToDto(x, triggerStringDictionary))
           .ToList()
