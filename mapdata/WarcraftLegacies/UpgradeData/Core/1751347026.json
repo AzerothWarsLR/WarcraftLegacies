@@ -32,17 +32,17 @@
     {
       "Id": 828794215,
       "Type": 3,
-      "Value": "TRIGSTR_13943"
+      "Value": "rtma"
     },
     {
       "Id": 845571431,
       "Type": 3,
-      "Value": "TRIGSTR_13944"
+      "Value": "rtma"
     },
     {
       "Id": 862348647,
       "Type": 3,
-      "Value": "TRIGSTR_13945"
+      "Value": "rspi"
     }
   ]
 }
