@@ -35,11 +35,8 @@ namespace Launcher.Services
       Converters = { new ColorJsonConverter() }
     };
 
-    public W3XToMapDataConverter(IMapper mapper)
-    {
-      _mapper = mapper;
-    }
-    
+    public W3XToMapDataConverter(IMapper mapper) => _mapper = mapper;
+
     /// <summary>
     /// Converts the provided Warcraft 3 map to JSON and saves it in the specified folder.
     /// </summary>
@@ -60,14 +57,14 @@ namespace Launcher.Services
       if (Directory.Exists(outputFolderPath))
         Directory.Delete(outputFolderPath, true);
 
-      var triggerStringsDictionary = map.TriggerStrings.ToDictionary();
+      var triggerStrings = map.TriggerStrings.ToDictionary();
       
       if (map.Doodads != null) 
         SerializeAndWriteDoodads(map.Doodads, Path.Combine(outputFolderPath, DoodadsDirectoryPath));
       if (map.Environment != null) 
         SerializeAndWrite<MapEnvironment, MapEnvironmentDto>(map.Environment, outputFolderPath, EnvironmentPath);
-      if (map.Info != null) 
-        SerializeAndWrite<MapInfo, MapInfoDto>(map.Info, outputFolderPath, InfoPath);
+      if (map.Info != null)
+        SerializeAndWriteMapInfo(map.Info, triggerStrings, Path.Combine(outputFolderPath, InfoPath));
       if (map.Regions != null)
         SerializeAndWriteRegions(map.Regions, Path.Combine(outputFolderPath, RegionsDirectoryPath));
       if (map.Units != null)
@@ -84,31 +81,31 @@ namespace Launcher.Services
       if (map.UnitObjectData != null)
         SerializeAndWriteUnitData(map.UnitObjectData, null, outputFolderPath, UnitDataDirectoryPath, CoreDataDirectorySubPath);
       if (map.UnitSkinObjectData != null)
-        SerializeAndWriteUnitData(map.UnitSkinObjectData, triggerStringsDictionary, outputFolderPath, UnitDataDirectoryPath, SkinDataDirectorySubPath);
+        SerializeAndWriteUnitData(map.UnitSkinObjectData, triggerStrings, outputFolderPath, UnitDataDirectoryPath, SkinDataDirectorySubPath);
       if (map.AbilityObjectData != null)
         SerializeAndWriteAbilityData(map.AbilityObjectData, null, outputFolderPath, AbilityDataDirectoryPath, CoreDataDirectorySubPath);
       if (map.AbilitySkinObjectData != null)
-        SerializeAndWriteAbilityData(map.AbilitySkinObjectData, triggerStringsDictionary, outputFolderPath, AbilityDataDirectoryPath, SkinDataDirectorySubPath);
+        SerializeAndWriteAbilityData(map.AbilitySkinObjectData, triggerStrings, outputFolderPath, AbilityDataDirectoryPath, SkinDataDirectorySubPath);
       if (map.ItemObjectData != null)
         SerializeAndWriteItemData(map.ItemObjectData, null, outputFolderPath, ItemDataDirectoryPath, CoreDataDirectorySubPath);
       if (map.ItemSkinObjectData != null)
-        SerializeAndWriteItemData(map.ItemSkinObjectData, triggerStringsDictionary, outputFolderPath, ItemDataDirectoryPath, SkinDataDirectorySubPath);
+        SerializeAndWriteItemData(map.ItemSkinObjectData, triggerStrings, outputFolderPath, ItemDataDirectoryPath, SkinDataDirectorySubPath);
       if (map.DestructableObjectData != null)
         SerializeAndWriteDestructableData(map.DestructableObjectData, null, outputFolderPath, DestructableDataDirectoryPath, CoreDataDirectorySubPath);
       if (map.DestructableSkinObjectData != null)
-        SerializeAndWriteDestructableData(map.DestructableSkinObjectData, triggerStringsDictionary, outputFolderPath, DestructableDataDirectoryPath, SkinDataDirectorySubPath);
+        SerializeAndWriteDestructableData(map.DestructableSkinObjectData, triggerStrings, outputFolderPath, DestructableDataDirectoryPath, SkinDataDirectorySubPath);
       if (map.DoodadObjectData != null)
         SerializeAndWriteDoodadData(map.DoodadObjectData, null, outputFolderPath, DoodadDataDirectoryPath, CoreDataDirectorySubPath);
       if (map.DoodadSkinObjectData != null)
-        SerializeAndWriteDoodadData(map.DoodadSkinObjectData, triggerStringsDictionary, outputFolderPath, DoodadDataDirectoryPath, SkinDataDirectorySubPath);
+        SerializeAndWriteDoodadData(map.DoodadSkinObjectData, triggerStrings, outputFolderPath, DoodadDataDirectoryPath, SkinDataDirectorySubPath);
       if (map.BuffObjectData != null)
         SerializeAndWriteBuffData(map.BuffObjectData, null, outputFolderPath, BuffDataDirectoryPath, CoreDataDirectorySubPath);
       if (map.BuffSkinObjectData != null)
-        SerializeAndWriteBuffData(map.BuffSkinObjectData, triggerStringsDictionary, outputFolderPath, BuffDataDirectoryPath, SkinDataDirectorySubPath);
+        SerializeAndWriteBuffData(map.BuffSkinObjectData, triggerStrings, outputFolderPath, BuffDataDirectoryPath, SkinDataDirectorySubPath);
       if (map.UpgradeObjectData != null)
         SerializeAndWriteUpgradeData(map.UpgradeObjectData, null, outputFolderPath, UpgradeDataDirectoryPath, CoreDataDirectorySubPath);
       if (map.UpgradeSkinObjectData != null) 
-        SerializeAndWriteUpgradeData(map.UpgradeSkinObjectData, triggerStringsDictionary, outputFolderPath, UpgradeDataDirectoryPath, SkinDataDirectorySubPath);
+        SerializeAndWriteUpgradeData(map.UpgradeSkinObjectData, triggerStrings, outputFolderPath, UpgradeDataDirectoryPath, SkinDataDirectorySubPath);
 
       File.WriteAllText(Path.Combine(outputFolderPath, ScriptPath), map.Script);
     }
@@ -145,6 +142,13 @@ namespace Launcher.Services
       File.WriteAllText(fullPath, asJson);
     }
 
+    private void SerializeAndWriteMapInfo(MapInfo mapInfo, Dictionary<uint, string> triggerStrings, string path)
+    {
+      var dto = new MapInfoMapper(triggerStrings).MapToDto(mapInfo);
+      var asJson = JsonSerializer.Serialize(dto, _jsonSerializerOptions);
+      File.WriteAllText(path, asJson);
+    }
+    
     private void SerializeAndWriteUnits(MapUnits units, string path)
     {
       if (!Directory.Exists(path))

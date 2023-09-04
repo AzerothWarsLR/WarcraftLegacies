@@ -1,12 +1,22 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
+using System.Numerics;
 using Launcher.DataTransferObjects;
+using War3Net.Build.Common;
 using War3Net.Build.Info;
 
 namespace Launcher.DTOMappers
 {
-  public static class MapInfoMapper
+  public sealed class MapInfoMapper
   {
-    public static MapInfoDto MapToDto(MapInfo mapInfo, Dictionary<uint, string> triggerStrings)
+    private readonly Dictionary<uint, string> triggerStrings;
+
+    public MapInfoMapper(Dictionary<uint, string> triggerStrings)
+    {
+      this.triggerStrings = triggerStrings;
+    }
+    
+    public MapInfoDto MapToDto(MapInfo mapInfo)
     {
       var dto = new MapInfoDto
       {
@@ -24,7 +34,7 @@ namespace Launcher.DTOMappers
         Unk4 = mapInfo.Unk4,
         Unk5 = mapInfo.Unk5,
         Unk6 = mapInfo.Unk6,
-        CameraBounds = mapInfo.CameraBounds,
+        CameraBounds = MapCameraBoundsToDto(mapInfo.CameraBounds),
         CameraBoundsComplements = mapInfo.CameraBoundsComplements,
         PlayableMapAreaWidth = mapInfo.PlayableMapAreaWidth,
         PlayableMapAreaHeight = mapInfo.PlayableMapAreaHeight,
@@ -55,15 +65,86 @@ namespace Launcher.DTOMappers
         ScriptLanguage = mapInfo.ScriptLanguage,
         SupportedModes = mapInfo.SupportedModes,
         GameDataVersion = mapInfo.GameDataVersion,
-        Players = mapInfo.Players,
-        Forces = mapInfo.Forces,
-        UpgradeData = mapInfo.UpgradeData,
-        TechData = mapInfo.TechData,
+        Players = mapInfo.Players.Select(MapPlayerDataToDto).ToList(),
+        Forces = mapInfo.Forces.Select(MapForceDataToDto).ToList(),
+        UpgradeData = mapInfo.UpgradeData.Select(MapUpgradeDataToDto).ToList(),
+        TechData = mapInfo.TechData.Select(MapTechDataToDto).ToList(),
         RandomUnitTables = mapInfo.RandomUnitTables,
         RandomItemTables = mapInfo.RandomItemTables
       };
 
       return dto;
+    }
+
+    private static QuadrilateralDto MapCameraBoundsToDto(Quadrilateral quadrilateral)
+    {
+      return new QuadrilateralDto
+      {
+        BottomLeft = Vector2ToDto(quadrilateral.BottomLeft),
+        TopRight = Vector2ToDto(quadrilateral.TopRight),
+        TopLeft = Vector2ToDto(quadrilateral.TopLeft),
+        BottomRight = Vector2ToDto(quadrilateral.BottomRight)
+      };
+    }
+
+    private PlayerDataDto MapPlayerDataToDto(PlayerData playerData)
+    {
+      var dto = new PlayerDataDto
+      {
+        Id = playerData.Id,
+        Controller = playerData.Controller,
+        Race = playerData.Race,
+        Flags = playerData.Flags,
+        Name = triggerStrings[TriggerStringParser.ParseTriggerStringAsKey(playerData.Name)],
+        StartPosition = Vector2ToDto(playerData.StartPosition),
+        AllyLowPriorityFlags = playerData.AllyLowPriorityFlags,
+        AllyHighPriorityFlags = playerData.AllyHighPriorityFlags,
+        EnemyLowPriorityFlags = playerData.EnemyLowPriorityFlags,
+        EnemyHighPriorityFlags = playerData.EnemyHighPriorityFlags
+      };
+      return dto;
+    }
+    
+    private ForceDataDto MapForceDataToDto(ForceData forceData)
+    {
+      var dto = new ForceDataDto
+      {
+        Flags = forceData.Flags,
+        Players = forceData.Players,
+        Name = triggerStrings[TriggerStringParser.ParseTriggerStringAsKey(forceData.Name)]
+      };
+      return dto;
+    }
+    
+    private static UpgradeDataDto MapUpgradeDataToDto(UpgradeData upgradeData)
+    {
+      var dto = new UpgradeDataDto
+      {
+        Players = upgradeData.Players,
+        Id = upgradeData.Id,
+        Level = upgradeData.Level,
+        Availability = upgradeData.Availability
+      };
+      return dto;
+    }
+    
+    private static TechDataDto MapTechDataToDto(TechData techData)
+    {
+      var dto = new TechDataDto
+      {
+        Players = techData.Players,
+        Id = techData.Id
+      };
+      return dto;
+    }
+    
+    private static Vector2Dto Vector2ToDto(Vector2 vector2)
+    {
+      return new Vector2Dto
+      {
+        X = vector2.X,
+        Y = vector2.Y
+      };
     }
   }
 }
