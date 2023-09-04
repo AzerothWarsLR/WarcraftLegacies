@@ -7,16 +7,16 @@
   "Modifications": [
     {
       "Id": 2020631157,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 2037408373,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_14620"
+      "Value": "(Creep - Gilneas Big)"
     },
     {
       "Id": 1818520949,
@@ -25,31 +25,31 @@
     },
     {
       "Id": 1735156597,
-      "Value": 200
+      "Value": ""
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_3665"
+      "Value": "W"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.5
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_15150"
+      "Value": "Gilneas City Building"
     },
     {
       "Id": 1919705973,
-      "Value": 200
+      "Value": ""
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_3806"
+      "Value": "Build [|cffffcc00W|r] - Farm"
     },
     {
       "Id": 1935832437,

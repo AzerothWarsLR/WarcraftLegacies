@@ -13,22 +13,22 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19192"
+      "Value": "(gnoll)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_5003"
+      "Value": "Q"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_1986"
+      "Value": "Dumb Gnoll Warriors.|n|cfff5962dAbilities:|R Charge, Bash|R|n|cfff5962d|n|cffffcc00Attacks land units.|r"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_19133"
+      "Value": "Gnoll Brawler"
     },
     {
       "Id": 1818520949,
@@ -43,7 +43,7 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_19158"
+      "Value": "Train Gnoll Brawler"
     },
     {
       "Id": 1684960117,

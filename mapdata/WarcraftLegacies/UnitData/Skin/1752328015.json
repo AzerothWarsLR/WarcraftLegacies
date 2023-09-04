@@ -7,42 +7,42 @@
     {
       "Id": 1953980789,
       "Type": 3,
-      "Value": "TRIGSTR_1233"
+      "Value": "Revive Hellscream"
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_802"
+      "Value": "(Warsong)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_1110"
+      "Value": "Q"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_1236"
+      "Value": "Chieftain of the Warsong Clan"
     },
     {
       "Id": 1919972469,
       "Type": 3,
-      "Value": "TRIGSTR_1237"
+      "Value": "Revive Hellscream"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_2884"
+      "Value": "Cunning Hero, incredible at killing key units and dealing damage.|n|cfff5962dAbilities:|r Wind Walk|n|cfff5962dCan learn:|R Bladestorm. Rampage, Battle Experience, Roar of Despair|n|n|cffffcc00Attacks land units.|R"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_17041"
+      "Value": "Summon Hellscream"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 1.05
+      "Value": ""
     }
   ]
 }

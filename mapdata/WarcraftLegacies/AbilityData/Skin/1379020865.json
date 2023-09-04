@@ -12,12 +12,12 @@
     },
     {
       "Id": 2020631137,
-      "Value": 3
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_12866"
+      "Value": "(dalaran)"
     },
     {
       "Id": 1936090465,
@@ -27,24 +27,26 @@
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_16595"
+      "Value": "R"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_12093"
+      "Value": "Mage Armor"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_12094"
+      "Value": "Mage Armor"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_12460"
+      "Value": "Increases a target friendly unit\u0027s armor by 7 points. |n|cffffcc00Lasts 45 seconds."
     },
     {
       "Id": 1918989665,
@@ -53,12 +55,12 @@
     },
     {
       "Id": 2019718497,
-      "Value": 3
+      "Value": ""
     },
     {
       "Id": 1802007905,
       "Type": 3,
-      "Value": "TRIGSTR_16643"
+      "Value": "R"
     }
   ]
 }

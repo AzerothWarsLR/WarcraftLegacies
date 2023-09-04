@@ -12,21 +12,21 @@
     },
     {
       "Id": 2020631137,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 2037408353,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_6805"
+      "Value": "(Azgalor) (Hidden) 3"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_6806"
+      "Value": "Brute Strength"
     },
     {
       "Id": 1918988897,
@@ -35,34 +35,36 @@
     },
     {
       "Id": 2020635233,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_9013"
+      "Value": "E"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_6808"
+      "Value": "[|cffffcc00E|r] Learn Brute Strength - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_6809"
+      "Value": "Azgalor strike with absolute force, gaining 60/100/140/180 bonus damage with every attack. "
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_6810"
+      "Value": "Brute Strength - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_6811"
+      "Value": "Azgalor strike with absolute force, gaining 60 bonus damage with every attack. "
     },
     {
       "Id": 1918989665,

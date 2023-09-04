@@ -8,39 +8,42 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_20451"
+      "Value": "(zandalar)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_16585"
+      "Value": "Q"
     },
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_17296"
+      "Value": "R"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_18004"
+      "Value": "Soul Voodoo"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_18005"
+      "Value": "Big Bad Voodoo - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_18006"
+      "Value": "Big Bad Voodoo - [|cffffcc00Level 3|r]"
     },
     {
       "Id": 2020631137,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1953653089,
@@ -50,13 +53,14 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_18007"
+      "Value": "Soul Voodoo"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_18018"
+      "Value": "Turns all friendly units invulnerable in an area around the Bone Seer. |nThe Boner Seer does not turn invulnerable. |nLasts 8 seconds."
     }
   ]
 }

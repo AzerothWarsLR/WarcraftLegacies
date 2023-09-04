@@ -12,17 +12,17 @@
     },
     {
       "Id": 2020631137,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_3798"
+      "Value": "(Boralus Keep, Auberdine)"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_9309"
+      "Value": "Naval Aura"
     },
     {
       "Id": 1918988897,
@@ -31,7 +31,7 @@
     },
     {
       "Id": 2020635233,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1952805473,
@@ -50,15 +50,17 @@
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_9310"
+      "Value": "Naval Aura."
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_7480"
+      "Value": "Enhances friendly ships within a radius of \u003CA0HN,Area1\u003E by increasing their movement speed by \u003CA0HN,DataA1,%\u003E and hit point regeneration per second by \u003CA0HN,DataB1\u003E."
     }
   ]
 }

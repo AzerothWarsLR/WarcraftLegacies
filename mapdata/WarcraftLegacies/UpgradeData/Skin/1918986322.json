@@ -6,207 +6,241 @@
   "Modifications": [
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1718840935,
       "Type": 3,
-      "Value": "TRIGSTR_14055"
+      "Value": "(Universal Upgrade)"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_4165"
+      "Value": "A"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_4182"
+      "Value": "A"
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_4231"
+      "Value": "A"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "TRIGSTR_14059"
+      "Value": "Copper Armor Plating"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "TRIGSTR_14060"
+      "Value": "Bronze Armor Plating"
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "TRIGSTR_14061"
+      "Value": "Iron Armor Plating"
     },
     {
       "Level": 4,
+      "Pointer": 4,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "TRIGSTR_14062"
+      "Value": "Steel Armor Plating"
     },
     {
       "Level": 5,
+      "Pointer": 5,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "TRIGSTR_14063"
+      "Value": "Mithril Armor Plating"
     },
     {
       "Level": 6,
+      "Pointer": 6,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "TRIGSTR_14064"
+      "Value": "Thorium Armor Plating"
     },
     {
       "Level": 7,
+      "Pointer": 7,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "TRIGSTR_14065"
+      "Value": "Elementium Armor Plating"
     },
     {
       "Level": 8,
+      "Pointer": 8,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "TRIGSTR_14066"
+      "Value": "Adamantium Armor Plating"
     },
     {
       "Level": 9,
+      "Pointer": 9,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "TRIGSTR_14067"
+      "Value": "Titanium Armor Plating"
     },
     {
       "Level": 10,
+      "Pointer": 10,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "TRIGSTR_14068"
+      "Value": "Pyrite Armor Plating"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_14069"
+      "Value": "Upgrade Copper Armor Plating"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_14070"
+      "Value": "Upgrade Bronze Armor Plating"
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_14071"
+      "Value": "Upgrade Iron Armor Plating"
     },
     {
       "Level": 4,
+      "Pointer": 4,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_14072"
+      "Value": "Upgrade Steel Armor Plating"
     },
     {
       "Level": 5,
+      "Pointer": 5,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_14073"
+      "Value": "Upgrade Mithril Armor Plating"
     },
     {
       "Level": 6,
+      "Pointer": 6,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_14074"
+      "Value": "Upgrade Thorium Armor Plating"
     },
     {
       "Level": 7,
+      "Pointer": 7,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_14075"
+      "Value": "Upgrade Elementium Armor Plating"
     },
     {
       "Level": 8,
+      "Pointer": 8,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_14076"
+      "Value": "Upgrade Adamantium Armor Plating"
     },
     {
       "Level": 9,
+      "Pointer": 9,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_14077"
+      "Value": "Upgrade Titanium Armor Plating"
     },
     {
       "Level": 10,
+      "Pointer": 10,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_14078"
+      "Value": "Upgrade Pyrite Armor Plating"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "TRIGSTR_14079"
+      "Value": "Increases the armor of all units."
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 828536167,
       "Type": 3,
-      "Value": "TRIGSTR_14080"
+      "Value": "Further increases the armor of all units."
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 828536167,
       "Type": 3,
-      "Value": "TRIGSTR_14081"
+      "Value": "Further increases the armor of all units."
     },
     {
       "Level": 4,
+      "Pointer": 4,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_6455"
+      "Value": "A"
     },
     {
       "Level": 5,
+      "Pointer": 5,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_6788"
+      "Value": "A"
     },
     {
       "Level": 6,
+      "Pointer": 6,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_7382"
+      "Value": "A"
     },
     {
       "Level": 7,
+      "Pointer": 7,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_7604"
+      "Value": "A"
     },
     {
       "Level": 8,
+      "Pointer": 8,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_7609"
+      "Value": "A"
     },
     {
       "Level": 9,
+      "Pointer": 9,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_9004"
+      "Value": "A"
     },
     {
       "Level": 10,
+      "Pointer": 10,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_9024"
+      "Value": "A"
     }
   ]
 }

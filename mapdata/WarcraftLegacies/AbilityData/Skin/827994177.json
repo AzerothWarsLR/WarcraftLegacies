@@ -17,7 +17,7 @@
     },
     {
       "Id": 2020631137,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1952539489,
@@ -27,17 +27,17 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_16302"
+      "Value": "(scarlet)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_8652"
+      "Value": "W"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_3748"
+      "Value": "Shout of the Crusader"
     },
     {
       "Id": 1918988897,
@@ -46,70 +46,78 @@
     },
     {
       "Id": 2020635233,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_8664"
+      "Value": "W"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_3822"
+      "Value": "Learn Shout of the Crusader - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_18040"
+      "Value": "Saiden shouts giving nearby friendly units a bonus to attack damage and armor. Lasts 14/18/22/26 seconds.|n|n|cffffcc00Level 1|r - 5 bonus damage, 3 bonus armor.|n|cffffcc00Level 2|r - 10 bonus damage, 6 bonus armor. |n|cffffcc00Level 3|r - 15 bonus damage, 9 bonus armor. |n|cffffcc00Level 4|r - 20 bonus damage, 12 bonus armor."
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_3890"
+      "Value": "Shout of the Crusader- [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_4037"
+      "Value": "Shout of the Crusader- [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_4038"
+      "Value": "Shout of the Crusader- [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
+      "Pointer": 4,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_5416"
+      "Value": "Shout of the Crusader- [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_18186"
+      "Value": "Saiden shouts giving nearby friendly units a bonus 5 point to attack damage and a 3 point bouns to defense. |nLasts 14 seconds."
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_18238"
+      "Value": "Saiden shouts giving nearby friendly units a bonus 10 point to attack damage and a 6 point bouns to defense. |nLasts 18 seconds."
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_18239"
+      "Value": "Saiden shouts giving nearby friendly units a bonus 15 point to attack damage and a 9 point bouns to defense. |nLasts 22 seconds."
     },
     {
       "Level": 4,
+      "Pointer": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_18240"
+      "Value": "Saiden shouts giving nearby friendly units a bonus 20 point to attack damage and a 12 point bouns to defense. |nLasts 26 seconds."
     }
   ]
 }

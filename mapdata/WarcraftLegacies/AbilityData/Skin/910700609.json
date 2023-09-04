@@ -7,38 +7,40 @@
   "Modifications": [
     {
       "Id": 2020631137,
-      "Value": 3
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_15298"
+      "Value": "(warsong - Gahz\u0027rilla DUMMY)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_12682"
+      "Value": "R"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_15299"
+      "Value": "Creates a shield of frost around a target friendly unit. The shield adds 8 armor and slows melee units that attack it for 5 seconds. |nLasts 60 seconds."
     },
     {
       "Id": 2019718497,
-      "Value": 3
+      "Value": ""
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_15300"
+      "Value": "Mass Ice Armor"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_15301"
+      "Value": "Mass Ice Armor"
     }
   ]
 }

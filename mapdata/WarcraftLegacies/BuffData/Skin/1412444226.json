@@ -13,12 +13,12 @@
     {
       "Id": 1885959270,
       "Type": 3,
-      "Value": "TRIGSTR_13729"
+      "Value": "Defilement"
     },
     {
       "Id": 1700951398,
       "Type": 3,
-      "Value": "TRIGSTR_13730"
+      "Value": "This unit has defilement casted on it; it has lowered defense and will take damage over time."
     },
     {
       "Id": 1952543846,

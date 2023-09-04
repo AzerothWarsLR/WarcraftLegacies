@@ -7,21 +7,25 @@
   "Modifications": [
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1935895905,
       "Value": 7
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 1935895905,
       "Value": 7
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 1935895905,
       "Value": 7
     },
     {
       "Level": 4,
+      "Pointer": 4,
       "Id": 1935895905,
       "Value": 7
     },
@@ -34,7 +38,7 @@
     },
     {
       "Level": 3,
-      "Pointer": 1,
+      "Pointer": 3,
       "Id": 828465742,
       "Type": 2,
       "Value": 15
@@ -47,13 +51,13 @@
     },
     {
       "Level": 3,
-      "Pointer": 2,
+      "Pointer": 3,
       "Id": 845242958,
       "Value": 3
     },
     {
       "Level": 4,
-      "Pointer": 2,
+      "Pointer": 4,
       "Id": 845242958,
       "Value": 4
     },
@@ -68,24 +72,28 @@
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1851880033,
       "Type": 2,
       "Value": 700
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 1969316430,
       "Type": 3,
       "Value": "ndr1"
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 1969316430,
       "Type": 3,
       "Value": "ndr2"
     },
     {
       "Level": 4,
+      "Pointer": 4,
       "Id": 1969316430,
       "Type": 3,
       "Value": "ndr2"

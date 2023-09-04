@@ -12,16 +12,16 @@
     },
     {
       "Id": 2020631157,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 2037408373,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19651"
+      "Value": " (Fel Horde Barracks)"
     },
     {
       "Id": 1818520949,
@@ -31,12 +31,12 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_1209"
+      "Value": "A"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.85
+      "Value": ""
     },
     {
       "Id": 1935832437,
@@ -46,7 +46,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_10323"
+      "Value": "Home to the warriors of the Fel Horde.|n|cfff5962dTrains:|R Fel Grunt, Crossbowman, Demolisher|n|cfff5962dResearches:|R Fel Infused Skeleton/Demonic Flux, Improved Self-Bloodlust, Burning Oil|n|cfff5962dCan learn:|R Spiked Barricades"
     }
   ]
 }

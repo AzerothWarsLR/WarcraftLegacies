@@ -17,12 +17,12 @@
     },
     {
       "Id": 2020631137,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_10369"
+      "Value": "(Grey - Grom)"
     },
     {
       "Id": 1936090465,
@@ -32,12 +32,12 @@
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_11273"
+      "Value": "Q"
     },
     {
       "Id": 1667329377,
       "Type": 2,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1952542049,
@@ -47,7 +47,7 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_10371"
+      "Value": "Colossal Slam"
     },
     {
       "Id": 1918988897,
@@ -56,22 +56,22 @@
     },
     {
       "Id": 2020635233,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_11275"
+      "Value": "Q"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_10373"
+      "Value": "Learn Colossal Slam (|cffffcc00Q|r) - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_10374"
+      "Value": "Grommash delivers a devastating blow with Gorehowl to a target and other around it. Deals damage over time and reduces the targetted enemies\u0027 armor and movement speed.|n|n|cffffcc00Level 1|r - 150 damage, reduces armor by 2 and move speed by 20%, lasts 10 seconds (3 second for Heroes).|n|cffffcc00Level 2|r - 185 damage, reduces armor by 3 and move speed by 30%, lasts 11 seconds (4 seconds for Heroes).|n|cffffcc00Level 3|r - 225 damage, reduces armor by 4 and move speed by 40%, lasts 12 seconds (5 seconds for Heroes).|n|cffffcc00Level 4|r - 300 damage, reduces armor by 5 and move speed by 50%, lasts 13 second (6 seconds for Heroes)."
     },
     {
       "Id": 1952543841,
@@ -85,51 +85,59 @@
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_10375"
+      "Value": "Colossal Slam (|cffffcc00Q|r) - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_10376"
+      "Value": "Colossal Slam (|cffffcc00Q|r) - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_10377"
+      "Value": "Colossal Slam (|cffffcc00Q|r) - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
+      "Pointer": 4,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_10378"
+      "Value": "Colossal Slam (|cffffcc00Q|r) - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_10379"
+      "Value": "Grommash delivers a devastating blow with Gorehowl to a target and other around it. Deals 150 damage and reduces the targetted enemies\u0027 armor by 2 and move speeds by 20%."
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_10380"
+      "Value": "Grommash delivers a devastating blow with Gorehowl to a target and other around it. Deals 185 damage and reduces the targetted enemies\u0027 armor by 3 and move speeds by 30%."
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_10381"
+      "Value": "Grommash delivers a devastating blow with Gorehowl to a target and other around it. Deals 225 damage and reduces the targetted enemies\u0027 armor by 4 and move speeds by 40%."
     },
     {
       "Level": 4,
+      "Pointer": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_10382"
+      "Value": "Grommash delivers a devastating blow with Gorehowl to a target and other around it. Deals 300 damage and reduces the targetted enemies\u0027 armor by 5 and move speeds by 50%."
     }
   ]
 }

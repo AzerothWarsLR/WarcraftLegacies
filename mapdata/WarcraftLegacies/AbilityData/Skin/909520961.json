@@ -13,7 +13,7 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_11611"
+      "Value": "(Grey - Rexxar)"
     },
     {
       "Id": 2037082209,
@@ -23,7 +23,7 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_11612"
+      "Value": "Toughness"
     },
     {
       "Id": 1918988897,
@@ -32,70 +32,78 @@
     },
     {
       "Id": 2020635233,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_12434"
+      "Value": "E"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_11614"
+      "Value": "Learn Toughness - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_16277"
+      "Value": "The hero has been toughened immensely by his experience, softening the blows of all physical attacks. Attacks cannot be reduced below \u003CA066,DataB1\u003E damage. |n|n|cffffcc00Level 1|r - Blocks \u003CA066,DataC1\u003E damage.|n|cffffcc00Level 2|r - Blocks \u003CA066,DataC2\u003E damage.|n|cffffcc00Level 3|r - Blocks \u003CA066,DataC3\u003E damage. |n|cffffcc00Level 4|r - Blocks \u003CA066,DataC4\u003E damage"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_11616"
+      "Value": "Toughness - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_11617"
+      "Value": "Toughness - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_11618"
+      "Value": "Toughness - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
+      "Pointer": 4,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_11619"
+      "Value": "Toughness - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_16289"
+      "Value": "Reduces the damage of all incoming attacks by \u003CA066,DataC1\u003E. Attacks cannot be reduced below \u003CA066,DataB1\u003E damage."
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_16377"
+      "Value": "Reduces the damage of all incoming attacks by \u003CA066,DataC2\u003E. Attacks cannot be reduced below \u003CA066,DataB2\u003E damage."
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_16519"
+      "Value": "Reduces the damage of all incoming attacks by \u003CA066,DataC3\u003E. Attacks cannot be reduced below \u003CA066,DataB3\u003E damage."
     },
     {
       "Level": 4,
+      "Pointer": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_16531"
+      "Value": "Reduces the damage of all incoming attacks by \u003CA066,DataC4\u003E. Attacks cannot be reduced below \u003CA066,DataB4\u003E damage."
     }
   ]
 }

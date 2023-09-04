@@ -23,12 +23,12 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_21158"
+      "Value": "(Blood Knight Squire)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_18513"
+      "Value": "W"
     },
     {
       "Id": 1952542049,
@@ -38,31 +38,35 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_16053"
+      "Value": "Flaming Sword"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_16764"
+      "Value": "Flaming Sword"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_20391"
+      "Value": "Phase Blade - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_21159"
+      "Value": "Adds 15 bonus damage to an attack against enemies."
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_20658"
+      "Value": "Adds \u003CA057,DataA2\u003E bonus damage to an attack against enemies, but drains mana with each attack made."
     },
     {
       "Id": 1918989665,
@@ -72,15 +76,15 @@
     {
       "Id": 1802007905,
       "Type": 3,
-      "Value": "TRIGSTR_18515"
+      "Value": "W"
     },
     {
       "Id": 2037408353,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 2036495713,
-      "Value": 1
+      "Value": ""
     }
   ]
 }

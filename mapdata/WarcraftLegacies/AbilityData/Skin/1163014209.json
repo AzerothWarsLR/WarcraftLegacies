@@ -12,16 +12,16 @@
     },
     {
       "Id": 2020631137,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 2037408353,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_8128"
+      "Value": " (Dark Green - Wizard\u0027s Sanctum)"
     },
     {
       "Id": 1952540001,
@@ -31,24 +31,26 @@
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_9606"
+      "Value": "W"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_8130"
+      "Value": "Solar Flare"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_8131"
+      "Value": "Solar Flare (|cffcece00W|r)"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_8132"
+      "Value": "Stops all enemies in a target area from attacking and casting spells for 6(3) seconds."
     }
   ]
 }

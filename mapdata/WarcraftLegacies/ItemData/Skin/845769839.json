@@ -12,27 +12,27 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_14048"
+      "Value": "Z"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_4133"
+      "Value": "Orb of Arcane"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_4208"
+      "Value": "Purchase Orb of Arcane"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_4135"
+      "Value": "Adds 6 bonus damage to the attack of a Hero when carried. The Hero\u0027s attacks also become ranged when attacking air, and burn 25 mana from the target with each attack. Burns 15 mana on heroes.|nCauses attacks to deal 200 damage total to summoned units."
     },
     {
       "Id": 1936024681,
       "Type": 3,
-      "Value": "TRIGSTR_4209"
+      "Value": "Attacks cause arcane damage."
     }
   ]
 }

@@ -7,50 +7,54 @@
   "Modifications": [
     {
       "Id": 2020631137,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_7075"
+      "Value": "(C\u0027thun Scarab)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_8443"
+      "Value": "Q"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_7077"
+      "Value": "|cffffcc00Q|r Burrow"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_7078"
+      "Value": "The Giant Scarab digs into the ground, becomes invisible, and gains a regeneration rate of 15 hit points per second. |nThe Scarab cannot attack while burrowed."
     },
     {
       "Id": 2019718497,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1802007905,
       "Type": 3,
-      "Value": "TRIGSTR_8447"
+      "Value": "Q"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829715809,
       "Type": 3,
-      "Value": "TRIGSTR_7080"
+      "Value": "Resurface (|cffffcc00Q|r)"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829781345,
       "Type": 3,
-      "Value": "TRIGSTR_7081"
+      "Value": "The Scarab pops out of the ground and becomes visible again."
     }
   ]
 }

@@ -13,7 +13,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_4737"
+      "Value": "Q"
     },
     {
       "Id": 1935832437,
@@ -23,22 +23,22 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_12651"
+      "Value": "Primary structure.|n|cfff5962dTrains:|R Drone|n|cfff5962dUpgrades to:|R Ruined Temple"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_16499"
+      "Value": "Monument"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_16500"
+      "Value": "Summon Monument"
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_16501"
+      "Value": "(C\u0027thun building)"
     },
     {
       "Id": 1818520949,
@@ -47,21 +47,21 @@
     },
     {
       "Id": 1735156597,
-      "Value": 220
+      "Value": ""
     },
     {
       "Id": 1651270517,
-      "Value": 150
+      "Value": ""
     },
     {
       "Id": 1685218677,
       "Type": 1,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.6
+      "Value": ""
     },
     {
       "Id": 1868786037,

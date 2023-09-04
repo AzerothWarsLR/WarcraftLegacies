@@ -7,27 +7,28 @@
   "Modifications": [
     {
       "Id": 2020631137,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 2037408353,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_20695"
+      "Value": "(defender barrage missile"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_19582"
+      "Value": "This tower fires up to 9 additional projectiles that deal 10 damage each to nearby enemies"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_19583"
+      "Value": "Multishot"
     },
     {
       "Id": 1953653089,
@@ -36,9 +37,10 @@
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_19584"
+      "Value": "Multishot"
     }
   ]
 }

@@ -12,53 +12,59 @@
     },
     {
       "Id": 2020631137,
-      "Value": 3
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_1514"
+      "Value": "(fel horde)"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_869"
+      "Value": "Blood Rune"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_2204"
+      "Value": "Blood Rune - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_1595"
+      "Value": "Reduces the damage taken from Magic attacks and Spells by 5%."
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_2302"
+      "Value": "Blood Rune - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_2322"
+      "Value": "Blood Rune - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_3613"
+      "Value": "Reduces the damage taken from Magic attacks and Spells by 10%."
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_3614"
+      "Value": "Reduces the damage taken from Magic attacks and Spells by 15%."
     }
   ]
 }

@@ -12,17 +12,17 @@
     },
     {
       "Id": 2020631137,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_8840"
+      "Value": "(Teal - Magtheridon, Pink - Mannoroth)"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_8841"
+      "Value": "Fel Battleplate"
     },
     {
       "Id": 1918988897,
@@ -31,74 +31,82 @@
     },
     {
       "Id": 2020635233,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_10384"
+      "Value": "E"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_8843"
+      "Value": "Learn Fel Battleplate - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_18870"
+      "Value": "The Pit Lord enhances his chitinous armor plates with fel fire etchings, giving the Pit Lord armor that increases its defense and returns damage to enemy melee attackers.  |n|n|cffffcc00Level 1|r - \u003CAUts,DataA1,%\u003E% damage returned, \u003CAUts,DataC1\u003E bonus armor. |n|cffffcc00Level 2|r -  \u003CAUts,DataA2,%\u003E% damage returned, \u003CAUts,DataC2\u003E bonus armor. |n|cffffcc00Level 3|r -  \u003CAUts,DataA3,%\u003E% damage returned, \u003CAUts,DataC3\u003E bonus armor.  |n|cffffcc00Level 4|r -  \u003CAUts,DataA4,%\u003E% damage returned, \u003CAUts,DataC4\u003E bonus armor."
     },
     {
       "Id": 1667331169,
-      "Value": 1
+      "Value": ""
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_8845"
+      "Value": "Fel Battleplate - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_8846"
+      "Value": "Fel Battleplate - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_8847"
+      "Value": "Fel Battleplate - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
+      "Pointer": 4,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_8848"
+      "Value": "Fel Battleplate - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_18871"
+      "Value": "Enhances the Pit Lord\u0027s chitinous armor with fel fire etchings, giving the Pit Lord \u003CAUts,DataC1\u003E bonus armor and returning \u003CAUts,DataA1,%\u003E% of melee attack damage to enemies."
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_18872"
+      "Value": "Enhances the Pit Lord\u0027s chitinous armor with fel fire etchings, giving the Pit Lord \u003CAUts,DataC2\u003E bonus armor and returning \u003CAUts,DataA2,%\u003E% of melee attack damage to enemies."
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_18873"
+      "Value": "Enhances the Pit Lord\u0027s chitinous armor with fel fire etchings, giving the Pit Lord \u003CAUts,DataC3\u003E bonus armor and returning \u003CAUts,DataA3,%\u003E% of melee attack damage to enemies."
     },
     {
       "Level": 4,
+      "Pointer": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_18874"
+      "Value": "Enhances the Pit Lord\u0027s chitinous armor with fel fire etchings, giving the Pit Lord \u003CAUts,DataC4\u003E bonus armor and returning \u003CAUts,DataA4,%\u003E% of melee attack damage to enemies."
     }
   ]
 }

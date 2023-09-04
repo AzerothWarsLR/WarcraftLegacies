@@ -7,18 +7,19 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_5187"
+      "Value": "(sent)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_6764"
+      "Value": "Q"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_5189"
+      "Value": "|cffffcc00(Q)|r - Mount Hippogryph"
     }
   ]
 }

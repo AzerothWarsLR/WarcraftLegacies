@@ -7,22 +7,22 @@
   "Modifications": [
     {
       "Id": 2020631157,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1953850229,
       "Type": 3,
-      "Value": "TRIGSTR_18967"
+      "Value": "- Magic Missile,- Magic Missile|n- Dispel Magic,- Magic Missile|n- Dispel Magic|n- Flame Shield,- Magic Missile|n- Dispel Magic|n- Flame Shield|n- Spell Steal"
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_1934"
+      "Value": "(Dalaran)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_2862"
+      "Value": "W"
     },
     {
       "Id": 1831952757,
@@ -32,22 +32,22 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.8
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_3425"
+      "Value": "Arcanist"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_3426"
+      "Value": "Train Arcanist"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_21078"
+      "Value": "Well-versed sorceress in the arcane arts.|n|cfff5962dAbilities:|R Magic Missile|n|cfff5962dCan Learn:|R Dispel Magic, Flame Shield, Spell Steal|n|n|cffffcc00Attacks land and air units.|R"
     },
     {
       "Id": 1818520949,
@@ -57,7 +57,7 @@
     {
       "Id": 1853186933,
       "Type": 3,
-      "Value": "TRIGSTR_21079"
+      "Value": "Initiate, Adept, Master, Grandmaster"
     }
   ]
 }

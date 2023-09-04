@@ -7,33 +7,35 @@
   "Modifications": [
     {
       "Id": 2020631137,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_16150"
+      "Value": "(Crusade 1)"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_16760"
+      "Value": "Gives 20% extra damage to the attacks of nearby player units. |n|n|cffd45e19This aura stacks for each different type of unit that has it.|r"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_16954"
+      "Value": "United for the Crusade"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_16955"
+      "Value": "United for the Crusade"
     },
     {
       "Id": 2037408353,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1953653089,

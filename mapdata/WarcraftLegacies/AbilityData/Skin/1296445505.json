@@ -7,49 +7,52 @@
   "Modifications": [
     {
       "Id": 2020631137,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_13068"
+      "Value": "(Kul\u0027tiras - Thornspeaker)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_10871"
+      "Value": "E"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_9617"
+      "Value": "Wickerbeast Form"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_9618"
+      "Value": "Wickerbeast Form"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_9619"
+      "Value": "Transforms the Thornspeaker into a Wickerbeast. |n|cfff5962dAbilities:|R Cleaving Attack|n|n|cffffcc00Attacks land units.|r"
     },
     {
       "Id": 2019718497,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1802007905,
       "Type": 3,
-      "Value": "TRIGSTR_10916"
+      "Value": "E"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829781345,
       "Type": 3,
-      "Value": "TRIGSTR_9621"
+      "Value": "Transforms the Thornspeaker into a human."
     }
   ]
 }

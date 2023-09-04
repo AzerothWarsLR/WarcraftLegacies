@@ -8,7 +8,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19887"
+      "Value": "(Kul Tiras T1)"
     },
     {
       "Id": 1818520949,
@@ -18,12 +18,12 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_3438"
+      "Value": "Q"
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 4.25
+      "Value": ""
     },
     {
       "Id": 1935832437,
@@ -33,12 +33,12 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_3390"
+      "Value": "Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Deckhand |n|cfff5962dUpgrades to:|R Keep"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.8
+      "Value": ""
     },
     {
       "Id": 1868786037,

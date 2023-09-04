@@ -13,35 +13,35 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_180"
+      "Value": "(forsaken)"
     },
     {
       "Id": 1735156597,
-      "Value": 170
+      "Value": ""
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_4266"
+      "Value": "W"
     },
     {
       "Id": 1919705973,
-      "Value": 170
+      "Value": ""
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_051"
+      "Value": "Summon Val\u0027kyr"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_17650"
+      "Value": "Powerful Flying caster Unit.|n|cfff5962dAbilities:|R Resurrection, Mass Animate Dead, Resistant Skin|n|n|cff99b4d1Can only train 2 (4) (9).|r|n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_053"
+      "Value": "Val\u0027kyr"
     },
     {
       "Id": 1818520949,
@@ -56,22 +56,22 @@
     {
       "Id": 1751675765,
       "Type": 1,
-      "Value": 150
+      "Value": ""
     },
     {
       "Id": 2003334005,
       "Type": 1,
-      "Value": 150
+      "Value": ""
     },
     {
       "Id": 2036888437,
       "Type": 1,
-      "Value": 50
+      "Value": ""
     },
     {
       "Id": 2020111221,
       "Type": 1,
-      "Value": 50
+      "Value": ""
     },
     {
       "Id": 1684960117,
@@ -85,12 +85,12 @@
     },
     {
       "Id": 2020631157,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.9
+      "Value": ""
     }
   ]
 }

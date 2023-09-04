@@ -12,7 +12,7 @@
     },
     {
       "Id": 1651270517,
-      "Value": 175
+      "Value": ""
     },
     {
       "Id": 1651012469,
@@ -21,12 +21,12 @@
     },
     {
       "Id": 2020631157,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19711"
+      "Value": "(Legion Research)"
     },
     {
       "Id": 1818520949,
@@ -35,36 +35,36 @@
     },
     {
       "Id": 1735156597,
-      "Value": 175
+      "Value": ""
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_2138"
+      "Value": "E"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.6
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_19712"
+      "Value": "Soul Forge"
     },
     {
       "Id": 1919705973,
-      "Value": 175
+      "Value": ""
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 3.2
+      "Value": ""
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_19713"
+      "Value": "Summon Soul Forge"
     },
     {
       "Id": 1935832437,
@@ -74,7 +74,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_9066"
+      "Value": "Demonic Forge that produces upgrades for the Legions army. Also is a lumber drop site.|n|cfff5962dResearches:|R Forged Weaponry, Armor Plating, Chaos Infusion, Improved Cannons, Fortified Hulls"
     },
     {
       "Id": 1684960117,

@@ -8,17 +8,17 @@
     {
       "Id": 1885959270,
       "Type": 3,
-      "Value": "TRIGSTR_13735"
+      "Value": "Archimonde\u0027s Defilement"
     },
     {
       "Id": 1700951398,
       "Type": 3,
-      "Value": "TRIGSTR_13736"
+      "Value": "This unit has Archimonde\u0027s Defilement; it has reduced armor and can be seen by the enemy."
     },
     {
       "Id": 1835101798,
       "Type": 3,
-      "Value": "TRIGSTR_13737"
+      "Value": "Archimonde\u0027s Defilement"
     }
   ]
 }

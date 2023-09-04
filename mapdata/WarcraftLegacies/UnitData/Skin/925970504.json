@@ -13,12 +13,12 @@
     {
       "Id": 1953980789,
       "Type": 3,
-      "Value": "TRIGSTR_16245"
+      "Value": "Revive Bolvar Fordragon"
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_2950"
+      "Value": "(Dark Green)"
     },
     {
       "Id": 1818520949,
@@ -28,32 +28,32 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_3274"
+      "Value": "Q"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_3940"
+      "Value": "Highlord of the Alliance"
     },
     {
       "Id": 1869770869,
       "Type": 3,
-      "Value": "TRIGSTR_3941"
+      "Value": "Bolvar Fordragon"
     },
     {
       "Id": 1919972469,
       "Type": 3,
-      "Value": "TRIGSTR_16291"
+      "Value": "Revive Bolvar Fordragon"
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 1.2
+      "Value": ""
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_20269"
+      "Value": "Warrior Hero, exceptional at augmenting nearby troops.|n|cfff5962dAbilities:|r Divine Shield, Heavy Armor|n|cfff5962dCan Learn:|R Holy Light, Rally to the Highlord, Retribution Aura, Horn of Stormwind|n|n|cffffcc00Attacks land units.|R"
     },
     {
       "Id": 1684960117,
@@ -63,12 +63,12 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_16380"
+      "Value": "Summon Bolvar Fordragon"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 1.25
+      "Value": ""
     }
   ]
 }

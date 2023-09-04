@@ -12,21 +12,21 @@
     },
     {
       "Id": 2020631157,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1667462261,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_3417"
+      "Value": "(C\u0027thun Overlord)"
     },
     {
       "Id": 1685218677,
       "Type": 1,
-      "Value": 50
+      "Value": ""
     },
     {
       "Id": 1818520949,
@@ -36,47 +36,47 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_2827"
+      "Value": "W"
     },
     {
       "Id": 2053990773,
       "Type": 2,
-      "Value": 100
+      "Value": ""
     },
     {
       "Id": 1886940533,
       "Type": 1,
-      "Value": 60
+      "Value": ""
     },
     {
       "Id": 1920494965,
       "Type": 1,
-      "Value": 60
+      "Value": ""
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.9
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_20574"
+      "Value": "Silithid Overlord"
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 1.9
+      "Value": ""
     },
     {
       "Id": 1751675765,
       "Type": 1,
-      "Value": 140
+      "Value": ""
     },
     {
       "Id": 2003334005,
       "Type": 1,
-      "Value": 140
+      "Value": ""
     },
     {
       "Id": 1634759541,
@@ -86,12 +86,12 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_20575"
+      "Value": "Train - Silithid Overlord"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_3421"
+      "Value": "Heavy melee commander unit. Has the Command Aura ability.|n|cff99b4d1Can only train 12.|r|n|cffffcc00Attacks land units.|r"
     },
     {
       "Id": 1684960117,

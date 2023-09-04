@@ -7,18 +7,19 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_6355"
+      "Value": "(Light Blue Highborne)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_7956"
+      "Value": "Q"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_6357"
+      "Value": "Calls forth a cone of lightning on a target enemy unit, hitting up to 5 enemy units for 75 damage."
     }
   ]
 }

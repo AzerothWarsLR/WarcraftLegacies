@@ -12,33 +12,35 @@
     },
     {
       "Id": 2020631137,
-      "Value": 3
+      "Value": ""
     },
     {
       "Id": 2037408353,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_2082"
+      "Value": "(legion)"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_11757"
+      "Value": "Poison Claws"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_11758"
+      "Value": "Poison Claws"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_11759"
+      "Value": "Deals 4 poison damage per second (stackable). |nLasts 10 seconds. 3 seconds on heroes"
     }
   ]
 }

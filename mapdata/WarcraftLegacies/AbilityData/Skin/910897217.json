@@ -13,7 +13,7 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_8973"
+      "Value": " (Orange - Geomancer)"
     },
     {
       "Id": 1952540001,
@@ -23,24 +23,26 @@
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_9843"
+      "Value": "Q"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_8975"
+      "Value": "Raise Earth"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_8976"
+      "Value": "Raise Earth"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_10346"
+      "Value": "Raise a soild rock from the ground blocking the path of enemies.|nLasts until it is destroyed, takes damage over time."
     },
     {
       "Id": 1918989665,

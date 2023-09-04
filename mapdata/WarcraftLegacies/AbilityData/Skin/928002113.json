@@ -8,33 +8,35 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_7776"
+      "Value": "(Teal - Nether Drake, Ember Cleric)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_9370"
+      "Value": "Q"
     },
     {
       "Id": 2020635233,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_9953"
+      "Value": "W"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_10794"
+      "Value": "Soul Burn"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_8415"
+      "Value": "Wreaths an enemy unit in magical flames which cause \u003CANso,DataA1\u003E damage per second, prevent the casting of spells, and reduce attack damage by \u003CANso,DataC1,%\u003E%.|nLasts 14 seconds. Lasts 6 seconds on Heroes."
     }
   ]
 }

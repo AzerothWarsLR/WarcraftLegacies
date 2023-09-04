@@ -13,29 +13,31 @@
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_10066"
+      "Value": "W"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_8437"
+      "Value": "Afterimage"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_8438"
+      "Value": "Afterimage"
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_17220"
+      "Value": "(Elemental Guardian)"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_17228"
+      "Value": "Creates \u003CA0OT,DataA1\u003E magical copies of the Elemental Guardian, and dispels all magic from the original. |nLasts \u003CA0OT,Dur1\u003E seconds."
     }
   ]
 }

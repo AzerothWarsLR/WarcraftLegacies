@@ -7,12 +7,12 @@
   "Modifications": [
     {
       "Id": 2020631157,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19889"
+      "Value": "(Kul Tiras T3)"
     },
     {
       "Id": 1818520949,
@@ -22,12 +22,12 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_3991"
+      "Value": "C"
     },
     {
       "Id": 845245813,
       "Type": 2,
-      "Value": 0.35
+      "Value": ""
     },
     {
       "Id": 1831952757,
@@ -42,7 +42,7 @@
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 4.5
+      "Value": ""
     },
     {
       "Id": 1935832437,
@@ -52,12 +52,12 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_218"
+      "Value": "Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Deckhand, Musketeer, Fusillier|n|cfff5962dResearches:|r Full Scale Escalation\r\n |n|cfff5962dAbilities:|R Summon Garrison"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.8
+      "Value": ""
     },
     {
       "Id": 1868786037,

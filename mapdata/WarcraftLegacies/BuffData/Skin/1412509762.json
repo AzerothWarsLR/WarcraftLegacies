@@ -13,17 +13,17 @@
     {
       "Id": 1885959270,
       "Type": 3,
-      "Value": "TRIGSTR_13657"
+      "Value": "Corrosion Aura"
     },
     {
       "Id": 1700951398,
       "Type": 3,
-      "Value": "TRIGSTR_13658"
+      "Value": "This unit is under the effects of Corrosion Aura; it has a decreased movement speed."
     },
     {
       "Id": 1835101798,
       "Type": 3,
-      "Value": "TRIGSTR_13659"
+      "Value": "Corrosion Aura"
     },
     {
       "Id": 1952543846,

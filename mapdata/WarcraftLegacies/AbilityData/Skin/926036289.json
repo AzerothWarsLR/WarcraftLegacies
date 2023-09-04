@@ -7,22 +7,23 @@
   "Modifications": [
     {
       "Id": 2020631137,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 2037408353,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_826"
+      "Value": "(abomination)"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_20536"
+      "Value": "Causes attacks to do double damage to buildings."
     }
   ]
 }

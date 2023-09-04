@@ -8,17 +8,17 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_12122"
+      "Value": "(yogg)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_4859"
+      "Value": "Q"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_20609"
+      "Value": "Master of magics from Ny\u0027alotha.|n|cfff5962dAbilities:|R Parasite, Anti-magic Shell, Suppression|n|n|cffffcc00Attacks land and air units.|R\r\n"
     },
     {
       "Id": 1868786037,
@@ -33,12 +33,12 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_17330"
+      "Value": "Train Fateweaver"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_17331"
+      "Value": "Fateweaver"
     },
     {
       "Id": 1684960117,
@@ -48,7 +48,7 @@
     {
       "Id": 1953850229,
       "Type": 3,
-      "Value": "TRIGSTR_17557"
+      "Value": "- Parasite,- Parasite|n- Anti-magic Shell,- Parasite|n- Anti-magic Shell|n- Suppression"
     }
   ]
 }

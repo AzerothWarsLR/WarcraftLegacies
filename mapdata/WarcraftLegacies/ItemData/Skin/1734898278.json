@@ -6,12 +6,12 @@
   "Modifications": [
     {
       "Id": 2020631157,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_4167"
+      "Value": "Increases armor by 6 and attack rate by 25% when worn. Doesn\u0027t stack."
     }
   ]
 }

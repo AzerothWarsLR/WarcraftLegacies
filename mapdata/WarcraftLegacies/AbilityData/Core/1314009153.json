@@ -7,24 +7,28 @@
   "Modifications": [
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1718968929,
       "Type": 3,
       "Value": "BNcg,BNcg"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 1718968929,
       "Type": 3,
       "Value": "BNcg,BNcg"
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 1718968929,
       "Type": 3,
       "Value": "BNcg,BNcg"
     },
     {
       "Level": 4,
+      "Pointer": 4,
       "Id": 1718968929,
       "Type": 3,
       "Value": "BNcg,BNcg"
@@ -38,35 +42,35 @@
     },
     {
       "Level": 2,
-      "Pointer": 1,
+      "Pointer": 2,
       "Id": 830042958,
       "Type": 2,
       "Value": 3.5
     },
     {
       "Level": 3,
-      "Pointer": 1,
+      "Pointer": 3,
       "Id": 830042958,
       "Type": 2,
       "Value": 3.5
     },
     {
       "Level": 4,
-      "Pointer": 1,
+      "Pointer": 4,
       "Id": 830042958,
       "Type": 2,
       "Value": 3.5
     },
     {
       "Level": 3,
-      "Pointer": 2,
+      "Pointer": 3,
       "Id": 846820174,
       "Type": 3,
       "Value": "ncg3"
     },
     {
       "Level": 4,
-      "Pointer": 2,
+      "Pointer": 4,
       "Id": 846820174,
       "Type": 3,
       "Value": "ncg2"
@@ -77,12 +81,14 @@
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1970893646,
       "Type": 3,
       "Value": "n02C"
     },
     {
       "Level": 4,
+      "Pointer": 4,
       "Id": 1970893646,
       "Type": 3,
       "Value": "n04M"

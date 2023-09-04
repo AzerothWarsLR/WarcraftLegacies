@@ -13,16 +13,16 @@
     {
       "Id": 1953980789,
       "Type": 3,
-      "Value": "TRIGSTR_3929"
+      "Value": "Revive Ashbringer"
     },
     {
       "Id": 2020631157,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_3245"
+      "Value": "(Lordaeron)"
     },
     {
       "Id": 1818520949,
@@ -32,27 +32,27 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_3601"
+      "Value": "E"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.9
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_3932"
+      "Value": "The Ashbringer"
     },
     {
       "Id": 1869770869,
       "Type": 3,
-      "Value": "TRIGSTR_3933"
+      "Value": "Highlord Alexandros Mograine"
     },
     {
       "Id": 1919972469,
       "Type": 3,
-      "Value": "TRIGSTR_3934"
+      "Value": "Revive Ashbringer"
     },
     {
       "Id": 1769173877,
@@ -62,12 +62,12 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_3935"
+      "Value": "Summon Alexandros Mograine"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_15268"
+      "Value": "Holy warrior Hero, adept at dealing high damage in melee combat.|n|cfff5962dAbilities:|r Divine Shield|n|cfff5962dCan Learn:|R Holy Light, Weapon Empowerment, Holy Blessing, Will of the Ashbringer|n|n|cffffcc00Attacks land units.|R"
     }
   ]
 }

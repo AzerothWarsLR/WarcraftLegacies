@@ -13,29 +13,31 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_7880"
+      "Value": "(Purple Inquisitor)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_8730"
+      "Value": "Q"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_7882"
+      "Value": "Judgment"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_7883"
+      "Value": "Judgment (|cffffcc00Q|r)"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_7884"
+      "Value": "Reduces a target enemy unit\u0027s armor by 5 and gives vision of that unit. |nLasts 45 seconds."
     },
     {
       "Id": 1918989665,
@@ -45,7 +47,7 @@
     {
       "Id": 1802007905,
       "Type": 3,
-      "Value": "TRIGSTR_8795"
+      "Value": "Q"
     }
   ]
 }

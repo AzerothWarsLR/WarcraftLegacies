@@ -7,51 +7,53 @@
   "Modifications": [
     {
       "Id": 2020631137,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 2037408353,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_7261"
+      "Value": "(Self Cast - Warsong)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_9820"
+      "Value": "D"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_7263"
+      "Value": "Self-Bloodlust"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_7264"
+      "Value": "Self-Bloodlust"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_7265"
+      "Value": "Increases the unit\u0027s attack rate by 30% and movement speed by 20% for \u003CAfzy,Dur1\u003E seconds."
     },
     {
       "Id": 2019718497,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 2036495713,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1802007905,
       "Type": 3,
-      "Value": "TRIGSTR_9826"
+      "Value": "D"
     }
   ]
 }

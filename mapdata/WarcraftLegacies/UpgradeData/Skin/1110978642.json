@@ -7,27 +7,31 @@
   "Modifications": [
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1718840935,
       "Type": 3,
-      "Value": "TRIGSTR_15988"
+      "Value": "(kul tiras)"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_20400"
+      "Value": "X"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_18247"
+      "Value": "Upgrade Long Rifles"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "TRIGSTR_18248"
+      "Value": "Increases the range of Navy Snipers, Musketeers and Fusillier attacks by 200."
     }
   ]
 }

@@ -7,31 +7,31 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_690"
+      "Value": "(Legion)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_477"
+      "Value": "E"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.75
+      "Value": ""
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_692"
+      "Value": "Train Infernal"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_4772"
+      "Value": "Forged demon cloaked in flames of fel magic.|n|cfff5962dAbilities:|R Spell Immunity, Permanent Immoliation, Resistant Skin|n|n|cff99b4d1Can only train 6, 12 after summoning legion.|r|n|cffffcc00Attacks land units.|r"
     },
     {
       "Id": 2020631157,
-      "Value": 2
+      "Value": ""
     }
   ]
 }

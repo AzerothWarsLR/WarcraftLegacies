@@ -12,29 +12,31 @@
     },
     {
       "Id": 2037408353,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_9479"
+      "Value": "(Brown/LB Elf United)"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_9480"
+      "Value": "Toughened Hides"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_9481"
+      "Value": "Toughened Hides"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_9661"
+      "Value": "Tougher Hides reduces the damage dealt to the creature by 6 damage."
     },
     {
       "Id": 1918989665,

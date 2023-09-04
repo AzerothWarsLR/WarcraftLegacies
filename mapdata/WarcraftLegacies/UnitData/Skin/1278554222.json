@@ -12,7 +12,7 @@
     },
     {
       "Id": 2020631157,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1635083125,
@@ -22,27 +22,27 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19709"
+      "Value": "(Stormwind Elite)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_1996"
+      "Value": "E"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_2314"
+      "Value": "Conjurer"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_2315"
+      "Value": "Train Conjurer"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_11399"
+      "Value": "Masterful spellcaster.|n|cfff5962dAbilities:|R Monsoon, Summon Scorpions, Invisibility, Summon Reef Elemental|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Id": 1818520949,
@@ -52,7 +52,7 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 1.1
+      "Value": ""
     }
   ]
 }

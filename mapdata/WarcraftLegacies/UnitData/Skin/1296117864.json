@@ -8,37 +8,37 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_2275"
+      "Value": "(Undead)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_3089"
+      "Value": "S"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_1518"
+      "Value": "Fireship"
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 1.8
+      "Value": ""
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_999"
+      "Value": "Build Fireship"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_1004"
+      "Value": "Short range medium ship.|n|r|n|cffffcc00Attacks land units.|r|nStrong versus Frigates, Weak to Galleys."
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.9
+      "Value": ""
     },
     {
       "Id": 1831952757,
@@ -47,7 +47,7 @@
     },
     {
       "Id": 2037408373,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1868786037,
@@ -62,7 +62,7 @@
     {
       "Id": 828468597,
       "Type": 2,
-      "Value": 0.15
+      "Value": ""
     }
   ]
 }

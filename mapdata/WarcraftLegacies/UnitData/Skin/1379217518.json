@@ -12,7 +12,7 @@
     },
     {
       "Id": 1651270517,
-      "Value": 125
+      "Value": ""
     },
     {
       "Id": 1651012469,
@@ -22,30 +22,30 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_2299"
+      "Value": "(T2-Bloodfiend)"
     },
     {
       "Id": 1735156597,
-      "Value": 125
+      "Value": ""
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.6
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_2300"
+      "Value": "Felguard Demon Gate"
     },
     {
       "Id": 1919705973,
-      "Value": 200
+      "Value": ""
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_2301"
+      "Value": "Upgrade to Felguard Demon Gate"
     },
     {
       "Id": 1935832437,
@@ -55,7 +55,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_2208"
+      "Value": "Gateway attuned to the Felguards of the Burning Crusade, summoning 2 every 85 seconds. |n|n|cfff5962dAbilities:|R Charge, Cleaving Attack, Critical Strike|n|cff99b4d1Can only build 1 gate. |r"
     }
   ]
 }

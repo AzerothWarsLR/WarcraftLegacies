@@ -8,23 +8,24 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_10580"
+      "Value": "(Bloodlust Totem)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_11873"
+      "Value": "E"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_10582"
+      "Value": "Increases a friendly unit\u0027s attack rate by 30% and movement speed by 20%. |nLasts \u003CAblo,Dur1\u003E seconds."
     },
     {
       "Id": 1802007905,
       "Type": 3,
-      "Value": "TRIGSTR_11983"
+      "Value": "E"
     }
   ]
 }

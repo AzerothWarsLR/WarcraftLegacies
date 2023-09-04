@@ -6,16 +6,16 @@
   "Modifications": [
     {
       "Id": 2020631157,
-      "Value": 3
+      "Value": ""
     },
     {
       "Id": 2037408373,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_5041"
+      "Value": "F"
     }
   ]
 }

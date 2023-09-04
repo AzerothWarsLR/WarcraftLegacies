@@ -7,15 +7,17 @@
   "Modifications": [
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_19141"
+      "Value": "This unit has 1 goblin crewing it, he will jump out when the shredder is destroyed."
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_15550"
+      "Value": "Increases the rate at which this unit gathers lumber."
     },
     {
       "Id": 1953653089,
@@ -25,22 +27,23 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_19138"
+      "Value": "Goblin Pilot"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_19143"
+      "Value": "Goblin Pilot"
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_19145"
+      "Value": "(icon shredder)"
     },
     {
       "Id": 2020631137,
-      "Value": 1
+      "Value": ""
     }
   ]
 }

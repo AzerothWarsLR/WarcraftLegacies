@@ -7,17 +7,17 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19227"
+      "Value": " (Illidari T1)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_375"
+      "Value": "Q"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_2458"
+      "Value": "Build Betrayer\u0027s Reservoir"
     },
     {
       "Id": 1935832437,
@@ -27,7 +27,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_2502"
+      "Value": "Primary structure.|n|cff6480ff|cfff5962dTrains:|R Mur\u0027gul Slave|n|cfff5962dUpgrades to:|R Spire"
     },
     {
       "Id": 1868786037,
@@ -47,12 +47,12 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_19232"
+      "Value": "Betrayer\u0027s Reservoir"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.8
+      "Value": ""
     }
   ]
 }

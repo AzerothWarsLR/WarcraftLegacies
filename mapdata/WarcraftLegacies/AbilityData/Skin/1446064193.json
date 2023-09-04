@@ -8,12 +8,12 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_12576"
+      "Value": "(yogg thorim)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_13394"
+      "Value": "Q"
     },
     {
       "Id": 1734962273,
@@ -23,70 +23,78 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_12578"
+      "Value": "Forked Thunder"
     },
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_13487"
+      "Value": "Q"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_12580"
+      "Value": "Learn Forked Tunder - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_12581"
+      "Value": "Calls forth a cone of lightning to damage enemies. |n|n|cffffcc00Level 1|r - 125 damage per unit. |n|cffffcc00Level 2|r - 200 damage per unit. |n|cffffcc00Level 3|r - 275 damage per unit. |n|cffffcc00Level 4|r - 350 damage per unit."
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_12582"
+      "Value": "Forked Thunder - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_12583"
+      "Value": "Forked Thunder - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_12584"
+      "Value": "Forked Thunder - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
+      "Pointer": 4,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_12585"
+      "Value": "Forked Thunder - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_12586"
+      "Value": "Calls forth a cone of lightning on a target enemy unit, hitting up to 5 enemy units for 125 damage."
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_12587"
+      "Value": "Calls forth a cone of lightning on a target enemy unit, hitting up to 7 enemy units for 200 damage."
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_12588"
+      "Value": "Calls forth a cone of lightning on a target enemy unit, hitting up to 9 enemy units for 275 damage."
     },
     {
       "Level": 4,
+      "Pointer": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_12589"
+      "Value": "Calls forth a cone of lightning on a target enemy unit, hitting up to 11 enemy units for 350 damage."
     }
   ]
 }

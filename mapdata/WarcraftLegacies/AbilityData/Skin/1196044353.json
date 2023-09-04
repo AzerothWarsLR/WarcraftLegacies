@@ -8,23 +8,24 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_9071"
+      "Value": "(Dagran\u0027s Fire Elementals)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_10494"
+      "Value": "E"
     },
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_10513"
+      "Value": "E"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_9074"
+      "Value": "Incinerate"
     }
   ]
 }

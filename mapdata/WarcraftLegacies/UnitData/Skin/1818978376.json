@@ -12,7 +12,7 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.95
+      "Value": ""
     },
     {
       "Id": 1868786037,
@@ -22,36 +22,36 @@
     {
       "Id": 1869770869,
       "Type": 3,
-      "Value": "TRIGSTR_15760"
+      "Value": "Genn Greymane"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_15761"
+      "Value": "King of Gilneas"
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_13874"
+      "Value": "(gilneas)"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_16602"
+      "Value": "Summon Genn"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_17050"
+      "Value": "Warrior Hero, extremely aggressive hero adept at disrupting enemies.|n|cfff5962dAbilities:|r Bash|n|cfff5962dCan learn:|R Roar of the Worgen, War Stomp, Thorns Aura, Goldrinn\u0027s Might|n|n|cffffcc00Attacks land units.|R"
     },
     {
       "Id": 2020631157,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_1140"
+      "Value": "E"
     }
   ]
 }

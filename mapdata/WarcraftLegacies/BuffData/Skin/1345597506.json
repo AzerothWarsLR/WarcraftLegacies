@@ -13,17 +13,17 @@
     {
       "Id": 1885959270,
       "Type": 3,
-      "Value": "TRIGSTR_13412"
+      "Value": "Mind Spike"
     },
     {
       "Id": 1700951398,
       "Type": 3,
-      "Value": "TRIGSTR_13413"
+      "Value": "Hit by Mind Spike; nearby friendly and enemy units will take damage if they are next to this unit."
     },
     {
       "Id": 1835101798,
       "Type": 3,
-      "Value": "TRIGSTR_13414"
+      "Value": "Mind Spike"
     },
     {
       "Id": 1952543590,

@@ -13,17 +13,17 @@
     {
       "Id": 1885959270,
       "Type": 3,
-      "Value": "TRIGSTR_19425"
+      "Value": "Vitality Aura"
     },
     {
       "Id": 1700951398,
       "Type": 3,
-      "Value": "TRIGSTR_13367"
+      "Value": "This unit is under the effects of Vitality Aura; it has increased hit point regeneration."
     },
     {
       "Id": 1835101798,
       "Type": 3,
-      "Value": "TRIGSTR_19426"
+      "Value": "Vitality Aura"
     },
     {
       "Id": 1952543846,

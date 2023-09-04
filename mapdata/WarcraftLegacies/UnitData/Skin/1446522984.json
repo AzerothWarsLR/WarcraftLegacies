@@ -8,27 +8,27 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_3605"
+      "Value": "(sentinel)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_4751"
+      "Value": "Q"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_1138"
+      "Value": "Armored Guards of the Sentinels.|n|cfff5962dAbilities:|R Charge,War Plating|n|n|cffffcc00Attacks land units.|r"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_12976"
+      "Value": "Glaive Maiden"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_13205"
+      "Value": "Train Glaive Maiden"
     },
     {
       "Id": 1684960117,
@@ -47,17 +47,17 @@
     },
     {
       "Id": 2020631157,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.7
+      "Value": ""
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 1.2
+      "Value": ""
     },
     {
       "Id": 1819503989,

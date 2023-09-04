@@ -8,24 +8,26 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_17162"
+      "Value": "(Nexus)"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_8811"
+      "Value": "Nexus Empowerment"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_8812"
+      "Value": "Nexus Empowerment"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_8813"
+      "Value": "Gives additional mana regeneration to nearby friendly units of 0.5 mana per second."
     }
   ]
 }

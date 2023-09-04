@@ -7,18 +7,19 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_4768"
+      "Value": " (Light Blue/Brown - Wisp Gold and Lumber)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_5054"
+      "Value": "F"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_8523"
+      "Value": "Harvests lumber from trees."
     }
   ]
 }

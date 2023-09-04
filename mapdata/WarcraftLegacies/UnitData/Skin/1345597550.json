@@ -18,17 +18,17 @@
     {
       "Id": 1853186933,
       "Type": 3,
-      "Value": "TRIGSTR_2384"
+      "Value": "Initiate,Adept,Master"
     },
     {
       "Id": 1953850229,
       "Type": 3,
-      "Value": "TRIGSTR_2385"
+      "Value": "- Shadowbolt,- Shadowbolt|n- Flame Shield,- Shadowbolt|n- Flame Shield|n- Summon Minion"
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_1455"
+      "Value": "(Legion)"
     },
     {
       "Id": 1818520949,
@@ -38,7 +38,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_2192"
+      "Value": "Q"
     },
     {
       "Id": 1831952757,
@@ -48,17 +48,17 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_2388"
+      "Value": "Eredar Summoner"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_2389"
+      "Value": "Train Eredar Summoner"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_2390"
+      "Value": "Summoner of the Legion\u0027s hounds.|n|cfff5962dAbilities:|R Shadowbolt|n|cfff5962dCan Learn:|R Flame Shield, Summon Minion|n|n|cffffcc00Attacks land and air units.|R\r\n"
     },
     {
       "Id": 1684960117,

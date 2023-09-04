@@ -13,7 +13,7 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_19463"
+      "Value": "(Draenei)"
     },
     {
       "Id": 1936090465,
@@ -23,24 +23,26 @@
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_14513"
+      "Value": "X"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_20785"
+      "Value": "Gateway Reinforcements"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_20820"
+      "Value": "Gateway Reinforcements"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_2129"
+      "Value": "Summon a Defender to a target unit location"
     },
     {
       "Id": 1918989665,
@@ -50,15 +52,15 @@
     {
       "Id": 1802007905,
       "Type": 3,
-      "Value": "TRIGSTR_14520"
+      "Value": "X"
     },
     {
       "Id": 2020631137,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 2019718497,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1952540001,

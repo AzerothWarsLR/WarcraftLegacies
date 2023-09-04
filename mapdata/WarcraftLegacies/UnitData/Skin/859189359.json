@@ -13,7 +13,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_20128"
+      "Value": "(Dragonmaw T1)"
     },
     {
       "Id": 1818520949,
@@ -23,7 +23,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_5017"
+      "Value": "Q"
     },
     {
       "Id": 1935832437,
@@ -33,7 +33,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_3494"
+      "Value": "Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Peon"
     }
   ]
 }

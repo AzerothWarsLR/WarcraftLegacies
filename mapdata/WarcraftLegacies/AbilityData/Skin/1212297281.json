@@ -12,43 +12,45 @@
     },
     {
       "Id": 2020631137,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 2037408353,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_10510"
+      "Value": "(Light Blue - Tyrande)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_10861"
+      "Value": "D"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_10512"
+      "Value": "Summon Owl Scout"
     },
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_11682"
+      "Value": "E"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_10514"
+      "Value": "Summon Owl Scout |cffffcc00(D)|r"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_10515"
+      "Value": "Summons an invulnerable owl scout to spy on your enemies. Has the True Sight ability. |nLasts 40 seconds."
     }
   ]
 }

@@ -13,12 +13,12 @@
     {
       "Id": 1885959270,
       "Type": 3,
-      "Value": "TRIGSTR_13218"
+      "Value": "Deep Bites"
     },
     {
       "Id": 1700951398,
       "Type": 3,
-      "Value": "TRIGSTR_13219"
+      "Value": "This unit has been hit by Deep Bites; it cannot move and takes damage over time."
     },
     {
       "Id": 1952543846,

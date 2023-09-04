@@ -12,23 +12,24 @@
     },
     {
       "Id": 2020631137,
-      "Value": 3
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_7469"
+      "Value": "(Purple - Alex ult)"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_7470"
+      "Value": "Permanent Immolation 2"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_7471"
+      "Value": "Burns nearby enemy units for 75 points of damage per second."
     }
   ]
 }

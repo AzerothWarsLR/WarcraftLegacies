@@ -13,29 +13,31 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_12133"
+      "Value": "(voidlord)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_12445"
+      "Value": "Q"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_12135"
+      "Value": "Nether Explosions"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_12136"
+      "Value": "Nether Explosions"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_12137"
+      "Value": "Calls down 6 Nether Explosions waves in a large area; each wave deals 45 damage to units in a small area."
     }
   ]
 }

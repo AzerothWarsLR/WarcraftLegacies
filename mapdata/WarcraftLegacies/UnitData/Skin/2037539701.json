@@ -7,22 +7,22 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_325"
+      "Value": "(Scourge)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_117"
+      "Value": "W"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.75
+      "Value": ""
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_10940"
+      "Value": "Nerubian husk raised for the Scourge.|n|cfff5962dAbilities:|R Burrow, Slow Poison|n|cfff5962dCan Learn:|R Web|n|n|cffffcc00Attacks land and air units.|r"
     }
   ]
 }

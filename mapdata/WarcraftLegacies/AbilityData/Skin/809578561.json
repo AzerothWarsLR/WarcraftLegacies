@@ -12,22 +12,22 @@
     },
     {
       "Id": 2020631137,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_10767"
+      "Value": "(Legion - Archimonde)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_11344"
+      "Value": "D"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_10769"
+      "Value": "Dark Pact"
     },
     {
       "Id": 1918988897,
@@ -36,38 +36,40 @@
     },
     {
       "Id": 2020635233,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 2037412449,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_10443"
+      "Value": "R"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_10771"
+      "Value": "[|cffffcc00R|r] Learn Solar Judgement - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_10772"
+      "Value": "Targets an area for solar bombardment, carpeting it with 28 bolts over the course of 14 seconds. Each bolt deals damage to enemy units and heals non-Undead allies for 150% of that amount. Undead enemies take 10% additional damage.  |n|n|cffffcc00Level 1|r - Each bolt deals 40 damage.|n|cffffcc00Level 2|r - Each bolt deals 60 damage. |n|cffffcc00Level 3|r - Each bolt deals 80 damage."
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_10773"
+      "Value": "Dark Pact"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_10774"
+      "Value": "Kills a target unit, giving 100% of its hit points to the Defiler."
     }
   ]
 }

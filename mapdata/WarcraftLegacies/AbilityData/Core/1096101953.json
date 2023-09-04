@@ -7,29 +7,33 @@
   "Modifications": [
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1718968929,
       "Type": 3,
       "Value": "BFig"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1852072801,
       "Type": 2,
       "Value": 65
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1935895905,
       "Value": 175
     },
     {
       "Level": 1,
-      "Pointer": 2,
+      "Pointer": 1,
       "Id": 845574991,
       "Value": 1
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1920296033,
       "Type": 2,
       "Value": 120
@@ -40,6 +44,7 @@
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1969514593,
       "Type": 2,
       "Value": 120
@@ -64,6 +69,7 @@
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828797775,
       "Type": 3,
       "Value": "ngrd"

@@ -13,7 +13,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_20835"
+      "Value": "(Sunfury Specialist)"
     },
     {
       "Id": 1818520949,
@@ -23,22 +23,22 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_5037"
+      "Value": "F"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.75
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_20907"
+      "Value": "Tempest-Forge"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_20908"
+      "Value": "Build Tempest-Forge"
     },
     {
       "Id": 1935832437,
@@ -48,11 +48,11 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_20982"
+      "Value": "Construction facilities for the Sunfury war machines.|n|cfff5962dTrains:|R Skyship, Energy Wagon, Arcane Annihiliator|n|cfff5962dResearches:|R "
     },
     {
       "Id": 2020631157,
-      "Value": 3
+      "Value": ""
     }
   ]
 }

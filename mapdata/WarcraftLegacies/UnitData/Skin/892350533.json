@@ -18,16 +18,16 @@
     {
       "Id": 1953980789,
       "Type": 3,
-      "Value": "TRIGSTR_4018"
+      "Value": "Revive"
     },
     {
       "Id": 1667462261,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1685218677,
       "Type": 1,
-      "Value": 50
+      "Value": ""
     },
     {
       "Id": 1818520949,
@@ -37,22 +37,22 @@
     {
       "Id": 2053990773,
       "Type": 2,
-      "Value": 180
+      "Value": ""
     },
     {
       "Id": 2020633717,
       "Type": 2,
-      "Value": -40
+      "Value": ""
     },
     {
       "Id": 2037410933,
       "Type": 2,
-      "Value": 90
+      "Value": ""
     },
     {
       "Id": 828468597,
       "Type": 2,
-      "Value": 0.05
+      "Value": ""
     },
     {
       "Id": 1831952757,
@@ -62,22 +62,22 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_4019"
+      "Value": "The Prophet"
     },
     {
       "Id": 1869770869,
       "Type": 3,
-      "Value": "TRIGSTR_4020"
+      "Value": "Skeram"
     },
     {
       "Id": 1919972469,
       "Type": 3,
-      "Value": "TRIGSTR_4021"
+      "Value": "Revive"
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 2.4
+      "Value": ""
     },
     {
       "Id": 1769173877,
@@ -87,22 +87,22 @@
     {
       "Id": 1751675765,
       "Type": 1,
-      "Value": 140
+      "Value": ""
     },
     {
       "Id": 2003334005,
       "Type": 1,
-      "Value": 140
+      "Value": ""
     },
     {
       "Id": 2020111221,
       "Type": 1,
-      "Value": 50
+      "Value": ""
     },
     {
       "Id": 2036888437,
       "Type": 1,
-      "Value": 50
+      "Value": ""
     },
     {
       "Id": 1634759541,
@@ -116,21 +116,21 @@
     },
     {
       "Id": 1651270517,
-      "Value": 150
+      "Value": ""
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_3332"
+      "Value": "Q"
     },
     {
       "Id": 2037408373,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_12649"
+      "Value": "Summon Skeram"
     }
   ]
 }

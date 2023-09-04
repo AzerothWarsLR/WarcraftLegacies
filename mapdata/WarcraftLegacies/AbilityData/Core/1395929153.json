@@ -7,12 +7,14 @@
   "Modifications": [
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1852072801,
       "Type": 2,
       "Value": 9
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1935895905,
       "Value": 250
     },
@@ -25,13 +27,14 @@
     },
     {
       "Level": 1,
-      "Pointer": 5,
+      "Pointer": 1,
       "Id": 895902286,
       "Type": 2,
       "Value": 30
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1717986657,
       "Type": 3,
       "Value": "Xbof"

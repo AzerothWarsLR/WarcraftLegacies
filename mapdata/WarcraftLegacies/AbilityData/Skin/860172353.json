@@ -8,18 +8,19 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_16640"
+      "Value": "(kul Tiras)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_11095"
+      "Value": "W"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_9881"
+      "Value": "Forms a shield of electricity around a target unit, dealing 15 damage per second to units around it. |nLasts 20 seconds."
     }
   ]
 }

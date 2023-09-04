@@ -16,22 +16,22 @@
     },
     {
       "Id": 2020631137,
-      "Value": 3
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_5696"
+      "Value": "(Pink - Thrall)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_5965"
+      "Value": "R"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_5698"
+      "Value": "Thunderstorm"
     },
     {
       "Id": 1918988897,
@@ -40,58 +40,64 @@
     },
     {
       "Id": 2020635233,
-      "Value": 3
+      "Value": ""
     },
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_5975"
+      "Value": "R"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_5700"
+      "Value": "Learn Thunderstorm - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_5701"
+      "Value": "Calls a storm of lightning bolts to strike enemy units for 20 seconds.|n |n|cffffcc00Level 1|r - 30 damage dealt by each lightning strike. |n|cffffcc00Level 2|r - 60 damage dealt by each lightning strike. |n|cffffcc00Level 3|r - 90 damage dealt by each lightning strike."
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_5702"
+      "Value": "Thunderstorm - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_5703"
+      "Value": "Thunderstorm - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_5704"
+      "Value": "Thunderstorm - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_5705"
+      "Value": "Calls down a storm of lightning to strike enemy units for 30 damage. |nLasts 20 seconds."
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_5706"
+      "Value": "Calls down a storm of lightning to strike enemy units for 60 damage. |nLasts 20 seconds."
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_5707"
+      "Value": "Calls down a storm of lightning to strike enemy units for 90 damage. |nLasts 20 seconds."
     }
   ]
 }

@@ -7,57 +7,62 @@
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_6083"
+      "Value": "R"
     },
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_6084"
+      "Value": "R"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_5825"
+      "Value": "Learn Charm - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_5826"
+      "Value": "Takes control of a target enemy unit. |nCharm cannot be used on Heroes. |n|cffffcc00Level 1|r - Usable on Level 5 units. |n|cffffcc00Level 2|r - Usable on Level 7 units. |n|cffffcc00Level 3|r - Usable on Level 9 units."
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_5827"
+      "Value": "Charm - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_5828"
+      "Value": "Charm - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_5829"
+      "Value": "Charm - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_5830"
+      "Value": "Takes control of a target enemy unit. |nCharm cannot be used on Heroes, or creeps above level \u003CANch,DataA2\u003E."
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_5831"
+      "Value": "Takes control of a target enemy unit. |nCharm cannot be used on Heroes, or creeps above level \u003CANch,DataA3\u003E."
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_1635"
+      "Value": "(azil)"
     }
   ]
 }

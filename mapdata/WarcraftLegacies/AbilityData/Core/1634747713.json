@@ -6,12 +6,14 @@
   "Modifications": [
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1718968929,
       "Type": 3,
       "Value": "B04F"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1935895905,
       "Value": 8
     },
@@ -24,13 +26,14 @@
     },
     {
       "Level": 1,
-      "Pointer": 2,
+      "Pointer": 1,
       "Id": 845246288,
       "Type": 2,
       "Value": 8
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1920296033,
       "Type": 2,
       "Value": 4
@@ -41,6 +44,7 @@
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1969514593,
       "Type": 2,
       "Value": 4
@@ -56,6 +60,7 @@
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1918989409,
       "Type": 3,
       "Value": "air,ground"

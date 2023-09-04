@@ -6,13 +6,14 @@
   "Modifications": [
     {
       "Id": 2037408359,
-      "Value": 2
+      "Value": ""
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1718840935,
       "Type": 3,
-      "Value": "TRIGSTR_3725"
+      "Value": "(Scourge)"
     }
   ]
 }

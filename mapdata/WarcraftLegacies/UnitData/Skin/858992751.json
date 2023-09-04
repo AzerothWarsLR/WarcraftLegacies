@@ -12,12 +12,12 @@
     },
     {
       "Id": 2020631157,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19640"
+      "Value": " (Fel Horde Magic)"
     },
     {
       "Id": 1818520949,
@@ -27,7 +27,7 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.85
+      "Value": ""
     },
     {
       "Id": 1935832437,
@@ -37,17 +37,17 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_7688"
+      "Value": "Shadowy gathering place for the Fel Horde\u0027s casters.|n|cfff5962dTrains:|R Necrolyte, Fel Warlock, Eredar Occultist, Eye of Grillok|n|cfff5962dResearches:|R Necrolyte Training, Fel Warlock Training, Eredar Occultist Training, Improved Shadow Infusion, Improved Firebolt|n|cfff5962dCan learn:|R Spiked Barricades"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_2779"
+      "Value": "Dark Enclave"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_2791"
+      "Value": "Build Dark Enclave"
     }
   ]
 }

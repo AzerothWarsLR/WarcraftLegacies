@@ -12,42 +12,44 @@
     },
     {
       "Id": 2020631137,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_9286"
+      "Value": "(Green - Farstrider, Dark Green - SI:7)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_10581"
+      "Value": "E"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_9288"
+      "Value": "Smoke Bomb"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_9289"
+      "Value": "Smoke Bomb"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_19086"
+      "Value": "Throws a smoke bomb in the midst of the enemy causing them to have a 100% chance to miss on attacks. Their movement speed is reduced by 5%.Lasts 4 seconds on units, and 2 seconds on heroes."
     },
     {
       "Id": 2019718497,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 2036495713,
-      "Value": 2
+      "Value": ""
     }
   ]
 }

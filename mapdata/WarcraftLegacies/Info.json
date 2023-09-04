@@ -1,12 +1,12 @@
 {
   "FormatVersion": 31,
-  "MapVersion": 28302,
+  "MapVersion": 28303,
   "EditorVersion": 6115,
   "GameVersion": "1.36.0.20257",
   "MapName": "Warcraft Legacies 3.6.0",
-  "MapAuthor": "TRIGSTR_15408",
-  "MapDescription": "TRIGSTR_15407",
-  "RecommendedPlayers": "TRIGSTR_15406",
+  "MapAuthor": "Lordsebas, HerrDave,YakaryBovine",
+  "MapDescription": "Support the team! https://www.patreon.com/lordsebas\r\n\r\nCheck out the Azeroth Wars Discord server to download the map and chat about the game. https://discord.gg/pnWZs69",
+  "RecommendedPlayers": "16 Players ",
   "CameraBounds": {
     "BottomLeft": {
       "X": -24064,
@@ -35,7 +35,7 @@
   "Tileset": 89,
   "LoadingScreenBackgroundNumber": 99,
   "LoadingScreenPath": "",
-  "LoadingScreenText": "TRIGSTR_11318",
+  "LoadingScreenText": "Support the team! https://www.patreon.com/lordsebas\r\nThank you so much to all our patrons for supporting us!\r\n\r\nFight over the control of Azeroth as one of over 16 factions from the Warcraft III campaign and more!\r\n\r\nLead Designers: Lord Sebas, YakaryBovine\r\n\r\nArtist and Modeler: HerrDave\r\nCoders: Tracy, Savantic, Naowsx\r\nDesigners: Hellborne\r\nDiscord link: https://discord.gg/4eGZnR5",
   "LoadingScreenTitle": "Warcraft Legacies 3.6.0",
   "LoadingScreenSubtitle": "",
   "GameDataSet": 2,
@@ -57,7 +57,7 @@
       "Controller": 1,
       "Race": 2,
       "Flags": 1,
-      "Name": "TRIGSTR_250",
+      "Name": "Frostwolf Clan",
       "StartPosition": {
         "X": -9344,
         "Y": -11456
@@ -72,7 +72,7 @@
       "Controller": 1,
       "Race": 1,
       "Flags": 1,
-      "Name": "TRIGSTR_246",
+      "Name": "Lordaeron",
       "StartPosition": {
         "X": 12928,
         "Y": 8448
@@ -85,7 +85,7 @@
       "Controller": 1,
       "Race": 4,
       "Flags": 1,
-      "Name": "TRIGSTR_249",
+      "Name": "Quel\u0027thalas",
       "StartPosition": {
         "X": 17728,
         "Y": 12672
@@ -100,7 +100,7 @@
       "Controller": 1,
       "Race": 3,
       "Flags": 1,
-      "Name": "TRIGSTR_243",
+      "Name": "Scourge",
       "StartPosition": {
         "X": -5504,
         "Y": 18560
@@ -115,7 +115,7 @@
       "Controller": 1,
       "Race": 1,
       "Flags": 1,
-      "Name": "TRIGSTR_247",
+      "Name": "Ironforge",
       "StartPosition": {
         "X": 12160,
         "Y": -3328
@@ -129,7 +129,7 @@
       "Controller": 1,
       "Race": 2,
       "Flags": 1,
-      "Name": "TRIGSTR_16174",
+      "Name": "Warsong",
       "StartPosition": {
         "X": -8448,
         "Y": -2752
@@ -144,7 +144,7 @@
       "Controller": 1,
       "Race": 2,
       "Flags": 1,
-      "Name": "TRIGSTR_245",
+      "Name": "Fel Horde",
       "StartPosition": {
         "X": -3136,
         "Y": -31040
@@ -159,7 +159,7 @@
       "Controller": 1,
       "Race": 1,
       "Flags": 1,
-      "Name": "TRIGSTR_248",
+      "Name": "Dalaran",
       "StartPosition": {
         "X": 9792,
         "Y": 2816
@@ -172,7 +172,7 @@
       "Controller": 1,
       "Race": 2,
       "Flags": 1,
-      "Name": "TRIGSTR_1328",
+      "Name": "Goblin",
       "StartPosition": {
         "X": -8896,
         "Y": -13504
@@ -184,7 +184,7 @@
       "Controller": 1,
       "Race": 1,
       "Flags": 1,
-      "Name": "TRIGSTR_253",
+      "Name": "Stormwind",
       "StartPosition": {
         "X": 7104,
         "Y": -15616
@@ -199,7 +199,7 @@
       "Controller": 1,
       "Race": 4,
       "Flags": 1,
-      "Name": "TRIGSTR_254",
+      "Name": "Druids",
       "StartPosition": {
         "X": -9344,
         "Y": 10560
@@ -214,7 +214,7 @@
       "Controller": 1,
       "Race": 4,
       "Flags": 1,
-      "Name": "TRIGSTR_1877",
+      "Name": "Draenei",
       "StartPosition": {
         "X": -20608,
         "Y": 8512
@@ -227,7 +227,7 @@
       "Controller": 1,
       "Race": 4,
       "Flags": 1,
-      "Name": "TRIGSTR_3202",
+      "Name": "Illidari",
       "StartPosition": {
         "X": 384,
         "Y": 5952
@@ -240,7 +240,7 @@
       "Controller": 1,
       "Race": 4,
       "Flags": 1,
-      "Name": "TRIGSTR_252",
+      "Name": "Sentinels",
       "StartPosition": {
         "X": -22592,
         "Y": -13696
@@ -255,7 +255,7 @@
       "Controller": 1,
       "Race": 1,
       "Flags": 1,
-      "Name": "TRIGSTR_15151",
+      "Name": "Kul Tiras",
       "StartPosition": {
         "X": 3904,
         "Y": -13440
@@ -268,7 +268,7 @@
       "Controller": 1,
       "Race": 3,
       "Flags": 1,
-      "Name": "TRIGSTR_16176",
+      "Name": "Legion",
       "StartPosition": {
         "X": 18816,
         "Y": -30784
@@ -279,31 +279,31 @@
     {
       "Flags": 11,
       "Players": -4500984,
-      "Name": "TRIGSTR_3547"
+      "Name": "Scourge, Legion"
     },
     {
       "Flags": 11,
       "Players": 134,
-      "Name": "TRIGSTR_2539"
+      "Name": "Lordaeron, Quelthalas, Dalaran"
     },
     {
       "Flags": 11,
       "Players": 289,
-      "Name": "TRIGSTR_4402"
+      "Name": "Frostwolf, Warsong, Goblin"
     },
     {
       "Flags": 11,
       "Players": 4195344,
-      "Name": "TRIGSTR_2619"
+      "Name": "Ironforge, Stormwind, Kultiras"
     },
     {
       "Flags": 11,
       "Players": 272384,
-      "Name": "TRIGSTR_5355"
+      "Name": "Druids, Draenei, Sentinels"
     },
     {
       "Players": 32832,
-      "Name": "TRIGSTR_19611"
+      "Name": "Fel Horde, Illidari,Both Crisis"
     }
   ],
   "UpgradeData": [

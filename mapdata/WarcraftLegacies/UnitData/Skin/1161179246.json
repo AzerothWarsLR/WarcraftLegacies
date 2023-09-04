@@ -12,12 +12,12 @@
     },
     {
       "Id": 2037408373,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_2214"
+      "Value": "(Sentinels-Elite)"
     },
     {
       "Id": 1818520949,
@@ -27,12 +27,12 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_1265"
+      "Value": "A"
     },
     {
       "Id": 2054188149,
       "Type": 2,
-      "Value": 78
+      "Value": ""
     },
     {
       "Id": 1831952757,
@@ -42,22 +42,22 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 1.1
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_2216"
+      "Value": "Shadowleaf"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_2217"
+      "Value": "Train Shadowleaf"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_2218"
+      "Value": "Exceptional archer trained by Shandris Feathermoon.|n|cfff5962dAbilities:|R  Shadow Strike, Blink, Evasion, Elune\u0027s Grace, Resilient Skin |n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Id": 1684960117,

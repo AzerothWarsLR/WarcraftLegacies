@@ -7,26 +7,26 @@
   "Modifications": [
     {
       "Id": 2020631157,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 2037408373,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_20090"
+      "Value": "(Draenei Farm)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_5098"
+      "Value": "W"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.85
+      "Value": ""
     },
     {
       "Id": 1935832437,
@@ -36,7 +36,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_066"
+      "Value": "Font of Arcane energy.|nProvides 10 food, which increases the maximum number of units that can be trained.|n|r|n|cff99b4d1Can only build 48."
     },
     {
       "Id": 1818520949,
@@ -51,12 +51,12 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_17816"
+      "Value": "Arcane Well"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_17817"
+      "Value": "Build Arcane Well"
     },
     {
       "Id": 1684960117,

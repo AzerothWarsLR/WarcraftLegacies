@@ -6,26 +6,26 @@
   "Modifications": [
     {
       "Id": 2020631157,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 2037408373,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_542"
+      "Value": "(Creep)"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 1.4
+      "Value": ""
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_543"
+      "Value": "Train Elder Voidwalker"
     }
   ]
 }

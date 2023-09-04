@@ -8,22 +8,22 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_2163"
+      "Value": "(Legion)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_5172"
+      "Value": "Q"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.8
+      "Value": ""
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_17955"
+      "Value": "Elite fighters of the Legion.|n|cfff5962dAbilities: |RSummon Fel Hounds|n|n|cff99b4d1Can only summon 12.|r|n|cffffcc00Attacks land and air units.|r"
     }
   ]
 }

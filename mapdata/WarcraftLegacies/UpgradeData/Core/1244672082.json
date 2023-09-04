@@ -28,12 +28,12 @@
     {
       "Id": 828794215,
       "Type": 3,
-      "Value": "TRIGSTR_14984"
+      "Value": "TRIGSTR_14311"
     },
     {
       "Id": 845571431,
       "Type": 3,
-      "Value": "TRIGSTR_14985"
+      "Value": "TRIGSTR_14541"
     },
     {
       "Id": 862348647,
@@ -54,6 +54,7 @@
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1902473831,
       "Type": 3,
       "Value": "R04R"

@@ -13,11 +13,11 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_3562"
+      "Value": "Z"
     },
     {
       "Id": 1919447925,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1935832437,
@@ -27,22 +27,22 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_12653"
+      "Value": "Horrifying citadel of the Qiraji.|n|cfff5962dTrains:|R Drone, Colossus|n|R|n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_16507"
+      "Value": "Nexus"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_16508"
+      "Value": "Upgrade to Nexus"
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_16509"
+      "Value": "(C\u0027thun building)"
     },
     {
       "Id": 1818520949,
@@ -51,16 +51,16 @@
     },
     {
       "Id": 1651270517,
-      "Value": 150
+      "Value": ""
     },
     {
       "Id": 1735156597,
-      "Value": 220
+      "Value": ""
     },
     {
       "Id": 1685218677,
       "Type": 1,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1831952757,
@@ -70,7 +70,7 @@
     {
       "Id": 828468597,
       "Type": 2,
-      "Value": 0.5
+      "Value": ""
     }
   ]
 }

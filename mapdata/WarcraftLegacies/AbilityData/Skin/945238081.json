@@ -12,22 +12,22 @@
     },
     {
       "Id": 2020631137,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_7381"
+      "Value": "(Frozen Throne)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_14222"
+      "Value": "Z"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_7383"
+      "Value": "Recall"
     },
     {
       "Id": 1952543841,
@@ -36,15 +36,17 @@
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_7384"
+      "Value": "Recall"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_7385"
+      "Value": "Teleports the target unit to the Frozen Throne."
     }
   ]
 }

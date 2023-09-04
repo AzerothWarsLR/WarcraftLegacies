@@ -13,23 +13,24 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_12378"
+      "Value": "(Elekk Knight)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_20392"
+      "Value": "E"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_17525"
+      "Value": "Salvation"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_18081"
+      "Value": "Salvation"
     },
     {
       "Id": 1918989665,
@@ -39,49 +40,56 @@
     {
       "Id": 1802007905,
       "Type": 3,
-      "Value": "TRIGSTR_20459"
+      "Value": "E"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_20838"
+      "Value": "Increases a target non-hero friendly unit\u0027s armor by 1000 and health regeneration by 200 for 10 seconds."
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_18651"
+      "Value": "Unholy Armor"
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_18670"
+      "Value": "Unholy Armor"
     },
     {
       "Level": 4,
+      "Pointer": 4,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_19068"
+      "Value": "Unholy Armor"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_19101"
+      "Value": "Increases a target friendly unit\u0027s armor by \u003CA0HG,DataB2\u003E for \u003CA0HG,Dur2\u003E seconds at the cost of 6% of its current hit points."
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_19993"
+      "Value": "Increases a target friendly unit\u0027s armor by \u003CA0HG,DataB3\u003E for \u003CA0HG,Dur3\u003E seconds at the cost of 6% of its current hit points."
     },
     {
       "Level": 4,
+      "Pointer": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_20126"
+      "Value": "Increases a target friendly unit\u0027s armor by \u003CA0HG,DataB4\u003E for \u003CA0HG,Dur4\u003E seconds at the cost of 6% of its current hit points."
     }
   ]
 }

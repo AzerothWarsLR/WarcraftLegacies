@@ -28,7 +28,7 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_3027"
+      "Value": "(All)"
     },
     {
       "Id": 1952540001,
@@ -38,12 +38,12 @@
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_14497"
+      "Value": "X"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_12896"
+      "Value": "Extract Vial"
     },
     {
       "Id": 1952543841,
@@ -57,23 +57,25 @@
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_15420"
+      "Value": "Extract Vial"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_4339"
+      "Value": "Extracts a single vial containing a small portion of the Sunwell\u0027s power."
     },
     {
       "Id": 2037408353,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 2020631137,
-      "Value": 1
+      "Value": ""
     }
   ]
 }

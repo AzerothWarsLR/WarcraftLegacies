@@ -13,7 +13,7 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_11694"
+      "Value": "(Grey - Rexxar)"
     },
     {
       "Id": 1936090465,
@@ -23,12 +23,12 @@
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_12176"
+      "Value": "R"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_12724"
+      "Value": "Mok\u0027Nathal Avatar"
     },
     {
       "Id": 1918988897,
@@ -38,53 +38,59 @@
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_12178"
+      "Value": "R"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_12726"
+      "Value": "Learn Mok\u0027Nathal Avatar - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_12727"
+      "Value": "When Mok\u0027Nathal Avatar is activated, Rexxar gains bonus armor, bonus hit points, bonus damage and spell immunity.|nLasts 45 seconds.|n|n|cffffcc00Level 1|r - 2 bonus armor, 450 bonus hit points, 15 bonus damage.|n|cffffcc00Level 2|r - 4 bonus armor, 900 bonus hit points, 30 bonus damage.|n|cffffcc00Level 3|r - 6 bonus armor, 1350 bonus hit points, 45 bonus damage"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_12728"
+      "Value": "Mok\u0027Nathal Avatar - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_12729"
+      "Value": "Mok\u0027Nathal Avatar - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_12730"
+      "Value": "Mok\u0027Nathal Avatar - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_12731"
+      "Value": "Activate Avatar to give Rexxar \u003CA01C,DataA1\u003E bonus armor, \u003CA01C,DataB1\u003E bonus hit points, \u003CA01C,DataC1\u003E bonus damage and spell immunity. |nLasts \u003CA01C,Dur1\u003E seconds."
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_12732"
+      "Value": "Activate Avatar to give Rexxar \u003CA01C,DataA2\u003E bonus armor, \u003CA01C,DataB2\u003E bonus hit points, \u003CA01C,DataC2\u003E bonus damage and spell immunity. |nLasts \u003CA01C,Dur2\u003E seconds."
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_12733"
+      "Value": "Activate Avatar to give Rexxar \u003CA01C,DataA3\u003E bonus armor, \u003CA01C,DataB3\u003E bonus hit points, \u003CA01C,DataC3\u003E bonus damage and spell immunity. |nLasts \u003CA01C,Dur3\u003E seconds."
     },
     {
       "Id": 1918989665,
@@ -93,9 +99,10 @@
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 829715809,
       "Type": 3,
-      "Value": "TRIGSTR_12734"
+      "Value": "Deactivate A|cffffcc00v|ratar"
     }
   ]
 }

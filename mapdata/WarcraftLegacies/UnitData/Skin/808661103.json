@@ -12,12 +12,12 @@
     },
     {
       "Id": 2020631157,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19647"
+      "Value": " (Fel Horde T3)"
     },
     {
       "Id": 1818520949,
@@ -27,7 +27,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_1531"
+      "Value": "C"
     },
     {
       "Id": 1935832437,
@@ -37,7 +37,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_7694"
+      "Value": "Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Peon, Executioner, Fel Death Knight, Infernal Juggernaut|n|cfff5962dResearches:|R Full Scale Escalation|n|cfff5962dAbilities:|R Fel Energy|n|cfff5962dCan learn:|R Spiked Barricades"
     }
   ]
 }

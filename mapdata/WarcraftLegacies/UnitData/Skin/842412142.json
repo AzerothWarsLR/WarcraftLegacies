@@ -8,22 +8,22 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_3825"
+      "Value": "(goblin)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_2128"
+      "Value": "Q"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_2261"
+      "Value": "Train Shredder"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_6529"
+      "Value": "Goblin Shredders.|n|cfff5962dAbilities:|R Gather, Emergency Repairs, Oil Lubrification, Goblin Pilot, Oil Consumer|n|cfff5962dCan Learn:|R Cleaving Attack|n|n|cff99b4d1Can only build 12.|n|cffffcc00Attacks land units and trees.|r"
     }
   ]
 }

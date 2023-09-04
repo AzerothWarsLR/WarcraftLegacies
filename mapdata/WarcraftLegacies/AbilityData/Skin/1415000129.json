@@ -12,34 +12,36 @@
     },
     {
       "Id": 2020631137,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_7287"
+      "Value": "(Blue Broodmother)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_8514"
+      "Value": "Q"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_7289"
+      "Value": "Summon the Brood"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_7290"
+      "Value": "Summon the Forest Spiders (|cffffcc00Q|r)"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_7291"
+      "Value": "Summons 24 small Spiders that have poison attacks.|nLasts \u003CACs7,Dur1\u003E seconds.|n|n|cffffcc00Attacks land units.|r"
     }
   ]
 }

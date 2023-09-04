@@ -12,7 +12,7 @@
     },
     {
       "Id": 2020631157,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1635083125,
@@ -22,7 +22,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_4893"
+      "Value": "(Scarlet)"
     },
     {
       "Id": 1818520949,
@@ -32,12 +32,12 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_5566"
+      "Value": "E"
     },
     {
       "Id": 2053990773,
       "Type": 2,
-      "Value": 90
+      "Value": ""
     },
     {
       "Id": 1831952757,
@@ -47,17 +47,17 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.75
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_18147"
+      "Value": "Archangel"
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 1.3
+      "Value": ""
     },
     {
       "Id": 1769173877,
@@ -67,12 +67,12 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_18148"
+      "Value": "Train Archangel"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_8851"
+      "Value": "Strongest Warriors of the Light.|n|cfff5962dAbilities:|R Judgement, Resistant Skin|n|cff99b4d1Can only train 3.|r|n|cffffcc00Attacks land units.|r"
     },
     {
       "Id": 1684960117,

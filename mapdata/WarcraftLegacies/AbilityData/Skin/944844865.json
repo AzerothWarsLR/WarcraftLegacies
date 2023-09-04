@@ -7,30 +7,31 @@
   "Modifications": [
     {
       "Id": 2020631137,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 2037408353,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_5565"
+      "Value": "(Teal - Zuluhed Ult)"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_8245"
+      "Value": "Burns nearby enemy units for 25 points of damage per second."
     },
     {
       "Id": 2019718497,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 2036495713,
-      "Value": 1
+      "Value": ""
     }
   ]
 }

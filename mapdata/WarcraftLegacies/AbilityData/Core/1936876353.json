@@ -6,30 +6,34 @@
   "Modifications": [
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 1718968929,
       "Type": 3,
       "Value": "Bcrs"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 1935895905,
       "Value": 10
     },
     {
       "Level": 2,
-      "Pointer": 1,
+      "Pointer": 2,
       "Id": 7565891,
       "Type": 2,
       "Value": 0.6
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 1920296033,
       "Type": 2,
       "Value": 120
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 1969514593,
       "Type": 2,
       "Value": 60
@@ -40,18 +44,21 @@
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 1851880033,
       "Type": 2,
       "Value": 700
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 1918989409,
       "Type": 3,
       "Value": "air,ground,enemy,organic,neutral"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1935895905,
       "Value": 10
     },

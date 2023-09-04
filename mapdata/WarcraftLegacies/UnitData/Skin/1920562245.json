@@ -7,37 +7,37 @@
     {
       "Id": 1953980789,
       "Type": 3,
-      "Value": "TRIGSTR_1337"
+      "Value": "Revive High Priestess"
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_1338"
+      "Value": "(Sentinels)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_1102"
+      "Value": "W"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.9
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_1340"
+      "Value": "High Priestess of Elune "
     },
     {
       "Id": 1869770869,
       "Type": 3,
-      "Value": "TRIGSTR_1341"
+      "Value": "Tyrande Whisperwind"
     },
     {
       "Id": 1919972469,
       "Type": 3,
-      "Value": "TRIGSTR_1342"
+      "Value": "Revive High Priestess"
     },
     {
       "Id": 1769173877,
@@ -47,11 +47,11 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_17931"
+      "Value": "Mystical Hero, adept at empowering your backline and dealing magic damage over time.|n|cfff5962dAbilities:|r Moonlight, Hide |n|cfff5962dCan learn:|R Rain of Arrows, Words of Protection, Trueshot Aura, Starfall|n|n|cffffcc00Attacks land and air units.|R"
     },
     {
       "Id": 1667462261,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1818520949,
@@ -61,11 +61,11 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_17105"
+      "Value": "Summon Tyrande"
     },
     {
       "Id": 2020631157,
-      "Value": 1
+      "Value": ""
     }
   ]
 }

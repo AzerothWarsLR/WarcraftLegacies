@@ -6,36 +6,36 @@
   "Modifications": [
     {
       "Id": 2020631157,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 2037408373,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_041"
+      "Value": "(Scourge)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_281"
+      "Value": "D"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.85
+      "Value": ""
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_297"
+      "Value": "Sacrifice"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_298"
+      "Value": "Kills the Acolyte to raise a Shade from its corpse.|n|cfff5962dAbilities:|R Permanent Invisibility, True Sight"
     }
   ]
 }

@@ -12,12 +12,12 @@
     },
     {
       "Id": 2037408373,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_8889"
+      "Value": "(Legion Altar)"
     },
     {
       "Id": 1818520949,
@@ -27,27 +27,27 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_1018"
+      "Value": "X"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.85
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_3506"
+      "Value": "Altar of Destruction"
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 3.6
+      "Value": ""
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_3508"
+      "Value": "Summon Altar of Destruction"
     },
     {
       "Id": 1935832437,
@@ -57,7 +57,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_1373"
+      "Value": "Revives slain Heroes and demi-heroes."
     }
   ]
 }

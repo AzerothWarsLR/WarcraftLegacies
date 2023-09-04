@@ -17,7 +17,7 @@
     },
     {
       "Id": 1735156597,
-      "Value": 170
+      "Value": ""
     },
     {
       "Id": 1831952757,
@@ -27,12 +27,12 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 1.15
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_2802"
+      "Value": "Control Point Defender"
     },
     {
       "Id": 1935832437,
@@ -42,7 +42,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_2834"
+      "Value": "(Dalaran)"
     }
   ]
 }

@@ -7,22 +7,23 @@
   "Modifications": [
     {
       "Id": 2020631137,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 2037408353,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_1602"
+      "Value": "(Doom Lord)"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_6870"
+      "Value": "Gives a 25% chance that an attack will deal 50 damage to nearby units."
     }
   ]
 }

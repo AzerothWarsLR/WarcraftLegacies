@@ -8,22 +8,22 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19900"
+      "Value": " (Kul Tiras Tower)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_2772"
+      "Value": "Z"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_15997"
+      "Value": "Improved Guard Tower"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_15998"
+      "Value": "Upgrade to Improved Guard Tower"
     },
     {
       "Id": 1935832437,
@@ -33,12 +33,12 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_2998"
+      "Value": "Primary defensive structure. |n|n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 1.1
+      "Value": ""
     },
     {
       "Id": 1818520949,

@@ -13,12 +13,12 @@
     {
       "Id": 1885959270,
       "Type": 3,
-      "Value": "TRIGSTR_13622"
+      "Value": "Sentinel Battle Cry"
     },
     {
       "Id": 1700951398,
       "Type": 3,
-      "Value": "TRIGSTR_13623"
+      "Value": "This unit has heard the Sentinel Battle Cry; its attack damage and defense have been increased."
     },
     {
       "Id": 1952543846,

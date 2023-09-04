@@ -8,17 +8,17 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_18347"
+      "Value": "Monastery Commander"
     },
     {
       "Id": 1869770869,
       "Type": 3,
-      "Value": "TRIGSTR_17287"
+      "Value": "Renault Mograine"
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1818520949,
@@ -28,22 +28,22 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_18378"
+      "Value": "Warrior Hero, adept at Healing and Vengeance.|n|cfff5962dAbilities:|r Divine Shield|n|cfff5962dCan Learn:|R Holy Light, Holy Shackles, Retribution Aura, Flame Inferno|n|n|cffffcc00Attacks land units.|R"
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_15368"
+      "Value": "(Scarlet)"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_18349"
+      "Value": "Summon Renault"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_5158"
+      "Value": "W"
     },
     {
       "Id": 1868786037,
@@ -58,11 +58,11 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.97
+      "Value": ""
     },
     {
       "Id": 2020631157,
-      "Value": 1
+      "Value": ""
     }
   ]
 }

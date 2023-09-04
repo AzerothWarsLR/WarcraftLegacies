@@ -12,36 +12,36 @@
     },
     {
       "Id": 2020631157,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 2037408373,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1936024681,
       "Type": 3,
-      "Value": "TRIGSTR_6430"
+      "Value": "Summons Gemcrafter"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_13858"
+      "Value": "X"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_17967"
+      "Value": "Summon Gemcrafter"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_17968"
+      "Value": "Purchase Summon Gemcrafter"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_17969"
+      "Value": "Summons Gemcrafter"
     }
   ]
 }

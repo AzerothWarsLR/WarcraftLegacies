@@ -7,12 +7,12 @@
   "Modifications": [
     {
       "Id": 1651270517,
-      "Value": 101
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_707"
+      "Value": "(C\u0027thun, Worker)"
     },
     {
       "Id": 1818520949,
@@ -21,32 +21,32 @@
     },
     {
       "Id": 1735156597,
-      "Value": 221
+      "Value": ""
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_1593"
+      "Value": "Q"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.5
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_16473"
+      "Value": "Drone"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_16495"
+      "Value": "Train Drone"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_1413"
+      "Value": "Worshipper and structure summoner of C\u0027thun.|n|cfff5962dAbilities:|R Unsummon Building, Restore, Gather|n|n|cffffcc00Attacks land units and trees.|r"
     },
     {
       "Id": 1868786037,

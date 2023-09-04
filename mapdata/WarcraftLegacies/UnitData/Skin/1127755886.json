@@ -7,36 +7,36 @@
   "Modifications": [
     {
       "Id": 2020631157,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 2037408373,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_1684"
+      "Value": "(Fel Horde-Portal)"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 1.4
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_1993"
+      "Value": "Voidcrusher"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_1994"
+      "Value": "Summon Voidcrusher"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_1995"
+      "Value": "Immense collection of fel void essence and hulking destroyer of the Burning Crusade.|n|cfff5962dAbilities:|R Devour Magic, Frost Attack |n|n|cffffcc00Attacks land and air units.|r"
     }
   ]
 }

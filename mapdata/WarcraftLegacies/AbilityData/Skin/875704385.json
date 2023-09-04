@@ -8,60 +8,66 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_7448"
+      "Value": "(Cho\u0027gall - DUMMY CAST)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_15058"
+      "Value": "Q"
     },
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_15061"
+      "Value": "Q"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_7482"
+      "Value": "Learn Forked Lightning (|cffffcc00Q|r) - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_8793"
+      "Value": "Calls forth a cone of lightning to damage enemies. |n|n|cffffcc00Level 1|r - \u003CANfl,DataA1\u003E damage per unit. |n|cffffcc00Level 2|r - \u003CANfl,DataA2\u003E damage per unit. |n|cffffcc00Level 3|r - \u003CANfl,DataA3\u003E damage per unit. |n|cffffcc00Level 4|r - \u003CANfl,DataA4\u003E damage per unit."
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
       "Value": ""
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
       "Value": ""
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": ""
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
       "Value": ""
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
       "Value": ""
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": ""
@@ -69,7 +75,7 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_2693"
+      "Value": "Thunder Fists"
     }
   ]
 }

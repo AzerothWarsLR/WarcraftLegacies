@@ -22,16 +22,16 @@
     },
     {
       "Id": 2020631157,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 2037408373,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19627"
+      "Value": " (Legion T1)"
     },
     {
       "Id": 1818520949,
@@ -41,7 +41,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_1664"
+      "Value": "Q"
     },
     {
       "Id": 1831952757,
@@ -51,17 +51,17 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.7
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_2346"
+      "Value": "Dormant Spire"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_2391"
+      "Value": "Summon Dormant Spire"
     },
     {
       "Id": 1935832437,
@@ -71,7 +71,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_8637"
+      "Value": "A gathering point for the followers of the Burning Legion.|n|cfff5962dTrains:|R Legion Herald |n|cfff5962dResearches:|R Rematerialization |n|n|cfff5962dUpgrades Into:|R Burning Citadel|n|n"
     },
     {
       "Id": 1684960117,

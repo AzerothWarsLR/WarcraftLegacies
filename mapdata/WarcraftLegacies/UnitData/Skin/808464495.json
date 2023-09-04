@@ -17,21 +17,21 @@
     },
     {
       "Id": 2020631157,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1667462261,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_1818"
+      "Value": "(C\u0027thun Elites)"
     },
     {
       "Id": 1685218677,
       "Type": 1,
-      "Value": 100
+      "Value": ""
     },
     {
       "Id": 1818520949,
@@ -41,52 +41,52 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_1659"
+      "Value": "W"
     },
     {
       "Id": 2054188149,
       "Type": 2,
-      "Value": 130
+      "Value": ""
     },
     {
       "Id": 1886940533,
       "Type": 1,
-      "Value": 30
+      "Value": ""
     },
     {
       "Id": 1920494965,
       "Type": 1,
-      "Value": 30
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_1820"
+      "Value": "Silithid Colossus"
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 3.2
+      "Value": ""
     },
     {
       "Id": 1751675765,
       "Type": 1,
-      "Value": 280
+      "Value": ""
     },
     {
       "Id": 2003334005,
       "Type": 1,
-      "Value": 280
+      "Value": ""
     },
     {
       "Id": 2020111221,
       "Type": 1,
-      "Value": 112
+      "Value": ""
     },
     {
       "Id": 2036888437,
       "Type": 1,
-      "Value": 112
+      "Value": ""
     },
     {
       "Id": 1634759541,
@@ -96,12 +96,12 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_1821"
+      "Value": "Train [|cffffcc00W|r] - Silithid Colossus"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_1822"
+      "Value": "An incredibly powerful warrior. Can use Impale, Locus Swarm, Wind Walk and Bloodbath. |n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land units.|r"
     },
     {
       "Id": 1684960117,
@@ -110,15 +110,15 @@
     },
     {
       "Id": 1919705973,
-      "Value": 222
+      "Value": ""
     },
     {
       "Id": 1735156597,
-      "Value": 200
+      "Value": ""
     },
     {
       "Id": 1651270517,
-      "Value": 150
+      "Value": ""
     }
   ]
 }

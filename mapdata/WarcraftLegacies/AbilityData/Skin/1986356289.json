@@ -7,18 +7,19 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_5266"
+      "Value": "(Kodo Beast)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_6611"
+      "Value": "Q"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_5156"
+      "Value": "Consumes an enemy unit, killing it instantly. Heals the caster for 50% of its hit points."
     }
   ]
 }

@@ -8,12 +8,12 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_12659"
+      "Value": "Crisis Faction Picker"
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_20576"
+      "Value": "(old gods)"
     },
     {
       "Id": 1768841589,
@@ -28,7 +28,7 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.7
+      "Value": ""
     }
   ]
 }

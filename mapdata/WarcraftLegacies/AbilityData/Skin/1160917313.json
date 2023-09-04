@@ -12,34 +12,36 @@
     },
     {
       "Id": 2020631137,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_20836"
+      "Value": "(Flamekeeper-Sunfury )"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_20246"
+      "Value": "E"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_18798"
+      "Value": "Flame Shield"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_18799"
+      "Value": "Flame Shield"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_20837"
+      "Value": "Forms a shield of flames around a target unit, dealing 20 damage per second to units around it. |nLasts 20 seconds. Lasts 10 seconds on heroes."
     }
   ]
 }

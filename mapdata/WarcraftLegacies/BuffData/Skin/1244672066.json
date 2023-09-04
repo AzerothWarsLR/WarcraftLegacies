@@ -13,7 +13,7 @@
     {
       "Id": 1885959270,
       "Type": 3,
-      "Value": "TRIGSTR_14827"
+      "Value": "Naval Aura"
     },
     {
       "Id": 1952543846,
@@ -23,12 +23,12 @@
     {
       "Id": 1700951398,
       "Type": 3,
-      "Value": "TRIGSTR_14828"
+      "Value": "This unit has increased movement and attack speed."
     },
     {
       "Id": 1718840934,
       "Type": 3,
-      "Value": "TRIGSTR_14829"
+      "Value": " (Theramore Variant)"
     }
   ]
 }

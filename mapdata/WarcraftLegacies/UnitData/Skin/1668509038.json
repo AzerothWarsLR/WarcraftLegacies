@@ -6,62 +6,62 @@
   "Modifications": [
     {
       "Id": 2020631157,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_18821"
+      "Value": " (Illidari)"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 1.2
+      "Value": ""
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_487"
+      "Value": "W"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_12543"
+      "Value": "Train Mur\u0027gul Shadowcaster"
     },
     {
       "Id": 1751675765,
       "Type": 1,
-      "Value": 140
+      "Value": ""
     },
     {
       "Id": 2003334005,
       "Type": 1,
-      "Value": 140
+      "Value": ""
     },
     {
       "Id": 2020111221,
       "Type": 1,
-      "Value": 50
+      "Value": ""
     },
     {
       "Id": 2036888437,
       "Type": 1,
-      "Value": 50
+      "Value": ""
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_17110"
+      "Value": "Mystic caster of the Naga.  |n|cfff5962dAbilities:|r Curse.|n|cfff5962dCan Learn:|R Dispel Magic, Healing Ward.|n|n|cffffcc00Attacks land and air units."
     },
     {
       "Id": 1853186933,
       "Type": 3,
-      "Value": "TRIGSTR_609"
+      "Value": "Initiate,Adept,Master"
     },
     {
       "Id": 1953850229,
       "Type": 3,
-      "Value": "TRIGSTR_13449"
+      "Value": "- Curse,- Curse|n- Dispel,- Curse|n- Dispel|n- Healing Ward"
     },
     {
       "Id": 1635083125,

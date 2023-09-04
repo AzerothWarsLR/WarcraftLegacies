@@ -6,12 +6,12 @@
   "Modifications": [
     {
       "Id": 2020631137,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_5070"
+      "Value": "(Real)"
     }
   ]
 }

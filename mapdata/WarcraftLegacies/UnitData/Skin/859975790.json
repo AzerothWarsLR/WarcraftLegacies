@@ -12,12 +12,12 @@
     },
     {
       "Id": 2037408373,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_20069"
+      "Value": "(Yogg Magic)"
     },
     {
       "Id": 1818520949,
@@ -27,17 +27,17 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.85
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_7359"
+      "Value": "Shadow Lair"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_7441"
+      "Value": "Build Shadow Lair"
     },
     {
       "Id": 1935832437,
@@ -47,7 +47,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_7452"
+      "Value": "Primary spellcaster production building.|n|r|cfff5962dTrains:|R Sorcerer, Fateweaver, Forgotten One|n|cfff5962dResearches:|R Sorcerer Adept Training, Fateweaver Adept Training"
     },
     {
       "Id": 1684960117,

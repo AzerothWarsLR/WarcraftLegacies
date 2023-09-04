@@ -12,17 +12,17 @@
     },
     {
       "Id": 2020631157,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_16429"
+      "Value": "(Twilight)"
     },
     {
       "Id": 1685218677,
       "Type": 1,
-      "Value": 20
+      "Value": ""
     },
     {
       "Id": 1818520949,
@@ -32,7 +32,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_4263"
+      "Value": "W"
     },
     {
       "Id": 1831952757,
@@ -42,37 +42,37 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_6953"
+      "Value": "Phase Grenadier"
     },
     {
       "Id": 1751675765,
       "Type": 1,
-      "Value": 120
+      "Value": ""
     },
     {
       "Id": 2003334005,
       "Type": 1,
-      "Value": 120
+      "Value": ""
     },
     {
       "Id": 2020111221,
       "Type": 1,
-      "Value": 50
+      "Value": ""
     },
     {
       "Id": 2036888437,
       "Type": 1,
-      "Value": 50
+      "Value": ""
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_7002"
+      "Value": "Train Phase Grenadier"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_7008"
+      "Value": "Desperate Cultist Mage.|n|cfff5962dAbilities:|R Slow|n|n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Id": 1684960117,
@@ -82,7 +82,7 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.7
+      "Value": ""
     }
   ]
 }

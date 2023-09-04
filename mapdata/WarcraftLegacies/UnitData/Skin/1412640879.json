@@ -7,26 +7,26 @@
   "Modifications": [
     {
       "Id": 2020631157,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 2037408373,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19945"
+      "Value": " (Goblin Farm)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_3966"
+      "Value": "W"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.85
+      "Value": ""
     },
     {
       "Id": 1935832437,
@@ -36,7 +36,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_3672"
+      "Value": "Small Goblin House.|nProvides 10 food, which increases the maximum number of units that can be trained."
     },
     {
       "Id": 1818520949,
@@ -46,7 +46,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_19946"
+      "Value": "Bunker"
     }
   ]
 }

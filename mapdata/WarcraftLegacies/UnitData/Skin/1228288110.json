@@ -12,12 +12,12 @@
     },
     {
       "Id": 1667462261,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_2196"
+      "Value": "(C\u0027thun Silithid Warrior)"
     },
     {
       "Id": 1818520949,
@@ -27,27 +27,27 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_2024"
+      "Value": "Q"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.8
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_2198"
+      "Value": "Silithid Warrior"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_2199"
+      "Value": "Train Silithid Warrior"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_2200"
+      "Value": "Fierce Silithid warrior with poison stings. Has Poison Sting and Charge. |n|n|cffffcc00Attacks land units.|r"
     },
     {
       "Id": 1684960117,
@@ -56,15 +56,15 @@
     },
     {
       "Id": 1919705973,
-      "Value": 222
+      "Value": ""
     },
     {
       "Id": 1735156597,
-      "Value": 222
+      "Value": ""
     },
     {
       "Id": 1651270517,
-      "Value": 222
+      "Value": ""
     }
   ]
 }

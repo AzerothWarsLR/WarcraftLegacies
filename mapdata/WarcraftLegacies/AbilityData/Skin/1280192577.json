@@ -8,68 +8,74 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_11011"
+      "Value": " (Putress)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_12966"
+      "Value": "R"
     },
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_12968"
+      "Value": "R"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_124"
+      "Value": "Learn Acid Rain - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_125"
+      "Value": "Causes rains of acid energy to pour down in a large area, damaging enemy units.|nLasts \u003CAEtq,Dur1\u003E seconds. |n|n|cffffcc00Level 1|r - Deals 20 hit points per second. 180 seconds cooldown. |n|cffffcc00Level 2|r - Deals 25 hit points per second. 165 seconds cooldown. |n|cffffcc00Level 3|r - Deals 35 hit points per second. 150 seconds cooldown. "
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_126"
+      "Value": "Acid Rain - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_127"
+      "Value": "Acid Rain - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_128"
+      "Value": "Acid Rain - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_6090"
+      "Value": "Causes rains of healing energy to pour down in a large area, healing friendly allied units for 30 hit points per second. |nLasts 20 seconds."
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_6091"
+      "Value": "Causes rains of healing energy to pour down in a large area, healing friendly allied units for 40 hit points per second. |nLasts 20 seconds."
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_6092"
+      "Value": "Causes rains of healing energy to pour down in a large area, healing friendly allied units for 50 hit points per second. |nLasts 20 seconds."
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_132"
+      "Value": "Acid Rain"
     }
   ]
 }

@@ -6,36 +6,36 @@
   "Modifications": [
     {
       "Id": 2020631157,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 2037408373,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_1112"
+      "Value": "(Sentinels)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_1113"
+      "Value": "D"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.85
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_1114"
+      "Value": "Roost"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_1115"
+      "Value": "Build Roost"
     },
     {
       "Id": 1935832437,
@@ -45,7 +45,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_21234"
+      "Value": "Resting perch for the wild allies of the Sentinels.|n|cfff5962dTrains:|R Hippogryph Rider, Chimaera, Moon Rider|n|cfff5962dResearches:|R Improved Lightning Barrage"
     }
   ]
 }

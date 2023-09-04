@@ -6,22 +6,22 @@
   "Modifications": [
     {
       "Id": 2020631157,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_1136"
+      "Value": "(Sentinels)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_990"
+      "Value": "W"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_21077"
+      "Value": "Flying two headed Dragon. |n|cfff5962dAbilities:|R Corrisive Breath |n|cfff5962dCan learn:|R Lightning Barrage|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land units.|r"
     }
   ]
 }

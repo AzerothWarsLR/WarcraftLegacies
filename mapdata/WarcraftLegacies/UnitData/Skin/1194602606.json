@@ -8,12 +8,12 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_1606"
+      "Value": "(Sentinels)"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_2422"
+      "Value": "Vault of the Wardens"
     },
     {
       "Id": 1935832437,
@@ -23,25 +23,25 @@
     {
       "Id": 1920494965,
       "Type": 1,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1886940533,
       "Type": 1,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.8
+      "Value": ""
     },
     {
       "Id": 1735156597,
-      "Value": 200
+      "Value": ""
     },
     {
       "Id": 1919705973,
-      "Value": 125
+      "Value": ""
     }
   ]
 }

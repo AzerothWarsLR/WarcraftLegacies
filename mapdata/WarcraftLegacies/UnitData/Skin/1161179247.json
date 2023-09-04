@@ -18,12 +18,12 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_909"
+      "Value": "Dragonmaw Port"
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 7.5
+      "Value": ""
     },
     {
       "Id": 1935832437,
@@ -33,7 +33,7 @@
     {
       "Id": 828468597,
       "Type": 2,
-      "Value": 0.5
+      "Value": ""
     },
     {
       "Id": 1831952757,
@@ -43,7 +43,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_20144"
+      "Value": " (Dragonmaw)"
     }
   ]
 }

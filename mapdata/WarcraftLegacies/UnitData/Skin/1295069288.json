@@ -12,20 +12,20 @@
     },
     {
       "Id": 1651270517,
-      "Value": 200
+      "Value": ""
     },
     {
       "Id": 2020631157,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 2037408373,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_2041"
+      "Value": "(Ironforge Demi)"
     },
     {
       "Id": 1818520949,
@@ -34,17 +34,17 @@
     },
     {
       "Id": 1735156597,
-      "Value": 200
+      "Value": ""
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_1638"
+      "Value": "A"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.75
+      "Value": ""
     },
     {
       "Id": 1819503989,
@@ -54,22 +54,22 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_3409"
+      "Value": "Baelgun Flamebeard"
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_2942"
+      "Value": "Revive Baelgun Flamebeard"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_3544"
+      "Value": "Second in command of Muradin\u0027s expedition force, Baelgun is a stout scout of bristling fire and wily leadership.|n|n|cfff5962dAbilities:|R Mithril Plated Armor, Resistant Skin, Explorer\u0027s Flare, Dispel Magic|n|n|cffffcc00Attacks land units.|R"
     },
     {
       "Id": 1684960117,

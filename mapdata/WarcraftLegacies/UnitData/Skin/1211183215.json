@@ -13,27 +13,27 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_260"
+      "Value": "(twilight)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_4228"
+      "Value": "Q"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.85
+      "Value": ""
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_7009"
+      "Value": "Crazed Orc Warriors.|n|cfff5962dAbilities:|R Charge, Bash|R|n|cfff5962d|n|cffffcc00Attacks land units.|r"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_16417"
+      "Value": "Twilight Hammer Enforcer"
     },
     {
       "Id": 1818520949,
@@ -48,7 +48,7 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_16418"
+      "Value": "Train Twilight Hammer Enforcer"
     },
     {
       "Id": 1684960117,

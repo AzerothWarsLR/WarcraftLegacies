@@ -7,18 +7,19 @@
   "Modifications": [
     {
       "Id": 2020631137,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_10840"
+      "Value": "(Pink - Thunder Bluff)"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_10841"
+      "Value": "Gives 10% extra damage to the attacks of nearby friendly units."
     }
   ]
 }

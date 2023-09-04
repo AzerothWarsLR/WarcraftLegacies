@@ -13,22 +13,22 @@
     {
       "Id": 1885959270,
       "Type": 3,
-      "Value": "TRIGSTR_13439"
+      "Value": "Invigoration"
     },
     {
       "Id": 1700951398,
       "Type": 3,
-      "Value": "TRIGSTR_13440"
+      "Value": "Restores health by 1% per second."
     },
     {
       "Id": 1835101798,
       "Type": 3,
-      "Value": "TRIGSTR_13441"
+      "Value": "Invigoration"
     },
     {
       "Id": 1718840934,
       "Type": 3,
-      "Value": "TRIGSTR_13442"
+      "Value": "(Stormwind - Cathedral)"
     }
   ]
 }

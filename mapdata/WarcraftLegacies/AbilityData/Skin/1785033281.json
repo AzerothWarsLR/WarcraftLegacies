@@ -12,24 +12,26 @@
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_6367"
+      "Value": "W"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_4918"
+      "Value": "Frenzied Rejuvenation"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_4919"
+      "Value": "Frenzied Rejuvenation"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_4920"
+      "Value": "The druid heals himself for 500 hit points over 20 seconds."
     }
   ]
 }

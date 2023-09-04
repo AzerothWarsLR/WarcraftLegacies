@@ -7,18 +7,19 @@
   "Modifications": [
     {
       "Id": 2020631137,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_8239"
+      "Value": "(Druids-Mountain Giant)"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_8240"
+      "Value": "Consume a tree to restore 500 hit points over 15 seconds."
     }
   ]
 }

@@ -6,17 +6,18 @@
   "Modifications": [
     {
       "Id": 2020631137,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 2037408353,
-      "Value": 2
+      "Value": ""
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_4950"
+      "Value": "Deals 4 poison damage per second (stackable). |nLasts 10 seconds. 3 seconds on heroes"
     }
   ]
 }

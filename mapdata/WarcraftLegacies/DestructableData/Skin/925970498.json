@@ -13,17 +13,17 @@
     {
       "Id": 1935764834,
       "Type": 2,
-      "Value": 0.45
+      "Value": ""
     },
     {
       "Id": 1936289122,
       "Type": 2,
-      "Value": 0.45
+      "Value": ""
     },
     {
       "Id": 1835101794,
       "Type": 3,
-      "Value": "TRIGSTR_4418"
+      "Value": "Stormwind Portal Stand"
     },
     {
       "Id": 2020896866,
@@ -42,7 +42,7 @@
     },
     {
       "Id": 1835889506,
-      "Value": 0
+      "Value": ""
     }
   ]
 }

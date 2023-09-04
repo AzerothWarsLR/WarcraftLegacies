@@ -13,7 +13,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_20125"
+      "Value": "(Draenei Other)"
     },
     {
       "Id": 1818520949,
@@ -28,7 +28,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_19104"
+      "Value": "Shattrah"
     },
     {
       "Id": 1885959285,
@@ -53,20 +53,20 @@
     {
       "Id": 828468597,
       "Type": 2,
-      "Value": 0.3
+      "Value": ""
     },
     {
       "Id": 1735156597,
-      "Value": 155
+      "Value": ""
     },
     {
       "Id": 1651270517,
-      "Value": 155
+      "Value": ""
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 6.9
+      "Value": ""
     }
   ]
 }

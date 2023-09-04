@@ -12,12 +12,12 @@
     },
     {
       "Id": 2020631157,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_15851"
+      "Value": "(Kul tiras)"
     },
     {
       "Id": 1818520949,
@@ -27,22 +27,22 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_3689"
+      "Value": "W"
     },
     {
       "Id": 2054188149,
       "Type": 2,
-      "Value": 60
+      "Value": ""
     },
     {
       "Id": 828468597,
       "Type": 2,
-      "Value": 0.05
+      "Value": ""
     },
     {
       "Id": 845245813,
       "Type": 2,
-      "Value": 0.05
+      "Value": ""
     },
     {
       "Id": 1832018293,
@@ -52,22 +52,22 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_14336"
+      "Value": "Musketeer"
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 0.95
+      "Value": ""
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_2167"
+      "Value": "Steadfast Rangers of the Kul\u0027tiras Navy.|n|cfff5962dAbilities:|R Bombing Run, Field Medkit, Critical Strike, Trueshot Aura, Resistant Skin, Spell Resistance|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.8
+      "Value": ""
     },
     {
       "Id": 1684960117,
@@ -82,7 +82,7 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_14458"
+      "Value": "Train Musketeer"
     }
   ]
 }

@@ -7,17 +7,17 @@
   "Modifications": [
     {
       "Id": 2020631157,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19942"
+      "Value": "(Goblin Magic)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_2210"
+      "Value": "S"
     },
     {
       "Id": 1935832437,
@@ -27,7 +27,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_10464"
+      "Value": "Place for Kaja\u0027Cola fueled experimenting.|n|cfff5962dTrains:|R Alchemist, Hobgoblin|n|cfff5962dResearches:|R  Alchemist Training"
     },
     {
       "Id": 1818520949,
@@ -37,12 +37,12 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_2846"
+      "Value": "Laboratory"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_2847"
+      "Value": "Build Laboratory"
     }
   ]
 }

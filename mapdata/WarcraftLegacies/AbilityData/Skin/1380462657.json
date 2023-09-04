@@ -8,23 +8,24 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_19085"
+      "Value": "(Healing Bulb)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_17928"
+      "Value": "Q"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_6662"
+      "Value": "Heals a target friendly non-mechanical wounded unit for 60 hit points."
     },
     {
       "Id": 1802007905,
       "Type": 3,
-      "Value": "TRIGSTR_17980"
+      "Value": "Q"
     }
   ]
 }

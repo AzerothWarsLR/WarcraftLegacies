@@ -13,7 +13,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_2749"
+      "Value": "(stormwind)"
     },
     {
       "Id": 1818520949,
@@ -23,7 +23,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_1918"
+      "Value": "E"
     },
     {
       "Id": 1831952757,
@@ -38,27 +38,27 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.6
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_2183"
+      "Value": "Gunship"
     },
     {
       "Id": 2053927797,
       "Type": 1,
-      "Value": 150
+      "Value": ""
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_2184"
+      "Value": "Train Gunship"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_5781"
+      "Value": "Dwarven engineering in the hands of ingenuic humans.|n|cfff5962dAbilities:|r Cloud, Rocket Barrage, Emergency Repairs, Spyglass|n|n|cff99b4d1Can only build 6.|n|r|cffffd700Attacks land units.|r"
     },
     {
       "Id": 1684960117,
@@ -67,7 +67,7 @@
     },
     {
       "Id": 2020631157,
-      "Value": 2
+      "Value": ""
     }
   ]
 }

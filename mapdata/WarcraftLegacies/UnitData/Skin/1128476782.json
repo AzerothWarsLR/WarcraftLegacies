@@ -13,37 +13,37 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_18579"
+      "Value": " (Ragnaros)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_4971"
+      "Value": "Q"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 1.15
+      "Value": ""
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 2.7
+      "Value": ""
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_2274"
+      "Value": "Train Shadowforge Titan"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_15984"
+      "Value": "The unstoppable golem colossus of the Dark-iron Kingdom.|nHeavy magic-resistant melee unit.|n|cfff5962dAbilities:|R Heavy Bash, Spell Resistance, Resistant Skin|n|n|cff99b4d1Can only build 4.|r|n|cffffcc00Attacks land units.|r"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_2364"
+      "Value": "Shadowforge Titan"
     },
     {
       "Id": 1818520949,
@@ -57,15 +57,15 @@
     },
     {
       "Id": 1651270517,
-      "Value": 55
+      "Value": ""
     },
     {
       "Id": 1735156597,
-      "Value": 55
+      "Value": ""
     },
     {
       "Id": 1919705973,
-      "Value": 55
+      "Value": ""
     }
   ]
 }

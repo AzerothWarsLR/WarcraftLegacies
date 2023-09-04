@@ -6,123 +6,143 @@
   "Modifications": [
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1718840935,
       "Type": 3,
-      "Value": "TRIGSTR_13910"
+      "Value": "(Unused)"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 1718840935,
       "Type": 3,
-      "Value": "TRIGSTR_13881"
+      "Value": "(Teal/Pink/Grey Research)"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "TRIGSTR_13958"
+      "Value": "Fel Iron Armor"
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "TRIGSTR_13959"
+      "Value": "Thorium Armor"
     },
     {
       "Level": 4,
+      "Pointer": 4,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "TRIGSTR_13960"
+      "Value": "Adamantite Armor"
     },
     {
       "Level": 5,
+      "Pointer": 5,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "TRIGSTR_13961"
+      "Value": "Eternium Armor"
     },
     {
       "Level": 6,
+      "Pointer": 6,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "TRIGSTR_13962"
+      "Value": "Felsteel Armor"
     },
     {
       "Level": 7,
+      "Pointer": 7,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "TRIGSTR_13963"
+      "Value": "Khorium Armor"
     },
     {
       "Level": 8,
+      "Pointer": 8,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "TRIGSTR_13964"
+      "Value": "Arcanite Armor"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_13965"
+      "Value": "[|cffffcc00A|r] - Upgrade Steel Unit Armor"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_13966"
+      "Value": "[|cffffcc00A|r] - Upgrade Fel Iron Unit Armor"
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_13967"
+      "Value": "[|cffffcc00A|r] - Upgrade Thorium Unit Armor"
     },
     {
       "Level": 4,
+      "Pointer": 4,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_13968"
+      "Value": "[|cffffcc00A|r] - Upgrade Adamantite Unit Armor"
     },
     {
       "Level": 5,
+      "Pointer": 5,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_13969"
+      "Value": "[|cffffcc00A|r] - Upgrade Eternium Unit Armor"
     },
     {
       "Level": 6,
+      "Pointer": 6,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_13970"
+      "Value": "[|cffffcc00A|r] - Upgrade Felsteel Unit Armor"
     },
     {
       "Level": 7,
+      "Pointer": 7,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_13971"
+      "Value": "[|cffffcc00A|r] - Upgrade Khorium Unit Armor"
     },
     {
       "Level": 8,
+      "Pointer": 8,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_13972"
+      "Value": "[|cffffcc00A|r] - Upgrade Arcanite Unit Armor"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "TRIGSTR_13973"
+      "Value": "Increases the armor of all units."
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 828536167,
       "Type": 3,
-      "Value": "TRIGSTR_13974"
+      "Value": "Further increases the armor of all units."
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 828536167,
       "Type": 3,
-      "Value": "TRIGSTR_13975"
+      "Value": "Further increases the armor of all units."
     }
   ]
 }

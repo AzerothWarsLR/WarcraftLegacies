@@ -7,18 +7,19 @@
   "Modifications": [
     {
       "Id": 2037408353,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_18204"
+      "Value": "(60%)"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_18205"
+      "Value": "Gives a 60% percent chance to avoid an attack."
     }
   ]
 }

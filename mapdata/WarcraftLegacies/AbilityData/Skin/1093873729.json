@@ -8,77 +8,87 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_8513"
+      "Value": "(Drone)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_16330"
+      "Value": "F"
     },
     {
       "Id": 1802007905,
       "Type": 3,
-      "Value": "TRIGSTR_16348"
+      "Value": "F"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_15471"
+      "Value": "Gather"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_15547"
+      "Value": "Harvests lumber from trees."
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 829715809,
       "Type": 3,
-      "Value": "TRIGSTR_15478"
+      "Value": "Return Resources"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 829781345,
       "Type": 3,
-      "Value": "TRIGSTR_15544"
+      "Value": "Returns carried lumber."
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_15480"
+      "Value": "Gather"
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_15551"
+      "Value": "Harvests lumber from trees."
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 829715809,
       "Type": 3,
-      "Value": "TRIGSTR_16485"
+      "Value": "Return Resources"
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 829781345,
       "Type": 3,
-      "Value": "TRIGSTR_16487"
+      "Value": "Returns carried lumber."
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_15567"
+      "Value": "Harvests lumber from trees."
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829781345,
       "Type": 3,
-      "Value": "TRIGSTR_16491"
+      "Value": "Returns carried lumber."
     }
   ]
 }

@@ -12,48 +12,48 @@
     },
     {
       "Id": 2020631157,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 2037408373,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_1697"
+      "Value": "(Fel Horde-Portal)"
     },
     {
       "Id": 1735156597,
-      "Value": 60
+      "Value": ""
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 1.2
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_2007"
+      "Value": "Voidlord"
     },
     {
       "Id": 1919705973,
-      "Value": 60
+      "Value": ""
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_2008"
+      "Value": "Summon Voidlord"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_2009"
+      "Value": "Armored demon and darkening devastator of foes.|n|cfff5962dAbilities:|R Nether Explosions, Devour Magic, Frost Attack, Shadow Vault |n|n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Id": 1651270517,
-      "Value": 30
+      "Value": ""
     }
   ]
 }

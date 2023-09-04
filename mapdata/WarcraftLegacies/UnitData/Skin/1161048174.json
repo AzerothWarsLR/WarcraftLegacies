@@ -17,25 +17,25 @@
     },
     {
       "Id": 2020631157,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1667462261,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_2133"
+      "Value": "(C\u0027thun Pillars)"
     },
     {
       "Id": 1953523061,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1685218677,
       "Type": 1,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1818520949,
@@ -45,32 +45,32 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_5528"
+      "Value": "W"
     },
     {
       "Id": 2054188149,
       "Type": 2,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.6
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_3037"
+      "Value": "Old God Corruption Template"
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_3124"
+      "Value": "Build - Old God Corruption Template"
     },
     {
       "Id": 1935832437,
@@ -80,7 +80,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_3129"
+      "Value": "Will give you 1 X when your Old God awakens. Provides food."
     }
   ]
 }

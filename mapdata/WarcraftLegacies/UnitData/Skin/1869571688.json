@@ -7,22 +7,22 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_1007"
+      "Value": "(Lordaeron)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_950"
+      "Value": "Q"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.85
+      "Value": ""
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_17835"
+      "Value": "Versatile foot soldier of Lordaeron.|n|cfff5962dAbilities:|R Defend, Combat Experience|n|n|cffffcc00Attacks land units.|r"
     }
   ]
 }

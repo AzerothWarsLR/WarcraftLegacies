@@ -12,38 +12,40 @@
     },
     {
       "Id": 2020631137,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 2037408353,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_8489"
+      "Value": "(Ahn\u0027Qiraj)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_9560"
+      "Value": "Q"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_12637"
+      "Value": "Open the Gates of Ahn\u0027Qiraj"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_12669"
+      "Value": "Close Gate"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_8493"
+      "Value": "Closes the gate."
     },
     {
       "Id": 1918989665,
@@ -52,28 +54,30 @@
     },
     {
       "Id": 2019718497,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 2036495713,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1802007905,
       "Type": 3,
-      "Value": "TRIGSTR_9575"
+      "Value": "Q"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829781345,
       "Type": 3,
-      "Value": "TRIGSTR_8496"
+      "Value": "Opens the gate."
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829715809,
       "Type": 3,
-      "Value": "TRIGSTR_880"
+      "Value": "Open Gate"
     }
   ]
 }

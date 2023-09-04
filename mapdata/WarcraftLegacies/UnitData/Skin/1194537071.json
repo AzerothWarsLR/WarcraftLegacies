@@ -12,16 +12,16 @@
     },
     {
       "Id": 2020631157,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 2037408373,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19917"
+      "Value": " (Twilight Tower)"
     },
     {
       "Id": 1818520949,
@@ -31,17 +31,17 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_2838"
+      "Value": "Z"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.85
+      "Value": ""
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1935832437,
@@ -51,17 +51,17 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_8828"
+      "Value": "Grim Towers of the Twilight Hammer.|n|cfff5962dCan learn:|R Spiked Barricades|n|cfff5962dUpgrades Into:|R Improved Twilight lookout|n|n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_19918"
+      "Value": "Sentry Tower"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_19919"
+      "Value": "Build Sentry Tower"
     },
     {
       "Id": 1831952757,

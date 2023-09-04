@@ -7,37 +7,37 @@
   "Modifications": [
     {
       "Id": 2020631157,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_18832"
+      "Value": " (Illidari)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_3447"
+      "Value": "W"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 1.2
+      "Value": ""
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_15913"
+      "Value": "Flying two headed Dragon. |n|cfff5962dAbilities:|R Corrisive Breath|n|n|cff99b4d1Can only train 4.|r|n|cffffcc00Attacks land units.|r"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_12513"
+      "Value": "Scylla"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_12518"
+      "Value": "Train Scylla"
     },
     {
       "Id": 1868786037,

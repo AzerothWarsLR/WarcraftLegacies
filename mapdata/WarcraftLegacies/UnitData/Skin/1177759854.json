@@ -12,12 +12,12 @@
     },
     {
       "Id": 2020631157,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_2471"
+      "Value": "(Warsong-Elite)"
     },
     {
       "Id": 1818520949,
@@ -27,22 +27,22 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_2125"
+      "Value": "W"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_427"
+      "Value": "Train Kor\u0027kron Elite"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_16526"
+      "Value": "Elite Guards of the Warsong Clan.|n|cfff5962dAbilities:|R Call to Battle, Shockwave, Bash, Spell Block, Devotion Aura, Self-bloodlust, Resistant Skin|n|n|cff99b4d1Can only train 6. |r|n|cffffcc00Attacks land units.|r"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_610"
+      "Value": "Kor\u0027kron Elite"
     },
     {
       "Id": 1684960117,
@@ -52,7 +52,7 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 1.2
+      "Value": ""
     }
   ]
 }

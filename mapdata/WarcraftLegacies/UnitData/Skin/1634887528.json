@@ -6,11 +6,11 @@
   "Modifications": [
     {
       "Id": 2020631157,
-      "Value": 3
+      "Value": ""
     },
     {
       "Id": 2037408373,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1818520949,
@@ -20,17 +20,17 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_688"
+      "Value": "F"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 1.2
+      "Value": ""
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 3.6
+      "Value": ""
     },
     {
       "Id": 1935832437,
@@ -40,12 +40,12 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_5421"
+      "Value": "Fortified rookery for the gryphons of Ironforge.|n|cfff5962dTrains:|R Gryphon Rider, Stormrider|n|cfff5962dResearches:|R Storm Hammers, Gryphon Superior Breed"
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_15258"
+      "Value": " (Ironforge Specialist)"
     }
   ]
 }

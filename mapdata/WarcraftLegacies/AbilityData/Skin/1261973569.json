@@ -12,34 +12,36 @@
     },
     {
       "Id": 2020631137,
-      "Value": 3
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_11066"
+      "Value": "(Scourge - Frozen Throne"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_9474"
+      "Value": "V"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_11068"
+      "Value": "Toggle Unholy Defense"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_11069"
+      "Value": "Activate Unholy Defense"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_11070"
+      "Value": "Activate to make Icecrown Obelisks invulnerable.|nDrains mana until deactivated."
     },
     {
       "Id": 1918989665,
@@ -48,24 +50,26 @@
     },
     {
       "Id": 2019718497,
-      "Value": 3
+      "Value": ""
     },
     {
       "Id": 1802007905,
       "Type": 3,
-      "Value": "TRIGSTR_9478"
+      "Value": "V"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829715809,
       "Type": 3,
-      "Value": "TRIGSTR_11072"
+      "Value": "Deactivate Unholy Defense"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829781345,
       "Type": 3,
-      "Value": "TRIGSTR_11073"
+      "Value": "Deactivate to stop draining mana, but make Icecrown Obelisks vulnerable."
     }
   ]
 }

@@ -12,17 +12,17 @@
     },
     {
       "Id": 2020631157,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_20101"
+      "Value": "(Dragonmaw Specialist)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_3632"
+      "Value": "D"
     },
     {
       "Id": 1935832437,
@@ -32,17 +32,17 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_20102"
+      "Value": "The draconic breeding pits of the Dragonmaw Clan.|n|cfff5962dTrains:|R Dragon Whelp, Enslaved Dragon, Dragon Rider"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_19108"
+      "Value": "Dragon Hatchery"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_17558"
+      "Value": "Build Dragon Hatchery"
     },
     {
       "Id": 1818520949,

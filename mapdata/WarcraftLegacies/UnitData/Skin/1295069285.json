@@ -28,7 +28,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_1559"
+      "Value": "(warsong)"
     },
     {
       "Id": 1818520949,
@@ -38,27 +38,27 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_5148"
+      "Value": "W"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.9
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_2365"
+      "Value": "Azerite Siege Engine"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_15738"
+      "Value": "Train Azerite Siege Engine"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_17391"
+      "Value": "Siege unit that can transform into an immobile ranged siege unit.|n|cfff5962dAbilities:|r Siege Form|n|cff99b4d1Can only train 4|n|cffffcc00Attacks land units.|r"
     },
     {
       "Id": 1684960117,
@@ -73,17 +73,17 @@
     {
       "Id": 2054188149,
       "Type": 2,
-      "Value": 150
+      "Value": ""
     },
     {
       "Id": 828468597,
       "Type": 2,
-      "Value": 0.01
+      "Value": ""
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 3
+      "Value": ""
     }
   ]
 }

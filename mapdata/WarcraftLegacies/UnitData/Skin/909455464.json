@@ -17,12 +17,12 @@
     },
     {
       "Id": 2020631157,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_15835"
+      "Value": "(Ironforge Other)"
     },
     {
       "Id": 1818520949,
@@ -32,27 +32,27 @@
     {
       "Id": 2054188149,
       "Type": 2,
-      "Value": 200
+      "Value": ""
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 1.4
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_2966"
+      "Value": "Khaz Modan Tower"
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_2967"
+      "Value": "Build Keep Tower"
     },
     {
       "Id": 1935832437,
@@ -62,7 +62,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_2968"
+      "Value": "Heavy defensive structure. Particularly effective against clusters of troops. Grants a 5% Command Aura. Requires Riflemen manning it in order to attack. Can learn the Magic Sentry ability. |n|cff99b4d1Can only build 6.|r|n|cffffcc00Attacks land units and trees.|r"
     }
   ]
 }

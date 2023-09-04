@@ -7,23 +7,24 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_5137"
+      "Value": "(Teal - Neltharaku. Red - Destroyer)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_6570"
+      "Value": "Q"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_5139"
+      "Value": "Consumes all magical buffs from units in an area. Each unit that is devoured of magic gives the caster \u003CAdvm,DataA1\u003E hit points and \u003CAdvm,DataB1\u003E mana. |n|cffffcc00Deals \u003CAdvm,DataE1\u003E damage to summoned units.|r"
     },
     {
       "Id": 1802007905,
       "Type": 3,
-      "Value": "TRIGSTR_6586"
+      "Value": "Q"
     }
   ]
 }

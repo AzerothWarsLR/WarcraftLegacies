@@ -12,7 +12,7 @@
     },
     {
       "Id": 1651270517,
-      "Value": 150
+      "Value": ""
     },
     {
       "Id": 1651012469,
@@ -26,25 +26,25 @@
     },
     {
       "Id": 2020631157,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1667462261,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_1768"
+      "Value": "(C\u0027thun Building)"
     },
     {
       "Id": 1953523061,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1685218677,
       "Type": 1,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1818520949,
@@ -53,12 +53,12 @@
     },
     {
       "Id": 1735156597,
-      "Value": 221
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_4525"
+      "Value": "Pyramid"
     },
     {
       "Id": 1634759541,
@@ -68,7 +68,7 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_16497"
+      "Value": "Build Pyramid"
     },
     {
       "Id": 1935832437,
@@ -78,7 +78,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_1771"
+      "Value": "Spellcaster production building. |rTrains Silithid Tunneler, Faceless Shadow Weaver and Tol\u0027vir Statue. Contains caster health upgrade."
     },
     {
       "Id": 1684960117,
@@ -88,12 +88,12 @@
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 4.5
+      "Value": ""
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.7
+      "Value": ""
     }
   ]
 }

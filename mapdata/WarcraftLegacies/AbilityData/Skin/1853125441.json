@@ -6,32 +6,33 @@
   "Modifications": [
     {
       "Id": 2020631137,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_4801"
+      "Value": "(Red - Gargoyle)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_6311"
+      "Value": "W"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_4803"
+      "Value": "Transforms the Gargoyle into a statue that is immune to spells, gains additional armor and has a regeneration rate of 8 hit points per second. |nThe Gargoyle cannot attack in this form."
     },
     {
       "Id": 2019718497,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1802007905,
       "Type": 3,
-      "Value": "TRIGSTR_6318"
+      "Value": "W"
     }
   ]
 }

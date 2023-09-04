@@ -13,7 +13,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19864"
+      "Value": "(Quel\u0027Thalas Tower)"
     },
     {
       "Id": 1818520949,
@@ -23,12 +23,12 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.6
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_3538"
+      "Value": "Elven Runestone"
     },
     {
       "Id": 1634759541,
@@ -43,7 +43,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_3539"
+      "Value": "Protects Quel\u0027thalas from attacks."
     },
     {
       "Id": 1684960117,

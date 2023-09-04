@@ -7,13 +7,14 @@
   "Modifications": [
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1852072801,
       "Type": 2,
       "Value": 40
     },
     {
       "Level": 1,
-      "Pointer": 2,
+      "Pointer": 1,
       "Id": 846490952,
       "Type": 2,
       "Value": 5
@@ -24,6 +25,7 @@
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1918989409,
       "Type": 3,
       "Value": "allies,ground,invulnerable,organic,player,structure,vulnerable"

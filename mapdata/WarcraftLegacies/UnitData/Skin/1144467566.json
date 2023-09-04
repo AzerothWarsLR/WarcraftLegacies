@@ -12,7 +12,7 @@
     },
     {
       "Id": 1651270517,
-      "Value": 100
+      "Value": ""
     },
     {
       "Id": 1651012469,
@@ -21,35 +21,35 @@
     },
     {
       "Id": 2020631157,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_2103"
+      "Value": "(T3 Maiden)"
     },
     {
       "Id": 1735156597,
-      "Value": 150
+      "Value": ""
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.6
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_2104"
+      "Value": "Maiden of Dominance Demon Gate"
     },
     {
       "Id": 1919705973,
-      "Value": 100
+      "Value": ""
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_2105"
+      "Value": "Upgrade to Maiden of Dominance Demon Gate"
     },
     {
       "Id": 1935832437,
@@ -59,7 +59,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_16680"
+      "Value": "Gateway attuned to the Maidens of Dominance of the Burning Crusade, summoning 1 every 90 seconds. |n|n|cfff5962dAbilities:|R Spell Steal|n|cff99b4d1Can only build 1 gate. |r"
     }
   ]
 }

@@ -6,27 +6,27 @@
   "Modifications": [
     {
       "Id": 2020631157,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_377"
+      "Value": "(Frostwolf)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_151"
+      "Value": "Q"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.8
+      "Value": ""
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_403"
+      "Value": "Mighty Bloodhoof warrior sworn to Thrall.|n|cfff5962dAbilities:|R Pulverize|n|cfff5962dCan learn:|R Toughened Hides|n|n|cffffcc00Attacks land units.|r"
     }
   ]
 }

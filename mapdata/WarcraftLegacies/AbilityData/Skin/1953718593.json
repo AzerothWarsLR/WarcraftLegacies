@@ -7,18 +7,19 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_5244"
+      "Value": "(Pink - Spirit Walker)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_7387"
+      "Value": "E"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_5246"
+      "Value": "Raises a fallen non-Hero Tauren from the dead. Has 70% of total life. "
     }
   ]
 }

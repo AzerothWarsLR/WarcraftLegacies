@@ -13,7 +13,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_16329"
+      "Value": "(Troll)"
     },
     {
       "Id": 1818520949,
@@ -23,7 +23,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_4109"
+      "Value": "W"
     },
     {
       "Id": 1831952757,
@@ -33,27 +33,27 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.85
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_16341"
+      "Value": "Boneseer"
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_16342"
+      "Value": "Train Boneseer"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_16816"
+      "Value": "Troll master of souls and voodoo.|n|cfff5962dAbilities:|R Unleash Souls, Bone Totem, Spawn Totem  Resistant Skin, Spell Resistance|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Id": 1684960117,

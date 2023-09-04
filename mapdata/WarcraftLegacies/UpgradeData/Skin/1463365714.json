@@ -7,79 +7,91 @@
   "Modifications": [
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829579623,
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNTenebriousArmor.blp"
     },
     {
       "Id": 2020631143,
-      "Value": 1
+      "Value": ""
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1718840935,
       "Type": 3,
-      "Value": "TRIGSTR_21342"
+      "Value": "(Fel Horde)"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_21352"
+      "Value": "X"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "TRIGSTR_21359"
+      "Value": "Felsteel Refining"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_21368"
+      "Value": "Felsteel Refining"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "TRIGSTR_21369"
+      "Value": "Improves Felsteel Plating, increasing its chance to reduce damage to 25%, and total damage reduced to 40."
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 829579623,
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNCarrionSwarm.blp"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "TRIGSTR_21370"
+      "Value": "Improved Greater Carrion Swarm"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_21371"
+      "Value": "Improved Greater Carrion Swarm"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 828536167,
       "Type": 3,
-      "Value": "TRIGSTR_21372"
+      "Value": "Improves Dreadlords\u0027 Carrion Swarm by increasing its damage to 105 and max damage to 100. Also reduces the cooldown."
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_21373"
+      "Value": "X"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 1718840935,
       "Type": 3,
-      "Value": "TRIGSTR_21374"
+      "Value": "(Legion)"
     }
   ]
 }

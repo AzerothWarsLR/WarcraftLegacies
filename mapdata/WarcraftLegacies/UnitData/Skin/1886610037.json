@@ -6,32 +6,32 @@
   "Modifications": [
     {
       "Id": 2020631157,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_328"
+      "Value": "(Scourge)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_160"
+      "Value": "W"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_348"
+      "Value": "Obsidian Destroyer"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_349"
+      "Value": "Train Obsidian Destroyer"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_2828"
+      "Value": "Awakened statue of obsidian, and devourer of magic.|n|cfff5962dAbilities:|R Spell Immunity, Devour Magic, Absorb Mana, Orb of Annihilation|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land and air units.|r"
     }
   ]
 }

@@ -7,25 +7,28 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_4936"
+      "Value": "(Red - Meat Wagon)"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_4937"
+      "Value": "Improved Disease Cloud"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_4938"
+      "Value": "Drops a Disease Cloud with each attack. Disease Cloud deals 2 damage per second. |nLasts 90 seconds."
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_4066"
+      "Value": "Drops a Disease Cloud with each attack. Disease Cloud deals 2 damage per second. |nLasts 120 seconds."
     }
   ]
 }

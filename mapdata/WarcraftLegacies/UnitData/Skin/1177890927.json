@@ -7,7 +7,7 @@
   "Modifications": [
     {
       "Id": 2020631157,
-      "Value": 3
+      "Value": ""
     },
     {
       "Id": 1936024681,
@@ -17,27 +17,27 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_20096"
+      "Value": "(Kul Tiras Tower)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_3596"
+      "Value": "R"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 1.5
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_17990"
+      "Value": "Naval Battery"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_17991"
+      "Value": "Build Kezan Trading Center"
     },
     {
       "Id": 1935832437,
@@ -47,7 +47,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_1523"
+      "Value": "Boat construction facility for the Horde.|n|cfff5962dBuilds:|R Horde Transport Ships, Frigates, Juggernauts |n|n|cff00c4c4Cannot be built near small inland water areas.|r"
     },
     {
       "Id": 1868786037,
@@ -61,12 +61,12 @@
     },
     {
       "Id": 1953523061,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1685218677,
       "Type": 1,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1831952757,
@@ -76,12 +76,12 @@
     {
       "Id": 2054188149,
       "Type": 2,
-      "Value": 400
+      "Value": ""
     },
     {
       "Id": 828468597,
       "Type": 2,
-      "Value": 0.15
+      "Value": ""
     }
   ]
 }

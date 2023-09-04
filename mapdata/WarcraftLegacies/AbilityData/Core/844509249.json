@@ -7,58 +7,68 @@
   "Modifications": [
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1718968929,
       "Type": 3,
       "Value": "BFig"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 1718968929,
       "Type": 3,
       "Value": "BFig"
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 1718968929,
       "Type": 3,
       "Value": "BFig"
     },
     {
       "Level": 4,
+      "Pointer": 4,
       "Id": 1718968929,
       "Type": 3,
       "Value": "BFig"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1852072801,
       "Type": 2,
       "Value": 35
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 1852072801,
       "Type": 2,
       "Value": 25
     },
     {
       "Level": 4,
+      "Pointer": 4,
       "Id": 1852072801,
       "Type": 2,
       "Value": 20
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1935895905,
       "Value": 100
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 1935895905,
       "Value": 100
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 1935895905,
       "Value": 100
     },
@@ -70,13 +80,13 @@
     },
     {
       "Level": 3,
-      "Pointer": 2,
+      "Pointer": 3,
       "Id": 845574991,
       "Value": 4
     },
     {
       "Level": 4,
-      "Pointer": 2,
+      "Pointer": 4,
       "Id": 845574991,
       "Value": 5
     },
@@ -91,24 +101,28 @@
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828797775,
       "Type": 3,
       "Value": "h0A1"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 828797775,
       "Type": 3,
       "Value": "h0A1"
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 828797775,
       "Type": 3,
       "Value": "h0A1"
     },
     {
       "Level": 4,
+      "Pointer": 4,
       "Id": 828797775,
       "Type": 3,
       "Value": "h0A1"

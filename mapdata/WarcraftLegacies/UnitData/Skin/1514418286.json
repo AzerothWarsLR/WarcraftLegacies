@@ -12,16 +12,16 @@
     },
     {
       "Id": 2020631157,
-      "Value": 3
+      "Value": ""
     },
     {
       "Id": 2037408373,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_20760"
+      "Value": "(Sunfury Magic)"
     },
     {
       "Id": 1818520949,
@@ -31,17 +31,17 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_4769"
+      "Value": "F"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_12303"
+      "Value": "The Well of Eternity"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_20882"
+      "Value": "Build the Infinity Fountain"
     },
     {
       "Id": 1935832437,
@@ -51,17 +51,17 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_20756"
+      "Value": "An artificially created pool of eternity.|n|cfff5962dTrains:|R Magus, Blood Mage, Warlock|n|cfff5962dResearches:|R Magus Training"
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 6
+      "Value": ""
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 2
+      "Value": ""
     }
   ]
 }

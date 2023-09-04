@@ -17,19 +17,21 @@
     },
     {
       "Level": 1,
-      "Pointer": 3,
+      "Pointer": 1,
       "Id": 862544210,
       "Type": 3,
       "Value": "o012"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1920296033,
       "Type": 2,
       "Value": 90
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1969514593,
       "Type": 2,
       "Value": 90
@@ -45,12 +47,14 @@
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1851880033,
       "Type": 2,
       "Value": 700
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1969840466,
       "Type": 3,
       "Value": "o012"

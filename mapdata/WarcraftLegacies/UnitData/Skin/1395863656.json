@@ -12,12 +12,12 @@
     },
     {
       "Id": 2020631157,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19808"
+      "Value": "(Quel\u0027thalas T2)"
     },
     {
       "Id": 1818520949,
@@ -27,7 +27,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_3126"
+      "Value": "C"
     },
     {
       "Id": 1831952757,
@@ -37,22 +37,22 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.85
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_2962"
+      "Value": "Mansion"
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 4.3
+      "Value": ""
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_2281"
+      "Value": "Upgrade to Sanctuary"
     },
     {
       "Id": 1935832437,
@@ -62,7 +62,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_3134"
+      "Value": "Main gathering structure.|n|cfff5962dTrains:|R Architect"
     }
   ]
 }

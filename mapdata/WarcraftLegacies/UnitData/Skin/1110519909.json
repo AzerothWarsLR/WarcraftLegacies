@@ -12,7 +12,7 @@
     },
     {
       "Id": 2020631157,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1635083125,
@@ -32,7 +32,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_2457"
+      "Value": " (Quel\u0027thalas)"
     },
     {
       "Id": 1818520949,
@@ -42,22 +42,22 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_5027"
+      "Value": "E"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_7958"
+      "Value": "Arcane Annihilator"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_8145"
+      "Value": "Train Arcane Annihilator"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_17706"
+      "Value": "Siege unit that can transform into an immobile ranged turret.|n|cfff5962dAbilities:|r Siege Mode|n|n|cff99b4d1Can only train 6.|n|cffffcc00Cannot attack.|r"
     },
     {
       "Id": 1684960117,
@@ -67,7 +67,7 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 1.2
+      "Value": ""
     }
   ]
 }

@@ -12,12 +12,12 @@
     },
     {
       "Id": 2020631137,
-      "Value": 3
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_7195"
+      "Value": "(Ossirian)"
     },
     {
       "Id": 1952540001,
@@ -27,12 +27,12 @@
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_7592"
+      "Value": "R"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_7197"
+      "Value": "Desert Storm"
     },
     {
       "Id": 1918988897,
@@ -41,22 +41,22 @@
     },
     {
       "Id": 2020635233,
-      "Value": 3
+      "Value": ""
     },
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_7614"
+      "Value": "R"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_7199"
+      "Value": "Learn Desert Storm - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_7200"
+      "Value": "Conjures a fierce Desert Storm that attack all units in a target area over time. |n|n|cffffcc00Level 1|r - 50 damage every 0.1 second seconds. |n|cffffcc00Level 2|r - 60 damage every 0.1 second. |n|cffffcc00Level 3|r - 70 damage every 0.1 second."
     },
     {
       "Id": 1952543585,
@@ -65,39 +65,45 @@
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_7201"
+      "Value": "Desert Storm - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_7202"
+      "Value": "Desert Storm - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_7203"
+      "Value": "Desert Storm - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_7204"
+      "Value": "Conjures a fierce Desert Storm that attack all units in a target area over time. |n|n|cffffcc00Level 1|r - 50 damage every 0.1 second seconds. Lasts 9 seconds."
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_7205"
+      "Value": "Conjures a fierce Desert Storm that attack all units in a target area over time. |n|cffffcc00Level 2|r - 60 damage every 0.1 second. Lasts 9 seconds."
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_7206"
+      "Value": "Conjures a fierce Desert Storm that attack all units in a target area over time. |n|cffffcc00Level 3|r - 70 damage every 0.1 second. Lasts 9 seconds."
     }
   ]
 }

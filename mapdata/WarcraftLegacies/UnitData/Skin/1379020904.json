@@ -13,7 +13,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19837"
+      "Value": " (Stormwind Other)"
     },
     {
       "Id": 1818520949,
@@ -22,21 +22,21 @@
     },
     {
       "Id": 1735156597,
-      "Value": 220
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_3272"
+      "Value": "Northshire Abbey"
     },
     {
       "Id": 1919705973,
-      "Value": 200
+      "Value": ""
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 6
+      "Value": ""
     },
     {
       "Id": 1935832437,
@@ -46,7 +46,7 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 1.2
+      "Value": ""
     }
   ]
 }

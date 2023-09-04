@@ -7,17 +7,17 @@
   "Modifications": [
     {
       "Id": 2020631157,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_18847"
+      "Value": " (Nzoth)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_5688"
+      "Value": "E"
     },
     {
       "Id": 1832018293,
@@ -27,22 +27,22 @@
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 3
+      "Value": ""
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_10208"
+      "Value": "A powerful Turtle. Good at destroying enemy buildings. Has Hardened Skin, which reduces damage taken, and Spiked Shell which deals damage to enemy melee attackers. |n|cff99b4d1Can only train 8.|r|n|cffffcc00Attacks land units.|r"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_10611"
+      "Value": "Gargantuan Sea Turtle"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_11803"
+      "Value": "Train Gargantuan Sea Turtle"
     },
     {
       "Id": 1818520949,

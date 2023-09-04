@@ -6,18 +6,19 @@
   "Modifications": [
     {
       "Id": 2020631137,
-      "Value": 3
+      "Value": ""
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_6793"
+      "Value": "R"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_6257"
+      "Value": "Slams the ground, dealing 75 points of damage and slowing the movement and attack rate of nearby enemy units."
     }
   ]
 }

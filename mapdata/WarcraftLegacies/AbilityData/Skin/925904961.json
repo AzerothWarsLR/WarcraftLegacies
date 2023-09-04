@@ -8,58 +8,64 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_6162"
+      "Value": " (Lorthemar)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_12295"
+      "Value": "R"
     },
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_12297"
+      "Value": "R"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_3044"
+      "Value": "Wrath of the Blood Elves - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_3048"
+      "Value": "Wrath of the Blood Elves - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_3052"
+      "Value": "Wrath of the Blood Elves - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_6165"
+      "Value": "Calls down waves of starlight that damage nearby enemy units. Each wave deals \u003CA007,DataA2\u003E damage. |nLasts for \u003CA007,Dur2\u003E seconds."
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_8615"
+      "Value": "Calls down waves of starlight that damage nearby enemy units. Each wave deals \u003CA007,DataA3\u003E damage. |nLasts for \u003CA007,Dur3\u003E seconds."
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_13194"
+      "Value": "Calls down waves of falling starst that damage nearby enemy units.|nLasts 30 seconds. |n|n|cffffcc00Level 1|r - Each wave deals \u003CAEsf,DataA1\u003E damage.|n|cffffcc00Level 2|r - Each wave deals \u003CAEsf,DataA2\u003E damage.|n|cffffcc00Level 3|r - Each wave deals \u003CAEsf,DataA3\u003E damage.|n|nLasts for \u003CAEsf,Dur1\u003E seconds.|n"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_13201"
+      "Value": "Calls down waves of falling stars that damage nearby enemy units. Each wave deals \u003CA007,DataA1\u003E damage. |nLasts for \u003CA007,Dur1\u003E seconds."
     }
   ]
 }

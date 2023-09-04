@@ -7,35 +7,38 @@
   "Modifications": [
     {
       "Id": 2020631137,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_12960"
+      "Value": "(Hydromancer)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_15528"
+      "Value": "E"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_12962"
+      "Value": "Empowered Crushing"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_12963"
+      "Value": "Sends a gigantic wave which deals 70 damage to each enemy land unit in a line, up to 200 max damage."
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_12964"
+      "Value": "Sends a gigantic wave which deals 70 damage to each enemy land unit in a line, up to 300 max damage."
     }
   ]
 }

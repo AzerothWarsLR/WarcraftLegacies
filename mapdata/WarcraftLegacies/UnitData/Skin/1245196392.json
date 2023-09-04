@@ -7,11 +7,11 @@
   "Modifications": [
     {
       "Id": 2020631157,
-      "Value": 3
+      "Value": ""
     },
     {
       "Id": 2037408373,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1818520949,
@@ -21,17 +21,17 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_4092"
+      "Value": "F"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 1.2
+      "Value": ""
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 3.6
+      "Value": ""
     },
     {
       "Id": 1935832437,
@@ -41,12 +41,12 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_19007"
+      "Value": "Fierce beasts rise from the magma core of the hold.|n|cfff5962dTrains:|R Core Hound, Fire Wyrm|n|cfff5962dResearches:|R "
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_18835"
+      "Value": "(Ragnaros Specialist)"
     },
     {
       "Id": 1868786037,
@@ -56,12 +56,12 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_19008"
+      "Value": "Magma Hold"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_19010"
+      "Value": "Build Magma Hold"
     }
   ]
 }

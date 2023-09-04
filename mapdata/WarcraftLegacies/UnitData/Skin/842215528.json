@@ -13,7 +13,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_1844"
+      "Value": "(Dalaran)"
     },
     {
       "Id": 1818520949,
@@ -23,27 +23,27 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_2704"
+      "Value": "Q"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.85
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_134"
+      "Value": "Battlemage"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_3238"
+      "Value": "Train Battlemage"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_3239"
+      "Value": "Warrior mage trained in the arts of physical self defense.|n|cfff5962dAbilities:|R Defend, Mana Shield, Phase Blade|n|n|cffffcc00Attacks land units.|r"
     }
   ]
 }

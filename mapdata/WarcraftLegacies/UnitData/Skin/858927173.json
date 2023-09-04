@@ -18,16 +18,16 @@
     {
       "Id": 1953980789,
       "Type": 3,
-      "Value": "TRIGSTR_18280"
+      "Value": "Revive"
     },
     {
       "Id": 1667462261,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1685218677,
       "Type": 1,
-      "Value": 50
+      "Value": ""
     },
     {
       "Id": 1818520949,
@@ -37,22 +37,22 @@
     {
       "Id": 2053990773,
       "Type": 2,
-      "Value": 180
+      "Value": ""
     },
     {
       "Id": 2020633717,
       "Type": 2,
-      "Value": -40
+      "Value": ""
     },
     {
       "Id": 2037410933,
       "Type": 2,
-      "Value": 90
+      "Value": ""
     },
     {
       "Id": 828468597,
       "Type": 2,
-      "Value": 0.05
+      "Value": ""
     },
     {
       "Id": 1831952757,
@@ -62,17 +62,17 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_18312"
+      "Value": "Grand Vizier"
     },
     {
       "Id": 1869770869,
       "Type": 3,
-      "Value": "TRIGSTR_18315"
+      "Value": "Ertan"
     },
     {
       "Id": 1919972469,
       "Type": 3,
-      "Value": "TRIGSTR_18322"
+      "Value": "Revive"
     },
     {
       "Id": 1769173877,
@@ -82,22 +82,22 @@
     {
       "Id": 1751675765,
       "Type": 1,
-      "Value": 140
+      "Value": ""
     },
     {
       "Id": 2003334005,
       "Type": 1,
-      "Value": 140
+      "Value": ""
     },
     {
       "Id": 2020111221,
       "Type": 1,
-      "Value": 50
+      "Value": ""
     },
     {
       "Id": 2036888437,
       "Type": 1,
-      "Value": 50
+      "Value": ""
     },
     {
       "Id": 1634759541,
@@ -112,31 +112,31 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_5111"
+      "Value": "Q"
     },
     {
       "Id": 2037408373,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_18356"
+      "Value": "Summon Herald Volazj"
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_18358"
+      "Value": "(tolvir)"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_18359"
+      "Value": "Mystical Hero, adept at disruption and ranged combat.|n|cfff5962dCan Learn:|R Arcane Bombardment, Banish, Arcane Bomb, Curse of Silence|n|n|cffffcc00Attacks land and air units.|R"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 2
+      "Value": ""
     }
   ]
 }

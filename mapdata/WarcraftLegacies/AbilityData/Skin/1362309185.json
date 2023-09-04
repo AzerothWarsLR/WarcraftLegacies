@@ -13,29 +13,31 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_12165"
+      "Value": "(Sentinels) (Vault of the Wardens)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_14557"
+      "Value": "Z"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_12167"
+      "Value": "Watcher\u0027s Eye"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_12168"
+      "Value": "Watcher\u0027s Eye"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_12169"
+      "Value": "Summons an invulnerable, invisible and immovable ward that provides vision in an area. |nCan see invisible units. |nLasts \u003CA03Q,Dur1\u003E seconds."
     },
     {
       "Id": 1802728801,

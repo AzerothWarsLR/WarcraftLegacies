@@ -12,17 +12,17 @@
     },
     {
       "Id": 2020631137,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_6164"
+      "Value": "(sentinel power)"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_17048"
+      "Value": "Unspoiled Wilderness"
     },
     {
       "Id": 1918988897,
@@ -31,7 +31,7 @@
     },
     {
       "Id": 2020635233,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1952805473,
@@ -50,15 +50,17 @@
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_19121"
+      "Value": "Unspoiled Wilderness"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_13769"
+      "Value": "Gives nearby Sentinel units 30% movement speed increase."
     }
   ]
 }

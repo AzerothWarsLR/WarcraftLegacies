@@ -17,7 +17,7 @@
     },
     {
       "Id": 1651270517,
-      "Value": 150
+      "Value": ""
     },
     {
       "Id": 1819501173,
@@ -26,29 +26,29 @@
     },
     {
       "Id": 2020631157,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 2037408373,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1667462261,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_1730"
+      "Value": "(C\u0027thun building)"
     },
     {
       "Id": 1953523061,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1685218677,
       "Type": 1,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1818520949,
@@ -57,27 +57,27 @@
     },
     {
       "Id": 1735156597,
-      "Value": 221
+      "Value": ""
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_1260"
+      "Value": "A"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.7
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_1397"
+      "Value": "Hatchery"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_1427"
+      "Value": "Build Hatchery"
     },
     {
       "Id": 1935832437,
@@ -87,7 +87,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_1734"
+      "Value": "Primary troop production building. |rTrains Faceless One, Silithid Reaver and Giant Scarab. Contains the researches for Web."
     },
     {
       "Id": 1684960117,

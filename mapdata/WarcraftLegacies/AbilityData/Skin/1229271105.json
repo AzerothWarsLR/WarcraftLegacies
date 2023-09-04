@@ -7,22 +7,22 @@
   "Modifications": [
     {
       "Id": 2020631137,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_9811"
+      "Value": "(Kirin Tor)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_10988"
+      "Value": "W"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_9813"
+      "Value": "Teleport"
     },
     {
       "Id": 1918988897,
@@ -31,38 +31,40 @@
     },
     {
       "Id": 2020635233,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_10630"
+      "Value": "D"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_9815"
+      "Value": "Learn Astral Walk -  [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_9816"
+      "Value": "Teleports Balnazzar to the targeted allied land unit or structure.  |n|n|cffffcc00Level 1|r - 45 second cooldown, 75 mana cost. |n|cffffcc00Level 2|r - 30 second cooldown, 50 mana cost. |n|cffffcc00Level 3|r - 15 second cooldown, 25 mana cost.|n|cffffcc00Level 4|r - no cooldown, free to cast."
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_9817"
+      "Value": "Teleport"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_9818"
+      "Value": "Teleports the caster to the target allied structure after \u003CA0EI,DataB1\u003E seconds."
     },
     {
       "Id": 2037408353,
-      "Value": 2
+      "Value": ""
     }
   ]
 }

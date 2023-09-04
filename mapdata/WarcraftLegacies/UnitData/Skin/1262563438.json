@@ -7,17 +7,17 @@
   "Modifications": [
     {
       "Id": 2020631157,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_1324"
+      "Value": "(Dalaran)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_1670"
+      "Value": "W"
     },
     {
       "Id": 1831952757,
@@ -27,17 +27,17 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_15302"
+      "Value": "Initiate Mage"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_16196"
+      "Value": "Train Initiate Mage"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_17130"
+      "Value": "Light ranged unit.|n|cfff5962dAbilities:|R Slow |n|n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Id": 1868786037,

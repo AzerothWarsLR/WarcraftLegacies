@@ -6,22 +6,22 @@
   "Modifications": [
     {
       "Id": 2037408373,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_848"
+      "Value": "X"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.85
+      "Value": ""
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 3
+      "Value": ""
     },
     {
       "Id": 1935832437,
@@ -31,12 +31,12 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_1051"
+      "Value": "Revives slain Heroes and Demi-heroes."
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_16420"
+      "Value": " (Lordaeron Altar)"
     }
   ]
 }

@@ -8,30 +8,30 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_5194"
+      "Value": "W"
     },
     {
       "Id": 2020631157,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1651270517,
-      "Value": 150
+      "Value": ""
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_13065"
+      "Value": "Light ranged unit that has a poison attack which slows and damages enemy units. Has True Sight and the Submerge ability, which allows this unit to hide in water. |n|n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_18499"
+      "Value": "Hatchling"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_18500"
+      "Value": "Train Hatchling"
     },
     {
       "Id": 1818520949,
@@ -45,17 +45,17 @@
     },
     {
       "Id": 1919705973,
-      "Value": 50
+      "Value": ""
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.8
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_18844"
+      "Value": " (Nzoth)"
     }
   ]
 }

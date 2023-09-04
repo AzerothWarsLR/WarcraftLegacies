@@ -7,25 +7,28 @@
   "Modifications": [
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1852072801,
       "Type": 2,
       "Value": 19
     },
     {
       "Level": 1,
-      "Pointer": 5,
+      "Pointer": 1,
       "Id": 896366180,
       "Type": 2,
       "Value": 380
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1851880033,
       "Type": 2,
       "Value": 700
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1918989409,
       "Type": 3,
       "Value": "air,ground,invulnerable,structure,tree,vulnerable,ward"

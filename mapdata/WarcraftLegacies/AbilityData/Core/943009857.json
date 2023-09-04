@@ -7,30 +7,35 @@
   "Modifications": [
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 1701994849,
       "Type": 2,
       "Value": 200
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 1718968929,
       "Type": 3,
       "Value": "BCbf"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1852072801,
       "Type": 2,
       "Value": 80
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 1852072801,
       "Type": 2,
       "Value": 70
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1935895905,
       "Value": 0
     },
@@ -43,14 +48,14 @@
     },
     {
       "Level": 2,
-      "Pointer": 1,
+      "Pointer": 2,
       "Id": 829645653,
       "Type": 2,
       "Value": 75
     },
     {
       "Level": 1,
-      "Pointer": 2,
+      "Pointer": 1,
       "Id": 846422869,
       "Type": 2,
       "Value": 800
@@ -64,52 +69,56 @@
     },
     {
       "Level": 2,
-      "Pointer": 3,
+      "Pointer": 2,
       "Id": 863200085,
       "Type": 2,
       "Value": 800
     },
     {
       "Level": 2,
-      "Pointer": 4,
+      "Pointer": 2,
       "Id": 879977301,
       "Type": 2,
       "Value": 200
     },
     {
       "Level": 1,
-      "Pointer": 5,
+      "Pointer": 1,
       "Id": 895902286,
       "Type": 2,
       "Value": 8
     },
     {
       "Level": 2,
-      "Pointer": 5,
+      "Pointer": 2,
       "Id": 895902286,
       "Type": 2,
       "Value": 10
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1920296033,
       "Type": 2,
       "Value": 9
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 1920296033,
       "Type": 2,
       "Value": 9
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1969514593,
       "Type": 2,
       "Value": 2
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 1969514593,
       "Type": 2,
       "Value": 2
@@ -125,12 +134,14 @@
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 1851880033,
       "Type": 2,
       "Value": 700
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 1918989409,
       "Type": 3,
       "Value": "ground,air"

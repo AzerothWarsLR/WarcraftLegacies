@@ -12,36 +12,36 @@
     },
     {
       "Id": 2020631157,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 2037408373,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1936024681,
       "Type": 3,
-      "Value": "TRIGSTR_4307"
+      "Value": "Summons Orc Workers."
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_11205"
+      "Value": "X"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_4309"
+      "Value": "Summon Orc Workers"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_14862"
+      "Value": "Purchase Summon Workers"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_4302"
+      "Value": "Summons workers."
     }
   ]
 }

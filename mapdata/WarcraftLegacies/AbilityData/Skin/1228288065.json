@@ -8,7 +8,7 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_9321"
+      "Value": "(Yellow - Thane)"
     },
     {
       "Id": 1936090465,
@@ -18,35 +18,38 @@
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_10997"
+      "Value": "R"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_10914"
+      "Value": "Perfect Avatar"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_11545"
+      "Value": "Activate Perfect Avatar"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_19012"
+      "Value": "The Thanes, having perfected their avatar, will take almost no damage while in it. They also gain 20 bonus damage and 200 hit point bonus.|n|nLasts 15 seconds."
     },
     {
       "Id": 1802007905,
       "Type": 3,
-      "Value": "TRIGSTR_10999"
+      "Value": "R"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829715809,
       "Type": 3,
-      "Value": "TRIGSTR_11548"
+      "Value": "Deactivate Perfect A|cffffcc00v|ratar"
     }
   ]
 }

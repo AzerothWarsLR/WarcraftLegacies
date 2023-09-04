@@ -8,19 +8,21 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_17017"
+      "Value": "Mass Enrage"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_17018"
+      "Value": "Mass Enrage - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_17019"
+      "Value": "Cause all allied units in the area of effect gain Unholy Frenzy, increasing attack rate by 100% but draining them of 10 hit points per second. Lasts 40 seconds"
     },
     {
       "Id": 1952539489,
@@ -54,20 +56,20 @@
     },
     {
       "Id": 2020631137,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 2037408353,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_16109"
+      "Value": "W"
     },
     {
       "Id": 2020635233,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1918988897,
@@ -76,59 +78,65 @@
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_17020"
+      "Value": "Mass Enrage - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_17021"
+      "Value": "Mass Enrage - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
+      "Pointer": 4,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_17022"
+      "Value": "Mass Enrage - [|cffffcc00Level 4|r]"
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_15938"
+      "Value": "(hakkar)"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_17024"
+      "Value": "Cause all allied units in the area of effect gain Unholy Frenzy, increasing attack rate by 100% but draining them of 10 hit points per second. Lasts 40 seconds"
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_17025"
+      "Value": "Cause all allied units in the area of effect gain Unholy Frenzy, increasing attack rate by 100% but draining them of 10 hit points per second. Lasts 40 seconds"
     },
     {
       "Level": 4,
+      "Pointer": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_17026"
+      "Value": "Cause all allied units in the area of effect gain Unholy Frenzy, increasing attack rate by 100% but draining them of 10 hit points per second. Lasts 40 seconds"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_17027"
+      "Value": "Cause all allied units in the area of effect gain Unholy Frenzy, increasing attack rate by 100% but draining them of 10 hit points per second. Lasts 40 seconds.|n|n|cffffcc00Level 1|r - 100 AOE, cooldown 120, mana cost 200|n|cffffcc00Level 2|r - 150 AOE, cooldown 90, mana cost 180|n|cffffcc00Level 3|r - 200 AOE, cooldown 60, mana cost 160|n|cffffcc00Level 4|r - 250 AOE, cooldown 30, mana cost 140"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_17028"
+      "Value": "Learn Mass Enrage - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_16151"
+      "Value": "W"
     }
   ]
 }

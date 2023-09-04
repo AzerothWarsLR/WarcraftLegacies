@@ -7,17 +7,17 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_1055"
+      "Value": "(Druids-Sentinels)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_957"
+      "Value": "W"
     },
     {
       "Id": 845245813,
       "Type": 2,
-      "Value": 0.1
+      "Value": ""
     },
     {
       "Id": 1832018293,
@@ -27,27 +27,27 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_1125"
+      "Value": "Corvette"
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_1126"
+      "Value": "Build Corvette"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_5443"
+      "Value": "Agile dominator of the seas of Kalimdor.|n|cfff5962dAbilities:|R Board, Fishing Nets|n|r|n|cffffcc00Attacks land and air units."
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.9
+      "Value": ""
     }
   ]
 }

@@ -7,15 +7,17 @@
   "Modifications": [
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_19136"
+      "Value": "This unit has 2 goblin crewing it, they will jump out when the tank is destroyed."
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_15549"
+      "Value": "Increases the rate at which this unit gathers lumber."
     },
     {
       "Id": 1953653089,
@@ -25,22 +27,23 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_029"
+      "Value": "Goblin Pilot"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_030"
+      "Value": "Goblin Pilot"
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_19140"
+      "Value": "(icon tank)"
     },
     {
       "Id": 2020631137,
-      "Value": 1
+      "Value": ""
     }
   ]
 }

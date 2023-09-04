@@ -6,21 +6,21 @@
   "Modifications": [
     {
       "Id": 2020631157,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 2037408373,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_644"
+      "Value": "Train Nether Dragon |cffffcc00H|ratchling"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_645"
+      "Value": "Tiny ranged flying unit. |n |n|cff99b4d1Can only train 6 |r|n|cffffcc00Attacks land and air units.|r"
     }
   ]
 }

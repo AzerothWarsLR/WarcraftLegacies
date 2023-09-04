@@ -17,17 +17,17 @@
     },
     {
       "Id": 2020631137,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_11851"
+      "Value": "(Red - Death Knight Arthas)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_12711"
+      "Value": "W"
     },
     {
       "Id": 1734962273,
@@ -37,7 +37,7 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_11853"
+      "Value": "Soul Drain"
     },
     {
       "Id": 1918988897,
@@ -46,70 +46,78 @@
     },
     {
       "Id": 2020635233,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_12736"
+      "Value": "W"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_11855"
+      "Value": "Learn Soul Drain - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_11856"
+      "Value": "The hero drains the life and mana of an enemy unit instantly and adds it to his own. |n|n|cffffcc00Level 1|r - 80 hit points and 40 mana drained. |n|cffffcc00Level 2|r - 160 hit points and 60 mana drained. |n|cffffcc00Level 3|r - 240 hit points and 80 mana drained. |n|cffffcc00Level 4|r - 320 hit points and 100 mana drained."
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_11857"
+      "Value": "Soul Drain - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_11858"
+      "Value": "Soul Drain - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_11859"
+      "Value": "Soul Drain - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
+      "Pointer": 4,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_11860"
+      "Value": "Soul Drain - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_11861"
+      "Value": "Drains 80 hit points and 40 mana instantly from a targetted enemy unit and gives them to the hero."
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_11862"
+      "Value": "Drains 160 hit points and 60 mana instantly from a targetted enemy unit and gives them to the hero."
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_11863"
+      "Value": "Drains 240 hit points and 80 mana instantly from a targetted enemy unit and gives them to the hero."
     },
     {
       "Level": 4,
+      "Pointer": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_11864"
+      "Value": "Drains 320 hit points and 100 mana instantly from a targetted enemy unit and gives them to the hero."
     }
   ]
 }

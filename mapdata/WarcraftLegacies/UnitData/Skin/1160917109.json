@@ -17,12 +17,12 @@
     },
     {
       "Id": 1651270517,
-      "Value": 150
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_222"
+      "Value": "(Black Emprie)"
     },
     {
       "Id": 1818520949,
@@ -31,26 +31,26 @@
     },
     {
       "Id": 1735156597,
-      "Value": 200
+      "Value": ""
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_5385"
+      "Value": "E"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_224"
+      "Value": "Herald of Ny\u0027alotha"
     },
     {
       "Id": 1919705973,
-      "Value": 200
+      "Value": ""
     },
     {
       "Id": 1634759541,
@@ -60,12 +60,12 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_228"
+      "Value": "Train Herald of Ny\u0027alotha"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_12116"
+      "Value": "Heralds of Ny\u0027alotha, use them to summon the Obelisks|n|cfff5962dAbilities:|R Blink, Spell Immunity, Summon Obelisk|n|n|cff99b4d1Can only train 1.|r|n|cffffcc00No Attack.|r"
     },
     {
       "Id": 1684960117,
@@ -74,7 +74,7 @@
     },
     {
       "Id": 2020631157,
-      "Value": 2
+      "Value": ""
     }
   ]
 }

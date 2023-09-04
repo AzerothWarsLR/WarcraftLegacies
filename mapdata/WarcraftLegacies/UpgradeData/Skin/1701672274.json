@@ -6,69 +6,80 @@
   "Modifications": [
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1718840935,
       "Type": 3,
-      "Value": "TRIGSTR_11646"
+      "Value": "(Unused)"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 1718840935,
       "Type": 3,
-      "Value": "TRIGSTR_13810"
+      "Value": "(Red Research)"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_20255"
+      "Value": "Q"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_20386"
+      "Value": "Q"
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_20387"
+      "Value": "Q"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_13814"
+      "Value": "Upgrade [|cffffcc00Q|r] - Unholy Strength"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_13815"
+      "Value": "Upgrade [|cffffcc00Q|r] - Improved Unholy Strength"
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_13816"
+      "Value": "Upgrade [|cffffcc00Q|r] - Advanced Unholy Strength"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "TRIGSTR_13817"
+      "Value": "Increases the attack damage of Ghouls, Crypt Fiends, Zombies, Skeletal Archers, Gargoyles, Abominations, Meat Wagons, Destroyers, Frost Wyrms, Obsidian Statues, Death Knights, Sapphiron, Risen Skeletons, Towers and Anub\u0027arak\u0027s Beetles."
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 828536167,
       "Type": 3,
-      "Value": "TRIGSTR_13818"
+      "Value": "Further increases the attack damage of Ghouls, Crypt Fiends, Zombies, Skeletal Archers, Gargoyles, Abominations, Meat Wagons, Destroyers, Frost Wyrms, Obsidian Statues, Death Knights, Sapphiron, Risen Skeletons, Towers, and Anub\u0027arak\u0027s Beetles."
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 828536167,
       "Type": 3,
-      "Value": "TRIGSTR_13819"
+      "Value": "Further increases the attack damage of Ghouls, Crypt Fiends, Zombies, Skeletal Archers, Gargoyles, Abominations, Meat Wagons, Destroyers, Frost Wyrms, Obsidian Statues, Death Knights, Sapphiron, Risen Skeletons, Towers, and Anub\u0027arak\u0027s Beetles."
     }
   ]
 }

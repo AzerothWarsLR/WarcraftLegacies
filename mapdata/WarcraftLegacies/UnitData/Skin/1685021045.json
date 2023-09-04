@@ -6,17 +6,17 @@
   "Modifications": [
     {
       "Id": 2037408373,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_264"
+      "Value": "X"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.85
+      "Value": ""
     },
     {
       "Id": 1935832437,
@@ -26,7 +26,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_367"
+      "Value": "Revives slain Heroes and demi-heroes."
     }
   ]
 }

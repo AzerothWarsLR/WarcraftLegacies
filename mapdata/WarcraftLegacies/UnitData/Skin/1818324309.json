@@ -12,37 +12,37 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_1182"
+      "Value": "(Legion)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_1063"
+      "Value": "Q"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.95
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_1184"
+      "Value": "The Cunning"
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 1.9
+      "Value": ""
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_17728"
+      "Value": "Mystical Hero, adept at infiltration and disrupting enemies.|n|cfff5962dAbilities:|r Permanent Invisibility, Feedback |n|cfff5962dCan learn:|R Carrion Swarm, Silence, Brilliance Aura, Doom, Astral Walk|n|n|cffffcc00Attacks land units.|R"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_14455"
+      "Value": "Summon Mal\u0027ganis"
     }
   ]
 }

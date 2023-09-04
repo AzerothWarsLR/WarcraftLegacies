@@ -13,29 +13,31 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_17396"
+      "Value": "(Arcane Annihilator)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_15088"
+      "Value": "R"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_11476"
+      "Value": "Siege Mode"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_11579"
+      "Value": "Siege Mode"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_16688"
+      "Value": "Immobilizes the Arcane Annihilator to grant it a powerful ranged attack."
     },
     {
       "Id": 1918989665,
@@ -45,19 +47,21 @@
     {
       "Id": 1802007905,
       "Type": 3,
-      "Value": "TRIGSTR_15293"
+      "Value": "R"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829715809,
       "Type": 3,
-      "Value": "TRIGSTR_11581"
+      "Value": "Mobile Form"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829781345,
       "Type": 3,
-      "Value": "TRIGSTR_16693"
+      "Value": "Allows the Arcane Annihilator to move again."
     }
   ]
 }

@@ -12,36 +12,36 @@
     },
     {
       "Id": 2020631157,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 2037408373,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1936024681,
       "Type": 3,
-      "Value": "TRIGSTR_17066"
+      "Value": "Summons Cultist"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_13017"
+      "Value": "X"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_4370"
+      "Value": "Summon Cultist"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_17067"
+      "Value": "Purchase Summon Cultist"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_17068"
+      "Value": "Summons Cultist"
     }
   ]
 }

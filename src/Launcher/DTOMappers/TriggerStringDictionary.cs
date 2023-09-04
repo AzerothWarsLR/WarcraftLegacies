@@ -17,12 +17,15 @@ namespace Launcher.DTOMappers
     /// Gets a value from a <see cref="Dictionary{TKey,TValue}"/> of TriggerString values indexed by a key.
     /// <para>If the provided key turns out to be invalid, this method will return the key back.</para> 
     /// </summary>
-    public string GetTriggerStringValueFromKey(string key)
+    private string GetTriggerStringValueFromKey(string key)
     {
+      if (key == null)
+        return "";
+      
       return !key.StartsWith("TRIGSTR_") ? key : _triggerStrings[ParseTriggerStringAsKey(key)];
     }
-    
-    public static uint ParseTriggerStringAsKey(string triggerString)
+
+    private static uint ParseTriggerStringAsKey(string triggerString)
     {
       var textAfterUnderscore = triggerString[(triggerString.LastIndexOf('_') + 1)..];
       if (uint.TryParse(textAfterUnderscore, out var parsedKey))

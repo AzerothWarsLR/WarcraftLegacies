@@ -7,24 +7,28 @@
   "Modifications": [
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1701994849,
       "Type": 2,
       "Value": 750
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1718968929,
       "Type": 3,
       "Value": "B002"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1852072801,
       "Type": 2,
       "Value": 300
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1935895905,
       "Value": 410
     },
@@ -37,12 +41,14 @@
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1920296033,
       "Type": 2,
       "Value": 180
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1717986657,
       "Type": 3,
       "Value": "X001"
@@ -53,6 +59,7 @@
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1969514593,
       "Type": 2,
       "Value": 180
@@ -64,12 +71,14 @@
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1851880033,
       "Type": 2,
       "Value": 5
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1918989409,
       "Type": 3,
       "Value": "air,enemies,structure,ground"

@@ -8,12 +8,12 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_2785"
+      "Value": "(Dragonmaw)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_5419"
+      "Value": "W"
     },
     {
       "Id": 1832018293,
@@ -23,17 +23,17 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_19144"
+      "Value": "Drake"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_19156"
+      "Value": "Train Drake"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_19181"
+      "Value": "Medium dragon of the Dragonmaw Clan.|n|r|n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Id": 1818520949,
@@ -47,7 +47,7 @@
     },
     {
       "Id": 2020631157,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1831952757,

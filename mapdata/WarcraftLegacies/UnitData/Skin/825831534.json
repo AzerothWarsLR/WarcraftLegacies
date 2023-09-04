@@ -7,31 +7,31 @@
   "Modifications": [
     {
       "Id": 1651270517,
-      "Value": 130
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_1949"
+      "Value": "(Legion-Archimond-Level 2)"
     },
     {
       "Id": 1735156597,
-      "Value": 180
+      "Value": ""
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.95
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_1950"
+      "Value": "Doomfire Abyssal"
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 2.75
+      "Value": ""
     }
   ]
 }

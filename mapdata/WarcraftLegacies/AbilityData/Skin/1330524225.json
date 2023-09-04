@@ -8,42 +8,44 @@
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_15818"
+      "Value": "W"
     },
     {
       "Id": 1802007905,
       "Type": 3,
-      "Value": "TRIGSTR_15850"
+      "Value": "W"
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_156"
+      "Value": "(Naxxramas)"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_157"
+      "Value": "Land"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_158"
+      "Value": "Land"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829715809,
       "Type": 3,
-      "Value": "TRIGSTR_159"
+      "Value": "Lift"
     },
     {
       "Id": 2020631137,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 2019718497,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1953653089,
@@ -57,15 +59,17 @@
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_11327"
+      "Value": "Land Naxxramas|n|n|cffff0000Warning|r Has a 1 min cooldown before you can fly again"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829781345,
       "Type": 3,
-      "Value": "TRIGSTR_18015"
+      "Value": "Lift Naxxramas |n|n|cffff0000Warning|r Has a 1 min cooldown before you can land again"
     }
   ]
 }

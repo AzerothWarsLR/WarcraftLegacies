@@ -13,12 +13,12 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_10176"
+      "Value": "(Arcanist)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_11125"
+      "Value": "Q"
     },
     {
       "Id": 1952542049,
@@ -28,19 +28,21 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_10178"
+      "Value": "Magic Missile"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_10179"
+      "Value": "Magic Missile"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_16189"
+      "Value": "Launches a magical missile at a target enemy unit, dealing 60 damage and stunning the target for \u003CA0D1,Dur1\u003E seconds. Lasts 0.1 seconds on heroes."
     }
   ]
 }

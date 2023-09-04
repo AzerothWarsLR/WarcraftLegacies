@@ -8,23 +8,24 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_11164"
+      "Value": "(Lordaeron - Paladin)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_11821"
+      "Value": "W"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_11166"
+      "Value": "An impenetrable shield surrounds this unit, protecting it from all damage and spells.|n|cffffcc00Lasts \u003CACds,Dur1\u003E seconds."
     },
     {
       "Id": 1802007905,
       "Type": 3,
-      "Value": "TRIGSTR_11835"
+      "Value": "W"
     }
   ]
 }

@@ -13,17 +13,17 @@
     {
       "Id": 1885959270,
       "Type": 3,
-      "Value": "TRIGSTR_13597"
+      "Value": "Corrosive Rune"
     },
     {
       "Id": 1700951398,
       "Type": 3,
-      "Value": "TRIGSTR_13598"
+      "Value": "This rune reduces the armor of nearby enemy units."
     },
     {
       "Id": 1718840934,
       "Type": 3,
-      "Value": "TRIGSTR_13599"
+      "Value": "(Ward)"
     }
   ]
 }

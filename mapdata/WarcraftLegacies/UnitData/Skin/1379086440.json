@@ -7,7 +7,7 @@
   "Modifications": [
     {
       "Id": 2020631157,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1635083125,
@@ -17,17 +17,17 @@
     {
       "Id": 1853186933,
       "Type": 3,
-      "Value": "TRIGSTR_2631"
+      "Value": "Initiate, Adept, Master"
     },
     {
       "Id": 1953850229,
       "Type": 3,
-      "Value": "TRIGSTR_3136"
+      "Value": "- Deploy Barricade,- Deploy Barricade|n- Mech Kit,- Deploy Barricade|n- Mech Kit|n- Overclock"
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_2633"
+      "Value": "(Ironforge)"
     },
     {
       "Id": 1818520949,
@@ -37,22 +37,22 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_2500"
+      "Value": "W"
     },
     {
       "Id": 2020633717,
       "Type": 2,
-      "Value": 25
+      "Value": ""
     },
     {
       "Id": 1886940533,
       "Type": 1,
-      "Value": 45
+      "Value": ""
     },
     {
       "Id": 828468597,
       "Type": 2,
-      "Value": 0.7
+      "Value": ""
     },
     {
       "Id": 1831952757,
@@ -62,22 +62,22 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.8
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_3139"
+      "Value": "Tinkerer"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_3140"
+      "Value": "Train Tinkerer"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_15838"
+      "Value": "Gnomish engineer equipped with brilliant gadgetry.|n|cfff5962dAbilities:|R Deploy Barricades|n|cfff5962dCan Learn:|R Mech Kit, Overclock|n|n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Id": 1684960117,

@@ -13,7 +13,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_2219"
+      "Value": "(Druids)"
     },
     {
       "Id": 1818520949,
@@ -23,27 +23,27 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_2156"
+      "Value": "Q"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.7
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_3277"
+      "Value": "Sapling"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_3514"
+      "Value": "Train Sapling"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_7892"
+      "Value": "Basic melee unit that can reflect incoming melee damage.|n|cfff5962dAbilities:|R Thorns|n|cfff5962dCan learn:|R Grasping Vines|n|n|cffffcc00Attacks land units.|r"
     },
     {
       "Id": 1684960117,

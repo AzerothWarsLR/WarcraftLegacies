@@ -12,16 +12,16 @@
     },
     {
       "Id": 2020631157,
-      "Value": 3
+      "Value": ""
     },
     {
       "Id": 2037408373,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19691"
+      "Value": "(Quel\u0027thalas Magic)"
     },
     {
       "Id": 1818520949,
@@ -31,22 +31,22 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_1654"
+      "Value": "F"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.85
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_2053"
+      "Value": "Consortium"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_1891"
+      "Value": "Build Consortium"
     },
     {
       "Id": 1935832437,
@@ -56,7 +56,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_16655"
+      "Value": "Gathering place for Quel\u0027thalas\u0027 most prestigious spellcasters.|n|cfff5962dTrains:|R Magus, Blood Mage, Warlock|n|cfff5962dResearches:|R Magus Training"
     }
   ]
 }

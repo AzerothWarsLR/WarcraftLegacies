@@ -7,17 +7,17 @@
   "Modifications": [
     {
       "Id": 2020631157,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_20155"
+      "Value": " (Warsong)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_13846"
+      "Value": "C"
     },
     {
       "Id": 1935832437,
@@ -27,17 +27,17 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_18565"
+      "Value": "A new home for the Frostwolves. Used to train workers and gather resources.|n|cfff5962dTrains:|R Peon, Far Seer|n|cfff5962dResearches:|R Spiked Barricades, Improved Chain Lightning|n|cfff5962dAbilities:|R For the Horde!"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_18568"
+      "Value": "Warsong Lumber Camp"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_18569"
+      "Value": "Upgrade to Orgrimmar"
     },
     {
       "Id": 1818520949,

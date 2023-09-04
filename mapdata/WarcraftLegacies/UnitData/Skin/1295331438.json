@@ -8,22 +8,22 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19708"
+      "Value": "(Stormwind Conjurer)"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.5
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_2311"
+      "Value": "Scorpion"
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 1
+      "Value": ""
     }
   ]
 }

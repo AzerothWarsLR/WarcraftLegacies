@@ -8,42 +8,44 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_21081"
+      "Value": "(Hydromancer)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_21093"
+      "Value": "R"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_12088"
+      "Value": "The freezing shots, imbued with arcane magic, slow the target\u0027s attack speed by 80% for 3 seconds."
     },
     {
       "Id": 1802007905,
       "Type": 3,
-      "Value": "TRIGSTR_21130"
+      "Value": "R"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_14396"
+      "Value": "Freezing Shots"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_15022"
+      "Value": "Freezing Shots"
     },
     {
       "Id": 2020631137,
-      "Value": 3
+      "Value": ""
     },
     {
       "Id": 2019718497,
-      "Value": 3
+      "Value": ""
     },
     {
       "Id": 1952542049,

@@ -6,53 +6,58 @@
   "Modifications": [
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1852072801,
       "Type": 2,
       "Value": 150
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 1852072801,
       "Type": 2,
       "Value": 150
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 1852072801,
       "Type": 2,
       "Value": 150
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 1935895905,
       "Value": 175
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 1935895905,
       "Value": 200
     },
     {
       "Level": 2,
-      "Pointer": 1,
+      "Pointer": 2,
       "Id": 829647957,
       "Value": 30
     },
     {
       "Level": 3,
-      "Pointer": 1,
+      "Pointer": 3,
       "Id": 829647957,
       "Value": 40
     },
     {
       "Level": 1,
-      "Pointer": 3,
+      "Pointer": 1,
       "Id": 863202389,
       "Value": 8
     },
     {
       "Level": 2,
-      "Pointer": 3,
+      "Pointer": 2,
       "Id": 863202389,
       "Value": 12
     },
@@ -64,21 +69,21 @@
     },
     {
       "Level": 1,
-      "Pointer": 4,
+      "Pointer": 1,
       "Id": 879979605,
       "Type": 2,
       "Value": 1
     },
     {
       "Level": 2,
-      "Pointer": 5,
+      "Pointer": 2,
       "Id": 896756821,
       "Type": 2,
       "Value": 30
     },
     {
       "Level": 3,
-      "Pointer": 5,
+      "Pointer": 3,
       "Id": 896756821,
       "Type": 2,
       "Value": 40
@@ -97,12 +102,14 @@
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 1918989409,
       "Type": 3,
       "Value": "air,ground,enemy"
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 1918989409,
       "Type": 3,
       "Value": "air,ground,enemy"

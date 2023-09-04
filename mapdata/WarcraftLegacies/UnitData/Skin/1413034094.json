@@ -7,17 +7,17 @@
   "Modifications": [
     {
       "Id": 2020631157,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_007"
+      "Value": "(nexus)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_4872"
+      "Value": "W"
     },
     {
       "Id": 1831952757,
@@ -27,17 +27,17 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_17132"
+      "Value": "Judicator"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_17133"
+      "Value": "Train Judicator"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_10344"
+      "Value": "Powerful Ranged Unit.|n|cfff5962dAbilities:|R Healing Wave, Frost Attack|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Id": 1684960117,
@@ -57,12 +57,12 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.8
+      "Value": ""
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 1.6
+      "Value": ""
     }
   ]
 }

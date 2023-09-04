@@ -7,22 +7,22 @@
   "Modifications": [
     {
       "Id": 2020631157,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_16358"
+      "Value": "(troll)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_4952"
+      "Value": "E"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_16685"
+      "Value": "Heavy ranged unit that hurls bolts of lightning. Can cast Chain Lightning and Lightning Shield.|n|cff99b4d1Can only train 2.|r|n|cffffcc00Attacks land units.|r"
     }
   ]
 }

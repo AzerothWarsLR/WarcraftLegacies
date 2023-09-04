@@ -17,15 +17,15 @@
     },
     {
       "Id": 1651270517,
-      "Value": 111
+      "Value": ""
     },
     {
       "Id": 2020631157,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 2037408373,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1818520949,
@@ -34,17 +34,17 @@
     },
     {
       "Id": 1735156597,
-      "Value": 155
+      "Value": ""
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_1190"
+      "Value": "Z"
     },
     {
       "Id": 828468597,
       "Type": 2,
-      "Value": 0.25
+      "Value": ""
     },
     {
       "Id": 1831952757,
@@ -54,26 +54,26 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 1.8
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_1600"
+      "Value": "Horde Boulder Tower"
     },
     {
       "Id": 1919705973,
-      "Value": 111
+      "Value": ""
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 3.2
+      "Value": ""
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_1572"
+      "Value": "Build [|cffffcc00Z|r] - Watch Tower"
     },
     {
       "Id": 1935832437,
@@ -83,12 +83,12 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_1573"
+      "Value": "Defensive structure. Can learn the Reinforced Defenses and Spiked Barricades upgrade. Can upgrades into an Improved Watch Tower or a Boulder Tower.|n|n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19663"
+      "Value": " (Frostwolf Tower)"
     }
   ]
 }

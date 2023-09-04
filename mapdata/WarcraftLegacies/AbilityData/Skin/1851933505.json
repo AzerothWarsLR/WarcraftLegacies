@@ -6,17 +6,17 @@
   "Modifications": [
     {
       "Id": 2037408353,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_6439"
+      "Value": " (Neutral Hostile) (Medivh)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_8654"
+      "Value": "D"
     }
   ]
 }

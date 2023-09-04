@@ -12,20 +12,20 @@
     },
     {
       "Id": 1651270517,
-      "Value": 250
+      "Value": ""
     },
     {
       "Id": 2020631157,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 2037408373,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19872"
+      "Value": "(Sentinel Magic)"
     },
     {
       "Id": 1818520949,
@@ -34,31 +34,31 @@
     },
     {
       "Id": 1735156597,
-      "Value": 175
+      "Value": ""
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_1584"
+      "Value": "S"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.8
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_3624"
+      "Value": "Temple of Elune"
     },
     {
       "Id": 1919705973,
-      "Value": 200
+      "Value": ""
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_3625"
+      "Value": "Build Temple of Elune"
     },
     {
       "Id": 1935832437,
@@ -68,7 +68,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_3626"
+      "Value": "Temple dedicated to the worship of Elune.|n|cfff5962dTrains:|R Priestess, Moonhunter, Redeemed Highborne|n|cfff5962dResearches:|R Priestess Training, Moonhunter Training"
     }
   ]
 }

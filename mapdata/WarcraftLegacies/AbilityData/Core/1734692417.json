@@ -6,21 +6,21 @@
   "Modifications": [
     {
       "Level": 4,
-      "Pointer": 1,
+      "Pointer": 4,
       "Id": 828859726,
       "Type": 2,
       "Value": 0.4
     },
     {
       "Level": 1,
-      "Pointer": 3,
+      "Pointer": 1,
       "Id": 862414158,
       "Type": 3,
       "Value": "ANsy,A0PT"
     },
     {
       "Level": 2,
-      "Pointer": 3,
+      "Pointer": 2,
       "Id": 862414158,
       "Type": 3,
       "Value": "A0PT,A0RL"
@@ -34,28 +34,28 @@
     },
     {
       "Level": 4,
-      "Pointer": 3,
+      "Pointer": 4,
       "Id": 862414158,
       "Type": 3,
       "Value": "A0RN,A0RM"
     },
     {
       "Level": 1,
-      "Pointer": 4,
+      "Pointer": 1,
       "Id": 879191374,
       "Type": 3,
       "Value": "ANcs,A0RP"
     },
     {
       "Level": 2,
-      "Pointer": 4,
+      "Pointer": 2,
       "Id": 879191374,
       "Type": 3,
       "Value": "A0RP,A0RQ"
     },
     {
       "Level": 3,
-      "Pointer": 4,
+      "Pointer": 3,
       "Id": 879191374,
       "Type": 3,
       "Value": "A0RQ,A0RS"
@@ -69,28 +69,28 @@
     },
     {
       "Level": 1,
-      "Pointer": 5,
+      "Pointer": 1,
       "Id": 895968590,
       "Type": 3,
       "Value": "ANrg,A0RW"
     },
     {
       "Level": 2,
-      "Pointer": 5,
+      "Pointer": 2,
       "Id": 895968590,
       "Type": 3,
       "Value": "A0RW,A0UO"
     },
     {
       "Level": 3,
-      "Pointer": 5,
+      "Pointer": 3,
       "Id": 895968590,
       "Type": 3,
       "Value": "A0UO,A0WO"
     },
     {
       "Level": 4,
-      "Pointer": 5,
+      "Pointer": 4,
       "Id": 895968590,
       "Type": 3,
       "Value": "A0WO,A0Z6"

@@ -7,44 +7,46 @@
   "Modifications": [
     {
       "Id": 2020631137,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_16826"
+      "Value": "(troll - zandalar)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_16187"
+      "Value": "E"
     },
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_15971"
+      "Value": "Q"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_10557"
+      "Value": "Learn Mana Burn (|cffffcc00Q|r) - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_16828"
+      "Value": "Sends a bolt of negative energy that burns a target enemy unit\u0027s mana. Burned mana combusts, dealing damage to the target equal to the amount of mana burned. |n|n|cffffcc00Level 1|r - Burns up to 100 mana. |n|cffffcc00Level 2|r - Burns up to 160 mana. |n|cffffcc00Level 3|r - Burns up to 220 mana.|n|cffffcc00Level 4|r - Burns up to 280 mana.|n|cffffcc00Level 5|r - Burns up to 340 mana."
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_16829"
+      "Value": "Mana Burn"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_16830"
+      "Value": "Sends a bolt of negative energy that burns up to 40 points of a target enemy unit\u0027s mana. The mana combusts, dealing damage equal to the amount of mana burned."
     }
   ]
 }

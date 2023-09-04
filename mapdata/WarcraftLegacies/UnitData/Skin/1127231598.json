@@ -12,7 +12,7 @@
     },
     {
       "Id": 2020631157,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1635083125,
@@ -22,17 +22,17 @@
     {
       "Id": 1853186933,
       "Type": 3,
-      "Value": "TRIGSTR_2222"
+      "Value": "Initiate, Adept, Master"
     },
     {
       "Id": 1953850229,
       "Type": 3,
-      "Value": "TRIGSTR_2632"
+      "Value": "- Rune of Wrath,- Rune of Wrath|n- Healing Shield,- Rune of Wrath|n- Healing Shield|n- Rune of Shielding"
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_2554"
+      "Value": "(Ironforge)"
     },
     {
       "Id": 1818520949,
@@ -42,7 +42,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_2154"
+      "Value": "W"
     },
     {
       "Id": 1831952757,
@@ -52,22 +52,22 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.85
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_2635"
+      "Value": "Rune Priest"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_2636"
+      "Value": "Train Rune Priest"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_15795"
+      "Value": "Learned war-priest and runecrafter. |n|cfff5962dAbilities:|R Rune of Wrath |n|cfff5962dCan learn:|R Healing Shield, Rune of Shielding|n|r|n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Id": 1684960117,

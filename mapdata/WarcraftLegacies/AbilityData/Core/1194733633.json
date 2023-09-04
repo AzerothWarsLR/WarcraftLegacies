@@ -7,18 +7,21 @@
   "Modifications": [
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1701994849,
       "Type": 2,
       "Value": 100
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1852072801,
       "Type": 2,
       "Value": 20
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1935895905,
       "Value": 0
     },
@@ -31,40 +34,41 @@
     },
     {
       "Level": 1,
-      "Pointer": 2,
+      "Pointer": 1,
       "Id": 846422862,
       "Type": 2,
       "Value": 0.5
     },
     {
       "Level": 1,
-      "Pointer": 3,
+      "Pointer": 1,
       "Id": 863200078,
       "Value": 2
     },
     {
       "Level": 1,
-      "Pointer": 4,
+      "Pointer": 1,
       "Id": 879977294,
       "Type": 2,
       "Value": 200
     },
     {
       "Level": 1,
-      "Pointer": 5,
+      "Pointer": 1,
       "Id": 896754510,
       "Type": 2,
       "Value": 0.5
     },
     {
       "Level": 1,
-      "Pointer": 6,
+      "Pointer": 1,
       "Id": 913531726,
       "Type": 2,
       "Value": 0
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1920296033,
       "Type": 2,
       "Value": 0.75
@@ -75,6 +79,7 @@
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1969514593,
       "Type": 2,
       "Value": 0
@@ -90,12 +95,14 @@
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1851880033,
       "Type": 2,
       "Value": 1200
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1918989409,
       "Type": 3,
       "Value": "air,enemies,ground,neutral"

@@ -7,11 +7,13 @@
   "Modifications": [
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1935895905,
       "Value": 30
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 1935895905,
       "Value": 100
     },
@@ -23,7 +25,7 @@
     },
     {
       "Level": 2,
-      "Pointer": 1,
+      "Pointer": 2,
       "Id": 828989778,
       "Value": 2
     },
@@ -35,24 +37,28 @@
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1920296033,
       "Type": 2,
       "Value": 10
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 1920296033,
       "Type": 2,
       "Value": 70
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1969514593,
       "Type": 2,
       "Value": 10
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 1969514593,
       "Type": 2,
       "Value": 70
@@ -63,19 +69,21 @@
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1969840466,
       "Type": 3,
       "Value": "o05N"
     },
     {
       "Level": 1,
-      "Pointer": 3,
+      "Pointer": 1,
       "Id": 862544210,
       "Type": 3,
       "Value": "o05N"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1718968929,
       "Type": 3,
       "Value": "BFig"
@@ -87,6 +95,7 @@
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1918989409,
       "Type": 3,
       "Value": "allies,dead,friend"

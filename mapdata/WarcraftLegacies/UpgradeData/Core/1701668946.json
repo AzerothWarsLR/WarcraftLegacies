@@ -37,17 +37,17 @@
     {
       "Id": 845571431,
       "Type": 3,
-      "Value": "TRIGSTR_13793"
+      "Value": "TRIGSTR_13876"
     },
     {
       "Id": 862348647,
       "Type": 3,
-      "Value": "TRIGSTR_13876"
+      "Value": "TRIGSTR_13938"
     },
     {
       "Id": 879125863,
       "Type": 3,
-      "Value": "TRIGSTR_13938"
+      "Value": "TRIGSTR_14008"
     },
     {
       "Id": 1651271527,
@@ -78,12 +78,14 @@
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 1902473831,
       "Type": 3,
       "Value": ""
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 1902473831,
       "Type": 3,
       "Value": ""
@@ -98,6 +100,7 @@
     },
     {
       "Level": 4,
+      "Pointer": 4,
       "Id": 1902473831,
       "Type": 3,
       "Value": "R04R"

@@ -8,34 +8,36 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_11007"
+      "Value": "(Creep - Queen Nezar\u0027Azret)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_11666"
+      "Value": "W"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_11009"
+      "Value": "Raise Nerubian"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_11010"
+      "Value": "Raise Dead (|cffffcc00Q|r)"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_18727"
+      "Value": "Raises 2 Nerubians from a corpse."
     },
     {
       "Id": 1802007905,
       "Type": 3,
-      "Value": "TRIGSTR_11687"
+      "Value": "W"
     }
   ]
 }

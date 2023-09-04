@@ -7,26 +7,26 @@
   "Modifications": [
     {
       "Id": 2020631137,
-      "Value": 3
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_21083"
+      "Value": "(Arcanist)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_21085"
+      "Value": "R"
     },
     {
       "Id": 2019718497,
-      "Value": 3
+      "Value": ""
     },
     {
       "Id": 1802007905,
       "Type": 3,
-      "Value": "TRIGSTR_21086"
+      "Value": "R"
     }
   ]
 }

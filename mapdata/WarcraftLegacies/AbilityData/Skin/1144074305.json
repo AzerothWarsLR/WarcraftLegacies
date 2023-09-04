@@ -12,26 +12,26 @@
     },
     {
       "Id": 2020631137,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 2037408353,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_12708"
+      "Value": "(Light Blue - Tyrande)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_13885"
+      "Value": "W"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_12710"
+      "Value": "Words of Protection"
     },
     {
       "Id": 1918988897,
@@ -40,70 +40,78 @@
     },
     {
       "Id": 2020635233,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_13886"
+      "Value": "W"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_12712"
+      "Value": "Learn Words of Protection - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_15867"
+      "Value": "The hero heals and gives additional armor to nearby friendly units for 25 seconds. 350 AOE.|n|cffffcc00Level 1|r - Heals for 60 and gives 4 armor.|n|cffffcc00Level 2|r - Heals for 90 and gives 6 armor.|n|cffffcc00Level 3|r - Heals for 120 and gives 8 armor.|n|cffffcc00Level 4|r - Heals for 150 and gives 10 armor."
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_12714"
+      "Value": "Words of Protection - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_12715"
+      "Value": "Words of Protection - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_12716"
+      "Value": "Words of Protection - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
+      "Pointer": 4,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_12717"
+      "Value": "Words of Protection - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_12718"
+      "Value": "Heals for 60 and gives 4 armor to nearby units for 25 seconds. 350 AOE."
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_12719"
+      "Value": "Heals for 90 and gives 6 armor to nearby units for 25 seconds. 350 AOE.\r\n"
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_12720"
+      "Value": "Heals for 120 and gives 8 armor to nearby units for 25 seconds. 350 AOE."
     },
     {
       "Level": 4,
+      "Pointer": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_12721"
+      "Value": "Heals for 150 and gives 10 armor to nearby units for 25 seconds. 350 AOE."
     },
     {
       "Id": 1918989665,

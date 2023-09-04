@@ -6,27 +6,27 @@
   "Modifications": [
     {
       "Id": 2020631157,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_15492"
+      "Value": " (Druids)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_737"
+      "Value": "W"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.9
+      "Value": ""
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_1100"
+      "Value": "Anti-caster flying unit. |n|cfff5962dAbilities:|R Phase Shift, Mana Flare|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land units.|r"
     }
   ]
 }

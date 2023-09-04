@@ -8,44 +8,44 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_16385"
+      "Value": "Twilight Dragonspawn"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_16449"
+      "Value": "Train Twilight Dragonspawn"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 1.2
+      "Value": ""
     },
     {
       "Id": 1735156597,
-      "Value": 155
+      "Value": ""
     },
     {
       "Id": 1919705973,
-      "Value": 200
+      "Value": ""
     },
     {
       "Id": 1651270517,
-      "Value": 200
+      "Value": ""
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_4267"
+      "Value": "Q"
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_7904"
+      "Value": "(twilight)"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_17604"
+      "Value": "Heavy melee unit with Charge, Cleaving Attack and Hardened Scale.|n|n|cffffcc00Attacks land units.|r"
     }
   ]
 }

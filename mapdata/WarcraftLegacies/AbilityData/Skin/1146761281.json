@@ -13,12 +13,12 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_19417"
+      "Value": "(Dragonmaw Standard Level 2)"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_19418"
+      "Value": "Vitality Aura"
     },
     {
       "Id": 1952543841,
@@ -27,15 +27,17 @@
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_19419"
+      "Value": "Vitality Aura"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_19420"
+      "Value": "Increases nearby friendly units\u0027 hit point regeneration rate by 100%."
     }
   ]
 }

@@ -8,37 +8,37 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_1027"
+      "Value": "(Alliance)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_4088"
+      "Value": "X"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_2142"
+      "Value": "Juggernaut"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_1006"
+      "Value": "Build Juggernaut"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_091"
+      "Value": "Dominating heavy ship.|n|r|n|cffffcc00Attacks mechanical targets.|r |nStrong versus every Ship, Weak versus Frigates on equal ressources.|nCannot attack non-mechanical units."
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.95
+      "Value": ""
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 3
+      "Value": ""
     },
     {
       "Id": 1818520949,
@@ -58,15 +58,15 @@
     {
       "Id": 828468597,
       "Type": 2,
-      "Value": 0.2
+      "Value": ""
     },
     {
       "Id": 2020631157,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 2037408373,
-      "Value": 2
+      "Value": ""
     }
   ]
 }

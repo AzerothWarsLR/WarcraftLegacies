@@ -6,141 +6,164 @@
   "Modifications": [
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1718840935,
       "Type": 3,
-      "Value": "TRIGSTR_13833"
+      "Value": "(Unused)"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 1718840935,
       "Type": 3,
-      "Value": "TRIGSTR_13884"
+      "Value": "(Teal/Pink Research)"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_20567"
+      "Value": "W"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_20725"
+      "Value": "W"
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_20726"
+      "Value": "W"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "TRIGSTR_13888"
+      "Value": "Fel Iron Ranged Weapons"
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "TRIGSTR_13889"
+      "Value": "Thorium Ranged Weapons"
     },
     {
       "Level": 4,
+      "Pointer": 4,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "TRIGSTR_13890"
+      "Value": "Adamantite Ranged Weapons"
     },
     {
       "Level": 5,
+      "Pointer": 5,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "TRIGSTR_13891"
+      "Value": "Eternium Ranged Weapons"
     },
     {
       "Level": 6,
+      "Pointer": 6,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "TRIGSTR_13892"
+      "Value": "Felsteel Ranged Weapons"
     },
     {
       "Level": 7,
+      "Pointer": 7,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "TRIGSTR_13893"
+      "Value": "Khorium Ranged Weapons"
     },
     {
       "Level": 8,
+      "Pointer": 8,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "TRIGSTR_13894"
+      "Value": "Arcanite Ranged Weapons"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_13895"
+      "Value": "[|cffffcc00W|r] - Upgrade Steel Ranged Weapons"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_13896"
+      "Value": "[|cffffcc00W|r] - Upgrade Fel Iron Ranged Weapons"
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_13897"
+      "Value": "[|cffffcc00W|r] - Upgrade Thorium Ranged Weapons"
     },
     {
       "Level": 4,
+      "Pointer": 4,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_13898"
+      "Value": "[|cffffcc00W|r] - Upgrade Adamantite Ranged Weapons"
     },
     {
       "Level": 5,
+      "Pointer": 5,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_13899"
+      "Value": "[|cffffcc00W|r] - Upgrade Eternium Ranged Weapons"
     },
     {
       "Level": 6,
+      "Pointer": 6,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_13900"
+      "Value": "[|cffffcc00W|r] - Upgrade Felsteel Ranged Weapons"
     },
     {
       "Level": 7,
+      "Pointer": 7,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_13901"
+      "Value": "[|cffffcc00W|r] - Upgrade Khorium Ranged Weapons"
     },
     {
       "Level": 8,
+      "Pointer": 8,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_13902"
+      "Value": "[|cffffcc00W|r] - Upgrade Arcanite Ranged Weapons"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "TRIGSTR_13903"
+      "Value": "Increases the ranged attack damage of your ranged units."
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 828536167,
       "Type": 3,
-      "Value": "TRIGSTR_13904"
+      "Value": "Further increases the ranged attack damage of your ranged units."
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 828536167,
       "Type": 3,
-      "Value": "TRIGSTR_13905"
+      "Value": "Further increases the ranged attack damage of your ranged units."
     }
   ]
 }

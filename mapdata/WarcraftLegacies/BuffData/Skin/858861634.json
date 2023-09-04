@@ -13,12 +13,12 @@
     {
       "Id": 1885959270,
       "Type": 3,
-      "Value": "TRIGSTR_13710"
+      "Value": "Revitalization"
     },
     {
       "Id": 1700951398,
       "Type": 3,
-      "Value": "TRIGSTR_13711"
+      "Value": "This unit has a 40% chance of reviving upon death."
     },
     {
       "Id": 1952543846,

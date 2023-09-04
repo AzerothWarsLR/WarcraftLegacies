@@ -7,17 +7,17 @@
   "Modifications": [
     {
       "Id": 2020631137,
-      "Value": 3
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_10516"
+      "Value": "(DG - Militia, Swordsman, Champions. Purple - Footman. Pink - Grunt)"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_7054"
+      "Value": "Combat Experience"
     },
     {
       "Id": 1918988897,
@@ -26,39 +26,45 @@
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_7055"
+      "Value": "Combat Experience"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_10517"
+      "Value": "Combat Experience"
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_10518"
+      "Value": "Combat Experience"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_10521"
+      "Value": "Gives a 10% chance to dodge an attack and a 10% chance to deal 1.5x normal damage."
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_10522"
+      "Value": "Gives a 15% chance to dodge an attack and a 10% chance to deal 1.5x normal damage."
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_10523"
+      "Value": "Gives a 10% chance to dodge an attack and a 15% chance to deal 1.5x normal damage."
     }
   ]
 }

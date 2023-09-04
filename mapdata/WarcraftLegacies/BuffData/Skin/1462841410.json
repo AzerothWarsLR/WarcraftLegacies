@@ -13,17 +13,17 @@
     {
       "Id": 1885959270,
       "Type": 3,
-      "Value": "TRIGSTR_13648"
+      "Value": "Mind Shield"
     },
     {
       "Id": 1700951398,
       "Type": 3,
-      "Value": "TRIGSTR_13649"
+      "Value": "This unit has Mind Shield; it cannot be targeted by spells. It can be dispelled."
     },
     {
       "Id": 1835101798,
       "Type": 3,
-      "Value": "TRIGSTR_13650"
+      "Value": "Mind Shield"
     },
     {
       "Id": 1952543846,

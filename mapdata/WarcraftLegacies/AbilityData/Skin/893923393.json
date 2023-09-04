@@ -8,24 +8,26 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_19553"
+      "Value": "(stormwind)"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_9367"
+      "Value": "Summons an immovable ward that resurrects 1 unit every 5 seconds. |nLasts 30 seconds."
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_9363"
+      "Value": "Rallying Banner"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_9365"
+      "Value": "Rallying Banner"
     },
     {
       "Id": 1953653089,
@@ -34,7 +36,7 @@
     },
     {
       "Id": 2020631137,
-      "Value": 0
+      "Value": ""
     }
   ]
 }

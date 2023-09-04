@@ -12,22 +12,22 @@
     },
     {
       "Id": 2020631137,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_9350"
+      "Value": "(Brown - Malfurion)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_11151"
+      "Value": "W"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_10085"
+      "Value": "Call Treants"
     },
     {
       "Id": 1918988897,
@@ -36,64 +36,71 @@
     },
     {
       "Id": 2020635233,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_11161"
+      "Value": "W"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_10087"
+      "Value": "Learn Call Treant - [|cffffcc00Level %d|r]."
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_10088"
+      "Value": "Summons Treants to battle Malfurion\u0027s enemies. |nLasts \u003CAOsf,Dur1\u003E seconds. |n|n|cffffcc00Level 1|r - 3 Treants.|n|cffffcc00Level 2|r - 4 Treants.|n|cffffcc00Level 3|r - 5 Treants.|n|cffffcc00Level 4|r - 6 Poison Treants."
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_10089"
+      "Value": "Call Treants - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_10090"
+      "Value": "Call Treants - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_10091"
+      "Value": "Call Treants - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
+      "Pointer": 4,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_10092"
+      "Value": "Call Treants - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_10093"
+      "Value": "Summons Treants to aid Malfurion in battle |n|n|cffffcc00Attacks land units.|r"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_10094"
+      "Value": "Summons Treants to aid Malfurion in battle |n|n|cffffcc00Attacks land units.|r"
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_10095"
+      "Value": "Summons Treants to aid Malfurion in battle |n|n|cffffcc00Attacks land units.|r"
     }
   ]
 }

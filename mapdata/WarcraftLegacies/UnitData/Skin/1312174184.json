@@ -12,12 +12,12 @@
     },
     {
       "Id": 2020631157,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19767"
+      "Value": "(Stormwind T3)"
     },
     {
       "Id": 1818520949,
@@ -27,12 +27,12 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_2792"
+      "Value": "C"
     },
     {
       "Id": 845245813,
       "Type": 2,
-      "Value": 0.35
+      "Value": ""
     },
     {
       "Id": 1831952757,
@@ -47,12 +47,12 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.95
+      "Value": ""
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 4.5
+      "Value": ""
     },
     {
       "Id": 1935832437,
@@ -62,7 +62,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_17642"
+      "Value": "Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Peasant, Stormwind Champion|n|cfff5962dResearches:|r Full Scale Escalation |n|cfff5962dAbilities:|R Summon Garrison, Call to Arms"
     }
   ]
 }

@@ -13,12 +13,12 @@
     {
       "Id": 1885959270,
       "Type": 3,
-      "Value": "TRIGSTR_13546"
+      "Value": "Naval Aura"
     },
     {
       "Id": 1835101798,
       "Type": 3,
-      "Value": "TRIGSTR_13548"
+      "Value": "Naval Aura"
     },
     {
       "Id": 1952543846,
@@ -28,7 +28,7 @@
     {
       "Id": 1700951398,
       "Type": 3,
-      "Value": "TRIGSTR_7481"
+      "Value": "This unit has increased movement speed and hit point regeneration."
     }
   ]
 }

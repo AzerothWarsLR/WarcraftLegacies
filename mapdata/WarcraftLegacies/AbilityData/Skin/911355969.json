@@ -13,29 +13,31 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_8153"
+      "Value": "(Dark Green - Benedictus)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_9652"
+      "Value": "W"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_8155"
+      "Value": "Power Word: Shield"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_8156"
+      "Value": "(|cffffcc00W|r) - Power Word Shield"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_8157"
+      "Value": "Creates a barrier that absorbs up to 1100 spell damage on a unit."
     }
   ]
 }

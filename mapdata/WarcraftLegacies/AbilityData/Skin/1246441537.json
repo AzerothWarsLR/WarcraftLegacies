@@ -8,36 +8,40 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_19601"
+      "Value": "(Nazjatar)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_18551"
+      "Value": "Q"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_19326"
+      "Value": "Chain Lightning - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_19569"
+      "Value": "Chain Lightning - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_19573"
+      "Value": "Hurls a bolt of lightning that bounces up to \u003CACcl,DataB2\u003E times, dealing \u003CACcl,DataA2\u003E damage to the primary target. Each jump deals less damage."
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_19577"
+      "Value": "Hurls a bolt of lightning that bounces up to 10 times, dealing \u003CACcl,DataA1\u003E damage to the primary target. Each jump deals less damage."
     }
   ]
 }

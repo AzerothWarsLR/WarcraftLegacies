@@ -17,22 +17,22 @@
     },
     {
       "Id": 2020631137,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_11563"
+      "Value": "(Sentinel - Archer)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_11971"
+      "Value": "Q"
     },
     {
       "Id": 1667329377,
       "Type": 2,
-      "Value": 0.6
+      "Value": ""
     },
     {
       "Id": 1952542049,
@@ -42,7 +42,7 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_11565"
+      "Value": "Barrage"
     },
     {
       "Id": 1918988897,
@@ -51,34 +51,36 @@
     },
     {
       "Id": 2020635233,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_11997"
+      "Value": "Q"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_11567"
+      "Value": "Learn Arcane Bombardment (|cffffff00Q|r)"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_11568"
+      "Value": "Bombards an area with arcane missile, stunning enemy land units for 1 second and damaging them. 1200 range. |n|n|cffffcc00Level 1|r - 300 total damage.|n|cffffcc00Level 2|r - 400 total damage.|n|cffffcc00Level 3|r - 500 total damage.|n|cffffcc00Level 4|r - 600 total damage."
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_11569"
+      "Value": "Barrage"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_21076"
+      "Value": "Shoots a long distance arrows, dealing maximum 200 damage to enemies with successful hit. Stuns non-Hero units for 0.75 seconds. Has a range of 1200."
     }
   ]
 }

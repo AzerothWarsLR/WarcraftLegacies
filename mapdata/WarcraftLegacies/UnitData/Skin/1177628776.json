@@ -13,7 +13,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_3435"
+      "Value": "Duskwood Graveyard"
     },
     {
       "Id": 1935832437,
@@ -23,12 +23,12 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_3436"
+      "Value": "Revives Slain Heroes"
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19858"
+      "Value": " (Stormwind Other)"
     }
   ]
 }

@@ -7,23 +7,27 @@
   "Modifications": [
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1701994849,
       "Type": 2,
       "Value": 125
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 1701994849,
       "Type": 2,
       "Value": 125
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1935895905,
       "Value": 100
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 1935895905,
       "Value": 15
     },
@@ -36,59 +40,63 @@
     },
     {
       "Level": 2,
-      "Pointer": 1,
+      "Pointer": 2,
       "Id": 829120870,
       "Type": 2,
       "Value": 35
     },
     {
       "Level": 1,
-      "Pointer": 4,
+      "Pointer": 1,
       "Id": 879452518,
       "Type": 2,
       "Value": 50
     },
     {
       "Level": 2,
-      "Pointer": 4,
+      "Pointer": 2,
       "Id": 879452518,
       "Type": 2,
       "Value": 25
     },
     {
       "Level": 1,
-      "Pointer": 5,
+      "Pointer": 1,
       "Id": 896229734,
       "Type": 2,
       "Value": 100
     },
     {
       "Level": 2,
-      "Pointer": 5,
+      "Pointer": 2,
       "Id": 896229734,
       "Type": 2,
       "Value": 100
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1851880033,
       "Type": 2,
       "Value": 1000
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 1851880033,
       "Type": 2,
       "Value": 600
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1918989409,
       "Type": 3,
       "Value": "enemies,ground,mechanical,organic,structure,vulnerable"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 1918989409,
       "Type": 3,
       "Value": "air,enemies,ground,mechanical,nonancient,organic,structure,vulnerable"

@@ -8,37 +8,37 @@
     {
       "Id": 1953980789,
       "Type": 3,
-      "Value": "TRIGSTR_16576"
+      "Value": "Revive Hakkar"
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_2096"
+      "Value": "(Legion)"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 1.6
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_16388"
+      "Value": "The Soulflayer"
     },
     {
       "Id": 1919972469,
       "Type": 3,
-      "Value": "TRIGSTR_16726"
+      "Value": "Revive Hakkar"
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 3
+      "Value": ""
     },
     {
       "Id": 1869770869,
       "Type": 3,
-      "Value": "TRIGSTR_16673"
+      "Value": "Hakkar"
     },
     {
       "Id": 1818520949,
@@ -62,22 +62,22 @@
     },
     {
       "Id": 2020631157,
-      "Value": 3
+      "Value": ""
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_2896"
+      "Value": "R"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_1687"
+      "Value": "Warrior Hero, excels at melee combat.|n|cfff5962dAbilities:|r Evasion|n|cfff5962dCan Learn:|R Impale, Demonic Shield, Vampiric Aura, Corrupted Lightning|n|n|cffffcc00Attacks land units.|R"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_20395"
+      "Value": "Summon Hakkar"
     }
   ]
 }

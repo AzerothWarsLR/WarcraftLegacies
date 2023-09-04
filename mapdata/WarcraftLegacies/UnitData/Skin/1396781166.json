@@ -8,17 +8,17 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_20043"
+      "Value": "(Yogg T2)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_4346"
+      "Value": "C"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_5821"
+      "Value": "Upgrade to Whispering Labyrinth"
     },
     {
       "Id": 1935832437,
@@ -28,7 +28,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_17445"
+      "Value": "Primary structure, used to train Scavenger and receive gathered resources."
     },
     {
       "Id": 1768841589,
@@ -53,20 +53,20 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_5932"
+      "Value": "Whispering Labyrinth"
     },
     {
       "Id": 2020631157,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 2037408373,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.55
+      "Value": ""
     }
   ]
 }

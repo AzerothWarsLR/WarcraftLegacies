@@ -13,17 +13,17 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_18368"
+      "Value": " (Cthun Other)"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_18416"
+      "Value": "Temple of Ahn\u0027Qiraj"
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 6
+      "Value": ""
     },
     {
       "Id": 1935832437,
@@ -33,12 +33,12 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_20657"
+      "Value": "Build Temple of Ahn\u0027Qiraj"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 1.2
+      "Value": ""
     },
     {
       "Id": 1818520949,
@@ -57,11 +57,11 @@
     },
     {
       "Id": 1735156597,
-      "Value": 221
+      "Value": ""
     },
     {
       "Id": 1651270517,
-      "Value": 150
+      "Value": ""
     }
   ]
 }

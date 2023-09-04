@@ -17,12 +17,12 @@
     },
     {
       "Id": 2020631137,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_16483"
+      "Value": "(goblin artillery)"
     },
     {
       "Id": 1952540001,
@@ -32,24 +32,26 @@
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_9031"
+      "Value": "Q"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_16484"
+      "Value": "Intercontinental Bombardment"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_16496"
+      "Value": "Intercontinental Bombardment"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_17380"
+      "Value": "Fire the artillery, dealing 1800 damage to enemies in an area of 450. 40000 range. Has a 25 second cast time. Will also damage friendly units."
     }
   ]
 }

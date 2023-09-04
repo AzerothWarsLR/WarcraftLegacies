@@ -7,18 +7,19 @@
   "Modifications": [
     {
       "Id": 2020631137,
-      "Value": 3
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_19183"
+      "Value": "(Draenei)"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_19200"
+      "Value": "Gives a 20% chance to do 3 times normal damage on an attack."
     }
   ]
 }

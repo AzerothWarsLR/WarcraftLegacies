@@ -12,12 +12,12 @@
     },
     {
       "Id": 2020631137,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_12735"
+      "Value": "(teal Death Knight)"
     },
     {
       "Id": 1952540001,
@@ -27,34 +27,36 @@
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_13887"
+      "Value": "W"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_12737"
+      "Value": "Necromancy"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_12738"
+      "Value": "Learn Demoncall"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_12739"
+      "Value": "Opens a portal, allowing demons to step through and do the Caster\u0027s bidding."
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_12740"
+      "Value": "Necromancy"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_12741"
+      "Value": "Summon Skeletons to fight for the Death Knight."
     }
   ]
 }

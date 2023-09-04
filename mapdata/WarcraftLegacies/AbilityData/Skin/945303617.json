@@ -8,24 +8,26 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_15171"
+      "Value": " (Yellow, Shadowcaster)"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_16000"
+      "Value": "Summon Shadowspawn"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_18964"
+      "Value": "Summon Shadowspawn"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_16002"
+      "Value": "Summons a twisted Shadowspawn, a resilient and deadly creature. As a Shadowspawn deals damage, it consumes the flesh of its target, thereby fueling its essence and eventually splitting into two Spawns.|n|nHas \u003Cnlv1,realHP\u003E hit points and deals \u003Cnlv1,mindmg1\u003E - \u003Cnlv1,maxdmg1\u003E damage.|nLasts \u003CANlm,Dur1\u003E seconds.|n|n|cffffcc00Attacks ground and air units.|r"
     },
     {
       "Id": 1802728801,
@@ -39,16 +41,16 @@
     },
     {
       "Id": 2019718497,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_17929"
+      "Value": "E"
     },
     {
       "Id": 2020631137,
-      "Value": 2
+      "Value": ""
     }
   ]
 }

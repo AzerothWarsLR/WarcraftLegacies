@@ -7,15 +7,17 @@
   "Modifications": [
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1718840935,
       "Type": 3,
-      "Value": "TRIGSTR_16910"
+      "Value": "(Night Elves)"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "TRIGSTR_16913"
+      "Value": "World Ending Event (Legion Summoning or Cataclysm)"
     }
   ]
 }

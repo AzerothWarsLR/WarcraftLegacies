@@ -12,7 +12,7 @@
     },
     {
       "Id": 2020631157,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1635083125,
@@ -22,17 +22,17 @@
     {
       "Id": 1853186933,
       "Type": 3,
-      "Value": "TRIGSTR_2824"
+      "Value": "Initiate,Adept,Master"
     },
     {
       "Id": 1953850229,
       "Type": 3,
-      "Value": "TRIGSTR_2825"
+      "Value": "- Holy Light \u0026 Divine Shield,- Holy Light \u0026 Divine Shield|n- Resurrection,- Holy Light \u0026 Divine Shield|n- Resurrection|n- Reincarnation"
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_1307"
+      "Value": "(Lordaeron)"
     },
     {
       "Id": 1818520949,
@@ -42,20 +42,20 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_2347"
+      "Value": "W"
     },
     {
       "Id": 1768320117,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1868983413,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.95
+      "Value": ""
     },
     {
       "Id": 1819503989,
@@ -65,17 +65,17 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_19091"
+      "Value": "Templar"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_19092"
+      "Value": "Train Templar"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_2830"
+      "Value": "Righteous warrior of the Scarlet Crusade.|n|cfff5962dAbilities:|r Greater Holy Light, Greater Holy Fire, Divine Shield, Consecrated Strikes, Resistant Skin, Heavy Plating|n|cfff5962dCan learn:|r Reincarnation, Resurrection|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land units.|r"
     },
     {
       "Id": 1684960117,

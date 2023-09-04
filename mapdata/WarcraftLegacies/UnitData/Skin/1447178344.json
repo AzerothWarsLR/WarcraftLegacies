@@ -12,12 +12,12 @@
     },
     {
       "Id": 2020631157,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_20364"
+      "Value": "(Crusade Magic)"
     },
     {
       "Id": 1818520949,
@@ -27,12 +27,12 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_3228"
+      "Value": "S"
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 3.5
+      "Value": ""
     },
     {
       "Id": 1935832437,
@@ -42,32 +42,32 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_14240"
+      "Value": "Caster production building.|n|cfff5962dTrains:|R Cleric, Druids of the Scythe, Harvest-Witch|n|cfff5962dResearches:|R Cleric Training, Druid of the Scythe Training, Harvest-Witch Training"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_20366"
+      "Value": "Temple of the Cursed"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_20367"
+      "Value": "Build Temple of the Cursed"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 1.1
+      "Value": ""
     },
     {
       "Id": 1920494965,
       "Type": 1,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1886940533,
       "Type": 1,
-      "Value": 0
+      "Value": ""
     }
   ]
 }

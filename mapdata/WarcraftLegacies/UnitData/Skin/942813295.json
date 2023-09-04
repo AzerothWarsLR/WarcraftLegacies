@@ -7,26 +7,26 @@
   "Modifications": [
     {
       "Id": 2020631157,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 2037408373,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19665"
+      "Value": " (Warsong Farm)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_1512"
+      "Value": "W"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.85
+      "Value": ""
     },
     {
       "Id": 1935832437,
@@ -36,7 +36,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_6412"
+      "Value": "Defensive hovel for peons to defend the Horde\u0027s territory.|nProvides 10 food, which increases the maximum number of units that can be trained.|n|cfff5962dCan Learn:|R Spiked Barricades, Reinforced Burrows|n|n|cffffcc00Attacks land and air units.|r"
     }
   ]
 }

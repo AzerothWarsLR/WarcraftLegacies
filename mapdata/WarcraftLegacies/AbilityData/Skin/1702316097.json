@@ -7,12 +7,12 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_18899"
+      "Value": " (Anetheron)"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_17741"
+      "Value": "Summons Fel Stalkers to attack the heroe\u0027s enemies. |nLasts 40 seconds.|r |n|n|cffffcc00Level 1|r - Summons 2 Fel Stalkers |n|cffffcc00Level 2|r - Summons 3 Fel Stalkers .|n|cffffcc00Level 3|r - Summons 4 Fel Stalkers .|n|cffffcc00Level 4|r - Summons 5 Fel Stalkers "
     },
     {
       "Id": 1952543585,
@@ -21,61 +21,69 @@
     },
     {
       "Level": 4,
+      "Pointer": 4,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_17742"
+      "Value": "Summon Fel Stalkers  - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_17743"
+      "Value": "Summons 2 Fel Stalkers  with Mana Burn to attack the heroes enemies. |n|n|cffffcc00Attacks land units.|r"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_17744"
+      "Value": "Summons 3 Fel Stalkers  with Mana Burn to attack the heroes enemies. |n|n|cffffcc00Attacks land units.|r"
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_17745"
+      "Value": "Summons 4 Fel Stalkers  with Mana Burn to attack the heroes enemies. |n|n|cffffcc00Attacks land units.|r"
     },
     {
       "Level": 4,
+      "Pointer": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_17746"
+      "Value": "Summons 5 Fel Stalkers  with Mana Burn to attack the heroes enemies. |n|n|cffffcc00Attacks land units.|r"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_17747"
+      "Value": "Summon Fel Stalkers  - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_17748"
+      "Value": "Summon Fel Stalkers  - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_17749"
+      "Value": "Summon Fel Stalkers  - [|cffffcc00Level 3|r]"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_17754"
+      "Value": "Learn Summon Fel Stalkers - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_17775"
+      "Value": "Summon Fel Stalkers "
     },
     {
       "Id": 1953653089,
@@ -89,21 +97,21 @@
     },
     {
       "Id": 2020631137,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 2020635233,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_7239"
+      "Value": "Q"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_7241"
+      "Value": "Q"
     }
   ]
 }

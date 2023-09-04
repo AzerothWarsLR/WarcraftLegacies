@@ -7,17 +7,17 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_714"
+      "Value": "E"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.85
+      "Value": ""
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_1121"
+      "Value": "Build Hunter\u0027s Hall"
     },
     {
       "Id": 1935832437,
@@ -27,7 +27,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_17881"
+      "Value": "Kaldorei hall of enhancements, where the defenders of Kalimdor grow in strength.|n|cfff5962dResearches: |RForged Weaponry, Armor Plating, Elune Infusion, Improved Cannons, Fortified Hulls"
     }
   ]
 }

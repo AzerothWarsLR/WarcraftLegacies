@@ -7,18 +7,19 @@
   "Modifications": [
     {
       "Id": 2020631137,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_12949"
+      "Value": "(Green - High Elven Magus)"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_12950"
+      "Value": "Calls forth a wave of healing energy that bounces up to 5 times, healing 85 damage on the primary target. Each jump heals less damage."
     },
     {
       "Id": 1952543841,

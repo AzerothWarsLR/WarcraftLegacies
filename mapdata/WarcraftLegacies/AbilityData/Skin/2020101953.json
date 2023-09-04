@@ -7,43 +7,49 @@
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_5520"
+      "Value": "Transforms an enemy unit into a random critter, disabling special abilities. |n|n|cffffcc00Level 1|r - Lasts \u003CAOhx,Dur1\u003E seconds. |n|cffffcc00Level 2|r - Lasts \u003CAOhx,Dur2\u003E seconds. |n|cffffcc00Level 3|r - Lasts \u003CAOhx,Dur3\u003E seconds.|n|cffffcc00Level 4|r - Lasts \u003CAOhx,Dur4\u003E seconds.|n|cffffcc00Level 5|r - Lasts \u003CAOhx,Dur5\u003E seconds.|n|cffffcc00Level 6|r - Lasts \u003CAOhx,Dur6\u003E seconds."
     },
     {
       "Level": 4,
+      "Pointer": 4,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_5521"
+      "Value": "He|cffffcc00x|r - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 5,
+      "Pointer": 5,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_5522"
+      "Value": "He|cffffcc00x|r - [|cffffcc00Level 5|r]"
     },
     {
       "Level": 6,
+      "Pointer": 6,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_5523"
+      "Value": "He|cffffcc00x|r - [|cffffcc00Level 6|r]"
     },
     {
       "Level": 4,
+      "Pointer": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_5524"
+      "Value": "Transforms an enemy unit into a random critter for \u003CAOhx,Dur4\u003E seconds."
     },
     {
       "Level": 5,
+      "Pointer": 5,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_5525"
+      "Value": "Transforms an enemy unit into a random critter for \u003CAOhx,Dur5\u003E seconds."
     },
     {
       "Level": 6,
+      "Pointer": 6,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_5526"
+      "Value": "Transforms an enemy unit into a random critter for \u003CAOhx,Dur6\u003E seconds."
     }
   ]
 }

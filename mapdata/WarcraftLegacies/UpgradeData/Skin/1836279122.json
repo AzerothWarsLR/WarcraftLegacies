@@ -6,63 +6,73 @@
   "Modifications": [
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1718840935,
       "Type": 3,
-      "Value": "TRIGSTR_14113"
+      "Value": "(Light Blue Research)"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_20919"
+      "Value": "Q"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_20961"
+      "Value": "Q"
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_21017"
+      "Value": "Q"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_14117"
+      "Value": "Upgrade [|cffffcc00Q|r] - Strength of the Moon"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_14118"
+      "Value": "Upgrade [|cffffcc00Q|r] - Improved Strength of the Moon"
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_14119"
+      "Value": "Upgrade [|cffffcc00Q|r] - Advanced Strength of the Moon"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "TRIGSTR_14120"
+      "Value": "Increases the damage of Archers, Huntresses, Glaive Throwers, Nightblades, Hippogryph Riders, Shadowleaf Sentinels, Naisha, Runestones, and Maiev\u0027s Avatars."
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 828536167,
       "Type": 3,
-      "Value": "TRIGSTR_14121"
+      "Value": "Further increases the damage of Archers, Huntresses, Glaive Throwers, Nightblades, Hippogryph Riders, Shadowleaf Sentinels, Naisha, Runestones, and Maiev\u0027s Avatars."
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 828536167,
       "Type": 3,
-      "Value": "TRIGSTR_14122"
+      "Value": "Further increases the damage of Archers, Huntresses, Glaive Throwers, Nightblades, Hippogryph Riders, Shadowleaf Sentinels, Naisha, Runestones, and Maiev\u0027s Avatars."
     }
   ]
 }

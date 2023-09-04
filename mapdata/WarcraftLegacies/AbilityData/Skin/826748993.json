@@ -13,13 +13,14 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_9546"
+      "Value": "(Kul\u0027tiras - Sea Giant)"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_9547"
+      "Value": "Gives a \u003CA0G1,DataA1\u003E% chance that an attack will deal \u003CA0G1,DataB1\u003E damage to nearby units."
     }
   ]
 }

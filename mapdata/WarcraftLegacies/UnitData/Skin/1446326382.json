@@ -17,7 +17,7 @@
     },
     {
       "Id": 2020631157,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1635083125,
@@ -27,21 +27,21 @@
     {
       "Id": 1853186933,
       "Type": 3,
-      "Value": "TRIGSTR_2282"
+      "Value": "Initiate,Adept,Master"
     },
     {
       "Id": 1953850229,
       "Type": 3,
-      "Value": "TRIGSTR_12455"
+      "Value": "- Shadow Infusion,- Shadow Infusion|n- Regeneration,- Shadow Infusion|n- Regeneration|n - Earth Shackles"
     },
     {
       "Id": 1667462261,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_2284"
+      "Value": "(C\u0027thun Faceless Shadow Weaver)"
     },
     {
       "Id": 1818520949,
@@ -51,12 +51,12 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_1845"
+      "Value": "W"
     },
     {
       "Id": 828468597,
       "Type": 2,
-      "Value": 0.15
+      "Value": ""
     },
     {
       "Id": 1831952757,
@@ -66,16 +66,16 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.7
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_6847"
+      "Value": "Shadow Weaver"
     },
     {
       "Id": 1650684789,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1634759541,
@@ -85,12 +85,12 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_6851"
+      "Value": "Train - Shadow Weaver"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_12456"
+      "Value": "Powerful spellcaster. Deceitful and mysterious, these Faceless Shadow Weaver support their kin with Shadow spells.|n|cffffcc00Casts:|r Eye of C\u0027thun, Regeneration, Earth Shackles. |n|n|cffd5d500Attacks land and air units.|r"
     },
     {
       "Id": 1684960117,
@@ -100,27 +100,27 @@
     {
       "Id": 1751675765,
       "Type": 1,
-      "Value": 80
+      "Value": ""
     },
     {
       "Id": 2003334005,
       "Type": 1,
-      "Value": 80
+      "Value": ""
     },
     {
       "Id": 2020111221,
       "Type": 1,
-      "Value": 20
+      "Value": ""
     },
     {
       "Id": 2036888437,
       "Type": 1,
-      "Value": 20
+      "Value": ""
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 1.4
+      "Value": ""
     }
   ]
 }

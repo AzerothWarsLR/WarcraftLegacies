@@ -12,34 +12,36 @@
     },
     {
       "Id": 2020631137,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_7806"
+      "Value": " (Warsong - Wind Rider)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_11513"
+      "Value": "W"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_7817"
+      "Value": "To the Wind!"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_7819"
+      "Value": "To the Wind!"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_15680"
+      "Value": "Increases this unit\u0027s movemnt speed by \u003CA0A5,DataA1,%\u003E% for \u003CA0A5,Dur1\u003E seconds."
     }
   ]
 }

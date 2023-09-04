@@ -7,9 +7,10 @@
   "Modifications": [
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "TRIGSTR_14170"
+      "Value": "No allies"
     }
   ]
 }

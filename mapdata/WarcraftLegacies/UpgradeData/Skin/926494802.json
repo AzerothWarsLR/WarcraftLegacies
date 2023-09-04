@@ -7,113 +7,130 @@
   "Modifications": [
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829579623,
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNOilStation.blp"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 829579623,
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNArcaniteArchitecture.blp"
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 829579623,
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNArcaniteArchitecture.blp"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1718840935,
       "Type": 3,
-      "Value": "TRIGSTR_16084"
+      "Value": "(Goblin)"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_21344"
+      "Value": "E"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_20408"
+      "Value": "C"
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_20412"
+      "Value": "C"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "TRIGSTR_7969"
+      "Value": "Oil Prospecting"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "TRIGSTR_18477"
+      "Value": "Fortified Hulls"
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "TRIGSTR_18522"
+      "Value": "Fortified Hulls"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_7988"
+      "Value": "Research Oil Prospecting"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_18958"
+      "Value": "Research Fortified Hulls"
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_18981"
+      "Value": "Research Fortified Hulls"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "TRIGSTR_18096"
+      "Value": "Allows Oil Rig Constructors to be trained from the Goblin Dock."
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 828536167,
       "Type": 3,
-      "Value": "TRIGSTR_18991"
+      "Value": "Further increases the armor of all Naval Units."
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 828536167,
       "Type": 3,
-      "Value": "TRIGSTR_18992"
+      "Value": "Further increases the armor of all Naval Units."
     },
     {
       "Level": 4,
+      "Pointer": 4,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_20413"
+      "Value": "C"
     },
     {
       "Id": 2037408359,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 2020631143,
-      "Value": 2
+      "Value": ""
     }
   ]
 }

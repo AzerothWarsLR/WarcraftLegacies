@@ -6,26 +6,26 @@
   "Modifications": [
     {
       "Id": 1651270517,
-      "Value": 100
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_338"
+      "Value": "(Red - Anub\u0027Arak)(Level 3)"
     },
     {
       "Id": 1735156597,
-      "Value": 100
+      "Value": ""
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 1.4
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_339"
+      "Value": "Dire Carrion Beetle"
     }
   ]
 }

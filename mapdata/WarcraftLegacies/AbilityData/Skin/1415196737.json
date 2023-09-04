@@ -7,27 +7,28 @@
   "Modifications": [
     {
       "Id": 2020631137,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 2037408353,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_20697"
+      "Value": "(defender cannon tower missile)"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_19590"
+      "Value": "This tower fires up to 9 additional projectiles that deal 10 damage each to nearby enemies"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_19591"
+      "Value": "Multishot"
     },
     {
       "Id": 1953653089,
@@ -41,9 +42,10 @@
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_19592"
+      "Value": "Multishot"
     }
   ]
 }

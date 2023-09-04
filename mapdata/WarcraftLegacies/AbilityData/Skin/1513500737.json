@@ -7,16 +7,16 @@
   "Modifications": [
     {
       "Id": 2020631137,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 2037408353,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_16091"
+      "Value": "Q"
     },
     {
       "Id": 1734962273,
@@ -26,13 +26,14 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_15035"
+      "Value": "Summon Obelisk"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_17174"
+      "Value": "Summon Obelisk"
     },
     {
       "Id": 1953653089,
@@ -51,14 +52,15 @@
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_15325"
+      "Value": "Begin summoning an Obelisk of Ny\u0027alotha. You can only summon on the following control points:|n|cff8080ffStorm Peaks|r, |cff8080ffNorthern Twilight Highlands|r, |cff8080ffTanaris|r.|cffff0000|nIn that order|r |n|nOnce started, this spell cannot be cancelled and you won\u0027t be able to control the caster.|n|nWhile the channeling is ongoing, all the Ny\u0027alotha portals will be open and will lead to the channeling location, but once the channeling is over, evey unit that is outside of Ny\u0027alotha will be returned to it and every building will be destroyed.|n|n|cff8080ff300 seconds channel duration|r"
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_12880"
+      "Value": "(Black Empire)"
     }
   ]
 }

@@ -13,12 +13,12 @@
     {
       "Id": 1953980789,
       "Type": 3,
-      "Value": "TRIGSTR_19282"
+      "Value": "Revive A\u0027dal"
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_17771"
+      "Value": "(Draenei)"
     },
     {
       "Id": 1818520949,
@@ -28,7 +28,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_11271"
+      "Value": "Z"
     },
     {
       "Id": 1831952757,
@@ -38,22 +38,22 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 1.6
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_19112"
+      "Value": "The Naaru"
     },
     {
       "Id": 1869770869,
       "Type": 3,
-      "Value": "TRIGSTR_19114"
+      "Value": "A\u0027dal"
     },
     {
       "Id": 1919972469,
       "Type": 3,
-      "Value": "TRIGSTR_19539"
+      "Value": "Revive A\u0027dal"
     },
     {
       "Id": 1769173877,
@@ -63,12 +63,12 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_19543"
+      "Value": "Summon A\u0027dal"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_19544"
+      "Value": "Cosmic hero, expert at team fight support.|n|cfff5962dCan learn:|R Light\u0027s Edict, Blinding Starlight, Wise Council, Army of the Light|n|n|cffffcc00Attacks land and air units.|R"
     },
     {
       "Id": 1684960117,
@@ -77,21 +77,21 @@
     },
     {
       "Id": 2037408373,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 828468597,
       "Type": 2,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1735156597,
-      "Value": 222
+      "Value": ""
     }
   ]
 }

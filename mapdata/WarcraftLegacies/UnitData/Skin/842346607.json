@@ -7,36 +7,36 @@
   "Modifications": [
     {
       "Id": 2020631157,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 2037408373,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_3595"
+      "Value": "(Draenei Specialist)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_2432"
+      "Value": "A"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.85
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_17808"
+      "Value": "Ceremonial Altar"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_17809"
+      "Value": "Build Ceremonial Altar"
     },
     {
       "Id": 1935832437,
@@ -46,7 +46,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_1955"
+      "Value": "Training halls of light and virtue.|n|cfff5962dTrains:|R Defender, Rangari, Polybolos"
     },
     {
       "Id": 1818520949,

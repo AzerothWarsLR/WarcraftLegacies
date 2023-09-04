@@ -6,17 +6,17 @@
   "Modifications": [
     {
       "Id": 2020631157,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_1042"
+      "Value": "C"
     },
     {
       "Id": 845245813,
       "Type": 2,
-      "Value": 0.35
+      "Value": ""
     },
     {
       "Id": 1831952757,
@@ -31,12 +31,12 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.95
+      "Value": ""
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 4.5
+      "Value": ""
     },
     {
       "Id": 1935832437,
@@ -46,12 +46,12 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_17842"
+      "Value": "Fortified stronghold of the Alliance Nations.|n|cfff5962dTrains:|R Peasant, Paladin|n|cfff5962dResearches:|R Paladin Training, Full Scale Escalation|n|cfff5962dAbilities:|R Summon Garrison"
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_16392"
+      "Value": "(Lordaeron T3)"
     },
     {
       "Id": 1818520949,

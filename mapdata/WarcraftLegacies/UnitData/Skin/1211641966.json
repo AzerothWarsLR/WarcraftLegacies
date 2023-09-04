@@ -12,12 +12,12 @@
     },
     {
       "Id": 2037408373,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_1273"
+      "Value": "(Illidari)"
     },
     {
       "Id": 1818520949,
@@ -27,12 +27,12 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_19434"
+      "Value": "Hunter Proving Grounds"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_19435"
+      "Value": "Build - Hunter Proving Grounds"
     },
     {
       "Id": 1935832437,
@@ -42,7 +42,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_648"
+      "Value": "Trains Cliffrunners, Glaive Warriors and Demon Hunters"
     },
     {
       "Id": 1684960117,
@@ -51,17 +51,17 @@
     },
     {
       "Id": 2020631157,
-      "Value": 3
+      "Value": ""
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_2425"
+      "Value": "F"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.9
+      "Value": ""
     },
     {
       "Id": 1651012469,

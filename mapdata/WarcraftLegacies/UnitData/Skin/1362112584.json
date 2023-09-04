@@ -13,12 +13,12 @@
     {
       "Id": 1953980789,
       "Type": 3,
-      "Value": "TRIGSTR_3973"
+      "Value": "Revive Sunking"
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_2254"
+      "Value": "(Quel\u0027Thalas)"
     },
     {
       "Id": 1818520949,
@@ -33,17 +33,17 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_3975"
+      "Value": "King of Quel\u0060Thalas"
     },
     {
       "Id": 1869770869,
       "Type": 3,
-      "Value": "TRIGSTR_3976"
+      "Value": "Anasterian Sunstrider"
     },
     {
       "Id": 1919972469,
       "Type": 3,
-      "Value": "TRIGSTR_3977"
+      "Value": "Revive Sunking"
     },
     {
       "Id": 1769173877,
@@ -53,7 +53,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_3194"
+      "Value": "Mystical Hero, adept at absording damage and returning it.|n|cfff5962dAbilities:|R Mana Shield|n|cfff5962dCan learn:|R Arcane Burst, Devour Magic, Defensive Orbs, Ashes of Al\u0027ar|n|n|cffffcc00Attacks land units.|R"
     },
     {
       "Id": 1684960117,
@@ -62,21 +62,21 @@
     },
     {
       "Id": 2037408373,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 2020631157,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_3328"
+      "Value": "W"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_3360"
+      "Value": "Summon Anasterian"
     }
   ]
 }

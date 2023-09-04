@@ -7,23 +7,24 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_5006"
+      "Value": "(Brown - Moon Well)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_6346"
+      "Value": "Q"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_20915"
+      "Value": "Replenish the life and mana of a target friendly unit. |n|nRestores 0.75 health and 2.2 mana to the unit for every point of mana spent."
     },
     {
       "Id": 1802007905,
       "Type": 3,
-      "Value": "TRIGSTR_6353"
+      "Value": "Q"
     }
   ]
 }

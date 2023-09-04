@@ -7,27 +7,28 @@
   "Modifications": [
     {
       "Level": 1,
-      "Pointer": 2,
+      "Pointer": 1,
       "Id": 845311817,
       "Type": 2,
       "Value": 15
     },
     {
       "Level": 1,
-      "Pointer": 3,
+      "Pointer": 1,
       "Id": 862089033,
       "Type": 2,
       "Value": 5
     },
     {
       "Level": 1,
-      "Pointer": 4,
+      "Pointer": 1,
       "Id": 878866249,
       "Type": 2,
       "Value": 15
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1969385289,
       "Type": 3,
       "Value": "AIse"

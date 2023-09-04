@@ -12,12 +12,12 @@
     },
     {
       "Id": 2020631157,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_4459"
+      "Value": "(Dragonmaw)"
     },
     {
       "Id": 1818520949,
@@ -27,7 +27,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_6108"
+      "Value": "E"
     },
     {
       "Id": 1831952757,
@@ -42,7 +42,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_16308"
+      "Value": "Enslaved Blue Dragon"
     },
     {
       "Id": 1885959285,
@@ -57,7 +57,7 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 1.4
+      "Value": ""
     }
   ]
 }

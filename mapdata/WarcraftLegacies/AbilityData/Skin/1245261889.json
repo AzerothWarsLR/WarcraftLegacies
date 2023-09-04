@@ -18,41 +18,45 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_10832"
+      "Value": "(Yellow Tavern)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_11550"
+      "Value": "Q"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_10834"
+      "Value": "Swig"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_10835"
+      "Value": "Swig - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_10836"
+      "Value": "Swig - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_10837"
+      "Value": "Restores \u003CA09J,DataA1\u003E hit points to nearby friendly units with the invigorating power of alcohol."
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_10838"
+      "Value": "Restores \u003CA09J,DataA2\u003E hit points to nearby friendly units with the invigorating power of alcohol."
     },
     {
       "Id": 1918989665,
@@ -62,7 +66,7 @@
     {
       "Id": 1802007905,
       "Type": 3,
-      "Value": "TRIGSTR_11552"
+      "Value": "Q"
     }
   ]
 }

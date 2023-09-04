@@ -8,18 +8,19 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_8416"
+      "Value": "(Gargoyle)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_12978"
+      "Value": "Q"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_5675"
+      "Value": "Emits a terrifying howl that reduces nearby enemy units\u0027 attack damage by \u003CA022,DataA1,%\u003E% for \u003CA022,Dur1\u003E seconds."
     }
   ]
 }

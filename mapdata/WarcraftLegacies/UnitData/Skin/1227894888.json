@@ -8,7 +8,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19863"
+      "Value": "(Lordaeron Other)"
     },
     {
       "Id": 1818520949,
@@ -18,27 +18,27 @@
     {
       "Id": 1886940533,
       "Type": 1,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1920494965,
       "Type": 1,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.9
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_3522"
+      "Value": "Windmill"
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 0.9
+      "Value": ""
     },
     {
       "Id": 1935832437,
@@ -53,7 +53,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_15857"
+      "Value": "A creaking mill that grinds flour for the Kingdom.|nProvides 8 food, which increases the maximum number of units that can be trained."
     }
   ]
 }

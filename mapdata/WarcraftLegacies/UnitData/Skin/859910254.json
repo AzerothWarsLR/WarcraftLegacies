@@ -12,12 +12,12 @@
     },
     {
       "Id": 2037408373,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19689"
+      "Value": " (Illidari Magic)"
     },
     {
       "Id": 1818520949,
@@ -27,12 +27,12 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_2843"
+      "Value": "Archive"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_2867"
+      "Value": "Build Archive"
     },
     {
       "Id": 1935832437,
@@ -42,7 +42,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_2873"
+      "Value": "Primary caster production building.|n|r|cfff5962dTrains:|R Naga Siren, Mur\u0027gul Shadowcaster, Coilfang Summoner|n|cfff5962dResearches:|r Power Infusion, Shadowcaster Adept Training, Naga Siren Adept Training"
     },
     {
       "Id": 1684960117,

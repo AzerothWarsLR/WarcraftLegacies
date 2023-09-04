@@ -13,7 +13,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_2019"
+      "Value": "(Sentinels)"
     },
     {
       "Id": 1818520949,
@@ -22,12 +22,12 @@
     },
     {
       "Id": 1735156597,
-      "Value": 150
+      "Value": ""
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_2783"
+      "Value": "E"
     },
     {
       "Id": 1831952757,
@@ -37,21 +37,21 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_3079"
+      "Value": "Warden"
     },
     {
       "Id": 1919705973,
-      "Value": 200
+      "Value": ""
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_3080"
+      "Value": "Train Warden"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_17986"
+      "Value": "Sentinel Elite Warrior, specialises in disruption. |n|cfff5962dAbilities:|R Fan of Knives, Blink, Spell Steal, Shadowmeld, Elune\u0027s Grace,  Resistant Skin|n|cff99b4d1Can only train 8.|r|n|cffffcc00Attacks land units.|r"
     },
     {
       "Id": 1684960117,

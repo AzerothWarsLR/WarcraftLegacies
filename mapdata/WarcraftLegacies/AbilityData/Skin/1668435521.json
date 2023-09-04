@@ -11,12 +11,12 @@
     },
     {
       "Id": 2020631137,
-      "Value": 3
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_18868"
+      "Value": "(Legion, Archimonde, Mannoroth)"
     },
     {
       "Id": 1918988897,
@@ -25,53 +25,59 @@
     },
     {
       "Id": 2020635233,
-      "Value": 3
+      "Value": ""
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_5669"
+      "Value": "Learn Rain of Chaos - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_17734"
+      "Value": "Calls down multiple Infernals from the sky.|n|n|cffffcc00Level 1|r - Calls down 4 Abyssals . |n|cffffcc00Level 2|r - Calls down 5 Doomfire Abyssals. |n|cffffcc00Level 3|r - Calls down 6 Gargantuan Abyssals."
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_5671"
+      "Value": "Rain of Chaos - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_5672"
+      "Value": "Rain of Chaos - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_5673"
+      "Value": "Rain of Chaos - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_17738"
+      "Value": "Calls down 4 Abyssals from the sky."
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_17739"
+      "Value": "Calls down 5 Doomfire Abyssals  from the sky."
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_17740"
+      "Value": "Calls down 6 Gargantuan Abyssals from the sky."
     }
   ]
 }

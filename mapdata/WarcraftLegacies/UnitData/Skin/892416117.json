@@ -12,7 +12,7 @@
     },
     {
       "Id": 1651270517,
-      "Value": 185
+      "Value": ""
     },
     {
       "Id": 1651012469,
@@ -22,7 +22,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19621"
+      "Value": "(Legion Shop)"
     },
     {
       "Id": 1818520949,
@@ -31,36 +31,36 @@
     },
     {
       "Id": 1735156597,
-      "Value": 185
+      "Value": ""
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_1441"
+      "Value": "C"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.7
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_1421"
+      "Value": "Unholy Reliquary"
     },
     {
       "Id": 1919705973,
-      "Value": 185
+      "Value": ""
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 3
+      "Value": ""
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_1422"
+      "Value": "Summon Unholy Reliquary"
     },
     {
       "Id": 1935832437,
@@ -70,7 +70,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_1423"
+      "Value": "Creates a shop with purchasable items."
     }
   ]
 }

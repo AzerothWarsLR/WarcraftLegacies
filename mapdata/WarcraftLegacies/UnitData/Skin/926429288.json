@@ -12,12 +12,12 @@
     },
     {
       "Id": 2020631157,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_18801"
+      "Value": "(Ragnaros Magic)"
     },
     {
       "Id": 1818520949,
@@ -27,17 +27,17 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_3218"
+      "Value": "S"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_18996"
+      "Value": "Hall of Logi"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_18997"
+      "Value": "Hall of Logi"
     },
     {
       "Id": 1935832437,
@@ -52,12 +52,12 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 1.2
+      "Value": ""
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_19001"
+      "Value": "Hall of runes and fire trains mystical warriors.|n|cfff5962dTrains:|R Shadowcaster, Flamekeeper|n|cfff5962dResearches:|R Shadowcaster Adept Training, Shadow Priest Master Training"
     }
   ]
 }

@@ -6,40 +6,40 @@
   "Modifications": [
     {
       "Id": 2020631157,
-      "Value": 3
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_15536"
+      "Value": "(Druids - Summoned)"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.85
+      "Value": ""
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_1096"
+      "Value": "Train Treant"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_1097"
+      "Value": "Basic Wooden warrior |n|n|cffffcc00Attacks land units.|r"
     },
     {
       "Id": 1919705973,
-      "Value": 100
+      "Value": ""
     },
     {
       "Id": 1651270517,
-      "Value": 100
+      "Value": ""
     }
   ]
 }

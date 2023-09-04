@@ -12,7 +12,7 @@
     },
     {
       "Id": 2020631157,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1635083125,
@@ -22,17 +22,17 @@
     {
       "Id": 1853186933,
       "Type": 3,
-      "Value": "TRIGSTR_2401"
+      "Value": "Initiate,Adept,Master"
     },
     {
       "Id": 1953850229,
       "Type": 3,
-      "Value": "TRIGSTR_2402"
+      "Value": "- Shadow Infusion,- Shadow Infusion|n- Dispel magic,- Shadow Infusion|n- Dispel magic|n- Mind Flay"
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_1478"
+      "Value": "(Legion)"
     },
     {
       "Id": 1818520949,
@@ -42,7 +42,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_1990"
+      "Value": "W"
     },
     {
       "Id": 1831952757,
@@ -52,17 +52,17 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.9
+      "Value": ""
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_2405"
+      "Value": "Train Succubus"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_2406"
+      "Value": "Manipulative demon of the nether. |n|cfff5962dAbilities:|R Shadow Infusion|n|cfff5962dCan Learn:|R Dispel Magic, Mind Flay|n|n|cffffcc00Attacks land and air units.|R"
     }
   ]
 }

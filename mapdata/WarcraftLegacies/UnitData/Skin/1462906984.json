@@ -23,7 +23,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_3257"
+      "Value": "Plague Cauldron"
     },
     {
       "Id": 1634759541,
@@ -38,7 +38,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_3258"
+      "Value": "Cauldron containing the Dreaded Undead Plague of the Scourge."
     },
     {
       "Id": 1684960117,
@@ -48,7 +48,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19835"
+      "Value": " (Scourge Other)"
     }
   ]
 }

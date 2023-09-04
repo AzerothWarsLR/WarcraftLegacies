@@ -8,37 +8,37 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_3321"
+      "Value": "(Undead)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_5451"
+      "Value": "W"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_3467"
+      "Value": "Scout Ship"
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 1.8
+      "Value": ""
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_3620"
+      "Value": "Build Scout Ship"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_3412"
+      "Value": "Small scout ship.|n|cfff5962dAbilities:|R Incendiary Arrows|n|r|n|cffffcc00Attacks land and air units.|r |nStrong versus Boarding Ships, Weak versus every other Ship."
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.7
+      "Value": ""
     },
     {
       "Id": 1831952757,

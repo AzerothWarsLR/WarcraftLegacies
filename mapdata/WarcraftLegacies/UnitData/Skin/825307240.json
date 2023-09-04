@@ -8,17 +8,17 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_3083"
+      "Value": "X"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 2.7
+      "Value": ""
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 5
+      "Value": ""
     },
     {
       "Id": 1935832437,
@@ -28,22 +28,22 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_14886"
+      "Value": "Massive Artillery. Can use up a ton of oil to fire a devastating, delayed strike anywhere on the map.|n|cfff5962dAbilities:|r Intercontinental Bombardment, Oil Consumer"
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_20039"
+      "Value": " (Goblin Tower)"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_16478"
+      "Value": "Intercontinental Artillery"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_18764"
+      "Value": "Upgrade into Intercontinental Artillery"
     },
     {
       "Id": 1818520949,
@@ -67,7 +67,7 @@
     },
     {
       "Id": 2020631157,
-      "Value": 1
+      "Value": ""
     }
   ]
 }

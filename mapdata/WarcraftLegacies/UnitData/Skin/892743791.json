@@ -12,12 +12,12 @@
     },
     {
       "Id": 2020631157,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_20130"
+      "Value": "(Dragonmaw T3)"
     },
     {
       "Id": 1818520949,
@@ -27,7 +27,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_10192"
+      "Value": "C"
     },
     {
       "Id": 1935832437,
@@ -37,7 +37,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_3495"
+      "Value": "Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Peon, Battlemaster"
     }
   ]
 }

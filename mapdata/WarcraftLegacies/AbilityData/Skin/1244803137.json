@@ -13,12 +13,12 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_12439"
+      "Value": "(Blood Knight)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_12883"
+      "Value": "Q"
     },
     {
       "Id": 1952542049,
@@ -28,19 +28,21 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_213"
+      "Value": "Dark Hammer"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_214"
+      "Value": "Dark Hammer"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_215"
+      "Value": "Hurl a Dark Hammer towards an enemy unit, damaging them for 75 damage and stunning them for 5 seconds (2 on heroes)."
     }
   ]
 }

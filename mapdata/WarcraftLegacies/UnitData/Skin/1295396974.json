@@ -12,40 +12,40 @@
     },
     {
       "Id": 2020631157,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19704"
+      "Value": "(Sentinel/Druid Farm)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_1781"
+      "Value": "W"
     },
     {
       "Id": 1768320117,
-      "Value": 512
+      "Value": ""
     },
     {
       "Id": 1868983413,
-      "Value": 512
+      "Value": ""
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.85
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_2188"
+      "Value": "Residence"
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 2.5
+      "Value": ""
     },
     {
       "Id": 1634759541,
@@ -55,7 +55,7 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_2189"
+      "Value": "Build Residence"
     },
     {
       "Id": 1935832437,
@@ -65,7 +65,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_15719"
+      "Value": "Moonlit home of the Night Elves.|nProvides 8 food, which increases the maximum number of units that can be trained."
     },
     {
       "Id": 1684960117,

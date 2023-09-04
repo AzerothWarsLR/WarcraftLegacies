@@ -12,18 +12,19 @@
     },
     {
       "Id": 2020631137,
-      "Value": 3
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_7475"
+      "Value": "(Purple - Alex ult)"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_7476"
+      "Value": "Burns nearby enemy units for 50 points of damage per second."
     }
   ]
 }

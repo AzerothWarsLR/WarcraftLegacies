@@ -8,27 +8,27 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_3477"
+      "Value": " (Forsaken, Cult)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_4110"
+      "Value": "E"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_3884"
+      "Value": "Dreadguard"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_16457"
+      "Value": "Train Dreadguard"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_232"
+      "Value": "Elite Commander of the Forsaken.|n|cfff5962dAbilities: |RCharge, Unholy Plating, Elite Combat Experience |n|n|cffffcc00Attacks land units.|r"
     },
     {
       "Id": 1684960117,
@@ -47,7 +47,7 @@
     },
     {
       "Id": 2020631157,
-      "Value": 2
+      "Value": ""
     }
   ]
 }

@@ -12,17 +12,17 @@
     },
     {
       "Id": 2020631137,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_6554"
+      "Value": "(Brown - Dryad)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_9505"
+      "Value": "Q"
     },
     {
       "Id": 1952542049,
@@ -32,19 +32,21 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_8432"
+      "Value": "Poisonous Spear"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_8433"
+      "Value": "Poisoned Spear (|cffffcc00Q|r)"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_8434"
+      "Value": "Adds 15 bonus poison damage to an attack against enemies, but drains mana with each shot fired."
     },
     {
       "Id": 1918989665,
@@ -53,12 +55,12 @@
     },
     {
       "Id": 2019718497,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1802007905,
       "Type": 3,
-      "Value": "TRIGSTR_9509"
+      "Value": "Q"
     }
   ]
 }

@@ -8,7 +8,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_20814"
+      "Value": "(sunfury)"
     },
     {
       "Id": 1818520949,
@@ -18,17 +18,17 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_4878"
+      "Value": "R"
     },
     {
       "Id": 2054188149,
       "Type": 2,
-      "Value": 140
+      "Value": ""
     },
     {
       "Id": 828468597,
       "Type": 2,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1831952757,
@@ -38,17 +38,17 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_20979"
+      "Value": "Build Scorpion"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_20940"
+      "Value": "Tempest-forged machine of war.|n|n|cff99b4d1Can only build 6.|r|n|cffffcc00Attacks land units.|r"
     },
     {
       "Id": 1768841589,
@@ -58,7 +58,7 @@
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 3
+      "Value": ""
     },
     {
       "Id": 1868786037,
@@ -68,11 +68,11 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_20980"
+      "Value": "Scorpion"
     },
     {
       "Id": 2020631157,
-      "Value": 2
+      "Value": ""
     }
   ]
 }

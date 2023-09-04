@@ -13,16 +13,16 @@
     {
       "Id": 1953980789,
       "Type": 3,
-      "Value": "TRIGSTR_3864"
+      "Value": "Revive Leader of the Explorers\u0027 League"
     },
     {
       "Id": 2020631157,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_3865"
+      "Value": "(Ironforge Vassal)"
     },
     {
       "Id": 1818520949,
@@ -32,12 +32,12 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_3392"
+      "Value": "E"
     },
     {
       "Id": 828468597,
       "Type": 2,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1831952757,
@@ -47,22 +47,22 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_3867"
+      "Value": "Leader of the Explorers\u0027 League"
     },
     {
       "Id": 1869770869,
       "Type": 3,
-      "Value": "TRIGSTR_3868"
+      "Value": "Brann Bronzebeard"
     },
     {
       "Id": 1919972469,
       "Type": 3,
-      "Value": "TRIGSTR_3869"
+      "Value": "Revive Leader of the Explorers\u0027 League"
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 1.1
+      "Value": ""
     },
     {
       "Id": 1769173877,
@@ -72,22 +72,22 @@
     {
       "Id": 2020111221,
       "Type": 1,
-      "Value": 50
+      "Value": ""
     },
     {
       "Id": 2036888437,
       "Type": 1,
-      "Value": 50
+      "Value": ""
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_3870"
+      "Value": "Choose Vassal: Brann"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_15375"
+      "Value": "|cffff0000You will lose your current faction and join Ironforge as a new small 1 hero faction|r |n|nRanger Hero, adept at controlling the battlefield from far away. Can train Riflemen, Engineers and Mortar Teams. |n|n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Id": 1684960117,

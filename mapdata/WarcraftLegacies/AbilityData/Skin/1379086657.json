@@ -17,7 +17,7 @@
     },
     {
       "Id": 2037408353,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1952539489,
@@ -32,7 +32,7 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_1499"
+      "Value": "(Scourge)"
     },
     {
       "Id": 1952540001,
@@ -42,12 +42,12 @@
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_20707"
+      "Value": "E"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_15519"
+      "Value": "Mass Frost Armor"
     },
     {
       "Id": 1918988897,
@@ -56,22 +56,22 @@
     },
     {
       "Id": 2020635233,
-      "Value": 3
+      "Value": ""
     },
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_21131"
+      "Value": "R"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_20154"
+      "Value": "Learn Mass Ice Armor - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_20169"
+      "Value": "Grants Frost Armor to all friendly unit in a large area of effect. |n|n|cffffcc00Level 1|r - Lasts 60 seconds and grants 8 armor.|n|cffffcc00Level 2|r - Lasts 60 seconds and grants 12 armor.|n|cffffcc00Level 3|r - Lasts 60 seconds and grants 16 armor"
     },
     {
       "Id": 1952543841,
@@ -80,51 +80,59 @@
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_21267"
+      "Value": "Mass Frost Armor "
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_21286"
+      "Value": "Mass Ice Armor - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_21309"
+      "Value": "Mass Ice Armor - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
+      "Pointer": 4,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_21310"
+      "Value": "Mass Banish - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_21311"
+      "Value": "Grants Frost Armor to all friendly unit in an area of effect, giving units \u002B4 bonus armour and slowing units that attack them for 2 seconds. Lasts 60 seconds. |n"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_21312"
+      "Value": "Grants Ice Armor to all friendly unit in a large area of effect.|n|cffffcc00Level 2|r - Lasts 60 seconds and grants 12 armor"
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_21313"
+      "Value": "Grants Ice Armor to all friendly unit in a large area of effect.|n|cffffcc00Level 3|r - Lasts 60 seconds and grants 16 armor"
     },
     {
       "Level": 4,
+      "Pointer": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_21314"
+      "Value": "Turns all non-mechanical unit in the target area ethereal and slows their movement speed by \u003CA0FE,DataA4,%\u003E% for \u003CA0FE,Dur4\u003E seconds. Lasts \u003CA0FE,Dur4\u003E second on Heroes. Ethereal creatures cannot attack, but they can cast spells and certain spells cast upon them will have a greater effect."
     }
   ]
 }

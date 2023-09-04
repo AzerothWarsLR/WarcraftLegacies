@@ -12,29 +12,31 @@
     },
     {
       "Id": 2037408353,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_8892"
+      "Value": "(level 3) (anubarack beetels"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_8893"
+      "Value": "Acid Attack"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_8894"
+      "Value": "Acid Attack"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_8895"
+      "Value": "Spits acid on the enemy, reducing armor by 8"
     },
     {
       "Id": 1918989665,

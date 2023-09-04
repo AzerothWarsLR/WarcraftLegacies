@@ -7,6 +7,7 @@
   "Modifications": [
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1718968929,
       "Type": 3,
       "Value": "BEfn"
@@ -25,6 +26,7 @@
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1969316430,
       "Type": 3,
       "Value": "efon"

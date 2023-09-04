@@ -13,17 +13,17 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_10209"
+      "Value": "(Purple - Chaplain)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_11128"
+      "Value": "Q"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_10211"
+      "Value": "Cleanse"
     },
     {
       "Id": 1952543585,
@@ -32,15 +32,17 @@
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_10212"
+      "Value": "Cleanse"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_10213"
+      "Value": "Removes all buffs from a target unit.|n|cffffcc00Deals \u003CApg2,DataC1\u003E damage to summoned units.|r"
     }
   ]
 }

@@ -12,22 +12,22 @@
     },
     {
       "Id": 2037408353,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_8982"
+      "Value": "(Yellow - Hall of Explorers)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_14398"
+      "Value": "Z"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_8984"
+      "Value": "Explore Map"
     },
     {
       "Id": 1918988897,
@@ -36,29 +36,31 @@
     },
     {
       "Id": 2020635233,
-      "Value": 3
+      "Value": ""
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_8985"
+      "Value": "Explore Map - "
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_8986"
+      "Value": "The explores are filling out every black spot on the map, exploreing every corner of Azeroth. |n|nDetects invisible units. |nLasts 5 seconds."
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_8987"
+      "Value": "Explore Map - (|cffffcc00Z|r)"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_8988"
+      "Value": "The explores are filling out every black spot on the map, exploring every corner of Azeroth. |n|cffe8e800|nReveals the entire map.|nLasts 5 seconds.|r"
     }
   ]
 }

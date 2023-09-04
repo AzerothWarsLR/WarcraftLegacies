@@ -13,12 +13,12 @@
     {
       "Id": 1885959270,
       "Type": 3,
-      "Value": "TRIGSTR_13308"
+      "Value": "Restoration Aura"
     },
     {
       "Id": 1718840934,
       "Type": 3,
-      "Value": "TRIGSTR_13309"
+      "Value": "(Benedictus)"
     },
     {
       "Id": 1818649958,
@@ -37,7 +37,7 @@
     },
     {
       "Id": 1667331174,
-      "Value": 1
+      "Value": ""
     }
   ]
 }

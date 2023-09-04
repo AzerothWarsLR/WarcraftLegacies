@@ -8,42 +8,44 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_20931"
+      "Value": "(sunfury)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_19019"
+      "Value": "Q"
     },
     {
       "Id": 1802007905,
       "Type": 3,
-      "Value": "TRIGSTR_19168"
+      "Value": "Q"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_20987"
+      "Value": "Energy Grid"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_20988"
+      "Value": "Energy Grid"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_20989"
+      "Value": "Transfer 25 mana to nearby player units."
     },
     {
       "Id": 2020631137,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 2019718497,
-      "Value": 0
+      "Value": ""
     }
   ]
 }

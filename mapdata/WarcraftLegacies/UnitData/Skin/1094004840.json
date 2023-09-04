@@ -28,7 +28,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19791"
+      "Value": " (Stormwind Other)"
     },
     {
       "Id": 1818520949,
@@ -38,16 +38,16 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_2951"
+      "Value": "Wizard\u0027s Sanctum"
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 1.9
+      "Value": ""
     },
     {
       "Id": 1650684789,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1634759541,
@@ -57,7 +57,7 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_021"
+      "Value": "Upgrade to Wizard\u0027s Sanctum"
     },
     {
       "Id": 1935832437,
@@ -67,7 +67,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_16659"
+      "Value": "- Has the |cffcece00Mana Siphon|r ability, which allows the Wizard\u0027s Sanctum to grant 250 Mana to any unit within 2000 range with a 90 second cooldown.|n|n- Can Learn the |cffcece00Electric Strike |rand |cffcece00Solar Flare |rability|n|n- Further Research unlocks a 4th spell to |cffcece00Chaplains |rand |cffcece00Clergymen|r.|n|n- Another research will unlock the |cffcece00Conjurer |runit."
     },
     {
       "Id": 1684960117,
@@ -77,12 +77,12 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_2172"
+      "Value": "Z"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.95
+      "Value": ""
     }
   ]
 }

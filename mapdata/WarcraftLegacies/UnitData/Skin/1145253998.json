@@ -7,52 +7,52 @@
   "Modifications": [
     {
       "Id": 2020631157,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_18842"
+      "Value": " (Nzoth)"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 1.2
+      "Value": ""
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_5191"
+      "Value": "W"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_18495"
+      "Value": "Train Bloodkin"
     },
     {
       "Id": 1751675765,
       "Type": 1,
-      "Value": 140
+      "Value": ""
     },
     {
       "Id": 2003334005,
       "Type": 1,
-      "Value": 140
+      "Value": ""
     },
     {
       "Id": 2020111221,
       "Type": 1,
-      "Value": 50
+      "Value": ""
     },
     {
       "Id": 2036888437,
       "Type": 1,
-      "Value": 50
+      "Value": ""
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_18895"
+      "Value": "Healing and support caster.|n|cfff5962dAbilities:|R Shadow Mend, Dispel Magic, Bloodlust|n|n|cffffcc00Attacks land and air units.|R"
     },
     {
       "Id": 1818520949,
@@ -67,17 +67,17 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_18497"
+      "Value": "Bloodkin"
     },
     {
       "Id": 1853186933,
       "Type": 3,
-      "Value": "TRIGSTR_15820"
+      "Value": "Initiate,Adept,Master"
     },
     {
       "Id": 1953850229,
       "Type": 3,
-      "Value": "TRIGSTR_15763"
+      "Value": "- Shadow Mend,- Shadow Mend|n- Dispel Magic,- Shadow Mend|n- Dispel Magic|n - Bloodlust"
     },
     {
       "Id": 1635083125,

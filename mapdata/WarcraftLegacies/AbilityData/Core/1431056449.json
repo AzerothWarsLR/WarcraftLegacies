@@ -7,12 +7,14 @@
   "Modifications": [
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1701994849,
       "Type": 2,
       "Value": 0
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1935895905,
       "Value": 0
     },
@@ -24,6 +26,7 @@
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1920296033,
       "Type": 2,
       "Value": 3
@@ -34,6 +37,7 @@
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1969514593,
       "Type": 2,
       "Value": 2
@@ -49,12 +53,14 @@
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828733256,
       "Type": 3,
       "Value": "nsel"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1935762273,
       "Type": 2,
       "Value": 1

@@ -13,12 +13,12 @@
     {
       "Id": 1885959270,
       "Type": 3,
-      "Value": "TRIGSTR_13480"
+      "Value": "To Victory!"
     },
     {
       "Id": 1700951398,
       "Type": 3,
-      "Value": "TRIGSTR_13481"
+      "Value": "This unit is under the effect of To Victory!; its movement speed is increased."
     },
     {
       "Id": 1952543846,
@@ -37,7 +37,7 @@
     },
     {
       "Id": 1667331174,
-      "Value": 1
+      "Value": ""
     }
   ]
 }

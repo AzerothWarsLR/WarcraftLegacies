@@ -18,7 +18,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19773"
+      "Value": "(Lordaeron Specialist)"
     },
     {
       "Id": 1818520949,
@@ -28,22 +28,22 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_1385"
+      "Value": "D"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_2495"
+      "Value": "High Tower"
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 3
+      "Value": ""
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_2496"
+      "Value": "Build High Tower"
     },
     {
       "Id": 1935832437,
@@ -53,7 +53,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_2511"
+      "Value": "Flying unit production building.|n|cfff5962dTrains:|r Pegasus Knight, Thunder Eagle, Throne Guard|n|cfff5962dResearches:|r Pegasus Taming"
     }
   ]
 }

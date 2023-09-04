@@ -12,12 +12,12 @@
     },
     {
       "Id": 2020631157,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19819"
+      "Value": "(Gilneas Specialist)"
     },
     {
       "Id": 1818520949,
@@ -27,17 +27,17 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_1998"
+      "Value": "D"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.95
+      "Value": ""
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 4
+      "Value": ""
     },
     {
       "Id": 1935832437,
@@ -47,17 +47,17 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_13310"
+      "Value": "Manor for the Worgen.|n|cfff5962dTrains:|r Armored Wolves, Worgen, Worgen Shaman|n|cfff5962dResearches:|R Worgen Shaman Training"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_13296"
+      "Value": "Worgen Manor"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_13303"
+      "Value": "Build Worgen Manor"
     }
   ]
 }

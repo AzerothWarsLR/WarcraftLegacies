@@ -13,21 +13,21 @@
     },
     {
       "Level": 2,
-      "Pointer": 1,
+      "Pointer": 2,
       "Id": 828531016,
       "Type": 2,
       "Value": 1.1
     },
     {
       "Level": 3,
-      "Pointer": 1,
+      "Pointer": 3,
       "Id": 828531016,
       "Type": 2,
       "Value": 1.4
     },
     {
       "Level": 4,
-      "Pointer": 1,
+      "Pointer": 4,
       "Id": 828531016,
       "Type": 2,
       "Value": 1.7
@@ -38,24 +38,28 @@
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1918989409,
       "Type": 3,
       "Value": "air,friend,ground,invulnerable,organic,self,vulnerable"
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 1918989409,
       "Type": 3,
       "Value": "air,friend,ground,invulnerable,organic,self,vulnerable"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 1918989409,
       "Type": 3,
       "Value": "air,friend,ground,invulnerable,organic,self,vulnerable"
     },
     {
       "Level": 4,
+      "Pointer": 4,
       "Id": 1918989409,
       "Type": 3,
       "Value": "air,friend,ground,invulnerable,organic,self,vulnerable"

@@ -6,9 +6,10 @@
   "Modifications": [
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_15541"
+      "Value": "Harvests lumber from trees."
     }
   ]
 }

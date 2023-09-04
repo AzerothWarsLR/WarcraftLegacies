@@ -12,7 +12,7 @@
     },
     {
       "Id": 2020631157,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1635083125,
@@ -22,7 +22,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_15772"
+      "Value": "(Gilneas)"
     },
     {
       "Id": 1818520949,
@@ -32,12 +32,12 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_3500"
+      "Value": "W"
     },
     {
       "Id": 2053990773,
       "Type": 2,
-      "Value": 90
+      "Value": ""
     },
     {
       "Id": 1831952757,
@@ -47,12 +47,12 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_15765"
+      "Value": "Greyguard"
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 1.3
+      "Value": ""
     },
     {
       "Id": 1769173877,
@@ -62,12 +62,12 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_2952"
+      "Value": "Train Greyguard"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_7554"
+      "Value": "Incredibly strong worgen warriors, chosen to protect the King.|n|cfff5962dAbilities:|R Thunder Clap, Call to the Hunt, Worgen Bite, Heavy Plating|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land units.|r"
     },
     {
       "Id": 1684960117,

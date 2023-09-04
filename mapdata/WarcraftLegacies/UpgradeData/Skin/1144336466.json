@@ -7,57 +7,66 @@
   "Modifications": [
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1718840935,
       "Type": 3,
-      "Value": "TRIGSTR_16310"
+      "Value": "(scarlet)"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_17797"
+      "Value": "X"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_17932"
+      "Value": "X"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "TRIGSTR_16669"
+      "Value": "Increases Monks\u0027 mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Minor Holy Light."
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 828536167,
       "Type": 3,
-      "Value": "TRIGSTR_17244"
+      "Value": "Increases Monks\u0027 mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Rain of Light."
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "TRIGSTR_3465"
+      "Value": "Monk Adept Training"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "TRIGSTR_3527"
+      "Value": "Monk Master Training"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_3718"
+      "Value": "Monk Adept Training"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_3728"
+      "Value": "Monk Master Training"
     }
   ]
 }

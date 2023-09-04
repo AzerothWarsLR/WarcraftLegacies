@@ -12,12 +12,12 @@
     },
     {
       "Id": 2037408373,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_20028"
+      "Value": " (Illidari Specialist)"
     },
     {
       "Id": 1818520949,
@@ -27,17 +27,17 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.85
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_19525"
+      "Value": "Ashtongue Lair"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_19526"
+      "Value": "Build Ashtongue Lair"
     },
     {
       "Id": 1935832437,
@@ -47,7 +47,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_5562"
+      "Value": "Primary specialist production building.|n|r|cfff5962dTrains:|R Ashtongue Deathsworn, Ashtongue Mystic"
     },
     {
       "Id": 1684960117,
@@ -56,12 +56,12 @@
     },
     {
       "Id": 2020631157,
-      "Value": 3
+      "Value": ""
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_2806"
+      "Value": "F"
     },
     {
       "Id": 1651012469,

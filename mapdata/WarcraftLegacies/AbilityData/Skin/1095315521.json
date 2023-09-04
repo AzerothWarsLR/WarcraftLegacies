@@ -7,93 +7,101 @@
   "Modifications": [
     {
       "Id": 2020631137,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 2037408353,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_10019"
+      "Value": " (Jarod Shadowsong)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_10710"
+      "Value": "W"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_13245"
+      "Value": "Blood Fury"
     },
     {
       "Id": 2020635233,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_10714"
+      "Value": "W"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_16085"
+      "Value": "Blood Fury - [|cffffcc00Level %d|r]"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_16178"
+      "Value": "Blood Fury - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_16211"
+      "Value": "Blood Fury - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_16213"
+      "Value": "Blood Fury - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
+      "Pointer": 4,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_16225"
+      "Value": "Blood Fury - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_16919"
+      "Value": "The hero enters a frenzy state gaining 30 bonus damage and 100%  lifesteal.|n|nLasts 10 seconds."
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_16922"
+      "Value": "The hero enters a frenzy state gaining 40 bonus damage and 100%  lifesteal.|n|nLasts 12 seconds."
     },
     {
       "Level": 4,
+      "Pointer": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_16925"
+      "Value": "The hero enters a frenzy state gaining 50 bonus damage and 100%  lifesteal.|n|nLasts 14 seconds."
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_16983"
+      "Value": "The hero enters a frenzy state increasing his attack damage and gaining 100% lifesteal.  |n|n|cffffcc00Level 1|r - 20 bonus damage, lasts 8 seconds.|n|cffffcc00Level 2|r - 30 bonus damage, lasts 10 seconds.|n|cffffcc00Level 3|r - 40 bonus damage, lasts 12 seconds.|n|cffffcc00Level 4|r - 50 bonus damage, lasts 14 seconds."
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_16984"
+      "Value": "The hero enters a frenzy state gaining 20 bonus damage and 100% lifesteal.|n|nLasts 8 seconds."
     },
     {
       "Id": 1918988897,

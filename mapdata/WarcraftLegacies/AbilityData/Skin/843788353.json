@@ -12,7 +12,7 @@
     },
     {
       "Id": 2037408353,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1952539489,
@@ -22,29 +22,31 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_9003"
+      "Value": "(Red - Temple of the Damned - Off)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_3716"
+      "Value": "A"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_9005"
+      "Value": "Raise Dead Auto-Cast"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_9006"
+      "Value": "(|cffffcc00A|r) - Turn Off"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_9007"
+      "Value": "Disable auto-cast Raise Dead on newly-trained Necromancers."
     }
   ]
 }

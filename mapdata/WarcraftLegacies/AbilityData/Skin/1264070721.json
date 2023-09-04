@@ -7,29 +7,31 @@
   "Modifications": [
     {
       "Id": 2020631137,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_7270"
+      "Value": "(Assasins)"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_7271"
+      "Value": "Poison Spears"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_7272"
+      "Value": "Poison Spears"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_7273"
+      "Value": "Deals 10 poison damage per second and slows attack speed by 40% and mouvement speed by 30%. |nLasts 10 seconds. 3 seconds on heroes"
     }
   ]
 }

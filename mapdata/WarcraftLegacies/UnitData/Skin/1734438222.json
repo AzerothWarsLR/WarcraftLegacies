@@ -7,27 +7,27 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_924"
+      "Value": "(Fel Horde)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_1085"
+      "Value": "W"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 1.15
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_1266"
+      "Value": "Lord of Outland"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_433"
+      "Value": "Warrior Hero, specialises in dealing damage in all forms.|n|cfff5962dAbilities:|r Cleaving Attack|n|cfff5962dCan learn:|R Explosion, Howl of Terror, Fel Battleplate, Monsoon|n|n|cffffcc00Attacks land units.|R"
     },
     {
       "Id": 1684960117,
@@ -37,11 +37,11 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_17063"
+      "Value": "Summon Magtheridon"
     },
     {
       "Id": 2020631157,
-      "Value": 1
+      "Value": ""
     }
   ]
 }

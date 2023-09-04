@@ -7,67 +7,73 @@
   "Modifications": [
     {
       "Id": 2020631137,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 2037408353,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_18507"
+      "Value": "(CTHUN)"
     },
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_18876"
+      "Value": "F"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_18704"
+      "Value": "Learn Attribute Bonus - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_18953"
+      "Value": "Gives a permanent bonus to Intelligence, and Strength. Each level adds 3 points to all stats."
     },
     {
       "Level": 5,
+      "Pointer": 5,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_18956"
+      "Value": "Attribute Bonus - [|cffffcc00Level 5|r]"
     },
     {
       "Level": 5,
+      "Pointer": 5,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_18959"
+      "Value": "Gives a total of \u003CAamk,DataA5\u003E points to Intelligence, and Strength"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_19034"
+      "Value": "Gives a total of \u003CAamk,DataA1\u003E points to Intelligence, and Strength"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_19076"
+      "Value": "Gives a total of \u003CAamk,DataA2\u003E points to Intelligence, and Strength"
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_19077"
+      "Value": "Gives a total of \u003CAamk,DataA3\u003E points to Intelligence, and Strength"
     },
     {
       "Level": 4,
+      "Pointer": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_19078"
+      "Value": "Gives a total of \u003CAamk,DataA4\u003E points to Intelligence, and Strength"
     }
   ]
 }

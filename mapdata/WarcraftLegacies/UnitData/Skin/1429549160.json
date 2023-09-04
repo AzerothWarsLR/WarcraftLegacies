@@ -8,7 +8,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_10462"
+      "Value": " (Twilight other)"
     },
     {
       "Id": 1818520949,
@@ -18,7 +18,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_6525"
+      "Value": "Twilight Citadel"
     },
     {
       "Id": 1935832437,
@@ -28,7 +28,7 @@
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 8
+      "Value": ""
     },
     {
       "Id": 1684960117,
@@ -43,16 +43,16 @@
     {
       "Id": 2054188149,
       "Type": 2,
-      "Value": 900
+      "Value": ""
     },
     {
       "Id": 1919705973,
-      "Value": 155
+      "Value": ""
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.85
+      "Value": ""
     }
   ]
 }

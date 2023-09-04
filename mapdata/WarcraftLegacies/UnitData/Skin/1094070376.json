@@ -12,12 +12,12 @@
     },
     {
       "Id": 2020631157,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19774"
+      "Value": " (Stormwind Siege)"
     },
     {
       "Id": 1818520949,
@@ -27,17 +27,17 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_1537"
+      "Value": "D"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.85
+      "Value": ""
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 4
+      "Value": ""
     },
     {
       "Id": 1935832437,
@@ -47,17 +47,17 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_19239"
+      "Value": "The industrial heart of Stormwind\u0027s war machine.|n|cfff5962dTrains:|R Siege Tower, Gunship, Marshal|n|cfff5962dResearches:|R Chainmail Layering"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_19514"
+      "Value": "Smithy"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_19515"
+      "Value": "Build Smithy"
     }
   ]
 }

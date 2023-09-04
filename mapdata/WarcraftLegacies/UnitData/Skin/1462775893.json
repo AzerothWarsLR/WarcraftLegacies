@@ -8,11 +8,11 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_267"
+      "Value": "Majordomo of Ragnaros"
     },
     {
       "Id": 1919252085,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1818520949,
@@ -22,11 +22,11 @@
     {
       "Id": 1869770869,
       "Type": 3,
-      "Value": "TRIGSTR_16028"
+      "Value": "Majordomo Executus"
     },
     {
       "Id": 1970434165,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1868786037,
@@ -46,16 +46,16 @@
     {
       "Id": 1953980789,
       "Type": 3,
-      "Value": "TRIGSTR_282"
+      "Value": "Revive Majordomo of Ragnaros"
     },
     {
       "Id": 1919972469,
       "Type": 3,
-      "Value": "TRIGSTR_313"
+      "Value": "Revive Majordomo of Ragnaros"
     },
     {
       "Id": 1667462261,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1769173877,
@@ -65,40 +65,40 @@
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 1.2
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_18578"
+      "Value": " (Ragnaros)"
     },
     {
       "Id": 2037408373,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 2020631157,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_5167"
+      "Value": "W"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_18485"
+      "Value": "Warrior Hero, adept at bolstering troops around him and summoning minions.|n|cfff5962dCan Learn:|R War Stomp, Summon Mur\u0027gul, Devotion Aura, Tidal Wave|n|n|cffffcc00Attacks land units.|R"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_324"
+      "Value": "Summon Majordomo Executus"
     }
   ]
 }

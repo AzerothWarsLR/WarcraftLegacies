@@ -7,7 +7,7 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 1.1
+      "Value": ""
     },
     {
       "Id": 1935832437,
@@ -17,7 +17,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_14876"
+      "Value": "Primary troop production building.|nTrains: Draenei Deathsworn, Draenei Stalkers and Demolishers"
     }
   ]
 }

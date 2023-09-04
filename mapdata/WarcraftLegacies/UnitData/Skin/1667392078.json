@@ -12,16 +12,16 @@
     {
       "Id": 1953980789,
       "Type": 3,
-      "Value": "TRIGSTR_1267"
+      "Value": "Revive Rend"
     },
     {
       "Id": 2020631157,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_929"
+      "Value": "(Fel Horde)"
     },
     {
       "Id": 1818520949,
@@ -31,27 +31,27 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_1021"
+      "Value": "E"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 1.4
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_1270"
+      "Value": "Warchief of the Blackrock Clan"
     },
     {
       "Id": 1869770869,
       "Type": 3,
-      "Value": "TRIGSTR_1271"
+      "Value": "Dal\u0027rend Blackhand"
     },
     {
       "Id": 1919972469,
       "Type": 3,
-      "Value": "TRIGSTR_1272"
+      "Value": "Revive Rend"
     },
     {
       "Id": 1769173877,
@@ -61,12 +61,12 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_15716"
+      "Value": "Cunning Hero, specialised in dealing damage and disrupting enemies.|n|cfff5962dAbilities:|r Wind Walk, Critical Strike|n|cfff5962dCan learn:|R Bladestorm, Blackhand\u0027s Howl, Endurance Aura, Mirror Image|n|n|cffffcc00Attacks land units.|R"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_1673"
+      "Value": "Summon Rend"
     }
   ]
 }

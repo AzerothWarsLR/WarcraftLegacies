@@ -8,12 +8,12 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_3813"
+      "Value": "Z"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.8
+      "Value": ""
     },
     {
       "Id": 1935832437,
@@ -23,12 +23,12 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_256"
+      "Value": "Infused tower with arcane energy that fires magic shards eminating offensive magic.|n|cfff5962dUpgrades Into:|R Improved Crystal Protector|n|n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 2.4
+      "Value": ""
     },
     {
       "Id": 1651012469,
@@ -38,7 +38,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_20093"
+      "Value": "(Draenei Tower)"
     },
     {
       "Id": 1818520949,
@@ -48,12 +48,12 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_17821"
+      "Value": "Crystal Protector"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_17822"
+      "Value": "Build Crystal Protector"
     },
     {
       "Id": 1868786037,

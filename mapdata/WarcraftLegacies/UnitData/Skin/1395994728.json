@@ -12,12 +12,12 @@
     },
     {
       "Id": 1651270517,
-      "Value": 210
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19782"
+      "Value": "(Stormwind-Summons)"
     },
     {
       "Id": 1818520949,
@@ -26,36 +26,36 @@
     },
     {
       "Id": 1735156597,
-      "Value": 210
+      "Value": ""
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_2408"
+      "Value": "Q"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.85
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_210"
+      "Value": "Brigadier"
     },
     {
       "Id": 1919705973,
-      "Value": 180
+      "Value": ""
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_2903"
+      "Value": "Train Brigadier"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_2904"
+      "Value": "Westfall Brigade\u0027s finest volunteer, ready to protect his king and country. |n|cfff5962dAbilities:|R Charge, Bash|n|cfff5962dCan Learn:|R Runic Strength|n|n|cffffcc00Attacks land units.|r"
     }
   ]
 }

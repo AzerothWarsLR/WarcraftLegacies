@@ -7,6 +7,7 @@
   "Modifications": [
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1935895905,
       "Value": 150
     },
@@ -17,12 +18,14 @@
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1852072801,
       "Type": 2,
       "Value": 65
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1701994849,
       "Type": 2,
       "Value": 900
@@ -36,7 +39,7 @@
     },
     {
       "Level": 1,
-      "Pointer": 3,
+      "Pointer": 1,
       "Id": 863200840,
       "Type": 2,
       "Value": 10

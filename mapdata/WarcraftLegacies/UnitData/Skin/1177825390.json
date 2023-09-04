@@ -18,17 +18,17 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.35
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_2423"
+      "Value": "Andrassil"
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 4
+      "Value": ""
     },
     {
       "Id": 1885959285,
@@ -43,7 +43,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19710"
+      "Value": "(Druid Other)"
     }
   ]
 }

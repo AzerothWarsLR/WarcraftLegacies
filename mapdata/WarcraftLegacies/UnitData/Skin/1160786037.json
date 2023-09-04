@@ -12,16 +12,16 @@
     },
     {
       "Id": 2020631157,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 2037408373,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19628"
+      "Value": "(Legion Farm)"
     },
     {
       "Id": 1818520949,
@@ -31,22 +31,22 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_1152"
+      "Value": "W"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.65
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_19629"
+      "Value": "Soul Prison"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_19630"
+      "Value": "Summon Soul Prison"
     },
     {
       "Id": 1935832437,
@@ -56,7 +56,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_15548"
+      "Value": "Cruel housing for a soul used as fuel for the Legion.|nProvides 8 food, which increases the maximum number of units that can be trained.|n|cfff5962dUpgrades to:|R Soul Tower"
     }
   ]
 }

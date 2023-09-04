@@ -8,12 +8,12 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_9380"
+      "Value": "(Blue - Dreadlord)"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_9381"
+      "Value": "Vampiric Attack"
     },
     {
       "Id": 1952543841,
@@ -27,19 +27,21 @@
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_9382"
+      "Value": "Vampiric Attack"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_20505"
+      "Value": "This unit gains 50% of damage done as health."
     },
     {
       "Id": 2020631137,
-      "Value": 3
+      "Value": ""
     }
   ]
 }

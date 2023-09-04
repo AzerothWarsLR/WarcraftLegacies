@@ -12,12 +12,12 @@
     },
     {
       "Id": 2020631157,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_1318"
+      "Value": "(Dalaran)"
     },
     {
       "Id": 1818520949,
@@ -26,17 +26,17 @@
     },
     {
       "Id": 1919252085,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_1468"
+      "Value": "W"
     },
     {
       "Id": 2054188149,
       "Type": 2,
-      "Value": 120
+      "Value": ""
     },
     {
       "Id": 1831952757,
@@ -46,27 +46,27 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.8
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_1551"
+      "Value": "Crystal Artillery"
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_1552"
+      "Value": "Build Crystal Artillery"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_1553"
+      "Value": "Magical siege weapon.|n|n|cff99b4d1Can only build 6. |r|n|cffffcc00Attacks land units and trees.|r"
     }
   ]
 }

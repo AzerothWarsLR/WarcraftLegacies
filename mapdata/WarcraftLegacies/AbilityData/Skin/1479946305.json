@@ -13,17 +13,17 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_9788"
+      "Value": "(Blue - Archimonde)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_11882"
+      "Value": "Q"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_11431"
+      "Value": "Nether Strike"
     },
     {
       "Id": 1918988897,
@@ -33,17 +33,17 @@
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_11906"
+      "Value": "Q"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_11433"
+      "Value": "Learn Nether Strike (|cffffcc00Q|r) - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_11434"
+      "Value": "Archimonde creates a column of darkness which damages ground units in a target area over time. |n|n|cffffcc00Level 1|r - 180 damage over 3 seconds, followed by minor damage for 6 seconds. |n|cffffcc00Level 2|r - 270 damage over 3 seconds, followed by light damage for 6 seconds. |n|cffffcc00Level 3|r - 360 damage over 3 seconds, followed by moderate damage for 6 seconds. |n|cffffcc00Level 4|r - 450 damage over 3 seconds, followed by major damage for 6 seconds."
     },
     {
       "Id": 1952543585,
@@ -52,51 +52,59 @@
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_11435"
+      "Value": "Nether Strike (|cffffcc00Q|r) - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_11436"
+      "Value": "Nether Strike (|cffffcc00Q|r) - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_11437"
+      "Value": "Nether Strike (|cffffcc00Q|r) - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
+      "Pointer": 4,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_11438"
+      "Value": "Nether Strike (|cffffcc00Q|r) - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_11439"
+      "Value": "Archimonde creates a column of darkness that damages ground units for 180 damage over 3 seconds. As the pillar of darkness subsides, units hit will continue to take minor damage."
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_11440"
+      "Value": "Archimonde creates a column of darkness that damages ground units for 270 damage over 3 seconds. As the pillar of darkness subsides, units hit will continue to take minor damage."
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_11441"
+      "Value": "Archimonde creates a column of darkness that damages ground units for 360 damage over 3 seconds. As the pillar of darkness subsides, units hit will continue to take minor damage."
     },
     {
       "Level": 4,
+      "Pointer": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_11442"
+      "Value": "Archimonde creates a column of darkness that damages ground units for 450 damage over 3 seconds. As the pillar of darkness subsides, units hit will continue to take minor damage."
     }
   ]
 }

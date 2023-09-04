@@ -6,32 +6,32 @@
   "Modifications": [
     {
       "Id": 2020631157,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_18824"
+      "Value": " (Illidari)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_666"
+      "Value": "Q"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_19504"
+      "Value": "Train Ashtongue Deathsworn"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_18517"
+      "Value": "Versatile frontline warrior of the Draenei.|n|cfff5962dAbilities:|R Vindication, War Plating|n|n|cffffcc00Attacks land units.|r"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_19505"
+      "Value": "Ashtongue Deathsworn"
     }
   ]
 }

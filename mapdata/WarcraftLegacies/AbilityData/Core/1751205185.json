@@ -13,21 +13,21 @@
     },
     {
       "Level": 2,
-      "Pointer": 1,
+      "Pointer": 2,
       "Id": 828924229,
       "Type": 2,
       "Value": 0.16
     },
     {
       "Level": 3,
-      "Pointer": 1,
+      "Pointer": 3,
       "Id": 828924229,
       "Type": 2,
       "Value": 0.24
     },
     {
       "Level": 4,
-      "Pointer": 1,
+      "Pointer": 4,
       "Id": 828924229,
       "Type": 2,
       "Value": 0.32

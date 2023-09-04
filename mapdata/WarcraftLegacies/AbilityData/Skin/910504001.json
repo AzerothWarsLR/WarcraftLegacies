@@ -12,33 +12,35 @@
     },
     {
       "Id": 2020631137,
-      "Value": 3
+      "Value": ""
     },
     {
       "Id": 2037408353,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_9868"
+      "Value": "(Pink - Spirit Walker, Tauren)"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_9869"
+      "Value": "Toughened Hides"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_9870"
+      "Value": "Toughened Hides"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_9871"
+      "Value": "Reduces damage taken from attacks by \u003CA0E6,DataC1\u003E."
     },
     {
       "Id": 1918989665,

@@ -12,17 +12,17 @@
     },
     {
       "Id": 2020631137,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_2963"
+      "Value": "(Treants)"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_3087"
+      "Value": "Grasping Vines"
     },
     {
       "Id": 1918988897,
@@ -32,17 +32,17 @@
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_10135"
+      "Value": "E"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_4624"
+      "Value": "Learn Blazing Aura - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_4658"
+      "Value": "Undead and Demons are weakened in the face of the Light. Decreases hp regen and movespeed of nearby enemy units. |n|n|cffffcc00Level 1|r - 50% degeneration, 3% movespeed reduction.|n|cffffcc00Level 2|r - 100% degeneration, 6% movespeed reduction.|n|cffffcc00Level 3|r - 200% degeneration, 9% movespeed reduction."
     },
     {
       "Id": 1952543841,
@@ -51,15 +51,17 @@
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_4687"
+      "Value": "Grasping Vines"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_1848"
+      "Value": "Reduces nearby enemy units\u0027 movement speed by 15%."
     }
   ]
 }

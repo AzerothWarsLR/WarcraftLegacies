@@ -13,7 +13,7 @@
     {
       "Id": 828794215,
       "Type": 3,
-      "Value": "TRIGSTR_14318"
+      "Value": "TRIGSTR_10880"
     },
     {
       "Id": 1651078247,
@@ -21,6 +21,7 @@
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1902473831,
       "Type": 3,
       "Value": "hcas"

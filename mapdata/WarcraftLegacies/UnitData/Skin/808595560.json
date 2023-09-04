@@ -17,7 +17,7 @@
     },
     {
       "Id": 1651270517,
-      "Value": 75
+      "Value": ""
     },
     {
       "Id": 1651012469,
@@ -31,16 +31,16 @@
     },
     {
       "Id": 1735156597,
-      "Value": 60
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_3362"
+      "Value": "Greymane Manor"
     },
     {
       "Id": 1919705973,
-      "Value": 50
+      "Value": ""
     },
     {
       "Id": 1885959285,
@@ -65,7 +65,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19849"
+      "Value": " (Gilneas Other)"
     }
   ]
 }

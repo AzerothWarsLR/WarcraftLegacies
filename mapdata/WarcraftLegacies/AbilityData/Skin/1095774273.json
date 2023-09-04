@@ -8,17 +8,17 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_1668"
+      "Value": "(Lich King, teron)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_8806"
+      "Value": "R"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_200"
+      "Value": "Mass Animate Dead"
     },
     {
       "Id": 1918988897,
@@ -27,58 +27,64 @@
     },
     {
       "Id": 2020635233,
-      "Value": 3
+      "Value": ""
     },
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_8951"
+      "Value": "R"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_201"
+      "Value": "Learn Mass Animate Dead - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_202"
+      "Value": "Animates alot nearby corpses to fight for the Lich King. Lasts 60 seconds.|n|n|cffffcc00Level 1|r - Animates 50 nearby corpses. Got a 240 seconds cooldown. |n|cffffcc00Level 2|r - Animates 100 nearby corpses. Got a 180 seconds cooldown. |n|cffffcc00Level 3|r - Animates 200 nearby corpses. Got a 120 seconds cooldown."
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_8400"
+      "Value": "Mass Animate Dead  - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_8401"
+      "Value": "Mass Animate Dead - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_8402"
+      "Value": "Mass Animate Dead - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_8403"
+      "Value": "Animates 50 nearby corpses to fight for the Lich King. Lasts 60 seconds. Got 240 seconds cooldown."
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_8404"
+      "Value": "Animates 100 nearby corpses to fight for the Lich King. Lasts 60 seconds. Got 180 seconds cooldown."
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_8405"
+      "Value": "Animates 200 nearby corpses to fight for the Lich King. Lasts 60 seconds. Got 120 seconds cooldown."
     }
   ]
 }

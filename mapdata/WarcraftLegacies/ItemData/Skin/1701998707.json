@@ -6,21 +6,21 @@
   "Modifications": [
     {
       "Id": 2020631157,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 2037408373,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_4075"
+      "Value": "Teleports a target friendly unit to its highest level town hall. Has a 2 second cast time. 90 second cooldown."
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_5370"
+      "Value": "Q"
     }
   ]
 }

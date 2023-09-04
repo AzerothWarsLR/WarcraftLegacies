@@ -8,19 +8,21 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_12505"
+      "Value": "(Dalaran-Hydromancer)"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_8330"
+      "Value": "Summon Water Elemental"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_1326"
+      "Value": "Summons a water elemental. Has \u003Ch00U,realHP\u003E hit points and deals \u003Ch00U,mindmg1\u003E - \u003Ch00U,maxdmg1\u003E damage. |nLasts \u003CA029,Dur1\u003E seconds. Elemental are affected by Power Infusion upgrades. |n|n|cffffcc00Attacks land and air units.|r"
     }
   ]
 }

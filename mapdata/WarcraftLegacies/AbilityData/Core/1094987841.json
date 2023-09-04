@@ -7,51 +7,59 @@
   "Modifications": [
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1852072801,
       "Type": 2,
       "Value": 45
     },
     {
       "Level": 2,
-      "Id": 1852072801,
-      "Type": 2,
-      "Value": 45
-    },
-    {
-      "Level": 3,
-      "Id": 1852072801,
-      "Type": 2,
-      "Value": 45
-    },
-    {
-      "Level": 4,
-      "Id": 1852072801,
-      "Type": 2,
-      "Value": 45
-    },
-    {
-      "Level": 1,
-      "Id": 1935895905,
-      "Value": 120
-    },
-    {
-      "Level": 2,
-      "Id": 1935895905,
-      "Value": 120
-    },
-    {
-      "Level": 3,
-      "Id": 1935895905,
-      "Value": 120
-    },
-    {
-      "Level": 4,
-      "Id": 1935895905,
-      "Value": 120
-    },
-    {
-      "Level": 1,
       "Pointer": 2,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 4,
+      "Pointer": 4,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 1935895905,
+      "Value": 120
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": 1935895905,
+      "Value": 120
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": 1935895905,
+      "Value": 120
+    },
+    {
+      "Level": 4,
+      "Pointer": 4,
+      "Id": 1935895905,
+      "Value": 120
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
       "Id": 845574991,
       "Value": 4
     },
@@ -63,13 +71,13 @@
     },
     {
       "Level": 3,
-      "Pointer": 2,
+      "Pointer": 3,
       "Id": 845574991,
       "Value": 8
     },
     {
       "Level": 4,
-      "Pointer": 2,
+      "Pointer": 4,
       "Id": 845574991,
       "Value": 10
     },
@@ -79,24 +87,28 @@
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828797775,
       "Type": 3,
       "Value": "nmtw"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 828797775,
       "Type": 3,
       "Value": "nmtw"
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 828797775,
       "Type": 3,
       "Value": "nmtw"
     },
     {
       "Level": 4,
+      "Pointer": 4,
       "Id": 828797775,
       "Type": 3,
       "Value": "nmtw"

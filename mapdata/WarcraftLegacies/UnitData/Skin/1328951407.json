@@ -8,12 +8,12 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_7361"
+      "Value": "(stormwind)"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_7360"
+      "Value": "Rallying Banner"
     },
     {
       "Id": 1868786037,
@@ -28,7 +28,7 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 1.2
+      "Value": ""
     }
   ]
 }

@@ -7,19 +7,21 @@
   "Modifications": [
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1718968929,
       "Type": 3,
       "Value": "B0AK"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1852072801,
       "Type": 2,
       "Value": 60
     },
     {
       "Level": 1,
-      "Pointer": 2,
+      "Pointer": 1,
       "Id": 845574991,
       "Value": 1
     },
@@ -33,6 +35,7 @@
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828797775,
       "Type": 3,
       "Value": "ndqs"

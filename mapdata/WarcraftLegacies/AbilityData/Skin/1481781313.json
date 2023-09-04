@@ -8,63 +8,69 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_2273"
+      "Value": "(Alchemist)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_16539"
+      "Value": "E"
     },
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_16542"
+      "Value": "E"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_17383"
+      "Value": "The hero progenerates Carrion Beetle from a target corpse to attack the hero\u0027s enemies. Beetles are permanent. |n|n|cffffcc00Level 1|r - Spawns a level 1 Carrion Beetle. Max 6 Beetles. |n|cffffcc00Level 2|r - Spawns a level 2 Carrion Beetle. Max 6 Beetles. |n|cffffcc00Level 3|r - Spawns a level 3 Dire Carrion Beetle. Max 6 Beetles. |n|cffffcc00Level 4|r - Spawns a level 3 Dire Carrion Beetle. Max 12 Beetles."
     },
     {
       "Level": 4,
+      "Pointer": 4,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_14324"
+      "Value": "Carrion Beetles - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_5314"
+      "Value": "Raises 1 Plagueling from a corpse for 45 seconds."
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_17385"
+      "Value": "The hero progenerates Carrion Beetle from a target corpse to attack the hero\u0027s enemies. Beetles are permanent. |n|n| Spawns a level 2 Carrion Beetle. Max 6 Beetles. |n|n| Got Spiked Carapace, Acid Attack -7 and Burrow."
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_17386"
+      "Value": "The hero progenerates Carrion Beetle from a target corpse to attack the hero\u0027s enemies. Beetles are permanent. |n|n| Spawns a level 3 Dire Carrion Beetle. Max 6 Beetles. |n|n| Got Spiked Carapace, Acid Attack -10, Burrow and Spawn Beetles."
     },
     {
       "Level": 4,
+      "Pointer": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_17387"
+      "Value": "The hero progenerates Carrion Beetle from a target corpse to attack the hero\u0027s enemies. Beetles are permanent. |n|nSpawns a level 3 Dire Carrion Beetle. Max 12 Beetles. |n|nGot Spiked Carapace, Acid Attack -10, Burrow and Spawn Beetles."
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_16294"
+      "Value": "Raise Plaguelings"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_17039"
+      "Value": "Raise Plaguelings"
     },
     {
       "Id": 1953653089,

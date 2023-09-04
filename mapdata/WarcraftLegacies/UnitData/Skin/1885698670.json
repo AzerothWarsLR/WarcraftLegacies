@@ -6,17 +6,17 @@
   "Modifications": [
     {
       "Id": 2020631157,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_515"
+      "Value": "(Warsong)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_319"
+      "Value": "E"
     },
     {
       "Id": 1831952757,
@@ -31,17 +31,17 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_8701"
+      "Value": "Train Trading Zeppelin"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_430"
+      "Value": "Flying Gold Trader. Once trained, it cannot be controlled and will automatically trade between the Trading Center and a random Goblin trading location. Will generate 15 gold per minute. |n|n|cff99b4d1Can only build 16."
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_15275"
+      "Value": "Trading Zeppelin"
     }
   ]
 }

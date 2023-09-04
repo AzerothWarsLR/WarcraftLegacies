@@ -12,17 +12,17 @@
     },
     {
       "Id": 2020631137,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_6589"
+      "Value": "(N\u0027zoth)"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_6674"
+      "Value": "N\u0027zoth Pressure Aura"
     },
     {
       "Id": 1918988897,
@@ -31,22 +31,22 @@
     },
     {
       "Id": 2020635233,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_8608"
+      "Value": "W"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_6676"
+      "Value": "Learn N\u0027zoth Pressure Aura  - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_15909"
+      "Value": "Causes immense pressure to nearby units, slowing their movement speed. This aura has a medium to small aoe. |n|n|cffffcc00Level 1|r - 15% movement speed reduction. 300 AoE.|n|cffffcc00Level 2|r - 25% movement speed reduction. 300 AoE. |n|cffffcc00Level 3|r - 35% movement speed reduction. 300 AoE.  |n|cffffcc00Level 4|r - 45% movement speed reduction. 300 AoE."
     },
     {
       "Id": 1952543841,
@@ -55,51 +55,59 @@
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_6678"
+      "Value": "N\u0027zoth Pressure Aura - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_6679"
+      "Value": "N\u0027zoth Pressure Aura - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_6680"
+      "Value": "N\u0027zoth Pressure Aura - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
+      "Pointer": 4,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_6681"
+      "Value": "N\u0027zoth Pressure Aura - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_6682"
+      "Value": "Lowers movement speed of nearby enemy units by 15%.|n|n|cffe8e800Area of effect: 300|r"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_6683"
+      "Value": "Lowers movement speed of nearby enemy units by 25%.|n|n|cffe8e800Area of effect: 300|r"
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_6684"
+      "Value": "Lowers movement speed of nearby enemy units by 35%.|n|n|cffe8e800Area of effect: 300|r"
     },
     {
       "Level": 4,
+      "Pointer": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_6685"
+      "Value": "Lowers movement speed of nearby enemy units by 45%.|n|n|cffe8e800Area of effect: 300|r"
     }
   ]
 }

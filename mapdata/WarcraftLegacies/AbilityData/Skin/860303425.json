@@ -8,18 +8,19 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_2770"
+      "Value": "(thornspeaker)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_10902"
+      "Value": "W"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_9540"
+      "Value": "Removes all buffs from units in a target area and deals \u003CA0G3,DataB1\u003E damage to summoned units.|r"
     }
   ]
 }

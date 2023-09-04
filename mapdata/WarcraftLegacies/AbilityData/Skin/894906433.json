@@ -7,35 +7,38 @@
   "Modifications": [
     {
       "Id": 2020631137,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_16628"
+      "Value": " (Necrolyte)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_9552"
+      "Value": "E"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_7396"
+      "Value": "Wreaths an enemy unit in magical flames which cause 7.5 damage per second, prevent the casting of spells, reduce movement speed by 75% and reduce attack damage and attack speed by 50%.|nLasts 45(3) seconds."
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_7397"
+      "Value": "Wreaths an enemy unit in magical flames which causes 10 damage per second, prevent the casting of spells, reduce movement speed by 75% and reduce attack damage and attack speed by 50%.|nLasts 45(3) seconds."
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_7416"
+      "Value": "Soul Burn"
     }
   ]
 }

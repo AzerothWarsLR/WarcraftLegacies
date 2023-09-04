@@ -17,21 +17,21 @@
     },
     {
       "Id": 2020631157,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 2037408373,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1936024681,
       "Type": 3,
-      "Value": "TRIGSTR_661"
+      "Value": "A store for purchasing items"
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_20067"
+      "Value": "(Yogg Shop)"
     },
     {
       "Id": 1818520949,
@@ -41,17 +41,17 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_17316"
+      "Value": "Ominous Vault"
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 3
+      "Value": ""
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_20068"
+      "Value": "Build Ominous Vault"
     },
     {
       "Id": 1935832437,
@@ -66,17 +66,17 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_4363"
+      "Value": "C"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.4
+      "Value": ""
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_2803"
+      "Value": "A store for purchasing items"
     }
   ]
 }

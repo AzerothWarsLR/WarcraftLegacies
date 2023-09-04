@@ -7,44 +7,44 @@
   "Modifications": [
     {
       "Id": 1651270517,
-      "Value": 200
+      "Value": ""
     },
     {
       "Id": 2020631157,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 2037408373,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_2684"
+      "Value": "Z"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 1.3
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_3641"
+      "Value": "Nordrassil Ancient Protector"
     },
     {
       "Id": 1919705973,
-      "Value": 200
+      "Value": ""
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 3.5
+      "Value": ""
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_3642"
+      "Value": "Upgrade to Improved Ancient Protector"
     },
     {
       "Id": 1935832437,
@@ -54,7 +54,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19875"
+      "Value": " (Sentinel Other)"
     }
   ]
 }

@@ -7,17 +7,17 @@
     {
       "Id": 1920493154,
       "Type": 2,
-      "Value": -1
+      "Value": ""
     },
     {
       "Id": 1935764834,
       "Type": 2,
-      "Value": 10
+      "Value": ""
     },
     {
       "Id": 1936289122,
       "Type": 2,
-      "Value": 0.01
+      "Value": ""
     },
     {
       "Id": 1684566882,
@@ -27,7 +27,7 @@
     {
       "Id": 1835101794,
       "Type": 3,
-      "Value": "TRIGSTR_16605"
+      "Value": "Dragonmaw Gate"
     }
   ]
 }

@@ -7,18 +7,19 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_4903"
+      "Value": "(Druids-Druid of the claw)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_6159"
+      "Value": "Q"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_4905"
+      "Value": "Gives friendly nearby units a 15% bonus to damage and 3 armor.|n|cffffcc00Lasts 30 seconds."
     }
   ]
 }

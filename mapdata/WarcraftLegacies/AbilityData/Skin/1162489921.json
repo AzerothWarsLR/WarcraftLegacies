@@ -28,7 +28,7 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_15455"
+      "Value": "(faction select)"
     },
     {
       "Id": 1952540001,
@@ -43,7 +43,7 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_15472"
+      "Value": "Fel Horde selection"
     },
     {
       "Id": 1952543841,
@@ -57,23 +57,25 @@
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_15473"
+      "Value": "Select the |cff00d700Fel Horde|r"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_15474"
+      "Value": "Play as the bloodthirsty |cff00d700Fel Horde|r. You might be alone, but that will not stop your hordes from laying waste to all who stand in your way. Move fast before the Azerothians have a chance to organize.|n|n|cff580100Master faction|r"
     },
     {
       "Id": 2037408353,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 2020631137,
-      "Value": 3
+      "Value": ""
     }
   ]
 }

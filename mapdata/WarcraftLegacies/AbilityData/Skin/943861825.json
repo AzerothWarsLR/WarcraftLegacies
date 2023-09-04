@@ -8,33 +8,35 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_10567"
+      "Value": "(Khaz Modan-Defender)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_11329"
+      "Value": "W"
     },
     {
       "Id": 1667331169,
-      "Value": 1
+      "Value": ""
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_10569"
+      "Value": "Activate to have a \u003CAdef,DataF1\u003E% chance to reflect Piercing attacks upon the source, and to take only \u003CAdef,DataA1,%\u003E% of the damage from attacks that are not reflected and also reduces magic damage by 20%. While Defend is active, move speed is reduced by \u003CAdef,DataC1,%\u003E%."
     },
     {
       "Id": 1802007905,
       "Type": 3,
-      "Value": "TRIGSTR_11367"
+      "Value": "W"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829781345,
       "Type": 3,
-      "Value": "TRIGSTR_10571"
+      "Value": "Deactivate to move at normal speed, but take regular damage from Piercing and Magic attacks."
     }
   ]
 }

@@ -7,25 +7,27 @@
   "Modifications": [
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_18357"
+      "Value": "Titanforge Artifact"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_18407"
+      "Value": "Titanforge Artifact"
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_3396"
+      "Value": "(Ironforge)"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_16780"
+      "Value": "Titanforges the Artifact currently held within the Forgeworks, permanently granting it an additional ability. Each Artifact can be Titanforged only once."
     },
     {
       "Id": 1953653089,
@@ -35,11 +37,11 @@
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_14593"
+      "Value": "Z"
     },
     {
       "Id": 2037408353,
-      "Value": 2
+      "Value": ""
     }
   ]
 }

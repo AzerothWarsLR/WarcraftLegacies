@@ -12,11 +12,11 @@
     },
     {
       "Id": 2020631137,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 2037408353,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1952539489,
@@ -26,29 +26,31 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_5255"
+      "Value": "(Nzoth)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_9814"
+      "Value": "D"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_7086"
+      "Value": "N\u0027zoth Transportation"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_7087"
+      "Value": "N\u0027zoth Transportation (|cffffff00D|r)"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_19093"
+      "Value": "N\u0027zoth transports to any organic allied unit. It has a 5 second cast time and 40 seconds cooldown."
     }
   ]
 }

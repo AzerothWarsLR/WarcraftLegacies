@@ -7,12 +7,12 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_5942"
+      "Value": "(Magni)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_7288"
+      "Value": "Q"
     },
     {
       "Id": 1952542049,
@@ -22,42 +22,47 @@
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_7355"
+      "Value": "Q"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_5945"
+      "Value": "A magical hammer that is thrown at an enemy unit, causing damage and stunning the target. |n|n|cffffcc00Level 1|r - 150 damage, 4 second stun. 1 second on Heroes.|n|cffffcc00Level 2|r - 200 damage, 5 second stun. 1.5 seconds on Heroes.|n|cffffcc00Level 3|r - 300 damage, 6 second stun. 2 seconds on Heroes.|n|cffffcc00Level 4|r - 375 damage, 7 second stun. 2.5 seconds on Heroes"
     },
     {
       "Level": 4,
+      "Pointer": 4,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_5946"
+      "Value": "Storm Bolt - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_5947"
+      "Value": "Throws a magical hammer at a target enemy unit, dealing 150 damage and stunning the target for 4 seconds. Lasts 1 second on heroes."
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_5948"
+      "Value": "Throws a magical hammer at a target enemy unit, dealing 225 damage and stunning the target for 5 seconds. Lasts 1.5 seconds on heroes."
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_5949"
+      "Value": "Throws a magical hammer at a target enemy unit, dealing 300 damage and stunning the target for 6 seconds. Lasts 2 seconds on heroes."
     },
     {
       "Level": 4,
+      "Pointer": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_5950"
+      "Value": "Throws a magical hammer at a target enemy unit, dealing 375 damage and stunning the target for 7 seconds. Lasts 2.5 seconds on heroes."
     }
   ]
 }

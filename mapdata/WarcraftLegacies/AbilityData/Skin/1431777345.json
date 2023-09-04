@@ -8,70 +8,78 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_17379"
+      "Value": " (Ironforge)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_17425"
+      "Value": "Q"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_18736"
+      "Value": "Shadow Mend"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_18737"
+      "Value": "Heal - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_18738"
+      "Value": "Heal - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
+      "Pointer": 4,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_18739"
+      "Value": "Heal - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_18740"
+      "Value": "Heals a target friendly non-mechanical wounded unit for \u003CAhea,DataA2\u003E hit points."
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_18741"
+      "Value": "Heals a target friendly non-mechanical wounded unit for \u003CAhea,DataA3\u003E hit points."
     },
     {
       "Level": 4,
+      "Pointer": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_18742"
+      "Value": "Heals a target friendly non-mechanical wounded unit for \u003CAhea,DataA4\u003E hit points."
     },
     {
       "Id": 1802007905,
       "Type": 3,
-      "Value": "TRIGSTR_17709"
+      "Value": "Q"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_18743"
+      "Value": "Shadow Mend"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_15892"
+      "Value": "Heals a target friendly non-mechanical wounded unit for 35 hit points."
     },
     {
       "Id": 1953653089,

@@ -12,7 +12,7 @@
     },
     {
       "Id": 2020631157,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1635083125,
@@ -22,17 +22,17 @@
     {
       "Id": 1853186933,
       "Type": 3,
-      "Value": "TRIGSTR_18647"
+      "Value": "Initiate, Adept, Master"
     },
     {
       "Id": 1953850229,
       "Type": 3,
-      "Value": "TRIGSTR_20815"
+      "Value": "- Wolf Companion,- Wolf Companion|n- Curse of the Worgen,- Wolf Companion|n- Curse of the Worgen|n- Bloodlust"
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_15883"
+      "Value": "(gilneas)"
     },
     {
       "Id": 1818520949,
@@ -42,27 +42,27 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_6807"
+      "Value": "E"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_13743"
+      "Value": "Worgen Shaman"
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 1.7
+      "Value": ""
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_13763"
+      "Value": "Train Worgen Shaman"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_20920"
+      "Value": "Powerful Worgen Shaman in service of Gilneas.|n|cfff5962dAbilities:|R Wolf Companion, Resistant Skin |n|cfff5962dCan learn:|R Bloodlust, Curse of the Worgen|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Id": 1684960117,
@@ -72,7 +72,7 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1831952757,

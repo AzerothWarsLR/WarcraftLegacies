@@ -7,21 +7,21 @@
   "Modifications": [
     {
       "Id": 2020631157,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 2037408373,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_4896"
+      "Value": "W"
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 9
+      "Value": ""
     },
     {
       "Id": 1935832437,
@@ -31,7 +31,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_216"
+      "Value": "The oilstained crown of Kezan."
     },
     {
       "Id": 1935827317,
@@ -46,12 +46,12 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_3375"
+      "Value": "Kezan Oil Supply"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_3376"
+      "Value": "Build Kezan Oil Supply"
     },
     {
       "Id": 1868786037,
@@ -61,7 +61,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_3496"
+      "Value": " (Goblin)"
     },
     {
       "Id": 1651012469,
@@ -70,20 +70,20 @@
     },
     {
       "Id": 1919705973,
-      "Value": 200
+      "Value": ""
     },
     {
       "Id": 1735156597,
-      "Value": 200
+      "Value": ""
     },
     {
       "Id": 1651270517,
-      "Value": 200
+      "Value": ""
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 1.6
+      "Value": ""
     },
     {
       "Id": 1684960117,

@@ -6,42 +6,42 @@
   "Modifications": [
     {
       "Id": 2037408373,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_511"
+      "Value": "(Scourge)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_620"
+      "Value": "Z"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.85
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_1191"
+      "Value": "Champion of the Scourge"
     },
     {
       "Id": 1869770869,
       "Type": 3,
-      "Value": "TRIGSTR_1192"
+      "Value": "Arthas Menethil"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_1193"
+      "Value": "Summon Arthas Menethil"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_3343"
+      "Value": "Warrior Hero, adept at supporting armies and inflicting magical damage.|n|cfff5962dAbilities:|r Power of Frostmourne|n|cfff5962dCan learn:|R Taste of Death, Death Pact, Unholy Aura, Frost Storm|n|n|cffffcc00Attacks land units.|R"
     }
   ]
 }

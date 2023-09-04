@@ -17,11 +17,11 @@
     },
     {
       "Id": 2020631137,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 2037408353,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1952539489,
@@ -36,7 +36,7 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_9709"
+      "Value": "(Path Research)"
     },
     {
       "Id": 1952540001,
@@ -51,7 +51,7 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_9710"
+      "Value": "Surrender"
     },
     {
       "Id": 1952543841,
@@ -65,15 +65,17 @@
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_9711"
+      "Value": "Surrender"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_9712"
+      "Value": "Give up, transferring control of all of your units, gold, lumber and experience to any remaining allies.|nThis will allow both you and your previous allies to take a Second Chance path if they are available. |n|nThis will also allow your ally to join an alliance."
     }
   ]
 }

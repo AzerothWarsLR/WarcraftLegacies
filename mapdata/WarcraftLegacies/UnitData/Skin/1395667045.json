@@ -8,27 +8,27 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_5686"
+      "Value": "(illidan)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_4739"
+      "Value": "W"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_6756"
+      "Value": "Warriors of the Illidari.|n|cfff5962dAbilities:|r Moon Glaive|n|n|cffffcc00Attacks land units.|r"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_16520"
+      "Value": "Glaive Warrior"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_16523"
+      "Value": "Train Glaive Warrior"
     },
     {
       "Id": 1818520949,
@@ -48,22 +48,22 @@
     {
       "Id": 1751675765,
       "Type": 1,
-      "Value": 100
+      "Value": ""
     },
     {
       "Id": 2003334005,
       "Type": 1,
-      "Value": 100
+      "Value": ""
     },
     {
       "Id": 2020111221,
       "Type": 1,
-      "Value": 45
+      "Value": ""
     },
     {
       "Id": 2036888437,
       "Type": 1,
-      "Value": 45
+      "Value": ""
     }
   ]
 }

@@ -7,29 +7,31 @@
   "Modifications": [
     {
       "Id": 2037408353,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_18009"
+      "Value": "(Totem)"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_18010"
+      "Value": "The Bone Totem attack jumps to 3 additional units."
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_18011"
+      "Value": "Bouncing Attack"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_18012"
+      "Value": "Bouncing Attack"
     }
   ]
 }

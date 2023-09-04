@@ -13,7 +13,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_18854"
+      "Value": " (Ragnaros Tower)"
     },
     {
       "Id": 1818520949,
@@ -23,12 +23,12 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_11059"
+      "Value": "Z"
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1935832437,
@@ -38,7 +38,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_18855"
+      "Value": "Archer filled tower defense.|n|cfff5962dUpgrades into:|R Improved Guard Tower|n|n|cffffcc00Attacks land and air units.|r"
     }
   ]
 }

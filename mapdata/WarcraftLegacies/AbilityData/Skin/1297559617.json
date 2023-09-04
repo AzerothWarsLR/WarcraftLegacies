@@ -13,12 +13,12 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_18901"
+      "Value": "(Cairne, Mannoroth)"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_617"
+      "Value": "War Stomp"
     },
     {
       "Id": 1918988897,
@@ -28,60 +28,68 @@
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_624"
+      "Value": "Learn War Stomp - [|cffffcc00Level %d|r]."
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_628"
+      "Value": "Slams the ground, stunning and damaging nearby enemy land units. |n|n|cffffcc00Level 1|r - \u003CAOw2,DataA1\u003E damage, \u003CAOw2,Dur1\u003E second stun. |n|cffffcc00Level 2|r - \u003CAOw2,DataA2\u003E damage, \u003CAOw2,Dur2\u003E second stun. |n|cffffcc00Level 3|r - \u003CAOw2,DataA3\u003E damage, \u003CAOw2,Dur3\u003E second stun. |n|cffffcc00Level 4|r - \u003CAOw2,DataA4\u003E damage, \u003CAOw2,Dur4\u003E second stun."
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_7310"
+      "Value": "War Stomp - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_7311"
+      "Value": "War Stomp - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_7312"
+      "Value": "War Stomp - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
+      "Pointer": 4,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_7313"
+      "Value": "War Stomp - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_7314"
+      "Value": "Slams the ground, dealing \u003CAOw2,DataA1\u003E damage to nearby enemy land units and stunning them for \u003CAOw2,Dur1\u003E seconds."
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_7315"
+      "Value": "Slams the ground, dealing \u003CAOw2,DataA2\u003E damage to nearby enemy land units and stunning them for \u003CAOw2,Dur2\u003E seconds."
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_7316"
+      "Value": "Slams the ground, dealing \u003CAOw2,DataA3\u003E damage to nearby enemy land units and stunning them for \u003CAOw2,Dur3\u003E seconds."
     },
     {
       "Level": 4,
+      "Pointer": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_7317"
+      "Value": "Slams the ground, dealing \u003CAOw2,DataA4\u003E damage to nearby enemy land units and stunning them for \u003CAOw2,Dur4\u003E seconds."
     }
   ]
 }

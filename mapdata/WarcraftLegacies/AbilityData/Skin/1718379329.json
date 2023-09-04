@@ -7,18 +7,19 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_5197"
+      "Value": "(Quel\u0027Thalas-Dragonhawk Rider)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_6745"
+      "Value": "W"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_5199"
+      "Value": "Cast on enemy buildings with ranged attacks to stop the buildings from attacking. |n|cffffcc00Lasts \u003CAclf,Dur1\u003E seconds."
     }
   ]
 }

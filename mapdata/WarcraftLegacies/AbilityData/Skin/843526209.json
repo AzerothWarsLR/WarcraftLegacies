@@ -13,24 +13,26 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_9504"
+      "Value": "(Kul\u0027tiras - Tidesage)"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_9543"
+      "Value": "Summon Sea Elemental"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_9544"
+      "Value": "Summon Sea Elemental"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_9545"
+      "Value": "Summons a sea elemental to attack the caster\u0027s enemies. Has \u003Cn03V,realHP\u003E hit points and deals \u003Cn03V,mindmg1\u003E - \u003Cn03V,maxdmg1\u003E damage. |nLasts \u003CA0G2,Dur1\u003E seconds. |n|n|cffffcc00Attacks land and air units.|r"
     }
   ]
 }

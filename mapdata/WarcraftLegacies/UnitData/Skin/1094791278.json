@@ -12,12 +12,12 @@
     },
     {
       "Id": 2037408373,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_20152"
+      "Value": " (Fel Horde)"
     },
     {
       "Id": 1818520949,
@@ -27,17 +27,17 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_3931"
+      "Value": "X"
     },
     {
       "Id": 2054188149,
       "Type": 2,
-      "Value": 222
+      "Value": ""
     },
     {
       "Id": 828468597,
       "Type": 2,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1831952757,
@@ -47,17 +47,17 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.65
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_10875"
+      "Value": "Control Point Defender"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_18482"
+      "Value": "Upgrade to Flame Pillar"
     },
     {
       "Id": 1935832437,
@@ -67,7 +67,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_1839"
+      "Value": "Fires massive boulders upon its foes.|n|cfff5962dUpgrades Into:|R Improved Flame Pillar|n|n|cffffcc00Attacks land units.|r"
     }
   ]
 }

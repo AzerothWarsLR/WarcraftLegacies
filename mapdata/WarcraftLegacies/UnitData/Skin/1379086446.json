@@ -8,12 +8,12 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_7917"
+      "Value": "Dalaran Shield Level 2"
     },
     {
       "Id": 1868786037,
@@ -27,15 +27,15 @@
     },
     {
       "Id": 1651270517,
-      "Value": 130
+      "Value": ""
     },
     {
       "Id": 1735156597,
-      "Value": 130
+      "Value": ""
     },
     {
       "Id": 1919705973,
-      "Value": 130
+      "Value": ""
     }
   ]
 }

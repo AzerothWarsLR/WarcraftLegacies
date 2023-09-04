@@ -18,12 +18,12 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_6889"
+      "Value": "(Scourge-Ner\u0027zhul) (Thoras Trollbane) (hodir)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_8303"
+      "Value": "Q"
     },
     {
       "Id": 1952542049,
@@ -33,7 +33,7 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_6891"
+      "Value": "Breath of Frost"
     },
     {
       "Id": 1918988897,
@@ -43,65 +43,73 @@
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_8341"
+      "Value": "Q"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_6893"
+      "Value": "Learn Breath of Frost (|cffffcc00Q|r) - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_6894"
+      "Value": "Breathes a cone of frost at enemy units which deals damage. |n|n|cffffcc00Level 1|r - 60 damage. |n|cffffcc00Level 2|r - 105 damage. |n|cffffcc00Level 3|r - 150 damage. |n|cffffcc00Level 4|r - 195 damage."
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_6895"
+      "Value": "Breath of Frost (|cffffd700Q|r) - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_6896"
+      "Value": "Breath of Frost (|cffffd700Q|r) - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_6897"
+      "Value": "Breath of Frost (|cffffd700Q|r) - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
+      "Pointer": 4,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_6898"
+      "Value": "Breath of Frost (|cffffd700Q|r) - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_6899"
+      "Value": "Breathes a cone of fire at enemy units, dealing 60 damage."
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_6900"
+      "Value": "Breathes a cone of fire at enemy units, dealing 105 damage."
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_6901"
+      "Value": "Breathes a cone of fire at enemy units, dealing 150 damage."
     },
     {
       "Level": 4,
+      "Pointer": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_6902"
+      "Value": "Breathes a cone of fire at enemy units, dealing 195 damage."
     }
   ]
 }

@@ -7,12 +7,12 @@
   "Modifications": [
     {
       "Id": 2020631157,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_2248"
+      "Value": "S"
     },
     {
       "Id": 1935832437,
@@ -22,12 +22,12 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_2813"
+      "Value": "Dark arts training structure.|n|cfff5962dTrains:|R Arcane Mages, Banshee, Elder Banshee|n|cfff5962dResearches:|R Arcane Mage Training, Banshee Training"
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_20007"
+      "Value": "(Forsaken Magic)"
     },
     {
       "Id": 1818520949,
@@ -42,12 +42,12 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_18158"
+      "Value": "Forbidden Archive"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_18171"
+      "Value": "Summon Forbidden Archive"
     }
   ]
 }

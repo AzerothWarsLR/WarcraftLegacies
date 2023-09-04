@@ -8,18 +8,19 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_5408"
+      "Value": "(Khadgar)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_14866"
+      "Value": "Q"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_5629"
+      "Value": "Blasts enemy units with a wave of frost that slows units\u0027 movement and attack rate for \u003CA0LF,Dur1\u003E seconds."
     }
   ]
 }

@@ -12,57 +12,63 @@
     },
     {
       "Id": 2020631137,
-      "Value": 3
+      "Value": ""
     },
     {
       "Id": 2037408353,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_19498"
+      "Value": "(Stormwind - Knights, Lordaeron - Knights)"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_9771"
+      "Value": "War Plating"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_12357"
+      "Value": "War Plating - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_12358"
+      "Value": "War Plating - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_12359"
+      "Value": "War Plating - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_12360"
+      "Value": "Attacks against this unit have a \u003CA02Y,DataA1\u003E% to have their damage reduced by \u003CA02Y,DataC1\u003E. Attacks cannot be reduced below \u003CA02Y,DataB1\u003E damage."
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_12361"
+      "Value": "Attacks against this unit have a \u003CA02Y,DataA2\u003E% to have their damage reduced by \u003CA02Y,DataC2\u003E. Attacks cannot be reduced below \u003CA02Y,DataB2\u003E damage."
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_12362"
+      "Value": "Attacks against this unit have a \u003CA02Y,DataA3\u003E% to have their damage reduced by \u003CA02Y,DataC3\u003E. Attacks cannot be reduced below \u003CA02Y,DataB3\u003E damage."
     }
   ]
 }

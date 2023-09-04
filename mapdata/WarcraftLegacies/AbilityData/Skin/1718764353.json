@@ -11,23 +11,24 @@
     },
     {
       "Id": 2020631137,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_6303"
+      "Value": "(Doom Guard)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_7900"
+      "Value": "Q"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_4082"
+      "Value": "Calls down waves of fire that damage units in an area. Each wave deals 25 damage. |nLasts for \u003CACrf,DataA1\u003E waves."
     }
   ]
 }

@@ -8,18 +8,19 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_17783"
+      "Value": "(Draenei)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_16410"
+      "Value": "W"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_17922"
+      "Value": "Removes all buffs from units in a target area. |n|cffffcc00Deals 250 damage to summoned units.|r"
     }
   ]
 }

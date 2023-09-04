@@ -12,17 +12,17 @@
     },
     {
       "Id": 2020631137,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_19150"
+      "Value": "(Draenei)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_17058"
+      "Value": "E"
     },
     {
       "Id": 1952542049,
@@ -32,7 +32,7 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_10530"
+      "Value": "Spirit Orb"
     },
     {
       "Id": 1918988897,
@@ -41,70 +41,78 @@
     },
     {
       "Id": 2020635233,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_17164"
+      "Value": "E"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_10532"
+      "Value": "Learn Spirit Orb - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_10534"
+      "Value": "Adds bonus damage to the caster\u0027s attack.|n |n|cffffcc00Level 1|r - 25 damage. |n|cffffcc00Level 2|r - 40 damage. |n|cffffcc00Level 3|r - 55 damage. |n|cffffcc00Level 4|r - 70 damage."
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_10535"
+      "Value": "Spirit Orb - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_10536"
+      "Value": "Spirit Orb - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_10537"
+      "Value": "Spirit Orb - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
+      "Pointer": 4,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_10538"
+      "Value": "Spirit Orb - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_13060"
+      "Value": "Adds \u003CA0WH,DataA1\u003E bonus damage to the caster\u0027s attack."
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_13631"
+      "Value": "Adds \u003CA0WH,DataA2\u003E bonus damage to the caster\u0027s attack."
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_13632"
+      "Value": "Adds \u003CA0WH,DataA3\u003E bonus damage to the caster\u0027s attack."
     },
     {
       "Level": 4,
+      "Pointer": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_17951"
+      "Value": "Adds \u003CA0WH,DataA4\u003E bonus damage to the caster\u0027s attack."
     },
     {
       "Id": 1918989665,
@@ -113,12 +121,12 @@
     },
     {
       "Id": 2019718497,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1802007905,
       "Type": 3,
-      "Value": "TRIGSTR_17219"
+      "Value": "E"
     }
   ]
 }

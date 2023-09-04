@@ -7,17 +7,17 @@
   "Modifications": [
     {
       "Id": 2020631157,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19961"
+      "Value": "(Zandalari T3)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_4256"
+      "Value": "C"
     },
     {
       "Id": 1935832437,
@@ -27,7 +27,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_9242"
+      "Value": "Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Gatherer and Boneseer|n"
     },
     {
       "Id": 1818520949,
@@ -37,7 +37,7 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.9
+      "Value": ""
     },
     {
       "Id": 1868786037,

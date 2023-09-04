@@ -13,7 +13,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19727"
+      "Value": " (Ironforge Tower)"
     },
     {
       "Id": 1818520949,
@@ -23,17 +23,17 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_1831"
+      "Value": "Z"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.85
+      "Value": ""
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1935832437,
@@ -43,7 +43,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_397"
+      "Value": "Archer filled tower defense.|n|cfff5962dUpgrades into:|R Improved Guard Tower|n|n|cffffcc00Attacks land and air units.|r"
     }
   ]
 }

@@ -13,16 +13,16 @@
     {
       "Id": 1953980789,
       "Type": 3,
-      "Value": "TRIGSTR_4015"
+      "Value": "Revive Ancient Guardian"
     },
     {
       "Id": 2037408373,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_15821"
+      "Value": "(Gilneas)"
     },
     {
       "Id": 1818520949,
@@ -32,12 +32,12 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_2392"
+      "Value": "A"
     },
     {
       "Id": 828468597,
       "Type": 2,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1831952757,
@@ -47,27 +47,27 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 1.8
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_9158"
+      "Value": "Ancient Guardian"
     },
     {
       "Id": 1869770869,
       "Type": 3,
-      "Value": "TRIGSTR_12000"
+      "Value": "Goldrinn"
     },
     {
       "Id": 1919972469,
       "Type": 3,
-      "Value": "TRIGSTR_12003"
+      "Value": "Revive Ancient Guardian"
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 3
+      "Value": ""
     },
     {
       "Id": 1769173877,
@@ -77,12 +77,12 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_15742"
+      "Value": "Summon Goldrinn"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_16708"
+      "Value": "Warrior hero, adept at melee combat and bolstering nearby allies.|n|cfff5962dAbilities:|r Critical Strike|n|cfff5962dCan Learn:|R White Wolf\u0027s Fury, Goldrinn\u0027s Howl, Vampiric Aura, Reincarnation|n|n|cffffcc00Attacks land units.|R"
     },
     {
       "Id": 1684960117,

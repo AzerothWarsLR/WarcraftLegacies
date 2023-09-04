@@ -7,17 +7,17 @@
   "Modifications": [
     {
       "Id": 2020631137,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_8622"
+      "Value": "(Teal - Demolishers)"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_8623"
+      "Value": "Demonic Construction"
     },
     {
       "Id": 1952543841,
@@ -26,15 +26,17 @@
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_8624"
+      "Value": "Demonic Construction"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_8625"
+      "Value": "Allows a mechanical unit to slowly regenerate health and move faster."
     }
   ]
 }

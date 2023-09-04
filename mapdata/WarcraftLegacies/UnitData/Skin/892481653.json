@@ -18,7 +18,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_9311"
+      "Value": "(nexus)"
     },
     {
       "Id": 1818520949,
@@ -28,17 +28,17 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_4819"
+      "Value": "Q"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.8
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_17140"
+      "Value": "Elementalist"
     },
     {
       "Id": 1634759541,
@@ -48,12 +48,12 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_17141"
+      "Value": "Train Elementalist"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_9858"
+      "Value": "Mage warrior of the Draconians.|n|cfff5962dAbilities:|R Blizzard, Frost Armor, Mana Shield|n|n|cff99b4d1Can only train 12.|r|n|cffffcc00Attacks land units.|r"
     },
     {
       "Id": 1684960117,
@@ -62,12 +62,12 @@
     },
     {
       "Id": 2020631157,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 1.5
+      "Value": ""
     }
   ]
 }

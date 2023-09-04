@@ -6,67 +6,77 @@
   "Modifications": [
     {
       "Id": 2020631143,
-      "Value": 0
+      "Value": ""
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1718840935,
       "Type": 3,
-      "Value": "TRIGSTR_14103"
+      "Value": "(Brown Research)"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_20855"
+      "Value": "Q"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_20863"
+      "Value": "Q"
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_20864"
+      "Value": "Q"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_14107"
+      "Value": "Upgrade [|cffffcc00Q|r] - Strength of the Wild"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_14108"
+      "Value": "Upgrade [|cffffcc00Q|r] - Improved Strength of the Wild"
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_14109"
+      "Value": "Upgrade [|cffffcc00Q|r] - Advanced Strength of the Wild"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "TRIGSTR_14110"
+      "Value": "Increases the damage of Keepers of the Grove, Dryads, Druid of the Claw, Mountain Giants, Furbolgs, Faerie Dragons, Chimaera, Cenarius\u0027 summons, Ancient Protectors, and Broll Bearmantle."
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 828536167,
       "Type": 3,
-      "Value": "TRIGSTR_14111"
+      "Value": "Further increases the damage of Keepers of the Grove, Dryads, Druid of the Claw, Mountain Giants, Furbolgs, Faerie Dragons, Chimaera, Cenarius\u0027 summons, Ancient Proectors, and Broll Bearmantle."
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 828536167,
       "Type": 3,
-      "Value": "TRIGSTR_14112"
+      "Value": "Further increases the damage of Keepers of the Grove, Dryads, Druid of the Claw, Mountain Giants, Furbolgs, Faerie Dragons, Chimaera, Cenarius\u0027 summons, Ancient Proectors, and Broll Bearmantle."
     }
   ]
 }

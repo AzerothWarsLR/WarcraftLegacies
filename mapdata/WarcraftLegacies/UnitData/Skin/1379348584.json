@@ -8,7 +8,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19898"
+      "Value": " (Kul Tiras Tower)"
     },
     {
       "Id": 1818520949,
@@ -18,17 +18,17 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_2758"
+      "Value": "Z"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.925
+      "Value": ""
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1935832437,
@@ -38,7 +38,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_14636"
+      "Value": "Observation tower.|n|r|cfff5962dUpgrades into:|R Guard Tower, Cannon Tower"
     },
     {
       "Id": 1868786037,

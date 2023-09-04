@@ -12,42 +12,42 @@
     {
       "Id": 1953980789,
       "Type": 3,
-      "Value": "TRIGSTR_1274"
+      "Value": "Revive Ranger-General"
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_1010"
+      "Value": "(Quel\u0027Thalas)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_1177"
+      "Value": "Q"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_1277"
+      "Value": "Ranger-General of Silvermoon"
     },
     {
       "Id": 1919972469,
       "Type": 3,
-      "Value": "TRIGSTR_1278"
+      "Value": "Revive Ranger-General"
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 1.1
+      "Value": ""
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_11786"
+      "Value": "Summon Sylvanas"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_4320"
+      "Value": "Cuning Hero, adept at supporting armies and assasinating heroes.|n|cfff5962dAbilities:|r Wind Walk|n|cfff5962dCan Learn:|R Silence, Aimed Shot, Trueshot Aura, Multi Shot|n|n|cffffcc00Attacks land and air units.|R"
     }
   ]
 }

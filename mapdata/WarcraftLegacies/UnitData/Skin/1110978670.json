@@ -7,22 +7,22 @@
   "Modifications": [
     {
       "Id": 2020631157,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_16600"
+      "Value": "(Tolvir Specialist)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_4234"
+      "Value": "D"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.8
+      "Value": ""
     },
     {
       "Id": 1935832437,
@@ -32,7 +32,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_16741"
+      "Value": "A shrine to attract the nightmarish flying monsters of the Naga.|n|r|cfff5962dTrains:|R Couatl, Tidal Terror"
     },
     {
       "Id": 1768841589,

@@ -6,21 +6,25 @@
   "Modifications": [
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1935895905,
       "Value": 100
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 1935895905,
       "Value": 115
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 1935895905,
       "Value": 130
     },
     {
       "Level": 4,
+      "Pointer": 4,
       "Id": 1935895905,
       "Value": 145
     },
@@ -32,45 +36,45 @@
     },
     {
       "Level": 2,
-      "Pointer": 1,
+      "Pointer": 2,
       "Id": 830104136,
       "Value": 7
     },
     {
       "Level": 3,
-      "Pointer": 1,
+      "Pointer": 3,
       "Id": 830104136,
       "Value": 9
     },
     {
       "Level": 4,
-      "Pointer": 1,
+      "Pointer": 4,
       "Id": 830104136,
       "Value": 11
     },
     {
       "Level": 4,
-      "Pointer": 3,
+      "Pointer": 4,
       "Id": 863658568,
       "Value": 12
     },
     {
       "Level": 4,
-      "Pointer": 5,
+      "Pointer": 4,
       "Id": 897213000,
       "Type": 2,
       "Value": 20
     },
     {
       "Level": 1,
-      "Pointer": 6,
+      "Pointer": 1,
       "Id": 913990216,
       "Type": 2,
       "Value": 500
     },
     {
       "Level": 2,
-      "Pointer": 6,
+      "Pointer": 2,
       "Id": 913990216,
       "Type": 2,
       "Value": 700
@@ -86,28 +90,28 @@
     },
     {
       "Level": 3,
-      "Pointer": 6,
+      "Pointer": 3,
       "Id": 913990216,
       "Type": 2,
       "Value": 900
     },
     {
       "Level": 4,
-      "Pointer": 6,
+      "Pointer": 4,
       "Id": 913990216,
       "Type": 2,
       "Value": 1100
     },
     {
       "Level": 4,
-      "Pointer": 2,
+      "Pointer": 4,
       "Id": 846881352,
       "Type": 2,
       "Value": 65
     },
     {
       "Level": 1,
-      "Pointer": 2,
+      "Pointer": 1,
       "Id": 846881352,
       "Type": 2,
       "Value": 35
@@ -121,7 +125,7 @@
     },
     {
       "Level": 3,
-      "Pointer": 2,
+      "Pointer": 3,
       "Id": 846881352,
       "Type": 2,
       "Value": 55

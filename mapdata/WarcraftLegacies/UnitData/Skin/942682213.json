@@ -13,7 +13,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_2146"
+      "Value": "(Quel\u0027Thalas)"
     },
     {
       "Id": 1818520949,
@@ -23,7 +23,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_3198"
+      "Value": "E"
     },
     {
       "Id": 1831952757,
@@ -33,31 +33,31 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.85
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_3679"
+      "Value": "Ballista"
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1650684789,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_3680"
+      "Value": "Train Ballista"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_3681"
+      "Value": "Long-range percision siege weaponry.|n|n|cff99b4d1Can only build 6.|r|n|cffffcc00Attacks land units and trees.|r"
     }
   ]
 }

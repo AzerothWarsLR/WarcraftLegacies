@@ -8,30 +8,30 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_2450"
+      "Value": "(Legion-Archimond-Level 3)"
     },
     {
       "Id": 1735156597,
-      "Value": 50
+      "Value": ""
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 1.15
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_2451"
+      "Value": "Gargantuan Abyssal"
     },
     {
       "Id": 1919705973,
-      "Value": 50
+      "Value": ""
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 3
+      "Value": ""
     }
   ]
 }

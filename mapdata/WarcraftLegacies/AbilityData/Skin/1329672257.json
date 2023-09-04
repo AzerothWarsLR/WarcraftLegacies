@@ -13,12 +13,12 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_10644"
+      "Value": "(Blue - Warlock)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_11477"
+      "Value": "Q"
     },
     {
       "Id": 1952542049,
@@ -28,19 +28,21 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_10664"
+      "Value": "Shadow Bolt"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_12004"
+      "Value": "Shadow Bolt"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_18082"
+      "Value": "Hurls a shadowy bolt that stuns a target enemy unit for 3 seconds, dealing 60 damage. Lasts 0.25 seconds on heroes."
     }
   ]
 }

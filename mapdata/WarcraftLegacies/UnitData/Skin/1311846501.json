@@ -23,7 +23,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_1793"
+      "Value": "(Warsong)"
     },
     {
       "Id": 1818520949,
@@ -33,17 +33,17 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_5478"
+      "Value": "E"
     },
     {
       "Id": 2054188149,
       "Type": 2,
-      "Value": 100
+      "Value": ""
     },
     {
       "Id": 828468597,
       "Type": 2,
-      "Value": 0.25
+      "Value": ""
     },
     {
       "Id": 1831952757,
@@ -53,27 +53,27 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.9
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_15493"
+      "Value": "Azerite Siege Engine"
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 1.9
+      "Value": ""
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_17394"
+      "Value": "Train [|cffffcc00W|r] - Druid of the Claw"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_17395"
+      "Value": "Heavy melee unit with Roar, Animal Fury and Mighty Bash. Can learn Ferocious Strikes."
     },
     {
       "Id": 1684960117,
@@ -82,7 +82,7 @@
     },
     {
       "Id": 2020631157,
-      "Value": 2
+      "Value": ""
     }
   ]
 }

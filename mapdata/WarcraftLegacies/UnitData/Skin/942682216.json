@@ -7,27 +7,27 @@
   "Modifications": [
     {
       "Id": 2020631157,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_2662"
+      "Value": "Z"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 1.1
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_3560"
+      "Value": "Improved Arcane Tower"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_3561"
+      "Value": "Upgrade to (|cffffcc00Z|r) Improved Arcane Tower"
     },
     {
       "Id": 1935832437,

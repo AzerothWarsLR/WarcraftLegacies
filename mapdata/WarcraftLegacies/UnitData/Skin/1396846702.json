@@ -8,7 +8,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_4233"
+      "Value": "\u795E\u5DF2\u5815\u843D - Tier 4 Patron"
     },
     {
       "Id": 1818520949,
@@ -23,12 +23,12 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_6170"
+      "Value": "Patrons Tier 4 1"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.9
+      "Value": ""
     }
   ]
 }

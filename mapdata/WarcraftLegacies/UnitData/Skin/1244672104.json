@@ -7,12 +7,12 @@
   "Modifications": [
     {
       "Id": 2020631157,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_2752"
+      "Value": "(stormwind)"
     },
     {
       "Id": 1818520949,
@@ -22,27 +22,27 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_3103"
+      "Value": "Q"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.85
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_3518"
+      "Value": "Clergyman"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_3519"
+      "Value": "Train Clergyman"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_3520"
+      "Value": "Missionary of Quel\u0027Thalas to the Southern Kingdoms.|n|cfff5962dAbilities:|R Heal|n|cfff5962dCan Learn:|R Dispel Magic, Inner Fire|n|n|cffffcc00Attacks land and air units.|R"
     },
     {
       "Id": 1868786037,

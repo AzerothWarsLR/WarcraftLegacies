@@ -7,29 +7,31 @@
   "Modifications": [
     {
       "Id": 2020631137,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_11495"
+      "Value": "(Dread Lord)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_12432"
+      "Value": "E"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_8417"
+      "Value": "Howl of Terror"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_11498"
+      "Value": "Emits a terrifying howl that reduces nearby enemy units\u0027 attack damage by 25% for \u003CAcht,Dur1\u003E seconds."
     }
   ]
 }

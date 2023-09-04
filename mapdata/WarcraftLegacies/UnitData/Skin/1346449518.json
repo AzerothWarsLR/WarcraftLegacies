@@ -17,16 +17,16 @@
     },
     {
       "Id": 2020631157,
-      "Value": 3
+      "Value": ""
     },
     {
       "Id": 2037408373,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_1440"
+      "Value": "(Fel Horde)"
     },
     {
       "Id": 1818520949,
@@ -36,22 +36,22 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_983"
+      "Value": "F"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.5
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_1825"
+      "Value": "Focal Demon Gate"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_1826"
+      "Value": "Build Focal Demon Gate"
     },
     {
       "Id": 1935832437,
@@ -61,7 +61,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_1827"
+      "Value": "Unique gateway that causes units spawned from ordinary Demon Gates to appear at its location instead.|n|n|cff99b4d1Can only control 1. Building a second structure will destroy the older one.|r"
     }
   ]
 }

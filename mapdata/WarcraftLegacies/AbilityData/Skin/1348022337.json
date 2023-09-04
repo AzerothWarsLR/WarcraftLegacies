@@ -13,12 +13,12 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_7010"
+      "Value": "(light blue)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_8426"
+      "Value": "Q"
     },
     {
       "Id": 1952542049,
@@ -28,19 +28,21 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_7012"
+      "Value": "Silencing Glaive"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_7013"
+      "Value": "Silencing Glaive |cffffcc00Q|r "
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_7014"
+      "Value": "Throws a Magical Glaive at an enemy unit which cause 15 damage per second, prevent the casting of spells, and reduce attack damage by 50%.|nLasts 16 seconds. (4 for heroes)"
     }
   ]
 }

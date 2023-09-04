@@ -12,16 +12,16 @@
     },
     {
       "Id": 2020631157,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 2037408373,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_18735"
+      "Value": " (Ragnaros Barracks)"
     },
     {
       "Id": 1818520949,
@@ -31,17 +31,17 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_3121"
+      "Value": "A"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.9
+      "Value": ""
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 4
+      "Value": ""
     },
     {
       "Id": 1935832437,
@@ -51,17 +51,17 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_18962"
+      "Value": "Primary troop production building.|n|cfff5962dTrains:|R Anvilrage Gaurdsman, Irondrake, Bear Rider.|n|cfff5962dResearches:|R Armour Penetration Rounds, Flare, Fragmentation Shards, Long Rifles Mithral Plated Armour"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_18978"
+      "Value": "Hall of Tyr"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_18979"
+      "Value": "Build Hall of Tyr"
     }
   ]
 }

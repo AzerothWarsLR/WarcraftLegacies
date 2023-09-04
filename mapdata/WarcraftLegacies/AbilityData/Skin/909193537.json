@@ -8,12 +8,12 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_6686"
+      "Value": "(Legion nexus ability)"
     },
     {
       "Id": 1667329377,
       "Type": 2,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1952542049,
@@ -23,19 +23,21 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_6687"
+      "Value": "Legion Nexus Defense"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_6688"
+      "Value": "Legion Nexus Defense"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_6689"
+      "Value": "Fires down a volley of chemical rockets, lighting nearby enemies on fire."
     }
   ]
 }

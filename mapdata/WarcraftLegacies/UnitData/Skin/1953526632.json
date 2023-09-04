@@ -6,32 +6,32 @@
   "Modifications": [
     {
       "Id": 2020631157,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_916"
+      "Value": "(Quel\u0027Thalas)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_871"
+      "Value": "Q"
     },
     {
       "Id": 828468597,
       "Type": 2,
-      "Value": 0.2
+      "Value": ""
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.7
+      "Value": ""
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_16652"
+      "Value": "Elite warrior trained to destroy spellcasters.|n|cfff5962dAbilities:|R Spell Steal, Feedback, Spell Resistance|n|cfff5962dCan learn:|R Control Magic|n|r|n|cffffcc00Attacks land units.|r"
     }
   ]
 }

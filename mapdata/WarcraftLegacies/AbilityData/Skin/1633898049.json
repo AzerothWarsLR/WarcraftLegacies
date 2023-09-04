@@ -6,56 +6,61 @@
   "Modifications": [
     {
       "Id": 2020631137,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_5832"
+      "Value": "(true Horde Varok)"
     },
     {
       "Id": 2020635233,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_7737"
+      "Value": "W"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_5834"
+      "Value": "The Hero strikes with such force that he damages multiple enemies with his attack. |n|n|cffffcc00Level 1|r - 10% damage is splash. |n|cffffcc00Level 2|r - 20% damage is splash. |n|cffffcc00Level 3|r - 30% damage is splash. |n|cffffcc00Level 4|r - 40% damage is splash."
     },
     {
       "Level": 4,
+      "Pointer": 4,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_5835"
+      "Value": "Cleaving Attack - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_5836"
+      "Value": "The Hero strikes with such force that 15% of his damage strikes through to enemies near the primary attacked unit."
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_5837"
+      "Value": "The Hero strikes with such force that 25% of his damage strikes through to enemies near the primary attacked unit."
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_5838"
+      "Value": "The Hero strikes with such force that 35% of his damage strikes through to enemies near the primary attacked unit."
     },
     {
       "Level": 4,
+      "Pointer": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_5839"
+      "Value": "The Hero strikes with such force that 45% of his damage strikes through to enemies near the primary attacked unit."
     }
   ]
 }

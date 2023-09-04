@@ -18,27 +18,27 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_2091"
+      "Value": "Summon Nether Pit"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_20566"
+      "Value": "Summoning site for minor demons.|r|n|cff99b4d1Can only build 2 before the Legion has been summoned. 12 post-summon.|n|cfff5962dTrains:|R Fel Guard, Burning Archer, Infernal|n|cfff5962dResearches:|R War Plating"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_2037"
+      "Value": "A"
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19881"
+      "Value": "(Legion Barracks)"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_2093"
+      "Value": "Nether Pit"
     },
     {
       "Id": 1818520949,
@@ -52,12 +52,12 @@
     },
     {
       "Id": 2037408373,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 3.7
+      "Value": ""
     },
     {
       "Id": 1684960117,

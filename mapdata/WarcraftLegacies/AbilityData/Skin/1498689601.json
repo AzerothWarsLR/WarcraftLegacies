@@ -13,16 +13,18 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_7700"
+      "Value": "Ion_Canon(dummy height trick)"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": ""
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": ""
@@ -34,12 +36,14 @@
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829715809,
       "Type": 3,
       "Value": ""
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829781345,
       "Type": 3,
       "Value": ""

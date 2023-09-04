@@ -12,12 +12,12 @@
     },
     {
       "Id": 2020631157,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_7709"
+      "Value": "(Vrykul"
     },
     {
       "Id": 1818520949,
@@ -27,32 +27,32 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_4804"
+      "Value": "W"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 1.3
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_7710"
+      "Value": "Vrykul Berserk"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_7711"
+      "Value": "Train Vrykul Berserk"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_7745"
+      "Value": "Elite Warriors of the Vrykul.|n|cfff5962dAbilities:|R Charge, Cleaving Attack, Heavy Armor, Combat Experience|n |n|cff99b4d1Can only train 12.|r|n|cffffcc00Attacks land units.|r"
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 1.6
+      "Value": ""
     },
     {
       "Id": 1684960117,

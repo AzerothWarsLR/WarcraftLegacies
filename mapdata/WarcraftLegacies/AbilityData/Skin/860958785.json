@@ -13,7 +13,7 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_8244"
+      "Value": "(Teal - Zuluhed Ult)"
     },
     {
       "Id": 1952540001,
@@ -23,7 +23,7 @@
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_9215"
+      "Value": "Q"
     },
     {
       "Id": 1734962273,
@@ -38,21 +38,21 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_8270"
+      "Value": "Chain Explosion"
     },
     {
       "Id": 2020635233,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_9322"
+      "Value": "Q"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_8272"
+      "Value": "Hurls a bolt of damaging lightning at a target enemy that jumps to nearby enemies. Each jump deals less damage. |n|n|cffffcc00Level 1|r - \u003CAOcl,DataA1\u003E damage, jumps \u003CAOcl,DataB1\u003E times. |n|cffffcc00Level 2|r - \u003CAOcl,DataA2\u003E damage, jumps \u003CAOcl,DataB2\u003E times. |n|cffffcc00Level 3|r - \u003CAOcl,DataA3\u003E damage, jumps \u003CAOcl,DataB3\u003E times.|n|cffffcc00Level 4|r - \u003CAOcl,DataA4\u003E damage, jumps \u003CAOcl,DataB4\u003E times."
     },
     {
       "Id": 1952543585,
@@ -66,15 +66,17 @@
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_8273"
+      "Value": "Chain Explosion (|cffffcc00Q|r)"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_8274"
+      "Value": "Sends forth a chain of fire which erupts on each unit hit, causing 200 damage initially and reducing by 10% for each additional target. Hits up to 8 units.|n|n5 Second cooldown."
     }
   ]
 }

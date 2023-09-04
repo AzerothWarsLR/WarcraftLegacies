@@ -7,21 +7,21 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_804"
+      "Value": "(Warsong)"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_17049"
+      "Value": "Warrior Hero, exceptional at debuffing enemies and healing allies.|n|cfff5962dAbilities:|r Drunken Brawler|n|cfff5962dCan learn:|R Breath of Fire, Drunken haze, Rounds for Everyone, Storm Earth and Fire|n|n|cffffcc00Attacks land units.|R"
     },
     {
       "Id": 2037408373,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_1106"
+      "Value": "W"
     }
   ]
 }

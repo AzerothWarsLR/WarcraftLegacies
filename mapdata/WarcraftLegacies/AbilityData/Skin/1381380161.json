@@ -8,18 +8,19 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_3556"
+      "Value": "(Majordomo Executus, Yellow)"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_18879"
+      "Value": "Blazing Aura - [|cffffcc00Level 1|r]"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_3557"
+      "Value": "Blazing Aura"
     },
     {
       "Id": 1952543841,
@@ -43,78 +44,85 @@
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_18880"
+      "Value": "Blazing Aura - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_18936"
+      "Value": "Blazing Aura - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
+      "Pointer": 4,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_18937"
+      "Value": "Blazing Aura - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_16162"
+      "Value": "Deals \u003CA0VR,DataB1\u003E periodic damage to nearby enemy units and reduces their movement speed by \u003CA0VR,DataA1,%\u003E%"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_16259"
+      "Value": "Deals \u003CA0VR,DataB2\u003E periodic damage to nearby enemy units and reduces their movement speed by \u003CA0VR,DataA2,%\u003E%"
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_16371"
+      "Value": "Deals \u003CA0VR,DataB2\u003E periodic damage to nearby enemy units and reduces their movement speed by \u003CA0VR,DataA2,%\u003E%"
     },
     {
       "Level": 4,
+      "Pointer": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_16406"
+      "Value": "Deals \u003CA0VR,DataB2\u003E periodic damage to nearby enemy units and reduces their movement speed by \u003CA0VR,DataA2,%\u003E%"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_16437"
+      "Value": "Learn Blazing Aura - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_18947"
+      "Value": "The hero burns with a withering heat, searing and slowing nearby enemies.|n|n|cffffcc00Level 1|r - Deals \u003CA0VR,DataB1\u003E periodic damage to nearby enemy units and reduces their movement speed by \u003CA0VR,DataA1,%\u003E%|n|cffffcc00Level 2|r - Deals \u003CA0VR,DataB2\u003E periodic damage to nearby enemy units and reduces their movement speed by \u003CA0VR,DataA2,%\u003E%|n|cffffcc00Level 3|r - Deals \u003CA0VR,DataB3\u003E periodic damage to nearby enemy units and reduces their movement speed by \u003CA0VR,DataA3,%\u003E%|n|cffffcc00Level 4|r - Deals \u003CA0VR,DataB4\u003E periodic damage to nearby enemy units and reduces their movement speed by \u003CA0VR,DataA4,%\u003E%"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_16658"
+      "Value": "W"
     },
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_16831"
+      "Value": "W"
     },
     {
       "Id": 1802007905,
       "Type": 3,
-      "Value": "TRIGSTR_11771"
+      "Value": "V"
     },
     {
       "Id": 2020631137,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 2020635233,
-      "Value": 1
+      "Value": ""
     }
   ]
 }

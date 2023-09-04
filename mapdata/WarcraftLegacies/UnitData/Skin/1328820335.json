@@ -8,32 +8,32 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_16561"
+      "Value": "(goblin"
     },
     {
       "Id": 1751675765,
       "Type": 1,
-      "Value": 80
+      "Value": ""
     },
     {
       "Id": 2003334005,
       "Type": 1,
-      "Value": 80
+      "Value": ""
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_3879"
+      "Value": "Mad Scientist of the Goblins.|n|cfff5962dAbilities:|R Explosive Potion|n|cfff5962dCan Learn:|R Dispel Magic, Acid Bomb, Napalm|n|n|cffffcc00Attacks land and air units.|R\r\n"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_16563"
+      "Value": "Alchemist"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_16564"
+      "Value": "Train Alchemist"
     },
     {
       "Id": 1818520949,
@@ -43,12 +43,12 @@
     {
       "Id": 2036888437,
       "Type": 1,
-      "Value": 20
+      "Value": ""
     },
     {
       "Id": 2020111221,
       "Type": 1,
-      "Value": 20
+      "Value": ""
     },
     {
       "Id": 1868786037,
@@ -63,26 +63,26 @@
     {
       "Id": 1953850229,
       "Type": 3,
-      "Value": "TRIGSTR_3967"
+      "Value": "- Explosive Potion,- Explosive Potion|n- Dispel Magic,- Explosive Potion|n- Dispel Magic|n- Acid Bomb,- Explosive Potion|n- Dispel Magic|n- Acid Bomb|n- Napalm"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 1.1
+      "Value": ""
     },
     {
       "Id": 1853186933,
       "Type": 3,
-      "Value": "TRIGSTR_21080"
+      "Value": "Initiate, Adept, Master, Grandmaster"
     },
     {
       "Id": 2020631157,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_4771"
+      "Value": "Q"
     },
     {
       "Id": 1831952757,

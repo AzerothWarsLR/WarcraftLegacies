@@ -12,12 +12,12 @@
     },
     {
       "Id": 2020631137,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_12982"
+      "Value": "(Yellow Tinkers)"
     },
     {
       "Id": 1952540001,
@@ -27,24 +27,26 @@
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_14145"
+      "Value": "W"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_12984"
+      "Value": "Deploy Barricades"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_12985"
+      "Value": "Deploy Barricades"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_12986"
+      "Value": "Deploy a solid barricade blocking the path of enemies. The barricade takes 15 damage per second until it is destroyed."
     },
     {
       "Id": 1918989665,

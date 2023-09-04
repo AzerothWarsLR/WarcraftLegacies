@@ -6,32 +6,32 @@
   "Modifications": [
     {
       "Id": 2020631157,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1953850229,
       "Type": 3,
-      "Value": "TRIGSTR_955"
+      "Value": "- Slow,- Slow|n- Summon Fire Elemental,- Slow|n- Summon Fire Elemental|n- Soul Burn"
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_952"
+      "Value": "(Quel\u0027Thalas)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_612"
+      "Value": "W"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.85
+      "Value": ""
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_958"
+      "Value": "Versatile Thalassian spellcaster.|n|cfff5962dAbilities:|r Slow|n|cfff5962dCan Learn:|R Summon Fire Elemental, Soul Burn|n|n|cffffcc00Attacks land and air units.|R"
     }
   ]
 }

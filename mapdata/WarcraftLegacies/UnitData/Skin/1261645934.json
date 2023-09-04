@@ -18,42 +18,42 @@
     {
       "Id": 1853186933,
       "Type": 3,
-      "Value": "TRIGSTR_2486"
+      "Value": "Initiate,Adept,Master"
     },
     {
       "Id": 1953850229,
       "Type": 3,
-      "Value": "TRIGSTR_14424"
+      "Value": "- Cleanse,- Cleanse|n- Renewal,- Cleanse|n- Renewal|n- Rain of Light"
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_1289"
+      "Value": "(Lordaeron)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_2087"
+      "Value": "W"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.85
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_2490"
+      "Value": "Pastor"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_2491"
+      "Value": "Train Pastor"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_14582"
+      "Value": "Devout believer in the purity of the Light.|n|cfff5962dAbilities:|R Cleanse|n|cfff5962dCan Learn:|R Renewal, Rain of Light|n|n|cffffcc00Attacks land and air units.|R\r\n"
     }
   ]
 }

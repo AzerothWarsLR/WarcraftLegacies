@@ -13,12 +13,12 @@
     {
       "Id": 1953850229,
       "Type": 3,
-      "Value": "TRIGSTR_1431"
+      "Value": "- Shadow Infusion,- Shadow Infusion|n- Unholy Frenzy,- Shadow Infusion|n- Unholy Frenzy|n- Unholy Armor"
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_1268"
+      "Value": "(Fel Horde)"
     },
     {
       "Id": 1818520949,
@@ -28,27 +28,27 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_1628"
+      "Value": "Q"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.8
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_1434"
+      "Value": "Necrolyte"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_1435"
+      "Value": "Train Necrolyte"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_1436"
+      "Value": "Necromancer of orcish past, and veteran of many wars.|n|cfff5962dAbilities:|R Shadow Infusion|n|cfff5962dCan Learn:|R Unholy Frenzy, Soul Burn  |n|n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Id": 1684960117,

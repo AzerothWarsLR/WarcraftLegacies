@@ -13,19 +13,21 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_8317"
+      "Value": "Summon Peons"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_5413"
+      "Value": "Summon Water Elemental"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_3986"
+      "Value": "Summons a water elemental to attack the Hydromancer\u0027s enemies. Has \u003Chwat,realHP\u003E hit points and deals \u003Chwat,mindmg1\u003E - \u003Chwat,maxdmg1\u003E damage. |nLasts \u003CAHwe,Dur1\u003E seconds. |n|n|cffffcc00Attacks land and air units.|r"
     }
   ]
 }

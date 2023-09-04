@@ -8,11 +8,11 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_16416"
+      "Value": "Old God"
     },
     {
       "Id": 1919252085,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1818520949,
@@ -22,11 +22,11 @@
     {
       "Id": 1869770869,
       "Type": 3,
-      "Value": "TRIGSTR_16426"
+      "Value": "N\u0027Zoth"
     },
     {
       "Id": 1970434165,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1868786037,
@@ -36,7 +36,7 @@
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 4.2
+      "Value": ""
     },
     {
       "Id": 1831952757,
@@ -51,31 +51,31 @@
     {
       "Id": 1953980789,
       "Type": 3,
-      "Value": "TRIGSTR_14997"
+      "Value": "Revive"
     },
     {
       "Id": 1919972469,
       "Type": 3,
-      "Value": "TRIGSTR_14998"
+      "Value": "Revive"
     },
     {
       "Id": 1667462261,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 828468597,
       "Type": 2,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_18817"
+      "Value": " (Nzoth)"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 1.6
+      "Value": ""
     }
   ]
 }

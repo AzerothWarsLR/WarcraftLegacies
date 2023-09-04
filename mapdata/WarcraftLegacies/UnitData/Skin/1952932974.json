@@ -16,16 +16,16 @@
     },
     {
       "Id": 2020631157,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 2037408373,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_16428"
+      "Value": "(Dalaran Tower)"
     },
     {
       "Id": 1818520949,
@@ -35,7 +35,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_416"
+      "Value": "X"
     },
     {
       "Id": 1831952757,
@@ -45,22 +45,22 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.8
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_849"
+      "Value": "Kirin Tor Tower"
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_850"
+      "Value": "Upgrade to Kirin Tor Tower"
     },
     {
       "Id": 1935832437,
@@ -70,7 +70,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_2686"
+      "Value": "Dalaran\u0027s defense tower.|n|cfff5962dAbilities:|R Magic Sentry|n|cffffcc00Attacks land and air units.|r"
     }
   ]
 }

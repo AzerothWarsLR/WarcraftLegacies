@@ -6,31 +6,31 @@
   "Modifications": [
     {
       "Id": 2020631157,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 2037408373,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_536"
+      "Value": "(Fel Horde-Portal)"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_537"
+      "Value": "Voidwalker"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_538"
+      "Value": "Summon Voidwalker"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_2018"
+      "Value": "Etheral demon of void origins.| |n|n|cffffcc00Attacks land and air units.|r"
     }
   ]
 }

@@ -6,12 +6,12 @@
   "Modifications": [
     {
       "Id": 2020631157,
-      "Value": 3
+      "Value": ""
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_4091"
+      "Value": "|cff87ceebUnique Consumable|r|nSummons 4 Murlocs to fight for you.|nContains \u003Crots,uses\u003E charges."
     }
   ]
 }

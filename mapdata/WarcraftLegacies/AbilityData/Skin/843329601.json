@@ -8,36 +8,40 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_10170"
+      "Value": "(Dalaran-Arcanist)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_11165"
+      "Value": "W"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_10172"
+      "Value": "Dispel Magic - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_10173"
+      "Value": "Dispel Magic - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_10174"
+      "Value": "Removes all buffs from units in a target area. |n|cffffcc00Deals \u003CA0D2,DataB1\u003E damage to summoned units.|r"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_10175"
+      "Value": "Removes all buffs from units in a target area. |n|cffffcc00Deals \u003CA0D2,DataB2\u003E damage to summoned units.|r"
     }
   ]
 }

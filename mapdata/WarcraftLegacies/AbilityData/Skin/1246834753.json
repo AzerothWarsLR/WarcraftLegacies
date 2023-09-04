@@ -8,83 +8,91 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_17000"
+      "Value": "(Hakkar)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_14865"
+      "Value": "R"
     },
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_14892"
+      "Value": "R"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_17005"
+      "Value": "Learn Corrupted Lightning - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_17006"
+      "Value": "Calls forth a cone of lightning to damage enemies. |n|n|cffffcc00Level 1|r - 250 damage per unit. |n|cffffcc00Level 2|r - 400 damage per unit. |n|cffffcc00Level 3|r - 550 damage per unit."
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_17008"
+      "Value": "Corrupted Lightning - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_17009"
+      "Value": "Corrupted Lightning - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_17010"
+      "Value": "Corrupted Lightning - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
+      "Pointer": 4,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_17011"
+      "Value": "Corrupted Lightning - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_17012"
+      "Value": "Calls forth a cone of lightning on a target enemy unit, hitting up to 3 enemy units for 250 damage."
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_17013"
+      "Value": "Calls forth a cone of lightning on a target enemy unit, hitting up to 4 enemy units for 400 damage."
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_17014"
+      "Value": "Calls forth a cone of lightning on a target enemy unit, hitting up to 5 enemy units for 550 damage."
     },
     {
       "Level": 4,
+      "Pointer": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_17015"
+      "Value": "Calls forth a cone of lightning on a target enemy unit, hitting up to 6 enemy units for 350 damage."
     },
     {
       "Id": 2020631137,
-      "Value": 3
+      "Value": ""
     },
     {
       "Id": 2020635233,
-      "Value": 3
+      "Value": ""
     },
     {
       "Id": 1953653089,
@@ -109,7 +117,7 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_17016"
+      "Value": "Corrupted Lightning"
     }
   ]
 }

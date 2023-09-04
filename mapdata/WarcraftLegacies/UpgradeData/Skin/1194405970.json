@@ -7,21 +7,24 @@
   "Modifications": [
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1718840935,
       "Type": 3,
-      "Value": "TRIGSTR_12793"
+      "Value": "(Lordaeron)"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "TRIGSTR_14819"
+      "Value": "Silver Hand"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_14820"
+      "Value": "This is a dummy upgrade used to enable Chaos abilities for the Silver Hand."
     }
   ]
 }

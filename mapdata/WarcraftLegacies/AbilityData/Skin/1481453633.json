@@ -7,7 +7,7 @@
   "Modifications": [
     {
       "Id": 2020631137,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1952539489,
@@ -17,12 +17,12 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_15893"
+      "Value": "(Gilneas-Cleric)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_16018"
+      "Value": "E"
     },
     {
       "Id": 1952543841,
@@ -31,9 +31,10 @@
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_13342"
+      "Value": "Brings back to life the corpse of 1 friendly nearby unit."
     }
   ]
 }

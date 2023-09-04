@@ -17,40 +17,40 @@
     },
     {
       "Id": 2020631157,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 2037408373,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_3673"
+      "Value": "(Sentinels-Demi)"
     },
     {
       "Id": 1735156597,
-      "Value": 140
+      "Value": ""
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_1798"
+      "Value": "A"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 1.01
+      "Value": ""
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_3675"
+      "Value": "Revive - Naisha"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_14675"
+      "Value": "Lieutenant of the Watchers, Naisha is a strong leader and close confidant to Maeiv. |n|n|cfff5962dAbilities:|R Ensnare, Sentinel, Moon Glaive, Resurrection, Joy of the Hunt, Shadow Meld, Resistant Skin|n|r|n|cffffcc00Attacks land and air units.|r"
     }
   ]
 }

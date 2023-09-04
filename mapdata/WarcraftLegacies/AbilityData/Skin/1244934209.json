@@ -18,17 +18,17 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_11996"
+      "Value": "(high elves anasterian)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_12311"
+      "Value": "Q"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_11998"
+      "Value": "Arcane Burst"
     },
     {
       "Id": 1918988897,
@@ -38,65 +38,73 @@
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_12321"
+      "Value": "Q"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_11233"
+      "Value": "Learn Arcane Burst - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_12118"
+      "Value": "The hero Blasts and area with Arcane Energy dealing damage to units caught in the area of effect. |n|n|cffffcc00Level 1|r - 90 damage Dealt per Unit.|n|cffffcc00Level 2|r - 140 damage Dealt per Unit.|n|cffffcc00Level 3|r - 190 damage Dealt per Unit.|n|cffffcc00Level 4|r - 240 damage Dealt per Unit."
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_11234"
+      "Value": "Arcane Burst - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_11235"
+      "Value": "Arcane Burst - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_11236"
+      "Value": "Arcane Burst - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
+      "Pointer": 4,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_12175"
+      "Value": "Arcane Burst - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_12121"
+      "Value": "The hero blasts and area with Arcane Energy dealing 90 damage to units caught in the area of effect"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_12231"
+      "Value": "The hero blasts and area with Arcane Energy dealing 140 damage to units caught in the area of effect"
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_12233"
+      "Value": "The hero blasts and area with Arcane Energy dealing 190 damage to units caught in the area of effect"
     },
     {
       "Level": 4,
+      "Pointer": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_12234"
+      "Value": "The hero blasts and area with Arcane Energy dealing 240 damage to units caught in the area of effect"
     }
   ]
 }

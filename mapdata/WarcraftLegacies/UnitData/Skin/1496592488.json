@@ -7,35 +7,35 @@
   "Modifications": [
     {
       "Id": 1651270517,
-      "Value": 180
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_2991"
+      "Value": "(Quel\u0027Thalas-Anasterian-Level 3)"
     },
     {
       "Id": 1735156597,
-      "Value": 180
+      "Value": ""
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 1.2
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_2992"
+      "Value": "Al\u0027ar"
     },
     {
       "Id": 1919705973,
-      "Value": 180
+      "Value": ""
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_2993"
+      "Value": "Loyal phoenix of the Sunstrider Dynasty.|n|cfff5962dAbilities:|R Sun Ray, Spell Immunity, Resistant Skin|n|n|cffffcc00Attacks land and air units.|R\r\n\r\n"
     }
   ]
 }

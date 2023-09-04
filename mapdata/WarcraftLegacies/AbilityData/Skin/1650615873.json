@@ -7,13 +7,14 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_5095"
+      "Value": "(Thelsamar)"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_5096"
+      "Value": "Attacks destroy \u003CAfbb,DataA1\u003E mana per hit. The mana combusts, dealing damage to the attacked unit."
     }
   ]
 }

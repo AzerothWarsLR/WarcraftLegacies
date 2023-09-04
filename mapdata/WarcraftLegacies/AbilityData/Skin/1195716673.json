@@ -8,13 +8,14 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_9827"
+      "Value": "(Green - High Warlord Naj\u0027entus)Dark Green - Regin"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_6949"
+      "Value": "Gives 3 additional armor to nearby friendly units."
     }
   ]
 }

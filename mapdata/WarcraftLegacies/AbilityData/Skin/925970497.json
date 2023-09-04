@@ -12,17 +12,17 @@
     },
     {
       "Id": 2020631137,
-      "Value": 3
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_12756"
+      "Value": "(Sentinels - Maiev)"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_12757"
+      "Value": "Take Vengeance"
     },
     {
       "Id": 1918988897,
@@ -31,58 +31,64 @@
     },
     {
       "Id": 2020635233,
-      "Value": 3
+      "Value": ""
     },
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_12272"
+      "Value": "R"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_12759"
+      "Value": "Learn Take Vengeance - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_8268"
+      "Value": "If Maiev would die, she instead regains some health and becomes an Avatar of Vengeance for 20 seconds. If Maiev attacks 5 times in this form, she revives instantly. Otherwise, she dies. |n|n|cffffcc00Level 1|r - Restores 1200 health and increases attack damage by 40.|n|cffffcc00Level 2|r - Restores 1500 health and increases attack damage by 60. |n|cffffcc00Level 3|r - Restores 1800 health and increases attack damage by 80."
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_12761"
+      "Value": "Take Vengeance - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_12762"
+      "Value": "Take Vengeance - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_12763"
+      "Value": "Take Vengeance - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_3163"
+      "Value": "If Maiev would die, she instead regains 1200 health and becomes an Avatar of Vengeance for 20 seconds, increasing her attack damage by 40. If Maiev attacks 9 times in this form, she revives instantly. Otherwise, she dies."
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_3180"
+      "Value": "If Maiev would die, she instead regains 1500 health and becomes an Avatar of Vengeance for 20 seconds, increasing her attack damage by 60. If Maiev attacks 9 times in this form, she revives instantly. Otherwise, she dies."
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_3945"
+      "Value": "If Maiev would die, she instead regains 1800 health and becomes an Avatar of Vengeance for 20 seconds, increasing her attack damage by 80. If Maiev attacks 9 times in this form, she revives instantly. Otherwise, she dies."
     }
   ]
 }

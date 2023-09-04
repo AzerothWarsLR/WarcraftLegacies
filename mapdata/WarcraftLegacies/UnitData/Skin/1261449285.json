@@ -13,24 +13,24 @@
     {
       "Id": 1953980789,
       "Type": 3,
-      "Value": "TRIGSTR_3996"
+      "Value": "Revive Archdruid"
     },
     {
       "Id": 1651270517,
-      "Value": 140
+      "Value": ""
     },
     {
       "Id": 2020631157,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 2037408373,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_2323"
+      "Value": "(Druids)"
     },
     {
       "Id": 1818520949,
@@ -39,17 +39,17 @@
     },
     {
       "Id": 1735156597,
-      "Value": 140
+      "Value": ""
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_3361"
+      "Value": "W"
     },
     {
       "Id": 828468597,
       "Type": 2,
-      "Value": 0.15
+      "Value": ""
     },
     {
       "Id": 1831952757,
@@ -59,22 +59,22 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_3999"
+      "Value": "Archdruid of Darnassus"
     },
     {
       "Id": 1869770869,
       "Type": 3,
-      "Value": "TRIGSTR_4000"
+      "Value": "Fandral Staghelm"
     },
     {
       "Id": 1919972469,
       "Type": 3,
-      "Value": "TRIGSTR_4001"
+      "Value": "Revive Archdruid"
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 1.5
+      "Value": ""
     },
     {
       "Id": 1769173877,
@@ -84,7 +84,7 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_3295"
+      "Value": " "
     },
     {
       "Id": 1651864693,

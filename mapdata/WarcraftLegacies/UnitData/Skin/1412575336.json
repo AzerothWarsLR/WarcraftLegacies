@@ -7,7 +7,7 @@
   "Modifications": [
     {
       "Id": 1651270517,
-      "Value": 100
+      "Value": ""
     },
     {
       "Id": 1651012469,
@@ -17,7 +17,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_3047"
+      "Value": "(Dead)"
     },
     {
       "Id": 1818520949,
@@ -26,16 +26,16 @@
     },
     {
       "Id": 1735156597,
-      "Value": 100
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_3266"
+      "Value": "Gates of Ahn\u0027Qiraj"
     },
     {
       "Id": 1919705973,
-      "Value": 100
+      "Value": ""
     },
     {
       "Id": 1885959285,
@@ -60,12 +60,12 @@
     {
       "Id": 1920494965,
       "Type": 1,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1886940533,
       "Type": 1,
-      "Value": 0
+      "Value": ""
     }
   ]
 }

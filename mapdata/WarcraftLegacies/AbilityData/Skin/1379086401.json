@@ -8,18 +8,19 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_7394"
+      "Value": "(teal)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_12772"
+      "Value": "E"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_12164"
+      "Value": "Sacrifices a target friendly unit. All nearby units gain Unholy Frenzy, increasing attack rate by \u003CAuuf,DataA1,%\u003E% but draining them of \u003CAuuf,DataB1\u003E hit points per second. |nLasts \u003CAuuf,Dur1\u003E seconds."
     }
   ]
 }

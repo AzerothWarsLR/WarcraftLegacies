@@ -8,32 +8,32 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_16345"
+      "Value": "(troll)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_4139"
+      "Value": "Q"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.85
+      "Value": ""
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_18250"
+      "Value": "Offensive contected to the spirits of Zandalar.|n|cfff5962dAbilities:|R Magic Missile|n|cfff5962dCan Learn:|R Dispel Magic, Mana Burn|n|n|cffffcc00Attacks land and air units.|R\r\n"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_16368"
+      "Value": "Haruspex"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_16369"
+      "Value": "Train Haruspex"
     },
     {
       "Id": 1818520949,
@@ -53,7 +53,7 @@
     {
       "Id": 1953850229,
       "Type": 3,
-      "Value": "TRIGSTR_16818"
+      "Value": "- Magic Missile,- Magic Missile|n- Dispel Magic,- Magic Missile|n- Dispel Magic|n- Mana Burn"
     }
   ]
 }

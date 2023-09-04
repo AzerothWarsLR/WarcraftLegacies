@@ -8,23 +8,24 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_7778"
+      "Value": "(witch hunter)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_10084"
+      "Value": "W"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_8446"
+      "Value": "Adds 30 bonus fire damage to an attack against enemies, but drains mana with each attack."
     },
     {
       "Id": 1802007905,
       "Type": 3,
-      "Value": "TRIGSTR_10086"
+      "Value": "W"
     }
   ]
 }

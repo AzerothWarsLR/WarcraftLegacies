@@ -7,36 +7,36 @@
   "Modifications": [
     {
       "Id": 2020631157,
-      "Value": 3
+      "Value": ""
     },
     {
       "Id": 2037408373,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1936024681,
       "Type": 3,
-      "Value": "TRIGSTR_4278"
+      "Value": "Transports troops to a friendly unit or structure."
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_5117"
+      "Value": "R"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_4057"
+      "Value": "Scroll of Teleportation"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_12687"
+      "Value": "Purchase Scroll of Teleportation"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_4280"
+      "Value": "Teleports the Hero and any of its nearby troops to a target friendly unit or structure.|n|n|cffe8e800Has a 9 second cast time.|r"
     }
   ]
 }

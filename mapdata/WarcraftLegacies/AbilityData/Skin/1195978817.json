@@ -28,7 +28,7 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_13517"
+      "Value": "(Faction event)"
     },
     {
       "Id": 1952540001,
@@ -43,7 +43,7 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_16892"
+      "Value": "Join the Alliance"
     },
     {
       "Id": 1952543841,
@@ -57,19 +57,21 @@
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_16898"
+      "Value": "Join the Alliance"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_16904"
+      "Value": "You will leave the Night elf team and join the Alliance team."
     },
     {
       "Id": 2037408353,
-      "Value": 1
+      "Value": ""
     }
   ]
 }

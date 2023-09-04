@@ -8,68 +8,74 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_16048"
+      "Value": "(Twilight Hammer)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_12990"
+      "Value": "R"
     },
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_13000"
+      "Value": "R"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_16052"
+      "Value": "Learn Corrupt Blood - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_16054"
+      "Value": "Corrupt the target blood with the power of the Old Gods. The afflicted target cannot cast spells and will take damage per second. Upon its death, a Faceless One Deathbringer will spawn from its corpse. Corrupt Blood cannot be dispelled or cancelled.\r\nLasts 8 seconds on heroes and indefinitely on units.\r\n |n|cffffcc00Level 1|r - 40 damage per second and 2 Greater Doom Guards summoned.|n|cffffcc00Level 2|r - 70 damage per second and 4 Greater Doom Guards summoned. |n|cffffcc00Level 3|r - 100 damage per second and 6 Greater Doom Guards"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_16055"
+      "Value": "Corrupt Blood - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_16058"
+      "Value": "Corrupt Blood - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_16078"
+      "Value": "Corrupt Blood - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_16146"
+      "Value": "Corrupt the blood of a target unit with the power of the Old Gods. The afflicted unit cannot cast spells and will take \u003CA04A,DataA1\u003E damage per second. Upon its death, 2 Faceless One Deathbringer will spawn from its corpse. Corrupt Blood cannot be dispelled or cancelled.|nLasts 8 seconds on heroes and indefinitely on units."
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_16147"
+      "Value": "Corrupt the blood of a target unit with the power of the Old Gods. The afflicted unit cannot cast spells and will take \u003CA04A,DataA2\u003E damage per second. Upon its death, 4 Faceless One Deathbringer will spawn from its corpse. Corrupt Blood cannot be dispelled or cancelled.|nLasts 8 seconds on heroes and indefinitely on units."
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_16260"
+      "Value": "Corrupt the blood of a target unit with the power of the Old Gods. The afflicted unit cannot cast spells and will take \u003CA04A,DataA3\u003E damage per second. Upon its death, 6 Faceless One Deathbringer will spawn from its corpse. Corrupt Blood cannot be dispelled or cancelled.|nLasts 8 seconds on heroes and indefinitely on units."
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_16432"
+      "Value": "Corrupt Blood"
     }
   ]
 }

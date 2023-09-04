@@ -13,12 +13,12 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_9173"
+      "Value": "(Yellow - Gelbin)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_9970"
+      "Value": "Q"
     },
     {
       "Id": 1952542049,
@@ -28,19 +28,21 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_9175"
+      "Value": "Rocket Missle"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_9176"
+      "Value": "Rocket (|cffffcc00Q|r)"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_9177"
+      "Value": "Fire a rocket at an enemy building or mechanism dealing heavy damage. Deals 800 damage."
     }
   ]
 }

@@ -8,7 +8,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_1883"
+      "Value": "(Kul\u0027tiras, Worker)"
     },
     {
       "Id": 1818520949,
@@ -18,27 +18,27 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_3029"
+      "Value": "Q"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.85
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_3439"
+      "Value": "Deckhand"
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 0.7
+      "Value": ""
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_3440"
+      "Value": "Basic worker unit.|n|cfff5962dAbilities:|r Repair, Gather|n|cfff5962dCan Learn:|R Improved Lumber Harvesting|n|n|cffffcc00Attacks land units and trees."
     }
   ]
 }

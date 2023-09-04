@@ -13,12 +13,12 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_8978"
+      "Value": "(Castles) (Yellow)"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_8979"
+      "Value": "Dwarven Masonry"
     },
     {
       "Id": 1952543841,
@@ -27,15 +27,17 @@
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_8980"
+      "Value": "Dwarven Masonry"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_8981"
+      "Value": "Gives 6 bonus armor to friendly structures within a radius of 1500."
     }
   ]
 }

@@ -7,17 +7,17 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_2290"
+      "Value": "(Frostwolf Research)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_206"
+      "Value": "E"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.8
+      "Value": ""
     },
     {
       "Id": 1935832437,
@@ -27,7 +27,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_17315"
+      "Value": "Resource harvesting center and producer of Horde enhancements. |n|cfff5962dResearches:|R Forged Weaponry, Armor Plating, Reinforced Defenses, Spiked Barricades, Spiritual Infusion, Improved Cannons, Fortified Hulls|n"
     }
   ]
 }

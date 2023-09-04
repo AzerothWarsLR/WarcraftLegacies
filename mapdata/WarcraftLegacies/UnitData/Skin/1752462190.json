@@ -6,27 +6,27 @@
   "Modifications": [
     {
       "Id": 2020631157,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_347"
+      "Value": "E"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.65
+      "Value": ""
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_572"
+      "Value": "Train [|cffffcc00E|r] Satyr Hellcaller"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_573"
+      "Value": "Heavy melee unit with Unholy Aura. Can also Animate Dead.|n|n|cff99b4d1Can only train 4. |n|n|cffffcc00Attacks land units.|r"
     }
   ]
 }

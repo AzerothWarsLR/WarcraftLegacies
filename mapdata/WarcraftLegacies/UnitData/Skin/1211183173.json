@@ -13,12 +13,12 @@
     {
       "Id": 1953980789,
       "Type": 3,
-      "Value": "TRIGSTR_1810"
+      "Value": "Revive Defias Kingpin"
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19246"
+      "Value": "(Mercenary)"
     },
     {
       "Id": 1818520949,
@@ -33,27 +33,27 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.8
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_5438"
+      "Value": "Defias Kingpin"
     },
     {
       "Id": 1869770869,
       "Type": 3,
-      "Value": "TRIGSTR_5440"
+      "Value": "Edwin Vancleef"
     },
     {
       "Id": 1919972469,
       "Type": 3,
-      "Value": "TRIGSTR_5442"
+      "Value": "Revive Defias Kingpin"
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 1.27
+      "Value": ""
     },
     {
       "Id": 1769173877,
@@ -63,12 +63,12 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_19162"
+      "Value": "Choose Vassal: Edwin"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_19167"
+      "Value": "|cffff0000You will lose your current faction and join an Employer as a new small 1 hero faction|r|n|nPossible employers in order of priority:|n-Forsaken (once independant)|n-Scarlet Crusade (once unleashed)|n-Lordaeron (If Stormwind is gone)|n-Dalaran (If Lordaeron are gone)|n-Stormwind (If Dalaran is gone)"
     }
   ]
 }

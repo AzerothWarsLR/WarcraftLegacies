@@ -7,23 +7,24 @@
   "Modifications": [
     {
       "Id": 2020631137,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_7957"
+      "Value": "(Warsong - Shadow Priest)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_10403"
+      "Value": "W"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_8859"
+      "Value": "Consumes all magical buffs from units in an area. Each unit that is devoured of magic gives the caster \u003CA0KS,DataA1\u003E hit points and \u003CA0KS,DataB1\u003E mana. |n|cffffcc00Deals \u003CA0KS,DataE1\u003E damage to summoned units.|r"
     }
   ]
 }

@@ -13,29 +13,31 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_10619"
+      "Value": "(Light Blue Amara)"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_10668"
+      "Value": "Fear the Goddess"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_10669"
+      "Value": "Fear the Goddess"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_10670"
+      "Value": "Induce the enemy units with a fear in Elune that reduces nearby their attack damage by \u003CAcht,DataA1,%\u003E% for \u003CAcht,Dur1\u003E seconds."
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_11491"
+      "Value": "Q"
     },
     {
       "Id": 1952539489,

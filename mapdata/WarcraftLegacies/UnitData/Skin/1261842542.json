@@ -12,7 +12,7 @@
     },
     {
       "Id": 2020631157,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1635083125,
@@ -22,7 +22,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_15797"
+      "Value": "(Gilneas)"
     },
     {
       "Id": 1818520949,
@@ -32,7 +32,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_3584"
+      "Value": "W"
     },
     {
       "Id": 1831952757,
@@ -42,52 +42,52 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_15881"
+      "Value": "Druid of the Scythe"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_15882"
+      "Value": "Train Druid of the Scythe"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_19080"
+      "Value": "Offensive Casters.|n|cfff5962dAbilities:|R Entangling Root, Dispel Magic, Spawn Spiders|n|r|n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.8
+      "Value": ""
     },
     {
       "Id": 2020111221,
       "Type": 1,
-      "Value": 60
+      "Value": ""
     },
     {
       "Id": 2036888437,
       "Type": 1,
-      "Value": 60
+      "Value": ""
     },
     {
       "Id": 1751675765,
       "Type": 1,
-      "Value": 120
+      "Value": ""
     },
     {
       "Id": 2003334005,
       "Type": 1,
-      "Value": 120
+      "Value": ""
     },
     {
       "Id": 1953850229,
       "Type": 3,
-      "Value": "TRIGSTR_7743"
+      "Value": "- Entangling Root,- Entangling Root|n- Dispel Magic,- Entangling Root|n- Dispel Magic|n- Invoke Spider"
     },
     {
       "Id": 1853186933,
       "Type": 3,
-      "Value": "TRIGSTR_3686"
+      "Value": "Initiate, Adept, Master"
     }
   ]
 }

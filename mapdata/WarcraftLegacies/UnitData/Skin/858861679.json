@@ -17,7 +17,7 @@
     },
     {
       "Id": 1651270517,
-      "Value": 100
+      "Value": ""
     },
     {
       "Id": 1818520949,
@@ -26,21 +26,21 @@
     },
     {
       "Id": 1735156597,
-      "Value": 100
+      "Value": ""
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 1.2
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_1707"
+      "Value": "Blackrock Spire"
     },
     {
       "Id": 1919705973,
-      "Value": 150
+      "Value": ""
     },
     {
       "Id": 1935832437,
@@ -50,7 +50,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19672"
+      "Value": " (Fel Horde)"
     }
   ]
 }

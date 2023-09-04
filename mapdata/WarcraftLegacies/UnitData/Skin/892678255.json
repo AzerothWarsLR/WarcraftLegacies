@@ -7,17 +7,17 @@
   "Modifications": [
     {
       "Id": 2020631157,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_7498"
+      "Value": "(Draenei Specialist)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_3420"
+      "Value": "D"
     },
     {
       "Id": 1935832437,
@@ -27,7 +27,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_17841"
+      "Value": "Beast taming tower of the Draenei.|n|cfff5962dTrains:|R Brown Elekk, Elekk Knight, Nether Ray"
     },
     {
       "Id": 1818520949,
@@ -42,12 +42,12 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_17814"
+      "Value": "Crystal Spire"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_17815"
+      "Value": "Build Crystal Spire"
     },
     {
       "Id": 1684960117,

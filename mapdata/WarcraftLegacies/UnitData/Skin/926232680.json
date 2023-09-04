@@ -8,37 +8,37 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_3416"
+      "Value": "(Night Elves)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_4071"
+      "Value": "D"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_1443"
+      "Value": "Galley"
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 1.8
+      "Value": ""
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_846"
+      "Value": "Build Galley"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_991"
+      "Value": "Long range medium ship.|n|r|n|cffffcc00Attacks land and air units.|r |nStrong versus Fireships, Weak versus Frigates.|n"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.9
+      "Value": ""
     },
     {
       "Id": 1831952757,
@@ -57,11 +57,11 @@
     },
     {
       "Id": 2037408373,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 2020631157,
-      "Value": 2
+      "Value": ""
     }
   ]
 }

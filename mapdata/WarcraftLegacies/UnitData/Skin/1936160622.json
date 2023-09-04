@@ -7,22 +7,22 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19211"
+      "Value": " (Nzoth, Illidari)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_369"
+      "Value": "Q"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.8
+      "Value": ""
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_2409"
+      "Value": "Agile flying creature of the Illidari.|n|cfff5962dAbilities:|R Prioritise.|n |n|cff99b4d1Can only train 8.|r|n|cffffcc00Attacks land and air units.|r"
     }
   ]
 }

@@ -13,12 +13,12 @@
     {
       "Id": 1953980789,
       "Type": 3,
-      "Value": "TRIGSTR_3800"
+      "Value": "Revive Cho\u0027gall"
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_2137"
+      "Value": "(Twilight Hammer)"
     },
     {
       "Id": 1818520949,
@@ -28,27 +28,27 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_3162"
+      "Value": "Q"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.85
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_1634"
+      "Value": "Leader of the Twilight\u0027s Hammer"
     },
     {
       "Id": 1869770869,
       "Type": 3,
-      "Value": "TRIGSTR_3804"
+      "Value": "Cho\u0027gall"
     },
     {
       "Id": 1919972469,
       "Type": 3,
-      "Value": "TRIGSTR_3805"
+      "Value": "Revive Cho\u0027gall"
     },
     {
       "Id": 1769173877,
@@ -58,12 +58,12 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_276"
+      "Value": "Summon Cho\u0027gall"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_2371"
+      "Value": "Mystical Hero, adept at dealing magical damage and summoning.|n|cfff5962dCan learn:|R Rain of Fire, Thunder Fists, Unholy Aura, Corrupt Blood|n|n|cffffcc00Attacks land units.|R"
     },
     {
       "Id": 1684960117,

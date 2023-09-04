@@ -13,11 +13,11 @@
     {
       "Id": 1953980789,
       "Type": 3,
-      "Value": "TRIGSTR_3702"
+      "Value": "Revive"
     },
     {
       "Id": 1667462261,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1818520949,
@@ -26,7 +26,7 @@
     },
     {
       "Id": 1919252085,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1831952757,
@@ -36,31 +36,31 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_3703"
+      "Value": "Old God"
     },
     {
       "Id": 1970434165,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1869770869,
       "Type": 3,
-      "Value": "TRIGSTR_2550"
+      "Value": "C\u0027thun"
     },
     {
       "Id": 1919972469,
       "Type": 3,
-      "Value": "TRIGSTR_3705"
+      "Value": "Revive"
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 7
+      "Value": ""
     },
     {
       "Id": 1684960117,
@@ -70,7 +70,7 @@
     {
       "Id": 2054188149,
       "Type": 2,
-      "Value": 300
+      "Value": ""
     }
   ]
 }

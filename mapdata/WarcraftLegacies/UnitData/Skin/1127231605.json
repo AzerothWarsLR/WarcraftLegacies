@@ -13,12 +13,12 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_2727"
+      "Value": "Z"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.75
+      "Value": ""
     },
     {
       "Id": 1935832437,
@@ -28,7 +28,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_2876"
+      "Value": "Death ridden halls soaring high above.|n|cfff5962dAbilities:|R Curse Aura |n|cfff5962dTrains:|R Legion Herald, Dreadlord|n|cfff5962dResearches:|R Rematerialization|n|n|cfff5962dUpgrades Into:|R Burning Citadel|R|n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Id": 1818520949,
@@ -38,17 +38,17 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19882"
+      "Value": " (Legion T2)"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_2415"
+      "Value": "Legion Bastion"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_2678"
+      "Value": "Upgrade to Legion Bastion"
     },
     {
       "Id": 1831952757,

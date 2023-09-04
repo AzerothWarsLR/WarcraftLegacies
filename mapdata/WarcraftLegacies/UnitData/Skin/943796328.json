@@ -12,16 +12,16 @@
     },
     {
       "Id": 1651270517,
-      "Value": 230
+      "Value": ""
     },
     {
       "Id": 2020631157,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_18593"
+      "Value": " (Ragnaros)"
     },
     {
       "Id": 1818520949,
@@ -30,36 +30,36 @@
     },
     {
       "Id": 1735156597,
-      "Value": 230
+      "Value": ""
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_5209"
+      "Value": "W"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.85
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_18543"
+      "Value": "Chieftain"
     },
     {
       "Id": 1919705973,
-      "Value": 230
+      "Value": ""
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_2691"
+      "Value": "Train Chieftain"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_344"
+      "Value": "Aspiring commander under General Angerforge.|n|cfff5962dAbilities:|R Taunt, Storming Brew, Bash, Avatar|n|cfff5962dCan learn:|R Mithril Plated Armor |n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land units.|r"
     },
     {
       "Id": 1684960117,

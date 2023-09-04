@@ -7,37 +7,37 @@
   "Modifications": [
     {
       "Id": 2020631157,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_16549"
+      "Value": "(goblin)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_4923"
+      "Value": "E"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_16623"
+      "Value": "War Zeppelin"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_16624"
+      "Value": "Train War Zeppelin"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_19022"
+      "Value": "Fine Goblin engineering with a deadshot pilot.|n|cfff5962dAbilities:|R Truesight, Flak Cannons, Flying Machine Bombs|n|n|cff99b4d1Can only build 6.|r|n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Id": 1818520949,
@@ -62,12 +62,12 @@
     {
       "Id": 2054188149,
       "Type": 2,
-      "Value": -60
+      "Value": ""
     },
     {
       "Id": 2037410933,
       "Type": 2,
-      "Value": -20
+      "Value": ""
     },
     {
       "Id": 1831952757,

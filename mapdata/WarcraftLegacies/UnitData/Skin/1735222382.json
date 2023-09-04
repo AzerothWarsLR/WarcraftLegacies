@@ -11,27 +11,27 @@
     },
     {
       "Id": 2037408373,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_837"
+      "Value": "(Legion)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_549"
+      "Value": "F"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.5
+      "Value": ""
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_839"
+      "Value": "Summon Demon Gate"
     },
     {
       "Id": 1935832437,
@@ -41,7 +41,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_3359"
+      "Value": "Gateway that allows the Legion to bring its greater demons into Azeroth.|r|n|cff99b4d1Can only build 6.|r|n|cfff5962dTrains:|R Doom Guard, Doom Lord, Nether Dragon"
     },
     {
       "Id": 1818520949,
@@ -50,7 +50,7 @@
     },
     {
       "Id": 2020631157,
-      "Value": 3
+      "Value": ""
     }
   ]
 }

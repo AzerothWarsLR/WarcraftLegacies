@@ -12,31 +12,31 @@
     },
     {
       "Id": 2020631157,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 2037408373,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1936024681,
       "Type": 3,
-      "Value": "TRIGSTR_4240"
+      "Value": "A powerful staff. Transports troops to a friendly unit or structure. With this your hero will never need another teleportation scroll."
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_4241"
+      "Value": "Staff of Teleportation"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_4242"
+      "Value": "Purchase Staff of |cffffcc00T|releportation"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_4243"
+      "Value": "A powerful staff. Transports troops to a friendly unit or structure. With this your hero will never need another teleportation scroll."
     }
   ]
 }

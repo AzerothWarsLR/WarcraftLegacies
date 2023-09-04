@@ -12,16 +12,16 @@
     },
     {
       "Id": 1651270517,
-      "Value": 200
+      "Value": ""
     },
     {
       "Id": 2020631157,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_20827"
+      "Value": "(Sunfury)"
     },
     {
       "Id": 1818520949,
@@ -30,36 +30,36 @@
     },
     {
       "Id": 1735156597,
-      "Value": 200
+      "Value": ""
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_6982"
+      "Value": "E"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_20998"
+      "Value": "Blood Knight Squire"
     },
     {
       "Id": 1919705973,
-      "Value": 175
+      "Value": ""
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 0.85
+      "Value": ""
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_21141"
+      "Value": "Train Blood Knight Squire"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_21165"
+      "Value": "Light-infused warrior.|n|cfff5962dAbilities:|R Charge,Flaming Sword, Mana Shield|n|cfff5962dCan Learn:|R Seal of Blood|n|n|cff99b4d1Can only train 12|n|cffffcc00Attacks land units.|r"
     },
     {
       "Id": 1684960117,

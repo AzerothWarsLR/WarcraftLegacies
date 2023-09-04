@@ -8,7 +8,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_15631"
+      "Value": "(Druids - Cenarius Summon)"
     },
     {
       "Id": 1818520949,
@@ -18,12 +18,12 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_1968"
+      "Value": "Feral Wolf"
     }
   ]
 }

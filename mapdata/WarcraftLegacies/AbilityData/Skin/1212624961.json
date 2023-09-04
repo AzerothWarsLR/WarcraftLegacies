@@ -7,34 +7,37 @@
   "Modifications": [
     {
       "Id": 2020631137,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 2037408353,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_3038"
+      "Value": "(Kul\u0027tiras)"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_9455"
+      "Value": "This units attacks fire an extra projectile at every ranged unit nearby, up to \u003CA0GH,DataC1\u003E targets."
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_15259"
+      "Value": "Barrage - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_15260"
+      "Value": "This units attacks fire an extra projectile at every ranged unit nearby, up to \u003CA0GH,DataC2\u003E targets."
     }
   ]
 }

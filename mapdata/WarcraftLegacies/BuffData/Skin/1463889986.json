@@ -13,12 +13,12 @@
     {
       "Id": 1885959270,
       "Type": 3,
-      "Value": "TRIGSTR_10123"
+      "Value": "Blight Aura"
     },
     {
       "Id": 1700951398,
       "Type": 3,
-      "Value": "TRIGSTR_11403"
+      "Value": "This unit is under the effects of Blight Aura; it has increased hit point regeneration."
     },
     {
       "Id": 1953653094,
@@ -28,7 +28,7 @@
     {
       "Id": 1718840934,
       "Type": 3,
-      "Value": "TRIGSTR_11799"
+      "Value": "(Halls of the Dead)"
     }
   ]
 }

@@ -7,73 +7,84 @@
   "Modifications": [
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829579623,
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNMoonStone.blp"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 829579623,
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTN3M3.blp"
     },
     {
       "Id": 2020631143,
-      "Value": 1
+      "Value": ""
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1718840935,
       "Type": 3,
-      "Value": "TRIGSTR_15305"
+      "Value": "(Sentinels)"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_16238"
+      "Value": "X"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_16241"
+      "Value": "X"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "TRIGSTR_14925"
+      "Value": "Priestess Adept Training"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "TRIGSTR_14926"
+      "Value": "Priestess Master Training"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_14927"
+      "Value": "Research Priestess Adept Training"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_14928"
+      "Value": "Research Priestess Master Training"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "TRIGSTR_18068"
+      "Value": "Increases Priestess\u0027 mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Dispel Magic."
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 828536167,
       "Type": 3,
-      "Value": "TRIGSTR_14930"
+      "Value": "Increases Priestess\u0027 mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Light Burst."
     }
   ]
 }

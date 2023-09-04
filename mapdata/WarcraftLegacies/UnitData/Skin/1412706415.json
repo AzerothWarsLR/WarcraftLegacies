@@ -8,12 +8,12 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_9084"
+      "Value": "(bone Seer)"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_9740"
+      "Value": "Bone Totem"
     },
     {
       "Id": 1818520949,
@@ -33,12 +33,12 @@
     {
       "Id": 2054188149,
       "Type": 2,
-      "Value": 100
+      "Value": ""
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 1.1
+      "Value": ""
     }
   ]
 }

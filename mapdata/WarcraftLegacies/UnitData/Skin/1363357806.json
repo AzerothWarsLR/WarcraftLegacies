@@ -8,12 +8,12 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_655"
+      "Value": "(Dragonmaw)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_5286"
+      "Value": "W"
     },
     {
       "Id": 1832018293,
@@ -23,17 +23,17 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_19031"
+      "Value": "Dragon Whelp"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_19032"
+      "Value": "Train Dragon Whelp"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_19045"
+      "Value": "Small Whelps of the Dragonmaw Clan.|n|r|n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Id": 1818520949,
@@ -48,15 +48,15 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.7
+      "Value": ""
     },
     {
       "Id": 1651270517,
-      "Value": 100
+      "Value": ""
     },
     {
       "Id": 2020631157,
-      "Value": 1
+      "Value": ""
     }
   ]
 }

@@ -12,34 +12,36 @@
     },
     {
       "Id": 2020631137,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_10226"
+      "Value": "(Druids-Druid of the Claw)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_11167"
+      "Value": "W"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_10228"
+      "Value": "Animal Fury"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_10229"
+      "Value": "Animal Fury"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_10230"
+      "Value": "Increases this unit\u0027s attack rate by 35% and movement speed by 25% for \u003CAfzy,Dur1\u003E seconds."
     },
     {
       "Id": 1918989665,
@@ -48,12 +50,12 @@
     },
     {
       "Id": 2019718497,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1802007905,
       "Type": 3,
-      "Value": "TRIGSTR_11175"
+      "Value": "W"
     }
   ]
 }

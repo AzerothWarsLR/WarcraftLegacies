@@ -6,36 +6,36 @@
   "Modifications": [
     {
       "Id": 1651270517,
-      "Value": 100
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_684"
+      "Value": "(Dalaran-Demi)"
     },
     {
       "Id": 1735156597,
-      "Value": 200
+      "Value": ""
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_691"
+      "Value": "A"
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_686"
+      "Value": "Revive - Jailor Kassan"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_643"
+      "Value": "Powerful anti-magic melee unit.|nThe infamous warden of Dalaran\u0027s dungeons.|n|n|cfff5962dAbilities:|R Charge!, Resistant Skin, Binding Shackles, Heavy Armor, Perfect Defend|n|cffffcc00Attacks land units.|r"
     },
     {
       "Id": 1818520949,
@@ -44,7 +44,7 @@
     },
     {
       "Id": 2037408373,
-      "Value": 1
+      "Value": ""
     }
   ]
 }

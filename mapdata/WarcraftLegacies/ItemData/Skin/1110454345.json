@@ -12,36 +12,36 @@
     },
     {
       "Id": 2020631157,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 2037408373,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1936024681,
       "Type": 3,
-      "Value": "TRIGSTR_4357"
+      "Value": "Summons Mur\u0027gul Workers."
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_14637"
+      "Value": "C"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_4359"
+      "Value": "Summon Mur\u0027gul Workers "
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_4250"
+      "Value": "(|cffcece00C|r) Purchase Summon Workers"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_4316"
+      "Value": "Summons workers."
     }
   ]
 }

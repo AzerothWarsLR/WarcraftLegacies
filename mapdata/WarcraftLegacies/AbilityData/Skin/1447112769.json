@@ -7,46 +7,48 @@
   "Modifications": [
     {
       "Id": 2020631137,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 2037408353,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_10496"
+      "Value": "(Brown - Fandral)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_10946"
+      "Value": "D"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_10631"
+      "Value": "Transforms Fandral into a bear, giving him Thick Skin, 40 damage, 350HP, melee range and 3 armor."
     },
     {
       "Id": 2019718497,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 2036495713,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1802007905,
       "Type": 3,
-      "Value": "TRIGSTR_11342"
+      "Value": "D"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829781345,
       "Type": 3,
-      "Value": "TRIGSTR_10633"
+      "Value": "Transforms Fandral into a Night Elf, losing his defensive bonuses but returning his ranged attack."
     }
   ]
 }

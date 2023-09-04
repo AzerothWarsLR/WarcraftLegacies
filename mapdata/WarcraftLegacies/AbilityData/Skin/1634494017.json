@@ -7,18 +7,19 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_5072"
+      "Value": "(Khaz Modan-Mortar Team)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_6386"
+      "Value": "Q"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_5074"
+      "Value": "Launches a Dwarven flare above a target point, which reveals that area for \u003CAfla,Dur1\u003E seconds. |nReveals invisible units.|n|n|cffffcc00120 second cooldown."
     }
   ]
 }

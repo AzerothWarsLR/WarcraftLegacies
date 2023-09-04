@@ -6,55 +6,63 @@
   "Modifications": [
     {
       "Id": 2020631143,
-      "Value": 1
+      "Value": ""
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1718840935,
       "Type": 3,
-      "Value": "TRIGSTR_14153"
+      "Value": "(Light Blue Research)"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_14799"
+      "Value": "X"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_14155"
+      "Value": "Research Improved Bows - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_1581"
+      "Value": "Research Improved Bows - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "TRIGSTR_14980"
+      "Value": "Increases the attack range of Archers, Guild Rangers, Priestess of the Moon, Moon Rider and Hippogryph Rider by 100."
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 828536167,
       "Type": 3,
-      "Value": "TRIGSTR_14981"
+      "Value": "Increases the attack range of Archers, Guild Rangers, Priestess of the Moon, Moon Rider and Hippogryph Rider by an additional 100."
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_14804"
+      "Value": "X"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "TRIGSTR_2297"
+      "Value": "Improved Bows"
     }
   ]
 }

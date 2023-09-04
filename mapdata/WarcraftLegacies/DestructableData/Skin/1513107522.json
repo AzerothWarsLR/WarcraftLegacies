@@ -8,12 +8,12 @@
     {
       "Id": 1718973282,
       "Type": 3,
-      "Value": "TRIGSTR_4427"
+      "Value": "(Vertical Stormwind)"
     },
     {
       "Id": 1936289122,
       "Type": 2,
-      "Value": 0.35
+      "Value": ""
     },
     {
       "Id": 2020896866,
@@ -33,7 +33,7 @@
     {
       "Id": 1920493154,
       "Type": 2,
-      "Value": -1
+      "Value": ""
     }
   ]
 }

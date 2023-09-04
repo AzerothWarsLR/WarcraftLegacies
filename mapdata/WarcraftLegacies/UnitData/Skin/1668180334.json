@@ -6,27 +6,27 @@
   "Modifications": [
     {
       "Id": 2020631157,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_694"
+      "Value": "(Legion)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_527"
+      "Value": "W"
     },
     {
       "Id": 828468597,
       "Type": 2,
-      "Value": 0.2
+      "Value": ""
     },
     {
       "Id": 845245813,
       "Type": 2,
-      "Value": 0.08
+      "Value": ""
     },
     {
       "Id": 1831952757,
@@ -41,37 +41,37 @@
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1751675765,
       "Type": 1,
-      "Value": 120
+      "Value": ""
     },
     {
       "Id": 2003334005,
       "Type": 1,
-      "Value": 100
+      "Value": ""
     },
     {
       "Id": 2020111221,
       "Type": 1,
-      "Value": 25
+      "Value": ""
     },
     {
       "Id": 2036888437,
       "Type": 1,
-      "Value": 50
+      "Value": ""
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_825"
+      "Value": "Train Burning Archer"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_8886"
+      "Value": "Burning archer of the Legion.|n|cfff5962dAbilities:|R Searing Arrows, Skeletal Frame|n |n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Id": 1818520949,
@@ -85,11 +85,11 @@
     },
     {
       "Id": 1735156597,
-      "Value": 200
+      "Value": ""
     },
     {
       "Id": 1651270517,
-      "Value": 200
+      "Value": ""
     },
     {
       "Id": 1684960117,
@@ -99,17 +99,17 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_2076"
+      "Value": "Burning Archer"
     },
     {
       "Id": 1886940533,
       "Type": 1,
-      "Value": 10
+      "Value": ""
     },
     {
       "Id": 1920494965,
       "Type": 1,
-      "Value": 10
+      "Value": ""
     },
     {
       "Id": 1885430133,
@@ -119,7 +119,7 @@
     {
       "Id": 2054188149,
       "Type": 2,
-      "Value": 60
+      "Value": ""
     }
   ]
 }

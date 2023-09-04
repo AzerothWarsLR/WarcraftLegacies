@@ -6,17 +6,17 @@
   "Modifications": [
     {
       "Id": 2020631157,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1936024681,
       "Type": 3,
-      "Value": "TRIGSTR_4060"
+      "Value": "Gives Pillage."
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_4063"
+      "Value": "Increases the attack damage by 9 and gives the Hero pillage when carried."
     }
   ]
 }

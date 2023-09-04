@@ -7,13 +7,14 @@
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_6613"
+      "Value": "Q"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_5165"
+      "Value": "(|cffffcc00Q|r) - Dismount Archer \u0026 Hippogryph"
     }
   ]
 }

@@ -7,22 +7,22 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_634"
+      "Value": "(Scourge, Worker)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_140"
+      "Value": "Q"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.8
+      "Value": ""
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_370"
+      "Value": "Worshipper and structure summoner of the Scourge.|n|cfff5962dAbilities:|R Unsummon Building, Restore, Gather, Sacrifice|n|n|cffffcc00Attacks land units and trees.|r"
     }
   ]
 }

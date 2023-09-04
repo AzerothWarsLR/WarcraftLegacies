@@ -6,37 +6,37 @@
   "Modifications": [
     {
       "Id": 2020631157,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_18819"
+      "Value": " (Illidari)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_452"
+      "Value": "W"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 1.2
+      "Value": ""
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_15410"
+      "Value": "Train - Royal Guard"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_14399"
+      "Value": "Powerful defenders of the sea.|n|cfff5962dAbilities:|RResistant Skin, Hardened Scales, Frost Bolt, Crushing Wave. |n |n|cff99b4d1Can only train 6.|n|cffffcc00Attacks land units.|r"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_3242"
+      "Value": "Royal Guard"
     }
   ]
 }

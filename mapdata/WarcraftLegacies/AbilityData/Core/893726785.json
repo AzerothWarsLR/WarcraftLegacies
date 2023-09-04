@@ -14,28 +14,28 @@
     },
     {
       "Level": 1,
-      "Pointer": 2,
+      "Pointer": 1,
       "Id": 845898342,
       "Type": 2,
       "Value": 0.01
     },
     {
       "Level": 1,
-      "Pointer": 3,
+      "Pointer": 1,
       "Id": 862675558,
       "Type": 2,
       "Value": 15
     },
     {
       "Level": 1,
-      "Pointer": 4,
+      "Pointer": 1,
       "Id": 879452774,
       "Type": 2,
       "Value": 0.01
     },
     {
       "Level": 1,
-      "Pointer": 5,
+      "Pointer": 1,
       "Id": 896229990,
       "Type": 2,
       "Value": 200
@@ -51,6 +51,7 @@
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1918989409,
       "Type": 3,
       "Value": "air,enemies,ground,organic"

@@ -7,45 +7,49 @@
   "Modifications": [
     {
       "Id": 2020631137,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_10853"
+      "Value": "(Warsong - Hexbinder)"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_7894"
+      "Value": "Enchanced Rejuvenation"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_18613"
+      "Value": "Heals a target friendly unit for 800 mana over 40 seconds. Has a 70 seconds cooldown."
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_10113"
+      "Value": "Heals a target friendly unit for \u003CA09E,DataA2\u003E hit points over \u003CA09E,Dur2\u003E seconds."
     },
     {
       "Id": 2019718497,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_10685"
+      "Value": "Spiritual Guidance"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_13742"
+      "Value": "Spiritual Guidance"
     },
     {
       "Id": 1953653089,

@@ -13,12 +13,12 @@
     {
       "Id": 1953980789,
       "Type": 3,
-      "Value": "TRIGSTR_18153"
+      "Value": "Revive Tirion Fordring"
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_18154"
+      "Value": "(Argent)"
     },
     {
       "Id": 1818520949,
@@ -28,22 +28,22 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_5568"
+      "Value": "E"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_18155"
+      "Value": "Supreme Commander"
     },
     {
       "Id": 1869770869,
       "Type": 3,
-      "Value": "TRIGSTR_18156"
+      "Value": "Tirion Fordring"
     },
     {
       "Id": 1919972469,
       "Type": 3,
-      "Value": "TRIGSTR_18157"
+      "Value": "Revive Tirion Fordring"
     },
     {
       "Id": 1769173877,
@@ -53,21 +53,21 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_18161"
+      "Value": "Warrior Hero, exceptional at melee combat and bolstering nearby troops.|n|cfff5962dCan Learn:|R Shockwave, Divine Shield, Fiery Aura, Guarding Light|n|n|cffffcc00Attacks land units.|R"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_18159"
+      "Value": "Summon Tirion Fordring"
     },
     {
       "Id": 2020631157,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 1.8
+      "Value": ""
     }
   ]
 }

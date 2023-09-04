@@ -6,37 +6,37 @@
   "Modifications": [
     {
       "Id": 2020631157,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_560"
+      "Value": "(Vassal - Xavius)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_392"
+      "Value": "W"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_562"
+      "Value": "Satyr Warrior"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_563"
+      "Value": "Build Satyr Warrior"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_564"
+      "Value": "Light melee unit, has the Evasion and Feedback abilities. |n|n|cffffcc00Attacks land units.|r "
     }
   ]
 }

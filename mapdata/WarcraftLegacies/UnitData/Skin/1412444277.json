@@ -7,26 +7,26 @@
   "Modifications": [
     {
       "Id": 1651270517,
-      "Value": 150
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_1437"
+      "Value": "(Scourge-Baron Rivendare)"
     },
     {
       "Id": 1735156597,
-      "Value": 150
+      "Value": ""
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 1.4
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_1438"
+      "Value": "Ramstein"
     }
   ]
 }

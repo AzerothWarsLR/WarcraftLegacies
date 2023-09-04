@@ -12,7 +12,7 @@
     },
     {
       "Id": 2020631137,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1952539489,
@@ -27,12 +27,12 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_9374"
+      "Value": "(dreanei vindicator)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_10072"
+      "Value": "Q"
     },
     {
       "Id": 1952542049,
@@ -42,19 +42,21 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_9376"
+      "Value": "Vindication"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_17836"
+      "Value": "Vindication"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_9378"
+      "Value": "This unit enhances their attack with the Holy Light dealing 20 additional damage with every attack but draining mana with each hit."
     },
     {
       "Id": 1918989665,
@@ -63,12 +65,12 @@
     },
     {
       "Id": 2019718497,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1802007905,
       "Type": 3,
-      "Value": "TRIGSTR_10105"
+      "Value": "Q"
     }
   ]
 }

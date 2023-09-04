@@ -6,17 +6,17 @@
   "Modifications": [
     {
       "Id": 2020631157,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_061"
+      "Value": "S"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.85
+      "Value": ""
     },
     {
       "Id": 1935832437,
@@ -26,7 +26,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_229"
+      "Value": "Dark arts training structure.|n|cfff5962dTrains:|R Necromancers, Banshees, Obsidian Statue|n|cfff5962dResearches:|R Necromancer Training, Banshee Training, Skeletal Longevity, Skeletal Mastery"
     }
   ]
 }

@@ -8,17 +8,17 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_3693"
+      "Value": "(Creep)"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 1.5
+      "Value": ""
     },
     {
       "Id": 1869770869,
       "Type": 3,
-      "Value": "TRIGSTR_3987"
+      "Value": "Horn Guardian"
     }
   ]
 }

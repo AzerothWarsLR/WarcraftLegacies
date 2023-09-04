@@ -12,16 +12,16 @@
     },
     {
       "Id": 2020631157,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 2037408373,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19775"
+      "Value": "(Dalaran Barracks)"
     },
     {
       "Id": 1818520949,
@@ -31,27 +31,27 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_1540"
+      "Value": "A"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.85
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_2836"
+      "Value": "Military Quarter"
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 4
+      "Value": ""
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_2837"
+      "Value": "Build Military Quarter"
     },
     {
       "Id": 1935832437,
@@ -61,7 +61,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_7933"
+      "Value": "Section of Dalaran dedicated to military personnel.|n|cfff5962dTrains:|R Battlemage, Initiate Mage|n|cfff5962dResearches:|R Improved Phase Blade, Improved Slow"
     }
   ]
 }

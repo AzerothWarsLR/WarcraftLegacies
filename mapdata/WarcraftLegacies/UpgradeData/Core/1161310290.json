@@ -27,12 +27,14 @@
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 1902473831,
       "Type": 3,
       "Value": ""
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 1902473831,
       "Type": 3,
       "Value": ""
@@ -57,6 +59,7 @@
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1902473831,
       "Type": 3,
       "Value": "R06V"

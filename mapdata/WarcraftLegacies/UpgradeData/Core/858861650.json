@@ -18,7 +18,7 @@
     {
       "Id": 828794215,
       "Type": 3,
-      "Value": "TRIGSTR_14570"
+      "Value": "TRIGSTR_21215"
     },
     {
       "Id": 1651271527,
@@ -35,12 +35,14 @@
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1902473831,
       "Type": 3,
       "Value": "R04R"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1668379239,
       "Type": 3,
       "Value": ""

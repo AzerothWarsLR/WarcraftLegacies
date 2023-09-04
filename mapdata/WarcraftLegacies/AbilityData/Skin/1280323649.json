@@ -12,17 +12,17 @@
     },
     {
       "Id": 2020631137,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_8335"
+      "Value": "(Creep - Seradane Great Tree)"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_8336"
+      "Value": "Blessing of Seradane"
     },
     {
       "Id": 1918988897,
@@ -37,7 +37,7 @@
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_8337"
+      "Value": "Increases movement speed by 5% and attack speed by 3% for nearby friendly units"
     },
     {
       "Id": 1952543841,
@@ -46,15 +46,17 @@
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_8338"
+      "Value": "Blessing of Seradane"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_15552"
+      "Value": "Empowers friendly units in a radius of \u003CA0PL,Area1\u003E, increasing their movement speed by \u003CA0PL,DataA1,%\u003E% and attack rate by \u003CA0PL,DataB1,%\u003E%."
     }
   ]
 }

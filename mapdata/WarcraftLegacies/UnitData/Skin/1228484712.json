@@ -8,32 +8,32 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_16553"
+      "Value": "(goblin)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_5131"
+      "Value": "Q"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.7
+      "Value": ""
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_2316"
+      "Value": "Small personal tank. |r|n|cffffcc00|nAbilities:|R Ermergency Repairs.|n|n|cff99b4d1|r|cffffcc00Attacks land units.|n|cff99b4d1Can only train 12."
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_1928"
+      "Value": "Personal Tank"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_1930"
+      "Value": "Train Personal Tank"
     },
     {
       "Id": 1684960117,
@@ -52,7 +52,7 @@
     },
     {
       "Id": 2020631157,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1831952757,
@@ -62,7 +62,7 @@
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 2
+      "Value": ""
     }
   ]
 }

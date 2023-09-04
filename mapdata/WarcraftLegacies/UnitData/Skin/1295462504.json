@@ -7,12 +7,12 @@
   "Modifications": [
     {
       "Id": 2037408373,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19891"
+      "Value": "(Kul tiras Altar)"
     },
     {
       "Id": 1818520949,
@@ -22,17 +22,17 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_2363"
+      "Value": "X"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.9
+      "Value": ""
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 3
+      "Value": ""
     },
     {
       "Id": 1935832437,
@@ -42,17 +42,17 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_3432"
+      "Value": "Revives slain Heroes and Demi-heroes."
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_15982"
+      "Value": "Altar of Admirals"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_15983"
+      "Value": "Build Altar of Admirals"
     },
     {
       "Id": 1868786037,

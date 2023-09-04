@@ -7,12 +7,12 @@
   "Modifications": [
     {
       "Id": 2037408373,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_1774"
+      "Value": "Ragnaros Summoning Pedestal"
     },
     {
       "Id": 1818520949,
@@ -27,20 +27,20 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.5
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_3225"
+      "Value": "(pedestal)"
     },
     {
       "Id": 1735156597,
-      "Value": 100
+      "Value": ""
     },
     {
       "Id": 1651270517,
-      "Value": 100
+      "Value": ""
     }
   ]
 }

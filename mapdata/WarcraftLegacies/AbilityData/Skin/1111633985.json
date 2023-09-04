@@ -8,48 +8,50 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_10546"
+      "Value": "(Dagran Fire Elementals)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_11306"
+      "Value": "W"
     },
     {
       "Id": 2020635233,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_11728"
+      "Value": "E"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_10549"
+      "Value": "Learn Immolation"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_10550"
+      "Value": "Engulfs the Demon Hunter in flames, causing 20 damage per second to nearby enemy land units. |nDrains mana until deactivated. |n|n"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_10551"
+      "Value": "Activate Immolation"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_10552"
+      "Value": "Activate Immolation to engulf this unit in flames, causing 25 damage per second to nearby enemy land units. |nDrains mana until deactivated."
     },
     {
       "Id": 1802007905,
       "Type": 3,
-      "Value": "TRIGSTR_11317"
+      "Value": "W"
     }
   ]
 }

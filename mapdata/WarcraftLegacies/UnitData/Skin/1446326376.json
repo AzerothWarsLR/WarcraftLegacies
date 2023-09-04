@@ -13,7 +13,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_3028"
+      "Value": "(Kul\u0027tiras)"
     },
     {
       "Id": 1818520949,
@@ -23,12 +23,12 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_4305"
+      "Value": "E"
     },
     {
       "Id": 845245813,
       "Type": 2,
-      "Value": 0.1
+      "Value": ""
     },
     {
       "Id": 1832018293,
@@ -38,22 +38,22 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_2070"
+      "Value": "Proudmoore Flagship"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_11422"
+      "Value": "Build Proudmoore Flagship"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_9340"
+      "Value": "Pride of the Kul\u0027tiran fleet. Each Warship built is a different flagship with slightly different attributes. |n|n|cff99b4d1Can only build 5.|r|n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 1.4
+      "Value": ""
     }
   ]
 }

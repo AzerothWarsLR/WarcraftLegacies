@@ -13,12 +13,12 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_19269"
+      "Value": "(sentinel) 2"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_16720"
+      "Value": "Driven by Vengance"
     },
     {
       "Id": 1918988897,
@@ -28,12 +28,12 @@
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_11038"
+      "Value": "|cffffcc00(E)|r - Learn Conveyance Aura - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_11039"
+      "Value": "Galen has always been an adept commander and his skills give his armies increased mobility. Increases the movement speed of all nearby friendly units.|n|n|cffffcc00Level 1|r - 15% increased movement speed. |n|cffffcc00Level 2|r - 20% increased movement speed. |n|cffffcc00Level 3|r - 25% increased movement speed. |n|cffffcc00Level 4|r - 30% increased movement speed. |n"
     },
     {
       "Id": 1952543841,
@@ -42,59 +42,67 @@
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_16740"
+      "Value": "Driven by Vengance"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_13462"
+      "Value": "Conveyance Aura - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_19155"
+      "Value": "Conveyance Aura - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
+      "Pointer": 4,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_19264"
+      "Value": "Conveyance Aura - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_16843"
+      "Value": "Increases nearby friendly units\u0027 movement speed by 15%. |nThis ability will stack with Joy of the Hunt."
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_19266"
+      "Value": "Increases nearby friendly units\u0027 movement speed by 20%."
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_11046"
+      "Value": "Increases nearby friendly units\u0027 movement speed by 25%."
     },
     {
       "Level": 4,
+      "Pointer": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_11047"
+      "Value": "Increases nearby friendly units\u0027 movement speed by 30%."
     },
     {
       "Id": 2020631137,
-      "Value": 3
+      "Value": ""
     },
     {
       "Id": 2037408353,
-      "Value": 1
+      "Value": ""
     }
   ]
 }

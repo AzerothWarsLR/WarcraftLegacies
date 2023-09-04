@@ -12,12 +12,12 @@
     },
     {
       "Id": 1651270517,
-      "Value": 200
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_2819"
+      "Value": "(Lordaeron)"
     },
     {
       "Id": 1818520949,
@@ -26,36 +26,36 @@
     },
     {
       "Id": 1735156597,
-      "Value": 200
+      "Value": ""
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_2919"
+      "Value": "Q"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_3338"
+      "Value": "Veteran Footman"
     },
     {
       "Id": 1919705973,
-      "Value": 200
+      "Value": ""
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_3339"
+      "Value": "Train Veteran Footman"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_2114"
+      "Value": "Versatile foot soldier of Lordaeron.|n|cfff5962dAbilities:|R Charge, Perfect Defend, Veteran\u0027s Insight|n|n|cffffcc00Attacks land units.|r"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.9
+      "Value": ""
     }
   ]
 }

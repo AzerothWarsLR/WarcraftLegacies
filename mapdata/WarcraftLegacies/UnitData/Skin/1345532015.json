@@ -7,36 +7,36 @@
   "Modifications": [
     {
       "Id": 2020631157,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 2037408373,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_18805"
+      "Value": "(Goblin Barracks)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_2165"
+      "Value": "A"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.85
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_19937"
+      "Value": "Mercenary Den"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_19938"
+      "Value": "Build Mercenary Den"
     },
     {
       "Id": 1935832437,
@@ -46,7 +46,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_1582"
+      "Value": "Bootcamp for the Goblin Army.|n|cfff5962dTrains:|R Ogre Mercenaries, Gunners, Sappers"
     },
     {
       "Id": 1818520949,

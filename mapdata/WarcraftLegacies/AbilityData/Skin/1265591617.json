@@ -13,29 +13,31 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_6575"
+      "Value": "(Fel Horde-Zeth\u0027Gor)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_14658"
+      "Value": "C"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_6577"
+      "Value": "Summon Eye of Grillok"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_6578"
+      "Value": "Summon Eyes of Grillok"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_6579"
+      "Value": "Summons 3 invulnerable Eyes of Grillok. |n|cffffcc00Lasts 180 seconds.|n240 second cooldown.|R |n|n|cffffcc00Attacks land units.|r"
     }
   ]
 }

@@ -12,26 +12,26 @@
     },
     {
       "Id": 2020631137,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 2037408353,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_9415"
+      "Value": "(Kirin Tor-Drek\u0027thar)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_10854"
+      "Value": "W"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_9417"
+      "Value": "Evocation"
     },
     {
       "Id": 1918988897,
@@ -40,34 +40,36 @@
     },
     {
       "Id": 2020635233,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_10699"
+      "Value": "E"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_9419"
+      "Value": "Learn Wise Council - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_9420"
+      "Value": "The hero utters mystical words, increasing the magical powers of nearby allies.|n|n|cffffcc00Level 1|r - Adds 50 mana to nearby friendly units. |n|cffffcc00Level 2|r - Adds 100 mana to nearby friendly units. |n|cffffcc00Level 3|r - Adds 150 mana to nearby friendly units. |n|cffffcc00Level 4|r - Adds 200 mana to nearby friendly units.|n|cffffcc00Level 5|r - Adds 250 mana to nearby friendly units. "
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_9421"
+      "Value": "Evocation"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_9422"
+      "Value": "Instantly restores 100 of the caster\u0027s mana."
     }
   ]
 }

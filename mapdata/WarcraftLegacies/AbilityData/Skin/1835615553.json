@@ -11,7 +11,7 @@
     },
     {
       "Id": 2020631137,
-      "Value": 3
+      "Value": ""
     },
     {
       "Id": 1952539489,
@@ -21,17 +21,17 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_12463"
+      "Value": "(velen)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_6699"
+      "Value": "R"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_6172"
+      "Value": "Divine Storm"
     },
     {
       "Id": 1918988897,
@@ -40,58 +40,64 @@
     },
     {
       "Id": 2020635233,
-      "Value": 3
+      "Value": ""
     },
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_6711"
+      "Value": "R"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_6174"
+      "Value": "Learn Divine Storm - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_6175"
+      "Value": "Unleashes divine flames, causing damage to nearby enemy land units. |nDrains mana until deactivated. |n|n|cffffcc00Level 1|r - 35 damage per second. |n|cffffcc00Level 2|r - 60 damage per second. |n|cffffcc00Level 3|r - 85 damage per second."
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_6176"
+      "Value": "Activate Divine Storm - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_6177"
+      "Value": "Activate Divine Storm - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_6178"
+      "Value": "Activate Divine Storm - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_6179"
+      "Value": "Activate Divine Storm to engulf this unit in divine flames, causing 35 damage per second to nearby enemy land units. |nDrains mana until deactivated."
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_6180"
+      "Value": "Activate Divine Storm to engulf this unit in divine flames, causing 60 damage per second to nearby enemy land units. |nDrains mana until deactivated."
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_6181"
+      "Value": "Activate Divine Storm to engulf this unit in divine flames, causing 85 damage per second to nearby enemy land units. |nDrains mana until deactivated."
     },
     {
       "Id": 1918989665,
@@ -100,36 +106,40 @@
     },
     {
       "Id": 2019718497,
-      "Value": 3
+      "Value": ""
     },
     {
       "Id": 1802007905,
       "Type": 3,
-      "Value": "TRIGSTR_6713"
+      "Value": "R"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829715809,
       "Type": 3,
-      "Value": "TRIGSTR_6183"
+      "Value": "Deactivate Divine Storm - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 829715809,
       "Type": 3,
-      "Value": "TRIGSTR_6184"
+      "Value": "Deactivate Divine Storm - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 829715809,
       "Type": 3,
-      "Value": "TRIGSTR_6185"
+      "Value": "Deactivate Divine Storm - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829781345,
       "Type": 3,
-      "Value": "TRIGSTR_6186"
+      "Value": "Deactivate Divine Storm to stop draining mana."
     }
   ]
 }

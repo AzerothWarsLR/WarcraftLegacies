@@ -8,7 +8,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_3456"
+      "Value": "(Portal)"
     },
     {
       "Id": 1818520949,
@@ -18,32 +18,32 @@
     {
       "Id": 2053990773,
       "Type": 2,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 2054188149,
       "Type": 2,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1886940533,
       "Type": 1,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1920494965,
       "Type": 1,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_14583"
+      "Value": "Entrance"
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 3
+      "Value": ""
     },
     {
       "Id": 1684960117,
@@ -52,12 +52,12 @@
     },
     {
       "Id": 1751348597,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 1.5
+      "Value": ""
     }
   ]
 }

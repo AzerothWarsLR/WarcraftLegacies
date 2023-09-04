@@ -17,7 +17,7 @@
     },
     {
       "Id": 2020631137,
-      "Value": 3
+      "Value": ""
     },
     {
       "Id": 1952539489,
@@ -27,12 +27,12 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_10780"
+      "Value": "(Scourge - Rivendare)"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_10781"
+      "Value": "Death\u0027s Advance"
     },
     {
       "Id": 1918988897,
@@ -41,53 +41,59 @@
     },
     {
       "Id": 2020635233,
-      "Value": 3
+      "Value": ""
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_10782"
+      "Value": "Learn Death\u0027s Advance - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_10783"
+      "Value": "Gives nearby friendly units a bonus to attack damage and armor.|n|n|cffffcc00Level 1|r - 15 bonus damage, 4 bonus armor, lasts 15 seconds.|n|cffffcc00Level 2|r - 30 bonus damage, 8 bonus armor, lasts 20 seconds. |n|cffffcc00Level 3|r - 45 bonus damage, 12 bonus armor, lasts 25 seconds."
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_10784"
+      "Value": "Horn of Stormwind - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_10785"
+      "Value": "Horn of Stormwind - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_10786"
+      "Value": "Horn of Stormwind - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_10787"
+      "Value": "Grants nearby friendly units a bonus 15 point to attack damage and a 4 point bonus to defense. |nLasts 15 seconds."
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_10788"
+      "Value": "Grants nearby friendly units a bonus 30 point to attack damage and a 8 point bonus to defense. |nLasts 20 seconds."
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_10789"
+      "Value": "Grants nearby friendly units a bonus 45 point to attack damage and a 12 point bonus to defense. |nLasts 25 seconds."
     }
   ]
 }

@@ -8,7 +8,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_1898"
+      "Value": "(Sentinels-Moonhunter)"
     },
     {
       "Id": 1818520949,
@@ -17,21 +17,21 @@
     },
     {
       "Id": 1735156597,
-      "Value": 150
+      "Value": ""
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 1.4
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_1899"
+      "Value": "Elven Trap"
     },
     {
       "Id": 1919705973,
-      "Value": 150
+      "Value": ""
     }
   ]
 }

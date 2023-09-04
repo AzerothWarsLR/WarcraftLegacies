@@ -12,28 +12,29 @@
     },
     {
       "Id": 2020631137,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_15663"
+      "Value": "(Stormwind - Stormwind Champion)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_10568"
+      "Value": "W"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_9112"
+      "Value": "Safeguard"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_9113"
+      "Value": "Safeguard"
     },
     {
       "Id": 1918989665,
@@ -42,30 +43,33 @@
     },
     {
       "Id": 2019718497,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1802007905,
       "Type": 3,
-      "Value": "TRIGSTR_10570"
+      "Value": "W"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829715809,
       "Type": 3,
-      "Value": "TRIGSTR_21244"
+      "Value": "Safeguard"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829781345,
       "Type": 3,
-      "Value": "TRIGSTR_9117"
+      "Value": "Deactivate to move at normal speed, but take regular damage."
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_21245"
+      "Value": "Activate to take only \u003CA0J6,DataA1,%\u003E% damage from incoming spells, Magic and Piercing attacks. While Safeguard is active, movement speed is reduced by \u003CA0J6,DataC1,%\u003E%."
     }
   ]
 }

@@ -17,27 +17,27 @@
     },
     {
       "Id": 2020631157,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_20826"
+      "Value": "(sunfury)"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_20909"
+      "Value": "Train Skyship"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_5935"
+      "Value": "W"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_20910"
+      "Value": "Skyship"
     },
     {
       "Id": 1868786037,
@@ -57,12 +57,12 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.8
+      "Value": ""
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_10180"
+      "Value": "Flying attack gunship. Has a huge mana pool but no base mana regen. Use it to harvest mana for your Energy Wagons to absord.|n|cfff5962dAbilities:|R Arcane Absorption|n|n|cff99b4d1Can only train 3.|r|n|cffffcc00Attacks land units.|r"
     }
   ]
 }

@@ -13,12 +13,12 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_9983"
+      "Value": "(Purple - Cleric. Dark Green - Chaplain)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_10665"
+      "Value": "Q"
     },
     {
       "Id": 1952542049,
@@ -28,25 +28,28 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_9985"
+      "Value": "Smite"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_9986"
+      "Value": "Smite"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_15922"
+      "Value": "Fires a bolt of holy energy at a target enemy unit, dealing 55 damage and stunning the target for 3 seconds."
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_9988"
+      "Value": "Fires a bolt of holy energy at a target enemy unit, dealing 75 damage and stunning the target for 5 seconds."
     },
     {
       "Id": 1918989665,

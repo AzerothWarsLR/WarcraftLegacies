@@ -12,24 +12,26 @@
     },
     {
       "Id": 2037408353,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_8612"
+      "Value": "Ysera\u0027s Blessing"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_8613"
+      "Value": "Ysera\u0027s Blessing"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_8614"
+      "Value": "Reduces the damage taken from Piercing attacks by 10%, and spells and Magic attacks by 15%."
     }
   ]
 }

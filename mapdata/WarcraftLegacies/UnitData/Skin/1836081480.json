@@ -7,47 +7,47 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.9
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_2926"
+      "Value": "Lord Admiral of Kul Tiras"
     },
     {
       "Id": 1869770869,
       "Type": 3,
-      "Value": "TRIGSTR_12495"
+      "Value": "Daelin Proudmoore"
     },
     {
       "Id": 1953980789,
       "Type": 3,
-      "Value": "TRIGSTR_12496"
+      "Value": "Revive Daelin Proudmoore"
     },
     {
       "Id": 1919972469,
       "Type": 3,
-      "Value": "TRIGSTR_12497"
+      "Value": "Revive Daelin Proudmoore"
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_14733"
+      "Value": "(kul tiras)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_1578"
+      "Value": "Q"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_6936"
+      "Value": "Summon Daelin"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_3148"
+      "Value": "Warrior Hero, tough hero that excels at damaging enemy units.|n|cfff5962dCan learn:|R Call Admiral Guard, Rally, Mighty Guard, Thunderstorm|n|n|cffffcc00Attacks land units.|R"
     }
   ]
 }

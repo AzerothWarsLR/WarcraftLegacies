@@ -12,12 +12,12 @@
     },
     {
       "Id": 2020631157,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_11667"
+      "Value": "(Zandalar)"
     },
     {
       "Id": 1818520949,
@@ -27,32 +27,32 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_6532"
+      "Value": "E"
     },
     {
       "Id": 2053990773,
       "Type": 2,
-      "Value": 100
+      "Value": ""
     },
     {
       "Id": 2020633717,
       "Type": 2,
-      "Value": -20
+      "Value": ""
     },
     {
       "Id": 2037410933,
       "Type": 2,
-      "Value": 60
+      "Value": ""
     },
     {
       "Id": 2054188149,
       "Type": 2,
-      "Value": 76
+      "Value": ""
     },
     {
       "Id": 828468597,
       "Type": 2,
-      "Value": 0.15
+      "Value": ""
     },
     {
       "Id": 1831952757,
@@ -62,37 +62,37 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 1.6
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_20473"
+      "Value": "Loa Medium"
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 3
+      "Value": ""
     },
     {
       "Id": 1751675765,
       "Type": 1,
-      "Value": 200
+      "Value": ""
     },
     {
       "Id": 2003334005,
       "Type": 1,
-      "Value": 200
+      "Value": ""
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_20474"
+      "Value": "Train Loa Medium"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_10798"
+      "Value": "Crazed medium that speak through the other world. |n|cfff5962dAbilities:|R Dark Regeneration, Siphon Mana, Inject Spiderling|n|n|cff99b4d1Can only train 6.|n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Id": 1684960117,

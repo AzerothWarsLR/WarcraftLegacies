@@ -8,12 +8,12 @@
     {
       "Id": 1885959270,
       "Type": 3,
-      "Value": "TRIGSTR_12291"
+      "Value": "Inferno Strike"
     },
     {
       "Id": 1700951398,
       "Type": 3,
-      "Value": "TRIGSTR_12677"
+      "Value": "This unit is in an Inferno Strike, and is taking damage over time."
     },
     {
       "Id": 1952543846,

@@ -12,36 +12,36 @@
     },
     {
       "Id": 2020631157,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 2037408373,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1936024681,
       "Type": 3,
-      "Value": "TRIGSTR_17069"
+      "Value": "Summons Gatherer"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_13798"
+      "Value": "X"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_3704"
+      "Value": "Summon Gatherer"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_17070"
+      "Value": "Purchase Summon Gatherer"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_17071"
+      "Value": "Summons Gatherer"
     }
   ]
 }

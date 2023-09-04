@@ -13,17 +13,17 @@
     {
       "Id": 1885959270,
       "Type": 3,
-      "Value": "TRIGSTR_13452"
+      "Value": "Shock"
     },
     {
       "Id": 1700951398,
       "Type": 3,
-      "Value": "TRIGSTR_13453"
+      "Value": "This unit is in a shock. It cannot cast spells."
     },
     {
       "Id": 1835101798,
       "Type": 3,
-      "Value": "TRIGSTR_13454"
+      "Value": "Shock"
     }
   ]
 }

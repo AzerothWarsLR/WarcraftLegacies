@@ -6,20 +6,20 @@
   "Modifications": [
     {
       "Id": 1651270517,
-      "Value": 200
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_890"
+      "Value": "(level 2)"
     },
     {
       "Id": 1735156597,
-      "Value": 200
+      "Value": ""
     },
     {
       "Id": 1919705973,
-      "Value": 200
+      "Value": ""
     }
   ]
 }

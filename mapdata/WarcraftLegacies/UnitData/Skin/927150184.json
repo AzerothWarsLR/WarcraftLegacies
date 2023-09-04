@@ -7,31 +7,31 @@
   "Modifications": [
     {
       "Id": 2020631157,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 2037408373,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_20742"
+      "Value": "(Sunfury Farm)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_5846"
+      "Value": "W"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.9
+      "Value": ""
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1935832437,
@@ -41,7 +41,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_3476"
+      "Value": "Closed environement of lush life in this desolate plane.|nProvides 100 food, which increases the maximum number of units that can be trained.|n|cfff5962dAbilities:|R Regrow Trees |n|n|cffff0000Make sure to build them at each Bio area in Netherstorm.|r|n|cff99b4d1Can only train 3.|r"
     },
     {
       "Id": 1818520949,
@@ -56,12 +56,12 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_20744"
+      "Value": "Biodome"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_20745"
+      "Value": "Build Biodome"
     }
   ]
 }

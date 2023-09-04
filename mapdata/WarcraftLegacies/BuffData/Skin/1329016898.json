@@ -8,12 +8,12 @@
     {
       "Id": 1885959270,
       "Type": 3,
-      "Value": "TRIGSTR_13177"
+      "Value": "Earth Shackles"
     },
     {
       "Id": 1700951398,
       "Type": 3,
-      "Value": "TRIGSTR_13178"
+      "Value": "This unit is bound in Earth Shackles; it cannot move or attack and will take damage over time."
     },
     {
       "Id": 1952543846,

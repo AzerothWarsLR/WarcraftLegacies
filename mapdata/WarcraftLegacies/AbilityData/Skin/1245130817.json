@@ -8,36 +8,40 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_11310"
+      "Value": "(Teal - Raider)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_11833"
+      "Value": "Q"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_11312"
+      "Value": "Ensnare (|cffffcc00Q|r) - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_11313"
+      "Value": "Ensnare (|cffffcc00Q|r) - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_11314"
+      "Value": "Causes a target enemy unit to be bound to the ground so that it cannot move for \u003CA07J,Dur1\u003E seconds. Air units that are ensnared can be attacked as though they were land units."
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_11315"
+      "Value": "Causes a target enemy unit to be bound to the ground so that it cannot move for \u003CA07J,Dur2\u003E seconds. Air units that are ensnared can be attacked as though they were land units."
     }
   ]
 }

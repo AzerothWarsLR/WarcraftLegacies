@@ -7,17 +7,17 @@
   "Modifications": [
     {
       "Id": 2020631157,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_20823"
+      "Value": "(sunfury)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_5873"
+      "Value": "W"
     },
     {
       "Id": 1831952757,
@@ -27,17 +27,17 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_20905"
+      "Value": "Bloodwarder"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_20906"
+      "Value": "Train Bloodwarder"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_20981"
+      "Value": "The strongest lieutenants of Kael. Powerful versus magic users.|n|cfff5962dAbilities:|R Dashing Phoenix, Phoenix, Mana Shield, Feedback, Mana Shield, Arcane Absorption, Resistant Skin|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land and air units."
     },
     {
       "Id": 1684960117,
@@ -52,7 +52,7 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.9
+      "Value": ""
     },
     {
       "Id": 1868786037,

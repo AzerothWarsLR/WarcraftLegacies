@@ -13,11 +13,11 @@
     {
       "Id": 1953980789,
       "Type": 3,
-      "Value": "TRIGSTR_18166"
+      "Value": "Revive"
     },
     {
       "Id": 1667462261,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1818520949,
@@ -26,7 +26,7 @@
     },
     {
       "Id": 1919252085,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1831952757,
@@ -36,26 +36,26 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_18167"
+      "Value": "Dark Pharaoh"
     },
     {
       "Id": 1970434165,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1869770869,
       "Type": 3,
-      "Value": "TRIGSTR_18170"
+      "Value": "Tekahn"
     },
     {
       "Id": 1919972469,
       "Type": 3,
-      "Value": "TRIGSTR_18172"
+      "Value": "Revive"
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 4
+      "Value": ""
     },
     {
       "Id": 1769173877,
@@ -70,31 +70,31 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_18208"
+      "Value": "Summon Zakajz"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_6339"
+      "Value": "E"
     },
     {
       "Id": 2037408373,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 1.6
+      "Value": ""
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_18218"
+      "Value": "Warrior Hero, adept at debuffing enemies.|n|cfff5962dAbilities:|r Pulverise, Unholy Armor |n|cfff5962dCan learn:|R Shadow Ball, Devour Magic, Death Aura, Roar of Despair |n|n|cffffcc00Attacks land and air units.|R"
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_18243"
+      "Value": "(Tolvir)"
     }
   ]
 }

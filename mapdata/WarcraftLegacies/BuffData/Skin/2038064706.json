@@ -17,17 +17,17 @@
     {
       "Id": 1700951398,
       "Type": 3,
-      "Value": "TRIGSTR_16175"
+      "Value": "This unit has Frenzy; its attack rate is increased."
     },
     {
       "Id": 1835101798,
       "Type": 3,
-      "Value": "TRIGSTR_16757"
+      "Value": "Frenzy"
     },
     {
       "Id": 1718840934,
       "Type": 3,
-      "Value": "TRIGSTR_17166"
+      "Value": " (Warlock)"
     },
     {
       "Id": 811693158,
@@ -41,7 +41,7 @@
     },
     {
       "Id": 1667331174,
-      "Value": 1
+      "Value": ""
     }
   ]
 }

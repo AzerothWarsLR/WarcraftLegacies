@@ -8,12 +8,12 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_11323"
+      "Value": "(Sentinels-Priestess)"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_11324"
+      "Value": "Priestess Weapon"
     },
     {
       "Id": 1952543841,
@@ -27,7 +27,7 @@
     },
     {
       "Id": 1667331169,
-      "Value": 1
+      "Value": ""
     }
   ]
 }

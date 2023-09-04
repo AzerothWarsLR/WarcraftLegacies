@@ -13,23 +13,24 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_9703"
+      "Value": "(Fel Horde-Fel Warlock)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_11131"
+      "Value": "E"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_9705"
+      "Value": "Unholy Armor"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_9706"
+      "Value": "Unholy Armor"
     },
     {
       "Id": 1918989665,
@@ -39,13 +40,14 @@
     {
       "Id": 1802007905,
       "Type": 3,
-      "Value": "TRIGSTR_11259"
+      "Value": "E"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_15675"
+      "Value": "Increases a target friendly unit\u0027s armor by \u003CA0F8,DataB1\u003E for \u003CA0F8,Dur1\u003E seconds at the cost of 6% of its current hit points."
     }
   ]
 }

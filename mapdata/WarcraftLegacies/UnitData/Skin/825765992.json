@@ -12,12 +12,12 @@
     },
     {
       "Id": 2020631157,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_18663"
+      "Value": " (Ragnaros T3)"
     },
     {
       "Id": 1818520949,
@@ -27,12 +27,12 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_14050"
+      "Value": "C"
     },
     {
       "Id": 845245813,
       "Type": 2,
-      "Value": 0.35
+      "Value": ""
     },
     {
       "Id": 1831952757,
@@ -47,12 +47,12 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.95
+      "Value": ""
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 4.5
+      "Value": ""
     },
     {
       "Id": 1935832437,
@@ -62,17 +62,17 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_18665"
+      "Value": "Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Mason, Thane |n|cfff5962dAbilities:|R Dwarven Masonry, Powered Up Ammunition|n|cfff5962dResearches:|R Full Scale Escalation"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_18498"
+      "Value": "Great Trelleborg"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_18731"
+      "Value": "Solid fort of Ragnaros"
     }
   ]
 }

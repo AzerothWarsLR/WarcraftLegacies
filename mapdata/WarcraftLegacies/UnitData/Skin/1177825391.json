@@ -8,42 +8,42 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_16336"
+      "Value": "(troll)"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.85
+      "Value": ""
     },
     {
       "Id": 1751675765,
       "Type": 1,
-      "Value": 130
+      "Value": ""
     },
     {
       "Id": 2003334005,
       "Type": 1,
-      "Value": 120
+      "Value": ""
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_1746"
+      "Value": "Voodoo master of the Darkspear.|n|cfff5962dAbilities:|R Heal|n|cfff5962dCan Learn:|R Stasis Trap, Hex|n|n|cffffcc00Attacks land and air units.|R\r\n"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_16364"
+      "Value": "Hex Doctor"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_16365"
+      "Value": "Train Hex Doctor"
     },
     {
       "Id": 1953850229,
       "Type": 3,
-      "Value": "TRIGSTR_16810"
+      "Value": "- Heal,- Heal|n- Stasis Trap,- Heal|n- Stasis Trap|n- Hex"
     }
   ]
 }

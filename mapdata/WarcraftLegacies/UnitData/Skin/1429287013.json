@@ -7,27 +7,27 @@
   "Modifications": [
     {
       "Id": 2020631157,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_17226"
+      "Value": "(Illidan)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_3056"
+      "Value": "S"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.85
+      "Value": ""
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_19373"
+      "Value": "Build Coral of Lore"
     },
     {
       "Id": 1935832437,
@@ -37,12 +37,12 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_11620"
+      "Value": "Spellcaster producing building.|n|cfff5962dTrains:|R Siren, Shadowcaster|n|cfff5962dResearches:|R Sirene Adept Training, Shadowcaster Adept Training|n|n|cffffcc00Attacks land units.|r"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_19375"
+      "Value": "Coral of Lore"
     },
     {
       "Id": 1818520949,

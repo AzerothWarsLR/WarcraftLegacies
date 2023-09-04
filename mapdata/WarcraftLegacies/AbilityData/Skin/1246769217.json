@@ -8,29 +8,31 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_16253"
+      "Value": "(Goblin - Oil Rig Constructor)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_8748"
+      "Value": "R"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_3985"
+      "Value": "Locate Oil"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_7046"
+      "Value": "Locate Oil"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_10944"
+      "Value": "Pings the location of all oil deposits on the map."
     },
     {
       "Id": 1953653089,
@@ -39,7 +41,7 @@
     },
     {
       "Id": 2020631137,
-      "Value": 3
+      "Value": ""
     }
   ]
 }

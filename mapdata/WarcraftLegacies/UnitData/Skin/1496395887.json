@@ -13,7 +13,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_1621"
+      "Value": " (Light Blue - Shandris)(Level 2)"
     },
     {
       "Id": 1818520949,
@@ -23,17 +23,17 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 1.4
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_1622"
+      "Value": "Sentinel Standard"
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 1.55
+      "Value": ""
     }
   ]
 }

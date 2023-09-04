@@ -12,16 +12,16 @@
     },
     {
       "Id": 1651270517,
-      "Value": 230
+      "Value": ""
     },
     {
       "Id": 2020631157,
-      "Value": 3
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19203"
+      "Value": "(gnoll)"
     },
     {
       "Id": 1818520949,
@@ -30,31 +30,31 @@
     },
     {
       "Id": 1735156597,
-      "Value": 230
+      "Value": ""
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_4056"
+      "Value": "R"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_19296"
+      "Value": "Gnoll Overseer"
     },
     {
       "Id": 1919705973,
-      "Value": 230
+      "Value": ""
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_19297"
+      "Value": "Train Gnoll Overseer"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_19298"
+      "Value": "Powerful Gnoll Leader.|n|cfff5962dAbilities:|R Earth Healing, Taunt, Bash|n|cff99b4d1Can only train 4.|r|n|cffffcc00Attacks land units.|r"
     },
     {
       "Id": 1684960117,
@@ -64,12 +64,12 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 1.7
+      "Value": ""
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 1.5
+      "Value": ""
     }
   ]
 }

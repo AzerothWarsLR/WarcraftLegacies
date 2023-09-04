@@ -13,12 +13,12 @@
     {
       "Id": 1885959270,
       "Type": 3,
-      "Value": "TRIGSTR_13353"
+      "Value": "Magic Nullification"
     },
     {
       "Id": 1700951398,
       "Type": 3,
-      "Value": "TRIGSTR_13354"
+      "Value": "This unit is under the effects Magic Nullification. It\u0027s mana is slowly being drained."
     },
     {
       "Id": 1952543846,

@@ -1,51 +1,223 @@
-gg_rct_Solliden_Farmstead = nil
+gg_rct_Aerie_Peak_Copy = nil
+gg_rct_Aerie_Peak = nil
+gg_rct_AkamaUnlock = nil
+gg_rct_AlteracAmbient = nil
+gg_rct_AlteracLegionLanding = nil
+gg_rct_Andorhal = nil
+gg_rct_Andrassil = nil
 gg_rct_Arathi_Ships = nil
-gg_rct_Auberdine_Ships = nil
+gg_rct_ArchimondeChannel = nil
+gg_rct_Area52Unlock = nil
+gg_rct_ArthasRandomPoint = nil
+gg_rct_ArtifactDummyInstance = nil
+gg_rct_AshbringerForge = nil
+gg_rct_AshenvaleAmbient = nil
+gg_rct_AshenvaleAmbient2 = nil
+gg_rct_AshenvaleAmbient3 = nil
+gg_rct_AshenvaleAmbient4 = nil
+gg_rct_AshenvaleEmeraldPortal = nil
+gg_rct_AshenvaleUnlock = nil
+gg_rct_AstranaarUnlock = nil
+gg_rct_AszharaAmbient1 = nil
 gg_rct_Auberdine_Ships_2 = nil
+gg_rct_Auberdine_Ships = nil
+gg_rct_AuberdineUnlock = nil
+gg_rct_AzsharaAmbient2 = nil
+gg_rct_AzuremystAmbient = nil
+gg_rct_BalorAmbient = nil
+gg_rct_BarrenAmbient1 = nil
+gg_rct_BarrenAmbient2 = nil
+gg_rct_BarrenAmbient3 = nil
+gg_rct_BarrenAmbient4 = nil
+gg_rct_BarrenAmbient5 = nil
+gg_rct_Biodome1 = nil
+gg_rct_Biodome2 = nil
+gg_rct_Biodome3 = nil
+gg_rct_BlackrockUnlock = nil
+gg_rct_BlackTempleBase = nil
+gg_rct_BlademasterUnlock = nil
+gg_rct_BlastedlandAmbient = nil
+gg_rct_BloodElfSecondChanceSpawn = nil
+gg_rct_BookRetrieval = nil
+gg_rct_BootyBayQuest = nil
 gg_rct_Borean_Tundra = nil
+gg_rct_BridgeAmbient = nil
 gg_rct_Brill = nil
 gg_rct_BrokenIslesA = nil
+gg_rct_BrokenIslesB = nil
+gg_rct_BurningSteppeAmbient2 = nil
+gg_rct_BurningSteppesAmbient = nil
+gg_rct_CaerDarrow = nil
 gg_rct_CaerDarrowShipyard = nil
+gg_rct_CairneStart = nil
+gg_rct_CenarionHoldUnlock = nil
+gg_rct_Cenarius = nil
 gg_rct_Central_Northrend = nil
+gg_rct_Chen = nil
+gg_rct_ClosePortal = nil
 gg_rct_Coldarra = nil
 gg_rct_Corins_Crossing = nil
 gg_rct_Crossroads = nil
+gg_rct_CthunSpawn = nil
 gg_rct_Dalaran = nil
+gg_rct_DalaStartPos = nil
 gg_rct_Dark_Portal_Entrance_1 = nil
+gg_rct_Dark_Portal_Entrance_2 = nil
+gg_rct_Dark_Portal_Entrance_3 = nil
 gg_rct_Dark_Portal_Exit_1 = nil
+gg_rct_Dark_Portal_Exit_2 = nil
+gg_rct_Dark_Portal_Exit_3 = nil
+gg_rct_DarkPortalUnlock = nil
+gg_rct_DarkshireAmbient1 = nil
+gg_rct_DarkshireAmbient2 = nil
+gg_rct_DarkshireAmbient3 = nil
+gg_rct_DarkshireUnlock = nil
 gg_rct_Darrowshire = nil
 gg_rct_Demongate_1 = nil
 gg_rct_DemonGate3 = nil
 gg_rct_Desolace_Ships = nil
-gg_rct_TheAthenaeum = nil
+gg_rct_DesolaceUnlock = nil
+gg_rct_DraeneiQuestKill = nil
+gg_rct_DragonmawPortal = nil
+gg_rct_DragonmawUnlock = nil
+gg_rct_DrakUnlock = nil
+gg_rct_Dreadscar_1 = nil
+gg_rct_Dreadscar_2 = nil
+gg_rct_Dreadscar_3 = nil
+gg_rct_Drekthars_Spellbook = nil
+gg_rct_DrownedTemple = nil
 gg_rct_Dun_Morogh_Ships = nil
+gg_rct_DunmoroghAmbient1 = nil
+gg_rct_DunmoroghAmbient2 = nil
+gg_rct_DunmoroghAmbient3 = nil
+gg_rct_DuskwoodCrypt = nil
+gg_rct_DusthallowAmbient = nil
 gg_rct_Dustwallow_Ships = nil
+gg_rct_East_of_Azeroth = nil
 gg_rct_East_Thandol = nil
 gg_rct_Eastern_Northrend = nil
+gg_rct_EchoIsleAmbient = nil
+gg_rct_EchoUnlock = nil
+gg_rct_ElwinForestAmbient = nil
+gg_rct_EntireMap = nil
+gg_rct_ExodarBaseUnlock = nil
 gg_rct_Far_Eastern_Northrend = nil
+gg_rct_FeathermoonCreeps = nil
+gg_rct_FeathermoonUnlock = nil
 gg_rct_Fenris_ships = nil
+gg_rct_FeralasAmbient1 = nil
+gg_rct_FeralasAmbient2 = nil
+gg_rct_FeralasEmeraldPortal = nil
 gg_rct_Fjord = nil
-gg_rct_Gilneas = nil
+gg_rct_ForsakenStartPos = nil
+gg_rct_FountainOfHealthAlterac = nil
+gg_rct_FountainUnlock = nil
+gg_rct_FTSummon = nil
+gg_rct_GarithosCrusadeSpawn = nil
 gg_rct_Gilneas_Canals = nil
+gg_rct_Gilneas = nil
+gg_rct_GilneasStartPos = nil
+gg_rct_GilneasUnlock1 = nil
+gg_rct_GilneasUnlock2 = nil
+gg_rct_GilneasUnlock3 = nil
+gg_rct_GilneasUnlock4 = nil
+gg_rct_GilneasUnlock5 = nil
+gg_rct_GilneasUnlock6 = nil
 gg_rct_Gnomergan = nil
-gg_rct_Grim_Batol = nil
+gg_rct_GoblinStartPos = nil
 gg_rct_Grim_Batol_Tunnel_Entrance = nil
 gg_rct_Grim_Batol_Tunnel_Top = nil
+gg_rct_Grim_Batol = nil
+gg_rct_GrimBatolAmbient1 = nil
+gg_rct_GrimBatolAmbient2 = nil
+gg_rct_GrizzlyHills = nil
+gg_rct_GromRandomPoint = nil
+gg_rct_GuldansCorpse = nil
+gg_rct_Halaar = nil
 gg_rct_Havenshire = nil
 gg_rct_Hearthglen = nil
+gg_rct_HellfireUnlock = nil
+gg_rct_HideUnitBottomLeft = nil
+gg_rct_HighbankUnlock = nil
+gg_rct_HinterlandAmbient1 = nil
+gg_rct_HinterlandAmbient2 = nil
 gg_rct_HonorHold = nil
 gg_rct_Ice_Crown = nil
 gg_rct_IcecrownShipyard = nil
+gg_rct_IllidanBlackTempleUnlock = nil
+gg_rct_IllidanBoat2 = nil
+gg_rct_IllidanBoat3 = nil
+gg_rct_IllidanBoat4 = nil
+gg_rct_IllidanDalaExit = nil
+gg_rct_IllidanLast = nil
+gg_rct_IllidanStartingPosition = nil
+gg_rct_IllidariUnlockSA = nil
+gg_rct_InstanceOutland = nil
 gg_rct_Ironforge = nil
+gg_rct_IronforgeAmbient = nil
+gg_rct_IslandBlocker1 = nil
+gg_rct_IslandBlocker2 = nil
+gg_rct_IslandBlocker3 = nil
+gg_rct_IslandBlocker4 = nil
+gg_rct_IslandBlocker5 = nil
+gg_rct_IslandBlocker6 = nil
+gg_rct_JainaChannel = nil
+gg_rct_KaelSunwellChannel = nil
 gg_rct_Kali_Ships = nil
+gg_rct_Kalimdor = nil
+gg_rct_KaliRock1 = nil
+gg_rct_KaliRock10 = nil
+gg_rct_KaliRock11 = nil
+gg_rct_KaliRock12 = nil
+gg_rct_KaliRock13 = nil
+gg_rct_KaliRock14 = nil
+gg_rct_KaliRock15 = nil
+gg_rct_KaliRock4 = nil
+gg_rct_KaliRock7 = nil
+gg_rct_KaliRock8 = nil
+gg_rct_KaliRock9 = nil
+gg_rct_KezanAmbient = nil
+gg_rct_KezanUnlock = nil
+gg_rct_KilsorrowUnlock = nil
+gg_rct_KilSummon = nil
+gg_rct_King_Arthas_crown = nil
+gg_rct_KulAttack = nil
+gg_rct_KulTarget = nil
 gg_rct_Kultiras = nil
+gg_rct_LakeshireUnlock = nil
+gg_rct_LegionStartPos = nil
 gg_rct_LichKing = nil
+gg_rct_LightningBolt2 = nil
+gg_rct_LightningBolt3 = nil
 gg_rct_Loch_Modan_Ships = nil
+gg_rct_LochModanAmbient = nil
 gg_rct_Lordaeron_East = nil
+gg_rct_LordaeronAmbient1 = nil
+gg_rct_LordaeronAmbient2 = nil
+gg_rct_LordaeronAmbient3 = nil
+gg_rct_LordaeronAmbient4 = nil
+gg_rct_LordaeronAmbient5 = nil
+gg_rct_LordamereLakeAmbient = nil
+gg_rct_LumberCampUnlock = nil
+gg_rct_MaelstromAmbient = nil
+gg_rct_MaelstromChannel = nil
+gg_rct_MaievStartUnlock = nil
+gg_rct_MonolithNoBuild = nil
 gg_rct_Moonglade = nil
+gg_rct_MoongladeVillage = nil
+gg_rct_Nazjatar = nil
+gg_rct_NethergardeUnlock = nil
+gg_rct_Netherstorm = nil
 gg_rct_Northern_Kali_Ships = nil
+gg_rct_Northrend_Ambiance = nil
 gg_rct_Northrend_ships = nil
+gg_rct_NorthrendLegionLanding = nil
+gg_rct_NyTanaris = nil
+gg_rct_NzothStartPosition = nil
 gg_rct_Orgrimmar = nil
+gg_rct_OrgrimmarFlight = nil
+gg_rct_Outland_Ships = nil
+gg_rct_OutlandToArgus = nil
 gg_rct_Plague_1 = nil
 gg_rct_Plague_2 = nil
 gg_rct_Plague_3 = nil
@@ -56,220 +228,79 @@ gg_rct_Plague_7 = nil
 gg_rct_Quel_Ships_1 = nil
 gg_rct_Quel_Ships_2 = nil
 gg_rct_Quel_Ships_3 = nil
-gg_rct_Quelthalas = nil
-gg_rct_Sargeras_Entrance = nil
-gg_rct_South_EK_Ships = nil
-gg_rct_StonemaulKeep = nil
-gg_rct_Storm_Peaks = nil
-gg_rct_Stormwind = nil
-gg_rct_StratholmeShipyard = nil
-gg_rct_Stromgarde = nil
-gg_rct_Stromwind_antiship = nil
-gg_rct_STV_Ships = nil
-gg_rct_Terenas = nil
-gg_rct_The_Basin = nil
-gg_rct_TwistingNether = nil
-gg_rct_Vandermar_Village = nil
-gg_rct_West_Thandol = nil
-gg_rct_Zulfarrak = nil
-gg_rct_East_of_Azeroth = nil
-gg_rct_West_of_Kalimdor = nil
-gg_rct_FTSummon = nil
-gg_rct_King_Arthas_crown = nil
-gg_rct_Drekthars_Spellbook = nil
-gg_rct_Andorhal = nil
-gg_rct_Aerie_Peak = nil
-gg_rct_TempestKeep = nil
-gg_rct_Sunwell = nil
-gg_rct_Dark_Portal_Exit_2 = nil
-gg_rct_Dark_Portal_Exit_3 = nil
-gg_rct_Dark_Portal_Entrance_2 = nil
-gg_rct_Dark_Portal_Entrance_3 = nil
-gg_rct_Chen = nil
 gg_rct_QuelDanil_Lodge = nil
-gg_rct_Andrassil = nil
-gg_rct_VaultoftheWardens = nil
-gg_rct_Theramore = nil
-gg_rct_Terrordale = nil
-gg_rct_Dreadscar_1 = nil
-gg_rct_Dreadscar_3 = nil
-gg_rct_Dreadscar_2 = nil
-gg_rct_Cenarius = nil
-gg_rct_ThunderBluff = nil
-gg_rct_ThrallLanding = nil
-gg_rct_CairneStart = nil
-gg_rct_GrizzlyHills = nil
-gg_rct_Northrend_Ambiance = nil
-gg_rct_TeldrassilAmbient = nil
-gg_rct_MoongladeVillage = nil
-gg_rct_AzuremystAmbient = nil
-gg_rct_AshenvaleAmbient = nil
-gg_rct_BarrenAmbient1 = nil
-gg_rct_BarrenAmbient2 = nil
-gg_rct_BarrenAmbient3 = nil
-gg_rct_BarrenAmbient4 = nil
-gg_rct_BarrenAmbient5 = nil
-gg_rct_SilithusAmbient = nil
-gg_rct_UngoroAmbient = nil
-gg_rct_FeralasAmbient1 = nil
-gg_rct_FeralasAmbient2 = nil
-gg_rct_AszharaAmbient1 = nil
-gg_rct_AzsharaAmbient2 = nil
-gg_rct_DusthallowAmbient = nil
-gg_rct_EchoIsleAmbient = nil
-gg_rct_ZulfarrakAmbient = nil
-gg_rct_KezanAmbient = nil
-gg_rct_AshenvaleAmbient2 = nil
-gg_rct_WinterspringAmbient1 = nil
-gg_rct_WinterspringAmbient2 = nil
-gg_rct_AshenvaleAmbient3 = nil
-gg_rct_RanazjarAmbient = nil
-gg_rct_AshenvaleAmbient4 = nil
 gg_rct_Queltalas_2 = nil
-gg_rct_StratholmeAmbient = nil
-gg_rct_LordaeronAmbient1 = nil
-gg_rct_TyrHandAmbient = nil
-gg_rct_LordaeronAmbient2 = nil
-gg_rct_LordaeronAmbient3 = nil
-gg_rct_ZulAman_trolls = nil
-gg_rct_LordaeronAmbient4 = nil
-gg_rct_LordaeronAmbient5 = nil
+gg_rct_Quelthalas = nil
 gg_rct_QuelthalasAmbient = nil
-gg_rct_SunwellAmbient = nil
-gg_rct_ShadowfangAmbient = nil
-gg_rct_LordamereLakeAmbient = nil
-gg_rct_SouthshoreAmbient = nil
-gg_rct_AlteracAmbient = nil
-gg_rct_ScholomanceAmbient2 = nil
+gg_rct_RagnarosSummon = nil
+gg_rct_RanazjarAmbient = nil
+gg_rct_RiseBaseUnlock = nil
+gg_rct_RuinOfDalaran = nil
+gg_rct_Sargeras_Entrance = nil
+gg_rct_SatyrCamp = nil
+gg_rct_ScarletHarbor = nil
+gg_rct_Scholomance_Exterior_1 = nil
+gg_rct_Scholomance_Exterior_2 = nil
 gg_rct_ScholomanceAmbient1 = nil
+gg_rct_ScholomanceAmbient2 = nil
+gg_rct_ScholomanceAmbient3 = nil
+gg_rct_SentinelTowerAmbient = nil
+gg_rct_ShadowfangAmbient = nil
+gg_rct_ShadowfangUnlock = nil
+gg_rct_Shadowforge_City = nil
+gg_rct_ShadowmoonBaseUnlock = nil
+gg_rct_ShadowvaultUnlock = nil
+gg_rct_Shattrah = nil
+gg_rct_ShipAmbient = nil
+gg_rct_ShipInside = nil
+gg_rct_ShipTarget = nil
+gg_rct_ShrineBaseUnlock = nil
+gg_rct_SilithusAmbient = nil
+gg_rct_SkullRetrieval = nil
+gg_rct_Solliden_Farmstead = nil
+gg_rct_South_EK_Ships = nil
+gg_rct_SouthshoreAmbient = nil
 gg_rct_SouthshoreAmbient2 = nil
 gg_rct_SouthshoreAmbient3 = nil
 gg_rct_SouthshoreAmbient4 = nil
 gg_rct_SouthshoreAmbient5 = nil
-gg_rct_BridgeAmbient = nil
-gg_rct_ScholomanceAmbient3 = nil
-gg_rct_HinterlandAmbient1 = nil
-gg_rct_HinterlandAmbient2 = nil
-gg_rct_Aerie_Peak_Copy = nil
-gg_rct_TolbaradAmbient = nil
-gg_rct_BalorAmbient = nil
+gg_rct_SouthshoreUnlock = nil
+gg_rct_StonemaulKeep = nil
+gg_rct_Storm_Peaks = nil
+gg_rct_Stormwind = nil
 gg_rct_StormwindAmbient2 = nil
-gg_rct_SentinelTowerAmbient = nil
+gg_rct_StormwindUnlock = nil
+gg_rct_StrahnbradTaxe = nil
+gg_rct_StrahnbradUnlock = nil
 gg_rct_StranglethornAmbient1 = nil
 gg_rct_StranglethornAmbient2 = nil
 gg_rct_StranglethornAmbient3 = nil
-gg_rct_ElwinForestAmbient = nil
-gg_rct_DarkshireAmbient1 = nil
-gg_rct_DarkshireAmbient2 = nil
-gg_rct_DarkshireAmbient3 = nil
-gg_rct_BlastedlandAmbient = nil
-gg_rct_SwampofSorrowsAmbient = nil
-gg_rct_BurningSteppesAmbient = nil
-gg_rct_BurningSteppeAmbient2 = nil
-gg_rct_IronforgeAmbient = nil
-gg_rct_DunmoroghAmbient1 = nil
-gg_rct_DunmoroghAmbient2 = nil
-gg_rct_DunmoroghAmbient3 = nil
-gg_rct_LochModanAmbient = nil
-gg_rct_WetlandAmbient1 = nil
-gg_rct_WetlandAmbient2 = nil
-gg_rct_GrimBatolAmbient1 = nil
-gg_rct_GrimBatolAmbient2 = nil
-gg_rct_LightningBolt2 = nil
-gg_rct_LightningBolt3 = nil
-gg_rct_WaveCrash = nil
-gg_rct_IllidanBoat2 = nil
-gg_rct_IllidanBoat3 = nil
-gg_rct_IllidanBoat4 = nil
-gg_rct_IllidanDalaExit = nil
-gg_rct_IllidanLast = nil
-gg_rct_MaelstromAmbient = nil
-gg_rct_Undercity_Exterior_1 = nil
-gg_rct_Undercity_Exterior_2 = nil
-gg_rct_Undercity_Escape = nil
-gg_rct_DarkshireUnlock = nil
-gg_rct_StormwindUnlock = nil
-gg_rct_LakeshireUnlock = nil
-gg_rct_NethergardeUnlock = nil
+gg_rct_StranglethornBaseBuild = nil
+gg_rct_StratholmeAmbient = nil
+gg_rct_StratholmeShipyard = nil
 gg_rct_StratholmeUnlock = nil
-gg_rct_TyrUnlock = nil
-gg_rct_ShadowfangUnlock = nil
-gg_rct_TrollAttackSpawn = nil
-gg_rct_TrollTarget = nil
-gg_rct_KilsorrowUnlock = nil
-gg_rct_HellfireUnlock = nil
-gg_rct_ThelUnlock = nil
-gg_rct_KulAttack = nil
-gg_rct_KulTarget = nil
-gg_rct_BlademasterUnlock = nil
-gg_rct_ZandalarUnlock = nil
-gg_rct_TwilightOutside = nil
-gg_rct_ShipInside = nil
-gg_rct_ShipAmbient = nil
-gg_rct_ShipTarget = nil
-gg_rct_Kalimdor = nil
-gg_rct_FeathermoonUnlock = nil
-gg_rct_AstranaarUnlock = nil
-gg_rct_AshenvaleUnlock = nil
-gg_rct_DrownedTemple = nil
-gg_rct_DragonmawUnlock = nil
-gg_rct_SouthshoreUnlock = nil
-gg_rct_MaievStartUnlock = nil
-gg_rct_CthunSpawn = nil
-gg_rct_EchoUnlock = nil
-gg_rct_StrahnbradUnlock = nil
-gg_rct_ZeppelinReturn = nil
-gg_rct_Trade1 = nil
-gg_rct_Trade2 = nil
-gg_rct_Trade3 = nil
-gg_rct_Trade4 = nil
-gg_rct_Trader1 = nil
-gg_rct_Trader2 = nil
-gg_rct_Trader3 = nil
-gg_rct_GoblinStartPos = nil
-gg_rct_TempestKeepSpawn = nil
-gg_rct_NyTanaris = nil
-gg_rct_UldumAmbiance = nil
-gg_rct_KaliRock1 = nil
-gg_rct_KaliRock4 = nil
+gg_rct_Stromgarde = nil
+gg_rct_Stromwind_antiship = nil
+gg_rct_STV_Ships = nil
+gg_rct_SunfuryStartingPosition = nil
+gg_rct_Sunwell = nil
+gg_rct_SunwellAmbient = nil
+gg_rct_SwampofSorrowsAmbient = nil
+gg_rct_TeldrassilAmbient = nil
 gg_rct_TeldrassilUnlock = nil
-gg_rct_KaelSunwellChannel = nil
-gg_rct_JainaChannel = nil
-gg_rct_MonolithNoBuild = nil
-gg_rct_DrakUnlock = nil
-gg_rct_ArchimondeChannel = nil
-gg_rct_AkamaUnlock = nil
-gg_rct_WyrmrestTemple = nil
-gg_rct_WorldTunnelExit = nil
-gg_rct_StrahnbradTaxe = nil
-gg_rct_AshbringerForge = nil
-gg_rct_TyrsFall = nil
-gg_rct_DuskwoodCrypt = nil
-gg_rct_OutlandToArgus = nil
-gg_rct_ClosePortal = nil
-gg_rct_GarithosCrusadeSpawn = nil
-gg_rct_GilneasUnlock6 = nil
-gg_rct_GilneasUnlock1 = nil
-gg_rct_GilneasUnlock2 = nil
-gg_rct_GilneasUnlock3 = nil
-gg_rct_GilneasUnlock4 = nil
-gg_rct_GilneasUnlock5 = nil
-gg_rct_TwilightUnlock = nil
-gg_rct_DragonmawPortal = nil
-gg_rct_ScarletHarbor = nil
-gg_rct_ShadowvaultUnlock = nil
-gg_rct_RuinOfDalaran = nil
 gg_rct_TelredorUnlock = nil
-gg_rct_Shattrah = nil
-gg_rct_Halaar = nil
-gg_rct_Tuurem = nil
-gg_rct_InstanceOutland = nil
-gg_rct_Outland_Ships = nil
-gg_rct_IllidanStartingPosition = nil
-gg_rct_ArtifactDummyInstance = nil
-gg_rct_Shadowforge_City = nil
-gg_rct_BlackrockUnlock = nil
-gg_rct_CaerDarrow = nil
+gg_rct_TempestKeep = nil
+gg_rct_TempestKeepSpawn = nil
+gg_rct_Terenas = nil
+gg_rct_Terrordale = nil
+gg_rct_The_Basin = nil
+gg_rct_TheAthenaeum = nil
+gg_rct_ThelUnlock = nil
+gg_rct_Theramore = nil
+gg_rct_ThrallLanding = nil
+gg_rct_ThunderBluff = nil
+gg_rct_ThunderbluffFlight = nil
+gg_rct_TolbaradAmbient = nil
 gg_rct_TombOfSargerasInteriorA = nil
 gg_rct_TombOfSargerasInteriorB = nil
 gg_rct_TombOfSargerasInteriorC = nil
@@ -278,96 +309,94 @@ gg_rct_TombOfSargerasInteriorE = nil
 gg_rct_TombOfSargerasInteriorF = nil
 gg_rct_TombOfSargerasInteriorG = nil
 gg_rct_TombOfSargerasInteriorH = nil
-gg_rct_BrokenIslesB = nil
-gg_rct_GuldansCorpse = nil
-gg_rct_KaliRock7 = nil
-gg_rct_BookRetrieval = nil
-gg_rct_SkullRetrieval = nil
-gg_rct_KezanUnlock = nil
-gg_rct_HighbankUnlock = nil
-gg_rct_RagnarosSummon = nil
-gg_rct_IllidanBlackTempleUnlock = nil
-gg_rct_BlackTempleBase = nil
-gg_rct_SatyrCamp = nil
-gg_rct_FountainOfHealthAlterac = nil
-gg_rct_Nazjatar = nil
-gg_rct_Wrathgate_Portal_1 = nil
-gg_rct_Scholomance_Exterior_1 = nil
-gg_rct_Scholomance_Exterior_2 = nil
-gg_rct_Wrathgate_Portal_2 = nil
-gg_rct_AlteracLegionLanding = nil
-gg_rct_NorthrendLegionLanding = nil
-gg_rct_IslandBlocker1 = nil
-gg_rct_IslandBlocker2 = nil
-gg_rct_IslandBlocker3 = nil
-gg_rct_IslandBlocker4 = nil
-gg_rct_IslandBlocker5 = nil
-gg_rct_IllidariUnlockSA = nil
-gg_rct_BootyBayQuest = nil
-gg_rct_KaliRock8 = nil
-gg_rct_ShadowmoonBaseUnlock = nil
-gg_rct_MaelstromChannel = nil
-gg_rct_FeathermoonCreeps = nil
-gg_rct_AuberdineUnlock = nil
-gg_rct_KaliRock9 = nil
-gg_rct_FeralasEmeraldPortal = nil
-gg_rct_AshenvaleEmeraldPortal = nil
-gg_rct_KaliRock10 = nil
-gg_rct_KaliRock11 = nil
-gg_rct_KaliRock12 = nil
-gg_rct_LumberCampUnlock = nil
-gg_rct_UpperBarrenCreeps = nil
-gg_rct_RiseBaseUnlock = nil
-gg_rct_ShrineBaseUnlock = nil
-gg_rct_StranglethornBaseBuild = nil
+gg_rct_Trade1 = nil
+gg_rct_Trade2 = nil
+gg_rct_Trade3 = nil
+gg_rct_Trade4 = nil
+gg_rct_Trader1 = nil
+gg_rct_Trader2 = nil
+gg_rct_Trader3 = nil
+gg_rct_TrollAttackSpawn = nil
 gg_rct_TrollStartPos = nil
-gg_rct_ExodarBaseUnlock = nil
-gg_rct_DesolaceUnlock = nil
-gg_rct_DraeneiQuestKill = nil
-gg_rct_FountainUnlock = nil
-gg_rct_EntireMap = nil
-gg_rct_NzothStartPosition = nil
-gg_rct_Biodome1 = nil
-gg_rct_Biodome3 = nil
-gg_rct_Biodome2 = nil
-gg_rct_SunfuryStartingPosition = nil
-gg_rct_Netherstorm = nil
-gg_rct_KilSummon = nil
+gg_rct_TrollTarget = nil
+gg_rct_Tuurem = nil
+gg_rct_TwilightOutside = nil
+gg_rct_TwilightUnlock = nil
+gg_rct_TwistingNether = nil
+gg_rct_TyrHandAmbient = nil
+gg_rct_TyrsFall = nil
+gg_rct_TyrUnlock = nil
+gg_rct_UldumAmbiance = nil
+gg_rct_Undercity_Escape = nil
+gg_rct_Undercity_Exterior_1 = nil
+gg_rct_Undercity_Exterior_2 = nil
+gg_rct_UngoroAmbient = nil
+gg_rct_UpperBarrenCreeps = nil
 gg_rct_UpperNetherstorm = nil
-gg_rct_Area52Unlock = nil
-gg_rct_KaliRock13 = nil
-gg_rct_KaliRock14 = nil
-gg_rct_GilneasStartPos = nil
-gg_rct_KaliRock15 = nil
-gg_rct_ForsakenStartPos = nil
-gg_rct_LegionStartPos = nil
-gg_rct_DarkPortalUnlock = nil
-gg_rct_OrgrimmarFlight = nil
-gg_rct_ThunderbluffFlight = nil
-gg_rct_IslandBlocker6 = nil
-gg_rct_DalaStartPos = nil
-gg_rct_CenarionHoldUnlock = nil
+gg_rct_Vandermar_Village = nil
+gg_rct_VaultoftheWardens = nil
+gg_rct_WaveCrash = nil
+gg_rct_West_of_Kalimdor = nil
+gg_rct_West_Thandol = nil
+gg_rct_WetlandAmbient1 = nil
+gg_rct_WetlandAmbient2 = nil
 gg_rct_WindrunnerSpireUnlock = nil
-gg_rct_ArthasRandomPoint = nil
-gg_rct_HideUnitBottomLeft = nil
-gg_rct_GromRandomPoint = nil
-gg_rct_BloodElfSecondChanceSpawn = nil
+gg_rct_WinterspringAmbient1 = nil
+gg_rct_WinterspringAmbient2 = nil
+gg_rct_WorldTunnelExit = nil
+gg_rct_Wrathgate_Portal_1 = nil
+gg_rct_Wrathgate_Portal_2 = nil
+gg_rct_WyrmrestTemple = nil
+gg_rct_ZandalarUnlock = nil
+gg_rct_ZeppelinReturn = nil
+gg_rct_ZulAman_trolls = nil
+gg_rct_Zulfarrak = nil
+gg_rct_ZulfarrakAmbient = nil
+gg_snd_A07Magtheridon02 = nil
+gg_snd_A07OrcWarlock01 = nil
 gg_snd_ArcaneObservatoryWhat1 = nil
+gg_snd_Archamge1 = nil
+gg_snd_Archmage2 = nil
 gg_snd_ArrangedTeamInvitation = nil
+gg_snd_ArthasTheme = ""
+gg_snd_AshenvaleDay = nil
+gg_snd_AshenvaleNight = nil
+gg_snd_BarrensDay = nil
+gg_snd_BattlenetDeath1 = nil
+gg_snd_BlackCitadel_OutlandDay = nil
+gg_snd_BlackCitadel_OutlandNight = nil
+gg_snd_Cinematic5Illidan = nil
+gg_snd_CityScapeDay = nil
 gg_snd_ClanInvitation = nil
+gg_snd_D03Grunt17 = nil
 gg_snd_D03Shaman04 = nil
 gg_snd_D03Thrall01 = nil
+gg_snd_D03WitchDoctor12 = nil
 gg_snd_D04Thrall01 = nil
 gg_snd_D04Thrall03 = nil
 gg_snd_D04Troll02 = nil
 gg_snd_D04Troll04 = nil
 gg_snd_D05SeaWitch01 = nil
 gg_snd_D05Thrall02 = nil
+gg_snd_D06AFootman06 = nil
 gg_snd_D13Jaina03 = nil
+gg_snd_DalaranRuinsDay = nil
+gg_snd_DalaranRuinsNight = nil
+gg_snd_DarkVictory = ""
+gg_snd_DaybreakRooster = nil
+gg_snd_DemonHunterMorphedReady1 = nil
+gg_snd_DoorCloseRemix = nil
+gg_snd_DoorOpenRemix = nil
 gg_snd_FootmanWhat4 = nil
+gg_snd_FootmanYesAttack3 = nil
+gg_snd_ForestTrollWarcry1 = nil
+gg_snd_ForestTrollWhat1 = nil
+gg_snd_ForestTrollYesAttack2 = nil
 gg_snd_GameFound = nil
 gg_snd_GameFound01 = nil
+gg_snd_GilneasTheme1 = ""
 gg_snd_GromWarcry1 = nil
+gg_snd_GromYesAttack3 = nil
 gg_snd_H01Arthas02 = nil
 gg_snd_H01Arthas06 = nil
 gg_snd_H01Arthas08 = nil
@@ -378,168 +407,139 @@ gg_snd_H01Uther07 = nil
 gg_snd_H02Antonidas35 = nil
 gg_snd_H02Arthas07 = nil
 gg_snd_H02Arthas09 = nil
+gg_snd_H02Arthas26X = nil
+gg_snd_H02Blademaster11 = nil
 gg_snd_H02DwarfScout16 = nil
+gg_snd_H02Footman23 = nil
 gg_snd_H02Jaina34 = nil
 gg_snd_H02Jaina36 = nil
 gg_snd_H02Uther02 = nil
 gg_snd_H02Uther06 = nil
 gg_snd_H02Uther10 = nil
+gg_snd_H02Warlock22 = nil
 gg_snd_H03Jaina09 = nil
 gg_snd_H07Muradin15 = nil
 gg_snd_H09Muradin06 = nil
+gg_snd_HeroBladeMasterWarcry1 = nil
 gg_snd_HeroDreadlordWhat1 = nil
 gg_snd_HeroDreadlordYes1 = nil
+gg_snd_HeroicVictory = ""
+gg_snd_Hint = nil
+gg_snd_HPitLordWhat1 = nil
+gg_snd_HumanVictory = ""
+gg_snd_HumanX1stormwind3 = ""
 gg_snd_HuntressMissileLaunch = nil
+gg_snd_IceCrownDay = nil
+gg_snd_IceCrownNight = nil
+gg_snd_IceTrollWhat4 = nil
+gg_snd_Illidancinematic3 = ""
+gg_snd_IllidansTheme = ""
+gg_snd_IllidanWarcry1 = nil
+gg_snd_IllidanYes4 = nil
+gg_snd_IllidanYesAttack2 = nil
+gg_snd_JainaWarcry1 = nil
+gg_snd_KelThuzadYes4 = nil
+gg_snd_KnightYesAttack1 = nil
 gg_snd_L01Detheroc01 = nil
 gg_snd_L06Rifleman21 = nil
 gg_snd_L07AAxeman19 = nil
+gg_snd_Loading = nil
+gg_snd_LordaeronFallDay = nil
+gg_snd_LordaeronFallNight = nil
+gg_snd_LordaeronSummerDay = nil
+gg_snd_LordaeronSummerNight = nil
+gg_snd_LordaeronWinterDay = nil
+gg_snd_LordaeronWinterNight = nil
 gg_snd_MetalHeavySliceFlesh1 = nil
 gg_snd_MetalHeavySliceFlesh2 = nil
 gg_snd_MetalHeavySliceFlesh3 = nil
 gg_snd_MuradinWhat1 = nil
 gg_snd_MuradinWhat4 = nil
 gg_snd_MuradinYesAttack1 = nil
+gg_snd_N01Shandris01 = nil
+gg_snd_N01Tyrande02 = nil
+gg_snd_N03Tyrande01X = nil
+gg_snd_N04Furion32 = nil
+gg_snd_N04Tyrande10 = nil
+gg_snd_N05Tyrande18 = nil
+gg_snd_N06Illidan17 = nil
+gg_snd_N06Illidan1701 = nil
 gg_snd_N07Archimonde28 = nil
 gg_snd_NewTournament = nil
+gg_snd_NightElfVictory = ""
+gg_snd_NorthrendDay = nil
+gg_snd_NorthrendNight = nil
+gg_snd_NuclearLaunchDetected = nil
 gg_snd_O01Grunt01 = nil
 gg_snd_O01Grunt03 = nil
 gg_snd_O01Grunt05 = nil
+gg_snd_O03Grom14 = nil
 gg_snd_O04Grom01 = nil
 gg_snd_O04Grom03 = nil
 gg_snd_O04Grom07 = nil
+gg_snd_O04Huntress09 = nil
 gg_snd_O04WarsongOrc02 = nil
+gg_snd_O05Cenarius01 = nil
+gg_snd_O05Cenarius03 = nil
+gg_snd_O05Cenarius07 = nil
+gg_snd_O05Cenarius27 = nil
+gg_snd_O05Cenarius28 = nil
 gg_snd_O05Grom38 = nil
+gg_snd_O05WitchDoctor19 = nil
+gg_snd_OrcVictory = ""
 gg_snd_PriestYes3 = nil
 gg_snd_QuestFailed = nil
+gg_snd_QuestLog = nil
 gg_snd_QuestNew = nil
 gg_snd_RiflemanWhat1 = nil
 gg_snd_RiflemanWhat4 = nil
+gg_snd_S01Maiev04 = nil
+gg_snd_S01Maiev07 = nil
+gg_snd_S01Maiev21 = nil
+gg_snd_S01WatcherOne05 = nil
+gg_snd_S01WatcherOne20 = nil
+gg_snd_S04Tyrande31 = nil
+gg_snd_S05Furion07 = nil
+gg_snd_S05Maiev24 = nil
+gg_snd_S07Illidan29 = nil
+gg_snd_SargerasLaugh = nil
 gg_snd_SecretFound = nil
 gg_snd_T02Grunt004 = nil
+gg_snd_ThunderClapCaster = nil
 gg_snd_TichondriusWhat1 = nil
 gg_snd_U02DreadlordA32 = nil
 gg_snd_U02DreadlordA35 = nil
 gg_snd_U02DreadlordA37 = nil
 gg_snd_U02Tichondrius36 = nil
+gg_snd_U03ASylvanas12 = nil
+gg_snd_U03BPriest07XX = nil
+gg_snd_U03BSylvanas14 = nil
 gg_snd_U03BSylvanas18 = nil
-gg_snd_U06Archimonde26 = nil
-gg_snd_U08Archimonde19 = nil
-gg_snd_War2IntroMusic = ""
-gg_snd_Warning = nil
-gg_snd_N01Shandris01 = nil
-gg_snd_N01Tyrande02 = nil
-gg_snd_S01Maiev04 = nil
-gg_snd_S01Maiev07 = nil
-gg_snd_S01WatcherOne05 = nil
-gg_snd_S01WatcherOne20 = nil
-gg_snd_S01Maiev21 = nil
-gg_snd_S04Tyrande31 = nil
-gg_snd_S05Maiev24 = nil
-gg_snd_O04Huntress09 = nil
-gg_snd_N04Furion32 = nil
-gg_snd_O05Cenarius01 = nil
-gg_snd_S05Furion07 = nil
-gg_snd_O05Cenarius03 = nil
-gg_snd_O05Cenarius07 = nil
-gg_snd_O05Cenarius27 = nil
-gg_snd_O05Cenarius28 = nil
-gg_snd_N04Tyrande10 = nil
-gg_snd_N05Tyrande18 = nil
-gg_snd_N03Tyrande01X = nil
-gg_snd_U05ATichondrius01 = nil
+gg_snd_U04ASylvanas03 = nil
+gg_snd_U04ASylvanas05 = nil
 gg_snd_U05AArthas02 = nil
-gg_snd_U05ATichondrius03 = nil
 gg_snd_U05AArthas06 = nil
-gg_snd_U05BKelThuzad35 = nil
-gg_snd_U06KelThuzad02XX3 = nil
-gg_snd_U05BKelThuzad39XX = nil
 gg_snd_U05AKelThuzad07XX = nil
+gg_snd_U05ATichondrius01 = nil
+gg_snd_U05ATichondrius03 = nil
+gg_snd_U05BKelThuzad35 = nil
+gg_snd_U05BKelThuzad39XX = nil
+gg_snd_U06Archimonde26 = nil
+gg_snd_U06KelThuzad02XX3 = nil
 gg_snd_U06KelThuzad04X = nil
-gg_snd_KelThuzadYes4 = nil
-gg_snd_H02Warlock22 = nil
-gg_snd_H02Footman23 = nil
-gg_snd_D06AFootman06 = nil
-gg_snd_H02Arthas26X = nil
+gg_snd_U08Archimonde19 = nil
+gg_snd_UndeadVictory = ""
 gg_snd_VarianWrynnDialogue01 = nil
 gg_snd_VarianWrynnDialogue02 = nil
 gg_snd_VarianWrynnDialogue03 = nil
 gg_snd_VarianWrynnDialogue04 = nil
 gg_snd_VarianWrynnDialogue05 = nil
-gg_snd_H02Blademaster11 = nil
-gg_snd_HeroBladeMasterWarcry1 = nil
-gg_snd_D03Grunt17 = nil
-gg_snd_O03Grom14 = nil
-gg_snd_GromYesAttack3 = nil
-gg_snd_A07OrcWarlock01 = nil
-gg_snd_A07Magtheridon02 = nil
-gg_snd_KnightYesAttack1 = nil
-gg_snd_O05WitchDoctor19 = nil
-gg_snd_D03WitchDoctor12 = nil
-gg_snd_U03ASylvanas12 = nil
-gg_snd_U03BPriest07XX = nil
-gg_snd_IceTrollWhat4 = nil
-gg_snd_U03BSylvanas14 = nil
-gg_snd_ForestTrollWarcry1 = nil
-gg_snd_U04ASylvanas03 = nil
-gg_snd_ForestTrollYesAttack2 = nil
-gg_snd_U04ASylvanas05 = nil
-gg_snd_ForestTrollWhat1 = nil
-gg_snd_DarkVictory = ""
-gg_snd_HeroicVictory = ""
-gg_snd_HumanVictory = ""
-gg_snd_NightElfVictory = ""
-gg_snd_OrcVictory = ""
-gg_snd_UndeadVictory = ""
-gg_snd_DaybreakRooster = nil
-gg_snd_ArthasTheme = ""
-gg_snd_HumanX1stormwind3 = ""
-gg_snd_NorthrendNight = nil
-gg_snd_DalaranRuinsNight = nil
-gg_snd_BlackCitadel_OutlandNight = nil
-gg_snd_BlackCitadel_OutlandDay = nil
-gg_snd_IceCrownNight = nil
-gg_snd_AshenvaleNight = nil
-gg_snd_LordaeronFallDay = nil
-gg_snd_AshenvaleDay = nil
-gg_snd_BarrensDay = nil
-gg_snd_DalaranRuinsDay = nil
-gg_snd_WetlandsNight = nil
+gg_snd_War2IntroMusic = ""
+gg_snd_Warning = nil
 gg_snd_Wetlandsday = nil
-gg_snd_IceCrownDay = nil
-gg_snd_LordaeronSummerDay = nil
-gg_snd_CityScapeDay = nil
-gg_snd_LordaeronSummerNight = nil
-gg_snd_NorthrendDay = nil
-gg_snd_LordaeronWinterNight = nil
-gg_snd_LordaeronFallNight = nil
-gg_snd_LordaeronWinterDay = nil
-gg_snd_ThunderClapCaster = nil
-gg_snd_Illidancinematic3 = ""
-gg_snd_JainaWarcry1 = nil
-gg_snd_HPitLordWhat1 = nil
-gg_snd_IllidanYesAttack2 = nil
-gg_snd_SargerasLaugh = nil
-gg_snd_IllidanYes4 = nil
-gg_snd_QuestLog = nil
-gg_snd_N06Illidan17 = nil
-gg_snd_Cinematic5Illidan = nil
-gg_snd_Archamge1 = nil
-gg_snd_Archmage2 = nil
-gg_snd_IllidanWarcry1 = nil
-gg_snd_BattlenetDeath1 = nil
-gg_snd_Hint = nil
-gg_snd_N06Illidan1701 = nil
-gg_snd_S07Illidan29 = nil
-gg_snd_DemonHunterMorphedReady1 = nil
-gg_snd_GilneasTheme1 = ""
-gg_snd_Loading = nil
-gg_snd_FootmanYesAttack3 = nil
+gg_snd_WetlandsNight = nil
 gg_snd_WolfHowl = nil
 gg_snd_ZandalarTheme = ""
-gg_snd_DoorCloseRemix = nil
-gg_snd_DoorOpenRemix = nil
-gg_snd_NuclearLaunchDetected = nil
-gg_snd_IllidansTheme = ""
 function InitGlobals()
 end
 
@@ -783,7 +783,7 @@ bj_lastDyingWidget = nil
 DestroyTrigger(GetTriggeringTrigger())
 end
 
-function Unit000115_DropItems()
+function Unit000028_DropItems()
 local trigWidget = nil
 local trigUnit = nil
 local itemID = 0
@@ -815,165 +815,7 @@ bj_lastDyingWidget = nil
 DestroyTrigger(GetTriggeringTrigger())
 end
 
-function Unit000225_DropItems()
-local trigWidget = nil
-local trigUnit = nil
-local itemID = 0
-local canDrop = true
-
-trigWidget = bj_lastDyingWidget
-if (trigWidget == nil) then
-trigUnit = GetTriggerUnit()
-end
-if (trigUnit ~= nil) then
-canDrop = not IsUnitHidden(trigUnit)
-if (canDrop and GetChangingUnit() ~= nil) then
-canDrop = (GetChangingUnitPrevOwner() == Player(PLAYER_NEUTRAL_AGGRESSIVE))
-end
-end
-if (canDrop) then
-RandomDistReset()
-RandomDistAddItem(FourCC("sres"), 100)
-itemID = RandomDistChoose()
-if (trigUnit ~= nil) then
-UnitDropItem(trigUnit, itemID)
-else
-WidgetDropItem(trigWidget, itemID)
-end
-end
-bj_lastDyingWidget = nil
-DestroyTrigger(GetTriggeringTrigger())
-end
-
-function Unit000235_DropItems()
-local trigWidget = nil
-local trigUnit = nil
-local itemID = 0
-local canDrop = true
-
-trigWidget = bj_lastDyingWidget
-if (trigWidget == nil) then
-trigUnit = GetTriggerUnit()
-end
-if (trigUnit ~= nil) then
-canDrop = not IsUnitHidden(trigUnit)
-if (canDrop and GetChangingUnit() ~= nil) then
-canDrop = (GetChangingUnitPrevOwner() == Player(PLAYER_NEUTRAL_AGGRESSIVE))
-end
-end
-if (canDrop) then
-RandomDistReset()
-RandomDistAddItem(FourCC("srrc"), 33)
-RandomDistAddItem(FourCC("rej6"), 33)
-RandomDistAddItem(FourCC("sres"), 34)
-itemID = RandomDistChoose()
-if (trigUnit ~= nil) then
-UnitDropItem(trigUnit, itemID)
-else
-WidgetDropItem(trigWidget, itemID)
-end
-end
-bj_lastDyingWidget = nil
-DestroyTrigger(GetTriggeringTrigger())
-end
-
-function Unit000554_DropItems()
-local trigWidget = nil
-local trigUnit = nil
-local itemID = 0
-local canDrop = true
-
-trigWidget = bj_lastDyingWidget
-if (trigWidget == nil) then
-trigUnit = GetTriggerUnit()
-end
-if (trigUnit ~= nil) then
-canDrop = not IsUnitHidden(trigUnit)
-if (canDrop and GetChangingUnit() ~= nil) then
-canDrop = (GetChangingUnitPrevOwner() == Player(PLAYER_NEUTRAL_AGGRESSIVE))
-end
-end
-if (canDrop) then
-RandomDistReset()
-RandomDistAddItem(FourCC("envl"), 33)
-RandomDistAddItem(FourCC("pnvu"), 33)
-RandomDistAddItem(FourCC("pres"), 34)
-itemID = RandomDistChoose()
-if (trigUnit ~= nil) then
-UnitDropItem(trigUnit, itemID)
-else
-WidgetDropItem(trigWidget, itemID)
-end
-end
-bj_lastDyingWidget = nil
-DestroyTrigger(GetTriggeringTrigger())
-end
-
-function Unit000885_DropItems()
-local trigWidget = nil
-local trigUnit = nil
-local itemID = 0
-local canDrop = true
-
-trigWidget = bj_lastDyingWidget
-if (trigWidget == nil) then
-trigUnit = GetTriggerUnit()
-end
-if (trigUnit ~= nil) then
-canDrop = not IsUnitHidden(trigUnit)
-if (canDrop and GetChangingUnit() ~= nil) then
-canDrop = (GetChangingUnitPrevOwner() == Player(PLAYER_NEUTRAL_AGGRESSIVE))
-end
-end
-if (canDrop) then
-RandomDistReset()
-RandomDistAddItem(FourCC("envl"), 33)
-RandomDistAddItem(FourCC("pnvu"), 33)
-RandomDistAddItem(FourCC("pres"), 34)
-itemID = RandomDistChoose()
-if (trigUnit ~= nil) then
-UnitDropItem(trigUnit, itemID)
-else
-WidgetDropItem(trigWidget, itemID)
-end
-end
-bj_lastDyingWidget = nil
-DestroyTrigger(GetTriggeringTrigger())
-end
-
-function Unit000936_DropItems()
-local trigWidget = nil
-local trigUnit = nil
-local itemID = 0
-local canDrop = true
-
-trigWidget = bj_lastDyingWidget
-if (trigWidget == nil) then
-trigUnit = GetTriggerUnit()
-end
-if (trigUnit ~= nil) then
-canDrop = not IsUnitHidden(trigUnit)
-if (canDrop and GetChangingUnit() ~= nil) then
-canDrop = (GetChangingUnitPrevOwner() == Player(PLAYER_NEUTRAL_AGGRESSIVE))
-end
-end
-if (canDrop) then
-RandomDistReset()
-RandomDistAddItem(FourCC("envl"), 33)
-RandomDistAddItem(FourCC("pnvu"), 33)
-RandomDistAddItem(FourCC("pres"), 34)
-itemID = RandomDistChoose()
-if (trigUnit ~= nil) then
-UnitDropItem(trigUnit, itemID)
-else
-WidgetDropItem(trigWidget, itemID)
-end
-end
-bj_lastDyingWidget = nil
-DestroyTrigger(GetTriggeringTrigger())
-end
-
-function Unit001081_DropItems()
+function Unit000094_DropItems()
 local trigWidget = nil
 local trigUnit = nil
 local itemID = 0
@@ -1005,7 +847,7 @@ bj_lastDyingWidget = nil
 DestroyTrigger(GetTriggeringTrigger())
 end
 
-function Unit001185_DropItems()
+function Unit000313_DropItems()
 local trigWidget = nil
 local trigUnit = nil
 local itemID = 0
@@ -1023,9 +865,7 @@ end
 end
 if (canDrop) then
 RandomDistReset()
-RandomDistAddItem(FourCC("srrc"), 33)
-RandomDistAddItem(FourCC("rej6"), 33)
-RandomDistAddItem(FourCC("sres"), 34)
+RandomDistAddItem(FourCC("sres"), 100)
 itemID = RandomDistChoose()
 if (trigUnit ~= nil) then
 UnitDropItem(trigUnit, itemID)
@@ -1037,37 +877,7 @@ bj_lastDyingWidget = nil
 DestroyTrigger(GetTriggeringTrigger())
 end
 
-function Unit001214_DropItems()
-local trigWidget = nil
-local trigUnit = nil
-local itemID = 0
-local canDrop = true
-
-trigWidget = bj_lastDyingWidget
-if (trigWidget == nil) then
-trigUnit = GetTriggerUnit()
-end
-if (trigUnit ~= nil) then
-canDrop = not IsUnitHidden(trigUnit)
-if (canDrop and GetChangingUnit() ~= nil) then
-canDrop = (GetChangingUnitPrevOwner() == Player(PLAYER_NEUTRAL_AGGRESSIVE))
-end
-end
-if (canDrop) then
-RandomDistReset()
-RandomDistAddItem(FourCC("asbl"), 100)
-itemID = RandomDistChoose()
-if (trigUnit ~= nil) then
-UnitDropItem(trigUnit, itemID)
-else
-WidgetDropItem(trigWidget, itemID)
-end
-end
-bj_lastDyingWidget = nil
-DestroyTrigger(GetTriggeringTrigger())
-end
-
-function Unit001575_DropItems()
+function Unit001310_DropItems()
 local trigWidget = nil
 local trigUnit = nil
 local itemID = 0
@@ -1099,37 +909,7 @@ bj_lastDyingWidget = nil
 DestroyTrigger(GetTriggeringTrigger())
 end
 
-function Unit002202_DropItems()
-local trigWidget = nil
-local trigUnit = nil
-local itemID = 0
-local canDrop = true
-
-trigWidget = bj_lastDyingWidget
-if (trigWidget == nil) then
-trigUnit = GetTriggerUnit()
-end
-if (trigUnit ~= nil) then
-canDrop = not IsUnitHidden(trigUnit)
-if (canDrop and GetChangingUnit() ~= nil) then
-canDrop = (GetChangingUnitPrevOwner() == Player(PLAYER_NEUTRAL_AGGRESSIVE))
-end
-end
-if (canDrop) then
-RandomDistReset()
-RandomDistAddItem(FourCC("sres"), 100)
-itemID = RandomDistChoose()
-if (trigUnit ~= nil) then
-UnitDropItem(trigUnit, itemID)
-else
-WidgetDropItem(trigWidget, itemID)
-end
-end
-bj_lastDyingWidget = nil
-DestroyTrigger(GetTriggeringTrigger())
-end
-
-function Unit002633_DropItems()
+function Unit001354_DropItems()
 local trigWidget = nil
 local trigUnit = nil
 local itemID = 0
@@ -1161,7 +941,7 @@ bj_lastDyingWidget = nil
 DestroyTrigger(GetTriggeringTrigger())
 end
 
-function Unit002664_DropItems()
+function Unit001517_DropItems()
 local trigWidget = nil
 local trigUnit = nil
 local itemID = 0
@@ -1179,7 +959,9 @@ end
 end
 if (canDrop) then
 RandomDistReset()
-RandomDistAddItem(FourCC("whwd"), 100)
+RandomDistAddItem(FourCC("envl"), 33)
+RandomDistAddItem(FourCC("pnvu"), 33)
+RandomDistAddItem(FourCC("pres"), 34)
 itemID = RandomDistChoose()
 if (trigUnit ~= nil) then
 UnitDropItem(trigUnit, itemID)
@@ -1191,39 +973,7 @@ bj_lastDyingWidget = nil
 DestroyTrigger(GetTriggeringTrigger())
 end
 
-function Unit002893_DropItems()
-local trigWidget = nil
-local trigUnit = nil
-local itemID = 0
-local canDrop = true
-
-trigWidget = bj_lastDyingWidget
-if (trigWidget == nil) then
-trigUnit = GetTriggerUnit()
-end
-if (trigUnit ~= nil) then
-canDrop = not IsUnitHidden(trigUnit)
-if (canDrop and GetChangingUnit() ~= nil) then
-canDrop = (GetChangingUnitPrevOwner() == Player(PLAYER_NEUTRAL_AGGRESSIVE))
-end
-end
-if (canDrop) then
-RandomDistReset()
-RandomDistAddItem(FourCC("srrc"), 33)
-RandomDistAddItem(FourCC("rej6"), 33)
-RandomDistAddItem(FourCC("sres"), 34)
-itemID = RandomDistChoose()
-if (trigUnit ~= nil) then
-UnitDropItem(trigUnit, itemID)
-else
-WidgetDropItem(trigWidget, itemID)
-end
-end
-bj_lastDyingWidget = nil
-DestroyTrigger(GetTriggeringTrigger())
-end
-
-function Unit003015_DropItems()
+function Unit001607_DropItems()
 local trigWidget = nil
 local trigUnit = nil
 local itemID = 0
@@ -1253,7 +1003,99 @@ bj_lastDyingWidget = nil
 DestroyTrigger(GetTriggeringTrigger())
 end
 
-function Unit003017_DropItems()
+function Unit001616_DropItems()
+local trigWidget = nil
+local trigUnit = nil
+local itemID = 0
+local canDrop = true
+
+trigWidget = bj_lastDyingWidget
+if (trigWidget == nil) then
+trigUnit = GetTriggerUnit()
+end
+if (trigUnit ~= nil) then
+canDrop = not IsUnitHidden(trigUnit)
+if (canDrop and GetChangingUnit() ~= nil) then
+canDrop = (GetChangingUnitPrevOwner() == Player(PLAYER_NEUTRAL_AGGRESSIVE))
+end
+end
+if (canDrop) then
+RandomDistReset()
+RandomDistAddItem(FourCC("srrc"), 33)
+RandomDistAddItem(FourCC("rej6"), 33)
+RandomDistAddItem(FourCC("sres"), 34)
+itemID = RandomDistChoose()
+if (trigUnit ~= nil) then
+UnitDropItem(trigUnit, itemID)
+else
+WidgetDropItem(trigWidget, itemID)
+end
+end
+bj_lastDyingWidget = nil
+DestroyTrigger(GetTriggeringTrigger())
+end
+
+function Unit001745_DropItems()
+local trigWidget = nil
+local trigUnit = nil
+local itemID = 0
+local canDrop = true
+
+trigWidget = bj_lastDyingWidget
+if (trigWidget == nil) then
+trigUnit = GetTriggerUnit()
+end
+if (trigUnit ~= nil) then
+canDrop = not IsUnitHidden(trigUnit)
+if (canDrop and GetChangingUnit() ~= nil) then
+canDrop = (GetChangingUnitPrevOwner() == Player(PLAYER_NEUTRAL_AGGRESSIVE))
+end
+end
+if (canDrop) then
+RandomDistReset()
+RandomDistAddItem(FourCC("wneg"), 100)
+itemID = RandomDistChoose()
+if (trigUnit ~= nil) then
+UnitDropItem(trigUnit, itemID)
+else
+WidgetDropItem(trigWidget, itemID)
+end
+end
+bj_lastDyingWidget = nil
+DestroyTrigger(GetTriggeringTrigger())
+end
+
+function Unit001941_DropItems()
+local trigWidget = nil
+local trigUnit = nil
+local itemID = 0
+local canDrop = true
+
+trigWidget = bj_lastDyingWidget
+if (trigWidget == nil) then
+trigUnit = GetTriggerUnit()
+end
+if (trigUnit ~= nil) then
+canDrop = not IsUnitHidden(trigUnit)
+if (canDrop and GetChangingUnit() ~= nil) then
+canDrop = (GetChangingUnitPrevOwner() == Player(PLAYER_NEUTRAL_AGGRESSIVE))
+end
+end
+if (canDrop) then
+RandomDistReset()
+RandomDistAddItem(FourCC("asbl"), 100)
+itemID = RandomDistChoose()
+if (trigUnit ~= nil) then
+UnitDropItem(trigUnit, itemID)
+else
+WidgetDropItem(trigWidget, itemID)
+end
+end
+bj_lastDyingWidget = nil
+DestroyTrigger(GetTriggeringTrigger())
+end
+
+function Unit001975_DropItems()
 local trigWidget = nil
 local trigUnit = nil
 local itemID = 0
@@ -1284,7 +1126,7 @@ bj_lastDyingWidget = nil
 DestroyTrigger(GetTriggeringTrigger())
 end
 
-function Unit003020_DropItems()
+function Unit001983_DropItems()
 local trigWidget = nil
 local trigUnit = nil
 local itemID = 0
@@ -1314,7 +1156,7 @@ bj_lastDyingWidget = nil
 DestroyTrigger(GetTriggeringTrigger())
 end
 
-function Unit003202_DropItems()
+function Unit002213_DropItems()
 local trigWidget = nil
 local trigUnit = nil
 local itemID = 0
@@ -1344,7 +1186,7 @@ bj_lastDyingWidget = nil
 DestroyTrigger(GetTriggeringTrigger())
 end
 
-function Unit003213_DropItems()
+function Unit002255_DropItems()
 local trigWidget = nil
 local trigUnit = nil
 local itemID = 0
@@ -1362,7 +1204,165 @@ end
 end
 if (canDrop) then
 RandomDistReset()
-RandomDistAddItem(FourCC("wneg"), 100)
+RandomDistAddItem(FourCC("sres"), 100)
+itemID = RandomDistChoose()
+if (trigUnit ~= nil) then
+UnitDropItem(trigUnit, itemID)
+else
+WidgetDropItem(trigWidget, itemID)
+end
+end
+bj_lastDyingWidget = nil
+DestroyTrigger(GetTriggeringTrigger())
+end
+
+function Unit002468_DropItems()
+local trigWidget = nil
+local trigUnit = nil
+local itemID = 0
+local canDrop = true
+
+trigWidget = bj_lastDyingWidget
+if (trigWidget == nil) then
+trigUnit = GetTriggerUnit()
+end
+if (trigUnit ~= nil) then
+canDrop = not IsUnitHidden(trigUnit)
+if (canDrop and GetChangingUnit() ~= nil) then
+canDrop = (GetChangingUnitPrevOwner() == Player(PLAYER_NEUTRAL_AGGRESSIVE))
+end
+end
+if (canDrop) then
+RandomDistReset()
+RandomDistAddItem(FourCC("whwd"), 100)
+itemID = RandomDistChoose()
+if (trigUnit ~= nil) then
+UnitDropItem(trigUnit, itemID)
+else
+WidgetDropItem(trigWidget, itemID)
+end
+end
+bj_lastDyingWidget = nil
+DestroyTrigger(GetTriggeringTrigger())
+end
+
+function Unit002538_DropItems()
+local trigWidget = nil
+local trigUnit = nil
+local itemID = 0
+local canDrop = true
+
+trigWidget = bj_lastDyingWidget
+if (trigWidget == nil) then
+trigUnit = GetTriggerUnit()
+end
+if (trigUnit ~= nil) then
+canDrop = not IsUnitHidden(trigUnit)
+if (canDrop and GetChangingUnit() ~= nil) then
+canDrop = (GetChangingUnitPrevOwner() == Player(PLAYER_NEUTRAL_AGGRESSIVE))
+end
+end
+if (canDrop) then
+RandomDistReset()
+RandomDistAddItem(FourCC("srrc"), 33)
+RandomDistAddItem(FourCC("rej6"), 33)
+RandomDistAddItem(FourCC("sres"), 34)
+itemID = RandomDistChoose()
+if (trigUnit ~= nil) then
+UnitDropItem(trigUnit, itemID)
+else
+WidgetDropItem(trigWidget, itemID)
+end
+end
+bj_lastDyingWidget = nil
+DestroyTrigger(GetTriggeringTrigger())
+end
+
+function Unit002621_DropItems()
+local trigWidget = nil
+local trigUnit = nil
+local itemID = 0
+local canDrop = true
+
+trigWidget = bj_lastDyingWidget
+if (trigWidget == nil) then
+trigUnit = GetTriggerUnit()
+end
+if (trigUnit ~= nil) then
+canDrop = not IsUnitHidden(trigUnit)
+if (canDrop and GetChangingUnit() ~= nil) then
+canDrop = (GetChangingUnitPrevOwner() == Player(PLAYER_NEUTRAL_AGGRESSIVE))
+end
+end
+if (canDrop) then
+RandomDistReset()
+RandomDistAddItem(FourCC("envl"), 33)
+RandomDistAddItem(FourCC("pnvu"), 33)
+RandomDistAddItem(FourCC("pres"), 34)
+itemID = RandomDistChoose()
+if (trigUnit ~= nil) then
+UnitDropItem(trigUnit, itemID)
+else
+WidgetDropItem(trigWidget, itemID)
+end
+end
+bj_lastDyingWidget = nil
+DestroyTrigger(GetTriggeringTrigger())
+end
+
+function Unit002899_DropItems()
+local trigWidget = nil
+local trigUnit = nil
+local itemID = 0
+local canDrop = true
+
+trigWidget = bj_lastDyingWidget
+if (trigWidget == nil) then
+trigUnit = GetTriggerUnit()
+end
+if (trigUnit ~= nil) then
+canDrop = not IsUnitHidden(trigUnit)
+if (canDrop and GetChangingUnit() ~= nil) then
+canDrop = (GetChangingUnitPrevOwner() == Player(PLAYER_NEUTRAL_AGGRESSIVE))
+end
+end
+if (canDrop) then
+RandomDistReset()
+RandomDistAddItem(FourCC("srrc"), 33)
+RandomDistAddItem(FourCC("rej6"), 33)
+RandomDistAddItem(FourCC("sres"), 34)
+itemID = RandomDistChoose()
+if (trigUnit ~= nil) then
+UnitDropItem(trigUnit, itemID)
+else
+WidgetDropItem(trigWidget, itemID)
+end
+end
+bj_lastDyingWidget = nil
+DestroyTrigger(GetTriggeringTrigger())
+end
+
+function Unit002903_DropItems()
+local trigWidget = nil
+local trigUnit = nil
+local itemID = 0
+local canDrop = true
+
+trigWidget = bj_lastDyingWidget
+if (trigWidget == nil) then
+trigUnit = GetTriggerUnit()
+end
+if (trigUnit ~= nil) then
+canDrop = not IsUnitHidden(trigUnit)
+if (canDrop and GetChangingUnit() ~= nil) then
+canDrop = (GetChangingUnitPrevOwner() == Player(PLAYER_NEUTRAL_AGGRESSIVE))
+end
+end
+if (canDrop) then
+RandomDistReset()
+RandomDistAddItem(FourCC("envl"), 33)
+RandomDistAddItem(FourCC("pnvu"), 33)
+RandomDistAddItem(FourCC("pres"), 34)
 itemID = RandomDistChoose()
 if (trigUnit ~= nil) then
 UnitDropItem(trigUnit, itemID)
@@ -1375,6 +1375,14 @@ DestroyTrigger(GetTriggeringTrigger())
 end
 
 function InitSounds()
+gg_snd_A07Magtheridon02 = CreateSound("Sound/Dialogue/HumanExpCamp/Human07x/A07Magtheridon02.flac", false, false, false, 0, 0, "DefaultEAXON")
+SetSoundParamsFromLabel(gg_snd_A07Magtheridon02, "A07Magtheridon02")
+SetSoundDuration(gg_snd_A07Magtheridon02, 15989)
+SetSoundVolume(gg_snd_A07Magtheridon02, 120)
+gg_snd_A07OrcWarlock01 = CreateSound("Sound/Dialogue/HumanExpCamp/Human07x/A07OrcWarlock01.flac", false, false, false, 0, 0, "DefaultEAXON")
+SetSoundParamsFromLabel(gg_snd_A07OrcWarlock01, "A07OrcWarlock01")
+SetSoundDuration(gg_snd_A07OrcWarlock01, 3088)
+SetSoundVolume(gg_snd_A07OrcWarlock01, 120)
 gg_snd_ArcaneObservatoryWhat1 = CreateSound("Buildings\\Other\\ArcaneObservatory\\ArcaneObservatoryWhat1.wav", false, true, true, 10, 10, "DefaultEAXON")
 SetSoundDuration(gg_snd_ArcaneObservatoryWhat1, 3064)
 SetSoundChannel(gg_snd_ArcaneObservatoryWhat1, 0)
@@ -1384,16 +1392,84 @@ SetSoundDistances(gg_snd_ArcaneObservatoryWhat1, 0.0, 10000.0)
 SetSoundDistanceCutoff(gg_snd_ArcaneObservatoryWhat1, 3000.0)
 SetSoundConeAngles(gg_snd_ArcaneObservatoryWhat1, 0.0, 0.0, 127)
 SetSoundConeOrientation(gg_snd_ArcaneObservatoryWhat1, 0.0, 0.0, 0.0)
+gg_snd_Archamge1 = CreateSound("war3mapImported/Archamge1.wav", false, false, false, 0, 0, "DefaultEAXON")
+SetSoundDuration(gg_snd_Archamge1, 3064)
+SetSoundChannel(gg_snd_Archamge1, 0)
+SetSoundVolume(gg_snd_Archamge1, 127)
+SetSoundPitch(gg_snd_Archamge1, 1.0)
+gg_snd_Archmage2 = CreateSound("war3mapImported/Archmage2.wav", false, false, false, 0, 0, "DefaultEAXON")
+SetSoundDuration(gg_snd_Archmage2, 3064)
+SetSoundChannel(gg_snd_Archmage2, 0)
+SetSoundVolume(gg_snd_Archmage2, 127)
+SetSoundPitch(gg_snd_Archmage2, 1.0)
 gg_snd_ArrangedTeamInvitation = CreateSound("Sound\\Interface\\ArrangedTeamInvitation.wav", false, false, false, 10, 10, "DefaultEAXON")
 SetSoundDuration(gg_snd_ArrangedTeamInvitation, 2914)
 SetSoundChannel(gg_snd_ArrangedTeamInvitation, 0)
 SetSoundVolume(gg_snd_ArrangedTeamInvitation, -1)
 SetSoundPitch(gg_snd_ArrangedTeamInvitation, 1.0)
+gg_snd_ArthasTheme = "ArthasTheme"
+gg_snd_AshenvaleDay = CreateSound("Sound/Ambient/Ashenvale/AshenvaleDay.flac", true, true, true, 1, 1, "DefaultEAXON")
+SetSoundParamsFromLabel(gg_snd_AshenvaleDay, "AshenvaleDay")
+SetSoundDuration(gg_snd_AshenvaleDay, 47700)
+SetSoundChannel(gg_snd_AshenvaleDay, 10)
+SetSoundVolume(gg_snd_AshenvaleDay, 10)
+SetSoundDistances(gg_snd_AshenvaleDay, 0.0, 10000.0)
+SetSoundDistanceCutoff(gg_snd_AshenvaleDay, 100.0)
+gg_snd_AshenvaleNight = CreateSound("Sound/Ambient/Ashenvale/AshenvaleNight.flac", true, true, true, 1, 1, "DefaultEAXON")
+SetSoundParamsFromLabel(gg_snd_AshenvaleNight, "AshenvaleNight")
+SetSoundDuration(gg_snd_AshenvaleNight, 119013)
+SetSoundChannel(gg_snd_AshenvaleNight, 10)
+SetSoundVolume(gg_snd_AshenvaleNight, 10)
+SetSoundDistances(gg_snd_AshenvaleNight, 0.0, 10000.0)
+SetSoundDistanceCutoff(gg_snd_AshenvaleNight, 100.0)
+gg_snd_BarrensDay = CreateSound("Sound/Ambient/Barrens/BarrensDay.flac", true, true, true, 1, 1, "DefaultEAXON")
+SetSoundParamsFromLabel(gg_snd_BarrensDay, "BarrensDay")
+SetSoundDuration(gg_snd_BarrensDay, 113856)
+SetSoundChannel(gg_snd_BarrensDay, 10)
+SetSoundVolume(gg_snd_BarrensDay, 20)
+SetSoundDistances(gg_snd_BarrensDay, 0.0, 10000.0)
+SetSoundDistanceCutoff(gg_snd_BarrensDay, 100.0)
+gg_snd_BattlenetDeath1 = CreateSound("Sound/Interface/BattlenetDeath1.flac", false, false, false, 1, 1, "DefaultEAXON")
+SetSoundParamsFromLabel(gg_snd_BattlenetDeath1, "GlueScreenBNetOpen")
+SetSoundDuration(gg_snd_BattlenetDeath1, 3626)
+SetSoundChannel(gg_snd_BattlenetDeath1, 0)
+SetSoundVolume(gg_snd_BattlenetDeath1, 127)
+gg_snd_BlackCitadel_OutlandDay = CreateSound("Sound/Ambient/BlackCitadel/BlackCitadel_OutlandDay.flac", true, true, true, 1, 1, "DefaultEAXON")
+SetSoundParamsFromLabel(gg_snd_BlackCitadel_OutlandDay, "BlackCitadelDay")
+SetSoundDuration(gg_snd_BlackCitadel_OutlandDay, 119186)
+SetSoundChannel(gg_snd_BlackCitadel_OutlandDay, 10)
+SetSoundVolume(gg_snd_BlackCitadel_OutlandDay, 14)
+SetSoundDistances(gg_snd_BlackCitadel_OutlandDay, 0.0, 10000.0)
+SetSoundDistanceCutoff(gg_snd_BlackCitadel_OutlandDay, 100.0)
+gg_snd_BlackCitadel_OutlandNight = CreateSound("Sound/Ambient/BlackCitadel/BlackCitadel_OutlandNight.flac", true, true, true, 1, 1, "DefaultEAXON")
+SetSoundParamsFromLabel(gg_snd_BlackCitadel_OutlandNight, "BlackCitadelNight")
+SetSoundDuration(gg_snd_BlackCitadel_OutlandNight, 116318)
+SetSoundChannel(gg_snd_BlackCitadel_OutlandNight, 10)
+SetSoundVolume(gg_snd_BlackCitadel_OutlandNight, 18)
+SetSoundDistances(gg_snd_BlackCitadel_OutlandNight, 0.0, 10000.0)
+SetSoundDistanceCutoff(gg_snd_BlackCitadel_OutlandNight, 100.0)
+gg_snd_Cinematic5Illidan = CreateSound("war3mapImported/Cinematic5Illidan.mp3", false, false, false, 1, 1, "DefaultEAXON")
+SetSoundDuration(gg_snd_Cinematic5Illidan, 116318)
+SetSoundChannel(gg_snd_Cinematic5Illidan, 0)
+SetSoundVolume(gg_snd_Cinematic5Illidan, 127)
+SetSoundPitch(gg_snd_Cinematic5Illidan, 1.0)
+gg_snd_CityScapeDay = CreateSound("Sound/Ambient/CityScape/CityScapeDay.flac", true, true, true, 1, 1, "DefaultEAXON")
+SetSoundParamsFromLabel(gg_snd_CityScapeDay, "DalaranDay")
+SetSoundDuration(gg_snd_CityScapeDay, 253775)
+SetSoundChannel(gg_snd_CityScapeDay, 10)
+SetSoundVolume(gg_snd_CityScapeDay, 16)
+SetSoundDistances(gg_snd_CityScapeDay, 0.0, 10000.0)
+SetSoundDistanceCutoff(gg_snd_CityScapeDay, 100.0)
 gg_snd_ClanInvitation = CreateSound("Sound\\Interface\\ClanInvitation.wav", false, false, false, 10, 10, "DefaultEAXON")
 SetSoundDuration(gg_snd_ClanInvitation, 4295)
 SetSoundChannel(gg_snd_ClanInvitation, 0)
 SetSoundVolume(gg_snd_ClanInvitation, -1)
 SetSoundPitch(gg_snd_ClanInvitation, 1.0)
+gg_snd_D03Grunt17 = CreateSound("Sound/Dialogue/TutorialCampaign/Demo03/D03Grunt17.flac", false, false, false, 1, 1, "DefaultEAXON")
+SetSoundParamsFromLabel(gg_snd_D03Grunt17, "D03Grunt17")
+SetSoundDuration(gg_snd_D03Grunt17, 2391)
+SetSoundVolume(gg_snd_D03Grunt17, 120)
+SetSoundPitch(gg_snd_D03Grunt17, 0.9)
 gg_snd_D03Shaman04 = CreateSound("Sound/Dialogue/TutorialCampaign/Demo03/D03Shaman04.flac", false, false, false, 0, 0, "DefaultEAXON")
 SetSoundParamsFromLabel(gg_snd_D03Shaman04, "D03Shaman04")
 SetSoundDuration(gg_snd_D03Shaman04, 3984)
@@ -1402,6 +1478,10 @@ gg_snd_D03Thrall01 = CreateSound("Sound/Dialogue/TutorialCampaign/Demo03/D03Thra
 SetSoundParamsFromLabel(gg_snd_D03Thrall01, "D03Thrall01")
 SetSoundDuration(gg_snd_D03Thrall01, 6518)
 SetSoundVolume(gg_snd_D03Thrall01, 120)
+gg_snd_D03WitchDoctor12 = CreateSound("Sound/Dialogue/TutorialCampaign/Demo03/D03WitchDoctor12.flac", false, false, false, 0, 0, "DefaultEAXON")
+SetSoundParamsFromLabel(gg_snd_D03WitchDoctor12, "D03WitchDoctor12")
+SetSoundDuration(gg_snd_D03WitchDoctor12, 8530)
+SetSoundVolume(gg_snd_D03WitchDoctor12, 120)
 gg_snd_D04Thrall01 = CreateSound("Sound/Dialogue/TutorialCampaign/Demo04/D04Thrall01.flac", false, false, false, 0, 0, "DefaultEAXON")
 SetSoundParamsFromLabel(gg_snd_D04Thrall01, "D04Thrall01")
 SetSoundDuration(gg_snd_D04Thrall01, 3958)
@@ -1426,14 +1506,77 @@ gg_snd_D05Thrall02 = CreateSound("Sound/Dialogue/TutorialCampaign/Demo05/D05Thra
 SetSoundParamsFromLabel(gg_snd_D05Thrall02, "D05Thrall02")
 SetSoundDuration(gg_snd_D05Thrall02, 6022)
 SetSoundVolume(gg_snd_D05Thrall02, 120)
+gg_snd_D06AFootman06 = CreateSound("Sound/Dialogue/OrcExpCamp/OrcQuest06Ax/D06AFootman06.flac", false, false, false, 0, 0, "DefaultEAXON")
+SetSoundParamsFromLabel(gg_snd_D06AFootman06, "D06AFootman06")
+SetSoundDuration(gg_snd_D06AFootman06, 4947)
+SetSoundVolume(gg_snd_D06AFootman06, 120)
 gg_snd_D13Jaina03 = CreateSound("Sound/Dialogue/OrcExpCamp/OrcQuest13x/D13Jaina03.flac", false, false, false, 0, 0, "DefaultEAXON")
 SetSoundParamsFromLabel(gg_snd_D13Jaina03, "D13Jaina03")
 SetSoundDuration(gg_snd_D13Jaina03, 4039)
 SetSoundVolume(gg_snd_D13Jaina03, 120)
+gg_snd_DalaranRuinsDay = CreateSound("Sound/Ambient/DalaranRuins/DalaranRuinsDay.flac", true, true, true, 1, 1, "DefaultEAXON")
+SetSoundParamsFromLabel(gg_snd_DalaranRuinsDay, "DalaranRuinsDay")
+SetSoundDuration(gg_snd_DalaranRuinsDay, 119795)
+SetSoundChannel(gg_snd_DalaranRuinsDay, 10)
+SetSoundVolume(gg_snd_DalaranRuinsDay, 20)
+SetSoundDistances(gg_snd_DalaranRuinsDay, 0.0, 10000.0)
+SetSoundDistanceCutoff(gg_snd_DalaranRuinsDay, 100.0)
+gg_snd_DalaranRuinsNight = CreateSound("Sound/Ambient/DalaranRuins/DalaranRuinsNight.flac", true, true, true, 1, 1, "DefaultEAXON")
+SetSoundParamsFromLabel(gg_snd_DalaranRuinsNight, "DalaranRuinsNight")
+SetSoundDuration(gg_snd_DalaranRuinsNight, 114759)
+SetSoundChannel(gg_snd_DalaranRuinsNight, 10)
+SetSoundVolume(gg_snd_DalaranRuinsNight, 15)
+SetSoundDistances(gg_snd_DalaranRuinsNight, 0.0, 10000.0)
+SetSoundDistanceCutoff(gg_snd_DalaranRuinsNight, 100.0)
+gg_snd_DarkVictory = "DarkVictory"
+gg_snd_DaybreakRooster = CreateSound("Sound/Time/DaybreakRooster.flac", false, false, false, 0, 0, "DefaultEAXON")
+SetSoundParamsFromLabel(gg_snd_DaybreakRooster, "RoosterSound")
+SetSoundDuration(gg_snd_DaybreakRooster, 2935)
+SetSoundVolume(gg_snd_DaybreakRooster, 32)
+gg_snd_DemonHunterMorphedReady1 = CreateSound("Units/NightElf/HeroDemonHunter/DemonHunterMorphedReady1.flac", false, false, false, 1, 1, "DefaultEAXON")
+SetSoundParamsFromLabel(gg_snd_DemonHunterMorphedReady1, "HeroDemonHunterMorphedReady")
+SetSoundDuration(gg_snd_DemonHunterMorphedReady1, 3390)
+SetSoundChannel(gg_snd_DemonHunterMorphedReady1, 0)
+SetSoundVolume(gg_snd_DemonHunterMorphedReady1, 127)
+gg_snd_DoorCloseRemix = CreateSound("war3mapImported/DoorCloseRemix.mp3", false, true, false, 1, 1, "DefaultEAXON")
+SetSoundDuration(gg_snd_DoorCloseRemix, 2808)
+SetSoundChannel(gg_snd_DoorCloseRemix, 0)
+SetSoundVolume(gg_snd_DoorCloseRemix, 127)
+SetSoundPitch(gg_snd_DoorCloseRemix, 1.0)
+SetSoundDistances(gg_snd_DoorCloseRemix, 0.0, 10000.0)
+SetSoundDistanceCutoff(gg_snd_DoorCloseRemix, 3000.0)
+SetSoundConeAngles(gg_snd_DoorCloseRemix, 0.0, 0.0, 127)
+SetSoundConeOrientation(gg_snd_DoorCloseRemix, 0.0, 0.0, 0.0)
+gg_snd_DoorOpenRemix = CreateSound("war3mapImported/DoorOpenRemix.mp3", false, true, false, 1, 1, "DefaultEAXON")
+SetSoundDuration(gg_snd_DoorOpenRemix, 3120)
+SetSoundChannel(gg_snd_DoorOpenRemix, 0)
+SetSoundVolume(gg_snd_DoorOpenRemix, 127)
+SetSoundPitch(gg_snd_DoorOpenRemix, 1.0)
+SetSoundDistances(gg_snd_DoorOpenRemix, 0.0, 10000.0)
+SetSoundDistanceCutoff(gg_snd_DoorOpenRemix, 3000.0)
+SetSoundConeAngles(gg_snd_DoorOpenRemix, 0.0, 0.0, 127)
+SetSoundConeOrientation(gg_snd_DoorOpenRemix, 0.0, 0.0, 0.0)
 gg_snd_FootmanWhat4 = CreateSound("Units/Human/Footman/FootmanWhat4.flac", false, true, true, 0, 0, "DefaultEAXON")
 SetSoundParamsFromLabel(gg_snd_FootmanWhat4, "FootmanWhat")
 SetSoundDuration(gg_snd_FootmanWhat4, 943)
 SetSoundVolume(gg_snd_FootmanWhat4, 127)
+gg_snd_FootmanYesAttack3 = CreateSound("Units/Human/Footman/FootmanYesAttack3.flac", false, false, false, 1, 1, "DefaultEAXON")
+SetSoundParamsFromLabel(gg_snd_FootmanYesAttack3, "FootmanYesAttack")
+SetSoundDuration(gg_snd_FootmanYesAttack3, 1152)
+SetSoundChannel(gg_snd_FootmanYesAttack3, 0)
+SetSoundVolume(gg_snd_FootmanYesAttack3, 127)
+gg_snd_ForestTrollWarcry1 = CreateSound("Units/Creeps/ForestTroll/ForestTrollWarcry1.flac", false, true, true, 0, 0, "DefaultEAXON")
+SetSoundParamsFromLabel(gg_snd_ForestTrollWarcry1, "ForestTrollShadowPriestWarcry")
+SetSoundDuration(gg_snd_ForestTrollWarcry1, 1532)
+SetSoundVolume(gg_snd_ForestTrollWarcry1, 127)
+gg_snd_ForestTrollWhat1 = CreateSound("Units/Creeps/ForestTroll/ForestTrollWhat1.flac", false, true, true, 0, 0, "DefaultEAXON")
+SetSoundParamsFromLabel(gg_snd_ForestTrollWhat1, "ForestTrollWhat")
+SetSoundDuration(gg_snd_ForestTrollWhat1, 1033)
+SetSoundVolume(gg_snd_ForestTrollWhat1, 127)
+gg_snd_ForestTrollYesAttack2 = CreateSound("Units/Creeps/ForestTroll/ForestTrollYesAttack2.flac", false, true, true, 0, 0, "DefaultEAXON")
+SetSoundParamsFromLabel(gg_snd_ForestTrollYesAttack2, "ForestTrollYesAttack")
+SetSoundDuration(gg_snd_ForestTrollYesAttack2, 914)
+SetSoundVolume(gg_snd_ForestTrollYesAttack2, 127)
 gg_snd_GameFound = CreateSound("Sound\\Interface\\GameFound.wav", false, false, false, 10, 10, "DefaultEAXON")
 SetSoundDuration(gg_snd_GameFound, 7488)
 SetSoundChannel(gg_snd_GameFound, 0)
@@ -1443,6 +1586,7 @@ gg_snd_GameFound01 = CreateSound("Sound/Interface/GameFound.flac", false, false,
 SetSoundParamsFromLabel(gg_snd_GameFound01, "GameFound")
 SetSoundDuration(gg_snd_GameFound01, 7488)
 SetSoundVolume(gg_snd_GameFound01, 127)
+gg_snd_GilneasTheme1 = "war3mapImported/GilneasTheme1.mp3"
 gg_snd_GromWarcry1 = CreateSound("Units\\Orc\\Hellscream\\GromWarcry1.wav", false, true, true, 10, 10, "HeroAcksEAX")
 SetSoundDuration(gg_snd_GromWarcry1, 2663)
 SetSoundChannel(gg_snd_GromWarcry1, 0)
@@ -1452,6 +1596,11 @@ SetSoundDistances(gg_snd_GromWarcry1, 0.0, 10000.0)
 SetSoundDistanceCutoff(gg_snd_GromWarcry1, 3000.0)
 SetSoundConeAngles(gg_snd_GromWarcry1, 0.0, 0.0, 127)
 SetSoundConeOrientation(gg_snd_GromWarcry1, 0.0, 0.0, 0.0)
+gg_snd_GromYesAttack3 = CreateSound("Units/Orc/Hellscream/GromYesAttack3.flac", false, false, false, 1, 1, "HeroAcksEAX")
+SetSoundParamsFromLabel(gg_snd_GromYesAttack3, "GromYesAttack")
+SetSoundDuration(gg_snd_GromYesAttack3, 1741)
+SetSoundVolume(gg_snd_GromYesAttack3, 127)
+SetSoundPitch(gg_snd_GromYesAttack3, 0.9)
 gg_snd_H01Arthas02 = CreateSound("Sound/Dialogue/HumanCampaign/Human01/H01Arthas02.flac", false, false, false, 0, 0, "DefaultEAXON")
 SetSoundParamsFromLabel(gg_snd_H01Arthas02, "H01Arthas02")
 SetSoundDuration(gg_snd_H01Arthas02, 4454)
@@ -1492,10 +1641,23 @@ gg_snd_H02Arthas09 = CreateSound("Sound/Dialogue/HumanCampaign/Human02/H02Arthas
 SetSoundParamsFromLabel(gg_snd_H02Arthas09, "H02Arthas09")
 SetSoundDuration(gg_snd_H02Arthas09, 1163)
 SetSoundVolume(gg_snd_H02Arthas09, 120)
+gg_snd_H02Arthas26X = CreateSound("war3mapImported/H02Arthas26X.mp3", false, false, false, 0, 0, "DefaultEAXON")
+SetSoundDuration(gg_snd_H02Arthas26X, 1163)
+SetSoundChannel(gg_snd_H02Arthas26X, 0)
+SetSoundVolume(gg_snd_H02Arthas26X, 127)
+SetSoundPitch(gg_snd_H02Arthas26X, 1.0)
+gg_snd_H02Blademaster11 = CreateSound("Sound/Dialogue/HumanCampaign/Human02/H02Blademaster11.flac", false, false, false, 0, 0, "DefaultEAXON")
+SetSoundParamsFromLabel(gg_snd_H02Blademaster11, "H02Blademaster11")
+SetSoundDuration(gg_snd_H02Blademaster11, 10907)
+SetSoundVolume(gg_snd_H02Blademaster11, 120)
 gg_snd_H02DwarfScout16 = CreateSound("Sound/Dialogue/HumanCampaign/Human02/H02DwarfScout16.flac", false, false, false, 0, 0, "DefaultEAXON")
 SetSoundParamsFromLabel(gg_snd_H02DwarfScout16, "H02DwarfScout16")
 SetSoundDuration(gg_snd_H02DwarfScout16, 6623)
 SetSoundVolume(gg_snd_H02DwarfScout16, 120)
+gg_snd_H02Footman23 = CreateSound("Sound/Dialogue/HumanCampaign/Human02/H02Footman23.flac", false, false, false, 0, 0, "DefaultEAXON")
+SetSoundParamsFromLabel(gg_snd_H02Footman23, "H02Footman23")
+SetSoundDuration(gg_snd_H02Footman23, 3645)
+SetSoundVolume(gg_snd_H02Footman23, 120)
 gg_snd_H02Jaina34 = CreateSound("Sound/Dialogue/HumanCampaign/Human02Interlude/H02Jaina34.flac", false, false, false, 0, 0, "DefaultEAXON")
 SetSoundParamsFromLabel(gg_snd_H02Jaina34, "H02Jaina34")
 SetSoundDuration(gg_snd_H02Jaina34, 7328)
@@ -1516,6 +1678,10 @@ gg_snd_H02Uther10 = CreateSound("Sound/Dialogue/HumanCampaign/Human02/H02Uther10
 SetSoundParamsFromLabel(gg_snd_H02Uther10, "H02Uther10")
 SetSoundDuration(gg_snd_H02Uther10, 1633)
 SetSoundVolume(gg_snd_H02Uther10, 120)
+gg_snd_H02Warlock22 = CreateSound("Sound/Dialogue/HumanCampaign/Human02/H02Warlock22.flac", false, false, false, 0, 0, "DefaultEAXON")
+SetSoundParamsFromLabel(gg_snd_H02Warlock22, "H02Warlock22")
+SetSoundDuration(gg_snd_H02Warlock22, 7537)
+SetSoundVolume(gg_snd_H02Warlock22, 120)
 gg_snd_H03Jaina09 = CreateSound("Sound/Dialogue/HumanCampaign/Human03/H03Jaina09.flac", false, false, false, 0, 0, "DefaultEAXON")
 SetSoundParamsFromLabel(gg_snd_H03Jaina09, "H03Jaina09")
 SetSoundDuration(gg_snd_H03Jaina09, 6388)
@@ -1529,6 +1695,10 @@ gg_snd_H09Muradin06 = CreateSound("Sound/Dialogue/HumanCampaign/Human09/H09Murad
 SetSoundParamsFromLabel(gg_snd_H09Muradin06, "H09Muradin06")
 SetSoundDuration(gg_snd_H09Muradin06, 6257)
 SetSoundVolume(gg_snd_H09Muradin06, 120)
+gg_snd_HeroBladeMasterWarcry1 = CreateSound("Units/Orc/HeroBladeMaster/HeroBladeMasterWarcry1.flac", false, true, true, 0, 0, "HeroAcksEAX")
+SetSoundParamsFromLabel(gg_snd_HeroBladeMasterWarcry1, "HeroBladeMasterWarcry")
+SetSoundDuration(gg_snd_HeroBladeMasterWarcry1, 2136)
+SetSoundVolume(gg_snd_HeroBladeMasterWarcry1, 127)
 gg_snd_HeroDreadlordWhat1 = CreateSound("Units/Undead/HeroDreadLord/HeroDreadlordWhat1.flac", false, true, true, 0, 0, "HeroAcksEAX")
 SetSoundParamsFromLabel(gg_snd_HeroDreadlordWhat1, "HeroDreadLordWhat")
 SetSoundDuration(gg_snd_HeroDreadlordWhat1, 1444)
@@ -1537,6 +1707,18 @@ gg_snd_HeroDreadlordYes1 = CreateSound("Units/Undead/HeroDreadLord/HeroDreadlord
 SetSoundParamsFromLabel(gg_snd_HeroDreadlordYes1, "HeroDreadLordYes")
 SetSoundDuration(gg_snd_HeroDreadlordYes1, 1728)
 SetSoundVolume(gg_snd_HeroDreadlordYes1, 127)
+gg_snd_HeroicVictory = "HeroicVictory"
+gg_snd_Hint = CreateSound("Sound/Interface/Hint.flac", false, false, false, 1, 1, "DoodadsEAX")
+SetSoundParamsFromLabel(gg_snd_Hint, "Hint")
+SetSoundDuration(gg_snd_Hint, 2005)
+SetSoundVolume(gg_snd_Hint, 80)
+gg_snd_HPitLordWhat1 = CreateSound("Units/Demon/HeroPitLord/HPitLordWhat1.flac", false, false, true, 1, 1, "HeroAcksEAX")
+SetSoundParamsFromLabel(gg_snd_HPitLordWhat1, "HeroPitLordWhat")
+SetSoundDuration(gg_snd_HPitLordWhat1, 2711)
+SetSoundVolume(gg_snd_HPitLordWhat1, 127)
+SetSoundPitch(gg_snd_HPitLordWhat1, 0.9)
+gg_snd_HumanVictory = "HumanVictory"
+gg_snd_HumanX1stormwind3 = "war3mapImported/HumanX1stormwind3.mp3"
 gg_snd_HuntressMissileLaunch = CreateSound("Abilities\\Weapons\\SentinelMissile\\HuntressMissileLaunch.wav", false, true, true, 10, 10, "MissilesEAX")
 SetSoundDuration(gg_snd_HuntressMissileLaunch, 635)
 SetSoundChannel(gg_snd_HuntressMissileLaunch, 0)
@@ -1546,6 +1728,56 @@ SetSoundDistances(gg_snd_HuntressMissileLaunch, 0.0, 10000.0)
 SetSoundDistanceCutoff(gg_snd_HuntressMissileLaunch, 3000.0)
 SetSoundConeAngles(gg_snd_HuntressMissileLaunch, 0.0, 0.0, 127)
 SetSoundConeOrientation(gg_snd_HuntressMissileLaunch, 0.0, 0.0, 0.0)
+gg_snd_IceCrownDay = CreateSound("Sound/Ambient/IceCrown/IceCrownDay.flac", true, true, true, 1, 1, "DefaultEAXON")
+SetSoundParamsFromLabel(gg_snd_IceCrownDay, "IceCrownDay")
+SetSoundDuration(gg_snd_IceCrownDay, 120528)
+SetSoundChannel(gg_snd_IceCrownDay, 10)
+SetSoundVolume(gg_snd_IceCrownDay, 14)
+SetSoundDistances(gg_snd_IceCrownDay, 0.0, 10000.0)
+SetSoundDistanceCutoff(gg_snd_IceCrownDay, 100.0)
+gg_snd_IceCrownNight = CreateSound("Sound/Ambient/IceCrown/IceCrownNight.flac", true, true, true, 1, 1, "DefaultEAXON")
+SetSoundParamsFromLabel(gg_snd_IceCrownNight, "IceCrownNight")
+SetSoundDuration(gg_snd_IceCrownNight, 123220)
+SetSoundChannel(gg_snd_IceCrownNight, 10)
+SetSoundVolume(gg_snd_IceCrownNight, 14)
+SetSoundDistances(gg_snd_IceCrownNight, 0.0, 10000.0)
+SetSoundDistanceCutoff(gg_snd_IceCrownNight, 100.0)
+gg_snd_IceTrollWhat4 = CreateSound("Units/Creeps/IceTroll/IceTrollWhat4.flac", false, true, true, 0, 0, "DefaultEAXON")
+SetSoundParamsFromLabel(gg_snd_IceTrollWhat4, "IceTrollShadowPriestWhat")
+SetSoundDuration(gg_snd_IceTrollWhat4, 1105)
+SetSoundVolume(gg_snd_IceTrollWhat4, 127)
+gg_snd_Illidancinematic3 = "war3mapImported/Illidancinematic3.mp3"
+gg_snd_IllidansTheme = "IllidansTheme"
+gg_snd_IllidanWarcry1 = CreateSound("Units/NightElf/Illidan/IllidanWarcry1.flac", false, true, true, 1, 1, "DefaultEAXON")
+SetSoundParamsFromLabel(gg_snd_IllidanWarcry1, "IllidanWarcry")
+SetSoundDuration(gg_snd_IllidanWarcry1, 2002)
+SetSoundChannel(gg_snd_IllidanWarcry1, 0)
+SetSoundVolume(gg_snd_IllidanWarcry1, 127)
+SetSoundDistances(gg_snd_IllidanWarcry1, 100000.0, 100000.0)
+SetSoundDistanceCutoff(gg_snd_IllidanWarcry1, 3000.0)
+gg_snd_IllidanYes4 = CreateSound("Units/NightElf/Illidan/IllidanYes4.flac", false, false, false, 1, 1, "DefaultEAXON")
+SetSoundParamsFromLabel(gg_snd_IllidanYes4, "IllidanYes")
+SetSoundDuration(gg_snd_IllidanYes4, 2023)
+SetSoundChannel(gg_snd_IllidanYes4, 0)
+SetSoundVolume(gg_snd_IllidanYes4, 126)
+gg_snd_IllidanYesAttack2 = CreateSound("Units/NightElf/Illidan/IllidanYesAttack2.flac", false, true, true, 0, 0, "HeroAcksEAX")
+SetSoundParamsFromLabel(gg_snd_IllidanYesAttack2, "IllidanYesAttack")
+SetSoundDuration(gg_snd_IllidanYesAttack2, 1338)
+SetSoundVolume(gg_snd_IllidanYesAttack2, 127)
+gg_snd_JainaWarcry1 = CreateSound("Units/Human/Jaina/JainaWarcry1.flac", false, true, true, 0, 0, "HeroAcksEAX")
+SetSoundParamsFromLabel(gg_snd_JainaWarcry1, "JainaWarcry")
+SetSoundDuration(gg_snd_JainaWarcry1, 1340)
+SetSoundVolume(gg_snd_JainaWarcry1, 127)
+gg_snd_KelThuzadYes4 = CreateSound("Units/Undead/KelThuzadLich/KelThuzadYes4.flac", false, true, true, 0, 0, "HeroAcksEAX")
+SetSoundParamsFromLabel(gg_snd_KelThuzadYes4, "KelThuzadLichYes")
+SetSoundDuration(gg_snd_KelThuzadYes4, 1057)
+SetSoundVolume(gg_snd_KelThuzadYes4, 127)
+gg_snd_KnightYesAttack1 = CreateSound("Units/Human/Knight/KnightYesAttack1.flac", false, true, true, 1, 1, "DefaultEAXON")
+SetSoundParamsFromLabel(gg_snd_KnightYesAttack1, "KnightYesAttack")
+SetSoundDuration(gg_snd_KnightYesAttack1, 1956)
+SetSoundVolume(gg_snd_KnightYesAttack1, 70)
+SetSoundDistances(gg_snd_KnightYesAttack1, 100000.0, 100000.0)
+SetSoundDistanceCutoff(gg_snd_KnightYesAttack1, 3000.0)
 gg_snd_L01Detheroc01 = CreateSound("Sound/Dialogue/UndeadExpCamp/Undead01x/L01Detheroc01.flac", false, false, false, 0, 0, "DefaultEAXON")
 SetSoundParamsFromLabel(gg_snd_L01Detheroc01, "L01Detheroc01")
 SetSoundDuration(gg_snd_L01Detheroc01, 9221)
@@ -1558,6 +1790,52 @@ gg_snd_L07AAxeman19 = CreateSound("Sound/Dialogue/UndeadExpCamp/Undead07Ax/L07AA
 SetSoundParamsFromLabel(gg_snd_L07AAxeman19, "L07AAxeman19")
 SetSoundDuration(gg_snd_L07AAxeman19, 1428)
 SetSoundVolume(gg_snd_L07AAxeman19, 120)
+gg_snd_Loading = CreateSound("Abilities/Spells/Other/LoadUnload/Loading.flac", false, true, true, 0, 0, "DefaultEAXON")
+SetSoundParamsFromLabel(gg_snd_Loading, "LoadUnload")
+SetSoundDuration(gg_snd_Loading, 740)
+SetSoundVolume(gg_snd_Loading, 127)
+gg_snd_LordaeronFallDay = CreateSound("Sound/Ambient/LordaeronFall/LordaeronFallDay.flac", true, true, true, 1, 1, "DefaultEAXON")
+SetSoundParamsFromLabel(gg_snd_LordaeronFallDay, "LordaeronFallDay")
+SetSoundDuration(gg_snd_LordaeronFallDay, 124766)
+SetSoundChannel(gg_snd_LordaeronFallDay, 10)
+SetSoundVolume(gg_snd_LordaeronFallDay, 10)
+SetSoundDistances(gg_snd_LordaeronFallDay, 0.0, 10000.0)
+SetSoundDistanceCutoff(gg_snd_LordaeronFallDay, 100.0)
+gg_snd_LordaeronFallNight = CreateSound("Sound/Ambient/LordaeronFall/LordaeronFallNight.flac", true, true, true, 1, 1, "DefaultEAXON")
+SetSoundParamsFromLabel(gg_snd_LordaeronFallNight, "VillageFallNight")
+SetSoundDuration(gg_snd_LordaeronFallNight, 124342)
+SetSoundChannel(gg_snd_LordaeronFallNight, 10)
+SetSoundVolume(gg_snd_LordaeronFallNight, 10)
+SetSoundDistances(gg_snd_LordaeronFallNight, 0.0, 10000.0)
+SetSoundDistanceCutoff(gg_snd_LordaeronFallNight, 100.0)
+gg_snd_LordaeronSummerDay = CreateSound("Sound/Ambient/LordaeronSummer/LordaeronSummerDay.flac", true, true, true, 1, 1, "DefaultEAXON")
+SetSoundParamsFromLabel(gg_snd_LordaeronSummerDay, "LordaeronSummerDay")
+SetSoundDuration(gg_snd_LordaeronSummerDay, 117210)
+SetSoundChannel(gg_snd_LordaeronSummerDay, 10)
+SetSoundVolume(gg_snd_LordaeronSummerDay, 10)
+SetSoundDistances(gg_snd_LordaeronSummerDay, 0.0, 10000.0)
+SetSoundDistanceCutoff(gg_snd_LordaeronSummerDay, 100.0)
+gg_snd_LordaeronSummerNight = CreateSound("Sound/Ambient/LordaeronSummer/LordaeronSummerNight.flac", true, true, true, 1, 1, "DefaultEAXON")
+SetSoundParamsFromLabel(gg_snd_LordaeronSummerNight, "LordaeronSummerNight")
+SetSoundDuration(gg_snd_LordaeronSummerNight, 122859)
+SetSoundChannel(gg_snd_LordaeronSummerNight, 10)
+SetSoundVolume(gg_snd_LordaeronSummerNight, 10)
+SetSoundDistances(gg_snd_LordaeronSummerNight, 0.0, 10000.0)
+SetSoundDistanceCutoff(gg_snd_LordaeronSummerNight, 100.0)
+gg_snd_LordaeronWinterDay = CreateSound("Sound/Ambient/LordaeronWinter/LordaeronWinterDay.flac", true, true, true, 1, 1, "DefaultEAXON")
+SetSoundParamsFromLabel(gg_snd_LordaeronWinterDay, "LordaeronWinterDay")
+SetSoundDuration(gg_snd_LordaeronWinterDay, 117986)
+SetSoundChannel(gg_snd_LordaeronWinterDay, 10)
+SetSoundVolume(gg_snd_LordaeronWinterDay, 10)
+SetSoundDistances(gg_snd_LordaeronWinterDay, 0.0, 10000.0)
+SetSoundDistanceCutoff(gg_snd_LordaeronWinterDay, 100.0)
+gg_snd_LordaeronWinterNight = CreateSound("Sound/Ambient/LordaeronWinter/LordaeronWinterNight.flac", true, true, true, 1, 1, "DefaultEAXON")
+SetSoundParamsFromLabel(gg_snd_LordaeronWinterNight, "LordaeronWinterNight")
+SetSoundDuration(gg_snd_LordaeronWinterNight, 118060)
+SetSoundChannel(gg_snd_LordaeronWinterNight, 10)
+SetSoundVolume(gg_snd_LordaeronWinterNight, 10)
+SetSoundDistances(gg_snd_LordaeronWinterNight, 0.0, 10000.0)
+SetSoundDistanceCutoff(gg_snd_LordaeronWinterNight, 100.0)
 gg_snd_MetalHeavySliceFlesh1 = CreateSound("Sound\\Units\\Combat\\MetalHeavySliceFlesh1.wav", false, true, true, 10, 10, "CombatSoundsEAX")
 SetSoundDuration(gg_snd_MetalHeavySliceFlesh1, 1104)
 SetSoundChannel(gg_snd_MetalHeavySliceFlesh1, 0)
@@ -1597,6 +1875,40 @@ gg_snd_MuradinYesAttack1 = CreateSound("Units/Human/Muradin/MuradinYesAttack1.fl
 SetSoundParamsFromLabel(gg_snd_MuradinYesAttack1, "MuradinYesAttack")
 SetSoundDuration(gg_snd_MuradinYesAttack1, 1300)
 SetSoundVolume(gg_snd_MuradinYesAttack1, 127)
+gg_snd_N01Shandris01 = CreateSound("Sound/Dialogue/NightElfCampaign/NightElf01/N01Shandris01.flac", false, false, false, 0, 0, "DefaultEAXON")
+SetSoundParamsFromLabel(gg_snd_N01Shandris01, "N01Shandris01")
+SetSoundDuration(gg_snd_N01Shandris01, 4637)
+SetSoundVolume(gg_snd_N01Shandris01, 120)
+gg_snd_N01Tyrande02 = CreateSound("Sound/Dialogue/NightElfCampaign/NightElf01/N01Tyrande02.flac", false, false, false, 0, 0, "DefaultEAXON")
+SetSoundParamsFromLabel(gg_snd_N01Tyrande02, "N01Tyrande02")
+SetSoundDuration(gg_snd_N01Tyrande02, 7119)
+SetSoundVolume(gg_snd_N01Tyrande02, 120)
+gg_snd_N03Tyrande01X = CreateSound("war3mapImported/N03Tyrande01X.mp3", false, false, false, 0, 0, "DefaultEAXON")
+SetSoundDuration(gg_snd_N03Tyrande01X, 7119)
+SetSoundChannel(gg_snd_N03Tyrande01X, 0)
+SetSoundVolume(gg_snd_N03Tyrande01X, 127)
+SetSoundPitch(gg_snd_N03Tyrande01X, 1.0)
+gg_snd_N04Furion32 = CreateSound("Sound/Dialogue/NightElfCampaign/NightElf04/N04Furion32.flac", false, false, false, 0, 0, "DefaultEAXON")
+SetSoundParamsFromLabel(gg_snd_N04Furion32, "N04Furion32")
+SetSoundDuration(gg_snd_N04Furion32, 8503)
+SetSoundVolume(gg_snd_N04Furion32, 120)
+gg_snd_N04Tyrande10 = CreateSound("Sound/Dialogue/NightElfCampaign/NightElf04/N04Tyrande10.flac", false, false, false, 0, 0, "DefaultEAXON")
+SetSoundParamsFromLabel(gg_snd_N04Tyrande10, "N04Tyrande10")
+SetSoundDuration(gg_snd_N04Tyrande10, 7302)
+SetSoundVolume(gg_snd_N04Tyrande10, 120)
+gg_snd_N05Tyrande18 = CreateSound("Sound/Dialogue/NightElfCampaign/NightElf05/N05Tyrande18.flac", false, false, false, 1, 1, "DefaultEAXON")
+SetSoundParamsFromLabel(gg_snd_N05Tyrande18, "N05Tyrande18")
+SetSoundDuration(gg_snd_N05Tyrande18, 1842)
+SetSoundVolume(gg_snd_N05Tyrande18, 120)
+SetSoundPitch(gg_snd_N05Tyrande18, 1.1)
+gg_snd_N06Illidan17 = CreateSound("Sound/Dialogue/NightElfCampaign/NightElf06/N06Illidan17.flac", false, false, false, 0, 0, "DefaultEAXON")
+SetSoundParamsFromLabel(gg_snd_N06Illidan17, "N06Illidan17")
+SetSoundDuration(gg_snd_N06Illidan17, 6492)
+SetSoundVolume(gg_snd_N06Illidan17, 120)
+gg_snd_N06Illidan1701 = CreateSound("Sound/Dialogue/NightElfCampaign/NightElf06/N06Illidan17.flac", false, false, false, 1, 1, "DefaultEAXON")
+SetSoundParamsFromLabel(gg_snd_N06Illidan1701, "N06Illidan17")
+SetSoundDuration(gg_snd_N06Illidan1701, 6492)
+SetSoundVolume(gg_snd_N06Illidan1701, 127)
 gg_snd_N07Archimonde28 = CreateSound("Sound/Dialogue/NightElfCampaign/NightElf07/N07Archimonde28.flac", false, false, false, 0, 0, "DefaultEAXON")
 SetSoundParamsFromLabel(gg_snd_N07Archimonde28, "N07Archimonde28")
 SetSoundDuration(gg_snd_N07Archimonde28, 9313)
@@ -1606,6 +1918,26 @@ SetSoundDuration(gg_snd_NewTournament, 7987)
 SetSoundChannel(gg_snd_NewTournament, 0)
 SetSoundVolume(gg_snd_NewTournament, -1)
 SetSoundPitch(gg_snd_NewTournament, 1.0)
+gg_snd_NightElfVictory = "NightElfVictory"
+gg_snd_NorthrendDay = CreateSound("Sound/Ambient/Northrend/NorthrendDay.flac", true, true, true, 1, 1, "DefaultEAXON")
+SetSoundParamsFromLabel(gg_snd_NorthrendDay, "NorthrendDay")
+SetSoundDuration(gg_snd_NorthrendDay, 114102)
+SetSoundChannel(gg_snd_NorthrendDay, 10)
+SetSoundVolume(gg_snd_NorthrendDay, 15)
+SetSoundDistances(gg_snd_NorthrendDay, 0.0, 10000.0)
+SetSoundDistanceCutoff(gg_snd_NorthrendDay, 100.0)
+gg_snd_NorthrendNight = CreateSound("Sound/Ambient/Northrend/NorthrendNight.flac", true, true, true, 1, 1, "DefaultEAXON")
+SetSoundParamsFromLabel(gg_snd_NorthrendNight, "DungeonNight")
+SetSoundDuration(gg_snd_NorthrendNight, 106607)
+SetSoundChannel(gg_snd_NorthrendNight, 10)
+SetSoundVolume(gg_snd_NorthrendNight, 25)
+SetSoundDistances(gg_snd_NorthrendNight, 0.0, 10000.0)
+SetSoundDistanceCutoff(gg_snd_NorthrendNight, 400.0)
+gg_snd_NuclearLaunchDetected = CreateSound("war3mapImported/NuclearLaunchDetected.mp3", false, false, false, 0, 0, "DefaultEAXON")
+SetSoundDuration(gg_snd_NuclearLaunchDetected, 2712)
+SetSoundChannel(gg_snd_NuclearLaunchDetected, 0)
+SetSoundVolume(gg_snd_NuclearLaunchDetected, 127)
+SetSoundPitch(gg_snd_NuclearLaunchDetected, 1.0)
 gg_snd_O01Grunt01 = CreateSound("Sound/Dialogue/OrcCampaign/Orc01/O01Grunt01.flac", false, false, false, 0, 0, "DefaultEAXON")
 SetSoundParamsFromLabel(gg_snd_O01Grunt01, "O01Grunt01")
 SetSoundDuration(gg_snd_O01Grunt01, 6074)
@@ -1618,6 +1950,10 @@ gg_snd_O01Grunt05 = CreateSound("Sound/Dialogue/OrcCampaign/Orc01/O01Grunt05.fla
 SetSoundParamsFromLabel(gg_snd_O01Grunt05, "O01Grunt05")
 SetSoundDuration(gg_snd_O01Grunt05, 3070)
 SetSoundVolume(gg_snd_O01Grunt05, 120)
+gg_snd_O03Grom14 = CreateSound("Sound/Dialogue/OrcCampaign/Orc03/O03Grom14.flac", false, false, false, 1, 1, "DefaultEAXON")
+SetSoundParamsFromLabel(gg_snd_O03Grom14, "O03Grom14")
+SetSoundDuration(gg_snd_O03Grom14, 6805)
+SetSoundVolume(gg_snd_O03Grom14, 127)
 gg_snd_O04Grom01 = CreateSound("Sound/Dialogue/OrcCampaign/Orc04/O04Grom01.flac", false, false, false, 0, 0, "DefaultEAXON")
 SetSoundParamsFromLabel(gg_snd_O04Grom01, "O04Grom01")
 SetSoundDuration(gg_snd_O04Grom01, 9914)
@@ -1630,14 +1966,44 @@ gg_snd_O04Grom07 = CreateSound("Sound/Dialogue/OrcCampaign/Orc04/O04Grom07.flac"
 SetSoundParamsFromLabel(gg_snd_O04Grom07, "O04Grom07")
 SetSoundDuration(gg_snd_O04Grom07, 10593)
 SetSoundVolume(gg_snd_O04Grom07, 120)
+gg_snd_O04Huntress09 = CreateSound("war3mapImported/O04Huntress09.mp3", false, false, false, 0, 0, "DefaultEAXON")
+SetSoundDuration(gg_snd_O04Huntress09, 10593)
+SetSoundChannel(gg_snd_O04Huntress09, 0)
+SetSoundVolume(gg_snd_O04Huntress09, 127)
+SetSoundPitch(gg_snd_O04Huntress09, 1.0)
 gg_snd_O04WarsongOrc02 = CreateSound("Sound/Dialogue/OrcCampaign/Orc04/O04WarsongOrc02.flac", false, false, false, 0, 0, "DefaultEAXON")
 SetSoundParamsFromLabel(gg_snd_O04WarsongOrc02, "O04WarsongOrc02")
 SetSoundDuration(gg_snd_O04WarsongOrc02, 9392)
 SetSoundVolume(gg_snd_O04WarsongOrc02, 120)
+gg_snd_O05Cenarius01 = CreateSound("Sound/Dialogue/OrcCampaign/Orc05/O05Cenarius01.flac", false, false, false, 0, 0, "DefaultEAXON")
+SetSoundParamsFromLabel(gg_snd_O05Cenarius01, "O05Cenarius01")
+SetSoundDuration(gg_snd_O05Cenarius01, 8582)
+SetSoundVolume(gg_snd_O05Cenarius01, 120)
+gg_snd_O05Cenarius03 = CreateSound("Sound/Dialogue/OrcCampaign/Orc05/O05Cenarius03.flac", false, false, false, 0, 0, "DefaultEAXON")
+SetSoundParamsFromLabel(gg_snd_O05Cenarius03, "O05Cenarius03")
+SetSoundDuration(gg_snd_O05Cenarius03, 3201)
+SetSoundVolume(gg_snd_O05Cenarius03, 120)
+gg_snd_O05Cenarius07 = CreateSound("Sound/Dialogue/OrcCampaign/Orc05/O05Cenarius07.flac", false, false, false, 0, 0, "DefaultEAXON")
+SetSoundParamsFromLabel(gg_snd_O05Cenarius07, "O05Cenarius07")
+SetSoundDuration(gg_snd_O05Cenarius07, 7589)
+SetSoundVolume(gg_snd_O05Cenarius07, 120)
+gg_snd_O05Cenarius27 = CreateSound("Sound/Dialogue/OrcCampaign/Orc05/O05Cenarius27.flac", false, false, false, 0, 0, "DefaultEAXON")
+SetSoundParamsFromLabel(gg_snd_O05Cenarius27, "O05Cenarius27")
+SetSoundDuration(gg_snd_O05Cenarius27, 5134)
+SetSoundVolume(gg_snd_O05Cenarius27, 120)
+gg_snd_O05Cenarius28 = CreateSound("Sound/Dialogue/OrcCampaign/Orc05/O05Cenarius28.flac", false, false, false, 0, 0, "DefaultEAXON")
+SetSoundParamsFromLabel(gg_snd_O05Cenarius28, "O05Cenarius28")
+SetSoundDuration(gg_snd_O05Cenarius28, 5421)
+SetSoundVolume(gg_snd_O05Cenarius28, 120)
 gg_snd_O05Grom38 = CreateSound("Sound/Dialogue/OrcCampaign/Orc05/O05Grom38.flac", false, false, false, 0, 0, "DefaultEAXON")
 SetSoundParamsFromLabel(gg_snd_O05Grom38, "O05Grom38")
 SetSoundDuration(gg_snd_O05Grom38, 6152)
 SetSoundVolume(gg_snd_O05Grom38, 120)
+gg_snd_O05WitchDoctor19 = CreateSound("Sound/Dialogue/OrcCampaign/Orc05/O05WitchDoctor19.flac", false, false, false, 0, 0, "DefaultEAXON")
+SetSoundParamsFromLabel(gg_snd_O05WitchDoctor19, "O05WitchDoctor19")
+SetSoundDuration(gg_snd_O05WitchDoctor19, 4925)
+SetSoundVolume(gg_snd_O05WitchDoctor19, 120)
+gg_snd_OrcVictory = "OrcVictory"
 gg_snd_PriestYes3 = CreateSound("Units/Human/Priest/PriestYes3.flac", false, true, true, 0, 0, "DefaultEAXON")
 SetSoundParamsFromLabel(gg_snd_PriestYes3, "PriestYes")
 SetSoundDuration(gg_snd_PriestYes3, 837)
@@ -1647,6 +2013,10 @@ SetSoundDuration(gg_snd_QuestFailed, 4690)
 SetSoundChannel(gg_snd_QuestFailed, 0)
 SetSoundVolume(gg_snd_QuestFailed, -1)
 SetSoundPitch(gg_snd_QuestFailed, 1.0)
+gg_snd_QuestLog = CreateSound("Sound/Interface/QuestLog.flac", false, false, false, 0, 0, "DefaultEAXON")
+SetSoundParamsFromLabel(gg_snd_QuestLog, "QuestUpdate")
+SetSoundDuration(gg_snd_QuestLog, 2275)
+SetSoundVolume(gg_snd_QuestLog, 80)
 gg_snd_QuestNew = CreateSound("Sound/Interface/QuestNew.flac", false, false, false, 0, 0, "DefaultEAXON")
 SetSoundParamsFromLabel(gg_snd_QuestNew, "QuestNew")
 SetSoundDuration(gg_snd_QuestNew, 3750)
@@ -1659,6 +2029,48 @@ gg_snd_RiflemanWhat4 = CreateSound("Units/Human/Rifleman/RiflemanWhat4.flac", fa
 SetSoundParamsFromLabel(gg_snd_RiflemanWhat4, "RiflemanWhat")
 SetSoundDuration(gg_snd_RiflemanWhat4, 747)
 SetSoundVolume(gg_snd_RiflemanWhat4, 127)
+gg_snd_S01Maiev04 = CreateSound("Sound/Dialogue/NightElfExpCamp/NightElf01x/S01Maiev04.flac", false, false, false, 0, 0, "DefaultEAXON")
+SetSoundParamsFromLabel(gg_snd_S01Maiev04, "S01Maiev04")
+SetSoundDuration(gg_snd_S01Maiev04, 7964)
+SetSoundVolume(gg_snd_S01Maiev04, 120)
+gg_snd_S01Maiev07 = CreateSound("Sound/Dialogue/NightElfExpCamp/NightElf01x/S01Maiev07.flac", false, false, false, 0, 0, "DefaultEAXON")
+SetSoundParamsFromLabel(gg_snd_S01Maiev07, "S01Maiev07")
+SetSoundDuration(gg_snd_S01Maiev07, 1700)
+SetSoundVolume(gg_snd_S01Maiev07, 120)
+gg_snd_S01Maiev21 = CreateSound("Sound/Dialogue/NightElfExpCamp/NightElf01x/S01Maiev21.flac", false, false, false, 0, 0, "DefaultEAXON")
+SetSoundParamsFromLabel(gg_snd_S01Maiev21, "S01Maiev21")
+SetSoundDuration(gg_snd_S01Maiev21, 674)
+SetSoundVolume(gg_snd_S01Maiev21, 120)
+gg_snd_S01WatcherOne05 = CreateSound("Sound/Dialogue/NightElfExpCamp/NightElf01x/S01WatcherOne05.flac", false, false, false, 0, 0, "DefaultEAXON")
+SetSoundParamsFromLabel(gg_snd_S01WatcherOne05, "S01WatcherOne05")
+SetSoundDuration(gg_snd_S01WatcherOne05, 920)
+SetSoundVolume(gg_snd_S01WatcherOne05, 120)
+gg_snd_S01WatcherOne20 = CreateSound("Sound/Dialogue/NightElfExpCamp/NightElf01x/S01WatcherOne20.flac", false, false, false, 0, 0, "DefaultEAXON")
+SetSoundParamsFromLabel(gg_snd_S01WatcherOne20, "S01WatcherOne20")
+SetSoundDuration(gg_snd_S01WatcherOne20, 3332)
+SetSoundVolume(gg_snd_S01WatcherOne20, 120)
+gg_snd_S04Tyrande31 = CreateSound("Sound/Dialogue/NightElfExpCamp/NightElf04xInterlude/S04Tyrande31.flac", false, false, false, 1, 1, "DefaultEAXON")
+SetSoundParamsFromLabel(gg_snd_S04Tyrande31, "S04Tyrande31")
+SetSoundDuration(gg_snd_S04Tyrande31, 3587)
+SetSoundVolume(gg_snd_S04Tyrande31, 120)
+SetSoundPitch(gg_snd_S04Tyrande31, 1.0)
+gg_snd_S05Furion07 = CreateSound("Sound/Dialogue/NightElfExpCamp/NightElf05x/S05Furion07.flac", false, false, false, 0, 0, "DefaultEAXON")
+SetSoundParamsFromLabel(gg_snd_S05Furion07, "S05Furion07")
+SetSoundDuration(gg_snd_S05Furion07, 4545)
+SetSoundVolume(gg_snd_S05Furion07, 120)
+gg_snd_S05Maiev24 = CreateSound("war3mapImported/S05Maiev24.mp3", false, false, false, 0, 0, "DefaultEAXON")
+SetSoundDuration(gg_snd_S05Maiev24, 4545)
+SetSoundChannel(gg_snd_S05Maiev24, 0)
+SetSoundVolume(gg_snd_S05Maiev24, 127)
+SetSoundPitch(gg_snd_S05Maiev24, 1.0)
+gg_snd_S07Illidan29 = CreateSound("Sound/Dialogue/NightElfExpCamp/NightElf07x/S07Illidan29.flac", false, false, false, 0, 0, "DefaultEAXON")
+SetSoundParamsFromLabel(gg_snd_S07Illidan29, "S07Illidan29")
+SetSoundDuration(gg_snd_S07Illidan29, 1764)
+SetSoundVolume(gg_snd_S07Illidan29, 120)
+gg_snd_SargerasLaugh = CreateSound("Sound/Ambient/DoodadEffects/SargerasLaugh.flac", false, false, false, 1, 1, "DefaultEAXON")
+SetSoundParamsFromLabel(gg_snd_SargerasLaugh, "SargerasLaugh")
+SetSoundDuration(gg_snd_SargerasLaugh, 3326)
+SetSoundVolume(gg_snd_SargerasLaugh, 127)
 gg_snd_SecretFound = CreateSound("Sound\\Interface\\SecretFound.wav", false, false, false, 10, 10, "DefaultEAXON")
 SetSoundDuration(gg_snd_SecretFound, 2525)
 SetSoundChannel(gg_snd_SecretFound, 0)
@@ -1668,6 +2080,10 @@ gg_snd_T02Grunt004 = CreateSound("Sound/Dialogue/TutorialCampaign/Tutorial02/T02
 SetSoundParamsFromLabel(gg_snd_T02Grunt004, "T02Grunt004")
 SetSoundDuration(gg_snd_T02Grunt004, 1085)
 SetSoundVolume(gg_snd_T02Grunt004, 120)
+gg_snd_ThunderClapCaster = CreateSound("Abilities/Spells/Human/ThunderClap/ThunderClapCaster.flac", false, true, true, 0, 0, "SpellsEAX")
+SetSoundParamsFromLabel(gg_snd_ThunderClapCaster, "ThunderClap")
+SetSoundDuration(gg_snd_ThunderClapCaster, 3450)
+SetSoundVolume(gg_snd_ThunderClapCaster, 127)
 gg_snd_TichondriusWhat1 = CreateSound("Units/Undead/Tichondrius/TichondriusWhat1.flac", false, true, true, 0, 0, "HeroAcksEAX")
 SetSoundParamsFromLabel(gg_snd_TichondriusWhat1, "TichondriusWhat")
 SetSoundDuration(gg_snd_TichondriusWhat1, 1320)
@@ -1688,241 +2104,6 @@ gg_snd_U02Tichondrius36 = CreateSound("Sound/Dialogue/UndeadCampaign/Undead02Int
 SetSoundParamsFromLabel(gg_snd_U02Tichondrius36, "U02Tichondrius36")
 SetSoundDuration(gg_snd_U02Tichondrius36, 7668)
 SetSoundVolume(gg_snd_U02Tichondrius36, 125)
-gg_snd_U03BSylvanas18 = CreateSound("Sound/Dialogue/UndeadCampaign/Undead03B/U03BSylvanas18.flac", false, false, false, 0, 0, "DefaultEAXON")
-SetSoundParamsFromLabel(gg_snd_U03BSylvanas18, "U03BSylvanas18")
-SetSoundDuration(gg_snd_U03BSylvanas18, 4846)
-SetSoundVolume(gg_snd_U03BSylvanas18, 120)
-gg_snd_U06Archimonde26 = CreateSound("Sound/Dialogue/UndeadCampaign/Undead06/U06Archimonde26.flac", false, false, false, 0, 0, "DefaultEAXON")
-SetSoundParamsFromLabel(gg_snd_U06Archimonde26, "U06Archimonde26")
-SetSoundDuration(gg_snd_U06Archimonde26, 13754)
-SetSoundVolume(gg_snd_U06Archimonde26, 120)
-gg_snd_U08Archimonde19 = CreateSound("Sound/Dialogue/UndeadCampaign/Undead08/U08Archimonde19.flac", false, false, false, 0, 0, "DefaultEAXON")
-SetSoundParamsFromLabel(gg_snd_U08Archimonde19, "U08Archimonde19")
-SetSoundDuration(gg_snd_U08Archimonde19, 7537)
-SetSoundVolume(gg_snd_U08Archimonde19, 120)
-gg_snd_War2IntroMusic = "Sound\\Music\\mp3Music\\War2IntroMusic.mp3"
-gg_snd_Warning = CreateSound("Sound\\Interface\\Warning.wav", false, false, false, 10, 10, "DefaultEAXON")
-SetSoundDuration(gg_snd_Warning, 1903)
-SetSoundChannel(gg_snd_Warning, 0)
-SetSoundVolume(gg_snd_Warning, -1)
-SetSoundPitch(gg_snd_Warning, 1.0)
-gg_snd_N01Shandris01 = CreateSound("Sound/Dialogue/NightElfCampaign/NightElf01/N01Shandris01.flac", false, false, false, 0, 0, "DefaultEAXON")
-SetSoundParamsFromLabel(gg_snd_N01Shandris01, "N01Shandris01")
-SetSoundDuration(gg_snd_N01Shandris01, 4637)
-SetSoundVolume(gg_snd_N01Shandris01, 120)
-gg_snd_N01Tyrande02 = CreateSound("Sound/Dialogue/NightElfCampaign/NightElf01/N01Tyrande02.flac", false, false, false, 0, 0, "DefaultEAXON")
-SetSoundParamsFromLabel(gg_snd_N01Tyrande02, "N01Tyrande02")
-SetSoundDuration(gg_snd_N01Tyrande02, 7119)
-SetSoundVolume(gg_snd_N01Tyrande02, 120)
-gg_snd_S01Maiev04 = CreateSound("Sound/Dialogue/NightElfExpCamp/NightElf01x/S01Maiev04.flac", false, false, false, 0, 0, "DefaultEAXON")
-SetSoundParamsFromLabel(gg_snd_S01Maiev04, "S01Maiev04")
-SetSoundDuration(gg_snd_S01Maiev04, 7964)
-SetSoundVolume(gg_snd_S01Maiev04, 120)
-gg_snd_S01Maiev07 = CreateSound("Sound/Dialogue/NightElfExpCamp/NightElf01x/S01Maiev07.flac", false, false, false, 0, 0, "DefaultEAXON")
-SetSoundParamsFromLabel(gg_snd_S01Maiev07, "S01Maiev07")
-SetSoundDuration(gg_snd_S01Maiev07, 1700)
-SetSoundVolume(gg_snd_S01Maiev07, 120)
-gg_snd_S01WatcherOne05 = CreateSound("Sound/Dialogue/NightElfExpCamp/NightElf01x/S01WatcherOne05.flac", false, false, false, 0, 0, "DefaultEAXON")
-SetSoundParamsFromLabel(gg_snd_S01WatcherOne05, "S01WatcherOne05")
-SetSoundDuration(gg_snd_S01WatcherOne05, 920)
-SetSoundVolume(gg_snd_S01WatcherOne05, 120)
-gg_snd_S01WatcherOne20 = CreateSound("Sound/Dialogue/NightElfExpCamp/NightElf01x/S01WatcherOne20.flac", false, false, false, 0, 0, "DefaultEAXON")
-SetSoundParamsFromLabel(gg_snd_S01WatcherOne20, "S01WatcherOne20")
-SetSoundDuration(gg_snd_S01WatcherOne20, 3332)
-SetSoundVolume(gg_snd_S01WatcherOne20, 120)
-gg_snd_S01Maiev21 = CreateSound("Sound/Dialogue/NightElfExpCamp/NightElf01x/S01Maiev21.flac", false, false, false, 0, 0, "DefaultEAXON")
-SetSoundParamsFromLabel(gg_snd_S01Maiev21, "S01Maiev21")
-SetSoundDuration(gg_snd_S01Maiev21, 674)
-SetSoundVolume(gg_snd_S01Maiev21, 120)
-gg_snd_S04Tyrande31 = CreateSound("Sound/Dialogue/NightElfExpCamp/NightElf04xInterlude/S04Tyrande31.flac", false, false, false, 1, 1, "DefaultEAXON")
-SetSoundParamsFromLabel(gg_snd_S04Tyrande31, "S04Tyrande31")
-SetSoundDuration(gg_snd_S04Tyrande31, 3587)
-SetSoundVolume(gg_snd_S04Tyrande31, 120)
-SetSoundPitch(gg_snd_S04Tyrande31, 1.0)
-gg_snd_S05Maiev24 = CreateSound("war3mapImported/S05Maiev24.mp3", false, false, false, 0, 0, "DefaultEAXON")
-SetSoundDuration(gg_snd_S05Maiev24, 3587)
-SetSoundChannel(gg_snd_S05Maiev24, 0)
-SetSoundVolume(gg_snd_S05Maiev24, 127)
-SetSoundPitch(gg_snd_S05Maiev24, 1.0)
-gg_snd_O04Huntress09 = CreateSound("war3mapImported/O04Huntress09.mp3", false, false, false, 0, 0, "DefaultEAXON")
-SetSoundDuration(gg_snd_O04Huntress09, 3587)
-SetSoundChannel(gg_snd_O04Huntress09, 0)
-SetSoundVolume(gg_snd_O04Huntress09, 127)
-SetSoundPitch(gg_snd_O04Huntress09, 1.0)
-gg_snd_N04Furion32 = CreateSound("Sound/Dialogue/NightElfCampaign/NightElf04/N04Furion32.flac", false, false, false, 0, 0, "DefaultEAXON")
-SetSoundParamsFromLabel(gg_snd_N04Furion32, "N04Furion32")
-SetSoundDuration(gg_snd_N04Furion32, 8503)
-SetSoundVolume(gg_snd_N04Furion32, 120)
-gg_snd_O05Cenarius01 = CreateSound("Sound/Dialogue/OrcCampaign/Orc05/O05Cenarius01.flac", false, false, false, 0, 0, "DefaultEAXON")
-SetSoundParamsFromLabel(gg_snd_O05Cenarius01, "O05Cenarius01")
-SetSoundDuration(gg_snd_O05Cenarius01, 8582)
-SetSoundVolume(gg_snd_O05Cenarius01, 120)
-gg_snd_S05Furion07 = CreateSound("Sound/Dialogue/NightElfExpCamp/NightElf05x/S05Furion07.flac", false, false, false, 0, 0, "DefaultEAXON")
-SetSoundParamsFromLabel(gg_snd_S05Furion07, "S05Furion07")
-SetSoundDuration(gg_snd_S05Furion07, 4545)
-SetSoundVolume(gg_snd_S05Furion07, 120)
-gg_snd_O05Cenarius03 = CreateSound("Sound/Dialogue/OrcCampaign/Orc05/O05Cenarius03.flac", false, false, false, 0, 0, "DefaultEAXON")
-SetSoundParamsFromLabel(gg_snd_O05Cenarius03, "O05Cenarius03")
-SetSoundDuration(gg_snd_O05Cenarius03, 3201)
-SetSoundVolume(gg_snd_O05Cenarius03, 120)
-gg_snd_O05Cenarius07 = CreateSound("Sound/Dialogue/OrcCampaign/Orc05/O05Cenarius07.flac", false, false, false, 0, 0, "DefaultEAXON")
-SetSoundParamsFromLabel(gg_snd_O05Cenarius07, "O05Cenarius07")
-SetSoundDuration(gg_snd_O05Cenarius07, 7589)
-SetSoundVolume(gg_snd_O05Cenarius07, 120)
-gg_snd_O05Cenarius27 = CreateSound("Sound/Dialogue/OrcCampaign/Orc05/O05Cenarius27.flac", false, false, false, 0, 0, "DefaultEAXON")
-SetSoundParamsFromLabel(gg_snd_O05Cenarius27, "O05Cenarius27")
-SetSoundDuration(gg_snd_O05Cenarius27, 5134)
-SetSoundVolume(gg_snd_O05Cenarius27, 120)
-gg_snd_O05Cenarius28 = CreateSound("Sound/Dialogue/OrcCampaign/Orc05/O05Cenarius28.flac", false, false, false, 0, 0, "DefaultEAXON")
-SetSoundParamsFromLabel(gg_snd_O05Cenarius28, "O05Cenarius28")
-SetSoundDuration(gg_snd_O05Cenarius28, 5421)
-SetSoundVolume(gg_snd_O05Cenarius28, 120)
-gg_snd_N04Tyrande10 = CreateSound("Sound/Dialogue/NightElfCampaign/NightElf04/N04Tyrande10.flac", false, false, false, 0, 0, "DefaultEAXON")
-SetSoundParamsFromLabel(gg_snd_N04Tyrande10, "N04Tyrande10")
-SetSoundDuration(gg_snd_N04Tyrande10, 7302)
-SetSoundVolume(gg_snd_N04Tyrande10, 120)
-gg_snd_N05Tyrande18 = CreateSound("Sound/Dialogue/NightElfCampaign/NightElf05/N05Tyrande18.flac", false, false, false, 1, 1, "DefaultEAXON")
-SetSoundParamsFromLabel(gg_snd_N05Tyrande18, "N05Tyrande18")
-SetSoundDuration(gg_snd_N05Tyrande18, 1842)
-SetSoundVolume(gg_snd_N05Tyrande18, 120)
-SetSoundPitch(gg_snd_N05Tyrande18, 1.1)
-gg_snd_N03Tyrande01X = CreateSound("war3mapImported/N03Tyrande01X.mp3", false, false, false, 0, 0, "DefaultEAXON")
-SetSoundDuration(gg_snd_N03Tyrande01X, 1842)
-SetSoundChannel(gg_snd_N03Tyrande01X, 0)
-SetSoundVolume(gg_snd_N03Tyrande01X, 127)
-SetSoundPitch(gg_snd_N03Tyrande01X, 1.0)
-gg_snd_U05ATichondrius01 = CreateSound("Sound/Dialogue/UndeadCampaign/Undead05A/U05ATichondrius01.flac", false, false, false, 0, 0, "DefaultEAXON")
-SetSoundParamsFromLabel(gg_snd_U05ATichondrius01, "U05ATichondrius01")
-SetSoundDuration(gg_snd_U05ATichondrius01, 6205)
-SetSoundVolume(gg_snd_U05ATichondrius01, 125)
-gg_snd_U05AArthas02 = CreateSound("Sound/Dialogue/UndeadCampaign/Undead05A/U05AArthas02.flac", false, false, false, 1, 1, "DefaultEAXON")
-SetSoundParamsFromLabel(gg_snd_U05AArthas02, "U05AArthas02")
-SetSoundDuration(gg_snd_U05AArthas02, 1868)
-SetSoundVolume(gg_snd_U05AArthas02, 120)
-SetSoundPitch(gg_snd_U05AArthas02, 0.9)
-gg_snd_U05ATichondrius03 = CreateSound("Sound/Dialogue/UndeadCampaign/Undead05A/U05ATichondrius03.flac", false, false, false, 0, 0, "DefaultEAXON")
-SetSoundParamsFromLabel(gg_snd_U05ATichondrius03, "U05ATichondrius03")
-SetSoundDuration(gg_snd_U05ATichondrius03, 6779)
-SetSoundVolume(gg_snd_U05ATichondrius03, 125)
-gg_snd_U05AArthas06 = CreateSound("Sound/Dialogue/UndeadCampaign/Undead05A/U05AArthas06.flac", false, false, false, 1, 1, "DefaultEAXON")
-SetSoundParamsFromLabel(gg_snd_U05AArthas06, "U05AArthas06")
-SetSoundDuration(gg_snd_U05AArthas06, 3122)
-SetSoundVolume(gg_snd_U05AArthas06, 120)
-SetSoundPitch(gg_snd_U05AArthas06, 0.9)
-gg_snd_U05BKelThuzad35 = CreateSound("Sound/Dialogue/UndeadCampaign/Undead05BInterlude/U05BKelThuzad35.flac", false, false, false, 0, 0, "DefaultEAXON")
-SetSoundParamsFromLabel(gg_snd_U05BKelThuzad35, "U05BKelThuzad35")
-SetSoundDuration(gg_snd_U05BKelThuzad35, 7575)
-SetSoundVolume(gg_snd_U05BKelThuzad35, 120)
-gg_snd_U06KelThuzad02XX3 = CreateSound("war3mapImported/U06KelThuzad02XX3.mp3", false, false, false, 0, 0, "DefaultEAXON")
-SetSoundDuration(gg_snd_U06KelThuzad02XX3, 7575)
-SetSoundChannel(gg_snd_U06KelThuzad02XX3, 0)
-SetSoundVolume(gg_snd_U06KelThuzad02XX3, 127)
-SetSoundPitch(gg_snd_U06KelThuzad02XX3, 1.0)
-gg_snd_U05BKelThuzad39XX = CreateSound("war3mapImported/U05BKelThuzad39XX.mp3", false, false, false, 0, 0, "DefaultEAXON")
-SetSoundDuration(gg_snd_U05BKelThuzad39XX, 7575)
-SetSoundChannel(gg_snd_U05BKelThuzad39XX, 0)
-SetSoundVolume(gg_snd_U05BKelThuzad39XX, 127)
-SetSoundPitch(gg_snd_U05BKelThuzad39XX, 1.0)
-gg_snd_U05AKelThuzad07XX = CreateSound("war3mapImported/U05AKelThuzad07XX.mp3", false, false, false, 0, 0, "DefaultEAXON")
-SetSoundDuration(gg_snd_U05AKelThuzad07XX, 7575)
-SetSoundChannel(gg_snd_U05AKelThuzad07XX, 0)
-SetSoundVolume(gg_snd_U05AKelThuzad07XX, 127)
-SetSoundPitch(gg_snd_U05AKelThuzad07XX, 1.0)
-gg_snd_U06KelThuzad04X = CreateSound("war3mapImported/U06KelThuzad04X.mp3", false, false, false, 0, 0, "DefaultEAXON")
-SetSoundDuration(gg_snd_U06KelThuzad04X, 7575)
-SetSoundChannel(gg_snd_U06KelThuzad04X, 0)
-SetSoundVolume(gg_snd_U06KelThuzad04X, 127)
-SetSoundPitch(gg_snd_U06KelThuzad04X, 1.0)
-gg_snd_KelThuzadYes4 = CreateSound("Units/Undead/KelThuzadLich/KelThuzadYes4.flac", false, true, true, 0, 0, "HeroAcksEAX")
-SetSoundParamsFromLabel(gg_snd_KelThuzadYes4, "KelThuzadLichYes")
-SetSoundDuration(gg_snd_KelThuzadYes4, 1057)
-SetSoundVolume(gg_snd_KelThuzadYes4, 127)
-gg_snd_H02Warlock22 = CreateSound("Sound/Dialogue/HumanCampaign/Human02/H02Warlock22.flac", false, false, false, 0, 0, "DefaultEAXON")
-SetSoundParamsFromLabel(gg_snd_H02Warlock22, "H02Warlock22")
-SetSoundDuration(gg_snd_H02Warlock22, 7537)
-SetSoundVolume(gg_snd_H02Warlock22, 120)
-gg_snd_H02Footman23 = CreateSound("Sound/Dialogue/HumanCampaign/Human02/H02Footman23.flac", false, false, false, 0, 0, "DefaultEAXON")
-SetSoundParamsFromLabel(gg_snd_H02Footman23, "H02Footman23")
-SetSoundDuration(gg_snd_H02Footman23, 3645)
-SetSoundVolume(gg_snd_H02Footman23, 120)
-gg_snd_D06AFootman06 = CreateSound("Sound/Dialogue/OrcExpCamp/OrcQuest06Ax/D06AFootman06.flac", false, false, false, 0, 0, "DefaultEAXON")
-SetSoundParamsFromLabel(gg_snd_D06AFootman06, "D06AFootman06")
-SetSoundDuration(gg_snd_D06AFootman06, 4947)
-SetSoundVolume(gg_snd_D06AFootman06, 120)
-gg_snd_H02Arthas26X = CreateSound("war3mapImported/H02Arthas26X.mp3", false, false, false, 0, 0, "DefaultEAXON")
-SetSoundDuration(gg_snd_H02Arthas26X, 4947)
-SetSoundChannel(gg_snd_H02Arthas26X, 0)
-SetSoundVolume(gg_snd_H02Arthas26X, 127)
-SetSoundPitch(gg_snd_H02Arthas26X, 1.0)
-gg_snd_VarianWrynnDialogue01 = CreateSound("war3mapImported/VarianWrynnDialogue01.mp3", false, false, false, 1, 1, "DoodadsEAX")
-SetSoundDuration(gg_snd_VarianWrynnDialogue01, 4947)
-SetSoundChannel(gg_snd_VarianWrynnDialogue01, 0)
-SetSoundVolume(gg_snd_VarianWrynnDialogue01, 87)
-SetSoundPitch(gg_snd_VarianWrynnDialogue01, 1.0)
-gg_snd_VarianWrynnDialogue02 = CreateSound("war3mapImported/VarianWrynnDialogue02.mp3", false, false, false, 1, 1, "DoodadsEAX")
-SetSoundDuration(gg_snd_VarianWrynnDialogue02, 4947)
-SetSoundChannel(gg_snd_VarianWrynnDialogue02, 0)
-SetSoundVolume(gg_snd_VarianWrynnDialogue02, 87)
-SetSoundPitch(gg_snd_VarianWrynnDialogue02, 1.0)
-gg_snd_VarianWrynnDialogue03 = CreateSound("war3mapImported/VarianWrynnDialogue03.mp3", false, false, false, 1, 1, "DoodadsEAX")
-SetSoundDuration(gg_snd_VarianWrynnDialogue03, 4947)
-SetSoundChannel(gg_snd_VarianWrynnDialogue03, 0)
-SetSoundVolume(gg_snd_VarianWrynnDialogue03, 87)
-SetSoundPitch(gg_snd_VarianWrynnDialogue03, 1.0)
-gg_snd_VarianWrynnDialogue04 = CreateSound("war3mapImported/VarianWrynnDialogue04.mp3", false, false, false, 1, 1, "DoodadsEAX")
-SetSoundDuration(gg_snd_VarianWrynnDialogue04, 4947)
-SetSoundChannel(gg_snd_VarianWrynnDialogue04, 0)
-SetSoundVolume(gg_snd_VarianWrynnDialogue04, 80)
-SetSoundPitch(gg_snd_VarianWrynnDialogue04, 1.0)
-gg_snd_VarianWrynnDialogue05 = CreateSound("war3mapImported/VarianWrynnDialogue05.mp3", false, false, false, 0, 0, "DefaultEAXON")
-SetSoundDuration(gg_snd_VarianWrynnDialogue05, 4947)
-SetSoundChannel(gg_snd_VarianWrynnDialogue05, 0)
-SetSoundVolume(gg_snd_VarianWrynnDialogue05, 127)
-SetSoundPitch(gg_snd_VarianWrynnDialogue05, 1.0)
-gg_snd_H02Blademaster11 = CreateSound("Sound/Dialogue/HumanCampaign/Human02/H02Blademaster11.flac", false, false, false, 0, 0, "DefaultEAXON")
-SetSoundParamsFromLabel(gg_snd_H02Blademaster11, "H02Blademaster11")
-SetSoundDuration(gg_snd_H02Blademaster11, 10907)
-SetSoundVolume(gg_snd_H02Blademaster11, 120)
-gg_snd_HeroBladeMasterWarcry1 = CreateSound("Units/Orc/HeroBladeMaster/HeroBladeMasterWarcry1.flac", false, true, true, 0, 0, "HeroAcksEAX")
-SetSoundParamsFromLabel(gg_snd_HeroBladeMasterWarcry1, "HeroBladeMasterWarcry")
-SetSoundDuration(gg_snd_HeroBladeMasterWarcry1, 2136)
-SetSoundVolume(gg_snd_HeroBladeMasterWarcry1, 127)
-gg_snd_D03Grunt17 = CreateSound("Sound/Dialogue/TutorialCampaign/Demo03/D03Grunt17.flac", false, false, false, 1, 1, "DefaultEAXON")
-SetSoundParamsFromLabel(gg_snd_D03Grunt17, "D03Grunt17")
-SetSoundDuration(gg_snd_D03Grunt17, 2391)
-SetSoundVolume(gg_snd_D03Grunt17, 120)
-SetSoundPitch(gg_snd_D03Grunt17, 0.9)
-gg_snd_O03Grom14 = CreateSound("Sound/Dialogue/OrcCampaign/Orc03/O03Grom14.flac", false, false, false, 1, 1, "DefaultEAXON")
-SetSoundParamsFromLabel(gg_snd_O03Grom14, "O03Grom14")
-SetSoundDuration(gg_snd_O03Grom14, 6805)
-SetSoundVolume(gg_snd_O03Grom14, 127)
-gg_snd_GromYesAttack3 = CreateSound("Units/Orc/Hellscream/GromYesAttack3.flac", false, false, false, 1, 1, "HeroAcksEAX")
-SetSoundParamsFromLabel(gg_snd_GromYesAttack3, "GromYesAttack")
-SetSoundDuration(gg_snd_GromYesAttack3, 1741)
-SetSoundVolume(gg_snd_GromYesAttack3, 127)
-SetSoundPitch(gg_snd_GromYesAttack3, 0.9)
-gg_snd_A07OrcWarlock01 = CreateSound("Sound/Dialogue/HumanExpCamp/Human07x/A07OrcWarlock01.flac", false, false, false, 0, 0, "DefaultEAXON")
-SetSoundParamsFromLabel(gg_snd_A07OrcWarlock01, "A07OrcWarlock01")
-SetSoundDuration(gg_snd_A07OrcWarlock01, 3088)
-SetSoundVolume(gg_snd_A07OrcWarlock01, 120)
-gg_snd_A07Magtheridon02 = CreateSound("Sound/Dialogue/HumanExpCamp/Human07x/A07Magtheridon02.flac", false, false, false, 0, 0, "DefaultEAXON")
-SetSoundParamsFromLabel(gg_snd_A07Magtheridon02, "A07Magtheridon02")
-SetSoundDuration(gg_snd_A07Magtheridon02, 15989)
-SetSoundVolume(gg_snd_A07Magtheridon02, 120)
-gg_snd_KnightYesAttack1 = CreateSound("Units/Human/Knight/KnightYesAttack1.flac", false, true, true, 1, 1, "DefaultEAXON")
-SetSoundParamsFromLabel(gg_snd_KnightYesAttack1, "KnightYesAttack")
-SetSoundDuration(gg_snd_KnightYesAttack1, 1956)
-SetSoundVolume(gg_snd_KnightYesAttack1, 70)
-SetSoundDistances(gg_snd_KnightYesAttack1, 100000.0, 100000.0)
-SetSoundDistanceCutoff(gg_snd_KnightYesAttack1, 3000.0)
-gg_snd_O05WitchDoctor19 = CreateSound("Sound/Dialogue/OrcCampaign/Orc05/O05WitchDoctor19.flac", false, false, false, 0, 0, "DefaultEAXON")
-SetSoundParamsFromLabel(gg_snd_O05WitchDoctor19, "O05WitchDoctor19")
-SetSoundDuration(gg_snd_O05WitchDoctor19, 4925)
-SetSoundVolume(gg_snd_O05WitchDoctor19, 120)
-gg_snd_D03WitchDoctor12 = CreateSound("Sound/Dialogue/TutorialCampaign/Demo03/D03WitchDoctor12.flac", false, false, false, 0, 0, "DefaultEAXON")
-SetSoundParamsFromLabel(gg_snd_D03WitchDoctor12, "D03WitchDoctor12")
-SetSoundDuration(gg_snd_D03WitchDoctor12, 8530)
-SetSoundVolume(gg_snd_D03WitchDoctor12, 120)
 gg_snd_U03ASylvanas12 = CreateSound("Sound/Dialogue/UndeadCampaign/Undead03A/U03ASylvanas12.flac", false, false, false, 0, 0, "DefaultEAXON")
 SetSoundParamsFromLabel(gg_snd_U03ASylvanas12, "U03ASylvanas12")
 SetSoundDuration(gg_snd_U03ASylvanas12, 9261)
@@ -1932,123 +2113,104 @@ SetSoundDuration(gg_snd_U03BPriest07XX, 9261)
 SetSoundChannel(gg_snd_U03BPriest07XX, 0)
 SetSoundVolume(gg_snd_U03BPriest07XX, 127)
 SetSoundPitch(gg_snd_U03BPriest07XX, 1.0)
-gg_snd_IceTrollWhat4 = CreateSound("Units/Creeps/IceTroll/IceTrollWhat4.flac", false, true, true, 0, 0, "DefaultEAXON")
-SetSoundParamsFromLabel(gg_snd_IceTrollWhat4, "IceTrollShadowPriestWhat")
-SetSoundDuration(gg_snd_IceTrollWhat4, 1105)
-SetSoundVolume(gg_snd_IceTrollWhat4, 127)
 gg_snd_U03BSylvanas14 = CreateSound("Sound/Dialogue/UndeadCampaign/Undead03B/U03BSylvanas14.flac", false, false, false, 0, 0, "DefaultEAXON")
 SetSoundParamsFromLabel(gg_snd_U03BSylvanas14, "U03BSylvanas14")
 SetSoundDuration(gg_snd_U03BSylvanas14, 7093)
 SetSoundVolume(gg_snd_U03BSylvanas14, 120)
-gg_snd_ForestTrollWarcry1 = CreateSound("Units/Creeps/ForestTroll/ForestTrollWarcry1.flac", false, true, true, 0, 0, "DefaultEAXON")
-SetSoundParamsFromLabel(gg_snd_ForestTrollWarcry1, "ForestTrollShadowPriestWarcry")
-SetSoundDuration(gg_snd_ForestTrollWarcry1, 1532)
-SetSoundVolume(gg_snd_ForestTrollWarcry1, 127)
+gg_snd_U03BSylvanas18 = CreateSound("Sound/Dialogue/UndeadCampaign/Undead03B/U03BSylvanas18.flac", false, false, false, 0, 0, "DefaultEAXON")
+SetSoundParamsFromLabel(gg_snd_U03BSylvanas18, "U03BSylvanas18")
+SetSoundDuration(gg_snd_U03BSylvanas18, 4846)
+SetSoundVolume(gg_snd_U03BSylvanas18, 120)
 gg_snd_U04ASylvanas03 = CreateSound("Sound/Dialogue/UndeadCampaign/Undead04A/U04ASylvanas03.flac", false, false, false, 0, 0, "DefaultEAXON")
 SetSoundParamsFromLabel(gg_snd_U04ASylvanas03, "U04ASylvanas03")
 SetSoundDuration(gg_snd_U04ASylvanas03, 1424)
 SetSoundVolume(gg_snd_U04ASylvanas03, 120)
-gg_snd_ForestTrollYesAttack2 = CreateSound("Units/Creeps/ForestTroll/ForestTrollYesAttack2.flac", false, true, true, 0, 0, "DefaultEAXON")
-SetSoundParamsFromLabel(gg_snd_ForestTrollYesAttack2, "ForestTrollYesAttack")
-SetSoundDuration(gg_snd_ForestTrollYesAttack2, 914)
-SetSoundVolume(gg_snd_ForestTrollYesAttack2, 127)
 gg_snd_U04ASylvanas05 = CreateSound("Sound/Dialogue/UndeadCampaign/Undead04A/U04ASylvanas05.flac", false, false, false, 0, 0, "DefaultEAXON")
 SetSoundParamsFromLabel(gg_snd_U04ASylvanas05, "U04ASylvanas05")
 SetSoundDuration(gg_snd_U04ASylvanas05, 5290)
 SetSoundVolume(gg_snd_U04ASylvanas05, 120)
-gg_snd_ForestTrollWhat1 = CreateSound("Units/Creeps/ForestTroll/ForestTrollWhat1.flac", false, true, true, 0, 0, "DefaultEAXON")
-SetSoundParamsFromLabel(gg_snd_ForestTrollWhat1, "ForestTrollWhat")
-SetSoundDuration(gg_snd_ForestTrollWhat1, 1033)
-SetSoundVolume(gg_snd_ForestTrollWhat1, 127)
-gg_snd_DarkVictory = "DarkVictory"
-gg_snd_HeroicVictory = "HeroicVictory"
-gg_snd_HumanVictory = "HumanVictory"
-gg_snd_NightElfVictory = "NightElfVictory"
-gg_snd_OrcVictory = "OrcVictory"
+gg_snd_U05AArthas02 = CreateSound("Sound/Dialogue/UndeadCampaign/Undead05A/U05AArthas02.flac", false, false, false, 1, 1, "DefaultEAXON")
+SetSoundParamsFromLabel(gg_snd_U05AArthas02, "U05AArthas02")
+SetSoundDuration(gg_snd_U05AArthas02, 1868)
+SetSoundVolume(gg_snd_U05AArthas02, 120)
+SetSoundPitch(gg_snd_U05AArthas02, 0.9)
+gg_snd_U05AArthas06 = CreateSound("Sound/Dialogue/UndeadCampaign/Undead05A/U05AArthas06.flac", false, false, false, 1, 1, "DefaultEAXON")
+SetSoundParamsFromLabel(gg_snd_U05AArthas06, "U05AArthas06")
+SetSoundDuration(gg_snd_U05AArthas06, 3122)
+SetSoundVolume(gg_snd_U05AArthas06, 120)
+SetSoundPitch(gg_snd_U05AArthas06, 0.9)
+gg_snd_U05AKelThuzad07XX = CreateSound("war3mapImported/U05AKelThuzad07XX.mp3", false, false, false, 0, 0, "DefaultEAXON")
+SetSoundDuration(gg_snd_U05AKelThuzad07XX, 3122)
+SetSoundChannel(gg_snd_U05AKelThuzad07XX, 0)
+SetSoundVolume(gg_snd_U05AKelThuzad07XX, 127)
+SetSoundPitch(gg_snd_U05AKelThuzad07XX, 1.0)
+gg_snd_U05ATichondrius01 = CreateSound("Sound/Dialogue/UndeadCampaign/Undead05A/U05ATichondrius01.flac", false, false, false, 0, 0, "DefaultEAXON")
+SetSoundParamsFromLabel(gg_snd_U05ATichondrius01, "U05ATichondrius01")
+SetSoundDuration(gg_snd_U05ATichondrius01, 6205)
+SetSoundVolume(gg_snd_U05ATichondrius01, 125)
+gg_snd_U05ATichondrius03 = CreateSound("Sound/Dialogue/UndeadCampaign/Undead05A/U05ATichondrius03.flac", false, false, false, 0, 0, "DefaultEAXON")
+SetSoundParamsFromLabel(gg_snd_U05ATichondrius03, "U05ATichondrius03")
+SetSoundDuration(gg_snd_U05ATichondrius03, 6779)
+SetSoundVolume(gg_snd_U05ATichondrius03, 125)
+gg_snd_U05BKelThuzad35 = CreateSound("Sound/Dialogue/UndeadCampaign/Undead05BInterlude/U05BKelThuzad35.flac", false, false, false, 0, 0, "DefaultEAXON")
+SetSoundParamsFromLabel(gg_snd_U05BKelThuzad35, "U05BKelThuzad35")
+SetSoundDuration(gg_snd_U05BKelThuzad35, 7575)
+SetSoundVolume(gg_snd_U05BKelThuzad35, 120)
+gg_snd_U05BKelThuzad39XX = CreateSound("war3mapImported/U05BKelThuzad39XX.mp3", false, false, false, 0, 0, "DefaultEAXON")
+SetSoundDuration(gg_snd_U05BKelThuzad39XX, 7575)
+SetSoundChannel(gg_snd_U05BKelThuzad39XX, 0)
+SetSoundVolume(gg_snd_U05BKelThuzad39XX, 127)
+SetSoundPitch(gg_snd_U05BKelThuzad39XX, 1.0)
+gg_snd_U06Archimonde26 = CreateSound("Sound/Dialogue/UndeadCampaign/Undead06/U06Archimonde26.flac", false, false, false, 0, 0, "DefaultEAXON")
+SetSoundParamsFromLabel(gg_snd_U06Archimonde26, "U06Archimonde26")
+SetSoundDuration(gg_snd_U06Archimonde26, 13754)
+SetSoundVolume(gg_snd_U06Archimonde26, 120)
+gg_snd_U06KelThuzad02XX3 = CreateSound("war3mapImported/U06KelThuzad02XX3.mp3", false, false, false, 0, 0, "DefaultEAXON")
+SetSoundDuration(gg_snd_U06KelThuzad02XX3, 13754)
+SetSoundChannel(gg_snd_U06KelThuzad02XX3, 0)
+SetSoundVolume(gg_snd_U06KelThuzad02XX3, 127)
+SetSoundPitch(gg_snd_U06KelThuzad02XX3, 1.0)
+gg_snd_U06KelThuzad04X = CreateSound("war3mapImported/U06KelThuzad04X.mp3", false, false, false, 0, 0, "DefaultEAXON")
+SetSoundDuration(gg_snd_U06KelThuzad04X, 13754)
+SetSoundChannel(gg_snd_U06KelThuzad04X, 0)
+SetSoundVolume(gg_snd_U06KelThuzad04X, 127)
+SetSoundPitch(gg_snd_U06KelThuzad04X, 1.0)
+gg_snd_U08Archimonde19 = CreateSound("Sound/Dialogue/UndeadCampaign/Undead08/U08Archimonde19.flac", false, false, false, 0, 0, "DefaultEAXON")
+SetSoundParamsFromLabel(gg_snd_U08Archimonde19, "U08Archimonde19")
+SetSoundDuration(gg_snd_U08Archimonde19, 7537)
+SetSoundVolume(gg_snd_U08Archimonde19, 120)
 gg_snd_UndeadVictory = "UndeadVictory"
-gg_snd_DaybreakRooster = CreateSound("Sound/Time/DaybreakRooster.flac", false, false, false, 0, 0, "DefaultEAXON")
-SetSoundParamsFromLabel(gg_snd_DaybreakRooster, "RoosterSound")
-SetSoundDuration(gg_snd_DaybreakRooster, 2935)
-SetSoundVolume(gg_snd_DaybreakRooster, 32)
-gg_snd_ArthasTheme = "ArthasTheme"
-gg_snd_HumanX1stormwind3 = "war3mapImported/HumanX1stormwind3.mp3"
-gg_snd_NorthrendNight = CreateSound("Sound/Ambient/Northrend/NorthrendNight.flac", true, true, true, 1, 1, "DefaultEAXON")
-SetSoundParamsFromLabel(gg_snd_NorthrendNight, "DungeonNight")
-SetSoundDuration(gg_snd_NorthrendNight, 106607)
-SetSoundChannel(gg_snd_NorthrendNight, 10)
-SetSoundVolume(gg_snd_NorthrendNight, 25)
-SetSoundDistances(gg_snd_NorthrendNight, 0.0, 10000.0)
-SetSoundDistanceCutoff(gg_snd_NorthrendNight, 400.0)
-gg_snd_DalaranRuinsNight = CreateSound("Sound/Ambient/DalaranRuins/DalaranRuinsNight.flac", true, true, true, 1, 1, "DefaultEAXON")
-SetSoundParamsFromLabel(gg_snd_DalaranRuinsNight, "DalaranRuinsNight")
-SetSoundDuration(gg_snd_DalaranRuinsNight, 114759)
-SetSoundChannel(gg_snd_DalaranRuinsNight, 10)
-SetSoundVolume(gg_snd_DalaranRuinsNight, 15)
-SetSoundDistances(gg_snd_DalaranRuinsNight, 0.0, 10000.0)
-SetSoundDistanceCutoff(gg_snd_DalaranRuinsNight, 100.0)
-gg_snd_BlackCitadel_OutlandNight = CreateSound("Sound/Ambient/BlackCitadel/BlackCitadel_OutlandNight.flac", true, true, true, 1, 1, "DefaultEAXON")
-SetSoundParamsFromLabel(gg_snd_BlackCitadel_OutlandNight, "BlackCitadelNight")
-SetSoundDuration(gg_snd_BlackCitadel_OutlandNight, 116318)
-SetSoundChannel(gg_snd_BlackCitadel_OutlandNight, 10)
-SetSoundVolume(gg_snd_BlackCitadel_OutlandNight, 18)
-SetSoundDistances(gg_snd_BlackCitadel_OutlandNight, 0.0, 10000.0)
-SetSoundDistanceCutoff(gg_snd_BlackCitadel_OutlandNight, 100.0)
-gg_snd_BlackCitadel_OutlandDay = CreateSound("Sound/Ambient/BlackCitadel/BlackCitadel_OutlandDay.flac", true, true, true, 1, 1, "DefaultEAXON")
-SetSoundParamsFromLabel(gg_snd_BlackCitadel_OutlandDay, "BlackCitadelDay")
-SetSoundDuration(gg_snd_BlackCitadel_OutlandDay, 119186)
-SetSoundChannel(gg_snd_BlackCitadel_OutlandDay, 10)
-SetSoundVolume(gg_snd_BlackCitadel_OutlandDay, 14)
-SetSoundDistances(gg_snd_BlackCitadel_OutlandDay, 0.0, 10000.0)
-SetSoundDistanceCutoff(gg_snd_BlackCitadel_OutlandDay, 100.0)
-gg_snd_IceCrownNight = CreateSound("Sound/Ambient/IceCrown/IceCrownNight.flac", true, true, true, 1, 1, "DefaultEAXON")
-SetSoundParamsFromLabel(gg_snd_IceCrownNight, "IceCrownNight")
-SetSoundDuration(gg_snd_IceCrownNight, 123220)
-SetSoundChannel(gg_snd_IceCrownNight, 10)
-SetSoundVolume(gg_snd_IceCrownNight, 14)
-SetSoundDistances(gg_snd_IceCrownNight, 0.0, 10000.0)
-SetSoundDistanceCutoff(gg_snd_IceCrownNight, 100.0)
-gg_snd_AshenvaleNight = CreateSound("Sound/Ambient/Ashenvale/AshenvaleNight.flac", true, true, true, 1, 1, "DefaultEAXON")
-SetSoundParamsFromLabel(gg_snd_AshenvaleNight, "AshenvaleNight")
-SetSoundDuration(gg_snd_AshenvaleNight, 119013)
-SetSoundChannel(gg_snd_AshenvaleNight, 10)
-SetSoundVolume(gg_snd_AshenvaleNight, 10)
-SetSoundDistances(gg_snd_AshenvaleNight, 0.0, 10000.0)
-SetSoundDistanceCutoff(gg_snd_AshenvaleNight, 100.0)
-gg_snd_LordaeronFallDay = CreateSound("Sound/Ambient/LordaeronFall/LordaeronFallDay.flac", true, true, true, 1, 1, "DefaultEAXON")
-SetSoundParamsFromLabel(gg_snd_LordaeronFallDay, "LordaeronFallDay")
-SetSoundDuration(gg_snd_LordaeronFallDay, 124766)
-SetSoundChannel(gg_snd_LordaeronFallDay, 10)
-SetSoundVolume(gg_snd_LordaeronFallDay, 10)
-SetSoundDistances(gg_snd_LordaeronFallDay, 0.0, 10000.0)
-SetSoundDistanceCutoff(gg_snd_LordaeronFallDay, 100.0)
-gg_snd_AshenvaleDay = CreateSound("Sound/Ambient/Ashenvale/AshenvaleDay.flac", true, true, true, 1, 1, "DefaultEAXON")
-SetSoundParamsFromLabel(gg_snd_AshenvaleDay, "AshenvaleDay")
-SetSoundDuration(gg_snd_AshenvaleDay, 47700)
-SetSoundChannel(gg_snd_AshenvaleDay, 10)
-SetSoundVolume(gg_snd_AshenvaleDay, 10)
-SetSoundDistances(gg_snd_AshenvaleDay, 0.0, 10000.0)
-SetSoundDistanceCutoff(gg_snd_AshenvaleDay, 100.0)
-gg_snd_BarrensDay = CreateSound("Sound/Ambient/Barrens/BarrensDay.flac", true, true, true, 1, 1, "DefaultEAXON")
-SetSoundParamsFromLabel(gg_snd_BarrensDay, "BarrensDay")
-SetSoundDuration(gg_snd_BarrensDay, 113856)
-SetSoundChannel(gg_snd_BarrensDay, 10)
-SetSoundVolume(gg_snd_BarrensDay, 20)
-SetSoundDistances(gg_snd_BarrensDay, 0.0, 10000.0)
-SetSoundDistanceCutoff(gg_snd_BarrensDay, 100.0)
-gg_snd_DalaranRuinsDay = CreateSound("Sound/Ambient/DalaranRuins/DalaranRuinsDay.flac", true, true, true, 1, 1, "DefaultEAXON")
-SetSoundParamsFromLabel(gg_snd_DalaranRuinsDay, "DalaranRuinsDay")
-SetSoundDuration(gg_snd_DalaranRuinsDay, 119795)
-SetSoundChannel(gg_snd_DalaranRuinsDay, 10)
-SetSoundVolume(gg_snd_DalaranRuinsDay, 20)
-SetSoundDistances(gg_snd_DalaranRuinsDay, 0.0, 10000.0)
-SetSoundDistanceCutoff(gg_snd_DalaranRuinsDay, 100.0)
-gg_snd_WetlandsNight = CreateSound("Sound/Ambient/SunkenRuins/WetlandsNight.flac", true, true, true, 1, 1, "DefaultEAXON")
-SetSoundParamsFromLabel(gg_snd_WetlandsNight, "SunkenRuinsNight")
-SetSoundDuration(gg_snd_WetlandsNight, 172730)
-SetSoundChannel(gg_snd_WetlandsNight, 10)
-SetSoundVolume(gg_snd_WetlandsNight, 5)
-SetSoundDistances(gg_snd_WetlandsNight, 0.0, 10000.0)
-SetSoundDistanceCutoff(gg_snd_WetlandsNight, 100.0)
+gg_snd_VarianWrynnDialogue01 = CreateSound("war3mapImported/VarianWrynnDialogue01.mp3", false, false, false, 1, 1, "DoodadsEAX")
+SetSoundDuration(gg_snd_VarianWrynnDialogue01, 7537)
+SetSoundChannel(gg_snd_VarianWrynnDialogue01, 0)
+SetSoundVolume(gg_snd_VarianWrynnDialogue01, 87)
+SetSoundPitch(gg_snd_VarianWrynnDialogue01, 1.0)
+gg_snd_VarianWrynnDialogue02 = CreateSound("war3mapImported/VarianWrynnDialogue02.mp3", false, false, false, 1, 1, "DoodadsEAX")
+SetSoundDuration(gg_snd_VarianWrynnDialogue02, 7537)
+SetSoundChannel(gg_snd_VarianWrynnDialogue02, 0)
+SetSoundVolume(gg_snd_VarianWrynnDialogue02, 87)
+SetSoundPitch(gg_snd_VarianWrynnDialogue02, 1.0)
+gg_snd_VarianWrynnDialogue03 = CreateSound("war3mapImported/VarianWrynnDialogue03.mp3", false, false, false, 1, 1, "DoodadsEAX")
+SetSoundDuration(gg_snd_VarianWrynnDialogue03, 7537)
+SetSoundChannel(gg_snd_VarianWrynnDialogue03, 0)
+SetSoundVolume(gg_snd_VarianWrynnDialogue03, 87)
+SetSoundPitch(gg_snd_VarianWrynnDialogue03, 1.0)
+gg_snd_VarianWrynnDialogue04 = CreateSound("war3mapImported/VarianWrynnDialogue04.mp3", false, false, false, 1, 1, "DoodadsEAX")
+SetSoundDuration(gg_snd_VarianWrynnDialogue04, 7537)
+SetSoundChannel(gg_snd_VarianWrynnDialogue04, 0)
+SetSoundVolume(gg_snd_VarianWrynnDialogue04, 80)
+SetSoundPitch(gg_snd_VarianWrynnDialogue04, 1.0)
+gg_snd_VarianWrynnDialogue05 = CreateSound("war3mapImported/VarianWrynnDialogue05.mp3", false, false, false, 0, 0, "DefaultEAXON")
+SetSoundDuration(gg_snd_VarianWrynnDialogue05, 7537)
+SetSoundChannel(gg_snd_VarianWrynnDialogue05, 0)
+SetSoundVolume(gg_snd_VarianWrynnDialogue05, 127)
+SetSoundPitch(gg_snd_VarianWrynnDialogue05, 1.0)
+gg_snd_War2IntroMusic = "Sound\\Music\\mp3Music\\War2IntroMusic.mp3"
+gg_snd_Warning = CreateSound("Sound\\Interface\\Warning.wav", false, false, false, 10, 10, "DefaultEAXON")
+SetSoundDuration(gg_snd_Warning, 1903)
+SetSoundChannel(gg_snd_Warning, 0)
+SetSoundVolume(gg_snd_Warning, -1)
+SetSoundPitch(gg_snd_Warning, 1.0)
 gg_snd_Wetlandsday = CreateSound("Sound/Ambient/SunkenRuins/Wetlandsday.flac", true, true, true, 1, 1, "DefaultEAXON")
 SetSoundParamsFromLabel(gg_snd_Wetlandsday, "SunkenRuinsDay")
 SetSoundDuration(gg_snd_Wetlandsday, 175048)
@@ -2056,181 +2218,19 @@ SetSoundChannel(gg_snd_Wetlandsday, 10)
 SetSoundVolume(gg_snd_Wetlandsday, 5)
 SetSoundDistances(gg_snd_Wetlandsday, 0.0, 10000.0)
 SetSoundDistanceCutoff(gg_snd_Wetlandsday, 100.0)
-gg_snd_IceCrownDay = CreateSound("Sound/Ambient/IceCrown/IceCrownDay.flac", true, true, true, 1, 1, "DefaultEAXON")
-SetSoundParamsFromLabel(gg_snd_IceCrownDay, "IceCrownDay")
-SetSoundDuration(gg_snd_IceCrownDay, 120528)
-SetSoundChannel(gg_snd_IceCrownDay, 10)
-SetSoundVolume(gg_snd_IceCrownDay, 14)
-SetSoundDistances(gg_snd_IceCrownDay, 0.0, 10000.0)
-SetSoundDistanceCutoff(gg_snd_IceCrownDay, 100.0)
-gg_snd_LordaeronSummerDay = CreateSound("Sound/Ambient/LordaeronSummer/LordaeronSummerDay.flac", true, true, true, 1, 1, "DefaultEAXON")
-SetSoundParamsFromLabel(gg_snd_LordaeronSummerDay, "LordaeronSummerDay")
-SetSoundDuration(gg_snd_LordaeronSummerDay, 117210)
-SetSoundChannel(gg_snd_LordaeronSummerDay, 10)
-SetSoundVolume(gg_snd_LordaeronSummerDay, 10)
-SetSoundDistances(gg_snd_LordaeronSummerDay, 0.0, 10000.0)
-SetSoundDistanceCutoff(gg_snd_LordaeronSummerDay, 100.0)
-gg_snd_CityScapeDay = CreateSound("Sound/Ambient/CityScape/CityScapeDay.flac", true, true, true, 1, 1, "DefaultEAXON")
-SetSoundParamsFromLabel(gg_snd_CityScapeDay, "DalaranDay")
-SetSoundDuration(gg_snd_CityScapeDay, 253775)
-SetSoundChannel(gg_snd_CityScapeDay, 10)
-SetSoundVolume(gg_snd_CityScapeDay, 16)
-SetSoundDistances(gg_snd_CityScapeDay, 0.0, 10000.0)
-SetSoundDistanceCutoff(gg_snd_CityScapeDay, 100.0)
-gg_snd_LordaeronSummerNight = CreateSound("Sound/Ambient/LordaeronSummer/LordaeronSummerNight.flac", true, true, true, 1, 1, "DefaultEAXON")
-SetSoundParamsFromLabel(gg_snd_LordaeronSummerNight, "LordaeronSummerNight")
-SetSoundDuration(gg_snd_LordaeronSummerNight, 122859)
-SetSoundChannel(gg_snd_LordaeronSummerNight, 10)
-SetSoundVolume(gg_snd_LordaeronSummerNight, 10)
-SetSoundDistances(gg_snd_LordaeronSummerNight, 0.0, 10000.0)
-SetSoundDistanceCutoff(gg_snd_LordaeronSummerNight, 100.0)
-gg_snd_NorthrendDay = CreateSound("Sound/Ambient/Northrend/NorthrendDay.flac", true, true, true, 1, 1, "DefaultEAXON")
-SetSoundParamsFromLabel(gg_snd_NorthrendDay, "NorthrendDay")
-SetSoundDuration(gg_snd_NorthrendDay, 114102)
-SetSoundChannel(gg_snd_NorthrendDay, 10)
-SetSoundVolume(gg_snd_NorthrendDay, 15)
-SetSoundDistances(gg_snd_NorthrendDay, 0.0, 10000.0)
-SetSoundDistanceCutoff(gg_snd_NorthrendDay, 100.0)
-gg_snd_LordaeronWinterNight = CreateSound("Sound/Ambient/LordaeronWinter/LordaeronWinterNight.flac", true, true, true, 1, 1, "DefaultEAXON")
-SetSoundParamsFromLabel(gg_snd_LordaeronWinterNight, "LordaeronWinterNight")
-SetSoundDuration(gg_snd_LordaeronWinterNight, 118060)
-SetSoundChannel(gg_snd_LordaeronWinterNight, 10)
-SetSoundVolume(gg_snd_LordaeronWinterNight, 10)
-SetSoundDistances(gg_snd_LordaeronWinterNight, 0.0, 10000.0)
-SetSoundDistanceCutoff(gg_snd_LordaeronWinterNight, 100.0)
-gg_snd_LordaeronFallNight = CreateSound("Sound/Ambient/LordaeronFall/LordaeronFallNight.flac", true, true, true, 1, 1, "DefaultEAXON")
-SetSoundParamsFromLabel(gg_snd_LordaeronFallNight, "VillageFallNight")
-SetSoundDuration(gg_snd_LordaeronFallNight, 124342)
-SetSoundChannel(gg_snd_LordaeronFallNight, 10)
-SetSoundVolume(gg_snd_LordaeronFallNight, 10)
-SetSoundDistances(gg_snd_LordaeronFallNight, 0.0, 10000.0)
-SetSoundDistanceCutoff(gg_snd_LordaeronFallNight, 100.0)
-gg_snd_LordaeronWinterDay = CreateSound("Sound/Ambient/LordaeronWinter/LordaeronWinterDay.flac", true, true, true, 1, 1, "DefaultEAXON")
-SetSoundParamsFromLabel(gg_snd_LordaeronWinterDay, "LordaeronWinterDay")
-SetSoundDuration(gg_snd_LordaeronWinterDay, 117986)
-SetSoundChannel(gg_snd_LordaeronWinterDay, 10)
-SetSoundVolume(gg_snd_LordaeronWinterDay, 10)
-SetSoundDistances(gg_snd_LordaeronWinterDay, 0.0, 10000.0)
-SetSoundDistanceCutoff(gg_snd_LordaeronWinterDay, 100.0)
-gg_snd_ThunderClapCaster = CreateSound("Abilities/Spells/Human/ThunderClap/ThunderClapCaster.flac", false, true, true, 0, 0, "SpellsEAX")
-SetSoundParamsFromLabel(gg_snd_ThunderClapCaster, "ThunderClap")
-SetSoundDuration(gg_snd_ThunderClapCaster, 3450)
-SetSoundVolume(gg_snd_ThunderClapCaster, 127)
-gg_snd_Illidancinematic3 = "war3mapImported/Illidancinematic3.mp3"
-gg_snd_JainaWarcry1 = CreateSound("Units/Human/Jaina/JainaWarcry1.flac", false, true, true, 0, 0, "HeroAcksEAX")
-SetSoundParamsFromLabel(gg_snd_JainaWarcry1, "JainaWarcry")
-SetSoundDuration(gg_snd_JainaWarcry1, 1340)
-SetSoundVolume(gg_snd_JainaWarcry1, 127)
-gg_snd_HPitLordWhat1 = CreateSound("Units/Demon/HeroPitLord/HPitLordWhat1.flac", false, false, true, 1, 1, "HeroAcksEAX")
-SetSoundParamsFromLabel(gg_snd_HPitLordWhat1, "HeroPitLordWhat")
-SetSoundDuration(gg_snd_HPitLordWhat1, 2711)
-SetSoundVolume(gg_snd_HPitLordWhat1, 127)
-SetSoundPitch(gg_snd_HPitLordWhat1, 0.9)
-gg_snd_IllidanYesAttack2 = CreateSound("Units/NightElf/Illidan/IllidanYesAttack2.flac", false, true, true, 0, 0, "HeroAcksEAX")
-SetSoundParamsFromLabel(gg_snd_IllidanYesAttack2, "IllidanYesAttack")
-SetSoundDuration(gg_snd_IllidanYesAttack2, 1338)
-SetSoundVolume(gg_snd_IllidanYesAttack2, 127)
-gg_snd_SargerasLaugh = CreateSound("Sound/Ambient/DoodadEffects/SargerasLaugh.flac", false, false, false, 1, 1, "DefaultEAXON")
-SetSoundParamsFromLabel(gg_snd_SargerasLaugh, "SargerasLaugh")
-SetSoundDuration(gg_snd_SargerasLaugh, 3326)
-SetSoundVolume(gg_snd_SargerasLaugh, 127)
-gg_snd_IllidanYes4 = CreateSound("Units/NightElf/Illidan/IllidanYes4.flac", false, false, false, 1, 1, "DefaultEAXON")
-SetSoundParamsFromLabel(gg_snd_IllidanYes4, "IllidanYes")
-SetSoundDuration(gg_snd_IllidanYes4, 2023)
-SetSoundChannel(gg_snd_IllidanYes4, 0)
-SetSoundVolume(gg_snd_IllidanYes4, 126)
-gg_snd_QuestLog = CreateSound("Sound/Interface/QuestLog.flac", false, false, false, 0, 0, "DefaultEAXON")
-SetSoundParamsFromLabel(gg_snd_QuestLog, "QuestUpdate")
-SetSoundDuration(gg_snd_QuestLog, 2275)
-SetSoundVolume(gg_snd_QuestLog, 80)
-gg_snd_N06Illidan17 = CreateSound("Sound/Dialogue/NightElfCampaign/NightElf06/N06Illidan17.flac", false, false, false, 0, 0, "DefaultEAXON")
-SetSoundParamsFromLabel(gg_snd_N06Illidan17, "N06Illidan17")
-SetSoundDuration(gg_snd_N06Illidan17, 6492)
-SetSoundVolume(gg_snd_N06Illidan17, 120)
-gg_snd_Cinematic5Illidan = CreateSound("war3mapImported/Cinematic5Illidan.mp3", false, false, false, 1, 1, "DefaultEAXON")
-SetSoundDuration(gg_snd_Cinematic5Illidan, 6492)
-SetSoundChannel(gg_snd_Cinematic5Illidan, 0)
-SetSoundVolume(gg_snd_Cinematic5Illidan, 127)
-SetSoundPitch(gg_snd_Cinematic5Illidan, 1.0)
-gg_snd_Archamge1 = CreateSound("war3mapImported/Archamge1.wav", false, false, false, 0, 0, "DefaultEAXON")
-SetSoundDuration(gg_snd_Archamge1, 6492)
-SetSoundChannel(gg_snd_Archamge1, 0)
-SetSoundVolume(gg_snd_Archamge1, 127)
-SetSoundPitch(gg_snd_Archamge1, 1.0)
-gg_snd_Archmage2 = CreateSound("war3mapImported/Archmage2.wav", false, false, false, 0, 0, "DefaultEAXON")
-SetSoundDuration(gg_snd_Archmage2, 6492)
-SetSoundChannel(gg_snd_Archmage2, 0)
-SetSoundVolume(gg_snd_Archmage2, 127)
-SetSoundPitch(gg_snd_Archmage2, 1.0)
-gg_snd_IllidanWarcry1 = CreateSound("Units/NightElf/Illidan/IllidanWarcry1.flac", false, true, true, 1, 1, "DefaultEAXON")
-SetSoundParamsFromLabel(gg_snd_IllidanWarcry1, "IllidanWarcry")
-SetSoundDuration(gg_snd_IllidanWarcry1, 2002)
-SetSoundChannel(gg_snd_IllidanWarcry1, 0)
-SetSoundVolume(gg_snd_IllidanWarcry1, 127)
-SetSoundDistances(gg_snd_IllidanWarcry1, 100000.0, 100000.0)
-SetSoundDistanceCutoff(gg_snd_IllidanWarcry1, 3000.0)
-gg_snd_BattlenetDeath1 = CreateSound("Sound/Interface/BattlenetDeath1.flac", false, false, false, 1, 1, "DefaultEAXON")
-SetSoundParamsFromLabel(gg_snd_BattlenetDeath1, "GlueScreenBNetOpen")
-SetSoundDuration(gg_snd_BattlenetDeath1, 3626)
-SetSoundChannel(gg_snd_BattlenetDeath1, 0)
-SetSoundVolume(gg_snd_BattlenetDeath1, 127)
-gg_snd_Hint = CreateSound("Sound/Interface/Hint.flac", false, false, false, 1, 1, "DoodadsEAX")
-SetSoundParamsFromLabel(gg_snd_Hint, "Hint")
-SetSoundDuration(gg_snd_Hint, 2005)
-SetSoundVolume(gg_snd_Hint, 80)
-gg_snd_N06Illidan1701 = CreateSound("Sound/Dialogue/NightElfCampaign/NightElf06/N06Illidan17.flac", false, false, false, 1, 1, "DefaultEAXON")
-SetSoundParamsFromLabel(gg_snd_N06Illidan1701, "N06Illidan17")
-SetSoundDuration(gg_snd_N06Illidan1701, 6492)
-SetSoundVolume(gg_snd_N06Illidan1701, 127)
-gg_snd_S07Illidan29 = CreateSound("Sound/Dialogue/NightElfExpCamp/NightElf07x/S07Illidan29.flac", false, false, false, 0, 0, "DefaultEAXON")
-SetSoundParamsFromLabel(gg_snd_S07Illidan29, "S07Illidan29")
-SetSoundDuration(gg_snd_S07Illidan29, 1764)
-SetSoundVolume(gg_snd_S07Illidan29, 120)
-gg_snd_DemonHunterMorphedReady1 = CreateSound("Units/NightElf/HeroDemonHunter/DemonHunterMorphedReady1.flac", false, false, false, 1, 1, "DefaultEAXON")
-SetSoundParamsFromLabel(gg_snd_DemonHunterMorphedReady1, "HeroDemonHunterMorphedReady")
-SetSoundDuration(gg_snd_DemonHunterMorphedReady1, 3390)
-SetSoundChannel(gg_snd_DemonHunterMorphedReady1, 0)
-SetSoundVolume(gg_snd_DemonHunterMorphedReady1, 127)
-gg_snd_GilneasTheme1 = "war3mapImported/GilneasTheme1.mp3"
-gg_snd_Loading = CreateSound("Abilities/Spells/Other/LoadUnload/Loading.flac", false, true, true, 0, 0, "DefaultEAXON")
-SetSoundParamsFromLabel(gg_snd_Loading, "LoadUnload")
-SetSoundDuration(gg_snd_Loading, 740)
-SetSoundVolume(gg_snd_Loading, 127)
-gg_snd_FootmanYesAttack3 = CreateSound("Units/Human/Footman/FootmanYesAttack3.flac", false, false, false, 1, 1, "DefaultEAXON")
-SetSoundParamsFromLabel(gg_snd_FootmanYesAttack3, "FootmanYesAttack")
-SetSoundDuration(gg_snd_FootmanYesAttack3, 1152)
-SetSoundChannel(gg_snd_FootmanYesAttack3, 0)
-SetSoundVolume(gg_snd_FootmanYesAttack3, 127)
+gg_snd_WetlandsNight = CreateSound("Sound/Ambient/SunkenRuins/WetlandsNight.flac", true, true, true, 1, 1, "DefaultEAXON")
+SetSoundParamsFromLabel(gg_snd_WetlandsNight, "SunkenRuinsNight")
+SetSoundDuration(gg_snd_WetlandsNight, 172730)
+SetSoundChannel(gg_snd_WetlandsNight, 10)
+SetSoundVolume(gg_snd_WetlandsNight, 5)
+SetSoundDistances(gg_snd_WetlandsNight, 0.0, 10000.0)
+SetSoundDistanceCutoff(gg_snd_WetlandsNight, 100.0)
 gg_snd_WolfHowl = CreateSound("war3mapImported/WolfHowl.mp3", false, false, false, 1, 1, "DoodadsEAX")
-SetSoundDuration(gg_snd_WolfHowl, 1152)
+SetSoundDuration(gg_snd_WolfHowl, 172730)
 SetSoundChannel(gg_snd_WolfHowl, 0)
 SetSoundVolume(gg_snd_WolfHowl, 127)
 SetSoundPitch(gg_snd_WolfHowl, 1.0)
 gg_snd_ZandalarTheme = "war3mapImported/ZandalarTheme.mp3"
-gg_snd_DoorCloseRemix = CreateSound("war3mapImported/DoorCloseRemix.mp3", false, true, false, 1, 1, "DefaultEAXON")
-SetSoundDuration(gg_snd_DoorCloseRemix, 2808)
-SetSoundChannel(gg_snd_DoorCloseRemix, 0)
-SetSoundVolume(gg_snd_DoorCloseRemix, 127)
-SetSoundPitch(gg_snd_DoorCloseRemix, 1.0)
-SetSoundDistances(gg_snd_DoorCloseRemix, 0.0, 10000.0)
-SetSoundDistanceCutoff(gg_snd_DoorCloseRemix, 3000.0)
-SetSoundConeAngles(gg_snd_DoorCloseRemix, 0.0, 0.0, 127)
-SetSoundConeOrientation(gg_snd_DoorCloseRemix, 0.0, 0.0, 0.0)
-gg_snd_DoorOpenRemix = CreateSound("war3mapImported/DoorOpenRemix.mp3", false, true, false, 1, 1, "DefaultEAXON")
-SetSoundDuration(gg_snd_DoorOpenRemix, 3120)
-SetSoundChannel(gg_snd_DoorOpenRemix, 0)
-SetSoundVolume(gg_snd_DoorOpenRemix, 127)
-SetSoundPitch(gg_snd_DoorOpenRemix, 1.0)
-SetSoundDistances(gg_snd_DoorOpenRemix, 0.0, 10000.0)
-SetSoundDistanceCutoff(gg_snd_DoorOpenRemix, 3000.0)
-SetSoundConeAngles(gg_snd_DoorOpenRemix, 0.0, 0.0, 127)
-SetSoundConeOrientation(gg_snd_DoorOpenRemix, 0.0, 0.0, 0.0)
-gg_snd_NuclearLaunchDetected = CreateSound("war3mapImported/NuclearLaunchDetected.mp3", false, false, false, 0, 0, "DefaultEAXON")
-SetSoundDuration(gg_snd_NuclearLaunchDetected, 2712)
-SetSoundChannel(gg_snd_NuclearLaunchDetected, 0)
-SetSoundVolume(gg_snd_NuclearLaunchDetected, 127)
-SetSoundPitch(gg_snd_NuclearLaunchDetected, 1.0)
-gg_snd_IllidansTheme = "IllidansTheme"
 end
 
 function CreateBuildingsForPlayer0()
@@ -4166,7 +4166,7 @@ SetUnitAcquireRange(u, 200.0)
 t = CreateTrigger()
 TriggerRegisterUnitEvent(t, u, EVENT_UNIT_DEATH)
 TriggerRegisterUnitEvent(t, u, EVENT_UNIT_CHANGE_OWNER)
-TriggerAddAction(t, Unit000225_DropItems)
+TriggerAddAction(t, Unit001983_DropItems)
 u = BlzCreateUnitWithSkin(p, FourCC("nchw"), -371.3, -31336.0, 132.520, FourCC("nchw"))
 SetUnitAcquireRange(u, 200.0)
 u = BlzCreateUnitWithSkin(p, FourCC("nfsh"), 18224.4, 3839.7, 224.990, FourCC("nfsh"))
@@ -4443,7 +4443,7 @@ SetUnitAcquireRange(u, 200.0)
 t = CreateTrigger()
 TriggerRegisterUnitEvent(t, u, EVENT_UNIT_DEATH)
 TriggerRegisterUnitEvent(t, u, EVENT_UNIT_CHANGE_OWNER)
-TriggerAddAction(t, Unit002664_DropItems)
+TriggerAddAction(t, Unit002468_DropItems)
 u = BlzCreateUnitWithSkin(p, FourCC("nwlt"), -16854.4, 4605.1, 100.000, FourCC("nwlt"))
 SetUnitAcquireRange(u, 200.0)
 u = BlzCreateUnitWithSkin(p, FourCC("ndtr"), 17361.0, -15669.5, 212.764, FourCC("ndtr"))
@@ -4672,7 +4672,7 @@ UnitAddItemToSlotById(u, FourCC("I01P"), 0)
 t = CreateTrigger()
 TriggerRegisterUnitEvent(t, u, EVENT_UNIT_DEATH)
 TriggerRegisterUnitEvent(t, u, EVENT_UNIT_CHANGE_OWNER)
-TriggerAddAction(t, Unit003020_DropItems)
+TriggerAddAction(t, Unit002255_DropItems)
 u = BlzCreateUnitWithSkin(p, FourCC("nomg"), -10197.3, -9109.0, 249.505, FourCC("nomg"))
 SetUnitAcquireRange(u, 200.0)
 u = BlzCreateUnitWithSkin(p, FourCC("nnsw"), -5709.3, 5512.0, 60.000, FourCC("nnsw"))
@@ -4719,7 +4719,7 @@ SetUnitAcquireRange(u, 200.0)
 t = CreateTrigger()
 TriggerRegisterUnitEvent(t, u, EVENT_UNIT_DEATH)
 TriggerRegisterUnitEvent(t, u, EVENT_UNIT_CHANGE_OWNER)
-TriggerAddAction(t, Unit003017_DropItems)
+TriggerAddAction(t, Unit001975_DropItems)
 u = BlzCreateUnitWithSkin(p, FourCC("nbzw"), -8886.2, -15767.1, 182.790, FourCC("nbzw"))
 SetUnitAcquireRange(u, 200.0)
 IssueImmediateOrder(u, "slowon")
@@ -4783,7 +4783,7 @@ IssueImmediateOrder(u, "")
 t = CreateTrigger()
 TriggerRegisterUnitEvent(t, u, EVENT_UNIT_DEATH)
 TriggerRegisterUnitEvent(t, u, EVENT_UNIT_CHANGE_OWNER)
-TriggerAddAction(t, Unit003202_DropItems)
+TriggerAddAction(t, Unit002213_DropItems)
 u = BlzCreateUnitWithSkin(p, FourCC("nomg"), 15729.0, -17673.9, 296.265, FourCC("nomg"))
 SetUnitAcquireRange(u, 200.0)
 IssueImmediateOrder(u, "bloodluston")
@@ -4905,7 +4905,7 @@ UnitAddItemToSlotById(u, FourCC("I01P"), 0)
 t = CreateTrigger()
 TriggerRegisterUnitEvent(t, u, EVENT_UNIT_DEATH)
 TriggerRegisterUnitEvent(t, u, EVENT_UNIT_CHANGE_OWNER)
-TriggerAddAction(t, Unit001185_DropItems)
+TriggerAddAction(t, Unit002899_DropItems)
 u = BlzCreateUnitWithSkin(p, FourCC("nspb"), 5744.3, 7776.5, 199.661, FourCC("nspb"))
 SetUnitState(u, UNIT_STATE_MANA, 200)
 SetUnitAcquireRange(u, 200.0)
@@ -4924,7 +4924,7 @@ SetUnitAcquireRange(u, 200.0)
 t = CreateTrigger()
 TriggerRegisterUnitEvent(t, u, EVENT_UNIT_DEATH)
 TriggerRegisterUnitEvent(t, u, EVENT_UNIT_CHANGE_OWNER)
-TriggerAddAction(t, Unit003213_DropItems)
+TriggerAddAction(t, Unit001745_DropItems)
 u = BlzCreateUnitWithSkin(p, FourCC("ohun"), 10999.2, -21608.2, 31.444, FourCC("ohun"))
 SetUnitAcquireRange(u, 200.0)
 u = BlzCreateUnitWithSkin(p, FourCC("nwlt"), -13667.1, 717.3, 275.392, FourCC("nwlt"))
@@ -4959,7 +4959,7 @@ UnitAddItemToSlotById(u, FourCC("I01P"), 0)
 t = CreateTrigger()
 TriggerRegisterUnitEvent(t, u, EVENT_UNIT_DEATH)
 TriggerRegisterUnitEvent(t, u, EVENT_UNIT_CHANGE_OWNER)
-TriggerAddAction(t, Unit001575_DropItems)
+TriggerAddAction(t, Unit002903_DropItems)
 u = BlzCreateUnitWithSkin(p, FourCC("nogm"), 15427.7, -18984.9, 307.656, FourCC("nogm"))
 SetUnitAcquireRange(u, 200.0)
 u = BlzCreateUnitWithSkin(p, FourCC("hrif"), 15249.5, -887.2, 132.257, FourCC("hrif"))
@@ -5025,7 +5025,7 @@ SetUnitAcquireRange(u, 200.0)
 t = CreateTrigger()
 TriggerRegisterUnitEvent(t, u, EVENT_UNIT_DEATH)
 TriggerRegisterUnitEvent(t, u, EVENT_UNIT_CHANGE_OWNER)
-TriggerAddAction(t, Unit002202_DropItems)
+TriggerAddAction(t, Unit000313_DropItems)
 u = BlzCreateUnitWithSkin(p, FourCC("nenc"), -13806.5, -11430.4, 333.000, FourCC("nenc"))
 SetUnitAcquireRange(u, 200.0)
 u = BlzCreateUnitWithSkin(p, FourCC("nmsn"), -18657.6, -8510.6, 29.000, FourCC("nmsn"))
@@ -5358,7 +5358,7 @@ UnitAddItemToSlotById(u, FourCC("I01P"), 0)
 t = CreateTrigger()
 TriggerRegisterUnitEvent(t, u, EVENT_UNIT_DEATH)
 TriggerRegisterUnitEvent(t, u, EVENT_UNIT_CHANGE_OWNER)
-TriggerAddAction(t, Unit000115_DropItems)
+TriggerAddAction(t, Unit002538_DropItems)
 u = BlzCreateUnitWithSkin(p, FourCC("nsty"), -17301.9, -2938.8, 180.000, FourCC("nsty"))
 SetUnitAcquireRange(u, 200.0)
 IssueImmediateOrder(u, "")
@@ -5792,7 +5792,7 @@ UnitAddItemToSlotById(u, FourCC("I01P"), 0)
 t = CreateTrigger()
 TriggerRegisterUnitEvent(t, u, EVENT_UNIT_DEATH)
 TriggerRegisterUnitEvent(t, u, EVENT_UNIT_CHANGE_OWNER)
-TriggerAddAction(t, Unit000936_DropItems)
+TriggerAddAction(t, Unit002621_DropItems)
 u = BlzCreateUnitWithSkin(p, FourCC("ntrs"), 19315.5, -15410.0, 185.663, FourCC("ntrs"))
 SetUnitAcquireRange(u, 200.0)
 u = BlzCreateUnitWithSkin(p, FourCC("nsgn"), -8450.4, 2773.6, 200.000, FourCC("nsgn"))
@@ -5809,7 +5809,7 @@ UnitAddItemToSlotById(u, FourCC("I01P"), 0)
 t = CreateTrigger()
 TriggerRegisterUnitEvent(t, u, EVENT_UNIT_DEATH)
 TriggerRegisterUnitEvent(t, u, EVENT_UNIT_CHANGE_OWNER)
-TriggerAddAction(t, Unit000885_DropItems)
+TriggerAddAction(t, Unit001517_DropItems)
 u = BlzCreateUnitWithSkin(p, FourCC("Nalc"), -8607.0, 8004.5, 210.000, FourCC("Nalc"))
 SetUnitState(u, UNIT_STATE_MANA, 270)
 SetUnitAcquireRange(u, 200.0)
@@ -5818,7 +5818,7 @@ UnitAddItemToSlotById(u, FourCC("I01P"), 0)
 t = CreateTrigger()
 TriggerRegisterUnitEvent(t, u, EVENT_UNIT_DEATH)
 TriggerRegisterUnitEvent(t, u, EVENT_UNIT_CHANGE_OWNER)
-TriggerAddAction(t, Unit000554_DropItems)
+TriggerAddAction(t, Unit001310_DropItems)
 u = BlzCreateUnitWithSkin(p, FourCC("Nalc"), -10867.9, -3814.0, 265.270, FourCC("Nalc"))
 SetUnitState(u, UNIT_STATE_MANA, 270)
 SetUnitAcquireRange(u, 200.0)
@@ -5828,7 +5828,7 @@ UnitAddItemToSlotById(u, FourCC("I01P"), 0)
 t = CreateTrigger()
 TriggerRegisterUnitEvent(t, u, EVENT_UNIT_DEATH)
 TriggerRegisterUnitEvent(t, u, EVENT_UNIT_CHANGE_OWNER)
-TriggerAddAction(t, Unit001081_DropItems)
+TriggerAddAction(t, Unit000094_DropItems)
 u = BlzCreateUnitWithSkin(p, FourCC("Nrob"), -10634.2, -3717.9, 257.730, FourCC("Nrob"))
 SetUnitAcquireRange(u, 200.0)
 SelectHeroSkill(u, FourCC("ANcs"))
@@ -5836,7 +5836,7 @@ UnitAddItemToSlotById(u, FourCC("I01P"), 0)
 t = CreateTrigger()
 TriggerRegisterUnitEvent(t, u, EVENT_UNIT_DEATH)
 TriggerRegisterUnitEvent(t, u, EVENT_UNIT_CHANGE_OWNER)
-TriggerAddAction(t, Unit002893_DropItems)
+TriggerAddAction(t, Unit000028_DropItems)
 u = BlzCreateUnitWithSkin(p, FourCC("nenp"), -5552.3, -25498.4, 337.532, FourCC("nenp"))
 SetUnitAcquireRange(u, 200.0)
 u = BlzCreateUnitWithSkin(p, FourCC("Nrob"), 10508.7, -23108.2, 120.000, FourCC("Nrob"))
@@ -5846,7 +5846,7 @@ UnitAddItemToSlotById(u, FourCC("I01P"), 0)
 t = CreateTrigger()
 TriggerRegisterUnitEvent(t, u, EVENT_UNIT_DEATH)
 TriggerRegisterUnitEvent(t, u, EVENT_UNIT_CHANGE_OWNER)
-TriggerAddAction(t, Unit000235_DropItems)
+TriggerAddAction(t, Unit001616_DropItems)
 u = BlzCreateUnitWithSkin(p, FourCC("Nrob"), -8760.8, 8082.5, 257.730, FourCC("Nrob"))
 SetUnitAcquireRange(u, 200.0)
 SelectHeroSkill(u, FourCC("ANsy"))
@@ -5854,7 +5854,7 @@ UnitAddItemToSlotById(u, FourCC("I01P"), 0)
 t = CreateTrigger()
 TriggerRegisterUnitEvent(t, u, EVENT_UNIT_DEATH)
 TriggerRegisterUnitEvent(t, u, EVENT_UNIT_CHANGE_OWNER)
-TriggerAddAction(t, Unit002633_DropItems)
+TriggerAddAction(t, Unit001354_DropItems)
 u = BlzCreateUnitWithSkin(p, FourCC("Nalc"), 1143.5, -21749.9, 245.490, FourCC("Nalc"))
 SetUnitState(u, UNIT_STATE_MANA, 270)
 SetUnitAcquireRange(u, 200.0)
@@ -5863,7 +5863,7 @@ UnitAddItemToSlotById(u, FourCC("I01P"), 0)
 t = CreateTrigger()
 TriggerRegisterUnitEvent(t, u, EVENT_UNIT_DEATH)
 TriggerRegisterUnitEvent(t, u, EVENT_UNIT_CHANGE_OWNER)
-TriggerAddAction(t, Unit003015_DropItems)
+TriggerAddAction(t, Unit001607_DropItems)
 u = BlzCreateUnitWithSkin(p, FourCC("ntrg"), -9025.9, -7159.3, 290.000, FourCC("ntrg"))
 SetUnitAcquireRange(u, 200.0)
 u = BlzCreateUnitWithSkin(p, FourCC("ntrt"), -9124.4, -7365.2, 260.000, FourCC("ntrt"))
@@ -5925,7 +5925,7 @@ SetUnitAcquireRange(u, 200.0)
 t = CreateTrigger()
 TriggerRegisterUnitEvent(t, u, EVENT_UNIT_DEATH)
 TriggerRegisterUnitEvent(t, u, EVENT_UNIT_CHANGE_OWNER)
-TriggerAddAction(t, Unit001214_DropItems)
+TriggerAddAction(t, Unit001941_DropItems)
 u = BlzCreateUnitWithSkin(p, FourCC("nftb"), 20957.1, 15681.4, 299.746, FourCC("nftb"))
 SetUnitAcquireRange(u, 200.0)
 u = BlzCreateUnitWithSkin(p, FourCC("nftt"), 21078.0, 15805.8, 266.740, FourCC("nftt"))
@@ -8032,47 +8032,155 @@ end
 function CreateRegions()
 local we
 
-gg_rct_Solliden_Farmstead = Rect(6400.0, 8992.0, 7808.0, 10592.0)
+gg_rct_Aerie_Peak_Copy = Rect(13600.0, 4096.0, 14752.0, 5184.0)
+gg_rct_Aerie_Peak = Rect(13600.0, 4096.0, 14752.0, 5184.0)
+gg_rct_AkamaUnlock = Rect(-4416.0, -21088.0, -3072.0, -20064.0)
+gg_rct_AlteracAmbient = Rect(10432.0, 4608.0, 12160.0, 7104.0)
+gg_rct_AlteracLegionLanding = Rect(11168.0, 5632.0, 11552.0, 5984.0)
+gg_rct_Andorhal = Rect(11136.0, 7104.0, 13696.0, 8512.0)
+gg_rct_Andrassil = Rect(4992.0, 18400.0, 5440.0, 18816.0)
 gg_rct_Arathi_Ships = Rect(17888.0, 544.0, 18656.0, 1408.0)
-gg_rct_Auberdine_Ships = Rect(-18272.0, 2848.0, -15936.0, 5312.0)
+gg_rct_ArchimondeChannel = Rect(-9824.0, 10720.0, -9632.0, 10880.0)
+gg_rct_Area52Unlock = Rect(-96.0, -22720.0, 1024.0, -20608.0)
+gg_rct_ArthasRandomPoint = Rect(5664.0, 3520.0, 22304.0, 10048.0)
+gg_rct_ArtifactDummyInstance = Rect(19584.0, 23232.0, 22688.0, 24800.0)
+gg_rct_AshbringerForge = Rect(10240.0, -5440.0, 10368.0, -5312.0)
+gg_rct_AshenvaleAmbient = Rect(-17856.0, 384.0, -9856.0, 9152.0)
+gg_rct_AshenvaleAmbient2 = Rect(-17760.0, 9152.0, -11968.0, 12704.0)
+gg_rct_AshenvaleAmbient3 = Rect(-19424.0, 512.0, -17344.0, 2080.0)
+gg_rct_AshenvaleAmbient4 = Rect(-19072.0, 2080.0, -17856.0, 7584.0)
+gg_rct_AshenvaleEmeraldPortal = Rect(-8576.0, 8992.0, -8128.0, 9280.0)
+gg_rct_AshenvaleUnlock = Rect(-15552.0, 2464.0, -13088.0, 4576.0)
+gg_rct_AstranaarUnlock = Rect(-16832.0, 1344.0, -15168.0, 2496.0)
+gg_rct_AszharaAmbient1 = Rect(-9856.0, -3872.0, -5920.0, 3712.0)
 gg_rct_Auberdine_Ships_2 = Rect(-16672.0, 7456.0, -9408.0, 11840.0)
+gg_rct_Auberdine_Ships = Rect(-18272.0, 2848.0, -15936.0, 5312.0)
+gg_rct_AuberdineUnlock = Rect(-18784.0, 8608.0, -14784.0, 11104.0)
+gg_rct_AzsharaAmbient2 = Rect(-8704.0, 896.0, -3680.0, 6112.0)
+gg_rct_AzuremystAmbient = Rect(-21408.0, 6432.0, -18976.0, 11136.0)
+gg_rct_BalorAmbient = Rect(3104.0, -14400.0, 6656.0, -10112.0)
+gg_rct_BarrenAmbient1 = Rect(-19424.0, -5632.0, -9856.0, 384.0)
+gg_rct_BarrenAmbient2 = Rect(-16448.0, -7776.0, -12352.0, -5472.0)
+gg_rct_BarrenAmbient3 = Rect(-14208.0, -10272.0, -12480.0, -7840.0)
+gg_rct_BarrenAmbient4 = Rect(-14272.0, -11616.0, -8768.0, -10048.0)
+gg_rct_BarrenAmbient5 = Rect(-12480.0, -16544.0, -7680.0, -11712.0)
+gg_rct_Biodome1 = Rect(1088.0, -19392.0, 1632.0, -18880.0)
+gg_rct_Biodome2 = Rect(1824.0, -21248.0, 2368.0, -20736.0)
+gg_rct_Biodome3 = Rect(864.0, -20512.0, 1408.0, -20000.0)
+gg_rct_BlackrockUnlock = Rect(11840.0, -12224.0, 13632.0, -10208.0)
+gg_rct_BlackTempleBase = Rect(2112.0, -31584.0, 6496.0, -28288.0)
+gg_rct_BlademasterUnlock = Rect(4352.0, -10496.0, 5024.0, -10112.0)
+gg_rct_BlastedlandAmbient = Rect(14912.0, -22208.0, 20224.0, -16896.0)
+gg_rct_BloodElfSecondChanceSpawn = Rect(17376.0, 6144.0, 17760.0, 6560.0)
+gg_rct_BookRetrieval = Rect(9792.0, 5600.0, 10080.0, 5856.0)
+gg_rct_BootyBayQuest = Rect(9696.0, -24160.0, 12032.0, -22304.0)
 gg_rct_Borean_Tundra = Rect(-9152.0, 13664.0, -4768.0, 19008.0)
+gg_rct_BridgeAmbient = Rect(15232.0, -288.0, 17856.0, 736.0)
 gg_rct_Brill = Rect(8064.0, 10144.0, 9792.0, 11648.0)
 gg_rct_BrokenIslesA = Rect(-3680.0, 3424.0, 3648.0, 8992.0)
+gg_rct_BrokenIslesB = Rect(544.0, 8960.0, 3296.0, 10368.0)
+gg_rct_BurningSteppeAmbient2 = Rect(17952.0, -14720.0, 19872.0, -9504.0)
+gg_rct_BurningSteppesAmbient = Rect(11712.0, -12704.0, 17984.0, -7552.0)
+gg_rct_CaerDarrow = Rect(13952.0, 6208.0, 15648.0, 8064.0)
 gg_rct_CaerDarrowShipyard = Rect(8608.0, 2016.0, 18720.0, 11424.0)
+gg_rct_CairneStart = Rect(-10496.0, -11616.0, -8928.0, -10688.0)
+gg_rct_CenarionHoldUnlock = Rect(-18272.0, -14400.0, -15680.0, -12768.0)
+gg_rct_Cenarius = Rect(-10304.0, 10656.0, -10208.0, 10784.0)
 gg_rct_Central_Northrend = Rect(-4160.0, 15104.0, 1952.0, 20320.0)
 we = AddWeatherEffect(gg_rct_Central_Northrend, FourCC("SNls"))
 EnableWeatherEffect(we, true)
+gg_rct_Chen = Rect(-10592.0, -5568.0, -10144.0, -5024.0)
+gg_rct_ClosePortal = Rect(16736.0, -20256.0, 17024.0, -20000.0)
 gg_rct_Coldarra = Rect(-10656.0, 16896.0, -8704.0, 18272.0)
 we = AddWeatherEffect(gg_rct_Coldarra, FourCC("SNls"))
 EnableWeatherEffect(we, true)
 gg_rct_Corins_Crossing = Rect(16192.0, 8896.0, 18080.0, 10944.0)
 gg_rct_Crossroads = Rect(-12480.0, -2592.0, -11424.0, -1568.0)
+gg_rct_CthunSpawn = Rect(-16992.0, -17440.0, -16512.0, -16992.0)
 gg_rct_Dalaran = Rect(8608.0, 3872.0, 10336.0, 6048.0)
+gg_rct_DalaStartPos = Rect(8768.0, 2112.0, 10464.0, 3488.0)
 gg_rct_Dark_Portal_Entrance_1 = Rect(15840.0, -20256.0, 16256.0, -19936.0)
+gg_rct_Dark_Portal_Entrance_2 = Rect(16544.0, -19840.0, 16960.0, -19520.0)
+gg_rct_Dark_Portal_Entrance_3 = Rect(17376.0, -19936.0, 17792.0, -19616.0)
 gg_rct_Dark_Portal_Exit_1 = Rect(4096.0, -25120.0, 4448.0, -24672.0)
+gg_rct_Dark_Portal_Exit_2 = Rect(4160.0, -25696.0, 4544.0, -25312.0)
+gg_rct_Dark_Portal_Exit_3 = Rect(4768.0, -26272.0, 5152.0, -25888.0)
+gg_rct_DarkPortalUnlock = Rect(17792.0, -21856.0, 19808.0, -19648.0)
+gg_rct_DarkshireAmbient1 = Rect(8672.0, -17440.0, 13600.0, -14816.0)
+gg_rct_DarkshireAmbient2 = Rect(13600.0, -18208.0, 14912.0, -14720.0)
+gg_rct_DarkshireAmbient3 = Rect(13408.0, -14752.0, 17952.0, -12672.0)
+gg_rct_DarkshireUnlock = Rect(11904.0, -16320.0, 13408.0, -15072.0)
 gg_rct_Darrowshire = Rect(16096.0, 7168.0, 17600.0, 8480.0)
 gg_rct_Demongate_1 = Rect(-1248.0, -22400.0, -864.0, -22016.0)
 gg_rct_DemonGate3 = Rect(352.0, -25472.0, 864.0, -25024.0)
 gg_rct_Desolace_Ships = Rect(-18720.0, -7584.0, -16192.0, -3488.0)
-gg_rct_TheAthenaeum = Rect(-17408.0, -8768.0, -16576.0, -7968.0)
+gg_rct_DesolaceUnlock = Rect(-19456.0, -4896.0, -17152.0, -2976.0)
+gg_rct_DraeneiQuestKill = Rect(-20160.0, -5376.0, -16640.0, -2624.0)
+gg_rct_DragonmawPortal = Rect(22176.0, -4896.0, 22720.0, -4576.0)
+gg_rct_DragonmawUnlock = Rect(20832.0, -5088.0, 23168.0, -2720.0)
+gg_rct_DrakUnlock = Rect(1120.0, 18592.0, 3360.0, 20960.0)
+gg_rct_Dreadscar_1 = Rect(18080.0, 12256.0, 18784.0, 14688.0)
+gg_rct_Dreadscar_2 = Rect(17856.0, 15392.0, 19360.0, 17376.0)
+gg_rct_Dreadscar_3 = Rect(18304.0, 19424.0, 18816.0, 21408.0)
+gg_rct_Drekthars_Spellbook = Rect(-10592.0, 9984.0, -9216.0, 11328.0)
+gg_rct_DrownedTemple = Rect(17248.0, -15936.0, 17696.0, -15520.0)
 gg_rct_Dun_Morogh_Ships = Rect(7296.0, -7872.0, 14240.0, -4992.0)
+gg_rct_DunmoroghAmbient1 = Rect(6688.0, -8416.0, 9536.0, -4096.0)
+gg_rct_DunmoroghAmbient2 = Rect(8320.0, -8768.0, 11744.0, -6656.0)
+gg_rct_DunmoroghAmbient3 = Rect(11680.0, -7552.0, 14464.0, -4032.0)
+gg_rct_DuskwoodCrypt = Rect(9376.0, -16032.0, 9728.0, -15616.0)
+gg_rct_DusthallowAmbient = Rect(-12256.0, -9920.0, -8640.0, -5728.0)
 gg_rct_Dustwallow_Ships = Rect(-12416.0, -8736.0, -8768.0, -6144.0)
+gg_rct_East_of_Azeroth = Rect(22144.0, -9888.0, 22592.0, -9376.0)
 gg_rct_East_Thandol = Rect(16736.0, 0.0, 16928.0, 224.0)
 gg_rct_Eastern_Northrend = Rect(-2272.0, 20320.0, 4608.0, 22304.0)
+gg_rct_EchoIsleAmbient = Rect(-8576.0, -10208.0, -5056.0, -4064.0)
+gg_rct_EchoUnlock = Rect(-8608.0, -6816.0, -6208.0, -3968.0)
+gg_rct_ElwinForestAmbient = Rect(8704.0, -14816.0, 13376.0, -12672.0)
+gg_rct_EntireMap = Rect(-24512.0, -31872.0, 24096.0, 25056.0)
+gg_rct_ExodarBaseUnlock = Rect(-23872.0, 5792.0, -21248.0, 8416.0)
 gg_rct_Far_Eastern_Northrend = Rect(4608.0, 20064.0, 7328.0, 22944.0)
 we = AddWeatherEffect(gg_rct_Far_Eastern_Northrend, FourCC("SNhs"))
 EnableWeatherEffect(we, true)
+gg_rct_FeathermoonCreeps = Rect(-22464.0, -12128.0, -18368.0, -7584.0)
+gg_rct_FeathermoonUnlock = Rect(-21376.0, -10272.0, -19776.0, -7840.0)
 gg_rct_Fenris_ships = Rect(5760.0, 4960.0, 13024.0, 8128.0)
+gg_rct_FeralasAmbient1 = Rect(-17408.0, -11552.0, -14336.0, -7904.0)
+gg_rct_FeralasAmbient2 = Rect(-23808.0, -14464.0, -17248.0, -5536.0)
+gg_rct_FeralasEmeraldPortal = Rect(-18144.0, -6464.0, -17696.0, -6208.0)
 gg_rct_Fjord = Rect(1536.0, 13408.0, 8192.0, 20320.0)
-gg_rct_Gilneas = Rect(2848.0, -3264.0, 9760.0, 2624.0)
+gg_rct_ForsakenStartPos = Rect(3296.0, 22784.0, 4480.0, 23776.0)
+gg_rct_FountainOfHealthAlterac = Rect(10656.0, 5536.0, 11104.0, 6016.0)
+gg_rct_FountainUnlock = Rect(-10688.0, 4384.0, -10144.0, 4800.0)
+gg_rct_FTSummon = Rect(-3392.0, 20384.0, -3232.0, 20512.0)
+gg_rct_GarithosCrusadeSpawn = Rect(19168.0, 7520.0, 19776.0, 8160.0)
 gg_rct_Gilneas_Canals = Rect(6080.0, -1376.0, 8800.0, 2656.0)
+gg_rct_Gilneas = Rect(2848.0, -3264.0, 9760.0, 2624.0)
+gg_rct_GilneasStartPos = Rect(7936.0, 1472.0, 8928.0, 2112.0)
+gg_rct_GilneasUnlock1 = Rect(8288.0, -2368.0, 9824.0, -832.0)
+gg_rct_GilneasUnlock2 = Rect(6624.0, -3264.0, 8032.0, -2400.0)
+gg_rct_GilneasUnlock3 = Rect(3968.0, 416.0, 5408.0, 2656.0)
+gg_rct_GilneasUnlock4 = Rect(3392.0, -2656.0, 5504.0, -320.0)
+gg_rct_GilneasUnlock5 = Rect(6432.0, 2112.0, 7456.0, 2816.0)
+gg_rct_GilneasUnlock6 = Rect(6080.0, -928.0, 8672.0, 1696.0)
 gg_rct_Gnomergan = Rect(7296.0, -6528.0, 8672.0, -4960.0)
-gg_rct_Grim_Batol = Rect(16000.0, -4192.0, 18336.0, -2048.0)
+gg_rct_GoblinStartPos = Rect(-9248.0, -13984.0, -8160.0, -12896.0)
 gg_rct_Grim_Batol_Tunnel_Entrance = Rect(16480.0, -2944.0, 16672.0, -2784.0)
 gg_rct_Grim_Batol_Tunnel_Top = Rect(16608.0, -2496.0, 16832.0, -2400.0)
+gg_rct_Grim_Batol = Rect(16000.0, -4192.0, 18336.0, -2048.0)
+gg_rct_GrimBatolAmbient1 = Rect(14720.0, -4032.0, 17920.0, -256.0)
+gg_rct_GrimBatolAmbient2 = Rect(18048.0, -8352.0, 23424.0, 576.0)
+gg_rct_GrizzlyHills = Rect(3456.0, 17184.0, 5952.0, 19232.0)
+gg_rct_GromRandomPoint = Rect(-9824.0, -3808.0, -8160.0, -1504.0)
+gg_rct_GuldansCorpse = Rect(-800.0, 9792.0, -544.0, 10080.0)
+gg_rct_Halaar = Rect(-4896.0, -29728.0, -3776.0, -28736.0)
 gg_rct_Havenshire = Rect(20128.0, 7040.0, 22112.0, 9472.0)
 gg_rct_Hearthglen = Rect(10624.0, 10176.0, 13312.0, 11744.0)
+gg_rct_HellfireUnlock = Rect(-128.0, -27488.0, 2368.0, -24736.0)
+gg_rct_HideUnitBottomLeft = Rect(-24128.0, -30848.0, -9024.0, -22688.0)
+gg_rct_HighbankUnlock = Rect(21664.0, -8128.0, 23200.0, -6848.0)
+gg_rct_HinterlandAmbient1 = Rect(13600.0, 3040.0, 19136.0, 5408.0)
+gg_rct_HinterlandAmbient2 = Rect(16256.0, 5408.0, 19072.0, 7040.0)
 gg_rct_HonorHold = Rect(2208.0, -27360.0, 3936.0, -26016.0)
 gg_rct_Ice_Crown = Rect(-4480.0, 19616.0, -2272.0, 24256.0)
 we = AddWeatherEffect(gg_rct_Ice_Crown, FourCC("SNls"))
@@ -8080,16 +8188,82 @@ EnableWeatherEffect(we, true)
 gg_rct_IcecrownShipyard = Rect(-6976.0, 22304.0, -1248.0, 24992.0)
 we = AddWeatherEffect(gg_rct_IcecrownShipyard, FourCC("SNls"))
 EnableWeatherEffect(we, true)
+gg_rct_IllidanBlackTempleUnlock = Rect(3680.0, -31680.0, 6720.0, -28480.0)
+gg_rct_IllidanBoat2 = Rect(3616.0, 7456.0, 3744.0, 7616.0)
+gg_rct_IllidanBoat3 = Rect(4416.0, 7072.0, 4480.0, 7136.0)
+gg_rct_IllidanBoat4 = Rect(-5280.0, 3168.0, -5248.0, 3200.0)
+gg_rct_IllidanDalaExit = Rect(8736.0, 6432.0, 8896.0, 6624.0)
+gg_rct_IllidanLast = Rect(-18720.0, 3712.0, -18688.0, 3744.0)
+gg_rct_IllidanStartingPosition = Rect(-640.0, 5152.0, 1536.0, 6720.0)
+gg_rct_IllidariUnlockSA = Rect(12000.0, -22816.0, 13376.0, -21280.0)
+gg_rct_InstanceOutland = Rect(-7104.0, -32256.0, 6016.0, -18208.0)
 gg_rct_Ironforge = Rect(9792.0, -5728.0, 10016.0, -5536.0)
+gg_rct_IronforgeAmbient = Rect(9504.0, -6656.0, 11712.0, -4160.0)
+gg_rct_IslandBlocker1 = Rect(352.0, 1696.0, 1536.0, 2336.0)
+gg_rct_IslandBlocker2 = Rect(-2144.0, 1792.0, -1024.0, 2336.0)
+gg_rct_IslandBlocker3 = Rect(1536.0, -3456.0, 2560.0, -3168.0)
+gg_rct_IslandBlocker4 = Rect(832.0, -10624.0, 1824.0, -10112.0)
+gg_rct_IslandBlocker5 = Rect(512.0, -9216.0, 800.0, -8416.0)
+gg_rct_IslandBlocker6 = Rect(-2912.0, -3904.0, -1792.0, -2816.0)
+gg_rct_JainaChannel = Rect(-9888.0, 17632.0, -9792.0, 17728.0)
+gg_rct_KaelSunwellChannel = Rect(18496.0, 21568.0, 18624.0, 21696.0)
 gg_rct_Kali_Ships = Rect(-17600.0, -15296.0, -10816.0, 5600.0)
+gg_rct_Kalimdor = Rect(-21280.0, -18816.0, -5664.0, 12000.0)
+gg_rct_KaliRock1 = Rect(-16864.0, -2336.0, -15456.0, -1280.0)
+gg_rct_KaliRock10 = Rect(-11296.0, 2688.0, -10048.0, 3424.0)
+gg_rct_KaliRock11 = Rect(-12640.0, 3360.0, -11872.0, 4704.0)
+gg_rct_KaliRock12 = Rect(-9472.0, -1888.0, -8256.0, -1248.0)
+gg_rct_KaliRock13 = Rect(-12992.0, 1472.0, -12096.0, 2496.0)
+gg_rct_KaliRock14 = Rect(-8608.0, 6720.0, -7744.0, 7936.0)
+gg_rct_KaliRock15 = Rect(-15328.0, -13120.0, -14016.0, -11872.0)
+gg_rct_KaliRock4 = Rect(-10304.0, -12960.0, -9408.0, -12384.0)
+gg_rct_KaliRock7 = Rect(-13056.0, 352.0, -12128.0, 1472.0)
+gg_rct_KaliRock8 = Rect(-14400.0, -9536.0, -13632.0, -8768.0)
+gg_rct_KaliRock9 = Rect(-14848.0, -11808.0, -13632.0, -10432.0)
+gg_rct_KezanAmbient = Rect(-3200.0, -10368.0, 736.0, -5184.0)
+gg_rct_KezanUnlock = Rect(-2400.0, -8000.0, 608.0, -5184.0)
+gg_rct_KilsorrowUnlock = Rect(-4224.0, -31904.0, -2752.0, -30752.0)
+gg_rct_KilSummon = Rect(14240.0, -17216.0, 14336.0, -17120.0)
+gg_rct_King_Arthas_crown = Rect(8896.0, 8320.0, 9280.0, 8512.0)
+gg_rct_KulAttack = Rect(3776.0, -11136.0, 4096.0, -10912.0)
+gg_rct_KulTarget = Rect(3904.0, -13440.0, 3936.0, -13408.0)
 gg_rct_Kultiras = Rect(704.0, -10304.0, 5856.0, -4672.0)
+gg_rct_LakeshireUnlock = Rect(13568.0, -13728.0, 16128.0, -12608.0)
+gg_rct_LegionStartPos = Rect(18528.0, -31232.0, 19456.0, -30304.0)
 gg_rct_LichKing = Rect(-3520.0, 20224.0, -3136.0, 20704.0)
+gg_rct_LightningBolt2 = Rect(-18528.0, 3488.0, -18496.0, 3520.0)
+gg_rct_LightningBolt3 = Rect(-18784.0, 3584.0, -18752.0, 3616.0)
 gg_rct_Loch_Modan_Ships = Rect(14432.0, -7552.0, 17952.0, -1536.0)
+gg_rct_LochModanAmbient = Rect(14432.0, -7552.0, 17888.0, -4032.0)
 gg_rct_Lordaeron_East = Rect(12896.0, 7456.0, 18240.0, 14112.0)
+gg_rct_LordaeronAmbient1 = Rect(15968.0, 7264.0, 19008.0, 11712.0)
+gg_rct_LordaeronAmbient2 = Rect(12928.0, 8448.0, 16128.0, 11040.0)
+gg_rct_LordaeronAmbient3 = Rect(9792.0, 7872.0, 13696.0, 12192.0)
+gg_rct_LordaeronAmbient4 = Rect(6848.0, 9472.0, 9824.0, 12224.0)
+gg_rct_LordaeronAmbient5 = Rect(4544.0, 8128.0, 8032.0, 10688.0)
+gg_rct_LordamereLakeAmbient = Rect(8320.0, 5824.0, 10368.0, 7680.0)
+gg_rct_LumberCampUnlock = Rect(-11648.0, 864.0, -9472.0, 3296.0)
+gg_rct_MaelstromAmbient = Rect(-5632.0, -5280.0, 2752.0, 3456.0)
+we = AddWeatherEffect(gg_rct_MaelstromAmbient, FourCC("RAlr"))
+EnableWeatherEffect(we, true)
+gg_rct_MaelstromChannel = Rect(-672.0, -1504.0, 96.0, -960.0)
+gg_rct_MaievStartUnlock = Rect(-6016.0, -28416.0, -4896.0, -27104.0)
+gg_rct_MonolithNoBuild = Rect(18208.0, -31584.0, 23808.0, -23360.0)
 gg_rct_Moonglade = Rect(-12992.0, 10176.0, -12416.0, 10656.0)
+gg_rct_MoongladeVillage = Rect(-14688.0, 10048.0, -12288.0, 12192.0)
+gg_rct_Nazjatar = Rect(-5792.0, -3680.0, -5024.0, -2752.0)
+gg_rct_NethergardeUnlock = Rect(16576.0, -18400.0, 18688.0, -16960.0)
+gg_rct_Netherstorm = Rect(-544.0, -23712.0, 3680.0, -18528.0)
 gg_rct_Northern_Kali_Ships = Rect(-17344.0, -1376.0, -8704.0, 8800.0)
+gg_rct_Northrend_Ambiance = Rect(-10688.0, 13120.0, 8608.0, 24736.0)
 gg_rct_Northrend_ships = Rect(-9216.0, 19680.0, 6048.0, 24992.0)
+gg_rct_NorthrendLegionLanding = Rect(3392.0, 20512.0, 3776.0, 20864.0)
+gg_rct_NyTanaris = Rect(-15136.0, -17888.0, -14656.0, -17376.0)
+gg_rct_NzothStartPosition = Rect(-4192.0, 1344.0, -3360.0, 1792.0)
 gg_rct_Orgrimmar = Rect(-9824.0, -2080.0, -5824.0, 1248.0)
+gg_rct_OrgrimmarFlight = Rect(-9728.0, -800.0, -9568.0, -640.0)
+gg_rct_Outland_Ships = Rect(-7104.0, -32256.0, 6016.0, -18208.0)
+gg_rct_OutlandToArgus = Rect(22848.0, -28224.0, 23360.0, -27808.0)
 gg_rct_Plague_1 = Rect(6368.0, 6848.0, 7840.0, 10816.0)
 gg_rct_Plague_2 = Rect(12608.0, 7968.0, 15168.0, 9120.0)
 gg_rct_Plague_3 = Rect(15968.0, 7744.0, 18656.0, 8960.0)
@@ -8100,224 +8274,81 @@ gg_rct_Plague_7 = Rect(9792.0, 1664.0, 13216.0, 3008.0)
 gg_rct_Quel_Ships_1 = Rect(16384.0, 16288.0, 20096.0, 17568.0)
 gg_rct_Quel_Ships_2 = Rect(17216.0, 13984.0, 20512.0, 17568.0)
 gg_rct_Quel_Ships_3 = Rect(16288.0, 11744.0, 21920.0, 15584.0)
+gg_rct_QuelDanil_Lodge = Rect(17056.0, 6080.0, 17920.0, 6944.0)
+gg_rct_Queltalas_2 = Rect(16256.0, 11936.0, 20224.0, 14016.0)
 gg_rct_Quelthalas = Rect(15136.0, 13536.0, 21408.0, 23168.0)
+gg_rct_QuelthalasAmbient = Rect(16224.0, 11776.0, 20224.0, 17440.0)
+gg_rct_RagnarosSummon = Rect(12192.0, -10784.0, 12512.0, -10464.0)
+gg_rct_RanazjarAmbient = Rect(-21344.0, -5536.0, -19424.0, -1248.0)
+gg_rct_RiseBaseUnlock = Rect(-13056.0, 5440.0, -11072.0, 7488.0)
+gg_rct_RuinOfDalaran = Rect(9408.0, 5472.0, 9568.0, 5664.0)
 gg_rct_Sargeras_Entrance = Rect(-1024.0, 8096.0, -448.0, 8576.0)
+gg_rct_SatyrCamp = Rect(-14816.0, 6080.0, -13888.0, 6912.0)
+gg_rct_ScarletHarbor = Rect(-9728.0, 21984.0, -7872.0, 23648.0)
+gg_rct_Scholomance_Exterior_1 = Rect(14368.0, 7264.0, 14944.0, 7872.0)
+gg_rct_Scholomance_Exterior_2 = Rect(15008.0, 6560.0, 15552.0, 7168.0)
+gg_rct_ScholomanceAmbient1 = Rect(13728.0, 7072.0, 16096.0, 8416.0)
+gg_rct_ScholomanceAmbient2 = Rect(12128.0, 5440.0, 16224.0, 7072.0)
+gg_rct_ScholomanceAmbient3 = Rect(11200.0, 7072.0, 13728.0, 7840.0)
+gg_rct_SentinelTowerAmbient = Rect(5696.0, -17664.0, 8672.0, -14304.0)
+gg_rct_ShadowfangAmbient = Rect(5344.0, 2624.0, 8576.0, 8160.0)
+gg_rct_ShadowfangUnlock = Rect(5440.0, 3104.0, 6592.0, 4768.0)
+gg_rct_Shadowforge_City = Rect(11488.0, -9728.0, 13248.0, -8320.0)
+gg_rct_ShadowmoonBaseUnlock = Rect(1696.0, -31776.0, 3936.0, -28896.0)
+gg_rct_ShadowvaultUnlock = Rect(-4480.0, 23424.0, -3168.0, 24224.0)
+gg_rct_Shattrah = Rect(-2016.0, -29440.0, -768.0, -28000.0)
+gg_rct_ShipAmbient = Rect(8608.0, -31424.0, 9984.0, -28768.0)
+gg_rct_ShipInside = Rect(8928.0, -31168.0, 9472.0, -30720.0)
+gg_rct_ShipTarget = Rect(4608.0, -10528.0, 4640.0, -10496.0)
+gg_rct_ShrineBaseUnlock = Rect(-13184.0, 7648.0, -9632.0, 9568.0)
+gg_rct_SilithusAmbient = Rect(-20768.0, -19744.0, -15712.0, -11744.0)
+gg_rct_SkullRetrieval = Rect(8576.0, 4672.0, 8832.0, 4928.0)
+gg_rct_Solliden_Farmstead = Rect(6400.0, 8992.0, 7808.0, 10592.0)
 gg_rct_South_EK_Ships = Rect(7872.0, -18240.0, 18880.0, -12288.0)
+gg_rct_SouthshoreAmbient = Rect(9216.0, 1216.0, 14176.0, 3520.0)
+gg_rct_SouthshoreAmbient2 = Rect(10336.0, 3936.0, 13568.0, 4608.0)
+gg_rct_SouthshoreAmbient3 = Rect(12128.0, 4608.0, 13600.0, 5472.0)
+gg_rct_SouthshoreAmbient4 = Rect(13504.0, 1632.0, 18336.0, 2976.0)
+gg_rct_SouthshoreAmbient5 = Rect(15296.0, 736.0, 17856.0, 1920.0)
+gg_rct_SouthshoreUnlock = Rect(10784.0, 1632.0, 12096.0, 2656.0)
 gg_rct_StonemaulKeep = Rect(-12096.0, -10144.0, -9216.0, -7904.0)
 gg_rct_Storm_Peaks = Rect(-1088.0, 21088.0, 4640.0, 25088.0)
 we = AddWeatherEffect(gg_rct_Storm_Peaks, FourCC("SNhs"))
 EnableWeatherEffect(we, true)
 gg_rct_Stormwind = Rect(10880.0, -10176.0, 11040.0, -10016.0)
-gg_rct_StratholmeShipyard = Rect(13696.0, 7232.0, 20128.0, 11712.0)
-gg_rct_Stromgarde = Rect(12896.0, 192.0, 15232.0, 1632.0)
-gg_rct_Stromwind_antiship = Rect(7968.0, -12768.0, 11520.0, -9344.0)
-gg_rct_STV_Ships = Rect(10112.0, -20032.0, 14048.0, -17600.0)
-gg_rct_Terenas = Rect(8096.0, 7648.0, 10048.0, 9536.0)
-gg_rct_The_Basin = Rect(-8288.0, 16256.0, -4096.0, 22336.0)
-gg_rct_TwistingNether = Rect(18432.0, -26528.0, 20480.0, -23488.0)
-gg_rct_Vandermar_Village = Rect(6592.0, 6656.0, 7840.0, 8864.0)
-gg_rct_West_Thandol = Rect(14656.0, -160.0, 14848.0, 64.0)
-gg_rct_Zulfarrak = Rect(-12352.0, -14272.0, -10528.0, -12064.0)
-gg_rct_East_of_Azeroth = Rect(22144.0, -9888.0, 22592.0, -9376.0)
-gg_rct_West_of_Kalimdor = Rect(-20864.0, 4576.0, -20256.0, 5216.0)
-gg_rct_FTSummon = Rect(-3392.0, 20384.0, -3232.0, 20512.0)
-gg_rct_King_Arthas_crown = Rect(8896.0, 8320.0, 9280.0, 8512.0)
-gg_rct_Drekthars_Spellbook = Rect(-10592.0, 9984.0, -9216.0, 11328.0)
-gg_rct_Andorhal = Rect(11136.0, 7104.0, 13696.0, 8512.0)
-gg_rct_Aerie_Peak = Rect(13600.0, 4096.0, 14752.0, 5184.0)
-gg_rct_TempestKeep = Rect(3584.0, -22304.0, 4768.0, -21184.0)
-gg_rct_Sunwell = Rect(18144.0, 21248.0, 18976.0, 22048.0)
-gg_rct_Dark_Portal_Exit_2 = Rect(4160.0, -25696.0, 4544.0, -25312.0)
-gg_rct_Dark_Portal_Exit_3 = Rect(4768.0, -26272.0, 5152.0, -25888.0)
-gg_rct_Dark_Portal_Entrance_2 = Rect(16544.0, -19840.0, 16960.0, -19520.0)
-gg_rct_Dark_Portal_Entrance_3 = Rect(17376.0, -19936.0, 17792.0, -19616.0)
-gg_rct_Chen = Rect(-10592.0, -5568.0, -10144.0, -5024.0)
-gg_rct_QuelDanil_Lodge = Rect(17056.0, 6080.0, 17920.0, 6944.0)
-gg_rct_Andrassil = Rect(4992.0, 18400.0, 5440.0, 18816.0)
-gg_rct_VaultoftheWardens = Rect(-2432.0, 3840.0, -2112.0, 4160.0)
-gg_rct_Theramore = Rect(-8480.0, -10304.0, -6016.0, -7776.0)
-gg_rct_Terrordale = Rect(14656.0, 10336.0, 15968.0, 10880.0)
-gg_rct_Dreadscar_1 = Rect(18080.0, 12256.0, 18784.0, 14688.0)
-gg_rct_Dreadscar_3 = Rect(18304.0, 19424.0, 18816.0, 21408.0)
-gg_rct_Dreadscar_2 = Rect(17856.0, 15392.0, 19360.0, 17376.0)
-gg_rct_Cenarius = Rect(-10304.0, 10656.0, -10208.0, 10784.0)
-gg_rct_ThunderBluff = Rect(-16544.0, -7808.0, -14240.0, -3072.0)
-gg_rct_ThrallLanding = Rect(-9120.0, -11040.0, -8576.0, -10752.0)
-gg_rct_CairneStart = Rect(-10496.0, -11616.0, -8928.0, -10688.0)
-gg_rct_GrizzlyHills = Rect(3456.0, 17184.0, 5952.0, 19232.0)
-gg_rct_Northrend_Ambiance = Rect(-10688.0, 13120.0, 8608.0, 24736.0)
-gg_rct_TeldrassilAmbient = Rect(-20576.0, 12160.0, -16000.0, 16544.0)
-gg_rct_MoongladeVillage = Rect(-14688.0, 10048.0, -12288.0, 12192.0)
-gg_rct_AzuremystAmbient = Rect(-21408.0, 6432.0, -18976.0, 11136.0)
-gg_rct_AshenvaleAmbient = Rect(-17856.0, 384.0, -9856.0, 9152.0)
-gg_rct_BarrenAmbient1 = Rect(-19424.0, -5632.0, -9856.0, 384.0)
-gg_rct_BarrenAmbient2 = Rect(-16448.0, -7776.0, -12352.0, -5472.0)
-gg_rct_BarrenAmbient3 = Rect(-14208.0, -10272.0, -12480.0, -7840.0)
-gg_rct_BarrenAmbient4 = Rect(-14272.0, -11616.0, -8768.0, -10048.0)
-gg_rct_BarrenAmbient5 = Rect(-12480.0, -16544.0, -7680.0, -11712.0)
-gg_rct_SilithusAmbient = Rect(-20768.0, -19744.0, -15712.0, -11744.0)
-gg_rct_UngoroAmbient = Rect(-15616.0, -15200.0, -12608.0, -11680.0)
-gg_rct_FeralasAmbient1 = Rect(-17408.0, -11552.0, -14336.0, -7904.0)
-gg_rct_FeralasAmbient2 = Rect(-23808.0, -14464.0, -17248.0, -5536.0)
-gg_rct_AszharaAmbient1 = Rect(-9856.0, -3872.0, -5920.0, 3712.0)
-gg_rct_AzsharaAmbient2 = Rect(-8704.0, 896.0, -3680.0, 6112.0)
-gg_rct_DusthallowAmbient = Rect(-12256.0, -9920.0, -8640.0, -5728.0)
-gg_rct_EchoIsleAmbient = Rect(-8576.0, -10208.0, -5056.0, -4064.0)
-gg_rct_ZulfarrakAmbient = Rect(-5952.0, -17216.0, 2944.0, -10368.0)
-gg_rct_KezanAmbient = Rect(-3200.0, -10368.0, 736.0, -5184.0)
-gg_rct_AshenvaleAmbient2 = Rect(-17760.0, 9152.0, -11968.0, 12704.0)
-gg_rct_WinterspringAmbient1 = Rect(-11904.0, 9152.0, -8480.0, 12032.0)
-gg_rct_WinterspringAmbient2 = Rect(-9792.0, 5792.0, -8416.0, 9088.0)
-gg_rct_AshenvaleAmbient3 = Rect(-19424.0, 512.0, -17344.0, 2080.0)
-gg_rct_RanazjarAmbient = Rect(-21344.0, -5536.0, -19424.0, -1248.0)
-gg_rct_AshenvaleAmbient4 = Rect(-19072.0, 2080.0, -17856.0, 7584.0)
-gg_rct_Queltalas_2 = Rect(16256.0, 11936.0, 20224.0, 14016.0)
-gg_rct_StratholmeAmbient = Rect(13056.0, 11136.0, 16288.0, 14112.0)
-gg_rct_LordaeronAmbient1 = Rect(15968.0, 7264.0, 19008.0, 11712.0)
-gg_rct_TyrHandAmbient = Rect(19008.0, 6592.0, 22048.0, 9952.0)
-gg_rct_LordaeronAmbient2 = Rect(12928.0, 8448.0, 16128.0, 11040.0)
-gg_rct_LordaeronAmbient3 = Rect(9792.0, 7872.0, 13696.0, 12192.0)
-gg_rct_ZulAman_trolls = Rect(20256.0, 10176.0, 22848.0, 17440.0)
-gg_rct_LordaeronAmbient4 = Rect(6848.0, 9472.0, 9824.0, 12224.0)
-gg_rct_LordaeronAmbient5 = Rect(4544.0, 8128.0, 8032.0, 10688.0)
-gg_rct_QuelthalasAmbient = Rect(16224.0, 11776.0, 20224.0, 17440.0)
-gg_rct_SunwellAmbient = Rect(15168.0, 17440.0, 21376.0, 23104.0)
-gg_rct_ShadowfangAmbient = Rect(5344.0, 2624.0, 8576.0, 8160.0)
-gg_rct_LordamereLakeAmbient = Rect(8320.0, 5824.0, 10368.0, 7680.0)
-gg_rct_SouthshoreAmbient = Rect(9216.0, 1216.0, 14176.0, 3520.0)
-gg_rct_AlteracAmbient = Rect(10432.0, 4608.0, 12160.0, 7104.0)
-gg_rct_ScholomanceAmbient2 = Rect(12128.0, 5440.0, 16224.0, 7072.0)
-gg_rct_ScholomanceAmbient1 = Rect(13728.0, 7072.0, 16096.0, 8416.0)
-gg_rct_SouthshoreAmbient2 = Rect(10336.0, 3936.0, 13568.0, 4608.0)
-gg_rct_SouthshoreAmbient3 = Rect(12128.0, 4608.0, 13600.0, 5472.0)
-gg_rct_SouthshoreAmbient4 = Rect(13504.0, 1632.0, 18336.0, 2976.0)
-gg_rct_SouthshoreAmbient5 = Rect(15296.0, 736.0, 17856.0, 1920.0)
-gg_rct_BridgeAmbient = Rect(15232.0, -288.0, 17856.0, 736.0)
-gg_rct_ScholomanceAmbient3 = Rect(11200.0, 7072.0, 13728.0, 7840.0)
-gg_rct_HinterlandAmbient1 = Rect(13600.0, 3040.0, 19136.0, 5408.0)
-gg_rct_HinterlandAmbient2 = Rect(16256.0, 5408.0, 19072.0, 7040.0)
-gg_rct_Aerie_Peak_Copy = Rect(13600.0, 4096.0, 14752.0, 5184.0)
-gg_rct_TolbaradAmbient = Rect(9792.0, -2176.0, 12608.0, 1568.0)
-gg_rct_BalorAmbient = Rect(3104.0, -14400.0, 6656.0, -10112.0)
 gg_rct_StormwindAmbient2 = Rect(6624.0, -10528.0, 8160.0, -8544.0)
-gg_rct_SentinelTowerAmbient = Rect(5696.0, -17664.0, 8672.0, -14304.0)
+gg_rct_StormwindUnlock = Rect(6816.0, -12640.0, 11264.0, -8576.0)
+gg_rct_StrahnbradTaxe = Rect(12896.0, 5440.0, 12928.0, 5472.0)
+gg_rct_StrahnbradUnlock = Rect(12544.0, 4992.0, 13408.0, 5824.0)
 gg_rct_StranglethornAmbient1 = Rect(7680.0, -19136.0, 13536.0, -17472.0)
 gg_rct_StranglethornAmbient2 = Rect(11968.0, -24544.0, 14880.0, -18272.0)
 gg_rct_StranglethornAmbient3 = Rect(8224.0, -24768.0, 11968.0, -19168.0)
-gg_rct_ElwinForestAmbient = Rect(8704.0, -14816.0, 13376.0, -12672.0)
-gg_rct_DarkshireAmbient1 = Rect(8672.0, -17440.0, 13600.0, -14816.0)
-gg_rct_DarkshireAmbient2 = Rect(13600.0, -18208.0, 14912.0, -14720.0)
-gg_rct_DarkshireAmbient3 = Rect(13408.0, -14752.0, 17952.0, -12672.0)
-gg_rct_BlastedlandAmbient = Rect(14912.0, -22208.0, 20224.0, -16896.0)
-gg_rct_SwampofSorrowsAmbient = Rect(14944.0, -16896.0, 19424.0, -14784.0)
-gg_rct_BurningSteppesAmbient = Rect(11712.0, -12704.0, 17984.0, -7552.0)
-gg_rct_BurningSteppeAmbient2 = Rect(17952.0, -14720.0, 19872.0, -9504.0)
-gg_rct_IronforgeAmbient = Rect(9504.0, -6656.0, 11712.0, -4160.0)
-gg_rct_DunmoroghAmbient1 = Rect(6688.0, -8416.0, 9536.0, -4096.0)
-gg_rct_DunmoroghAmbient2 = Rect(8320.0, -8768.0, 11744.0, -6656.0)
-gg_rct_DunmoroghAmbient3 = Rect(11680.0, -7552.0, 14464.0, -4032.0)
-gg_rct_LochModanAmbient = Rect(14432.0, -7552.0, 17888.0, -4032.0)
-gg_rct_WetlandAmbient1 = Rect(12608.0, -4032.0, 14720.0, 160.0)
-gg_rct_WetlandAmbient2 = Rect(11296.0, -3808.0, 12576.0, -2272.0)
-gg_rct_GrimBatolAmbient1 = Rect(14720.0, -4032.0, 17920.0, -256.0)
-gg_rct_GrimBatolAmbient2 = Rect(18048.0, -8352.0, 23424.0, 576.0)
-gg_rct_LightningBolt2 = Rect(-18528.0, 3488.0, -18496.0, 3520.0)
-gg_rct_LightningBolt3 = Rect(-18784.0, 3584.0, -18752.0, 3616.0)
-gg_rct_WaveCrash = Rect(-18912.0, 3872.0, -18880.0, 3904.0)
-gg_rct_IllidanBoat2 = Rect(3616.0, 7456.0, 3744.0, 7616.0)
-gg_rct_IllidanBoat3 = Rect(4416.0, 7072.0, 4480.0, 7136.0)
-gg_rct_IllidanBoat4 = Rect(-5280.0, 3168.0, -5248.0, 3200.0)
-gg_rct_IllidanDalaExit = Rect(8736.0, 6432.0, 8896.0, 6624.0)
-gg_rct_IllidanLast = Rect(-18720.0, 3712.0, -18688.0, 3744.0)
-gg_rct_MaelstromAmbient = Rect(-5632.0, -5280.0, 2752.0, 3456.0)
-we = AddWeatherEffect(gg_rct_MaelstromAmbient, FourCC("RAlr"))
-EnableWeatherEffect(we, true)
-gg_rct_Undercity_Exterior_1 = Rect(9248.0, 7808.0, 9600.0, 8192.0)
-gg_rct_Undercity_Exterior_2 = Rect(8576.0, 7808.0, 8928.0, 8192.0)
-gg_rct_Undercity_Escape = Rect(6048.0, 8288.0, 6400.0, 8672.0)
-gg_rct_DarkshireUnlock = Rect(11904.0, -16320.0, 13408.0, -15072.0)
-gg_rct_StormwindUnlock = Rect(6816.0, -12640.0, 11264.0, -8576.0)
-gg_rct_LakeshireUnlock = Rect(13568.0, -13728.0, 16128.0, -12608.0)
-gg_rct_NethergardeUnlock = Rect(16576.0, -18400.0, 18688.0, -16960.0)
+gg_rct_StranglethornBaseBuild = Rect(5824.0, -24704.0, 11936.0, -14432.0)
+gg_rct_StratholmeAmbient = Rect(13056.0, 11136.0, 16288.0, 14112.0)
+gg_rct_StratholmeShipyard = Rect(13696.0, 7232.0, 20128.0, 11712.0)
 gg_rct_StratholmeUnlock = Rect(13248.0, 11168.0, 16224.0, 14144.0)
-gg_rct_TyrUnlock = Rect(18912.0, 6560.0, 22592.0, 9696.0)
-gg_rct_ShadowfangUnlock = Rect(5440.0, 3104.0, 6592.0, 4768.0)
-gg_rct_TrollAttackSpawn = Rect(20928.0, 12224.0, 21248.0, 12480.0)
-gg_rct_TrollTarget = Rect(17088.0, 12480.0, 17120.0, 12512.0)
-gg_rct_KilsorrowUnlock = Rect(-4224.0, -31904.0, -2752.0, -30752.0)
-gg_rct_HellfireUnlock = Rect(-128.0, -27488.0, 2368.0, -24736.0)
-gg_rct_ThelUnlock = Rect(14432.0, -6752.0, 15648.0, -4768.0)
-gg_rct_KulAttack = Rect(3776.0, -11136.0, 4096.0, -10912.0)
-gg_rct_KulTarget = Rect(3904.0, -13440.0, 3936.0, -13408.0)
-gg_rct_BlademasterUnlock = Rect(4352.0, -10496.0, 5024.0, -10112.0)
-gg_rct_ZandalarUnlock = Rect(-5440.0, -17152.0, -2400.0, -14656.0)
-gg_rct_TwilightOutside = Rect(17984.0, -8224.0, 21696.0, -4896.0)
-gg_rct_ShipInside = Rect(8928.0, -31168.0, 9472.0, -30720.0)
-gg_rct_ShipAmbient = Rect(8608.0, -31424.0, 9984.0, -28768.0)
-gg_rct_ShipTarget = Rect(4608.0, -10528.0, 4640.0, -10496.0)
-gg_rct_Kalimdor = Rect(-21280.0, -18816.0, -5664.0, 12000.0)
-gg_rct_FeathermoonUnlock = Rect(-21376.0, -10272.0, -19776.0, -7840.0)
-gg_rct_AstranaarUnlock = Rect(-16832.0, 1344.0, -15168.0, 2496.0)
-gg_rct_AshenvaleUnlock = Rect(-15552.0, 2464.0, -13088.0, 4576.0)
-gg_rct_DrownedTemple = Rect(17248.0, -15936.0, 17696.0, -15520.0)
-gg_rct_DragonmawUnlock = Rect(20832.0, -5088.0, 23168.0, -2720.0)
-gg_rct_SouthshoreUnlock = Rect(10784.0, 1632.0, 12096.0, 2656.0)
-gg_rct_MaievStartUnlock = Rect(-6016.0, -28416.0, -4896.0, -27104.0)
-gg_rct_CthunSpawn = Rect(-16992.0, -17440.0, -16512.0, -16992.0)
-gg_rct_EchoUnlock = Rect(-8608.0, -6816.0, -6208.0, -3968.0)
-gg_rct_StrahnbradUnlock = Rect(12544.0, 4992.0, 13408.0, 5824.0)
-gg_rct_ZeppelinReturn = Rect(-960.0, -5824.0, -320.0, -5216.0)
-gg_rct_Trade1 = Rect(9952.0, -23200.0, 10592.0, -22816.0)
-gg_rct_Trade2 = Rect(-8960.0, 7872.0, -8576.0, 8256.0)
-gg_rct_Trade3 = Rect(-11008.0, -3808.0, -10592.0, -3392.0)
-gg_rct_Trade4 = Rect(18816.0, -9984.0, 19200.0, -9600.0)
-gg_rct_Trader1 = Rect(2144.0, 15456.0, 2560.0, 15776.0)
-gg_rct_Trader2 = Rect(-7840.0, -13344.0, -7456.0, -13024.0)
-gg_rct_Trader3 = Rect(8864.0, -22720.0, 9184.0, -22432.0)
-gg_rct_GoblinStartPos = Rect(-9248.0, -13984.0, -8160.0, -12896.0)
-gg_rct_TempestKeepSpawn = Rect(3808.0, -21856.0, 4224.0, -21504.0)
-gg_rct_NyTanaris = Rect(-15136.0, -17888.0, -14656.0, -17376.0)
-gg_rct_UldumAmbiance = Rect(-15712.0, -20576.0, -11552.0, -15232.0)
-gg_rct_KaliRock1 = Rect(-16864.0, -2336.0, -15456.0, -1280.0)
-gg_rct_KaliRock4 = Rect(-10304.0, -12960.0, -9408.0, -12384.0)
+gg_rct_Stromgarde = Rect(12896.0, 192.0, 15232.0, 1632.0)
+gg_rct_Stromwind_antiship = Rect(7968.0, -12768.0, 11520.0, -9344.0)
+gg_rct_STV_Ships = Rect(10112.0, -20032.0, 14048.0, -17600.0)
+gg_rct_SunfuryStartingPosition = Rect(1888.0, -23424.0, 3616.0, -22048.0)
+gg_rct_Sunwell = Rect(18144.0, 21248.0, 18976.0, 22048.0)
+gg_rct_SunwellAmbient = Rect(15168.0, 17440.0, 21376.0, 23104.0)
+gg_rct_SwampofSorrowsAmbient = Rect(14944.0, -16896.0, 19424.0, -14784.0)
+gg_rct_TeldrassilAmbient = Rect(-20576.0, 12160.0, -16000.0, 16544.0)
 gg_rct_TeldrassilUnlock = Rect(-20512.0, 12256.0, -16352.0, 16512.0)
-gg_rct_KaelSunwellChannel = Rect(18496.0, 21568.0, 18624.0, 21696.0)
-gg_rct_JainaChannel = Rect(-9888.0, 17632.0, -9792.0, 17728.0)
-gg_rct_MonolithNoBuild = Rect(18208.0, -31584.0, 23808.0, -23360.0)
-gg_rct_DrakUnlock = Rect(1120.0, 18592.0, 3360.0, 20960.0)
-gg_rct_ArchimondeChannel = Rect(-9824.0, 10720.0, -9632.0, 10880.0)
-gg_rct_AkamaUnlock = Rect(-4416.0, -21088.0, -3072.0, -20064.0)
-gg_rct_WyrmrestTemple = Rect(-928.0, 17056.0, -288.0, 17824.0)
-gg_rct_WorldTunnelExit = Rect(17472.0, -11584.0, 17792.0, -11040.0)
-gg_rct_StrahnbradTaxe = Rect(12896.0, 5440.0, 12928.0, 5472.0)
-gg_rct_AshbringerForge = Rect(10240.0, -5440.0, 10368.0, -5312.0)
-gg_rct_TyrsFall = Rect(5120.0, 9056.0, 5408.0, 9344.0)
-gg_rct_DuskwoodCrypt = Rect(9376.0, -16032.0, 9728.0, -15616.0)
-gg_rct_OutlandToArgus = Rect(22848.0, -28224.0, 23360.0, -27808.0)
-gg_rct_ClosePortal = Rect(16736.0, -20256.0, 17024.0, -20000.0)
-gg_rct_GarithosCrusadeSpawn = Rect(19168.0, 7520.0, 19776.0, 8160.0)
-gg_rct_GilneasUnlock6 = Rect(6080.0, -928.0, 8672.0, 1696.0)
-gg_rct_GilneasUnlock1 = Rect(8288.0, -2368.0, 9824.0, -832.0)
-gg_rct_GilneasUnlock2 = Rect(6624.0, -3264.0, 8032.0, -2400.0)
-gg_rct_GilneasUnlock3 = Rect(3968.0, 416.0, 5408.0, 2656.0)
-gg_rct_GilneasUnlock4 = Rect(3392.0, -2656.0, 5504.0, -320.0)
-gg_rct_GilneasUnlock5 = Rect(6432.0, 2112.0, 7456.0, 2816.0)
-gg_rct_TwilightUnlock = Rect(18592.0, -6848.0, 19456.0, -6048.0)
-gg_rct_DragonmawPortal = Rect(22176.0, -4896.0, 22720.0, -4576.0)
-gg_rct_ScarletHarbor = Rect(-9728.0, 21984.0, -7872.0, 23648.0)
-gg_rct_ShadowvaultUnlock = Rect(-4480.0, 23424.0, -3168.0, 24224.0)
-gg_rct_RuinOfDalaran = Rect(9408.0, 5472.0, 9568.0, 5664.0)
 gg_rct_TelredorUnlock = Rect(-3296.0, -26464.0, -1728.0, -25376.0)
-gg_rct_Shattrah = Rect(-2016.0, -29440.0, -768.0, -28000.0)
-gg_rct_Halaar = Rect(-4896.0, -29728.0, -3776.0, -28736.0)
-gg_rct_Tuurem = Rect(704.0, -29408.0, 1792.0, -28384.0)
-gg_rct_InstanceOutland = Rect(-7104.0, -32256.0, 6016.0, -18208.0)
-gg_rct_Outland_Ships = Rect(-7104.0, -32256.0, 6016.0, -18208.0)
-gg_rct_IllidanStartingPosition = Rect(-640.0, 5152.0, 1536.0, 6720.0)
-gg_rct_ArtifactDummyInstance = Rect(19584.0, 23232.0, 22688.0, 24800.0)
-gg_rct_Shadowforge_City = Rect(11488.0, -9728.0, 13248.0, -8320.0)
-gg_rct_BlackrockUnlock = Rect(11840.0, -12224.0, 13632.0, -10208.0)
-gg_rct_CaerDarrow = Rect(13952.0, 6208.0, 15648.0, 8064.0)
+gg_rct_TempestKeep = Rect(3584.0, -22304.0, 4768.0, -21184.0)
+gg_rct_TempestKeepSpawn = Rect(3808.0, -21856.0, 4224.0, -21504.0)
+gg_rct_Terenas = Rect(8096.0, 7648.0, 10048.0, 9536.0)
+gg_rct_Terrordale = Rect(14656.0, 10336.0, 15968.0, 10880.0)
+gg_rct_The_Basin = Rect(-8288.0, 16256.0, -4096.0, 22336.0)
+gg_rct_TheAthenaeum = Rect(-17408.0, -8768.0, -16576.0, -7968.0)
+gg_rct_ThelUnlock = Rect(14432.0, -6752.0, 15648.0, -4768.0)
+gg_rct_Theramore = Rect(-8480.0, -10304.0, -6016.0, -7776.0)
+gg_rct_ThrallLanding = Rect(-9120.0, -11040.0, -8576.0, -10752.0)
+gg_rct_ThunderBluff = Rect(-16544.0, -7808.0, -14240.0, -3072.0)
+gg_rct_ThunderbluffFlight = Rect(-14656.0, -4128.0, -14496.0, -3968.0)
+gg_rct_TolbaradAmbient = Rect(9792.0, -2176.0, 12608.0, 1568.0)
 gg_rct_TombOfSargerasInteriorA = Rect(-832.0, 10144.0, 704.0, 11168.0)
 gg_rct_TombOfSargerasInteriorB = Rect(-1632.0, 9152.0, 64.0, 10176.0)
 gg_rct_TombOfSargerasInteriorC = Rect(-1536.0, 8960.0, 0.0, 9184.0)
@@ -8326,80 +8357,49 @@ gg_rct_TombOfSargerasInteriorE = Rect(32.0, 9728.0, 384.0, 10176.0)
 gg_rct_TombOfSargerasInteriorF = Rect(-1376.0, 10144.0, -800.0, 10592.0)
 gg_rct_TombOfSargerasInteriorG = Rect(352.0, 9920.0, 608.0, 10176.0)
 gg_rct_TombOfSargerasInteriorH = Rect(-1216.0, 8768.0, -288.0, 8992.0)
-gg_rct_BrokenIslesB = Rect(544.0, 8960.0, 3296.0, 10368.0)
-gg_rct_GuldansCorpse = Rect(-800.0, 9792.0, -544.0, 10080.0)
-gg_rct_KaliRock7 = Rect(-13056.0, 352.0, -12128.0, 1472.0)
-gg_rct_BookRetrieval = Rect(9792.0, 5600.0, 10080.0, 5856.0)
-gg_rct_SkullRetrieval = Rect(8576.0, 4672.0, 8832.0, 4928.0)
-gg_rct_KezanUnlock = Rect(-2400.0, -8000.0, 608.0, -5184.0)
-gg_rct_HighbankUnlock = Rect(21664.0, -8128.0, 23200.0, -6848.0)
-gg_rct_RagnarosSummon = Rect(12192.0, -10784.0, 12512.0, -10464.0)
-gg_rct_IllidanBlackTempleUnlock = Rect(3680.0, -31680.0, 6720.0, -28480.0)
-gg_rct_BlackTempleBase = Rect(2112.0, -31584.0, 6496.0, -28288.0)
-gg_rct_SatyrCamp = Rect(-14816.0, 6080.0, -13888.0, 6912.0)
-gg_rct_FountainOfHealthAlterac = Rect(10656.0, 5536.0, 11104.0, 6016.0)
-gg_rct_Nazjatar = Rect(-5792.0, -3680.0, -5024.0, -2752.0)
-gg_rct_Wrathgate_Portal_1 = Rect(-4352.0, 15584.0, -3776.0, 16128.0)
-gg_rct_Scholomance_Exterior_1 = Rect(14368.0, 7264.0, 14944.0, 7872.0)
-gg_rct_Scholomance_Exterior_2 = Rect(15008.0, 6560.0, 15552.0, 7168.0)
-gg_rct_Wrathgate_Portal_2 = Rect(-3456.0, 15968.0, -2880.0, 16576.0)
-gg_rct_AlteracLegionLanding = Rect(11168.0, 5632.0, 11552.0, 5984.0)
-gg_rct_NorthrendLegionLanding = Rect(3392.0, 20512.0, 3776.0, 20864.0)
-gg_rct_IslandBlocker1 = Rect(352.0, 1696.0, 1536.0, 2336.0)
-gg_rct_IslandBlocker2 = Rect(-2144.0, 1792.0, -1024.0, 2336.0)
-gg_rct_IslandBlocker3 = Rect(1536.0, -3456.0, 2560.0, -3168.0)
-gg_rct_IslandBlocker4 = Rect(832.0, -10624.0, 1824.0, -10112.0)
-gg_rct_IslandBlocker5 = Rect(512.0, -9216.0, 800.0, -8416.0)
-gg_rct_IllidariUnlockSA = Rect(12000.0, -22816.0, 13376.0, -21280.0)
-gg_rct_BootyBayQuest = Rect(9696.0, -24160.0, 12032.0, -22304.0)
-gg_rct_KaliRock8 = Rect(-14400.0, -9536.0, -13632.0, -8768.0)
-gg_rct_ShadowmoonBaseUnlock = Rect(1696.0, -31776.0, 3936.0, -28896.0)
-gg_rct_MaelstromChannel = Rect(-672.0, -1504.0, 96.0, -960.0)
-gg_rct_FeathermoonCreeps = Rect(-22464.0, -12128.0, -18368.0, -7584.0)
-gg_rct_AuberdineUnlock = Rect(-18784.0, 8608.0, -14784.0, 11104.0)
-gg_rct_KaliRock9 = Rect(-14848.0, -11808.0, -13632.0, -10432.0)
-gg_rct_FeralasEmeraldPortal = Rect(-18144.0, -6464.0, -17696.0, -6208.0)
-gg_rct_AshenvaleEmeraldPortal = Rect(-8576.0, 8992.0, -8128.0, 9280.0)
-gg_rct_KaliRock10 = Rect(-11296.0, 2688.0, -10048.0, 3424.0)
-gg_rct_KaliRock11 = Rect(-12640.0, 3360.0, -11872.0, 4704.0)
-gg_rct_KaliRock12 = Rect(-9472.0, -1888.0, -8256.0, -1248.0)
-gg_rct_LumberCampUnlock = Rect(-11648.0, 864.0, -9472.0, 3296.0)
-gg_rct_UpperBarrenCreeps = Rect(-14464.0, -3104.0, -10336.0, -32.0)
-gg_rct_RiseBaseUnlock = Rect(-13056.0, 5440.0, -11072.0, 7488.0)
-gg_rct_ShrineBaseUnlock = Rect(-13184.0, 7648.0, -9632.0, 9568.0)
-gg_rct_StranglethornBaseBuild = Rect(5824.0, -24704.0, 11936.0, -14432.0)
+gg_rct_Trade1 = Rect(9952.0, -23200.0, 10592.0, -22816.0)
+gg_rct_Trade2 = Rect(-8960.0, 7872.0, -8576.0, 8256.0)
+gg_rct_Trade3 = Rect(-11008.0, -3808.0, -10592.0, -3392.0)
+gg_rct_Trade4 = Rect(18816.0, -9984.0, 19200.0, -9600.0)
+gg_rct_Trader1 = Rect(2144.0, 15456.0, 2560.0, 15776.0)
+gg_rct_Trader2 = Rect(-7840.0, -13344.0, -7456.0, -13024.0)
+gg_rct_Trader3 = Rect(8864.0, -22720.0, 9184.0, -22432.0)
+gg_rct_TrollAttackSpawn = Rect(20928.0, 12224.0, 21248.0, 12480.0)
 gg_rct_TrollStartPos = Rect(-10016.0, -18400.0, -8544.0, -16832.0)
-gg_rct_ExodarBaseUnlock = Rect(-23872.0, 5792.0, -21248.0, 8416.0)
-gg_rct_DesolaceUnlock = Rect(-19456.0, -4896.0, -17152.0, -2976.0)
-gg_rct_DraeneiQuestKill = Rect(-20160.0, -5376.0, -16640.0, -2624.0)
-gg_rct_FountainUnlock = Rect(-10688.0, 4384.0, -10144.0, 4800.0)
-gg_rct_EntireMap = Rect(-24512.0, -31872.0, 24096.0, 25056.0)
-gg_rct_NzothStartPosition = Rect(-4192.0, 1344.0, -3360.0, 1792.0)
-gg_rct_Biodome1 = Rect(1088.0, -19392.0, 1632.0, -18880.0)
-gg_rct_Biodome3 = Rect(864.0, -20512.0, 1408.0, -20000.0)
-gg_rct_Biodome2 = Rect(1824.0, -21248.0, 2368.0, -20736.0)
-gg_rct_SunfuryStartingPosition = Rect(1888.0, -23424.0, 3616.0, -22048.0)
-gg_rct_Netherstorm = Rect(-544.0, -23712.0, 3680.0, -18528.0)
-gg_rct_KilSummon = Rect(14240.0, -17216.0, 14336.0, -17120.0)
+gg_rct_TrollTarget = Rect(17088.0, 12480.0, 17120.0, 12512.0)
+gg_rct_Tuurem = Rect(704.0, -29408.0, 1792.0, -28384.0)
+gg_rct_TwilightOutside = Rect(17984.0, -8224.0, 21696.0, -4896.0)
+gg_rct_TwilightUnlock = Rect(18592.0, -6848.0, 19456.0, -6048.0)
+gg_rct_TwistingNether = Rect(18432.0, -26528.0, 20480.0, -23488.0)
+gg_rct_TyrHandAmbient = Rect(19008.0, 6592.0, 22048.0, 9952.0)
+gg_rct_TyrsFall = Rect(5120.0, 9056.0, 5408.0, 9344.0)
+gg_rct_TyrUnlock = Rect(18912.0, 6560.0, 22592.0, 9696.0)
+gg_rct_UldumAmbiance = Rect(-15712.0, -20576.0, -11552.0, -15232.0)
+gg_rct_Undercity_Escape = Rect(6048.0, 8288.0, 6400.0, 8672.0)
+gg_rct_Undercity_Exterior_1 = Rect(9248.0, 7808.0, 9600.0, 8192.0)
+gg_rct_Undercity_Exterior_2 = Rect(8576.0, 7808.0, 8928.0, 8192.0)
+gg_rct_UngoroAmbient = Rect(-15616.0, -15200.0, -12608.0, -11680.0)
+gg_rct_UpperBarrenCreeps = Rect(-14464.0, -3104.0, -10336.0, -32.0)
 gg_rct_UpperNetherstorm = Rect(832.0, -20832.0, 3776.0, -18400.0)
-gg_rct_Area52Unlock = Rect(-96.0, -22720.0, 1024.0, -20608.0)
-gg_rct_KaliRock13 = Rect(-12992.0, 1472.0, -12096.0, 2496.0)
-gg_rct_KaliRock14 = Rect(-8608.0, 6720.0, -7744.0, 7936.0)
-gg_rct_GilneasStartPos = Rect(7936.0, 1472.0, 8928.0, 2112.0)
-gg_rct_KaliRock15 = Rect(-15328.0, -13120.0, -14016.0, -11872.0)
-gg_rct_ForsakenStartPos = Rect(3296.0, 22784.0, 4480.0, 23776.0)
-gg_rct_LegionStartPos = Rect(18528.0, -31232.0, 19456.0, -30304.0)
-gg_rct_DarkPortalUnlock = Rect(17792.0, -21856.0, 19808.0, -19648.0)
-gg_rct_OrgrimmarFlight = Rect(-9728.0, -800.0, -9568.0, -640.0)
-gg_rct_ThunderbluffFlight = Rect(-14656.0, -4128.0, -14496.0, -3968.0)
-gg_rct_IslandBlocker6 = Rect(-2912.0, -3904.0, -1792.0, -2816.0)
-gg_rct_DalaStartPos = Rect(8768.0, 2112.0, 10464.0, 3488.0)
-gg_rct_CenarionHoldUnlock = Rect(-18272.0, -14400.0, -15680.0, -12768.0)
+gg_rct_Vandermar_Village = Rect(6592.0, 6656.0, 7840.0, 8864.0)
+gg_rct_VaultoftheWardens = Rect(-2432.0, 3840.0, -2112.0, 4160.0)
+gg_rct_WaveCrash = Rect(-18912.0, 3872.0, -18880.0, 3904.0)
+gg_rct_West_of_Kalimdor = Rect(-20864.0, 4576.0, -20256.0, 5216.0)
+gg_rct_West_Thandol = Rect(14656.0, -160.0, 14848.0, 64.0)
+gg_rct_WetlandAmbient1 = Rect(12608.0, -4032.0, 14720.0, 160.0)
+gg_rct_WetlandAmbient2 = Rect(11296.0, -3808.0, 12576.0, -2272.0)
 gg_rct_WindrunnerSpireUnlock = Rect(16416.0, 13888.0, 16640.0, 14176.0)
-gg_rct_ArthasRandomPoint = Rect(5664.0, 3520.0, 22304.0, 10048.0)
-gg_rct_HideUnitBottomLeft = Rect(-24128.0, -30848.0, -9024.0, -22688.0)
-gg_rct_GromRandomPoint = Rect(-9824.0, -3808.0, -8160.0, -1504.0)
-gg_rct_BloodElfSecondChanceSpawn = Rect(17376.0, 6144.0, 17760.0, 6560.0)
+gg_rct_WinterspringAmbient1 = Rect(-11904.0, 9152.0, -8480.0, 12032.0)
+gg_rct_WinterspringAmbient2 = Rect(-9792.0, 5792.0, -8416.0, 9088.0)
+gg_rct_WorldTunnelExit = Rect(17472.0, -11584.0, 17792.0, -11040.0)
+gg_rct_Wrathgate_Portal_1 = Rect(-4352.0, 15584.0, -3776.0, 16128.0)
+gg_rct_Wrathgate_Portal_2 = Rect(-3456.0, 15968.0, -2880.0, 16576.0)
+gg_rct_WyrmrestTemple = Rect(-928.0, 17056.0, -288.0, 17824.0)
+gg_rct_ZandalarUnlock = Rect(-5440.0, -17152.0, -2400.0, -14656.0)
+gg_rct_ZeppelinReturn = Rect(-960.0, -5824.0, -320.0, -5216.0)
+gg_rct_ZulAman_trolls = Rect(20256.0, 10176.0, 22848.0, 17440.0)
+gg_rct_Zulfarrak = Rect(-12352.0, -14272.0, -10528.0, -12064.0)
+gg_rct_ZulfarrakAmbient = Rect(-5952.0, -17216.0, 2944.0, -10368.0)
 end
 
 function InitUpgrades_Player0()

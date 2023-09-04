@@ -8,22 +8,22 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_10108"
+      "Value": "(illidan)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_5044"
+      "Value": "Q"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.7
+      "Value": ""
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_19280"
+      "Value": "Build Coral of Life"
     },
     {
       "Id": 1935832437,
@@ -33,12 +33,12 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_12722"
+      "Value": "Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Slaves |n|cfff5962dUpgrades to:|R Coral of Ages"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_19358"
+      "Value": "Coral of Life"
     },
     {
       "Id": 1868786037,

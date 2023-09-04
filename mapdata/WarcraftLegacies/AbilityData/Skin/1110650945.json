@@ -13,12 +13,12 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_12250"
+      "Value": "(Druids - Cenarius)"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_12251"
+      "Value": "Nature Aura"
     },
     {
       "Id": 1918988897,
@@ -28,12 +28,12 @@
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_12252"
+      "Value": "Learn Nature Aura - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_17307"
+      "Value": "Decreases nearby enemy units\u0027 movement speed and attack rate.|n|n|cffffcc00Level 1|r - 6% movement speed and 5% attack speed decrease.|n|cffffcc00Level 2|r - 12% movement speed and 10% attack speed decrease.|n|cffffcc00Level 3|r - 18% movement speed and 15% attack speed decrease.|n|cffffcc00Level 4|r - 24% movement speed and 20% attack speed decrease."
     },
     {
       "Id": 1952543841,
@@ -42,51 +42,59 @@
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_12254"
+      "Value": "Nature Aura - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_12255"
+      "Value": "Nature Aura - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_12256"
+      "Value": "Nature Aura - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
+      "Pointer": 4,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_12257"
+      "Value": "Nature Aura - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_12258"
+      "Value": "Decreases nearby enemy units\u0027 movement speed by 6% and attack rate by 5%."
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_12259"
+      "Value": "Decreases nearby enemy units\u0027 movement speed by 12% and attack rate by 10%."
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_12260"
+      "Value": "Decreases nearby enemy units\u0027 movement speed by 18% and attack rate by 15%."
     },
     {
       "Level": 4,
+      "Pointer": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_12261"
+      "Value": "Decreases nearby enemy units\u0027 movement speed by 24% and attack rate by 20%."
     }
   ]
 }

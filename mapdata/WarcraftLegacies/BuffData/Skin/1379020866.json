@@ -13,12 +13,12 @@
     {
       "Id": 1885959270,
       "Type": 3,
-      "Value": "TRIGSTR_13580"
+      "Value": "Chemical Frenzy"
     },
     {
       "Id": 1700951398,
       "Type": 3,
-      "Value": "TRIGSTR_13581"
+      "Value": "This unit has Chemical Frenzy; its attack rate and movement speed are increased."
     }
   ]
 }

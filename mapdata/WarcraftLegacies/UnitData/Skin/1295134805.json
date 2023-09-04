@@ -8,11 +8,11 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_19169"
+      "Value": "Grimscale Chieftain"
     },
     {
       "Id": 1919252085,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1818520949,
@@ -22,11 +22,11 @@
     {
       "Id": 1869770869,
       "Type": 3,
-      "Value": "TRIGSTR_19170"
+      "Value": "Mmmrrrggglll"
     },
     {
       "Id": 1970434165,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1868786037,
@@ -46,16 +46,16 @@
     {
       "Id": 1953980789,
       "Type": 3,
-      "Value": "TRIGSTR_19171"
+      "Value": "Revive Grimscale Chieftain"
     },
     {
       "Id": 1919972469,
       "Type": 3,
-      "Value": "TRIGSTR_19172"
+      "Value": "Revive Grimscale Chieftain"
     },
     {
       "Id": 1667462261,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1769173877,
@@ -65,25 +65,25 @@
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 1.8
+      "Value": ""
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 1.2
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_11783"
+      "Value": "(Naga)"
     },
     {
       "Id": 2037408373,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 2020631157,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1953458293,
@@ -93,12 +93,12 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_14651"
+      "Value": "|cffff0000You will lose your current faction and join an Employer as a new small 1 hero faction|r|n|nPossible employers in order of priority:|n-Forsaken (once independant)|n-Illidan (If in Outland)|n-Dalaran (If Nexus)|n-Scourge (If Independant)|n-Nzoth|n-Twilight|n-Black Empire|n-C\u0027thun"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_19174"
+      "Value": "Summon Mmmrrrggglll"
     }
   ]
 }

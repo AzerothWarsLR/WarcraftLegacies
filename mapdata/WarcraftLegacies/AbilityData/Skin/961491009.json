@@ -8,18 +8,19 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_15824"
+      "Value": "(Gilneas)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_10231"
+      "Value": "W"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_8469"
+      "Value": "Removes all buffs from units in a target area. |n|cffffcc00Deals 250 damage to summoned units.|r"
     }
   ]
 }

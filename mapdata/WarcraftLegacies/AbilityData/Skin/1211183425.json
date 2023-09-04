@@ -7,23 +7,24 @@
   "Modifications": [
     {
       "Id": 2020631137,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_16298"
+      "Value": "(scarlet)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_8782"
+      "Value": "E"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_6588"
+      "Value": "Takes control of an enemy summoned unit. The mana cost is 20% of the summoned unit\u0027s current hit points."
     }
   ]
 }

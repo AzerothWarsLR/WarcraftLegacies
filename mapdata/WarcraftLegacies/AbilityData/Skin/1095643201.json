@@ -12,23 +12,24 @@
     },
     {
       "Id": 2020631137,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_8588"
+      "Value": "(Orb of Slow)"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_8589"
+      "Value": "Slow"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_8590"
+      "Value": "A poison attack that deals \u003CAspo,DataA1\u003E damage per second, and slows the target enemy\u0027s movement by \u003CAspo,DataB1,%\u003E% and attack by \u003CAspo,DataC1,%\u003E% for 1.5 seconds."
     }
   ]
 }

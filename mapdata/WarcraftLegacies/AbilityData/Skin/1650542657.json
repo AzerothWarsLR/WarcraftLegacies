@@ -7,47 +7,52 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_18723"
+      "Value": "(Zuluhed-Jaina-Malfurion-Vol\u0027Jin-Jergosh)"
     },
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_7980"
+      "Value": "E"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_6071"
+      "Value": "Gives additional mana regeneration to nearby friendly units. |n|n|cffffcc00Level 1|r - Grants 0.8 per second.|n|cffffcc00Level 2|r - Grants 1.10 mana per second. |n|cffffcc00Level 3|r - Grants 1.40 mana per second. |n|cffffcc00Level 4|r - Grants 1.70 mana per second."
     },
     {
       "Level": 4,
+      "Pointer": 4,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_6072"
+      "Value": "Brilliance Aura - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_6073"
+      "Value": "Gives an additional 0.8 mana regen per second to nearby units."
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_6074"
+      "Value": "Gives an additional 1.1 mana regen per second to nearby units."
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_6075"
+      "Value": "Gives an additional 1.4 mana regen per second to nearby units."
     },
     {
       "Level": 4,
+      "Pointer": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_6076"
+      "Value": "Gives an additional 1.7 mana regen per second to nearby units."
     }
   ]
 }

@@ -13,11 +13,11 @@
     {
       "Id": 1953980789,
       "Type": 3,
-      "Value": "TRIGSTR_2620"
+      "Value": "Revive Ouro"
     },
     {
       "Id": 1667462261,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1818520949,
@@ -26,7 +26,7 @@
     },
     {
       "Id": 1919252085,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1831952757,
@@ -36,26 +36,26 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_4202"
+      "Value": "Ancient Sand Worm"
     },
     {
       "Id": 1970434165,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1869770869,
       "Type": 3,
-      "Value": "TRIGSTR_10894"
+      "Value": "Ouro"
     },
     {
       "Id": 1919972469,
       "Type": 3,
-      "Value": "TRIGSTR_20570"
+      "Value": "Revive Oruo"
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1769173877,
@@ -70,7 +70,7 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_20571"
+      "Value": "Summon Ouro"
     },
     {
       "Id": 1885430133,
@@ -80,21 +80,21 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_17940"
+      "Value": "Warrior Hero, excels at enduring. |n|cfff5962dCan learn:|R Impale, Devour, Toughness, Roar of Despair|n|n|cffffcc00Attacks land units.|R"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_6650"
+      "Value": "E"
     },
     {
       "Id": 2037408373,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.8
+      "Value": ""
     }
   ]
 }

@@ -18,7 +18,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_3117"
+      "Value": "(dragon portals)"
     },
     {
       "Id": 1818520949,
@@ -28,7 +28,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_3176"
+      "Value": "Emerald Portal"
     },
     {
       "Id": 1935832437,
@@ -37,11 +37,11 @@
     },
     {
       "Id": 1651270517,
-      "Value": 50
+      "Value": ""
     },
     {
       "Id": 1919705973,
-      "Value": 50
+      "Value": ""
     }
   ]
 }

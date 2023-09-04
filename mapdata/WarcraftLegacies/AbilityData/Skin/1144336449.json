@@ -7,12 +7,12 @@
   "Modifications": [
     {
       "Id": 2020631137,
-      "Value": 3
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_11787"
+      "Value": "(Sky barge)"
     },
     {
       "Id": 1952542049,
@@ -22,19 +22,21 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_11788"
+      "Value": "Rocket Barrage"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_11789"
+      "Value": "Rocket Barrage"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_11790"
+      "Value": "Fires powerful rockets at nearby enemy ground units, dealing \u003Chrtt,mindmg2\u003E - \u003Chrtt,maxdmg2\u003E damage per hit."
     }
   ]
 }

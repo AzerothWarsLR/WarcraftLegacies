@@ -12,17 +12,17 @@
     },
     {
       "Id": 2020631157,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_1823"
+      "Value": "(Fel Horde)"
     },
     {
       "Id": 1685218677,
       "Type": 1,
-      "Value": 20
+      "Value": ""
     },
     {
       "Id": 1818520949,
@@ -32,12 +32,12 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_1978"
+      "Value": "W"
     },
     {
       "Id": 828468597,
       "Type": 2,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1831952757,
@@ -47,37 +47,37 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_2353"
+      "Value": "Fel Crossbowman"
     },
     {
       "Id": 1751675765,
       "Type": 1,
-      "Value": 120
+      "Value": ""
     },
     {
       "Id": 2003334005,
       "Type": 1,
-      "Value": 120
+      "Value": ""
     },
     {
       "Id": 2020111221,
       "Type": 1,
-      "Value": 50
+      "Value": ""
     },
     {
       "Id": 2036888437,
       "Type": 1,
-      "Value": 50
+      "Value": ""
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_2354"
+      "Value": "Train Fel Crossbowman"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_15486"
+      "Value": "Skilled shooter amongst the Orcs of Outland.|n|cfff5962dAbilities:|R Berserk, Self-Bloodlust|n|cfff5962dCan Learn:|R Blood Runes|n|n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Id": 1684960117,

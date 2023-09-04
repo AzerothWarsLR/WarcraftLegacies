@@ -13,22 +13,22 @@
     {
       "Id": 1885959270,
       "Type": 3,
-      "Value": "TRIGSTR_13435"
+      "Value": "Burning"
     },
     {
       "Id": 1700951398,
       "Type": 3,
-      "Value": "TRIGSTR_13436"
+      "Value": "This unit is burning"
     },
     {
       "Id": 1835101798,
       "Type": 3,
-      "Value": "TRIGSTR_12193"
+      "Value": "Fire Arrows"
     },
     {
       "Id": 1718840934,
       "Type": 3,
-      "Value": "TRIGSTR_13438"
+      "Value": " (elf)"
     },
     {
       "Id": 1953526630,
@@ -37,7 +37,7 @@
     },
     {
       "Id": 1685091174,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1952543846,

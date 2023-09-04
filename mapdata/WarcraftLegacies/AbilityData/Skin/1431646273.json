@@ -7,16 +7,16 @@
   "Modifications": [
     {
       "Id": 2020631137,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 2037408353,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_18160"
+      "Value": "(Archangel)"
     },
     {
       "Id": 1952540001,
@@ -30,44 +30,50 @@
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_13289"
+      "Value": "Judgement"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_18163"
+      "Value": "Pulverize - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_18164"
+      "Value": "Pulverize - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_18294"
+      "Value": "Gives a 25% chance that an attack will deal 60 damage to nearby units in a large area."
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_8801"
+      "Value": "Gives a 25% chance that an attack will deal 75 damage to nearby units."
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_8642"
+      "Value": "Gives a 25% chance that an attack will deal 100 damage to nearby units."
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_18168"
+      "Value": "Judgement"
     },
     {
       "Id": 1953653089,

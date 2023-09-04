@@ -7,18 +7,21 @@
   "Modifications": [
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1718968929,
       "Type": 3,
       "Value": "Bapl,Bplg"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1920296033,
       "Type": 2,
       "Value": 20
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1969514593,
       "Type": 2,
       "Value": 20
@@ -30,12 +33,14 @@
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1918989409,
       "Type": 3,
       "Value": "debris,enemies,ground,organic,structure,tree,wall"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1969518440,
       "Type": 3,
       "Value": "nfgt"

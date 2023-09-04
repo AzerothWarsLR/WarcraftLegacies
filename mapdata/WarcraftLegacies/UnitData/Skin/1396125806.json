@@ -7,37 +7,37 @@
   "Modifications": [
     {
       "Id": 2020631157,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_2679"
+      "Value": " (Forsaken, Cult)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_4154"
+      "Value": "W"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.8
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_15232"
+      "Value": "Deadeye"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_16376"
+      "Value": "Train Deadeye"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_2143"
+      "Value": "Undead Archers of the Forsaken.|n|cfff5962dAbilities:|r Cold Arrows, True Sight|n|n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Id": 1818520949,

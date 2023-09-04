@@ -8,34 +8,36 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_12954"
+      "Value": "(Yellow Rune Priest)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_15326"
+      "Value": "E"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_11583"
+      "Value": "Rune of Shielding"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_12956"
+      "Value": "Rune of Shielding"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_12958"
+      "Value": "Increases a target friendly unit\u0027s armor by 10. |nLasts 60 seconds."
     },
     {
       "Id": 1802007905,
       "Type": 3,
-      "Value": "TRIGSTR_15523"
+      "Value": "E"
     },
     {
       "Id": 1953653089,

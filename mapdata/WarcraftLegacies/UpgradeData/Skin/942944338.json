@@ -7,40 +7,46 @@
   "Modifications": [
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "TRIGSTR_4879"
+      "Value": "Improves Dryads\u0027 Slow Poison by increasing its damage dealt per second to \u003CA0JL,DataA3\u003E and duration to \u003CA0JL,Dur3\u003E seconds."
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_15389"
+      "Value": "Research Deadly Poison"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "TRIGSTR_12685"
+      "Value": "Deadly Poison"
     },
     {
       "Id": 2020631143,
-      "Value": 1
+      "Value": ""
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_10701"
+      "Value": "S"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1718840935,
       "Type": 3,
-      "Value": "TRIGSTR_14262"
+      "Value": "(Druids)"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829579623,
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNLethal_Venom.blp"

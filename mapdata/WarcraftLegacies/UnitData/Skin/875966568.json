@@ -7,12 +7,12 @@
   "Modifications": [
     {
       "Id": 2020631157,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19888"
+      "Value": "(Kul Tiras T2)"
     },
     {
       "Id": 1818520949,
@@ -22,7 +22,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_3984"
+      "Value": "C"
     },
     {
       "Id": 1831952757,
@@ -32,7 +32,7 @@
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 4.3
+      "Value": ""
     },
     {
       "Id": 1935832437,
@@ -42,12 +42,12 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_3354"
+      "Value": "Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Deckhand|n|cfff5962dUpgrades to:|R Castle"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.8
+      "Value": ""
     },
     {
       "Id": 1868786037,

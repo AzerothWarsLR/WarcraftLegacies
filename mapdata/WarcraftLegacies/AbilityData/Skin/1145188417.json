@@ -18,17 +18,17 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_17781"
+      "Value": "(Draenei)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_10423"
+      "Value": "R"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_12470"
+      "Value": "Moving Earth"
     },
     {
       "Id": 1918988897,
@@ -38,53 +38,59 @@
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_10425"
+      "Value": "R"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_12675"
+      "Value": "Learn Moving Earth - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_17779"
+      "Value": "The hero calls forth the earth itself to strike from beneath the feet of his enemies damaging them by a percentage of their base hit points per second. Also destroys trees.|n|cffffcc00Level 1|r - Damages for 3% hit points and lasts for 30 seconds.|n|cffffcc00Level 2|r - Damages for 4% hit points and lasts for 30 seconds.|n|cffffcc00Level 3|r - Damages for 5% hit points and lasts for 30 seconds."
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_17869"
+      "Value": "Moving Earth - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_17876"
+      "Value": "Moving Earth - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_17897"
+      "Value": "Moving Earth - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_10539"
+      "Value": "Damages enemy units in its area of effect by 3% of its base hit points per second. Also destroys trees. |nLasts 30 seconds."
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_10540"
+      "Value": "Damages enemy units in its area of effect by 4% of its base hit points per second. Also destroys trees. |nLasts 30 seconds."
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_10541"
+      "Value": "Damages enemy units in its area of effect by 5% of its base hit points per second. Also destroys trees. |nLasts 30 seconds."
     }
   ]
 }

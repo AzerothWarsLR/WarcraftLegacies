@@ -12,31 +12,31 @@
     },
     {
       "Id": 1651270517,
-      "Value": 80
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19706"
+      "Value": "(Sentinel Other)"
     },
     {
       "Id": 1735156597,
-      "Value": 125
+      "Value": ""
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.85
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_2220"
+      "Value": "Cenarion Hold"
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 2.5
+      "Value": ""
     },
     {
       "Id": 1935832437,
@@ -46,7 +46,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_2221"
+      "Value": "Important Night Elf base in Southern Kalimdor, keeps a watchful eye over Ahn\u0027Qiraj. Can train Wisps and revive heroes."
     },
     {
       "Id": 1684960117,

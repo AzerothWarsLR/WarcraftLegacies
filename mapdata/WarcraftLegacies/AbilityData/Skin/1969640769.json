@@ -7,65 +7,73 @@
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_7047"
+      "Value": "W"
     },
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_7109"
+      "Value": "W"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_5326"
+      "Value": "Creates a shield of frost around a target friendly unit. The shield adds armor and slows melee units that attack it. |n|n|cffffcc00Level 1|r - Adds \u003CAUfu,DataB1\u003E armor. |n|cffffcc00Level 2|r - Adds \u003CAUfu,DataB2\u003E armor. |n|cffffcc00Level 3|r - Adds \u003CAUfu,DataB3\u003E armor.|n|cffffcc00Level 4|r - Adds \u003CAUfu,DataB4\u003E armor.|n|cffffcc00Level 5|r - Adds \u003CAUfu,DataB5\u003E armor.|n|cffffcc00Level 6|r - Adds \u003CAUfu,DataB6\u003E armor."
     },
     {
       "Level": 4,
+      "Pointer": 4,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_5327"
+      "Value": "Frost Armor - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 5,
+      "Pointer": 5,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_5328"
+      "Value": "Frost Armor - [|cffffcc00Level 5|r]"
     },
     {
       "Level": 6,
+      "Pointer": 6,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_5329"
+      "Value": "Frost Armor - [|cffffcc00Level 6|r]"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_5330"
+      "Value": "Creates a shield of frost around a target friendly unit. The shield adds \u003CAUfu,DataB2\u003E armor and slows melee units that attack it for \u003CAUfu,Dur2\u003E seconds. |nLasts \u003CAUfu,DataA2\u003E seconds."
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_5331"
+      "Value": "Creates a shield of frost around a target friendly unit. The shield adds \u003CAUfu,DataB3\u003E armor and slows melee units that attack it for \u003CAUfu,Dur3\u003E seconds. |nLasts \u003CAUfu,DataA3\u003E seconds."
     },
     {
       "Level": 4,
+      "Pointer": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_5332"
+      "Value": "Creates a shield of frost around a target friendly unit. The shield adds \u003CAUfu,DataB4\u003E armor and slows melee units that attack it for \u003CAUfu,Dur4\u003E seconds. |nLasts \u003CAUfu,DataA4\u003E seconds."
     },
     {
       "Level": 5,
+      "Pointer": 5,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_5333"
+      "Value": "Creates a shield of frost around a target friendly unit. The shield adds \u003CAUfu,DataB5\u003E armor and slows melee units that attack it for \u003CAUfu,Dur5\u003E seconds. |nLasts \u003CAUfu,DataA5\u003E seconds."
     },
     {
       "Level": 6,
+      "Pointer": 6,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_5334"
+      "Value": "Creates a shield of frost around a target friendly unit. The shield adds \u003CAUfu,DataB6\u003E armor and slows melee units that attack it for \u003CAUfu,Dur6\u003E seconds. |nLasts \u003CAUfu,DataA6\u003E seconds."
     }
   ]
 }

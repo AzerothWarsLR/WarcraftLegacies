@@ -13,12 +13,12 @@
     {
       "Id": 1885959270,
       "Type": 3,
-      "Value": "TRIGSTR_13146"
+      "Value": "Primal Aura"
     },
     {
       "Id": 1700951398,
       "Type": 3,
-      "Value": "TRIGSTR_13147"
+      "Value": "This unit is under the effects of Primal Aura; it has increased attack damage."
     },
     {
       "Id": 1952543846,

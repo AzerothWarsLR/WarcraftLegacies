@@ -8,17 +8,17 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_4270"
+      "Value": "Q"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 1.4
+      "Value": ""
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 4.25
+      "Value": ""
     },
     {
       "Id": 1935832437,
@@ -28,12 +28,12 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_16466"
+      "Value": "The deathly underworld of the Forsaken.|n|cff6480ff|cfff5962dTrains:|R Dreadguards"
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_20021"
+      "Value": "(Forsaken Other)"
     },
     {
       "Id": 1818520949,
@@ -48,12 +48,12 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_16468"
+      "Value": "Undercity"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_16469"
+      "Value": "Build Undercity"
     }
   ]
 }

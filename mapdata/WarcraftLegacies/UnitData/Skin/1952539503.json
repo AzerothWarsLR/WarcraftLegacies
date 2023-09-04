@@ -11,12 +11,12 @@
     },
     {
       "Id": 2020631157,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_408"
+      "Value": "(Frostwolf)"
     },
     {
       "Id": 1818520949,
@@ -25,12 +25,12 @@
     },
     {
       "Id": 1919252085,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_343"
+      "Value": "W"
     },
     {
       "Id": 1831952757,
@@ -40,27 +40,27 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.8
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_492"
+      "Value": "Catapult"
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_493"
+      "Value": "Train Catapult"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_494"
+      "Value": "Barbaric boulder tossing siege weaponry.|n|n|cff99b4d1Can only build 6. |r|n|cffffcc00Attacks land units and trees.|r"
     }
   ]
 }

@@ -13,7 +13,7 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_9557"
+      "Value": "(Brown - Cenarius)"
     },
     {
       "Id": 1952540001,
@@ -23,12 +23,12 @@
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_10210"
+      "Value": "Q"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_9559"
+      "Value": "Nature\u0027s Fury"
     },
     {
       "Id": 1918988897,
@@ -38,65 +38,73 @@
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_10217"
+      "Value": "Q"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_15604"
+      "Value": "Learn Nature\u0027s Fury - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_9562"
+      "Value": "Blasts enemy units with a wave of Druidic Energy that deals damage in an area of effect around the target. |n|n|cffffcc00Level 1|r - 100 target damage, 50 nova damage. |n|cffffcc00Level 2|r - 150 target damage, 100 nova damage. |n|cffffcc00Level 3|r - 200 target damage, 150 nova damage. |n|cffffcc00Level 4|r - 250 target damage, 200 nova damage."
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_2327"
+      "Value": "Nature\u0027s Fury - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_8803"
+      "Value": "Nature\u0027s Fury - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_15605"
+      "Value": "Nature\u0027s Fury - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
+      "Pointer": 4,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_15606"
+      "Value": "Nature\u0027s Fury - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_9567"
+      "Value": "Blasts enemy units with a wave of Druidic Energy that deals 100 damage to the target, and 50 splash damage."
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_9568"
+      "Value": "Blasts enemy units with a wave of Druidic Energy that deals 150 damage to the target, and 100 splash damage."
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_9569"
+      "Value": "Blasts enemy units with a wave of Druidic Energy that deals 200 damage to the target, and 150 splash damage."
     },
     {
       "Level": 4,
+      "Pointer": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_9570"
+      "Value": "Blasts enemy units with a wave of Druidic Energy that deals 250 damage to the target, and 200 splash damage."
     }
   ]
 }

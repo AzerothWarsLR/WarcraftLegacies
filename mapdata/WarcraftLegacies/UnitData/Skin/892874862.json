@@ -7,7 +7,7 @@
   "Modifications": [
     {
       "Id": 1651270517,
-      "Value": 250
+      "Value": ""
     },
     {
       "Id": 1819501173,
@@ -16,48 +16,48 @@
     },
     {
       "Id": 2037408373,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19693"
+      "Value": "(Sentinel Other)"
     },
     {
       "Id": 1735156597,
-      "Value": 120
+      "Value": ""
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_1456"
+      "Value": "Z"
     },
     {
       "Id": 1768320117,
-      "Value": 512
+      "Value": ""
     },
     {
       "Id": 1868983413,
-      "Value": 512
+      "Value": ""
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 1.1
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_2021"
+      "Value": "The Athenaeum"
     },
     {
       "Id": 1919705973,
-      "Value": 200
+      "Value": ""
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 3
+      "Value": ""
     },
     {
       "Id": 1634759541,
@@ -67,7 +67,7 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_2022"
+      "Value": "|cffffcc00(Z)|r - Upgrade to Sentinel Enclave"
     },
     {
       "Id": 1935832437,
@@ -77,7 +77,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_2023"
+      "Value": "Primary structure, used to train Wisps."
     }
   ]
 }

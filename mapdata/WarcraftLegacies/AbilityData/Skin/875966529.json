@@ -8,18 +8,19 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_11626"
+      "Value": "(Yellow - Thane, Grey- Ogre Lord)"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_11627"
+      "Value": "Heavy Bash"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_11628"
+      "Value": "Gives a 20% chance that an attack will do 50 bonus damage and stun an opponent for 2 seconds. (1 for heroes)"
     }
   ]
 }

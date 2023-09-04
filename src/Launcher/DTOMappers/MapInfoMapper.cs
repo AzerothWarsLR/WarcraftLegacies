@@ -110,7 +110,7 @@ namespace Launcher.DTOMappers
       {
         Flags = forceData.Flags,
         Players = forceData.Players,
-        Name = _triggerStrings[TriggerStringDictionary.ParseTriggerStringAsKey(forceData.Name)]
+        Name = _triggerStrings[forceData.Name]
       };
       return dto;
     }

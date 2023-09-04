@@ -7,36 +7,36 @@
   "Modifications": [
     {
       "Id": 1651270517,
-      "Value": 200
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_2452"
+      "Value": "(Legion-Archimond-Level 1)"
     },
     {
       "Id": 1735156597,
-      "Value": 220
+      "Value": ""
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_1308"
+      "Value": "A"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.85
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_2454"
+      "Value": "Abyssal"
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 2.25
+      "Value": ""
     }
   ]
 }

@@ -17,32 +17,32 @@
     },
     {
       "Id": 2020631137,
-      "Value": 3
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_7462"
+      "Value": "(Dark Green COnjurer)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_7788"
+      "Value": "R"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_7464"
+      "Value": "Summon Reef Elementals"
     },
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_8538"
+      "Value": "Q"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_6779"
+      "Value": "Learn Summon Misha (|cffffcc00Q|r) - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1952543585,
@@ -51,15 +51,17 @@
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_7467"
+      "Value": "Summon Reef Elementals"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_7468"
+      "Value": "Summons 2 Reef Elementals that have the Crushing Wave Ability. Lasts 90 seconds."
     }
   ]
 }

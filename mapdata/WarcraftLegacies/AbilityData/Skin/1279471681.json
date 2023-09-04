@@ -7,23 +7,24 @@
   "Modifications": [
     {
       "Id": 2020631137,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_10258"
+      "Value": "(Ironforge - Gryphon Rider)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_11177"
+      "Value": "W"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_255"
+      "Value": "Hurls a bolt of lightning that bounces up to 5 times, dealing 75 damage to the primary target. Each jump deals 5% less damage."
     }
   ]
 }

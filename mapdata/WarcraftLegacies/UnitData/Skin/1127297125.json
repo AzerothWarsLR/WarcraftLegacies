@@ -23,7 +23,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_3583"
+      "Value": "(Druid Sentinel form)"
     },
     {
       "Id": 1818520949,
@@ -33,12 +33,12 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_4809"
+      "Value": "W"
     },
     {
       "Id": 2054188149,
       "Type": 2,
-      "Value": 150
+      "Value": ""
     },
     {
       "Id": 1831952757,
@@ -48,22 +48,22 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_8444"
+      "Value": "Arcane Annihilator"
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 1.9
+      "Value": ""
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_8445"
+      "Value": "Train [|cffffcc00W|r] - Druid of the Claw"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_10821"
+      "Value": "Heavy melee unit with Roar, Animal Fury and Mighty Bash. Can learn Ferocious Strikes."
     },
     {
       "Id": 1684960117,
@@ -73,7 +73,7 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 1.2
+      "Value": ""
     }
   ]
 }

@@ -12,16 +12,16 @@
     {
       "Id": 1953980789,
       "Type": 3,
-      "Value": "TRIGSTR_15458"
+      "Value": "Revive Vol\u0027jin"
     },
     {
       "Id": 2020631157,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_420"
+      "Value": "(Frostwolf)"
     },
     {
       "Id": 1818520949,
@@ -36,32 +36,32 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_1222"
+      "Value": "Chieftain of the Darkspear Tribe"
     },
     {
       "Id": 1869770869,
       "Type": 3,
-      "Value": "TRIGSTR_162"
+      "Value": "Vol\u0027jin"
     },
     {
       "Id": 1919972469,
       "Type": 3,
-      "Value": "TRIGSTR_15463"
+      "Value": "Revive Vol\u0027jin"
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 1.3
+      "Value": ""
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_16916"
+      "Value": "Summon Vol\u0027jin"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_17318"
+      "Value": "Mystical Hero, exceptional at healing and protecting allies.|n|cfff5962dCan learn:|R Voodoo Restoration, Serpent Ward, Brilliance Aura, Big Bad Voodoo|n|n|cffffcc00Attacks land and air units.|R"
     },
     {
       "Id": 1684960117,
@@ -71,11 +71,11 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_1014"
+      "Value": "W"
     },
     {
       "Id": 2037408373,
-      "Value": 0
+      "Value": ""
     }
   ]
 }

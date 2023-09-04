@@ -13,7 +13,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_3365"
+      "Value": "(Dead)"
     },
     {
       "Id": 1818520949,
@@ -23,12 +23,12 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_3304"
+      "Value": "Horizontal Wooden Gate"
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 1.5
+      "Value": ""
     },
     {
       "Id": 1885959285,
@@ -53,12 +53,12 @@
     {
       "Id": 1886940533,
       "Type": 1,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1920494965,
       "Type": 1,
-      "Value": 0
+      "Value": ""
     }
   ]
 }

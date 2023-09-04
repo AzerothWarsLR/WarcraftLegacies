@@ -13,7 +13,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19754"
+      "Value": " (Quel\u0027thalas Tower)"
     },
     {
       "Id": 1818520949,
@@ -23,17 +23,17 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_2020"
+      "Value": "Z"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.7
+      "Value": ""
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1935832437,
@@ -43,7 +43,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_7800"
+      "Value": "Observation tower.|n|r|cfff5962dCan learn:|R Magic Sentry|n|r|cfff5962dUpgrades into:|R Sun Tower, Arcane Tower"
     }
   ]
 }

@@ -7,22 +7,22 @@
   "Modifications": [
     {
       "Id": 2020631137,
-      "Value": 3
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_9512"
+      "Value": "(Green - Anasterian)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_9513"
+      "Value": "R"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_9514"
+      "Value": "Arcane Blast"
     },
     {
       "Id": 1918988897,
@@ -31,58 +31,64 @@
     },
     {
       "Id": 2020635233,
-      "Value": 3
+      "Value": ""
     },
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_9515"
+      "Value": "R"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_9516"
+      "Value": "Learn Arcane Blast - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_9517"
+      "Value": "Anasterian drains all of the mana from the enemy unit and adds it to his own mana pool; the blast also damages the unit.|n|n|cffffcc00Level 1|r - 400 damage|n|cffffcc00Level 2|r - 700 damage|n|cffffcc00Level 3|r - 1000 damage"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_9518"
+      "Value": "Steal Mana - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_9519"
+      "Value": "Steal Mana - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_9520"
+      "Value": "Steal Mana - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_9521"
+      "Value": "Anasterian drains all the mana from a enemy unit and adds it to his own damaging the unit for 400 in the process."
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_9522"
+      "Value": "Anasterian drains all the mana from a enemy unit and adds it to his own damaging the unit for 700 in the process."
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_9523"
+      "Value": "Anasterian drains all the mana from a enemy unit and adds it to his own damaging the unit for 1000 in the process."
     }
   ]
 }

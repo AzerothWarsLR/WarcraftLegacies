@@ -6,32 +6,32 @@
   "Modifications": [
     {
       "Id": 2020631157,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1936024681,
       "Type": 3,
-      "Value": "TRIGSTR_4168"
+      "Value": "Summons a Granite Golem."
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_7033"
+      "Value": "E"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_4170"
+      "Value": "Granite Token"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_14487"
+      "Value": "Purchase Granite Token"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_4172"
+      "Value": "Summons a Granite Golem to fight for you. Has True Sight and Hurl Boulder. |nLasts \u003CAIfr,Dur1\u003E seconds."
     }
   ]
 }

@@ -7,32 +7,32 @@
   "Modifications": [
     {
       "Id": 2020631157,
-      "Value": 3
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_18621"
+      "Value": " (Ragnaros)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_3909"
+      "Value": "R"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_373"
+      "Value": "Lord of the Firelands"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_514"
+      "Value": "Supremely deadly Warrior Hero, Excels at killing enemy Heroes. |n|cfff5962dCan learn:|R Elemental Fire, Magma Blast, Wrath of Ragnaros, Herald of Destruction|n|n|cffffcc00Attacks land units."
     },
     {
       "Id": 1869770869,
       "Type": 3,
-      "Value": "TRIGSTR_18571"
+      "Value": "Ragnaros"
     },
     {
       "Id": 1818520949,
@@ -52,32 +52,32 @@
     {
       "Id": 1953980789,
       "Type": 3,
-      "Value": "TRIGSTR_18572"
+      "Value": "Revive Ragnaros"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_3574"
+      "Value": "Summon Ragnaros"
     },
     {
       "Id": 1919972469,
       "Type": 3,
-      "Value": "TRIGSTR_18574"
+      "Value": "Revive Ragnaros"
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 3
+      "Value": ""
     },
     {
       "Id": 2054188149,
       "Type": 2,
-      "Value": 250
+      "Value": ""
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 2.5
+      "Value": ""
     },
     {
       "Id": 1831952757,

@@ -7,54 +7,54 @@
   "Modifications": [
     {
       "Id": 1651270517,
-      "Value": 150
+      "Value": ""
     },
     {
       "Id": 1667462261,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_1389"
+      "Value": "(C\u0027thun Building)"
     },
     {
       "Id": 1953523061,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1685218677,
       "Type": 1,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1735156597,
-      "Value": 221
+      "Value": ""
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_1145"
+      "Value": "E"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.6
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_1391"
+      "Value": "Spirit Hall"
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 3
+      "Value": ""
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_867"
+      "Value": "Summon - Spirit Hall"
     },
     {
       "Id": 1935832437,
@@ -64,7 +64,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_868"
+      "Value": "Provides attack, armor and infusion upgrades for Old God units."
     },
     {
       "Id": 1818520949,
@@ -73,7 +73,7 @@
     },
     {
       "Id": 2020631157,
-      "Value": 2
+      "Value": ""
     }
   ]
 }

@@ -7,59 +7,64 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_4926"
+      "Value": "(Scourge-Necromancer)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_7262"
+      "Value": "D"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_223"
+      "Value": "Raise Dead - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_4930"
+      "Value": "Raises \u003CArai,DataA1\u003E skeleton from a corpse for \u003CArai,Dur1\u003E seconds."
     },
     {
       "Id": 1802007905,
       "Type": 3,
-      "Value": "TRIGSTR_7266"
+      "Value": "D"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_225"
+      "Value": "Raises 1 skeleton and 1 mage from a corpse for \u003CArai,Dur1\u003E seconds."
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 829715809,
       "Type": 3,
-      "Value": "TRIGSTR_226"
+      "Value": "|cffc3dbffRight-click to activate auto-casting."
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 829781345,
       "Type": 3,
-      "Value": "TRIGSTR_227"
+      "Value": "|cffc3dbffRight-click to deactivate auto-casting."
     },
     {
       "Id": 2020631137,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 2037408353,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 2036495713,
-      "Value": 0
+      "Value": ""
     }
   ]
 }

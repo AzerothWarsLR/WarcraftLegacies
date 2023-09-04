@@ -7,49 +7,49 @@
   "Modifications": [
     {
       "Id": 1651270517,
-      "Value": 190
+      "Value": ""
     },
     {
       "Id": 2020631157,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 2037408373,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_2026"
+      "Value": "(Fel Horde-Legion-Juggernaut)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_1364"
+      "Value": "D"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.8
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_2028"
+      "Value": "Skyfallen Infernal"
     },
     {
       "Id": 1919705973,
-      "Value": 160
+      "Value": ""
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_2029"
+      "Value": "Summon Skyfallen Infernal"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_2030"
+      "Value": "Demonic demon ingulfed in flames.|n|cfff5962dAbilities:|R Permanent Immoliation, Resistant Skin|n|r|n|cffffcc00Attacks land units.|r"
     }
   ]
 }

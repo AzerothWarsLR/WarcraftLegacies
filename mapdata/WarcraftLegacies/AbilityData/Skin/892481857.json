@@ -8,13 +8,14 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_20508"
+      "Value": "(Nathrezim)"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_20523"
+      "Value": "Takes control of a target enemy unit. |nCharm cannot be used on Heroes, or units above level 6."
     }
   ]
 }

@@ -17,60 +17,60 @@
     {
       "Id": 1853186933,
       "Type": 3,
-      "Value": "TRIGSTR_12087"
+      "Value": "Initiate,Adept,Master,Grandmaster"
     },
     {
       "Id": 1953850229,
       "Type": 3,
-      "Value": "TRIGSTR_703"
+      "Value": "- Purge,- Purge|n- Summon Water Elemental,- Purge|n- Summon Water Elemental|n- Frost Cell,- Purge|n- Summon Water Elemental|n- Frost Celll|n- Freezing Shots"
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_704"
+      "Value": "(Dalaran)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_435"
+      "Value": "Q"
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_706"
+      "Value": "Adept mage of the frost arcanum.|n|cfff5962dAbilities:|R Purge|n|cfff5962dCan Learn:|R Summon Water Elemental, Frost Cell, Freezing Shots|n|n|cffffcc00Attacks land and air units.|R\r\n"
     },
     {
       "Id": 1751675765,
       "Type": 1,
-      "Value": 100
+      "Value": ""
     },
     {
       "Id": 2003334005,
       "Type": 1,
-      "Value": 100
+      "Value": ""
     },
     {
       "Id": 2036888437,
       "Type": 1,
-      "Value": 45
+      "Value": ""
     },
     {
       "Id": 2020111221,
       "Type": 1,
-      "Value": 45
+      "Value": ""
     },
     {
       "Id": 1735156597,
-      "Value": 180
+      "Value": ""
     },
     {
       "Id": 1919705973,
-      "Value": 180
+      "Value": ""
     }
   ]
 }

@@ -6,32 +6,33 @@
   "Modifications": [
     {
       "Id": 2020631137,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_6347"
+      "Value": "(Siren)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_8567"
+      "Value": "E"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_6349"
+      "Value": "Creates a shield of frost around a target friendly unit. The shield adds \u003CACfu,DataB1\u003E armor and slows melee units that attack it for 5 seconds. |nLasts \u003CACfu,DataA1\u003E seconds."
     },
     {
       "Id": 2019718497,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1802007905,
       "Type": 3,
-      "Value": "TRIGSTR_8579"
+      "Value": "E"
     }
   ]
 }

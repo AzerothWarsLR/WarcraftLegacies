@@ -12,17 +12,17 @@
     },
     {
       "Id": 2020631137,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_3391"
+      "Value": "(C\u0027thun Guardian)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_8429"
+      "Value": "Q"
     },
     {
       "Id": 1952542049,
@@ -32,19 +32,21 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_7039"
+      "Value": "Void Tide"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_7040"
+      "Value": "Void Tide (|cffffcc00Q|r)"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_7041"
+      "Value": "Sends a gigantic wave which deals 150 damage to each enemy land unit in a line, up to 500 max damage."
     }
   ]
 }

@@ -7,12 +7,12 @@
   "Modifications": [
     {
       "Id": 1651270517,
-      "Value": 245
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_1343"
+      "Value": "(Creep)"
     },
     {
       "Id": 1818520949,
@@ -21,12 +21,12 @@
     },
     {
       "Id": 1735156597,
-      "Value": 235
+      "Value": ""
     },
     {
       "Id": 828468597,
       "Type": 2,
-      "Value": 0.15
+      "Value": ""
     },
     {
       "Id": 1831952757,
@@ -36,21 +36,21 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.84
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_2931"
+      "Value": "Ethel Rethor"
     },
     {
       "Id": 1919705973,
-      "Value": 211
+      "Value": ""
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1935832437,

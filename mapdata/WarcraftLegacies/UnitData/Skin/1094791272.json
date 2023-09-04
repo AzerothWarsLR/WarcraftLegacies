@@ -23,16 +23,16 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_18594"
+      "Value": " (Ragnaros)"
     },
     {
       "Id": 1919252085,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 845245813,
       "Type": 2,
-      "Value": 0.15
+      "Value": ""
     },
     {
       "Id": 1832018293,
@@ -42,17 +42,17 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_18645"
+      "Value": "Magma Tank"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_18646"
+      "Value": "Build Magma Tank"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_3959"
+      "Value": "Extremely heavily armored vehicle.|n|cfff5962dAbilities:|R Flamethrower, Lockdown, Barrage|n|cfff5962dCan Learn:|R Overclock|n|n|cff00ffffCan transport 4 units.|n|cff99b4d1Can only build 3.|r|n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Id": 1818520949,
@@ -62,7 +62,7 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 1.15
+      "Value": ""
     },
     {
       "Id": 1831952757,
@@ -72,16 +72,16 @@
     {
       "Id": 828468597,
       "Type": 2,
-      "Value": 0.45
+      "Value": ""
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_5263"
+      "Value": "W"
     },
     {
       "Id": 2020631157,
-      "Value": 1
+      "Value": ""
     }
   ]
 }

@@ -8,12 +8,12 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_12368"
+      "Value": "(Tolvir T3)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_13800"
+      "Value": "C"
     },
     {
       "Id": 1935832437,
@@ -23,7 +23,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_10667"
+      "Value": "Primary structure, used to train Mur\u0027gul Slaves, Royal Guards and receive gathered resources. Also contains the Submerge upgrade."
     },
     {
       "Id": 1768841589,
@@ -42,21 +42,21 @@
     },
     {
       "Id": 2020631157,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 2037408373,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_15346"
+      "Value": "Upgrade to Temple of Tides"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 1.2
+      "Value": ""
     }
   ]
 }

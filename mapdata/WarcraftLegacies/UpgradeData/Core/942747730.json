@@ -51,6 +51,7 @@
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1902473831,
       "Type": 3,
       "Value": "R04R"
@@ -66,7 +67,7 @@
     {
       "Id": 828794215,
       "Type": 3,
-      "Value": "TRIGSTR_14533"
+      "Value": "TRIGSTR_3609"
     },
     {
       "Id": 829386087,

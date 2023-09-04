@@ -6,27 +6,27 @@
   "Modifications": [
     {
       "Id": 2020631157,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_956"
+      "Value": "(Quel\u0027Thalas)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_883"
+      "Value": "Q"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.85
+      "Value": ""
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_980"
+      "Value": "Desciple of the Light\u0027s protection.  |n|cfff5962dAbilities:|r Heal|n|cfff5962dCan Learn:|R Dispel Magic, Inner Fire|n|n|cffffcc00Attacks land and air units."
     }
   ]
 }

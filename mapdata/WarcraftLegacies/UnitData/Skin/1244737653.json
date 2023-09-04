@@ -7,17 +7,17 @@
   "Modifications": [
     {
       "Id": 2020631157,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_3866"
+      "Value": "E"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.85
+      "Value": ""
     },
     {
       "Id": 1935832437,
@@ -27,12 +27,12 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_14523"
+      "Value": "Resource collection and infuser of combat enhancements.|n|cfff5962dAbilities:|R Spawn Corpses |n|cfff5962dResearches:|R Forged Weaponry, Armor Plating, Chaos Infusion, Improved Cannons, Fortified Hulls"
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_20016"
+      "Value": "(Forsaken Research)"
     },
     {
       "Id": 1818520949,

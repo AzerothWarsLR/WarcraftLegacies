@@ -7,63 +7,69 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_1973"
+      "Value": "(Red - Anub\u0027Arak)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_5577"
+      "Value": "R"
     },
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_5601"
+      "Value": "R"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_5295"
+      "Value": "Learn Locust Swarm - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_2442"
+      "Value": "Creates a swarm of angry locusts that bite and tear at nearby enemy units. As they chew the enemy flesh, they convert it into a substance that restores hit points to the hero when they return.|n|n|cffffcc00Level 1|r - 20 locusts. 20 damage return.|n|cffffcc00Level 2|r - 30 locusts. 30 damage return.|n|cffffcc00Level 3|r - 40 locusts. 40 damage return.|n|cffcece00|nAoE: 800.|nLasts 30 seconds.|n150 second cooldown.|r"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_5297"
+      "Value": "Locust Swarm - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_5298"
+      "Value": "Locust Swarm - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_5299"
+      "Value": "Locust Swarm - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_15860"
+      "Value": "Creates a swarm of angry locusts that bite and tear at nearby enemy units. As they chew the enemy flesh, they convert it into a substance that restores hit points to the hero when they return.|n|nSpawns 20 locusts. 20 damage return.|n|n|cffcece00|nAoE: 800.|nLasts 30 seconds.|n150 second cooldown.|r"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_15895"
+      "Value": "Creates a swarm of angry locusts that bite and tear at nearby enemy units. As they chew the enemy flesh, they convert it into a substance that restores hit points to the hero when they return.|n|nSpawns 30 locusts. 30 damage return.|n|n|cffcece00|nAoE: 800.|nLasts 30 seconds.|n150 second cooldown.|r"
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_15935"
+      "Value": "Creates a swarm of angry locusts that bite and tear at nearby enemy units. As they chew the enemy flesh, they convert it into a substance that restores hit points to thehero when they return.|n|nSpawns 40 locusts. 40 damage return.|n|cffcece00|nAoE: 800.|nLasts 30 seconds.|n150 second cooldown.|r"
     }
   ]
 }

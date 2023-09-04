@@ -12,22 +12,22 @@
     },
     {
       "Id": 2020631137,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_20841"
+      "Value": "(sunfury)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_12983"
+      "Value": "W"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_12341"
+      "Value": "Call Treants"
     },
     {
       "Id": 1918988897,
@@ -36,34 +36,36 @@
     },
     {
       "Id": 2020635233,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_13016"
+      "Value": "W"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_12343"
+      "Value": "Learn Call Treant - [|cffffcc00Level %d|r]."
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_12344"
+      "Value": "Summons Treants to battle Malfurion\u0027s enemies. |nLasts \u003CAOsf,Dur1\u003E seconds. |n|n|cffffcc00Level 1|r - 3 Treants.|n|cffffcc00Level 2|r - 4 Treants.|n|cffffcc00Level 3|r - 5 Treants.|n|cffffcc00Level 4|r - 6 Poison Treants."
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_12345"
+      "Value": "Call Treants"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_12346"
+      "Value": "Summons Treants to aid the Ancient in battle |n|n|cffffcc00Attacks land units.|r"
     }
   ]
 }

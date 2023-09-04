@@ -12,12 +12,12 @@
     },
     {
       "Id": 2020631157,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_15292"
+      "Value": "(Stormwind - Elite)"
     },
     {
       "Id": 1818520949,
@@ -27,27 +27,27 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_2437"
+      "Value": "W"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.95
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_2940"
+      "Value": "Stormwind Champion"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_2941"
+      "Value": "Train Stormwind Champion"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_17692"
+      "Value": "Elite melee champion of the Stormwind Army.|n|cfff5962dAbilities:|R Charge, Safeguard, Cleaving Attack, Resistant Skin, Heavy Armor, Combat Experience, Staggering Shout |n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land units.|r"
     }
   ]
 }

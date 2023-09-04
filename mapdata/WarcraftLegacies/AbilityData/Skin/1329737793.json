@@ -17,12 +17,12 @@
     },
     {
       "Id": 2020631137,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_9903"
+      "Value": "(Brown - Broll)"
     },
     {
       "Id": 1936090465,
@@ -32,12 +32,12 @@
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_11360"
+      "Value": "Q"
     },
     {
       "Id": 1667329377,
       "Type": 2,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1952542049,
@@ -47,7 +47,7 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_10485"
+      "Value": "Mangle"
     },
     {
       "Id": 1918988897,
@@ -56,12 +56,12 @@
     },
     {
       "Id": 2020635233,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_11381"
+      "Value": "Q"
     },
     {
       "Id": 1952805473,
@@ -75,15 +75,17 @@
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_10487"
+      "Value": "Mangle (|cffffcc00Q|r)"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_10488"
+      "Value": "Mangles a target dealing 50 damage and an additional 150 damage over time, reducing the target\u0027s movement speed by 20%. Deals 90 damage over time to heroes"
     }
   ]
 }

@@ -7,16 +7,16 @@
     {
       "Id": 1869770869,
       "Type": 3,
-      "Value": "TRIGSTR_6081"
+      "Value": "Tess Greymane"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_15756"
+      "Value": "Princess of Gilneas"
     },
     {
       "Id": 1970434165,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1818520949,
@@ -26,42 +26,42 @@
     {
       "Id": 2020111221,
       "Type": 1,
-      "Value": 60
+      "Value": ""
     },
     {
       "Id": 2036888437,
       "Type": 1,
-      "Value": 60
+      "Value": ""
     },
     {
       "Id": 2003334005,
       "Type": 1,
-      "Value": 120
+      "Value": ""
     },
     {
       "Id": 1751675765,
       "Type": 1,
-      "Value": 120
+      "Value": ""
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 1.4
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_7560"
+      "Value": "(gilneas)"
     },
     {
       "Id": 1953980789,
       "Type": 3,
-      "Value": "TRIGSTR_3146"
+      "Value": "Revive Tess"
     },
     {
       "Id": 1919972469,
       "Type": 3,
-      "Value": "TRIGSTR_4886"
+      "Value": "Revive Tess"
     },
     {
       "Id": 1769173877,
@@ -76,26 +76,26 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.8
+      "Value": ""
     },
     {
       "Id": 2037408373,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_1569"
+      "Value": "Q"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_11418"
+      "Value": "Summon Tess"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_11507"
+      "Value": "Cunning Hero, adept at engaging and disengaging enemies.|n|cfff5962dAbilities:|r Wind Walk |n|cfff5962dCan learn:|R Mirror Image, Words of Protection, Shadow Strike, Greater Fan of Knives|n|n|cffffcc00Attacks land units.|R"
     }
   ]
 }

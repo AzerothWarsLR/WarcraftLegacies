@@ -17,6 +17,7 @@
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1969518440,
       "Type": 3,
       "Value": "o06O"
@@ -28,6 +29,7 @@
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1852072801,
       "Type": 2,
       "Value": 20

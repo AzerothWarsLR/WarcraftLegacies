@@ -7,12 +7,12 @@
   "Modifications": [
     {
       "Id": 2020631157,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_4303"
+      "Value": "C"
     },
     {
       "Id": 1831952757,
@@ -22,12 +22,12 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.85
+      "Value": ""
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 4.3
+      "Value": ""
     },
     {
       "Id": 1935832437,
@@ -37,12 +37,12 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_2545"
+      "Value": "Medium fort for the Forsaken. |n|cfff5962dUpgrades to:|R Haunted Castle"
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19998"
+      "Value": "(Forsaken T2)"
     },
     {
       "Id": 1818520949,
@@ -57,12 +57,12 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_4692"
+      "Value": "Grim Estate"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_7131"
+      "Value": "Upgrade to Grim Estate"
     }
   ]
 }

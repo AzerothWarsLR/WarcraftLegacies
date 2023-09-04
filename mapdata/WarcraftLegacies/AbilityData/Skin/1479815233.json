@@ -7,38 +7,40 @@
   "Modifications": [
     {
       "Id": 2020631137,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_11878"
+      "Value": "(Towers) "
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_12149"
+      "Value": "Q"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_11834"
+      "Value": "Activate Mana Shield"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_5691"
+      "Value": "Activates a shield that absorbs 2 damage per point of mana."
     },
     {
       "Id": 2019718497,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1802007905,
       "Type": 3,
-      "Value": "TRIGSTR_12151"
+      "Value": "Q"
     }
   ]
 }

@@ -7,43 +7,49 @@
   "Modifications": [
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829579623,
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNInfernalShower.blp"
     },
     {
       "Id": 2020631143,
-      "Value": 2
+      "Value": ""
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1718840935,
       "Type": 3,
-      "Value": "TRIGSTR_5144"
+      "Value": "(Druids)"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_16112"
+      "Value": "C"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "TRIGSTR_14638"
+      "Value": "Emerald Flames"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_14639"
+      "Value": "Research Emerald Flames"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "TRIGSTR_14640"
+      "Value": "Causes Green Dragon attacks to light the ground on fire."
     }
   ]
 }

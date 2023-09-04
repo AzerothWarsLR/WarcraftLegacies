@@ -7,15 +7,15 @@
   "Modifications": [
     {
       "Id": 1650685538,
-      "Value": 80
+      "Value": ""
     },
     {
       "Id": 1734571618,
-      "Value": 80
+      "Value": ""
     },
     {
       "Id": 1919120994,
-      "Value": 80
+      "Value": ""
     },
     {
       "Id": 1818846818,
@@ -25,17 +25,17 @@
     {
       "Id": 1935764834,
       "Type": 2,
-      "Value": 10
+      "Value": ""
     },
     {
       "Id": 1936289122,
       "Type": 2,
-      "Value": 0.01
+      "Value": ""
     },
     {
       "Id": 1835101794,
       "Type": 3,
-      "Value": "TRIGSTR_4400"
+      "Value": "Gilneas Bridge"
     },
     {
       "Id": 2020896866,
@@ -50,7 +50,7 @@
     {
       "Id": 1920493154,
       "Type": 2,
-      "Value": -1
+      "Value": ""
     }
   ]
 }

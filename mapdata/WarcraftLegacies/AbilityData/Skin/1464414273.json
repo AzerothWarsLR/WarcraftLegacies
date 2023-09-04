@@ -8,18 +8,19 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_20167"
+      "Value": "(Stormwind Conjurer)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_9955"
+      "Value": "Q"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_13003"
+      "Value": "Calls down a storm of lightning to strike enemy units for 30 damage in a small target area. |nLasts 15 seconds."
     }
   ]
 }

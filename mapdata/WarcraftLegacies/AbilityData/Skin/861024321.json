@@ -7,7 +7,7 @@
   "Modifications": [
     {
       "Id": 2020631137,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1952539489,
@@ -17,12 +17,12 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_17777"
+      "Value": "(Draenei)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_9659"
+      "Value": "W"
     },
     {
       "Id": 1952543841,
@@ -31,9 +31,10 @@
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_10402"
+      "Value": "Brings back to life the corpse of 5 friendly nearby unit."
     }
   ]
 }

@@ -12,16 +12,16 @@
     },
     {
       "Id": 1651270517,
-      "Value": 150
+      "Value": ""
     },
     {
       "Id": 2020631157,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_3523"
+      "Value": "(Scourge-Elite)"
     },
     {
       "Id": 1818520949,
@@ -30,25 +30,25 @@
     },
     {
       "Id": 1735156597,
-      "Value": 150
+      "Value": ""
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_2920"
+      "Value": "W"
     },
     {
       "Id": 1768320117,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1868983413,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.85
+      "Value": ""
     },
     {
       "Id": 1819503989,
@@ -58,21 +58,21 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_3525"
+      "Value": "Death Knight"
     },
     {
       "Id": 1919705973,
-      "Value": 150
+      "Value": ""
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_3526"
+      "Value": "Train Death Knight"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_050"
+      "Value": "The loyal knights of Ner\u0027zhul.|n|cfff5962dAbilities:|R Death Coil, Black Strike, Unholy Plating, Death Pact, Resistant Skin|n|cfff5962dCan Learn:|R Chilling Aura|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land units.|r"
     },
     {
       "Id": 1684960117,

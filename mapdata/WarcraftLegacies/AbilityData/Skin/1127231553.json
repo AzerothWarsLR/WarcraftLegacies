@@ -13,7 +13,7 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_17144"
+      "Value": "(Gallywix)"
     },
     {
       "Id": 1952540001,
@@ -23,12 +23,12 @@
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_14106"
+      "Value": "Q"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_12940"
+      "Value": "Call for Reinforcements"
     },
     {
       "Id": 1918988897,
@@ -38,65 +38,73 @@
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_14114"
+      "Value": "Q"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_12942"
+      "Value": "Learn Call for Reinforcements - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_17352"
+      "Value": "Jastor calls for reinforcements in his time of need These reinforcements are permanent. |n|n|cffffcc00Level 1|r - 4 Gunmen. |n|cffffcc00Level 2|r - 6 units. |n|cffffcc00Level 3|r - 6 units, Ogre Mercenary can be summoned. |n|cffffcc00Level 4|r - 8 units."
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_12944"
+      "Value": "Call for Reinforcements - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_12945"
+      "Value": "Call for Reinforcements - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_12946"
+      "Value": "Call for Reinforcements - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
+      "Pointer": 4,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_12947"
+      "Value": "Call for Reinforcements - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_17353"
+      "Value": "Gallywix calls for reinforcements in his time of need These reinforcements are permanent."
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_17686"
+      "Value": "Gallywix calls for reinforcements in his time of need These reinforcements are permanent."
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_17687"
+      "Value": "Gallywix calls for reinforcements in his time of need These reinforcements are permanent."
     },
     {
       "Level": 4,
+      "Pointer": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_17688"
+      "Value": "Gallywix calls for reinforcements in his time of need These reinforcements are permanent."
     }
   ]
 }

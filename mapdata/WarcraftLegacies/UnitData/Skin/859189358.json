@@ -18,17 +18,17 @@
     {
       "Id": 1853186933,
       "Type": 3,
-      "Value": "TRIGSTR_2252"
+      "Value": "Initiate,Adept,Master"
     },
     {
       "Id": 1953850229,
       "Type": 3,
-      "Value": "TRIGSTR_2253"
+      "Value": "- Mana Burn,- Mana Burn|n- Siphon Mana,- Mana Burn|n- Siphon Mana|n- Healing Wave"
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_1447"
+      "Value": "(Quel\u0027Thalas)"
     },
     {
       "Id": 1818520949,
@@ -38,7 +38,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_2098"
+      "Value": "Q"
     },
     {
       "Id": 1831952757,
@@ -48,27 +48,27 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.8
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_2256"
+      "Value": "Magus"
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 1.1
+      "Value": ""
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_2257"
+      "Value": "Train Magus"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_2258"
+      "Value": "A member of the Silvermoon ruling elite, skilled in the use of the arcane arts.|n|cfff5962dAbilities:|R Mana Burn|n|cfff5962dCan Learn:|R Siphon Mana, Healing Wave|n|n|cff99b4d1Can only train 12.|r|n|cffffcc00Attacks land and air units.|R"
     },
     {
       "Id": 1684960117,

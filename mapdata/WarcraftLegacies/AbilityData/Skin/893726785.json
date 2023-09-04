@@ -7,18 +7,19 @@
   "Modifications": [
     {
       "Id": 2020631137,
-      "Value": 3
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_9872"
+      "Value": "(Arcane Orb Item - Orange Shop)"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_9873"
+      "Value": "Attacks destroy 25 mana per hit."
     }
   ]
 }

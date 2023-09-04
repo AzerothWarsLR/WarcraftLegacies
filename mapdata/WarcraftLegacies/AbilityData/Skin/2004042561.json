@@ -6,26 +6,26 @@
   "Modifications": [
     {
       "Id": 2020631137,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_6266"
+      "Value": "(C\u0027thun Silithid Tunneler) "
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_8165"
+      "Value": "E"
     },
     {
       "Id": 2019718497,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1802007905,
       "Type": 3,
-      "Value": "TRIGSTR_8229"
+      "Value": "E"
     }
   ]
 }

@@ -8,17 +8,17 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_20087"
+      "Value": "(Draenei Research)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_5400"
+      "Value": "E"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.8
+      "Value": ""
     },
     {
       "Id": 1935832437,
@@ -28,7 +28,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_14546"
+      "Value": "Resource harvesting center and producer of Draenei enhancements. |n|cfff5962dResearches:|R Forged Weaponry, Armor Plating, Spiritual Infusion, Improved Cannons, Fortified Hulls"
     },
     {
       "Id": 1818520949,
@@ -43,12 +43,12 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_17810"
+      "Value": "Smithery"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_17811"
+      "Value": "Build Smithery"
     },
     {
       "Id": 1684960117,

@@ -13,16 +13,16 @@
     {
       "Id": 1953980789,
       "Type": 3,
-      "Value": "TRIGSTR_9308"
+      "Value": "Revive Meredith"
     },
     {
       "Id": 2020631157,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_10420"
+      "Value": "(kultiras)"
     },
     {
       "Id": 1818520949,
@@ -32,7 +32,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_6268"
+      "Value": "E"
     },
     {
       "Id": 1831952757,
@@ -42,27 +42,27 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_10016"
+      "Value": "Matriarch of House Waycrest"
     },
     {
       "Id": 1919972469,
       "Type": 3,
-      "Value": "TRIGSTR_11142"
+      "Value": "Revive Meredith"
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 1.4
+      "Value": ""
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_14407"
+      "Value": "Mystical Hero, frail with extremely potent offensive and disruptive abilities.|n|cfff5962dAbilities:|r Wraith Form|n|cfff5962dCan Learn:|R Frost Nova, Forked Lightning, Mana Shield, Discordant Cadenza|n|n|cffffcc00Attacks land and air units.|R"
     },
     {
       "Id": 1869770869,
       "Type": 3,
-      "Value": "TRIGSTR_12967"
+      "Value": "Meredith Waycrest"
     },
     {
       "Id": 1684960117,
@@ -72,7 +72,7 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_12969"
+      "Value": "Summon Meredith"
     },
     {
       "Id": 1769173877,
@@ -82,7 +82,7 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 1.2
+      "Value": ""
     }
   ]
 }

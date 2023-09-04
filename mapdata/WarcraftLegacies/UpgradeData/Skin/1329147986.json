@@ -7,35 +7,39 @@
   "Modifications": [
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829579623,
       "Type": 3,
       "Value": "ReplaceableTextures/CommandButtons/BTNBloodFury.blp"
     },
     {
       "Id": 2037408359,
-      "Value": 1
+      "Value": ""
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "TRIGSTR_21123"
+      "Value": "Drink the Blood of Mannoroth"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_21124"
+      "Value": "Drink the Blood of Mannoroth"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "TRIGSTR_21125"
+      "Value": "Drink the Blood of Mannoroth"
     },
     {
       "Id": 2020631143,
-      "Value": 2
+      "Value": ""
     }
   ]
 }

@@ -28,7 +28,7 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_15435"
+      "Value": "(faction select)"
     },
     {
       "Id": 1952540001,
@@ -43,7 +43,7 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_15440"
+      "Value": "Sentinel selection"
     },
     {
       "Id": 1952543841,
@@ -57,15 +57,17 @@
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_15441"
+      "Value": "Select the |cff80d780Sentinels|r"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_15442"
+      "Value": "Play as the ever-vigilant |cff80d780Sentinels|r. The Watchers have always defended their land from all invaders, protecting the druids in their slumber.|n|n|cffd45e19Hard Faction|r"
     }
   ]
 }

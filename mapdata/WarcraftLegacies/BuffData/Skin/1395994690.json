@@ -13,12 +13,12 @@
     {
       "Id": 1885959270,
       "Type": 3,
-      "Value": "TRIGSTR_8854"
+      "Value": "Sunder Armor"
     },
     {
       "Id": 1700951398,
       "Type": 3,
-      "Value": "TRIGSTR_13325"
+      "Value": "This unit is affected by Sunder Armor; its armor is temporarily reduced."
     }
   ]
 }

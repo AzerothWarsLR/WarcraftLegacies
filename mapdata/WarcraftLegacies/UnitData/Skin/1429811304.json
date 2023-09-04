@@ -13,7 +13,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_17827"
+      "Value": "(draenei)"
     },
     {
       "Id": 1818520949,
@@ -23,36 +23,36 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_5143"
+      "Value": "W"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_17768"
+      "Value": "Elekk Knight"
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 2.7
+      "Value": ""
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_17769"
+      "Value": "Train Elekk Knight"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_6871"
+      "Value": "Powerful Rider of the Exodar.|n|cfff5962dAbilities:|R Charge, Thick Skin, Salvation, Resistant Skin|n |n|cff99b4d1Can only train 4.|n|cffffcc00Attacks land units and trees.|r"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 1.1
+      "Value": ""
     },
     {
       "Id": 2020631157,
-      "Value": 1
+      "Value": ""
     }
   ]
 }

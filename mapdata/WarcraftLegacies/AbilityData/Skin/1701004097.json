@@ -6,18 +6,19 @@
   "Modifications": [
     {
       "Id": 2037408353,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_6425"
+      "Value": "(25%) (Brown - The Chosen One. Blue - Overlord)"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_6426"
+      "Value": "The unit strikes with such force that \u003CACce,DataA1,%\u003E% of their damage strikes through to enemies near the primary attacked unit."
     }
   ]
 }

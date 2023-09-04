@@ -12,12 +12,12 @@
     },
     {
       "Id": 2020631157,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_1549"
+      "Value": "(Dalaran)"
     },
     {
       "Id": 1818520949,
@@ -27,7 +27,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_1786"
+      "Value": "E"
     },
     {
       "Id": 1831952757,
@@ -42,17 +42,17 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_1869"
+      "Value": "Blue Dragon"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_1870"
+      "Value": "Train Blue Dragon"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_1871"
+      "Value": "Dragons tasked by the Titans with the safeguarding of magic on Azeroth.|n|cfff5962dAbilities:|R Devour Magic, Orb of Annhilitation, Frost Attack, Spell Resistance|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land and air units.|r"
     }
   ]
 }

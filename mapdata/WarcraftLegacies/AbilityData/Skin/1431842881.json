@@ -13,12 +13,12 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_7184"
+      "Value": "(C\u0027thun)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_8494"
+      "Value": "Q"
     },
     {
       "Id": 1734962273,
@@ -28,7 +28,7 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_7186"
+      "Value": "Enveloping Winds"
     },
     {
       "Id": 1918988897,
@@ -38,17 +38,17 @@
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_8498"
+      "Value": "Q"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_7188"
+      "Value": "Learn Enveloping Winds (|cffffcc00Q|r) - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_7189"
+      "Value": "Magically binds a target enemy unit, so that it cannot move or attack and takes 30 damage per second. |nLasts 4/6/8/10 seconds."
     },
     {
       "Id": 1952543841,
@@ -62,33 +62,38 @@
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_7190"
+      "Value": "Enveloping Winds (|cffffcc00Q|r)"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_7191"
+      "Value": "Magically binds a target enemy unit, so that it cannot move or attack and takes 30 damage per second. |nLasts 4 seconds."
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_7192"
+      "Value": "Magically binds a target enemy unit, so that it cannot move or attack and takes 30 damage per second. |nLasts 5 seconds."
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_7193"
+      "Value": "Magically binds a target enemy unit, so that it cannot move or attack and takes 30 damage per second. |nLasts 6 seconds."
     },
     {
       "Level": 4,
+      "Pointer": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_7194"
+      "Value": "Magically binds a target enemy unit, so that it cannot move or attack and takes 30 damage per second. |nLasts 7 seconds."
     }
   ]
 }

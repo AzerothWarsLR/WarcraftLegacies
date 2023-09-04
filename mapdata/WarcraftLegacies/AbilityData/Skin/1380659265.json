@@ -8,10 +8,11 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_15371"
+      "Value": "(Charred Ancient)"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": ""
@@ -19,17 +20,18 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_15483"
+      "Value": "Burning Spirits"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_15529"
+      "Value": "Burning Spirits"
     },
     {
       "Id": 2020631137,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1953653089,
@@ -44,7 +46,7 @@
     {
       "Id": 1667329377,
       "Type": 2,
-      "Value": 0.7
+      "Value": ""
     }
   ]
 }

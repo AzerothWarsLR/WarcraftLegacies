@@ -8,17 +8,18 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_20914"
+      "Value": "(Bloodwarder)"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_11056"
+      "Value": "Attacks destroy 60 mana per hit (35 on heroes). The mana combusts, dealing damage to the attacked unit."
     },
     {
       "Id": 2020631137,
-      "Value": 3
+      "Value": ""
     }
   ]
 }

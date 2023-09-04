@@ -12,33 +12,35 @@
     },
     {
       "Id": 2037408353,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_14868"
+      "Value": "(dalaran golem)"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_17731"
+      "Value": "Spell Absorption"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_17733"
+      "Value": "Spell Absorption"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_17757"
+      "Value": "Reduces the damage taken from Magic attacks and Spells by 100%."
     },
     {
       "Id": 2020631137,
-      "Value": 2
+      "Value": ""
     }
   ]
 }

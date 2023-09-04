@@ -8,37 +8,37 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_10114"
+      "Value": "(Alliance)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_13319"
+      "Value": "C"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_16094"
+      "Value": "Bombard"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_16096"
+      "Value": "Build Bombard"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_16193"
+      "Value": "Long range siege heavy ship.|n|n|cff99b4d1Can only train 6.|r|r|n|cffffcc00Attacks land units and Control Points.|r |nStrong versus Buildings, Weak versus Ships.|n"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.95
+      "Value": ""
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 3
+      "Value": ""
     },
     {
       "Id": 1831952757,
@@ -48,16 +48,16 @@
     {
       "Id": 828468597,
       "Type": 2,
-      "Value": 0.25
+      "Value": ""
     },
     {
       "Id": 2037408373,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 845245813,
       "Type": 2,
-      "Value": 0.25
+      "Value": ""
     },
     {
       "Id": 1832018293,

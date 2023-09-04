@@ -12,22 +12,22 @@
     },
     {
       "Id": 2020631137,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_6552"
+      "Value": "(malygos)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_11743"
+      "Value": "Q"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_11225"
+      "Value": "Dragon Kin"
     },
     {
       "Id": 1918988897,
@@ -36,70 +36,78 @@
     },
     {
       "Id": 2020635233,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_11745"
+      "Value": "Q"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_11227"
+      "Value": "Dragon Kin - [|cffffcc00Level %d|r]."
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_7840"
+      "Value": "Malygos summons his blue dragon kin to fight his enemies, summoning Blue Dragon Whelp to help him. |nThe dragons last 60 seconds. |n|n|cffffcc00Level 1|r - 4 Drakes.|n|cffffcc00Level 2|r - 5 Drakes.|n|cffffcc00Level 3|r - 6 Drakes.|n|cffffcc00Level 4|r - 7 Drakes."
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_11229"
+      "Value": "Dragon Kin - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_11230"
+      "Value": "Dragon Kin - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_11231"
+      "Value": "Dragon Kin - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
+      "Pointer": 4,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_11232"
+      "Value": "Dragon Kin - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_7843"
+      "Value": "Malygos summons 4 Blue Dragon Whelps."
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_7844"
+      "Value": "Malygos summons 5 Blue Dragon Whelps."
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_8142"
+      "Value": "Malygos summons 6 Blue Dragon Whelps."
     },
     {
       "Level": 4,
+      "Pointer": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_8143"
+      "Value": "Malygos summons 7 Blue Dragon Whelps."
     }
   ]
 }

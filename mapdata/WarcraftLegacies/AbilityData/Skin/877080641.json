@@ -8,7 +8,7 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_9524"
+      "Value": "(Green - Lorthermar)"
     },
     {
       "Id": 1952540001,
@@ -18,7 +18,7 @@
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_10144"
+      "Value": "Q"
     },
     {
       "Id": 1734962273,
@@ -33,7 +33,7 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_9526"
+      "Value": "Flame Burst"
     },
     {
       "Id": 1918988897,
@@ -43,65 +43,73 @@
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_10177"
+      "Value": "Q"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_9528"
+      "Value": "Learn Flame Burst - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_17719"
+      "Value": "Hero releases a wave of fire that damages nearby enemy units.|n|n|cffffcc00Level 1|r - 150 damage per target. |n|cffffcc00Level 2|r - 200 damage per target. |n|cffffcc00Level 3|r - 250 damage per target.|n|cffffcc00Level 4|r - 300 damage per target."
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_9530"
+      "Value": "Flame Burst - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_9531"
+      "Value": "Flame Burst - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_9532"
+      "Value": "Flame Burst - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
+      "Pointer": 4,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_9533"
+      "Value": "Flame Burst - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_9534"
+      "Value": "Hero sends out a wave of fire that damages nearby enemies. Each wave does 150 damage."
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_9535"
+      "Value": "Hero sends out a wave of fire that damages nearby enemies. Each wave does 200 damage."
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_9536"
+      "Value": "Hero sends out a wave of fire that damages nearby enemies. Each wave does 250 damage."
     },
     {
       "Level": 4,
+      "Pointer": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_9537"
+      "Value": "Hero sends out a wave of fire that damages nearby enemies. Each wave does 300 damage."
     },
     {
       "Id": 1953653089,

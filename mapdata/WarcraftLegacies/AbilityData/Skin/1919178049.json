@@ -6,61 +6,66 @@
   "Modifications": [
     {
       "Id": 2020631137,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_5349"
+      "Value": "(Red - Lich Kel\u0027Thuzad / Kel\u0027Thuzad(Necro)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_7171"
+      "Value": "W"
     },
     {
       "Id": 2020635233,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_7173"
+      "Value": "W"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_5352"
+      "Value": "Sacrifices a target friendly Undead unit to convert its hit points into mana and health for the Lich. |n|n|cffffcc00Level 1|r - 33% of hit points to mana and 25% hit points to health. |n|cffffcc00Level 2|r - 66% of hit points to mana and 50% hit points to health. |n|cffffcc00Level 3|r - 100% of hit points to mana and 75% hit points to health. |n|cffffcc00Level 4|r - 133% of hit points to mana and 100% hit points to health."
     },
     {
       "Level": 4,
+      "Pointer": 4,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_5353"
+      "Value": "Dark Ritual - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_21353"
+      "Value": "Sacrifices a target friendly Undead unit to convert 35% of its hit points into mana for the Lich and 25% of its hit points into health for the Lich."
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_21354"
+      "Value": "Sacrifices a target friendly Undead unit to convert 65% of its hit points into mana for the Lich and 50% of its hit points into health for the Lich."
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_21355"
+      "Value": "Sacrifices a target friendly Undead unit to convert 90% of its hit points into mana for the Lich and 75% of its hit points into health for the Lich."
     },
     {
       "Level": 4,
+      "Pointer": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_5357"
+      "Value": "Sacrifices a target friendly Undead unit to convert 133% of its hit points into mana for the Lich and 100% of its hit points into health for the Lich."
     }
   ]
 }

@@ -12,36 +12,36 @@
     },
     {
       "Id": 2020631157,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 2037408373,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1936024681,
       "Type": 3,
-      "Value": "TRIGSTR_17075"
+      "Value": "Summons an Acolyte."
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_13827"
+      "Value": "X"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_17076"
+      "Value": "Summon Forsaken Acolyte"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_17077"
+      "Value": "Purchase Summon Workers"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_17078"
+      "Value": "Summon Acolytes."
     }
   ]
 }

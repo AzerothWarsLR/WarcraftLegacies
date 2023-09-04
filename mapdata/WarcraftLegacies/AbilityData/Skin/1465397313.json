@@ -13,12 +13,12 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_6028"
+      "Value": "(C\u0027thun Soggoth)"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_7159"
+      "Value": "Presence of the Unspeakable"
     },
     {
       "Id": 1918988897,
@@ -28,12 +28,12 @@
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_7160"
+      "Value": "Learn Presence of the Unspeakable - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_7161"
+      "Value": "Decreases the movement speed and attack rate of nearby enemy units. |n|n|cffffcc00Level 1|r - \u003CAOae,DataA1,%\u003E% movement, \u003CAOae,DataB1,%\u003E% attack. |n|cffffcc00Level 2|r - \u003CAOae,DataA2,%\u003E% movement, \u003CAOae,DataB2,%\u003E% attack. |n|cffffcc00Level 3|r - \u003CAOae,DataA3,%\u003E% movement, \u003CAOae,DataB3,%\u003E% attack.|n|cffffcc00Level 4|r - \u003CAOae,DataA4,%\u003E% movement, \u003CAOae,DataB4,%\u003E% attack."
     },
     {
       "Id": 1952543841,
@@ -42,51 +42,59 @@
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_7162"
+      "Value": "Presence of the Unspeakable - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_7163"
+      "Value": "Presence of the Unspeakable - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_7164"
+      "Value": "Presence of the Unspeakable - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
+      "Pointer": 4,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_7165"
+      "Value": "Presence of the Unspeakable - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_7166"
+      "Value": "Decreases nearby enemy units\u0027 movement speed by 5% and attack rate by 5%"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_7167"
+      "Value": "Decreases nearby enemy units\u0027 movement speed by 10% and attack rate by 10%"
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_7168"
+      "Value": "Decreases nearby enemy units\u0027 movement speed by 15% and attack rate by 15%"
     },
     {
       "Level": 4,
+      "Pointer": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_7169"
+      "Value": "Decreases nearby enemy units\u0027 movement speed by 20% and attack rate by 20%"
     }
   ]
 }

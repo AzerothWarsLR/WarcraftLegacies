@@ -11,12 +11,12 @@
     },
     {
       "Id": 2020631157,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_3221"
+      "Value": " (Fel Horde Farm)"
     },
     {
       "Id": 1818520949,
@@ -26,12 +26,12 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_432"
+      "Value": "W"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.85
+      "Value": ""
     },
     {
       "Id": 1935832437,
@@ -41,7 +41,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_1026"
+      "Value": "A fel-boar farm for the Fel Horde\u0027s bonechewers.|nProvides 8 food, which increases the maximum number of units that can be trained."
     }
   ]
 }

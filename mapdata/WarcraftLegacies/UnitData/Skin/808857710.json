@@ -18,21 +18,21 @@
     {
       "Id": 1853186933,
       "Type": 3,
-      "Value": "TRIGSTR_2267"
+      "Value": "Initiate,Adept,Master"
     },
     {
       "Id": 1953850229,
       "Type": 3,
-      "Value": "TRIGSTR_12453"
+      "Value": "- Boulder Toss,- Boulder Toss|n- Dispel Magic,- Boulder Toss|n- Dispel Magic|n - Stone Armor"
     },
     {
       "Id": 1667462261,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_2269"
+      "Value": "(C\u0027thun Silithid Tunneler)"
     },
     {
       "Id": 1818520949,
@@ -42,12 +42,12 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_2155"
+      "Value": "Q"
     },
     {
       "Id": 2054188149,
       "Type": 2,
-      "Value": -20
+      "Value": ""
     },
     {
       "Id": 1831952757,
@@ -57,17 +57,17 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.6
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_2271"
+      "Value": "Silithid Tunneler"
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 1.2
+      "Value": ""
     },
     {
       "Id": 1634759541,
@@ -77,12 +77,12 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_9206"
+      "Value": "Train - Silithid Tunneler"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_2268"
+      "Value": "Siege spellcaster. Using the power of the Earth, this caster supports their faction with underground siege attacks and Defensive magic. |n|cffffcc00Casts:|r Boulder Toss, Dispel Magic, Stone Armor. |n|n|cffd5d500Attacks land units.|r"
     },
     {
       "Id": 1684960117,
@@ -91,7 +91,7 @@
     },
     {
       "Id": 1651270517,
-      "Value": 55
+      "Value": ""
     }
   ]
 }

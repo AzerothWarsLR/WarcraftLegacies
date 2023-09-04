@@ -12,7 +12,7 @@
     },
     {
       "Id": 1651270517,
-      "Value": 175
+      "Value": ""
     },
     {
       "Id": 1651012469,
@@ -21,12 +21,12 @@
     },
     {
       "Id": 2020631157,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_20078"
+      "Value": "(Legion Other)"
     },
     {
       "Id": 1818520949,
@@ -35,31 +35,31 @@
     },
     {
       "Id": 1735156597,
-      "Value": 175
+      "Value": ""
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_5394"
+      "Value": "E"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_1800"
+      "Value": "Legion Teleporters"
     },
     {
       "Id": 1919705973,
-      "Value": 175
+      "Value": ""
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_17699"
+      "Value": "Summon Legion Nexus"
     },
     {
       "Id": 1935832437,
@@ -69,7 +69,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_20079"
+      "Value": "Demonic Nexus for the summoning of the Legion\u0027s armies"
     },
     {
       "Id": 1684960117,
@@ -79,7 +79,7 @@
     {
       "Id": 828468597,
       "Type": 2,
-      "Value": 1
+      "Value": ""
     }
   ]
 }

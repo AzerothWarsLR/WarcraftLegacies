@@ -8,27 +8,27 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_9020"
+      "Value": "(goblin)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_4766"
+      "Value": "Q"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_16550"
+      "Value": "Ogre Mercenary"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_16551"
+      "Value": "Train Ogre Mercenary"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_8541"
+      "Value": "Powerful mercenary hired by the goblin cartel.|n|cfff5962dAbilities:|R Bash |n|n|cffffcc00Attacks land units.|r"
     },
     {
       "Id": 1818520949,
@@ -43,7 +43,7 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 1
+      "Value": ""
     }
   ]
 }

@@ -6,12 +6,12 @@
   "Modifications": [
     {
       "Id": 2020631157,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_16415"
+      "Value": "(Stormwind Magic)"
     },
     {
       "Id": 1818520949,
@@ -21,17 +21,17 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_288"
+      "Value": "S"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.85
+      "Value": ""
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 3.5
+      "Value": ""
     },
     {
       "Id": 1935832437,
@@ -41,7 +41,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_1046"
+      "Value": "Sanctum for the spellcasters of Stormwind.|n|cfff5962dTrains:|R Clergyman, Chaplain|n|cfff5962dResearches:|R Clergyman Training, Light\u0027s Praise Training, Magic Sentry"
     }
   ]
 }

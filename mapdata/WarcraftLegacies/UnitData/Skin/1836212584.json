@@ -11,12 +11,12 @@
     },
     {
       "Id": 2020631157,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_15377"
+      "Value": " (Ironforge Siege)"
     },
     {
       "Id": 1818520949,
@@ -26,12 +26,12 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_1048"
+      "Value": "D"
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 4
+      "Value": ""
     },
     {
       "Id": 1935832437,
@@ -41,12 +41,12 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_20274"
+      "Value": "Technological shop of engineering prowess.|n|cfff5962dTrains:|r War Golem, Dreadnaught, Steam Tank|n|cfff5962dResearches:|R Improved Spell Resistance, Overclock"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 1.2
+      "Value": ""
     }
   ]
 }

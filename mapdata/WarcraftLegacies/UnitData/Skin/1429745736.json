@@ -8,17 +8,17 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_16448"
+      "Value": "Empress of Nazjatar"
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_18833"
+      "Value": " (Nzoth)"
     },
     {
       "Id": 1869770869,
       "Type": 3,
-      "Value": "TRIGSTR_16450"
+      "Value": "Queen Azshara"
     },
     {
       "Id": 1818520949,
@@ -43,26 +43,26 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_4268"
+      "Value": "W"
     },
     {
       "Id": 2020631157,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 1.4
+      "Value": ""
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_14360"
+      "Value": "Summon Azshara"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_15173"
+      "Value": "Mystical Hero, adept at melee combat and healing. |n|cfff5962dCan learn:|R Holy Light, Mirror Image, Wise Council, Starfall|n|n|cffffcc00Attacks land and air units.|R"
     }
   ]
 }

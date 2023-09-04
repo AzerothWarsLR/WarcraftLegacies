@@ -12,17 +12,17 @@
     },
     {
       "Id": 2020631137,
-      "Value": 3
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_8688"
+      "Value": "(Burning Legion)"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_8689"
+      "Value": "Curse Aura"
     },
     {
       "Id": 1952543841,
@@ -31,15 +31,17 @@
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_8690"
+      "Value": "Curse Aura"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_8691"
+      "Value": "Curses enemy units within a radius of 1500, reducing their armor by 6."
     }
   ]
 }

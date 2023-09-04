@@ -13,12 +13,12 @@
     {
       "Id": 1953850229,
       "Type": 3,
-      "Value": "TRIGSTR_16763"
+      "Value": "- Shadow Infusion,- Shadow Infusion|n- Devour Magic,- Shadow Infusion|n- Devour Magic|n- Lightning Shield"
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_6950"
+      "Value": "(twilight)"
     },
     {
       "Id": 1818520949,
@@ -28,27 +28,27 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_4264"
+      "Value": "Q"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.8
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_16441"
+      "Value": "Herald"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_16442"
+      "Value": "Train Herald"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_2484"
+      "Value": "Support caster of the Twilight hammer.|n|cfff5962dAbilities:|R Shadow Infusion, Devour Magic, Lightning Shield |n|n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Id": 1684960117,

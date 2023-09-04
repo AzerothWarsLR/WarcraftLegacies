@@ -8,24 +8,26 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_19199"
+      "Value": "(Grey-Blademaster, witch hunter, Sharpshooter)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_12591"
+      "Value": "Q"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_14460"
+      "Value": "Wind Walk"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_7784"
+      "Value": "Allows the unit to become invisible, and move 8% faster for 8 seconds."
     }
   ]
 }

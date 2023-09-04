@@ -6,22 +6,23 @@
   "Modifications": [
     {
       "Id": 2020631137,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 2037408353,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_6313"
+      "Value": "(green sea giant) (yogg elites)"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_6314"
+      "Value": "Gives a 50% chance that an attack will deal 40 damage to nearby units."
     }
   ]
 }

@@ -8,17 +8,17 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_20023"
+      "Value": " (Scourge Other)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_4271"
+      "Value": "Q"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_20024"
+      "Value": "Summon Naxxramas"
     },
     {
       "Id": 1935832437,
@@ -28,12 +28,12 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_154"
+      "Value": "Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Wisp |n|cfff5962dUpgrades to:|R Tree of Ages"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_155"
+      "Value": "Naxxramas"
     },
     {
       "Id": 1818520949,
@@ -52,12 +52,12 @@
     },
     {
       "Id": 1953523061,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1685218677,
       "Type": 1,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1831952757,
@@ -67,7 +67,7 @@
     {
       "Id": 828468597,
       "Type": 2,
-      "Value": 0.1
+      "Value": ""
     },
     {
       "Id": 1651012469,

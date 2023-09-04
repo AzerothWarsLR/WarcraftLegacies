@@ -6,26 +6,26 @@
   "Modifications": [
     {
       "Id": 2020631157,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 2037408373,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_874"
+      "Value": "(Frostwolf Specialist)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_296"
+      "Value": "D"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.85
+      "Value": ""
     },
     {
       "Id": 1935832437,
@@ -35,7 +35,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_3055"
+      "Value": "Gathering spot of the Bloodhoof Tribe.|n|cfff5962dTrains:|R Tauren, Catapult|n|cfff5962dResearches:|R Toughened Hides, Improved Pulverize"
     }
   ]
 }

@@ -6,21 +6,21 @@
   "Modifications": [
     {
       "Id": 2020631157,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 2037408373,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_299"
+      "Value": "A"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.85
+      "Value": ""
     },
     {
       "Id": 1935832437,
@@ -30,7 +30,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_1603"
+      "Value": "Vile housing for the constant raising of undead.|n|cfff5962dTrains:|R Ghoul, Crypt Fiend, Gargoyles|n|cfff5962dResearches:|R Ghoul Frenzy, Web, Howl of Terror"
     }
   ]
 }

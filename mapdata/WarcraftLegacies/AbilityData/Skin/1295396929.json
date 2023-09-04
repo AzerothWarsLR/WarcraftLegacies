@@ -8,12 +8,12 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_19028"
+      "Value": " (Tirion)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_12388"
+      "Value": "W"
     },
     {
       "Id": 1918988897,
@@ -22,99 +22,111 @@
     },
     {
       "Id": 2020635233,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_12407"
+      "Value": "W"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_11506"
+      "Value": "Learn Divine Shield - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_19029"
+      "Value": "An impenetrable shield surrounds the Paladin, protecting him from all damage and spells for a set amount of time. |n|n|cffffcc00Level 1|r - Lasts \u003CA06M,Dur1\u003E seconds. |n|cffffcc00Level 2|r - Lasts \u003CA06M,Dur2\u003E seconds. |n|cffffcc00Level 3|r - Lasts \u003CA06M,Dur3\u003E seconds. |n|cffffcc00Level 4|r - Lasts \u003CA06M,Dur4\u003E seconds."
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_11508"
+      "Value": "Activate Divine Shield - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_11509"
+      "Value": "Activate Divine Shield - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_11510"
+      "Value": "Activate Divine Shield - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
+      "Pointer": 4,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_11511"
+      "Value": "Activate Divine Shield - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_19033"
+      "Value": "An impenetrable shield surrounds this unit, protecting it from all damage and spells for \u003CA06M,Dur1\u003E seconds."
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_19038"
+      "Value": "An impenetrable shield surrounds this unit, protecting it from all damage and spells for \u003CA06M,Dur2\u003E seconds."
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_19039"
+      "Value": "An impenetrable shield surrounds this unit, protecting it from all damage and spells for \u003CA06M,Dur3\u003E seconds."
     },
     {
       "Level": 4,
+      "Pointer": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_19040"
+      "Value": "An impenetrable shield surrounds this unit, protecting it from all damage and spells for \u003CA06M,Dur4\u003E seconds."
     },
     {
       "Id": 1802007905,
       "Type": 3,
-      "Value": "TRIGSTR_12409"
+      "Value": "W"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829715809,
       "Type": 3,
-      "Value": "TRIGSTR_11517"
+      "Value": "Deactivate Divine Shield - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 829715809,
       "Type": 3,
-      "Value": "TRIGSTR_11518"
+      "Value": "Deactivate Divine Shield - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 829715809,
       "Type": 3,
-      "Value": "TRIGSTR_11519"
+      "Value": "Deactivate Divine Shield - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
+      "Pointer": 4,
       "Id": 829715809,
       "Type": 3,
-      "Value": "TRIGSTR_11520"
+      "Value": "Deactivate Divine Shield - [|cffffcc00Level 4|r]"
     }
   ]
 }

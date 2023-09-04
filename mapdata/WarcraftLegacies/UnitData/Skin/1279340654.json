@@ -18,17 +18,17 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_1325"
+      "Value": "Z"
     },
     {
       "Id": 828468597,
       "Type": 2,
-      "Value": 0.15
+      "Value": ""
     },
     {
       "Id": 845245813,
       "Type": 2,
-      "Value": 0.05
+      "Value": ""
     },
     {
       "Id": 1831952757,
@@ -43,17 +43,17 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 1.2
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_1841"
+      "Value": "Improved Iron Keep"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_1842"
+      "Value": "Upgrade to Improved Iron Keep"
     },
     {
       "Id": 1935832437,
@@ -63,12 +63,12 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_8977"
+      "Value": "Reinforced defensive fortification.|n|n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19686"
+      "Value": " (Warsong Tower 2)"
     }
   ]
 }

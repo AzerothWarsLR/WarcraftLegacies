@@ -7,99 +7,108 @@
   "Modifications": [
     {
       "Id": 2020631137,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_6915"
+      "Value": "(Scourge Ebon Blade Darion)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_8343"
+      "Value": "Q"
     },
     {
       "Id": 2020635233,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_8355"
+      "Value": "Q"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_6918"
+      "Value": "Learn Avatar (|cffffcc00Q|r) - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_6919"
+      "Value": "When Avatar is activated, it gives the Highlord bonus armor, bonus hit points, bonus damage and spell immunity. |n|cffffcc00Level 1|r - 20 damage, 5 armor, 300 hit points, 30 seconds.|n|cffffcc00Level 2|r - 40 damage, 10 armor, 600 hit points, 45 seconds.|n|cffffcc00Level 3|r - 60 damage, 15 armor, 900 hit points, 60 seconds."
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_6920"
+      "Value": "Activate Avatar (|cffffcc00Q|r) - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_6921"
+      "Value": "Activate Avatar (|cffffcc00Q|r) - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_6922"
+      "Value": "Activate Avatar (|cffffcc00Q|r) - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
+      "Pointer": 4,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_6923"
+      "Value": "Activate Avatar (|cffffcc00Q|r) - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_6924"
+      "Value": "Activate Avatar to give Darion 3 bonus armor, 200 bonus hit points, 20 bonus damage and spell immunity. |nLasts 30 seconds."
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_6925"
+      "Value": "Activate Avatar to give Darion 6 bonus armor, 300 bonus hit points, 30 bonus damage and spell immunity. |nLasts 35 seconds."
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_6926"
+      "Value": "Activate Avatar to give Darion 9 bonus armor, 400 bonus hit points, 40 bonus damage and spell immunity. |nLasts 40 seconds."
     },
     {
       "Level": 4,
+      "Pointer": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_6927"
+      "Value": "Activate Avatar to give Darion 12 bonus armor, 500 bonus hit points, 50 bonus damage and spell immunity. |nLasts 45 seconds."
     },
     {
       "Id": 2019718497,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1802007905,
       "Type": 3,
-      "Value": "TRIGSTR_8412"
+      "Value": "Q"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829715809,
       "Type": 3,
-      "Value": "TRIGSTR_6929"
+      "Value": "Deactivate Avatar (|cffffcc00Q|r)"
     }
   ]
 }

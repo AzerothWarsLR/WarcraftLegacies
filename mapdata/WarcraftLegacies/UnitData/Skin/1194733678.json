@@ -12,7 +12,7 @@
     },
     {
       "Id": 1651270517,
-      "Value": 200
+      "Value": ""
     },
     {
       "Id": 1651012469,
@@ -22,30 +22,30 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_2205"
+      "Value": "(T2 Voidcrusher)"
     },
     {
       "Id": 1735156597,
-      "Value": 125
+      "Value": ""
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.6
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_2206"
+      "Value": "Voidcrusher Demon Gate"
     },
     {
       "Id": 1919705973,
-      "Value": 125
+      "Value": ""
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_2207"
+      "Value": "Upgrade to Voidcrusher Demon Gate"
     },
     {
       "Id": 1935832437,
@@ -55,11 +55,11 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_20475"
+      "Value": "Gateway attuned to the Voidcrushers of the Burning Crusade, summoning 1 every 60 seconds. |n|n|cfff5962dAbilities:|R Frost Attack"
     },
     {
       "Id": 2020631157,
-      "Value": 2
+      "Value": ""
     }
   ]
 }

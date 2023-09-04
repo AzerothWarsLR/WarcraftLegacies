@@ -8,39 +8,39 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_18794"
+      "Value": "Trench Hydra"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_18452"
+      "Value": "Train Trench Hydra"
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_14793"
+      "Value": "(nzoth)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_5285"
+      "Value": "W"
     },
     {
       "Id": 2020631157,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_18463"
+      "Value": "Heavy Amphibian Ranged Unit.|n|cfff5962dAbilities:|R Slow Poison, Multi Shot, Spawn Hydra|n|n|cff99b4d1Can only train 2.|r|n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Id": 1735156597,
-      "Value": 155
+      "Value": ""
     },
     {
       "Id": 1651270517,
-      "Value": 155
+      "Value": ""
     }
   ]
 }

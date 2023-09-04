@@ -13,7 +13,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_2826"
+      "Value": "(Lordaeron)"
     },
     {
       "Id": 1818520949,
@@ -23,27 +23,27 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_2894"
+      "Value": "W"
     },
     {
       "Id": 2020633717,
       "Type": 2,
-      "Value": 11
+      "Value": ""
     },
     {
       "Id": 2037410933,
       "Type": 2,
-      "Value": 62
+      "Value": ""
     },
     {
       "Id": 2054188149,
       "Type": 2,
-      "Value": 71
+      "Value": ""
     },
     {
       "Id": 828468597,
       "Type": 2,
-      "Value": 0.15
+      "Value": ""
     },
     {
       "Id": 1831952757,
@@ -53,17 +53,17 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_3448"
+      "Value": "Huntsman"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_3449"
+      "Value": "Train Huntsman"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_3450"
+      "Value": "Highly skilled hunter of Tirisfal.|n|cfff5962dCan learn:|R Ensnare, Rapid Fire|n|n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Id": 1684960117,

@@ -7,7 +7,7 @@
   "Modifications": [
     {
       "Id": 1651270517,
-      "Value": 140
+      "Value": ""
     },
     {
       "Id": 1651012469,
@@ -16,12 +16,12 @@
     },
     {
       "Id": 2037408373,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_3051"
+      "Value": "(Closed)"
     },
     {
       "Id": 1818520949,
@@ -30,21 +30,21 @@
     },
     {
       "Id": 1735156597,
-      "Value": 100
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_3262"
+      "Value": "Gates of Ahn\u0027Qiraj"
     },
     {
       "Id": 1919705973,
-      "Value": 125
+      "Value": ""
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_2988"
+      "Value": "Horizontal Wooden Gate"
     },
     {
       "Id": 1935832437,
@@ -54,7 +54,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_3012"
+      "Value": "Repairs the broken gate."
     },
     {
       "Id": 1684960117,
@@ -64,17 +64,17 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.95
+      "Value": ""
     },
     {
       "Id": 1886940533,
       "Type": 1,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1920494965,
       "Type": 1,
-      "Value": 0
+      "Value": ""
     }
   ]
 }

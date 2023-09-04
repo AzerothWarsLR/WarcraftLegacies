@@ -6,18 +6,19 @@
   "Modifications": [
     {
       "Id": 2020631137,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_4994"
+      "Value": "(Light Blue - Huntress)"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_4995"
+      "Value": "Improved Moon Glaive"
     }
   ]
 }

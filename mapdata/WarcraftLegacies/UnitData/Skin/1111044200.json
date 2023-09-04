@@ -12,12 +12,12 @@
     },
     {
       "Id": 2020631157,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_20036"
+      "Value": "(Dalaran Specialist)"
     },
     {
       "Id": 1818520949,
@@ -27,22 +27,22 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_3172"
+      "Value": "D"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_17155"
+      "Value": "Blue Dragon Roost"
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 4
+      "Value": ""
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_17156"
+      "Value": "Build Blue Dragon Roost"
     },
     {
       "Id": 1935832437,
@@ -52,7 +52,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_17179"
+      "Value": "Roost of the Blue Dragon Kin.|n|cfff5962dTrains:|R Elementalist, Judicator, Blue Dragon"
     }
   ]
 }

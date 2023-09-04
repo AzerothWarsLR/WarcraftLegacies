@@ -12,7 +12,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_423"
+      "Value": "R"
     },
     {
       "Id": 1634759541,
@@ -22,7 +22,7 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_547"
+      "Value": "Build Tau|cffffcc00r|ren Tent"
     },
     {
       "Id": 1935832437,
@@ -32,12 +32,12 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_548"
+      "Value": "Provides food, which increases the maximum number of units that can be trained."
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_2777"
+      "Value": " (Frostwolf Other)"
     }
   ]
 }

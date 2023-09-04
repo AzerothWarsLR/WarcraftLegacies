@@ -28,7 +28,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19786"
+      "Value": "(Stormwind Specialist)"
     },
     {
       "Id": 1818520949,
@@ -38,21 +38,21 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 1.05
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_2929"
+      "Value": "Champion\u0027s Hall"
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 1.9
+      "Value": ""
     },
     {
       "Id": 1650684789,
-      "Value": 0
+      "Value": ""
     },
     {
       "Id": 1634759541,
@@ -62,7 +62,7 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_020"
+      "Value": "Upgrade to Champion\u0027s Hall"
     },
     {
       "Id": 1935832437,
@@ -72,7 +72,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_17691"
+      "Value": "Contains research which improves the |cffcece00Bladesman|r, |cffcece00Outrider|r, |cffcece00Marshal|r, and |cffcece00Brigadier |runits.|n|n- Further research will unlock the |cffcece00Stormwind Knight|r or |cffcece00Marksman |runit, replacing Outriders or Spearmen.|n"
     },
     {
       "Id": 1684960117,
@@ -82,7 +82,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_2170"
+      "Value": "Z"
     }
   ]
 }

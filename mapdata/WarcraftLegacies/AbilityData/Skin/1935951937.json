@@ -7,57 +7,62 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_19384"
+      "Value": "(Illidan)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_7860"
+      "Value": "W"
     },
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_7867"
+      "Value": "W"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_6855"
+      "Value": "An impenetrable shield surrounds the Hero, protecting him from all damage and spells for a set amount of time. |n|n|cffffcc00Level 1|r - Lasts 1 seconds. |n|cffffcc00Level 2|r - Lasts 2 seconds.  |n|cffffcc00Level 3|r - Lasts 3 seconds.|n|cffffcc00Level 4|r - Lasts 4 seconds."
     },
     {
       "Level": 4,
+      "Pointer": 4,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_12156"
+      "Value": "Demonic Shield - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_12157"
+      "Value": "An impenetrable shield surrounds this unit, protecting it from all damage and spells for 1 seconds."
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_12158"
+      "Value": "An impenetrable shield surrounds this unit, protecting it from all damage and spells for 2 seconds."
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_12159"
+      "Value": "An impenetrable shield surrounds this unit, protecting it from all damage and spells for 3 seconds."
     },
     {
       "Level": 4,
+      "Pointer": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_12160"
+      "Value": "An impenetrable shield surrounds this unit, protecting it from all damage and spells for 4 seconds."
     },
     {
       "Id": 1802007905,
       "Type": 3,
-      "Value": "TRIGSTR_7930"
+      "Value": "W"
     },
     {
       "Id": 1953653089,
@@ -77,48 +82,54 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_12161"
+      "Value": "Demonic Shield"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_12507"
+      "Value": "Learn Demonic Shield - [|cffffcc00Level %d|r]"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_12511"
+      "Value": "Demonic Shield - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_12512"
+      "Value": "Demonic Shield - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_13474"
+      "Value": "Demonic Shield - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 2,
+      "Pointer": 2,
       "Id": 829715809,
       "Type": 3,
-      "Value": "TRIGSTR_13544"
+      "Value": "Deactivate Divine Shield"
     },
     {
       "Level": 3,
+      "Pointer": 3,
       "Id": 829715809,
       "Type": 3,
-      "Value": "TRIGSTR_14098"
+      "Value": "Deactivate Divine Shield"
     },
     {
       "Level": 4,
+      "Pointer": 4,
       "Id": 829715809,
       "Type": 3,
-      "Value": "TRIGSTR_14139"
+      "Value": "Deactivate Divine Shield"
     }
   ]
 }

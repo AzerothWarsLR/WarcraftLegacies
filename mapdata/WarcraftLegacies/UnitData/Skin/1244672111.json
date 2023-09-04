@@ -13,7 +13,7 @@
     {
       "Id": 828468597,
       "Type": 2,
-      "Value": 0.23
+      "Value": ""
     },
     {
       "Id": 1831952757,
@@ -23,12 +23,12 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.95
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_1749"
+      "Value": "Thunder Bluff"
     },
     {
       "Id": 1935832437,
@@ -38,7 +38,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19675"
+      "Value": " (Frostwolf)"
     }
   ]
 }

@@ -13,24 +13,26 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_7015"
+      "Value": "(Lordaeron-Veteran Footman)"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_7016"
+      "Value": "Perfect Defend"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_7017"
+      "Value": "Perfect Defend"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_9116"
+      "Value": "The unit has a 30% chance to reflect Piercing attacks upon the source, and to take only 35% of the damage from attacks that are not reflected. Magic and Spell damage is reduced by 15%."
     }
   ]
 }

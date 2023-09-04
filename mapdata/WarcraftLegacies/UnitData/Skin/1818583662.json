@@ -17,12 +17,12 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_911"
+      "Value": "(Quel\u0027Thalas)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_774"
+      "Value": "Q"
     },
     {
       "Id": 1831952757,
@@ -32,27 +32,27 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.85
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_913"
+      "Value": "Sunfury Warrior"
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 1
+      "Value": ""
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_914"
+      "Value": "Train Sunfury Warrior"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_16133"
+      "Value": "Stout protector of Quel\u0027Thalas.|n|cfff5962dAbilities:|R Charge, Defend, Combat Experience, Spell Resistance, Feedback|n|n|cffffcc00Attacks land units.|r"
     }
   ]
 }

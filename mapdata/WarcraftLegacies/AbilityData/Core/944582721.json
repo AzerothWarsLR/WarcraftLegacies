@@ -7,12 +7,14 @@
   "Modifications": [
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1718968929,
       "Type": 3,
       "Value": "BFig"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1935895905,
       "Value": 95
     },
@@ -24,7 +26,7 @@
     },
     {
       "Level": 1,
-      "Pointer": 3,
+      "Pointer": 1,
       "Id": 862544210,
       "Type": 3,
       "Value": "nlpd"
@@ -40,6 +42,7 @@
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1969840466,
       "Type": 3,
       "Value": "nlpd"

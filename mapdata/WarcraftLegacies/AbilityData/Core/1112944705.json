@@ -11,12 +11,14 @@
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1852072801,
       "Type": 2,
       "Value": 35
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1935895905,
       "Value": 250
     },
@@ -41,12 +43,14 @@
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1851880033,
       "Type": 2,
       "Value": 210
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 1970106473,
       "Type": 3,
       "Value": "n09W"

@@ -6,21 +6,21 @@
   "Modifications": [
     {
       "Id": 2020631157,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 2037408373,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_895"
+      "Value": "(Fel Horde-Tier-Demi)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_948"
+      "Value": "C"
     },
     {
       "Id": 1832018293,
@@ -30,22 +30,22 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 1.4
+      "Value": ""
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_897"
+      "Value": "Nefarian"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_898"
+      "Value": "Train Nefarian"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_899"
+      "Value": "|cfff5962dAbilities:|R Breath of Fire, Devour, Searing Breath, Resistant Skin|n|n|cffffcc00Attacks land and air units.|r"
     }
   ]
 }

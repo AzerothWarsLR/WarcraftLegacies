@@ -12,12 +12,12 @@
     },
     {
       "Id": 2020631137,
-      "Value": 3
+      "Value": ""
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_7959"
+      "Value": "(Dark Green - Chaplain)"
     },
     {
       "Id": 1952540001,
@@ -27,19 +27,21 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_7960"
+      "Value": "Animate Soul"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_7961"
+      "Value": "Animate Soul"
     },
     {
       "Level": 1,
+      "Pointer": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_7962"
+      "Value": "Raises \u003CA0SA,DataA1\u003E Fallen Souls from a corpse."
     },
     {
       "Id": 1918989665,
@@ -48,7 +50,7 @@
     },
     {
       "Id": 2019718497,
-      "Value": 3
+      "Value": ""
     }
   ]
 }

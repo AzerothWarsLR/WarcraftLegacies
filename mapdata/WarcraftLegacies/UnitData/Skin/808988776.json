@@ -12,12 +12,12 @@
     },
     {
       "Id": 2020631157,
-      "Value": 2
+      "Value": ""
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_18644"
+      "Value": "(Ragnaros T2)"
     },
     {
       "Id": 1818520949,
@@ -27,7 +27,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_13955"
+      "Value": "C"
     },
     {
       "Id": 1831952757,
@@ -37,12 +37,12 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.85
+      "Value": ""
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 4.3
+      "Value": ""
     },
     {
       "Id": 1935832437,
@@ -52,17 +52,17 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_8307"
+      "Value": "Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Mason |n|cfff5962dAbilities:|R Powered Up Ammunition |n|cfff5962dUpgrades to:|R Trelleborg"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_16359"
+      "Value": "Fortfied Holdfast"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_16939"
+      "Value": "Upgrade to Fortified Holdfast"
     }
   ]
 }
