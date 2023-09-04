@@ -374,6 +374,12 @@ namespace Launcher.Services
         });
       }
 
+      additionalFiles.Add(new PathData()
+      {
+        AbsolutePath = Path.Combine(mapDataRootDirectory, GameInterfacePath),
+        RelativePath = GameInterfacePath
+      });
+
       return additionalFiles;
     }
     
@@ -400,6 +406,12 @@ namespace Launcher.Services
           SearchPattern = filePath
         });
       }
+
+      fileDirectories.Add(new DirectoryEnumerationOptions
+      {
+        Path = mapDataRootDirectory,
+        SearchPattern = GameInterfacePath
+      });
       
       return fileDirectories;
     }

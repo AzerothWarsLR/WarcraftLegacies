@@ -28,7 +28,16 @@ namespace Launcher.DTOMappers
       while (stringReader.ReadLine() is { } line)
       {
         var match = Regex.Match(line, "TRIGSTR_(.*)");
-        stringBuilder.Append(match.Success ? this[line] : line);
+        if (match.Success)
+        {
+          var substitutionValue = this[match.Value];
+          var substitutedFullLine = Regex.Replace(line, "(.*)=TRIGSTR_(.*)", $"$1=\"{substitutionValue}\"");
+          stringBuilder.AppendLine(substitutedFullLine);
+        }
+        else
+        {
+          stringBuilder.AppendLine(match.Success ? $"{this[match.Value]}" : line);
+        }
       }
       return stringBuilder.ToString();
     }
