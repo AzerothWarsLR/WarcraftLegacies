@@ -6,6 +6,7 @@ using System.Text.Json.Serialization;
 using AutoMapper;
 using Launcher.DataTransferObjects;
 using Launcher.DTOMappers;
+using Launcher.Extensions;
 using Launcher.JsonConverters;
 using War3Net.Build;
 using War3Net.Build.Audio;
@@ -59,6 +60,8 @@ namespace Launcher.Services
     {
       if (Directory.Exists(outputFolderPath))
         Directory.Delete(outputFolderPath, true);
+
+      var triggerStringsDictionary = map.TriggerStrings.ToDictionary();
       
       if (map.Doodads != null) 
         SerializeAndWriteDoodads(map.Doodads, Path.Combine(outputFolderPath, DoodadsDirectoryPath));
@@ -82,7 +85,7 @@ namespace Launcher.Services
       if (map.UnitObjectData != null)
         SerializeAndWriteUnitData(map.UnitObjectData, null, outputFolderPath, UnitDataDirectoryPath, CoreDataDirectorySubPath);
       if (map.UnitSkinObjectData != null)
-        SerializeAndWriteUnitData(map.UnitSkinObjectData, map.TriggerStrings, outputFolderPath, UnitDataDirectoryPath, SkinDataDirectorySubPath);
+        SerializeAndWriteUnitData(map.UnitSkinObjectData, triggerStringsDictionary, outputFolderPath, UnitDataDirectoryPath, SkinDataDirectorySubPath);
       if (map.AbilityObjectData != null)
         SerializeAndWriteAbilityData(map.AbilityObjectData, outputFolderPath, AbilityDataDirectoryPath, CoreDataDirectorySubPath);
       if (map.AbilitySkinObjectData != null)
@@ -197,7 +200,7 @@ namespace Launcher.Services
         SerializeAndWrite<Region, RegionDto>(region, path, $"{region.Name}.json");
     }
     
-    private void SerializeAndWriteUnitData(UnitObjectData unitObjectData, TriggerStrings? triggerStrings, params string[] paths)
+    private void SerializeAndWriteUnitData(UnitObjectData unitObjectData, Dictionary<uint, string> triggerStrings, params string[] paths)
     {
       var dto = new ObjectDataToDtoMapper().MapToDto(unitObjectData, triggerStrings);
       

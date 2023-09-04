@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using System.Linq;
 using Launcher.DataTransferObjects;
 using War3Net.Build.Object;
-using War3Net.Build.Script;
 
 namespace Launcher.DTOMappers
 {
@@ -19,17 +18,16 @@ namespace Launcher.DTOMappers
     /// <param name="unitObjectData">The object to convert.</param>
     /// <param name="triggerStrings">If supplied, unit data values that point to trigger string keys will instead be
     /// replaced with the value of those keys.</param>
-    public UnitObjectDataDto MapToDto(UnitObjectData unitObjectData, TriggerStrings? triggerStrings)
+    public UnitObjectDataDto MapToDto(UnitObjectData unitObjectData, Dictionary<uint, string> triggerStrings)
     {
-      var triggerStringsDictionary = ConvertTriggerStringsToDictionary(triggerStrings);
       var dto = new UnitObjectDataDto
       {
         FormatVersion = 0,
         BaseUnits = unitObjectData.BaseUnits
-          .Select(x => MapSimpleModificationToDto(x, triggerStringsDictionary))
+          .Select(x => MapSimpleModificationToDto(x, triggerStrings))
           .ToArray(),
         NewUnits = unitObjectData.NewUnits
-          .Select(x => MapSimpleModificationToDto(x, triggerStringsDictionary))
+          .Select(x => MapSimpleModificationToDto(x, triggerStrings))
           .ToArray()
       };
       return dto;
@@ -83,23 +81,6 @@ namespace Launcher.DTOMappers
         return parsedKey;
 
       throw new InvalidOperationException($"{triggerString} does not contain a valid TriggerString key.");
-    }
-    
-    private static Dictionary<uint, string>? ConvertTriggerStringsToDictionary(TriggerStrings? triggerStrings)
-    {
-      if (triggerStrings == null)
-        return null;
-      
-      var dictionary = new Dictionary<uint, string>();
-      foreach (var triggerString in triggerStrings.Strings)
-      {
-        if (triggerString.Value == null)
-          throw new InvalidOperationException($"Cannot parse a {nameof(TriggerString)} with a null value.");
-        
-        dictionary.Add(triggerString.Key, triggerString.Value);
-      } 
-      
-      return dictionary;
     }
   }
 }
