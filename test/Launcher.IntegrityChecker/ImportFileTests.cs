@@ -6,11 +6,8 @@ public sealed class ImportFileTests : IClassFixture<ImportFilesTestFixture>
 {
   private readonly ImportFilesTestFixture _importFilesTestFixture;
 
-  public ImportFileTests(ImportFilesTestFixture importFilesTestFixture)
-  {
-    _importFilesTestFixture = importFilesTestFixture;
-  }
-  
+  public ImportFileTests(ImportFilesTestFixture importFilesTestFixture) => _importFilesTestFixture = importFilesTestFixture;
+
   [Theory]
   [MemberData(nameof(GetAllImportedModels))]
   public void AllModels_AreInActiveUse(string relativePath)
@@ -21,6 +18,10 @@ public sealed class ImportFileTests : IClassFixture<ImportFilesTestFixture>
 
   public static IEnumerable<object[]> GetAllImportedModels()
   {
+    var additionalFiles = MapDataProvider.GetMapData.AdditionalFiles;
+    if (!additionalFiles.Any())
+      throw new InvalidOperationException($"{nameof(MapDataProvider)} returned no additional files to test.");
+
     foreach (var pathData in MapDataProvider.GetMapData.AdditionalFiles)
     {
       if (pathData.RelativePath.IsModelPath())
