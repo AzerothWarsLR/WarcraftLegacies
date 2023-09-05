@@ -8,22 +8,16 @@ namespace Launcher.IntegrityChecker
 {
   public sealed class ImportFilesTestFixture
   {
-    public HashSet<string> ModelsUsedInMap { get; }
+    public Map Map { get; }
     
-    public IEnumerable<string> ImportedModels { get; }
+    public HashSet<string> ModelsUsedInMap { get; }
 
     public ImportFilesTestFixture()
     {
-      var (map, _) = MapDataProvider.GetMapData;
-      AdvancedMapBuilder.AddCSharpCode(map, @"..\..\..\..\..\src\WarcraftLegacies.Source\", new CompilerSettings());
-      ModelsUsedInMap = GetModelsUsedInMap(map).OrderBy(x => x).ToHashSet();
-      ImportedModels = GetAllImportedModels();
+      (Map, _) = MapDataProvider.GetMapData;
+      AdvancedMapBuilder.AddCSharpCode(Map, @"..\..\..\..\..\src\WarcraftLegacies.Source\", new CompilerSettings());
+      ModelsUsedInMap = GetModelsUsedInMap(Map).OrderBy(x => x).ToHashSet();
     }
-
-    private static IEnumerable<string> GetAllImportedModels() =>
-      MapDataProvider.GetMapData.AdditionalFiles
-        .Where(pathData => pathData.RelativePath.IsModelPath())
-        .Select(pathData => pathData.RelativePath.NormalizeModelPath());
 
     private static IEnumerable<string> GetModelsUsedInMap(Map map)
     {

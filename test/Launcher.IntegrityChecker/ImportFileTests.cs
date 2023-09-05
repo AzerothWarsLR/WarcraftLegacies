@@ -11,12 +11,25 @@ public sealed class ImportFileTests : IClassFixture<ImportFilesTestFixture>
     _importFilesTestFixture = importFilesTestFixture;
   }
   
-  [Fact]
-  public void AllModels_AreInActiveUse()
+  [Theory]
+  [MemberData(nameof(GetAllImportedModels))]
+  public void AllModels_AreInActiveUse(string relativePath)
   {
-    var unusedModels = _importFilesTestFixture.ImportedModels
-      .Where(model => !_importFilesTestFixture.ModelsUsedInMap.Contains(model));
-    
-    unusedModels.Should().BeEmpty();
+    var activeModels = _importFilesTestFixture.ModelsUsedInMap;
+    activeModels.Should().Contain(relativePath);
+  }
+
+  public static IEnumerable<object[]> GetAllImportedModels()
+  {
+    foreach (var pathData in MapDataProvider.GetMapData.AdditionalFiles)
+    {
+      if (pathData.RelativePath.IsModelPath())
+      {
+        yield return new object[]
+        {
+          pathData.RelativePath.NormalizeModelPath()
+        };
+      }
+    }
   }
 }
