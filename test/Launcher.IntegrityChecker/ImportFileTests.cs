@@ -95,8 +95,12 @@ public sealed class ImportFileTests : IClassFixture<MapTestFixture>
   
   private static IEnumerable<string> GetModelsUsedByScript(string? mapScript)
   {
-    var matches = Regex.Matches(mapScript, @"\[\[.*\.md[xl]\]\]");
+    var matches = Regex.Matches(mapScript, @"[\[""].*\.md[xl][\]""]");
     foreach (var model in matches.ToList())
-      yield return model.Value.Replace(".mdl", ".mdx");
+      yield return model.Value
+        .Replace("[", "")
+        .Replace("]", "")
+        .Replace(@"""", "")
+        .Replace(".mdl", ".mdx");
   }
 }
