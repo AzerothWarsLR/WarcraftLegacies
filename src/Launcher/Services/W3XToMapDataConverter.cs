@@ -111,7 +111,7 @@ namespace Launcher.Services
 
     private static void CopyImportedFiles(string baseMapPath, string outputFolderPath)
     {
-      var importFileExtensions = new [] {".blp", ".mdx", ".mdl", ".toc", ".fdf", ".txt", ".mp3", ".webp", ".slk"};
+      var importFileExtensions = new [] {".blp", ".mdx", ".mdl", ".toc", ".fdf", ".mp3", ".webp", ".slk"};
       var files = Directory
         .EnumerateFiles(baseMapPath, "*", SearchOption.AllDirectories)
         .Where(file => importFileExtensions.Any(file.ToLower().EndsWith))
