@@ -1,3 +1,4 @@
+using System.Text.RegularExpressions;
 using FluentAssertions;
 using War3Net.Build;
 using War3Net.Build.Object;
@@ -17,7 +18,7 @@ public sealed class ImportFileTests : IClassFixture<MapTestFixture>
   [MemberData(nameof(GetAllModels))]
   public void AllModels_AreInActiveUse(string relativePath)
   {
-    var activeModels = GetModelsUsedByObjects(_mapTestFixture.Map);
+    var activeModels = GetModelsUsedInMap(_mapTestFixture.Map);
     activeModels.Should().Contain(relativePath);
   }
 
@@ -34,15 +35,16 @@ public sealed class ImportFileTests : IClassFixture<MapTestFixture>
       }
     }
   }
-
-  private static IEnumerable<string> GetModelsUsedByObjects(Map map)
+  
+  private static IEnumerable<string> GetModelsUsedInMap(Map map)
   {
     return GetModelsUsedByUnits(map.UnitSkinObjectData)
       .Concat(GetModelsUsedByAbilities(map.AbilitySkinObjectData))
       .Concat(GetModelsUsedByDoodads(map.DoodadObjectData))
-      .Concat(GetModelsUsedByBuffs(map.BuffSkinObjectData));
+      .Concat(GetModelsUsedByBuffs(map.BuffSkinObjectData))
+      .Concat(GetModelsUsedByScript(map.Script));
   }
-  
+
   private static IEnumerable<string> GetModelsUsedByUnits(UnitObjectData unitObjectData)
   {
     var modelFields = new[] { 1818520949, 1831952757 };
@@ -89,5 +91,12 @@ public sealed class ImportFileTests : IClassFixture<MapTestFixture>
       .Where(x => modelFields.Contains(x.Id))
       .Select(x => x.ValueAsString.Replace(".mdl", ".mdx"))
       .ToList();
+  }
+  
+  private static IEnumerable<string> GetModelsUsedByScript(string? mapScript)
+  {
+    var matches = Regex.Matches(mapScript, @"\[\[.*\.md[xl]\]\]");
+    foreach (var model in matches.ToList())
+      yield return model.Value.Replace(".mdl", ".mdx");
   }
 }
