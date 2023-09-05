@@ -143,7 +143,7 @@ namespace Launcher.Services
           player.Controller = PlayerController.Computer;
     }
     
-    private static void AddCSharpCode(Map map, string projectFolderPath, CompilerSettings compilerSettings)
+    public static void AddCSharpCode(Map map, string projectFolderPath, CompilerSettings compilerSettings)
     {
       //Set debug options if necessary, configure compiler
       const string csc = Debug ? "-debug -define:DEBUG" : null;
@@ -176,8 +176,11 @@ namespace Launcher.Services
         throw new Exception(compileResult.Diagnostics.First(x => x.Severity == DiagnosticSeverity.Error).GetMessage());
 
       // Update war3map.lua so you can inspect the generated Lua code easily
-      Directory.CreateDirectory(compilerSettings.ArtifactsPath);
-      File.WriteAllText(Path.Combine(compilerSettings.ArtifactsPath, War3MapLua), map.Script);
+      if (compilerSettings.ArtifactsPath != null)
+      {
+        Directory.CreateDirectory(compilerSettings.ArtifactsPath);
+        File.WriteAllText(Path.Combine(compilerSettings.ArtifactsPath, War3MapLua), map.Script);
+      }
     }
     
     private string GetMapFullFilePath(AdvancedMapBuilderOptions options)
