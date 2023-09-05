@@ -180,7 +180,7 @@ namespace Launcher.DTOMappers
     private SimpleObjectDataModification MapObjectDataModificationToDto(
       SimpleObjectDataModification objectDataModification, bool substituteTriggerStrings)
     {
-      var value = substituteTriggerStrings && _triggerStrings.ObjectIsTriggerStringKey(objectDataModification.Value)
+      var value = substituteTriggerStrings && TriggerStringDictionary.IsTriggerStringKey(objectDataModification.Value)
         ? _triggerStrings[objectDataModification.Value as string]
         : objectDataModification.Value;
 
@@ -195,7 +195,7 @@ namespace Launcher.DTOMappers
     private LevelObjectDataModification MapLevelObjectDataModificationToDto(
       LevelObjectDataModification objectDataModification, bool substituteTriggerStrings)
     {
-      var value = substituteTriggerStrings && _triggerStrings.ObjectIsTriggerStringKey(objectDataModification.Value)
+      var value = substituteTriggerStrings && TriggerStringDictionary.IsTriggerStringKey(objectDataModification.Value)
         ? _triggerStrings[objectDataModification.Value as string]
         : objectDataModification.Value;
 
@@ -212,7 +212,7 @@ namespace Launcher.DTOMappers
     private VariationObjectDataModification MapVariationObjectDataModificationToDto(
       VariationObjectDataModification objectDataModification, bool substituteTriggerStrings)
     {
-      var value = substituteTriggerStrings && _triggerStrings.ObjectIsTriggerStringKey(objectDataModification.Value)
+      var value = substituteTriggerStrings && TriggerStringDictionary.IsTriggerStringKey(objectDataModification.Value)
         ? _triggerStrings[objectDataModification.Value as string]
         : objectDataModification.Value;
 
