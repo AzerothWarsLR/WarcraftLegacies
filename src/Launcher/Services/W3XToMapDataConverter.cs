@@ -116,13 +116,14 @@ namespace Launcher.Services
         .EnumerateFiles(baseMapPath, "*", SearchOption.AllDirectories)
         .Where(file => importFileExtensions.Any(file.ToLower().EndsWith))
         .ToList();
-      
+
+      var unserializableFilePaths = GetUnserializableFilePaths().ToList();
       foreach (var file in files)
       {
-        if (GetUnserializableFilePaths().Contains(file))
-          return;
-        
         var relativePath = Path.GetRelativePath(baseMapPath, file);
+        if (unserializableFilePaths.Contains(relativePath))
+          continue;
+        
         var destinationFileName = $@"{outputFolderPath}\{ImportsPath}\{relativePath}";
         Directory.CreateDirectory(Path.GetDirectoryName(destinationFileName)!);
         File.Copy(file, destinationFileName, true);
