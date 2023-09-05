@@ -45,7 +45,7 @@ namespace Launcher.IntegrityChecker
 
     private static IEnumerable<string> GetModelsUsedByAbilities(AbilityObjectData abilityObjectData)
     {
-      var modelFields = new[] { 1952543585, 1952543841, 1952543585 };
+      var modelFields = new[] { 1952543585, 1952543841, 1952542049 };
 
       return abilityObjectData.BaseAbilities
         .Concat(abilityObjectData.NewAbilities)
