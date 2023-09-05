@@ -119,6 +119,9 @@ namespace Launcher.Services
       
       foreach (var file in files)
       {
+        if (GetUnserializableFilePaths().Contains(file))
+          return;
+        
         var relativePath = Path.GetRelativePath(baseMapPath, file);
         var destinationFileName = $@"{outputFolderPath}\{ImportsPath}\{relativePath}";
         Directory.CreateDirectory(Path.GetDirectoryName(destinationFileName)!);
