@@ -87,12 +87,11 @@ namespace Launcher.IntegrityChecker
           .Replace("[", "")
           .Replace("]", "")
           .Replace(@"""", "")
-          .Replace(".mdl", ".mdx");
+          .Replace(".mdl", ".mdx")
+          .CleanModelPath();
     }
 
     private static bool IsModelField(ObjectDataModification modification) =>
-      modification.Type == ObjectDataType.String && IsModelPath(modification.ValueAsString);
-
-    private static bool IsModelPath(string text) => text.EndsWith(".mdx") || text.EndsWith(".mdl");
+      modification.Type == ObjectDataType.String && modification.ValueAsString.IsModelPath();
   }
 }

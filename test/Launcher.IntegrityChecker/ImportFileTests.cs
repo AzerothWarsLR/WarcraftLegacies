@@ -23,7 +23,7 @@ public sealed class ImportFileTests : IClassFixture<ImportFilesTestFixture>
   {
     foreach (var pathData in MapDataProvider.GetMapData.AdditionalFiles)
     {
-      if (pathData.RelativePath.EndsWith(".mdx") && !pathData.RelativePath.ToLower().EndsWith("_portrait.mdx")) //Todo: would be good to handle portraits
+      if (pathData.RelativePath.IsModelPath())
       {
         yield return new object[]
         {
