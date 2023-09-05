@@ -16,7 +16,9 @@ namespace Launcher.DTOMappers
 
     public string this[string key] => GetTriggerStringValueFromKey(key);
 
-    public bool ObjectIsTriggerStringKey(object obj) => obj is string asString && asString.StartsWith("TRIGSTR_");
+    public bool IsTriggerStringKey(string text) => text.StartsWith("TRIGSTR_");
+
+    public bool IsTriggerStringKey(object obj) => obj is string asString && asString.StartsWith("TRIGSTR_");
 
     /// <summary>
     /// Finds all trigger string keys in the provided text and replaces them with their corresponding values.
@@ -47,7 +49,7 @@ namespace Launcher.DTOMappers
     /// <para>If the provided key turns out to be invalid, this method will return the key back.</para> 
     /// </summary>
     private string GetTriggerStringValueFromKey(string key) =>
-      !ObjectIsTriggerStringKey(key) ? key : _triggerStrings[ParseTriggerStringAsKey(key)];
+      !IsTriggerStringKey((object)key) ? key : _triggerStrings[ParseTriggerStringAsKey(key)];
 
     private static uint ParseTriggerStringAsKey(string triggerString)
     {
