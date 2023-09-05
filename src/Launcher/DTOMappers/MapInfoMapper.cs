@@ -20,7 +20,7 @@ namespace Launcher.DTOMappers
       var dto = new MapInfoDto
       {
         FormatVersion = mapInfo.FormatVersion,
-        MapVersion = mapInfo.MapVersion,
+        MapVersion = 100,
         EditorVersion = mapInfo.EditorVersion,
         GameVersion = mapInfo.GameVersion,
         MapName = TriggerStringDictionary.IsTriggerStringKey(mapInfo.MapName) ? _triggerStrings[mapInfo.MapName] : mapInfo.MapName,
