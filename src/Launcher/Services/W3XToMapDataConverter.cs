@@ -133,8 +133,18 @@ namespace Launcher.Services
     private static void CopyUnserializableFiles(string baseMapPath, string outputFolderPath)
     {
       foreach (var filePath in GetUnserializableFilePaths())
-        if (File.Exists($"{baseMapPath}/{filePath}"))
-          File.Copy($"{baseMapPath}/{filePath}", $@"{outputFolderPath}\{filePath}", true);
+      {
+        var fullSourceFilePath = $"{baseMapPath}/{filePath}";
+        if (!File.Exists(fullSourceFilePath)) 
+          continue;
+        
+        var fullOutputFilePath = $@"{outputFolderPath}\{filePath}";
+        if (fullSourceFilePath.EndsWith(".txt"))
+          //Warcraft 3 maps use CR line endings, so this ensures that those line endings are replaced with CLRF.
+          File.WriteAllLines(fullOutputFilePath, File.ReadLines(fullSourceFilePath));
+        else
+          File.Copy(fullSourceFilePath, fullOutputFilePath, true);
+      }
     }
     
     private static void CopyGameInterface(string baseMapPath, TriggerStringDictionary triggerStringDictionary, string outputFolderPath)
