@@ -37,8 +37,11 @@ public sealed class ImportFileTests : IClassFixture<MapTestFixture>
   private static IEnumerable<string> GetModelsUsedByUnits(UnitObjectData unitObjectData)
   {
     var modelFields = new[] { 1818520949, 1831952757 };
+    List<SimpleObjectModification> allUnits = new();
+    allUnits.AddRange(unitObjectData.BaseUnits);
+    allUnits.AddRange(unitObjectData.NewUnits);
     
-    return unitObjectData.BaseUnits
+    return allUnits
       .SelectMany(x => x.Modifications)
       .Where(x => modelFields.Contains(x.Id))
       .Select(x => x.ValueAsString.Replace(".mdl", ".mdx"))
