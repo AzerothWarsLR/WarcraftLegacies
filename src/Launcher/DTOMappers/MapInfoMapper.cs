@@ -23,14 +23,14 @@ namespace Launcher.DTOMappers
         MapVersion = mapInfo.MapVersion,
         EditorVersion = mapInfo.EditorVersion,
         GameVersion = mapInfo.GameVersion,
-        MapName = TriggerStringDictionary.IsTriggerStringKey(mapInfo.MapName) ? _triggerStrings[mapInfo.MapName] : "",
-        MapAuthor = TriggerStringDictionary.IsTriggerStringKey(mapInfo.MapAuthor) ? _triggerStrings[mapInfo.MapAuthor] : "",
+        MapName = TriggerStringDictionary.IsTriggerStringKey(mapInfo.MapName) ? _triggerStrings[mapInfo.MapName] : mapInfo.MapName,
+        MapAuthor = TriggerStringDictionary.IsTriggerStringKey(mapInfo.MapAuthor) ? _triggerStrings[mapInfo.MapAuthor] : mapInfo.MapAuthor,
         MapDescription = TriggerStringDictionary.IsTriggerStringKey(mapInfo.MapDescription)
           ? _triggerStrings[mapInfo.MapDescription]
-          : "",
+          : mapInfo.MapDescription,
         RecommendedPlayers = TriggerStringDictionary.IsTriggerStringKey(mapInfo.RecommendedPlayers)
           ? _triggerStrings[mapInfo.RecommendedPlayers]
-          : "",
+          : mapInfo.RecommendedPlayers,
         Unk1 = mapInfo.Unk1,
         Unk2 = mapInfo.Unk2,
         Unk3 = mapInfo.Unk3,
@@ -48,28 +48,28 @@ namespace Launcher.DTOMappers
         LoadingScreenBackgroundNumber = mapInfo.LoadingScreenBackgroundNumber,
         LoadingScreenPath = TriggerStringDictionary.IsTriggerStringKey(mapInfo.LoadingScreenPath)
           ? _triggerStrings[mapInfo.LoadingScreenPath]
-          : "",
+          : mapInfo.LoadingScreenPath,
         LoadingScreenText = TriggerStringDictionary.IsTriggerStringKey(mapInfo.LoadingScreenText)
           ? _triggerStrings[mapInfo.LoadingScreenText]
-          : "",
+          : mapInfo.LoadingScreenText,
         LoadingScreenTitle = TriggerStringDictionary.IsTriggerStringKey(mapInfo.LoadingScreenTitle)
           ? _triggerStrings[mapInfo.LoadingScreenTitle]
-          : "",
+          : mapInfo.LoadingScreenTitle,
         LoadingScreenSubtitle = TriggerStringDictionary.IsTriggerStringKey(mapInfo.LoadingScreenSubtitle)
           ? _triggerStrings[mapInfo.LoadingScreenSubtitle]
-          : "",
+          : mapInfo.LoadingScreenSubtitle,
         LoadingScreenNumber = mapInfo.LoadingScreenNumber,
         GameDataSet = mapInfo.GameDataSet,
         PrologueScreenPath = mapInfo.PrologueScreenPath,
         PrologueScreenText = TriggerStringDictionary.IsTriggerStringKey(mapInfo.PrologueScreenText)
           ? _triggerStrings[mapInfo.PrologueScreenText]
-          : "",
+          : mapInfo.PrologueScreenText,
         PrologueScreenTitle = TriggerStringDictionary.IsTriggerStringKey(mapInfo.PrologueScreenTitle)
           ? _triggerStrings[mapInfo.PrologueScreenTitle]
-          : "",
+          : mapInfo.PrologueScreenTitle,
         PrologueScreenSubtitle = TriggerStringDictionary.IsTriggerStringKey(mapInfo.PrologueScreenSubtitle)
           ? _triggerStrings[mapInfo.PrologueScreenSubtitle]
-          : "",
+          : mapInfo.PrologueScreenSubtitle,
         FogStyle = mapInfo.FogStyle,
         FogStartZ = mapInfo.FogStartZ,
         FogEndZ = mapInfo.FogEndZ,
