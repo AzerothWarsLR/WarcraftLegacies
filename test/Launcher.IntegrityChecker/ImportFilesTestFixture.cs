@@ -12,13 +12,13 @@ namespace Launcher.IntegrityChecker
 
     public IEnumerable<PathData> ImportedFiles { get; }
     
-    public IEnumerable<string> ModelsUsedInMap { get; }
+    public HashSet<string> ModelsUsedInMap { get; }
 
     public ImportFilesTestFixture()
     {
       (Map, ImportedFiles) = MapDataProvider.GetMapData;
       AdvancedMapBuilder.AddCSharpCode(Map, @"..\..\..\..\..\src\WarcraftLegacies.Source\", new CompilerSettings());
-      ModelsUsedInMap = GetModelsUsedInMap(Map);
+      ModelsUsedInMap = GetModelsUsedInMap(Map).ToHashSet();
     }
 
     private static IEnumerable<string> GetModelsUsedInMap(Map map)
