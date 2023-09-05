@@ -73,7 +73,7 @@ namespace Launcher.Services
       if (map.PathingMap != null)
         SerializeAndWrite<MapPathingMap, MapPathingMapDto>(map.PathingMap, outputFolderPath, PathingMapPath);
       if (map.PreviewIcons != null)
-        SerializeAndWrite<MapPreviewIcons, MapPreviewIconsDto>(map.PreviewIcons, outputFolderPath, PreviewIconsPath);
+        SerializeAndWritePreviewIcons(map.PreviewIcons, Path.Combine(outputFolderPath, PreviewIconsPath));
       if (map.ShadowMap != null)
         SerializeAndWrite<MapShadowMap, MapShadowMapDto>(map.ShadowMap, outputFolderPath, ShadowMapPath);
       if (map.Sounds != null)
@@ -159,6 +159,18 @@ namespace Launcher.Services
       File.WriteAllText(fullPath, asJson);
     }
 
+    private void SerializeAndWritePreviewIcons(MapPreviewIcons mapPreviewIcons, string path)
+    {
+      var dto = _mapper.Map<MapPreviewIcons, MapPreviewIconsDto>(mapPreviewIcons);
+      dto.Icons = dto.Icons
+        .OrderByDescending(x => x.IconType)
+        .ThenByDescending(x => x.X)
+        .ThenByDescending(x => x.Y)
+        .ToList();
+      var asJson = JsonSerializer.Serialize(dto, _jsonSerializerOptions);
+      File.WriteAllText(path, asJson);
+    }
+    
     private void SerializeAndWriteMapInfo(MapInfo mapInfo, MapInfoMapper mapInfoMapper, string path)
     {
       var dto = mapInfoMapper.MapToDto(mapInfo);
