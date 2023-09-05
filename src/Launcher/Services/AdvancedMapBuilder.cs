@@ -107,11 +107,8 @@ namespace Launcher.Services
         unit.CombatAcquisitionRange = 900;
         unit.CombatAttack1TargetsAllowed = new[] { Target.Bridge };
         unit.EditorDisplayAsNeutralHostile = true;
-        unit.StatsLevel = 0;
         unit.StatsRace = UnitRace.Creeps;
-        unit.StatsCanBeBuiltOn = false;
         unit.PathingPathingMap = @"PathTextures\4x4SimpleSolid.tga";
-        unit.StatsHitPointsRegenerationRate = 0;
       }
 
       map.UnitObjectData = objectDatabase.GetAllData().UnitData;
