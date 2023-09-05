@@ -25,5 +25,11 @@
     <ItemGroup>
       <ProjectReference Include="..\..\src\Launcher\Launcher.csproj" />
     </ItemGroup>
+    
+    <ItemGroup>
+        <Content Include="..\..\mapdata\**">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </Content>
+    </ItemGroup>
 
 </Project>
