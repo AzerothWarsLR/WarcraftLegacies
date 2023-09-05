@@ -1,6 +1,6 @@
 ﻿#nullable enable
-using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 using AutoMapper;
@@ -11,7 +11,6 @@ using Launcher.JsonConverters;
 using War3Net.Build;
 using War3Net.Build.Audio;
 using War3Net.Build.Environment;
-using War3Net.Build.Import;
 using War3Net.Build.Info;
 using War3Net.Build.Object;
 using War3Net.Build.Widget;
@@ -49,10 +48,7 @@ namespace Launcher.Services
       var triggerStrings = map.TriggerStrings.ToDictionary();
       SerializeAndWriteMapData(map, triggerStrings, outputFolderPath);
       
-      var importedFiles = map.ImportedFiles?.Files;
-      if (importedFiles != null) 
-        CopyImportedFiles(baseMapPath, importedFiles, outputFolderPath);
-      
+      CopyImportedFiles(baseMapPath, outputFolderPath);
       CopyUnserializableFiles(baseMapPath, outputFolderPath);
       CopyGameInterface(baseMapPath, triggerStrings, outputFolderPath);
     }
@@ -113,14 +109,24 @@ namespace Launcher.Services
         SerializeAndWriteUpgradeData(map.UpgradeSkinObjectData, objectDataMapper, true, outputFolderPath, UpgradeDataDirectoryPath, SkinDataDirectorySubPath);
     }
 
-    private static void CopyImportedFiles(string baseMapPath, List<ImportedFile> files, string outputFolderPath)
+    private static void CopyImportedFiles(string baseMapPath, string outputFolderPath)
     {
+      var importFileExtensions = new [] {".blp", ".mdx", ".mdl", ".toc", ".fdf", ".mp3", ".webp", ".slk"};
+      var files = Directory
+        .EnumerateFiles(baseMapPath, "*", SearchOption.AllDirectories)
+        .Where(file => importFileExtensions.Any(file.ToLower().EndsWith))
+        .ToList();
+
+      var unserializableFilePaths = GetUnserializableFilePaths().ToList();
       foreach (var file in files)
       {
-        var sourceFileName = $@"{baseMapPath}\{file.FullPath}";
-        var destinationFileName = $@"{outputFolderPath}\{ImportsPath}\{file.FullPath}";
+        var relativePath = Path.GetRelativePath(baseMapPath, file);
+        if (unserializableFilePaths.Contains(relativePath))
+          continue;
+        
+        var destinationFileName = $@"{outputFolderPath}\{ImportsPath}\{relativePath}";
         Directory.CreateDirectory(Path.GetDirectoryName(destinationFileName)!);
-        File.Copy(sourceFileName, destinationFileName, true);
+        File.Copy(file, destinationFileName, true);
       }
     }
     
