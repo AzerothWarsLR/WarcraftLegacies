@@ -16,7 +16,7 @@ namespace Launcher.IntegrityChecker
     {
       (Map, _) = MapDataProvider.GetMapData;
       AdvancedMapBuilder.AddCSharpCode(Map, @"..\..\..\..\..\src\WarcraftLegacies.Source\", new CompilerSettings());
-      ModelsUsedInMap = GetModelsUsedInMap(Map).ToHashSet();
+      ModelsUsedInMap = GetModelsUsedInMap(Map).OrderBy(x => x).ToHashSet();
     }
 
     private static IEnumerable<string> GetModelsUsedInMap(Map map)
@@ -26,7 +26,8 @@ namespace Launcher.IntegrityChecker
         .Concat(GetModelsUsedByDoodads(map.DoodadObjectData))
         .Concat(GetModelsUsedByBuffs(map.BuffSkinObjectData))
         .Concat(GetModelsUsedByDestructables(map.DestructableSkinObjectData))
-        .Concat(GetModelsUsedByScript(map.Script));
+        .Concat(GetModelsUsedByScript(map.Script))
+        .Select(x => x.NormalizeModelPath());
     }
 
     private static IEnumerable<string> GetModelsUsedByUnits(UnitObjectData unitObjectData)
@@ -87,8 +88,7 @@ namespace Launcher.IntegrityChecker
           .Replace("[", "")
           .Replace("]", "")
           .Replace(@"""", "")
-          .Replace(".mdl", ".mdx")
-          .CleanModelPath();
+          .Replace(".mdl", ".mdx");
     }
 
     private static bool IsModelField(ObjectDataModification modification) =>

@@ -12,14 +12,14 @@ public sealed class ImportFileTests : IClassFixture<ImportFilesTestFixture>
   }
   
   [Theory]
-  [MemberData(nameof(GetAllModels))]
+  [MemberData(nameof(GetAllImportedModels))]
   public void AllModels_AreInActiveUse(string relativePath)
   {
     var activeModels = _importFilesTestFixture.ModelsUsedInMap;
     activeModels.Should().Contain(relativePath);
   }
 
-  public static IEnumerable<object[]> GetAllModels()
+  public static IEnumerable<object[]> GetAllImportedModels()
   {
     foreach (var pathData in MapDataProvider.GetMapData.AdditionalFiles)
     {
@@ -27,7 +27,7 @@ public sealed class ImportFileTests : IClassFixture<ImportFilesTestFixture>
       {
         yield return new object[]
         {
-          pathData.RelativePath
+          pathData.RelativePath.NormalizeModelPath()
         };
       }
     }

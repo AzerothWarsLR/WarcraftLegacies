@@ -5,9 +5,9 @@
     public static bool IsModelPath(this string text) => 
       (text.EndsWith(".mdx") || text.EndsWith(".mdl")) && !text.ToLower().EndsWith("_portrait.mdx");
 
-    public static string CleanModelPath(this string text)
+    public static string NormalizeModelPath(this string text)
     {
-      return text.Replace("/", "\\");
+      return text.ToLower().Replace(@"\\", "\\").Replace("/", "\\");
     }
   }
 }
