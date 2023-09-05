@@ -14,9 +14,11 @@ namespace Launcher.IntegrityChecker
 
     public ImportFilesTestFixture()
     {
+      Console.WriteLine("a");
       (Map, _) = MapDataProvider.GetMapData;
       AdvancedMapBuilder.AddCSharpCode(Map, @"src\WarcraftLegacies.Source\", new CompilerSettings());
       ModelsUsedInMap = GetModelsUsedInMap(Map).OrderBy(x => x).ToHashSet();
+      Console.WriteLine("b");
     }
 
     private static IEnumerable<string> GetModelsUsedInMap(Map map)
