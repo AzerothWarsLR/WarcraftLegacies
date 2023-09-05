@@ -27,6 +27,7 @@ namespace Launcher.IntegrityChecker
         .Concat(GetModelsUsedByAbilities(map.AbilitySkinObjectData))
         .Concat(GetModelsUsedByDoodads(map.DoodadObjectData))
         .Concat(GetModelsUsedByBuffs(map.BuffSkinObjectData))
+        .Concat(GetModelsUsedByDestructables(map.DestructableSkinObjectData))
         .Concat(GetModelsUsedByScript(map.Script));
     }
 
@@ -60,6 +61,18 @@ namespace Launcher.IntegrityChecker
 
       return doodadObjectData.BaseDoodads
         .Concat(doodadObjectData.NewDoodads)
+        .SelectMany(x => x.Modifications)
+        .Where(x => modelFields.Contains(x.Id))
+        .Select(x => x.ValueAsString.Replace(".mdl", ".mdx"))
+        .ToList();
+    }
+    
+    private static IEnumerable<string> GetModelsUsedByDestructables(DestructableObjectData destructableObjectData)
+    {
+      var modelFields = new[] { 1818846818 };
+
+      return destructableObjectData.BaseDestructables
+        .Concat(destructableObjectData.NewDestructables)
         .SelectMany(x => x.Modifications)
         .Where(x => modelFields.Contains(x.Id))
         .Select(x => x.ValueAsString.Replace(".mdl", ".mdx"))
