@@ -39,7 +39,8 @@ public sealed class ImportFileTests : IClassFixture<MapTestFixture>
   {
     return GetModelsUsedByUnits(map.UnitSkinObjectData)
       .Concat(GetModelsUsedByAbilities(map.AbilitySkinObjectData))
-      .Concat(GetModelsUsedByDoodads(map.DoodadObjectData));
+      .Concat(GetModelsUsedByDoodads(map.DoodadObjectData))
+      .Concat(GetModelsUsedByBuffs(map.BuffSkinObjectData));
   }
   
   private static IEnumerable<string> GetModelsUsedByUnits(UnitObjectData unitObjectData)
@@ -72,6 +73,18 @@ public sealed class ImportFileTests : IClassFixture<MapTestFixture>
     
     return doodadObjectData.BaseDoodads
       .Concat(doodadObjectData.NewDoodads)
+      .SelectMany(x => x.Modifications)
+      .Where(x => modelFields.Contains(x.Id))
+      .Select(x => x.ValueAsString.Replace(".mdl", ".mdx"))
+      .ToList();
+  }
+  
+  private static IEnumerable<string> GetModelsUsedByBuffs(BuffObjectData buffObjectData)
+  {
+    var modelFields = new[] { 1952543846 };
+    
+    return buffObjectData.BaseBuffs
+      .Concat(buffObjectData.NewBuffs)
       .SelectMany(x => x.Modifications)
       .Where(x => modelFields.Contains(x.Id))
       .Select(x => x.ValueAsString.Replace(".mdl", ".mdx"))
