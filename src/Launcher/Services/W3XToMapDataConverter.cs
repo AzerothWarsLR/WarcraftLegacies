@@ -110,18 +110,18 @@ namespace Launcher.Services
 
     private static void CopyImportedFiles(string baseMapPath, string outputFolderPath)
     {
-      var importFileExtensions = new [] {".blp", ".mdx", ".mdl", ".toc", ".fdf", ".txt"};
+      var importFileExtensions = new [] {".blp", ".mdx", ".mdl", ".toc", ".fdf", ".txt", ".mp3", ".webp", ".slk"};
       var files = Directory
-        .GetFiles(baseMapPath)
+        .EnumerateFiles(baseMapPath, "*", SearchOption.AllDirectories)
         .Where(file => importFileExtensions.Any(file.ToLower().EndsWith))
         .ToList();
       
       foreach (var file in files)
       {
-        var sourceFileName = $@"{baseMapPath}\{file}";
-        var destinationFileName = $@"{outputFolderPath}\{ImportsPath}\{file}";
+        var relativePath = Path.GetRelativePath(baseMapPath, file);
+        var destinationFileName = $@"{outputFolderPath}\{ImportsPath}\{relativePath}";
         Directory.CreateDirectory(Path.GetDirectoryName(destinationFileName)!);
-        File.Copy(sourceFileName, destinationFileName, true);
+        File.Copy(file, destinationFileName, true);
       }
     }
     
