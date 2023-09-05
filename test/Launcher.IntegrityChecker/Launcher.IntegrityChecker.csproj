@@ -28,7 +28,7 @@
 
     <ItemGroup>
         <None Include="$(SolutionDir)mapdata\**"
-              CopyToOutputDirectory="PreserveNewest"
+              CopyToOutputDirectory="Always"
               LinkBase="mapdata\" />
     </ItemGroup>
 
