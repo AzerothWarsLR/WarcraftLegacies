@@ -49,6 +49,7 @@ namespace Launcher.Services
       SerializeAndWriteMapData(map, triggerStrings, outputFolderPath);
       
       CopyImportedFiles(baseMapPath, outputFolderPath);
+      CopyUnserializableFiles(baseMapPath, outputFolderPath);
       CopyGameInterface(baseMapPath, triggerStrings, outputFolderPath);
     }
 
@@ -123,6 +124,13 @@ namespace Launcher.Services
         Directory.CreateDirectory(Path.GetDirectoryName(destinationFileName)!);
         File.Copy(file, destinationFileName, true);
       }
+    }
+    
+    private static void CopyUnserializableFiles(string baseMapPath, string outputFolderPath)
+    {
+      foreach (var filePath in GetUnserializableFilePaths())
+        if (File.Exists($"{baseMapPath}/{filePath}"))
+          File.Copy($"{baseMapPath}/{filePath}", $@"{outputFolderPath}\{filePath}", true);
     }
     
     private static void CopyGameInterface(string baseMapPath, TriggerStringDictionary triggerStringDictionary, string outputFolderPath)
