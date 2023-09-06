@@ -8,6 +8,7 @@ namespace WarcraftLegacies.Source.UnitTypes
     {
       SubSetupA();
       SubSetupB();
+      SubSetupPortals();
     }
 
     private static void SubSetupA()
@@ -103,6 +104,34 @@ namespace WarcraftLegacies.Source.UnitTypes
       UnitType.Register(new UnitType(Constants.UNIT_E011_KALDOREI_DOCKS_SENTINEL_SHIPYARD)
       {
         Category = UnitCategory.Shipyard
+      });
+    }
+
+    private static void SubSetupPortals()
+    {
+      UnitType.Register(new UnitType(Constants.UNIT_N03H_DEATH_GATE_WAYGATE)
+      {
+        Category = UnitCategory.Portal
+      });
+      
+      UnitType.Register(new UnitType(Constants.UNIT_N036_DARK_PORTAL_WAYGATE)
+      {
+        Category = UnitCategory.Portal
+      });
+      
+      UnitType.Register(new UnitType(Constants.UNIT_N03J_BLACK_PORTAL_AURA_CONTROL_NEXUS)
+      {
+        Category = UnitCategory.Portal
+      });
+      
+      UnitType.Register(new UnitType(Constants.UNIT_N05J_DARK_PORTAL_AURA_CONTROL_NEXUS)
+      {
+        Category = UnitCategory.Portal
+      });
+        
+      UnitType.Register(new UnitType(Constants.ABILITY_A0IR_UNHOLY_AURA_CONTROL_NEXUS_DARK_PORTAL)
+      {
+        Category = UnitCategory.Portal
       });
     }
   }

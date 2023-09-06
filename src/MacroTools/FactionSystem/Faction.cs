@@ -699,7 +699,7 @@ namespace MacroTools.FactionSystem
           continue;
         }
 
-        if (!CapitalManager.UnitIsCapital(unit) && !CapitalManager.UnitIsProtector(unit) && !ControlPointManager.Instance.UnitIsControlPoint(unit) && !loopUnitType.Meta)
+        if (!CapitalManager.UnitIsCapital(unit) && !CapitalManager.UnitIsProtector(unit) && !ControlPointManager.Instance.UnitIsControlPoint(unit) && !loopUnitType.Meta && loopUnitType.Category != UnitCategory.Portal)
         {
           if (!IsUnitType(unit, UNIT_TYPE_STRUCTURE))
           {
