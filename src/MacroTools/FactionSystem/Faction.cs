@@ -530,7 +530,7 @@ namespace MacroTools.FactionSystem
         if (!UnitAlive(unit))
           RemoveUnit(unit);
 
-        if (!tempUnitType?.Meta == true)
+        if (!tempUnitType?.NeverDelete == true)
           SetUnitOwner(unit, Player(GetBJPlayerNeutralVictim()), false);
       }
     }
@@ -699,7 +699,7 @@ namespace MacroTools.FactionSystem
           continue;
         }
 
-        if (!CapitalManager.UnitIsCapital(unit) && !CapitalManager.UnitIsProtector(unit) && !ControlPointManager.Instance.UnitIsControlPoint(unit) && !loopUnitType.Meta)
+        if (!CapitalManager.UnitIsCapital(unit) && !CapitalManager.UnitIsProtector(unit) && !ControlPointManager.Instance.UnitIsControlPoint(unit) && !loopUnitType.NeverDelete)
         {
           if (!IsUnitType(unit, UNIT_TYPE_STRUCTURE))
           {
