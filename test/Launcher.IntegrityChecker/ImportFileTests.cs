@@ -18,11 +18,11 @@ public sealed class ImportFileTests : IClassFixture<ImportFilesTestFixture>
 
   public static IEnumerable<object[]> GetAllImportedModels()
   {
-    var additionalFiles = MapDataProvider.GetMapData.AdditionalFiles;
+    var additionalFiles = MapDataProvider.GetMapData().AdditionalFiles;
     if (!additionalFiles.Any())
       throw new InvalidOperationException($"{nameof(MapDataProvider)} returned no additional files to test.");
 
-    foreach (var pathData in MapDataProvider.GetMapData.AdditionalFiles)
+    foreach (var pathData in MapDataProvider.GetMapData().AdditionalFiles)
     {
       if (pathData.RelativePath.IsModelPath())
       {
