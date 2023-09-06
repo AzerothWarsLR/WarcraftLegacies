@@ -16,7 +16,7 @@ namespace Launcher.IntegrityChecker
     {
       Console.WriteLine("a");
       (Map, _) = MapDataProvider.GetMapData;
-      //AdvancedMapBuilder.AddCSharpCode(Map, @"src\WarcraftLegacies.Source\", new CompilerSettings());
+      AdvancedMapBuilder.AddCSharpCode(Map, @"src\WarcraftLegacies.Source\", new CompilerSettings());
       ModelsUsedInMap = GetModelsUsedInMap(Map).OrderBy(x => x).ToHashSet();
       Console.WriteLine("b");
     }
@@ -28,7 +28,7 @@ namespace Launcher.IntegrityChecker
         .Concat(GetModelsUsedByDoodads(map.DoodadObjectData))
         .Concat(GetModelsUsedByBuffs(map.BuffSkinObjectData))
         .Concat(GetModelsUsedByDestructables(map.DestructableSkinObjectData))
-        //.Concat(GetModelsUsedByScript(map.Script))
+        .Concat(GetModelsUsedByScript(map.Script))
         .Select(x => x.NormalizeModelPath());
     }
 
