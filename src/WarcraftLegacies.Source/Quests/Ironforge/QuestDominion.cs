@@ -15,11 +15,11 @@ namespace WarcraftLegacies.Source.Quests.Ironforge
 {
   public sealed class QuestDominion : QuestData
   {
-    private readonly List<unit> _rescueUnits = new();
+    private readonly List<unit> _rescueUnits;
 
     public QuestDominion(Rectangle rescueRect) : base("Dwarven Dominion",
       "The Dwarven Dominion must be established before Ironforge can join the war.",
-      "ReplaceableTextures\\CommandButtons\\BTNDwarvenFortress.blp")
+      @"ReplaceableTextures\CommandButtons\BTNDwarvenFortress.blp")
     {
       AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(FourCC("n017"))));
       AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(FourCC("n014"))));

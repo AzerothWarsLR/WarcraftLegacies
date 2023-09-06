@@ -14,14 +14,14 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
   {
     private readonly LegendaryHero _maiev;
     private readonly Capital _vaultOfTheWardens;
-    private readonly List<unit> _rescueUnits = new();
+    private readonly List<unit> _rescueUnits;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestMaievOutland"/> class
     /// </summary>
     public QuestMaievOutland(Rectangle rescueRect, LegendaryHero maiev, Capital vaultOfTheWardens) : base("Driven by Vengeance",
       "Maiev drive for vengeance leads her to chase Illidan all the way to other worlds.",
-      "ReplaceableTextures\\CommandButtons\\BTNMaievArmor.blp")
+      @"ReplaceableTextures\CommandButtons\BTNMaievArmor.blp")
     {
       _maiev = maiev;
       _vaultOfTheWardens = vaultOfTheWardens;
