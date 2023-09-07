@@ -38,15 +38,25 @@ namespace MacroTools.Extensions
 
     private float _partialGold;
     private float _partialLumber;
-
-    private PlayerData(player player)
-    {
-      Player = player;
-      EliminationTurns = 0;
-    }
-
+    
     private player Player { get; }
 
+    /// <summary>
+    /// Fired when the player's income changes.
+    /// </summary>
+    public event EventHandler<PlayerData>? IncomeChanged;
+    
+    /// <summary>
+    /// Fired when the <see cref="player" />'s <see cref="ControlPoint" />s change
+    /// </summary>
+    public event EventHandler<PlayerData>? ControlPointsChanged;
+
+    /// <summary>
+    /// Fired when any player changes <see cref="Faction"/>.
+    /// Todo: remove this and use the instance version instead.
+    /// </summary>
+    public static event EventHandler<PlayerFactionChangeEventArgs>? FactionChange;
+    
     /// <summary>
     /// Controls who the player is allied to.
     /// </summary>
@@ -157,6 +167,12 @@ namespace MacroTools.Extensions
     /// <summary>The number of extra <see cref="ControlPoint.ControlLevel"/>s the player gets each turn.</summary>
     public float ControlLevelPerTurnBonus { get; set; }
 
+    private PlayerData(player player)
+    {
+      Player = player;
+      EliminationTurns = 0;
+    }
+    
     /// <summary>
     /// Adds <see cref="ControlPoint" /> to list of this <see cref="player" />'s controlpoints, updates the <see cref="Team" /> total and fires any events subscribed to ControlPointsChanged
     /// </summary>
@@ -174,22 +190,6 @@ namespace MacroTools.Extensions
       ControlPoints.Remove(controlPoint);
       ControlPointsChanged?.Invoke(this, this);
     }
-
-    /// <summary>
-    /// Fired when the player's income changes.
-    /// </summary>
-    public event EventHandler<PlayerData>? IncomeChanged;
-    
-    /// <summary>
-    /// Fired when the <see cref="player" />'s <see cref="ControlPoint" />s change
-    /// </summary>
-    public event EventHandler<PlayerData>? ControlPointsChanged;
-
-    /// <summary>
-    /// Fired when any player changes <see cref="Faction"/>.
-    /// Todo: remove this and use the instance version instead.
-    /// </summary>
-    public static event EventHandler<PlayerFactionChangeEventArgs>? FactionChange;
 
     public int GetObjectLevel(int obj) => _objectLevels.ContainsKey(obj) ? _objectLevels[obj] : 0;
 
