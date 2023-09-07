@@ -15,8 +15,8 @@ namespace MacroTools.DialogueSystem
     public SoundWrapper Sound { get; }
 
     /// <inheritdoc />
-    public float Length => GetSoundDuration(Sound.Sound);
-    
+    public float Length => GetSoundDuration(Sound.Sound) / 1000f;
+
     /// <summary>
     /// Initializes a new instance of the <see cref="Dialogue"/> class.
     /// </summary>
@@ -35,13 +35,13 @@ namespace MacroTools.DialogueSystem
     {
       if (whichPlayer != null)
       {
-        Sound.Play(whichPlayer, true);
+        Sound.Play(whichPlayer, false);
         DisplayTextToPlayer(whichPlayer, 0, 0, $"|cffffcc00{_speaker}:|r {_caption}");
       }
       else
       {
         DisplayTextToPlayer(GetLocalPlayer(), 0, 0, $"|cffffcc00{_speaker}:|r {_caption}");
-        Sound.Play(true);
+        Sound.Play(false);
       }
     }
   }

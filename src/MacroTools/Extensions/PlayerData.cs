@@ -183,22 +183,22 @@ namespace MacroTools.Extensions
     internal void QueueDialogue(IHasPlayableDialogue dialogue)
     {
       _dialogueQueue.Enqueue(dialogue);
-      
+
       if (_dialoguePlaying)
         return;
-
+      
       _dialoguePlaying = true;
-
       CreateTrigger().AddAction(() =>
       {
         while (_dialogueQueue.Any())
         {
-          dialogue.Play(_player);
-          TriggerSleepAction(dialogue.Length);
+          var nextDialogue = _dialogueQueue.Dequeue();
+          nextDialogue.Play(_player);
+          TriggerSleepAction(nextDialogue.Length);
           TriggerSleepAction(5f);
         }
-        GetTriggeringTrigger().Destroy();
         _dialoguePlaying = false;
+        GetTriggeringTrigger().Destroy();
       }).Execute();
     }
     
