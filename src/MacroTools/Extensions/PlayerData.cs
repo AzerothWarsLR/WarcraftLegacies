@@ -152,7 +152,7 @@ namespace MacroTools.Extensions
     /// <summary>
     /// Control points the player owns
     /// </summary>
-    public List<ControlPoint> ControlPoints { get; set; } = new();
+    public List<ControlPoint> ControlPoints { get; } = new();
 
     /// <summary>
     /// Adds <see cref="ControlPoint" /> to list of this <see cref="player" />'s controlpoints, updates the <see cref="Team" /> total and fires any events subscribed to ControlPointsChanged
