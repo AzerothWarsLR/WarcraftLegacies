@@ -16,7 +16,7 @@ namespace MacroTools.SpellSystem
       }
       UnitType.Register(new UnitType(FourCC("u00X"))
       {
-        Meta = true
+        NeverDelete = true
       });
     }
 

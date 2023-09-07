@@ -10,6 +10,10 @@ namespace MacroTools
     /// <summary>
     /// The unit can train boats.
     /// </summary>
-    Shipyard
+    Shipyard,
+    /// <summary>
+    /// This unit is a portal
+    /// </summary>
+    Portal
   }
 }
