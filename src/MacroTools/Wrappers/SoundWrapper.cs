@@ -14,6 +14,7 @@ namespace MacroTools.Wrappers
     
     private bool _disposed;
 
+    /// <summary>Initializes a new instance of the <see cref="SoundWrapper"/> class.</summary>
     public SoundWrapper(string fileName, bool looping = false, bool is3D = false, bool stopWhenOutOfRange = true,
       int fadeInRate = 0, int fadeOutRate = 0, SoundEax soundEax = SoundEax.Default)
     {

@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using MacroTools.ControlPointSystem;
+using MacroTools.DialogueSystem;
 using MacroTools.FactionSystem;
 using static War3Api.Common;
 
@@ -33,13 +35,15 @@ namespace MacroTools.Extensions
     private float _goldPerMinute;
     private float _bonusGoldPerMinute;
 
+    private readonly player _player;
     private Team? _team;
     private Faction? _faction;
 
     private float _partialGold;
     private float _partialLumber;
     
-    private player Player { get; }
+    private readonly Queue<IHasPlayableDialogue> _dialogueQueue = new();
+    private bool _dialoguePlaying;
 
     /// <summary>
     /// Fired when the player's income changes.
@@ -67,15 +71,15 @@ namespace MacroTools.Extensions
       {
         if (_team != null)
         {
-          _team?.RemovePlayer(Player);
-          PlayerLeftTeam?.Invoke(this, new PlayerChangeTeamEventArgs(Player, _team));
+          _team?.RemovePlayer(_player);
+          PlayerLeftTeam?.Invoke(this, new PlayerChangeTeamEventArgs(_player, _team));
         }
 
         if (value == null) return;
         var prevTeam = _team;
         _team = value;
-        value.AddPlayer(Player);
-        PlayerJoinedTeam?.Invoke(this, new PlayerChangeTeamEventArgs(Player, prevTeam));
+        value.AddPlayer(_player);
+        PlayerJoinedTeam?.Invoke(this, new PlayerChangeTeamEventArgs(_player, prevTeam));
       }
     }
     
@@ -102,21 +106,21 @@ namespace MacroTools.Extensions
         {
           if (value.Player == null)
           {
-            Player.SetColor(value.PlayerColor, true);
+            _player.SetColor(value.PlayerColor, true);
             _faction = value;
             //Enforce referential integrity
-            if (value.Player != Player)
-              value.Player = Player;
+            if (value.Player != _player)
+              value.Player = _player;
           }
           else
           {
-            throw new Exception("Attempted to Person " + GetPlayerName(Player) +
+            throw new Exception("Attempted to Person " + GetPlayerName(_player) +
                                 " to already occupied faction with name " + value.Name);
           }
         }
 
-        FactionChange?.Invoke(this, new PlayerFactionChangeEventArgs(Player, prevFaction));
-        ChangedFaction?.Invoke(this, new PlayerFactionChangeEventArgs(Player, prevFaction));
+        FactionChange?.Invoke(this, new PlayerFactionChangeEventArgs(_player, prevFaction));
+        ChangedFaction?.Invoke(this, new PlayerFactionChangeEventArgs(_player, prevFaction));
       }
     }
 
@@ -152,7 +156,7 @@ namespace MacroTools.Extensions
       {
         if (value < 0)
           throw new ArgumentOutOfRangeException(
-            $"Tried to assign a negative {nameof(BaseIncome)} value to {GetPlayerName(Player)}.");
+            $"Tried to assign a negative {nameof(BaseIncome)} value to {GetPlayerName(_player)}.");
 
         _goldPerMinute = value;
         IncomeChanged?.Invoke(this, this);
@@ -169,8 +173,31 @@ namespace MacroTools.Extensions
 
     private PlayerData(player player)
     {
-      Player = player;
+      _player = player;
       EliminationTurns = 0;
+    }
+    
+    /// <summary>
+    /// Queues the <see cref="IHasPlayableDialogue"/> for this player, playing it the next time there is nothing else playing.
+    /// </summary>
+    internal void QueueDialogue(IHasPlayableDialogue dialogue)
+    {
+      _dialogueQueue.Enqueue(dialogue);
+      
+      if (_dialoguePlaying)
+        return;
+
+      _dialoguePlaying = true;
+
+      CreateTrigger().AddAction(() =>
+      {
+        while (_dialogueQueue.Any())
+        {
+          dialogue.Play(_player);
+          TriggerSleepAction(dialogue.Length);
+        }
+        GetTriggeringTrigger().Destroy();
+      }).Execute();
     }
     
     /// <summary>
@@ -195,7 +222,7 @@ namespace MacroTools.Extensions
 
     public void SetObjectLevel(int obj, int level)
     {
-      var objectLimit = Player.GetObjectLimit(obj);
+      var objectLimit = _player.GetObjectLimit(obj);
       
       if (level > objectLimit)
         throw new ArgumentException(
@@ -208,19 +235,19 @@ namespace MacroTools.Extensions
 
       if (objectLimit < 1)
       {
-        SetPlayerTechMaxAllowed(Player, obj, 100);
+        SetPlayerTechMaxAllowed(_player, obj, 100);
         revertAfter = true;
       }
 
-      SetPlayerTechResearched(Player, obj, Math.Max(level, 0));
+      SetPlayerTechResearched(_player, obj, Math.Max(level, 0));
 
       _objectLevels[obj] = level;
       if (revertAfter)
-        SetPlayerTechMaxAllowed(Player, obj, 0);
+        SetPlayerTechMaxAllowed(_player, obj, 0);
       
-      if (GetPlayerTechCount(Player, obj, false) != Math.Max(level, 0))
+      if (GetPlayerTechCount(_player, obj, false) != Math.Max(level, 0))
         throw new InvalidOperationException(
-          $"Failed to set the object level of {GetObjectName(obj)} to {level}; it is {GetPlayerTechCount(Player, obj, false)} instead.");
+          $"Failed to set the object level of {GetObjectName(obj)} to {level}; it is {GetPlayerTechCount(_player, obj, false)} instead.");
     }
 
     public int GetObjectLimit(int id) => _objectLimits.TryGetValue(id, out var limit) ? limit : 0;
@@ -230,11 +257,11 @@ namespace MacroTools.Extensions
       _objectLimits[id] = limit;
 
       if (limit >= Faction.UNLIMITED)
-        SetPlayerTechMaxAllowed(Player, id, -1);
+        SetPlayerTechMaxAllowed(_player, id, -1);
       else if (limit <= 0)
-        SetPlayerTechMaxAllowed(Player, id, 0);
+        SetPlayerTechMaxAllowed(_player, id, 0);
       else
-        SetPlayerTechMaxAllowed(Player, id, limit);
+        SetPlayerTechMaxAllowed(_player, id, limit);
     }
 
     public void ModObjectLimit(int id, int limit) =>
@@ -245,8 +272,8 @@ namespace MacroTools.Extensions
       var fullGold = (float) Math.Floor(x);
       var remainderGold = x - fullGold;
 
-      SetPlayerState(Player, PLAYER_STATE_RESOURCE_GOLD,
-        GetPlayerState(Player, PLAYER_STATE_RESOURCE_GOLD) + R2I(fullGold));
+      SetPlayerState(_player, PLAYER_STATE_RESOURCE_GOLD,
+        GetPlayerState(_player, PLAYER_STATE_RESOURCE_GOLD) + R2I(fullGold));
       _partialGold += remainderGold;
 
       while (true)
@@ -254,7 +281,7 @@ namespace MacroTools.Extensions
         if (_partialGold < 1) break;
 
         _partialGold -= 1;
-        SetPlayerState(Player, PLAYER_STATE_RESOURCE_GOLD, GetPlayerState(Player, PLAYER_STATE_RESOURCE_GOLD) + 1);
+        SetPlayerState(_player, PLAYER_STATE_RESOURCE_GOLD, GetPlayerState(_player, PLAYER_STATE_RESOURCE_GOLD) + 1);
       }
     }
 
@@ -263,8 +290,8 @@ namespace MacroTools.Extensions
       var fullLumber = (float) Math.Floor(x);
       var remainderLumber = x - fullLumber;
 
-      SetPlayerState(Player, PLAYER_STATE_RESOURCE_LUMBER,
-        GetPlayerState(Player, PLAYER_STATE_RESOURCE_LUMBER) + R2I(fullLumber));
+      SetPlayerState(_player, PLAYER_STATE_RESOURCE_LUMBER,
+        GetPlayerState(_player, PLAYER_STATE_RESOURCE_LUMBER) + R2I(fullLumber));
       _partialLumber += remainderLumber;
 
       while (true)
@@ -272,7 +299,7 @@ namespace MacroTools.Extensions
         if (_partialLumber < 1) break;
 
         _partialLumber -= 1;
-        SetPlayerState(Player, PLAYER_STATE_RESOURCE_LUMBER, GetPlayerState(Player, PLAYER_STATE_RESOURCE_LUMBER) + 1);
+        SetPlayerState(_player, PLAYER_STATE_RESOURCE_LUMBER, GetPlayerState(_player, PLAYER_STATE_RESOURCE_LUMBER) + 1);
       }
     }
 
@@ -293,7 +320,7 @@ namespace MacroTools.Extensions
     /// </summary>
     private static void Register(PlayerData playerData)
     {
-      ById.Add(GetPlayerId(playerData.Player), playerData);
+      ById.Add(GetPlayerId(playerData._player), playerData);
     }
   }
 }

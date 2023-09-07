@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using MacroTools.Wrappers;
+﻿using MacroTools.Wrappers;
 using static War3Api.Common;
 
 namespace MacroTools.DialogueSystem
@@ -12,10 +11,11 @@ namespace MacroTools.DialogueSystem
     private readonly string _caption;
     private readonly string _speaker;
     
-    /// <summary>
-    /// The <see cref="SoundWrapper"/> played by this <see cref="Dialogue"/>.
-    /// </summary>
+    /// <summary>The <see cref="SoundWrapper"/> played by this <see cref="Dialogue"/>.</summary>
     public SoundWrapper Sound { get; }
+
+    /// <inheritdoc />
+    public float Length => GetSoundDuration(Sound.Sound);
     
     /// <summary>
     /// Initializes a new instance of the <see cref="Dialogue"/> class.
@@ -30,16 +30,13 @@ namespace MacroTools.DialogueSystem
       Sound = new SoundWrapper(soundFile, soundEax: SoundEax.HeroAcks);
     }
 
-    /// <summary>
-    /// Plays the <see cref="Dialogue"/> to eligible audience members.
-    /// </summary>
-    public void Play(List<player>? players)
+    /// <summary>Plays the <see cref="Dialogue"/> for the player.</summary>
+    public void Play(player? whichPlayer)
     {
-      if (players != null)
+      if (whichPlayer != null)
       {
-        Sound.Play(players.Contains, true);
-        foreach (var player in players) 
-          DisplayTextToPlayer(player, 0, 0, $"|cffffcc00{_speaker}:|r {_caption}");
+        Sound.Play(conditionPlayer => whichPlayer == conditionPlayer, true);
+        DisplayTextToPlayer(whichPlayer, 0, 0, $"|cffffcc00{_speaker}:|r {_caption}");
       }
       else
       {
