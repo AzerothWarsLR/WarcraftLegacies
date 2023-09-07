@@ -153,6 +153,9 @@ namespace MacroTools.Extensions
     /// Control points the player owns
     /// </summary>
     public List<ControlPoint> ControlPoints { get; } = new();
+    
+    /// <summary>The number of extra <see cref="ControlPoint.ControlLevel"/>s the player gets each turn.</summary>
+    public float ControlLevelPerTurnBonus { get; set; }
 
     /// <summary>
     /// Adds <see cref="ControlPoint" /> to list of this <see cref="player" />'s controlpoints, updates the <see cref="Team" /> total and fires any events subscribed to ControlPointsChanged
@@ -171,11 +174,6 @@ namespace MacroTools.Extensions
       ControlPoints.Remove(controlPoint);
       ControlPointsChanged?.Invoke(this, this);
     }
-
-    /// <summary>
-    /// The number of extra <see cref="ControlPoint.ControlLevel"/>s the player gets each turn.
-    /// </summary>
-    public float ControlLevelPerTurnBonus { get; set; }
 
     /// <summary>
     /// Fired when the player's income changes.
