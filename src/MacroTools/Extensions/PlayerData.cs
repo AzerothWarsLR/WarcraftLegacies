@@ -157,7 +157,6 @@ namespace MacroTools.Extensions
     /// <summary>
     /// Adds <see cref="ControlPoint" /> to list of this <see cref="player" />'s controlpoints, updates the <see cref="Team" /> total and fires any events subscribed to ControlPointsChanged
     /// </summary>
-    /// <param name="controlPoint"></param>
     public void AddControlPoint(ControlPoint controlPoint)
     {
       ControlPoints.Add(controlPoint);
@@ -167,7 +166,6 @@ namespace MacroTools.Extensions
     /// <summary>
     /// Removes <see cref="ControlPoint" /> from list of this <see cref="player" />'s controlpoints, updates the <see cref="Team" /> total and fires any events subscribed to ControlPointsChanged
     /// </summary>
-    /// <param name="controlPoint"></param>
     public void RemoveControlPoint(ControlPoint controlPoint)
     {
       ControlPoints.Remove(controlPoint);
