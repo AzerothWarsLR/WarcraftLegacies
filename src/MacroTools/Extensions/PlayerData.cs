@@ -198,6 +198,7 @@ namespace MacroTools.Extensions
           TriggerSleepAction(5f);
         }
         GetTriggeringTrigger().Destroy();
+        _dialoguePlaying = false;
       }).Execute();
     }
     
