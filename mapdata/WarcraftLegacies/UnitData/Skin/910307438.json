@@ -12,12 +12,12 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_3946"
+      "Value": "X"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_18524"
+      "Value": "Upgrade to Boulder Tower"
     },
     {
       "Id": 1935832437,
@@ -27,17 +27,17 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_18570"
+      "Value": "Fires massive boulders upon its foes.|n|cfff5962dUpgrades Into:|R Improved Boulder Tower|n|n|cffffcc00Attacks land units.|r"
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_437"
+      "Value": "(Frostwolf)"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_14744"
+      "Value": "Control Point Defender"
     }
   ]
 }

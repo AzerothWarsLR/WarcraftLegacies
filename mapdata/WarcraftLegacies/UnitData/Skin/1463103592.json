@@ -18,12 +18,12 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_830"
+      "Value": "Trade Lumber for Gold"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_915"
+      "Value": "Trade Lumber for Gold"
     },
     {
       "Id": 1651864693,
@@ -43,7 +43,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_5105"
+      "Value": "Q"
     }
   ]
 }

@@ -17,7 +17,7 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_12066"
+      "Value": "(Green - Sylvanas. Light Blue - Shandris)"
     },
     {
       "Id": 1952542049,
@@ -27,7 +27,7 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_9280"
+      "Value": "Multi Shot"
     },
     {
       "Id": 1918988897,
@@ -41,53 +41,53 @@
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_11717"
+      "Value": "R"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_9282"
+      "Value": "Learn Multi Shot - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_1803"
+      "Value": "The hero\u0027s bow expertise allows them to shoot multiple arrows at once. |n|n|cffffcc00Level 1|r - Enables the release of 2 arrows at once.|n|cffffcc00Level 2|r - Enables the release of 3 arrows at once.|n|cffffcc00Level 3|r - Enables the release of 4 arrows at once."
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_12071"
+      "Value": "Multi Shot - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_1835"
+      "Value": "Multi Shot - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_1850"
+      "Value": "Multi Shot - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_12074"
+      "Value": "The hero fires multiple arrows at targets. A total of \u003CA047,DataC1\u003E arrows are shot."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_1917"
+      "Value": "The hero fires multiple arrows at targets. A total of \u003CA047,DataC2\u003E arrows are shot."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_1945"
+      "Value": "The hero fires multiple arrows at targets. A total of \u003CA047,DataC3\u003E arrows are shot."
     }
   ]
 }

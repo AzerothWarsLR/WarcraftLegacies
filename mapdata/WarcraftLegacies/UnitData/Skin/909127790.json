@@ -13,7 +13,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_13123"
+      "Value": "(sunfury)"
     },
     {
       "Id": 1818520949,
@@ -33,17 +33,17 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_20822"
+      "Value": "Ancient of the Arcane"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_20834"
+      "Value": "Train Ancient of the Arcane"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_1948"
+      "Value": "Ancient disformed by arcane transformation.|n|cfff5962dAbilities:|R Arcane Bombardment, Call Treant, Arcane Ward, Mana Shield, Resistant Skin|n|cff99b4d1Can only train 2.|r|n|cffffcc00Attacks land units.|r"
     },
     {
       "Id": 1684960117,
@@ -83,7 +83,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_2285"
+      "Value": "W"
     },
     {
       "Id": 1919705973,

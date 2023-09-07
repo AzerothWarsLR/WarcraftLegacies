@@ -13,24 +13,24 @@
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_13813"
+      "Value": "Q"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_15255"
+      "Value": "Close Gate"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_8492"
+      "Value": "Close Gate (|cffffcc00Q|r)"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_12671"
+      "Value": "Closes this Gate"
     }
   ]
 }

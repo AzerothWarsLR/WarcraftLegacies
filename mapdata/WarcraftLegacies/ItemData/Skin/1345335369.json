@@ -21,27 +21,27 @@
     {
       "Id": 1936024681,
       "Type": 3,
-      "Value": "TRIGSTR_4251"
+      "Value": "Summons workers."
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_10415"
+      "Value": "X"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_4304"
+      "Value": "Summon Fel Orc Workers"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_14859"
+      "Value": "Purchase Summon Workers"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_4301"
+      "Value": "Summons workers."
     }
   ]
 }

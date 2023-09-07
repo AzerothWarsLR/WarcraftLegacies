@@ -20,7 +20,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_457"
+      "Value": "(Fel Horde)"
     },
     {
       "Id": 1818520949,
@@ -34,7 +34,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_291"
+      "Value": "R"
     },
     {
       "Id": 828468597,
@@ -49,17 +49,17 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_459"
+      "Value": "Warbringer"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_460"
+      "Value": "Train Warbringer"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_461"
+      "Value": "Remnant Amani berserker in service to the Fel Horde.|n|cfff5962dAbilities:|R Berserk|n|n|cff99b4d1Can only train 12.|r|n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Id": 1684960117,

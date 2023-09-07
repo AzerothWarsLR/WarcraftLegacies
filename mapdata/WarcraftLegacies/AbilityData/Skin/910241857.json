@@ -13,29 +13,29 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_10738"
+      "Value": "(Grey - Goblin Sapper)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_11504"
+      "Value": "W"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_10740"
+      "Value": "Suicide Shield"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_10741"
+      "Value": "Activate Suicide Shield"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_10742"
+      "Value": "The Goblin Sapper becomes invulnerable for 3 seconds, allowing it to strike targets otherwise unassailable."
     },
     {
       "Id": 1918989665,
@@ -45,7 +45,7 @@
     {
       "Id": 1802007905,
       "Type": 3,
-      "Value": "TRIGSTR_11505"
+      "Value": "W"
     }
   ]
 }

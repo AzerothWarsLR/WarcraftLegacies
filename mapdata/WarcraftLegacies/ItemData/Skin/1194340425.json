@@ -21,27 +21,27 @@
     {
       "Id": 1936024681,
       "Type": 3,
-      "Value": "TRIGSTR_16513"
+      "Value": "Summons Farmers"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_12423"
+      "Value": "X"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_1224"
+      "Value": "Summon Farmers"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_16527"
+      "Value": "Purchase Summon Farmers"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_4311"
+      "Value": "Summons workers."
     }
   ]
 }

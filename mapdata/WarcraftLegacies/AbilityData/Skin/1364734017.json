@@ -12,29 +12,29 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_18972"
+      "Value": "(Storm Terror, Cloud)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_17908"
+      "Value": "Q"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_18973"
+      "Value": "Squall"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_18974"
+      "Value": "Squall"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_18975"
+      "Value": "Creates a small cloud that slows units by 50% and give them a 15% chance to miss attacks. |nLasts \u003CA0XQ,Dur1\u003E seconds."
     }
   ]
 }

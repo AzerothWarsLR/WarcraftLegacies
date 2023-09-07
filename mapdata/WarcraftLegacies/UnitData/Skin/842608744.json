@@ -8,7 +8,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_12690"
+      "Value": "(Kul Tiras)"
     },
     {
       "Id": 1818520949,
@@ -18,7 +18,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_4925"
+      "Value": "E"
     },
     {
       "Id": 1768320117,
@@ -41,17 +41,17 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_16626"
+      "Value": "Order Inquisitor"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_16627"
+      "Value": "Train Order Inquisitor"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_7768"
+      "Value": "Merciless warriors of the Order of Ember.|n|cfff5962dAbilities:|r Holy Light, Divine Shield, Consecrated Strikes, War Plating|n|n|cff99b4d1Can only train 4.|r|n|cffffcc00Attacks land units.|r"
     },
     {
       "Id": 1684960117,

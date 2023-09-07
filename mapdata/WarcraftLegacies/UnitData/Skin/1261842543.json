@@ -13,7 +13,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_2784"
+      "Value": "(Stormwind)"
     },
     {
       "Id": 1818520949,
@@ -27,7 +27,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_5140"
+      "Value": "Q"
     },
     {
       "Id": 1831952757,
@@ -42,7 +42,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_17381"
+      "Value": "Siege Tower"
     },
     {
       "Id": 1668510581,
@@ -52,12 +52,12 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_19123"
+      "Value": "Train Siege Tower"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_237"
+      "Value": "Boulder tossing siege weaponry.|n|cfff5962dAbilities:|R Aura of Protection, Artillery Bombardment |n|n|cff99b4d1Can only build 5. |r|n|cffffcc00Attacks land units and trees.|r"
     },
     {
       "Id": 2054188149,

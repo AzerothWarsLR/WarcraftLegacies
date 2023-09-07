@@ -13,29 +13,29 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_5190"
+      "Value": "(C\u0027thun Tolvir Statue)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_9193"
+      "Value": "E"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_7091"
+      "Value": "Inner Will"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_7092"
+      "Value": "|cffffcc00(E)|r - Inner Will"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_7093"
+      "Value": "Increases a target friendly unit\u0027s armor by 8. |nLasts \u003CAinf,Dur1\u003E seconds."
     },
     {
       "Id": 1918989665,
@@ -45,7 +45,7 @@
     {
       "Id": 1802007905,
       "Type": 3,
-      "Value": "TRIGSTR_9244"
+      "Value": "E"
     }
   ]
 }

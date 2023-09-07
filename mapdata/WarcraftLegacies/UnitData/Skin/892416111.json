@@ -26,7 +26,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_835"
+      "Value": "(Fel Horde-Portal)"
     },
     {
       "Id": 1818520949,
@@ -40,7 +40,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_1073"
+      "Value": "R"
     },
     {
       "Id": 2053990773,
@@ -55,7 +55,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_1699"
+      "Value": "Pit Fiend"
     },
     {
       "Id": 1919705973,
@@ -74,12 +74,12 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_1700"
+      "Value": "Summon Pit Fiend"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_1701"
+      "Value": "Servants for the Pit Lords of the Legion, they aspire to rise and conquer for favor.|n|cfff5962dAbilities:|R Doom, Self-Bloodlust|n|n|cffffcc00Attacks land units.|r"
     },
     {
       "Id": 1684960117,

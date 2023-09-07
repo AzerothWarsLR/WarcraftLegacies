@@ -20,7 +20,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_1020"
+      "Value": "(Lordaeron)"
     },
     {
       "Id": 1818520949,
@@ -34,12 +34,12 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_603"
+      "Value": "E"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_1022"
+      "Value": "Silver Hand Squire"
     },
     {
       "Id": 1919705973,
@@ -53,12 +53,12 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_1023"
+      "Value": "Train Silver Hand Squire"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_1360"
+      "Value": "Light-infused warrior immune to plague and undeath.|n|cfff5962dAbilities:|R Charge, Spell Resistance, Pure Soul, Flaming Sword|n|cfff5962dCan Learn:|R Seal of Righteousness|n|n|cff99b4d1Can only train 12|n|cffffcc00Attacks land units.|r"
     }
   ]
 }

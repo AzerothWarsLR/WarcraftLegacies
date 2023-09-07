@@ -8,13 +8,13 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_9166"
+      "Value": "(Control Nexus - Dark Portal)"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_9167"
+      "Value": "Decreases Enemy regeneration by 4hp/sec."
     }
   ]
 }

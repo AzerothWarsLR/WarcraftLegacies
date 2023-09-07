@@ -23,31 +23,31 @@
       "Level": 1,
       "Id": 1718840935,
       "Type": 3,
-      "Value": "TRIGSTR_21264"
+      "Value": "(Quel\u0027Thalas)"
     },
     {
       "Level": 1,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_4144"
+      "Value": "S"
     },
     {
       "Level": 1,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "TRIGSTR_14771"
+      "Value": "Enchanted Bowstrings"
     },
     {
       "Level": 1,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_14772"
+      "Value": "Research Enchanted Bowstrings"
     },
     {
       "Level": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "TRIGSTR_14773"
+      "Value": "Improves Rangers, Farstriders, Ballistas, Vereesa, and Sylvanas by increasing their attack range by 150 and attack speed by 5%."
     }
   ]
 }

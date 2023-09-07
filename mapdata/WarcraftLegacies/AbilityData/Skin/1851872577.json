@@ -11,12 +11,12 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_5404"
+      "Value": "(Scourge - Kel)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_7488"
+      "Value": "E"
     },
     {
       "Id": 2020635233,
@@ -25,65 +25,65 @@
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_7490"
+      "Value": "E"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_5407"
+      "Value": "Learn Animate Dead - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_15655"
+      "Value": "Raises dead units in an area to fight for the caster. |nLasts 60 seconds.|n|n|cffffcc00Level 1|r - 6 units.|n|cffffcc00Level 2|r - 9 units. |n|cffffcc00Level 3|r - 12 units.|n|cffffcc00Level 4|r - 15 units."
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_5409"
+      "Value": "Animate Dead - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_5410"
+      "Value": "Animate Dead - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_5411"
+      "Value": "Animate Dead - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_5412"
+      "Value": "Animate Dead - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_15656"
+      "Value": "Raises \u003CAUan,DataA1\u003E units in an area to fight for the caster for 60 seconds. Animated units retain upgrades and are vulnerable."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_15657"
+      "Value": "Raises \u003CAUan,DataA2\u003E units in an area to fight for the caster for 60 seconds. Animated units retain upgrades and are vulnerable."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_15658"
+      "Value": "Raises \u003CAUan,DataA3\u003E units in an area to fight for the caster for 60 seconds. Animated units retain upgrades and are vulnerable."
     },
     {
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_15659"
+      "Value": "Raises \u003CAUan,DataA4\u003E units in an area to fight for caster for 60 seconds. Animated units retain upgrades and are vulnerable."
     }
   ]
 }

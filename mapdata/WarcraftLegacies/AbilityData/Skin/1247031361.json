@@ -13,24 +13,24 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_7812"
+      "Value": "(Orange Kul tiras Marine)"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_7813"
+      "Value": "Headshot"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_7814"
+      "Value": "Headshot"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_19193"
+      "Value": "Gives a 5% chance that an attack will stun the target for 0.5 (0.1 heroes) seconds."
     }
   ]
 }

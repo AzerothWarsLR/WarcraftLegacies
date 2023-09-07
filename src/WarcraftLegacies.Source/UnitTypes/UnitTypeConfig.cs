@@ -117,15 +117,7 @@ namespace WarcraftLegacies.Source.UnitTypes
       
       UnitType.Register(new UnitType(Constants.UNIT_N036_DARK_PORTAL_WAYGATE)
       {
-        NeverDelete = true
-      });
-      
-      UnitType.Register(new UnitType(Constants.UNIT_N03J_BLACK_PORTAL_AURA_CONTROL_NEXUS)
       {
-        NeverDelete = true
-      });
-      
-      UnitType.Register(new UnitType(Constants.UNIT_N05J_DARK_PORTAL_AURA_CONTROL_NEXUS)
       {
         NeverDelete = true
       });

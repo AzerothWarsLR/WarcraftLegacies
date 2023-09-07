@@ -13,7 +13,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19763"
+      "Value": " (Stormwind Tower)"
     },
     {
       "Id": 1818520949,
@@ -23,7 +23,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_2077"
+      "Value": "Z"
     },
     {
       "Id": 1633907573,
@@ -43,7 +43,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_17638"
+      "Value": "Archer filled tower defense.|n|cfff5962dUpgrades into:|R Improved Guard Tower|n|n|cffffcc00Attacks land and air units.|r"
     }
   ]
 }

@@ -21,7 +21,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_18714"
+      "Value": " (Ragnaros Farm)"
     },
     {
       "Id": 1818520949,
@@ -31,12 +31,12 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_5713"
+      "Value": "W"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_18888"
+      "Value": "Crooked Inn Tavern"
     },
     {
       "Id": 1668510581,
@@ -46,7 +46,7 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_18954"
+      "Value": "Build Crooked Inn Tavern"
     },
     {
       "Id": 1935832437,
@@ -56,7 +56,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_18718"
+      "Value": "Provides 8 food, which increases the maximum number of units that can be trained and can heal nearby friendly units.|n|n|cfff5962dAbilities:|r Swig"
     },
     {
       "Id": 1684960117,

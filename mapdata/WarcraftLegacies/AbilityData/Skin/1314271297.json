@@ -12,24 +12,24 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_18440"
+      "Value": "(Permanent Immolation)"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_18441"
+      "Value": "Burns nearby enemy units for 40 points of damage per second."
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_18442"
+      "Value": "Titanforged"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_18443"
+      "Value": "Titanforged"
     }
   ]
 }

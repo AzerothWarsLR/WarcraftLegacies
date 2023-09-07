@@ -22,7 +22,7 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_8741"
+      "Value": "Income 10 gold per minute"
     },
     {
       "Id": 1952543841,
@@ -33,13 +33,13 @@
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_8742"
+      "Value": "Income"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_8743"
+      "Value": "Grants 10 gold per minute."
     }
   ]
 }

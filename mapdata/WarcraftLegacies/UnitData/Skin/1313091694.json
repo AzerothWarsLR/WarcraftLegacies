@@ -17,7 +17,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_11667"
+      "Value": "(Zandalar)"
     },
     {
       "Id": 1818520949,
@@ -27,7 +27,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_6532"
+      "Value": "E"
     },
     {
       "Id": 2053990773,
@@ -67,7 +67,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_20473"
+      "Value": "Loa Medium"
     },
     {
       "Id": 1668510581,
@@ -87,12 +87,12 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_20474"
+      "Value": "Train Loa Medium"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_10798"
+      "Value": "Crazed medium that speak through the other world. |n|cfff5962dAbilities:|R Dark Regeneration, Siphon Mana, Inject Spiderling|n|n|cff99b4d1Can only train 6.|n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Id": 1684960117,

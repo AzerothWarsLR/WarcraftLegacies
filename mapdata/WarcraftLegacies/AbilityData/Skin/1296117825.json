@@ -16,13 +16,13 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_10671"
+      "Value": "(25%)(Stormwind Champion"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_10672"
+      "Value": "The unit strikes with such force that 25% of their damage strikes through to enemies near the primary attacked unit."
     }
   ]
 }

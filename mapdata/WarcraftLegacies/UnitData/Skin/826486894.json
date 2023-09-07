@@ -12,12 +12,12 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_20108"
+      "Value": " (Nzoth Farm)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_5162"
+      "Value": "W"
     },
     {
       "Id": 1633907573,
@@ -37,7 +37,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_15980"
+      "Value": "Provides 10 food, which increases the maximum number of units that can be trained."
     }
   ]
 }

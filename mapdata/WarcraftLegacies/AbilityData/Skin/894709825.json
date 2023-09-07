@@ -9,13 +9,13 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_1797"
+      "Value": "Teleporters will be activated when the Argus Incursion quest is completed. They are temporary structures that will destroy themselves after 20 turns. |n|nThey cannot be repaired or healed so use them well before then!"
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_18065"
+      "Value": "Increases the rate at which this unit gathers lumber."
     },
     {
       "Id": 1953653089,
@@ -25,18 +25,18 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_16474"
+      "Value": "Legion Teleporters"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_1801"
+      "Value": "Legion Teleports"
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_3226"
+      "Value": "(icon Teleporter)"
     },
     {
       "Id": 2020631137,

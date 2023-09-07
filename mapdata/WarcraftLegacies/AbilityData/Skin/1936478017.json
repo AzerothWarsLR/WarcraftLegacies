@@ -23,31 +23,31 @@
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_5515"
+      "Value": "Totemic Spirits - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_5516"
+      "Value": "Totemic Spirits - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_5517"
+      "Value": "Totemic Spirits - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_5518"
+      "Value": "Unleashes ancient spirits which drain enemy health and replenish Caine\u0027s health.|nLasts \u003CAOls,HeroDur1\u003E seconds."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_5519"
+      "Value": "Unleashes ancient spirits which drain enemy health and replenish Caine\u0027s health.|nLasts \u003CAOls,HeroDur1\u003E seconds."
     }
   ]
 }

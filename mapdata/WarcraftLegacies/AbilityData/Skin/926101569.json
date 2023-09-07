@@ -17,7 +17,7 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_12283"
+      "Value": "(yogg tank)"
     },
     {
       "Id": 1667329377,
@@ -32,19 +32,19 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_12263"
+      "Value": "Rocket System"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_12264"
+      "Value": "Rocket System"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_12286"
+      "Value": "Fires down streams of rockets, damaging nearby enemies."
     }
   ]
 }

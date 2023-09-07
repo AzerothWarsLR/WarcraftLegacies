@@ -8,17 +8,17 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_20151"
+      "Value": "(Draenei Spaceship)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_5073"
+      "Value": "Q"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_1064"
+      "Value": "Build Tree of Life"
     },
     {
       "Id": 1935832437,
@@ -28,12 +28,12 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_1065"
+      "Value": "Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Wisp |n|cfff5962dUpgrades to:|R Tree of Ages"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_2559"
+      "Value": "Exodar Regalis"
     },
     {
       "Id": 1818520949,

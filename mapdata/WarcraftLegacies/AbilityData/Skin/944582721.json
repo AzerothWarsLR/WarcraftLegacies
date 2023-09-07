@@ -13,29 +13,29 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_8682"
+      "Value": "(n\u0027zoth)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_9750"
+      "Value": "Q"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_8684"
+      "Value": "Call Scavenger"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_8685"
+      "Value": "Call Scavenger (|cffffcc00Q|r)"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_8686"
+      "Value": "Raises 1 Makrura Scavenger from a corpse. They last 45 seconds."
     },
     {
       "Id": 1918989665,
@@ -45,7 +45,7 @@
     {
       "Id": 1802007905,
       "Type": 3,
-      "Value": "TRIGSTR_9755"
+      "Value": "Q"
     }
   ]
 }

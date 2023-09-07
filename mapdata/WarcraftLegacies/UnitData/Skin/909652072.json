@@ -8,12 +8,12 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_16443"
+      "Value": "(Scarlet Shop)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_4298"
+      "Value": "C"
     },
     {
       "Id": 1633907573,
@@ -33,7 +33,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_16191"
+      "Value": "Creates a shop with purchasable items."
     },
     {
       "Id": 1818520949,
@@ -48,12 +48,12 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_16267"
+      "Value": "Field Stockpile"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_16268"
+      "Value": "Build Field Stockpile"
     }
   ]
 }

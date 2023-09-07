@@ -17,7 +17,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_20131"
+      "Value": "(Dragonmaw Altar)"
     },
     {
       "Id": 1818520949,
@@ -27,7 +27,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_3636"
+      "Value": "X"
     },
     {
       "Id": 1633907573,
@@ -37,12 +37,12 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_3803"
+      "Value": "Altar of Dragons"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_3502"
+      "Value": "Build Altar of Dragons"
     },
     {
       "Id": 1935832437,
@@ -52,7 +52,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_16130"
+      "Value": "Revives slain Heroes and Demi-heros."
     }
   ]
 }

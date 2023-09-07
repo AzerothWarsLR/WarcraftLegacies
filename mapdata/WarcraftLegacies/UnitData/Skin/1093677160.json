@@ -17,7 +17,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_2757"
+      "Value": "(stormwind)"
     },
     {
       "Id": 1818520949,
@@ -27,7 +27,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_2939"
+      "Value": "W"
     },
     {
       "Id": 828468597,
@@ -47,17 +47,17 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_3551"
+      "Value": "Spearman"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_3552"
+      "Value": "Train Spearman"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_17705"
+      "Value": "Westfall marksman aiding in the rapid defense of Stormwind.|n|cfff5962dAbilities:|R Poisoned Spear|n|n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Id": 1684960117,

@@ -21,7 +21,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_3417"
+      "Value": "(C\u0027thun Overlord)"
     },
     {
       "Id": 1685218677,
@@ -36,7 +36,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_2827"
+      "Value": "W"
     },
     {
       "Id": 2053990773,
@@ -61,7 +61,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_20574"
+      "Value": "Silithid Overlord"
     },
     {
       "Id": 1668510581,
@@ -86,12 +86,12 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_20575"
+      "Value": "Train - Silithid Overlord"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_3421"
+      "Value": "Heavy melee commander unit. Has the Command Aura ability.|n|cff99b4d1Can only train 12.|r|n|cffffcc00Attacks land units.|r"
     },
     {
       "Id": 1684960117,

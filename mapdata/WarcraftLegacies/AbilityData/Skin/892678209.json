@@ -8,18 +8,18 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_11523"
+      "Value": "(Quel\u0027thalas - Anasterian)"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_14172"
+      "Value": "Anasterian generates an arcane orb whenver he casts a spell. The orb orbits around the caster for 30 seconds, dealing damage to enemy units it strikes.|n|n|cffffcc00Level 1|r - 50 damage|n|cffffcc00Level 2|r - 75 damage|n|cffffcc00Level 3|r - 100 damage|n|cffffcc00Level 4|r - 125 damage"
     },
     {
       "Level": 4,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_13547"
+      "Value": "Defensive Orbs -[|cffffcc00Level 4|r]"
     },
     {
       "Id": 1953653089,
@@ -34,54 +34,54 @@
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_14982"
+      "Value": "Learn Defensive Orbs - [|cffffcc00Level %d|r]"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_13304"
+      "Value": "Defensive Orbs - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_13702"
+      "Value": "Defensive Orbs - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_13703"
+      "Value": "Defensive Orbs - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_9019"
+      "Value": "Defense Orbs deal 50 damage per orb to each unit it collides with."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_10807"
+      "Value": "Defense Orbs deal 75 damage per orb to each unit it collides with."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_12867"
+      "Value": "Defense Orbs deal 100 damage per orb to each unit it collides with."
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_14623"
+      "Value": "Defensive Orbs"
     },
     {
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_13302"
+      "Value": "Defense Orbs deal 125 damage per orb to each unit it collides with."
     }
   ]
 }

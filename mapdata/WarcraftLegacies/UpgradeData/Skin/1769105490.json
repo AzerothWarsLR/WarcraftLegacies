@@ -8,25 +8,25 @@
       "Level": 1,
       "Id": 1718840935,
       "Type": 3,
-      "Value": "TRIGSTR_3427"
+      "Value": "(Ironforge)"
     },
     {
       "Level": 1,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_14779"
+      "Value": "X"
     },
     {
       "Level": 1,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_13990"
+      "Value": "Upgrade Long Rifles"
     },
     {
       "Level": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "TRIGSTR_13991"
+      "Value": "Increases the range of Riflemen and Engineers attacks by 200."
     }
   ]
 }

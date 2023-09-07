@@ -20,7 +20,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_781"
+      "Value": "(Fel Horde-Portal)"
     },
     {
       "Id": 1818520949,
@@ -30,7 +30,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_512"
+      "Value": "R"
     },
     {
       "Id": 1633907573,
@@ -40,12 +40,12 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_783"
+      "Value": "Summon Eredar Sorcerer"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_784"
+      "Value": "Mystical mage of the Burning Crusade.|n|cfff5962dAbilities:|R Inferno, Void Parasite |n|n|cffffcc00Attacks land and air units.|r"
     }
   ]
 }

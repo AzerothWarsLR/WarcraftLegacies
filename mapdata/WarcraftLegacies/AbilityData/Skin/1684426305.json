@@ -7,12 +7,12 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_4053"
+      "Value": "(Azil)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_6055"
+      "Value": "R"
     },
     {
       "Id": 1734962273,
@@ -22,22 +22,22 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_5763"
+      "Value": "Mind Destruction"
     },
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_6063"
+      "Value": "R"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_5765"
+      "Value": "Learn Mind Destruction"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_5766"
+      "Value": "Instantly turns a creature mind inside-out, destroying it utterly. |n|cffffcc00Level 1|r - 800 damage. |n|cffffcc00Level 2|r - 950 damage. |n|cffffcc00Level 3|r - 1100 damage."
     },
     {
       "Id": 1952543841,
@@ -48,37 +48,37 @@
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_3042"
+      "Value": "Mind Destruction - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_5768"
+      "Value": "Instantly turns a creature mind inside-out, destroying it utterly. |n|cffffcc00Level 1|r - 800 damage."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_5769"
+      "Value": "Instantly turns a creature mind inside-out, destroying it utterly. |n|cffffcc00Level 2|r - 950 damage."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_5770"
+      "Value": "Instantly turns a creature mind inside-out, destroying it utterly. |n|cffffcc00Level 3|r - 1100 damage."
     },
     {
       "Level": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_3237"
+      "Value": "Mind Destruction - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_3395"
+      "Value": "Mind Destruction - [|cffffcc00Level 3|r]"
     }
   ]
 }

@@ -8,7 +8,7 @@
     {
       "Id": 1885959270,
       "Type": 3,
-      "Value": "TRIGSTR_21128"
+      "Value": "Mage Armor"
     },
     {
       "Id": 1952543846,
@@ -18,7 +18,7 @@
     {
       "Id": 1700951398,
       "Type": 3,
-      "Value": "TRIGSTR_21129"
+      "Value": "This unit has Mage Armor; its armor is increased."
     }
   ]
 }

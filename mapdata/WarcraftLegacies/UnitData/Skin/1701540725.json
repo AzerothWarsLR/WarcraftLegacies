@@ -11,12 +11,12 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_287"
+      "Value": "(Red - Rod of Necromancy/Necromancers)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_166"
+      "Value": "S"
     },
     {
       "Id": 1633907573,
@@ -26,12 +26,12 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_289"
+      "Value": "Train Skeleton Warrior"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_290"
+      "Value": "Weak skeleton warrior that can be effective as fodder with a larger Undead army."
     }
   ]
 }

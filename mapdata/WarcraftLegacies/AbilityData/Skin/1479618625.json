@@ -21,24 +21,24 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_12559"
+      "Value": "(Orange - Kassan. Dark Green - Champions)"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_12560"
+      "Value": "Heavy Armor"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_12561"
+      "Value": "Heavy Armor"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_15687"
+      "Value": "Reduces all attacks on this unit by \u003CA01X,DataC1\u003E damage."
     }
   ]
 }

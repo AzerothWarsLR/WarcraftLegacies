@@ -13,17 +13,17 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_10679"
+      "Value": "(Teal - Rend)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_11393"
+      "Value": "W"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_10681"
+      "Value": "Blackhand\u0027s Howl"
     },
     {
       "Id": 1918988897,
@@ -33,65 +33,65 @@
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_11413"
+      "Value": "W"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_413"
+      "Value": "Learn Blackhand\u0027s Howl - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_10684"
+      "Value": "Rend lets lose a ferocious howl increasing his allies damage and health regeneration for 25 seconds.|n|n|cffffcc00Level 1|r - 15% damage, 180% regen|n|cffffcc00Level 2|r - 20% damage, 260% regen|n|cffffcc00Level 3|r - 25% damage, 340% regen|n|cffffcc00Level 4|r - 30% damage, 420% regen"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_9668"
+      "Value": "Blackhand\u0027s Howl - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_9692"
+      "Value": "Blackhand\u0027s Howl - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_14351"
+      "Value": "Blackhand\u0027s Howl - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_14942"
+      "Value": "Blackhand\u0027s Howl - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_10689"
+      "Value": "Gives friendly nearby units a 15% bonus to damage, and 180% increased life regeneration. Lasts 25 seconds."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_10690"
+      "Value": "Gives friendly nearby units a 20% bonus to damage, and 260% increased life regeneration. Lasts 25 seconds."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_10691"
+      "Value": "Gives friendly nearby units a 25% bonus to damage, and 340% increased life regeneration. Lasts 25 seconds."
     },
     {
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_10692"
+      "Value": "Gives friendly nearby units a 30% bonus to damage, and 420% increased life regeneration. Lasts 25 seconds."
     },
     {
       "Id": 2020631137,

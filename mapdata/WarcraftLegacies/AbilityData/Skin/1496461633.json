@@ -13,23 +13,23 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_13203"
+      "Value": "(maraad)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_18562"
+      "Value": "W"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_13234"
+      "Value": "Divine Salvation"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_13235"
+      "Value": "Divine Salvation"
     },
     {
       "Id": 1918989665,
@@ -39,49 +39,49 @@
     {
       "Id": 1802007905,
       "Type": 3,
-      "Value": "TRIGSTR_18567"
+      "Value": "W"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_13238"
+      "Value": "Increases a target non-hero friendly unit\u0027s armor by 1000 and health regeneration by 300 for 4 seconds."
     },
     {
       "Level": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_13239"
+      "Value": "Divine Salvation"
     },
     {
       "Level": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_13249"
+      "Value": "Divine Salvation"
     },
     {
       "Level": 4,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_13250"
+      "Value": "Divine Salvation"
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_13251"
+      "Value": "Increases a target non-hero friendly unit\u0027s armor by 1000 and health regeneration by 300 for 6 seconds."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_13252"
+      "Value": "Increases a target non-hero friendly unit\u0027s armor by 1000 and health regeneration by 300 for 8 seconds."
     },
     {
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_13253"
+      "Value": "Increases a target non-hero friendly unit\u0027s armor by 1000 and health regeneration by 300 for 10 seconds."
     },
     {
       "Id": 2020631137,
@@ -103,17 +103,17 @@
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_18863"
+      "Value": "W"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_13260"
+      "Value": "Learn Divine Salvation - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_13261"
+      "Value": "The hero Increases a target friendly unit\u0027s armor by 1000 and health regeneration by 300. |n|n|cffffcc00Level 1|r - 4 seconds duration. |n|cffffcc00Level 2|r - 6 seconds duration. |n|cffffcc00Level 3|r - 8 seconds duration. |n|cffffcc00Level 4|r - 10 seconds duration"
     }
   ]
 }

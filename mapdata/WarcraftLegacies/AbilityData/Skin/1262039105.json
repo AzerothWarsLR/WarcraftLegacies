@@ -16,13 +16,13 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_10830"
+      "Value": "(Teal Fel Blood Mastery)"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_10831"
+      "Value": "Nearby friendly melee units gain 10% of their attack damage when they hit enemy units."
     }
   ]
 }

@@ -7,12 +7,12 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_176"
+      "Value": "(Scourge)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_119"
+      "Value": "E"
     },
     {
       "Id": 1633907573,
@@ -22,12 +22,12 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_303"
+      "Value": "Build Obsidian Statue"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_12370"
+      "Value": "Construct of ancient design.|n|cfff5962dAbilities:|R Essence of Blight, Spirit Touch, Mass Unholy Frenzy|n|n|cff99b4d1Can only train 4.|r|n|cffffcc00Attacks land and air units.|r"
     }
   ]
 }

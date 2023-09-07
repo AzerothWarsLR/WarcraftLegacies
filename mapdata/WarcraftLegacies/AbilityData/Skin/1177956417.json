@@ -16,24 +16,24 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_8865"
+      "Value": "(unused)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_11705"
+      "Value": "D"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_12146"
+      "Value": "Wind Walk"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_11574"
+      "Value": "Grommash sprints at invisible speeds, becoming invisible and moving 15% faster for 12 seconds."
     }
   ]
 }

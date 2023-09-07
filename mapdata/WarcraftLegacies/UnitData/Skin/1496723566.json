@@ -25,7 +25,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19701"
+      "Value": "(Quel\u0027Thalas Unique)"
     },
     {
       "Id": 1818520949,
@@ -35,12 +35,12 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_1390"
+      "Value": "R"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_2148"
+      "Value": "Healing Spire"
     },
     {
       "Id": 1919705973,
@@ -54,7 +54,7 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_2149"
+      "Value": "Upgrade to Healing Spire"
     },
     {
       "Id": 1935832437,
@@ -64,7 +64,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_15714"
+      "Value": "Powerful support structure.|n|cfff5962dAbilities:|R Healing Blessing, Call To Safety, Unsummon Spire |n|cfff5962dTrains:|R Architect|n|n|cff99b4d1Can only train 2.|r|n"
     }
   ]
 }

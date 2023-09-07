@@ -12,12 +12,12 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_1351"
+      "Value": "(Druids)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_1534"
+      "Value": "Q"
     },
     {
       "Id": 1633907573,
@@ -27,17 +27,17 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_1365"
+      "Value": "Demigod of the Night Elves"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_17108"
+      "Value": "Mystical Hero, exceptional at summoning creatures from the forest and using the powers of nature. |n|cfff5962dCan learn:|R Master of Nature, Nature\u0027s Fury, Nature Aura, Tranquility|n|n|cffffcc00Attacks land and air units.|R"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_17109"
+      "Value": "Summon Cenarius"
     }
   ]
 }

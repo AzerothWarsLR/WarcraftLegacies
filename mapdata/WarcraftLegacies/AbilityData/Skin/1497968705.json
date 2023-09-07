@@ -21,12 +21,12 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_6867"
+      "Value": "(Gunship)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_10548"
+      "Value": "E"
     },
     {
       "Id": 1952543841,
@@ -37,18 +37,18 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_15669"
+      "Value": "Restores \u003CA0IY,DataA1\u003E hitpoints."
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_10725"
+      "Value": "Emergency Repairs"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_10726"
+      "Value": "Emergency Repairs"
     }
   ]
 }

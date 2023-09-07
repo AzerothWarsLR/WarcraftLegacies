@@ -8,7 +8,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_3018"
+      "Value": "(Kul\u0027tiras)"
     },
     {
       "Id": 1818520949,
@@ -18,7 +18,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_3024"
+      "Value": "W"
     },
     {
       "Id": 828468597,
@@ -38,7 +38,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_3671"
+      "Value": "Thornspeaker"
     },
     {
       "Id": 1668510581,
@@ -48,17 +48,17 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_092"
+      "Value": "Supporting spellcaster. |n|cfff5962dAbilities:|R Healing Surge |n|cfff5962dCan learn:|R Natural Burial, Dispel Magic|n|n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_15202"
+      "Value": "Train Thornspeaker"
     },
     {
       "Id": 1953850229,
       "Type": 3,
-      "Value": "TRIGSTR_101"
+      "Value": "- Healing Surge,- Healing Surge|n- Dispel,- Healing Surge|n- Dispel|n- Natural Burial"
     }
   ]
 }

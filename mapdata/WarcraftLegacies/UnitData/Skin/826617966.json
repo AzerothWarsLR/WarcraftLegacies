@@ -22,7 +22,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_13870"
+      "Value": "Z"
     },
     {
       "Id": 1633907573,
@@ -32,12 +32,12 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_20887"
+      "Value": "Improved Sky-Fury Tower"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_20888"
+      "Value": "Upgrade to Improved Sky-FuryTower"
     },
     {
       "Id": 1935832437,
@@ -47,12 +47,12 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_20780"
+      "Value": "Towers of the Sunfury.|n|n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_20787"
+      "Value": "(sunfury tower)"
     }
   ]
 }

@@ -13,12 +13,12 @@
     {
       "Id": 1885959270,
       "Type": 3,
-      "Value": "TRIGSTR_13668"
+      "Value": "Hypothermic Aura"
     },
     {
       "Id": 1700951398,
       "Type": 3,
-      "Value": "TRIGSTR_13669"
+      "Value": "This unit is under the effects of Hypothermic Aura; it has reduced movement speed and is losing hit points over time."
     },
     {
       "Id": 1952543846,

@@ -18,12 +18,12 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_791"
+      "Value": "Z"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_1453"
+      "Value": "Improved Soul Tower"
     },
     {
       "Id": 1668510581,
@@ -33,7 +33,7 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_1454"
+      "Value": "(|cffffff00Z|r) Upgrade to Improved Soul Tower"
     },
     {
       "Id": 1935832437,
@@ -48,7 +48,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19624"
+      "Value": " (Legion Tower)"
     }
   ]
 }

@@ -8,12 +8,12 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_10881"
+      "Value": "(Draenei)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_4933"
+      "Value": "Q"
     },
     {
       "Id": 1633907573,
@@ -23,7 +23,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_17766"
+      "Value": "Powerful follower of the Light.|n|cfff5962dAbilities:|R Renewal|n|cfff5962dCan Learn:|R Dispel Magic, Inner Fire|n|n|cffffcc00Attacks land and air units.|R\r\n"
     },
     {
       "Id": 1868786037,
@@ -38,12 +38,12 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_17886"
+      "Value": "Luminarch"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_17887"
+      "Value": "Train Luminarch"
     },
     {
       "Id": 1684960117,
@@ -63,7 +63,7 @@
     {
       "Id": 1953850229,
       "Type": 3,
-      "Value": "TRIGSTR_17770"
+      "Value": "- Renewal,- Renewal|n- Dispel Magic,- Renewal|n- Dispel Magic|n- Inner Fire"
     }
   ]
 }

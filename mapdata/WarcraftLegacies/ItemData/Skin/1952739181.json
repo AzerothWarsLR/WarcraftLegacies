@@ -7,12 +7,12 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_5589"
+      "Value": "Q"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_4143"
+      "Value": "While wearing this mask, a Hero will recover hit points equal to 25% of the attack damage dealt to an enemy unit."
     }
   ]
 }

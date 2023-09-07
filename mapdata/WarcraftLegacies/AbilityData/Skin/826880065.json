@@ -13,12 +13,12 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_9275"
+      "Value": "(Creep - C\u0027thun)"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_9276"
+      "Value": "Death Aura"
     },
     {
       "Id": 1952543841,
@@ -29,13 +29,13 @@
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_9277"
+      "Value": "Death Aura"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_9278"
+      "Value": "C\u0027thun\u0027s presence makes all units around him terribly frightened which decreases their combat capabillities. Decreases the armour of nearby troops by 6."
     }
   ]
 }

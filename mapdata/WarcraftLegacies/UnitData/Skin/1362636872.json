@@ -8,7 +8,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_3612"
+      "Value": "(Twilight hammer)"
     },
     {
       "Id": 1633907573,
@@ -18,17 +18,17 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_16379"
+      "Value": "High Priestess"
     },
     {
       "Id": 1869770869,
       "Type": 3,
-      "Value": "TRIGSTR_16384"
+      "Value": "Azil"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_638"
+      "Value": "Mystical Hero, adept at healing allies and disrupting enemy units.|n|cfff5962dCan learn:|R Healing Wave, Seismic Shard, Brilliance Aura, Mind Destruction|n|n|cffffcc00Attacks land and air units.|R"
     },
     {
       "Id": 1868786037,
@@ -47,12 +47,12 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_4262"
+      "Value": "W"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_7269"
+      "Value": "Summon Azil"
     },
     {
       "Id": 1684960117,
@@ -67,12 +67,12 @@
     {
       "Id": 1953980789,
       "Type": 3,
-      "Value": "TRIGSTR_16679"
+      "Value": "Revive Azil"
     },
     {
       "Id": 1919972469,
       "Type": 3,
-      "Value": "TRIGSTR_16682"
+      "Value": "Revive Azil"
     }
   ]
 }

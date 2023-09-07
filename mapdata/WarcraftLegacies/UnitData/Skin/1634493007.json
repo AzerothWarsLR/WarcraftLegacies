@@ -12,7 +12,7 @@
     {
       "Id": 1953980789,
       "Type": 3,
-      "Value": "TRIGSTR_1244"
+      "Value": "Revive Saurfang"
     },
     {
       "Id": 2020631157,
@@ -25,7 +25,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_1245"
+      "Value": "(vassal)"
     },
     {
       "Id": 1818520949,
@@ -35,7 +35,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_976"
+      "Value": "E"
     },
     {
       "Id": 2054188149,
@@ -50,7 +50,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_1247"
+      "Value": "High Overlord of the Kor\u0027kron"
     },
     {
       "Id": 1970434165,
@@ -59,12 +59,12 @@
     {
       "Id": 1869770869,
       "Type": 3,
-      "Value": "TRIGSTR_1248"
+      "Value": "Varok Saurfang"
     },
     {
       "Id": 1919972469,
       "Type": 3,
-      "Value": "TRIGSTR_1249"
+      "Value": "Revive Overlord"
     },
     {
       "Id": 1769173877,
@@ -84,12 +84,12 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_16292"
+      "Value": "Summon Varok"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_12162"
+      "Value": "Warrior Hero, specialised in enduring and buffing troops.|n|cfff5962dAbilities:|r Cleaving Attack|n|cfff5962dCan learn:|R Seismic Slam, Battleshout, Toughness, Warsong Battle Standard|n|n|cffffcc00Attacks land units.|R"
     },
     {
       "Id": 1684960117,

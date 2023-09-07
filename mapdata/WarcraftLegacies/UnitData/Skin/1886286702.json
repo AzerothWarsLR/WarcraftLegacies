@@ -7,7 +7,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_1124"
+      "Value": "W"
     },
     {
       "Id": 2020631157,
@@ -16,12 +16,12 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_18519"
+      "Value": "Ferocious amphibious reptile.|n|cfff5962dAbilities:|r True Sight, Slow Poison|n|cfff5962d|n|cffffcc00Attacks land and air units.|R"
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_18830"
+      "Value": " (Illidari)"
     }
   ]
 }

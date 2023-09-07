@@ -20,7 +20,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_15527"
+      "Value": "(Fel Horde Farm)"
     },
     {
       "Id": 1818520949,
@@ -30,7 +30,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_332"
+      "Value": "W"
     },
     {
       "Id": 1633907573,
@@ -40,7 +40,7 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_488"
+      "Value": "Build Fel Orc Burrow"
     },
     {
       "Id": 1935832437,
@@ -50,7 +50,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_4656"
+      "Value": "Defensive hovel for peons to defend the territory.|nProvides 10 food, which increases the maximum number of units that can be trained.|n|cfff5962dAbilities:|R Battle Stations|n|cfff5962dCan learn:|R Spiked Barricades|n|n|cffffcc00Attacks land and air units.|r"
     }
   ]
 }

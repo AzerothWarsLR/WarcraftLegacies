@@ -15,12 +15,12 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_1186"
+      "Value": "(Scourge-Lich)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_631"
+      "Value": "S"
     },
     {
       "Id": 1633907573,
@@ -30,7 +30,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_1188"
+      "Value": "Archlich of the Scourge"
     },
     {
       "Id": 1651864693,
@@ -40,7 +40,7 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_17057"
+      "Value": "Summon Kel\u0027tuzad"
     }
   ]
 }

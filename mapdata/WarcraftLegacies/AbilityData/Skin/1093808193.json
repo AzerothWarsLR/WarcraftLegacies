@@ -13,17 +13,17 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_15775"
+      "Value": "(Genn)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_12897"
+      "Value": "Q"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_15800"
+      "Value": "Roar of the Worgen"
     },
     {
       "Id": 1918988897,
@@ -33,65 +33,65 @@
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_12919"
+      "Value": "Q"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_15804"
+      "Value": "Learn Roar of the Worgen  - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_15814"
+      "Value": "The Hero empowers nearby allies with the power of the mountain, increasing their armor for 30 seconds.|n|cffffcc00Level 1|r - Increases armor by 5 and attack by 20%|n|cffffcc00Level 2|r - Increases armor by 6 and attack by 40%|n|cffffcc00Level 3|r - Increases armor by 7 and attack by 60%|n|cffffcc00Level 4|r - Increases armor by 8 and attack by 80%"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_15879"
+      "Value": "Roar of the Worgen - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_15880"
+      "Value": "Roar of the Worgen - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_15896"
+      "Value": "Roar of the Worgen - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_15905"
+      "Value": "Roar of the Worgen - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_15955"
+      "Value": "The hero empowers nearby allies of nature increasing their armor by 5 and attack by 20% for 30 seconds."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_15956"
+      "Value": "The hero empowers nearby allies of nature increasing their armor by 6 and attack by 40% for 30 seconds."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_15957"
+      "Value": "The hero empowers nearby allies of nature increasing their armor by 7 and attack by 60% for 30 seconds."
     },
     {
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_15958"
+      "Value": "The hero empowers nearby allies of nature increasing their armor by 7 and attack by 80% for 30 seconds."
     }
   ]
 }

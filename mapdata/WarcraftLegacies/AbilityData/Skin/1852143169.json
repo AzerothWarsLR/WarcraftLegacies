@@ -11,13 +11,13 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_4782"
+      "Value": "(Pink - Wind Rider)"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_4783"
+      "Value": "Deals 5 poison damage per second, poison damage stacks and slows movement speed by 25%. |nLasts \u003CAven,Dur1\u003E seconds."
     }
   ]
 }

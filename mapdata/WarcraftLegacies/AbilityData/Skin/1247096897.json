@@ -12,13 +12,13 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_20163"
+      "Value": "(Stormwind/Dalaran Harpooner)"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_7602"
+      "Value": "This unit\u0027s attacks combust \u003CA0UJ,DataA1\u003E(\u003CA0UJ,DataC1\u003E for Heroes) mana per hit dealing damage to the attacked unit equal to the mana destroyed."
     }
   ]
 }

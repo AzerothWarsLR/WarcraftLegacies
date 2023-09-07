@@ -11,12 +11,12 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_346"
+      "Value": "(Scourge)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_150"
+      "Value": "Q"
     },
     {
       "Id": 1633907573,
@@ -26,7 +26,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_806"
+      "Value": "Amalgamation of corpses stiched into a foul creature.|n|cfff5962dAbilities:|R Demolish, Disease Cloud|n|n|cffffcc00Attacks land units.|r"
     }
   ]
 }

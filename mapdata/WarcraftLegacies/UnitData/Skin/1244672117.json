@@ -13,7 +13,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_1275"
+      "Value": "(Quel\u0027Thalas)"
     },
     {
       "Id": 1818520949,
@@ -23,7 +23,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_1448"
+      "Value": "E"
     },
     {
       "Id": 828468597,
@@ -38,17 +38,17 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_1449"
+      "Value": "Arcane Wagon"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_1450"
+      "Value": "Build Arcane Wagon"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_1451"
+      "Value": "Forged with the Mana infused steel, bleeding excess into the air.|n|cfff5962dAbilities:|R Spirit Touch, Arcane Artillery|n|n|cff99b4d1Can only build 2.|r|n|cffffcc00Attacks land and air units.|r"
     }
   ]
 }

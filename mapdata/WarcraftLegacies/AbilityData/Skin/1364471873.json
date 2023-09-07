@@ -17,12 +17,12 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_7748"
+      "Value": "(Sentinels - Shandris)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_9294"
+      "Value": "W"
     },
     {
       "Id": 1952542049,
@@ -32,7 +32,7 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_7750"
+      "Value": "Piercing Arrow"
     },
     {
       "Id": 1918988897,
@@ -46,17 +46,17 @@
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_9339"
+      "Value": "W"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_7752"
+      "Value": "Learn Piercing Arrow - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_7753"
+      "Value": "Shandris fire a powerful arrow, causing damage to units in a line. |n|n|cffffcc00Level 1|r - 150 damage. Max 2000 damage.|n|cffffcc00Level 2|r - 225 damage. Max 2350 damage.|n|cffffcc00Level 3|r - 300 damage. Max 2600 damage.|n|cffffcc00Level 4|r - 350 damage. Max 2950 damage."
     },
     {
       "Id": 1952543585,
@@ -67,49 +67,49 @@
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_7754"
+      "Value": "Piercing Arrow - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_7755"
+      "Value": "Piercing Arrow - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_7756"
+      "Value": "Piercing Arrow - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_7757"
+      "Value": "Piercing Arrow - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_7758"
+      "Value": "Sends a gigantic wave which deals 150 damage to enemy units in a line, up to 2000 max damage."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_7759"
+      "Value": "Sends a gigantic wave which deals 225 damage to enemy units in a line, up to 2350 max damage."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_7760"
+      "Value": "Sends a gigantic wave which deals 300 damage to enemy units in a line, up to 2600 max damage."
     },
     {
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_7761"
+      "Value": "Sends a gigantic wave which deals 350 damage to enemy units in a line, up to 2950 max damage."
     }
   ]
 }

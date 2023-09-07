@@ -8,7 +8,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_20097"
+      "Value": "(Warsong Siege)"
     },
     {
       "Id": 1818520949,
@@ -18,7 +18,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_4081"
+      "Value": "F"
     },
     {
       "Id": 1935832437,
@@ -28,17 +28,17 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_12008"
+      "Value": "Workshop to build the War Machines of the Warsong Clan.|n|cfff5962dTrains:|R Catapult, Azerite Siege Engine"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_20098"
+      "Value": "Siege Workshop"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_20099"
+      "Value": "Build Siege Workshop"
     },
     {
       "Id": 1868786037,

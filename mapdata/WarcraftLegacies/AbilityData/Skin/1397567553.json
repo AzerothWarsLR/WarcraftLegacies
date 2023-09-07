@@ -12,7 +12,7 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_15868"
+      "Value": "(Gilneas - tess)"
     },
     {
       "Id": 2020635233,
@@ -21,47 +21,47 @@
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_15869"
+      "Value": "Creates images of Hero to fight enemies and dispels all magic from Hero.|n|n|cffffcc00Level 1|r - Creates 2 images which deal 20% the damage of Hero and take 200% the damage. |n|cffffcc00Level 2|r - Creates 3 images which deal 20% the damage of Hero and take 200% the damage. |n|cffffcc00Level 3|r - Creates 4 images which deal 20% the damage of Hero and take 200% the damage. |n|cffffcc00Level 4|r - Creates 5 images which deal 20% the damage of Hero and take 200% the damage."
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_18602"
+      "Value": "Creates 2 images which deal 20% the damage of the Hero and take 200% the damage. Dispels all magic from the Hero. |nLasts 30 seconds."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_18603"
+      "Value": "Creates 3 images which deal 20% the damage of the Hero and take 200% the damage. Dispels all magic from the Hero. |nLasts 30 seconds."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_18604"
+      "Value": "Creates 4 images which deal 20% the damage of the Hero and take 200% the damage. Dispels all magic from the Hero. |nLasts 30 seconds."
     },
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_15943"
+      "Value": "E"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_15966"
+      "Value": "E"
     },
     {
       "Level": 4,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_15873"
+      "Value": "Mirror Image - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_18605"
+      "Value": "Creates 5 images which deal 20% the damage of the Hero and take 200% the damage. Dispels all magic from the Hero. |nLasts 30 seconds."
     }
   ]
 }

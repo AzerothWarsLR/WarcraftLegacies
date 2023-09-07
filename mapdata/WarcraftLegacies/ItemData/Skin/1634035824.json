@@ -7,12 +7,12 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_3408"
+      "Value": "A"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_4113"
+      "Value": "Heals 400 hit points when used."
     }
   ]
 }

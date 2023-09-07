@@ -13,12 +13,12 @@
     {
       "Id": 1885959270,
       "Type": 3,
-      "Value": "TRIGSTR_13566"
+      "Value": "Healing Shield"
     },
     {
       "Id": 1700951398,
       "Type": 3,
-      "Value": "TRIGSTR_14817"
+      "Value": "This unit has a Healing Shield; nearby friendly units will be healed if they stand near this unit."
     },
     {
       "Id": 1952543590,

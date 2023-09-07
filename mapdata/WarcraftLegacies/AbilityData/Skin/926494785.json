@@ -36,7 +36,7 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_10889"
+      "Value": "(Purple - Uther)"
     },
     {
       "Id": 1952540001,
@@ -46,12 +46,12 @@
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_10493"
+      "Value": "R"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_10891"
+      "Value": "Exact Justice"
     },
     {
       "Id": 1918988897,
@@ -65,17 +65,17 @@
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_10531"
+      "Value": "R"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_15609"
+      "Value": "Learn Exact Justice - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_20569"
+      "Value": "The hero channels the Light for 6 seconds, preventing all nearby friendly units from taking damage. When Divine Justice finishes casting, all nearby enemy units take damage. If Divine Justice is interrupted, it instead deals damage proportional to how long it was channeled for.|n|n|cffffcc00Level 1|r - Deals 150 damage. |n|cffffcc00Level 2|r - Deals 350 damage. |n|cffffcc00Level 3|r - Deals 600 damage."
     },
     {
       "Id": 1952543841,
@@ -86,37 +86,37 @@
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_10895"
+      "Value": "Exact Justice - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_10896"
+      "Value": "Exact Justice - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_10897"
+      "Value": "Exact Justice - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_507"
+      "Value": "Uther channels the Light for \u003CA097,DataA1\u003E seconds, preventing all nearby friendly units from taking damage. When Exact Justice finishes casting, all nearby enemy units take 200 damage. If Exact Justice is interrupted, it instead deals damage proportional to how long it was channeled for. "
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_1108"
+      "Value": "Uther channels the Light for \u003CA097,DataA2\u003E seconds, preventing all nearby friendly units from taking damage. When Exact Justice finishes casting, all nearby enemy units take 400 damage. If Exact Justice is interrupted, it instead deals damage proportional to how long it was channeled for. "
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_1111"
+      "Value": "Uther channels the Light for \u003CA097,DataA3\u003E seconds, preventing all nearby friendly units from taking damage. When Exact Justice finishes casting, all nearby enemy units take 700 damage. If Exact Justice is interrupted, it instead deals damage proportional to how long it was channeled for. "
     }
   ]
 }

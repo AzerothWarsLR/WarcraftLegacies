@@ -13,7 +13,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_3572"
+      "Value": "(Green)"
     },
     {
       "Id": 1818520949,
@@ -23,17 +23,17 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_3452"
+      "Value": "E"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_3881"
+      "Value": "Archmage"
     },
     {
       "Id": 1869770869,
       "Type": 3,
-      "Value": "TRIGSTR_3882"
+      "Value": "Grand Magister Rommath"
     },
     {
       "Id": 1769173877,
@@ -48,17 +48,17 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_7785"
+      "Value": "Summon Rommath"
     },
     {
       "Id": 1953980789,
       "Type": 3,
-      "Value": "TRIGSTR_3878"
+      "Value": "Revive Archmage"
     },
     {
       "Id": 1919972469,
       "Type": 3,
-      "Value": "TRIGSTR_7797"
+      "Value": "Revive Archmage"
     },
     {
       "Id": 2020631157,
@@ -72,7 +72,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_13165"
+      "Value": "Mystical Hero, adept at supporting magic.|n|cfff5962dCan Learn:|R Healing Wave, Ice Lance, Brilliance Aura, Chain Mana Burn|n|n|cffffcc00Attacks land and air units.|R"
     },
     {
       "Id": 1633907573,

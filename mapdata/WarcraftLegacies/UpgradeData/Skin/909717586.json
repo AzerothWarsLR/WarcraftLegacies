@@ -15,31 +15,31 @@
       "Level": 1,
       "Id": 1718840935,
       "Type": 3,
-      "Value": "TRIGSTR_20525"
+      "Value": "(Legion)"
     },
     {
       "Level": 1,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_19197"
+      "Value": "A"
     },
     {
       "Level": 1,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "TRIGSTR_2880"
+      "Value": "Rematerialization"
     },
     {
       "Level": 1,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_3113"
+      "Value": "Research Rematerialization"
     },
     {
       "Level": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "TRIGSTR_19567"
+      "Value": "Grants your demon units a 15% chance to rematerialize at Argus upon death."
     },
     {
       "Id": 2037408359,

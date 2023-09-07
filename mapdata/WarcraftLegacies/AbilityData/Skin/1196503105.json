@@ -12,30 +12,30 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_8228"
+      "Value": "(Warsong - Blademaster)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_10004"
+      "Value": "E"
     },
     {
       "Level": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_8230"
+      "Value": "Enchanced Bladestorm"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_8231"
+      "Value": "Causes a bladestorm of destructive force around the Blademaster, rendering him immune to magic and dealing 60 damage per second to nearby enemy land units. |nLasts 3 seconds."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_8232"
+      "Value": "Causes a bladestorm of destructive force around the Blademaster, rendering him immune to magic and dealing 75 damage per second to nearby enemy land units. |nLasts 3 seconds."
     }
   ]
 }

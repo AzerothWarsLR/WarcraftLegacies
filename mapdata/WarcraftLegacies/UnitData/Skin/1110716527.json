@@ -8,12 +8,12 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_2115"
+      "Value": "(Twilight Hammer, Worker)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_3611"
+      "Value": "Q"
     },
     {
       "Id": 1633907573,
@@ -23,12 +23,12 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_16717"
+      "Value": "Maddened followers of the Old Gods.|n|cfff5962dAbilities:|r Repair, Gather|n|n|cffffcc00Attacks land units and trees."
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_1411"
+      "Value": "Cultist"
     },
     {
       "Id": 1818520949,
@@ -43,7 +43,7 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_208"
+      "Value": "Train Cultist"
     }
   ]
 }

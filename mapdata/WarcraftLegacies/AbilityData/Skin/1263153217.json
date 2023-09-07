@@ -8,18 +8,18 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_886"
+      "Value": "(Fel Horde - Death Knight)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_14601"
+      "Value": "Q"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_1464"
+      "Value": "Stops all enemies in a target area from casting spells for 10 (2) seconds."
     }
   ]
 }

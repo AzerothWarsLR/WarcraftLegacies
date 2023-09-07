@@ -16,12 +16,12 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_20051"
+      "Value": "(Yogg Barracks)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_2366"
+      "Value": "A"
     },
     {
       "Id": 1633907573,
@@ -31,7 +31,7 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_19484"
+      "Value": "Build Incubation Pool"
     },
     {
       "Id": 1935832437,
@@ -41,7 +41,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_6245"
+      "Value": "Primary troop production building.|n|r|cfff5962dTrains:|R Faceless Marauder, Soul Hunter, Stygian Hulk"
     },
     {
       "Id": 1818520949,
@@ -56,7 +56,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_18615"
+      "Value": "Incubation Pool"
     }
   ]
 }

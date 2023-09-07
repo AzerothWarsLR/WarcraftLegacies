@@ -13,7 +13,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_2424"
+      "Value": "(Fel Horde)"
     },
     {
       "Id": 1633907573,
@@ -23,12 +23,12 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_2447"
+      "Value": "Deactivated Demon Gate"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_2448"
+      "Value": "Summon Demon Gate"
     },
     {
       "Id": 1935832437,
@@ -38,7 +38,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_2449"
+      "Value": "Gateway that allows the Legion to bring its frontline troops to Azeroth."
     }
   ]
 }

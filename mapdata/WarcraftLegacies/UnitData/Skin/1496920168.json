@@ -13,7 +13,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_3336"
+      "Value": "(Lordaeron)"
     },
     {
       "Id": 1818520949,
@@ -23,7 +23,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_5551"
+      "Value": "E"
     },
     {
       "Id": 1633907573,
@@ -33,17 +33,17 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_18136"
+      "Value": "Throne Guard"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_18137"
+      "Value": "Train Throne Guard"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_18047"
+      "Value": "Strongest Soldiers of Lordaeron, Protectors of Kings.|n|cfff5962dAbilities:|R Charge, Protector of Kings, Cleaving Attack, Heavy Armor, Elite Combat Experience|n |n|cff99b4d1Can only train 2.|r|n|cffffcc00Attacks land units.|r"
     },
     {
       "Id": 1668510581,

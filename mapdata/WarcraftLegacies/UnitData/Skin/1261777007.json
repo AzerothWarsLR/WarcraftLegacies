@@ -13,12 +13,12 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_8503"
+      "Value": "(dragonmaw)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_4944"
+      "Value": "Q"
     },
     {
       "Id": 1633907573,
@@ -28,12 +28,12 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_217"
+      "Value": "Savage Orc Mounted Warrior.|n|cfff5962dAbilities:|R Charge, Demolish|R|n|cfff5962d|n|cffffcc00Attacks land units.|r"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_233"
+      "Value": "Pillager"
     },
     {
       "Id": 1818520949,
@@ -43,7 +43,7 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_518"
+      "Value": "Train Pillager"
     },
     {
       "Id": 1684960117,

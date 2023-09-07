@@ -8,7 +8,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_2839"
+      "Value": "(Dalaran)"
     },
     {
       "Id": 1633907573,
@@ -18,27 +18,27 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_9857"
+      "Value": "Matriarch of Tirisfal"
     },
     {
       "Id": 1869770869,
       "Type": 3,
-      "Value": "TRIGSTR_19923"
+      "Value": "Aegwynn"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_20483"
+      "Value": "Mystical hero, adept at dealing magical damage.|n|cfff5962dCan Learn:|R Time\u0027s Shield, Reborn Through Time, Enchanted Bolts, Comet Strike|n|n|cffffcc00Attacks land and air units.|R"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_4856"
+      "Value": "R"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_19975"
+      "Value": "Summon Aegwynn"
     },
     {
       "Id": 1818520949,
@@ -67,12 +67,12 @@
     {
       "Id": 1953980789,
       "Type": 3,
-      "Value": "TRIGSTR_20211"
+      "Value": "Revive Aegwynn"
     },
     {
       "Id": 1919972469,
       "Type": 3,
-      "Value": "TRIGSTR_20212"
+      "Value": "Revive Aegwynn"
     },
     {
       "Id": 1768841589,

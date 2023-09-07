@@ -13,29 +13,29 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_7562"
+      "Value": "(Brown Cenarius)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_8606"
+      "Value": "Q"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_7564"
+      "Value": "Summon the Forest Spiders"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_7565"
+      "Value": "Summon the Forest Spiders (|cffffcc00Q|r)"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_7566"
+      "Value": "Summons 3 Spiders that have Web. and poison attacks.|nLasts \u003CACs7,Dur1\u003E seconds.|n|n|cffffcc00Attacks land units.|r"
     }
   ]
 }

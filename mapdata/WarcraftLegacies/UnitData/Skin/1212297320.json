@@ -8,7 +8,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_20316"
+      "Value": "(Onslaught Tower)"
     },
     {
       "Id": 1818520949,
@@ -18,7 +18,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_12166"
+      "Value": "Z"
     },
     {
       "Id": 1633907573,
@@ -28,12 +28,12 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_20317"
+      "Value": "Improved Guard Tower"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_20318"
+      "Value": "Upgrade to Improved Guard Tower"
     },
     {
       "Id": 1935832437,
@@ -43,7 +43,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_20319"
+      "Value": "Improved defensive structure.|n|n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Id": 1868786037,

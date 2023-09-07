@@ -8,17 +8,17 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_3230"
+      "Value": "(Alliance)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_4121"
+      "Value": "D"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_15708"
+      "Value": "Galley"
     },
     {
       "Id": 1668510581,
@@ -28,12 +28,12 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_15985"
+      "Value": "Build Galley"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_15996"
+      "Value": "Long range medium ship.|n|r|n|cffffcc00Attacks land and air units.|r |nStrong versus Fireships, Weak versus Frigates.|n"
     },
     {
       "Id": 1633907573,

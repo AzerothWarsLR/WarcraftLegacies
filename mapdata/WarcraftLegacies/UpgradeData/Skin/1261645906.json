@@ -31,85 +31,85 @@
       "Level": 1,
       "Id": 1718840935,
       "Type": 3,
-      "Value": "TRIGSTR_14598"
+      "Value": "(Scarlet Crusade)"
     },
     {
       "Level": 1,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_18897"
+      "Value": "S"
     },
     {
       "Level": 2,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_17223"
+      "Value": "C"
     },
     {
       "Level": 3,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_17224"
+      "Value": "C"
     },
     {
       "Level": 1,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "TRIGSTR_14604"
+      "Value": "The Inner Cloister"
     },
     {
       "Level": 2,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "TRIGSTR_10887"
+      "Value": "Fortified Hulls"
     },
     {
       "Level": 3,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "TRIGSTR_14058"
+      "Value": "Fortified Hulls"
     },
     {
       "Level": 1,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_14770"
+      "Value": "Build the Scarlet Monastery Inner Cloister"
     },
     {
       "Level": 2,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_14872"
+      "Value": "Research Fortified Hulls"
     },
     {
       "Level": 3,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_15073"
+      "Value": "Research Fortified Hulls"
     },
     {
       "Level": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "TRIGSTR_14887"
+      "Value": "Start building and preparing the Inner Cloister of the Scarlet Monastery"
     },
     {
       "Level": 2,
       "Id": 828536167,
       "Type": 3,
-      "Value": "TRIGSTR_14893"
+      "Value": "Further increases the armor of all Naval Units."
     },
     {
       "Level": 3,
       "Id": 828536167,
       "Type": 3,
-      "Value": "TRIGSTR_14937"
+      "Value": "Further increases the armor of all Naval Units."
     },
     {
       "Level": 4,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_17346"
+      "Value": "C"
     }
   ]
 }

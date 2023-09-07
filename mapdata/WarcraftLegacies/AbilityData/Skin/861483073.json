@@ -17,24 +17,24 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_7104"
+      "Value": "(C\u0027thun Silithid Collosus)"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_7105"
+      "Value": "Envenomed Darts"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_7106"
+      "Value": "Envenomed Darts"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_7107"
+      "Value": "Deals 5 poison damage per second, poison damage stacks, slows movement speed and attack speed by 25%. |n Lasts 25 (10 on heroes) seconds."
     }
   ]
 }

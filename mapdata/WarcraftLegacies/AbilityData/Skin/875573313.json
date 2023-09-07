@@ -13,12 +13,12 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_12987"
+      "Value": "(Yellow Falstad)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_12350"
+      "Value": "R"
     },
     {
       "Id": 1952542049,
@@ -28,7 +28,7 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_12989"
+      "Value": "Gryphon Sky"
     },
     {
       "Id": 1918988897,
@@ -38,17 +38,17 @@
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_12371"
+      "Value": "R"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_12991"
+      "Value": "Learn |cffffcc00R|r Gryphon Sky - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_12992"
+      "Value": "Calls Gryphon Riders from the sky. |n|n|cffffcc00Level 1|r -  Each gryphon deals 10 damage. |n|cffffcc00Level 2|r -  Each gryphon deals 15 damage. |n|cffffcc00Level 3|r -  Each gryphon deals 20 damage. |n|nLasts 30 seconds."
     },
     {
       "Id": 1952543585,
@@ -59,37 +59,37 @@
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_12993"
+      "Value": "|cffffcc00R|r Gryphon Sky - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_12994"
+      "Value": "|cffffcc00R|r Gryphon Sky - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_12995"
+      "Value": "|cffffcc00R|r Gryphon Sky - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_12996"
+      "Value": "Calls an onslaught of Gryphon Riders to attack enemies in a 800 radious. |n|cffffcc00Level 1|r -  Each gryphon deals 10 damage. |n|nLasts 30 seconds."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_12997"
+      "Value": "Calls an onslaught of Gryphon Riders to attack enemies in a 800 radious. |n|cffffcc00Level 1|r -  Each gryphon deals 15 damage. |n|nLasts 30 seconds."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_12998"
+      "Value": "Calls an onslaught of Gryphon Riders to attack enemies in a 800 radious. |n|cffffcc00Level 1|r -  Each gryphon deals 20 damage. |n|nLasts 30 seconds."
     }
   ]
 }

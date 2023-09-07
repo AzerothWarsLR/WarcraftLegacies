@@ -18,17 +18,17 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_6761"
+      "Value": "(Rage Winterchill)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_8269"
+      "Value": "Q"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_6763"
+      "Value": "Rain of Brimstone"
     },
     {
       "Id": 1918988897,
@@ -38,65 +38,65 @@
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_8271"
+      "Value": "Q"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_6765"
+      "Value": "Learn Rain of Brimstone (|cffffcc00Q|r) - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_6766"
+      "Value": "Calls down waves of Burning shards that damage units in a target area. |n|n|cffffcc00Level 1|r - \u003CAHbz,DataA1\u003E waves at \u003CAHbz,DataB1\u003E damage each. |n|cffffcc00Level 2|r - \u003CAHbz,DataA2\u003E waves at \u003CAHbz,DataB2\u003E damage each. |n|cffffcc00Level 3|r - \u003CAHbz,DataA3\u003E waves at \u003CAHbz,DataB3\u003E damage each. |n|cffffcc00Level 4|r - \u003CAHbz,DataA4\u003E waves at \u003CAHbz,DataB4\u003E damage each."
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_6767"
+      "Value": "Rain of Brimstone (|cffffcc00Q|r) - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_6768"
+      "Value": "Rain of Brimstone (|cffffcc00Q|r) - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_6769"
+      "Value": "Rain of Brimstone (|cffffcc00Q|r) - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_6770"
+      "Value": "Rain of Brimstone (|cffffcc00Q|r) - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_6771"
+      "Value": "Calls down \u003CAHbz,DataA1\u003E Burning shards waves; each wave deals \u003CAHbz,DataB1\u003E damage to units in an area."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_6772"
+      "Value": "Calls down \u003CAHbz,DataA2\u003E Burning shards waves; each wave deals \u003CAHbz,DataB2\u003E damage to units in an area."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_6773"
+      "Value": "Calls down \u003CAHbz,DataA3\u003E Burning shards waves; each wave deals \u003CAHbz,DataB3\u003E damage to units in an area."
     },
     {
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_6774"
+      "Value": "Calls down \u003CAHbz,DataA4\u003E Burning shards waves; each wave deals \u003CAHbz,DataB4\u003E damage to units in an area."
     }
   ]
 }

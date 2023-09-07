@@ -7,18 +7,18 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_5142"
+      "Value": "(Light Blue/Brown - Wisps)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_6445"
+      "Value": "W"
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_5145"
+      "Value": "Destroys the Wisp, dispelling all magical buffs and draining \u003CAdtn,DataA2\u003E mana from each unit in an area around the Wisp. |n|cffffcc00Deals \u003CAdtn,DataB2\u003E damage to summoned units.|r"
     }
   ]
 }

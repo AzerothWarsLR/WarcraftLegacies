@@ -13,7 +13,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_20133"
+      "Value": "(Dragonmaw Research)"
     },
     {
       "Id": 1818520949,
@@ -23,7 +23,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_5896"
+      "Value": "E"
     },
     {
       "Id": 1633907573,
@@ -38,17 +38,17 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_14549"
+      "Value": "Resource harvesting center and producer of Horde enhancements. |n|cfff5962dResearches:|R Forged Weaponry, Armor Plating, Spiked Barricades, Spiritual Infusion, Improved Cannons, Fortified Hulls"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_20134"
+      "Value": "Drakebone Armory"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_20135"
+      "Value": "Build Drakebone Armory"
     }
   ]
 }

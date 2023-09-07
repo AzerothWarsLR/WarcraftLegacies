@@ -17,7 +17,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19778"
+      "Value": "(Dalaran T2)"
     },
     {
       "Id": 1818520949,
@@ -27,7 +27,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_2850"
+      "Value": "C"
     },
     {
       "Id": 1831952757,
@@ -42,7 +42,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_2851"
+      "Value": "Conclave"
     },
     {
       "Id": 1668510581,
@@ -52,7 +52,7 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_2852"
+      "Value": "Upgrade to Conclave"
     },
     {
       "Id": 1935832437,
@@ -62,7 +62,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_8167"
+      "Value": "Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Farmer/Whelp|n|cfff5962dAbilities:|R Replenish Mana|n|cfff5962dUpgrades to:|R Observatory"
     }
   ]
 }

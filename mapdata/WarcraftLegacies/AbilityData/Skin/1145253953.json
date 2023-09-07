@@ -17,17 +17,17 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_10301"
+      "Value": "(Red - Baron Rivendare. Blue - Balnazzar)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_11213"
+      "Value": "W"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_10303"
+      "Value": "Unholy Plating"
     },
     {
       "Id": 1918988897,
@@ -41,65 +41,65 @@
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_11215"
+      "Value": "W"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_10305"
+      "Value": "Learn Unholy Plating - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_10306"
+      "Value": "Gives a chance to reduce damage from attacks.|n|n|cffffcc00Level 1|r - 15% chance to block, ignores 20 damage.|n|cffffcc00Level 2|r - 25% chance to block, ignores 35 damage.|n|cffffcc00Level 3|r - 35% chance to block, ignores 50 damage.|n|cffffcc00Level 4|r - 45% chance to block, ignores 65 damage."
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_10307"
+      "Value": "Unholy Plating - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_10308"
+      "Value": "Unholy Plating - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_10309"
+      "Value": "Unholy Plating - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_10310"
+      "Value": "Unholy Plating - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_10311"
+      "Value": "Attacks against this unit have a \u003CA0CD,DataA1\u003E% chance to have their damage reduced by \u003CA0CD,DataC1\u003E."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_10312"
+      "Value": "Attacks against this unit have a \u003CA0CD,DataA2\u003E% chance to have their damage reduced by \u003CA0CD,DataC2\u003E."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_10313"
+      "Value": "Attacks against this unit have a \u003CA0CD,DataA3\u003E% chance to have their damage reduced by \u003CA0CD,DataC3\u003E."
     },
     {
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_10314"
+      "Value": "Attacks against this unit have a \u003CA0CD,DataA4\u003E% chance to have their damage reduced by \u003CA0CD,DataC4\u003E."
     }
   ]
 }

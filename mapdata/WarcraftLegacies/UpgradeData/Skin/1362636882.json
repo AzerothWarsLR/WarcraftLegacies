@@ -31,85 +31,85 @@
       "Level": 1,
       "Id": 1718840935,
       "Type": 3,
-      "Value": "TRIGSTR_7084"
+      "Value": "(Nzoth)"
     },
     {
       "Level": 1,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_20403"
+      "Value": "S"
     },
     {
       "Level": 2,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_18474"
+      "Value": "C"
     },
     {
       "Level": 3,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_18475"
+      "Value": "C"
     },
     {
       "Level": 1,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "TRIGSTR_18309"
+      "Value": "Build the Empire"
     },
     {
       "Level": 2,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "TRIGSTR_16390"
+      "Value": "Fortified Hulls"
     },
     {
       "Level": 3,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "TRIGSTR_16391"
+      "Value": "Fortified Hulls"
     },
     {
       "Level": 1,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_18957"
+      "Value": "Build the Nazjatar Empire"
     },
     {
       "Level": 2,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_17917"
+      "Value": "Research Fortified Hulls"
     },
     {
       "Level": 3,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_17930"
+      "Value": "Research Fortified Hulls"
     },
     {
       "Level": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "TRIGSTR_18982"
+      "Value": "Build the Nazjatar Empire and raise your food limit to 200"
     },
     {
       "Level": 2,
       "Id": 828536167,
       "Type": 3,
-      "Value": "TRIGSTR_17960"
+      "Value": "Further increases the armor of all Naval Units."
     },
     {
       "Level": 3,
       "Id": 828536167,
       "Type": 3,
-      "Value": "TRIGSTR_17961"
+      "Value": "Further increases the armor of all Naval Units."
     },
     {
       "Level": 4,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_18577"
+      "Value": "C"
     }
   ]
 }

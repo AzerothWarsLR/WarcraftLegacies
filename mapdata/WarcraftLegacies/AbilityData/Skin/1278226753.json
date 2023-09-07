@@ -36,7 +36,7 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_20184"
+      "Value": "(dalaran)"
     },
     {
       "Id": 1952540001,
@@ -46,12 +46,12 @@
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_18374"
+      "Value": "W"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_20171"
+      "Value": "Enchanted Bolts"
     },
     {
       "Id": 1918988897,
@@ -61,17 +61,17 @@
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_18470"
+      "Value": "W"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_20172"
+      "Value": "Learn Enchanted Bolts - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_20173"
+      "Value": "Fires an enchanted bolt at every enemy unit in the target area, dealing damage and stunning each target for \u003CA0GL,Dur1\u003E seconds. |n|n|cffffcc00Level 1|r - Deals \u003CA0GL,DataA1\u003E damage.|n|cffffcc00Level 2|r - Deals \u003CA0GL,DataA2\u003E damage.|n|cffffcc00Level 3|r - Deals \u003CA0GL,DataA3\u003E damage.|n|cffffcc00Level 4|r - Deals \u003CA0GL,DataA4\u003E damage."
     },
     {
       "Id": 1952543841,
@@ -82,49 +82,49 @@
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_20174"
+      "Value": "Enchanted Bolt - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_20175"
+      "Value": "Enchanted Bolt - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_20176"
+      "Value": "Enchanted Bolt - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_20177"
+      "Value": "Enchanted Bolt - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_20178"
+      "Value": "Fires an enchanted bolt at every enemy unit in the target area, dealing \u003CA0GL,DataA1\u003E damage and stunning each target for \u003CA0GL,Dur1\u003E seconds."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_20179"
+      "Value": "Fires an enchanted bolt at every enemy unit in the target area, dealing \u003CA0GL,DataA2\u003E damage and stunning each target for \u003CA0GL,Dur2\u003E seconds."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_20180"
+      "Value": "Fires an enchanted bolt at every enemy unit in the target area, dealing \u003CA0GL,DataA3\u003E damage and stunning each target for \u003CA0GL,Dur3\u003E seconds."
     },
     {
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_20181"
+      "Value": "Fires an enchanted bolt at every enemy unit in the target area, dealing \u003CA0GL,DataA4\u003E damage and stunning each target for \u003CA0GL,Dur4\u003E seconds."
     },
     {
       "Id": 2020635233,

@@ -13,12 +13,12 @@
     {
       "Id": 1885959270,
       "Type": 3,
-      "Value": "TRIGSTR_13141"
+      "Value": "Arcane Artillery"
     },
     {
       "Id": 1700951398,
       "Type": 3,
-      "Value": "TRIGSTR_9589"
+      "Value": "This unit is being bombarded by Arcane Artillery"
     }
   ]
 }

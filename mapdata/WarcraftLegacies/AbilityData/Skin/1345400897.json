@@ -9,19 +9,19 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_12644"
+      "Value": "Gives 2 additional armor to nearby friendly units."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_12645"
+      "Value": "\u002B2*2 armor"
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_12646"
+      "Value": "\u002B2*3 armor"
     }
   ]
 }

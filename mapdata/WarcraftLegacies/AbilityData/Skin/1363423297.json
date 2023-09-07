@@ -12,24 +12,24 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_9965"
+      "Value": "(Scorpions)"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_9966"
+      "Value": "Poisonous Attacks"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_9967"
+      "Value": "Poisonous Attacks"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_9968"
+      "Value": "Deals 5 poison damage per second and slows attack speed by 40%. |nLasts 10 seconds. 3 seconds on heroes"
     }
   ]
 }

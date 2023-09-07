@@ -13,12 +13,12 @@
     {
       "Id": 1885959270,
       "Type": 3,
-      "Value": "TRIGSTR_13620"
+      "Value": "Crippled"
     },
     {
       "Id": 1700951398,
       "Type": 3,
-      "Value": "TRIGSTR_13621"
+      "Value": "This unit is crippled; its movement speed and attack rate are reduced."
     },
     {
       "Id": 1952543846,

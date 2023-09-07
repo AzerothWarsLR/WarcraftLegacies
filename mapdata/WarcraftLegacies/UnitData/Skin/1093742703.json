@@ -17,7 +17,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_7997"
+      "Value": "(kultiras)"
     },
     {
       "Id": 1953523061,
@@ -40,7 +40,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_1550"
+      "Value": "W"
     },
     {
       "Id": 2054188149,
@@ -70,7 +70,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_9698"
+      "Value": "Cannon"
     },
     {
       "Id": 1668510581,
@@ -100,12 +100,12 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_11334"
+      "Value": "Train Cannon"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_11335"
+      "Value": "Powerful portable cannon.|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land units and trees.|r"
     },
     {
       "Id": 1684960117,

@@ -13,7 +13,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_3120"
+      "Value": "(Quel\u0027thalas T1)"
     },
     {
       "Id": 1818520949,
@@ -23,7 +23,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_2622"
+      "Value": "Q"
     },
     {
       "Id": 1633907573,
@@ -33,7 +33,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_2310"
+      "Value": "Steading"
     },
     {
       "Id": 1668510581,
@@ -43,7 +43,7 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_2312"
+      "Value": "Build Steading"
     },
     {
       "Id": 1935832437,
@@ -53,7 +53,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_3234"
+      "Value": "Main gathering structure.|n|cfff5962dTrains:|R Architect"
     }
   ]
 }

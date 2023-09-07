@@ -13,7 +13,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_2013"
+      "Value": "(Legion)"
     },
     {
       "Id": 1818520949,
@@ -33,12 +33,12 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_3732"
+      "Value": "The Deceiver"
     },
     {
       "Id": 1869770869,
       "Type": 3,
-      "Value": "TRIGSTR_3733"
+      "Value": "Kil\u0027jaeden"
     },
     {
       "Id": 1668510581,
@@ -53,7 +53,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_1879"
+      "Value": "R"
     },
     {
       "Id": 2020631157,
@@ -62,12 +62,12 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_1761"
+      "Value": "Summon Kil\u0027jaeden"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_11961"
+      "Value": "Caster hero, exceptional at area of effect damage.|n|cfff5962dAbilities:|r Spell Immunity, Dark Pact|n|cfff5962dCan Learn:|R Rain of Fire, Fear Aura, Finger of Death, Rain of Meteors|n|n|cffffcc00Attacks land and air units.|R"
     }
   ]
 }

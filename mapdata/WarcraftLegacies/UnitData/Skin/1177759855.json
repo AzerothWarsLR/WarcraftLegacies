@@ -17,7 +17,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19916"
+      "Value": " (Twilight Specialist)"
     },
     {
       "Id": 1818520949,
@@ -27,7 +27,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_2820"
+      "Value": "D"
     },
     {
       "Id": 1935832437,
@@ -37,17 +37,17 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_16729"
+      "Value": "Dragon Hatchery for the Twilight Hammer.|n|cfff5962dTrains:|R Twilight Dragonspawn, Void Rider, Nether Dragon"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_16730"
+      "Value": "Dragon Hatchery"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_16731"
+      "Value": "Build Dragon Hatchery"
     }
   ]
 }

@@ -8,7 +8,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_3517"
+      "Value": "Q"
     },
     {
       "Id": 1633907573,
@@ -28,12 +28,12 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_042"
+      "Value": "Primary structure.|n|cff6480ff|cfff5962dTrains:|R Acolytes|n|cfff5962dUpgrades to:|R  Grim Estate"
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19997"
+      "Value": "(Forsaken T1)"
     },
     {
       "Id": 1818520949,
@@ -48,12 +48,12 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_043"
+      "Value": "Dark Mansion"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_410"
+      "Value": "Build Dark Mansion"
     }
   ]
 }

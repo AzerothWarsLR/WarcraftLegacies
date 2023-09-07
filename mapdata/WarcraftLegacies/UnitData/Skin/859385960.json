@@ -16,7 +16,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_14823"
+      "Value": "(Kul Tiras)"
     },
     {
       "Id": 1818520949,
@@ -26,12 +26,12 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_3114"
+      "Value": "F"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_16630"
+      "Value": "Order Chapter House"
     },
     {
       "Id": 1668510581,
@@ -41,7 +41,7 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_16631"
+      "Value": "Build Order Chapter House"
     },
     {
       "Id": 1935832437,
@@ -51,7 +51,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_2000"
+      "Value": "Primary troop production building.|n|cfff5962dTrains:|R Ember Cleric, Witch Hunter and Fusillier"
     },
     {
       "Id": 1868786037,

@@ -11,18 +11,18 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_4765"
+      "Value": "UNUSED"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_5659"
+      "Value": "Q"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_4767"
+      "Value": "War Stomp (|cffffff00Q|r)"
     }
   ]
 }

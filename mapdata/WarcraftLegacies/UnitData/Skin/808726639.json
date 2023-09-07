@@ -12,12 +12,12 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19962"
+      "Value": "(Zandalari Altar)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_2780"
+      "Value": "X"
     },
     {
       "Id": 1633907573,
@@ -32,7 +32,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_16038"
+      "Value": "Revives slain Heroes and Demi-heros."
     },
     {
       "Id": 1818520949,
@@ -47,12 +47,12 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_16356"
+      "Value": "Altar of Loa"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_16357"
+      "Value": "Build Altar of Loa"
     }
   ]
 }

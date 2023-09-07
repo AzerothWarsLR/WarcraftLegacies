@@ -13,7 +13,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_7786"
+      "Value": "(High Elves)"
     },
     {
       "Id": 1818520949,
@@ -23,7 +23,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_4806"
+      "Value": "W"
     },
     {
       "Id": 1633907573,
@@ -33,17 +33,17 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_7787"
+      "Value": "Sunfury Mastermind"
     },
     {
       "Id": 1869770869,
       "Type": 3,
-      "Value": "TRIGSTR_7789"
+      "Value": "Pathaleon the Calculator"
     },
     {
       "Id": 1919972469,
       "Type": 3,
-      "Value": "TRIGSTR_14532"
+      "Value": " Revive Paladin"
     },
     {
       "Id": 1769173877,
@@ -58,7 +58,7 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_17171"
+      "Value": "Summon Pathaleon"
     },
     {
       "Id": 2020631157,
@@ -67,7 +67,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_20971"
+      "Value": "Warrior Hero, adept at disrupting enemies and offensive magic.|n|cfff5962dAbilities:|r Mana Shield|n|cfff5962dCan Learn:|R Burst of Energy, Silence, Retribution Aura, Summon Goliathon|n|n|cffffcc00Attacks land units.|R"
     }
   ]
 }

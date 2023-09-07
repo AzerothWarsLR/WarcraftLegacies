@@ -12,12 +12,12 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_1757"
+      "Value": "(Warsong)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_5273"
+      "Value": "E"
     },
     {
       "Id": 1831952757,
@@ -32,17 +32,17 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_15272"
+      "Value": "Train Trading Zeppelin"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_8702"
+      "Value": "Flying Lumber Trader. Once trained, it cannot be controlled and will automatically trade between the Trading Center and a random Goblin trading location. Will collect Lumber over time. |n|n|cff99b4d1Can only build 16."
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_8703"
+      "Value": "Gallywix Personal Transport"
     },
     {
       "Id": 1818520949,

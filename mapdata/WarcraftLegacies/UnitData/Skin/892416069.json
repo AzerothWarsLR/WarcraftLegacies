@@ -8,12 +8,12 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_5778"
+      "Value": "(Naga)"
     },
     {
       "Id": 1869770869,
       "Type": 3,
-      "Value": "TRIGSTR_14949"
+      "Value": "Altruis the Sufferer"
     },
     {
       "Id": 1868786037,
@@ -37,17 +37,17 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_17216"
+      "Value": "Summon Altruis"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_12526"
+      "Value": "Cunning Hero, adept at maneuvering and evasion.|n|cfff5962dCan Learn:|R Mana Burn, Immolation, Evasion, Metamorphosis|n|n|cffffcc00Attacks land units.|R"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_4730"
+      "Value": "W"
     }
   ]
 }

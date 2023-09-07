@@ -21,29 +21,29 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_9499"
+      "Value": "(Brown - Main Buildings)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_14280"
+      "Value": "X"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_9501"
+      "Value": "Sacred Ground"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_9502"
+      "Value": "Sacred Ground"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_9503"
+      "Value": "Regrows all of the tree in a radius around the building."
     }
   ]
 }

@@ -13,12 +13,12 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_12271"
+      "Value": "(Purple - Garithos)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_11922"
+      "Value": "R"
     },
     {
       "Id": 1952542049,
@@ -28,7 +28,7 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_12273"
+      "Value": "Cavalry Onslaught"
     },
     {
       "Id": 1918988897,
@@ -38,53 +38,53 @@
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_11931"
+      "Value": "R"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_12275"
+      "Value": "Learn Cavalry Onslaught - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_12276"
+      "Value": "Calls upon waves of brave knights to charge into enemy ranks. |n|n|cffffcc00Level 1|r -  Each charging Knight deals 40 damage. |n|cffffcc00Level 2|r -  Each charging Knight deals 70 damage. |n|cffffcc00Level 3|r -  Each charging Knight deals 100 damage. |n|nLasts 30 seconds."
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_12277"
+      "Value": "Cavalry Onslaught - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_12278"
+      "Value": "Cavalry Onslaught - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_12279"
+      "Value": "Cavalry Onslaught - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_12280"
+      "Value": "Calls on waves of charging knights. Each Knight deals 40 damage. |nLasts 30 seconds."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_12281"
+      "Value": "Calls on waves of charging knights. Each Knight deals 70 damage. |nLasts 30 seconds."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_12282"
+      "Value": "Calls on waves of charging knights. Each Knight deals 100 damage. |nLasts 30 seconds."
     }
   ]
 }

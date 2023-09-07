@@ -8,54 +8,54 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_18860"
+      "Value": " (Ragnaros)"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_16467"
+      "Value": "Wrath of Ragnaros - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_16498"
+      "Value": "Wrath of Ragnaros - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_16514"
+      "Value": "Wrath of Ragnaros - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_16524"
+      "Value": "Wrath of Ragnaros - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_18881"
+      "Value": "Heaves a wave of fire at enemy units, dealing \u003CA0VW,DataA2\u003E damage."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_18882"
+      "Value": "Heaves a wave of fire at enemy units, dealing \u003CA0VW,DataA3\u003E damage."
     },
     {
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_18883"
+      "Value": "Heaves a wave of fire at enemy units, dealing \u003CA0VW,DataA4\u003E damage."
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_18537"
+      "Value": "Wrath of Ragnaros"
     },
     {
       "Id": 1953653089,
@@ -65,33 +65,33 @@
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_17350"
+      "Value": "E"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_17760"
+      "Value": "E"
     },
     {
       "Id": 1802007905,
       "Type": 3,
-      "Value": "TRIGSTR_13794"
+      "Value": "V"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_11425"
+      "Value": "Learn Wrath of Ragnaros - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_18884"
+      "Value": "Heaves a wave of fire at enemy units.|n|n|cffffcc00Level 1|r - Deals \u003CA0VW,DataA1\u003E damage.|n|cffffcc00Level 2|r - Deals \u003CA0VW,DataA2\u003E damage.|n|cffffcc00Level 3|r - Deals \u003CA0VW,DataA3\u003E damage.|n|cffffcc00Level 4|r - Deals \u003CA0VW,DataA4\u003E damage."
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_18885"
+      "Value": "Heaves a wave of fire at enemy units, dealing \u003CA0VW,DataA1\u003E damage."
     },
     {
       "Id": 2020631137,

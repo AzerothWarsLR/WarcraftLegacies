@@ -12,18 +12,18 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_211"
+      "Value": "(Forsaken) (elemental Guardian)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_12309"
+      "Value": "E"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_11386"
+      "Value": "Creates a shield of frost around a target friendly unit. The shield adds 8 armor and slows melee units that attack it for 5 seconds. |nLasts 60 seconds."
     },
     {
       "Id": 2019718497,

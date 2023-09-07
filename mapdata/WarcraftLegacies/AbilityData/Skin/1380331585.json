@@ -8,41 +8,41 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_16569"
+      "Value": "(Gorfax)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_18072"
+      "Value": "Q"
     },
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_18105"
+      "Value": "Q"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_16580"
+      "Value": "Transfusion - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_16581"
+      "Value": "Transfusion - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_16714"
+      "Value": "Transfusion - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_16719"
+      "Value": "Transfusion - [|cffffcc00Level 4|r]"
     },
     {
       "Id": 1952543841,
@@ -52,41 +52,41 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_17170"
+      "Value": "Transfusion"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_17481"
+      "Value": "Learn Transfusion - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_17487"
+      "Value": "Calls forth a wave of blood that heals a target and bounces to nearby friendlies. Each bounce heals less damage. |n|n|cffffcc00Level 1|r - Heals \u003CANhw,DataA1\u003E damage, jumps \u003CANhw,DataB1\u003E times. |n|cffffcc00Level 2|r - Heals \u003CANhw,DataA2\u003E damage, jumps \u003CANhw,DataB2\u003E times. |n|cffffcc00Level 3|r - Heals \u003CANhw,DataA3\u003E damage, jumps \u003CANhw,DataB3\u003E times. |n|cffffcc00Level 4|r - Heals \u003CANhw,DataA4\u003E damage, jumps \u003CANhw,DataB4\u003E times."
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_17964"
+      "Value": "Calls forth a wave of healing Blood that bounces up to \u003CANhw,DataB1\u003E times, healing \u003CANhw,DataA1\u003E damage on the primary target. Each jump heals less damage."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_18051"
+      "Value": "Calls forth a wave of healing Blood that bounces up to \u003CANhw,DataB2\u003E times, healing \u003CANhw,DataA2\u003E damage on the primary target. Each jump heals less damage."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_18228"
+      "Value": "Calls forth a wave of healing Blood that bounces up to \u003CANhw,DataB3\u003E times, healing \u003CANhw,DataA3\u003E damage on the primary target. Each jump heals less damage."
     },
     {
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_18478"
+      "Value": "Calls forth a wave of healing Blood that bounces up to \u003CANhw,DataB4\u003E times, healing \u003CANhw,DataA4\u003E damage on the primary target. Each jump heals less damage."
     },
     {
       "Id": 1734962273,

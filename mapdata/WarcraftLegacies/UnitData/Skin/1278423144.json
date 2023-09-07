@@ -8,7 +8,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_15757"
+      "Value": "(gilneas)"
     },
     {
       "Id": 1818520949,
@@ -18,22 +18,22 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_3524"
+      "Value": "W"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_15769"
+      "Value": "Shotgunner"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_4892"
+      "Value": "Short range powerful sharpshooter with an aoe attack.|n|cfff5962dAbilities:|R Ensnare|n|cffffcc00Attacks land and air units.|n"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_15771"
+      "Value": "Train Shotgunner"
     }
   ]
 }

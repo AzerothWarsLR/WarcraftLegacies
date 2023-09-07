@@ -8,24 +8,24 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_8290"
+      "Value": "(Broll)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_9324"
+      "Value": "Q"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_8292"
+      "Value": "Entangling Roots - (|cffffcc00Q)|r"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_8293"
+      "Value": "Causes roots to burst from the ground, immobilizing a target enemy unit for 5 seconds, and dealing 10 damage per second."
     }
   ]
 }

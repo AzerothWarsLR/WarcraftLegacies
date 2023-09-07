@@ -13,7 +13,7 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_2853"
+      "Value": "(sylvanas)"
     },
     {
       "Id": 1818649953,
@@ -23,7 +23,7 @@
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_9927"
+      "Value": "R"
     },
     {
       "Id": 1952542049,
@@ -33,7 +33,7 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_9928"
+      "Value": "Banshee Queen"
     },
     {
       "Id": 1918988897,
@@ -43,47 +43,47 @@
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_9929"
+      "Value": "R"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_9930"
+      "Value": "Learn Banshee Queen - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_9931"
+      "Value": "Unleashes Banshees to attack the Dark Ranger enemies.|n|n|cffffcc00Level 1|r - 20 spirits. |n|cffffcc00Level 2|r - 30 spirits.|n|cffffcc00Level 3|r - 40 spirits.|n|nLasts \u003CAOls,HeroDur1\u003E seconds."
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_9932"
+      "Value": "Banshee Queen - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_9933"
+      "Value": "Banshee Queen - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_9934"
+      "Value": "Banshee Queen - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_9935"
+      "Value": "Unleashes ancient spirits which drain enemy health and replenish Sylvanas\u0027s health.|nLasts \u003CAOls,HeroDur1\u003E seconds."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_9936"
+      "Value": "Unleashes ancient spirits which drain enemy health and replenish Sylvanas\u0027s health.|nLasts \u003CAOls,HeroDur1\u003E seconds."
     }
   ]
 }

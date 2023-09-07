@@ -36,7 +36,7 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_6819"
+      "Value": "(Scourge-Arthas)"
     },
     {
       "Id": 1952540001,
@@ -46,12 +46,12 @@
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_7196"
+      "Value": "R"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_6821"
+      "Value": "Reaping Hour"
     },
     {
       "Id": 1918988897,
@@ -65,17 +65,17 @@
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_7198"
+      "Value": "R"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_6823"
+      "Value": "Learn Reaping Hour - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_6824"
+      "Value": "Conjures 7 spectral horsemen that charge to the target location, dealing damage to each enemy unit struck. Deals 1% additional damage for each 1% of hit points the damaged unit is missing.  |n|n|cffffcc00Level 1|r - Deals 300 damage.|n|cffffcc00Level 2|r - Deals 400 damage. |n|cffffcc00Level 3|r - Deals 500 damage."
     },
     {
       "Id": 1952543841,
@@ -86,37 +86,37 @@
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_6825"
+      "Value": "Reaping Hour - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_6826"
+      "Value": "Reaping Hour - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_6827"
+      "Value": "Reaping Hour - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_010"
+      "Value": "Conjures 7 spectral horsemen that charge to the target location, dealing 100 damage to each enemy unit struck. Deals 1% additional damage for each 1% of hit points the damaged unit is missing."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_384"
+      "Value": "Conjures 7 spectral horsemen that charge to the target location, dealing 150 damage to each enemy unit struck. Deals 1% additional damage for each 1% of hit points the damaged unit is missing."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_840"
+      "Value": "Conjures 7 spectral horsemen that charge to the target location, dealing 200 damage to each enemy unit struck. Deals 1% additional damage for each 1% of hit points the damaged unit is missing."
     }
   ]
 }

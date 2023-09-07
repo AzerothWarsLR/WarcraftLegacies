@@ -12,17 +12,17 @@
     {
       "Id": 1936024681,
       "Type": 3,
-      "Value": "TRIGSTR_4189"
+      "Value": "Increases armor and reduces damage from ranged attacks and Spells."
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_4190"
+      "Value": "Shroud of Nozdormu"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_4191"
+      "Value": "|cffff8c00Artifact|r|nReduces damage taken from ranged attacks by 15% and Spell and Magic damage by 30%. Also increases the Hero\u0027s armor by \u003CAId5,DataA1\u003E when worn.|n|cffffcc00Lore|r|n|cffffdeadThis cloak is woven with the strands of sand from the Hourglass of Time and bound by the shed scales of the Timeless One himself."
     }
   ]
 }

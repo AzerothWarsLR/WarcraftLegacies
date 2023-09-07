@@ -17,12 +17,12 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_8419"
+      "Value": "(Dark Green Spearman)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_9375"
+      "Value": "Q"
     },
     {
       "Id": 1952542049,
@@ -32,25 +32,25 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_8421"
+      "Value": "Poisoned Spear"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_8422"
+      "Value": "Poisoned Spear (|cffffcc00Q|r)"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_17718"
+      "Value": "Adds 10 bonus magic damage to an attack against enemies"
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_8424"
+      "Value": "Adds 16 bonus fire damage to an attack against enemies"
     },
     {
       "Id": 1918989665,
@@ -64,7 +64,7 @@
     {
       "Id": 1802007905,
       "Type": 3,
-      "Value": "TRIGSTR_9379"
+      "Value": "Q"
     }
   ]
 }

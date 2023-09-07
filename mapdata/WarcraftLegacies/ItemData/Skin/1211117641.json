@@ -21,22 +21,22 @@
     {
       "Id": 1936024681,
       "Type": 3,
-      "Value": "TRIGSTR_4332"
+      "Value": "Increases all stats."
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_4333"
+      "Value": "Sulfuras, Hand of Ragnaros"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_4334"
+      "Value": "Sulfuras, Hand of Ragnaros"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_4335"
+      "Value": "|cffff8c00Artifact|r|nIncreases the Strength, Intelligence, and Agility of the Hero by 10 when wielded.|n|cffffcc00Lore|r|n|cffffdeadForged in the elemental planes of the Firelands, this immense hammer is deigned to be Ragnaros\u0027 greatest construction, spewing magma and carnage with every swing."
     }
   ]
 }

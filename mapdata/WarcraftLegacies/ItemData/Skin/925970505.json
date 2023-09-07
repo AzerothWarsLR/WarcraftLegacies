@@ -16,7 +16,7 @@
     {
       "Id": 1936024681,
       "Type": 3,
-      "Value": "TRIGSTR_19486"
+      "Value": "Transports troops to Nagrand."
     },
     {
       "Id": 1953458293,
@@ -26,17 +26,17 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_19476"
+      "Value": "Portal to Nagrand"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_19489"
+      "Value": "Purchase Portal to Nagrand"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_2209"
+      "Value": "Opens a two-way portal to Nagrand at the target location within a range of \u003CA0ZJ,Rng1\u003E. The portal becomes useable after 5 seconds, and closes 10 seconds after the caster stops channeling."
     },
     {
       "Id": 1868786025,

@@ -8,7 +8,7 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_9059"
+      "Value": "Change armor type (dummy)"
     },
     {
       "Id": 1952543841,
@@ -19,13 +19,13 @@
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_9060"
+      "Value": "Change armor type (dummy)"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_9061"
+      "Value": "Gives Gryphon Riders Normal armour."
     }
   ]
 }

@@ -13,43 +13,43 @@
       "Level": 1,
       "Id": 1718840935,
       "Type": 3,
-      "Value": "TRIGSTR_1577"
+      "Value": "(fel horde - Drakes)"
     },
     {
       "Level": 1,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_21188"
+      "Value": "D"
     },
     {
       "Level": 1,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_1662"
+      "Value": "Reaserch Enhanced Breath"
     },
     {
       "Level": 2,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_14156"
+      "Value": "Research Improved Bows - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "TRIGSTR_1592"
+      "Value": "Increases the attack range of Obsidian Drakes by 200."
     },
     {
       "Level": 2,
       "Id": 828536167,
       "Type": 3,
-      "Value": "TRIGSTR_1594"
+      "Value": "Increases the attack range of Archers and Hippogryph Rider by an additional 100."
     },
     {
       "Level": 1,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "TRIGSTR_1854"
+      "Value": "Enhanced Breath"
     },
     {
       "Level": 1,

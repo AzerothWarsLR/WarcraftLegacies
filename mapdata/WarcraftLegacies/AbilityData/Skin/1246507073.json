@@ -12,29 +12,29 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_8752"
+      "Value": "(Legion main building)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_14330"
+      "Value": "Z"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_8754"
+      "Value": "Hellfire"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_8755"
+      "Value": "Hellfire|cffffcc00 Z|r"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_8756"
+      "Value": "Demonic flames scorch the target dealing 300 damage."
     }
   ]
 }

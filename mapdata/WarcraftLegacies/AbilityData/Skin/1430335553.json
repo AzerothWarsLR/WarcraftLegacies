@@ -12,18 +12,18 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_19494"
+      "Value": "(Teal - Eredar Sorcerer. Grey - Draz\u0027zilb)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_11432"
+      "Value": "Q"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_10636"
+      "Value": "Creates a shield of frost around a target friendly unit. The shield adds 7 armor and slows melee units that attack it for \u003CACfa,Dur1\u003E seconds. |nLasts \u003CACfa,DataA1\u003E seconds."
     },
     {
       "Id": 2019718497,

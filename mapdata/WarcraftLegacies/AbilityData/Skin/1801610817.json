@@ -11,13 +11,13 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_5093"
+      "Value": "(Fel Horde-Fel Stalker-Quel\u0027Thalas-Spell Breaker)"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_5094"
+      "Value": "This unit\u0027s attacks combust \u003CAfbk,DataA1\u003E(\u003CAfbk,DataC1\u003E for Heros) mana per hit, dealing damage to the attacked unit equal to mana destroyed."
     }
   ]
 }

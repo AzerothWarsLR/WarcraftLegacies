@@ -27,12 +27,12 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_11026"
+      "Value": "(Dark Green - Galen)"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_11027"
+      "Value": "Instant Revitalization"
     },
     {
       "Id": 1918988897,
@@ -46,48 +46,48 @@
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_11028"
+      "Value": "Learn Instant Revitalization - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_11029"
+      "Value": "Trollbane uses the power from the Periapt of Vitality, instantly restoring himself to full health.|n|n|cffffcc00Level 1|r - 100 second cooldown.|n|cffffcc00Level 2|r - 85 second cooldown.|n|cffffcc00Level 3|r - 60 second cooldown."
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_11030"
+      "Value": "Instant Revitalization - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_11031"
+      "Value": "Instant Revitalization - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_11032"
+      "Value": "Instant Revitalization - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_11033"
+      "Value": "Trollbane uses the power from the Periapt of Vitality, instantly restoring himself to full health.                                                    |cff99b4d1100 second cooldown|r"
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_11034"
+      "Value": "Trollbane uses the power from the Periapt of Vitality, instantly restoring himself to full health.                                                      |cff99b4d185 second cooldown|r"
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_11035"
+      "Value": "Trollbane uses the power from the Periapt of Vitality, instantly restoring himself to full health.                                                      |cff99b4d160 second cooldown|r"
     }
   ]
 }

@@ -18,7 +18,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_1297"
+      "Value": "Z"
     },
     {
       "Id": 2054188149,
@@ -43,12 +43,12 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_1832"
+      "Value": "Improved Flame Pillar"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_1833"
+      "Value": "Upgrade to Improved Flame Pillar"
     },
     {
       "Id": 1935832437,
@@ -58,12 +58,12 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_15849"
+      "Value": "Launch even larger chunks of burning slag.|n|n|cffffcc00Attacks land units.|r"
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19684"
+      "Value": " (Fel Horde Tower 2)"
     }
   ]
 }

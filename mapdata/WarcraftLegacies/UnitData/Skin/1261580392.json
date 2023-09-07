@@ -21,7 +21,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_3261"
+      "Value": "(Closed)"
     },
     {
       "Id": 1818520949,
@@ -35,7 +35,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_3297"
+      "Value": "Greymane\u0027s Gate"
     },
     {
       "Id": 1919705973,
@@ -44,7 +44,7 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_3011"
+      "Value": "Horizontal Wooden Gate"
     },
     {
       "Id": 1935832437,
@@ -54,7 +54,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_3054"
+      "Value": "Repairs the broken gate."
     },
     {
       "Id": 1684960117,

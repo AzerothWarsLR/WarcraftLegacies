@@ -12,7 +12,7 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_3507"
+      "Value": " (Grom, Saurfang)"
     },
     {
       "Id": 1936090465,
@@ -22,7 +22,7 @@
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_6093"
+      "Value": "R"
     },
     {
       "Id": 1918988897,
@@ -32,42 +32,42 @@
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_6094"
+      "Value": "R"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_3746"
+      "Value": "When Battle Trance is activated, the Hero gains bonus armor, bonus hit points, bonus damage and spell immunity.|nLasts 15 seconds.|n|n|cffffcc00Level 1|r - 5 bonus armor, 15 bonus damage.|n|cffffcc00Level 2|r - 10 bonus armor, 30 bonus damage.|n|cffffcc00Level 3|r - 15 bonus armor, 45 bonus damage."
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_1915"
+      "Value": "Activate Battle Trance - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_3404"
+      "Value": "Activate Battle Trance - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_4336"
+      "Value": "Activate Battle Trance - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_8166"
+      "Value": "Activate Battle Trance to give the Hero \u003CANav,DataA1\u003E bonus armor,  \u003CAHav,DataC1\u003E bonus damage and spell immunity. |nLasts 15 seconds."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_11623"
+      "Value": "Activate Battle Trance to give the Hero \u003CANav,DataA2\u003E bonus armor,  \u003CAHav,DataC2\u003E bonus damage and spell immunity. |nLasts 15 seconds."
     },
     {
       "Id": 1918989665,
@@ -77,41 +77,41 @@
     {
       "Id": 1802007905,
       "Type": 3,
-      "Value": "TRIGSTR_6117"
+      "Value": "R"
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_13567"
+      "Value": "Activate Battle Trance to give the Hero \u003CANav,DataA3\u003E bonus armor, \u003CAHav,DataC3\u003E bonus damage and spell immunity. |nLasts 15 seconds."
     },
     {
       "Level": 1,
       "Id": 829715809,
       "Type": 3,
-      "Value": "TRIGSTR_6495"
+      "Value": "Deactivate Battle Trance"
     },
     {
       "Level": 2,
       "Id": 829715809,
       "Type": 3,
-      "Value": "TRIGSTR_6498"
+      "Value": "Deactivate Battle Trance"
     },
     {
       "Level": 3,
       "Id": 829715809,
       "Type": 3,
-      "Value": "TRIGSTR_6501"
+      "Value": "Deactivate Battle Trance"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_7629"
+      "Value": "Learn Battle Trance"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_4347"
+      "Value": "Battle Trance"
     }
   ]
 }

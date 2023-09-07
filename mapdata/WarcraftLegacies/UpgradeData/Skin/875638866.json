@@ -23,31 +23,31 @@
       "Level": 1,
       "Id": 1718840935,
       "Type": 3,
-      "Value": "TRIGSTR_3900"
+      "Value": "(Ironforge)"
     },
     {
       "Level": 1,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_21273"
+      "Value": "Q"
     },
     {
       "Level": 1,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "TRIGSTR_2560"
+      "Value": "Deeprun Tram"
     },
     {
       "Level": 1,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_2566"
+      "Value": "Research Functional Deeprun Tram"
     },
     {
       "Level": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "TRIGSTR_14869"
+      "Value": "Constructs the Deeprun Tram, which connects Ironforge and Stormwind."
     }
   ]
 }

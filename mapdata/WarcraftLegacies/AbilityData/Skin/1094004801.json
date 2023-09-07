@@ -12,24 +12,24 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_11795"
+      "Value": "(Purple - Falric. Orange - Kassan)"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_11796"
+      "Value": "Binding Shackles"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_11797"
+      "Value": "Binding Shackles"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_11798"
+      "Value": "Binds a target unit so that it cannot move or attack and takes 50 damage per second. |nLasts 4 seconds on heroes, 15 on units."
     }
   ]
 }

@@ -8,12 +8,12 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_3635"
+      "Value": " (Forsaken, Cult)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_4156"
+      "Value": "Q"
     },
     {
       "Id": 1633907573,
@@ -23,17 +23,17 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_17490"
+      "Value": "Spellcaster of plague magic.|n|cfff5962dAbilities:|R Dark Regeneration|n|cfff5962dCan Learn:|R Raise Plagueling, Dispel Magic|n|n|cffffcc00Attacks land and air units.|R"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_16408"
+      "Value": "Apothecary"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_16409"
+      "Value": "Train Apothecary"
     },
     {
       "Id": 1868786037,
@@ -48,7 +48,7 @@
     {
       "Id": 1953850229,
       "Type": 3,
-      "Value": "TRIGSTR_221"
+      "Value": "- Dark Regeneration,- Dark Regeneration|n- Raise Plagueling,- Dark Regeneration|n- Raise Plagueling|n- Acid Bomb"
     }
   ]
 }

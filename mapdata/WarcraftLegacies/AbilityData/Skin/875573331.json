@@ -8,24 +8,24 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_6542"
+      "Value": "(Teal - Necrolyte)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_8453"
+      "Value": "W"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_6544"
+      "Value": "Increases the attack rate of a target unit by 75%, but drains 4 hit points per second. |nLasts 45 seconds."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_6545"
+      "Value": "Increases the attack rate of a target unit by 75%, but drains 1 hit points per second. |nLasts 45 seconds."
     }
   ]
 }

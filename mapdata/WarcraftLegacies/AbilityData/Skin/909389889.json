@@ -17,12 +17,12 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_12077"
+      "Value": "(Blue - Kil\u0027Jaeden)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_12795"
+      "Value": "W"
     },
     {
       "Id": 1734962273,
@@ -32,7 +32,7 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_12079"
+      "Value": "Finger of Death"
     },
     {
       "Id": 1918988897,
@@ -46,17 +46,17 @@
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_12796"
+      "Value": "W"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_12081"
+      "Value": "Learn Finger of Death - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_12082"
+      "Value": "Calls forth a cone of energy utterly destroying enemies. Cannot be used on heroes.|n|n|cffffcc00Level 1|r - Deals 200 damage to 5 targeted enemy units.|n|cffffcc00Level 2|r - Deals 350 damage to 5 targeted enemy units.|n|cffffcc00Level 3|r - Deals 500 damage to 6 targeted enemy units.|n|cffffcc00Level 4|r - Deals 650 damage to 6 targeted enemy units."
     },
     {
       "Id": 1952543585,
@@ -67,49 +67,49 @@
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_12083"
+      "Value": "Finger of Death - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_12084"
+      "Value": "Finger of Death - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_12085"
+      "Value": "Finger of Death - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_12086"
+      "Value": "Finger of Death - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_21074"
+      "Value": "Calls forth a cone of energy utterly destroying enemies, hitting up to 8 enemies for 300 damage each. Cannot be used on heroes."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_21075"
+      "Value": "Calls forth a cone of energy utterly destroying enemies, hitting up to 10 enemies for 400 damage each. Cannot be used on heroes."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_16699"
+      "Value": "Calls forth a cone of energy utterly destroying enemies, hitting up to 12 enemies for 450 damage each. Cannot be used on heroes."
     },
     {
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_20550"
+      "Value": "Calls forth a cone of energy utterly destroying enemies, hitting up to 14 enemies for 550 damage each. Cannot be used on heroes."
     }
   ]
 }

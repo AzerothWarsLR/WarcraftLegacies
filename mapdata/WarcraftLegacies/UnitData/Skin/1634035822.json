@@ -11,12 +11,12 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_715"
+      "Value": "(Quel\u0027Thalas)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_532"
+      "Value": "W"
     },
     {
       "Id": 1633907573,
@@ -26,17 +26,17 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_717"
+      "Value": "Ranger"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_718"
+      "Value": "Train Ranger"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_719"
+      "Value": "Renowned Ranger of Quel\u0027thalas.|n|cfff5962dAbilities:|r Cold Arrows|n|cfff5962dCan Learn:|R Precision Shots|n|n|cffffcc00Attacks land and air units.|r"
     }
   ]
 }

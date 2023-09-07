@@ -13,46 +13,46 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_15330"
+      "Value": "(Warsong - Gahz\u0027rilla)"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_15331"
+      "Value": "Frozen Solid"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_15332"
+      "Value": "Frozen Solid - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_15333"
+      "Value": "Frozen Solid - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_15334"
+      "Value": "Traps an enemy unit in an ice prison, immobilizing and disarming the enemy unit for 10 seconds (2 on heroes), and dealing 15 damage per second."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_15335"
+      "Value": "Traps an enemy unit in an ice prison, immobilizing and disarming the enemy unit for 15 seconds (3 on heroes), and dealing 20 damage per second."
     },
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_14472"
+      "Value": "Q"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_14493"
+      "Value": "Q"
     },
     {
       "Id": 1918988897,
@@ -62,36 +62,36 @@
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_15336"
+      "Value": "Learn Frozen Solid - [|cffffcc00Level %d|r]"
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_6828"
+      "Value": "Traps an enemy unit in an ice prison, immobilizing and disarming the enemy unit for 20 seconds (4 on heroes), and dealing 25 damage per second."
     },
     {
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_6829"
+      "Value": "Traps an enemy unit in an ice prison, immobilizing and disarming the enemy unit for 25 seconds (5 on heroes), and dealing 30 damage per second."
     },
     {
       "Level": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_15339"
+      "Value": "Frozen Solid - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_15340"
+      "Value": "Frozen Solid - [|cffffcc00Level 4|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_6830"
+      "Value": "Traps an enemy unit in an ice prison, immobilizing and disarming the enemy unit for 10/15/20/25 seconds (2/3/4/5 on heroes), and dealing 15/20/25/30 damage per second."
     }
   ]
 }

@@ -8,29 +8,29 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_19242"
+      "Value": "(Bandit mage)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_8700"
+      "Value": "E"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_6482"
+      "Value": "Atrophy"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_19258"
+      "Value": "Atrophy"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_6484"
+      "Value": "Reduces movement speed by 90%, attack rate by 65%, and damage by 50% of a target enemy unit. |nLasts 45 seconds. Lasts 5 seconds on Heroes."
     }
   ]
 }

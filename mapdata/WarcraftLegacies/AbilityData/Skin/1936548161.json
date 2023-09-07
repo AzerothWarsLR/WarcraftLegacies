@@ -7,18 +7,18 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_18867"
+      "Value": "(Twilight, Illidari, Nzoth)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_6931"
+      "Value": "W"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_357"
+      "Value": "Creates a barrier that stops 600 points of spell damage from affecting a target unit. |nLasts 90 seconds."
     }
   ]
 }

@@ -13,7 +13,7 @@
     {
       "Id": 1936024681,
       "Type": 3,
-      "Value": "TRIGSTR_4382"
+      "Value": "Increases all stats. Can be used to cast Invibility, Rain of Fire, Devour Magic and Demon Call."
     },
     {
       "Id": 1818846825,
@@ -23,12 +23,12 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_4383"
+      "Value": "Eye of Sargeras"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_4384"
+      "Value": "|cffff8c00Artifact|r|nIncreases Strength and Agility by 10, and Intelligence by 20. Can be used to cast Invisibility, Rain of Fire, Devour Magic, and Demon Call.|n|cffffcc00Lore|r|n|cffffdeadThe last remnant of Sargeras\u0027 summoned, withered form.|r"
     }
   ]
 }

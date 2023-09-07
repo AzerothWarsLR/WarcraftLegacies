@@ -21,7 +21,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_20300"
+      "Value": "(Onslaught Barracks)"
     },
     {
       "Id": 1818520949,
@@ -31,7 +31,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_3167"
+      "Value": "A"
     },
     {
       "Id": 1633907573,
@@ -41,7 +41,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_20301"
+      "Value": "City Watch"
     },
     {
       "Id": 1668510581,
@@ -51,7 +51,7 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_20302"
+      "Value": "Build City Watch"
     },
     {
       "Id": 1935832437,
@@ -61,7 +61,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_20303"
+      "Value": "Primary troop production building.|n|cfff5962dTrains:|R Protector, Shotgunner, Mangonel"
     }
   ]
 }

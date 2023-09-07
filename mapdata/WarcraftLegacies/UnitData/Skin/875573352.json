@@ -23,7 +23,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_3128"
+      "Value": "Troll Hut"
     },
     {
       "Id": 1935832437,
@@ -33,17 +33,17 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19865"
+      "Value": " (Frostwolf Farm)"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_3132"
+      "Value": "Build Troll Hut"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_2090"
+      "Value": "Provides 8 food, which increases the maximum number of units that can be trained."
     }
   ]
 }

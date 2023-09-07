@@ -17,7 +17,7 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_20082"
+      "Value": "(Aegwynn)"
     },
     {
       "Id": 1952540001,
@@ -27,12 +27,12 @@
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_13913"
+      "Value": "Q"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_20086"
+      "Value": "Comet Strike"
     },
     {
       "Id": 1918988897,
@@ -46,65 +46,65 @@
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_13914"
+      "Value": "Q"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_20115"
+      "Value": "Learn Comet Strike - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_20141"
+      "Value": "Call a comet from the sky, dealing damage and stunning enemy land units for 2 seconds in an area.|n|cffffcc00Level 1|r - 100 damage.|n|cffffcc00Level 2|r - 200 damage.|n|cffffcc00Level 3|r - 300 damage.|n|cffffcc00Level 4|r - 400 damage."
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_20142"
+      "Value": "Comet Strike - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_20145"
+      "Value": "Comet Strike - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_20146"
+      "Value": "Comet Strike - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_20147"
+      "Value": "Comet Strike - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_20148"
+      "Value": "Call a comet from the sky, dealing 100 damage and stunning enemy land units for 2 seconds in an area."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_21293"
+      "Value": "Call a comet from the sky, dealing 150 damage and stunning enemy land units for 2 seconds in an area."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_20149"
+      "Value": "Call a comet from the sky, dealing 200 damage and stunning enemy land units for 2 seconds in an area."
     },
     {
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_21294"
+      "Value": "Call a comet from the sky, dealing 250 damage and stunning enemy land units for 2 seconds in an area."
     }
   ]
 }

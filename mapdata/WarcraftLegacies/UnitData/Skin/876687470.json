@@ -8,12 +8,12 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_17157"
+      "Value": "Blue Dragonspawn"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_17158"
+      "Value": "Train Blue Dragonspawn"
     },
     {
       "Id": 1633907573,
@@ -23,12 +23,12 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_5230"
+      "Value": "E"
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_17135"
+      "Value": "(nexus)"
     },
     {
       "Id": 1868786037,
@@ -42,7 +42,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_14524"
+      "Value": "Monstrous melee unit.|n|cfff5962dAbilities:|R Charge, Cleaving Attack, Hardened Scales|n|n|cffffcc00Attacks land units.|r"
     }
   ]
 }

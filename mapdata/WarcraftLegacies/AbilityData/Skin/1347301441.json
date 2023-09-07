@@ -8,24 +8,24 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_5275"
+      "Value": "(Tortolla)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_18447"
+      "Value": "E"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_10138"
+      "Value": "Devour - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_8935"
+      "Value": "Consumes an enemy unit, dealing 200 damage if it\u0027s a hero and killing it instantly otherwise. Heals the caster caster for 50% of its hit points."
     },
     {
       "Id": 1953653089,
@@ -35,7 +35,7 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_8562"
+      "Value": "Devour"
     },
     {
       "Id": 2020635233,
@@ -44,30 +44,30 @@
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_8932"
+      "Value": "Consumes an enemy unit, dealing damage if it\u0027s a hero and killing it instantly otherwise. Heals the caster caster for 50% of its hit points. |n|n|cffffcc00Level 1|r - 200 damage, 60 second cooldown. |n|cffffcc00Level 2|r - 300 damage, 45 second cooldown. |n|cffffcc00Level 3|r - 400 damage, 30 second cooldown. |n|cffffcc00Level 4|r - 500 damage, 15 second cooldown."
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_10136"
+      "Value": "Learn Devour - [|cffffcc00Level %d|r]"
     },
     {
       "Level": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_10139"
+      "Value": "Devour - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_10140"
+      "Value": "Devour - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_10141"
+      "Value": "Devour - [|cffffcc00Level 4|r]"
     },
     {
       "Id": 1918988897,
@@ -78,24 +78,24 @@
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_9320"
+      "Value": "Consumes an enemy unit, dealing 300 damage if it\u0027s a hero and killing it instantly otherwise. Heals the caster caster for 50% of its hit points."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_10021"
+      "Value": "Consumes an enemy unit, dealing 400 damage if it\u0027s a hero and killing it instantly otherwise. Heals the caster caster for 50% of its hit points."
     },
     {
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_10022"
+      "Value": "Consumes an enemy unit, dealing 500 damage if it\u0027s a hero and killing it instantly otherwise. Heals the caster caster for 50% of its hit points."
     },
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_18468"
+      "Value": "E"
     }
   ]
 }

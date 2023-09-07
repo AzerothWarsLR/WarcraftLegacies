@@ -17,7 +17,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_8410"
+      "Value": "(Quel\u0027Thalas-Demi)"
     },
     {
       "Id": 1818520949,
@@ -27,7 +27,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_9492"
+      "Value": "Z"
     },
     {
       "Id": 2054188149,
@@ -52,7 +52,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_9482"
+      "Value": "Vereesa Windrunner"
     },
     {
       "Id": 1668510581,
@@ -62,12 +62,12 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_15619"
+      "Value": "Revive Vareesa"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_17708"
+      "Value": "One of the three sisters of the Windrunners.|n|cfff5962dAbilities:|R Suppression, Precision Shot, Spell Resistance, Resistant Skin, Poisoned Arrow|n|cfff5962dCan Learn:|R Feint, Improved Bows|n|n|cff99b4d1Can only train 1.|r|n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Id": 1919705973,

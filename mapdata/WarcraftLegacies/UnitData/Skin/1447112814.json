@@ -16,12 +16,12 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_20049"
+      "Value": "(Yogg Altar)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_3201"
+      "Value": "X"
     },
     {
       "Id": 1633907573,
@@ -31,7 +31,7 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_20050"
+      "Value": "Build Altar of Madness"
     },
     {
       "Id": 1935832437,
@@ -51,7 +51,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_6940"
+      "Value": "Altar of Madness"
     }
   ]
 }

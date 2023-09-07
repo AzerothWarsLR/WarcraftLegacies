@@ -13,29 +13,29 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_17258"
+      "Value": "(yogg)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_16661"
+      "Value": "E"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_10397"
+      "Value": "Arcane Barrage"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_17532"
+      "Value": "Arcane Barrage"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_17534"
+      "Value": "Calls down 6 Arcane waves; each wave deals 15 damage to units in a small area."
     },
     {
       "Id": 2020631137,

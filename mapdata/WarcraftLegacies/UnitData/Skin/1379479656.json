@@ -22,7 +22,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_6019"
+      "Value": "(draenei)"
     },
     {
       "Id": 1818520949,
@@ -32,7 +32,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_5103"
+      "Value": "W"
     },
     {
       "Id": 1768320117,
@@ -55,17 +55,17 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_17844"
+      "Value": "Vindicator"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_17845"
+      "Value": "Train Vindicator"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_20538"
+      "Value": "Holy warrior of the Light.|n|cfff5962dAbilities:|r Holy Light, Blessed Ground, Consecrated Slam, Consecrated Strikes, Naaru\u0027s Shield, Resistant Skin|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land units.|r"
     },
     {
       "Id": 1684960117,

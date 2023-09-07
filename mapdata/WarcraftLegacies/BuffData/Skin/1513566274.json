@@ -13,12 +13,12 @@
     {
       "Id": 1885959270,
       "Type": 3,
-      "Value": "TRIGSTR_13154"
+      "Value": "Curse of Silence"
     },
     {
       "Id": 1700951398,
       "Type": 3,
-      "Value": "TRIGSTR_13155"
+      "Value": "This unit is afflicted by Curse of Silence. It cannot cast spells"
     },
     {
       "Id": 1952543846,

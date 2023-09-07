@@ -17,17 +17,17 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_7455"
+      "Value": "(Fel Horde-Eredar Lord)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_9553"
+      "Value": "E"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_7457"
+      "Value": "Skyfall"
     },
     {
       "Id": 1918988897,
@@ -41,24 +41,24 @@
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_7458"
+      "Value": "Learn Rain of Chaos - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_7459"
+      "Value": "Calls down multiple Infernals from the sky.|n|n|cffffcc00Level 1|r - Calls down 3 basic infernals. |n|cffffcc00Level 2|r - Calls down 3 powerful infernals. |n|cffffcc00Level 3|r - Calls down 3 elite infernals."
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_7460"
+      "Value": "Skyfall"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_7461"
+      "Value": "Calls down 3 Infernals from the sky."
     }
   ]
 }

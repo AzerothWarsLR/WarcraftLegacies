@@ -17,7 +17,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_13200"
+      "Value": "(sunfury)"
     },
     {
       "Id": 1818520949,
@@ -27,7 +27,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_4876"
+      "Value": "R"
     },
     {
       "Id": 1831952757,
@@ -42,17 +42,17 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_13772"
+      "Value": "Warlock"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_13773"
+      "Value": "Train Warlock"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_20974"
+      "Value": "An elven arcanist that practices dark magic.|n|cfff5962dAbilities:|R Mana Shield, Lightning Storm, Life Drain, Summon Queen of Suffering|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Id": 1684960117,

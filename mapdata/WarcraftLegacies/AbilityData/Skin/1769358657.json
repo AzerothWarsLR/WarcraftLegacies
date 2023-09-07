@@ -15,28 +15,28 @@
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_7823"
+      "Value": "D"
     },
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_6235"
+      "Value": "R"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_6079"
+      "Value": "Learn Metamorphosis - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_6080"
+      "Value": "Transforms Illidan into a powerful Demon with a ranged attack. |n|n|cffffcc00Level 1|r - 400 hit points, lasts 60 seconds. Got 180 seconds cooldown. |n|cffffcc00Level 2|r - 800 hit points, lasts 70 seconds. Got 160 seconds cooldown. |n|cffffcc00Level 3|r - 1200 hit points, lasts 80 seconds. Got 140 seconds cooldown."
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_17139"
+      "Value": "Transforms the Demon Hunter into a powerful Demon with a ranged attack. Has 900 bonus hit points, 65 bonus damage and lasts for 20 seconds."
     }
   ]
 }

@@ -7,7 +7,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_8163"
+      "Value": "X"
     },
     {
       "Id": 2020631157,
@@ -20,7 +20,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_17759"
+      "Value": "Teleports \u003CAUds,DataA1\u003E of the player\u0027s non-hero units within the targeted area to the location of the Hero when used."
     }
   ]
 }

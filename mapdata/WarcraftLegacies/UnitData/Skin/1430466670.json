@@ -26,12 +26,12 @@
     {
       "Id": 1936024681,
       "Type": 3,
-      "Value": "TRIGSTR_15720"
+      "Value": "A store for purchasing items"
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19376"
+      "Value": "(Illidan)"
     },
     {
       "Id": 1818520949,
@@ -41,7 +41,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_4884"
+      "Value": "Deep Sea Vault"
     },
     {
       "Id": 1668510581,
@@ -51,7 +51,7 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_4885"
+      "Value": "Build - Deep Sea Vault"
     },
     {
       "Id": 1935832437,
@@ -66,12 +66,12 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_10883"
+      "Value": "C"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_16011"
+      "Value": "A shop of purchasable items."
     }
   ]
 }

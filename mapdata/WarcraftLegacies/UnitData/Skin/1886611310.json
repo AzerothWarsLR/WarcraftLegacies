@@ -7,22 +7,22 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_725"
+      "Value": "(Goblin Shop)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_455"
+      "Value": "Q"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_727"
+      "Value": "Goblin Sapper"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_728"
+      "Value": "Hire Goblin Sapper"
     }
   ]
 }

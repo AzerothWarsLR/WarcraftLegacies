@@ -27,29 +27,29 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_7373"
+      "Value": "(Legion-Dreadlord)"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_7374"
+      "Value": "Sight of Sargeras"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_7375"
+      "Value": "Sight of Sargeras"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_7376"
+      "Value": "Reveals an area of the map.|nDoes not reveal invisible units. |n|cffffcc00Lasts 12 seconds."
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_9400"
+      "Value": "E"
     }
   ]
 }

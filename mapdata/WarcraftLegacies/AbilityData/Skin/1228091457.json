@@ -13,29 +13,29 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_12206"
+      "Value": "(yogg tech priest)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_12620"
+      "Value": "Q"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_12208"
+      "Value": "Patch"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_12209"
+      "Value": "Patch"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_12210"
+      "Value": "Heals a target friendly -mechanical wounded unit for 55 hit points."
     },
     {
       "Id": 1918989665,
@@ -45,7 +45,7 @@
     {
       "Id": 1802007905,
       "Type": 3,
-      "Value": "TRIGSTR_12648"
+      "Value": "Q"
     }
   ]
 }

@@ -13,7 +13,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_20789"
+      "Value": "(test)"
     },
     {
       "Id": 1818520949,
@@ -23,7 +23,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_5316"
+      "Value": "Q"
     },
     {
       "Id": 1633907573,
@@ -33,17 +33,17 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_20977"
+      "Value": "TESTUNIT"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_21026"
+      "Value": "Train Bladesman"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_21262"
+      "Value": "Soldier of Arathor, ready to defend his nation.|n|cfff5962dAbilities:|R Defend, Combat Experience|n|n|cffffcc00Attacks land units.|r"
     },
     {
       "Id": 1684960117,

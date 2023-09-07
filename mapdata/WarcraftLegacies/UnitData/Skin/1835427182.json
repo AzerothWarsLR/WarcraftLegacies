@@ -11,17 +11,17 @@
     {
       "Id": 1936024681,
       "Type": 3,
-      "Value": "TRIGSTR_795"
+      "Value": "Provides 8 food, which increases the maximum number of units that can be trained."
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_796"
+      "Value": "(Quel\u0027Thalas)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_561"
+      "Value": "W"
     },
     {
       "Id": 1633907573,
@@ -31,7 +31,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_798"
+      "Value": "Residence"
     },
     {
       "Id": 1668510581,
@@ -41,7 +41,7 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_799"
+      "Value": "Residence"
     },
     {
       "Id": 1935832437,
@@ -51,7 +51,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_800"
+      "Value": "Rural elven home, providing for its nation. Provides 8 food, which increases the maximum number of units that can be trained."
     }
   ]
 }

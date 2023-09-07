@@ -15,12 +15,12 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_1154"
+      "Value": "(Druids)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_1155"
+      "Value": "D"
     },
     {
       "Id": 1633907573,
@@ -30,7 +30,7 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_1156"
+      "Value": "Build Ancient of Wind"
     },
     {
       "Id": 1935832437,
@@ -40,7 +40,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_21172"
+      "Value": "Keeper of aerial brethren and spellweavers of the forest.|n|cfff5962dTrains: |RDruids of the Talon, Faerie Dragon, Green Dragon|n|cfff5962dResearches: |RDruid of the Talon Training, Improved Mana Flare,Storm Crow Form, Emerald Flames|n|n|cffffcc00Attacks land units.|r"
     }
   ]
 }

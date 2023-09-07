@@ -21,12 +21,12 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_1922"
+      "Value": "(Fel Horde-Zuluhed)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_1187"
+      "Value": "S"
     },
     {
       "Id": 1633907573,
@@ -36,12 +36,12 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_1924"
+      "Value": "Fire Acscended Elementals"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_1925"
+      "Value": "Heavy melee unit cloaked in demonic flames that damage nearby enemy ground units. Immune to magic. |n|cff99b4d1Can only train 12.|r|n|cffffcc00Attacks land units.|r"
     }
   ]
 }

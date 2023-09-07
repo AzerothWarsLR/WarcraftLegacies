@@ -18,12 +18,12 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_20518"
+      "Value": "(Guild Ranger)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_9183"
+      "Value": "Q"
     },
     {
       "Id": 1952542049,
@@ -33,7 +33,7 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_8210"
+      "Value": "Aimed Shot"
     },
     {
       "Id": 1918988897,
@@ -47,29 +47,29 @@
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_9696"
+      "Value": "W"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_7625"
+      "Value": "Learn Aimed Shot - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_6787"
+      "Value": "Fires and arrow that stuns the target and does significant damage.|n|n|cffffcc00Level 1|r - Deals 150 damage, stunning the target for 4 seconds. Lasts 1 second on heroes.|n|cffffcc00Level 2|r - Deals 225 damage, stunning the target for 5 seconds. Lasts 1 second on heroes.|n|cffffcc00Level 3|r - Deals 300 damage, stunning the target for 6 seconds. Lasts 1 second on heroes.|n|cffffcc00Level 4|r - Deals 375 damage, stunning the target for 7 seconds. Lasts 2 seconds on heroes."
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_8342"
+      "Value": "Aimed Shot"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_20534"
+      "Value": "Fires an enchanted arrow at an enemy target, dealing 80 damage and stunning the target for 4(0.2) seconds. 800 range. |nHas a 1.5 second cast time."
     }
   ]
 }

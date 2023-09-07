@@ -8,17 +8,17 @@
     {
       "Id": 1953850229,
       "Type": 3,
-      "Value": "TRIGSTR_6938"
+      "Value": "- Arcane Missile,- Arcane Missile|n- Suppression,- Arcane Missile|n- Suppression|n- Summon Zombie"
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_3576"
+      "Value": " (Forsaken, Cult)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_4183"
+      "Value": "W"
     },
     {
       "Id": 1633907573,
@@ -28,7 +28,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_191"
+      "Value": "Arcane spellcaster of the Forsaken.|n|cfff5962dAbilities:|r Arcane Missile|n|cfff5962dCan Learn:|R Suppression, Summon Zombie|n|n|cffffcc00Attacks land and air units.|R"
     },
     {
       "Id": 1818520949,
@@ -38,12 +38,12 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_9050"
+      "Value": "Archivist"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_16280"
+      "Value": "Train Archivist"
     },
     {
       "Id": 2020631157,

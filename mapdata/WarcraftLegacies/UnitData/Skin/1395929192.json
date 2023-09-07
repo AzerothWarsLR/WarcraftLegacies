@@ -21,7 +21,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_3009"
+      "Value": "(Closed)"
     },
     {
       "Id": 1818520949,
@@ -36,7 +36,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_3010"
+      "Value": "Uldum Gate"
     },
     {
       "Id": 1919705973,
@@ -45,7 +45,7 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_2984"
+      "Value": "Horizontal Wooden Gate"
     },
     {
       "Id": 1935832437,
@@ -55,7 +55,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_2990"
+      "Value": "Repairs the broken gate."
     },
     {
       "Id": 1684960117,

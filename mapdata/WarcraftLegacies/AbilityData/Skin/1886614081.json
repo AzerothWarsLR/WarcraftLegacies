@@ -12,17 +12,17 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_485"
+      "Value": "(Dk arthas and LK)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_5219"
+      "Value": "R"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_6905"
+      "Value": "Frost Storm"
     },
     {
       "Id": 1918988897,
@@ -32,17 +32,17 @@
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_5222"
+      "Value": "R"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_6907"
+      "Value": "Learn Frost Storm - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_1068"
+      "Value": "Call a Frost storm, throwing ice missiles to your enemies. |n|n|cffffcc00Level 1|r -  Each missile deals 10 damage. |n|cffffcc00Level 2|r -  Each missile deals 15 damage. |n|cffffcc00Level 3|r -  Each missile deals 20 damage. |n|nLasts 30 seconds."
     },
     {
       "Id": 1952543585,
@@ -53,37 +53,37 @@
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_6909"
+      "Value": "Frost Storm - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_6910"
+      "Value": "Frost Storm - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_6911"
+      "Value": "Frost Storm - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_1157"
+      "Value": "Calls an onslaught of frost missiles to attack enemies in a 800 radius. |n|cffffcc00Level 1|r -  Each missile deals 10 damage. |n|nLasts 30 seconds."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_1161"
+      "Value": "Calls an onslaught of frost missiles to attack enemies in a 800 radius. |n|cffffcc00Level 2|r -  Each missile deals 15 damage. |n|nLasts 30 seconds."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_4107"
+      "Value": "Calls an onslaught of frost missiles to attack enemies in a 800 radius. |n|cffffcc00Level 3|r -  Each missile deals 20 damage. |n|nLasts 30 seconds."
     },
     {
       "Id": 1952542049,

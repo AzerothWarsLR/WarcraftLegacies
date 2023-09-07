@@ -17,7 +17,7 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_7487"
+      "Value": "(Kel Tuzad)"
     },
     {
       "Id": 1952540001,
@@ -27,12 +27,12 @@
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_9572"
+      "Value": "E"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_7489"
+      "Value": "Necromantic Summon"
     },
     {
       "Id": 1918988897,
@@ -46,47 +46,47 @@
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_9590"
+      "Value": "E"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_7491"
+      "Value": "Learn Necromantic Summon - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_7492"
+      "Value": "Summons undead creatures from the ground to aid the necromancer in his battles. These summons are permanent. |n|n|cffffcc00Level 1|r - 6 Ghoul, Skeleton Archer. |n|cffffcc00Level 2|r - 5 but with Abomination and Crypth Fiend added. |n|cffffcc00Level 3|r - Summon 5 Ice Revenants or Abominations  |n|cffffcc00Level 4|r - Summons 4 units. Frost Revenants or Ice Revenants."
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_7493"
+      "Value": "Necromantic Summon - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_7494"
+      "Value": "Necromantic Summon - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_7495"
+      "Value": "Necromantic Summon - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_7496"
+      "Value": "Necromantic Summon - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_7497"
+      "Value": "Summons undead creatures from the ground to aid the necromancer in his battles. These summons are permanent."
     }
   ]
 }

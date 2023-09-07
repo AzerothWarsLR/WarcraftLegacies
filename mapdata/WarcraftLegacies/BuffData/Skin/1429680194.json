@@ -13,12 +13,12 @@
     {
       "Id": 1885959270,
       "Type": 3,
-      "Value": "TRIGSTR_9331"
+      "Value": "Inner Energy"
     },
     {
       "Id": 1700951398,
       "Type": 3,
-      "Value": "TRIGSTR_13166"
+      "Value": "This unit has Inner Energy; its armor and attack damage are increased."
     },
     {
       "Id": 1952543846,

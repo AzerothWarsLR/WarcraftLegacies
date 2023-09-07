@@ -13,7 +13,7 @@
       "Level": 1,
       "Id": 1718840935,
       "Type": 3,
-      "Value": "TRIGSTR_14783"
+      "Value": "(Lordaeron, Stormwind) (Quest)"
     },
     {
       "Level": 1,
@@ -25,19 +25,19 @@
       "Level": 1,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "TRIGSTR_9368"
+      "Value": "Arathorian Legacy"
     },
     {
       "Level": 1,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_9707"
+      "Value": "Research Arathorian Legacy"
     },
     {
       "Level": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "TRIGSTR_14789"
+      "Value": "Improves all non-Hero units by increasing their damage number of dice by 1, hit points by 100, and armor level by 1."
     }
   ]
 }

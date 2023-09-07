@@ -13,12 +13,12 @@
     {
       "Id": 1885959270,
       "Type": 3,
-      "Value": "TRIGSTR_13073"
+      "Value": "Moon Beam"
     },
     {
       "Id": 1700951398,
       "Type": 3,
-      "Value": "TRIGSTR_13074"
+      "Value": "This ward provides life mana for nearby friendly units."
     }
   ]
 }

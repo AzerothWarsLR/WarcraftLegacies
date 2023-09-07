@@ -13,24 +13,24 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_12477"
+      "Value": "(Quel\u0027Thalas-Sorceress)"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_19261"
+      "Value": "Summon Fire Elemental"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_19262"
+      "Value": "Summon Fire Elemental"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_12480"
+      "Value": "Summons a fire elemental to attack the Sorceress enemies. |nLasts 60 seconds. |n|n|cffffcc00Attacks land and air units.|r"
     }
   ]
 }

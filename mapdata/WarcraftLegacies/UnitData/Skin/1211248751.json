@@ -12,7 +12,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_1587"
+      "Value": "(Legion - Alterac)"
     },
     {
       "Id": 1735156597,
@@ -21,12 +21,12 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_1485"
+      "Value": "W"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_1589"
+      "Value": "Blackrock Encampment"
     },
     {
       "Id": 1885959285,
@@ -41,7 +41,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_1590"
+      "Value": "Encampment of orcs under the guideance of the Legion.|n|cfff5962dTrains:|R Marauders, Ravagers|n|n|cff99b4d1Minor Capital of Legion.|r"
     }
   ]
 }

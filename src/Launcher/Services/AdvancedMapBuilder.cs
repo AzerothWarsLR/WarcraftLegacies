@@ -25,7 +25,7 @@ namespace Launcher.Services
   {
     private readonly CompilerSettings _compilerSettings;
     private readonly MapSettings _mapSettings;
-    private const string War3MapLua = "war3map.lua";
+    private const string War3MapLua = MapDataPaths.ScriptPath;
     
     private const string GraphicsApi = "Direct3D9";
 #if DEBUG
@@ -107,11 +107,8 @@ namespace Launcher.Services
         unit.CombatAcquisitionRange = 900;
         unit.CombatAttack1TargetsAllowed = new[] { Target.Bridge };
         unit.EditorDisplayAsNeutralHostile = true;
-        unit.StatsLevel = 0;
         unit.StatsRace = UnitRace.Creeps;
-        unit.StatsCanBeBuiltOn = false;
         unit.PathingPathingMap = @"PathTextures\4x4SimpleSolid.tga";
-        unit.StatsHitPointsRegenerationRate = 0;
       }
 
       map.UnitObjectData = objectDatabase.GetAllData().UnitData;

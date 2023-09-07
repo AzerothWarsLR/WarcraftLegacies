@@ -35,85 +35,85 @@
       "Level": 1,
       "Id": 1718840935,
       "Type": 3,
-      "Value": "TRIGSTR_16472"
+      "Value": "(Universal Upgrade)"
     },
     {
       "Level": 1,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_16275"
+      "Value": "C"
     },
     {
       "Level": 2,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_16276"
+      "Value": "C"
     },
     {
       "Level": 3,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_16278"
+      "Value": "C"
     },
     {
       "Level": 1,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "TRIGSTR_032"
+      "Value": "Full Scale Escalation"
     },
     {
       "Level": 2,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "TRIGSTR_7971"
+      "Value": "Fortified Hulls"
     },
     {
       "Level": 3,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "TRIGSTR_10886"
+      "Value": "Fortified Hulls"
     },
     {
       "Level": 1,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_098"
+      "Value": "Research Full Scale Escalation"
     },
     {
       "Level": 2,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_14448"
+      "Value": "Research Fortified Hulls"
     },
     {
       "Level": 3,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_14825"
+      "Value": "Research Fortified Hulls"
     },
     {
       "Level": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "TRIGSTR_181"
+      "Value": "Go into Full Scale Escalation, unlocking your strongest technologies and units"
     },
     {
       "Level": 2,
       "Id": 828536167,
       "Type": 3,
-      "Value": "TRIGSTR_14599"
+      "Value": "Further increases the armor of all Naval Units."
     },
     {
       "Level": 3,
       "Id": 828536167,
       "Type": 3,
-      "Value": "TRIGSTR_14784"
+      "Value": "Further increases the armor of all Naval Units."
     },
     {
       "Level": 4,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_17222"
+      "Value": "C"
     }
   ]
 }

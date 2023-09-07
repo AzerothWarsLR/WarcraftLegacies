@@ -8,7 +8,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_12387"
+      "Value": "(draenei)"
     },
     {
       "Id": 1818520949,
@@ -18,17 +18,17 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_5121"
+      "Value": "W"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_9939"
+      "Value": "Agile sharpshooters.|n|cfff5962dAbilities:|R True Sight |n|cffffcc00Attacks land and air units.|n"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_17874"
+      "Value": "Train Rangari"
     },
     {
       "Id": 1868786037,
@@ -48,7 +48,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_17872"
+      "Value": "Rangari"
     }
   ]
 }

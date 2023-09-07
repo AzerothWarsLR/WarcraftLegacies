@@ -8,23 +8,23 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_9840"
+      "Value": "(Light Blue - Priestess)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_10556"
+      "Value": "Q"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_9842"
+      "Value": "Heals a target friendly non-mechanical wounded unit for 25 hit points."
     },
     {
       "Id": 1802007905,
       "Type": 3,
-      "Value": "TRIGSTR_10597"
+      "Value": "Q"
     }
   ]
 }

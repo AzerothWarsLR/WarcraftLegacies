@@ -12,24 +12,24 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_062"
+      "Value": "(cultist)"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_064"
+      "Value": "Assasinate"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_067"
+      "Value": "Assasinate"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_065"
+      "Value": "Kill a target worker, requires channeling next to the target"
     },
     {
       "Id": 1953653089,
@@ -44,7 +44,7 @@
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_15768"
+      "Value": "W"
     }
   ]
 }

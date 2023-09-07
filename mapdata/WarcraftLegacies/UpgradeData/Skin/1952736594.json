@@ -12,37 +12,37 @@
       "Level": 1,
       "Id": 1718840935,
       "Type": 3,
-      "Value": "TRIGSTR_4070"
+      "Value": "(Druids)"
     },
     {
       "Level": 1,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_14994"
+      "Value": "Z"
     },
     {
       "Level": 2,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_15012"
+      "Value": "Z"
     },
     {
       "Level": 2,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "TRIGSTR_14162"
+      "Value": "Druid of the Talon Advanced Training"
     },
     {
       "Level": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "TRIGSTR_14163"
+      "Value": "Increases Druid of the Talons\u0027 mana capacity, mana regeneration rate, hit points, and gives them the ability Dispel Magic."
     },
     {
       "Level": 2,
       "Id": 828536167,
       "Type": 3,
-      "Value": "TRIGSTR_5009"
+      "Value": "Increases Druids of the Talons\u0027 mana capacity, mana regeneration rate, hit points, and gives them the ability to cast Invoke Spiders."
     }
   ]
 }

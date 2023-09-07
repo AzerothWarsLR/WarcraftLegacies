@@ -11,22 +11,22 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_710"
+      "Value": "(Quel\u0027thalas)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_539"
+      "Value": "W"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_738"
+      "Value": "Train Granite Golem"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_739"
+      "Value": "Extraordinarily powerful construct built and infused with magic.|n|cfff5962dAbilities:|R Hurl Boulder, Spell Immunity, True Sight|n|n|cff99b4d1Can only train 4.|r|n|cffffcc00Attacks land and air units.|r"
     }
   ]
 }

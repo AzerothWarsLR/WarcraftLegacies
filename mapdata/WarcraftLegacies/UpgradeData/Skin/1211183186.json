@@ -19,49 +19,49 @@
       "Level": 1,
       "Id": 1718840935,
       "Type": 3,
-      "Value": "TRIGSTR_6066"
+      "Value": "(Druids)"
     },
     {
       "Level": 1,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_19222"
+      "Value": "D"
     },
     {
       "Level": 1,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "TRIGSTR_14815"
+      "Value": "Malorne\u0027s Infusion"
     },
     {
       "Level": 1,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_14816"
+      "Value": "Research Malorne\u0027s Infusion"
     },
     {
       "Level": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "TRIGSTR_17303"
+      "Value": "Increases the maximum hit points of all casters by 100 and increases armor by 2.|n|n|cffffd700Affects Druids of the Talon, Druids of the Claw, and Wisps.|r"
     },
     {
       "Level": 2,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_20388"
+      "Value": "D"
     },
     {
       "Level": 3,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_20389"
+      "Value": "D"
     },
     {
       "Level": 4,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_21020"
+      "Value": "D"
     }
   ]
 }

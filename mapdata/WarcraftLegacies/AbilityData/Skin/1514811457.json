@@ -12,13 +12,13 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_19185"
+      "Value": "(Draenei)"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_19201"
+      "Value": "This unit\u0027s attacks combust 10(30 for Heroes) mana per hit dealing damage to the attacked unit equal to the mana destroyed."
     }
   ]
 }

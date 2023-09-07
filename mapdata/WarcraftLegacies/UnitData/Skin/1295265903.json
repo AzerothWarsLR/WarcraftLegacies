@@ -17,12 +17,12 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_10687"
+      "Value": "(Goblin Special)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_2914"
+      "Value": "R"
     },
     {
       "Id": 1633907573,
@@ -32,12 +32,12 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_3484"
+      "Value": "Kezan Trading Center"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_8650"
+      "Value": "Build Kezan Trading Center"
     },
     {
       "Id": 1935832437,
@@ -47,7 +47,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_426"
+      "Value": "Boat construction facility for the Horde.|n|cfff5962dBuilds:|R Horde Transport Ships, Frigates, Juggernauts |n|n|cff00c4c4Cannot be built near small inland water areas.|r"
     },
     {
       "Id": 1868786037,

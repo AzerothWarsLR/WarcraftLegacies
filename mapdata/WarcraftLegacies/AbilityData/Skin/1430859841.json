@@ -9,13 +9,13 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_031"
+      "Value": "This unit produces 20 Oil per second."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_18054"
+      "Value": "Increases the rate at which this unit gathers lumber."
     },
     {
       "Id": 1953653089,
@@ -25,18 +25,18 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_1336"
+      "Value": "Oil Producer"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_1561"
+      "Value": "Oil Producer"
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_16082"
+      "Value": "(Goblin)"
     },
     {
       "Id": 2037408353,

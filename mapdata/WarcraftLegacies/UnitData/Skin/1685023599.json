@@ -7,12 +7,12 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_1554"
+      "Value": "(warsong)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_193"
+      "Value": "E"
     },
     {
       "Id": 1633907573,
@@ -22,7 +22,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_2760"
+      "Value": "Kodo-mounted drummer which inspires the soldiers of the Horde.|n|cfff5962dAbilities:|R Devour, War Drums|n|cfff5962dCan learn:|R For the Horde!|n|cff99b4d1Can only train 4.|r|n|cffffcc00Attacks land and air units.|r"
     }
   ]
 }

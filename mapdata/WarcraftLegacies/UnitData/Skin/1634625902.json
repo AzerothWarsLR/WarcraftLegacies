@@ -11,12 +11,12 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_486"
+      "Value": "(Fel Horde)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_458"
+      "Value": "R"
     },
     {
       "Id": 845245813,
@@ -36,12 +36,12 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_700"
+      "Value": "Build Infernal Juggernaut"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_701"
+      "Value": "Hellforged contraption of the doom.|n|cfff5962dAbilities:|R Inferno|n|n|cff99b4d1Can only build 4.|r|n|cffffcc00Attacks land and air units.|r"
     }
   ]
 }

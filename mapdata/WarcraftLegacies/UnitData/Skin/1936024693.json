@@ -7,12 +7,12 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_331"
+      "Value": "(Scourge-Legion)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_116"
+      "Value": "W"
     },
     {
       "Id": 845245813,
@@ -27,7 +27,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_333"
+      "Value": "Corsair"
     },
     {
       "Id": 1668510581,
@@ -37,12 +37,12 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_334"
+      "Value": "Build Corsair"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_3188"
+      "Value": "Banshee of the water, and killer of seaman.|n|cfff5962dAbilities:|R Board, Fishing Nets|n|r|n|cffffcc00Attacks land and air units.|r"
     }
   ]
 }

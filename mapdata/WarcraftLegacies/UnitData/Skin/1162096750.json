@@ -12,12 +12,12 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19319"
+      "Value": "(murloc)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_4076"
+      "Value": "R"
     },
     {
       "Id": 1633907573,
@@ -27,17 +27,17 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_19325"
+      "Value": "Train - Murloc Mutant"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_19336"
+      "Value": "Incredibly powerful melee unit. Has Resistant Skin, which reduces the duration of negative spells, Disease Cloud and Bile Shot.|n|n|cff99b4d1Can only train 4.|r|n|cffffcc00Attacks land units.|r"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_19327"
+      "Value": "Murloc Mutant"
     },
     {
       "Id": 1684960117,

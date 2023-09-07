@@ -8,17 +8,17 @@
     {
       "Id": 1885959270,
       "Type": 3,
-      "Value": "TRIGSTR_13654"
+      "Value": "Blaze of Burden"
     },
     {
       "Id": 1700951398,
       "Type": 3,
-      "Value": "TRIGSTR_13655"
+      "Value": "This unit is afflicted by Blaze of Burden. It will deal reduced damage."
     },
     {
       "Id": 1835101798,
       "Type": 3,
-      "Value": "TRIGSTR_13656"
+      "Value": "Blaze of Burden"
     }
   ]
 }

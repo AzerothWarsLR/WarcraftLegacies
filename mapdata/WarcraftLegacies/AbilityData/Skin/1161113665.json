@@ -13,12 +13,12 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_11774"
+      "Value": "(Purple - Arthas)"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_11775"
+      "Value": "Holy Aura"
     },
     {
       "Id": 1918988897,
@@ -28,12 +28,12 @@
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_12519"
+      "Value": "E"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_11777"
+      "Value": "Learn Holy Aura - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1952543841,
@@ -44,54 +44,54 @@
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_11779"
+      "Value": "Holy Aura - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_11780"
+      "Value": "Holy Aura - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_11781"
+      "Value": "Holy Aura - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_11782"
+      "Value": "Holy Aura - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_15621"
+      "Value": "Increases nearby friendly units\u0027 movement speed by 3% and hit point regeneration by 1."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_15622"
+      "Value": "Increases nearby friendly units\u0027 movement speed by 6% and hit point regeneration by 1.4."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_15623"
+      "Value": "Increases nearby friendly units\u0027 movement speed by 9% and hit point regeneration by 1.8."
     },
     {
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_15624"
+      "Value": "Increases nearby friendly units\u0027 movement speed by 12% and hit point regeneration by 2.2."
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_15625"
+      "Value": "Increases the movement speed and life regeneration rate of nearby friendly units. |n|n|cffffcc00Level 1|r - 3% movement, 1 hit point regeneration. |n|cffffcc00Level 2|r - 6% movement, 1.4 hit point regeneration. |n|cffffcc00Level 3|r - 9% movement, 1.8 hit point regeneration. |n|cffffcc00Level 4|r - 12% movement, 2.2 hit point regeneration."
     }
   ]
 }

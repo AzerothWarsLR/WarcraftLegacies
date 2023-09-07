@@ -8,27 +8,27 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_16702"
+      "Value": "(Azil Dummy)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_15874"
+      "Value": "Q"
     },
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_15939"
+      "Value": "Q"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_16703"
+      "Value": "Learn Greater Storm Bolt (|cffffcc00Q|r) - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_16704"
+      "Value": "A magical hammer that is thrown at an enemy unit, causing damage and stunning the target. |n|n|cffffcc00Level 1|r - 250 damage, 4 second stun. 2 second on Heroes.|n|cffffcc00Level 2|r - 300 damage, 5 second stun. 2.5 seconds on Heroes.|n|cffffcc00Level 3|r - 350 damage, 6 second stun. 3 seconds on Heroes.|n|cffffcc00Level 4|r - 400 damage, 7 second stun. 3.5 seconds on Heroes"
     },
     {
       "Level": 2,
@@ -79,7 +79,7 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_16705"
+      "Value": "Seismic Shard"
     }
   ]
 }

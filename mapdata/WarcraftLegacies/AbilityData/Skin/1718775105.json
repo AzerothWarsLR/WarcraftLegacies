@@ -15,13 +15,13 @@
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_7801"
+      "Value": "D"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_4975"
+      "Value": "Medivh transforms into a Crow, allowing him to fly over but reducing range by 600 and damage by 40."
     },
     {
       "Id": 2019718497,
@@ -34,7 +34,7 @@
     {
       "Id": 1802007905,
       "Type": 3,
-      "Value": "TRIGSTR_7804"
+      "Value": "D"
     }
   ]
 }

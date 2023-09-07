@@ -17,7 +17,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_2086"
+      "Value": "(Ironforge Research)"
     },
     {
       "Id": 1818520949,
@@ -27,7 +27,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_2645"
+      "Value": "E"
     },
     {
       "Id": 1633907573,
@@ -37,12 +37,12 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_18783"
+      "Value": "Forgeworks"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_18789"
+      "Value": "Build Forgeworks"
     },
     {
       "Id": 1935832437,
@@ -52,7 +52,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_1657"
+      "Value": "Contains upgrades for improved armor, weaponry and increased health.|n|cfff5962dAbilities:|R Titanforge Artifact|n|cfff5962dResearches: |RForged Weaponry, Armor Plating, Power Infusion, Improved Swig, Improved Lumber Harvesting, Improved Masonry, Improved Cannons, Fortified Hulls"
     }
   ]
 }

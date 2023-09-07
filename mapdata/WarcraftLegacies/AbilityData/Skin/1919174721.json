@@ -16,7 +16,7 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_6013"
+      "Value": "(Unused?)"
     },
     {
       "Id": 2037082209,
@@ -26,7 +26,7 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_6024"
+      "Value": "Outland Portal Channel"
     },
     {
       "Id": 2020635233,
@@ -35,12 +35,12 @@
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_7934"
+      "Value": "W"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_6026"
+      "Value": "Transfers mana between the Mage and a target. Drains mana from an enemy, or transfers mana to an ally.|n|nSiphon Mana can push the Mage\u0027s mana over its maximum value, though excess mana drains off rapidly if not used.|nLasts \u003CAHdr,Dur1\u003E seconds.|n|n|cffffcc00Level 1|r - \u003CAHdr,DataB1\u003E mana drained per second. |n|cffffcc00Level 2|r - \u003CAHdr,DataB2\u003E mana drained per second. |n|cffffcc00Level 3|r - \u003CAHdr,DataB3\u003E mana drained per second. |n|cffffcc00Level 4|r - \u003CAHdr,DataB4\u003E mana drained per second."
     },
     {
       "Id": 1952543841,
@@ -51,7 +51,7 @@
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_6027"
+      "Value": "Outland Portal Channel"
     },
     {
       "Level": 1,

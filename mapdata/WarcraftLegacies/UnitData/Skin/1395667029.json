@@ -8,7 +8,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_4404"
+      "Value": "High Warlord"
     },
     {
       "Id": 1919252085,
@@ -22,7 +22,7 @@
     {
       "Id": 1869770869,
       "Type": 3,
-      "Value": "TRIGSTR_14996"
+      "Value": "Naj\u0027entus"
     },
     {
       "Id": 1970434165,
@@ -46,12 +46,12 @@
     {
       "Id": 1953980789,
       "Type": 3,
-      "Value": "TRIGSTR_16546"
+      "Value": "Revive Warlord"
     },
     {
       "Id": 1919972469,
       "Type": 3,
-      "Value": "TRIGSTR_17212"
+      "Value": "Revive Warlord"
     },
     {
       "Id": 1667462261,
@@ -75,7 +75,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_1357"
+      "Value": "(Naga)"
     },
     {
       "Id": 2037408373,
@@ -88,17 +88,17 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_2520"
+      "Value": "R"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_17214"
+      "Value": "Warrior Hero, adept at bolstering troops around him and summoning minions.|n|cfff5962dCan Learn:|R War Stomp, Summon Mur\u0027gul, Devotion Aura, Tidal Wave|n|n|cffffcc00Attacks land units.|R"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_17215"
+      "Value": "Summon Naj\u0027entus"
     }
   ]
 }

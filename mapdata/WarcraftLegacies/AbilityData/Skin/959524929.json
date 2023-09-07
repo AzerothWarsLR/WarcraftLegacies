@@ -17,17 +17,17 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_12747"
+      "Value": "(Brown - Nordrassil)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_14564"
+      "Value": "Z"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_12749"
+      "Value": "Begin Anew"
     },
     {
       "Id": 1952543841,
@@ -38,13 +38,13 @@
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_12750"
+      "Value": "Begin Anew"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_12751"
+      "Value": "Brings back to life the corpses of \u003CA019,DataA1\u003E friendly units within a radius of \u003CA019,Area1\u003E."
     }
   ]
 }

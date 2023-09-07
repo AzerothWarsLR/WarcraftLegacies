@@ -23,7 +23,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_15915"
+      "Value": "(Druids, Sentinel Form)"
     },
     {
       "Id": 1818520949,
@@ -33,7 +33,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_2953"
+      "Value": "W"
     },
     {
       "Id": 2020633717,
@@ -63,7 +63,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_3585"
+      "Value": "Siege Ancient"
     },
     {
       "Id": 1668510581,
@@ -73,12 +73,12 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_3586"
+      "Value": "Train [|cffffcc00W|r] - Druid of the Claw"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_3587"
+      "Value": "Heavy melee unit with Roar, Animal Fury and Mighty Bash. Can learn Ferocious Strikes."
     },
     {
       "Id": 1684960117,

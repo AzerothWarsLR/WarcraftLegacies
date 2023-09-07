@@ -16,12 +16,12 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_1037"
+      "Value": "(Lordaeron)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_1088"
+      "Value": "W"
     },
     {
       "Id": 1633907573,
@@ -31,22 +31,22 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_1281"
+      "Value": "Leader of the Silver Hand"
     },
     {
       "Id": 1869770869,
       "Type": 3,
-      "Value": "TRIGSTR_1282"
+      "Value": "Uther the Lightbringer"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_17044"
+      "Value": "Warrior Hero, exceptional frontline support.|n|cfff5962dAbilities:|r Divine Shield|n|cfff5962dCan learn:|R Consecration, Lightbringer\u0027s Strength, Devotion Aura, Exact Justice|n|n|cffffcc00Attacks land units.|R"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_2897"
+      "Value": "Summon Uther"
     }
   ]
 }

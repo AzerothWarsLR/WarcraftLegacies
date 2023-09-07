@@ -22,7 +22,7 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_18683"
+      "Value": " (Majordomo Executus, Yellow)"
     },
     {
       "Id": 1936090465,
@@ -32,7 +32,7 @@
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_17367"
+      "Value": "Q"
     },
     {
       "Id": 1667329377,
@@ -47,7 +47,7 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_18684"
+      "Value": "Molten Strike"
     },
     {
       "Id": 1918988897,
@@ -61,17 +61,17 @@
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_17398"
+      "Value": "Q"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_18466"
+      "Value": "Learn Molten Strike - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_18943"
+      "Value": "Delivers a fiery blow to a target and other around it, breaking their armour and burning them for a short period.|n|n|cffffcc00Level 1|r - Decreases armor by \u003CA0WR,DataC1\u003E; deals \u003CA0WR,DataD1\u003E damage per second to the primary target; deals slightly less damage to nearby targets.|nLasts \u003CA0WR,Dur1\u003E seconds.|n|cffffcc00Level 2|r - Decreases armor by \u003CA0WR,DataC2\u003E; deals \u003CA0WR,DataD2\u003E damage per second to the primary target; deals slightly less damage to nearby targets.|nLasts \u003CA0WR,Dur2\u003E seconds.|n|cffffcc00Level 3|r - Decreases armor by \u003CA0WR,DataC3\u003E; deals \u003CA0WR,DataD3\u003E damage per second to the primary target; deals slightly less damage to nearby targets.|nLasts \u003CA0WR,Dur3\u003E seconds.|n|cffffcc00Level 4|r - Decreases armor by \u003CA0WR,DataC4\u003E; deals \u003CA0WR,DataD4\u003E damage per second to the primary target; deals slightly less damage to nearby targets.|nLasts \u003CA0WR,Dur4\u003E seconds."
     },
     {
       "Id": 1952543841,
@@ -87,54 +87,54 @@
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_18487"
+      "Value": "Molten Strike - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_18493"
+      "Value": "Molten Strike - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_18494"
+      "Value": "Molten Strike - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_18504"
+      "Value": "Molten Strike - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_18806"
+      "Value": "Decreases armor by \u003CA0WR,DataC2\u003E; deals \u003CA0WR,DataD2\u003E damage per second to the primary target; deals slightly less damage to nearby targets.|nLasts \u003CA0WR,Dur2\u003E seconds."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_18808"
+      "Value": "Decreases armor by \u003CA0WR,DataC3\u003E; deals \u003CA0WR,DataD3\u003E damage per second to the primary target; deals slightly less damage to nearby targets.|nLasts \u003CA0WR,Dur3\u003E seconds."
     },
     {
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_18944"
+      "Value": "Decreases armor by \u003CA0WR,DataC4\u003E; deals \u003CA0WR,DataD4\u003E damage per second to the primary target; deals slightly less damage to nearby targets.|nLasts \u003CA0WR,Dur4\u003E seconds."
     },
     {
       "Id": 1802007905,
       "Type": 3,
-      "Value": "TRIGSTR_17752"
+      "Value": "V"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_18878"
+      "Value": "Decreases armor by \u003CA0WR,DataC1\u003E; deals \u003CA0WR,DataD1\u003E damage per second to the primary target; deals slightly less damage to nearby targets.|nLasts \u003CA0WR,Dur1\u003E seconds."
     }
   ]
 }

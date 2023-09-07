@@ -17,7 +17,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19729"
+      "Value": " (Ironforge T3)"
     },
     {
       "Id": 1818520949,
@@ -27,7 +27,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_2698"
+      "Value": "C"
     },
     {
       "Id": 845245813,
@@ -62,17 +62,17 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_1071"
+      "Value": "Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Mason, Thane |n|cfff5962dAbilities:|R Dwarven Masonry, Powered Up Ammunition|n|cfff5962dResearches:|R Full Scale Escalation"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_18698"
+      "Value": "Great Hold"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_18713"
+      "Value": "Upgrade to Great Hold"
     }
   ]
 }

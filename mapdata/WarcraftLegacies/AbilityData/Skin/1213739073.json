@@ -8,28 +8,28 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_18706"
+      "Value": " (Deepseer)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_17571"
+      "Value": "W"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_18707"
+      "Value": "Creates a shield of frost around a target friendly unit. The shield adds \u003CACfu,DataB1\u003E armor and slows melee units that attack it for 5 seconds. |nLasts \u003CACfu,DataA1\u003E seconds."
     },
     {
       "Id": 1802007905,
       "Type": 3,
-      "Value": "TRIGSTR_17597"
+      "Value": "W"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_18725"
+      "Value": "Frost Shell"
     }
   ]
 }

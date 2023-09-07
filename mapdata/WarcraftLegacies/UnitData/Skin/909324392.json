@@ -17,7 +17,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19827"
+      "Value": "(Dalaran Magic)"
     },
     {
       "Id": 1818520949,
@@ -27,7 +27,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_1280"
+      "Value": "S"
     },
     {
       "Id": 1633907573,
@@ -37,7 +37,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_3219"
+      "Value": "Arcane Sanctuary"
     },
     {
       "Id": 1668510581,
@@ -47,7 +47,7 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_3220"
+      "Value": "Build Arcane Sanctuary"
     },
     {
       "Id": 1935832437,
@@ -57,7 +57,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_9151"
+      "Value": "|cfff5962dTrains:|R Hydromancer, Arcanists, Geomancer|n|cfff5962dResearches:|R Hydromancer Training, Arcanist Training, Geomancer Training"
     }
   ]
 }

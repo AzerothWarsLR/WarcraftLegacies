@@ -17,7 +17,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_3306"
+      "Value": "(Dead)"
     },
     {
       "Id": 1818520949,
@@ -27,12 +27,12 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_3366"
+      "Value": "Gate of Silvermoon"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_3263"
+      "Value": "Horizontal Wooden Gate"
     },
     {
       "Id": 1935832437,
@@ -42,7 +42,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_3301"
+      "Value": "Repairs the broken gate."
     },
     {
       "Id": 1684960117,

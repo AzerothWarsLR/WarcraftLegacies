@@ -13,34 +13,34 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_7548"
+      "Value": "(Brown Cenarius)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_9069"
+      "Value": "W"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_7550"
+      "Value": "Call of the Feral Wolves"
     },
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_9076"
+      "Value": "W"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_7552"
+      "Value": "Call of the Feral Wolves"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_7553"
+      "Value": "Summons 3 Feral Wolves that have Roar, Bash, and Critical Strike.|nLasts \u003CACs7,Dur2\u003E seconds.|n|n|cffffcc00Attacks land units.|r"
     }
   ]
 }

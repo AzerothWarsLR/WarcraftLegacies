@@ -25,79 +25,79 @@
       "Level": 1,
       "Id": 1718840935,
       "Type": 3,
-      "Value": "TRIGSTR_3278"
+      "Value": "(Khaz Modan)"
     },
     {
       "Level": 1,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_15499"
+      "Value": "Z"
     },
     {
       "Level": 2,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_15501"
+      "Value": "Z"
     },
     {
       "Level": 1,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "TRIGSTR_14475"
+      "Value": "Engineering Adept Training"
     },
     {
       "Level": 2,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "TRIGSTR_14476"
+      "Value": "Engineering Master Training"
     },
     {
       "Level": 3,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "TRIGSTR_14477"
+      "Value": "Engineering Guildmaster Training"
     },
     {
       "Level": 1,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_14478"
+      "Value": "Research Engineer Adept Training"
     },
     {
       "Level": 2,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_14479"
+      "Value": "Research Engineer Master Training"
     },
     {
       "Level": 3,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_14480"
+      "Value": "Research Engineer Grandmaster Training"
     },
     {
       "Level": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "TRIGSTR_14481"
+      "Value": "Increases Engineers\u0027 mana capacity, mana regeneration rate, and attack damage and gives them the ability to cast EMP."
     },
     {
       "Level": 2,
       "Id": 828536167,
       "Type": 3,
-      "Value": "TRIGSTR_14482"
+      "Value": "Increases Engineers\u0027 mana capacity, mana regeneration rate, and attack damage and gives them the ability to cast Portable Turret."
     },
     {
       "Level": 3,
       "Id": 828536167,
       "Type": 3,
-      "Value": "TRIGSTR_14483"
+      "Value": "Increases Engineers\u0027 mana capacity, mana regeneration rate, and attack damage and gives them the ability to cast Stun Mine."
     },
     {
       "Level": 3,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_15764"
+      "Value": "Z"
     }
   ]
 }

@@ -8,7 +8,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_3695"
+      "Value": "Z"
     },
     {
       "Id": 1633907573,
@@ -28,12 +28,12 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_17451"
+      "Value": "Basic tower. Has no attack.|n|cfff5962dUpgrades into:|r Acid Spitter, Sleepless Watcher"
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_20073"
+      "Value": "(Yogg Tower)"
     },
     {
       "Id": 1818520949,
@@ -48,12 +48,12 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_17320"
+      "Value": "Madness Pool"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_17321"
+      "Value": "Build Madness Pool"
     }
   ]
 }

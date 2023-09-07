@@ -8,29 +8,29 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_12444"
+      "Value": "(Green - Farstrider, Vereesa)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_12893"
+      "Value": "Q"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_12446"
+      "Value": "Feint"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_12447"
+      "Value": "Feint (|cffffcc00Q|r)"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_12448"
+      "Value": "Makes the Farstrider invisible for 10 seconds and increases movement speed by 25%. Lasts 10 seconds."
     }
   ]
 }

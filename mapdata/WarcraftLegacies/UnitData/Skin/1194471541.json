@@ -12,12 +12,12 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_7042"
+      "Value": "(Scourge, Forsaken, Cult)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_4898"
+      "Value": "Q"
     },
     {
       "Id": 1633907573,
@@ -27,17 +27,17 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_13653"
+      "Value": "Algamation of corpses stiched into a foul creature.|n|cfff5962dAbilities:|R Disease Cloud, Resistant Skin, Cleaving Attack|n|n|cff99b4d1Can only train 12.|r|n|cffffcc00Attacks land units.|r"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_18346"
+      "Value": "Elite Abominations"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_18348"
+      "Value": "Train Elite Abominations"
     },
     {
       "Id": 1818520949,

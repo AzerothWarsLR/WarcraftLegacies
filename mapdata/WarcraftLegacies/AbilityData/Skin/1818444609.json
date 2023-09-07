@@ -11,30 +11,30 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_6418"
+      "Value": "(Frostwolf-Far Seer)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_8698"
+      "Value": "E"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_6420"
+      "Value": "Chain Lightning - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_6421"
+      "Value": "Chain Lightning - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_6422"
+      "Value": "Hurls a bolt of lightning that bounces up to \u003CACcl,DataB2\u003E times, dealing \u003CACcl,DataA2\u003E damage to the primary target. Each jump deals less damage."
     },
     {
       "Id": 2019718497,

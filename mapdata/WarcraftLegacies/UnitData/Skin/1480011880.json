@@ -12,12 +12,12 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_4853"
+      "Value": "R"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_18020"
+      "Value": "Shipyard"
     },
     {
       "Id": 1668510581,
@@ -27,7 +27,7 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_19904"
+      "Value": "Build Shipyard"
     },
     {
       "Id": 1935832437,
@@ -37,12 +37,12 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_18070"
+      "Value": "Boat construction facility.|n|cfff5962dTrains:|R Transport, Scout, Frigate, Fireship, Galley, Boarding Vessel, Juggernaut, Bombard|R|n|n|cff00c4c4Cannot be built near small inland water areas."
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_18071"
+      "Value": "(Tolvir Shipyard)"
     },
     {
       "Id": 1633907573,

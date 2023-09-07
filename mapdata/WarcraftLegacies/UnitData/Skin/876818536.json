@@ -17,7 +17,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_20730"
+      "Value": "(Sunfury T2)"
     },
     {
       "Id": 1818520949,
@@ -27,7 +27,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_14367"
+      "Value": "C"
     },
     {
       "Id": 1831952757,
@@ -42,7 +42,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_20868"
+      "Value": "Covenant"
     },
     {
       "Id": 1668510581,
@@ -52,7 +52,7 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_20869"
+      "Value": "Upgrade to Covenant"
     },
     {
       "Id": 1935832437,
@@ -62,7 +62,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_20733"
+      "Value": "Main gathering structure.|n|cfff5962dTrains:|R Architect"
     }
   ]
 }

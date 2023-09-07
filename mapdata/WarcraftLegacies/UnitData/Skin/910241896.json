@@ -13,7 +13,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_18591"
+      "Value": " (Ragnaros)"
     },
     {
       "Id": 1818520949,
@@ -23,22 +23,22 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_4980"
+      "Value": "Q"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_2700"
+      "Value": "Anvilrage Guardsman"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_2703"
+      "Value": "Train Anvilrage Guardsman"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_2714"
+      "Value": "Mighty defender of the Anvilrage Clan.|n|cfff5962dAbilities:|R Charge, Defend|n|cfff5962dCan Learn:|R Mithril Plated Armor|n|n|cffffcc00Attacks land units.|r"
     },
     {
       "Id": 1684960117,

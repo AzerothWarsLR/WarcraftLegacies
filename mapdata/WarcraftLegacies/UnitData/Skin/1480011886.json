@@ -13,12 +13,12 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_6517"
+      "Value": "(twilight)"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_16434"
+      "Value": "Train Ogre Magi"
     },
     {
       "Id": 1818520949,
@@ -28,17 +28,17 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_4214"
+      "Value": "W"
     },
     {
       "Id": 1953850229,
       "Type": 3,
-      "Value": "TRIGSTR_16761"
+      "Value": "- Fireball,- Fireball|n- Rain of Fire,- Fireball|n- Rain of Fire|n- Bloodlust"
     },
     {
       "Id": 1853186933,
       "Type": 3,
-      "Value": "TRIGSTR_7267"
+      "Value": "Initiate, Adept, Master"
     },
     {
       "Id": 2020631157,
@@ -47,7 +47,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_16762"
+      "Value": "Warrior spellcaster of the Twilight Hammer.|n|cfff5962dAbilities:|R Fireball|n|cfff5962dCan Learn:|R Rain of Fire, Bloodlust |n|n|cffffcc00Attacks land units.|r"
     },
     {
       "Id": 1831952757,

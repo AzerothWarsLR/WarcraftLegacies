@@ -7,12 +7,12 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_4746"
+      "Value": "(unused)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_716"
+      "Value": "W"
     },
     {
       "Id": 845245813,
@@ -27,7 +27,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_1015"
+      "Value": "Destroyer"
     },
     {
       "Id": 1668510581,
@@ -37,12 +37,12 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_1016"
+      "Value": "Build Destroyer"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_1470"
+      "Value": "Pride of the Alliance Navy, and defender of the seas.|n|cfff5962dAbilities:|R Board, Fishing Nets|n|r|n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Id": 1633907573,

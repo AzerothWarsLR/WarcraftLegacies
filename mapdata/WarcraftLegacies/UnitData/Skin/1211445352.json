@@ -17,7 +17,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_15878"
+      "Value": " (Ironforge Other)"
     },
     {
       "Id": 1818520949,
@@ -36,7 +36,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_2933"
+      "Value": "Thelsamar"
     },
     {
       "Id": 1919705973,
@@ -45,7 +45,7 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_2934"
+      "Value": "Thelsamar"
     },
     {
       "Id": 1935832437,
@@ -55,7 +55,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_2935"
+      "Value": "Thelsamar"
     }
   ]
 }

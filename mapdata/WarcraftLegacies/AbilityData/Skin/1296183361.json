@@ -12,17 +12,17 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_219"
+      "Value": "(forsaken)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_15972"
+      "Value": "W"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_12818"
+      "Value": "Mass Animate Dead"
     },
     {
       "Id": 1918988897,
@@ -36,29 +36,29 @@
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_12988"
+      "Value": "R"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_12820"
+      "Value": "Learn Mass Animate Dead - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_11924"
+      "Value": "Animates alot nearby corpses to fight for the Lich King. Lasts 60 seconds.|n|n|cffffcc00Level 1|r - Animates 50 nearby corpses. Got a 240 seconds cooldown. |n|cffffcc00Level 2|r - Animates 100 nearby corpses. Got a 180 seconds cooldown. |n|cffffcc00Level 3|r - Animates 200 nearby corpses. Got a 120 seconds cooldown."
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_12822"
+      "Value": "Mass Animate Dead"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_11926"
+      "Value": "Raises \u003CA04T,DataA1\u003E dead units in an area for \u003CA04T,Dur1\u003E seconds."
     }
   ]
 }

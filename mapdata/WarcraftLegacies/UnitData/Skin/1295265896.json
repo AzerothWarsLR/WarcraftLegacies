@@ -17,12 +17,12 @@
     {
       "Id": 1953850229,
       "Type": 3,
-      "Value": "TRIGSTR_5008"
+      "Value": "- Greater Heal,- Greater Heal|n- Renewal,- Greater Heal|n- Renewal|n- Resurrection"
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_2025"
+      "Value": "(Gilneas)"
     },
     {
       "Id": 1818520949,
@@ -32,7 +32,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_2501"
+      "Value": "Q"
     },
     {
       "Id": 1831952757,
@@ -42,17 +42,17 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_15704"
+      "Value": "Cleric"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_15796"
+      "Value": "Train Cleric"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_7114"
+      "Value": "Healing caster.|n|cfff5962dAbilities:|R Greater Heal|n|cfff5962dCan Learn:|R Renewal, Resurrection|n|n|cffffcc00Attacks land and air units.|R"
     },
     {
       "Id": 1635083125,

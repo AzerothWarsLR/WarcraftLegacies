@@ -21,7 +21,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_20035"
+      "Value": "(Dalaran Specialist)"
     },
     {
       "Id": 1818520949,
@@ -31,7 +31,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_2359"
+      "Value": "A"
     },
     {
       "Id": 1633907573,
@@ -41,7 +41,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_5599"
+      "Value": "Draconic Spire"
     },
     {
       "Id": 1668510581,
@@ -51,7 +51,7 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_5820"
+      "Value": "Build Draconic Spire"
     },
     {
       "Id": 1935832437,
@@ -61,7 +61,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_10345"
+      "Value": "Primary troop production building for the Nexus.|n|cfff5962dTrains:|R Zealot, Initiate Mage, Blue Dragonspawn|n|cfff5962dResearches:|R Improved Slow"
     }
   ]
 }

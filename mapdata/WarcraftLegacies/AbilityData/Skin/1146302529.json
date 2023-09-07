@@ -13,12 +13,12 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_17871"
+      "Value": "(draenei)"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_7942"
+      "Value": "Consecrated Slam"
     },
     {
       "Id": 1952543841,
@@ -38,13 +38,13 @@
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_7943"
+      "Value": "Consecrated Slam"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_7941"
+      "Value": "The unit has a 100% chance to bash his target for 0.1 second and deal an additional 10 damage."
     }
   ]
 }

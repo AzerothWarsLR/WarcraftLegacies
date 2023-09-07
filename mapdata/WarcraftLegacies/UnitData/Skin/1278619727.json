@@ -13,7 +13,7 @@
     {
       "Id": 1953980789,
       "Type": 3,
-      "Value": "TRIGSTR_19979"
+      "Value": "Revive Garrosh"
     },
     {
       "Id": 2020631157,
@@ -26,7 +26,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_1562"
+      "Value": "(warsong)"
     },
     {
       "Id": 1818520949,
@@ -36,7 +36,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_4855"
+      "Value": "R"
     },
     {
       "Id": 2054188149,
@@ -46,7 +46,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_19980"
+      "Value": "Warlord of the Warsong Clan"
     },
     {
       "Id": 1970434165,
@@ -55,12 +55,12 @@
     {
       "Id": 1869770869,
       "Type": 3,
-      "Value": "TRIGSTR_19981"
+      "Value": "Garrosh Hellscream"
     },
     {
       "Id": 1919972469,
       "Type": 3,
-      "Value": "TRIGSTR_19982"
+      "Value": "Revive Garrosh"
     },
     {
       "Id": 1769173877,
@@ -80,12 +80,12 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_19983"
+      "Value": "Summon Garrosh"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_18278"
+      "Value": "Warrior Hero, specialize in buffing his frontline.|n|cfff5962dAbilities:|r Execute|n|cfff5962dCan learn:|R Blade Storm, Mass Unholy Armor, Blood Absorption, Field of Blood|n|cffffcc00Attacks land units.|R"
     },
     {
       "Id": 1684960117,

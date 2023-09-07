@@ -27,12 +27,12 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_15386"
+      "Value": "(gazlowee)"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_13589"
+      "Value": "Overclock"
     },
     {
       "Id": 1918988897,
@@ -46,48 +46,48 @@
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_16538"
+      "Value": "Learn Overclock - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_18064"
+      "Value": "Gazlowee burns some extra fuel, resetting the cooldown of all his abilities.|n|n|cffffcc00Level 1|r - 400 mana.|n|cffffcc00Level 2|r - 250 mana.|n|cffffcc00Level 3|r - 100 mana."
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_17370"
+      "Value": "Overclock - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_17371"
+      "Value": "Overclock - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_17372"
+      "Value": "Overclock - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_17373"
+      "Value": "Gazlowee overclock his mech, instantly resetting his spell cooldowns."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_17374"
+      "Value": "Gazlowee overclock his mech, instantly resetting his spell cooldowns."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_17375"
+      "Value": "Gazlowee overclock his mech, instantly resetting his spell cooldowns."
     }
   ]
 }

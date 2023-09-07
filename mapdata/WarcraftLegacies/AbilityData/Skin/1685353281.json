@@ -7,13 +7,13 @@
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_6321"
+      "Value": "W"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_4807"
+      "Value": "Releases garrisoned units and has them return to their previous task."
     }
   ]
 }

@@ -7,17 +7,17 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_5450"
+      "Value": "UNUSED"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_7399"
+      "Value": "W"
     },
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_7401"
+      "Value": "W"
     }
   ]
 }

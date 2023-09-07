@@ -12,13 +12,13 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_19391"
+      "Value": "(Illidan)"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_15751"
+      "Value": "Causes this unit to shift out of existence for a long duration, avoiding any further damage until cancelled. |nLasts 30 seconds.|n|cffd45e19Has an 80 seconds cooldown.|r"
     },
     {
       "Id": 2019718497,
@@ -27,13 +27,13 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_15753"
+      "Value": "Void Exile"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_15754"
+      "Value": "Void Exile"
     },
     {
       "Id": 1953653089,

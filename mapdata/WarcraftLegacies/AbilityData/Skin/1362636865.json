@@ -17,7 +17,7 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_9226"
+      "Value": "(Yellow - Magni)"
     },
     {
       "Id": 1952540001,
@@ -27,7 +27,7 @@
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_10939"
+      "Value": "R"
     },
     {
       "Id": 1734962273,
@@ -42,7 +42,7 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_11015"
+      "Value": "Lightning Streak"
     },
     {
       "Id": 1918988897,
@@ -56,53 +56,53 @@
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_10941"
+      "Value": "R"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_11017"
+      "Value": "Learn Lightning Streak - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_11018"
+      "Value": "Unleashes streaks of lightning in all directions dealing massive damage to all enemy units nearby.|n|n|cffffcc00Level 1|r - 200 damage per target.|n|cffffcc00Level 2|r - 250 damage per target.|n|cffffcc00Level 3|r - 300 damage per target."
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_11019"
+      "Value": "Lightning Streak - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_11020"
+      "Value": "Lightning Streak - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_11021"
+      "Value": "Lightning Streak - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_11022"
+      "Value": "Unleashes streaks of lightning in all directions dealing 200 damage to all enemy units nearby."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_11023"
+      "Value": "Unleashes streaks of lightning in all directions dealing 250 damage to all enemy units nearby."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_11024"
+      "Value": "Unleashes streaks of lightning in all directions dealing 300 damage to all enemy units nearby."
     }
   ]
 }

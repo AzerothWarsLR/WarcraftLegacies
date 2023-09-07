@@ -8,7 +8,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_11051"
+      "Value": "(dwarf)"
     },
     {
       "Id": 1633907573,
@@ -18,17 +18,17 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_15618"
+      "Value": "Dreadnaught"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_20272"
+      "Value": "Train Dreadnaught"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_3106"
+      "Value": "Mechanical heavy melee unit with a powerful ranged anti-air attack.|n|n|cff99b4d1Can only build 4. |n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Id": 1818520949,
@@ -63,7 +63,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_5787"
+      "Value": "W"
     },
     {
       "Id": 2020631157,

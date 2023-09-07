@@ -21,7 +21,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19771"
+      "Value": " (Stormwind Barracks)"
     },
     {
       "Id": 1818520949,
@@ -31,7 +31,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_1352"
+      "Value": "A"
     },
     {
       "Id": 1633907573,
@@ -51,7 +51,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_9156"
+      "Value": "Housing for the defenders of Stormwind.|n|r|cfff5962dTrains:|R Bladesman, Spearman, Outrider|n|cfff5962dResearches:|R Animal War Training"
     }
   ]
 }

@@ -13,17 +13,17 @@
     {
       "Id": 1885959270,
       "Type": 3,
-      "Value": "TRIGSTR_13570"
+      "Value": "Spirit of Vengeance"
     },
     {
       "Id": 1700951398,
       "Type": 3,
-      "Value": "TRIGSTR_13571"
+      "Value": "This unit has been empowered with Vengeance. It has an increased attack rate and when it dies a Spirit of Vengence will spawn."
     },
     {
       "Id": 1718840934,
       "Type": 3,
-      "Value": "TRIGSTR_13572"
+      "Value": "(Buff)"
     },
     {
       "Id": 1952543846,

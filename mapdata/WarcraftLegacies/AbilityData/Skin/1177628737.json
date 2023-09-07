@@ -36,7 +36,7 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_12692"
+      "Value": "(Lordaeron - Arthas)"
     },
     {
       "Id": 1952540001,
@@ -46,12 +46,12 @@
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_12117"
+      "Value": "R"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_12694"
+      "Value": "Solar Judgement"
     },
     {
       "Id": 1918988897,
@@ -65,17 +65,17 @@
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_12147"
+      "Value": "R"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_15612"
+      "Value": "Learn Solar Judgement - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_12697"
+      "Value": "Targets an area for solar bombardment, carpeting it with 28 bolts over the course of 14 seconds. Each bolt deals damage to enemy units and heals non-Undead allies for 150% of that amount. Undead enemies take 10% additional damage.  |n|n|cffffcc00Level 1|r - Each bolt deals 40 damage.|n|cffffcc00Level 2|r - Each bolt deals 60 damage. |n|cffffcc00Level 3|r - Each bolt deals 80 damage."
     },
     {
       "Id": 1952543841,
@@ -86,37 +86,37 @@
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_12698"
+      "Value": "Solar Judgement - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_12699"
+      "Value": "Solar Judgement - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_12700"
+      "Value": "Solar Judgement - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_12701"
+      "Value": "Targets an area for solar bombardment, carpeting it with 56 bolts over the course of 14 seconds. Each bolt deals 40 damage to enemy units and heals non-Undead allies for 150% of that amount. Undead enemies take 10% additional damage."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_12702"
+      "Value": "Targets an area for solar bombardment, carpeting it with 56 bolts over the course of 14 seconds. Each bolt deals 60 damage to enemy units and heals non-Undead allies for 150% of that amount. Undead enemies take 10% additional damage."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_12703"
+      "Value": "Targets an area for solar bombardment, carpeting it with 56 bolts over the course of 14 seconds. Each bolt deals 80 damage to enemy units and heals non-Undead allies for 150% of that amount. Undead enemies take 10% additional damage."
     }
   ]
 }

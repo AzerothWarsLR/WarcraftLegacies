@@ -12,28 +12,28 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_9804"
+      "Value": "(Blood Mage)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_10986"
+      "Value": "W"
     },
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_11350"
+      "Value": "E"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_9807"
+      "Value": "Summons a powerful Phoenix. The Phoenix burns with such intensity that it damages itself and nearby enemy units. Has Spell Immunity, Resistant Skin and Sun Ray. When a Phoenix dies, it creates an egg that will hatch into a Phoenix.|n|nEach level adds 250 health, 10 damage, and shortens the cooldown by 30 seconds.|n|n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_9808"
+      "Value": "Summons a Phoenix. The Phoenix burns with such intensity that it damages itself and nearby enemy units. |n|n|cffffcc00Attacks land and air units.|r"
     }
   ]
 }

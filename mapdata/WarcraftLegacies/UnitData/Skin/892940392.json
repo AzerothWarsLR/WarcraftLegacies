@@ -17,7 +17,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_18850"
+      "Value": " (Ragnaros Tower)"
     },
     {
       "Id": 1818520949,
@@ -27,7 +27,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_10065"
+      "Value": "Z"
     },
     {
       "Id": 1633907573,
@@ -37,12 +37,12 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_18851"
+      "Value": "Improved Cannon Tower"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_18852"
+      "Value": "Upgrade to Improved Cannon Tower"
     },
     {
       "Id": 1935832437,
@@ -52,7 +52,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_18853"
+      "Value": "Heavy defensive structure. Particularly effective against clusters of troops.|n|n|cffffcc00Attacks land units and trees.|r"
     }
   ]
 }

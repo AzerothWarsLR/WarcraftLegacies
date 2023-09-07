@@ -1,18 +1,18 @@
 ﻿#nullable enable
-using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 using AutoMapper;
 using Launcher.DataTransferObjects;
+using Launcher.DTOMappers;
+using Launcher.Extensions;
 using Launcher.JsonConverters;
 using War3Net.Build;
 using War3Net.Build.Audio;
 using War3Net.Build.Environment;
-using War3Net.Build.Import;
 using War3Net.Build.Info;
 using War3Net.Build.Object;
-using War3Net.Build.Script;
 using War3Net.Build.Widget;
 using JsonSerializer = System.Text.Json.JsonSerializer;
 using static Launcher.MapDataPaths;
@@ -38,33 +38,34 @@ namespace Launcher.Services
     {
       _mapper = mapper;
     }
-    
+
     /// <summary>
     /// Converts the provided Warcraft 3 map to JSON and saves it in the specified folder.
     /// </summary>
     public void Convert(string baseMapPath, string outputFolderPath)
     {
       var map = Map.Open(baseMapPath);
-      SerializeAndWriteMapData(map, outputFolderPath);
+      var triggerStrings = map.TriggerStrings.ToDictionary();
+      SerializeAndWriteMapData(map, triggerStrings, outputFolderPath);
       
-      var importedFiles = map.ImportedFiles?.Files;
-      if (importedFiles != null) 
-        CopyImportedFiles(baseMapPath, importedFiles, outputFolderPath);
-      
+      CopyImportedFiles(baseMapPath, outputFolderPath);
       CopyUnserializableFiles(baseMapPath, outputFolderPath);
+      CopyGameInterface(baseMapPath, triggerStrings, outputFolderPath);
     }
 
-    private void SerializeAndWriteMapData(Map map, string outputFolderPath)
+    private void SerializeAndWriteMapData(Map map, TriggerStringDictionary triggerStrings, string outputFolderPath)
     {
       if (Directory.Exists(outputFolderPath))
         Directory.Delete(outputFolderPath, true);
+      
+      var objectDataMapper = new ObjectDataMapper(triggerStrings);
       
       if (map.Doodads != null) 
         SerializeAndWriteDoodads(map.Doodads, Path.Combine(outputFolderPath, DoodadsDirectoryPath));
       if (map.Environment != null) 
         SerializeAndWrite<MapEnvironment, MapEnvironmentDto>(map.Environment, outputFolderPath, EnvironmentPath);
-      if (map.Info != null) 
-        SerializeAndWrite<MapInfo, MapInfoDto>(map.Info, outputFolderPath, InfoPath);
+      if (map.Info != null)
+        SerializeAndWriteMapInfo(map.Info, new MapInfoMapper(triggerStrings), Path.Combine(outputFolderPath, InfoPath));
       if (map.Regions != null)
         SerializeAndWriteRegions(map.Regions, Path.Combine(outputFolderPath, RegionsDirectoryPath));
       if (map.Units != null)
@@ -72,61 +73,86 @@ namespace Launcher.Services
       if (map.PathingMap != null)
         SerializeAndWrite<MapPathingMap, MapPathingMapDto>(map.PathingMap, outputFolderPath, PathingMapPath);
       if (map.PreviewIcons != null)
-        SerializeAndWrite<MapPreviewIcons, MapPreviewIconsDto>(map.PreviewIcons, outputFolderPath, PreviewIconsPath);
+        SerializeAndWritePreviewIcons(map.PreviewIcons, Path.Combine(outputFolderPath, PreviewIconsPath));
       if (map.ShadowMap != null)
         SerializeAndWrite<MapShadowMap, MapShadowMapDto>(map.ShadowMap, outputFolderPath, ShadowMapPath);
-      if (map.TriggerStrings != null)
-        SerializeAndWriteTriggerStrings(map.TriggerStrings, Path.Combine(outputFolderPath, TriggerStringsDirectoryPath));
       if (map.Sounds != null)
         SerializeAndWriteSounds(map.Sounds, Path.Combine(outputFolderPath, SoundsDirectoryPath));
 
       if (map.UnitObjectData != null)
-        SerializeAndWriteUnitData(map.UnitObjectData, outputFolderPath, UnitDataDirectoryPath, CoreDataDirectorySubPath);
+        SerializeAndWriteUnitData(map.UnitObjectData, objectDataMapper, false, outputFolderPath, UnitDataDirectoryPath, CoreDataDirectorySubPath);
       if (map.UnitSkinObjectData != null)
-        SerializeAndWriteUnitData(map.UnitSkinObjectData, outputFolderPath, UnitDataDirectoryPath, SkinDataDirectorySubPath);
+        SerializeAndWriteUnitData(map.UnitSkinObjectData, objectDataMapper, true, outputFolderPath, UnitDataDirectoryPath, SkinDataDirectorySubPath);
       if (map.AbilityObjectData != null)
-        SerializeAndWriteAbilityData(map.AbilityObjectData, outputFolderPath, AbilityDataDirectoryPath, CoreDataDirectorySubPath);
+        SerializeAndWriteAbilityData(map.AbilityObjectData, objectDataMapper, false, outputFolderPath, AbilityDataDirectoryPath, CoreDataDirectorySubPath);
       if (map.AbilitySkinObjectData != null)
-        SerializeAndWriteAbilityData(map.AbilitySkinObjectData, outputFolderPath, AbilityDataDirectoryPath, SkinDataDirectorySubPath);
+        SerializeAndWriteAbilityData(map.AbilitySkinObjectData, objectDataMapper, true, outputFolderPath, AbilityDataDirectoryPath, SkinDataDirectorySubPath);
       if (map.ItemObjectData != null)
-        SerializeAndWriteItemData(map.ItemObjectData, outputFolderPath, ItemDataDirectoryPath, CoreDataDirectorySubPath);
+        SerializeAndWriteItemData(map.ItemObjectData, objectDataMapper, false, outputFolderPath, ItemDataDirectoryPath, CoreDataDirectorySubPath);
       if (map.ItemSkinObjectData != null)
-        SerializeAndWriteItemData(map.ItemSkinObjectData, outputFolderPath, ItemDataDirectoryPath, SkinDataDirectorySubPath);
+        SerializeAndWriteItemData(map.ItemSkinObjectData, objectDataMapper, true, outputFolderPath, ItemDataDirectoryPath, SkinDataDirectorySubPath);
       if (map.DestructableObjectData != null)
-        SerializeAndWriteDestructableData(map.DestructableObjectData, outputFolderPath, DestructableDataDirectoryPath, CoreDataDirectorySubPath);
+        SerializeAndWriteDestructableData(map.DestructableObjectData, objectDataMapper, false, outputFolderPath, DestructableDataDirectoryPath, CoreDataDirectorySubPath);
       if (map.DestructableSkinObjectData != null)
-        SerializeAndWriteDestructableData(map.DestructableSkinObjectData, outputFolderPath, DestructableDataDirectoryPath, SkinDataDirectorySubPath);
+        SerializeAndWriteDestructableData(map.DestructableSkinObjectData, objectDataMapper, true, outputFolderPath, DestructableDataDirectoryPath, SkinDataDirectorySubPath);
       if (map.DoodadObjectData != null)
-        SerializeAndWriteDoodadData(map.DoodadObjectData, outputFolderPath, DoodadDataDirectoryPath, CoreDataDirectorySubPath);
+        SerializeAndWriteDoodadData(map.DoodadObjectData, objectDataMapper, true, outputFolderPath, DoodadDataDirectoryPath, CoreDataDirectorySubPath);
       if (map.DoodadSkinObjectData != null)
-        SerializeAndWriteDoodadData(map.DoodadSkinObjectData, outputFolderPath, DoodadDataDirectoryPath, SkinDataDirectorySubPath);
+        SerializeAndWriteDoodadData(map.DoodadSkinObjectData, objectDataMapper, true, outputFolderPath, DoodadDataDirectoryPath, SkinDataDirectorySubPath);
       if (map.BuffObjectData != null)
-        SerializeAndWriteBuffData(map.BuffObjectData, outputFolderPath, BuffDataDirectoryPath, CoreDataDirectorySubPath);
+        SerializeAndWriteBuffData(map.BuffObjectData, objectDataMapper, false, outputFolderPath, BuffDataDirectoryPath, CoreDataDirectorySubPath);
       if (map.BuffSkinObjectData != null)
-        SerializeAndWriteBuffData(map.BuffSkinObjectData, outputFolderPath, BuffDataDirectoryPath, SkinDataDirectorySubPath);
+        SerializeAndWriteBuffData(map.BuffSkinObjectData, objectDataMapper, true, outputFolderPath, BuffDataDirectoryPath, SkinDataDirectorySubPath);
       if (map.UpgradeObjectData != null)
-        SerializeAndWriteUpgradeData(map.UpgradeObjectData, outputFolderPath, UpgradeDataDirectoryPath, CoreDataDirectorySubPath);
+        SerializeAndWriteUpgradeData(map.UpgradeObjectData, objectDataMapper, true, outputFolderPath, UpgradeDataDirectoryPath, CoreDataDirectorySubPath);
       if (map.UpgradeSkinObjectData != null) 
-        SerializeAndWriteUpgradeData(map.UpgradeSkinObjectData, outputFolderPath, UpgradeDataDirectoryPath, SkinDataDirectorySubPath);
-
-      File.WriteAllText(Path.Combine(outputFolderPath, ScriptPath), map.Script);
+        SerializeAndWriteUpgradeData(map.UpgradeSkinObjectData, objectDataMapper, true, outputFolderPath, UpgradeDataDirectoryPath, SkinDataDirectorySubPath);
     }
 
-    private static void CopyImportedFiles(string baseMapPath, List<ImportedFile> files, string outputFolderPath)
+    private static void CopyImportedFiles(string baseMapPath, string outputFolderPath)
     {
+      var importFileExtensions = new [] {".blp", ".mdx", ".mdl", ".toc", ".fdf", ".mp3", ".webp", ".slk"};
+      var files = Directory
+        .EnumerateFiles(baseMapPath, "*", SearchOption.AllDirectories)
+        .Where(file => importFileExtensions.Any(file.ToLower().EndsWith))
+        .ToList();
+
+      var unserializableFilePaths = GetUnserializableFilePaths().ToList();
       foreach (var file in files)
       {
-        var sourceFileName = $@"{baseMapPath}\{file.FullPath}";
-        var destinationFileName = $@"{outputFolderPath}\{ImportsPath}\{file.FullPath}";
+        var relativePath = Path.GetRelativePath(baseMapPath, file);
+        if (unserializableFilePaths.Contains(relativePath))
+          continue;
+        
+        var destinationFileName = $@"{outputFolderPath}\{ImportsPath}\{relativePath}";
         Directory.CreateDirectory(Path.GetDirectoryName(destinationFileName)!);
-        File.Copy(sourceFileName, destinationFileName, true);
+        File.Copy(file, destinationFileName, true);
       }
     }
     
     private static void CopyUnserializableFiles(string baseMapPath, string outputFolderPath)
     {
       foreach (var filePath in GetUnserializableFilePaths())
-        File.Copy($"{baseMapPath}/{filePath}", $@"{outputFolderPath}\{filePath}", true);
+      {
+        var fullSourceFilePath = $"{baseMapPath}/{filePath}";
+        if (!File.Exists(fullSourceFilePath)) 
+          continue;
+        
+        var fullOutputFilePath = $@"{outputFolderPath}\{filePath}";
+        if (fullSourceFilePath.EndsWith(".txt"))
+          //Warcraft 3 maps use CR line endings, so this ensures that those line endings are replaced with CLRF.
+          File.WriteAllLines(fullOutputFilePath, File.ReadLines(fullSourceFilePath));
+        else
+          File.Copy(fullSourceFilePath, fullOutputFilePath, true);
+      }
+    }
+    
+    private static void CopyGameInterface(string baseMapPath, TriggerStringDictionary triggerStringDictionary, string outputFolderPath)
+    {
+      if (!File.Exists($"{baseMapPath}/{GameInterfacePath}")) 
+        return;
+      var subtitutedText = triggerStringDictionary.SubstituteTriggerStringsInText(File.ReadAllText($"{baseMapPath}/{GameInterfacePath}"));
+      File.WriteAllText($@"{outputFolderPath}\{GameInterfacePath}", subtitutedText);
     }
     
     /// <summary>
@@ -143,6 +169,25 @@ namespace Launcher.Services
       File.WriteAllText(fullPath, asJson);
     }
 
+    private void SerializeAndWritePreviewIcons(MapPreviewIcons mapPreviewIcons, string path)
+    {
+      var dto = _mapper.Map<MapPreviewIcons, MapPreviewIconsDto>(mapPreviewIcons);
+      dto.Icons = dto.Icons
+        .OrderByDescending(x => x.IconType)
+        .ThenByDescending(x => x.X)
+        .ThenByDescending(x => x.Y)
+        .ToList();
+      var asJson = JsonSerializer.Serialize(dto, _jsonSerializerOptions);
+      File.WriteAllText(path, asJson);
+    }
+    
+    private void SerializeAndWriteMapInfo(MapInfo mapInfo, MapInfoMapper mapInfoMapper, string path)
+    {
+      var dto = mapInfoMapper.MapToDto(mapInfo);
+      var asJson = JsonSerializer.Serialize(dto, _jsonSerializerOptions);
+      File.WriteAllText(path, asJson);
+    }
+    
     private void SerializeAndWriteUnits(MapUnits units, string path)
     {
       if (!Directory.Exists(path))
@@ -191,85 +236,93 @@ namespace Launcher.Services
         SerializeAndWrite<Sound, SoundDto>(sound, path, $"{sound.Name.Remove(0, 7)}.json");
     }
     
-    private void SerializeAndWriteTriggerStrings(TriggerStrings triggerStrings, string path)
-    {
-      if (!Directory.Exists(path))
-        Directory.CreateDirectory(path);
-      
-      foreach (var triggerString in triggerStrings.Strings)
-      {
-        var asJson = JsonSerializer.Serialize(triggerString, _jsonSerializerOptions);
-        var fileName = Path.Combine(path, $"{triggerString.Key}.json");
-        File.WriteAllText(fileName, asJson);
-      }
-    }
-    
     private void SerializeAndWriteRegions(MapRegions regions, string path)
     {
       foreach (var region in regions.Regions)
         SerializeAndWrite<Region, RegionDto>(region, path, $"{region.Name}.json");
     }
     
-    private void SerializeAndWriteUnitData(UnitObjectData unitObjectData, params string[] paths)
+    private void SerializeAndWriteUnitData(UnitObjectData unitObjectData, ObjectDataMapper objectDataMapper,
+      bool substituteTriggerStrings, params string[] paths)
     {
-      foreach (var unit in unitObjectData.BaseUnits) 
+      var dto = objectDataMapper.MapToDto(unitObjectData, substituteTriggerStrings);
+      
+      foreach (var unit in dto.BaseUnits) 
         SerializeAndWriteSimpleObjectModification(unit, Path.Combine(paths));
       
-      foreach (var unit in unitObjectData.NewUnits) 
+      foreach (var unit in dto.NewUnits) 
         SerializeAndWriteSimpleObjectModification(unit, Path.Combine(paths));
     }
     
-    private void SerializeAndWriteBuffData(BuffObjectData buffObjectData, params string[] paths)
+    private void SerializeAndWriteBuffData(BuffObjectData buffObjectData, ObjectDataMapper objectDataMapper,
+      bool substituteTriggerStrings, params string[] paths)
     {
-      foreach (var buff in buffObjectData.BaseBuffs) 
+      var dto = objectDataMapper.MapToDto(buffObjectData, substituteTriggerStrings);
+      
+      foreach (var buff in dto.BaseBuffs) 
         SerializeAndWriteSimpleObjectModification(buff, Path.Combine(paths));
       
-      foreach (var buff in buffObjectData.NewBuffs) 
+      foreach (var buff in dto.NewBuffs) 
         SerializeAndWriteSimpleObjectModification(buff, Path.Combine(paths));
     }
 
-    private void SerializeAndWriteDoodadData(DoodadObjectData doodadObjectData, params string[] paths)
+    private void SerializeAndWriteDoodadData(DoodadObjectData doodadObjectData, ObjectDataMapper objectDataMapper,
+      bool substituteTriggerStrings, params string[] paths)
     {
-      foreach (var doodad in doodadObjectData.BaseDoodads) 
+      var dto = objectDataMapper.MapToDto(doodadObjectData, substituteTriggerStrings);
+      
+      foreach (var doodad in dto.BaseDoodads) 
         SerializeAndWriteVariationObjectModification(doodad, Path.Combine(paths));
       
-      foreach (var doodad in doodadObjectData.NewDoodads) 
+      foreach (var doodad in dto.NewDoodads) 
         SerializeAndWriteVariationObjectModification(doodad, Path.Combine(paths));
     }
 
-    private void SerializeAndWriteDestructableData(DestructableObjectData destructableObjectData, params string[] paths)
+    private void SerializeAndWriteDestructableData(DestructableObjectData destructableObjectData,
+      ObjectDataMapper objectDataMapper, bool substituteTriggerStrings, params string[] paths)
     {
-      foreach (var destructable in destructableObjectData.BaseDestructables) 
+      var dto = objectDataMapper.MapToDto(destructableObjectData, substituteTriggerStrings);
+      
+      foreach (var destructable in dto.BaseDestructables) 
         SerializeAndWriteSimpleObjectModification(destructable, Path.Combine(paths));
       
-      foreach (var destructable in destructableObjectData.NewDestructables) 
+      foreach (var destructable in dto.NewDestructables) 
         SerializeAndWriteSimpleObjectModification(destructable, Path.Combine(paths));
     }
 
-    private void SerializeAndWriteItemData(ItemObjectData itemObjectData, params string[] paths)
+    private void SerializeAndWriteItemData(ItemObjectData itemObjectData, ObjectDataMapper objectDataMapper,
+      bool substituteTriggerStrings, params string[] paths)
     {
-      foreach (var item in itemObjectData.BaseItems) 
+      var dto = objectDataMapper.MapToDto(itemObjectData, substituteTriggerStrings);
+      
+      foreach (var item in dto.BaseItems) 
         SerializeAndWriteSimpleObjectModification(item, Path.Combine(paths));
       
-      foreach (var item in itemObjectData.NewItems) 
+      foreach (var item in dto.NewItems) 
         SerializeAndWriteSimpleObjectModification(item, Path.Combine(paths));
     }
 
-    private void SerializeAndWriteAbilityData(AbilityObjectData abilityObjectData, params string[] paths)
+    private void SerializeAndWriteAbilityData(AbilityObjectData abilityObjectData, ObjectDataMapper objectDataMapper,
+      bool substituteTriggerStrings, params string[] paths)
     {
-      foreach (var ability in abilityObjectData.BaseAbilities)
+      var dto = objectDataMapper.MapToDto(abilityObjectData, substituteTriggerStrings);
+      
+      foreach (var ability in dto.BaseAbilities)
         SerializeAndWriteLevelObjectModification(ability, Path.Combine(paths));
       
-      foreach (var ability in abilityObjectData.NewAbilities)
+      foreach (var ability in dto.NewAbilities)
         SerializeAndWriteLevelObjectModification(ability, Path.Combine(paths));
     }
     
-    private void SerializeAndWriteUpgradeData(UpgradeObjectData upgradeObjectData, params string[] paths)
+    private void SerializeAndWriteUpgradeData(UpgradeObjectData upgradeObjectData, ObjectDataMapper objectDataMapper,
+      bool substituteTriggerStrings, params string[] paths)
     {
-      foreach (var upgrade in upgradeObjectData.BaseUpgrades)
+      var dto = objectDataMapper.MapToDto(upgradeObjectData, substituteTriggerStrings);
+      
+      foreach (var upgrade in dto.BaseUpgrades)
         SerializeAndWriteLevelObjectModification(upgrade, Path.Combine(paths));
       
-      foreach (var upgrade in upgradeObjectData.NewUpgrades)
+      foreach (var upgrade in dto.NewUpgrades)
         SerializeAndWriteLevelObjectModification(upgrade, Path.Combine(paths));
     }
     

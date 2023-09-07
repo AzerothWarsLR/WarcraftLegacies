@@ -8,12 +8,12 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_002"
+      "Value": "(sunfury - Demi)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_3357"
+      "Value": "A"
     },
     {
       "Id": 1633907573,
@@ -23,12 +23,12 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_20901"
+      "Value": "Train Void Reaver"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_11802"
+      "Value": "Mechanical Demon brought from the Void.|n|cfff5962dAbilities: |R Arcane Combustion, Mana Shield"
     },
     {
       "Id": 1868786037,
@@ -43,7 +43,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_20902"
+      "Value": "Void Reaver"
     }
   ]
 }

@@ -17,12 +17,12 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_15762"
+      "Value": "(gilneas)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_6800"
+      "Value": "E"
     },
     {
       "Id": 828468597,
@@ -37,17 +37,17 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_13765"
+      "Value": "Harvest-Witch"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_14051"
+      "Value": "Train Harvest-Witch"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_21073"
+      "Value": "Witch of Gilneas.|n|cfff5962dAbilities:|R Spiritual Guidance, Slow Poison |n|cfff5962dCan learn:|R Healing Wave, Far Sight|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Id": 1684960117,

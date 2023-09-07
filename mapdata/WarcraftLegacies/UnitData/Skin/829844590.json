@@ -7,7 +7,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_677"
+      "Value": "(Quel\u0027Thalas)"
     },
     {
       "Id": 2053990773,
@@ -22,7 +22,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_678"
+      "Value": "Fire Elemental"
     },
     {
       "Id": 1668510581,
@@ -32,7 +32,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_679"
+      "Value": "Tamed elemental of the Firelands.|n|cfff5962dAbilities:|R Incinerate|n|n|cffffcc00Attacks land and air units.|R\r\n"
     }
   ]
 }

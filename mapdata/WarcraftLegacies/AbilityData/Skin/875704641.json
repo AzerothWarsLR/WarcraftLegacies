@@ -12,12 +12,12 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_11679"
+      "Value": "(Nathrezim)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_20208"
+      "Value": "E"
     },
     {
       "Id": 2019718497,
@@ -26,36 +26,36 @@
     {
       "Id": 1802007905,
       "Type": 3,
-      "Value": "TRIGSTR_20210"
+      "Value": "E"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_20520"
+      "Value": "The Nathrezim takes flight, giving him the ability to fly and a ranged attack, but losing his invisibility and Charm abilities. |n|n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_20510"
+      "Value": "Take Flight"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_20511"
+      "Value": "Take Flight"
     },
     {
       "Level": 1,
       "Id": 829715809,
       "Type": 3,
-      "Value": "TRIGSTR_20512"
+      "Value": "Land"
     },
     {
       "Level": 1,
       "Id": 829781345,
       "Type": 3,
-      "Value": "TRIGSTR_20521"
+      "Value": "The Nathrezim lands, regaining his Invisibility and Charm ability."
     },
     {
       "Id": 1953653089,

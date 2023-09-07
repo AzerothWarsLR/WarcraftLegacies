@@ -13,29 +13,29 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_9651"
+      "Value": "(Quel\u0027thalas - Kael\u0027thas) (DUMMY CASTER)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_10959"
+      "Value": "W"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_9653"
+      "Value": "Mass Banish"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_9654"
+      "Value": "Mass Banish"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_9655"
+      "Value": "Turns a non-mechanical unit ethereal and slows its movement speed by \u003CACbn,DataA1,%\u003E% for 12 seconds. Lasts 2 second on Heroes. Ethereal creatures cannot attack, but they can cast spells and certain spells cast upon them will have a greater effect."
     }
   ]
 }

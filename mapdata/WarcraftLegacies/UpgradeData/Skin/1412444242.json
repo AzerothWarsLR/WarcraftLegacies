@@ -19,31 +19,31 @@
       "Level": 1,
       "Id": 1718840935,
       "Type": 3,
-      "Value": "TRIGSTR_14917"
+      "Value": "(Ironforge Steam Tank)"
     },
     {
       "Level": 1,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_16156"
+      "Value": "C"
     },
     {
       "Level": 1,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "TRIGSTR_17377"
+      "Value": "Overclock"
     },
     {
       "Level": 1,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_14920"
+      "Value": "Research Overclock"
     },
     {
       "Level": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "TRIGSTR_14921"
+      "Value": "Allows Steam Tanks to Overclock, causing them to attack \u003CA0F5,DataB1,%\u003E% faster but take \u003CA0F5,DataC1,%\u003E% more damage for \u003CA0F5,Dur1\u003E seconds."
     }
   ]
 }

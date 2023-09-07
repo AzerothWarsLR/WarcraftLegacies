@@ -13,24 +13,24 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_11112"
+      "Value": "(Dagran Fire Elemental)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_11598"
+      "Value": "Q"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_11114"
+      "Value": "Breath of Fire"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_11115"
+      "Value": "Breathes a cone of fire at enemy units, dealing 75 damage and an additional 50 damage over 10 seconds."
     },
     {
       "Id": 2036495713,

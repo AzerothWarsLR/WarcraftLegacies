@@ -17,29 +17,29 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_21144"
+      "Value": "(Sunfury)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_18542"
+      "Value": "W"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_15003"
+      "Value": "Animal Companion"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_20832"
+      "Value": "Animal Companion"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_20833"
+      "Value": "Summons a panther companion with True Sight. |nLasts 45 seconds. |n|n|cffffcc00Attacks land units.|r"
     }
   ]
 }

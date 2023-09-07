@@ -12,24 +12,24 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_10732"
+      "Value": "(Sentinels - Moonhunter)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_8931"
+      "Value": "W"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_10137"
+      "Value": "Hurls a flask of acid at a target, dealing \u003CA0VK,DataD1\u003E damage to enemy units near it and reducing their armor by \u003CA0VK,DataC1\u003E for \u003CA0VK,Dur1\u003E seconds."
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_099"
+      "Value": "Acid Bomb"
     }
   ]
 }

@@ -17,7 +17,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_20354"
+      "Value": "(Crusade Research)"
     },
     {
       "Id": 1818520949,
@@ -27,7 +27,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_6481"
+      "Value": "E"
     },
     {
       "Id": 1633907573,
@@ -47,7 +47,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_20355"
+      "Value": "General research building.|n|cfff5962dResearches: |RForged Weaponry, Armor Plating, Power Infusion, Improved Lumber Harvesting, Improved Masonry, Improved Cannons, Fortified Hulls"
     }
   ]
 }

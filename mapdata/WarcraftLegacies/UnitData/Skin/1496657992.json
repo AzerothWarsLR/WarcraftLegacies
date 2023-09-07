@@ -8,12 +8,12 @@
     {
       "Id": 1953980789,
       "Type": 3,
-      "Value": "TRIGSTR_15579"
+      "Value": "Revive Lord Wizard"
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_2055"
+      "Value": "(Stormwind)"
     },
     {
       "Id": 1818520949,
@@ -33,22 +33,22 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_15587"
+      "Value": "Lord Wizard"
     },
     {
       "Id": 1869770869,
       "Type": 3,
-      "Value": "TRIGSTR_3851"
+      "Value": "Khadgar"
     },
     {
       "Id": 1919972469,
       "Type": 3,
-      "Value": "TRIGSTR_15590"
+      "Value": "Revive Lord Wizard"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_3745"
+      "Value": "Arcane Hero, adept at dealing magic damage and mana manipulation.|n|cfff5962dAbilities:|r Arcane Absorption|n|cfff5962dCan learn:|R Forked Thunder, Wise Council, Mana Shield, Black Hole|n|n|cffffcc00Attacks land and air units.|R"
     },
     {
       "Id": 1684960117,
@@ -58,12 +58,12 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_15594"
+      "Value": "Summon Khadgar"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_2002"
+      "Value": "R"
     },
     {
       "Id": 828468597,

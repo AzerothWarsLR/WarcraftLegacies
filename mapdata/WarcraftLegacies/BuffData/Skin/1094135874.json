@@ -13,17 +13,17 @@
     {
       "Id": 1885959270,
       "Type": 3,
-      "Value": "TRIGSTR_13206"
+      "Value": "Holy Protection"
     },
     {
       "Id": 1700951398,
       "Type": 3,
-      "Value": "TRIGSTR_13207"
+      "Value": "This unit has Holy Protection; damage spells must destroy the shell to affect the unit."
     },
     {
       "Id": 1835101798,
       "Type": 3,
-      "Value": "TRIGSTR_13208"
+      "Value": "Holy Protection"
     },
     {
       "Id": 1718840934,

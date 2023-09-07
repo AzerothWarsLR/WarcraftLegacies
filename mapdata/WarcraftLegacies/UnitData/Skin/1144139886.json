@@ -17,7 +17,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_1047"
+      "Value": "(Ironforge)"
     },
     {
       "Id": 1735156597,
@@ -26,7 +26,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_2260"
+      "Value": "Q"
     },
     {
       "Id": 1633907573,
@@ -45,12 +45,12 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_2556"
+      "Value": "Train War Golem"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_2557"
+      "Value": "Heavy magic-resistant melee unit.|n|cfff5962dAbilities:|R Spell Resistance, Resistant Skin |n|n|cffffcc00Attacks land units.|r"
     },
     {
       "Id": 1818520949,

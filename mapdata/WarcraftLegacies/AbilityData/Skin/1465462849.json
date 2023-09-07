@@ -13,12 +13,12 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_6967"
+      "Value": "(Green/Light Blue - Illidan)"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_6968"
+      "Value": "Warglaives of Azzinoth"
     },
     {
       "Id": 1918988897,
@@ -28,60 +28,60 @@
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_6969"
+      "Value": "Learn Warglaives of Azzinoth - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_6970"
+      "Value": "Causes Illidan\u0027s attacks to deal additional magic damage in an area around the attacked unit. Deals 20% extra damage to Demons. |n|n|cffffcc00Level 1|r - Deals 20 damage. |n|cffffcc00Level 2|r - Deals 35 damage. |n|cffffcc00Level 3|r - Deals 50 damage. |n|cffffcc00Level 3|r - Deals 65 damage."
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_6971"
+      "Value": "Warglaives of Azzinoth - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_6972"
+      "Value": "Warglaives of Azzinoth - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_6973"
+      "Value": "Warglaives of Azzinoth - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_6974"
+      "Value": "Warglaives of Azzinoth - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_6975"
+      "Value": "Causes Illidan\u0027s attacks to deal 20 additional magic damage in an area around the attacked unit. Deals 20% extra damage to Demons."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_6976"
+      "Value": "Causes Illidan\u0027s attacks to deal 35 additional magic damage in an area around the attacked unit. Deals 20% extra damage to Demons."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_6977"
+      "Value": "Causes Illidan\u0027s attacks to deal 50 additional magic damage in an area around the attacked unit. Deals 20% extra damage to Demons."
     },
     {
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_6978"
+      "Value": "Causes Illidan\u0027s attacks to deal 65 additional magic damage in an area around the attacked unit. Deals 20% extra damage to Demons."
     }
   ]
 }

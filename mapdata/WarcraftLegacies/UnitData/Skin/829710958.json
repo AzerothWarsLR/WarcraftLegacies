@@ -11,12 +11,12 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_509"
+      "Value": "X"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_905"
+      "Value": "Upgrade to Boulder Tower"
     },
     {
       "Id": 1935832437,
@@ -26,7 +26,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_906"
+      "Value": "Fires massive boulders upon its foes.|n|cfff5962dUpgrades Into:|R Improved Boulder Tower|n|n|cffffcc00Attacks land units.|r"
     }
   ]
 }

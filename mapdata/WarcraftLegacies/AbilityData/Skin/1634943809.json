@@ -15,12 +15,12 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_6290"
+      "Value": "(Neutral hostile - Priestess of the Moon)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_8411"
+      "Value": "F"
     },
     {
       "Id": 2019718497,
@@ -33,7 +33,7 @@
     {
       "Id": 1802007905,
       "Type": 3,
-      "Value": "TRIGSTR_8516"
+      "Value": "F"
     }
   ]
 }

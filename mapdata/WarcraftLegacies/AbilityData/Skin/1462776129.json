@@ -13,12 +13,12 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_21335"
+      "Value": "(Lordaeron Mage, Tidesage, Banshee)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_8257"
+      "Value": "Q"
     },
     {
       "Id": 1952542049,
@@ -28,19 +28,19 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_6758"
+      "Value": "Frost Bolt"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_11269"
+      "Value": "Ice Bolt"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_15832"
+      "Value": "Hurls an icy bolt that stuns a target enemy unit, dealing 60 damage."
     }
   ]
 }

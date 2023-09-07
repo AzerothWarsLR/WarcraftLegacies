@@ -8,7 +8,7 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_13555"
+      "Value": "Retribution Aura"
     },
     {
       "Id": 1953653089,
@@ -18,13 +18,13 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_16031"
+      "Value": "(Scarlet)"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_6874"
+      "Value": "An aura that gives nearby friendly units a damage shield, which deals 30% of an enemy unit\u0027s attack damage back to it."
     }
   ]
 }

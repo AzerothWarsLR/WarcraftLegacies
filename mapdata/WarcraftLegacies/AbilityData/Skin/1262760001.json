@@ -17,12 +17,12 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_10023"
+      "Value": "(Kel\u0027thuzad Ghost)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_10776"
+      "Value": "Q"
     },
     {
       "Id": 1667329377,
@@ -37,7 +37,7 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_10025"
+      "Value": "Shadow Missile"
     },
     {
       "Id": 1918988897,
@@ -51,65 +51,65 @@
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_10833"
+      "Value": "Q"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_15661"
+      "Value": "Learn Shadow Missile - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_10028"
+      "Value": "A Shadow Missile is thrown at an enemy unit, causing damage and mini stunning the target for 0.1 second. |n|n|cffffcc00Level 1|r - \u003CANsb,DataA1\u003E damage |n|cffffcc00Level 2|r - \u003CANsb,DataA2\u003E damage |n|cffffcc00Level 3|r - \u003CANsb,DataA3\u003E damage |n|cffffcc00Level 4|r - \u003CANsb,DataA4\u003E damage"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_10029"
+      "Value": "Shadow Missile  - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_10030"
+      "Value": "Shadow Missile  - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_10031"
+      "Value": "Shadow Missile  - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_10032"
+      "Value": "Shadow Missile  - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_10033"
+      "Value": "A Shadow Ball is thrown at an enemy unit, dealing \u003CANsb,DataA1\u003E damage and stunning the target for .1 seconds"
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_10034"
+      "Value": "A Shadow Ball is thrown at an enemy unit, dealing \u003CANsb,DataA2\u003E damage and stunning the target for .1 seconds."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_10035"
+      "Value": "A Shadow Ball is thrown at an enemy unit, dealing \u003CANsb,DataA3\u003E damage and stunning the target for .1 seconds."
     },
     {
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_10036"
+      "Value": "A Shadow Ball is thrown at an enemy unit, dealing \u003CANsb,DataA4\u003E damage and stunning the target for .1 seconds."
     }
   ]
 }

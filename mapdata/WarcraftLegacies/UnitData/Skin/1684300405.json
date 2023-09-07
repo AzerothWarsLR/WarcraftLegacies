@@ -20,7 +20,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_277"
+      "Value": "(Scourge-Demi)"
     },
     {
       "Id": 1735156597,
@@ -29,7 +29,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_275"
+      "Value": "S"
     },
     {
       "Id": 1633907573,
@@ -43,12 +43,12 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_361"
+      "Value": "Revive Sapphiron"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_393"
+      "Value": "Flying demi-hero, adept at dealing area of effect damage and disabling buildings.|n|cfff5962dAbilities:|R Hypothermic Breath, Frost Breath, Resistant Skin|n|cfff5962dCan learn:|R Freezing Breath|n|n|cffffcc00Attacks land and air units.|r"
     }
   ]
 }

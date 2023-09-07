@@ -7,12 +7,12 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_431"
+      "Value": "(Warsong)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_305"
+      "Value": "Q"
     },
     {
       "Id": 1633907573,
@@ -27,7 +27,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_2001"
+      "Value": "Fast and ferocious wolf rider.|n|cfff5962dAbilities:|R Ensnare, Bleeding Blade, Demolish, Pillage|n|cfff5962dCan Learn:|R Self-Bloodlust|n|n|cffffcc00Attacks land units.|r"
     }
   ]
 }

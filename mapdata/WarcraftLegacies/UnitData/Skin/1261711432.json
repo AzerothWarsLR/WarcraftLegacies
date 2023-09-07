@@ -17,7 +17,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_3872"
+      "Value": "(Dalaran Vassal)"
     },
     {
       "Id": 1818520949,
@@ -32,7 +32,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_3442"
+      "Value": "E"
     },
     {
       "Id": 2054188149,
@@ -47,12 +47,12 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_3874"
+      "Value": "The Dragonheart"
     },
     {
       "Id": 1869770869,
       "Type": 3,
-      "Value": "TRIGSTR_3875"
+      "Value": "Rhonin"
     },
     {
       "Id": 1769173877,
@@ -82,12 +82,12 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_3876"
+      "Value": "Choose Vassal: Rhonin"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_3722"
+      "Value": "|cffff0000You will lose your current faction and join Dalaran as a new small 1 hero faction|r|n|nCaster Hero, has a powerful arsenal of spells at his disposition. Can train Battlemages, Geomancer and Arcanists. |n|n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Id": 1684960117,

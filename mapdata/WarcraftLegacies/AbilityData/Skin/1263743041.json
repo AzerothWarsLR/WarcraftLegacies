@@ -8,34 +8,34 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_7919"
+      "Value": "(DG) (Benedictus)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_8831"
+      "Value": "Q"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_7921"
+      "Value": "Greater Heal"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_7922"
+      "Value": "Greater Heal"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_7923"
+      "Value": "Heals a target friendly non-mechanical wounded unit for 65 hit points."
     },
     {
       "Id": 1802007905,
       "Type": 3,
-      "Value": "TRIGSTR_8937"
+      "Value": "Q"
     }
   ]
 }

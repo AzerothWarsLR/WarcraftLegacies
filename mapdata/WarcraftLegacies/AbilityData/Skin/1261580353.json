@@ -13,7 +13,7 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_9898"
+      "Value": "(Warsong)"
     },
     {
       "Id": 1952542049,
@@ -23,7 +23,7 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_11901"
+      "Value": "Multi Shot"
     },
     {
       "Id": 1918988897,
@@ -37,29 +37,29 @@
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_17397"
+      "Value": "R"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_12069"
+      "Value": "Learn Multi Shot - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_18095"
+      "Value": "Sylvanas\u0027 skill with the bow allows her to fire multiple arrows at the same time. |n|n|cffffcc00Level 1|r - Sylvanas is able to fire 3 arrows at once. |n|cffffcc00Level 2|r - Sylvanas is able to fire 5 arrows at once.|n|cffffcc00Level 3|r - Sylvanas is able to fire 7 arrows at once."
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_12067"
+      "Value": "Multi Shot"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_18097"
+      "Value": "Gives the War Station the ability to fire multiple arrows at its enemies."
     }
   ]
 }

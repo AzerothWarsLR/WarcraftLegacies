@@ -11,7 +11,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_531"
+      "Value": "(Legion)"
     },
     {
       "Id": 1735156597,
@@ -20,7 +20,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_381"
+      "Value": "W"
     },
     {
       "Id": 1633907573,
@@ -30,17 +30,17 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_533"
+      "Value": "Voidweaver"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_534"
+      "Value": "Summon Voidweaver"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_535"
+      "Value": "Light ranged unit with Phase Shift and Frost Attack. Can learn Voidic Lash.|n|n|cffffcc00Attacks land and air units.|r"
     }
   ]
 }

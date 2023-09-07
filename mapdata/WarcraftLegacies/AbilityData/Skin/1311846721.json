@@ -8,57 +8,57 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_20268"
+      "Value": "(khadgar)"
     },
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_20195"
+      "Value": "E"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_11055"
+      "Value": "When this hero deals damage, it will regain a portion of the damage dealt as mana. |n|n|cffffcc00Level 1|r - 40% of the damage gained as mana. |n|cffffcc00Level 2|r - 60% of the damage gained as mana.|n|cffffcc00Level 3|r - 80% of the damage gained as mana.|n|cffffcc00Level 4|r - 100% of the damage gained as mana."
     },
     {
       "Level": 4,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_20270"
+      "Value": "Arcane Absorption - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_20824"
+      "Value": "When this unit deals damage, 40% of the damage will be gained as mana"
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_11057"
+      "Value": "When this hero deals damage, 60% of the damage will be gained as mana"
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_20250"
+      "Value": "When this hero deals damage, 80% of the damage will be gained as mana"
     },
     {
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_20273"
+      "Value": "When this hero deals damage, 100% of the damage will be gained as mana"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_20275"
+      "Value": "Arcane Absorption"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_20276"
+      "Value": "Learn Arcane Absorption - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953653089,
@@ -74,19 +74,19 @@
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_20277"
+      "Value": "Arcane Absorption - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_20278"
+      "Value": "Arcane Absorption - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_20279"
+      "Value": "Arcane Absorption - [|cffffcc00Level 3|r]"
     },
     {
       "Id": 2020631137,

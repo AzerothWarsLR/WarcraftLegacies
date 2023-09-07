@@ -17,7 +17,7 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_7655"
+      "Value": "(Green Lady Vashj)"
     },
     {
       "Id": 1952540001,
@@ -27,12 +27,12 @@
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_9111"
+      "Value": "W"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_7657"
+      "Value": "Torrent"
     },
     {
       "Id": 1918988897,
@@ -46,65 +46,65 @@
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_9115"
+      "Value": "W"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_7659"
+      "Value": "Learn Torrent - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_7660"
+      "Value": "Blasts enemy units around a target enemy unit with a wave of damaging high pressure water that slows movement and attack rate. |n|n|cffffcc00Level 1|r - 100 target damage, 100 nova damage. |n|cffffcc00Level 2|r - 100 target damage, 150 nova damage. |n|cffffcc00Level 3|r - 100 target damage, 200 nova damage. |n|cffffcc00Level 4|r - 100 target damage, 250 nova damage."
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_7661"
+      "Value": "Torrent - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_7662"
+      "Value": "Torrent - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_7663"
+      "Value": "Torrent - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_7664"
+      "Value": "Torrent - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_7665"
+      "Value": "Blasts enemy units with a shock of water that deals 100 damage to the target, and 100 nova damage. Water damage slows units\u0027 movement and attack rate for 4 seconds."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_7666"
+      "Value": "Blasts enemy units with a shock of water that deals 100 damage to the target, and 150 nova damage. Water damage slows units\u0027 movement and attack rate for 6 seconds."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_7667"
+      "Value": "Blasts enemy units with a shock of water that deals 100 damage to the target, and 200 nova damage. Water damage slows units\u0027 movement and attack rate for 8 seconds."
     },
     {
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_7668"
+      "Value": "Blasts enemy units with a shock of water that deals 100 damage to the target, and 250 nova damage. Water damage slows units\u0027 movement and attack rate for 10 seconds."
     }
   ]
 }

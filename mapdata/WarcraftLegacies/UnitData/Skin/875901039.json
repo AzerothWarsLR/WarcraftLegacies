@@ -12,7 +12,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_20088"
+      "Value": "(Draenei Magic)"
     },
     {
       "Id": 1633907573,
@@ -27,7 +27,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_15253"
+      "Value": "Spiritual hall for the Exodar.|n|cfff5962dTrains:|r Luminarch, Elementalist|n|cfff5962dResearches:|R Luminarch Training, Elementalist Training"
     },
     {
       "Id": 1818520949,
@@ -42,12 +42,12 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_17812"
+      "Value": "Astral Sanctum"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_17813"
+      "Value": "Build Astral Sanctum"
     },
     {
       "Id": 1935827317,

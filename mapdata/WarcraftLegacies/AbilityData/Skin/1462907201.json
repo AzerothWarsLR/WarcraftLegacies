@@ -12,7 +12,7 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_21036"
+      "Value": "(vindicator)"
     },
     {
       "Id": 2020631137,
@@ -21,19 +21,19 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_21037"
+      "Value": "Naaru\u0027s Shield"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_21038"
+      "Value": "Naaru\u0027s Shield"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_21039"
+      "Value": "Reduces the damage taken from Piercing attacks to 0%"
     },
     {
       "Id": 1953653089,

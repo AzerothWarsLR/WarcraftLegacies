@@ -11,7 +11,7 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_5510"
+      "Value": "(Teal - Rend)"
     },
     {
       "Id": 2020635233,
@@ -20,25 +20,25 @@
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_5511"
+      "Value": "Creates images of Hero to fight enemies and dispels all magic from Hero.|n|n|cffffcc00Level 1|r - Creates 3 images which deal 50% the damage of Hero and take 200% the damage. |n|cffffcc00Level 2|r - Creates 5 images which deal 50% the damage of Hero and take 200% the damage. |n|cffffcc00Level 3|r - Creates 7 images which deal 50% the damage of Hero and take 200% the damage."
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_20710"
+      "Value": "Creates 3 images which deal 100% the damage of the Hero and take 200% the damage. Dispels all magic from the Hero. |nLasts 30 seconds."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_5513"
+      "Value": "Creates 5 images which deal 100% the damage of the Hero and take 200% the damage. Dispels all magic from the Hero. |nLasts 30 seconds."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_20711"
+      "Value": "Creates 7 images which deal 100% the damage of the Hero and take 200% the damage. Dispels all magic from the Hero. |nLasts 30 seconds."
     }
   ]
 }

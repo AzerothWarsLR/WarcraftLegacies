@@ -23,31 +23,31 @@
       "Level": 1,
       "Id": 1718840935,
       "Type": 3,
-      "Value": "TRIGSTR_3922"
+      "Value": "(Ironforge)"
     },
     {
       "Level": 1,
       "Id": 829122663,
       "Type": 3,
-      "Value": "TRIGSTR_16455"
+      "Value": "Z"
     },
     {
       "Level": 1,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "TRIGSTR_14883"
+      "Value": "Improved Spell Resistance"
     },
     {
       "Level": 1,
       "Id": 829453415,
       "Type": 3,
-      "Value": "TRIGSTR_14884"
+      "Value": "Research Improved Spell Resistance"
     },
     {
       "Level": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "TRIGSTR_14885"
+      "Value": "Improves War Golems\u0027 Spell Resistance by causing it to reduce the damage taken from spells and Magic attacks by 90%."
     }
   ]
 }

@@ -22,7 +22,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_2329"
+      "Value": "(T1 Voidwalker)"
     },
     {
       "Id": 1735156597,
@@ -36,7 +36,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_2330"
+      "Value": "Voidwalker Demon Gate"
     },
     {
       "Id": 1919705973,
@@ -45,7 +45,7 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_2331"
+      "Value": "Upgrade to Voidwalker Demon Gate"
     },
     {
       "Id": 1935832437,
@@ -55,7 +55,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_6476"
+      "Value": "Gateway attuned to the Voidwalkers of the Burning Crusade, summoning 1 every 60 seconds. |n|n|cfff5962dAbilities:|R Frost Attack|n|cfff5962dUpgrades Into:|R Voidcrusher, Voidlord or Terrorguard Demon Gate"
     }
   ]
 }

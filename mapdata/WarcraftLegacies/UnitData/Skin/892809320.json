@@ -17,7 +17,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19752"
+      "Value": " (Quel\u0027thalas Tower)"
     },
     {
       "Id": 1818520949,
@@ -31,12 +31,12 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_1989"
+      "Value": "Z"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_2741"
+      "Value": "Improved Arcane Tower"
     },
     {
       "Id": 1919705973,
@@ -45,7 +45,7 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_2742"
+      "Value": "Upgrade to (|cffffcc00Z|r) Improved Arcane Tower"
     },
     {
       "Id": 1935832437,
@@ -55,7 +55,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_17605"
+      "Value": "Mage filled defense tower. |n|cfff5962dAbilities:|R Magic Sentry, Feedback, Reveal |n|n|cffffcc00Attacks land and air units.|r"
     }
   ]
 }

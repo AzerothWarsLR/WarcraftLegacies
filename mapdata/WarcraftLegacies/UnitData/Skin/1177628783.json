@@ -17,7 +17,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_1369"
+      "Value": "(Legion)"
     },
     {
       "Id": 1818520949,
@@ -27,7 +27,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_1726"
+      "Value": "Q"
     },
     {
       "Id": 1633907573,
@@ -37,7 +37,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_1676"
+      "Value": "Marauder"
     },
     {
       "Id": 1919705973,
@@ -46,12 +46,12 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_1677"
+      "Value": "Train Marauder"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_1678"
+      "Value": "Brutish orc warrior of the Alterac Blackrock Encampment.|n|cfff5962dAbilities:|R Bloodfury|n|n|cff99b4d1Can only train 12.|r|n|cffffcc00Attacks land units.|r"
     }
   ]
 }

@@ -13,12 +13,12 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_15484"
+      "Value": "(Charred Ancient)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_14606"
+      "Value": "Q"
     },
     {
       "Id": 1952542049,
@@ -28,13 +28,13 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_10947"
+      "Value": "Burning Crash"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_12760"
+      "Value": "Burning Crash"
     },
     {
       "Level": 2,
@@ -58,7 +58,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_12764"
+      "Value": "The Charred Ancient charge at a target unit, dealing 30 damage to every unit on the way. Once reached, the target is knocked back and takes 60 damage and is stunned for 1.5 seconds (0.5 for heroes). |n|nIf your charge collides with unpathable terrain, it will be cancelled."
     },
     {
       "Level": 2,

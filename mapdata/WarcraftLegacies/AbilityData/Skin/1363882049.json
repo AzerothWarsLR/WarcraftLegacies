@@ -22,29 +22,29 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_15830"
+      "Value": "(Gilneas)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_19559"
+      "Value": "Q"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_14433"
+      "Value": "Call to the Hunt"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_14434"
+      "Value": "Call to the Hunt"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_14435"
+      "Value": "Increases nearby units movement speed by 25% for 6 seconds."
     }
   ]
 }

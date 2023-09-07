@@ -17,7 +17,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_2050"
+      "Value": "(Khaz Modan)"
     },
     {
       "Id": 1818520949,
@@ -31,17 +31,17 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_3283"
+      "Value": "W"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_3961"
+      "Value": "King of Khaz Modan"
     },
     {
       "Id": 1869770869,
       "Type": 3,
-      "Value": "TRIGSTR_3962"
+      "Value": "King Magni Bronzebeard"
     },
     {
       "Id": 1919705973,
@@ -50,12 +50,12 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_6058"
+      "Value": "Summon King Magni Bronzebeard"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_16728"
+      "Value": "Warrior Hero, adept at defensive combat and offensive magic.|n|cfff5962dCan Learn:|R Storm Bolt, Earth\u0027s Grace, Diligence Aura, Lightning Streak|n|n|cffffcc00Attacks land units.|R"
     },
     {
       "Id": 1684960117,

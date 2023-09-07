@@ -7,12 +7,12 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_13984"
+      "Value": "Z"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_4125"
+      "Value": "Adds 6 bonus damage to the attack of a Hero when carried. The Hero\u0027s attacks also become ranged when attacking air and poison enemy units for \u003CApo2,Dur1\u003E seconds."
     }
   ]
 }

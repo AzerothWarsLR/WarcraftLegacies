@@ -8,17 +8,17 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_17412"
+      "Value": "(moam)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_16190"
+      "Value": "W"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_17413"
+      "Value": "Stoneform"
     },
     {
       "Id": 1918988897,
@@ -32,65 +32,65 @@
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_16198"
+      "Value": "W"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_17414"
+      "Value": "Learn Stoneform - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_20712"
+      "Value": "The hero transform into stone, greatly reducing physical damage taken. |n|n|cffffcc00Level 1|r - Blocks 14 damage to a minimum of 5 damage.|n|cffffcc00Level 2|r - Blocks 20 damage to a minimum of 7 damage.|n|cffffcc00Level 3|r - Blocks 26 damage to a minimum of 9 damage.|n|cffffcc00Level 4|r - Blocks 32 damage to a minimum of 11 damage."
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_17416"
+      "Value": "Stoneform - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_17417"
+      "Value": "Stoneform - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_17418"
+      "Value": "Stoneform - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_17419"
+      "Value": "Stoneform - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_17420"
+      "Value": "The hero\u0027s Stoneform blocks 14 damage from all physical attacks to a minimum of 5 damage."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_17421"
+      "Value": "The hero\u0027s Stoneform blocks 20 damage from all physical attacks to a minimum of 7 damage."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_17422"
+      "Value": "The hero\u0027s Stoneform blocks 26 damage from all physical attacks to a minimum of 9 damage."
     },
     {
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_17423"
+      "Value": "The hero\u0027s Stoneform blocks 32 damage from all physical attacks to a minimum of 11 damage."
     },
     {
       "Id": 2020631137,

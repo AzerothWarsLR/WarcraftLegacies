@@ -17,7 +17,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19743"
+      "Value": " (Dalaran Tower)"
     },
     {
       "Id": 1818520949,
@@ -27,17 +27,17 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_1849"
+      "Value": "Z"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_2721"
+      "Value": "Improved Arcane Tower"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_2722"
+      "Value": "Upgrade to (|cffffcc00Z|r) Improved Arcane Tower"
     },
     {
       "Id": 1935832437,
@@ -47,7 +47,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_2696"
+      "Value": "Enhanced magic defense tower. |n|cfff5962dAbilities:|R Magic Sentry, Feedback, Reveal|n|n|cffffcc00Attacks land and air units.|r"
     }
   ]
 }

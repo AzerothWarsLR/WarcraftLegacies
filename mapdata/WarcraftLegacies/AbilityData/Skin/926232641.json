@@ -27,12 +27,12 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_11810"
+      "Value": "(Dalaran-Battlemage)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_12134"
+      "Value": "Q"
     },
     {
       "Id": 1952542049,
@@ -42,31 +42,31 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_11812"
+      "Value": "Phase Blade"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_11813"
+      "Value": "Phase Blade - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_11814"
+      "Value": "Phase Blade - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_11815"
+      "Value": "Adds \u003CA057,DataA1\u003E bonus damage to an attack against enemies, but drains mana with each attack made."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_11816"
+      "Value": "Adds \u003CA057,DataA2\u003E bonus damage to an attack against enemies, but drains mana with each attack made."
     },
     {
       "Id": 1918989665,
@@ -80,7 +80,7 @@
     {
       "Id": 1802007905,
       "Type": 3,
-      "Value": "TRIGSTR_12139"
+      "Value": "Q"
     }
   ]
 }

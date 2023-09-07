@@ -8,80 +8,80 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_20615"
+      "Value": "(nzoth)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_10259"
+      "Value": "W"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_16587"
+      "Value": "Disorienting Howl"
     },
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_10279"
+      "Value": "W"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_16603"
+      "Value": "Learn Disorienting Howl - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_19073"
+      "Value": "The hero unleashes a devastating roar that reduces attack damage of all nearby enemy units by 100%. |n|n|cffffcc00Level 1|r - 3(1) seconds duration. |n|cffffcc00Level 2|r - 5(3) seconds duration. |n|cffffcc00Level 3|r - 7(5) seconds duration. |n|cffffcc00Level 4|r - 9(7) seconds duration."
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_16606"
+      "Value": "Disorienting Howl - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_16609"
+      "Value": "Disorienting Howl - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_16614"
+      "Value": "Disorienting Howl - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_16617"
+      "Value": "Disorienting Howl - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_19081"
+      "Value": "The hero unleashes devastating roar that reduces attack damage of all nearby enemy units by 100%. 3 seconds duration. Lasts 1 second on heroes."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_19117"
+      "Value": "The hero unleashes devastating roar that reduces attack damage of all nearby enemy units by 100%. 5 seconds duration. Lasts 3 second on heroes."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_19118"
+      "Value": "The hero unleashes devastating roar that reduces attack damage of all nearby enemy units by 100%. 7 seconds duration. Lasts 5 second on heroes."
     },
     {
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_19120"
+      "Value": "The hero unleashes devastating roar that reduces attack damage of all nearby enemy units by 100%. 9 seconds duration. Lasts 7 second on heroes."
     },
     {
       "Id": 1952539489,

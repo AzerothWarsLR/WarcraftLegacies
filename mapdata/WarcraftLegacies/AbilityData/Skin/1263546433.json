@@ -18,12 +18,12 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_8340"
+      "Value": "(Green - Sylvanas. Light Blue - Shandris)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_9364"
+      "Value": "Q"
     },
     {
       "Id": 1952542049,
@@ -33,7 +33,7 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_20535"
+      "Value": "Aimed Shot"
     },
     {
       "Id": 1918988897,
@@ -43,65 +43,65 @@
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_9366"
+      "Value": "Q"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_8212"
+      "Value": "Learn Aimed Shot - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_8345"
+      "Value": "Fires an arrow that stuns the target and does significant damage.|n|n|cffffcc00Level 1|r - Deals 150 damage, stunning the target for 4 seconds. Lasts 1 second on heroes.|n|cffffcc00Level 2|r - Deals 225 damage, stunning the target for 5 seconds. Lasts 1.3 seconds on heroes.|n|cffffcc00Level 3|r - Deals 300 damage, stunning the target for 6 seconds. Lasts 1.6 second on heroes.|n|cffffcc00Level 4|r - Deals 375 damage, stunning the target for 7 seconds. Lasts 2 seconds on heroes."
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_8346"
+      "Value": "Aimed Shot - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_8347"
+      "Value": "Aimed Shot - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_8348"
+      "Value": "Aimed Shot - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_8349"
+      "Value": "Aimed Shot - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_8350"
+      "Value": "Fires an enchanted arrow at an enemy target, dealing 150 damage and stunning the target for 4 seconds. Lasts 1 second on heroes."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_8351"
+      "Value": "Fires an enchanted arrow at an enemy target, dealing 225 damage and stunning the target for 5 seconds. Lasts 1.3 second on heroes."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_8352"
+      "Value": "Fires an enchanted arrow at an enemy target, dealing 300 damage and stunning the target for 6 seconds. Lasts 1.6 second on heroes."
     },
     {
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_8353"
+      "Value": "Fires an enchanted arrow at an enemy target, dealing 375 damage and stunning the target for 7 seconds. Lasts 2 seconds on heroes."
     }
   ]
 }

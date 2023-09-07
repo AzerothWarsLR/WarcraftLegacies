@@ -12,7 +12,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19792"
+      "Value": "(Dalaran Other)"
     },
     {
       "Id": 1735156597,
@@ -26,7 +26,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_2957"
+      "Value": "Shadowfang Keep"
     },
     {
       "Id": 1919705973,
@@ -35,7 +35,7 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_2958"
+      "Value": "Pyrewood"
     },
     {
       "Id": 1935832437,
@@ -45,7 +45,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_2959"
+      "Value": "Shadowfang Keep"
     }
   ]
 }

@@ -13,24 +13,24 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_17785"
+      "Value": "(Draenei)"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_17924"
+      "Value": "Summon Earth Elemental"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_17925"
+      "Value": "Summon Earth Elemental"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_17926"
+      "Value": "Summons an earth elemental to attack the Elementalist enemies. |nLasts 60 seconds. |n|n|cffffcc00Attacks land and air units.|r"
     }
   ]
 }

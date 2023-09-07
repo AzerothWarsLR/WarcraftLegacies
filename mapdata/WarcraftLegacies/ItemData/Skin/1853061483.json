@@ -12,22 +12,22 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_16100"
+      "Value": "Trading Gold"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_16101"
+      "Value": "Trading Gold"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_16584"
+      "Value": "Trading Gold"
     },
     {
       "Id": 1936024681,
       "Type": 3,
-      "Value": "TRIGSTR_16610"
+      "Value": "Gold from trading offshore"
     }
   ]
 }

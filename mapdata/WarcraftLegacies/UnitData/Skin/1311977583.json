@@ -12,12 +12,12 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19934"
+      "Value": "(Goblin T3)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_4174"
+      "Value": "C"
     },
     {
       "Id": 1935832437,
@@ -27,7 +27,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_3100"
+      "Value": "Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Builder, Tinker|n|cfff5962dResearches:|R Full Scale Escalation"
     },
     {
       "Id": 1818520949,

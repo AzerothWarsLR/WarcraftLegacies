@@ -12,13 +12,13 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_8392"
+      "Value": "(Teal - Fel Orc Grunt)"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_8393"
+      "Value": "Attacks combust \u003CA0PB,DataA1\u003E(\u003CA0PB,DataC1\u003E for Heros) mana on hit, dealing damage equal to the amount combusted."
     }
   ]
 }

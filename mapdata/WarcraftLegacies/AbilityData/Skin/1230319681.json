@@ -13,29 +13,29 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_11270"
+      "Value": "(Warsong)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_16912"
+      "Value": "Q"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_17595"
+      "Value": "Siege Form"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_17953"
+      "Value": "Siege Form"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_17954"
+      "Value": "Immobilizes the Azerite Siege Engine to grant it a powerful ranged attack."
     },
     {
       "Id": 1918989665,
@@ -45,19 +45,19 @@
     {
       "Id": 1802007905,
       "Type": 3,
-      "Value": "TRIGSTR_17218"
+      "Value": "Q"
     },
     {
       "Level": 1,
       "Id": 829715809,
       "Type": 3,
-      "Value": "TRIGSTR_18044"
+      "Value": "Mobile Form"
     },
     {
       "Level": 1,
       "Id": 829781345,
       "Type": 3,
-      "Value": "TRIGSTR_18104"
+      "Value": "Allows the Azerite Siege Engine to move again."
     },
     {
       "Id": 2020631137,

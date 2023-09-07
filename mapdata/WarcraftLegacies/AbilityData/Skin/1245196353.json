@@ -17,7 +17,7 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_11074"
+      "Value": "(Green - Rommath)"
     },
     {
       "Id": 1734962273,
@@ -32,7 +32,7 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_11075"
+      "Value": "Chain Mana Burn"
     },
     {
       "Id": 1918988897,
@@ -46,17 +46,17 @@
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_10945"
+      "Value": "R"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_11077"
+      "Value": "Learn Chain Mana Burn - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_11078"
+      "Value": "Sends a stream of negative magic that reduces the mana of enemies. Requires units to have positive buffs. |n|n|cffffcc00Level 1|r - Destroys 200 mana and bounces 10 times. |n|cffffcc00Level 2|r - Destroys 300 mana and bounces 10 times. |n|cffffcc00Level 3|r - Destroys 400 mana and bounces 10 times."
     },
     {
       "Id": 1952543841,
@@ -67,37 +67,37 @@
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_11079"
+      "Value": "Cast Chain Mana Burn - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_11080"
+      "Value": "Cast Chain Mana Burn - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_11081"
+      "Value": "Cast Chain Mana Burn - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_11082"
+      "Value": "Rommath conjures a stream of arcane magic that bounces up to 10 times, draining 200 mana on targeted units."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_11083"
+      "Value": "Rommath conjures a stream of arcane magic that bounces up to 10 times, draining 300 mana on targeted units."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_11084"
+      "Value": "Rommath conjures a stream of arcane magic that bounces up to 10 times, draining 400 mana on targeted units."
     }
   ]
 }

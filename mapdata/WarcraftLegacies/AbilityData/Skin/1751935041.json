@@ -8,13 +8,13 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_1172"
+      "Value": "Increases the rate at which this unit gathers lumber."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_1799"
+      "Value": "Increases the rate at which this unit gathers lumber."
     }
   ]
 }

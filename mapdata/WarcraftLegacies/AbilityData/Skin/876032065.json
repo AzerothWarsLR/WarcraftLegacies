@@ -8,24 +8,24 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_8833"
+      "Value": "(Dragonmaw)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_11848"
+      "Value": "Q"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_11394"
+      "Value": "Breath of Fire"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_11395"
+      "Value": "Breathes a cone of fire at enemy units, dealing 60 damage, with a max of 400 damage dealt."
     }
   ]
 }

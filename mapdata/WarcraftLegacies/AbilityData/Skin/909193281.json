@@ -17,24 +17,24 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_12767"
+      "Value": "(Fandral)"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_12768"
+      "Value": "Toughened Hides"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_12769"
+      "Value": "Toughened Hides"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_12770"
+      "Value": "Tougher Hides reduces the damage dealt to the Druid by 10 damage."
     },
     {
       "Id": 1918989665,

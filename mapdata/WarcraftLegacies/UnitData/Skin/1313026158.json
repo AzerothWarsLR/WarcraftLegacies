@@ -17,7 +17,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_16681"
+      "Value": "(Warsong-Demi)"
     },
     {
       "Id": 1818520949,
@@ -27,7 +27,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_4123"
+      "Value": "Z"
     },
     {
       "Id": 2054188149,
@@ -52,7 +52,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_16796"
+      "Value": "Foreman Glibbs"
     },
     {
       "Id": 1668510581,
@@ -62,12 +62,12 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_18122"
+      "Value": "Revive Foreman Glibbs"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_8260"
+      "Value": "Ranged mechanical support caster. |nForeman Glibbs \u0027Long-nose\u0027 Dizzywig is the mastermind behind the Horde\u0027s industry.|n|n|cfff5962dAbilities:|R Well Oiled Aura, Tinker, Goblin Flare, Aura of Durability|n|n|cffffcc00Attacks land and air units.|R"
     },
     {
       "Id": 1831952757,

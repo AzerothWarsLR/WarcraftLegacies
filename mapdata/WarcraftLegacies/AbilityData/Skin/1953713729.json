@@ -12,7 +12,7 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_5600"
+      "Value": "(Grey - Rokhan)"
     },
     {
       "Id": 1818649953,
@@ -22,7 +22,7 @@
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_5823"
+      "Value": "R"
     },
     {
       "Id": 1952542049,
@@ -32,7 +32,7 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_5602"
+      "Value": "Voodoo Spirits"
     },
     {
       "Id": 1918988897,
@@ -42,41 +42,41 @@
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_5824"
+      "Value": "R"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_5604"
+      "Value": "Learn Voodoo Spirits - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_5605"
+      "Value": "Rokhan calls forth waves of voodoo spirits that explode dealing damage to to the Shadowhunter\u0027s enemies. Each exploding spirit deals \u003CANst,DataC1\u003E damage. |nLasts \u003CANst,Dur1\u003E seconds."
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_5606"
+      "Value": "Voodoo Spirits - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_5607"
+      "Value": "Voodoo Spirits - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_5608"
+      "Value": "Voodoo Spirits - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_5609"
+      "Value": "Rokhan calls forth waves of voodoo spirits that explode dealing damage to to the Shadowhunter\u0027s enemies. Each exploding spirit deals \u003CANst,DataC1\u003E damage. |nLasts \u003CANst,Dur1\u003E seconds."
     }
   ]
 }

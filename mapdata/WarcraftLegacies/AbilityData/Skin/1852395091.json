@@ -7,50 +7,50 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "TRIGSTR_4753"
+      "Value": "(Legion-Mal\u0027Ganis)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "TRIGSTR_5181"
+      "Value": "R"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "TRIGSTR_4755"
+      "Value": "Abyssal Strike"
     },
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "TRIGSTR_5182"
+      "Value": "R"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "TRIGSTR_4757"
+      "Value": "Learn Abyssal Strike - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "TRIGSTR_4758"
+      "Value": "Calls an Infernal down from the sky, dealing damage and stunning enemy land units in an area. The Infernal lasts 180 seconds.  |n|n|cffffcc00Level 1|r - 90 damage in a 250 AoE on impact. The impact stuns enemy units for 2 seconds. Brings forth an Abyssal.|n|cffffcc00Level 2|r -  180 damage in a 300 AoE on impact. The impact stuns enemy units for 2.5 seconds. Brings forth a Doomfire Abyssal.   |n|cffffcc00Level 3|r -  270 damage in a 350 AoE on impact. The impact stuns enemy units for 3 seconds. Brings forth a Gargantuan Abyssal."
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "TRIGSTR_4759"
+      "Value": "Abyssal Strike"
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_4760"
+      "Value": "Calls an Infernal down from the sky, dealing \u003CSNin,DataA2\u003E damage and stunning enemy land units for \u003CSNin,Dur2\u003E seconds in an area. The Infernal lasts \u003CSNin,DataB2\u003E seconds."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "TRIGSTR_4761"
+      "Value": "Calls an Infernal down from the sky, dealing \u003CSNin,DataA3\u003E damage and stunning enemy land units for \u003CSNin,Dur3\u003E seconds in an area. The Infernal lasts \u003CSNin,DataB3\u003E seconds."
     }
   ]
 }

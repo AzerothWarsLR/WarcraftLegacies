@@ -22,7 +22,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_6754"
+      "Value": "Z"
     },
     {
       "Id": 1633907573,
@@ -32,7 +32,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_19111"
+      "Value": "Control Point Defender"
     },
     {
       "Id": 1668510581,
@@ -42,7 +42,7 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_19389"
+      "Value": "Build Sun Tower"
     },
     {
       "Id": 1935832437,
@@ -52,12 +52,12 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_15702"
+      "Value": "Tower infused with the magic of the Sunwell.|n|cfff5962dCan learn:|R Magic Sentry|n|n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19184"
+      "Value": "(Quelthalas)"
     }
   ]
 }

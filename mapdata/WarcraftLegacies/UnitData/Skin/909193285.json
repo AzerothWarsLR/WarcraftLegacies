@@ -8,12 +8,12 @@
     {
       "Id": 1869770869,
       "Type": 3,
-      "Value": "TRIGSTR_16615"
+      "Value": "Lucille Waycrest"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_16616"
+      "Value": "Ruler of House Waycrest"
     },
     {
       "Id": 1970434165,
@@ -52,17 +52,17 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_3105"
+      "Value": "(Kultiras)"
     },
     {
       "Id": 1953980789,
       "Type": 3,
-      "Value": "TRIGSTR_16619"
+      "Value": "Revive Lucille"
     },
     {
       "Id": 1919972469,
       "Type": 3,
-      "Value": "TRIGSTR_16620"
+      "Value": "Revive Lucille"
     },
     {
       "Id": 1769173877,
@@ -77,12 +77,12 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_16621"
+      "Value": "Summon Lucille"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_4784"
+      "Value": "E"
     },
     {
       "Id": 2020631157,
@@ -100,7 +100,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_17382"
+      "Value": "Cunning Hero, exceptional at assasination and disruption.|n|cfff5962dAbilities:|r Wind Walk|n|cfff5962dCan learn:|R Maiming Strike, Critical Strike, Vampiric Aura, Shadow Aura|n|n|cffffcc00Attacks land units.|R"
     }
   ]
 }

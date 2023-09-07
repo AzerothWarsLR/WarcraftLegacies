@@ -8,7 +8,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_1472"
+      "Value": "(Legion)"
     },
     {
       "Id": 1818520949,
@@ -18,7 +18,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_2197"
+      "Value": "Q"
     },
     {
       "Id": 2054188149,
@@ -43,12 +43,12 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_2399"
+      "Value": "Build Infernal Juggernaut"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_2888"
+      "Value": "Hellforged engine of doom.|n|cfff5962dCan learn:|R Inferno|n|n|cff99b4d1Can only build 6.|r|n|cffffcc00Attacks land units.|r"
     }
   ]
 }

@@ -13,17 +13,17 @@
     {
       "Id": 1885959270,
       "Type": 3,
-      "Value": "TRIGSTR_13557"
+      "Value": "Web"
     },
     {
       "Id": 1700951398,
       "Type": 3,
-      "Value": "TRIGSTR_13558"
+      "Value": "This unit is webbed; it is stuck to the ground and cannot move."
     },
     {
       "Id": 1718840934,
       "Type": 3,
-      "Value": "TRIGSTR_13559"
+      "Value": " (Ground)(Real)"
     },
     {
       "Id": 1952543846,

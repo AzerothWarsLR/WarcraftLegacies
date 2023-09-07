@@ -12,7 +12,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "TRIGSTR_19828"
+      "Value": "(Lordaeron Magic)"
     },
     {
       "Id": 1818520949,
@@ -22,7 +22,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "TRIGSTR_1285"
+      "Value": "S"
     },
     {
       "Id": 1668510581,
@@ -37,7 +37,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "TRIGSTR_17994"
+      "Value": "Towering college of Magic.|n|cfff5962dTrains:|R Mage, Pastor, Silver Hand Squire|n|cfff5962dResearches:|R Pastor Adept Training, Mage Adept Training, Seal of Righteousness, Magic Sentry"
     },
     {
       "Id": 1868786037,
@@ -47,12 +47,12 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "TRIGSTR_16477"
+      "Value": "Build Arcane Study"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "TRIGSTR_16482"
+      "Value": "Arcane Study"
     }
   ]
 }
