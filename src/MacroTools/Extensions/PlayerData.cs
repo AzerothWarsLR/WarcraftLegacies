@@ -195,6 +195,7 @@ namespace MacroTools.Extensions
         {
           dialogue.Play(_player);
           TriggerSleepAction(dialogue.Length);
+          TriggerSleepAction(5f);
         }
         GetTriggeringTrigger().Destroy();
       }).Execute();
