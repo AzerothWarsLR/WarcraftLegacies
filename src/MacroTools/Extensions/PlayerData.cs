@@ -30,13 +30,13 @@ namespace MacroTools.Extensions
     private readonly Dictionary<int, int> _objectLevels = new();
 
     private readonly Dictionary<int, int> _objectLimits = new();
-    private float _baseIncome; //Gold per minute
-    private float _bonusIncome;
+    private float _goldPerMinute;
+    private float _bonusGoldPerMinute;
 
     private Team? _team;
     private Faction? _faction;
 
-    private float _partialGold; //Just used for income calculations
+    private float _partialGold;
     private float _partialLumber;
 
     private PlayerData(player player)
@@ -124,10 +124,10 @@ namespace MacroTools.Extensions
     /// </summary>
     public float BonusIncome
     {
-      get => _bonusIncome;
+      get => _bonusGoldPerMinute;
       set
       {
-        _bonusIncome = value;
+        _bonusGoldPerMinute = value;
         IncomeChanged?.Invoke(this, this);
       }
     }
@@ -137,14 +137,14 @@ namespace MacroTools.Extensions
     /// </summary>
     public float BaseIncome
     {
-      get => _baseIncome;
+      get => _goldPerMinute;
       set
       {
         if (value < 0)
           throw new ArgumentOutOfRangeException(
             $"Tried to assign a negative {nameof(BaseIncome)} value to {GetPlayerName(Player)}.");
 
-        _baseIncome = value;
+        _goldPerMinute = value;
         IncomeChanged?.Invoke(this, this);
       }
     }
