@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using MacroTools.ControlPointSystem;
+using MacroTools.DialogueSystem;
 using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using WCSharp.Shared.Data;
@@ -13,6 +14,12 @@ namespace MacroTools.Extensions
   /// </summary>
   public static class PlayerExtensions
   {
+    /// <summary>
+    /// Queues the <see cref="IHasPlayableDialogue"/> for this player, playing it the next time there is nothing else playing.
+    /// </summary>
+    public static void QueueDialogue(this player whichPlayer, IHasPlayableDialogue dialogue) =>
+      PlayerData.ByHandle(whichPlayer).QueueDialogue(dialogue);
+
     /// <summary>
     /// Set the number of extra <see cref="ControlPoint.ControlLevel"/>s the player gets each turn.
     /// </summary>
