@@ -19,9 +19,9 @@ namespace MacroTools.DialogueSystem
     
     internal List<Objective> Objectives { get; }
     
-    private readonly IEnumerable<Faction>? _audience;
+    private readonly IEnumerable<Faction> _audience;
     private readonly IHasPlayableDialogue _playableDialogue;
-    private bool _completed;
+    private bool _inactive;
 
     private QuestProgress Progress
     {
@@ -30,18 +30,31 @@ namespace MacroTools.DialogueSystem
         switch (value)
         {
           case QuestProgress.Complete:
-            _playableDialogue.Play(_audience?.Select(x => x.Player).ToList());
-            _completed = true;
-            Completed?.Invoke(this, this);
+            Complete();
             break;
           case QuestProgress.Failed:
-            _completed = true;
-            Completed?.Invoke(this, this);
+            Fail();
             break;
           default:
             throw new ArgumentOutOfRangeException(nameof(value), value, null);
         }
       }
+    }
+
+    private void Complete()
+    {
+      foreach (var player in _audience.Select(x => x.Player))
+        if (player != null)
+          _playableDialogue.Play(player);
+
+      _inactive = true;
+      Completed?.Invoke(this, this);
+    }
+    
+    private void Fail()
+    {
+      _inactive = true;
+      Completed?.Invoke(this, this);
     }
 
     /// <summary>
@@ -50,7 +63,8 @@ namespace MacroTools.DialogueSystem
     /// <param name="playableDialogue">The dialogue that will be played when the conditions are met.</param>
     /// <param name="objectives">When these are completed, the dialogue plays.</param>
     /// <param name="audience">A list of factions that can hear the dialogue being played.</param>
-    public TriggeredDialogue(IHasPlayableDialogue playableDialogue, Faction?[] audience, IEnumerable<Objective> objectives)
+    public TriggeredDialogue(IHasPlayableDialogue playableDialogue, IEnumerable<Faction> audience, 
+      IEnumerable<Objective> objectives)
     {
       _playableDialogue = playableDialogue;
       _audience = audience;
@@ -59,7 +73,7 @@ namespace MacroTools.DialogueSystem
     
     internal void OnObjectiveCompleted(object? sender, Objective completedObjective)
     {
-      if (_completed)
+      if (_inactive)
         return;
 
       var allComplete = true;

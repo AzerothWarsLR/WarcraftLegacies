@@ -30,12 +30,12 @@ namespace MacroTools.DialogueSystem
       Sound = new SoundWrapper(soundFile, soundEax: SoundEax.HeroAcks);
     }
 
-    /// <summary>Plays the <see cref="Dialogue"/> for the player.</summary>
+    /// <inheritdoc />
     public void Play(player? whichPlayer)
     {
       if (whichPlayer != null)
       {
-        Sound.Play(conditionPlayer => whichPlayer == conditionPlayer, true);
+        Sound.Play(whichPlayer, true);
         DisplayTextToPlayer(whichPlayer, 0, 0, $"|cffffcc00{_speaker}:|r {_caption}");
       }
       else

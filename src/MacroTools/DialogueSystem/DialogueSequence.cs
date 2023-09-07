@@ -9,7 +9,7 @@ namespace MacroTools.DialogueSystem
   public sealed class DialogueSequence : IHasPlayableDialogue
   {
     private readonly IEnumerable<Dialogue> _dialogues;
-
+    
     /// <inheritdoc />
     public float Length { get; }
     
@@ -20,7 +20,7 @@ namespace MacroTools.DialogueSystem
       Length = _dialogues.Sum(x => x.Length);
     }
 
-    /// <summary>Plays the entire <see cref="Dialogue"/> sequence in order.</summary>
+    /// <inheritdoc />
     public void Play(player whichPlayer)
     {
       CreateTrigger().AddAction(() =>

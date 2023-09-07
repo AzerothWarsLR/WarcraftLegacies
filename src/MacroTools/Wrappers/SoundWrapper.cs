@@ -1,12 +1,11 @@
 ﻿using System;
+using System.Collections.Generic;
 using static War3Api.Common;
 
 namespace MacroTools.Wrappers
 {
   public sealed class SoundWrapper
   {
-    public delegate bool PlayCondition(player whichPlayer);
-
     /// <summary>
     /// The internal Warcraft 3 sound that this wrapper wraps.
     /// </summary>
@@ -45,28 +44,24 @@ namespace MacroTools.Wrappers
     }
 
     /// <summary>
-    /// Plays the sound for players meeting a condition.
+    /// Plays the sound for the specified player.
     /// </summary>
-    /// <param name="playCondition">The sound only plays if <see cref="GetLocalPlayer"/> meets this condition.</param>
+    /// <param name="whichPlayer">Who to play the sound for.</param>
     /// <param name="disposeAfter">Whether or not to dispose of the sound after it's finished playing.</param>
     /// <exception cref="ObjectDisposedException">Thrown if the sound is already disposed.</exception>
-    public void Play(PlayCondition playCondition, bool disposeAfter)
+    public void Play(player whichPlayer, bool disposeAfter)
     {
       if (_disposed)
-      {
         throw new ObjectDisposedException(nameof(SoundWrapper));
-      }
 
-      if (playCondition(GetLocalPlayer()))
-      {
+      if (whichPlayer == GetLocalPlayer()) 
         StartSound(Sound);
-      }
 
-      if (disposeAfter)
-      {
-        KillSoundWhenDone(Sound);
-        _disposed = true;
-      }
+      if (!disposeAfter) 
+        return;
+      
+      KillSoundWhenDone(Sound);
+      _disposed = true;
     }
   }
 }
