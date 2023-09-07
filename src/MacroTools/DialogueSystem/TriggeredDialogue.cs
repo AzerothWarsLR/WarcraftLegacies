@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem;
 using MacroTools.QuestSystem;
@@ -43,9 +44,8 @@ namespace MacroTools.DialogueSystem
 
     private void Complete()
     {
-      foreach (var player in _audience.Select(x => x.Player))
-        if (player != null)
-          _playableDialogue.Play(player);
+      foreach (var player in _audience.Select(x => x.Player)) 
+        player?.QueueDialogue(_playableDialogue);
 
       _inactive = true;
       Completed?.Invoke(this, this);
