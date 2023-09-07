@@ -59,14 +59,14 @@ namespace MacroTools.ControlPointSystem
     public int HostileStartingCurrentHitPoints { get; init; }
 
     /// <summary>
-    /// This ability can be used to give a <see cref="ControlPoint"/> hit point regeneration
+    /// An ability that grants <see cref="ControlPoint"/>s additional hit point regeneration.
     /// </summary>
     public int RegenerationAbility { get; init; }
 
     /// <summary>
-    /// This ability can be used to give a <see cref="ControlPoint"/> hit point regeneration
+    /// An ability that grants <see cref="ControlPoint"/>s resistance against Piercing damage.
     /// </summary>
-    public int PiercingdamageAbility { get; init; }
+    public int PiercingResistanceAbility { get; init; }
 
     /// <summary>
     /// Determines the settings for the <see cref="ControlPoint.Defender"/> units that defend <see cref="ControlPoint"/>s.
@@ -157,10 +157,9 @@ namespace MacroTools.ControlPointSystem
       RegisterControlLevelChangeTrigger(controlPoint);
       RegisterControlLevelGrowthOverTime(controlPoint);
       ConfigureControlPointStats(controlPoint, true);
-      controlPoint.Unit.AddAbility(PiercingdamageAbility);
+      controlPoint.Unit.AddAbility(PiercingResistanceAbility);
       if (controlPoint.Unit.OwningPlayer() != Player(PLAYER_NEUTRAL_AGGRESSIVE))
         controlPoint.Unit.AddAbility(RegenerationAbility);
-
     }
 
     private static void RegisterIncome(ControlPoint controlPoint)
@@ -208,10 +207,14 @@ namespace MacroTools.ControlPointSystem
             var newOwner = PlayerData.ByHandle(GetTriggerUnit().OwningPlayer());
             newOwner.AddControlPoint(controlPoint);
             newOwner.BaseIncome += controlPoint.Value;
-            controlPoint.Unit
-              .AddAbility(RegenerationAbility)
-              .AddAbility(PiercingdamageAbility)
-              .SetLifePercent(100);
+
+            if (GetUnitAbilityLevel(controlPoint.Unit, RegenerationAbility) == 0)
+              controlPoint.Unit.AddAbility(RegenerationAbility);
+            
+            if (GetUnitAbilityLevel(controlPoint.Unit, PiercingResistanceAbility) == 0)
+              controlPoint.Unit.AddAbility(PiercingResistanceAbility);
+            
+            controlPoint.Unit.SetLifePercent(100);
             controlPoint.ControlLevel = 0;
             controlPoint.SignalOwnershipChange(new ControlPointOwnerChangeEventArgs(controlPoint, GetChangingUnitPrevOwner()));
           }
