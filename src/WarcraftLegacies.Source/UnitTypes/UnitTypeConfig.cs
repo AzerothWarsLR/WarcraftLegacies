@@ -9,6 +9,7 @@ namespace WarcraftLegacies.Source.UnitTypes
       SubSetupA();
       SubSetupB();
       SubSetupPortals();
+      SubSetupTrader();
     }
 
     private static void SubSetupA()
@@ -111,31 +112,34 @@ namespace WarcraftLegacies.Source.UnitTypes
     {
       UnitType.Register(new UnitType(Constants.UNIT_N03H_DEATH_GATE_WAYGATE)
       {
-        Category = UnitCategory.Portal,
         NeverDelete = true
       });
       
       UnitType.Register(new UnitType(Constants.UNIT_N036_DARK_PORTAL_WAYGATE)
       {
-        Category = UnitCategory.Portal,
-        NeverDelete = true
-      });
-      
-      UnitType.Register(new UnitType(Constants.UNIT_N03J_BLACK_PORTAL_AURA_CONTROL_NEXUS)
-      {
-        Category = UnitCategory.Portal,
         NeverDelete = true
       });
       
       UnitType.Register(new UnitType(Constants.UNIT_N05J_DARK_PORTAL_AURA_CONTROL_NEXUS)
       {
-        Category = UnitCategory.Portal,
         NeverDelete = true
       });
-        
-      UnitType.Register(new UnitType(Constants.ABILITY_A0IR_UNHOLY_AURA_CONTROL_NEXUS_DARK_PORTAL)
+      
+      UnitType.Register(new UnitType(Constants.UNIT_N03J_BLACK_PORTAL_AURA_CONTROL_NEXUS)
       {
-        Category = UnitCategory.Portal,
+        NeverDelete = true
+      });
+    }
+    
+    private static void SubSetupTrader()
+    {
+      UnitType.Register(new UnitType(Constants.UNIT_H014_TRADING_POST_SEA)
+      {
+        NeverDelete = true
+      });
+      
+      UnitType.Register(new UnitType(Constants.UNIT_H05W_TRADE_LUMBER_FOR_GOLD)
+      {
         NeverDelete = true
       });
     }

@@ -11,9 +11,5 @@ namespace MacroTools
     /// The unit can train boats.
     /// </summary>
     Shipyard,
-    /// <summary>
-    /// This unit is a portal
-    /// </summary>
-    Portal
   }
 }
