@@ -160,6 +160,42 @@ namespace WarcraftLegacies.Source.Dialogue
           new ObjectiveCompleteQuest(IllidariSetup.Illidari.GetQuestByType(typeof(QuestBlackTemple)))
         }
       ));
+      
+      TriggeredDialogueManager.Add(
+        new TriggeredDialogue(new DialogueSequence(new MacroTools.DialogueSystem.Dialogue(
+              @"Sound\Dialogue\NightElfExpCamp\NightElf03x\S03LadyVashj31",
+              "You've come far enough, little warden. Your vaunted night elf justice has no jurisdiction here.",
+              "Lady Vashj"),
+            new MacroTools.DialogueSystem.Dialogue(
+              @"Sound\Dialogue\NightElfExpCamp\NightElf03x\S03Maiev32",
+              "What would you know of us or our justice, naga witch?",
+              "Maiev Shadowsong")),
+          new[]
+          {
+            IllidariSetup.Illidari,
+            SentinelsSetup.Sentinels
+          }, new[]
+          {
+            new ObjectiveLegendMeetsLegend(legendSetup.Naga.Vashj, legendSetup.Sentinels.Maiev)
+          }));
+      
+      TriggeredDialogueManager.Add(
+        new TriggeredDialogue(new DialogueSequence(new MacroTools.DialogueSystem.Dialogue(
+              @"Sound\Dialogue\NightElfExpCamp\NightElf03x\S03Illidan45",
+              "So, Warden Shadowsong, you've made it at last. I knew you would.",
+              "Illidan Stormrage"),
+            new MacroTools.DialogueSystem.Dialogue(
+              @"Sound\Dialogue\NightElfExpCamp\NightElf03x\S03Maiev36",
+              "You have much to pay for, Illidan. I'm taking you back to your cell.",
+              "Maiev Shadowsong")),
+          new[]
+          {
+            IllidariSetup.Illidari,
+            SentinelsSetup.Sentinels
+          }, new[]
+          {
+            new ObjectiveLegendMeetsLegend(legendSetup.Naga.Illidan, legendSetup.Sentinels.Maiev)
+          }));
     }
   }
 }
