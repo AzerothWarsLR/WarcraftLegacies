@@ -29,8 +29,11 @@ namespace MacroTools.Commands
     /// <inheritdoc />
     public override string Execute(player commandUser, params string[] parameters)
     {
-      var limitedUnits = CreateGroup().EnumUnitsOfPlayer(commandUser).EmptyToList().Where(
-        u => commandUser.GetObjectLimit(u.GetTypeId()) is > 0 and < Faction.UNLIMITED && u.IsAlive() == true);
+      var limitedUnits = CreateGroup()
+        .EnumUnitsOfPlayer(commandUser)
+        .EmptyToList()
+        .Where(u => commandUser.GetObjectLimit(u.GetTypeId()) is > 0 and < Faction.UNLIMITED && u.IsAlive());
+      
       foreach (var unit in limitedUnits) 
         commandUser.PingLocation(unit.GetPosition(), 5f);
 

@@ -10,7 +10,6 @@ namespace WarcraftLegacies.Source.Setup
     {
       InviteCommand.Setup();
       JoinCommand.Setup();
-      LimitedCommand.Setup();
       ObserverCommand.Setup();
       UnallyCommand.Setup();
       UninviteCommand.Setup();
