@@ -14,11 +14,11 @@ namespace WarcraftLegacies.Source.Quests.Warsong
 {
   public sealed class QuestLumberCamp : QuestData
   {
-    private readonly List<unit> _rescueUnits = new();
+    private readonly List<unit> _rescueUnits;
 
     public QuestLumberCamp(Rectangle rescueRect, LegendaryHero grom) : base("Landfall",
       "The Barrens are an hostile environement devoid of ressources to start a new civilisation. The Warsong should deeper into the woods to prepare a settlement for the new horde",
-      "ReplaceableTextures\\CommandButtons\\BTNBundleOfLumber.blp")
+      @"ReplaceableTextures\CommandButtons\BTNBundleOfLumber.blp")
     {
       AddObjective(new ObjectiveLegendReachRect(grom, Regions.LumberCampUnlock,
         "Eastern Ashenvale"));
@@ -43,14 +43,17 @@ namespace WarcraftLegacies.Source.Quests.Warsong
     /// <inheritdoc />
     protected override void OnFail(Faction completingFaction)
     {
-      foreach (var unit in _rescueUnits) unit.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      foreach (var unit in _rescueUnits) 
+        unit.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
     /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)
     {
-      foreach (var unit in _rescueUnits) unit.Rescue(completingFaction.Player);
-      completingFaction.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_LUMBER, 1500);
+      foreach (var unit in _rescueUnits) 
+        unit.Rescue(completingFaction.Player);
+      
+      completingFaction.Player?.AdjustPlayerState(PLAYER_STATE_RESOURCE_LUMBER, 1500);
     }
   }
 }
