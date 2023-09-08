@@ -185,7 +185,7 @@ namespace WarcraftLegacies.Source.Dialogue
               "So, Warden Shadowsong, you've made it at last. I knew you would.",
               "Illidan Stormrage"),
             new MacroTools.DialogueSystem.Dialogue(
-              @"Sound\Dialogue\NightElfExpCamp\NightElf03x\S03Maiev36",
+              @"Sound\Dialogue\NightElfExpCamp\NightElf03x\S03Maiev46",
               "You have much to pay for, Illidan. I'm taking you back to your cell.",
               "Maiev Shadowsong")),
           new[]
