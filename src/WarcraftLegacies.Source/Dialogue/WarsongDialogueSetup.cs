@@ -3,6 +3,7 @@ using MacroTools.DialogueSystem;
 using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
+using MacroTools.QuestSystem;
 using WarcraftLegacies.Source.Setup;
 using WarcraftLegacies.Source.Setup.FactionSetup;
 
@@ -50,6 +51,22 @@ namespace WarcraftLegacies.Source.Dialogue
             new ObjectiveControlLegend(legendSetup.Warsong.ChenStormstout, false)
             {
               EligibleFactions = new List<Faction>{ WarsongSetup.WarsongClan }
+            }
+          }));
+      
+      TriggeredDialogueManager.Add(
+        new TriggeredDialogue(new DialogueSequence(new MacroTools.DialogueSystem.Dialogue(
+              @"Sound\Dialogue\OrcCampaign\Orc04\O04Grom01",
+              "Damn Thrall for sending us away! He chooses to use his greatest warriors for manual labor? He'll be lost without me.",
+              "Grom Hellscream"))
+          , new[]
+          {
+            WarsongSetup.WarsongClan
+          }, new[]
+          {
+            new ObjectiveControlLegend(legendSetup.Warsong.GromHellscream, false)
+            {
+              EligibleFactions = new List<Faction>{WarsongSetup.WarsongClan}
             }
           }));
     }
