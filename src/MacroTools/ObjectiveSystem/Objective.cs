@@ -11,6 +11,7 @@ using Environment = MacroTools.Libraries.Environment;
 
 namespace MacroTools.ObjectiveSystem
 {
+  /// <summary>A trackable task that can be completed or failed.</summary>
   public abstract class Objective
   {
     private string _description = "";
@@ -20,14 +21,13 @@ namespace MacroTools.ObjectiveSystem
 
     private QuestProgress _progress = QuestProgress.Incomplete;
 
-    /// <summary>
-    ///   An arbitrary objective that can be completed or failed.
-    /// </summary>
+    /// <summary>Initializes a new instance of the <see cref="Objective"/> class.</summary>
     protected Objective()
     {
-      OverheadEffectPath = "Abilities\\Spells\\Other\\TalkToMe\\TalkToMe";
+      OverheadEffectPath = @"Abilities\Spells\Other\TalkToMe\TalkToMe";
     }
 
+    /// <summary>The <see cref="Faction"/>s that can contribute towards progressing this objective.</summary>
     public List<Faction> EligibleFactions { get; init; } = new();
 
     /// <summary>
@@ -35,32 +35,26 @@ namespace MacroTools.ObjectiveSystem
     /// </summary>
     public Point? Position { get; protected init; }
 
-    /// <summary>
-    ///   Whether or not the <see cref="Objective" /> should display a position.
-    /// </summary>
+    /// <summary>Whether or not the <see cref="Objective" /> should display a position.</summary>
     protected bool DisplaysPosition { get; init; }
 
-    /// <summary>
-    ///   Overhead effects get rendered over the target widget.
-    /// </summary>
+    /// <summary>Overhead effects get rendered over the target widget.</summary>
     protected widget? TargetWidget { get; init; }
 
-    /// <summary>
-    ///   The file path for the overhead effect to use for this item.
-    /// </summary>
+    /// <summary>The file path for the overhead effect to use for this item.</summary>
     private string? OverheadEffectPath { get; }
 
+    /// <summary>The file path for the effect that represents this <see cref="Objective"/> on the minimap.</summary>
     protected string? MapEffectPath { get; init; }
 
-    internal questitem QuestItem { get; set; }
+    internal questitem? QuestItem { get; set; }
 
-    /// <summary>
-    ///  Whether or not this can be seen as a bullet point in the quest log.
-    /// </summary>
+    /// <summary>Whether or not this can be seen as a bullet point in the quest log.</summary>
     public bool ShowsInQuestLog { get; protected init; } = true;
 
     internal bool ProgressLocked { get; set; }
 
+    /// <summary>The progress that has been made towards completion or failure.</summary>
     public QuestProgress Progress
     {
       get => _progress;
@@ -91,9 +85,7 @@ namespace MacroTools.ObjectiveSystem
       }
     }
 
-    /// <summary>
-    /// Describes what must be done in order to complete the <see cref="Objective"/>
-    /// </summary>
+    /// <summary>Describes what must be done in order to complete the <see cref="Objective"/>.</summary>
     public string Description
     {
       get => _description;
@@ -105,11 +97,14 @@ namespace MacroTools.ObjectiveSystem
     }
 
     /// <summary>
-    ///   The texture path for the icon that appears showing where this <see cref="Objective" />
-    ///   can be completed.
+    /// The texture path for the icon that appears showing where this <see cref="Objective" />can be completed.
     /// </summary>
     protected string PingPath { get; init; } = "MinimapQuestObjectivePrimary";
 
+    /// <summary>
+    /// Returns true if the specified player is on the same team as any of the players that are eligible to contribute
+    /// to this objective.
+    /// </summary>
     protected bool? IsPlayerOnSameTeamAsAnyEligibleFaction(player? whichPlayer)
     {
       if (whichPlayer == null)
@@ -129,75 +124,63 @@ namespace MacroTools.ObjectiveSystem
       return false;
     }
 
-    internal void AddEligibleFaction(Faction faction)
-    {
-      EligibleFactions.Add(faction);
-    }
+    internal void AddEligibleFaction(Faction faction) => EligibleFactions.Add(faction);
 
-    /// <summary>
-    /// Fires after the <see cref="Progress"/> of this quest has changed
-    /// </summary>
+    /// <summary>Fires after the <see cref="Progress"/> of this objective has changed.</summary>
     public event EventHandler<Objective>? ProgressChanged;
 
     /// <summary>
-    ///   Runs when this <see cref="Objective"/> is registered to a <see cref="QuestData"/> or the <see cref="TriggeredDialogueManager"/>.
+    /// Runs when this <see cref="Objective"/> is registered to a <see cref="QuestData"/>
+    /// or the <see cref="TriggeredDialogueManager"/>.
     /// </summary>
     internal virtual void OnAdd(Faction faction)
     {
     }
 
-    /// <summary>
-    /// Shows the local aspects of this QuestItem, namely the minimap icon.
-    /// </summary>
-    /// <param name="parentQuestProgress"></param>
+    /// <summary>Shows the local aspects of this QuestItem, namely the minimap icon.</summary>
     internal void ShowLocal(QuestProgress parentQuestProgress)
     {
-      if (Progress == QuestProgress.Incomplete &&
-          parentQuestProgress == QuestProgress.Incomplete)
-      {
-        if (_minimapIcon == null && DisplaysPosition)
-          _minimapIcon = CreateMinimapIcon(Position.X, Position.Y, 255, 255, 0, SkinManagerGetLocalPath(PingPath),
-            FOG_OF_WAR_MASKED);
-        else if (_minimapIcon != null)
-          SetMinimapIconVisible(_minimapIcon, true);
-      }
+      if (Progress != QuestProgress.Incomplete ||
+          parentQuestProgress != QuestProgress.Incomplete) 
+        return;
+      
+      if (_minimapIcon == null && DisplaysPosition)
+        _minimapIcon = CreateMinimapIcon(Position.X, Position.Y, 255, 255, 0, SkinManagerGetLocalPath(PingPath),
+          FOG_OF_WAR_MASKED);
+      else if (_minimapIcon != null)
+        SetMinimapIconVisible(_minimapIcon, true);
     }
 
-    /// <summary>
-    ///   Shows the synchronous aspects of this QuestItem, namely the visible target circle.
-    /// </summary>
+    /// <summary>Shows the synchronous aspects of this QuestItem, namely the visible target circle.</summary>
     internal void ShowSync(QuestProgress parentQuestProgress)
     {
-      if (Progress == QuestProgress.Incomplete && parentQuestProgress == QuestProgress.Incomplete)
+      if (Progress != QuestProgress.Incomplete || parentQuestProgress != QuestProgress.Incomplete) 
+        return;
+      
+      string effectPath;
+      if (MapEffectPath != null && _mapEffect == null)
       {
-        string effectPath;
-        if (MapEffectPath != null && _mapEffect == null)
-        {
-          effectPath = EligibleFactions.Contains(GetLocalPlayer()) is true ? MapEffectPath : "";
-          _mapEffect = AddSpecialEffect(effectPath, Position.X, Position.Y);
-          BlzSetSpecialEffectColorByPlayer(_mapEffect, EligibleFactions.First().Player);
-          BlzSetSpecialEffectHeight(_mapEffect, 100 + Environment.GetPositionZ(Position));
-        }
-
-        if (OverheadEffectPath != null && _overheadEffect == null && TargetWidget != null)
-        {
-          effectPath = EligibleFactions.Contains(GetLocalPlayer()) is true ? OverheadEffectPath : "";
-          _overheadEffect = AddSpecialEffectTarget(effectPath, TargetWidget, "overhead");
-        }
+        effectPath = EligibleFactions.Contains(GetLocalPlayer()) is true ? MapEffectPath : "";
+        _mapEffect = AddSpecialEffect(effectPath, Position.X, Position.Y);
+        BlzSetSpecialEffectColorByPlayer(_mapEffect, EligibleFactions.First().Player);
+        BlzSetSpecialEffectHeight(_mapEffect, 100 + Environment.GetPositionZ(Position));
       }
+
+      if (OverheadEffectPath == null || _overheadEffect != null || TargetWidget == null) 
+        return;
+      
+      effectPath = EligibleFactions.Contains(GetLocalPlayer()) is true ? OverheadEffectPath : "";
+      _overheadEffect = AddSpecialEffectTarget(effectPath, TargetWidget, "overhead");
     }
 
-    /// <summary>
-    ///   Hides the synchronous aspects of this QuestItem, namely the minimap icon.
-    /// </summary>
+    /// <summary>Hides the synchronous aspects of this QuestItem, namely the minimap icon.</summary>
     internal void HideLocal()
     {
-      if (_minimapIcon != null) SetMinimapIconVisible(_minimapIcon, false);
+      if (_minimapIcon != null) 
+        SetMinimapIconVisible(_minimapIcon, false);
     }
 
-    /// <summary>
-    ///   Hides the synchronous aspects of this QuestItem, namely the map effect.
-    /// </summary>
+    /// <summary>Hides the synchronous aspects of this QuestItem, namely the map effect.</summary>
     internal void HideSync()
     {
       if (_mapEffect != null)
