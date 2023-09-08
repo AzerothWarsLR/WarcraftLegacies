@@ -3,6 +3,7 @@ using MacroTools.DialogueSystem;
 using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
+using MacroTools.QuestSystem;
 using WarcraftLegacies.Source.Setup;
 using WarcraftLegacies.Source.Setup.FactionSetup;
 
@@ -57,14 +58,6 @@ namespace WarcraftLegacies.Source.Dialogue
         new TriggeredDialogue(new DialogueSequence(new MacroTools.DialogueSystem.Dialogue(
               @"Sound\Dialogue\OrcCampaign\Orc04\O04Grom01",
               "Damn Thrall for sending us away! He chooses to use his greatest warriors for manual labor? He'll be lost without me.",
-              "Grom Hellscream"),
-            new MacroTools.DialogueSystem.Dialogue(
-              @"Sound\Dialogue\OrcCampaign\Orc04\O04WarsongOrc02",
-              "Chieftain, there's something strange about these woods. It's too... quiet. Almost like we're being watched.",
-              "Grunt"),
-            new MacroTools.DialogueSystem.Dialogue(
-              @"Sound\Dialogue\OrcCampaign\Orc04\O04Grom03",
-              "Are you all afraid of spirits now? There is nothing here but ancient trees and shadow.",
               "Grom Hellscream"))
           , new[]
           {
@@ -72,6 +65,9 @@ namespace WarcraftLegacies.Source.Dialogue
           }, new[]
           {
             new ObjectiveControlLegend(legendSetup.Warsong.GromHellscream, false)
+            {
+              EligibleFactions = new List<Faction>{WarsongSetup.WarsongClan}
+            }
           }));
     }
   }
