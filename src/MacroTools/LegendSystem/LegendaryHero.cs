@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using MacroTools.ArtifactSystem;
 using MacroTools.Extensions;
@@ -91,12 +90,12 @@ namespace MacroTools.LegendSystem
     /// <summary>
     /// The special effect that appears when this <see cref="Legend"/> dies permanently.
     /// </summary>
-    public string DeathSfx { private get; init; } = "Abilities\\Spells\\Demon\\DarkPortal\\DarkPortalTarget.mdl";
+    public string DeathSfx { private get; init; } = @"Abilities\Spells\Demon\DarkPortal\DarkPortalTarget.mdl";
 
     /// <summary>
     /// The <see cref="LegendaryHero"/> will spawn with <see cref="Artifact"/>s with these IDs the first time they are created.
     /// </summary>
-    public IEnumerable<int> StartingArtifactItemTypeIds { get; init; } = Array.Empty<int>();
+    public int[] StartingArtifactItemTypeIds { get; init; } = Array.Empty<int>();
     
     /// <summary>
     /// Initializes a new instance of the <see cref="LegendaryHero"/> class.
@@ -201,13 +200,16 @@ namespace MacroTools.LegendSystem
       if (GetHeroXP(Unit) < StartingXp) 
         SetHeroXP(Unit, StartingXp, true);
       if (StartingArtifactItemTypeIds.Any())
+      {
         foreach (var artifactItemTypeId in StartingArtifactItemTypeIds)
         {
           var artifact = new Artifact(CreateItem(artifactItemTypeId, 0, 0));
           ArtifactManager.Register(artifact);
           Unit.AddItemSafe(artifact.Item);
         }
-        
+        Array.Clear(StartingArtifactItemTypeIds);
+      }
+      
       RefreshDummy();
     }
     
