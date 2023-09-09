@@ -29,10 +29,19 @@ namespace WarcraftLegacies.Source.GameLogic
     public void Run(player whichPlayer)
     {
       DialogSetMessage(_pickDialogue, "Pick your Faction");
+      
       var timer = CreateTimer();
-      TimerStart(timer, 4, false, () => { StartFactionPick(whichPlayer); });
+      TimerStart(timer, 4, false, () =>
+      {
+        StartFactionPick(whichPlayer);
+      });
+      
       var concludeTimer = CreateTimer();
-      TimerStart(concludeTimer, 24, false, () => { ConcludeFactionPick(whichPlayer); });
+      TimerStart(concludeTimer, 24, false, () =>
+      {
+        ConcludeFactionPick(whichPlayer);
+        DestroyTimer(GetExpiredTimer());
+      });
     }
     
     private void StartFactionPick(player whichPlayer)
@@ -60,8 +69,10 @@ namespace WarcraftLegacies.Source.GameLogic
       
       DialogClear(_pickDialogue);
       DialogDestroy(_pickDialogue);
-      DestroyTimer(GetExpiredTimer());
-      PickFaction(_pickedFaction, new List<unit>());
+      
+      if (_pickedFaction != null)
+        PickFaction(_pickedFaction, new List<unit>());
+      
       foreach (var unpickedFaction in _factionChoices)
         RemoveFaction(unpickedFaction, new List<unit>());
     }
