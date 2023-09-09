@@ -62,11 +62,6 @@ namespace WarcraftLegacies.Source.Setup.Spells
         Color = new Color(255, 50, 50, 255)
       });
 
-      SpellSystem.Register(new InstantKill(Constants.ABILITY_A126_DESTROY_SHARED)
-      {
-        Target = InstantKill.KillTarget.Self
-      });
-
       var summonFelHounds = new SummonUnits(Constants.ABILITY_A12B_HOUND_COMPANION_LEGION_FELGUARD)
       {
         SummonUnitTypeId = Constants.UNIT_NFEL_FEL_STALKER_SUMMONER_WARLOCK_EYE_OF_SARGERAS,
