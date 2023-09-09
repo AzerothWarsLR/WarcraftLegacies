@@ -41,7 +41,11 @@ namespace MacroTools.CommandSystem
             if (command.Type == CommandType.Cheat && !TestMode.CheatCondition())
               return;
 
-            var parameters = SplitParameters(GetEventPlayerChatString());
+            var enteredChatString = GetEventPlayerChatString();
+            if (!EnteredCommandEndsWithSpaceOrNothing(command, enteredChatString)) 
+              return;
+
+            var parameters = SplitParameters(enteredChatString);
 
             if (parameters.Length < command.MinimumParameterCount)
             {
@@ -59,6 +63,13 @@ namespace MacroTools.CommandSystem
             Console.WriteLine($"Failed to execute command: {ex}");
           }
         });
+    }
+
+    private static bool EnteredCommandEndsWithSpaceOrNothing(Command command, string enteredChatString)
+    {
+      var commandLength = command.CommandText.Length + Prefix.Length;
+      return enteredChatString.Length == commandLength ||
+             enteredChatString[commandLength] == ' ';
     }
 
     private static string[] SplitParameters(string inputString)
