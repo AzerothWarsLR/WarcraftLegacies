@@ -17,6 +17,7 @@ namespace WarcraftLegacies.Source.Setup
       commandManager.Register(new Clear("clear"));
       commandManager.Register(new Clear("c"));
       commandManager.Register(new Cam());
+      commandManager.Register(new Share());
     }
   }
 }
