@@ -45,6 +45,9 @@ namespace MacroTools.Commands
       if (!int.TryParse(parameters[1], out var goldGift))
         return "You must specify a gold value as the second parameter.";
 
+      if (goldGift < 0)
+        return "You must send at least 1 gold.";
+      
       if (GetPlayerState(cheater, PLAYER_STATE_RESOURCE_GOLD) < goldGift)
         return $"You don't have {goldGift} gold to send.";
 

@@ -45,6 +45,9 @@ namespace MacroTools.Commands
       if (!int.TryParse(parameters[1], out var lumberGift))
         return "You must specify a lumber value as the second parameter.";
 
+      if (lumberGift < 0)
+        return "You must send at least 1 lumber.";
+      
       if (GetPlayerState(cheater, PLAYER_STATE_RESOURCE_LUMBER) < lumberGift)
         return $"You don't have {lumberGift} lumber to send.";
 
