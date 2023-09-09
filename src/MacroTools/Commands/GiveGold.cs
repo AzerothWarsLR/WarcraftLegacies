@@ -8,11 +8,13 @@ namespace MacroTools.Commands
   /// <summary>Give gold to another player.</summary>
   public sealed class GiveGold : Command
   {
+    private readonly string _commandText;
+
     /// <summary>Initializes a new instance of the <see cref="GiveGold"/> class.</summary>
-    public GiveGold(string commandText) => CommandText = commandText;
+    public GiveGold(string commandText) => _commandText = commandText;
 
     /// <inheritdoc />
-    public override string CommandText { get; }
+    public override string CommandText => _commandText;
 
     /// <inheritdoc />
     public override bool Exact => false;
