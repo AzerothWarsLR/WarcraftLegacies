@@ -40,7 +40,7 @@ namespace MacroTools.Commands
       if (cheaterTeam != targetFaction.Player.GetTeam())
         return $"{targetFaction.Name} isn't on your team, so you can't give them gold.";
 
-      if (!int.TryParse(parameters[2], out var goldGift))
+      if (!int.TryParse(parameters[1], out var goldGift))
         return "You must specify a gold value as the second parameter.";
 
       if (GetPlayerState(cheater, PLAYER_STATE_RESOURCE_GOLD) < goldGift)

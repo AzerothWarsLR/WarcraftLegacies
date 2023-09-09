@@ -40,7 +40,7 @@ namespace MacroTools.Commands
       if (cheaterTeam != targetFaction.Player.GetTeam())
         return $"{targetFaction.Name} isn't on your team, so you can't give them lumber.";
 
-      if (!int.TryParse(parameters[2], out var lumberGift))
+      if (!int.TryParse(parameters[1], out var lumberGift))
         return "You must specify a lumber value as the second parameter.";
 
       if (GetPlayerState(cheater, PLAYER_STATE_RESOURCE_LUMBER) < lumberGift)
