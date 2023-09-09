@@ -5,7 +5,7 @@ namespace WarcraftLegacies.Source.GameLogic
    /// <summary>
    /// Responsible for managing basic game settings.
    /// </summary>
-   public static class GameSettings
+   public static class MapFlagSetup
    {
       /// <summary>
       /// Forces observers to be enabled.
@@ -14,6 +14,7 @@ namespace WarcraftLegacies.Source.GameLogic
       {
          SetMapFlag(MAP_OBSERVERS, true);
          SetMapFlag(MAP_OBSERVERS_ON_DEATH, true);
+         SetMapFlag(MAP_LOCK_RESOURCE_TRADING, true);
       }
    }
 }

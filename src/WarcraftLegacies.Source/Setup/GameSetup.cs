@@ -65,7 +65,7 @@ namespace WarcraftLegacies.Source.Setup
       gameTime.StartTimer();
       CheatSetup.Setup(commandManager, cinematicMode);
       DialogueSetup.Setup(preplacedUnitSystem, allLegendSetup);
-      GameSettings.Setup();
+      MapFlagSetup.Setup();
       InfoQuests.Setup();
       DestructibleSetup.Setup(preplacedUnitSystem);
       ResearchSetup.Setup(preplacedUnitSystem);
