@@ -46,7 +46,7 @@ namespace Launcher.Services
     public void SaveMapFile(Map map, IEnumerable<DirectoryEnumerationOptions> additionalFileDirectories, AdvancedMapBuilderOptions options)
     {
       var mapFilePath = GetMapFullFilePath(options);
-      SupplementMap(map, options, mapFilePath);
+      SupplementMap(map, options);
       
       var mapBuilder = new MapBuilder(map);
       if (Directory.Exists(_compilerSettings.SharedAssetsPath))
@@ -73,11 +73,16 @@ namespace Launcher.Services
     public void SaveMapDirectory(Map map, IEnumerable<PathData> additionalFiles, AdvancedMapBuilderOptions options)
     {
       var mapFilePath = GetMapFullFilePath(options);
-      SupplementMap(map, options, mapFilePath);
+      SupplementMap(map, options);
+      
+      if (options.BackupDirectory != null)
+        BackupFiles(options.BackupDirectory, mapFilePath);
+      
+      Directory.Delete(mapFilePath, true);
       map.BuildDirectory(@$"{mapFilePath}\", additionalFiles);
     }
     
-    private void SupplementMap(Map map, AdvancedMapBuilderOptions options, string mapFilePath)
+    private void SupplementMap(Map map, AdvancedMapBuilderOptions options)
     {
       ConfigureControlPointData(map);
       
@@ -89,9 +94,6 @@ namespace Launcher.Services
 
       if (options.SourceCodeProjectFolderPath != null)
         AddCSharpCode(map, options.SourceCodeProjectFolderPath, _compilerSettings);
-
-      if (options.BackupDirectory != null)
-        BackupFiles(options.BackupDirectory, mapFilePath);
     }
 
     private static void ConfigureControlPointData(Map map)
