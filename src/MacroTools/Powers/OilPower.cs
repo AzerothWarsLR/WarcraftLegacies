@@ -24,19 +24,13 @@ namespace MacroTools.Powers
     private readonly List<player> _owners = new();
     private timer? _oilTimer;
 
-    /// <summary>
-    /// Fired when the amount of oil stored changes.
-    /// </summary>
+    /// <summary>Fired when the amount of oil stored changes.</summary>
     public EventHandler<OilPower>? AmountChanged;
 
-    /// <summary>
-    /// <see cref="OilPool"/>s cannot spawn within this distance of eachother.
-    /// </summary>
+    /// <summary><see cref="OilPool"/>s cannot spawn within this distance of eachother.</summary>
     public float OilPoolBorderDistance { get; init; } = 600;
 
-    /// <summary>
-    /// The amount of oil the <see cref="OilPower"/> has.
-    /// </summary>
+    /// <summary>The amount of oil the <see cref="OilPower"/> has.</summary>
     public float Amount
     {
       get => _amount;
@@ -48,9 +42,7 @@ namespace MacroTools.Powers
       }
     }
 
-    /// <summary>
-    /// The amount of oil the <see cref="OilPower"/> gains per second.
-    /// </summary>
+    /// <summary>The amount of oil the <see cref="OilPower"/> gains per second.</summary>
     public float Income
     {
       get => _income;
@@ -61,29 +53,22 @@ namespace MacroTools.Powers
       }
     }
 
-    /// <summary>
-    /// The maximum number of oil pools that will generate on the map.
-    /// </summary>
+    /// <summary>The maximum number of oil pools that will generate on the map.</summary>
     public int MaximumOilPoolCount { get; init; }
 
-    /// <summary>
-    /// The number of oil pools that are spawned at the start of the game.
-    /// </summary>
-    public int StartingOilPoolCount { get; init; }
+    /// <summary>The number of oil pools that are randomly spawned when this power is registered.</summary>
+    public int StartingRandomOilPoolCount { get; init; }
 
-    /// <summary>
-    /// The maximum amount of oil that a given <see cref="OilPool"/> can start with.
-    /// </summary>
+    /// <summary>Oil Pools will be spawned at all of these locations when this power is registered.</summary>
+    public IEnumerable<Point> ForcedStartingOilPoolSpawnLocations { get; init; } = Array.Empty<Point>();
+    
+    /// <summary>The maximum amount of oil that a given <see cref="OilPool"/> can start with.</summary>
     public int OilPoolMaximumValue { get; init; }
 
-    /// <summary>
-    /// The minimum amount of oil that a given <see cref="OilPool"/> can start with.
-    /// </summary>
+    /// <summary>The minimum amount of oil that a given <see cref="OilPool"/> can start with.</summary>
     public int OilPoolMinimumValue { get; init; }
-
-    /// <summary>
-    /// Initializes a new instance of the <see cref="OilPower"/> class.
-    /// </summary>
+  
+    /// <summary>Initializes a new instance of the <see cref="OilPower"/> class.</summary>
     public OilPower()
     {
       RefreshDescription();
@@ -101,9 +86,13 @@ namespace MacroTools.Powers
       _oilIncomePeriodicAction = new OilIncomePeriodicAction(this);
       OilIncomePeriodicTrigger.Add(_oilIncomePeriodicAction);
       
-      _oilTimer = CreateTimer().Start(150, true, GenerateOilPool);
-      for (var i = 0; i < StartingOilPoolCount; i++)
-        GenerateOilPool();
+      _oilTimer = CreateTimer().Start(150, true, GenerateRandomOilPool);
+
+      foreach (var position in ForcedStartingOilPoolSpawnLocations)
+        GenerateOilPool(position);
+      
+      for (var i = 0; i < StartingRandomOilPoolCount; i++)
+        GenerateRandomOilPool();
     }
 
     /// <inheritdoc/>
@@ -130,12 +119,17 @@ namespace MacroTools.Powers
         });
     }
 
-    private void GenerateOilPool()
+    private void GenerateRandomOilPool()
     {
       if (_oilPools.Count >= MaximumOilPoolCount)
         return;
-      var randomPoint = GetRandomPointAtSea();
-      var oilPool = new OilPool(_owners.First(), randomPoint, "Tar Pool.mdx", this)
+      
+      GenerateOilPool(GetRandomPointAtSea());
+    }
+    
+    private void GenerateOilPool(Point position)
+    {
+      var oilPool = new OilPool(_owners.First(), position, "Tar Pool.mdx", this)
       {
         Active = true,
         Duration = float.MaxValue,
