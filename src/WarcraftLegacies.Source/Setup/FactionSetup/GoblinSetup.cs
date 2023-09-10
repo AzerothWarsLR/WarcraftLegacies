@@ -22,7 +22,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
         StartingGold = 200,
         StartingLumber = 700,
         ControlPointDefenderUnitTypeId = Constants.UNIT_O01C_CONTROL_POINT_DEFENDER_GOBLIN,
-        StartingUnits = Regions.GoblinStartPos.PrepareUnitsForRescue(RescuePreparationMode.HideAll),
+        StartingUnits = Regions.GoblinStartPos.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable),
         IntroText = @"You are playing as the industrious |cff808080Bilgewater Cartel|r.
 
 You begin in Tanaris with a very small business venture. Expand onto Kalimdor to grow your trade empire.
