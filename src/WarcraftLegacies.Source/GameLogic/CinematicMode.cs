@@ -21,8 +21,7 @@ namespace WarcraftLegacies.Source.GameLogic
 
     /// <inheritdoc/>
     public EventHandler? OnTimerEnds { get; set; }
-
-
+    
     /// <summary>
     /// Initiates cinematic mode.
     /// </summary>
@@ -37,20 +36,18 @@ namespace WarcraftLegacies.Source.GameLogic
     /// <inheritdoc/>
     public void StartTimer()
     {
-     
       _cinermaticTimer = CreateTimer();
       TimerStart(_cinermaticTimer, Timeout, false, TimerEnd);
 
       _musicTimer = CreateTimer();
       TimerStart(_musicTimer, 2.1f, false, PlayFactionMusic);
-      
+
       FogEnable(false);
       FogMaskEnable(false);
+      
+      foreach (var unit in CreateGroup().EnumUnitsInRect(WCSharp.Shared.Data.Rectangle.WorldBounds).EmptyToList())
+        unit.PauseEx(true);
 
-      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers().Where(p => p != Player(PLAYER_NEUTRAL_PASSIVE) || p != Player(PLAYER_NEUTRAL_AGGRESSIVE)))
-        foreach (var unit in CreateGroup().EnumUnitsOfPlayer(player).EmptyToList())
-          PauseUnit(unit, true);
-        
       _state = CinematicState.Active;
       _linkedTimer.StartTimer();
     }
@@ -68,7 +65,7 @@ namespace WarcraftLegacies.Source.GameLogic
     {
       if (_state != CinematicState.Active)
         return;
-      
+
       FogEnable(true);
 
       SetMapMusic("music", true, 0);
@@ -80,11 +77,10 @@ namespace WarcraftLegacies.Source.GameLogic
       DestroyTimer(_cinermaticTimer);
       DestroyTimer(_musicTimer);
       _state = CinematicState.Finished;
-      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers().Where(p => p != Player(PLAYER_NEUTRAL_PASSIVE) || p != Player(PLAYER_NEUTRAL_AGGRESSIVE)))
-        foreach (var unit in CreateGroup().EnumUnitsOfPlayer(player).EmptyToList())
-          PauseUnit(unit, false);
+      foreach (var unit in CreateGroup().EnumUnitsInRect(WCSharp.Shared.Data.Rectangle.WorldBounds).EmptyToList())
+        unit.PauseEx(false);
 
-      OnTimerEnds?.Invoke(this, new EventArgs());
+      OnTimerEnds?.Invoke(this, EventArgs.Empty);
     }
 
     private static void PlayFactionMusic()
@@ -97,6 +93,5 @@ namespace WarcraftLegacies.Source.GameLogic
         }
       }
     }
-
   }
 }
