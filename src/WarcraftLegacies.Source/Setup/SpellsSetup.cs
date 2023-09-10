@@ -196,7 +196,7 @@ namespace WarcraftLegacies.Source.Setup
       SpellSystem.Register(new MakeCasterVulnerable(Constants.ABILITY_A0CS_VASSAL_SCROLL_TELE));
       SpellSystem.Register(new MakeCasterVulnerable(Constants.ABILITY_A002_SCROLL_TELE_TOWN));
 
-      SpellSystem.Register(new InstantKill(Constants.ABILITY_A126_DESTROY_SHARED)
+      SpellSystem.Register(new InstantKill(Constants.ABILITY_A126_SELF_DESTRUCT_SHARED)
       {
         Target = InstantKill.KillTarget.Self
       });
