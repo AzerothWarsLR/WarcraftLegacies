@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
@@ -39,6 +40,7 @@ namespace WarcraftLegacies.Source.GameLogic
       TimerStart(timer, 4, false, () =>
       {
         StartFactionPick(whichPlayer);
+        DestroyTimer(GetExpiredTimer());
       });
       
       var concludeTimer = CreateTimer();
@@ -49,7 +51,7 @@ namespace WarcraftLegacies.Source.GameLogic
       });
     }
 
-    public void Dispose()
+    private void Dispose()
     {
       if (!_activeChoices.Contains(this)) 
         return;
@@ -71,10 +73,19 @@ namespace WarcraftLegacies.Source.GameLogic
       {
         var pickTrigger = CreateTrigger();
         TriggerRegisterDialogButtonEvent(pickTrigger, button);
-        TriggerAddAction(pickTrigger, () => PickFaction(whichPlayer, faction, _factionChoices.Skip(1)));
+        TriggerAddAction(pickTrigger, () =>
+        {
+          try
+          {
+            PickFaction(whichPlayer, faction);
+          }
+          catch (Exception ex)
+          {
+            Console.WriteLine(ex);
+          }
+        });
         _triggers.Add(pickTrigger);
       }
-      DestroyTimer(GetExpiredTimer());
     }
     
     private void ExpireFactionPick(player whichPlayer)
@@ -83,12 +94,12 @@ namespace WarcraftLegacies.Source.GameLogic
         DialogDisplay(GetLocalPlayer(), _pickDialogue, false);
       
       if (whichPlayer.GetFaction() == null)
-        PickFaction(whichPlayer, _factionChoices.First(), _factionChoices.Skip(1));
+        PickFaction(whichPlayer, _factionChoices.First());
       
       Dispose();
     }
     
-    private static void PickFaction(player whichPlayer, Faction whichFaction, IEnumerable<Faction> unpickedChoices)
+    private void PickFaction(player whichPlayer, Faction whichFaction)
     {
       if (GetLocalPlayer() == whichPlayer)
         SetCameraPosition(whichFaction.StartingCameraPosition.X, whichFaction.StartingCameraPosition.Y);
@@ -96,7 +107,7 @@ namespace WarcraftLegacies.Source.GameLogic
       whichPlayer.RescueGroup(whichFaction.StartingUnits);
       whichPlayer.SetFaction(whichFaction);
       
-      foreach (var unpickedFaction in unpickedChoices)
+      foreach (var unpickedFaction in _factionChoices.Where(x => x != whichFaction))
         RemoveFaction(unpickedFaction);
     }
 
