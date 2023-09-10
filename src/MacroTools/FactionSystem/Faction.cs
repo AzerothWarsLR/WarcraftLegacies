@@ -125,9 +125,17 @@ namespace MacroTools.FactionSystem
     /// </summary>
     public bool HasEssentialLegend => GetEssentialLegends().Count > 0;
 
+    /// <summary>How much gold the faction starts with.</summary>
     public int StartingGold { get; set; }
 
+    /// <summary>How much lumber the faction starts with.</summary>
     public int StartingLumber { get; set; }
+    
+    /// <summary>The units this faction should start the game with.</summary>
+    public List<unit> StartingUnits { get; init; }
+    
+    /// <summary>Where any player occupying this faction should have their camera set to on game start.</summary>
+    public Point StartingCameraPosition { get; init; }
 
     public playercolor PlayerColor { get; }
 

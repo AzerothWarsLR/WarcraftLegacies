@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using static War3Api.Common;
@@ -71,20 +72,36 @@ namespace WarcraftLegacies.Source.GameLogic
       DialogDestroy(_pickDialogue);
       
       if (_pickedFaction != null)
-        PickFaction(_pickedFaction, new List<unit>());
+        PickFaction(whichPlayer, _pickedFaction);
       
       foreach (var unpickedFaction in _factionChoices)
-        RemoveFaction(unpickedFaction, new List<unit>());
+        RemoveFaction(unpickedFaction);
     }
     
-    private void PickFaction(Faction whichFaction, List<unit> startingUnits)
+    private static void PickFaction(player whichPlayer, Faction whichFaction)
     {
+      if (GetLocalPlayer() == whichPlayer)
+        SetCameraPosition(whichFaction.StartingCameraPosition.X, whichFaction.StartingCameraPosition.Y);
       
+      whichPlayer.RescueGroup(whichFaction.StartingUnits);
+      whichPlayer.SetFaction(whichFaction);
     }
 
-    private void RemoveFaction(Faction whichFaction, List<unit> startingUnits)
+    private static void RemoveFaction(Faction whichFaction)
     {
+      foreach (var unit in whichFaction.StartingUnits)
+      {
+        if (ControlPointManager.Instance.UnitIsControlPoint(unit))
+        {
+          unit.SetInvulnerable(false);
+          unit.SetOwner(Player(PLAYER_NEUTRAL_AGGRESSIVE));
+        }
+        else
+          unit.Remove();
+      }
       
+      whichFaction.RemoveGoldMines();
+      whichFaction.Defeat();
     }
   }
 }
