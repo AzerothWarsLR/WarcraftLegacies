@@ -63,7 +63,7 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
         Player(bj_PLAYER_NEUTRAL_VICTIM).RescueGroup(_rescueUnits);
         _proudmooreCapitalShip.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
       }
-      _proudmooreCapitalShip.Pause(false);
+      _proudmooreCapitalShip.PauseEx(false);
 
 
     }

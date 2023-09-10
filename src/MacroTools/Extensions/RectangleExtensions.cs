@@ -67,7 +67,7 @@ namespace MacroTools.Extensions
           unit.Show(false);
         unit
           .SetInvulnerable(true)
-          .Pause(true);
+          .PauseEx(true);
       }
       return group;
     }

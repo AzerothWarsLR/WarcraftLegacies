@@ -1,4 +1,5 @@
-﻿using MacroTools.FactionSystem;
+﻿using MacroTools.Extensions;
+using MacroTools.FactionSystem;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup.FactionSetup
@@ -14,6 +15,8 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
       {
         StartingGold = 0,
         StartingLumber = 100,
+        StartingCameraPosition = Regions.ForsakenStartPos.Center,
+        StartingUnits = Regions.ForsakenStartPos.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable),
         IntroText = @"You are playing as the insidious Cult of the Damned.
 
 Your first objective is to use your three Cultists of the Damned to corrupt buildings in Lordaeron. These corrupted buildings will provide income for you until the plague is unleashed.
