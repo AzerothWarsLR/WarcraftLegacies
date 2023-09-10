@@ -1,4 +1,5 @@
 ﻿using MacroTools;
+using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -12,13 +13,15 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
       Dalaran = new Faction(FactionNames.Dalaran, PLAYER_COLOR_PINK, "|c00e55bb0",
-        "ReplaceableTextures\\CommandButtons\\BTNJaina.blp")
+        @"ReplaceableTextures\CommandButtons\BTNJaina.blp")
       {
         UndefeatedResearch = FourCC("R05N"),
         StartingGold = 200,
         StartingLumber = 700,
         CinematicMusic = "SadMystery",
         ControlPointDefenderUnitTypeId = Constants.UNIT_N00N_CONTROL_POINT_DEFENDER_DALARAN,
+        StartingCameraPosition = Regions.DalaStartPos.Center,
+        StartingUnits = Regions.DalaStartPos.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable),
         IntroText = @"You are playing the wise |cffff8080Council of Dalaran|r.
 
 You begin in the Hillsbrad Foothills, separated from the main forces of Dalaran. To unlock Dalaran you must capture Shadowfang Keep, which have been encircled by monsters.

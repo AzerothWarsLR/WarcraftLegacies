@@ -1,4 +1,5 @@
 ﻿using MacroTools;
+using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -20,6 +21,8 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
         FoodMaximum = 250,
         CinematicMusic = "DarkAgents",
         ControlPointDefenderUnitTypeId = Constants.UNIT_U01U_CONTROL_POINT_DEFENDER_LEGION,
+        StartingCameraPosition = Regions.LegionStartPos.Center,
+        StartingUnits = Regions.LegionStartPos.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable),
         IntroText = @"You are playing as the mighty |cffa2722dBurning Legion|r.
 
 You begin isolated on Argus. Once the Planet is under control, you will unlock 2 teleporters to Northrend and Alterac.
