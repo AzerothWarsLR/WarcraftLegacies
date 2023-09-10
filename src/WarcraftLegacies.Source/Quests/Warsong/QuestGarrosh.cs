@@ -13,11 +13,11 @@ namespace WarcraftLegacies.Source.Quests.Warsong
     /// <inheritdoc/>
     protected override string RewardDescription => $"The Warsong Expedition and Garrosh will become available";
 
-    public QuestGarrosh(Capital darnassus) : base("Thirst for Conquest",
+    public QuestGarrosh(Capital templeOfTheMoon) : base("Thirst for Conquest",
       "The Night Elven Druids stand in the way of the Warsong's expansion, they will need to be eliminated for the Horde to grow",
-      "ReplaceableTextures\\CommandButtons\\BTNWC1UnholyArmorRemasteredAlt.blp")
+      @"ReplaceableTextures\CommandButtons\BTNWC1UnholyArmorRemasteredAlt.blp")
     {
-      AddObjective(new ObjectiveCapitalDead(darnassus));
+      AddObjective(new ObjectiveCapitalDead(templeOfTheMoon));
       ResearchId = Constants.UPGRADE_R062_QUEST_COMPLETED_THIRST_FOR_CONQUEST;
     }
 
