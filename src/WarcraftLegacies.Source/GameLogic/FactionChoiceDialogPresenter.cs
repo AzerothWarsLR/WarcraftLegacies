@@ -57,8 +57,8 @@ namespace WarcraftLegacies.Source.GameLogic
         TriggerAddAction(pickTrigger, () =>
         {
           _pickedFaction = faction;
+          GetTriggeringTrigger().Destroy();
         });
-        GetTriggeringTrigger().Destroy();
       }
       DestroyTimer(GetExpiredTimer());
     }
