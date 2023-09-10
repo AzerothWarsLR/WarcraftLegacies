@@ -47,6 +47,11 @@ namespace WarcraftLegacies.Source.Setup.Spells
         TargetType = SpellTargetType.Point
       };
       SpellSystem.Register(massFrostArmour2);
+      
+      PassiveAbilityManager.Register(new RemoveOnDeath(Constants.UNIT_N094_ICECROWN_OBELISK_RED)
+      {
+        DeathEffectPath = @"Objects\Spawnmodels\Undead\UDeathSmall\UDeathSmall.mdl"
+      });
     }
   }
 }
