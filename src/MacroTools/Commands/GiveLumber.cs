@@ -5,7 +5,7 @@ using static War3Api.Common;
 
 namespace MacroTools.Commands
 {
-  /// <summary>Give gold to another player.</summary>
+  /// <summary>Give lumber to another player.</summary>
   public sealed class GiveLumber : Command
   {
     private readonly string _commandText;
@@ -26,7 +26,7 @@ namespace MacroTools.Commands
     public override CommandType Type => CommandType.Normal;
 
     /// <inheritdoc />
-    public override string Description => "Gives gold to another player.";
+    public override string Description => "Gives lumber to another player.";
 
     /// <inheritdoc />
     public override string Execute(player cheater, params string[] parameters)
