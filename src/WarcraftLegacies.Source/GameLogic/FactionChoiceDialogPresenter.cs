@@ -101,7 +101,7 @@ namespace WarcraftLegacies.Source.GameLogic
     
     private void PickFaction(player whichPlayer, Faction whichFaction)
     {
-      if (GetLocalPlayer() == whichPlayer)
+      if (GetLocalPlayer() == whichPlayer && whichFaction.StartingCameraPosition != null)
         SetCameraPosition(whichFaction.StartingCameraPosition.X, whichFaction.StartingCameraPosition.Y);
       
       whichPlayer.RescueGroup(whichFaction.StartingUnits);
