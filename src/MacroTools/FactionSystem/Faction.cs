@@ -538,9 +538,9 @@ namespace MacroTools.FactionSystem
       {
         var tempUnitType = UnitType.GetFromHandle(unit);
         if (!UnitAlive(unit))
-          RemoveUnit(unit);
+          unit.Remove();
 
-        if (!tempUnitType?.NeverDelete == true)
+        if (!tempUnitType.NeverDelete)
           SetUnitOwner(unit, Player(GetBJPlayerNeutralVictim()), false);
       }
     }
@@ -693,7 +693,9 @@ namespace MacroTools.FactionSystem
         var loopUnitType = UnitType.GetFromHandle(unit);
         if (IsUnitType(unit, UNIT_TYPE_SUMMONED))
         {
-          RemoveUnit(unit);
+          unit
+            .Kill()
+            .Remove();
           continue;
         }
 
@@ -705,6 +707,7 @@ namespace MacroTools.FactionSystem
             _xp -= LegendaryHeroManager.GetFromUnit(unit)!.StartingXp;
           unit
             .DropAllItems()
+            .Kill()
             .Remove();
           continue;
         }
@@ -718,6 +721,7 @@ namespace MacroTools.FactionSystem
           }
           unit
             .DropAllItems()
+            .Kill()
             .Remove();
           continue;
         }
