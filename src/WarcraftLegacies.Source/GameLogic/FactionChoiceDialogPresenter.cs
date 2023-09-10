@@ -10,13 +10,13 @@ namespace WarcraftLegacies.Source.GameLogic
   /// <summary>Allows a player to choose between one of two factions at the start of the game.</summary>
   public sealed class FactionChoiceDialogPresenter
   {
+    //Ensures choice dialogs are kept in memory until they're done.
     private readonly List<FactionChoiceDialogPresenter> _activeChoices = new ();
     
     private readonly dialog? _pickDialogue = DialogCreate();
     private readonly Dictionary<button, Faction> _factionPicksByButton = new();
-    private Faction? _pickedFaction;
     private readonly List<Faction> _factionChoices;
-    private List<trigger> _triggers = new();
+    private readonly List<trigger> _triggers = new();
 
     /// <summary>Initializes a new instance of the <see cref="FactionChoiceDialogPresenter"/> class.</summary>
     public FactionChoiceDialogPresenter(params Faction[] factionChoices)
@@ -44,7 +44,7 @@ namespace WarcraftLegacies.Source.GameLogic
       var concludeTimer = CreateTimer();
       TimerStart(concludeTimer, 24, false, () =>
       {
-        ConcludeFactionPick(whichPlayer);
+        ExpireFactionPick(whichPlayer);
         DestroyTimer(GetExpiredTimer());
       });
     }
@@ -54,9 +54,12 @@ namespace WarcraftLegacies.Source.GameLogic
       if (!_activeChoices.Contains(this)) 
         return;
       
+      DialogClear(_pickDialogue);
+      DialogDestroy(_pickDialogue);
+      
       _activeChoices.Remove(this);
       foreach (var trigger in _triggers)
-        trigger.Destroy();;
+        trigger.Destroy();
     }
     
     private void StartFactionPick(player whichPlayer)
@@ -68,38 +71,33 @@ namespace WarcraftLegacies.Source.GameLogic
       {
         var pickTrigger = CreateTrigger();
         TriggerRegisterDialogButtonEvent(pickTrigger, button);
-        TriggerAddAction(pickTrigger, () =>
-        {
-          _pickedFaction = faction;
-        });
+        TriggerAddAction(pickTrigger, () => PickFaction(whichPlayer, faction, _factionChoices.Skip(1)));
+        _triggers.Add(pickTrigger);
       }
       DestroyTimer(GetExpiredTimer());
     }
     
-    private void ConcludeFactionPick(player whichPlayer)
+    private void ExpireFactionPick(player whichPlayer)
     {
       if (GetLocalPlayer() == whichPlayer)
         DialogDisplay(GetLocalPlayer(), _pickDialogue, false);
       
-      DialogClear(_pickDialogue);
-      DialogDestroy(_pickDialogue);
+      if (whichPlayer.GetFaction() == null)
+        PickFaction(whichPlayer, _factionChoices.First(), _factionChoices.Skip(1));
       
-      if (_pickedFaction != null)
-        PickFaction(whichPlayer, _pickedFaction);
-      
-      foreach (var unpickedFaction in _factionChoices)
-        RemoveFaction(unpickedFaction);
-
       Dispose();
     }
     
-    private static void PickFaction(player whichPlayer, Faction whichFaction)
+    private static void PickFaction(player whichPlayer, Faction whichFaction, IEnumerable<Faction> unpickedChoices)
     {
       if (GetLocalPlayer() == whichPlayer)
         SetCameraPosition(whichFaction.StartingCameraPosition.X, whichFaction.StartingCameraPosition.Y);
       
       whichPlayer.RescueGroup(whichFaction.StartingUnits);
       whichPlayer.SetFaction(whichFaction);
+      
+      foreach (var unpickedFaction in unpickedChoices)
+        RemoveFaction(unpickedFaction);
     }
 
     private static void RemoveFaction(Faction whichFaction)
