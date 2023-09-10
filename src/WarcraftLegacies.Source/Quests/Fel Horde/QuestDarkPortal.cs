@@ -31,7 +31,7 @@ namespace WarcraftLegacies.Source.Quests.Fel_Horde
       unit outerWaygate2, unit outerWaygate3)
       : base("The Dark Portal",
         "Following the Second War, the archmage Khadgar and his fellow magi sealed the Dark Portal so that it would never again be used to threaten Azeroth. Little did they know that their magicks were only temporary, and that the portal would open again in time.",
-        "ReplaceableTextures\\CommandButtons\\BTNDarkPortal.blp")
+        @"ReplaceableTextures\CommandButtons\BTNDarkPortal.blp")
     {
       _innerWaygate1 = innerWaygate1.Show(false);
       _innerWaygate2 = innerWaygate2.Show(false);
@@ -40,7 +40,7 @@ namespace WarcraftLegacies.Source.Quests.Fel_Horde
       _outerWaygate2 = outerWaygate2.Show(false);
       _outerWaygate3 = outerWaygate3.Show(false);
       AddObjective(new ObjectiveEitherOf(
-        new ObjectiveResearch(Constants.UPGRADE_R02C_OPEN_THE_DARK_PORTAL, Constants.UNIT_O008_HELLFIRE_CITADEL_FEL_HORDE),
+        new ObjectiveResearch(Constants.UPGRADE_R02C_OPEN_THE_DARK_PORTAL, Constants.UNIT_O008_HELLFIRE_CITADEL_FEL_HORDE, true),
         new ObjectiveTime(600)));
       AddObjective(new ObjectiveTime(480));
       Global = true;

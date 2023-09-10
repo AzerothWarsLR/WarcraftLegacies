@@ -1,4 +1,5 @@
 ﻿using MacroTools;
+using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -12,12 +13,14 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
       Sunfury = new Faction(FactionNames.Sunfury, PLAYER_COLOR_MAROON, "|cffff0000",
-          "ReplaceableTextures\\CommandButtons\\BTNBloodMage2.blp")
+          @"ReplaceableTextures\CommandButtons\BTNBloodMage2.blp")
       {
         StartingGold = 200,
         StartingLumber = 700,
         CinematicMusic = "BloodElfTheme",
         FoodMaximum = 250,
+        StartingCameraPosition = Regions.SunfuryStartingPosition.Center,
+        StartingUnits = Regions.SunfuryStartingPosition.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable),
         ControlPointDefenderUnitTypeId = Constants.UNIT_N0BC_CONTROL_POINT_DEFENDER_QUELTHALAS,
         IntroText = @"You are playing as the power-hungry |cffff0000Sunfury|r.
 

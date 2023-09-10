@@ -1,4 +1,5 @@
 ﻿using MacroTools;
+using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.Powers;
 using WCSharp.Shared.Data;
@@ -21,6 +22,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
         StartingGold = 200,
         StartingLumber = 700,
         ControlPointDefenderUnitTypeId = Constants.UNIT_O01C_CONTROL_POINT_DEFENDER_GOBLIN,
+        StartingUnits = Regions.GoblinStartPos.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable),
         IntroText = @"You are playing as the industrious |cff808080Bilgewater Cartel|r.
 
 You begin in Tanaris with a very small business venture. Expand onto Kalimdor to grow your trade empire.
@@ -87,11 +89,12 @@ The Trading Center in Kezan will unlock the ability to train Traders. Be sure to
       {
         Name = "Oil Tycoon",
         IconName = "OilStation",
-        StartingOilPoolCount = 4,
+        StartingRandomOilPoolCount = 3,
         MaximumOilPoolCount = 15,
         OilPoolMinimumValue = 1500,
         OilPoolMaximumValue = 9000,
-        OilPoolBorderDistance = 600
+        OilPoolBorderDistance = 600,
+        ForcedStartingOilPoolSpawnLocations = new [] { new Point(-4825f, -282f) }
       };
       Goblin.AddPower(oilPower);
 

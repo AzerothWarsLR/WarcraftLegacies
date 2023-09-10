@@ -1,6 +1,7 @@
 ﻿using MacroTools;
 using MacroTools.CommandSystem;
 using MacroTools.ControlPointSystem;
+using MacroTools.FactionSystem;
 using MacroTools.Mechanics;
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.UserInterface;
@@ -43,10 +44,10 @@ namespace WarcraftLegacies.Source.Setup
       AllFactionSetup.Setup(preplacedUnitSystem, artifactSetup);
       SharedFactionConfigSetup.Setup();
       PlayerSetup.Setup();
-      ZandalarGoblinChoiceDialogue.Setup();
-      IllidariSunfuryChoiceDialogue.Setup();
-      DalaGilneasChoiceDialogue.Setup();
-      LegionForsakenChoiceDialogue.Setup();
+      new FactionChoiceDialogPresenter(GoblinSetup.Goblin, ZandalarSetup.Zandalar).Run(Player(8));
+      new FactionChoiceDialogPresenter(IllidariSetup.Illidari, SunfurySetup.Sunfury).Run(Player(15));
+      new FactionChoiceDialogPresenter(DalaranSetup.Dalaran, GilneasSetup.Gilneas).Run(Player(7));
+      new FactionChoiceDialogPresenter(LegionSetup.Legion, ForsakenSetup.Forsaken).Run(Player(23));
       NeutralHostileSetup.Setup();
       AllQuestSetup.Setup(preplacedUnitSystem, artifactSetup, allLegendSetup);
       ObserverSetup.Setup(new[] { Player(21) });

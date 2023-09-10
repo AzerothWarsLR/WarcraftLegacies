@@ -154,10 +154,10 @@ namespace WarcraftLegacies.Source.Setup
           UnitType2 = FourCC("npn5"),
           UnitType3 = FourCC("npn6"),
           Duration = 60.0F,
-          EffectTarget = "Abilities\\Spells\\Items\\AIil\\AIilTarget.mdl",
+          EffectTarget = @"Abilities\Spells\Items\AIil\AIilTarget.mdl",
           EffectScaleTarget = 1.0F,
           HealthBonusBase = -0.15F,
-          HealthBonusLevel = 0.15F,     //The level ones are for each additional hero level, including level 1
+          HealthBonusLevel = 0.15F,
           DamageBonusBase = -0.15F,
           DamageBonusLevel = 0.15F
       };
@@ -188,13 +188,18 @@ namespace WarcraftLegacies.Source.Setup
         PurgeOrder = "purge",
         StunOrder = "firebolt",
         Radius = 500f,
-        Effect = "Abilities\\Spells\\Human\\Thunderclap\\ThunderClapCaster.mdl"
+        Effect = @"Abilities\Spells\Human\Thunderclap\ThunderClapCaster.mdl"
       };
       SpellSystem.Register(electricStrike);
 
       SpellSystem.Register(new MakeCasterVulnerable(Constants.ABILITY_A00M_SCROLL_TELE));
       SpellSystem.Register(new MakeCasterVulnerable(Constants.ABILITY_A0CS_VASSAL_SCROLL_TELE));
       SpellSystem.Register(new MakeCasterVulnerable(Constants.ABILITY_A002_SCROLL_TELE_TOWN));
+
+      SpellSystem.Register(new InstantKill(Constants.ABILITY_A126_DESTROY_SHARED)
+      {
+        Target = InstantKill.KillTarget.Self
+      });
       
       FrostwolfSpellSetup.Setup();
       LegionSpellSetup.Setup();

@@ -9,6 +9,7 @@ using MacroTools.ObjectiveSystem.Objectives;
 using MacroTools.QuestSystem;
 using MacroTools.ResearchSystems;
 using WCSharp.Events;
+using WCSharp.Shared.Data;
 using static War3Api.Common;
 
 namespace MacroTools.FactionSystem
@@ -125,10 +126,19 @@ namespace MacroTools.FactionSystem
     /// </summary>
     public bool HasEssentialLegend => GetEssentialLegends().Count > 0;
 
+    /// <summary>How much gold the faction starts with.</summary>
     public int StartingGold { get; set; }
 
+    /// <summary>How much lumber the faction starts with.</summary>
     public int StartingLumber { get; set; }
+    
+    /// <summary>The units this faction should start the game with.</summary>
+    public List<unit> StartingUnits { get; init; }
+    
+    /// <summary>Where any player occupying this faction should have their camera set to on game start.</summary>
+    public Point? StartingCameraPosition { get; init; }
 
+    /// <summary>Players with this faction will become this color.</summary>
     public playercolor PlayerColor { get; }
 
     public float Gold

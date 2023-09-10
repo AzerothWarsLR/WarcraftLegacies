@@ -27,9 +27,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
       SpellSystem.Register(inspireMadness);
       
       var summonBurningLegion = new SummonLegionSpell(Constants.ABILITY_A00J_SUMMON_THE_BURNING_LEGION_ALL_FACTIONS,
-        Constants.ABILITY_A0KZ_SPELL_IMMUNITY_LEGION_SUMMON)
-      {
-      };
+        Constants.ABILITY_A0KZ_SPELL_IMMUNITY_LEGION_SUMMON);
       SpellSystem.Register(summonBurningLegion);
 
       //Northrend
@@ -60,11 +58,6 @@ namespace WarcraftLegacies.Source.Setup.Spells
         ClosingDelay = 0,
         TargetLocation = new Point(21606, -28467),
         Color = new Color(255, 50, 50, 255)
-      });
-
-      SpellSystem.Register(new InstantKill(Constants.ABILITY_A126_DESTROY_SHARED)
-      {
-        Target = InstantKill.KillTarget.Self
       });
 
       var summonFelHounds = new SummonUnits(Constants.ABILITY_A12B_HOUND_COMPANION_LEGION_FELGUARD)

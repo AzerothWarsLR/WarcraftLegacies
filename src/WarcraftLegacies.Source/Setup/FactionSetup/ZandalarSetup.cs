@@ -1,4 +1,5 @@
 ﻿using MacroTools;
+using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -12,11 +13,13 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
       Zandalar = new Faction(FactionNames.Zandalar, PLAYER_COLOR_PEACH, "|cffff8c6c",
-        "ReplaceableTextures\\CommandButtons\\BTNHeadHunterBerserker.blp")
+        @"ReplaceableTextures\CommandButtons\BTNHeadHunterBerserker.blp")
       {
         StartingGold = 200,
         StartingLumber = 700,
         ControlPointDefenderUnitTypeId = Constants.UNIT_H0C1_CONTROL_POINT_DEFENDER_ZANDALAR,
+        StartingCameraPosition = Regions.TrollStartPos.Center,
+        StartingUnits = Regions.TrollStartPos.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable),
         IntroText = @"You are playing as the mighty |cffe1946cZandalari Empire|r.
 
 You start off at the southern coast of Tanaris, seperated from your allies. Raise an army and deal with the rogue Trolls in Zul'Farrak.

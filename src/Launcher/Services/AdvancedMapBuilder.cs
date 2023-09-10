@@ -46,7 +46,7 @@ namespace Launcher.Services
     public void SaveMapFile(Map map, IEnumerable<DirectoryEnumerationOptions> additionalFileDirectories, AdvancedMapBuilderOptions options)
     {
       var mapFilePath = GetMapFullFilePath(options);
-      SupplementMap(map, options, mapFilePath);
+      SupplementMap(map, options);
       
       var mapBuilder = new MapBuilder(map);
       if (Directory.Exists(_compilerSettings.SharedAssetsPath))
@@ -73,11 +73,16 @@ namespace Launcher.Services
     public void SaveMapDirectory(Map map, IEnumerable<PathData> additionalFiles, AdvancedMapBuilderOptions options)
     {
       var mapFilePath = GetMapFullFilePath(options);
-      SupplementMap(map, options, mapFilePath);
+      SupplementMap(map, options);
+      
+      if (options.BackupDirectory != null)
+        BackupFiles(options.BackupDirectory, mapFilePath);
+      
+      Directory.Delete(mapFilePath, true);
       map.BuildDirectory(@$"{mapFilePath}\", additionalFiles);
     }
     
-    private void SupplementMap(Map map, AdvancedMapBuilderOptions options, string mapFilePath)
+    private void SupplementMap(Map map, AdvancedMapBuilderOptions options)
     {
       ConfigureControlPointData(map);
       
@@ -89,9 +94,6 @@ namespace Launcher.Services
 
       if (options.SourceCodeProjectFolderPath != null)
         AddCSharpCode(map, options.SourceCodeProjectFolderPath, _compilerSettings);
-
-      if (options.BackupDirectory != null)
-        BackupFiles(options.BackupDirectory, mapFilePath);
     }
 
     private static void ConfigureControlPointData(Map map)
@@ -143,7 +145,7 @@ namespace Launcher.Services
           player.Controller = PlayerController.Computer;
     }
     
-    private static void AddCSharpCode(Map map, string projectFolderPath, CompilerSettings compilerSettings)
+    public static void AddCSharpCode(Map map, string projectFolderPath, CompilerSettings compilerSettings)
     {
       //Set debug options if necessary, configure compiler
       const string csc = Debug ? "-debug -define:DEBUG" : null;
@@ -176,8 +178,11 @@ namespace Launcher.Services
         throw new Exception(compileResult.Diagnostics.First(x => x.Severity == DiagnosticSeverity.Error).GetMessage());
 
       // Update war3map.lua so you can inspect the generated Lua code easily
-      Directory.CreateDirectory(compilerSettings.ArtifactsPath);
-      File.WriteAllText(Path.Combine(compilerSettings.ArtifactsPath, War3MapLua), map.Script);
+      if (compilerSettings.ArtifactsPath != null)
+      {
+        Directory.CreateDirectory(compilerSettings.ArtifactsPath);
+        File.WriteAllText(Path.Combine(compilerSettings.ArtifactsPath, War3MapLua), map.Script);
+      }
     }
     
     private string GetMapFullFilePath(AdvancedMapBuilderOptions options)

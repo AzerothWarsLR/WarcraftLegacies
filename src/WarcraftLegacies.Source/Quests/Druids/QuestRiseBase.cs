@@ -13,11 +13,11 @@ namespace WarcraftLegacies.Source.Quests.Druids
 {
   public sealed class QuestRiseBase : QuestData
   {
-    private readonly List<unit> _rescueUnits = new();
+    private readonly List<unit> _rescueUnits;
 
     public QuestRiseBase(Rectangle rescueRect) : base("The Druid's Rise",
       "Theres a dormant ancient's grove at the base of Hyjal, take control of the area to nurture it back and awaken it!",
-      "ReplaceableTextures\\CommandButtons\\BTNTreeOfAges.blp")
+      @"ReplaceableTextures\CommandButtons\BTNTreeOfAges.blp")
     {
       AddObjective(new ObjectiveControlLevel(
         ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N0A0_ASCENDANT_S_RISE_10GOLD_MIN), 2));
@@ -40,13 +40,15 @@ namespace WarcraftLegacies.Source.Quests.Druids
     /// <inheritdoc />
     protected override void OnFail(Faction completingFaction)
     {
-      foreach (var unit in _rescueUnits) unit.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      foreach (var unit in _rescueUnits) 
+        unit.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
     /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)
     {
-      foreach (var unit in _rescueUnits) unit.Rescue(completingFaction.Player);
+      foreach (var unit in _rescueUnits) 
+        unit.Rescue(completingFaction.Player);
     }
   }
 }
