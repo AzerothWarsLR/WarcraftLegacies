@@ -10,7 +10,7 @@ namespace MacroTools.Cheats
   {
 
     /// <inheritdoc />
-    public override string CommandText => "gold";
+    public override string CommandText => "addgold";
     
     /// <inheritdoc />
     public override bool Exact => false;

@@ -17,6 +17,13 @@ namespace WarcraftLegacies.Source.Setup
       commandManager.Register(new Clear("clear"));
       commandManager.Register(new Clear("c"));
       commandManager.Register(new Cam());
+      commandManager.Register(new Share());
+      commandManager.Register(new GiveGold("givegold"));
+      commandManager.Register(new GiveGold("gold"));
+      commandManager.Register(new GiveGold("g"));
+      commandManager.Register(new GiveLumber("givelumber"));
+      commandManager.Register(new GiveLumber("lumber"));
+      commandManager.Register(new GiveLumber("l"));
     }
   }
 }

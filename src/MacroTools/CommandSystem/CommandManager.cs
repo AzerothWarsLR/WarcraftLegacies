@@ -12,6 +12,7 @@ namespace MacroTools.CommandSystem
   /// </summary>
   public sealed class CommandManager
   {
+    private const string CommandColor = "cffD27575";
     private readonly List<Command> _registeredCommands = new();
 
     /// <summary>
@@ -32,7 +33,7 @@ namespace MacroTools.CommandSystem
       _registeredCommands.Add(command);
       command.OnRegister();
       CreateTrigger()
-        .RegisterSharedChatEvent(Prefix + command.CommandText, command.Exact)
+        .RegisterSharedChatEvent($"{Prefix}{command.CommandText}", command.Exact)
         .AddAction(() =>
         {
           try
@@ -40,24 +41,35 @@ namespace MacroTools.CommandSystem
             if (command.Type == CommandType.Cheat && !TestMode.CheatCondition())
               return;
 
-            var parameters = SplitParameters(GetEventPlayerChatString());
+            var enteredChatString = GetEventPlayerChatString();
+            if (!EnteredCommandEndsWithSpaceOrNothing(command, enteredChatString)) 
+              return;
+
+            var parameters = SplitParameters(enteredChatString);
 
             if (parameters.Length < command.MinimumParameterCount)
             {
               DisplayTextToPlayer(GetTriggerPlayer(), 0, 0,
-                $"You must supply at least {command.MinimumParameterCount} parameters. If you're trying to use a parameter with multiple words, try enclosing it in quotes.");
+                $"|{CommandColor}{command.CommandText}:|r You must supply at least {command.MinimumParameterCount} parameters. If you're trying to use a parameter with multiple words, try enclosing it in quotes.");
               return;
             }
 
             var message = command.Execute(GetTriggerPlayer(), parameters);
             DisplayTextToPlayer(GetTriggerPlayer(), 0, 0,
-              command.Type == CommandType.Cheat ? $"|cffD27575CHEAT:|r {message}" : $"{message}");
+              command.Type == CommandType.Cheat ? $"|{CommandColor}CHEAT:|r {message}" : $"|{CommandColor}{command.CommandText}:|r {message}");
           }
           catch (Exception ex)
           {
             Console.WriteLine($"Failed to execute command: {ex}");
           }
         });
+    }
+
+    private static bool EnteredCommandEndsWithSpaceOrNothing(Command command, string enteredChatString)
+    {
+      var commandLength = command.CommandText.Length + Prefix.Length;
+      return enteredChatString.Length == commandLength ||
+             enteredChatString[commandLength] == ' ';
     }
 
     private static string[] SplitParameters(string inputString)
