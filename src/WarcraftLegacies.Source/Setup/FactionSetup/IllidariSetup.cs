@@ -1,4 +1,5 @@
-﻿using MacroTools.FactionSystem;
+﻿using MacroTools.Extensions;
+using MacroTools.FactionSystem;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup.FactionSetup
@@ -10,12 +11,14 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
     public static void Setup()
     {
       Illidari = new Faction(FactionNames.Illidan, PLAYER_COLOR_VIOLET, "|cffff00ff",
-        "ReplaceableTextures\\CommandButtons\\BTNEvilIllidan.blp")
+        @"ReplaceableTextures\CommandButtons\BTNEvilIllidan.blp")
       {
         UndefeatedResearch = FourCC("R02L"),
         StartingGold = 200,
         StartingLumber = 700,
         FoodMaximum = 250,
+        StartingCameraPosition = Regions.IllidanStartingPosition.Center,
+        StartingUnits = Regions.IllidanStartingPosition.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable),
         ControlPointDefenderUnitTypeId = Constants.UNIT_N0BB_CONTROL_POINT_DEFENDER_ILLIDARI_TOWER,
         IntroText = @"You are playing as the Betrayer, Illidan|r|r.
 

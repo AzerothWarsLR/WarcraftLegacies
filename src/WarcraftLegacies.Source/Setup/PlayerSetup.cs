@@ -42,6 +42,8 @@ namespace WarcraftLegacies.Source.Setup
 
       Player(18).SetFaction(SentinelsSetup.Sentinels);
       Player(18).SetTeam(TeamSetup.NightElves);
+      
+      Player(15).SetTeam(TeamSetup.Outland);
 
       Player(22).SetFaction(KultirasSetup.Kultiras);
       Player(22).SetTeam(TeamSetup.SouthAlliance);
