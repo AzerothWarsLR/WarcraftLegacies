@@ -45,7 +45,6 @@ namespace WarcraftLegacies.Source.Setup
       SharedFactionConfigSetup.Setup();
       PlayerSetup.Setup();
       new FactionChoiceDialogPresenter(GoblinSetup.Goblin, ZandalarSetup.Zandalar).Run(Player(8));
-      ZandalarGoblinChoiceDialogue.Setup();
       IllidariSunfuryChoiceDialogue.Setup();
       DalaGilneasChoiceDialogue.Setup();
       LegionForsakenChoiceDialogue.Setup();
