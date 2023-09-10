@@ -10,10 +10,13 @@ namespace WarcraftLegacies.Source.GameLogic
   /// <summary>Allows a player to choose between one of two factions at the start of the game.</summary>
   public sealed class FactionChoiceDialogPresenter
   {
+    private readonly List<FactionChoiceDialogPresenter> _activeChoices = new ();
+    
     private readonly dialog? _pickDialogue = DialogCreate();
     private readonly Dictionary<button, Faction> _factionPicksByButton = new();
     private Faction? _pickedFaction;
     private readonly List<Faction> _factionChoices;
+    private List<trigger> _triggers = new();
 
     /// <summary>Initializes a new instance of the <see cref="FactionChoiceDialogPresenter"/> class.</summary>
     public FactionChoiceDialogPresenter(params Faction[] factionChoices)
@@ -29,6 +32,7 @@ namespace WarcraftLegacies.Source.GameLogic
     /// <summary>Displays the faction choice to a player.</summary>
     public void Run(player whichPlayer)
     {
+      _activeChoices.Add(this);
       DialogSetMessage(_pickDialogue, "Pick your Faction");
       
       var timer = CreateTimer();
@@ -44,6 +48,16 @@ namespace WarcraftLegacies.Source.GameLogic
         DestroyTimer(GetExpiredTimer());
       });
     }
+
+    public void Dispose()
+    {
+      if (!_activeChoices.Contains(this)) 
+        return;
+      
+      _activeChoices.Remove(this);
+      foreach (var trigger in _triggers)
+        trigger.Destroy();;
+    }
     
     private void StartFactionPick(player whichPlayer)
     {
@@ -57,7 +71,6 @@ namespace WarcraftLegacies.Source.GameLogic
         TriggerAddAction(pickTrigger, () =>
         {
           _pickedFaction = faction;
-          GetTriggeringTrigger().Destroy();
         });
       }
       DestroyTimer(GetExpiredTimer());
@@ -76,6 +89,8 @@ namespace WarcraftLegacies.Source.GameLogic
       
       foreach (var unpickedFaction in _factionChoices)
         RemoveFaction(unpickedFaction);
+
+      Dispose();
     }
     
     private static void PickFaction(player whichPlayer, Faction whichFaction)
