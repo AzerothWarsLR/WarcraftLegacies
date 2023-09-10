@@ -10,6 +10,7 @@ namespace WarcraftLegacies.Source.UnitTypes
       SubSetupB();
       SubSetupPortals();
       SubSetupTrader();
+      SubSetupGates();
     }
 
     private static void SubSetupA()
@@ -139,6 +140,99 @@ namespace WarcraftLegacies.Source.UnitTypes
       });
       
       UnitType.Register(new UnitType(Constants.UNIT_H05W_TRADE_LUMBER_FOR_GOLD)
+      {
+        NeverDelete = true
+      });
+    }
+
+    private static void SubSetupGates()
+    {
+      UnitType.Register(new UnitType(Constants.UNIT_H00L_HORIZONTAL_WOODEN_GATE_OPEN)
+      {
+        NeverDelete = true
+      });
+      
+      UnitType.Register(new UnitType(Constants.UNIT_H00K_HORIZONTAL_WOODEN_GATE_CLOSED)
+      {
+        NeverDelete = true
+      });
+      
+      UnitType.Register(new UnitType(Constants.UNIT_H00M_HORIZONTAL_WOODEN_GATE_DEAD)
+      {
+        NeverDelete = true
+      });
+      
+      UnitType.Register(new UnitType(Constants.UNIT_H01X_GATE_OF_SILVERMOON_OPEN)
+      {
+        NeverDelete = true
+      });
+      
+      UnitType.Register(new UnitType(Constants.UNIT_H01W_GATE_OF_SILVERMOON_CLOSED)
+      {
+        NeverDelete = true
+      });
+      
+      UnitType.Register(new UnitType(Constants.UNIT_H01Y_GATE_OF_SILVERMOON_DEAD)
+      {
+        NeverDelete = true
+      });
+      
+      UnitType.Register(new UnitType(Constants.UNIT_H02J_STORMWIND_HARBOUR_GATE_OPEN)
+      {
+        NeverDelete = true
+      });
+      
+      UnitType.Register(new UnitType(Constants.UNIT_H02H_STORMWIND_HARBOUR_GATE_CLOSED)
+      {
+        NeverDelete = true
+      });
+      
+      UnitType.Register(new UnitType(Constants.UNIT_H02I_STORMWIND_HARBOUR_GATE_DEAD)
+      {
+        NeverDelete = true
+      });
+      
+      UnitType.Register(new UnitType(Constants.UNIT_H02S_GATES_OF_AHN_QIRAJ_OPEN)
+      {
+        NeverDelete = true
+      });
+      
+      UnitType.Register(new UnitType(Constants.UNIT_H02U_GATES_OF_AHN_QIRAJ_CLOSED)
+      {
+        NeverDelete = true
+      });
+      
+      UnitType.Register(new UnitType(Constants.UNIT_H02T_GATES_OF_AHN_QIRAJ_DEAD)
+      {
+        NeverDelete = true
+      });
+      
+      UnitType.Register(new UnitType(Constants.UNIT_H04R_ULDUM_GATE_OPEN)
+      {
+        NeverDelete = true
+      });
+      
+      UnitType.Register(new UnitType(Constants.UNIT_H04S_ULDUM_GATE_CLOSED)
+      {
+        NeverDelete = true
+      });
+      
+      UnitType.Register(new UnitType(Constants.UNIT_H04T_ULDUM_GATE_DEAD)
+      {
+        NeverDelete = true
+      });
+      
+      UnitType.Register(new UnitType(Constants.UNIT_H02M_GREYMANE_S_GATE_OPEN)
+      {
+        NeverDelete = true
+      });
+      
+      UnitType.Register(new UnitType(Constants.UNIT_H02K_GREYMANE_S_GATE_CLOSED)
+      {
+        NeverDelete = true
+      });
+      
+      UnitType.Register(new UnitType(Constants.UNIT_H02L_GREYMANE_S_GATE_DEAD)
       {
         NeverDelete = true
       });
