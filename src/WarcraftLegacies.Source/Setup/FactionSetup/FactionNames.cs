@@ -11,6 +11,7 @@
     public static string Dragonmaw => "Dragonmaw";
     public static string Druids => "Druids";
     public static string FelHorde => "Fel Horde";
+    public static string Cult => "Cult";
     public static string Frostwolf => "Frostwolf";
     public static string Gilneas => "Gilneas";
     public static string Goblin => "Bilgewater";
