@@ -11,7 +11,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
     
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
-      Frostwolf = new Faction(FactionNames.Frostwolf, PLAYER_COLOR_RED, "|c00ff0303",
+      Frostwolf = new Faction("Frostwolf", PLAYER_COLOR_RED, "|c00ff0303",
         "ReplaceableTextures\\CommandButtons\\BTNThrall.blp")
       {
         UndefeatedResearch = Constants.UPGRADE_R05V_FROSTWOLF_EXISTS,
