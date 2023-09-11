@@ -14,7 +14,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
     
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
-      Ironforge = new Faction(FactionNames.Dwarves, PLAYER_COLOR_YELLOW, "|C00FFFC01",
+      Ironforge = new Faction("Ironforge", PLAYER_COLOR_YELLOW, "|C00FFFC01",
         "ReplaceableTextures\\CommandButtons\\BTNHeroMountainKing.blp")
       {
         UndefeatedResearch = FourCC("R05T"),

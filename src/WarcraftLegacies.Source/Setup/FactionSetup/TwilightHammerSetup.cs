@@ -10,7 +10,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
     
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
-      TwilightHammer = new Faction(FactionNames.TwilightHammer, PLAYER_COLOR_LAVENDER, "|cff9680b4",
+      TwilightHammer = new Faction("TwilightHammer", PLAYER_COLOR_LAVENDER, "|cff9680b4",
         "ReplaceableTextures\\CommandButtons\\BTNChogall.blp")
       {
         ControlPointDefenderUnitTypeId = Constants.UNIT_N0DX_CONTROL_POINT_DEFENDER_TWILIGHT,
