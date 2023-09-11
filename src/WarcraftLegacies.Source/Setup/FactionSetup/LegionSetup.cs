@@ -22,7 +22,6 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
         CinematicMusic = "DarkAgents",
         ControlPointDefenderUnitTypeId = Constants.UNIT_U01U_CONTROL_POINT_DEFENDER_LEGION,
         StartingCameraPosition = Regions.LegionStartPos.Center,
-        StartingUnits = Regions.LegionStartPos.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable),
         IntroText = @"You are playing as the mighty |cffa2722dBurning Legion|r.
 
 You begin isolated on Argus. Once the Planet is under control, you will unlock 2 teleporters to Northrend and Alterac.
