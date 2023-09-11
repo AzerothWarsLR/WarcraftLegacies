@@ -270,7 +270,7 @@
     "Position": {
       "X": 18752,
       "Y": -10048,
-      "Z": 61.171875
+      "Z": 58.6875
     },
     "Rotation": 4.71238899230957,
     "Scale": {
@@ -847,6 +847,7 @@
     "Flags": 2,
     "OwnerId": 23,
     "HP": -1,
+    "MP": -1,
     "TargetAcquisition": -1,
     "HeroLevel": 1,
     "InventoryData": [],
@@ -930,6 +931,7 @@
     "Flags": 2,
     "OwnerId": 23,
     "HP": -1,
+    "MP": -1,
     "TargetAcquisition": -1,
     "HeroLevel": 1,
     "InventoryData": [],
@@ -1248,7 +1250,7 @@
     "Position": {
       "X": 18816,
       "Y": 20608,
-      "Z": 131.05061
+      "Z": 121
     },
     "Rotation": 4.71238899230957,
     "Scale": {
@@ -1628,6 +1630,7 @@
     "Flags": 2,
     "OwnerId": 23,
     "HP": -1,
+    "MP": -1,
     "TargetAcquisition": -1,
     "HeroLevel": 1,
     "InventoryData": [],
@@ -1974,7 +1977,7 @@
     "Position": {
       "X": 18944,
       "Y": -19968,
-      "Z": 176.86263
+      "Z": 172.25
     },
     "Rotation": 4.71238899230957,
     "Scale": {
@@ -2047,6 +2050,7 @@
     "Flags": 2,
     "OwnerId": 23,
     "HP": -1,
+    "MP": -1,
     "TargetAcquisition": -1,
     "HeroLevel": 1,
     "InventoryData": [],
@@ -2074,6 +2078,7 @@
     "Flags": 2,
     "OwnerId": 23,
     "HP": -1,
+    "MP": -1,
     "TargetAcquisition": -1,
     "HeroLevel": 1,
     "InventoryData": [],
