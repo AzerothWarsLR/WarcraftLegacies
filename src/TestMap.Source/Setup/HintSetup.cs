@@ -16,6 +16,8 @@ namespace TestMap.Source.Setup
       Hint.Register(new Hint("When you unlock a hero through a Quest, you usually still need to summon that hero from an Altar."));
       Hint.Register(new Hint("Workers don't need to return their lumber to a Town Hall or Lumber mill, unlike in melee gameplay."));
       Hint.Register(new Hint("The best way to travel between continent is to use Town portal scrolls!"));
+      Hint.Register(new Hint("You can send gold and lumber to your allies using the commands found in the Quests menu."));
+      Hint.Register(new Hint("You can share control with your allies using the command found in the Quests menu."));
     }
   }
 }

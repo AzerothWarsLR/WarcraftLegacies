@@ -66,7 +66,7 @@ namespace WarcraftLegacies.Source.Setup
       gameTime.StartTimer();
       CheatSetup.Setup(commandManager, cinematicMode);
       DialogueSetup.Setup(preplacedUnitSystem, allLegendSetup);
-      GameSettings.Setup();
+      MapFlagSetup.Setup();
       InfoQuests.Setup();
       DestructibleSetup.Setup(preplacedUnitSystem);
       ResearchSetup.Setup(preplacedUnitSystem);
@@ -113,7 +113,7 @@ namespace WarcraftLegacies.Source.Setup
         StartingMaxHitPoints = 1900,
         HostileStartingCurrentHitPoints = 1000,
         RegenerationAbility = Constants.ABILITY_A0UT_CP_LIFE_REGEN,
-        PiercingResistanceAbility = Constants.ABILITY_A13X_TOWER_RESITANCE_CONTROL_POINT_TOWER,
+        PiercingResistanceAbility = Constants.ABILITY_A13X_PIERCING_RESISTANCE_CONTROL_POINT_TOWER,
         IncreaseControlLevelAbilityTypeId = Constants.ABILITY_A0A8_FORTIFY_CONTROL_POINTS_SHARED,
         ControlLevelSettings = new ControlLevelSettings
         {

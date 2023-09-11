@@ -13,7 +13,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
     public LegendaryHero Ursoc { get; }
     public LegendaryHero Tortolla { get; }
     public Capital Nordrassil { get; }
-    public Capital Darnassus { get; }
+    public Capital TempleOfTheMoon { get; }
     public static int UnittypeCenariusGhost => Constants.UNIT_E00H_DEMIGOD_OF_THE_NIGHT_ELVES_DRUIDS_GHOST;
 
     public LegendDruids(PreplacedUnitSystem preplacedUnitSystem)
@@ -55,7 +55,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
         Essential = true
       };
 
-      Darnassus = new Capital
+      TempleOfTheMoon = new Capital
       {
         Unit = preplacedUnitSystem.GetUnit(FourCC("o029")),
       };
@@ -75,6 +75,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
       LegendaryHeroManager.Register(Ursoc);
       LegendaryHeroManager.Register(Tortolla);
       CapitalManager.Register(Nordrassil);
+      CapitalManager.Register(TempleOfTheMoon);
     }
   }
 }

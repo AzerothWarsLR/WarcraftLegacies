@@ -6,7 +6,7 @@ namespace MacroTools.Cheats
   public sealed class CheatLumber : Command
   {
     /// <inheritdoc />
-    public override string CommandText => "lumber";
+    public override string CommandText => "addlumber";
     
     /// <inheritdoc />
     public override bool Exact => false;

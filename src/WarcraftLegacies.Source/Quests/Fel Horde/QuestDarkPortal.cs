@@ -40,7 +40,7 @@ namespace WarcraftLegacies.Source.Quests.Fel_Horde
       _outerWaygate2 = outerWaygate2.Show(false);
       _outerWaygate3 = outerWaygate3.Show(false);
       AddObjective(new ObjectiveEitherOf(
-        new ObjectiveResearch(Constants.UPGRADE_R02C_OPEN_THE_DARK_PORTAL, Constants.UNIT_O008_HELLFIRE_CITADEL_FEL_HORDE, true),
+        new ObjectiveResearch(Constants.UPGRADE_R02C_THE_DARK_PORTAL_FEL_HORDE, Constants.UNIT_O008_HELLFIRE_CITADEL_FEL_HORDE, true),
         new ObjectiveTime(600)));
       AddObjective(new ObjectiveTime(480));
       Global = true;
@@ -74,7 +74,7 @@ namespace WarcraftLegacies.Source.Quests.Fel_Horde
 
     /// <inheritdoc />
     protected override void OnAdd(Faction whichFaction) =>
-      whichFaction.ModObjectLimit(Constants.UPGRADE_R02C_OPEN_THE_DARK_PORTAL, Faction.UNLIMITED);
+      whichFaction.ModObjectLimit(Constants.UPGRADE_R02C_THE_DARK_PORTAL_FEL_HORDE, Faction.UNLIMITED);
 
     private void OpenPortal()
     {

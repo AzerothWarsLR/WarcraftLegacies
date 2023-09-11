@@ -10,7 +10,8 @@ namespace WarcraftLegacies.Source.UnitTypes
       SubSetupB();
       SubSetupPortals();
       SubSetupTrader();
-      SubSetupGates();
+      SubSetupGatesA();
+      SubSetupGatesB();
     }
 
     private static void SubSetupA()
@@ -145,7 +146,7 @@ namespace WarcraftLegacies.Source.UnitTypes
       });
     }
 
-    private static void SubSetupGates()
+    private static void SubSetupGatesA()
     {
       UnitType.Register(new UnitType(Constants.UNIT_H00L_HORIZONTAL_WOODEN_GATE_OPEN)
       {
@@ -186,7 +187,10 @@ namespace WarcraftLegacies.Source.UnitTypes
       {
         NeverDelete = true
       });
-      
+    }
+
+    private static void SubSetupGatesB()
+    {
       UnitType.Register(new UnitType(Constants.UNIT_H02I_STORMWIND_HARBOUR_GATE_DEAD)
       {
         NeverDelete = true
