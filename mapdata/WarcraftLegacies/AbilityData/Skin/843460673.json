@@ -1,6 +1,6 @@
 {
   "OldId": 1986085697,
-  "NewId": 1161900097,
+  "NewId": 843460673,
   "Unk": [
     0
   ],
@@ -12,7 +12,7 @@
     },
     {
       "Id": 2020631137,
-      "Value": 0
+      "Value": 1
     },
     {
       "Id": 1718840929,
@@ -22,7 +22,7 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "The Shadow Labyrinth"
+      "Value": "Vulnerability Aura(Sunfury- Void Reaver)"
     },
     {
       "Id": 1952543841,
@@ -33,13 +33,13 @@
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "The Shadow Labyrinth"
+      "Value": "Vulnerability Aura"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Reduces the armor of hostile units in a radius of <A0AE,Area1> by 4."
+      "Value": "Reduces the armor of nearby hostile units by 3."
     }
   ]
 }
