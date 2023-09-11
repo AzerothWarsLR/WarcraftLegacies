@@ -12,7 +12,6 @@ namespace WarcraftLegacies.Source.Setup
     public static Team Outland { get; private set; }
     public static Team Gilneas { get; private set; }
     public static Team ScarletCrusade { get; private set; }
-    public static Team Forsaken { get; private set; }
     public static Team Scourge { get; private set; }
     public static Team Crisis { get; private set; }
     public static Team Draenei { get; private set; }
@@ -73,12 +72,6 @@ namespace WarcraftLegacies.Source.Setup
         VictoryMusic = "DarkVictory"
       };
       FactionManager.Register(ScarletCrusade);
-      
-      Forsaken = new Team("Forsaken")
-      {
-        VictoryMusic = "DarkVictory"
-      };
-      FactionManager.Register(Forsaken);
       
       Scourge = new Team("Northrend")
       {
