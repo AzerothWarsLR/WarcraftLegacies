@@ -21,7 +21,7 @@ namespace WarcraftLegacies.Source.Quests.Sunfury
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestArea52"/> class.
     /// </summary>
-    public QuestArea52(Rectangle rescueRect) : base("Area 52", "The Sunfury will need to settle the surrounding lands, Area 52 is a perfect target", "ReplaceableTextures\\CommandButtons\\BTNLordaeronPalace.blp")
+    public QuestArea52(Rectangle rescueRect) : base("Area 52", "The Sunfury will need to settle the surrounding lands, Area 52 is a perfect target", @"ReplaceableTextures\CommandButtons\BTNLordaeronPalace.blp")
     {
       Required = true;
       AddObjective(new ObjectiveKillAllInArea(new List<Rectangle> { Regions.Area52Unlock }, "in Area 52"));

@@ -18,7 +18,7 @@ namespace WarcraftLegacies.Source.Quests.Quelthalas
     /// </summary>
     public QuestForgottenKnowledge(Rectangle questRect) : base("Forgotten Knowledge",
       "The Ruins of the City of Suramar might unveil some lost technologies from the highborne",
-      "ReplaceableTextures\\CommandButtons\\BTNBloodelf_Arcane_Annihilator.blp")
+      @"ReplaceableTextures\CommandButtons\BTNBloodelf_Arcane_Annihilator.blp")
     {
       AddObjective(new ObjectiveControlLevel(
         ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N032_SURAMAR_20GOLD_MIN), 10));

@@ -78,7 +78,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
           Base = 0.20f,
           PerLevel = 0.20f
         },
-        Effect = "Abilities\\Spells\\Undead\\ReplenishMana\\SpiritTouchTarget.mdl"
+        Effect = @"Abilities\Spells\Undead\ReplenishMana\SpiritTouchTarget.mdl"
       });
 
       SpellSystem.Register(new RegrowTrees(Constants.ABILITY_A12L_REGROW_TREES_DOMES)

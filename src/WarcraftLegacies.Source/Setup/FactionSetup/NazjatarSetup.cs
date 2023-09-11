@@ -11,7 +11,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
       Nazjatar = new Faction("Nazjatar", PLAYER_COLOR_PURPLE, "|c00540081",
-        "ReplaceableTextures\\CommandButtons\\BTNNagaSummoner.blp")
+        @"ReplaceableTextures\CommandButtons\BTNNagaSummoner.blp")
       {
         ControlPointDefenderUnitTypeId = Constants.UNIT_U02T_CONTROL_POINT_DEFENDER_NAZJATAR,
       };

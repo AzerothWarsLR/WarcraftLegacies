@@ -21,7 +21,7 @@ namespace WarcraftLegacies.Source.Quests.Sunfury
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestUpperNetherstorm"/> class.
     /// </summary>
-    public QuestUpperNetherstorm(Rectangle rescueRect) : base("Upper Netherstorm", "The Sunfury will need to settle the surrounding lands, Upper Netherstorm is ripe for the taking", "ReplaceableTextures\\CommandButtons\\BTNArcaneCastle.blp")
+    public QuestUpperNetherstorm(Rectangle rescueRect) : base("Upper Netherstorm", "The Sunfury will need to settle the surrounding lands, Upper Netherstorm is ripe for the taking", @"ReplaceableTextures\CommandButtons\BTNArcaneCastle.blp")
     {
       Required = true;
       AddObjective(new ObjectiveKillAllInArea(new List<Rectangle> { Regions.UpperNetherstorm }, "in upper Netherstorm"));

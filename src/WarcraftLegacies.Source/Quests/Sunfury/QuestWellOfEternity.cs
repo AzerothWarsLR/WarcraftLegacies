@@ -15,7 +15,7 @@ namespace WarcraftLegacies.Source.Quests.Sunfury
 
     public QuestWellOfEternity(PreplacedUnitSystem preplacedUnitSystem, LegendaryHero kiljaeden) : base("The Well of Eternity",
       "The Maelstrom still hides the shattered Well of Eternity. With his immense power, Kil'jaeden can summon a new well that will bring forth the destruction of the world.",
-      "ReplaceableTextures\\CommandButtons\\BTNFountainOfLife.blp")
+      @"ReplaceableTextures\CommandButtons\BTNFountainOfLife.blp")
     {
       _kiljaeden = kiljaeden;
       _well = preplacedUnitSystem.GetUnit(Constants.UNIT_N0DZ_THE_WELL_OF_ETERNITY_SUNFURY_MAGIC).Show(false);

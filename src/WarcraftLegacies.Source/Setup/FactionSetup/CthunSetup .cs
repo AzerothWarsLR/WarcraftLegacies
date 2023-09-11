@@ -11,7 +11,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
       Cthun = new Faction("Ahn'qiraj", PLAYER_COLOR_WHEAT, "|cffaaa050",
-        "ReplaceableTextures\\CommandButtons\\BTNCthunIcon.blp")
+        @"ReplaceableTextures\CommandButtons\BTNCthunIcon.blp")
       {
         ControlPointDefenderUnitTypeId = Constants.UNIT_N0DW_CONTROL_POINT_DEFENDER_CTHUN_TOWER,
       };

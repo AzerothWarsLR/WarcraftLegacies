@@ -19,7 +19,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
     public static void Setup()
     {
       Dragonmaw = new Faction("Dragonmaw", PLAYER_COLOR_WHEAT, "|C00FFFC01",
-        "ReplaceableTextures\\CommandButtons\\BTNRedDragon.blp")
+        @"ReplaceableTextures\CommandButtons\BTNRedDragon.blp")
       {
         StartingGold = 250,
         StartingLumber = 700,

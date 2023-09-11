@@ -13,7 +13,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
       FelHorde = new Faction("Fel Horde", PLAYER_COLOR_GREEN, "|c0020c000",
-        "ReplaceableTextures\\CommandButtons\\BTNPitLord.blp")
+        @"ReplaceableTextures\CommandButtons\BTNPitLord.blp")
       {
         UndefeatedResearch = FourCC("R05L"),
         StartingGold = 200,

@@ -32,7 +32,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
           Base = 0.20f,
           PerLevel = 0.20f
         },
-        Effect = "Abilities\\Spells\\Undead\\ReplenishMana\\SpiritTouchTarget.mdl"
+        Effect = @"Abilities\Spells\Undead\ReplenishMana\SpiritTouchTarget.mdl"
       });
 
       var legendaryWarrior = new ChannelSpellOnAttack(Constants.UNIT_H00R_KING_OF_STORMWIND_DARK_GREEN,

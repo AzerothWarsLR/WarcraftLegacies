@@ -12,7 +12,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
       Lordaeron = new Faction("Lordaeron", PLAYER_COLOR_BLUE, "|c000042ff",
-        "ReplaceableTextures\\CommandButtons\\BTNArthas.blp")
+        @"ReplaceableTextures\CommandButtons\BTNArthas.blp")
       {
         StartingGold = 200,
         StartingLumber = 700,

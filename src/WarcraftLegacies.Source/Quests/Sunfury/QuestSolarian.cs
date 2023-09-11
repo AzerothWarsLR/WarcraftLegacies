@@ -16,7 +16,7 @@ namespace WarcraftLegacies.Source.Quests.Sunfury
     /// <param name="essence">Required to complete the quest.</param>
     public QuestSolarian(Artifact essence) : base("The High Astromancer",
       "The Astromancers research the Void. There would be no better artifact to study than the Essence of Murmur, a powerful Void Lord",
-      "ReplaceableTextures\\CommandButtons\\BTNSpell_Shadow_SummonVoidWalker.blp")
+      @"ReplaceableTextures\CommandButtons\BTNSpell_Shadow_SummonVoidWalker.blp")
     {
       AddObjective(new ObjectiveAcquireArtifact(essence));
       Required = true;

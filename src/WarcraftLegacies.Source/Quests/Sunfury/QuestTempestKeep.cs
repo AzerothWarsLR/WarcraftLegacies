@@ -19,7 +19,7 @@ namespace WarcraftLegacies.Source.Quests.Sunfury
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestTempestKeep"/> class.
     /// </summary>
-    public QuestTempestKeep(Rectangle rescueRect, Rectangle questRect1, Rectangle questRect2, Rectangle questRect3) : base("Eco-domes", "The Sunfury will need to adapt to the hostile environement of Netherstorm. The existing eco-domes are perfect for food production.", "ReplaceableTextures\\CommandButtons\\BTNFeatherMoonAura.blp")
+    public QuestTempestKeep(Rectangle rescueRect, Rectangle questRect1, Rectangle questRect2, Rectangle questRect3) : base("Eco-domes", "The Sunfury will need to adapt to the hostile environement of Netherstorm. The existing eco-domes are perfect for food production.", @"ReplaceableTextures\CommandButtons\BTNFeatherMoonAura.blp")
     {
       Required = true;
       AddObjective(new ObjectiveUpgrade(Constants.UNIT_H0C5_SANCTUARY_SUNFURY_T3,

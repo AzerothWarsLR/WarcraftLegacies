@@ -24,7 +24,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
         PermaDies = true,
         DeathMessage =
           "The Lord of the Forest, Cenarius, has fallen. The druids of the Kaldorei have lost their greatest mentor.",
-        DeathSfx = "Objects\\Spawnmodels\\NightElf\\EntBirthTarget\\EntBirthTarget.mdl",
+        DeathSfx = @"Objects\Spawnmodels\NightElf\EntBirthTarget\EntBirthTarget.mdl",
         PlayerColor = PLAYER_COLOR_CYAN,
       };
 

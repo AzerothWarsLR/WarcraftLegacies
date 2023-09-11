@@ -17,7 +17,7 @@ namespace WarcraftLegacies.Source.Quests.Warsong
     public QuestBloodpact(LegendaryHero Mannoroth, LegendaryHero grom)
       : base("The Bloodpact",
         "The Warsong is still vulnerable to the tentation of Mannoroth's Blood. If they drink it from the Fountain, they would have a surge of power. Although, Thrall would certainly hurry to save his friend Grom from the corruption.",
-        "ReplaceableTextures\\CommandButtons\\BTNBloodFury.blp")
+        @"ReplaceableTextures\CommandButtons\BTNBloodFury.blp")
     {
       AddObjective(new ObjectiveResearch(Constants.UPGRADE_R09O_DRINK_THE_BLOOD_OF_MANNOROTH, Constants.UNIT_NBFL_FOUNTAIN_OF_BLOOD_BLOODPACT));
       Global = true;

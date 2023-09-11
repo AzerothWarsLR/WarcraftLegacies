@@ -12,7 +12,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
       Quelthalas = new Faction("Quel'thalas", PLAYER_COLOR_CYAN, "|C0000FFFF",
-          "ReplaceableTextures\\CommandButtons\\BTNSylvanusWindrunner.blp")
+          @"ReplaceableTextures\CommandButtons\BTNSylvanusWindrunner.blp")
       {
         UndefeatedResearch = FourCC("R05U"),
         StartingGold = 200,

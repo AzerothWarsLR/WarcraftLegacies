@@ -12,7 +12,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
       WarsongClan = new Faction("Warsong", PLAYER_COLOR_ORANGE, "|c00ff8000",
-        "ReplaceableTextures\\CommandButtons\\BTNHellScream.blp")
+        @"ReplaceableTextures\CommandButtons\BTNHellScream.blp")
       {
         UndefeatedResearch = FourCC("R05W"),
         StartingGold = 200,
