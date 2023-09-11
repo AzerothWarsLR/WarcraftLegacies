@@ -39,7 +39,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Gives -4 armor to nearby hostile units."
+      "Value": "Reduces the armor of hostile units in a radius of <A0AE,Area1> by 4."
     }
   ]
 }
