@@ -55,6 +55,6 @@ namespace WarcraftLegacies.Source.Quests.Sunfury
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
-      $"Gain {GoldReward} gold, {LumberReward} lumber, and a base in Area 52.";
+      $"Gain {GoldReward} gold, {LumberReward} lumber, and a base in Area 52";
   }
 }
