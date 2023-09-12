@@ -8,18 +8,15 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "(Twilight DK)"
+      "Value": "(Scourge DK)"
     },
     {
       "Id": 2020631137,
-      "Value": 2
+      "Value": 1
     },
     {
       "Id": 2037082209,
       "Type": 3,
-<<<<<<< Updated upstream
-      "Value": "E"
-=======
       "Value": "W"
     },
     {
@@ -27,7 +24,6 @@
       "Id": 828536161,
       "Type": 3,
       "Value": "Raises \u003CA0OM,DataA1\u003E dead units in an area for \u003CA0OM,Dur1\u003E seconds."
->>>>>>> Stashed changes
     }
   ]
 }
