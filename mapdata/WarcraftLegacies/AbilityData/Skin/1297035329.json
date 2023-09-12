@@ -23,7 +23,11 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
+<<<<<<< HEAD
       "Value": "Raises \u003CA0OM,DataA1\u003E dead units in an area for \u003CA0OM,Dur1\u003E seconds."
+=======
+      "Value": "Raises 3 dead units in an area for 60 seconds."
+>>>>>>> parent of 2d587d42c (Revert "Added Animate Dead to Death Knights")
     }
   ]
 }
