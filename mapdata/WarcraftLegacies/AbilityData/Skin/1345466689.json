@@ -35,7 +35,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Replenish 25 mana to nearby player units. Additional mana will be consumed for each unit replenished.Righteousness|n|n|cff99b4d1Maximum of 50 units replenished per cast"
+      "Value": "Restores 25 mana to up to 50 nearby friendly units. Costs 25 mana plus an additional 25 mana per unit restored, up to a maximum of 625 mana."
     },
     {
       "Id": 2020631137,
