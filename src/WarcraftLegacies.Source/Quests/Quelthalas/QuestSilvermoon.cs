@@ -54,7 +54,7 @@ namespace WarcraftLegacies.Source.Quests.Quelthalas
 
     /// <inheritdoc />
     protected override string RewardDescription =>
-      "Control of all units in Silvermoon and enable Anasterian to be trained at the Altar";
+      "Control of all units in Silvermoon, unlock the Summon Mystic Defenders ability from Elven Runestones and enable Anasterian to be trained at the Altar";
 
     /// <inheritdoc />
     protected override void OnFail(Faction completingFaction) => 
