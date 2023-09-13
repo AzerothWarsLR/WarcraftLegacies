@@ -35,7 +35,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Transfer 25 mana to nearby player units."
+      "Value": "Replenish 25 mana to nearby player units. Additional mana will be consumed for each unit replenished.Righteousness|n|n|cff99b4d1Maximum of 50 units replenished per cast"
     },
     {
       "Id": 2020631137,
@@ -44,6 +44,16 @@
     {
       "Id": 2019718497,
       "Value": 0
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtonsDisabled\\ATCBlueEnergy.blp"
+    },
+    {
+      "Id": 1918989665,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtonsDisabled\\ATCBlueEnergy.blp"
     }
   ]
 }
