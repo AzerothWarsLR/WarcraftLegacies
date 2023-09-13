@@ -19,6 +19,11 @@
       "Id": 1700951398,
       "Type": 3,
       "Value": "This unit has been hit by Energy Grid; some of its mana has been restored."
+    },
+    {
+      "Id": 1953653094,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBlueEnergy.blp"
     }
   ]
 }
