@@ -49,7 +49,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
         LifeDrainedPerSecondLevel = 10,
         ManaDrainedPerSecondBase = 15,
         ManaDrainedPerSecondLevel = 5,
-        Range = 500,
+        Range = 800,
         Radius = 225,
         Interval = 0.1f
       };
