@@ -44,7 +44,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
         UnitType = Constants.UNIT_H00Q_KING_OF_QUEL_THALAS_QUEL_THALAS,
         PlayerColor = PLAYER_COLOR_MAROON,
         StartingXp = 1000,
-        StartingArtifactItemTypeIds = new[]
+        StartingArtifactItemTypeIds = new()
         {
           Constants.ITEM_I00J_FELO_MELORN
         }

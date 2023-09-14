@@ -31,7 +31,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
       Malfurion = new LegendaryHero("Malfurion")
       {
         UnitType = FourCC("Efur"),
-        StartingArtifactItemTypeIds = new[]
+        StartingArtifactItemTypeIds = new()
         {
           Constants.ITEM_I00C_G_HANIR_THE_MOTHER_TREE
         }
