@@ -17,7 +17,7 @@ namespace WarcraftLegacies.Source.Quests.Quelthalas
     private readonly Rectangle _secondChanceRect;
     private readonly Rectangle _rescueRect;
     private readonly List<unit> _rescueUnits;
-    private const int GoldOnFail = 500;
+    private const int GoldOnFail = 400;
     private const int LumberOnFail = 750;
 
     /// <summary>

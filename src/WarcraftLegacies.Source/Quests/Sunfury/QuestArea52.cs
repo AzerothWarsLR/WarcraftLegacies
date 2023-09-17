@@ -18,7 +18,7 @@ namespace WarcraftLegacies.Source.Quests.Sunfury
   public sealed class QuestArea52 : QuestData
   {
     private readonly List<unit> _rescueUnits;
-    private const int GoldReward = 400;
+    private const int GoldReward = 200;
     private const int LumberReward = 200;
     
     /// <summary>

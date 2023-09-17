@@ -50,7 +50,7 @@ namespace WarcraftLegacies.Source.Quests.Zandalar
       if (completingFaction.Player != null)
       {
         SetUnitOwner(_zulfarrak.Unit, completingFaction.Player, true);
-        completingFaction.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, 300);
+        completingFaction.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, 150);
         completingFaction.Player.RescueGroup(_rescueUnits);
       }
     }

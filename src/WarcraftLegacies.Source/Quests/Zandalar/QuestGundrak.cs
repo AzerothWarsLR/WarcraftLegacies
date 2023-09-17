@@ -44,7 +44,7 @@ namespace WarcraftLegacies.Source.Quests.Zandalar
       if (completingFaction.Player != null)
       {
         SetPlayerTechResearched(completingFaction.Player, _gundrakResearch, 1);
-        completingFaction.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, 300);
+        completingFaction.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, 150);
       }
     }
 
