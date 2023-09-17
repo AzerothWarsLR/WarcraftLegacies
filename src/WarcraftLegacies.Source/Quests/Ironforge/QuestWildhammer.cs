@@ -47,7 +47,7 @@ namespace WarcraftLegacies.Source.Quests.Ironforge
     /// <inheritdoc />
     protected override void OnFail(Faction completingFaction)
     {
-      Player(PLAYER_NEUTRAL_AGGRESSIVE).RescueGroup(_rescueUnits);
+      completingFaction.Player.RescueGroup(_rescueUnits);
     }
 
     /// <inheritdoc />

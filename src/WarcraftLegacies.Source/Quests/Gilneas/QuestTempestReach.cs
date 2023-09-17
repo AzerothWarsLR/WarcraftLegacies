@@ -44,7 +44,7 @@ namespace WarcraftLegacies.Source.Quests.Gilneas
     /// <inheritdoc/>
     protected override void OnFail(Faction whichFaction)
     {
-      Player(PLAYER_NEUTRAL_AGGRESSIVE).RescueGroup(_rescueUnits);
+      whichFaction.Player?.RescueGroup(_rescueUnits);
     }
   }
 }

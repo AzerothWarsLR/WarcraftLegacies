@@ -44,8 +44,8 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
     protected override string RewardDescription => "Control of all units in Tyr's Hand and Garithos is trainable";
 
     /// <inheritdoc />
-    protected override void OnFail(Faction completingFaction) => 
-      Player(PLAYER_NEUTRAL_AGGRESSIVE).RescueGroup(_rescueUnits);
+    protected override void OnFail(Faction completingFaction) =>
+      completingFaction.Player.RescueGroup(_rescueUnits);
 
     /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction) => 

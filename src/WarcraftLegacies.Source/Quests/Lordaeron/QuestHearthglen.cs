@@ -28,7 +28,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
       @"ReplaceableTextures\CommandButtons\BTNutherAlt.blp")
     {
       AddObjective(new ObjectiveLegendInRect(arthas, Regions.Hearthglen, "Hearthglen"));
-      AddObjective(new ObjectiveExpire(1235, Title));
+      AddObjective(new ObjectiveExpire(660, Title));
       AddObjective(new ObjectiveSelfExists());
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
       Required = true;
@@ -41,8 +41,8 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
     protected override string RewardDescription => "Control of all units in Hearthglen";
 
     /// <inheritdoc />
-    protected override void OnFail(Faction completingFaction) => 
-      Player(PLAYER_NEUTRAL_AGGRESSIVE).RescueGroup(_rescueUnits);
+    protected override void OnFail(Faction completingFaction) =>
+      completingFaction.Player.RescueGroup(_rescueUnits);
 
     /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction) => 

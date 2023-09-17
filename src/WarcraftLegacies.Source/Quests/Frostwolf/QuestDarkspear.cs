@@ -23,7 +23,7 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
     {
       _rescueUnits = Regions.EchoUnlock.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
       AddObjective(new ObjectiveSelfExists());
-      AddObjective(new ObjectiveExpire(1455, Title));
+      AddObjective(new ObjectiveExpire(480, Title));
       AddObjective(new ObjectiveAnyUnitInRect(Regions.EchoUnlock, "Echo Isles", true));
       Required = true;
       ResearchId = Constants.UPGRADE_R032_QUEST_COMPLETED_THE_DARKSPEAR_TROLLS;
@@ -39,7 +39,7 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
 
     /// <inheritdoc />
     protected override void OnFail(Faction completingFaction) =>
-      Player(PLAYER_NEUTRAL_AGGRESSIVE).RescueGroup(_rescueUnits);
+      completingFaction.Player.RescueGroup(_rescueUnits);
 
     /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction) =>

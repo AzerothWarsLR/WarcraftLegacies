@@ -39,8 +39,8 @@ namespace WarcraftLegacies.Source.Quests.Quelthalas
     protected override string RewardDescription => "Control of the Windrunner Spire";
 
     /// <inheritdoc />
-    protected override void OnFail(Faction completingFaction) => 
-      Player(PLAYER_NEUTRAL_AGGRESSIVE).RescueGroup(_rescueUnits);
+    protected override void OnFail(Faction completingFaction) =>
+      completingFaction.Player.RescueGroup(_rescueUnits);
 
     /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction) => 

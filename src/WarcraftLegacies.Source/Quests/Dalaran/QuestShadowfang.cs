@@ -30,7 +30,7 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
     {
       AddObjective(new ObjectiveUnitIsDead(direwolfToKill));
       AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N01D_SILVERPINE_FOREST_15GOLD_MIN)));
-      AddObjective(new ObjectiveExpire(1444, Title));
+      AddObjective(new ObjectiveExpire(660, Title));
       AddObjective(new ObjectiveSelfExists());
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
       Required = true;
@@ -44,8 +44,8 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
     protected override string RewardDescription => "Control of all units in Shadowfang";
 
     /// <inheritdoc />
-    protected override void OnFail(Faction completingFaction) => 
-      Player(PLAYER_NEUTRAL_AGGRESSIVE).RescueGroup(_rescueUnits);
+    protected override void OnFail(Faction completingFaction) =>
+      completingFaction.Player.RescueGroup(_rescueUnits);
 
     /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction) =>

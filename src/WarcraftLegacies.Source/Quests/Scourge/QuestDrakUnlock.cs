@@ -30,7 +30,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
     {
       AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N030_DRAK_THARON_KEEP_30GOLD_MIN)));
       AddObjective(new ObjectiveControlCapital(draktharonKeep, false));
-      AddObjective(new ObjectiveExpire(1140, Title));
+      AddObjective(new ObjectiveExpire(660, Title));
       AddObjective(new ObjectiveSelfExists());
       ResearchId = Constants.UPGRADE_R08J_QUEST_COMPLETED_DRAK_THARON_KEEP;
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
@@ -45,7 +45,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
     /// <inheritdoc/>
     protected override void OnFail(Faction completingFaction)
     {
-      Player(PLAYER_NEUTRAL_AGGRESSIVE).RescueGroup(_rescueUnits);
+      completingFaction.Player.RescueGroup(_rescueUnits);
     }
 
     /// <inheritdoc/>

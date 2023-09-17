@@ -37,7 +37,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
       foreach (var prequisite in prequisites)
         AddObjective(new ObjectiveCompleteQuest(prequisite));
       AddObjective(new ObjectiveControlLegend(arthas, false));
-      AddObjective(new ObjectiveExpire(1472, Title));
+      AddObjective(new ObjectiveExpire(660, Title));
       AddObjective(new ObjectiveSelfExists());
       ResearchId = Constants.UPGRADE_R04Y_QUEST_COMPLETED_HEARTHLANDS;
       _unitToMakeInvulnerable = unitToMakeInvulnerable;
@@ -58,7 +58,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
     /// <inheritdoc/>
     protected override void OnFail(Faction completingFaction)
     {
-      Player(PLAYER_NEUTRAL_AGGRESSIVE).RescueGroup(_rescueUnits);
+      completingFaction.Player.RescueGroup(_rescueUnits);
     }
 
     /// <inheritdoc/>

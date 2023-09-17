@@ -34,7 +34,7 @@ namespace WarcraftLegacies.Source.Quests.Sunfury
         Constants.UNIT_H0C7_BIODOME_SUNFURY_FARM));
       AddObjective(new ObjectiveBuildInRect(questRect3, "in one of the 3 Eco-dome in Netherstorm",
         Constants.UNIT_H0C7_BIODOME_SUNFURY_FARM));
-      AddObjective(new ObjectiveExpire(1430, Title));
+      AddObjective(new ObjectiveExpire(600, Title));
       AddObjective(new ObjectiveSelfExists());
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
       ResearchId = Constants.UPGRADE_R09I_QUEST_COMPLETED_ECO_DOMES;
@@ -42,7 +42,7 @@ namespace WarcraftLegacies.Source.Quests.Sunfury
 
     /// <inheritdoc/>
     protected override void OnFail(Faction completingFaction) =>
-      Player(PLAYER_NEUTRAL_AGGRESSIVE).RescueGroup(_rescueUnits);
+      completingFaction.Player.RescueGroup(_rescueUnits);
 
     /// <inheritdoc/>
     protected override void OnComplete(Faction whichFaction)

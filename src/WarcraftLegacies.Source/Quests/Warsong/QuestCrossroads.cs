@@ -25,7 +25,7 @@ namespace WarcraftLegacies.Source.Quests.Warsong
       AddObjective(
         new ObjectiveUnitIsDead(preplacedUnitSystem.GetUnit(FourCC("nrzm"), rescueRect.Center))); //Razorman Medicine Man
       AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N01T_NORTHERN_BARRENS_10GOLD_MIN)));
-      AddObjective(new ObjectiveExpire(1460, Title));
+      AddObjective(new ObjectiveExpire(480, Title));
       AddObjective(new ObjectiveSelfExists());
       Required = true;
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
@@ -49,7 +49,7 @@ namespace WarcraftLegacies.Source.Quests.Warsong
     /// <inheritdoc/>
     protected override void OnFail(Faction completingFaction)
     {
-      GiveCrossroads(Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      GiveCrossroads(completingFaction.Player);
       _rescueUnits.Clear();
     }
 

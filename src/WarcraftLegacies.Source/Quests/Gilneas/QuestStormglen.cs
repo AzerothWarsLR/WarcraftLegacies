@@ -24,7 +24,7 @@ namespace WarcraftLegacies.Source.Quests.Gilneas
     {
       AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N06V_BLACKWALD_10GOLD_MIN)));
       AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N084_TEMPEST_REACH_10GOLD_MIN)));
-      AddObjective(new ObjectiveExpire(950, Title));
+      AddObjective(new ObjectiveExpire(660, Title));
       AddObjective(new ObjectiveSelfExists());
       _rescueUnits = Regions.GilneasUnlock2.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
       Required = true;
@@ -45,7 +45,7 @@ namespace WarcraftLegacies.Source.Quests.Gilneas
     /// <inheritdoc/>
     protected override void OnFail(Faction whichFaction)
     {
-      Player(PLAYER_NEUTRAL_AGGRESSIVE).RescueGroup(_rescueUnits);
+      whichFaction.Player?.RescueGroup(_rescueUnits);
     }
   }
 }
