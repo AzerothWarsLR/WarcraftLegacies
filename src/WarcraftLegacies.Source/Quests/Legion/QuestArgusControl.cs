@@ -46,7 +46,7 @@ namespace WarcraftLegacies.Source.Quests.Legion
 
     /// <inheritdoc/>
     protected override string RewardFlavour =>
-      "Enable to research Astral Walk from the Burning Citadel and unlock the Portal spell in the Legion Teleporter";
+      "Enable to research Astral Walk from the Burning Citadel, Enable Tichondrius to be trained at the Altar and unlock the Portal spell in the Legion Teleporter";
 
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)

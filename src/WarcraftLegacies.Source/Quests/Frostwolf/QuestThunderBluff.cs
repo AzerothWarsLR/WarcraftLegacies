@@ -42,7 +42,7 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
     protected override string RewardFlavour => "The long march of the Tauren clans has ended, and they have joined forces with the Horde.";
 
     /// <inheritdoc />
-    protected override string RewardDescription => "Control of Thunder Bluff";
+    protected override string RewardDescription => "Control of Thunder Bluff and enable Cairne to be trained at the altar.";
 
     /// <inheritdoc />
     protected override void OnFail(Faction completingFaction)

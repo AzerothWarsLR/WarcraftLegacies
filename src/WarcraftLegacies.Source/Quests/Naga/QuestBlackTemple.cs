@@ -29,6 +29,7 @@ namespace WarcraftLegacies.Source.Quests.Naga
       AddObjective(new ObjectiveLegendInRect(illidan, Regions.IllidanBlackTempleUnlock, "Black Temple"));
       AddObjective(new ObjectiveExpire(660, Title));
       AddObjective(new ObjectiveSelfExists());
+      ResearchId = Constants.UPGRADE_R09Y_QUEST_COMPLETED_SEAT_OF_POWER;
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
       Required = true;
     }
@@ -37,7 +38,7 @@ namespace WarcraftLegacies.Source.Quests.Naga
     protected override string RewardFlavour => "The forces of Outland are now under Illidan's command.";
 
     /// <inheritdoc />
-    protected override string RewardDescription => $"Gain control of the Black Temple";
+    protected override string RewardDescription => $"Gain control of the Black Temple and enable Lady Vashj to be trained at the altar.";
 
     /// <inheritdoc />
     protected override void OnFail(Faction completingFaction)
