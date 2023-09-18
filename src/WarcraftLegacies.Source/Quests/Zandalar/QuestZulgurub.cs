@@ -33,7 +33,7 @@ namespace WarcraftLegacies.Source.Quests.Zandalar
     protected override string RewardFlavour => "Zul'gurub has fallen. The Gurubashi trolls lend their might to the Zandalari.";
 
     /// <inheritdoc/>
-    protected override string RewardDescription => "300 gold and the ability to train " + GetObjectName(_ravagerId) + "s from the " + GetObjectName(_trollShrineId);
+    protected override string RewardDescription => "150 gold and the ability to train " + GetObjectName(_ravagerId) + "s from the " + GetObjectName(_trollShrineId);
 
     /// <inheritdoc/>>
     protected override void OnComplete(Faction completingFaction)

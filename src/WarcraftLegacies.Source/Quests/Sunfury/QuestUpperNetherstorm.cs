@@ -42,7 +42,7 @@ namespace WarcraftLegacies.Source.Quests.Sunfury
     /// <inheritdoc/>
     protected override void OnComplete(Faction whichFaction)
     {
-      whichFaction.Player?.AddGold(200);
+      whichFaction.Player?.AddGold(GoldReward);
       whichFaction.Player?.AddLumber(200);
       if (whichFaction.Player != null)
         whichFaction.Player.RescueGroup(_rescueUnits);

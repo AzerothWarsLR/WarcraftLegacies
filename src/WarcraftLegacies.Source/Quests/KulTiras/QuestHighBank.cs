@@ -42,7 +42,7 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
-      $"Gain control of High Bank, earn 450 gold, and {_katherine.Name} gains 2000 experience";
+      $"Gain control of High Bank, earn 225 gold, and {_katherine.Name} gains 2000 experience";
 
     protected override void OnFail(Faction completingFaction)
     {

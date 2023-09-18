@@ -43,7 +43,7 @@ namespace WarcraftLegacies.Source.Quests.Gilneas
     }
 
     /// <inheritdoc/>
-    protected override void OnFail(Faction whichFaction)
+    protected override void OnFail(Faction completingFaction)
     {
       completingFaction.Player.RescueGroup(_rescueUnits);
     }

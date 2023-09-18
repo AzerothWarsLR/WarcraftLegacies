@@ -42,7 +42,7 @@ namespace WarcraftLegacies.Source.Quests.Zandalar
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
-      "Control of Zul'farrak, 300 gold tribute, enable to train Storm Wyrm and you can summon the hero Gahz'rilla from the Altar of Conquerors";
+      "Control of Zul'farrak, 150 gold tribute, enable to train Storm Wyrm and you can summon the hero Gahz'rilla from the Altar of Conquerors";
 
     /// <inheritdoc/>>
     protected override void OnComplete(Faction completingFaction)

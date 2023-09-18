@@ -36,7 +36,7 @@ namespace WarcraftLegacies.Source.Quests.Zandalar
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
-      $"300 gold and the ability to train {GetObjectName(_warlordId)}s from the {GetObjectName(_trollShrineId)}.";
+      $"150 gold and the ability to train {GetObjectName(_warlordId)}s from the {GetObjectName(_trollShrineId)}.";
 
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
