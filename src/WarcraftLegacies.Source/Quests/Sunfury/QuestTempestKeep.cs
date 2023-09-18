@@ -29,11 +29,11 @@ namespace WarcraftLegacies.Source.Quests.Sunfury
       AddObjective(new ObjectiveUpgrade(Constants.UNIT_H0C5_SANCTUARY_SUNFURY_T3,
         Constants.UNIT_H02P_HOLDING_SUNFURY_T1));
       AddObjective(new ObjectiveBuildInRect(questRect1, "in one of the 3 Eco-dome in Netherstorm",
-        Constants.UNIT_H0C7_BIODOME_SUNFURY_FARM));
+        Constants.UNIT_H0C7_ARBORETUM_SUNFURY_FARM));
       AddObjective(new ObjectiveBuildInRect(questRect2, "in one of the 3 Eco-dome in Netherstorm",
-        Constants.UNIT_H0C7_BIODOME_SUNFURY_FARM));
+        Constants.UNIT_H0C7_ARBORETUM_SUNFURY_FARM));
       AddObjective(new ObjectiveBuildInRect(questRect3, "in one of the 3 Eco-dome in Netherstorm",
-        Constants.UNIT_H0C7_BIODOME_SUNFURY_FARM));
+        Constants.UNIT_H0C7_ARBORETUM_SUNFURY_FARM));
       AddObjective(new ObjectiveExpire(600, Title));
       AddObjective(new ObjectiveSelfExists());
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
