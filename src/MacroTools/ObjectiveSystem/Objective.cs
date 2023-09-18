@@ -152,7 +152,7 @@ namespace MacroTools.ObjectiveSystem
       {
         effectPath = EligibleFactions.Contains(GetLocalPlayer()) ? MapEffectPath : "";
         _mapEffect = AddSpecialEffect(effectPath, Position.X, Position.Y);
-        BlzSetSpecialEffectColorByPlayer(_mapEffect, EligibleFactions.First().Player);
+        BlzSetSpecialEffectColorByPlayer(_mapEffect, GetLocalPlayer());
         BlzSetSpecialEffectHeight(_mapEffect, 100 + Environment.GetPositionZ(Position));
       }
 
