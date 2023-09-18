@@ -107,8 +107,12 @@ namespace MacroTools.ObjectiveSystem
     /// </summary>
     protected bool IsPlayerOnSameTeamAsAnyEligibleFaction(player whichPlayer)
     {
+      var playerTeam = whichPlayer.GetTeam();
+      if (playerTeam == null)
+        return false;
+      
       foreach (var eligibleFaction in EligibleFactions)
-        if (eligibleFaction.Player?.GetTeam() == whichPlayer.GetTeam())
+        if (eligibleFaction.Player != null && eligibleFaction.Player.GetTeam() == playerTeam)
           return true;
       
       return false;
