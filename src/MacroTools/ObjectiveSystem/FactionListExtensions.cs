@@ -13,8 +13,11 @@ namespace MacroTools.ObjectiveSystem
     /// Checks if any one the <see cref="Faction"/>s in <paramref name="factionList"/> are controlled by player
     /// <paramref name="whichPlayer"/>.
     /// </summary>
-    public static bool Contains(this List<Faction> factionList, player whichPlayer)
+    public static bool Contains(this List<Faction> factionList, player? whichPlayer)
     {
+      if (whichPlayer == null)
+        return false;
+      
       foreach (var faction in factionList)
         if (faction.Player == whichPlayer)
           return true;
