@@ -31,7 +31,6 @@ namespace MacroTools.ObjectiveSystem.Objectives.ControlPointBased
 
     private void OnTargetChangeOwner(object? sender, ControlPointOwnerChangeEventArgs controlPointOwnerChangeEventArgs)
     {
-      Console.WriteLine(controlPointOwnerChangeEventArgs.ControlPoint.Name);
       Progress = IsPlayerOnSameTeamAsAnyEligibleFaction(_target.Unit.OwningPlayer())
         ? QuestProgress.Complete
         : QuestProgress.Incomplete;
