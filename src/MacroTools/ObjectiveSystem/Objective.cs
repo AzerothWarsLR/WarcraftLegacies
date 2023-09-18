@@ -105,22 +105,12 @@ namespace MacroTools.ObjectiveSystem
     /// Returns true if the specified player is on the same team as any of the players that are eligible to contribute
     /// to this objective.
     /// </summary>
-    protected bool? IsPlayerOnSameTeamAsAnyEligibleFaction(player? whichPlayer)
+    protected bool IsPlayerOnSameTeamAsAnyEligibleFaction(player whichPlayer)
     {
-      if (whichPlayer == null)
-        return null;
-      
       foreach (var eligibleFaction in EligibleFactions)
-      {
-        if (eligibleFaction.Player == null)
-          return null;
-
-        if (eligibleFaction.Player == Player(PLAYER_NEUTRAL_PASSIVE) || eligibleFaction.Player == Player(PLAYER_NEUTRAL_AGGRESSIVE))
-          return null;
-        
-        if (eligibleFaction.Player.GetTeam() == whichPlayer.GetTeam())
+        if (eligibleFaction.Player?.GetTeam() == whichPlayer.GetTeam())
           return true;
-      }
+      
       return false;
     }
 
