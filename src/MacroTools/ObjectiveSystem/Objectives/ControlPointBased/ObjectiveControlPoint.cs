@@ -1,4 +1,5 @@
-﻿using MacroTools.ControlPointSystem;
+﻿using System;
+using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
@@ -30,9 +31,14 @@ namespace MacroTools.ObjectiveSystem.Objectives.ControlPointBased
 
     private void OnTargetChangeOwner(object? sender, ControlPointOwnerChangeEventArgs controlPointOwnerChangeEventArgs)
     {
+      Console.WriteLine(controlPointOwnerChangeEventArgs.ControlPoint.Name);
       Progress = IsPlayerOnSameTeamAsAnyEligibleFaction(_target.Unit.OwningPlayer())
         ? QuestProgress.Complete
         : QuestProgress.Incomplete;
+      
+      
+      Console.WriteLine(_target.Unit.OwningPlayer().GetTeam().Name);
+      Console.WriteLine(Progress.ToString());
     }
 
     private void OnFactionTeamJoin(object? sender, PlayerChangeTeamEventArgs playerChangeTeamEventArgs)
