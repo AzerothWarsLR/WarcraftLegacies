@@ -35,10 +35,6 @@ namespace MacroTools.ObjectiveSystem.Objectives.ControlPointBased
       Progress = IsPlayerOnSameTeamAsAnyEligibleFaction(_target.Unit.OwningPlayer())
         ? QuestProgress.Complete
         : QuestProgress.Incomplete;
-      
-      
-      Console.WriteLine(_target.Unit.OwningPlayer().GetTeam().Name);
-      Console.WriteLine(Progress.ToString());
     }
 
     private void OnFactionTeamJoin(object? sender, PlayerChangeTeamEventArgs playerChangeTeamEventArgs)
