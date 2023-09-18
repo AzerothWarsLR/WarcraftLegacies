@@ -1,6 +1,6 @@
 {
-  "OldId": 1634493032,
-  "NewId": 943927400,
+  "OldId": 2036888424,
+  "NewId": 875589748,
   "Unk": [
     0
   ],
@@ -8,36 +8,31 @@
     {
       "Id": 1868786037,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNSunfuryForge.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSunfuryShipyard.blp"
     },
     {
       "Id": 2020631157,
-      "Value": 2
+      "Value": 3
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "(Sunfury Research)"
+      "Value": " (Sunfury Shipyard)"
     },
     {
       "Id": 1818520949,
       "Type": 3,
-      "Value": "war3mapImported\\HighElfShop.mdl"
+      "Value": "war3mapImported\\ShipyardElfNightElfV1.01.mdl"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "E"
-    },
-    {
-      "Id": 1633907573,
-      "Type": 1,
-      "Value": 0.7
+      "Value": "R"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "Forge"
+      "Value": "Shipyard"
     },
     {
       "Id": 1668510581,
@@ -47,7 +42,7 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "Build Forge"
+      "Value": "Build Shipyard"
     },
     {
       "Id": 1935832437,
@@ -57,7 +52,12 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "An exclusive place of ingenuity for those clever enough to work there.|n|cfff5962dResearches: |RForged Weaponry, Armor Plating, Power Infusion, Improved Cannons, Fortified Hulls"
+      "Value": "Boat construction facility.|n|cfff5962dTrains:|R Transport, Scout, Frigate, Fireship, Galley, Boarding Vessel, Juggernaut, Bombard|R|n|n|cff00c4c4Cannot be built near small inland water areas."
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.8
     }
   ]
 }
