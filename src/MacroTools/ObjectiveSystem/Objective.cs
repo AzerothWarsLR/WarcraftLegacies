@@ -150,7 +150,7 @@ namespace MacroTools.ObjectiveSystem
       string effectPath;
       if (MapEffectPath != null && _mapEffect == null)
       {
-        effectPath = EligibleFactions.Contains(GetLocalPlayer()) is true ? MapEffectPath : "";
+        effectPath = EligibleFactions.Contains(GetLocalPlayer()) ? MapEffectPath : "";
         _mapEffect = AddSpecialEffect(effectPath, Position.X, Position.Y);
         BlzSetSpecialEffectColorByPlayer(_mapEffect, EligibleFactions.First().Player);
         BlzSetSpecialEffectHeight(_mapEffect, 100 + Environment.GetPositionZ(Position));
@@ -159,7 +159,7 @@ namespace MacroTools.ObjectiveSystem
       if (OverheadEffectPath == null || _overheadEffect != null || TargetWidget == null) 
         return;
       
-      effectPath = EligibleFactions.Contains(GetLocalPlayer()) is true ? OverheadEffectPath : "";
+      effectPath = EligibleFactions.Contains(GetLocalPlayer()) ? OverheadEffectPath : "";
       _overheadEffect = AddSpecialEffectTarget(effectPath, TargetWidget, "overhead");
     }
 
