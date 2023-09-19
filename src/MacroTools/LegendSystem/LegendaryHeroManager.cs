@@ -21,7 +21,7 @@ namespace MacroTools.LegendSystem
       if (legendaryHero.Unit != null)
       {
         if (ByUnit.ContainsKey(legendaryHero.Unit))
-          throw new Exception($"Tried to register {nameof(LegendaryHero)} {legendaryHero.Name} but it is already registered.");;
+          throw new Exception($"Tried to register {nameof(LegendaryHero)} {legendaryHero.Name} but it is already registered.");
         ByUnit.Add(legendaryHero.Unit, legendaryHero);
       }
         
