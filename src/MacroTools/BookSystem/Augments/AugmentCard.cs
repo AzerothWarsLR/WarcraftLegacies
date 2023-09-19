@@ -11,13 +11,12 @@ namespace MacroTools.BookSystem.Augments
       private const float BoxWidth = 0.16f;
       private const float BoxHeight = 0.28f;
       private readonly Augment _augment;
-      private readonly TextFrame _descriptionFrame;
-      
+
       public event EventHandler<AugmentCard>? OnChoose;
       
       public AugmentCard(Augment augment, Frame parent) : base(parent, BoxWidth, BoxHeight)
       {
-         _augment = augment;
+        _augment = augment;
 
          var icon = new Frame("BACKDROP", "ArtifactIcon", this)
          {
@@ -47,15 +46,15 @@ namespace MacroTools.BookSystem.Augments
          buttonFrame.SetPoint(FRAMEPOINT_BOTTOM, this, FRAMEPOINT_BOTTOM, 0, 0.01f);
          AddFrame(buttonFrame);
          
-         _descriptionFrame = new TextFrame("AugmentDescription", this, 0)
+         var descriptionFrame = new TextFrame("AugmentDescription", this, 0)
          {
-            Text = augment.Description
+           Text = augment.Description
          };
-         _descriptionFrame.SetPoint(FRAMEPOINT_LEFT, this, FRAMEPOINT_LEFT, 0.014f, 0);
-         _descriptionFrame.SetPoint(FRAMEPOINT_RIGHT, this, FRAMEPOINT_RIGHT, -0.014f, 0);
-         _descriptionFrame.SetPoint(FRAMEPOINT_TOP, title, FRAMEPOINT_BOTTOM, 0, -0.008f);
-         _descriptionFrame.SetPoint(FRAMEPOINT_BOTTOM, buttonFrame, FRAMEPOINT_TOP, 0, -0.002f);
-         AddFrame(_descriptionFrame);
+         descriptionFrame.SetPoint(FRAMEPOINT_LEFT, this, FRAMEPOINT_LEFT, 0.014f, 0);
+         descriptionFrame.SetPoint(FRAMEPOINT_RIGHT, this, FRAMEPOINT_RIGHT, -0.014f, 0);
+         descriptionFrame.SetPoint(FRAMEPOINT_TOP, title, FRAMEPOINT_BOTTOM, 0, -0.008f);
+         descriptionFrame.SetPoint(FRAMEPOINT_BOTTOM, buttonFrame, FRAMEPOINT_TOP, 0, -0.002f);
+         AddFrame(descriptionFrame);
       }
 
       private void Choose(player triggerplayer)
