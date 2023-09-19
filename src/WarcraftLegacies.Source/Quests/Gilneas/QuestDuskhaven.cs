@@ -15,7 +15,7 @@ namespace WarcraftLegacies.Source.Quests.Gilneas
   /// </summary>
   public sealed class QuestDuskhaven : QuestData
   {
-    private List<unit> _rescueUnits { get;}
+    private List<unit> RescueUnits { get;}
 
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestDuskhaven"/> class.
@@ -26,7 +26,7 @@ namespace WarcraftLegacies.Source.Quests.Gilneas
       AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N06V_BLACKWALD_10GOLD_MIN)));
       AddObjective(new ObjectiveExpire(1200, "Duskhaven"));
       AddObjective(new ObjectiveSelfExists());
-      _rescueUnits = Regions.GilneasUnlock4.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
+      RescueUnits = Regions.GilneasUnlock4.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
       Required = true;
     }
 
@@ -39,13 +39,13 @@ namespace WarcraftLegacies.Source.Quests.Gilneas
     /// <inheritdoc/>
     protected override void OnComplete(Faction whichFaction)
     {
-      whichFaction.Player?.RescueGroup(_rescueUnits);
+      whichFaction.Player?.RescueGroup(RescueUnits);
     }
 
     /// <inheritdoc/>
     protected override void OnFail(Faction whichFaction)
     {
-      Player(PLAYER_NEUTRAL_AGGRESSIVE).RescueGroup(_rescueUnits);
+      Player(PLAYER_NEUTRAL_AGGRESSIVE).RescueGroup(RescueUnits);
     }
   }
 }

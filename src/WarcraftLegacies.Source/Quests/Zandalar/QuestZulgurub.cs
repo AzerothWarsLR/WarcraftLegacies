@@ -14,9 +14,9 @@ namespace WarcraftLegacies.Source.Quests.Zandalar
   /// </summary>
   public sealed class QuestZulgurub : QuestData
   {
-    private const int _zulgurubResearch = Constants.UPGRADE_R02M_QUEST_COMPLETED_THE_HEART_OF_HAKKAR_WARSONG;
-    private const int _trollShrineId = Constants.UNIT_O04X_LOA_SHRINE_ZANDALARI_SPECIALIST;
-    private const int _ravagerId = Constants.UNIT_O021_RAVAGER_ZANDALAR;
+    private const int ZulgurubResearch = Constants.UPGRADE_R02M_QUEST_COMPLETED_THE_HEART_OF_HAKKAR_WARSONG;
+    private const int TrollShrineId = Constants.UNIT_O04X_LOA_SHRINE_ZANDALARI_SPECIALIST;
+    private const int RavagerId = Constants.UNIT_O021_RAVAGER_ZANDALAR;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestZulgurub"/> class
@@ -33,14 +33,14 @@ namespace WarcraftLegacies.Source.Quests.Zandalar
     protected override string RewardFlavour => "Zul'gurub has fallen. The Gurubashi trolls lend their might to the Zandalari.";
 
     /// <inheritdoc/>
-    protected override string RewardDescription => "300 gold and the ability to train " + GetObjectName(_ravagerId) + "s from the " + GetObjectName(_trollShrineId);
+    protected override string RewardDescription => "300 gold and the ability to train " + GetObjectName(RavagerId) + "s from the " + GetObjectName(TrollShrineId);
 
     /// <inheritdoc/>>
     protected override void OnComplete(Faction completingFaction)
     {
       if(completingFaction.Player != null)
       {
-        SetPlayerTechResearched(completingFaction.Player, _zulgurubResearch, 1);
+        SetPlayerTechResearched(completingFaction.Player, ZulgurubResearch, 1);
         completingFaction.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, 300);
       }
     }
@@ -48,7 +48,7 @@ namespace WarcraftLegacies.Source.Quests.Zandalar
     /// <inheritdoc/>
     protected override void OnAdd(Faction whichFaction)
     {
-      whichFaction.ModObjectLimit(_zulgurubResearch, Faction.UNLIMITED);
+      whichFaction.ModObjectLimit(ZulgurubResearch, Faction.UNLIMITED);
     }
   }
 }

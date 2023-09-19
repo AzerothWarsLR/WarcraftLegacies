@@ -15,7 +15,7 @@ namespace WarcraftLegacies.Source.Quests.Gilneas
   /// </summary>
   public sealed class QuestTempestReach: QuestData
   {
-    private List<unit> _rescueUnits { get; }
+    private List<unit> RescueUnits { get; }
 
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestTempestReach"/> class.
@@ -25,7 +25,7 @@ namespace WarcraftLegacies.Source.Quests.Gilneas
       AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N084_TEMPEST_REACH_10GOLD_MIN)));
       AddObjective(new ObjectiveExpire(670, Title));
       AddObjective(new ObjectiveSelfExists());
-      _rescueUnits = Regions.GilneasUnlock1.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
+      RescueUnits = Regions.GilneasUnlock1.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
       Required = true;
     }
 
@@ -38,13 +38,13 @@ namespace WarcraftLegacies.Source.Quests.Gilneas
     /// <inheritdoc/>
     protected override void OnComplete(Faction whichFaction)
     {
-      whichFaction.Player?.RescueGroup(_rescueUnits);
+      whichFaction.Player?.RescueGroup(RescueUnits);
     }
 
     /// <inheritdoc/>
     protected override void OnFail(Faction whichFaction)
     {
-      Player(PLAYER_NEUTRAL_AGGRESSIVE).RescueGroup(_rescueUnits);
+      Player(PLAYER_NEUTRAL_AGGRESSIVE).RescueGroup(RescueUnits);
     }
   }
 }

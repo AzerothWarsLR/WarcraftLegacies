@@ -8,11 +8,11 @@ namespace WarcraftLegacies.Source.Quests.Legion
   public sealed class QuestKillCapitalPalace : QuestData
   {
    
-    public QuestKillCapitalPalace(Capital CapitalPalace) : base("Unleash the Swarm",
+    public QuestKillCapitalPalace(Capital capitalPalace) : base("Unleash the Swarm",
       "Unlock your Dreadlords' full potential. Weaken the pitiful human resistance by destroying their beloved capital!",
       @"ReplaceableTextures\CommandButtons\BTNCarrionSwarm.blp")
     {
-      AddObjective(new ObjectiveCapitalDead(CapitalPalace));
+      AddObjective(new ObjectiveCapitalDead(capitalPalace));
       ResearchId = Constants.UPGRADE_R09T_QUEST_COMPLETED_UNLEASH_THE_SWARM;
     }
     

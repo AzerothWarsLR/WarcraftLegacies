@@ -23,7 +23,7 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
       @"ReplaceableTextures\CommandButtons\BTN_Lightning_Orc.blp")
     {
       _thrall = thrall;
-      var CPs = new List<ControlPoint>
+      var cPs = new List<ControlPoint>
       {
         ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N028_DROWNED_REACHES_10GOLD_MIN),
         ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N02P_MAK_ARA_10GOLD_MIN),
@@ -35,7 +35,7 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
       };
       AddObjective(new ObjectiveLegendLevel(_thrall, 8));
       AddObjective(new ObjectiveChannelRect(Regions.MaelstromChannel, "the Maelstrom", _thrall, 120, 120, "Taming Maelstrom Power"));
-      AddObjective(new ObjectiveControlPoints(CPs, "The Broken Isles and the Maelstrom"));
+      AddObjective(new ObjectiveControlPoints(cPs, "The Broken Isles and the Maelstrom"));
     }
 
     /// <inheritdoc />

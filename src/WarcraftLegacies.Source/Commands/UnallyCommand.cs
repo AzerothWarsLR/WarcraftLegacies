@@ -11,7 +11,7 @@ namespace WarcraftLegacies.Source.Commands
   /// </summary>
   public static class UnallyCommand
   {
-    private const string COMMAND = "-unally";
+    private const string Command = "-unally";
 
     private static void Actions()
     {
@@ -22,7 +22,7 @@ namespace WarcraftLegacies.Source.Commands
     public static void Setup()
     {
       var trig = CreateTrigger();
-      foreach (var player in Util.EnumeratePlayers()) TriggerRegisterPlayerChatEvent(trig, player, COMMAND, true);
+      foreach (var player in Util.EnumeratePlayers()) TriggerRegisterPlayerChatEvent(trig, player, Command, true);
 
       TriggerAddAction(trig, Actions);
     }
