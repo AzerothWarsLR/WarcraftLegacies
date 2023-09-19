@@ -13,12 +13,11 @@ namespace MacroTools.ObjectiveSystem.Objectives.LegendBased
 
     private readonly Legend _legendaryHero;
     private readonly region _target;
-    private readonly rect _targetRect;
 
-    public ObjectiveLegendInRect(LegendaryHero legendaryHero, Rectangle targetRect, string rectName)
+    public ObjectiveLegendInRect(LegendaryHero legendaryHero, Rectangle targetRectangle, string rectName)
     {
-      _targetRect = targetRect.Rect;
-      _target = RectToRegion(_targetRect);
+      var targetRect = targetRectangle.Rect;
+      _target = RectToRegion(targetRect);
       _legendaryHero = legendaryHero;
       Description = $"{legendaryHero.Name} is at {rectName}";
       TriggerRegisterEnterRegion(_entersRect.Trigger, _target, null);
@@ -28,7 +27,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.LegendBased
       PingPath = "MinimapQuestTurnIn";
       ShowsInQuestLog = true;
       DisplaysPosition = true;
-      Position = new(GetRectCenterX(_targetRect), GetRectCenterY(_targetRect));
+      Position = new(GetRectCenterX(targetRect), GetRectCenterY(targetRect));
     }
 
     private static region RectToRegion(rect whichRect)

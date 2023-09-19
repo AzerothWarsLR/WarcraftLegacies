@@ -13,11 +13,9 @@ namespace MacroTools.ObjectiveSystem.Objectives.TimeBased
     private readonly timer _expirationTimer;
     private readonly timer _warningTimer;
     private readonly string _questName;
-
-    private readonly List<Faction> assignedFactions = new();
-
-
-    /// <param name="duration">The time after which the objective will fail</param>
+    private readonly List<Faction> _assignedFactions = new();
+    
+    /// <param name="duration">The time after which the objective will fail.</param>
     /// <param name="questName">The name of the quest this objective belongs to.</param>
     public ObjectiveExpire(int duration, string questName)
     {
@@ -31,7 +29,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.TimeBased
 
     internal override void OnAdd(Faction whichFaction)
     {
-      assignedFactions.Add(whichFaction);
+      _assignedFactions.Add(whichFaction);
       Progress = QuestProgress.Complete;
     }
 
@@ -44,10 +42,11 @@ namespace MacroTools.ObjectiveSystem.Objectives.TimeBased
     private void OnWarning()
     {
       DestroyTimer(_warningTimer);
-      foreach (var assignedFaction in assignedFactions)
+      foreach (var assignedFaction in _assignedFactions)
       {
         if (Progress != QuestProgress.Complete)
-          DisplayTextToPlayer(assignedFaction.Player, 0, 0, $"\n|c00FF7F00WARNING|r - Quest {_questName} will expire in 2 minutes.");
+          DisplayTextToPlayer(assignedFaction.Player, 0, 0,
+            $"\n|c00FF7F00WARNING|r - Quest {_questName} will expire in 2 minutes.");
       }
     }
   }

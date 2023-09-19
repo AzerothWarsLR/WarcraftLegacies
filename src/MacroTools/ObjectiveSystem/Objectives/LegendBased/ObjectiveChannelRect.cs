@@ -20,25 +20,23 @@ namespace MacroTools.ObjectiveSystem.Objectives.LegendBased
     private readonly float _facing;
     private readonly string? _timerDialogTitle;
     private readonly Legend _targetLegend;
-
-    private readonly rect _targetRect;
     private Channel? _channel;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="ObjectiveChannelRect"/> class.
     /// </summary>
-    /// <param name="targetRect">Where the channeling must be done.</param>
+    /// <param name="targetRectangle">Where the channeling must be done.</param>
     /// <param name="rectName">A user-friendly name for the location the channeling must be done.</param>
     /// <param name="legendaryHero"></param>
     /// <param name="duration">How long the channel lasts.</param>
     /// <param name="facing">Which way the unit faces while channeling.</param>
     /// <param name="timerDialogTitle">If set, any <see cref="Channel"/> created by the <see cref="ObjectiveChannelRect"/>
     /// displays a countdown timer to all players with this title. If null, no timer is displayed.</param>
-    public ObjectiveChannelRect(Rectangle targetRect, string rectName, LegendaryHero legendaryHero, int duration,
+    public ObjectiveChannelRect(Rectangle targetRectangle, string rectName, LegendaryHero legendaryHero, int duration,
       float facing, string? timerDialogTitle = null)
     {
-      _targetRect = targetRect.Rect;
-      var target = RectToRegion(_targetRect);
+      var targetRect = targetRectangle.Rect;
+      var target = RectToRegion(targetRect);
       _targetLegend = legendaryHero;
       _duration = duration;
       Description = $"Have {legendaryHero.Name} channel at {rectName} for {duration} seconds";
@@ -50,7 +48,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.LegendBased
       TriggerRegisterEnterRegion(_entersRectTrig.Trigger, target, null);
       TriggerAddAction(_entersRectTrig.Trigger, OnRegionEnter);
       DisplaysPosition = true;
-      Position = new(GetRectCenterX(_targetRect), GetRectCenterY(_targetRect));
+      Position = new(GetRectCenterX(targetRect), GetRectCenterY(targetRect));
     }
     
     private void OnRegionEnter()

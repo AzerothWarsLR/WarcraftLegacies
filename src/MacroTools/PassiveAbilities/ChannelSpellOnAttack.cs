@@ -42,7 +42,7 @@ namespace MacroTools.PassiveAbilities
     /// <summary>
     /// The current level of this <see cref="Spell"/> instance for any specified unit.
     /// </summary>
-    protected int GetAbilityLevel(unit whichUnit) => GetUnitAbilityLevel(whichUnit, AbilityTypeId);
+    private int GetAbilityLevel(unit whichUnit) => GetUnitAbilityLevel(whichUnit, AbilityTypeId);
 
     /// <summary>
     /// Initializes a new instance of the <see cref="NoTargetSpellOnAttack"/> class.
