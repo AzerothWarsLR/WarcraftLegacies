@@ -2,7 +2,6 @@
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.QuestSystem;
 
-
 namespace WarcraftLegacies.Source.Quests.Dalaran
 {
   public sealed class QuestAegwynn : QuestData

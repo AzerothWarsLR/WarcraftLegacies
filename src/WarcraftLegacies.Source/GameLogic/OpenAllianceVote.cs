@@ -2,6 +2,7 @@
 using MacroTools.HintSystem;
 using WarcraftLegacies.Source.GameLogic.GameEnd;
 using WarcraftLegacies.Source.Setup;
+using WCSharp.Shared;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.GameLogic
@@ -40,7 +41,7 @@ namespace WarcraftLegacies.Source.GameLogic
     
     private static void ConcludeVote()
     {
-      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers()) 
+      foreach (var player in Util.EnumeratePlayers()) 
         DialogDisplay(player, VoteDialogue, false);
       DialogClear(VoteDialogue);
       DialogDestroy(VoteDialogue);
@@ -56,7 +57,7 @@ namespace WarcraftLegacies.Source.GameLogic
         AreAlliancesOpen = true;
         ControlPointVictory.CpsVictory = 1000;
         ControlPointVictory.CpsWarning = 1000;
-        foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
+        foreach (var player in Util.EnumeratePlayers())
         {
           SetPlayerTechResearched(player, Constants.UPGRADE_R068_QUEST_COMPLETED_NAVIGATION, 1);
         }
@@ -103,7 +104,7 @@ namespace WarcraftLegacies.Source.GameLogic
 
     private static void StartVote()
     {
-      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
+      foreach (var player in Util.EnumeratePlayers())
       {
         DialogDisplay(player, VoteDialogue, true);
       }

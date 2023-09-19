@@ -2,7 +2,6 @@
 using WarcraftLegacies.Source.Setup.FactionSetup;
 using WCSharp.Events;
 
-
 namespace WarcraftLegacies.Source.Researches.Stormwind
 {
   public static class TierVeteranGuard

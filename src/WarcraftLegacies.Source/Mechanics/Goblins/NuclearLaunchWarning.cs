@@ -1,8 +1,8 @@
 ﻿using MacroTools.Extensions;
-using static War3Api.Common;
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.Wrappers;
 using WCSharp.Shared.Data;
+using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Mechanics.Goblins
 {

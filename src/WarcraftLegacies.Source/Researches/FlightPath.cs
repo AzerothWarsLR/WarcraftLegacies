@@ -1,10 +1,10 @@
 ﻿using MacroTools;
 using MacroTools.Extensions;
 using MacroTools.ResearchSystems;
-using static War3Api.Common;
 using WarcraftLegacies.Source.Setup.FactionSetup;
 using WCSharp.Events;
 using WCSharp.Shared.Data;
+using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Researches
 {

@@ -1,7 +1,8 @@
-﻿using MacroTools.Extensions;
+﻿using System;
+using MacroTools.Extensions;
 using MacroTools.Timer;
-using System;
-using System.Linq;
+using WCSharp.Shared;
+using WCSharp.Shared.Data;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.GameLogic
@@ -45,7 +46,7 @@ namespace WarcraftLegacies.Source.GameLogic
       FogEnable(false);
       FogMaskEnable(false);
       
-      foreach (var unit in CreateGroup().EnumUnitsInRect(WCSharp.Shared.Data.Rectangle.WorldBounds).EmptyToList())
+      foreach (var unit in CreateGroup().EnumUnitsInRect(Rectangle.WorldBounds).EmptyToList())
         unit.PauseEx(true);
 
       _state = CinematicState.Active;
@@ -77,7 +78,7 @@ namespace WarcraftLegacies.Source.GameLogic
       DestroyTimer(_cinermaticTimer);
       DestroyTimer(_musicTimer);
       _state = CinematicState.Finished;
-      foreach (var unit in CreateGroup().EnumUnitsInRect(WCSharp.Shared.Data.Rectangle.WorldBounds).EmptyToList())
+      foreach (var unit in CreateGroup().EnumUnitsInRect(Rectangle.WorldBounds).EmptyToList())
         unit.PauseEx(false);
 
       OnTimerEnds?.Invoke(this, EventArgs.Empty);
@@ -85,7 +86,7 @@ namespace WarcraftLegacies.Source.GameLogic
 
     private static void PlayFactionMusic()
     {
-      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
+      foreach (var player in Util.EnumeratePlayers())
       {
         if (GetLocalPlayer() == player)
         {

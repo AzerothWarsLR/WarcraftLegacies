@@ -1,13 +1,13 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
+using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.FactionBased;
+using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.QuestSystem;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 using static War3Api.Blizzard;
-using MacroTools.ObjectiveSystem.Objectives.LegendBased;
-using MacroTools.LegendSystem;
 
 namespace WarcraftLegacies.Source.Quests.Dalaran
 {

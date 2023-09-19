@@ -1,4 +1,5 @@
-﻿using MacroTools.ControlPointSystem;
+﻿using System.Collections.Generic;
+using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
@@ -6,7 +7,6 @@ using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.Powers;
 using MacroTools.QuestSystem;
-using System.Collections.Generic;
 
 namespace WarcraftLegacies.Source.Quests.Frostwolf
 {

@@ -1,6 +1,7 @@
 using System;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
+using WCSharp.Shared;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.GameLogic.GameEnd
@@ -37,7 +38,7 @@ namespace WarcraftLegacies.Source.GameLogic.GameEnd
     public static void Setup()
     {
       var trigger = CreateTrigger();
-      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
+      foreach (var player in Util.EnumeratePlayers())
         TriggerRegisterPlayerEvent(trigger, player, EVENT_PLAYER_LEAVE);
       TriggerAddAction(trigger, PlayerLeavesGame);
     }

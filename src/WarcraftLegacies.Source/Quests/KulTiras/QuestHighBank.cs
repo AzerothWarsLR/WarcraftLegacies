@@ -1,4 +1,5 @@
-﻿using MacroTools.ControlPointSystem;
+﻿using System.Collections.Generic;
+using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
@@ -7,7 +8,6 @@ using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
-using System.Collections.Generic;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 

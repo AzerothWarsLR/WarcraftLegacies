@@ -36,7 +36,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
         StartingXp = 1000
       };
 
-      GreatForge = new Capital()
+      GreatForge = new Capital
       {
         Unit = preplacedUnitSystem.GetUnit(FourCC("h001")),
         DeathMessage = "The Great Forge has been extinguished.", //Todo: mediocre flavour

@@ -1,7 +1,8 @@
-﻿using static War3Api.Common;
-using static War3Api.Blizzard;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using MacroTools.Extensions;
+using WCSharp.Shared;
+using static War3Api.Common;
+using static War3Api.Blizzard;
 
 namespace WarcraftLegacies.Source.Setup
 {
@@ -21,7 +22,7 @@ namespace WarcraftLegacies.Source.Setup
     public static void Setup()
     {
       _hideUnit = Regions.HideUnitBottomLeft.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
-      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
+      foreach (var player in Util.EnumeratePlayers())
       {
         Unally(player, Player(bj_PLAYER_NEUTRAL_VICTIM));
         Unally(Player(bj_PLAYER_NEUTRAL_VICTIM), player);

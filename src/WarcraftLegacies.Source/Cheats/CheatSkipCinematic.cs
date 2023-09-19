@@ -1,6 +1,7 @@
 ﻿using System;
 using MacroTools.Cheats;
 using WarcraftLegacies.Source.GameLogic;
+using WCSharp.Shared;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Cheats
@@ -42,7 +43,7 @@ namespace WarcraftLegacies.Source.Cheats
     private void DelayedSetup()
     {
       var trig = CreateTrigger();
-      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
+      foreach (var player in Util.EnumeratePlayers())
         TriggerRegisterPlayerEvent(trig, player, EVENT_PLAYER_END_CINEMATIC);
       TriggerAddAction(trig, Actions);
     }

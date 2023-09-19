@@ -1,6 +1,7 @@
 ﻿using System;
 using MacroTools.Extensions;
 using MacroTools.Timer;
+using WCSharp.Shared;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.GameLogic
@@ -32,7 +33,7 @@ namespace WarcraftLegacies.Source.GameLogic
       {
         try
         {
-          foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
+          foreach (var player in Util.EnumeratePlayers())
             DisplayTextToPlayer(player, 0, 0, player.GetFaction()?.IntroText ?? "");
           TimerEnd();
         }

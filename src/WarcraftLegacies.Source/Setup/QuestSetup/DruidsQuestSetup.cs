@@ -1,5 +1,6 @@
 ﻿using MacroTools.QuestSystem;
 using WarcraftLegacies.Source.Quests.Druids;
+using WarcraftLegacies.Source.Setup.FactionSetup;
 
 namespace WarcraftLegacies.Source.Setup.QuestSetup
 {
@@ -13,7 +14,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
     /// </summary>
     public static void Setup(ArtifactSetup artifactSetup, AllLegendSetup allLegendSetup)
     {
-      var druids = FactionSetup.DruidsSetup.Druids;
+      var druids = DruidsSetup.Druids;
       var newQuest = druids.AddQuest(new QuestMalfurionAwakens(Regions.MoongladeVillage, Regions.TeldrassilUnlock, Regions.CenarionHoldUnlock,
         allLegendSetup.Druids.Nordrassil.Unit, artifactSetup.HornOfCenarius,
         allLegendSetup.Druids.Malfurion));
