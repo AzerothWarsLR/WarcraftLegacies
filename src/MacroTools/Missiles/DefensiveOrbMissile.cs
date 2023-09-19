@@ -62,7 +62,7 @@ namespace MacroTools.Missiles
       !BlzIsUnitInvulnerable(whichUnit) && !IsUnitType(whichUnit, UNIT_TYPE_ANCIENT) &&
       !IsUnitType(whichUnit, UNIT_TYPE_FLYING);
 
-    private class UnitHit
+    private sealed class UnitHit
     {
       public float Age { get; set; }
       public unit Unit { get; }
