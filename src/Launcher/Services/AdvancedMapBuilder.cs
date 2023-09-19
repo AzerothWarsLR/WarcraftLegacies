@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using CSharpLua;
 using Launcher.Extensions;
+using Launcher.Migrations;
 using Launcher.Settings;
 using Microsoft.CodeAnalysis;
 using War3Api.Object.Enums;
@@ -84,7 +85,7 @@ namespace Launcher.Services
     
     private void SupplementMap(Map map, AdvancedMapBuilderOptions options)
     {
-      ConfigureControlPointData(map);
+      ApplyMigrations(map);
       
       if (options.SetMapTitles)
         SetMapTitles(map, _mapSettings.Version);
@@ -96,33 +97,11 @@ namespace Launcher.Services
         AddCSharpCode(map, options.SourceCodeProjectFolderPath, _compilerSettings);
     }
 
-    private static void ConfigureControlPointData(Map map)
+    private static void ApplyMigrations(Map map)
     {
       var objectDatabase = map.GetObjectDatabaseFromMap();
-      foreach (var unit in objectDatabase.GetUnits().Where(IsControlPoint))
-      {
-        unit.CombatAttack1DamageBase = -1;
-        unit.CombatAttack1DamageNumberOfDice = 1;
-        unit.CombatAttack1DamageSidesPerDie = 1;
-        unit.CombatAttacksEnabled = AttackBits.Attack1Only;
-        unit.CombatAttack1Range = 900;
-        unit.CombatAcquisitionRange = 900;
-        unit.CombatAttack1TargetsAllowed = new[] { Target.Bridge };
-        unit.EditorDisplayAsNeutralHostile = true;
-        unit.StatsRace = UnitRace.Creeps;
-        unit.PathingPathingMap = @"PathTextures\4x4SimpleSolid.tga";
-      }
-
-      map.UnitObjectData = objectDatabase.GetAllData().UnitData;
+      new ControlPointMigration().Migrate(map, objectDatabase);
       map.UnitObjectData.FixUnkValues();
-    }
-    
-    private static bool IsControlPoint(War3Api.Object.Unit unit)
-    {
-      return unit.IsStatsUnitClassificationModified &&
-             unit.StatsUnitClassification.Contains(UnitClassification.Sapper) &&
-             unit.StatsUnitClassification.Contains(UnitClassification.Ancient) &&
-             !unit.StatsUnitClassification.Contains(UnitClassification.Mechanical);
     }
     
     private static void SetMapTitles(Map map, string version)
