@@ -61,12 +61,12 @@ namespace MacroTools.ObjectiveSystem.Objectives.ControlPointBased
 
     private void OnTargetChangeOwner(object? sender, ControlPointOwnerChangeEventArgs controlPointOwnerChangeEventArgs)
     {
-      var cp = controlPointOwnerChangeEventArgs.ControlPoint;
-      if (_controlPoints.Select(cp => cp.UnitType).Contains(cp.UnitType))
+      var changedControlPoint = controlPointOwnerChangeEventArgs.ControlPoint;
+      if (_controlPoints.Select(cp => cp.UnitType).Contains(changedControlPoint.UnitType))
       {
-        if (!IsPlayerOnSameTeamAsAnyEligibleFaction(controlPointOwnerChangeEventArgs.FormerOwner) && IsPlayerOnSameTeamAsAnyEligibleFaction(cp.Unit.OwningPlayer()))
+        if (!IsPlayerOnSameTeamAsAnyEligibleFaction(controlPointOwnerChangeEventArgs.FormerOwner) && IsPlayerOnSameTeamAsAnyEligibleFaction(changedControlPoint.Unit.OwningPlayer()))
           ControlPointCount++;
-        else if (IsPlayerOnSameTeamAsAnyEligibleFaction(controlPointOwnerChangeEventArgs.FormerOwner) && !IsPlayerOnSameTeamAsAnyEligibleFaction(cp.Unit.OwningPlayer()))
+        else if (IsPlayerOnSameTeamAsAnyEligibleFaction(controlPointOwnerChangeEventArgs.FormerOwner) && !IsPlayerOnSameTeamAsAnyEligibleFaction(changedControlPoint.Unit.OwningPlayer()))
           ControlPointCount--;
       }
 
