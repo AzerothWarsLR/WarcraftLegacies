@@ -52,6 +52,10 @@ namespace WarcraftLegacies.Source.Quests.Ironforge
     /// <inheritdoc/>
     protected override void OnFail(Faction completingFaction)
     {
+      var rescuer = completingFaction.ScoreStatus == ScoreStatus.Defeated
+        ? Player(PLAYER_NEUTRAL_AGGRESSIVE)
+        : completingFaction.Player;
+
       GrantDunMorogh(completingFaction.Player);
     }
 

@@ -63,10 +63,14 @@ namespace WarcraftLegacies.Source.Quests.Druids
     /// <inheritdoc />
     protected override void OnFail(Faction completingFaction)
     {
-      completingFaction.Player.RescueGroup(_moongladeUnits);
-      completingFaction.Player.RescueGroup(_darnassusUnits);
-      completingFaction.Player.RescueGroup(_cenarionHoldUnits);
       _worldTree.Rescue(completingFaction.Player);
+      var rescuer = completingFaction.ScoreStatus == ScoreStatus.Defeated
+        ? Player(PLAYER_NEUTRAL_AGGRESSIVE)
+        : completingFaction.Player;
+
+      rescuer.RescueGroup(_moongladeUnits);
+      rescuer.RescueGroup(_darnassusUnits);
+      rescuer.RescueGroup(_cenarionHoldUnits);
     }
 
     /// <inheritdoc />

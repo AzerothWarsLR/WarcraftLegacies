@@ -52,8 +52,12 @@ namespace WarcraftLegacies.Source.Quests.Fel_Horde
     /// <inheritdoc />
     protected override void OnFail(Faction completingFaction)
     {
-      completingFaction.Player.RescueGroup(_rescueUnits1);
-      completingFaction.Player.RescueGroup(_rescueUnits2);
+      var rescuer = completingFaction.ScoreStatus == ScoreStatus.Defeated
+        ? Player(PLAYER_NEUTRAL_AGGRESSIVE)
+        : completingFaction.Player;
+
+      rescuer.RescueGroup(_rescueUnits1);
+      rescuer.RescueGroup(_rescueUnits2);
     }
 
     /// <inheritdoc />

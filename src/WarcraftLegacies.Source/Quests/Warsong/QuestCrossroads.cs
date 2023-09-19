@@ -49,8 +49,11 @@ namespace WarcraftLegacies.Source.Quests.Warsong
     /// <inheritdoc/>
     protected override void OnFail(Faction completingFaction)
     {
+      var rescuer = completingFaction.ScoreStatus == ScoreStatus.Defeated
+        ? Player(PLAYER_NEUTRAL_AGGRESSIVE)
+        : completingFaction.Player;
+
       GiveCrossroads(completingFaction.Player);
-      _rescueUnits.Clear();
     }
 
     /// <inheritdoc/>

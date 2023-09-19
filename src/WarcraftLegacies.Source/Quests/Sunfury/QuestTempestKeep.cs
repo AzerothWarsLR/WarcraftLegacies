@@ -41,8 +41,14 @@ namespace WarcraftLegacies.Source.Quests.Sunfury
     }
 
     /// <inheritdoc/>
-    protected override void OnFail(Faction completingFaction) =>
-      completingFaction.Player.RescueGroup(_rescueUnits);
+    protected override void OnFail(Faction completingFaction)
+    {
+      var rescuer = completingFaction.ScoreStatus == ScoreStatus.Defeated
+        ? Player(PLAYER_NEUTRAL_AGGRESSIVE)
+        : completingFaction.Player;
+
+      rescuer.RescueGroup(_rescueUnits);
+    }
 
     /// <inheritdoc/>
     protected override void OnComplete(Faction whichFaction)

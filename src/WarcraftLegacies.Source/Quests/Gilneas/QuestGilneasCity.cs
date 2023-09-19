@@ -59,16 +59,20 @@ namespace WarcraftLegacies.Source.Quests.Gilneas
     }
 
     /// <inheritdoc/>
-    protected override void OnFail(Faction whichFaction)
+    protected override void OnFail(Faction completingFaction)
     {
-      if (whichFaction.Player == null)
+      if (completingFaction.Player == null)
         return;
       _gilneasDoor
         .SetInvulnerable(false);
-      SetUnitOwner(_gilneasDoor, whichFaction.Player, true);
+      SetUnitOwner(_gilneasDoor, completingFaction.Player, true);
       RockSystem.Register(new RockGroup(Regions.GilneasUnlock5, FourCC("LTrc"), 1));
+   
+      var rescuer = completingFaction.ScoreStatus == ScoreStatus.Defeated
+        ? Player(PLAYER_NEUTRAL_AGGRESSIVE)
+        : completingFaction.Player;
 
-      whichFaction.Player.RescueGroup(_rescueUnits);
+      rescuer.RescueGroup(_rescueUnits);
     }
 
     private static bool RescuableFilter(unit filterUnit) => filterUnit.GetTypeId() != Constants.UNIT_O05Q_GREYMANETOWER_GILNEAS_REAL_TOWER;

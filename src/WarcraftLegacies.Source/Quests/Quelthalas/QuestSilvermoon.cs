@@ -57,9 +57,14 @@ namespace WarcraftLegacies.Source.Quests.Quelthalas
       "Control of all units in Silvermoon, unlock the Summon Mystic Defenders ability from Elven Runestones and enable Anasterian to be trained at the Altar";
 
     /// <inheritdoc />
+
     protected override void OnFail(Faction completingFaction)
     {
-      completingFaction.Player.RescueGroup(_rescueUnits);
+      var rescuer = completingFaction.ScoreStatus == ScoreStatus.Defeated
+        ? Player(PLAYER_NEUTRAL_AGGRESSIVE)
+        : completingFaction.Player;
+
+      rescuer.RescueGroup(_rescueUnits);
       if (UnitAlive(_elvenRunestone))
         _silvermoon.Unit?.SetInvulnerable(true);
       _sunwell.Unit?.SetInvulnerable(true);
