@@ -25,6 +25,7 @@ jobs:
                 uses: muno92/resharper_inspectcode@1.6.2
                 with:
                     solutionPath: ./WarcraftLegacies.sln
+                    minimumReportSeverity: SUGGESTION
                     minimumSeverity: warning
                     failOnIssue: 1
                     include: |
