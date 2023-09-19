@@ -101,6 +101,7 @@ namespace Launcher.Services
     {
       var objectDatabase = map.GetObjectDatabaseFromMap();
       new ControlPointMigration().Migrate(map, objectDatabase);
+      new ControlPointNameMigration().Migrate(map);
       map.UnitObjectData.FixUnkValues();
     }
     

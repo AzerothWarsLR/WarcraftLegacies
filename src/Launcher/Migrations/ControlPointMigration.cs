@@ -5,9 +5,8 @@ using War3Net.Build;
 
 namespace Launcher.Migrations
 {
-  public sealed class ControlPointMigration : IObjectMigration
+  public sealed class ControlPointMigration
   {
-    /// <inheritdoc />
     public void Migrate(Map map, ObjectDatabase objectDatabase)
     {
       foreach (var unit in objectDatabase.GetUnits().Where(IsControlPoint))
