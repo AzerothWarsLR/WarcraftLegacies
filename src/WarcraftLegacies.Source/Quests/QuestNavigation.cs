@@ -1,5 +1,6 @@
 ﻿
 using MacroTools.ObjectiveSystem.Objectives.TimeBased;
+using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
 
 namespace WarcraftLegacies.Source.Quests
@@ -18,7 +19,7 @@ namespace WarcraftLegacies.Source.Quests
       "The rough waters of Azeroth will require time to master.",
       @"ReplaceableTextures\CommandButtons\BTNHumanTransport.blp")
     {
-      AddObjective(new ObjectiveTime(780));
+      AddObjective(new ObjectiveResearch(Constants.UPGRADE_R04R_FORTIFIED_HULLS_UNIVERSAL_UPGRADE, Constants.UNIT_HBLA_BLACKSMITH_LORDAERON_RESEARCH));
       ResearchId = Constants.UPGRADE_R068_QUEST_COMPLETED_NAVIGATION;
     }
 
@@ -26,7 +27,7 @@ namespace WarcraftLegacies.Source.Quests
     protected override string RewardDescription => "Boats will be trainable.";
 
     /// <inheritdoc/>
-    protected override string RewardFlavour => "Navigation has become available.";
+    protected override string RewardFlavour => "Your faction has mastered navigation and the art of boat building";
 
   }
 }

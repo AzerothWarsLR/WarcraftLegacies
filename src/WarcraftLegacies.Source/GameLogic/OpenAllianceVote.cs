@@ -56,10 +56,7 @@ namespace WarcraftLegacies.Source.GameLogic
         AreAlliancesOpen = true;
         ControlPointVictory.CpsVictory = 1000;
         ControlPointVictory.CpsWarning = 1000;
-        foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
-        {
-          SetPlayerTechResearched(player, Constants.UPGRADE_R068_QUEST_COMPLETED_NAVIGATION, 1);
-        }
+
         Player(3).SetTeam(TeamSetup.Legion);
         Player(23).SetTeam(TeamSetup.Legion);
 
