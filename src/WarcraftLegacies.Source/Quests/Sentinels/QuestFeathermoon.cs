@@ -39,7 +39,7 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
 
     /// <inheritdoc />
     protected override string RewardDescription =>
-      "Control of all units in Feathermoon Stronghold and enable Tyrande to be trained at the Altar of Watchers.";
+      "Control of all units in Feathermoon Stronghold and enable Tyrande to be trained at the Altar of Watchers";
 
     /// <inheritdoc />
     protected override void OnFail(Faction completingFaction)
