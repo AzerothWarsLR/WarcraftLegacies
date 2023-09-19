@@ -55,7 +55,7 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
         ? Player(PLAYER_NEUTRAL_AGGRESSIVE)
         : completingFaction.Player;
 
-      rescuer.RescueGroup(_rescueUnits);
+      GrantDarkshire(rescuer);
     }
 
     /// <inheritdoc/>
