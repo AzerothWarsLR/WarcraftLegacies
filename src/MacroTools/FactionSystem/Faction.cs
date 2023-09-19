@@ -380,6 +380,9 @@ namespace MacroTools.FactionSystem
     /// <param name="augment"></param>
     public void AddAugment(Augment augment)
     {
+      if (_augments.Contains(augment))
+        return;
+      
       _augments.Add(augment);
       augment.OnAdd(this);
     }
@@ -614,7 +617,7 @@ namespace MacroTools.FactionSystem
       foreach (var (key, _) in _objectLevels)
         Player?.SetObjectLevel(key, 0);
 
-      foreach (var (key, value) in _abilityAvailabilities)
+      foreach (var (key, _) in _abilityAvailabilities)
         Player?.SetAbilityAvailability(key, true);
     }
 

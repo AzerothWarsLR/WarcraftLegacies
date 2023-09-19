@@ -12,8 +12,6 @@ namespace MacroTools.Buffs
     /// Appears when the caster dies for any reason.
     /// </summary>
     public string SpecialEffect { get; init; } = @"Abilities\Spells\Orc\FeralSpirit\feralspiritdone.mdl";
-    
-    private readonly AnimalCompanionCaster? _casterBuff;
 
     public override void OnDeath(bool killingBlow)
     {
@@ -37,7 +35,6 @@ namespace MacroTools.Buffs
     
     public AnimalCompanionTarget(unit caster, unit? target, AnimalCompanionCaster animalCompanionCasterBuff) : base(caster, target)
     {
-      _casterBuff = animalCompanionCasterBuff;
     }
   }
 }
