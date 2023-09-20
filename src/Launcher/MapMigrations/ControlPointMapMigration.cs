@@ -3,12 +3,12 @@ using War3Api.Object;
 using War3Api.Object.Enums;
 using War3Net.Build;
 
-namespace Launcher.MapDataMigrations
+namespace Launcher.MapMigrations
 {
   /// <summary>
   /// Sets up all Control Point objects in the map.
   /// </summary>
-  public sealed class ControlPointMigration
+  public sealed class ControlPointMapMigration : IMapMigration
   {
     public void Migrate(Map map, ObjectDatabase objectDatabase)
     {
