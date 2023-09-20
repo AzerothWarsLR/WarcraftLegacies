@@ -74,7 +74,6 @@ Salvage the wrecked ships, establish a base and gather your troops to move inlan
       Frostwolf.ModObjectLimit(FourCC("Rost"), Faction.UNLIMITED); //Shaman Adept Training
       Frostwolf.ModObjectLimit(FourCC("Rowd"), Faction.UNLIMITED); //Witch Doctor Adept Training
       Frostwolf.ModObjectLimit(FourCC("Rowt"), Faction.UNLIMITED); //Spirit Walker Adept Training
-      Frostwolf.ModObjectLimit(FourCC("R023"), Faction.UNLIMITED); //Spiritual Infusion
       Frostwolf.ModObjectLimit(FourCC("Rolf"), Faction.UNLIMITED); //Liquid Fire
       Frostwolf.ModObjectLimit(FourCC("Rosp"), Faction.UNLIMITED); //Spiked Barricades
       Frostwolf.ModObjectLimit(FourCC("Rorb"), Faction.UNLIMITED); //reinforced Defenses

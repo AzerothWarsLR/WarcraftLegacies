@@ -85,7 +85,6 @@ The Plague of Undeath is coming and Lordaeron will need your help with the Scour
       Quelthalas.ModObjectLimit(FourCC("R00G"), Faction.UNLIMITED); //Feint
       Quelthalas.ModObjectLimit(FourCC("R01R"), Faction.UNLIMITED); //Improved Bows
       Quelthalas.ModObjectLimit(FourCC("R029"), Faction.UNLIMITED); //Magus Adept Training
-      Quelthalas.ModObjectLimit(FourCC("R00K"), Faction.UNLIMITED); //Power Infusion
       Quelthalas.ModObjectLimit(FourCC("Rhcd"), Faction.UNLIMITED); //Cloud
       Quelthalas.ModObjectLimit(FourCC("Rhss"), Faction.UNLIMITED); //Control Magic
       Quelthalas.ModObjectLimit(FourCC("Rhlh"), Faction.UNLIMITED); //Improved Lumber Harvesting

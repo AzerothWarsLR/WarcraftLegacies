@@ -75,7 +75,6 @@ The Night Elves are aware of your presence and are gathering a mighty host again
 
       WarsongClan.ModObjectLimit(FourCC("Robs"), Faction.UNLIMITED); //Berserker Strength
       WarsongClan.ModObjectLimit(FourCC("Rotr"), Faction.UNLIMITED); //Troll Regeneration
-      WarsongClan.ModObjectLimit(FourCC("R023"), Faction.UNLIMITED); //Spiritual Infusion
       WarsongClan.ModObjectLimit(FourCC("R01J"), Faction.UNLIMITED); //Ensnare
       WarsongClan.ModObjectLimit(FourCC("R02I"), Faction.UNLIMITED); //Ogre Magi Adept Training
       WarsongClan.ModObjectLimit(FourCC("R03Q"), Faction.UNLIMITED); //Warlock Adept Training

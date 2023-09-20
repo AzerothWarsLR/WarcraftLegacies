@@ -77,7 +77,6 @@ Once you have secured your holdings, gather your army and destroy the Orcish Hor
       Sentinels.ModObjectLimit(FourCC("R00S"), Faction.UNLIMITED); //Priestess Adept Training
       Sentinels.ModObjectLimit(FourCC("R064"), Faction.UNLIMITED); //Sentinel Fortifications
       Sentinels.ModObjectLimit(FourCC("R01W"), Faction.UNLIMITED); //Trapper Adept Training
-      Sentinels.ModObjectLimit(FourCC("R026"), Faction.UNLIMITED); //Elune's Power Infusion
       Sentinels.ModObjectLimit(FourCC("Reib"), Faction.UNLIMITED); //Improved Bows
       Sentinels.ModObjectLimit(FourCC("Reuv"), Faction.UNLIMITED); //Ultravision
       Sentinels.ModObjectLimit(FourCC("Remg"), Faction.UNLIMITED); //Upgraded Moon Glaive

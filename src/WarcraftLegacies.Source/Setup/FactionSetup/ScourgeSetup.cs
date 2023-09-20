@@ -98,7 +98,6 @@ When Plague hits Lordaeron, a great portal will be opened between Dragonblight a
       Scourge.ModObjectLimit(FourCC("Rugf"), Faction.UNLIMITED); //Ghoul Frenzy
       Scourge.ModObjectLimit(FourCC("Rune"), Faction.UNLIMITED); //Necromancer Adept Training
       Scourge.ModObjectLimit(FourCC("Ruwb"), Faction.UNLIMITED); //Web
-      Scourge.ModObjectLimit(FourCC("R02A"), Faction.UNLIMITED); //Chaos Infusion
       Scourge.ModObjectLimit(FourCC("R00Q"), Faction.UNLIMITED); //Chilling Aura
       Scourge.ModObjectLimit(FourCC("R04V"), Faction.UNLIMITED); //Improved Hypothermic Breath
       Scourge.ModObjectLimit(Constants.UPGRADE_R01X_EPIDEMIC_SCOURGE, Faction.UNLIMITED);

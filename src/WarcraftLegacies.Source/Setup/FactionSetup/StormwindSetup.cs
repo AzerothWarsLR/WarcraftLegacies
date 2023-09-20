@@ -83,7 +83,6 @@ Make sure to communicate with your Dwarven and Kul'tiran allies, as they will be
       //Researches
       Stormwind.ModObjectLimit(FourCC("R02E"), Faction.UNLIMITED); //Chaplain Adept Training
       Stormwind.ModObjectLimit(FourCC("R005"), Faction.UNLIMITED); //Clergyman Adept Training
-      Stormwind.ModObjectLimit(FourCC("R00K"), Faction.UNLIMITED); //Power Infusion
       Stormwind.ModObjectLimit(FourCC("R02B"), Faction.UNLIMITED); //Steel Plating
       Stormwind.ModObjectLimit(FourCC("Rhan"), Faction.UNLIMITED); //Animal War Training
       Stormwind.ModObjectLimit(FourCC("Rhlh"), Faction.UNLIMITED); //Improved Lumber Harvesting
