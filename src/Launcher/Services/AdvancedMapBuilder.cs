@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using CSharpLua;
 using Launcher.Extensions;
-using Launcher.MapDataMigrations;
+using Launcher.MapMigrations;
 using Launcher.Settings;
 using Microsoft.CodeAnalysis;
 using War3Net.Build;
@@ -99,8 +99,9 @@ namespace Launcher.Services
     private static void ApplyMigrations(Map map)
     {
       var objectDatabase = map.GetObjectDatabaseFromMap();
-      new ControlPointMigration().Migrate(map, objectDatabase);
-      new GoldBountyMigration().Migrate(map, objectDatabase);
+      foreach (var migration in MapMigrationProvider.GetMapMigrations())
+        migration.Migrate(map, objectDatabase);
+
       map.UnitObjectData.FixUnkValues();
     }
     

@@ -8,7 +8,7 @@ using Launcher.DataTransferObjects;
 using Launcher.DTOMappers;
 using Launcher.Extensions;
 using Launcher.JsonConverters;
-using Launcher.MapDataMigrations;
+using Launcher.MapMigrations;
 using War3Net.Build;
 using War3Net.Build.Audio;
 using War3Net.Build.Environment;
@@ -364,9 +364,8 @@ namespace Launcher.Services
     private static void ApplyMigrations(Map map)
     {
       var objectDatabase = map.GetObjectDatabaseFromMap();
-      new ControlPointMigration().Migrate(map, objectDatabase);
-      new GoldBountyMigration().Migrate(map, objectDatabase);
-      map.UnitObjectData.FixUnkValues();
+      foreach (var migration in MapMigrationProvider.GetMapMigrations())
+        migration.Migrate(map, objectDatabase);
     }
   }
 }

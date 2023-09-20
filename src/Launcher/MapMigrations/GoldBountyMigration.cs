@@ -1,15 +1,14 @@
 ﻿using System.Linq;
-using Launcher.Extensions;
 using War3Api.Object;
 using War3Api.Object.Enums;
 using War3Net.Build;
 
-namespace Launcher.MapDataMigrations
+namespace Launcher.MapMigrations
 {
   /// <summary>
   /// Assigns gold bounties based on level to all units in the map.
   /// </summary>
-  public sealed class GoldBountyMigration
+  public sealed class GoldBountyMigration : IMigration
   {
     public void Migrate(Map map, ObjectDatabase objectDatabase)
     {
