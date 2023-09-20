@@ -7,8 +7,7 @@
       return new IMapMigration[]
       {
         new ControlPointMapMigration(),
-        new GoldBountyMapMigration(),
-        new ControlPointNameMapMigration()
+        new GoldBountyMapMigration()
       };
     }
   }
