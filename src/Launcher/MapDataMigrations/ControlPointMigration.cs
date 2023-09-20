@@ -5,11 +5,11 @@ using War3Net.Build;
 
 namespace Launcher.MapDataMigrations
 {
+  /// <summary>
+  /// Sets up all Control Point objects in the map.
+  /// </summary>
   public sealed class ControlPointMigration
   {
-    /// <summary>
-    /// Sets up all Control Point objects in the map.
-    /// </summary>
     public void Migrate(Map map, ObjectDatabase objectDatabase)
     {
       foreach (var unit in objectDatabase.GetUnits().Where(IsControlPoint))
