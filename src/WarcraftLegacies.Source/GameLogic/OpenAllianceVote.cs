@@ -50,7 +50,7 @@ namespace WarcraftLegacies.Source.GameLogic
 
       if (_warCount >= 12)
       {
-        DisplayTextToPlayer(GetLocalPlayer(), 0, 0, "The Great war begins! Boats are now available from the start");
+        DisplayTextToPlayer(GetLocalPlayer(), 0, 0, "The Great war begins!");
         Hint.Register(
           new Hint("You can change alliances by using the commands -invite, -uninvite, -join, and -unally."));
         AreAlliancesOpen = true;
@@ -82,7 +82,7 @@ namespace WarcraftLegacies.Source.GameLogic
       
       else if (_voteCount > 0)
       {
-        DisplayTextToPlayer(GetLocalPlayer(), 0, 0, "Alliances are open! Boats are now available from the start");
+        DisplayTextToPlayer(GetLocalPlayer(), 0, 0, "Alliances are open!");
         Hint.Register(
           new Hint("You can change alliances by using the commands -invite, -uninvite, -join, and -unally."));
         AreAlliancesOpen = true;
