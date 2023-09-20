@@ -6,6 +6,9 @@ using War3Net.Build;
 
 namespace Launcher.MapDataMigrations
 {
+  /// <summary>
+  /// Assigns gold bounties based on level to all units in the map.
+  /// </summary>
   public sealed class GoldBountyMigration
   {
     public void Migrate(Map map, ObjectDatabase objectDatabase)
