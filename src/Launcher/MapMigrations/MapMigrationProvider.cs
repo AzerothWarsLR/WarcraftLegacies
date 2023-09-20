@@ -2,12 +2,13 @@
 {
   public static class MapMigrationProvider
   {
-    public static IMigration[] GetMapMigrations()
+    public static IMapMigration[] GetMapMigrations()
     {
-      return new IMigration[]
+      return new IMapMigration[]
       {
-        new ControlPointMigration(),
-        new GoldBountyMigration()
+        new ControlPointMapMigration(),
+        new GoldBountyMapMigration(),
+        new ControlPointNameMapMigration()
       };
     }
   }

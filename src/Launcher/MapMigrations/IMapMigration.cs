@@ -3,7 +3,7 @@ using War3Net.Build;
 
 namespace Launcher.MapMigrations
 {
-  public interface IMigration
+  public interface IMapMigration
   {
     public void Migrate(Map map, ObjectDatabase objectDatabase);
   }

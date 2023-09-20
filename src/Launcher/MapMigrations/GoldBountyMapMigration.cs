@@ -8,7 +8,7 @@ namespace Launcher.MapMigrations
   /// <summary>
   /// Assigns gold bounties based on level to all units in the map.
   /// </summary>
-  public sealed class GoldBountyMigration : IMigration
+  public sealed class GoldBountyMapMigration : IMapMigration
   {
     public void Migrate(Map map, ObjectDatabase objectDatabase)
     {

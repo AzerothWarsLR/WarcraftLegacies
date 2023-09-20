@@ -8,7 +8,7 @@ namespace Launcher.MapMigrations
   /// <summary>
   /// Sets up all Control Point objects in the map.
   /// </summary>
-  public sealed class ControlPointMigration : IMigration
+  public sealed class ControlPointMapMigration : IMapMigration
   {
     public void Migrate(Map map, ObjectDatabase objectDatabase)
     {
