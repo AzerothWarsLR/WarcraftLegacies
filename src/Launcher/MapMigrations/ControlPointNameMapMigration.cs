@@ -24,7 +24,7 @@ namespace Launcher.MapMigrations
         
         var textName = textNameModification.ValueAsString;
         if (textName.Contains("gold/min"))
-          unitSkin.Modifications[textNameId].Value = Regex.Replace(textName, @"(.*) \(.*gold/min\)", "$1");
+          unitSkin.SetDataModification(textNameId, Regex.Replace(textName, @"(.*) \(.*gold/min\)", "$1"));
       }
     }
   }
