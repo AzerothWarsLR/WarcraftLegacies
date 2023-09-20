@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using CSharpLua;
 using Launcher.Extensions;
-using Launcher.Migrations;
+using Launcher.MapDataMigrations;
 using Launcher.Settings;
 using Microsoft.CodeAnalysis;
 using War3Api.Object.Enums;

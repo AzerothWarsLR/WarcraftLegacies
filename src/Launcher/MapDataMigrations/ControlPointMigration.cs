@@ -3,7 +3,7 @@ using War3Api.Object;
 using War3Api.Object.Enums;
 using War3Net.Build;
 
-namespace Launcher.Migrations
+namespace Launcher.MapDataMigrations
 {
   public sealed class ControlPointMigration
   {

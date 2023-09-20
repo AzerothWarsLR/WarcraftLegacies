@@ -5,7 +5,7 @@ using Launcher.Extensions;
 using War3Net.Build;
 using War3Net.Build.Object;
 
-namespace Launcher.Migrations
+namespace Launcher.MapDataMigrations
 {
   /// <summary>
   /// Renames all Control Points in the map such that their names contain how much gold they give.
@@ -38,7 +38,7 @@ namespace Launcher.Migrations
     {
       const int abilitiesNormalKey = 1768055157;
       return _incomeByAbility.Keys.Any(x =>
-        unitSkin.GetDataModification(abilitiesNormalKey)?.ValueAsString.Contains(x) == true);
+        unitSkin.TryGetDataModification(abilitiesNormalKey)?.ValueAsString.Contains(x) == true);
     }
     
     private void RenameControlPoint(SimpleObjectModification unitSkin)
