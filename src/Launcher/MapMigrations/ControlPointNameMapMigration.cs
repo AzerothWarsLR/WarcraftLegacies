@@ -23,8 +23,8 @@ namespace Launcher.MapMigrations
           continue;
         
         var textName = textNameModification.ValueAsString;
-        if (textName.Contains("gold/min")) 
-          Regex.Replace(textName, @"(.*) \(.*gold/min\)", "$1");
+        if (textName.Contains("gold/min"))
+          unitSkin.Modifications[textNameId].Value = Regex.Replace(textName, @"(.*) \(.*gold/min\)", "$1");
       }
     }
   }
