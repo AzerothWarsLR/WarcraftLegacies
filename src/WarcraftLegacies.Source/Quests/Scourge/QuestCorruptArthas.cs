@@ -23,7 +23,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
     /// </summary>
     public QuestCorruptArthas(QuestData questDestroyStratholme, LegendaryHero arthas) : base("The Dark Champion",
       "Driven by vengeance, Prince Arthas will abandon his people and join the Scourge as their champion.",
-      "ReplaceableTextures\\CommandButtons\\BTNHeroDeathKnight.blp")
+      @"ReplaceableTextures\CommandButtons\BTNHeroDeathKnight.blp")
     {
       _arthas = arthas;
       AddObjective(new ObjectiveCompleteQuest(questDestroyStratholme));
@@ -45,13 +45,12 @@ namespace WarcraftLegacies.Source.Quests.Scourge
     protected override void OnComplete(Faction completingFaction)
     {
       var arthas = _arthas.Unit;
-      if (arthas != null && UnitAlive(arthas))
-      {
-        arthas
-          .Kill()
-          .Remove();
-        completingFaction.RemovePowerByName("Eye of the Lich King");
-      }
+      completingFaction.RemovePowerByName("Eye of the Lich King");
+      if (arthas == null || !UnitAlive(arthas))
+        return;
+
+      arthas.Kill();
+      arthas.Remove();
     }
   }
 }

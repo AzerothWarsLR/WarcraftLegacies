@@ -14,7 +14,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
   {
     private readonly LegendaryHero _arthas;
     
-    public QuestDestroyStratholme(Capital stratholme, LegendaryHero arthas) : base("The Culling", "When the city of Stratholme falls, Prince Arthas' despair will make him more susceptible to the power of the Lich King.", "ReplaceableTextures\\CommandButtons\\BTNRuneblade.blp")
+    public QuestDestroyStratholme(Capital stratholme, LegendaryHero arthas) : base("The Culling", "When the city of Stratholme falls, Prince Arthas' despair will make him more susceptible to the power of the Lich King.", @"ReplaceableTextures\CommandButtons\BTNRuneblade.blp")
     {
       _arthas = arthas;
       AddObjective(new ObjectiveCapitalDead(stratholme));
@@ -39,7 +39,8 @@ namespace WarcraftLegacies.Source.Quests.Scourge
         randomPoint = Regions.ArthasRandomPoint.GetRandomPoint();
       } while (!IsPointValidForArthas(randomPoint));
 
-      _arthas.ForceCreate(LordaeronSetup.Lordaeron?.Player ?? Player(PLAYER_NEUTRAL_AGGRESSIVE), randomPoint, 270);
+      if (_arthas.Unit == null || !UnitAlive(_arthas.Unit))
+        _arthas.ForceCreate(LordaeronSetup.Lordaeron?.Player ?? Player(PLAYER_NEUTRAL_AGGRESSIVE), randomPoint, 270);
       
       completingFaction.AddPower(new PingPower(_arthas, "Eye of the Lich King", 5, 5));
     }

@@ -94,11 +94,6 @@ namespace WarcraftLegacies.Source.UnitTypes
         Category = UnitCategory.Shipyard
       });
 
-      UnitType.Register(new UnitType(Constants.UNIT_U01A_SHIPYARD_FORSAKEN_SHIPYARD)
-      {
-        Category = UnitCategory.Shipyard
-      });
-
       UnitType.Register(new UnitType(Constants.UNIT_ESHY_KALDOREI_DOCKS)
       {
         Category = UnitCategory.Shipyard
