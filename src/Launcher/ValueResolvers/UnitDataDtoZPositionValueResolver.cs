@@ -1,5 +1,4 @@
-﻿using System.Numerics;
-using AutoMapper;
+﻿using AutoMapper;
 using Launcher.DataTransferObjects;
 using War3Net.Build.Widget;
 
@@ -9,12 +8,12 @@ namespace Launcher.ValueResolvers
   /// MapData stores Unit positions without their height, since that can be recalculated from their position
   /// on the terrain.
   /// </summary>
-  public sealed class UnitDataZPositionValueResolver : IValueResolver<UnitDataDto, UnitData, Vector3>
+  public sealed class UnitDataDtoZPositionValueResolver : IValueResolver<UnitData, UnitDataDto, Vector2Dto>
   {
     /// <inheritdoc />
-    public Vector3 Resolve(UnitDataDto source, UnitData destination, Vector3 destMember, ResolutionContext context)
+    public Vector2Dto Resolve(UnitData source, UnitDataDto destination, Vector2Dto destMember, ResolutionContext context)
     {
-      return new Vector3
+      return new Vector2Dto
       {
         X = source.Position.X,
         Y = source.Position.Y
