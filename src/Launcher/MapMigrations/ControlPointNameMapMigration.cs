@@ -15,7 +15,7 @@ namespace Launcher.MapMigrations
       if (unitSkins == null)
         return;
 
-      const int textNameId = 1835101794;
+      const int textNameId = 1835101796;
       foreach (var unitSkin in unitSkins)
       {
         var textNameModification = unitSkin.GetDataModification(textNameId);
