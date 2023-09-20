@@ -15,9 +15,14 @@ namespace Launcher.MapMigrations
       foreach (var unit in objectDatabase.GetUnits().Where(IsCreep))
       {
         var level = unit.StatsLevel;
-        unit.StatsGoldBountyAwardedBase = level;
-        unit.StatsGoldBountyAwardedNumberOfDice = level;
-        unit.StatsGoldBountyAwardedSidesPerDie = 4;
+        if (unit.StatsGoldBountyAwardedBase != level)
+          unit.StatsGoldBountyAwardedBase = level;
+        
+        if (unit.StatsGoldBountyAwardedNumberOfDice != level)
+          unit.StatsGoldBountyAwardedNumberOfDice = level;
+        
+        if (unit.StatsGoldBountyAwardedNumberOfDice != 4)
+          unit.StatsGoldBountyAwardedSidesPerDie = 4;
       }
 
       map.UnitObjectData = objectDatabase.GetAllData().UnitData;
