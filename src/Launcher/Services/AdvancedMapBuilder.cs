@@ -10,7 +10,6 @@ using Launcher.Extensions;
 using Launcher.MapDataMigrations;
 using Launcher.Settings;
 using Microsoft.CodeAnalysis;
-using War3Api.Object.Enums;
 using War3Net.Build;
 using War3Net.Build.Extensions;
 using War3Net.Build.Info;
