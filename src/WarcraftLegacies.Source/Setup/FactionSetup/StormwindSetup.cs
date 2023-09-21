@@ -106,6 +106,7 @@ Make sure to communicate with your Dwarven and Kul'tiran allies, as they will be
       Stormwind.ModObjectLimit(FourCC("R03T"), Faction.UNLIMITED); //Electric Strike Ritual
       Stormwind.ModObjectLimit(FourCC("R03U"), Faction.UNLIMITED); //Solar Flare Ritual
       Stormwind.ModObjectLimit(FourCC("R03X"), Faction.UNLIMITED); //Conjurers
+      Stormwind.ModObjectLimit(Constants.UPGRADE_R0A3_GUNSHIPS_STORMWIND, Faction.UNLIMITED);
 
       Stormwind.ModAbilityAvailability(Constants.ABILITY_A0GA_SUMMON_GARRISON_LORDAERON, -1);
       Stormwind.ModAbilityAvailability(Constants.ABILITY_A0GC_REPLENISH_MANA_ORANGE_KEEPS_CAPITALS, -1);
