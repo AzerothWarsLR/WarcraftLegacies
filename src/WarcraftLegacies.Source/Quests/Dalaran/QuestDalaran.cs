@@ -32,7 +32,7 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
       foreach (var prerequisite in prerequisites) 
         AddObjective(new ObjectiveCompleteQuest(prerequisite));
       AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N018_DURNHOLDE)));
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N01I_CAER_DARROW)));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_O02G_JINTHA_ALOR)));
       AddObjective(new ObjectiveUpgrade(Constants.UNIT_H068_OBSERVATORY_DALARAN_T3, Constants.UNIT_H065_REFUGE_DALARAN_T1));
       AddObjective(new ObjectiveExpire(660, Title));
       AddObjective(new ObjectiveSelfExists());
