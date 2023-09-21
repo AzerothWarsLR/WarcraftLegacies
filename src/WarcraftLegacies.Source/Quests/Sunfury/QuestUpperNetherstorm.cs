@@ -18,7 +18,7 @@ namespace WarcraftLegacies.Source.Quests.Sunfury
   public sealed class QuestUpperNetherstorm : QuestData
   {
     private readonly List<unit> _rescueUnits;
-    private const int GoldReward = 400;
+    private const int GoldReward = 200;
     private const int LumberReward = 200;
 
     /// <summary>
@@ -33,8 +33,8 @@ namespace WarcraftLegacies.Source.Quests.Sunfury
         "in upper Netherstorm"));
       AddObjective(
         new ObjectiveControlPoint(
-          ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N0CW_FARAHLON_10GOLD_MIN)));
-      AddObjective(new ObjectiveExpire(1430, Title));
+          ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N0CW_FARAHLON)));
+      AddObjective(new ObjectiveExpire(600, Title));
       AddObjective(new ObjectiveSelfExists());
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
     }
@@ -42,8 +42,8 @@ namespace WarcraftLegacies.Source.Quests.Sunfury
     /// <inheritdoc/>
     protected override void OnComplete(Faction whichFaction)
     {
-      whichFaction.Player?.AddGold(400);
-      whichFaction.Player?.AddLumber(200);
+      whichFaction.Player?.AddGold(GoldReward);
+      whichFaction.Player?.AddLumber(LumberReward);
       if (whichFaction.Player != null)
         whichFaction.Player.RescueGroup(_rescueUnits);
       else

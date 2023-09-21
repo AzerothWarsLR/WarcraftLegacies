@@ -18,7 +18,7 @@ namespace WarcraftLegacies.Source.Quests.Sunfury
   public sealed class QuestArea52 : QuestData
   {
     private readonly List<unit> _rescueUnits;
-    private const int GoldReward = 400;
+    private const int GoldReward = 200;
     private const int LumberReward = 200;
     
     /// <summary>
@@ -32,8 +32,8 @@ namespace WarcraftLegacies.Source.Quests.Sunfury
       AddObjective(new ObjectiveKillAllInArea(new List<Rectangle> { Regions.Area52Unlock }, "in Area 52"));
       AddObjective(
         new ObjectiveControlPoint(
-          ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N07Q_AREA_52_10GOLD_MIN)));
-      AddObjective(new ObjectiveExpire(1430, Title));
+          ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N07Q_AREA_52)));
+      AddObjective(new ObjectiveExpire(600, Title));
       AddObjective(new ObjectiveSelfExists());
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
     }
