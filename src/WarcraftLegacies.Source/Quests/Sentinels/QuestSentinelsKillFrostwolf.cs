@@ -28,7 +28,7 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
       "The Frostwolves have been ousted from Kalimdor, along with their Tauren allies. They will not be missed.";
 
     /// <inheritdoc/>
-    protected override string RewardDescription => "Moon Riders are trainable at the Roost";
+    protected override string RewardDescription => "Moon Riders are trainable at the Roost, Moon Glaive second level is now reserachable at the War Academy";
 
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
