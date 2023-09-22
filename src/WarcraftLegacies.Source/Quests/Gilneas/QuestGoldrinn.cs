@@ -27,7 +27,7 @@ namespace WarcraftLegacies.Source.Quests.Gilneas
 
     /// <inheritdoc/>
     protected override string RewardFlavour =>
-      "The Scythe of Elune calls to Goldrinn's spirit. Revolted at the horrors that his fang had wrought on the Gilnean people but impressed with their ferocity, he returns to the mortal world, ready to defend his .";
+      "The Scythe of Elune calls to Goldrinn's spirit. Revolted at the horrors that his fang had wrought on the Gilnean people but impressed with their ferocity, he returns to the mortal world, ready to rend and tear for his new people.";
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
