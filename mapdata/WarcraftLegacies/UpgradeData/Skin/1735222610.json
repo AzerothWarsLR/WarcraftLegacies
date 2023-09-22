@@ -48,13 +48,19 @@
       "Level": 2,
       "Id": 829453415,
       "Type": 3,
-      "Value": "Upgrade Moon Glaive"
+      "Value": "Upgrade Moon Glaive [|cffffcc00Level 2|r]"
     },
     {
       "Level": 2,
       "Id": 828536167,
       "Type": 3,
       "Value": "Gives the Huntress the ability to strike additional units with her bouncing glaive attacks."
+    },
+    {
+      "Level": 1,
+      "Id": 829453415,
+      "Type": 3,
+      "Value": "Upgrade Moon Glaive [|cffffcc00Level 1|r]"
     }
   ]
 }
