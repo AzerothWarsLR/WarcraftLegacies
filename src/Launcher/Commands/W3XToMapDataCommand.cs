@@ -46,6 +46,7 @@ namespace Launcher.Commands
     {
       try
       {
+        Console.WriteLine("Generating Constants.cs and Regions.cs files...");
         ConstantGenerator.Run(baseMapPath, constantsOutputPath, new ConstantGeneratorOptions
         {
           IncludeCode = true
@@ -53,7 +54,7 @@ namespace Launcher.Commands
       }
       catch (FileNotFoundException)
       {
-        Console.WriteLine("Could not find TriggerStrings file. Skipping Constant generation step.");
+        Console.WriteLine("Could not find TriggerStrings file. Skipping Constants generation step.");
       }
     }
   }
