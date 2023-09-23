@@ -1,0 +1,107 @@
+[
+  {
+    "State": 2,
+    "Life": 255,
+    "TypeId": 1953714759,
+    "Variation": 2,
+    "Position": {
+      "X": -18987.281,
+      "Y": -2487.5298,
+      "Z": 146.98692
+    },
+    "Rotation": 2.303835,
+    "Scale": {
+      "X": 1.134959,
+      "Y": 1.134959,
+      "Z": 1.134959
+    },
+    "SkinId": 1953714759,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 9109
+  },
+  {
+    "State": 2,
+    "Life": 255,
+    "TypeId": 1802654279,
+    "Variation": 7,
+    "Position": {
+      "X": -19003.557,
+      "Y": -2374.3699,
+      "Z": 266.04968
+    },
+    "Rotation": 4.625123,
+    "Scale": {
+      "X": 0.99999994,
+      "Y": 0.99999994,
+      "Z": 0.99999994
+    },
+    "SkinId": 1802654279,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 9175
+  },
+  {
+    "State": 2,
+    "Life": 255,
+    "TypeId": 1886802010,
+    "Variation": 1,
+    "Position": {
+      "X": -19062.805,
+      "Y": -2441.656,
+      "Z": 192.40872
+    },
+    "Rotation": 0.8726647,
+    "Scale": {
+      "X": 1.2,
+      "Y": 1.2,
+      "Z": 1.2
+    },
+    "SkinId": 1886802010,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 19103
+  },
+  {
+    "State": 2,
+    "Life": 255,
+    "TypeId": 1886802010,
+    "Variation": 1,
+    "Position": {
+      "X": -19166.904,
+      "Y": -2414.4363,
+      "Z": 140.32558
+    },
+    "Rotation": 0.8726647,
+    "Scale": {
+      "X": 1.2,
+      "Y": 1.2,
+      "Z": 1.2
+    },
+    "SkinId": 1886802010,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 19102
+  },
+  {
+    "State": 6,
+    "Life": 255,
+    "TypeId": 1936872003,
+    "Variation": 7,
+    "Position": {
+      "X": -19200,
+      "Y": -2432,
+      "Z": -17.350016
+    },
+    "Rotation": 1.5671313,
+    "Scale": {
+      "X": 1.012,
+      "Y": 1.012,
+      "Z": 1.012
+    },
+    "SkinId": 1936872003,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 19109
+  }
+]
