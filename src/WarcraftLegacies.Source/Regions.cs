@@ -212,6 +212,7 @@ public static class Regions
 	public static Rectangle MonolithNoBuild { get; set; } = new Rectangle(18208f, -31584f, 23808f, -23360f);
 	public static Rectangle Moonglade { get; set; } = new Rectangle(-12992f, 10176f, -12416f, 10656f);
 	public static Rectangle MoongladeVillage { get; set; } = new Rectangle(-14688f, 10048f, -12288f, 12192f);
+	public static Rectangle MountHyjal { get; set; } = new Rectangle(-11328f, 9856f, -8832f, 11264f);
 	public static Rectangle Nazjatar { get; set; } = new Rectangle(-5792f, -3680f, -5024f, -2752f);
 	public static Rectangle NethergardeUnlock { get; set; } = new Rectangle(16576f, -18400f, 18688f, -16960f);
 	public static Rectangle Netherstorm { get; set; } = new Rectangle(-544f, -23712f, 3680f, -18528f);
@@ -353,7 +354,7 @@ public static class Regions
 	public static Rectangle WetlandAmbient1 { get; set; } = new Rectangle(12608f, -4032f, 14720f, 160f);
 	public static Rectangle WetlandAmbient2 { get; set; } = new Rectangle(11296f, -3808f, 12576f, -2272f);
 	public static Rectangle WindrunnerSpireUnlock { get; set; } = new Rectangle(16416f, 13888f, 16640f, 14176f);
-	public static Rectangle WinterspringAmbient1 { get; set; } = new Rectangle(-11904f, 9152f, -8480f, 12032f);
+	public static Rectangle WinterspringAmbient1 { get; set; } = new Rectangle(-11936f, 9216f, -8512f, 12096f);
 	public static Rectangle WinterspringAmbient2 { get; set; } = new Rectangle(-9792f, 5792f, -8416f, 9088f);
 	public static Rectangle WorldTunnelExit { get; set; } = new Rectangle(17472f, -11584f, 17792f, -11040f);
 	public static Rectangle Wrathgate_Portal_1 { get; set; } = new Rectangle(-4352f, 15584f, -3776f, 16128f);
@@ -365,5 +366,5 @@ public static class Regions
 	public static Rectangle ZulAman_trolls { get; set; } = new Rectangle(20256f, 10176f, 22848f, 17440f);
 	public static Rectangle Zulfarrak { get; set; } = new Rectangle(-12352f, -14272f, -10528f, -12064f);
 	public static Rectangle ZulfarrakAmbient { get; set; } = new Rectangle(-5952f, -17216f, 2944f, -10368f);
-  public static Rectangle MountHyjal { get; set; } = new Rectangle(-11392f, 9856f, -9088f, 11424f);
+
 }
