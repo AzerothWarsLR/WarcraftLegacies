@@ -20,6 +20,7 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
   {
 
     private readonly List<unit> _rescueUnits;
+    private const int RequiredResearchId = Constants.UPGRADE_R0A7_ESCAPE_TO_THERAMORE_DALARAN;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestTheramore"/> class.
@@ -30,7 +31,7 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
       "The distant lands of Kalimdor remain untouched by human civilization. If the Third War proceeds poorly, it may become necessary to abandon Dalaran and establish a refuge there.",
       @"ReplaceableTextures\CommandButtons\BTNHumanArcaneTower.blp")
     {
-      AddObjective(new ObjectiveResearch(Constants.UPGRADE_R0A7_ESCAPE_TO_THERAMORE_DALARAN, Constants.UNIT_H002_THE_VIOLET_CITADEL_DALARAN_OTHER));
+      AddObjective(new ObjectiveResearch(RequiredResearchId, Constants.UNIT_H002_THE_VIOLET_CITADEL_DALARAN_OTHER));
       AddObjective(new ObjectiveSelfExists());
       _rescueUnits = theramoreRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
     }
@@ -62,6 +63,12 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
         .ToList();
       
       Player(PLAYER_NEUTRAL_AGGRESSIVE).RescueGroup(groupBuildings);
+    }
+
+    /// <inheritdoc/>
+    protected override void OnAdd(Faction whichFaction)
+    {
+      whichFaction.ModObjectLimit(RequiredResearchId, 1);
     }
   }
 }
