@@ -1,5 +1,7 @@
 ﻿#nullable enable
+using System;
 using System.CommandLine;
+using System.IO;
 using AutoMapper;
 using Launcher.Services;
 using WCSharp.ConstantGenerator;
@@ -36,12 +38,23 @@ namespace Launcher.Commands
       var autoMapperConfig = new AutoMapperConfigurationProvider().GetConfiguration();
       var mapper = new Mapper(autoMapperConfig);
       new W3XToMapDataConverter(mapper).Convert(baseMapPath, outputDirectory);
+      if (constantsOutputPath != null) 
+        GenerateConstants(baseMapPath, constantsOutputPath);
+    }
 
-      if (constantsOutputPath != null)
+    private static void GenerateConstants(string baseMapPath, string constantsOutputPath)
+    {
+      try
+      {
         ConstantGenerator.Run(baseMapPath, constantsOutputPath, new ConstantGeneratorOptions
         {
           IncludeCode = true
         });
+      }
+      catch (FileNotFoundException fileNotFoundException)
+      {
+        Console.WriteLine($"Could not find file {fileNotFoundException.FileName}. Skipping Constant generation step.");
+      }
     }
   }
 }
