@@ -8,6 +8,7 @@ using static War3Api.Common;
 using static War3Api.Blizzard;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.LegendSystem;
+using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 
 namespace WarcraftLegacies.Source.Quests.Dalaran
 {
@@ -28,23 +29,17 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
       "The distant lands of Kalimdor remain untouched by human civilization. If the Third War proceeds poorly, it may become necessary to establish a forward base there.",
       @"ReplaceableTextures\CommandButtons\BTNHumanArcaneTower.blp")
     {
-      AddObjective(new ObjectiveCapitalDead(dalaran));
+      AddObjective(new ObjectiveResearch(Constants.UPGRADE_R0A7, Constants.UNIT_H002_THE_VIOLET_CITADEL_DALARAN_OTHER));
       AddObjective(new ObjectiveSelfExists());
       _rescueUnits = theramoreRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
     }
 
     /// <inheritdoc />
     protected override string RewardFlavour =>
-      "With the Violet Citadel destroyed, Jaina leads her people East";
+      "With the once mighty city of Dalaran at the brink of destruction, Jaina leads her people East";
 
     /// <inheritdoc />
-    protected override string RewardDescription => "Control of all units at Theramore";
-
-    /// <inheritdoc />
-    protected override void OnFail(Faction completingFaction)
-    {
-      Player(PLAYER_NEUTRAL_AGGRESSIVE).RescueGroup(_rescueUnits);
-    }
+    protected override string RewardDescription => "Control of all units at Theramore, teleport all your units that are in Dalaran to Theramore. Dalaran becomes hostile.";
 
     /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)
