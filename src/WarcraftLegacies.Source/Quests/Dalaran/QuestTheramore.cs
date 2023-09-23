@@ -45,6 +45,11 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
     /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)
     {
+      if (completingFaction.Player != null)
+        completingFaction.Player.RescueGroup(_rescueUnits);
+      else
+        Player(bj_PLAYER_NEUTRAL_VICTIM).RescueGroup(_rescueUnits);
+
       foreach (var unit in  CreateGroup().EnumUnitsInRect(Regions.Dalaran).EmptyToList().Where(x => x.OwningPlayer() == completingFaction.Player && !IsUnitType(x, UNIT_TYPE_STRUCTURE)).ToList())
       {
           unit.SetPosition(Regions.Theramore.Center);
