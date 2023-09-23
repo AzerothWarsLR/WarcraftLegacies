@@ -56,13 +56,10 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
           unit.SetPosition(Regions.Theramore.Center);
       }
       
-      var groupBuildings = CreateGroup()
-        .EnumUnitsInRect(Regions.Dalaran)
-        .EmptyToList()
-        .Where(x => x.OwningPlayer() == completingFaction.Player && IsUnitType(x, UNIT_TYPE_STRUCTURE))
-        .ToList();
-      
-      Player(PLAYER_NEUTRAL_AGGRESSIVE).RescueGroup(groupBuildings);
+      foreach (var unit in  CreateGroup().EnumUnitsInRect(Regions.Dalaran).EmptyToList().Where(x => x.OwningPlayer() == completingFaction.Player && IsUnitType(x, UNIT_TYPE_STRUCTURE)).ToList())
+      {
+        unit.SetOwner(Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      }
     }
 
     /// <inheritdoc/>
