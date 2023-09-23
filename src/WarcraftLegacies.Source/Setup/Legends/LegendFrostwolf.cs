@@ -36,6 +36,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
       ThunderBluff = new Capital
       {
         Unit = preplacedUnitSystem.GetUnit(FourCC("o00J")),
+        Capturable = true,
         DeathMessage =
           "The mesas of Thunderbluff have been swept clean of the Tauren. The Bloodhoof are without a home.",
         Essential = true
