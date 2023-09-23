@@ -40,7 +40,7 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
       "Jaina Proudmoore abandons the once mighty city of Dalaran and leads her people across the sea, arriving in the untamed lands of Kalimdor.";
 
     /// <inheritdoc />
-    protected override string RewardDescription => "Control of all units at Theramore, teleport all your units that are in Dalaran to Theramore. Dalaran becomes hostile.";
+    protected override string RewardDescription => "Gain control of all units at Theramore, teleport all of your units within Dalaran to Theramore. Dalaran becomes hostile";
 
     /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)
