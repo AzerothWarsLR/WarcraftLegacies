@@ -51,9 +51,9 @@ namespace Launcher.Commands
           IncludeCode = true
         });
       }
-      catch (FileNotFoundException fileNotFoundException)
+      catch (FileNotFoundException)
       {
-        Console.WriteLine($"Could not find file {fileNotFoundException.FileName}. Skipping Constant generation step.");
+        Console.WriteLine("Could not find TriggerStrings file. Skipping Constant generation step.");
       }
     }
   }
