@@ -7,15 +7,13 @@ namespace MacroTools
   /// <summary>
   /// Performs basic checks during runtime to ensure that the map is configured correctly.
   /// </summary>
-  public static class IntegrityChecker
+  public static class RuntimeIntegrityChecker
   {
     /// <summary>
-    /// Runs the <see cref="IntegrityChecker"/>.
+    /// Runs the <see cref="RuntimeIntegrityChecker"/>.
     /// </summary>
-    public static void Setup(bool isReleaseVersion)
+    public static void Setup()
     {
-      if (isReleaseVersion)
-        return;
       NoNeutralPassiveVulnerableControlPoints();
       CheckUndefeatedResearchNames();
       CheckQuestResearchNames();
