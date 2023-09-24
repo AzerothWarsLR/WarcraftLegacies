@@ -29,7 +29,7 @@ namespace WarcraftLegacies.Source.Quests.Goblin
       @"ReplaceableTextures\CommandButtons\BTNGoblinShop2.blp")
     {
       AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N0A6_RATCHET)));
-      AddObjective(new ObjectiveLegendInRect(noggenfogger, Regions.Ratchet_Unlock_1, "Ratchet"));
+      AddObjective(new ObjectiveAnyUnitInRect(Regions.Ratchet_Unlock_1, "Ratchet", true));
       AddObjective(new ObjectiveSelfExists());
       Required = true;
       ResearchId = Constants.UPGRADE_VQ01_QUEST_COMPLETED_RATCHET_PORT;
@@ -38,10 +38,10 @@ namespace WarcraftLegacies.Source.Quests.Goblin
     }
 
     /// <inheritdoc />
-    protected override string RewardFlavour => "With a port now established near Orgrimmar, we now have an outpost to support the Horde war effort in the North!";
+    protected override string RewardFlavour => "Gazlowe has established the goblin port of Ratchet near Orgrimmar and the Bilgewater Cartel now have an outpost to support the Horde war effort in the North!";
 
     /// <inheritdoc />
-    protected override string RewardDescription => "You gain control of a small outpost in Ratchet";
+    protected override string RewardDescription => "Gain control of a small outpost in Ratchet";
 
     /// <inheritdoc />
     protected override void OnFail(Faction completingFaction)
