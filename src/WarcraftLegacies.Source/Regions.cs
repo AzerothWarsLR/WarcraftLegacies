@@ -242,8 +242,7 @@ public static class Regions
 	public static Rectangle QuelthalasAmbient { get; set; } = new Rectangle(16224f, 11776f, 20224f, 17440f);
 	public static Rectangle RagnarosSummon { get; set; } = new Rectangle(12192f, -10784f, 12512f, -10464f);
 	public static Rectangle RanazjarAmbient { get; set; } = new Rectangle(-21344f, -5536f, -19424f, -1248f);
-	public static Rectangle Ratchet_Unlock_1 { get; set; } = new Rectangle(-11360f, -4864f, -9920f, -3840f);
-	public static Rectangle Ratchet_Unlock_2 { get; set; } = new Rectangle(-10592f, -3840f, -10144f, -3392f);
+	public static Rectangle Ratchet_Unlock_1 { get; set; } = new Rectangle(-11328f, -4864f, -9920f, -3360f);
 	public static Rectangle RiseBaseUnlock { get; set; } = new Rectangle(-13056f, 5440f, -11072f, 7488f);
 	public static Rectangle RuinOfDalaran { get; set; } = new Rectangle(9152f, 5056f, 9312f, 5248f);
 	public static Rectangle Sargeras_Entrance { get; set; } = new Rectangle(-1024f, 8096f, -448f, 8576f);
