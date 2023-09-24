@@ -43,7 +43,7 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
 
     /// <inheritdoc />
     protected override string RewardDescription =>
-      "Gain control of all units at Theramore, teleport all of your units within Dalaran to Theramore. Dalaran becomes hostile";
+      "Gain control of all units at Theramore and teleport all of your units within Dalaran to Theramore. Dalaran becomes hostile";
 
     /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)
