@@ -20,7 +20,7 @@ namespace WarcraftLegacies.Source.Quests.Warsong
     /// Initializes a new instance of the <see cref="QuestWarsongOutpost"/>.
     /// </summary>
     public QuestWarsongOutpost() : base("Warsong Outpost in Uldum",
-      "The desert of Uldum is rumoured to conceal a powerful weapon. We must send one of our heroes to claim leadership of the outpost and explore further.",
+      "The deserts of Uldum are littered with ancient debris from a lost age, and it seems some of its secrets remain intact even now.  This matters little to the Warsong, however; this land is merely another target ripe for conquest.",
       @"ReplaceableTextures\CommandButtons\BTNIronHordeWatchTower.blp")
     {
       AddObjective(_enterWarsongOutpostRegion = new ObjectiveAnyUnitInRect(Regions.Warsong_Uldum_Unlock, "the outpost in western Uldum", true));
