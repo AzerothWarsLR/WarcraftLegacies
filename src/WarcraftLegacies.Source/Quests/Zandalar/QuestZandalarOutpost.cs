@@ -20,7 +20,7 @@ namespace WarcraftLegacies.Source.Quests.Zandalar
     /// Initializes a new instance of the <see cref="QuestZandalar"/>.
     /// </summary>
     public QuestZandalarOutpost() : base("Zandalar Outpost",
-      "The trolls of the echo islands have said we can set up an outpost on one of the islands.",
+      "It has been an age since the height of Zandalar's glory. Since then, our Darkspear cousins have grown strong nestled in the Horde's breast. We should establish an outpost in the Echo Isles, so that Zandalari and Darkspear may meet on shared ground.",
       @"ReplaceableTextures\CommandButtons\BTNtrollmedium.blp")
     {
       AddObjective(_enterZandalarRegion = new ObjectiveAnyUnitInRect(Regions.Zandalari_Echo_Unlock, "Zandalar Outpost", true));
