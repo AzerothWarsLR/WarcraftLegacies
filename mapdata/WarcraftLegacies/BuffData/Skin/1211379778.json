@@ -8,12 +8,12 @@
     {
       "Id": 1885959270,
       "Type": 3,
-      "Value": "Torrent"
+      "Value": "Stunned"
     },
     {
       "Id": 1700951398,
       "Type": 3,
-      "Value": "This unit has been torrented; it is in the air for a short duration."
+      "Value": "This unit has been stunned. It cannot move, attack or cast spells."
     },
     {
       "Id": 1953653094,
