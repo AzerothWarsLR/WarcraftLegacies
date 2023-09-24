@@ -36,7 +36,7 @@ namespace WarcraftLegacies.Source.Quests.Zandalar
       $"{_enterZandalarRegion.CompletingUnitName} has spoken with the elders of the Echo Isles and they have agreed to let the Zandalar trolls set up an outpost on one of their islands.";
 
     /// <inheritdoc />
-    protected override string RewardDescription => "Gain control of a small outpost in Zandalar";
+    protected override string RewardDescription => "Gain control of a small outpost in the Echo Isles";
 
     /// <inheritdoc />
     protected override void OnFail(Faction completingFaction)
