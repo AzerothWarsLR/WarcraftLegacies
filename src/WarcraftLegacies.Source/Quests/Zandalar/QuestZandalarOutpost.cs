@@ -9,7 +9,7 @@ using static War3Api.Common;
 namespace WarcraftLegacies.Source.Quests.Zandalar
 {
   /// <summary>
-  /// The Goblins can acquire Zandalar.
+  /// The Trolls can establish an outpost in the Echo Isles.
   /// </summary>
   public sealed class QuestZandalarOutpost : QuestData
   {
