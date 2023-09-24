@@ -26,9 +26,8 @@ namespace WarcraftLegacies.Source.Quests.Zandalar
       AddObjective(_enterZandalarRegion = new ObjectiveAnyUnitInRect(Regions.Zandalari_Echo_Unlock, "Zandalar Outpost", true));
       AddObjective(new ObjectiveSelfExists());
       Required = true;
-      ResearchId = Constants.UPGRADE_VQ01_QUEST_COMPLETED_RATCHET_PORT;
-      _rescueUnits = Regions.Zandalari_Echo_Unlock.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures,
-        filterUnit => filterUnit.GetTypeId() != FourCC("ngme"));
+      ResearchId = Constants.UPGRADE_VQ02_QUEST_COMPLETED_ZANDALAR_OUTPOST;
+      _rescueUnits = Regions.Zandalari_Echo_Unlock.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
     }
 
     /// <inheritdoc />

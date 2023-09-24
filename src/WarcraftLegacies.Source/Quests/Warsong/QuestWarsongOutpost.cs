@@ -19,16 +19,15 @@ namespace WarcraftLegacies.Source.Quests.Warsong
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestWarsongOutpost"/>.
     /// </summary>
-    public QuestWarsongOutpost() : base("Warsong Outpost in Uldum",
+    public QuestWarsongOutpost() : base("Uldum Excavation",
       "The deserts of Uldum are littered with ancient debris from a lost age, and it seems some of its secrets remain intact even now.  This matters little to the Warsong, however; this land is merely another target ripe for conquest.",
       @"ReplaceableTextures\CommandButtons\BTNIronHordeWatchTower.blp")
     {
       AddObjective(_enterWarsongOutpostRegion = new ObjectiveAnyUnitInRect(Regions.Warsong_Uldum_Unlock, "the outpost in western Uldum", true));
       AddObjective(new ObjectiveSelfExists());
       Required = true;
-      ResearchId = Constants.UPGRADE_VQ03_QUEST_COMPLETED_WARSONG_OUTPOST;
-      _rescueUnits = Regions.Warsong_Uldum_Unlock.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures,
-        filterUnit => filterUnit.GetTypeId() != FourCC("ngme"));
+      ResearchId = Constants.UPGRADE_VQ03_QUEST_COMPLETED_ULDUM_EXCAVATION;
+      _rescueUnits = Regions.Warsong_Uldum_Unlock.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
     }
 
     /// <inheritdoc />
