@@ -56,6 +56,7 @@ namespace WarcraftLegacies.Source.Quests.Goblin
     /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)
     {
+      completingFaction.Player.RescueGroup(_rescueUnits);
     }
   }
 }
