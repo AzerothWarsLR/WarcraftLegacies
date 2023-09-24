@@ -21,7 +21,6 @@ namespace WarcraftLegacies.Source.Setup.Legends
       Noggenfogger = new LegendaryHero("Noggenfogger")
       {
         UnitType = Constants.UNIT_NALC_BARON_OF_GADGETZAN_GOBLIN,
-        StartingXp = 800
       };
 
       Gazlowe = new LegendaryHero("Gazlowe")

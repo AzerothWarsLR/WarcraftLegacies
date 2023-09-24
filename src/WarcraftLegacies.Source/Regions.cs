@@ -107,7 +107,7 @@ public static class Regions
 	public static Rectangle EchoUnlock { get; set; } = new Rectangle(-8608f, -6816f, -6208f, -3968f);
 	public static Rectangle ElwinForestAmbient { get; set; } = new Rectangle(8704f, -14816f, 13376f, -12672f);
 	public static Rectangle EntireMap { get; set; } = new Rectangle(-24512f, -31872f, 24096f, 25056f);
-	public static Rectangle ExodarBaseUnlock { get; set; } = new Rectangle(-23872f, 5792f, -21248f, 8416f);
+	public static Rectangle ExodarBaseUnlock { get; set; } = new Rectangle(-24480f, 5792f, -21248f, 8416f);
 	public static Rectangle Far_Eastern_Northrend { get; set; } = new Rectangle(4608f, 20064f, 7328f, 22944f);
 	public static Rectangle FeathermoonCreeps { get; set; } = new Rectangle(-22464f, -12128f, -18368f, -7584f);
 	public static Rectangle FeathermoonUnlock { get; set; } = new Rectangle(-21376f, -10272f, -19776f, -7840f);
@@ -173,7 +173,7 @@ public static class Regions
 	public static Rectangle Kali_Ships { get; set; } = new Rectangle(-17600f, -15296f, -10816f, 5600f);
 	public static Rectangle Kalimdor { get; set; } = new Rectangle(-21280f, -18816f, -5664f, 12000f);
 	public static Rectangle KaliRock1 { get; set; } = new Rectangle(-16864f, -2336f, -15456f, -1280f);
-	public static Rectangle KaliRock10 { get; set; } = new Rectangle(-11296f, 2688f, -10048f, 3424f);
+	public static Rectangle KaliRock10 { get; set; } = new Rectangle(-11296f, 2688f, -9952f, 3776f);
 	public static Rectangle KaliRock11 { get; set; } = new Rectangle(-12640f, 3360f, -11872f, 4704f);
 	public static Rectangle KaliRock12 { get; set; } = new Rectangle(-9472f, -1888f, -8256f, -1248f);
 	public static Rectangle KaliRock13 { get; set; } = new Rectangle(-12992f, 1472f, -12096f, 2496f);
