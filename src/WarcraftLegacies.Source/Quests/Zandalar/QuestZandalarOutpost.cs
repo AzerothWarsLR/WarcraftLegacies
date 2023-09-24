@@ -1,8 +1,6 @@
 ﻿using System.Collections.Generic;
-using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
-using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
 using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
@@ -23,7 +21,7 @@ namespace WarcraftLegacies.Source.Quests.Zandalar
     /// </summary>
     public QuestZandalarOutpost() : base("Zandalar Outpost",
       "The trolls of the echo islands have said we can set up an outpost on one of the islands.",
-      @"ReplaceableTextures\CommandButtons\BTNGoblinShop2.blp")
+      @"ReplaceableTextures\CommandButtons\BTNtrollmedium.blp")
     {
       AddObjective(_enterZandalarRegion = new ObjectiveAnyUnitInRect(Regions.Zandalari_Echo_Unlock, "Zandalar Outpost", true));
       AddObjective(new ObjectiveSelfExists());
