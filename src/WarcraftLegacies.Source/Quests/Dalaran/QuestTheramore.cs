@@ -30,7 +30,7 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
     {
       AddObjective(new ObjectiveControlLegend(jaina, false)
       {
-        ResearchId = Constants.UPGRADE_R0A8_JAINA_PROUDMOORE_IS_ALIVE
+        ResearchId = Constants.UPGRADE_R0A8_YOUR_TEAM_CONTROLS_JAINA_PROUDMOORE
       });
       AddObjective(new ObjectiveResearch(RequiredResearchId, Constants.UNIT_H002_THE_VIOLET_CITADEL_DALARAN_OTHER));
       AddObjective(new ObjectiveSelfExists());
