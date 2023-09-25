@@ -103,7 +103,8 @@ Gather your forces and strike before the Horde can organize their efforts."
       var worldTrees = new List<Capital>
       {
         allLegendSetup.Druids.Nordrassil,
-        allLegendSetup.Neutral.Shaladrassil
+        allLegendSetup.Neutral.Shaladrassil,
+        allLegendSetup.Druids.Vordrassil
       };
       Druids.AddPower(new Immortality(25, 45, worldTrees)
       {

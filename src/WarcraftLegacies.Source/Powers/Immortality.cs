@@ -16,10 +16,21 @@ namespace WarcraftLegacies.Source.Powers
   {
     private readonly int _healChancePercentage;
     private readonly int _healAmountPercentage;
-    private bool _active;
     private readonly List<Objective> _objectives = new();
     private readonly List<Capital> _worldTrees;
+    private bool _isActive;
 
+    private bool IsActive
+    {
+      get => _isActive;
+      set
+      {
+        _isActive = value;
+        var prefix = IsActive ? "" : "|cffc0c0c0";
+        Description = $"{prefix}When a unit you control would take lethal damage, it has a {_healChancePercentage}% chance to instead restore hit points until it has {_healAmountPercentage}% of its maximum. Only active while your team controls a World Tree.";
+      }
+    }
+    
     /// <summary>The effect that appears when a unit is healed.</summary>
     public string Effect { get; init; } = "";
     
@@ -31,14 +42,7 @@ namespace WarcraftLegacies.Source.Powers
       _healChancePercentage = healChancePercentage;
       _healAmountPercentage = healAmountPercentage;
       Name = "Immortality";
-      Description = GenerateDescription();
       _worldTrees = worldTrees;
-    }
-
-    private string GenerateDescription()
-    {
-      var prefix = _active ? "" : "|cffc0c0c0";
-      return $"{prefix}When a unit you control would take lethal damage, it has a {_healChancePercentage}% chance to instead restore hit points until it has {_healAmountPercentage}% of its maximum. Only active while your team controls a World Tree.";
     }
 
     /// <inheritdoc />
@@ -53,7 +57,7 @@ namespace WarcraftLegacies.Source.Powers
         {
           EligibleFactions = new List<Faction>{ whichFaction }
         });
-      CheckIfActive();
+      RefreshIsActive();
     }
 
     /// <inheritdoc />
@@ -72,7 +76,7 @@ namespace WarcraftLegacies.Source.Powers
     private void OnDamage()
     {
       var damagedUnit = GetTriggerUnit();
-      if (!_active || !(GetEventDamage() >= damagedUnit.GetHitPoints()) ||
+      if (!IsActive || !(GetEventDamage() >= damagedUnit.GetHitPoints()) ||
           !(GetRandomInt(0, 100) < _healChancePercentage) || IsUnitType(damagedUnit, UNIT_TYPE_STRUCTURE) ||
           IsUnitType(damagedUnit, UNIT_TYPE_MECHANICAL)) 
         return;
@@ -95,12 +99,8 @@ namespace WarcraftLegacies.Source.Powers
       objective.ProgressChanged -= OnObjectiveProgressChanged;
     }
     
-    private void OnObjectiveProgressChanged(object? sender, Objective objective) => CheckIfActive();
+    private void OnObjectiveProgressChanged(object? sender, Objective objective) => RefreshIsActive();
 
-    private void CheckIfActive()
-    {
-      _active = _objectives.Any(x => x.Progress == QuestProgress.Complete);
-      Description = GenerateDescription();
-    }
+    private void RefreshIsActive() => IsActive = _objectives.Any(x => x.Progress == QuestProgress.Complete);
   }
 }

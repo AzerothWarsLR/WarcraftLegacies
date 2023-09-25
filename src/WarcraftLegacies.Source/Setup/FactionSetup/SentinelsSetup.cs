@@ -99,7 +99,8 @@ Once you have secured your holdings, gather your army and destroy the Orcish Hor
       var worldTrees = new List<Capital>
       {
         allLegendSetup.Druids.Nordrassil,
-        allLegendSetup.Neutral.Shaladrassil
+        allLegendSetup.Neutral.Shaladrassil,
+        allLegendSetup.Druids.Vordrassil
       };
       Sentinels.AddPower(new Immortality(25, 45, worldTrees)
       {
