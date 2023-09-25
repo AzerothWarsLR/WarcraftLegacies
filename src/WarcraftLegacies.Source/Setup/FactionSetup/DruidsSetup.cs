@@ -1,5 +1,6 @@
 ﻿using MacroTools;
 using MacroTools.FactionSystem;
+using WarcraftLegacies.Source.Powers;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
@@ -94,9 +95,15 @@ Gather your forces and strike before the Horde can organize their efforts."
       Druids.ModObjectLimit(Constants.UPGRADE_R0A2_GREEN_DRAGONS_DRUIDS, Faction.UNLIMITED);
 
       Druids.SetObjectLevel(Constants.UPGRADE_REWS_WELL_SPRING, 1);
-    
       
       Druids.AddGoldMine(preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-9200, 10742)));
+      
+      Druids.AddPower(new Immortality(0.25f, 0.45f)
+      {
+        IconName = "",
+        Name = "Immortality",
+        Effect = @"Abilities\Spells\Human\Heal\HealTarget.mdl"
+      });
       
       FactionManager.Register(Druids);
     }

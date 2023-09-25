@@ -1,6 +1,7 @@
 ﻿using MacroTools;
 using MacroTools.FactionSystem;
 using MacroTools.Powers;
+using WarcraftLegacies.Source.Powers;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
@@ -89,12 +90,17 @@ Once you have secured your holdings, gather your army and destroy the Orcish Hor
       Sentinels.ModObjectLimit(Constants.UPGRADE_R0A0_CHIMAERAS_SENTINEL, Faction.UNLIMITED);
 
       Sentinels.AddGoldMine(preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-22721, -13570)));
-
-      //Powers
-      var dummyPower = new DummyPower("Unspoiled Wilderness",
+      
+      Sentinels.AddPower(new DummyPower("Unspoiled Wilderness",
         "Every control point tower has a 24% movement speed aura in a 2500 area of effect",
-        "ANA_HealingButterfliesFixed");
-      Sentinels.AddPower(dummyPower);
+        "ANA_HealingButterfliesFixed"));
+      
+      Sentinels.AddPower(new Immortality(0.25f, 0.45f)
+      {
+        IconName = "",
+        Name = "Immortality",
+        Effect = @"Abilities\Spells\Human\Heal\HealTarget.mdl"
+      });
 
       FactionManager.Register(Sentinels);
     }

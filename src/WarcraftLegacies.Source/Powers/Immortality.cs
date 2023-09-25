@@ -37,7 +37,7 @@ namespace WarcraftLegacies.Source.Powers
         return;
       
       damagedUnit.SetCurrentHitpoints((int)(damagedUnit.GetMaximumHitPoints() * _healAmountPercentage));
-      AddSpecialEffect(Effect, GetUnitX(GetTriggerUnit()), GetUnitY(GetTriggerUnit()))
+      AddSpecialEffectTarget(Effect, damagedUnit, "origin")
         .SetLifespan(1);
     }
   }
