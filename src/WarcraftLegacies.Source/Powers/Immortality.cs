@@ -28,7 +28,7 @@ namespace WarcraftLegacies.Source.Powers
       {
         _isActive = value;
         var prefix = IsActive ? "" : "|cffc0c0c0";
-        Description = $"{prefix}When a unit you control would take lethal damage, it has a {_healChancePercentage}% chance to instead restore hit points until it has {_healAmountPercentage}% of its maximum. Only active while your team controls a World Tree.";
+        Description = $"{prefix}When a unit you control would take lethal damage, it has a {_healChancePercentage}% chance to instead be restored to {_healAmountPercentage}% of its maximum hit points. Only active while your team controls a World Tree.";
         var researchLevel = _isActive ? 1 : 0;
         foreach (var player in _playersWithPower) 
           SetPlayerTechResearched(player, ResearchId, researchLevel);
