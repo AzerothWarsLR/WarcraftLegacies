@@ -23,13 +23,15 @@ namespace WarcraftLegacies.Source.Powers
     /// <summary>The effect that appears when a unit is healed.</summary>
     public string Effect { get; init; } = "";
     
+    /// <summary>Active when the <see cref="Power"/> is active, inactive otherwise.</summary>
+    public int ResearchId { get; init; }
+    
     public Immortality(int healChancePercentage, int healAmountPercentage, List<Capital> worldTrees)
     {
       _healChancePercentage = healChancePercentage;
       _healAmountPercentage = healAmountPercentage;
       Name = "Immortality";
       Description = GenerateDescription();
-      
       _worldTrees = worldTrees;
     }
 

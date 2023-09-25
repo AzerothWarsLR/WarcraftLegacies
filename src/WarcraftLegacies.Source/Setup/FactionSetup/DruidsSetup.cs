@@ -109,7 +109,8 @@ Gather your forces and strike before the Horde can organize their efforts."
       {
         IconName = "ArcaneRessurection",
         Name = "Immortality",
-        Effect = @"Abilities\Spells\Human\Heal\HealTarget.mdl"
+        Effect = @"Abilities\Spells\Human\Heal\HealTarget.mdl",
+        ResearchId = Constants.UPGRADE_YB01_IMMORTALITY_POWER_IS_ACTIVE
       });
       
       FactionManager.Register(Druids);

@@ -105,7 +105,8 @@ Once you have secured your holdings, gather your army and destroy the Orcish Hor
       {
         IconName = "ArcaneRessurection",
         Name = "Immortality",
-        Effect = @"Abilities\Spells\Human\Heal\HealTarget.mdl"
+        Effect = @"Abilities\Spells\Human\Heal\HealTarget.mdl",
+        ResearchId = Constants.UPGRADE_YB01_IMMORTALITY_POWER_IS_ACTIVE
       });
 
       FactionManager.Register(Sentinels);
