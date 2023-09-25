@@ -19,7 +19,7 @@ namespace WarcraftLegacies.Source.Quests.Legion
     }
     
     /// <inheritdoc/>
-    protected override string RewardFlavour => "Resistance is futile, this land will fall to the might of the Burning Legion. ";
+    protected override string RewardFlavour => "Resistance is futile; this land will fall to the might of the Burning Legion.";
 
     /// <inheritdoc/>
     protected override string RewardDescription => "Learn to research Astral Walk from the Burning Citadel";
