@@ -105,7 +105,7 @@ Gather your forces and strike before the Horde can organize their efforts."
         allLegendSetup.Druids.Nordrassil,
         allLegendSetup.Neutral.Shaladrassil
       };
-      Druids.AddPower(new Immortality(0.25f, 0.45f, worldTrees)
+      Druids.AddPower(new Immortality(25, 45, worldTrees)
       {
         IconName = "ArcaneRessurection",
         Name = "Immortality",

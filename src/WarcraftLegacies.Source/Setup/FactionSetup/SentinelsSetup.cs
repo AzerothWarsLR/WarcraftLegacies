@@ -101,7 +101,7 @@ Once you have secured your holdings, gather your army and destroy the Orcish Hor
         allLegendSetup.Druids.Nordrassil,
         allLegendSetup.Neutral.Shaladrassil
       };
-      Sentinels.AddPower(new Immortality(0.25f, 0.45f, worldTrees)
+      Sentinels.AddPower(new Immortality(25, 45, worldTrees)
       {
         IconName = "ArcaneRessurection",
         Name = "Immortality",

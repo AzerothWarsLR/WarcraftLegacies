@@ -14,28 +14,36 @@ namespace WarcraftLegacies.Source.Powers
 {
   public sealed class Immortality : Power
   {
-    private readonly float _healChance;
-    private readonly float _healAmountPercentage;
-    private bool _active = true;
+    private readonly int _healChancePercentage;
+    private readonly int _healAmountPercentage;
+    private bool _active;
     private readonly List<Objective> _objectives = new();
     private readonly List<Capital> _worldTrees;
 
     /// <summary>The effect that appears when a unit is healed.</summary>
     public string Effect { get; init; } = "";
     
-    public Immortality(float healChance, float healAmountPercentage, List<Capital> worldTrees)
+    public Immortality(int healChancePercentage, int healAmountPercentage, List<Capital> worldTrees)
     {
-      _healChance = healChance;
+      _healChancePercentage = healChancePercentage;
       _healAmountPercentage = healAmountPercentage;
       Name = "Immortality";
-      Description = $"When a unit you control would take lethal damage, it has a {(int)(healChance*100)}% chance to instead restore hit points until it has {(int)(healAmountPercentage*100)}% of its maximum. Only active while your team controls a World Tree.";
+      Description = GenerateDescription();
+      
       _worldTrees = worldTrees;
+    }
+
+    private string GenerateDescription()
+    {
+      var prefix = _active ? "" : "|cffc0c0c0";
+      return $"{prefix}When a unit you control would take lethal damage, it has a {_healChancePercentage}% chance to instead restore hit points until it has {_healAmountPercentage}% of its maximum. Only active while your team controls a World Tree.";
     }
 
     /// <inheritdoc />
     public override void OnAdd(player whichPlayer)
     {
       PlayerUnitEvents.Register(CustomPlayerUnitEvents.PlayerTakesDamage, OnDamage, GetPlayerId(whichPlayer));
+      CheckIfActive();
       foreach (var worldTree in _worldTrees)
         AddObjective(new ObjectiveControlCapital(worldTree, false)
         {
@@ -57,11 +65,13 @@ namespace WarcraftLegacies.Source.Powers
     private void OnDamage()
     {
       var damagedUnit = GetTriggerUnit();
-      if (!_active || !(GetEventDamage() >= damagedUnit.GetHitPoints()) || !(GetRandomReal(0, 1) < _healChance)) 
+      if (!_active || !(GetEventDamage() >= damagedUnit.GetHitPoints()) ||
+          !(GetRandomInt(0, 100) < _healChancePercentage) || IsUnitType(damagedUnit, UNIT_TYPE_STRUCTURE) ||
+          IsUnitType(damagedUnit, UNIT_TYPE_MECHANICAL)) 
         return;
       
       BlzSetEventDamage(0);
-      damagedUnit.SetCurrentHitpoints((int)(damagedUnit.GetMaximumHitPoints() * _healAmountPercentage));
+      damagedUnit.SetCurrentHitpoints((int)(damagedUnit.GetMaximumHitPoints() * ((float)_healAmountPercentage / 100)));
       AddSpecialEffectTarget(Effect, damagedUnit, "origin")
         .SetLifespan(1);
     }
@@ -78,7 +88,12 @@ namespace WarcraftLegacies.Source.Powers
       objective.ProgressChanged -= OnObjectiveProgressChanged;
     }
     
-    private void OnObjectiveProgressChanged(object? sender, Objective objective) =>
+    private void OnObjectiveProgressChanged(object? sender, Objective objective) => CheckIfActive();
+
+    private void CheckIfActive()
+    {
       _active = _objectives.Any(x => x.Progress == QuestProgress.Complete);
+      Description = GenerateDescription();
+    }
   }
 }
