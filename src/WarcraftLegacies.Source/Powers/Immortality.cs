@@ -19,6 +19,7 @@ namespace WarcraftLegacies.Source.Powers
     private readonly List<Objective> _objectives = new();
     private readonly List<Capital> _worldTrees;
     private bool _isActive;
+    private readonly List<player> _playersWithPower = new();
 
     private bool IsActive
     {
@@ -28,6 +29,9 @@ namespace WarcraftLegacies.Source.Powers
         _isActive = value;
         var prefix = IsActive ? "" : "|cffc0c0c0";
         Description = $"{prefix}When a unit you control would take lethal damage, it has a {_healChancePercentage}% chance to instead restore hit points until it has {_healAmountPercentage}% of its maximum. Only active while your team controls a World Tree.";
+        var researchLevel = _isActive ? 1 : 0;
+        foreach (var player in _playersWithPower) 
+          SetPlayerTechResearched(player, ResearchId, researchLevel);
       }
     }
     
@@ -46,9 +50,12 @@ namespace WarcraftLegacies.Source.Powers
     }
 
     /// <inheritdoc />
-    public override void OnAdd(player whichPlayer) =>
+    public override void OnAdd(player whichPlayer)
+    {
       PlayerUnitEvents.Register(CustomPlayerUnitEvents.PlayerTakesDamage, OnDamage, GetPlayerId(whichPlayer));
-    
+      _playersWithPower.Add(whichPlayer);
+    }
+
     /// <inheritdoc />
     public override void OnAdd(Faction whichFaction)
     {
@@ -61,9 +68,13 @@ namespace WarcraftLegacies.Source.Powers
     }
 
     /// <inheritdoc />
-    public override void OnRemove(player whichPlayer) =>
+    public override void OnRemove(player whichPlayer)
+    {
       PlayerUnitEvents.Unregister(CustomPlayerUnitEvents.PlayerTakesDamage, OnDamage, GetPlayerId(whichPlayer));
-    
+      _playersWithPower.Remove(whichPlayer);
+      SetPlayerTechResearched(whichPlayer, ResearchId, 0);
+    }
+
     /// <inheritdoc />
     public override void OnRemove(Faction whichFaction)
     {
