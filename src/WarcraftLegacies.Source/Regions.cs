@@ -104,7 +104,7 @@ public static class Regions
 	public static Rectangle East_Thandol { get; set; } = new Rectangle(16736f, 0f, 16928f, 224f);
 	public static Rectangle Eastern_Northrend { get; set; } = new Rectangle(-2272f, 20320f, 4608f, 22304f);
 	public static Rectangle EchoIsleAmbient { get; set; } = new Rectangle(-8576f, -10208f, -5056f, -4064f);
-	public static Rectangle EchoUnlock { get; set; } = new Rectangle(-8608f, -6816f, -6208f, -3968f);
+	public static Rectangle EchoUnlock { get; set; } = new Rectangle(-8416f, -6816f, -6208f, -3968f);
 	public static Rectangle ElwinForestAmbient { get; set; } = new Rectangle(8704f, -14816f, 13376f, -12672f);
 	public static Rectangle EntireMap { get; set; } = new Rectangle(-24512f, -31872f, 24096f, 25056f);
 	public static Rectangle ExodarBaseUnlock { get; set; } = new Rectangle(-24480f, 5792f, -21248f, 8416f);
@@ -171,7 +171,7 @@ public static class Regions
 	public static Rectangle JainaChannel { get; set; } = new Rectangle(-9888f, 17632f, -9792f, 17728f);
 	public static Rectangle KaelSunwellChannel { get; set; } = new Rectangle(18496f, 21568f, 18624f, 21696f);
 	public static Rectangle Kali_Ships { get; set; } = new Rectangle(-17600f, -15296f, -10816f, 5600f);
-	public static Rectangle Kalimdor { get; set; } = new Rectangle(-21280f, -18816f, -5664f, 12000f);
+	public static Rectangle Kalimdor { get; set; } = new Rectangle(-21184f, -19424f, -5568f, 11392f);
 	public static Rectangle KaliRock1 { get; set; } = new Rectangle(-16864f, -2336f, -15456f, -1280f);
 	public static Rectangle KaliRock10 { get; set; } = new Rectangle(-11296f, 2688f, -9952f, 3776f);
 	public static Rectangle KaliRock11 { get; set; } = new Rectangle(-12640f, 3360f, -11872f, 4704f);
@@ -242,7 +242,7 @@ public static class Regions
 	public static Rectangle QuelthalasAmbient { get; set; } = new Rectangle(16224f, 11776f, 20224f, 17440f);
 	public static Rectangle RagnarosSummon { get; set; } = new Rectangle(12192f, -10784f, 12512f, -10464f);
 	public static Rectangle RanazjarAmbient { get; set; } = new Rectangle(-21344f, -5536f, -19424f, -1248f);
-	public static Rectangle Ratchet_Unlock_1 { get; set; } = new Rectangle(-11328f, -4864f, -9920f, -3360f);
+	public static Rectangle Ratchet_Unlock_1 { get; set; } = new Rectangle(-11360f, -4640f, -10208f, -3360f);
 	public static Rectangle RiseBaseUnlock { get; set; } = new Rectangle(-13056f, 5440f, -11072f, 7488f);
 	public static Rectangle RuinOfDalaran { get; set; } = new Rectangle(9152f, 5056f, 9312f, 5248f);
 	public static Rectangle Sargeras_Entrance { get; set; } = new Rectangle(-1024f, 8096f, -448f, 8576f);
