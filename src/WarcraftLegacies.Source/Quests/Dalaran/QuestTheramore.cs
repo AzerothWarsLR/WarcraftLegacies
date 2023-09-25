@@ -47,6 +47,14 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
       "Gain control of all units at Theramore and teleport all of your units within Dalaran to Theramore. Dalaran becomes hostile";
 
     /// <inheritdoc />
+    protected override string PenaltyFlavour =>
+      "The people of Dalaran have to abandon their city. The colony of Theramore is founded in Kalimdor.";
+
+    /// <inheritdoc />
+    protected override string PenaltyDescription =>
+      $"Gain control of all units at Theramore";
+
+    /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)
     {
       if (completingFaction.Player != null)
