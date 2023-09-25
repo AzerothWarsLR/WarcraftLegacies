@@ -16,7 +16,7 @@ namespace WarcraftLegacies.Source.Powers
   {
     private readonly float _healChance;
     private readonly float _healAmountPercentage;
-    private bool _active;
+    private bool _active = true;
     private readonly List<Objective> _objectives = new();
     private readonly List<Capital> _worldTrees;
 
@@ -28,7 +28,7 @@ namespace WarcraftLegacies.Source.Powers
       _healChance = healChance;
       _healAmountPercentage = healAmountPercentage;
       Name = "Immortality";
-      Description = $"When a unit you control would take lethal damage, it has a {healChance*100}% chance to instead restore hit points until it has {healAmountPercentage*100}% of its maximum hit points. Only active while your team controls a World Tree.";
+      Description = $"When a unit you control would take lethal damage, it has a {(int)(healChance*100)}% chance to instead restore hit points until it has {(int)(healAmountPercentage*100)}% of its maximum. Only active while your team controls a World Tree.";
       _worldTrees = worldTrees;
     }
 
@@ -50,6 +50,8 @@ namespace WarcraftLegacies.Source.Powers
       PlayerUnitEvents.Unregister(CustomPlayerUnitEvents.PlayerTakesDamage, OnDamage, GetPlayerId(whichPlayer));
       foreach (var objective in _objectives)
         RemoveObjective(objective);
+      
+      _objectives.Clear();
     }
 
     private void OnDamage()
