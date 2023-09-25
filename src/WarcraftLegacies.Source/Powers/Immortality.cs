@@ -42,22 +42,27 @@ namespace WarcraftLegacies.Source.Powers
     }
 
     /// <inheritdoc />
-    public override void OnAdd(player whichPlayer)
-    {
+    public override void OnAdd(player whichPlayer) =>
       PlayerUnitEvents.Register(CustomPlayerUnitEvents.PlayerTakesDamage, OnDamage, GetPlayerId(whichPlayer));
-      CheckIfActive();
+    
+    /// <inheritdoc />
+    public override void OnAdd(Faction whichFaction)
+    {
       foreach (var worldTree in _worldTrees)
         AddObjective(new ObjectiveControlCapital(worldTree, false)
         {
-          //Todo: this is too circular. Powers only apply to players, but Objectives apply to factions, so... Not good?
-          EligibleFactions = new List<Faction>{ whichPlayer.GetFaction()! }
+          EligibleFactions = new List<Faction>{ whichFaction }
         });
+      CheckIfActive();
     }
 
     /// <inheritdoc />
-    public override void OnRemove(player whichPlayer)
-    {
+    public override void OnRemove(player whichPlayer) =>
       PlayerUnitEvents.Unregister(CustomPlayerUnitEvents.PlayerTakesDamage, OnDamage, GetPlayerId(whichPlayer));
+    
+    /// <inheritdoc />
+    public override void OnRemove(Faction whichFaction)
+    {
       foreach (var objective in _objectives)
         RemoveObjective(objective);
       
