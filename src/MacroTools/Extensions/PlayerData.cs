@@ -5,7 +5,6 @@ using MacroTools.ControlPointSystem;
 using MacroTools.DialogueSystem;
 using MacroTools.FactionSystem;
 using MacroTools.Save;
-using WCSharp.Shared;
 using static War3Api.Common;
 
 namespace MacroTools.Extensions
@@ -13,7 +12,7 @@ namespace MacroTools.Extensions
   /// <summary>
   /// Provides extra information about players that is not already tracked by the Warcraft 3 engine.
   /// </summary>
-  public sealed class PlayerData
+  internal sealed class PlayerData
   {
     /// <summary>
     /// Fired when the player leaves a team.

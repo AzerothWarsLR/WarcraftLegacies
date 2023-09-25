@@ -22,7 +22,7 @@ namespace MacroTools.Commands
     public override CommandType Type => CommandType.Normal;
 
     /// <inheritdoc />
-    public override string Description => "Sets your camera zoom to the specified distance.";
+    public override string Description => "Toggles the display of quest text.";
 
     /// <inheritdoc />
     public override string Execute(player commandUser, params string[] parameters)
