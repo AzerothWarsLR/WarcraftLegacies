@@ -42,7 +42,7 @@ namespace WarcraftLegacies.Source.Quests.Legion
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
-      "Learn to train Tichondrius and Anetheron from the Altar of Destruction, and cast the Portal spells from the Legion Teleporter";
+      "Learn to train Tichondrius and Anetheron from the Altar of Destruction, and to cast the Portal spells from the Legion Teleporter";
 
     /// <inheritdoc/>
     protected override string RewardFlavour =>
