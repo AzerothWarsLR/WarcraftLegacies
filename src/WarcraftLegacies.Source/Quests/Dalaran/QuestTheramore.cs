@@ -48,7 +48,7 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
 
     /// <inheritdoc />
     protected override string PenaltyFlavour =>
-      "The people of Dalaran have to abandon their city. The colony of Theramore is founded in Kalimdor.";
+      "Dalaran has fallen. Those who managed to survive its destruction travel west, to the distant lands of Kalimdor. They hope that this new world will treat them more kindly than the one they left behind.";
 
     /// <inheritdoc />
     protected override string PenaltyDescription =>
