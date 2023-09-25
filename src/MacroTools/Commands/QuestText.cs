@@ -1,5 +1,4 @@
-﻿using System;
-using MacroTools.CommandSystem;
+﻿using MacroTools.CommandSystem;
 using MacroTools.Extensions;
 using static War3Api.Common;
 
@@ -8,10 +7,10 @@ namespace MacroTools.Commands
   /// <summary>
   /// A <see cref="CommandSystem.Command"/> that sets the player's camera to a specific height.
   /// </summary>
-  public sealed class Cam : Command
+  public sealed class QuestText : Command
   {
     /// <inheritdoc />
-    public override string CommandText => "cam";
+    public override string CommandText => "questtext";
     
     /// <inheritdoc />
     public override bool Exact => false;
@@ -28,13 +27,12 @@ namespace MacroTools.Commands
     /// <inheritdoc />
     public override string Execute(player commandUser, params string[] parameters)
     {
-      var cameraHeight = parameters[0];
-      if (!int.TryParse(cameraHeight, out var cameraHeightInt))
-        return "You must specify a number as the first parameter.";
+      var questText = parameters[0];
+      if (!bool.TryParse(questText, out var questTextBool))
+        return "You must specify a boolean value(true or false) as the first parameter.";
       
-      cameraHeightInt = Math.Clamp(cameraHeightInt, 700, 2701);
-      PlayerData.ByHandle(commandUser).UpdatePlayerSetting("CamDistance", cameraHeightInt);
-      return $"Setting camera height to {cameraHeightInt}.";
+      PlayerData.ByHandle(commandUser).UpdatePlayerSetting("ShowQuestText", questTextBool);
+      return $"Setting show quest text option to {questTextBool}.";
     }
   }
 }
