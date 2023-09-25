@@ -35,13 +35,31 @@ namespace MacroTools.FactionSystem
     /// <summary>
     ///   Fired when the <see cref="Power" /> is added to a <see cref="player" />.
     /// </summary>
-    public abstract void OnAdd(player whichPlayer);
+    public virtual void OnAdd(player whichPlayer)
+    {
+    }
 
     /// <summary>
     ///   Fired when the <see cref="Power" /> is added to a <see cref="player" />.
     /// </summary>
-    public abstract void OnRemove(player whichPlayer);
+    public virtual void OnRemove(player whichPlayer)
+    {
+    }
 
+    /// <summary>
+    ///   Fired when the <see cref="Power" /> is added to a <see cref="Faction" />.
+    /// </summary>
+    public virtual void OnAdd(Faction whichFaction)
+    {
+    }
+
+    /// <summary>
+    ///   Fired when the <see cref="Power" /> is added to a <see cref="Faction" />.
+    /// </summary>
+    public virtual void OnRemove(Faction whichFaction)
+    {
+    }
+    
     public virtual void OnUse(player whichPlayer)
     {
     }
