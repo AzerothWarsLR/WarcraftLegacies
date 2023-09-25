@@ -1,5 +1,7 @@
-﻿using MacroTools;
+﻿using System.Collections.Generic;
+using MacroTools;
 using MacroTools.FactionSystem;
+using MacroTools.LegendSystem;
 using MacroTools.Powers;
 using WarcraftLegacies.Source.Powers;
 using WCSharp.Shared.Data;
@@ -11,7 +13,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
   {
     public static Faction? Sentinels { get; private set; }
 
-    public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
+    public static void Setup(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup)
     {
       Sentinels = new Faction("Sentinels", PLAYER_COLOR_MINT, "|CFFBFFF80",
         @"ReplaceableTextures\CommandButtons\BTNPriestessOfTheMoon.blp")
@@ -94,7 +96,12 @@ Once you have secured your holdings, gather your army and destroy the Orcish Hor
         "Your Control Points increase your units' movement speed by 24% in a large radius.",
         "ANA_HealingButterfliesFixed"));
       
-      Sentinels.AddPower(new Immortality(0.25f, 0.45f)
+      var worldTrees = new List<Capital>
+      {
+        allLegendSetup.Druids.Nordrassil,
+        allLegendSetup.Neutral.Shaladrassil
+      };
+      Sentinels.AddPower(new Immortality(0.25f, 0.45f, worldTrees)
       {
         IconName = @"ReplaceableTextures\CommandButtons\BTNArcaneRessurection.blp",
         Name = "Immortality",

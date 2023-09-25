@@ -1,5 +1,7 @@
-﻿using MacroTools;
+﻿using System.Collections.Generic;
+using MacroTools;
 using MacroTools.FactionSystem;
+using MacroTools.LegendSystem;
 using WarcraftLegacies.Source.Powers;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -10,7 +12,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
   {
     public static Faction? Druids { get; private set; }
 
-    public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
+    public static void Setup(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup)
     {
       Druids = new Faction("Druids", PLAYER_COLOR_BROWN, "|c004e2a04",
         @"ReplaceableTextures\CommandButtons\BTNFurion.blp")
@@ -97,8 +99,13 @@ Gather your forces and strike before the Horde can organize their efforts."
       Druids.SetObjectLevel(Constants.UPGRADE_REWS_WELL_SPRING, 1);
       
       Druids.AddGoldMine(preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-9200, 10742)));
-      
-      Druids.AddPower(new Immortality(0.25f, 0.45f)
+
+      var worldTrees = new List<Capital>
+      {
+        allLegendSetup.Druids.Nordrassil,
+        allLegendSetup.Neutral.Shaladrassil
+      };
+      Druids.AddPower(new Immortality(0.25f, 0.45f, worldTrees)
       {
         IconName = @"ReplaceableTextures\CommandButtons\BTNArcaneRessurection.blp",
         Name = "Immortality",
