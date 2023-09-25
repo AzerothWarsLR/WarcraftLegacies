@@ -19,7 +19,7 @@ namespace WarcraftLegacies.Source.Powers
       _healChance = healChance;
       _healAmountPercentage = healAmountPercentage;
       Name = "Immortality";
-      Description = $"When a unit you control would take lethal damage, it has a {healChance*100}% chance to instead restore hit points until it has {healAmountPercentage*100}% of its maximum hit points.";
+      Description = $"When a unit you control would take lethal damage, it has a {healChance*100}% chance to instead restore hit points until it has {healAmountPercentage*100}% of its maximum hit points. Only active while your team controls a World Tree.";
     }
     
     /// <inheritdoc />
@@ -36,6 +36,7 @@ namespace WarcraftLegacies.Source.Powers
       if (!(GetEventDamage() >= damagedUnit.GetHitPoints()) || !(GetRandomReal(0, 1) < _healChance)) 
         return;
       
+      BlzSetEventDamage(0);
       damagedUnit.SetCurrentHitpoints((int)(damagedUnit.GetMaximumHitPoints() * _healAmountPercentage));
       AddSpecialEffectTarget(Effect, damagedUnit, "origin")
         .SetLifespan(1);

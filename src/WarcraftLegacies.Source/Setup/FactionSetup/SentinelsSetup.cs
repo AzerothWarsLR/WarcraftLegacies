@@ -82,22 +82,21 @@ Once you have secured your holdings, gather your army and destroy the Orcish Hor
       Sentinels.ModObjectLimit(FourCC("Reuv"), Faction.UNLIMITED); //Ultravision
       Sentinels.ModObjectLimit(FourCC("Remg"), Faction.UNLIMITED); //Upgraded Moon Glaive
       Sentinels.ModObjectLimit(FourCC("Roen"), Faction.UNLIMITED); //Ensnare
-      Sentinels.ModObjectLimit(FourCC("R04E"), Faction.UNLIMITED); //Ysera's Gift (World Tree upgrade)
-      Sentinels.ModObjectLimit(FourCC("R002"), Faction.UNLIMITED); //Blackwald Enhancement
-      Sentinels.ModObjectLimit(FourCC("R03J"), Faction.UNLIMITED); //Wind Walk
-      Sentinels.ModObjectLimit(FourCC("R018"), Faction.UNLIMITED); //Lightning Barrage
+      Sentinels.ModObjectLimit(Constants.UPGRADE_R04E_YSERA_S_GIFT_DRUIDS, Faction.UNLIMITED);
+      Sentinels.ModObjectLimit(Constants.UPGRADE_R03J_WIND_WALK_SENTINELS, Faction.UNLIMITED);
+      Sentinels.ModObjectLimit(Constants.UPGRADE_R018_IMPROVED_LIGHTNING_BARRAGE_SENTINELS, Faction.UNLIMITED);
       Sentinels.ModObjectLimit(Constants.UPGRADE_R068_HIPPOGRYPH_RIDERS_SENTINEL, Faction.UNLIMITED);
       Sentinels.ModObjectLimit(Constants.UPGRADE_R0A0_CHIMAERAS_SENTINEL, Faction.UNLIMITED);
 
       Sentinels.AddGoldMine(preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-22721, -13570)));
       
       Sentinels.AddPower(new DummyPower("Unspoiled Wilderness",
-        "Every control point tower has a 24% movement speed aura in a 2500 area of effect",
+        "Your Control Points increase your units' movement speed by 24% in a large radius.",
         "ANA_HealingButterfliesFixed"));
       
       Sentinels.AddPower(new Immortality(0.25f, 0.45f)
       {
-        IconName = "",
+        IconName = @"ReplaceableTextures\CommandButtons\BTNArcaneRessurection.blp",
         Name = "Immortality",
         Effect = @"Abilities\Spells\Human\Heal\HealTarget.mdl"
       });

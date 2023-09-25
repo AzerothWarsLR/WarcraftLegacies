@@ -100,7 +100,7 @@ Gather your forces and strike before the Horde can organize their efforts."
       
       Druids.AddPower(new Immortality(0.25f, 0.45f)
       {
-        IconName = "",
+        IconName = @"ReplaceableTextures\CommandButtons\BTNArcaneRessurection.blp",
         Name = "Immortality",
         Effect = @"Abilities\Spells\Human\Heal\HealTarget.mdl"
       });
