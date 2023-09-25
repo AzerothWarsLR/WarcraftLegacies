@@ -19,10 +19,10 @@ namespace WarcraftLegacies.Source.Quests.Legion
     }
     
     /// <inheritdoc/>
-    protected override string RewardFlavour => "Resistance is futile, this land will fall to the might of the Burning Legion. ";
+    protected override string RewardFlavour => "Resistance is futile; this land will fall to the might of the Burning Legion.";
 
     /// <inheritdoc/>
-    protected override string RewardDescription => "Your power grows. Dreadlords and Infiltrators can now unlock the ability to teleport.";
+    protected override string RewardDescription => "Learn to research Astral Walk from the Burning Citadel";
       
     /// <inheritdoc/>
     protected override void OnComplete(Faction whichFaction)
