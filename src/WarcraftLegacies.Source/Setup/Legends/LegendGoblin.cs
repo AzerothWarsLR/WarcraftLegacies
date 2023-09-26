@@ -15,7 +15,8 @@ namespace WarcraftLegacies.Source.Setup.Legends
     {
       Gallywix = new LegendaryHero("Gallywix")
       {
-        UnitType = Constants.UNIT_O04N_TRADE_PRINCE_OF_THE_BILGEWATER_CARTEL_GOBLIN
+        UnitType = Constants.UNIT_O04N_TRADE_PRINCE_OF_THE_BILGEWATER_CARTEL_GOBLIN,
+        StartingXp = 2800
       };
 
       Noggenfogger = new LegendaryHero("Noggenfogger")
