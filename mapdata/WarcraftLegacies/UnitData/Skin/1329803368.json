@@ -1,0 +1,54 @@
+{
+  "OldId": 1768844136,
+  "NewId": 1329803368,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNVrykulWarMammoth.blp"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(frostwolf)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\WarDrummerFrostwolfOrcMammothV1.00.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Mammoth Wrangler"
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 2
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Mammoth Wrangler"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Animal trainer of the Vrykul.|n|cfff5962dAbilities:|R Charge, Gather Lumber|n |n|cff99b4d1Can only train 4.|n|cffffcc00Attacks land units and trees.|r"
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "Mammoth"
+    }
+  ]
+}
