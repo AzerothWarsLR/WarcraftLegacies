@@ -19,7 +19,7 @@ namespace MacroTools.Commands
     public override CommandType Type => CommandType.Normal;
 
     /// <inheritdoc />
-    public override string Description => "Shows the current settings for the player.";
+    public override string Description => "Shows your current settings.";
 
     /// <inheritdoc />
     public override string Execute(player commandUser, params string[] parameters)
