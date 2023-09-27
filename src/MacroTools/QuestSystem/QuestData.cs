@@ -287,8 +287,7 @@ namespace MacroTools.QuestSystem
       
       foreach (var enumPlayer in WCSharp.Shared.Util.EnumeratePlayers())
         if (enumPlayer != whichPlayer)
-          if (PlayerData.ByHandle(whichPlayer).PlayerSettings.ShowQuestText)
-            DisplayTextToPlayer(enumPlayer, 0, 0,
+          DisplayTextToPlayer(enumPlayer, 0, 0,
             $"\n|cffffcc00MAJOR EVENT - {whichPlayer.GetFaction()?.PrefixCol}{Title}|r\n{RewardFlavour}\n");
     }
 
@@ -306,8 +305,8 @@ namespace MacroTools.QuestSystem
             QuestProgress.Failed => $"{display} - |cffCD5C5C{questItem.Description} (Failed)|r\n",
             _ => $"{display} - {questItem.Description}\n"
           };
-      if (faction.Player != null && PlayerData.ByHandle(faction.Player).PlayerSettings.ShowQuestText)
-        DisplayTextToPlayer(faction.Player, 0, 0, display);
+
+      DisplayTextToPlayer(faction.Player, 0, 0, display);
       var sound = SoundLibrary.Failed;
       if (GetLocalPlayer() == faction.Player)
         StartSound(sound);
@@ -319,8 +318,7 @@ namespace MacroTools.QuestSystem
       foreach (var questItem in _objectives)
         if (questItem.ShowsInQuestLog)
           display = $"{display} - |cff808080{questItem.Description} (Completed)|r\n";
-      if (faction.Player != null && PlayerData.ByHandle(faction.Player).PlayerSettings.ShowQuestText)
-        DisplayTextToPlayer(faction.Player, 0, 0, display);
+      DisplayTextToPlayer(faction.Player, 0, 0, display);
       var sound = SoundLibrary.Completed;
       if (GetLocalPlayer() == faction.Player) 
         StartSound(sound);
@@ -340,8 +338,7 @@ namespace MacroTools.QuestSystem
             ? $"{display} - |cff808080{questItem.Description} (Completed)|r\n"
             : $"{display} - {questItem.Description}\n";
         }
-      if (faction.Player != null && PlayerData.ByHandle(faction.Player).PlayerSettings.ShowQuestText)
-        DisplayTextToPlayer(faction.Player, 0, 0, display);
+      DisplayTextToPlayer(faction.Player, 0, 0, display);
       var sound = SoundLibrary.Discovered;
       if (GetLocalPlayer() == faction.Player) 
         StartSound(sound);

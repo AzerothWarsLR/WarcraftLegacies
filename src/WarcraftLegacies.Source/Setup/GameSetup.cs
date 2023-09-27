@@ -1,11 +1,9 @@
 ﻿using MacroTools;
 using MacroTools.CommandSystem;
 using MacroTools.ControlPointSystem;
-using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.Mechanics;
 using MacroTools.PassiveAbilitySystem;
-using MacroTools.Save;
 using MacroTools.UserInterface;
 using WarcraftLegacies.Source.ArtifactBehaviour;
 using WarcraftLegacies.Source.GameLogic;
@@ -30,7 +28,6 @@ namespace WarcraftLegacies.Source.Setup
     /// </summary>
     public static void Setup()
     {
-      SaveManager.Initialize();
       var displayIntroText = new DisplayIntroText(25);
       var cinematicMode = new CinematicMode(59, displayIntroText);
       var gameTime = new GameTime();
