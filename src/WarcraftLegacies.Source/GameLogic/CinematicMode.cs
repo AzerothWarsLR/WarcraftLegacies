@@ -1,7 +1,6 @@
 ﻿using MacroTools.Extensions;
 using MacroTools.Timer;
 using System;
-using System.Linq;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.GameLogic
@@ -12,8 +11,8 @@ namespace WarcraftLegacies.Source.GameLogic
   /// </summary>
   public sealed class CinematicMode : ITimer
   {
-    private timer _cinermaticTimer;
-    private timer _musicTimer;
+    private timer? _cinermaticTimer;
+    private timer? _musicTimer;
     private CinematicState _state = CinematicState.Inactive;
     private readonly ITimer _linkedTimer;
 
@@ -69,7 +68,6 @@ namespace WarcraftLegacies.Source.GameLogic
       FogEnable(true);
 
       SetMapMusic("music", true, 0);
-      SetCameraField(CAMERA_FIELD_TARGET_DISTANCE, 2400f, 1f);
 
       VolumeGroupReset();
       VolumeGroupSetVolume(SOUND_VOLUMEGROUP_AMBIENTSOUNDS, 0.4f);
