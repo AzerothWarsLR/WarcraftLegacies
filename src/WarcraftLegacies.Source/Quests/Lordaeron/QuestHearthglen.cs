@@ -21,7 +21,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
       "The village of Hearthglen is under siege from the restless dead. The people there must be saved.",
       @"ReplaceableTextures\CommandButtons\BTNutherAlt.blp")
     {
-      AddObjective(new ObjectiveKillAllInArea(new []{ hearthglenArea }, "in Hearthglen"));
+      AddObjective(new ObjectiveHostilesInAreaAreDead(new []{ hearthglenArea }, "in Hearthglen"));
       AddObjective(new ObjectiveExpire(660, Title));
       AddObjective(new ObjectiveSelfExists());
       _rescueUnits = hearthglenArea.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);

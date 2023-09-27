@@ -27,7 +27,7 @@ namespace WarcraftLegacies.Source.Quests.Draenei
       Required = true;
       AddObjective(new ObjectiveUpgrade(Constants.UNIT_O051_DIVINE_CITADEL_DRAENEI_T3, Constants.UNIT_O02P_CRYSTAL_HALL_DRAENEI_T1));
       AddObjective(new ObjectiveUnitReachesFullHealth(exodar.Unit));
-      AddObjective(new ObjectiveKillAllInArea(new List<Rectangle> { Regions.AzuremystAmbient }, "on Azuremyst Isle"));
+      AddObjective(new ObjectiveHostilesInAreaAreDead(new List<Rectangle> { Regions.AzuremystAmbient }, "on Azuremyst Isle"));
       AddObjective(new ObjectiveSelfExists());
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
       ResearchId = Constants.UPGRADE_R099_QUEST_COMPLETED_A_NEW_HOME;
