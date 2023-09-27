@@ -1,5 +1,4 @@
-﻿using MacroTools.Extensions;
-using MacroTools.Wrappers;
+﻿using MacroTools.Wrappers;
 using static War3Api.Common;
 
 namespace MacroTools.DialogueSystem
@@ -36,17 +35,13 @@ namespace MacroTools.DialogueSystem
     {
       if (whichPlayer != null)
       {
-        if (PlayerData.ByHandle(whichPlayer).PlayerSettings.PlayDialogue)
-          Sound.Play(whichPlayer, false);
-        if (PlayerData.ByHandle(whichPlayer).PlayerSettings.ShowCaptions)
-          DisplayTextToPlayer(whichPlayer, 0, 0, $"|cffffcc00{_speaker}:|r {_caption}");
+        Sound.Play(whichPlayer, false);
+        DisplayTextToPlayer(whichPlayer, 0, 0, $"|cffffcc00{_speaker}:|r {_caption}");
       }
       else
       {
-        if (PlayerData.ByHandle(GetLocalPlayer()).PlayerSettings.ShowCaptions)
-          DisplayTextToPlayer(GetLocalPlayer(), 0, 0, $"|cffffcc00{_speaker}:|r {_caption}");
-        if (PlayerData.ByHandle(GetLocalPlayer()).PlayerSettings.PlayDialogue)
-          Sound.Play(false);
+        DisplayTextToPlayer(GetLocalPlayer(), 0, 0, $"|cffffcc00{_speaker}:|r {_caption}");
+        Sound.Play(false);
       }
     }
   }

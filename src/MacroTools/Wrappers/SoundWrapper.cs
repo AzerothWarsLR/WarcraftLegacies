@@ -1,5 +1,4 @@
 ﻿using System;
-using MacroTools.Extensions;
 using static War3Api.Common;
 
 namespace MacroTools.Wrappers
@@ -33,13 +32,14 @@ namespace MacroTools.Wrappers
       {
         throw new ObjectDisposedException(nameof(SoundWrapper));
       }
-      
-      if (PlayerData.ByHandle(GetLocalPlayer()).PlayerSettings.PlayDialogue)
-        StartSound(Sound);
 
-      if (!disposeAfter) return;
-      KillSoundWhenDone(Sound);
-      _disposed = true;
+      StartSound(Sound);
+
+      if (disposeAfter)
+      {
+        KillSoundWhenDone(Sound);
+        _disposed = true;
+      }
     }
 
     /// <summary>
@@ -53,11 +53,8 @@ namespace MacroTools.Wrappers
       if (_disposed)
         throw new ObjectDisposedException(nameof(SoundWrapper));
 
-      if (whichPlayer == GetLocalPlayer())
-      {
-        if (PlayerData.ByHandle(GetLocalPlayer()).PlayerSettings.PlayDialogue)
-          StartSound(Sound);
-      }
+      if (whichPlayer == GetLocalPlayer()) 
+        StartSound(Sound);
 
       if (!disposeAfter) 
         return;
