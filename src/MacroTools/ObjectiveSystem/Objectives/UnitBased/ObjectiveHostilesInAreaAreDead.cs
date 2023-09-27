@@ -31,8 +31,14 @@ namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
     /// <summary>
     /// Initializes a new instance of the <see cref="ObjectiveHostilesInAreaAreDead"/> class.
     /// </summary>
-    public ObjectiveHostilesInAreaAreDead(IEnumerable<Rectangle> rectangles, string areaName)
+    public ObjectiveHostilesInAreaAreDead(ICollection<Rectangle> rectangles, string areaName)
     {
+      if (rectangles.Count == 1)
+      {
+        Position = rectangles.First().Center;
+        DisplaysPosition = true;
+      }
+      
       _areaName = areaName;
       foreach (var rectangle in rectangles)
       {
