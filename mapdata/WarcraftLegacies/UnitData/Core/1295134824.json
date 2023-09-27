@@ -83,6 +83,11 @@
       "Id": 1919381621,
       "Type": 3,
       "Value": "Rosp,R064,Renb,R013,Rhac"
+    },
+    {
+      "Id": 2037671029,
+      "Type": 3,
+      "Value": "normal"
     }
   ]
 }
