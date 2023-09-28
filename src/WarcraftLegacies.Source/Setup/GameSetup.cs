@@ -1,8 +1,6 @@
 ﻿using MacroTools;
 using MacroTools.CommandSystem;
 using MacroTools.ControlPointSystem;
-using MacroTools.Extensions;
-using MacroTools.FactionSystem;
 using MacroTools.Mechanics;
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.Save;
@@ -31,9 +29,8 @@ namespace WarcraftLegacies.Source.Setup
     public static void Setup()
     {
       SaveManager.Initialize();
-      var displayIntroText = new DisplayIntroText(25);
-      var cinematicMode = new CinematicMode(59, displayIntroText);
-      var gameTime = new GameTime();
+      DisplayIntroText.Setup(25);
+      CinematicMode.Setup(59);
       SetupControlPointManager();
       var preplacedUnitSystem = new PreplacedUnitSystem();
       SoundLibrary.Setup();
@@ -64,9 +61,8 @@ namespace WarcraftLegacies.Source.Setup
       BlightSystem.Setup(ScourgeSetup.Scourge);
       BlightSetup.Setup(preplacedUnitSystem);
       QuestMenuSetup.Setup();
-      cinematicMode.StartTimer();
-      gameTime.StartTimer();
-      CheatSetup.Setup(commandManager, cinematicMode);
+      GameTime.Start();
+      CheatSetup.Setup(commandManager);
       DialogueSetup.Setup(preplacedUnitSystem, allLegendSetup);
       MapFlagSetup.Setup();
       InfoQuests.Setup();
