@@ -60,6 +60,7 @@ namespace WarcraftLegacies.Source.Spells
           .MultiplyBaseDamage(1 + DamageBonus.Base + DamageBonus.PerLevel * level, 0)
           .MultiplyMaxHitpoints(1 + HealthBonus.Base + HealthBonus.PerLevel * level)
           .SetTimedLife(Duration)
+          .SetName("Ancestor")
           .AddType(UNIT_TYPE_SUMMONED);
 
         CreateTrigger()
