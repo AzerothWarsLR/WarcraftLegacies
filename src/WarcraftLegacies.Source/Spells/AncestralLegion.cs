@@ -1,5 +1,8 @@
 ﻿using MacroTools;
+using MacroTools.Extensions;
 using MacroTools.SpellSystem;
+using WCSharp.Shared.Data;
+using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Spells
 {
@@ -31,6 +34,33 @@ namespace WarcraftLegacies.Source.Spells
 
     /// <summary>Summoned units will create this effect when they die.</summary>
     public string DeathEffect { get; init; } = "";
+
+    /// <inheritdoc />
+    public override void OnCast(unit caster, unit target, Point targetPoint)
+    {
+      var level = GetAbilityLevel(caster);
+      var summonCap = SummonCap.Base + SummonCap.PerLevel * level;
+      for (var i = 0; i < summonCap; i++)
+      {
+        CreateUnit(caster.OwningPlayer(), RememberableUnitTypeId, targetPoint.X, targetPoint.Y, caster.GetFacing())
+          .SetColor(200, 165, 50, 150)
+          .MultiplyBaseDamage(1 + DamageBonus.Base + DamageBonus.PerLevel * level, 0)
+          .MultiplyMaxHitpoints(1 + HealthBonus.Base + HealthBonus.PerLevel * level);
+
+        AddSpecialEffect(SummonEffect, targetPoint.X, targetPoint.Y)
+          .SetLifespan();
+
+        RegenerateTooltip();
+      }
+    }
+
+    private void RegenerateTooltip()
+    {
+      const string baseTooltip = "beans";
+      const int taurenCount = 5; //todo
+      for (var i = 0; i < 3; i++)
+        BlzSetAbilityExtendedTooltip(Id, $"{baseTooltip}|n|n|cffDA9531Remembered Tauren:|r {taurenCount}", i);
+    }
     
     /// <inheritdoc />
     public AncestralLegion(int id) : base(id)
