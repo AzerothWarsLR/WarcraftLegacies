@@ -2,6 +2,7 @@
 using MacroTools;
 using MacroTools.Extensions;
 using MacroTools.SpellSystem;
+using WCSharp.Events;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
@@ -38,6 +39,11 @@ namespace WarcraftLegacies.Source.Spells
     /// <summary>Summoned units will create this effect when they die.</summary>
     public string DeathEffect { get; init; } = "";
 
+    /// <inheritdoc />
+    public AncestralLegion(int id) : base(id)
+    {
+    }
+    
     /// <inheritdoc />
     public override void OnCast(unit caster, unit target, Point targetPoint)
     {
@@ -76,30 +82,43 @@ namespace WarcraftLegacies.Source.Spells
     /// <inheritdoc />
     public override void OnLearn(unit learner)
     {
-      if (AncestralLegionDataByUnit.ContainsKey(learner))
+      if (AncestralLegionDataByUnit.ContainsKey(learner)) 
+        return;
+      
+      var newAncestralLegionData = new AncestralLegionData
       {
-        AncestralLegionDataByUnit.Add(learner, new AncestralLegionData
+        BaseTooltips = new string[]
         {
-          BaseTooltips = new string[]
-          {
-            BlzGetAbilityExtendedTooltip(Id, 0),
-            BlzGetAbilityExtendedTooltip(Id, 1),
-            BlzGetAbilityExtendedTooltip(Id, 2)
-          }
-        });
-      }
+          BlzGetAbilityExtendedTooltip(Id, 0),
+          BlzGetAbilityExtendedTooltip(Id, 1),
+          BlzGetAbilityExtendedTooltip(Id, 2)
+        }
+      };
+      AncestralLegionDataByUnit.Add(learner, newAncestralLegionData);
+        
+      RegisterRememberUnitsOnDeathTrigger(learner, newAncestralLegionData);
     }
+
+    private void RegisterRememberUnitsOnDeathTrigger(unit learner, AncestralLegionData ancestralLegionData)
+    {
+      PlayerUnitEvents.Register(UnitTypeEvent.Dies, () =>
+      {
+        if (!UnitIsRememberable(GetTriggerUnit()))
+          return;
+        
+        ancestralLegionData.RememberedUnits++;
+        RegenerateTooltip(learner);
+      }, RememberableUnitTypeId);
+    }
+
+    private bool UnitIsRememberable(unit getTriggerUnit) =>
+      !IsUnitType(getTriggerUnit, UNIT_TYPE_SUMMONED) && GetRandomReal(0, 1) < RememberChance;
 
     private void RegenerateTooltip(unit caster)
     {
       var ancestralLegionData = AncestralLegionDataByUnit[caster];
       for (var i = 0; i < 3; i++)
         BlzSetAbilityExtendedTooltip(Id, $"{ancestralLegionData.BaseTooltips[i]}|n|n|cffDA9531Remembered Tauren:|r {ancestralLegionData.RememberedUnits}", i);
-    }
-    
-    /// <inheritdoc />
-    public AncestralLegion(int id) : base(id)
-    {
     }
 
     private sealed class AncestralLegionData
