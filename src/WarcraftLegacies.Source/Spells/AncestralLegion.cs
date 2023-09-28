@@ -12,7 +12,7 @@ namespace WarcraftLegacies.Source.Spells
   /// </summary>
   public sealed class AncestralLegion : Spell
   {
-    private static Dictionary<unit, AncestralLegionData> _ancestralLegionDataByUnit = new();
+    private static readonly Dictionary<unit, AncestralLegionData> AncestralLegionDataByUnit = new();
     
     /// <summary>How long summoned units survive.</summary>
     public float Duration { get; init; }
@@ -48,7 +48,9 @@ namespace WarcraftLegacies.Source.Spells
         var summonedTauren = CreateUnit(caster.OwningPlayer(), RememberableUnitTypeId, targetPoint.X, targetPoint.Y, caster.GetFacing())
           .SetColor(200, 165, 50, 150)
           .MultiplyBaseDamage(1 + DamageBonus.Base + DamageBonus.PerLevel * level, 0)
-          .MultiplyMaxHitpoints(1 + HealthBonus.Base + HealthBonus.PerLevel * level);
+          .MultiplyMaxHitpoints(1 + HealthBonus.Base + HealthBonus.PerLevel * level)
+          .SetTimedLife(Duration)
+          .AddType(UNIT_TYPE_SUMMONED);
 
         CreateTrigger()
           .RegisterUnitEvent(summonedTauren, EVENT_UNIT_DEATH)
@@ -57,6 +59,8 @@ namespace WarcraftLegacies.Source.Spells
             var triggerUnit = GetTriggerUnit();
             AddSpecialEffect(DeathEffect, GetUnitX(triggerUnit), GetUnitY(triggerUnit))
               .SetLifespan();
+            
+            triggerUnit.Remove();
             
             GetTriggeringTrigger()
               .Destroy();
@@ -72,9 +76,9 @@ namespace WarcraftLegacies.Source.Spells
     /// <inheritdoc />
     public override void OnLearn(unit learner)
     {
-      if (_ancestralLegionDataByUnit.ContainsKey(learner))
+      if (AncestralLegionDataByUnit.ContainsKey(learner))
       {
-        _ancestralLegionDataByUnit.Add(learner, new AncestralLegionData
+        AncestralLegionDataByUnit.Add(learner, new AncestralLegionData
         {
           BaseTooltips = new string[]
           {
@@ -88,7 +92,7 @@ namespace WarcraftLegacies.Source.Spells
 
     private void RegenerateTooltip(unit caster)
     {
-      var ancestralLegionData = _ancestralLegionDataByUnit[caster];
+      var ancestralLegionData = AncestralLegionDataByUnit[caster];
       for (var i = 0; i < 3; i++)
         BlzSetAbilityExtendedTooltip(Id, $"{ancestralLegionData.BaseTooltips[i]}|n|n|cffDA9531Remembered Tauren:|r {ancestralLegionData.RememberedUnits}", i);
     }
