@@ -8,7 +8,7 @@
     {
       "Id": 1768055157,
       "Type": 3,
-      "Value": "A08S,Aihn"
+      "Value": "A142,A020,A08S,Aihn"
     },
     {
       "Id": 1684824693,
@@ -91,6 +91,11 @@
       "Id": 829645685,
       "Type": 3,
       "Value": "MetalHeavySlice"
+    },
+    {
+      "Id": 2037671029,
+      "Type": 3,
+      "Value": "medium"
     }
   ]
 }

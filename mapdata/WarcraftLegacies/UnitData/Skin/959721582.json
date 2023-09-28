@@ -62,7 +62,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Steadfast Rangers of the Kul\u0027tiras Navy.|n|cfff5962dAbilities:|R Bombing Run, Field Medkit, Critical Strike, Trueshot Aura, Resistant Skin, Spell Resistance|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land and air units.|r"
+      "Value": "Hunter of the Highmountain clan.|n|cfff5962dAbilities:|R Big Game Net, Summon Hawk, Trueshot Aura, Resistant Skin|n|n|cff99b4d1Can only train 4.|r|n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Id": 1633907573,
@@ -72,7 +72,7 @@
     {
       "Id": 1684960117,
       "Type": 3,
-      "Value": "Tauren"
+      "Value": "HeroTaurenChieftain"
     },
     {
       "Id": 1831952757,
