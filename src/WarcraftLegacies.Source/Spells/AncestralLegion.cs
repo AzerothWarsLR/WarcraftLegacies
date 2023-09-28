@@ -1,4 +1,5 @@
-﻿using MacroTools;
+﻿using System.Collections.Generic;
+using MacroTools;
 using MacroTools.Extensions;
 using MacroTools.SpellSystem;
 using WCSharp.Shared.Data;
@@ -11,6 +12,8 @@ namespace WarcraftLegacies.Source.Spells
   /// </summary>
   public sealed class AncestralLegion : Spell
   {
+    private static Dictionary<unit, AncestralLegionData> _ancestralLegionDataByUnit = new();
+    
     /// <summary>How long summoned units survive.</summary>
     public float Duration { get; init; }
 
@@ -42,29 +45,68 @@ namespace WarcraftLegacies.Source.Spells
       var summonCap = SummonCap.Base + SummonCap.PerLevel * level;
       for (var i = 0; i < summonCap; i++)
       {
-        CreateUnit(caster.OwningPlayer(), RememberableUnitTypeId, targetPoint.X, targetPoint.Y, caster.GetFacing())
+        var summonedTauren = CreateUnit(caster.OwningPlayer(), RememberableUnitTypeId, targetPoint.X, targetPoint.Y, caster.GetFacing())
           .SetColor(200, 165, 50, 150)
           .MultiplyBaseDamage(1 + DamageBonus.Base + DamageBonus.PerLevel * level, 0)
           .MultiplyMaxHitpoints(1 + HealthBonus.Base + HealthBonus.PerLevel * level);
 
+        CreateTrigger()
+          .RegisterUnitEvent(summonedTauren, EVENT_UNIT_DEATH)
+          .AddAction(() =>
+          {
+            var triggerUnit = GetTriggerUnit();
+            AddSpecialEffect(DeathEffect, GetUnitX(triggerUnit), GetUnitY(triggerUnit))
+              .SetLifespan();
+            
+            GetTriggeringTrigger()
+              .Destroy();
+          });
+        
         AddSpecialEffect(SummonEffect, targetPoint.X, targetPoint.Y)
           .SetLifespan();
 
-        RegenerateTooltip();
+        RegenerateTooltip(caster);
       }
     }
 
-    private void RegenerateTooltip()
+    /// <inheritdoc />
+    public override void OnLearn(unit learner)
     {
-      const string baseTooltip = "beans";
-      const int taurenCount = 5; //todo
+      if (_ancestralLegionDataByUnit.ContainsKey(learner))
+      {
+        _ancestralLegionDataByUnit.Add(learner, new AncestralLegionData
+        {
+          BaseTooltips = new string[]
+          {
+            BlzGetAbilityExtendedTooltip(Id, 0),
+            BlzGetAbilityExtendedTooltip(Id, 1),
+            BlzGetAbilityExtendedTooltip(Id, 2)
+          }
+        });
+      }
+    }
+
+    private void RegenerateTooltip(unit caster)
+    {
+      var ancestralLegionData = _ancestralLegionDataByUnit[caster];
       for (var i = 0; i < 3; i++)
-        BlzSetAbilityExtendedTooltip(Id, $"{baseTooltip}|n|n|cffDA9531Remembered Tauren:|r {taurenCount}", i);
+        BlzSetAbilityExtendedTooltip(Id, $"{ancestralLegionData.BaseTooltips[i]}|n|n|cffDA9531Remembered Tauren:|r {ancestralLegionData.RememberedUnits}", i);
     }
     
     /// <inheritdoc />
     public AncestralLegion(int id) : base(id)
     {
+    }
+
+    private sealed class AncestralLegionData
+    {
+      /// <summary>
+      /// The tooltips for Ancestral Legion at the start of the game.
+      /// </summary>
+      public string[] BaseTooltips { get; init; } = System.Array.Empty<string>();
+      
+      /// <summary>How many units the caster has remembered.</summary>
+      public int RememberedUnits { get; set; }
     }
   }
 }
