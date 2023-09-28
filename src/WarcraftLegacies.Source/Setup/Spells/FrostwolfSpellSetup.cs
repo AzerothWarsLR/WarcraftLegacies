@@ -29,7 +29,19 @@ namespace WarcraftLegacies.Source.Setup.Spells
         SpecialEffect = @"Abilities\Spells\Orc\WarStomp\WarStompCaster.mdl"
       };
       SpellSystem.Register(warStompCairne);
-      
+
+      var TremorStomp = new Stomp(Constants.ABILITY_TP07_TREMOR_STOMP)
+      {
+        Radius = 700,
+        DamageBase = 00,
+        DamageLevel = 00,
+        DurationBase = 15,
+        StunAbilityId = Constants.ABILITY_TP09_CRIPPLE_DUMMY,
+        StunOrderString = "cripple",
+        SpecialEffect = @"abilities\spells\orc\warstomp\warstompcaster.mdx"
+      };
+      SpellSystem.Register(TremorStomp);
+
       ParentChildResearchSystem.Register(Constants.UPGRADE_RHME_PYRITE_FORGED_WEAPONRY_UNIVERSAL_UPGRADE,
         Constants.UPGRADE_R06C_KABOOM_LEVEL_UP);
 
