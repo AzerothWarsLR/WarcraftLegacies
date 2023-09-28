@@ -1,0 +1,34 @@
+﻿using MacroTools.QuestSystem;
+using static War3Api.Common;
+using MacroTools.ObjectiveSystem.Objectives.LegendBased;
+using MacroTools.LegendSystem;
+
+namespace WarcraftLegacies.Source.Quests.Frostwolf
+{
+  /// <summary>
+  /// Bring any hero to the Echo Isles to unlock the base.
+  /// </summary>
+  public sealed class QuestHighmountain : QuestData
+  {
+    private readonly LegendaryHero _cairne;
+
+    /// <inheritdoc />
+    public QuestHighmountain(LegendaryHero cairne) : base("Invitation to a Feast",
+      "The Taurens of Highmountain have been isolated for centuries. As a gesture of reconciliation, Cairne has set off to offer them an invitation to a feast in Thunderbluff.",
+      @"ReplaceableTextures/CommandButtons/BTNPigHead.blp")
+    {
+      _cairne = cairne;
+      AddObjective(new ObjectiveLegendInRect(cairne, Regions.UnlockHighmountain, "Highmountain, North of Stormheim"));
+      ResearchId = Constants.UPGRADE_R0A9_QUEST_COMPLETED_INVITATION_TO_A_FEAST;
+    }
+
+    /// <inheritdoc />
+    protected override string RewardFlavour =>
+      "The Highmountain tribe has decided to join the Bloodhoof, sending in their best hunters to support the Horde.";
+
+    /// <inheritdoc />
+    protected override string RewardDescription =>
+      $"Learn to train {GetObjectName(Constants.UNIT_N049_WANDERER_FROSTWOLF)}s from the {GetObjectName(Constants.UNIT_OTTO_TAUREN_TOTEM_FROSTWOLF_SPECIALIST)}";
+
+  }
+}
