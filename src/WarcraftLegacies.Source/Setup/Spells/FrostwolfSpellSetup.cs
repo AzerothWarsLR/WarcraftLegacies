@@ -1,4 +1,6 @@
 ﻿using MacroTools;
+using MacroTools.PassiveAbilities;
+using MacroTools.PassiveAbilitySystem;
 using MacroTools.ResearchSystems;
 using MacroTools.Spells;
 using MacroTools.Spells.Slipstream;
@@ -41,6 +43,15 @@ namespace WarcraftLegacies.Source.Setup.Spells
         TargetLocation = new Point(-3169, -29714),
         Color = new Color(255, 50, 50, 255)
       });
+
+      var inspiringBlow = new SpellOnAttack(Constants.UNIT_O06T_TAUREN_GLADIATOR_FROSTWOLF,
+  Constants.ABILITY_A140_INSPIRING_BLOW_DUMMY_FROSTWOLF)
+      {
+        DummyAbilityId = Constants.ABILITY_A140_INSPIRING_BLOW_DUMMY_FROSTWOLF,
+        DummyOrderString = "creepheal",
+        ProcChance = 0.2f
+      };
+      PassiveAbilityManager.Register(inspiringBlow);
     }
   }
 }

@@ -8,7 +8,7 @@
     {
       "Id": 1768055157,
       "Type": 3,
-      "Value": "A0E6,Awar,Aion"
+      "Value": "A13Z,A141,A0E6,Aion"
     },
     {
       "Id": 1684824693,
@@ -37,7 +37,7 @@
     },
     {
       "Id": 1647403381,
-      "Value": 28
+      "Value": 53
     },
     {
       "Id": 1869571701,
@@ -82,12 +82,31 @@
     {
       "Id": 1919381621,
       "Type": 3,
-      "Value": "R00W,Rhar,Rhme,Rows,Ropm,Rguv"
+      "Value": "R00W,Rhar,Rhme,Ropm,Rguv"
     },
     {
       "Id": 1902473845,
       "Type": 3,
       "Value": "o00J,R05I,ofor,ofrt"
+    },
+    {
+      "Id": 829645685,
+      "Type": 3,
+      "Value": "MetalHeavyChop"
+    },
+    {
+      "Id": 1680957813,
+      "Value": 3
+    },
+    {
+      "Id": 1664180597,
+      "Type": 2,
+      "Value": 2.2
+    },
+    {
+      "Id": 1836212597,
+      "Type": 3,
+      "Value": "Metal"
     }
   ]
 }
