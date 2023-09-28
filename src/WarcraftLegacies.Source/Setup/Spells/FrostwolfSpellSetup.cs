@@ -3,6 +3,7 @@ using MacroTools.ResearchSystems;
 using MacroTools.Spells;
 using MacroTools.Spells.Slipstream;
 using MacroTools.SpellSystem;
+using WarcraftLegacies.Source.Spells;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Setup.Spells
@@ -40,6 +41,30 @@ namespace WarcraftLegacies.Source.Setup.Spells
         ClosingDelay = 10,
         TargetLocation = new Point(-3169, -29714),
         Color = new Color(255, 50, 50, 255)
+      });
+      
+      SpellSystem.Register(new AncestralLegion(Constants.ABILITY_A0YX_ANCESTRAL_LEGION_FROSTWOLF_CAIRNE)
+      {
+        Duration = 60,
+        HealthBonus = new LeveledAbilityField<float>
+        {
+          Base = 0.2f,
+          PerLevel = 0.1f
+        },
+        DamageBonus = new LeveledAbilityField<float>
+        {
+          Base = 0.2f,
+          PerLevel = 0.1f
+        },
+        SummonCap = new LeveledAbilityField<int>
+        {
+          Base = 6,
+          PerLevel = 6
+        },
+        RememberChance = 1f,
+        RememberableUnitTypeId = Constants.UNIT_OTAU_TAUREN_FROSTWOLF,
+        SummonEffect = @"Abilities\Spells\Demon\DarkPortal\DarkPortalTarget.mdl",
+        DeathEffect = @"Abilities\Spells\Orc\Disenchant\DisenchantSpecialArt.mdl"
       });
     }
   }

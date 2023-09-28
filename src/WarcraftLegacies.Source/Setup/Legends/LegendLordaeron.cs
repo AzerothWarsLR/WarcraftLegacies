@@ -119,7 +119,8 @@ namespace WarcraftLegacies.Source.Setup.Legends
 
       Arthas = new LegendaryHero("Arthas Menethil")
       {
-        UnitType = Constants.UNIT_HART_CROWN_PRINCE_OF_LORDAERON_LORDAERON
+        UnitType = Constants.UNIT_HART_CROWN_PRINCE_OF_LORDAERON_LORDAERON,
+        PlayerColor = PLAYER_COLOR_BLUE,
       };
 
       Monastery = new Capital
