@@ -1,7 +1,6 @@
 ﻿using MacroTools.Timer;
 using System;
 using MacroTools.Extensions;
-using MacroTools.FactionSystem;
 using static War3Api.Common;
 
 namespace MacroTools
@@ -55,12 +54,11 @@ namespace MacroTools
       TriggerRegisterTimerEvent(trig, TimerDelay, false);
       TriggerAddAction(trig, ShowTimer); ;
     }
-  
+
+    public static int ConvertGameTimeToTurn(float gameTime) => (int)Math.Floor(gameTime / TurnDuration);
+
     /// <returns>The number of seconds that have elapsed since the start of the game</returns>
-    public static float GetGameTime()
-    {
-      return _currentTime;
-    }
+    public static float GetGameTime() => _currentTime;
 
     private void EndTurn()
     {
@@ -95,10 +93,7 @@ namespace MacroTools
       OnTimerEnds?.Invoke(null, EventArgs.Empty);
     }
 
-    private static void GameTick()
-    {
-      _currentTime += 1;
-    }
+    private static void GameTick() => _currentTime += 1;
 
     private static void ShowTimer()
     {
