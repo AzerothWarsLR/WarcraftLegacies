@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using MacroTools;
 using MacroTools.Extensions;
 using MacroTools.SpellSystem;
@@ -49,7 +50,10 @@ namespace WarcraftLegacies.Source.Spells
     {
       var level = GetAbilityLevel(caster);
       var summonCap = SummonCap.Base + SummonCap.PerLevel * level;
-      for (var i = 0; i < summonCap; i++)
+      var ancestralLegionData = AncestralLegionDataByUnit[caster];
+      var availableTauren = ancestralLegionData.RememberedUnits;
+      var taurenToSummon = Math.Min(summonCap, availableTauren);
+      for (var i = 0; i < taurenToSummon; i++)
       {
         var summonedTauren = CreateUnit(caster.OwningPlayer(), RememberableUnitTypeId, targetPoint.X, targetPoint.Y, caster.GetFacing())
           .SetColor(200, 165, 50, 150)
@@ -62,11 +66,10 @@ namespace WarcraftLegacies.Source.Spells
           .RegisterUnitEvent(summonedTauren, EVENT_UNIT_DEATH)
           .AddAction(() =>
           {
-            var triggerUnit = GetTriggerUnit();
-            AddSpecialEffect(DeathEffect, GetUnitX(triggerUnit), GetUnitY(triggerUnit))
-              .SetLifespan();
+            AddSpecialEffect(DeathEffect, GetUnitX(summonedTauren), GetUnitY(summonedTauren))
+              .SetLifespan(1);
             
-            triggerUnit.Remove();
+            summonedTauren.Remove();
             
             GetTriggeringTrigger()
               .Destroy();
@@ -74,9 +77,9 @@ namespace WarcraftLegacies.Source.Spells
         
         AddSpecialEffect(SummonEffect, targetPoint.X, targetPoint.Y)
           .SetLifespan();
-
-        RegenerateTooltip(caster);
       }
+      ancestralLegionData.RememberedUnits -= taurenToSummon;
+      RegenerateTooltip(caster);
     }
 
     /// <inheritdoc />
@@ -126,7 +129,7 @@ namespace WarcraftLegacies.Source.Spells
       /// <summary>
       /// The tooltips for Ancestral Legion at the start of the game.
       /// </summary>
-      public string[] BaseTooltips { get; init; } = System.Array.Empty<string>();
+      public string[] BaseTooltips { get; init; } = Array.Empty<string>();
       
       /// <summary>How many units the caster has remembered.</summary>
       public int RememberedUnits { get; set; }
