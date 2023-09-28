@@ -44,11 +44,11 @@ namespace WarcraftLegacies.Source.Setup.Spells
         Color = new Color(255, 50, 50, 255)
       });
 
-      var inspiringBlow = new SpellOnAttack(Constants.UNIT_O06T_TAUREN_GLADIATOR_FROSTWOLF,
+      var inspiringBlow = new NoTargetSpellOnAttack(Constants.UNIT_O06T_TAUREN_GLADIATOR_FROSTWOLF,
   Constants.ABILITY_A140_INSPIRING_BLOW_DUMMY_FROSTWOLF)
       {
         DummyAbilityId = Constants.ABILITY_A140_INSPIRING_BLOW_DUMMY_FROSTWOLF,
-        DummyOrderString = "creepheal",
+        DummyOrderId = 852282,
         ProcChance = 0.2f
       };
       PassiveAbilityManager.Register(inspiringBlow);
