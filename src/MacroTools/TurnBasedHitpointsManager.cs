@@ -34,7 +34,7 @@ namespace MacroTools
       foreach (var (unit, baseHitPoints) in UnitBaseHitPoints)
       {
         var bonusPercentage = HitPointPercentagePerTurn * turn;
-        unit.SetMaximumHitpoints((int)(1 + baseHitPoints * (1 + bonusPercentage)));
+        unit.SetMaximumHitpoints((int)(baseHitPoints * (1 + bonusPercentage)));
         unit.SetCurrentHitpoints(unit.GetMaximumHitPoints());
       }
       
