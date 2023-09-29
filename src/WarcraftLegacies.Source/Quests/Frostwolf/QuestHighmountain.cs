@@ -24,7 +24,7 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
 
     /// <inheritdoc />
     protected override string RewardFlavour =>
-      "The Highmountain tribe has decided to join the Bloodhoof, sending in their best hunters to support the Horde.";
+      "Cairne is welcomed in Highmountain like a lost-long friend. Eager to explore the world and fight alongside their long-lost brethren, the Highmountain send their best hunters to support the Horde.";
 
     /// <inheritdoc />
     protected override string RewardDescription =>
