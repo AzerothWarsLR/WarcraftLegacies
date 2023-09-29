@@ -9,7 +9,7 @@ namespace MacroTools
   public static class TurnBasedHitpointsManager
   {
     /// <summary>Registered units will gain this many hit points, as a percentage of their maximum, per turn.</summary>
-    private const float HitPointPercentagePerTurn = 0.1f;
+    public const float HitPointPercentagePerTurn = 0.1f;
 
     /// <summary>Past this turn, units will not gain maximum hit points.</summary>
     private const float TurnLimit = 60;
