@@ -47,6 +47,7 @@ namespace MacroTools.PassiveAbilities
     {
       if (createdUnit.GetTypeId() == _openedId) 
         createdUnit.SetAnimation("death alternate");
+      TurnBasedHitpointsManager.Register(createdUnit);
     }
 
     /// <inheritdoc />

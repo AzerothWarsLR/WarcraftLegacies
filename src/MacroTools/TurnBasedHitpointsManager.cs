@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using MacroTools;
 using MacroTools.Extensions;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.Source.GameLogic
+namespace MacroTools
 {
   /// <summary>A tool for giving units additional hit points per turn.</summary>
   public static class TurnBasedHitpointsManager

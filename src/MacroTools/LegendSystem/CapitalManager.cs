@@ -24,6 +24,7 @@ namespace MacroTools.LegendSystem
         throw new Exception($"Tried to register {nameof(Capital)} {capital.Name} but it is already registered.");
       ByUnit.Add(capital.Unit, capital);
       AllCapitals.Add(capital);
+      TurnBasedHitpointsManager.Register(capital.Unit);
     }
 
     /// <summary>
@@ -51,14 +52,6 @@ namespace MacroTools.LegendSystem
           return true;
       }
       return false;
-    }
-    
-    /// <summary>
-    ///   Whether or not the given unit is a <see cref="Protector" /> of a given <see cref="Capital" />.
-    /// </summary>
-    public static bool UnitIsCapitalProtector(unit protector, unit capital)
-    {
-      return ByUnit[capital].ProtectorsByUnit.ContainsKey(protector);
     }
     
     /// <summary>
