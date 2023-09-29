@@ -45,15 +45,6 @@ namespace WarcraftLegacies.Source.Setup.Spells
         TargetLocation = new Point(-3169, -29714),
         Color = new Color(255, 50, 50, 255)
       });
-
-      var inspiringBlow = new NoTargetSpellOnAttack(Constants.UNIT_O06T_TAUREN_GLADIATOR_FROSTWOLF,
-  Constants.ABILITY_A145_INSPIRING_BLOW_FROSTWOLF)
-      {
-        DummyAbilityId = Constants.ABILITY_A140_INSPIRING_BLOW_DUMMY_FROSTWOLF,
-        DummyOrderId = OrderId("replenishlife"),
-        ProcChance = 1f
-      };
-      PassiveAbilityManager.Register(inspiringBlow);
       
       SpellSystem.Register(new AncestralLegion(Constants.ABILITY_A0YX_ANCESTRAL_LEGION_FROSTWOLF_CAIRNE)
       {
