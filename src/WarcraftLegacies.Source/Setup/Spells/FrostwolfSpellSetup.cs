@@ -1,4 +1,4 @@
-using MacroTools;
+﻿using MacroTools;
 using MacroTools.PassiveAbilities;
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.ResearchSystems;
@@ -7,6 +7,7 @@ using MacroTools.Spells.Slipstream;
 using MacroTools.SpellSystem;
 using WarcraftLegacies.Source.Spells;
 using WCSharp.Shared.Data;
+using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup.Spells
 {
@@ -46,11 +47,11 @@ namespace WarcraftLegacies.Source.Setup.Spells
       });
 
       var inspiringBlow = new NoTargetSpellOnAttack(Constants.UNIT_O06T_TAUREN_GLADIATOR_FROSTWOLF,
-  Constants.ABILITY_A140_INSPIRING_BLOW_DUMMY_FROSTWOLF)
+  Constants.ABILITY_A145_INSPIRING_BLOW_FROSTWOLF)
       {
         DummyAbilityId = Constants.ABILITY_A140_INSPIRING_BLOW_DUMMY_FROSTWOLF,
-        DummyOrderId = 852282,
-        ProcChance = 0.2f
+        DummyOrderId = OrderId("replenishlife"),
+        ProcChance = 1f
       };
       PassiveAbilityManager.Register(inspiringBlow);
       
