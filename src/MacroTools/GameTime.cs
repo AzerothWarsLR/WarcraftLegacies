@@ -49,6 +49,15 @@ namespace MacroTools
     /// <returns>The number of seconds that have elapsed since the start of the game</returns>
     public static float GetGameTime() => _currentTime;
 
+    /// <summary>Skips the game forward a number of turns.</summary>
+    public static void SkipTurns(int turnSkip)
+    {
+      _currentTime += TurnDuration*turnSkip;
+      _turnCount += turnSkip;
+      for (var i = 0; i < turnSkip; i++)
+        TurnEnded?.Invoke(null, EventArgs.Empty);
+    }
+    
     private static void EndTurn()
     {
       _turnCount += 1;
