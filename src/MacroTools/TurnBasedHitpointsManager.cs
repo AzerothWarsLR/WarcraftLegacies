@@ -21,7 +21,7 @@ namespace MacroTools
     public static void Register(unit whichUnit)
     {
       UnitBaseHitPoints.Add(whichUnit, whichUnit.GetMaximumHitPoints());
-      if (!_intialized) 
+      if (_intialized) 
         return;
       
       GameTime.TurnEnded += OnTurnEnded;
@@ -32,8 +32,12 @@ namespace MacroTools
     {
       var turn = GameTime.GetTurn();
       foreach (var (unit, baseHitPoints) in UnitBaseHitPoints)
-        unit.SetMaximumHitpoints((int)(baseHitPoints + turn * HitPointPercentagePerTurn));
-
+      {
+        var bonusPercentage = HitPointPercentagePerTurn * turn;
+        unit.SetMaximumHitpoints((int)Math.Floor(baseHitPoints * (1 + bonusPercentage)));
+        unit.SetCurrentHitpoints(unit.GetMaximumHitPoints());
+      }
+      
       if (turn == TurnLimit) 
         GameTime.TurnEnded -= OnTurnEnded;
     }

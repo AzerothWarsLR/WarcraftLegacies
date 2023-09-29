@@ -53,15 +53,14 @@ namespace MacroTools
     public static void SkipTurns(int turnSkip)
     {
       _currentTime += TurnDuration*turnSkip;
-      _turnCount += turnSkip;
       for (var i = 0; i < turnSkip; i++)
-        TurnEnded?.Invoke(null, EventArgs.Empty);
+        EndTurn();
     }
     
     private static void EndTurn()
     {
       _turnCount += 1;
-      TimerDialogSetTitle(_turnTimerDialog, $"Turn {I2S(_turnCount)}");
+      TimerDialogSetTitle(_turnTimerDialog, $"Turn {_turnCount}");
       if (_turnCount >= 20)
       {
         foreach (var player in WCSharp.Shared.Util.EnumeratePlayers(PLAYER_SLOT_STATE_PLAYING, MAP_CONTROL_USER))
