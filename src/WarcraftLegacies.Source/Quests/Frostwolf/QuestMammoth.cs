@@ -14,7 +14,7 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
 
     /// <inheritdoc />
     public QuestMammoth(LegendaryHero rexxar) : base("Lone Wanderer",
-      "Rexxar is always looking to discover new wilds and new creatures, the Borean Tundra offer a perfect ground to explore.",
+      "Rexxar's wanderlust has brought him into contact with all kinds of beasts. Yet there is one major landmass he has never ventured to: the cold expanse of Northrend. Surely the wild things roam free even there.",
       @"ReplaceableTextures/CommandButtons/BTNRevealingLightnewalt.blp")
     {
       _rexxar = rexxar;
