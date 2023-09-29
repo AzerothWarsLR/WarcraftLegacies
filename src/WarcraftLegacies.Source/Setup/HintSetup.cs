@@ -1,5 +1,7 @@
 using MacroTools;
 using MacroTools.HintSystem;
+using MacroTools.Instances;
+using MacroTools.LegendSystem;
 using WarcraftLegacies.Source.GameLogic.GameEnd;
 
 namespace WarcraftLegacies.Source.Setup
@@ -22,7 +24,7 @@ namespace WarcraftLegacies.Source.Setup
       Hint.Register(new Hint("If you want to support the team, support our Patreon at: https:;//www.patreon.com/lordsebas"));
       Hint.Register(new Hint("Control Points have towers which get stronger every turn, or when you research Fortify."));
       Hint.Register(new Hint($"Win the game by capturing {ControlPointVictory.CpsVictory} Control Points."));
-      Hint.Register(new Hint($"Each turn, every Capital and every gate gains {TurnBasedHitpointsManager.HitPointPercentagePerTurn}% bonus maximum hit points."));
+      Hint.Register(new Hint($"Each turn, every Capital and every gate gains bonus maximum hit points. Capitals gain {CapitalManager.HitPointPercentagePerTurn*100}% and gates gain {MacroTools.PassiveAbilities.Gate.HitPointPercentagePerTurn*100}%."));
     }
   }
 }
