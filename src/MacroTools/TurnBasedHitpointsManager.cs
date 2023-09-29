@@ -9,7 +9,7 @@ namespace MacroTools
   public static class TurnBasedHitpointsManager
   {
     /// <summary>Past this turn, units will not gain maximum hit points.</summary>
-    private const float TurnLimit = 60;
+    private const float TurnLimit = 45;
 
     private static readonly Dictionary<unit, TurnBasedHitpointData> UnitBaseHitPoints = new();
     private static bool _intialized;

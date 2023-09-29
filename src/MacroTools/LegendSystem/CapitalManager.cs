@@ -14,7 +14,7 @@ namespace MacroTools.LegendSystem
     private static readonly List<Capital> AllCapitals = new();
 
     /// <summary>Capitals will gain this many hit points, as a percentage of their maximum, per turn.</summary>
-    public const float HitPointPercentagePerTurn = 0.1f;
+    public const float HitPointPercentagePerTurn = 0.05f;
     
     /// <summary>
     /// Registers a <see cref="Capital"/> to the <see cref="CapitalManager"/>.
