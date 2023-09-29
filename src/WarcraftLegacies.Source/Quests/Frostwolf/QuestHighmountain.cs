@@ -14,7 +14,7 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
 
     /// <inheritdoc />
     public QuestHighmountain(LegendaryHero cairne) : base("Invitation to a Feast",
-      "The Taurens of Highmountain have been isolated for centuries. As a gesture of reconciliation, Cairne has set off to offer them an invitation to a feast in Thunderbluff.",
+      "Scouts report sighting of the Highmountain totem, thought lost long ago when the Broken Isles were shattered. As a gesture of renewed welcome, Cairne might offer them an invitation to a feast in Thunderbluff.",
       @"ReplaceableTextures/CommandButtons/BTNPigHead.blp")
     {
       _cairne = cairne;
