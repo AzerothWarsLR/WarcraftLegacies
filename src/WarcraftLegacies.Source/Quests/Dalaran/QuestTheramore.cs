@@ -24,7 +24,7 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestTheramore"/> class.
     /// </summary>
-    public QuestTheramore(LegendaryHero jaina, Rectangle theramoreRect) : base("Theramore",
+    public QuestTheramore(LegendaryHero jaina, Capital violetCitadel, Rectangle theramoreRect) : base("Theramore",
       "The distant lands of Kalimdor remain untouched by human civilization. If the Third War proceeds poorly, it may become necessary to abandon Dalaran and establish a refuge there.",
       @"ReplaceableTextures\CommandButtons\BTNOldRock.blp")
     {
@@ -33,6 +33,7 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
         ResearchId = Constants.UPGRADE_R0A8_YOUR_TEAM_CONTROLS_JAINA_PROUDMOORE
       });
       AddObjective(new ObjectiveResearch(RequiredResearchId, Constants.UNIT_H002_THE_VIOLET_CITADEL_DALARAN_OTHER));
+      AddObjective(new ObjectiveUnitAlive(violetCitadel.Unit));
       AddObjective(new ObjectiveSelfExists());
       _rescueUnits = theramoreRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
     }
@@ -44,6 +45,14 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
     /// <inheritdoc />
     protected override string RewardDescription =>
       "Gain control of all units at Theramore and teleport all of your units within Dalaran to Theramore. Dalaran becomes hostile";
+
+    /// <inheritdoc />
+    protected override string PenaltyFlavour =>
+      "Dalaran has fallen. Those who managed to survive its destruction travel west, to the distant lands of Kalimdor. They hope that this new world will treat them more kindly than the one they left behind.";
+
+    /// <inheritdoc />
+    protected override string PenaltyDescription =>
+      $"Gain control of all units at Theramore";
 
     /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)
@@ -60,6 +69,14 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
       foreach (var unit in CreateGroup().EnumUnitsInRect(Regions.Dalaran).EmptyToList().Where(x =>
                  x.OwningPlayer() == completingFaction.Player && IsUnitType(x, UNIT_TYPE_STRUCTURE)).ToList())
         unit.SetOwner(Player(PLAYER_NEUTRAL_AGGRESSIVE));
+    }
+
+    protected override void OnFail(Faction completingFaction)
+    {
+      if (completingFaction.Player != null)
+        completingFaction.Player.RescueGroup(_rescueUnits);
+      else
+        Player(bj_PLAYER_NEUTRAL_VICTIM).RescueGroup(_rescueUnits);
     }
 
     /// <inheritdoc/>
