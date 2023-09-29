@@ -24,7 +24,7 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
 
     /// <inheritdoc />
     protected override string RewardFlavour =>
-      "Impressed by Cairne's prowess, the Ragetotem tribe has joined the Bloodhoof!";
+      "Tales of Cairne's strength and wisdom reverberate throughout Kalimdor. As strength is drawn to strength, the Ragetotem are drawn to the Bloodhoof.";
 
     /// <inheritdoc />
     protected override string RewardDescription =>
