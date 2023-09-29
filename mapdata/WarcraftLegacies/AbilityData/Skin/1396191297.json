@@ -100,6 +100,11 @@
       "Id": 828536161,
       "Type": 3,
       "Value": "The hero fires multiple attacks at targets. \u003CA08S,DataC4\u003E extra attacks are made."
+    },
+    {
+      "Id": 1734962273,
+      "Type": 3,
+      "Value": "CHIM"
     }
   ]
 }
