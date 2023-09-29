@@ -6,7 +6,7 @@ using MacroTools.LegendSystem;
 namespace WarcraftLegacies.Source.Quests.Frostwolf
 {
   /// <summary>
-  /// Bring any hero to the Echo Isles to unlock the base.
+  /// Level up cairne to unlock the Ragetribe
   /// </summary>
   public sealed class QuestRagetotem : QuestData
   {
