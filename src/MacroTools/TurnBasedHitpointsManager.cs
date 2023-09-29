@@ -38,7 +38,7 @@ namespace MacroTools
         unit.SetCurrentHitpoints(unit.GetMaximumHitPoints());
       }
       
-      if (turn == TurnLimit) 
+      if (turn >= TurnLimit) 
         GameTime.TurnEnded -= OnTurnEnded;
     }
   }
