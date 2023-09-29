@@ -20,11 +20,6 @@ namespace MacroTools.LegendSystem
     /// </summary>
     public int ProtectorCount => _protectors.Count;
     
-    /// <summary>
-    /// Get list of <see cref="Protector"/>s
-    /// </summary>
-    public List<Protector> Protectors => _protectors;
-    
     public readonly Dictionary<unit, Protector> ProtectorsByUnit = new();
 
     /// <summary>
