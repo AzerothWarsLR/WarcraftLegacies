@@ -206,21 +206,6 @@ namespace WarcraftLegacies.Source.UnitTypes
         NeverDelete = true
       });
       
-      UnitType.Register(new UnitType(Constants.UNIT_H04R_ULDUM_GATE_OPEN)
-      {
-        NeverDelete = true
-      });
-      
-      UnitType.Register(new UnitType(Constants.UNIT_H04S_ULDUM_GATE_CLOSED)
-      {
-        NeverDelete = true
-      });
-      
-      UnitType.Register(new UnitType(Constants.UNIT_H04T_ULDUM_GATE_DEAD)
-      {
-        NeverDelete = true
-      });
-      
       UnitType.Register(new UnitType(Constants.UNIT_H02M_GREYMANE_S_GATE_OPEN)
       {
         NeverDelete = true

@@ -20,11 +20,6 @@ namespace MacroTools.LegendSystem
     /// </summary>
     public int ProtectorCount => _protectors.Count;
     
-    /// <summary>
-    /// Get list of <see cref="Protector"/>s
-    /// </summary>
-    public List<Protector> Protectors => _protectors;
-    
     public readonly Dictionary<unit, Protector> ProtectorsByUnit = new();
 
     /// <summary>
@@ -61,9 +56,12 @@ namespace MacroTools.LegendSystem
     /// </summary>
     public void AddProtector(unit whichUnit)
     {
+      if (ProtectorsByUnit.ContainsKey(whichUnit))
+        throw new InvalidOperationException($"{whichUnit.GetName()} is already registered as a Protector for {Name}.");
+      
       var protector = new Protector(whichUnit);
       _protectors.Add(protector);
-      ProtectorsByUnit.Add(whichUnit,protector);
+      ProtectorsByUnit.Add(whichUnit, protector);
       Unit?.SetInvulnerable(true);
       protector.ProtectorDied += OnProtectorDeath;
     }
