@@ -24,7 +24,8 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
         preplacedUnitSystem.GetUnit(Constants.UNIT_H03V_ENTRANCE_PORTAL, Regions.TempestKeepSpawn.Center),
         allLegendSetup.Draenei.Velen
       ));
-      var questRepairGenerator = new QuestRepairGenerator(allLegendSetup.Draenei.LegendExodarGenerator, new List<unit>
+      var questRepairGenerator = new QuestRepairGenerator(allLegendSetup.Draenei.LegendExodarGenerator, questRepairHull, 
+        new List<unit>
       {
         preplacedUnitSystem.GetUnit(Constants.UNIT_U00U_CRYSTAL_PROTECTOR_DRAENEI_TOWER, new Point(-22656, 7543)),
         preplacedUnitSystem.GetUnit(Constants.UNIT_U00U_CRYSTAL_PROTECTOR_DRAENEI_TOWER, new Point(-22917, 7286)),
@@ -37,8 +38,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       });
       draenei.AddQuest(questRepairGenerator);
       draenei.AddQuest(new QuestTriumvirate(allLegendSetup.Draenei.Velen));
-      var questDimensionalShip = new QuestDimensionalShip(Regions.ExodarBaseUnlock,
-        new List<QuestData> { questRepairHull, questRepairGenerator }, allLegendSetup.Draenei.LegendExodarGenerator);
+      var questDimensionalShip = new QuestDimensionalShip(Regions.ExodarBaseUnlock, questRepairGenerator, allLegendSetup.Draenei.LegendExodarGenerator);
       draenei.AddQuest(questDimensionalShip);
     }
   }
