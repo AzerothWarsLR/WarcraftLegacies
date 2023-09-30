@@ -38,9 +38,9 @@ namespace MacroTools
       foreach (var (unit, turnBasedHitpointData) in UnitData)
       {
         var bonusPercentage = turnBasedHitpointData.HitPointPercentagePerTurn * turn;
-        var bonusHitPoints = (int)(turnBasedHitpointData.BaseHitPoints * bonusPercentage);
+        var bonusHitPoints = (int)Math.Ceiling(turnBasedHitpointData.BaseHitPoints * bonusPercentage);
         unit.SetMaximumHitpoints(unit.GetMaximumHitPoints() + bonusHitPoints);
-        unit.SetCurrentHitpoints((int)(unit.GetHitPoints() + bonusHitPoints));
+        unit.SetCurrentHitpoints((int)Math.Ceiling(unit.GetHitPoints() + bonusHitPoints));
       }
       
       if (turn >= TurnLimit) 
