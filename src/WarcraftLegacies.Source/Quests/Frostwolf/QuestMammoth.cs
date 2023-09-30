@@ -6,7 +6,7 @@ using MacroTools.LegendSystem;
 namespace WarcraftLegacies.Source.Quests.Frostwolf
 {
   /// <summary>
-  /// Bring any hero to the Echo Isles to unlock the base.
+  /// Bring rexxar to the borean tundra to unlock mammoths
   /// </summary>
   public sealed class QuestMammoth : QuestData
   {
