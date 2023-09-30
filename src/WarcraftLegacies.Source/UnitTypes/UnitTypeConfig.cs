@@ -158,17 +158,17 @@ namespace WarcraftLegacies.Source.UnitTypes
         NeverDelete = true
       });
       
-      UnitType.Register(new UnitType(Constants.UNIT_H01X_GATE_OF_SILVERMOON_OPEN)
+      UnitType.Register(new UnitType(Constants.UNIT_H01X_ELVEN_GATE_OPEN)
       {
         NeverDelete = true
       });
       
-      UnitType.Register(new UnitType(Constants.UNIT_H01W_GATE_OF_SILVERMOON_CLOSED)
+      UnitType.Register(new UnitType(Constants.UNIT_H01W_ELVEN_GATE_CLOSED)
       {
         NeverDelete = true
       });
       
-      UnitType.Register(new UnitType(Constants.UNIT_H01Y_GATE_OF_SILVERMOON_DEAD)
+      UnitType.Register(new UnitType(Constants.UNIT_H01Y_ELVEN_GATE_DEAD)
       {
         NeverDelete = true
       });
