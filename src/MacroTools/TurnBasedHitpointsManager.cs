@@ -11,13 +11,16 @@ namespace MacroTools
     /// <summary>Past this turn, units will not gain maximum hit points.</summary>
     private const float TurnLimit = 45;
 
-    private static readonly Dictionary<unit, TurnBasedHitpointData> UnitBaseHitPoints = new();
+    private static readonly Dictionary<unit, TurnBasedHitpointData> UnitData = new();
     private static bool _intialized;
     
     /// <summary>Causes the unit to continously gain maximum hit points as each turn passes.</summary>
     public static void Register(unit whichUnit, float hitPointPercentagePerTurn)
     {
-      UnitBaseHitPoints.Add(whichUnit, new TurnBasedHitpointData
+      if (UnitData.ContainsKey(whichUnit))
+        throw new InvalidOperationException($"Tried to register {whichUnit.GetName()} to {nameof(TurnBasedHitpointsManager)}, but it's already registered.");
+      
+      UnitData.Add(whichUnit, new TurnBasedHitpointData
       {
         HitPointPercentagePerTurn = hitPointPercentagePerTurn,
         BaseHitPoints = whichUnit.GetMaximumHitPoints()
@@ -32,7 +35,7 @@ namespace MacroTools
     private static void OnTurnEnded(object? sender, EventArgs eventArgs)
     {
       var turn = GameTime.GetTurn();
-      foreach (var (unit, turnBasedHitpointData) in UnitBaseHitPoints)
+      foreach (var (unit, turnBasedHitpointData) in UnitData)
       {
         var bonusPercentage = turnBasedHitpointData.HitPointPercentagePerTurn * turn;
         unit.SetMaximumHitpoints((int)(turnBasedHitpointData.BaseHitPoints * (1 + bonusPercentage)));
