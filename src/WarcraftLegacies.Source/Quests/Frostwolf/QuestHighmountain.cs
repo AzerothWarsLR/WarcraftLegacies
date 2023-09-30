@@ -10,7 +10,7 @@ using MacroTools.FactionSystem;
 namespace WarcraftLegacies.Source.Quests.Frostwolf
 {
   /// <summary>
-  /// Bring any hero to the Echo Isles to unlock the base.
+  /// Bring Cairne to Highmountain to unlock a new unit and a base
   /// </summary>
   public sealed class QuestHighmountain : QuestData
   {
@@ -34,7 +34,7 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
 
     /// <inheritdoc />
     protected override string RewardDescription =>
-      $"Learn to train {GetObjectName(Constants.UNIT_N049_WANDERER_FROSTWOLF)}s from the {GetObjectName(Constants.UNIT_OTTO_TAUREN_TOTEM_FROSTWOLF_SPECIALIST)}";
+      $"Learn to train {GetObjectName(Constants.UNIT_N049_WANDERER_FROSTWOLF)}s from the {GetObjectName(Constants.UNIT_OTTO_TAUREN_TOTEM_FROSTWOLF_SPECIALIST)} and Highmountain as a base.";
 
     protected override void OnFail(Faction completingFaction)
     {
