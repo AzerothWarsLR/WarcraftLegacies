@@ -20,13 +20,13 @@ namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
     {
       _objectiveUnit = objectiveUnit;
       TargetWidget = objectiveUnit;
-      var hitPointRequirement = objectiveUnit.GetMaximumHitPoints() - 1;
+      var hitPointRequirement = objectiveUnit.GetMaximumHitPoints();
       Description = objectiveUnit.IsType(UNIT_TYPE_STRUCTURE)
         ? $"Repair {GetUnitName(objectiveUnit)} to {hitPointRequirement} hit points"
         : $"Bring {GetUnitName(objectiveUnit)} to {hitPointRequirement} hit points";
       DisplaysPosition = IsUnitType(objectiveUnit, UNIT_TYPE_STRUCTURE);
       CreateTrigger()
-        .RegisterLifeEvent(objectiveUnit, UNIT_STATE_LIFE, GREATER_THAN, hitPointRequirement)
+        .RegisterLifeEvent(objectiveUnit, UNIT_STATE_LIFE, GREATER_THAN, hitPointRequirement - 1)
         .AddAction(() =>
         {
           Progress = QuestProgress.Complete;
