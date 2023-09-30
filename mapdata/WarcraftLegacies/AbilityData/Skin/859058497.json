@@ -19,7 +19,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Applies Ensnare to a target unit or hero. Air units that are ensnared can be attacked as though they were land units. |nLasts 10(2) seconds."
+      "Value": "Applies Ensnare to a target unit or hero, preventing it from moving. Air units that are ensnared can be attacked as though they were land units. |nLasts 10(2) seconds."
     },
     {
       "Id": 1835101793,
