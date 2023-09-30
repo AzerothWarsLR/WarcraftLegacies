@@ -146,6 +146,7 @@ public static class Regions
 	public static Rectangle HellfireUnlock { get; set; } = new Rectangle(-128f, -27488f, 2368f, -24736f);
 	public static Rectangle HideUnitBottomLeft { get; set; } = new Rectangle(-24128f, -30848f, -9024f, -22688f);
 	public static Rectangle HighbankUnlock { get; set; } = new Rectangle(21664f, -8128f, 23200f, -6848f);
+	public static Rectangle Highmountain_Unlock { get; set; } = new Rectangle(1280f, 10112f, 2720f, 11392f);
 	public static Rectangle HinterlandAmbient1 { get; set; } = new Rectangle(13600f, 3040f, 19136f, 5408f);
 	public static Rectangle HinterlandAmbient2 { get; set; } = new Rectangle(16256f, 5408f, 19072f, 7040f);
 	public static Rectangle HonorHold { get; set; } = new Rectangle(2208f, -27360f, 3936f, -26016f);
@@ -263,7 +264,7 @@ public static class Regions
 	public static Rectangle ShipAmbient { get; set; } = new Rectangle(8608f, -31424f, 9984f, -28768f);
 	public static Rectangle ShipInside { get; set; } = new Rectangle(8928f, -31168f, 9472f, -30720f);
 	public static Rectangle ShipTarget { get; set; } = new Rectangle(4608f, -10528f, 4640f, -10496f);
-	public static Rectangle ShrineBaseUnlock { get; set; } = new Rectangle(-13184f, 7648f, -9632f, 9568f);
+	public static Rectangle ShrineBaseUnlock { get; set; } = new Rectangle(-13184f, 7488f, -9632f, 9568f);
 	public static Rectangle SilithusAmbient { get; set; } = new Rectangle(-20768f, -19744f, -15712f, -11744f);
 	public static Rectangle SkullRetrieval { get; set; } = new Rectangle(8864f, 4672f, 9184f, 4928f);
 	public static Rectangle Solliden_Farmstead { get; set; } = new Rectangle(6400f, 8992f, 7808f, 10592f);
@@ -365,6 +366,5 @@ public static class Regions
 	public static Rectangle ZulAman_trolls { get; set; } = new Rectangle(20256f, 10176f, 22848f, 17440f);
 	public static Rectangle Zulfarrak { get; set; } = new Rectangle(-12352f, -14272f, -10528f, -12064f);
 	public static Rectangle ZulfarrakAmbient { get; set; } = new Rectangle(-5952f, -17216f, 2944f, -10368f);
-	public static Rectangle Highmountain_Unlock { get; set; } = new Rectangle(1280f, 10112f, 2720f, 11392f);
 
 }
