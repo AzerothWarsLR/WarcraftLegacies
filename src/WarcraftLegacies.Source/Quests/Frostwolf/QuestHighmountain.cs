@@ -34,7 +34,7 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
 
     /// <inheritdoc />
     protected override string RewardDescription =>
-      $"Learn to train {GetObjectName(Constants.UNIT_N049_WANDERER_FROSTWOLF)}s from the {GetObjectName(Constants.UNIT_OTTO_TAUREN_TOTEM_FROSTWOLF_SPECIALIST)} and Highmountain as a base.";
+      $"Gain control of all units in Highmountain, and learn to train {GetObjectName(Constants.UNIT_N049_WANDERER_FROSTWOLF)}s from the {GetObjectName(Constants.UNIT_OTTO_TAUREN_TOTEM_FROSTWOLF_SPECIALIST)}";
 
     protected override void OnFail(Faction completingFaction)
     {
