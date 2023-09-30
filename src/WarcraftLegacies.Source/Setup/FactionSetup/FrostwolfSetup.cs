@@ -55,7 +55,7 @@ Salvage the wrecked ships, establish a base and gather your troops to move inlan
       Frostwolf.ModObjectLimit(FourCC("o00A"), 6); //Far Seer
 
       Frostwolf.ModObjectLimit(Constants.UNIT_O06T_TAUREN_GLADIATOR_FROSTWOLF, 6);
-      Frostwolf.ModObjectLimit(Constants.UNIT_H0CN_FROSTWOLF_COMMANDER_FROSTWOLF, 4);
+      Frostwolf.ModObjectLimit(Constants.UNIT_H0CN_PACKLEADER_FROSTWOLF, 4);
       Frostwolf.ModObjectLimit(Constants.UNIT_H0CO_MAMMOTH_WRANGLER_FROSTWOLF, 2);
       Frostwolf.ModObjectLimit(Constants.UNIT_N049_WANDERER_FROSTWOLF, 4);
 
