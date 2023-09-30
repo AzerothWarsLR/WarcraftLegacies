@@ -657,7 +657,7 @@ namespace MacroTools.FactionSystem
       }
       catch (Exception ex)
       {
-        Console.WriteLine(ex);
+        Logger.LogError($"{nameof(Faction)} failed to execute {nameof(OnQuestProgressChanged)}: {ex.Message}");
       }
     }
 

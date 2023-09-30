@@ -79,6 +79,8 @@ Make sure to communicate with your Dwarven and Kul'tiran allies, as they will be
 
       Stormwind.ModObjectLimit(FourCC("H00R"), 1); //Varian
       Stormwind.ModObjectLimit(FourCC("H017"), 1); //Bolvar
+      Stormwind.ModObjectLimit(Constants.UNIT_H05Y_LORD_WIZARD_STORMWIND, 1);
+      Stormwind.ModObjectLimit(Constants.UNIT_H00Z_CROWN_PRINCE_OF_STROMGARDE_STORMWIND, 1);
 
       //Researches
       Stormwind.ModObjectLimit(FourCC("R02E"), Faction.UNLIMITED); //Chaplain Adept Training
