@@ -1,14 +1,15 @@
 {
   "Left": 1280,
-  "Bottom": 10112,
-  "Right": 2720,
-  "Top": 11392,
+  "Bottom": 10048,
+  "Right": 2944,
+  "Top": 11968,
   "Name": "Highmountain Unlock",
   "CreationNumber": 188,
-  "WeatherType": 1936477779,
   "AmbientSound": "",
   "Color": {
     "A": 255,
-    "R": 255
+    "R": 128,
+    "G": 128,
+    "B": 255
   }
 }

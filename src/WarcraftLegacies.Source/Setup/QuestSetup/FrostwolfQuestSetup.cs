@@ -15,7 +15,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       frostwolf.AddQuest(new QuestStonemaul(preplacedUnitSystem, Regions.StonemaulKeep));
       frostwolf.AddQuest(new QuestDarkspear());
       frostwolf.AddQuest(new QuestRagetotem(allLegendSetup.Frostwolf.Cairne));
-      frostwolf.AddQuest(new QuestHighmountain(allLegendSetup.Frostwolf.Cairne));
+      frostwolf.AddQuest(new QuestHighmountain(allLegendSetup.Frostwolf.Cairne, Regions.Highmountain_Unlock));
       frostwolf.AddQuest(new QuestMammoth(allLegendSetup.Frostwolf.Rexxar));
       frostwolf.AddQuest(new QuestDrektharsSpellbook(allLegendSetup.Druids.Nordrassil, allLegendSetup.Frostwolf.Thrall));
       frostwolf.AddQuest(new QuestFreeNerzhul(allLegendSetup.Scourge.TheFrozenThrone, allLegendSetup.Frostwolf.Thrall));
