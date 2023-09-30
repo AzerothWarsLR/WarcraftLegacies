@@ -1,4 +1,4 @@
-using MacroTools.ControlPointSystem;
+﻿using MacroTools.ControlPointSystem;
 using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
@@ -12,7 +12,6 @@ namespace WarcraftLegacies.Source.Quests.Druids
   public sealed class QuestAndrassil : QuestData
   {
     private readonly Capital _vordrassil;
-    private const int UrsocId = Constants.UNIT_E00A_ANCIENT_GUARDIAN_DRUIDS;
 
     public QuestAndrassil(Capital lichKing, Capital vordrassil) : base("Crown of the Snow",
       "Long ago, Fandral Staghelm cut a sapling from Nordrassil and used it to grow Andrassil in Northrend. Without the blessing of the Aspects, it fell to the Old Gods' corruption. If Northrend were to be reclaimed, Andrassil's growth could begin anew.",
@@ -44,7 +43,6 @@ namespace WarcraftLegacies.Source.Quests.Druids
     protected override void OnAdd(Faction whichFaction)
     {
       whichFaction.ModObjectLimit(Constants.UPGRADE_R05X_BLESSING_OF_URSOL_DRUIDS, Faction.UNLIMITED);
-      whichFaction.ModObjectLimit(UrsocId, 1);
     }
   }
 }
