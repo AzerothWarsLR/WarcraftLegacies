@@ -18,7 +18,7 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
       @"ReplaceableTextures/CommandButtons/BTNPigHead.blp")
     {
       _cairne = cairne;
-      AddObjective(new ObjectiveLegendInRect(cairne, Regions.UnlockHighmountain, "Highmountain, North of Stormheim"));
+      AddObjective(new ObjectiveLegendInRect(cairne, Regions.UnlockHighmountain, "Highmountain, north of Stormheim"));
       ResearchId = Constants.UPGRADE_R0A9_QUEST_COMPLETED_INVITATION_TO_A_FEAST;
     }
 
