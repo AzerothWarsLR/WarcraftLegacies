@@ -63,7 +63,7 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
           Constants.UNIT_O00A_FAR_SEER_FROSTWOLF_ELITE,
           Constants.UNIT_OTHR_WARCHIEF_OF_THE_HORDE_FROSTWOLF,
           Constants.UNIT_H00C_DREK_THAR_FROSTWOLF_DEMI,
-          Constants.UNIT_H0CN_FROSTWOLF_COMMANDER_FROSTWOLF,
+          Constants.UNIT_H0CN_PACKLEADER_FROSTWOLF,
           Constants.UNIT_H0CO_MAMMOTH_WRANGLER_FROSTWOLF
         },
         IconName = "_Lightning_Orc"
