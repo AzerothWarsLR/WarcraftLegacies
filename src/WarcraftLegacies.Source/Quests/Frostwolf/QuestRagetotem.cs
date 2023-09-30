@@ -13,7 +13,7 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
     private readonly LegendaryHero _cairne;
 
     /// <inheritdoc />
-    public QuestRagetotem(LegendaryHero cairne) : base("Ragetotem Tribe Challenge",
+    public QuestRagetotem(LegendaryHero cairne) : base("Ragetotem Tribe",
       "The Ragetotem Tribe are renowned for their martial prowess. An older, mightier Cairne might convince them to join the Bloodhoof.",
       @"ReplaceableTextures\CommandButtons\BTNGreatTaurenThieftain.blp")
     {
