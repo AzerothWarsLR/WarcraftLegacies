@@ -23,13 +23,13 @@ namespace WarcraftLegacies.Source.Quests.Naga
       BlzGetAbilityIcon(blackrookHold.UnitType))
     {
       _blackrookHold = blackrookHold;
-      AddObjective(new ObjectiveKillAllInArea(new[]
+      AddObjective(new ObjectiveHostilesInAreaAreDead(new[]
       {
         Regions.BrokenIslesA,
         Regions.BrokenIslesB
       }, "on the Broken Isles"));
       AddObjective(new NoOtherPlayerGetsCapital(blackrookHold));
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N053_VAL_SHARAH_15GOLD_MIN)));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N053_VAL_SHARAH)));
     }
 
     /// <inheritdoc />

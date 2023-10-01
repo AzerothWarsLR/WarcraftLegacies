@@ -43,7 +43,7 @@ namespace MacroTools.FactionSystem
     /// <summary>
     ///   The amount of food <see cref="Faction" />s can have by default.
     /// </summary>
-    private const int FoodMaximumDefault = 200;
+    private const int FoodMaximumDefault = 150;
 
     private readonly Dictionary<int, int> _abilityAvailabilities = new();
     private readonly List<Augment> _augments = new();
@@ -390,7 +390,10 @@ namespace MacroTools.FactionSystem
     public void AddPower(Power power)
     {
       _powers.Add(power);
-      if (Player != null) power.OnAdd(Player);
+      power.OnAdd(this);
+      if (Player != null) 
+        power.OnAdd(Player);
+      
       PowerAdded?.Invoke(this, new FactionPowerEventArgs(this, power));
     }
 
@@ -400,7 +403,10 @@ namespace MacroTools.FactionSystem
     public void RemovePower(Power power)
     {
       _powers.Remove(power);
-      if (Player != null) power.OnRemove(Player);
+      power.OnRemove(this);
+      if (Player != null) 
+        power.OnRemove(Player);
+      
       PowerRemoved?.Invoke(this, new FactionPowerEventArgs(this, power));
     }
 
@@ -651,7 +657,7 @@ namespace MacroTools.FactionSystem
       }
       catch (Exception ex)
       {
-        Console.WriteLine(ex);
+        Logger.LogError($"{nameof(Faction)} failed to execute {nameof(OnQuestProgressChanged)}: {ex.Message}");
       }
     }
 

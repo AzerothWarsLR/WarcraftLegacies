@@ -41,13 +41,13 @@
     "CreationNumber": 17608
   },
   {
-    "State": 2,
+    "State": 6,
     "Life": 100,
     "TypeId": 1668052057,
     "Position": {
       "X": -12288,
       "Y": -13120,
-      "Z": 596.125
+      "Z": 788.12573
     },
     "Rotation": 4.712389,
     "Scale": {
@@ -61,13 +61,13 @@
     "CreationNumber": 36882
   },
   {
-    "State": 2,
+    "State": 6,
     "Life": 100,
     "TypeId": 1668052057,
     "Position": {
       "X": -12352,
       "Y": -12992,
-      "Z": 520.5625
+      "Z": 712.56323
     },
     "Rotation": 4.712389,
     "Scale": {

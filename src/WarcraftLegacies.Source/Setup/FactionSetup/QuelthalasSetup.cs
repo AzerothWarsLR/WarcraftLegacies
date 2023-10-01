@@ -62,6 +62,7 @@ The Plague of Undeath is coming and Lordaeron will need your help with the Scour
       Quelthalas.ModObjectLimit(FourCC("n063"), 12); //Magus
       Quelthalas.ModObjectLimit(FourCC("hspt"), Faction.UNLIMITED); //Spell Breaker
       Quelthalas.ModObjectLimit(FourCC("u00J"), 2); //Arcane Wagon
+      Quelthalas.ModObjectLimit(Constants.UNIT_N048_BLOOD_MAGE_QUEL_THALAS, 6);
 
       //Ships
       Quelthalas.ModObjectLimit(FourCC("hbot"), Faction.UNLIMITED); //Alliance Transport Ship
@@ -85,7 +86,6 @@ The Plague of Undeath is coming and Lordaeron will need your help with the Scour
       Quelthalas.ModObjectLimit(FourCC("R00G"), Faction.UNLIMITED); //Feint
       Quelthalas.ModObjectLimit(FourCC("R01R"), Faction.UNLIMITED); //Improved Bows
       Quelthalas.ModObjectLimit(FourCC("R029"), Faction.UNLIMITED); //Magus Adept Training
-      Quelthalas.ModObjectLimit(FourCC("R00K"), Faction.UNLIMITED); //Power Infusion
       Quelthalas.ModObjectLimit(FourCC("Rhcd"), Faction.UNLIMITED); //Cloud
       Quelthalas.ModObjectLimit(FourCC("Rhss"), Faction.UNLIMITED); //Control Magic
       Quelthalas.ModObjectLimit(FourCC("Rhlh"), Faction.UNLIMITED); //Improved Lumber Harvesting
@@ -95,6 +95,7 @@ The Plague of Undeath is coming and Lordaeron will need your help with the Scour
       Quelthalas.ModObjectLimit(FourCC("Rhst"), Faction.UNLIMITED); //Sorceress Adept Training
       Quelthalas.ModObjectLimit(FourCC("R004"), Faction.UNLIMITED); //Sunfury Warrior Training
       Quelthalas.ModObjectLimit(FourCC("R02Y"), Faction.UNLIMITED); //Improved Glaives
+      Quelthalas.ModObjectLimit(Constants.UPGRADE_R0A6_DRAGONHAWK_RIDERS_QUELTHALAS, Faction.UNLIMITED);
 
       Quelthalas.ModAbilityAvailability(Constants.ABILITY_A0K5_DWARVEN_MASONRY_CASTLES_YELLOW, -1);
       Quelthalas.ModAbilityAvailability(Constants.ABILITY_A0OC_EXTRACT_VIAL_ALL, -1);

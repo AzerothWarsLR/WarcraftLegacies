@@ -16,7 +16,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
         UndefeatedResearch = FourCC("R02L"),
         StartingGold = 200,
         StartingLumber = 700,
-        FoodMaximum = 250,
+        FoodMaximum = 200,
         StartingCameraPosition = Regions.IllidanStartingPosition.Center,
         StartingUnits = Regions.IllidanStartingPosition.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable),
         ControlPointDefenderUnitTypeId = Constants.UNIT_N0BB_CONTROL_POINT_DEFENDER_ILLIDARI_TOWER,
@@ -79,7 +79,6 @@ Support your ally in Outland by unlocking bases and coordinating with his push o
 
       Illidari.ModObjectLimit(FourCC("Rnsw"), Faction.UNLIMITED); //Siren Adept Training
       Illidari.ModObjectLimit(FourCC("R02V"), Faction.UNLIMITED); //Shadowcaster Adept Training
-      Illidari.ModObjectLimit(FourCC("R00K"), Faction.UNLIMITED); //Power Infusion
 
       FactionManager.Register(Illidari);
     }

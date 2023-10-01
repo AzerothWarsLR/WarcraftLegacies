@@ -4,11 +4,11 @@
     "Life": 255,
     "TypeId": 1919963969,
     "Position": {
-      "X": -10489.146,
-      "Y": -3600.987,
-      "Z": 48.74322
+      "X": -10287.209,
+      "Y": -3892.3198,
+      "Z": 77.801094
     },
-    "Rotation": 4.8164873,
+    "Rotation": 4.9613304,
     "Scale": {
       "X": 0.99999994,
       "Y": 0.99999994,
@@ -17,6 +17,6 @@
     "SkinId": 1919963969,
     "MapItemTableId": -1,
     "ItemTableSets": [],
-    "CreationNumber": 6867
+    "CreationNumber": 4049
   }
 ]

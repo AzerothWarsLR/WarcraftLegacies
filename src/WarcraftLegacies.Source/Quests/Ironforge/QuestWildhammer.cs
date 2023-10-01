@@ -15,7 +15,6 @@ namespace WarcraftLegacies.Source.Quests.Ironforge
   public sealed class QuestWildhammer : QuestData
   {
     private readonly List<unit> _rescueUnits;
-    private const int HeroId = Constants.UNIT_H028_THANE_OF_AERIE_PEAK_IRONFORGE;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestWildhammer"/> class.
@@ -43,18 +42,21 @@ namespace WarcraftLegacies.Source.Quests.Ironforge
     {
       completingFaction.Player.RescueGroup(_rescueUnits);
     }
-    
+
     /// <inheritdoc />
     protected override void OnFail(Faction completingFaction)
     {
-      Player(PLAYER_NEUTRAL_AGGRESSIVE).RescueGroup(_rescueUnits);
+      var rescuer = completingFaction.ScoreStatus == ScoreStatus.Defeated
+        ? Player(PLAYER_NEUTRAL_AGGRESSIVE)
+        : completingFaction.Player;
+
+      rescuer.RescueGroup(_rescueUnits);
     }
 
     /// <inheritdoc />
     protected override void OnAdd(Faction whichFaction)
     {
       whichFaction.ModObjectLimit(ResearchId, Faction.UNLIMITED);
-      whichFaction.ModObjectLimit(HeroId, 1);
     }
   }
 }

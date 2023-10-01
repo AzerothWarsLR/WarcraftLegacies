@@ -25,13 +25,13 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
       _thrall = thrall;
       var CPs = new List<ControlPoint>
       {
-        ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N028_DROWNED_REACHES_10GOLD_MIN),
-        ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N02P_MAK_ARA_10GOLD_MIN),
-        ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N04B_GISHAN_CAVERNS_10GOLD_MIN),
-        ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N05Y_AZSUNA_15GOLD_MIN),
-        ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N032_SURAMAR_20GOLD_MIN),
-        ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N053_VAL_SHARAH_15GOLD_MIN),
-        ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N05Z_STORMHEIM_15GOLD_MIN),
+        ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N028_DROWNED_REACHES),
+        ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N02P_MAK_ARA),
+        ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N04B_GISHAN_CAVERNS),
+        ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N05Y_AZSUNA),
+        ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N032_SURAMAR),
+        ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N053_VAL_SHARAH),
+        ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N05Z_STORMHEIM),
       };
       AddObjective(new ObjectiveLegendLevel(_thrall, 8));
       AddObjective(new ObjectiveChannelRect(Regions.MaelstromChannel, "the Maelstrom", _thrall, 120, 120, "Taming Maelstrom Power"));
@@ -44,7 +44,7 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
     
     /// <inheritdoc />
     protected override string RewardDescription =>
-      "Thrall gains 2000 experience and 10 Agility, and you gain the power Maelstrom Spirit";
+      "Thrall gains 2000 experience and 10 Agility, and you gain the Power Maelstrom Spirit";
 
     /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)
@@ -62,7 +62,9 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
           Constants.UNIT_OSHM_SHAMAN_FROSTWOLF,
           Constants.UNIT_O00A_FAR_SEER_FROSTWOLF_ELITE,
           Constants.UNIT_OTHR_WARCHIEF_OF_THE_HORDE_FROSTWOLF,
-          Constants.UNIT_H00C_DREK_THAR_FROSTWOLF_DEMI
+          Constants.UNIT_H00C_DREK_THAR_FROSTWOLF_DEMI,
+          Constants.UNIT_H0CN_PACKLEADER_FROSTWOLF,
+          Constants.UNIT_H0CO_MAMMOTH_WRANGLER_FROSTWOLF
         },
         IconName = "_Lightning_Orc"
       });

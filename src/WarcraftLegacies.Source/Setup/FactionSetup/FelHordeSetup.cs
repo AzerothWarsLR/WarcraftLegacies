@@ -27,7 +27,7 @@ You begin in Nagrand, cut off from your forces in Hellfire Citadel. You must rai
 Once Outland is under your control, gather your hordes and prepare to invade Azeroth through the Dark Portal.
 
 The Alliance is gathering outside the Dark Portal to stop you, so prepare to for a very hard breakout.",
-        FoodMaximum = 250
+        FoodMaximum = 200
       };
 
       FelHorde.ModObjectLimit(FourCC("o02Y"), Faction.UNLIMITED); //Great Hall
@@ -59,6 +59,8 @@ The Alliance is gathering outside the Dark Portal to stop you, so prepare to for
       FelHorde.ModObjectLimit(FourCC("u018"), 10); //Eye of Grillok
       FelHorde.ModObjectLimit(FourCC("u00V"), Faction.UNLIMITED); //Necrolyte
       FelHorde.ModObjectLimit(FourCC("n058"), Faction.UNLIMITED); //Troll Axethrowers
+      FelHorde.ModObjectLimit(Constants.UNIT_NINA_INFERNAL_JUGGERNAUT_FEL_HORDE, 4);
+      FelHorde.ModObjectLimit(Constants.UNIT_N086_FEL_DEATH_KNIGHT_FEL_HORDE_ELITE_TIER, 6);
 
       //Ship
       FelHorde.ModObjectLimit(FourCC("obot"), Faction.UNLIMITED); //Transport Ship
@@ -82,7 +84,6 @@ The Alliance is gathering outside the Dark Portal to stop you, so prepare to for
       FelHorde.ModObjectLimit(FourCC("R00O"), Faction.UNLIMITED); //Ensnare
       FelHorde.ModObjectLimit(FourCC("Rorb"), Faction.UNLIMITED); //Reinforced Defenses
       FelHorde.ModObjectLimit(FourCC("Rosp"), Faction.UNLIMITED); //Spiked Barricades
-      FelHorde.ModObjectLimit(FourCC("R023"), Faction.UNLIMITED); //Spiritual Infusion
       FelHorde.ModObjectLimit(FourCC("R000"), -Faction.UNLIMITED); //Skeletal Perserverance
       FelHorde.ModObjectLimit(FourCC("R024"), Faction.UNLIMITED); //Necrolyte adept Training
       FelHorde.ModObjectLimit(FourCC("R00M"), Faction.UNLIMITED); //Warlock Adept Training

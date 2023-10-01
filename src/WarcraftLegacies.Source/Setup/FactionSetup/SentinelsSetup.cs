@@ -1,6 +1,9 @@
-﻿using MacroTools;
+﻿using System.Collections.Generic;
+using MacroTools;
 using MacroTools.FactionSystem;
+using MacroTools.LegendSystem;
 using MacroTools.Powers;
+using WarcraftLegacies.Source.Powers;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
@@ -10,7 +13,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
   {
     public static Faction? Sentinels { get; private set; }
 
-    public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
+    public static void Setup(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup)
     {
       Sentinels = new Faction("Sentinels", PLAYER_COLOR_MINT, "|CFFBFFF80",
         @"ReplaceableTextures\CommandButtons\BTNPriestessOfTheMoon.blp")
@@ -58,6 +61,7 @@ Once you have secured your holdings, gather your army and destroy the Orcish Hor
       Sentinels.ModObjectLimit(FourCC("nnmg"), 12); //Redeemed Highborne
       Sentinels.ModObjectLimit(FourCC("e022"), 2); //Moon Rider
       Sentinels.ModObjectLimit(Constants.UNIT_ECHM_CHIMAERA_SENTINELS, 6);
+      Sentinels.ModObjectLimit(Constants.UNIT_H045_WARDEN_SENTINELS, 8);
 
       //Ships
       Sentinels.ModObjectLimit(FourCC("etrs"), Faction.UNLIMITED); //Night Elf Transport Ship
@@ -77,23 +81,35 @@ Once you have secured your holdings, gather your army and destroy the Orcish Hor
       Sentinels.ModObjectLimit(FourCC("R00S"), Faction.UNLIMITED); //Priestess Adept Training
       Sentinels.ModObjectLimit(FourCC("R064"), Faction.UNLIMITED); //Sentinel Fortifications
       Sentinels.ModObjectLimit(FourCC("R01W"), Faction.UNLIMITED); //Trapper Adept Training
-      Sentinels.ModObjectLimit(FourCC("R026"), Faction.UNLIMITED); //Elune's Power Infusion
       Sentinels.ModObjectLimit(FourCC("Reib"), Faction.UNLIMITED); //Improved Bows
       Sentinels.ModObjectLimit(FourCC("Reuv"), Faction.UNLIMITED); //Ultravision
       Sentinels.ModObjectLimit(FourCC("Remg"), Faction.UNLIMITED); //Upgraded Moon Glaive
       Sentinels.ModObjectLimit(FourCC("Roen"), Faction.UNLIMITED); //Ensnare
-      Sentinels.ModObjectLimit(FourCC("R04E"), Faction.UNLIMITED); //Ysera's Gift (World Tree upgrade)
-      Sentinels.ModObjectLimit(FourCC("R002"), Faction.UNLIMITED); //Blackwald Enhancement
-      Sentinels.ModObjectLimit(FourCC("R03J"), Faction.UNLIMITED); //Wind Walk
-      Sentinels.ModObjectLimit(FourCC("R018"), Faction.UNLIMITED); //Lightning Barrage
+      Sentinels.ModObjectLimit(Constants.UPGRADE_R04E_YSERA_S_GIFT_DRUIDS, Faction.UNLIMITED);
+      Sentinels.ModObjectLimit(Constants.UPGRADE_R03J_WIND_WALK_SENTINELS, Faction.UNLIMITED);
+      Sentinels.ModObjectLimit(Constants.UPGRADE_R018_IMPROVED_LIGHTNING_BARRAGE_SENTINELS, Faction.UNLIMITED);
+      Sentinels.ModObjectLimit(Constants.UPGRADE_R068_HIPPOGRYPH_RIDERS_SENTINEL, Faction.UNLIMITED);
+      Sentinels.ModObjectLimit(Constants.UPGRADE_R0A0_CHIMAERAS_SENTINEL, Faction.UNLIMITED);
 
       Sentinels.AddGoldMine(preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-22721, -13570)));
-
-      //Powers
-      var dummyPower = new DummyPower("Unspoiled Wilderness",
-        "Every control point tower has a 24% movement speed aura in a 2500 area of effect",
-        "ANA_HealingButterfliesFixed");
-      Sentinels.AddPower(dummyPower);
+      
+      Sentinels.AddPower(new DummyPower("Unspoiled Wilderness",
+        "Your Control Points increase your units' movement speed by 24% in a large radius.",
+        "ANA_HealingButterfliesFixed"));
+      
+      var worldTrees = new List<Capital>
+      {
+        allLegendSetup.Druids.Nordrassil,
+        allLegendSetup.Neutral.Shaladrassil,
+        allLegendSetup.Druids.Vordrassil
+      };
+      Sentinels.AddPower(new Immortality(25, 45, worldTrees)
+      {
+        IconName = "ArcaneRessurection",
+        Name = "Immortality",
+        Effect = @"Abilities\Spells\Human\Heal\HealTarget.mdl",
+        ResearchId = Constants.UPGRADE_YB01_IMMORTALITY_POWER_IS_ACTIVE
+      });
 
       FactionManager.Register(Sentinels);
     }

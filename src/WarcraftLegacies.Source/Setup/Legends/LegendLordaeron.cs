@@ -1,4 +1,5 @@
-﻿using MacroTools;
+﻿using System.Collections.Generic;
+using MacroTools;
 using MacroTools.Extensions;
 using MacroTools.LegendSystem;
 using WCSharp.Shared.Data;
@@ -43,13 +44,17 @@ namespace WarcraftLegacies.Source.Setup.Legends
       Mograine = new LegendaryHero("Alexandros Mograine")
       {
         UnitType = Constants.UNIT_H01J_THE_ASHBRINGER_LORDAERON,
-        StartingXp = 2800
+        StartingXp = 5400,
+        StartingArtifactItemTypeIds = new List<int>
+        {
+          Constants.ITEM_I012_ASHBRINGER
+        }
       };
 
       Garithos = new LegendaryHero("Garithos")
       {
         UnitType = Constants.UNIT_HLGR_GRAND_MARSHAL_SCARLET,
-        StartingXp = 2800
+        StartingXp = 5400
       };
 
       Goodchild = new LegendaryHero("High Commander Goodchilde")
@@ -114,7 +119,8 @@ namespace WarcraftLegacies.Source.Setup.Legends
 
       Arthas = new LegendaryHero("Arthas Menethil")
       {
-        UnitType = Constants.UNIT_HART_CROWN_PRINCE_OF_LORDAERON_LORDAERON
+        UnitType = Constants.UNIT_HART_CROWN_PRINCE_OF_LORDAERON_LORDAERON,
+        PlayerColor = PLAYER_COLOR_BLUE,
       };
 
       Monastery = new Capital

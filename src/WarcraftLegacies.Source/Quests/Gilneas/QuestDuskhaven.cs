@@ -22,9 +22,9 @@ namespace WarcraftLegacies.Source.Quests.Gilneas
     /// </summary>
     public QuestDuskhaven() : base("Duskhaven", "The next town is located at the western coast of Gilneas.", @"ReplaceableTextures\CommandButtons\BTNGilneasTownHall.blp")
     {
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N031_DUSKHAVEN_20GOLD_MIN)));
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N06V_BLACKWALD_10GOLD_MIN)));
-      AddObjective(new ObjectiveExpire(1200, "Duskhaven"));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N031_DUSKHAVEN)));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N06V_BLACKWALD)));
+      AddObjective(new ObjectiveExpire(660, "Duskhaven"));
       AddObjective(new ObjectiveSelfExists());
       _rescueUnits = Regions.GilneasUnlock4.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
       Required = true;
@@ -43,9 +43,13 @@ namespace WarcraftLegacies.Source.Quests.Gilneas
     }
 
     /// <inheritdoc/>
-    protected override void OnFail(Faction whichFaction)
+    protected override void OnFail(Faction completingFaction)
     {
-      Player(PLAYER_NEUTRAL_AGGRESSIVE).RescueGroup(_rescueUnits);
+      var rescuer = completingFaction.ScoreStatus == ScoreStatus.Defeated
+        ? Player(PLAYER_NEUTRAL_AGGRESSIVE)
+        : completingFaction.Player;
+
+      rescuer.RescueGroup(_rescueUnits);
     }
   }
 }

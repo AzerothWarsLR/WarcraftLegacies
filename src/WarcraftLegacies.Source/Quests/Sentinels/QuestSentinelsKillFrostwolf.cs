@@ -19,7 +19,7 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
       "The Frostwolf Clan is beginning to seize a firm foothold within the Barrens and on the plains of Mulgore. They must be driven back.",
       @"ReplaceableTextures\CommandButtons\BTNThrall.blp")
     {
-      AddObjective(new ObjectiveCapitalDead(thunderBluff));
+      AddObjective(new ObjectiveControlCapital(thunderBluff, false));
       ResearchId = Constants.UPGRADE_R052_QUEST_COMPLETED_DRIVE_THEM_BACK_SENTINELS;
       Required = true;
     }
@@ -28,7 +28,7 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
       "The Frostwolves have been ousted from Kalimdor, along with their Tauren allies. They will not be missed.";
 
     /// <inheritdoc/>
-    protected override string RewardDescription => "Moon Riders are trainable at the Roost";
+    protected override string RewardDescription => $"Learn to train {GetObjectName(Constants.UNIT_E022_MOON_RIDER_SENTINELS)}s from the {GetObjectName(Constants.UNIT_EDOS_ROOST_SENTINELS)}s and research {GetObjectName(Constants.UPGRADE_REMG_UPGRADE_MOON_GLAIVE_LIGHT_BLUE_RESEARCH)}'s second level from the {GetObjectName(Constants.UNIT_E00L_WAR_ACADEMY_SENTINEL_BARRACKS)}";
 
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)

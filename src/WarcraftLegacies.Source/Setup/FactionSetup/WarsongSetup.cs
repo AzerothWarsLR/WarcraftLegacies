@@ -70,12 +70,12 @@ The Night Elves are aware of your presence and are gathering a mighty host again
       WarsongClan.ModObjectLimit(FourCC("Ogrh"), 1); //Grom
       WarsongClan.ModObjectLimit(FourCC("Obla"), 1); //Varok
       WarsongClan.ModObjectLimit(FourCC("O06L"), 1); //Garrosh
+      WarsongClan.ModObjectLimit(Constants.UNIT_NSJS_BREWMASTER_WARSONG, 1);
       WarsongClan.ModObjectLimit(FourCC("n0CN"), 1); //Gibbs
       WarsongClan.ModObjectLimit(Constants.UNIT_OPGH_CORRUPTOR_OF_THE_WARSONG_CLAN_WARSONG_BLOODPACT, 1); //Blood Pact Grom   Fixes Perma Death Grom Blood Pact bug
 
       WarsongClan.ModObjectLimit(FourCC("Robs"), Faction.UNLIMITED); //Berserker Strength
       WarsongClan.ModObjectLimit(FourCC("Rotr"), Faction.UNLIMITED); //Troll Regeneration
-      WarsongClan.ModObjectLimit(FourCC("R023"), Faction.UNLIMITED); //Spiritual Infusion
       WarsongClan.ModObjectLimit(FourCC("R01J"), Faction.UNLIMITED); //Ensnare
       WarsongClan.ModObjectLimit(FourCC("R02I"), Faction.UNLIMITED); //Ogre Magi Adept Training
       WarsongClan.ModObjectLimit(FourCC("R03Q"), Faction.UNLIMITED); //Warlock Adept Training
@@ -86,9 +86,11 @@ The Night Elves are aware of your presence and are gathering a mighty host again
       WarsongClan.ModObjectLimit(Constants.UPGRADE_R01Z_BATTLE_STATIONS_ORC, Faction.UNLIMITED);
       WarsongClan.SetObjectLevel(Constants.UPGRADE_R01Z_BATTLE_STATIONS_ORC, 1);
       WarsongClan.ModObjectLimit(Constants.UPGRADE_R00D_FOR_THE_HORDE_FROSTWOLF, Faction.UNLIMITED);
-      WarsongClan.ModObjectLimit(Constants.UPGRADE_ROVS_ENVENOMED_SPEARS_FROSTWOLF, Faction.UNLIMITED);
+      WarsongClan.ModObjectLimit(Constants.UPGRADE_ROVS_ENVENOMED_SPEARS_WARSONG, Faction.UNLIMITED);
       WarsongClan.ModObjectLimit(Constants.UPGRADE_R017_IMPROVED_IGNORE_PAIN_WARSONG, Faction.UNLIMITED);
-      
+      WarsongClan.ModObjectLimit(Constants.UPGRADE_R01H_WIND_RIDERS_WARSONG, Faction.UNLIMITED);
+
+
       WarsongClan.ModObjectLimit(Constants.UPGRADE_R09N_FLIGHT_PATH_WARSONG, 1);
 
       WarsongClan.ModAbilityAvailability(Constants.ABILITY_A0PF_FEL_ENERGY_TEAL_FORTRESSES, -1);

@@ -41,6 +41,7 @@ Salvage the wrecked ships, establish a base and gather your troops to move inlan
       Frostwolf.ModObjectLimit(Constants.UNIT_OVLN_VOODOO_LOUNGE_FROSTWOLF_SHOP, Faction.UNLIMITED);
       Frostwolf.ModObjectLimit(Constants.UNIT_OSHY_HORDE_PIER_FROSTWOLF_SHIPYARD, Faction.UNLIMITED);
       Frostwolf.ModObjectLimit(Constants.UNIT_OOSC_PACK_KODO_FROSTWOLF, Faction.UNLIMITED);
+      Frostwolf.ModObjectLimit(Constants.UNIT_OBEA_BEASTIARY_FROSTWOLF_SPECIALIST, Faction.UNLIMITED);
 
       Frostwolf.ModObjectLimit(FourCC("opeo"), Faction.UNLIMITED); //Peon
       Frostwolf.ModObjectLimit(FourCC("ogru"), Faction.UNLIMITED); //Grunt
@@ -52,7 +53,11 @@ Salvage the wrecked ships, establish a base and gather your troops to move inlan
       Frostwolf.ModObjectLimit(FourCC("oshm"), Faction.UNLIMITED); //Shaman
       Frostwolf.ModObjectLimit(FourCC("ospw"), Faction.UNLIMITED); //Spirit Walker
       Frostwolf.ModObjectLimit(FourCC("o00A"), 6); //Far Seer
-      Frostwolf.ModObjectLimit(FourCC("obot"), Faction.UNLIMITED); //Transport Ship
+
+      Frostwolf.ModObjectLimit(Constants.UNIT_O06T_TAUREN_GLADIATOR_FROSTWOLF, 6);
+      Frostwolf.ModObjectLimit(Constants.UNIT_H0CN_PACKLEADER_FROSTWOLF, 4);
+      Frostwolf.ModObjectLimit(Constants.UNIT_H0CO_MAMMOTH_WRANGLER_FROSTWOLF, 2);
+      Frostwolf.ModObjectLimit(Constants.UNIT_N049_WANDERER_FROSTWOLF, 4);
 
       //Ship
       Frostwolf.ModObjectLimit(FourCC("obot"), Faction.UNLIMITED); //Transport Ship
@@ -74,7 +79,6 @@ Salvage the wrecked ships, establish a base and gather your troops to move inlan
       Frostwolf.ModObjectLimit(FourCC("Rost"), Faction.UNLIMITED); //Shaman Adept Training
       Frostwolf.ModObjectLimit(FourCC("Rowd"), Faction.UNLIMITED); //Witch Doctor Adept Training
       Frostwolf.ModObjectLimit(FourCC("Rowt"), Faction.UNLIMITED); //Spirit Walker Adept Training
-      Frostwolf.ModObjectLimit(FourCC("R023"), Faction.UNLIMITED); //Spiritual Infusion
       Frostwolf.ModObjectLimit(FourCC("Rolf"), Faction.UNLIMITED); //Liquid Fire
       Frostwolf.ModObjectLimit(FourCC("Rosp"), Faction.UNLIMITED); //Spiked Barricades
       Frostwolf.ModObjectLimit(FourCC("Rorb"), Faction.UNLIMITED); //reinforced Defenses
@@ -83,16 +87,18 @@ Salvage the wrecked ships, establish a base and gather your troops to move inlan
       Frostwolf.ModObjectLimit(FourCC("R00W"), Faction.UNLIMITED); //Toughened Hides
       Frostwolf.ModObjectLimit(FourCC("R01Z"), Faction.UNLIMITED); //Battle Stations
       Frostwolf.SetObjectLevel(FourCC("R01Z"), 1); //Battle Stations
+      Frostwolf.ModObjectLimit(Constants.UPGRADE_R023_BATRIDERS_FROSTWOLF, Faction.UNLIMITED);
 
       Frostwolf.ModAbilityAvailability(Constants.ABILITY_A0PF_FEL_ENERGY_TEAL_FORTRESSES, -1);
       Frostwolf.ModAbilityAvailability(Constants.ABILITY_ANTR_TROLL_REGENERATION_PINK_WITCH_DOCTOR_TROLL_HEADHUNTER_TROLL_BATRIDER_DARKSPEAR_WARLORD_TROLL_BERSERKER_ICON, -1);
       Frostwolf.ModAbilityAvailability(Constants.ABILITY_A0M4_BATTLE_STATIONS_PINK_GREY_ORC_BURROW_BLOODPACT, -1);
       Frostwolf.ModAbilityAvailability(Constants.ABILITY_ABTL_BATTLE_STATIONS_FROSTWOLF_WARSONG_BURROW, 1);
+
       
       Frostwolf.ModObjectLimit(Constants.UPGRADE_R09N_FLIGHT_PATH_WARSONG, 1);
 
       Frostwolf.AddGoldMine(preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-8793, -11350)));
-      Frostwolf.AddGoldMine(preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-14457, -4701)));
+      Frostwolf.AddGoldMine(preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-15828, -3120)));
       
       FactionManager.Register(Frostwolf);
     }

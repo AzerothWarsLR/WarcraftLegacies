@@ -18,7 +18,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
         StartingGold = 200,
         StartingLumber = 700,
         CinematicMusic = "BloodElfTheme",
-        FoodMaximum = 250,
+        FoodMaximum = 200,
         StartingCameraPosition = Regions.SunfuryStartingPosition.Center,
         StartingUnits = Regions.SunfuryStartingPosition.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable),
         ControlPointDefenderUnitTypeId = Constants.UNIT_N0BC_CONTROL_POINT_DEFENDER_QUELTHALAS,
@@ -83,7 +83,6 @@ Your main goal is to summon Kil'jaeden and destroy your enemies."
       Sunfury.ModObjectLimit(Constants.UNIT_N0E5_VOID_REAVER_SUNFURY_DEMI, 1); //Void Reaver
 
       //Upgrades
-      Sunfury.ModObjectLimit(FourCC("R00K"), Faction.UNLIMITED); //Power Infusion
       Sunfury.ModObjectLimit(FourCC("R09H"), Faction.UNLIMITED); //Priest Adept Training
       Sunfury.ModObjectLimit(FourCC("R09G"), Faction.UNLIMITED); //Flamekeeper Adept Training
       Sunfury.ModObjectLimit(Constants.UPGRADE_R09U_SEAL_OF_BLOOD_SUNFURY, Faction.UNLIMITED); // Seal of Blood

@@ -26,19 +26,18 @@ namespace WarcraftLegacies.Source.Quests.Draenei
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestDimensionalShip"/> class.
     /// </summary>
-    public QuestDimensionalShip(Rectangle questRect, List<QuestData> prerequisite, Capital dimensionalGenerator) : base(
+    public QuestDimensionalShip(Rectangle questRect, QuestData prerequisite, Capital dimensionalGenerator) : base(
       "The Dimensional Ship",
       "The core of the Exodar is rebuilt, but it requires a great source of power to function again. Finding that source of power would make the Exodar a powerful asset for the Draenei.",
       @"ReplaceableTextures\CommandButtons\BTNArcaneEnergy.blp")
     {
       _dimensionalGenerator = dimensionalGenerator.Unit;
       Required = true;
-      foreach (var quest in prerequisite)
-        AddObjective(new ObjectiveCompleteQuest(quest));
+      AddObjective(new ObjectiveCompleteQuest(prerequisite));
       AddObjective(new ObjectiveTime(1200));
       AddObjective(new ObjectiveBuildInRect(questRect, "inside the Exodar", Constants.UNIT_O056_ARCANE_WELL_DRAENEI_FARM, 10));
       AddObjective(new ObjectiveControlLevel(
-        ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N0BL_EXODAR_REGALIS_15GOLD_MIN), 20));
+        ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N0BL_EXODAR_REGALIS), 20));
       _objectivePowerSource = new ObjectivePowerSource(_dimensionalGenerator, new[]
       {
         Constants.ITEM_I006_BOOK_OF_MEDIVH,

@@ -18,7 +18,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
         UndefeatedResearch = FourCC("R04T"),
         StartingGold = 200,
         StartingLumber = 700,
-        FoodMaximum = 250,
+        FoodMaximum = 200,
         CinematicMusic = "DarkAgents",
         ControlPointDefenderUnitTypeId = Constants.UNIT_U01U_CONTROL_POINT_DEFENDER_LEGION,
         StartingCameraPosition = Regions.LegionStartPos.Center,
@@ -85,7 +85,6 @@ Your primary objective is to summon the great host of the Burning Legion. Invade
 
       //Researches
       Legion.ModObjectLimit(FourCC("R02C"), Faction.UNLIMITED); //Acute Sensors
-      Legion.ModObjectLimit(FourCC("R02A"), Faction.UNLIMITED); //Chaos Infusion
       Legion.ModObjectLimit(FourCC("R028"), Faction.UNLIMITED); //Shadow Priest Adept Training
       Legion.ModObjectLimit(FourCC("R042"), Faction.UNLIMITED); //Nathrezim Adept Training
       Legion.ModObjectLimit(FourCC("R027"), Faction.UNLIMITED); //Warlock Adept Training
@@ -96,6 +95,7 @@ Your primary objective is to summon the great host of the Burning Legion. Invade
       Legion.ModObjectLimit(Constants.UPGRADE_R096_REMATERIALIZATION_LEGION, 1);
       Legion.ModObjectLimit(Constants.UPGRADE_R04R_FORTIFIED_HULLS_UNIVERSAL_UPGRADE, 1 );
       Legion.ModObjectLimit(Constants.UPGRADE_R09X_IMPROVED_SHADOW_INFUSION_LEGION, 1);
+      
 
       //Heroes
       Legion.ModObjectLimit(FourCC("U00L"), 1); //Anetheron

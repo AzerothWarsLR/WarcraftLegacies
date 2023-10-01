@@ -1,4 +1,4 @@
-using MacroTools.Extensions;
+﻿using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
@@ -22,7 +22,7 @@ namespace WarcraftLegacies.Source.Quests.Druids
       "The Frostwolf Clan has arrived on the shores of Kalimdor. Though their respect of the wild spirits is to be admired, their presence cannot be tolerated.",
       @"ReplaceableTextures\CommandButtons\BTNHeroTaurenChieftain.blp")
     {
-      AddObjective(new ObjectiveCapitalDead(thunderBluff));
+      AddObjective(new ObjectiveControlCapital(thunderBluff, false));
       ResearchId = Constants.UPGRADE_R044_QUEST_COMPLETED_NATURAL_CONTEST_DRUIDS;
     }
     
@@ -31,12 +31,6 @@ namespace WarcraftLegacies.Source.Quests.Druids
     {
       completingFaction.Player?.DisplayUnitTypeAcquired(ElementalGuardianId,
         "You can now train the Elemental Guardian from the Altar of Elders.");
-    }
-
-    /// <inheritdoc/>
-    protected override void OnAdd(Faction whichFaction)
-    {
-      whichFaction.ModObjectLimit(ElementalGuardianId, 1);
     }
   }
 }

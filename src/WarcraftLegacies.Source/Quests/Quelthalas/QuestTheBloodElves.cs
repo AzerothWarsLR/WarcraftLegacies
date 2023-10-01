@@ -28,7 +28,7 @@ namespace WarcraftLegacies.Source.Quests.Quelthalas
 
     { 
       AddObjective(new ObjectiveControlCapital(draktharonKeep, false));
-      AddObjective(new ObjectiveControlLevel(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N030_DRAK_THARON_KEEP_30GOLD_MIN), 10));
+      AddObjective(new ObjectiveControlLevel(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N030_DRAK_THARON_KEEP), 10));
       Required = true;
     }
 
@@ -54,8 +54,6 @@ namespace WarcraftLegacies.Source.Quests.Quelthalas
   protected override void OnAdd(Faction whichFaction)
   {
     whichFaction.ModObjectLimit(QuestResearchId, Faction.UNLIMITED);
-    whichFaction.ModObjectLimit(UnittypeId, 6);
-
   }
 
 

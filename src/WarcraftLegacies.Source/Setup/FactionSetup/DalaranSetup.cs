@@ -61,6 +61,7 @@ Your mages are the finest in Azeroth, be sure to utilize them alongside your her
       Dalaran.ModObjectLimit(FourCC("n03E"), Faction.UNLIMITED); //Pyromancer
       Dalaran.ModObjectLimit(FourCC("n0AK"), Faction.UNLIMITED); //Sludge Flinger
       Dalaran.ModObjectLimit(FourCC("o02U"), 6); //Crystal Artillery
+      Dalaran.ModObjectLimit(Constants.UNIT_N0AC_BLUE_DRAGON_DALARAN, 6);
 
       //Ships
       Dalaran.ModObjectLimit(FourCC("hbot"), Faction.UNLIMITED); //Alliance Transport Ship
@@ -78,13 +79,14 @@ Your mages are the finest in Azeroth, be sure to utilize them alongside your her
       Dalaran.ModObjectLimit(FourCC("Hjai"), 1); //jaina
       Dalaran.ModObjectLimit(FourCC("Hant"), 1); //antonidas
       Dalaran.ModObjectLimit(FourCC("H09N"), 1); //aegwynn
+      Dalaran.ModObjectLimit(Constants.UNIT_HAAH_THE_FALLEN_GUARDIAN_DALARAN, 1);
+
 
       //Upgrades
       Dalaran.ModObjectLimit(FourCC("R01I"), Faction.UNLIMITED); //Arcanist Adept Training
       Dalaran.ModObjectLimit(FourCC("R01V"), Faction.UNLIMITED); //Geomancer Adept Training
       Dalaran.ModObjectLimit(FourCC("R00E"), Faction.UNLIMITED); //Hydromancer Adept Training
       Dalaran.ModObjectLimit(Constants.UPGRADE_R01L_MAGIC_SENTRY_DALARAN, Faction.UNLIMITED);
-      Dalaran.ModObjectLimit(FourCC("R00K"), Faction.UNLIMITED); //Power Infusion
       Dalaran.ModObjectLimit(FourCC("R00D"), Faction.UNLIMITED); //Pyromancer Adept Training
       Dalaran.ModObjectLimit(FourCC("Rhac"), Faction.UNLIMITED); //Improved Masonry
       Dalaran.ModObjectLimit(FourCC("R06J"), Faction.UNLIMITED); //Improved Ooze

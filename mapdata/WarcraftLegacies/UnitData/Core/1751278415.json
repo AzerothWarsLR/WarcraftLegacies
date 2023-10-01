@@ -34,7 +34,7 @@
     {
       "Id": 1650550901,
       "Type": 3,
-      "Value": "Aamk,A01R,A0WM,A0NI,A08S"
+      "Value": "Aamk,A01R,A0WM,A0NI,A0YX"
     },
     {
       "Id": 1836083317,
@@ -69,11 +69,16 @@
     {
       "Id": 1919381621,
       "Type": 3,
-      "Value": "R00W"
+      "Value": ""
     },
     {
       "Id": 1819240309,
       "Value": 100
+    },
+    {
+      "Id": 1902473845,
+      "Type": 3,
+      "Value": "R05I"
     }
   ]
 }
