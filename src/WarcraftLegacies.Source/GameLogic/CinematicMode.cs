@@ -1,6 +1,5 @@
-﻿using MacroTools.Extensions;
-using MacroTools.Timer;
-using System;
+﻿using System.Collections.Generic;
+using MacroTools.Extensions;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.GameLogic
@@ -9,58 +8,48 @@ namespace WarcraftLegacies.Source.GameLogic
   /// Used to engage cinematic mode, which prevents players from taking actions and manipulates sound
   /// and weather effects for a cinematic experience.
   /// </summary>
-  public sealed class CinematicMode : ITimer
+  public static class CinematicMode
   {
-    private timer? _cinermaticTimer;
-    private timer? _musicTimer;
-    private CinematicState _state = CinematicState.Inactive;
-    private readonly ITimer _linkedTimer;
-
-    private float Timeout { get; }
-
-    /// <inheritdoc/>
-    public EventHandler? OnTimerEnds { get; set; }
+    private static timer? _cinematicTimer;
+    private static timer? _musicTimer;
+    private static CinematicState _state = CinematicState.Inactive;
+    private static List<unit>? _pausedUnits = new();
     
     /// <summary>
     /// Initiates cinematic mode.
     /// </summary>
-    /// <param name="timeout">How long cinematic mode should last.</param>
-    /// <param name="linkedTimer">this timer will start at the same time as cinematic mosw</param>
-    public CinematicMode(float timeout, ITimer linkedTimer)
+    /// <param name="duration">How long cinematic mode should last.</param>
+    public static void Setup(float duration)
     {
-      Timeout = timeout;
-      _linkedTimer = linkedTimer;
-    }
-
-    /// <inheritdoc/>
-    public void StartTimer()
-    {
-      _cinermaticTimer = CreateTimer();
-      TimerStart(_cinermaticTimer, Timeout, false, TimerEnd);
+      _cinematicTimer = CreateTimer();
+      TimerStart(_cinematicTimer, duration, false, TimerEnd);
 
       _musicTimer = CreateTimer();
       TimerStart(_musicTimer, 2.1f, false, PlayFactionMusic);
 
       FogEnable(false);
       FogMaskEnable(false);
+
+      _pausedUnits = CreateGroup()
+        .EnumUnitsInRect(WCSharp.Shared.Data.Rectangle.WorldBounds)
+        .EmptyToList();
       
-      foreach (var unit in CreateGroup().EnumUnitsInRect(WCSharp.Shared.Data.Rectangle.WorldBounds).EmptyToList())
+      foreach (var unit in _pausedUnits)
         unit.PauseEx(true);
 
       _state = CinematicState.Active;
-      _linkedTimer.StartTimer();
     }
 
     /// <summary>
     /// Ends cinematic mode early for all players.
     /// </summary>
-    public void EndEarly()
+    public static void EndEarly()
     {
-      DestroyTimer(_cinermaticTimer);
+      DestroyTimer(_cinematicTimer);
       TimerEnd();
     }
 
-    private void TimerEnd()
+    private static void TimerEnd()
     {
       if (_state != CinematicState.Active)
         return;
@@ -72,24 +61,24 @@ namespace WarcraftLegacies.Source.GameLogic
       VolumeGroupReset();
       VolumeGroupSetVolume(SOUND_VOLUMEGROUP_AMBIENTSOUNDS, 0.4f);
 
-      DestroyTimer(_cinermaticTimer);
+      DestroyTimer(_cinematicTimer);
       DestroyTimer(_musicTimer);
       _state = CinematicState.Finished;
-      foreach (var unit in CreateGroup().EnumUnitsInRect(WCSharp.Shared.Data.Rectangle.WorldBounds).EmptyToList())
-        unit.PauseEx(false);
 
-      OnTimerEnds?.Invoke(this, EventArgs.Empty);
+      if (_pausedUnits != null)
+      {
+        foreach (var unit in _pausedUnits)
+          unit.PauseEx(false);
+        _pausedUnits.Clear();
+        _pausedUnits = null;
+      }
     }
 
     private static void PlayFactionMusic()
     {
       foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
-      {
         if (GetLocalPlayer() == player)
-        {
           PlayThematicMusic(player.GetFaction()?.CinematicMusic);
-        }
-      }
     }
   }
 }

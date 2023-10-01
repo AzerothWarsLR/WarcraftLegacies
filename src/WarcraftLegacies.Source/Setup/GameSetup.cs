@@ -1,8 +1,6 @@
 ﻿using MacroTools;
 using MacroTools.CommandSystem;
 using MacroTools.ControlPointSystem;
-using MacroTools.Extensions;
-using MacroTools.FactionSystem;
 using MacroTools.Mechanics;
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.Save;
@@ -31,9 +29,8 @@ namespace WarcraftLegacies.Source.Setup
     public static void Setup()
     {
       SaveManager.Initialize();
-      var displayIntroText = new DisplayIntroText(25);
-      var cinematicMode = new CinematicMode(59, displayIntroText);
-      var gameTime = new GameTime();
+      DisplayIntroText.Setup(25);
+      CinematicMode.Setup(59);
       SetupControlPointManager();
       var preplacedUnitSystem = new PreplacedUnitSystem();
       SoundLibrary.Setup();
@@ -44,7 +41,7 @@ namespace WarcraftLegacies.Source.Setup
       ControlPointSetup.Setup();
       InstanceSetup.Setup(preplacedUnitSystem);
       TeamSetup.Setup();
-      AllFactionSetup.Setup(preplacedUnitSystem, artifactSetup);
+      AllFactionSetup.Setup(preplacedUnitSystem, artifactSetup, allLegendSetup);
       SharedFactionConfigSetup.Setup();
       PlayerSetup.Setup();
       new FactionChoiceDialogPresenter(GoblinSetup.Goblin, ZandalarSetup.Zandalar).Run(Player(8));
@@ -64,9 +61,8 @@ namespace WarcraftLegacies.Source.Setup
       BlightSystem.Setup(ScourgeSetup.Scourge);
       BlightSetup.Setup(preplacedUnitSystem);
       QuestMenuSetup.Setup();
-      cinematicMode.StartTimer();
-      gameTime.StartTimer();
-      CheatSetup.Setup(commandManager, cinematicMode);
+      GameTime.Start();
+      CheatSetup.Setup(commandManager);
       DialogueSetup.Setup(preplacedUnitSystem, allLegendSetup);
       MapFlagSetup.Setup();
       InfoQuests.Setup();
@@ -99,7 +95,7 @@ namespace WarcraftLegacies.Source.Setup
       CapturableUnitSetup.Setup(preplacedUnitSystem);
       EyeOfSargerasPickup.Setup();
       SacrificeAcolyte.Setup();
-      IntegrityChecker.Setup(true);
+      RuntimeIntegrityChecker.Setup(true);
       PeonsStartHarvestingShips.Setup(preplacedUnitSystem);
       DarkPortalControlNexusSetup.Setup(preplacedUnitSystem);
       BlackPortalControlNexusSetup.Setup(preplacedUnitSystem);
@@ -115,7 +111,7 @@ namespace WarcraftLegacies.Source.Setup
         StartingMaxHitPoints = 1900,
         HostileStartingCurrentHitPoints = 1000,
         RegenerationAbility = Constants.ABILITY_A0UT_CP_LIFE_REGEN,
-        PiercingResistanceAbility = Constants.ABILITY_A13X_PIERCING_RESISTANCE_CONTROL_POINT_TOWER,
+        PiercingResistanceAbility = Constants.ABILITY_A13X_MAGIC_RESISTANCE_CONTROL_POINT_TOWER,
         IncreaseControlLevelAbilityTypeId = Constants.ABILITY_A0A8_FORTIFY_CONTROL_POINTS_SHARED,
         ControlLevelSettings = new ControlLevelSettings
         {
