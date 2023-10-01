@@ -13,20 +13,20 @@ namespace WarcraftLegacies.Source.Quests.Druids
   {
     private readonly Capital _vordrassil;
 
-    public QuestAndrassil(Capital lichKing, Capital vordrassil) : base("Crown of the Snow",
+    public QuestAndrassil(Capital vordrassil) : base("Crown of the Snow",
       "Long ago, Fandral Staghelm cut a sapling from Nordrassil and used it to grow Andrassil in Northrend. Without the blessing of the Aspects, it fell to the Old Gods' corruption. If Northrend were to be reclaimed, Andrassil's growth could begin anew.",
       @"ReplaceableTextures\CommandButtons\BTNTreant.blp")
     {
-      AddObjective(new ObjectiveCapitalDead(lichKing));
+      AddObjective(new ObjectiveBuildInRect(Regions.GrizzlyHills, "in Grizzly Hills",
+       Constants.UNIT_ETOL_TREE_OF_LIFE_DRUIDS, 3));
       AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N03U_GRIZZLY_HILLS)));
-      AddObjective(new ObjectiveAnyUnitInRect(Regions.GrizzlyHills, "Grizzly Hills", true));
       ResearchId = Constants.UPGRADE_R002_QUEST_COMPLETED_CROWN_OF_THE_SNOW_DRUIDS;
       _vordrassil = vordrassil;
     }
     
     /// <inheritdoc/>
     protected override string RewardFlavour =>
-      "With Northrend finally free of the Lich King's influence, the time is ripe to regrow Andrassil in the hope that it can help reclaim this barren land.";
+      "With Grizzly Hills now being tended by the Trees of Life, the time is ripe to regrow Andrassil in the hope that it can help reclaim this barren land.";
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
