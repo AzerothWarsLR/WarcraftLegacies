@@ -33,7 +33,19 @@ namespace WarcraftLegacies.Source.Setup.Spells
         SpecialEffect = @"Abilities\Spells\Orc\WarStomp\WarStompCaster.mdl"
       };
       SpellSystem.Register(warStompCairne);
-      
+
+      var CripplingShout = new Stomp(Constants.ABILITY_TP07_CRIPPLING_SHOUT_FROSTWOLF)
+      {
+        Radius = 700,
+        DamageBase = 00,
+        DamageLevel = 00,
+        DurationBase = 15,
+        StunAbilityId = Constants.ABILITY_TP08_CRIPPLE_DUMMY,
+        StunOrderString = "cripple",
+        SpecialEffect = @"abilities\spells\nightelf\battleroar\roarcaster.mdx"
+      };
+      SpellSystem.Register(CripplingShout);
+
       ParentChildResearchSystem.Register(Constants.UPGRADE_RHME_PYRITE_FORGED_WEAPONRY_UNIVERSAL_UPGRADE,
         Constants.UPGRADE_R06C_KABOOM_LEVEL_UP);
 
