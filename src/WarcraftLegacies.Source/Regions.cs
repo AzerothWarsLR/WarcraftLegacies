@@ -137,7 +137,7 @@ public static class Regions
 	public static Rectangle Grim_Batol { get; set; } = new Rectangle(16000f, -4192f, 18336f, -2048f);
 	public static Rectangle GrimBatolAmbient1 { get; set; } = new Rectangle(14720f, -4032f, 17920f, -256f);
 	public static Rectangle GrimBatolAmbient2 { get; set; } = new Rectangle(18048f, -8352f, 23424f, 576f);
-	public static Rectangle GrizzlyHills { get; set; } = new Rectangle(3456f, 17184f, 5952f, 19232f);
+	public static Rectangle GrizzlyHills { get; set; } = new Rectangle(3840f, 17472f, 6240f, 19488f);
 	public static Rectangle GromRandomPoint { get; set; } = new Rectangle(-9824f, -3808f, -8160f, -1504f);
 	public static Rectangle GuldansCorpse { get; set; } = new Rectangle(-800f, 9792f, -544f, 10080f);
 	public static Rectangle Halaar { get; set; } = new Rectangle(-4896f, -29728f, -3776f, -28736f);
