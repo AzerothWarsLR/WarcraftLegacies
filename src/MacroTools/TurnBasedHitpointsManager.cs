@@ -39,7 +39,7 @@ namespace MacroTools
       {
         var bonusPercentage = turnBasedHitpointData.HitPointPercentagePerTurn * turn;
         var bonusHitPoints = (int)Math.Ceiling(turnBasedHitpointData.BaseHitPoints * bonusPercentage);
-        unit.SetMaximumHitpoints(unit.GetMaximumHitPoints() + bonusHitPoints);
+        unit.SetMaximumHitpoints(turnBasedHitpointData.BaseHitPoints + bonusHitPoints);
         unit.SetCurrentHitpoints((int)Math.Ceiling(unit.GetHitPoints() + bonusHitPoints));
       }
       
