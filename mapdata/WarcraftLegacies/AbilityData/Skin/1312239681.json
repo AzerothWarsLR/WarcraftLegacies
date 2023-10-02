@@ -101,25 +101,25 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Hero strikes with massive strength maiming his target and even other nearby enemies. Deals 250 damage over time, reduces armor by \u003CA07N,DataC1\u003E whilst reducing the targetted enemies\u0027 move and attack speeds by \u003CA07N,DataA1\u003E."
+      "Value": "Hero strikes with massive strength maiming his target and even other nearby enemies. Deals 250 damage over time, reduces armor by \u003CA07N,DataC1\u003E whilst reducing the targetted enemies\u0027 move and attack speeds by 20%"
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Hero strikes with massive strength maiming his target and even other nearby enemies. Deals 300 damage over time, reduces armor by \u003CA07N,DataC2\u003E whilst reducing the targetted enemies\u0027 move and attack speeds by \u003CA07N,DataA2\u003E."
+      "Value": "Hero strikes with massive strength maiming his target and even other nearby enemies. Deals 300 damage over time, reduces armor by \u003CA07N,DataC2\u003E whilst reducing the targetted enemies\u0027 move and attack speeds by 30%"
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Hero strikes with massive strength maiming his target and even other nearby enemies. Deals 350 damage over time, reduces armor by \u003CA07N,DataC3\u003E whilst reducing the targetted enemies\u0027 move and attack speeds by \u003CA07N,DataA3\u003E."
+      "Value": "Hero strikes with massive strength maiming his target and even other nearby enemies. Deals 350 damage over time, reduces armor by \u003CA07N,DataC3\u003E whilst reducing the targetted enemies\u0027 move and attack speeds by 40%"
     },
     {
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": ".Hero strikes with massive strength maiming his target and even other nearby enemies. Deals 400 damage over time, reduces armor by \u003CA07N,DataC4\u003E whilst reducing the targetted enemies\u0027 move and attack speeds by \u003CA07N,DataA4\u003E."
+      "Value": ".Hero strikes with massive strength maiming his target and even other nearby enemies. Deals 400 damage over time, reduces armor by \u003CA07N,DataC4\u003E whilst reducing the targetted enemies\u0027 move and attack speeds by 50%"
     }
   ]
 }
