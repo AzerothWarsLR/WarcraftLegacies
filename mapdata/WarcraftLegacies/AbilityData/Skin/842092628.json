@@ -8,7 +8,7 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "(Magni)"
+      "Value": "(Garithos)"
     },
     {
       "Id": 2037082209,
@@ -28,7 +28,7 @@
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "A magical hammer that is thrown at an enemy unit, causing damage and stunning the target. |n|n|cffffcc00Level 1|r - \u003CTP12,Data1\u003E damage, \u003CTP12,Dur1\u003E second stun. \u003CTP12,HeroDur1\u003E second on Heroes.|n|cffffcc00Level 2|r - \u003CTP12,Data2\u003E damage, \u003CTP12,Dur2\u003E second stun. \u003CTP12,DurHero2\u003E seconds on Heroes.|n|cffffcc00Level 3|r - \u003CTP12,Data3\u003E damage, \u003CTP12,Dur3\u003E second stun. \u003CTP12,HeroDur3\u003E seconds on Heroes.|n|cffffcc00Level 4|r - \u003CTP12,Data4\u003E damage, \u003CTP12,Dur4\u003E second stun. \u003CTP12,HeroDur4\u003E seconds on Heroes."
+      "Value": "A magical hammer that is thrown at an enemy unit, causing damage and stunning the target. |n|n|cffffcc00Level 1|r - \u003CTP12:AHtb,DataA1\u003E damage, \u003CTP12:AHtb,Dur1\u003E second stun. 1 second on Heroes.|n|cffffcc00Level 2|r - \u003CTP12:AHtb,DataA2\u003E damage, \u003CTP12:AHtb,Dur2\u003E second stun. 1.5 seconds on Heroes.|n|cffffcc00Level 3|r - \u003CTP12:AHtb,DataA3\u003E damage, \u003CTP12:AHtb,Dur3\u003E second stun. 2 seconds on Heroes.|n|cffffcc00Level 4|r - \u003CTP12AHtb,DataA4\u003E damage, \u003CTP12:AHtb,Dur4\u003E second stun. 2.5 seconds on Heroes."
     },
     {
       "Level": 4,
@@ -40,25 +40,25 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Throws a magical hammer at a target enemy unit, dealing \u003CTP12,DataA1\u003E  damage and stunning the target for \u003CTP12,dUR1\u003E seconds. Lasts \u003CTP12,HeroDur1\u003E second on heroes."
+      "Value": "Throws a magical hammer at a target enemy unit, dealing \u003CTP12,DataA1\u003E  damage and stunning the target for \u003CTP12,Dur1\u003E seconds. Lasts 1 second on heroes."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Throws a magical hammer at a target enemy unit, dealing \u003CTP22,DataA2\u003E  damage and stunning the target for \u003CTP22,dUR2\u003E seconds. Lasts \u003CTP22,HeroDur2\u003E second on heroes."
+      "Value": "Throws a magical hammer at a target enemy unit, dealing \u003CTP12,DataA2\u003E  damage and stunning the target for \u003CTP12,Dur2\u003E seconds. Lasts 1.5 seconds on heroes."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Throws a magical hammer at a target enemy unit, dealing \u003CTP32,DataA3\u003E  damage and stunning the target for \u003CTP32,dUR3\u003E seconds. Lasts \u003CTP32,HeroDur3\u003E second on heroes."
+      "Value": "Throws a magical hammer at a target enemy unit, dealing \u003CTP12,DataA3\u003E  damage and stunning the target for \u003CTP12,Dur3\u003E seconds. Lasts 2 seconds on heroes."
     },
     {
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Throws a magical hammer at a target enemy unit, dealing \u003CTP42,DataA4\u003E  damage and stunning the target for \u003CTP42,dUR4\u003E seconds. Lasts \u003CTP42,HeroDur4\u003E second on heroes."
+      "Value": "Throws a magical hammer at a target enemy unit, dealing \u003CTP12,DataA4\u003E  damage and stunning the target for \u003CTP12,Dur4\u003E seconds. Lasts 2.5 seconds on heroes."
     },
     {
       "Id": 1835101793,
