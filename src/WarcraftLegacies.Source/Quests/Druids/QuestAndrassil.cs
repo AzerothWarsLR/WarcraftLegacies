@@ -22,7 +22,7 @@ namespace WarcraftLegacies.Source.Quests.Druids
       @"ReplaceableTextures\CommandButtons\BTNTreant.blp")
     {
       AddObjective(new ObjectiveBuildInRect(Regions.GrizzlyHills, "in Grizzly Hills",
-       Constants.UNIT_ETOL_TREE_OF_LIFE_DRUIDS, 3));
+       Constants.UNIT_ETOL_TREE_OF_LIFE_DRUIDS_T1, 3));
       AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N03U_GRIZZLY_HILLS)));
       ResearchId = Constants.UPGRADE_R002_QUEST_COMPLETED_CROWN_OF_THE_SNOW_DRUIDS;
       _vordrassil = vordrassil;

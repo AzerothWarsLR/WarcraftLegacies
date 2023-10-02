@@ -19,7 +19,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
         StartingGold = 200,
         StartingLumber = 700,
         ControlPointDefenderUnitTypeId = Constants.UNIT_H05X_CONTROL_POINT_DEFENDER_STORMWIND,
-        IntroText = @"You are playing as the steadfast |cff005800Kingdom of Stormwind|r.
+        IntroText = @"You are playing as the steadfast |c000042FFKingdom of Stormwind|r.
 
 You begin in Westfall, separated from the rest of the kingdom. Reunite your lands by liberating Darkshire, Lakeshire and finally Stormwind City. 
 
