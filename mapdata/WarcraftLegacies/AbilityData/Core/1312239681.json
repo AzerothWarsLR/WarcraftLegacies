@@ -135,28 +135,28 @@
       "Pointer": 4,
       "Id": 878862670,
       "Type": 2,
-      "Value": 250
+      "Value": 50
     },
     {
       "Level": 2,
       "Pointer": 4,
       "Id": 878862670,
       "Type": 2,
-      "Value": 300
+      "Value": 55
     },
     {
       "Level": 3,
       "Pointer": 4,
       "Id": 878862670,
       "Type": 2,
-      "Value": 350
+      "Value": 60
     },
     {
       "Level": 4,
       "Pointer": 4,
       "Id": 878862670,
       "Type": 2,
-      "Value": 400
+      "Value": 65
     },
     {
       "Level": 4,
