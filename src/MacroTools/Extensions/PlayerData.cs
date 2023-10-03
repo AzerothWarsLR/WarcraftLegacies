@@ -30,7 +30,6 @@ namespace MacroTools.Extensions
     public event EventHandler<PlayerFactionChangeEventArgs>? ChangedFaction;
     
     private static readonly Dictionary<int, PlayerData> ById = new();
-    private readonly Dictionary<int, int> _objectLevels = new();
 
     private readonly Dictionary<int, int> _objectLimits = new();
     private float _goldPerMinute;
@@ -280,8 +279,7 @@ namespace MacroTools.Extensions
       }
 
       SetPlayerTechResearched(_player, obj, Math.Max(level, 0));
-
-      _objectLevels[obj] = level;
+      
       if (revertAfter)
         SetPlayerTechMaxAllowed(_player, obj, 0);
       
