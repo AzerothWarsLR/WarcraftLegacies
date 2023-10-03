@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using MacroTools.Augments;
 using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
 using MacroTools.LegendSystem;
@@ -46,7 +45,6 @@ namespace MacroTools.FactionSystem
     private const int FoodMaximumDefault = 150;
 
     private readonly Dictionary<int, int> _abilityAvailabilities = new();
-    private readonly List<Augment> _augments = new();
 
     private readonly int _defeatedResearch;
     private readonly List<unit> _goldMines = new();
@@ -369,20 +367,7 @@ namespace MacroTools.FactionSystem
     ///   Registers a gold mine as belonging to this <see cref="Faction" />.
     ///   When the Faction leaves the game, all of their goldmines are removed.
     /// </summary>
-    public void AddGoldMine(unit whichUnit)
-    {
-      _goldMines.Add(whichUnit);
-    }
-
-    /// <summary>
-    ///   Adds a <see cref="Augment" /> to this <see cref="Faction" />.
-    /// </summary>
-    /// <param name="augment"></param>
-    public void AddAugment(Augment augment)
-    {
-      _augments.Add(augment);
-      augment.OnAdd(this);
-    }
+    public void AddGoldMine(unit whichUnit) => _goldMines.Add(whichUnit);
 
     /// <summary>
     ///   Adds a <see cref="Power" /> to this <see cref="Faction" />.
