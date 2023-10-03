@@ -95,7 +95,7 @@ namespace MacroTools.FactionSystem
         foreach (var hero in allyHeroes)
         {
           var expToAdd = (int)((float)experience / (playersToDistributeTo.Count - 1) / allyHeroes.Count * ExperienceTransferMultiplier);
-          AddHeroXP(hero, expToAdd,true);
+          AddHeroXP(hero, expToAdd, true);
         }
       }
     }
