@@ -8,7 +8,7 @@
     {
       "Id": 1868786037,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNVoidWell.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBE_Lumbermill"
     },
     {
       "Id": 1718840949,
@@ -18,7 +18,7 @@
     {
       "Id": 1818520949,
       "Type": 3,
-      "Value": "war3mapImported\\Altar of Starlight 69.mdl"
+      "Value": "war3mapImported\\BE_Lumbermill.mdl"
     },
     {
       "Id": 1953458293,
@@ -33,12 +33,12 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "Void Well"
+      "Value": "Shaper\u0027s Hall"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "Build Void Well"
+      "Value": "Build Shaper\u0027s Hall"
     },
     {
       "Id": 1935832437,
@@ -48,7 +48,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Summoning Well for Demons.|n|cfff5962dTrains:|R Ancient of the Arcane"
+      "Value": "Hall to shape new Ancients.|n|cfff5962dTrains:|R Ancient of the Arcane"
     }
   ]
 }

@@ -33,7 +33,7 @@
     {
       "Id": 1818520949,
       "Type": 3,
-      "Value": "war3mapImported\\Aether Vault 53.mdl"
+      "Value": "war3mapImported\\BE_Shop.mdl"
     },
     {
       "Id": 1835101813,
@@ -53,7 +53,7 @@
     {
       "Id": 1868786037,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNAetherVault.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBE_Shop.blp"
     }
   ]
 }

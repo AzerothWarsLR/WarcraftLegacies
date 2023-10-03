@@ -8,7 +8,7 @@
     {
       "Id": 1868786037,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNTempestForge.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBE_Workshop.blp"
     },
     {
       "Id": 1718840949,
@@ -18,7 +18,7 @@
     {
       "Id": 1818520949,
       "Type": 3,
-      "Value": "war3mapImported\\Emporium 13.mdl"
+      "Value": "war3mapImported\\BE_Workshop.mdl"
     },
     {
       "Id": 1953458293,
@@ -28,17 +28,17 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.75
+      "Value": 0.85
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "Tempest-Forge"
+      "Value": "Artificer\u0027s Court"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "Build Tempest-Forge"
+      "Value": "Build Artificer\u0027s Court"
     },
     {
       "Id": 1935832437,
