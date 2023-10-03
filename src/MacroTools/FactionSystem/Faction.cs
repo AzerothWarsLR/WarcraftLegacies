@@ -494,7 +494,8 @@ namespace MacroTools.FactionSystem
     /// </summary>
     public IEnumerable<Power> GetAllPowers()
     {
-      foreach (var power in _powers) yield return power;
+      foreach (var power in _powers) 
+        yield return power;
     }
 
     /// <summary>
