@@ -49,13 +49,11 @@ namespace MacroTools.FactionSystem
           var resourcesToRefund = DistributeAndRefundUnits(player, eligiblePlayers);
           DistributeGoldAndLumber(player, eligiblePlayers, resourcesToRefund);
           DistributeExperience(eligiblePlayers, resourcesToRefund.Experience);
-          queueValue.GetFaction()?.RemoveGoldMines();
         }
         else
-        {
-          queueValue.GetFaction()?.RemoveGoldMines();
           queueValue.RemoveResourcesAndUnits();
-        }
+
+        queueValue.GetFaction()?.RemoveGoldMines();
       }
 
       DistributionQueue.Active = false;
