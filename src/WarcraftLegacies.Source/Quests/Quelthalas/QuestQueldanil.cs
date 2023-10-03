@@ -62,7 +62,7 @@ namespace WarcraftLegacies.Source.Quests.Quelthalas
     /// <inheritdoc />
     protected override void OnFail(Faction completingFaction)
     {
-      completingFaction.Obliterate();
+      completingFaction.RemoveResourcesAndUnits();
       if (completingFaction.ScoreStatus == ScoreStatus.Defeated)
         return;
       if (GetLocalPlayer() == completingFaction.Player)

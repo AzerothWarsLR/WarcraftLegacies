@@ -338,7 +338,7 @@ namespace MacroTools.FactionSystem
           WCSharp.Shared.Data.Rectangle.WorldBounds.Rect, false, false));
         RemovePlayer(Player, PLAYER_GAME_RESULT_DEFEAT);
         SetPlayerState(Player, PLAYER_STATE_OBSERVER, 1);
-        Leave();
+        DistributeAll();
       }
 
       ScoreStatus = ScoreStatus.Defeated;
@@ -514,17 +514,12 @@ namespace MacroTools.FactionSystem
         _objectLimits.Remove(objectId);
     }
 
-    /// <summary>
-    ///   Causes the <see cref="Faction" />'s <see cref="player" /> to lose everything they control,
-    ///   without distributing it to members of their <see cref="Team" />.
-    /// </summary>
-    public void Obliterate()
+    /// <summary>Removes the <see cref="Faction"/>'s resources and gives their units to Neutral Victim.</summary>
+    public void RemoveResourcesAndUnits()
     {
-      //Take away resources
       SetPlayerState(Player, PLAYER_STATE_RESOURCE_GOLD, 0);
       SetPlayerState(Player, PLAYER_STATE_RESOURCE_LUMBER, 0);
-
-      //Give all units to Neutral Victim
+      
       foreach (var unit in CreateGroup().EnumUnitsOfPlayer(Player).EmptyToList())
       {
         var tempUnitType = UnitType.GetFromHandle(unit);
@@ -725,10 +720,9 @@ namespace MacroTools.FactionSystem
     }
 
     /// <summary>
-    ///   This should get used any time a player exits the game without being defeated;
-    ///   IE they left, went afk, became an observer, or triggered an event that causes this.
+    /// Attempts to distribute the <see cref="Faction"/>'s units, hero experience, and resources to their allies.
     /// </summary>
-    public void Leave()
+    public void DistributeAll()
     {
       Player?.GetTeam()?.PlayersToDistribute.Enqueue(Player);
       while (Player?.GetTeam()?.PlayersToDistribute.Count > 0 && !(bool)Player?.GetTeam()?.PrcessingDistributeQueue)
@@ -751,7 +745,7 @@ namespace MacroTools.FactionSystem
         else
         {
           queueValue?.GetFaction()?.RemoveGoldMines();
-          queueValue?.GetFaction()?.Obliterate();
+          queueValue?.GetFaction()?.RemoveResourcesAndUnits();
         }
       }
       if (Player != null) Player.GetTeam()!.PrcessingDistributeQueue = false;

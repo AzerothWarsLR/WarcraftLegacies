@@ -239,7 +239,7 @@ namespace MacroTools.LegendSystem
     private void PermanentlyKill()
     {
       if (Hivemind && OwningPlayer != null)
-        OwningPlayer.GetFaction()?.Leave();
+        OwningPlayer.GetFaction()?.DistributeAll();
 
       OnPermaDeath();
       PermanentlyDied?.Invoke(this, this);
