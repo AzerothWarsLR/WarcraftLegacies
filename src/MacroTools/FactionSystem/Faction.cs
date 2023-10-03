@@ -25,28 +25,12 @@ namespace MacroTools.FactionSystem
     public const int UNLIMITED = 200;
 
     /// <summary>
-    ///   The gold cost value of a hero.
-    /// </summary>
-    public const int HeroCost = 100;
-
-    /// <summary>
-    ///   How much gold and lumber is refunded from units that get refunded when a player leaves.
-    /// </summary>
-    private const float RefundMultiplier = 1;
-
-    /// <summary>
-    ///   How much experience is transferred from heroes that leave the game.
-    /// </summary>
-    private const float ExperienceTransferMultiplier = 1;
-
-    /// <summary>
     ///   The amount of food <see cref="Faction" />s can have by default.
     /// </summary>
     private const int FoodMaximumDefault = 150;
 
     private readonly Dictionary<int, int> _abilityAvailabilities = new();
-
-    private readonly int _defeatedResearch;
+    
     private readonly List<unit> _goldMines = new();
 
     private readonly Dictionary<int, int> _objectLevels = new();
@@ -57,8 +41,7 @@ namespace MacroTools.FactionSystem
     private string _icon;
     private string _name;
     private player? _player;
-    private int _undefeatedResearch;
-    private int _xp; //Stored by DistributeUnits and given out again by DistributeResources
+    private readonly int _undefeatedResearch;
 
     /// <summary>
     ///   Fired when the <see cref="Faction" /> gains a <see cref="Power" />.
@@ -93,11 +76,11 @@ namespace MacroTools.FactionSystem
               return;
             research.OnResearch(GetTriggerPlayer());
             foreach (var otherResearch in research.IncompatibleWith)
-              faction.SetObjectLimit(otherResearch.ResearchTypeId, -UNLIMITED, true);
+              faction.SetObjectLimit(otherResearch.ResearchTypeId, -UNLIMITED);
           }
           else
           {
-            faction.SetObjectLimit(researchId, -UNLIMITED, true);
+            faction.SetObjectLimit(researchId, -UNLIMITED);
             research.Refund(GetTriggerPlayer());
           }
         }
@@ -125,13 +108,13 @@ namespace MacroTools.FactionSystem
     public bool HasEssentialLegend => GetEssentialLegends().Count > 0;
 
     /// <summary>How much gold the faction starts with.</summary>
-    public int StartingGold { get; set; }
+    public int StartingGold { get; init; }
 
     /// <summary>How much lumber the faction starts with.</summary>
-    public int StartingLumber { get; set; }
-    
+    public int StartingLumber { get; init; }
+
     /// <summary>The units this faction should start the game with.</summary>
-    public List<unit> StartingUnits { get; init; }
+    public List<unit> StartingUnits { get; init; } = new();
     
     /// <summary>Where any player occupying this faction should have their camera set to on game start.</summary>
     public Point? StartingCameraPosition { get; init; }
@@ -168,14 +151,14 @@ namespace MacroTools.FactionSystem
     /// <summary>
     ///   Music that will play for the Faction at the start of the game.
     /// </summary>
-    public string CinematicMusic { get; init; }
+    public string CinematicMusic { get; init; } = "";
 
     /// <summary>
     /// Whether or not the <see cref="Faction"/> has been defeated.
     /// </summary>
     public ScoreStatus ScoreStatus { get; private set; } = ScoreStatus.Undefeated;
 
-    public string ColoredName => PrefixCol + _name + "|r";
+    public string ColoredName => $"{PrefixCol}{_name}|r";
 
     public string PrefixCol { get; }
 
@@ -239,14 +222,14 @@ namespace MacroTools.FactionSystem
     /// </summary>
     public int UndefeatedResearch
     {
-      set
+      get => _undefeatedResearch;
+      init
       {
         if (_undefeatedResearch != 0) return;
         _undefeatedResearch = value;
         foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
           SetPlayerTechResearched(player, _undefeatedResearch, 1);
       }
-      get => _undefeatedResearch;
     }
 
     /// <summary>
@@ -255,36 +238,16 @@ namespace MacroTools.FactionSystem
     private List<Legend> GetEssentialLegends()
     {
       var essentialLegends = new List<Legend>();
-      foreach (var legend in LegendaryHeroManager.GetAll())
-      {
-        if (legend.Essential && legend.OwningPlayer == Player && legend.Unit.IsAlive())
-        {
-          essentialLegends.Add(legend);
-        }
-      }
-      foreach (var capital in CapitalManager.GetAll())
-      {
-        if (capital.Essential && capital.OwningPlayer == Player && capital.Unit.IsAlive())
-        {
-          essentialLegends.Add(capital);
-        }
-      }
       
-      return essentialLegends;
-    }
+      foreach (var legend in LegendaryHeroManager.GetAll())
+        if (legend.Essential && legend.OwningPlayer == Player && legend.Unit?.IsAlive() == true)
+          essentialLegends.Add(legend);
+      
+      foreach (var capital in CapitalManager.GetAll())
+        if (capital.Essential && capital.OwningPlayer == Player && capital.Unit?.IsAlive() == true)
+          essentialLegends.Add(capital);
 
-    /// <summary>
-    ///   This research is enabled for every player while this <see cref="Faction" /> is defeated.
-    /// </summary>
-    public int DefeatedResearch
-    {
-      init
-      {
-        if (_defeatedResearch != 0) return;
-        _defeatedResearch = value;
-        foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
-          SetPlayerTechResearched(player, _defeatedResearch, 0);
-      }
+      return essentialLegends;
     }
 
     public Faction(string name, playercolor playerColor, string prefixCol, string icon)
@@ -295,11 +258,6 @@ namespace MacroTools.FactionSystem
       _icon = icon;
       FoodMaximum = FoodMaximumDefault;
     }
-
-    /// <summary>
-    ///   Fires when the <see cref="Faction" /> joins a new <see cref="Team" />.
-    /// </summary>
-    public event EventHandler<Faction>? JoinedTeam;
 
     /// <summary>
     ///   Fires when the <see cref="Faction" /> changes its name.
@@ -327,41 +285,27 @@ namespace MacroTools.FactionSystem
     public void Defeat()
     {
       foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
-      {
-        SetPlayerTechResearched(player, _defeatedResearch, 1);
         SetPlayerTechResearched(player, _undefeatedResearch, 0);
-      }
-      
+
       if (Player != null)
       {
         FogModifierStart(CreateFogModifierRect(Player, FOG_OF_WAR_VISIBLE,
-          WCSharp.Shared.Data.Rectangle.WorldBounds.Rect, false, false));
+          Rectangle.WorldBounds.Rect, false, false));
         RemovePlayer(Player, PLAYER_GAME_RESULT_DEFEAT);
         SetPlayerState(Player, PLAYER_STATE_OBSERVER, 1);
-        Leave();
+        PlayerDistributor.QueueForDistribution(Player);
       }
 
       ScoreStatus = ScoreStatus.Defeated;
       StatusChanged?.Invoke(this, this);
       ScoreStatusChanged?.Invoke(this, this);
     }
-    
-    /// <summary>
-    ///   Returns all unit types which this <see cref="Faction" /> can only train a limited number of.
-    /// </summary>
-    public IEnumerable<int> GetLimitedObjects()
-    {
-      return _objectLimits.Keys;
-    }
 
     /// <summary>
     ///   Returns the maximum number of times the Faction can train a unit, build a building, or research a research.
     /// </summary>
     /// <param name="whichObject">The object ID of a unit, building, or research.</param>
-    public int GetObjectLimit(int whichObject)
-    {
-      return _objectLimits[whichObject];
-    }
+    public int GetObjectLimit(int whichObject) => _objectLimits[whichObject];
 
     /// <summary>
     ///   Registers a gold mine as belonging to this <see cref="Faction" />.
@@ -400,7 +344,7 @@ namespace MacroTools.FactionSystem
     /// </summary>
     public void RemovePowerByName(string name)
     {
-      var power = _powers.Where(x => x.Name == name).FirstOrDefault();
+      var power = _powers.FirstOrDefault(x => x.Name == name);
       if (power == null)
         throw new ArgumentException($"Unable to find power with name {name}");
       _powers.Remove(power);
@@ -479,8 +423,7 @@ namespace MacroTools.FactionSystem
     /// </summary>
     /// <param name="objectId">The object ID to modify the limit of.</param>
     /// <param name="limit">The amount to adjust the limit by.</param>
-    /// <param name="isResearch">Should be true if the input ID is a research.</param>
-    public void ModObjectLimit(int objectId, int limit, bool isResearch = false)
+    public void ModObjectLimit(int objectId, int limit)
     {
       if (_objectLimits.ContainsKey(objectId))
         _objectLimits[objectId] += limit;
@@ -495,19 +438,13 @@ namespace MacroTools.FactionSystem
     }
 
     /// <summary>
-    ///   Sets the limit of the given object that the <see cref="Faction" /> can train, build, or research.
+    /// Sets the limit of the given object that the <see cref="Faction"/> can train, build, or research.
     /// </summary>
     /// <param name="objectId">The object ID to modify the limit of.</param>
     /// <param name="limit">The amount to set the limit to.</param>
-    /// <param name="isResearch">Should be true if the input ID is a research.</param>
-    public void SetObjectLimit(int objectId, int limit, bool isResearch = false)
+    public void SetObjectLimit(int objectId, int limit)
     {
-      if (_objectLimits.ContainsKey(objectId))
-        _objectLimits[objectId] = limit;
-      else
-        _objectLimits.Add(objectId, limit);
-
-      //If a player has this Faction, adjust their techtree as well
+      _objectLimits[objectId] = limit;
       Player?.SetObjectLimit(objectId, limit);
 
       if (_objectLimits[objectId] == 0)
@@ -515,33 +452,12 @@ namespace MacroTools.FactionSystem
     }
 
     /// <summary>
-    ///   Causes the <see cref="Faction" />'s <see cref="player" /> to lose everything they control,
-    ///   without distributing it to members of their <see cref="Team" />.
-    /// </summary>
-    public void Obliterate()
-    {
-      //Take away resources
-      SetPlayerState(Player, PLAYER_STATE_RESOURCE_GOLD, 0);
-      SetPlayerState(Player, PLAYER_STATE_RESOURCE_LUMBER, 0);
-
-      //Give all units to Neutral Victim
-      foreach (var unit in CreateGroup().EnumUnitsOfPlayer(Player).EmptyToList())
-      {
-        var tempUnitType = UnitType.GetFromHandle(unit);
-        if (!UnitAlive(unit))
-          unit.Remove();
-
-        if (!tempUnitType.NeverDelete)
-          SetUnitOwner(unit, Player(GetBJPlayerNeutralVictim()), false);
-      }
-    }
-
-    /// <summary>
     ///   Returns all <see cref="Power" />s this <see cref="Faction" /> has.
     /// </summary>
     public IEnumerable<Power> GetAllPowers()
     {
-      foreach (var power in _powers) yield return power;
+      foreach (var power in _powers) 
+        yield return power;
     }
 
     /// <summary>
@@ -569,6 +485,17 @@ namespace MacroTools.FactionSystem
     /// <returns></returns>
     public List<QuestData> GetAllQuests() => _questsByName.Values.ToList();
 
+    /// <summary>
+    /// Removes all gold mines assigned to the faction
+    /// </summary>
+    public void RemoveGoldMines()
+    {
+      foreach (var unit in _goldMines) 
+        KillUnit(unit);
+      
+      _goldMines.Clear();
+    }
+    
     private void ApplyPowers()
     {
       if (Player == null) return;
@@ -644,127 +571,6 @@ namespace MacroTools.FactionSystem
       {
         Logger.LogError($"{nameof(Faction)} failed to execute {nameof(OnQuestProgressChanged)}: {ex.Message}");
       }
-    }
-
-    private void DistributeExperience(List<player?> playersToDistributeTo)
-    {
-      if (Player?.GetTeam() == null) return;
-      foreach (var ally in playersToDistributeTo)
-      {
-        var allyHeroes = CreateGroup().EnumUnitsOfPlayer(ally).EmptyToList()
-          .FindAll(unit => IsUnitType(unit, UNIT_TYPE_HERO));
-        foreach (var hero in allyHeroes)
-          AddHeroXP(hero, R2I(_xp / (Player.GetTeam()!.Size - 1) / allyHeroes.Count * ExperienceTransferMultiplier),
-            true);
-      }
-
-      _xp = 0;
-    }
-
-    private void DistributeResources(List<player?> playersToDistributeTo)
-    {
-      foreach (var player in playersToDistributeTo)
-      {
-        if (player == null) continue;
-        player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, (int)(Gold / playersToDistributeTo.Count));
-        player.AdjustPlayerState(PLAYER_STATE_RESOURCE_LUMBER, (int)(Lumber / playersToDistributeTo.Count));
-      }
-
-      Gold = 0;
-      Lumber = 0;
-    }
-
-    private void DistributeUnits(IReadOnlyList<player?> playersToDistributeTo)
-    {
-      if (Player?.GetTeam() == null) return;
-      var playerUnits = CreateGroup().EnumUnitsOfPlayer(Player).EmptyToList();
-
-      foreach (var unit in playerUnits)
-      {
-        var loopUnitType = UnitType.GetFromHandle(unit);
-        if (IsUnitType(unit, UNIT_TYPE_SUMMONED))
-        {
-          unit
-            .Kill()
-            .Remove();
-          continue;
-        }
-
-        if (IsUnitType(unit, UNIT_TYPE_HERO))
-        {
-          Player?.AddGold(HeroCost);
-          _xp += GetHeroXP(unit);
-          if (LegendaryHeroManager.GetFromUnit(unit) != null)
-            _xp -= LegendaryHeroManager.GetFromUnit(unit)!.StartingXp;
-          unit
-            .DropAllItems()
-            .Kill()
-            .Remove();
-          continue;
-        }
-
-        if (!CapitalManager.UnitIsCapital(unit) && !CapitalManager.UnitIsProtector(unit) && !ControlPointManager.Instance.UnitIsControlPoint(unit) && !loopUnitType.NeverDelete)
-        {
-          if (!IsUnitType(unit, UNIT_TYPE_STRUCTURE))
-          {
-            Gold += loopUnitType.GoldCost * RefundMultiplier;
-            Lumber += loopUnitType.LumberCost * RefundMultiplier;
-          }
-          unit
-            .DropAllItems()
-            .Kill()
-            .Remove();
-          continue;
-        }
-
-        unit.SetOwner(
-          Player?.GetTeam()?.Size > 1
-            ? playersToDistributeTo[GetRandomInt(0, playersToDistributeTo.Count - 1)]
-            : Player(GetBJPlayerNeutralVictim()), false);
-      }
-    }
-
-    /// <summary>
-    ///   This should get used any time a player exits the game without being defeated;
-    ///   IE they left, went afk, became an observer, or triggered an event that causes this.
-    /// </summary>
-    public void Leave()
-    {
-      Player?.GetTeam()?.PlayersToDistribute.Enqueue(Player);
-      while (Player?.GetTeam()?.PlayersToDistribute.Count > 0 && !(bool)Player?.GetTeam()?.PrcessingDistributeQueue)
-      {
-        if (Player != null) Player.GetTeam()!.PrcessingDistributeQueue = true;
-        var queueValue = Player?.GetTeam()?.PlayersToDistribute.Dequeue();
-        var eligiblePlayers = queueValue?
-          .GetTeam()?
-          .GetAllFactions()
-          .Where(x => x.ScoreStatus == ScoreStatus.Undefeated && x.Player != queueValue)
-          .Select(x => x.Player)
-          .ToList();
-        if (eligiblePlayers != null && eligiblePlayers.Any() && GameTime.GetGameTime() > 60)
-        {
-          queueValue?.GetFaction()?.DistributeUnits(eligiblePlayers);
-          queueValue?.GetFaction()?.DistributeResources(eligiblePlayers);
-          queueValue?.GetFaction()?.DistributeExperience(eligiblePlayers);
-          queueValue?.GetFaction()?.RemoveGoldMines();
-        }
-        else
-        {
-          queueValue?.GetFaction()?.RemoveGoldMines();
-          queueValue?.GetFaction()?.Obliterate();
-        }
-      }
-      if (Player != null) Player.GetTeam()!.PrcessingDistributeQueue = false;
-      LeftGame?.Invoke(this, this);
-    }
-
-    /// <summary>
-    /// Removes all gold mines assigned to the faction
-    /// </summary>
-    public void RemoveGoldMines()
-    {
-      foreach (var unit in _goldMines) KillUnit(unit);
-      _goldMines.Clear();
     }
   }
 }
