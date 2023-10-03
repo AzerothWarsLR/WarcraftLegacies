@@ -112,9 +112,9 @@ namespace MacroTools.FactionSystem
 
     /// <summary>How much lumber the faction starts with.</summary>
     public int StartingLumber { get; init; }
-    
+
     /// <summary>The units this faction should start the game with.</summary>
-    public List<unit> StartingUnits { get; init; }
+    public List<unit> StartingUnits { get; init; } = new();
     
     /// <summary>Where any player occupying this faction should have their camera set to on game start.</summary>
     public Point? StartingCameraPosition { get; init; }
@@ -151,7 +151,7 @@ namespace MacroTools.FactionSystem
     /// <summary>
     ///   Music that will play for the Faction at the start of the game.
     /// </summary>
-    public string CinematicMusic { get; init; }
+    public string CinematicMusic { get; init; } = "";
 
     /// <summary>
     /// Whether or not the <see cref="Faction"/> has been defeated.
@@ -344,7 +344,7 @@ namespace MacroTools.FactionSystem
     /// </summary>
     public void RemovePowerByName(string name)
     {
-      var power = _powers.Where(x => x.Name == name).FirstOrDefault();
+      var power = _powers.FirstOrDefault(x => x.Name == name);
       if (power == null)
         throw new ArgumentException($"Unable to find power with name {name}");
       _powers.Remove(power);
