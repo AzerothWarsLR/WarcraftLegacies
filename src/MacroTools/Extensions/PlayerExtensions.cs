@@ -70,29 +70,6 @@ namespace MacroTools.Extensions
     }
 
     /// <summary>
-    ///   Changes the player's view to come out of a certain camera.
-    /// </summary>
-    public static void SetupCamera(this player whichPlayer, camerasetup whichSetup, bool doPan, float duration)
-    {
-      if (GetLocalPlayer() != whichPlayer)
-        return;
-      CameraSetupApplyForceDuration(whichSetup, doPan, duration);
-    }
-
-    /// <summary>
-    ///   Prevents the player from moving their camera out of the provided area.
-    /// </summary>
-    public static void SetCameraLimits(this player whichPlayer, rect rect)
-    {
-      if (GetLocalPlayer() != whichPlayer) return;
-      var minX = GetRectMinX(rect);
-      var minY = GetRectMinY(rect);
-      var maxX = GetRectMaxX(rect);
-      var maxY = GetRectMaxY(rect);
-      SetCameraBounds(minX, minY, minX, maxY, maxX, maxY, maxX, minY);
-    }
-
-    /// <summary>
     /// Sets a player's alliance state towards another player.
     /// </summary>
     public static void SetAllianceState(this player sourcePlayer, player otherPlayer, AllianceState allianceState)
@@ -230,7 +207,6 @@ namespace MacroTools.Extensions
       newOwningPlayer ??= Player(PLAYER_NEUTRAL_AGGRESSIVE);
 
       foreach (var unit in units)
-      
         unit.Rescue(newOwningPlayer);
     }
 
@@ -252,9 +228,7 @@ namespace MacroTools.Extensions
     public static int GetFoodCapCeiling(this player whichPlayer) =>
       GetPlayerState(whichPlayer, PLAYER_STATE_FOOD_CAP_CEILING);
 
-    /// <summary>
-    ///   Determines whether or not the player can see or use the specified ability.
-    /// </summary>
+    /// <summary>Determines whether or not the player can see or use the specified ability.</summary>
     internal static void SetAbilityAvailability(this player player, int ability, bool value) =>
       SetPlayerAbilityAvailable(player, ability, value);
 
@@ -322,10 +296,8 @@ namespace MacroTools.Extensions
       if (experience > 0)
         display = $"{display}\n+{experience} Experience";
       DisplayTextToPlayer(GetOwningPlayer(whichUnit), 0, 0, display);
-      if (GetLocalPlayer() == GetOwningPlayer(whichUnit))
-      {
+      if (GetLocalPlayer() == GetOwningPlayer(whichUnit)) 
         StartSound(SoundLibrary.Hint);
-      }
     }
 
     /// <summary>
@@ -391,11 +363,5 @@ namespace MacroTools.Extensions
         $"\n|cffd45e19LEGENDARY FOE SUMMONED - {legendaryHero.Name}\n|r{message}");
       StartSound(SoundLibrary.Warning);
     }
-
-    /// <summary>
-    /// Checks whether or not the given player has the specified alliance towards another player.
-    /// </summary>
-    public static bool GetAllianceState(this player whichPlayer, player otherPlayer, alliancetype allianceType) =>
-      GetPlayerAlliance(whichPlayer, otherPlayer, allianceType);
   }
 }
