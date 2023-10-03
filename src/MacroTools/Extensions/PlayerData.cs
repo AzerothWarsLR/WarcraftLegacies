@@ -260,8 +260,6 @@ namespace MacroTools.Extensions
       ControlPointsChanged?.Invoke(this, this);
     }
 
-    public int GetObjectLevel(int obj) => _objectLevels.ContainsKey(obj) ? _objectLevels[obj] : 0;
-
     public void SetObjectLevel(int obj, int level)
     {
       var objectLimit = _player.GetObjectLimit(obj);
