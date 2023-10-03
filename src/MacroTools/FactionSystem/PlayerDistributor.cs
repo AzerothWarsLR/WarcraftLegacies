@@ -27,7 +27,7 @@ namespace MacroTools.FactionSystem
     /// <summary>
     /// Attempts to distribute the <see cref="Faction"/>'s units, hero experience, and resources to their allies.
     /// </summary>
-    public static void DistributeUnitsAndResources(player player)
+    public static void QueueForDistribution(player player)
     {
       var playerTeam = player.GetTeam();
       if (playerTeam == null)
@@ -38,18 +38,15 @@ namespace MacroTools.FactionSystem
       if (DistributionQueue.Active)
         return;
       
+      DistributionQueue.Active = true;
+      
       while (DistributionQueue.Count > 0)
       {
-        DistributionQueue.Active = true;
         var dequeuedPlayer = DistributionQueue.Dequeue();
         var eligiblePlayers = GetPlayersEligibleForReceivingDistribution(dequeuedPlayer);
-        
+
         if (eligiblePlayers.Any() && GameTime.GetGameTime() > GameTime.TurnDuration)
-        {
-          var resourcesToRefund = DistributeAndRefundUnits(player, eligiblePlayers);
-          DistributeGoldAndLumber(player, eligiblePlayers, resourcesToRefund);
-          DistributeExperience(eligiblePlayers, resourcesToRefund.Experience);
-        }
+          DistributePlayer(player, eligiblePlayers);
         else
           dequeuedPlayer.RemoveResourcesAndUnits();
 
@@ -57,6 +54,13 @@ namespace MacroTools.FactionSystem
       }
 
       DistributionQueue.Active = false;
+    }
+
+    private static void DistributePlayer(player player, List<player> eligiblePlayers)
+    {
+      var resourcesToRefund = DistributeAndRefundUnits(player, eligiblePlayers);
+      DistributeGoldAndLumber(player, eligiblePlayers, resourcesToRefund);
+      DistributeExperience(eligiblePlayers, resourcesToRefund.Experience);
     }
 
     private static List<player> GetPlayersEligibleForReceivingDistribution(player playerBeingDistributed)

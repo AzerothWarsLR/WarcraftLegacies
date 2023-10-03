@@ -102,7 +102,7 @@ namespace MacroTools.LegendSystem
       if (string.IsNullOrEmpty(DeathMessage)) 
         return;
       if (Hivemind && OwningPlayer != null)
-        PlayerDistributor.DistributeUnitsAndResources(OwningPlayer);
+        PlayerDistributor.QueueForDistribution(OwningPlayer);
       
       DisplayTextToPlayer(GetLocalPlayer(), 0, 0, $"\n|cffffcc00CAPITAL DESTROYED|r\n{DeathMessage}");
     }
