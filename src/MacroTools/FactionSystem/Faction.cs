@@ -45,8 +45,7 @@ namespace MacroTools.FactionSystem
     private const int FoodMaximumDefault = 150;
 
     private readonly Dictionary<int, int> _abilityAvailabilities = new();
-
-    private readonly int _defeatedResearch;
+    
     private readonly List<unit> _goldMines = new();
 
     private readonly Dictionary<int, int> _objectLevels = new();
@@ -57,8 +56,8 @@ namespace MacroTools.FactionSystem
     private string _icon;
     private string _name;
     private player? _player;
-    private int _undefeatedResearch;
-    private int _xp; //Stored by DistributeUnits and given out again by DistributeResources
+    private readonly int _undefeatedResearch;
+    private int _storedHeroExperience;
 
     /// <summary>
     ///   Fired when the <see cref="Faction" /> gains a <see cref="Power" />.
@@ -125,10 +124,10 @@ namespace MacroTools.FactionSystem
     public bool HasEssentialLegend => GetEssentialLegends().Count > 0;
 
     /// <summary>How much gold the faction starts with.</summary>
-    public int StartingGold { get; set; }
+    public int StartingGold { get; init; }
 
     /// <summary>How much lumber the faction starts with.</summary>
-    public int StartingLumber { get; set; }
+    public int StartingLumber { get; init; }
     
     /// <summary>The units this faction should start the game with.</summary>
     public List<unit> StartingUnits { get; init; }
@@ -175,7 +174,7 @@ namespace MacroTools.FactionSystem
     /// </summary>
     public ScoreStatus ScoreStatus { get; private set; } = ScoreStatus.Undefeated;
 
-    public string ColoredName => PrefixCol + _name + "|r";
+    public string ColoredName => $"{PrefixCol}{_name}|r";
 
     public string PrefixCol { get; }
 
@@ -239,14 +238,14 @@ namespace MacroTools.FactionSystem
     /// </summary>
     public int UndefeatedResearch
     {
-      set
+      get => _undefeatedResearch;
+      init
       {
         if (_undefeatedResearch != 0) return;
         _undefeatedResearch = value;
         foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
           SetPlayerTechResearched(player, _undefeatedResearch, 1);
       }
-      get => _undefeatedResearch;
     }
 
     /// <summary>
@@ -255,36 +254,16 @@ namespace MacroTools.FactionSystem
     private List<Legend> GetEssentialLegends()
     {
       var essentialLegends = new List<Legend>();
-      foreach (var legend in LegendaryHeroManager.GetAll())
-      {
-        if (legend.Essential && legend.OwningPlayer == Player && legend.Unit.IsAlive())
-        {
-          essentialLegends.Add(legend);
-        }
-      }
-      foreach (var capital in CapitalManager.GetAll())
-      {
-        if (capital.Essential && capital.OwningPlayer == Player && capital.Unit.IsAlive())
-        {
-          essentialLegends.Add(capital);
-        }
-      }
       
-      return essentialLegends;
-    }
+      foreach (var legend in LegendaryHeroManager.GetAll())
+        if (legend.Essential && legend.OwningPlayer == Player && legend.Unit?.IsAlive() == true)
+          essentialLegends.Add(legend);
+      
+      foreach (var capital in CapitalManager.GetAll())
+        if (capital.Essential && capital.OwningPlayer == Player && capital.Unit?.IsAlive() == true)
+          essentialLegends.Add(capital);
 
-    /// <summary>
-    ///   This research is enabled for every player while this <see cref="Faction" /> is defeated.
-    /// </summary>
-    public int DefeatedResearch
-    {
-      init
-      {
-        if (_defeatedResearch != 0) return;
-        _defeatedResearch = value;
-        foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
-          SetPlayerTechResearched(player, _defeatedResearch, 0);
-      }
+      return essentialLegends;
     }
 
     public Faction(string name, playercolor playerColor, string prefixCol, string icon)
@@ -327,15 +306,12 @@ namespace MacroTools.FactionSystem
     public void Defeat()
     {
       foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
-      {
-        SetPlayerTechResearched(player, _defeatedResearch, 1);
         SetPlayerTechResearched(player, _undefeatedResearch, 0);
-      }
-      
+
       if (Player != null)
       {
         FogModifierStart(CreateFogModifierRect(Player, FOG_OF_WAR_VISIBLE,
-          WCSharp.Shared.Data.Rectangle.WorldBounds.Rect, false, false));
+          Rectangle.WorldBounds.Rect, false, false));
         RemovePlayer(Player, PLAYER_GAME_RESULT_DEFEAT);
         SetPlayerState(Player, PLAYER_STATE_OBSERVER, 1);
         DistributeAll();
@@ -345,23 +321,12 @@ namespace MacroTools.FactionSystem
       StatusChanged?.Invoke(this, this);
       ScoreStatusChanged?.Invoke(this, this);
     }
-    
-    /// <summary>
-    ///   Returns all unit types which this <see cref="Faction" /> can only train a limited number of.
-    /// </summary>
-    public IEnumerable<int> GetLimitedObjects()
-    {
-      return _objectLimits.Keys;
-    }
 
     /// <summary>
     ///   Returns the maximum number of times the Faction can train a unit, build a building, or research a research.
     /// </summary>
     /// <param name="whichObject">The object ID of a unit, building, or research.</param>
-    public int GetObjectLimit(int whichObject)
-    {
-      return _objectLimits[whichObject];
-    }
+    public int GetObjectLimit(int whichObject) => _objectLimits[whichObject];
 
     /// <summary>
     ///   Registers a gold mine as belonging to this <see cref="Faction" />.
@@ -479,8 +444,7 @@ namespace MacroTools.FactionSystem
     /// </summary>
     /// <param name="objectId">The object ID to modify the limit of.</param>
     /// <param name="limit">The amount to adjust the limit by.</param>
-    /// <param name="isResearch">Should be true if the input ID is a research.</param>
-    public void ModObjectLimit(int objectId, int limit, bool isResearch = false)
+    public void ModObjectLimit(int objectId, int limit)
     {
       if (_objectLimits.ContainsKey(objectId))
         _objectLimits[objectId] += limit;
@@ -643,11 +607,11 @@ namespace MacroTools.FactionSystem
         var allyHeroes = CreateGroup().EnumUnitsOfPlayer(ally).EmptyToList()
           .FindAll(unit => IsUnitType(unit, UNIT_TYPE_HERO));
         foreach (var hero in allyHeroes)
-          AddHeroXP(hero, R2I(_xp / (Player.GetTeam()!.Size - 1) / allyHeroes.Count * ExperienceTransferMultiplier),
+          AddHeroXP(hero, R2I(_storedHeroExperience / (Player.GetTeam()!.Size - 1) / allyHeroes.Count * ExperienceTransferMultiplier),
             true);
       }
 
-      _xp = 0;
+      _storedHeroExperience = 0;
     }
 
     private void DistributeResources(List<player?> playersToDistributeTo)
@@ -682,9 +646,9 @@ namespace MacroTools.FactionSystem
         if (IsUnitType(unit, UNIT_TYPE_HERO))
         {
           Player?.AddGold(HeroCost);
-          _xp += GetHeroXP(unit);
+          _storedHeroExperience += GetHeroXP(unit);
           if (LegendaryHeroManager.GetFromUnit(unit) != null)
-            _xp -= LegendaryHeroManager.GetFromUnit(unit)!.StartingXp;
+            _storedHeroExperience -= LegendaryHeroManager.GetFromUnit(unit)!.StartingXp;
           unit
             .DropAllItems()
             .Kill()
@@ -751,7 +715,9 @@ namespace MacroTools.FactionSystem
     /// </summary>
     public void RemoveGoldMines()
     {
-      foreach (var unit in _goldMines) KillUnit(unit);
+      foreach (var unit in _goldMines) 
+        KillUnit(unit);
+      
       _goldMines.Clear();
     }
   }
