@@ -330,5 +330,24 @@ namespace MacroTools.Extensions
         $"\n|cffd45e19LEGENDARY FOE SUMMONED - {legendaryHero.Name}\n|r{message}");
       StartSound(SoundLibrary.Warning);
     }
+    
+    /// <summary>Removes player's resources and gives their units to Neutral Victim.</summary>
+    public static void RemoveResourcesAndUnits(this player whichPlayer)
+    {
+      SetPlayerState(whichPlayer, PLAYER_STATE_RESOURCE_GOLD, 0);
+      SetPlayerState(whichPlayer, PLAYER_STATE_RESOURCE_LUMBER, 0);
+      
+      foreach (var unit in CreateGroup()
+                 .EnumUnitsOfPlayer(whichPlayer)
+                 .EmptyToList())
+      {
+        var tempUnitType = UnitType.GetFromHandle(unit);
+        if (!UnitAlive(unit))
+          unit.Remove();
+
+        if (!tempUnitType.NeverDelete)
+          SetUnitOwner(unit, Player(GetBJPlayerNeutralVictim()), false);
+      }
+    }
   }
 }

@@ -53,7 +53,7 @@ namespace MacroTools.FactionSystem
         else
         {
           queueValue.GetFaction()?.RemoveGoldMines();
-          queueValue.GetFaction()?.RemoveResourcesAndUnits();
+          queueValue.RemoveResourcesAndUnits();
         }
       }
 

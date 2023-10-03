@@ -451,23 +451,6 @@ namespace MacroTools.FactionSystem
         _objectLimits.Remove(objectId);
     }
 
-    /// <summary>Removes the <see cref="Faction"/>'s resources and gives their units to Neutral Victim.</summary>
-    public void RemoveResourcesAndUnits()
-    {
-      SetPlayerState(Player, PLAYER_STATE_RESOURCE_GOLD, 0);
-      SetPlayerState(Player, PLAYER_STATE_RESOURCE_LUMBER, 0);
-      
-      foreach (var unit in CreateGroup().EnumUnitsOfPlayer(Player).EmptyToList())
-      {
-        var tempUnitType = UnitType.GetFromHandle(unit);
-        if (!UnitAlive(unit))
-          unit.Remove();
-
-        if (!tempUnitType.NeverDelete)
-          SetUnitOwner(unit, Player(GetBJPlayerNeutralVictim()), false);
-      }
-    }
-
     /// <summary>
     ///   Returns all <see cref="Power" />s this <see cref="Faction" /> has.
     /// </summary>
