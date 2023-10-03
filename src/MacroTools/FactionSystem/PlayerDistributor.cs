@@ -20,7 +20,7 @@ namespace MacroTools.FactionSystem
     private const float ExperienceTransferMultiplier = 1;
     
     /// <summary>The gold cost value of a hero.</summary>
-    private const int HeroCost = 100;
+    public const int HeroCost = 100;
     
     /// <summary>
     /// Attempts to distribute the <see cref="Faction"/>'s units, hero experience, and resources to their allies.
