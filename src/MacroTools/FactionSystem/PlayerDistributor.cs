@@ -101,7 +101,7 @@ namespace MacroTools.FactionSystem
     private static void DistributeGoldAndLumber(player playerToDistribute, List<player> playersToDistributeTo, UnitRefund refund)
     {
       var goldToDistribute = refund.Gold + playerToDistribute.GetGold();
-      var lumberToDistribute = refund.Gold + playerToDistribute.GetLumber();
+      var lumberToDistribute = refund.Lumber + playerToDistribute.GetLumber();
       
       foreach (var player in playersToDistributeTo)
       {
