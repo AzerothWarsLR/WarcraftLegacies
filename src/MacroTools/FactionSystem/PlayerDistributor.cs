@@ -41,8 +41,8 @@ namespace MacroTools.FactionSystem
       while (DistributionQueue.Count > 0)
       {
         DistributionQueue.Active = true;
-        var queueValue = DistributionQueue.Dequeue();
-        var eligiblePlayers = GetPlayersEligibleForReceivingDistribution(queueValue);
+        var dequeuedPlayer = DistributionQueue.Dequeue();
+        var eligiblePlayers = GetPlayersEligibleForReceivingDistribution(dequeuedPlayer);
         
         if (eligiblePlayers.Any() && GameTime.GetGameTime() > 60)
         {
@@ -51,9 +51,9 @@ namespace MacroTools.FactionSystem
           DistributeExperience(eligiblePlayers, resourcesToRefund.Experience);
         }
         else
-          queueValue.RemoveResourcesAndUnits();
+          dequeuedPlayer.RemoveResourcesAndUnits();
 
-        queueValue.GetFaction()?.RemoveGoldMines();
+        dequeuedPlayer.GetFaction()?.RemoveGoldMines();
       }
 
       DistributionQueue.Active = false;
