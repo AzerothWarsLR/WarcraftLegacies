@@ -119,7 +119,7 @@ namespace MacroTools.FactionSystem
     /// <param name="playerToDistribute">The player to distribute the units of.</param>
     /// <param name="playersToDistributeTo">Who to distribute the units to.</param>
     /// <returns>Resources to be refunded from units that the process removes.</returns>
-    private static UnitRefund DistributeAndRefundUnits(player playerToDistribute, IReadOnlyList<player?> playersToDistributeTo)
+    private static UnitRefund DistributeAndRefundUnits(player playerToDistribute, IReadOnlyList<player> playersToDistributeTo)
     {
       var playerUnits = CreateGroup()
         .EnumUnitsOfPlayer(playerToDistribute)
@@ -164,7 +164,7 @@ namespace MacroTools.FactionSystem
           continue;
         }
 
-        var newOwner = playerToDistribute?.GetTeam()?.Size > 1
+        var newOwner = playerToDistribute.GetTeam()?.Size > 1
           ? playersToDistributeTo[GetRandomInt(0, playersToDistributeTo.Count - 1)]
           : Player(GetBJPlayerNeutralVictim());
         
