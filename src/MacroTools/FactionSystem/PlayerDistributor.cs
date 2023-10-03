@@ -100,7 +100,7 @@ namespace MacroTools.FactionSystem
       }
     }
 
-    private static void DistributeGoldAndLumber(player playerToDistribute, List<player> playersToDistributeTo, UnitRefund refund)
+    private static void DistributeGoldAndLumber(player playerToDistribute, List<player> playersToDistributeTo, UnitsRefund refund)
     {
       var goldToDistribute = refund.Gold + playerToDistribute.GetGold();
       var lumberToDistribute = refund.Lumber + playerToDistribute.GetLumber();
@@ -121,13 +121,13 @@ namespace MacroTools.FactionSystem
     /// <param name="playerToDistribute">The player to distribute the units of.</param>
     /// <param name="playersToDistributeTo">Who to distribute the units to.</param>
     /// <returns>Resources to be refunded from units that the process removes.</returns>
-    private static UnitRefund DistributeAndRefundUnits(player playerToDistribute, IReadOnlyList<player> playersToDistributeTo)
+    private static UnitsRefund DistributeAndRefundUnits(player playerToDistribute, IReadOnlyList<player> playersToDistributeTo)
     {
       var playerUnits = CreateGroup()
         .EnumUnitsOfPlayer(playerToDistribute)
         .EmptyToList();
 
-      var refund = new UnitRefund();
+      var refund = new UnitsRefund();
       foreach (var unit in playerUnits)
       {
         var loopUnitType = UnitType.GetFromHandle(unit);
@@ -176,7 +176,7 @@ namespace MacroTools.FactionSystem
     }
 
     /// <summary>Resources to be refunded from removing units.</summary>
-    private sealed class UnitRefund
+    private sealed class UnitsRefund
     {
       /// <summary>Any gold that has been refunded.</summary>
       public float Gold { get; set; }
