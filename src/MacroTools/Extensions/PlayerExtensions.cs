@@ -51,15 +51,6 @@ namespace MacroTools.Extensions
     }
 
     /// <summary>
-    /// Replaces the minimap background texture with the specified one.
-    /// </summary>
-    public static void ChangeMinimapTerrainTexture(this player whichPlayer, string texturePath)
-    {
-      if (GetLocalPlayer() == whichPlayer)
-        BlzChangeMinimapTerrainTex(texturePath);
-    }
-
-    /// <summary>
     /// Applies a particular camera field to the player's view.
     /// </summary>
     public static void ApplyCameraField(this player whichPlayer, camerafield whichField, float value, float duration)
@@ -116,12 +107,6 @@ namespace MacroTools.Extensions
     /// <param name="objectId">The unit type ID or research ID we want to know about.</param>
     public static int GetObjectLimit(this player player, int objectId) =>
       PlayerData.ByHandle(player).GetObjectLimit(objectId);
-
-    /// <summary>
-    /// Returns the number of times a player has researched the specified object.
-    /// </summary>
-    public static int GetObjectLevel(this player player, int objectId) =>
-      PlayerData.ByHandle(player).GetObjectLevel(objectId);
 
     /// <summary>
     /// Returns the number of <see cref="ControlPoint"/>s a player controls.
