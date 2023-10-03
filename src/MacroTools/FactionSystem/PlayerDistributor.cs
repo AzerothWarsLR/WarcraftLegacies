@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
@@ -24,34 +25,39 @@ namespace MacroTools.FactionSystem
     /// <summary>
     /// Attempts to distribute the <see cref="Faction"/>'s units, hero experience, and resources to their allies.
     /// </summary>
-    public static void DistributeAll(player playerToDistribute)
+    public static void DistributeAll(player player)
     {
-      playerToDistribute.GetTeam()?.PlayersToDistribute.Enqueue(playerToDistribute);
-      while (playerToDistribute?.GetTeam()?.PlayersToDistribute.Count > 0 && !(bool)playerToDistribute?.GetTeam()?.ProcessingDistributeQueue)
+      var playerTeam = player.GetTeam();
+      if (playerTeam == null)
+        throw new InvalidOperationException($"Cannot distribute units and resources for {GetPlayerName(player)} because they have no team.");
+      
+      playerTeam.PlayersToDistribute.Enqueue(player);
+      while (playerTeam.PlayersToDistribute.Count > 0 && playerTeam.ProcessingDistributeQueue)
       {
-        playerToDistribute.GetTeam()!.ProcessingDistributeQueue = true;
-        var queueValue = playerToDistribute.GetTeam()?.PlayersToDistribute.Dequeue();
-        var eligiblePlayers = queueValue?
+        playerTeam.ProcessingDistributeQueue = true;
+        var queueValue = playerTeam.PlayersToDistribute.Dequeue();
+        var eligiblePlayers = queueValue
           .GetTeam()?
           .GetAllFactions()
           .Where(x => x.ScoreStatus == ScoreStatus.Undefeated && x.Player != queueValue)
           .Select(x => x.Player)
           .ToList();
+        
         if (eligiblePlayers != null && eligiblePlayers.Any() && GameTime.GetGameTime() > 60)
         {
-          var resourcesToRefund = DistributeAndRefundUnits(playerToDistribute, eligiblePlayers);
-          DistributeGoldAndLumber(playerToDistribute, eligiblePlayers, resourcesToRefund);
+          var resourcesToRefund = DistributeAndRefundUnits(player, eligiblePlayers);
+          DistributeGoldAndLumber(player, eligiblePlayers, resourcesToRefund);
           DistributeExperience(eligiblePlayers, resourcesToRefund.Experience);
-          queueValue?.GetFaction()?.RemoveGoldMines();
+          queueValue.GetFaction()?.RemoveGoldMines();
         }
         else
         {
-          queueValue?.GetFaction()?.RemoveGoldMines();
-          queueValue?.GetFaction()?.RemoveResourcesAndUnits();
+          queueValue.GetFaction()?.RemoveGoldMines();
+          queueValue.GetFaction()?.RemoveResourcesAndUnits();
         }
       }
-      if (playerToDistribute != null) 
-        playerToDistribute.GetTeam()!.ProcessingDistributeQueue = false;
+
+      playerTeam.ProcessingDistributeQueue = false;
     }
     
     private static void DistributeExperience(List<player> playersToDistributeTo, int experience)
@@ -62,10 +68,12 @@ namespace MacroTools.FactionSystem
           .EnumUnitsOfPlayer(ally)
           .EmptyToList()
           .FindAll(unit => IsUnitType(unit, UNIT_TYPE_HERO));
-        
+
         foreach (var hero in allyHeroes)
-          AddHeroXP(hero, R2I(experience / (playersToDistributeTo.Count - 1) / allyHeroes.Count * ExperienceTransferMultiplier),
-            true);
+        {
+          var expToAdd = (int)((float)experience / (playersToDistributeTo.Count - 1) / allyHeroes.Count * ExperienceTransferMultiplier);
+          AddHeroXP(hero, expToAdd,true);
+        }
       }
     }
 
