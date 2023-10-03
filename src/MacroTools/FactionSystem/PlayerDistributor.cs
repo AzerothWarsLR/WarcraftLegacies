@@ -44,7 +44,7 @@ namespace MacroTools.FactionSystem
         var dequeuedPlayer = DistributionQueue.Dequeue();
         var eligiblePlayers = GetPlayersEligibleForReceivingDistribution(dequeuedPlayer);
         
-        if (eligiblePlayers.Any() && GameTime.GetGameTime() > 60)
+        if (eligiblePlayers.Any() && GameTime.GetGameTime() > GameTime.TurnDuration)
         {
           var resourcesToRefund = DistributeAndRefundUnits(player, eligiblePlayers);
           DistributeGoldAndLumber(player, eligiblePlayers, resourcesToRefund);

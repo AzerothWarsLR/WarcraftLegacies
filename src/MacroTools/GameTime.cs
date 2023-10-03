@@ -7,7 +7,7 @@ namespace MacroTools
   /// <summary>Counts the elapsed game time, displayed in number of turns passed.</summary>
   public static class GameTime
   {
-    private const float TurnDuration = 60;
+    public const float TurnDuration = 60;
 
     /// <summary>
     /// How long after game start to actually show the timer.
