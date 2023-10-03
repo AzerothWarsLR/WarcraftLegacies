@@ -523,6 +523,50 @@ namespace MacroTools.FactionSystem
     /// <returns></returns>
     public List<QuestData> GetAllQuests() => _questsByName.Values.ToList();
 
+    /// <summary>
+    /// Attempts to distribute the <see cref="Faction"/>'s units, hero experience, and resources to their allies.
+    /// </summary>
+    public void DistributeAll()
+    {
+      Player?.GetTeam()?.PlayersToDistribute.Enqueue(Player);
+      while (Player?.GetTeam()?.PlayersToDistribute.Count > 0 && !(bool)Player?.GetTeam()?.PrcessingDistributeQueue)
+      {
+        if (Player != null) Player.GetTeam()!.PrcessingDistributeQueue = true;
+        var queueValue = Player?.GetTeam()?.PlayersToDistribute.Dequeue();
+        var eligiblePlayers = queueValue?
+          .GetTeam()?
+          .GetAllFactions()
+          .Where(x => x.ScoreStatus == ScoreStatus.Undefeated && x.Player != queueValue)
+          .Select(x => x.Player)
+          .ToList();
+        if (eligiblePlayers != null && eligiblePlayers.Any() && GameTime.GetGameTime() > 60)
+        {
+          queueValue?.GetFaction()?.DistributeUnits(eligiblePlayers);
+          queueValue?.GetFaction()?.DistributeResources(eligiblePlayers);
+          queueValue?.GetFaction()?.DistributeExperience(eligiblePlayers);
+          queueValue?.GetFaction()?.RemoveGoldMines();
+        }
+        else
+        {
+          queueValue?.GetFaction()?.RemoveGoldMines();
+          queueValue?.GetFaction()?.RemoveResourcesAndUnits();
+        }
+      }
+      if (Player != null) Player.GetTeam()!.PrcessingDistributeQueue = false;
+      LeftGame?.Invoke(this, this);
+    }
+
+    /// <summary>
+    /// Removes all gold mines assigned to the faction
+    /// </summary>
+    public void RemoveGoldMines()
+    {
+      foreach (var unit in _goldMines) 
+        KillUnit(unit);
+      
+      _goldMines.Clear();
+    }
+    
     private void ApplyPowers()
     {
       if (Player == null) return;
@@ -676,50 +720,6 @@ namespace MacroTools.FactionSystem
         
         unit.SetOwner(newOwner, false);
       }
-    }
-
-    /// <summary>
-    /// Attempts to distribute the <see cref="Faction"/>'s units, hero experience, and resources to their allies.
-    /// </summary>
-    public void DistributeAll()
-    {
-      Player?.GetTeam()?.PlayersToDistribute.Enqueue(Player);
-      while (Player?.GetTeam()?.PlayersToDistribute.Count > 0 && !(bool)Player?.GetTeam()?.PrcessingDistributeQueue)
-      {
-        if (Player != null) Player.GetTeam()!.PrcessingDistributeQueue = true;
-        var queueValue = Player?.GetTeam()?.PlayersToDistribute.Dequeue();
-        var eligiblePlayers = queueValue?
-          .GetTeam()?
-          .GetAllFactions()
-          .Where(x => x.ScoreStatus == ScoreStatus.Undefeated && x.Player != queueValue)
-          .Select(x => x.Player)
-          .ToList();
-        if (eligiblePlayers != null && eligiblePlayers.Any() && GameTime.GetGameTime() > 60)
-        {
-          queueValue?.GetFaction()?.DistributeUnits(eligiblePlayers);
-          queueValue?.GetFaction()?.DistributeResources(eligiblePlayers);
-          queueValue?.GetFaction()?.DistributeExperience(eligiblePlayers);
-          queueValue?.GetFaction()?.RemoveGoldMines();
-        }
-        else
-        {
-          queueValue?.GetFaction()?.RemoveGoldMines();
-          queueValue?.GetFaction()?.RemoveResourcesAndUnits();
-        }
-      }
-      if (Player != null) Player.GetTeam()!.PrcessingDistributeQueue = false;
-      LeftGame?.Invoke(this, this);
-    }
-
-    /// <summary>
-    /// Removes all gold mines assigned to the faction
-    /// </summary>
-    public void RemoveGoldMines()
-    {
-      foreach (var unit in _goldMines) 
-        KillUnit(unit);
-      
-      _goldMines.Clear();
     }
   }
 }
