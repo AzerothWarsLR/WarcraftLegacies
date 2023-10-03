@@ -22,28 +22,29 @@ namespace MacroTools.FactionSystem
     /// <summary>The gold cost value of a hero.</summary>
     public const int HeroCost = 100;
     
+    private static PlayerDistributionQueue DistributionQueue { get; } = new();
+    
     /// <summary>
     /// Attempts to distribute the <see cref="Faction"/>'s units, hero experience, and resources to their allies.
     /// </summary>
-    public static void DistributeAll(player player)
+    public static void DistributeUnitsAndResources(player player)
     {
       var playerTeam = player.GetTeam();
       if (playerTeam == null)
         throw new InvalidOperationException($"Cannot distribute units and resources for {GetPlayerName(player)} because they have no team.");
       
-      playerTeam.PlayersToDistribute.Enqueue(player);
-      while (playerTeam.PlayersToDistribute.Count > 0 && playerTeam.ProcessingDistributeQueue)
+      DistributionQueue.Enqueue(player);
+
+      if (DistributionQueue.Active)
+        return;
+      
+      while (DistributionQueue.Count > 0)
       {
-        playerTeam.ProcessingDistributeQueue = true;
-        var queueValue = playerTeam.PlayersToDistribute.Dequeue();
-        var eligiblePlayers = queueValue
-          .GetTeam()?
-          .GetAllFactions()
-          .Where(x => x.ScoreStatus == ScoreStatus.Undefeated && x.Player != queueValue)
-          .Select(x => x.Player)
-          .ToList();
+        DistributionQueue.Active = true;
+        var queueValue = DistributionQueue.Dequeue();
+        var eligiblePlayers = GetPlayersEligibleForReceivingDistribution(queueValue);
         
-        if (eligiblePlayers != null && eligiblePlayers.Any() && GameTime.GetGameTime() > 60)
+        if (eligiblePlayers.Any() && GameTime.GetGameTime() > 60)
         {
           var resourcesToRefund = DistributeAndRefundUnits(player, eligiblePlayers);
           DistributeGoldAndLumber(player, eligiblePlayers, resourcesToRefund);
@@ -57,9 +58,29 @@ namespace MacroTools.FactionSystem
         }
       }
 
-      playerTeam.ProcessingDistributeQueue = false;
+      DistributionQueue.Active = false;
     }
-    
+
+    private static List<player> GetPlayersEligibleForReceivingDistribution(player playerBeingDistributed)
+    {
+      var eligiblePlayers = new List<player>();
+      
+      var team = playerBeingDistributed.GetTeam();
+      if (team == null)
+        return eligiblePlayers;
+
+      foreach (var faction in team
+                 .GetAllFactions()
+                 .Where(x => x.ScoreStatus == ScoreStatus.Undefeated && x.Player != playerBeingDistributed))
+      {
+        var factionPlayer = faction.Player;
+        if (factionPlayer != null)
+          eligiblePlayers.Add(factionPlayer);
+      }
+
+      return eligiblePlayers;
+    }
+
     private static void DistributeExperience(List<player> playersToDistributeTo, int experience)
     {
       foreach (var ally in playersToDistributeTo)
@@ -77,16 +98,13 @@ namespace MacroTools.FactionSystem
       }
     }
 
-    private static void DistributeGoldAndLumber(player playerToDistribute, List<player?> playersToDistributeTo, UnitRefund refund)
+    private static void DistributeGoldAndLumber(player playerToDistribute, List<player> playersToDistributeTo, UnitRefund refund)
     {
       var goldToDistribute = refund.Gold + playerToDistribute.GetGold();
       var lumberToDistribute = refund.Gold + playerToDistribute.GetLumber();
       
       foreach (var player in playersToDistributeTo)
       {
-        if (player == null) 
-          continue;
-        
         player.AddGold(goldToDistribute / playersToDistributeTo.Count);
         player.AddLumber(lumberToDistribute / playersToDistributeTo.Count);
       }
@@ -166,6 +184,22 @@ namespace MacroTools.FactionSystem
       
       /// <summary>Any hero experience that has been refunded.</summary>
       public int Experience { get; set; }
+    }
+
+    /// <summary>A collection of players to be distributed one after another.
+    /// <para>Avoids several players being distributed simultaneously, which is a major performance concern.</para>
+    /// </summary>
+    private sealed class PlayerDistributionQueue
+    {
+      private readonly Queue<player> _playerQueue = new();
+
+      public int Count => _playerQueue.Count;
+      
+      public bool Active { get; set; }
+
+      public void Enqueue(player player) => _playerQueue.Enqueue(player);
+      
+      public player Dequeue() => _playerQueue.Dequeue();
     }
   }
 }

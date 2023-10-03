@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
@@ -15,7 +16,6 @@ namespace MacroTools.FactionSystem
   {
     private readonly List<player> _members = new();
     private readonly List<player> _invitees = new();
-    private readonly Queue<player> _playersToDistribute = new();
 
     public Team(string name)
     {
@@ -50,10 +50,6 @@ namespace MacroTools.FactionSystem
     ///   Music that plays when this <see cref="Team" /> wins the game.
     /// </summary>
     public string? VictoryMusic { get; init; }
-    
-    public Queue<player> PlayersToDistribute => _playersToDistribute;
-
-    public bool ProcessingDistributeQueue { get; set; }
 
     public IEnumerable<Faction> GetAllFactions()
     {
@@ -177,12 +173,9 @@ namespace MacroTools.FactionSystem
     public bool DoesTeamHaveEssentialLegend()
     {
       foreach (var player in _members)
-      {
         if (player.GetFaction()!.HasEssentialLegend)
-        {
           return true;
-        }
-      }
+      
       return false;
     }
   }
