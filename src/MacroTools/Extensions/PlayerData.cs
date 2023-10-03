@@ -341,6 +341,28 @@ namespace MacroTools.Extensions
       }
     }
 
+    public void SetGold(float gold)
+    {
+      var fullGold = (int)gold / 1;
+      SetPlayerState(_player, PLAYER_STATE_RESOURCE_GOLD, fullGold);
+      
+      var remainderGold = gold % 1;
+      _partialGold = remainderGold;
+    }
+
+    public void SetLumber(float lumber)
+    {
+      var fullLumber = (int)lumber / 1;
+      SetPlayerState(_player, PLAYER_STATE_RESOURCE_LUMBER, fullLumber);
+      
+      var remainderLumber = lumber % 1;
+      _partialLumber = remainderLumber;
+    }
+
+    public float GetGold() => GetPlayerState(_player, PLAYER_STATE_RESOURCE_GOLD) + _partialGold;
+
+    public float GetLumber() => GetPlayerState(_player, PLAYER_STATE_RESOURCE_LUMBER) + _partialLumber;
+
     /// <summary>
     ///   Retrieves the <see cref="PlayerData" /> object which contains information about the given <see cref="player" />.
     /// </summary>
@@ -356,9 +378,6 @@ namespace MacroTools.Extensions
     /// <summary>
     ///   Register a <see cref="PlayerData" /> to the Person system.
     /// </summary>
-    private static void Register(PlayerData playerData)
-    {
-      ById.Add(GetPlayerId(playerData._player), playerData);
-    }
+    private static void Register(PlayerData playerData) => ById.Add(GetPlayerId(playerData._player), playerData);
   }
 }

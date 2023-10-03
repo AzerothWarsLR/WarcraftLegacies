@@ -108,79 +108,61 @@ namespace MacroTools.Extensions
     public static int GetObjectLimit(this player player, int objectId) =>
       PlayerData.ByHandle(player).GetObjectLimit(objectId);
 
-    /// <summary>
-    /// Returns the number of <see cref="ControlPoint"/>s a player controls.
-    /// </summary>
+    /// <summary>Returns the number of <see cref="ControlPoint"/>s a player controls.</summary>
     public static int GetControlPointCount(this player player) => PlayerData.ByHandle(player).ControlPoints.Count;
 
-    /// <summary>
-    /// Returns the number of <see cref="ControlPoint"/>s a player controls.
-    /// </summary>
+    /// <summary>Returns the number of <see cref="ControlPoint"/>s a player controls.</summary>
     public static List<ControlPoint> GetControlPoints(this player player) => PlayerData.ByHandle(player).ControlPoints;
 
-    /// <summary>
-    /// Adds an amount of gold to a player.
-    /// </summary>
+    /// <summary>Adds an amount of gold to a player.</summary>
     public static void AddGold(this player player, float gold) => PlayerData.ByHandle(player).AddGold(gold);
 
-    /// <summary>
-    /// Adds an amount of lumber to a player.
-    /// </summary>
+    /// <summary>Adds an amount of lumber to a player.</summary>
     public static void AddLumber(this player player, float lumber) => PlayerData.ByHandle(player).AddLumber(lumber);
 
-    /// <summary>
-    /// Returns the player's <see cref="Team"/>.
-    /// </summary>
+    /// <summary>Sets the player's gold to a specific value.</summary>
+    public static void SetGold(this player player, float gold) => PlayerData.ByHandle(player).SetGold(gold);
+
+    /// <summary>Sets the player's lumber to a specific value.</summary>
+    public static void SetLumber(this player player, float lumber) => PlayerData.ByHandle(player).SetLumber(lumber);
+
+    /// <summary>Returns the player's gold, including any partial gold.</summary>
+    public static float GetGold(this player player) => PlayerData.ByHandle(player).GetGold();
+
+    /// <summary>Returns the player's lumber, including any partial lumber.</summary>
+    public static float GetLumber(this player player) => PlayerData.ByHandle(player).GetLumber();
+
+    /// <summary>Returns the player's <see cref="Team"/>.</summary>
     public static Team? GetTeam(this player player) => PlayerData.ByHandle(player).Team;
 
-    /// <summary>
-    /// Sets the player's <see cref="Team"/>.
-    /// </summary>
+    /// <summary>Sets the player's <see cref="Team"/>.</summary>
     public static void SetTeam(this player player, Team whichTeam) => PlayerData.ByHandle(player).Team = whichTeam;
 
-    /// <summary>
-    /// Returns the player's <see cref="Faction"/>.
-    /// </summary>
+    /// <summary>Returns the player's <see cref="Faction"/>.</summary>
     public static Faction? GetFaction(this player player) => PlayerData.ByHandle(player).Faction;
 
-    /// <summary>
-    /// Sets the player's <see cref="Faction"/>.
-    /// </summary>
+    /// <summary>Sets the player's <see cref="Faction"/>.</summary>
     public static void SetFaction(this player player, Faction faction) => PlayerData.ByHandle(player).Faction = faction;
 
-    /// <summary>
-    /// Returns the player's gold income, including any bonuses.
-    /// </summary>
+    /// <summary>Returns the player's gold income, including any bonuses.</summary>
     public static float GetTotalIncome(this player player) => PlayerData.ByHandle(player).TotalIncome;
 
-    /// <summary>
-    /// Returns the player's bonus gold income.
-    /// </summary>
+    /// <summary>Returns the player's bonus gold income.</summary>
     public static float GetBonusIncome(this player player) => PlayerData.ByHandle(player).BonusIncome;
 
-    /// <summary>
-    /// Returns the player's gold income, without any bonuses.
-    /// </summary>
+    /// <summary>Returns the player's gold income, without any bonuses.</summary>
     public static float GetBaseIncome(this player player) => PlayerData.ByHandle(player).BaseIncome;
 
-    /// <summary>
-    /// Returns the player's lumber income.
-    /// </summary>
+    /// <summary>Returns the player's lumber income.</summary>
     public static float GetLumberIncome(this player player) => PlayerData.ByHandle(player).LumberIncome;
 
-    /// <summary>
-    /// Modifies the player's bonus income.
-    /// </summary>
+    /// <summary>Modifies the player's bonus income.</summary>
     public static void AddBonusIncome(this player player, float value) =>
       PlayerData.ByHandle(player).BonusIncome += value;
 
-    /// <summary>
-    /// Modifies the player's lumber income.
-    /// </summary>
-    public static void AddLumberIncome(this player player, float value)
-    {
+    /// <summary>Modifies the player's lumber income.</summary>
+    public static void AddLumberIncome(this player player, float value) =>
       PlayerData.ByHandle(player).LumberIncome += value;
-    }
 
     /// <summary>
     /// Rescues all <paramref name="units"/> for <paramref name="newOwningPlayer"/>.

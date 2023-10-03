@@ -25,21 +25,6 @@ namespace MacroTools.FactionSystem
     public const int UNLIMITED = 200;
 
     /// <summary>
-    ///   The gold cost value of a hero.
-    /// </summary>
-    public const int HeroCost = 100;
-
-    /// <summary>
-    ///   How much gold and lumber is refunded from units that get refunded when a player leaves.
-    /// </summary>
-    private const float RefundMultiplier = 1;
-
-    /// <summary>
-    ///   How much experience is transferred from heroes that leave the game.
-    /// </summary>
-    private const float ExperienceTransferMultiplier = 1;
-
-    /// <summary>
     ///   The amount of food <see cref="Faction" />s can have by default.
     /// </summary>
     private const int FoodMaximumDefault = 150;
@@ -57,7 +42,6 @@ namespace MacroTools.FactionSystem
     private string _name;
     private player? _player;
     private readonly int _undefeatedResearch;
-    private int _storedHeroExperience;
 
     /// <summary>
     ///   Fired when the <see cref="Faction" /> gains a <see cref="Power" />.
@@ -276,11 +260,6 @@ namespace MacroTools.FactionSystem
     }
 
     /// <summary>
-    ///   Fires when the <see cref="Faction" /> joins a new <see cref="Team" />.
-    /// </summary>
-    public event EventHandler<Faction>? JoinedTeam;
-
-    /// <summary>
     ///   Fires when the <see cref="Faction" /> changes its name.
     /// </summary>
     public event EventHandler<FactionNameChangeEventArgs>? NameChanged;
@@ -314,7 +293,7 @@ namespace MacroTools.FactionSystem
           Rectangle.WorldBounds.Rect, false, false));
         RemovePlayer(Player, PLAYER_GAME_RESULT_DEFEAT);
         SetPlayerState(Player, PLAYER_STATE_OBSERVER, 1);
-        DistributeAll();
+        PlayerDistributor.DistributeAll(Player);
       }
 
       ScoreStatus = ScoreStatus.Defeated;
@@ -524,39 +503,6 @@ namespace MacroTools.FactionSystem
     public List<QuestData> GetAllQuests() => _questsByName.Values.ToList();
 
     /// <summary>
-    /// Attempts to distribute the <see cref="Faction"/>'s units, hero experience, and resources to their allies.
-    /// </summary>
-    public void DistributeAll()
-    {
-      Player?.GetTeam()?.PlayersToDistribute.Enqueue(Player);
-      while (Player?.GetTeam()?.PlayersToDistribute.Count > 0 && !(bool)Player?.GetTeam()?.PrcessingDistributeQueue)
-      {
-        if (Player != null) Player.GetTeam()!.PrcessingDistributeQueue = true;
-        var queueValue = Player?.GetTeam()?.PlayersToDistribute.Dequeue();
-        var eligiblePlayers = queueValue?
-          .GetTeam()?
-          .GetAllFactions()
-          .Where(x => x.ScoreStatus == ScoreStatus.Undefeated && x.Player != queueValue)
-          .Select(x => x.Player)
-          .ToList();
-        if (eligiblePlayers != null && eligiblePlayers.Any() && GameTime.GetGameTime() > 60)
-        {
-          queueValue?.GetFaction()?.DistributeUnits(eligiblePlayers);
-          queueValue?.GetFaction()?.DistributeResources(eligiblePlayers);
-          queueValue?.GetFaction()?.DistributeExperience(eligiblePlayers);
-          queueValue?.GetFaction()?.RemoveGoldMines();
-        }
-        else
-        {
-          queueValue?.GetFaction()?.RemoveGoldMines();
-          queueValue?.GetFaction()?.RemoveResourcesAndUnits();
-        }
-      }
-      if (Player != null) Player.GetTeam()!.PrcessingDistributeQueue = false;
-      LeftGame?.Invoke(this, this);
-    }
-
-    /// <summary>
     /// Removes all gold mines assigned to the faction
     /// </summary>
     public void RemoveGoldMines()
@@ -641,84 +587,6 @@ namespace MacroTools.FactionSystem
       catch (Exception ex)
       {
         Logger.LogError($"{nameof(Faction)} failed to execute {nameof(OnQuestProgressChanged)}: {ex.Message}");
-      }
-    }
-
-    private void DistributeExperience(List<player?> playersToDistributeTo)
-    {
-      if (Player?.GetTeam() == null) return;
-      foreach (var ally in playersToDistributeTo)
-      {
-        var allyHeroes = CreateGroup().EnumUnitsOfPlayer(ally).EmptyToList()
-          .FindAll(unit => IsUnitType(unit, UNIT_TYPE_HERO));
-        foreach (var hero in allyHeroes)
-          AddHeroXP(hero, R2I(_storedHeroExperience / (Player.GetTeam()!.Size - 1) / allyHeroes.Count * ExperienceTransferMultiplier),
-            true);
-      }
-
-      _storedHeroExperience = 0;
-    }
-
-    private void DistributeResources(List<player?> playersToDistributeTo)
-    {
-      foreach (var player in playersToDistributeTo)
-      {
-        if (player == null) continue;
-        player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, (int)(Gold / playersToDistributeTo.Count));
-        player.AdjustPlayerState(PLAYER_STATE_RESOURCE_LUMBER, (int)(Lumber / playersToDistributeTo.Count));
-      }
-
-      Gold = 0;
-      Lumber = 0;
-    }
-
-    private void DistributeUnits(IReadOnlyList<player?> playersToDistributeTo)
-    {
-      var playerUnits = CreateGroup().EnumUnitsOfPlayer(Player).EmptyToList();
-
-      foreach (var unit in playerUnits)
-      {
-        var loopUnitType = UnitType.GetFromHandle(unit);
-        if (IsUnitType(unit, UNIT_TYPE_SUMMONED))
-        {
-          unit
-            .Kill()
-            .Remove();
-          continue;
-        }
-
-        if (IsUnitType(unit, UNIT_TYPE_HERO))
-        {
-          Player?.AddGold(HeroCost);
-          _storedHeroExperience += GetHeroXP(unit);
-          if (LegendaryHeroManager.GetFromUnit(unit) != null)
-            _storedHeroExperience -= LegendaryHeroManager.GetFromUnit(unit)!.StartingXp;
-          unit
-            .DropAllItems()
-            .Kill()
-            .Remove();
-          continue;
-        }
-
-        if (!CapitalManager.UnitIsCapital(unit) && !CapitalManager.UnitIsProtector(unit) && !ControlPointManager.Instance.UnitIsControlPoint(unit) && !loopUnitType.NeverDelete)
-        {
-          if (!IsUnitType(unit, UNIT_TYPE_STRUCTURE))
-          {
-            Gold += loopUnitType.GoldCost * RefundMultiplier;
-            Lumber += loopUnitType.LumberCost * RefundMultiplier;
-          }
-          unit
-            .DropAllItems()
-            .Kill()
-            .Remove();
-          continue;
-        }
-
-        var newOwner = Player?.GetTeam()?.Size > 1
-          ? playersToDistributeTo[GetRandomInt(0, playersToDistributeTo.Count - 1)]
-          : Player(GetBJPlayerNeutralVictim());
-        
-        unit.SetOwner(newOwner, false);
       }
     }
   }

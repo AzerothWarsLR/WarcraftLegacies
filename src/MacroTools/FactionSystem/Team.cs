@@ -16,7 +16,7 @@ namespace MacroTools.FactionSystem
     private readonly List<player> _members = new();
     private readonly List<player> _invitees = new();
     private readonly Queue<player> _playersToDistribute = new();
-    private bool _prcessingDistributeQueue;
+    private bool _processingDistributeQueue;
 
     public Team(string name)
     {
@@ -64,10 +64,10 @@ namespace MacroTools.FactionSystem
     
     public Queue<player> PlayersToDistribute => _playersToDistribute;
 
-    public bool PrcessingDistributeQueue
+    public bool ProcessingDistributeQueue
     {
-      get => _prcessingDistributeQueue;
-      set => _prcessingDistributeQueue = value;
+      get => _processingDistributeQueue;
+      set => _processingDistributeQueue = value;
     }
 
     public IEnumerable<Faction> GetAllFactions()
