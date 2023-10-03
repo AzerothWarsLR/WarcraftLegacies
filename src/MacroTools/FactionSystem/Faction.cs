@@ -629,7 +629,6 @@ namespace MacroTools.FactionSystem
 
     private void DistributeUnits(IReadOnlyList<player?> playersToDistributeTo)
     {
-      if (Player?.GetTeam() == null) return;
       var playerUnits = CreateGroup().EnumUnitsOfPlayer(Player).EmptyToList();
 
       foreach (var unit in playerUnits)
@@ -670,10 +669,11 @@ namespace MacroTools.FactionSystem
           continue;
         }
 
-        unit.SetOwner(
-          Player?.GetTeam()?.Size > 1
-            ? playersToDistributeTo[GetRandomInt(0, playersToDistributeTo.Count - 1)]
-            : Player(GetBJPlayerNeutralVictim()), false);
+        var newOwner = Player?.GetTeam()?.Size > 1
+          ? playersToDistributeTo[GetRandomInt(0, playersToDistributeTo.Count - 1)]
+          : Player(GetBJPlayerNeutralVictim());
+        
+        unit.SetOwner(newOwner, false);
       }
     }
 
