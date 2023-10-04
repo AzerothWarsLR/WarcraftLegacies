@@ -1,3 +1,4 @@
+using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 
 namespace MacroTools.ObjectiveSystem.Objectives.QuestBased
@@ -6,11 +7,12 @@ namespace MacroTools.ObjectiveSystem.Objectives.QuestBased
   {
     public ObjectiveCompleteQuest(QuestData target)
     {
-      Description = "Complete the quest " + target.Title;
-      target.ProgressChanged += OnQuestProgressChanged;
+      Description = $"Complete the quest {target.Title}";
     }
 
-    private void OnQuestProgressChanged(object? sender, QuestProgressChangedEventArgs args)
+    internal override void OnAdd(Faction faction) => faction.QuestProgressChanged += OnQuestProgressChanged;
+
+    private void OnQuestProgressChanged(object? sender, FactionQuestProgressChangedEventArgs args)
     {
       Progress = args.Quest.Progress switch
       {
