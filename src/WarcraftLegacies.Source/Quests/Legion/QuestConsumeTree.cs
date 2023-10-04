@@ -34,7 +34,10 @@ namespace WarcraftLegacies.Source.Quests.Legion
     protected override void OnComplete(Faction completingFaction)
     {
       var archimondeUnit = _archimonde.Unit;
-      DruidsSetup.Druids?.Leave();
+      var druidsPlayer = DruidsSetup.Druids?.Player;
+      if (druidsPlayer != null)
+        PlayerDistributor.QueueForDistribution(druidsPlayer);
+      
       BlzSetUnitName(archimondeUnit, "Devourer of Worlds");
       AddSpecialEffectTarget(@"Abilities\Weapons\GreenDragonMissile\GreenDragonMissile.mdl", archimondeUnit,
         "hand, right");
