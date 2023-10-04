@@ -49,6 +49,9 @@ namespace MacroTools.FactionSystem
     /// <summary>Invoked when <see cref="ScoreStatus"/> changes.</summary>
     public event EventHandler<Faction>? ScoreStatusChanged;
 
+    /// <summary>Invoked when one of the <see cref="Faction"/>'s <see cref="QuestData"/>s changes progress.</summary>
+    public event EventHandler? QuestProgressChanged;
+
     static Faction()
     {
       PlayerUnitEvents.Register(ResearchEvent.IsFinished, () =>
@@ -511,6 +514,7 @@ namespace MacroTools.FactionSystem
       try
       {
         args.Quest.ApplyFactionProgress(this, args.Quest.Progress, args.FormerProgress);
+        QuestProgressChanged?.Invoke(this, EventArgs.Empty);
       }
       catch (Exception ex)
       {
