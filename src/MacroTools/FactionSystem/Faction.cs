@@ -41,13 +41,13 @@ namespace MacroTools.FactionSystem
     private readonly int _undefeatedResearch;
 
     /// <summary>Fired when the <see cref="Faction" /> gains a <see cref="Power" />.</summary>
-    public EventHandler<FactionPowerEventArgs>? PowerAdded;
+    public event EventHandler<FactionPowerEventArgs>? PowerAdded;
 
     /// <summary>Fired when the <see cref="Faction" /> loses a <see cref="Power" />.</summary>
-    public EventHandler<FactionPowerEventArgs>? PowerRemoved;
+    public event EventHandler<FactionPowerEventArgs>? PowerRemoved;
 
     /// <summary>Invoked when <see cref="ScoreStatus"/> changes.</summary>
-    public EventHandler<Faction>? ScoreStatusChanged;
+    public event EventHandler<Faction>? ScoreStatusChanged;
 
     static Faction()
     {
