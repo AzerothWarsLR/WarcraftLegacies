@@ -45,7 +45,9 @@ namespace WarcraftLegacies.Source.Quests.Scourge
     protected override void OnComplete(Faction completingFaction)
     {
       var arthas = _arthas.Unit;
-      completingFaction.RemovePowerByName("Eye of the Lich King");
+      if (completingFaction.TryGetPowerByName("Eye of the Lich King", out var eyePower))
+        completingFaction.RemovePower(eyePower);
+
       if (arthas == null || !UnitAlive(arthas))
         return;
 

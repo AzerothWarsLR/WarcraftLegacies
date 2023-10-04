@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
@@ -342,15 +343,12 @@ namespace MacroTools.FactionSystem
     /// <summary>
     ///   Removes a <see cref="Power" /> from this <see cref="Faction" />.
     /// </summary>
-    public void RemovePowerByName(string name)
+    public bool TryGetPowerByName(string name, [MaybeNullWhen(false)] out Power power)
     {
-      var power = _powers.FirstOrDefault(x => x.Name == name);
-      if (power == null)
-        throw new ArgumentException($"Unable to find power with name {name}");
-      _powers.Remove(power);
-      if (Player != null) power.OnRemove(Player);
-      PowerRemoved?.Invoke(this, new FactionPowerEventArgs(this, power));
+      power = _powers.FirstOrDefault(x => x.Name == name);
+      return power != null;
     }
+    
     /// <summary>
     ///   Gets the first <see cref="Power" /> this <see cref="Faction" /> has with the provided type.
     /// </summary>
