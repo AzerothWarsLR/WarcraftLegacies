@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
@@ -21,39 +20,20 @@ namespace MacroTools.FactionSystem
     
     /// <summary>The gold cost value of a hero.</summary>
     public const int HeroCost = 100;
-    
-    private static PlayerDistributionQueue DistributionQueue { get; } = new();
-    
+
     /// <summary>
     /// Attempts to distribute the <see cref="Faction"/>'s units, hero experience, and resources to their allies.
     /// </summary>
     public static void QueueForDistribution(player player)
     {
-      var playerTeam = player.GetTeam();
-      if (playerTeam == null)
-        throw new InvalidOperationException($"Cannot distribute units and resources for {GetPlayerName(player)} because they have no team.");
-      
-      DistributionQueue.Enqueue(player);
+      var eligiblePlayers = GetPlayersEligibleForReceivingDistribution(player);
 
-      if (DistributionQueue.Active)
-        return;
-      
-      DistributionQueue.Active = true;
-      
-      while (DistributionQueue.Count > 0)
-      {
-        var dequeuedPlayer = DistributionQueue.Dequeue();
-        var eligiblePlayers = GetPlayersEligibleForReceivingDistribution(dequeuedPlayer);
+      if (eligiblePlayers.Any() && GameTime.GetGameTime() > GameTime.TurnDuration)
+        DistributePlayer(player, eligiblePlayers);
+      else
+        player.RemoveResourcesAndUnits();
 
-        if (eligiblePlayers.Any() && GameTime.GetGameTime() > GameTime.TurnDuration)
-          DistributePlayer(player, eligiblePlayers);
-        else
-          dequeuedPlayer.RemoveResourcesAndUnits();
-
-        dequeuedPlayer.GetFaction()?.RemoveGoldMines();
-      }
-
-      DistributionQueue.Active = false;
+      player.GetFaction()?.RemoveGoldMines();
     }
 
     private static void DistributePlayer(player player, List<player> eligiblePlayers)
@@ -186,22 +166,6 @@ namespace MacroTools.FactionSystem
       
       /// <summary>Any hero experience that has been refunded.</summary>
       public int Experience { get; set; }
-    }
-
-    /// <summary>A collection of players to be distributed one after another.
-    /// <para>Avoids several players being distributed simultaneously, which is a major performance concern.</para>
-    /// </summary>
-    private sealed class PlayerDistributionQueue
-    {
-      private readonly Queue<player> _playerQueue = new();
-
-      public int Count => _playerQueue.Count;
-      
-      public bool Active { get; set; }
-
-      public void Enqueue(player player) => _playerQueue.Enqueue(player);
-      
-      public player Dequeue() => _playerQueue.Dequeue();
     }
   }
 }
