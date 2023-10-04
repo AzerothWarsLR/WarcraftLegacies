@@ -1,4 +1,5 @@
-﻿using MacroTools.Extensions;
+﻿using System;
+using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.FactionBased;
@@ -47,6 +48,8 @@ namespace WarcraftLegacies.Source.Quests.Scourge
       var arthas = _arthas.Unit;
       if (completingFaction.TryGetPowerByName("Eye of the Lich King", out var eyePower))
         completingFaction.RemovePower(eyePower);
+      else
+        throw new InvalidOperationException($"Expected {completingFaction.Name} to have the Eye of the Lich King Power.");
 
       if (arthas == null || !UnitAlive(arthas))
         return;
