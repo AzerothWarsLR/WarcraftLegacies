@@ -122,18 +122,6 @@ namespace MacroTools.FactionSystem
     /// <summary>Players with this faction will become this color.</summary>
     public playercolor PlayerColor { get; }
 
-    public float Gold
-    {
-      get => I2R(GetPlayerState(Player, PLAYER_STATE_RESOURCE_GOLD));
-      set => SetPlayerState(Player, PLAYER_STATE_RESOURCE_GOLD, R2I(value));
-    }
-
-    public float Lumber
-    {
-      get => I2R(GetPlayerState(Player, PLAYER_STATE_RESOURCE_LUMBER));
-      set => SetPlayerState(Player, PLAYER_STATE_RESOURCE_LUMBER, R2I(value));
-    }
-
     /// <summary>
     ///   The <see cref="Faction" />'s food limit.
     ///   A <see cref="player" /> with this Faction can never exceed this amount of food.
