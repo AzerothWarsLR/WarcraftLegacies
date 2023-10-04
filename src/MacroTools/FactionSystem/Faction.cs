@@ -236,9 +236,6 @@ namespace MacroTools.FactionSystem
     /// <summary>Fires when the <see cref="Faction" /> changes its name.</summary>
     public event EventHandler<FactionNameChangeEventArgs>? NameChanged;
 
-    /// <summary>Fired after the <see cref="Faction"/> leaves the game.</summary>
-    public event EventHandler<Faction>? LeftGame;
-
     /// <summary>Fired when the <see cref="Faction"/>'s has changed.</summary>
     public event EventHandler<Faction>? IconChanged;
 
