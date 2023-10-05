@@ -2,7 +2,7 @@ on:
   release:
     types: [published]
     branches: 
-        - "main"
+      - main
 
 jobs:
   github-releases-to-discord:
