@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
@@ -19,14 +20,10 @@ namespace MacroTools.FactionSystem
   /// </summary>
   public sealed class Faction
   {
-    /// <summary>
-    ///   Signifies unlimited unit production.
-    /// </summary>
+    /// <summary>Signifies unlimited unit production.</summary>
     public const int UNLIMITED = 200;
 
-    /// <summary>
-    ///   The amount of food <see cref="Faction" />s can have by default.
-    /// </summary>
+    /// <summary>The amount of food <see cref="Faction"/>s can have by default.</summary>
     private const int FoodMaximumDefault = 150;
 
     private readonly Dictionary<int, int> _abilityAvailabilities = new();
@@ -43,20 +40,17 @@ namespace MacroTools.FactionSystem
     private player? _player;
     private readonly int _undefeatedResearch;
 
-    /// <summary>
-    ///   Fired when the <see cref="Faction" /> gains a <see cref="Power" />.
-    /// </summary>
-    public EventHandler<FactionPowerEventArgs>? PowerAdded;
+    /// <summary>Fired when the <see cref="Faction" /> gains a <see cref="Power" />.</summary>
+    public event EventHandler<FactionPowerEventArgs>? PowerAdded;
 
-    /// <summary>
-    ///   Fired when the <see cref="Faction" /> loses a <see cref="Power" />.
-    /// </summary>
-    public EventHandler<FactionPowerEventArgs>? PowerRemoved;
+    /// <summary>Fired when the <see cref="Faction" /> loses a <see cref="Power" />.</summary>
+    public event EventHandler<FactionPowerEventArgs>? PowerRemoved;
 
-    /// <summary>
-    /// Invoked when <see cref="ScoreStatus"/> changes.
-    /// </summary>
-    public EventHandler<Faction>? ScoreStatusChanged;
+    /// <summary>Invoked when <see cref="ScoreStatus"/> changes.</summary>
+    public event EventHandler<Faction>? ScoreStatusChanged;
+
+    /// <summary>Invoked when one of the <see cref="Faction"/>'s <see cref="QuestData"/>s changes progress.</summary>
+    public event EventHandler<FactionQuestProgressChangedEventArgs>? QuestProgressChanged;
 
     static Faction()
     {
@@ -91,9 +85,7 @@ namespace MacroTools.FactionSystem
       });
     }
 
-    /// <summary>
-    ///   Displayed to the <see cref="Faction" /> when the game starts.
-    /// </summary>
+    /// <summary>Displayed to the <see cref="Faction" /> when the game starts.</summary>
     public string? IntroText { get; init; }
 
     /// <summary>
@@ -122,18 +114,6 @@ namespace MacroTools.FactionSystem
     /// <summary>Players with this faction will become this color.</summary>
     public playercolor PlayerColor { get; }
 
-    public float Gold
-    {
-      get => I2R(GetPlayerState(Player, PLAYER_STATE_RESOURCE_GOLD));
-      set => SetPlayerState(Player, PLAYER_STATE_RESOURCE_GOLD, R2I(value));
-    }
-
-    public float Lumber
-    {
-      get => I2R(GetPlayerState(Player, PLAYER_STATE_RESOURCE_LUMBER));
-      set => SetPlayerState(Player, PLAYER_STATE_RESOURCE_LUMBER, R2I(value));
-    }
-
     /// <summary>
     ///   The <see cref="Faction" />'s food limit.
     ///   A <see cref="player" /> with this Faction can never exceed this amount of food.
@@ -148,14 +128,10 @@ namespace MacroTools.FactionSystem
       }
     }
 
-    /// <summary>
-    ///   Music that will play for the Faction at the start of the game.
-    /// </summary>
+    /// <summary>Music that will play for the Faction at the start of the game.</summary>
     public string CinematicMusic { get; init; } = "";
 
-    /// <summary>
-    /// Whether or not the <see cref="Faction"/> has been defeated.
-    /// </summary>
+    /// <summary>Whether or not the <see cref="Faction"/> has been defeated.</summary>
     public ScoreStatus ScoreStatus { get; private set; } = ScoreStatus.Undefeated;
 
     public string ColoredName => $"{PrefixCol}{_name}|r";
@@ -232,9 +208,7 @@ namespace MacroTools.FactionSystem
       }
     }
 
-    /// <summary>
-    /// Gets a list of legends that are flagged as essential and alive that the faction currently has
-    /// </summary>
+    /// <summary>Gets a list of legends that are flagged as essential and alive that the faction currently has.</summary>
     private List<Legend> GetEssentialLegends()
     {
       var essentialLegends = new List<Legend>();
@@ -259,24 +233,13 @@ namespace MacroTools.FactionSystem
       FoodMaximum = FoodMaximumDefault;
     }
 
-    /// <summary>
-    ///   Fires when the <see cref="Faction" /> changes its name.
-    /// </summary>
+    /// <summary>Fires when the <see cref="Faction" /> changes its name.</summary>
     public event EventHandler<FactionNameChangeEventArgs>? NameChanged;
 
-    /// <summary>
-    /// Fired after the <see cref="Faction"/> leaves the game.
-    /// </summary>
-    public event EventHandler<Faction>? LeftGame;
-
-    /// <summary>
-    /// Fired when the <see cref="Faction"/>'s has changed.
-    /// </summary>
+    /// <summary>Fired when the <see cref="Faction"/>'s has changed.</summary>
     public event EventHandler<Faction>? IconChanged;
 
-    /// <summary>
-    /// Fired after the <see cref="Faction"/>'s status has changed.
-    /// </summary>
+    /// <summary>Fired after the <see cref="Faction"/>'s status has changed.</summary>
     public event EventHandler<Faction>? StatusChanged;
 
     /// <summary>
@@ -313,9 +276,7 @@ namespace MacroTools.FactionSystem
     /// </summary>
     public void AddGoldMine(unit whichUnit) => _goldMines.Add(whichUnit);
 
-    /// <summary>
-    ///   Adds a <see cref="Power" /> to this <see cref="Faction" />.
-    /// </summary>
+    /// <summary>Adds a <see cref="Power" /> to this <see cref="Faction" />.</summary>
     public void AddPower(Power power)
     {
       _powers.Add(power);
@@ -326,9 +287,7 @@ namespace MacroTools.FactionSystem
       PowerAdded?.Invoke(this, new FactionPowerEventArgs(this, power));
     }
 
-    /// <summary>
-    ///   Removes a <see cref="Power" /> from this <see cref="Faction" />.
-    /// </summary>
+    /// <summary>Removes a <see cref="Power" /> from this <see cref="Faction" />.</summary>
     public void RemovePower(Power power)
     {
       _powers.Remove(power);
@@ -342,18 +301,13 @@ namespace MacroTools.FactionSystem
     /// <summary>
     ///   Removes a <see cref="Power" /> from this <see cref="Faction" />.
     /// </summary>
-    public void RemovePowerByName(string name)
+    public bool TryGetPowerByName(string name, [MaybeNullWhen(false)] out Power power)
     {
-      var power = _powers.FirstOrDefault(x => x.Name == name);
-      if (power == null)
-        throw new ArgumentException($"Unable to find power with name {name}");
-      _powers.Remove(power);
-      if (Player != null) power.OnRemove(Player);
-      PowerRemoved?.Invoke(this, new FactionPowerEventArgs(this, power));
+      power = _powers.FirstOrDefault(x => x.Name == name);
+      return power != null;
     }
-    /// <summary>
-    ///   Gets the first <see cref="Power" /> this <see cref="Faction" /> has with the provided type.
-    /// </summary>
+    
+    /// <summary>Gets the first <see cref="Power" /> this <see cref="Faction" /> has with the provided type.</summary>
     public T? GetPowerByType<T>() where T : Power
     {
       foreach (var power in _powers)
@@ -395,9 +349,7 @@ namespace MacroTools.FactionSystem
 
     public int GetObjectLevel(int obj) => _objectLevels.ContainsKey(obj) ? _objectLevels[obj] : 0;
 
-    /// <summary>
-    /// Sets the current level of a particular research for the <see cref="Faction"/>.
-    /// </summary>
+    /// <summary>Sets the current level of a particular research for the <see cref="Faction"/>.</summary>
     public void SetObjectLevel(int obj, int level)
     {
       _objectLevels[obj] = level;
@@ -451,9 +403,7 @@ namespace MacroTools.FactionSystem
         _objectLimits.Remove(objectId);
     }
 
-    /// <summary>
-    ///   Returns all <see cref="Power" />s this <see cref="Faction" /> has.
-    /// </summary>
+    /// <summary>Returns all <see cref="Power" />s this <see cref="Faction" /> has.</summary>
     public IEnumerable<Power> GetAllPowers()
     {
       foreach (var power in _powers) 
@@ -479,15 +429,10 @@ namespace MacroTools.FactionSystem
       return quest;
     }
 
-    /// <summary>
-    /// Returns all <see cref="QuestData"/>s the <see cref="Faction"/> can complete.
-    /// </summary>
-    /// <returns></returns>
+    /// <summary>Returns all <see cref="QuestData"/>s the <see cref="Faction"/> can complete.</summary>
     public List<QuestData> GetAllQuests() => _questsByName.Values.ToList();
 
-    /// <summary>
-    /// Removes all gold mines assigned to the faction
-    /// </summary>
+    /// <summary>Removes all gold mines assigned to the faction</summary>
     public void RemoveGoldMines()
     {
       foreach (var unit in _goldMines) 
@@ -544,13 +489,13 @@ namespace MacroTools.FactionSystem
     {
       foreach (var quest in _questsByName.Values)
       {
-        if (GetLocalPlayer() == Player) quest.ShowLocal();
+        if (GetLocalPlayer() == Player) 
+          quest.ShowLocal();
 
         quest.ShowSync();
       }
     }
-
-    //Hides all of the Faction)s quests.
+    
     private void HideAllQuests()
     {
       foreach (var quest in _questsByName.Values)
@@ -566,6 +511,7 @@ namespace MacroTools.FactionSystem
       try
       {
         args.Quest.ApplyFactionProgress(this, args.Quest.Progress, args.FormerProgress);
+        QuestProgressChanged?.Invoke(this, new FactionQuestProgressChangedEventArgs(this, args.Quest, args.FormerProgress));
       }
       catch (Exception ex)
       {
