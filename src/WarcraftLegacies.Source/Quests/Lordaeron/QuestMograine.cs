@@ -24,7 +24,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
 
     /// <inheritdoc/>
     protected override string RewardFlavour =>
-      "With the threat of the Scourge and the Plague, Mograine has returned to help Lordaeorn in their dire times.";
+      "With the threat of the Scourge and the Plague, Mograine has returned to help Lordaeron in their dire times.";
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
