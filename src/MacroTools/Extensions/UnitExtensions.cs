@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using MacroTools.ControlPointSystem;
 using MacroTools.LegendSystem;
 using MacroTools.Libraries;
 using WCSharp.Shared.Data;
@@ -837,6 +838,17 @@ namespace MacroTools.Extensions
         whichUnit.DropAllItems();
       
       whichUnit.Kill().Remove();
+    }
+
+    /// <summary>
+    /// Whether or not the unit can be safely removed.
+    /// <para>Control Points, Capitals, and Gates are some examples of units that should not be removed.</para>
+    /// </summary>
+    public static bool IsRemovable(this unit whichUnit)
+    {
+      var unitType = UnitType.GetFromHandle(whichUnit);
+      return !CapitalManager.UnitIsCapital(whichUnit) && !CapitalManager.UnitIsProtector(whichUnit) &&
+             !ControlPointManager.Instance.UnitIsControlPoint(whichUnit) && !unitType.NeverDelete;
     }
   }
 }

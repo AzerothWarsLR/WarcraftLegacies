@@ -341,11 +341,10 @@ namespace MacroTools.Extensions
                  .EnumUnitsOfPlayer(whichPlayer)
                  .EmptyToList())
       {
-        var unitType = UnitType.GetFromHandle(unit);
-        if (unitType.NeverDelete)
-          unit.SetOwner(Player(PLAYER_NEUTRAL_AGGRESSIVE));
-        else
+        if (unit.IsRemovable())
           unit.SafelyRemove();
+        else
+          unit.SetOwner(Player(PLAYER_NEUTRAL_AGGRESSIVE));
       }
     }
   }

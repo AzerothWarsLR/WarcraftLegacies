@@ -127,7 +127,7 @@ namespace MacroTools.FactionSystem
           continue;
         }
 
-        if (!CapitalManager.UnitIsCapital(unit) && !CapitalManager.UnitIsProtector(unit) && !ControlPointManager.Instance.UnitIsControlPoint(unit) && !loopUnitType.NeverDelete)
+        if (unit.IsRemovable())
         {
           if (!IsUnitType(unit, UNIT_TYPE_STRUCTURE))
           {
@@ -145,7 +145,7 @@ namespace MacroTools.FactionSystem
           ? playersToDistributeTo[GetRandomInt(0, playersToDistributeTo.Count - 1)]
           : Player(GetBJPlayerNeutralVictim());
         
-        unit.SetOwner(newOwner, true);
+        unit.SetOwner(newOwner);
       }
       return refund;
     }
