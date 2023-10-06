@@ -14,7 +14,7 @@ namespace WarcraftLegacies.Source.Quests.Legion
     private const int StatGain = 80;
     
     public QuestConsumeTree(LegendaryHero archimonde) : base("Twilight of the Gods",
-      "Long ago, the Night Elves' hubris led them to forge a second Well of Eternity following the destruction of the first. Nordrassil was planted atop it as a means of protection, but this measly act of defiance shall not prevent stop Lord Archimonde from seizing the Well's energies for himself.",
+      "Long ago, the Night Elves' hubris led them to forge a second Well of Eternity following the destruction of the first. Nordrassil was planted atop it as a means of protection, but this measly act of defiance shall not prevent Lord Archimonde from seizing the Well's energies for himself.",
       @"ReplaceableTextures\CommandButtons\BTNGlazeroth.blp")
     {
       _archimonde = archimonde;
