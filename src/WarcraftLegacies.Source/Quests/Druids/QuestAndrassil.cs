@@ -35,7 +35,7 @@ namespace WarcraftLegacies.Source.Quests.Druids
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
-      $"A new capital at Grizzly Hills that can research a powerful upgrade for your {GetObjectName(Constants.UNIT_EDOC_DRUID_OF_THE_CLAW_DRUIDS)}, and you can train the hero Ursoc from the {GetObjectName(Constants.UNIT_EATE_ALTAR_OF_ELDERS_DRUIDS)}. If you're allied to the Druids, {_ursoc.Name}'s starting experience is halved";
+      $"Gain a new capital at Grizzly Hills that can research a powerful upgrade for your {GetObjectName(Constants.UNIT_EDOC_DRUID_OF_THE_CLAW_DRUIDS)}, and learn to train the hero Ursoc from the {GetObjectName(Constants.UNIT_EATE_ALTAR_OF_ELDERS_DRUIDS)}. If you're allied to the Scourge, {_ursoc.Name}'s starting experience is halved";
 
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
