@@ -113,9 +113,7 @@ namespace MacroTools.FactionSystem
         var loopUnitType = UnitType.GetFromHandle(unit);
         if (IsUnitType(unit, UNIT_TYPE_SUMMONED))
         {
-          unit
-            .Kill()
-            .Remove();
+          unit.SafelyRemove();
           continue;
         }
 
@@ -125,10 +123,7 @@ namespace MacroTools.FactionSystem
           refund.Experience += GetHeroXP(unit);
           if (LegendaryHeroManager.GetFromUnit(unit) != null)
             refund.Experience -= LegendaryHeroManager.GetFromUnit(unit)!.StartingXp;
-          unit
-            .DropAllItems()
-            .Kill()
-            .Remove();
+          unit.SafelyRemove();
           continue;
         }
 
