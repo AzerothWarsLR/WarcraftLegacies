@@ -256,7 +256,7 @@ namespace MacroTools.FactionSystem
           Rectangle.WorldBounds.Rect, false, false));
         RemovePlayer(Player, PLAYER_GAME_RESULT_DEFEAT);
         SetPlayerState(Player, PLAYER_STATE_OBSERVER, 1);
-        PlayerDistributor.QueueForDistribution(Player);
+        PlayerDistributor.DistributePlayer(Player);
       }
 
       ScoreStatus = ScoreStatus.Defeated;

@@ -24,7 +24,7 @@ namespace MacroTools.FactionSystem
     /// <summary>
     /// Attempts to distribute the <see cref="Faction"/>'s units, hero experience, and resources to their allies.
     /// </summary>
-    public static void QueueForDistribution(player player)
+    public static void DistributePlayer(player player)
     {
       var eligiblePlayers = GetPlayersEligibleForReceivingDistribution(player);
 
