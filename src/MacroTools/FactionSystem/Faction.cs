@@ -339,7 +339,7 @@ namespace MacroTools.FactionSystem
     public QuestData AddQuest(QuestData questData)
     {
       questData.Add(this);
-      _questsByName.Add(questData.Title, questData);
+      _questsByName.Add(questData.Title.ToLower(), questData);
       if (GetLocalPlayer() == Player)
         questData.ShowLocal();
       questData.ShowSync();
@@ -414,7 +414,7 @@ namespace MacroTools.FactionSystem
     ///   Attempts to retrieve a <see cref="QuestData" /> belonging to this <see cref="Faction" /> with the given title.
     /// </summary>
     public QuestData? GetQuestByTitle(string parameter) =>
-      _questsByName.ContainsKey(parameter) ? _questsByName[parameter] : null;
+      _questsByName.TryGetValue(parameter.ToLower(), out var value) ? value : null;
 
     /// <summary>
     /// Returns the first <see cref="QuestData"/> the <see cref="Faction"/> has with the given <see cref="Type"/>.
