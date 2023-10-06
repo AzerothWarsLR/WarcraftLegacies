@@ -13,7 +13,7 @@ public static class Regions
 	public static Rectangle Andorhal { get; set; } = new Rectangle(11136f, 7104f, 13696f, 8512f);
 	public static Rectangle Andrassil { get; set; } = new Rectangle(4992f, 18400f, 5440f, 18816f);
 	public static Rectangle Arathi_Ships { get; set; } = new Rectangle(17888f, 544f, 18656f, 1408f);
-	public static Rectangle ArchimondeChannel { get; set; } = new Rectangle(-9824f, 10720f, -9632f, 10880f);
+	public static Rectangle ArchimondeChannel { get; set; } = new Rectangle(-10048f, 10752f, -9856f, 10944f);
 	public static Rectangle Area52Unlock { get; set; } = new Rectangle(-96f, -22688f, 1472f, -20608f);
 	public static Rectangle ArthasRandomPoint { get; set; } = new Rectangle(5664f, 3520f, 22304f, 10048f);
 	public static Rectangle ArtifactDummyInstance { get; set; } = new Rectangle(19584f, 23232f, 22688f, 24800f);
