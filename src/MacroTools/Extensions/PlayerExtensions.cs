@@ -342,7 +342,9 @@ namespace MacroTools.Extensions
                  .EmptyToList())
       {
         var unitType = UnitType.GetFromHandle(unit);
-        if (!unitType.NeverDelete)
+        if (unitType.NeverDelete)
+          unit.SetOwner(Player(PLAYER_NEUTRAL_AGGRESSIVE));
+        else
           unit.SafelyRemove();
       }
     }
