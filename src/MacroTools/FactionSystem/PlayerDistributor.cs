@@ -145,7 +145,7 @@ namespace MacroTools.FactionSystem
           ? playersToDistributeTo[GetRandomInt(0, playersToDistributeTo.Count - 1)]
           : Player(GetBJPlayerNeutralVictim());
         
-        unit.SetOwner(newOwner, false);
+        unit.SetOwner(newOwner, true);
       }
       return refund;
     }
