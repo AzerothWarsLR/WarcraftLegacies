@@ -240,7 +240,7 @@ namespace MacroTools.LegendSystem
     private void PermanentlyKill()
     {
       if (Hivemind && OwningPlayer != null)
-        PlayerDistributor.QueueForDistribution(OwningPlayer);
+        PlayerDistributor.DistributePlayer(OwningPlayer);
 
 
       OnPermaDeath();

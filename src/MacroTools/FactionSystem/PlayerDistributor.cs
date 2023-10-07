@@ -24,7 +24,7 @@ namespace MacroTools.FactionSystem
     /// <summary>
     /// Attempts to distribute the <see cref="Faction"/>'s units, hero experience, and resources to their allies.
     /// </summary>
-    public static void QueueForDistribution(player player)
+    public static void DistributePlayer(player player)
     {
       var eligiblePlayers = GetPlayersEligibleForReceivingDistribution(player);
 
@@ -113,9 +113,7 @@ namespace MacroTools.FactionSystem
         var loopUnitType = UnitType.GetFromHandle(unit);
         if (IsUnitType(unit, UNIT_TYPE_SUMMONED))
         {
-          unit
-            .Kill()
-            .Remove();
+          unit.SafelyRemove();
           continue;
         }
 
@@ -125,14 +123,11 @@ namespace MacroTools.FactionSystem
           refund.Experience += GetHeroXP(unit);
           if (LegendaryHeroManager.GetFromUnit(unit) != null)
             refund.Experience -= LegendaryHeroManager.GetFromUnit(unit)!.StartingXp;
-          unit
-            .DropAllItems()
-            .Kill()
-            .Remove();
+          unit.SafelyRemove();
           continue;
         }
 
-        if (!CapitalManager.UnitIsCapital(unit) && !CapitalManager.UnitIsProtector(unit) && !ControlPointManager.Instance.UnitIsControlPoint(unit) && !loopUnitType.NeverDelete)
+        if (unit.IsRemovable())
         {
           if (!IsUnitType(unit, UNIT_TYPE_STRUCTURE))
           {
@@ -150,7 +145,7 @@ namespace MacroTools.FactionSystem
           ? playersToDistributeTo[GetRandomInt(0, playersToDistributeTo.Count - 1)]
           : Player(GetBJPlayerNeutralVictim());
         
-        unit.SetOwner(newOwner, false);
+        unit.SetOwner(newOwner);
       }
       return refund;
     }
