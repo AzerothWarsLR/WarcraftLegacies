@@ -72,16 +72,14 @@ Your mages are the finest in Azeroth, be sure to utilize them alongside your her
       Dalaran.ModObjectLimit(FourCC("h0B6"), Faction.UNLIMITED); //Alliance Boarding
       Dalaran.ModObjectLimit(FourCC("h0AN"), Faction.UNLIMITED); //Alliance Juggernaut
       Dalaran.ModObjectLimit(FourCC("h0B7"), 6); //Alliance Bombard
-
-
+      
       //Demi-heroes
-      Dalaran.ModObjectLimit(FourCC("njks"), 1); //Jailor Kassan
-      Dalaran.ModObjectLimit(FourCC("Hjai"), 1); //jaina
-      Dalaran.ModObjectLimit(FourCC("Hant"), 1); //antonidas
-      Dalaran.ModObjectLimit(FourCC("H09N"), 1); //aegwynn
+      Dalaran.ModObjectLimit(Constants.UNIT_NJKS_JAILOR_KASSAN_DALARAN_DEMI, 1);
+      Dalaran.ModObjectLimit(Constants.UNIT_HJAI_ARCHMAGE_OF_DALARAN_DALARAN, 1);
+      Dalaran.ModObjectLimit(Constants.UNIT_HANT_GRAND_MAGUS_OF_THE_KIRIN_TOR_DALARAN, 1);
+      Dalaran.ModObjectLimit(Constants.UNIT_H09N_MATRIARCH_OF_TIRISFAL_DALARAN, 1);
       Dalaran.ModObjectLimit(Constants.UNIT_HAAH_THE_FALLEN_GUARDIAN_DALARAN, 1);
-
-
+      
       //Upgrades
       Dalaran.ModObjectLimit(FourCC("R01I"), Faction.UNLIMITED); //Arcanist Adept Training
       Dalaran.ModObjectLimit(FourCC("R01V"), Faction.UNLIMITED); //Geomancer Adept Training
