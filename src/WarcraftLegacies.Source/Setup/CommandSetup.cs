@@ -8,11 +8,7 @@ namespace WarcraftLegacies.Source.Setup
   {
     public static void Setup(CommandManager commandManager)
     {
-      InviteCommand.Setup();
-      JoinCommand.Setup();
       ObserverCommand.Setup();
-      UnallyCommand.Setup();
-      UninviteCommand.Setup();
       commandManager.Register(new Limited());
       commandManager.Register(new Clear("clear"));
       commandManager.Register(new Clear("c"));
