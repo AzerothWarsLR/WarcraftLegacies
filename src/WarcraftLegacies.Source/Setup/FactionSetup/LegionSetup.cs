@@ -1,5 +1,4 @@
 ﻿using MacroTools;
-using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -15,7 +14,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
       Legion = new Faction("Legion", PLAYER_COLOR_PEANUT, "|CFFBF8F4F",
         @"ReplaceableTextures\CommandButtons\BTNKiljaedin.blp")
       {
-        UndefeatedResearch = FourCC("R04T"),
+        UndefeatedResearch = Constants.UPGRADE_R04T_LEGION_EXISTS,
         StartingGold = 200,
         StartingLumber = 700,
         FoodMaximum = 200,
@@ -43,7 +42,7 @@ Your primary objective is to summon the great host of the Burning Legion. Invade
       Legion.ModObjectLimit(FourCC("u01N"), Faction.UNLIMITED); //Burning Altar
       Legion.ModObjectLimit(FourCC("u015"), Faction.UNLIMITED); //Unholy Reliquary
       Legion.ModObjectLimit(FourCC("ndmg"), 6); //Demon Gate
-      Legion.ModObjectLimit(FourCC("n04N"), Faction.UNLIMITED); //Infernal Machine Factory
+      Legion.ModObjectLimit(Constants.UNIT_N04N_INFERNAL_SIEGEWORKS_LEGION_SIEGE, Faction.UNLIMITED);
       Legion.ModObjectLimit(FourCC("u006"), 2); //Summoning Circle
       Legion.ModObjectLimit(FourCC("n04Q"), 2); //Nether Pit
       Legion.ModObjectLimit(Constants.UNIT_U00F_DORMANT_SPIRE_LEGION_T1, Faction.UNLIMITED);
@@ -61,7 +60,7 @@ Your primary objective is to summon the great host of the Burning Legion. Invade
       Legion.ModObjectLimit(FourCC("n04O"), 6); //Doom lord
       Legion.ModObjectLimit(FourCC("n04L"), 6); //Infernal Juggernaut
       Legion.ModObjectLimit(FourCC("o04P"), 6); //Nathrezim
-      Legion.ModObjectLimit(FourCC("ninf"), 6); //Infernal
+      Legion.ModObjectLimit(Constants.UNIT_NINF_INFERNAL_LEGION, 6);
       Legion.ModObjectLimit(FourCC("n04H"), Faction.UNLIMITED); //Fel Guard
       Legion.ModObjectLimit(FourCC("n04U"), 4); //Dragon
       Legion.ModObjectLimit(FourCC("n03L"), 4); //Barge
@@ -96,7 +95,6 @@ Your primary objective is to summon the great host of the Burning Legion. Invade
       Legion.ModObjectLimit(Constants.UPGRADE_R04R_FORTIFIED_HULLS_UNIVERSAL_UPGRADE, 1 );
       Legion.ModObjectLimit(Constants.UPGRADE_R03L_IMPROVED_SHADOW_INFUSION_FEL_HORDE, 1);
       
-
       //Heroes
       Legion.ModObjectLimit(FourCC("U00L"), 1); //Anetheron
       Legion.ModObjectLimit(Constants.UNIT_UMAL_THE_CUNNING_LEGION, 1);
