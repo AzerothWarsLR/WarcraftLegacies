@@ -287,9 +287,9 @@ public static class Regions
 	public static Rectangle StranglethornAmbient2 { get; set; } = new Rectangle(11968f, -24544f, 14880f, -18272f);
 	public static Rectangle StranglethornAmbient3 { get; set; } = new Rectangle(8224f, -24768f, 11968f, -19168f);
 	public static Rectangle StranglethornBaseBuild { get; set; } = new Rectangle(5824f, -24704f, 11936f, -14432f);
-	public static Rectangle StratholmeAmbient { get; set; } = new Rectangle(13056f, 11136f, 16288f, 14112f);
+	public static Rectangle StratholmeAmbient { get; set; } = new Rectangle(12608f, 11136f, 16288f, 15136f);
 	public static Rectangle StratholmeShipyard { get; set; } = new Rectangle(13696f, 7232f, 20128f, 11712f);
-	public static Rectangle StratholmeUnlock { get; set; } = new Rectangle(13248f, 11168f, 16224f, 14144f);
+	public static Rectangle StratholmeUnlock { get; set; } = new Rectangle(12576f, 11200f, 16224f, 15136f);
 	public static Rectangle Stromgarde { get; set; } = new Rectangle(12896f, 192f, 15232f, 1632f);
 	public static Rectangle Stromwind_antiship { get; set; } = new Rectangle(7968f, -12768f, 11520f, -9344f);
 	public static Rectangle STV_Ships { get; set; } = new Rectangle(10112f, -20032f, 14048f, -17600f);
@@ -338,7 +338,7 @@ public static class Regions
 	public static Rectangle TwistingNether { get; set; } = new Rectangle(18432f, -26528f, 20480f, -23488f);
 	public static Rectangle TyrHandAmbient { get; set; } = new Rectangle(19008f, 6592f, 22048f, 9952f);
 	public static Rectangle TyrsFall { get; set; } = new Rectangle(5120f, 9056f, 5408f, 9344f);
-	public static Rectangle TyrUnlock { get; set; } = new Rectangle(18912f, 6560f, 22592f, 9696f);
+	public static Rectangle TyrUnlock { get; set; } = new Rectangle(18304f, 6560f, 22592f, 9696f);
 	public static Rectangle UldumAmbiance { get; set; } = new Rectangle(-15712f, -20576f, -11552f, -15232f);
 	public static Rectangle Undercity_Escape { get; set; } = new Rectangle(6048f, 8288f, 6400f, 8672f);
 	public static Rectangle Undercity_Exterior_1 { get; set; } = new Rectangle(9248f, 7808f, 9600f, 8192f);
@@ -367,5 +367,6 @@ public static class Regions
 	public static Rectangle ZulAman_trolls { get; set; } = new Rectangle(20256f, 10176f, 22848f, 17440f);
 	public static Rectangle Zulfarrak { get; set; } = new Rectangle(-12352f, -14272f, -10528f, -12064f);
 	public static Rectangle ZulfarrakAmbient { get; set; } = new Rectangle(-5952f, -17216f, 2944f, -10368f);
+	public static Rectangle Stratholme_Scourge_Base { get; set; } = new Rectangle(10944f, 12128f, 12256f, 13248f);
 
 }
