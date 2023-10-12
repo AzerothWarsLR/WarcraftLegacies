@@ -88,7 +88,6 @@ The Night Elves are aware of your presence and are gathering a mighty host again
       WarsongClan.ModObjectLimit(Constants.UPGRADE_R00D_FOR_THE_HORDE_FROSTWOLF, Faction.UNLIMITED);
       WarsongClan.ModObjectLimit(Constants.UPGRADE_ROVS_ENVENOMED_SPEARS_WARSONG, Faction.UNLIMITED);
       WarsongClan.ModObjectLimit(Constants.UPGRADE_R017_IMPROVED_IGNORE_PAIN_WARSONG, Faction.UNLIMITED);
-      WarsongClan.ModObjectLimit(Constants.UPGRADE_R01H_WIND_RIDERS_WARSONG, Faction.UNLIMITED);
 
 
       WarsongClan.ModObjectLimit(Constants.UPGRADE_R09N_FLIGHT_PATH_WARSONG, 1);

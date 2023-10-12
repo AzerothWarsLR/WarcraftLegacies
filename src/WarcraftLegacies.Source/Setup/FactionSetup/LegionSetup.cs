@@ -90,7 +90,6 @@ Your primary objective is to summon the great host of the Burning Legion. Invade
       Legion.ModObjectLimit(FourCC("R01Y"), Faction.UNLIMITED); //Astral Walk
       Legion.ModObjectLimit(FourCC("R04G"), Faction.UNLIMITED); //Improved Carrion Swarm
       Legion.ModObjectLimit(FourCC("R03Z"), Faction.UNLIMITED); //War Plating
-      Legion.ModObjectLimit(FourCC("R040"), Faction.UNLIMITED); //Flying horrors
       Legion.ModObjectLimit(Constants.UPGRADE_R096_REMATERIALIZATION_LEGION, 1);
       Legion.ModObjectLimit(Constants.UPGRADE_R04R_FORTIFIED_HULLS_UNIVERSAL_UPGRADE, 1 );
       Legion.ModObjectLimit(Constants.UPGRADE_R03L_IMPROVED_SHADOW_INFUSION_FEL_HORDE, 1);
