@@ -24,7 +24,7 @@ namespace MacroTools.FactionSystem
     public const int UNLIMITED = 200;
 
     /// <summary>The amount of food <see cref="Faction"/>s can have by default.</summary>
-    private const int FoodMaximumDefault = 150;
+    private const int FoodMaximumDefault = 200;
 
     private readonly Dictionary<int, int> _abilityAvailabilities = new();
     
