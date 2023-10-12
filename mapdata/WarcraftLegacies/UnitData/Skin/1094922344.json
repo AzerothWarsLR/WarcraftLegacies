@@ -8,7 +8,7 @@
     {
       "Id": 1868786037,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNBE_Lumbermill"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBE_Shop"
     },
     {
       "Id": 1718840949,
@@ -18,7 +18,7 @@
     {
       "Id": 1818520949,
       "Type": 3,
-      "Value": "war3mapImported\\BE_Lumbermill.mdl"
+      "Value": "war3mapImported\\BE_Shop.mdl"
     },
     {
       "Id": 1953458293,
@@ -26,19 +26,14 @@
       "Value": "D"
     },
     {
-      "Id": 1633907573,
-      "Type": 1,
-      "Value": 0.75
-    },
-    {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "Shaper\u0027s Hall"
+      "Value": "Void Pool"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "Build Shaper\u0027s Hall"
+      "Value": "Build Void Pool"
     },
     {
       "Id": 1935832437,
