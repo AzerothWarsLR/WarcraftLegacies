@@ -386,7 +386,7 @@
   },
   {
     "State": 2,
-    "Life": 255,
+    "Life": 100,
     "TypeId": 1953256524,
     "Variation": 6,
     "Position": {
