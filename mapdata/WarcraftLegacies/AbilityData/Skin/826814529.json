@@ -75,7 +75,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Restores 200 hit points to friendly units in a 250 radius."
+      "Value": "Restores 200 hit points to friendly units within a range of 250."
     },
     {
       "Level": 2,
