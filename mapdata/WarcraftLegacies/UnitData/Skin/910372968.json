@@ -8,7 +8,7 @@
     {
       "Id": 1868786037,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNSunfuryAltar.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBE_Altar.blp"
     },
     {
       "Id": 2037408373,
@@ -22,7 +22,7 @@
     {
       "Id": 1818520949,
       "Type": 3,
-      "Value": "war3mapImported\\High Elven Altar.mdl"
+      "Value": "war3mapImported\\BE_Altar.mdl"
     },
     {
       "Id": 1953458293,

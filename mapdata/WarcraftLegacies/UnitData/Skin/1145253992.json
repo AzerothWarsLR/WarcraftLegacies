@@ -8,7 +8,7 @@
     {
       "Id": 1868786037,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNElvenScoutTower.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBE_TowerScout.blp"
     },
     {
       "Id": 1718840949,
@@ -18,7 +18,7 @@
     {
       "Id": 1818520949,
       "Type": 3,
-      "Value": "war3mapImported\\ElvenTowerV1.01.mdl"
+      "Value": "war3mapImported\\BE_Tower.mdl"
     },
     {
       "Id": 1953458293,

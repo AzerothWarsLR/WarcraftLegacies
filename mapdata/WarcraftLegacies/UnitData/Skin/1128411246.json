@@ -6,11 +6,6 @@
   ],
   "Modifications": [
     {
-      "Id": 1868786037,
-      "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNElvenSkyTower.blp"
-    },
-    {
       "Id": 2037408373,
       "Value": 2
     },
@@ -58,6 +53,11 @@
       "Id": 1718840949,
       "Type": 3,
       "Value": "(Quelthalas)"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNElvenSkyTower.blp"
     }
   ]
 }
