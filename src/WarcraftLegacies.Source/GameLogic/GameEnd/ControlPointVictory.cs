@@ -14,12 +14,13 @@ namespace WarcraftLegacies.Source.GameLogic.GameEnd
     /// <summary>
     /// The number of <see cref="ControlPoint"/>s a <see cref="Team"/> must acquire to win the game.
     /// </summary>
-    public static int CpsVictory = 90;
+    public const int CpsVictory = 90;
 
     /// <summary>
     /// The number of <see cref="ControlPoint"/>s a <see cref="Team"/> must acquire before a global warning is given.
     /// </summary>
-    public static int CpsWarning = 80; //How many Control Points to start the warning at
+    public const int CpsWarning = 80;
+
     private const string VictoryColor = "|cff911499";
     private static bool _gameWon;
 
@@ -33,7 +34,9 @@ namespace WarcraftLegacies.Source.GameLogic.GameEnd
     }
     
     private static int GetTeamControlPoints(Team whichTeam) => 
-      whichTeam.GetAllFactions().Where(faction => faction.Player != null).Sum(faction => faction.Player.GetControlPointCount());
+      whichTeam.GetAllFactions()
+        .Where(faction => faction.Player != null)
+        .Sum(faction => faction.Player.GetControlPointCount());
 
     private static void TeamWarning(Team whichTeam, int controlPoints) =>
       DisplayTextToPlayer(GetLocalPlayer(), 0, 0,
