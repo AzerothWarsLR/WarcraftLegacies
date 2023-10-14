@@ -1,4 +1,4 @@
-﻿using MacroTools;
+using MacroTools;
 
 namespace WarcraftLegacies.Source.UnitTypes
 {
@@ -117,6 +117,7 @@ namespace WarcraftLegacies.Source.UnitTypes
       {
         NeverDelete = true
       });
+
     }
     
     private static void SubSetupTrader()
