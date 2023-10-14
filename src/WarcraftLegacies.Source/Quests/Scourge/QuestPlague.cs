@@ -53,7 +53,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
       AddObjective(new ObjectiveEitherOf(
         new ObjectiveResearch(Constants.UPGRADE_R06I_PLAGUE_OF_UNDEATH_SCOURGE, FourCC("u000")),
         new ObjectiveTime(660)));
-      AddObjective(new ObjectiveTime(480));
+      AddObjective(new ObjectiveTime(420));
       Global = true;
       Required = true;
       ResearchId = Constants.UPGRADE_R009_QUEST_COMPLETED_PLAGUE_OF_UNDEATH;

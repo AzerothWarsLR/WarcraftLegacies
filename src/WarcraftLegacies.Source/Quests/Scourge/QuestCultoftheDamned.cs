@@ -15,7 +15,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
       "The Kingdom of Lordaeron must be eliminated to pave the way for the Legion's arrival.",
       @"ReplaceableTextures\CommandButtons\BTNBaronRivendare.blp")
     {
-      AddObjective(new ObjectiveTime(400));
+      AddObjective(new ObjectiveTime(420));
       ResearchId = Constants.UPGRADE_R01H_QUEST_COMPLETED_CULT_OF_THE_DAMNED;
     }
 
