@@ -71,12 +71,14 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
         unit.SetOwner(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
+    /// <inheritdoc />
     protected override void OnFail(Faction completingFaction)
     {
-      if (completingFaction.Player != null)
-        completingFaction.Player.RescueGroup(_rescueUnits);
-      else
-        Player(bj_PLAYER_NEUTRAL_VICTIM).RescueGroup(_rescueUnits);
+      var rescuer = completingFaction.ScoreStatus == ScoreStatus.Defeated
+        ? Player(PLAYER_NEUTRAL_AGGRESSIVE)
+        : completingFaction.Player;
+
+      rescuer.RescueGroup(_rescueUnits);
     }
 
     /// <inheritdoc/>
