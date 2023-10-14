@@ -3,6 +3,7 @@ using MacroTools.PassiveAbilitySystem;
 using MacroTools.Spells;
 using MacroTools.SpellSystem;
 using WarcraftLegacies.Source.Mechanics.Scourge;
+using WarcraftLegacies.Source.Spells;
 
 namespace WarcraftLegacies.Source.Setup.Spells
 {
@@ -38,15 +39,26 @@ namespace WarcraftLegacies.Source.Setup.Spells
       };
       SpellSystem.Register(massUnholyFrenzy);
 
-      var massFrostArmour2 = new MassAnySpell(Constants.ABILITY_A13R_MASS_FROST_ARMOR_SCOURGE)
+      var massFrostArmor = new MassAnySpell(Constants.ABILITY_A13R_MASS_FROST_ARMOR_KEL_THUZAD)
       {
-        DummyAbilityId = Constants.ABILITY_A13S_MASS_FROST_ARMOUR_SCOURGE_DUMMY,
+        DummyAbilityId = Constants.ABILITY_A13S_MASS_FROST_ARMOUR_KEL_THUZAD_DUMMY,
         DummyAbilityOrderString = "frostarmor",
         Radius = 200,
         CastFilter = CastFilters.IsTargetOrganicAndAlive,
         TargetType = SpellTargetType.Point
       };
-      SpellSystem.Register(massFrostArmour2);
+      SpellSystem.Register(massFrostArmor);
+
+      var rendSoul = new RendSoul(Constants.ABILITY_ZB01_REND_SOUL_KEL_THUZAD_LICH)
+      {
+        HitPointsPerTargetMaximumHitPoints = 0.25f,
+        ManaPointsPerTargetMaximumHitPoints = 0.35f,
+        UnitTypeSummoned = Constants.UNIT_N009_REVENANT_SCOURGE,
+        EffectTarget = @"Abilities\Spells\Undead\DarkRitual\DarkRitualTarget.mdl",
+        EffectCaster = @"Abilities\Spells\Undead\DarkRitual\DarkRitualCaster.mdl",
+        Duration = 45
+      };
+      SpellSystem.Register(rendSoul);
       
       PassiveAbilityManager.Register(new RemoveOnDeath(Constants.UNIT_N094_ICECROWN_OBELISK_RED)
       {

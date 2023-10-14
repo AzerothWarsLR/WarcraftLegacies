@@ -1,0 +1,15 @@
+{
+  "Left": 4672,
+  "Bottom": 8384,
+  "Right": 6080,
+  "Top": 10048,
+  "Name": "DeathknellUnlock",
+  "CreationNumber": 91,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}
