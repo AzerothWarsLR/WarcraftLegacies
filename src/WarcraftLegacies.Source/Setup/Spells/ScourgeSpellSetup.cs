@@ -38,15 +38,15 @@ namespace WarcraftLegacies.Source.Setup.Spells
       };
       SpellSystem.Register(massUnholyFrenzy);
 
-      var massFrostArmour2 = new MassAnySpell(Constants.ABILITY_A13R_MASS_FROST_ARMOR_SCOURGE)
+      var massFrostArmor = new MassAnySpell(Constants.ABILITY_A13R_MASS_FROST_ARMOR_KEL_THUZAD)
       {
-        DummyAbilityId = Constants.ABILITY_A13S_MASS_FROST_ARMOUR_SCOURGE_DUMMY,
+        DummyAbilityId = Constants.ABILITY_A13S_MASS_FROST_ARMOUR_KEL_THUZAD_DUMMY,
         DummyAbilityOrderString = "frostarmor",
         Radius = 200,
         CastFilter = CastFilters.IsTargetOrganicAndAlive,
         TargetType = SpellTargetType.Point
       };
-      SpellSystem.Register(massFrostArmour2);
+      SpellSystem.Register(massFrostArmor);
       
       PassiveAbilityManager.Register(new RemoveOnDeath(Constants.UNIT_N094_ICECROWN_OBELISK_RED)
       {
