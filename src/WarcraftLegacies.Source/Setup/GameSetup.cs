@@ -1,6 +1,7 @@
 ﻿using MacroTools;
 using MacroTools.CommandSystem;
 using MacroTools.ControlPointSystem;
+using MacroTools.GameModes;
 using MacroTools.Mechanics;
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.Save;
@@ -8,6 +9,7 @@ using MacroTools.UserInterface;
 using WarcraftLegacies.Source.ArtifactBehaviour;
 using WarcraftLegacies.Source.GameLogic;
 using WarcraftLegacies.Source.GameLogic.GameEnd;
+using WarcraftLegacies.Source.GameModes;
 using WarcraftLegacies.Source.Mechanics.Druids;
 using WarcraftLegacies.Source.Mechanics.Frostwolf;
 using WarcraftLegacies.Source.Mechanics.Scourge;
@@ -69,8 +71,17 @@ namespace WarcraftLegacies.Source.Setup
       DestructibleSetup.Setup(preplacedUnitSystem);
       ResearchSetup.Setup(preplacedUnitSystem);
       PatronSystem.Setup(preplacedUnitSystem);
-      OpenAllianceVote.Setup();
-      AugmentSetup.Setup();
+      var gameModeManager =new GameModeManager(new IGameMode[]
+      {
+        new ClosedAlliance(),
+        new OpenAlliance(),
+        new GreatWar()
+      })
+      {
+        TimeToDisplay = 49,
+        VoteLength = 10
+      };
+      gameModeManager.Setup();
       RockSetup.Setup();
       TurnResearchSetup.Setup();
       UnitTypeConfig.Setup();
@@ -116,11 +127,11 @@ namespace WarcraftLegacies.Source.Setup
         ControlLevelSettings = new ControlLevelSettings
         {
           DefaultDefenderUnitTypeId = Constants.UNIT_H03W_CONTROL_POINT_DEFENDER_LORDAERON,
-          DamageBase = 18,
+          DamageBase = 8,
           DamagePerControlLevel = 1,
           ArmorPerControlLevel = 1,
           HitPointsPerControlLevel = 70,
-          ControlLevelMaximum = 20
+          ControlLevelMaximum = 30
         }
       };
     }

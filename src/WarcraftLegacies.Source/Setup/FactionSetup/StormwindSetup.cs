@@ -19,7 +19,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
         StartingGold = 200,
         StartingLumber = 700,
         ControlPointDefenderUnitTypeId = Constants.UNIT_H05X_CONTROL_POINT_DEFENDER_STORMWIND,
-        IntroText = @"You are playing as the steadfast |cff005800Kingdom of Stormwind|r.
+        IntroText = @"You are playing as the steadfast |c000042FFKingdom of Stormwind|r.
 
 You begin in Westfall, separated from the rest of the kingdom. Reunite your lands by liberating Darkshire, Lakeshire and finally Stormwind City. 
 
@@ -108,7 +108,6 @@ Make sure to communicate with your Dwarven and Kul'tiran allies, as they will be
       Stormwind.ModObjectLimit(FourCC("R03T"), Faction.UNLIMITED); //Electric Strike Ritual
       Stormwind.ModObjectLimit(FourCC("R03U"), Faction.UNLIMITED); //Solar Flare Ritual
       Stormwind.ModObjectLimit(FourCC("R03X"), Faction.UNLIMITED); //Conjurers
-      Stormwind.ModObjectLimit(Constants.UPGRADE_R0A3_GUNSHIPS_STORMWIND, Faction.UNLIMITED);
 
       Stormwind.ModAbilityAvailability(Constants.ABILITY_A0GD_SUMMON_GARRISON_STORMWIND, 1);
       Stormwind.ModAbilityAvailability(Constants.ABILITY_A0GA_SUMMON_GARRISON_LORDAERON, -1);

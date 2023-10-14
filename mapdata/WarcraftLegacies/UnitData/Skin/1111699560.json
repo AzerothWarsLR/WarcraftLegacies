@@ -42,7 +42,7 @@
     {
       "Id": 1818520949,
       "Type": 3,
-      "Value": "war3mapImported\\Lyceum Arcana 64.mdl"
+      "Value": "war3mapImported\\BE_Sanctum.mdl"
     },
     {
       "Id": 1835101813,
@@ -57,7 +57,7 @@
     {
       "Id": 1868786037,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNLyceum.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBE_Sanctum.blp"
     }
   ]
 }

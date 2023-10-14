@@ -14,11 +14,10 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
     {
       var dalaran = DalaranSetup.Dalaran;
 
-      QuestNewGuardian newGuardian = new(artifactSetup.BookOfMedivh, allLegendSetup.Dalaran.Jaina, allLegendSetup.Dalaran.Dalaran
-        );
-      QuestAegwynn aegwynn = new(allLegendSetup.Dalaran.Jaina, allLegendSetup.Dalaran.Antonidas
-        );
-      QuestTheNexus theNexus = new(allLegendSetup.Dalaran.Jaina, allLegendSetup.Scourge.TheFrozenThrone, allLegendSetup.Neutral.TheNexus, allLegendSetup.Dalaran.Dalaran);
+      QuestNewGuardian newGuardian = new(artifactSetup.BookOfMedivh, allLegendSetup.Dalaran.Jaina,
+        allLegendSetup.Dalaran.Dalaran);
+      QuestAegwynn aegwynn = new(allLegendSetup.Dalaran.Jaina, allLegendSetup.Dalaran.Antonidas);
+      QuestTheNexus theNexus = new(allLegendSetup.Dalaran, allLegendSetup.Scourge.TheFrozenThrone, allLegendSetup.Neutral.TheNexus);
       QuestCrystalGolem crystalGolem = new(allLegendSetup.Neutral.DraktharonKeep);
       QuestFallenGuardian fallenGuardian = new(allLegendSetup.Neutral.Karazhan);
 
@@ -27,7 +26,6 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       aegwynn.AddObjective(new ObjectiveDontCompleteQuest(theNexus));
 
       theNexus.AddObjective(new ObjectiveDontCompleteQuest(newGuardian));
-      theNexus.AddObjective(new ObjectiveDontCompleteQuest(aegwynn));
 
       var questSouthshore = dalaran.AddQuest(new QuestSouthshore(Regions.SouthshoreUnlock,
         preplacedUnitSystem.GetUnit(FourCC("nmrm"), Regions.SouthshoreUnlock.Center)));

@@ -48,11 +48,15 @@
     {
       "Id": 1936028277,
       "Type": 3,
-      "Value": "R026,Ruwb,Rugf,R01D"
+      "Value": "Ruwb,Rugf,R01D"
     },
     {
       "Id": 1836412021,
       "Value": 25
+    },
+    {
+      "Id": 1769169525,
+      "Value": 4
     }
   ]
 }

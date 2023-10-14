@@ -19,18 +19,18 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
         UndefeatedResearch = FourCC("R05K"),
         StartingGold = 200,
         StartingLumber = 700,
-        FoodMaximum = 200,
+        FoodMaximum = 250,
         CinematicMusic = "ArthasTheme",
         ControlPointDefenderUnitTypeId = Constants.UNIT_U028_CONTROL_POINT_DEFENDER_SCOURGE,
         IntroText = @"You are playing as the the horrific Undead Scourge.
 
-You begin in Northrend, a vast and isolated land, perfect to raise an army of undying warriors to destroy the living.
+You begin in Northrend, a vast and isolated land; perfect to raise an army of undying warriors to destroy the living.
 
-The local Nerubians have declared war on you, destroy their decrepit holdings and kill their Queen to secure the continent.
+The local Nerubians have declared war on you. Destroy their decrepit holdings and kill their Queen to secure the continent.
 
-Coordinate with the Burning Legion and make use of the Plague of Undeath to sweep Lordaeron away.
+Coordinate with the Burning Legion and use the Plague of Undeath to sweep Lordaeron away.
 
-When Plague hits Lordaeron, a great portal will be opened between Dragonblight and the Scholomance, The Black Gate!"
+When the Plague hits Lordaeron, a great portal will be opened between Dragonblight and Scholomance."
       };
 
       //Buildings
@@ -105,9 +105,6 @@ When Plague hits Lordaeron, a great portal will be opened between Dragonblight a
       Scourge.ModObjectLimit(FourCC("R06N"), Faction.UNLIMITED); //Improved Orb of Annihilation
       Scourge.ModObjectLimit(FourCC("Rusl"), Faction.UNLIMITED); //Skeletal Mastery
       Scourge.ModObjectLimit(FourCC("Rusm"), Faction.UNLIMITED); //Skeletal Longevity
-      Scourge.ModObjectLimit(Constants.UPGRADE_R026_GARGOYLES_SCOURGE, Faction.UNLIMITED);
-      Scourge.ModObjectLimit(Constants.UPGRADE_R02A_FROST_WYRMS_SCOURGE, Faction.UNLIMITED);
-      Scourge.ModObjectLimit(Constants.UPGRADE_R04V_OBSIDIAN_DESTROYERS_SCOURGE, Faction.UNLIMITED);
 
       Scourge.ModObjectLimit(Constants.UPGRADE_R07X_MAKE_ARTHAS_THE_LICH_KING_SCOURGE, Faction.UNLIMITED);
 

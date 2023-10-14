@@ -10,18 +10,19 @@ namespace WarcraftLegacies.Source.Commands
   /// </summary>
   public static class UnallyCommand
   {
-    private const string COMMAND = "-unally";
+    private const string Command = "-unally";
 
     private static void Actions()
     {
       var triggerPlayer = GetTriggerPlayer();
-      triggerPlayer.GetFaction().Unally();
+      triggerPlayer.GetFaction()?.Unally();
     }
 
     public static void Setup()
     {
       var trig = CreateTrigger();
-      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers()) TriggerRegisterPlayerChatEvent(trig, player, COMMAND, true);
+      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers()) 
+        TriggerRegisterPlayerChatEvent(trig, player, Command, true);
 
       TriggerAddAction(trig, Actions);
     }

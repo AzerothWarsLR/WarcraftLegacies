@@ -88,8 +88,6 @@ Once you have secured your holdings, gather your army and destroy the Orcish Hor
       Sentinels.ModObjectLimit(Constants.UPGRADE_R04E_YSERA_S_GIFT_DRUIDS, Faction.UNLIMITED);
       Sentinels.ModObjectLimit(Constants.UPGRADE_R03J_WIND_WALK_SENTINELS, Faction.UNLIMITED);
       Sentinels.ModObjectLimit(Constants.UPGRADE_R018_IMPROVED_LIGHTNING_BARRAGE_SENTINELS, Faction.UNLIMITED);
-      Sentinels.ModObjectLimit(Constants.UPGRADE_R068_HIPPOGRYPH_RIDERS_SENTINEL, Faction.UNLIMITED);
-      Sentinels.ModObjectLimit(Constants.UPGRADE_R0A0_CHIMAERAS_SENTINEL, Faction.UNLIMITED);
 
       Sentinels.AddGoldMine(preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-22721, -13570)));
       
