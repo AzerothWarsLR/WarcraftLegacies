@@ -49,9 +49,9 @@ namespace WarcraftLegacies.Source.Quests.Scourge
         new ObjectiveResearch(Constants.UPGRADE_R06I_PLAGUE_OF_UNDEATH_SCOURGE, FourCC("u000")),
         new ObjectiveTime(660)));
       AddObjective(new ObjectiveTime(420));
-      _deathknellUnits = deathknell.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
-      _scholomanceUnits = scholomance.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
-      _coastUnits = coast.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
+      _deathknellUnits = deathknell.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
+      _scholomanceUnits = scholomance.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
+      _coastUnits = coast.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
       Global = true;
       Required = true;
       ResearchId = Constants.UPGRADE_R009_QUEST_COMPLETED_PLAGUE_OF_UNDEATH;
