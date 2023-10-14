@@ -1,4 +1,5 @@
-﻿using MacroTools.SpellSystem;
+﻿using MacroTools.Extensions;
+using MacroTools.SpellSystem;
 using static War3Api.Common;
 using WCSharp.Shared.Data;
 
@@ -19,6 +20,8 @@ namespace WarcraftLegacies.Source.Spells
     public string EffectTarget { get; init; } = "";
 
     public string EffectCaster { get; init; } = "";
+
+    public int Duration { get; init; }
     
     /// <inheritdoc />
     public RendSoul(int id) : base(id)
@@ -28,7 +31,22 @@ namespace WarcraftLegacies.Source.Spells
     /// <inheritdoc />
     public override void OnCast(unit caster, unit target, Point targetPoint)
     {
+      var targetMaximumHitPoints = target.GetMaximumHitPoints();
+      var healthGained = targetMaximumHitPoints * HitPointsPerTargetMaximumHitPoints;
+      var manaGained = targetMaximumHitPoints * ManaPointsPerTargetMaximumHitPoints;
+
+      AddSpecialEffect(EffectCaster, GetUnitX(caster), GetUnitY(caster)).SetLifespan();
+      AddSpecialEffect(EffectTarget, GetUnitX(target), GetUnitY(target)).SetLifespan();
+
+      var targetPosition = target.GetPosition();
+      target.Kill();
       
+      caster.Heal(healthGained);
+      caster.RestoreMana(manaGained);
+
+      CreateUnit(caster.OwningPlayer(), UnitTypeSummoned, targetPosition.X, targetPosition.Y, caster.GetFacing())
+        .SetTimedLife(Duration)
+        .AddType(UNIT_TYPE_SUMMONED);
     }
   }
 }

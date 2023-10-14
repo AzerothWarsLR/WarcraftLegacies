@@ -3,6 +3,7 @@ using MacroTools.PassiveAbilitySystem;
 using MacroTools.Spells;
 using MacroTools.SpellSystem;
 using WarcraftLegacies.Source.Mechanics.Scourge;
+using WarcraftLegacies.Source.Spells;
 
 namespace WarcraftLegacies.Source.Setup.Spells
 {
@@ -47,6 +48,17 @@ namespace WarcraftLegacies.Source.Setup.Spells
         TargetType = SpellTargetType.Point
       };
       SpellSystem.Register(massFrostArmor);
+
+      var rendSoul = new RendSoul(Constants.ABILITY_ZB01_REND_SOUL_KEL_THUZAD_LICH)
+      {
+        HitPointsPerTargetMaximumHitPoints = 0.25f,
+        ManaPointsPerTargetMaximumHitPoints = 0.35f,
+        UnitTypeSummoned = Constants.UNIT_N009_REVENANT_SCOURGE,
+        EffectTarget = @"Abilities\Spells\Undead\DarkRitual\DarkRitualTarget.mdl",
+        EffectCaster = @"Abilities\Spells\Undead\DarkRitual\DarkRitualCaster.mdl",
+        Duration = 45
+      };
+      SpellSystem.Register(rendSoul);
       
       PassiveAbilityManager.Register(new RemoveOnDeath(Constants.UNIT_N094_ICECROWN_OBELISK_RED)
       {
