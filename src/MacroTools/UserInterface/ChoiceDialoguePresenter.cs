@@ -7,24 +7,24 @@ using static War3Api.Common;
 namespace MacroTools.UserInterface
 {
   /// <summary>Allows a player to choose between one of two factions at the start of the game.</summary>
-  public abstract class ChoiceDialoguePresenter
+  public abstract class ChoiceDialoguePresenter<T>
   {
-    //Ensures choice dialogs are kept in memory until they're done.
-    private readonly List<ChoiceDialoguePresenter> _activeChoices = new();
-
     protected readonly dialog? PickDialogue = DialogCreate();
-    private readonly Dictionary<button, string> _choicePicksByButton = new();
-    protected readonly List<string> Choices;
+    protected readonly List<Choice<T>> Choices;
+    protected bool HasChoiceBeenPicked = false;
+    
+    //Ensures choice dialogs are kept in memory until they're done.
+    private readonly List<ChoiceDialoguePresenter<T>> _activeChoices = new();
+    private readonly Dictionary<button, Choice<T>> _choicePicksByButton = new();
     private readonly List<trigger> _triggers = new();
     private readonly string _dialogueTxt;
-    protected bool HasChoiceBeenPicked = false;
-
-    /// <summary>Initializes a new instance of the <see cref="ChoiceDialoguePresenter"/> class.</summary>
-    protected ChoiceDialoguePresenter(string[] choices, string dialogueTxt)
+    
+    /// <summary>Initializes a new instance of the <see cref="ChoiceDialoguePresenter{T}"/> class.</summary>
+    protected ChoiceDialoguePresenter(Choice<T>[] choices, string dialogueTxt)
     {
       foreach (var choice in choices)
       {
-        var factionButton = DialogAddButton(PickDialogue, choice, 0);
+        var factionButton = DialogAddButton(PickDialogue, choice.Name, 0);
         _choicePicksByButton[factionButton] = choice;
       }
 
@@ -33,10 +33,10 @@ namespace MacroTools.UserInterface
     }
 
     /// <summary>Fired when a choice has been made.</summary>
-    protected abstract void OnChoicePicked(player whichPlayer, string choice);
+    protected abstract void OnChoicePicked(player whichPlayer, Choice<T> choice);
 
     /// <summary>Invoked when a player fails to make a choice in time.</summary>
-    protected abstract void OnChoiceExpired(player whichPlayer, string defaultChoice);
+    protected abstract void OnChoiceExpired(player whichPlayer, Choice<T> defaultChoice);
 
     /// <summary>Displays the faction choice to a player.</summary>
     public void Run(player whichPlayer)
