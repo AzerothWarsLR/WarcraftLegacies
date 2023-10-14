@@ -66,6 +66,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
         ScourgeSetup.Scourge.AddQuest(questSpiderWar);
         ScourgeSetup.Scourge.StartingQuest = questSpiderWar;
         ScourgeSetup.Scourge.AddQuest(questDrakUnlock);
+        ScourgeSetup.Scourge.AddQuest(questEnKilahUnlock);
         ScourgeSetup.Scourge.AddQuest(questPlague);
         ScourgeSetup.Scourge.AddQuest(questSapphiron);
         //Early duel

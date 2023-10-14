@@ -60,6 +60,11 @@
       "Id": 1918989409,
       "Type": 3,
       "Value": "air,dead,ground"
+    },
+    {
+      "Id": 1902473825,
+      "Type": 3,
+      "Value": "R08L"
     }
   ]
 }
