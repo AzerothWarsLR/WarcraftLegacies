@@ -8,7 +8,7 @@
     {
       "Id": 1868786037,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNTrainingQuarter.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBE_Barracks.blp"
     },
     {
       "Id": 2020631157,
@@ -26,7 +26,7 @@
     {
       "Id": 1818520949,
       "Type": 3,
-      "Value": "war3mapImported\\DragonHawkAviary.mdl"
+      "Value": "war3mapImported\\BE_Barracks.mdl"
     },
     {
       "Id": 1953458293,
@@ -57,6 +57,11 @@
       "Id": 1651864693,
       "Type": 3,
       "Value": "Training grounds for the Sunfury Military.|n|cfff5962dTrains:|R Centurion, Bowman, Blood Knight Squire, Scorpion|n|cfff5962dResearches:|R Seal of Blood"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.85
     }
   ]
 }

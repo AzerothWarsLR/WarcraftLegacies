@@ -17,7 +17,7 @@
     {
       "Id": 1650550901,
       "Type": 3,
-      "Value": "Aamk,A0LP,AUan,AUdr,AUdd"
+      "Value": "A13R,Aamk,AUfn,AUan,AUdd"
     },
     {
       "Id": 1836083317,
@@ -66,6 +66,11 @@
     {
       "Id": 1769169525,
       "Value": 4
+    },
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "AUdr,AInv"
     }
   ]
 }

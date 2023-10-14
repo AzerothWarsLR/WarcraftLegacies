@@ -2,6 +2,7 @@
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.QuestSystem;
+using WarcraftLegacies.Source.Setup.Legends;
 using static War3Api.Common; 
 
 namespace WarcraftLegacies.Source.Quests.Dalaran
@@ -10,15 +11,16 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
   {
     private readonly LegendaryHero _jaina;
 
-    public QuestTheNexus(LegendaryHero jaina, Capital lichKing, Capital theNexus, Capital dalaran) : base("The Nexus",
+    public QuestTheNexus(LegendDalaran legendDalaran, Capital lichKing, Capital theNexus) : base("The Nexus",
       "The Nexus is a tower of powerful arcane energy, Jaina could absord it to gain it's power",
       @"ReplaceableTextures\CommandButtons\BTNBlueDragonNexus.blp")
     {
-      _jaina = jaina;
-      AddObjective(new ObjectiveChannelRect(Regions.JainaChannel, "The Nexus", jaina, 60, 270, Title));
-      AddObjective(new ObjectiveControlLegend(jaina, true));
+      _jaina = legendDalaran.Jaina;
+      AddObjective(new ObjectiveChannelRect(Regions.JainaChannel, "The Nexus", legendDalaran.Jaina, 60, 270, Title));
+      AddObjective(new ObjectiveControlLegend(legendDalaran.Jaina, true));
       AddObjective(new ObjectiveCapitalDead(lichKing));
-      AddObjective(new ObjectiveCapitalDead(dalaran));
+      AddObjective(new ObjectiveCapitalDead(legendDalaran.Dalaran));
+      AddObjective(new ObjectiveDontControlLegend(legendDalaran.Aegwynn));
       AddObjective(new ObjectiveControlCapital(theNexus, false));
       ResearchId = Constants.UPGRADE_R03Y_QUEST_COMPLETED_THE_NEXUS;
       Global = true;
@@ -47,22 +49,23 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
       completingFaction.ModObjectLimit(FourCC("R061"), -Faction.UNLIMITED); //Forked Lightning
 
       completingFaction.ModObjectLimit(FourCC("U027"), 1); //Kalecgos
-      completingFaction.ModObjectLimit(FourCC("H04A"), 1); //Nexus Jaina
+      completingFaction.ModObjectLimit(Constants.UNIT_H04A_LORD_OF_THE_NEXUS_NEXUS, 1);
+      completingFaction.ModObjectLimit(Constants.UNIT_H09N_MATRIARCH_OF_TIRISFAL_DALARAN, -1);
 
-      completingFaction.ModObjectLimit(FourCC("n0A1"), 6); //Elite
-      completingFaction.ModObjectLimit(FourCC("h09C"), Faction.UNLIMITED); //Worker
-      completingFaction.ModObjectLimit(FourCC("h099"), Faction.UNLIMITED); //Infantry
-      completingFaction.ModObjectLimit(FourCC("n0A4"), Faction.UNLIMITED); //Dragonspawn
+      completingFaction.ModObjectLimit(Constants.UNIT_N0A1_CRYSTAL_LORD_NEXUS, 6);
+      completingFaction.ModObjectLimit(Constants.UNIT_H09C_WHELP_DALARAN, Faction.UNLIMITED);
+      completingFaction.ModObjectLimit(Constants.UNIT_H099_ZEALOT_NEXUS, Faction.UNLIMITED);
+      completingFaction.ModObjectLimit(Constants.UNIT_N0A4_BLUE_DRAGONSPAWN_NEXUS, Faction.UNLIMITED);
       completingFaction.ModObjectLimit(FourCC("u025"), 12); //Elementalist
-      completingFaction.ModObjectLimit(FourCC("n09T"), 6); //Judicator
-      completingFaction.ModObjectLimit(FourCC("h09A"), Faction.UNLIMITED); //Nexus
-      completingFaction.ModObjectLimit(FourCC("h09B"), Faction.UNLIMITED); //Roost
+      completingFaction.ModObjectLimit(Constants.UNIT_N09T_JUDICATOR_NEXUS, 6);
+      completingFaction.ModObjectLimit(Constants.UNIT_H09A_DRACONIC_SPIRE_DALARAN_SPECIALIST, Faction.UNLIMITED);
+      completingFaction.ModObjectLimit(Constants.UNIT_H09B_BLUE_DRAGON_ROOST_DALARAN_SPECIALIST, Faction.UNLIMITED);
 
       _jaina.UnitType = Constants.UNIT_H04A_LORD_OF_THE_NEXUS_NEXUS;
       
       completingFaction.Name = "The Nexus";
       completingFaction.Icon = @"ReplaceableTextures\CommandButtons\BTNJaina_Archmage.blp";
-      SetPlayerState(completingFaction.Player, PLAYER_STATE_FOOD_CAP_CEILING, 200);
+      SetPlayerState(completingFaction.Player, PLAYER_STATE_FOOD_CAP_CEILING, 250);
     }
   }
 }

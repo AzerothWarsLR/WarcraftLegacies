@@ -19,7 +19,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
         UndefeatedResearch = FourCC("R05K"),
         StartingGold = 200,
         StartingLumber = 700,
-        FoodMaximum = 200,
+        FoodMaximum = 250,
         CinematicMusic = "ArthasTheme",
         ControlPointDefenderUnitTypeId = Constants.UNIT_U028_CONTROL_POINT_DEFENDER_SCOURGE,
         IntroText = @"You are playing as the the horrific Undead Scourge.
@@ -100,14 +100,10 @@ When the Plague hits Lordaeron, a great portal will be opened between Dragonblig
       Scourge.ModObjectLimit(FourCC("Ruwb"), Faction.UNLIMITED); //Web
       Scourge.ModObjectLimit(FourCC("R00Q"), Faction.UNLIMITED); //Chilling Aura
       Scourge.ModObjectLimit(Constants.UPGRADE_R01X_EPIDEMIC_SCOURGE, Faction.UNLIMITED);
-      Scourge.ModObjectLimit(Constants.UPGRADE_R08T_REVENANTS_SCOURGE, Faction.UNLIMITED);
       Scourge.ModObjectLimit(FourCC("R01D"), Faction.UNLIMITED); //Piercing Screech
       Scourge.ModObjectLimit(FourCC("R06N"), Faction.UNLIMITED); //Improved Orb of Annihilation
       Scourge.ModObjectLimit(FourCC("Rusl"), Faction.UNLIMITED); //Skeletal Mastery
       Scourge.ModObjectLimit(FourCC("Rusm"), Faction.UNLIMITED); //Skeletal Longevity
-      Scourge.ModObjectLimit(Constants.UPGRADE_R026_GARGOYLES_SCOURGE, Faction.UNLIMITED);
-      Scourge.ModObjectLimit(Constants.UPGRADE_R02A_FROST_WYRMS_SCOURGE, Faction.UNLIMITED);
-      Scourge.ModObjectLimit(Constants.UPGRADE_R04V_OBSIDIAN_DESTROYERS_SCOURGE, Faction.UNLIMITED);
 
       Scourge.ModObjectLimit(Constants.UPGRADE_R07X_MAKE_ARTHAS_THE_LICH_KING_SCOURGE, Faction.UNLIMITED);
 

@@ -52,6 +52,12 @@ namespace MacroTools.Extensions
       TriggerRegisterUnitEvent(whichTrigger, whichUnit, whichEvent);
       return whichTrigger;
     }
+
+    public static trigger RegisterDialogButtonEvent(this trigger whichTrigger, button whichButton)
+    {
+      TriggerRegisterDialogButtonEvent(whichTrigger, whichButton);
+      return whichTrigger;
+    }
     
     public static trigger AddAction(this trigger whichTrigger, Action actionFunc)
     {
