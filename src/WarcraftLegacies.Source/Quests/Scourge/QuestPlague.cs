@@ -20,15 +20,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
   public sealed class QuestPlague : QuestData
   {
     private readonly Faction _plagueVictim;
-
-    private readonly unit _portalController1;
-    private readonly unit _portalController2;
-    private readonly unit _innerWaygate1;
-    private readonly unit _innerWaygate2;
-    private readonly unit _outerWaygate1;
-    private readonly unit _outerWaygate2;
-    
-    private readonly unit _gilneasDoor;
+   
     private readonly Faction _secondaryPlagueFaction;
     private readonly PlagueParameters _plagueParameters;
 
@@ -46,7 +38,6 @@ namespace WarcraftLegacies.Source.Quests.Scourge
       "The Cult of the Damned is prepared to unleash a devastating zombifying plague across the lands of Lordaeron.",
       @"ReplaceableTextures\CommandButtons\BTNPlagueBarrel.blp")
     {
-      _gilneasDoor = preplacedUnitSystem.GetUnit(Constants.UNIT_H02K_GREYMANE_S_GATE_CLOSED).SetInvulnerable(true);
       _plagueVictim = plagueVictim;
       _plagueParameters = plagueParameters;
       _secondaryPlagueFaction = secondaryPlagueFaction;
@@ -76,8 +67,6 @@ namespace WarcraftLegacies.Source.Quests.Scourge
       if (completingFaction.Player != null)
         CreatePlagueCauldrons(completingFaction);
       completingFaction.AddPower(plaguePower);
-      _gilneasDoor
-        .SetInvulnerable(false);
       ResetVictimControlPointLevel();
 
     }
