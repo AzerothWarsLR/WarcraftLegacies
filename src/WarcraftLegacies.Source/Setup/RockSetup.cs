@@ -38,17 +38,12 @@ namespace WarcraftLegacies.Source.Setup
       RockSystem.Register(new RockGroup(Regions.KaliRock11, ForestChunkId, 480));
       RockSystem.Register(new RockGroup(Regions.KaliRock13, ForestChunkId, 480));
 
-      //North Alliance Rocks
-      RockSystem.Register(new RockGroup(Regions.GilneasUnlock5, RockChunkId, 660));
-
       //Northrend Rocks
       RockSystem.Register(new RockGroup(Regions.NorthrendRock1, RockChunkId, 360));
       RockSystem.Register(new RockGroup(Regions.NorthrendRock2, RockChunkId, 360));
       RockSystem.Register(new RockGroup(Regions.NorthrendRock3, RockChunkId, 360));
       RockSystem.Register(new RockGroup(Regions.NorthrendRock4, RockChunkId, 360));
 
-      RockSystem.Register(new RockGroup(Regions.Northrend_Blocker_1, IslandChunkId, 840));
-      RockSystem.Register(new RockGroup(Regions.Northrend_Blocker_2, IslandChunkId, 840));
     }
   }
 }

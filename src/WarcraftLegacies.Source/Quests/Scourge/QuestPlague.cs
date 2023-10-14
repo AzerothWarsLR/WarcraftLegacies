@@ -10,6 +10,7 @@ using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
 using WarcraftLegacies.Source.GameLogic;
 using WarcraftLegacies.Source.Mechanics.Scourge.Plague;
+using WarcraftLegacies.Source.Rocks;
 using WCSharp.Buffs;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -90,6 +91,9 @@ namespace WarcraftLegacies.Source.Quests.Scourge
       completingFaction.Player.RescueGroup(_deathknellUnits);
       completingFaction.Player.RescueGroup(_coastUnits);
       completingFaction.Player.RescueGroup(_scholomanceUnits);
+
+      RockSystem.Register(new RockGroup(Regions.Northrend_Blocker_1, FourCC("B013"), 120));
+      RockSystem.Register(new RockGroup(Regions.Northrend_Blocker_2, FourCC("B013"), 120));
 
 
     }
