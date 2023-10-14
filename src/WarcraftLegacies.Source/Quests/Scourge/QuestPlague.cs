@@ -53,7 +53,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
       AddObjective(new ObjectiveEitherOf(
         new ObjectiveResearch(Constants.UPGRADE_R06I_PLAGUE_OF_UNDEATH_SCOURGE, FourCC("u000")),
         new ObjectiveTime(660)));
-      AddObjective(new ObjectiveTime(540));
+      AddObjective(new ObjectiveTime(480));
       Global = true;
       Required = true;
       ResearchId = Constants.UPGRADE_R009_QUEST_COMPLETED_PLAGUE_OF_UNDEATH;
@@ -62,11 +62,11 @@ namespace WarcraftLegacies.Source.Quests.Scourge
 
     /// <inheritdoc />
     protected override string RewardFlavour =>
-      "The plague has been unleashed! The citizens of Lordaeron are quickly transforming into mindless zombies, and the Black Gate has been opened in Dragonblight.";
+      "The plague has been unleashed! The citizens of Lordaeron are quickly transforming into mindless zombies";
 
     /// <inheritdoc />
     protected override string RewardDescription =>
-      "All villagers in Lordaeron are transformed into Zombies, several Zombie-spawning Plague Cauldrons spawn throughout Lordaeron, a portal opens between Dragonblight and Scholomance, you learn to build Necropoli, and Lordaeron's Control Points reset to level 0";
+      "All villagers in Lordaeron are transformed into Zombies, several Zombie-spawning Plague Cauldrons spawn throughout Lordaeron, and Lordaeron's Control Points reset to level 0";
 
     /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)

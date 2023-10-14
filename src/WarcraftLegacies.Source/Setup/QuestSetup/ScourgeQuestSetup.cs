@@ -17,6 +17,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       QuestKelthuzadDies questKelthuzadDies = new(questKelthuzadLich, allLegendSetup.Scourge.Kelthuzad);
       QuestEnKilahUnlock questEnKilahUnlock = new(Regions.EnKilahUnlock);
       QuestDrakUnlock questDrakUnlock = new(Regions.DrakUnlock);
+      QuestCultoftheDamned questCultoftheDamned = new();
 
       var plagueParameters = new PlagueParameters();
       plagueParameters.PlagueRects = new List<Rectangle>
@@ -67,6 +68,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
         ScourgeSetup.Scourge.StartingQuest = questSpiderWar;
         ScourgeSetup.Scourge.AddQuest(questDrakUnlock);
         ScourgeSetup.Scourge.AddQuest(questEnKilahUnlock);
+        ScourgeSetup.Scourge.AddQuest(questCultoftheDamned);
         ScourgeSetup.Scourge.AddQuest(questPlague);
         ScourgeSetup.Scourge.AddQuest(questSapphiron);
         //Early duel
