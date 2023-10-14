@@ -80,6 +80,7 @@ public static class Regions
 	public static Rectangle DarkshireAmbient3 { get; set; } = new Rectangle(13408f, -14752f, 17952f, -12672f);
 	public static Rectangle DarkshireUnlock { get; set; } = new Rectangle(11904f, -16320f, 13408f, -15072f);
 	public static Rectangle Darrowshire { get; set; } = new Rectangle(16096f, 7168f, 17600f, 8480f);
+	public static Rectangle Deathknell_Unlock { get; set; } = new Rectangle(4832f, 8416f, 6080f, 9888f);
 	public static Rectangle Demongate_1 { get; set; } = new Rectangle(-1248f, -22400f, -864f, -22016f);
 	public static Rectangle DemonGate3 { get; set; } = new Rectangle(352f, -25472f, 864f, -25024f);
 	public static Rectangle Desolace_Ships { get; set; } = new Rectangle(-18720f, -7584f, -17088f, -3488f);
@@ -221,6 +222,8 @@ public static class Regions
 	public static Rectangle Netherstorm { get; set; } = new Rectangle(-544f, -23712f, 3680f, -18528f);
 	public static Rectangle Northern_Kali_Ships { get; set; } = new Rectangle(-17344f, -1376f, -8704f, 8800f);
 	public static Rectangle Northrend_Ambiance { get; set; } = new Rectangle(-10688f, 13120f, 8608f, 24736f);
+	public static Rectangle Northrend_Blocker_1 { get; set; } = new Rectangle(5376f, 13568f, 6016f, 13952f);
+	public static Rectangle Northrend_Blocker_2 { get; set; } = new Rectangle(5440f, 10880f, 6688f, 11488f);
 	public static Rectangle Northrend_ships { get; set; } = new Rectangle(-9216f, 19680f, 6048f, 24992f);
 	public static Rectangle NorthrendLegionLanding { get; set; } = new Rectangle(3392f, 20512f, 3776f, 20864f);
 	public static Rectangle NorthrendRock1 { get; set; } = new Rectangle(2752f, 19904f, 3168f, 20832f);
@@ -368,8 +371,5 @@ public static class Regions
 	public static Rectangle ZulAman_trolls { get; set; } = new Rectangle(20256f, 10176f, 22848f, 17440f);
 	public static Rectangle Zulfarrak { get; set; } = new Rectangle(-12352f, -14272f, -10528f, -12064f);
 	public static Rectangle ZulfarrakAmbient { get; set; } = new Rectangle(-5952f, -17216f, 2944f, -10368f);
-	public static Rectangle Northrend_Blocker_1 { get; set; } = new Rectangle(5376f, 13568f, 6016f, 13952f);
-	public static Rectangle Northrend_Blocker_2 { get; set; } = new Rectangle(5440f, 10880f, 6688f, 11488f);
-	public static Rectangle Deathknell_Unlock { get; set; } = new Rectangle(4832f, 8416f, 6080f, 9888f);
 
 }
