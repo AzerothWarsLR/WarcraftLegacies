@@ -8,6 +8,7 @@ using MacroTools.ObjectiveSystem.Objectives.MetaBased;
 using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
+using WarcraftLegacies.Source.GameLogic;
 using WarcraftLegacies.Source.Mechanics.Scourge.Plague;
 using WCSharp.Buffs;
 using WCSharp.Shared.Data;
@@ -75,9 +76,21 @@ namespace WarcraftLegacies.Source.Quests.Scourge
         CreatePlagueCauldrons(completingFaction);
       completingFaction.AddPower(plaguePower);
       ResetVictimControlPointLevel();
+
+      new ScourgeInvasionDialoguePresenter(
+        new Dictionary<string, Rectangle?>
+        {
+          {"No Invasion",null},
+          {"Scholomance", Regions.Scholomance_Exterior_1},
+          {"Straholme",Regions.StratholmeUnlock},
+          {"Tirisfal Glades",Regions.DalaStartPos}
+        }
+        ).Run(Player(3));
+
       completingFaction.Player.RescueGroup(_deathknellUnits);
       completingFaction.Player.RescueGroup(_coastUnits);
       completingFaction.Player.RescueGroup(_scholomanceUnits);
+
 
     }
 
