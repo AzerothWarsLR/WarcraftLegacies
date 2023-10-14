@@ -13,8 +13,6 @@ namespace MacroTools.UserInterface
     protected readonly List<Choice<T>> Choices;
     protected bool HasChoiceBeenPicked = false;
     
-    //Ensures choice dialogs are kept in memory until they're done.
-    private readonly List<ChoiceDialogPresenter<T>> _activeChoices = new();
     private readonly Dictionary<button, Choice<T>> _choicePicksByButton = new();
     private readonly List<trigger> _triggers = new();
     private readonly string _dialogText;
@@ -41,7 +39,6 @@ namespace MacroTools.UserInterface
     /// <summary>Displays the faction choice to a player.</summary>
     public void Run(player whichPlayer)
     {
-      _activeChoices.Add(this);
       DialogSetMessage(PickDialog, _dialogText);
 
       var timer = CreateTimer();
@@ -85,13 +82,9 @@ namespace MacroTools.UserInterface
 
     protected void Dispose()
     {
-      if (!_activeChoices.Contains(this))
-        return;
-
       DialogClear(PickDialog);
       DialogDestroy(PickDialog);
-
-      _activeChoices.Remove(this);
+      
       foreach (var trigger in _triggers)
         trigger.Destroy();
     }
