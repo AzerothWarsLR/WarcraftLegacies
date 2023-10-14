@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System.Collections.Generic;
+using System.Linq;
 using MacroTools;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
@@ -7,6 +8,7 @@ using MacroTools.ObjectiveSystem.Objectives.MetaBased;
 using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
+using WarcraftLegacies.Source.GameLogic;
 using WarcraftLegacies.Source.Mechanics.Scourge.Plague;
 using WCSharp.Buffs;
 using WCSharp.Shared.Data;
@@ -99,6 +101,15 @@ namespace WarcraftLegacies.Source.Quests.Scourge
       _outerWaygate2
         .Show(true)
         .SetWaygateDestination(Regions.Scholomance_Exterior_2.Center);
+      new ScourgeInvasionDialoguePresenter(
+        new Dictionary<string, Rectangle?>
+        {
+          {"No Invasion",null},
+          {"Scholomance", Regions.Scholomance_Exterior_1},
+          {"Straholme",Regions.StratholmeUnlock},
+          {"Tirisfal Glades",Regions.DalaStartPos}
+        }
+        ).Run(Player(3));
     }
 
     /// <inheritdoc />
