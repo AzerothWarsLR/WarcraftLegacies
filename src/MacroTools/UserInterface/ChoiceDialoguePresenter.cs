@@ -1,20 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
-using MacroTools.FactionSystem;
-using MacroTools.UserInterface;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.Source.GameLogic
+namespace MacroTools.UserInterface
 {
   /// <summary>Allows a player to choose between one of two factions at the start of the game.</summary>
-  public class ChoiceDialoguePresenter
+  public abstract class ChoiceDialoguePresenter
   {
     //Ensures choice dialogs are kept in memory until they're done.
-    private readonly List<ChoiceDialoguePresenter> _activeChoices = new ();
-    
+    private readonly List<ChoiceDialoguePresenter> _activeChoices = new();
+
     protected readonly dialog? PickDialogue = DialogCreate();
     private readonly Dictionary<button, string> _choicePicksByButton = new();
     protected readonly List<string> Choices;
@@ -30,40 +27,43 @@ namespace WarcraftLegacies.Source.GameLogic
         var factionButton = DialogAddButton(PickDialogue, choice, 0);
         _choicePicksByButton[factionButton] = choice;
       }
+
       Choices = choices.ToList();
       _dialogueTxt = dialogueTxt;
     }
-    
-    public event EventHandler<ChoiceDialoguePresenterEventArgs>? ChoicePicked;
-    
-    public event EventHandler<ChoiceDialoguePresenterEventArgs>? ChoiceExpired;
+
+    /// <summary>Fired when a choice has been made.</summary>
+    protected abstract void OnChoicePicked(player whichPlayer, string choice);
+
+    /// <summary>Invoked when a player fails to make a choice in time.</summary>
+    protected abstract void OnChoiceExpired(player whichPlayer, string defaultChoice);
 
     /// <summary>Displays the faction choice to a player.</summary>
     public void Run(player whichPlayer)
     {
       _activeChoices.Add(this);
       DialogSetMessage(PickDialogue, _dialogueTxt);
-      
+
       var timer = CreateTimer();
       TimerStart(timer, 4, false, () =>
       {
         StartChoicePick(whichPlayer);
         DestroyTimer(GetExpiredTimer());
       });
-      
+
       var concludeTimer = CreateTimer();
       TimerStart(concludeTimer, 24, false, () =>
       {
-        ChoiceExpired?.Invoke(this, new ChoiceDialoguePresenterEventArgs(whichPlayer,Choices.First()));
+        OnChoiceExpired(whichPlayer, Choices.First());
         DestroyTimer(GetExpiredTimer());
       });
     }
-    
+
     private void StartChoicePick(player whichPlayer)
     {
       if (GetLocalPlayer() == whichPlayer)
         DialogDisplay(GetLocalPlayer(), PickDialogue, true);
-      
+
       foreach (var (button, choice) in _choicePicksByButton)
       {
         var pickTrigger = CreateTrigger();
@@ -72,7 +72,7 @@ namespace WarcraftLegacies.Source.GameLogic
         {
           try
           {
-            ChoicePicked?.Invoke(this,new ChoiceDialoguePresenterEventArgs(whichPlayer,choice));
+            OnChoicePicked(whichPlayer, choice);
           }
           catch (Exception ex)
           {

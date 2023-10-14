@@ -10,41 +10,45 @@ namespace WarcraftLegacies.Source.GameLogic
   public sealed class ScourgeInvasionDialoguePresenter : ChoiceDialoguePresenter
   {
     private readonly Dictionary<string, Rectangle?> _locationsByChoice;
-    
-    public ScourgeInvasionDialoguePresenter(Dictionary<string, Rectangle?> locationsByChoice) : base(locationsByChoice.Keys.ToArray(),"Pick Invasion Location")
+
+    public ScourgeInvasionDialoguePresenter(Dictionary<string, Rectangle?> locationsByChoice) : base(
+      locationsByChoice.Keys.ToArray(), "Pick Invasion Location")
     {
       _locationsByChoice = locationsByChoice;
-      ChoicePicked += PickLocation;
-
-      ChoiceExpired += ExpireLocationPick;
     }
 
-    private void PickLocation(object? sender, ChoiceDialoguePresenterEventArgs args)
+    protected override void OnChoicePicked(player pickingPlayer, string choice)
     {
       HasChoiceBeenPicked = true;
-      if (args.Choice == "No Invasion" || _locationsByChoice[args.Choice] == null)
+      if (choice == "No Invasion" || _locationsByChoice[choice] == null)
         return;
-      var invasionLocation = _locationsByChoice[args.Choice];
-      foreach (var unit in CreateGroup().EnumUnitsInRect(Regions.Northrend_Ambiance).EmptyToList().Where(x => x.OwningPlayer() == args.Player))
+      var invasionLocation = _locationsByChoice[choice];
+      foreach (var unit in CreateGroup().EnumUnitsInRect(Regions.Northrend_Ambiance).EmptyToList()
+                 .Where(x => x.OwningPlayer() == pickingPlayer))
       {
-        if (IsUnitType(unit, UNIT_TYPE_STRUCTURE) || IsUnitType(unit, UNIT_TYPE_ANCIENT) || IsUnitType(unit, UNIT_TYPE_PEON)) continue;
+        if (IsUnitType(unit, UNIT_TYPE_STRUCTURE) || IsUnitType(unit, UNIT_TYPE_ANCIENT) ||
+            IsUnitType(unit, UNIT_TYPE_PEON)) 
+          continue;
+        
         if (invasionLocation != null)
           SetUnitPosition(unit, invasionLocation.Center.X, invasionLocation.Center.Y);
       }
 
-      if (GetLocalPlayer() != args.Player) return;
+      if (GetLocalPlayer() != pickingPlayer) 
+        return;
+      
       if (invasionLocation != null)
         SetCameraPosition(invasionLocation.Center.X, invasionLocation.Center.Y);
     }
-    
-    private void ExpireLocationPick(object? sender, ChoiceDialoguePresenterEventArgs args)
+
+    protected override void OnChoiceExpired(player pickingPlayer, string choice)
     {
-      if (GetLocalPlayer() == args.Player)
+      if (GetLocalPlayer() == pickingPlayer)
         DialogDisplay(GetLocalPlayer(), PickDialogue, false);
-      
+
       if (!HasChoiceBeenPicked)
-        PickLocation(sender,new ChoiceDialoguePresenterEventArgs(args.Player,"No Invasion"));
-      
+        OnChoicePicked(pickingPlayer, choice);
+
       Dispose();
     }
   }

@@ -10,61 +10,56 @@ namespace WarcraftLegacies.Source.GameLogic
   /// <summary>Allows a player to choose between one of two factions at the start of the game.</summary>
   public sealed class FactionChoiceDialoguePresenter : ChoiceDialoguePresenter
   {
-    
-
-  /// <summary>Initializes a new instance of the <see cref="FactionChoiceDialoguePresenter"/> class.</summary>
-  public FactionChoiceDialoguePresenter(params string[] factionChoices) : base(factionChoices,"Pick your Faction")
-  {
-    ChoicePicked += PickFaction;
-
-    ChoiceExpired += ExpireFactionPick;
-  }
-
-  private void ExpireFactionPick(object? sender, ChoiceDialoguePresenterEventArgs args)
-  {
-    if (GetLocalPlayer() == args.Player)
-      DialogDisplay(GetLocalPlayer(), PickDialogue, false);
-
-    if (args.Player.GetFaction() == null && !HasChoiceBeenPicked)
-      PickFaction(sender,args);
-
-    Dispose();
-  }
-
-  private void PickFaction(object? sender, ChoiceDialoguePresenterEventArgs args)
-  {
-    HasChoiceBeenPicked = true;
-    if (GetLocalPlayer() == args.Player && FactionManager.GetFromName(args.Choice)?.StartingCameraPosition != null)
+    /// <summary>Initializes a new instance of the <see cref="FactionChoiceDialoguePresenter"/> class.</summary>
+    public FactionChoiceDialoguePresenter(params string[] factionChoices) : base(factionChoices, "Pick your Faction")
     {
-      var startingCameraPosition = FactionManager.GetFromName(args.Choice)?.StartingCameraPosition;
-      if (startingCameraPosition != null)
-        SetCameraPosition(startingCameraPosition.X,
-          startingCameraPosition.Y);
     }
 
-    args.Player.SetFaction(FactionManager.GetFromName(args.Choice));
-    var startingUnits = FactionManager.GetFromName(args.Choice)?.StartingUnits;
-    if (startingUnits != null)
-      args.Player.RescueGroup(startingUnits);
+    protected override void OnChoiceExpired(player pickingPlayer, string choice)
+    {
+      if (GetLocalPlayer() == pickingPlayer)
+        DialogDisplay(GetLocalPlayer(), PickDialogue, false);
 
-    foreach (var unpickedFaction in Choices.Where(x => x != args.Choice))
-      RemoveFaction(unpickedFaction);
-  }
+      if (pickingPlayer.GetFaction() == null && !HasChoiceBeenPicked)
+        OnChoicePicked(pickingPlayer, choice);
 
-  private static void RemoveFaction(string whichFaction)
-  {
-    var startingUnits = FactionManager.GetFromName(whichFaction)?.StartingUnits;
-    if (startingUnits != null)
-      foreach (var unit in startingUnits)
+      Dispose();
+    }
+
+    protected override void OnChoicePicked(player pickingPlayer, string choice)
+    {
+      HasChoiceBeenPicked = true;
+      if (GetLocalPlayer() == pickingPlayer && FactionManager.GetFromName(choice)?.StartingCameraPosition != null)
       {
-        if (ControlPointManager.Instance.UnitIsControlPoint(unit))
-          unit.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
-        else
-          unit.Remove();
+        var startingCameraPosition = FactionManager.GetFromName(choice)?.StartingCameraPosition;
+        if (startingCameraPosition != null)
+          SetCameraPosition(startingCameraPosition.X,
+            startingCameraPosition.Y);
       }
 
-    FactionManager.GetFromName(whichFaction)?.RemoveGoldMines();
-    FactionManager.GetFromName(whichFaction)?.Defeat();
-  }
+      pickingPlayer.SetFaction(FactionManager.GetFromName(choice));
+      var startingUnits = FactionManager.GetFromName(choice)?.StartingUnits;
+      if (startingUnits != null)
+        pickingPlayer.RescueGroup(startingUnits);
+
+      foreach (var unpickedFaction in Choices.Where(x => x != choice))
+        RemoveFaction(unpickedFaction);
+    }
+
+    private static void RemoveFaction(string whichFaction)
+    {
+      var startingUnits = FactionManager.GetFromName(whichFaction)?.StartingUnits;
+      if (startingUnits != null)
+        foreach (var unit in startingUnits)
+        {
+          if (ControlPointManager.Instance.UnitIsControlPoint(unit))
+            unit.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
+          else
+            unit.Remove();
+        }
+
+      FactionManager.GetFromName(whichFaction)?.RemoveGoldMines();
+      FactionManager.GetFromName(whichFaction)?.Defeat();
+    }
   }
 }
