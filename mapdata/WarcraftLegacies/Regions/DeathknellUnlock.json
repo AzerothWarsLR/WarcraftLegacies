@@ -1,9 +1,9 @@
 {
-  "Left": 4832,
-  "Bottom": 8416,
+  "Left": 4672,
+  "Bottom": 8384,
   "Right": 6080,
-  "Top": 9888,
-  "Name": "Deathknell Unlock",
+  "Top": 10048,
+  "Name": "DeathknellUnlock",
   "CreationNumber": 91,
   "AmbientSound": "",
   "Color": {

@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System.Collections.Generic;
+using System.Linq;
 using MacroTools;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
@@ -24,16 +25,19 @@ namespace WarcraftLegacies.Source.Quests.Scourge
     private readonly Faction _secondaryPlagueFaction;
     private readonly PlagueParameters _plagueParameters;
 
+    private readonly List<unit> _deathknellUnits;
+    private readonly List<unit> _coastUnits;
+    private readonly List<unit> _scholomanceUnits;
+
     /// <summary>
     /// When completed, the quest holder initiates the Plague, creating Plague Cauldrons around Lordaeron
     /// and converting villagers into Zombies.
     /// </summary>
     /// <param name="plagueParameters">Provides information about how the Plague should work.</param>
-    /// <param name="preplacedUnitSystem">A system for finding preplaced units.</param>
     /// <param name="plagueVictim">The faction that the plague will primarily affect.</param>
     /// <param name="secondaryPlagueFaction">The faction that will gain some of the fringe benefits of the plague.</param>
-    public QuestPlague(PlagueParameters plagueParameters, PreplacedUnitSystem preplacedUnitSystem, Faction plagueVictim,
-      Faction secondaryPlagueFaction) : base(
+    public QuestPlague(PlagueParameters plagueParameters, Faction plagueVictim,
+      Faction secondaryPlagueFaction, Rectangle deathknell, Rectangle coast, Rectangle scholomance) : base(
       "Plague of Undeath",
       "The Cult of the Damned is prepared to unleash a devastating zombifying plague across the lands of Lordaeron.",
       @"ReplaceableTextures\CommandButtons\BTNPlagueBarrel.blp")
@@ -45,6 +49,9 @@ namespace WarcraftLegacies.Source.Quests.Scourge
         new ObjectiveResearch(Constants.UPGRADE_R06I_PLAGUE_OF_UNDEATH_SCOURGE, FourCC("u000")),
         new ObjectiveTime(660)));
       AddObjective(new ObjectiveTime(420));
+      _deathknellUnits = deathknell.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
+      _scholomanceUnits = deathknell.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
+      _coastUnits = deathknell.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
       Global = true;
       Required = true;
       ResearchId = Constants.UPGRADE_R009_QUEST_COMPLETED_PLAGUE_OF_UNDEATH;
@@ -57,7 +64,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
 
     /// <inheritdoc />
     protected override string RewardDescription =>
-      "All villagers in Lordaeron are transformed into Zombies, several Zombie-spawning Plague Cauldrons spawn throughout Lordaeron, and Lordaeron's Control Points reset to level 0";
+      "All villagers in Lordaeron are transformed into Zombies, several Zombie-spawning Plague Cauldrons spawn throughout Lordaeron, three bases around Lordaeron and Lordaeron's Control Points reset to level 0";
 
     /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)
@@ -68,6 +75,9 @@ namespace WarcraftLegacies.Source.Quests.Scourge
         CreatePlagueCauldrons(completingFaction);
       completingFaction.AddPower(plaguePower);
       ResetVictimControlPointLevel();
+      completingFaction.Player.RescueGroup(_deathknellUnits);
+      completingFaction.Player.RescueGroup(_coastUnits);
+      completingFaction.Player.RescueGroup(_scholomanceUnits);
 
     }
 

@@ -80,7 +80,7 @@ public static class Regions
 	public static Rectangle DarkshireAmbient3 { get; set; } = new Rectangle(13408f, -14752f, 17952f, -12672f);
 	public static Rectangle DarkshireUnlock { get; set; } = new Rectangle(11904f, -16320f, 13408f, -15072f);
 	public static Rectangle Darrowshire { get; set; } = new Rectangle(16096f, 7168f, 17600f, 8480f);
-	public static Rectangle Deathknell_Unlock { get; set; } = new Rectangle(4832f, 8416f, 6080f, 9888f);
+	public static Rectangle DeathknellUnlock { get; set; } = new Rectangle(4672f, 8384f, 6080f, 10048f);
 	public static Rectangle Demongate_1 { get; set; } = new Rectangle(-1248f, -22400f, -864f, -22016f);
 	public static Rectangle DemonGate3 { get; set; } = new Rectangle(352f, -25472f, 864f, -25024f);
 	public static Rectangle Desolace_Ships { get; set; } = new Rectangle(-18720f, -7584f, -17088f, -3488f);

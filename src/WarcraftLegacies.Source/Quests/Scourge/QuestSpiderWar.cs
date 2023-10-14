@@ -30,12 +30,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
       AddObjective(new ObjectiveExpire(660, Title));
       AddObjective(new ObjectiveSelfExists());
 
-      foreach (var unit in CreateGroup().EnumUnitsInRect(rescueRect.Rect).EmptyToList())
-        if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))
-        {
-          SetUnitInvulnerable(unit, true);
-          _rescueUnits.Add(unit);
-        }
+      _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
 
       Required = true;
     }

@@ -47,7 +47,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
         new Point(9418, 5396)
       };
 
-      QuestPlague questPlague = new(plagueParameters, preplacedUnitSystem, LordaeronSetup.Lordaeron, LegionSetup.Legion);
+      QuestPlague questPlague = new(plagueParameters, LordaeronSetup.Lordaeron, LegionSetup.Legion, Regions.CaerDarrow, Regions.DeathknellUnlock, Regions.DeathknellUnlock);
 
       ScourgeSetup.Scourge.AddQuest(new QuestScouringofLordaeron(
         new[]
