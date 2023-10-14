@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Linq;
+﻿using System.Linq;
 using MacroTools.Extensions;
 using MacroTools.UserInterface;
 using WCSharp.Shared.Data;
@@ -7,22 +6,20 @@ using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.GameLogic
 {
-  public sealed class ScourgeInvasionDialoguePresenter : ChoiceDialoguePresenter
+  public sealed class ScourgeInvasionDialoguePresenter : ChoiceDialoguePresenter<Rectangle>
   {
-    private readonly Dictionary<string, Rectangle?> _locationsByChoice;
-
-    public ScourgeInvasionDialoguePresenter(Dictionary<string, Rectangle?> locationsByChoice) : base(
-      locationsByChoice.Keys.ToArray(), "Pick Invasion Location")
+    public ScourgeInvasionDialoguePresenter(params Choice<Rectangle>[] invasionTargets) : base(invasionTargets,
+      "Pick invasion location")
     {
-      _locationsByChoice = locationsByChoice;
     }
 
-    protected override void OnChoicePicked(player pickingPlayer, string choice)
+    protected override void OnChoicePicked(player pickingPlayer, Choice<Rectangle> choice)
     {
       HasChoiceBeenPicked = true;
-      if (choice == "No Invasion" || _locationsByChoice[choice] == null)
+      if (choice.Data == null)
         return;
-      var invasionLocation = _locationsByChoice[choice];
+      
+      var invasionLocation = choice.Data;
       foreach (var unit in CreateGroup().EnumUnitsInRect(Regions.Northrend_Ambiance).EmptyToList()
                  .Where(x => x.OwningPlayer() == pickingPlayer))
       {
@@ -41,7 +38,7 @@ namespace WarcraftLegacies.Source.GameLogic
         SetCameraPosition(invasionLocation.Center.X, invasionLocation.Center.Y);
     }
 
-    protected override void OnChoiceExpired(player pickingPlayer, string choice)
+    protected override void OnChoiceExpired(player pickingPlayer, Choice<Rectangle> choice)
     {
       if (GetLocalPlayer() == pickingPlayer)
         DialogDisplay(GetLocalPlayer(), PickDialogue, false);

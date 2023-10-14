@@ -61,13 +61,7 @@ namespace WarcraftLegacies.Source.GameLogic
       faction.Defeat();
     }
     
-    private static Choice<Faction>[] ConvertFactionsToFactionChoices(IEnumerable<Faction> factions)
-    {
-      return factions.Select(x => new Choice<Faction>
-      {
-        Data = x,
-        Name = x.Name
-      }).ToArray();
-    }
+    private static Choice<Faction>[] ConvertFactionsToFactionChoices(IEnumerable<Faction> factions) =>
+      factions.Select(x => new Choice<Faction>(x, x.Name)).ToArray();
   }
 }

@@ -8,6 +8,7 @@ using MacroTools.ObjectiveSystem.Objectives.MetaBased;
 using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
+using MacroTools.UserInterface;
 using WarcraftLegacies.Source.GameLogic;
 using WarcraftLegacies.Source.Mechanics.Scourge.Plague;
 using WarcraftLegacies.Source.Rocks;
@@ -79,14 +80,11 @@ namespace WarcraftLegacies.Source.Quests.Scourge
       ResetVictimControlPointLevel();
 
       new ScourgeInvasionDialoguePresenter(
-        new Dictionary<string, Rectangle?>
-        {
-          {"No Invasion",null},
-          {"Scholomance", Regions.CaerDarrow},
-          {"Straholme",Regions.StratholmeUnlock},
-          {"Deathknell",Regions.DeathknellUnlock}
-        }
-        ).Run(Player(3));
+        new Choice<Rectangle>(null, "No invasion"),
+        new Choice<Rectangle>(Regions.CaerDarrow, "Scholomance"),
+        new Choice<Rectangle>(Regions.StratholmeUnlock, "Stratholme"),
+        new Choice<Rectangle>(Regions.DeathknellUnlock, "Deathknell"))
+        .Run(Player(3));
 
       completingFaction.Player.RescueGroup(_deathknellUnits);
       completingFaction.Player.RescueGroup(_coastUnits);
@@ -94,8 +92,6 @@ namespace WarcraftLegacies.Source.Quests.Scourge
 
       RockSystem.Register(new RockGroup(Regions.Northrend_Blocker_1, FourCC("B013"), 120));
       RockSystem.Register(new RockGroup(Regions.Northrend_Blocker_2, FourCC("B013"), 120));
-
-
     }
 
     /// <inheritdoc />
