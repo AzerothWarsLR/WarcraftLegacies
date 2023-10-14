@@ -1,6 +1,6 @@
 ﻿namespace MacroTools.UserInterface
 {
-  /// <summary>A choice that can be made via a <see cref="ChoiceDialoguePresenter{T}"/>.</summary>
+  /// <summary>A choice that can be made via a <see cref="ChoiceDialogPresenter{T}"/>.</summary>
   public sealed class Choice<T>
   {
     /// <summary>Internal data that the choice needs to know about.</summary>

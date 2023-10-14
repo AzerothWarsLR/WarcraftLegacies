@@ -7,29 +7,29 @@ using static War3Api.Common;
 namespace MacroTools.UserInterface
 {
   /// <summary>Allows a player to choose between one of two factions at the start of the game.</summary>
-  public abstract class ChoiceDialoguePresenter<T>
+  public abstract class ChoiceDialogPresenter<T>
   {
-    protected readonly dialog? PickDialogue = DialogCreate();
+    protected readonly dialog? PickDialog = DialogCreate();
     protected readonly List<Choice<T>> Choices;
     protected bool HasChoiceBeenPicked = false;
     
     //Ensures choice dialogs are kept in memory until they're done.
-    private readonly List<ChoiceDialoguePresenter<T>> _activeChoices = new();
+    private readonly List<ChoiceDialogPresenter<T>> _activeChoices = new();
     private readonly Dictionary<button, Choice<T>> _choicePicksByButton = new();
     private readonly List<trigger> _triggers = new();
-    private readonly string _dialogueTxt;
+    private readonly string _dialogText;
     
-    /// <summary>Initializes a new instance of the <see cref="ChoiceDialoguePresenter{T}"/> class.</summary>
-    protected ChoiceDialoguePresenter(Choice<T>[] choices, string dialogueTxt)
+    /// <summary>Initializes a new instance of the <see cref="ChoiceDialogPresenter{T}"/> class.</summary>
+    protected ChoiceDialogPresenter(Choice<T>[] choices, string dialogText)
     {
       foreach (var choice in choices)
       {
-        var factionButton = DialogAddButton(PickDialogue, choice.Name, 0);
+        var factionButton = DialogAddButton(PickDialog, choice.Name, 0);
         _choicePicksByButton[factionButton] = choice;
       }
 
       Choices = choices.ToList();
-      _dialogueTxt = dialogueTxt;
+      _dialogText = dialogText;
     }
 
     /// <summary>Fired when a choice has been made.</summary>
@@ -42,7 +42,7 @@ namespace MacroTools.UserInterface
     public void Run(player whichPlayer)
     {
       _activeChoices.Add(this);
-      DialogSetMessage(PickDialogue, _dialogueTxt);
+      DialogSetMessage(PickDialog, _dialogText);
 
       var timer = CreateTimer();
       TimerStart(timer, 4, false, () =>
@@ -62,7 +62,7 @@ namespace MacroTools.UserInterface
     private void StartChoicePick(player whichPlayer)
     {
       if (GetLocalPlayer() == whichPlayer)
-        DialogDisplay(GetLocalPlayer(), PickDialogue, true);
+        DialogDisplay(GetLocalPlayer(), PickDialog, true);
 
       foreach (var (button, choice) in _choicePicksByButton)
       {
@@ -88,8 +88,8 @@ namespace MacroTools.UserInterface
       if (!_activeChoices.Contains(this))
         return;
 
-      DialogClear(PickDialogue);
-      DialogDestroy(PickDialogue);
+      DialogClear(PickDialog);
+      DialogDestroy(PickDialog);
 
       _activeChoices.Remove(this);
       foreach (var trigger in _triggers)

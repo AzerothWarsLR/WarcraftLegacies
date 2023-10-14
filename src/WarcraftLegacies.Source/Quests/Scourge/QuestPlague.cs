@@ -79,7 +79,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
       completingFaction.AddPower(plaguePower);
       ResetVictimControlPointLevel();
 
-      new ScourgeInvasionDialoguePresenter(
+      new ScourgeInvasionDialogPresenter(
         new Choice<Rectangle>(null, "No invasion"),
         new Choice<Rectangle>(Regions.CaerDarrow, "Scholomance"),
         new Choice<Rectangle>(Regions.StratholmeUnlock, "Stratholme"),

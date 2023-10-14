@@ -9,10 +9,10 @@ using static War3Api.Common;
 namespace WarcraftLegacies.Source.GameLogic
 {
   /// <summary>Allows a player to choose between one of two factions at the start of the game.</summary>
-  public sealed class FactionChoiceDialoguePresenter : ChoiceDialoguePresenter<Faction>
+  public sealed class FactionChoiceDialogPresenter : ChoiceDialogPresenter<Faction>
   {
-    /// <summary>Initializes a new instance of the <see cref="FactionChoiceDialoguePresenter"/> class.</summary>
-    public FactionChoiceDialoguePresenter(params Faction[] factions) : base(ConvertFactionsToFactionChoices(factions),
+    /// <summary>Initializes a new instance of the <see cref="FactionChoiceDialogPresenter"/> class.</summary>
+    public FactionChoiceDialogPresenter(params Faction[] factions) : base(ConvertFactionsToFactionChoices(factions),
       "Pick your Faction")
     {
     }
@@ -20,7 +20,7 @@ namespace WarcraftLegacies.Source.GameLogic
     protected override void OnChoiceExpired(player pickingPlayer, Choice<Faction> choice)
     {
       if (GetLocalPlayer() == pickingPlayer)
-        DialogDisplay(GetLocalPlayer(), PickDialogue, false);
+        DialogDisplay(GetLocalPlayer(), PickDialog, false);
 
       if (pickingPlayer.GetFaction() == null && !HasChoiceBeenPicked)
         OnChoicePicked(pickingPlayer, choice);

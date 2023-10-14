@@ -47,9 +47,9 @@ namespace WarcraftLegacies.Source.Setup
       AllFactionSetup.Setup(preplacedUnitSystem, artifactSetup, allLegendSetup);
       SharedFactionConfigSetup.Setup();
       PlayerSetup.Setup();
-      new FactionChoiceDialoguePresenter(GoblinSetup.Goblin, ZandalarSetup.Zandalar).Run(Player(8));
-      new FactionChoiceDialoguePresenter(IllidariSetup.Illidari, SunfurySetup.Sunfury).Run(Player(15));
-      new FactionChoiceDialoguePresenter(DalaranSetup.Dalaran, GilneasSetup.Gilneas).Run(Player(7));
+      new FactionChoiceDialogPresenter(GoblinSetup.Goblin, ZandalarSetup.Zandalar).Run(Player(8));
+      new FactionChoiceDialogPresenter(IllidariSetup.Illidari, SunfurySetup.Sunfury).Run(Player(15));
+      new FactionChoiceDialogPresenter(DalaranSetup.Dalaran, GilneasSetup.Gilneas).Run(Player(7));
       NeutralHostileSetup.Setup();
       AllQuestSetup.Setup(preplacedUnitSystem, artifactSetup, allLegendSetup);
       ObserverSetup.Setup(new[] { Player(21) });
