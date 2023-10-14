@@ -79,20 +79,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
       _gilneasDoor
         .SetInvulnerable(false);
       ResetVictimControlPointLevel();
-      _portalController1.SetInvulnerable(false);
-      _portalController2.SetInvulnerable(false);
-      _innerWaygate1
-        .Show(true)
-        .SetWaygateDestination(Regions.Wrathgate_Portal_1.Center);
-      _innerWaygate2
-        .Show(true)
-        .SetWaygateDestination(Regions.Wrathgate_Portal_2.Center);
-      _outerWaygate1
-        .Show(true)
-        .SetWaygateDestination(Regions.Scholomance_Exterior_1.Center);
-      _outerWaygate2
-        .Show(true)
-        .SetWaygateDestination(Regions.Scholomance_Exterior_2.Center);
+
     }
 
     /// <inheritdoc />
