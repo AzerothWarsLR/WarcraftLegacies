@@ -94,7 +94,6 @@ If you survive the Plague, sail to the frozen wasteland of Northrend and take th
       Lordaeron.ModObjectLimit(Constants.UPGRADE_R06Q_PALADIN_MASTER_TRAINING_LORDAERON, Faction.UNLIMITED);
       Lordaeron.ModObjectLimit(Constants.UPGRADE_R04A_RAPID_FIRE_LORDAERON, Faction.UNLIMITED);
       Lordaeron.ModObjectLimit(Constants.UPGRADE_R00B_VETERAN_FOOTMEN_LORDAERON, Faction.UNLIMITED);
-      Lordaeron.ModObjectLimit(Constants.UPGRADE_R01Q_PEGASUS_TAMING_LORDAERON, Faction.UNLIMITED);
 
       //Todo: these probably should be in some kind of ability library, not here
       Lordaeron.ModAbilityAvailability(Constants.ABILITY_A0N2_GRASPING_VINES_TREANTS, -1);
