@@ -17,7 +17,7 @@
     },
     {
       "Id": 2020631137,
-      "Value": 1
+      "Value": 2
     },
     {
       "Id": 2037408353,
@@ -42,13 +42,18 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Use this ability to call Burning Legion into Azeroth."
+      "Value": "Call the Burning Legion into Azeroth."
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Summon"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "F"
     }
   ]
 }
