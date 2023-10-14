@@ -16,7 +16,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       QuestKelthuzadLich questKelthuzadLich = new(allLegendSetup.Quelthalas.Sunwell, allLegendSetup.Scourge.Kelthuzad);
       QuestKelthuzadDies questKelthuzadDies = new(questKelthuzadLich, allLegendSetup.Scourge.Kelthuzad);
       QuestEnKilahUnlock questEnKilahUnlock = new(Regions.EnKilahUnlock);
-      QuestDrakUnlock questDrakUnlock = new(Regions.DrakUnlock, allLegendSetup.Neutral.DraktharonKeep);
+      QuestDrakUnlock questDrakUnlock = new(Regions.DrakUnlock);
 
       var plagueParameters = new PlagueParameters();
       plagueParameters.PlagueRects = new List<Rectangle>
