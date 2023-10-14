@@ -107,6 +107,7 @@ public static class Regions
 	public static Rectangle EchoIsleAmbient { get; set; } = new Rectangle(-8576f, -10208f, -5056f, -4064f);
 	public static Rectangle EchoUnlock { get; set; } = new Rectangle(-8416f, -6816f, -6208f, -3968f);
 	public static Rectangle ElwinForestAmbient { get; set; } = new Rectangle(8704f, -14816f, 13376f, -12672f);
+	public static Rectangle EnKilahUnlock { get; set; } = new Rectangle(-6016f, 18176f, -4832f, 18848f);
 	public static Rectangle EntireMap { get; set; } = new Rectangle(-24544f, -31840f, 24064f, 25088f);
 	public static Rectangle ExodarBaseUnlock { get; set; } = new Rectangle(-24480f, 5792f, -21056f, 9184f);
 	public static Rectangle Far_Eastern_Northrend { get; set; } = new Rectangle(4608f, 20064f, 7328f, 22944f);
@@ -292,8 +293,8 @@ public static class Regions
 	public static Rectangle StranglethornAmbient2 { get; set; } = new Rectangle(11968f, -24544f, 14880f, -18272f);
 	public static Rectangle StranglethornAmbient3 { get; set; } = new Rectangle(8224f, -24768f, 11968f, -19168f);
 	public static Rectangle StranglethornBaseBuild { get; set; } = new Rectangle(5824f, -24704f, 11936f, -14432f);
-	public static Rectangle StratholmeScourgeBase { get; set; } = new Rectangle(10944f, 12160f, 12576f, 13472f);
 	public static Rectangle StratholmeAmbient { get; set; } = new Rectangle(12608f, 11136f, 16288f, 15136f);
+	public static Rectangle StratholmeScourgeBase { get; set; } = new Rectangle(10944f, 12160f, 12576f, 13472f);
 	public static Rectangle StratholmeShipyard { get; set; } = new Rectangle(13696f, 7232f, 20128f, 11712f);
 	public static Rectangle StratholmeUnlock { get; set; } = new Rectangle(12544f, 11200f, 16224f, 15136f);
 	public static Rectangle Stromgarde { get; set; } = new Rectangle(12896f, 192f, 15232f, 1632f);
