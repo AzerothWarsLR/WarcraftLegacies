@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System.Collections.Generic;
+using System.Linq;
 using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
@@ -11,7 +12,8 @@ namespace WarcraftLegacies.Source.GameLogic
   public sealed class FactionChoiceDialoguePresenter : ChoiceDialoguePresenter<Faction>
   {
     /// <summary>Initializes a new instance of the <see cref="FactionChoiceDialoguePresenter"/> class.</summary>
-    public FactionChoiceDialoguePresenter(params Choice<Faction>[] factionChoices) : base(factionChoices, "Pick your Faction")
+    public FactionChoiceDialoguePresenter(params Faction[] factions) : base(ConvertFactionsToFactionChoices(factions),
+      "Pick your Faction")
     {
     }
 
@@ -57,6 +59,15 @@ namespace WarcraftLegacies.Source.GameLogic
 
       faction.RemoveGoldMines();
       faction.Defeat();
+    }
+    
+    private static Choice<Faction>[] ConvertFactionsToFactionChoices(IEnumerable<Faction> factions)
+    {
+      return factions.Select(x => new Choice<Faction>
+      {
+        Data = x,
+        Name = x.Name
+      }).ToArray();
     }
   }
 }
