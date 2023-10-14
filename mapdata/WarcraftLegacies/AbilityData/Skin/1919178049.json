@@ -11,26 +11,16 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "(Red - Lich Kel\u0027Thuzad / Kel\u0027Thuzad(Necro)"
+      "Value": "(Kel\u0027thuzad)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "W"
+      "Value": "D"
     },
     {
       "Id": 2020635233,
       "Value": 1
-    },
-    {
-      "Id": 1802007137,
-      "Type": 3,
-      "Value": "W"
-    },
-    {
-      "Id": 1953854049,
-      "Type": 3,
-      "Value": "Sacrifices a target friendly Undead unit to convert its hit points into mana and health for the Lich. |n|n|cffffcc00Level 1|r - 33% of hit points to mana and 25% hit points to health. |n|cffffcc00Level 2|r - 66% of hit points to mana and 50% hit points to health. |n|cffffcc00Level 3|r - 100% of hit points to mana and 75% hit points to health. |n|cffffcc00Level 4|r - 133% of hit points to mana and 100% hit points to health."
     },
     {
       "Level": 4,
@@ -61,6 +51,16 @@
       "Id": 828536161,
       "Type": 3,
       "Value": "Sacrifices a target friendly Undead unit to convert 133% of its hit points into mana for the Lich and 100% of its hit points into health for the Lich."
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Dark Ritual"
+    },
+    {
+      "Id": 2037408353,
+      "Value": 1
     }
   ]
 }
