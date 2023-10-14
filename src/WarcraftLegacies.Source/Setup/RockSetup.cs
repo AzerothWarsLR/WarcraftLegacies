@@ -46,6 +46,9 @@ namespace WarcraftLegacies.Source.Setup
       RockSystem.Register(new RockGroup(Regions.NorthrendRock2, RockChunkId, 360));
       RockSystem.Register(new RockGroup(Regions.NorthrendRock3, RockChunkId, 360));
       RockSystem.Register(new RockGroup(Regions.NorthrendRock4, RockChunkId, 360));
+
+      RockSystem.Register(new RockGroup(Regions.Northrend_Blocker_1, IslandChunkId, 840));
+      RockSystem.Register(new RockGroup(Regions.Northrend_Blocker_2, IslandChunkId, 840));
     }
   }
 }

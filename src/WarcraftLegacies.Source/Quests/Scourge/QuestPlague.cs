@@ -81,9 +81,9 @@ namespace WarcraftLegacies.Source.Quests.Scourge
         new Dictionary<string, Rectangle?>
         {
           {"No Invasion",null},
-          {"Scholomance", Regions.Scholomance_Exterior_1},
+          {"Scholomance", Regions.CaerDarrow},
           {"Straholme",Regions.StratholmeUnlock},
-          {"Tirisfal Glades",Regions.DalaStartPos}
+          {"Deathknell",Regions.DeathknellUnlock}
         }
         ).Run(Player(3));
 
