@@ -12,7 +12,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
   {
 
     public QuestCultoftheDamned() : base("The Cult of the Damned",
-      "The Kingdom of Lordaeron must be eliminated to pave the way for the Legion's arrival.",
+      "To prepare the destruction of the Lordaeron kingdom, a secret cult will be formed.",
       @"ReplaceableTextures\CommandButtons\BTNBaronRivendare.blp")
     {
       AddObjective(new ObjectiveTime(420));
