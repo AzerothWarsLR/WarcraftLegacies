@@ -39,7 +39,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
     protected override string RewardFlavour => "Drak'tharon Keep is now under the control of the Scourge and Kel'tuzad has joined the Scourge.";
 
     /// <inheritdoc/>
-    protected override string RewardDescription => "Control of all buildings in Drak'tharon Keep and can train Kel'tuzad at the altar of darkness";
+    protected override string RewardDescription => "Gain control of all buildings in Drak'tharon Keep and learn to train Kel'thuzad from the Altar of Darkness";
 
     /// <inheritdoc/>
     protected override void OnFail(Faction completingFaction)
