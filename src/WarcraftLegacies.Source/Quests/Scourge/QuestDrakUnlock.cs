@@ -20,11 +20,12 @@ namespace WarcraftLegacies.Source.Quests.Scourge
   public sealed class QuestDrakUnlock : QuestData
   {
     private readonly List<unit> _rescueUnits;
+    private readonly LegendaryHero _kelthuzad;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestDrakUnlock"/> class.
     /// </summary>
-    public QuestDrakUnlock(Rectangle rescueRect) : base(
+    public QuestDrakUnlock(Rectangle rescueRect, LegendaryHero kelthuzad) : base(
       "Drak'tharon Keep", "Drak'tharon Keep will be the perfect place for an outpost by the sea.",
       @"ReplaceableTextures\CommandButtons\BTNUndeadShipyard.blp")
     {
@@ -33,13 +34,14 @@ namespace WarcraftLegacies.Source.Quests.Scourge
       AddObjective(new ObjectiveSelfExists());
       ResearchId = Constants.UPGRADE_R08J_QUEST_COMPLETED_DRAK_THARON_KEEP;
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
+      _kelthuzad = kelthuzad;
     }
 
     /// <inheritdoc/>
     protected override string RewardFlavour => "Drak'tharon Keep is now under the control of the Scourge and Kel'thuzad has joined the Scourge.";
 
     /// <inheritdoc/>
-    protected override string RewardDescription => $"Gain control of all buildings in Drak'tharon Keep and learn to train {GetObjectName(Constants.UNIT_U001_MASTER_OF_THE_CULT_OF_THE_DAMNED_SCOURGE_NECROMANCER)} from the {GetObjectName(Constants.UNIT_UAOD_ALTAR_OF_DARKNESS)}";
+    protected override string RewardDescription => $"Gain control of all buildings in Drak'tharon Keep and learn to train {_kelthuzad.Name} from the {GetObjectName(Constants.UNIT_UAOD_ALTAR_OF_DARKNESS)}";
 
     /// <inheritdoc/>
     protected override void OnFail(Faction completingFaction)
@@ -52,10 +54,6 @@ namespace WarcraftLegacies.Source.Quests.Scourge
     }
 
     /// <inheritdoc/>
-    protected override void OnComplete(Faction completingFaction)
-    {
-      if (completingFaction.Player != null)
-        completingFaction.Player.RescueGroup(_rescueUnits);
-    }
+    protected override void OnComplete(Faction completingFaction) => completingFaction.Player?.RescueGroup(_rescueUnits);
   }
 }
