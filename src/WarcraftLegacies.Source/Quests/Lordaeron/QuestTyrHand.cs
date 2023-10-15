@@ -5,6 +5,7 @@ using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.MetaBased;
+using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.QuestSystem;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -31,7 +32,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
     {
       AddObjective(new ObjectiveEitherOf(
         new ObjectiveEitherOf(new ObjectiveCapitalDead(capitalCity),new ObjectiveCapitalDead(stratholme)),
-        new ObjectiveCapitalDead(lichKing)));
+        new ObjectiveTime(840)));
       AddObjective(new ObjectiveSelfExists());
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
       Required = true;
