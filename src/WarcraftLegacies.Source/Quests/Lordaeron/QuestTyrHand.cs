@@ -30,8 +30,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
       "The city of Tyr's Hand is considered impregnable, but they will be reluctant to join the war",
       @"ReplaceableTextures\CommandButtons\BTNHumanBarracks.blp")
     {
-      AddObjective(new ObjectiveEitherOf(
-        new ObjectiveEitherOf(new ObjectiveCapitalDead(capitalCity),new ObjectiveCapitalDead(stratholme)),
+      AddObjective(new ObjectiveEitherOf(new ObjectiveCapitalDead(stratholme),
         new ObjectiveTime(840)));
       AddObjective(new ObjectiveSelfExists());
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);

@@ -19,7 +19,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       LordaeronSetup.Lordaeron.AddQuest(questStratholme);
       LordaeronSetup.Lordaeron.StartingQuest = questStratholme;
       LordaeronSetup.Lordaeron.AddQuest(questStrahnbrad);
-      LordaeronSetup.Lordaeron.AddQuest(new QuestCapitalCity(Regions.Terenas, allLegendSetup.Lordaeron.Terenas.Unit,
+      LordaeronSetup.Lordaeron.AddQuest(new QuestCapitalCity(preplacedUnitSystem, Regions.Terenas, allLegendSetup.Lordaeron.Terenas.Unit,
         allLegendSetup.Lordaeron.Uther, allLegendSetup.Lordaeron.Arthas, allLegendSetup.Neutral.Caerdarrow, allLegendSetup.Lordaeron.CapitalPalace,
         new QuestData[]
         {
