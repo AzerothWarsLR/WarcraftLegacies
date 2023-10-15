@@ -39,7 +39,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
     protected override string RewardFlavour => "Drak'tharon Keep is now under the control of the Scourge and Kel'thuzad has joined the Scourge.";
 
     /// <inheritdoc/>
-    protected override string RewardDescription => "Gain control of all buildings in Drak'tharon Keep and learn to train Kel'thuzad from the Altar of Darkness";
+    protected override string RewardDescription => $"Gain control of all buildings in Drak'tharon Keep and learn to train {GetObjectName(Constants.UNIT_U001_MASTER_OF_THE_CULT_OF_THE_DAMNED_SCOURGE_NECROMANCER)} from the {GetObjectName(Constants.UNIT_UAOD_ALTAR_OF_DARKNESS)}";
 
     /// <inheritdoc/>
     protected override void OnFail(Faction completingFaction)
