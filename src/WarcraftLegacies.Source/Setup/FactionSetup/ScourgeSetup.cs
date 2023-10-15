@@ -67,7 +67,7 @@ When the Plague hits Lordaeron, a great portal will be opened between Dragonblig
       Scourge.ModObjectLimit(FourCC("uobs"), 4); //Obsidian Statue
       Scourge.ModObjectLimit(FourCC("ufro"), 4); //Frost Wyrm
       Scourge.ModObjectLimit(FourCC("h00H"), 6); //Death Knight
-      Scourge.ModObjectLimit(FourCC("ubsp"), 6); //Destroyer
+      Scourge.ModObjectLimit(Constants.UNIT_UBSP_OBSIDIAN_DESTROYER_SCOURGE, 12);
       Scourge.ModObjectLimit(FourCC("nfgl"), 2); //Plague Titan
 
       //Ship
