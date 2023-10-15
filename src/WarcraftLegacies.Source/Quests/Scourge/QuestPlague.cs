@@ -67,7 +67,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
 
     /// <inheritdoc />
     protected override string RewardDescription =>
-      "All villagers in Lordaeron are transformed into Zombies, several Zombie-spawning Plague Cauldrons spawn throughout Lordaeron, three bases around Lordaeron and Lordaeron's Control Points reset to level 0";
+      "All villagers in Lordaeron are transformed into Zombies, several Zombie-spawning Plague Cauldrons spawn throughout Lordaeron, you gain control of three bases around Lordaeron, and Lordaeron's Control Points reset to level 0";
 
     /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)
