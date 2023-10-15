@@ -43,7 +43,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
     protected override string RewardFlavour => "The city-fortress of Tyr's Hand has decided to join us!";
 
     /// <inheritdoc />
-    protected override string RewardDescription => "Control of all units in Tyr's Hand and Garithos is trainable. You can also train Hightower buildings now.";
+    protected override string RewardDescription => $"Control of all units in Tyr's Hand and Garithos is trainable. You can also build the {GetObjectName(Constants.UNIT_H094_SIEGE_WORKSHOP_LORDAERON_SIEGE)}.";
 
     /// <inheritdoc />
     protected override void OnFail(Faction completingFaction)
