@@ -41,7 +41,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
-      "A base in Icecrown";
+      "Gain control of a base in Icecrown";
 
     /// <inheritdoc/>
     protected override void OnFail(Faction completingFaction)
