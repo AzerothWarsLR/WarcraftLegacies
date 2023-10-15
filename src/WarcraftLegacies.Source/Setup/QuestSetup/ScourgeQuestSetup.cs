@@ -15,7 +15,9 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
         preplacedUnitSystem.GetUnit(Constants.UNIT_N074_QUEEN_NEZAR_AZRET));
       QuestKelthuzadLich questKelthuzadLich = new(allLegendSetup.Quelthalas.Sunwell, allLegendSetup.Scourge.Kelthuzad);
       QuestKelthuzadDies questKelthuzadDies = new(questKelthuzadLich, allLegendSetup.Scourge.Kelthuzad);
-      QuestDrakUnlock questDrakUnlock = new(Regions.DrakUnlock, allLegendSetup.Neutral.DraktharonKeep);
+      QuestEnKilahUnlock questEnKilahUnlock = new(Regions.EnKilahUnlock);
+      QuestDrakUnlock questDrakUnlock = new(Regions.DrakUnlock, allLegendSetup.Scourge.Kelthuzad);
+      QuestCultoftheDamned questCultoftheDamned = new(allLegendSetup.Scourge.Rivendare);
 
       var plagueParameters = new PlagueParameters();
       plagueParameters.PlagueRects = new List<Rectangle>
@@ -45,7 +47,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
         new Point(9418, 5396)
       };
 
-      QuestPlague questPlague = new(plagueParameters, preplacedUnitSystem, LordaeronSetup.Lordaeron, LegionSetup.Legion);
+      QuestPlague questPlague = new(plagueParameters, LordaeronSetup.Lordaeron, LegionSetup.Legion, Regions.DeathknellUnlock, Regions.StratholmeScourgeBase, Regions.CaerDarrow);
 
       ScourgeSetup.Scourge.AddQuest(new QuestScouringofLordaeron(
         new[]
@@ -65,6 +67,8 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
         ScourgeSetup.Scourge.AddQuest(questSpiderWar);
         ScourgeSetup.Scourge.StartingQuest = questSpiderWar;
         ScourgeSetup.Scourge.AddQuest(questDrakUnlock);
+        ScourgeSetup.Scourge.AddQuest(questEnKilahUnlock);
+        ScourgeSetup.Scourge.AddQuest(questCultoftheDamned);
         ScourgeSetup.Scourge.AddQuest(questPlague);
         ScourgeSetup.Scourge.AddQuest(questSapphiron);
         //Early duel
