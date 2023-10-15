@@ -35,6 +35,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
         new ObjectiveTime(840)));
       AddObjective(new ObjectiveSelfExists());
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
+      ResearchId = Constants.UPGRADE_R023_QUEST_COMPLETED_THE_FORTIFIED_CITY;
       Required = true;
     }
 
@@ -42,7 +43,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
     protected override string RewardFlavour => "The city-fortress of Tyr's Hand has decided to join us!";
 
     /// <inheritdoc />
-    protected override string RewardDescription => "Control of all units in Tyr's Hand and Garithos is trainable";
+    protected override string RewardDescription => "Control of all units in Tyr's Hand and Garithos is trainable. You can also train Hightower buildings now.";
 
     /// <inheritdoc />
     protected override void OnFail(Faction completingFaction)
