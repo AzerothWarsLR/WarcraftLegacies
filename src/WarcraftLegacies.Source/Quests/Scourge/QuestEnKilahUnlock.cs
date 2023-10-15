@@ -25,7 +25,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
     /// Initializes a new instance of the <see cref="QuestEnKilahUnlock"/> class.
     /// </summary>
     public QuestEnKilahUnlock(Rectangle rescueRect) : base(
-      "Temple City of En'kilah", "The Temple City of En'kilah will be the perfect place for an outpost near the Borean Tundra.",
+      "Temple City of En'kilah", "The temple city of En'kilah will be the perfect place for an outpost near the Borean Tundra.",
       @"ReplaceableTextures\CommandButtons\BTNNerubianZiggurat.blp")
     {
       AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N09H_EN_KILAH)));
