@@ -4,7 +4,9 @@ using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.TimeBased;
+using MacroTools.Powers;
 using MacroTools.QuestSystem;
+using WarcraftLegacies.Source.Setup.FactionSetup;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Scourge
@@ -33,6 +35,15 @@ namespace WarcraftLegacies.Source.Quests.Scourge
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
     {
+      var power = new PlayerVisionPower("Cult Spies",
+        "Cult spies grant vision over Lordaeron's activities",
+        "Charm",
+        new[]
+        {
+          LordaeronSetup.Lordaeron?.Player
+        });
+      completingFaction.AddPower(power);
+      completingFaction.Player?.DisplayPowerAcquired(power);
     }
   }
 }

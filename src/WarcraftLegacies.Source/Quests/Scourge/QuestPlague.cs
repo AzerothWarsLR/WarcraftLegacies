@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using MacroTools;
 using MacroTools.Extensions;
@@ -95,6 +96,11 @@ namespace WarcraftLegacies.Source.Quests.Scourge
 
       RockSystem.Register(new RockGroup(Regions.Northrend_Blocker_1, FourCC("B013"), 120));
       RockSystem.Register(new RockGroup(Regions.Northrend_Blocker_2, FourCC("B013"), 120));
+      
+      if (completingFaction.TryGetPowerByName("Cult Spies", out var spiesPower))
+        completingFaction.RemovePower(spiesPower);
+      else
+        throw new InvalidOperationException($"Expected {completingFaction.Name} to have the Cult Spies Power.");
     }
 
     /// <inheritdoc />
