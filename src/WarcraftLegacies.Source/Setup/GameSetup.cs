@@ -1,6 +1,7 @@
 ﻿using MacroTools;
 using MacroTools.CommandSystem;
 using MacroTools.ControlPointSystem;
+using MacroTools.FactionSystem;
 using MacroTools.GameModes;
 using MacroTools.Mechanics;
 using MacroTools.PassiveAbilitySystem;
@@ -109,7 +110,6 @@ namespace WarcraftLegacies.Source.Setup
       RuntimeIntegrityChecker.Setup(true);
       PeonsStartHarvestingShips.Setup(preplacedUnitSystem);
       DarkPortalControlNexusSetup.Setup(preplacedUnitSystem);
-      BlackPortalControlNexusSetup.Setup(preplacedUnitSystem);
       CenariusGhost.Setup(allLegendSetup.Druids);
       HelmOfDominationDropsWhenScourgeLeaves.Setup(artifactSetup.HelmOfDomination, allLegendSetup.Scourge.TheFrozenThrone);
       TagSummonedUnits.Setup();

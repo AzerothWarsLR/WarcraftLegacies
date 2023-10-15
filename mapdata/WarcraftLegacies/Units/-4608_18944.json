@@ -4,7 +4,7 @@
     "OwnerId": 27,
     "HP": -1,
     "MP": -1,
-    "GoldAmount": 1000,
+    "GoldAmount": 600,
     "TargetAcquisition": -1,
     "HeroLevel": 1,
     "InventoryData": [],
@@ -13,7 +13,7 @@
     "WaygateDestinationRegionId": -1,
     "TypeId": 1819240302,
     "Position": {
-      "X": -4928,
+      "X": -4992,
       "Y": 18816
     },
     "Rotation": 4.71238899230957,
@@ -25,6 +25,6 @@
     "SkinId": 1819240302,
     "MapItemTableId": -1,
     "ItemTableSets": [],
-    "CreationNumber": 63
+    "CreationNumber": 2848
   }
 ]
