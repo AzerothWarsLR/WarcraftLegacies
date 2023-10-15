@@ -88,6 +88,12 @@ namespace MacroTools.Extensions
           sourcePlayer.SetPlayerAllianceStateControl(otherPlayer, true);
           sourcePlayer.SetPlayerAllianceStateFullControl(otherPlayer, true);
           break;
+        case AllianceState.UnalliedVision:
+          sourcePlayer.SetPlayerAllianceStateAlly(otherPlayer, false);
+          sourcePlayer.SetPlayerAllianceStateVision(otherPlayer, true);
+          sourcePlayer.SetPlayerAllianceStateControl(otherPlayer, false);
+          sourcePlayer.SetPlayerAllianceStateFullControl(otherPlayer, false);
+          break;
         default:
           throw new ArgumentOutOfRangeException(nameof(allianceState), allianceState, null);
       }
