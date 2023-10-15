@@ -1,7 +1,9 @@
 ﻿using MacroTools.ArtifactSystem;
+using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
+using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
@@ -21,13 +23,15 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestKingArthas"/> class.
     /// </summary>
-    public QuestKingArthas(unit terenas, Artifact crownOfLordaeron, Capital capitalPalace, LegendaryHero arthas, Capital lichKing) : base("Line of Succession",
+    public QuestKingArthas(unit terenas, Artifact crownOfLordaeron, Capital capitalPalace, LegendaryHero arthas) : base("Line of Succession",
       "Arthas Menethil is the one true heir of the Kingdom of Lordaeron. The only thing standing in the way of his coronation is the world-ending threat of the Scourge.",
       @"ReplaceableTextures\CommandButtons\BTNArthas.blp")
     {
-      AddObjective(new ObjectiveUnitAlive(capitalPalace.Unit));
+      AddObjective(new ObjectiveControlCapital(capitalPalace, false));
       AddObjective(new ObjectiveControlLegend(arthas, true));
-      AddObjective(new ObjectiveCapitalDead(lichKing));
+      AddObjective(new ObjectiveLegendLevel(arthas, 12));
+      AddObjective(new ObjectiveControlLevel(
+        ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N02J_HOWLING_FJORDS), 10));
       AddObjective(new ObjectiveLegendInRect(arthas, Regions.King_Arthas_crown, "King Terenas"));
       ResearchId = Constants.UPGRADE_R08A_QUEST_COMPLETED_LINE_OF_SUCCESSION;
       _terenas = terenas;
@@ -38,7 +42,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
 
     /// <inheritdoc/>
     protected override string RewardFlavour =>
-      "With the Lich King eliminated, the Kingdom of Lordaeron is free of its greatest threat. King Terenas Menethil proudly abdicates in favor of his son.";
+      "With a buffer outpost in Northrend, the Kingdom of Lordaeron is safer of its greatest threat. King Terenas Menethil proudly abdicates in favor of his son, now an experienced warrior.";
 
     /// <inheritdoc/>
     protected override string RewardDescription =>

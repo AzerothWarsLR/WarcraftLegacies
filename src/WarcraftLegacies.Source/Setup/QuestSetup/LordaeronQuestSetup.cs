@@ -14,7 +14,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem, ArtifactSetup artifactSetup, AllLegendSetup allLegendSetup)
     {
       var questStrahnbrad = new QuestStrahnbrad(Regions.StrahnbradUnlock);
-      var questStratholme = new QuestStratholme(Regions.StratholmeUnlock, preplacedUnitSystem, allLegendSetup.Lordaeron.Arthas, allLegendSetup.Lordaeron.Stratholme);
+      var questStratholme = new QuestStratholme(Regions.StratholmeUnlock, preplacedUnitSystem, allLegendSetup.Lordaeron.Arthas, allLegendSetup.Lordaeron.Uther, allLegendSetup.Lordaeron.Stratholme);
       LordaeronSetup.Lordaeron.AddQuest(new QuestHearthglen(Regions.Hearthglen));
       LordaeronSetup.Lordaeron.AddQuest(questStratholme);
       LordaeronSetup.Lordaeron.StartingQuest = questStratholme;
@@ -30,9 +30,9 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       LordaeronSetup.Lordaeron.AddQuest(new QuestMograine());
       LordaeronSetup.Lordaeron.AddQuest(new QuestShoresOfNorthrend(allLegendSetup.Lordaeron.Arthas, allLegendSetup.Neutral.Caerdarrow));
       LordaeronSetup.Lordaeron.AddQuest(new QuestThunderEagle(allLegendSetup.Neutral.DraktharonKeep));
+      LordaeronSetup.Lordaeron.AddQuest(new QuestChampionoftheLight(allLegendSetup.Lordaeron.Uther));
       LordaeronSetup.Lordaeron.AddQuest(new QuestKingArthas(allLegendSetup.Lordaeron.Terenas.Unit,
-        artifactSetup.CrownOfLordaeron, allLegendSetup.Lordaeron.CapitalPalace, allLegendSetup.Lordaeron.Arthas,
-        allLegendSetup.Scourge.TheFrozenThrone));
+        artifactSetup.CrownOfLordaeron, allLegendSetup.Lordaeron.CapitalPalace, allLegendSetup.Lordaeron.Arthas));
       LordaeronSetup.Lordaeron.AddQuest(new QuestKingdomOfManLordaeron(artifactSetup.CrownOfLordaeron,
         artifactSetup.CrownOfStormwind, allLegendSetup.Lordaeron.Arthas));
     }
