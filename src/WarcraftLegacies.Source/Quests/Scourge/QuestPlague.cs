@@ -39,6 +39,9 @@ namespace WarcraftLegacies.Source.Quests.Scourge
     /// <param name="plagueParameters">Provides information about how the Plague should work.</param>
     /// <param name="plagueVictim">The faction that the plague will primarily affect.</param>
     /// <param name="secondaryPlagueFaction">The faction that will gain some of the fringe benefits of the plague.</param>
+    /// /// <param name="coast">The base near Stratholme coast.</param>
+    /// /// <param name="deathknell">The base near Capital Palace.</param>
+    /// /// <param name="scholomance">The base at Caer Darrow.</param>
     public QuestPlague(PlagueParameters plagueParameters, Faction plagueVictim,
       Faction secondaryPlagueFaction, Rectangle deathknell, Rectangle coast, Rectangle scholomance) : base(
       "Plague of Undeath",
