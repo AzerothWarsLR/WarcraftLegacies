@@ -60,7 +60,7 @@ namespace WarcraftLegacies.Source.Setup
       FactionMultiboard.Setup();
       BookSetup.Setup();
       HintConfig.Setup();
-      WaygateManager.Setup(Constants.UNIT_N0AO_WAY_GATE_DALARAN_OTHER);
+      WaygateManager.Setup(Constants.UNIT_N0AO_WAY_GATE_DALARAN_SIEGE);
       BlightSystem.Setup(ScourgeSetup.Scourge);
       BlightSetup.Setup(preplacedUnitSystem);
       QuestMenuSetup.Setup();

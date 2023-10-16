@@ -35,7 +35,7 @@ namespace WarcraftLegacies.Source.Quests.Ironforge
 
     /// <inheritdoc />
     protected override string RewardDescription =>
-      $"Gain control of Aerie Peak, learn to train War Gryphons from the Gryphon Aviary, learn to train Falstad Wildhammer from the {GetObjectName(Constants.UNIT_H07B_ALTAR_OF_FORTITUDE_IRONFORGE_ALTAR)}, and gain the ability to research {GetObjectName(Constants.UPGRADE_R02K_GRYPHON_SUPERIOR_BREED_KHAZ_MODAN)} at the {GetObjectName(Constants.UNIT_HGRA_GRYPHON_AVIARY_IRONFORGE_SPECIALIST)}.";
+      $"Gain control of Aerie Peak, learn to train War Gryphons from the Gryphon Aviary, learn to train Falstad Wildhammer from the {GetObjectName(Constants.UNIT_H07B_ALTAR_OF_FORTITUDE_IRONFORGE_ALTAR)}, and gain the ability to research {GetObjectName(Constants.UPGRADE_R02K_GRYPHON_SUPERIOR_BREED_KHAZ_MODAN)} at the {GetObjectName(Constants.UNIT_HGRA_GRYPHON_AVIARY_IRONFORGE_SIEGE)}.";
 
     /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)
