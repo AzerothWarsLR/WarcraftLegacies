@@ -26,7 +26,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
 
     /// <inheritdoc />
     protected override string RewardDescription =>
-      $"Your casters and paladin gain 200 hit points and 5 damage. Paladin gain the reincarnation ability.";
+      $"Your casters and Paladins gain 200 hit points and 5 damage, and Paladins gain the Reincarnation ability";
 
   }
 }
