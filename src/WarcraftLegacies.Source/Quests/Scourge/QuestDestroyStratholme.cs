@@ -21,28 +21,22 @@ namespace WarcraftLegacies.Source.Quests.Scourge
       Required = true;
     }
 
-    private static bool IsPointValidForArthas(Point whichPoint) =>
-      !whichPoint.IsPathable(PATHING_TYPE_FLOATABILITY) && whichPoint.IsPathable(PATHING_TYPE_WALKABILITY);
+    /// <inheritdoc />
+    protected override string RewardFlavour => "Having failed to protect his people, Arthas seizes the cursed runeblade Frostmourne as the instrument of his vengeance. The malevolence of the blade overwhelms him. Arthas is now a loyal Death Knight of the Scourge, and will soon become its greatest champion.";
 
     /// <inheritdoc />
-    protected override string RewardFlavour => "Prince Arthas could not protect the people of Stratholme. The Lich King's hold over him grows stronger.";
-
-    /// <inheritdoc />
-    protected override string RewardDescription => "Gain the power Eye of the Lich King, which allows you to identify where Arthas is at any time";
+    protected override string RewardDescription => $"Learn to train {_arthas.Name} from the {GetObjectName(Constants.UNIT_UAOD_ALTAR_OF_DARKNESS)}";
 
     /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)
     {
-      Point randomPoint;
-      do
-      {
-        randomPoint = Regions.ArthasRandomPoint.GetRandomPoint();
-      } while (!IsPointValidForArthas(randomPoint));
+      var arthas = _arthas.Unit;
 
-      if (_arthas.Unit == null || !UnitAlive(_arthas.Unit))
-        _arthas.ForceCreate(LordaeronSetup.Lordaeron?.Player ?? Player(PLAYER_NEUTRAL_AGGRESSIVE), randomPoint, 270);
-      
-      completingFaction.AddPower(new PingPower(_arthas, "Eye of the Lich King", 5, 5));
+      if (arthas == null || !UnitAlive(arthas))
+        return;
+
+      arthas.Kill();
+      arthas.Remove();
     }
   }
 }
