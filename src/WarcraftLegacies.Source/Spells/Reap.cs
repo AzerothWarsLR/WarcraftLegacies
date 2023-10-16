@@ -2,6 +2,8 @@
 using MacroTools;
 using MacroTools.Extensions;
 using MacroTools.SpellSystem;
+using WarcraftLegacies.Source.Buffs;
+using WCSharp.Buffs;
 using static War3Api.Common;
 using WCSharp.Shared.Data;
 
@@ -25,6 +27,9 @@ namespace WarcraftLegacies.Source.Spells
     /// <summary>An effect that gets applied to the caster while they are buffed.</summary>
     public string BuffEffect { get; init; } = string.Empty;
     
+    /// <summary>How long the Strength buff lasts.</summary>
+    public float Duration { get; init; }
+    
     /// <inheritdoc />
     public Reap(int id) : base(id)
     {
@@ -34,21 +39,36 @@ namespace WarcraftLegacies.Source.Spells
     public override void OnCast(unit caster, unit target, Point targetPoint)
     {
       var casterPosition = caster.GetPosition();
-      var radius = Radius.Base + Radius.PerLevel * GetAbilityLevel(caster);
-      var unitsSlain = UnitsSlain.Base + UnitsSlain.PerLevel * GetAbilityLevel(caster);
+      var abilityLevel = GetAbilityLevel(caster);
+      var radius = Radius.Base + Radius.PerLevel * abilityLevel;
+      var unitsSlain = UnitsSlain.Base + UnitsSlain.PerLevel * abilityLevel;
       var killTargets = CreateGroup()
         .EnumUnitsInRange(casterPosition, radius)
         .EmptyToList()
         .Where(x => IsValidTarget(x, caster))
         .OrderBy(GetUnitLevel)
-        .Take(unitsSlain);
+        .Take(unitsSlain)
+        .ToList();
 
+      if (!killTargets.Any())
+        return;
+      
       foreach (var killTarget in killTargets)
       {
         killTarget.TakeDamage(caster, killTarget.GetHitPoints(), damageType: DAMAGE_TYPE_UNIVERSAL, attackType: ATTACK_TYPE_CHAOS);
         AddSpecialEffect(KillEffect, GetUnitX(killTarget), GetUnitY(killTarget))
           .SetLifespan();
       }
+
+      var strengthGainPerTarget = StrengthPerUnit.Base + StrengthPerUnit.PerLevel * abilityLevel;
+      
+      BuffSystem.Add(new ReapBuff(caster, BuffEffect)
+      {
+        Active = true,
+        Duration = Duration,
+        IsBeneficial = true,
+        StrengthGain = strengthGainPerTarget * killTargets.Count
+      });
     }
 
     private static bool IsValidTarget(unit target, unit caster)

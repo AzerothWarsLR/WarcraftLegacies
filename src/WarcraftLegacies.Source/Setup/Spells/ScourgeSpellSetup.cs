@@ -80,6 +80,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
         {
           Base = 500
         },
+        Duration = 30,
         KillEffect = @"Objects\Spawnmodels\Undead\UndeadDissipate\UndeadDissipate.mdl",
         BuffEffect = @"Abilities\Spells\Items\AIso\BIsvTarget.mdl"
       });
