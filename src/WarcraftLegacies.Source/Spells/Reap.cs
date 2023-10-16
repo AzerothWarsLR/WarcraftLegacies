@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using MacroTools;
 using MacroTools.Extensions;
 using MacroTools.SpellSystem;
@@ -38,44 +39,52 @@ namespace WarcraftLegacies.Source.Spells
     /// <inheritdoc />
     public override void OnCast(unit caster, unit target, Point targetPoint)
     {
-      var casterPosition = caster.GetPosition();
-      var abilityLevel = GetAbilityLevel(caster);
-      var radius = Radius.Base + Radius.PerLevel * abilityLevel;
-      var unitsSlain = UnitsSlain.Base + UnitsSlain.PerLevel * abilityLevel;
-      var killTargets = CreateGroup()
-        .EnumUnitsInRange(casterPosition, radius)
-        .EmptyToList()
-        .Where(x => IsValidTarget(x, caster))
-        .OrderBy(GetUnitLevel)
-        .Take(unitsSlain)
-        .ToList();
-
-      if (!killTargets.Any())
-        return;
-      
-      foreach (var killTarget in killTargets)
+      try
       {
-        killTarget.TakeDamage(caster, killTarget.GetHitPoints(), damageType: DAMAGE_TYPE_UNIVERSAL, attackType: ATTACK_TYPE_CHAOS);
-        AddSpecialEffect(KillEffect, GetUnitX(killTarget), GetUnitY(killTarget))
-          .SetLifespan();
+        var casterPosition = caster.GetPosition();
+        var abilityLevel = GetAbilityLevel(caster);
+        var radius = Radius.Base + Radius.PerLevel * abilityLevel;
+        var unitsSlain = UnitsSlain.Base + UnitsSlain.PerLevel * abilityLevel;
+        var killTargets = CreateGroup()
+          .EnumUnitsInRange(casterPosition, radius)
+          .EmptyToList()
+          .Where(x => IsValidTarget(x, caster))
+          .OrderBy(x => GetUnitLevel(x))
+          .Take(unitsSlain)
+          .ToList();
+
+        if (!killTargets.Any())
+          return;
+
+        foreach (var killTarget in killTargets)
+        {
+          killTarget.TakeDamage(caster, killTarget.GetHitPoints(), damageType: DAMAGE_TYPE_UNIVERSAL,
+            attackType: ATTACK_TYPE_CHAOS);
+          AddSpecialEffect(KillEffect, GetUnitX(killTarget), GetUnitY(killTarget))
+            .SetLifespan();
+        }
+
+        var strengthGainPerTarget = StrengthPerUnit.Base + StrengthPerUnit.PerLevel * abilityLevel;
+
+        BuffSystem.Add(new ReapBuff(caster, BuffEffect)
+        {
+          Active = true,
+          Duration = Duration,
+          IsBeneficial = true,
+          StrengthGain = strengthGainPerTarget * killTargets.Count
+        });
       }
-
-      var strengthGainPerTarget = StrengthPerUnit.Base + StrengthPerUnit.PerLevel * abilityLevel;
-      
-      BuffSystem.Add(new ReapBuff(caster, BuffEffect)
+      catch (Exception ex)
       {
-        Active = true,
-        Duration = Duration,
-        IsBeneficial = true,
-        StrengthGain = strengthGainPerTarget * killTargets.Count
-      });
+        Logger.LogError($"Failed to cast {nameof(Reap)}: {ex}");
+      }
     }
 
-    private static bool IsValidTarget(unit target, unit caster)
-    {
-      return !IsUnitType(target, UNIT_TYPE_HERO) && !IsUnitType(target, UNIT_TYPE_STRUCTURE) &&
-             !IsUnitType(target, UNIT_TYPE_ANCIENT) && !IsUnitType(target, UNIT_TYPE_MECHANICAL) &&
-             !IsUnitType(target, UNIT_TYPE_MAGIC_IMMUNE) && !IsPlayerAlly(caster.OwningPlayer(), target.OwningPlayer());
-    }
+    private static bool IsValidTarget(unit target, unit caster) =>
+      UnitAlive(target) &&
+      !IsUnitType(target, UNIT_TYPE_HERO) && !IsUnitType(target, UNIT_TYPE_STRUCTURE) &&
+      !IsUnitType(target, UNIT_TYPE_ANCIENT) && !IsUnitType(target, UNIT_TYPE_MECHANICAL) &&
+      !IsUnitType(target, UNIT_TYPE_MAGIC_IMMUNE) &&
+      !IsPlayerAlly(caster.OwningPlayer(), target.OwningPlayer());
   }
 }

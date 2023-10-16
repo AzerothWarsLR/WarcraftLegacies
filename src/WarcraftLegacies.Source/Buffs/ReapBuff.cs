@@ -15,6 +15,7 @@ namespace WarcraftLegacies.Source.Buffs
     {
       EffectString = effectPath;
       EffectAttachmentPoint = "origin";
+      EffectScale = 2;
     }
     
     public override void OnApply()
