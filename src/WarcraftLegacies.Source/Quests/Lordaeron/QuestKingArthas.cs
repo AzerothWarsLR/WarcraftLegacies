@@ -42,7 +42,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
 
     /// <inheritdoc/>
     protected override string RewardFlavour =>
-      "With a succesful offensive in Northrend and the establishement of an outpost in the Holwing Fjord, the Kingdom of Lordaeron is safer of its greatest threat. King Terenas Menethil proudly abdicates in favor of his son, now an experienced warrior.";
+      "Fate decreed that Arthas would witness the fall of Stratholme and become corrupted by vengeance. Instead, he defended his homeland from the ravenous Scourge and took the battle to Northrend. Back at home, Terenas Menethil is forced to admit: his son is ready to be King.";
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
