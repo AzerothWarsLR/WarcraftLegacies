@@ -1,6 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
-using MacroTools;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.Libraries;
@@ -95,6 +95,11 @@ namespace WarcraftLegacies.Source.Quests.Scourge
 
       RockSystem.Register(new RockGroup(Regions.Northrend_Blocker_1, FourCC("B013"), 120));
       RockSystem.Register(new RockGroup(Regions.Northrend_Blocker_2, FourCC("B013"), 120));
+      
+      if (completingFaction.TryGetPowerByName("Cult Spies", out var spiesPower))
+        completingFaction.RemovePower(spiesPower);
+      else
+        throw new InvalidOperationException($"Expected {completingFaction.Name} to have the Cult Spies Power.");
     }
 
     /// <inheritdoc />
@@ -116,6 +121,8 @@ namespace WarcraftLegacies.Source.Quests.Scourge
         var position = plagueRect.GetRandomPoint();
         var plagueCauldron = CreateUnit(primaryPlaguePlayer, _plagueParameters.PlagueCauldronUnitTypeId, position.X, position.Y, 0)
           .SetTimedLife(_plagueParameters.Duration);
+
+        plagueCauldron.RemoveDestructablesInRadius(250f);
 
         CreateUnit(secondaryPlaguePlayer, Constants.UNIT_U00D_LEGION_HERALD_LEGION_WORKER, position.X, position.Y, 0);
 

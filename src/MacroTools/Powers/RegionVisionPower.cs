@@ -8,12 +8,12 @@ namespace MacroTools.Powers
   /// <summary>
   ///   Grants the <see cref="Faction" /> permanent visibility over one or more <see cref="Rectangle" />s.
   /// </summary>
-  public sealed class VisionPower : Power
+  public sealed class RegionVisionPower : Power
   {
     private readonly List<fogmodifier> _fogModifiers = new();
     private readonly IEnumerable<Rectangle> _visionRects;
 
-    public VisionPower(string name, string description, string iconName, IEnumerable<Rectangle> visionRects)
+    public RegionVisionPower(string name, string description, string iconName, IEnumerable<Rectangle> visionRects)
     {
       Name = name;
       Description = description;

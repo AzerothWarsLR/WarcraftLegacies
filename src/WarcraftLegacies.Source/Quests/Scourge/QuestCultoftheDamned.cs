@@ -1,10 +1,10 @@
-﻿using System.Collections.Generic;
-using MacroTools.Extensions;
+﻿using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
-using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.TimeBased;
+using MacroTools.Powers;
 using MacroTools.QuestSystem;
+using WarcraftLegacies.Source.Setup.FactionSetup;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Scourge
@@ -28,11 +28,20 @@ namespace WarcraftLegacies.Source.Quests.Scourge
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
-      $"Gain vision over Lordaeron until you unleash the Plague, the Plague of Undeath research becomes available in the {GetObjectName(Constants.UNIT_U000_FROZEN_THRONE_SCOURGE_MAIN)}, and {_rivendare.Name} becomes trainable at the {GetObjectName(Constants.UNIT_UAOD_ALTAR_OF_DARKNESS)}";
+      $"Gain vision over Lordaeron until you unleash the Plague, the Plague of Undeath research becomes available in the {GetObjectName(Constants.UNIT_U000_FROZEN_THRONE_SCOURGE_MAIN)}, and {_rivendare.Name} becomes trainable at the {GetObjectName(Constants.UNIT_UAOD_ALTAR_OF_DARKNESS_SCOURGE_ALTAR)}";
 
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
     {
+      var power = new PlayerVisionPower("Cult Spies",
+        "Grants vision of all of Lordaeron's units.",
+        "Acolyte",
+        new[]
+        {
+          LordaeronSetup.Lordaeron?.Player
+        });
+      completingFaction.AddPower(power);
+      completingFaction.Player?.DisplayPowerAcquired(power);
     }
   }
 }

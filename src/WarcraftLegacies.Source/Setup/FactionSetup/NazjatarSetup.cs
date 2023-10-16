@@ -24,7 +24,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
       Nazjatar.ModObjectLimit(Constants.UNIT_N0C4_SPAWNING_GROUNDS_NZOTH_BARRACKS, Faction.UNLIMITED);
       Nazjatar.ModObjectLimit(Constants.UNIT_N0C7_ROYAL_TEMPLE_NZOTH_MAGIC, Faction.UNLIMITED);
       Nazjatar.ModObjectLimit(Constants.UNIT_N0C3_SHRINE_OF_AZSHARA_NZOTH_SPECIALIST, Faction.UNLIMITED);
-      Nazjatar.ModObjectLimit(Constants.UNIT_N08V_PORTAL_OF_THE_DEEP_NZOTH_SPECIALIST, Faction.UNLIMITED);
+      Nazjatar.ModObjectLimit(Constants.UNIT_N08V_PORTAL_OF_THE_DEEP_NZOTH_SIEGE, Faction.UNLIMITED);
       Nazjatar.ModObjectLimit(Constants.UNIT_N0BZ_DEEP_VAULT_NZOTH_SHOP, Faction.UNLIMITED);
       Nazjatar.ModObjectLimit(Constants.UNIT_N0C0_ALTAR_OF_THE_QUEEN_NZOTH_ALTAR, Faction.UNLIMITED);
       Nazjatar.ModObjectLimit(Constants.UNIT_N08L_TEMPLE_PROTECTOR_TOLVIR_TOWER, Faction.UNLIMITED);

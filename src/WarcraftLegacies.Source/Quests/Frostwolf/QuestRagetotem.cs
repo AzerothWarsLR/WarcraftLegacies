@@ -28,7 +28,7 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
 
     /// <inheritdoc />
     protected override string RewardDescription =>
-      $"Learn to train {GetObjectName(Constants.UNIT_O06T_TAUREN_GLADIATOR_FROSTWOLF)}s from the {GetObjectName(Constants.UNIT_OTTO_TAUREN_TOTEM_FROSTWOLF_SPECIALIST)}";
+      $"Learn to train {GetObjectName(Constants.UNIT_O06T_TAUREN_GLADIATOR_FROSTWOLF)}s from the {GetObjectName(Constants.UNIT_OTTO_TAUREN_TOTEM_FROSTWOLF_SIEGE)}";
 
   }
 }
