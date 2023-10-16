@@ -1,23 +1,14 @@
 {
-  "OldId": 2038064705,
-  "NewId": 1145778241,
+  "OldId": 1802723905,
+  "NewId": 825246797,
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1953653089,
-      "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNTransmute.blp"
-    },
-    {
-      "Id": 2020631137,
-      "Value": 1
-    },
-    {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "(unused)"
+      "Value": "(Lordaeron - Alexandros)"
     },
     {
       "Id": 2037082209,
@@ -25,21 +16,23 @@
       "Value": "W"
     },
     {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Increases this units attack speed by 40% and increases movement speed by 10%. |nLasts 12 seconds."
+    },
+    {
       "Id": 1835101793,
       "Type": 3,
       "Value": "Holy Power"
     },
     {
-      "Id": 1918988897,
-      "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNTransmute.blp"
-    },
-    {
-      "Id": 2020635233,
-      "Value": 1
-    },
-    {
       "Id": 1802007137,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1802007905,
       "Type": 3,
       "Value": "W"
     },
@@ -66,40 +59,48 @@
       "Value": "Holy Power - [|cffffcc00Level 2|r]"
     },
     {
-      "Level": 3,
-      "Id": 829453409,
-      "Type": 3,
-      "Value": "Holy Power - [|cffffcc00Level 3|r]"
-    },
-    {
       "Level": 4,
       "Id": 829453409,
       "Type": 3,
       "Value": "Holy Power - [|cffffcc00Level 4|r]"
     },
     {
-      "Level": 1,
-      "Id": 828536161,
+      "Level": 3,
+      "Id": 829453409,
       "Type": 3,
-      "Value": "Increases Alexandros\u0027 attack speed by 40% and movement speed by 10% for 12 seconds."
+      "Value": "Holy Power - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Increases Alexandros\u0027 attack speed by 70% and movement speed by 15% for 12 seconds."
+      "Value": "Increases this units attack speed by 70% and increases movement speed by 15%. |nLasts 12 seconds."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Increases Alexandros\u0027 attack speed by 100% and movement speed by 20% for 12 seconds."
+      "Value": "Increases this units attack speed by 100% and increases movement speed by 20%. |nLasts 12 seconds."
     },
     {
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Increases Alexandros\u0027 attack speed by 130% and movement speed by 25% for 12 seconds."
+      "Value": "Increases this units attack speed by 130% and increases movement speed by 25%. |nLasts 12 seconds."
+    },
+    {
+      "Id": 2020631137,
+      "Value": 1
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNTransmute.blp"
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNTransmute.blp"
     },
     {
       "Id": 1918989665,
@@ -107,13 +108,16 @@
       "Value": "ReplaceableTextures\\CommandButtons\\BTNTransmute.blp"
     },
     {
+      "Id": 2020635233,
+      "Value": 1
+    },
+    {
       "Id": 2019718497,
       "Value": 1
     },
     {
-      "Id": 1802007905,
-      "Type": 3,
-      "Value": "W"
+      "Id": 2036495713,
+      "Value": 2
     }
   ]
 }
