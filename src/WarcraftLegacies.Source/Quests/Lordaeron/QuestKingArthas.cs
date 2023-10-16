@@ -24,7 +24,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
     /// Initializes a new instance of the <see cref="QuestKingArthas"/> class.
     /// </summary>
     public QuestKingArthas(unit terenas, Artifact crownOfLordaeron, Capital capitalPalace, LegendaryHero arthas) : base("Line of Succession",
-      "Arthas Menethil is the one true heir of the Kingdom of Lordaeron. The only thing standing in the way of his coronation is the world-ending threat of the Scourge. Lordaeron is vulnerable, Arthas will need to safeguard his kingdom and prove his worth to ascend as king.",
+      "Arthas Menethil is the sole heir to the Lordaeron crown. His father, ever obstinate in his old age, denies the existential threat of the Scourge and forbids Arthas from bringing the fight to Northrend. The crown prince will simply have to take matters into his own hands.",
       @"ReplaceableTextures\CommandButtons\BTNArthas.blp")
     {
       AddObjective(new ObjectiveControlCapital(capitalPalace, false));
