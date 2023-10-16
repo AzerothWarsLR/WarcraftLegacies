@@ -1,4 +1,4 @@
-using MacroTools.Extensions;
+﻿using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
@@ -22,7 +22,7 @@ namespace WarcraftLegacies.Source.Quests.Legion
       "The Sunwell has been captured by the Scourge. It now writhes with necromantic energy.";
 
     /// <inheritdoc/>
-    protected override string RewardDescription => "A research improving your Dreadlords";
+    protected override string RewardDescription => "A research improving your Dreadlords and Nazthrezim. It will also unlock Astral Walk";
 
     /// <inheritdoc/>
     protected override void OnAdd(Faction whichFaction) => 
