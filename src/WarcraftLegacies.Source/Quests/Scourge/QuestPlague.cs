@@ -93,6 +93,10 @@ namespace WarcraftLegacies.Source.Quests.Scourge
       completingFaction.Player.RescueGroup(_coastUnits);
       completingFaction.Player.RescueGroup(_scholomanceUnits);
 
+      CreateUnit(_secondaryPlagueFaction.Player, Constants.UNIT_U005_DREAD_SHRINE_LEGION_SPECIAL, 11138, 12802, 0);
+      CreateUnit(_secondaryPlagueFaction.Player, Constants.UNIT_U005_DREAD_SHRINE_LEGION_SPECIAL, 4860, 9277, 0);
+      CreateUnit(_secondaryPlagueFaction.Player, Constants.UNIT_U005_DREAD_SHRINE_LEGION_SPECIAL, 14725, 7356, 0);
+
       RockSystem.Register(new RockGroup(Regions.Northrend_Blocker_1, FourCC("B013"), 120));
       RockSystem.Register(new RockGroup(Regions.Northrend_Blocker_2, FourCC("B013"), 120));
       
