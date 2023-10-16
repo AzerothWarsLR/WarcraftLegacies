@@ -36,7 +36,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
         "The territories of Lordaeron are fragmented. Regain control of the old Alliance's hold to secure the kingdom.",
         @"ReplaceableTextures\CommandButtons\BTNCastle.blp")
     {
-      AddObjective(new ObjectiveUnitIsDead(preplacedUnitSystem.GetUnit(FourCC("n0AG"))));
+      AddObjective(new ObjectiveUnitIsDead(preplacedUnitSystem.GetUnit(Constants.UNIT_N0AG_LORD_BAROV)));
       foreach (var prequisite in prequisites)
         AddObjective(new ObjectiveCompleteQuest(prequisite));
       AddObjective(new ObjectiveControlLegend(arthas, false));

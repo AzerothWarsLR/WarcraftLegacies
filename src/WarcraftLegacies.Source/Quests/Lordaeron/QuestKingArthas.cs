@@ -24,7 +24,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
     /// Initializes a new instance of the <see cref="QuestKingArthas"/> class.
     /// </summary>
     public QuestKingArthas(unit terenas, Artifact crownOfLordaeron, Capital capitalPalace, LegendaryHero arthas) : base("Line of Succession",
-      "Arthas Menethil is the one true heir of the Kingdom of Lordaeron. The only thing standing in the way of his coronation is the world-ending threat of the Scourge.",
+      "Arthas Menethil is the one true heir of the Kingdom of Lordaeron. The only thing standing in the way of his coronation is the world-ending threat of the Scourge. Lordaeron is vulnerable, Arthas will need to safeguard his kingdom and prove his worth to ascend as king.",
       @"ReplaceableTextures\CommandButtons\BTNArthas.blp")
     {
       AddObjective(new ObjectiveControlCapital(capitalPalace, false));
@@ -42,11 +42,13 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
 
     /// <inheritdoc/>
     protected override string RewardFlavour =>
-      "With a buffer outpost in Northrend, the Kingdom of Lordaeron is safer of its greatest threat. King Terenas Menethil proudly abdicates in favor of his son, now an experienced warrior.";
+      "With a succesful offensive in Northrend and the establishement of an outpost in the Holwing Fjord, the Kingdom of Lordaeron is safer of its greatest threat. King Terenas Menethil proudly abdicates in favor of his son, now an experienced warrior.";
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
-      $"Arthas becomes the King of Lordaeron, gains the Crown of Lordaeron, and he can no longer permanently die. Learn to build {GetObjectName(Constants.UNIT_H06C_HIGH_TOWER_LORDAERON_SPECIALIST)}s. Your Knights and Huntsman are upgraded to stronger units";
+      $"Arthas becomes the King of Lordaeron, gains the Crown of Lordaeron, and he can no longer permanently die. Learn to build {GetObjectName(Constants.UNIT_H06C_HIGH_TOWER_LORDAERON_SPECIALIST)}s. " +
+      $"Your {GetObjectName(Constants.UNIT_HKNI_KNIGHT_LORDAERON)} will upgrade to {GetObjectName(Constants.UNIT_H0CP_GALLANT_KNIGHT_LORDAERON)}. " +
+      $"Your {GetObjectName(Constants.UNIT_H01C_HUNTSMAN_LORDAERON)} will become {GetObjectName(Constants.UNIT_H0CQ_ROYAL_ARBALEST_LORDAERON)}.";
 
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
