@@ -84,7 +84,7 @@ namespace WarcraftLegacies.Source.UnitTypes
         Category = UnitCategory.Shipyard
       });
 
-      UnitType.Register(new UnitType(Constants.UNIT_USHP_HAUNTED_HARBOR_SCOURGE)
+      UnitType.Register(new UnitType(Constants.UNIT_USHP_HAUNTED_HARBOR_SCOURGE_SHIPYARD)
       {
         Category = UnitCategory.Shipyard
       });
@@ -94,7 +94,7 @@ namespace WarcraftLegacies.Source.UnitTypes
         Category = UnitCategory.Shipyard
       });
 
-      UnitType.Register(new UnitType(Constants.UNIT_ESHY_KALDOREI_DOCKS)
+      UnitType.Register(new UnitType(Constants.UNIT_ESHY_KALDOREI_DOCKS_DRUID_SENTINEL_SHIPYARD)
       {
         Category = UnitCategory.Shipyard
       });
