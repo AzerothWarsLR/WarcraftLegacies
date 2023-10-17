@@ -159,6 +159,16 @@ namespace MacroTools.LegendSystem
       RefreshDummy();
     }
     
+    /// <summary>Permanently kills the <see cref="LegendaryHero"/>, preventing it from ever being revived.</summary>
+    public void PermanentlyKill()
+    {
+      if (Hivemind && OwningPlayer != null)
+        PlayerDistributor.DistributePlayer(OwningPlayer);
+      
+      OnPermaDeath();
+      PermanentlyDied?.Invoke(this, this);
+    }
+    
     private void OnDeath()
     {
       if (!_permaDies && !AllDependenciesAreMissing()) 
@@ -234,16 +244,6 @@ namespace MacroTools.LegendSystem
         GetOwningPlayer(Unit) == Player(PLAYER_NEUTRAL_AGGRESSIVE)
           ? $"\n|cffffcc00LEGENDARY FOE SLAIN|r\n{DeathMessage}"
           : $"\n|cffffcc00HERO SLAIN|r\n{DeathMessage}");
-    }
-
-    private void PermanentlyKill()
-    {
-      if (Hivemind && OwningPlayer != null)
-        PlayerDistributor.DistributePlayer(OwningPlayer);
-
-
-      OnPermaDeath();
-      PermanentlyDied?.Invoke(this, this);
     }
     
     private void RefreshDummy()
