@@ -42,12 +42,12 @@ namespace WarcraftLegacies.Source.Quests.Legion
 
     /// <inheritdoc />
     protected override string RewardDescription =>
-      "The hero Archimonde, control of all units in the Twisting Nether, learn to train Greater Demons, and can now build more Nether Pit and Summoning Circle";
+      $"The hero Archimonde, control of all units in the Twisting Nether, learn to train Greater Demons, and can now build up to 12 {GetObjectName(Constants.UNIT_N04Q_NETHER_PIT_LEGION_BARRACKS)} and {GetObjectName(Constants.UNIT_U006_SUMMONING_CIRCLE_LEGION_SPECIALIST)}";
 
     /// <inheritdoc />
     protected override void OnComplete(Faction whichFaction)
     {
-      whichFaction.ModObjectLimit(FourCC("u006"), 12);
+      whichFaction.ModObjectLimit(Constants.UNIT_U006_SUMMONING_CIRCLE_LEGION_SPECIALIST, 12);
       whichFaction.ModObjectLimit(Constants.UNIT_N04Q_NETHER_PIT_LEGION_BARRACKS, 12); //Nether Pit
       whichFaction.ModObjectLimit(Constants.UNIT_NINF_INFERNAL_LEGION, 6);
       foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
