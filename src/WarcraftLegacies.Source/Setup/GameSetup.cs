@@ -1,7 +1,6 @@
 ﻿using MacroTools;
 using MacroTools.CommandSystem;
 using MacroTools.ControlPointSystem;
-using MacroTools.FactionSystem;
 using MacroTools.GameModes;
 using MacroTools.Mechanics;
 using MacroTools.PassiveAbilitySystem;
@@ -107,7 +106,7 @@ namespace WarcraftLegacies.Source.Setup
       CapturableUnitSetup.Setup(preplacedUnitSystem);
       EyeOfSargerasPickup.Setup();
       SacrificeAcolyte.Setup();
-      RuntimeIntegrityChecker.Setup(true);
+      RuntimeIntegrityChecker.Setup();
       PeonsStartHarvestingShips.Setup(preplacedUnitSystem);
       DarkPortalControlNexusSetup.Setup(preplacedUnitSystem);
       CenariusGhost.Setup(allLegendSetup.Druids);
