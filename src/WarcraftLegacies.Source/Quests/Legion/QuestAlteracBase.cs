@@ -30,7 +30,7 @@ namespace WarcraftLegacies.Source.Quests.Legion
     }
 
     /// <inheritdoc/>
-    protected override string RewardDescription => $"Gain control of a small base in Alterac, and learn to generate a portal to Alterac using the Argus Teleporter. Also gain 1 {GetObjectName(Constants.UNIT_U005_DREAD_SHRINE_LEGION_SPECIAL)} in three Scourge bases around Lordaeron.";
+    protected override string RewardDescription => $"Gain control of a small base in Alterac, learn to generate a portal to Alterac using the Argus Teleporter, and gain a {GetObjectName(Constants.UNIT_U005_DREAD_SHRINE_LEGION_SPECIAL)} in each of the following Scourge bases: x, y, and z";
 
     /// <inheritdoc/>
     protected override string RewardFlavour =>
