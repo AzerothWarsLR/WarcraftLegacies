@@ -27,9 +27,9 @@ namespace WarcraftLegacies.Source.Setup.Legends
       Thrall = new LegendaryHero("Thrall")
       {
         UnitType = Constants.UNIT_OTHR_WARCHIEF_OF_THE_HORDE_FROSTWOLF,
-        StartingArtifactItemTypeIds = new()
+        StartingArtifacts = new()
         {
-          Constants.ITEM_I004_THE_DOOMHAMMER
+          new(CreateItem(Constants.ITEM_I004_THE_DOOMHAMMER, Regions.ArtifactDummyInstance.Center.X, Regions.ArtifactDummyInstance.Center.Y))
         }
       };
 

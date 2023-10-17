@@ -1,5 +1,6 @@
 ﻿using MacroTools;
 using MacroTools.LegendSystem;
+using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup.Legends
 {
@@ -19,9 +20,9 @@ namespace WarcraftLegacies.Source.Setup.Legends
       GromHellscream = new LegendaryHero("Grom Hellscream")
       {
         UnitType = Constants.UNIT_OGRH_CHIEFTAIN_OF_THE_WARSONG_CLAN_WARSONG,
-        StartingArtifactItemTypeIds = new()
+        StartingArtifacts = new()
         {
-          Constants.ITEM_I01V_GOREHOWL
+          new(CreateItem(Constants.ITEM_I01V_GOREHOWL, Regions.ArtifactDummyInstance.Center.X, Regions.ArtifactDummyInstance.Center.Y))
         }
       };
       

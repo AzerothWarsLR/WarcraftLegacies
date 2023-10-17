@@ -95,9 +95,9 @@ namespace MacroTools.LegendSystem
     public string DeathSfx { private get; init; } = @"Abilities\Spells\Demon\DarkPortal\DarkPortalTarget.mdl";
 
     /// <summary>
-    /// The <see cref="LegendaryHero"/> will spawn with <see cref="Artifact"/>s with these IDs the first time they are created.
+    /// The <see cref="LegendaryHero"/> will spawn with these <see cref="Artifact"/>s the first time they are created.
     /// </summary>
-    public List<int> StartingArtifactItemTypeIds { get; init; } = new();
+    public List<Artifact> StartingArtifacts { get; init; } = new();
     
     /// <summary>
     /// Initializes a new instance of the <see cref="LegendaryHero"/> class.
@@ -201,15 +201,14 @@ namespace MacroTools.LegendSystem
       SetUnitColor(Unit, HasCustomColor ? _playerColor : GetPlayerColor(GetOwningPlayer(Unit)));
       if (GetHeroXP(Unit) < StartingXp) 
         SetHeroXP(Unit, StartingXp, true);
-      if (StartingArtifactItemTypeIds.Any())
+      if (StartingArtifacts.Any())
       {
-        foreach (var artifactItemTypeId in StartingArtifactItemTypeIds)
+        foreach (var artifact in StartingArtifacts)
         {
-          var artifact = new Artifact(CreateItem(artifactItemTypeId, 0, 0));
           ArtifactManager.Register(artifact);
           Unit.AddItemSafe(artifact.Item);
         }
-        StartingArtifactItemTypeIds.Clear();
+        StartingArtifacts.Clear();
       }
       
       RefreshDummy();
