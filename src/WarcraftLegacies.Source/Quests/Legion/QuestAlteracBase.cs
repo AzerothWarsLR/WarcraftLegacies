@@ -19,7 +19,7 @@ namespace WarcraftLegacies.Source.Quests.Legion
     /// Initializes a new instance of the <see cref="QuestAlteracBase"/> class
     /// </summary>
     public QuestAlteracBase(Rectangle rescueRect, Capital caerDarrow) : base("Ruins of Alterac",
-      "The orcs that occupied Alterac have maintained a secret demon gate, the Legion will make good use of it. Thanks to their orc servants, the legion was able to propagate grim shrines around Lordaeron.",
+      "The orcs that occupied Alterac have maintained a secret demon gate, the Legion will make good use of it. This will enable the legion to propagate grim shrines around Lordaeron.",
       @"ReplaceableTextures\CommandButtons\BTNDemonCrypt.blp")
     {
       AddObjective(new ObjectiveControlCapital(caerDarrow, false));
@@ -30,11 +30,11 @@ namespace WarcraftLegacies.Source.Quests.Legion
     }
 
     /// <inheritdoc/>
-    protected override string RewardDescription => "Gain control of a small base in Alterac, and learn to generate a portal to Alterac using the Argus Teleporter. Also gain 1 Dread Shrine in three Scourge bases around Lordaeron.";
+    protected override string RewardDescription => $"Gain control of a small base in Alterac, and learn to generate a portal to Alterac using the Argus Teleporter. Also gain 1 {GetObjectName(Constants.UNIT_U005_DREAD_SHRINE_LEGION_SPECIAL)} in three Scourge bases around Lordaeron.";
 
     /// <inheritdoc/>
     protected override string RewardFlavour =>
-      "The Legion will reveal their plot in Alterac, unlocking demon-gathering portals";
+      "The Legion unveils their plot, a secret base of operation in the Alterac Mountains. Their cult also assisting the Scourge to destroy Lordaeron.";
 
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
