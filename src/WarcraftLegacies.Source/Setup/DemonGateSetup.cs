@@ -15,7 +15,7 @@ namespace WarcraftLegacies.Source.Setup
     {
       DemonGateBuff.Setup(Constants.ABILITY_A05V_TOGGLE_SUMMONING_FEL_HORDE_DEMON_GATE, Constants.BUFF_B08B_TOGGLE_SUMMONING_FEL_HORDE_DEMON_GATE);
       
-      PassiveAbilityManager.Register(new FocalDemonGate(Constants.UNIT_N0AP_FOCAL_DEMON_GATE_FEL_HORDE));
+      PassiveAbilityManager.Register(new FocalDemonGate(Constants.UNIT_N0AP_FOCAL_DEMON_GATE_FEL_HORDE_SIEGE));
       
       PassiveAbilityManager.Register(new DemonGateType(Constants.UNIT_N000_FEL_HOUND_DEMON_GATE_T1_HOUNDS,
         Constants.UNIT_N059_FEL_HOUND_FEL_HORDE_PORTAL, 80, 2));

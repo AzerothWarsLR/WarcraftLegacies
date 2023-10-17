@@ -8,6 +8,7 @@
     AlliedUnits,
     AlliedAdvUnits,
     Neutral,
-    NeutralVision
+    NeutralVision,
+    UnalliedVision
   }
 }

@@ -102,8 +102,8 @@
       "Flags": 1,
       "Name": "Scourge",
       "StartPosition": {
-        "X": -1536,
-        "Y": 22336
+        "X": -1728,
+        "Y": 22080
       },
       "AllyLowPriorityFlags": 36,
       "AllyHighPriorityFlags": 100,
