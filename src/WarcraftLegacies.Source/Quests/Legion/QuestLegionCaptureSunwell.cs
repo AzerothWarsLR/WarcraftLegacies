@@ -22,7 +22,7 @@ namespace WarcraftLegacies.Source.Quests.Legion
       "The Sunwell has been captured by the Scourge. It now writhes with necromantic energy.";
 
     /// <inheritdoc/>
-    protected override string RewardDescription => "A research improving your Dreadlords and Nazthrezim. It will also unlock Astral Walk";
+    protected override string RewardDescription => "Gain a research improving your Dreadlords and Nazthrezim, and grant them the ability to cast Astral Walk";
 
     /// <inheritdoc/>
     protected override void OnAdd(Faction whichFaction) => 
