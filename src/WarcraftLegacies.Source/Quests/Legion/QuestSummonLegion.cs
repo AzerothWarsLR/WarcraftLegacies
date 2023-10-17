@@ -42,19 +42,21 @@ namespace WarcraftLegacies.Source.Quests.Legion
 
     /// <inheritdoc />
     protected override string RewardDescription =>
-      $"The hero Archimonde, control of all units in the Twisting Nether, learn to train Greater Demons, and can now build up to 12 {GetObjectName(Constants.UNIT_N04Q_NETHER_PIT_LEGION_BARRACKS)} and {GetObjectName(Constants.UNIT_U006_SUMMONING_CIRCLE_LEGION_SPECIALIST)}";
+      $"The hero Archimonde, control of all units in the Twisting Nether, learn to train Greater Demons, and can now build up to 12 {GetObjectName(Constants.UNIT_N04Q_NETHER_PIT_LEGION_BARRACKS)} and {GetObjectName(Constants.UNIT_U006_SUMMONING_CIRCLE_LEGION_MAGIC)}";
 
     /// <inheritdoc />
     protected override void OnComplete(Faction whichFaction)
     {
-      whichFaction.ModObjectLimit(Constants.UNIT_U006_SUMMONING_CIRCLE_LEGION_SPECIALIST, 12);
-      whichFaction.ModObjectLimit(Constants.UNIT_N04Q_NETHER_PIT_LEGION_BARRACKS, 12); //Nether Pit
+      whichFaction.ModObjectLimit(Constants.UNIT_U006_SUMMONING_CIRCLE_LEGION_MAGIC, 12);
+      whichFaction.ModObjectLimit(Constants.UNIT_N04Q_NETHER_PIT_LEGION_BARRACKS, 12);
       whichFaction.ModObjectLimit(Constants.UNIT_NINF_INFERNAL_LEGION, 6);
       foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
         SetPlayerAbilityAvailable(player, Constants.ABILITY_A00J_SUMMON_THE_BURNING_LEGION_ALL_FACTIONS, false);
+      
       if (whichFaction.Player != null)
         foreach (var unit in _rescueUnits)
           unit.Rescue(whichFaction.Player);
+      
       _rescueUnits.Clear();
 
       CreatePortals(whichFaction.Player);
