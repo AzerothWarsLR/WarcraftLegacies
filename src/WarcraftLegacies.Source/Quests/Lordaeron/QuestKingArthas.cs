@@ -47,8 +47,8 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
     /// <inheritdoc/>
     protected override string RewardDescription =>
       $"Arthas becomes the King of Lordaeron, gains the Crown of Lordaeron, and he can no longer permanently die. Learn to build {GetObjectName(Constants.UNIT_H06C_HIGH_TOWER_LORDAERON_SPECIALIST)}s. " +
-      $"Your {GetObjectName(Constants.UNIT_HKNI_KNIGHT_LORDAERON)} will upgrade to {GetObjectName(Constants.UNIT_H0CP_GALLANT_KNIGHT_LORDAERON)}. " +
-      $"Your {GetObjectName(Constants.UNIT_H01C_HUNTSMAN_LORDAERON)} will become {GetObjectName(Constants.UNIT_H0CQ_ROYAL_ARBALEST_LORDAERON)}.";
+      $"Your {GetObjectName(Constants.UNIT_HKNI_KNIGHT_LORDAERON)}s become {GetObjectName(Constants.UNIT_H0CP_GALLANT_KNIGHT_LORDAERON)}s and " +
+      $"your {GetObjectName(Constants.UNIT_H01C_HUNTSMAN_LORDAERON)}s become {GetObjectName(Constants.UNIT_H0CQ_ROYAL_ARBALEST_LORDAERON)}s";
 
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)

@@ -22,12 +22,10 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestTyrHand"/> class.
     /// </summary>
-    /// <param name="capitalCity"></param>
     /// <param name="stratholme"></param>
     /// <param name="rescueRect">Units in this area will start invulnerable and be rescued when the quest is complete.</param>
-    /// <param name="lichKing"></param>
-    public QuestTyrHand(Capital capitalCity, Capital stratholme, Rectangle rescueRect, Capital lichKing) : base("The Fortified City",
-      "The city of Tyr's Hand is considered impregnable, but they will be reluctant to join the war",
+    public QuestTyrHand(Capital stratholme, Rectangle rescueRect) : base("The Fortified City",
+      "The city of Tyr's Hand is considered impregnable, but they will be reluctant to join the war.",
       @"ReplaceableTextures\CommandButtons\BTNHumanBarracks.blp")
     {
       AddObjective(new ObjectiveEitherOf(new ObjectiveCapitalDead(stratholme),
