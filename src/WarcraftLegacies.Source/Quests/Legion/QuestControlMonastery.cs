@@ -19,7 +19,7 @@ namespace WarcraftLegacies.Source.Quests.Legion
     protected override string RewardFlavour => "The Monastery has been corrupted and plundered. A secret demon gate has now been formed inside.";
 
     /// <inheritdoc/>
-    protected override string RewardDescription => "Unlock the Monastery as a troop production building and able to build 1 more Summoning Circle.";
+    protected override string RewardDescription => "Learn to train troops from the Monastery, and learn to build 1 more Summoning Circle";
 
     /// <inheritdoc/>
     protected override void OnComplete(Faction whichFaction)
