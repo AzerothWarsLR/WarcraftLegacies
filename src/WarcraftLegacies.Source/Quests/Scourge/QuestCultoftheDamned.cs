@@ -28,7 +28,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
-      $"Gain vision over Lordaeron until you unleash the Plague, the Plague of Undeath research becomes available in the {GetObjectName(Constants.UNIT_U000_FROZEN_THRONE_SCOURGE_MAIN)}, and {_rivendare.Name} becomes trainable at the {GetObjectName(Constants.UNIT_UAOD_ALTAR_OF_DARKNESS)}";
+      $"Gain vision over Lordaeron until you unleash the Plague, the Plague of Undeath research becomes available in the {GetObjectName(Constants.UNIT_U000_FROZEN_THRONE_SCOURGE_MAIN)}, and {_rivendare.Name} becomes trainable at the {GetObjectName(Constants.UNIT_UAOD_ALTAR_OF_DARKNESS_SCOURGE_ALTAR)}";
 
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)

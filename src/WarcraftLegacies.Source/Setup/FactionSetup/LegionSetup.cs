@@ -42,7 +42,7 @@ Your primary objective is to summon the great host of the Burning Legion. Invade
       Legion.ModObjectLimit(FourCC("u01N"), Faction.UNLIMITED); //Burning Altar
       Legion.ModObjectLimit(FourCC("u015"), Faction.UNLIMITED); //Unholy Reliquary
       Legion.ModObjectLimit(FourCC("ndmg"), 6); //Demon Gate
-      Legion.ModObjectLimit(Constants.UNIT_N04N_INFERNAL_SIEGEWORKS_LEGION_SIEGE, Faction.UNLIMITED);
+      Legion.ModObjectLimit(Constants.UNIT_N04N_INFERNAL_SIEGEWORKS_LEGION_SPECIALIST, Faction.UNLIMITED);
       Legion.ModObjectLimit(FourCC("u006"), 3); //Summoning Circle
       Legion.ModObjectLimit(FourCC("n04Q"), 3); //Nether Pit
       Legion.ModObjectLimit(Constants.UNIT_U00F_DORMANT_SPIRE_LEGION_T1, Faction.UNLIMITED);
