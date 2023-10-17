@@ -30,7 +30,7 @@ namespace WarcraftLegacies.Source.Quests.Legion
     }
 
     /// <inheritdoc/>
-    protected override string RewardDescription => "Gain control of a small base in Alterac. Enables the alterac portal to be used from the Argus teleporter";
+    protected override string RewardDescription => "Gain control of a small base in Alterac, and learn to generate a portal to Alterac using the Argus Teleporter";
 
     /// <inheritdoc/>
     protected override string RewardFlavour =>
