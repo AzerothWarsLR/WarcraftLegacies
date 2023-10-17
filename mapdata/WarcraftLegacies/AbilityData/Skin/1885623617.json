@@ -7,34 +7,27 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "(arthas)"
+      "Value": "(Arthas)"
     },
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "W"
+      "Value": "D"
+    },
+    {
+      "Id": 2037408353,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Death Pact"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "W"
-    },
-    {
-      "Level": 4,
-      "Id": 829453409,
-      "Type": 3,
-      "Value": "Death Pact - [|cffffcc00Level 4|r]"
-    },
-    {
-      "Level": 4,
-      "Id": 828536161,
-      "Type": 3,
-      "Value": "Kills a target friendly Undead unit, giving \u003CAUdp,DataB4,%\u003E% of its hit points to the Death Knight."
-    },
-    {
-      "Id": 1953854049,
-      "Type": 3,
-      "Value": "Kills a target friendly Undead unit, giving a percentage of its hit points to the Death Knight. |n|n|cffffcc00Level 1|r - \u003CAUdp,DataB1,%\u003E% conversion. |n|cffffcc00Level 2|r - \u003CAUdp,DataB2,%\u003E% conversion. |n|cffffcc00Level 3|r - \u003CAUdp,DataB3,%\u003E% conversion. |n|cffffcc00Level 4|r - \u003CAUdp,DataB4,%\u003E% conversion."
+      "Value": "D"
     }
   ]
 }

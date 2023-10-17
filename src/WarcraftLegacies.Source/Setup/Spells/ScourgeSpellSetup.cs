@@ -64,6 +64,26 @@ namespace WarcraftLegacies.Source.Setup.Spells
       {
         DeathEffectPath = @"Objects\Spawnmodels\Undead\UDeathSmall\UDeathSmall.mdl"
       });
+      
+      SpellSystem.Register(new Reap(Constants.ABILITY_ZB02_REAP_UNDEAD_ARTHAS)
+      {
+        UnitsSlain = new ()
+        {
+          Base = 1,
+          PerLevel = 2
+        },
+        StrengthPerUnit = new()
+        {
+          Base = 5
+        },
+        Radius = new()
+        {
+          Base = 500
+        },
+        Duration = 30,
+        KillEffect = @"Objects\Spawnmodels\Undead\UndeadDissipate\UndeadDissipate.mdl",
+        BuffEffect = @"Abilities\Spells\Items\AIso\BIsvTarget.mdl"
+      });
     }
   }
 }
