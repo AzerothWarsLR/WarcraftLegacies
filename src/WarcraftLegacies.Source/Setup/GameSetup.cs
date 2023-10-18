@@ -55,7 +55,6 @@ namespace WarcraftLegacies.Source.Setup
       SpellsSetup.Setup();
       var commandManager = new CommandManager();
       CommandSetup.Setup(commandManager);
-      ControlPointVictory.Setup();
       FactionMultiboard.Setup();
       BookSetup.Setup();
       HintConfig.Setup();

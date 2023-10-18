@@ -35,13 +35,13 @@
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Increases this unit\u0027s movement speed by \u003CA020,DataA2,%\u003E%, attack speed by \u003CA020,DataB2,%\u003E%, and damage taken by \u003CA020,DataC2,%\u003E% for \u003CA020,Dur2\u003E seconds."
+      "Value": "Increases this unit\u0027s movement speed by \u003CA020,DataA2,%\u003E%, attack speed by \u003CA020,DataB2,%\u003E%, and reduces damage taken by \u003CA020,DataC2,%\u003E% for \u003CA020,Dur2\u003E seconds."
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Increases this unit\u0027s movement speed by \u003CA020,DataA1,%\u003E%, attack speed by \u003CA020,DataB1,%\u003E%, and damage taken by \u003CA020,DataC1,%\u003E% for \u003CA020,Dur1\u003E seconds."
+      "Value": "Increases this unit\u0027s movement speed by \u003CA020,DataA1,%\u003E%, attack speed by \u003CA020,DataB1,%\u003E%, and reduces damage taken by \u003CA020,DataC1,%\u003E% for \u003CA020,Dur1\u003E seconds."
     },
     {
       "Level": 2,

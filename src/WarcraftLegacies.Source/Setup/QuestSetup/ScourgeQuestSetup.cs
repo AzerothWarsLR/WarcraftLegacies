@@ -49,11 +49,6 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
 
       QuestPlague questPlague = new(plagueParameters, LordaeronSetup.Lordaeron, LegionSetup.Legion, Regions.DeathknellUnlock, Regions.StratholmeScourgeBase, Regions.CaerDarrow);
 
-      ScourgeSetup.Scourge.AddQuest(new QuestScouringofLordaeron(
-        new[]
-        {
-          allLegendSetup.Lordaeron.CapitalPalace}, allLegendSetup.Lordaeron.Uther));
-
       QuestSapphiron questSapphiron = new(preplacedUnitSystem.GetUnit(Constants.UNIT_UBDR_SAPPHIRON_CREEP), allLegendSetup.Scourge.Kelthuzad);
       QuestDestroyStratholme questDestroyStratholme = new(allLegendSetup.Lordaeron.Stratholme, allLegendSetup.Lordaeron.Arthas);
       QuestLichKingArthas questLichKingArthas =
