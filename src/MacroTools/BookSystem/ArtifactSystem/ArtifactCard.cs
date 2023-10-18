@@ -73,7 +73,7 @@ namespace MacroTools.BookSystem.ArtifactSystem
     }
 
     /// <summary>
-    /// Updates the description to reflect current <see cref="Artifact.LocationType"/> and <see cref="Artifact.LocationDescription"/> settings.
+    /// Updates the description to reflect current <see cref="Artifact.LocationType"/> settings.
     /// </summary>
     private void RefreshLocationDescriptionFrame()
     {
@@ -95,15 +95,6 @@ namespace MacroTools.BookSystem.ArtifactSystem
         case ArtifactLocationType.Ground:
           _text.Visible = false;
           _pingButton.Visible = true;
-          break;
-        case ArtifactLocationType.Special:
-          _text.Visible = false;
-          _pingButton.Visible = true;
-          break;
-        case ArtifactLocationType.Hidden:
-          _text.Visible = true;
-          _pingButton.Visible = false;
-          _text.Text = _artifact.LocationDescription;
           break;
         default:
           throw new InvalidEnumArgumentException();
