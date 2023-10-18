@@ -15,7 +15,9 @@ namespace MacroTools.Extensions
       SetItemDroppable(whichItem, canBeDropped);
       return whichItem;
     }
-    
+
+    public static bool IsDroppable(this item whichItem) => BlzGetItemBooleanField(whichItem, ITEM_BF_CAN_BE_DROPPED);
+
     /// <summary>
     /// Drop the item at the given position. If the position turns out to be non-ground-pathable,
     /// return it to a nearby <see cref="Shore"/> instead.
