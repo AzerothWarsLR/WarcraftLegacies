@@ -8,7 +8,7 @@ namespace WarcraftLegacies.Source.Quests.Legion
 {
   public sealed class QuestLegionCaptureSunwell : QuestData
   {
-    private const int RewardResearchTypeId = Constants.UPGRADE_R054_STOLEN_POWER_LEGION_QUEST;
+    private const int RewardResearchTypeId = Constants.UPGRADE_R054_QUEST_COMPLETED_FALL_OF_SILVERMOON;
     
     public QuestLegionCaptureSunwell(Capital sunwell) : base("Fall of Silvermoon",
       "The Sunwell is the source of the High Elves' immortality and magical prowess. Under control of the Scourge, it would be the source of immense necromantic power.",
