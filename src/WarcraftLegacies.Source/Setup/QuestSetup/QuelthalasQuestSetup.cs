@@ -11,7 +11,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
     {
       var quelthalas = QuelthalasSetup.Quelthalas;
       var newQuest = quelthalas.AddQuest(new QuestSilvermoon(Regions.SunwellAmbient,
-        preplacedUnitSystem.GetUnit(Constants.UNIT_H00D_ELVEN_RUNESTONE_QUEL_THALAS_TOWER, new Point(20477, 17447)),
+        preplacedUnitSystem.GetUnit(Constants.UNIT_H00D_ELVEN_RUNESTONE_QUEL_THALAS_OTHER, new Point(20477, 17447)),
         preplacedUnitSystem, allLegendSetup.Quelthalas.Silvermoon, allLegendSetup.Quelthalas.Sunwell));
       quelthalas.StartingQuest = newQuest;
       quelthalas.AddQuest(new QuestUnlockSpire(Regions.WindrunnerSpireUnlock, allLegendSetup.Quelthalas.Sylvanas));

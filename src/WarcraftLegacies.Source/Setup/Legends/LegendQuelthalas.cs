@@ -28,8 +28,8 @@ namespace WarcraftLegacies.Source.Setup.Legends
         DeathMessage = "The grand city of the high elves, Silvermoon, has been crushed by her enemies.",
         Essential = true
       };
-      Silvermoon.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_H00D_ELVEN_RUNESTONE_QUEL_THALAS_TOWER, new Point(20479, 17477)));
-      Silvermoon.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_H00D_ELVEN_RUNESTONE_QUEL_THALAS_TOWER, new Point(17415, 13196)));
+      Silvermoon.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_H00D_ELVEN_RUNESTONE_QUEL_THALAS_OTHER, new Point(20479, 17477)));
+      Silvermoon.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_H00D_ELVEN_RUNESTONE_QUEL_THALAS_OTHER, new Point(17415, 13196)));
 
       Sunwell = new Capital
       {
