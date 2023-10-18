@@ -28,6 +28,6 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
-      $"You can summon Alexandros Mograine from the {GetObjectName(AltarId)}";
+      $"Learn to train Alexandros Mograine from the {GetObjectName(AltarId)}";
   }
 }
