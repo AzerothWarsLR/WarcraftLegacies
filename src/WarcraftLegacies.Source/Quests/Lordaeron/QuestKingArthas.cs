@@ -29,7 +29,6 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
     {
       AddObjective(new ObjectiveControlCapital(capitalPalace, false));
       AddObjective(new ObjectiveControlLegend(arthas, true));
-      AddObjective(new ObjectiveLegendLevel(arthas, 12));
       AddObjective(new ObjectiveControlLevel(
         ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N02J_HOWLING_FJORDS), 10));
       AddObjective(new ObjectiveLegendInRect(arthas, Regions.King_Arthas_crown, "King Terenas"));
