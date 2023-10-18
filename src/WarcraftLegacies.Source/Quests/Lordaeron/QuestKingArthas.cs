@@ -31,7 +31,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
       AddObjective(new ObjectiveControlLegend(arthas, true));
       AddObjective(new ObjectiveControlLevel(
         ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N02J_HOWLING_FJORDS), 10));
-      AddObjective(new ObjectiveLegendInRect(arthas, Regions.King_Arthas_crown, "King Terenas"));
+      AddObjective(new ObjectiveLegendLevel(arthas, 12));
       ResearchId = Constants.UPGRADE_R08A_QUEST_COMPLETED_LINE_OF_SUCCESSION;
       _terenas = terenas;
       _crownOfLordaeron = crownOfLordaeron;
@@ -62,7 +62,6 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
 
       completingFaction.ModObjectLimit(Constants.UNIT_H01C_HUNTSMAN_LORDAERON, -Faction.UNLIMITED);
       completingFaction.ModObjectLimit(Constants.UNIT_H0CQ_ROYAL_ARBALEST_LORDAERON, Faction.UNLIMITED);
-
     }
   }
 }
