@@ -66,7 +66,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
       CapitalPalace = new Capital
       {
         Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_H000_CAPITAL_PALACE_LORDAERON),
-        DeathMessage = "The capital city of Lordaeron has been razed, and King Terenas is dead.",
+        Capturable = true,
         Essential = true
       };
       CapitalPalace.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_H006_IMPROVED_GUARD_TOWER_LORDAERON_TOWER, new Point(8686, 8862)));
