@@ -16,7 +16,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "(Goblin Barracks)"
+      "Value": "(Goblin Siege)"
     },
     {
       "Id": 1953458293,
@@ -26,7 +26,7 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.85
+      "Value": 0.75
     },
     {
       "Id": 1835101813,
@@ -46,7 +46,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Bootcamp for the Goblin Army.|n|cfff5962dTrains:|R Personal Tank, Grenadier, War Zeppelin"
+      "Value": "Specialist production building.|n|n|r|cfff5962dTrains:|R Personal Tank, Grenadier, War Zeppelin"
     },
     {
       "Id": 1818520949,

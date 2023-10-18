@@ -34,7 +34,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       {
         new(2, Constants.UNIT_UNEC_NECROMANCER_SCOURGE),
         new(2, Constants.UNIT_UACO_ACOLYTE_SCOURGE_WORKER),
-        new(3, Constants.UNIT_UGHO_GHOUL_SCOURGE),
+        new(5, Constants.UNIT_UGHO_GHOUL_SCOURGE),
         new(2, Constants.UNIT_UCRY_CRYPT_FIEND_SCOURGE),
         new(1, Constants.UNIT_UABO_ABOMINATION_SCOURGE),
       };
@@ -49,14 +49,8 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
 
       QuestPlague questPlague = new(plagueParameters, LordaeronSetup.Lordaeron, LegionSetup.Legion, Regions.DeathknellUnlock, Regions.StratholmeScourgeBase, Regions.CaerDarrow);
 
-      ScourgeSetup.Scourge.AddQuest(new QuestScouringofLordaeron(
-        new[]
-        {
-          allLegendSetup.Lordaeron.CapitalPalace}, allLegendSetup.Lordaeron.Uther));
-
       QuestSapphiron questSapphiron = new(preplacedUnitSystem.GetUnit(Constants.UNIT_UBDR_SAPPHIRON_CREEP), allLegendSetup.Scourge.Kelthuzad);
       QuestDestroyStratholme questDestroyStratholme = new(allLegendSetup.Lordaeron.Stratholme, allLegendSetup.Lordaeron.Arthas);
-      QuestCorruptArthas questCorruptArthas = new(questDestroyStratholme, allLegendSetup.Lordaeron.Arthas);
       QuestLichKingArthas questLichKingArthas =
         new(preplacedUnitSystem.GetUnit(Constants.UNIT_H00O_UTGARDE_KEEP_SCOURGE_OTHER), artifactSetup.HelmOfDomination,
           allLegendSetup.Scourge.Arthas, allLegendSetup.Scourge.TheFrozenThrone);
@@ -73,7 +67,6 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
         ScourgeSetup.Scourge.AddQuest(questSapphiron);
         //Early duel
         ScourgeSetup.Scourge.AddQuest(questDestroyStratholme);
-        ScourgeSetup.Scourge.AddQuest(questCorruptArthas);
         ScourgeSetup.Scourge.AddQuest(questKelthuzadLich);
         ScourgeSetup.Scourge.AddQuest(questKelthuzadDies);
         //Misc

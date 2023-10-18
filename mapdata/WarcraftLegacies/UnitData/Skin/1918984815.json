@@ -25,7 +25,7 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.85
+      "Value": 0.75
     },
     {
       "Id": 1835101813,
@@ -45,7 +45,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Home to the warriors of the Horde.|n|cfff5962dTrains:|R Grunt, Headhunter, Catapult"
+      "Value": "Primary troop production building. |n|n|cfff5962dTrains:|R Grunt, Headhunter, Catapult |n|cfff5962dCan Learn:|R Spiked Barricades"
     }
   ]
 }

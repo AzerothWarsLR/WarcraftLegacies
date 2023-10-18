@@ -18,11 +18,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       LegionSetup.Legion.AddQuest(new QuestControlShadowfang(allLegendSetup.Dalaran.Shadowfang));
       LegionSetup.Legion.AddQuest(new QuestAlteracBase(Regions.AlteracAmbient));
       LegionSetup.Legion.AddQuest(new QuestLegionCaptureSunwell(allLegendSetup.Quelthalas.Sunwell));
-      LegionSetup.Legion.AddQuest(new QuestLegionKillLordaeron(
-        new[]
-        {
-          allLegendSetup.Lordaeron.CapitalPalace, allLegendSetup.Lordaeron.Stratholme, allLegendSetup.Lordaeron.TyrsHand
-        }, allLegendSetup.Legion.Tichondrius));
+      LegionSetup.Legion.AddQuest(new QuestLegionKillLordaeron(allLegendSetup.Lordaeron.CapitalPalace, allLegendSetup.Lordaeron.Stratholme, allLegendSetup.Legion.Tichondrius));
       //Misc
       LegionSetup.Legion.AddQuest(new QuestSummonLegion(Regions.TwistingNether,
         preplacedUnitSystem.GetUnit(Constants.UNIT_N03C_DEMON_PORTAL_NETHER)));

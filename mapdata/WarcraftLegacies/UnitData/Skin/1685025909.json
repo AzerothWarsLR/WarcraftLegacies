@@ -16,7 +16,7 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.85
+      "Value": 0.75
     },
     {
       "Id": 1935832437,
@@ -26,7 +26,12 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Dark arts training structure.|n|cfff5962dTrains:|R Necromancers, Banshees, Obsidian Statue|n|cfff5962dResearches:|R Necromancer Training, Banshee Training, Skeletal Longevity, Skeletal Mastery"
+      "Value": "Spellcaster production building. |n|n|r|cfff5962dTrains:|R Necromancers, Banshees, Obsidian Statue|n|cfff5962dResearches:|R Necromancer Training, Banshee Training, Skeletal Longevity, Skeletal Mastery"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": " (Scourge Magic)"
     }
   ]
 }

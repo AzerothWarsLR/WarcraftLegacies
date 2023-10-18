@@ -17,7 +17,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "(Onslaught Specialist)"
+      "Value": "(Onslaught Siege)"
     },
     {
       "Id": 1818520949,
@@ -32,7 +32,7 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.95
+      "Value": 1.15
     },
     {
       "Id": 1668510581,
@@ -47,7 +47,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Training house for the finest soldiers in the Gilnean Army.|n|cfff5962dTrains:|r Armored Wolves, Royal Guard, Gunship"
+      "Value": "Air production building.|n|n|cfff5962dTrains:|R "
     },
     {
       "Id": 1835101813,

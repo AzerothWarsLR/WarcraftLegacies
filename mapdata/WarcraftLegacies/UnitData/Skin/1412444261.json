@@ -17,7 +17,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "(Sentinel Specialist)"
+      "Value": "(Sentinel Siege)"
     },
     {
       "Id": 1818520949,
@@ -45,11 +45,6 @@
       "Value": ""
     },
     {
-      "Id": 1651864693,
-      "Type": 3,
-      "Value": "High rise tower where the best warriors of the Sentinels reside.|n|cfff5962dTrains:|R Glaive Maiden, Guild Ranger, Warden"
-    },
-    {
       "Id": 2020631157,
       "Value": 3
     },
@@ -67,6 +62,11 @@
       "Id": 828468597,
       "Type": 2,
       "Value": 0.1
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Advanced troop production building.|n|n|r|cfff5962dTrains:|R Glaive Maiden, Guild Ranger, Warden"
     }
   ]
 }

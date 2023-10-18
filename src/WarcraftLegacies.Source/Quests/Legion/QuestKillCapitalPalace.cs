@@ -12,7 +12,7 @@ namespace WarcraftLegacies.Source.Quests.Legion
       "Unlock your Dreadlords' full potential. Weaken the pitiful human resistance by destroying their beloved capital!",
       @"ReplaceableTextures\CommandButtons\BTNCarrionSwarm.blp")
     {
-      AddObjective(new ObjectiveCapitalDead(CapitalPalace));
+      AddObjective(new ObjectiveControlCapital(CapitalPalace, false));
       ResearchId = Constants.UPGRADE_R09T_QUEST_COMPLETED_UNLEASH_THE_SWARM;
     }
     

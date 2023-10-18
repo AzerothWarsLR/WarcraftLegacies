@@ -17,7 +17,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": " (Nzoth Specialist)"
+      "Value": " (Nzoth Siege)"
     },
     {
       "Id": 1818520949,
@@ -27,7 +27,7 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.6
+      "Value": 0.45
     },
     {
       "Id": 1835101813,
@@ -47,7 +47,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Primary Elite monster training building.|n|cfff5962dTrains:|R Immortal Guardian and Trench Hydra"
+      "Value": "War-beast production building.|n|n|r|cfff5962dTrains:|R Immortal Guardian and Trench Hydra"
     },
     {
       "Id": 1684960117,

@@ -21,7 +21,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "(Dalaran Specialist)"
+      "Value": "(Dalaran Barracks Alternate)"
     },
     {
       "Id": 1818520949,
@@ -61,7 +61,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Primary troop production building for the Nexus.|n|cfff5962dTrains:|R Zealot, Initiate Mage, Blue Dragonspawn|n|cfff5962dResearches:|R Improved Slow"
+      "Value": "Primary troop production building. |n|n|cfff5962dTrains:|R Zealot, Initiate Mage, Blue Dragonspawn|n|cfff5962dResearches:|R Improved Slow"
     }
   ]
 }
