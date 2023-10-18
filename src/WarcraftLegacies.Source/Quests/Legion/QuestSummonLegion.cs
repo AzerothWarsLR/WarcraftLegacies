@@ -42,7 +42,7 @@ namespace WarcraftLegacies.Source.Quests.Legion
 
     /// <inheritdoc />
     protected override string RewardDescription =>
-      $"The hero Archimonde, control of all units in the Twisting Nether, learn to train Greater Demons, and can now build up to 12 {GetObjectName(Constants.UNIT_N04Q_NETHER_PIT_LEGION_BARRACKS)} and {GetObjectName(Constants.UNIT_U006_SUMMONING_CIRCLE_LEGION_MAGIC)}";
+      $"The hero Archimonde, control of all units in the Twisting Nether, learn to train Greater Demons, and can now build 9 more {GetObjectName(Constants.UNIT_N04Q_NETHER_PIT_LEGION_BARRACKS)} and {GetObjectName(Constants.UNIT_U006_SUMMONING_CIRCLE_LEGION_MAGIC)}";
 
     /// <inheritdoc />
     protected override void OnComplete(Faction whichFaction)

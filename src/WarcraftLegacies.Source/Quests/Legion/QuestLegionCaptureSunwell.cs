@@ -15,24 +15,16 @@ namespace WarcraftLegacies.Source.Quests.Legion
       @"ReplaceableTextures\CommandButtons\BTNOrbOfCorruption.blp")
     {
       AddObjective(new ObjectiveControlCapital(sunwell, false));
+      ResearchId = Constants.UPGRADE_R054_QUEST_COMPLETED_FALL_OF_SILVERMOON;
     }
 
     /// <inheritdoc/>
     protected override string RewardFlavour =>
-      "The Sunwell has been captured by the Scourge. It now writhes with necromantic energy.";
+      "The Sunwell has been captured by the Legion. It now writhes with demonic energy.";
 
     /// <inheritdoc/>
-    protected override string RewardDescription => "Gain a research improving your Dreadlords and Nazthrezim, and grant them the ability to cast Astral Walk";
+    protected override string RewardDescription => "Improves Dreadlords and Nathrezim by increasing their attack damage by 20, movement speed by 20, hit points by 200, and granting them the ability to cast Astral Walk";
 
-    /// <inheritdoc/>
-    protected override void OnAdd(Faction whichFaction) => 
-      whichFaction.ModObjectLimit(RewardResearchTypeId, Faction.UNLIMITED);
 
-    /// <inheritdoc />
-    protected override void OnComplete(Faction whichFaction)
-    {
-      whichFaction.SetObjectLevel(RewardResearchTypeId, 1);
-      whichFaction.Player?.DisplayResearchAcquired(RewardResearchTypeId, 1);
-    }
   }
 }
