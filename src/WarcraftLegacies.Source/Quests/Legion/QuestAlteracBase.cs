@@ -26,7 +26,7 @@ namespace WarcraftLegacies.Source.Quests.Legion
 
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
       Required = true;
-      ResearchId = Constants.UPGRADE_R01Q_QUEST_COMPLETED_RUINS_OF_ALTERAC;
+      //ResearchId = Constants.UPGRADE_R01Q_QUEST_COMPLETED_RUINS_OF_ALTERAC;
     }
 
     /// <inheritdoc/>
