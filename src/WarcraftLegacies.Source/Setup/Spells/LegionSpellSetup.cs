@@ -50,16 +50,6 @@ namespace WarcraftLegacies.Source.Setup.Spells
         Color = new Color(155, 250, 50, 255)
       });
 
-      //Argus
-      SpellSystem.Register(new SlipstreamSpellSpecificLocation(Constants.ABILITY_A10C_OPEN_A_PORTAL_TO_ARGUS_LEGION_ARGUS)
-      {
-        PortalUnitTypeId = Constants.UNIT_N0D9_SLIPSTREAM_PORTAL_STORMWIND_KHADGAR,
-        OpeningDelay = 20,
-        ClosingDelay = 0,
-        TargetLocation = new Point(21606, -28467),
-        Color = new Color(255, 50, 50, 255)
-      });
-
       var summonFelHounds = new SummonUnits(Constants.ABILITY_A12B_HOUND_COMPANION_LEGION_FELGUARD)
       {
         SummonUnitTypeId = Constants.UNIT_NFEL_FEL_STALKER_SUMMONER_WARLOCK_EYE_OF_SARGERAS,
