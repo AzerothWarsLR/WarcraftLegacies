@@ -84,6 +84,17 @@ namespace WarcraftLegacies.Source.Setup.Spells
         KillEffect = @"Objects\Spawnmodels\Undead\UndeadDissipate\UndeadDissipate.mdl",
         BuffEffect = @"Abilities\Spells\Items\AIso\BIsvTarget.mdl"
       });
+
+      var massDeathCoil = new MassAnySpell(Constants.ABILITY_A00E_MASS_DEATH_COIL_ARTHAS)
+      {
+        DummyAbilityId = Constants.ABILITY_A02T_MASS_DEATH_COIL_ARTHAS_DUMMY,
+        DummyAbilityOrderString = "deathcoil",
+        Radius = 250,
+        CastFilter = CastFilters.IsTargetOrganicAndAlive,
+        TargetType = SpellTargetType.Point,
+        DummyCastOriginType = DummyCastOriginType.Caster
+      };
+      SpellSystem.Register(massDeathCoil);
     }
   }
 }
