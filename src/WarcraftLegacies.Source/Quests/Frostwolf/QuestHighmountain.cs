@@ -22,7 +22,7 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
       @"ReplaceableTextures/CommandButtons/BTNPigHead.blp")
     {
       AddObjective(new ObjectiveLegendInRect(cairne, rescueRect, "Highmountain, north of Stormheim"));
-      ResearchId = Constants.UPGRADE_R0A9_QUEST_COMPLETED_INVITATION_TO_A_FEAST;
+      ResearchId = Constants.UPGRADE_R0A9_QUEST_COMPLETED_A_FEAST_FOR_OUR_KIN;
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable);
     }
 
