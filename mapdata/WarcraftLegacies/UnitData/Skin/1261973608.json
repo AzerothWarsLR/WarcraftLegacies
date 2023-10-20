@@ -13,7 +13,7 @@
     {
       "Id": 1818520949,
       "Type": 3,
-      "Value": "war3mapImported\\ScarletCleric.mdl"
+      "Value": "war3mapImported\\ClericWC1.mdl"
     },
     {
       "Id": 1953458293,
@@ -43,7 +43,7 @@
     {
       "Id": 1868786037,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNScarletCleric.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNClericWC1.blp"
     },
     {
       "Id": 1633907573,

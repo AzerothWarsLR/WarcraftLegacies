@@ -37,7 +37,7 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.8
+      "Value": 0.85
     },
     {
       "Id": 1835101813,
@@ -58,10 +58,6 @@
       "Id": 1831952757,
       "Type": 3,
       "Value": "Abilities\\Weapons\\FireBallMissile\\FireBallMissile.mdl"
-    },
-    {
-      "Id": 1651270517,
-      "Value": 255
     }
   ]
 }
