@@ -8,7 +8,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "(Onslaught Tower)"
+      "Value": "(Crusade Tower)"
     },
     {
       "Id": 1818520949,
@@ -43,7 +43,7 @@
     {
       "Id": 1868786037,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNGilneasTowerCannon.blp"
+      "Value": "ReplaceableTextures/CommandButtons/BTNAlteracCannonTower.blp"
     },
     {
       "Id": 1831952757,
