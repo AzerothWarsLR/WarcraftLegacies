@@ -12,7 +12,7 @@
     },
     {
       "Id": 2020631137,
-      "Value": 0
+      "Value": 1
     },
     {
       "Id": 1718840929,
@@ -68,6 +68,10 @@
       "Id": 828536161,
       "Type": 3,
       "Value": "Kills a target unit, giving 100% of its hit points to the Defiler."
+    },
+    {
+      "Id": 2037408353,
+      "Value": 1
     }
   ]
 }
