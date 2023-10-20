@@ -53,6 +53,11 @@
       "Id": 1868786037,
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNGilneasTowerCannon.blp"
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\BoatMissile\\BoatMissile.mdl"
     }
   ]
 }
