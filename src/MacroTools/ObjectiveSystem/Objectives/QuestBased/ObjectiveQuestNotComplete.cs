@@ -1,19 +1,28 @@
+using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 
 namespace MacroTools.ObjectiveSystem.Objectives.QuestBased
 {
   public sealed class ObjectiveQuestNotComplete : Objective
   {
-    public ObjectiveQuestNotComplete(QuestData? target)
+    private readonly QuestData _target;
+
+    public ObjectiveQuestNotComplete(QuestData target)
     {
-      Description = target?.Faction == Quest?.Faction ? $"Do not complete the quest {target?.Title}" : $"{target?.Faction.Name} has not completed the quest {target?.Title}";
-      if (target != null) target.ProgressChanged += OnQuestProgressChanged;
+      Description = $"Do not complete the quest {target.Title}";
       Progress = QuestProgress.Complete;
+      _target = target;
     }
 
-    private void OnQuestProgressChanged(object? sender, QuestProgressChangedEventArgs args)
+    /// <inheritdoc />
+    internal override void OnAdd(Faction faction) => faction.QuestProgressChanged += OnQuestProgressChanged;
+
+    private void OnQuestProgressChanged(object? sender, FactionQuestProgressChangedEventArgs args)
     {
-      if (args.Quest.Progress == QuestProgress.Complete) 
+      if (args.Quest != _target)
+        return;
+
+      if (args.Quest.Progress == QuestProgress.Complete)
         Progress = QuestProgress.Failed;
     }
   }
