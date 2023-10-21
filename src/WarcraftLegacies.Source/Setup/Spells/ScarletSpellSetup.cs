@@ -24,7 +24,20 @@ namespace WarcraftLegacies.Source.Setup.Spells
           Constants.ABILITY_A078_SPIRITUAL_GUIDANCE_SALLY,
           Constants.ABILITY_A0DK_DISPEL_MAGIC_SALLY,
         }
-      }); 
+      });
+
+      var crusaderShout = new Stomp(Constants.ABILITY_A0KB_CRUSADER_S_SHOUT_SAIDEN)
+      {
+        Radius = 600,
+        DamageBase = 00,
+        DamageLevel = 00,
+        DurationBase = 2,
+        DurationLevel = 1,
+        StunAbilityId = Constants.ABILITY_A0KD_SOUL_BURN_SAIDEN_DUMMY,
+        StunOrderString = "soulburn",
+        SpecialEffect = @"war3mapImported\WhiteChakraExplosion.mdx"
+      };
+      SpellSystem.Register(crusaderShout);
 
     }
   }
