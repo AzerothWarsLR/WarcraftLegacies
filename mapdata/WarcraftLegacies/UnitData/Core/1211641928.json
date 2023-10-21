@@ -8,7 +8,7 @@
     {
       "Id": 1650550901,
       "Type": 3,
-      "Value": "A078,ANhw,A0QH,Aamk,AHab"
+      "Value": "A0BV,A0DK,A078,ANhw,Aamk"
     },
     {
       "Id": 1937141109,
@@ -66,6 +66,11 @@
     {
       "Id": 1769169525,
       "Value": 4
+    },
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "A02T,AInv"
     }
   ]
 }

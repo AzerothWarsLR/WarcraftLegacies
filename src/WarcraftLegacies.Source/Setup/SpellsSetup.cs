@@ -218,6 +218,7 @@ namespace WarcraftLegacies.Source.Setup
       WarsongSpellSetup.Setup();
       IronforgeSpellSetup.Setup();
       SentinelSpellSetup.Setup();
+      ScarletSpellSetup.Setup();
       DalaranSpellSetup.Setup();
       TrollSpellSetup.Setup();
       SharedSpellSetup.Setup();
