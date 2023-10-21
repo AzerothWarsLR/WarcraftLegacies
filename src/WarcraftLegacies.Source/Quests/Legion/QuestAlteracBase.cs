@@ -1,11 +1,10 @@
 ﻿using System.Collections.Generic;
-using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
-using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
-using MacroTools.ObjectiveSystem.Objectives.LegendBased;
+using MacroTools.ObjectiveSystem.Objectives.QuestBased;
 using MacroTools.QuestSystem;
+using WarcraftLegacies.Source.Setup.FactionSetup;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
@@ -22,7 +21,7 @@ namespace WarcraftLegacies.Source.Quests.Legion
       "The orcs that occupied Alterac have maintained a secret demon gate, the Legion will make good use of it. This will enable the legion to propagate grim shrines around Lordaeron.",
       @"ReplaceableTextures\CommandButtons\BTNDemonCrypt.blp")
     {
-      AddObjective(new ObjectiveControlCapital(caerDarrow, false));
+      AddObjective(new ObjectiveQuestComplete(ScourgeSetup.Scourge?.GetQuestByTitle("Plague of Undeath")));
 
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
       Required = true;
