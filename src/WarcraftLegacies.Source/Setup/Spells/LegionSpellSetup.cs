@@ -29,6 +29,14 @@ namespace WarcraftLegacies.Source.Setup.Spells
       var summonBurningLegion = new SummonLegionSpell(Constants.ABILITY_A00J_SUMMON_THE_BURNING_LEGION_ALL_FACTIONS,
         Constants.ABILITY_A0KZ_SPELL_IMMUNITY_LEGION_SUMMON);
       SpellSystem.Register(summonBurningLegion);
+      
+      var massSummonUnit = new MultiTargetRecall( Constants.ABILITY_A02T_DARK_SUMMONING_LEGION_DUMMY, CastFilters.IsTargetAllyAliveNonHeroUnit)
+      {
+        Radius = 400,
+        AmountToTarget = 12,
+        TargetType = SpellTargetType.Point
+      };
+      SpellSystem.Register(massSummonUnit);
 
       //Northrend
       SpellSystem.Register(new SlipstreamSpellSpecificLocation(Constants.ABILITY_A0UB_OPEN_A_PORTAL_TO_NORTHREND_LEGION_NORTHREND)
