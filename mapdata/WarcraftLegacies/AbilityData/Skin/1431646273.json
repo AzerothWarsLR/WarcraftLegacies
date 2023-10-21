@@ -72,7 +72,7 @@
     {
       "Id": 1953653089,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNSpell_Holy_RighteousFury.blp"
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASHolyHammerOn.blp"
     }
   ]
 }
