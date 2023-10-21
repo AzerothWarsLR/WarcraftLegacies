@@ -1,7 +1,7 @@
 using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 
-namespace MacroTools.ObjectiveSystem.Objectives.FactionBased
+namespace MacroTools.ObjectiveSystem.Objectives.QuestBased
 {
   /// <summary>
   /// An <see cref="Objective"/> that starts completed, and is failed if a specific <see cref="Faction"/> completes a
