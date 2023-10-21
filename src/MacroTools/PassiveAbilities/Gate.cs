@@ -1,4 +1,5 @@
-﻿using MacroTools.Extensions;
+﻿using System;
+using MacroTools.Extensions;
 using MacroTools.PassiveAbilitySystem;
 using static War3Api.Common;
 
@@ -34,6 +35,7 @@ namespace MacroTools.PassiveAbilities
       var dyingGatePos = dyingGate.GetPosition();
       var dyingGateFacing = GetUnitFacing(dyingGate);
       dyingGate.Remove();
+      TurnBasedHitpointsManager.UnRegister(dyingGate);
       CreateUnit(GetOwningPlayer(GetKillingUnit()), _deadId, dyingGatePos.X, dyingGatePos.Y, dyingGateFacing)
         .SetAnimation("death");
     }
@@ -56,5 +58,12 @@ namespace MacroTools.PassiveAbilities
     /// <inheritdoc />
     public override void OnCancelUpgrade() => 
       GetTriggerUnit().SetAnimation("death");
+
+    /// <inheritdoc />
+    public override void OnUpgrade()
+    {
+      TurnBasedHitpointsManager.UnRegister(GetTriggerUnit());
+      TurnBasedHitpointsManager.Register(GetTriggerUnit(), HitPointPercentagePerTurn);
+    }
   }
 }
