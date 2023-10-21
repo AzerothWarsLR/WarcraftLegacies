@@ -4,10 +4,10 @@ namespace MacroTools.ObjectiveSystem.Objectives.QuestBased
 {
   public sealed class ObjectiveQuestComplete : Objective
   {
-    public ObjectiveQuestComplete(QuestData? target)
+    public ObjectiveQuestComplete(QuestData target)
     {
-      Description = target?.Faction == Quest?.Faction ? $"Complete the quest {target?.Title}" : $"{target?.Faction.Name} has completed the quest {target?.Title}";
-      if (target != null) target.ProgressChanged += OnQuestProgressChanged;
+      Description = $"Complete the quest {target.Title}";
+      target.ProgressChanged += OnQuestProgressChanged;
       Progress = QuestProgress.Incomplete;
     }
 
