@@ -31,6 +31,12 @@ namespace MacroTools
       GameTime.TurnEnded += OnTurnEnded;
       _intialized = true;
     }
+    
+    public static void UnRegister(unit whichUnit)
+    {
+      if (UnitData.ContainsKey(whichUnit))
+        UnitData.Remove(whichUnit);
+    }
 
     private static void OnTurnEnded(object? sender, EventArgs eventArgs)
     {

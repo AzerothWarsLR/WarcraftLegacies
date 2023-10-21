@@ -35,7 +35,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
       _kelthuzad = kelthuzad;
       _objectiveEitherOf = new ObjectiveEitherOf(
         new ObjectiveLegendDead(_kelthuzad),
-        new ObjectiveCompleteQuest(questKelthuzadLich));
+        new ObjectiveQuestComplete(questKelthuzadLich));
       AddObjective(_objectiveEitherOf);
     }
     

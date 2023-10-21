@@ -27,6 +27,11 @@ namespace MacroTools.ObjectiveSystem
     ///   Where the <see cref="Objective" /> can be completed.
     /// </summary>
     public Point? Position { get; protected init; }
+    
+    /// <summary>
+    ///   The <see cref="QuestData" /> for the quest that this <see cref="Objective" /> is a part of.
+    /// </summary>
+    public QuestData? Quest { get; set; }
 
     /// <summary>Whether or not this can be seen as a bullet point in the quest log.</summary>
     public bool ShowsInQuestLog { get; protected init; } = true;

@@ -249,7 +249,7 @@ namespace WarcraftLegacies.Source.Dialogue
             LordaeronSetup.Lordaeron
           }, new Objective[]
           {
-            new ObjectiveCompleteQuest(ScourgeSetup.Scourge.GetQuestByType(typeof(QuestPlague))),
+            new ObjectiveQuestComplete(ScourgeSetup.Scourge.GetQuestByType(typeof(QuestPlague))),
             new ObjectiveControlLegend(legendSetup.Lordaeron.Arthas, false)
             {
               EligibleFactions = new List<Faction> { LordaeronSetup.Lordaeron }
