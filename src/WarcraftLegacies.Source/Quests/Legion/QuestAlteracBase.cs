@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
-using MacroTools.LegendSystem;
+using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 using MacroTools.ObjectiveSystem.Objectives.QuestBased;
 using MacroTools.QuestSystem;
 using WarcraftLegacies.Source.Setup.FactionSetup;
@@ -17,11 +17,11 @@ namespace WarcraftLegacies.Source.Quests.Legion
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestAlteracBase"/> class
     /// </summary>
-    public QuestAlteracBase(Rectangle rescueRect, Capital caerDarrow) : base("Ruins of Alterac",
+    public QuestAlteracBase(Rectangle rescueRect) : base("Ruins of Alterac",
       "The orcs that occupied Alterac have maintained a secret demon gate, the Legion will make good use of it. This will enable the legion to propagate grim shrines around Lordaeron.",
       @"ReplaceableTextures\CommandButtons\BTNDemonCrypt.blp")
     {
-      AddObjective(new ObjectiveQuestComplete(ScourgeSetup.Scourge?.GetQuestByTitle("Plague of Undeath")));
+      AddObjective(new ObjectiveFactionQuestComplete(ScourgeSetup.Scourge?.GetQuestByTitle("Plague of Undeath"), ScourgeSetup.Scourge));
 
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
       Required = true;

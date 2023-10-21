@@ -392,7 +392,6 @@ namespace MacroTools.QuestSystem
 
     public void AddObjective(Objective objective)
     {
-      objective.Quest = this;
       _objectives.Add(objective);
       if (objective.ShowsInQuestLog)
       {
