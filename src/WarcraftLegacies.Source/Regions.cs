@@ -45,7 +45,7 @@ public static class Regions
 	public static Rectangle BlademasterUnlock { get; set; } = new Rectangle(4352f, -10496f, 5024f, -10112f);
 	public static Rectangle BlastedlandAmbient { get; set; } = new Rectangle(14912f, -22208f, 20224f, -16896f);
 	public static Rectangle BloodElfSecondChanceSpawn { get; set; } = new Rectangle(17376f, 6144f, 17760f, 6560f);
-	public static Rectangle BookRetrieval { get; set; } = new Rectangle(8384f, 5504f, 8672f, 5760f);
+	public static Rectangle BookRetrieval { get; set; } = new Rectangle(9312f, 4864f, 9536f, 5120f);
 	public static Rectangle BootyBayQuest { get; set; } = new Rectangle(9696f, -24160f, 12032f, -22304f);
 	public static Rectangle Borean_Tundra { get; set; } = new Rectangle(-9152f, 13664f, -4768f, 19008f);
 	public static Rectangle BridgeAmbient { get; set; } = new Rectangle(15232f, -288f, 17856f, 736f);
