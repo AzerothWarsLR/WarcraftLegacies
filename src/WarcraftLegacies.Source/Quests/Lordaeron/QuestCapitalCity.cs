@@ -38,7 +38,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
     {
       AddObjective(new ObjectiveUnitIsDead(preplacedUnitSystem.GetUnit(Constants.UNIT_N0AG_LORD_BAROV)));
       foreach (var prequisite in prequisites)
-        AddObjective(new ObjectiveCompleteQuest(prequisite));
+        AddObjective(new ObjectiveQuestComplete(prequisite));
       AddObjective(new ObjectiveControlLegend(arthas, false));
       AddObjective(new ObjectiveExpire(660, Title));
       AddObjective(new ObjectiveSelfExists());

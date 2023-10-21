@@ -87,6 +87,11 @@ namespace MacroTools.QuestSystem
     ///   The research given to the faction when it completes its quest.
     /// </summary>
     public int ResearchId { get; protected init; }
+    
+    /// <summary>
+    ///  The <see cref="Faction"/> that this quest belongs to.
+    /// </summary>
+    public Faction Faction { get; set; }
 
     private quest Quest { get; }
 
@@ -156,6 +161,7 @@ namespace MacroTools.QuestSystem
     {
       if (ResearchId != 0)
         faction.ModObjectLimit(ResearchId, 1);
+      Faction = faction;
       OnAdd(faction);
       foreach (var questItem in _objectives)
       {
@@ -386,6 +392,7 @@ namespace MacroTools.QuestSystem
 
     public void AddObjective(Objective objective)
     {
+      objective.Quest = this;
       _objectives.Add(objective);
       if (objective.ShowsInQuestLog)
       {

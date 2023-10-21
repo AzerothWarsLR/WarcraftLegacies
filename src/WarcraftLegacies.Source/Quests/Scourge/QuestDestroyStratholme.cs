@@ -2,11 +2,10 @@
 using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
+using MacroTools.ObjectiveSystem.Objectives.QuestBased;
 using MacroTools.QuestSystem;
 using static War3Api.Common;
-using WarcraftLegacies.Source.Powers;
 using WarcraftLegacies.Source.Setup.FactionSetup;
-using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Quests.Scourge
 {
@@ -18,6 +17,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
     {
       _arthas = arthas;
       AddObjective(new ObjectiveCapitalDead(stratholme));
+      AddObjective(new ObjectiveQuestNotComplete(LordaeronSetup.Lordaeron?.GetQuestByTitle("Line of Succession")));
       ResearchId = Constants.UPGRADE_R01K_QUEST_COMPLETED_THE_CULLING;
       Required = true;
     }
