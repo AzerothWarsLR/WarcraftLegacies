@@ -13,14 +13,13 @@ namespace WarcraftLegacies.Source.Quests.Legion
       @"ReplaceableTextures\CommandButtons\BTNKeep.blp")
     {
       AddObjective(new ObjectiveControlCapital(shadowfang, false));
-      ResearchId = Constants.UPGRADE_R04H_QUEST_COMPLETED_ANY_OF_THE_THREE_INFILTRATION_QUESTS;
     }
     
     /// <inheritdoc/>
     protected override string RewardFlavour => "Shadowfang Keep is now under the Legion control. A secret demon gate has now been formed inside.";
 
     /// <inheritdoc/>
-    protected override string RewardDescription => "Unlock Shadowfang Keep as a troop production building and able to build 1 more Nether Pit. Completing any of the three infiltration quest will enable the Alterac Portal to be opened.";
+    protected override string RewardDescription => $"Learn to train troops from Shadowfang Keep, and learn to build 1 more {GetObjectName(Constants.UNIT_N04Q_NETHER_PIT_LEGION_BARRACKS)}";
 
     /// <inheritdoc/>
     protected override void OnComplete(Faction whichFaction)

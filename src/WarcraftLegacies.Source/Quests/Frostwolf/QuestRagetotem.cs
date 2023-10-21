@@ -19,7 +19,7 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
     {
       _cairne = cairne;
       AddObjective(new ObjectiveLegendLevel(cairne, 8));
-      ResearchId = Constants.UPGRADE_R0AB_QUEST_COMPLETED_RAGETOTEM_TRIBE_CHALLENGE;
+      ResearchId = Constants.UPGRADE_R0AB_QUEST_COMPLETED_RAGETOTEM_TRIBE;
     }
 
     /// <inheritdoc />
