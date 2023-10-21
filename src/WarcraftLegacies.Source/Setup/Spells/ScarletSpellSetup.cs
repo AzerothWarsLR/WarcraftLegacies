@@ -35,7 +35,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
         DurationLevel = 1,
         StunAbilityId = Constants.ABILITY_A0KD_SOUL_BURN_SAIDEN_DUMMY,
         StunOrderString = "soulburn",
-        SpecialEffect = @"war3mapImported\WhiteChakraExplosion.mdx"
+        SpecialEffect = @"war3mapImported\RoarCasterScarlet.mdx"
       };
       SpellSystem.Register(crusaderShout);
 

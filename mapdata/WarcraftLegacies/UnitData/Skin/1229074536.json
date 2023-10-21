@@ -18,7 +18,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "X"
+      "Value": "Z"
     },
     {
       "Id": 1633907573,
@@ -49,6 +49,10 @@
       "Id": 1831952757,
       "Type": 3,
       "Value": "Abilities\\Weapons\\BoatMissile\\BoatMissile.mdl"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 0
     }
   ]
 }
