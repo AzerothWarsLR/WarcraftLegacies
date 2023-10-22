@@ -19,7 +19,7 @@ namespace MacroTools.SpellSystem
     /// </summary>
     public static void ChannelOnPoint(unit caster, int abilityId, string orderId, int level, Point targetPoint, float duration)
     {
-      CreateUnit(GetOwningPlayer(caster), DummyCaster.UnitTypeId, targetPoint.X, targetPoint.Y, 0)
+      CreateUnit(GetOwningPlayer(caster), DummyCasterManager.UnitTypeId, targetPoint.X, targetPoint.Y, 0)
         .AddAbility(abilityId)
         .SetAbilityLevel(abilityId, level)
         .IssueOrder(orderId)
@@ -31,7 +31,7 @@ namespace MacroTools.SpellSystem
     /// </summary>
     public static void ChannelAtCaster(unit caster, int abilityId, string orderId, int level, float duration)
     {
-      CreateUnit(GetOwningPlayer(caster), DummyCaster.UnitTypeId, caster.GetPosition().X, caster.GetPosition().Y, 0)
+      CreateUnit(GetOwningPlayer(caster), DummyCasterManager.UnitTypeId, caster.GetPosition().X, caster.GetPosition().Y, 0)
         .AddAbility(abilityId)
         .SetAbilityLevel(abilityId, level)
         .IssueOrder(orderId)
@@ -44,29 +44,29 @@ namespace MacroTools.SpellSystem
     public static void DummyCastUnit(unit caster, int abilId, string orderId, int level, unit target, DummyCastOriginType originType)
     {
       var originPoint = originType == DummyCastOriginType.Caster ? caster.GetPosition() : target.GetPosition();
-      DummyCaster.DummyUnit
+      DummyCasterManager.GetGlobalDummyCaster()
         .SetOwner(caster.OwningPlayer())
         .SetPosition(originPoint)
         .AddAbility(abilId)
         .SetAbilityLevel(abilId, level);
 
       if (originType == DummyCastOriginType.Caster)
-        DummyCaster.DummyUnit.FacePosition(target.GetPosition());
+        DummyCasterManager.GetGlobalDummyCaster().FacePosition(target.GetPosition());
 
-      DummyCaster.DummyUnit
+      DummyCasterManager.GetGlobalDummyCaster()
         .IssueOrder(orderId, target)
         .RemoveAbility(abilId);
     }
 
     public static void DummyCastNoTarget(unit caster, int abilId, int orderId, int level)
     {
-      DummyCaster.DummyUnit
+      DummyCasterManager.GetGlobalDummyCaster()
         .SetOwner(caster.OwningPlayer())
         .SetPosition(caster.GetPosition())
         .AddAbility(abilId)
         .SetAbilityLevel(abilId, level);
 
-      DummyCaster.DummyUnit
+      DummyCasterManager.GetGlobalDummyCaster()
         .IssueOrder(orderId)
         .RemoveAbility(abilId);
     }
@@ -77,13 +77,13 @@ namespace MacroTools.SpellSystem
     public static void DummyCastNoTargetOnUnit(unit caster, int abilId, string orderId, int level, unit target)
     {
 
-      DummyCaster.DummyUnit
+      DummyCasterManager.GetGlobalDummyCaster()
         .SetOwner(caster.OwningPlayer())
         .SetPosition(target.GetPosition())
         .AddAbility(abilId)
         .SetAbilityLevel(abilId, level);
 
-      DummyCaster.DummyUnit
+      DummyCasterManager.GetGlobalDummyCaster()
         .IssueOrder(orderId)
         .RemoveAbility(abilId);
 
@@ -94,7 +94,7 @@ namespace MacroTools.SpellSystem
     /// </summary>
     public static void DummyCastPoint(player whichPlayer, int abilId, string orderId, int level, Point target)
     {
-      DummyCaster.DummyUnit
+      DummyCasterManager.GetGlobalDummyCaster()
         .SetOwner(whichPlayer)
         .SetPosition(target)
         .AddAbility(abilId)
