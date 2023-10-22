@@ -17,7 +17,7 @@ namespace MacroTools.DummyCasters
     /// <summary>
     /// Causes the specified ability to be cast from the specified object at the specified target.
     /// </summary>
-    public void DummyCastUnit(unit caster, int abilId, string orderId, int level, unit target, DummyCastOriginType originType)
+    public void DummyCastUnit(unit caster, int abilId, int orderId, int level, unit target, DummyCastOriginType originType)
     {
       var originPoint = originType == DummyCastOriginType.Caster ? caster.GetPosition() : target.GetPosition();
       _unit
@@ -50,7 +50,7 @@ namespace MacroTools.DummyCasters
     /// <summary>
     /// Causes the specified spell to be cast on a particular point.
     /// </summary>
-    public void DummyCastNoTargetOnUnit(unit caster, int abilId, string orderId, int level, unit target)
+    public void DummyCastNoTargetOnUnit(unit caster, int abilId, int orderId, int level, unit target)
     {
       _unit
         .SetOwner(caster.OwningPlayer())
@@ -66,7 +66,7 @@ namespace MacroTools.DummyCasters
     /// <summary>
     /// Causes the specified spell to be cast at a particular point.
     /// </summary>
-    public void DummyCastPoint(player whichPlayer, int abilId, string orderId, int level, Point target)
+    public void DummyCastPoint(player whichPlayer, int abilId, int orderId, int level, Point target)
     {
       _unit
         .SetOwner(whichPlayer)
@@ -80,7 +80,7 @@ namespace MacroTools.DummyCasters
     /// <summary>
     /// Causes the specified spell to be cast on all units in a circle.
     /// </summary>
-    public void DummyCastOnUnitsInCircle(unit caster, int abilId, string orderId, int level, Point center,
+    public void DummyCastOnUnitsInCircle(unit caster, int abilId, int orderId, int level, Point center,
       float radius, DummyCast.CastFilter castFilter, DummyCastOriginType originType)
     {
       foreach (var target in CreateGroup()

@@ -11,11 +11,11 @@ namespace MacroTools.DummyCasters
     private readonly int _abilityTypeId;
     private readonly int _abilityOrderId;
 
-    public AbilitySpecificDummyCaster(unit unit, int abilityTypeId, int ability_abilityOrderId)
+    public AbilitySpecificDummyCaster(unit unit, int abilityTypeId, int abilityOrderId)
     {
       _unit = unit;
       _abilityTypeId = abilityTypeId;
-      _abilityOrderId = ability_abilityOrderId;
+      _abilityOrderId = abilityOrderId;
     }
     
     /// <summary>
