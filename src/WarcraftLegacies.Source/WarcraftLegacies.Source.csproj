@@ -11,8 +11,4 @@
         <ProjectReference Include="..\MacroTools\MacroTools.csproj" />
     </ItemGroup>
 
-    <ItemGroup>
-      <Folder Include="Quests\Scarlet\" />
-    </ItemGroup>
-
 </Project>

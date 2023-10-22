@@ -34,8 +34,8 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
     /// <param name="legendBoralus">Must be controlled to complete the quest.</param>
     /// <param name="daelinProudmoore">Must be controlled to complete the quest.</param>
     public QuestScarletCrusade(Rectangle rescueRect, Capital tyrHand, LegendaryHero saiden, Faction scarletCrusade) : base("All is Lost",
-      "The Stranglethorn vale is still infested with trolls and pirates. If peace is to be brought back to the South Alliance, it needs to be purged",
-      @"ReplaceableTextures\CommandButtons\BTNGalleonIcon.blp")
+      "Lordaeron has been lost to the plague, but the Scarlet Crusade has taken a vow of vengeance to retake the lands and purge the undead.",
+      @"ReplaceableTextures\CommandButtons\BTNDivine_Reckoning_Icon.blp")
     {
       AddObjective(new ObjectiveResearch(Constants.UPGRADE_R01L_ALL_IS_LOST_LORDAERON_SCARLET, Constants.UNIT_H030_TYR_S_HAND_CITADEL_LORDAERON_OTHER));
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
@@ -45,11 +45,11 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
     }
 
     /// <inheritdoc/>
-    protected override string RewardFlavour => "The capital ship will set sail with the Kul'tiran navy army to Stranglethorn Vale.";
+    protected override string RewardFlavour => "Lordaeron abandons all hope, but the Scarlet Crusade begins their quest to reclaim Lordaeron and purge the Undead.";
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
-      "Unlock the Proudmoore capital ship and the buildings inside. Move all your non-worker units to Stranglethorn Vale";
+      "All of Lordaeron forces will go hostile, Tyr Hand will be emptied of neutral hostile units and you will spawn with an army and a base in Tyr's Hand.";
 
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
