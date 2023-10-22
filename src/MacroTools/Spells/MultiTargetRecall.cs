@@ -1,8 +1,6 @@
-﻿using System;
-using System.Linq;
+﻿using System.Linq;
 using MacroTools.Extensions;
 using MacroTools.SpellSystem;
-using War3Api;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
