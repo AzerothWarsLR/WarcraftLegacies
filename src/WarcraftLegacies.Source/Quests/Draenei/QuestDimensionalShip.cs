@@ -33,7 +33,7 @@ namespace WarcraftLegacies.Source.Quests.Draenei
     {
       _dimensionalGenerator = dimensionalGenerator.Unit;
       Required = true;
-      AddObjective(new ObjectiveCompleteQuest(prerequisite));
+      AddObjective(new ObjectiveQuestComplete(prerequisite));
       AddObjective(new ObjectiveTime(1200));
       AddObjective(new ObjectiveBuildInRect(questRect, "inside the Exodar", Constants.UNIT_O056_ARCANE_WELL_DRAENEI_FARM, 10));
       AddObjective(new ObjectiveControlLevel(

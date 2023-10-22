@@ -21,11 +21,11 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       QuestCrystalGolem crystalGolem = new(allLegendSetup.Neutral.DraktharonKeep);
       QuestFallenGuardian fallenGuardian = new(allLegendSetup.Neutral.Karazhan);
 
-      newGuardian.AddObjective(new ObjectiveDontCompleteQuest(theNexus));
-      crystalGolem.AddObjective(new ObjectiveDontCompleteQuest(theNexus));
-      aegwynn.AddObjective(new ObjectiveDontCompleteQuest(theNexus));
+      newGuardian.AddObjective(new ObjectiveQuestNotComplete(theNexus));
+      crystalGolem.AddObjective(new ObjectiveQuestNotComplete(theNexus));
+      aegwynn.AddObjective(new ObjectiveQuestNotComplete(theNexus));
 
-      theNexus.AddObjective(new ObjectiveDontCompleteQuest(newGuardian));
+      theNexus.AddObjective(new ObjectiveQuestNotComplete(newGuardian));
 
       var questSouthshore = dalaran.AddQuest(new QuestSouthshore(Regions.SouthshoreUnlock,
         preplacedUnitSystem.GetUnit(FourCC("nmrm"), Regions.SouthshoreUnlock.Center)));

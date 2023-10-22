@@ -1,12 +1,12 @@
 ﻿using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
+using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
+using MacroTools.ObjectiveSystem.Objectives.QuestBased;
 using MacroTools.QuestSystem;
 using static War3Api.Common;
-using WarcraftLegacies.Source.Powers;
 using WarcraftLegacies.Source.Setup.FactionSetup;
-using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Quests.Scourge
 {
@@ -14,19 +14,24 @@ namespace WarcraftLegacies.Source.Quests.Scourge
   {
     private readonly LegendaryHero _arthas;
     
-    public QuestDestroyStratholme(Capital stratholme, LegendaryHero arthas) : base("The Culling", "When the city of Stratholme falls, Prince Arthas' despair will make him more susceptible to the power of the Lich King.", @"ReplaceableTextures\CommandButtons\BTNRuneblade.blp")
+    public QuestDestroyStratholme(Capital stratholme, LegendaryHero arthas) : base("The Culling",
+      "When the city of Stratholme falls, Prince Arthas' despair will make him more susceptible to the power of the Lich King.",
+      @"ReplaceableTextures\CommandButtons\BTNRuneblade.blp")
     {
       _arthas = arthas;
       AddObjective(new ObjectiveCapitalDead(stratholme));
+      AddObjective(new ObjectiveFactionQuestNotComplete(LordaeronSetup.Lordaeron?.GetQuestByTitle("Line of Succession"), LordaeronSetup.Lordaeron));
       ResearchId = Constants.UPGRADE_R01K_QUEST_COMPLETED_THE_CULLING;
       Required = true;
     }
 
     /// <inheritdoc />
-    protected override string RewardFlavour => "Having failed to protect his people, Arthas seizes the cursed runeblade Frostmourne as the instrument of his vengeance. The malevolence of the blade overwhelms him. Arthas is now a loyal Death Knight of the Scourge, and will soon become its greatest champion.";
+    protected override string RewardFlavour =>
+      "Having failed to protect his people, Arthas seizes the cursed runeblade Frostmourne as the instrument of his vengeance. The malevolence of the blade overwhelms him. Arthas is now a loyal Death Knight of the Scourge, and will soon become its greatest champion.";
 
     /// <inheritdoc />
-    protected override string RewardDescription => $"Arthas abandons Lordaeron to join the Scourge; learn to train {_arthas.Name} from the {GetObjectName(Constants.UNIT_UAOD_ALTAR_OF_DARKNESS_SCOURGE_ALTAR)}";
+    protected override string RewardDescription =>
+      $"Arthas abandons Lordaeron to join the Scourge; learn to train {_arthas.Name} from the {GetObjectName(Constants.UNIT_UAOD_ALTAR_OF_DARKNESS_SCOURGE_ALTAR)}";
 
     /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)

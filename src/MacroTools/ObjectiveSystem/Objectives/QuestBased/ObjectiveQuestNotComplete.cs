@@ -3,14 +3,15 @@ using MacroTools.QuestSystem;
 
 namespace MacroTools.ObjectiveSystem.Objectives.QuestBased
 {
-  public sealed class ObjectiveCompleteQuest : Objective
+  public sealed class ObjectiveQuestNotComplete : Objective
   {
     private readonly QuestData _target;
 
-    public ObjectiveCompleteQuest(QuestData target)
+    public ObjectiveQuestNotComplete(QuestData target)
     {
+      Description = $"Do not complete the quest {target.Title}";
+      Progress = QuestProgress.Complete;
       _target = target;
-      Description = $"Complete the quest {target.Title}";
     }
 
     /// <inheritdoc />
@@ -20,13 +21,9 @@ namespace MacroTools.ObjectiveSystem.Objectives.QuestBased
     {
       if (args.Quest != _target)
         return;
-      
-      Progress = args.Quest.Progress switch
-      {
-        QuestProgress.Complete => QuestProgress.Complete,
-        QuestProgress.Failed => QuestProgress.Failed,
-        _ => Progress
-      };
+
+      if (args.Quest.Progress == QuestProgress.Complete)
+        Progress = QuestProgress.Failed;
     }
   }
 }
