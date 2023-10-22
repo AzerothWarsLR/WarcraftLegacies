@@ -26,7 +26,7 @@ namespace WarcraftLegacies.Source.Quests.Scarlet
     /// Initializes a new instance of the <see cref="QuestRebuildBrill"/> class.
     /// </summary>
     public QuestRebuildBrill(Rectangle questRect) : base(
-      "Rebuild Hearthglen",
+      "Rebuild Brill",
       "The core of the Exodar is rebuilt, but it requires a great source of power to function again. Finding that source of power would make the Exodar a powerful asset for the Draenei.",
       @"ReplaceableTextures\CommandButtons\BTNArcaneEnergy.blp")
     {

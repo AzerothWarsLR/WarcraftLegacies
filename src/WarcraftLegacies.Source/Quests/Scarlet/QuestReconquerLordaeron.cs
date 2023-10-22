@@ -19,24 +19,23 @@ namespace WarcraftLegacies.Source.Quests.Scarlet
   /// <summary>
   /// The Draenei acquire some kind of power source to power their ship.
   /// </summary>
-  public sealed class QuestReconquerCapital : QuestData
+  public sealed class QuestReconquerLordaeron : QuestData
   {
 
     /// <summary>
-    /// Initializes a new instance of the <see cref="QuestReconquerCapital"/> class.
+    /// Initializes a new instance of the <see cref="QuestReconquerLordaeron"/> class.
     /// </summary>
-    public QuestReconquerCapital(Rectangle questRect, Capital capitalPalace) : base(
-      "Reconquer Capital",
+    public QuestReconquerLordaeron(QuestData stratholme, QuestData capital, QuestData hearthglen, QuestData brill, QuestData andorhal) : base(
+      "Reconquer Lordaeron",
       "The core of the Exodar is rebuilt, but it requires a great source of power to function again. Finding that source of power would make the Exodar a powerful asset for the Draenei.",
       @"ReplaceableTextures\CommandButtons\BTNArcaneEnergy.blp")
     {
       Required = true;
-      AddObjective(new ObjectiveBuildInRect(questRect, "in Lordaeron City", Constants.UNIT_H0BP_HOUSEHOLD_CRUSADE_FARM, 4));
-      AddObjective(new ObjectiveBuildInRect(questRect, "in Lordaeron City", Constants.UNIT_H0AG_HALL_OF_SWORDS_CRUSADE_BARRACKS, 1));
-      AddObjective(new ObjectiveBuildInRect(questRect, "in Lordaeron City", Constants.UNIT_H0BQ_ALTAR_OF_CRUSADERS_CRUSADE_ALTAR, 1));
-      AddObjective(new ObjectiveControlCapital(capitalPalace, false));
-      AddObjective(new ObjectiveControlLevel(
-        ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N01G_LORDAERON_CITY), 4));
+      AddObjective(new ObjectiveCompleteQuest(stratholme));
+      AddObjective(new ObjectiveCompleteQuest(capital));
+      AddObjective(new ObjectiveCompleteQuest(hearthglen));
+      AddObjective(new ObjectiveCompleteQuest(brill));
+      AddObjective(new ObjectiveCompleteQuest(andorhal));
       ResearchId = Constants.UPGRADE_R09A_QUEST_COMPLETED_THE_DIMENSIONAL_SHIP;
     }
 

@@ -26,7 +26,7 @@ namespace WarcraftLegacies.Source.Quests.Scarlet
     /// Initializes a new instance of the <see cref="QuestRebuildAndorhal"/> class.
     /// </summary>
     public QuestRebuildAndorhal(Rectangle questRect) : base(
-      "Rebuild Hearthglen",
+      "Rebuild Andorhal",
       "The core of the Exodar is rebuilt, but it requires a great source of power to function again. Finding that source of power would make the Exodar a powerful asset for the Draenei.",
       @"ReplaceableTextures\CommandButtons\BTNArcaneEnergy.blp")
     {

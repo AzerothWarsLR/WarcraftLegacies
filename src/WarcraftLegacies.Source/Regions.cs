@@ -10,7 +10,7 @@ public static class Regions
 	public static Rectangle AkamaUnlock { get; set; } = new Rectangle(-4416f, -21088f, -3072f, -20064f);
 	public static Rectangle AlteracAmbient { get; set; } = new Rectangle(10432f, 4608f, 12160f, 7104f);
 	public static Rectangle AlteracLegionLanding { get; set; } = new Rectangle(11168f, 5632f, 11552f, 5984f);
-	public static Rectangle Andorhal { get; set; } = new Rectangle(11136f, 7104f, 13696f, 8512f);
+	public static Rectangle Andorhal { get; set; } = new Rectangle(11136f, 7712f, 13696f, 9120f);
 	public static Rectangle Andrassil { get; set; } = new Rectangle(4992f, 18400f, 5440f, 18816f);
 	public static Rectangle Arathi_Ships { get; set; } = new Rectangle(17888f, 544f, 18656f, 1408f);
 	public static Rectangle ArchimondeChannel { get; set; } = new Rectangle(-10048f, 10752f, -9856f, 10944f);
@@ -48,7 +48,7 @@ public static class Regions
 	public static Rectangle BootyBayQuest { get; set; } = new Rectangle(9696f, -24160f, 12032f, -22304f);
 	public static Rectangle Borean_Tundra { get; set; } = new Rectangle(-9152f, 13664f, -4768f, 19008f);
 	public static Rectangle BridgeAmbient { get; set; } = new Rectangle(15232f, -288f, 17856f, 736f);
-	public static Rectangle Brill { get; set; } = new Rectangle(8064f, 10144f, 9792f, 11648f);
+	public static Rectangle Brill { get; set; } = new Rectangle(7776f, 10144f, 9792f, 11648f);
 	public static Rectangle BrokenIslesA { get; set; } = new Rectangle(-3680f, 3424f, 3648f, 8992f);
 	public static Rectangle BrokenIslesB { get; set; } = new Rectangle(544f, 8960f, 3296f, 10368f);
 	public static Rectangle BurningSteppeAmbient2 { get; set; } = new Rectangle(17952f, -14720f, 19872f, -9504f);
@@ -142,7 +142,7 @@ public static class Regions
 	public static Rectangle GuldansCorpse { get; set; } = new Rectangle(-800f, 9792f, -544f, 10080f);
 	public static Rectangle Halaar { get; set; } = new Rectangle(-4896f, -29728f, -3776f, -28736f);
 	public static Rectangle Havenshire { get; set; } = new Rectangle(20128f, 7040f, 22112f, 9472f);
-	public static Rectangle Hearthglen { get; set; } = new Rectangle(10624f, 10176f, 13312f, 11744f);
+	public static Rectangle Hearthglen { get; set; } = new Rectangle(10304f, 10176f, 12992f, 11744f);
 	public static Rectangle HellfireUnlock { get; set; } = new Rectangle(-128f, -27488f, 2368f, -24736f);
 	public static Rectangle HideUnitBottomLeft { get; set; } = new Rectangle(-24128f, -30848f, -9024f, -22688f);
 	public static Rectangle HighbankUnlock { get; set; } = new Rectangle(21664f, -8128f, 23200f, -6848f);
@@ -238,7 +238,7 @@ public static class Regions
 	public static Rectangle Plague_2 { get; set; } = new Rectangle(9920f, 9024f, 13824f, 10144f);
 	public static Rectangle Plague_3 { get; set; } = new Rectangle(16128f, 7552f, 17344f, 8832f);
 	public static Rectangle Plague_4 { get; set; } = new Rectangle(14560f, 10176f, 18048f, 10944f);
-	public static Rectangle Plague_5 { get; set; } = new Rectangle(7360f, 10624f, 9216f, 11648f);
+	public static Rectangle Plague_5 { get; set; } = new Rectangle(7360f, 10624f, 9440f, 12224f);
 	public static Rectangle Plague_6 { get; set; } = new Rectangle(14880f, 8864f, 17952f, 9792f);
 	public static Rectangle Plague_7 { get; set; } = new Rectangle(9984f, 10144f, 12992f, 11200f);
 	public static Rectangle Quel_Ships_1 { get; set; } = new Rectangle(16384f, 16288f, 20096f, 17568f);
@@ -308,7 +308,7 @@ public static class Regions
 	public static Rectangle TelredorUnlock { get; set; } = new Rectangle(-3296f, -26464f, -1728f, -25376f);
 	public static Rectangle TempestKeep { get; set; } = new Rectangle(3584f, -22304f, 4768f, -21184f);
 	public static Rectangle TempestKeepSpawn { get; set; } = new Rectangle(3808f, -21856f, 4224f, -21504f);
-	public static Rectangle Terenas { get; set; } = new Rectangle(8096f, 7648f, 10048f, 9536f);
+	public static Rectangle Terenas { get; set; } = new Rectangle(8096f, 7648f, 9984f, 9568f);
 	public static Rectangle Terrordale { get; set; } = new Rectangle(14656f, 10336f, 15968f, 10880f);
 	public static Rectangle The_Basin { get; set; } = new Rectangle(-8288f, 16256f, -4096f, 22336f);
 	public static Rectangle TheAthenaeum { get; set; } = new Rectangle(-17408f, -8768f, -16576f, -7968f);
