@@ -85,9 +85,9 @@ namespace WarcraftLegacies.Source.Setup.Spells
         BuffEffect = @"Abilities\Spells\Items\AIso\BIsvTarget.mdl"
       });
 
-      var massDeathCoil = new MassAnySpell(Constants.ABILITY_A00E_MASS_DEATH_COIL_ARTHAS)
+      var massDeathCoil = new MassAnySpell(Constants.ABILITY_ZB06_MASS_DEATH_COIL_ARTHAS)
       {
-        DummyAbilityId = Constants.ABILITY_A02T_MASS_DEATH_COIL_ARTHAS_DUMMY,
+        DummyAbilityId = Constants.ABILITY_ZB05_MASS_DEATH_COIL_ARTHAS_DUMMY,
         DummyAbilityOrderString = "deathcoil",
         Radius = 250,
         CastFilter = CastFilters.IsTargetOrganicAndAlive,
