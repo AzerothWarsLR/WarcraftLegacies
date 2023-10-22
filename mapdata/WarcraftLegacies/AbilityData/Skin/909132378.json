@@ -71,7 +71,7 @@
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "Fire several coil of deaths at units in the target area, healing friendly Undead units and dealing half damage to enemy living units. |n|n|cffffcc00Level 1|r - Heals \u003CA02T,DataA1\u003E damage.|n|cffffcc00Level 2|r - Heals \u003CA02T,DataA2\u003E damage.|n|cffffcc00Level 3|r - Heals \u003CA02T,DataA3\u003E damage.|n|cffffcc00Level 4|r - Heals \u003CA02T,DataA4\u003E damage."
+      "Value": "Fire several coil of deaths at units in the target area, healing friendly Undead units and dealing half damage to enemy living units. |n|n|cffffcc00Level 1|r - Heals \u003CZB05,DataA1\u003E damage.|n|cffffcc00Level 2|r - Heals \u003CZB05,DataA2\u003E damage.|n|cffffcc00Level 3|r - Heals \u003CZB05,DataA3\u003E damage.|n|cffffcc00Level 4|r - Heals \u003CZB05,DataA4\u003E damage."
     },
     {
       "Id": 1952543841,
