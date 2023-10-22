@@ -1,4 +1,5 @@
-﻿using MacroTools.PassiveAbilitySystem;
+﻿using MacroTools.DummyCasters;
+using MacroTools.PassiveAbilitySystem;
 using MacroTools.SpellSystem;
 using static War3Api.Common;
 

@@ -1,4 +1,5 @@
 using System;
+using MacroTools.DummyCasters;
 using MacroTools.Extensions;
 using MacroTools.SpellSystem;
 using WCSharp.Effects;

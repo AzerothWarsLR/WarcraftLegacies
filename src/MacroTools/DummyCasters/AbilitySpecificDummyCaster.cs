@@ -1,0 +1,98 @@
+﻿using MacroTools.Extensions;
+using WCSharp.Shared.Data;
+using static War3Api.Common;
+
+namespace MacroTools.DummyCasters
+{
+  /// <summary>A dummy caster that has been predefined to only ever cast one specific instant ability.</summary>
+  public sealed class AbilitySpecificDummyCaster
+  {
+    private readonly unit _unit;
+    private readonly int _abilityTypeId;
+    private readonly int _abilityOrderId;
+
+    public AbilitySpecificDummyCaster(unit unit, int abilityTypeId, int ability_abilityOrderId)
+    {
+      _unit = unit;
+      _abilityTypeId = abilityTypeId;
+      _abilityOrderId = ability_abilityOrderId;
+    }
+    
+    /// <summary>
+    /// Causes the specified ability to be cast from the specified object at the specified target.
+    /// </summary>
+    public void DummyCastUnit(unit caster, int level, unit target, DummyCastOriginType originType)
+    {
+      var originPoint = originType == DummyCastOriginType.Caster ? caster.GetPosition() : target.GetPosition();
+      _unit
+        .SetOwner(caster.OwningPlayer())
+        .SetPosition(originPoint)
+        .AddAbility(_abilityTypeId)
+        .SetAbilityLevel(_abilityTypeId, level);
+
+      if (originType == DummyCastOriginType.Caster)
+        _unit.FacePosition(target.GetPosition());
+
+      _unit
+        .IssueOrder(_abilityOrderId, target)
+        .RemoveAbility(_abilityTypeId);
+    }
+
+    public void DummyCastNoTarget(unit caster, int level)
+    {
+      _unit
+        .SetOwner(caster.OwningPlayer())
+        .SetPosition(caster.GetPosition())
+        .AddAbility(_abilityTypeId)
+        .SetAbilityLevel(_abilityTypeId, level);
+
+      _unit
+        .IssueOrder(_abilityOrderId)
+        .RemoveAbility(_abilityTypeId);
+    }
+
+    /// <summary>
+    /// Causes the specified spell to be cast on a particular point.
+    /// </summary>
+    public void DummyCastNoTargetOnUnit(unit caster, int level, unit target)
+    {
+      _unit
+        .SetOwner(caster.OwningPlayer())
+        .SetPosition(target.GetPosition())
+        .AddAbility(_abilityTypeId)
+        .SetAbilityLevel(_abilityTypeId, level);
+
+      _unit
+        .IssueOrder(_abilityOrderId)
+        .RemoveAbility(_abilityTypeId);
+    }
+
+    /// <summary>
+    /// Causes the specified spell to be cast at a particular point.
+    /// </summary>
+    public void DummyCastPoint(player whichPlayer, int level, Point target)
+    {
+      _unit
+        .SetOwner(whichPlayer)
+        .SetPosition(target)
+        .AddAbility(_abilityTypeId)
+        .SetAbilityLevel(_abilityTypeId, level)
+        .IssueOrder(_abilityOrderId, target)
+        .RemoveAbility(_abilityTypeId);
+    }
+
+    /// <summary>
+    /// Causes the specified spell to be cast on all units in a circle.
+    /// </summary>
+    public void DummyCastOnUnitsInCircle(unit caster, int level, Point center,
+      float radius, DummyCast.CastFilter castFilter, DummyCastOriginType originType)
+    {
+      foreach (var target in CreateGroup()
+                 .EnumUnitsInRange(center, radius).EmptyToList()
+                 .FindAll(unit => castFilter(caster, unit)))
+      {
+        DummyCastUnit(caster, level, target, originType);
+      }
+    }
+  }
+}

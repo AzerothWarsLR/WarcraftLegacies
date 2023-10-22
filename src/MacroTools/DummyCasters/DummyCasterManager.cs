@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using static War3Api.Common;
 
-namespace MacroTools.SpellSystem
+namespace MacroTools.DummyCasters
 {
   public static class DummyCasterManager
   {
@@ -17,10 +17,10 @@ namespace MacroTools.SpellSystem
     /// Gets a dummy caster that should only ever cast the specified dummy spell.
     /// <para>Prefer using <see cref="GetGlobalDummyCaster"/> unless you have a special reason to use this one.</para>
     /// </summary>
-    public static AbilitySpecificDummyCaster GetAbilitySpecificDummyCaster(int abilityId)
+    public static AbilitySpecificDummyCaster GetAbilitySpecificDummyCaster(int abilityId, int abilityOrderId)
     {
       if (!DummyUnitByAbility.ContainsKey(abilityId)) 
-        DummyUnitByAbility.Add(abilityId, new AbilitySpecificDummyCaster(InitializeDummyCasterUnit(), abilityId));
+        DummyUnitByAbility.Add(abilityId, new AbilitySpecificDummyCaster(InitializeDummyCasterUnit(), abilityId, abilityOrderId));
 
       return DummyUnitByAbility[abilityId];
     }
