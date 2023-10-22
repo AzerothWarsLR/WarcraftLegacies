@@ -54,8 +54,7 @@ namespace MacroTools.SpellSystem
         DummyCaster.DummyUnit.FacePosition(target.GetPosition());
 
       DummyCaster.DummyUnit
-        .IssueOrder(orderId, target)
-        .RemoveAbility(abilId);
+        .IssueOrder(orderId, target);
     }
 
     public static void DummyCastNoTarget(unit caster, int abilId, int orderId, int level)
