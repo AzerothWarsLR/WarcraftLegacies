@@ -38,9 +38,7 @@ namespace MacroTools.DummyCasters
       if (originType == DummyCastOriginType.Caster)
         _unit.FacePosition(target.GetPosition());
 
-      _unit
-        .IssueOrder(_abilityOrderId, target)
-        .RemoveAbility(_abilityTypeId);
+      _unit.IssueOrder(_abilityOrderId, target);
     }
 
     public void CastNoTarget(unit caster, int level)
@@ -51,9 +49,7 @@ namespace MacroTools.DummyCasters
         .AddAbility(_abilityTypeId)
         .SetAbilityLevel(_abilityTypeId, level);
 
-      _unit
-        .IssueOrder(_abilityOrderId)
-        .RemoveAbility(_abilityTypeId);
+      _unit.IssueOrder(_abilityOrderId);
     }
 
     /// <summary>
@@ -67,9 +63,7 @@ namespace MacroTools.DummyCasters
         .AddAbility(_abilityTypeId)
         .SetAbilityLevel(_abilityTypeId, level);
 
-      _unit
-        .IssueOrder(_abilityOrderId)
-        .RemoveAbility(_abilityTypeId);
+      _unit.IssueOrder(_abilityOrderId);
     }
 
     /// <summary>
@@ -82,8 +76,7 @@ namespace MacroTools.DummyCasters
         .SetPosition(target)
         .AddAbility(_abilityTypeId)
         .SetAbilityLevel(_abilityTypeId, level)
-        .IssueOrder(_abilityOrderId, target)
-        .RemoveAbility(_abilityTypeId);
+        .IssueOrder(_abilityOrderId, target);
     }
 
     /// <summary>
