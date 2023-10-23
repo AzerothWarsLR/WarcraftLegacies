@@ -1,4 +1,4 @@
-﻿namespace MacroTools.SpellSystem
+﻿namespace MacroTools.DummyCasters
 {
   /// <summary>
   /// Indicates where the dummy unit should be moved to before it casts its spell.

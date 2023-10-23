@@ -1,4 +1,5 @@
 using System;
+using MacroTools.DummyCasters;
 using MacroTools.Extensions;
 using MacroTools.SpellSystem;
 using WCSharp.Effects;
@@ -25,12 +26,12 @@ namespace MacroTools.Spells
     /// <summary>
     /// The order ID for casting the specified Purge ability on targets.
     /// </summary>
-    public string PurgeOrder { get; init; } = string.Empty;
+    public int PurgeOrder { get; init; }
     
     /// <summary>
     /// The order ID for casting the specified Storm Bolt ability on targets.
     /// </summary>
-    public string StunOrder { get; init; } = string.Empty;
+    public int StunOrder { get; init; }
     
     /// <summary>
     /// The radius in which to cast Purge and Storm Bolt on units.
@@ -57,8 +58,8 @@ namespace MacroTools.Spells
         {
           if (IsUnitType(unit, UNIT_TYPE_STRUCTURE) || !UnitAlive(unit)) 
             continue;
-          DummyCast.DummyCastUnit(caster, StunId, StunOrder, 1, unit, DummyCastOriginType.Target);
-          DummyCast.DummyCastUnit(caster, PurgeId, PurgeOrder, 1, unit, DummyCastOriginType.Target);
+          DummyCasterManager.GetGlobalDummyCaster().CastUnit(caster, StunId, StunOrder, 1, unit, DummyCastOriginType.Target);
+          DummyCasterManager.GetGlobalDummyCaster().CastUnit(caster, PurgeId, PurgeOrder, 1, unit, DummyCastOriginType.Target);
         }
       }
       catch (Exception ex)

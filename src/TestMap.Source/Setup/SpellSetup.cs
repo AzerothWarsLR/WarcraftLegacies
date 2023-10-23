@@ -80,8 +80,8 @@ namespace TestMap.Source.Setup
         {
           StunId = FourCC("ANsb"),
           PurgeId = FourCC("Aprg"),
-          PurgeOrder = "purge",
-          StunOrder = "thunderbolt",
+          PurgeOrder = OrderId("purge"),
+          StunOrder = OrderId("thunderbolt"),
           Radius = 200.00F,
           Effect = "Abilities\\Spells\\Human\\Thunderclap\\ThunderClapCaster.mdl"
         };
@@ -102,7 +102,7 @@ namespace TestMap.Source.Setup
         var stormBoltOnAttack = new SpellOnAttack(FourCC("Udea"), FourCC("AUau"))
         {
           DummyAbilityId = FourCC("ANsb"),
-          DummyOrderString = "thunderbolt",
+          DummyOrderId = OrderId("thunderbolt"),
           ProcChance = 1
         };
         PassiveAbilityManager.Register(stormBoltOnAttack);

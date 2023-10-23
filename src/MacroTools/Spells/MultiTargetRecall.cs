@@ -1,4 +1,5 @@
 ﻿using System.Linq;
+using MacroTools.DummyCasters;
 using MacroTools.Extensions;
 using MacroTools.SpellSystem;
 using WCSharp.Shared.Data;
@@ -16,9 +17,9 @@ namespace MacroTools.Spells
 
     public SpellTargetType TargetType { get; init; } = SpellTargetType.None;
     
-    private DummyCast.CastFilter CastFilter { get; }
+    private DummyCasterManager.CastFilter CastFilter { get; }
     
-    public MultiTargetRecall(int id, DummyCast.CastFilter castFilter) : base(id)
+    public MultiTargetRecall(int id, DummyCasterManager.CastFilter castFilter) : base(id)
     {
       CastFilter = castFilter;
     }

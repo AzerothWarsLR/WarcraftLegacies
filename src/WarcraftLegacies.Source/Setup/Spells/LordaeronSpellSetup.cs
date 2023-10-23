@@ -18,7 +18,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
         DamageLevel = 60,
         DurationBase = 1,
         StunAbilityId = Constants.ABILITY_S00H_THUNDER_CLAP_DUMMY,
-        StunOrderString = "cripple",
+        StunOrderId = OrderId("cripple"),
         SpecialEffect = @"Abilities\Spells\Human\Thunderclap\ThunderClapCaster.mdl"
       };
       SpellSystem.Register(consecration);
