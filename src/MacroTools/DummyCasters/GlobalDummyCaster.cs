@@ -22,7 +22,7 @@ namespace MacroTools.DummyCasters
     /// <summary>
     /// Causes the specified ability to be cast from the specified object at the specified target.
     /// </summary>
-    public void DummyCastUnit(unit caster, int abilId, int orderId, int level, unit target, DummyCastOriginType originType)
+    public void CastUnit(unit caster, int abilId, int orderId, int level, unit target, DummyCastOriginType originType)
     {
       var originPoint = originType == DummyCastOriginType.Caster ? caster.GetPosition() : target.GetPosition();
       _unit
@@ -39,7 +39,7 @@ namespace MacroTools.DummyCasters
         .RemoveAbility(abilId);
     }
 
-    public void DummyCastNoTarget(unit caster, int abilId, int orderId, int level)
+    public void CastNoTarget(unit caster, int abilId, int orderId, int level)
     {
       _unit
         .SetOwner(caster.OwningPlayer())
@@ -55,7 +55,7 @@ namespace MacroTools.DummyCasters
     /// <summary>
     /// Causes the specified spell to be cast on a particular point.
     /// </summary>
-    public void DummyCastNoTargetOnUnit(unit caster, int abilId, int orderId, int level, unit target)
+    public void CastNoTargetOnUnit(unit caster, int abilId, int orderId, int level, unit target)
     {
       _unit
         .SetOwner(caster.OwningPlayer())
@@ -71,7 +71,7 @@ namespace MacroTools.DummyCasters
     /// <summary>
     /// Causes the specified spell to be cast at a particular point.
     /// </summary>
-    public void DummyCastPoint(player whichPlayer, int abilId, int orderId, int level, Point target)
+    public void CastPoint(player whichPlayer, int abilId, int orderId, int level, Point target)
     {
       _unit
         .SetOwner(whichPlayer)
@@ -85,14 +85,14 @@ namespace MacroTools.DummyCasters
     /// <summary>
     /// Causes the specified spell to be cast on all units in a circle.
     /// </summary>
-    public void DummyCastOnUnitsInCircle(unit caster, int abilId, int orderId, int level, Point center,
+    public void CastOnUnitsInCircle(unit caster, int abilId, int orderId, int level, Point center,
       float radius, CastFilter castFilter, DummyCastOriginType originType)
     {
       foreach (var target in CreateGroup()
                  .EnumUnitsInRange(center, radius).EmptyToList()
                  .FindAll(unit => castFilter(caster, unit)))
       {
-        DummyCastUnit(caster, abilId, orderId, level, target, originType);
+        CastUnit(caster, abilId, orderId, level, target, originType);
       }
     }
   }

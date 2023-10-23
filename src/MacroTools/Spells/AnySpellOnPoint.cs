@@ -17,7 +17,7 @@ namespace MacroTools.Spells
 
     public override void OnCast(unit caster, unit target, Point targetPoint)
     {
-      DummyCast.DummyCastNoTargetOnUnit(caster, DummyAbilityId, DummyAbilityOrderString, GetAbilityLevel(caster), target);
+      DummyCasterManager.GetGlobalDummyCaster().CastNoTargetOnUnit(caster, DummyAbilityId, DummyAbilityOrderString, GetAbilityLevel(caster), target);
     }
   }
 }

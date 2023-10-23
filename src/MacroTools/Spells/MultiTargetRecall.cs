@@ -17,9 +17,9 @@ namespace MacroTools.Spells
 
     public SpellTargetType TargetType { get; init; } = SpellTargetType.None;
     
-    private DummyCast.CastFilter CastFilter { get; }
+    private DummyCasterManager.GetGlobalDummyCaster().CastFilter CastFilter { get; }
     
-    public MultiTargetRecall(int id, DummyCast.CastFilter castFilter) : base(id)
+    public MultiTargetRecall(int id, DummyCasterManager.GetGlobalDummyCaster().CastFilter castFilter) : base(id)
     {
       CastFilter = castFilter;
     }

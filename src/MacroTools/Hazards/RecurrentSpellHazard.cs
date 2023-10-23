@@ -16,13 +16,13 @@ namespace MacroTools.Hazards
     /// <inheritdoc />
     protected override void OnPeriodic()
     {
-      DummyCast.DummyCastPoint(GetOwningPlayer(Caster), _dummySpellId, _dummySpellOrder, _level, Position);
+      DummyCasterManager.GetGlobalDummyCaster().CastPoint(GetOwningPlayer(Caster), _dummySpellId, _dummySpellOrder, _level, Position);
     }
 
     /// <inheritdoc />
     public override void OnCreate()
     {
-      DummyCast.DummyCastPoint(GetOwningPlayer(Caster), _dummySpellId, _dummySpellOrder, _level, Position);
+      DummyCasterManager.GetGlobalDummyCaster().CastPoint(GetOwningPlayer(Caster), _dummySpellId, _dummySpellOrder, _level, Position);
     }
     
     /// <summary>
