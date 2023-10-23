@@ -7,8 +7,7 @@ namespace MacroTools.DummyCasters
   {
     private static GlobalDummyCaster? _globalDummyCaster;
     private static readonly Dictionary<int, AbilitySpecificDummyCaster> DummyUnitByAbility = new();
-
-    public static int UnitTypeId { get; } = FourCC("u00X");
+    private static readonly int UnitTypeId = FourCC("u00X");
 
     /// <summary>Gets a dummy caster that can be used to cast any spell.</summary>
     public static GlobalDummyCaster GetGlobalDummyCaster() => _globalDummyCaster ??= new GlobalDummyCaster(InitializeDummyCasterUnit());
@@ -24,7 +23,13 @@ namespace MacroTools.DummyCasters
 
       return DummyUnitByAbility[abilityId];
     }
-    
+
+    /// <summary>
+    /// Gets a dummy caster that lasts for longer than an instant. Can be used to cast spells that need time to execute,
+    /// like a spell with a casting time or channel duration.
+    /// </summary>
+    public static LongLivedDummyCaster GetLongLivedDummyCaster() => new(UnitTypeId);
+
     private static unit InitializeDummyCasterUnit()
     {
       var dummyUnit = CreateUnit(Player(PLAYER_NEUTRAL_AGGRESSIVE), UnitTypeId, 0, 0, 0);
