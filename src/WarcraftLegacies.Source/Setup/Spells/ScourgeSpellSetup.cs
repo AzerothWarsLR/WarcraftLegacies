@@ -5,6 +5,7 @@ using MacroTools.Spells;
 using MacroTools.SpellSystem;
 using WarcraftLegacies.Source.Mechanics.Scourge;
 using WarcraftLegacies.Source.Spells;
+using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup.Spells
 {
@@ -33,7 +34,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
       var massUnholyFrenzy = new MassAnySpell(Constants.ABILITY_A02W_MASS_UNHOLY_FRENZY_SCOURGE)
       {
         DummyAbilityId = Constants.ABILITY_ACUF_UNHOLY_FRENZY_DUMMY,
-        DummyAbilityOrderId = "unholyfrenzy",
+        DummyAbilityOrderId = OrderId("unholyfrenzy"),
         Radius = 250,
         CastFilter = CastFilters.IsTargetOrganicAndAlive,
         TargetType = SpellTargetType.Point
@@ -43,7 +44,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
       var massFrostArmor = new MassAnySpell(Constants.ABILITY_A13R_MASS_FROST_ARMOR_KEL_THUZAD)
       {
         DummyAbilityId = Constants.ABILITY_A13S_MASS_FROST_ARMOUR_KEL_THUZAD_DUMMY,
-        DummyAbilityOrderId = "frostarmor",
+        DummyAbilityOrderId = OrderId("frostarmor"),
         Radius = 200,
         CastFilter = CastFilters.IsTargetOrganicAndAlive,
         TargetType = SpellTargetType.Point
@@ -89,7 +90,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
       var massDeathCoil = new MassAnySpell(Constants.ABILITY_ZB06_MASS_DEATH_COIL_ARTHAS)
       {
         DummyAbilityId = Constants.ABILITY_ZB05_MASS_DEATH_COIL_ARTHAS_DUMMY,
-        DummyAbilityOrderId = "deathcoil",
+        DummyAbilityOrderId = OrderId("deathcoil"),
         Radius = 250,
         CastFilter = CastFilters.IsTargetOrganicAndAlive,
         TargetType = SpellTargetType.Point,

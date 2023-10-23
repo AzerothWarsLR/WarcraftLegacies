@@ -3,6 +3,7 @@ using MacroTools.PassiveAbilitySystem;
 using MacroTools.Spells;
 using MacroTools.SpellSystem;
 using WarcraftLegacies.Source.Setup.FactionSetup;
+using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup.Spells
 {
@@ -19,7 +20,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
       var enchantedBolt = new MassAnySpell(Constants.ABILITY_A10L_ENCHANTED_BOLTS_DALARAN)
       {
         DummyAbilityId = Constants.ABILITY_A10O_ENCHANTED_BOLT_DALARAN_DUMMY,
-        DummyAbilityOrderId = "thunderbolt",
+        DummyAbilityOrderId = OrderId("thunderbolt"),
         Radius = 250,
         CastFilter = CastFilters.IsTargetEnemyAndAlive,
         TargetType = SpellTargetType.Point,
