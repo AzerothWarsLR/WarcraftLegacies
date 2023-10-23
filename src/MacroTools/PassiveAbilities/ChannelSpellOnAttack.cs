@@ -68,7 +68,7 @@ namespace MacroTools.PassiveAbilities
       }
     }
     
-    private void ChannelNoTarget(unit caster) => DummyCasterManager.GetGlobalDummyCaster().ChannelAtCaster(caster, DummyAbilityId,
+    private void ChannelNoTarget(unit caster) => DummyCasterManager.GetLongLivedDummyCaster().ChannelAtCaster(caster, DummyAbilityId,
       DummyOrderString, GetUnitAbilityLevel(caster, AbilityTypeId), DurationBase + DurationLevel * GetAbilityLevel(caster));
   }
 }

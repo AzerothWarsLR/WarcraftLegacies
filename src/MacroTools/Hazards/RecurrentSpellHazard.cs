@@ -10,27 +10,27 @@ namespace MacroTools.Hazards
   public sealed class RecurrentSpellHazard : Hazard
   {
     private readonly int _dummySpellId;
-    private readonly string _dummySpellOrder;
+    private readonly int _dummySpellOrderId;
     private readonly int _level;
 
     /// <inheritdoc />
     protected override void OnPeriodic()
     {
-      DummyCasterManager.GetGlobalDummyCaster().CastPoint(GetOwningPlayer(Caster), _dummySpellId, _dummySpellOrder, _level, Position);
+      DummyCasterManager.GetGlobalDummyCaster().CastPoint(GetOwningPlayer(Caster), _dummySpellId, _dummySpellOrderId, _level, Position);
     }
 
     /// <inheritdoc />
     public override void OnCreate()
     {
-      DummyCasterManager.GetGlobalDummyCaster().CastPoint(GetOwningPlayer(Caster), _dummySpellId, _dummySpellOrder, _level, Position);
+      DummyCasterManager.GetGlobalDummyCaster().CastPoint(GetOwningPlayer(Caster), _dummySpellId, _dummySpellOrderId, _level, Position);
     }
     
     /// <summary>
     /// Initializes a new instance of the <see cref="RecurrentSpellHazard"/> class.
     /// </summary>
-    public RecurrentSpellHazard(unit caster, float x, float y, string dummySpellOrder, int level, int dummySpellId) : base(caster, x, y)
+    public RecurrentSpellHazard(unit caster, float x, float y, int dummySpellOrderId, int level, int dummySpellId) : base(caster, x, y)
     {
-      _dummySpellOrder = dummySpellOrder;
+      _dummySpellOrderId = dummySpellOrderId;
       _level = level;
       _dummySpellId = dummySpellId;
     }

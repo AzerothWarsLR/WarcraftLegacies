@@ -29,7 +29,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
         DurationBase = 0,
         DurationLevel = 1,
         StunAbilityId = Constants.ABILITY_A0WN_STUN_UNIT_DUMMY,
-        StunOrderString = "thunderbolt",
+        StunOrderId = "thunderbolt",
         SpecialEffect = @"Abilities\Spells\Orc\WarStomp\WarStompCaster.mdl"
       };
       SpellSystem.Register(warStompCairne);
@@ -41,7 +41,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
         DamageLevel = 00,
         DurationBase = 15,
         StunAbilityId = Constants.ABILITY_TP08_CRIPPLE_DUMMY,
-        StunOrderString = "cripple",
+        StunOrderId = "cripple",
         SpecialEffect = @"abilities\spells\nightelf\battleroar\roarcaster.mdx"
       };
       SpellSystem.Register(CripplingShout);

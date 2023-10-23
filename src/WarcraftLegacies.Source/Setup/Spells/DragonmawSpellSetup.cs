@@ -21,7 +21,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
       SpellSystem.Register(new MassAnySpell(Constants.ABILITY_A0OJ_MASS_UNHOLY_ARMOR_DRAGONMAW_GORFAX)
       {
         DummyAbilityId = Constants.ABILITY_A0HG_UNHOLY_ARMOR_DRAGONMAW_GORFAX,
-        DummyAbilityOrderString = "innerfire",
+        DummyAbilityOrderId = "innerfire",
         Radius = 400,
         CastFilter = CastFilters.IsTargetAllyAndAlive,
         TargetType = SpellTargetType.Point

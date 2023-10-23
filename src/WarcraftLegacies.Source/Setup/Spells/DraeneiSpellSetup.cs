@@ -52,7 +52,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
         Constants.ABILITY_A103_HOLY_SHOCKWAVE_DRAENEI)
       {
         DummyAbilityId = Constants.ABILITY_A104_SHOCKWAVE_WARFRAME_DUMMY,
-        DummyOrderString = "carrionswarm",
+        DummyOrderId = "carrionswarm",
         ProcChance = 1
       };
       PassiveAbilityManager.Register(holyShockwave);
@@ -65,7 +65,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
         DurationBase = 6,
         DurationLevel = 3,
         StunAbilityId = Constants.ABILITY_A106_CURSE_DRAENEI,
-        StunOrderString = "curse",
+        StunOrderId = "curse",
         SpecialEffect = @"war3mapImported\FrostNova.mdx"
       };
       SpellSystem.Register(warStompAdal);

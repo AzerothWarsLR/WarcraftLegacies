@@ -34,7 +34,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
       var massBanish = new MassAnySpell(Constants.ABILITY_A0FD_MASS_BANISH_QUEL_THALAS_KAEL_THAS)
       {
         DummyAbilityId = Constants.ABILITY_A0FE_MASS_BANISH_QUEL_THALAS_KAEL_THAS_DUMMY_CASTER,
-        DummyAbilityOrderString = "banish",
+        DummyAbilityOrderId = "banish",
         Radius = 250,
         CastFilter = CastFilters.IsTargetOrganicAndAlive,
         TargetType = SpellTargetType.Point

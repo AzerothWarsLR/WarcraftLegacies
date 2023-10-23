@@ -22,7 +22,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
         Constants.ABILITY_A10J_MASTER_OF_LIGHTNING_STORMRIDERS)
       {
         DummyAbilityId = Constants.ABILITY_ACFL_FORKED_LIGHTNING_LIGHT_BLUE_HIGHBORNE,
-        DummyOrderString = "forkedlightning",
+        DummyOrderId = "forkedlightning",
         ProcChance = 0.15f
       };
       PassiveAbilityManager.Register(lightningAttack);

@@ -102,7 +102,7 @@ namespace TestMap.Source.Setup
         var stormBoltOnAttack = new SpellOnAttack(FourCC("Udea"), FourCC("AUau"))
         {
           DummyAbilityId = FourCC("ANsb"),
-          DummyOrderString = "thunderbolt",
+          DummyOrderId = "thunderbolt",
           ProcChance = 1
         };
         PassiveAbilityManager.Register(stormBoltOnAttack);

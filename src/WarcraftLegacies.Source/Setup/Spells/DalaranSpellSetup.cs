@@ -19,7 +19,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
       var enchantedBolt = new MassAnySpell(Constants.ABILITY_A10L_ENCHANTED_BOLTS_DALARAN)
       {
         DummyAbilityId = Constants.ABILITY_A10O_ENCHANTED_BOLT_DALARAN_DUMMY,
-        DummyAbilityOrderString = "thunderbolt",
+        DummyAbilityOrderId = "thunderbolt",
         Radius = 250,
         CastFilter = CastFilters.IsTargetEnemyAndAlive,
         TargetType = SpellTargetType.Point,

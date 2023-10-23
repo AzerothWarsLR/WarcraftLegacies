@@ -9,11 +9,11 @@ namespace MacroTools.Spells
   {
     public int DummyAbilityId { get; init; }
     
-    public string DummyAbilityOrderString { get; init; }
+    public int DummyAbilityOrderId { get; init; }
     
     public float Radius { get; init; }
     
-    public DummyCasterManager.GetGlobalDummyCaster().CastFilter CastFilter { get; init; }
+    public GlobalDummyCaster.CastFilter CastFilter { get; init; }
     
     public SpellTargetType TargetType { get; init; } = SpellTargetType.None;
 
@@ -29,7 +29,7 @@ namespace MacroTools.Spells
     public override void OnCast(unit caster, unit target, Point targetPoint)
     {
       var center = TargetType == SpellTargetType.None ? new Point(GetUnitX(caster), GetUnitY(caster)) : targetPoint;
-      DummyCasterManager.GetGlobalDummyCaster().CastOnUnitsInCircle(caster, DummyAbilityId, DummyAbilityOrderString, GetAbilityLevel(caster),
+      DummyCasterManager.GetGlobalDummyCaster().CastOnUnitsInCircle(caster, DummyAbilityId, DummyAbilityOrderId, GetAbilityLevel(caster),
         center, Radius, CastFilter, DummyCastOriginType);
     }
   }

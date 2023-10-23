@@ -1,6 +1,5 @@
 ﻿using MacroTools.DummyCasters;
 using MacroTools.PassiveAbilitySystem;
-using MacroTools.SpellSystem;
 using static War3Api.Common;
 
 namespace MacroTools.PassiveAbilities
@@ -21,9 +20,9 @@ namespace MacroTools.PassiveAbilities
     public int DummyAbilityId { get; init; }
 
     /// <summary>
-    /// An order string that can be used to cast the specified dummy ability.
+    /// An order ID that can be used to cast the specified dummy ability.
     /// </summary>
-    public string DummyOrderString { get; init; } = "";
+    public int DummyOrderId { get; init; }
     
     /// <summary>
     /// The percentage chance that the effect will occur on attack.
@@ -55,6 +54,6 @@ namespace MacroTools.PassiveAbilities
     }
     
     private void DoSpellOnTarget(unit caster, unit target) => DummyCasterManager.GetGlobalDummyCaster().CastUnit(caster, DummyAbilityId,
-      DummyOrderString, GetUnitAbilityLevel(caster, AbilityTypeId), target, DummyCastOriginType.Caster);
+      DummyOrderId, GetUnitAbilityLevel(caster, AbilityTypeId), target, DummyCastOriginType.Caster);
   }
 }
