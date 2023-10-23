@@ -14,16 +14,16 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       var scarlet = ScarletSetup.ScarletCrusade;
       if (scarlet == null) 
         return;
-      var questStratholme = new QuestRebuildStratholme (Regions.StratholmeUnlock);
+      var questStratholme = new QuestRebuildStratholme (Regions.StratholmeUnlock, allLegendSetup.Scarlet.Saiden);
       scarlet.AddQuest(questStratholme);
      
-      var questCapital = new QuestReconquerCapital(Regions.Terenas, allLegendSetup.Lordaeron.CapitalPalace);
+      var questCapital = new QuestReconquerCapital(Regions.Terenas, allLegendSetup.Lordaeron.CapitalPalace, allLegendSetup.Scarlet.Saiden, allLegendSetup.Scarlet.Renault, allLegendSetup.Scarlet.Sally, allLegendSetup.Scarlet.Brigitte);
       scarlet.AddQuest(questCapital);
      
       var questHearthglen = new QuestRebuildHearthglen(Regions.Hearthglen, allLegendSetup.Lordaeron.Monastery);
       scarlet.AddQuest(questHearthglen);
      
-      var questBrill = new QuestRebuildBrill(Regions.Brill);
+      var questBrill = new QuestRebuildBrill(Regions.Brill, allLegendSetup.Scarlet.Renault);
       scarlet.AddQuest(questBrill);
       
       var questAndorhal = new QuestRebuildAndorhal(Regions.Andorhal);

@@ -17,7 +17,7 @@ using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 namespace WarcraftLegacies.Source.Quests.Scarlet
 {
   /// <summary>
-  /// The Draenei acquire some kind of power source to power their ship.
+  /// Rebuild all the towns in Lordaeron to unlock the Divine Bastion and it's units.
   /// </summary>
   public sealed class QuestReconquerLordaeron : QuestData
   {
@@ -27,8 +27,8 @@ namespace WarcraftLegacies.Source.Quests.Scarlet
     /// </summary>
     public QuestReconquerLordaeron(QuestData stratholme, QuestData capital, QuestData hearthglen, QuestData brill, QuestData andorhal) : base(
       "Reconquer Lordaeron",
-      "The core of the Exodar is rebuilt, but it requires a great source of power to function again. Finding that source of power would make the Exodar a powerful asset for the Draenei.",
-      @"ReplaceableTextures\CommandButtons\BTNArcaneEnergy.blp")
+      "The Scarlet Crusade ultimate objective is to purge all undead from the Plaguelands and rebuild Lordaeron to it's glory.",
+      @"ReplaceableTextures/CommandButtons/BTNSalvationSpire.blp")
     {
       Required = true;
       AddObjective(new ObjectiveCompleteQuest(stratholme));
@@ -36,21 +36,21 @@ namespace WarcraftLegacies.Source.Quests.Scarlet
       AddObjective(new ObjectiveCompleteQuest(hearthglen));
       AddObjective(new ObjectiveCompleteQuest(brill));
       AddObjective(new ObjectiveCompleteQuest(andorhal));
-      ResearchId = Constants.UPGRADE_R09A_QUEST_COMPLETED_THE_DIMENSIONAL_SHIP;
+      ResearchId = Constants.UPGRADE_R09A_QUEST_COMPLETED_THE_DIMENSIONAL_SHIP; //TODO create research according to new title picked by writting team
     }
 
     /// <inheritdoc/>
     protected override void OnComplete(Faction whichFaction)
     {
-  
+      
     }
 
     /// <inheritdoc/>
     protected override string RewardFlavour =>
-      "With the acquisition of a replacement power source, the Exodar's gemcrafters set to work reigniting the ship's dimensional portals. The Dimensional Generator can now now be used to travel the planes once more.";
+      "With the safeguard of Lordaeron, the Scarlet Crusade gains the highest blessing of the Light";
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
-      "The Dimensional Generator gains the ability to channel portals to Argus, Azuremyst, and Outland. The Lightforged units and A'dal will become available";
+      "You will be able to train the Divine Bastion";
   }
 }

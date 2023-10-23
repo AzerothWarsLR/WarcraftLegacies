@@ -17,7 +17,7 @@ using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 namespace WarcraftLegacies.Source.Quests.Scarlet
 {
   /// <summary>
-  /// The Draenei acquire some kind of power source to power their ship.
+  /// Rebuild Andhoral to buff your air units
   /// </summary>
   public sealed class QuestRebuildAndorhal : QuestData
   {
@@ -27,8 +27,8 @@ namespace WarcraftLegacies.Source.Quests.Scarlet
     /// </summary>
     public QuestRebuildAndorhal(Rectangle questRect) : base(
       "Rebuild Andorhal",
-      "The core of the Exodar is rebuilt, but it requires a great source of power to function again. Finding that source of power would make the Exodar a powerful asset for the Draenei.",
-      @"ReplaceableTextures\CommandButtons\BTNArcaneEnergy.blp")
+      "Andorhal was completly destroyed by the scourge, the city should be rebuilt; it's proximity to Aerie Peak will enable the Scarlet Crusade to breed powerful Eagles and Gryphons. ",
+      @"ReplaceableTextures\CommandButtons\BTNAlteracGryphonAviary.blp")
     {
       Required = true;
       AddObjective(new ObjectiveBuildInRect(questRect, "in Andorhal", Constants.UNIT_H0BM_TOWN_HALL_CRUSADE_T1, 1));
@@ -38,21 +38,15 @@ namespace WarcraftLegacies.Source.Quests.Scarlet
       AddObjective(new ObjectiveBuildInRect(questRect, "in Andorhal", Constants.UNIT_N0D8_TRADE_HOUSE_CRUSADE_SHOP, 1));
       AddObjective(new ObjectiveControlLevel(
         ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N01H_ANDORHAL), 2));
-      ResearchId = Constants.UPGRADE_R09A_QUEST_COMPLETED_THE_DIMENSIONAL_SHIP;
-    }
-
-    /// <inheritdoc/>
-    protected override void OnComplete(Faction whichFaction)
-    {
-  
+      ResearchId = Constants.UPGRADE_R09A_QUEST_COMPLETED_THE_DIMENSIONAL_SHIP; //TODO create the reserach with the new title that buffs air units
     }
 
     /// <inheritdoc/>
     protected override string RewardFlavour =>
-      "With the acquisition of a replacement power source, the Exodar's gemcrafters set to work reigniting the ship's dimensional portals. The Dimensional Generator can now now be used to travel the planes once more.";
+      "With the proximity to Aerie Peak, New Andhoral can start training a new breed of Eagle and Grypgons, stronger than before";
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
-      "The Dimensional Generator gains the ability to channel portals to Argus, Azuremyst, and Outland. The Lightforged units and A'dal will become available";
+      $"Your {GetObjectName(Constants.UNIT_O06V_EAGLE_RIDER_SCARLET)} and {GetObjectName(Constants.UNIT_E01L_GRYPHON_MARKSMAN_SCARLET)} gain 400 hit points.";
   }
 }

@@ -6,7 +6,7 @@ using static War3Api.Common;
 namespace MacroTools.PassiveAbilities
 {
   /// <summary>
-  /// When the unit deals damage, it has a chance to cast a dummy spell without a target.
+  /// When the unit deals casts a spell, it has a chance to cast a dummy spell without a target.
   /// </summary>
   public sealed class NoTargetSpellOnCast : PassiveAbility
   {

@@ -17,18 +17,23 @@ using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 namespace WarcraftLegacies.Source.Quests.Scarlet
 {
   /// <summary>
-  /// The Draenei acquire some kind of power source to power their ship.
+  /// Recapture Capital and rebuild it to empower all your heroes.
   /// </summary>
   public sealed class QuestReconquerCapital : QuestData
   {
+    private readonly LegendaryHero _saiden;
+    private readonly LegendaryHero _renault;
+    private readonly LegendaryHero _sally;
+    private readonly LegendaryHero _brigitte;
+    private const int ExperienceReward = 2000;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestReconquerCapital"/> class.
     /// </summary>
-    public QuestReconquerCapital(Rectangle questRect, Capital capitalPalace) : base(
+    public QuestReconquerCapital(Rectangle questRect, Capital capitalPalace, LegendaryHero saiden, LegendaryHero renault, LegendaryHero sally, LegendaryHero brigitte) : base(
       "Reconquer Capital",
-      "The core of the Exodar is rebuilt, but it requires a great source of power to function again. Finding that source of power would make the Exodar a powerful asset for the Draenei.",
-      @"ReplaceableTextures\CommandButtons\BTNArcaneEnergy.blp")
+      "Lordaeron City was almost completly destroyed by the scourge, it would be a symbol for the Scarlet Crusade if they could recapture it and rebuild it!",
+      @"ReplaceableTextures/CommandButtons/BTNStromgardeAltar.blp")
     {
       Required = true;
       AddObjective(new ObjectiveBuildInRect(questRect, "in Lordaeron City", Constants.UNIT_H0BP_HOUSEHOLD_CRUSADE_FARM, 4));
@@ -37,21 +42,27 @@ namespace WarcraftLegacies.Source.Quests.Scarlet
       AddObjective(new ObjectiveControlCapital(capitalPalace, false));
       AddObjective(new ObjectiveControlLevel(
         ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N01G_LORDAERON_CITY), 4));
-      ResearchId = Constants.UPGRADE_R09A_QUEST_COMPLETED_THE_DIMENSIONAL_SHIP;
+      _saiden = saiden;
+      _renault = renault;
+      _sally = sally;
+      _brigitte = brigitte;
     }
 
     /// <inheritdoc/>
     protected override void OnComplete(Faction whichFaction)
     {
-  
+      _saiden.Unit?.AddExperience(ExperienceReward);
+      _renault.Unit?.AddExperience(ExperienceReward);
+      _sally.Unit?.AddExperience(ExperienceReward);
+      _brigitte.Unit?.AddExperience(ExperienceReward);
     }
 
     /// <inheritdoc/>
     protected override string RewardFlavour =>
-      "With the acquisition of a replacement power source, the Exodar's gemcrafters set to work reigniting the ship's dimensional portals. The Dimensional Generator can now now be used to travel the planes once more.";
+      "Reconquering and rebuilding the Capital of Lordaeron has inspired and legitimized the Scarlet in the eye of all the surviving humen of Lordaeron";
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
-      "The Dimensional Generator gains the ability to channel portals to Argus, Azuremyst, and Outland. The Lightforged units and A'dal will become available";
+      "All your heroes will gain 2000 experience.";
   }
 }

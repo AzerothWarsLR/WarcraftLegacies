@@ -17,18 +17,20 @@ using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 namespace WarcraftLegacies.Source.Quests.Scarlet
 {
   /// <summary>
-  /// The Draenei acquire some kind of power source to power their ship.
+  /// Rebuild Brill to buff Renault.
   /// </summary>
   public sealed class QuestRebuildBrill : QuestData
   {
-
+    
+    private readonly LegendaryHero _renault;
+    private const int ExperienceReward = 6000;
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestRebuildBrill"/> class.
     /// </summary>
-    public QuestRebuildBrill(Rectangle questRect) : base(
+    public QuestRebuildBrill(Rectangle questRect, LegendaryHero renault) : base(
       "Rebuild Brill",
-      "The core of the Exodar is rebuilt, but it requires a great source of power to function again. Finding that source of power would make the Exodar a powerful asset for the Draenei.",
-      @"ReplaceableTextures\CommandButtons\BTNArcaneEnergy.blp")
+      "Brill is the hometown of Renault, saving it would make him happy and motivated. It was one of the first town ravaged by the undead.",
+      @"ReplaceableTextures\CommandButtons\BTNStromgardeFarm.blp")
     {
       Required = true;
       AddObjective(new ObjectiveBuildInRect(questRect, "in Brill", Constants.UNIT_H0BM_TOWN_HALL_CRUSADE_T1, 1));
@@ -37,21 +39,21 @@ namespace WarcraftLegacies.Source.Quests.Scarlet
       AddObjective(new ObjectiveBuildInRect(questRect, "in Brill", Constants.UNIT_N0D8_TRADE_HOUSE_CRUSADE_SHOP, 1));
       AddObjective(new ObjectiveControlLevel(
         ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N03H_BRILL), 2));
-      ResearchId = Constants.UPGRADE_R09A_QUEST_COMPLETED_THE_DIMENSIONAL_SHIP;
+      _renault = renault;
     }
 
     /// <inheritdoc/>
     protected override void OnComplete(Faction whichFaction)
     {
-  
+      _renault.Unit?.AddExperience(ExperienceReward);
     }
 
     /// <inheritdoc/>
     protected override string RewardFlavour =>
-      "With the acquisition of a replacement power source, the Exodar's gemcrafters set to work reigniting the ship's dimensional portals. The Dimensional Generator can now now be used to travel the planes once more.";
+      "With Brill now rebuilt, Renault shines with a new vigour and motivation to save Lordaeron";
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
-      "The Dimensional Generator gains the ability to channel portals to Argus, Azuremyst, and Outland. The Lightforged units and A'dal will become available";
+      "Renault will gain 6000 experience";
   }
 }
