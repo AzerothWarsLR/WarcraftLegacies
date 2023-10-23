@@ -1,7 +1,7 @@
 [
   {
     "Flags": 2,
-    "OwnerId": 27,
+    "OwnerId": 12,
     "HP": -1,
     "MP": -1,
     "TargetAcquisition": -1,
@@ -28,7 +28,7 @@
   },
   {
     "Flags": 2,
-    "OwnerId": 27,
+    "OwnerId": 12,
     "HP": -1,
     "TargetAcquisition": -1,
     "HeroLevel": 1,
@@ -54,7 +54,7 @@
   },
   {
     "Flags": 2,
-    "OwnerId": 27,
+    "OwnerId": 12,
     "HP": -1,
     "MP": -1,
     "TargetAcquisition": -1,
@@ -81,7 +81,7 @@
   },
   {
     "Flags": 2,
-    "OwnerId": 27,
+    "OwnerId": 12,
     "HP": -1,
     "MP": -1,
     "TargetAcquisition": -1,
@@ -108,7 +108,7 @@
   },
   {
     "Flags": 2,
-    "OwnerId": 27,
+    "OwnerId": 12,
     "HP": -1,
     "MP": -1,
     "TargetAcquisition": -1,
