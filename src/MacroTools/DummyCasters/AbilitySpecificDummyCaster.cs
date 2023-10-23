@@ -10,11 +10,6 @@ namespace MacroTools.DummyCasters
     private readonly unit _unit;
     private readonly int _abilityTypeId;
     private readonly int _abilityOrderId;
-
-    /// <summary>
-    /// A filter that can be applied to dummy casts so that the casts are only performed on particular targets.
-    /// </summary>
-    public delegate bool CastFilter(unit caster, unit target);
     
     internal AbilitySpecificDummyCaster(unit unit, int abilityTypeId, int abilityOrderId)
     {
@@ -83,7 +78,7 @@ namespace MacroTools.DummyCasters
     /// Causes the specified spell to be cast on all units in a circle.
     /// </summary>
     public void CastOnUnitsInCircle(unit caster, int level, Point center,
-      float radius, CastFilter castFilter, DummyCastOriginType originType)
+      float radius, DummyCasterManager.CastFilter castFilter, DummyCastOriginType originType)
     {
       foreach (var target in CreateGroup()
                  .EnumUnitsInRange(center, radius).EmptyToList()

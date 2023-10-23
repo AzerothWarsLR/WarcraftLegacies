@@ -94,7 +94,8 @@ namespace WarcraftLegacies.Source.Setup.Spells
         Radius = 250,
         CastFilter = CastFilters.IsTargetOrganicAndAlive,
         TargetType = SpellTargetType.Point,
-        DummyCastOriginType = DummyCastOriginType.Caster
+        DummyCastOriginType = DummyCastOriginType.Caster,
+        DummyCasterType = DummyCasterType.AbilitySpecific
       };
       SpellSystem.Register(massDeathCoil);
     }

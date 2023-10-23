@@ -13,6 +13,11 @@ namespace MacroTools.DummyCasters
     public static GlobalDummyCaster GetGlobalDummyCaster() => _globalDummyCaster ??= new GlobalDummyCaster(InitializeDummyCasterUnit());
 
     /// <summary>
+    /// A filter that can be applied to dummy casts so that the casts are only performed on particular targets.
+    /// </summary>
+    public delegate bool CastFilter(unit caster, unit target);
+    
+    /// <summary>
     /// Gets a dummy caster that should only ever cast the specified dummy spell.
     /// <para>Prefer using <see cref="GetGlobalDummyCaster"/> unless you have a special reason to use this one.</para>
     /// </summary>
