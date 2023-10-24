@@ -1,4 +1,5 @@
-﻿using MacroTools.SpellSystem;
+﻿using MacroTools.DummyCasters;
+using MacroTools.SpellSystem;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
@@ -16,7 +17,8 @@ namespace MacroTools.Spells
 
     public override void OnCast(unit caster, unit target, Point targetPoint)
     {
-      DummyCast.ChannelOnPoint(caster, DummyAbilityId, DummyAbilityOrderString, GetAbilityLevel(caster), targetPoint, Duration);
+      DummyCasterManager.GetLongLivedDummyCaster().ChannelOnPoint(caster, DummyAbilityId, DummyAbilityOrderString,
+        GetAbilityLevel(caster), targetPoint, Duration);
     }
   }
 }

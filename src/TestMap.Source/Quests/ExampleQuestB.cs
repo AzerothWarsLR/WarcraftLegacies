@@ -9,7 +9,7 @@ namespace TestMap.Source.Quests
   {
     public ExampleQuestB(QuestData otherQuest) : base("Better Quest", "Don't complete that other quest, he sucks.", "ReplaceableTextures\\CommandButtons\\BTNPaladin.blp")
     {
-      AddObjective(new ObjectiveDontCompleteQuest(otherQuest));
+      AddObjective(new ObjectiveQuestNotComplete(otherQuest));
       AddObjective(new ObjectiveBuild(FourCC("hbar"), 1));
     }
 

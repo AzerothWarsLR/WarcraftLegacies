@@ -157,7 +157,7 @@ namespace WarcraftLegacies.Source.Dialogue
           IllidariSetup.Illidari
         }, new List<Objective>
         {
-          new ObjectiveCompleteQuest(IllidariSetup.Illidari.GetQuestByType(typeof(QuestBlackTemple)))
+          new ObjectiveQuestComplete(IllidariSetup.Illidari.GetQuestByType(typeof(QuestBlackTemple)))
         }
       ));
       

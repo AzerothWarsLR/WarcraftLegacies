@@ -13,9 +13,9 @@ namespace WarcraftLegacies.Source.Setup
       FelHordeQuestSetup.Setup(preplacedUnitSystem, allLegendSetup);
       FrostwolfQuestSetup.Setup(preplacedUnitSystem, artifactSetup, allLegendSetup);
       IronforgeQuestSetup.Setup(preplacedUnitSystem, allLegendSetup);
-      LegionQuestSetup.Setup(preplacedUnitSystem, allLegendSetup);
       LordaeronQuestSetup.Setup(preplacedUnitSystem, artifactSetup, allLegendSetup);
       ScourgeQuestSetup.Setup(preplacedUnitSystem, artifactSetup, allLegendSetup);
+      LegionQuestSetup.Setup(preplacedUnitSystem, allLegendSetup);
       SentinelsQuestSetup.Setup(artifactSetup, allLegendSetup);
       StormwindQuestSetup.Setup(preplacedUnitSystem, artifactSetup, allLegendSetup);
       WarsongQuestSetup.Setup(preplacedUnitSystem, allLegendSetup);

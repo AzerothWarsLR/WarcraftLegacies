@@ -19,7 +19,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
     {
       _rivendare = rivendare;
       AddObjective(new ObjectiveTime(420));
-      ResearchId = Constants.UPGRADE_R01H_QUEST_COMPLETED_CULT_OF_THE_DAMNED;
+      ResearchId = Constants.UPGRADE_R01H_QUEST_COMPLETED_THE_CULT_OF_THE_DAMNED;
     }
 
     /// <inheritdoc/>
