@@ -12,8 +12,8 @@
     "WaygateDestinationRegionId": -1,
     "TypeId": 1735549550,
     "Position": {
-      "X": 18574.975,
-      "Y": 7725.9805
+      "X": 18119.146,
+      "Y": 8260.42
     },
     "Rotation": 5.069657802581787,
     "Scale": {
@@ -37,20 +37,20 @@
     "AbilityData": [],
     "CustomPlayerColorId": -1,
     "WaygateDestinationRegionId": -1,
-    "TypeId": 1718510958,
+    "TypeId": 1851875950,
     "Position": {
-      "X": 18582.11,
-      "Y": 7801.331
+      "X": 18139.674,
+      "Y": 8325.315
     },
-    "Rotation": 2.0609662532806396,
+    "Rotation": 2.3681552410125732,
     "Scale": {
       "X": 1,
       "Y": 1,
       "Z": 1
     },
-    "SkinId": 1718510958,
+    "SkinId": 1851875950,
     "MapItemTableId": -1,
     "ItemTableSets": [],
-    "CreationNumber": 2591
+    "CreationNumber": 2593
   }
 ]

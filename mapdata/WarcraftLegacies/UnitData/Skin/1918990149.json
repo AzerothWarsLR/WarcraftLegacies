@@ -100,7 +100,12 @@
     {
       "Id": 1831952757,
       "Type": 3,
-      "Value": "Abilities\\Weapons\\MoonPriestessMissile\\MoonPriestessMissile.mdl"
+      "Value": "Abilities\\Weapons\\SentinelMissile\\SentinelMissile.mdl"
+    },
+    {
+      "Id": 1634759541,
+      "Type": 3,
+      "Value": "Objects\\Spawnmodels\\NightElf\\NightElfLargeDeathExplode\\NightElfLargeDeathExplode.mdl"
     }
   ]
 }
