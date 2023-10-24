@@ -15,7 +15,7 @@ namespace WarcraftLegacies.Source.Quests.Gilneas
     /// IniInitializes a new instance of the <see cref="QuestCrowley"/> class.
     /// </summary>
     public QuestCrowley() : base("The Rebel",
-      "Darius Crowley has been imprisoned for a long time, if Gilneas were to be in grave peril, an early release might be the soloution.",
+      "Darius Crowley has been imprisoned since the Northgate rebellion, if Gilneas were to be in grave peril an early release might be the solution.",
       @"ReplaceableTextures/CommandButtons/BTNWorgenHunt.blp")
     {
       AddObjective(new ObjectiveTime(900));
@@ -24,7 +24,7 @@ namespace WarcraftLegacies.Source.Quests.Gilneas
 
     /// <inheritdoc/>
     protected override string RewardFlavour =>
-      "With the threat of the Scourge and the Plague, Genn Greymane has decided to forgive Darius Crowly for the Northgate Rebellion so that he can help Gilneas in their dire times.";
+      "With the threat of the Scourge and the Plague, Genn Greymane has decided to pardon Darius Crowly for the Northgate rebellion so that he can help Gilneas in their dire times.";
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
