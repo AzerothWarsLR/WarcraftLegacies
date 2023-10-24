@@ -1,5 +1,4 @@
 ﻿using MacroTools.PassiveAbilitySystem;
-using MacroTools.SpellSystem;
 using System.Collections.Generic;
 using MacroTools.DummyCasters;
 using static War3Api.Common;
@@ -14,7 +13,7 @@ namespace MacroTools.PassiveAbilities
     /// <summary>
     /// The unit type ID which has this <see cref="PassiveAbility"/> should also have an ability with this ID.
     /// </summary>
-    public int _AbilityTypeId { get; }
+    private readonly int _abilityTypeId;
     
     /// <summary>
     /// The dummy spell to cast on attack.
@@ -38,7 +37,7 @@ namespace MacroTools.PassiveAbilities
     /// <param name="abilityTypeId">The ability the provided unit type has which represents this object.</param>
     public NoTargetSpellOnCast(int unitTypeId, int abilityTypeId) : base(unitTypeId)
     {
-      _AbilityTypeId = abilityTypeId;
+      _abilityTypeId = abilityTypeId;
     }
 
     public List<int> AbilityWhitelist { get; init; } = new();
@@ -47,7 +46,7 @@ namespace MacroTools.PassiveAbilities
     public override void OnSpellEffect()
     {
       var caster = GetTriggerUnit();
-      var abilityLevel = GetUnitAbilityLevel(caster, _AbilityTypeId);
+      var abilityLevel = GetUnitAbilityLevel(caster, _abilityTypeId);
       if (abilityLevel == 0 || !AbilityWhitelist.Contains(GetSpellAbilityId()))
         return;
       if (GetRandomReal(0, 1) < ProcChance)
@@ -57,6 +56,6 @@ namespace MacroTools.PassiveAbilities
     }
 
     private void DoSpellNoTarget(unit caster) => DummyCasterManager.GetGlobalDummyCaster().CastNoTarget(caster, DummyAbilityId,
-      DummyOrderId, GetUnitAbilityLevel(caster, _AbilityTypeId));
+      DummyOrderId, GetUnitAbilityLevel(caster, _abilityTypeId));
   }
 }
