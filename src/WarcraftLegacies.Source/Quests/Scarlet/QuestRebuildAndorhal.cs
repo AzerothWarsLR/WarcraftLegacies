@@ -47,6 +47,6 @@ namespace WarcraftLegacies.Source.Quests.Scarlet
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
-      $"Your {GetObjectName(Constants.UNIT_O06V_EAGLE_RIDER_SCARLET)} and {GetObjectName(Constants.UNIT_E01L_GRYPHON_MARKSMAN_SCARLET)} gain 400 hit points.";
+      $"Your {GetObjectName(Constants.UNIT_O06V_EAGLE_RIDER_SCARLET)}s and {GetObjectName(Constants.UNIT_E01L_GRYPHON_MARKSMAN_SCARLET)} gain 400 hit points";
   }
 }
