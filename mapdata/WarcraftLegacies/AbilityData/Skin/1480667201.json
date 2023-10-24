@@ -1,55 +1,30 @@
 {
-  "OldId": 1684097089,
+  "OldId": 1718511937,
   "NewId": 1480667201,
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 2020631137,
-      "Value": 1
-    },
-    {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "(warsong grunt)"
+      "Value": "(scarlet)"
     },
     {
-      "Id": 1802007137,
+      "Id": 2037082209,
       "Type": 3,
       "Value": "E"
     },
     {
-      "Id": 1953854049,
+      "Id": 1802007905,
       "Type": 3,
-      "Value": "Gives additional armor to nearby friendly units. |n|n|cffffcc00Level 1|r - Increases base armor by 1.5. |n|cffffcc00Level 2|r - Increases base armor by 3. |n|cffffcc00Level 3|r - Increases base armor by 4.5. |n|cffffcc00Level 4|r - Increases base armor by 6."
-    },
-    {
-      "Level": 1,
-      "Id": 829453409,
-      "Type": 3,
-      "Value": "Battle Brothers"
+      "Value": "E"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Gives 70% magic resistance to your nearby heroes."
-    },
-    {
-      "Id": 1835101793,
-      "Type": 3,
-      "Value": "Battle Brothers"
-    },
-    {
-      "Id": 1952543841,
-      "Type": 3,
-      "Value": "war3mapImported\\Heal Aura.mdx"
-    },
-    {
-      "Id": 1953653089,
-      "Type": 3,
-      "Value": "ReplaceableTextures\\PassiveButtons\\PASKingStrideAura.BLP"
+      "Value": "Increases a target friendly unit\u0027s damage by 20 %, armor by 5 and hp regen by 1. |nLasts \u003CAinf,Dur1\u003E seconds."
     }
   ]
 }

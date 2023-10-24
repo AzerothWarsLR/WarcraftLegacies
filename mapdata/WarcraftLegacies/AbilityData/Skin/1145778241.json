@@ -1,0 +1,53 @@
+{
+  "OldId": 1869827649,
+  "NewId": 1145778241,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 2020631137,
+      "Value": 2
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(saiden dummy)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Deafen enemy units which prevent the casting of spells and reduce movement speed by 75%.|nLasts (3) seconds."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Deafen enemy units which prevent the casting of spells and reduce movement speed by 75%.|nLasts (3) seconds."
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Soul Burn"
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Deafen enemy units which prevent the casting of spells and reduce movement speed by 75%.|nLasts (3) seconds."
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Deafen enemy units which prevent the casting of spells and reduce movement speed by 75%.|nLasts (3) seconds."
+    }
+  ]
+}
