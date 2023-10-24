@@ -16,7 +16,7 @@ using static MacroTools.Libraries.GeneralHelpers;
 namespace WarcraftLegacies.Source.Quests.Lordaeron
 { 
   /// <summary>
-  /// Proudmoore captial ship starts locked. Take control of Kul Tiras to unlock it.
+  /// Lordaeron gives up and is destroyed, the scarlet crusade spawns.
   /// </summary>
   public sealed class QuestScarletCrusade : QuestData
   {
@@ -27,12 +27,8 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
     private player _whichPlayer;
 
     /// <summary>
-    /// Initializes a new instance of the <see cref="QuestUnlockShip"/> class.
+    /// Initializes a new instance of the <see cref="QuestScarletCrusade"/> class.
     /// </summary>
-    /// <param name="rescueRect">All units in this area will be made neutral, then rescued when the quest is completed.</param>
-    /// <param name="proudmooreCapitalShip">starts invulnerable and unusable. Made usuable and vulnerable when the quest is completed.</param>
-    /// <param name="legendBoralus">Must be controlled to complete the quest.</param>
-    /// <param name="daelinProudmoore">Must be controlled to complete the quest.</param>
     public QuestScarletCrusade(Rectangle rescueRect, Capital tyrHand, LegendaryHero saiden, Faction scarletCrusade) : base("All is Lost",
       "Lordaeron has been lost to the plague, but the Scarlet Crusade has taken a vow of vengeance to retake the lands and purge the undead.",
       @"ReplaceableTextures\CommandButtons\BTNDivine_Reckoning_Icon.blp")

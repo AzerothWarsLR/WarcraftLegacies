@@ -41,12 +41,6 @@ namespace WarcraftLegacies.Source.Quests.Scarlet
     }
 
     /// <inheritdoc/>
-    protected override void OnComplete(Faction whichFaction)
-    {
-  
-    }
-
-    /// <inheritdoc/>
     protected override string RewardFlavour =>
       "With the Monastery under the Scarlet control, Sally Whitemane can start training a new generation of Scarlet adepts.";
 

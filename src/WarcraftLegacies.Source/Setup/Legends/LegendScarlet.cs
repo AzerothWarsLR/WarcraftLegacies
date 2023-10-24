@@ -26,25 +26,25 @@ namespace WarcraftLegacies.Source.Setup.Legends
     public LegendScarlet()
     {
 
-      Saiden = new LegendaryHero("Crusader Lord Saiden Dethrotan")
+      Saiden = new LegendaryHero("Saiden Dethrotan")
       {
         UnitType = Constants.UNIT_H08G_SCARLET_CRUSADER_LORD_SCARLET,
         StartingXp = 4000
       };
 
-      Renault = new LegendaryHero("Monastery Commander Renault Mograine")
+      Renault = new LegendaryHero("Renault Mograine")
       {
         UnitType = Constants.UNIT_H0A2_MONASTERY_COMMANDER_SCARLET,
         StartingXp = 4000
       };
 
-      Brigitte = new LegendaryHero("Commander Brigitte Abendis")
+      Brigitte = new LegendaryHero("Brigitte Abendis")
       {
         UnitType = Constants.UNIT_H00Y_COMMANDER_OF_THE_SCARLET_CRUSADE_SCARLET,
         StartingXp = 4000
       };
 
-      Sally = new LegendaryHero("High Inquisitor Sally Whitemane")
+      Sally = new LegendaryHero("Sally Whitemane")
       {
         UnitType = Constants.UNIT_H08H_HIGH_INQUISITOR_SCARLET,
         StartingXp = 8800
