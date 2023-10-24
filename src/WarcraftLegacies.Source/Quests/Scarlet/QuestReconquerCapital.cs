@@ -63,6 +63,6 @@ namespace WarcraftLegacies.Source.Quests.Scarlet
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
-      "All your heroes will gain 2000 experience.";
+      "All of your heroes gain {ExperienceReward} experience";
   }
 }
