@@ -52,6 +52,6 @@ namespace WarcraftLegacies.Source.Quests.Scarlet
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
-      $"You will be able to train Sally Whitemane at the {GetObjectName(Constants.UNIT_H0BQ_ALTAR_OF_CRUSADERS_CRUSADE_ALTAR)}";
+      $"Learn to train Sally Whitemane from the {GetObjectName(Constants.UNIT_H0BQ_ALTAR_OF_CRUSADERS_CRUSADE_ALTAR)}";
   }
 }
