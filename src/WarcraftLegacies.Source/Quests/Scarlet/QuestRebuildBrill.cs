@@ -54,6 +54,6 @@ namespace WarcraftLegacies.Source.Quests.Scarlet
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
-      "Renault will gain 6000 experience";
+      $"Renault gains {ExperienceReward} experience";
   }
 }
