@@ -12,15 +12,15 @@ namespace WarcraftLegacies.Source.Setup.Spells
   {
     public static void Setup()
     { 
-      PassiveAbilityManager.Register(new NoTargetSpellOnCast(Constants.UNIT_H08H_HIGH_INQUISITOR_SCARLET, Constants.ABILITY_A02T_HEALING_FRENZY_ICON_SALLY)
+      PassiveAbilityManager.Register(new NoTargetSpellOnCast(Constants.UNIT_H08H_HIGH_INQUISITOR_SCARLET, Constants.ABILITY_Z3X2_HEALING_FRENZY_ICON_SALLY)
       {
-        DummyAbilityId = Constants.ABILITY_A00E_HEALING_FRENZY_SALLY_DUMMY,
+        DummyAbilityId = Constants.ABILITY_Z3X9_HEALING_FRENZY_SALLY_DUMMY,
         DummyOrderId = OrderId("fanofknives"),
         ProcChance = 1.0f,
         AbilityWhitelist = new List<int>
         {
           Constants.ABILITY_ANHW_HEALING_WAVE_PINK_VOL_JIN,
-          Constants.ABILITY_A0BV_SWIFT_HOLY_LIGHT_SALLY,
+          Constants.ABILITY_Z9X3_SWIFT_HOLY_LIGHT_SALLY,
           Constants.ABILITY_A078_SPIRITUAL_GUIDANCE_SALLY,
           Constants.ABILITY_A0DK_DISPEL_MAGIC_SALLY,
         }

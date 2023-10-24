@@ -33,7 +33,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
       "Lordaeron has been lost to the plague, but the Scarlet Crusade has taken a vow of vengeance to retake the lands and purge the undead.",
       @"ReplaceableTextures\CommandButtons\BTNDivine_Reckoning_Icon.blp")
     {
-      AddObjective(new ObjectiveResearch(Constants.UPGRADE_R01L_ALL_IS_LOST_LORDAERON_SCARLET, Constants.UNIT_H030_TYR_S_HAND_CITADEL_LORDAERON_OTHER));
+      AddObjective(new ObjectiveResearch(Constants.UPGRADE_R0XZ_ALL_IS_LOST_LORDAERON_SCARLET, Constants.UNIT_H030_TYR_S_HAND_CITADEL_LORDAERON_OTHER));
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
       _tyrHand = tyrHand.Unit;
       _saiden = saiden;
