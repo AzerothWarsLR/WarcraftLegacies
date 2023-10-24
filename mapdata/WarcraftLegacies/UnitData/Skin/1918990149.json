@@ -96,6 +96,11 @@
       "Id": 1651864693,
       "Type": 3,
       "Value": "Cunning Hero, adept at engaging and disengaging enemies.|n|cfff5962dAbilities:|r Wind Walk |n|cfff5962dCan learn:|R Mirror Image, Words of Protection, Shadow Strike, Greater Fan of Knives|n|n|cffffcc00Attacks land units.|R"
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\MoonPriestessMissile\\MoonPriestessMissile.mdl"
     }
   ]
 }
