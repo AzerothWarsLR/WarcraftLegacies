@@ -1,18 +1,6 @@
-﻿using MacroTools.ControlPointSystem;
-using MacroTools.Extensions;
-using MacroTools.FactionSystem;
-using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
-using MacroTools.ObjectiveSystem.Objectives.FactionBased;
+﻿using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives.QuestBased;
-using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
-using System.Collections.Generic;
-using MacroTools.LegendSystem;
-using WarcraftLegacies.Source.Objectives;
-using WCSharp.Shared.Data;
-using static War3Api.Common;
-using MacroTools.ObjectiveSystem.Objectives.TimeBased;
-using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 
 namespace WarcraftLegacies.Source.Quests.Scarlet
 {
@@ -21,7 +9,6 @@ namespace WarcraftLegacies.Source.Quests.Scarlet
   /// </summary>
   public sealed class QuestReconquerLordaeron : QuestData
   {
-
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestReconquerLordaeron"/> class.
     /// </summary>
@@ -50,7 +37,6 @@ namespace WarcraftLegacies.Source.Quests.Scarlet
       "With the safeguard of Lordaeron, the Scarlet Crusade gains the highest blessing of the Light";
 
     /// <inheritdoc/>
-    protected override string RewardDescription =>
-      "Learn to build the Divine Bastion";
+    protected override string RewardDescription => "Learn to build the Divine Bastion";
   }
 }

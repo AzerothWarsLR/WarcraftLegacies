@@ -1,17 +1,10 @@
 ﻿using MacroTools.ControlPointSystem;
-using MacroTools.Extensions;
-using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
-using MacroTools.ObjectiveSystem.Objectives.FactionBased;
-using MacroTools.ObjectiveSystem.Objectives.QuestBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
-using System.Collections.Generic;
 using MacroTools.LegendSystem;
-using WarcraftLegacies.Source.Objectives;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
-using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 
 namespace WarcraftLegacies.Source.Quests.Scarlet
@@ -21,7 +14,6 @@ namespace WarcraftLegacies.Source.Quests.Scarlet
   /// </summary>
   public sealed class QuestRebuildHearthglen : QuestData
   {
-
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestRebuildHearthglen"/> class.
     /// </summary>
@@ -31,12 +23,11 @@ namespace WarcraftLegacies.Source.Quests.Scarlet
       @"ReplaceableTextures\CommandButtons\BTNAlteracWizardTower.blp")
     {
       Required = true;
-      AddObjective(new ObjectiveBuildInRect(questRect, "in Hearthglen", Constants.UNIT_H0BM_TOWN_HALL_CRUSADE_T1, 1));
+      AddObjective(new ObjectiveBuildInRect(questRect, "in Hearthglen", Constants.UNIT_H0BM_TOWN_HALL_CRUSADE_T1));
       AddObjective(new ObjectiveBuildInRect(questRect, "in Hearthglen", Constants.UNIT_H0BP_HOUSEHOLD_CRUSADE_FARM, 3));
-      AddObjective(new ObjectiveBuildInRect(questRect, "in Hearthglen", Constants.UNIT_H0AG_HALL_OF_SWORDS_CRUSADE_BARRACKS, 1));
+      AddObjective(new ObjectiveBuildInRect(questRect, "in Hearthglen", Constants.UNIT_H0AG_HALL_OF_SWORDS_CRUSADE_BARRACKS));
       AddObjective(new ObjectiveControlCapital(monastery, false));
-      AddObjective(new ObjectiveControlLevel(
-        ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N044_HEARTHGLEN), 2));
+      AddObjective(new ObjectiveControlLevel(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N044_HEARTHGLEN), 2));
       ResearchId = Constants.UPGRADE_R09A_QUEST_COMPLETED_THE_DIMENSIONAL_SHIP; //TODO new research with better title by the writters
     }
 
