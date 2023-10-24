@@ -46,12 +46,22 @@
     },
     {
       "Id": 2020631157,
-      "Value": 2
+      "Value": 1
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "E"
+      "Value": "W"
+    },
+    {
+      "Id": 1919972469,
+      "Type": 3,
+      "Value": "Revive Genn Greymane"
+    },
+    {
+      "Id": 1953980789,
+      "Type": 3,
+      "Value": "Revive Genn Greymane"
     }
   ]
 }
