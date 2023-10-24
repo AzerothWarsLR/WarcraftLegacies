@@ -34,7 +34,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
         DurationBase = 2,
         DurationLevel = 1,
         StunAbilityId = Constants.ABILITY_A0KD_SOUL_BURN_SAIDEN_DUMMY,
-        StunOrderString = "soulburn",
+        StunOrderId = OrderId("soulburn"),
         SpecialEffect = @"war3mapImported\RoarCasterScarlet.mdx"
       };
       SpellSystem.Register(crusaderShout);

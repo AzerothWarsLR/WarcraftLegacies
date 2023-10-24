@@ -18,11 +18,11 @@ namespace WarcraftLegacies.Source.Quests.Scarlet
       @"ReplaceableTextures/CommandButtons/BTNSalvationSpire.blp")
     {
       Required = true;
-      AddObjective(new ObjectiveCompleteQuest(stratholme));
-      AddObjective(new ObjectiveCompleteQuest(capital));
-      AddObjective(new ObjectiveCompleteQuest(hearthglen));
-      AddObjective(new ObjectiveCompleteQuest(brill));
-      AddObjective(new ObjectiveCompleteQuest(andorhal));
+      AddObjective(new ObjectiveQuestComplete(stratholme));
+      AddObjective(new ObjectiveQuestComplete(capital));
+      AddObjective(new ObjectiveQuestComplete(hearthglen));
+      AddObjective(new ObjectiveQuestComplete(brill));
+      AddObjective(new ObjectiveQuestComplete(andorhal));
       ResearchId = Constants.UPGRADE_R09A_QUEST_COMPLETED_THE_DIMENSIONAL_SHIP; //TODO create research according to new title picked by writting team
     }
 
