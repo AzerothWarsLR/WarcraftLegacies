@@ -104,6 +104,16 @@
       "Id": 1731289461,
       "Type": 3,
       "Value": "air,debris,ground,item,structure,ward"
+    },
+    {
+      "Id": 829645685,
+      "Type": 3,
+      "Value": "MetalMediumSlice"
+    },
+    {
+      "Id": 1999724917,
+      "Type": 3,
+      "Value": "missile"
     }
   ]
 }
