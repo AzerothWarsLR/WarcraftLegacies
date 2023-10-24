@@ -51,6 +51,6 @@ namespace WarcraftLegacies.Source.Quests.Scarlet
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
-      "You will be able to train the Divine Bastion";
+      "Learn to build the Divine Bastion";
   }
 }
