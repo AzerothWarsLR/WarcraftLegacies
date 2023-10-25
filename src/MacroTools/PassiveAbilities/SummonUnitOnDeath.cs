@@ -43,7 +43,7 @@ namespace MacroTools.PassiveAbilities
     public override void OnDeath()
     {
       var triggerUnit = GetTriggerUnit();
-      if (GetPlayerTechCount(triggerUnit.OwningPlayer(), RequiredResearch, false) == 0)
+      if (RequiredResearch != 0 && (GetPlayerTechCount(triggerUnit.OwningPlayer(), RequiredResearch, false) == 0))
         return;
       var pos = triggerUnit.GetPosition();
       for (var i = 0; i < SummonCount; i++)

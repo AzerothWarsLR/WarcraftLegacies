@@ -98,6 +98,14 @@ namespace WarcraftLegacies.Source.Setup.Spells
         DummyCasterType = DummyCasterType.AbilitySpecific
       };
       SpellSystem.Register(massDeathCoil);
+
+      PassiveAbilityManager.Register(new SummonUnitOnDeath(Constants.UNIT_UGHO_GHOUL_SCOURGE)
+      {
+        Duration = 30,
+        SummonUnitTypeId = Constants.UNIT_U012_HALF_GHOUL_SCOURGE,
+        SummonCount = 1,
+        SpecialEffectPath = @"Objects\Spawnmodels\Human\HumanBlood\HumanBloodLarge0.mdl",
+      });
     }
   }
 }

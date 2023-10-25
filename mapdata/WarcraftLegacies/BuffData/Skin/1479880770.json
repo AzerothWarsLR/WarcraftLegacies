@@ -23,12 +23,17 @@
     {
       "Id": 811693158,
       "Type": 3,
-      "Value": "origin"
+      "Value": "sprite"
     },
     {
       "Id": 1718840934,
       "Type": 3,
       "Value": "(storm CLoud)"
+    },
+    {
+      "Id": 1953526630,
+      "Type": 3,
+      "Value": "sprite"
     }
   ]
 }
