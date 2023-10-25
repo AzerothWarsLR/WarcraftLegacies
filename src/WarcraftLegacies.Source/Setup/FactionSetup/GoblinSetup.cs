@@ -97,7 +97,8 @@ The Trading Center in Kezan will unlock the ability to train Traders. Be sure to
       };
       Goblin.AddPower(oilPower);
 
-      Goblin.AddGoldMine(preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-8615, -12869)));
+      Goblin.AddGoldMine(preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-8615, -12869))); // Starting Gold Mine
+      Goblin.AddGoldMine(preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-730, -6777))); // Kezan Gold Mine
       FactionManager.Register(Goblin);
     }
   }
