@@ -6,13 +6,13 @@ using MacroTools.FactionSystem;
 using MacroTools.UserInterface;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.Source.GameLogic
+namespace MacroTools.FactionChoices
 {
   /// <summary>Allows a player to choose between one of two factions at the start of the game.</summary>
   public sealed class FactionChoiceDialogPresenter : ChoiceDialogPresenter<Faction>
   {
     /// <summary>Initializes a new instance of the <see cref="FactionChoiceDialogPresenter"/> class.</summary>
-    public FactionChoiceDialogPresenter(params Faction[] factions) : base(ConvertFactionsToFactionChoices(factions),
+    public FactionChoiceDialogPresenter(params Faction[] factions) : base(ConvertToFactionChoices(factions),
       "Pick your Faction")
     {
     }
@@ -61,7 +61,11 @@ namespace WarcraftLegacies.Source.GameLogic
       faction.Defeat();
     }
     
-    private static Choice<Faction>[] ConvertFactionsToFactionChoices(IEnumerable<Faction> factions) =>
-      factions.Select(x => new Choice<Faction>(x, x.Name)).ToArray();
+    private static Choice<Faction>[] ConvertToFactionChoices(IEnumerable<Faction> factions)
+    {
+      return factions
+        .Select(x => new Choice<Faction>(x, $"{x.Name} {x.LearningDifficulty.ToColoredText()}"))
+        .ToArray();
+    }
   }
 }

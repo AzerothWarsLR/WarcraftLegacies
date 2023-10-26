@@ -1,5 +1,6 @@
 ﻿using MacroTools;
 using MacroTools.Extensions;
+using MacroTools.FactionChoices;
 using MacroTools.FactionSystem;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -22,6 +23,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
         StartingCameraPosition = Regions.SunfuryStartingPosition.Center,
         StartingUnits = Regions.SunfuryStartingPosition.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable),
         ControlPointDefenderUnitTypeId = Constants.UNIT_N0BC_CONTROL_POINT_DEFENDER_QUELTHALAS,
+        LearningDifficulty = FactionLearningDifficulty.Advanced,
         IntroText = @"You are playing as the power-hungry |cffff0000Sunfury|r.
 
 You begin in Netherstorm, your first mission is to build three biodomes in the green areas protected by a bubble.
