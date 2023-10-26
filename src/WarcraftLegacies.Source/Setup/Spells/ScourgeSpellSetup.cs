@@ -99,12 +99,18 @@ namespace WarcraftLegacies.Source.Setup.Spells
       };
       SpellSystem.Register(massDeathCoil);
 
-      PassiveAbilityManager.Register(new SummonUnitOnDeath(Constants.UNIT_UGHO_GHOUL_SCOURGE)
+      PassiveAbilityManager.Register(new CreateUnitOnDeath(Constants.UNIT_UGHO_GHOUL_SCOURGE)
       {
         Duration = 30,
-        SummonUnitTypeId = Constants.UNIT_U012_HALF_GHOUL_SCOURGE,
-        SummonCount = 1,
+        CreateUnitTypeId = Constants.UNIT_U012_HALF_GHOUL_SCOURGE,
+        CreateCount = 1,
         SpecialEffectPath = @"Objects\Spawnmodels\Human\HumanBlood\HumanBloodLarge0.mdl",
+      });
+
+      PassiveAbilityManager.Register(new CreateCorpseOnDeath(Constants.UNIT_U012_HALF_GHOUL_SCOURGE)
+      {
+        CorpseUnitTypeId = Constants.UNIT_UGHO_GHOUL_SCOURGE,
+        CorpseCount = 1
       });
     }
   }
