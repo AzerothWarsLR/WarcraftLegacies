@@ -7,7 +7,9 @@
       return new IMapMigration[]
       {
         new ControlPointMapMigration(),
+        new CreepLevelMapMigration(),
         new GoldBountyMapMigration()
+        
       };
     }
   }
