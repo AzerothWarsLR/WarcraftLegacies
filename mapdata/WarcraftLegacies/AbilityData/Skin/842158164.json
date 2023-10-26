@@ -8,13 +8,29 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "(Thorned Vines)"
+      "Value": "(Thorned Vines hp regen)"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Increases nearby friendly units\u0027  life regeneration rate by \u003CACua,DataB1,%\u003E%."
+      "Value": "Slows enemy units movement speed by 60% while increasing friendly units hit point regeneration by 30%."
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Thorned Vines"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Thorned Vines"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNInvadingVines.blp"
     }
   ]
 }
