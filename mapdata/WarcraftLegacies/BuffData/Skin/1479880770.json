@@ -1,0 +1,39 @@
+{
+  "OldId": 1734963266,
+  "NewId": 1479880770,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1835101798,
+      "Type": 3,
+      "Value": "Static Cloud"
+    },
+    {
+      "Id": 1952543590,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Orc\\LightningShield\\LightningShieldBuff.mdl"
+    },
+    {
+      "Id": 1952543846,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Orc\\LightningShield\\LightningShieldTarget.mdl"
+    },
+    {
+      "Id": 811693158,
+      "Type": 3,
+      "Value": "sprite"
+    },
+    {
+      "Id": 1718840934,
+      "Type": 3,
+      "Value": "(storm CLoud)"
+    },
+    {
+      "Id": 1953526630,
+      "Type": 3,
+      "Value": "sprite"
+    }
+  ]
+}
