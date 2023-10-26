@@ -8,12 +8,12 @@
     {
       "Id": 1768055157,
       "Type": 3,
-      "Value": "TP22,Aloc,TP21"
+      "Value": "TP22,TP21"
     },
     {
       "Id": 1819239285,
       "Type": 2,
-      "Value": 40
+      "Value": 0
     },
     {
       "Id": 1717920885,
@@ -105,6 +105,11 @@
     {
       "Id": 1684824693,
       "Value": 1
+    },
+    {
+      "Id": 1952542837,
+      "Type": 3,
+      "Value": "PathTextures\\4x4unbuildable.tga"
     }
   ]
 }

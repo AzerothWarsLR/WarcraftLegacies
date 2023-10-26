@@ -7,13 +7,6 @@
   "Modifications": [
     {
       "Level": 1,
-      "Pointer": 1,
-      "Id": 829385811,
-      "Type": 2,
-      "Value": 0.6
-    },
-    {
-      "Level": 1,
       "Id": 1718968929,
       "Type": 3,
       "Value": "TP23"
@@ -23,6 +16,12 @@
       "Id": 1701994849,
       "Type": 2,
       "Value": 175
+    },
+    {
+      "Level": 1,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "enemies,ground,invulnerable,vulnerable"
     }
   ]
 }

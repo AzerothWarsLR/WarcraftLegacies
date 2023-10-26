@@ -22,7 +22,7 @@
       "Pointer": 2,
       "Id": 846553429,
       "Type": 2,
-      "Value": 0.15
+      "Value": 0.3
     },
     {
       "Level": 1,
@@ -35,6 +35,12 @@
       "Id": 1701994849,
       "Type": 2,
       "Value": 175
+    },
+    {
+      "Level": 1,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "friend,ground,invulnerable,self,vulnerable"
     }
   ]
 }
