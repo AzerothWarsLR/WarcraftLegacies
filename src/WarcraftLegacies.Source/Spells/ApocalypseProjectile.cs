@@ -31,6 +31,9 @@ namespace WarcraftLegacies.Source.Spells
     /// <inheritdoc />
     public override void OnCollision(unit unit)
     {
+      if (!IsValidTarget(Caster, unit))
+        return;
+      
       unit.TakeDamage(Caster, Damage, false, false, damageType: DAMAGE_TYPE_NORMAL);
       
       _dummyCaster.CastUnit(Caster, DummyAbilityId, DummyAbilityOrderId, DummyAbilityLevel, unit,
@@ -40,5 +43,12 @@ namespace WarcraftLegacies.Source.Spells
         .SetScale(EffectOnHitScale)
         .SetLifespan();
     }
+
+    private static bool IsValidTarget(unit target, unit caster) =>
+      UnitAlive(target) &&
+      !IsUnitType(target, UNIT_TYPE_STRUCTURE) &&
+      !IsUnitType(target, UNIT_TYPE_ANCIENT) && 
+      !IsUnitType(target, UNIT_TYPE_MECHANICAL) &&
+      !IsPlayerAlly(caster.OwningPlayer(), target.OwningPlayer());
   }
 }
