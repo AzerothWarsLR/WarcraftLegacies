@@ -1,6 +1,7 @@
 ﻿using MacroTools.DummyCasters;
 using MacroTools.Extensions;
 using WCSharp.Missiles;
+using WCSharp.Shared.Data;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Spells
@@ -55,7 +56,7 @@ namespace WarcraftLegacies.Source.Spells
       if (_colorSet)
         return;
       
-      BlzSetSpecialEffectColorByPlayer(Effect, CastingPlayer);
+      BlzSetSpecialEffectColorByPlayer(Effect, Player(3));
 
       _colorSet = true;
     }
@@ -63,7 +64,7 @@ namespace WarcraftLegacies.Source.Spells
     /// <inheritdoc />
     public override void OnDispose()
     {
-      Effect.SetAlpha(255);
+      Effect.SetPosition(new Point(21623f, 24212f));
       AddSpecialEffect(EffectOnProjectileDespawnModel, MissileX, MissileY)
         .SetScale(EffectOnProjectileDespawnScale)
         .SetLifespan();

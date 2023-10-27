@@ -95,7 +95,7 @@ namespace WarcraftLegacies.Source.Spells
           EffectOnProjectileDespawnScale = EffectOnProjectileSpawnScale,
           DummyAbilityId = DummyAbilityId,
           DummyAbilityOrderId = DummyAbilityOrderId,
-          DummyAbilityLevel = level
+          DummyAbilityLevel = 1
         };
         MissileSystem.Add(missile);
       }
