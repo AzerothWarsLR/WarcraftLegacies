@@ -136,7 +136,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
         EffectOnHitScale = 0.7f,
         EffectOnProjectileSpawn = @"Abilities\Spells\Undead\AnimateDead\AnimateDeadTarget.mdl",
         EffectOnProjectileSpawnScale = 0.5f,
-        DummyAbilityId = 0,
+        DummyAbilityId = Constants.ABILITY_A0YD_APOCALYPSE_DUMMY_CASTER,
         DummyAbilityOrderId = OrderId("parasite")
       });
     }
