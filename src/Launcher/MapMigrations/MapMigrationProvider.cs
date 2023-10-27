@@ -9,7 +9,6 @@
         new ControlPointMapMigration(),
         new CreepLevelMapMigration(),
         new GoldBountyMapMigration()
-        
       };
     }
   }
