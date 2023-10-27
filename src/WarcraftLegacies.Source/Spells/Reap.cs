@@ -70,7 +70,9 @@ namespace WarcraftLegacies.Source.Spells
             .SetLifespan();
         }
 
-        var strengthGainPerTarget = StrengthPerUnit.Base + StrengthPerUnit.PerLevel * abilityLevel;
+        var strengthGainPerTarget = UpgradeCondition(caster)
+          ? StrengthPerUnitUpgraded.Base + StrengthPerUnitUpgraded.PerLevel * abilityLevel
+          : StrengthPerUnit.Base + StrengthPerUnit.PerLevel * abilityLevel;
 
         BuffSystem.Add(new ReapBuff(caster, BuffEffect)
         {

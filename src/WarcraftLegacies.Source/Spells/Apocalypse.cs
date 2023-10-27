@@ -75,12 +75,13 @@ namespace WarcraftLegacies.Source.Spells
     /// <inheritdoc />
     public override void OnCast(unit caster, unit target, Point targetPoint)
     {
-      var middle = (ProjectileCount - 1) / 2;
+      var projectileCount = UpgradeCondition(caster) ? ProjectileCountUpgraded : ProjectileCount;
+      var middle = (projectileCount - 1) / 2;
       var casterFacing = MathEx.GetAngleBetweenPoints(GetUnitX(caster), GetUnitY(caster), targetPoint.X, targetPoint.Y);
       var casterX = GetUnitX(caster);
       var casterY = GetUnitY(caster);
       var level = GetAbilityLevel(caster);
-      for (var i = 0; i < ProjectileCount; i++)
+      for (var i = 0; i < projectileCount; i++)
       {
         var projectileOrigin = GetProjectileOrigin(i, middle, casterFacing, casterX, casterY);
         AddSpecialEffect(EffectOnProjectileSpawn, projectileOrigin.X, projectileOrigin.Y)
