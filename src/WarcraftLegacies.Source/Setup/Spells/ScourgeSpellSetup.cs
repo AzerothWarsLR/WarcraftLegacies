@@ -127,7 +127,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
         ProjectileCount = 7,
         Damage = new LeveledAbilityField<int>
         {
-          Base = 70,
+          Base = 35,
           PerLevel = 35
         },
         ProjectileModel = @"units\undead\HeroDeathKnight\HeroDeathKnight.mdl",

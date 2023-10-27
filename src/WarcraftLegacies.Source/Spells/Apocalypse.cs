@@ -69,9 +69,13 @@ namespace WarcraftLegacies.Source.Spells
       var casterFacing = caster.GetFacing();
       var casterX = GetUnitX(caster);
       var casterY = GetUnitY(caster);
+      var level = GetAbilityLevel(caster);
       for (var i = 0; i < ProjectileCount; i++)
       {
         var projectileOrigin = GetProjectileOriginPoint(i, middle, casterFacing, casterX, casterY);
+        AddSpecialEffect(EffectOnProjectileSpawn, projectileOrigin.X, projectileOrigin.Y)
+          .SetScale(EffectOnProjectileSpawnScale)
+          .SetLifespan();
 
         var missile = new ApocalypseProjectile(caster.OwningPlayer(), projectileOrigin.X, projectileOrigin.Y,
           targetPoint.X, targetPoint.Y)
@@ -84,7 +88,12 @@ namespace WarcraftLegacies.Source.Spells
           CasterLaunchZ = 50f,
           TargetImpactZ = 50f,
           Speed = ProjectileVelocity,
-          Mode = BasicMissile.FlightMode.FollowTerrain
+          Mode = BasicMissile.FlightMode.FollowTerrain,
+          Damage = Damage.Base + Damage.PerLevel * level,
+          EffectOnHitModel = EffectOnHitModel,
+          EffectOnHitScale = EffectOnHitScale,
+          DummyAbilityId = DummyAbilityId,
+          DummyAblilityOrderId = DummyAbilityOrderId
         };
         MissileSystem.Add(missile);
       }
