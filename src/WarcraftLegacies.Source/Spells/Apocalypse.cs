@@ -49,7 +49,7 @@ namespace WarcraftLegacies.Source.Spells
     public int DummyAbilityId { get; init; }
 
     /// <summary>The order ID for <see cref="DummyAbilityId"/>.</summary>
-    public string DummyAbilityOrderId { get; init; } = "";
+    public int DummyAbilityOrderId { get; init; }
 
     /// <inheritdoc />
     public Apocalypse(int id) : base(id)

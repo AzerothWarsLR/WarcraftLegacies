@@ -1,4 +1,5 @@
-﻿using MacroTools.DummyCasters;
+﻿using MacroTools;
+using MacroTools.DummyCasters;
 using MacroTools.PassiveAbilities;
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.Spells;
@@ -66,10 +67,29 @@ namespace WarcraftLegacies.Source.Setup.Spells
       {
         DeathEffectPath = @"Objects\Spawnmodels\Undead\UDeathSmall\UDeathSmall.mdl"
       });
+
+      PassiveAbilityManager.Register(new CreateUnitOnDeath(Constants.UNIT_UGHO_GHOUL_SCOURGE)
+      {
+        Duration = 30,
+        CreateUnitTypeId = Constants.UNIT_U012_HALF_GHOUL_SCOURGE,
+        CreateCount = 1,
+        SpecialEffectPath = @"Objects\Spawnmodels\Human\HumanBlood\HumanBloodLarge0.mdl",
+      });
+
+      PassiveAbilityManager.Register(new CreateCorpseOnDeath(Constants.UNIT_U012_HALF_GHOUL_SCOURGE)
+      {
+        CorpseUnitTypeId = Constants.UNIT_UGHO_GHOUL_SCOURGE,
+        CorpseCount = 1
+      });
       
+      RegisterArthasSpells();
+    }
+
+    private static void RegisterArthasSpells()
+    {
       SpellSystem.Register(new Reap(Constants.ABILITY_ZB02_REAP_UNDEAD_ARTHAS)
       {
-        UnitsSlain = new ()
+        UnitsSlain = new()
         {
           Base = 1,
           PerLevel = 2
@@ -86,8 +106,8 @@ namespace WarcraftLegacies.Source.Setup.Spells
         KillEffect = @"Objects\Spawnmodels\Undead\UndeadDissipate\UndeadDissipate.mdl",
         BuffEffect = @"Abilities\Spells\Items\AIso\BIsvTarget.mdl"
       });
-
-      var massDeathCoil = new MassAnySpell(Constants.ABILITY_ZB06_MASS_DEATH_COIL_ARTHAS)
+      
+      SpellSystem.Register(new MassAnySpell(Constants.ABILITY_ZB06_MASS_DEATH_COIL_ARTHAS)
       {
         DummyAbilityId = Constants.ABILITY_ZB05_MASS_DEATH_COIL_ARTHAS_DUMMY,
         DummyAbilityOrderId = OrderId("deathcoil"),
@@ -96,21 +116,28 @@ namespace WarcraftLegacies.Source.Setup.Spells
         TargetType = SpellTargetType.Point,
         DummyCastOriginType = DummyCastOriginType.Caster,
         DummyCasterType = DummyCasterType.AbilitySpecific
-      };
-      SpellSystem.Register(massDeathCoil);
-
-      PassiveAbilityManager.Register(new CreateUnitOnDeath(Constants.UNIT_UGHO_GHOUL_SCOURGE)
-      {
-        Duration = 30,
-        CreateUnitTypeId = Constants.UNIT_U012_HALF_GHOUL_SCOURGE,
-        CreateCount = 1,
-        SpecialEffectPath = @"Objects\Spawnmodels\Human\HumanBlood\HumanBloodLarge0.mdl",
       });
-
-      PassiveAbilityManager.Register(new CreateCorpseOnDeath(Constants.UNIT_U012_HALF_GHOUL_SCOURGE)
+      
+      SpellSystem.Register(new Apocalypse(Constants.ABILITY_A10N_APOCALYPSE_DEATH_KNIGHT_ARTHAS)
       {
-        CorpseUnitTypeId = Constants.UNIT_UGHO_GHOUL_SCOURGE,
-        CorpseCount = 1
+        Range = 1500,
+        Width = 700,
+        ProjectileVelocity = 250,
+        ProjectileRadius = 50,
+        ProjectileCount = 7,
+        Damage = new LeveledAbilityField<int>
+        {
+          Base = 70,
+          PerLevel = 35
+        },
+        ProjectileModel = @"units\undead\HeroDeathKnight\HeroDeathKnight.mdl",
+        ProjectileScale = 0.7f,
+        EffectOnHitModel = @"Objects\Spawnmodels\Undead\UndeadDissipate\UndeadDissipate.mdl",
+        EffectOnHitScale = 0.7f,
+        EffectOnProjectileSpawn = @"Abilities\Spells\Undead\AnimateDead\AnimateDeadTarget.mdl",
+        EffectOnProjectileSpawnScale = 0.5f,
+        DummyAbilityId = 0,
+        DummyAbilityOrderId = OrderId("parasite")
       });
     }
   }
