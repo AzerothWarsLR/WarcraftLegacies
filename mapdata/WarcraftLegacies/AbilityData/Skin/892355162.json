@@ -1,0 +1,46 @@
+{
+  "OldId": 1667519809,
+  "NewId": 892355162,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Arthas Dummy)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "A coil of death that can damage an enemy living unit or heal a friendly Undead unit. |n|n|cffffcc00Level 1|r - Heals for \u003CAUdc,DataA1\u003E hit points. |n|cffffcc00Level 2|r - Heals for \u003CAUdc,DataA2\u003E hit points. |n|cffffcc00Level 3|r - Heals for \u003CAUdc,DataA3\u003E hit points. |n|cffffcc00Level 4|r - Heals for \u003CAUdc,DataA4\u003E hit points."
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Death Coil - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "A coil of death that can heal a friendly Undead unit for \u003CAUdc,DataA4\u003E hit points, or deal half damage to an enemy living unit."
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Mass Death Coil"
+    }
+  ]
+}

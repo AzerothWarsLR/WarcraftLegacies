@@ -1,0 +1,24 @@
+{
+  "OldId": 1718379330,
+  "NewId": 1261776962,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1885959270,
+      "Type": 3,
+      "Value": "Sanctify"
+    },
+    {
+      "Id": 1700951398,
+      "Type": 3,
+      "Value": "This unit is standing on sanctified ground; and cannot use its spells."
+    },
+    {
+      "Id": 1953653094,
+      "Type": 3,
+      "Value": "ReplaceableTextures/CommandButtons/BTNConsecration.blp"
+    }
+  ]
+}

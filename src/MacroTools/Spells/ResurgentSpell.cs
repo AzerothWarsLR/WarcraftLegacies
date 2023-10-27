@@ -11,15 +11,15 @@ namespace MacroTools.Spells
   /// </summary>
   public sealed class ResurgentSpell : Spell
   {
-    public ResurgentSpell(int id, int dummySpellId, string dummySpellOrder) : base(id)
+    public ResurgentSpell(int id, int dummySpellId, int dummySpellOrderId) : base(id)
     {
       _dummySpellId = dummySpellId;
-      _dummySpellOrder = dummySpellOrder;
+      _dummySpellOrderId = dummySpellOrderId;
     }
 
     private readonly int _dummySpellId;
 
-    private readonly string _dummySpellOrder;
+    private readonly int _dummySpellOrderId;
 
     public float Duration { get; init; }
 
@@ -30,7 +30,7 @@ namespace MacroTools.Spells
       try
       {
         var hazard = new RecurrentSpellHazard(GetTriggerUnit(), GetSpellTargetX(), GetSpellTargetY(),
-          _dummySpellOrder, GetUnitAbilityLevel(GetTriggerUnit(), Id), _dummySpellId)
+          _dummySpellOrderId, GetUnitAbilityLevel(GetTriggerUnit(), Id), _dummySpellId)
         {
           Duration = Duration,
           Interval = Interval

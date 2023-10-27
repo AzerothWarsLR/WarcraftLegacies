@@ -1,51 +1,45 @@
 {
-  "OldId": 1700881985,
+  "OldId": 1936016193,
   "NewId": 1465069633,
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1953653089,
-      "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNWispSplode.blp"
-    },
-    {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "(Purple Inquisitor)"
-    },
-    {
-      "Id": 2037082209,
-      "Type": 3,
-      "Value": "Q"
-    },
-    {
-      "Id": 1835101793,
-      "Type": 3,
-      "Value": "Judgment"
-    },
-    {
-      "Level": 1,
-      "Id": 829453409,
-      "Type": 3,
-      "Value": "Judgment (|cffffcc00Q|r)"
+      "Value": "(scourge ghoul)"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Reduces a target enemy unit\u0027s armor by 5 and gives vision of that unit. |nLasts 45 seconds."
+      "Value": "Upon death, the Ghoul continues fighting for 30 seconds."
     },
     {
-      "Id": 1918989665,
+      "Id": 1835101793,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNWispSplode.blp"
+      "Value": "Undying Frenzy"
     },
     {
-      "Id": 1802007905,
+      "Level": 1,
+      "Id": 829453409,
       "Type": 3,
-      "Value": "Q"
+      "Value": "Undying Frenzy"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "RReplaceableTextures\\PassiveButtons\\PAS_Ghoul2.blp"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 3
+    },
+    {
+      "Id": 1952543585,
+      "Type": 3,
+      "Value": "Objects\\Spawnmodels\\Human\\HumanBlood\\HumanBloodLarge0.mdl"
     }
   ]
 }

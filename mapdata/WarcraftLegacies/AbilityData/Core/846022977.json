@@ -3,5 +3,12 @@
   "Unk": [
     0
   ],
-  "Modifications": []
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 1735421257,
+      "Value": 350
+    }
+  ]
 }

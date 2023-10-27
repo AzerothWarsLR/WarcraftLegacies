@@ -4,6 +4,7 @@ using MacroTools.PassiveAbilitySystem;
 using MacroTools.Spells;
 using MacroTools.Spells.Slipstream;
 using MacroTools.SpellSystem;
+using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup.Spells
 {
@@ -39,7 +40,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
       SpellSystem.Register(new AnySpellOnTarget(Constants.ABILITY_A12Z_RALLYING_BANNER_STORMWIND_DUMMY)
       {
         DummyAbilityId = Constants.ABILITY_A130_RESURRECTION_STORMWIND_CHAMPION_SINGLE,
-        DummyAbilityOrderString = "resurrection",
+        DummyAbilityOrderId = OrderId("resurrection"),
     });
     }
   }

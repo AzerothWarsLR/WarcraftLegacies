@@ -6,11 +6,6 @@
   ],
   "Modifications": [
     {
-      "Id": 1768055157,
-      "Type": 3,
-      "Value": "ACds,AInv"
-    },
-    {
       "Id": 1885823349,
       "Type": 2,
       "Value": 1.1
@@ -40,7 +35,7 @@
     {
       "Id": 1650550901,
       "Type": 3,
-      "Value": "A0IA,A0WE,A07P,Aamk,A0QI"
+      "Value": "A0QP,A0IC,A0WE,Aamk"
     },
     {
       "Id": 1836083317,
@@ -72,11 +67,6 @@
       "Id": 829645685,
       "Type": 3,
       "Value": "MetalMediumSlice"
-    },
-    {
-      "Id": 1902473845,
-      "Type": 3,
-      "Value": "R03F"
     },
     {
       "Id": 1819240309,
