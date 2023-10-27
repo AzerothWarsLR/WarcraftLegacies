@@ -41,8 +41,8 @@ namespace WarcraftLegacies.Source.Spells
           caster.Heal(CasterHealPerTargetUpgraded);
       }
       
-      DummyCasterManager.GetGlobalDummyCaster().CastOnTargets(caster, DummyAbilityId, DummyAbilityOrderId,
-        GetAbilityLevel(caster), dummyTargets, DummyCastOriginType.Caster);
+      var dummyCaster = DummyCasterManager.GetAbilitySpecificDummyCaster(DummyAbilityId, DummyAbilityOrderId);
+      dummyCaster.CastOnTargets(caster, GetAbilityLevel(caster), dummyTargets, DummyCastOriginType.Caster);
     }
   }
 }
