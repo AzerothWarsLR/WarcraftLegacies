@@ -56,6 +56,7 @@ namespace WarcraftLegacies.Source.Spells
     {
       BlzSetSpecialEffectColorByPlayer(Effect, Player(3));
       BlzPlaySpecialEffect(Effect, ANIM_TYPE_WALK);
+      BlzSetSpecialEffectAlpha(Effect, 175);
       Interval = 0;
     }
 

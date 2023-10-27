@@ -66,7 +66,7 @@ namespace WarcraftLegacies.Source.Spells
     public override void OnCast(unit caster, unit target, Point targetPoint)
     {
       var middle = (ProjectileCount - 1) / 2;
-      var casterFacing = caster.GetFacing();
+      var casterFacing = MathEx.GetAngleBetweenPoints(GetUnitX(caster), GetUnitY(caster), targetPoint.X, targetPoint.Y);
       var casterX = GetUnitX(caster);
       var casterY = GetUnitY(caster);
       var level = GetAbilityLevel(caster);
