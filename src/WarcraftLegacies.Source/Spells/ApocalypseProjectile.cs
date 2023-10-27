@@ -1,5 +1,7 @@
-﻿using MacroTools.DummyCasters;
+﻿using System;
+using MacroTools.DummyCasters;
 using MacroTools.Extensions;
+using WCSharp.Events;
 using WCSharp.Missiles;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -9,7 +11,6 @@ namespace WarcraftLegacies.Source.Spells
   public sealed class ApocalypseProjectile : BasicMissile
   {
     private readonly GlobalDummyCaster _dummyCaster;
-    private bool _colorSet;
 
     public float Damage { get; init; }
 
@@ -32,6 +33,7 @@ namespace WarcraftLegacies.Source.Spells
       base(castingPlayer, casterX, casterY, targetX, targetY)
     {
       _dummyCaster = DummyCasterManager.GetGlobalDummyCaster();
+      Interval = PeriodicEvents.SYSTEM_INTERVAL;
     }
 
     /// <inheritdoc />
@@ -53,12 +55,9 @@ namespace WarcraftLegacies.Source.Spells
     /// <inheritdoc />
     public override void OnPeriodic()
     {
-      if (_colorSet)
-        return;
-      
       BlzSetSpecialEffectColorByPlayer(Effect, Player(3));
-
-      _colorSet = true;
+      BlzPlaySpecialEffect(Effect, ANIM_TYPE_WALK);
+      Interval = 0;
     }
 
     /// <inheritdoc />
