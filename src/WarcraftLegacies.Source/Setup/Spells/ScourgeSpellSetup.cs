@@ -120,7 +120,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
       
       SpellSystem.Register(new Apocalypse(Constants.ABILITY_A10N_APOCALYPSE_DEATH_KNIGHT_ARTHAS)
       {
-        Range = 1500,
+        Range = 900,
         Width = 700,
         ProjectileVelocity = 250,
         ProjectileRadius = 50,

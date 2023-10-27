@@ -1,5 +1,4 @@
-﻿using System;
-using MacroTools.DummyCasters;
+﻿using MacroTools.DummyCasters;
 using MacroTools.Extensions;
 using WCSharp.Events;
 using WCSharp.Missiles;
