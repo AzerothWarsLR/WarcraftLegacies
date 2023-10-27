@@ -40,7 +40,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Raises sharp, thorned vines from the ground, which slow the movement speed of enemy units caught within by 60% while also increasing the health regeneration of friendly units by 30%.|nLasts until it is destroyed, takes damage over time."
+      "Value": "Raises sharp, thorned vines from the ground, which slow enemy ground units\u0027 movement speed by 60% and increases friendly ground units\u0027 hit point regeneration per second by 2."
     },
     {
       "Id": 1918989665,

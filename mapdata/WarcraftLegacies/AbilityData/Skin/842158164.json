@@ -14,7 +14,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Slows enemy units movement speed by 60% while increasing friendly units hit point regeneration by 30%."
+      "Value": "Slows enemy ground units\u0027 movement speed by 60% and increases friendly ground units\u0027 hit point regeneration per second by 2."
     },
     {
       "Level": 1,
@@ -30,7 +30,21 @@
     {
       "Id": 1953653089,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNInvadingVines.blp"
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASInvadingVines.blp"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 0
+    },
+    {
+      "Id": 1952543841,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 811693153,
+      "Type": 3,
+      "Value": ""
     }
   ]
 }
