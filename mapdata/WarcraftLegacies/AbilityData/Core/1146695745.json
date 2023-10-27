@@ -7,15 +7,9 @@
   "Modifications": [
     {
       "Level": 1,
-      "Id": 912355406,
-      "Type": 2,
-      "Value": 20
-    },
-    {
-      "Level": 1,
       "Id": 1851880033,
       "Type": 2,
-      "Value": 850
+      "Value": 99999
     },
     {
       "Level": 1,
@@ -27,7 +21,148 @@
       "Level": 1,
       "Id": 1970106473,
       "Type": 3,
-      "Value": "nfgt"
+      "Value": "nzom"
+    },
+    {
+      "Id": 1986358369,
+      "Value": 3
+    },
+    {
+      "Level": 2,
+      "Pointer": 4,
+      "Id": 879325008,
+      "Value": 8
+    },
+    {
+      "Level": 3,
+      "Pointer": 4,
+      "Id": 879325008,
+      "Value": 8
+    },
+    {
+      "Level": 2,
+      "Id": 912355406,
+      "Type": 2,
+      "Value": 90
+    },
+    {
+      "Level": 3,
+      "Id": 912355406,
+      "Type": 2,
+      "Value": 90
+    },
+    {
+      "Level": 2,
+      "Id": 1970106473,
+      "Type": 3,
+      "Value": "nzom"
+    },
+    {
+      "Level": 3,
+      "Id": 1970106473,
+      "Type": 3,
+      "Value": "nzom"
+    },
+    {
+      "Level": 2,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 99999
+    },
+    {
+      "Level": 3,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 99999
+    },
+    {
+      "Level": 1,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 2,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 3,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 2,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "enemies,ground,neutral,nonhero,organic"
+    },
+    {
+      "Level": 3,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "enemies,ground,neutral,nonhero,organic"
+    },
+    {
+      "Id": 1886612833,
+      "Value": 10000
+    },
+    {
+      "Level": 1,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "ZB08,ZB09"
+    },
+    {
+      "Level": 2,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "ZB08,ZB09"
+    },
+    {
+      "Level": 3,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "ZB08,ZB09"
+    },
+    {
+      "Level": 1,
+      "Id": 1935895905,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 828993360,
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": 828993360,
+      "Type": 2,
+      "Value": 25
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": 828993360,
+      "Type": 2,
+      "Value": 35
+    },
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "undead"
     }
   ]
 }
