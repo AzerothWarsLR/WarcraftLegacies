@@ -88,7 +88,6 @@ namespace WarcraftLegacies.Source.Spells
           CasterLaunchZ = 50f,
           TargetImpactZ = 50f,
           Speed = ProjectileVelocity,
-          Mode = BasicMissile.FlightMode.FollowTerrain,
           Damage = Damage.Base + Damage.PerLevel * level,
           EffectOnHitModel = EffectOnHitModel,
           EffectOnHitScale = EffectOnHitScale,
