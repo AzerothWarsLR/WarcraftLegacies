@@ -81,10 +81,12 @@ namespace WarcraftLegacies.Source.Spells
     }
 
     private static bool IsValidTarget(unit target, unit caster) =>
-      UnitAlive(target) &&
-      !IsUnitType(target, UNIT_TYPE_HERO) && !IsUnitType(target, UNIT_TYPE_STRUCTURE) &&
-      !IsUnitType(target, UNIT_TYPE_ANCIENT) && !IsUnitType(target, UNIT_TYPE_MECHANICAL) &&
-      !IsUnitType(target, UNIT_TYPE_MAGIC_IMMUNE) &&
+      UnitAlive(target) && 
+      !target.IsResistant() && 
+      !IsUnitType(target, UNIT_TYPE_STRUCTURE) &&
+      !IsUnitType(target, UNIT_TYPE_ANCIENT) && 
+      !IsUnitType(target, UNIT_TYPE_MECHANICAL) &&
+      !IsUnitType(target, UNIT_TYPE_MAGIC_IMMUNE) && 
       !IsPlayerAlly(caster.OwningPlayer(), target.OwningPlayer());
   }
 }
