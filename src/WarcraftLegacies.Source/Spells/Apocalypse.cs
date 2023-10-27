@@ -91,8 +91,8 @@ namespace WarcraftLegacies.Source.Spells
           Damage = Damage.Base + Damage.PerLevel * level,
           EffectOnHitModel = EffectOnHitModel,
           EffectOnHitScale = EffectOnHitScale,
-          EffectOnProjectileSpawn = EffectOnProjectileSpawn,
-          EffectOnProjectileSpawnScale = EffectOnProjectileSpawnScale,
+          EffectOnProjectileDespawnModel = EffectOnProjectileSpawn,
+          EffectOnProjectileDespawnScale = EffectOnProjectileSpawnScale,
           DummyAbilityId = DummyAbilityId,
           DummyAbilityOrderId = DummyAbilityOrderId,
           DummyAbilityLevel = level
