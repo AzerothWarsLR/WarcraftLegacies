@@ -72,13 +72,15 @@ namespace WarcraftLegacies.Source.Spells
       var level = GetAbilityLevel(caster);
       for (var i = 0; i < ProjectileCount; i++)
       {
-        var projectileOrigin = GetProjectileOriginPoint(i, middle, casterFacing, casterX, casterY);
+        var projectileOrigin = GetProjectileOrigin(i, middle, casterFacing, casterX, casterY);
         AddSpecialEffect(EffectOnProjectileSpawn, projectileOrigin.X, projectileOrigin.Y)
           .SetScale(EffectOnProjectileSpawnScale)
           .SetLifespan();
+
+        var projectileDestination = GetProjectileDestination(projectileOrigin, casterFacing);
         
         var missile = new ApocalypseProjectile(caster.OwningPlayer(), projectileOrigin.X, projectileOrigin.Y,
-          targetPoint.X, targetPoint.Y)
+          projectileDestination.X, projectileDestination.Y)
         {
           CollisionRadius = ProjectileRadius,
           EffectString = ProjectileModel,
@@ -101,7 +103,7 @@ namespace WarcraftLegacies.Source.Spells
       }
     }
 
-    private Point GetProjectileOriginPoint(int projectileIndex, int middleProjectileIndex, float casterFacing,
+    private Point GetProjectileOrigin(int projectileIndex, int middleProjectileIndex, float casterFacing,
       float casterX, float casterY)
     {
       float offsetAngle = 0;
@@ -120,6 +122,15 @@ namespace WarcraftLegacies.Source.Spells
       var projectileOrigin = new Point(MathEx.GetPolarOffsetX(casterX, offsetDistance, offsetAngle),
         MathEx.GetPolarOffsetY(casterY, offsetDistance, offsetAngle));
       return projectileOrigin;
+    }
+    
+    private Point GetProjectileDestination(Point projectileOrigin, float casterFacing)
+    {
+      var x = MathEx.GetPolarOffsetX(projectileOrigin.X, Range, casterFacing);
+      var y = MathEx.GetPolarOffsetY(projectileOrigin.Y, Range, casterFacing);
+
+      var projectileDestination = new Point(x, y);
+      return projectileDestination;
     }
   }
 }

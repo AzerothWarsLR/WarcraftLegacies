@@ -120,7 +120,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
       
       SpellSystem.Register(new Apocalypse(Constants.ABILITY_A10N_APOCALYPSE_DEATH_KNIGHT_ARTHAS)
       {
-        Range = 1500,
+        Range = 900,
         Width = 700,
         ProjectileVelocity = 250,
         ProjectileRadius = 50,
@@ -134,7 +134,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
         ProjectileScale = 0.7f,
         EffectOnHitModel = @"Objects\Spawnmodels\Undead\UndeadDissipate\UndeadDissipate.mdl",
         EffectOnHitScale = 0.7f,
-        EffectOnProjectileSpawn = @"Abilities\Spells\Undead\AnimateDead\AnimateDeadTarget.mdl",
+        EffectOnProjectileSpawn = @"Abilities\Spells\Items\AIil\AIilTarget.mdl",
         EffectOnProjectileSpawnScale = 0.5f,
         DummyAbilityId = Constants.ABILITY_A0YD_APOCALYPSE_DUMMY_CASTER,
         DummyAbilityOrderId = OrderId("parasite")
