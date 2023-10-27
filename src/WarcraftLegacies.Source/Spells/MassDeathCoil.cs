@@ -30,7 +30,7 @@ namespace WarcraftLegacies.Source.Spells
     public override void OnCast(unit caster, unit target, Point targetPoint)
     {
       var dummyTargets = CreateGroup()
-        .EnumUnitsInRange(caster.GetPosition(), Radius).EmptyToList()
+        .EnumUnitsInRange(targetPoint, Radius).EmptyToList()
         .FindAll(unit => CastFilters.IsTargetOrganicAndAlive(caster, unit));
 
       if (UpgradeCondition(caster))
@@ -41,7 +41,7 @@ namespace WarcraftLegacies.Source.Spells
           caster.Heal(CasterHealPerTargetUpgraded);
       }
       
-      DummyCasterManager.GetGlobalDummyCaster().CastOnUnitsInCircle(caster, DummyAbilityId, DummyAbilityOrderId,
+      DummyCasterManager.GetGlobalDummyCaster().CastOnTargets(caster, DummyAbilityId, DummyAbilityOrderId,
         GetAbilityLevel(caster), dummyTargets, DummyCastOriginType.Caster);
     }
   }

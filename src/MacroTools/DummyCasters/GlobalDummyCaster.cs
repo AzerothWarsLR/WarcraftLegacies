@@ -95,7 +95,7 @@ namespace MacroTools.DummyCasters
     /// <summary>
     /// Causes the specified spell to be cast on all units in a group.
     /// </summary>
-    public void CastOnUnitsInCircle(unit caster, int abilId, int orderId, int level, IEnumerable<unit> targets,
+    public void CastOnTargets(unit caster, int abilId, int orderId, int level, IEnumerable<unit> targets,
       DummyCastOriginType originType)
     {
       foreach (var target in targets) 
