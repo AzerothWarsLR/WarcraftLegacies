@@ -11,10 +11,6 @@
       "Value": "ReplaceableTextures\\CommandButtons\\BTNNecromancerAdept.blp"
     },
     {
-      "Id": 2037408353,
-      "Value": -11
-    },
-    {
       "Id": 1718840929,
       "Type": 3,
       "Value": "(Lich King spellbook)"
@@ -34,6 +30,14 @@
       "Id": 829453409,
       "Type": 3,
       "Value": "Power of the Lich King"
+    },
+    {
+      "Id": 2037408353,
+      "Value": 1
+    },
+    {
+      "Id": 2020631137,
+      "Value": 2
     }
   ]
 }

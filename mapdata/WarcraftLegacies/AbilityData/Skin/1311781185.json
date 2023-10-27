@@ -75,7 +75,7 @@
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "Conjures 7 spectral horsemen that charge to the target location. Each unit struck takes damage instantly, and is then damaged further over the next \u003CA0YD,Dur1\u003E seconds. Units that die under the effects of Apocalypse are reanimated as Zombies lasting \u003CA0YD,Cast1\u003E seconds. |n|n|cffffcc00Level 1|r - Deals 75 damage instantly, then \u003CA0YD,DataA1\u003E damage per second.|n|cffffcc00Level 2|r - Deals 105 damage instantly, then \u003CA0YD,DataA1\u003E damage per second. |n|cffffcc00Level 3|r - Deals 140 damage instantly, then \u003CA0YD,DataA1\u003E damage per second."
+      "Value": "Conjures 7 spectral horsemen that charge to the target location. Each unit struck takes damage instantly and a further \u003CA0YD,DataA1\u003E damage per second for \u003CA0YD,Dur1\u003E seconds. Units that die under the effects of Apocalypse are reanimated as Zombies lasting \u003CA0YD,Cast1\u003E seconds. |n|n|cffffcc00Level 1|r - Deals 100 damage instantly.|n|cffffcc00Level 2|r - Deals 150 damage instantly. |n|cffffcc00Level 3|r - Deals 200 damage instantly."
     },
     {
       "Id": 1952543841,
@@ -104,19 +104,19 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Conjures 7 spectral horsemen that charge to the target location. Each unit struck takes 70 damage instantly and a further \u003CA0YD,DataA1\u003E damage per second for \u003CA0YD,Dur1\u003E seconds. Units that die under the effects of Apocalypse are reanimated Zombies lasting \u003CA0YD,Cast1\u003E seconds."
+      "Value": "Conjures 7 spectral horsemen that charge to the target location. Each unit struck takes 100 damage instantly and a further \u003CA0YD,DataA1\u003E damage per second for \u003CA0YD,Dur1\u003E seconds. Units that die under the effects of Apocalypse are reanimated Zombies lasting \u003CA0YD,Cast1\u003E seconds."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Conjures 7 spectral horsemen that charge to the target location. Each unit struck takes 105 damage instantly and a further \u003CA0YD,DataA2\u003E damage per second for \u003CA0YD,Dur2\u003E seconds. Units that die under the effects of Apocalypse are reanimated Zombies lasting \u003CA0YD,Cast2\u003E seconds."
+      "Value": "Conjures 7 spectral horsemen that charge to the target location. Each unit struck takes 150 damage instantly and a further \u003CA0YD,DataA1\u003E damage per second for \u003CA0YD,Dur1\u003E seconds. Units that die under the effects of Apocalypse are reanimated Zombies lasting \u003CA0YD,Cast1\u003E seconds."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Conjures 7 spectral horsemen that charge to the target location. Each unit struck takes 140 damage instantly and a further \u003CA0YD,DataA3\u003E damage per second for \u003CA0YD,Dur3\u003E seconds. Units that die under the effects of Apocalypse are reanimated Zombies lasting \u003CA0YD,Cast3\u003E seconds."
+      "Value": "Conjures 7 spectral horsemen that charge to the target location. Each unit struck takes 200 damage instantly and a further \u003CA0YD,DataA1\u003E damage per second for \u003CA0YD,Dur1\u003E seconds. Units that die under the effects of Apocalypse are reanimated Zombies lasting \u003CA0YD,Cast1\u003E seconds."
     }
   ]
 }
