@@ -8,7 +8,8 @@ namespace WarcraftLegacies.Source.Spells
   public sealed class ApocalypseProjectile : BasicMissile
   {
     private readonly GlobalDummyCaster _dummyCaster;
-    
+    private bool _colorSet;
+
     public float Damage { get; init; }
 
     public string EffectOnHitModel { get; init; } = "";
@@ -46,6 +47,17 @@ namespace WarcraftLegacies.Source.Spells
       AddSpecialEffect(EffectOnHitModel, GetUnitX(unit), GetUnitY(unit))
         .SetScale(EffectOnHitScale)
         .SetLifespan();
+    }
+
+    /// <inheritdoc />
+    public override void OnPeriodic()
+    {
+      if (_colorSet)
+        return;
+      
+      BlzSetSpecialEffectColorByPlayer(Effect, CastingPlayer);
+
+      _colorSet = true;
     }
 
     /// <inheritdoc />
