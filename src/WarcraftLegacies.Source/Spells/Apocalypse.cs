@@ -72,13 +72,13 @@ namespace WarcraftLegacies.Source.Spells
       var level = GetAbilityLevel(caster);
       for (var i = 0; i < ProjectileCount; i++)
       {
-        var projectileJourney = GetProjectileJourneyData(i, middle, casterFacing, casterX, casterY);
-        AddSpecialEffect(EffectOnProjectileSpawn, projectileJourney.Origin.X, projectileJourney.Origin.Y)
+        var projectileOrigin = GetProjectileOriginPoint(i, middle, casterFacing, casterX, casterY);
+        AddSpecialEffect(EffectOnProjectileSpawn, projectileOrigin.X, projectileOrigin.Y)
           .SetScale(EffectOnProjectileSpawnScale)
           .SetLifespan();
         
-        var missile = new ApocalypseProjectile(caster.OwningPlayer(), projectileJourney.Origin.X,
-          projectileJourney.Origin.Y, projectileJourney.Destination.X, projectileJourney.Destination.Y)
+        var missile = new ApocalypseProjectile(caster.OwningPlayer(), projectileOrigin.X, projectileOrigin.Y,
+          targetPoint.X, targetPoint.Y)
         {
           CollisionRadius = ProjectileRadius,
           EffectString = ProjectileModel,
@@ -101,7 +101,7 @@ namespace WarcraftLegacies.Source.Spells
       }
     }
 
-    private ProjectileJourneyData GetProjectileJourneyData(int projectileIndex, int middleProjectileIndex, float casterFacing,
+    private Point GetProjectileOriginPoint(int projectileIndex, int middleProjectileIndex, float casterFacing,
       float casterX, float casterY)
     {
       float offsetAngle = 0;
@@ -119,22 +119,7 @@ namespace WarcraftLegacies.Source.Spells
 
       var projectileOrigin = new Point(MathEx.GetPolarOffsetX(casterX, offsetDistance, offsetAngle),
         MathEx.GetPolarOffsetY(casterY, offsetDistance, offsetAngle));
-      
-      var projectileDestination = new Point(MathEx.GetPolarOffsetX(casterX, Range, offsetAngle),
-        MathEx.GetPolarOffsetY(casterY, Range, offsetAngle));
-      
-      return new ProjectileJourneyData
-      {
-        Origin = projectileOrigin,
-        Destination = projectileDestination
-      };
-    }
-
-    private readonly struct ProjectileJourneyData
-    {
-      public Point Origin { get; init; }
-      
-      public Point Destination { get; init; }
+      return projectileOrigin;
     }
   }
 }
