@@ -4,6 +4,7 @@ using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
+using MacroTools.FactionChoices;
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives;
 using MacroTools.QuestSystem;
@@ -134,6 +135,14 @@ namespace MacroTools.FactionSystem
     /// <summary>Whether or not the <see cref="Faction"/> has been defeated.</summary>
     public ScoreStatus ScoreStatus { get; private set; } = ScoreStatus.Undefeated;
 
+    /// <summary>
+    /// Indicates how difficult it is to learn the basic mechanics of this <see cref="Faction"/>.
+    /// <para>This isn't about how difficult the Faction is to play optimally, but rather how difficult it is to
+    /// play at a very basic level. For instance, a Faction with a very complex starting quest would be very hard
+    /// even if it doesn't have to perform a lot of micro in fights.</para>
+    /// </summary>
+    public FactionLearningDifficulty LearningDifficulty { get; init; }
+    
     public string ColoredName => $"{PrefixCol}{_name}|r";
 
     public string PrefixCol { get; }

@@ -1,0 +1,45 @@
+{
+  "OldId": 1651730497,
+  "NewId": 1431515201,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 2020631137,
+      "Value": 2
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Ripping Claws"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Ripping Claws"
+    },
+    {
+      "Id": 1952539489,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1885430625,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASDWRip.blp"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Increases damage dealt to enemy targets with Unarmored armor by \u003CA0SU,DataB1,%\u003E%."
+    }
+  ]
+}

@@ -1,5 +1,6 @@
 ﻿using MacroTools;
 using MacroTools.Extensions;
+using MacroTools.FactionChoices;
 using MacroTools.FactionSystem;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -20,6 +21,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
         ControlPointDefenderUnitTypeId = Constants.UNIT_H0C1_CONTROL_POINT_DEFENDER_ZANDALAR,
         StartingCameraPosition = Regions.TrollStartPos.Center,
         StartingUnits = Regions.TrollStartPos.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable),
+        LearningDifficulty = FactionLearningDifficulty.Basic,
         IntroText = @"You are playing as the mighty |cffe1946cZandalari Empire|r.
 
 You start off at the southern coast of Tanaris, seperated from your allies. Raise an army and deal with the rogue Trolls in Zul'Farrak.
@@ -79,7 +81,8 @@ Join up with your allies and brace for a tough fight and counter-attack. "
       Zandalar.ModObjectLimit(FourCC("R070"), Faction.UNLIMITED); //Haruspex Training
       Zandalar.ModObjectLimit(FourCC("R071"), Faction.UNLIMITED); //Hex Training
 
-      Zandalar.AddGoldMine(preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-8900, -17000)));
+      Zandalar.AddGoldMine(preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-8900, -17000))); // Starting Gold Mine
+      Zandalar.AddGoldMine(preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-3500, -15000))); // Zandalar Gold Mine
 
       FactionManager.Register(Zandalar);
     }

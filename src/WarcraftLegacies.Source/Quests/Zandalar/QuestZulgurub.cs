@@ -17,6 +17,7 @@ namespace WarcraftLegacies.Source.Quests.Zandalar
     private const int _zulgurubResearch = Constants.UPGRADE_R02M_QUEST_COMPLETED_THE_HEART_OF_HAKKAR_WARSONG;
     private const int _trollShrineId = Constants.UNIT_O04X_LOA_SHRINE_ZANDALARI_SIEGE;
     private const int _ravagerId = Constants.UNIT_O021_RAVAGER_ZANDALAR;
+    private readonly int goldReward = 50;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestZulgurub"/> class
@@ -30,10 +31,12 @@ namespace WarcraftLegacies.Source.Quests.Zandalar
     }
 
     /// <inheritdoc/>
-    protected override string RewardFlavour => "Zul'gurub has fallen. The Gurubashi trolls lend their might to the Zandalari.";
+    protected override string RewardFlavour =>
+      "Zul'gurub has fallen. The Gurubashi trolls lend their might to the Zandalari.";
 
     /// <inheritdoc/>
-    protected override string RewardDescription => "150 gold and the ability to train " + GetObjectName(_ravagerId) + "s from the " + GetObjectName(_trollShrineId);
+    protected override string RewardDescription =>
+      $"{goldReward} gold and the ability to train {GetObjectName(_ravagerId)}s from the {GetObjectName(_trollShrineId)}";
 
     /// <inheritdoc/>>
     protected override void OnComplete(Faction completingFaction)
@@ -41,7 +44,7 @@ namespace WarcraftLegacies.Source.Quests.Zandalar
       if(completingFaction.Player != null)
       {
         SetPlayerTechResearched(completingFaction.Player, _zulgurubResearch, 1);
-        completingFaction.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, 150);
+        completingFaction.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, goldReward);
       }
     }
 

@@ -17,6 +17,7 @@ namespace WarcraftLegacies.Source.Quests.Zandalar
     private const int _jinthaalorResearch = Constants.UPGRADE_R02N_QUEST_COMPLETED_THE_ANCIENT_EGG_WARSONG;
     private const int _bearRiderId = Constants.UNIT_O02K_BEAR_RIDER_ZANDALAR;
     private const int _trollShrineId = Constants.UNIT_O04X_LOA_SHRINE_ZANDALARI_SIEGE;
+    private readonly int goldReward = 50;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestJinthaAlor"/> class
@@ -35,15 +36,14 @@ namespace WarcraftLegacies.Source.Quests.Zandalar
 
     /// <inheritdoc/>>
     protected override string RewardDescription =>
-      "Control of Jintha'Alor, 150 gold tribute and the ability to train " + GetObjectName(_bearRiderId) +
-      "s from the " + GetObjectName(_trollShrineId);
+      $"Control of Jintha'Alor, {goldReward} gold tribute and the ability to train {GetObjectName(_bearRiderId)}s from the {GetObjectName(_trollShrineId)}";
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
     {
       if (completingFaction.Player != null)
       {
         SetPlayerTechResearched(completingFaction.Player, _jinthaalorResearch, 1);
-        completingFaction.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, 150);
+        completingFaction.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, goldReward);
       }
     }
     /// <inheritdoc/>
