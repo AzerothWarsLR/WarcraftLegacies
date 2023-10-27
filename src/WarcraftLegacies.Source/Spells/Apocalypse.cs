@@ -1,5 +1,10 @@
 ﻿using MacroTools;
+using MacroTools.Extensions;
+using MacroTools.Libraries;
 using MacroTools.SpellSystem;
+using WCSharp.Missiles;
+using static War3Api.Common;
+using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Spells
 {
@@ -54,6 +59,56 @@ namespace WarcraftLegacies.Source.Spells
     /// <inheritdoc />
     public Apocalypse(int id) : base(id)
     {
+      
+    }
+
+    /// <inheritdoc />
+    public override void OnCast(unit caster, unit target, Point targetPoint)
+    {
+      var middle = (ProjectileCount - 1) / 2;
+      var casterFacing = caster.GetFacing();
+      var casterX = GetUnitX(caster);
+      var casterY = GetUnitY(caster);
+      for (var i = 0; i < ProjectileCount; i++)
+      {
+        var projectileOrigin = GetProjectileOriginPoint(i, middle, casterFacing, casterX, casterY);
+
+        var missile = new ApocalypseProjectile(caster.OwningPlayer(), projectileOrigin.X, projectileOrigin.Y,
+          targetPoint.X, targetPoint.Y)
+        {
+          CollisionRadius = ProjectileRadius,
+          EffectString = ProjectileModel,
+          EffectScale = ProjectileScale,
+          Active = true,
+          Caster = caster,
+          CasterLaunchZ = 50f,
+          TargetImpactZ = 50f,
+          Speed = ProjectileVelocity,
+          Mode = BasicMissile.FlightMode.FollowTerrain
+        };
+        MissileSystem.Add(missile);
+      }
+    }
+
+    private Point GetProjectileOriginPoint(int projectileIndex, int middleProjectileIndex, float casterFacing,
+      float casterX, float casterY)
+    {
+      float offsetAngle = 0;
+      float offsetDistance = 0;
+      if (projectileIndex < middleProjectileIndex)
+      {
+        offsetAngle = casterFacing - 90 - 15 * (middleProjectileIndex - projectileIndex);
+        offsetDistance = (middleProjectileIndex - projectileIndex) * (Width / ProjectileCount);
+      }
+      else if (projectileIndex > middleProjectileIndex)
+      {
+        offsetAngle = casterFacing + 90 + 15 * (projectileIndex - middleProjectileIndex);
+        offsetDistance = (projectileIndex - middleProjectileIndex) * (Width / ProjectileCount);
+      }
+
+      var projectileOrigin = new Point(MathEx.GetPolarOffsetX(casterX, offsetDistance, offsetAngle),
+        MathEx.GetPolarOffsetY(casterY, offsetDistance, offsetAngle));
+      return projectileOrigin;
     }
   }
 }
