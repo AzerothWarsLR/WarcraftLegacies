@@ -97,13 +97,18 @@ namespace WarcraftLegacies.Source.Setup.Spells
         {
           Base = 5
         },
+        StrengthPerUnitUpgraded = new LeveledAbilityField<int>()
+        {
+          Base = 7
+        },
         Radius = new()
         {
           Base = 500
         },
         Duration = 30,
+        UpgradeCondition = unit => GetUnitTypeId(unit) == Constants.UNIT_N023_LORD_OF_THE_SCOURGE_SCOURGE,
         KillEffect = @"Objects\Spawnmodels\Undead\UndeadDissipate\UndeadDissipate.mdl",
-        BuffEffect = @"Abilities\Spells\Items\AIso\BIsvTarget.mdl"
+        BuffEffect = @"Abilities\Spells\Items\AIso\BIsvTarget.mdl",
       });
       
       SpellSystem.Register(new MassDeathCoil(Constants.ABILITY_ZB06_MASS_DEATH_COIL_ARTHAS)
@@ -119,9 +124,11 @@ namespace WarcraftLegacies.Source.Setup.Spells
       {
         Range = 900,
         Width = 700,
+        WidthUpgraded = 800,
         ProjectileVelocity = 250,
         ProjectileRadius = 50,
         ProjectileCount = 7,
+        ProjectileCountUpgraded = 9,
         Damage = new LeveledAbilityField<int>
         {
           Base = 35,
@@ -134,7 +141,8 @@ namespace WarcraftLegacies.Source.Setup.Spells
         EffectOnProjectileSpawn = @"Abilities\Spells\Items\AIil\AIilTarget.mdl",
         EffectOnProjectileSpawnScale = 0.5f,
         DummyAbilityId = Constants.ABILITY_A0YD_APOCALYPSE_DUMMY_CASTER,
-        DummyAbilityOrderId = OrderId("parasite")
+        DummyAbilityOrderId = OrderId("parasite"),
+        UpgradeCondition = unit => GetUnitTypeId(unit) == Constants.UNIT_N023_LORD_OF_THE_SCOURGE_SCOURGE
       });
     }
   }

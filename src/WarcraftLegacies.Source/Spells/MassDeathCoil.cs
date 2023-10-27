@@ -40,7 +40,6 @@ namespace WarcraftLegacies.Source.Spells
         foreach (var unused in dummyTargets) 
           caster.Heal(CasterHealPerTargetUpgraded);
       }
-        
       
       DummyCasterManager.GetGlobalDummyCaster().CastOnUnitsInCircle(caster, DummyAbilityId, DummyAbilityOrderId,
         GetAbilityLevel(caster), dummyTargets, DummyCastOriginType.Caster);
