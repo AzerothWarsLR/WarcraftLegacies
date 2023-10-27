@@ -16,7 +16,7 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "(Red - Lich King)"
+      "Value": "(Lich King)"
     },
     {
       "Id": 1835101793,
@@ -58,6 +58,11 @@
       "Id": 828536161,
       "Type": 3,
       "Value": "Raises \u003CA010,DataA1\u003E dead units in an area for \u003CA010,Dur1\u003E seconds."
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
     }
   ]
 }
