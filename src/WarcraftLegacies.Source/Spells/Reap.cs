@@ -18,6 +18,9 @@ namespace WarcraftLegacies.Source.Spells
 
     /// <summary>Strength gained per unit slain.</summary>
     public LeveledAbilityField<int> StrengthPerUnit { get; init; } = new();
+    
+    /// <summary>Strength gained per unit slain.</summary>
+    public LeveledAbilityField<int> StrengthPerUnitUpgraded { get; init; } = new();
 
     /// <summary>How far away units can be slain.</summary>
     public LeveledAbilityField<float> Radius { get; init; } = new();
@@ -30,6 +33,9 @@ namespace WarcraftLegacies.Source.Spells
     
     /// <summary>How long the Strength buff lasts.</summary>
     public float Duration { get; init; }
+
+    /// <summary>A caster matching this condition is considered to have the upgraded version of the spell.</summary>
+    public Func<unit, bool> UpgradeCondition { get; init; } = _ => false;
     
     /// <inheritdoc />
     public Reap(int id) : base(id)

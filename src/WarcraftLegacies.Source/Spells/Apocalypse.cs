@@ -1,4 +1,5 @@
-﻿using MacroTools;
+﻿using System;
+using MacroTools;
 using MacroTools.Extensions;
 using MacroTools.Libraries;
 using MacroTools.SpellSystem;
@@ -20,6 +21,9 @@ namespace WarcraftLegacies.Source.Spells
     /// <summary>All projectiles are spaced out in a line this wide.</summary>
     public float Width { get; init; }
     
+    /// <summary>When upgraded, all projectiles are spaced out in a line this wide.</summary>
+    public float WidthUpgraded { get; init; }
+    
     /// <summary>How far the projectiles travel.</summary>
     public float ProjectileVelocity { get; init; }
     
@@ -28,6 +32,9 @@ namespace WarcraftLegacies.Source.Spells
     
     /// <summary>How many projectiles to spawn.</summary>
     public int ProjectileCount { get; init; }
+    
+    /// <summary>When upgraded, how many projectiles to spawn.</summary>
+    public int ProjectileCountUpgraded { get; init; }
 
     /// <summary>How much instant damage the projectiles deal.</summary>
     public LeveledAbilityField<int> Damage { get; init; } = new();
@@ -56,6 +63,9 @@ namespace WarcraftLegacies.Source.Spells
     /// <summary>The order ID for <see cref="DummyAbilityId"/>.</summary>
     public int DummyAbilityOrderId { get; init; }
 
+    /// <summary>A caster matching this condition is considered to have the upgraded version of the spell.</summary>
+    public Func<unit, bool> UpgradeCondition { get; init; } = _ => false;
+    
     /// <inheritdoc />
     public Apocalypse(int id) : base(id)
     {
