@@ -21,6 +21,10 @@ namespace WarcraftLegacies.Source.Spells
     
     public int DummyAbilityLevel { get; init; }
 
+    public string EffectOnProjectileSpawn { get; set; } = "";
+    
+    public float EffectOnProjectileSpawnScale { get; set; }
+
     /// <inheritdoc />
     public ApocalypseProjectile(player castingPlayer, float casterX, float casterY, float targetX, float targetY) :
       base(castingPlayer, casterX, casterY, targetX, targetY)
@@ -40,6 +44,15 @@ namespace WarcraftLegacies.Source.Spells
         DummyCastOriginType.Target);
       
       AddSpecialEffect(EffectOnHitModel, GetUnitX(unit), GetUnitY(unit))
+        .SetScale(EffectOnHitScale)
+        .SetLifespan();
+    }
+
+    /// <inheritdoc />
+    public override void OnDispose()
+    {
+      Effect.SetAlpha(255);
+      AddSpecialEffect(EffectOnHitModel, MissileX, MissileY)
         .SetScale(EffectOnHitScale)
         .SetLifespan();
     }
