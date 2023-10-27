@@ -76,7 +76,7 @@ namespace WarcraftLegacies.Source.Spells
         AddSpecialEffect(EffectOnProjectileSpawn, projectileOrigin.X, projectileOrigin.Y)
           .SetScale(EffectOnProjectileSpawnScale)
           .SetLifespan();
-
+        
         var missile = new ApocalypseProjectile(caster.OwningPlayer(), projectileOrigin.X, projectileOrigin.Y,
           targetPoint.X, targetPoint.Y)
         {
@@ -93,7 +93,8 @@ namespace WarcraftLegacies.Source.Spells
           EffectOnHitModel = EffectOnHitModel,
           EffectOnHitScale = EffectOnHitScale,
           DummyAbilityId = DummyAbilityId,
-          DummyAblilityOrderId = DummyAbilityOrderId
+          DummyAbilityOrderId = DummyAbilityOrderId,
+          DummyAbilityLevel = level
         };
         MissileSystem.Add(missile);
       }
