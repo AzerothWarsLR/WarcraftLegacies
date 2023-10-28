@@ -1,4 +1,5 @@
-﻿using MacroTools;
+﻿using System;
+using MacroTools;
 using MacroTools.Extensions;
 using MacroTools.Libraries;
 using MacroTools.SpellSystem;
@@ -20,6 +21,9 @@ namespace WarcraftLegacies.Source.Spells
     /// <summary>All projectiles are spaced out in a line this wide.</summary>
     public float Width { get; init; }
     
+    /// <summary>When upgraded, all projectiles are spaced out in a line this wide.</summary>
+    public float WidthUpgraded { get; init; }
+    
     /// <summary>How far the projectiles travel.</summary>
     public float ProjectileVelocity { get; init; }
     
@@ -28,6 +32,9 @@ namespace WarcraftLegacies.Source.Spells
     
     /// <summary>How many projectiles to spawn.</summary>
     public int ProjectileCount { get; init; }
+    
+    /// <summary>When upgraded, how many projectiles to spawn.</summary>
+    public int ProjectileCountUpgraded { get; init; }
 
     /// <summary>How much instant damage the projectiles deal.</summary>
     public LeveledAbilityField<int> Damage { get; init; } = new();
@@ -56,6 +63,9 @@ namespace WarcraftLegacies.Source.Spells
     /// <summary>The order ID for <see cref="DummyAbilityId"/>.</summary>
     public int DummyAbilityOrderId { get; init; }
 
+    /// <summary>A caster matching this condition is considered to have the upgraded version of the spell.</summary>
+    public Func<unit, bool> UpgradeCondition { get; init; } = _ => false;
+    
     /// <inheritdoc />
     public Apocalypse(int id) : base(id)
     {
@@ -65,14 +75,17 @@ namespace WarcraftLegacies.Source.Spells
     /// <inheritdoc />
     public override void OnCast(unit caster, unit target, Point targetPoint)
     {
-      var middle = (ProjectileCount - 1) / 2;
       var casterFacing = MathEx.GetAngleBetweenPoints(GetUnitX(caster), GetUnitY(caster), targetPoint.X, targetPoint.Y);
       var casterX = GetUnitX(caster);
       var casterY = GetUnitY(caster);
       var level = GetAbilityLevel(caster);
-      for (var i = 0; i < ProjectileCount; i++)
+      var isUpgraded = UpgradeCondition(caster);
+      var width = isUpgraded ? WidthUpgraded : Width;
+      var projectileCount = isUpgraded ? ProjectileCountUpgraded : ProjectileCount;
+      var middle = (projectileCount - 1) / 2;
+      for (var i = 0; i < projectileCount; i++)
       {
-        var projectileOrigin = GetProjectileOrigin(i, middle, casterFacing, casterX, casterY);
+        var projectileOrigin = GetProjectileOrigin(i, middle, casterFacing, casterX, casterY, width, projectileCount);
         AddSpecialEffect(EffectOnProjectileSpawn, projectileOrigin.X, projectileOrigin.Y)
           .SetScale(EffectOnProjectileSpawnScale)
           .SetLifespan();
@@ -103,20 +116,20 @@ namespace WarcraftLegacies.Source.Spells
       }
     }
 
-    private Point GetProjectileOrigin(int projectileIndex, int middleProjectileIndex, float casterFacing,
-      float casterX, float casterY)
+    private static Point GetProjectileOrigin(int projectileIndex, int middleProjectileIndex, float casterFacing,
+      float casterX, float casterY, float width, int projectileCount)
     {
       float offsetAngle = 0;
       float offsetDistance = 0;
       if (projectileIndex < middleProjectileIndex)
       {
         offsetAngle = casterFacing - 90 - 15 * (middleProjectileIndex - projectileIndex);
-        offsetDistance = (middleProjectileIndex - projectileIndex) * (Width / ProjectileCount);
+        offsetDistance = (middleProjectileIndex - projectileIndex) * (width / projectileCount);
       }
       else if (projectileIndex > middleProjectileIndex)
       {
         offsetAngle = casterFacing + 90 + 15 * (projectileIndex - middleProjectileIndex);
-        offsetDistance = (projectileIndex - middleProjectileIndex) * (Width / ProjectileCount);
+        offsetDistance = (projectileIndex - middleProjectileIndex) * (width / projectileCount);
       }
 
       var projectileOrigin = new Point(MathEx.GetPolarOffsetX(casterX, offsetDistance, offsetAngle),

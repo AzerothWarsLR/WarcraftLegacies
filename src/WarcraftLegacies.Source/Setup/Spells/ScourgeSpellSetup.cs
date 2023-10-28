@@ -1,5 +1,4 @@
 ﻿using MacroTools;
-using MacroTools.DummyCasters;
 using MacroTools.PassiveAbilities;
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.Spells;
@@ -98,33 +97,38 @@ namespace WarcraftLegacies.Source.Setup.Spells
         {
           Base = 5
         },
+        StrengthPerUnitUpgraded = new LeveledAbilityField<int>()
+        {
+          Base = 7
+        },
         Radius = new()
         {
           Base = 500
         },
         Duration = 30,
+        UpgradeCondition = unit => GetUnitTypeId(unit) == Constants.UNIT_N023_LORD_OF_THE_SCOURGE_SCOURGE,
         KillEffect = @"Objects\Spawnmodels\Undead\UndeadDissipate\UndeadDissipate.mdl",
-        BuffEffect = @"Abilities\Spells\Items\AIso\BIsvTarget.mdl"
+        BuffEffect = @"Abilities\Spells\Items\AIso\BIsvTarget.mdl",
       });
       
-      SpellSystem.Register(new MassAnySpell(Constants.ABILITY_ZB06_MASS_DEATH_COIL_ARTHAS)
+      SpellSystem.Register(new MassDeathCoil(Constants.ABILITY_ZB06_MASS_DEATH_COIL_ARTHAS)
       {
         DummyAbilityId = Constants.ABILITY_ZB05_MASS_DEATH_COIL_ARTHAS_DUMMY,
         DummyAbilityOrderId = OrderId("deathcoil"),
         Radius = 250,
-        CastFilter = CastFilters.IsTargetOrganicAndAlive,
-        TargetType = SpellTargetType.Point,
-        DummyCastOriginType = DummyCastOriginType.Caster,
-        DummyCasterType = DummyCasterType.AbilitySpecific
+        CasterHealPerTargetUpgraded = 25,
+        UpgradeCondition = unit => GetUnitTypeId(unit) == Constants.UNIT_N023_LORD_OF_THE_SCOURGE_SCOURGE
       });
       
       SpellSystem.Register(new Apocalypse(Constants.ABILITY_A10N_APOCALYPSE_DEATH_KNIGHT_ARTHAS)
       {
         Range = 900,
         Width = 700,
+        WidthUpgraded = 1000,
         ProjectileVelocity = 250,
         ProjectileRadius = 50,
         ProjectileCount = 7,
+        ProjectileCountUpgraded = 9,
         Damage = new LeveledAbilityField<int>
         {
           Base = 35,
@@ -137,7 +141,8 @@ namespace WarcraftLegacies.Source.Setup.Spells
         EffectOnProjectileSpawn = @"Abilities\Spells\Items\AIil\AIilTarget.mdl",
         EffectOnProjectileSpawnScale = 0.5f,
         DummyAbilityId = Constants.ABILITY_A0YD_APOCALYPSE_DUMMY_CASTER,
-        DummyAbilityOrderId = OrderId("parasite")
+        DummyAbilityOrderId = OrderId("parasite"),
+        UpgradeCondition = unit => GetUnitTypeId(unit) == Constants.UNIT_N023_LORD_OF_THE_SCOURGE_SCOURGE
       });
     }
   }
