@@ -16,8 +16,8 @@ namespace WarcraftLegacies.Source.Quests.Scarlet
     /// Initializes a new instance of the <see cref="QuestRebuildAndorhal"/> class.
     /// </summary>
     public QuestRebuildAndorhal(Rectangle questRect) : base(
-      "Rebuild Andorhal",
-      "Andorhal was completly destroyed by the scourge, the city should be rebuilt; it's proximity to Aerie Peak will enable the Scarlet Crusade to breed powerful Eagles and Gryphons. ",
+      "Andorhal",
+      "Once the breadbasket of Lordaeron, Andorhal is now nothing but ashes. Were it to be rebuilt, its proximity to Aerie Peak would allow the Scarlet Crusade to breed powerful Eagles and Gryphons.",
       @"ReplaceableTextures\CommandButtons\BTNAlteracGryphonAviary.blp")
     {
       Required = true;
@@ -32,7 +32,7 @@ namespace WarcraftLegacies.Source.Quests.Scarlet
 
     /// <inheritdoc/>
     protected override string RewardFlavour =>
-      "With the proximity to Aerie Peak, New Andhoral can start training a new breed of Eagle and Grypgons, stronger than before";
+      "Survivors from Lordaeron's fall are once more pouring into Andorhal. Eagles and Gryphons from Aerie Peak soar down to the renewed agricultural center to enjoy its renewed production.";
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
