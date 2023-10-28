@@ -38,7 +38,7 @@
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "Brigitte complete abandonnement to vengance leads her to resetting all her abilities cooldown, but reducing her life regeneration rate by 10000% for 1 seconds.|n|n|cffffcc00Level 1|r - 180 second cooldown.|n|cffffcc00Level 2|r - 140 second cooldown.|n|cffffcc00Level 3|r - 120 second cooldown.|n|cffffcc00Level 4|r - 100 second cooldown."
+      "Value": "Resets the caster's ability cooldowns, but reduces their life regeneration rate by 10000% for 1 second.|n|n|cffffcc00Level 1|r - 180 second cooldown.|n|cffffcc00Level 2|r - 140 second cooldown.|n|cffffcc00Level 3|r - 120 second cooldown.|n|cffffcc00Level 4|r - 100 second cooldown."
     },
     {
       "Level": 1,
