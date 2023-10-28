@@ -39,6 +39,18 @@ namespace WarcraftLegacies.Source.Setup.Spells
       };
       SpellSystem.Register(crusaderShout);
 
+      PassiveAbilityManager.Register(new SummonUnitOnDeath(Constants.UNIT_N09N_BISHOP_OF_THE_LIGHT_SCARLET)
+      {
+        Duration = 30,
+        SummonUnitTypeId = Constants.UNIT_ST6W_UNHOLY_ARCHON_SCARLET_QUEST,
+        SummonCount = 1,
+        SpecialEffectPath = @"Abilities\Spells\Undead\DarkRitual\DarkRitualTarget.mdl",
+        RequiredResearch = Constants.UPGRADE_R040_QUEST_COMPLETED_NEW_HEARTHGLEN
+      });
+
+      var recklessOnslaught = new CooldownReset(Constants.ABILITY_A0TC_RECKLESS_ONSLAUGHT_SCARLET);
+      SpellSystem.Register(recklessOnslaught);
+
     }
   }
 }

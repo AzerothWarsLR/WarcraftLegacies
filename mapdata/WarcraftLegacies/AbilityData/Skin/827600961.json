@@ -1,0 +1,40 @@
+{
+  "OldId": 1936016193,
+  "NewId": 827600961,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Bishop)"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Causes the Scarlet Bishop to transform into a Unholy Archon upon death, allowing it to continue fighting for 30 seconds."
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Unholy Archon"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Unholy Archon"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASVampire.blp"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 3
+    }
+  ]
+}

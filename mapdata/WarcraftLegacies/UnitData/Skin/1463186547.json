@@ -1,0 +1,102 @@
+{
+  "OldId": 1953195119,
+  "NewId": 1463186547,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768841589,
+      "Type": 3,
+      "Value": "alternate"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNVampire.blp"
+    },
+    {
+      "Id": 1885430133,
+      "Type": 3,
+      "Value": "medium"
+    },
+    {
+      "Id": 1886151029,
+      "Type": 3,
+      "Value": "alternate"
+    },
+    {
+      "Id": 1919967861,
+      "Type": 3,
+      "Value": "alternate"
+    },
+    {
+      "Id": 1635083125,
+      "Type": 3,
+      "Value": "NONE"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(scarlet quest)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\SatyrShadowmancer_V3.5.mdl"
+    },
+    {
+      "Id": 1735156597,
+      "Value": 50
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 828468597,
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "war3mapImported/Spirit Orb.mdl"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Unholy Archon"
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 1.7
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Unholy Archon"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Winged demon-cousin of the Doomguard, and bringer of shadow and misery.|n|cfff5962dAbilities:|R Consume, Nether\u0027s Eye, Living Missile, Resistant Skin, True Sight|n|n|cff99b4d1Can only summon 4.|r|n|cffffcc00Attacks land and air units.|r"
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "HeroDemonHunterMorphed"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.5
+    },
+    {
+      "Id": 1919705973,
+      "Value": 0
+    }
+  ]
+}

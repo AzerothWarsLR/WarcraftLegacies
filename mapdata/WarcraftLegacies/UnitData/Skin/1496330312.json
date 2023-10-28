@@ -36,11 +36,6 @@
       "Value": "Brigitte Abbendis"
     },
     {
-      "Id": 1919972469,
-      "Type": 3,
-      "Value": " Revive Paladin"
-    },
-    {
       "Id": 1769173877,
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNBRIGITTE.blp"
@@ -62,7 +57,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Warrior Hero, adept at melee combat and aggression.|n|cfff5962dCan Learn:|R Consecration, Immolation, Diligence Aura, Divine Strike|n|n|cffffcc00Attacks land units.|R"
+      "Value": "Warrior Hero, adept at melee combat and aggression.|n|cfff5962dCan Learn:|R Consecration, Flame Strike, Reckless Onslaught, Divine Strike, Divine Intervention|n|n|cffffcc00Attacks land units.|R"
     },
     {
       "Id": 1633907573,

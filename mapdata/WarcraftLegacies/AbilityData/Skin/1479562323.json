@@ -73,12 +73,12 @@
     {
       "Id": 1953653089,
       "Type": 3,
-      "Value": "ReplaceableTextures/CommandButtons/BTNSpell_Holy_SurgeOfLight.blp"
+      "Value": "ReplaceableTextures/CommandButtons/BTNSpell_Holy_HolySmite.blp"
     },
     {
       "Id": 1918988897,
       "Type": 3,
-      "Value": "ReplaceableTextures/CommandButtons/BTNSpell_Holy_SurgeOfLight.blp"
+      "Value": "ReplaceableTextures/CommandButtons/BTNSpell_Holy_HolySmite.blp"
     },
     {
       "Level": 1,

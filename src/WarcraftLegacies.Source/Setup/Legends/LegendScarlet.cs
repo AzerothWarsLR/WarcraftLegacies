@@ -19,11 +19,12 @@ namespace WarcraftLegacies.Source.Setup.Legends
     public LegendaryHero Renault { get; }
     public LegendaryHero Brigitte { get; }
     public LegendaryHero Sally { get; }
+    public Capital CrimsonCathedral { get; }
 
     /// <summary>
     /// Sets up all Lordaeron <see cref="Legend"/>s.
     /// </summary>
-    public LegendScarlet()
+    public LegendScarlet(PreplacedUnitSystem preplacedUnitSystem)
     {
 
       Saiden = new LegendaryHero("Saiden Dethrotan")
@@ -50,6 +51,12 @@ namespace WarcraftLegacies.Source.Setup.Legends
         StartingXp = 8800
       };
 
+      CrimsonCathedral = new Capital
+      {
+        Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_H09L_CRIMSON_CATHEDRAL_SCARLET),
+        DeathMessage = "The Crimson Cathedral has been destroyed",
+      };
+
     }
 
     public void RegisterLegends()
@@ -58,7 +65,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
       LegendaryHeroManager.Register(Renault);
       LegendaryHeroManager.Register(Brigitte);
       LegendaryHeroManager.Register(Sally);
-
+      CapitalManager.Register(CrimsonCathedral);
     }
   }
 }

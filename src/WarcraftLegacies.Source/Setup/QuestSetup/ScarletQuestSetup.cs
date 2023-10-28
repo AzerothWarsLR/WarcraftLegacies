@@ -32,6 +32,11 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       var questReconquerLordaeron = new QuestReconquerLordaeron(questStratholme, questCapital, questHearthglen, questBrill, questAndorhal);
       scarlet.AddQuest(questReconquerLordaeron);
       scarlet.StartingQuest = questReconquerLordaeron;
+
+      var questNewHearthglen = new QuestNewHearthglen(Regions.Central_Northrend);
+      scarlet.AddQuest(questNewHearthglen);
+
+      scarlet.AddQuest(new QuestOnslaughtHarbor(questNewHearthglen, allLegendSetup.Scarlet.CrimsonCathedral));
     }
   }
 }
