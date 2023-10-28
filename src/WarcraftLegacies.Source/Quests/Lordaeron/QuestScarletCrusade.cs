@@ -51,7 +51,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
-      "Your forces turn hostile, Tyr's Hand, then you restart the game as the Scarlet Crusade in Tyr's Hand";
+      "Your forces turn hostile, then you restart the game as the Scarlet Crusade in Tyr's Hand";
 
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
