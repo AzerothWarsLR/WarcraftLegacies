@@ -14,10 +14,10 @@ namespace Launcher.MapMigrations
       {
         var level = unit.StatsLevel;
         var scalingFactor = 4;
-        var numberOfDiceConstant = 2;
+        var numberOfDiceConstant = 1;
         var maxValueOnDice = 2;
         var baseConstant = -2;
-        var baseGold = (((level * scalingFactor) + level) + baseConstant);
+        var baseGold = (level * scalingFactor) + baseConstant;
 
         if (level >= 7)
           baseGold += 5;
@@ -26,7 +26,7 @@ namespace Launcher.MapMigrations
           baseGold += 10;
 
         if (unit.StatsHitPointsMaximumBase >= 2000)
-          baseGold += 10;
+          baseGold += 15;
 
         if (unit.StatsHitPointsMaximumBase >= 2500)
           baseGold += 15;
