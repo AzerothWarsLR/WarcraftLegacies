@@ -68,6 +68,16 @@
       "Id": 1635083125,
       "Type": 3,
       "Value": "war3mapImported\\UPG_0.blp"
+    },
+    {
+      "Id": 1853186933,
+      "Type": 3,
+      "Value": "Initiate,adept,Master"
+    },
+    {
+      "Id": 1953850229,
+      "Type": 3,
+      "Value": "- Slow Poison,- Slow Poison|n- Thorned Vines,- Slow Poison|n- Thorned Vines|n- Far Sight"
     }
   ]
 }

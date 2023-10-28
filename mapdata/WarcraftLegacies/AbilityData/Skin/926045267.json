@@ -8,7 +8,7 @@
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "Allows the Hero to become invisibler for a set amount of time. When the Hero attacks a unit to break invisibility, he will deal bonus damage. |n|n|cffffcc00Level 1|r - \u003CST27,DataC1\u003E bonus damage, \u003CST27k,Dur1\u003E seconds. |n|cffffcc00Level 2|r - \u003CST27,DataC2\u003E bonus damage, \u003CST27,Dur2\u003E seconds. |n|cffffcc00Level 3|r - \u003CST27,DataC3\u003E bonus damage, \u003CST27,Dur3\u003E seconds.|n|cffffcc00Level 4|r - \u003CST27,DataC4\u003E bonus damage, \u003CST27,Dur4\u003E seconds."
+      "Value": "Allows the Hero to become invisible for a set amount of time. When the Hero attacks a unit to break invisibility, he will deal bonus damage. |n|n|cffffcc00Level 1|r - \u003CST27,DataC1\u003E bonus damage, \u003CST27k,Dur1\u003E seconds. |n|cffffcc00Level 2|r - \u003CST27,DataC2\u003E bonus damage, \u003CST27,Dur2\u003E seconds. |n|cffffcc00Level 3|r - \u003CST27,DataC3\u003E bonus damage, \u003CST27,Dur3\u003E seconds.|n|cffffcc00Level 4|r - \u003CST27,DataC4\u003E bonus damage, \u003CST27,Dur4\u003E seconds."
     },
     {
       "Level": 4,
