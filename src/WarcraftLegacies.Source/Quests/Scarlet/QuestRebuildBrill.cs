@@ -21,8 +21,8 @@ namespace WarcraftLegacies.Source.Quests.Scarlet
     /// Initializes a new instance of the <see cref="QuestRebuildBrill"/> class.
     /// </summary>
     public QuestRebuildBrill(Rectangle questRect, LegendaryHero renault) : base(
-      "Rebuild Brill",
-      "Brill is the hometown of Renault, saving it would make him happy and motivated. It was one of the first town ravaged by the undead.",
+      "Brill",
+      "The desolated village of Brill was once the hometown of Renault Mograine. Though insignificant in the grand scheme of things, the Crusade cares for its members.",
       @"ReplaceableTextures\CommandButtons\BTNStromgardeFarm.blp")
     {
       Required = true;
@@ -42,7 +42,7 @@ namespace WarcraftLegacies.Source.Quests.Scarlet
 
     /// <inheritdoc/>
     protected override string RewardFlavour =>
-      "With Brill now rebuilt, Renault shines with a new vigour and motivation to save Lordaeron";
+      "Nobody had noticed, but until now Renault has been somewhat reserved in his actions. With his hometown now reclaimed, he shines with a new vigour.";
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
