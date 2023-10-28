@@ -120,8 +120,8 @@ namespace WarcraftLegacies.Source.Setup
       ArtifactManager.Register(CrownOfLordaeron);
 
       var tempArtifact = new Artifact(CreateItem(FourCC("klmm"), DummyX, DummyY)); //Killmaim
-      UnitAddAbility(preplacedUnitSystem.GetUnit(FourCC("H00E_1728")), Artifact.ArtifactHolderAbilId); //Ramzes the Horror
-      UnitAddItem(preplacedUnitSystem.GetUnit(FourCC("H00E")), tempArtifact.Item);
+      UnitAddAbility(preplacedUnitSystem.GetUnit(Constants.UNIT_H04R_RAMZES_THE_HORROR), Artifact.ArtifactHolderAbilId); //Ramzes the Horror
+      UnitAddItem(preplacedUnitSystem.GetUnit(Constants.UNIT_H04R_RAMZES_THE_HORROR), tempArtifact.Item);
       ArtifactManager.Register(tempArtifact);
 
       ScepterOfTheQueen = new Artifact(CreateItem(FourCC("I00I"), DummyX, DummyY));
@@ -168,7 +168,7 @@ namespace WarcraftLegacies.Source.Setup
 
       tempArtifact = new Artifact(CreateItem(FourCC("arsh"), DummyX, DummyY)); //Shroud of Nozdormuru
       UnitAddAbility(preplacedUnitSystem.GetUnit(Constants.UNIT_O06Z_OCCULUS_CREEP_CAVERNS), Artifact.ArtifactHolderAbilId);
-      UnitAddItem(preplacedUnitSystem.GetUnit(FourCC("O025")), tempArtifact.Item);
+      UnitAddItem(preplacedUnitSystem.GetUnit(Constants.UNIT_O06Z_OCCULUS_CREEP_CAVERNS), tempArtifact.Item);
       ArtifactManager.Register(tempArtifact);
 
       HornOfCenarius = new Artifact(CreateItem(FourCC("cnhn"), DummyX, DummyY));
