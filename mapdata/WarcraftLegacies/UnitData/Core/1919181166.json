@@ -15,11 +15,11 @@
     },
     {
       "Id": 1633837685,
-      "Value": 10
+      "Value": 49
     },
     {
       "Id": 1769169525,
-      "Value": 4
+      "Value": 2
     },
     {
       "Id": 1664180597,
@@ -51,6 +51,10 @@
       "Id": 1731289461,
       "Type": 3,
       "Value": "debris,ground,item,nonancient,structure,ward"
+    },
+    {
+      "Id": 1986358389,
+      "Value": 9
     }
   ]
 }
