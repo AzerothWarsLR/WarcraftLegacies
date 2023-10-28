@@ -21,8 +21,8 @@ namespace WarcraftLegacies.Source.Quests.Scarlet
     /// Initializes a new instance of the <see cref="QuestRebuildStratholme"/> class.
     /// </summary>
     public QuestRebuildStratholme(Rectangle questRect, LegendaryHero saiden) : base(
-      "Reclaiming Stratholme",
-      "Saiden was the lord of Satratholme before the plague. He now wants to reconquer it, rebuild it and re-establish it's old glory",
+      "Stratholme",
+      "Before the Plague wiped out Stratholme, Saiden had established himself there as Lord Commander of the Silver Hand. This once-glorious city must be reclaimed.",
       @"ReplaceableTextures\CommandButtons\BTNStromgardeCastle.blp")
     {
       Required = true;
@@ -44,7 +44,7 @@ namespace WarcraftLegacies.Source.Quests.Scarlet
 
     /// <inheritdoc/>
     protected override string RewardFlavour =>
-      "Saiden, the new Lord of Stratholme, has managed to regain, purge and rebuild the once mighty city of Stratholme.";
+      "The city of Stratholme once more stands as a bastion of human civilization. Though still a mere shadow of its former glory, it will reclaim its majesty in time.";
 
     /// <inheritdoc/>
     protected override string RewardDescription =>

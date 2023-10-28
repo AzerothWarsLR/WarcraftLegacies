@@ -1,4 +1,4 @@
-﻿using MacroTools.DummyCasters;
+﻿using MacroTools;
 using MacroTools.PassiveAbilities;
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.Spells;
@@ -66,38 +66,6 @@ namespace WarcraftLegacies.Source.Setup.Spells
       {
         DeathEffectPath = @"Objects\Spawnmodels\Undead\UDeathSmall\UDeathSmall.mdl"
       });
-      
-      SpellSystem.Register(new Reap(Constants.ABILITY_ZB02_REAP_UNDEAD_ARTHAS)
-      {
-        UnitsSlain = new ()
-        {
-          Base = 1,
-          PerLevel = 2
-        },
-        StrengthPerUnit = new()
-        {
-          Base = 5
-        },
-        Radius = new()
-        {
-          Base = 500
-        },
-        Duration = 30,
-        KillEffect = @"Objects\Spawnmodels\Undead\UndeadDissipate\UndeadDissipate.mdl",
-        BuffEffect = @"Abilities\Spells\Items\AIso\BIsvTarget.mdl"
-      });
-
-      var massDeathCoil = new MassAnySpell(Constants.ABILITY_ZB06_MASS_DEATH_COIL_ARTHAS)
-      {
-        DummyAbilityId = Constants.ABILITY_ZB05_MASS_DEATH_COIL_ARTHAS_DUMMY,
-        DummyAbilityOrderId = OrderId("deathcoil"),
-        Radius = 250,
-        CastFilter = CastFilters.IsTargetOrganicAndAlive,
-        TargetType = SpellTargetType.Point,
-        DummyCastOriginType = DummyCastOriginType.Caster,
-        DummyCasterType = DummyCasterType.AbilitySpecific
-      };
-      SpellSystem.Register(massDeathCoil);
 
       PassiveAbilityManager.Register(new CreateUnitOnDeath(Constants.UNIT_UGHO_GHOUL_SCOURGE)
       {
@@ -111,6 +79,70 @@ namespace WarcraftLegacies.Source.Setup.Spells
       {
         CorpseUnitTypeId = Constants.UNIT_UGHO_GHOUL_SCOURGE,
         CorpseCount = 1
+      });
+      
+      RegisterArthasSpells();
+    }
+
+    private static void RegisterArthasSpells()
+    {
+      SpellSystem.Register(new Reap(Constants.ABILITY_ZB02_REAP_UNDEAD_ARTHAS)
+      {
+        UnitsSlain = new()
+        {
+          Base = 1,
+          PerLevel = 2
+        },
+        StrengthPerUnit = new()
+        {
+          Base = 5
+        },
+        StrengthPerUnitUpgraded = new LeveledAbilityField<int>()
+        {
+          Base = 7
+        },
+        Radius = new()
+        {
+          Base = 500
+        },
+        Duration = 30,
+        UpgradeCondition = unit => GetUnitTypeId(unit) == Constants.UNIT_N023_LORD_OF_THE_SCOURGE_SCOURGE,
+        KillEffect = @"Objects\Spawnmodels\Undead\UndeadDissipate\UndeadDissipate.mdl",
+        BuffEffect = @"Abilities\Spells\Items\AIso\BIsvTarget.mdl",
+      });
+      
+      SpellSystem.Register(new MassDeathCoil(Constants.ABILITY_ZB06_MASS_DEATH_COIL_ARTHAS)
+      {
+        DummyAbilityId = Constants.ABILITY_ZB05_MASS_DEATH_COIL_ARTHAS_DUMMY,
+        DummyAbilityOrderId = OrderId("deathcoil"),
+        Radius = 250,
+        CasterHealPerTargetUpgraded = 25,
+        UpgradeCondition = unit => GetUnitTypeId(unit) == Constants.UNIT_N023_LORD_OF_THE_SCOURGE_SCOURGE
+      });
+      
+      SpellSystem.Register(new Apocalypse(Constants.ABILITY_A10N_APOCALYPSE_DEATH_KNIGHT_ARTHAS)
+      {
+        Range = 900,
+        Width = 700,
+        WidthUpgraded = 1000,
+        ProjectileVelocity = 250,
+        ProjectileRadius = 50,
+        ProjectileCount = 7,
+        ProjectileCountUpgraded = 9,
+        Damage = new LeveledAbilityField<int>
+        {
+          Base = 35,
+          PerLevel = 35
+        },
+        ProjectileModel = @"units\undead\HeroDeathKnight\HeroDeathKnight.mdl",
+        ProjectileScale = 0.7f,
+        EffectOnHitModel = @"Objects\Spawnmodels\Undead\UndeadDissipate\UndeadDissipate.mdl",
+        EffectOnHitScale = 0.7f,
+        EffectOnProjectileSpawn = @"Abilities\Spells\Items\AIil\AIilTarget.mdl",
+        EffectOnProjectileSpawnScale = 0.5f,
+        DummyAbilityId = Constants.ABILITY_A0YD_APOCALYPSE_DUMMY_CASTER,
+        DummyAbilityOrderId = OrderId("parasite"),
+        UpgradeCondition = unit => GetUnitTypeId(unit) == Constants.UNIT_N023_LORD_OF_THE_SCOURGE_SCOURGE
       });
     }
   }

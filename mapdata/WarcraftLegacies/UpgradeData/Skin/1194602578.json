@@ -37,13 +37,13 @@
       "Level": 1,
       "Id": 829453415,
       "Type": 3,
-      "Value": "Improved Carrion Swarm"
+      "Value": "Research Improved Carrion Swarm"
     },
     {
       "Level": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Improves Dreadlords\u0027 Carrion Swarm by increasing its damage to 95 and max damage to 850. Also reduces the cooldown."
+      "Value": "Improves Dreadlords\u0027 Carrion Swarm by increasing its damage to \u003CACca,DataA1\u003E and max damage to \u003CACca,DataB1\u003E, and reducing its cooldown to \u003CACca,Cool1\u003E seconds."
     },
     {
       "Level": 2,
@@ -55,19 +55,19 @@
       "Level": 2,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "Improved Greater Carrion Swarm"
+      "Value": "Superior Carrion Swarm"
     },
     {
       "Level": 2,
       "Id": 829453415,
       "Type": 3,
-      "Value": "Improved Greater Carrion Swarm"
+      "Value": "Research Superior Carrion Swarm"
     },
     {
       "Level": 2,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Improves Dreadlords\u0027 Carrion Swarm by increasing its damage to 105 and max damage to 100. Also reduces the cooldown."
+      "Value": "Improves Dreadlords\u0027 Carrion Swarm by increasing its damage to \u003CACca,DataA2\u003E and max damage to \u003CACca,DataB2\u003E, and reducing its cooldown to \u003CACca,Cool2\u003E seconds."
     },
     {
       "Level": 2,

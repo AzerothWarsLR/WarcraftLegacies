@@ -71,7 +71,7 @@
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "Instantly kills the lowest level nearby enemy units, granting Arthas 5 Strength for each unit slain for 30 seconds. |n|n|cffffcc00Level 1|r - Kills 3 units.|n|cffffcc00Level 2|r - Kills 5 units.|n|cffffcc00Level 3|r - Kills 7 units.|n|cffffcc00Level 4|r - Kills 9 units."
+      "Value": "Instantly kills the lowest level nearby non-Hero enemy units, granting the caster 5 Strength for each unit slain for 30 seconds. |n|n|cffffcc00Level 1|r - Kills 3 units.|n|cffffcc00Level 2|r - Kills 5 units.|n|cffffcc00Level 3|r - Kills 7 units.|n|cffffcc00Level 4|r - Kills 9 units."
     },
     {
       "Id": 1952543841,
@@ -106,25 +106,25 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Instantly kills the 3 lowest level nearby enemy units, granting Arthas 5 Strength for each unit slain for 30 seconds."
+      "Value": "Instantly kills the 3 lowest level non-Hero nearby enemy units, granting the caster 5 Strength for each unit slain for 30 seconds."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Instantly kills the 5 lowest level nearby enemy units, granting Arthas 5 Strength for each unit slain for 30 seconds."
+      "Value": "Instantly kills the 5 lowest level non-Hero nearby enemy units, granting the caster 5 Strength for each unit slain for 30 seconds."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Instantly kills the 7 lowest level nearby enemy units, granting Arthas 5 Strength for each unit slain for 30 seconds."
+      "Value": "Instantly kills the 7 lowest level non-Hero nearby enemy units, granting the caster 5 Strength for each unit slain for 30 seconds."
     },
     {
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Instantly kills the 9 lowest level nearby enemy units, granting Arthas 5 Strength for each unit slain for 30 seconds."
+      "Value": "Instantly kills the 9 lowest level non-Hero nearby enemy units, granting the caster 5 Strength for each unit slain for 30 seconds."
     },
     {
       "Id": 2020631137,

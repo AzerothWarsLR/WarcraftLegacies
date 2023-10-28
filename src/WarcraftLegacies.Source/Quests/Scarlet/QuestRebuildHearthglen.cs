@@ -18,8 +18,8 @@ namespace WarcraftLegacies.Source.Quests.Scarlet
     /// Initializes a new instance of the <see cref="QuestRebuildHearthglen"/> class.
     /// </summary>
     public QuestRebuildHearthglen(Rectangle questRect, Capital monastery) : base(
-      "Rebuild Hearthglen",
-      "Heartglen and the Scarlet Monastery are holy ground for the Scarlet Crusade, it is primordial to capture them",
+      "Hearthglen",
+      "Though the town of Hearthglen fell to the Scourge just as easily as any other, the Silver Hand Monastery there makes it a key strategic objective for the Scarlet Crusade.",
       @"ReplaceableTextures\CommandButtons\BTNAlteracWizardTower.blp")
     {
       Required = true;
@@ -33,7 +33,7 @@ namespace WarcraftLegacies.Source.Quests.Scarlet
 
     /// <inheritdoc/>
     protected override string RewardFlavour =>
-      "With the Monastery under the Scarlet control, Sally Whitemane can start training a new generation of Scarlet adepts.";
+      "With the Monastery under Scarlet control, Sally Whitemane can be brought into the fold of the Crusade's leadership in earnest.";
 
     /// <inheritdoc/>
     protected override string RewardDescription =>

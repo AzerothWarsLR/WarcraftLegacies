@@ -1,0 +1,39 @@
+{
+  "OldId": 1819500866,
+  "NewId": 875712596,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1885959270,
+      "Type": 3,
+      "Value": "Thorned Vines"
+    },
+    {
+      "Id": 1700951398,
+      "Type": 3,
+      "Value": "This unit is protected by Thorned Vines; its hitpoint regeneration is increased."
+    },
+    {
+      "Id": 1952543846,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1953653094,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNInvadingVines.blp"
+    },
+    {
+      "Id": 1835101798,
+      "Type": 3,
+      "Value": "Thorned Vines"
+    },
+    {
+      "Id": 1718840934,
+      "Type": 3,
+      "Value": " (Regen Aura)"
+    }
+  ]
+}

@@ -28,8 +28,8 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
     /// Initializes a new instance of the <see cref="QuestScarletCrusade"/> class.
     /// </summary>
     public QuestScarletCrusade(Rectangle rescueRect, Capital tyrsHand, LegendaryHero saiden, Faction scarletCrusade, QuestData fortifiedCity) :
-      base("All is Lost",
-        "Lordaeron has been lost to the plague, but the Scarlet Crusade has taken a vow of vengeance to retake the lands and purge the undead.",
+      base("The Scarlet Crusade",
+        "Lordaeron is destined to fall to the Scourge. Should such an event come to pass, the Silver Hand will be transformed beyond recognition, abandoning ideals of justice in favour of those of vengeance.",
         @"ReplaceableTextures\CommandButtons\BTNDivine_Reckoning_Icon.blp")
     {
       if (tyrsHand.Unit == null)
@@ -42,15 +42,16 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
       _tyrsHand = tyrsHand.Unit;
       _saiden = saiden;
       _scarletCrusade = scarletCrusade;
+      Global = true;
     }
 
     /// <inheritdoc/>
     protected override string RewardFlavour =>
-      "Lordaeron abandons all hope, but the Scarlet Crusade begins their quest to reclaim Lordaeron and purge the Undead.";
+      "Lordaeron has been destroyed by the vile Scourge, leaving those left alive with naught but vengeance in their hearts. From the ashes rises the Scarlet Crusade, the untempered bright that will bring to the undying dead the wrath of the living.";
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
-      "All of Lordaeron forces will go hostile, Tyr Hand will be emptied of neutral hostile units and you will spawn with an army and a base in Tyr's Hand.";
+      "Your forces turn hostile, Tyr's Hand, then you restart the game as the Scarlet Crusade in Tyr's Hand";
 
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)

@@ -18,6 +18,9 @@ namespace WarcraftLegacies.Source.Spells
 
     /// <summary>Strength gained per unit slain.</summary>
     public LeveledAbilityField<int> StrengthPerUnit { get; init; } = new();
+    
+    /// <summary>Strength gained per unit slain.</summary>
+    public LeveledAbilityField<int> StrengthPerUnitUpgraded { get; init; } = new();
 
     /// <summary>How far away units can be slain.</summary>
     public LeveledAbilityField<float> Radius { get; init; } = new();
@@ -30,6 +33,9 @@ namespace WarcraftLegacies.Source.Spells
     
     /// <summary>How long the Strength buff lasts.</summary>
     public float Duration { get; init; }
+
+    /// <summary>A caster matching this condition is considered to have the upgraded version of the spell.</summary>
+    public Func<unit, bool> UpgradeCondition { get; init; } = _ => false;
     
     /// <inheritdoc />
     public Reap(int id) : base(id)
@@ -64,7 +70,9 @@ namespace WarcraftLegacies.Source.Spells
             .SetLifespan();
         }
 
-        var strengthGainPerTarget = StrengthPerUnit.Base + StrengthPerUnit.PerLevel * abilityLevel;
+        var strengthGainPerTarget = UpgradeCondition(caster)
+          ? StrengthPerUnitUpgraded.Base + StrengthPerUnitUpgraded.PerLevel * abilityLevel
+          : StrengthPerUnit.Base + StrengthPerUnit.PerLevel * abilityLevel;
 
         BuffSystem.Add(new ReapBuff(caster, BuffEffect)
         {
@@ -81,10 +89,12 @@ namespace WarcraftLegacies.Source.Spells
     }
 
     private static bool IsValidTarget(unit target, unit caster) =>
-      UnitAlive(target) &&
-      !IsUnitType(target, UNIT_TYPE_HERO) && !IsUnitType(target, UNIT_TYPE_STRUCTURE) &&
-      !IsUnitType(target, UNIT_TYPE_ANCIENT) && !IsUnitType(target, UNIT_TYPE_MECHANICAL) &&
-      !IsUnitType(target, UNIT_TYPE_MAGIC_IMMUNE) &&
+      UnitAlive(target) && 
+      !target.IsResistant() && 
+      !IsUnitType(target, UNIT_TYPE_STRUCTURE) &&
+      !IsUnitType(target, UNIT_TYPE_ANCIENT) && 
+      !IsUnitType(target, UNIT_TYPE_MECHANICAL) &&
+      !IsUnitType(target, UNIT_TYPE_MAGIC_IMMUNE) && 
       !IsPlayerAlly(caster.OwningPlayer(), target.OwningPlayer());
   }
 }
