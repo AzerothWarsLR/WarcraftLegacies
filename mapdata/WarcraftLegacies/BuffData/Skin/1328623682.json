@@ -1,0 +1,24 @@
+{
+  "OldId": 1802981186,
+  "NewId": 1328623682,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1885959270,
+      "Type": 3,
+      "Value": "Vanish"
+    },
+    {
+      "Id": 1953653094,
+      "Type": 3,
+      "Value": "ReplaceableTextures/CommandButtons/BTNAbility_Vanish.blp"
+    },
+    {
+      "Id": 1700951398,
+      "Type": 3,
+      "Value": "This unit is Vanished; it is invisible and the first attack it makes while invisible will deal bonus damage."
+    }
+  ]
+}
