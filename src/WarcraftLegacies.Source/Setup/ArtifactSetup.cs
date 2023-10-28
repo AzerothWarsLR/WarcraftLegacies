@@ -149,7 +149,7 @@ namespace WarcraftLegacies.Source.Setup
       ArtifactManager.Register(ObsidianFragment);
 
       RubyFragment = new Artifact(CreateItem(Constants.ITEM_I01J_RUBY_FRAGMENT, DummyX, DummyY));
-      UnitAddAbility(preplacedUnitSystem.GetUnit(Constants.UNIT_O06W_JIN_DO_CREEP_ZUL_GURUB),Artifact.ArtifactHolderAbilId); //Jin)do
+      UnitAddAbility(preplacedUnitSystem.GetUnit(Constants.UNIT_O06W_JIN_DO_CREEP_ZUL_GURUB),Artifact.ArtifactHolderAbilId);
       UnitAddItem(preplacedUnitSystem.GetUnit(Constants.UNIT_O06W_JIN_DO_CREEP_ZUL_GURUB), RubyFragment.Item);
       ArtifactManager.Register(RubyFragment);
 
@@ -167,7 +167,7 @@ namespace WarcraftLegacies.Source.Setup
       ArtifactManager.Register(EmeraldFragment);
 
       tempArtifact = new Artifact(CreateItem(FourCC("arsh"), DummyX, DummyY)); //Shroud of Nozdormuru
-      UnitAddAbility(preplacedUnitSystem.GetUnit(Constants.UNIT_O06Z_OCCULUS_CREEP_CAVERNS), Artifact.ArtifactHolderAbilId); //Occulus
+      UnitAddAbility(preplacedUnitSystem.GetUnit(Constants.UNIT_O06Z_OCCULUS_CREEP_CAVERNS), Artifact.ArtifactHolderAbilId);
       UnitAddItem(preplacedUnitSystem.GetUnit(FourCC("O025")), tempArtifact.Item);
       ArtifactManager.Register(tempArtifact);
 
