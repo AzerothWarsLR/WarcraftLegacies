@@ -124,7 +124,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
       {
         Range = 900,
         Width = 700,
-        WidthUpgraded = 900,
+        WidthUpgraded = 1000,
         ProjectileVelocity = 250,
         ProjectileRadius = 50,
         ProjectileCount = 7,
