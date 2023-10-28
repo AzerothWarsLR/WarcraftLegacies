@@ -19,7 +19,7 @@ namespace WarcraftLegacies.Source.Quests.Scarlet
     /// </summary>
     public QuestRebuildHearthglen(Rectangle questRect, Capital monastery) : base(
       "Hearthglen",
-      "Though the town of Hearthglen fell to the Scourge just as easily as any other the Silver Hand Monastery there makes it a key strategic objective for the Scarlet Crusade.",
+      "Though the town of Hearthglen fell to the Scourge just as easily as any other, the Silver Hand Monastery there makes it a key strategic objective for the Scarlet Crusade.",
       @"ReplaceableTextures\CommandButtons\BTNAlteracWizardTower.blp")
     {
       Required = true;
