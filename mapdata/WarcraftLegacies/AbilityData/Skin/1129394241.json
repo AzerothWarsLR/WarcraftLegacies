@@ -35,7 +35,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Slams the ground, dealing 65 damage to nearby enemy land units and slowing their movement by \u003CS00H,DataA1,%\u003E% and attack rate by \u003CS00H,DataB1,%\u003E%. Lasts \u003CS00H,Dur1\u003E seconds against units and \u003CS00H,HeroDur1\u003E seconds against heroes. "
+      "Value": "Slams the ground, dealing 85 damage to nearby enemy land units and slowing their movement by \u003CS00H,DataA1,%\u003E% and attack rate by \u003CS00H,DataB1,%\u003E%. Lasts \u003CS00H,Dur1\u003E seconds against units and \u003CS00H,HeroDur1\u003E seconds against heroes. "
     }
   ]
 }
