@@ -27,10 +27,10 @@ namespace WarcraftLegacies.Source.Quests.Scarlet
     {
       Required = true;
       AddObjective(new ObjectiveBuildInRect(questRect, "in Stratholme", Constants.UNIT_H0BM_TOWN_HALL_CRUSADE_T1));
-      AddObjective(new ObjectiveBuildInRect(questRect, "in Stratholme", Constants.UNIT_H0BP_HOUSEHOLD_CRUSADE_FARM, 6));
+      AddObjective(new ObjectiveBuildInRect(questRect, "in Stratholme", Constants.UNIT_H0BP_FARMSTEAD_CRUSADE_FARM, 6));
       AddObjective(new ObjectiveBuildInRect(questRect, "in Stratholme", Constants.UNIT_H0AG_HALL_OF_SWORDS_CRUSADE_BARRACKS, 2));
       AddObjective(new ObjectiveBuildInRect(questRect, "in Stratholme", Constants.UNIT_H09X_SHIPYARD_CRUSADE_SHIPYARD));
-      AddObjective(new ObjectiveBuildInRect(questRect, "in Stratholme", Constants.UNIT_N0D8_TRADE_HOUSE_CRUSADE_SHOP));
+      AddObjective(new ObjectiveBuildInRect(questRect, "in Stratholme", Constants.UNIT_N0D8_VENDOR_HALL_CRUSADE_SHOP));
       AddObjective(new ObjectiveControlLevel(
         ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N01M_STRATHOLME), 4));
       _saiden = saiden;

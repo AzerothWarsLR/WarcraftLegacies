@@ -10,6 +10,7 @@ using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using System.Linq;
 using MacroTools.Libraries;
 using static MacroTools.Libraries.GeneralHelpers;
+using MacroTools.ObjectiveSystem.Objectives.QuestBased;
 
 namespace WarcraftLegacies.Source.Quests.Lordaeron
 {
@@ -26,7 +27,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestScarletCrusade"/> class.
     /// </summary>
-    public QuestScarletCrusade(Rectangle rescueRect, Capital tyrsHand, LegendaryHero saiden, Faction scarletCrusade) :
+    public QuestScarletCrusade(Rectangle rescueRect, Capital tyrsHand, LegendaryHero saiden, Faction scarletCrusade, QuestData fortifiedCity) :
       base("All is Lost",
         "Lordaeron has been lost to the plague, but the Scarlet Crusade has taken a vow of vengeance to retake the lands and purge the undead.",
         @"ReplaceableTextures\CommandButtons\BTNDivine_Reckoning_Icon.blp")
@@ -34,8 +35,9 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
       if (tyrsHand.Unit == null)
         throw new ArgumentException($"Expected {nameof(tyrsHand)} to have a non-null {tyrsHand.Unit} property.", nameof(tyrsHand));
       
-      AddObjective(new ObjectiveResearch(Constants.UPGRADE_R0XZ_ALL_IS_LOST_LORDAERON_SCARLET,
+      AddObjective(new ObjectiveResearch(Constants.UPGRADE_R0XZ_THE_SCARLET_CRUSADE_LORDAERON_SCARLET,
         Constants.UNIT_H030_TYR_S_HAND_CITADEL_LORDAERON_OTHER));
+      AddObjective(new ObjectiveQuestComplete(fortifiedCity));
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
       _tyrsHand = tyrsHand.Unit;
       _saiden = saiden;
@@ -114,18 +116,18 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
       CreateStructureForced(whichPlayer, Constants.UNIT_H0BL_ROOKERY_CRUSADE_BEAST, 21216, 8400,
         4.712389f * MathEx.DegToRad, 256);
 
-      CreateStructureForced(whichPlayer, Constants.UNIT_N0D8_TRADE_HOUSE_CRUSADE_SHOP, 20352, 8650,
+      CreateStructureForced(whichPlayer, Constants.UNIT_N0D8_VENDOR_HALL_CRUSADE_SHOP, 20352, 8650,
         4.712389f * MathEx.DegToRad, 256);
       CreateStructureForced(whichPlayer, Constants.UNIT_H0A3_BLACKSMITH_CRUSADE_RESEARCH, 21218, 9000,
         4.712389f * MathEx.DegToRad, 256);
       CreateStructureForced(whichPlayer, Constants.UNIT_H0BQ_ALTAR_OF_CRUSADERS_CRUSADE_ALTAR, 21724, 9180,
         4.712389f * MathEx.DegToRad, 256);
 
-      CreateStructureForced(whichPlayer, Constants.UNIT_H0BP_HOUSEHOLD_CRUSADE_FARM, 19705, 8324,
+      CreateStructureForced(whichPlayer, Constants.UNIT_H0BP_FARMSTEAD_CRUSADE_FARM, 19705, 8324,
         4.712389f * MathEx.DegToRad, 256);
-      CreateStructureForced(whichPlayer, Constants.UNIT_H0BP_HOUSEHOLD_CRUSADE_FARM, 20871, 7300,
+      CreateStructureForced(whichPlayer, Constants.UNIT_H0BP_FARMSTEAD_CRUSADE_FARM, 20871, 7300,
         4.712389f * MathEx.DegToRad, 256);
-      CreateStructureForced(whichPlayer, Constants.UNIT_H0BP_HOUSEHOLD_CRUSADE_FARM, 20917, 8193,
+      CreateStructureForced(whichPlayer, Constants.UNIT_H0BP_FARMSTEAD_CRUSADE_FARM, 20917, 8193,
         4.712389f * MathEx.DegToRad, 256);
       
       if (GetLocalPlayer() == whichPlayer)

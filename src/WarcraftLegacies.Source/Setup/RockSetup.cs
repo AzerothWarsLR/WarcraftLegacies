@@ -44,6 +44,8 @@ namespace WarcraftLegacies.Source.Setup
       RockSystem.Register(new RockGroup(Regions.NorthrendRock3, RockChunkId, 360));
       RockSystem.Register(new RockGroup(Regions.NorthrendRock4, RockChunkId, 360));
 
+      //Bridge Rocks
+      RockSystem.Register(new RockGroup(Regions.BridgeAmbient, RockChunkId, 1800));
     }
   }
 }

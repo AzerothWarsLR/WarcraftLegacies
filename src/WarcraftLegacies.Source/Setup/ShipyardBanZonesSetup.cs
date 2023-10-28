@@ -9,7 +9,6 @@ namespace WarcraftLegacies.Source.Setup
       ShipyardBanZones.Setup(new[]
       {
         Regions.CaerDarrowShipyard,
-        Regions.Arathi_Ships,
         Regions.Auberdine_Ships,
         Regions.Kali_Ships,
         Regions.Dustwallow_Ships,
