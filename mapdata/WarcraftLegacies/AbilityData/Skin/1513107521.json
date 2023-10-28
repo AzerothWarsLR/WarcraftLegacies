@@ -18,12 +18,12 @@
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "X"
+      "Value": "D"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "Lich King Spellbook"
+      "Value": "Power of the Lich King"
     },
     {
       "Level": 1,
@@ -32,12 +32,14 @@
       "Value": "Power of the Lich King"
     },
     {
-      "Id": 2037408353,
+      "Id": 2020631137,
       "Value": 1
     },
     {
-      "Id": 2020631137,
-      "Value": 2
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "The Lich King\u0027s immense power provides access to additional abilities."
     }
   ]
 }

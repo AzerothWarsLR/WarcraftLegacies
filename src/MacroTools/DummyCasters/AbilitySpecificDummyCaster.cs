@@ -1,4 +1,5 @@
-﻿using MacroTools.Extensions;
+﻿using System.Collections.Generic;
+using MacroTools.Extensions;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
@@ -86,6 +87,16 @@ namespace MacroTools.DummyCasters
       {
         CastUnit(caster, level, target, originType);
       }
+    }
+    
+    /// <summary>
+    /// Causes the specified spell to be cast on all units in a group.
+    /// </summary>
+    public void CastOnTargets(unit caster, int level, IEnumerable<unit> targets,
+      DummyCastOriginType originType)
+    {
+      foreach (var target in targets) 
+        CastUnit(caster, level, target, originType);
     }
   }
 }
