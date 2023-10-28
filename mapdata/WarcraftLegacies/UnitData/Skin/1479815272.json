@@ -63,6 +63,11 @@
       "Id": 1831952757,
       "Type": 3,
       "Value": "Abilities\\Weapons\\MoonPriestessMissile\\MoonPriestessMissile.mdl"
+    },
+    {
+      "Id": 1635083125,
+      "Type": 3,
+      "Value": "war3mapImported\\UPG_0.blp"
     }
   ]
 }
