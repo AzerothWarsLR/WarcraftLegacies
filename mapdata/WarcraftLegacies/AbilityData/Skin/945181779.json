@@ -1,0 +1,59 @@
+{
+  "OldId": 1885623617,
+  "NewId": 945181779,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Kills a target friendly Undead unit, giving a percentage of its hit points to the Death Knight. |n|n|cffffcc00Level 1|r - \u003CSTV8,DataB1,%\u003E% conversion. |n|cffffcc00Level 2|r - \u003CSTV8,DataB2,%\u003E% conversion. |n|cffffcc00Level 3|r - \u003CSTV8,DataB3,%\u003E% conversion. |n|cffffcc00Level 4|r - \u003CSTV8,DataB4,%\u003E% conversion."
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Death Pact - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Kills a target friendly Undead unit, giving \u003CSTV8,DataB1,%\u003E% of its hit points to the Death Knight."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Kills a target friendly Undead unit, giving \u003CSTV8,DataB2,%\u003E% of its hit points to the Death Knight."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Kills a target friendly Undead unit, giving \u003CSTV8,DataB3,%\u003E% of its hit points to the Death Knight."
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Kills a target friendly Undead unit, giving \u003CSTV8,DataB4,%\u003E% of its hit points to the Death Knight."
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(rivendare)"
+    }
+  ]
+}

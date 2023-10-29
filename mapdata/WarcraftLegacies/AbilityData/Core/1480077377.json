@@ -9,7 +9,7 @@
       "Level": 1,
       "Id": 1701994849,
       "Type": 2,
-      "Value": 600
+      "Value": 700
     },
     {
       "Level": 2,
@@ -58,7 +58,7 @@
       "Pointer": 1,
       "Id": 828662088,
       "Type": 2,
-      "Value": -1.5
+      "Value": -6
     },
     {
       "Level": 2,
@@ -95,7 +95,7 @@
     },
     {
       "Id": 1986358369,
-      "Value": 4
+      "Value": 1
     },
     {
       "Id": 1667330657,
@@ -125,6 +125,10 @@
       "Id": 1918989409,
       "Type": 3,
       "Value": "air,enemies,ground,invulnerable,vulnerable"
+    },
+    {
+      "Id": 1919248481,
+      "Value": 0
     }
   ]
 }

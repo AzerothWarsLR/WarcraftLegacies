@@ -1,0 +1,87 @@
+{
+  "OldId": 1986348353,
+  "NewId": 842355795,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(scourge)"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Rivendare raise skeletal minions every time he casts a spell. They last 45 seconds.|n|n|cffffcc00Level 1|r - 1 minion|n|cffffcc00Level 2|r - 2 minion|n|cffffcc00Level 3|r - 3 minion|n|cffffcc00Level 4|r - 4 minion"
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Army of the Dead- [|cffffcc00Level 4|r]"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASBTNWC1RaiseDeadRemastered.blp"
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNWC1RaiseDeadRemastered.blp"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Army of the Dead - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Army of the Dead- [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Army of the Dead- [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Army of the Dead- [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Summon 1 Dark Minion every time the hero casts a spell. Lasts 45 seconds."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Summon 2 Dark Minion every time the hero casts a spell. Lasts 45 seconds."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Summon 3 Dark Minion every time the hero casts a spell. Lasts 45 seconds."
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Army of the Dead"
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Summon 4 Dark Minion every time the hero casts a spell. Lasts 45 seconds."
+    }
+  ]
+}
