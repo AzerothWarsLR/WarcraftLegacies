@@ -1,0 +1,24 @@
+{
+  "OldId": 1902734402,
+  "NewId": 1328623682,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1835101798,
+      "Type": 3,
+      "Value": "Burning Arrow"
+    },
+    {
+      "Id": 1952543846,
+      "Type": 3,
+      "Value": "Environment\\UndeadBuildingFire\\UndeadLargeBuildingFire2.mdl"
+    },
+    {
+      "Id": 1953653094,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASFlameArrowShower.blp"
+    }
+  ]
+}
