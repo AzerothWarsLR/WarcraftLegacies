@@ -27,7 +27,7 @@ namespace MacroTools.Spells
 
       var addSpellonCastBuff = new AddSpellonCastBuff(caster, caster)
       {
-        Duration = DurationBase + DurationLevel * GetAbilityLevel(caster),
+        Duration = Duration.Base + Duration.Level * GetAbilityLevel(caster),
         AbilitiesToAdd = AbilitiesToAdd
       };
       BuffSystem.Add(addSpellonCastBuff);
