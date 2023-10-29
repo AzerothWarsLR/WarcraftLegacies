@@ -24,7 +24,7 @@ namespace WarcraftLegacies.Source.Quests.Gilneas
 
     /// <inheritdoc/>
     protected override string RewardFlavour =>
-      "With the threat of the Scourge and the Plague, Genn Greymane has decided to pardon Darius Crowley for the Northgate rebellion so that he can help Gilneas in their dire times.";
+      "Facing the looming threat of the Scourge and its horrific Plague, Genn Greymane has decided to pardon Darius Crowley for the Northgate rebellion so that he can assist in Gilneas' defense.";
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
