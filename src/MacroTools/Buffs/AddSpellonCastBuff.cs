@@ -13,7 +13,6 @@ namespace MacroTools.Buffs
       if (AbilitiesToAdd != null)
         foreach (var ability in AbilitiesToAdd)
         {
-          SetPlayerAbilityAvailable(GetOwningPlayer(Caster), ability, true);
           UnitAddAbility(Caster, ability);
 
         }
@@ -24,7 +23,6 @@ namespace MacroTools.Buffs
       if (AbilitiesToAdd != null)
         foreach (var ability in AbilitiesToAdd)
         {
-          SetPlayerAbilityAvailable(GetOwningPlayer(Caster), ability, false);
           UnitRemoveAbility(Caster, ability);
         }
     }
