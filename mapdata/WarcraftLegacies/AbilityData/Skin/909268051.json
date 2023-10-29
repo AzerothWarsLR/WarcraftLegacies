@@ -41,7 +41,7 @@
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "The hero\u0027s expertise enables him to fire multiple projectils when attacking his enemies. |n|n|cffffcc00Level 1|r - Enables the fire of 2 projectiles at once.|n|cffffcc00Level 2|r - Enables the fire of 3 projectiles at once.|n|cffffcc00Level 3|r - Enables the fire of 4 projectiles at once.|n|cffffcc00Level 3|r - Enables the fire of 5 projectiles at once."
+      "Value": "This hero's attacks fire multiple projectiles at different enemies. |n|n|cffffcc00Level 1|r - Attacks fire 1 additional projectile.|n|cffffcc00Level 2|r - Attacks fire 2 additional projectiles.|n|cffffcc00Level 3|r - Attacks fire 3 additional projectiles.|n|cffffcc00Level 4|r - Attacks fire 4 additional projectiles."
     },
     {
       "Level": 1,
