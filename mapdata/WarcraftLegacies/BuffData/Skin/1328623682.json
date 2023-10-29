@@ -8,7 +8,7 @@
     {
       "Id": 1885959270,
       "Type": 3,
-      "Value": "Vanish"
+      "Value": "|cff00ff00Vanish|r"
     },
     {
       "Id": 1953653094,
@@ -19,6 +19,11 @@
       "Id": 1700951398,
       "Type": 3,
       "Value": "This unit is Vanished; it is invisible and has bonus damage. The invisibility will not break if the hero attacks or casts a spell."
+    },
+    {
+      "Id": 1835101798,
+      "Type": 3,
+      "Value": "Vanish"
     }
   ]
 }
