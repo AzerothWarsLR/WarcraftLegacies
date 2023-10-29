@@ -41,7 +41,7 @@
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "The hero vanishes, becoming invisible and gains 20 bonus damage. The invisibility will not dissipate even if the hero attacks or casts spells.|n|n|cffffcc00Level 1|r - 10 seconds duration|n|cffffcc00Level 2|r - 15 seconds duration|n|cffffcc00Level 3|r - 20 seconds duration"
+      "Value": "The hero vanishes, becoming invisible and gaining 20 bonus damage. The invisibility will not dissipate even if the hero attacks or casts spells.|n|n|cffffcc00Level 1|r - Lasts 10 seconds.|n|cffffcc00Level 2|r - Lasts 15 seconds.|n|cffffcc00Level 3|r - Lasts 20 seconds."
     },
     {
       "Level": 1,
