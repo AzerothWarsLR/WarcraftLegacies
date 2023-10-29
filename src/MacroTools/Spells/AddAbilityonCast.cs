@@ -14,7 +14,6 @@ namespace MacroTools.Spells
   public sealed class AddAbilityOnCast : Spell
   {
     public LeveledAbilityField<float> Duration { get; init; } = new();
-    public float DurationLevel { get; init; }
     public int BuffApplicatorID { get; init; }
     public int BuffID { get; init; }
     public IEnumerable<int>? AbilitiesToAdd { get; init; }
