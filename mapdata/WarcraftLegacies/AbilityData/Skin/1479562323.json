@@ -33,7 +33,7 @@
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "Calls a Divine Hammer down from the sky, dealing damage and stunning enemy land units in an area.   |n|n|cffffcc00Level 1|r - \u003CST0X,DataA1\u003E damage and stunning enemy land units for \u003CST0X,Dur1\u003E seconds.|n|cffffcc00Level 2|r -  \u003CST0X,DataA2\u003E damage and stunning enemy land units for \u003CST0X,Dur2\u003E seconds  |n|cffffcc00Level 3|r -  \u003CST0X,DataA3\u003E damage and stunning enemy land units for \u003CST0X,Dur3\u003E seconds"
+      "Value": "Calls a Divine Hammer down from the sky, dealing damage and stunning enemy land units in an area.   |n|n|cffffcc00Level 1|r - \u003CST0X,DataA1\u003E damage and stunning enemy land units for \u003CST0X,Dur1\u003E seconds.|n|cffffcc00Level 2|r -  \u003CST0X,DataA2\u003E damage and stunning enemy land units for \u003CST0X,Dur2\u003E seconds. |n|cffffcc00Level 3|r -  \u003CST0X,DataA3\u003E damage and stunning enemy land units for \u003CST0X,Dur3\u003E seconds."
     },
     {
       "Level": 1,
