@@ -15,7 +15,7 @@ namespace WarcraftLegacies.Source.Quests.Gilneas
     /// IniInitializes a new instance of the <see cref="QuestCrowley"/> class.
     /// </summary>
     public QuestCrowley() : base("The Rebel",
-      "Darius Crowley has been imprisoned since the Northgate rebellion, if Gilneas were to be in grave peril an early release might be the solution.",
+      "Darius Crowley has been imprisoned since the Northgate rebellion. If Gilneas were to fall into grave peril, an early release might be necessary.",
       @"ReplaceableTextures/CommandButtons/BTNWorgenHunt.blp")
     {
       AddObjective(new ObjectiveTime(900));
