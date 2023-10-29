@@ -22,7 +22,7 @@ namespace WarcraftLegacies.Source.Quests.Scarlet
       AddObjective(new ObjectiveQuestComplete(hearthglen));
       AddObjective(new ObjectiveQuestComplete(brill));
       AddObjective(new ObjectiveQuestComplete(andorhal));
-      ResearchId = Constants.UPGRADE_R09A_QUEST_COMPLETED_THE_DIMENSIONAL_SHIP; //TODO create research according to new title picked by writting team
+      ResearchId = Constants.UPGRADE_R02A_QUEST_COMPLETED_A_ONCE_GREAT_PEOPLE;
       Global = true;
     }
 

@@ -24,11 +24,11 @@ namespace WarcraftLegacies.Source.Quests.Scarlet
     {
       Required = true;
       AddObjective(new ObjectiveBuildInRect(questRect, "in Hearthglen", Constants.UNIT_H0BM_TOWN_HALL_CRUSADE_T1));
-      AddObjective(new ObjectiveBuildInRect(questRect, "in Hearthglen", Constants.UNIT_H0BP_HOUSEHOLD_CRUSADE_FARM, 3));
+      AddObjective(new ObjectiveBuildInRect(questRect, "in Hearthglen", Constants.UNIT_H0BP_FARMSTEAD_CRUSADE_FARM, 3));
       AddObjective(new ObjectiveBuildInRect(questRect, "in Hearthglen", Constants.UNIT_H0AG_HALL_OF_SWORDS_CRUSADE_BARRACKS));
       AddObjective(new ObjectiveControlCapital(monastery, false));
       AddObjective(new ObjectiveControlLevel(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N044_HEARTHGLEN), 2));
-      ResearchId = Constants.UPGRADE_R09A_QUEST_COMPLETED_THE_DIMENSIONAL_SHIP; //TODO new research with better title by the writters
+      ResearchId = Constants.UPGRADE_R026_QUEST_COMPLETED_HEARTHGLEN;
     }
 
     /// <inheritdoc/>
