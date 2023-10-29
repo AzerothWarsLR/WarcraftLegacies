@@ -13,7 +13,7 @@ namespace MacroTools.Spells
   /// </summary>
   public sealed class AddAbilityOnCast : Spell
   {
-    public float DurationBase { get; init; }
+    public LeveledAbilityProperty<float> Duration { get; init; } = new();
     public float DurationLevel { get; init; }
     
     public IEnumerable<int>? AbilitiesToAdd { get; init; }
