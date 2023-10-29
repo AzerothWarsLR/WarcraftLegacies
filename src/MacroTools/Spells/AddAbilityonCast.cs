@@ -11,7 +11,7 @@ namespace MacroTools.Spells
   /// <summary>
   /// add specific abilities to the caster for a limited duration.
   /// </summary>
-  public sealed class AddAbilityonCast : Spell
+  public sealed class AddAbilityOnCast : Spell
   {
     public float DurationBase { get; init; }
     public float DurationLevel { get; init; }
