@@ -68,7 +68,7 @@
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Resets the caster\u0027s ability cooldowns, but reduces their life regeneration rate by 10000% for 1 second.|n|cff99b4d1140 second cooldown|r"
+      "Value": "Resets the caster\u0027s ability cooldowns, but reduces their life regeneration rate by 100 for 1 second.|n|cff99b4d1140 second cooldown|r"
     },
     {
       "Level": 3,
