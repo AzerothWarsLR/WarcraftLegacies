@@ -75,7 +75,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Restores 99999 hit points to friendly units in a large radius."
+      "Value": "Fully heals all friendly units in a large radius."
     },
     {
       "Level": 2,
