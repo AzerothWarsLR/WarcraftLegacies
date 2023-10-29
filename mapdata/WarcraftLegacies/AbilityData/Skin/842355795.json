@@ -64,7 +64,7 @@
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Summon 2 Dark Minion every time the hero casts a spell. Lasts 45 seconds."
+      "Value": "Causes the hero to summon 2 Dark Minions every time it casts a spell. The minions last 45 seconds."
     },
     {
       "Level": 3,
