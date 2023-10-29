@@ -222,6 +222,7 @@ namespace WarcraftLegacies.Source.Setup
       ScarletSpellSetup.Setup();
       DalaranSpellSetup.Setup();
       TrollSpellSetup.Setup();
+      GilneasSpellSetup.Setup();
       SharedSpellSetup.Setup();
     }
   }
