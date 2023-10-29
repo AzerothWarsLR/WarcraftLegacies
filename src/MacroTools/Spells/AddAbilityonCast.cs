@@ -18,7 +18,7 @@ namespace MacroTools.Spells
     
     public IEnumerable<int>? AbilitiesToAdd { get; init; }
     
-    public AddAbilityonCast(int id) : base(id)
+    public AddAbilityOnCast(int id) : base(id)
     {
     }
 
