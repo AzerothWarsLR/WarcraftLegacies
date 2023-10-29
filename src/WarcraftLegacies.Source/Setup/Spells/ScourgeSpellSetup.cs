@@ -155,8 +155,8 @@ namespace WarcraftLegacies.Source.Setup.Spells
         {
           Constants.ABILITY_AUDC_DEATH_COIL_RED_BARON_RIVENDARE,
           Constants.ABILITY_A10S_SUMMON_RAMSTEIN_RED_BARON_RIVENDARE,
-          Constants.ABILITY_A078_SPIRITUAL_GUIDANCE_SALLY,
-          Constants.ABILITY_A0DK_DISPEL_MAGIC_SALLY,
+          Constants.ABILITY_A09Y_DEATH_S_ADVANCE_SCOURGE_RIVENDARE,
+          Constants.ABILITY_A07R_DARK_GRIP_TEAL_KARGATH,
         }
       });
     }
