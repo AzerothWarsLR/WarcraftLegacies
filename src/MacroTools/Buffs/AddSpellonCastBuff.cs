@@ -4,7 +4,7 @@ using static War3Api.Common;
 
 namespace MacroTools.Buffs
 {
-  public sealed class AddSpellonCastBuff : PassiveBuff
+  public sealed class AddSpellOnCastBuff : PassiveBuff
   {
     public IEnumerable<int>? AbilitiesToAdd { get; init; }
     
