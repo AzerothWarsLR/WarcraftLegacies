@@ -66,6 +66,16 @@ Fortify your strongholds against the storm to come and make ready to unleash the
       ScarletCrusade.ModObjectLimit(Constants.UNIT_H08H_HIGH_INQUISITOR_SCARLET, 1);
       ScarletCrusade.ModObjectLimit(Constants.UNIT_H00Y_HIGH_GENERAL_SCARLET, 1);
 
+      //Ships
+      ScarletCrusade.ModObjectLimit(FourCC("hbot"), Faction.UNLIMITED); //Alliance Transport Ship
+      ScarletCrusade.ModObjectLimit(FourCC("h0AR"), Faction.UNLIMITED); //Alliance Scout
+      ScarletCrusade.ModObjectLimit(FourCC("h0AX"), Faction.UNLIMITED); //Alliance Frigate
+      ScarletCrusade.ModObjectLimit(FourCC("h0B3"), Faction.UNLIMITED); //Alliance Fireship
+      ScarletCrusade.ModObjectLimit(FourCC("h0B0"), Faction.UNLIMITED); //Alliance Galley
+      ScarletCrusade.ModObjectLimit(FourCC("h0B6"), Faction.UNLIMITED); //Alliance Boarding
+      ScarletCrusade.ModObjectLimit(FourCC("h0AN"), Faction.UNLIMITED); //Alliance Juggernaut
+      ScarletCrusade.ModObjectLimit(FourCC("h0B7"), 6); //Alliance Bombard
+
       //Upgrades
       ScarletCrusade.ModObjectLimit(FourCC("R05D"), Faction.UNLIMITED); //Chaplain Adept Training
       ScarletCrusade.ModObjectLimit(FourCC("R04F"), Faction.UNLIMITED); //Inquisitor traiing

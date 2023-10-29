@@ -38,7 +38,7 @@
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "Resets the caster's ability cooldowns, but reduces their life regeneration rate by 10000% for 1 second.|n|n|cffffcc00Level 1|r - 180 second cooldown.|n|cffffcc00Level 2|r - 140 second cooldown.|n|cffffcc00Level 3|r - 120 second cooldown.|n|cffffcc00Level 4|r - 100 second cooldown."
+      "Value": "Resets the caster\u0027s ability cooldowns, but reduces their life regeneration rate by 10000% for 1 second.|n|n|cffffcc00Level 1|r - 180 second cooldown.|n|cffffcc00Level 2|r - 140 second cooldown.|n|cffffcc00Level 3|r - 120 second cooldown.|n|cffffcc00Level 4|r - 100 second cooldown."
     },
     {
       "Level": 1,
@@ -62,19 +62,19 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Resets the caster's ability cooldowns, but reduces their life regeneration rate by 10000% for 1 second.|n|cff99b4d1180 second cooldown|r"
+      "Value": "Resets the caster\u0027s ability cooldowns, but reduces their life regeneration rate by 10000% for 1 second.|n|cff99b4d1180 second cooldown|r"
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Resets the caster's ability cooldowns, but reduces their life regeneration rate by 10000% for 1 second.|n|cff99b4d1140 second cooldown|r"
+      "Value": "Resets the caster\u0027s ability cooldowns, but reduces their life regeneration rate by 10000% for 1 second.|n|cff99b4d1140 second cooldown|r"
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Resets the caster's ability cooldowns, but reduces their life regeneration rate by 10000% for 1 second.|n|cff99b4d1120 second cooldown|r"
+      "Value": "Resets the caster\u0027s ability cooldowns, but reduces their life regeneration rate by 10000% for 1 second.|n|cff99b4d1120 second cooldown|r"
     },
     {
       "Id": 1952539489,
@@ -96,7 +96,7 @@
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Resets the caster's ability cooldowns, but reduces their life regeneration rate by 10000% for 1 second.|n|cff99b4d1100 second cooldown|r"
+      "Value": "Resets the caster\u0027s ability cooldowns, but reduces their life regeneration rate by 10000% for 1 second.|n|cff99b4d1100 second cooldown|r"
     },
     {
       "Id": 1802007137,

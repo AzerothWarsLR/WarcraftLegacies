@@ -29,7 +29,8 @@ namespace WarcraftLegacies.Source.Quests.Scarlet
     {
       _crimsonCathedral = crimsonCathedral;
       AddObjective(new ObjectiveQuestComplete(newhearthglen));
-      AddObjective(new ObjectiveControlLevel(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N00F_SHOLAZAR_BASIN), 1));
+      AddObjective(new ObjectiveControlPoint(
+        ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N00F_SHOLAZAR_BASIN)));
       ResearchId = Constants.UPGRADE_R04H_QUEST_COMPLETED_ONSLAUGHT_HARBOR;
       crimsonCathedral.Unit.SetInvulnerable(true);
       crimsonCathedral.Unit.Show(false);
@@ -52,6 +53,6 @@ namespace WarcraftLegacies.Source.Quests.Scarlet
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
-      $"Brigitte Abbendis gains the Divine Intervention ability.";
+      $"Brigitte Abbendis gains the Divine Intervention ability. The Crimson Cathedral is gained in the Sholazar Bassin";
   }
 }
