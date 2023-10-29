@@ -13,7 +13,7 @@
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "Rivendare raise skeletal minions every time he casts a spell. They last 45 seconds.|n|n|cffffcc00Level 1|r - 1 minion|n|cffffcc00Level 2|r - 2 minion|n|cffffcc00Level 3|r - 3 minion|n|cffffcc00Level 4|r - 4 minion"
+      "Value": "Causes the hero to summon Dark Minions every time it casts a spell. The minions last 45 seconds.|n|n|cffffcc00Level 1|r - Summons 1 minion.|n|cffffcc00Level 2|r - Summons 2 minions.|n|cffffcc00Level 3|r - Summons 3 minions.|n|cffffcc00Level 4|r - Summons 4 minions."
     },
     {
       "Level": 4,
