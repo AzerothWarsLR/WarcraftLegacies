@@ -13,9 +13,10 @@ namespace MacroTools.Spells
   /// </summary>
   public sealed class AddAbilityOnCast : Spell
   {
-    public LeveledAbilityProperty<float> Duration { get; init; } = new();
+    public LeveledAbilityField<float> Duration { get; init; } = new();
     public float DurationLevel { get; init; }
-    
+    public int BuffApplicatorID { get; init; }
+    public int BuffID { get; init; }
     public IEnumerable<int>? AbilitiesToAdd { get; init; }
     
     public AddAbilityOnCast(int id) : base(id)
@@ -25,9 +26,9 @@ namespace MacroTools.Spells
     public override void OnCast(unit caster, unit target, Point targetPoint)
     {
 
-      var addSpellonCastBuff = new AddSpellonCastBuff(caster, caster)
+      var addSpellonCastBuff = new AddSpellOnCastBuff(caster, caster, BuffApplicatorID, BuffID)
       {
-        Duration = Duration.Base + Duration.Level * GetAbilityLevel(caster),
+        Duration = Duration.Base + Duration.PerLevel * GetAbilityLevel(caster),
         AbilitiesToAdd = AbilitiesToAdd
       };
       BuffSystem.Add(addSpellonCastBuff);

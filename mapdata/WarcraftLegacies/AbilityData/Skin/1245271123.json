@@ -41,7 +41,7 @@
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "The hero vanishes, becoming invisible and gaining 20 bonus damage. The invisibility will not dissipate even if the hero attacks or casts spells.|n|n|cffffcc00Level 1|r - Lasts 10 seconds.|n|cffffcc00Level 2|r - Lasts 15 seconds.|n|cffffcc00Level 3|r - Lasts 20 seconds."
+      "Value": "The hero vanishes, becoming invisible and gaining \u003CST8K,DataA1\u003E bonus damage. The invisibility will not dissipate even if the hero attacks or casts spells.|n|n|cffffcc00Level 1|r - Lasts 10 seconds.|n|cffffcc00Level 2|r - Lasts 15 seconds.|n|cffffcc00Level 3|r - Lasts 20 seconds."
     },
     {
       "Level": 1,
@@ -71,19 +71,19 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "The hero vanishes, becoming invisible and gaining 20 damage for 10 seconds. The invisibility will not dissipate even if the hero attacks or casts spells."
+      "Value": "The hero vanishes, becoming invisible and gaining \u003CST8K,DataA1\u003E damage for 10 seconds. The invisibility will not dissipate even if the hero attacks or casts spells."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "The hero vanishes, becoming invisible and gaining 20 damage for 15 seconds. The invisibility will not dissipate even if the hero attacks or casts spells."
+      "Value": "The hero vanishes, becoming invisible and gaining \u003CST8K,DataA1\u003E damage for 15 seconds. The invisibility will not dissipate even if the hero attacks or casts spells."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "The hero vanishes, becoming invisible and gaining 20 damage for 20 seconds. The invisibility will not dissipate even if the hero attacks or casts spells."
+      "Value": "The hero vanishes, becoming invisible and gaining \u003CST8K,DataA1\u003E damage for 20 seconds. The invisibility will not dissipate even if the hero attacks or casts spells."
     },
     {
       "Level": 4,

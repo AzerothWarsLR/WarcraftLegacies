@@ -48,7 +48,7 @@
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "The hero channels all his power, making him attack at an increased rate. Lasts 5 seconds.|n|n|cffffcc00Level 1|r - 200% attack rate increase.|n|cffffcc00Level 2|r - 300% attack rate increase.|n|cffffcc00Level 3|r - 400% attack rate increase.|n|cffffcc00Level 4|r - 500% attack rate increase."
+      "Value": "The hero channels all his power, making him attack at an increased rate. Lasts 5 seconds.|n|n|cffffcc00Level 1|r - \u003CA026,DataB1,%\u003E% attack rate increase.|n|cffffcc00Level 2|r - \u003CA026,DataB2,%\u003E% attack rate increase.|n|cffffcc00Level 3|r - \u003CA026,DataB3,%\u003E% attack rate increase.|n|cffffcc00Level 4|r - \u003CA026,DataB4,%\u003E% attack rate increase."
     },
     {
       "Level": 1,
@@ -78,25 +78,25 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "The hero channels all his power, giving him 200% attack speed for 5 seconds."
+      "Value": "The hero channels all his power, giving him \u003CA026,DataB1,%\u003E% attack speed for 5 seconds."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "The hero channels all his power, giving him 300% attack speed for 5 seconds."
+      "Value": "The hero channels all his power, giving him \u003CA026,DataB2,%\u003E% attack speed for 5 seconds."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "The hero channels all his power, giving him 400% attack speed for 5 seconds."
+      "Value": "The hero channels all his power, giving him \u003CA026,DataB3,%\u003E% attack speed for 5 seconds."
     },
     {
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "The hero channels all his power, giving him 500% attack speed for 5 seconds."
+      "Value": "The hero channels all his power, giving him \u003CA026,DataB4,%\u003E% attack speed for 5 seconds."
     },
     {
       "Id": 2020631137,

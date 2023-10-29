@@ -18,7 +18,7 @@
     {
       "Id": 1700951398,
       "Type": 3,
-      "Value": "This unit is Vanished; it is invisible and the first attack it makes while invisible will deal bonus damage."
+      "Value": "This unit is Vanished; it is invisible and has bonus damage. The invisibility will not break if the hero attacks or casts a spell."
     }
   ]
 }

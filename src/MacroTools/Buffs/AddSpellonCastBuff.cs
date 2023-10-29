@@ -29,7 +29,7 @@ namespace MacroTools.Buffs
         }
     }
     
-    public AddSpellonCastBuff(unit caster, unit target) : base(caster, target)
+    public AddSpellOnCastBuff(unit caster, unit target) : base(caster, target)
     {
     }
   }

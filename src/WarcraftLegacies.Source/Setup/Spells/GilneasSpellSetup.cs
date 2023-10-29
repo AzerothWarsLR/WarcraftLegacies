@@ -1,4 +1,5 @@
-﻿using MacroTools.DummyCasters;
+﻿using MacroTools;
+using MacroTools.DummyCasters;
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.Spells;
 using MacroTools.SpellSystem;
@@ -17,10 +18,9 @@ namespace WarcraftLegacies.Source.Setup.Spells
     /// </summary>
     public static void Setup()
     {
-      var vanish = new AddAbilityonCast(Constants.ABILITY_ST9J_VANISH_TESS)
+      var vanish = new AddAbilityOnCast(Constants.ABILITY_ST9J_VANISH_TESS)
       {
-        DurationBase = 5,
-        DurationLevel = 5,
+        Duration = new LeveledAbilityField<float> { Base = 5, PerLevel = 5 },
         AbilitiesToAdd = new[]
         {
           Constants.ABILITY_STJW_PERMANENT_INVISIBILITY_TESS,

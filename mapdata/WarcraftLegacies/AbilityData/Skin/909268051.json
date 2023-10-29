@@ -41,7 +41,7 @@
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "This hero's attacks fire multiple projectiles at different enemies. |n|n|cffffcc00Level 1|r - Attacks fire 1 additional projectile.|n|cffffcc00Level 2|r - Attacks fire 2 additional projectiles.|n|cffffcc00Level 3|r - Attacks fire 3 additional projectiles.|n|cffffcc00Level 4|r - Attacks fire 4 additional projectiles."
+      "Value": "This hero\u0027s attacks fire multiple projectiles at different enemies. |n|n|cffffcc00Level 1|r - Attacks fire \u003CST26,DataC1\u003E additional projectile.|n|cffffcc00Level 2|r - Attacks fire \u003CST26,DataC2\u003E additional projectiles.|n|cffffcc00Level 3|r - Attacks fire \u003CST26,DataC3\u003E additional projectiles.|n|cffffcc00Level 4|r - Attacks fire \u003CST26,DataC4\u003E additional projectiles."
     },
     {
       "Level": 1,
@@ -71,25 +71,25 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "The hero fires multiple attacks at targets. \u003CA0BQ,DataC1\u003E extra attacks are made."
+      "Value": "The hero fires multiple attacks at targets. \u003CST26,DataC1\u003E extra attacks are made."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "The hero fires multiple attacks at targets. \u003CA0BQ,DataC2\u003E extra attacks are made."
+      "Value": "The hero fires multiple attacks at targets. \u003CST26,DataC2\u003E extra attacks are made."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "The hero fires multiple attacks at targets. \u003CA0BQ,DataC3\u003E extra attacks are made."
+      "Value": "The hero fires multiple attacks at targets. \u003CST26,DataC3\u003E extra attacks are made."
     },
     {
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "The hero fires multiple attacks at targets. \u003CA0BQ,DataC4\u003E extra attacks are made."
+      "Value": "The hero fires multiple attacks at targets. \u003CST26,DataC4\u003E extra attacks are made."
     },
     {
       "Id": 1835101793,
