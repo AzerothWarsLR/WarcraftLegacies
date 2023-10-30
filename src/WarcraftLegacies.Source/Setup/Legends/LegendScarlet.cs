@@ -1,10 +1,5 @@
-﻿using System.Collections.Generic;
-using MacroTools;
-using MacroTools.ArtifactSystem;
-using MacroTools.Extensions;
+﻿using MacroTools;
 using MacroTools.LegendSystem;
-using WCSharp.Shared.Data;
-using static War3Api.Common;
 
 #pragma warning disable CS1591
 

@@ -1,7 +1,4 @@
 ﻿using MacroTools;
-using System.Linq;
-using MacroTools.Extensions;
-using static War3Api.Common;
 using WarcraftLegacies.Source.Setup.FactionSetup;
 using WarcraftLegacies.Source.Quests.Scarlet;
 

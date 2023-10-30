@@ -2,12 +2,9 @@
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
-using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
 using MacroTools.LegendSystem;
-using WCSharp.Shared.Data;
 using static War3Api.Common;
-using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.QuestBased;
 
 namespace WarcraftLegacies.Source.Quests.Scarlet

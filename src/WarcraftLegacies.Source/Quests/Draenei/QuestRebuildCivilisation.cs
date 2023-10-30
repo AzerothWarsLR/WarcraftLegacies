@@ -6,7 +6,6 @@ using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using static War3Api.Common;
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
-using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using System.Collections.Generic;
 using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 
