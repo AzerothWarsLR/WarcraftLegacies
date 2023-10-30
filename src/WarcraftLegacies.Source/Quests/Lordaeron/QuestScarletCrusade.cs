@@ -60,26 +60,31 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
       if (whichPlayer == null) 
         return;
       
-      LordaeronSurrender(whichPlayer);
+      _scarletCrusade.CopyObjectLevelsFrom(completingFaction);
+      AbandonCurrentUnits(whichPlayer);
+      PlayerDistributor.DistributePlayer(whichPlayer);
+      EvacuateTyrsHand(whichPlayer);
       whichPlayer.SetFaction(_scarletCrusade);
-      GrantTyrHand(whichPlayer);
+      GrantTyrsHand(whichPlayer);
       whichPlayer.RescueGroup(_rescueUnits);
       _tyrsHand.Rescue(whichPlayer);
       _saiden.ForceCreate(whichPlayer, Regions.Scarlet_Spawn.Center, 270);
       _saiden.Unit?.SetLevel(7, false);
     }
 
-    private static void LordaeronSurrender(player whichPlayer)
+    private static void AbandonCurrentUnits(player whichPlayer)
     {
-      foreach (var unit in CreateGroup().EnumUnitsInRect(Rectangle.WorldBounds).EmptyToList()
-                 .Where(x => x.OwningPlayer() == whichPlayer))
+      foreach (var unit in CreateGroup()
+                 .EnumUnitsOfPlayer(whichPlayer)
+                 .EmptyToList())
       {
         if (!IsUnitType(unit, UNIT_TYPE_HERO))
           unit.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
       }
+    }
 
-      PlayerDistributor.DistributePlayer(whichPlayer);
-
+    private static void EvacuateTyrsHand(player newControlPointOwner)
+    {
       foreach (var unit in CreateGroup().EnumUnitsInRect(Regions.TyrUnlock).EmptyToList()
                  .Where(x => x.OwningPlayer() == Player(PLAYER_NEUTRAL_AGGRESSIVE)))
       {
@@ -87,11 +92,11 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
           unit.Kill();
 
         if (IsUnitType(unit, UNIT_TYPE_ANCIENT))
-          unit.Rescue(whichPlayer);
+          unit.Rescue(newControlPointOwner);
       }
     }
 
-    private static void GrantTyrHand(player whichPlayer)
+    private static void GrantTyrsHand(player whichPlayer)
     {
       CreateStructureForced(whichPlayer, Constants.UNIT_H0BJ_IMPROVED_CANNON_TOWER_CRUSADE_TOWER, 19082, 8573,
         4.712389f * MathEx.DegToRad, 256);
