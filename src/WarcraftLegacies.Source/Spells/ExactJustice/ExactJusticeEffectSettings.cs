@@ -1,4 +1,4 @@
-﻿namespace MacroTools.Spells.ExactJustice
+﻿namespace WarcraftLegacies.Source.Spells.ExactJustice
 {
   public sealed class ExactJusticeEffectSettings
   {

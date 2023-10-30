@@ -1,11 +1,12 @@
-﻿using MacroTools.ChannelSystem;
+﻿using MacroTools;
+using MacroTools.ChannelSystem;
 using MacroTools.Extensions;
 using MacroTools.Instances;
 using MacroTools.SpellSystem;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
-namespace MacroTools.Spells.Slipstream
+namespace WarcraftLegacies.Source.Spells.Slipstream
 {
   /// <summary>
   /// Channel a portal to a predetermined location.

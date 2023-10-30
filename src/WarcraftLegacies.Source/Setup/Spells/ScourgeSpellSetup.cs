@@ -6,6 +6,7 @@ using MacroTools.SpellSystem;
 using System.Collections.Generic;
 using WarcraftLegacies.Source.Mechanics.Scourge;
 using WarcraftLegacies.Source.Spells;
+using WarcraftLegacies.Source.Spells.Reap;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup.Spells

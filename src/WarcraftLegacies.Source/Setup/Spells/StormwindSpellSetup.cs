@@ -2,8 +2,8 @@
 using MacroTools.PassiveAbilities;
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.Spells;
-using MacroTools.Spells.Slipstream;
 using MacroTools.SpellSystem;
+using WarcraftLegacies.Source.Spells.Slipstream;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup.Spells

@@ -1,4 +1,4 @@
-﻿namespace MacroTools.Spells.Slipstream
+﻿namespace WarcraftLegacies.Source.Spells.Slipstream
 {
   /// <summary>
   /// The state a <see cref="SlipstreamPortalBuff"/> is in.

@@ -6,7 +6,7 @@ using WCSharp.Buffs;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
-namespace MacroTools.Spells
+namespace WarcraftLegacies.Source.Spells
 {
   /// <summary>
   /// Heals nearby friendly units and removes specific abilities from the caster for a limited duration.

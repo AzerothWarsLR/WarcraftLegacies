@@ -3,7 +3,7 @@ using MacroTools.PassiveAbilitySystem;
 using WCSharp.Buffs;
 using static War3Api.Common;
 
-namespace MacroTools.Spells
+namespace WarcraftLegacies.Source.Spells
 {
   /// <summary>
   /// When the ability holder takes lethal damage, they transform into a Spirit of Vengeance.

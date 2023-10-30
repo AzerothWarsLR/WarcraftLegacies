@@ -1,9 +1,10 @@
-﻿using MacroTools.Extensions;
+﻿using MacroTools;
+using MacroTools.Extensions;
 using MacroTools.SpellSystem;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
-namespace MacroTools.Spells
+namespace WarcraftLegacies.Source.Spells
 {
   /// <summary>
   /// Instantly kills the target unit, or damages it if it's Resistant. Also heals the caster.

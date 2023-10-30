@@ -6,7 +6,7 @@ using WCSharp.Buffs;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
-namespace MacroTools.Spells.ExactJustice
+namespace WarcraftLegacies.Source.Spells.ExactJustice
 {
   /// <summary>
   /// Provides the channeling effect for <see cref="ExactJusticeSpell"/>.

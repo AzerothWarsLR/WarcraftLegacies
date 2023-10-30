@@ -2,7 +2,7 @@
 using WCSharp.Buffs;
 using static War3Api.Common;
 
-namespace MacroTools.Spells.ExactJustice
+namespace WarcraftLegacies.Source.Spells.ExactJustice
 {
   /// <summary>
   /// Renders nearby friendly units invulnerable.

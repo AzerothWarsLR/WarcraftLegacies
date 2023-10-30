@@ -3,12 +3,11 @@ using System.Linq;
 using MacroTools;
 using MacroTools.Extensions;
 using MacroTools.SpellSystem;
-using WarcraftLegacies.Source.Buffs;
 using WCSharp.Buffs;
-using static War3Api.Common;
 using WCSharp.Shared.Data;
+using static War3Api.Common;
 
-namespace WarcraftLegacies.Source.Spells
+namespace WarcraftLegacies.Source.Spells.Reap
 {
   /// <summary>Kills nearby enemy units to grant the caster Strength for a limited time.</summary>
   public sealed class Reap : Spell

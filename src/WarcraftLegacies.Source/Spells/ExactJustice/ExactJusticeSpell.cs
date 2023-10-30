@@ -1,9 +1,9 @@
 ﻿using MacroTools.ChannelSystem;
 using MacroTools.SpellSystem;
-using static War3Api.Common;
 using WCSharp.Shared.Data;
+using static War3Api.Common;
 
-namespace MacroTools.Spells.ExactJustice
+namespace WarcraftLegacies.Source.Spells.ExactJustice
 {
   /// <summary>
   /// Start a <see cref="Channel"/> which renders friendly units invulnerable for a while, then deals damage at the end.

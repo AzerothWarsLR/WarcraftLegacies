@@ -6,7 +6,7 @@ using WCSharp.Buffs;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
-namespace MacroTools.Spells
+namespace WarcraftLegacies.Source.Spells
 {
   public sealed class MassSimulacrum : Spell
   {

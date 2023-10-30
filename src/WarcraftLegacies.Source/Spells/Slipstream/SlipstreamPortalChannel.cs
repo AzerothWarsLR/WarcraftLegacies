@@ -1,11 +1,12 @@
 ﻿using System;
+using MacroTools;
 using MacroTools.ChannelSystem;
 using MacroTools.Extensions;
 using WCSharp.Buffs;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
-namespace MacroTools.Spells.Slipstream
+namespace WarcraftLegacies.Source.Spells.Slipstream
 {
   /// <summary>
   /// Channel a portal between two locations.

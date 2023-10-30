@@ -6,7 +6,7 @@ using WCSharp.Effects;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
-namespace MacroTools.Spells
+namespace WarcraftLegacies.Source.Spells
 {
   /// <summary>
   /// Casts Storm Bolt and Purge on each unit in the target radius.

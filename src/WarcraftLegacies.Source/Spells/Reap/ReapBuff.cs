@@ -2,7 +2,7 @@
 using WCSharp.Buffs;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.Source.Buffs
+namespace WarcraftLegacies.Source.Spells.Reap
 {
   /// <summary>Gives the caster additional Strength.</summary>
   public sealed class ReapBuff : BoundBuff
