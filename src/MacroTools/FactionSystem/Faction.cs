@@ -277,7 +277,7 @@ namespace MacroTools.FactionSystem
     ///   Returns the maximum number of times the Faction can train a unit, build a building, or research a research.
     /// </summary>
     /// <param name="whichObject">The object ID of a unit, building, or research.</param>
-    public int GetObjectLimit(int whichObject) => _objectLimits[whichObject];
+    public int GetObjectLimit(int whichObject) => _objectLimits.TryGetValue(whichObject, out var limit) ? limit : 0;
 
     /// <summary>
     ///   Registers a gold mine as belonging to this <see cref="Faction" />.
@@ -412,6 +412,21 @@ namespace MacroTools.FactionSystem
         _objectLimits.Remove(objectId);
     }
 
+    /// <summary>
+    /// Copies object levels from another <see cref="Faction"/> to this one.
+    /// <para>Only copies levels that this Faction has the object limit to handle.</para>
+    /// </summary>
+    public void CopyObjectLevelsFrom(Faction otherFaction)
+    {
+      var objectLevels = otherFaction._objectLevels;
+      foreach (var (objectId, level) in objectLevels)
+      {
+        var objectLimit = GetObjectLimit(objectId);
+        if (objectLimit > 0) 
+          SetObjectLevel(objectId, Math.Min(objectLimit, level));
+      }
+    }
+    
     /// <summary>Returns all <see cref="Power" />s this <see cref="Faction" /> has.</summary>
     public IEnumerable<Power> GetAllPowers()
     {
@@ -524,7 +539,7 @@ namespace MacroTools.FactionSystem
       }
       catch (Exception ex)
       {
-        Logger.LogError($"{nameof(Faction)} failed to execute {nameof(OnQuestProgressChanged)}: {ex.Message}");
+        Logger.LogError($"{Name} failed to execute {nameof(OnQuestProgressChanged)}: {ex.Message}");
       }
     }
   }
