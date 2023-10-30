@@ -48,7 +48,7 @@ Your main goal is to summon Kil'jaeden and destroy your enemies."
       Sunfury.ModObjectLimit(FourCC("n0E0"), Faction.UNLIMITED); //Skyfury tower
       Sunfury.ModObjectLimit(FourCC("n0E1"), Faction.UNLIMITED); //improved skyfury tower
       Sunfury.ModObjectLimit(FourCC("N0DZ"), 1); //Fountain
-      Sunfury.ModObjectLimit(FourCC("h077"), Faction.UNLIMITED); //Alliance Shipyard
+      Sunfury.ModObjectLimit(FourCC("tp04"), Faction.UNLIMITED); //Alliance Shipyard
 
       //Units
       Sunfury.ModObjectLimit(FourCC("n0E2"), Faction.UNLIMITED); //worker

@@ -21,16 +21,16 @@ namespace WarcraftLegacies.Source.Quests.Scarlet
     /// Initializes a new instance of the <see cref="QuestRebuildStratholme"/> class.
     /// </summary>
     public QuestRebuildStratholme(Rectangle questRect, LegendaryHero saiden) : base(
-      "Reclaiming Stratholme",
-      "Saiden was the lord of Satratholme before the plague. He now wants to reconquer it, rebuild it and re-establish it's old glory",
+      "Stratholme",
+      "Before the Plague wiped out Stratholme, Saiden had established himself there as Lord Commander of the Silver Hand. This once-glorious city must be reclaimed.",
       @"ReplaceableTextures\CommandButtons\BTNStromgardeCastle.blp")
     {
       Required = true;
       AddObjective(new ObjectiveBuildInRect(questRect, "in Stratholme", Constants.UNIT_H0BM_TOWN_HALL_CRUSADE_T1));
-      AddObjective(new ObjectiveBuildInRect(questRect, "in Stratholme", Constants.UNIT_H0BP_HOUSEHOLD_CRUSADE_FARM, 6));
+      AddObjective(new ObjectiveBuildInRect(questRect, "in Stratholme", Constants.UNIT_H0BP_FARMSTEAD_CRUSADE_FARM, 6));
       AddObjective(new ObjectiveBuildInRect(questRect, "in Stratholme", Constants.UNIT_H0AG_HALL_OF_SWORDS_CRUSADE_BARRACKS, 2));
       AddObjective(new ObjectiveBuildInRect(questRect, "in Stratholme", Constants.UNIT_H09X_SHIPYARD_CRUSADE_SHIPYARD));
-      AddObjective(new ObjectiveBuildInRect(questRect, "in Stratholme", Constants.UNIT_N0D8_TRADE_HOUSE_CRUSADE_SHOP));
+      AddObjective(new ObjectiveBuildInRect(questRect, "in Stratholme", Constants.UNIT_N0D8_VENDOR_HALL_CRUSADE_SHOP));
       AddObjective(new ObjectiveControlLevel(
         ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N01M_STRATHOLME), 4));
       _saiden = saiden;
@@ -44,7 +44,7 @@ namespace WarcraftLegacies.Source.Quests.Scarlet
 
     /// <inheritdoc/>
     protected override string RewardFlavour =>
-      "Saiden, the new Lord of Stratholme, has managed to regain, purge and rebuild the once mighty city of Stratholme.";
+      "The city of Stratholme once more stands as a bastion of human civilization. Though still a mere shadow of its former glory, it will reclaim its majesty in time.";
 
     /// <inheritdoc/>
     protected override string RewardDescription =>

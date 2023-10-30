@@ -25,12 +25,12 @@ namespace WarcraftLegacies.Source.Quests.Scarlet
     /// Initializes a new instance of the <see cref="QuestReconquerCapital"/> class.
     /// </summary>
     public QuestReconquerCapital(Rectangle questRect, Capital capitalPalace, LegendaryHero saiden, LegendaryHero renault, LegendaryHero sally, LegendaryHero brigitte) : base(
-      "Reconquer Capital",
-      "Lordaeron City was almost completly destroyed by the scourge, it would be a symbol for the Scarlet Crusade if they could recapture it and rebuild it!",
-      @"ReplaceableTextures/CommandButtons/BTNStromgardeAltar.blp")
+      "Lordaeron City",
+      "Lordaeron City was once the heart of the Alliance and the center of the humanity before its fall. It must be reclaimed at all costs.",
+      "ReplaceableTextures/CommandButtons/BTNStromgardeAltar.blp")
     {
       Required = true;
-      AddObjective(new ObjectiveBuildInRect(questRect, "in Lordaeron City", Constants.UNIT_H0BP_HOUSEHOLD_CRUSADE_FARM, 4));
+      AddObjective(new ObjectiveBuildInRect(questRect, "in Lordaeron City", Constants.UNIT_H0BP_FARMSTEAD_CRUSADE_FARM, 4));
       AddObjective(new ObjectiveBuildInRect(questRect, "in Lordaeron City", Constants.UNIT_H0AG_HALL_OF_SWORDS_CRUSADE_BARRACKS));
       AddObjective(new ObjectiveBuildInRect(questRect, "in Lordaeron City", Constants.UNIT_H0BQ_ALTAR_OF_CRUSADERS_CRUSADE_ALTAR));
       AddObjective(new ObjectiveControlCapital(capitalPalace, false));
@@ -53,10 +53,10 @@ namespace WarcraftLegacies.Source.Quests.Scarlet
 
     /// <inheritdoc/>
     protected override string RewardFlavour =>
-      "Reconquering and rebuilding the Capital of Lordaeron has inspired and legitimized the Scarlet in the eye of all the surviving humen of Lordaeron";
+      "The Scarlet Crusade has successfully rebuilt Lordaeron City, cementing their position as the rightful successors of Lordaeron's legacy.";
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
-      "All of your heroes gain {ExperienceReward} experience";
+      $"All of your heroes gain {ExperienceReward} experience";
   }
 }

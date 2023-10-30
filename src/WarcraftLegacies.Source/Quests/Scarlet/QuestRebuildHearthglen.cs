@@ -18,22 +18,22 @@ namespace WarcraftLegacies.Source.Quests.Scarlet
     /// Initializes a new instance of the <see cref="QuestRebuildHearthglen"/> class.
     /// </summary>
     public QuestRebuildHearthglen(Rectangle questRect, Capital monastery) : base(
-      "Rebuild Hearthglen",
-      "Heartglen and the Scarlet Monastery are holy ground for the Scarlet Crusade, it is primordial to capture them",
+      "Hearthglen",
+      "Though the town of Hearthglen fell to the Scourge just as easily as any other, the Silver Hand Monastery there makes it a key strategic objective for the Scarlet Crusade.",
       @"ReplaceableTextures\CommandButtons\BTNAlteracWizardTower.blp")
     {
       Required = true;
       AddObjective(new ObjectiveBuildInRect(questRect, "in Hearthglen", Constants.UNIT_H0BM_TOWN_HALL_CRUSADE_T1));
-      AddObjective(new ObjectiveBuildInRect(questRect, "in Hearthglen", Constants.UNIT_H0BP_HOUSEHOLD_CRUSADE_FARM, 3));
+      AddObjective(new ObjectiveBuildInRect(questRect, "in Hearthglen", Constants.UNIT_H0BP_FARMSTEAD_CRUSADE_FARM, 3));
       AddObjective(new ObjectiveBuildInRect(questRect, "in Hearthglen", Constants.UNIT_H0AG_HALL_OF_SWORDS_CRUSADE_BARRACKS));
       AddObjective(new ObjectiveControlCapital(monastery, false));
       AddObjective(new ObjectiveControlLevel(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N044_HEARTHGLEN), 2));
-      ResearchId = Constants.UPGRADE_R09A_QUEST_COMPLETED_THE_DIMENSIONAL_SHIP; //TODO new research with better title by the writters
+      ResearchId = Constants.UPGRADE_R026_QUEST_COMPLETED_HEARTHGLEN;
     }
 
     /// <inheritdoc/>
     protected override string RewardFlavour =>
-      "With the Monastery under the Scarlet control, Sally Whitemane can start training a new generation of Scarlet adepts.";
+      "With the Monastery under Scarlet control, Sally Whitemane can be brought into the fold of the Crusade's leadership in earnest.";
 
     /// <inheritdoc/>
     protected override string RewardDescription =>

@@ -56,12 +56,12 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "Household"
+      "Value": "Farmstead"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "Build Household"
+      "Value": "Build Farmstead"
     }
   ]
 }

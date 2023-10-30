@@ -16,23 +16,23 @@ namespace WarcraftLegacies.Source.Quests.Scarlet
     /// Initializes a new instance of the <see cref="QuestRebuildAndorhal"/> class.
     /// </summary>
     public QuestRebuildAndorhal(Rectangle questRect) : base(
-      "Rebuild Andorhal",
-      "Andorhal was completly destroyed by the scourge, the city should be rebuilt; it's proximity to Aerie Peak will enable the Scarlet Crusade to breed powerful Eagles and Gryphons. ",
+      "Andorhal",
+      "Once the breadbasket of Lordaeron, Andorhal is now nothing but ashes. Were it to be rebuilt, its proximity to Aerie Peak would allow the Scarlet Crusade to breed powerful Eagles and Gryphons.",
       @"ReplaceableTextures\CommandButtons\BTNAlteracGryphonAviary.blp")
     {
       Required = true;
       AddObjective(new ObjectiveBuildInRect(questRect, "in Andorhal", Constants.UNIT_H0BM_TOWN_HALL_CRUSADE_T1));
-      AddObjective(new ObjectiveBuildInRect(questRect, "in Andorhal", Constants.UNIT_H0BP_HOUSEHOLD_CRUSADE_FARM, 4));
+      AddObjective(new ObjectiveBuildInRect(questRect, "in Andorhal", Constants.UNIT_H0BP_FARMSTEAD_CRUSADE_FARM, 4));
       AddObjective(new ObjectiveBuildInRect(questRect, "in Andorhal", Constants.UNIT_H0AG_HALL_OF_SWORDS_CRUSADE_BARRACKS));
       AddObjective(new ObjectiveBuildInRect(questRect, "in Andorhal", Constants.UNIT_H0BL_ROOKERY_CRUSADE_BEAST));
-      AddObjective(new ObjectiveBuildInRect(questRect, "in Andorhal", Constants.UNIT_N0D8_TRADE_HOUSE_CRUSADE_SHOP));
+      AddObjective(new ObjectiveBuildInRect(questRect, "in Andorhal", Constants.UNIT_N0D8_VENDOR_HALL_CRUSADE_SHOP));
       AddObjective(new ObjectiveControlLevel(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N01H_ANDORHAL), 2));
-      ResearchId = Constants.UPGRADE_R09A_QUEST_COMPLETED_THE_DIMENSIONAL_SHIP; //TODO create the reserach with the new title that buffs air units
+      ResearchId = Constants.UPGRADE_R03P_QUEST_COMPLETED_ANDORHAL; 
     }
 
     /// <inheritdoc/>
     protected override string RewardFlavour =>
-      "With the proximity to Aerie Peak, New Andhoral can start training a new breed of Eagle and Grypgons, stronger than before";
+      "Survivors from Lordaeron's fall are once more pouring into Andorhal. Eagles and Gryphons from Aerie Peak soar down to the renewed agricultural center to enjoy its renewed production.";
 
     /// <inheritdoc/>
     protected override string RewardDescription =>

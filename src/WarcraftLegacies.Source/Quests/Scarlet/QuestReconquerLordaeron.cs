@@ -1,5 +1,4 @@
-﻿using MacroTools.FactionSystem;
-using MacroTools.ObjectiveSystem.Objectives.QuestBased;
+﻿using MacroTools.ObjectiveSystem.Objectives.QuestBased;
 using MacroTools.QuestSystem;
 
 namespace WarcraftLegacies.Source.Quests.Scarlet
@@ -13,9 +12,9 @@ namespace WarcraftLegacies.Source.Quests.Scarlet
     /// Initializes a new instance of the <see cref="QuestReconquerLordaeron"/> class.
     /// </summary>
     public QuestReconquerLordaeron(QuestData stratholme, QuestData capital, QuestData hearthglen, QuestData brill, QuestData andorhal) : base(
-      "Reconquer Lordaeron",
-      "The Scarlet Crusade ultimate objective is to purge all undead from the Plaguelands and rebuild Lordaeron to it's glory.",
-      @"ReplaceableTextures/CommandButtons/BTNSalvationSpire.blp")
+      "A Once Great People",
+      "The onslaught of the Scourge devastated Lordaeron beyond recognition, slaughtering its people and levelling its cities. Only the Scarlet Crusade stands strong, a faint light of hope in the darkness. If the cities and village of Lordaeron could be reclaimed and rebuilt, humanity could begin again.",
+      "ReplaceableTextures/CommandButtons/BTNSalvationSpire.blp")
     {
       Required = true;
       AddObjective(new ObjectiveQuestComplete(stratholme));
@@ -23,18 +22,13 @@ namespace WarcraftLegacies.Source.Quests.Scarlet
       AddObjective(new ObjectiveQuestComplete(hearthglen));
       AddObjective(new ObjectiveQuestComplete(brill));
       AddObjective(new ObjectiveQuestComplete(andorhal));
-      ResearchId = Constants.UPGRADE_R09A_QUEST_COMPLETED_THE_DIMENSIONAL_SHIP; //TODO create research according to new title picked by writting team
-    }
-
-    /// <inheritdoc/>
-    protected override void OnComplete(Faction whichFaction)
-    {
-      
+      ResearchId = Constants.UPGRADE_R02A_QUEST_COMPLETED_A_ONCE_GREAT_PEOPLE;
+      Global = true;
     }
 
     /// <inheritdoc/>
     protected override string RewardFlavour =>
-      "With the safeguard of Lordaeron, the Scarlet Crusade gains the highest blessing of the Light";
+      "Against all odds, the Scarlet Crusade has reclaimed and rebuilt the lands of Lordaeron, filling its cities and fields with the beginnings of a new generation. Having proven itself capable of far more than simple vengeance, the Crusade receives the Light's ultimate blessing.";
 
     /// <inheritdoc/>
     protected override string RewardDescription => "Learn to build the Divine Bastion";

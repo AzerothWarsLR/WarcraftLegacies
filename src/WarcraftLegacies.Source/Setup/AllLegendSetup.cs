@@ -130,7 +130,7 @@ namespace WarcraftLegacies.Source.Setup
       Nazjatar = new LegendNazjatar();
       BlackEmpire = new LegendBlackEmpire(preplacedUnitSystem);
       Twilight = new LegendTwilight();
-      Scarlet = new LegendScarlet();
+      Scarlet = new LegendScarlet(preplacedUnitSystem);
     }
 
     /// <summary>

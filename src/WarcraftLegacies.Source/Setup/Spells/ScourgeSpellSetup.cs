@@ -3,6 +3,7 @@ using MacroTools.PassiveAbilities;
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.Spells;
 using MacroTools.SpellSystem;
+using System.Collections.Generic;
 using WarcraftLegacies.Source.Mechanics.Scourge;
 using WarcraftLegacies.Source.Spells;
 using static War3Api.Common;
@@ -143,6 +144,20 @@ namespace WarcraftLegacies.Source.Setup.Spells
         DummyAbilityId = Constants.ABILITY_A0YD_APOCALYPSE_DUMMY_CASTER,
         DummyAbilityOrderId = OrderId("parasite"),
         UpgradeCondition = unit => GetUnitTypeId(unit) == Constants.UNIT_N023_LORD_OF_THE_SCOURGE_SCOURGE
+      });
+
+      PassiveAbilityManager.Register(new NoTargetSpellOnCast(Constants.UNIT_U00A_SCOURGE_COMMANDER_SCOURGE, Constants.ABILITY_ST52_ARMY_OF_THE_DEAD_SCOURGE)
+      {
+        DummyAbilityId = Constants.ABILITY_ST4H_ARMY_OF_THE_DEAD_RIVENDARE_DUMMY,
+        DummyOrderId = OrderId("waterelemental"),
+        ProcChance = 1.0f,
+        AbilityWhitelist = new List<int>
+        {
+          Constants.ABILITY_AUDC_DEATH_COIL_RED_BARON_RIVENDARE,
+          Constants.ABILITY_A10S_SUMMON_RAMSTEIN_RED_BARON_RIVENDARE,
+          Constants.ABILITY_A09Y_DEATH_S_ADVANCE_SCOURGE_RIVENDARE,
+          Constants.ABILITY_A07R_DARK_GRIP_TEAL_KARGATH,
+        }
       });
     }
   }

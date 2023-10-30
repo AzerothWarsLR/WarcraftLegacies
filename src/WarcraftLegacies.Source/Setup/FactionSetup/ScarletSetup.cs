@@ -31,7 +31,7 @@ Fortify your strongholds against the storm to come and make ready to unleash the
       ScarletCrusade.ModObjectLimit(Constants.UNIT_H0BM_TOWN_HALL_CRUSADE_T1, Faction.UNLIMITED);
       ScarletCrusade.ModObjectLimit(Constants.UNIT_H0BN_KEEP_CRUSADE_T2, Faction.UNLIMITED);
       ScarletCrusade.ModObjectLimit(Constants.UNIT_H0BO_CASTLE_CRUSADE_T3, Faction.UNLIMITED);
-      ScarletCrusade.ModObjectLimit(Constants.UNIT_H0BP_HOUSEHOLD_CRUSADE_FARM, Faction.UNLIMITED);
+      ScarletCrusade.ModObjectLimit(Constants.UNIT_H0BP_FARMSTEAD_CRUSADE_FARM, Faction.UNLIMITED);
       ScarletCrusade.ModObjectLimit(Constants.UNIT_H0A3_BLACKSMITH_CRUSADE_RESEARCH, Faction.UNLIMITED);
       ScarletCrusade.ModObjectLimit(Constants.UNIT_H09X_SHIPYARD_CRUSADE_SHIPYARD, Faction.UNLIMITED);
       ScarletCrusade.ModObjectLimit(Constants.UNIT_H0AG_HALL_OF_SWORDS_CRUSADE_BARRACKS, Faction.UNLIMITED);
@@ -41,14 +41,14 @@ Fortify your strongholds against the storm to come and make ready to unleash the
       ScarletCrusade.ModObjectLimit(Constants.UNIT_H0BI_CANNON_TOWER_CRUSADE_TOWER, Faction.UNLIMITED);
       ScarletCrusade.ModObjectLimit(Constants.UNIT_H0BJ_IMPROVED_CANNON_TOWER_CRUSADE_TOWER, Faction.UNLIMITED);
       ScarletCrusade.ModObjectLimit(Constants.UNIT_H0BQ_ALTAR_OF_CRUSADERS_CRUSADE_ALTAR, Faction.UNLIMITED);
-      ScarletCrusade.ModObjectLimit(Constants.UNIT_N0D8_TRADE_HOUSE_CRUSADE_SHOP, Faction.UNLIMITED);
+      ScarletCrusade.ModObjectLimit(Constants.UNIT_N0D8_VENDOR_HALL_CRUSADE_SHOP, Faction.UNLIMITED);
 
 
       //Units
       ScarletCrusade.ModObjectLimit(Constants.UNIT_H022_FARMER_DALARAN_WORKER, Faction.UNLIMITED);
       ScarletCrusade.ModObjectLimit(Constants.UNIT_H06B_TEMPLAR_LORDAERON, 6);
       ScarletCrusade.ModObjectLimit(Constants.UNIT_H08I_CRUSADER_SCARLET, Faction.UNLIMITED);
-      ScarletCrusade.ModObjectLimit(Constants.UNIT_H09P_BOWMAN_SCARLET, Faction.UNLIMITED);
+      ScarletCrusade.ModObjectLimit(Constants.UNIT_H09P_LONGBOWMAN_SCARLET, Faction.UNLIMITED);
       ScarletCrusade.ModObjectLimit(Constants.UNIT_H08L_CAVALIER_SCARLET, Faction.UNLIMITED);
       ScarletCrusade.ModObjectLimit(Constants.UNIT_N068_INQUISITOR_SCARLET, Faction.UNLIMITED);
       ScarletCrusade.ModObjectLimit(Constants.UNIT_H08K_MONK_SCARLET, Faction.UNLIMITED);
@@ -61,10 +61,20 @@ Fortify your strongholds against the storm to come and make ready to unleash the
 
 
       //Heroes
-      ScarletCrusade.ModObjectLimit(Constants.UNIT_H08G_SCARLET_CRUSADER_LORD_SCARLET, 1);
-      ScarletCrusade.ModObjectLimit(Constants.UNIT_H0A2_MONASTERY_COMMANDER_SCARLET, 1);
+      ScarletCrusade.ModObjectLimit(Constants.UNIT_H08G_GRAND_CRUSADER_SCARLET, 1);
+      ScarletCrusade.ModObjectLimit(Constants.UNIT_H0A2_SCARLET_COMMANDER_SCARLET, 1);
       ScarletCrusade.ModObjectLimit(Constants.UNIT_H08H_HIGH_INQUISITOR_SCARLET, 1);
-      ScarletCrusade.ModObjectLimit(Constants.UNIT_H00Y_COMMANDER_OF_THE_SCARLET_CRUSADE_SCARLET, 1);
+      ScarletCrusade.ModObjectLimit(Constants.UNIT_H00Y_HIGH_GENERAL_SCARLET, 1);
+
+      //Ships
+      ScarletCrusade.ModObjectLimit(FourCC("hbot"), Faction.UNLIMITED); //Alliance Transport Ship
+      ScarletCrusade.ModObjectLimit(FourCC("h0AR"), Faction.UNLIMITED); //Alliance Scout
+      ScarletCrusade.ModObjectLimit(FourCC("h0AX"), Faction.UNLIMITED); //Alliance Frigate
+      ScarletCrusade.ModObjectLimit(FourCC("h0B3"), Faction.UNLIMITED); //Alliance Fireship
+      ScarletCrusade.ModObjectLimit(FourCC("h0B0"), Faction.UNLIMITED); //Alliance Galley
+      ScarletCrusade.ModObjectLimit(FourCC("h0B6"), Faction.UNLIMITED); //Alliance Boarding
+      ScarletCrusade.ModObjectLimit(FourCC("h0AN"), Faction.UNLIMITED); //Alliance Juggernaut
+      ScarletCrusade.ModObjectLimit(FourCC("h0B7"), 6); //Alliance Bombard
 
       //Upgrades
       ScarletCrusade.ModObjectLimit(FourCC("R05D"), Faction.UNLIMITED); //Chaplain Adept Training
