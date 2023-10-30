@@ -38,6 +38,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
       Darius = new LegendaryHero("Darius Crowley")
       {
         UnitType = Constants.UNIT_HPB2_GILNEAN_LORD_GILNEAS,
+        StartingXp = 5400
       };
 
       GilneasCastle = new Capital

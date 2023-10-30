@@ -124,8 +124,8 @@ public static class Regions
 	public static Rectangle Gilneas { get; set; } = new Rectangle(2848f, -3264f, 9760f, 2624f);
 	public static Rectangle GilneasStartPos { get; set; } = new Rectangle(7936f, 1472f, 8928f, 2112f);
 	public static Rectangle GilneasUnlock1 { get; set; } = new Rectangle(8288f, -2368f, 9824f, -832f);
-	public static Rectangle GilneasUnlock2 { get; set; } = new Rectangle(6624f, -3360f, 8064f, -2400f);
-	public static Rectangle GilneasUnlock3 { get; set; } = new Rectangle(3968f, 416f, 5408f, 2656f);
+	public static Rectangle GilneasUnlock2 { get; set; } = new Rectangle(6624f, -3616f, 8128f, -2400f);
+	public static Rectangle GilneasUnlock3 { get; set; } = new Rectangle(3968f, 320f, 6016f, 2656f);
 	public static Rectangle GilneasUnlock4 { get; set; } = new Rectangle(3392f, -2656f, 5504f, -320f);
 	public static Rectangle GilneasUnlock5 { get; set; } = new Rectangle(6432f, 2112f, 7456f, 2816f);
 	public static Rectangle GilneasUnlock6 { get; set; } = new Rectangle(6080f, -928f, 8672f, 1696f);

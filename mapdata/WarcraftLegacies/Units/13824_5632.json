@@ -1,29 +1,29 @@
 [
   {
     "Flags": 2,
-    "OwnerId": 24,
+    "OwnerId": 20,
     "HP": -1,
     "MP": -1,
-    "TargetAcquisition": -1,
+    "TargetAcquisition": -2,
     "HeroLevel": 1,
     "InventoryData": [],
     "AbilityData": [],
     "CustomPlayerColorId": -1,
     "WaygateDestinationRegionId": -1,
-    "TypeId": 1295003759,
+    "TypeId": 1851875950,
     "Position": {
-      "X": 6400,
-      "Y": 21632
+      "X": 14009.217,
+      "Y": 5665.71
     },
-    "Rotation": 4.71238899230957,
+    "Rotation": 2.4686338901519775,
     "Scale": {
       "X": 1,
       "Y": 1,
       "Z": 1
     },
-    "SkinId": 1295003759,
+    "SkinId": 1851875950,
     "MapItemTableId": -1,
     "ItemTableSets": [],
-    "CreationNumber": 3478
+    "CreationNumber": 878
   }
 ]

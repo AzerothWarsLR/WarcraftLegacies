@@ -27,7 +27,7 @@ namespace WarcraftLegacies.Source.Setup
       var thunderClap = new Stomp(FourCC("A0QC"))
       {
         Radius = 300,
-        DamageBase = 65,
+        DamageBase = 85,
         DurationBase = 1,
         StunAbilityId = FourCC("S00H"),
         StunOrderId = OrderId("cripple"),
@@ -222,6 +222,7 @@ namespace WarcraftLegacies.Source.Setup
       ScarletSpellSetup.Setup();
       DalaranSpellSetup.Setup();
       TrollSpellSetup.Setup();
+      GilneasSpellSetup.Setup();
       SharedSpellSetup.Setup();
     }
   }
