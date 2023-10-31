@@ -30,7 +30,7 @@ namespace WarcraftLegacies.Source.Quests.Scarlet
       "ReplaceableTextures/CommandButtons/BTNStromgardeAltar.blp")
     {
       Required = true;
-      AddObjective(new ObjectiveBuildUniqueBuildingsInRect(questRect, "in Andorhal", 3));
+      AddObjective(new ObjectiveBuildUniqueBuildingsInRect(questRect, "in Capital City", 3));
       AddObjective(new ObjectiveControlCapital(capitalPalace, false));
       AddObjective(new ObjectiveControlLevel(
         ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N01G_LORDAERON_CITY), 4));
