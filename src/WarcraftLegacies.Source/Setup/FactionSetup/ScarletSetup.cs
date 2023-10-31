@@ -38,8 +38,8 @@ Fortify your strongholds against the storm to come and make ready to unleash the
       ScarletCrusade.ModObjectLimit(Constants.UNIT_H0BE_STUDIUM_CRUSADE_MAGIC, Faction.UNLIMITED);
       ScarletCrusade.ModObjectLimit(Constants.UNIT_H0BL_ROOKERY_CRUSADE_BEAST, Faction.UNLIMITED);
       ScarletCrusade.ModObjectLimit(Constants.UNIT_N035_DIVINE_BASTION_CRUSADE_SPECIAL, 1);
-      ScarletCrusade.ModObjectLimit(Constants.UNIT_H0BI_CANNON_TOWER_CRUSADE_TOWER, Faction.UNLIMITED);
-      ScarletCrusade.ModObjectLimit(Constants.UNIT_H0BJ_IMPROVED_CANNON_TOWER_CRUSADE_TOWER, Faction.UNLIMITED);
+      ScarletCrusade.ModObjectLimit(Constants.UNIT_H0BI_BOMBARD_TOWER_CRUSADE_TOWER, Faction.UNLIMITED);
+      ScarletCrusade.ModObjectLimit(Constants.UNIT_H0BJ_IMPROVED_BOMBARD_TOWER_CRUSADE_TOWER, Faction.UNLIMITED);
       ScarletCrusade.ModObjectLimit(Constants.UNIT_H0BQ_ALTAR_OF_CRUSADERS_CRUSADE_ALTAR, Faction.UNLIMITED);
       ScarletCrusade.ModObjectLimit(Constants.UNIT_N0D8_VENDOR_HALL_CRUSADE_SHOP, Faction.UNLIMITED);
 

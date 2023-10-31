@@ -80,7 +80,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
       CapitalPalace.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_H007_IMPROVED_CANNON_TOWER_LORDAERON_TOWER,
         new Point(9545, 9372)));
       CreateTrigger()
-        .RegisterUnitEvent(CapitalPalace.Unit, EVENT_UNIT_DEATH)
+        .RegisterUnitEvent(CapitalPalace.Unit, EVENT_UNIT_CHANGE_OWNER)
         .AddAction(() =>
         {
           Terenas.Unit.Kill();
