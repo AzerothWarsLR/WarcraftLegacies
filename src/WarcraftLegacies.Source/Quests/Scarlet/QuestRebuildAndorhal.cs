@@ -21,11 +21,7 @@ namespace WarcraftLegacies.Source.Quests.Scarlet
       @"ReplaceableTextures\CommandButtons\BTNAlteracGryphonAviary.blp")
     {
       Required = true;
-      AddObjective(new ObjectiveBuildInRect(questRect, "in Andorhal", Constants.UNIT_H0BM_TOWN_HALL_CRUSADE_T1));
-      AddObjective(new ObjectiveBuildInRect(questRect, "in Andorhal", Constants.UNIT_H0BP_FARMSTEAD_CRUSADE_FARM, 4));
-      AddObjective(new ObjectiveBuildInRect(questRect, "in Andorhal", Constants.UNIT_H0AG_HALL_OF_SWORDS_CRUSADE_BARRACKS));
-      AddObjective(new ObjectiveBuildInRect(questRect, "in Andorhal", Constants.UNIT_H0BL_ROOKERY_CRUSADE_BEAST));
-      AddObjective(new ObjectiveBuildInRect(questRect, "in Andorhal", Constants.UNIT_N0D8_VENDOR_HALL_CRUSADE_SHOP));
+      AddObjective(new ObjectiveBuildUniqueBuildingsInRect(questRect, "in Andorhal", 5));
       AddObjective(new ObjectiveControlLevel(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N01H_ANDORHAL), 2));
       ResearchId = Constants.UPGRADE_R03P_QUEST_COMPLETED_ANDORHAL; 
     }

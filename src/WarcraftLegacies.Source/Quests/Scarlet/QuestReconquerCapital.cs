@@ -30,9 +30,7 @@ namespace WarcraftLegacies.Source.Quests.Scarlet
       "ReplaceableTextures/CommandButtons/BTNStromgardeAltar.blp")
     {
       Required = true;
-      AddObjective(new ObjectiveBuildInRect(questRect, "in Lordaeron City", Constants.UNIT_H0BP_FARMSTEAD_CRUSADE_FARM, 4));
-      AddObjective(new ObjectiveBuildInRect(questRect, "in Lordaeron City", Constants.UNIT_H0AG_HALL_OF_SWORDS_CRUSADE_BARRACKS));
-      AddObjective(new ObjectiveBuildInRect(questRect, "in Lordaeron City", Constants.UNIT_H0BQ_ALTAR_OF_CRUSADERS_CRUSADE_ALTAR));
+      AddObjective(new ObjectiveBuildUniqueBuildingsInRect(questRect, "in Andorhal", 3));
       AddObjective(new ObjectiveControlCapital(capitalPalace, false));
       AddObjective(new ObjectiveControlLevel(
         ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N01G_LORDAERON_CITY), 4));

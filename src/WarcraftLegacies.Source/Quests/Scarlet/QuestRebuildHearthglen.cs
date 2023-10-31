@@ -23,9 +23,7 @@ namespace WarcraftLegacies.Source.Quests.Scarlet
       @"ReplaceableTextures\CommandButtons\BTNAlteracWizardTower.blp")
     {
       Required = true;
-      AddObjective(new ObjectiveBuildInRect(questRect, "in Hearthglen", Constants.UNIT_H0BM_TOWN_HALL_CRUSADE_T1));
-      AddObjective(new ObjectiveBuildInRect(questRect, "in Hearthglen", Constants.UNIT_H0BP_FARMSTEAD_CRUSADE_FARM, 3));
-      AddObjective(new ObjectiveBuildInRect(questRect, "in Hearthglen", Constants.UNIT_H0AG_HALL_OF_SWORDS_CRUSADE_BARRACKS));
+      AddObjective(new ObjectiveBuildUniqueBuildingsInRect(questRect, "in Hearthglen", 3));
       AddObjective(new ObjectiveControlCapital(monastery, false));
       AddObjective(new ObjectiveControlLevel(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N044_HEARTHGLEN), 2));
       ResearchId = Constants.UPGRADE_R026_QUEST_COMPLETED_HEARTHGLEN;
