@@ -38,7 +38,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
         DurationBase = 4,
         DurationLevel = 2,
         StunAbilityId = Constants.ABILITY_A0L0_SLEEP_DUMMY,
-        StunOrderString = "sleep",
+        StunOrderId = OrderId("sleep"),
         SpecialEffect = @"Abilities\Spells\Other\HowlOfTerror\HowlCaster.mdl"
       };
       SpellSystem.Register(warStompMeredith);

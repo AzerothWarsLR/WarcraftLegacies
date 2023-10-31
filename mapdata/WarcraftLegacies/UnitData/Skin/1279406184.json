@@ -8,7 +8,7 @@
     {
       "Id": 1868786037,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNGilneasCathedral.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNAlteracGryphonAviary.blp"
     },
     {
       "Id": 2020631157,
@@ -17,7 +17,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "(Onslaught Siege)"
+      "Value": "(Crusade Beast)"
     },
     {
       "Id": 1818520949,
@@ -37,7 +37,7 @@
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 4
+      "Value": 3
     },
     {
       "Id": 1935832437,
@@ -47,17 +47,17 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Air production building.|n|n|cfff5962dTrains:|R "
+      "Value": "Air production building.|n|n|cfff5962dTrains:|R Crimson Commander, Eagle Rider, Gryphon Marksman"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "Air"
+      "Value": "Rookery"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "Build Academy"
+      "Value": "Build Rookery"
     }
   ]
 }

@@ -12,7 +12,7 @@
     },
     {
       "Id": 2020631157,
-      "Value": 2
+      "Value": 1
     },
     {
       "Id": 1635083125,
@@ -32,7 +32,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "E"
+      "Value": "W"
     },
     {
       "Id": 2053990773,
@@ -72,12 +72,16 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Strongest Warriors of the Light.|n|cfff5962dAbilities:|R Judgement, Resistant Skin|n|cff99b4d1Can only train 3.|r|n|cffffcc00Attacks land units.|r"
+      "Value": "Strongest Warriors of the Light.|n|cfff5962dAbilities:|R Charge, Retribution Aura, Righteous Fury, Resistant Skin|n|cff99b4d1Can only train 3.|r|n|cffffcc00Attacks land units.|r"
     },
     {
       "Id": 1684960117,
       "Type": 3,
       "Value": "HeroDemonHunterMorphed"
+    },
+    {
+      "Id": 1735156597,
+      "Value": 255
     }
   ]
 }

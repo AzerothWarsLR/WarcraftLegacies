@@ -59,15 +59,16 @@ namespace MacroTools.Instances
       foreach (var gate in _gates)
       {
         var distance = MathEx.GetDistanceBetweenPoints(position, gate.InteriorPosition);
-        if (!(distance > distanceToNearestGate)) 
-          continue;
-        nearestGate = gate;
-        distanceToNearestGate = distance;
+        if (distance <= distanceToNearestGate)
+        {
+          nearestGate = gate;
+          distanceToNearestGate = distance;
+        }
       }
 
       if (nearestGate == null)
         throw new InvalidOperationException(
-          $"Could not find the nearest {nameof(Gate)} for {nameof(Instance)} {_name} at position {position}.");
+          $"Could not find the nearest {nameof(Gate)} for {nameof(Instance)} {_name} at position {position.X}, {position.Y}.");
       
       return nearestGate;
     }
@@ -92,10 +93,15 @@ namespace MacroTools.Instances
         _dependencyDiesTrigger.Destroy();
         foreach (var rect in _rectangles)
         {
-          var unitsInRect = CreateGroup().EnumUnitsInRect(rect).EmptyToList();
+          var unitsInRect = CreateGroup()
+            .EnumUnitsInRect(rect)
+            .EmptyToList();
+
+          var evacuationPosition = _gates.First().ExteriorPosition;
+          
           KillUnits(unitsInRect);
-          EvacuateUnits(unitsInRect);
-          EvacuateItemsInRect(rect);
+          EvacuateUnits(unitsInRect, evacuationPosition);
+          EvacuateItemsInRect(rect, evacuationPosition);
         }
 
         foreach (var unit in _dependencies)
@@ -110,27 +116,24 @@ namespace MacroTools.Instances
     private static void KillUnits(List<unit> unitsToKill)
     {
       foreach (var unit in unitsToKill)
-        KillUnit(unit);
+        if (!BlzIsUnitInvulnerable(unit))
+          KillUnit(unit);
     }
     
-    private void EvacuateUnits(List<unit> unitsInRect)
+    private static void EvacuateUnits(List<unit> unitsInRect, Point evacuationPosition)
     {
-      foreach (var unit in unitsInRect)
-      {
-        var exteriorPosition = GetNearestGate(unit.GetPosition()).ExteriorPosition;
-        unit.SetPosition(exteriorPosition);
-      }
+      foreach (var unit in unitsInRect) 
+        unit.SetPosition(evacuationPosition);
     }
 
-    private void EvacuateItemsInRect(Rectangle rect)
+    private static void EvacuateItemsInRect(Rectangle rect, Point evacuationPosition)
     {
       EnumItemsInRect(rect.Rect, null, () =>
       {
         try
         {
           var enumItem = GetEnumItem();
-          var exteriorPosition = GetNearestGate(enumItem.GetPosition()).ExteriorPosition;
-          enumItem.SetPosition(exteriorPosition);
+          enumItem.SetPosition(evacuationPosition);
         }
         catch (Exception ex)
         {

@@ -1,0 +1,29 @@
+{
+  "OldId": 1802723906,
+  "NewId": 808857666,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1953653094,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNFlurryOfKnives.blp"
+    },
+    {
+      "Id": 1885959270,
+      "Type": 3,
+      "Value": "Flurry of Knives"
+    },
+    {
+      "Id": 1700951398,
+      "Type": 3,
+      "Value": "This unit has a Flurry of Knives, it\u0027s attack speed is dramatically increased."
+    },
+    {
+      "Id": 1952543846,
+      "Type": 3,
+      "Value": "war3mapImported\\BoneDaggerMissile.mdl,war3mapImported\\BoneDaggerMissile.mdl"
+    }
+  ]
+}

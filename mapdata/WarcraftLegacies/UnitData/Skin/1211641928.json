@@ -23,7 +23,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Mystical Hero, adept at healing and supporting magic.|n|cfff5962dCan Learn:|R Healing Wave, Holy Shackles, Brilliance Aura, Rays of the New Dawn|n|n|cffffcc00Attacks land and air units.|R"
+      "Value": "Mystical Hero, adept at healing and supporting magic.|n|cfff5962dAbilities:|r Healing Frenzy|n|cfff5962dCan Learn:|R Healing Wave, Dispel Magic, Spiritual Guidance, Swift Holy Light|n|n|cffffcc00Attacks land and air units.|R"
     },
     {
       "Id": 1953980789,
@@ -51,12 +51,12 @@
     },
     {
       "Id": 2020631157,
-      "Value": 2
+      "Value": 3
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "E"
+      "Value": "R"
     },
     {
       "Id": 1885959285,

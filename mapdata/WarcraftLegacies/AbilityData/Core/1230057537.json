@@ -1,5 +1,5 @@
 {
-  "OldId": 1685475137,
+  "OldId": 2004054593,
   "NewId": 1230057537,
   "Unk": [
     0
@@ -7,87 +7,84 @@
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1852072801,
-      "Type": 2,
+      "Id": 1935895905,
+      "Value": 0
+    },
+    {
+      "Level": 2,
+      "Id": 1935895905,
+      "Value": 90
+    },
+    {
+      "Level": 3,
+      "Id": 1935895905,
+      "Value": 105
+    },
+    {
+      "Level": 4,
+      "Id": 1935895905,
       "Value": 120
     },
     {
       "Level": 2,
-      "Id": 1852072801,
-      "Type": 2,
-      "Value": 135
+      "Pointer": 1,
+      "Id": 845510472,
+      "Value": 4
     },
     {
       "Level": 3,
-      "Id": 1852072801,
-      "Type": 2,
-      "Value": 150
+      "Pointer": 1,
+      "Id": 845510472,
+      "Value": 4
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": 845510472,
+      "Value": 4
     },
     {
       "Level": 1,
-      "Id": 1920296033,
-      "Type": 2,
-      "Value": 10
-    },
-    {
-      "Level": 2,
-      "Id": 1920296033,
-      "Type": 2,
-      "Value": 15
-    },
-    {
-      "Level": 3,
-      "Id": 1920296033,
-      "Type": 2,
-      "Value": 20
-    },
-    {
-      "Level": 1,
-      "Id": 1969514593,
-      "Type": 2,
-      "Value": 10
-    },
-    {
-      "Level": 2,
-      "Id": 1969514593,
-      "Type": 2,
-      "Value": 15
-    },
-    {
-      "Level": 3,
-      "Id": 1969514593,
-      "Type": 2,
-      "Value": 20
+      "Id": 828733256,
+      "Type": 3,
+      "Value": "e027"
     },
     {
       "Id": 1986358369,
-      "Value": 3
+      "Value": 1
     },
     {
-      "Id": 1802726497,
-      "Value": 5
-    },
-    {
-      "Id": 1986818657,
-      "Value": 10
+      "Id": 1919248481,
+      "Value": 0
     },
     {
       "Level": 1,
-      "Id": 1718968929,
-      "Type": 3,
-      "Value": "B0A2,BOvc"
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 30
     },
     {
-      "Level": 2,
-      "Id": 1718968929,
-      "Type": 3,
-      "Value": "B0A2,BOvc"
+      "Level": 1,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 30
     },
     {
-      "Level": 3,
-      "Id": 1718968929,
+      "Level": 1,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 65
+    },
+    {
+      "Id": 1667330657,
       "Type": 3,
-      "Value": "B0A2,BOvc"
+      "Value": "human"
+    },
+    {
+      "Level": 1,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 200
     }
   ]
 }

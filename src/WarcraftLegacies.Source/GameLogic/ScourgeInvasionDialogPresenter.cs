@@ -6,14 +6,14 @@ using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.GameLogic
 {
-  public sealed class ScourgeInvasionDialogPresenter : ChoiceDialogPresenter<Rectangle>
+  public sealed class ScourgeInvasionDialogPresenter : ChoiceDialogPresenter<Rectangle?>
   {
-    public ScourgeInvasionDialogPresenter(params Choice<Rectangle>[] invasionTargets) : base(invasionTargets,
+    public ScourgeInvasionDialogPresenter(params Choice<Rectangle?>[] invasionTargets) : base(invasionTargets,
       "Pick invasion location")
     {
     }
 
-    protected override void OnChoicePicked(player pickingPlayer, Choice<Rectangle> choice)
+    protected override void OnChoicePicked(player pickingPlayer, Choice<Rectangle?> choice)
     {
       HasChoiceBeenPicked = true;
       if (choice.Data == null)
@@ -38,7 +38,7 @@ namespace WarcraftLegacies.Source.GameLogic
         SetCameraPosition(invasionLocation.Center.X, invasionLocation.Center.Y);
     }
 
-    protected override void OnChoiceExpired(player pickingPlayer, Choice<Rectangle> choice)
+    protected override void OnChoiceExpired(player pickingPlayer, Choice<Rectangle?> choice)
     {
       if (GetLocalPlayer() == pickingPlayer)
         DialogDisplay(GetLocalPlayer(), PickDialog, false);

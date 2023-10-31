@@ -313,6 +313,7 @@ namespace MacroTools.Extensions
     /// <summary>
     /// Orders a unit to perform a specified order at a specified <see cref="Point"/>.
     /// </summary>
+    [Obsolete("Use the version that takes an integer order ID instead.")]
     public static unit IssueOrder(this unit unit, string order, Point target)
     {
       IssuePointOrder(unit, order, target.X, target.Y);
@@ -322,9 +323,28 @@ namespace MacroTools.Extensions
     /// <summary>
     /// Orders a unit to perform a specified order on the specified target.
     /// </summary>
+    [Obsolete("Use the version that takes an integer order ID instead.")]
     public static unit IssueOrder(this unit unit, string order, widget target)
     {
       IssueTargetOrder(unit, order, target);
+      return unit;
+    }
+    
+    /// <summary>
+    /// Orders a unit to perform a specified order at a specified <see cref="Point"/>.
+    /// </summary>
+    public static unit IssueOrder(this unit unit, int orderId, Point target)
+    {
+      IssuePointOrderById(unit, orderId, target.X, target.Y);
+      return unit;
+    }
+
+    /// <summary>
+    /// Orders a unit to perform a specified order on the specified target.
+    /// </summary>
+    public static unit IssueOrder(this unit unit, int orderId, widget target)
+    {
+      IssueTargetOrderById(unit, orderId, target);
       return unit;
     }
 

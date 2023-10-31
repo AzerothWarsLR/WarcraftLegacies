@@ -36,7 +36,7 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "(Scourge-Arthas)"
+      "Value": "(Death Knight Arthas)"
     },
     {
       "Id": 1952540001,
@@ -51,7 +51,7 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "Reaping Hour"
+      "Value": "Apocalypse"
     },
     {
       "Id": 1918988897,
@@ -70,12 +70,12 @@
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "Learn Reaping Hour - [|cffffcc00Level %d|r]"
+      "Value": "Learn Apocalypse - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "Conjures 7 spectral horsemen that charge to the target location, dealing damage to each enemy unit struck. Deals 1% additional damage for each 1% of hit points the damaged unit is missing.  |n|n|cffffcc00Level 1|r - Deals 300 damage.|n|cffffcc00Level 2|r - Deals 400 damage. |n|cffffcc00Level 3|r - Deals 500 damage."
+      "Value": "Conjures 7 spectral horsemen that charge to the target location. Each unit struck takes damage instantly and a further \u003CA0YD,DataA1\u003E damage per second for \u003CA0YD,Dur1\u003E seconds. Units that die under the effects of Apocalypse are reanimated as Zombies lasting \u003CA0YD,Cast1\u003E seconds. |n|n|cffffcc00Level 1|r - Deals 100 damage instantly.|n|cffffcc00Level 2|r - Deals 150 damage instantly. |n|cffffcc00Level 3|r - Deals 200 damage instantly."
     },
     {
       "Id": 1952543841,
@@ -86,37 +86,37 @@
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "Reaping Hour - [|cffffcc00Level 1|r]"
+      "Value": "Apocalypse - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "Reaping Hour - [|cffffcc00Level 2|r]"
+      "Value": "Apocalypse - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "Reaping Hour - [|cffffcc00Level 3|r]"
+      "Value": "Apocalypse - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Conjures 7 spectral horsemen that charge to the target location, dealing 100 damage to each enemy unit struck. Deals 1% additional damage for each 1% of hit points the damaged unit is missing."
+      "Value": "Conjures 7 spectral horsemen that charge to the target location. Each unit struck takes 100 damage instantly and a further \u003CA0YD,DataA1\u003E damage per second for \u003CA0YD,Dur1\u003E seconds. Units that die under the effects of Apocalypse are reanimated Zombies lasting \u003CA0YD,Cast1\u003E seconds."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Conjures 7 spectral horsemen that charge to the target location, dealing 150 damage to each enemy unit struck. Deals 1% additional damage for each 1% of hit points the damaged unit is missing."
+      "Value": "Conjures 7 spectral horsemen that charge to the target location. Each unit struck takes 150 damage instantly and a further \u003CA0YD,DataA1\u003E damage per second for \u003CA0YD,Dur1\u003E seconds. Units that die under the effects of Apocalypse are reanimated Zombies lasting \u003CA0YD,Cast1\u003E seconds."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Conjures 7 spectral horsemen that charge to the target location, dealing 200 damage to each enemy unit struck. Deals 1% additional damage for each 1% of hit points the damaged unit is missing."
+      "Value": "Conjures 7 spectral horsemen that charge to the target location. Each unit struck takes 200 damage instantly and a further \u003CA0YD,DataA1\u003E damage per second for \u003CA0YD,Dur1\u003E seconds. Units that die under the effects of Apocalypse are reanimated Zombies lasting \u003CA0YD,Cast1\u003E seconds."
     }
   ]
 }

@@ -8,7 +8,7 @@
     {
       "Id": 1868786037,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNGilneasWizardTower.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNAlteracWizardTower.blp"
     },
     {
       "Id": 2020631157,
@@ -17,7 +17,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "(Onslaught Magic)"
+      "Value": "(Crusade Magic)"
     },
     {
       "Id": 1818520949,
@@ -42,17 +42,17 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Spellcaster production building. |n|n|r|cfff5962dTrains:|R Cleric, Druids of the Scythe, Blackwald Spider|n|cfff5962dResearches:|R Cleric Training, Druid of the Scythe Training"
+      "Value": "Spellcaster production building. |n|n|r|cfff5962dTrains:|R Inquisitor, Monk, Bishop|n|cfff5962dResearches:|R Inquisitor Training, Monk Training"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "Temple of the Cursed"
+      "Value": "Studium"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "Build Temple of the Cursed"
+      "Value": "Build Studium"
     },
     {
       "Id": 1633907573,

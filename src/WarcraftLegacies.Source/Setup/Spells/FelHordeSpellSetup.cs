@@ -2,6 +2,8 @@
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.Spells;
 using MacroTools.SpellSystem;
+using WarcraftLegacies.Source.Spells;
+using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup.Spells
 {
@@ -38,7 +40,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
         DamageBase = 25,
         DurationBase = 3,
         StunAbilityId = Constants.ABILITY_A0WN_STUN_UNIT_DUMMY,
-        StunOrderString = "thunderbolt",
+        StunOrderId = OrderId("thunderbolt"),
         SpecialEffect = @"Abilities\Spells\Orc\WarStomp\WarStompCaster.mdl"
       };
       SpellSystem.Register(warStompKazzak);

@@ -1,4 +1,5 @@
 ﻿using System.Linq;
+using MacroTools.DummyCasters;
 using MacroTools.Extensions;
 using MacroTools.SpellSystem;
 using WCSharp.Shared.Data;
@@ -6,38 +7,36 @@ using static War3Api.Common;
 
 namespace MacroTools.Spells
 {
+  /// <summary>Summons a limited number of units from an area to the caster's position.</summary>
   public sealed class MultiTargetRecall : Spell
   {
     public float Radius { get; init; }
     
+    /// <summary>How many units get summoned by the spell.</summary>
     public int AmountToTarget { get; init; }
 
-    private DummyCast.CastFilter CastFilter { get; }
-    
     public SpellTargetType TargetType { get; init; } = SpellTargetType.None;
 
     private Point? Center { get; set; }
     
-    public MultiTargetRecall(int id, DummyCast.CastFilter castFilter) : base(id)
+    private DummyCasterManager.CastFilter CastFilter { get; }
+    
+    public MultiTargetRecall(int id, DummyCasterManager.CastFilter castFilter) : base(id)
     {
       CastFilter = castFilter;
     }
     
     public override void OnCast(unit caster, unit target, Point targetPoint)
     {
-      Center = TargetType == SpellTargetType.None ? new Point(GetUnitX(caster), GetUnitY(caster)) : targetPoint;
-    }
-
-    public override void OnStop(unit caster)
-    {
-      if (Center == null) return;
-      foreach (var unit in CreateGroup()
-                 .EnumUnitsInRange(Center, Radius).EmptyToList()
-                 .FindAll(unit => CastFilter(caster, unit) && !unit.IsResistant())
-                 .Take(AmountToTarget))
-      {
+      var center = TargetType == SpellTargetType.None ? new Point(GetUnitX(caster), GetUnitY(caster)) : targetPoint;
+      var targets = CreateGroup()
+        .EnumUnitsInRange(center, Radius)
+        .EmptyToList()
+        .Where(unit => CastFilter(caster, unit) && !unit.IsResistant() && unit != caster)
+        .Take(AmountToTarget);
+      
+      foreach (var unit in targets) 
         SetUnitPosition(unit, GetUnitX(caster), GetUnitY(caster));
-      }
     }
 
     

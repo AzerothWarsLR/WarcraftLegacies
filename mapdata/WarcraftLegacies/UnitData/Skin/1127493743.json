@@ -1,5 +1,5 @@
 {
-  "OldId": 1952539503,
+  "OldId": 1953195119,
   "NewId": 1127493743,
   "Unk": [
     0
@@ -8,109 +8,76 @@
     {
       "Id": 1868786037,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNSiegeCannon.blp"
+      "Value": "ReplaceableTextures/CommandButtons/BTNRedLioness3.blp"
     },
     {
-      "Id": 2020631157,
-      "Value": 1
+      "Id": 1635083125,
+      "Type": 3,
+      "Value": "None"
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "(scarlet)"
-    },
-    {
-      "Id": 1953523061,
-      "Value": 0
-    },
-    {
-      "Id": 1685218677,
-      "Type": 1,
-      "Value": 30
+      "Value": "(Scarlet)"
     },
     {
       "Id": 1818520949,
       "Type": 3,
-      "Value": "war3mapImported\\Cannon.mdl"
-    },
-    {
-      "Id": 1919252085,
-      "Value": 0
+      "Value": "war3mapImported\\Seraphim.mdl"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "W"
+      "Value": "Q"
     },
     {
-      "Id": 2054188149,
+      "Id": 2053990773,
       "Type": 2,
-      "Value": 60.4
-    },
-    {
-      "Id": 1886940533,
-      "Type": 1,
-      "Value": 10
-    },
-    {
-      "Id": 1920494965,
-      "Type": 1,
-      "Value": 10
-    },
-    {
-      "Id": 828468597,
-      "Type": 2,
-      "Value": 0.05
+      "Value": 90
     },
     {
       "Id": 1831952757,
       "Type": 3,
-      "Value": "war3mapImported\\LowQualityCannonball.mdl"
+      "Value": ""
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.75
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "Bombard"
+      "Value": "Seraphim"
     },
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 2
+      "Value": 1.3
     },
     {
-      "Id": 1751675765,
-      "Type": 1,
-      "Value": 160
-    },
-    {
-      "Id": 2003334005,
-      "Type": 1,
-      "Value": 160
-    },
-    {
-      "Id": 2020111221,
-      "Type": 1,
-      "Value": 60
-    },
-    {
-      "Id": 2036888437,
-      "Type": 1,
-      "Value": 60
+      "Id": 1769173877,
+      "Type": 3,
+      "Value": ""
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "Train Bombard"
+      "Value": "Train Seraphim"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Powerful portable artillery.|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land units and trees.|r"
+      "Value": "Powerul Warriors of the Light.|n|cfff5962dAbilities:|R Charge, Critical Strike, Conveyance Aura, Resistant Skin|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land units.|r"
     },
     {
       "Id": 1684960117,
       "Type": 3,
-      "Value": "Ballista"
+      "Value": "HeroFemaleDemonHunter"
+    },
+    {
+      "Id": 1735156597,
+      "Value": 255
     }
   ]
 }

@@ -8,7 +8,7 @@
     {
       "Id": 1868786037,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNGilneasBlacksmith.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNAlteracBlacksmith.blp"
     },
     {
       "Id": 2020631157,
@@ -17,7 +17,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "(Onslaught Research)"
+      "Value": "(Crusade Research)"
     },
     {
       "Id": 1818520949,
@@ -47,7 +47,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "General research building. |n|n|cfff5962dResearches:|r Forged Weaponry, Armor Plating, Power Infusion, Improved Lumber Harvesting, Improved Masonry, Navigation, Improved Cannons, Fortified Hulls"
+      "Value": "General research building. |n|n|cfff5962dResearches:|r Forged Weaponry, Armor Plating, Power Infusion, Improved Lumber Harvesting, Improved Masonry, Flight, Navigation, Improved Cannons, Fortified Hulls"
     }
   ]
 }

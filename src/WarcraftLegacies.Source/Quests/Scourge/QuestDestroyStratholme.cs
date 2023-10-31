@@ -1,10 +1,11 @@
-﻿using MacroTools.Extensions;
+﻿using System;
+using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
-using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.QuestBased;
 using MacroTools.QuestSystem;
+using WarcraftLegacies.Source.Quests.Lordaeron;
 using static War3Api.Common;
 using WarcraftLegacies.Source.Setup.FactionSetup;
 
@@ -18,9 +19,13 @@ namespace WarcraftLegacies.Source.Quests.Scourge
       "When the city of Stratholme falls, Prince Arthas' despair will make him more susceptible to the power of the Lich King.",
       @"ReplaceableTextures\CommandButtons\BTNRuneblade.blp")
     {
+      if (LordaeronSetup.Lordaeron == null)
+        throw new InvalidOperationException($"Could not construct {nameof(QuestDestroyStratholme)} because {nameof(LordaeronSetup.Lordaeron)} is null.");
+      
       _arthas = arthas;
       AddObjective(new ObjectiveCapitalDead(stratholme));
-      AddObjective(new ObjectiveFactionQuestNotComplete(LordaeronSetup.Lordaeron?.GetQuestByTitle("Line of Succession"), LordaeronSetup.Lordaeron));
+      var lineOfSuccession = LordaeronSetup.Lordaeron.GetQuestByType(typeof(QuestKingArthas));
+      AddObjective(new ObjectiveFactionQuestNotComplete(lineOfSuccession, LordaeronSetup.Lordaeron));
       ResearchId = Constants.UPGRADE_R01K_QUEST_COMPLETED_THE_CULLING;
       Required = true;
     }

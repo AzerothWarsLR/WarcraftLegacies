@@ -1,6 +1,5 @@
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
-using WarcraftLegacies.Source.GameLogic;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Commands

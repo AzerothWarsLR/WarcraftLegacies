@@ -1,4 +1,5 @@
-﻿using MacroTools.PassiveAbilities;
+﻿using MacroTools.DummyCasters;
+using MacroTools.PassiveAbilities;
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.Spells;
 using MacroTools.SpellSystem;
@@ -18,7 +19,7 @@ namespace WarcraftLegacies.Source.Setup
         DamageBase = 9000,
         DurationBase = 3,
         StunAbilityId = FourCC("A0WN"),
-        StunOrderString = "thunderbolt",
+        StunOrderId = OrderId("thunderbolt"),
         SpecialEffect = @"Abilities\Spells\Orc\WarStomp\WarStompCaster.mdl"
       };
       SpellSystem.Register(warStompImmoltar);
@@ -26,10 +27,10 @@ namespace WarcraftLegacies.Source.Setup
       var thunderClap = new Stomp(FourCC("A0QC"))
       {
         Radius = 300,
-        DamageBase = 65,
+        DamageBase = 85,
         DurationBase = 1,
         StunAbilityId = FourCC("S00H"),
-        StunOrderString = "cripple",
+        StunOrderId = OrderId("cripple"),
         SpecialEffect = @"Abilities\Spells\Human\Thunderclap\ThunderClapCaster.mdl"
       };
       SpellSystem.Register(thunderClap);
@@ -37,7 +38,7 @@ namespace WarcraftLegacies.Source.Setup
       var massAntiMagicShell = new MassAnySpell(FourCC("A099"))
       {
         DummyAbilityId = FourCC("A0JN"),
-        DummyAbilityOrderString = "antimagicshell",
+        DummyAbilityOrderId = OrderId("antimagicshell"),
         Radius = 200,
         CastFilter = CastFilters.IsTargetAllyAndAlive,
         TargetType = SpellTargetType.Point
@@ -47,7 +48,7 @@ namespace WarcraftLegacies.Source.Setup
       var massEnrage = new MassAnySpell(FourCC("A0QK"))
       {
         DummyAbilityId = FourCC("ACuf"),
-        DummyAbilityOrderString = "unholyfrenzy",
+        DummyAbilityOrderId = OrderId("unholyfrenzy"),
         Radius = 200,
         CastFilter = CastFilters.IsTargetEnemyAndAlive,
         TargetType = SpellTargetType.Point
@@ -57,7 +58,7 @@ namespace WarcraftLegacies.Source.Setup
       var massFrostArmor = new MassAnySpell(Constants.ABILITY_A0H3_MASS_ICE_ARMOR_WARSONG_GAHZ_RILLA)
       {
         DummyAbilityId = Constants.ABILITY_A0H6_MASS_ICE_ARMOR_WARSONG_GAHZ_RILLA_DUMMY,
-        DummyAbilityOrderString = "frostarmor",
+        DummyAbilityOrderId = OrderId("frostarmor"),
         Radius = 200,
         CastFilter = CastFilters.IsTargetAllyAndAlive,
         TargetType = SpellTargetType.Point
@@ -67,7 +68,7 @@ namespace WarcraftLegacies.Source.Setup
       var scattershot = new MassAnySpell(Constants.ABILITY_A0GP_SCATTERSHOT_KUL_TIRAS_LADY_ASHVANE)
       {
         DummyAbilityId = Constants.ABILITY_A0GL_SCATTERSHOT_KUL_TIRAS_LADY_ASHVANE_DUMMY,
-        DummyAbilityOrderString = "thunderbolt",
+        DummyAbilityOrderId = OrderId("thunderbolt"),
         Radius = 250,
         CastFilter = CastFilters.IsTargetEnemyAndAlive,
         TargetType = SpellTargetType.Point,
@@ -79,7 +80,7 @@ namespace WarcraftLegacies.Source.Setup
         Constants.ABILITY_A0LN_THUNDER_FISTS_CHO_GALL)
       {
         DummyAbilityId = Constants.ABILITY_A024_THUNDER_FISTS_CHO_GALL_DUMMY_CAST,
-        DummyOrderString = "forkedlightning",
+        DummyOrderId = OrderId("forkedlightning"),
         ProcChance = 0.15f
       };
       PassiveAbilityManager.Register(thunderFists);
@@ -87,7 +88,7 @@ namespace WarcraftLegacies.Source.Setup
       var seismicShard = new MassAnySpell(Constants.ABILITY_A0OD_SEISMIC_SHARD_AZIL)
       {
         DummyAbilityId = Constants.ABILITY_A0OE_SEISMIC_SHARD_AZIL_DUMMY,
-        DummyAbilityOrderString = "thunderbolt",
+        DummyAbilityOrderId = OrderId("thunderbolt"),
         Radius = 250,
         CastFilter = CastFilters.IsTargetEnemyAndAlive,
         TargetType = SpellTargetType.Point
@@ -97,7 +98,7 @@ namespace WarcraftLegacies.Source.Setup
       var elunesGaze = new MassAnySpell(Constants.ABILITY_A0VX_ELUNE_S_GAZE_SENTINELS)
       {
         DummyAbilityId = Constants.ABILITY_A0VY_INVISIBILITY_LB,
-        DummyAbilityOrderString = "invisibility",
+        DummyAbilityOrderId = OrderId("invisibility"),
         Radius = 350,
         CastFilter = CastFilters.IsTargetOrganicAndAlive,
         TargetType = SpellTargetType.Point
@@ -185,8 +186,8 @@ namespace WarcraftLegacies.Source.Setup
       {
         StunId = Constants.ABILITY_A0RD_ELECTRIC_STRIKE_MINI_STUN_DARK_GREEN,
         PurgeId = Constants.ABILITY_APRG_PURGE_ELECTRIKE_STRIKE,
-        PurgeOrder = "purge",
-        StunOrder = "firebolt",
+        PurgeOrder = OrderId("purge"),
+        StunOrder = OrderId("firebolt"),
         Radius = 500f,
         Effect = @"Abilities\Spells\Human\Thunderclap\ThunderClapCaster.mdl"
       };
@@ -218,8 +219,10 @@ namespace WarcraftLegacies.Source.Setup
       WarsongSpellSetup.Setup();
       IronforgeSpellSetup.Setup();
       SentinelSpellSetup.Setup();
+      ScarletSpellSetup.Setup();
       DalaranSpellSetup.Setup();
       TrollSpellSetup.Setup();
+      GilneasSpellSetup.Setup();
       SharedSpellSetup.Setup();
     }
   }

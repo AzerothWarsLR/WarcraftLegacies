@@ -1,0 +1,13 @@
+{
+  "Left": 19904,
+  "Bottom": 9472,
+  "Right": 21280,
+  "Top": 10624,
+  "Name": "Scarlet Spawn",
+  "CreationNumber": 93,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128
+  }
+}

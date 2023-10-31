@@ -1,4 +1,5 @@
 ﻿using MacroTools.Extensions;
+using MacroTools.FactionChoices;
 using MacroTools.FactionSystem;
 using static War3Api.Common;
 
@@ -20,6 +21,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
         StartingCameraPosition = Regions.IllidanStartingPosition.Center,
         StartingUnits = Regions.IllidanStartingPosition.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable),
         ControlPointDefenderUnitTypeId = Constants.UNIT_N0BB_CONTROL_POINT_DEFENDER_ILLIDARI_TOWER,
+        LearningDifficulty = FactionLearningDifficulty.Basic,
         IntroText = @"You are playing as the Betrayer, Illidan|r|r.
 
 You begin on the Broken Isles, ready to plunder the tombs for artifacts to empower Illidan.

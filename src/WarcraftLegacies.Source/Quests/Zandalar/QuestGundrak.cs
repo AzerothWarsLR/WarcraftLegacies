@@ -18,7 +18,7 @@ namespace WarcraftLegacies.Source.Quests.Zandalar
     private const int _gundrakResearch = Constants.UPGRADE_R02Q_QUEST_COMPLETED_THE_DRAKKARI_FORTRESS_WARSONG;
     private const int _warlordId = Constants.UNIT_NFTK_WARLORD_WARSONG;
     private const int _trollShrineId = Constants.UNIT_O04X_LOA_SHRINE_ZANDALARI_SIEGE;
-    
+    private readonly int goldReward = 50;
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestGundrak"/> class
     /// </summary>
@@ -36,7 +36,7 @@ namespace WarcraftLegacies.Source.Quests.Zandalar
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
-      $"150 gold and the ability to train {GetObjectName(_warlordId)}s from the {GetObjectName(_trollShrineId)}.";
+      $"{goldReward} gold and the ability to train {GetObjectName(_warlordId)}s from the {GetObjectName(_trollShrineId)}.";
 
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
@@ -44,7 +44,7 @@ namespace WarcraftLegacies.Source.Quests.Zandalar
       if (completingFaction.Player != null)
       {
         SetPlayerTechResearched(completingFaction.Player, _gundrakResearch, 1);
-        completingFaction.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, 150);
+        completingFaction.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, goldReward);
       }
     }
 
