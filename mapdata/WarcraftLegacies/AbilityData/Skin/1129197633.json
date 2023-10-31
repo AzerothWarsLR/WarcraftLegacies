@@ -1,25 +1,110 @@
 {
-  "OldId": 1635010625,
+  "OldId": 1634693697,
   "NewId": 1129197633,
   "Unk": [
     0
   ],
   "Modifications": [
     {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSpell_Holy_SealOfProtection.blp"
+    },
+    {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "(Stormwind)"
+      "Value": "(Renault)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "Q"
+      "Value": "W"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Word of Fortitude"
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSpell_Holy_SealOfProtection.blp"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Word of Fortitude  - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "The Hero empowers nearby allies, increasing their armor to 99999.|n|cffffcc00Level 1|r - 400 area of effect, 45 seconds cooldown, 2 seconds duration|n|cffffcc00Level 2|r - 600 area of effect, 40 seconds cooldown, 3 seconds duration|n|cffffcc00Level 3|r - 800 area of effect, 35 seconds cooldown, 4 seconds duration|n|cffffcc00Level 4|r - 1000 area of effect, 30 seconds cooldown, 5 seconds duration"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "Reveal (|cffffcc00Q|r)"
+      "Value": "Word of Fortitude - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Word of Fortitude - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Word of Fortitude - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Word of Fortitude - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "The hero empowers nearby allies increasing their armor by 99999 for 2 seconds."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "The hero empowers nearby allies increasing their armor by 99999 for 3 seconds."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "The hero empowers nearby allies increasing their armor by 99999 for 4 seconds."
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "The hero empowers nearby allies increasing their armor by 99999 for 5 seconds."
+    },
+    {
+      "Id": 2020631137,
+      "Value": 1
+    },
+    {
+      "Id": 2020635233,
+      "Value": 1
+    },
+    {
+      "Id": 1952539489,
+      "Type": 3,
+      "Value": "war3mapImported\\WhiteChakraExplosion.mdx"
     }
   ]
 }

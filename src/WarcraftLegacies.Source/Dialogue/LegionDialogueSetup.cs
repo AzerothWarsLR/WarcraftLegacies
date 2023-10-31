@@ -79,7 +79,7 @@ namespace WarcraftLegacies.Source.Dialogue
           "Archimonde")
         , null, new List<Objective>
         {
-          new ObjectiveCompleteQuest(LegionSetup.Legion.GetQuestByType(typeof(QuestConsumeTree)))
+          new ObjectiveQuestComplete(LegionSetup.Legion.GetQuestByType(typeof(QuestConsumeTree)))
         }
       ));
       

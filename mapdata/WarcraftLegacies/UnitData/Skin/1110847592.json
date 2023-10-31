@@ -20,16 +20,6 @@
       "Value": "ReplaceableTextures\\CommandButtons\\UPGUPGHolyMaul.blp"
     },
     {
-      "Id": 1853186933,
-      "Type": 3,
-      "Value": "Initiate,Adept,Master"
-    },
-    {
-      "Id": 1953850229,
-      "Type": 3,
-      "Value": "- Holy Light \u0026 Divine Shield,- Holy Light \u0026 Divine Shield|n- Resurrection,- Holy Light \u0026 Divine Shield|n- Resurrection|n- Reincarnation"
-    },
-    {
       "Id": 1718840949,
       "Type": 3,
       "Value": "(Lordaeron)"
@@ -75,7 +65,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Righteous warrior of the Scarlet Crusade.|n|cfff5962dAbilities:|r Greater Holy Light, Greater Holy Fire, Divine Shield, Consecrated Strikes, Resistant Skin, Heavy Plating|n|cfff5962dCan learn:|r Reincarnation, Resurrection|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land units.|r"
+      "Value": "Righteous warrior of the Scarlet Crusade.|n|cfff5962dAbilities:|r Greater Holy Light, Judgement, Divine Shield, Consecrated Strikes, Resistant Skin, Heavy Plating|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land units.|r"
     },
     {
       "Id": 1684960117,

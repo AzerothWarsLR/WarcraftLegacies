@@ -17,7 +17,7 @@ namespace WarcraftLegacies.Source.Quests.Quelthalas
   {
     private const int QuestResearchId = Constants.UPGRADE_R04Q_QUEST_COMPLETED_THE_BLOOD_ELVES_QUEL_THALAS;
     private const int UnittypeId = Constants.UNIT_N048_BLOOD_MAGE_QUEL_THALAS;
-    private const int BuildingId = Constants.UNIT_N0A2_CONSORTIUM_QUEL_THALAS_MAGIC;
+    private const int BuildingId = Constants.UNIT_N0A2_CONSORTIUM_QUEL_THALAS_SIEGE;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestTheBloodElves"/> class.

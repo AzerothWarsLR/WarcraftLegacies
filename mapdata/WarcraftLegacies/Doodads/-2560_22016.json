@@ -2,11 +2,73 @@
   {
     "State": 2,
     "Life": 100,
+    "TypeId": 2004112457,
+    "Variation": 8,
+    "Position": {
+      "X": -2816,
+      "Y": 22080,
+      "Z": 236.125
+    },
+    "Rotation": 4.7031355,
+    "Scale": {
+      "X": 0.7499999,
+      "Y": 0.7499999,
+      "Z": 0.7499999
+    },
+    "SkinId": 2004112457,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 21695
+  },
+  {
+    "State": 2,
+    "Life": 100,
+    "TypeId": 1177563202,
+    "Variation": 6,
+    "Position": {
+      "X": -2688,
+      "Y": 21952,
+      "Z": 321.375
+    },
+    "Scale": {
+      "X": 0.8499999,
+      "Y": 0.8499999,
+      "Z": 0.8499999
+    },
+    "SkinId": 1177563202,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 21694
+  },
+  {
+    "State": 2,
+    "Life": 100,
+    "TypeId": 2004112457,
+    "Variation": 8,
+    "Position": {
+      "X": -2752,
+      "Y": 22144,
+      "Z": 226.625
+    },
+    "Rotation": 4.7031355,
+    "Scale": {
+      "X": 0.7499999,
+      "Y": 0.7499999,
+      "Z": 0.7499999
+    },
+    "SkinId": 2004112457,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 2263
+  },
+  {
+    "State": 2,
+    "Life": 100,
     "TypeId": 1668306009,
     "Position": {
       "X": -2880,
       "Y": 22208,
-      "Z": 245.125
+      "Z": 250.125
     },
     "Rotation": 4.712389,
     "Scale": {
@@ -26,7 +88,7 @@
     "Position": {
       "X": -2755.5967,
       "Y": 22255.283,
-      "Z": 209.25
+      "Z": 227.13857
     },
     "Rotation": 0.5448918,
     "Scale": {
@@ -78,27 +140,6 @@
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 21724
-  },
-  {
-    "State": 2,
-    "Life": 100,
-    "TypeId": 1177563202,
-    "Variation": 8,
-    "Position": {
-      "X": -2752,
-      "Y": 22016,
-      "Z": 231.5
-    },
-    "Rotation": 1.3962634,
-    "Scale": {
-      "X": 0.99999994,
-      "Y": 0.99999994,
-      "Z": 0.99999994
-    },
-    "SkinId": 1177563202,
-    "MapItemTableId": -1,
-    "ItemTableSets": [],
-    "CreationNumber": 34790
   },
   {
     "State": 2,

@@ -26,6 +26,7 @@ namespace WarcraftLegacies.Source.Setup
       ZandalarSetup.Setup(preplacedUnitSystem);
       SunfurySetup.Setup(preplacedUnitSystem);
       GilneasSetup.Setup(preplacedUnitSystem);
+      ScarletSetup.Setup(preplacedUnitSystem);
 
       CthunSetup.Setup(preplacedUnitSystem);
       NazjatarSetup.Setup(preplacedUnitSystem);

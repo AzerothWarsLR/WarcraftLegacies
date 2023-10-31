@@ -1,4 +1,4 @@
-﻿using MacroTools;
+using MacroTools;
 
 namespace WarcraftLegacies.Source.UnitTypes
 {
@@ -84,7 +84,7 @@ namespace WarcraftLegacies.Source.UnitTypes
         Category = UnitCategory.Shipyard
       });
 
-      UnitType.Register(new UnitType(Constants.UNIT_USHP_HAUNTED_HARBOR_SCOURGE)
+      UnitType.Register(new UnitType(Constants.UNIT_USHP_HAUNTED_HARBOR_SCOURGE_SHIPYARD)
       {
         Category = UnitCategory.Shipyard
       });
@@ -94,7 +94,7 @@ namespace WarcraftLegacies.Source.UnitTypes
         Category = UnitCategory.Shipyard
       });
 
-      UnitType.Register(new UnitType(Constants.UNIT_ESHY_KALDOREI_DOCKS)
+      UnitType.Register(new UnitType(Constants.UNIT_ESHY_KALDOREI_DOCKS_DRUID_SENTINEL_SHIPYARD)
       {
         Category = UnitCategory.Shipyard
       });
@@ -107,10 +107,6 @@ namespace WarcraftLegacies.Source.UnitTypes
 
     private static void SubSetupPortals()
     {
-      UnitType.Register(new UnitType(Constants.UNIT_N03H_DEATH_GATE_WAYGATE)
-      {
-        NeverDelete = true
-      });
       
       UnitType.Register(new UnitType(Constants.UNIT_N036_DARK_PORTAL_WAYGATE)
       {
@@ -121,11 +117,7 @@ namespace WarcraftLegacies.Source.UnitTypes
       {
         NeverDelete = true
       });
-      
-      UnitType.Register(new UnitType(Constants.UNIT_N03J_BLACK_PORTAL_AURA_CONTROL_NEXUS)
-      {
-        NeverDelete = true
-      });
+
     }
     
     private static void SubSetupTrader()

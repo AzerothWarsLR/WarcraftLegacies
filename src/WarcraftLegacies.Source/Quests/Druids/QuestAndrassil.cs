@@ -3,7 +3,6 @@ using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
-using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
 using WarcraftLegacies.Source.Setup.FactionSetup;
@@ -22,7 +21,7 @@ namespace WarcraftLegacies.Source.Quests.Druids
       @"ReplaceableTextures\CommandButtons\BTNTreant.blp")
     {
       AddObjective(new ObjectiveBuildInRect(Regions.GrizzlyHills, "in Grizzly Hills",
-       Constants.UNIT_ETOL_TREE_OF_LIFE_DRUIDS_T1, 3));
+       Constants.UNIT_ETOL_TREE_OF_LIFE_DRUID_T1, 3));
       AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N03U_GRIZZLY_HILLS)));
       ResearchId = Constants.UPGRADE_R002_QUEST_COMPLETED_CROWN_OF_THE_SNOW_DRUIDS;
       _vordrassil = vordrassil;
@@ -35,7 +34,7 @@ namespace WarcraftLegacies.Source.Quests.Druids
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
-      $"Gain a new capital at Grizzly Hills that can research a powerful upgrade for your {GetObjectName(Constants.UNIT_EDOC_DRUID_OF_THE_CLAW_DRUIDS)}, and learn to train the hero Ursoc from the {GetObjectName(Constants.UNIT_EATE_ALTAR_OF_ELDERS_DRUIDS)}. If you're allied to the Scourge, {_ursoc.Name}'s starting experience is halved";
+      $"Gain a new capital at Grizzly Hills that can research a powerful upgrade for your {GetObjectName(Constants.UNIT_EDOC_DRUID_OF_THE_CLAW_DRUIDS)}, and learn to train the hero Ursoc from the {GetObjectName(Constants.UNIT_EATE_ALTAR_OF_ELDERS_DRUID_ALTAR)}. If you're allied to the Scourge, {_ursoc.Name}'s starting experience is halved";
 
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)

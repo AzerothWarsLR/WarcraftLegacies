@@ -1,4 +1,5 @@
-﻿using MacroTools.PassiveAbilitySystem;
+﻿using MacroTools.DummyCasters;
+using MacroTools.PassiveAbilitySystem;
 using MacroTools.SpellSystem;
 using static War3Api.Common;
 
@@ -52,7 +53,7 @@ namespace MacroTools.PassiveAbilities
         DoSpellNoTarget(caster);
       }
     }
-    private void DoSpellNoTarget(unit caster) => DummyCast.DummyCastNoTarget(caster, DummyAbilityId,
+    private void DoSpellNoTarget(unit caster) => DummyCasterManager.GetGlobalDummyCaster().CastNoTarget(caster, DummyAbilityId,
       DummyOrderId, GetUnitAbilityLevel(caster, AbilityTypeId));
   }
 }

@@ -1,11 +1,9 @@
 ﻿using MacroTools;
-using MacroTools.PassiveAbilities;
-using MacroTools.PassiveAbilitySystem;
 using MacroTools.ResearchSystems;
 using MacroTools.Spells;
-using MacroTools.Spells.Slipstream;
 using MacroTools.SpellSystem;
 using WarcraftLegacies.Source.Spells;
+using WarcraftLegacies.Source.Spells.Slipstream;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
@@ -29,22 +27,22 @@ namespace WarcraftLegacies.Source.Setup.Spells
         DurationBase = 0,
         DurationLevel = 1,
         StunAbilityId = Constants.ABILITY_A0WN_STUN_UNIT_DUMMY,
-        StunOrderString = "thunderbolt",
+        StunOrderId = OrderId("thunderbolt"),
         SpecialEffect = @"Abilities\Spells\Orc\WarStomp\WarStompCaster.mdl"
       };
       SpellSystem.Register(warStompCairne);
 
-      var CripplingShout = new Stomp(Constants.ABILITY_TP07_CRIPPLING_SHOUT_FROSTWOLF)
+      var cripplingShout = new Stomp(Constants.ABILITY_TP07_CRIPPLING_SHOUT_FROSTWOLF)
       {
         Radius = 700,
         DamageBase = 00,
         DamageLevel = 00,
         DurationBase = 15,
         StunAbilityId = Constants.ABILITY_TP08_CRIPPLE_DUMMY,
-        StunOrderString = "cripple",
+        StunOrderId = OrderId("cripple"),
         SpecialEffect = @"abilities\spells\nightelf\battleroar\roarcaster.mdx"
       };
-      SpellSystem.Register(CripplingShout);
+      SpellSystem.Register(cripplingShout);
 
       ParentChildResearchSystem.Register(Constants.UPGRADE_RHME_PYRITE_FORGED_WEAPONRY_UNIVERSAL_UPGRADE,
         Constants.UPGRADE_R06C_KABOOM_LEVEL_UP);

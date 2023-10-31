@@ -93,7 +93,7 @@ namespace MacroTools.ArtifactSystem
           for (var i = 0; i < 6; i++)
           {
             var itemInSlot = UnitItemInSlot(triggerUnit, i);
-            if (itemInSlot == null)
+            if (itemInSlot == null || !itemInSlot.IsDroppable())
               continue;
             
             var artifactInSlot = GetFromTypeId(GetItemTypeId(itemInSlot));
@@ -103,9 +103,7 @@ namespace MacroTools.ArtifactSystem
             isPositionPathable ??= !IsTerrainPathable(GetUnitX(triggerUnit), GetUnitY(triggerUnit), PATHING_TYPE_WALKABILITY);
 
             if (isPositionPathable == true)
-            {
               itemInSlot.SetPosition(triggerUnit.GetPosition());
-            }
             else
             {
               var shore = ShoreManager.GetNearestShore(triggerUnit.GetPosition());

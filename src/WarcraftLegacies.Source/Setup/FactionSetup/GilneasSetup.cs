@@ -1,5 +1,6 @@
 ﻿using MacroTools;
 using MacroTools.Extensions;
+using MacroTools.FactionChoices;
 using MacroTools.FactionSystem;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -20,6 +21,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
         ControlPointDefenderUnitTypeId = Constants.UNIT_H0AF_CONTROL_POINT_DEFENDER_GILNEAS,
         StartingCameraPosition = Regions.GilneasStartPos.Center,
         StartingUnits = Regions.GilneasStartPos.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable),
+        LearningDifficulty = FactionLearningDifficulty.Advanced,
         IntroText = @"You are playing as the accursed |cff646464Kingdom of Gilneas|r|r.
 
 You start isolated behind the Greymane Wall, the only way for an enemy to reach you is through the Greymane Gate or via the coast.
@@ -54,7 +56,7 @@ Once you have reclaimed Gilneas, open Greymane's Gate and march North to assist 
       Gilneas.ModObjectLimit(FourCC("h04E"), Faction.UNLIMITED); //Protector
       Gilneas.ModObjectLimit(FourCC("n06L"), Faction.UNLIMITED); //Armored Wolf
       Gilneas.ModObjectLimit(FourCC("o01V"), 6); //Greyguard
-      Gilneas.ModObjectLimit(FourCC("o02J"), 8); //Worgen
+      Gilneas.ModObjectLimit(FourCC("o02J"), 12); //Worgen
       Gilneas.ModObjectLimit(FourCC("h03L"), Faction.UNLIMITED); //Shotgunner
       Gilneas.ModObjectLimit(FourCC("n067"), Faction.UNLIMITED); //Spider summon
       Gilneas.ModObjectLimit(FourCC("o04U"), 6); //Cyclone Cannon

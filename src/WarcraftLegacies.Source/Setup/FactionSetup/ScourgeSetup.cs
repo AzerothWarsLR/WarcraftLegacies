@@ -100,7 +100,6 @@ When the Plague hits Lordaeron, a great portal will be opened between Dragonblig
       Scourge.ModObjectLimit(FourCC("Ruwb"), Faction.UNLIMITED); //Web
       Scourge.ModObjectLimit(FourCC("R00Q"), Faction.UNLIMITED); //Chilling Aura
       Scourge.ModObjectLimit(Constants.UPGRADE_R01X_EPIDEMIC_SCOURGE, Faction.UNLIMITED);
-      Scourge.ModObjectLimit(Constants.UPGRADE_R08T_REVENANTS_SCOURGE, Faction.UNLIMITED);
       Scourge.ModObjectLimit(FourCC("R01D"), Faction.UNLIMITED); //Piercing Screech
       Scourge.ModObjectLimit(FourCC("R06N"), Faction.UNLIMITED); //Improved Orb of Annihilation
       Scourge.ModObjectLimit(FourCC("Rusl"), Faction.UNLIMITED); //Skeletal Mastery
@@ -114,7 +113,7 @@ When the Plague hits Lordaeron, a great portal will be opened between Dragonblig
       Scourge.ModAbilityAvailability(Constants.ABILITY_A09N_PERMANENT_IMMOLATION_SCOURGE_ICECROWN_OBELISK, -1);
 
       //Powers
-      var visionPower = new VisionPower("All-Seeing",
+      var visionPower = new RegionVisionPower("All-Seeing",
         "Grants permanent vision over Northrend.",
         "Charm", new[]
         {

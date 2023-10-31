@@ -2,9 +2,10 @@
 using MacroTools.PassiveAbilities;
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.Spells;
-using MacroTools.Spells.Slipstream;
 using MacroTools.SpellSystem;
+using WarcraftLegacies.Source.Spells.Slipstream;
 using WCSharp.Shared.Data;
+using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup.Spells
 {
@@ -52,7 +53,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
         Constants.ABILITY_A103_HOLY_SHOCKWAVE_DRAENEI)
       {
         DummyAbilityId = Constants.ABILITY_A104_SHOCKWAVE_WARFRAME_DUMMY,
-        DummyOrderString = "carrionswarm",
+        DummyOrderId = OrderId("carrionswarm"),
         ProcChance = 1
       };
       PassiveAbilityManager.Register(holyShockwave);
@@ -65,7 +66,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
         DurationBase = 6,
         DurationLevel = 3,
         StunAbilityId = Constants.ABILITY_A106_CURSE_DRAENEI,
-        StunOrderString = "curse",
+        StunOrderId = OrderId("curse"),
         SpecialEffect = @"war3mapImported\FrostNova.mdx"
       };
       SpellSystem.Register(warStompAdal);

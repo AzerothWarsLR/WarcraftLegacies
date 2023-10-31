@@ -1,4 +1,6 @@
-﻿using MacroTools;
+﻿using System.Collections.Generic;
+using MacroTools;
+using MacroTools.ArtifactSystem;
 using MacroTools.Extensions;
 using MacroTools.LegendSystem;
 using WarcraftLegacies.Source.Setup.FactionSetup;
@@ -49,7 +51,11 @@ namespace WarcraftLegacies.Source.Setup.Legends
       Arthas = new LegendaryHero("Arthas Menethil")
       {
         UnitType = Constants.UNIT_UEAR_CHAMPION_OF_THE_SCOURGE_SCOURGE,
-        StartingXp = 7000
+        StartingXp = 7000,
+        StartingArtifacts = new List<Artifact>
+        {
+          new(CreateItem(Constants.ITEM_ZB07_FROSTMOURNE, Regions.ArtifactDummyInstance.Center.X, Regions.ArtifactDummyInstance.Center.Y))
+        }
       };
 
       Utgarde = new Capital

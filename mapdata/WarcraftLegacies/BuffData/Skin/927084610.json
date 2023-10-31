@@ -16,11 +16,6 @@
       "Value": "This unit has Spiritual Guidance; it is healing mana over time."
     },
     {
-      "Id": 1952543846,
-      "Type": 3,
-      "Value": ""
-    },
-    {
       "Id": 811693158,
       "Type": 3,
       "Value": "origin"
@@ -29,6 +24,11 @@
       "Id": 1953653094,
       "Type": 3,
       "Value": "ReplaceableTextures/CommandButtons/BTNBurning_Mana.blp"
+    },
+    {
+      "Id": 1952543846,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Undead\\ReplenishMana\\SpiritTouchTarget.mdl"
     }
   ]
 }

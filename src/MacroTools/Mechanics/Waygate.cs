@@ -35,11 +35,9 @@ namespace MacroTools.Mechanics
     private void OnConstructed()
     {
       _isConstructed = true;
-      if (Sister?._isConstructed == true)
-      {
-        Connect(Sister);
-        Sister.Connect(this);
-      }
+      if (Sister?._isConstructed != true) return;
+      Connect(Sister);
+      Sister.Connect(this);
     }
 
     private void Disconnect()

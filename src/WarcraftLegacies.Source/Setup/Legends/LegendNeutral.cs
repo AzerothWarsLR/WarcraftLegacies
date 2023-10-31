@@ -34,9 +34,9 @@ namespace WarcraftLegacies.Source.Setup.Legends
       {
         UnitType = Constants.UNIT_N00D_PRIMARY_FIRELORD_CREEP,
         DeathMessage = "Ragnaros, the King of Fire and Lord of the Firelands, has been extinguished.",
-        StartingArtifactItemTypeIds = new()
+        StartingArtifacts = new()
         {
-          Constants.ITEM_I00H_SULFURAS_HAND_OF_RAGNAROS
+          new(CreateItem(Constants.ITEM_I00H_SULFURAS_HAND_OF_RAGNAROS, Regions.ArtifactDummyInstance.Center.X, Regions.ArtifactDummyInstance.Center.Y))
         },
         StartingXp = 15404
       };

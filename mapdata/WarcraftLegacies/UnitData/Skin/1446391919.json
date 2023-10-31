@@ -1,82 +1,44 @@
 {
-  "OldId": 1634493007,
+  "OldId": 1987671919,
   "NewId": 1446391919,
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1868786037,
-      "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNDruidoftheClawIceTrollIconV1.blp"
-    },
-    {
-      "Id": 1953980789,
-      "Type": 3,
-      "Value": "Revive Witch Doctor"
-    },
-    {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "(Creep-Zul\u0027Drak)"
-    },
-    {
-      "Id": 1818520949,
-      "Type": 3,
-      "Value": "units\\creeps\\IceTrollShadowPriest\\IceTrollShadowPriest.mdl"
-    },
-    {
-      "Id": 1735156597,
-      "Value": 150
-    },
-    {
-      "Id": 1935763573,
-      "Type": 3,
-      "Value": ""
-    },
-    {
-      "Id": 1831952757,
-      "Type": 3,
-      "Value": "Abilities\\Weapons\\WitchDoctorMissile\\WitchDoctorMissile.mdl"
-    },
-    {
-      "Id": 1633907573,
-      "Type": 1,
-      "Value": 2
-    },
-    {
-      "Id": 1835101813,
-      "Type": 3,
-      "Value": "Gal\u0027darah"
-    },
-    {
-      "Id": 1869770869,
-      "Type": 3,
-      "Value": "Gal\u0027darah"
-    },
-    {
-      "Id": 1919705973,
-      "Value": 180
-    },
-    {
-      "Id": 1919972469,
-      "Type": 3,
-      "Value": "Revive Witch Doctor"
-    },
-    {
-      "Id": 1885959285,
-      "Type": 3,
-      "Value": ""
+      "Value": "(Scarlet)"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": ""
+      "Value": "Highly mobile flying creature. Excellent at scouting.|n|cfff5962dAbilities:|R Headshot, True Sight, United for the Cause, United for the Crusade|n |n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land and air units.|r"
     },
     {
-      "Id": 1684960117,
+      "Id": 1835101813,
       "Type": 3,
-      "Value": "ForestTroll"
+      "Value": "Eagle Rider"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Eagle Rider"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtonsDisabled\\BTNScarletEagleKnight.blp"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\ScarletEagleKnight.mdl"
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "war3mapImported\\EagleKnightSpearMissile.mdl"
     }
   ]
 }

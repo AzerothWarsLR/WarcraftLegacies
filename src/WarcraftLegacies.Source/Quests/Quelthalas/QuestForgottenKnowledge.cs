@@ -29,6 +29,6 @@ namespace WarcraftLegacies.Source.Quests.Quelthalas
 
     /// <inheritdoc />
     protected override string RewardDescription =>
-      $"Learn to train {GetObjectName(Constants.UNIT_E01B_ARCANE_ANNIHILATOR_QUEL_THALAS)}s from the {GetObjectName(Constants.UNIT_H0CI_ARTIFICER_S_COURT_SUNFURY_SPECIALIST)}";
+      $"Learn to train {GetObjectName(Constants.UNIT_E01B_ARCANE_ANNIHILATOR_QUEL_THALAS)}s from the {GetObjectName(Constants.UNIT_H0CI_ARTIFICER_S_COURT_SUNFURY_SIEGE)}";
   }
 }

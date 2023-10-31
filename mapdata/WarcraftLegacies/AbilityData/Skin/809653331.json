@@ -1,0 +1,19 @@
+{
+  "OldId": 1819500865,
+  "NewId": 809653331,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Tess)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Vanish buff"
+    }
+  ]
+}

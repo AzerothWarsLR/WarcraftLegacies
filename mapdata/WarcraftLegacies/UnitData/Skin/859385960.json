@@ -16,7 +16,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "(Kul Tiras)"
+      "Value": "(Kul Tiras Siege)"
     },
     {
       "Id": 1818520949,
@@ -51,7 +51,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Primary troop production building.|n|cfff5962dTrains:|R Ember Cleric, Witch Hunter and Fusillier"
+      "Value": "Advanced troop production building.|n|n|r|cfff5962dTrains:|R Ember Cleric, Witch Hunter and Fusillier"
     },
     {
       "Id": 1868786037,

@@ -49,11 +49,11 @@ namespace WarcraftLegacies.Source.Setup.Spells
       PassiveAbilityManager.Register(new OilUser(Constants.UNIT_O01M_ENGINEER_S_GUILD_GOBLIN_SPECIALIST));
       PassiveAbilityManager.Register(new OilUser(Constants.UNIT_NTIN_CHIEF_ENGINEER_GOBLIN));
       PassiveAbilityManager.Register(new OilUser(Constants.UNIT_H09I_PERSONAL_TANK_GOBLIN));
-      PassiveAbilityManager.Register(new OilProducer(Constants.UNIT_H04Z_KEZAN_OIL_SUPPLY_GOBLIN)
+      PassiveAbilityManager.Register(new OilProducer(Constants.UNIT_H04Z_KEZAN_OIL_SUPPLY_GOBLIN_OTHER)
       {
         OilProducedPerSecond = 20
       });
-      PassiveAbilityManager.Register(new OilHarvester(Constants.UNIT_O04R_OIL_RIG_GOBLIN)
+      PassiveAbilityManager.Register(new OilHarvester(Constants.UNIT_O04R_OIL_RIG_GOBLIN_OTHER)
       {
         OilHarvestedPerSecond = 5,
         Radius = 400

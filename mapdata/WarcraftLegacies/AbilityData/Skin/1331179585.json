@@ -8,12 +8,12 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "(thorim)"
+      "Value": "(Renault)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "Q"
+      "Value": "R"
     },
     {
       "Id": 1835101793,
@@ -23,35 +23,35 @@
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "Q"
+      "Value": "R"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "Learn Greater Storm Bolt (|cffffcc00Q|r) - [|cffffcc00Level %d|r]"
+      "Value": "Learn Greater Storm Bolt - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "A magical hammer that is thrown at an enemy unit, causing damage and stunning the target. |n|n|cffffcc00Level 1|r - 250 damage, 4 second stun. 2 second on Heroes.|n|cffffcc00Level 2|r - 300 damage, 5 second stun. 2.5 seconds on Heroes.|n|cffffcc00Level 3|r - 350 damage, 6 second stun. 3 seconds on Heroes.|n|cffffcc00Level 4|r - 400 damage, 7 second stun. 3.5 seconds on Heroes"
+      "Value": "A magical hammer that is thrown at an enemy unit, causing damage and stunning the target. |n|n|cffffcc00Level 1|r - 400 damage, 4 second stun.|n|cffffcc00Level 2|r - 500 damage, 5 second stun.|n|cffffcc00Level 3|r - 600 damage, 6 second stun."
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "Greater Storm Bolt (|cffffcc00Q|r) - [|cffffcc00Level 1|r]"
+      "Value": "Greater Storm Bolt - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "Greater Storm Bolt (|cffffcc00Q|r) - [|cffffcc00Level 2|r]"
+      "Value": "Greater Storm Bolt - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "Greater Storm Bolt (|cffffcc00Q|r) - [|cffffcc00Level 3|r]"
+      "Value": "Greater Storm Bolt - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
@@ -63,25 +63,33 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Throws a magical hammer at a target enemy unit, dealing 250 damage and stunning the target for 4 seconds. Lasts 2 second on heroes."
+      "Value": "Throws a magical hammer at a target enemy unit, dealing 400 damage and stunning the target for 4 seconds."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Throws a magical hammer at a target enemy unit, dealing 300 damage and stunning the target for 5 seconds. Lasts 2.5 seconds on heroes."
+      "Value": "Throws a magical hammer at a target enemy unit, dealing 500 damage and stunning the target for 5 seconds."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Throws a magical hammer at a target enemy unit, dealing 350 damage and stunning the target for 6 seconds. Lasts 3 seconds on heroes."
+      "Value": "Throws a magical hammer at a target enemy unit, dealing 600 damage and stunning the target for 6 seconds."
     },
     {
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
       "Value": "Throws a magical hammer at a target enemy unit, dealing 400 damage and stunning the target for 7 seconds. Lasts 3.5 seconds on heroes."
+    },
+    {
+      "Id": 2020631137,
+      "Value": 3
+    },
+    {
+      "Id": 2020635233,
+      "Value": 3
     }
   ]
 }

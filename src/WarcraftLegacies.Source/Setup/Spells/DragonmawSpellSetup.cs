@@ -5,6 +5,7 @@ using MacroTools.PassiveAbilities;
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.Spells;
 using MacroTools.SpellSystem;
+using WarcraftLegacies.Source.Spells;
 
 namespace WarcraftLegacies.Source.Setup.Spells
 {
@@ -21,7 +22,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
       SpellSystem.Register(new MassAnySpell(Constants.ABILITY_A0OJ_MASS_UNHOLY_ARMOR_DRAGONMAW_GORFAX)
       {
         DummyAbilityId = Constants.ABILITY_A0HG_UNHOLY_ARMOR_DRAGONMAW_GORFAX,
-        DummyAbilityOrderString = "innerfire",
+        DummyAbilityOrderId = OrderId("innerfire"),
         Radius = 400,
         CastFilter = CastFilters.IsTargetAllyAndAlive,
         TargetType = SpellTargetType.Point

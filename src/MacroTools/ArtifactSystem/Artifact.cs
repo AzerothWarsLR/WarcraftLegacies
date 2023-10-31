@@ -2,7 +2,6 @@ using System;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using WCSharp.Events;
-using WCSharp.Shared.Data;
 using static War3Api.Common;
 
 namespace MacroTools.ArtifactSystem
@@ -12,7 +11,6 @@ namespace MacroTools.ArtifactSystem
   /// </summary>
   public sealed class Artifact
   {
-    private string? _description;
     private ArtifactLocationType _locationType;
     private unit? _owningUnit;
     private int _titanforgedAbility = FourCC("A0VJ");
@@ -41,13 +39,7 @@ namespace MacroTools.ArtifactSystem
     /// <summary>
     ///   The real <see cref="item" /> that the <see cref="Artifact" /> is representing.
     /// </summary>
-    public item Item { get; private set; }
-
-    /// <summary>
-    ///   A pretend-position. The player can ping this position instead of the item's real position if
-    ///   <see cref="ArtifactLocationType" /> is set to <see cref="ArtifactLocationType.Special" />.
-    /// </summary>
-    public Point FalsePosition { get; set; } = new(0, 0);
+    public item Item { get; }
 
     /// <summary>
     ///   The extra ability the Artifact gains when it's Titanforged.
@@ -67,7 +59,7 @@ namespace MacroTools.ArtifactSystem
     /// </summary>
     public ArtifactLocationType LocationType
     {
-      set
+      private set
       {
         _locationType = value;
         StatusChanged?.Invoke(this, this);
@@ -87,20 +79,6 @@ namespace MacroTools.ArtifactSystem
         if (OwningPlayer != GetOwningPlayer(value)) 
           SetOwningPlayer(value != null ? GetOwningPlayer(value) : null);
       }
-    }
-
-    /// <summary>
-    ///   A user-friendly description of the <see cref="Artifact" />'s location.
-    ///   Only displayed when <see cref="LocationType" /> is set to <see cref="ArtifactLocationType.Hidden" />.
-    /// </summary>
-    public string LocationDescription
-    {
-      set
-      {
-        _description = value;
-        DescriptionChanged?.Invoke(this, this);
-      }
-      get => _description ?? "";
     }
 
     /// <summary>
@@ -141,11 +119,6 @@ namespace MacroTools.ArtifactSystem
     public event EventHandler<Artifact>? StatusChanged;
 
     /// <summary>
-    ///   Any <see cref="Artifact" /> has its description changed.
-    /// </summary>
-    public event EventHandler<Artifact>? DescriptionChanged;
-
-    /// <summary>
     ///   Grant the Artifact a predefined bonus ability.
     /// </summary>
     public void Titanforge()
@@ -166,9 +139,7 @@ namespace MacroTools.ArtifactSystem
     {
       if (GetLocalPlayer() != whichPlayer) 
         return;
-      if (_locationType == ArtifactLocationType.Special)
-        PingMinimap(FalsePosition.X, FalsePosition.Y, 3);
-      else if (_owningUnit != null)
+      if (_owningUnit != null)
         PingMinimap(GetUnitX(_owningUnit), GetUnitY(_owningUnit), 3);
       else
         PingMinimap(GetItemX(Item), GetItemY(Item), 3);

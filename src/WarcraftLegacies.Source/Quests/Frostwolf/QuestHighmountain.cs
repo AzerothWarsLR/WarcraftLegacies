@@ -14,17 +14,15 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
   /// </summary>
   public sealed class QuestHighmountain : QuestData
   {
-    private readonly LegendaryHero _cairne;
-    private readonly List<unit> _rescueUnits = new();
+    private readonly List<unit> _rescueUnits;
 
     /// <inheritdoc />
     public QuestHighmountain(LegendaryHero cairne, Rectangle rescueRect) : base("A Feast for Our Kin",
       "Scouts report sighting of the Highmountain totem, thought lost long ago when the Broken Isles were shattered. As a gesture of renewed welcome, Cairne might offer them an invitation to a feast in Thunderbluff.",
       @"ReplaceableTextures/CommandButtons/BTNPigHead.blp")
     {
-      _cairne = cairne;
       AddObjective(new ObjectiveLegendInRect(cairne, rescueRect, "Highmountain, north of Stormheim"));
-      ResearchId = Constants.UPGRADE_R0A9_QUEST_COMPLETED_INVITATION_TO_A_FEAST;
+      ResearchId = Constants.UPGRADE_R0A9_QUEST_COMPLETED_A_FEAST_FOR_OUR_KIN;
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable);
     }
 
@@ -34,7 +32,7 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
 
     /// <inheritdoc />
     protected override string RewardDescription =>
-      $"Gain control of all units in Highmountain, and learn to train {GetObjectName(Constants.UNIT_N049_WANDERER_FROSTWOLF)}s from the {GetObjectName(Constants.UNIT_OTTO_TAUREN_TOTEM_FROSTWOLF_SPECIALIST)}";
+      $"Gain control of all units in Highmountain, and learn to train {GetObjectName(Constants.UNIT_N049_WANDERER_FROSTWOLF)}s from the {GetObjectName(Constants.UNIT_OTTO_TAUREN_TOTEM_FROSTWOLF_SIEGE)}";
 
     protected override void OnFail(Faction completingFaction)
     {

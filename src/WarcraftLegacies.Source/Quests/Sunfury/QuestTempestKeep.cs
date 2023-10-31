@@ -65,6 +65,6 @@ namespace WarcraftLegacies.Source.Quests.Sunfury
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
-      $"Gain control of Tempest Keep, and learn to build {GetObjectName(Constants.UNIT_H0CA_ANCIENT_POOL_SUNFURY_SPECIALIST)}s and {GetObjectName(Constants.UNIT_H0CI_ARTIFICER_S_COURT_SUNFURY_SPECIALIST)}s";
+      $"Gain control of Tempest Keep, and learn to build {GetObjectName(Constants.UNIT_H0CA_ANCIENT_POOL_SUNFURY_SPECIALIST)}s and {GetObjectName(Constants.UNIT_H0CI_ARTIFICER_S_COURT_SUNFURY_SIEGE)}s";
   }
 }

@@ -1,7 +1,7 @@
 [
   {
     "Flags": 2,
-    "OwnerId": 20,
+    "OwnerId": 24,
     "HP": -1,
     "MP": -1,
     "TargetAcquisition": -1,
@@ -39,8 +39,8 @@
     "WaygateDestinationRegionId": -1,
     "TypeId": 1160982632,
     "Position": {
-      "X": 6912,
-      "Y": 512
+      "X": 6944,
+      "Y": 544
     },
     "Rotation": 4.71238899230957,
     "Scale": {

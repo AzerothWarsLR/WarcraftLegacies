@@ -22,7 +22,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Suspends an unholy crystal crackling with deadly magic above the Ziggurat.|n|cfff5962dUpgrades Into:|R Improved Spirit Tower|n|n|cffffcc00Attacks land and air units.|r"
+      "Value": "Primary defensive structure.|n|n|cfff5962dUpgrades to:|R Improved Spirit Tower|n|n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Id": 1668510581,
@@ -33,6 +33,11 @@
       "Id": 1651012469,
       "Type": 3,
       "Value": "ShadowTrollBurrow"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": " (Scourge Tower)"
     }
   ]
 }

@@ -3,6 +3,7 @@ using MacroTools.PassiveAbilitySystem;
 using MacroTools.SpellSystem;
 using WarcraftLegacies.Source.Setup.FactionSetup;
 using WarcraftLegacies.Source.Spells;
+using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup.Spells
 {
@@ -22,7 +23,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
         Constants.ABILITY_A10J_MASTER_OF_LIGHTNING_STORMRIDERS)
       {
         DummyAbilityId = Constants.ABILITY_ACFL_FORKED_LIGHTNING_LIGHT_BLUE_HIGHBORNE,
-        DummyOrderString = "forkedlightning",
+        DummyOrderId = OrderId("forkedlightning"),
         ProcChance = 0.15f
       };
       PassiveAbilityManager.Register(lightningAttack);

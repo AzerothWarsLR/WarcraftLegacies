@@ -1,112 +1,93 @@
 {
-  "OldId": 1801864513,
+  "OldId": 1869893185,
   "NewId": 1278488641,
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1768841569,
-      "Type": 3,
-      "Value": "spell,throw"
-    },
-    {
-      "Id": 1953653089,
-      "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNDeathCoil.blp"
-    },
-    {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "(Red - Lich King, Death Knight Arthas)"
-    },
-    {
-      "Id": 1952540001,
-      "Type": 3,
-      "Value": "Abilities\\Spells\\Undead\\DeathPact\\DeathPactTarget.mdl"
+      "Value": "(hydromancer)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "Q"
-    },
-    {
-      "Id": 1952542049,
-      "Type": 3,
-      "Value": "Abilities\\Spells\\Undead\\DeathCoil\\DeathCoilMissile.mdl"
-    },
-    {
-      "Id": 1835101793,
-      "Type": 3,
-      "Value": "Taste of Death"
-    },
-    {
-      "Id": 1918988897,
-      "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNDeathCoil.blp"
+      "Value": "E"
     },
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "Q"
-    },
-    {
-      "Id": 1952805473,
-      "Type": 3,
-      "Value": "Learn Taste of Death - [|cffffcc00Level %d|r]"
+      "Value": "R"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "The hero launches coils of death in all directions at his enemies. |n|n|cffffcc00Level 1|r - 80 damage per target. |n|cffffcc00Level 2|r - 120 damage per target. |n|cffffcc00Level 3|r - 160 damage per target.|n|cffffcc00Level 4|r - 200 damage per target."
-    },
-    {
-      "Level": 1,
-      "Id": 829453409,
-      "Type": 3,
-      "Value": "Taste of Death - [|cffffcc00Level 1|r]"
+      "Value": "Summons a Black Hole that slows enemy units\u0027 movement speed by 90% and damages enemy units for 15 damage per second. If they within 200 range of the Black Hole, they take 100 damage per second. |n|n|cffffcc00Level 1|r - 240 cooldown. 6 seconds duration. |n|cffffcc00Level 2|r - 160 cooldown. 9 seconds duration. |n|cffffcc00Level 3|r - 120 cooldown. 12 seconds duration."
     },
     {
       "Level": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "Taste of Death - [|cffffcc00Level 2|r]"
+      "Value": "Black Hole - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "Taste of Death - [|cffffcc00Level 3|r]"
-    },
-    {
-      "Level": 4,
-      "Id": 829453409,
-      "Type": 3,
-      "Value": "Taste of Death - [|cffffcc00Level 4|r]"
+      "Value": "Black Hole - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "The hero launches coils of death in all directions damaging nearby enemies. Each coil does 80 damage."
+      "Value": "Channels a Storm Cloud at the target location after casting for \u003CA04L,Cast1\u003E seconds. The Storm Cloud will attack nearby enemy units, dealing \u003Cn03J,maxdmg1\u003E Chaos damage with each attack. In addition, the Storm Cloud will deal \u003CA0CZ,DataA1\u003E damage per second to nearby enemy air units.|nLasts \u003CA04L,Dur1\u003E seconds."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "The hero launches coils of death in all directions damaging nearby enemies. Each coil does 120 damage."
+      "Value": "Summons a Black Hole that slows enemy units\u0027 movement speed by 90% and damages enemy units for 15 damage per second. If they within 200 range of the Black Hole, they take 100 damage per second."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "The hero launches coils of death in all directions damaging nearby enemies. Each coil does 160 damage."
+      "Value": "Summons a Black Hole that slows enemy units\u0027 movement speed by 90% and damages enemy units for 15 damage per second. If they within 200 range of the Black Hole, they take 100 damage per second."
     },
     {
-      "Level": 4,
-      "Id": 828536161,
+      "Id": 1953653089,
       "Type": 3,
-      "Value": "The hero launches coils of death in all directions damaging nearby enemies. Each coil does 200 damage."
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNShockStorm3.blp"
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBlackHole.blp"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Storm Cloud"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Black Hole"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Storm Cloud"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 2
+    },
+    {
+      "Id": 2020635233,
+      "Value": 2
     }
   ]
 }

@@ -13,14 +13,13 @@ namespace WarcraftLegacies.Source.Quests.Legion
       @"ReplaceableTextures\CommandButtons\BTNLordaeronMageTower.blp")
     {
       AddObjective(new ObjectiveControlCapital(monastery, false));
-      ResearchId = Constants.UPGRADE_R04H_QUEST_COMPLETED_ANY_OF_THE_THREE_INFILTRATION_QUESTS;
     }
 
     /// <inheritdoc/>
     protected override string RewardFlavour => "The Monastery has been corrupted and plundered. A secret demon gate has now been formed inside.";
 
     /// <inheritdoc/>
-    protected override string RewardDescription => "Unlock the Monastery as a troop production building and able to build 1 more Summoning Circle. Completing any of the three infiltration quest will enable the Alterac Portal to be opened.";
+    protected override string RewardDescription => $"Learn to train troops from the Monastery, and learn to build 1 more {GetObjectName(Constants.UNIT_U006_SUMMONING_CIRCLE_LEGION_MAGIC)}";
 
     /// <inheritdoc/>
     protected override void OnComplete(Faction whichFaction)

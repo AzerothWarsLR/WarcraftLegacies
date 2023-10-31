@@ -15,6 +15,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       gilneas.AddQuest(new QuestKeelHarbor());
       gilneas.AddQuest(new QuestTempestReach());
       gilneas.AddQuest(new QuestGilneasCity(preplacedUnitSystem));
+      gilneas.AddQuest(new QuestCrowley());
       gilneas.AddQuest(new QuestGoldrinn(artifactSetup.ScytheOfElune, allLegendSetup.Gilneas.Goldrinn));
     }
   }

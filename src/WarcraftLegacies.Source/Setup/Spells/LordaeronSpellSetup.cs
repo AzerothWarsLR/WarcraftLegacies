@@ -1,8 +1,9 @@
 ﻿using MacroTools.PassiveAbilities;
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.Spells;
-using MacroTools.Spells.ExactJustice;
 using MacroTools.SpellSystem;
+using WarcraftLegacies.Source.Spells;
+using WarcraftLegacies.Source.Spells.ExactJustice;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup.Spells
@@ -18,7 +19,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
         DamageLevel = 60,
         DurationBase = 1,
         StunAbilityId = Constants.ABILITY_S00H_THUNDER_CLAP_DUMMY,
-        StunOrderString = "cripple",
+        StunOrderId = OrderId("cripple"),
         SpecialEffect = @"Abilities\Spells\Human\Thunderclap\ThunderClapCaster.mdl"
       };
       SpellSystem.Register(consecration);

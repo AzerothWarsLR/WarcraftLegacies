@@ -4,6 +4,7 @@ using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
+using MacroTools.FactionChoices;
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives;
 using MacroTools.QuestSystem;
@@ -134,6 +135,14 @@ namespace MacroTools.FactionSystem
     /// <summary>Whether or not the <see cref="Faction"/> has been defeated.</summary>
     public ScoreStatus ScoreStatus { get; private set; } = ScoreStatus.Undefeated;
 
+    /// <summary>
+    /// Indicates how difficult it is to learn the basic mechanics of this <see cref="Faction"/>.
+    /// <para>This isn't about how difficult the Faction is to play optimally, but rather how difficult it is to
+    /// play at a very basic level. For instance, a Faction with a very complex starting quest would be very hard
+    /// even if it doesn't have to perform a lot of micro in fights.</para>
+    /// </summary>
+    public FactionLearningDifficulty LearningDifficulty { get; init; }
+    
     public string ColoredName => $"{PrefixCol}{_name}|r";
 
     public string PrefixCol { get; }
@@ -268,7 +277,7 @@ namespace MacroTools.FactionSystem
     ///   Returns the maximum number of times the Faction can train a unit, build a building, or research a research.
     /// </summary>
     /// <param name="whichObject">The object ID of a unit, building, or research.</param>
-    public int GetObjectLimit(int whichObject) => _objectLimits[whichObject];
+    public int GetObjectLimit(int whichObject) => _objectLimits.TryGetValue(whichObject, out var limit) ? limit : 0;
 
     /// <summary>
     ///   Registers a gold mine as belonging to this <see cref="Faction" />.
@@ -403,6 +412,21 @@ namespace MacroTools.FactionSystem
         _objectLimits.Remove(objectId);
     }
 
+    /// <summary>
+    /// Copies object levels from another <see cref="Faction"/> to this one.
+    /// <para>Only copies levels that this Faction has the object limit to handle.</para>
+    /// </summary>
+    public void CopyObjectLevelsFrom(Faction otherFaction)
+    {
+      var objectLevels = otherFaction._objectLevels;
+      foreach (var (objectId, level) in objectLevels)
+      {
+        var objectLimit = GetObjectLimit(objectId);
+        if (objectLimit > 0) 
+          SetObjectLevel(objectId, Math.Min(objectLimit, level));
+      }
+    }
+    
     /// <summary>Returns all <see cref="Power" />s this <see cref="Faction" /> has.</summary>
     public IEnumerable<Power> GetAllPowers()
     {
@@ -515,7 +539,7 @@ namespace MacroTools.FactionSystem
       }
       catch (Exception ex)
       {
-        Logger.LogError($"{nameof(Faction)} failed to execute {nameof(OnQuestProgressChanged)}: {ex.Message}");
+        Logger.LogError($"{Name} failed to execute {nameof(OnQuestProgressChanged)}: {ex.Message}");
       }
     }
   }

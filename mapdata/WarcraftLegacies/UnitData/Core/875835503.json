@@ -16,7 +16,7 @@
     },
     {
       "Id": 1819240309,
-      "Value": 14
+      "Value": 15
     },
     {
       "Id": 1919903605,
@@ -29,7 +29,7 @@
     {
       "Id": 1952542837,
       "Type": 3,
-      "Value": "PathTextures\\8x8SimpleSolid.tga"
+      "Value": "PathTextures\\6x6SimpleSolid.tga"
     },
     {
       "Id": 1885433973,
@@ -53,7 +53,7 @@
     {
       "Id": 1634890869,
       "Type": 3,
-      "Value": "e01Z,n09E,e00Z"
+      "Value": "e00Z,e01Z,n09E"
     },
     {
       "Id": 1836412021,

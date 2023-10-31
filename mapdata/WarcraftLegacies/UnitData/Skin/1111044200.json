@@ -17,7 +17,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "(Dalaran Specialist)"
+      "Value": "(Dalaran Siege)"
     },
     {
       "Id": 1818520949,
@@ -52,7 +52,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Roost of the Blue Dragon Kin.|n|cfff5962dTrains:|R Elementalist, Judicator, Blue Dragon"
+      "Value": "Advanced troop production building.|n|n|r|cfff5962dTrains:|R Elementalist, Judicator, Blue Dragon"
     }
   ]
 }
